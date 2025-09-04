@@ -1,418 +1,409 @@
 ---
-title: Patch notes Versione 704
+title: Patch notes version 704
 sidebar_position: 1
 ---
 
-### Patch 704.1-0031 - 16/05/2024
-> - PR - corretto bug che utilizzava nel cashflow il conto cliente trzista per fasi esterni nell’ordine di conto lavoro anziché il fornitore effettivo (#TT02034/24)
-> - FI - revisione delle date di competenza economica assegnate alle registrazioni di riapertura degli assestamenti dalla chiusura conti automatica (#TT01535/24 - #TT01814/24)
-> - FI - nella compensazione partite, revisione gestione filtri partite rispetto al tipo di compensazione, gestione decimali nei campi in griglia (#TT02113/24)
-> - SH - Trascinamento di immagini: impostato il tipo di file del documento come 'JPG' quando l'estensione del file è 'JPEG' (#TT02210/24)
-> - SD - Versioni offerte visibili correttamente in base al flag "visualizza tutte le versioni" anche nei tab degli stati del workflow (#TT02228/24)
 
-### Patch 704.1-0030 - 09/05/2024
-> - WMS - Nella form Lista trasferimento UDC è stato aggiunto lo stato della lista sia come filtro che come colonna sulla griglia dei risultati  (#TT03338/23, #TT02030/24)
-> - SCM - Nell'anagrafica articolo, tab Listini Fornitori sono state aggiunte le colonne relative a Codice e Descrizione variante (#TT01851/24)
-> - SCM - Nella griglia del Navigatore articoli sono state aggiunte le colonne relative a Codice e Descrizione variante (#TT01890/24)
-> - WMS - Ora nella form Ricevimento Merci del WMS, se nei  parametri magazzino carico/scarico per utente è associato per quell'utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti (#TT01909/24)
-> - WMS - Ora nella form Carico articolo del WMS, se nei  parametri magazzino carico/scarico per utente è associato per quell'utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti (#TT01892/24)
-> - WMS - Ora nella form Scarico articolo del WMS, se nei  parametri magazzino carico/scarico per utente è associato per quell'utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti (#TT01893/24)
-> - WMS - Ora nella form Sposta articolo del WMS, se nei  parametri magazzino carico/scarico per utente è associato per quell'utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti (#TT01894/24)
-> - WMS - Ora nella form Rettifica articolo del WMS, se nei  parametri magazzino carico/scarico per utente è associato per quell'utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti (#TT01895/24)
-> - WMS - Ora nella form Giacenza articolo del WMS, se nei  parametri magazzino carico/scarico per utente è associato per quell'utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti (#TT01896/24)
-> - WMS - Ora nella form Liste di prelievo UDC del WMS, se nei  parametri magazzino carico/scarico per utente è associato per quell'utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti (#TT01905/24)
-> - WMS - Ora nella form Gestione UDC del WMS, se nei  parametri magazzino carico/scarico per utente è associato per quell'utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti (#TT01906/24)
-> - WMS - Ora nella form Liste Trasferimenti UDC del WMS, se nei  parametri magazzino carico/scarico per utente è associato per quell'utente un solo magazzino viene proposto di default quello, altrimenti se ce ne sono associati più di uno, di default non ne viene proposto nessuno e l’utente può scegliere solamente tra uno di quelli inseriti (#TT01903/24)
-> - FI - registrazione di pagamento/incasso in divisa estera, se i pagamenti sono della stessa divisa della testata registrazione e non ci sono righe manuali allora il totale del documento in valuta corrisponde al valore in divisa chiuso. Se vi sono pagamenti in altre divise e/o righe manuali, invece, il totale in divisa sarà il calcolo del controvalore divisa del totale dare/avere in divisa società (#TT1703/24)
-> - SD - Nella creazione file Sdi su fatture/note di credito in valuta, revisione gestione arrotondamenti (#TT1703/24 - #TT02135/24)
+### Patch 704.1-0031 - 05/16/2024
+> - PR - fixed a bug that used the customer account in the cash flow for external phases in the work order instead of the actual supplier (#TT02034/24)
+> - FI - revised the economic competence dates assigned to the reopening of adjustments from the automatic account closure (#TT01535/24 - #TT01814/24)
+> - FI - in the offsetting of items, revised management of item filters based on the type of offsetting, management of decimals in grid fields (#TT02113/24)
+> - SH - Image dragging: set the document file type as 'JPG' when the file extension is 'JPEG' (#TT02210/24)
+> - SD - Offer versions visible correctly based on the "display all versions" flag even in the workflow state tabs (#TT02228/24)
 
-### Patch 704.1-0029 - 06/05/2024
-> - SH - Nuovo messaggio di avviso se impostando l’anagrafica di una persona fisica non vengono compilati in nome e cognome e nuovo messaggio di errore generando il file della fattura elettronica senza questi dati (#TT01700/24)
-> - PR - Revisione ripresa dati da rientri di c/lavoro nel cash flow (#TT01934/24)
-> - PM - Il valore degli extra data di progetto viene caricato nella griglia della form di ricerca (#TT01740/24)
-> - PM - Risolta casistica in “Stampa dettaglio progetto” che non riportava scritture contabili con collegamento alla sola testata del progetto e non agli articoli (#TT01087/24)
+### Patch 704.1-0030 - 05/09/2024
+> - WMS - In the transfer list form UDC, the status of the list has been added both as a filter and as a column in the results grid (#TT03338/23, #TT02030/24)
+> - SCM - In the item registry, tab Supplier Price Lists, columns related to Code and Description variant have been added (#TT01851/24)
+> - SCM - In the article navigator grid, columns related to Code and Description variant have been added (#TT01890/24)
+> - WMS - Now in the WMS Goods Receipt form, if in the user loading/unloading warehouse parameters a single warehouse is associated for that user, it will be proposed by default; otherwise, if multiple are associated, none will be proposed by default and the user can only choose from those listed (#TT01909/24)
+> - WMS - Now in the WMS Item Load form, if in the user loading/unloading warehouse parameters a single warehouse is associated for that user, it will be proposed by default; otherwise, if multiple are associated, none will be proposed by default and the user can only choose from those listed (#TT01892/24)
+> - WMS - Now in the WMS Item Unload form, if in the user loading/unloading warehouse parameters a single warehouse is associated for that user, it will be proposed by default; otherwise, if multiple are associated, none will be proposed by default and the user can only choose from those listed (#TT01893/24)
+> - WMS - Now in the WMS Move Item form, if in the user loading/unloading warehouse parameters a single warehouse is associated for that user, it will be proposed by default; otherwise, if multiple are associated, none will be proposed by default and the user can only choose from those listed (#TT01894/24)
+> - WMS - Now in the WMS Article Adjustment form, if in the user loading/unloading warehouse parameters a single warehouse is associated for that user, it will be proposed by default; otherwise, if multiple are associated, none will be proposed by default and the user can only choose from those listed (#TT01895/24)
+> - WMS - Now in the WMS Item Inventory form, if in the user loading/unloading warehouse parameters a single warehouse is associated for that user, it will be proposed by default; otherwise, if multiple are associated, none will be proposed by default and the user can only choose from those listed (#TT01896/24)
+> - WMS - Now in the WMS UDC Picking Lists form, if in the user loading/unloading warehouse parameters a single warehouse is associated for that user, it will be proposed by default; otherwise, if multiple are associated, none will be proposed by default and the user can only choose from those listed (#TT01905/24)
+> - WMS - Now in the WMS UDC Management form, if in the user loading/unloading warehouse parameters a single warehouse is associated for that user, it will be proposed by default; otherwise, if multiple are associated, none will be proposed by default and the user can only choose from those listed (#TT01906/24)
+> - WMS - Now in the WMS UDC Transfer Lists form, if in the user loading/unloading warehouse parameters a single warehouse is associated for that user, it will be proposed by default; otherwise, if multiple are associated, none will be proposed by default and the user can only choose from those listed (#TT01903/24)
+> - FI - recording of payment/collection in foreign currency, if the payments are of the same currency as the registration header and there are no manual lines, then the total of the document in currency corresponds to the closed currency value. If there are payments in other currencies and/or manual lines, the total in currency will be the calculation of the currency countervalue of the total debit/credit in corporate currency (#TT1703/24)
+> - SD - In the creation of the Sdi file on invoices/credit notes in currency, revised management of rounding (#TT1703/24 - #TT02135/24)
+
+### Patch 704.1-0029 - 05/06/2024
+> - SH - New warning message if setting the registry of a natural person without filling in the first name and surname and new error message when generating the electronic invoice file without this data (#TT01700/24)
+> - PR - Revision of data recovery from work returns in the cash flow (#TT01934/24)
+> - PM - The value of extra data from the project is loaded in the search form grid (#TT01740/24)
+> - PM - Resolved the case in “Project Detail Print” that did not report accounting entries linked only to the project header and not to the items (#TT01087/24)
 > - FI - Cost center from delivery notes not visible in general ledger posting & Movement analysis for cost centers report (#TT01521/24)
-> - SH - Indirizzi alternativi: revisione salvataggio dei campi nome e cognome all’interno degli indirizzi alternativi (#TT01794/24)
-> - FI - Revisione ripresa valori da registrazioni per sezione quater (#TT01985/24)
-> - PR - Ottimizzazione Cash Flow da DDT Acquisto (#TT01754/24)
-> - FI - Scritture di assestamento: revisione descrizione dettaglio nelle registrazioni contabili create automaticamente dalla procedura (#TT00503/24)
+> - SH - Alternative addresses: revised saving of the first name and surname fields within alternative addresses (#TT01794/24)
+> - FI - Revised retrieval of values from records for section four (#TT01985/24)
+> - PR - Optimization of Cash Flow from Purchase DDT (#TT01754/24)
+> - FI - Adjustment entries: revised detail description in accounting records automatically created by the process (#TT00503/24)
 
-### Patch 704.1-0028 - 29/04/2024
-> - SD - Corretto errore nel Dettaglio Movimenti che visualizzava alcune quantità con segno errato (#TT01546/24)
-> - ARM - Forms Wizard - Sostituzione fluentis: BaseView con fluentis: ViewModelResolver.
-> - WM - Corretto errore che non permetteva la generazione di un DDT dalla Lista di Prelievo UDC (#TT01595/24)
-> - Risolto l'errore di creare script lato client per uno spazio dei nomi diverso da FluentisErp.
-> - SH - viene proposto il nome del file di esportazione nell'anteprima di stampa se il documento ha la trasformazione “ReportAttachFileName” (#TT00837/24)
-> - SCM - Se un documento di acquisto è già caricato, non è possibile cambiare il codice lotto (#TT01712/24)
-> - PM - SAL di progetto, reso possibile il drag&drop dei campi dall’object
-> - SCM - Corretto errore che proponeva la stessa 'Descrizione articolo fornitore' nella procedura di 'Evasione ordini', per tutti i fornitori preferenziali dell'articolo (#TT01501/24)
-> - SH - Corretto errore nell'Analisi Disponibilita che appariva quando non erano stati inseriti i magazzini e le causali all'interno dei Parametri Ordini di Produzione (#TT01765/24)
-> - PM - Gestita esportazione in excel dei campi calcolati nella griglia del SAL (#TT01433/24)
-> - SD - La ricerca avviene in base alla priorità anche nel caso di più righe per la stessa tipologia di provvigione (#TT01695/24)
-> - SD - Corretto errore che non popolava i ‘Materiali Conai per l’articolo’ nelle note di credito (#TT01841/24)
-> - PR - revisione del calcolo del cash flow da ordini di conto lavoro (#TT01609/24)
-> - FI - Revisione calcolo partite per fatture acquisto cespiti estere senza movimento iva (#TT02800/23)
-> - FI - Revisione liquidazione iva della localizzazione Croata (#TT03562/23)
-> - FI - Revisione gestione commissioni agenti in contabilità, per incassi parziali e per contabilizzazione fatture con totale 0 (#TT01822/24)
-> - FI - Revisione stampa definitiva liquidazione iva periodica gennaio per salvataggio credito anno precedente/credito periodo precedente (#TT01160/24)
+### Patch 704.1-0028 - 04/29/2024
+> - SD - Corrected error in Movement Details that displayed some quantities with the wrong sign (#TT01546/24)
+> - ARM - Forms Wizard - Replaced fluentis: BaseView with fluentis: ViewModelResolver.
+> - WM - Corrected error that prevented the generation of a DDT from the UDC Picking List (#TT01595/24)
+> - Resolved the error of creating client-side scripts for a namespace different from FluentisErp.
+> - SH - The export file name is proposed in the print preview if the document has the transformation “ReportAttachFileName” (#TT00837/24)
+> - SCM - If a purchase document is already loaded, it is not possible to change the lot code (#TT01712/24)
+> - PM - Project SAL, drag&drop of fields from the object has been made possible
+> - SCM - Corrected error that proposed the same 'Supplier Item Description' in the 'Order Fulfillment' procedure for all preferential suppliers of the item (#TT01501/24)
+> - SH - Corrected error in Availability Analysis that appeared when warehouses and reasons were not entered in the Production Orders Parameters (#TT01765/24)
+> - PM - Managed Excel export of calculated fields in the SAL grid (#TT01433/24)
+> - SD - The search occurs based on priority even in the case of multiple lines for the same type of commission (#TT01695/24)
+> - SD - Corrected error that did not populate the ‘Conai Materials for the item’ in credit notes (#TT01841/24)
+> - PR - revised cash flow calculation from work orders (#TT01609/24)
+> - FI - Revised calculation of items for foreign acquisition invoices without VAT movement (#TT02800/23)
+> - FI - Revised VAT liquidation for Croatian localization (#TT03562/23)
+> - FI - Revised management of agent commissions in accounting, for partial collections and for accounting invoices with a total of 0 (#TT01822/24)
+> - FI - Revised definitive printout of periodic VAT liquidation for saving prior year credit/prior period credit (#TT01160/24)
 
+### Patch 704.1-0027 - 04/18/2024
+> - ARM -  Work unit - correction of the error during the update of WebApi models when there is only a read-only object
+> - MES - Implemented in the material picking list the management of remaining quantity (#TT00836/24)
+> - SD - Blocked import of sales invoices through Web Api for invoices downloaded, posted, or sent to the electronic invoicing system (#TT01578/24)
+> - PM - improved expense management from purchase invoices in project SAL (#TT01366/24)
+> - SCM, SCS - Within Purchase and Work Order documents, it is now possible to insert a carrier (#TT01132/24)
+> - SD, SCS, WM - Within Sales documents, Work Order Slips, and Picking it is now possible to insert a carrier (#TT01132/24)
+> - WM - Valued quantity inventory - Corrected anomaly on ‘Unit Value’, proposed in the ‘Inventory Print’ report, when ‘Valuation at Average Cost’ and ‘Value at Warehouse’ in ‘Initial Warehouse Parameters’ is requested (#TT01690/24)
+> - FI - automatic registration related to the environmental tax - RO version (#TT01749/24)
+> - PM - Web API import of activity declaration, corrected management of TotalTime field and start-end pause values (#TT01627/24)
 
-### Patch 704.1-0027 - 18/04/2024
-> - ARM -  Unità di lavoro - correzione dell'errore durante l'aggiornamento dei modelli WebApi quando è presente solo un oggetto di sola lettura
-> - MES - Implementata nella lista prelievo materiali la gestione della quantità residua (#TT00836/24)
-> - SD - Blocco importazione fatture di vendita Web Api per fatture scaricate, contabilizzate o inviate al sistema di fatturazione elettronica (#TT01578/24)
-> - PM - migliorata gestione spese da fatture di acquisto nel SAL di progetto (#TT01366/24)
-> -  SCM, SCS - All’interno dei documenti di Acquisti e Conto Lavoro è ora possibile inserire un vettore (#TT01132/24)
-> - SD, SCS, WM - All’interno dei documenti di Vendita, Bolle di Conto Lavoro e Picking è ora possibile inserire un vettore (#TT01132/24)
-> - WM - Inventario a quantità valorizzato - Corretta anomalia sul ‘Valore unitario’, proposto nel report di ‘Stampa inventario’, se richiesta la ‘Valorizzazione a Costo medio’ e ‘Valorizza a magazzino’ presente nei ‘Parametri iniziali magazzino’ (#TT01690/24)
-> - FI - registrazione automatica relativa alla tassa ambientale - RO version (#TT01749/24)
-> - PM - Webapi importazione dichiarazione attività, corretta gestione campo TotalTime e valori inizio-fine pausa (#TT01627/24)
+### Patch 704.1-0026 - 04/11/2024
 
-### Patch 704.1-0026 - 11/04/2024
-
-> - FI - revisione filtro per divisione in stampa Sottoconti eseguita dalla form ‘Visualizzazione conti’ (#TT01394/24)
-> - WM - Corretto titolo della form Tracciabilità Lotto (#TT01415/24)
-> - SD - Consentita la modifica del range di date competenza economica in fatture di vendita con file Sdi creato ma non contabilizzate (#TT01038/24)
-> - SD - Blocco al ricalcolo a zero della percentuale provvigionale su righe evase da OC, nel caso di range sconto e categoria provvigionale di filtro (#TT01310/24)
-> - SD - Inserimento di un nuovo pop up di avviso nel caso in cui venga inserito un tipo fattura senza split payment (quindi senza Causale contabile associata che abbia Tipo movimento ‘29’) e un cliente che invece gestisce lo split payment (#TT01237/24)
-> - MS - Aggiunto un messaggio di errore nell'MRP nel caso in cui l'articolo fosse di produzione ma non avesse la distinta base (#TT01414/24)
-> - WM - Tradotto titolo della stampa Tracciabilità Lotto
-> - CO - Corretto bug che non eseguiva correttamente il refresh della form selezionando un nodo del modello di riclassificazione per inserire i sottoconti collegati. Migliorato messaggio utente di avviso per tipi conto (#TT01367/24)
-> - FI - Associazione file xml a percipienti: revisione proposta dei soli file nello stato ‘non assegnato’  (#TT01317/24)
-> - PR - Corretto bug che in fase di creazione RiBa da fatture nel caso di fattura e nota di accredito da accorpare sommava invece di sottrarre la NC (#TT00897/24)
-> -  Corretta l'etichetta bianca per le schede e i widget quando il tema è Office2019Colorful (#TT00980/24)
-> - SCM - Al momento della Creazione fattura d’acquisto da file XML il prezzo viene importato in fattura con il flag Prezzo Manuale attivo e senza riprendere la scontistica interna (#TT01227/24)
-> - PM - SAL Risolta anomalia in elaborazione massiva (#TT01439/24)
-> - WM - Corretto bug in analisi disponibilità che non mostrava correttamente i valori nei campi: Ordine cliente collegato e quantità ordine cliente (#TT01062/24)
-> - PM - SAL di progetto, aggiunto codice PRCC008 Costi Extra da Spese in Fatture d'Acquisto che considera tutte le fatture di acquisto, contabilizzate e non. Corretta descrizione codice PRCC006 in Costi Extra da Spese in Fatture d'Acquisto non contabilizzate (#TT01385/24)
-> - PM - SAL progetto inserito nuovo codice PRCC007 - Costi da Fatture Acquisto (#TT01279/24)
-> - PM - SAL di progetto nelle righe di dettaglio aggiunto articolo e descrizione dalla riga del documento (#TT01278/24)
-> - FI - revisione attivazione pulsanti di gestione all’interno dell’intrastat (#TT01232/24)
+> - FI - revised filter for division in the Sub-Account print executed from the ‘Account Viewing’ form (#TT01394/24)
+> - WM - Corrected title of the Lot Traceability form (#TT01415/24)
+> - SD - Allowed modification of the economic competence date range in sales invoices with Sdi files created but not posted (#TT01038/24)
+> - SD - Blocked recalculation to zero of the commission percentage on lines fulfilled from OC, in case of discount range and commission category filter (#TT01310/24)
+> - SD - Insertion of a new pop-up warning in case an invoice type without split payment (thus without an associated accounting cause that has movement type ‘29’) is entered and a customer that, instead, manages split payment (#TT01237/24)
+> - MS - Added an error message in MRP if the item was of production but did not have a bill of materials (#TT01414/24)
+> - WM - Translated the title of the Lot Traceability print
+> - CO - Corrected bug that did not refresh the form correctly by selecting a node of the reclassification model to insert the linked sub-accounts. Improved user warning message for account types (#TT01367/24)
+> - FI - Association of XML files to recipients: revised the proposal of only files in the ‘unassigned’ status (#TT01317/24)
+> - PR - Corrected bug that in the phase of creating RiBa from invoices in the case of an invoice and a credit note to be merged summed instead of subtracting the NC (#TT00897/24)
+> - Corrected the white label for tabs and widgets when the theme is Office2019Colorful (#TT00980/24)
+> - SCM - At the time of creating a purchase invoice from the XML file, the price is imported into the invoice with the Manual Price flag active and without taking internal discounts (#TT01227/24)
+> - PM - SAL resolved abnormality in mass processing (#TT01439/24)
+> - WM - Corrected bug in availability analysis that did not show values correctly in the fields: Linked customer order and customer order quantity (#TT01062/24)
+> - PM - Project SAL, added PRCC008 code Extra Costs from Expenses in Purchase Invoices considering all, both posted and not (#TT01385/24)
+> - PM - Project SAL inserted new PRCC007 code - Costs from Purchase Invoices (#TT01279/24)
+> - PM - Project SAL in detail lines added item and description from the document line (#TT01278/24)
+> - FI - revised activation of management buttons within the intrastat (#TT01232/24)
 
 ### Patch 704.1-0025 - 04/04/2024
 
-> - QY - Corretto bug che non visualizzava i Workflow nella form di Batch Records (#TT01165/24)
-> - SCM - Nella stampa Scadenziario ordini fornitori, le Date sono state cambiate in formato europeo, ed i Prezzi a due decimali (#TT01051/24)
-> - MS - Corretto bug nella pianificazione generale nel caso venissero rischedulate commesse già in stato lanciato/esecutivo (#TT00158/24)
-> - Risolto Bug nel Codice delle importazioni Excel quando i usano caratteri speciali.
-> - PR - risolto bug nella form gestione liquidità che non aggiornava correttamente il campo Progressivo al variare dei flag escludi e nascondi (#TT00435/24)
-> - revisione fast start CH (#TT00489/24)
-> - PM - correzioni inserimento appuntamenti nel planner relativi ad interventi pianificati e richieste intervento. Migliorata gestione spostamento /cambiamento data/ora/risorsa (#TT00144/24)
-> - SCM - Nella griglia ad albero della maschera di Evasione Ordini aperta da DDT, la Proprietà ‘Numero riga’ può essere trascinata da Object Navigator e salvata con Profilo (#TT01044/24)
-> - SD - L'inserimento di un articolo all'interno di una Fattura di Vendita mediante l'utilizzo dell'Help articoli ora riporta correttamente la classe (#TT01213/24)
-> - PR - corretto bug nel calcolo scadenze del cashflow sugli ordini conto lavoro (#TT01203/24)
-> - PM - Elaborazione SAL di più progetti in contemporanea, risolte casistiche di calcoli non corretti (#TT01325/24)
-> - Rilascio stampa LIPE anno 2024
-> - FI - corretto bug nella stampa di verifica della dichiarazione di intento quando nella fattura c’erano delle spese finali agganciate alla dichiarazione dii in tento il loro valore non veniva correttamente riportato sulla colonna registrato e rimaneva sulla colonna fatturato (#TT01311/24)
-> - SD - Le spese di Incasso sono assoggettate automaticamente all’iva principale del documento (#TT00511/24)
-> - PM - Elaborazione SAL di più progetti in contemporanea, risolte casistiche di calcoli non corretti (#TT01325/24)
+> - QY - Corrected bug that did not display Workflows in the Batch Records form (#TT01165/24)
+> - SCM - In the Supplier Orders aging report, Dates have been changed to European format, and Prices to two decimals (#TT01051/24)
+> - MS - Corrected bug in general scheduling in case scheduled jobs were rescheduled already in launched/executive status (#TT00158/24)
+> - Resolved Bug in Excel import code when using special characters.
+> - PR - resolved bug in the liquidity management form that did not correctly update the Progress field when excluding and hiding flags changed (#TT00435/24)
+> - fast start CH revision (#TT00489/24)
+> - PM - corrections in scheduling insertion of appointments related to planned interventions and service requests. Improved management of date/time/resource move/change (#TT00144/24)
+> - SCM - In the tree grid of the Order Fulfillment mask opened from DDT, the Property ‘Line Number’ can be dragged from Object Navigator and saved with the Profile (#TT01044/24)
+> - SD - The insertion of an item within a Sales Invoice using the Article Help now correctly returns the class (#TT01213/24)
+> - PR - corrected bug in the deadline calculation of the cash flow on work orders (#TT01203/24)
+> - PM - Processing project SAL of multiple projects at the same time, resolved cases of incorrect calculations (#TT01325/24)
+> - Released LIPE print for the year 2024
+> - FI - corrected bug in the verification print of the declaration of intent when the invoice contained final expenses linked to the declaration of intent, their value was not correctly reflected in the registered column and remained in the invoiced column (#TT01311/24)
+> - SD - Collection expenses are automatically subject to the main VAT of the document (#TT00511/24)
+> - PM - Processing project SAL of multiple projects at the same time, resolved cases of incorrect calculations (#TT01325/24)
 
-### Patch 704.1-0024 - 28/03/2024
+### Patch 704.1-0024 - 03/28/2024
 
-> - QY - Corretto bug che non visualizzava i Workflow nella form di Batch Records (#TT01165/24)
-> - SCM - Nella stampa Scadenziario ordini fornitori, le Date sono state cambiate in formato europeo, ed i Prezzi a due decimali (#TT01051/24)
-> - MS - Corretto bug nella pianificazione generale nel caso venissero rischedulate commesse già in stato lanciato/esecutivo (#TT00158/24)
-> - Risolto Bug nel Codice delle importazioni Excel quando i usano caratteri speciali.
-> - PR - risolto bug nella form gestione liquidità che non aggiornava correttamente il campo Progressivo al variare dei flag escludi e nascondi (#TT00435/24)
-> - Risolto il problema dell'esecuzione dell'attività con parametri mancanti in SqlQuery
-> - revisione fast start CH (#TT00489/24)
-> - PM - correzioni inserimento appuntamenti nel planner relativi ad interventi pianificati e richieste intervento. Migliorata gestione spostamento /cambiamento data/ora/risorsa (#TT00144/24)
-> - SCM - Nella griglia ad albero della maschera di Evasione Ordini aperta da DDT, la Proprietà ‘Numero riga’ può essere trascinata da Object Navigator e salvata con Profilo (#TT01044/24)
+> - QY - Corrected bug that did not display Workflows in the Batch Records form (#TT01165/24)
+> - SCM - In the Supplier Orders aging print, Dates have been changed to European format, and Prices to two decimals (#TT01051/24)
+> - MS - Corrected bug in general scheduling in case scheduled jobs were rescheduled already in launched/executive status (#TT00158/24)
+> - Resolved Bug in the Excel import code when using special characters.
+> - PR - resolved bug in the liquidity management form that did not correctly update the Progress field when excluding and hiding flags changed (#TT00435/24)
+> - Resolved the issue of executing activity with missing parameters in SqlQuery
+> - fast start CH revision (#TT00489/24)
+> - PM - corrections in scheduling insertion of appointments related to planned interventions and service requests. Improved management of date/time/resource move/change (#TT00144/24)
+> - SCM - In the tree grid of the Order Fulfillment mask opened from DDT, the Property ‘Line Number’ can be dragged from Object Navigator and saved with the Profile (#TT01044/24)
 
-### Patch 704.1-0023 - 21/03/2024
+### Patch 704.1-0023 - 03/21/2024
 
-> - MS - Corretti errori nella procedura di Costificazione delle Commesse di produzione e nella stampa Costificazione Commessa (#TT00497/24)
-> - MS - Corretto bug che causava la perdita del riferimento alla riga di progetto a seguito di un ripristino dell’ordine di produzione (#TT01014/24)
-> - MES - Corretto bug nelle Segnalazioni di Produzione che non riconosceva l’ordine temporale corretto delle segnalazioni, quando erano inserite allo stesso orario (#TT00985/24)
-> - SD - Contabilizzazione automatica fatture di vendita: rivista la procedura di contabilizzazione automatica note di credito con tipo movimento non iva (#TT00666/24)
-> - MS - Corretto bug in pianificazione generale nel caso in cui nei parametri fosse impostato il rilascio automatico degli ordini pianificati (#TT01148/24)
-> - ARM - Viene chiesto all'utente quale Business Object estendere se più oggetti sono collegati alla stessa tabella.
-> - MES - Corretto bug che causava un blocco temporaneo dell’applicativo in caso di registrazioni di Dichiarazioni di Produzione con numerose segnalazioni per fase (#TT00946/24)
-> - MES - Corretto bug nelle Dichiarazioni di Produzione che non aggiornava il tempo macchina e il tempo uomo quando si eseguiva la procedura di Ricalcolo tempi (#TT01017/24)
-> - FI - IVA a CREDITO sul file per la LIPE tiene conto anche dell’IVA indetraibile da pro-rata (#TT01596/23)
-> - MES - Nella lista prelievo materiali, nella tabella dei materiali è stata aggiunta la funzione della formattazione condizionale (#TT01159/24)
-> - CO -  nella stampa del consolidato di Progetto, revisione filtro per tipo progetto (#TT01172/24)
-> - SCM - Corretto bug nella procedura di Creazione Automatica Ordini Fornitore da Ordine Cliente che non calcolava correttamente le quantità nella procedura di Evasione Ordine in DDT quando venivano modificate le quantità dell’ordine fornitore nel prototipo (#TT01199/24)
+> - MS - Corrected errors in the Costing process of production Jobs and in the Costing Job print (#TT00497/24)
+> - MS - Corrected bug that caused the loss of reference to the project line following a restoration of the production order (#TT01014/24)
+> - MES - Corrected bug in Production Reports that did not recognize the correct chronological order of reports when they were entered at the same time (#TT00985/24)
+> - SD - Automatic accounting of sales invoices: revised the automatic accounting procedure of credit notes with non-VAT movement type (#TT00666/24)
+> - MS - Corrected bug in general scheduling in case the parameters were set to automatic release of planned orders (#TT01148/24)
+> - ARM - The user is prompted to select which Business Object to extend if more objects are connected to the same table.
+> - MES - Corrected bug that caused a temporary lock of the application in case of production declarations with numerous reports for phase (#TT00946/24)
+> - MES - Corrected bug in Production Declarations that did not update machine time and human time when executing the Time Recalculation process (#TT01017/24)
+> - FI - VAT CREDIT on the file for the LIPE also takes into account the non-deductible VAT from pro-rata (#TT01596/23)
+> - MES - In the material picking list, the table of materials has been added with the conditional formatting function (#TT01159/24)
+> - CO - in the project consolidated print, revised filter for project type (#TT01172/24)
+> - SCM - Corrected bug in the Automatic Supplier Orders Creation procedure from Customer Order that did not correctly calculate quantities in the Order Fulfillment procedure in DDT when the supplier order quantities were modified in the prototype (#TT01199/24)
 
-### Patch 704.1-0022 - 15/03/2024
+### Patch 704.1-0022 - 03/15/2024
 
-> - SH - WebApi - Risolto il problema con riferimento contatto al importazione conto quando il tipo di operazione non è specificato
-> - SD - implementazione web api per l'importazione delle fatture di vendita (#TT002622/23)
-> - Valorizzazione riferimenti numero e data ordini, bolle e documenti conto lavoro (#TT001036/24)
-> - SH - Corretto l'errore all'apertura del contatto dal menu Freelance (#TT01072/24)
-> - MS - Corretto bug nel calcolo del costo totale lavorazioni nella costificazione della commessa (#TT02545/23)
-> - Risolto il problema nel filtrare il valore della combo all'interno dell'importazione di Excel con un valore fisso.
-> - ARM - Gestita la rinominazione automatica delle tabelle di estensione.
+> - SH - WebApi - Resolved issue with contact reference to account import when the operation type is not specified
+> - SD - implemented web API for importing sales invoices (#TT002622/23)
+> - Valuation of order, slip, and work account number and date references (#TT001036/24)
+> - SH - Corrected the error opening the contact from the Freelance menu (#TT01072/24)
+> - MS - Corrected bug in total cost calculations of processing in the costing of the job (#TT02545/23)
+> - Resolved the issue in filtering the value of the combo within the Excel import with a fixed value.
+> - ARM - Managed the automatic renaming of extension tables.
 
-### Patch 704.1-0021 - 08/03/2024
+### Patch 704.1-0021 - 03/08/2024
 
-> - SD - A seguito di una modifica del Fatturato Vendite all’interno di un DDT di Vendita, non vengono più aggiornati Data e Utente dell’ultima Modifica nella testata dell’Ordine cliente collegato (#TT00308/24)
-> - FI - Intrastat export sezione doganale and negative value in riepilogo if inserted in quinquies section (#TT00580/24)
-> - SCM - Corretto errore nella procedura di Creazione Automatica Ordini fornitore da Ordine Cliente che non riportava più la quantità dell’ordine nel Prototipo, a seguito di una modifica fornitore (#TT00777/24)
-> - PR - Profilo in esposizione clienti (#TT00853/24)
-> - Risolto il problema dell'importazione di riferimenti con valore Null e della ricerca multipla su Intercompany
-> - CO - calcolo ammortamenti del controlling, revisione elaborazioni dati iniziali (#TT00477/24)
+> - SD - Following a modification of Sales Turnover within a Sales DDT, the Date and User of the last Modification in the linked Customer Order header are no longer updated (#TT00308/24)
+> - FI - Intrastat export customs section and negative value in summary if inserted in quinquies section (#TT00580/24)
+> - SCM - Corrected error in the procedure of Automatic Supplier Order Creation from Customer Order that no longer reported the order quantity in the Prototype, following a supplier change (#TT00777/24)
+> - PR - Profile in customer exposure (#TT00853/24)
+> - Resolved the issue of importing references with a Null value and the multiple search on Intercompany
+> - CO - depreciation calculations for controlling, revised processing for initial data (#TT00477/24)
 
-### Patch 704.1-0020 - 05/03/2024
+### Patch 704.1-0020 - 03/05/2024
 
-> - SD - Correzione dell’errore che richiedeva uno sconto a scaglione nel caso di inserimento del Mask in un nuovo Arrotondamento (#TT00756/24)
-> - SD - A seguito della Conversione di un’Offerta in Ordine Cliente viene riportato anche il valore della quantità alternativa, se presente nell’Offerta (#TT00779/24)
-> - WMS - Nella form giacenza articolo del WMS è stata aggiunta una nuova colonna per la visualizzazione delle giacenze.
-Le colonne facenti riferimento alla giacenza sono tre: Giacenza (Gest.), Giacenza e Giacenza(FC) (FC = Fattore di conversione).
-Nel caso di utilizzo della *UM Def. WMS* (presente nel tab Unità di misura alternative dell'anagrafica articolo), la prima risulta valorizzata con l'unità di misura principale dell'articolo, la seconda risulta popolata con la giacenza espressa nell'unità di misura alternativa dell'articolo e data dalla somma dei movimenti, mentre la terza è data dalla giacenza espressa nell'unità di misura alternativa ma calcolata con il fattore di conversione.
-Nel caso in cui, il flag *UM Def. WMS* non sia abilitato, le colonne *Giacenza* e *Giacenza(FC)* non verranno valorizzate (#TT00446/24)
-> - CRM -  E’ possibile cancellare i Riferimenti dei Contatti CRM se non hanno collegamenti (#TT00748/24)
-> - SD - Nelle Offerte di Vendita il prezzo dell’articolo non viene più azzerato a seguito di una modifica della quantità (#TT00861/24)
+> - SD - Correction of the error requiring a tiered discount in case of entering the Mask in a new Rounding (#TT00756/24)
+> - SD - Following the Conversion of an Offer into Customer Order, the value of the alternative quantity is also included if present in the Offer (#TT00779/24)
+> - WMS - In the item inventory form of the WMS, a new column has been added for the display of totals.
+The columns referring to stock are three: Stock (Gest.), Stock, and Stock(FC) (FC = Conversion factor).
+In the case of using the *UM Def. WMS* (present in the Alternative unit of measure tab of the item registry), the first is populated with the item's main unit of measure, the second is populated with the stock expressed in the alternative unit of measure of the item and given by the sum of movements, while the third is given by the stock expressed in the alternative unit of measure but calculated with the conversion factor.
+In the case where the *UM Def. WMS* flag is not enabled, the *Stock* and *Stock(FC)* columns will not be populated (#TT00446/24)
+> - CRM - It is possible to delete CRM Contact References if they have no links (#TT00748/24)
+> - SD - In Sales Offers, the item price is no longer zeroed following a change in quantity (#TT00861/24)
 > - FI - map new field CustomSection on FSIntrastatDetail (#TT00729/24)
-> - SD - aggiunto script inizializzazione elenco valori Tipo origine costo per i materiali nelle offerte, utilizzato per i db aggiornati da F2021 a F2023 (#TT00593/24)
-> - SH - revisione fast start per localizzazione CH
-> - SD - Ottimizzata la possibilità di inserire nuovi articoli in listini corposi (#TT02980/23)
-> - SD - Risolto errore che impediva l’inserimento di nuove righe nella tabella Fatturato vendite (#TT00329/24)
-> - SCM - Corretto errore nella compilazione degli sconti nei Listini di Conto Lavoro (#TT00227/24)
+> - SD - initialized list of values for Cost origin type for materials in offers, used for databases updated from F2021 to F2023 (#TT00593/24)
+> - SH - revised fast start for CH localization
+> - SD - Optimized the ability to insert new items into voluminous price lists (#TT02980/23)
+> - SD - Resolved error that prevented the insertion of new lines in the sales invoice table (#TT00329/24)
+> - SCM - Corrected error in compiling discounts in Work Order price lists (#TT00227/24)
 
-### Patch 704.1-0019 - 29/02/2024
+### Patch 704.1-0019 - 02/29/2024
 
-> - FI - In caso di creazione Fattura di vendita da Partita di anticipo, le scadenze vengono create con il flag Manuale (#TT00672/24)
-> - MES - Corretto bug nelle dichiarazioni di produzione (#TT00702/24)
-> - SCM - Corretto errore nell’evasione di una bolla in fattura con prezzo ivato (#TT00220/24)
-> - ARM - Aggiunto un messaggio per abilitare la registrazione se l'avvio del pool personalizzato fallisce dopo la pubblicazione (#TT00676/24)
-> - SD - Per agenti con pagamento avvenuto o scadenza maturata, la stampa provvigioni maturate e la creazione automatica liquidazione provvigioni ora considerano maturate le provvigioni inserite in una fattura a zero se all'interno del documento c'è uno storno acconto riferito ad un acconto con partita incassata (#TT00620/24)
-> - SD - Risolto azzeramento prezzo unitario su livello padre in caso di inserimento nuovi nodi figli (#TT00735/24)
-> - WMS - Aggiunto il flag "Mantieni ubicazione" nella tabella dei "Tipi liste inventariali". Questo fa in modo che in fase di inventario con il WMS l'ubicazione inserita non verrà variata fino a quando non sarà  letta un'altra ubicazione (#TT00726/24)
-> - WMS - Nella form Lista trasferimento UDC del WMS, il tab  Dettaglio UDC verrà abilitato solamente dopo aver inserito tutti i dati di testata (#TT03336/23)
-> - FI/CO/SH - nelle aliquote iva, aggiunto nuovo flag per identificare le aliquote di vendita estere che caricano il plafond per il periodo successivo (#TT00343/24)
-> - MS - Corretto bug nei diagrammi delle commesse di produzione (#TT00790/24)
-> - WMS - Corretto bug nelle form UDC che non visualizzava correttamente lo stato delle liste di prelievo e trasferimento nel WMS (#TT00792/24)
-> - SD - A seguito della Conversione di un’Offerta in Ordine Cliente vengono riportati anche i dati di Peso Netto e Peso Lordo, se presenti nell’Offerta (#TT00746/24)
+> - FI - In the case of creating a Sales Invoice from an Advance Payment Item, the deadlines are created with the Manual flag (#TT00672/24)
+> - MES - Corrected bug in production declarations (#TT00702/24)
+> - SCM - Corrected error in fulfilling a slip in an invoice with a VAT-inclusive price (#TT00220/24)
+> - ARM - Added a message to enable registration if the start of the custom pool fails after publishing (#TT00676/24)
+> - SD - For agents with payment made or maturity reached, the printout of accrued commissions and the automatic creation of commission liquidation now consider accrued commissions entered in a zero invoice if within the document there is a cancellation of the advance related to an collected advance (#TT00620/24)
+> - SD - Resolved zeroing of unit price at parent level when inserting new child nodes (#TT00735/24)
+> - WMS - Added the flag "Keep location" in the table of "Inventory List Types". This ensures that during inventory with the WMS, the entered location will not be changed until another location is read (#TT00726/24)
+> - WMS - In the UDC transfer list form of the WMS, the UDC Detail tab will only be enabled after all header data has been entered (#TT03336/23)
+> - FI/CO/SH - in VAT rates, added a new flag to identify foreign sales rates that load the ceiling for the subsequent period (#TT00343/24)
+> - MS - Corrected bug in production job charts (#TT00790/24)
+> - WMS - Corrected bug in UDC forms that did not correctly display the status of the picking and transfer lists in WMS (#TT00792/24)
+> - SD - Following the Conversion of an Offer into Customer Order, the Net Weight and Gross Weight data are also reported, if present in the Offer (#TT00746/24)
 
-### Patch 704.1-0018 - 22/02/2024
+### Patch 704.1-0018 - 02/22/2024
 
-> - WMS - Corretto bug nella for di filtro degli inventari (#TT00605/24)
-> - MES - Migliorata la funzionalità di “Generazione lotti” presente nel filtro degli ordini di produzione. Ora la quantità del lotto di origine non può essere variata nel caso in cui siano già state create delle Liste di prelievo, delle Dichiarazioni di produzione, oppure nel caso in cui alcuni materiali siano già stati consumati. In questi casi è comunque possibile creare nuovi lotti di produzione, ma senza poter variare la quantità del lotto di origine (#TT00353/24)        
-> - PM - Procedura aggiornamento prezzi progetto e documenti collegati, corretta conversione tra diverse unità di misura (#TT03661/23)
-> - Forzata la ricompilazione dello script se il progetto è nullo ma è già stato rilasciato
-> - SH - sviluppato webapi controller GeneralReadWritePublicController per l’import delle anagrafiche clienti/fornitori (# TT00619/24)
-> - WM - Implementata la procedura di Analisi disponibilità nella gestione degli ordini di conto lavoro (#TT00350/24)
-> - WM - Corretto bug nella procedura di Analisi disponibilità nella gestione degli ordini di conto lavoro (#TT00190/24)
-> - SH - Correzione dell’errore che non manteneva le modifiche nel Profilo se predefinito, nella modulo Attività di Fluentis (#TT00592/24)
-> - SCS - L’ordine di conto lavoro generato da un ordine di produzione con fase esterna ora rileva il prezzo dal Listino di Conto lavoro anche quando nel listino è presente solo l’articolo, senza la fase (#TT00439/24)
+> - WMS - Corrected bug in the inventory filter form (#TT00605/24)
+> - MES - Improved the functionality of "Batch Generation" present in the production orders filter. Now the origin batch quantity cannot be changed if picking lists, production declarations have already been created, or if some materials have already been consumed. In these cases, new production batches can still be created, but the quantity of the origin batch cannot be varied (#TT00353/24)
+> - PM - Procedure for updating project prices and related documents, corrected conversion between different units of measure (#TT03661/23)
+> - Forced recompilation of the script if the project is null but has already been released
+> - SH - developed webapi controller GeneralReadWritePublicController for importing customer/supplier records (# TT00619/24)
+> - WM - Implemented availability analysis procedure in the management of work orders (#TT00350/24)
+> - WM - Corrected bug in availability analysis procedure in management of work orders (#TT00190/24)
+> - SH - Correction of the error that did not maintain changes in the Profile if set as default, in the Fluentis Activity module (#TT00592/24)
+> - SCS - The work order generated from a production order with an external phase now retrieves the price from the Work Order price list even when only the item is present in the list, without the phase (#TT00439/24)
 > - CO - Depreciations for controlling, table CO_DepreciationYearStartings replicating rows + wrong values (#TT00477/24)
-> - WM - Corretto errore nella conversione della quantità alternativa proveniente da un Rientro di Conto lavoro, nella form di Dettaglio Movimenti (#TT00517/24)
-> - WM - Corretto bug nel calcolo delle differenze inventariali, nel caso in cui nella lista inventariale sia valorizzata l'unità di misura alternativa (#TT00366/24)
-> - WMS - Corretto bug nella form inventario del WMS, dove nel caso in cui le liste fossero gestite con UM Alternative, il dato dell'UM Gestionale che viene calcolato mediante fattore di conversione non rispettava i decimali previsti dall'unità di misura (#TT00675/24)
-> - WM - Nelle procedure di Creazione lotto da lotto e Creazione lotto da lotto con cambio articolo, l’Object Navigator presenta l’oggetto FSItemStockSummary (#TT00650/24)
-> - MES - Corretto bug nella registrazione di delle dichiarazioni di produzione con articoli alternativi presenti (#TT00649/24)
-> - WM - Corretto errore nella procedura di aggiornamento Costo Medio e Costo Ultimo (#TT00585/24)
+> - WM - Corrected error in the conversion of alternative quantity from a Work Order Return, in the Movements Detail form (#TT00517/24)
+> - WM - Corrected bug in the calculation of inventory differences, in case the alternative unit of measure is set in the inventory list (#TT00366/24)
+> - WMS - Corrected bug in the WMS inventory form, where in the case where lists were managed with Alternative UM, the data of the Managed UM calculated with the conversion factor did not respect the expected decimals from the unit of measure (#TT00675/24)
+> - WM - In the procedures for Creating a batch from a batch and Creating a batch from a batch with article change, the Object Navigator presents the FSItemStockSummary object (#TT00650/24)
+> - MES - Corrected bug in recording production declarations with alternative items present (#TT00649/24)
+> - WM - Corrected error in updating Average Cost and Last Cost procedures (#TT00585/24)
 
-### Patch 704.1-0017 - 16/02/2024
+### Patch 704.1-0017 - 02/16/2024
 
-> - ARM - revisione salvataggio nuovi elementi delle BPMN (#TT00486/24)
-> - PM - Creata WEBAPI per importazione attività di progetto (#TT00400/24)
-> - SD - Conversione offerta in ordine, nascosta opzione "riporta materiali/risorse da righe offerta come righe ordine" se nel tipo offerta non è abilitata l'opzione "gerarchica" (#TT00276/24)
-> - WM - Corretta visualizzazione della stampa Inventario a quantità valorizzato (#TT00455/24)
-> - Risolto il bug delle proprietà ricorsive sulle variabili contestuali di Blockly
-> - FI - rilascio controller webapi AccountingReadWritePublicController
-> - BI - Correzione del passaggio al widget successivo nei moduli di filtro quando si preme invio da kb (#TT00569/24)
-> - WEBAPI: risolta l’anomalia legata al settaggio della ResidualQuantity di bolle di acquisto e bolle vendita per righe con quantità 1 (#TT00480/24)
-> - MES - Corretto bug nella visualizzazione di lotti e serial number nelle Dichiarazioni di Produzione (#TT00487/24)
-> - WM - Corretta visualizzazione dei Movimenti di magazzino per gli articoli con Unità di misura alternativa (#TT00531/24)
-> - WM - Corretto bug nella procedura Sottoscorta delle stampe gestionali che non calcolava correttamente la quantità di riordino (#TT00481/24)
-> - WEBAPI: risolta l’anomalia legata al settaggio della ResidualQuantity di bolle di acquisto e bolle vendita per righe con quantità 1 (##TT00479/24)
-> - SCS - Se nei Parametri di Conto Lavoro è impostato il flag ‘Considera magazzini in base al tipo DDT rientro’, nell’Evasione di un Ordine il magazzino viene cercato con le seguenti priorità: prima nel Tipo DDT; dopo nell’Ordine; dopo nei Parametri di Conto lavoro. Se il Parametro non è attivo, le priorità sono le seguenti: prima nell’Ordine, poi nei Parametri (#TT00558/24)
-> - SCM - Corretto bug nella procedura di creazione di un Listino Fornitore in Fluentis browser (#TT03643/23)
-> - WMS - Corretto bug in gestione spunta nel caso in cui si cancellasse una spunta legata ad un movimento con contro partita (#TT00532/24)
-> - Fi - revisione stampa liquidazione iva periodica, visualizzazione del subreport del plafond solo se questo ha flag default
-> - PM: Progetto con struttura a wbs, reso possibile inserimento figli di tipo note nei livelli padre codificati/non codificati (#TT00243/24)
-> - FI - Contabilizzazione fatture: revisione parte analitica contabilizzazione fatture con date competenza diverse (#TT00240/24)
-> - SCS - Se nei Parametri di Conto Lavoro è impostato il flag ‘Considera magazzini in base al tipo DDT rientro’, nell’Evasione di un Ordine il magazzino viene cercato con le seguenti priorità: prima nel Tipo DDT/Rientro; dopo nell’Ordine; dopo nei Parametri di Conto lavoro. Se il Parametro non è attivo, le priorità sono le seguenti: prima nell’Ordine, poi nei Parametri (#TT03583/23)
-> - SD - Corretto elenco valori di default del campo tipo nodo per l'offerta multilivello in caso di aggiornamento di Fluentis dalla versione 2021 alla versione 2023 (#TT00590/24)
-> - PM - gestito campo imponibile importo nella struttura ad albero dei progetti wbs, anche nel caso di articoli codificati con figli note (#TT00335/24)
-> - SH - Alla creazione di un nuovo Contatto, la tab Parametri di raggruppamento viene popolata con i valori di default (#TT00601/24)
-> - SD - Ordini cliente con generazione automatica progetto, gestito allineamento numero ordine - numero progetto in caso di progetto senza numeratore (#TT00274/24)
-> - MPS - Inserite alcune migliorie e correzioni nella procedura MRP (#TT02029/23)
-> - MES - Corretto bug nelle dichiarazioni di produzione, che ricalcolava i materiali impiegato nel caso in cui fosse inserito un articolo nel tab Articoli alternativi (#TT00571/24)
-> - MES - Corretto bug nelle dichiarazioni di produzione che si verificava al momento della registrazione (#TT00606/24)
+> - ARM - revision saving new BPMN elements (#TT00486/24)
+> - PM - Created WEBAPI for importing project activities (#TT00400/24)
+> - SD - Conversion of offer to order, hidden option "report materials/resources from offer lines as order lines" if the offer type does not enable the "hierarchical" option (#TT00276/24)
+> - WM - Corrected display of Inventory Print with valued quantity (#TT00455/24)
+> - Resolved the bug of recursive properties on Blockly contextual variables
+> - FI - release of the webapi controller AccountingReadWritePublicController
+> - BI - Corrected the transition to the next widget in filter modules when Enter is pressed (#TT00569/24)
+> - WEBAPI: resolved the anomaly related to setting the ResidualQuantity of purchase and sales slips for rows with quantity 1 (#TT00480/24)
+> - MES - Corrected bug in the display of batches and serial numbers in Production Declarations (#TT00487/24)
+> - WM - Corrected display of Warehouse Movements for items with Alternative Unit of Measure (#TT00531/24)
+> - WM - Corrected bug in the Backorder management of management prints that did not correctly calculate the reorder quantity (#TT00481/24)
+> - WEBAPI: resolved the anomaly related to setting the ResidualQuantity of purchase and sales slips for rows with quantity 1 (##TT00479/24)
+> - SCS - If in the Work Order Parameters the flag ‘Consider warehouses based on the return DDT type’ is set, when fulfilling an Order, the warehouse is searched with the following priorities: first in the DDT Type; then in the Order; then in the Work Order Parameters. If the Parameter is not active, the priorities are as follows: first in the Order, then in the Parameters (#TT00558/24)
+> - SCM - Corrected bug in the procedure for creating a Supplier Price List in the Fluentis browser (#TT03643/23)
+> - WMS - Corrected bug in managing checkmarks in case a checkmark linked to a movement with a counterparty is deleted (#TT00532/24)
+> - FI - revised printout of periodic VAT liquidation, showing the subreport of the ceiling only if it has the default flag
+> - PM: Project with WBS structure, allowed insertion of notes type children at coded/non-coded parent levels (#TT00243/24)
+> - FI - Accounting of invoices: revised analytical part of invoice accounting with different competence dates (#TT00240/24)
+> - SCS - If in the Work Order Parameters the flag ‘Consider warehouses based on the return DDT type’ is set, when fulfilling an Order, the warehouse is searched with the following priorities: first in the DDT Type/Return; then in the Order; then in the Work Order Parameters. If the Parameter is not active, the priorities are as follows: first in the Order, then in the Parameters (#TT03583/23)
+> - SD - Corrected default value list for node type field for multi-level offering in case of updating Fluentis from version 2021 to version 2023 (#TT00590/24)
+> - PM - managed taxable amount field in the tree structure of WBS projects, even in the case of items coded with note children (#TT00335/24)
+> - SH - Upon creating a new Contact, the grouping parameter tab is populated with default values (#TT00601/24)
+> - SD - Customer orders with automatic project generation, managed alignment of order number - project number in the case of a project without a numerator (#TT00274/24)
+> - MPS - Some improvements and corrections in the MRP procedure (#TT02029/23)
+> - MES - Corrected bug in production declarations, which recalculated materials used in case an item was inserted in the Alternative Items tab (#TT00571/24)
+> - MES - Corrected bug in production declarations that occurred at the moment of registration (#TT00606/24)
 
-### Patch 704.1-0016 - 09/02/2024
+### Patch 704.1-0016 - 02/09/2024
 
-> - SCM - richieste di acquisto - risolvere il problema di salvataggio righe su analitica senza centro di costo (#TT00095/24)
-> - Traduzione dello stato SDI secondo il dizionario e non secondo il codice (#TT03342/23)
-> - SH - Nelle attività-task inserita indicazione della società e divisione in cui sono state inserite, al fine di garantire la corretta intestazione dei documenti aperti direttamente dalle attività (#TT00280/24)
-> - SD - Offerte multilivello, bloccata possibilità di inserire livelli figli diversi dalle note, per livelli padre con tipo riga 3 - spese (#TT00327/24)
-> - SD - Offerte multilivello, corretta visualizzazione campo Importo Imponibile per i casi in cui è presente un livello padre è codificato con figli di tipo note (#TT00328/24)
-> - ARM - correzione della migrazione: viene copiato il campo GEN_RightConditionalRules dal DB di origine
-> - SD - Risolvere il problema del esportazione colonna "Stato SDI" (#TT00321/24)
-> - SD - Offerte multilivello, gestita possibilità di escludere selettivamente alcuni materiali e risorse dall'importazione nell'ordine; impostato ordinamento righe ordine come nell'offerta; materiali valorizzati in ordine se codice padre a cui sono legati è 0, in caso contrario i materiali sono a 0 ed il padre è valorizzato; aggiunta possibilità di assegnare percentuale di ricarico massivamente su tutte le righe (#TT03372/23)
-> - SD - Offerte multilivello, in fase di conversione in progetto ed ordine, per ogni riga di offerta ed ordine gestito riferimento alla relativa wbs di progetto (#TT03542/23)
-> - SD - Offerte multilivello, introdotta possibilità di inserire nei livelli con tipo riga codificato/non codificato, livelli figli di tipo note (#TT00245/24)
-> - SH - Documentale - Implementata possibilità di cancellazione di un documento memorizzato su un oggetto (#TT03426/23)
-> - SCM - In Fluentis browser, all’interno del Ricevimento merci, è stata corretta la visualizzazione delle righe articolo a seguito di evasione da ordini (#TT00044/24)
-> - WM - Corretto bug nella procedura Sottoscorta delle stampe gestionali che generava erroneamente la commessa anche per gli articoli con tipo approvvigionamento “Acquisto” (#TT00438/24)
-> - MPS - Nella form di Sequenza fasi top down grid, inserendo la sequenza e confermando la riga, ora il focus rimane sulla riga appena modificata anche dopo l’aggiornamento della form (#TT00351/24)
-> - WM - Corretto bug in valorizazzione magazzino (#TT02573/23)
-> - SH - Correzione dell’errore che non popolava la combo box degli Extra Data aggiunti con Form Navigator (#TT00415/24)
-> - SH - Eseguendo l’Apri form dalla combo box di un Extra Data aggiunto tramite Form Navigator, la tabella che si apre risulta popolata (#TT00412/24)
-> - SCS - Correzione bug che bloccava l’inserimento righe di Ordini di conto lavoro (#TT00284/24)
-> - Revisione gestione creazione fatture acquisto da file Sdi per importi con segno negativo
-> - PM - Codici dell'elenco Tipo origine costo ricavo sostituiti con i nuovi codici nei documenti e nelle tabelle di configurazione, ed in seguito eliminati (#TT03470/23)
-> - Traduzione dello stato SDI secondo il dizionario e non secondo il codice (#TT03342/23)
-> - FI - cambiamento calcolo per non dedutibile - versione RO
-> - SD - Parametri offerta di vendita, aggiunta possibilità di gestire nel titolo progetto anche i campi nostro riferimento / vostro riferimento presenti nell'offerta (#TT00247/24) 
-> - PM: Progetto con struttura a wbs, reso possibile inserimento figli di tipo note nei livelli padre codificati/non codificati (#TT00243/24)
-> - SD - Aggiornamento della stampa standard Fattura di vendita (#TT00409/24)
-> - SD - Creazione file xml : revisione del campo regime fiscale in autofattura con cedente codificato come agente (#TT00469/24)
-> - SD - Aggiunta la possibilità di evadere solo righe descrittive all’interno dei documenti di vendita (#TT00429/24)
-> - SD - Calcolo Provvigioni: Aggiornato utilizzo parametro di attribuzione provvigioni per le righe di Acconto e Storno Acconto (#Tipo riga 6 e 7) (#TT001258/21)
-> - SH - Attivata la fattura elettronica token versione RO (#TT00426/24)
-> - SD - Offerte multilivello sbloccato inserimento risorse anche per righe codificate intermedie; per righe padre codificate con figli note, se le risorse e materiali sono inseriti a livello dei figli ed è previsto l'aggiornamento prezzi da risorse/materiali, il padre viene aggiornato con la somma dei valori presenti nei figli (#TT00358/24)
-> - FI - contabilità acquisti: chiuss l'IVA non detraibile con IVA differita (#TT00473/24)
-> - FI - Revisione procedura di contabilizzazione automatica note di credito con prezzo ivato (#TT00119/24)
-> - SD - Offerte multilivello nel caso di descrizione articolo o nota molto lunga, impostata lunghezza massima di estensione del campo con la barra di scorrimento. Per gli altri documenti ordini cliente, ddt di vendita e ddt di conto lavoro, fattura di vendita, estensione massima gestita solo per il campo note (#TT00485/24)
-> - QY - Risolto bug nel Controllo articoli (#TT00135/24)
-> - MPS - Risolto bug nella procedura MRP (#TT00456/24)
-> - SD - Nelle fatture di vendita, abilitata la modifica dei dati di analitica quando il documento è stato gestito per lo Sdi e non è contabilizzato (#TT00182/24)
-> - SD - Durante la conversione da Offerta cliente in Ordine cliente vengono ora proposti magazzino e causale impostati nei Tipi ordine cliente (#TT00406/24)
-> - SCM - RDA: il prezzo proposto nelle righe RDA è il netto fornitore ottenuto applicando tutti gli sconti applicabili all'articolo (#TT00127/24)
+> - SCM - purchase requests - resolving the issue of saving lines on analytical without a cost center (#TT00095/24)
+> - Translation of the SDI status according to the dictionary and not according to the code (#TT03342/23)
+> - SH - In task activities, inserted indication of the company and division in which they were inserted, in order to ensure the correct heading of documents opened directly from activities (#TT00280/24)
+> - SD - Multi-level offers, blocked the possibility of inserting different child levels into parent levels with line type 3 - expenses (#TT00327/24)
+> - SD - Multi-level offers, corrected display of Taxable Amount field for cases where there is a parent level coded with note-type children (#TT00328/24)
+> - ARM - correction of migration: the GEN_RightConditionalRules field is copied from the source DB
+> - SD - Resolving the issue of exporting the "SDI Status" column (#TT00321/24)
+> - SD - Multi-level offers, managed the possibility of selectively excluding some materials and resources from import into the order; set order line sorting as in the offer; materials valued in order if parent code to which they are linked is 0; otherwise, materials are 0 and the parent is valued; added the possibility of mass assigning a markup percentage to all lines (#TT03372/23)
+> - SD - Multi-level offers, at the time of conversion into project and order, for each offer and order line managed reference to the respective project WBS (#TT03542/23)
+> - SD - Multi-level offers, introduced the possibility of inserting in levels with coded/uncoded row type, child levels of note type (#TT00245/24)
+> - SH - Document - Implemented the possibility of deleting a document stored on an object (#TT03426/23)
+> - SCM - In Fluentis browser, within Goods Receipt, the display of item lines following fulfillment from orders has been corrected (#TT00044/24)
+> - WM - Corrected bug in Backorder management prints that generated the job even for items with procurement type “Purchase” (#TT00438/24)
+> - MPS - In the top-down phase sequence grid form, entering the sequence and confirming the row now keeps the focus on the just modified row even after the form update (#TT00351/24)
+> - WM - Corrected bug in warehouse valuation (#TT02573/23)
+> - SH - Correction of the error that did not populate the combo box of Additional Data added with Form Navigator (#TT00415/24)
+> - SH - Executing Open form from the combo box of Additional Data added via Form Navigator, the table that opens is populated (#TT00412/24)
+> - SCS - Correction of bug that blocked the insertion of Work Order rows (#TT00284/24)
+> - Revision management of creating purchase invoices from Sdi file for amounts with a negative sign
+> - PM - Codes of the Cost Origin Type list replaced with new codes in documents and configuration tables, and then deleted (#TT03470/23)
+> - Translation of the SDI status according to the dictionary and not according to the code (#TT03342/23)
+> - FI - change calculation for non-deductible - RO version
+> - SD - Sales offer parameters, added the possibility of managing in the project title also the our reference / your reference fields present in the offer (#TT00247/24) 
+> - PM: Project with WBS structure, allowed insertion of notes type children at coded/non-coded parent levels (#TT00243/24)
+> - SD - Update the standard sales invoice print (#TT00409/24)
+> - SD - XML file creation: revised the tax regime field in self-invoice with issuer coded as agent (#TT00469/24)
+> - SD - Added the possibility to fulfill only descriptive lines within sales documents (#TT00429/24)
+> - SD - Commission Calculation: Updated use of the commission attribution parameter for Advance and Return Advance lines (#Line type 6 and 7) (#TT001258/21)
+> - SH - Activated electronic invoice token version RO (#TT00426/24)
+> - SD - Multi-level offers unlocked insertion of resources even for intermediate coded lines; for parent lines coded with note children, if resources and materials are inserted at the child level and price updates from resources/materials are expected, the parent is updated with the sum of the values present in the children (#TT00358/24)
+> - FI - purchase accounting: closed non-deductible VAT with deferred VAT (#TT00473/24)
+> - FI - Revised the procedure for automatic credit note accounting with VAT-inclusive price (#TT00119/24)
+> - SD - Multi-level offers in the case of very long item description or note, set maximum field extension length with scrollbar. For other documents customer orders, sales ddt and work ddt, sales invoice, maximum extension managed only for the notes field (#TT00485/24)
+> - QY - Resolved bug in Item Control (#TT00135/24)
+> - MPS - Resolved bug in the MRP procedure (#TT00456/24)
+> - SD - In sales invoices, enabled editing of analytical data when the document has been managed for Sdi and is not posted (#TT00182/24)
+> - SD - During the conversion from customer Offer to customer Order, warehouses and reasons set in Customer Order Types are now proposed (#TT00406/24)
+> - SCM - RDA: the proposed price in the RDA lines is the net supplier obtained by applying all applicable discounts to the item (#TT00127/24)
 
-### Patch 704.1-0015 - 31/01/2024
+### Patch 704.1-0015 - 01/31/2024
 
-> - FI - Creato nuovo campo "Codice altre somme non soggette a ritenuta" in Gestione tipo ritenuta (#TT01453/23)
-> - Aggiunta una funzione al mittente di script WebApi per notificare informazioni sul registro BizLink
-> - FI - CU2024 - Rilascio nuovo report Certificazione Unica 2024
-> - SD - Correzione dell’errore che si generava nella Creazione Fattura dalla Ricerca Ordini clienti, nel caso di Ordine con una riga articolo codificato, una riga articolo non codificato e una riga note (#TT00291/24)
-> - Solved bug for file Intrastat (#TT00299/24)
-> - CRM - Quando un’Attività viene Completata, si aggiorna la Data di chiusura dell’Attività all’interno del Workflows Log che l’ha creata; se l’Attività viene Riaperta, la Data di chiusura nel Workflows Log viene cancellata (#TT00097/24)
-> - SD - Nelle offerte gerarchiche, tab Materiali, aumentati decimali gestiti nel campo Costo Unitario (#TT00254/24)
-> - MPS - Corretto bug in costificazione dove non erano visualizzati i costi preventivi dei materiali e il valore totale del costo manodopera (#TT02967/23)
-> - SH - Prototipi - E' stata implementata la codifica degli articoli e dei componenti non codificati (#TT03604/23)
-> - SD - Offerte multilivello, procedura di duplica considera anche i nuovi flag di riga Escludi Risorse in Ordine cliente ed Escludi materiali in ordine cliente (#TT00357/24)
-> - WMS - Corretto bug che non riportava correttamente i dati relativi all’operatore nelle liste inventariali.  Corretto bug nelle liste di trasferimento all’inserimento dell’ubicazione (#TT00153/24)
-> - WM - Sistemazione Generazione DDT da Picking con Cambio Errato (#TT00364/24)
-> - CRM - Il Manager del task può modificare l’Operatore/Ruolo assegnato all’Attività creata (#TT00211/24)
-> - CO - fix filtro per divisione - prendere la divisione da movconti e non da registrazione
-> - WM - Aggiunto sul report del Giornale di magazzino il filtro per società e divisione (#TT00375/24)
-> - FI - Gestione export cedolini ore dipendenti per Sistemi (#TT00212/24)
-> - SD - Nell’Help articoli, tab Documenti, vengono popolati i campi Classe, Codice e Descrizione articolo (#TT00381/24)
-> - SD - Offerte multilivello resi visibili data consegna e periodo prevista consegna nella riga della struttura wbs. Rimosso blocco di quantità = 1 per le righe wbs con materiali e risorse. Se prezzo calcolato da materiali e risorse, il prezzo unitario è calcolato dalla somma del ricavo materiali e o risorse, diviso per la quantità indicata in riga wbs (#TT00123/24)
-> - PM - Procedura di creazione progetto da template, se presenti indirizzi di destinatario e destinazione predefiniti per il cliente, prevalgono sugli indirizzi indicati nel template (#TT00122/24)
-> - SCM: A fronte di una modifica del conto all’interno di un ordine fornitore non viene più mantenuto l’imponibile valorizzato (#TT00035/24)
-> - SCM - Risoluzione dell’errore uscente al salvataggio di un documento, dopo aver inserito un articolo con lotto partendo dalla selezione del Tipo riga (#TT03505/23)
-> - SCM - Risoluzione dell’errore uscente al salvataggio di un documento, dopo aver inserito un articolo con lotto partendo dalla selezione del Tipo riga (#TT03505/23)
-> - PM - il campo sconto degli interventi accetta valori decimali in testata e in riga servizio (#TT03553/23)
+> - FI - Created new field "Code for other amounts not subject to withholding" in Retention type management (#TT01453/23)
+> - Added a function to the WebApi script sender to notify information in the BizLink registry
+> - FI - CU2024 - Release of new report Unique Certification 2024
+> - SD - Correction of the error that occurred in the Creation of Invoice from Customer Orders Search, in the case of an Order with one coded item line, one uncoded item line and one note line (#TT00291/24)
+> - Solved bug for Intrastat file (#TT00299/24)
+> - CRM - When an Activity is Completed, updates the Closing Date of the Activity within the Workflow Log that created it; if the Activity is Reopened, the Closing Date in the Workflow Log is cleared (#TT00097/24)
+> - SD - In hierarchical offers, tab Materials, increased decimals managed in the Unit Cost field (#TT00254/24)
+> - MPS - Corrected bug in costing where preliminary costs of materials and total labor cost were not displayed (#TT02967/23)
+> - SH - Prototypes - Article and uncoded components management has been implemented (#TT03604/23)
+> - SD - Multi-level offers, duplicate procedure also considers new line flags Exclude Resources from Customer Order and Exclude materials in Customer Order (#TT00357/24)
+> - WMS - Corrected bug that did not correctly report the operator data in inventory lists. Corrected bug in transfer lists when inserting location (#TT00153/24)
+> - WM - Fixed DDT Generation from Picking with Wrong Change (#TT00364/24)
+> - CRM - The Task Manager can modify the Assigned Operator/Role of the Created Activity (#TT00211/24)
+> - CO - fix filter for division - take the division from movconti and not from registration
+> - WM - Added in the Warehouse Journal report filter for company and division (#TT00375/24)
+> - FI - Management of employee hours payslip exports for Systems (#TT00212/24)
+> - SD - In Article Help, tab Documents, the fields Class, Code, and Item Description are populated (#TT00381/24)
+> - SD - Multi-level offers made the delivery date and estimated delivery period visible in the row of the wbs structure. Removed block of quantity = 1 for wbs rows with materials and resources. If priced calculated from materials and resources, the unit price is calculated from the sum of the material revenues and/or resources, divided by the quantity indicated in the wbs row (#TT00123/24)
+> - PM - Project creation procedure from template, if recipient and destination addresses are predefined for the client, they prevail over those specified in the template (#TT00122/24)
+> - SCM: Following a modification of the account within a supplier order, the valued taxable amount is no longer maintained (#TT00035/24)
+> - SCM - Resolution of the error returning when saving a document after adding an item with a lot starting from row type selection (#TT03505/23)
+> - SCM - Resolution of the error returning when saving a document after adding an item with a lot starting from row type selection (#TT03505/23)
+> - PM - the discount field of the interventions accepts decimal values in the header and in the service row (#TT03553/23)
 
-### Patch 704.1-0014 - 24/01/2024
+### Patch 704.1-0014 - 01/24/2024
 
-> - WM - Revisione Navigatore articoli con aggiunta di nuove tab (#TT00130/24)
-> - MES - Corretto bug che non manteneva il legame con gli ordini figli al momento del rilascio degli ordini pianificati in ordini di produzione (#TT00161/24)
-> - SD - Revisione gestione blocco fido quando il documento in modifica è quello che causa lo sforamento ed è già autorizzato (#TT00206/24)
-> - SCM - Nella procedura di Creazione Automatica Ordini, tab Operazioni, vengono raggruppate in un'unica operazione tutte le righe dello stesso Ordine fornitore creato, anche se le evasioni sono state multiple (#TT01891/23)
-> - SCM - Aprendo la procedura di Creazione Automatica Ordini e spostandosi nel tab Ordini cliente del Filtro, non si viene più reindirizzati automaticamente al tab Scelta fornitore (#TT03511/23)
-> - SD - Nelle offerte gerarchiche abilitata possibilità di gestire per i livelli padre di tipo codificato o non codificato, dei livelli figli solo di tipo riga 4-note (#TT00245/24)
-> - SD - Nelle offerte gerarchiche, tab Materiali, aumentati decimali gestiti nel campo Costo Unitario (#TT00254/24)
-> - SD - Nelle offerte gerarchiche, resi visibili nella struttura ad albero e nella tab Attività la data ed il periodo di prevista consegna. Rimosso il blocco della quantità 1 nel caso di prezzo aggiornato dai Materiali e/o Risorse (#TT00123/24)
-> - Aggiunta la possibilità di aggiungere un prefisso personalizzato a FlowOperation per utilizzare una personalizzazione di flowOperation
+> - WM - Revision of Article Navigator with addition of new tabs (#TT00130/24)
+> - MES - Corrected bug that did not maintain the link with child orders at the time of releasing planned orders in production orders (#TT00161/24)
+> - SD - Revision of credit limit blocking management when the document being modified is the one causing the overspending and is already authorized (#TT00206/24)
+> - SCM - In the Automatic Order Creation procedure, Operations tab, all lines of the same Created Supplier Order are grouped into a single operation, even if there have been multiple fulfillments (#TT01891/23)
+> - SCM - Opening the Automatic Order Creation procedure and moving to the Customer Orders tab of the Filter, users will no longer be redirected to the Supplier Selection tab (#TT03511/23)
+> - SD - In hierarchical offers, the possibility has been enabled to manage for parent levels of type coded or uncoded, child levels with type line only 4-notes (#TT00245/24)
+> - SD - In hierarchical offers, tab Materials, increased decimals managed in the Unit Cost field (#TT00254/24)
+> - SD - In hierarchical offers, made visible in the tree structure and in the Activities tab the date and the expected delivery period. Removed the block of quantity 1 in case of price updated by Materials and/or Resources (#TT00123/24)
+> - Added the possibility to add a custom prefix to FlowOperation to use a customization of flowOperation
 
-### Patch 704.1-0013 - 19/01/2024
+### Patch 704.1-0013 - 01/19/2024
 
-> - Risolto il problema con il servizio OData personalizzato per creare un nuovo script o aggiornarlo (#TT00067/24)
-> - MS - Risolto bug in Schedulazione Generale e MRP legato all’analisi disponibilità (#TT03566/23, #TT00033/24)
-> - WMS - Nella form lista di trasferimento UDC il pulsante Salva viene abilitato solo dopo aver inserito tutti i dati necessari (#TT03336/23)
-> - SD: Calcolo costo materiali offerta per il tipo origine costo "listino fornitore", nel caso di variazione tipo riga, quantità e fornitore (#TT03372/23)
-> - MPS - Corretto bug nel calcolo dell’analisi disponibilità per articoli con migliaia di componenti (#TT00173/24)
-> - PM - i progetti template sono visualizzati nella form di ricerca (#TT00007/24)
-> - MES - Risolta exception in registrazione dichiarazione con lotti quando siamo su una fase dopo la prima e Fluentis dovrebbe scaricare il lotto dalla fase precedente (#TT00185/24)
-> - WM - Corretto bug che riportava in maniera errata la larghezza di una UDC nel form Confezionamento dell’anagrafica articolo (#TT00177/24)
-> - MS - Parametri MRP Articolo - implementazione Escludi da pianificazione (#TT01778/23)
-> - CRM - Sincronizzazione del calendario tra Fluentis e Outlook (#TT03320/23)
-> - MPS - Corretto bug nella gestione degli stati di testata e di riga delle commesse multiprodotto (#TT03550/23) 
-> - Consentire di notificare gli errori del modulo di script con la fattura di Elettronica
-> - MES - Corretto bug nelle Dichiarazioni di produzione che cambiava il magazzino e la causale di consumo di un articolo nel momento in cui si inseriva una quantità di scarto (#TT00025/24)
-> - SD- La creazione del compenso da liquidazione agenti ora riporta il tipo/soluzione di pagamento della liquidazione e non anche quello dell’anagrafica agente (#TT00192/24)
-> - CRM - Revisione dei totali delle righe nodo dei Marketing Budget
+> - Resolved the issue with the custom OData service to create a new script or update it (#TT00067/24)
+> - MS - Resolved bug in General Scheduling and MRP related to availability analysis (#TT03566/23, #TT00033/24)
+> - WMS - In the UDC transfer list form the Save button is enabled only after all necessary data has been entered (#TT03336/23)
+> - SD: Material cost calculation offer for cost origin type "supplier price list", in case of change of line type, quantity, and supplier (#TT03372/23)
+> - MPS - Corrected bug in availability analysis for items with thousands of components (#TT00173/24)
+> - PM - template projects are displayed in the search form (#TT00007/24)
+> - MES - Resolved exception in registering a declaration with batches when we are on a phase after the first one and Fluentis should download the batch from the previous phase (#TT00185/24)
+> - WM - Corrected bug incorrectly reporting the width of a UDC in the item registry Packing form (#TT00177/24)
+> - MS - MRP Article Parameters - implemented Exclude from planning (#TT01778/23)
+> - CRM - Calendar synchronization between Fluentis and Outlook (#TT03320/23)
+> - MPS - Corrected bug in header and line status management of multi-product jobs (#TT03550/23) 
+> - Allow notifying script module errors with the Electronic invoice
+> - MES - Corrected bug in Production Declarations that changed the warehouse and the consumption reason of an item when a waste quantity was entered (#TT00025/24)
+> - SD - The creation of compensation from agent liquidation now reports the type/payment solution of the liquidation and not also that of the agent registry (#TT00192/24)
+> - CRM - Review total line nodes from Marketing Budget
 > - SH - Fix loading information for tasks after update (#TT00150/24)
-> - MPS - Material Requirements and Parameters - modifica layout - I parametri di Rilascio richieste di acquisto autorizzate e Rilascio ordini di produzione esecutivi sono stati spostati nei Parametri del Rilascio Ordini pianificati (#TT03085/23)
-> - Aggiunto il lettore di proprietà DataProvider per lo script
-> - FI - corretto bug nella form differenza tra saldo contabile e partite quando la somma delle partite da confrontare era data da partite tutte dello stesso valore (#TT03315/23)
-> - SCM - Corretto bug nei DDT di acquisto che, nel caso di modifica del prezzo in fattura rimanevano valorizzati anche a seguito di cancellazione della fattura (#TT00147/24)
-> - MPS - Corretto bug nel rilascio degli ordini pianificati di conto lavoro (#TT00170/24)
-> - FI - Gestione export cedolini ore dipendenti per Sistemi (#TT00212/24)
-> - Aggiunto responsabile paghe per Sistemi (#TT00151/24)
+> - MPS - Material Requirements and Parameters - modify layout - The parameters for Release of authorized purchase requests and Release of executive production orders have been moved to the Parameters of Release of scheduled Orders (#TT03085/23)
+> - Added property reader DataProvider for script
+> - FI - corrected bug in the difference between accounting balance and items when the sum of items to be compared was given by all items of the same value (#TT03315/23)
+> - SCM - Corrected bug in the purchase DDTs that, in the case of modifying the price in invoice remained valued even after canceling the invoice (#TT00147/24)
+> - MPS - Corrected bug in the release of scheduled orders of work (#TT00170/24)
+> - FI - Management of employee hours payslip exports for Systems (#TT00212/24)
+> - Added payroll manager for Systems (#TT00151/24)
 
+### Patch 704.1-0012 - 01/16/2024
 
-### Patch 704.1-0012 - 16/01/2024
+> - MS - Resolution of the error that closed Fluentis in case of selection of more Order Types in the filters of the Production Commissions Generation for Customer Orders (#TT00088/24)
+> - SH - executing workflows from tabs in the search forms now creates attachments without replicating them (#TT00103/24)
+> - WMS - Improved contrast between inserted lines and selected one (#TT00102/24)
+> - WMS - Corrected bug on the framework that generated the application lock (#TT00117/24)
+> - WMS - Corrected bug on the Confirmation of UDC Transfer due to which the counterparty movement does not report the exact time (#TT00131/24)
+> - MS - Corrected bug that caused an error in the scheduling of a job in the presence of a customization on the items (#TT00085/24)
+> - SCM - Corrected bug in creating a Purchase Request that did not detect the price of an item with a variant from the supplier price list (#TT03711/23)
 
-> - MS - Risoluzione dell’errore che chiudeva Fluentis in caso di selezione di più Tipi ordine nei filtri della Generazione Commesse di Produzione per gli Ordini cliente (#TT00088/24)
-> - SH - l’esecuzione dei workflow dai tab nelle form di ricerca ora crea attachment senza replicarli (#TT00103/24)
-> - WMS - Migliorato il contrasto tra le righe inserite e quella selezionata (#TT00102/24)
-> - WMS - Corretto bug sul framework che generava il blocco dell’applicazione (#TT00117/24)
-> - WMS - Corretto bug sulla Conferma Liste Trasferimento del WMS a causa del quale il movimento di contropartita non riporta l'ora esatta (#TT00131/24)
-> - MS - Corretto bug che causava un errore nella schedulazione di una commessa in presenza di una personalizzazione sugli articoli (#TT00085/24)
-> - SCM - Corretto bug nella creazione di una Richiesta di Acquisto che non rilevava il prezzo di un articolo con variante dal listino fornitore (#TT03711/23)
+### Patch 704.1-0011 - 01/11/2024
 
+> - Revision of the BankCreditSituation print for renaming object
+> - MS - Phase sequence - Resolved anomaly when executing the 'Change date' functionality (#TT03670/23)
+> - SH - Prototypes - Implemented management of items and uncoded components (#TT02948/23)
+> - WMS - Corrected bug in UDC transfer confirmation regarding updating data present in the UDC detail table (#TT03340/23)
+> - SD - Creation of the grouping parameters tab for Customer/Supplier in the Contact Registry. These parameters take precedence over general grouping parameters (#TT03564/23)
+> - WM - Resolved bug in the creation of Loading Plans that did not correctly reflect the manually modified quantity when using the Insert order button (#TT03642/23)
+> - CRM - The total amount column in Sales Forecast Management reports the product of Total Quantity and Average Unit Price; also, each parent row node reports the sum of the amounts of the child rows. In the Sales forecast closure print, a Year filter was added for selecting Sales forecasts. With the insertion of the sales forecast field, the Type period is automatically populated (with the Type period equal to that present in the sales forecast type) Finally, the Detail type period can be chosen based on the inserted Type period (#TT0318/23)
+> - PR - revision of line insertion in the liquidity management form (#TT03677/23)
+> - FI - in the recovery of amortization of controlled assets, revision of the use of first year percentage halving flag (#TT03681/23)
+> - FI - changes to variable structure field management for CU (#TT00019/24)
+> - SH, PR - revision of management edit of balance calculations in bank registry and presentation statements (#TT03680/23)
+> - MES - Fixed bugs in production declarations in the case of managing quantities discarded with batch items and also in the case of a registration with produced quantity equal to zero and discarded quantity greater than zero (#TT03708/23 - #TT00005/24)
+> - SD - Corrected functionality of the filter on Extra Data in sales DDTs (#TT00058/24)
+> - SD - In sales documents, in case of valuation centers on all dimensions, on saving, a message is now returned for cancellation of rows without a cost center instead of a block to be managed manually row by row (#TT00065/24)
+> - SH - Creation of a new year - when the fix parameter is true - if there are rows with year of validity end date >= year - do not update to null (#TT00093/24)
+> - MES - Fixed bug in production declarations that did not correctly load batches created within the declaration (#TT03393/23)
+> - WM - Corrected bug in Stock Level Visualization where it did not correctly display the stock of items containing the character ‘#’ in the description (#TT00006/24)
+> - WMS - In the UDC management tab of WMS, the Print UDC button is enabled correctly (#TT00091/24) 
 
-### Patch 704.1-0011 - 11/01/2024
+### Patch 704.1-0010 - 12/22/2023
 
-> - Revisione stampa BankCreditSituation per renaming oggetto
-> - MS - Sequenza fasi - Risolta anomalia all’esecuzione della funzionalità di ‘Cambio data’ (#TT03670/23)
-> - SH - Prototipi - E' stata implementata la gestione degli articoli e dei componenti non codificati (#TT02948/23)
-> - WMS - Corretto bug in Conferma trasferimento UDC sull’aggiornamento dei dati presenti nella tabella dettaglio UDC (#TT03340/23)
-> - SD - Creazione del tab Parametri di raggruppamento per Cliente/Fornitore in Anagrafica contatto. Questi parametri hanno priorità rispetto ai Parametri di raggruppamento generali (#TT03564/23)
-> - WM - Risolto bug nella creazione dei Piani di carico che non riportava in maniera corretta la quantità modificata manualmente quando si utilizzava il pulsante Inserisci odine (#TT03642/23)
-> - CRM - La colonna Importo totale nella Gestione Previsioni di Vendita riporta il prodotto di Quantità totale e Prezzo medio unitario; inoltre ogni nodo padre di riga riporta la somma degli importi delle righe figlie. Nella Stampa Chiusura previsioni di vendita, è stato inserito il filtro Anno per la scelta delle Previsioni di vendita. Con l’inserimento del campo Previsione di vendita, in automatico viene popolato il Tipo periodo (con il Tipo periodo uguale a quello presente nel Tipo previsione di vendita) Infine, il Dettaglio tipo periodo può essere scelto in base al Tipo periodo inserito (#TT0318/23)
-> - PR - revisione inserimento righe nella form di Gestione della liquidità (#TT03677/23)
-> - FI - nella ripresa ammortamento cespiti del controlling, revisione utilizzo flag di dimezzamento percentuale primo anno (#TT03681/23)
-> - FI - modifiche alla gestione campi a struttura variabile per la CU (#TT00019/24)
-> - SH, PR - revisione gestione edit di calcolo castelletti in anagrafica banche e in distinte di presentazione (#TT03680/23)
-> - MES - Risolti bug nelle dichiarazioni di produzione nel caso in cui vengano gestite le quantità scartate con articoli a lotti e anche nel caso di una registrazione con quantità prodotta uguale a zero e quantità scartata maggiore di zero (#TT03708/23 - #TT00005/24)
-> - SD - Corretto il funzionamento del filtro sugli Extra Data nei DDT di vendita (#TT00058/24)
-> - SD - Nei documenti di vendita, in caso di valorizzazione centri su tutte le dimensioni, al salvataggio viene ora restituito un messaggio di cancellazione delle righe senza centro di costo invece di un blocco da gestire manualmente riga per riga (#TT00065/24)
-> - SH - Creazione nuovo anno - quando il parametro fix è true - se esistono righe con anno di data di fine validità >= anno - non aggiornare a null (#TT00093/24)
-> - MES - Corretto bug nelle dichiarazioni di produzione che non caricava correttamente le UDC create all’interno della dichiarazione (#TT03393/23)
-> - WM - Corretto bug in Visualizzazione giacenze nella quale non veniva visualizzata correttamente la giacenza degli articoli contenenti nella descrizione il carattere ‘#’ (#TT00006/24)
-> - WMS - Nel tab UDC della gestione spunta del WMS il pulsante Stampa UDC si abilita correttamente (#TT00091/24) 
+> - FI - Corrected bug during accounting of Ri.ba breakdown (cash VAT mode) containing effects created by merging more than one item, that generated VAT reclassification entries with incorrect amounts (#TT02548/23)
+> - FI - revision rollback of uncollectibles accounting (#TT03579/23)
+> - CRM - Resolved error that added empty columns when saving a Profile in Opportunity Search (#TT03567/23)
+> - SH - Prototypes - Implemented management of items and uncoded components.(#TT02948/23)
+> - PM: managed propagation of extra data from item to service lines in the intervention (#TT03515/23)
+> - WM - Technical alignment during inventory line selection to create a warehouse registration (#TT02776/23)
+> - WMS - Corrected bug in Move Item of WMS that did not enter hours, minutes, and seconds in the creation date field of counter-movement (#TT02482/23)
+> - MES - Fixed bug in production reports that inserted a non-zero value into the produced quantity in case a suspension was entered (#TT03411/23)
+> - MES - Corrected bug in production declarations that linked incorrect load/unload reasons taking them from WIP work in progress instead of from the box of work in parameters (#TT03508/23)
+> - WMS - In the WMS transfer confirmation form, added "Operation performed" message also in case of direct confirmation from the filter search (#TT03339/23)
+> - PM - added 2 new fields in projects to track whether the project was generated from an offer (#TT03454/23)
+> - WM - In the lot registry, in the loading and unloading tabs, implemented the capability to view details on fulfilled quantities by adding the columns "Line Number," "Quantity," and "Unit of measurement" (#TT03487/23)
+> - SD - Introduced new features for hierarchical offers, such as copy/move levels, create RDA, replace wbs number, FTE for resources, price update from resources/materials (#TT03084/23)
+> - SD - Introduced management of offers with hierarchical structure (#TT02881/23)
+> - SD - Introduced management of automatic project creation from offer (#TT03040/23)
+> - SD - Managed extended description of item for the sales area; added capability to exclude materials/resources rows from customer orders; improved ordering of order lines generated from hierarchical offers; blocked conversion of offer to order if uncoded prototypes are present; managed item/material price or offer line in the order based on how the offer lines are valued; managed mass propagation of markup percentage across all material lines in 1 single pass (#TT03372/23)
+> - SD - Improved management of prototypes in customer offers (#TT03100/23)
+> - FI - corrected erroneous values in cost center in accounting in case of non-deductible Romanian percentage (#TT03651/23)
+> - SCM - item price for offer requests is no longer defined based on prior purchase requests (#TT03518/23)
+> - SCM - when the value of the lines in the RDO generator tab is 0, then they are 0 in the RDO created from using the procedure (#TT03458/23)
 
+### Patch 704.1-0009 - 12/14/2023
 
-### Patch 704.1-0010 - 22/12/2023
-
-> - FI - Corretto bug in fase di contabilizzazione distinta Ri.ba (modalità iva per cassa) contenente effetti creati accorpando più di una partita, che generava scritture di giroconti iva con importi errati (#TT02548/23)
-> - FI - revisione rollback contabilizzazione insoluti (#TT03579/23)
-> - CRM - Risolto errore che aggiungeva colonne vuote al salvataggio di un Profilo nella Ricerca Opportunità (#TT03567/23)
-> - SH - Prototipi - E' stata implementata la gestione degli articoli e dei componenti non codificati.(#TT02948/23)
-> - PM: gestita propagazione extradata da articolo a righe di servizi nell'intervento (#TT03515/23)
-> - WM- Allineamento tecnico in fase di selezione righe dalla griglia delle giacenze per creare una registrazione di magazzino (#TT02776/23)
-> - WMS - Corretto bug in Sposta articolo del WMS che non inseriva ore, minuti e secondi, nel campo data creazione dei movimenti in contro partita (#TT02482/23)
-> - MES - Risolto bug nelle segnalazioni di produzione che inseriva un valore diverso da zero nella quantità prodotta nel caso in cui si inserisse una sospensione (#TT03411/23)
-> - MES - Corretto bug nelle dichiarazioni di produzione che agganciavano la causale di carico scarico errata prendendola dai semilavorati WIP anziché dal box dei semilavorati nelle parametri di produzione (#TT03508/23)
-> - WMS - Nella form conferma trasferimento del WMS aggiunto il messaggio di "Operazione effettuata" anche nel caso in cui venga confermata direttamente dal filtro di ricerca (#TT03339/23)
-> - PM - inseriti 2 nuovi campi nei progetti per tracciare se il progetto è stato generato da offerta (#TT03454/23)
-> - WM - Nell'anagrafica lotti, nei tab carico e scarico implementata la possibilità di visualizzare i dettagli sulle quantità evase con l'aggiunta delle colonne "Numero riga", "Quantità" e "Unità di misura" (#TT03487/23)
-> - SD - Introdotte nuove funzionalità per le offerte gerarchiche, quali copia/sposta livelli, crea RDA, sostituisci numero wbs, FTE per le risorse, aggiornamento prezzo da risorse/materiali (#TT03084/23)
-> - SD - Introdotta gestione offerte con struttura gerarchica (#TT02881/23)
-> - SD - Introdotta gestione creazione automatica progetti da offerta (#TT03040/23)
-> - SD - Gestita descrizione estesa articolo per l’area vendite; aggiunta possibilità di escludere per riga materiali/risorse dagli ordini cliente; migliorato ordinamento righe ordine generato da offerta gerarchica; blocco conversione offerta in ordine se presenti prototipi non codificati; gestione prezzo materiali o riga offerta nell’ordine a seconda di come sono valorizzate le righe dell’offerta; gestita possibilità di propagazione percentuale ricarico su tutte le righe materiali con 1 solo passaggio (#TT03372/23)
-> - SD - Migliorata gestione prototipi nelle offerte cliente (#TT03100/23)
-> - FI - correzione dei valori errati nel centro di costo in contabilità in caso di percentuale non deducibile romena (#TT03651/23)
-> - SCM - il prezzo articolo delle richieste di offerta non viene più definito in base alle richieste di acquisto precedenti (#TT03518/23)
-> - SCM - quando il valore delle righe nel tab generatore RDO sono a 0 allora sono a 0 nella RDO creata dall'utilizzo della procedura (#TT03458/23)
-
-### Patch 704.1-0009 - 14/12/2023
-
-> - PM - aggiornamento data e risorsa assegnati alla wbs del progetto, aggiornano automaticamente i dati nell'intervento pianificato se presente ed i relativi calendari delle risorse (#TT03327/23) 
-> - SCM - Importazione file xml: rivista formattazione della data nell’importazione del file xml (#TT03194/23)
-> - FI - RO - agiungere nuovi conti in FastStart
-> - WM - Crea la possibilità di arrivare a una lista di inventario di un secondo utente anche se l'inventario e aperto da un altro utente. E un inventario chiuso diventa non modificabile (#TT03443/23)
-> - SCM - Nelle fatture di acquisto, la modifica delle date competenza in riga articolo viene ora propagata alle righe di analitica sottostanti (#TT03214/23)
-> - FI - Contabilizzare le fatture di vendita - con sconto sui pagamenti - non significa prendere il valore dello sconto, ma chiudere tutte le scadenze (#TT03408/23)
-> - Fluentis- Attività: Risolto abilitazione alla modifica di attività già inserite (#TT03391/23)
-> - SDI - Attivazione pulsante di creazione fatture di acquisto per RO
-> - MES - Risolto bug nelle segnalazioni di produzione che inseriva un valore diverso da zero nella quantità prodotta nel caso in cui si inserisse una sospensione (#TT03411/23)
-> - MS - Schedulazione generale - Risolta l'anomalia di evasione commessa nel caso in cui non ci sia disponibilità degli articoli richiesti. Caso specifico di configurazione schedulazione con "Raggruppamento per articolo" e articolo padre "Fittizio" (#TT03424/23)
-> - MS - Schedulazione generale - E' stata corretta la proposta, negli Ordini di conto lavoro, dei materiali di padri fittizi il cui consumo è previsto in specifiche fasi di lavoro purchè indicata la medesima fase e sottofase che dovrà essere presente sia nel padre non fittizio che nei figli fittizi ad ogni livello della distinta base (#TT03007/23)
-> - SCM - Stampa richieste d’acquisto - Resa disponibile anche la stampa documento dal filtro di ricerca delle richieste d’acquisto e non solo dall’interno del documento
-> - CO - revisione elaborazione periodi del controlling per mensilizzazione dati oltre l’esercizio corrente (#TT03186/23)
-> - Risolto l'errore di reimpostare la cartella di lavoro quando si carica un file esterno su Blazor
-> - MPS - Corretto bug nell'aggiornamento di stato delle righe delle commessa di produzione multiprodotto di acquisto e conto lavoro (#TT01533/23)
-> - SCS - Risoluzione dell’errore che impediva l’inserimento delle UM alternative negli Articoli dei Rientri di conto lavoro che le prevedono (#TT03382/23)
-> - PM - risolta casistica di cancellazione risorse assegnate ad una wbs nel caso di cambio articolo della wbs. Rif. ticket (#TT03421/23)
-> - WM - Corretto bug in analisi disponibilità inerente alle righe relative alle commesse di produzione (#TT03224/23)
-> - CO - creazione chiusure infrannuali, revisione gestione saldi dei centri di costo (#TT03530/23)
+> - PM - update date and resource assigned to the project's wbs, automatically updating the data in the planned intervention if present and the related resource calendars (#TT03327/23) 
+> - SCM - Importing XML file: revised date formatting in XML file import (#TT03194/23)
+> - FI - RO - add new accounts in FastStart
+> - WM - Create the possibility to reach an inventory list of a second user even if the inventory is opened by another user. And a closed inventory becomes unmodifiable (#TT03443/23)
+> - SCM - In purchase invoices, modifying the competence dates in item lines is now propagated to the underlying analytical lines (#TT03214/23)
+> - FI - Accounting sales invoices - with discounts on payments - does not mean taking the discount value, but closing all deadlines (#TT03408/23)
+> - Fluentis- Activity: Resolved enabling modification of already entered activities (#TT03391/23)
+> - SDI - Activation of the purchase invoice creation button for RO
+> - MES - Resolved bug in production reports that inserted a non-zero value into the produced quantity in case a suspension was entered (#TT03411/23)
+> - MS - General scheduling - Resolved the anomaly of fulfilling orders in case there is no availability of requested items. Specific case of scheduling configuration with "Grouping by item" and parent item "Dummy" (#TT03424/23)
+> - MS - General scheduling - The proposal in Work Orders of materials from dummy parents whose consumption is expected in specific work phases has been corrected as long as the same phase and sub-phase are indicated that must be present both in the non-dummy parent and in the dummy children at every level of the bill of materials (#TT03007/23)
+> - SCM - Print purchase requests - Document printing from the purchase requests search filter has also become available, and not only from within the document
+> - CO - revised processing periods of controlling for monthly data beyond the current year (#TT03186/23)
