@@ -3,28 +3,28 @@ title: Invoicing Progress KanBan Board
 sidebar_position: 7
 ---
 
-Questa procedura ha l'obiettivo di visualizzare (mediante l'utilizzo della metodologia Kan Ban) Opportunità, Ordini e Fatture per determinati periodi. La procedura si compone di due tab: **Filtro** e **Risultati**.
+Această procedură are obiectivul de a vizualiza (prin utilizarea metodologiei Kan Ban) oportunități, ordine și facturi pentru anumite perioade. 
 
-### Filtro    
+### Filtru
 
-In questa tab è necessario inserire i filtri da utilizzare per la visualizzazione dei risultati nella tab successiva.     
-Nella prima parte sono presenti i successivi flag: *Comprimi le fatture*, *Comprimi gli ordini*, *Comprimi le opportunità*; inserendo questi flag, vogliamo visualizzare gli Imponibili complessivi di ordini, opportunità e fatture; senza questi flag, i vari documenti verranno visualizzati separatamente, ognuno con i propri valori.      
-Il filtro **Società** è obbligatorio e contiene la società cui fare riferimento.     
-Il filtro **Intervallo mensile** serve per indicare, con intervalli trimestrali, il periodo da prendere in considerazione.    
-Il fitlro **Agente** permette di visualizzare i documenti che abbiamo tutti lo stesso agente associato;     
-Il filtro **Divisa** viene compilato automaticamente.        
-Sono presenti poi i filtri *Opportunità*, *Fattura di vendita*, *Ordine cliente*: questi flag impostano quali documenti visualizzare tra i risultati.     
-Sono infine presenti delle sezioni in cui inserire dei filtri rispettivamente per Opportunità, Fatture e Ordini. In tutti e tre i casi, le Date proposte dipenderanno dall'intervallo mensile precedentemente inserito.     
+În acest tab este necesar să se introducă filtrele folosite pentru afișarea rezultatelor în tabul următor.  
+În prima parte sunt prezente următoarele opțiuni: *Restrânge facturile*, *Restrânge ordine*, *Restrânge oportunități*. Prin activarea acestor opțiuni, este afișată valoarea impozabilă totală a ordinelor, oportunităților și facturilor; fără aceste opțiuni, documentele vor fi afișate separat, fiecare cu propriile valori.  
+**Societate**: este obligatoriu și conține  de referință.  
+**Interval lunar**: indica, în intervale trimestriale, perioada care trebuie luată în considerare.  
+**Agent**: permite vizualizarea documentelor care au același agent asociat.  
+**Monedă**: câmp completat automat.  
+Sunt de asemenea prezente filtrele *Oportunitate*, *Factură de vânzare*, *Ordin cliente*: aceste opțiuni setează care documente să fie afișate în rezultate.  
+În final, există secțiuni în care se pot introduce filtre corespunzătoare pentru oportunități, facturi și ordine. În toate cele trei cazuri, datele propuse vor depinde de intervalul lunar introdus anterior.
 
-### Risultati   
+### Rezultate
 
-Nel tab è presente la **Kan Ban Board**, dove vengono visualizzati i documenti suddivisi per i vari mesi inseriti nei filtri.
-Ogni colonna della Kan Ban Board è composta dai seguenti elementi:      
-Una **banda superiore** dove vengono visualizzati, nell’ordine, i seguenti dati:
-- mese di riferimento; 
-- Count: corrisponde al numero di opportunità/fatture/ordini che sono collocate in quella colonna;
-- Total Net Amount: corrisponde al valore totale delle opportunità/fatture/ordini presenti nella colonna, al netto degli sconti applicati.     
-  
-Una **banda inferiore** dove vengono visualizzati diversi dati dei singoli documenti.
+În acest tab este prezent **Kan Ban Board**, în care documentele sunt afișate împărțite în baza lunilor introduse în filtre.  
+Fiecare coloană a panoului este compusă din următoarele elemente:  
+1. o *bandă superioară* unde sunt afișate, în ordine, următoarele date: 
+- luna de referință;   
+- *Count*: corespunde numărului de oportunități/facturi/ordine care sunt în acea coloană;  
+- *Total Net Amount*: corespunde valorii totale a oportunităților/facturilor/ordinelor prezente în coloană, fără reducerile aplicate.
 
-Facendo doppio click è possibile aprire il documento collegato. 
+2. o *bandă inferioară* unde sunt afișate diverse date ale fiecărui document
+
+Cu dublu click se poate deschide documentul asociat.
