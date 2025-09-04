@@ -1,1 +1,1 @@
-**Cancella lotto**: permette di cancellare la riga lotto selezionata.
+**Izbriši lot**: Omogućuje brisanje odabranog retka lota.
