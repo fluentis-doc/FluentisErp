@@ -1,3 +1,3 @@
 
-**Aggiornamento listini**: permette di aggiornare il prezzo dell'articolo in base al nuovo listino (nel caso sia stato inserimento un listino aggiornato).<br />
-Cliccando sulla tendina accanto al pulsante ![](/img/neutral/common/down-arrow.png), sarà possibile creare un nuovo listino se ancora da creare.
+**Ažuriranje cjenika**: omogućuje ažuriranje cijene artikla na temelju novog cjenika (u slučaju da je unesen ažurirani cjenik).<br />
+Klikom na padajući izbornik pored gumba ![](/img/neutral/common/down-arrow.png), biti će moguće kreirati novi cjenik ukoliko još nije stvoren?.
