@@ -1,1 +1,1 @@
-**Cancella**: permette di cancellare la riga variante selezionata.
+**Izbriši**: omogućuje brisanje odabranog retka varijante.

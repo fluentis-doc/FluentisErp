@@ -1,1 +1,1 @@
-**Storno ricevimenti**: permette di stornare i tipi di documenti che hanno la natura di tipo reso.
+**Storno povrata**: **Omogućuje storniranje onih tipova dokumenata koji imaju prirodu povrata.
