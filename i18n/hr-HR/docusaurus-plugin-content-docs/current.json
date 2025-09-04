@@ -2076,19 +2076,19 @@
     "description": "The label for category Qualità in sidebar video"
   },
   "sidebar.releaseNotes.category.Versione 605": {
-    "message": "Versione 605",
+    "message": "Version 605",
     "description": "The label for category Versione 605 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 606": {
-    "message": "Versione 606",
+    "message": "Version 606",
     "description": "The label for category Versione 606 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 607": {
-    "message": "Versione 607",
+    "message": "Version 607",
     "description": "The label for category Versione 607 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 608": {
-    "message": "Versione 608",
+    "message": "Version 608",
     "description": "The label for category Versione 608 in sidebar releaseNotes"
   },
   "sidebar.erpHome.category.Dipendenti": {
@@ -2188,7 +2188,7 @@
     "description": "The label for category Qualificazione fornitore in sidebar quality"
   },
   "sidebar.releaseNotes.category.Versione 704": {
-    "message": "Versione 704",
+    "message": "Version 704",
     "description": "The label for category Versione 704 in sidebar releaseNotes"
   },
   "sidebar.purchase.category.Nuovo Ordine": {
@@ -2260,15 +2260,15 @@
     "description": "The label for category Campi, funzionalità e pulsanti comuni in sidebar guide"
   },
   "sidebar.releaseNotes.category.Versione 545": {
-    "message": "Versione 545",
+    "message": "Version 545",
     "description": "The label for category Versione 545 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 705": {
-    "message": "Versione 705",
+    "message": "Version 705",
     "description": "The label for category Versione 705 in sidebar releaseNotes"
   },
   "sidebar.releaseNotes.category.Versione 706": {
-    "message": "Versione 706",
+    "message": "Version 706",
     "description": "The label for category Versione 706 in sidebar releaseNotes"
   },
   "sidebar.planning.category.Gannts e istogrammi F.C.S.": {
@@ -2324,7 +2324,7 @@
     "description": "The label for category database in sidebar applications"
   },
   "sidebar.releaseNotes.category.Versione 707": {
-    "message": "Versione 707",
+    "message": "Version 707",
     "description": "The label for category Versione 707 in sidebar releaseNotes"
   }
 }
