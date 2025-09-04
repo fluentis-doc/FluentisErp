@@ -1,6 +1,6 @@
 ---
-title: Release note versioni
+title: Release notes verzije
 sidebar_position: 1
 ---
 
-In questa sezione è possibile consultare le release note delle varie versioni e le patch.
+U ovom odjeljku dostupne su napomene o izdanjima (release note) i zakrpama (patches) za sve verzije.
