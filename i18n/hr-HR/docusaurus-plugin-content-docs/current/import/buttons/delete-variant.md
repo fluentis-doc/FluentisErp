@@ -1,1 +1,1 @@
-**Izbriši**: omogućuje brisanje odabranog retka varijante.
+**Izbriši varijantu**: omogućuje brisanje odabranog retka varijante.
