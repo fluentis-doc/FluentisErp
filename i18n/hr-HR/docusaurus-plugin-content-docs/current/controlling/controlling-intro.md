@@ -67,7 +67,7 @@ import Link from '@docusaurus/Link';
     <div className="card">
 ###     <Link to="/docs/controlling/reclassifications/reclassification-overview">Izvještavanje</Link>
         <p>Modul posvećen pripremi i obradi modela za prikaz podataka iz područja, bilo kao računovodstvenih, bilo analitičkih ili upravljačkih podataka.</p>
-        <p><Link to="/docs/controlling/reclassifications/create-reclassification-model" className="bold-link">>Modeli reklasifikacije</Link>: za slobodno definiranje strukture željenih reklasifikacija, primjenom računa i centara specifičnih za poslovnu stvarnost</p>
+        <p><Link to="/docs/controlling/reclassifications/create-reclassification-model" className="bold-link">Modeli reklasifikacije</Link>: za slobodno definiranje strukture željenih reklasifikacija, primjenom računa i centara specifičnih za poslovnu stvarnost</p>
         <p><Link to="/docs/controlling/reclassifications/reclassifications-management" className="bold-link">Reklasifikacije</Link>: rezultati primjene podataka na različite modele, reklasificirani i pohranjeni za kasnije analize<</p>
         <p><Link to="/docs/controlling/reclassifications/comparations" className="bold-link">Usporedbe</Link>: procedura koja omogućuje slobodno uspoređivanje više reklasifikacija ili više područja, razdoblja i dimenzija analize upravljačkog računovodstva</p>
     </div>
