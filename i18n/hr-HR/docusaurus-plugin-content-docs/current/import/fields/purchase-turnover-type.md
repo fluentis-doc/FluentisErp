@@ -1,3 +1,3 @@
-**Tipo fatturato acquisto**: viene proposto il dato inserito in *Anagrafica articolo > tab Generalità*. Se non è presente, va inserito scegliendo una voce tra quelle proposte dalla relativa combo.
+**Tip prometa nabave**: automatski se predlaže podatak unesen u *Šifarnik artikla > kartica Općenito*. Ukoliko taj podatak  nije unesen, može se odabrati iz pripadajućeg padajućeg izbornika.
 
-La mancanza di questo dato potrebbe causare degli errori nella contabilizzazione della fattura che verrà generata dalla DDT se la procedura non trova un valore neanche nel campo *Costo/Ricavo di contropartita predefinito* dell'anagrafica contatto.
+Nedostatak ovog podatka mogao bi uzrokovati greške u knjiženju računa koji će biti generiran iz primke ako procedura ne pronađe vrijednost niti u polju *Detaljni konto predefiniranog troška/prihoda* u šifarniku kontakta.
