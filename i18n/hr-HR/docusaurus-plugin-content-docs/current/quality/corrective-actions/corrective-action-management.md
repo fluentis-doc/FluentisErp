@@ -180,67 +180,67 @@ Upravljane informacije su:
 
 ### Uključeni subjekti
 
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione dell'*Azione correttiva*, i motivi del coinvolgimento, date previste attuazione e di chiusura.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* coinvolta.   
+Tablica sadrži informacije o *Funkcijama tvrtke* i/ili *Zaposlenicima* koji će sudjelovati u upravljanju *Korektivnim radnjama*, razlozima njihovog sudjelovanja te očekivanim datumima provedbe i završetka.  
+Popis se sastoji od sljedećih informacija:   
+> **Funkcija tvrtke**
+>> **Šifra**: ovo je šifra uključene *Funkcije tvrtke*.
+>> **Opis**: ovo je opis uključene *Funkcije tvrtke*.  
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* coinvolto.   
->> **Descrizione**: è il cognome e nome del *Dipendente* coinvolto.   
+> **Zaposlenik**
+>> **Šifra**: ovo je šifra uključenog *zaposlenika*.
+>> **Opis**: ovo je prezime i ime uključenog *zaposlenika*. 
 >   
-> **Gestione coinvolgimento**   
->> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto coinvolto, non sia *Funziona aziendale* o *Dipendente*.   
->> **Motivo del coinvolgimento**: annotazioni libere sull'argomento   
->> **Data scadenza**: è la data entro la quale il soggetto coinvolto deve completare le attività inerenti al motivo del suo coinvolgimento.   
->> **Risposta**: annotazioni libere sull'argomento.   
->> **Chiuso**: indica che il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* dell'*Azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono chiudere il coinvolgimento.   
->> All'atto della chiusura viene automaticamente proposta la *Data chiusura*, proposta alla data odierna e può essere variata.   
->> **Data chiusura**: è la data in cui il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* dell'*Azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono inserire o variare questa data.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **Upravljanje uključenošću**  
+>> **Opis predmeta**: bilješke u slobodnom obliku ako uključena osoba nije *Funkcija tvrtke* ili *Zaposlenik*.
+>> **Razlog umiješanosti**: bilješke u slobodnom obliku.
+>> **Datum dospijeća**: ovo je datum do kojeg uključena osoba mora dovršiti zadatke povezane s razlogom svog sudjelovanja.
+>> **Odgovor**: bilješke u slobodnom obliku o temi. 
+>> **Zatvoren**: označava da je uključenost subjekta završena.
+>> Samo *Funkcija ili osoba odgovorna* za *Korektivnu radnju* ili *Poslovna funkcija* ili *Zaposlenik* koji je uključen može zatvoriti uključenost.
+>> Nakon zatvaranja, automatski se predlaže *Datum zatvaranja* koji je postavljen na današnji datum i može se promijeniti. 
+>> **Datum zatvaranja**: ovo je datum kada je uključenost subjekta završena.
+>> Samo *Funkcija ili osoba odgovorna* za *Korektivnu radnju* ili *Funkcija tvrtke* ili *Zaposlenik* koji je uključen može unijeti ili promijeniti ovaj datum.
+>> Kada se unese datum, automatski se postavlja oznaka *Zatvoreno*.  
 >
-> **Nota**: annotazioni libere.   
+> **Napomena**: slobodne bilješke.   
 
-### Riferimento documenti di origine
+### Referentni dokumenti izvora
 
-Nel tabulatore sono contenuti i riferimenti ai documenti che hanno dato origine all'*Azione correttiva* in gestione.   
-Le informazioni presenti sono:   
-> **Reclamo**: expander dove è possibile visualizzare:   
+Kartica sadrži reference na dokumente koji su doveli do upravljanja *korektivnom radnjom*.
+Uključene informacije su: 
+> **Reklamacija**: proširenje gdje se može vidjeti:  
 >
->> **Reclamo**: è il riferimento al *Reclamo* di origine.   
->> **Gestione difetti**: è il riferimento alla riga di *Gestione difetti* del *Reclamo* di origine.   
->> **Azione di contenimento**: è il riferimento alla riga dell'*Azione di contenimento* di origine del *Reclamo* modello *8D - Problem solving* .   
->> **Azione permanente**: è il riferimento alla riga dell'*Azione permanente* di origine del *Reclamo* modello *8D - Problem solving*.   
->> **Fase**: è il riferimento alla riga della *Fase di attuazione* di origine del *Reclamo* modello *8D - Problem solving* di origine.   
+>> **Reklamacija**: ovo je referenca na izvornu *Reklamaciju*.
+>> **Upravljanje nedostacima**: ovo je referenca na redak *Upravljanje nedostacima* izvorne *Reklamacije*.
+>> **Mjera suzbijanja**: ovo je referenca na izvorni redak *Mjera suzbijanja* modela *Reklamacije* *8D - Rješavanje problema*.
+>> **Trajna radnja**: ovo je referenca na izvorni redak *Trajna radnja* modela *Reklamacije* *8D - Rješavanje problema*.
+>> **Faza**: ovo je referenca na izvorni redak *Faza provedbe* izvornog modela *Reklamacije* *8D - Rješavanje problema*. 
 >
-> **Non conformità**: expander dove è possibile visualizzare:   
+> **Nesukladnost**: proširenje gdje se može vidjeti:  
 >
->> **Non conformità**: è il riferimento alla *Non conformità* di origine.   
->> **Gestione difetti**: è il riferimento alla riga di *Gestione difetti* della *Non conformità* di origine.   
+>> **Nesukladnost**: ovo je referenca na izvornu *Nesukladnost*.
+>> **Upravljanje nedostacima**: ovo je referenca na redak *Upravljanje nedostacima* izvorne *Nesukladnosti*.  
 >
-> **Azione correttiva di origine**: expander dove è possibile visualizzare:   
+> **Korektivna radnja izvora**: proširenje gdje se može vidjeti: 
 >
->> **Azione correttiva di origine**: è il riferimento all'*Azione correttiva* di origine.   
->> **Programma**: è il riferimento alla riga di *Programma* dell'*Azione correttiva* di origine.   
+>> **Izvorna korektivna radnja**: ovo je referenca na izvornu *Korektivnu radnju*.
+>> **Program**: ovo je referenca na redak *Program* izvorne *Korektivne radnje*.  
 >
-> **Altri documenti di riferimento**: elenco dove è possibile inserire eventuali altri documenti che hanno generato l'*Azione correttiva*.   
-> L'elenco si compone delle seguenti informazioni:   
+> **Ostali referentni dokumenti**: popis u koji možete unijeti bilo koje druge dokumente koji su generirali *Korektivnu radnju*.
+> Popis uključuje sljedeće podatke:  
 >
->> **Data**: è la data del documento di riferimento.   
->> **Riferimento documento**: annotazione libera del documento di riferimento.   
->> **Numero**: è il numero del documento di riferimento.   
->> **Note**: annotazioni libere.   
-
-
-### Extra data
-
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per l'*Azione correttiva*.   
+>> **Datum**: ovo je datum referentnog dokumenta.
+>> **Referenca dokumenta**: slobodna napomena referentnog dokumenta.
+>> **Broj**: ovo je broj referentnog dokumenta.
+>> **Napomene**: slobodna napomena.  
 
 
-## Programmi azione correttiva
+### Dodatni podaci
+
+Moguće je umetnuti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za *korektivne radnje*.   
+
+
+## Programi korektivnih radnji
 
 Se l'*Azione correttiva* è di lunga attuazione, la si può suddividere in più *Programmi di azione*.   
 L'elenco si compone delle seguenti informazioni:   
