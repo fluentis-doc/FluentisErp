@@ -83,7 +83,8 @@ All'interno dei box relativo ai **Dati componente**, è possibile indicare:
 > **Note**: permette di inserire una nota libera legata al componente.      
 
 :::note NOTA
-Nel calcolo del costo del materiale vengono considerati anche eventuali *prezzi per quantità* definiti nel listino del fornitore preferenziale. Le condizioni per l'applicazione dei prezzi per quantità sono le seguenti: 
+Nel calcolo del costo del materiale vengono considerati anche eventuali *prezzi per quantità* definiti nel listino del fornitore preferenziale.    
+L’applicazione dei prezzi per quantità è subordinata alle seguenti condizioni:   
 - l'articolo deve avere come tipologia di approvvigionamento *Acquisto*;   
 - il *Tipo costo materiale* usato deve essere *Da listino fornitore preferenziale netto*;   
 - nell'anagrafica del fornitore preferenziale, tab Listini, è necessario indicare come scaglione *Prezzo per quantità*. 
