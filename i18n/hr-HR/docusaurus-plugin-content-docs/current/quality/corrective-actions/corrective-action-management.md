@@ -101,84 +101,84 @@ Informacije kojima se upravlja su:
 > **Očekivani datum zatvaranja**: ovo je očekivani datum za dovršetak *Korektivne radnje*.
 > **Napomene**: slobodne bilješke. 
 >
-> **Chiusa/Data di chiusura**: expander dove è possibile inserire:   
+> **Datum zatvaranja/zatvaranja**: proširenje u koje se može unijeti:  
 >
->> **Chiusa**: indica che l'*Azione correttiva* è *Chiusa*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere l'*Azione correttiva*.   
->> All'atto della chiusura vengono automaticamente proposte: la *Data di chiusura* proposta alla data odierna e può essere variata, *Chiusa da utente* e *Chiusa da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **Zatvoreno**: označava da je *Korektivna radnja* *Zatvorena*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može zatvoriti *Korektivnu radnju*.
+>> Nakon zatvaranja, automatski se predlažu sljedeći: *Datum zatvaranja* predložen na današnji datum i može se promijeniti, *Zatvorio korisnik* i *Zatvorila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom*
 >>
->> **Data di chiusura**: è la data in cui l'*Azione correttiva* è stata *Chiusa*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Chiusa da utente* e *Chiusa da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Chiusa*.   
+>> **Datum zatvaranja**: ovo je datum na koji je *Korektivna radnja* *Zatvorena*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu promijeniti ovaj datum.
+>> Prilikom unosa datuma, automatski se predlažu sljedeće opcije: *Zatvorio korisnik* i *Zatvorila osoba*, predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom*, a postavljena je zastavica *Zatvoreno*. 
 >>
->> **Chiusa da utente**: è l'*Utente A.R.M.* che ha chiuso l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Chiusa da persona**: è il *Dipendente* che ha chiuso l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Chiusa da funzione**: è la *Funzione aziendale* che ha chiuso l'*Azione correttiva*.   
->> Abilitata solamente se l'*Azione correttiva* è *Chiusa*.   
+>> **Zatvoreno od korisnika**: ovo je *A.R.M. korisnik* koji je zatvorio *Korektivnu radnju*. Ova je informacija samo za čitanje.
+>> **Zatvoreno od osobe**: ovo je *Zaposlenik* koji je zatvorio *Korektivnu radnju*. Ova je informacija samo za čitanje.
+>> **Zatvoreno od funkcije**: ovo je *Funkcija tvrtke* koja je zatvorila *Korektivnu radnju*.
+>> Omogućeno samo ako je *Korektivna radnja* *Zatvorena*. 
 >
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
+> **Audit**: proširenje samo za čitanje gdje su vidljive sljedeće informacije: 
 >
->> **Data creazione/Nome**: è la data e l'*Utente A.R.M.* che ha inserito l'*Azione correttiva*.   
->> **Data ultima modifica/Nome**: è la data e l'*Utente A.R.M.* che ha apportato l'ultima modifica all'*Azione correttiva*.   
+>> **Datum kreiranja/Ime**: ovo je datum i *A.R.M. korisnik* koji je unio *Korektivnu radnju*.
+>> **Datum zadnje izmjene/Ime**: ovo je datum i *A.R.M. korisnik* koji je zadnji put izmijenio *Korektivnu radnju*.   
 >
-> **Costo totale previsto**: è il costo previsto per la gestione dell'*Azione correttiva*.   
-> **Costo totale effettivo**: è il costo totale sostenuto per la gestione dell'*Azione correttiva*.   
+> **Procijenjeni ukupni trošak**: ovo je procijenjeni trošak upravljanja *Korektivnom radnjom*.
+> **Stvarni ukupni trošak**: ovo je ukupni trošak nastao upravljanjem *Korektivnom radnjom*.   
 
 
-### Verifiche prossimo audit
+### Provjere za sljedeću reviziju
 
-Nel tabulatore sono contenute le indicazioni sulle verifiche da effettuare nel prossimo audit per valutare se l'*Azione correttiva* ha avuto efficacia.   
-Le informazioni gestite sono:   
-> **Da valutare nel prossimo audit**: expander dove è possibile inserire:   
+Kartica sadrži informacije o provjerama koje treba provesti tijekom sljedeće revizije kako bi se procijenilo je li *korektivna radnja* bila učinkovita.
+Upravljane informacije su:   
+> **Za procjenu u sljedećoj reviziji**: proširenje gdje je moguće umetnuti:  
 >
->> **Da valutare nel prossimo audit**: indica se sono necessarie attività di verifica nel prossimo audit per l'*Area coinvolta*.   
->> **Elementi da verificare**: annotazioni libere sugli elementi da verificare nel prossimo audit.   
->> Abilitato solamente se l'*Azione correttiva* è *Da valutare nel prossimo audit*.   
+>> **Procijenit će se u sljedećoj reviziji**: označava jesu li potrebne aktivnosti provjere u sljedećoj reviziji za *dotično područje*.  
+>> **Elementi koje treba provjeriti**: bilješke u slobodnom obliku o stavkama koje treba provjeriti u sljedećoj reviziji.  
+>> Omogućeno samo ako je *Korektivna radnja* *Za procjenu u sljedećoj reviziji*.   
 >
-> **Verificata/Data di verifica**: expander dove è possibile inserire:   
+> **Potvrđeno/Datum provjere**: proširenje u koji možete unijeti:.   
 >
->> **Verificata**: indica che l'*Azione correttiva* è stata *Verificata*.   
->>> All'atto della verifica vengono automaticamente proposte: la *Data di verifica* proposta alla data odierna e può essere variata, *Verificata da utente* e *Verificata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **Potvrđeno**: označava da je *Korektivna radnja* *Potvrđena*.
+>>> Nakon provjere, automatski se predlažu sljedeći datumi: *Datum provjere* predložen kao današnji datum i može se promijeniti, *Potvrđeno od strane korisnika* i *Potvrđeno od strane osobe* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* 
 >>
->> **Data di verifica**: è la data in cui l'*Azione correttiva* è stata *Verificata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Verificata da utente* e *Verificata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Verificata*.   
+>> **Datum pregleda**: ovo je datum na koji je *korektivna radnja* *pregledana*. 
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može promijeniti ovaj datum.   
+>> Prilikom unosa datuma, automatski se predlažu sljedeći elementi: *Potvrdio korisnik* i *Potvrdila osoba* predloženi povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* te je postavljena zastavica *Potvrdjeno*.  
 >>
->> **Esito complessivo**: è l'*Esito* che viene attribuito alla verifica dell'*Azione correttiva*.   
->> **Verifica efficacia**: annotazioni libere sull'esito della verifica o meno dell'efficacia dell'*Azione correttiva*.   
->> **Verificata da utente**: è l'*Utente A.R.M.* che ha verificato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Verificata da persona**: è il *Dipendente* che ha verificato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Verificata da funzione**: è la *Funzione aziendale* che ha verificato l'*Azione correttiva*.   
->> Abilitata solamente se l'*Azione correttiva* è *Verificata*.   
+>> **Ukupni rezultat**: ovo je *Rezultat* pripisan provjeri *Korektivne radnje*.
+>> **Provjera učinkovitosti**: slobodne bilješke u vezi s ishodom provjere ili učinkovitosti *Korektivne radnje*.
+>> **Potvrdio korisnik**: ovo je *A.R.M. korisnik* koji je potvrdio *Korektivnu radnju*. Ove su informacije samo za čitanje.
+>> **Potvrdila osoba**: ovo je *zaposlenik* koji je potvrdio *Korektivnu radnju*. Ove su informacije samo za čitanje.
+>> **Potvrdila funkcija**: ovo je *funkcija tvrtke* koja je potvrdila *Korektivnu radnju*.
+>> Omogućeno samo ako je *Korektivna radnja* *Potvrđena*.
 
 
-### Verifiche intermedie azione
+### Međukontrolne akcije
 
-Nel tabulatore sono contenute le indicazioni sulle verifiche intermedie effettuate sull'*Azione correttiva*.   
-Le informazioni gestite sono:   
-> **Dati verifica**   
->> **Data**: è la data in cui è stata effettuata la verifica intermedia.   
->> **Elementi verificati**: annotazioni libere sugli elementi considerati durante la verifica.   
->> **Verifica efficacia**: annotazioni libere sulle azioni svolte per verificare l'efficacia.   
->> **Esito**: è l'*Esito* che viene attribuito alla verifica intermedia dell'*Azione correttiva*.   
->> **Descrizione esito**: è la descrizione dell'*Esito* che viene attribuito alla verifica dell'*Azione correttiva*.   
+Kartica sadrži informacije o međukontrolama provedenim na *Korektivnoj radnji*.
+Upravljane informacije su:  
+> **Podaci za provjeru**   
+>> **Datum**: ovo je datum kada je provedena međukontrola.
+>> **Provjereni elementi**: slobodne bilješke o elementima koji su razmatrani tijekom revizije.
+>> **Provjera učinkovitosti**: slobodne bilješke o poduzetim radnjama za provjeru učinkovitosti.
+>> **Ishod**: ovo je *Ishod* pripisan međukontroli *Korektivne radnje*.
+>> **Opis ishoda**: ovo je opis *Ishoda* pripisanog reviziji *Korektivne radnje*.   
 >
-> **Verificata da utente**   
->> **Utente**: è l'*Utente A.R.M.* che ha effettuato la verifica intermedia.   
+> **Provjereno od strane korisnika**
+>> **Korisnik**: ovo je *A.R.M. korisnik* koji je izvršio međukontrolu.*   
 >
-> **Verificata da persona**   
->> **Operatore**: è il codice del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Cognome**: è il cognome del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Nome**: è il nome del *Dipendente* che ha effettuato la verifica intermedia.   
+> **Potvrđeno od osobe**   
+>> **Operater**: ovo je šifra *Zaposlenika* koji je izvršio međukontrolu.
+>> **Prezime**: ovo je prezime *Zaposlenika* koji je izvršio međukontrolu.
+>> **Ime**: ovo je ime *Zaposlenika* koji je izvršio međukontrolu. 
 >
-> **Verificata da funzione**   
->> **Codice**: è il codice della *Funzione aziendale* che ha effettuato la verifica intermedia.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* che ha effettuato la verifica intermedia.   
+> **Provjereno od strane funkcije** 
+>> **Šifra**: ovo je šifra *Funkcije tvrtke* koja je izvršila međukontrolu.   
+>> **Opis**: ovo je opis *Funkcije tvrtke* koja je izvršila međukontrolu.   
 >
-> **Nota**: annotazioni libere.   
+> **Napomena**: slobodne bilješke.   
 
 
-### Soggetti coinvolti
+### Uključeni subjekti
 
 Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione dell'*Azione correttiva*, i motivi del coinvolgimento, date previste attuazione e di chiusura.   
 L'elenco si compone delle seguenti informazioni:   
