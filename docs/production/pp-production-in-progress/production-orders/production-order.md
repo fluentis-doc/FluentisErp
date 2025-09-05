@@ -146,9 +146,13 @@ In questo tab, costituito principalmente da una griglia, è possibile definire q
 **Sequenza**: in questo campo è possibile indicare la sequenza con cui devono essere utilizzate le attrezzature;  
 
 **Attrezzature**: con questa combo box è possibile richiamare il codice dell'attrezzatura, ripreso dall'apposita tabella [Attrezzature](/docs/configurations/tables/production/equipments);  
-**Classe/Codice articolo**: in questi campi è possibile indicare la classe e il codice dell'articolo (l'help filtra automaticamente solo gli articoli che sono identificati come *Attrezzature* nel campo *Natura Articolo* dell'anagrafica di magazzino);  
-**Variante**: rappresenta la variante dell'articolo;  
-**Quantità**: rappresenta la quantità dell'articolo.
+**Schedulata**: Se attivo, indica che l'attrezzatura risulterà impegnata durante la produzione; con questo flag la [Schedulazione F.C.S.](https://docs.fluentis.com/FluentisErp/docs/planning/ms-master-scheduling/fcs-scheduling) prenderà in considerazione, non l'articolo inserito tramite la combo delle attrezzature, ma l'articolo inserito nei campi classe e codice, il quale deve avere come *Natura articolo* la tipologia *Attrezzatura* o *Utensile*;          
+**Da riordinare**: se attivo, farà si che la procedura di [Schedulazione F.C.S.](https://docs.fluentis.com/FluentisErp/docs/planning/ms-master-scheduling/fcs-scheduling) crei un ordine pianificato per l'approvvigionamento dell'attrezzatura stessa nel caso in cui non fosse disponibile; invece, se non attivo, significa che quell'attrezzatura non deve essere riordinata, ma può essere utilizzata ripetutamente in base alla propria disponibilità (ad esempio uno stampo);            
+**Classe / Codice articolo**: in questi campi è possibile indicare la classe e il codice dell'articolo (l'help filtra automaticamente solo gli articoli che sono identificati come *Attrezzature* nel campo *Natura Articolo* dell'anagrafica di magazzino);  
+**Variante**: indica la variante dell'articolo;  
+**Lotto**: indica il lotto dell'articolo;  
+**Serial number**: indica il Serial number dell'articolo;  
+**Quantità**: indica la quantità dell'articolo.
 
 ## Controllo qualità
 

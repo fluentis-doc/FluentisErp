@@ -60,7 +60,9 @@ Per la riga selezionata, sulla parte destra della griglia, è possibile visualiz
 *Pulsanti specifici*:
 
 > *Pulisci risorsa*: permette di rimuovere il valore inserito nel campo *Risorsa*;    
-> *Seleziona nuove fasi*: permette di aprire un help per selezionare nuove fasi da aggiungere a quelle presenti nella griglia principale;      
+> *Seleziona nuove fasi*: permette di aprire un help per selezionare nuove fasi da aggiungere a quelle presenti nella griglia principale.          
+Nel caso di un centro multi fase, se sono già presenti delle fasi (già iniziate), è possibile aggiungerne delle altre solamente se la fasi già inserite si trovano in uno stato di *Iniziata* o *Sospensione*, altrimenti prima è necessario portare le fasi nello stato di sospensione e poi sarà possibile aggiungerne delle altre.
+Nel caso in cui fosse presente, ad esempio, una fase in stato sospensione e l'utente aggiunga una fase non ancora iniziata, la procedura creerà in automatico la dichiarazione di inizio e di sospensione per la fase appena aggiunta con la stessa data ora; a questo punto poi l'utente tramite il pulsante *Ripresa* potrà continuare la lavorazione per tutte le fasi. Se invece, le fasi aggiunte si trovano in uno stato diverso da non iniziato, queste verranno allineate allo stato di *Sospensione*. Alla *Ripresa* le nuove fasi aggiunte acquisiranno le informazioni di Centro di lavoro e Macchina utilizzate per le fasi presenti in origine.           
 > *Elimina fase*: permette di rimuove la fase o le fasi selezionate dalla griglia principale.    
 
 Il tab **Produzione** è dedicato all'inserimento delle informazioni relative ai tempi di produzione / attrezzaggio e alle quantità prodotte / scartate. Questo è l'unico che non può essere reso invisibile e si compone dei seguenti campi:
