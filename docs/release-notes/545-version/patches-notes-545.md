@@ -3,6 +3,11 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0121 - 04/09/2025
+
+> - MES - Ora con la procedura di rilascio degli ordini di produzione vengono movimentati solo gli articoli che hanno come tipo prelievo Automatico nei parametri MRP. (#TT03691/25)  
+> - PF - check if pagamenti fornitori was already accounted ( TT03663/25) 
+
 ### Patch 545.1-0120 - 07/08/2025
 
 > - SD - Stampa Fattura e DDT di Vendita: Risolta anteprima di stampa che esce vuota se non è già attivo il flag stampata. (rif.ticket 3536/25, 3531/25) 
