@@ -3,24 +3,24 @@ title: Opportunity Progress KanBan Board
 sidebar_position: 5
 ---
 
-La procedura **Opportunity Progress Kan Ban Board** ha l’obiettivo di mostrare graficamente, mediante l’utilizzo della metodologia Kan Ban, le **Opportunità** inserite in Fluentis suddivise per le **percentuali di probabilità di successo** delle opportunità stesse.
-Con l’aiuto dei filtri si può visualizzare: una sola tipologia di opportunità (**Tipo Opportunità**), più opportunità inserite dallo stesso utente (**Operatore**), più opportunità con la medesima probabilità di successo (**Probabilità Successo**).
+Procedura **Opportunity Progress KanBan Board** are obiectivul de a afișa grafic, prin utilizarea metodologiei KanBan, **oportunitățile** introduse în Fluentis, grupate după **procentele de probabilitate de succes** ale respectivelor oportunități.
 
-L’area di filtro è quella dedicata ad ospitare l’elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
+Cu ajutorul filtrelor se poate vizualiza: un singur tip de oportunitate, mai multe oportunități introduse de același utilizator, mai multe oportunități cu aceeași *probabilitate de succes*.
 
-Nell’area sottostante a quella di filtro è presente la **Kan Ban Board**, dove vengono visualizzati le opportunità suddivise per percentuali di probabilità di successo.
-Ogni colonna della Kan Ban Board è composta dai seguenti elementi:
+Zona de filtrare conține lisa posibilelor tipuri de date cu care se poate efectua o selecție. 
 
-Una **banda superiore** dove vengono visualizzati, nell’ordine, i seguenti dati:
-- % di probabilità di successo;
-- Count: corrisponde al numero di opportunità che sono collocate in quella colonna;
-- Total Net Amount: corrisponde al valore totale delle opportunità presenti nella colonna, al netto degli sconti applicati.
+În secțiunea următoare se află **Kan Ban Board**, unde sunt afișate oportunitățile grupate pe procente de probabilitate de succes.
 
-Una **banda inferiore** dove vengono visualizzate le singole opportunità. Per ogni opportunità vengono visualizzati, nell’ordine, i seguenti dati:
-- Nome del contatto intestatario dell’opportunità;
-- Titolo dell’opportunità;
-- Utente Fluentis che ha inserito l’opportunità;
-- Stadio della Pipeline Flux in cui si trova l’opportunità;
-- Totale netto dell’opportunità.
+Fiecare coloană a Kan Ban Board este alcătuită din următoarele elemente:
 
-Facendo doppio click sulla singola opportunità si entra in visualizzazione/modifica dell’opportunità stessa.
+1. O **bandă superioară** unde sunt afișate, în ordine, următoarele date:  
+  - % de probabilitate de succes;  
+  - Count: corespunde numărului de oportunități aflate în acea coloană;  
+  - Total Net Amount: corespunde valorii totale a oportunităților prezente în coloană.  
+
+2. O **bandă inferioară** unde sunt afișate oportunitățile individuale. Pentru fiecare oportunitate se afișează, în ordine, următoarele date:  
+  - Numele persoanei de contact al oportunității;  
+  - Titlul oportunității;  
+  - Utilizatorul Fluentis care a introdus oportunitatea;  
+  - Stadiul în Pipeline Flux în care se află oportunitatea;  
+  - Totalul net al oportunității.

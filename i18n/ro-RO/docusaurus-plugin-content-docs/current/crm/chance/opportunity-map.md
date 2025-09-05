@@ -7,7 +7,7 @@ Această funcționalitate permite vizualizarea grafică a distribuției geografi
 
 Cu ajutorul filtrelor se poate afișa: un singur tip de oportunități, mai multe oportunități introduse de același utilizator, mai multe oportunități cu aceeași probabilitate de succes.
 
-Zona de filtrare este cea dedicată găzduirii listei posibilelor tipuri de date cu care se poate efectua o selecție. 
+Zona de filtrare conține lisa posibilelor tipuri de date cu care se poate efectua o selecție. 
 
 În secțiunea următoare sunt afișate oportunitățile, semnalate cu un indicator în interiorul căruia este posibil să se vizualizeze numărul de oportunități existente pentru același contact.
 
