@@ -36,70 +36,70 @@ Pritiskom na ovu tipku spremaju se svi promijenjeni podaci prikazane *Korektivne
 
 ## Podaci zaglavlja dokumenta
 
-Le informazioni gestite sono:   
-> **Tipo azione**: è il *Tipo azione* (dato obbligatorio).   
-> All'inserimento di una nuova *Azione correttiva* viene proposto il *Tipo azione* indicata nei *Parametri azioni correttive*.   
+Informacije kojima se upravlja su:   
+> **Vrsta radnje**: je *Vrsta radnje* (obavezni podatak). 
+> Prilikom umetanja nove *Korektivne radnje*, predlaže se *Vrsta radnje* naznačena u *Parametrima korektivne radnje*.   
 >
-> **Anno/Numero/Data**: sono l'*Anno*, *Numero* e *Data* dell'*Azione correttiva* (dati obbligatori).   
-> All'inserimento di una nuova *Azione correttiva*:   
-> - la *Data* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo azione*.   
+> **Godina/Broj/Datum**: su *Godina*, *Broj* i *Datum* *Korektivne radnje* (obavezni podaci).   
+> Prilikom unosa nove *korektivne radnje*:   
+> - *Datum* se predlaže kao današnji datum;
+> - *Godina* i *Broj* se predlažu na temelju *Datuma* i *Numeriranja* povezanih s *Vrstom radnje*.  
 >
-> **Settore**: è il codice del *Settore*.   
-> All'inserimento di una nuova *Azione correttiva* viene proposto il *Settore* indicato nei *Parametri azioni correttive*.   
+> **Sektor**: je šifra *Sektora*. 
+> Prilikom umetanja nove *Korektivne radnje*, predlaže se *Sektor* naznačen u *Parametrima korektivne radnje*.  
 >
-> **Area coinvolta**: è il codice dell'*Area* (dato obbligatorio).   
-> All'inserimento di una nuova *Azione correttiva* viene proposta l'*Area* indicata nei *Parametri azioni correttive*.   
+> **Područje**: ovo je šifra obuhvaćenog *Područja* (obavezni podatak).   
+> Prilikom umetanja nove *Korektivne radnje*, predlaže se *Područje* naznačeno u *Parametrima korektivne radnje*.  
 
 
-## Testata
+## Zaglavlje
 
-Le informazioni gestite sono:   
-> **Persona responsabile**: è il *Dipendente* responsabile dell'*Azione correttiva*.   
-> All'inserimento di una nuova *Azione correttiva* viene proposta la *Persona responsabile* indicata nei *Parametri azioni correttive*.   
+Informacije kojima se upravlja su:  
+> **Odgovorna osoba**: Ovo je *zaposlenik* odgovoran za *korektivnu radnju*.  
+> Prilikom unosa nove *Korektivne radnje*, predlaže se *Odgovorna osoba* navedena u *Parametrima korektivne radnje*.  
 >
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile dell'*Azione correttiva*.   
-> All'inserimento di una nuova *Azione correttiva* viene proposta la *Funzione responsabile* indicata nei *Parametri azioni correttive*.   
+> **Odgovorna funkcija**: Ovo je *Funkcija tvrtke* odgovorna za *Korektivnu radnju*.
+> Prilikom unosa nove *Korektivne radnje*, predlaže se *Odgovorna funkcija* naznačena u *Parametrima korektivne radnje*. 
 >
-> **Descrizione della non conformità**: (dato obbligatorio) annotazioni libere sulle non conformità o situazioni non conformi (anche potenziali).   
-> **Riferimento documenti**: annotazioni libere su riferimenti a documenti da cui è scaturita l'*Azione correttiva*.   
-> **Azione proposta**: annotazioni libere sull'argomento.   
+> **Opis nesukladnosti**: (obavezne) napomene u slobodnom obliku o nesukladnostima ili neusklađenim situacijama (uključujući i potencijalne).
+> **Referenca dokumenta**: napomene u slobodnom obliku o referencama na dokumente koji su doveli do *Korektivne radnje*.
+> **Predložena radnja**: napomene u slobodnom obliku. 
 >
-> **Approvata/Data approvazione**: expander dove è possibile inserire:   
+> **Odobreno/Datum odobrenja**: proširenje u koje se može unijeti:
 >
->> **Approvata**: indica che l'*Azione correttiva* è *Approvata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono approvare l'*Azione correttiva*.   
->> All'atto dell'approvazione vengono automaticamente proposte: la *Data approvazione* proposta alla data odierna e può essere variata, *Approvata da utente* e *Approvata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **Odobreno**: označava da je *Korektivna radnja* *Odobrena*.  
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može odobriti *Korektivnu radnju*.
+>> Nakon odobrenja, automatski se predlažu sljedeći elementi: *Datum odobrenja* predložen na današnji datum i može se mijenjati, *Odobrio korisnik* i *Odobrila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom*  
 >>
->> **Data approvazione**: è la data in cui l'*Azione correttiva* è stata *Approvata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Approvata da utente* e *Approvata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Approvata*.   
+>> **Datum odobrenja**: ovo je datum na koji je *Korektivna radnja* *Odobrena*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može promijeniti ovaj datum.
+>> Prilikom unosa datuma, *Odobrio korisnik* i *Odobrila osoba* automatski se predlažu povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* te se postavlja oznaka *Odobreno*.
 >>
->> **Approvata da utente**: è l'*Utente A.R.M.* che ha approvato l*Azione correttiva*. L'informazione è di sola lettura.   
->> **Approvata da persona**: è il *Dipendente* che ha approvato l*Azione correttiva*. L'informazione è di sola lettura.   
->> **Approvata da funzione**: è la *Funzione aziendale* che ha approvato l*Azione correttiva*.   
->> Abilitata solamente se l'*Azione correttiva* è *Approvata*.   
+>> **Odobreno od korisnika**: ovo je *A.R.M. korisnik* koji je odobrio *Korektivnu radnju*. Ove su informacije samo za čitanje.
+>> **Odobreno od osobe**: ovo je *zaposlenik* koji je odobrio *Korektivnu radnju*. Ove su informacije samo za čitanje.
+>> **Odobreno od funkcije**: ovo je *funkcija tvrtke* koja je odobrila *Korektivnu radnju*.
+>> Omogućeno samo ako je *Korektivna radnja* *Odobrena*.  
 >
-> **Bloccata/Data blocco**: expander dove è possibile inserire:   
+> **Blokirano/Datum blokiranja**: proširenje u koje se može unijeti:
 >
->> **Bloccata**: indica che l'*Azione correttiva* è *Bloccata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono bloccare l'*Azione correttiva*.   
->> All'atto del blocco vengono automaticamente proposte: la *Data blocco* proposta alla data odierna e può essere variata, *Bloccata da utente* e *Bloccata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **Blokirano**: označava da je *Korektivna radnja* *Blokirana*.   
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu blokirati *Korektivnu radnju*.
+>> Nakon blokiranja, automatski se predlažu sljedeće: *Datum blokiranja* predložen na današnji datum i može se promijeniti, *Blokirao korisnik* i *Blokirala osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom*  
 >>
->> **Data blocco**: è la data in cui l'*Azione correttiva* è stata *Bloccata*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Bloccata da utente* e *Bloccata da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Bloccata*.   
+>> **Datum blokiranja**: ovo je datum na koji je *Korektivna radnja* *Blokirana*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može promijeniti ovaj datum.
+>> Prilikom unosa datuma, automatski se predlažu sljedeće opcije: *Blokirao korisnik* i *Blokirala osoba* za povezanog *A.R.M. korisnika* i *Zaposlenika* povezanog s *A.R.M. korisnikom* te je postavljena zastavica *Blokirano*.   
 >>
->> **Bloccata da utente**: è l'*Utente A.R.M.* che ha bloccato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Bloccata da persona**: è il *Dipendente* che ha bloccato l'*Azione correttiva*. L'informazione è di sola lettura.   
->> **Bloccata da funzione**: è la *Funzione aziendale* che ha bloccato l'*Azione correttiva*.
->> Abilitata solamente se l'*Azione correttiva* è *Bloccata*.   
+>> **Blokirano od korisnika**: ovo je *A.R.M. korisnik* koji je blokirao *Korektivnu radnju*. Ove su informacije samo za čitanje.
+>> **Blokirano od osobe**: ovo je *zaposlenik* koji je blokirao *Korektivnu radnju*. Ove su informacije samo za čitanje.
+>> **Blokirano od funkcije**: ovo je *funkcija tvrtke* koja je blokirala *Korektivnu radnju*.
+>> Omogućeno samo ako je *Korektivna radnja* *Zaključana*.  
 >
-> **Cause**: annotazioni libere sulle cause che hanno condotto alla non conformità, documentazione sull'eventuale indagine svolta.   
-> **Valutazione azione da adottare**: annotazioni libere sulla valutazione dell'esigenza di adottare un'azione per evitare il ripetersi delle non conformità.   
-> **Descrizione allegati**: annotazioni libere sul contenuto di eventuali documenti allegati nel documentale.   
-> **Data prevista chiusura**: è la data che si presume che l'*Azione correttiva* venga completata.   
-> **Note**: annotazioni libere.   
+> **Uzroci**: slobodne bilješke o uzrocima koji su doveli do nesukladnosti, dokumentacija o provedenoj istrazi.
+> **Procjena poduzetih radnji**: slobodne bilješke o procjeni potrebe za poduzimanjem radnji kako bi se spriječilo ponavljanje nesukladnosti.
+> **Opis privitka**: slobodne bilješke o sadržaju svih dokumenata priloženih dokumentu.
+> **Očekivani datum zatvaranja**: ovo je očekivani datum za dovršetak *Korektivne radnje*.
+> **Napomene**: slobodne bilješke. 
 >
 > **Chiusa/Data di chiusura**: expander dove è possibile inserire:   
 >
