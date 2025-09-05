@@ -1,40 +1,40 @@
 ---
-title: Azione correttiva
+title: Korektivne radnje
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Azioni correttive > Nuova Azione correttiva** oppure è possibile eseguirla dalla **Ricerca Azioni correttive**.   
+Upravljanje se nalazi na putanji **Kvaliteta > Korektivne radnje > Nova korektivna radnja** ili se može pokrenuti iz **Pretraživanja korektivnih radnji**.
 
 
-:::important A cosa serve
-Le azioni correttive sono misure adottate per risolvere problemi o deviazioni nei processi e prevenire il loro ripetersi. Vengono implementate dopo l’identificazione di un problema, analizzando la causa radice e attuando cambiamenti per migliorare le performance future. Sono fondamentali per mantenere e migliorare la qualità e l'efficienza nei processi aziendali.   
-Le *Azioni correttive* devono:   
-- essere appropriate agli effetti delle non conformità riscontrate;   
-- assicurare che le non conformità non si ripetano;   
-- esaminare l'efficacia delle azioni correttive effettuate.
+:::important Čemu služi
+Korektivne radnje su radnje koje se poduzimaju za rješavanje problema ili odstupanja u procesima i sprječavanje njihovog ponavljanja. Provode se nakon identificiranja problema, analize uzroka i implementacije promjena za poboljšanje budućih performansi. Bitne su za održavanje i poboljšanje kvalitete i učinkovitosti poslovnih procesa.  
+*Korektivne radnje* moraju:  
+- biti primjerene učincima utvrđenih nesukladnosti;
+- osigurati da se nesukladnosti ne ponavljaju;
+- pregledati učinkovitost provedenih korektivnih radnji.
 
-A standard è disponibile la reportistica di:   
-> **Scheda Azione correttiva**: scheda dell'*Azione correttiva*.   
+Izvještavanje je standardno dostupno za:  
+> **Lista korektivnih radnji**: Lista *korektivnih radnji*.  
 :::
 
 
-## Pulsanti di comando
+## Tipke za korištenje
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Spremi
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate dell'*Azione correttiva* visualizzata.   
-
-
-### ![](/img/neutral/common/save.png) Salva e Nuova
-
-Premendo questo pulsante si memorizzano tutte le informazioni modificate dell'*Azione correttiva* visualizzata e apre una nuova form creando una nuova *Azione correttiva*.   
+Pritiskom na ovu tipku spremit će se sve promijenjene informacije za prikazanu *Korektivnu radnju*.   
 
 
-## Gestione dati
+### ![](/img/neutral/common/save.png) Spremi i novo
+
+Pritiskom na ovu tipku spremaju se svi promijenjeni podaci prikazane *Korektivne radnje* i otvara se novi obrazac za izradu nove *Korektivne radnje*.   
 
 
-## Dati di testata del documento
+## Upravljani podaci
+
+
+## Podaci zaglavlja dokumenta
 
 Le informazioni gestite sono:   
 > **Tipo azione**: è il *Tipo azione* (dato obbligatorio).   
