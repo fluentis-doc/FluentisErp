@@ -242,124 +242,124 @@ Moguće je umetnuti neke [Dodatne podatke](/docs/configurations/utility/extra-da
 
 ## Programi korektivnih radnji
 
-Se l'*Azione correttiva* è di lunga attuazione, la si può suddividere in più *Programmi di azione*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Numero**: è un progressivo numerico (dato obbligatorio).   
-> **Azione proposta**: annotazioni libere sull'argomento (dato obbligatorio).   
-> **Elementi da valutare**: annotazioni libere sull'argomento.   
-> **Costo previsto**: è il costo previsto per la gestione del *Programma di azione correttiva*.   
-> **Data prevista chiusura**: è la data che si presume che il *Programma di azione correttiva* venga completata.   
-> **Chiusa**: indica che il *Programma di azione correttiva* è *Chiusa*.   
-> **Costo effettivo**: è il costo totale sostenuto per la gestione del *Programma di azione correttiva*.   
-> **Verificata**: indica che il *Programma di azione correttiva* è stata *Verificata*.   
-> **Esito**: è l'*Esito* che viene attribuito alla verifica del *Programma di azione correttiva*.   
-> **Descrizione esito**: è la descrizione dell'*Esito*.   
+Ako je *Korektivna radnja* dugoročna, može se podijeliti u više *Programa radnji*.
+Popis se sastoji od sljedećih informacija:
+> **Broj**: je progresivni broj (obavezno).
+> **Predložena radnja**: bilješke u slobodnom obliku o temi (obavezno).
+> **Elementi koji će se evaluirati**: bilješke u slobodnom obliku o temi.
+> **Procijenjeni trošak**: je procijenjeni trošak upravljanja *Programom korektivnih radnji*.
+> **Očekivani datum zatvaranja**: je datum na koji se očekuje dovršetak *Programa korektivnih radnji*.
+> **Zatvoreno**: označava da je *Program korektivnih radnji* *Zatvoren*.
+> **Stvarni trošak**: je ukupni trošak nastao za upravljanje *Programom korektivnih radnji*.
+> **Potvrđeno**: označava da je *Program korektivnih radnji* *Potvrđen*.
+> **Ishod**: ovo je *Ishod* pripisan provjeri *Plana korektivnih radnji*.
+> **Opis ishoda**: ovo je opis *Ishoda*. 
 
 
-### Dati di dettaglio
+### Detaljni podaci
 
-Le informazioni gestite sono:   
-> **Persona responsabile**: è il *Dipendente* responsabile del *Programma di azione correttiva*.   
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile del *Programma di azione correttiva*.   
-> **Obiettivi da conseguire**: annotazioni libere sull'argomento'.   
-> **Descrizione allegati**: annotazioni libere sul contenuto degli eventuali documenti allegati.   
+Upravljane informacije su:
+> **Odgovorna osoba**: ovo je *Zaposlenik* odgovoran za *Plan korektivnih radnji*.
+> **Odgovorna funkcija**: ovo je *Funkcija tvrtke* odgovorna za *Plan korektivnih radnji*.
+> **Ciljevi koje treba postići**: bilješke u slobodnom obliku o temi.
+> **Opis privitka**: bilješke u slobodnom obliku o sadržaju bilo kojeg priloženog dokumenta. 
 >
-> **Chiuso/Data di chiusura**: expander dove è possibile inserire:   
+> **Datum zatvaranja/zatvaranja**: proširenje u koji se može unijeti:  
 >
->> **Chiuso**: indica che il *Programma di azione correttiva* è *Chiuso*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono chiudere il *Programma di azione correttiva*.   
->> All'atto della chiusura vengono automaticamente proposte: la *Data di chiusura* proposta alla data odierna e può essere variata, *Chiuso da utente* e *Chiuso da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **Zatvoreno**: označava da je *Plan korektivnih radnji* *Zatvoren*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može zatvoriti *Plan korektivnih radnji*.
+>> Nakon zatvaranja, automatski se predlažu sljedeći: *Datum zatvaranja* predložen na današnji datum i može se mijenjati, *Zatvorio korisnik* i *Zatvorila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* 
 >>
->> **Data di chiusura**: è la data in cui il *Programma di azione correttiva* è stato *Chiuso*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Chiuso da utente* e *Chiuso da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Chiuso*.   
+>> **Datum zatvaranja**: ovo je datum na koji je *Plan korektivnih radnji* *Zatvoren*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu promijeniti ovaj datum.
+>> Prilikom unosa datuma, automatski se predlažu sljedeće opcije: *Zatvorio korisnik* i *Zatvorila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* i postavljena je oznaka *Zatvoreno*.  
 >>
->> **Chiuso da utente**: è l'*Utente A.R.M.* che ha chiuso il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Chiuso da persona**: è il *Dipendente* che ha chiuso il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Chiuso da funzione**: è la *Funzione aziendale* che ha chiuso il *Programma di azione correttiva*.   
->> Abilitato solamente se il *Programma di azione correttiva* è *Chiuso*.   
+>> **Zatvoreno od korisnika**: ovo je *A.R.M. korisnik* koji je zatvorio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
+>> **Zatvoreno od osobe**: ovo je *zaposlenik* koji je zatvorio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
+>> **Zatvorila funkcija**: ovo je *funkcija tvrtke* koja je zatvorila *Plan korektivnih radnji*.
+>> Omogućeno samo ako je *Plan korektivnih radnji* *Zatvoren*.  
 >
-> **Note**: annotazioni libere.   
-> **Riferimento azione correttiva**: è il riferimento all'*Azione correttiva* che potrebbe essere creata dal *Programma di azione correttiva*.   
-> **Verifica efficacia**: annotazioni libere sull'esito della verifica o meno dell'efficacia del *Programma di azione correttiva*.   
+> **Napomene**: bilješke u slobodnom obliku.
+> **Referenca korektivne radnje**: ovo je referenca na *korektivnu radnju* koja bi se mogla stvoriti *Planom korektivnih radnji*.
+> **Provjera učinkovitosti**: bilješke u slobodnom obliku u vezi s ishodom provjere učinkovitosti *Plana korektivnih radnji*. 
 >
-> **Verificato/Data verifica**: expander dove è possibile inserire:   
+> **Potvrđeno/Potvrđeni datum**: proširenje u koji se može unijeti:  
 >
->> **Verificato**: indica che il *Programma di azione correttiva* è stato *Verificato*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono verificare il *Programma di azione correttiva*.   
->> All'atto della verifica vengono automaticamente proposte: la *Data verifica* proposta alla data odierna e può essere variata, *Verificato da utente* e *Verificato da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.*   
+>> **Potvrđeno**: označava da je *Plan korektivnih radnji* *Potvrđen*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može provjeriti *Plan korektivnih radnji*.
+>> Nakon provjere, automatski se predlažu sljedeći podaci: *Datum provjere* predložen je kao današnji datum i može se promijeniti, *Potvrđeno od strane korisnika* i *Potvrđeno od strane osobe* predloženo je povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* 
 >>
->> **Data verifica**: è la data in cui il *Programma di azione correttiva* è stato *Verificato*.   
->> Solamente la **Persona responsabile** o la **Funzione responsabile** possono variare questa data.   
->> All'atto dell'inserimento della data vengono automaticamente proposte: *Verificato da utente* e *Verificato da persona* proposte all'*Utente A.R.M.* collegato e al *Dipendente* collegato all'*Utente A.R.M.* e impostato il flag *Verificato*.   
+>> **Datum provjere**: ovo je datum kada je *Plan korektivnih radnji* *Provjeren*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može promijeniti ovaj datum.
+>> Prilikom unosa datuma, automatski se predlažu sljedeće opcije: *Provjerio korisnik* i *Provjerila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* i postavljena je oznaka *Provjereno*. 
 >>
->> **Verificato da utente**: è l'*Utente A.R.M.* che ha verificato il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Verificato da persona**: è il *Dipendente* che ha verificato il *Programma di azione correttiva*. L'informazione è di sola lettura.   
->> **Verificato da funzione**: è la *Funzione aziendale* che ha verificato il *Programma di azione correttiva*.   
->> Abilitato solamente se il *Programma di azione correttiva* è *Verificato*.   
+>> **Potvđeno od korisnika**: ovo je *A.R.M. korisnik* koji je potvrdio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
+>> **Potvrđeno od osobe**: ovo je *zaposlenik* koji je potvrdio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
+>> **Potvrđeno od funkcije**: ovo je *funkcija tvrtke* koja je potvrdila *Plan korektivnih radnji*.
+>> Omogućeno samo ako je *Plan korektivnih radnji* *Potvrden*.  
 
 
-### Verifiche intermedie programma azione
+### Međukontrolne akcije
 
-Nel tabulatore sono contenute le indicazioni sulle verifiche intermedie effettuate sul *Programma di azione correttiva*.   
-Le informazioni gestite sono:   
-> **Dati verifica**   
->> **Data**: è la data in cui è stata effettuata la verifica intermedia.   
->> **Elementi verificati**: annotazioni libere sugli elementi considerati durante la verifica.   
->> **Verifica efficacia**: annotazioni libere sulle azioni svolte per verificare l'efficacia.   
->> **Esito**: è l'*Esito* che viene attribuito alla verifica intermedia del *Programma di azione correttiva*.   
->> **Descrizione esito**: è la descrizione dell'*Esito* che viene attribuito alla verifica del *Programma di azione correttiva*.   
+Kartica sadrži informacije o međukontrolama provedenim na *Planu korektivnih radnji*.
+Upravljane informacije su: 
+> **Podaci kontrole**
+>> **Datum**: ovo je datum kada je provedena međukontrola.
+>> **Provjereni elementi**: slobodne bilješke o elementima koji su razmatrani tijekom kontrole.
+>> **Provjera učinkovitosti**: slobodne bilješke o poduzetim radnjama za provjeru učinkovitosti.
+>> **Ishod**: ovo je *Ishod* pripisan međukontroli *Plana korektivnih radnji*.
+>> **Opis ishoda**: ovo je opis *Ishoda* pripisanog kontroli *Plana korektivnih radnji*. 
 >
-> **Verificata da utente**   
->> **Utente**: è l'*Utente* che ha effettuato la verifica intermedia.   
+> **Potvrđeno od korisnika**
+>> **Korisnik**: ovo je *Korisnik* koji je izvršio međuprovjeru.  
 >
-> **Verificata da persona**   
->> **Operatore**: è il codice del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Cognome**: è il cognome del *Dipendente* che ha effettuato la verifica intermedia.   
->> **Nome**: è il nome del *Dipendente* che ha effettuato la verifica intermedia.   
+> **Potvrđeno od osobe**
+>> **Operator**: ovo je kod *Zaposlenika* koji je izvršio međukontrolu.
+>> **Prezime**: ovo je prezime *Zaposlenika* koji je izvršio međukontrolu.
+>> **Ime**: ovo je ime *Zaposlenika* koji je izvršio međukontrolu.   
 >
-> **Verificata da persona**   
->> **Codice**: è il codice della *Funzione aziendale* che ha effettuato la verifica intermedia.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* che ha effettuato la verifica intermedia.   
+> **Potvrđeno od funckije**
+>> **Šifra**: ovo je Šifra *Funkcije tvrtke* koja je izvršila privremenu provjeru.
+>> **Opis**: ovo je opis *Funkcije tvrtke* koja je izvršila privremenu provjeru.
 >
-> **Nota**: annotazioni libere.   
+> **Napomene**: slobodna napomena.    
 
 
-### Soggetti coinvolti
+### Uključeni subjekti
 
-Nel tabulatore sono contenute le indicazioni sulle *Funzioni aziendali* e/o *Dipendenti* che prenderanno parte alla gestione del *Programma di azione correttiva*, i motivi del coinvolgimento, date previste attuazione e di chiusura.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funziona aziendale* coinvolta.   
->> **Descrizione**: è la descrizione della *Funziona aziendale* coinvolta.   
+Tablica sadrži informacije o *Funkcijama tvrtke* i/ili *Zaposlenicima* koji će biti uključeni u upravljanje *Programom korektivnih radnji*, razlozima njihovog uključivanja te očekivanim datumima provedbe i završetka.
+Popis se sastoji od sljedećih informacija:   
+> **Funkcija tvrtke**
+>> **Šifra**: ovo je šifra uključene *Funkcije tvrtke*.
+>> **Opis**: ovo je opis uključene *Funkcije tvrtke*.   
 >   
-> **Dipendente**   
->> **Codice**: è il codice del *Dipendente* coinvolto.   
->> **Descrizione**: è il cognome e nome del *Dipendente* coinvolto.   
+> **Zaposlenik**   
+>> **Šifra**: šifra uključenog *Zaposlenika*.   
+>> **Opis**: prezime i ime uključenog *Zaposlenika*.     
 >   
-> **Gestione coinvolgimento**   
->> **Descrizione soggetto**: annotazione libera nel caso in cui, il soggetto coinvolto, non sia *Funziona aziendale* o *Dipendente*.   
->> **Motivo del coinvolgimento**: annotazioni libere sull'argomento   
->> **Data scadenza**: è la data entro la quale il soggetto coinvolto deve completare le attività inerenti al motivo del suo coinvolgimento.   
->> **Risposta**: annotazioni libere sull'argomento.   
->> **Chiuso**: indica che il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* del *Programma di azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono chiudere il coinvolgimento.   
->> All'atto della chiusura viene automaticamente proposta la *Data chiusura*, proposta alla data odierna e può essere variata.   
->> **Data chiusura**: è la data in cui il coinvolgimento del soggetto è stato completato.   
->> Solamente la *Funzione o Persona responsabile* del *Programma di azione correttiva* o la *Funzione aziendale* o il *Dipendente* coinvolto possono inserire o variare questa data.   
->> All'atto dell'inserimento della data viene automaticamente impostato il flag *Chiuso*.   
+> **Upravljanje uključenošću**   
+>> **Opis subjekta**: slobodna napomena u slučaju kada uključeni subjekt nije *Poslovna funkcija* ili *Zaposlenik*.   
+>> **Razlog uključivanja**: slobodne napomene o temi.   
+>> **Datum isteka**: datum do kojeg uključeni subjekt mora završiti aktivnosti povezane s razlogom svog uključivanja.   
+>> **Odgovor**: slobodne napomene o temi.   
+>> **Zatvoreno**: označava da je uključivanje subjekta završeno.     
+>> Samo *Funkcija ili osoba odgovorna* za *Program korektivne radnje* ili *Poslovna funkcija* ili uključeni *Zaposlenik* mogu zatvoriti uključivanje.   
+>> Prilikom zatvaranja automatski se predlaže *Datum zatvaranja*, koji je predložen kao današnji datum i može se izmijeniti.   
+>> **Datum zatvaranja**: datum kada je uključivanje subjekta završeno.   
+>> Samo *Funkcija ili osoba odgovorna* za *Program korektivne radnje* ili *Poslovna funkcija* ili uključeni *Zaposlenik* mogu unijeti ili izmijeniti ovaj datum.     
+>> Prilikom unosa datuma automatski se postavlja oznaka *Zatvoreno*.  
 >
-> **Nota**: annotazioni libere.   
+> **Napomene**: slobodna napomena.    
 
 
-### Extra data
+### Dodatni podaci
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per il *Programma azione correttiva*.   
+Moguće je umetnuti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za *Program korektivnih radnji*.   
 
 
-### Documenti allegati
+### Povezani dokumenti
 
-In questo elenco è possibile inserire e consultare eventuali allegati.
-L'inserimento avviene tramite la funzione di drag&drop. Trascinando l'immagine o documento sull'area dell'elenco, questa verrà evidenziata con un bordo rosso. Rilasciando il pulsante del mouse, all'immagine o documento vengono richiesti i dati per la catalogazione (se non già automaticamente riconosciuti dal sistema): *Nome*, *TIpo documento* e *Tipo file*.   
+Na ovom popisu mogu se umetnuti i pregledati svi prilozi.
+Umetanje se vrši funkcijom povlačenja i ispuštanja. Povlačenjem slike ili dokumenta na područje popisa, bit će označen crvenim okvirom. Kada se otpusti tipka miša, za sliku ili dokument bit će upitani podaci za katalogizaciju (ako ih sustav već nije automatski prepoznao): *Naziv*, *Vrsta dokumenta* i *Vrsta datoteke*. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).

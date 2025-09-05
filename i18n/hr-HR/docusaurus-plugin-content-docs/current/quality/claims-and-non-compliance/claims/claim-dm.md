@@ -183,4 +183,4 @@ Moguće je umetnuti neke [Dodatne podatke](/docs/configurations/utility/extra-da
 U ovom popisu mogu se umetnuti i pregledati svi dokumenti priloženi odabranom *Nedostatku*.   
 
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).   
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).   

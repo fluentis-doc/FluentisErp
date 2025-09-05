@@ -19,4 +19,4 @@ Za unos novih *Reklamacija* potrebno je pritisnuti gumb **Novo**.
 
 Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na željeni redak, odabirom jednog ili više redaka, treba pritisnuti tipku **Izmijeni** ili **Prikaži**.  
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).

@@ -201,4 +201,4 @@ Ovo su druge radnje/aktivnosti u kojima treba provesti daljnje radnje. Popis ukl
 > **Napomene**: Napomene u slobodnom obliku.  
 
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).   
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).   

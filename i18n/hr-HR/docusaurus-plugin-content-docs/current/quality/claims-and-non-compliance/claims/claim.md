@@ -237,4 +237,4 @@ Naknadni načini upravljanja razlikuju se ovisno o *Modelu* navedenom u *Vrsti r
 > ### [8D Rješavanje problema](/docs/quality/claims-and-non-compliance/claims/claim-8d)
 
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke značajke, gumbi i polja](/docs/guide/common).   
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).   

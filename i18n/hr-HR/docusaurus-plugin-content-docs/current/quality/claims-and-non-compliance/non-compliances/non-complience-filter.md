@@ -19,4 +19,4 @@ Za unos novih *Nesukladnosti* potrebno je pritisnuti gumb **Novo**.
 
 Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na redak koji se želi otvoriti, a za odabir jednog ili više redaka, nakon označavanja, pritisnuti tipku **Uredi** ili **Prikaži**.  
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).

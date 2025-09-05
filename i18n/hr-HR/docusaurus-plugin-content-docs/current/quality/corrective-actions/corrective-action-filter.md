@@ -20,4 +20,4 @@ Za umetanje novih *Korektivnih radnji* potrebno je pritisnuti tipku **Novo**.
 
 Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na redak koji se želi pregledati, odabirom jednog ili više redaka, pritisne se tipka **Uredi** ili **Prikaži**. 
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledazi sljedeću poveznicu [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledazi sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
