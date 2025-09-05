@@ -1,13 +1,13 @@
-Per la ricerca automatica del *Piano di controllo* da associare ad ogni *articolo* presente nella riga documento selezionata, viene utilizzata questa metodologia:   
+Za automatsko pretraživanje *Kontrolnog plana* koji će se povezati s svakim *artiklom* prisutnim u odabranom retku dokumenta, koristi se ova metodologija:    
 
-- per i documenti di produzione (*Dichiarazioni di produzione* e *Fasi ordine di produzione*) viene considerato il *Piano di controllo* indicato nella *Fase*;   
-- per gli altri documenti viene considerato il conto del *Cliente* o *Fornitore* associato al *Tipo documento* e la *Data del documento*;   
-con queste informazioni viene ricercato il *Piano di controllo*, valido alla data del documento e per l'*Articolo* selezionato, da associare;   
-ad ogni ricerca, se non viene trovato il *Piano di controllo*, si prosegue con la successiva combinazione di valori;   
-se viene trovato più di un *Piano di controllo*, il *Controllo* viene comunque inserito ma si dovrà scegliere quale *Piano di controllo* associare tra quelli trovati;   
-la sequenza di ricerca è la seguente:   
-    - ricerca tra i *Piani di controllo* del *Tipo piano* indicato come *Tipo piano di controllo* del *Tipo documento per l'importazione* presente nei *Parametri controlli articolo* e conto *Cliente* o *Fornitore* del documento e successivamente quelli privi di conto *Cliente* o *Fornitore*;   
-    - ricerca tra i *Piani di controllo* degli altri *Tipi piano* non indicati come *Tipo piano di controllo* del *Tipo documento per l'importazione* presente nei *Parametri controlli articolo* e conto *Cliente* o *Fornitore* del documento e successivamente quelli privi di conto *Cliente* o *Fornitore*.   
-    - se non trovato viene visualizzato un messaggio di avviso, il *Controllo articolo* viene comunque inserito ma privo del *Piano di controllo*, privo delle *Prove* da controllare e viene inserita un'indicazione nelle *Richieste Piani di controllo*"*.   
+- za dokumente proizvodnje (*Deklaracije proizvodnje* i *Faze proizvodnih naloga*) uzima se u obzir *Kontrolni plan* naveden u *Fazi*;   
+- za ostale dokumente uzima se u obzir konto *Kupca* ili *Dobavljača* povezan s *Tipom dokumenta* i *Datumom dokumenta*;  
+s ovim informacijama traži se *Kontrolni plan*, važeći na datum dokumenta i za odabrani *Artikl*, koji će se povezati;  
+za svako pretraživanje, ako se *Kontrolni plan* ne pronađe, nastavlja se s sljedećom kombinacijom vrijednosti;  
+ako se pronađe više od jednog *Kontrolnog plana*, *Kontrola* će se i dalje unijeti, ali će se morati odabrati koji *Kontrolni plan* povezati među pronađenima;   
+redoslijed pretraživanja je sljedeća:   
+    - pretraga među *Kontrolnim planovima* *Tipa plana* označenog kao *Tip kontrolog plana* *Tipa Dokumenta za uvoz* prisutnog u *Parametrima kontrole artikla* i konta *Kupca* ili *Dobavljača* dokumenta, a zatim onih bez konta *Kupca* ili *Dobavljača*;   
+    - pretraživanje među *Planovima kontrole* ostalih *Tipova plana* koji nisu označeni kao *Tip kontrolnog plana* *Tipa dokumenta za uvoz* prisutnog u *Parametrima kontrole artikla* i konta *Kupca* ili *Dobavljača* dokumenta, a zatim onih bez konta *Kupca* ili *Dobavljača*.   
+    - ako nije pronađen, prikazuje se poruka upozorenja, *Kontrola artikla* će se i dalje unijeti, ali bez *Kontrolnog plana*, bez *Testova* koje treba provjeriti, a unosi se oznaka u *Zahtjevima za Kontrolne  planove*.   
 
 
