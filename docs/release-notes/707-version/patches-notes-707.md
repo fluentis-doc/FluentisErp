@@ -3,6 +3,33 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0045 - 04/09/2025
+
+> - FI - contabilizzazione fatture di vendita per autofatture servizi esteri, revisione gestione “conto partner” nella causale automatica di giro (#TT03556/25) 
+> - FI - F2021/2023 - Bug Extension - Fonderie Palmieri - change primary key ( TT03726/25) 
+> - FI - revisione allineamento dati analitica/partite al cambiamento del progetto in testata registrazione contabile. (#TT02577/24) 
+> - FI - revisione creazione registrazioni contabili da file Sdi (#TT03573/25) 
+> - FI - tab analitica nelle registrazioni contabili, corretto caso in cui l'associazione al progetto salvava il riferimento solo alla testata e non alle righe progetto (#TT03591/25) 
+> - MES - Il costo unitario indicato nella fase del ciclo viene considerato come prioritario (rispetto a tutti gli altri valori) nella valorizzazione del movimento di magazzino creato dalla registrazione della dichiarazione di produzione. (#TT03502/25) 
+> - MES - Ora con la procedura di rilascio degli ordini di produzione vengono movimentati solo gli articoli che hanno come tipo prelievo Automatico nei parametri MRP. (#TT03691/25) 
+> - MS - Corretta la creazione degli Ordini di Conto Lavoro da Pianificazione o Produzione in presenza del flag “Nessun materiale in Consegna” nei parametri di Conto Lavoro. (#TT03679/25) 
+> - MS - In fase di pianificazione generale, il tipo di approvvigionamento indicato in commessa ha la priorità sul tipo di approvvigionamento indicato nei parametri MRP dell’articolo. (#TT03417/25) 
+> - MS - Nel tab sotto scorta della generazione commesse di produzione ora vengono visualizzati e considerati anche i lotti economici e i multipli degli articoli di acquisto e conto lavoro. (#TT02835/25 - #TT03073/25) 
+> - MS - Ora trascinando dall’object navigator i seguenti campi: Lead time, Lead time fisso e Capacità produttiva verranno visualizzati con due decimali di default, mentre il campo Lotto economico di produzione verrà visualizzato con il numero di decimali indicato nella relativa unità di misura. (#TT03668/25) 
+> - PR - creazione manuale movimenti ordini clienti/fornitori nel cash flow, ottimizzazione procedura. Quando le righe da inserire sono più di 100, Fluentis segnala che è necessario salvare direttamente il cash flow. Modifications in help subcontractor of cash flow can have an impact on profiles. (#TT01803/24) 
+> - SCM - Creazione automatica Ordini da Ordini clienti: se nei parametri della procedura è attivo il flag "Esplosione livello da struttura distinta" l’ordine di acquisto generato conterrà il primo livello della distinta base dell’articolo presente nell’ordine cliente. Le quantità dei componenti saranno calcolate sulla base della quantità confermata in fase di generazione del prototipo, applicando i coefficienti di impiego indicati nella distinta base. (#TT02802/25) 
+> - SD - Creazione Fatture da DDT: Nei casi in cui la fattura non può essere generata, il DDT non viene più inserito tra gli Oggetti bloccati. (#TT03343/25) 
+> - SD - Duplica e manutenzione listini di vendita: se attivo, il flag “Movimento” indica che la riga listino è stata utilizzata per la ripresa del prezzo in un DDT di Vendita. (#TT03291/25) 
+> - SD - Introdotta la possibilità di cancellare un articolo da un ordine cliente anche quando risulta associato a una Commessa di produzione in stato Non esaminata. (#TT03006/25) 
+> - SD - Ordini e Offerte di vendita: Introdotta la possibilità di salvare un profilo includendo informazioni relative a Lingua e Nazione nella griglia. (#TT02870/25) 
+> - SD - Stampa DDT - Aggiunto riferimento ordine cliente nella stampa (#TT03639/25) 
+> - SH - WEB - Corretto errore che causava la duplicazione delle righe articolo inserite nei documenti di Acquisto e Vendita, in presenza di un profilo personalizzato. (#TT03427/25) 
+> - WM - Corretto bug nelle registrazioni di magazzino che non visualizzava correttamente le cifre decimali inseriti nell’unità di misura alternativa. (#TT03617/25) 
+> - WM - Corretto bugs nella procedura  di modifica massiva articoli, che non aggiornava correttamente gli extra data presenti nell’articolo. (#TT03141/25) 
+> - WM - Implementato nell’import webapi dei seguenti documenti: Picking, DDT e fattura di vendita, l’aggiornamento dello stato del documento di evasione. (#TT01153/25) 
+> - WM - Ottimizzata la creazione del picking dal piano di carico. Ora i lotti e serial number vengono riportati con la logica indicata nella documentazione relativa ai piani di carico. (#TT03063/25) 
+> - WMS - Corretto bug nel widget delle ubicazioni che non filtrava solo le ubicazioni attive. (#TT03652/25) 
+
 ### Patch 707.1-0044 - 08/08/2025
 
 > - Bizlink - importazione da DocFinance, se la partita da chiudere è legata ad un compenso professionista con partite gestite al netto ora Fluentis aggiunge automaticamente la registrazione che valorizza il debito della ritenuta (#TT03211/25) 
