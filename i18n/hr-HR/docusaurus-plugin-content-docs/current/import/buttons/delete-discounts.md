@@ -1,1 +1,1 @@
-**Izbriši rabate**: omogućuje brisanje odabranih rabata iz povezane tablice.
+**Izbriši popuste**: omogućuje brisanje odabranih popusta iz povezane tablice.

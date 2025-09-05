@@ -1,1 +1,1 @@
-**Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.
+**Popusti**: prikazuju se popusti povezani s artiklom, svaki s vlastitom osnovom za izračun i dodjelom.
