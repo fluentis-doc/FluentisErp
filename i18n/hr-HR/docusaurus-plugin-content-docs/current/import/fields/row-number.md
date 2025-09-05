@@ -1,1 +1,1 @@
-**Numero riga**: questo campo si compilerà automaticamente e progressivamente all'inserimento dei dati nella riga.
+**Broj retka**: ovo polje će se automatski i progresivno popunjavati prilikom unosa podataka u retku.

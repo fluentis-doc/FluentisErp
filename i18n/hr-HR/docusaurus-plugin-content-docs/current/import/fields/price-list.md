@@ -1,1 +1,1 @@
-**Listino**: viene proposto il listino dal quale è stato ripreso l'articolo, con la data inizio/fine validità, con condizioni particolari (es. scaglione di sconto) assegnate all'articolo nel listino.
+**Cjenik**: predlaže se cjenik iz kojeg je artikal preuzet, s datumom početka/kraja valjanosti, s posebnim uvjetima (npr. razred popusta) dodijeljenim artiklu u cjeniku.

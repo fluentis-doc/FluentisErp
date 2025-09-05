@@ -1,1 +1,1 @@
-**Progetto**: rappresenta il progetto associato al documento. Si può inserire anche tramite l'apposito help progetti
+**Projekt**: predstavlja projekt povezan s dokumentom. Također se može unijeti putem posebne Pomoći za projekte.

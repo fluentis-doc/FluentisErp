@@ -1,1 +1,1 @@
-**Ubicazione**: viene proposto solo se per l'articolo selezionato è stato scelto il magazzino.
+**Lokacija**: automatski se predlaže samo ako je za odabrani artikl odabrano i skladište.
