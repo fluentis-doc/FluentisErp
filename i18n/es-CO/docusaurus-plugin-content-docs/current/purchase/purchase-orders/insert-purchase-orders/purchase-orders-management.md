@@ -1,5 +1,5 @@
 ---
-title: Nuevo pedido proveedor (Nuovo ordine fornitore)
+title: Nuevo pedido proveedor
 sidebar_position: 2
 ---
 
@@ -7,41 +7,41 @@ El formulario se encuentra en el área **Compras > Pedidos proveedores** y conti
 
 Desde el formulario de búsqueda de pedidos es posible crear un nuevo documento mediante el botón **Nuevo** o abrir uno existente para visualizarlo y/o modificarlo.
 
-## *Cómo crear un pedido proveedor (Come creare un ordine fornitore)*
+## *Cómo crear un pedido proveedor*
 
 <details>
 
-<summary>Clic para ver los pasos fundamentales (Clicca per vedere i passaggi fondamentali)</summary>
+<summary>Clic para ver los pasos fundamentales</summary>
 
-1. **Introduce los datos obligatorios**: *tipo ordine* y *fornitore*. *anno*, *numero* y *data inserimento* se propondrán automáticamente.
+1. **Introduce los datos obligatorios**: *Tipo de orden* y *Proveedor*. *año*, *número* y *Inserte la fecha* se propondrán automáticamente.
 
-2. **Introduce o modifica los datos opcionales** de la cabecera: como fechas de entrega, posibles *sconti*, la *destinazione*, etc.
+2. **Introduce o modifica los datos opcionales** de la cabecera: como fechas de entrega, posibles *descuentos*, el *destino*, etc.
 
-3. **Introduce los Artículos**: mediante doble clic en el campo *codice articolo* se abre la ayuda de artículos que permite buscar y seleccionar un artículo existente. Todos los demás datos de la línea, como *unità di misura*, *quantità*, *prezzo*, se propondrán automáticamente, pero pueden ser modificados. Alternativamente, es posible seleccionar como *tipo riga* un *articolo non codificato* e ingresar manualmente los datos siguientes.
+3. **Introduce los Artículos**: mediante doble clic en el campo ***Código de artículo*** se abre la ayuda de artículos que permite buscar y seleccionar un artículo existente. Todos los demás datos de la línea, como *Unidad de medida*, *cantidad*, *precio*, se propondrán automáticamente, pero pueden ser modificados. Alternativamente, es posible seleccionar como *tipo de fila* un *elemento no codificado* e ingresar manualmente los datos siguientes.
 
-4. **Introduce posibles descuentos u otra información adicional** en las pestañas *sconti/listini* y *dati articolo*.
+4. **Introduce posibles descuentos u otra información adicional** en las pestañas *Descuentos/Listas de precios* y *Datos del artículo*.
 
-5. **riepiloghi** e introduce posibles gastos o descuentos finales.
+5. **Resúmenes**  introduce posibles gastos o descuentos finales.
 
-6. Una vez revisado y confirmado el pedido, **introduce una *data conferma* y activa el indicador *stampato* en la cabecera** para hacer el pedido disponible para los procedimientos de cumplimiento.
+6. Una vez revisado y confirmado el pedido, **introduce una *fecha de la conferencia* y activa el indicador *Impreso* en la cabecera** para hacer el pedido disponible para los procedimientos de cumplimiento.
 
 </details>
 
-## **1. Datos obligatorios (Dati obbligatori)**
+## **1. Datos obligatorios**
 
 Para crear el pedido, el usuario debe ingresar los campos obligatorios:
 
-- **tipo ordine**: predefinido en *Configuración > Tablas > Compras > Tipos de pedidos proveedores (Configurazione > Tabelle > Acquisti > Tipi ordini fornitori)*. Este campo determina el rango de numeración del documento que se está ingresando y propone automáticamente el número de pedido proveedor según la fecha de ingreso y el último número ingresado. Además, si en el *tipo ordine* está activado el indicador [Confirmación automática del pedido (Conferma ordine automatica)](/docs/configurations/tables/purchase/purchase-orders-type), se propone la fecha de confirmación del pedido igual a la fecha de ingreso del pedido;  
-- **anno**: se inserta automáticamente el año en curso, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número;  
-- **numero**: se propone automáticamente según el tipo, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número;  
-- **data inserimento**: se propone automáticamente la fecha actual, pero puede ser modificada manualmente siempre respetando la regla de progresión entre fecha y número;  
-- **fornitore**: puede ser ingresado utilizando la [ayuda de campo (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o [manualmente (manualmente)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+- **Tipo de orden**: predefinido en *Configuración > Tablas > Compras > Tipos de pedidos proveedores*. Este campo determina el rango de numeración del documento que se está ingresando y propone automáticamente el número de pedido proveedor según la fecha de ingreso y el último número ingresado. Además, si en el *tipo de orden* está activado el indicador [Confirmación automática del pedido](/docs/configurations/tables/purchase/purchase-orders-type), se propone la fecha de confirmación del pedido igual a la fecha de ingreso del pedido;  
+- **año**: se inserta automáticamente el año en curso, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número;  
+- **número**: se propone automáticamente según el tipo, pero puede ser modificado manualmente siempre respetando la regla de progresión entre fecha y número;  
+- **Inserte la fecha**: se propone automáticamente la fecha actual, pero puede ser modificada manualmente siempre respetando la regla de progresión entre fecha y número;  
+- **Proveedor**: puede ser ingresado utilizando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-## **testata** {#header}
+## **Encabezado** {#header}
 
-Continúa introduciendo los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o con la [ayuda de campo (help di campo)](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+Continúa introduciendo los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o con la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-:::note Recuerda (Ricorda)
+:::note Recuerda 
 Si el documento se *crea automáticamente*, por ejemplo, desde el filtro de búsqueda de [**ordini clienti**](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders), desde el procedimiento de [**creazione automatica ordini**](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) o del procedimiento de [**creazione ordine fornitore da offerta fornitore**](/docs/purchase/offer-request/procedures/order-creation), estos datos se toman del *documento de origen* del cual se generó.
 :::
 
