@@ -1,18 +1,19 @@
 ---
-title: Mappa opportunità CRM
+title: Hartă oportunități CRM
 sidebar_position: 4
 ---
 
-Questa funzionalità permette di visualizzare graficamente la dislocazione geografica delle **Opportunità** in essere sulla base delle indicazioni geografiche indicate nell’anagrafica dei contatti CRM presenti sulle opportunità.
+Această funcționalitate permite vizualizarea grafică a distribuției geografice a **oportunităților** existente, pe baza indicațiilor geografice specificate în registrul contactelor CRM prezente în oportunități.
 
-Con l’aiuto dei filtri si può visualizzare: una sola tipologia di opportunità (**Tipo Opportunità**), più opportunità inserite dallo stesso utente (**Operatore**), più opportunità con la medesima probabilità di successo (**Probabilità Successo**).
+Cu ajutorul filtrelor se poate afișa: un singur tip de oportunități, mai multe oportunități introduse de același utilizator, mai multe oportunități cu aceeași probabilitate de succes.
 
-L’area di filtro è quella dedicata ad ospitare l’elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
+Zona de filtrare este cea dedicată găzduirii listei posibilelor tipuri de date cu care se poate efectua o selecție. 
 
-Nell’area sottostante a quella di filtro è presente la mappa dove vengono visualizzate le opportunità, segnalate con un indicatore all’interno del quale è possibile visualizzare il numero di opportunità presenti per lo stesso Contatto.
-Cliccando sull’indicatore vengono visualizzate, in una finestra di pop up le seguenti informazioni:
+În secțiunea următoare sunt afișate oportunitățile, semnalate cu un indicator în interiorul căruia este posibil să se vizualizeze numărul de oportunități existente pentru același contact.
 
--	Ragione Sociale del contatto titolare dell’opportunità;
--	La Qualità del contatto;
--	Il valore dell’opportunità;
--	L’indirizzo del Contatto.
+Făcând clic pe indicator, într-o fereastră de tip pop-up, sunt afișate următoarele informații:
+
+- Denumirea juridică a contactului titular al oportunității;
+- Calitatea contactului;
+- Valoarea oportunității;
+- Adresa contactului.
