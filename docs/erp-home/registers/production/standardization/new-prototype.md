@@ -82,6 +82,13 @@ All'interno dei box relativo ai **Dati componente**, è possibile indicare:
 > **Costo componente**: indica il costo totale del componente dato dalla somma del costo materiale e lavorazione;             
 > **Note**: permette di inserire una nota libera legata al componente.      
 
+:::note NOTA
+Nel calcolo del costo del materiale vengono considerati anche eventuali *prezzi per quantità* definiti nel listino del fornitore preferenziale. Le condizioni per l'applicazione dei prezzi per quantità sono le seguenti: 
+- l'articolo deve avere come tipologia di approvvigionamento *Acquisto*;   
+- il *Tipo costo materiale* usato deve essere *Da listino fornitore preferenziale netto*;   
+- nell'anagrafica del fornitore preferenziale, tab Listini, è necessario indicare come scaglione *Prezzo per quantità*. 
+:::
+
 Se l'elemento seleziona nell'albero è un semilavorato nel tab **Componenti** è possibile visualizzare i componenti di primo livello da cui è costituito.
 
 Nei tab **Dati extra - modello** e **Dati extra - componente** è possibile inserire rispettivamente gli extra data relativi all'articolo padre e al componente; per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).     
