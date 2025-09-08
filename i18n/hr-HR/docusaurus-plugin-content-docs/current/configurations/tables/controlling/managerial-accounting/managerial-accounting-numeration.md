@@ -1,33 +1,33 @@
 ---
-title: Numerazione registrazioni contabili
+title: Numeriranje računovodstvenih zapisa
 sidebar_position: 7
 ---
 
 
-:::note Percorso
-**Configurazione > Controlling > Contabilità gestionale**
+:::note Putanja
+**Konfiguriranje > Kontroling > Računovodstvo upravljanja**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Napomena:
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu obrazaca, pogledajte sljedeći link: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
 
 :::
 
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako se planira ručna konfiguracija, potrebno je slijediti kontrolnu listu na poveznici.
 :::
 ---
 
-In questa tabella viene definita, attraverso un ** [*Numeratore standard di Fluentis* ](/docs/configurations/tables/fluentis-numerations) ** , la politica per le registrazioni contabili definitive e provvisorie.
+U ovoj tablici definira se, preko ** [*Standardni numerator Fluentis* ](/docs/configurations/tables/fluentis-numerations) ** , politika za privremene i konačne knjigovodstvene zapise.
 
-**<u>Si raccomanda di seguire le impostazioni visibili nelle immagini</u>** per una ottimale gestione della numerazione.
-E' possibile scegliere una diversa periodicità, ad esempio annuale, oppure non adottare il recupero dei numeri liberi, o anche vincolare la numerazione al criterio di coerenza tra data e numero (esempio non posso avere il numero 2 oggi ed il numero 1 domani).
+**<u>Preporučuje se slijediti postavke prikazane na slikama</u>** radi optimalnog upravljanja numeracijom.
+Moguće je odabrati drugačiju periodicitetu, primjerice godišnju, ili ne koristiti povrat slobodnih brojeva, ili vezati numeraciju uz kriterij konzistentnosti između datuma i broja (primjerice, ne mogu imati broj 2 danas, a broj 1 sutra).
 
-E' anche possibile, in casi particolari o di specifica necessità, far partire la numerazione da un numero diverso da 1.
+Također je moguće, u posebnim ili specifičnim slučajevima, započeti numeraciju s brojem različitim od 1.
 
-**NOTA:** per la numerazione provvisoria è necessario che la numerazione sia negativa.
+**NAPOMENA:** za privremenu numeraciju potrebno je da numeracija bude negativna.
 
 ![](/img/it-it/configurations/tables/finance/posting-ledger-numerations/posting-ledger-numerations-detail.png)
 
