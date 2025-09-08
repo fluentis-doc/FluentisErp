@@ -1,27 +1,35 @@
 ---
-title: Area
+title: Područje
 sidebar position: 2
 ---
-I Dati del Controlling vengono sempre gestiti con un’area di analisi collegata che identifica che tipi di dati ci sono dentro. 
 
 
-![](/img/it-it/controlling/area.png)
+:::tip Napomena
+Tablica je relevantna samo za tvrtke koje imaju aktiviran *Kontroling*.
+:::
 
-***TIPOLOGIE DI AREE***
+Podatke za Kontroling uvijek upravljamo kroz područje analize koje identificira vrstu podataka koja se u njemu nalazi: možemo ga zamišljati kao fizičku kutiju, u koju se unose knjigovodstvene vrijednosti i kvantitativni podaci, a svaka kutija može imati svoj vlastiti model obračuna. Jedno područje obuhvaća podatke svih *dimenzija* centara.
 
-*BUDGET* :avremo il budget per l’anno successivo;
+#### Specifična polja  
+- **Šifra**
+- **Opis**
+- [**Tip područja**](/docs/configurations/tables/controlling/managerial-accounting/area-type)
+- **Narudžba za usklađenje**, nije upravljano
 
-*CONSUNTIVI*: quando andiamo ad elaborare le chiusure infrannuali; 
 
-*MULTIAMBIENTE*: area che non ha valori, se non qualche misura fisica. Tipicamente è un’area depositaria delle regole standard dei cost driver. I DRIVER  sono CRITERI DI ATTRIBUZIONE O RIBALTAMENTO DEI VALORI CENTRI AZIENDALI. I Driver saranno sempre associati all’area, e ci saranno sempre driver generici collegati all’area generica MULTIAMBIENTE. Sono elle regole che possono essere specifiche del BUDGET o comunque differenti dalle logiche dalle logiche per consuntivo. 
+#### TIPOVI PODRUČJA
+Tipično ćemo imati 3 područja:  
+- *BUDŽET*: područje za budžet za sljedeću godinu;
 
-***Il concetto fondamentale è che L’AREA IDENTIFICA IL SET DI DATI CE STO ELABORANDO/ANALIZZANDO. ***
+- *REALIZACIJA*: područje za obračun međugodišnjih zatvaranja;
 
-Quando andiamo a creare gli elavorati per le aree, automaticamente andiamo a cancellare i dati di quell'anno e a crearli nuovamente con la situazione in cui si trova in quel momento. 
+- *SET PRAVILA*: područje koje ne sadrži vrijednosti, osim eventualno nekih fizičkih mjera. Ovo je područje u kojem su pohranjena *standardna* pravila za cost drivere: ako, primjerice, obrađujem područje realizacije i pokušavam raspodijeliti trošak najma putem cost drivera, Fluentis će koristiti specifični cost driver za realizaciju, a ako ga nema, tražit će vrijednosti iz općih pravila po defaultu, povezanih s područjem *set pravila*.
 
-ESEMPIO: se sto elaborando il consuntivo di GENNAIO 2019 ed elaboro nel mio controlling, il mese dopo, quando vado ad elaborare sia GENNAIO che FEBBRAIO, fluentis elimina GENNAIO e si ricalcola GENNAIO e FEBBRAIO con i nuovi dati che ha. 
+:::tip Napomena
+Možemo slobodno definirati koliko god područja analize želimo. Tipični cilj je simulirati *što se događa* ako promijenim pravila za cost drivere, ili primijeniti različite konfiguracije troškova.
 
-**FLUENTIS svuota i mesi precedenti e li ricalcola insieme ai successivi**. 
+Druga svrha je 'fiksiranje' obračuna Kontrolinga: kao što ćemo objasniti u dijelu o cost driverima, obračuni Kontrolinga brišu i ponovno kreiraju podatke za godinu koja se obrađuje. Ako želimo zadržati povijest, primjerice, prvog *trimestra* kako bismo ga kasnije usporedili s prva tri mjeseca obračuna prvog *polugodišta*, to možemo postići kreiranjem različitih realizacijskih područja.
+:::
 
 
 
