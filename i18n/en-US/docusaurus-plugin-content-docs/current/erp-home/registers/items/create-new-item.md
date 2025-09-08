@@ -180,6 +180,10 @@ In **Fluentis ERP**, there are no predefined parameters indicating how to set th
 The form consists of a grid where a **New** barcode can be entered using the **Insert** button present in the ribbon bar, or by going directly to a new line.  
 In the **Barcode Type** field, the type of barcode to be encoded is selected via the respective combo, and in the **Barcode** field, the barcode itself is entered.
 
+:::note Note 
+By activating the flag **Export public administration**, present in the table [Barcode Types](https://docs.fluentis.com/FluentisErp/docs/configurations/tables/general-settings/barcode-types/), the uniqueness check of the entered barcode is done only at the individual item level, while if the flag is deactivated, the uniqueness check of the barcode is performed globally, that is, for all items.
+:::
+
 #### Specific Buttons  
 > **Validation**: by pressing this button, the system will verify that the code complies with the regulations mentioned earlier regarding the length that the code must have based on the type of code being entered;  
 > **Delete Barcode Codes**: allows you to delete a previously entered barcode.
@@ -233,8 +237,8 @@ Within this tab, different costs associated with the item are entered.
 **Standard cost/Subsequent standard cost**: standard cost is a manually set or calculated cost that indicates the reference cost for a given item to be used during the year. It is usually a cost that gets updated at the beginning or end of the year. For purchased items, it usually corresponds to the average cost, while for other items, it is calculated using the [Cost calculation procedure](/docs/controlling/cost-calculation/cost) found in the *Controlling* area, as the sum of material costs and production phase costs.  
 All these costs can be used for bill of materials valuation, stock valuations, or (for purchased items) for production order (and related loading movements) item valuation when loading the item of a production order.  
 **Selling price**: base price from which to start creating a sales price list if a national starting price list is considered. If there are no price lists for this item, this price will be taken for the documents. (unless for return documents wherein the article will take the price indicated in the last cost by default to be verified) (it is not widely used).  
-**Discount category/Price range configuration**: these are strictly commercial data used for price updates.  
-It will be used in documents; it will never report discounts from the price lists in which it is included, and commissions on the sales of this item will not be calculated.
+**Discount category/Price range configuration/Discount policy update formulas**: these are commercial data used for price updates. The update formula is used in the procedure of [Advanced Price List Creation](/docs/sales/sales-price-list/procedures/price-list-advanced).  
+**No commercial conditions**: when the item is used in documents, it will never display prices or discounts from the price lists it is included in, or the price from the item registry, and commissions on sales of this item will not be calculated.
 
 ## 11. **Item Descriptions in Language**
 
@@ -261,28 +265,28 @@ In this tab, the preferred suppliers from whom that item is usually sourced can 
 The window consists of two sections:  
 1. In the first section, information regarding all preferred suppliers is entered if this information is generic, such as:
 
-**Mandatory supplier relationship**: if active, this flag indicates that this item can only be purchased from the default supplier indicated in the grid in the second part of the screen;  
-**Maximum number of trial lines**: this refers to the maximum number of supplier order lines that can be made for a given item/supplier until the **Order line block** flag is activated;  
-**Purchase U.M**: in this field, the unit of measure for purchasing that material is indicated;  
-**Maximum purchasable value**: in this field, the maximum quantity that can be ordered from that supplier for that item is indicated;  
-**Order line block**: if active, this flag indicates that the possibility of entering new supplier order lines should be blocked;  
-**Block date**: indicates the date when the block on supplier order lines is activated;  
-**% tolerance on received quantities in excess and in deficit**: in these two fields, the % of tolerance on quantity delivered more or less by the supplier for that material is indicated;  
-**% tolerance on price in excess and in deficit**: in these two fields, the % of tolerance on supplier price in excess and in deficit compared to the established price is indicated;  
-**Allow zero price**: if active, this flag allows issuing supplier orders with a zero price for that item.
+>- **Mandatory supplier relationship**: if active, this flag indicates that this item can only be purchased from the default supplier indicated in the grid in the second part of the screen;  
+>- **Maximum number of trial lines**: this refers to the maximum number of supplier order lines that can be made for a given item/supplier until the **Order line block** flag is activated;  
+>- **Purchase U.M**: in this field, the unit of measure for purchasing that material is indicated;  
+>- **Maximum purchasable value**: in this field, the maximum quantity that can be ordered from that supplier for that item is indicated;  
+>- **Order line block**: if active, this flag indicates that the possibility of entering new supplier order lines should be blocked;  
+>- **Block date**: indicates the date when the block on supplier order lines is activated;  
+>- **% tolerance on received quantities in excess and in deficit**: in these two fields, the % of tolerance on quantity delivered more or less by the supplier for that material is indicated;  
+>- **% tolerance on price in excess and in deficit**: in these two fields, the % of tolerance on supplier price in excess and in deficit compared to the established price is indicated;  
+>- **Allow zero price**: if active, this flag allows issuing supplier orders with a zero price for that item.
 
 2. In the second part of the screen, there is a grid where the default supplier and any other suppliers used for purchasing the item and their relevant data for each supplier are indicated:  
-**Supplier**: the account/subaccount/description of the supplier is indicated;  
-**Default**: this flag, if active, indicates the default supplier in the case of multiple suppliers;  
-**Economic lot**: in this section, the minimum economic lot and its multiples for each supplier are indicated;  
-**Supplier item**: in this section, the code and description that the supplier uses to identify the item can be added;  
-**Procurement time**: for each supplier, the management time, i.e., the time needed for the supplier to reproduce/purchase that item, the shipping time, i.e., the time needed to ship the material from the supplier, total time, which is the sum of the previous two data, indicating the time required to replenish the material stock is indicated;  
-**Purchase order**: in this section, the information related to purchase orders for each supplier as detailed above (U.M, order block, block date, maximum number of lines, maximum value, % of tolerance on received quantities in excess/deficit) is indicated;  
-**Producer**: in this section, the account and description of the material producer are indicated;  
-**Origin**: indicates the origin of the goods, such as the country of origin or the provenance of animal or vegetable origin;     
-**Acceptance controls**: within this field, any controls that need to be performed upon receipt of the material before it can be used are indicated;  
-**Variant**: in this field, the possible variant of the supplier of that item is entered;  
-**Notes**: this section allows for any notes related to the specified supplier to be entered.
+>- **Supplier**: the account/subaccount/description of the supplier is indicated;  
+>- **Default**: this flag, if active, indicates the default supplier in the case of multiple suppliers;  
+>- **Economic lot**: in this section, the minimum economic lot and its multiples for each supplier are indicated;  
+>- **Supplier item**: in this section, the code and description that the supplier uses to identify the item can be added;  
+>- **Procurement time**: for each supplier, the management time, i.e., the time needed for the supplier to reproduce/purchase that item, the shipping time, i.e., the time needed to ship the material from the supplier, total time, which is the sum of the previous two data, indicating the time required to replenish the material stock is indicated;  
+>- **Purchase order**: in this section, the information related to purchase orders for each supplier as detailed above (U.M, order block, block date, maximum number of lines, maximum value, % of tolerance on received quantities in excess/deficit) is indicated;  
+>- **Producer**: in this section, the account and description of the material producer are indicated;  
+>- **Origin**: indicates the origin of the goods, such as the country of origin or the provenance of animal or vegetable origin;     
+>- **Acceptance controls**: within this field, any controls that need to be performed upon receipt of the material before it can be used are indicated;  
+>- **Variant**: in this field, the possible variant of the supplier of that item is entered;  
+>- **Notes**: this section allows for any notes related to the specified supplier to be entered.
 
 ## 14. **Images**
 
