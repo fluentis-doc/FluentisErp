@@ -18,7 +18,8 @@ After selecting one or more supplier orders, it is possible to view unfulfilled 
 The main form consists of the following tabs:
 
 - **Create delivery note**
-After selecting the supplier order, through the *Create delivery note* button, you can open the form on the *Create Purchase Delivery Note* tab, where the focus will be placed directly on the "Delivery Note" field to enter the document number first.
+After selecting the supplier order, through the *Create delivery note* button, you can open the form on the *Create Purchase Delivery Note* tab, where the focus will be placed directly on the **Delivery Note** field to enter the document number first.
+As the [Delivery Note Type](/docs/configurations/tables/purchase/purchase-delivery-notes-type) to be used, the one indicated in the [Purchase Order Type](/docs/configurations/tables/purchase/purchase-orders-type/) of the used order will be proposed. If not indicated, the first [Delivery Note Type](/docs/configurations/tables/purchase/purchase-delivery-notes-type) present in the table will be proposed, and the user will be able to modify it manually.
 Additionally, information related to the first item on the order will be displayed, along with the header information of the order itself.
 
 > **Warehouse**: indicates the warehouse where movements will be made;          
@@ -37,6 +38,11 @@ Additionally, information related to the first item on the order will be display
 > **Quantity**: indicates the quantity to be loaded in the warehouse;    
 > **Propose Location**: indicates the proposed location;              
 > **Location**: allows entering a location different from the proposed one.
+
+During the creation of the DDT, the warehouse and the reason will be proposed as follows:
+- If the warehouse indicated in the purchase order is one of the warehouses present in the [Load/Unload Parameters for User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) for that user, the procedure will propose it.          
+- If the warehouse indicated in the purchase order is not one of the warehouses present in the [Load/Unload Parameters for User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) for that user, the procedure will leave both the warehouse field and the warehouse reason field empty. In this case, the user must enter them manually to proceed, and when they try to enter them, the procedure shows a confirmation message before proceeding: if they click YES, they can enter one of the warehouses present in the [Load/Unload Parameters for User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) for that user; otherwise, if they click NO, the warehouse and warehouse type fields remain empty.      
+- If the warehouse is not specified in the purchase order and there is only one warehouse in the [Load/Unload Parameters for User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) for that user, the procedure will automatically propose that warehouse and the related reason; whereas, if there are multiple warehouses in the [Load/Unload Parameters for User](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) for that user, the procedure will leave both the warehouse field and the reason field empty, and the user will be able to choose from those present in the parameters without the need to show any message.
 
 Through the **Input code** field (using a barcode reader), it is possible to enter data related to the lot, location, the recorded quantity, and the item in case you want to load a different one than what is proposed, but still present in the previously selected orders.       
 After entering data related to the current item, they can be confirmed via the **Confirm** button.     
@@ -105,3 +111,11 @@ In this case, the operator can also recall the previously confirmed row and reop
 After completing the modifications, pressing the close button will create the purchase Delivery Note with the corresponding warehouse movements.      
 
 In this case, the **Load/Unload Parameters** are the same as those seen in the previous cases.
+
+## **Receiving Goods with Alternative Units of Measure**
+
+The management of the alternative unit of measure is enabled if the **Default WMS** flag present in the [alternative UM tab of the item registry](/docs/erp-home/registers/items/create-new-item#23-um-alternativa) is active.        
+In that case, in the receiving form, the fields for the alternative unit of measure and quantity are also displayed, where the conversion factor (CF) used is calculated by dividing the management quantity (UM Gest) present in the supplier order by the alternative quantity (UM Alt) (if it coincides with the one that has the default WMS flag) always present in the supplier order: **CF = UM Gest / UM Alt**          
+Therefore, within the form, when the alternative quantity is modified, the management quantity will be calculated by multiplying the alternative quantity by the conversion factor calculated previously; while, if the management quantity is modified, the alternative quantity will be calculated by dividing the management quantity by the conversion factor.
+
+In this case, the **Loading/Unloading Parameters** are the same as those seen in the previous cases.
