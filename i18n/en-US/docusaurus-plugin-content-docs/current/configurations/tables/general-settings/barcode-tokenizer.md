@@ -55,7 +55,7 @@ Example: Lot-MOB-ART-123
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
 | Lot | Lot | - | FSItemClass | Code | 3 | - | 10 | FSBatchRegister |
 | Lot | Lot | - | FSItem | Code | 50 | - | 20 | FSBatchRegister |
-| Lot | Lot | - | FSLotRegister | Code | 05 | - | 30 | FSBatchRegister |
+| Lot | Lot | - | FSBatchRegister | Code | 05 | - | 30 | FSBatchRegister |
 
 Example: MesPop-10824
 
