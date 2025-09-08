@@ -1,12 +1,12 @@
 ---
-title: Norme e leggi
+title: Norme i Zakoni
 sidebar_position: 2
 ---
 
-E' una tabella in cui indicare liberamente **Norme e leggi**; è composta da:
+To je tablica u koju se slobodno unose **Norme i zakoni**; sastoji se od:  
 
-**Tipo**: indica la tipologia ed apre la tabella Tipi norme e leggi; esso è seguito da una libera **Descrizione**;
+**Vrsta**: označava tip (vrstu) i otvara tablicu Tipovi normi i zakona; zatim slijedi slobodan **Opis**;  
 
-**Eliminabile**: indica se la tipologia è eliminabile, in base al flag inserito o meno nella tabella Tipi norme e leggi;
+**Obnova**: označava može li se tip izbrisati, ovisno o postavljenom zastavici u tablici Tipovi propisa i zakona;  
 
-**Note**: contiene eventuali note o tipicamente un estratto della norma/legge.
+**Napomene**: sadrži eventualne bilješke ili obično isječak propisa/zakona.  

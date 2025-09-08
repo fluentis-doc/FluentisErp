@@ -1900,7 +1900,7 @@
     "description": "The label for category Interventi Pianificati in sidebar projectManagement"
   },
   "sidebar.quality.category.Documenti di origine esterna": {
-    "message": "Documenti di origine esterna",
+    "message": "Dokumenti vanjskog podrijetla",
     "description": "The label for category Documenti di origine esterna in sidebar quality"
   },
   "sidebar.quality.category.Documenti di origine interna": {
