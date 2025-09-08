@@ -1,5 +1,5 @@
 ---
-title: Documento di origine esterna
+title: Dokumenti vanjskog podrijetla
 sidebar_position: 2
 ---
 
