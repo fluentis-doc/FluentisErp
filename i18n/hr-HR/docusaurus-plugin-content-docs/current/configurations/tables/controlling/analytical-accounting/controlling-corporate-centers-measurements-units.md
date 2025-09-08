@@ -1,47 +1,34 @@
 ---
-title: Unità di misura dei centri aziendali per il controlling
+title: Mjerne jedinice poslovnih centara za kontrolu
 sidebar_position: 8
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Unità di misura dei centri aziendali per il controlling**
+Formu možete pronaći na putanji: **Tablice > Kontroling > Analitičko knjigovodstvo > Mjerne jedinice poslovnih centara za kontrolu**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+U ovoj tablici možemo, primjerice, odrediti da u području ANALIZA *REALIZACIJA*, stroj *X* čita podatke o proizvodnji, za direktne troškove i troškove po narudžbi, na temelju specificirane jedinice mjere, za svaki proizvodni centar, u vezi s: 
 
-:::
+-	VRIJEME PODEŠAVANJA
+-	RADNO VRIJEME 
+-	VRIJEME STROJA 
 
----
+Sve tri mjere nisu obavezne, već se, ovisno o centru, može definirati jedna, dvije ili sve tri dimenzije.
 
-In questa tabella possiamo specificare, ad esempio, che nell’ area di ANALISI *CONSUNTIVO*, il macchinario *X*, legge i dati di produzione, per costi diretti e costi di commessa, sulla base dell’ unità di misura specificata, per ogni centro aziendale, relativamente a: 
+Također postoji i pokazatelj valjanosti pravila. 
 
--	IL TEMPO DI RI-ATTREZZAGGIO
--	IL TEMPO UOMO 
--	IL TEMPO MACCHINA 
+Za drugo područje analize, primjerice *BUDŽET*, moguće je primijeniti druga pravila i druge datume valjanosti.
 
+#### Polja tablice
 
-Le tre misure non sono tutte obbligatorie ma, a seconda del centro, si valorizzerà una, due o tre dimensioni.
+**PODRUČJE / OPIS**: Potrebno za definiranje na koje područje analize se odnose logike koje se kodiraju.
 
-E' presente anche un' indicazione di validità della regola. 
+**PROIZVODNI CENTAR / OPIS**: Potrebno za definiranje na koji proizvodni centar se odnose logike koje se kodiraju.
 
-Per un’ area di analisi diversa, ad esempio *BUDGET*, è possibile ragionare con altre regole ed altre date di validità.
+**VRIJEME PODEŠAVANJA**: Padajući izbornik koji omogućava odabir jedinice mjere. Polje je povezano s Općom tablicom Jedinica mjere.
 
-:::note Campi tabella
+**RADNO VRIJEME**: Padajući izbornik koji omogućava odabir jedinice mjere. Polje je povezano s Općom tablicom Jedinica mjere.
 
-**AREA / DESCRIZIONE:** Necessari per  definire a quale area di analisi le varie logiche che si stanno codificando si riferiranno
+**VRIJEME STROJA**: Padajući izbornik koji omogućava odabir jedinice mjere. Polje je povezano s Općom tablicom Jedinica mjere.
 
-**CENTRO AZIENDALE / DESCRIZIONE:** Necessari per definire a quale centro aziendale le varie logiche che si stanno codificando si riferiranno
+**OD DATUMA / DO DATUMA**: Raspon datuma valjanosti pravila koje se postavlja.
 
-**TEMPO DI RI-ATTREZZAGGIO:** Combo box che permette di selezionare l'unità di misura da utilizzare. Il campo è collegato alla Tabella generale Unità di misura
-
-**TEMPO UOMO:** Combo box che permette di selezionare l'unità di misura da utilizzare. Il campo è collegato alla Tabella generale Unità di misura
-
-**TEMPO MACCHINA:** Combo box che permette di selezionare l'unità di misura da utilizzare. Il campo è collegato alla Tabella generale Unità di misura
-
-**DA DATA / A DATA:** range di date di validità della regola che si sta impostando
-
-**FLAG Usa Riattrezzaggio / Tempo Uomo / Tempo macchina in calcolo produttività:** Agiscono come degli "interruttori" per abilitare o disabilitare la logica impostata nella riga corrispondente ai fini del calcolo di produttività del centro.
-
-:::
-
----
+**FLAG Koristi Podešavanje / Radno vrijeme / Vrijeme stroja u obračunu produktivnosti**: Djeluju kao “prekidači” za omogućavanje ili onemogućavanje logike definirane u odgovarajućem retku u svrhu obračuna produktivnosti centra.
