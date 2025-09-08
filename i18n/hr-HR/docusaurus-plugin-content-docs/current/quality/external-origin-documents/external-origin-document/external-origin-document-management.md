@@ -3,65 +3,65 @@ title: Dokumenti vanjskog podrijetla
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Documenti di origine esterna > Nuovo Documento di origine esterna** oppure è possibile eseguirla dalla **Ricerca Documenti di origine esterna**.   
+Upravljanje se nalazi na putanji **Kvaliteta > Dokumenti vanjskog podrijetla > Novi dokument vanjskog podrijetla** ili se može pokrenuti iz **Pretraživanja vanjskih izvornih dokumenata**.  
 
 
-:::important A cosa serve
-La gestione dei documenti di origine esterna permette: la catalogazione, la gestione delle edizioni/revisioni e la loro distribuzione (sia in formato cartaceo che elettronico) alle funzioni aziendali che sono interessate nel visionare tali documenti.   
+:::important Čemu služi
+Upravljanje dokumentima vanjskog podrijetla (iz vanjskih izvora) omogućuje katalogizaciju, upravljanje izdanjima/revizijama i njihovu distribuciju (i u papirnatom i u elektroničkom obliku) odjelima tvrtke zainteresiranima za pregled takvih dokumenata.  
 
 
-Elenchiamo alcuni esempi di documenti di origine esterna che possono essere catalogati:   
-> *Manuali d'uso e manutenzione macchinari e impianti*   
-> *Normative*   
-> *Leggi*   
-> *Rivista specifiche*   
+Evo nekoliko primjera dokumenata vanjskog podrijetla koji se mogu katalogizirati:
+> *Priručnici za uporabu i održavanje strojeva i opreme*
+> *Propisi*
+> *Zakoni*
+> *Časopis sa specifikacijama*
 
-Le informazioni di dove siano depositati gli originali e la possibilità di allegare loro copie elettroniche, permette una loro immediata rintracciabilità e consultazione con un semplice click del mouse.
+Informacije o tome gdje su pohranjeni originali i mogućnost prilaganja elektroničkih kopija omogućuju njihovu trenutnu sljedivost i konzultaciju jednostavnim klikom miša.
 
-A standard sono disponibili le reportistiche di:   
-> **Documento interno**: anteprima del documento allegato nel tabulatore *Allegato*.   
-> **Documenti allegati al documentale**: anteprima dei documenti allegati alla *Gestione Documentale*.   
+Sljedeća izvješća dostupna su standardno:
+> **Dokumenti u privitku**: Pregled priloženog dokumenta u kartici *Prilozi*.
+> **Dokumenti priloženi dokumentu**: Pregled dokumenata priloženih sustavu *Upravljanje dokumentima*.  
 :::
 
 
-## Pulsanti di comando
+## Kontrolne tipke
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Spremi
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Documento di origine esterna* visualizzato.   
-
-
-### ![](/img/neutral/common/duplicate.png) Duplica
-
-E' possibile duplicare il *Documento* visualizzato in un nuovo *Documento*. E' sufficiente premere il pulsante **Duplica**.   
-Viene visualizzata una richiesta di:
-> **Categoria**: è la *Categoria documento di origine esterna* del nuovo *Documento* (dato obbligatorio).   
-> **Codice**: è il Codice del nuovo *Documento* (dato obbligatorio).   
-> **Edizione/Revisione**: sono l'Edizione e la Revisione del nuovo *Documento*.   
-> **Titolo**: è il *Titolo* del *Documento* (dato obbligatorio).   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Documenti di origine esterna* viene visualizzato.
+Pritiskom na ovu tipku spremaju se sve promijenjene informacije prikazanog *dokumenta vanjskog podrijetla*.   
 
 
-### ![](/img/neutral/common/bill.png) Distribuzione
+### ![](/img/neutral/common/duplicate.png) Dupliciraj
 
-Il pulsante avvia la procedura di *Distribuzione* del *Documento*.   
-Viene visualizzata una richiesta di filtro di chi, tra i destinatari presenti nella *Lista di distribuzione*, riceverà copia del *Documento*:   
-> **Tipo:**   
->> **Cartacei**: distribuzione a chi richiede copia cartacea;   
->> **Elettronici**: distribuzione a chi richiede email;   
+Prikazani *Dokument* može se duplicirati u novi *Dokument*. Jednostavno se pritisne tipka **Dupliciraj**.  
+Pojavit će se upit:
+> **Kategorija**: ovo je *Vanjska kategorija dokumenta* novog *Dokumenta* (obavezno).
+> **Šifra**: ovo je šifra novog *Dokumenta* (obavezno).
+> **Izdanje/Revizija**: ovo je Izdanje i revizija novog *Dokumenta*.
+> **Naslov**: ovo je *Naslov* *Dokumenta* (obavezno).   
+
+Nakon toga se pritisne tipka **OK** ili tipka **Poništi** ako se želi nastaviti ili odustati od aktivnosti dupliciranja.  
+Po završetku obrade novi *Dokument vanjskog podrijetla* se prikaže.  
+
+
+### ![](/img/neutral/common/bill.png) Distribucija
+
+Tipka pokreće postupak *Distribucije* *Dokumenta*.  
+Pojavi se zahtjev za filtriranje onih koji će, među primateljima navedenima na *Listi distribucije*, primiti kopiju *Dokumenta*:     
+> **Tip:**   
+>> **Tiskani**: distribucija onima koji traže tiskanu kopiju;   
+>> **Elektronički**: distribucija onima koji traže email;      
 >
-> **Stato:**   
->> **Già consegnati**: distribuzione a chi ha già ricevuto il documento;   
->> **Ancora da consegnare**: distribuzione a chi non ha ancora ricevuto il documento;   
+> **Status:**   
+>> **Već isporučeni**: distribucija onima koji su već primili dokument;   
+>> **Još za isporučiti**: distribucija onima koji još nisu primili dokument;   
 >
-> **Destinatario:**
->> **Interni**: distribuzione al solo personale interno (*Funzioni aziendali* e/o *Dipendenti*);   
->> **Clienti/Fornitori**: distribuzione a *Clienti/Fornitori*.
+> **Primatelj:**  
+>> **Interni**: distribucija samo internom osoblju (*Poslovne funkcije* i/ili *Zaposlenici*);  
+>> **Kupci/Dobavljači**: distribucija *Kupcima/Dobavljačima*.  
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di distribuzione o meno.   
+Nakon toga se pritisne tipka **OK** ili tipka **Poništi** ako se želi nastaviti ili odustati od aktivnosti distribucije.  
 
 
 ## Gestione dati
