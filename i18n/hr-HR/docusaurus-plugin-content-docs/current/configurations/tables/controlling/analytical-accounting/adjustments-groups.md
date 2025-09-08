@@ -1,27 +1,22 @@
 ---
-title: Gruppi di conguaglio
+title: Grupe ravnoteže
 sidebar_position: 6
 ---
 
-:::note Percorso
-**Tabelle > Controlling > Contabilità analitica > Gruppi di conguaglio**
+Formu možete pronaći na putanji: **Tablice > Kontroling > Analitičko knjigovodstvo > Grupe ravnoteže**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
+:::tip Napomena
+Ova tablica je isključivo za upotrebu tvrtki koje su postavile *Kontroling*
 :::
 
----
-All'interno della presente tabella è possibile codificare dei raggruppamenti di conti utili per la gestione della reportistica specifica per il controlling.
+Unutar ove tablice moguće je kodirati grupiranja računa koja su korisna za upravljanje izvještavanjem specifičnim za kcontroling.
+Neki računi se u početku ne koriste izravno u kontrolingu, već samo neizravno i naknadno: grupe usklađenja služe za identificiranje logičkih grupa kojima se dodjeljuju pojedini troškovi za usklađenja koja ćemo provoditi tijekom godine ili tek na kraju poslovne godine, kako bi se mogli prikladno grupirati u obrascu **Kontrolne vrijednosti** i provjeriti njihova usklađenost s knjigovodstvom na kraju razdoblja.
 
-![](/img/it-it/configurations/tables/controlling/analytical-accounting/adjustments-groups/adjustment-groups.png)
+#### Specifična polja: 
+- **ŠIFRA**
+- **OPIS**
+- **VRSTA SALDA**: ovo je od ključne važnosti za podračune početnih/završnih zaliha, za koje je obavezno definirati dvije specifične kategorije.
 
-Alcuni conti contabili non vengono utilizzati in prima battuta, direttamente, dal controlling ma soltanto indirettamente ed a posteriori; 
-
-ESEMPIO: il costo dell’ amministratore, oppure il compenso del collegio sindacale, arriva sempre dopo aver fatto le analisi dei singoli mesi, riferendosi magari all'esercizio precedente. 
-
-I primi mesi non abbiamo dunque un costo per valorizzare il centro aziendale "direzione" (esempio). Stessa cosa per gli ammortamenti.  
-
-I gruppi di conguaglio servono quindi per identificare dei gruppi logici a cui assegnare i singoli costi per i conguagli che faremo infra-annualmente oppure solo a fine esercizio. 
-
-Ci serve per capire, quando faremo le <u>verifica di quadratura</u>, se i gruppi di conguaglio sono tutti quadrati o meno. 
+:::tip Napomena
+Posebno, procedura **Zaliha Računovodstva** za Kontroling unosi u izvanračunske zapise područja početne i završne zalihe za svaki pojedini period (mjesec) koji se obrađuje tijekom godine. Kada se potom u modulu Izvještavanja zatraže iznosi početnih i završnih zaliha za prvo polugodište godine YYYY, **FluentisERP** **mora** znati za koje račune čitati samo podatke početnog razdoblja u siječnju, a za koje samo podatke završnog razdoblja u lipnju, inače bi se dobile sume 6 mjeseci početnih i 6 mjeseci završnih zaliha, što bi potpuno kompromitiralo obradu!
+:::
