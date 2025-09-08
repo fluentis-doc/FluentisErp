@@ -34,6 +34,8 @@ The parameters of the Asset module can be found under **Parameters > Administrat
 
 - **Depreciation accounting template**: field to enter the default reason to propose in the depreciation accounting form, also for controlling purposes.
 
+- **Use non-deductible account**: this flag allows you to predefine the value of the same parameter within the amortization accounting forms or amortization recovery in interim closures. If activated, the same flag will be proposed as active within the mentioned forms, and the non-deductible part of the amortization will be automatically accounted for in the specific account that has been defined within the table of [**asset categories**](/docs/configurations/tables/finance/fixed-asset-category#seconda-tabella).
+
 - **Single recording in depreciation accounting**: with this check, each asset record will result in a single accounting registration of depreciation.
 
 - **Accounting center enable**: this flag enables the reading of the cost center entered in the **Detail** tab of the asset record, which refers to the depreciation quota calculated by accounting logic, and makes the alternative management of technical depreciation handled in the appropriate tab (Depreciation for controlling) non-mandatory.

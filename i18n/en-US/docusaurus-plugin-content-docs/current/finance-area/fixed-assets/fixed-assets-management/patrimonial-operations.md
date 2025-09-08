@@ -83,6 +83,16 @@ When saving the row with the *Accounted* flag, Fluentis will ask if you want to 
 
 The fiscal depreciation flag provides for the fiscal management of the depreciation row: it is proposed based on the same flag provided in the asset category. In some cases, it can be used manually to record in the asset book the rotation of early depreciations used in the ordinary financial statements to manage fiscal depreciations only for tax calculation. Fiscal management, on the other hand, occurs through the valuation of the fields with the deductible/non-deductible amounts of the depreciation, automatically valued based on the percentage of deductibility associated with the asset or its category.
 
+### Non-Deductible Depreciation
+
+There are two columns for calculating the *deductible* and *non-deductible* portions of amortization.
+
+The percentage of non-deductibility of amortization is defined through the field ***Deductibility Type*** within the [**asset categories**](/docs/configurations/tables/finance/fixed-asset-category#seconda-tabella).
+
+The **Account / Detail account / Non-deductible Description** is automatically populated if the accounting account to be used automatically has been defined within the asset category in conjunction with the Deductibility Type.
+
+If the flag **Use non-deductible account** is activated in the automatic amortization accounting procedures, the portion of amortization that is not tax-deductible will be automatically accounted for in the specific account.
+
 In the last section, there is a detailed valuation by cost center of the depreciations selected in the second grid.
 
 ### Loading a Pre-existing Fixed Asset 

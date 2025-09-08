@@ -9,7 +9,20 @@ This procedure allows for executing/restoring the creation of the recipient comp
 
 ## Commission Liquidations 
 
-In this tab, the user has the option to search for liquidations that have not yet been valued in a recipient compensation. After selecting the various lines, pressing the *Settlements calculation* button creates the recipient compensation.
+In this tab, the user has the option to search for settlements that have not yet been valued in a recipient's compensation.
+
+The available filters to facilitate the search are:
+- Detail account agent 
+- Year / Number / Date of the settlement (from - to) 
+- Description assigned during the creation of the agent settlement 
+
+:::note[Recalculate Enasarco Flag]
+With the flag active, a recalculation of the values related to Enasarco contributions will always be performed; therefore, if within the commission settlement (when entering edit mode after creation) the radio button *Manual Calculation* has been set (in order to manually force the data calculated by the system), if you do not want the Enasarco data to be **still** recalculated and reset in the compensation, you must deactivate the flag before creating the compensation.
+
+The flag **DOES NOT** affect the recalculation of data related to the withholding tax (if present in the commission settlement).
+:::
+
+After selecting the various rows, by pressing the *Calculate settlements* button, the compensation for the recipient is created.
 
 
 #### Specific Buttons

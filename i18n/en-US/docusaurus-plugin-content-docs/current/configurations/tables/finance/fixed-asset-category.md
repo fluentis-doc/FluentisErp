@@ -19,9 +19,9 @@ Within this table, the categories of assets managed within the company are encod
 
 **Account**: the balance sheet account for the fixed asset.
 
-**Detail account**: the balance sheet subaccount for the fixed asset.
+**Detail account**: the balance sheet detail account for the fixed asset.
 
-**Description**: description of the balance sheet subaccount for the fixed asset.
+**Description**: description of the balance sheet detail account for the fixed asset.
 
 **Mat/Immaterial**: indication of the type, Material or Immaterial, of the asset.
 
@@ -51,15 +51,15 @@ The second section is dedicated to setting up the depreciation details applicabl
 
 **Account**: cost account on which to record periodic depreciation.
 
-**Detail account**: cost subaccount on which to record periodic depreciation.
+**Detail account**: cost detail account on which to record periodic depreciation.
 
-**Account description**: description of the cost subaccount.
+**Account description**: description of the cost detail account.
 
 **Fund account**: fund account to which periodic depreciation is allocated.
 
-**Fund det.acc.**: fund subaccount to allocate periodic depreciation, which could also be the same active balance sheet value to directly write off the amount.
+**Fund det.acc.**: fund detail account to allocate periodic depreciation, which could also be the same active balance sheet value to directly write off the amount.
 
-**Account description**: description of the fund subaccount.
+**Account description**: description of the fund detail account.
 
 **Exclude**: the flag allows excluding the selected depreciation type from the automatic depreciation calculation.
 
@@ -74,6 +74,8 @@ The second section is dedicated to setting up the depreciation details applicabl
 **Deductibility Type**: allows assigning a deductibility code for tax purposes to the type of depreciation.
 
 **Deductibility Description**: description of the deductibility type.
+
+**Account / Detail account / Non-Deductible Description**: in this field, it is possible to enter the accounting detail account on which to automatically account for the non-deductible portion of the depreciation quota. The account is reported within the asset sheet corresponding to the row related to the depreciation quota. In order for it to be moved, both during the accounting of the annual depreciation and during the recovery of depreciation in the interim account closures, it is necessary to activate the appropriate flag. The flag can be predefined within the [**asset parameters**](/docs/configurations/parameters/finance/fixed-assets-parameters).
 
 #### Specific Buttons
 
