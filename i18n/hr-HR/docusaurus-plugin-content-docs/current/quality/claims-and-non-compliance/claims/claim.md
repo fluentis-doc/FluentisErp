@@ -7,7 +7,7 @@ sidebar_position: 2
 Upravljanje reklamacijama se može pronaći na putanji **Kvaliteta > Reklamacije > Nova reklamacija** ili se to može učiniti putem **Pretraživanja reklamacija**.  
  
 
-:::važno Čemu služi?
+:::improtant Čemu služi?
 Reklamacije se koriste za evidentiranje nezadovoljstva uslugom ili proizvodom, što tvrtki omogućuje prepoznavanje i ispravljanje bilo kakvih problema. One su alat za poboljšanje kvalitete i održavanje dobrih odnosa s kupcima te bi trebale:      
 - utvrditi uzroke neusklađenosti;
 - utvrditi postoje li slične anomalije ili se mogu pojaviti;
