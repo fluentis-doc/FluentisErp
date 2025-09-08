@@ -70,7 +70,7 @@ Upravljane informacije uključuju:
 > **Podaci o kupnji**: proširivi odjeljak u kojem je moguće unijeti:   
 >
 >> **Dobavljač**: naziv *dobavljača* pri kupnji.    
->> **Proizvođač**: Kontakt **proizvođača* instrumenta.   
+>> **Proizvođač**: Kontakt *proizvođača* instrumenta.   
 >> **Datum kupnje**: datum kupnje/nabave.   
 >> **Datum isteka jamstva**: datum isteka jamstva pri kupnji.   
 >> **Dobavljač održavanja/servisa**: naziv uobičajenog *dobavljača* za održavanje/servis.   
@@ -85,7 +85,7 @@ Upravljane informacije uključuju:
 >> **Nije podložno kalibraciji**: označava da *mjerni instrument* nije podložan kalibraciji.   
 >> U tom slučaju sve ostale informacije u ovom odjeljku su onemogućene.   
 >> **Interna kalibracija**: označava da *mjerni instrument* kalibrira osoba unutar tvrtke.   
->> **Period kalibracije:**: razdoblje (izraženo u povezanoj *mjernoj jedinici*) kalibracije mjernog instrumenta.    
+>> **Period kalibracije**: razdoblje (izraženo u povezanoj *mjernoj jedinici*) kalibracije mjernog instrumenta.    
 >> **Mjerna jedinica**: *mjerna jedinica* za razdoblje kalibracije.   
 >> **Posljednja kalibracija**: datum posljednje provedene *kalibracije*; vrijednost se automatski postavlja prilikom dodjeljivanja *rezultata* posljednje *provedene kalibracije*, ali može se unijeti i ručno.   
 >> **Rezultat**: *rezultat* posljednje provedene *kalibracije*; vrijednost se automatski postavlja prilikom dodjeljivanja *rezultata* posljednje *kalibracije*, ali može se unijeti i ručno.   
