@@ -1,67 +1,67 @@
 ---
-title: Ricerca Documenti di origine interna
+title: Pretraga dokumenata unutarnjeg podrijetla
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Documenti di origine interna > Documenti di origine interna**.   
+Filtar se nalazi na putanji **Kvaliteta > Dokumenti unutarnjeg podrijetla > Dokumenti unutarnjeg podrijetla**. 
 
-Il filtro dati consente di inserire nuovi *Documenti di origine interna* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+Filtar podataka omogućuje umetanje novih *dokumenata unutarnjeg podrijetla* ili pretraživanje postojećih kako bi se pregledali, uredili ili izbrisali.   
 
-### ![](/img/neutral/common/search.png) Ricerca Documenti di origine interna
+### ![](/img/neutral/common/search.png) Pretraga dokumenata unutarnjeg podrijetla
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što postavite sve željene filtere, jednostavno se klikne tipka **Traži** da bi se vidjeli rezultati u prikazu.   
 
-### ![](/img/neutral/common/new.png) Inserimento Documenti di origine interna
+### ![](/img/neutral/common/new.png) Unos dokumenata unutarnjeg podrijetla
 
-Per poter inserire nuovi *Documenti di origine interna* è necessario premere il pulsante **Nuovo**.   
+Za umetanje novih *dokumenata unutarnjeg podrijetla* potrebno je pritisnuti tipku **Novo**.  
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Documenti di origine interna
+### ![](/img/neutral/common/edit.png) Izmijeni ili ![](/img/neutral/common/view.png) Pregledaj dokumente unutarnjeg podrijetla
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na redak od interesa, odabirom jednog ili više redaka, pritisnuti tipke **Uredi** ili **Prikaži**.   
 
-*Pulsanti specifici*: 
+*Specifične tipke*: 
     
-### ![](/img/neutral/common/duplicate.png) Duplica Documento di origine interna
+### ![](/img/neutral/common/duplicate.png) Dupliciraj dokumente unutarnjeg podrijetla
 
-Il pulsante è abilitato solamente per i componenti delle *Funzioni aziendali* di *verifica/approvazione* e *redazione/emissione*.
-Per poter duplicare un *Documento di origine interna* esistente in un nuovo *Documento* è necessario cliccare nella griglia sul *Documento* da cui si desidera duplicare e premere il pulsante **Duplica**. Si può duplicare un solo *Documento* alla volta. Verrà visualizzata una richiesta di:   
-> **Categoria**: è il *Codice categoria documento di origine interna* del nuovo *Documento* (dato obbligatorio).   
-> **Codice**: è il *Codice* del nuovo *Documento* (dato obbligatorio).   
-> **Titolo**: è il *Titolo* del nuovo *Documento* (dato obbligatorio).   
+Tipka je omogućena samo za članove *Poslovnih funkcija* zaduženih za *provjeru/odobravanje* i *izradu/izdavanje*.  
+Kako bi se duplicirao postojeći *Dokument unutarnjeg podrijetla* u novi *Dokument*, potrebno je u prikazu rezultata kliknuti na *Dokument* koji se želi duplicirati i pritisnuti tipku **Dupliciraj**. Moguće je duplicirati samo jedan *Dokument* istovremeno. Prikazat će se zahtjev za unos:   
+> **Kategorija**: *Šifra kategorije dokumenta unutarnjeg podrijetla* novog *Dokumenta* (obavezni podatak).  
+> **Šifra**: *Šifra* novog *Dokumenta* (obavezni podatak).  
+> **Naslov**: *Naslov* novog *Dokumenta* (obavezni podatak).    
 
-*Categoria* e *Titolo* sono proposti dal documento di origine; il *Codice* viene proposto se, alla *Categoria*, è associata una *Codifica automatica*.   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Il nuovo *Documento di origine interna* creato avrà *Edizione* e *Revisione* pari a *Zero* e lo stato di *In creazione*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.
+*Kategorija* i *Naslov* predlažu se iz izvornog dokumenta; *Šifra* se predlaže ako je uz *Kategoriju* povezana *Automatska kodifikacija*.  
+Nakon toga se pritisne tipka **OK** ili tipku **Otkaži** ako se želi nastaviti ili odustati od aktivnosti dupliciranja.  
+Novi kreirani *Dokument unutarnjeg podrijetla* imat će *Izdanje* i *Reviziju* postavljene na *Nula* te status *U izradi*.  
+Po završetku obrade novi *Dokument unutarnjeg podrijetla* se prikazuje.  
     
-### Crea nuova revisione Documento di origine interna
+### Kreiraj novu reviziju *Dokumenta unutarnjeg podrijetla*
 
-Per poter creare una nuova *Revisione* ad un *Documento di origine interna* esistente è necessario cliccare nella griglia sul *Documento* in stato di *Emesso* da cui si desidera duplicare e premere il pulsante **Crea nuova revisione**. Si può creare una nuova *Revisione* per un solo *Documento* alla volta. Verrà visualizzata una richiesta di:   
-> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione (dato obbligatorio).   
-> **Modifica su paragrafi**: un pro-memoria descrittivo sul riferimento al numero dei paragrafi variati.   
-> **Modifica su pagine**: un pro-memoria descrittivo sul riferimento al numero delle pagine variate.   
+Za kreiranje nove *Revizije* postojećeg *Dokumenta unutarnjeg podrijetla*, potrebno je u prikazu rezultata kliknuti na *Dokument* sa statusom *Izdano* koji se želi duplicirati i pritisnuti tipku **Kreiraj novu reviziju**. Moguće je kreirati novu *Reviziju* za samo jedan *Dokument* istovremeno. Prikazat će se zahtjev za unos:    
+> **Razlog revizije**: kratak opis razloga koji je doveo do revizije (obavezni podatak).  
+> **Promjena u odlomcima**: opisna bilješka koja se odnosi na broj izmijenjenih odlomaka.  
+> **Promjena na stranicama**: opisna bilješka koja se odnosi na broj izmijenjenih stranica.    
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Viene creato nuovo *Documento di origine interna*, con tutte le informazioni del *Documento* originale ma con indice di *Revisione* incrementato e lo stato di *In revisione*. Il *Documento* originale rimane in vigore con lo stato di *Emesso*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.
+Nakon toga se pritisne tipka **OK** ili tipka **Otkaži** ako se želi nastaviti ili odustati od aktivnosti kreiranja.  
+Stvara se novi *Dokument unutarnjeg podrijetla*, sa svim informacijama iz izvornog *Dokumenta*, ali s povećanim indeksom *Revizije* i statusom *U reviziji*. Izvorni *Dokument* ostaje na snazi sa statusom *Izdano*.  
+Po završetku obrade novi *Dokument unutarnjeg podrijetla* se prikazuje.  
     
-### Crea nuova edizione Documento di origine interna
+### Kreiraj novo *Izdanje* *Dokumenta unutarnjeg podrijetla*
 
-Per poter creare una nuova *Edizione* ad un *Documento di origine interna* esistente è necessario cliccare nella griglia sul *Documento* in stato di *Emesso* da cui si desidera duplicare e premere il pulsante **Crea nuova edizione**. Si può creare una nuova *Edizione* per un solo *Documento* alla volta. Verrà visualizzata una richiesta di:   
-> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione (dato obbligatorio).   
-> **Modifica su paragrafi**: un pro-memoria descrittivo sul riferimento al numero dei paragrafi variati.   
-> **Modifica su pagine**: un pro-memoria descrittivo sul riferimento al numero delle pagine variate.   
+Za kreiranje novog *Izdanja* postojećeg *Dokumenta unutarnjeg podrijetla*, potrebno je u prikazu rezultata kliknuti na *Dokument* sa statusom *Izdano* koji se želi duplicirati i pritisnuti tipku **Kreiraj novo izdanje**. Moguće je kreirati novo *Izdanje* za samo jedan *Dokument* istovremeno. Prikazat će se zahtjev za unos:  
+> **Razlog revizije**: kratak opis razloga koji je doveo do revizije (obavezni podatak).  
+> **Promjena u odlomcima**: opisna bilješka koja se odnosi na broj izmijenjenih odlomaka.  
+> **Promjena na stranicama**: opisna bilješka koja se odnosi na broj izmijenjenih stranica.    
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Viene creato nuovo *Documento di origine interna*, con tutte le informazioni del *Documento* originale ma con indice di *Edizione* incrementato e lo stato di *In revisione*. Il *Documento* originale rimane in vigore con lo stato di *Emesso*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.
+Nakon toga se pritisne tipka **OK** ili tipka **Otkaži** ako se želi nastaviti ili odustati od aktivnosti kreiranja.  
+Stvara se novi *Dokument unutarnjeg podrijetla*, sa svim informacijama iz izvornog *Dokumenta*, ali s povećanim indeksom *Izdanja* i statusom *U reviziji*. Izvorni *Dokument* ostaje na snazi sa statusom *Izdano*.  
+Po završetku obrade novi *Dokument unutarnjeg podrijetla* se prikazuje.  
     
-### Annulla Documento di origine interna
-Per poter annullare un *Documento di origine interna* esistente è necessario cliccare nella griglia sul *Documento* da cui si desidera eliminare e premere il pulsante **Annulla documento**. Si può *Annullare*" un solo *Documento* alla volta.   
-Premere successivamente il pulsante **Si** o il pulsante **No** se si desidera proseguire nell'attività di annullamento o meno.   
+### Poništi *Dokument unutarnjeg podrijetla*  
+Za poništavanje postojećeg *Dokumenta unutarnjeg podrijetla*, potrebno je u prikazu rezultata kliknuti na *Dokument* koji se želi ukloniti i pritisnuti tipku **Poništi dokument**. Moguće je poništiti samo jedan *Dokument* istovremeno.  
+Nakon toga se pritisne tipka **Da** ili tipka **Ne** ako se želi nastaviti ili odustati od aktivnosti poništavanja.   
     
-### Ripristina annullamento Documento di origine interna
-Per poter ripristinare un *Documento di origine interna* precedentemente *Annullato* è necessario cliccare nella griglia sul *Documento* in stato di *Annullato* da cui si desidera ripristinare e premere il pulsante **Ripristina annullamento**. Si può *Ripristinare*" un solo *Documento* alla volta.   
-Premere successivamente il pulsante **Si** o il pulsante **No** se si desidera proseguire nell'attività di ripristino o meno.   
+### Vrati poništavanje *Dokumenta unutarnjeg podrijetla*  
+Za vraćanje prethodno *Poništenog* *Dokumenta unutarnjeg podrijetla*, potrebno je u prikazu rezultata kliknuti na *Dokument* sa statusom *Poništeno* koji se želi vratiti i pritisnuti tipku **Vrati poništavanje**. Moguće je vratiti samo jedan *Dokument* istovremeno.  
+Nakon toga pritisnite tipku **Da** ili tipku **Ne** ako se želi nastaviti ili odustati od aktivnosti vraćanja.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).

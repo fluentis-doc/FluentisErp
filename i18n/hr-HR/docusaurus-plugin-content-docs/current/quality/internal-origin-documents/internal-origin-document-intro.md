@@ -1,40 +1,40 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
 
-## I documenti gestiti
+## Upravljani dokumenti
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/internal-origin-documents/internal-origin-document/internal-origin-document-management">Documenti di origine interna</Link>
-        <p>La gestione dei documenti di origine interna permette: la catalogazione, la gestione delle edizioni/revisioni e la loro distribuzione (sia in formato cartaceo che elettronico) alle funzioni aziendali che sono interessate nel visionare tali documenti.</p>
-        <p>Elenchiamo alcuni esempi di documenti di origine esterna che possono essere catalogati: *Manuale della qualità*, *Politica di gestione*, *Organigramma*, *Schema di processo*, *Istruzione operative*, *Scheda di servizio*, ecc.</p>
-        <p>Le informazioni di dove siano depositati gli originali e la possibilità di allegare loro copie elettroniche, permette una loro immediata rintracciabilità e consultazione con un semplice click del mouse.</p>
-        <p>A standard sono disponibili le reportistiche di: *Pagina di Guardia*, *Documento interno* e *Documenti allegati al documentale*.</p>
+###     <Link to="/docs/quality/internal-origin-documents/internal-origin-document/internal-origin-document-management">Dokumenti unutarnjeg podrijetla</Link>
+        <p>Upravljanje dokumentima unutarnjeg podrijetla omogućava: katalogizaciju, upravljanje izdanjima/revizijama te njihovu distribuciju (bilo u papirnatom ili elektroničkom formatu) poslovnim funkcijama koje su zainteresirane za pregled takvih dokumenata.</p>  
+        <p>Neki primjeri dokumenata unutarnjeg podrijetla koji se mogu katalogizirati: *Priručnik kvalitete*, *Politika upravljanja*, *Organigram*, *Shema procesa*, *Operativne upute*, *Servisna kartica* itd.</p>  
+        <p>Informacije o mjestu gdje su pohranjeni originali i mogućnost dodavanja njihovih elektroničkih kopija omogućuju njihovu trenutnu dostupnost i pregled jednostavnim klikom miša.</p>  
+        <p>Kao standard dostupna su izvješća: *Naslovna stranica*, *Interni dokument* i *Dokumenti priloženi dokumentaciji*.</p>  
     </div>
 </div>
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/internal-origin-documents/check-list">Check-list</Link>
-        <p>Le *Check-list* sono un raggruppamento di domande/attività utilizzate per effettuare valutazioni a fornitori o audit interni.</p>
+###     <Link to="/docs/quality/internal-origin-documents/check-list">Kontrolne liste (Check-list)</Link>
+        <p>*Kontrolne liste* (Check-list) su skup pitanja/aktivnosti koje se koriste za provođenje procjena dobavljača ili internih audita.  </p>
     </div>
 </div>
 
 
-## Per iniziare ad utilizzare   
+## Za početak korištenja  
 
-i **Documenti di origine interna**:
-- devi definire una [*Categoria Documento di orgine interna*](/docs/configurations/tables/quality/documents/internal-document-category)   
-- devi inserire un nuovo [*Documento di orgine interna*](/docs/quality/internal-origin-documents/internal-origin-document/internal-origin-document-management)   
+  **Dokumenti unutarnjeg podrijetla**:
+- treba definirati jednu [*Kategoriju dokumenta unutarnjeg podrijetla*](/docs/configurations/tables/quality/documents/internal-document-category)   
+- morate se unijeti novi [*Dokument unutarnjeg podrijetla*](/docs/quality/internal-origin-documents/internal-origin-document/internal-origin-document-management)   
 
-le **Check-list**:
-- devi inserire una nuova [*Check-list*](/docs/quality/internal-origin-documents/check-list)   
+  **Kontrolne liste (Check-list)**:
+- morate se unijeti nova [*Kontrolne lista*](/docs/quality/internal-origin-documents/check-list)   
 
 
-## Collegamenti con altri moduli
-Le *Check-list* vengono utilizzate nelle [*Valutazioni iniziali e periodiche*](/docs/quality/vendor-rating/initial-vendor-rating) del modulo [*Qualificazione fornitore*](/docs/quality/vendor-rating/vendor-rating-intro) e nei dati contabili dei [*Fornitori*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)
+## Povezanost s drugim modulima
+*Kontrolne liste* se koriste u [*Početne i periodične procjene*](/docs/quality/vendor-rating/initial-vendor-rating) u modulu [*Kvalifikacija dobavljača*](/docs/quality/vendor-rating/vendor-rating-intro) i u računovodstvenim podacima [*Dobavljači*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro)
