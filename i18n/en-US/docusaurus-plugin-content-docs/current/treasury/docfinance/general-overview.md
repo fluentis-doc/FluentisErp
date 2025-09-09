@@ -23,4 +23,4 @@ DocFinance integrates well with other software such as Fluentis ERP, facilitatin
 The DocFinance module of Fluentis ERP is an integration that allows for the centralized and automated management of activities related to corporate treasury. This integration enables the use of the advanced features of DocFinance directly within the Fluentis ERP ecosystem, enhancing the management of cash flows, payments, and collections.
 
 **List of mandatory tables**: it is advisable to refer to the section Configuration > Tables > Treasury to identify the correct settings for DocFinance.  
-The forms are: [Nomenclature data](/docs/configurations/tables/treasury/docfinance-module-tables/registers) and [Deregulation](/docs/configurations/tables/treasury/docfinance-module-tables/derogability)
+The forms are: [**Registers**](/docs/configurations/tables/treasury/docfinance-module-tables/registers) and [**Deregulation**](/docs/configurations/tables/treasury/docfinance-module-tables/derogability)
