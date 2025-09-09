@@ -15,7 +15,7 @@ Forma se sastoji od područja filtra i područja rezultata. Nakon što su postav
 
 Za unos novih *Dokumenata vanjskog podrijetla* potrebno je pritisnuti tipku **Novi**.  
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Vizualizacija dokumenata vanjskog podrijetla
+### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) Vizualizacija dokumenata vanjskog podrijetla
 
 Za otvaranje upravljanja unutar prikaza rezultata potrebno je dvaput kliknuti na redak od interesa ili, nakon odabira jednog ili više redaka, pritisnuti tipke **Izmijeni** ili **Prikaži**.    
 
