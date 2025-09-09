@@ -1,40 +1,40 @@
-Viene visualizzata una richiesta/conferma dati per:   
+Prikazuje se zahtjev/potvrda podataka za:   
 
-> **Tipo azione**:  è il *Tipo azione* (dato obbligatorio).   
-> Viene proposto il *Tipo azione* indicata nei *Parametri azioni correttive*.   
-> **Numero/Anno**:: sono il *Numero* e l'*Anno* dell'*Azione correttiva* (dati obbligatori).   
-> La *Data* viene proposta pari alla data odierna, l'*Anno* e il *Numero* vengono proposti in base alla data odierna e alla *Numerazione* associata al *Tipo azione*.   
-> **Settore**: è il codice del *Settore*.   
-> Viene proposto il *Settore* indicato nei *Parametri azioni correttive*.   
-> **Area coinvolta**: è il codice dell'*Area* (dato obbligatorio).   
-> Viene proposta l'*Area* indicata nei *Parametri azioni correttive*.   
-> **Persona responsabile**: è il *Dipendente* responsabile dell'*Azione correttiva*.   
-> Viene proposta la *Persona responsabile* indicata nei *Parametri azioni correttive*.   
-> **Funzione responsabile**: è la *Funzione aziendale* responsabile dell'*Azione correttiva*.   
-> Viene proposta la *Funzione responsabile* indicata nei *Parametri azioni correttive*.   
-> **Riferimenti a documenti da cui è scaturita l'azione**: annotazioni libere su riferimenti a documenti da cui è scaturita l'*Azione correttiva*.   
+> **Vrsta akcije**: to je *Vrsta akcije* (obavezni podatak).  
+> Predlaže se *Vrsta akcije* navedena u *Parametrima korektivnih radnji*.  
+> **Broj/Godina**: to su *Broj* i *Godina* *Korektivne radnje* (obavezni podaci).  
+> *Datum* se predlaže jednak današnjem datumu, dok se *Godina* i *Broj* predlažu na temelju današnjeg datuma i *Numeracije* povezane s *Vrsta akcije*.  
+> **Sektor**: to je šifra *Sektora*.  
+> Predlaže se *Sektor* naveden u *Parametrima korektivnih radnji*.  
+> **Povezano područje**: to je šifra *Područja* (obavezni podatak).  
+> Predlaže se *Područje* navedeno u *Parametrima korektivnih radnji*.  
+> **Odgovorna osoba**: to je *Zaposlenik* odgovoran za *Korektivnu radnju*.  
+> Predlaže se *Odgovorna osoba* navedena u *Parametrima korektivnih radnji*.  
+> **Odgovorna funkcija**: to je *Poslovna funkcija* odgovorna za *Korektivnu radnju*.  
+> Predlaže se *Odgovorna funkcija* navedena u *Parametrima korektivnih radnji*.  
+> **Reference na dokumente iz kojih je proizašla radnja**: slobodne bilješke o referencama na dokumente iz kojih je proizašla *Korektivna radnja*.  
 >
-> **Descrizione della non conformità o situazione non conforme (anche potenziale)**: (dato obbligatorio) annotazioni libere sulle non conformità o situazioni non conformi (anche potenziali). Se la richiesta proviene da:   
-> - un *Reclamo* - l'informazione proposta è il *Motivo contestazione* presente nei dati di testata;   
-> - un *Difetto* di una *Non conformità* - l'informazione proposta è la descrizione del *Difetto riscontrato* della riga selezionata;   
-> - un *Programma* di un'*Azione correttiva* - l'informazione proposta è la *Descrizione della non conformità* presente nei dati di testata;   
+> **Opis nesukladnosti ili nesukladne situacije (čak i potencijalne)**: (obavezni podatak) slobodne bilješke o nesukladnostima ili nesukladnim situacijama (čak i potencijalnim). Ako zahtjev dolazi od:  
+> - *Reklamacije* – predložena informacija je *Razlog prigovora* prisutan u zaglavnim podacima;  
+> - *Nedostatka* iz *Nesukladnosti* – predložena informacija je opis *Uočenog nedostatka* iz odabrane stavke;  
+> - *Programa* iz *Korektivne radnje* – predložena informacija je *Opis nesukladnosti* prisutan u zaglavnim podacima;   
 > 
-> **Cause che hanno condotto alla non conformità, documentazione sull'eventuale indagine svolta**: annotazioni libere sulle cause che hanno condotto alla non conformità, documentazione sull'eventuale indagine svolta. Se la richiesta proviene da:   
-> - un *Difetto* di un *Reclamo* in modalità *Gestione difetti* - l'informazione proposta è la descrizione della *Causa* della riga selezionata;   
-> - un *Difetto* di una *Non conformità* - l'informazione proposta è la descrizione della *Causa effettiva*, se indicata, o della *Causa presunta* della riga selezionata;   
-> - un *Programma* di un'*Azione correttiva* - l'informazione proposta sono le *Cause* presenti nei dati di testata;   
+> **Uzroci koji su doveli do nesukladnosti, dokumentacija o eventualnom provedenom istraživanju**: slobodne bilješke o uzrocima koji su doveli do nesukladnosti, dokumentacija o eventualnom provedenom istraživanju. Ako zahtjev dolazi od:  
+> - *Nedostatka* iz *Reklamacije* u načinu rada *Upravljanje nedostacima* – predložena informacija je opis *Uzroka* iz odabrane stavke;  
+> - *Nedostatka* iz *Nesukladnosti* – predložena informacija je opis *Stvarnog uzroka*, ako je naveden, ili *Pretpostavljenog uzroka* iz odabrane stavke;  
+> - *Programa* iz *Korektivne radnje* – predložena informacija su *Uzroci* prisutni u zaglavnim podacima;   
 >
-> **Azione proposta**: annotazioni libere sull'argomento. Se la richiesta proviene da:   
-> - un *Difetto* di un *Reclamo* in modalità *Gestione difetti* - l'informazione proposta è la descrizione della *Soluzione proposta* presente nei *Dati Difetto* della riga selezionata;   
-> - un'*Azione di contenimento* di un *Reclamo* in modalità *8D - problem solving* - l'informazione proposta è l'*Azione di contenimento* della riga selezionata;   
-> - un'*Azione permanente* di un *Reclamo* in modalità *8D - problem solving* - l'informazione proposta è l'*Azione permanente* della riga selezionata;   
-> - un *Difetto* di una *Non conformità* - l'informazione proposta è la descrizione della *Soluzione proposta* presente nei *Dati Difetto* della riga selezionata;   
-> - un *Programma* di un'*Azione correttiva* - l'informazione proposta è l'*Azione proposta* presente nei *Programmi di Azione correttiva* della riga selezionata;   
+> **Predložena radnja**: slobodne bilješke na temu. Ako zahtjev dolazi od:  
+> - *Nedostatka* iz *Reklamacije* u načinu rada *Upravljanje nedostacima* – predložena informacija je opis *Predloženog rješenja* prisutnog u *Podacima o nedostatku* odabrane stavke;     
+> - *Radnje ograničavanja* iz *Reklamacije* u načinu rada *8D - rješavanje problema* – predložena informacija je *Radnja ograničavanja* iz odabrane stavke;  
+> - *Trajne radnje* iz *Reklamacije* u načinu rada *8D - rješavanje problema* – predložena informacija je *Trajna radnja* iz odabrane stavke;  
+> - *Nedostatka* iz *Nesukladnosti* – predložena informacija je opis *Predloženog rješenja* prisutnog u *Podacima o nedostatku* odabrane stavke;  
+> - *Programa* iz *Korektivne radnje* – predložena informacija je *Predložena radnja* prisutna u *Programima korektivnih radnji* odabrane stavke;    
 >
-> **Data prevista chiusura**: è la data che si presume che l'*Azione correttiva* venga completata.   
+> **Očekivani datum zatvaranja**: ovo je datum kada se očekuje dovršetak *korektivne radnje*. 
 
-Tutte le informazioni proposte dai documenti di origine sono modificabili.  
+Sve informacije navedene u izvornim dokumentima mogu se uređivati.  
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
+Zatim se pritisne gumb **U redu** ili gumb **Otkaži** ako se želi nastaviti s aktivnošću stvaranja ili ne.   
 
-Al termine dell'elaborazione l'*Azione correttiva* appena creata viene visualizzata per poterla completare con le informazioni necessarie e il riferimento (Tipo, Anno e Numero) viene aggiornato nella riga del documento di origine.   
+Nakon što je obrada dovršena, prikazuje se novokreirana *Korektivna radnja* kako bi se mogla dovršiti potrebnim informacijama, a referenca (vrsta, godina i broj) ažurira se u retku izvornog dokumenta.  
