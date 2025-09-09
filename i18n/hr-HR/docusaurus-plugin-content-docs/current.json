@@ -1904,7 +1904,7 @@
     "description": "The label for category Documenti di origine esterna in sidebar quality"
   },
   "sidebar.quality.category.Documenti di origine interna": {
-    "message": "Documenti di origine interna",
+    "message": "Dokumenti unutarnjeg podrijetla",
     "description": "The label for category Documenti di origine interna in sidebar quality"
   },
   "sidebar.quality.category.Controllo articolo": {
