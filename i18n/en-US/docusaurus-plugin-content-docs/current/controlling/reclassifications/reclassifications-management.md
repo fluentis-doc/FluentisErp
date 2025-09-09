@@ -5,6 +5,12 @@ sidebar_position: 4
 
 Reclassifications are essentially the application of the data from an *Mid-Year Accounts Closures* (or a *Consolidated*) to a [*Reclassification Pattern*](/docs/controlling/reclassifications/create-reclassification-model).
 
+:::danger[Warning]
+The reclassification executable from this form **DOES NOT consider the results of managerial accounting procedures**, such as Period Processing (to launch the cost drivers) or Data Recovery from Production, even if these procedures process the data generated with the interim closures.
+
+To perform complete reclassifications with the data from managerial accounting, it is necessary to use the form [**Reclassifications Comparison**](/docs/controlling/reclassifications/comparations) by activating the Data from controlling flag in the header of the new comparison.
+:::
+
 In the case of inserting a new reclassification, upon opening the form it is necessary to set the unique code of *5* alphanumeric characters, the description of the reclassification, and enter the reclassification model: at this point we will have the option to recall an *Mid-Year Accounts Closures* to use or to use the button to create a new *Mid-Year Accounts Closures*. In this second case, the creation screen will open, and once the procedure is completed, ***FluentisERP*** will automatically assign the new creation to the reclassification being processed.
 
 :::tip Note
