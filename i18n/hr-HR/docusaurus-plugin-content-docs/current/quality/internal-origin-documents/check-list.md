@@ -1,5 +1,5 @@
 ---
-title: Check list
+title: Kontrolna lista
 sidebar_position: 2
 ---
 
