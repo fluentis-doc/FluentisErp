@@ -1,278 +1,278 @@
 ---
-title: Documento di origine interna
+title: Dokumenti unutarnjeg podrijetla
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Documenti di origine interna > Nuovo Documento di origine interna** oppure è possibile eseguirla dalla **Ricerca Documenti di origine interna**.   
+Upravljanje se nalazi na putanji **Kvaliteta > Dokumenti unutarnjeg podrijetla > Novi dokument unutarnjeg podrijetla**, ili se može izvršiti iz **Pretraživanja dokumenata unutarnjeg podrijetla**.   
 
 
-:::important A cosa serve
-La gestione dei documenti di origine interna permette: la catalogazione, la gestione delle edizioni/revisioni e la loro distribuzione (sia in formato cartaceo che elettronico) alle funzioni aziendali che sono interessate nel visionare tali documenti.   
+:::important Čemu služi
+Upravljanje dokumentima unutarnjeg podrijetla omogućava: katalogizaciju, upravljanje izdanjima/revizijama te njihovu distribuciju (u papirnatom i elektroničkom formatu) poslovnim funkcijama koje su zainteresirane za pregled tih dokumenata.   
 
-Elenchiamo alcuni esempi di documenti di origine interna che possono essere catalogati:   
-> *Manuale della qualità*   
-> *Politica di gestione*   
-> *Organigramma*   
-> *Schema di processo*   
-> *Istruzione operative*   
-> *Scheda di servizio*   
+Nekoliko primjera dokumenata unutarnjeg podrijetla koji se mogu katalogizirati:  
+> *Priručnik kvalitete*  
+> *Politika upravljanja*  
+> *Organigram*  
+> *Shema procesa*  
+> *Operativne upute*  
+> *Servisna kartica*   
 
-Le informazioni di dove siano depositati gli originali e la possibilità di allegare loro copie elettroniche, permette una loro immediata rintracciabilità e consultazione con un semplice click del mouse.
+Informacije o mjestu pohrane originala i mogućnost priloženja njihovih elektroničkih kopija omogućuju njihovu trenutnu pronalažljivost i pregled jednostavnim klikom miša.
 
-A standard sono disponibili le reportistiche di:   
-> **Pagina di Guardia**: è una scheda che, per *Documento*, riporta l'elenco delle *Revisioni* effettuate e la *Lista di distribuzione*.   
-> **Documento interno**: anteprima del documento allegato nel tabulatore *Allegato* e creato nel tabulatore *Creazione documento*.   
-> **Documenti allegati al documentale**: anteprima dei documenti allegati alla *Gestione Documentale*.   
+Kao standard, dostupna su izvješća:  
+> **Naslovna stranica**: kartica koja za svaki *Dokument* prikazuje popis provedenih *Revizija* i *Distribucijsku listu*.  
+> **Interni dokument**: pregled dokumenta priloženog u kartici *Prilog* i kreiranog u kartici *Kreiranje dokumenta*.  
+> **Dokumenti priloženi dokumentaciji**: pregled dokumenata priloženih u *Upravljanju dokumentacijom*.  
 :::
 
 
-## Pulsanti di comando
+## Tipke za upravljanje
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Spremi
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Documento di origine interna* visualizzato.   
-
-
-### ![](/img/neutral/common/duplicate.png) Duplica
-
-Il pulsante è abilitato solamente per i componenti delle *Funzioni aziendali* di *verifica/approvazione* e *redazione/emissione*.
-E' possibile duplicare il *Documento* visualizzato in un nuovo *Documento*. E' sufficiente premere il pulsante **Duplica**.   
-Viene visualizzata una richiesta di:
-> **Categoria**: è il *Codice categoria documento di origine interna* del nuovo *Documento* (dato obbligatorio).   
-> **Codice**: è il *Codice* del nuovo *Documento* (dato obbligatorio).   
-> **Titolo**: è il *Titolo* del nuovo *Documento* (dato obbligatorio).   
-
-*Categoria* e *Titolo* sono proposti dal documento di origine; il *Codice* viene proposto se, alla *Categoria*, è associata una *Codifica automatica*.   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Il nuovo *Documento di origine interna* creato avrà *Edizione* e *Revisione* pari a *Zero* e lo stato di *In creazione*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.
+Pritiskom na ovu tipku spremaju se sve izmijenjene informacije prikazanog *Dokumenta unutarnjeg podrijetla*.   
 
 
-### Crea nuova revisione
+### ![](/img/neutral/common/duplicate.png) Dupliciraj
 
-Il pulsante è abilitato solamente per i componenti delle *Funzioni aziendali* di *verifica/approvazione* e *redazione/emissione* e se lo stato del documento di origine è *Emesso*. Verrà visualizzata una richiesta di:   
-> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione (dato obbligatorio).   
-> **Modifica su paragrafi**: un pro-memoria descrittivo sul riferimento al numero dei paragrafi variati.   
-> **Modifica su pagine**: un pro-memoria descrittivo sul riferimento al numero delle pagine variate.   
+Tipka je omogućena samo za članove *Poslovnih funkcija* zaduženih za *provjeru/odobravanje* i *izradu/izdavanje*. 
+Moguće je duplicirati prikazani *Dokument* u novi *Dokument*. 
+Dovoljno je pritisnuti tipku **Dupliciraj**. Prikazat će se zahtjev za unos:
+> **Kategorija**: *Šifra kategorije dokumenta unutarnjeg podrijetla* novog *Dokumenta* (obavezni podatak).  
+> **Šifra**: *Šifra* novog *Dokumenta* (obavezni podatak).  
+> **Naslov**: *Naslov* novog *Dokumenta* (obavezni podatak).   
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Viene creato nuovo *Documento di origine interna*, con tutte le informazioni del *Documento* originale ma con indice di *Revisione* incrementato e lo stato di *In revisione*. Il *Documento* originale rimane in vigore con lo stato di *Emesso*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.   
-
-
-### Crea nuova edizione
-
-Il pulsante è abilitato solamente per i componenti delle *Funzioni aziendali* di *verifica/approvazione* e *redazione/emissione* e se lo stato del documento di origine è *Emesso*. Verrà visualizzata una richiesta di:   
-> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione (dato obbligatorio).   
-> **Modifica su paragrafi**: un pro-memoria descrittivo sul riferimento al numero dei paragrafi variati.   
-> **Modifica su pagine**: un pro-memoria descrittivo sul riferimento al numero delle pagine variate.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Viene creato nuovo *Documento di origine interna*, con tutte le informazioni del *Documento* originale ma con indice di *Edizione* incrementato e lo stato di *In revisione*. Il *Documento* originale rimane in vigore con lo stato di *Emesso*.   
-Al termine dell'elaborazione il nuovo *Documento di origine interna* viene visualizzato.   
+*Kategorija* i *Naslov* predlažu se iz izvornog dokumenta; *Šifra* se predlaže ako je uz *Kategoriju* povezana *Automatska kodifikacija*.  
+Nakon toga se pritisne tipka **OK** ili tipka **Otkaži** ako se želi nastaviti ili odustati od aktivnosti dupliciranja. 
+Novi kreirani *Dokument unutarnjeg podrijetla* imat će *Izdanje* i *Reviziju* postavljene na *Nula* te status *U izradi*.  
+Po završetku obrade novi *Dokument unutarnjeg podrijetla* se prikazuje.  
 
 
-### Approva
+### Stvori novu reviziju
 
-Il pulsante è abilitato solamente per i componenti delle *Funzioni aziendali* di *verifica/approvazione* e se lo stato del documento di origine è *In creazione* o *In revisione*.   
-Successivamente alla richiesta di conferma elaborazione e al termine dell'elaborazione il *Documento di origine interna* passerà ad uno stato di *Approvato*.   
+Tipka je omogućena samo za članove *Poslovnih funkcija* zaduženih za *provjeru/odobravanje* i *izradu/izdavanje* te ako je status izvornog dokumenta *Izdano*. Prikazat će se zahtjev za unos:  
+> **Razlog revizije**: kratak opis razloga koji je doveo do revizije (obavezni podatak).  
+> **Promjena u odlomcima**: opisna bilješka koja se odnosi na broj izmijenjenih odlomaka.  
+> **Promjena na stranicama**: opisna bilješka koja se odnosi na broj izmijenjenih stranica.     
+
+Nakon toga se pritisne tipka **OK** ili tipka **Otkaži** ako se želi nastaviti ili odustati od aktivnosti kreiranja.  
+Stvara se novi *Dokument unutarnjeg podrijetla*, sa svim informacijama iz izvornog *Dokumenta*, ali s povećanim indeksom *Revizije* i statusom *U reviziji*. Izvorni *Dokument* ostaje na snazi sa statusom *Izdano*.  
+Po završetku obrade novi *Dokument unutarnjeg podrijetla* se prikazuje.  
 
 
-### Emetti
+### Izradi novo izdanje
 
-Il pulsante è abilitato solamente per i componenti delle *Funzioni aziendali* di *redazione/emissione* e se lo stato del documento di origine è *Approvato*.   
-Successivamente alla richiesta di conferma elaborazione e al termine dell'elaborazione il *Documento di origine interna* passerà ad uno stato di *Emesso* e verrà automaticamente visualizzata l'anteprima della stampa *Pagina di Guardia*.   
+Tipka je omogućena samo za članove *Poslovnih funkcija* zaduženih za *provjeru/odobravanje* i *izradu/izdavanje* te ako je status izvornog dokumenta *Izdano*. Prikazat će se zahtjev za unos:  
+> **Razlog revizije**: kratak opis razloga koji je doveo do revizije (obavezni podatak).  
+> **Promjena u odlomcima**: opisna bilješka koja se odnosi na broj izmijenjenih odlomaka.  
+> **Promjena na stranicama**: opisna bilješka koja se odnosi na broj izmijenjenih stranica.    
+
+Nakon toga se pritisne tipka **OK** ili tipka **Otkaži** ako se želi nastaviti ili odustati od aktivnosti kreiranja.  
+Stvara se novi *Dokument unutarnjeg podrijetla*, sa svim informacijama iz izvornog *Dokumenta*, ali s povećanim indeksom *Izdanja* i statusom *U reviziji*. Izvorni *Dokument* ostaje na snazi sa statusom *Izdano*.  
+Po završetku obrade novi *Dokument unutarnjeg podrijetla* se prikazuje.    
 
 
-### ![](/img/neutral/common/bill.png) Distribuzione
+### Odobriti
 
-Il pulsante avvia la procedura di *Distribuzione* del *Documento*.   
-Viene visualizzata una richiesta di filtro di chi, tra i destinatari presenti nella *Lista di distribuzione*, riceverà copia del *Documento*:   
-> **Tipo:**   
->> **Cartacei**: distribuzione a chi richiede copia cartacea;   
->> **Elettronici**: distribuzione a chi richiede email;   
+Tipka je omogućena samo za članove *Poslovnih funkcija* zaduženih za *provjeru/odobravanje* te ako je status izvornog dokumenta *U izradi* ili *U reviziji*.  
+Nakon zahtjeva za potvrdu obrade i po završetku obrade, *Dokument unutarnjeg podrijetla* prelazi u status *Odobreno*.     
+
+
+### Izdavanje
+
+Tipka je omogućena samo za članove *Poslovnih funkcija* zaduženih za *izradu/izdavanje* te ako je status izvornog dokumenta *Odobreno*.  
+Nakon zahtjeva za potvrdu obrade i po završetku obrade, *Dokument unutarnjeg podrijetla* prelazi u status *Izdano* i automatski se prikazuje pregled ispisa *Naslovna stranica*.    
+
+
+### ![](/img/neutral/common/bill.png) Distribucija
+
+Tipka pokreće postupak *Distribucije* *Dokumenta*.  
+Prikazuje se zahtjev za filtriranje tko će, među primateljima prisutnima u *Distribucijskoj listi*, primiti kopiju *Dokumenta*:  
+> **Tip:**  
+>> **Papirnata**: distribucija primateljima koji zahtijevaju papirnatu kopiju;  
+>> **Elektronička**: distribucija primateljima koji zahtijevaju e-mail.
 >
-> **Stato:**   
->> **Già consegnati**: distribuzione a chi ha già ricevuto il documento;   
->> **Ancora da consegnare**: distribuzione a chi non ha ancora ricevuto il documento;   
+> **Status:**  
+>> **Već isporučeno**: distribucija primateljima koji su već primili dokument;  
+>> **Još za isporučiti**: distribucija primateljima koji još nisu primili dokument;    
 >
-> **Destinatario:**
->> **Interni**: distribuzione al solo personale interno (*Funzioni aziendali* e/o *Dipendenti*);   
->> **Clienti/Fornitori**: distribuzione a *Clienti/Fornitori*.
+> **Primatelj:**  
+>> **Interni**: distribucija samo unutarnjem osoblju (*Poslovne funkcije* i/ili *Zaposlenici*);  
+>> **Klijenti/Dobavljači**: distribucija *Klijentima/Dobavljačima*.  
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di distribuzione o meno.   
-
-
-### Annulla documento
-
-Il pulsante è abilitato solamente per i componenti delle *Funzioni aziendali* di *redazione/emissione* e se lo stato del documento di origine è *Emesso*.   
-Successivamente alla richiesta di conferma elaborazione e al termine dell'elaborazione il *Documento di origine interna* passerà ad uno stato di *Annullato*.   
+Nakon toga se pritisne tipka **OK** ili tipka **Otkaži** ako se želi nastaviti ili odustati od aktivnosti distribucije.   
 
 
-### Ripristina annullamento
+### Otkaži dokument
 
-Il pulsante è abilitato solamente per i componenti delle *Funzioni aziendali* di *redazione/emissione* e se lo stato del documento di origine è *Annullato*.   
-Successivamente alla richiesta di conferma elaborazione e al termine dell'elaborazione il *Documento di origine interna* passerà ad uno stato di *Emesso*.   
-
-
-## Gestione dati
+Tipka je omogućena samo za članove *Poslovnih funkcija* zaduženih za *izradu/izdavanje* te ako je status izvornog dokumenta *Izdano*.  
+Nakon zahtjeva za potvrdu obrade i po završetku obrade, *Dokument unutarnjeg podrijetla* prelazi u status *Poništeno*.     
 
 
-### Dati di testata
+### Ponovi otkazivanje
 
-Le informazioni gestibili sono:   
-> **Categoria documento**: è la *Categoria documento di origine interna* del *Documento* (dato obbligatorio).   
-> Inserendo la categoria, le informazioni sull'Ubicazione, le Funzioni di verifica/approvazione e redazione/emissione, la *Lista di distribuzione* e i dati di *Accesso consentito alle funzioni*, vengono ereditati nel *Documento* e sono successivamente modificabili.   
+Tipka je omogućena samo za članove *Poslovnih funkcija* zaduženih za *izradu/izdavanje* te ako je status izvornog dokumenta *Poništeno*.  
+Nakon zahtjeva za potvrdu obrade i po završetku obrade, *Dokument unutarnjeg podrijetla* prelazi u status *Izdano*.     
+
+
+## Upravljanje podacima
+
+
+### Podaci zaglavlja
+
+Informacije koje se mogu upravljati su:  
+> **Kategorija dokumenta**: *Kategorija dokumenta unutarnjeg podrijetla* *Dokumenta* (obavezni podatak).  
+> Unošenjem kategorije, informacije o Lokaciji, Poslovnim funkcijama za provjeru/odobravanje i izradu/izdavanje, *Distribucijskoj listi* i podaci o *Pristupu dopuštenim funkcijama* nasljeđuju se u *Dokument* i naknadno se mogu mijenjati.  
 >
-> **Codice**: è il Codice del *Documento* (dato obbligatorio); se nella Categoria di appartenenza è stato impostato un metodo di codifica automatica, il codice viene proposto ma con la possibilità di essere variato altrimenti è possibile inserirlo manualmente ma solo se il documento è nello stato di In creazione altrimenti l’informazione è di sola lettura.   
+> **Šifra**: je *Šifra* *Dokumenta* (obavezni podatak); ako je u pripadajućoj Kategoriji postavljen način automatskog kodiranja, šifra se predlaže s mogućnošću izmjene, inače se može unijeti ručno, ali samo ako je dokument u statusu *U izradi*, inače je informacija samo za čitanje.    
 >
-> **Edizione/Revisione**: sono l'Edizione e la Revisione del *Documento*. Le informazioni sono di sola lettura.   
-Le informazioni sono modificabili se il documento è nello stato di *In creazione* altrimenti sono di sola lettura; si possono variare in modo pilotato dal sistema usando i pulsanti *Crea nuova edizione* e *Crea nuova revisione* che incrementano il precedente valore di *Edizione* e *Revisione* di una unità.   
+> **Izdanje/Revizija**: označava Izdanje i Reviziju *Dokumenta*. Informacije su samo za čitanje.  
+Informacije su moguće mijenjati ako je dokument u statusu *U izradi*, inače su samo za čitanje; mogu se automatski mijenjati putem tipki *Kreiraj novo izdanje* i *Kreiraj novu reviziju*, koje povećavaju prethodnu vrijednost *Izdanja* i *Revizije* za jednu jedinicu.   
 >
-> **Titolo**: è il *Titolo* del *Documento* (dato obbligatorio).   
+> **Naslov**: *Naslov* *Dokumenta* (obavezni podatak).    
 >
-> **Stato documento**: è lo *Stato* del *Documento* e riporta lo stato attuale del *Documento*. L'informazione è di sola lettura.   
-> Gli stati del documento sono valori predefiniti dal sistema che identificano i vari stati di gestione del *Documento di origine interna*.   
-> I valori predefiniti sono:   
-> - **In creazione**: impostato alla creazione di un nuovo documento;   
-> - **Approvato**: impostato all'atto di *verifica/approvazione* di un documento in stato *In creazione* o *In revisione*;   
-> - **Emesso**: impostato all'atto di *redazione/emissione* di un documento in stato *Approvato* oppure all'atto di *ripristino annullamento* di un documento in stato *Annullato*;   
-> - **In revisione**: impostato all'atto di *creazione nuova edizione/revisione* di un documento in stato *Emesso*;   
-> - **Obsoleto**: impostato, per un documento in stato *Emesso*, origine di una richiesta di *creazione nuova edizione/revisione*, all'atto della sua *emissione*;   
-> - **Annullato**: impostato all'atto di *annullamento* di un documento in stato *Emesso*.   
+> **Status dokumenta**: označava *Status* *Dokumenta* i prikazuje trenutačni status *Dokumenta*. Informacija je samo za čitanje.  
+> Statusi dokumenta su unaprijed definirane vrijednosti u sustavu koje identificiraju različite faze upravljanja *Dokumentom unutarnjeg podrijetla*.  
+> Unaprijed definirane vrijednosti su:  
+> - **U izradi**: postavljeno prilikom kreiranja novog dokumenta;  
+> - **Odobreno**: postavljeno prilikom *provjere/odobravanja* dokumenta u statusu *U izradi* ili *U reviziji*;  
+> - **Izdano**: postavljeno prilikom *izrade/izdavanja* dokumenta u statusu *Odobreno* ili prilikom *ponovnog vraćanja poništenog* dokumenta;  
+> - **U reviziji**: postavljeno prilikom *kreiranja novog izdanja/revizije* dokumenta u statusu *Izdano*;  
+> - **Zastarjelo**: postavljeno za dokument u statusu *Izdano*, koji je izvor zahtjeva za *kreiranje novog izdanja/revizije*, prilikom njegove *izdaje*;  
+> - **Poništeno**: postavljeno prilikom *poništavanja* dokumenta u statusu *Izdano*.    
 >
-> **Dalla data**: è la data in cui il *Documento* ha assunto l'attuale *Stato*. L'informazione è di sola lettura.   
-> **Dall'utente'**: è l'*Utente A.R.M.* che ha modificato lo *Stato* del *Documento*. L'informazione è di sola lettura.   
+> **Od datuma**: datum kada je *Dokument* preuzeo trenutačni *Status*. Informacija je samo za čitanje.  
+> **Od korisnika**: *ARM korisnik* koji je promijenio *Status* *Dokumenta*. Informacija je samo za čitanje.   
 >
-> **Informazioni su revisione**: expander dove è possibile visualizzare/inserire:   
+> **Informacije o reviziji**: proširivi odjeljak gdje je moguće pregledati/unijeti:   
 >
->> **Data creazione/Creato da**: sono la *Data di creazione* e l'*Utente A.R.M.* che ha creato il documento. L'informazione è di sola lettura.   
->> **Data approvazione/Approvato da**: sono la *Data di approvazione* e l'*Utente A.R.M.* che ha *Approvato* il documento. L'informazione è di sola lettura.   
->> **Data emissione/Emesso da**: sono la *Data di emissione* e l'*Utente A.R.M.* che ha *Emesso* il documento. L'informazione è di sola lettura.   
+>> **Datum kreiranja/Kreirao**: datum kreiranja i *ARM korisnik* koji je kreirao dokument. Informacija je samo za čitanje.  
+>> **Datum odobrenja/Odobrio**: datum odobrenja i *ARM korisnik* koji je *odobrio* dokument. Informacija je samo za čitanje.  
+>> **Datum izdavanja/Izdano od**: datum izdavanja i *ARM korisnik* koji je *izdao* dokument. Informacija je samo za čitanje.     
 >>
->> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione.   
->> L'informazione può essere variata se lo *Stato* è *In creazione* o *In revisione*.   
+>> **Razlog revizije**: kratki opis razloga koji je doveo do revizije.  
+>> Informacija se može mijenjati ako je *Status* dokumenta *U izradi* ili *U reviziji*.    
 >>
->> **Modifica su paragrafi**: un pro-memoria descrittivo sul riferimento al numero dei paragrafi variati rispetto alla *revisione/edizione* precedente.   
->> L'informazione può essere variata se lo *Stato* è *In creazione* o *In revisione*.   
+>> **Izmjene na paragrafima**: opisna napomena o broju paragrafskih izmjena u odnosu na prethodno *izdanje/reviziju*.  
+>> Informacija se može mijenjati ako je *Status* dokumenta *U izradi* ili *U reviziji*.    
 >>
->> **Modifica su pagine**: un pro-memoria descrittivo sul riferimento al numero delle pagine variate rispetto alla *revisione/edizione* precedente.   
->> L'informazione può essere variata se lo *Stato* è *In creazione* o *In revisione*.   
+>> **Izmjene na stranicama**: opisna napomena o broju izmijenjenih stranica u odnosu na prethodno *izdanje/reviziju*.  
+>> Informacija se može mijenjati ako je *Status* dokumenta *U izradi* ili *U reviziji*.     
 >>
->> **Data annullamento/Annullato da**: sono la *Data di annullamento* e l'*Utente A.R.M.* che ha *Annullato* il documento. L'informazione è di sola lettura.   
+>> **Datum poništavanja/Poništio**: datum poništavanja i *ARM korisnik* koji je *poništio* dokument. Informacija je samo za čitanje.     
 >
-> **Informazioni su ubicazione**: expander dove è possibile visualizzare/inserire:   
+> **Informacije o lokaciji**: proširivi odjeljak gdje je moguće pregledati/unijeti:   
 >
->> **Archivio**: è il *Magazzino* fisico di dove abitualmente viene archiviato il *Documento* (esempio: Ufficio tecnico, Direzione, ...).   
->> Il dato è ereditato dalla *Categoria documento di origine interna* ed è modificabile.   
+>> **Arhiva**: fizičko *Skladište* gdje se dokument uobičajeno pohranjuje (primjer: Tehnički ured, Uprava, ...).  
+>> Podatak se nasljeđuje iz *Kategorije dokumenta unutarnjeg podrijetla* i može se mijenjati.     
 >>
->> **Ubicazione**: è l'*Ubicazione* fisica di dove abitualmente viene archiviato il *Documento* (esempio: Armadio, Scaffale, Cassetto, , ...).   
->> Il dato è ereditato dalla *Categoria documento di origine interna* ed è modificabile.   
+>> **Lokacija**: fizička *Lokacija* gdje se dokument uobičajeno pohranjuje (primjer: Ormar, Polica, Ladica, ...).  
+>> Podatak se nasljeđuje iz *Kategorije dokumenta unutarnjeg podrijetla* i može se mijenjati.    
 >>
->> **Ubicazione descrittiva**: è l'*Ubicazione* fisica in caso di non codifica di *Archivio* e/o *Ubicazione*.   
->> Il dato è ereditato dalla *Categoria documento di origine interna* ed è modificabile.   
+>> **Opisna lokacija**: fizička *Lokacija* koja se koristi ako *Arhiva* i/ili *Lokacija* nisu kodirani.  
+>> Podatak se nasljeđuje iz *Kategorije dokumenta unutarnjeg podrijetla* i može se mijenjati.   
 >
-> **Funzione di verifica/approvazione**: è la *Funzione aziendale* responsabile della verifica/approvazione del documento.   
->> Il dato è ereditato dalla *Categoria documento di origine interna* ed è modificabile.   
+> **Funkcija provjere/odobrenja**: *Funkcija u tvrtki* odgovorna za provjeru/odobrenje dokumenta.  
+>> Podatak se nasljeđuje iz *Kategorije dokumenta unutarnjeg podrijetla* i može se mijenjati.    
 >
-> **Funzione di redazione/emissione**: è la *Funzione aziendale* responsabile della redazione/emissione del documento.   
->> Il dato è ereditato dalla *Categoria documento di origine interna* ed è modificabile.   
+> **Funkcija izrade/izdavanja**: *Funkcija u tvrtki* odgovorna za izradu/izdavanje dokumenta.  
+>> Podatak se nasljeđuje iz *Kategorije dokumenta unutarnjeg podrijetla* i može se mijenjati.     
 >
-> **Note**: annotazioni libere.
+> **Bilješke**: slobodne napomene.
 
 
-### Allegato
+### Privitak
 
-E' possibile allegare il *Documento* che si sta catalogando tramite l'utilizzo del drag&drop; viene visualizzata l'anteprima.   
-Questo allegato non viene incluso nel Documentale di Fluentis.   
-Nelle informazioni di *Nome allegato* e *Tipo allegato* il sistema riconosce il nome del file fisico e l'estensione.
-Se non riconosciuti questi possono essere inseriti manualmente.
-
-
-### Creazione documento
-
-E' un semplice *word editor* utilizzato per creare il *Documento* direttamente in questa gestione.   
-Si possono impostare: il Tipo di carattere, la Dimensione, Stili, Colori di testo e di sfondo, e altri semplici formattazioni del testo.
+Moguće je priložiti *Dokument* koji se kataloži pomoću 'drag'n'drop'; prikazuje se pregled.  
+Ovaj prilog nije uključen u Fluentis Dokumente.  
+U informacijama *Naziv priloga* i *Tip priloga* sustav prepoznaje naziv fizičke datoteke i ekstenziju.  
+Ako nisu prepoznati, mogu se unijeti ručno.
 
 
-### Lista di distribuzione
+### Stvaranje dokumenta
 
-In questo elenco è possibile associare: *Funzioni aziendali*, *Dipendenti*, *Clienti/Fornitori* e *Contatti* che abitualmente ricevono copia del *Documento* ed indicare le metodologie abituali di ricezione del documento.   
-Alla creazione del *Documento* la *Lista di distribuzione* viene ereditata dalla *Categoria documento di origine interna* e le informazioni sono modificabili.   
-L'elenco si compone delle seguenti informazioni:   
-> **Gruppo**   
->> **Codice**: è il codice del *Ruolo A.R.M.* destinatario.   
->> **Descrizione**: è la descrizione del *Ruolo A.R.M.* destinatario.   
+To je jednostavan *word editor* koji se koristi za izradu *Dokumenta* izravno u ovom modulu.  
+Mogu se postaviti: tip slova, veličina, stilovi, boje teksta i pozadine te druge osnovne formate teksta.
+
+
+### Distribucijska lista
+
+U ovom se popisu mogu povezati: *Funkcije u tvrtki*, *Zaposlenici*, *Klijenti/Dobavljači* i *Kontakti* koji uobičajeno primaju kopiju *Dokumenta* te se mogu navesti uobičajene metode primanja dokumenta.  
+Prilikom kreiranja *Dokumenta*, *Distribucijska lista* se nasljeđuje iz *Kategorije dokumenta unutarnjeg podrijetla* i informacije se mogu mijenjati.  
+Popis se sastoji od sljedećih informacija:   
+> **Grupa**   
+>> **Kod**: je kod *ARM uloge* primatelja.   
+>> **Opis**: je opis *ARM uloge* primatelja.    
 >
-> **Utente**   
->> **Codice**: è il codice dell'*Utente A.R.M.* destinatario.   
->> **Descrizione**: è la descrizione dell'*Utente A.R.M.* destinatario.   
+> **Korisnik**   
+>> **Kod**: je kod *ARM korisnika* primatelja.   
+>> **Opis**: je opis *ARM korisnika* primatelja.     
 >
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funzione aziendale* destinataria.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* destinataria.   
+> **Funkcija tvrtke**   
+>> **Kod**: je kod *Funkcije tvrtke* primatelja.   
+>> **Opis**: je opis *Funkcije tvrtke* primatelja.   
 >
-> **Dipendente**   
->> **Codice**: è il codice del *dipendente* destinatario.   
->> **Cognome**: è il cognome del *dipendente* destinatario.   
->> **Nome**: è il nome del *    dipendente* destinatario.   
+> **Zaposlenik**   
+>> **Kod**: je kod *zaposlenika* primatelja.   
+>> **Prezime**: je prezime *zaposlenika* primatelja.   
+>> **Ime**: je ime *zaposlenika* primatelja.    
 >
-> **Cliente/Fornitore**   
->> **Descrizione**: è la ragione sociale del *Cliente/Fornitore* destinatario.   
+> **Kupac/Dobavljač**   
+>> **Opis**: je naziv tvrtke *Kupca/Dobavljača* primatelja.    
 >
-> **Contatto**   
->> **Codice**: è il codice del *Contatto* destinatario.   
->> **Descrizione**: è la descrizione del *Contatto* destinatario.   
+> **Kontakt**   
+>> **Šifra**: je šifra *Kontakta* primatelja.   
+>> **Opis**: je opis *Kontakta* primatelja.  
 >
-> **Altro destinatario**   
->> **Descrizione**: è la libera descrizione di un destinatario non codificato.   
+> **Drugi primatelj**   
+>> **Opis**: je slobodan opis primatelja koji nije kodiran.    
 >
-> **Dati per la consegna**   
->> **Cartacea**: indica che al momento della distribuzione il soggetto desidera ricevere copia *Cartacea* del documento o in allegato tramite *Email*.   
->> **Metodo di consegna**: indica la metodologia di consegna abituale del *Documento*.   
->> **Email**: indica una email di destinazione, se non codificata nell'anagrafica del destinatario.   
->> **Consegna**: indica che la consegna è stata effettuata; viene impostata automaticamente all’atto della distribuzione del documento ed è successivamente modificabile.   
->> **Data consegna**: riporta la data di consegna del documento; è un'informazione aggiornata automaticamente all’atto della distribuzione del documento ed è successivamente modificabile.   
->> **Numero di copie**: indica il numero di copie cartacee che il destinatario desidera ricevere.   
->> **Note**: annotazioni libere.   
+> **Podaci za dostavu**   
+>> **Papirnata kopija**: označava da primatelj prilikom distribucije želi primiti kopiju dokumenta u *papirnatom obliku* ili u privitku putem *e-maila*.   
+>> **Metoda dostave**: označava uobičajenu metodu dostave *Dokumenta*.   
+>> **Email**: označava adresu e-pošte primatelja, ako nije kodirana u njegovom kartonu.   
+>> **Dostavljeno**: označava da je dostava izvršena; automatski se postavlja prilikom distribucije dokumenta i naknadno se može mijenjati.   
+>> **Datum dostave**: prikazuje datum dostave dokumenta; automatski se ažurira prilikom distribucije i može se naknadno mijenjati.   
+>> **Broj kopija**: označava broj papirnatih kopija koje primatelj želi primiti.   
+>> **Napomene**: slobodne bilješke.    
 
 
-### Accesso consentito alle funzioni
+### Pristup funkcijama
 
-In questa elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso al *Documento*.   
-Se non vengono inserite righe in questa tabella, allora l'accesso è consentito a tutti.   
-Alla creazione del *Documento* la lista delle *Funzioni aziendali* viene ereditata dalla *Categoria documento di origine interna* e le informazioni sono modificabili.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Note**: annotazioni libere.   
-
-
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Documento di origine interna*.   
+U ovom se popisu mogu unijeti *Poslovne funkcije* kojima se dodjeljuju prava pristupa *Dokumentu*.   
+Ako se u ovu tablicu ne unesu redovi, pristup je dopušten svima.   
+Prilikom kreiranja *Dokumenta*, popis *Poslovnih funkcija* nasljeđuje se iz *Kategorije internog dokumenta* i informacije se mogu mijenjati.   
+Popis se sastoji od sljedećih informacija:   
+> **Funkcija**: kod *Poslovne funkcije*.   
+> **Opis funkcije**: opis *Poslovne funkcije*.   
+> **Bilješke**: slobodne bilješke.   
 
 
-### Edizioni/Revisioni precedenti
-In questo elenco è possibile visualizzare lo storico delle *Edizioni/Revisioni precedenti* del *Documento* in gestione.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile visualizzare la gestione della *Revisione* del *Documento* selezionato.   
-L'elenco si compone delle seguenti informazioni:   
-> **Categoria**: è la *Categoria documento di origine interna*.   
-> **Codice**: è il Codice del *Documento*.   
-> **Edizione**: è l'Edizione del *Documento*.   
-> **Revisione**: è la Revisione del *Documento*.   
-> **Titolo**: è il *Titolo* del *Documento*.   
-> **Stato**: è lo *Stato* del *Documento*.   
-> **Dalla data**: è la data in cui il *Documento* ha assunto l'attuale *Stato*.   
-> **Riferimento paragrafi**: è il riferimento al numero dei paragrafi variati rispetto alla *revisione/edizione* precedente.   
-> **Riferimento su pagine**: è il riferimento al numero delle pagine variate rispetto alla *revisione/edizione* precedente.   
-> **Funzione di verifica/approvazione**: è la *Funzione aziendale* responsabile della verifica/approvazione.   
-> **Funzione di redazione/emissione**: è la *Funzione aziendale* responsabile della redazione/emissione.   
+### Dodatni podaci
+Moguće je umetnuti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *Dokument unutarnjeg podrijetla*.   
 
 
-:::tip Work flow stato documento   
-![example](/img/it-it/quality/internal-origin-document/internal-origin-document-status-work-flow.png)
+### Prethodne Edicije/Revizije
+U ovom popisu moguće je pregledati povijest *Prethodnih Edicija/Revizija* *Dokumenta* u upravljanju.   
+Dva puta klikom miša na željeni red moguće je otvoriti upravljanje *Revizijom* odabranog *Dokumenta*.   
+Popis se sastoji od sljedećih informacija:   
+> **Kategorija**: *Kategorija internog dokumenta*.   
+> **Kod**: kod *Dokumenta*.   
+> **Edicija**: Edicija *Dokumenta*.   
+> **Revizija**: Revizija *Dokumenta*.   
+> **Naslov**: *Naslov* *Dokumenta*.   
+> **Stanje**: *Stanje* *Dokumenta*.   
+> **Od datuma**: datum kada je *Dokument* preuzeo trenutno *Stanje*.   
+> **Referenca paragrafa**: referenca na brojeve paragrafa izmijenjenih u odnosu na prethodnu *ediciu/reviziju*.   
+> **Referenca stranica**: referenca na brojeve stranica izmijenjenih u odnosu na prethodnu *ediciu/reviziju*.   
+> **Funkcija provjere/odobrenja**: *Poslovna funkcija* odgovorna za provjeru/odobrenje.   
+> **Funkcija izrade/izdavanja**: *Poslovna funkcija* odgovorna za izradu/izdavanje.  
+
+
+:::tip Tijek stanja dokumenta   
+![primjer](/img/it-it/quality/internal-origin-document/internal-origin-document-status-work-flow.png)
 :::
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
