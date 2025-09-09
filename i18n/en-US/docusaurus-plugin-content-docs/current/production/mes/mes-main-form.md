@@ -60,7 +60,9 @@ For the selected row, on the right side of the grid, it is possible to view the 
 *Specific Buttons*:
 
 > *Clear resource*: allows removing the value entered in the *Resource* field;    
-> *Select new phases*: allows opening help to select new phases to add to those present in the main grid;      
+> *Select new phases*: allows opening help to select new phases to add to those present in the main grid.
+In the case of a multi-phase center, if there are already phases (that have already started), it is possible to add more only if the already inserted phases are in a state of *Started* or *Suspension*; otherwise, it is necessary to first bring the phases to a suspended state before additional phases can be added.  
+If, for example, there is a phase in a suspended state and the user adds a phase that has not yet started, the procedure will automatically create the start and suspension declaration for the newly added phase with the same date and time; at this point, the user can continue processing for all phases using the *Resumption* button. If, however, the added phases are in a state other than not started, they will be aligned to the *Suspension* state. Upon *Resumption*, the newly added phases will acquire the information of the Work Center and Machine used for the originally present phases.      
 > *Delete phase*: allows removing the selected phase(s) from the main grid.    
 
 The **Production** tab is dedicated to entering information related to production/setup times and the quantities produced/discarded. This is the only tab that cannot be made invisible and consists of the following fields:

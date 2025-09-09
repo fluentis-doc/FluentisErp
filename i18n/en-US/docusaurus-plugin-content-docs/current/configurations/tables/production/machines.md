@@ -26,7 +26,7 @@ For the new record in the *Machines* grid, at least the mandatory fields require
 **Active**: indicates whether the machine is active or not, meaning if it is usable and schedulable;  
 **Mobile Material Declaration**: if active, the center will be proposed in the time declaration of Fluentis Mobile; if the data is transmitted from the machine to Fluentis with other automations, this flag will be deactivated. Used only for customizations;  
 **Print Label**: if active, allows printing a label;  
-**Work Centers**: indicates which work center the machine is located in;  
+**Work Centers**: indicates which work center the machine is located in; It is possible to associate multiple machines to the same work center, and among these, it will be possible to choose which one to use in the ***Machine*** widget present in the [Production tab of the MES](/docs/production/mes/mes-main-form#tab-produzione); 
 **Corporate Center**: indicates the cost center to which the machine refers;  
 **Divisions**: indicates the code of the division in which the machine is placed;  
 **Machine Class**: indicates the class of the machine (if the machine is coded as an item);  
