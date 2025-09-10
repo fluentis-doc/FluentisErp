@@ -1,1 +1,1 @@
-Viene visualizzato il dettaglio di un eventuale **Documento allegato** (nome, tipo di documento, eventuali note, ns/vs riferimento). Per le istruzioni relative a come allegare un documento si rimanda all'articolo [Allega documenti](/docs/guide/common/operations-with-data/attach-documents).
+Prikazuje se detalj eventualnog **Priloženog dokumenta** (naziv, tip dokumenta, eventualne napomene, naš/vaša referenca). Za upute o tome kako priložiti dokument, upućujemo na članak [Priloži dokumente](/docs/guide/common/operations-with-data/attach-documents).

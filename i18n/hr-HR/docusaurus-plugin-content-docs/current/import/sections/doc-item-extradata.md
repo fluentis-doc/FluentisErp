@@ -1,1 +1,1 @@
-Viene riportata la lista degli **Extra data** collegati all'articolo, con la possibilità di aggiungere nuovi extra data utili solo per il documento in oggetto, con la possibilità tramite l'apposito flag, di scegliere quali extra data stampare.
+Donosi se popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću unosa novih dodatnih podataka koji su korisni samo za predmetni dokument, uz mogućnost putem odgovarajuće oznake odabrati koje dodatne podatke ispisati.
