@@ -62,7 +62,7 @@ import Link from '@docusaurus/Link';
 ###     <Link to="/docs/quality/vendor-rating/vendor-rating-intro">Kvalifikacija dobavljača</Link>
         <p><Link to="/docs/quality/vendor-rating/initial-vendor-rating" className="bold-link">Početne i periodične procjene</Link></p>
         <p>Subjektivna metoda koja se ručno unosi i obično se koristi za inicijalne i naknadne procjene.</p>
-        <p><Link to="/docs/quality/vendor-rating/vendor-rating-on-nc" className="bold-link">Periodične procjene nesukladnosti/Link></p>
+        <p><Link to="/docs/quality/vendor-rating/vendor-rating-on-nc" className="bold-link">Periodične procjene nesukladnosti</Link></p>
         <p>Objektivna metoda temelji se na težini nedostataka dodijeljenih *Nesukladnostima dobavljača* i obično se koristi za periodične procjene.</p>
     </div>
 </div>
