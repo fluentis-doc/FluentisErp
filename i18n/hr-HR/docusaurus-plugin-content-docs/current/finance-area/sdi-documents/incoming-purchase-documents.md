@@ -15,13 +15,13 @@ U Fluentisu je moguće, nakon što je usluga Fluentis Business Hub konfigurirana
 
 *Specifične tipke:*
 
-> **Pogled**: omogućuje pregled odabranog XML dokumenta otvaranjem *Registar Sdi dokumenata* gdje je moguće vidjeti izvršene radnje na dokumentu, preuzeti privitke i povezati SdI datoteku s nabavkama, knjiženjima ili primateljima. Za više informacija o tim postupcima, pogledajte [odjeljak 1](/docs/finance-area/sdi-documents/incoming-purchase-documents#1-abbinamento-delle-fatture-elettroniche-di-acquisto).    
+> **Pogled**: omogućuje pregled odabranog XML dokumenta otvaranjem *Registar Sdi dokumenata* gdje je moguće vidjeti izvršene radnje na dokumentu, preuzeti privitke i povezati SdI datoteku s nabavkama, knjiženjima ili primateljima. Za više informacija o tim postupcima, pogledajte [odjeljak 1](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
 > **Otvori fakturu**: omogućeno je samo ako je odabrani dokument u stanju *Primljeno* i otvara računovodstvenu registraciju/dokument nabave/naknadu kojoj je XML datoteka povezana.     
 > **Preuzmi privitak**: preuzima odabranu XML datoteku.    
 > **Uvezi XML datoteku**: automatski otvara prozor u kojem se mogu odabrati datoteke za uvoz u registar SDI dokumenata.     
-> **Parametri za kreiranje registracija**:  omogućuje postavljanje parametara za kreiranje registracije. Za više informacija pogledajte [odjeljak 2](/docs/finance-area/sdi-documents/incoming-purchase-documents#2-parametri-creazione-automatica-registrazioni).    
-> **Kreiranje registracije**: omogućuje automatsko kreiranje računovodstvene registracije na temelju primljene XML datoteke. Za više informacija pogledajte [odjeljak 3](/docs/finance-area/sdi-documents/incoming-purchase-documents#3-contabilizzazione-automatica).    
-> **Kreiranje fakture nabave**:  omogućuje kreiranje fakture nabave na temelju XML datoteke. Nakon kreiranja fakture, Fluentis automatski povezuje odgovarajuću primku nabave ili narudžbenicu dobavljača, ako su prisutni. Za više informacija pogledajte [odjeljak 4](/docs/finance-area/sdi-documents/incoming-purchase-documents#4-creazione-fattura-di-acquisto-ed-evasione-ddtordine).    
+> **Parametri za kreiranje registracija**:  omogućuje postavljanje parametara za kreiranje registracije. Za više informacija pogledajte [odjeljak 2](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
+> **Kreiranje registracije**: omogućuje automatsko kreiranje računovodstvene registracije na temelju primljene XML datoteke. Za više informacija pogledajte [odjeljak 3](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
+> **Kreiranje fakture nabave**:  omogućuje kreiranje fakture nabave na temelju XML datoteke. Nakon kreiranja fakture, Fluentis automatski povezuje odgovarajuću primku nabave ili narudžbenicu dobavljača, ako su prisutni. Za više informacija pogledajte [odjeljak 4](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
 > **Kreiranje naknade**: omogućuje kreiranje naknade na temelju XML dokumenta. Za nastavak, potrebno je da odabrani Dobavljač (ili Agent) ima aktivirani flag *Porez po odbitku*. 
 
 

@@ -335,7 +335,7 @@ Ova Kartica omogućuje povezivanje slike s artiklom.
 
 Pomoću gumba **Dodaj sliku** moguće je unijeti sliku unutar ove kartica.
 
-Ova procedura nije često korištena jer u svakom obrascu postoji funkcija [**Priloži dokumente**](/docs/guide/common/common-buttons#document-manager) koja omogućuje prilaganje različitih vrsta dokumenata, uključujući i slike.
+Ova procedura nije često korištena jer u svakom obrascu postoji funkcija [**Priloži dokumente**](/docs/guide/common/common-buttons) koja omogućuje prilaganje različitih vrsta dokumenata, uključujući i slike.
 
 ## 15. **Cjenik dobavljača**
 

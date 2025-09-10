@@ -185,7 +185,7 @@ En un registro en divisa extranjera, normalmente, se inserta el valor en el camp
 
   <summary>Más detalles (Click para expandir)</summary>
 
-**[La causal contable](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates#13-parametri)** puede prever que estos sean actualizados automáticamente al variar los datos ingresados dentro de la grilla IVA, solo en incremento o también en decremento. El guardado del registro puede ser bloqueado si este importe no es igual a los datos IVA del registro;
+**[La causal contable](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** puede prever que estos sean actualizados automáticamente al variar los datos ingresados dentro de la grilla IVA, solo en incremento o también en decremento. El guardado del registro puede ser bloqueado si este importe no es igual a los datos IVA del registro;
 
 </details>
 

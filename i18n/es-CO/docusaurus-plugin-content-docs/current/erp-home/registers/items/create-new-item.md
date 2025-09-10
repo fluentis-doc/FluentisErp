@@ -291,7 +291,7 @@ Esta pestaña permite asociar imágenes al artículo.
 
 A través del botón **Agregar imagen** es posible insertar una imagen dentro de la pestaña.
 
-Este procedimiento no se utiliza con frecuencia ya que en cada formulario está disponible la función [**Adjuntar documentos**](/docs/guide/common/common-buttons#document-manager) que permite adjuntar varios tipos de documentos, incluidas las imágenes.
+Este procedimiento no se utiliza con frecuencia ya que en cada formulario está disponible la función [**Adjuntar documentos**](/docs/guide/common/common-buttons) que permite adjuntar varios tipos de documentos, incluidas las imágenes.
 
 ## 15. **Listas de proveedores**
 

@@ -185,7 +185,7 @@ In una registrazione in divisa estera, solitamente, si inserisce il valore nel c
 
   <summary>Ulteriori dettagli (Click to expand)</summary>
 
-**[La causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates#13-parametri)** può prevedere che questi siano aggiornati automaticamente al variare dei dati inseriti all'interno della griglia IVA, solo in incremento oppure anche in decremento. Il salvataggio della registrazione può essere bloccato se questo importo non è uguale ai dati IVA della registrazione;
+**[La causale contabile](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** può prevedere che questi siano aggiornati automaticamente al variare dei dati inseriti all'interno della griglia IVA, solo in incremento oppure anche in decremento. Il salvataggio della registrazione può essere bloccato se questo importo non è uguale ai dati IVA della registrazione;
 
 </details>
 

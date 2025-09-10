@@ -294,7 +294,7 @@ This tab allows attaching images to the item.
 
 Through the **Add image** button, it is possible to insert an image within the tab.
 
-This procedure is not widely used since the [**Attach documents**](/docs/guide/common/common-buttons#document-manager) function present in every form allows attaching various types of documents, including images.
+This procedure is not widely used since the [**Attach documents**](/docs/guide/common/common-buttons) function present in every form allows attaching various types of documents, including images.
 
 ## 15. **Supplier Price Lists**
 

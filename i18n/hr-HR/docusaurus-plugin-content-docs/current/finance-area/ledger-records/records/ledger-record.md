@@ -187,7 +187,7 @@ U registraciji u strani valuti, obično se unosi vrijednost u polje Ukupno u val
 
   <summary>Daljnji detalji (Click to expand)</summary>
 
-**[Računovodstveni predložak](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates#13-parametri)** može predvidjeti da se ovi podaci ažuriraju automatski prilikom promjene podataka unesenih u tablicu PDV-a, samo za povećanje ili i za smanjenje. Spremanje registracije može biti blokirano ako ovaj iznos nije jednak podacima PDV-a registracije;
+**[Računovodstveni predložak](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** može predvidjeti da se ovi podaci ažuriraju automatski prilikom promjene podataka unesenih u tablicu PDV-a, samo za povećanje ili i za smanjenje. Spremanje registracije može biti blokirano ako ovaj iznos nije jednak podacima PDV-a registracije;
 
 </details>
 

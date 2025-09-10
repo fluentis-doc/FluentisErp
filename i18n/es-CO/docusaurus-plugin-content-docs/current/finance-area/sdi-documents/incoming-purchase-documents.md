@@ -14,13 +14,13 @@ En Fluentis es posible, una vez configurado el servicio Fluentis Business Hub, r
 
 *Botones específicos:*
 
-> **visualizza**: permite visualizar el archivo XML seleccionado abriendo el *Registro de documentos SdI*, donde se pueden ver las acciones realizadas sobre el documento, descargar los adjuntos y emparejar el archivo SdI con las compras, los registros o los perceptores. Para más detalles sobre estos procedimientos, consulte el [párrafo 1](/docs/finance-area/sdi-documents/incoming-purchase-documents#1-abbinamento-delle-fatture-elettroniche-di-acquisto).  
+> **visualizza**: permite visualizar el archivo XML seleccionado abriendo el *Registro de documentos SdI*, donde se pueden ver las acciones realizadas sobre el documento, descargar los adjuntos y emparejar el archivo SdI con las compras, los registros o los perceptores. Para más detalles sobre estos procedimientos, consulte el [párrafo 1](/docs/finance-area/sdi-documents/incoming-purchase-documents).  
 > **apri fattura**: se habilita solo si el documento seleccionado está en estado *ricevuta* y abre el registro contable/documento de compra/compensación al que el archivo XML está emparejado.  
 > **scarica allegato**: realiza la descarga del archivo XML seleccionado.  
 > **importa il file xml**: abre automáticamente una ventana en la que seleccionar el/los archivos a importar en el registro de documentos SDI.  
-> **parametri creazione registrazioni**: permite establecer los parámetros para la creación del registro. Para más detalles, vea el [párrafo 2](/docs/finance-area/sdi-documents/incoming-purchase-documents#2-parametri-creazione-automatica-registrazioni).  
-> **creazione registrazione**: permite crear automáticamente el registro contable a partir del archivo XML recibido. Para más detalles, vea el [párrafo 3](/docs/finance-area/sdi-documents/incoming-purchase-documents#3-contabilizzazione-automatica).  
-> **Creación factura de compra (Creazione fattura di acquisto)**: permite crear la factura de compra a partir del archivo XML. Tras la creación de la factura, Fluentis realiza la asociación automática del DDT de compra o del pedido de proveedor correspondiente, si está presente. Para más detalles, vea el [párrafo 4](/docs/finance-area/sdi-documents/incoming-purchase-documents#4-creazione-fattura-di-acquisto-ed-evasione-ddtordine).  
+> **parametri creazione registrazioni**: permite establecer los parámetros para la creación del registro. Para más detalles, vea el [párrafo 2](/docs/finance-area/sdi-documents/incoming-purchase-documents).  
+> **creazione registrazione**: permite crear automáticamente el registro contable a partir del archivo XML recibido. Para más detalles, vea el [párrafo 3](/docs/finance-area/sdi-documents/incoming-purchase-documents).  
+> **Creación factura de compra (Creazione fattura di acquisto)**: permite crear la factura de compra a partir del archivo XML. Tras la creación de la factura, Fluentis realiza la asociación automática del DDT de compra o del pedido de proveedor correspondiente, si está presente. Para más detalles, vea el [párrafo 4](/docs/finance-area/sdi-documents/incoming-purchase-documents).  
 > **creazione compenso**: permite crear la compensación a partir del documento XML. Para proceder, es necesario que el Proveedor (o el Agente) seleccionado tenga activado el flag *ritenuta d'acconto*.  
 
 ### 1. Emparejamiento de las facturas electrónicas de compra (Abbinamento delle fatture elettroniche di acquisto)

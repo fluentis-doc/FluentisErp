@@ -15,13 +15,13 @@ In Fluentis è possibile, una volta configurato il servizio Fluentis Business Hu
 
 *Pulsanti specifici:*
 
-> **Visualizza**: consente di visionare il file XML selezionato con l'apertura del *Registro dei documenti SdI* dove è possibile visualizzare le azioni svolte sul documento, scaricare gli allegati e abbinare il file SdI agli acquisti, alle registrazioni oppure ai percipienti. Per maggiori dettagli su queste procedure si veda il [paragrafo 1](/docs/finance-area/sdi-documents/incoming-purchase-documents#1-abbinamento-delle-fatture-elettroniche-di-acquisto).    
+> **Visualizza**: consente di visionare il file XML selezionato con l'apertura del *Registro dei documenti SdI* dove è possibile visualizzare le azioni svolte sul documento, scaricare gli allegati e abbinare il file SdI agli acquisti, alle registrazioni oppure ai percipienti. Per maggiori dettagli su queste procedure si veda il [paragrafo 1](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
 > **Apri fattura**: è abilitato solo se il documento selezionato è nello stato *Riceuta* e apre la registrazione contabile/documento di acquisto/compenso a cui il file XML risulta abbinato.   
 > **Scarica allegato**: esegue il download del file XML selezionato.   
 > **Importa il file XML**: apre in automatico una finestra in cui selezionare il/i file da importare nel registro dei documenti SDI.    
-> **Parametri creazione registrazioni**: permette di impostare i parametri per la creazione della registrazione. Per maggiori dettagli vedere il [paragrafo 2](/docs/finance-area/sdi-documents/incoming-purchase-documents#2-parametri-creazione-automatica-registrazioni).    
-> **Creazione registrazione**: permette di creare in automatico la registrazione contabile a partire dal file XML ricevuto. Per maggiori dettagli vedere il [paragrafo 3](/docs/finance-area/sdi-documents/incoming-purchase-documents#3-contabilizzazione-automatica).    
-> **Creazione fattura di acquisto**: permette di creare la Fattura di Acquisto a partire del file XML. A seguito della creazione della fattura Fluentis effettua l'associazione automatica del DDT di Acquisto o dell'Ordine fornitore corrispondente, se presente. Per maggiori dettagli vedere il [paragrafo 4](/docs/finance-area/sdi-documents/incoming-purchase-documents#4-creazione-fattura-di-acquisto-ed-evasione-ddtordine).    
+> **Parametri creazione registrazioni**: permette di impostare i parametri per la creazione della registrazione. Per maggiori dettagli vedere il [paragrafo 2](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
+> **Creazione registrazione**: permette di creare in automatico la registrazione contabile a partire dal file XML ricevuto. Per maggiori dettagli vedere il [paragrafo 3](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
+> **Creazione fattura di acquisto**: permette di creare la Fattura di Acquisto a partire del file XML. A seguito della creazione della fattura Fluentis effettua l'associazione automatica del DDT di Acquisto o dell'Ordine fornitore corrispondente, se presente. Per maggiori dettagli vedere il [paragrafo 4](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
 > **Creazione compenso**: permette di creare il compenso a partire dal documento XML. Per procedere è necessario che il Fornitore (o l'Agente) selezionato abbia il flag *Ritenuta d'acconto* attivato. 
 
 
