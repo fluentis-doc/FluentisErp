@@ -1,59 +1,59 @@
 ---
-title: Ricerca Schede tecniche
+title: Pretraga tehničkih uputstva
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Controlli articolo > Schede tecniche**.   
+Filtar se nalazi na putanji **Kvaliteta > Kontrola artikala > Tehnička uputstva**.
 
-Le **Schede tecniche** catalogano tutte quelle informazioni che descrivono le caratteristiche dei prodotti associati come idonee ad un contratto, ad una specifica funzionale o ad un determinato impiego, possono essere personalizzabili per *Cliente*.   
-Vengono gestite le *revisioni* e la rintracciabilità tra *Schede tecniche* diverse*.   
-A standard sono disponibili le reportistiche di: *Scheda tecnica* (per uso interno) e *Scheda Prodotto* (ad uso commerciale).   
+Tehnička uputstva katalogiziraju sve one informacije koje opisuju karakteristike povezanih proizvoda kao prikladne za ugovor, funkcionalnu specifikaciju ili određenu namjenu, i mogu se prilagoditi za *Kupca*.  
+Upravlja se *revizijama* i praćenjem povezanosti među različitim *Tehničkim uputstvima*.  
+Standardno su dostupna izvješća: *Tehničko uputstvo* (za internu upotrebu) i *Kartica proizvoda* (za komercijalnu upotrebu).  
 
 
-Il filtro dati consente di inserire nuove *Schede tecniche* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+Filtriranje podataka omogućuje unos novih *Tehničkih uputstava* ili pretraživanje već postojećih radi njihovog pregledavanja, izmjene ili brisanja.  
 
-### ![](/img/neutral/common/search.png) Ricerca Schede tecniche
+### ![](/img/neutral/common/search.png) Pretraga tehničkih uputstva
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na gumb **Pretraži** kako bi se rezultati prikazali unutar mreže rezultata.   
 
-### ![](/img/neutral/common/new.png) Inserimento Schede tecniche
+### ![](/img/neutral/common/new.png) Unos tehničkih uputstva
 
-Per poter inserire nuove *Schede tecniche* è necessario premere il pulsante **Nuovo**.   
+Za unos novih *Tehničkih kartica* potrebno je pritisnuti gumb **Novo**.   
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Schede tecniche
+### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) Prikaz tehničkih uputstva
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Za otvaranje upravljanja u rezultirajućoj tablici potrebno je dvokliknuti na redak od interesa ili, selektirajući jedan ili više redaka, pritisnuti gumbe **Uredi** ili **Prikaži**. 
 
-*Pulsanti specifici*:   
+*Specifične tipke*:   
 
-### ![](/img/neutral/common/duplicate.png) Duplica Scheda
+### ![](/img/neutral/common/duplicate.png) Dupliciraj karticu
 
-Per poter duplicare una *Scheda tecnica* esistente in una nuova *Scheda tecnica* è necessario cliccare nella griglia sulla *Scheda tecnica* da cui si desidera duplicare e premere il pulsante **Duplica scheda**. Si può duplicare una sola *Scheda tecnica* alla volta. Viene visualizzata una richiesta di:   
-> **Tipo scheda**: è il *Tipo scheda* della nuova *Scheda tecnica* (dato obbligatorio).   
-> **Del cliente**: è il *Cliente* della nuova *Scheda tecnica*, viene proposto il conto *Cliente* della *Scheda tecnica* di origine.   
-> **Nuovo codice**: è il *Codice* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
-> **Duplica con rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, nella *Scheda tecnica* di origine (tabulatore *Schede correlate* della *Scheda tecnica* di origine) e nella *Scheda tecnica* di destinazione (nell'expander *Origine dati scheda* presente nei *dati di testata*).   
+Za dupliciranje postojeće *Tehničke kartice* u novu *Tehničku karticu* potrebno je kliknuti u tablici na *Tehničku karticu* koju želite duplicirati i pritisnuti gumb **Dupliciraj karticu**. Može se duplicirati samo jedna *Tehnička kartica* odjednom. Prikazuje se zahtjev za unos sljedećih podataka:   
+> **Vrsta lista**: je *Tip kartice* nove *Tehničke kartice* (obavezno polje).   
+> **Kupac**: je *Klijent* nove *Tehničke kartice*, predlaže se klijent iz originalne *Tehničke kartice*.   
+> **Nova šifra**: je *Šifra* nove *Tehničke kartice* (obavezno polje), predlaže se prema *Metodi kodiranja* pridruženoj *Tipu tehničke kartice*.   
+> **Dupliciraj sa sljedivošću**: označava želi li se zadržati odnos/praćenje, u originalnoj *Tehničkoj kartici* (tabulator *Povezane stvari* originalne *Tehničke kartice*) i u odredišnoj *Tehničkoj kartici* (u proširenju *Izvor podataka s kartica* unutar *podataka zaglavlja*).    
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-La nuova *Scheda tecnica* creata avrà la *Revisione* pari a *Zero*.   
-Al termine dell'elaborazione la nuova *Scheda tecnica* viene visualizzata.   
+Nakon toga pritisnuti tipku **OK** ili tipku **Otkaži** ako se želi nastaviti s aktivnošću dupliciranja ili odustati.  
+Nova *Tehnička kartica* koja se kreira imat će *Reviziju* postavljenu na *Nula*.  
+Po završetku obrade, nova *Tehnička kartica* se prikazuje.  
 
-### ![](/img/neutral/common/execute.png) Crea nuova revisione
+### ![](/img/neutral/common/execute.png) Stvori novu reviziju
 
-Per poter creare una nuova *Revisione* ad una *Scheda tecnica* esistente è necessario cliccare nella griglia sulla *Scheda tecnica* da cui si desidera creare una nuova *Revisione* e premere il pulsante **Crea nuova revisione**. Si può creare una nuova *Revisione* per una sola *Scheda tecnica* alla volta.   
-Viene creata una nuova *Scheda tecnica*, con tutte le informazioni della *Scheda tecnica* di origine ma con indice di *Revisione* incrementato e la *Data di inizio validità* pari alla data odierna.   
-La *Scheda tecnica* di origine finisce la sua validità, la *Data fine validità* viene impostata pari alla data odierna.   
-Al termine dell'elaborazione la nuova *Revisione* della *Scheda tecnica* viene visualizzata.   
+Da bi se kreirala nova *Revizija* postojeće *Tehničke kartice*, potrebno je kliknuti u priakzu na *Tehničku karticu* iz koje se želi kreirati nova *Revizija* i pritisnuti tipku **Stvori novu reviziju**. Može se kreirati nova *Revizija* samo za jednu *Tehničku karticu* odjednom.  
+Kreira se nova *Tehnička kartica*, sa svim informacijama iz izvornog dokumenta, ali s povećanim indeksom *Revizije* i *Datumom početka važenja* postavljenim na današnji datum.  
+Izvorna *Tehnička kartica* završava svoje važenje, a *Datum završetka važenja* se postavlja na današnji datum.  
+Po završetku obrade, nova *Revizija* *Tehničke kartice* se prikazuje. 
 
-### ![](/img/neutral/common/item-web.png) Crea Piano di controllo
+### ![](/img/neutral/common/item-web.png) Izradi kontrolni plan
 
-Dalla *Scheda tecnica* è possibile creare un *Piano di controllo*; per fare ciò è necessario cliccare nella griglia sulla *Scheda tecnica* da cui si desidera duplicare e premere il pulsante **Crea nuovo Piano di controllo**. Si può creare un nuovo *Piano di controllo* per una sola *Scheda tecnica* alla volta.   
-Viene creato un nuovo *Piano di controllo*, vengono copiate solamente le *Proprietà* di origine con l'indicatore *Prove da rilevare*, tutte le altre informazioni della *Scheda tecnica* ma con indice di *Revisione* pari a *zero* e con *Data di inizio validità* pari alla data odierna. Verrà visualizzata una richiesta di:   
-> **Tipo piano di controllo**: è il *Tipo piano di controllo* del nuovo *Piano di controllo* (dato obbligatorio).   
-> **Numero**: è il *Numero* progressivo del nuovo *Piano di controllo* (dato obbligatorio), viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo piano di controllo* e alla data odierna.   
-> **Crea mantenendo la rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, della *Scheda tecnica* di origine, nel *Piano di controllo* di destinazione (nell'expander *Origine Piano di controllo* presente nei *dati di testata*).   
+Iz *Tehničke kartice* moguće je kreirati *Kontrolni plan*; za to je potrebno kliknuti u prikazu na *Tehničku karticu* iz koje se želi kreirati kontrolni plan i pritisnuti tipku **Izradi kontrolni plan**. Novi *Kontrolni plan* može se kreirati samo za jednu *Tehničku karticu* odjednom.  
+Kreira se novi *Kontrolni plan*, kopiraju se samo *Svojstva* izvora s indikatorom *Mjerenja koja se trebaju provesti*, dok sve ostale informacije iz *Tehničke kartice* ostaju, ali s indeksom *Revizije* postavljenim na *nula* i *Datumom početka važenja* postavljenim na današnji datum. Prikazat će se upit za:  
+> **Tip kontrolnog plana**: je *Vrsta kontrolnog plana* novog *Kontrolnog plana* (obavezno polje).  
+> **Broj**: je progresivni broj novog *Kontrolnog plana* (obavezno polje), predlaže se na temelju *Numeracije* povezane s *Vrsta kontrolnog plana* i današnjim datumom.  
+> **Stvara održavanje sljedivosti**: označava hoće li se zadržati veza/praćenje izvornog *Tehničke kartice* u *Kontrolnom planu* odredišta (u expanderu *Izvor Kontrolnog plana* u *podacima zaglavlja*).  
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Al termine dell'elaborazione il nuovo *Piano di controllo* viene visualizzato.   
+Nakon toga se pritisne tipka **OK** ili tipku **Otkaži** ako se želi nastaviti s aktivnošću kreiranja ili odustati.  
+Po završetku obrade, novi *Kontrolni plan* bit će prikazan.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
