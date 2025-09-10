@@ -114,7 +114,7 @@ In this case, the **Load/Unload Parameters** are the same as those seen in the p
 
 ## **Receiving Goods with Alternative Units of Measure**
 
-The management of the alternative unit of measure is enabled if the **Default WMS** flag present in the [alternative UM tab of the item registry](/docs/erp-home/registers/items/create-new-item#23-um-alternativa) is active.        
+The management of the alternative unit of measure is enabled if the **Default WMS** flag present in the [alternative UM tab of the item registry](/docs/erp-home/registers/items/create-new-item) is active.        
 In that case, in the receiving form, the fields for the alternative unit of measure and quantity are also displayed, where the conversion factor (CF) used is calculated by dividing the management quantity (UM Gest) present in the supplier order by the alternative quantity (UM Alt) (if it coincides with the one that has the default WMS flag) always present in the supplier order: **CF = UM Gest / UM Alt**          
 Therefore, within the form, when the alternative quantity is modified, the management quantity will be calculated by multiplying the alternative quantity by the conversion factor calculated previously; while, if the management quantity is modified, the alternative quantity will be calculated by dividing the management quantity by the conversion factor.
 

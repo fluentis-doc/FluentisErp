@@ -105,7 +105,7 @@ După finalizarea modificărilor, cu butonul de închidere, va fi creat avizul d
 
 ## Recepţie mărfuri cu unități de măsură alternative
 
-Gestionarea unităților de măsură alternative este activată dacă opțiunea **WMS implicit** prezent în [UM alternative din registru articol](/docs/erp-home/registers/items/create-new-item#23-um-alternativa) este activat.        
+Gestionarea unităților de măsură alternative este activată dacă opțiunea **WMS implicit** prezent în [UM alternative din registru articol](/docs/erp-home/registers/items/create-new-item) este activat.        
 În acest caz, în form-ul de recepție vor fi vizualizate de asemenea câmpurile unității de măsură alternative și cantității, unde factorul de conversie utilizat este calculat prin împărțirea cantității de gestionare la cantitatea alternativă (dacă coincide cu cea care are opțiunea WMS implicit) prezentă în ordinul furnizorului.         
 Acest factor de conversie este utilizat prin înmulțire sau împărțire (în funcție de parametrul respectiv indicat în parametrii inițiali de gestiune) pentru a obține cantitățile în unitatea de măsură alternativă în form-ul principal de creare a avizului și în cel de creare a UdI.
 
