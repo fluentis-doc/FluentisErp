@@ -1,3 +1,3 @@
-**Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisti.<br />
-Il pulsante diventa attivo se il documento è salvato, ma non caricato.<br />
-Con clic su questo pulsante si apre la form corrispondente dove: inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante **Execute**. In questa form vengono riportati gli articoli che spno stati inseriti con natura Imballo e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned). 
+**Upravljanje pakiranjem**: Omogućuje otvaranje upravljanja povratnom ambalažom korištenom u dokumentu nabave.<br />
+Tipka postaje aktivna ako je dokument spremljen, ali nije utovaren.<br />
+Klikom na ovu tipku otvara se odgovarajući obrazac gdje se: unese količina, odabere redak i izvrši prijenos odabrane ambalaže u retke artikala klikom na tipku **Izvrši**. U ovom obrascu prikazani su artikli koji su uneseni s vrstom Pakiranje i koji su u tablici. [Povratna ambalaža](/docs/configurations/tables/logistics/package-to-be-returned). 
