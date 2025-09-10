@@ -31,6 +31,6 @@ In order for the procedure to be successful, the following must be met:
 At the bottom of the form, there is the flag **Use non-deductible account**.  
 The value (ON / OFF) of the flag can be predefined in the [**asset parameters**](/docs/configurations/parameters/finance/fixed-assets-parameters).
 
-If active, the non-deductible portion of the depreciation will be automatically recorded in the specific account that has been defined within the table of [**asset categories**](/docs/configurations/tables/finance/fixed-asset-category#seconda-tabella).
+If active, the non-deductible portion of the depreciation will be automatically recorded in the specific account that has been defined within the table of [**asset categories**](/docs/configurations/tables/finance/fixed-asset-category).
 
 The percentage of non-deductibility of the depreciation is defined through the field ***Deductibility type***, also within the asset categories.

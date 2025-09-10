@@ -30,7 +30,7 @@ Affinché la procedura possa andare a buon fine è necessario che:
 E' presente, in basso nella maschera, il flag **Usa conto non deducibile**.
 Il valore (ON / OFF) del flag può essere predefinito nei [**parametri cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters).
 
-Se attivo, la parte non deducibile fiscalmente dell'ammortamento sarà contabilizzata automaticamente sul conto specifico che è stato definito all'interno della tabella delle [**categorie cespite**](/docs/configurations/tables/finance/fixed-asset-category#seconda-tabella).
+Se attivo, la parte non deducibile fiscalmente dell'ammortamento sarà contabilizzata automaticamente sul conto specifico che è stato definito all'interno della tabella delle [**categorie cespite**](/docs/configurations/tables/finance/fixed-asset-category).
 
 La percentuale di indeducibilità dell'ammortamento è definita attraverso il campo ***Tipo deducibilità*** sempre all'interno delle categorie cespiti.
 

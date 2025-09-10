@@ -28,7 +28,7 @@ Remember to select all the rows present in the grid to value them in the closing
 At the bottom of the form, there is the flag **Use non-deductible account**.  
 The value (ON / OFF) of the flag can be predefined in the [**asset parameters**](/docs/configurations/parameters/finance/fixed-assets-parameters).
 
-If active, the non-deductible portion of the amortization will be automatically accounted for in the specific account that has been defined within the table of [**asset categories**](/docs/configurations/tables/finance/fixed-asset-category#seconda-tabella).
+If active, the non-deductible portion of the amortization will be automatically accounted for in the specific account that has been defined within the table of [**asset categories**](/docs/configurations/tables/finance/fixed-asset-category).
 
 The percentage of non-deductibility of the amortization is defined through the field ***Deductibility type***, also within the asset categories.
 

@@ -99,7 +99,7 @@ Il flag di Ammortamento fiscale prevede la gestione fiscale della riga ammortame
 ### Ammortamento indeducibile
 Sono presenti due colonne per il calcolo della quota *deducibile* ed *indeducibile* dell'ammortamento.
 
-La percentuale di indeducibilità dell'ammortamento è definita attraverso il campo ***Tipo deducibilità*** all'interno delle [**categorie cespite**](/docs/configurations/tables/finance/fixed-asset-category#seconda-tabella).
+La percentuale di indeducibilità dell'ammortamento è definita attraverso il campo ***Tipo deducibilità*** all'interno delle [**categorie cespite**](/docs/configurations/tables/finance/fixed-asset-category).
 
 Il **Conto / Sottoconto/ Descrizione non deducibile** viene popolato in automatico se all'interno della categoria cespite in abbinamento con il Tipo deducibilità è stato definito il conto contabile da utilizzare automaticamente.
 

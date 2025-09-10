@@ -87,7 +87,7 @@ The fiscal depreciation flag provides for the fiscal management of the depreciat
 
 There are two columns for calculating the *deductible* and *non-deductible* portions of amortization.
 
-The percentage of non-deductibility of amortization is defined through the field ***Deductibility Type*** within the [**asset categories**](/docs/configurations/tables/finance/fixed-asset-category#seconda-tabella).
+The percentage of non-deductibility of amortization is defined through the field ***Deductibility Type*** within the [**asset categories**](/docs/configurations/tables/finance/fixed-asset-category).
 
 The **Account / Detail account / Non-deductible Description** is automatically populated if the accounting account to be used automatically has been defined within the asset category in conjunction with the Deductibility Type.
 
