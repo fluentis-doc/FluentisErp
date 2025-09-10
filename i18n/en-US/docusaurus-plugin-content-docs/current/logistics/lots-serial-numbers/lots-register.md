@@ -88,6 +88,9 @@ In this section, the fundamental data of the documents that have contributed to 
 ### Other Loading Documents 
 
 In this section, the fundamental data of any other documents in which the batch has been committed, in relation to the document selected in the upper grid, are displayed.
+The lines are displayed when a lot movement is inherited from another document, that is, when multiple documents refer to the same lot movement lines.  
+Example: the lot movements of purchase delivery notes can be inherited from purchase invoices.  
+In the first grid, the main (source) lines of the lot movements coming from the documents are displayed, while in the second grid, the lines of the lot movements coming from documents that derive from the line present in the upper grid (thus inherited) are displayed.
 
 ### Unloading
 
@@ -122,6 +125,9 @@ In this section, the fundamental data of all documents, in chronological order, 
 ### Other Unloading Documents 
 
 In this section, the fundamental data of any other documents in which the batch has been committed, in relation to the document selected in the upper grid, are displayed.
+The lines are displayed when a lot movement is inherited from another document, that is, when multiple documents refer to the same lot movement lines.      
+Example: the lot movements of the materials of a production order can be inherited from the materials of the reported items, the lot movements of sales orders can be inherited in picking, in delivery notes, or in sales invoices.                   
+In the first grid, the main (source) lines of the lot movements coming from the documents are displayed, while in the second grid, the lines of the lot movements coming from documents that derive from the line present in the upper grid (thus inherited) are displayed.
 
 **Document type**: in this field, the type of document within which the batch is present, in relation to the document selected in the upper grid, is displayed. It can be a sales DDT, a sales invoice, a picking list, a delivery DDT for processing, a return for processing;
 
