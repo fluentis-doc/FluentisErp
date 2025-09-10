@@ -5,23 +5,31 @@ sidebar_position: 2
 
 The table opens via the path **Tables > Sales > Agent Category**.
 
-It allows the insertion of new records or the search for existing ones to view, modify, or delete them.
-
-The form consists of a filter area and a results area. Once all desired filters are set, simply click the **Search** button to display the results within the results grid.
-
-To insert new records, you must click on the first empty row in the grid or press the **New** button.
-
-The **Agent Category** table, unique for companies present in the database, is the base table for the Enasarco/FIRR calculations of the agents.
+The table is unique for all companies present in the database and is the basis for the enasarco/firr calculations of the agents.
 
 ### Agent Category
 
-The grid contains the categories for the specification of Enasarco, such as:
+It is the main grid of the form and contains the agent categories. For each row of this grid, the detailed data is defined in the two subsequent grids for the specification of Enasarco and FIRR.
 
-**Code/Description**: code and description that indicates the agent reference code. The code must be unique;
+:::tip[Link]
+The entries in the main grid (which link to the calculation details) can be associated in the [**agent registry**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail) or (by default) within the details of the table [**Withholding Types**](/docs/configurations/tables/finance/withholding-tax-types). The withholding type can in turn be linked to the agent registry (and in this case, if it has the default agent category, it allows not having to match the latter each time with the agent).
+:::
 
-**MinEnasarco**: value on a quarterly basis. It is the minimum amount of the Enasarco;
+**Code/Description**: code and description that indicates the type of agent. The code must be unique;
 
-**MaxEnasarco:** value on an annual basis. It is the maximum amount of the Enasarco (maximal), and once reached, no further social security payments can be made on behalf of the agent;
+**One-firm:** Flag that identifies one-firm categories (exclusive mandate with a single principal company);
+
+**Multifirm:** Flag that identifies multifirm categories (e.g., agent collaborating with multiple principal companies);
+
+**Generic:** Flag that identifies generic categories (e.g., agencies established in the form of a company);
+
+### Enasarco
+
+**Start Date of Validity**: the start date of validity of the detail, which will continue to operate until a new detail with a later start date of validity is read.
+
+**Min Enasarco:** ***quarterly base value***. It is the minimum amount of the Enasarco contribution (e.g., 250.50 for single mandate).
+
+**MaxEnasarco:** ***value on an annual basis***. It is the maximum amount of the Enasarco (maximal), and once reached, no further social security payments can be made on behalf of the agent;
 
 **Withholding Tax Type**: this is the type of withholding to apply to the agent. For further details, refer to the administrative section [Withholding Tax Types](/docs/configurations/tables/finance/withholding-tax-types). It is advisable to set this code in the agent contact.
 
@@ -31,11 +39,6 @@ The grid contains the categories for the specification of Enasarco, such as:
 
 **Base amount insurance fund**: the percentage (100%) of the application of the Enasarco percentages on the total commission;
 
-**One-firm:** Flag that identifies the one-firm categories;
-
-**Multifirm:** Flag that identifies the multifirm categories;
-
-**Generic:** Flag that identifies the generic categories;
 
 ### FIRR
 
@@ -59,4 +62,3 @@ Rates for multifirm agents
 
 ![](/img/it-it/configurations/tables/sales/agent-category/image05.png)
 
-For all that is not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).
