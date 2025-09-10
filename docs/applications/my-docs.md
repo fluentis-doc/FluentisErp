@@ -1,4 +1,5 @@
 ---
+id: my-doc
 title: Document Manager
 sidebar_position: 4
 ---

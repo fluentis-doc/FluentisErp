@@ -1,4 +1,5 @@
 ---
+id: my-doc
 title: Exemplu
 unlisted: true
 ---
