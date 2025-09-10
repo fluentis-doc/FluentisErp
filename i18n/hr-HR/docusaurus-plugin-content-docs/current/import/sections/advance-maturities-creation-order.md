@@ -1,15 +1,15 @@
-Nella testata dell’ ordine è necessario impostare due righe con le condizioni di pagamento, una riga gestirà l’ anticipo e la seconda riga avrà l’ impostazione per la residua percentuale.
+U zaglavlju narudžbe potrebno je postaviti dva retka s uvjetima plaćanja, jedan redak će upravljati avansom, a drugi redak će imati postavku za preostali postotak.
 
-Si veda in dettaglio l'immagine.
+Pogledajte detaljno sliku.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order.png)
 
-Questo porterà nei riepiloghi dell’ ordine la presenza di una scadenza di anticipo da inviare alla contabilità, se lo si desidera, tramite l’ apposito pulsante ***Creazione partita di anticipo:***
+Ovo će u sažecima narudžbe donijeti prisutnost dospijeća za predujam koji se, ukoliko je potrebno, može prenijeti u računovodstvo putem odgovarajuće tipke. ***Izrada stavke predujma:***
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order-creation.png)
 
-Premendo questo pulsante si aprirà una maschera nella quale verrà richiesto all’ utente due dati aggiuntivi: una descrizione da riportare in gestione dell’ anticipo e un tipo documento da associare alla partita extra-contabile che sarà creata.
+Pritiskom na ovu tipku otvorit će se obrazac u kojem će se od korisnika zatražiti dva dodatna podatka: opis koji će se unijeti u upravljanje predujmom i vrsta dokumenta koja će se povezati s knjigovodstvenom stavkom koja će biti stvorena.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturity-order-creation-popup.png)
 
-Il risultato sarà la creazione di una partita extra-contabile per l’ importo e la scadenza dell’ ordine. Questa operazione sarà visibile nella maschera specifica di gestione partite d’ anticipo (in commento).
+Rezultat će biti stvaranje dodatne knjigovodstvene stavke za iznos i dospijeće narudžbe. Ova operacija bit će vidljiva u obrascu za upravljanje predujmom (u komentaru).
