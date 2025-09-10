@@ -1,7 +1,7 @@
-**Duplica**: il pulsante consente la creazione di una copia di un documento, riportando tutte le condizioni del documento di origine, ma con i dati attuali.  
-Utilizzata per frequenti spedizioni di merci similari dello stesso soggetto documento.
+**Dupliciraj**: Gumb omogućuje stvaranje kopije dokumenta, zadržavajući sve uvjete izvornog dokumenta, ali s aktualnim podacima.  
+Koristi se za česte isporuke slične robe istog subjekta dokumenta.
 
 *Procedura*:  
-- selezionare il documento da duplicare e cliccare sul pulsante di **Duplica**;  
-- l'applicazione inizierà la creazione del documento e aprirà la finestra pop-up **Riepilogo duplica** dove completare i dati;    
-- click **OK** per confermare l'operazione.
+- označiti dokument koji želite duplicirati i kliknite na gumb **Dupliciraj**;  
+- aplikacija će započeti s izradom dokumenta i otvorit će se pop-up prozor **Sažetak dupliciranja** u kojem možete dovršiti podatke;    
+- kliknite **OK** da biste potvrdili izvršenje operacije.
