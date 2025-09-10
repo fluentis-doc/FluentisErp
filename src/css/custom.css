@@ -240,7 +240,3 @@ html[data-theme="dark"] .card {
   background-color: #050000; /* Colore di sfondo scuro */
   color: #fff;            /* Testo bianco per migliore leggibilità */
 }
-
-.hidden {
-display: none !important;
-}
