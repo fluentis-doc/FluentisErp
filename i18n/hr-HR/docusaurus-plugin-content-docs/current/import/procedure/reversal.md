@@ -1,6 +1,6 @@
-**Storno**: il pulsante consente di stornare parzialmente o totalmente un documento. Con questa funzione sarà possibile creare un documento di storno che scaricherà(in acquisti)/Caricherà(in vendite) il magazzino.  
+**Storno**: Tipka omogućuje djelomično ili potpuno storniranje dokumenta. Ovom funkcijom moguće je stvoriti dokument za storniranje koji će istovariti (u nabavci) / utovariti (u prodaji) skladište.  
 
 *Procedura*:  
-- selezionare il documento da stornare e cliccare sul pulsante di **Storno**. L'applicazione aprirà una finestra pop-up con tutte le righe articolo del documento di origine;  
-- inserire in questa form: il tipo di documento di storno che si vuole creare e, per ogni articolo, indicare la quantità da stornare, la causale di storno e settare il flag **Da stornare**;  
-- click **OK** per confermare l'operazione.
+- odabrati dokument koji treba stornirati i kliknuti na gumb **Storno**. Aplikacija će otvoriti pop-up prozor sa svim retcima artikala iz izvornog dokumenta;  
+- unijeti u ovaj obrazac: tip storna dokumenta koji želite stvoriti i, za svaki artikal, naznačiti količinu koja se vraća, predložak storna i postaviti oznaku **Poništiti**;  
+- kliknite **OK** za potvrdu operacije.
