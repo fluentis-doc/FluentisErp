@@ -4,4 +4,4 @@
 
 *Puosebna tipka*
 
-> **Izbriši rabata**: omogućuje brisanje popusta povezanog s odabranim artiklom u gornjoj mreži.
+> **Izbriši rabate**: omogućuje brisanje popusta povezanog s odabranim artiklom u gornjoj mreži.
