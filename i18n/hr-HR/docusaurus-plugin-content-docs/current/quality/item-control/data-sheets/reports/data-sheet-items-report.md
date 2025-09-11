@@ -1,24 +1,24 @@
 ---
-title: Stampa Scheda tecnica
+title: Ispis tehničkih uputstva
 sidebar_position: 1
 ---
 
-Il filtro di esecuzione report si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Stampe > Stampa Scheda tecnica**.   
+Filter za izvršenje izvještaja nalazi se na putanji **Kvaliteta > Kontrola artikla > Tehnička uputstva > Ispisi > Ispis tehničkih uputstva**. 
 
-:::important A cosa serve
-Questo filtro di stampa, a differenza della stampa eseguibile dal filtro e dalla gestione delle *Schede tecniche* che permette la stampa delle informazioni generali della *Scheda*, consente di indicare per quale particolare *Articolo* specifico stampare le informazioni della *Scheda tecnica*.   
+:::important Čemu služi
+Ovaj filter ispisa, za razliku od ispisa koji se može izvršiti preko filtera i upravljanja *Tehničkim uputstvima* koji omogućuje ispis općih informacija tehničke kartice, omogućuje odrediti za koji se konkretni *Artikl* žele ispisati informacije tehničke kartice (uputstva).
 :::
 
-Il filtro di esecuzione report consente di ricercare gli *Articoli* presenti nelle *Schede tecniche* per poterli stampare.   
-Il report predefinito è **Scheda Prodotto** - *Scheda tecnica dell'Articolo* che riporta l'elenco delle *Proprietà* indicate nella *Scheda tecnica*.   
+Filter za izvršenje izvještaja omogućuje pretraživanje *Artikala* prisutnih u *Tehničkim uputstvima* radi njihovog ispisa.  
+Zadani izvještaj je **Tehnički list** - *Tehnička kartica Artikla* koja prikazuje popis *Svojstava* navedenih u *Tehničkom uputstvu*.  
 
-### ![](/img/neutral/common/search.png) Ricerca Schede tecniche
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato *Schede tecniche* (elenco di sinistra).   
+### ![](/img/neutral/common/search.png) Traži tehnička uputstva
+Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar prikaza *Tehničkih uputstva* (popis s lijeve strane).   
 
-Dalla griglia risultato delle *Schede tecniche* è necessario selezionare un'unica *Scheda tecnica* desiderata per poter visualizzare, nella griglia di risultato *Articoli* (elenco di destra) l'elenco degli *Articoli* in essa associati.   
+Iz prikaza rezultata *Tehničkih uputstva* potrebno je odabrati jednu željenu *Tehničko uputstvo* kako bi se u prikazu rezultata *Artikala* (popis s desne strane) prikazao popis *Artikala* povezanih s njom.
 
-Dalla griglia risultato degli *Articoli* è necessario selezionare gli *Articoli* che si desiderano stampare.   
+Iz prikaza rezultata *Artikala* potrebno je odabrati one *Artikle* koje želite ispisati.
 
-In calce alla stampa **Scheda Prodotto** standard viene anche riportata la *Dichiarazione di non responsabilità* del *Tipo dichiarazione* associata all'*Articolo*. Se non indicato verrà riportata la *Dichiarazione di non responsabilità* del *Tipo dichiarazione* indicata in *Tipo dichiarazione da stampare* in caso l'articolo ne sia sprovvisto.
+Na dnu standardnog ispisa **Detalji o proizvodu** također se prikazuje *Izjava o odricanju odgovornosti* prema *Vrsti izjave* povezanoj s *Artiklom*. Ako nije navedeno, prikazat će se *Izjava o odricanju odgovornosti* prema *Vrsti izjave* navedena u *Vrsti izjave za ispis* ako artikl nema svoju.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
