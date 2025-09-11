@@ -1,8 +1,8 @@
-Possono essere inseriti solo gli sconti, espressi in percentuale, da applicare al totale del documento.
+Mogu se unijeti samo popusti, izraženi u postotku, koji će se primijeniti na ukupni iznos dokumenta.
 
-Gli sconti inseriti in questa sezione vengono calcolati e riportati su ogni articolo del documento, nel *tab Articoli > tab Sconti/Listini*.
+Popusti uneseni u ovom odjeljku izračunavaju se i prikazuju na svakom artiklu dokumenta, u *kartica Artikli > kartica Popusti/Cjenici*.
 
-**Tipo/Descrizione sconto**: permette di scegliere le tipologie di sconto (predefiniti in [Tipi sconti](/docs/configurations/tables/general-settings/discount-types)), attribuendo alla tipologia la priorità di applicazione dello sconto e se lo sconto viene calcolato sull'imponibile o in cascata rispetto agli sconti precedentemente applicati.  
-**Priorità**: rappresenta la priorità di applicazione dello sconto; l'ordinamento da applicare avviene in modo crescente.  
-**Cascata/Imponibile**: per definire se il calcolo dello sconto usa come imponibile il (prezzo*quantità)-(sconti già calcolati) oppure (prezzo*quantità).  
-**Valore**: valore numerico dello sconto finale da applicare.  
+**Tip/Opis popusta**: omogućava odabir tipologije popusta (predefinirane u [Tipovima popusta](/docs/configurations/tables/general-settings/discount-types)), dodijeljujući tipologiji prioritet primjene popusta i hoće li se popust obračunavati na osnovicu ili kaskadno u odnosu na već prethodno primijenjene popuste.
+**Prioritet**: predstavlja prioritet primjene popusta; redoslijed koji se primjenjuje odvija se na rastući način. 
+**Kaskadni/Osnovni**: za definirati da li izračun popusta koristi kao osnovu (cijena * količina) - (već obračunati popusti) ili (cijena * količina).  
+**Vrijednost**: numerička vrijednost popusta koji treba primijeniti.  
