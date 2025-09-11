@@ -1,5 +1,5 @@
-**Agente**: l'agente collegato con la relativa provvigione per l'articolo selezionato; il dato corrisponde a quello presente in *Testata > tab Agenti*. La percentuale può essere cambiata.
+**Trgovački predstavnik**: trgovački predstavnik povezan s odgovarajućom provizijom za odabrani artikal; podatak odgovara onome što je prisutno u *Zaglavlje> kartica Trgovački predstavnik*. Postotak se može promijeniti.
 
-*Pulsante specifico*
+*Posebna tipka*
 
-> **Cancella agenti**: permette di cancellare l' agente associato ad un articolo.
+> **Izbriši Trgovačkog predstavnika**: omogućuje brisanje trgovačkog predstavnika povezanog s artiklom.
