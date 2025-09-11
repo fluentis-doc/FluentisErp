@@ -1,15 +1,15 @@
-La sezione in basso, a destra, presenta il riassunto dei costi che concorrono alla formazione del prezzo finale dell'articolo selezionato nella griglia degli articoli.
+Donji desni dio prikazuje sažetak troškova koji formiraju konačnu cijenu odabranog artikla u mreži artikala.
 
-**Prezzo unitario**: il valore del campo Prezzo; 
+**Jedinična cijena**: vrijednost polja Cijena;
 
-**Quantità**: il valore del campo Quantità;
+**Količina**: vrijednost polja Količina;
 
-**Importo di riga**: Prezzo articolo * Quantità articolo; 
+**Iznos u retku**: Cijena artikla * Količina artikla
 
-**Totale sconti**: la somma degli sconti dell'articolo, inclusi anche gli sconti finali;
+**Ukupno rabat**: zbroj popusta na artikl, uključujući i konačne popuste;
 
-**Imponibile**: Importo lordo - Sconti;
+**Osnovica**: Bruto osnovica - Popusti;
 
-**Imposta**: Imponibile * aliquota IVA dell'articolo; 
+**Porez**: Iznos * stopa PDV-a artikla; 
 
-**Totale**: Imponibile + Imposta.
+**Ukupno**: Iznos + Porez.
