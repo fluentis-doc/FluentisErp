@@ -1,3 +1,3 @@
-Può contenere informazioni sui centri di costo/profitto sui quali sono distribuiti i valori degli articoli.
+Može sadržavati informacije o troškovnim/profitnim centrima na kojima su distribuirane vrijednosti artikala.
 
-Questi dati possono essere inseriti manualmente oppure *automaticamente* (nel caso in cui i centri di costo/profitto siano stati inseriti precedentemente nell'*anagrafica contatto*, *anagrafica articolo* oppure nel *piano dei conti*).
+Ovi podaci mogu se unijeti ručno ili *automatski* (u slučaju da su centri troškova/profita prethodno uneseni u *šifarnik kontakta*, *šifarnik artikla* ili u *kontni plan*).
