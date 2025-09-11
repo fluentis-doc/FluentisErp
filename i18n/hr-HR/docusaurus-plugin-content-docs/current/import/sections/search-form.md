@@ -1,7 +1,7 @@
-Consente di ricercare tutti i documenti con lo scopo di visualizzarli, modificarli, ed eventualmente cancellarli oppure procedere all'inserimento di un nuovo documento; la finestra si compone di un'area di filtro e da una griglia di risultato.
+Omogućuje pretraživanje svih dokumenata s ciljem da ih se prikaže, izmijeni, eventualno i obriše ili nastavi s unosom novog dokumenta; prozor se sastoji od područja za filtriranje i mreže rezultata.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Jednom kada su postavljeni svi željeni filteri, dovoljno je kliknuti na tipku **Traži** koji se nalazi u *Izborniku* za prikaz rezultata unutar mreže rezultata.
 
-Per aprire i dettagli di un documento, basterà selezionarlo e fare doppio click con il mouse, oppure cliccare sul pulsante **Modifica** (consente di entrare nei dettagli e modificarli) o sul pulsante **Visualizza** (consente di entrare nei dettagli e visualizzarli ma senza poterli modificare).
+Za otvaranje detalja dokumenta, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gtipkuumb **Izmijeni** (omogućuje ulazak u detalje i njihovo uređivanje) ili na tipku **Prikaži** (omogućuje ulazak u detalje i njihovo prikazivanje, ali bez mogućnosti uređivanja).
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za detalje, općenito o funkcioniranju obrazaca, pogledajte poveznicu.[Funkcionalnosti, tipke i polja općenito](/docs/guide/common).
