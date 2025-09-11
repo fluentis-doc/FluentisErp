@@ -1,7 +1,7 @@
-**Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione. Gli sconti possono essere ripresi: dall'anagrafica cliente, dalla soluzione di pagamento assegnata al documento, dal listino dall'associazione listino-cliente. Tutti i dati proposti sono modificabili.
+**Popusti**: prikazuju se svi popusti povezani s artiklom, svaki s vlastitom osnovom za izračun i dodjelu. Popusti se mogu preuzeti: iz šifarnika kupca, iz uvjeta plaćanja dodijeljenog dokumentu, iz cjenika kupca. Svi predloženi podaci su promjenjivi.
 
-**Valori listino**: viene proposto il listino dal quale è stato ripreso l'articolo, con la data inizio/fine validità, con condizioni particolari di vendita (es. scaglione di sconto) assegnate all'articolo nel listino.
+**Cjenik**: prikazuje se cjenik iz kojeg je artikl preuzet, s datumom početka/kraja valjanosti, s posebnim uvjetima prodaje (npr. razred popusta) dodijeljenim artiklu u cjeniku.
 
-*Pulsante specifico*
+*Puosebna tipka*
 
-> **Cancella sconto**: permette di cancellare lo sconto associato all'articolo selezionato nella griglia soprastante.
+> **Izbriši rabata**: omogućuje brisanje popusta povezanog s odabranim artiklom u gornjoj mreži.
