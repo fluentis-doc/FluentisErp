@@ -1224,7 +1224,7 @@
     "description": "The label for category Controllo articoli in sidebar quality"
   },
   "sidebar.quality.category.Schede tecniche": {
-    "message": "Data sheets",
+    "message": "Tehnička uputstva",
     "description": "The label for category Schede tecniche in sidebar quality"
   },
   "sidebar.quality.category.Procedure": {
