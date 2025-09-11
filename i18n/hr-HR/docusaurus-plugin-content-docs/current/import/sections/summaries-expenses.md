@@ -1,7 +1,7 @@
-Sono proposte le spese inserite nell'anagrafica contatto, nel tab *Spese/Sconti*.
+Ovdje su troškovi uneseni u šifarniku kontakta, na kartici *Troškovi/Popusti*.
 
-Inoltre c'è la possibilità di inserire spese che fanno riferimento solo al documento in uso.
+Također postoji mogućnost unosa troškova koji se odnose samo na korišteni dokument.
 
-**Tipo/Descrizione**: permette di scegliere le tipologie di spesa (predefiniti in *Tipi spese*, attribuendo alla tipologia la percentuale di spesa da applicare.  
-**Percentuale/Valore**: campo che identifica se calcolare le spese con una percentuale oppure con un valore monetario predefinito.  
-**Percentuale**: valore numerico della percentuale di spesa.  
+**Tip/Opis**: omogućuje odabir tipa troškova (predefiniranih u *Tipovima troška*), dodjeljujući tipu postotak troška koji se treba primijeniti. 
+**Postotak/Vrijednost**: polje koje identificira hoće li se troškovi izračunati s postotkom ili s unaprijed definiranim novčanim iznosom.  
+**Postotak**: numerička vrijednost postotka troškova. 
