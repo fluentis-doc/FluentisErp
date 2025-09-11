@@ -1,27 +1,27 @@
-**Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli;
+**Bruto iznos artikala**: predstavlja zbroj vrijednosti svih artikala;
 
-**Acconto**: rappresenta il valore dell' eventuale acconto ricevuto per il documento;
+**Predujam**: predstavlja vrijednost eventualnog primljenog predujma;
 
-**Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*
+**Iznos poklona**: predstavlja iznos artikala tipa poklon unesenih u karticu *Articoli*.
 
-**Totale sconti applicati**: rappresenta il valore totale dei sconti applicati sugli articoli, ma senza i sconti finali. 
+**Ukupni primjenjeni rabati**: predstavlja ukupnu vrijednost popusta primijenjenih na artikle, ali bez konačnih popusta. 
 
-**Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*; 
+**Neto iznos artikala**: *Bruto iznos artikala* – *Ukupni primijenjeni popusti*; 
 
-**Totale sconti finali**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli; 
+**Ukupni konačni rabati**: predstavlja vrijednost konačnih popusta izraženih u postotku na bruto iznos artikala; 
 
-**Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*;
+**Ukupno s neto finalnim rabatima**: *Neto iznos artikala* - *Ukupni konačni rabati*;
 
-**Spese non documentate**: rappresenta il valore delle spese inserite nel tab precedente come articoli di *Tipo spese*; 
+**Nedokumentirani troškovi**: predstavlja vrijednost troškova unesenih u prethodnoj kartici kao artikle *Tip trošak*; 
 
-**Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*; 
+**Troškovi naplate**: predstavlja zbroj troškova naplate unesenih u mreži *Naknade*; 
 
-**Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*; 
+**Troškovi ovjere**: predstavlja zbroj troškova ovjere unesenih u mreži *Naknade*;
 
-**Spese documentate**: rappresenta il valore delle spese inserite nella griglia *Spese*; 
+**Dokumentirani troškovi**: predstavlja vrijednost troškova unesenih u mreži *Naknade*; 
 
-**Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale spese non documentati* + *Totale spese documentati*;
+**Osnovica**: *Neto iznos artikala* – *Konačni rabati* + *Ukupno nedokumentirani troškovi* + *Ukupno dokumentirani troškovi*;
 
-**Imposta**: rappresenta la somma dei valori contenuti nei riepiloghi IVA;
+**Porez**: predstavlja zbroj vrijednosti sadržanih u sažecima PDV-a;
 
-**Totale**: *Imponibile* + *IVA*.
+**Ukupno**: *Osnovica* + *PDV*.
