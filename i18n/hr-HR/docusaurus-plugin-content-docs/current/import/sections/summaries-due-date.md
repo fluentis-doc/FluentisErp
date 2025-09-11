@@ -1,36 +1,37 @@
-Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzione* di pagamento.  
-**Numero**: valore progressivo della riga.  
-**Pagamento**: rappresenta il codice alfanumerico del *Tipo pagamento* ripreso dalla *Testata del documento > tab Pagamenti*.  
+Predstavlja sažetak dospijeća dokumenta, za svaki *način* i *uvjete* plaćanja. 
+**Broj**: progresivni broj retka.
 
-**Importo**: Importo della scadenza calcolato. Può essere forzato manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*. (Scattano in automatico dei controlli e avvisi sulla quadratura tra i valori delle scadenze e il totale fattura)
+**Plaćanje**: predstavlja alfanumerički kod *Tip plaćanja* preuzet iz *Zaglavlje > kartica Plaćanja*.  
 
-**Data scadenza**: Data della scadenza calcolata. Può essere forzata manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*.
+**Iznos**: Importo della scadenza calcolato. Può essere forzato manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*. (Scattano in automatico dei controlli e avvisi sulla quadratura tra i valori delle scadenze e il totale fattura)
 
-**Spese di incasso**: Campo in cui riportate le spese di incasso calcolate.
+**Datum dospijeća**: Data della scadenza calcolata. Può essere forzata manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*.
 
-**IVA**: da applicare alle spese di incasso (può essere impostata anche manualmente)
+**Troškovi naplate**: Campo in cui riportate le spese di incasso calcolate.
 
-**Causale pagamento**: è possibile inserire direttamente in fattura una causale contabile che da luogo ad una scrittura automatica di incasso / pagamento. NB prestare attenzione al template della causale perchè utilizzerà i conti presenti anche senza sottoconto, motivo per il quale è presente il campo seguente.
+**PDV**: da applicare alle spese di incasso (può essere impostata anche manualmente)
 
-**Conto sottoconto cliente / fornitore** conto che usa per incassare/pagare (cassa o banca ad esempio) la scadenza andando a sovrascrivere il conto presente nella causale contabile di pagamento (o incasso)
+**Predložak plaćanja**: è possibile inserire direttamente in fattura una causale contabile che da luogo ad una scrittura automatica di incasso / pagamento. NB prestare attenzione al template della causale perchè utilizzerà i conti presenti anche senza sottoconto, motivo per il quale è presente il campo seguente.
 
-**N. ricevuta**: Un eventuale numero della ricevuta per i soldi ricevuti
+**Konto kupca / dobavljača** conto che usa per incassare/pagare (cassa o banca ad esempio) la scadenza andando a sovrascrivere il conto presente nella causale contabile di pagamento (o incasso)
+
+**Br. potvrde**: Un eventuale numero della ricevuta per i soldi ricevuti
 	
-**Sing.**: attiva la contabilizzazione della chiusura scadenze nella scrittura automatizzata
+**Jed.**: attiva la contabilizzazione della chiusura scadenze nella scrittura automatizzata
 
-**Tipo sconto**: Tipo di sconto finanziario
+**Tip popusta**: Tipo di sconto finanziario
 
-**Valore sconto**: Valore dello sconto finanziario su incasso
+**Vrijednost popusta**: Valore dello sconto finanziario su incasso
 
-**Dettaglio dichiarazioni**: È il riferimento alla dichiarazione di intento. L’iva applicata alle spese incasso potrebbe essere sempre un’iva plafond, quindi è necessario poter inserire anche qui la dich. di intento collegata (come per le righe articolo e le righe spese)
+**Detalji izjava o namjeri**: Radi se o upućivanju na izjavu o namjeri. Na troškove naplate može se primijeniti PDV oslobođen temeljem izjave o namjeri (tzv. korištenje prava na oslobođenje od PDV-a prema izvozniku), stoga je potrebno omogućiti da se i ovdje poveže odgovarajuća izjava o namjeri (kao i kod stavaka artikala i stavaka troškova).
 
-**FATTURE D'ACQUISTO:**
+**ULAZNI RAČUNI:**
 
-**Segno**: solo le scadenze che hanno questo flag vengono poi gestite in pagamento con causale e conto impostato
+**Znak**: solo le scadenze che hanno questo flag vengono poi gestite in pagamento con causale e conto impostato
 	
-**Modelli riferimento pagamento**: Modello di creazione del codice di pagamento. In alcune localizzazioni estere ogni scadenza in fattura prevede un codice attribuito da chi fattura: questo codice è strutturato secondo alcuni modelli specifici (tabella MB_PaymentReferenceModels), in modo da poter costruire il codice con un algoritmo.
+**Modeli poziva na broj plaćanja**: Model za kreiranje poziva na broj plaćanja. U nekim državama svaka dospjelost na računu ima kod koji dodjeljuje izdavatelj računa; taj je kod strukturiran prema određenim modelima (tablica MB_PaymentReferenceModels), kako bi se mogao generirati pomoću algoritma.
 
-**Codici modelli pagamento**: Questo è il codice (strutturato come da modello precedente) da riportare nella partita e quindi poi nei pagamenti che si inviano alla banca, in modo che questa comunichi al beneficiario qual è la scadenza che è stata pagata (e così automatizzare l’import dai movimenti bancari con chiusura partita). Da qui viene compilato dentro la partita e nel file Sepa.
+**Šifre modela plaćanja**: Ovo je šifra (strukturirana prema prethodno navedenom modelu) koja se prenosi u otvorenu stavku, a zatim i u naloge za plaćanje koji se šalju banci, kako bi banka mogla obavijestiti primatelja koja je dospjelost podmirena (čime se omogućuje automatizirani uvoz bankovnih izvoda i zatvaranje otvorenih stavaka). Odatle se šifra prenosi u otvorenu stavku i u SEPA datoteku.
 
-**Data limite pag anticipato** Questo è un campo previsto nel tracciato fatture Sdi, la data limite per poter applicare lo sconto finanziario.
+**Datum za primjenu popusta pri plaćanju predujma** Ovo je polje predviđeno u strukturi računa za SDI, a odnosi se na krajnji datum do kojeg se može primijeniti financijski popust.
 
