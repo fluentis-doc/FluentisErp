@@ -1,7 +1,7 @@
-Gli sconti proposti in testata del documento vengono riportati in ogni nuova riga articolo inserita nel documento.
+Predloženi popusti u zaglavlju dokumenta prenose se na svaki novi redak artikla unesen u dokument.
 
-Se dopo aver inserito le righe articolo viene inserito un nuovo sconto in testata questo non viene replicato nelle righe articolo già inserite.
+Ako nakon unosa redaka artikla bude unesen novi popust u zaglavlju, taj popust se neće replicirati u već unesenim redovima artikla.
 
-*Pulsante specifico*
+*Posebna tipka*
 
-> **Cancella sconti**: utilizzato per cancellare le righe di sconto selezionate.
+> **Izbriši rabate**: koristi se za brisanje odabranih redaka popusta.
