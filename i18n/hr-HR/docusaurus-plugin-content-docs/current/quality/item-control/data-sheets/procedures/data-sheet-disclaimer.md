@@ -1,34 +1,34 @@
 ---
-title: Dichiarazione di non responsabilità
+title: Izjava o odricanju od odgovornosti
 sidebar_position: 1
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Procedure > Dichiarazione di non responsabilità**
+Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikla > Tehnička uputstva > Procedure > Izjava o odricanju od odgovornosti**
 
-:::important A cosa serve
-Le *Dichiarazione di non responsabilità* sono le clausole per le quali l'azienda non si assume la responsabilità, per esempio a causa di un uso improprio, o per i danni causati dall'articolo.   
-Nelle dichiarazioni di non responsabilità possono essere definite quindi le cause che fanno decadere le proprietà dichiarate del prodotto.   
+:::important Čemu služi
+*Izjave o odricanju od odgovornosti* su klauzule u kojima se tvrtka ne smatra odgovornom, na primjer zbog nepravilne uporabe ili zbog štete prouzročene artiklom.  
+U izjavama o odricanju od odgovornosti mogu se definirati razlozi zbog kojih svojstva proizvoda prestaju vrijediti.
 :::
 
-Un esempio di utilizzo lo troviamo nella stampa **Scheda prodotto** eseguibile dalla **Stampa Scheda tecnica**.
+Primjer uporabe može se pronaći u ispisu **Proizvodne kartice**, koji se može izvršiti putem **Ispisa tehničke kartice**.
 
-Il filtro dati consente di inserire nuove *Dichiarazioni* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+Filtriranje podataka omogućuje unos novih *Izjava o odricanju odgovornosti* ili pretraživanje već postojećih radi njihovog pregledavanja, izmjene ili brisanja.   
 
-### ![](/img/neutral/common/search.png) Ricerca Dichiarazione di non responsabilità
+### ![](/img/neutral/common/search.png) Pretraga Izjava o odricanju od odgovornosti
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u prikazu rezultata.  
 
-### ![](/img/neutral/common/new.png) Inserimento Dichiarazione di non responsabilità
+### ![](/img/neutral/common/new.png) Unos Izjava o odricanju od odgovornosti
 
-Per poter inserire nuove informazioni è necessario premere il pulsante **Nuovo**.   
+Za unos novih informacija potrebno je pritisnuti tipku **Novo**.  
 
-*Campi specifici*:   
+*Specifična polja*:   
 
-> **Sequenza**: è la sequenza di visualizzazione delle *Dichiarazioni*.   
-> **Tipo**: è il *Tipo di dichiarazione* usata per poter raggruppare le *Dichiarazioni* da riportare in stampa.   
-> **Data inizio validità**: è la data dalla quale la *Dichiarazione* è valida e utilizzabile.   
-> **Data fine validità**: è la data dalla quale la *Dichiarazione* cessa di essere valida e utilizzabile.   
-> **Descrizione**: è la descrizione della *Dichiarazione*.   
-> **Note**: annotazioni libere.   
+> **Redoslijed**: redoslijed prikaza *Izjava o neodgovornosti*.  
+> **Tip**: *Tip izjave* koji se koristi za grupiranje *Izjava* za ispis.  
+> **Datum početka valjanosti**: datum od kojeg je *Izjava* važeća i primjenjiva.  
+> **Datum završetka valjanosti**: datum od kojeg *Izjava* prestaje biti važeća i primjenjiva.  
+> **Opis**: opis *Izjave*.  
+> **Bilješke**: slobodne napomene.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).

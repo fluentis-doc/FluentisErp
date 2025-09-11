@@ -1,61 +1,61 @@
 ---
-title: Gestione massiva dei dati
+title: Zbirno upravljanje podacima
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Procedure > Gestione massiva dei dati**
+Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikala > Tehnička uputstva > Procedure > Zbirno upravljanje podacima**
 
 
-:::important A cosa serve
-Questa procedura permette la gestione massiva di alcune informazioni presenti nelle *Schede tecniche*, senza avere l'obbligo di dover entrare in ogni documento, apportare le modifiche desiderate e memorizzarle.   
+:::important Čemu služi
+Ova procedura omogućuje masovno upravljanje određenim informacijama prisutnima u *Tehničkim karticama*, bez obveze ulaska u svaki dokument, unošenja željenih izmjena i njihovog spremanja.   
 :::
 
 
-La form è suddivisa in:
-- un'area di filtro relativa alla ricerca delle informazioni di testata delle *Schede tecniche*;   
-- un'area di filtro contestuale alle sessioni delle informazioni che si desidera modificare;   
-- un'area composta da diversi tabulatori ognuno dei quali contiene le griglie dedicate alla modifica e risultato del filtro;   
-- l'ultimo tabulatore contiene lo *Storico errori* riscontrati durante le attività di modifica.   
+Forma je podijeljena na:  
+- područje filtra vezano uz pretragu podataka zaglavlja *Tehničkih uputstava*;  
+- područje filtra povezano sa sesijama informacija koje se žele mijenjati;  
+- područje sastavljeno od više kartica, od kojih svaka sadrži prikaze namijenjene izmjeni i rezultatu filtra;  
+- posljednja kartica sadrži *Povijest grešaka* zabilježenih tijekom aktivnosti izmjene.    
 
-I tabulatori sono:   
-> **Schede tecniche**;   
-> **Proprietà**;   
-> **Norme e leggi**;   
-> **Articoli associati**.
+Tabulatori su:  
+> **Tehnička uputstva**;  
+> **Svojstva**;  
+> **Norme i zakoni**;  
+> **Povezane stvari**.  
 
-### Pulsanti specifici
+### Specifične tipke
 
-#### ![](/img/neutral/common/search.png) Ricerca
+#### ![](/img/neutral/common/search.png) Traži
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato. L'area filtro è variabile ed è contestuale al tabulatore selezionato. Il risultato dell'applicazione del filtro visualizzerà i dati nella griglia risultato del tabulatore precedentemente selezionato.   
+Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na gumb **Traži** kako bi se rezultati prikazali unutar prikaza rezultata. Područje filtera je promjenjivo i ovisi o odabranoj kartici. Rezultati primjene filtera prikazat će se u prikazu rezultata odabranog tabulatora.   
 
-#### ![](/img/neutral/common/delete.png) Cancella
+#### ![](/img/neutral/common/delete.png) Otkaži
 
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Selezionate le righe desiderate è necessario cliccare sul pulsante **Cancella** per eliminarle, previo conferma.   
+Omogućeno je ako je odabrana barem jedna stavka u prikazu rezultata.  
+Nakon što su odabrane željene stavke, potrebno je kliknuti na tipku **Otkaži** kako bi se one uklonile, uz prethodnu potvrdu.   
 
-#### ![](/img/neutral/common/execute.png) Modifica massiva dei dati
+#### ![](/img/neutral/common/execute.png) Izmijeni
 
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Selezionate le righe desiderate e indicate le modifiche da attuare nella griglia risultato, è necessario cliccare sul pulsante **Modifica** per applicare le modifiche.   
-In caso di anomalie riscontrate durante la *Modifica* le segnalazioni sono disponibili nel tabulatore *Storico errori*.   
+Omogućeno je ako je odabrana barem jedna stavka u prikazu rezultata.  
+Nakon što su odabrane željene stavke i unesene promjene u prikazu rezultata, potrebno je pritisnuti tipku **Izmijeni** kako bi se promjene primijenile.  
+U slučaju da se tijekom **Izmjene** pojave nepravilnosti, upozorenja su dostupna na kartici **Pronađene su greške**.  
 
-### Gestione massiva dei dati
+### Zbirno upravljanje podacima
 
-#### Area di filtro
+#### Područje filtra
 
-L'area è composta da una parte fissa dove vengono riportati i filtri di ricerca relativi alle informazioni di testata della *Scheda tecnica* e da una parte variabile e contestuale al tabulatore selezionato; la parte variabile è contenuta in un expander che riporta lo stesso titolo del tabulatore selezionato; questa parte variabile non è visualizzata per il tabulatore *Schede tecniche*.   
-Premendo il pulsante **Ricerca** sono visualizzati i risultati all'interno della griglia di risultato del tabulatore selezionato.  
+Područje se sastoji od fiksnog dijela u kojem su prikazani filteri pretrage vezani uz informacije zaglavlja **Tehničke kartice** te od promjenjivog dijela koji je kontekstualan za odabranu karticu; promjenjivi dio nalazi se u prošitenju koje nosi isti naslov kao odabrana kartica; ovaj promjenjivi dio nije vidljiv za karticu **Tehničke kartice**.  
+Pritiskom na tipku **Traži** rezultati se prikazuju u prikazu rezultata odabrane kartice. 
 
-#### Area di modifica
+#### Područje izmjene
 
-Contenuta in ogni tabulatore (eccetto nel tabulatore *Storico errori*), è la "griglia" superiore composta da una singola riga.   
-In questa griglia, che riporta le medesime colonne della griglia risultato (quella inferiore), è possibile inserire tutte le informazioni che si desiderano riportare nelle righe della griglia risultato alla pressione del pulsante *Modifica*.   
-Una volta terminata la sostituzione dei valori, i valori preesistenti nella griglia superiore verranno eliminati.   
+Sadržana u svakoj kartici (osim kartice **Pronađene su greške**), predstavlja gornji prikaz sastavljen od jednog reda.  
+U ovom prikazu, koji sadrži iste stupce kao i prikaz rezultata (donji prikaz), moguće je unijeti sve informacije koje se žele prenijeti u redove prikaza rezultata pritiskom na tipku **Izmijeni**.  
+Nakon završetka zamjene vrijednosti, prethodno unesene vrijednosti u gornjem prikazu bit će obrisane.  
 
-#### Area di risultato
-Contenuta in ogni tabulatore, è la "griglia" inferiore che contiene il risultato della *Ricerca* applicata all'area di filtro.
-In questa griglia, che riporta le medesime colonne della griglia di modifica (quella superiore), è possibile modificare manualmente tutte le informazioni senza dover entrare in ogni gestione della *Scheda tecnica*. Le colonne variano a seconda del tabulatore selezionato.   
-Le colonne dove non è possibile modificare le informazioni sono disabilitate ed evidenziate con un diverso colore.
+#### Područje rezultata
+Sadržana u svakoj kartici, predstavlja donji prikaz koji sadrži rezultat **Pretraživanja** primijenjenog na područje filtra.  
+U ovom prikazu, koji sadrži iste stupce kao gornji prikaz za izmjenu, moguće je ručno mijenjati sve informacije bez potrebe za ulaskom u svaku pojedinačnu **Tehničku karticu**. Stupci se mijenjaju ovisno o odabranoj kartici.  
+Stupci u kojima nije moguće mijenjati informacije su onemogućeni i istaknuti drugačijom bojom.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).

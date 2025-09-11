@@ -1,53 +1,53 @@
 ---
-title: Inserimento massivo articoli
+title: Unos više stavaka
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Schede tecniche > Procedure > Inserimento massivo articoli**
+Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikla > Tehnička uputstva > Procedure > Unos više stavaka**
 
 
-:::important A cosa serve
-Questa procedura permette di assegnare massivamente gli *Articoli* alle *Schede tecniche*.
-Per poter usufruire della funzione di *Inserisci* è necessario:
-- dal tabulatore **Articolo** scegliere gli *Articoli* da assegnare;  
-- dal tabulatore **Schede tecniche** scegliere le *Schede tecniche*;      
-- cliccare il pulsante **Inserisci**.   
+:::important Čemu služi
+Ova procedura omogućuje masovno dodjeljivanje *Artikala* *Tehničkim uputstvima*.  
+Za korištenje funkcije *Umetni* potrebno je:  
+- u kartici **Artikl** odabrati *Artikle* koje želite dodijeliti;  
+- u kartici **Tehnička uputstva** odabrati *Tehnička uputstva*;  
+- kliknuti tipku **Umetni**.
 :::
 
 
-## Articoli   
+## Artikli 
 
-In questo tabulatore è possibile ricercare e selezionare gli *articoli* che si desidera inserire massivamente nelle *Schede tecniche* e selezionabili nel tabulatore omonimo.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca articoli** per visualizzare i risultati all'interno della griglia di risultato.    
+U ovoj kartici moguće je pretražiti i odabrati *artikle* koje se želi masovno unijeti u *Tehnička uputstva* i koji se mogu odabrati u istoimenoj kartici.  
+Sekcija se sastoji od područja za filtriranje i područja za rezultat. Nakon što se postave svi željeni filtri, potrebno je kliknuti tipku **Traži artikle** kako bi se rezultati prikazali u prikazu rezultata. 
 
-*Pulsanti specifici*:   
+*Specifične tipke*:   
 
-### ![](/img/neutral/common/search.png) Ricerca articoli
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
-### ![](/img/neutral/common/duplicate.png) Scegli schede
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Schede tecniche**.   
+### ![](/img/neutral/common/search.png) Traži artikle
+Na temelju postavljenog filtera, rezultati se prikazuju unutar prikaza rezultata.   
+### ![](/img/neutral/common/duplicate.png) Odaberi kartice
+Pritiskom na tipku automatski se pozicionira na karticu **Tehnička uputstva**.  
 
 
-## Schede tecniche   
+## Tehnička uputstva   
 
-In questo tabulatore è possibile ricercare e selezionare le *Schede tecniche* a cui si desidera inserire massivamente gli *Articoli* selezionabili nel tabulatore omonimo.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca Schede** per visualizzare i risultati all'interno della griglia di risultato.    
+Na ovoj kartici moguće je pretraživati i odabrati *Tehnička uputstva* kojima se želi masovno dodati *Artikli* odabrani u istoimenoj kartici.  
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretraži kartice** kako bi se rezultati prikazali unutar prikaza rezultata.    
 
-*Pulsanti specifici*:   
+*Specifične tipke*:   
 
-### ![](/img/neutral/common/search.png) Ricerca Schede
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
-### ![](/img/neutral/common/duplicate.png) Scegli articoli
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Articoli**.   
-### ![](/img/neutral/common/execute.png) Inserisci
-Gli *Articoli* selezionati verranno associati alle *Schede tecniche* selezionate nei rispettivi tabulatori con le informazioni indicate nel tabulatore *Parametri*.   
+### ![](/img/neutral/common/search.png) Pretraži kartice
+Na temelju postavljenog filtera, rezultati se prikazuju unutar prikaza rezultata.   
+### ![](/img/neutral/common/duplicate.png) Odaberite artikle
+Pritiskom na tipku automatski se pozicionira u karticu **Artikli**.   
+### ![](/img/neutral/common/execute.png) Umetni
+Odabrani *Artikli* bit će povezani s odabranim *Tehničkim uputstvima* u pripadajućim karticama s informacijama navedenim u kartici *Parametri*.  
 
 
 ## Parametri
 
-In questo tabulatore è possibile indicare alcune informazioni che verranno proposte all'inserimento degli *Articoli* nelle *Schede tecniche*.   
-Nel tabulatore è possibile inserire:   
-> **Tipo dichiarazione in articoli**: è il *Tipo di dichiarazione* usata per il scegliere il gruppo di *Dichiarazioni* da riportare in stampa.   
-> **Note**: annotazioni libere.   
+U ovoj kartici moguće je unijeti neke informacije koje će se predložiti pri unosu *Artiklala* u *Tehničkim uputstvima*.  
+U kartici je moguće unijeti:  
+> **Vrsta deklaracije u artiklima**: tip *deklaracije* koji se koristi za odabir grupe *deklaracija* koje će se prikazati u ispisu.  
+> **Napomene**: slobodne bilješke.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
