@@ -1,33 +1,33 @@
 Predstavlja sažetak dospijeća dokumenta, za svaki *način* i *uvjete* plaćanja. 
-**Broj**: progresivni broj retka.
+**Broj**: Progresivni broj retka.
 
-**Plaćanje**: predstavlja alfanumerički kod *Tip plaćanja* preuzet iz *Zaglavlje > kartica Plaćanja*.  
+**Plaćanje**: Predstavlja alfanumerički kod *Tipa plaćanja* preuzet iz *Zaglavlje > kartica Plaćanja*.  
 
-**Iznos**: Importo della scadenza calcolato. Può essere forzato manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*. (Scattano in automatico dei controlli e avvisi sulla quadratura tra i valori delle scadenze e il totale fattura)
+**Iznos**: Izračunati iznos dospijeća, može se ručno urediti, pri čemu se automatski aktivira oznaka *Ručno uređivanje* (automatski se pokreću provjere i obavijesti o usklađenosti između vrijednosti roka dospijeća i ukupnog iznosa računa).
 
-**Datum dospijeća**: Data della scadenza calcolata. Può essere forzata manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*.
+**Datum dospijeća**: Izračunati datum dospijeća, može se ručno urediti, pri čemu se automatski aktivira oznaka *Ručno uređivanje*.
 
-**Troškovi naplate**: Campo in cui riportate le spese di incasso calcolate.
+**Troškovi naplate**: Polje u kojem se navode izračunati troškove naplate.
 
-**PDV**: da applicare alle spese di incasso (può essere impostata anche manualmente)
+**PDV**: Primijena na troškove naplate (može se postaviti i ručno).
 
-**Predložak plaćanja**: è possibile inserire direttamente in fattura una causale contabile che da luogo ad una scrittura automatica di incasso / pagamento. NB prestare attenzione al template della causale perchè utilizzerà i conti presenti anche senza sottoconto, motivo per il quale è presente il campo seguente.
+**Predložak plaćanja**: Moguće je izravno unijeti u fakturu računovodstveni predložak kojim će se automatski knjižiti naplate/plaćanja. Napomena: obratite pažnju na predložak jer će koristiti konta prisutna čak i bez podkonta, zbog čega je i prisutno sljedeće polje.
 
-**Konto kupca / dobavljača** conto che usa per incassare/pagare (cassa o banca ad esempio) la scadenza andando a sovrascrivere il conto presente nella causale contabile di pagamento (o incasso)
+**Konto kupca / dobavljača**: Konto koje se koristi za naplatu/plaćanje (npr. blagajna ili banka) dospijeća, zamjenjujući konto prisutan u računovodstvenom predlošku plaćanja (ili naplate)
 
-**Br. potvrde**: Un eventuale numero della ricevuta per i soldi ricevuti
+**Br. potvrde**: Eventualni broj potvrde za primljena sredstva.
 	
-**Jed.**: attiva la contabilizzazione della chiusura scadenze nella scrittura automatizzata
+**Jed.**: Aktivira knjiženje zatvaranja dospjelog plaćanja u automatskom knjiženju.
 
-**Tip popusta**: Tipo di sconto finanziario
+**Tip popusta**: Tip popusta.
 
-**Vrijednost popusta**: Valore dello sconto finanziario su incasso
+**Vrijednost popusta**: Vrijednost popusta na iznos po naplati.
 
 **Detalji izjava o namjeri**: Radi se o upućivanju na izjavu o namjeri. Na troškove naplate može se primijeniti PDV oslobođen temeljem izjave o namjeri (tzv. korištenje prava na oslobođenje od PDV-a prema izvozniku), stoga je potrebno omogućiti da se i ovdje poveže odgovarajuća izjava o namjeri (kao i kod stavaka artikala i stavaka troškova).
 
 **ULAZNI RAČUNI:**
 
-**Znak**: solo le scadenze che hanno questo flag vengono poi gestite in pagamento con causale e conto impostato
+**Znak**: samo se dospijeća koja imaju ovu oznaku obrađuju u plaćanju s posrapredloškom i postavljenim kontom (solo le scadenze che hanno questo flag vengono poi gestite in pagamento con causale e conto impostato).
 	
 **Modeli poziva na broj plaćanja**: Model za kreiranje poziva na broj plaćanja. U nekim državama svaka dospjelost na računu ima kod koji dodjeljuje izdavatelj računa; taj je kod strukturiran prema određenim modelima (tablica MB_PaymentReferenceModels), kako bi se mogao generirati pomoću algoritma.
 
