@@ -56,22 +56,22 @@ import Link from '@docusaurus/Link';
  **Tehnička uputstva**:
 - treba definirati [*Vrstu tehničkog uputstva*](/docs/configurations/tables/quality/item-control/data-sheets-type)   
 - treba definirati [*Vrstu testa*](/docs/configurations/tables/quality/item-control/test-type) koji će se koristiti u kartici *Svojstva* u *tehničkim uputstvima*   
-- za olakšanje upravljanjem *tehničkim uputstvima* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) nella sessione delle *Schede tecniche*   
-- treba unijeti novo [*Scheda tecnica*](/docs/quality/item-control/data-sheets/data-sheet-management)   
+- za olakšanje upravljanjem *tehničkim uputstvima* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) u odjelu *Tehnička uputstva*   
+- treba unijeti novo [*Tehničko uputstvo*](/docs/quality/item-control/data-sheets/data-sheet-management)   
 
-i **Piani di controllo**:
-- treba definirati [*Tipo piano di controllo*](/docs/configurations/tables/quality/item-control/control-plan-type) e relativa *Numerazione*   
-- treba definirati [*Tipo prova*](/docs/configurations/tables/quality/item-control/test-type) che verrà utilizzato nella sessione/tabulatore *Prove pianificate* dei [*Piani di controllo*](/docs/quality/item-control/control-plans/control-plan-management)   
-- za olakšanje upravljanjem *Piani di controllo* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) nella sessione dei *Piani di controllo*   
-- treba unijeti novi [*Piano di controllo*](/docs/quality/item-control/control-plans/control-plan-management)   
+ **Kontrolni planovi**:
+- treba definirati [*Vrstu kontrolnog plana*](/docs/configurations/tables/quality/item-control/control-plan-type) e relativa *Numerazione*   
+- treba definirati [*Vrstu testa*](/docs/configurations/tables/quality/item-control/test-type) koji će se koristiti u kartici *Planirani testovi* u [*Kontrolnim planovima*](/docs/quality/item-control/control-plans/control-plan-management)   
+- za olakšanje upravljanjem *Piani di controllo* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) u odjelu *Kontrolni planovi*   
+- treba unijeti novi [*Kontrolni plan*](/docs/quality/item-control/control-plans/control-plan-management)   
 
-i **Controlli articolo**:   
-- treba definirati: un [*Tipo controllo articolo*](/docs/configurations/tables/quality/item-control/item-control-type) e uno [*Tipo esito*](/docs/configurations/tables/quality/general/result-type)   
-- treba definirati [*Piano di controllo*](/docs/quality/item-control/control-plans/control-plan-management) e associarlo ad un articolo nella sessione/tabulatore *Articoli associati* oppure ad una fase di un Ciclo di lavoro soggetta a Controllo qualità   
-- za olakšanje upravljanjem *Controlli articolo* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) nella sessione/tabulatore del *Controlli articolo*   
-- treba unijeti novu [*Controllo articolo*](/docs/quality/item-control/items-control/item-control-management) tramite la funzionalità di [*Importa articoli da controllare*](/docs/quality/item-control/items-control/item-control-import)    
+ **Kontrola artikala**:   
+- treba definirati: [*Vrstu kontrole artikala*](/docs/configurations/tables/quality/item-control/item-control-type) i [*Vrstu ishoda*](/docs/configurations/tables/quality/general/result-type)   
+- treba definirati [*Kontrolni plan*](/docs/quality/item-control/control-plans/control-plan-management) i povezati ga sa stavkom u sesiji/kartici *Povezane stvati* ili s fazom radnog ciklusa koja podliježe kontroli kvalitete   
+- za olakšanje upravljanjem *Kontrolom artikala* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) u sesiji/kartici *Kontrola artikala*   
+- treba unijeti novu [*Kontrolu artikala*](/docs/quality/item-control/items-control/item-control-management) putem funkcionalnosti [*Uvoz artikala za provjeru*](/docs/quality/item-control/items-control/item-control-import)    
 
-i **Certificati di analisi**:   
-- treba definirati [*Tipo certificati di analisi*](/docs/configurations/tables/quality/item-control/c-o-a-type) e relativa *Numerazione*   
-- za olakšanje upravljanjem *Certificati di analisi* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) nella sessione dei *Certificati di analisi*   
-- treba unijeti novi [*Certificato di analisi*](/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management)   
+ **Certifikati s analize**:   
+- treba definirati [*Vrstu certifikata s analize*](/docs/configurations/tables/quality/item-control/c-o-a-type) i povezanu *Numeraciju*   
+- za olakšanje upravljanjem *Certifikata s analize* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) u odjelu *Certifikati s analize*   
+- treba unijeti novi [*Certifikat s analize*](/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management)   
