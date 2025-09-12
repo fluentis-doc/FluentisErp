@@ -3,6 +3,27 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0046 - 11/09/2025
+
+> - BI - fix algorithm call from query based SWITCHBOARD (TT03876/25) 
+> - CO - modificato algoritmo di creazione della chiusura da private a virtual. (#TT03923/25) 
+> - FI - revisione gestione arrotondamenti sui movimenti dei centri di costo in contabilizzazione fattture di acquisto in valuta, revisione gestione natura articolo, sconti al lordo (#TT03742/25, #TT03840/25, #TT03845/25) 
+> - FI - Risolto errore nella procedura di Creazione partita d’anticipo. (#TT03779/25) 
+> - MES - Ottimizzato la funzione “Inserisci nuove fasi” presente nel tab produzione del MES come dettagliato nella guida in linea. (#TT03504/25) 
+> - SCM - Corretta la proposta dei prezzi negli Ordini di Conto Lavoro rilasciati dalla Produzione, nei casi in cui il listino preveda prezzi diversi per fase di lavorazione. (#TT03418/25) 
+> - SCM - Corretto errore nella generazione della Stampa Scadenziario Ordini fornitori. (#TT03881/25) 
+> - SCM - Fatture di Acquisto: abilitato l’inserimento di Extra data nelle fatture già contabilizzate. (#TT03564/25) 
+> - SCM - Il numero de lotto è stato modificato dopo aver inserito manualmente il valore nella bolla di consegna TT03872/25. 
+> - SD - La duplicazione documenti di acquisto/vendita ora riporta la dimensione del movimento di analitica. (#TT03802/25) 
+> - SD - Ordini Clienti: abilitata la possibilità di salvare un profilo impostando un filtro sulla data di creazione dell’ordine. Modifications in Filter SalesOrder can have an impact on profiles. (#TT03107/25) 
+> - SD, SCM - Corretta la valorizzazione dei DDT di Acquisto e Vendita in presenza di parametri di raggruppamento differenti nell’anagrafica contatto. (#TT03013/25) 
+> - SD, SCM - Ottimizzata la gestione della numerazione nelle importazioni tramite web api (#TT03793/25) 
+> - SH - versione browser, revisione visibilità campi nella form Piano dei conti (#TT03843/25) 
+> - WM - Corretto bug nell’import webapi degli articoli di magazzino nel caso in cui venisse importato anche il barcode della variante. (#TT03765/25) 
+> - WM - modified print inventory valorization for RO (#TT03782/25) 
+> - WM - Ora, i valori nella colonna "Stato Documento" della griglia di dettaglio dell'analisi analisi disponibilità vengono visualizzati correttamente. (#TT02367/25) 
+> - WM - Prototipi: Nel calcolo del costo dei componenti vengono ora considerati anche eventuali prezzi per quantità definiti nel listino del fornitore preferenziale. Per i dettagli fare riferimento alla documentazione. (#TT03843/24) 
+
 ### Patch 707.1-0045 - 04/09/2025
 
 > - FI - contabilizzazione fatture di vendita per autofatture servizi esteri, revisione gestione “conto partner” nella causale automatica di giro (#TT03556/25) 
