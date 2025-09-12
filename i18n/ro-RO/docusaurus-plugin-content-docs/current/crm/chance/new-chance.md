@@ -49,7 +49,7 @@ Partea superioară a formului prezintă eventualele fluxuri de lucru asociate. S
 
 **Profit brut prevăzut**: în acest câmp, care se completează manual, utilizatorul trebuie să indice marja brută prevăzută pentru oportunitate;  
 
-**Data prevăzută ordin client**: în acest câmp se poate indica o dată prevăzută pentru emiterea primului ordin (ordine) legat de oportunitatea în cauză;  
+**Data prevăzută ordin client**: în acest câmp se poate indica o dată prevăzută pentru emiterea primului ordin legat de oportunitatea în cauză;  
 
 **Data prevăzută aviz de expediție**: în acest câmp se poate indica o dată prevăzută pentru emiterea avizului legat de oportunitate;  
 

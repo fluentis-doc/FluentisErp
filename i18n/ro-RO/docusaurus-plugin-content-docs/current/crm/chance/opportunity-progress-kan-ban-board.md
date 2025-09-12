@@ -18,7 +18,7 @@ Fiecare coloană a Kan Ban Board este alcătuită din următoarele elemente:
   - Count: corespunde numărului de oportunități aflate în acea coloană;  
   - Total Net Amount: corespunde valorii totale a oportunităților prezente în coloană.  
 
-2. O **bandă inferioară** unde sunt afișate oportunitățile individuale. Pentru fiecare oportunitate se afișează, în ordine, următoarele date:  
+2. O **bandă inferioară** unde sunt afișate oportunitățile. Pentru fiecare oportunitate se afișează, în ordine, următoarele date:  
   - Numele persoanei de contact al oportunității;  
   - Titlul oportunității;  
   - Utilizatorul Fluentis care a introdus oportunitatea;  

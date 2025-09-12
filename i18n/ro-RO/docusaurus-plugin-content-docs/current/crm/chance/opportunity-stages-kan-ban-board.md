@@ -3,23 +3,20 @@ title: Opportunity Stages KanBan Board
 sidebar_position: 6
 ---
 
-La procedura **Opportunity Stages Kan Ban Board** ha l’obiettivo di mostrare graficamente, mediante l’utilizzo della metodologia Kan Ban, le opportunità inserite in Fluentis suddivise per gli stadi del workflow associato alle opportunità stesse. Il workflow da considerare deve essere inserito nei filtri.     
-Con l’aiuto dei filtri si può visualizzare: una sola tipologia di opportunità (**Tipo Opportunità**), più opportunità inserite dallo stesso utente (**Operatore**), più opportunità con la medesima probabilità di successo (**Probabilità Successo**).
+Procedura are obiectivul de a afișa grafic, prin utilizarea metodologiei Kan Ban, oportunitățile introduse în Fluentis, grupate în funcție de stadiile fluxului de lucru asociat oportunităților respective. Fluxul de lucru care trebuie considerat se introduce în filtre.  
 
-L’area di filtro è quella dedicata ad ospitare l’elenco dei possibili tipi di dati grazie ai quali è possibile effettuare una selezione. I filtri sono tipicamente in condizione 'AND' ed è possibile specificare più criteri di filtro contemporanei.
+Zona de filtrare conține lisa posibilelor tipuri de date cu care se poate efectua o selecție. Cu ajutorul filtrelor se pot vizualiza: un singur tip de oportunitate, mai multe oportunități introduse de același utilizator, mai multe oportunități cu aceeași probabilitate de succes.
 
-Nell’area sottostante a quella di filtro è presente la **Kan Ban Board**, dove vengono visualizzati le opportunità suddivise per i vari stadi del workflow selezionato nei filtri.
-Ogni colonna della Kan Ban Board è composta dai seguenti elementi:  
+În secțiunea următoare se află **Kan Ban Board**, unde sunt afișate oportunitățile grupate pe diversele stadii ale fluxului de lucru selectat în filtre.  
 
-Una **banda superiore** dove vengono visualizzati, nell’ordine, i seguenti dati:
-- Stadio del workflow;
-- Count: corrisponde al numero di opportunità che sono collocate in quella colonna;
-- Total Net Amount: corrisponde al valore totale delle opportunità presenti nella colonna, al netto degli sconti applicati.
+Fiecare coloană din Tabloul Kan Ban (Kan Ban Board) este compusă din următoarele elemente:  
+1. O **bandă superioară** unde sunt afișate, în ordine, următoarele date:  
+- Stadiu flux de lucru;  
+- Count: corespunde numărului de oportunități plasate în acea coloană;  
+- Total Net Amount: corespunde valorii totale a oportunităților din coloană.
 
-Una **banda inferiore** dove vengono visualizzate le singole opportunità. Per ogni opportunità vengono visualizzati, nell’ordine, i seguenti dati:
-- Nome del contatto intestatario dell’opportunità;
-- Titolo dell’opportunità;
-- Utente Fluentis che ha inserito l’opportunità;
-- Totale netto dell’opportunità.
-
-Facendo doppio click sulla singola opportunità si entra in visualizzazione/modifica dell’opportunità stessa.
+2. O **bandă inferioară** unde sunt afișate oportunitățile. Pentru fiecare oportunitate sunt afișate, în ordine, următoarele date:  
+- Numele contactului căruia îi aparține oportunitatea;  
+- Titlul oportunității;  
+- Utilizatorul Fluentis care a introdus oportunitatea;  
+- Totalul net al oportunității.
