@@ -1,26 +1,28 @@
 ---
-title: Configurazione
+title: Konfiguracija
 sidebar_position: 1
 ---
 
-L'area di confiugurazione si compone principalmente di due elementi: **Tabelle** e **Parametri**.
+Područje konfiguracije sastoji se uglavnom od dva elementa: **Tablice** i **Parametri**.
 
-Entrambi sono raggruppati per area funzionale, oltre ad un gruppo di tabelle e parametri generali (necessari indipendentmente dall'area alla quale si è interessati).
+Oba su grupirana prema funkcionalnom području, uz skup općih tablica i parametara koji su potrebni neovisno o funkcionalnom području kojim se korisnik bavi.  
 
-:::danger[Attenzione]
-Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo concreto dell'ERP nell'area interessata.
+:::danger[Pažnja]
+Ako se ovi osnovni podaci ne postave ispravno, korištenje ERP sustava u određenim područjima može biti onemogućeno.  
 :::
 
-**TABELLE**: contengono dati di base necessari alla creazione di altri dati o documenti. Ad esempio la tabella Tipi Fatture contiene le tipologie di fattura. Per la creazione di una nuova fattura è necessario per prima cosa richiamare il tipo dall'apposita combo box.
+**TABLICE**: sadrže osnovne podatke koji su potrebni za kreiranje drugih podataka ili dokumenata. Na primjer, tablica Vrste računa sadrži različite tipove računa. Prilikom kreiranja novog računa, potrebno je prethodno odabrati odgovarajući tip iz padajućeg izbornika (combo box).  
 
-**PARAMETRI**: contengono generalmente delle opzioni o dei dati di default per il funzionamento di procedure di elaborazione o creazione automatica di dati. La loro mancata gestione, in particolare, in alcuni casi, il salvataggio di un parametro di default, potrebbe impedire il corretto funzionamento della procedura relativa.
+**PARAMETRI**: sadrže postavke, opcije ili zadane vrijednosti koje omogućuju ispravno izvođenje automatskih procedura ili generiranje podataka. Ako parametri nisu postavljeni, a posebno ako nije spremljena zadana vrijednost nekog parametra, određene funkcionalnosti mogu ne raditi ispravno.  
 
 :::important[**Fast Start**]
-Dopo l'installazione di Fluentis ERP, prima di iniziare ad utilizzarlo è possibile inizializzare un [**ambiente *FastStart* totalmente pronto all'uso**](/docs/guide/fast-start).
+Nakon instalacije Fluentis ERP sustava, prije početka rada moguće je inicijalizirati [**ambiente *Fast Start* okruženje koje je spremno za upotrebu**](/docs/guide/fast-start).
 
-Vedere il link per l'elenco delle **tabelle** e **parametri** che vengono popolati da questa procedura.
+Na poveznici se nalazi popis **tablica** i **parametara** koje ova procedura automatski popunjava.
 
-Un elemento discriminante per il lancio del Fast Start è il [**Piano dei conti**](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (area amministrativa).
+Ključni uvjet za pokretanje Fast Start procedure je [**Kontni plan**](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (u okviru modula administracija).
 
-Lanciando la procedura di Fast Start verrà creato un piano dei conti standard, è possibile comunque integrarlo e modificare le descrizioni dei conti, oppure cancellare alcuni conti ma solo se questi non sono già utilizzati in altri dati generati dalla procedura (es. causali contabili, modelli di riclassificazione di bilancio). Nel caso in cui il piano dei conti sia totalmente indatto alla relatà aziendale che ha installato Fluentis, è consigliabile procedere con una configurazione manuale delle tabelle e parametri relativi alle aree funzionali alle quali si è interessati (oltre che alla creazione manuale o importazione del piano dei conti desiderato). Al link sopra indicato è presente una **check list** per la verifica di dettaglio delle tabelle più importatnti.
+Pokretanjem Fast Start procedure kreira se standardni kontni plan. Taj se plan može nadopuniti, izmijeniti opisi konta, ili izbrisati pojedini konti, ali samo ako ti konti već nisu korišteni u drugim podacima koje je procedura generirala (npr. kontni slogovi, modeli za rekategorizaciju bilance i sl.).  
+U slučaju da standardni kontni plan nije primjeren poslovnoj stvarnosti poduzeća koje koristi Fluentis, preporučuje se ručna konfiguracija tablica i parametara za odgovarajuća funkcionalna područja. Također je potrebno ručno kreirati ili uvoziti željeni kontni plan.  
+Na prethodno navedenoj poveznici dostupna je i**kontrolna lista** za detaljnu provjeru najvažnijih tablica.  
 :::
