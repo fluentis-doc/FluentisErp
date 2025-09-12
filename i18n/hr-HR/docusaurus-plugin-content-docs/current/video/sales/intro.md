@@ -1,5 +1,5 @@
 ---
-title: Vendite
+title: Prodaja 
 sidebar_position: 1
 ---
 

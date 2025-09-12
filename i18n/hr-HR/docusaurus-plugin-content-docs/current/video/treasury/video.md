@@ -1,17 +1,17 @@
 ---
-title: Tesoreria
+title: Riznica
 sidebar_position: 1
 ---
 
-Il primo video copre i parametri e le tabelle di base del modulo e si consiglia la visione per comprendere le possibili scelte e settaggi anche se non riguarda procedure operative.
+Prvi video pokriva osnovne parametre i tablice modula, te se preporučuje gledanje kako biste razumjeli moguće postavke i opcije, iako ne obrađuje konkretne operativne procedure.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### PORTAFOGLIO ATTIVO
+### AKTIVNI PORTFELJ
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lKIGZYCBwvg" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### PAGAMENTI FORNITORI
+### PLAĆANJE DOBAVLJAČIMA
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
@@ -21,10 +21,10 @@ Il primo video copre i parametri e le tabelle di base del modulo e si consiglia 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Gr5xFCDyRJA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### RICONCILIAZIONE BANCARIA
+### BANKOVNO USKLAĐIVANJE
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sPeYvES_dpw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### GESTIONE LIQUIDITA'
+### UPRAVLJANJE LIKVIDNOŠĆU
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/L4I6ptx3noc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
