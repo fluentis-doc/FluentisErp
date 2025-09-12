@@ -3,6 +3,18 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0079 - 12/09/2025
+
+> - ARM - Fix executing actions for multiple documents (#TT02094/25) 
+> - MES - Ora con la procedura di rilascio degli ordini di produzione vengono movimentati solo gli articoli che hanno come tipo prelievo Automatico nei parametri MRP. (#TT03691/25) 
+> - MS - Nel tab sotto scorta della generazione commesse di produzione vengono considerati anche i lotti economici. (#TT02835/25, #TT03073/25) 
+> - PR - creazione manuale movimenti ordini clienti/fornitori nel cash flow, ottimizzazione procedura. Quando le righe da inserire sono più di 100, Fluentis segnala che è necessario salvare direttamente il cash flow. Modifications in help subcontractor of cash flow can have an impact on profiles. (#TT01803/24) 
+> - PR - DueDate/EstimatedDate properties without minutes/hours ang bug fixed for Subcontractor order, return and Purchase order commands ( TT02672/25) 
+> - SCM - Corretta la proposta dei prezzi negli Ordini di Conto Lavoro rilasciati dalla Produzione, nei casi in cui il listino preveda prezzi diversi per fase di lavorazione. (#TT03418/25) 
+> - SCM - Corretto errore nella generazione della Stampa Scadenziario Ordini fornitori. (#TT03881/25) 
+> - SD - Ordini e Offerte di vendita: Introdotta la possibilità di salvare un profilo includendo informazioni relative a Lingua e Nazione nella griglia. (#TT02870/25) 
+> - SD, SCM - Corretta la valorizzazione dei DDT di Acquisto e Vendita in presenza di parametri di raggruppamento differenti nell’anagrafica contatto. (#TT03013/25) 
+
 ### Patch 608.1-0078 - 07/08/2025
 
 > - Bizlink - importazione da DocFinance, se la partita da chiudere è legata ad un compenso professionista con partite gestite al netto ora Fluentis aggiunge automaticamente la registrazione che valorizza il debito della ritenuta (#TT03211/25). 
