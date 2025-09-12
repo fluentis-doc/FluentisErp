@@ -1,25 +1,25 @@
 ---
-title: Amministrazione
+title: Administracija
 sidebar_position: 1
 ---
 
-## TABELLE GENERALI DI BASE
+## OSNOVNE OPĆE TABLICE
 
-La gestione dell'anagrafica della società e l'eventuale aggiunta di nuove società è basilare e rappresente un'informazione di carattere generale, si consiglia di vedere il video per primo.
+Upravljanje podacima o tvrtki i eventualno dodavanje novih tvrtki predstavlja osnovnu i opću informaciju – preporučuje se najprije pogledati ovaj video.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rbho9hXmCjo" title="YouTube video player" frameborder="0"  allowfullscreen= "true"></iframe>
 
 ---
 
-Video datato ma ancora valido come concetto generale.
+Stari video, ali još uvijek vrijedi kao opći koncept.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LqakjaVSfKE" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 ---
 
-### **GESTIONE ANAGRAFICHE CLIENTI FORNITORI, BANCHE e AGENTI**
+### **UPRAVLJANJE PODACIMA O KUPCIMA, DOBAVLJAČIMA, BANKAMA I AGENTIMA**
 
-La comprensione di come inserire e gestire correttamente le anagrafiche è propedeutica alla corretta gestione **ed automazione** degli altri dati amministrativi e contabili. Pertanto si consiglia la visione di questi video per primi.
+Razumijevanje kako ispravno unijeti i upravljati podacima nužno je za ispravno **i automatizirano** upravljanje ostalim administrativnim i računovodstvenim podacima. Preporučuje se prvo pogledati ove videozapise.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yvvYvTZMI_o" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
@@ -30,25 +30,25 @@ La comprensione di come inserire e gestire correttamente le anagrafiche è prope
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iBBMYnZsvRg" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
-### **IL PIANO DEI CONTI**
+### **KONTNI PLAN**
 
-Il corretto inserimento del piano dei conti (se personalizzato) o la modifica di quello standard per i necessari adattamenti, la consultazione o la stampa sono propedeutici all'inserimento dei movimenti contabili. Pertanto si consiglia di vedere il seguente video prima di inserire i movimenti contabili.
+Ispravan unos kontnog plana (ako je personaliziran) ili izmjena standardnog plana za potrebna prilagođavanja, pregled ili ispis, preduvjet je za unos računovodstvenih transakcija. Preporučuje se prvo pogledati sljedeći video prije unosa podataka.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_0azlCYnIQ" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 
-## **I PARAMETRI DI BASE E LE TABELLE AMMINISTRATIVE**
+## **OSNOVNI PARAMETRI I ADMINISTRATIVNE TABLICE**
 
-In questa sezione affrontiamo tutti i parametri di configurazione generale e le tabelle di base del modulo amministrativo.
+Ovdje se obrađuju svi opći konfiguracijski parametri i osnovne tablice administrativnog modula.  
 
-La visione preliminare di questi video risulta **utile** a tutti ma in particolare **a chi intenda configurare un ambiente operativo** NON standard (Non è stata lanciata la procedura di configurazione iniziale *Fast Start*)
+Pregled ovih videozapisa **koristan** je svima, a posebno onima koji žele konfigurirati **nestandardno radno okruženje** (nije pokrenuta početna konfiguracija *Fast Start*).
 
-### PARAMETRI DI CONTABILITA'
+### RAČUNOVODSTVENI PARAMETRI  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UpAkdvW8ClQ" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
-### TABELLE MODULO AMMINISTRAZIONE
+### TABLICE ADMINISTRATIVNOG MODULA  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/r62pWFU1tuk" title="YouTube video player" frameborder="0"  allowfullscreen= "true"></iframe>
 
@@ -56,13 +56,13 @@ La visione preliminare di questi video risulta **utile** a tutti ma in particola
 
 
 
-### CONFIGURAZIONE CAUSALI CONTABILI
+### KONFIGURACIJA RAČUNOVODSTVENIH KNJIŽENJA  
 
-La configurazione delle causali contabili rappresenta il cuore logico  del modulo relativo alle registrazioni contabili e permette di gestire e sfruttare tutta l'automazione connessa.
+Konfiguracija računovodstvenih knjiženja predstavlja logičko srce modula za knjiženje i omogućuje iskorištavanje sve povezane automatizacije.
 
-La visione di questi video è raccomandata a tutti quelli che vogliono entrare nel merito dei settaggi specifici.
+Pregled ovih videozapisa preporučuje se svima koji žele detaljnije razumjeti specifične postavke.
 
-Mentre risulta del tutto necessaria per chi intende configurare un ambiente operativo su misura.
+A nužan je za one koji žele konfigurirati prilagođeno radno okruženje.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u-tX9Gx4JQA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
@@ -87,9 +87,9 @@ Mentre risulta del tutto necessaria per chi intende configurare un ambiente oper
 <iframe width="560" height="315" src="https://www.youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
-## **GESTIONE DELLE REGISTRAZIONI CONTABILI**
+## **PARAMETRI MODULA DUGOTRAJNE IMOVINE**
 
-Il primo video tratta la ricerca e visualizzazione dei dati contabili.
+Prvi video prikazuje pretraživanje i pregled računovodstvenih podataka.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gS0i_G0O5ko" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
@@ -97,25 +97,25 @@ In questo video si spiega come inserire movimenti contabili di prima nota.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lOWGrEg-w6A" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-## GESTIONE STAMPE AMMINISTRATIVE
+## ISPIS ADMINISTRATIVNIH PODATAKA  
 
-### STAMPE CONTABILI
+### RAČUNOVODSTVENI ISPISI
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vQS47gLDe2M" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### STAMPE FISCALI
+### POREZNI ISPISI  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE)
+### Reklasifikacija bilance za izradu zakonske bilance (CEE format)  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bhoSB80XFGY" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-## **MODULO GESTIONE PARTITE APERTE**
+## **MODUL OTVORENIH STAVKI**
 
-### RICERCA PARTITE APERTE
+### PRETRAŽIVANJE OTVORENIH STAVKI  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FZVfr6QuXDc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
@@ -123,17 +123,17 @@ In questo video si spiega come inserire movimenti contabili di prima nota.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Phu6-Q4ZF7o" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### STAMPE PARTITE APERTE
+### ISPISI OTVORENIH STAVKI  
 
 <iframe width="560" height="315" src="https://youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-## **CESPITI**
+## **DUGOTRAJNA IMOVINA**
 
-### INSERIMENTO
+### UNOS
 
 <iframe width="560" height="315" src="https://youtube.com/embed/EumrLuAHXCk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### STAMPE
+### ISPISI
 
 <iframe width="560" height="315" src="https://youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
@@ -141,12 +141,12 @@ In questo video si spiega come inserire movimenti contabili di prima nota.
 
 <iframe width="560" height="315" src="https://youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### AMMORTAMENTO
+### AMORTIZACIJA
 
 <iframe width="560" height="315" src="https://youtube.com/embed/jD0qtQmqCIA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 
-## **PERCIPIENTI**
+## **PRIMATELJI DOHOTKA**
 
 <iframe width="560" height="315" src="https://youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
@@ -154,17 +154,17 @@ In questo video si spiega come inserire movimenti contabili di prima nota.
 
 <iframe width="560" height="315" src="https://youtube.com/embed/DVXhUdwqBS4" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-## **DICHIARAZIONI FISCALI**
+## **POREZNE PRIJAVE**
 
 <iframe width="560" height="315" src="https://youtube.com/embed/-IAAv1RdE-g" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 <iframe width="560" height="315" src="https://youtube.com/embed/rZM6NBOpIxQ" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-## GESTIONE MUTUI PASSIVI
+## UPRAVLJANJE PASIVNIM KREDITIMA  
 
 <iframe width="560" height="315" src="https://youtube.com/embed/lIsD0KRlFFw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-## **FATTURAZIONE ELETTRONICA**
+## **ELEKTRONIČKO IZDAVANJE RAČUNA**
 
 <iframe width="560" height="315" src="https://youtube.com/embed/2obPKWM9aFE" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
