@@ -4,16 +4,42 @@ sidebar_label: Kartice događaja
 sidebar_position: 1
 ---
 
-:::info INFO 
-Nakon što se otvori obrazac s detaljima *Događaja*, u gornjem dijelu nalaze se neki standardni parametri kao što su *Šifra, Naziv, Opis, Datum kreiranja, Datum posljednje izmjene*, *Omogućeno*. Najrelevantniji parametri su *Grupe, Dopusti preklapanje rasporeda, Zadatak, Maksimalno trajanje* i *Rezultat zadnjeg pokretanja*.
+:::info Info
+La form di dettaglio dell'*Evento* si compone:
+* Di un ribbon menu con cui è possibile salvare, create o eseguire un evento, gestire i profili e festire eventuali parametri.  
+* Informazioni di testata, in cui impostare codice, task da eseguire e gruppo di riferimento con informazioni obbligatorie.
+* Tre tab per la gestione dei parametri legati al task, il log di esecuzione e i parametri di schedulazione.
 :::
 
-### Parametri
-U kartici **Parametri** (na temelju *Zadatka* odabranog u biraču na vrhu sučelja), parametri *Zadatka* mogu se specificirati s relativnim vrijednostima, koje će se zatim koristiti kada se *Događaj* izvrši.
+### Tab Parametri
+Il tab Parametri permette di gestire i parametri di input dell'evento.
+Tramite la colonna Task Parameter si ha accesso alla lista di parametri del task selezionato, si procede associando un codice e un nome da Dizionario.
 
-### Registri 
-U kartici **Registri** bit će prikazani svi zapisnici koji se odnose na izvođenje *Događaja*. Važno je naglasiti da dnevnik ne sadrži samo generičke informacije o izvršenju *Događaja*, već i sve poruke o greškama koje su se u njemu pojavile. 
+![alt text](/img/it-it/applications/supervisor/supervisor12.png)
 
-### Rasporedi 
-Na kartici **Rasporedi** moguće je umetnuti raspored (putem gumba na vrpci) iz namjenskog prozora.
+### Tab Logs
+Il tab LOG permette di visualizzare il log di esecuzione del task, sia per le esecuzione schedulate che per quelle
+manuali.
 
+![alt text](/img/it-it/applications/supervisor/supervisor13.png)
+
+
+### Tab Schedulazioni
+Il tab SCHEDULES permette di schedulare tramite il pulsante dedicato l'esecuzione dell'evento.
+il popup permette di definire il tipo di occorrenza con la relativa parametrizzazione di dettaglio distinguendo tra:
+
+**Una volta**
+> Permette di indicare data/ora esatti per l'esecuzione.
+
+**Giornaliero**
+> Permette di indicare l'ora di avvio, ogni quanti giorni ripetere nel corso della giornata e in quale intervallo orario.
+
+**Settimanale**
+> Permette una pianificazione settimanale, in cui oltre alle impostazioni su esecuzione giornaliera possiamo definire per quante settimane ripetere e indicare i giorni esatti della settimana.
+
+**Mensile**
+> Permette una pianificazione mensile indicando i mesi in cui ripetere, i giorni del mese etc.  
+
+Infine, sarà possibile indicare un’eventuale data di fine esecuzione con il flag End date e decidere se abilitare o meno il task in automatico.
+
+![alt text](/img/it-it/applications/supervisor/supervisor14.png)

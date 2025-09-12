@@ -12,3 +12,6 @@ Neke od značajki unutar obrasca odnose se na standardnu ​​upotrebu. Za sve 
 
 *Zadaci* su organizirani u grupe (kao što su *Uslužni programi*, *Primjeri*, *Demo*) na temelju konteksta korištenja. Da biste stvorili novu grupu *Zadataka* pogledajte članak o [stvaranju grupe](../../group-creation).
 
+
+
+![alt text](/img/it-it/applications/supervisor/supervisor8.png) 

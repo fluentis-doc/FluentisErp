@@ -4,11 +4,12 @@ sidebar_label: Task & Blockly
 sidebar_position: 2
 ---
 
-:::INFORMACIJA
-Kada otvorite obrazac s detaljima,*Skript Editor* prikazan je prema zadanim postavkama, a *Blockly*, ali ako se izvrši promjena koda, nakon spremanja/kompiliranja tijekom korištenja *Blockly*, sljedeći put kada pokrenete obrazac s detaljima *Zadatka*, zadana platforma za kodiranje bit će *Blockly*.
+:::info
+Quando si apre la form di dettaglio, di default viene visualizzato l'editor Blockly e non l'editor testuale.  
+E' possibile passare da modalità Blockly ad editor testuale (o viceversa) attraverso il drop-down **Tipo Script** che consente di selezionare la modalità desiderata.
 :::
 
-*Supervisor* koristi Blocklyjeve prilagođene blokove za izradu C# skripti. Uz standardne Blockly kategorije (logika, petlje, matematičke operacije, tekstovi, datumi, popisi, boje, varijable), prilagođene kategorije koje se mogu pronaći u **Toolbox** su:
+**Supervisor** koristi Blocklyjeve prilagođene blokove za izradu C# skripti. Uz standardne Blockly kategorije (logika, petlje, matematičke operacije, tekstovi, datumi, popisi, boje, varijable), prilagođene kategorije koje se mogu pronaći u **Toolbox** su:
 
 - **Varijable konteksta**, sadrži blokove za odabir varijabli iz trenutnog konteksta i za pretvaranje generičkog objekta u niz/broj/...;
 
@@ -39,3 +40,5 @@ Da biste promijenili trenutni *Workspace*, odaberite drugu vrijednost s padajuć
 Nakon što završite s umetanjem koda, obavezno kliknite gumb *Spremi/Sastavi*i provjerite je li skripta također vidljiva u *Skript Editor*,  odabirom stavke *Skripta* iz izbornika *Vrsta skripte* (da biste stoga promijenili platformu za kodiranje).
 
 Generirani kod skripte pojavit će se između dva komentirana retka (preimenovana u <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// START WIZARD CODE</span> and <span style={{ color: 'forestGreen' , fontWeight: 'bold' }}>// END WIZARD CODE</span>).
+
+![alt text](/img/it-it/applications/supervisor/supervisor10.png)
