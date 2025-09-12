@@ -23,7 +23,7 @@ sidebar_position: 1
 > - WM - modified print inventory valorization for RO (#TT03782/25) 
 > - WM - Ora, i valori nella colonna "Stato Documento" della griglia di dettaglio dell'analisi analisi disponibilità vengono visualizzati correttamente. (#TT02367/25) 
 > - WM - Prototipi: Nel calcolo del costo dei componenti vengono ora considerati anche eventuali prezzi per quantità definiti nel listino del fornitore preferenziale. Per i dettagli fare riferimento alla documentazione. (#TT03843/24) 
-> - SH – WEB – Corretto il comportamento dei pulsanti “Cancella” e “Salva e Nuovo” durante l’inserimento/modifica degli articoli in modalità Popup Row edit mode. (#TT03805/25)
+> - SH - WEB - Corretto il comportamento dei pulsanti “Cancella” e “Salva e Nuovo” durante l’inserimento/modifica degli articoli in modalità Popup Row edit mode. (#TT03805/25)
 
 ### Patch 707.1-0045 - 04/09/2025
 
