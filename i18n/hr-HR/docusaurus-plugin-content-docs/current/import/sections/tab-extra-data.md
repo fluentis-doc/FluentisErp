@@ -1,1 +1,1 @@
-Qui viene proposta l'informazione inserita nell'*Anagrafica del soggetto > tab Extra data*, solo se esistono dati di default.
+Ovdje se nudi informacija unesena u *Kartica subjekta > kartica Dodatni podaci*, samo ako postoje zadani podaci.

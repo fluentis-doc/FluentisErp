@@ -1,5 +1,5 @@
-Qui viene proposta l'informazione inserita nell' anagrafica fornitore, tab [Spedizioni](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), solo se esistono dati di default.
+Ovdje se nudi informacija unesena u kartici dobavljača, tab [Otprema](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), samo ako postoje zadani podaci.
 
-Il combo box propone tutti i destinatari e le destinazioni inserite nell'anagrafica fornitore.
+Padajući izbornik nudi sve primatelje i odredišta unesene u karticu dobavljača.
 
-Gli indirizzi di spedizione (destinatario/destinazione e vettore) possono essere inseriti anche solo descrittivi senza essere precedentemente inseriti tra i contatti.
+Adrese za isporuku (primatelj/destinacija i prijevoznik) mogu se unijeti i samo opisno, bez prethodnog unosa u kontakte.

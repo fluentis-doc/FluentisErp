@@ -1,4 +1,4 @@
-Vengono riportate le varianti dell'articolo selezionato, codificate nel tab [ Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli oppure possono essere inserite manualmente.  
-Offre la possibilità di gestire le varianti dell'articolo in modo diverso da quello proposto sulla riga articolo.  
-Per esempio, in ogni riga articolo, è possibile inserire la quantità totale; successivamente, nel medesimo tab, possono essere definite diverse quantità per più varianti dell'articolo selezionato e anche per variante e attributo, ovvero gestione taglia/colore.  
-Questa operazione è possibile solo se tutte le varianti dell'articolo hanno il prezzo uguale al prezzo dell'articolo nella configurazione standard.
+Donose se varijante odabranog artikla, kodificirane u kartici [Varijante](/docs/erp-home/registers/items/create-new-item) iz šifarnika artikla ili se mogu unijeti ručno.
+Nudi mogućnost upravljanja varijantama artikla na način koji se razlikuje od onoga što je predloženo u retku artikla.
+Na primjer, u svakoj liniji artikla moguće je unijeti ukupnu količinu; zatim, u istoj kartici, mogu se definirati različite količine za više varijanti odabranog artikla, kao i za varijantu i atribut, odnosno upravljanje veličinom/bojom.  
+Ova operacija je moguća samo ako sve varijante artikla imaju cijenu jednaku cijeni artikla u standardnoj konfiguraciji.
