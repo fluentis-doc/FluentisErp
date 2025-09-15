@@ -1,82 +1,82 @@
 ---
-title: Datasources
-sidebar_label: Datasources
+title: Izvori podataka
+sidebar_label: Izvori podataka
 sidebar_position: 0
 ---
 
-### Form
-Come anticipato nell'overview generale di cui alla sezione [LINK](/docs/applications/database/database-intro) i datasources permettono di esporre dati in maniera strutturata ed organizzata.  
-La form dei datasource è raggiungibile tramite il seguente percorso: **Applications Resource Manager** > **Database** > **Data Sources**.  
+### Obrazac
+Kao što je prethodno spomenuto u općem pregledu u odjeljku [LINK](/docs/applications/database/database-intro), izvori podataka (datasources) omogućuju strukturirano i organizirano izlaganje podataka.  
+Obrazac za izvore podataka dostupan je putem sljedeće putanje: **Applications Resource Manager** > **Baza podataka** > **Izvori podataka**.  
 
-La form dei datasource si presenta è così composta:
-* un **ribbon** menu con cui è possibile eseguire le consuete operazioni di CRUD ed il tasto **anteprima** che consente di visualizzare il risultato dell'esecuzione del datasource.
-* un filtro standard con cui è possibile filtrare i record esistenti (i datasources) per Codice, Descrizione, Oggetto, Area e Data.  
-* una griglia dei risultati dove è possibile visualizzare l'elenco dei datasource presenti in base dati.  
+Obrazac za izvore podataka sastoji se od sljedećih elemenata:
+* **Ribbon** izbornika koji omogućuje izvođenje uobičajenih CRUD operacija te gumba **pregled** (anteprima) koji omogućuje prikaz rezultata izvođenja izvora podataka.
+* standardnog filtra kojim je moguće filtrirati postojeće zapise (izvore podataka) prema Kodu, Opisu, Objektu, Području i Datumu.
+* mreže rezultata u kojoj je moguće pregledati popis izvora podataka prisutnih u bazi.  
 
-### Creazione di un nuovo datasource
+### Kreiranje novog izvora podataka
 
-La creazione di un nuovo datasource avviene mediante il pulsante 'Nuovo' e prevede che vengano popolati:
-* i dati di testata, quali codice e descrizione.
-* la tipologia del datasource, distinguendo tra
-  * datasource basati su un oggetto standard o custom di fluentis.
-  * datasource basati su una query SQL.
-  * datasource di tipologia **GROUP BY** basati su un oggetto standard o custom di fluentis.
+Kreiranje novog izvora podataka vrši se putem gumba 'Novi', pri čemu je potrebno popuniti sljedeće informacije:
+* zaglavlje, tj. kod i opis.
+* tip izvora podataka, s mogućnošću odabira između:
+  * izvora podataka temeljenih na standardnom ili prilagođenom (custom) Fluentis objektu.
+  * izvora podataka temeljenih na SQL upitu.
+  * izvora podataka tipa **GROUP BY** temeljenih na standardnom ili prilagođenom Fluentis objektu.
 
-A seconda della tipologia di datasource selezionato i campi di input da popolare saranno differenti.   
+Ovisno o odabranoj vrsti izvora podataka, potrebna polja za unos će se razlikovati.
 
-* Per i datasource semplici, cioè basati su un **oggetto** dovremmo popolare:
-  * codice.
-  * tipo di datasource, scegliendone uno di tipo semplice.
-  * descrizione.
-  * codice dell'oggetto fluentis su cui vogliamo basare il datasource.
-  * data di fine validità, che consente di specificare una data dopo la quale il datasource non è più disponibile per l'utente di Fluentis.
-  * Take Rows / Skip Rows, permette di definire un range di righe da prendere o saltare.
-  * Area, si tratta di una descrizione presa da dizionario.
-* Per i datasource basati su un **query SQL** dovremmo popolare:
-  * i campi di testata, quali
-    * codice.
-    * descrizione.
-  * tipo di datasource, selezionando SQL Query DataSource,
-  * data di fine validità, che consente di specificare una data dopo la quale il datasource non è più disponibile per l'utente di Fluentis.
-  * SQL Query, specificando una query creata e salvata precedentemente tramite il **FluentisQueryStudio**.   
-  * contesto (opzionale).
-  * parametri (opzionale).
-  * area, si tratta di una descrizione presa da dizionario.
-  * Modulo di business.
+* Za jednostavne izvore podataka, tj. one temeljene na **objektu**, potrebno je unijeti:
+  * kod.
+  * tip izvora podataka (odabir jednostavnog tipa).
+  * opis.
+  * kod Fluentis objekta na kojem će se temeljiti izvor podataka.
+  * datum završetka valjanosti – omogućuje definiranje datuma nakon kojeg izvor podataka više nije dostupan korisnicima Fluentisa.
+  * Take Rows / Skip Rows – omogućuje definiranje raspona redaka koji se uzimaju ili preskaču.
+  * područje – opis preuzet iz rječnika.
+* * Za izvore podataka temeljene na **SQL upitu**, potrebno je unijeti:
+  * zaglavlje:
+    * kod.
+    * opis.
+  * tip izvora podataka – odabir SQL Query DataSource,
+  * datum završetka valjanosti – definiranje datuma nakon kojeg izvor podataka nije više dostupan.
+  * SQL upit – unos prethodno kreiranog i spremljenog upita putem **Fluentis Query Studio**.
+  * kontekst (neobavezno).
+  * parametre (neobavezno).
+  * područje – opis preuzet iz rječnika.
+  * poslovni modul.
 
-Per quanto concerne l'utilizzo di **FluentisQueryStudio** quale strumento per la creazione / salvataggio di query in base dati, si rimanda al seguente [LINK](/docs/applications/database/database-intro).   
-E' fondamentale che la query creata tramite il **FluentisQueryStudio** rispetti delle precise regole di formattazione:
-* la query deve restituire almeno i campi **Id**, **Code**, **Description** per poter essere riutilizzata all'interno di un datasource altrimenti non sarà visibile all'interno della relativa combobox.   
-  
-* Infine, ci sono i datasource basati su clausola **GROUP BY**.
-* Per questa tipologia di datasource, è necessario popolare:
-  * codice e descrizione,
-  * tipo datasource, scegliendo 'GROUP BY Data Source',
-  * data fine validità (opzionale),
-  * oggetto su cui basare il datasource,
+Za korištenje **Fluentis Query Studio** kao alata za kreiranje/spremanje upita u bazu podataka, pogledaj sljedeći [LINK](/docs/applications/database/database-intro).  
+Važno je da upit kreiran putem **Fluentis Query Studio** poštuje određena pravila formatiranja:
+* upit mora vratiti barem polja **Id**, **Code**, **Description**, kako bi mogao biti ponovno korišten unutar izvora podataka – u suprotnom neće biti vidljiv u odgovarajućem padajućem izborniku (combobox).
+
+* Konačno, postoje i izvori podataka temeljeni na **GROUP BY** klauzuli.
+* Za ovu vrstu izvora podataka potrebno je unijeti:
+  * kod i opis,
+  * tip izvora podataka – odabir 'GROUP BY Data Source',
+  * datum završetka valjanosti (neobavezno),
+  * objekt na kojem se temelji izvor podataka,
   * take rows / skip rows,
-  * area, si tratta di una descrizione presa dal dizionario.
+  * područje – opis preuzet iz rječnika.
 
-* Tramite il tab delle Proprietà è possibile definire i criteri di aggregazione che sfrutteranno la clausola di GROUP BY.
-Analogamente al linguaggio SQL, la clausola di GROUP BY, permette di raggruppare i record secondo determinati criteri di aggregazione.
-In particolare, nel tab di destra 'Proprietà visibili' è presente una tabella con i seguenti campi:
-* codice
+* Putem kartice *Svojstva* moguće je definirati kriterije agregacije koji koriste GROUP BY klauzulu.
+Slično kao u SQL jeziku, GROUP BY klauzula omogućuje grupiranje zapisa prema definiranim kriterijima agregacije.
+Na desnoj kartici *Vidljiva svojstva* nalazi se tablica sa sljedećim poljima:
+* kod
 * alias
-* ruolo
-* criterio di aggregazione
-* percorso della proprietà
+* uloga
+* kriterij agregacije
+* putanja svojstva
 * formula
-* ordina per posizione
-* ordinamento
-* somma incrementale
+* sortiraj po poziciji
+* redoslijed sortiranja
+* kumulativna suma
 
-Per la gestione del criterio di aggregazione è necessario agire sulla colonna 'Criterio di aggregazione', la quale permette di scegliere un valore tra cui:
-* Dimensione, oppure
-* Metrica.
+Za upravljanje kriterijem agregacije koristi se stupac *Kriterij agregacije*, u kojem je moguće odabrati jednu od vrijednosti:
+* Dimenzija, ili
+* Metrika.
 
-Le **dimensioni** sono un attributo qualitativo, ovvero una categoria o un descrittore. Servono per segmentare o ragruppare i dati.  
-Le **metriche** sono un attributo quantitativo, ovvero un valore numerico che può essere misurato, aggregato o calcolato.  
-Potremmo quindi aggregare le fatture di vendita (oggetto FSSalesInvoice) per tipologia di fattura (FSSalesInvoiceType.Code), così come da screenshot sottostante.  
+**Dimenzije** su kvalitativni atributi – kategorije ili deskriptori koji služe za segmentaciju ili grupiranje podataka.  
+**Metrike** su kvantitativni atributi – numeričke vrijednosti koje se mogu mjeriti, agregirati ili izračunavati.  
+Na primjer, možemo agregirati izlazne račune (objekt FSSalesInvoice) prema tipu računa (FSSalesInvoiceType.Code), kao što je prikazano na sljedećem ekranu:   
 ![](/img/it-it/applications/database/20250529162809.png)
 
 
