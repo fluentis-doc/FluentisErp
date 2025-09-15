@@ -1,55 +1,56 @@
 ---
-title: Panoramica
-sidebar_label: Panoramica
+title: Pregled
+sidebar_label: Pregled
 sidebar_position: 0
 ---
 
-# Datasources / SQL Query / Fluentis Query Studio
+# Izvori podataka / SQL upit / Fluentis Query Studio
 
-## Overview
-In questa pagina vediamo una panoramica generale degli strumenti messi a disposizione da Fluentis per interagire con la base dati.  
-Il nodo **database** consente all'utente di Fluentis di eseguire determinate operazioni sulla base dati di Fluentis.   
-Il nodo, si compone delle seguenti voci:
-* Database Schemas
+## Pregled
+Na ovoj stranici nalazi se opći pregled alata koje Fluentis stavlja na raspolaganje za interakciju s bazom podataka.  
+Čvor **baza podataka** omogućuje korisniku Fluentisa izvođenje određenih operacija nad Fluentis bazom podataka.  
+Čvor se sastoji od sljedećih stavki:
+* Sheme baze podataka
 * Fluentis Query Studio
-  * Nuova query SQL
-  * Esempi
-  * Esportazione in Excel
-  * Esportazione in una grid
-* Data Sources
+  * Novi SQL upit
+  * Primjeri
+  * Izvoz u Excel
+  * Izvoz u mrežu (grid)
+* Izvori podataka
 
 
-### Database Schemas
-la voce **database schemas** apre una form read-write che consente di aggiungere degli schemi del database oltre a quelli già presenti a standard.  
+### Sheme baze podataka
+Stavka **sheme baze podataka** otvara obrazac (formu) za čitanje i pisanje koji omogućuje dodavanje shema baze podataka, uz one koje su već standardno prisutne.  
 
 
-La form è composta da:
-* un ribbon menu con le consuete azioni (search, create, delete).
-* un filtro standard che permette di filtrare i record per Nome e/o per Natura.
-* Una griglia dei risultati che permette di visualizzare a schermo i database schema presenti.
+Obrazac se sastoji od:
+* ribbon izbornika s uobičajenim akcijama (pretraživanje, kreiranje, brisanje).
+* standardnog filtra koji omogućuje filtriranje zapisa po nazivu i/ili prirodi.
+* mreže rezultata koja prikazuje dostupne sheme baze podataka na ekranu.
 
-Per la creazione di nuove tabelle a database, anche mediante dei wizard automatizzati (vedi wizard per l'extension), è **necessario** creare un database schema custom.
+Za kreiranje novih tablica u bazi podataka, uključujući korištenje automatiziranih čarobnjaka (vidi čarobnjak za proširenje), **potrebno je** kreirati prilagođenu (custom) shemu baze podataka.
+
 
 ### Fluentis Query Studio
-Lo strumento Fluentis Query Studio permette un'interazione con la base dati Fluentis previa associazione di appositi diritti all'utente da Arm.  
+Alat Fluentis Query Studio omogućuje interakciju s Fluentis bazom podataka, pod uvjetom da su korisniku prethodno dodijeljena odgovarajuća prava iz sustava Arm.   
 
 ![](/img/it-it/applications/database/20250520090348.png)
 
-La form, come mostrato in figura, si compone di:
-* un ribbon, (Salva, Esegui).
-* sulla destra un object explorer che permette di espandere i diversi elementi della base dati (Tabelle, Viste, Stored Procedure, Funzioni, Parametri, Parametri dinamici).
-* sulla sinistra in alto un editor che permette la scrittura di query SQL.
-* sul sinistra in basso la griglia dei risultati della query.  
+Obrazac, kao što je prikazano na slici, sastoji se od:
+* ribbon izbornika (Spremi, Pokreni).
+* object explorera s desne strane koji omogućuje pregledavanje različitih elemenata baze podataka (Tablice, Pogledi, Pohranjene procedure, Funkcije, Parametri, Dinamički parametri).
+* uređivača upita (editor) u gornjem lijevom dijelu, koji omogućuje pisanje SQL upita.
+* mreže s rezultatima upita u donjem lijevom dijelu.  
 
-### Data Sources
+### Izvori podataka
 
 ![](/img/it-it/applications/database/20250520085246.png)
 
-I datasource sono delle sorgenti dati che permettono l'esposizione di dati in modo strutturato ed organizzato, e possono essere riutilizzato per popolare dashboard e/o extradata.  
-La form dei datasource si compone così come segue:  
-* un Ribbon menu: con le consuete azioni permesse all'utente circa la creazione, modifica, eliminazione di nuovi record.  
-* un filtro standard che permette la ricerca dei record.  
-* una griglia dei risultati che permette la visualizzazione dei records (datasources).
+Izvori podataka predstavljaju strukturirane i organizirane izvore podataka koji omogućuju njihovo izlaganje te se mogu ponovno koristiti za popunjavanje Nadzornih ploča (dashboard) i/ili Dodatnih podataka.  
+Obrazac za izvore podataka sastoji se od sljedećih elemenata:  
+* ribbon izbornika: s uobičajenim akcijama koje korisniku omogućuju kreiranje, uređivanje i brisanje zapisa.  
+* standardnog filtra koji omogućuje pretraživanje zapisa.  
+* mreže rezultata koja prikazuje dostupne zapise (izvore podataka).
 
 
 
