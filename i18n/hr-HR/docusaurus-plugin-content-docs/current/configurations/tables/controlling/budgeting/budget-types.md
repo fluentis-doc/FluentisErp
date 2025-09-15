@@ -1,6 +1,6 @@
 ---
-title: Tipi Budget
+title: Vrste budžeta
 sidebar_position: 1
 ---
 
-La tabella viene compilata attraverso l'imposizione di un codice, di una descrizione utente e di una categoria fissa budget. Non ha una rilevanza particolare, si tratta solo di un criterio di ricerca e selezione.
+Tablica se sastavlja nametanjem koda, opisa korisnika i kategorije fiksnog proračuna. Nema posebne važnosti, to je samo kriterij traženja i odabira. 
