@@ -1,4 +1,4 @@
 ---
-title: Resa
+title: Povrat
 sidebar_position: 1
 ---
