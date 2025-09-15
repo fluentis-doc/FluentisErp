@@ -1,12 +1,12 @@
 ---
-title: Ricerca Certificato di analisi
+title: Pretraga certifikata s analize
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Controlli articolo > Piani di controllo**.   
+Filter se nalazi na putanji **Kvaliteta > Kontrole Artikla > Kontrolni planovi**.  
 
-I **Certificati di analisi** o **Certificati di collaudo** attestano la conformità degli articoli venduti alle caratteristiche specificate nella *Scheda tecnica*.   
-I *Certificati di analisi* possono essere generici o specifici per *Cliente*.   
+**Certifikati s analize** ili **Ispitni certifikati** potvrđuju sukladnost prodanih artikala s karakteristikama navedenima u *Tehničkim uputstvima*.
+*Certifikati s analize* mogu biti generički ili specifični za *kupca*.   
 
 Il filtro dati consente di inserire nuovi *Certificati di analisi* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
 
