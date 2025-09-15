@@ -1,5 +1,5 @@
 ---
-title: Tipi Periodo
+title: Vrste razdoblja
 sidebar_position: 5
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Versioni P.A.
+title: Verzije nabavnih cijena
 sidebar_position: 3
 ---
 
-Questa form permette: di inserire più versioni per le previsioni, di stabilire una o più versioni attive (quelle non attive non potranno essere utilizzate per creare nuove previsioni ma solo per filtrare le previsioni esistenti) e di stabilire la versione di default tra quelle attive.
+Ovaj obrazac omogućuje: umetanje više verzija za prognoze, uspostavljanje jedne ili više aktivnih verzija (neaktivne se ne mogu koristiti za izradu novih prognoza, već samo za filtriranje postojećih prognoza) i uspostavljanje zadane verzije među aktivnima. 
