@@ -1,9 +1,9 @@
 ---
-title: Generalità
+title: Općenito
 sidebar_position: 1
 ---
 
-Le impostazioni specifiche dell'area controlling sono definite nella successiva lista di tabelle.
+Specifične postavke kontrolnog područja definirane su u sljedećem popisu tablica. 
 
 
 
