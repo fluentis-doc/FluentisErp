@@ -1,23 +1,23 @@
 ---
-title: Tipi periodo budget
+title: Periodi za definiranje budžeta
 sidebar_position: 2
 ---
 
-La maschera si compone di più griglie: la definizione dei** periodi budget** si effettua nella prima griglia a sinistra, dove si attribuisce un 'codice', una 'descrizione' e un flag per la gestione 'pluriannuale' dello stesso. Una volta salvato il codice si attiverà la possibilità di inserirne, nella griglia a destra, i dettagli dei periodi: nel caso in cui il periodo sia pluriannuale sarà visualizzato anche l'anno di riferimento e non solo giorno/mese.
+Obrazac se sastoji od nekoliko rešetki: definicija **proračunskih razdoblja** provodi se u prvoj rešetki s lijeve strane, gdje su 'šifra', 'opis' i oznaka dodijeljeni za 'više- godišnje' upravljanje istima. Nakon što je šifra spremljena, aktivirat će se mogućnost umetanja detalja razdoblja u rešetku s desne strane: ako je razdoblje višegodišnje, bit će prikazana i referentna godina, a ne samo dan/mjesec. 
 
-L'impostazione di questi dettagli può essere definita in due modi: il primo, consigliato, prevede che sia impostato sempre come data di partenza di tutti i periodi il primo giorno di gennaio, mentre la fine del singolo sarà il giorno ‘last' del mese relativo. La percentuale da impostare, quindi, sarà sempre un incremento di valore del periodo precedente e l'ultimo periodo avrà il 100% del valore annuale (ad es. per un periodo trimestrale avremo 4 periodi con 25/50/75/100%). Questa impostazione è consigliata soprattutto per budget non solo di tipo economico ma anche basati su sottoconti patrimoniali, che hanno una ripresa saldi iniziale da riportare di mese in mese.
+Postavljanje ovih detalja može se definirati na dva načina: prvi, preporučeni, zahtijeva da se početni datum svih razdoblja uvijek postavi na prvi dan siječnja, dok će kraj pojedinačnog biti 'zadnji' dan mjesec relativan. Postotak koji treba postaviti, stoga će uvijek biti povećanje vrijednosti prethodnog razdoblja, a posljednje razdoblje će imati 100% godišnje vrijednosti (npr. za tromjesečno razdoblje imat ćemo 4 razdoblja s 25/50/75/100 %). Ova se postavka posebno preporučuje za proračune koji nisu samo ekonomske prirode, već se temelje i na imovinskim podračunima, koji imaju početni oporavak stanja koji se prenosi iz mjeseca u mjesec. 
 
-Il secondo tipo di impostazione, invece, prevede il caricamento di periodi tra loro separati, nel qual caso ognuno avrà una sua percentuale specifica generale. Le percentuali caricate in questo punto sono percentuali standard da utilizzare come default al caricamento dati, ma l'utente potrà procedere a forzare i valori caso per caso secondo necessità.
+Druga vrsta postavke, međutim, uključuje učitavanje zasebnih razdoblja, u kojem će slučaju svako imati svoj specifični opći postotak. Postoci učitani u ovoj točki standardni su postoci koji se koriste kao zadani pri učitavanju podataka, ali korisnik može nastaviti s forsiranjem vrijednosti od slučaja do slučaja prema potrebi. 
 
-Al di sotto di questa impostazione base sono presenti una lista di periodi alternativi: selezionato il periodo ‘padre' superiore, si potranno definire N altri suoi periodi alternativi da associare a specifici sottoconti del piano dei conti, al fine di predefinire le percentuali specifiche da utilizzare in determinati casi: il dettaglio di questi sarà proposto con le stesse percentuali del periodo di partenza, ma l'utente sarà libero di modificarle liberamente.
+Ispod ove osnovne postavke nalazi se popis alternativnih razdoblja: nakon što je odabrano gornje 'matično' razdoblje, može se definirati N drugih alternativnih razdoblja koja će biti povezana s određenim podračunima kontnog plana, kako bi se unaprijed definirali specifični postoci koji će se koristiti u određenim slučajevima: pojedinosti o njima bit će predložene s istim postocima kao i početno razdoblje, ali će ih korisnik moći slobodno mijenjati. 
 
 
-*Pulsanti specifici*
+*Specifični gumbi*
 
-**Inserisce nuovo periodo**: imposta il cursore nella griglia in alto a sinistra dei periodi budget.  
-**Inserisce nuovo periodo dett**: imposta il cursore nella griglia a destra per il periodo budget selezionato.  
-**Inserisce nuovo budget alternativo**: imposta il cursore nella griglia in basso a sinistra dei periodi budget alternativi.  
-**Elimina budget periodo**: Cancella il periodo budget selezionato.  
-**Elimina dettagli del budget periodo**: Cancella il dettaglio del periodo budget selezionato.  
-**Elimina budget alternativo**: Cancella il periodo budget alternativo selezionato.  
-**Elimina dettaglio budget alternativo**: Cancella il dettaglio del periodo alternativo budget selezionato.  
+**Umetni novo razdoblje**: Postavlja kursor u rešetku u gornjem lijevom kutu proračunskih razdoblja.   
+**Umetni novo proračunsko razdoblje**: Postavlja kursor u rešetku s desne strane za odabrano proračunsko razdoblje.
+**Umetni novi alternativni budžet**: Postavite kursor u rešetku u donjem lijevom kutu alternativnih proračunskih razdoblja.  
+**Izbriši proračunsko razdoblje**: Briše odabrano proračunsko razdoblje.  
+**Izbriši detalje budžeta perioda**: Briše odabrane pojedinosti proračunskog razdoblja.  
+**Izbriši alternativni budžet**: Briše odabrano alternativno proračunsko razdoblje.  
+**Izbriši detalj budžeta perioda**: Briše detalj odabranog alternativnog proračunskog razdoblja.  
