@@ -1,8 +1,7 @@
 ---
-title: Categoria Commerciale
+title: Komercijalna kategorija 
 sidebar_position: 2
 ---
 
-La tabella **Categoria commerciale** è una tabella descrittiva che può essere utilizzata nei Contatti del CRM. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella Codice/Descrizione.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione della categoria commerciale, e da una griglia in cui appunto verranno elencate tutte le categorie inserite.
+Tablica **Komercijalna kategorija** je opisna tablica koja se može koristiti u CRM kontaktima. Zajednička je za sve tvrtke u bazi podataka i sastoji se od jednostavne tablice Kod/Opis. Sadrži dio za filtriranje gdje se može pretraživati po kodu ili opisu komercijalne kategorije, te mrežu u kojoj će biti navedene sve unesene kategorije.
 
