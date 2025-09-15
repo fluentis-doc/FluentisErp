@@ -1,4 +1,4 @@
 ---
-title: Famiglie articoli
+title: Grupe artikala
 sidebar_position: 1
 ---
