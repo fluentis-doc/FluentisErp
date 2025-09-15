@@ -16,7 +16,6 @@ Ispod ove osnovne postavke nalazi se popis alternativnih razdoblja: nakon što j
 
 **Umetni novo razdoblje**: Postavlja kursor u rešetku u gornjem lijevom kutu proračunskih razdoblja.   
 **Umetni novo proračunsko razdoblje**: Postavlja kursor u rešetku s desne strane za odabrano proračunsko razdoblje.
-
 **Umetni novi alternativni budžet**: Postavite kursor u rešetku u donjem lijevom kutu alternativnih proračunskih razdoblja.  
 **Izbriši proračunsko razdoblje**: Briše odabrano proračunsko razdoblje.  
 **Izbriši detalje budžeta perioda**: Briše odabrane pojedinosti proračunskog razdoblja.  
