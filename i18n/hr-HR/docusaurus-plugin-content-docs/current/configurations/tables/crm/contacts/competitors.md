@@ -1,10 +1,8 @@
 ---
-title: Concorrenti
+title: Konkurencija
 sidebar_position: 3
 ---
 
-E' una tabella descrittiva per catalogare le aziende **Concorrenti** e può essere utilizzata nei [Contatti](/docs/crm comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/descrizione.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione del concorrente, e da una griglia in cui appunto verranno elencati tutti i concorrenti inseriti.
-
+Ovo je opisna tablica za katalogiziranje **Konkurencije** tvrtke i može se koristiti u CRM-u za *Kontakte*. Zajednička je za sve tvrtke u bazi podataka i sastoji se od jednostavne tablice s kodom/opisom. Sadrži dio za filtriranje prema kodu ili opisu konkurenta te mrežu u kojoj će biti navedeni svi uneseni konkurenti.
 
 
