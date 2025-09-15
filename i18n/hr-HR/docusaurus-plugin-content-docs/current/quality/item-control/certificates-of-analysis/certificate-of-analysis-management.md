@@ -84,158 +84,158 @@ Upravljane informacije su:
 > **Ostale bilješke**: bilješke u slobodnom obliku.   
 
 
-#### Extra data
+#### Drugi podaci
 Moguće je umetnuti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *Certifikat s analize*.   
 
 
-### Controlli e valori rilevati 
-Le informazioni gestite sono:   
-> **Articolo**   
->> **Numero**: è il numero di riga del documento.   
->> **Tipo riga**: è il tipo riga del documento. Nella versione è gestito solamente il *Tipo riga: 1 - Articolo codificato*.   
->> **Classe**: è la classe dell'*Articolo* della riga documento controllata.   
->> **Codice articolo**: è il codice dell'*Articolo* della riga documento controllata.   
->> **Descrizione articolo**: è la descrizione dell'*Articolo* della riga documento controllata.   
->> **Unità di carico**: .   
->> **Lotto**: .   
->> **Numero seriale**: .   
->> **Unità di misura**: è l'*Unità di misura* della *Quantità documento* della riga documento controllata.   
->> **Quantità**: è la *Quantità documento* della riga documento controllata.   
->> **Unità di misura alternativa**: è l'*Unità di misura alternativa* della *Quantità documento* della riga documento controllata.   
->> **Quantità alternativa**: è la *Quantità alternativa documento* della riga documento controllata.   
+### Kontrole i otkrivene vrijednosti
+Upravljane informacije su:   
+> **Artikl**   
+>> **Broj**: je broj retka dokumenta.
+>> **Tip linije**: je vrsta retka dokumenta. U verziji 1 - Kodirana stavka*, upravlja se samo *Tip linije*.
+>> **Klasa**: je klasa *artikla* retka dokumenta koji se provjerava.
+>> **Šifra artikla**: je šifra *artikla* retka dokumenta koji se provjerava.
+>> **Opis artikla**: je opis *artikla* retka dokumenta koji se provjerava.
+>> **Jedinica utovara**: .
+>> **Lot**: .
+>> **Serijski broj**: .   
+>> **Jedinica mjere**: je *Jedinica mjere* *Količine dokumenta* retka dokumenta koji se provjerava.
+>> **Količina**: je *Količina dokumenta* retka dokumenta koji se provjerava. 
+>> **Alternativna mjerna jedinica**: Ovo je *Alternativna mjerna jedinica* *Količine dokumenta* retka kontroliranog dokumenta.
+>> **Alternativna količina**: Ovo je *Alternativna količina dokumenta* retka kontroliranog dokumenta.  
 >
-> **Controlli Articolo**   
->> **Tipo**: e il codice del *Tipo controllo articolo*.   
->> **Descrizione tipo**: è la descrizione del *Tipo controllo articolo*. L'informazione è di sola lettura.   
->> **Numero**: e il numero del *Controllo articolo*. L'informazione è di sola lettura.   
->> **Data**: e la data in cui è stato inserito il *Controllo articolo*. L'informazione è di sola lettura.   
+> **Kontrola artikla**
+>> **Tip**: je šifra *Vrste kontrole artikla*.
+>> **Opis tipa**: je opis *Vrste kontrole artikla*. Ova je informacija samo za čitanje.
+>> **Broj**: je broj *Kontrole artikla*. Ova je informacija samo za čitanje.
+>> **Datum**: je datum unosa *Kontrole artikla*. Ova je informacija samo za čitanje.  
 
 
-#### Valori rilevati
-Contiene l'elenco delle *Prove* per l'*Articolo*.   
-Le informazioni vengono ereditate dalle *Prove dei *Controlli articolo* importati e sono modificabili con le stesse logiche utilizzate nella gestione dei [*Controlli articolo*](/docs/quality/item-control/items-control/item-control-management).
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della *Prove*.   
-> **Tipo prova**: è il codice della *Prova*.   
-> **Descrizione tipo prova**:  è la descrizione della *Prova*. L'informazione è di sola lettura.   
-> **Unità di misura valori rilevati**: è l'*Unità di misura* con cui si esprimono il *Valore nominale*, i *Limiti minimo e massimo* se espressi in valore e non in percentuale e i *Valori rilevati*.   
-> **Tipo valore**: è il *Tipo valore* con cui esprimere il *Valore nominale*; i *Tipi valore* possibili sono: *Numerico*, *Si/No* o *Testo*.   
-> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che piloterà l'abilitazione dei *Limiti* e dei valori di *Tolleranza*.   
-> **Valore nominale**: è il valore teorico atteso della *Prova*.   
-> **Limite minimo**: limite minimo consentito rispetto al *Valore nominale*.   
-> **L.min.(toll-)**: è il limite di tolleranza negativa sul limite minimo.   
-> **L.min.(toll+)**: è il limite di tolleranza positiva sul limite minimo.   
-> **Limite massimo**: limite massimo consentito rispetto  al *Valore nominale*.   
-> **L.max.(toll-)**: è il limite di tolleranza negativa sul limite massimo.   
-> **L.max.(toll+)**: è il limite di tolleranza positiva sul limite massimo.   
-> **%**: indica se il *Limite minimo* e il *Limite massimo* sono espressi in percentuale.   
-> **Valore rilevato**: è il valore puntuale rilevato della *Prova* che ne determinerà l'*Esito*.   
-> All'inserimento del *Valore rilevato*:   
-> - in *Rilevato da* viene proposto il *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato da utente* viene proposto l'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Esito* viene proposto il risultato della *Prova* e modificabile successivamente.   
-> - in *Data esito prova* viene proposta la data odierna e modificabile successivamente.   
+#### Otkrivene vrijednosti
+Sadrži popis *testova* za *stavku*.
+Informacije se nasljeđuju iz *testova iz *kontrole artikala* i mogu se mijenjati istom logikom koja se koristi u upravljanju [*kontrole artikala*](/docs/quality/item-control/items-control/item-control-management).
+Popis se sastoji od sljedećih informacija:   
+> **Redoslijed**: ovo je slijed izvršavanja *Testa*.
+> **Vrsta testa**: ovo je šifra *Testa*.
+> **Opis tipa testa**: ovo je opis *Testa*. Ove su informacije samo za čitanje.
+> **Jedinica mjere za zabilježene vrijednosti**: ovo je *Mjerna jedinica* koja se koristi za izražavanje *Nominalne vrijednosti*, *Minimalne i maksimalne granice* ako su izražene kao vrijednost, a ne kao postotak, te *Otkrivenih vrijednosti*.  
+> **Vrsta vrijednosti**: ovo je *Vrsta vrijednosti* koja se koristi za izražavanje *Nominalne vrijednosti*; mogući *Vrsti vrijednosti* su: *Brojčano*, *Da/Ne* ili *Tekst*.
+> **Vrsta limita**: Omogućeno ako je *Vrsta vrijednosti* *Brojčano*; ovo je *Vrsta ograničenja* koja će kontrolirati omogućavanje vrijednosti *Ograničenja* i *Tolerancija*.
+> **Nominalna vrijednost**: ovo je očekivana teorijska vrijednost *Testa*.
+> **Minimalno ograničenje**: ovo je minimalna dopuštena granica u usporedbi s *Nominalnom vrijednošću*.
+> **Min.L.(toll-)**: ovo je negativna granica tolerancije na minimalnoj granici.
+> **Min.L.(toll+)**: ovo je pozitivna granica tolerancije na minimalnoj granici.
+> **Maksimalno ograničenje**: ovo je maksimalna dopuštena granica u usporedbi s *Nominalnom vrijednošću*.
+> **L.max.(toll-)**: negativna je granica tolerancije na maksimalnoj granici.
+> **L.max.(toll+)**: pozitivna je granica tolerancije na maksimalnoj granici.  
+> **%**: označava jesu li *Minimalno ograničenje* i *Maksimalno ograničenje* izraženi kao postotak.
+> **Zabilježena vrijednost**: je specifična vrijednost otkrivena za *Test* koja će odrediti njegov *Ishod*.
+> Prilikom unosa *Zabilježene vrijednosti*:
+> - *Detektirao* prikazuje *Zaposlenika* povezanog s *A.R.M. korisnikom* koji se prijavio;
+> - *Detektiran od korisnika* prikazuje *A.R.M. korisnika* koji se prijavio;
+> - *Rezultat* prikazuje rezultat *Testa* i može se kasnije izmijeniti.
+> - *Datum rezultata testa* prikazuje današnji datum i može se kasnije izmijeniti.
 >
-> **Media valori rilevati**: è la media dei valori rilevati nella *Rilevazione multipla valori* della *Prova*.   
-> **Rilevato da**: è il *Dipendente* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari al *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato da utente**: è l'*Utente A.R.M.* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Esito**: è il risultato positivo o negativo della *Prova*.   
-> All'inserimento dell'*Esito* in *Data esito prova* viene proposta la data odierna e modificabile successivamente.   
-> All'inserimento del *Valore rilevato* o della *Media valori rilevati* questa informazione viene proposta sulla base del *Tipo valore*, *Tipo limite*, *Valore nominale*, *Limiti* e *Tolleranze* inserite.   
-> **Stampabile**: indica che la *Prova* è stampabile.   
-> **Approvato**: indica che i valori e l'*Esito* attribuito alla *Prova* sono stati *Approvati*.   
-> All'atto dell'approvazione la *Data approvazione esito* viene automaticamente proposta pari alla data odierna e può essere variata, tutte le informazioni della *Prova* non possono essere più modificate.   
+> **Prosjek zabilježenih vrijednosti**: ovo je prosjek vrijednosti detektiranih u *Višestrukom detektiranju vrijednosti* *Testa*.  
+> **Detektirao**: ovo je *Zaposlenik* koji je unio *Otkrivenu vrijednost*.   
+> Prilikom unosa *Zabilježene vrijednosti*, ova se informacija prikazuje kao *Zaposlenik* povezan s *A.R.M. korisnikom* koji se prijavio.
+> **Detektiran od korisnika**: ovo je *A.R.M. korisnik* koji je unio *Otkrivenu vrijednost*.
+> Prilikom unosa *Zabilježene vrijednosti*, ova se informacija prikazuje kao *A.R.M. korisnik* koji se prijavio.
+> **Rezultat**: ovo je rezultat prolaza ili pada *Testa*.
+> Prilikom unosa *Rezultata* u *Datum rezultata testa*, prikazuje se današnji datum i može se kasnije promijeniti.
+> Prilikom unosa *Izmjerene vrijednosti* ili *Prosjeka zabilježenih vrijednosti*, ove se informacije predlažu na temelju unesenih *Vrsta vrijednosti*, *Vrsta ograničenja*, *Nominalne vrijednosti*, *Ograničenja* i *Tolerancije*.   
+> **Moguće je ispisati**: označava da se *Test* može ispisati.
+> **Odobreno**: označava da su vrijednosti i *Rezultat* dodijeljeni *Testu* *Odobreni*.
+> Nakon odobrenja, *Datum odobrenja rezultata* automatski se postavlja na današnji datum i može se promijeniti; svi podaci o *Testu* više se ne mogu mijenjati. 
 
 
-***Valori multipli rilevati***   
+***Višestruko otkrivene vrijednosti***   
 
-Contiene l'elenco delle rilevazioni fatte per una singola *Prova*.   
-Anch'esse vengono ereditate dalle *Prove dei *Controlli articolo* importati e sono modificabili con le stesse logiche utilizzate nella gestione dei [*Controlli articolo*](/docs/quality/item-control/items-control/item-control-management).
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della rilevazione.   
-> **Posizione**: annotazioni libere relative alla posizione della rilevazione.   
-> **Valore rilevato**: è il valore rilevato dall'operatore.   
-> Se il *Valore rilevato* è di tipo *Numerico*, la media dei *Valori rilevati*, inseriti in questo elenco per la *Prova* selezionata, verrà inserita nella colonna *Media valori rilevati* della *Prova* selezionata che ne determinerà l'*Esito*.   
-> All'inserimento del *Valore rilevato*:   
-> - in *Rilevato da* viene proposto il *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato da utente* viene proposto l'*Utente A.R.M.* che ha effettuato l'accesso;   
-> - in *Rilevato il* viene proposta la data odierna.   
+Sadrži popis mjerenja izvršenih za jedan *Test*.   
+Oni su također naslijeđeni od *Testova iz *Kontrola artikala* i mogu se mijenjati istom logikom koja se koristi u upravljanju [*Kontrole artikala*](/docs/quality/item-control/items-control/item-control-management).
+Popis se sastoji od sljedećih informacija:
+> **Redoslijed**: ovo je slijed kojim se provodi detekcija.
+> **Pozicija**: napomene slobodnog oblika koje se odnose na lokaciju detekcije.
+> **Otkrivena vrijednost**: Ovo je vrijednost koju je detektirao operater.
+> Ako je *Otkrivena vrijednost* *Brojčanog* tipa, prosjek *Otkrivenih vrijednosti*, unesenih u ovaj popis za odabrani *Test*, bit će umetnut u stupac *Prosječne otkrivene vrijednosti* odabranog *Testa* koji će odrediti njegov *Ishod*.
+> Prilikom unosa *Otkrivene vrijednosti*:
+> - u *Detektirao* prikazuje se *Zaposlenik* povezan s prijavljenim *A.R.M. korisnikom*;
+> - u *Detektiran od korisnika* prikazuje se prijavljeni *A.R.M. korisnik*;
+> - u *Detektiran* prikazuje se današnji datum. 
 >
-> **Strumento di misura utilizzato**: è il rifermento allo *Strumento di misura* utilizzato dall'operatore per acquisire il *Valore rilevato*.   
-> **Rilevato da**: è il *Dipendente* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari al *Dipendente* associato all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato da utente**: è l'*Utente A.R.M.* che ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari all'*Utente A.R.M.* che ha effettuato l'accesso.   
-> **Rilevato il**: è la data in cui l'operatore ha inserito il *Valore rilevato*.   
-> All'inserimento del *Valore rilevato* questa informazione viene proposta pari alla data odierna.   
-> **Note**: annotazioni libere.   
-> **Descrizione Strumento di misura**: è la descrizione dello *Strumento di misura* utilizzato.   
+> **Korišteni mjerni instrument**: ovo je referenca na *mjerni instrument* koji operater koristi za dobivanje *Otkrivene vrijednosti*.
+> **Detektirao**: ovo je *Zaposlenik* koji je unio *Otkrivenu vrijednost*.
+> Kada se unese *Otkrivena vrijednost*, ova se informacija postavlja na *Zaposlenika* povezanog s prijavljenim *A.R.M. korisnikom*.
+> **Detektiran od korisnika**: ovo je *A.R.M. korisnik* koji je unio *Otkrivenu vrijednost*.
+> Kada se unese *Otkrivena vrijednost*, ova se informacija postavlja na *A.R.M. korisnika* koji se prijavio.
+> **Detektiran**: ovo je datum kada je operater unio *Otkrivenu vrijednost*.
+> Kada se unese *Otkrivena vrijednost*, ova se informacija postavlja na današnji datum.
+> **Napomene**: napomene u slobodnom obliku.
+> **Opis mjernog alata**: je opis korištenog *mjernog instrumenta*. 
 
 
-***Dati di dettaglio valori rilevati***   
+***Otkriveni detalji vrijednosti***   
 
-Contiene altre informazioni associate alla *Prova* selezionata.   
-Le informazioni vengono ereditate dalle *Prove dei *Controlli articolo* importati e sono modificabili con le stesse logiche utilizzate nella gestione dei [*Controlli articolo*](/docs/quality/item-control/items-control/item-control-management).   
-Le informazioni gestite sono:   
-> **Prova interna**: indica se la *Prova* viene rilevata internamente o presso un laboratorio esterno.   
-> **Data invio**: è la data in cui si è inviato il materiale necessario ad effettuare la *Prova* presso il *Laboratorio esterno*. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettuerà la prova. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Tipo prova**: è il codice e la descrizione della *Prova*.   
-> **Categoria frequenza**: annotazioni libere relative alla frequenza di campionatura.   
-> **Numero rilevazioni**: è il numero di rilevazioni valori minime suggerite da effettuare.   
-> **Strumento di misura utilizzato**: è lo *Strumento di misura* utilizzato per rilevare il valore puntuale della *Prova*.   
-> **Data inizio/Data fine**: sono le date di inizio e di fine della *Prova*.  
-> **Data esito prova**: è la data di attribuzione dell'*Esito*.   
-> All'inserimento dell'*Esito* questa informazione viene proposta pari alla data odierna e modificabile successivamente.   
-> **Descrizione su risultato**: annotazioni libere sull'argomento.   
-> **Data approvazione**: è la data in cui è stata effettuata l'*Approvazione* della *Prova*.   
-> All'atto dell'inserimento della data viene automaticamente impostato il flag *Approvato*.   
-> **Descrizione approvazione**: annotazioni libere sull'argomento.   
-> **Note prova**: annotazioni libere sull'argomento.   
-> **Altre note**: annotazioni libere.   
-
-
-***Altri dati prove effettuate***   
-
-E' possibile visualizzare degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
-Vengono ereditati dagli *Attributi prove effettuate* associati alle *Prove* dei *Controlli articolo*.   
+Sadrži ostale informacije povezane s odabranim *Testom*.  
+Informacije se nasljeđuju iz uvezenih testova *Kontrola artikala* i mogu se mijenjati istom logikom koja se koristi u upravljanju[*Kontrole artikala*](/docs/quality/item-control/items-control/item-control-management).   
+Upravljane informacije su:
+> **Interni test**: označava je li *Test* proveden interno ili u vanjskom laboratoriju.
+> **Datum slanja**: datum je slanja materijala potrebnog za provođenje *Testa* u *Vanjski laboratorij*. Informacije su samo za čitanje ako je naznačen *Interni test*.   
+> **Vanjski laboratorij**: ovo je naziv tvrtke *Dobavljača* koji će provesti ispitivanje. Ove su informacije samo za čitanje ako je naznačeno *Interno ispitivanje*.
+> **Vrsta testa**: ovo je šifra i opis *Ispitivanja*.
+> **Kategorija učestalosti**: napomene u slobodnom obliku u vezi s učestalošću uzorkovanja.
+> **Broj opažanja**: ovo je minimalni preporučeni broj mjerenja koja treba provesti.
+> **Korišteni mjerni instrument**: ovo je *Mjerni instrument* koji se koristi za određivanje specifične vrijednosti *Ispitivanja*.
+> **Datum početka/završetka**: ovo su datumi početka i završetka *Ispitivanja*.
+> **Datum rezultata testa**: ovo je datum kada je *Rezultat* dodijeljen.   
+> Prilikom unosa *Rezultata*, ove se informacije prikazuju kao današnji datum i mogu se kasnije izmijeniti.
+> **Opis rezultata**: bilješke o temi u slobodnom obliku.
+> **Datum odobrenja**: ovo je datum na koji je *Test* *Odobren*.
+> Prilikom unosa datuma, oznaka *Odobreno* se automatski postavlja.
+> **Opis odobrenja**: bilješke o temi u slobodnom obliku.
+> **Ispitne bilješke**: bilješke o temi u slobodnom obliku.
+> **Ostale bilješke**: bilješke u slobodnom obliku.
 
 
-***Attributi articolo***   
+***Ostali podaci iz provedenih ispitivanja***   
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
-
-
-***Documenti allegati***   
-
-In questo elenco è possibile inserire e consultare eventuali allegati associati alla riga *Valori rilevati* della riga *Articolo/Controlli articolo*.   
+Moguće je pogledati neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata)za svaki redak *Otkrivene vrijednosti* retka *Artikl/Kontrole artikala*.   
+Nasljeđuju se od *Testnih atributa* povezanih s *Testovima* *Kontrola artikala*.   
 
 
-#### Dati di dettaglio controlli
-Le informazioni gestite sono:   
-> **Riferimento Piano di controllo**: è il riferimento al *Piano di controllo* utilizzato per le prove ed i valori rilevati. L'informazione è di sola lettura.   
-> **Descrizione controllo**: è la descrizione del *Controllo articoli* collegato. L'informazione è di sola lettura   
-> **Note controllo**: annotazioni libere sull'argomento.   
-> **Note articolo-cliente**: annotazioni libere sull'argomento.   
-> **Riferimento Scheda tecnica**: è il riferimento alla *Scheda tecnica* collegata al *Piano di controllo* utilizzato. L'informazione è di sola lettura   
-> **Documento di origine**: è il riferimento del *Tipo documento di origine* sul quale si sono effettuati i *Controlli articoli*. L'informazione è di sola lettura   
-> **Riferimento documento di origine**: è il riferimento del *Documento di origine* sul quale si sono effettuati i *Controlli articoli*. L'informazione è di sola lettura.   
-> **Note**: annotazioni libere.   
+***Svojstva artikla***   
+
+Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata)za svaki redak *Otkrivene vrijednosti* retka *Artikl/Kontrole artikala*.   
 
 
-#### Altri dati controllo
-E' possibile visualizzare degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Articolo/Controlli articolo*.   
-Vengono ereditati dagli *Attributi controlli* associati ai *Controlli articolo*.   
+***Dokumenti u privitku***   
+
+U ovom popisu mogu se umetnuti i pregledati svi prilozi povezani s retkom *Otkrivene vrijednosti* retka *Artikl/Kontrole artikala*.   
 
 
-#### Attributi articolo
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni riga *Articolo/Controlli articolo*.   
+#### Detaljni podaci kontrole
+Upravljane informacije su:
+> **Referenca plana kontrole**: ovo je referenca na *Kontrolni plan* korišten za testove i zabilježene vrijednosti. Ove su informacije samo za čitanje.
+> **Opis kontrole**: ovo je opis povezane *Kontrole artikla*. Ove su informacije samo za čitanje.
+> **Napomena o kontroli**: bilješke u slobodnom obliku o temi.
+> **Bilješke artkl-kupac**: bilješke u slobodnom obliku o temi.
+> **Referenca tehničkog lista**: ovo je referenca na *Tehničko uputstvo* povezano s korištenim *Kontrolnim planom*. Ove su informacije samo za čitanje.
+> **Vrsta izvornog dokument**: ovo je referenca na *Vrstu izvornog dokumenta* na kojem su provedene *Kontrole artikala*. Ove su informacije samo za čitanje.
+> **Referenca dokumenta podrijetla**: ovo je referenca na *Izvorni dokument* na kojem su provedene *Kontrole artikala*. Ove su informacije samo za čitanje.  
+> **Napomena**: besplatne bilješke.   
 
 
-#### Documenti allegati
-In questo elenco è possibile inserire e consultare eventuali allegati associati alla riga *Articolo/Controlli articolo*.   
+#### Ostali podaci provjere
+Moguće je pogledati neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki redak *Artikla/Kontrole artikla*.
+Nasljeđuju se od *Svojstva kontrola* povezanih s *Kontrolama artikala*.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+#### Svojstva stavke/artikla
+Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki redak *Artikla/Kontrole artikla*.   
+
+
+#### Dokumenti u privitku
+U ovom popisu mogu se umetnuti i pregledati svi prilozi povezani s retkom *Artikla/Kontrole artikla*.   
+
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).   
