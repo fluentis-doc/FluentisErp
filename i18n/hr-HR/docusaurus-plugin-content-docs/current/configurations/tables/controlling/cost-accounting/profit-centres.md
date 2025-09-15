@@ -1,32 +1,32 @@
 ---
-title: Centri di profitto
+title: Profitni centri 
 sidebar_position: 6
 ---
 
-La tabella consente la definizione della struttura, anche su diversi livelli, e le caratteristiche dei centri di profitto.
+Tablica omogućuje definiranje strukture, čak i na različitim razinama, te karakteristike profitnih centara. 
 
-La sezione generale presenta la struttura ramificata dei Centri di profitto definiti per la società attiva: in rosso sono visualizzati i CDP che non sono valorizzabili in contabilità, in grassetto quelli utilizzabili nella produzione.
-
-
-
-**Centro di profitto**: codice alfanumerico del CDP.
-
-**Descrizione**: descrizione del CDP.
+Opći dio prikazuje razgranatu strukturu profitnih centara definiranih za aktivno poduzeće: CDP-ovi koji se ne možemo računovodstveno vrednovati prikazani su crvenom bojom, oni koji se mogu koristiti u proizvodnji prikazani su podebljani. 
 
 
-**Cost driver**: assegna al centro di costo un cost driver di riattribuzione percentuale nelle Chiusure infrannuali.
 
-**Tipo centro di profitto**: definisce se il centro di costo è diretto o indiretto.
+**Profitni centar**: alfanumerička oznaka CDP-a.
 
-**Centro di responsabilità**: collega il centro di costo al relativo centro di responsabilità.
+**Opis**: Opis CDP-a.
 
-**Data inizio**: definisce la data inizio del CDP.
 
-**Data fine**: definisce la data di fine utilizzo dei CDP.
+**Nositelj troškova**: dodijelite mjestu troška pokretača troškova za preraspodjelu postotka u međuzavršecima.
 
-**Flag valorizzabile**: quando questo flag è impostato il centro di profitto può essere valorizzato con movimenti di contabilità. Togliere il flag dai livelli di struttura che non si vogliono valorizzare erroneamente e lasciarlo solo, quindi, al livello più basso.
+**Tip profitnog centra**: definira je li troškovno mjesto izravno ili neizravno. 
 
-**Flag MRP**: il flag consente di utilizzare il centro di profitto nel modulo della produzione.
+**Centar odgovornosti**: povezuje centar troškova s ​​njegovim centrom odgovornosti.
+
+**Datum početka**: definira datum početka CDP-a.
+
+**Datum završetka**: definira datum završetka korištenja CDP-ova.
+
+**Vrijednosna oznaka**: kada je ova oznaka postavljena, profitni centar se može valorizirati računovodstvenim transakcijama. Uklonite oznaku s razina strukture koje ne želite pogrešno vrednovati i stoga je ostavite samo na najnižoj razini. 
+
+**Oznaka MRP**: zastavica vam omogućuje korištenje profitnog centra u proizvodnom modulu.
 
 
 
