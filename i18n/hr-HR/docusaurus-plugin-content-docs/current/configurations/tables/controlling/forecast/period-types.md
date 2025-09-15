@@ -3,7 +3,7 @@ title: Vrste razdoblja
 sidebar_position: 5
 ---
 
-La form permette di inserire dei periodi per ogni anno. Per ogni periodo si possono impostare le settimane necessarie. La form contiene tre zone: la prima con i filtri di ricerca, la seconda con i periodi e la terza con i dettagli della settimana.
+Obrazac omogućuje unos razdoblja za svaku godinu. Potrebni tjedni mogu se postaviti za svako razdoblje. Obrazac sadrži tri područja: prvo s filtrima pretraživanja, drugo s razdobljima i treće s detaljima tjedna. 
 
 
 
