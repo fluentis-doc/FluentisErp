@@ -1,91 +1,91 @@
 ---
-title: Certificato di Analisi
+title: Certifikati s analize
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Certificati di analisi > Nuovo Certificato di analisi** oppure è possibile eseguirla dalla **Ricerca Certificati di analisi**.   
+Upravljanje se može pronaći na putanji **Kvaliteta > Kontrola artikla > Certifikati s analize > Novi certifikat s analize** ili se može izvršiti putem **Pretraživanja certifikata analize**.   
 
 
-:::important A cosa serve
-Il **Certificato di analisi** attesta che un determinato articolo è conforme alle caratteristiche specificate dalla Scheda tecnica o nelle specifiche del Cliente, attesta altresì le avvenute verifiche sul prodotto, il rispetto dei limiti indicati nei Piani di controllo e accompagnano la vendita del prodotto.   
-I Certificati possono essere generici o personalizzati. Se personalizzati sarà necessario inserire il **Cliente**.   
+:::important Čemu služi
+**Certifikat s analize** potvrđuje da određeni proizvod udovoljava karakteristikama navedenim u Tehničkim uputstvima ili u specifikacijama Kupca. Također potvrđuje da je proizvod testiran i udovoljava ograničenjima navedenima u Kontrolnim planovima.   
+Potvrde mogu biti generičke ili prilagođene. Ako su prilagođene, potrebno je unijeti **Kupca**.  
 
-A standard sono disponibili le reportistiche di:   
-> **Certificato di analisi**: scheda che riporta l'elenco dei *Prodotti* con il dettaglio delle *Prove effettuate*, dei *Valori rilevati* e l'*Esito* ottenuto.   
-> **Dichiarazione di conformità**: scheda che attesta e garantisce la conformità del *Prodotto*.   
+Sljedeća izvješća dostupna su standardno:
+> **Potvrda o analizi**: Oobrazac s popisom *Proizvoda* s detaljima o *izvršenim ispitivanjima*, *otkrivenim vrijednostima* i dobivenim *rezultatima*.
+> **Izjava o sukladnosti**: obrazac kojim se potvrđuje i jamči sukladnost *Proizvoda*.   
 :::
 
 
-## Pulsanti di comando
+## Tipke za upravljanje
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Spremi
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Certificato di analisi* visualizzato.   
-
-
-### ![](/img/neutral/common/import.png) Importazione controlli
-
-Premendo questo pulsante si ricercano i *Controlli articolo Approvati* da associare al *Certificato di analisi* visualizzato.   
-Viene visualizzata una gestione per la ricerca e la selezione dei *Controlli articolo* da importare nel *Certificato di analisi*.   
-Vengono elencati i soli *Controlli articolo Approvati * che soddisfano il filtro dati richiesto.   
-Premendo il pulsante *Seleziona* i *Controlli articolo* selezionati vengono duplicati e riportati nel Certificato di analisi* visualizzato.   
+Pritiskom na ovu tipku spremaju se svi promijenjeni podaci u prikazanom *Certifikatu s analize*.   
 
 
-### ![](/img/neutral/common/update.png) Aggiorna
+### ![](/img/neutral/common/import.png) Uvozne kontrole
 
-Premendo questo pulsante si effettua un aggiornamento di tutte le informazioni presenti nei *Certificato di analisi* visualizzato.   
+Pritiskom na ovaj gumb pretražuju se *Odobrene kontrole artikala* koje će se povezati s prikazanim *Certifikatom s analize*.
+Pojavljuje se alat za upravljanje za pretraživanje i odabir *Kontrola artikala* za uvoz u *Certifikat s analize*.
+Navedene su samo *Odobrene kontrole artikala* koje zadovoljavaju potreban filter podataka.
+Pritiskom na gumb *Odaberi* dupliciraju se odabrane *Kontrole artikala* i prikazuju se u prikazanom *Certifikatu s analize*.  
+
+
+### ![](/img/neutral/common/update.png) Ažuriraj
+
+Pritiskom na ovu tipku ažuriraju se sve informacije u prikazanom *Certifikatu s analize*.   
 
 
 
-## Gestione dati
+## Upravljani podaci
 
 
-### Dati di testata del documento
-Le informazioni gestite sono:   
-> **Tipo certificato**: è il tipo del documento (dato obbligatorio).   
-> All'inserimento di un nuovo *Certificato di analisi* viene proposto il *Tipo certificato* indicato nell'expander *Certificati di analisi* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+### Podaci zaglavlja dokumenta
+Upravljane informacije su:
+> **Vrsta certifikata**: ovo je vrsta dokumenta (obavezni podatak).
+> Prilikom unosa novog *Certifikata s analize*, prikazuje se *Vrsta certifikata* naznačena u proširenju *Certifikati s analize* na kartici *Općenito* u *Parametrima kontrole stavki*.
 >
-> **Anno/Numero/Data**: sono l'*Anno*, *Numero* e *Data* del *Certificato di analisi* (dati obbligatori).   
-> All'inserimento di un nuovo *Certificato di analisi*:   
-> - la *Data* viene proposta pari alla data odierna;   
-> - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo certificato*.   
+> **Godina/Broj/Datum**: To su *Godina*, *Broj* i *Datum* *Certifikata s analize* (obavezni podaci).
+> Prilikom unosa novog *Certifikata s analize*:
+> - *Datum* se postavlja na današnji datum;
+> - *Godina* i *Broj* se postavljaju na temelju *Datuma* i *Numeriranja* povezanih s *Vrstom potvrde*.  
 >
-> **Cliente**: è la ragione sociale del *Cliente* a cui verrà inviato il documento.   
+> **Kupac**: naziv tvrtke *Kupca* kojem će dokument biti poslan.
 
 
-### Testata 
-Le informazioni gestite sono:   
-> **Responsabile**: è il *Dipendente* responsabile del *Certificato di analisi*.   
-> All'inserimento manuale di un nuovo *Certificato di analisi* viene proposto il *Responsabile* indicato nell'expander *Certificati di analisi* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.  
+### Zaglavlje 
+Upravljane informacije su:
+> **Voditelj**: ovo je *Zaposlenik* odgovoran za *Certifikate s analize*. 
+> Prilikom ručnog unosa nove *Certifikata s analize*, prikazuje se *Voditelj* naznačen u proširenju *Certifikati s analize* na kartici *Općenito* u *Parametrima kontrole stavki*. 
 >
-> **Referente esterno**: è la *Funzione aziendale* responsabile dell'*Azione correttiva*.   
-> **Nota cliente**: annotazioni libere.   
-> **Nostro riferimento**: annotazioni libere su riferimenti a documenti interni.   
-> **Vostro riferimento**: annotazioni libere su riferimenti a documenti esterni del cliente.   
-> **Descrizione**: annotazioni libere.   
+> **Vanjski referent**: ovo je *Korporativna funkcija* odgovorna za *Korektivnu radnju*.
+> **Napomena o kupcu**: slobodne bilješke.
+> **Naša referenca**: slobodne bilješke o referencama na interne dokumente.
+> **Vaša referenca**: slobodne bilješke o referencama na vanjske dokumente kupaca.
+> **Opis**: slobodne bilješke.
 >
-> **Completato/In data**: expander dove è possibile inserire:   
+> **Dovršen/Datum**: proširenje u koje se možete umetnuti:   
 >
->> **Completato**: indica che il *Certificato di analisi* è stato *Completato*.   
->> All'atto del completamento vengono automaticamente proposte: *In data* (data del completamento) proposta alla data odierna e può essere variata, *Completato da* collegato e al *Dipendente* collegato all'*Utente A.R.M.* che ha effettuato l'accesso.  
->> **Notificato/In data**: indica che il *Certificato di analisi* è stato *Notificato* al cliente nella data specificata.   
->> All'atto della notifica viene automaticamente proposta: *In data* (data della notifica) proposta alla data odierna e può essere variata.  
+>> **Dovršen**: označava da je *Certifikat s analize* *Završen*.
+>> Nakon završetka, automatski se prikazuje sljedeće: *Datum završetka* (datum završetka), predloženo na današnji datum i može se promijeniti, *Dovršio* povezan i *Zaposlenik* povezan s *A.R.M. korisnikom* koji se prijavio.
+>> **Obaviješten/Na datum**: označava da je *Certifikat s analize* *Obaviješten* kupcu na navedeni datum.
+>> Nakon obavijesti, automatski se prikazuje sljedeće: *Datum završetka* (datum obavijesti), predloženo na današnji datum i može se promijeniti.
 >
-> **Audit Trail**: expander di sola lettura dove sono visibili le seguenti informazioni:   
+> **Audit Trail**: Proširenje samo za čitanje gdje su vidljive informacije o korisnicima koji rade dokumente.  
 
 
-#### Annotazioni
-Le informazioni gestite sono:   
-> **Note interne**: annotazioni libere.   
-> **Stampabili**: indica se le *Note interne* sono stampabili o meno nei reports: *Certificato di analisi* e *Dichiarazione di conformità*.   
-> **Note Piano di controllo**: annotazioni libere su riferimenti a Piani di controllo utilizzati.   
-> **Stampabili**: indica se le *Note Piano di controllo* sono stampabili o meno nei reports: *Certificato di analisi* e *Dichiarazione di conformità*.   
-> **Altre note**: annotazioni libere.   
+#### Bilješke
+Upravljane informacije su:   
+> **Unutarnja napomena**: bilješke u slobodnom obliku.
+> **Za ispis**: označava jesu li *Unutarnje napomene* ispisive u izvješćima *Certifikata s analize* i *Izjava o sukladnosti*.
+> **Bilješke kontrolnog plana**: bilješke u slobodnom obliku u vezi s referencama na korištene planove kontrole.
+> **Za ispis**: označava jesu li *Bilješke kontrolnom planu* ispisive u izvješćima *Certifikata s analize* i *Izjava o sukladnosti*.
+> **Ostale bilješke**: bilješke u slobodnom obliku.   
 
 
 #### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Certificato di analisi*.   
+Moguće je umetnuti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *Certifikat s analize*.   
 
 
 ### Controlli e valori rilevati 
