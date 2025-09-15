@@ -1,7 +1,7 @@
 ---
-title: Tipo Appuntamento
+title: Vrsta sastanka
 sidebar_position: 7
 ---
 
-E' una tabella descrittiva per catalogare i **Tipi Appuntamento**, che è possibile utilizzare in fase di inserimento di un appuntamento nel [Calendario](/docs/crm Fluentis. E' comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/etichetta.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione del settore, e da una griglia in cui appunto verranno elencati tutti i tipi appuntamento inseriti.
+Ova tablica služi za katalogizaciju **Vrsta sastanaka**, koje se mogu koristiti prilikom unosa sastanka u [Kalendar](/docs/crm Fluentisa. Zajednička je za sve tvrtke prisutne u bazi podataka i sastoji se od jednostavne tablice kod/oznaka. 
+Sastoji se od dijela za filtriranje u kojem se može pretraživati prema šifri ili opisu sektora, te od mreže u kojoj će biti navedene sve unesene vrste sastanaka. 
