@@ -10,7 +10,7 @@ Za pretraživanje detaljnog objašnjenja nekog polja, dovoljno je odabrati član
 ### A
 
 #### Artikl
-Generičko polje koje će se nalaziti u mnogim obrascima, a u njemu će se prikazivati klasa, kod i opis artikla (materijala) koji se želi kreirati, prikazati, premjestiti, kupiti, proizvesti ili prodati.
+Generičko polje koje će se nalaziti u mnogim obrascima, a u njemu će se prikazivati klasa, šifra i opis artikla (materijala) koji se želi kreirati, prikazati, premjestiti, kupiti, proizvesti ili prodati.
 
 #### Artikl bez klase
 To je vrsta stavke koja identificira nekodirane artikle; pod nekodiranim artiklima podrazumijevaju se svi artikli koji su opisni i mogu se knjižiti u analitičkom računovodstvu, ali se ne mogu premještati u skladištu.
@@ -19,13 +19,13 @@ To je vrsta stavke koja identificira nekodirane artikle; pod nekodiranim artikli
 To je vrsta stavke koja identificira kodirane artikle; pod kodiranim artiklima podrazumijevaju se svi artikli koji su kodirani u evidenciji i mogu se knjižiti u analitičkom računovodstvu i registrirati u skladištu. 
 
 #### Audit trail
-Ovaj odjeljak možemo pronaći u različitim obrascima i služi za praćenje operacija; obično u ovom odjeljku možemo vidjeti korisnika koji je kreirao dokument i/ili izvršio posljednju izmjenu, zajedno s datumima unosa/kreacije i izmjene.
+Ovaj odjeljak možemo pronaći u različitim obrascima i služi za praćenje operacija; obično u ovom odjeljku možemo vidjeti korisnika koji je kreirao dokument i/ili izvršio posljednju izmjenu, zajedno s datumima unosa/izrade i izmjene.
 
 
 ### B
 
 #### Broj linije 
-ovo polje će se automatski ispuniti prilikom unosa podataka u redak, na progresivan način;
+Ovo polje će se automatski ispuniti prilikom unosa podataka u redak, na progresivan način;
 
 ### C
 
@@ -42,7 +42,7 @@ U dokumentima nabave prikazuje se informacija unesena u *Šifarnik dobavljača >
 U dokumentima prodaje prikazuje se informacija unesena u *Šifarnik kupca > kartica Cjenici*, ali samo ako postoji zadani cjenik (tablica referencije 'Cjenici prodaje').
 
 #### Combo box
-Također nazvan "padajuće polje", ovo je polje koje zahtijeva odabir stavke s padajuće liste. Stavke koje se mogu odabrati mogu biti fiksne (korisnik ne može dodati nove stavke, obično zato što je pripadajuća tablica rezervirana za osnovne logike sustava) ili ih korisnik može dodavati i/ili mijenjati (korisnik može pristupiti tablici koja popunjava combo box, koja obično nosi isto ime; za praktičnost, umjesto traženja tablice, može također kliknuti desnim klikom i odabrati *Otvori obrazac*).
+Također nazvan "padajući izbornik", ovo je polje koje zahtijeva odabir stavke s padajuće liste. Stavke koje se mogu odabrati mogu biti fiksne (korisnik ne može dodati nove stavke, obično zato što je pripadajuća tablica rezervirana za osnovne logike sustava) ili ih korisnik može dodavati i/ili mijenjati (korisnik može pristupiti tablici koja popunjava combo box, koja obično nosi isto ime; za praktičnost, umjesto traženja tablice, može također kliknuti desnim klikom i odabrati *Otvori obrazac*).
 
 #### CUP
 Jedinstveni projektni kod; kako bi se osigurala stvarna praćenost uplata od strane javnih uprava, elektronički računi izdani prema javnim upravama moraju sadržavati kod CUP i kod CIG; ovaj kod predstavlja alfanumerički niz od 15 znakova koji se generira putem sustava CUP; taj niz ostaje nepromijenjen jer identificira i prati javni projekt od trenutka njegovog nastanka. Nalazimo ga zajedno s kodom CIG na računima za prodaju i narudžbenicama za prodaju.
@@ -54,13 +54,13 @@ Jedinstveni projektni kod; kako bi se osigurala stvarna praćenost uplata od str
 Povezano je s člankom 62; za robu koja se kvari, račun treba biti izdan i plaćen unutar roka od 30/60 dana, ovisno o vrsti artikla. U ovom slučaju, kontrola se provodi i na artiklu i na vrsti plačanja kako bi se osiguralo da se ne mogu izdavati računi s datumom početka koji je duži od navedenog roka.
 
 #### Datum dokumenta
-Datum dokumenta (npr. račun za nabavu); ovo polje je prisutno u dokumentima aktivnog i pasivnog ciklusa i u računovodstvenim evidencijama. Također se može pojaviti (s općenitijim značenjem) u dokumentima koji nisu fiskalni.
+Datum dokumenta (npr. ulazni račun); ovo polje je prisutno u dokumentima aktivnog i pasivnog ciklusa i u računovodstvenim evidencijama. Također se može pojaviti (s općenitijim značenjem) u dokumentima koji nisu fiskalni.
 
 #### Datum dolaska
-U ovom polju navodi se datum dolaska kupljene robe; ovo polje nalazimo u dokumentima nabave kao što su računi i otpremnice za nabavu, ili otpremnice i računi za povrat.
+U ovom polju navodi se datum dolaska kupljene robe; ovo polje nalazimo u dokumentima nabave kao što su računi i primke, ili otpremnice i računi za povrat.
 
 #### Datum dospijeća
-Datum dospijeća plačanja, izračunat na temelju uvjeta plačanja ili ručno postavljen. Ovo polje obično se nalazi u dokumentima aktivnog i pasivnog ciklusa (naručitelji, otpremnice, računi itd.). Izračun datuma provjerava uvjete plačanja (unesene u zaglavlju) i posebno način plačanja (na primjer, 30 dana od datuma računa) te ih zbraja s vrijednošću polja **Datum stupanja na snagu** (koje je također prisutno u dokumentu - otvaranjem expandera 'Isporuka'). Pogledajte i  **Dospjelost**. 
+Datum dospijeća plačanja, izračunat na temelju uvjeta plačanja ili ručno postavljen. Ovo polje obično se nalazi u dokumentima aktivnog i pasivnog ciklusa (primke, otpremnice, računi itd.). Izračun datuma provjerava uvjete plačanja (unesene u zaglavlju) i posebno način plačanja (na primjer, 30 dana od datuma računa) te ih zbraja s vrijednošću polja **Datum stupanja na snagu** (koje je također prisutno u dokumentu - otvaranjem expandera 'Isporuka'). Pogledajte i  **Dospjelost**. 
 
 #### Datum kad je roba spremna
 
@@ -68,7 +68,7 @@ Datum dospijeća plačanja, izračunat na temelju uvjeta plačanja ili ručno po
 U ova dva polja nalazimo datum početka valjanosti cjenika (dakle, od kada će cijene iz tog cjenika biti na snazi u različitim dokumentima) i datum isteka valjanosti (odnosno, kada cijene iz tog cjenika prestaju biti važeće i bit će zamijenjene novim cijenama u novom cjeniku).
 
 #### Datum utovara
-U ovom polju navodi se datum kada se roba koja je primljena utovaruje u skladište; ovo polje nalazimo u dokumentima nabave kao što su računi i otpremnice za nabavu, ili otpremnice i računi za povrat.
+U ovom polju navodi se datum kada se roba koja je primljena utovaruje u skladište; ovo polje nalazimo u dokumentima nabave kao što su računi i primke, ili otpremnice i računi za povrat.
 
 #### Datum valute {#currency-date}
 Datum na kojem se izračunava vrijednost tečaja kao omjer između valute društva i valute dobavljača/klijenta, prema postavkama tablice *Tečajevi valuta* koja se nalazi na putanji *Konfiguracija > Tablice > Administracija*.
@@ -122,7 +122,7 @@ Ako je ovaj podatak *prisutan* u Šifarniku, automatski će se *predložiti* u s
 Ovo polje uključuje obavezne informacije o artiklu; pod klasom se podrazumijeva klasa kojoj artikal pripada unutar baze podataka (primjeri klasa: Sirovina, Poluproizvod, Gotov proizvod, itd.); klase u koje se odlučite grupirati artikle i između kojih možete birati prilikom kreiranja/dupliciranja artikla prethodno su kodirane unutar pripadajuće tablice **Klase** koja se nalazi na putanji **Tablice > Logistika**. U svim dokumentima artikal će se prikazivati sa svojom klasom i opisom. 
 
 #### Knjiženo
-Zastavica koja se nalazi u zaglavlju računa za prodaju i nabavu i koja, ako je aktivna, označava da je taj račun obračunat putem postupka [Obračuna računa za prodaju](/docs/sales/sales-invoices/accounting/sales-invoices-accounting) i 'Obračuna računa za nabavu'. Za objašnjenje ovog postupka upućujemo na odgovarajuće članke;
+Zastavica koja se nalazi u zaglavlju izlaznog i izlaznoog računa i koja, ako je aktivna, označava da je taj račun obračunat putem postupka [Obračuna izlaznog računa](/docs/sales/sales-invoices/accounting/sales-invoices-accounting) i 'Obračuna ulaznog računa'. Za objašnjenje ovog postupka upućujemo na odgovarajuće članke;
 
 #### Korisnik
 pogledajte [ Operater](#user)
@@ -130,7 +130,7 @@ pogledajte [ Operater](#user)
 ### L
 
 #### Lotovi 
-U ovom polju navodi se kod serije artikla, ako se artikal upravlja putem Upravljača serijama koji je postavljen u šifarniku artikala na kartici ' Lotovi i S/B'.
+U ovom polju navodi se kod lota artikla, ako se artikal upravlja putem Upravljača lotovima koji je postavljen u šifarniku artikala na kartici ' Lotovi i S/B'.
 
 ### M
 
@@ -160,7 +160,7 @@ Ova polja, koja su zajednička mnogim područjima filtriranja različitih obraza
 Ova polja, koja su zajednička mnogim područjima filtriranja različitih obrazaca, koriste se za filtriranje dokumenata prema razdoblju unosa u sustav; s ovim poljima se određuje razdoblje pretraživanja.
 
 #### Odredište {#destination}
-U narudžbenicama kupaca/dobavljača, otpremnicama za nabavu/prodaju i računima za nabavu/prodaju, ovo polje automatski se popunjava s zadanim odredištem koje je prethodno uneseno u *Šifarnik kontakata > kartica Računovodstvo > kartica Isporuka*.  
+U narudžbenicama kupaca/dobavljača, otpremnicama i primkama i izlaznim i ulaznim računima, ovo polje automatski se popunjava sa zadanim odredištem koje je prethodno uneseno u *Šifarnik kontakata > kartica Računovodstvo > kartica Isporuka*.  
 Ako odredište nije isto kao zadano, moguće je promijeniti informacije izravno u polju **Odredište** u dokumentima.  
 Odredište robe može se *poklapati* s Primateljem, ali može biti i različito ako primatelj, na primjer, ima više lokacija ili skladišta.
 
@@ -193,19 +193,19 @@ To je obavezan podatak i nalazi se u svim dokumentima prodaje/nabave.
 U ovom polju navodi se rok plačanja povezan s subjektom u šifarniku kupaca/dobavljača/agenta na kartici 'Računovodstvo' u sekciji Administracija.
 
 #### Početna bilješka {#initial-note}
-Omogućuje odabir bilješki koje su prethodno unesene u pripadajuću tablicu koja se nalazi na putanji *Konfiguracija > Alati > Upravljanje kodiranim bilješkama*. Da bi to učinio, korisnik treba dvaput kliknuti na polje **Početna bilješka** kako bi otvorio *Pomoć za kodirane bilješke* e selezionare i dati, oppure con il tasto destro del mouse può aprire una finestra per poter specificare un testo molto lungo di nota. Se il campo contiene un valore, viene cambiato il colore dello sfondo del campo.
+Omogućuje odabir bilješki koje su prethodno unesene u pripadajuću tablicu koja se nalazi na putanji *Konfiguracija > Alati > Upravljanje šifriranim bilješkama*. Da bi to učinio, korisnik treba dvaput kliknuti na polje **Početna bilješka** kako bi otvorio *Pomoć za šifrirane bilješke* i odabrati podatke, ili desnim klikom miša može otvoriti prozor za specificiranje vrlo dugog teksta napomene. Ako polje sadrži vrijednost, mijenja se boja pozadine polja.
 
 #### Predložak skladišta
-Ovo polje odnosi se na unaprijed definirane vrijednosti u odgovarajućoj tablici koja se nalazi na putanji *Početna > Tablice > Logistika*; u ovom polju nalazit će se razlog skladišta vezan uz operaciju skladišta koju namjeravate izvršiti. U dokumentima će se ovo polje, zajedno s poljem **Opis predloška skladišta** automatski popuniti ako su prisutni u Parametrima MRP-a u evidenciji artikla, na kartici **Skladišta**.
+Ovo polje odnosi se na unaprijed definirane vrijednosti u odgovarajućoj tablici koja se nalazi na putanji *Početna > Tablice > Logistika*; u ovom polju nalazit će se predložak skladišta vezan uz operaciju skladišta koju namjeravate izvršiti. U dokumentima će se ovo polje, zajedno s poljem **Opis predloška skladišta** automatski popuniti ako su prisutni u Parametrima MRP-a u evidenciji artikla, na kartici **Skladišta**.
 
 #### Preuzeto
-Ova zastavica je prisutna u dokumentima prodaje/nabave kao što su računi i otpremnice te predstavlja jedan od tipova statusa dokumenta. Ako je aktivna, to znači da je materijal naveden u dokumentu preuzet u skladište.
+Ova oznaka je prisutna u dokumentima prodaje/nabave kao što su računi i otpremnice te predstavlja jedan od tipova statusa dokumenta. Ako je aktivna, to znači da je materijal naveden u dokumentu preuzet u skladište.
 
 #### Priloženi dokumenti
 U ovom odjeljku, koji je prisutan u različitim obrascima, prikazuju se dokumenti koji su priloženi i koji se odnose na obrazac u kojem se nalazite.
  
 #### Primatelj {#recipient}
-U narudžbenicama kupaca/dobavljača, otpremnicama za nabavu/prodaju i računima za nabavu/prodaju, ovo polje se automatski popunjava s zadanim primateljem koji je prethodno unesen u *Šifarnik kontakata > kartica Računovodstvo > kartica Isporuka*.  
+U narudžbenicama kupaca/dobavljača, otpremnicama i primkama te izlaznim i ulaznim računima, ovo polje se automatski popunjava s zadanim primateljem koji je prethodno unesen u *Šifarnik kontakata > kartica Računovodstvo > kartica Isporuka*.  
 Ako primatelj nije isti kao zadani, moguće je promijeniti informacije izravno u polju **Primatelj** u dokumentima.  
 
 #### Primjeni iz (datum)
@@ -215,10 +215,10 @@ Polje prisutno u dokumentima aktivnog i pasivnog ciklusa (npr. računi). Priliko
 Ovo polje odnosi se na proizvodne narudžbe; nalazimo ga u proizvodnom području i u dokumentima vezanim uz proizvodnju, kao i na računu za nabavu.
 
 #### Promet nabave
-U ovom polju predložen je podatak unesen u kartici 'Opći podaci' šifarnika artikala. Tako se predlaže vrsta računa za nabavu koja se povezuje s podračunima za računovodstvo računa nabave. Ako ovo nije prisutno, neće se predložiti nikakvi podaci, ali će se prilikom knjiženja računa uzeti u obzir vrijednost unesena u polju 'Trošak/Prihod protustupnika' šifarnika dobavljača;
+U ovom polju predložen je podatak unesen u kartici 'Opći podaci' šifarnika artikala. Tako se predlaže vrsta ulaznog računa koja se povezuje s računovodstvenim kontima ulaznog računa. Ako ovo nije prisutno, neće se predložiti nikakvi podaci, ali će se prilikom knjiženja računa uzeti u obzir vrijednost unesena u polju 'Trošak/Prihod protustupnika' šifarnika dobavljača;
 
 #### Promet prodaje
-U ovom polju predložen je podatak unesen u kartici 'Opći podaci' šifarnika artikala. Tako se predlaže vrsta računa za prodaju koja se povezuje s podračunima za računovodstvo računa prodaje. Ako ovo nije prisutno, neće se predložiti nikakvi podaci, ali će se prilikom knjiženja računa uzeti u obzir vrijednost unesena u polju 'Trošak/Prihod protustupnika' šifarnika kupaca;
+U ovom polju predložen je podatak unesen u kartici 'Opći podaci' šifarnika artikala. Tako se predlaže vrsta računa za prodaju koja se povezuje s računovodstvenim kontima izlaznog računa. Ako ovo nije prisutno, neće se predložiti nikakvi podaci, ali će se prilikom knjiženja računa uzeti u obzir vrijednost unesena u polju 'Trošak/Prihod protustupnika' šifarnika kupaca;
 
 ### Q
 
@@ -233,16 +233,16 @@ Ovo polje odnosi se na prodajnu narudžbu; nalazimo ga u dokumentima prodaje i n
 Mreža u kojoj se prikazuje sažetak PDV-a dokumenta za svaki PDV kod.
 
 #### Serijski broj (S/B)
-Polje u kojem se navodi serijski broj specifičan za taj artikl, u slučaju da je u šifrarniku artikla u odjeljku Serije i S/B odabrana opcija upravljanja artiklom putem serijskih brojeva.
+Polje u kojem se navodi serijski broj specifičan za taj artikl, u slučaju da je u šifrarniku artikla u odjeljku Lotovi i S/B odabrana opcija upravljanja artiklom putem serijskih brojeva.
 
 #### Skladište
-U ovom polju, prisutnom u različitim obrascima, navest će se kod skladišta koji ste odabrali za taj specifični artikal, zajedno s razlogom skladišta, ovisno o vrsti operacije koja će se izvršiti;
+U ovom polju, prisutnom u različitim obrascima, navest će se šifra skladišta koji ste odabrali za taj specifični artikal, zajedno s predloškom skladišta, ovisno o vrsti operacije koja će se izvršiti;
 
 #### Status dokumenta
-Podatak se odnosi na tablicu statusa dokumenta i prisutan je u dokumentima prodaje i kupnje. Status dokumenta definiran je nizom oznaka koje se postavljaju unutar dokumenta od strane korisnika ili automatski kada se pokreću određeni postupci (npr. knjiženje, isporuka iz narudžbe itd.); vrste statusa mogu se razlikovati ovisno o dokumentu u kojem se nalazite (neki primjeri su: ispisan, odobren, arhiviran, knjižen, potvrđen itd.). Ovo polje može se koristiti u postupcima replikacije poslovnog softvera instaliranog za upravljanje poslovnicom s prodajnim mjestima.
+Podatak se odnosi na tablicu statusa dokumenta i prisutan je u dokumentima prodaje i nabave. Status dokumenta definiran je nizom oznaka koje se postavljaju unutar dokumenta od strane korisnika ili automatski kada se pokreću određeni postupci (npr. knjiženje, isporuka iz narudžbe itd.); vrste statusa mogu se razlikovati ovisno o dokumentu u kojem se nalazite (neki primjeri su: ispisan, odobren, arhiviran, knjižen, potvrđen itd.). Ovo polje može se koristiti u postupcima replikacije poslovnog softvera instaliranog za upravljanje poslovnicom s prodajnim mjestima.
 
 #### Status isporuke
-Ovo polje, prisutno u narudžbama za kupnju/prodaju i kod radova po narudžbi, prikazuje status isporuke dokumenta. Narudžba će se smatrati ispunjenom kada se izrade dokumenti otpremnice ili računi, a njezin status isporuke automatski će se promijeniti iz neispunjenog u djelomično ispunjen (ako nisu ispunjene sve stavke narudžbe) ili ispunjen. Korisnik također ima mogućnost prisilno označiti narudžbu kao ispunjenu, mijenjajući ručno status narudžbe u 'Prisilno ispunjena'.
+Ovo polje, prisutno u narudžbama za nabavu/prodaju i kod radova po narudžbi, prikazuje status isporuke dokumenta. Narudžba će se smatrati ispunjenom kada se izrade dokumenti otpremnice ili računi, a njezin status isporuke automatski će se promijeniti iz neizvršenog u djelomično izvršen (ako nisu izuzete sve stavke narudžbe) ili izvršen. Korisnik također ima mogućnost prisilno označiti narudžbu kao izvršenu, mijenjajući ručno status narudžbe u 'Prisilno izvršen'.
 
 ### Š
 
@@ -255,7 +255,7 @@ Ovo polje predstavlja specifični alfanumerički kod koji kodira artikal prema n
 Ako je valuta tvrtke ista kao valuta dokumenta, prikazana vrijednost bit će 1; u suprotnom, vrijednost će se preuzeti iz tablice *Tečajevi valuta* ili iz tablice *Fiksni tečajevi za EURO* koje se nalaze u putanji  *Konfiguracija > Tablice > Administracija*.
 
 #### Tracking number
-Ovo polje se može pronaći na prodajnoj fakturi, u kartici prijevoz, i služi za unos broja za praćenje (tracking number) vezanog uz pošiljku kako bi se olakšalo praćenje robe tijekom transporta.
+Ovo polje se može pronaći na izlaznim računima, u kartici prijevoz, i služi za unos broja za praćenje (tracking number) vezanog uz pošiljku kako bi se olakšalo praćenje robe tijekom transporta.
 
 #### Trošak
 To je vrsta stavke koja identificira kodirane ili nekodirane artikle koji se ipak zasebno prikazuju u sažecima dokumenata; ako je artikl trošak kodiran i ima fiskalni značaj, bit će premješten u skladište, dok ako nije kodiran ili nema fiskalni značaj, neće se premještati u skladište.
@@ -263,7 +263,7 @@ To je vrsta stavke koja identificira kodirane ili nekodirane artikle koji se ipa
 ### U
 
 #### Učitano/a
-Ova zastavica, ako je aktivna, označava da su stavke otpremnice i/ili računa učitane u skladište putem procedura [Učitavanje otpremnica za nabavu u skladište](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse) i [Učitavanje faktura za nabavu u skladište](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse). Za postupke učitavanja dokumenata pogledajte odgovarajuće članke.  
+Ova oznaka, ako je aktivna, označava da su stavke primke i/ili računa učitane u skladište putem procedura [Učitavanje primke u skladište](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse) i [Učitavanje ulaznih računa u skladište](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse). Za postupke učitavanja dokumenata pogledajte odgovarajuće članke.  
 
 
 ### V
@@ -273,7 +273,7 @@ Valute se kodiraju u pripadajućoj tablici **Valute** koja se nalazi na putanji
 
 
 #### V.I.E.S.
-VIES (VAT Information Exchange System) je sustav za razmjenu informacija među zemljama EU za pravilno oporezivanje. Konkretno, riječ je o informatiziranom sustavu koji omogućuje tvrtkama brzu provjeru PDV broja svojih kupaca. Naravno, moguće je provjeriti samo PDV brojeve kupaca koji su se prijavili u ovaj sustav (moguće je da mali obrtnici i trgovci koji nemaju unutar EU trgovinsku razmjenu nisu registrirali svoju tvrtku u ovom sustavu). Iz anagrafije artikala, unosom PDV broja i klikom na gumb Predloži podatke, moguće je upitati ovaj sustav koji će provjeriti valjanost i točnost PDV broja dotičnog subjekta. Moguće je da pretrage koje ne daju rezultate ponekad ovise o privremenim neispravnostima sustava koji se provjerava.
+VIES (VAT Information Exchange System) je sustav za razmjenu informacija među zemljama EU za pravilno oporezivanje. Konkretno, riječ je o informatiziranom sustavu koji omogućuje tvrtkama brzu provjeru PDV broja svojih kupaca. Naravno, moguće je provjeriti samo PDV brojeve kupaca koji su se prijavili u ovaj sustav (moguće je da mali obrtnici i trgovci koji nemaju unutar EU trgovinsku razmjenu nisu registrirali svoju tvrtku u ovom sustavu). Iz šifarnika kontakata, unosom PDV broja i klikom na gumb Predloži podatke, sustav će provjeriti valjanost i točnost PDV broja dotičnog subjekta. Moguće je da pretrage koje ne daju rezultate ponekad ovise o privremenim neispravnostima subjekata ili samog sustava za rpovjeru.
 
 #### Vrsta artikla {#item-nature}
 Koristi se u nekim postupcima. U kombiniranom izborniku nalazimo popis različitih vrsta koje možemo dodijeliti artiklu:
@@ -281,7 +281,7 @@ Koristi se u nekim postupcima. U kombiniranom izborniku nalazimo popis različit
  - *Obitelj artikala* > definira artikal za prodajne prognoze;   
  - *Pakiranje* > koristi se za upravljanje vraćenim pakiranjima, za računovodstvo (za praćenje koliko pakiranja imamo u skladištu i koliko smo ih dali kupcu ili dobavljaču, te koliko nam još moraju vratiti);  
  - *Usluge* > za upravljanje postprodajnim intervencijama;  
- - *Posudba/upit/komponenta sustava* > služe za upravljanje održavanjem.  
+ - *Posudbe/upit/komponente sustava* > služe za upravljanje održavanjem.  
 
 #### Vrsta stavke
 Vrsta stavke identificira tip artikla. Mogu biti različitih vrsta:  

@@ -13,7 +13,7 @@ Ispod toga su različite kartice:
 
 ### Prva kartica 
 
-Sadrži informacije o **Versioni**, omogućuje **Ispis**, sadrži detaljne informacije o **Licenci**, i omogućuje **Zatvaranje** programa.   
+Sadrži informacije o **Verzijama**, omogućuje **Ispis**, sadrži detaljne informacije o **Licenci**, i omogućuje **Zatvaranje** programa.   
 
 ### Kartica Početna stranica 
 
