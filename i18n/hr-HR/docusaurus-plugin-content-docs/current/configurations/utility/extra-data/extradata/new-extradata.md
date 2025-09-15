@@ -1,5 +1,5 @@
 ---
-title: ExtraData konfiguracija 
+title: Extra Data konfiguracija 
 sidebar_position: 1
 ---
 
