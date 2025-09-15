@@ -1,9 +1,9 @@
 ---
-title: Versioni P. V.
+title: Verzije prodajnih cijena 
 sidebar_position: 4
 ---
 
-Questa form permette: di inserire più versioni per le previsioni; di stabilire una o più versioni attive (quelle non attive non potranno essere utilizzate per creare nuove previsioni ma possono essere utilizzate per filtrare le previsioni esistenti); di stabilire la versione di default tra quelle attive; di accettare il collegamento con la previsione settimanale; di modificare le previsioni storiche.
+Ovaj obrazac omogućuje: umetanje više verzija za prognoze; uspostaviti jednu ili više aktivnih verzija (neaktivne se ne mogu koristiti za izradu novih prognoza, ali se mogu koristiti za filtriranje postojećih prognoza); uspostaviti zadanu verziju među aktivnima; prihvatiti vezu s tjednom prognozom; promijeniti povijesne prognoze. 
 
 
 
