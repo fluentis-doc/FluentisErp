@@ -1,72 +1,72 @@
 ---
-title: Ricerca Piani di controllo
+title: Pretraga kontrolnih planova
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Controlli articolo > Piani di controllo**.   
+Filter se nalazi na putanji **Kvaliteta > Kontrola artikala > Kontrolni planovi**.  
 
 
-Nei **Piani di controllo** si definiscono sequenze di *Prove pianificate* da effettuare in: accettazione materiali, durante il flusso produttivo o durante il collaudo finale per verificare l'idoneità dei materiali ricevuti o degli articoli prodotti.   
-Si posso definire dei *Piani di controllo* per singolo articolo o per gruppi o da associare a *Fasi* dei *Cicli di lavorazione* e differenziarli per *Cliente* e *Fornitore*.   
-E' prevista la gestione delle *Revisioni* del *Piano di controllo*.
+**Kontrolni planovi** definiraju slijedove *Planiranih ispitivanja* koja se provode pri prihvaćanju materijala, tijekom proizvodnog toka ili tijekom završnog pregleda kako bi se provjerila prikladnost primljenih materijala ili proizvedenih artikala.
+*Kontrolni planovi* mogu se definirati za pojedinačne artikle ili grupe ili povezati s *Fazama* *Ciklusa obrade* i razlikovati prema *Kupcu* i *Dobavljaču*.
+*Revizijama* *Kontrolnih planova* također se mogu upravljati.
 
 
-Il filtro dati consente di inserire nuovi *Piani di controllo* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+Filter podataka omogućuje umetanje novih *Kontrolnih planova* ili pretraživanje postojećih kako bi se pregledali, izmijenili ili izbrisali. 
 
 
-### ![](/img/neutral/common/search.png) Ricerca Piani di controllo
+### ![](/img/neutral/common/search.png) Pretraga kontrolnih planova
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
-
-
-### ![](/img/neutral/common/new.png) Inserimento Piani di controllo
-
-Per poter inserire nuovi *Piani di controllo* è necessario premere il pulsante **Nuovo**.   
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se kliknite tipka **Traži** da bi se vidjeli rezultate u pregledu rezultata.
 
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Piani di controllo
+### ![](/img/neutral/common/new.png) Unos kontrolnih planova
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
-
-
-*Pulsanti specifici*: 
+Za umetanje novih *Kontrolnih planova* potrebno je pritisnuti tipku **Novo**.   
 
 
-### ![](/img/neutral/common/duplicate.png) Duplica Piano di controllo
+### ![](/img/neutral/common/edit.png) Izmijeni ili ![](/img/neutral/common/view.png) Prikaži kontrolne planove
 
-Per poter duplicare un *Piano di controllo* esistente in un nuovo *Piano di controllo* è necessario cliccare nella griglia sul *Piano di controllo* da cui si desidera duplicare e premere il pulsante **Duplica Piano di controllo**. Si può duplicare un solo *Piano di controllo* alla volta. Verrà visualizzata una richiesta di:   
-> **Tipo piano di controllo**: è il *Tipo piano di controllo* del nuovo *Piano di controllo* (dato obbligatorio), viene proposto il *Tipo piano di controllo* del *Piano di controllo* di origine.   
-> **Numero**: è il *Numero* progressivo del nuovo *Piano di controllo* (dato obbligatorio), viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo piano di controllo* e alla data odierna.   
-> **Duplica con rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, del *Piano di controllo* di destinazione, nel *Piano di controllo* di origine ed in particolare nel tabulatore *Piani di controllo correlati*.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Piano di controllo* viene visualizzato.
+Za otvaranje upravljanja prikazim rezultata potrebno je dvaput kliknuti na redak on interesa ili odabirom jednog ili više redaka, pritisnuti tipke **Izmijeni** ili **Prikaži**. 
 
 
-### ![](/img/neutral/common/execute.png) Crea nuova revisione
-
-Per poter creare una nuova *Revisione* ad un *Piano di controllo* esistente è necessario cliccare nella griglia sul *Piano di controllo* da cui si desidera creare una nuova *Revisione* e premere il pulsante **Crea nuova edizione**. Si può creare una nuova *Revisione* per un solo *Piano di controllo* alla volta.   
-Viene creato nuovo *Piano di controllo*, con tutte le informazioni del *Piano di controllo* di origine ma con indice di *Revisione* incrementato e la *Data di inizio validità* pari alla data odierna.
-Il *Piano di controllo* di origine finisce la sua validità impostando automaticamente la *Data fine validità* pari alla data odierna.   
-Al termine dell'elaborazione la nuova *Revisione* del *Piano di controllo* viene visualizzata.
+*Specifične tipke*: 
 
 
-### Crea nuova Scheda tecnica
+### ![](/img/neutral/common/duplicate.png) Dupliciranje kontrolnih planova
 
-Dal *Piano di controllo* è possibile creare una *Scheda tecnica*; per fare ciò è necessario cliccare nella griglia sul *Piano di controllo* da cui si desidera duplicare e premere il pulsante **Crea nuova Scheda tecnica**. Si può creare una nuova *Scheda tecnica* per un solo *Piano di controllo* alla volta.   
-Viene creata nuova *Scheda tecnica*, con tutte le informazioni del *Piano di controllo* di origine ma con indice di *Revisione* pari a *zero* e con *Data di inizio validità* pari alla data odierna. Verrà visualizzata una richiesta di:   
-> **Tipo scheda**: è il *Tipo scheda* della nuova *Scheda tecnica* (dato obbligatorio).   
-> **Del cliente**: è il *Cliente* della nuova *Scheda tecnica*, viene proposto il conto *Cliente* del *Piano di controllo* di origine (solo se è di *Tipo conto cliente*).   
-> **Nuovo codice**: è il *Codice* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
-> **Rev.**: è l'indice di *Revisione* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto a *zero*.   
-> **Crea mantenendo la rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, nella *Scheda tecnica* di destinazione, nel *Piano di controllo* di origine ed in particolare nel tabulatore *Schede correlate*.   
+Za dupliciranje postojećeg *kontrolnog plana* u novi *kontrolni plan*, kliknuti na *kontrolni plan* koji se želi duplicirati u prikazu i pritisnuti tipku **DDupliciraj kontrolni plan**. Može se duplicirati samo jedan *kontrolni plan* istovremeno. Pojavit će se upit:   
+> **Tip kontrolnog plana**: to je *Vrsta kontrolnog plana* novog *kontrolnog plana* (obavezni podatak), predlaže se *Vrsta kontrolnog plana* izvornog *kontrolnog plana*.
+> **Broj**: ovo je progresivni *broj* novog *kontrolnog plana* (obavezni podatak). Predlaže se na temelju *numeriranja* povezanog s *Vrstom kontrolnog plana* i današnjim datumom.
+> **Dupliciraj sa sljedivošću**: označava želi li se zadržati odnos/sljedivost odredišnog *kontrolnog plana* u izvornom *kontrolnom planu*, posebno na kartici *Srodni planovi kontrole*. 
 
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Al termine dell'elaborazione la nuova *Scheda tecnica* viene visualizzata.   
+Zatim se pritisne tipja **U redu** ili **Otkaži** kako bi se odlučilo želi li se nastaviti s dupliciranjem ili ne.
+Kada je obrada završena, prikazuje se novi *kontrolni plan*.
 
 
-### Richieste Piani di controllo
-Da questo pulsante è possibile eseguire la gestione di *Richieste Piani di controllo*.   
+### ![](/img/neutral/common/execute.png) Stvori novu reviziju
+
+Za izradu nove *Revizije* postojećeg *kontrolnog plana* klikne se na *kontrolni plan* iz kojeg se želi stvoriti nova *Reviziju* u prikazu i pritisne tipka **Stvori novu reviziju**. Nova *Reviziju* može se stvoriti samo za jedan *kontrolni plan* istovremeno.
+Novi *kontrolni plan* stvara se sa svim informacijama iz izvornog *kontrolnog plana*, ali s povećanim indeksom *Revizije* i *Datumom početka stupanja na snagu* postavljenim na današnji datum.
+Izvorni *kontrolni plan* istječe, a *Datum završetka stupanja na snagu* automatski se postavlja na današnji datum.
+Nakon što je obrada dovršena, prikazuje se nova *Revizija* *kontrolnog plana*.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+### Stvori novu tehničku shemu
+
+Iz *kontrolnog plana* može se stvoriti *Tehničko uputstvo*. Da bi se to učinilo, klikne se na *kontrolni plan* za koji se želi kreirati uputstvo u prikazu i pritisne tipka **Stvori novu tehničku shemu**. Može se stvoriti novo *Tehničko uputstvo* samo za jedan *kontrolni plan* istovremeno.   
+Stvori se novo *Tehničko uputstvo* sa svim informacijama iz izvornog *kontrolnog plana*, ali s indeksom *revizije* *nula* i *Datumom početka važenja* od danas. Pojavit će se upit:   
+> **Vrsta lista**: ovo je *Vrsta kartice (uputstva)* novog *Tehničkog uputstva* (obavezno).
+> **Kupac**: ovo je *Kupac* novog *Tehničkog uputstva*. Predlaže se račun *Kupca* iz izvornog *kontrolnog plana* (samo ako je *Vrsta računa kupac*).
+> **Nova šifra**: ovo je *Šifra* novog *Tehničkog uputstva* (obavezno). Predlaže se na temelju *Metode kodiranja* povezane s *Vrstom tehničkog lista*. 
+> **Rev.**: Ovo je indeks *Revizije* novog *Tehničkog uputstva* (obavezni podaci); postavljen je na *nulu*.
+> **Stvara održavanje sljedivosti**: označava želi li se održati odnos/sljedivost u odredišnom *Tehničkm uputstvu*, u izvornom *kontrolnim planu* i posebno na kartici *Povezane sheme*.   
+
+Zatim se pritisne tipka **U redu** ili **Otkaži** da bi se nastavilo s postupkom izrade ili ne.   
+Nakon što je postupak završen, prikazuje se novo *Tehničko uputstvo*.   
+
+
+### Zahtjevi za kontrolne planove
+Pomoću ove tipke može se upravljati *Zahtjevima za plan kontrole*. 
+
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
