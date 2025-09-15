@@ -3,7 +3,7 @@ title: Business Intelligence
 sidebar_position: 3
 ---
 
-U odjeljku **Business Intelligence** nalazi se mogućnost istraživanja kocki podataka. 
+U odjeljku **Business Intelligence** nalazi se mogućnost istraživanja tzv. kocki podataka. 
 
 Ovaj postupak koristan je za provođenje analiza tipa DRILL DOWN unutar podataka prisutnih u bazi podataka. 
 
