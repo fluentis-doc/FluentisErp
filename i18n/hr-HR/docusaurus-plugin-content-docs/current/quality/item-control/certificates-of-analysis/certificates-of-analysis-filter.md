@@ -28,10 +28,10 @@ Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na redak
 
 Za dupliciranje postojećeg *certifikata s analize* u novi *certifikat s analize*, klikne se na *certifikat s analize* koj se želit duplicirati u prikazu i pritisnite tipka **Dupliciraj**. Možete se duplicirati samo jedan *certifikat s analize* istovremeno. Pojavit će se upit:  
 > **Vrsta certifikata s analize**: ovo je *Vrsta certifikata s analize* novog *Certifikata s analize* (obavezni podaci), predlaže se *Vrsta certifikata s analize* izvornog *Certifikata s analize*.   
-> **Broj**: je progresivni *broj* novog *certifikata s analize* (obavezni podatak), predlaže se na temelju onoga što je navedeno u *Numeriranju* povezanom s *Vrstom certifikata s analize* i današnjim datumom.
-> **Dupliciraj izvorne reference kontrolnih artikala**: označava ako se žele duplicirati retci povezani s *Kontrolama artikala*.
-> **Duplicirane ostale izvorne reference**: označava ako se žele duplicirati retci koji nisu povezani s *Kontrolama artikala*.
-> **Dupliciraj izvorne dokumente**: označava ako se žele duplicirati *Dokumenti*. 
+> **Broj**: je progresivni *broj* novog *certifikata s analize* (obavezni podatak), predlaže se na temelju onoga što je navedeno u *Numeriranju* povezanom s *Vrstom certifikata s analize* i današnjim datumom.   
+> **Dupliciraj izvorne reference kontrolnih artikala**: označava ako se žele duplicirati retci povezani s *Kontrolama artikala*.   
+> **Duplicirane ostale izvorne reference**: označava ako se žele duplicirati retci koji nisu povezani s *Kontrolama artikala*.   
+> **Dupliciraj izvorne dokumente**: označava ako se žele duplicirati *Dokumenti*.   
 
 Zatim se pritisne tipka **U redu** ili **Otkaži** kako bi se odlučilo želi li se nastaviti s postupkom dupliciranja ili ne.
 Kada je postupak završen, prikazuje se novi *Certifikat s analize*.
