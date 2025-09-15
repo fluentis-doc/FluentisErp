@@ -1,10 +1,10 @@
 ---
-title: Centri di responsabilità
+title: Centri odgovornosti 
 sidebar_position: 4
 ---
 
-La tabella consente di definire i centri di responsabilità ai quali assegnare i centri di costo e di profitto.
+Tablica omogućuje definiranje centara odgovornosti kojima će se dodijeliti troškovni i profitni centri. 
 
-**CdR**: codice alfamunerico del CdR.
+**Centar odgovornosti**: alfanumerički kod CoR-a. 
 
-**Descrizione**: descrizione del CdR.
+**Opis**: opis OR-a
