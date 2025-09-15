@@ -1,4 +1,4 @@
 ---
-title: Tipi documento per la ripresa dei dati consuntivi
+title: Vrste dokumenata za oporavak konačnih podataka
 sidebar_position: 6
 ---
