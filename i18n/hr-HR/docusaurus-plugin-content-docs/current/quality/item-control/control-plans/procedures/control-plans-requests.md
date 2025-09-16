@@ -49,32 +49,32 @@ Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretr
 
 *Specifične tipke*:   
 
-### ![](/img/neutral/common/search.png) Pretraži kontrolne planove   
+### ![](/img/neutral/common/search.png) Pretraži kontrolne planove
 Na temelju postavljenog filtra prikazuju se rezultati unutar tablice rezultata.   
 
-### ![](/img/neutral/common/item-web.png) Apri Piani di controllo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Premendo il pulsante vengono eseguite le gestioni dei *Piani di controllo* selezionati.   
+### ![](/img/neutral/common/item-web.png) Otvori kontrolne planove
+Omogućeno je ako se odabere barem jedan redak iz tablice rezultata.   
+Pritiskom na tipku izvršava se upravljanje odabranim *Kontrolnim planovima*.    
 
-### ![](/img/neutral/common/new.png) Nuovo Piano di controllo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato del tabulatore *Richieste*.   
-Premendo il pulsante viene creato un nuovo *Piano di controllo* contenente gli *Articoli* dei *Controlli articolo* selezionati dal tabulatore *Richieste*.   
-Alle righe di **Controllo articolo* selezionate viene associato il *Piano di controllo* appena creato e le righe nascoste.   
+### ![](/img/neutral/common/new.png) Novi kontrolni plan
+Omogućeno je ako se odabere barem jedan redak iz tablice rezultata kartice *Zahtjevi*.   
+Pritiskom na tipku stvara se novi *Kontrolni plan* koji sadrži *Artikle* iz **Kontrola artikla** odabranih na kartici *Zahtjevi*.   
+Redcima odabranih **Kontrola artikla** povezuje se upravo stvoreni *Kontrolni plan* i retci se skrivaju.   
 
-### Associa Piano di controllo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato del tabulatore *Richieste* e un solo *Piano di controllo* dalla griglia risultato del tabulatore *Piani di controllo*.   
-Premendo il pulsante, al *Piano di controllo* selezionato, vengono associati gli *Articoli* dei *Controlli articolo* selezionati dalla griglia risultato del tabulatore *Richieste*.   
+### Poveži kontrolni plan   
+Omogućeno je ako se odabere barem jedan redak iz tablice rezultata kartice *Zahtjevi* i samo jedan *Kontrolni plan* iz tablice rezultata kartice *Kontrolni planovi*.   
+Pritiskom na tipku, s odabranim *Kontrolnim planom* povezuju se *Artikli* iz *Kontrola artikla* odabranih iz tablice rezultata kartice *Zahtjevi*.   
 
-### ![](/img/neutral/common/duplicate.png) Scegli Richieste   
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Richieste**.   
-
-
-## Proprietà   
-
-In questo tabulatore è possibile indicare i criteri con i quali creare/associare gli *Articoli* ai *Piani di controllo*.   
-I due criteri possibili sono:   
-> **Standard**: permette la creazione/associazione di righe di *Controlli articolo* prive di riferimenti a conti *Cliente/Fornitore* a *Piani di controllo* privi di riferimenti a conti *Cliente/Fornitore*.   
-> **Cliente/Fornitore**: permette la creazione/associazione di righe di *Controlli articolo* con riferimenti a conti *Cliente/Fornitore* a *Piani di controllo* con il medesimo conto *Cliente/Fornitore*.   
+### ![](/img/neutral/common/duplicate.png) Odaberi zahtjeve
+Pritiskom na tipku automatski se pozicionira na karticu **Zahtjevi**.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+## Svojstva   
+
+Na ovoj kartici moguće je navesti kriterije po kojima se *Artikli* stvaraju/povezuju s *Kontrolnim planovima*.
+Dva moguća kriterija su:   
+> **Standardno**: omogućuje stvaranje/povezivanje redaka *Kontrola artikla* bez referenci na račune *Kupac/Dobavljač* s *Kontrolnim planovima* bez referenci na račune *Kupac/Dobavljač*.   
+> **Kupac/Dobavljač**: omogućuje stvaranje/povezivanje redaka *Kontrola artikla* s referencama na račune *Kupac/Dobavljač* s *Kontrolnim planovima* s istim računom *Kupac/Dobavljač*.      
+
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
