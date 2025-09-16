@@ -1,9 +1,9 @@
 ---
-title: Probabilità di Successo
+title: Vjerojatnost uspjeha 
 sidebar_position: 2
 ---
 
-E' una tabella descrittiva per catalogare le **Probabilità di successo** in percentuale che è possibile indicare nelle [Opportunità](/docs/crm/chance/search-chances/) del CRM. E' comune a tutte le società presenti nella base dati ed è costituita da una tabella codice/descrizione, oltre all’ordinamento dei record e alla % di successo corrispondente ad ogni record.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione della probabilità, e da una griglia in cui appunto verranno elencati tutte le probabilità inserite.
+Tablica je deskriptivna i koristi se za katalogizaciju **Vjerojatnosti uspjeha** u postotcima koje je moguće naznačiti u CRM [Prilikama](/docs/crm/chance/search-chances/). Zajednička je za sve tvrtke prisutne u bazi podataka i sastoji se od tablice s kodom/opisom, uz poredak zapisa i postotak uspjeha koji odgovara svakom zapisu. 
+Sastoji se od dijela s filtrom u kojem se može pretraživati prema kodu ili opisu vjerojatnosti, te mreže u kojoj će biti navedene sve unesene vjerojatnosti.
 
  
