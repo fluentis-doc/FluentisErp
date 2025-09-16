@@ -3,7 +3,9 @@ title: Vrste kretanja
 sidebar_position: 2
 ---
 
-Vrste kretanja određuju koja je značajka omogućena. Povezana funkcija navedena je u nastavku za svaku vrstu kretanja: 
+Vrste kretanja određuju koja je značajka omogućena. 
+
+Povezana funkcija navedena je u nastavku za svaku vrstu kretanja: 
 
 **Utovar**: WMS Mobile funkcija koja vam omogućuje stvaranje zapisa o utovaru skladišta;
 
