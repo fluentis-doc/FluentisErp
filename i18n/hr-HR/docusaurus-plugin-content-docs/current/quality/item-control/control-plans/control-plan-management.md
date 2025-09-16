@@ -3,229 +3,229 @@ title: Kontrolni planovi
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di controllo > Nuovo piano di controllo** oppure è possibile eseguirla dalla **Ricerca Piani di controllo**.   
+Upravljanje se može pronaći na putanji **Kvaliteta > Kontrole artikala > Kontrolni planovi > Novi plan kontrole** ili se može pokrenuti iz **Pretraživanja planova kontrole**.   
 
 
-:::important A cosa serve
-Nei Piani di controllo si catalogano tutte le prove pianificate, verifiche, misurazioni necessarie ed i valori da ottenere per garantire che materiali e prodotti associati rientrino nei limiti delle proprietà richieste.   
-Tramite i Piani di controllo è possibile predefinire i controlli da effettuare durante il ciclo di vita di un articolo: dai controlli in accettazione materiali, rientri da conto lavoro, ai controlli durante il ciclo produttivo di un articolo: prima, durante e successivamente alla creazione del prodotto.
-I Piani di controllo, così come le Schede tecniche, possono essere personalizzabili per Cliente e/o Fornitore. Anche in questo documento vengono gestite le revisioni e la rintracciabilità tra Piani di controllo desiderati.   
-Ad ogni prova pianificata è possibile indicare: se la prova viene effettuata internamente o presso terzi, la categoria e lo strumento di misura da utilizzare, i tipi di valore richiesti (Si/No o Numerici), il valore nominale, i limiti inferiore e superiore specificabili in percentuale o in valore assoluto, il numero di misurazioni da effettuare e con quale frequenza.   
+:::important Čemu služi
+Kontrolni planovi katalogiziraju sva planirana ispitivanja, provjere, potrebna mjerenja i vrijednosti koje treba dobiti kako bi se osiguralo da materijali i povezani proizvodi budu unutar granica potrebnih svojstava.   
+Pomoću kontrolnih planova moge se unaprijed definirati provjere koje će se provoditi tijekom životnog ciklusa artikla: od provjera ulaznih materijala, povrata od podizvođača do provjera tijekom proizvodnog ciklusa artikla: prije, tijekom i nakon stvaranja proizvoda.
+ontrolni planovi, poput tehničkih uputstava, mogu se prilagoditi za svakog klijenta i/ili dobavljača. Ovaj dokument također upravlja revizijama i sljedivošću između željenih kontrolnih planova.   
+Za svako planirano ispitivanje moguće je naznačiti: provodi li se ispitivanje interno ili ga provode treće strane, kategoriju i mjerni instrument koji će se koristiti, vrste potrebnih vrijednosti (Da/Ne ili Numeričko), nominalnu vrijednost, donju i gornju granicu koje se mogu odrediti kao postotak ili kao apsolutna vrijednost, broj mjerenja koja treba provesti i s kojom učestalošću.   
 
-Elenchiamo alcuni esempi di tipologie di Piani di controllo possibili: Controlli in accettazione, Controlli in accettazione per fornitori critici, Controlli di produzione, Collaudi finali.   
+Neki primjeri mogućih vrsta kontrolnih planova: Provjere prihvatljivosti, Provjere prihvatljivosti za ključne dobavljače, Provjere proizvodnje, Završne inspekcije.   
 
-A standard è disponibile la reportistica di: **Piano di controllo**.   
+Dostupno je standardno izvještavanje za **Kontrolne planove**.   
 :::
 
 
-## Pulsanti di comando
+## Tipke za upravljanje
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Spremi
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate del *Piano di controllo* visualizzato.   
-
-
-### ![](/img/neutral/common/duplicate.png) Duplica Piano di controllo
-
-E' possibile duplicare il *Piano di controllo* visualizzato in un nuovo *Piano di controllo*. E' sufficiente premere il pulsante **Duplica**.   
-Viene visualizzata una richiesta di:
-> **Tipo piano di controllo**: è il *Tipo piano di controllo* del nuovo *Piano di controllo* (dato obbligatorio).   
-> Viene proposto il *Tipo piano di controllo* del *Piano di controllo* di origine.   
-> **Numero**: è il *Numero* progressivo del nuovo *Piano di controllo* (dato obbligatorio).   
-> Viene proposto in base a quanto previsto dalla *Numerazione* associata al *Tipo piano di controllo* e alla data odierna.   
-> **Duplica con rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, del *Piano di controllo* di destinazione, nel *Piano di controllo* di origine ed in particolare nel tabulatore *Piani di controllo correlati*.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno.   
-Al termine dell'elaborazione il nuovo *Piano di controllo* viene visualizzato.   
+Pritiskom na ovu tipku spremaju se sve promijenjene informacije prikazanog *Kontrolnoh plana*.   
 
 
-### ![](/img/neutral/common/execute.png) Crea nuova revisione
+### ![](/img/neutral/common/duplicate.png) Dupliciraj kontrolni plan
 
-Per poter creare una nuova *Revisione* ad un *Piano di controllo* esistente è necessario premere il pulsante **Crea nuova edizione**.   
-Viene creato nuovo *Piano di controllo*, con tutte le informazioni del *Piano di controllo* di origine ma con indice di *Revisione* incrementato e la *Data di inizio validità* pari alla data odierna.
-Il *Piano di controllo* di origine finisce la sua validità impostando automaticamente la *Data fine validità* pari alla data odierna.   
-Al termine dell'elaborazione la nuova *Revisione* del *Piano di controllo* viene visualizzata.
+Moguće je duplicirati prikazani Kontrolni plan u novi Kontrolni plan. Jednostavno se pritisne tipka Dupliciraj.
+Zatim se prikazuje zahtjev za:
+> **Vrsta kontrolnog plana**: to je *Vrsta kontrolnog plana* novog *Kontrolnog plana* (obavezan podatak).   
+> Predlaže se *Vrsta kontrolnog plana* izvornog *Kontrolnog plana*.   
+> **Broj**: to je redni *Broj* novog *Kontrolnog plana* (obavezan podatak).    
+> Predlaže se na temelju *Numeracije* povezane s *Vrstom kontrolnog plana* i današnjim datumom.   
+> **Dupliciraj sa sljedivošću**: označava želi li se zadržati veza/sljedivost odredišnog *Kontrolnog plana* u izvornom *Kontrolnom planu*, a posebno u kartici *Povezani kontrolni planovi*.  
 
-
-### Crea nuova Scheda tecnica
-
-Dal *Piano di controllo* è possibile creare una *Scheda tecnica*; per fare ciò è necessario premere il pulsante **Crea nuova Scheda tecnica**.   
-Viene creata nuova *Scheda tecnica*, con tutte le informazioni del *Piano di controllo* di origine ma con indice di *Revisione* pari a *zero* e con *Data di inizio validità* pari alla data odierna. Verrà visualizzata una richiesta di:   
-> **Tipo scheda**: è il *Tipo scheda* della nuova *Scheda tecnica* (dato obbligatorio).   
-> **Del cliente**: è il *Cliente* della nuova *Scheda tecnica*, viene proposto il conto *Cliente* del *Piano di controllo* di origine (solo se è di *Tipo conto cliente*).   
-> **Nuovo codice**: è il *Codice* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto in base a quanto previsto dal *Metodo di Codifica* associata al *Tipo scheda tecnica*.   
-> **Rev.**: è l'indice di *Revisione* della nuova *Scheda tecnica* (dato obbligatorio), viene proposto a *zero*.   
-> **Crea mantenendo la rintracciabilità**: indica se si desidera mantenere relazione/rintracciabilità, nella *Scheda tecnica* di destinazione, nel *Piano di controllo* di origine ed in particolare nel tabulatore *Schede correlate*.   
-
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di creazione o meno.   
-Al termine dell'elaborazione la nuova *Scheda tecnica* viene visualizzata.   
+Zatim se pritisne tipka **OK** ili tipka **Poništi** ako se želi nastaviti s aktivnošću dupliciranja ili ne.    
+Po završetku obrade prikazuje se novi *Kontrolni plan*.   
 
 
-### ![](/img/neutral/common/duplicate.png) Duplica prova
+### ![](/img/neutral/common/execute.png) Stvori novu reviziju
 
-Contestuale al tabulatore *Prove pianificate* il pulsante è abilitato solamente se, dall'elenco *Prove pianificate*, è stata selezionata una sola riga *Prova*.
-Tutte la informazioni della *Prova pianificate* di origine vengono duplicate in una nuova *Prova pianificate* accodata in *Sequenza* alle *Prove pianificate* già esistenti.
+Kako bi se stvorila nova *Revizija* postojećeg *Kontrolnog plana*, potrebno je pritisnuti tipku **Stvori novu reviziju**.   
+Stvara se novi *Kontrolni plan*, sa svim informacijama izvornog *Kontrolnog plana*, ali s povećanim indeksom *Revizije* i *Datumom početka valjanosti* jednakim današnjem datumu.
+Izvorni *Kontrolni plan* završava svoju valjanost automatskim postavljanjem *Datuma kraja valjanosti* jednakim današnjem datumu.   
+Po završetku obrade, prikazuje se nova *Revizija* *Kontrolnog plana*.
 
 
-## Gestione dati
+### Stvori novu tehničku shemu
+
+Iz *Kontrolnog plana* moguće je stvoriti *Tehničko uputstvo*; kako bi se to učinilo, potrebno je pritisnuti tipku **Stvori novu Tehničku shemu**.    
+Stvara se novo *Tehničko uputstvo*, sa svim informacijama izvornog *Kontrolnog plana*, ali s indeksom *Revizije* jednakim *nuli* i s *Datumom početka valjanosti* jednakim današnjem datumu. Prikazat će se zahtjev za:   
+> **Vrsta lista**: to je *Vrsta uputstva* novog *Tehničkog uputstva* (obavezan podatak).   
+> **Kupac**: to je *Klijent* novog *Tehničkog uputstva*, predlaže se račun *Klijenta* izvornog *Kontrolnog plana* (samo ako je *Vrste korisničkog računa*).   
+> **Nova šifra**: to je *Šifra* novog *Tehničkog uputstva* (obavezan podatak), predlaže se na temelju onoga što je predviđeno *Metodom šifriranja* povezanom s *Vrstom tehničkog uputstva*.   
+> **Rev.**: to je indeks *Revizije* novog *Tehničkog uputstva* (obavezan podatak), predlaže se na *nulu*.   
+> **Stvara održavanje sljedivosti**: označava želi li se zadržati veza/sljedivost, u odredišnom *Tehničkom uputstvu*, u izvornom *Kontrolnom planu* i posebno u kartici *Povezana uputstva*.   
+
+Zatim se pritisne tipka **OK** ili tipka **Poništi** ako se želi nastaviti s aktivnošću stvaranja ili ne.   
+Po završetku obrade, novo *Tehničko uputstvo* se prikazuje.   
 
 
-### Dati di testata
+### ![](/img/neutral/common/duplicate.png) Dupliciraj test
 
-Le informazioni gestibili sono:   
-> **Tipo**: è il *Tipo piano di controllo* (dato obbligatorio).   
-> All'inserimento manuale di un nuovo *Piano di controllo* viene proposto il *Tipo piano di controllo* indicato nell'expander *Piani di controllo* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+U kontekstu kartice *Planirani testovi* tipka je omogućena samo ako je s popisa *Planiranih testova* odabran samo jedan redak *Testa*.   
+Sve informacije izvornog *Planiranog testa* dupliciraju se u novi *Planirani test* dodan u *Slijedu* već postojećim *Planiranim testovima*.   
+
+
+## Upravljani podaci
+
+
+### Podaci zaglavlja
+
+Informacije kojima se može upravljati su:   
+> **Vrsta**: to je *Vrsta kontrolnog plana* (obavezan podatak).   
+> Pri ručnom unosu novog *Kontrolnog plana*, predlaže se *Vrsta kontrolnog plana* naznačena u proširenju (*expander*) *Kontrolni planovi* kartice *Općenito* koja se nalazi u *Parametrima kontrole artikala*.   
 >
-> **Anno/Numero**: sono l'*Anno* e *Numero* del *Piano di controllo* (dati obbligatori).   
-> All'inserimento di un nuovo *Piano di controllo* l'*Anno* e il *Numero* vengono proposti in base alla data odierna e alla *Numerazione* associata al *Tipo piano di controllo*.   
+> **Godina/Broj**: to su *Godina* i *Broj* *Kontrolnog plana* (obavezni podaci).   
+> Pri unosu novog *Kontrolnog plana*, *Godina* i *Broj* se predlažu na temelju današnjeg datuma i *Numeracije* povezane s *Vrstom kontrolnog plana*.   
 >
-> **Rev.**: è la Revisione del *Piano di controllo* (dato obbligatorio).   
-L'informazione è modificabile se si stà creando un nuovo *Piano di controllo* altrimenti è di sola lettura; si può variare in modo pilotato dal sistema usando il pulsante *Crea nuova revisione* che incrementano il precedente valore di *Revisione* di una unità.   
+> **Rev.**: to je Revizija *Kontrolnog plana* (obavezan podatak).   
+Podatak se može mijenjati ako se stvara novi *Kontrolni plan*, inače je samo za čitanje; može se mijenjati na način vođen sustavom pomoću tipke *Stvori novu reviziju* koja povećava prethodnu vrijednost *Revizije* za jednu jedinicu.      
 >
-> **Descrizione**: è la descrizione del *Piano di controllo*.   
-> **Per il cliente/fornitore**: è la ragione sociale del *Cliente* o *Fornitore*. Le *Prove pianificate* sono personalizzate per il *Cliente* o *Fornitore* e *Articoli associati*.    
-> **Note del cliente/fornitore**: annotazioni libere per il cliente/fornitore.   
+> **Opis**: to je opis *Kontrolnog plana*.   
+> **Za kupca/dobavljača**: to je naziv tvrtke *Klijenta* ili *Dobavljača*. *Planirani testovi* su prilagođeni za *Klijenta* ili *Dobavljača* i *Povezane artikle*.   
+> **Napomene klijenta/dobavljača**: slobodne napomene za klijenta/dobavljača.   
 >
-> **Specifica del cliente**: expander dove è possibile inserire:   
+> **Specifikacija klijenta**: proširenje (expander) gdje je moguće unijeti:     
 >
->> **Data specifica**: e la data della specifica ricevuta dal cliente.    
->> **Riferimento**: annotazioni libere sul riferimento alla specifica ricevuta dal cliente che richiede controlli specifici da effettuare per gli *Articoli associati*.   
->> **Data scadenza**: e la data di fine validità della specifica ricevuta dal cliente.    
->> **Note**: annotazioni libere relative alla specifica ricevuta dal cliente.   
+>> **Određeni datum**: to je datum specifikacije primljene od klijenta.   
+>> **Referenca**: slobodne napomene o referenci na specifikaciju primljenu od klijenta koja zahtijeva posebne kontrole koje treba izvršiti za *Povezane artikle*.   
+>> **Rok**: to je datum kraja valjanosti specifikacije primljene od klijenta.   
+>> **Bilješke**: slobodne napomene vezane uz specifikaciju primljenu od klijenta.   
 >
-> **Data richiesta/Richiesta da**: solo i riferimenti in quale data e qual'è la persona che ha richiesto la creazione del *Piano di controllo*.    
+> **Datum zahtjeva/Zahtjev od**: samo reference o tome kojeg je datuma i koja je osoba zatražila izradu *Kontrolnog plana*.   
 >
-> **Validità: Inizio/Fine**: sono le date di inizio e di fine validità del *Piano di controllo*.    
-> Le date sono gestite automaticamente alla creazione di una nuova *Revisione* del *Piano di controllo*.
+> **Valjanost: Početak/Kraj**: to su datumi početka i kraja valjanosti *Kontrolnog plana*.   
+> Datumima se automatski upravlja pri stvaranju nove *Revizije* *Kontrolnog plana*.   
 >
-> **Responsabile**: è il *Dipendente* responsabile del *Piano di controllo*.   
-> All'inserimento manuale di un nuovo *Piano di controllo* viene proposto il *Responsabile* indicato nell'expander *Piani di controllo* del tabulatore *Generale* presente nei *Parametri Controllo articoli*.   
+> **Odgovorna osoba**: to je *Zaposlenik* odgovoran za *Kontrolni plan*.   
+> Pri ručnom unosu novog *Kontrolnog plana* predlaže se *Odgovorna osoba* naznačena u proširenju (*expander*) *Kontrolni planovi* kartice *Općenito* koja se nalazi u *Parametrima kontrole artikala*.     
 >
-> **Note**: annotazioni libere.   
+> **Napomene**: slobodne napomene.   
 >
-> **Origine piano di controllo**: expander dove è possibile inserire:   
+> **Podrijetlo plana kontrole**: proširenje (expander) gdje je moguće unijeti:    
 >
->> **Scheda origine**: contiene i riferimenti della *Scheda tecnica di origine* (*Tipo scheda*, *Codice* e *Revisione*).   
->> **Piano di controllo**: contiene i riferimenti del *Piano di controllo di origine* (*Tipo piano*, *Anno*, *Numero* e *Revisione*).   
->> **Motivo della revisione**: una breve descrizione del motivo che ha condotto alla revisione.   
->> L'informazione può essere variata se il *Piano di controllo* è ancora in corso di validità.   
+>> **Tehnička kartica**: sadrži reference izvornog *Tehničkog uputstva* (*Vrsta uputstva*, *Šifra* i *Revizija*).   
+>> **Kontrolni plan**: sadrži reference izvornog *Kontrolnog plana* (*Vrsta plana*, *Godina*, *Broj* i *Revizija*).   
+>> **Razlog za reviziju**: kratak opis razloga koji je doveo do revizije.   
+>> Podatak se može mijenjati ako je *Kontrolni plan* još uvijek na snazi.  
 
 
-### Attributi piano di controllo
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Piano di controllo*.   
-Vengono ereditati dagli *Extra data* associati al *Tipo piano di controllo*.   
+### Atributi kontrolnog plana
+Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *Kontrolni plan*.   
+Naslijeđuju se iz *Dodatnih podataka* (*Extra data*) povezanih s *Vrstom kontrolnog plana*.   
 
 
-### Prove pianificate
-Contiene le *Prove pianificate* degli *Articoli* o *Attributi articolo* del *Piano di controllo*.
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione della *Prove pianificate*.   
-> **Tipo prova**: è il codice della *Prova pianificata*.   
-> **Descrizione tipo prova**:  è la descrizione della *Prova pianificata*. L'informazione è di sola lettura.   
-> **Descrizione**: è la descrizione della *Prova pianificata* compilabile.   
-> **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di prove riconosciute globalmente.   
-> **Prova interna**: indica se la *Prova* viene rilevata internamente o presso un laboratorio esterno.   
-> **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettuerà la prova. L'informazione è di sola lettura se è indicata la *Prova interna*.   
-> **Categoria Strumento di misura**: è la *Categoria dello strumento di misura* da utilizzare per poter rilevare i *Valori* espressi nella *Prova*.   
-> **Strumento di misura**: è lo *Strumento di misura* da utilizzare per poter rilevare i *Valori* espressi nella *Prova*.   
-> **Unità di misura**: è l'*Unità di misura* con cui si esprimono il *Valore nominale* e i *Limiti minimo e massimo* se espressi in valore e non in percentuale.   
-> **Tipo valore**: è il *Tipo valore* con cui esprimere il *Valore nominale*; i *Tipi valore* possibili sono: *Numerico*, *Si/No* o *Testo*.   
-> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che piloterà l'abilitazione dei *Limiti* e dei valori di *Tolleranza*.   
-> **Valore nominale**: è il valore teorico atteso della *Prova pianificata*.   
-> **Limite minimo**: limite minimo consentito rispetto al *Valore nominale*.   
-> **L.min.(toll-)**: è il limite di tolleranza negativa sul limite minimo.   
-> **L.min.(toll+)**: è il limite di tolleranza positiva sul limite minimo.   
-> **Limite massimo**: limite massimo consentito rispetto  al *Valore nominale*.   
-> **L.max.(toll-)**: è il limite di tolleranza negativa sul limite massimo.   
-> **L.max.(toll+)**: è il limite di tolleranza positiva sul limite massimo.   
-> **%**: indica se il *Limite minimo* e il *Limite massimo* sono espressi in percentuale.   
-> **Tipo controllo prova**: è il *Tipo controllo* da effettuare sulla *Prova pianificata*.   
-> **Frequenza**: annotazioni libere relative alla frequenza di campionatura.   
-> **Numero rilevazioni**: è il numero di rilevazioni valori minime suggerite da effettuare.   
-> **Data inizio validità**: è la data di inizio validità della *Prova pianificata*.   
-> **Data fine validità**: è la data di fine validità della *Prova pianificata*.   
-> **Stampato**: indica se le informazioni sono stampabili o meno nel report: *Piano di controllo*.   
-> **Note**: annotazioni libere.   
-> **Descrizione Categoria Strumento di misura**: è la *Descrizione Categoria dello strumento di misura* da utilizzare. L'informazione è di sola lettura.   
-> **Descrizione Strumento di misura**: è lo *Descrizione Strumento di misura* da utilizzare. L'informazione è di sola lettura.   
+### Planiran test
+Sadrži *Planirane testove* artikala ili *Atributa artikla* *Kontrolnog plana*.   
+Popis se sastoji od sljedećih informacija:   
+> **Redoslijed**: to je slijed provedbe *Planiranih testova*.   
+> **Vrsta testa**: to je šifra *Planiranog testa*.   
+> **Opis tipa testa**: to je opis *Planiranog testa*. Podatak je samo za čitanje.   
+> **Opis**: to je opis *Planiranog testa* koji se može popuniti.   
+> **Referenca standardnog kontrolnog plana**: to je opisno polje koje sadrži reference na globalno priznate kodove testova.   
+> **Interni test**: označava prikuplja li se *Test* interno ili u vanjskom laboratoriju.   
+> **Vanjski laboratorij**: to je naziv tvrtke *Dobavljača* koji će izvršiti test. Podatak je samo za čitanje ako je naveden *Interni test*.   
+> **Kategorija mjernog instrumenta**: to je *Kategorija mjernog instrumenta* koji se koristi za bilježenje *Vrijednosti* izraženih u *Testu*.   
+> **Alat za mjerenje**: to je *Mjerni instrument* koji se koristi za bilježenje *Vrijednosti* izraženih u *Testu*.   
+> **Jedinica mjere**: to je *Mjerna jedinica* kojom se izražavaju *Nominalna vrijednost* te *Minimalna i maksimalna granica*, ako su izražene u vrijednosti, a ne u postotku.   
+> **Vrsta vrijednosti**: to je *Vrsta vrijednosti* kojom se izražava *Nominalna vrijednost*; moguće *Vrste vrijednosti* su: *Brojčano*, *Da/Ne* ili *Tekst*.   
+> **Vrsta limita**: omogućena ako je *Vrsta vrijednosti* *Brojčana*, to je *Vrsta granice* koja će upravljati omogućavanjem *Granica* i vrijednosti *Tolerancije*.   
+> **Nominalna vrijednost**: to je očekivana teorijska vrijednost *Planiranog testa*.   
+> **Minimalno ograničenje**: minimalna dopuštena granica u odnosu na *Nominalnu vrijednost*.   
+> **L.min.(tol-)**: to je granica negativne tolerancije na minimalnoj granici.   
+> **L.min.(tol+)**: to je granica pozitivne tolerancije na minimalnoj granici.   
+> **Maksimalno ograničenje**: maksimalna dopuštena granica u odnosu na *Nominalnu vrijednost*.   
+> **L.max.(tol-)**: to je granica negativne tolerancije na maksimalnoj granici.   
+> **L.max.(tol+)**: to je granica pozitivne tolerancije na maksimalnoj granici.   
+> **%**: označava jesu li *Minimalna granica* i *Maksimalna granica* izražene u postotku.   
+> **Vrsta kontrole testa**: to je *Vrsta kontrole* koja se provodi na *Planiranom testu*.   
+> **Učestalost**: slobodne napomene vezane uz učestalost uzorkovanja.   
+> **Broj detekcija**: to je minimalni broj predloženih mjerenja vrijednosti koje treba provesti.   
+> **Datum početka valjanosti**: to je datum početka valjanosti *Planiranog testa*.   
+> **Datum kraja valjanosti**: to je datum kraja valjanosti *Planiranog testa*.   
+> **Ispisano**: označava mogu li se informacije ispisati u izvješću: *Kontrolni plan*.   
+> **Napomene**: slobodne napomene.   
+> **Opis kategorije mjernog instrumenta**: to je *Opis kategorije mjernog instrumenta* koji se koristi. Podatak je samo za čitanje.   
+> **Opis mjernog instrumenta**: to je *Opis mjernog instrumenta* koji se koristi. Podatak je samo za čitanje.   
 
 
-#### Attributi prova pianificata
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Prova pianificata*.   
-Vengono ereditati dagli *Attributi tipo prova* presenti nei *Tipi prova*.   
+#### Planirani testni atributi
+Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *Planirani test*.   
+Nasljeđuju se od *Atributa vrste testa* koji se nalaze u *Vrstama testova*.   
 
 
-#### Configurazione della prova
-Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Vengono ereditati dai *Parametri di configurazione prova e strumento di misura* presenti nei *Tipi prova*.   
+#### Planirane testne konfiguracije
+Sadrži [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) potrebne operaterima za pripremu svih potrebnih instrumenata kako bi se mogao započeti određeni test. Mogu se smatrati potrebnim konfiguracijama, operativnim informacijama koje prethode izvršenju testa.   
+Nasljeđuju se iz *Parametara konfiguracije testa i mjernog instrumenta* koji se nalaze u *Vrstama testova*.   
 
 
-#### Funzioni di rilevamento ed approvazione
-E' un'attribuzione di diritti che elenca chi può rilevare e/o approvare i valori della prova.   
-Vengono ereditati dalle *Funzioni di rilevamento ed approvazione* presenti nei *Tipi prova*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Tipo attività**: è il diritto dato alla *Funzione aziendale* durante le attività di rilevamento e/o approvazione di una prova. I valori possibili sono:   
-> - *Può rilevare* - la *Funziona aziendale* ha i permessi di sola rilevazione dei valori;   
-> - *Può approvare* - la *Funziona aziendale* ha i permessi di sola approvazione della prova;   
-> - *Può rilevare e approvare* - la *Funziona aziendale* ha i permessi di rilevazione dei valori e approvazione della prova.   
+#### Funkcije detekcije i odobravanja
+To je dodjela prava koja navodi tko može bilježiti i/ili odobriti vrijednosti testa.   
+Nasljeđuju se iz *Funkcija bilježenja i odobravanja* koje se nalaze u *Vrstama testova*.   
+Popis se sastoji od sljedećih informacija:   
+> **Funkcija**: to je šifra *Poslovne funkcije*.   
+> **Opis funkcije**: to je opis *Poslovne funkcije*.   
+> **Vrsta aktivnosti**: to je pravo dodijeljeno *Poslovnoj funkciji* tijekom aktivnosti bilježenja i/ili odobrenja testa. Moguće vrijednosti su:   
+> - *Može bilježiti* - *Poslovna funkcija* ima dozvole samo za bilježenje vrijednosti;   
+> - *Može odobriti* - *Poslovna funkcija* ima dozvole samo za odobrenje testa;   
+> - *Može bilježiti i odobriti* - *Poslovna funkcija* ima dozvole za bilježenje vrijednosti i odobrenje testa.      
 >
-> Le altre *Funzioni aziendali* non elencate non hanno alcun diritto di rilevazione valori e approvazione della prova.   
-> Se non vengono specificate *Funzioni aziendali* tutti gli operatori potranno rilevare valori e approvare la prova.
+> Ostale *Poslovne funkcije* koje nisu navedene nemaju nikakvo pravo na bilježenje vrijednosti i odobrenje testa.   
+> Ako nisu specificirane *Poslovne funkcije*, svi će operateri moći bilježiti vrijednosti i odobravati test.   
 >
-> **Note**: annotazioni libere.
+> **Napomene**: slobodne napomene.   
 
 
-#### Documenti allegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+#### Dokumenti u privitku
+Na ovom popisu moguće je unijeti i pregledati eventualne priloge; moguće je prikazati pretpregled.   
 
 
-### Clienti/Fornitori
-Contiene i *Clienti*, *Clienti finali* e *Fornitori* per i quali effettuare le *Prove pianificate* agli *Articoli associati*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Cliente/Fornitore**: è la ragione sociale del *Cliente* o "Fornitore".   
-> **Cliente finale**: è il codice e descrizione del *Cliente finale*.   
-> **Data specifica**: e la data della specifica ricevuta dal cliente.   
-> **Riferimenti specifica**: annotazioni libere sul riferimento alla specifica ricevuta dal cliente che richiede controlli specifici da effettuare per gli *Articoli associati*.   
-> **Nota specifica**: annotazioni libere relative alla specifica ricevuta dal cliente.   
-> **Note**: annotazioni libere.   
+### Kupci/dobavljači
+Sadrži *Klijente*, *Krajnje klijente* i *Dobavljače* za koje se trebaju izvršiti *Planirani testovi* na *Povezanim artiklima*.   
+Popis se sastoji od sljedećih informacija:   
+> **Kupac/Dobavljač**: to je naziv tvrtke *Klijenta* ili *Dobavljača*.   
+> **Krajnji kupac**: to je šifra i opis *Krajnjeg klijenta*.   
+> **Određeni datum**: to je datum specifikacije primljene od klijenta.   
+> **Reference specifikacije**: slobodne napomene o referenci na specifikaciju primljenu od klijenta koja zahtijeva posebne kontrole koje treba izvršiti za *Povezane artikle*.   
+> **Posebna bilješka**: slobodne napomene vezane uz specifikaciju primljenu od klijenta.   
+> **Napomene**: slobodne napomene.   
 
 
-### Articoli associati
-Contiene gli *Articoli* con caratteristiche simili ed elencate nell'elenco delle *Prove pianificate*.
-L'elenco si compone delle seguenti informazioni:   
-> **Classe**: è la classe dell'*Articolo*.   
-> **Codice articolo**: è il codice dell'*Articolo*.   
-> **Descrizione articolo**: è la descrizione dell'*Articolo*.   
-> **Variante**: è il codice della *Variante articolo*.   
-> **Descrizione variante**: è la descrizione della *Variante articolo*. L'informazione è di sola lettura.   
-> **Fornitore**: è la ragione sociale del *Fornitore* che consegna l'*Articolo* per il quale verranno attivate le *Prove pianificate*.   
-> **Note**: annotazioni libere.   
+### Povezani artikli (stvari)
+Sadrži *Artikle* sa sličnim karakteristikama koji su navedeni u popisu *Planiranih testova*.   
+Popis se sastoji od sljedećih informacija:   
+> **Klasa**: to je klasa *Artikla*.   
+> **Šifra artikla**: to je šifra *Artikla*.   
+> **Opis**: to je opis *Artikla*.   
+> **Varijanta**: to je šifra *Varijante artikla*.   
+> **Opis varijante**: to je opis *Varijante artikla*. Podatak je samo za čitanje.   
+> **Dobavljač**: to je naziv tvrtke *Dobavljača* koji isporučuje *Artikl* za koji će se aktivirati *Planirani testovi*.   
+> **Napomene**: slobodne napomene.      
 
 
-### Attributi articolo
-In alternativa all'elenco degli *Articoli associati* è possibile inserire caratteristiche (in formato [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata)) per cui le *Prove pianificate* del *Piano di controllo* sono valide.   
+### Karakteristike artikla
+Kao alternativa popisu *Povezanih artikala* moguće je unijeti karakteristike (u formatu [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata)) za koje *Planirani testovi* *Kontrolnog plana* vrijede.   
 
 
-### Schede correlate
-In questo elenco è possibile visualizzare le *Schede tecniche* create con rintracciabilità dal *Piano di controllo* visualizzato.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Scheda tecnica* selezionata.   
+### Povezane sheme
+Na ovom popisu moguće je vidjeti *Tehnička uputstva* stvorena sa sljedivošću iz prikazanog *Kontrolnog plana*.   
+Dvostrukim klikom miša na željeni redak, moguće je izvršiti upravljanje odabranim *Tehničkim uputstvom*.   
 
 
-### Piani di controllo correlati
-In questo elenco è possibile visualizzare i *Piani di controllo* duplicati con rintracciabilità dal *Piano di controllo* visualizzato.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione del *Piano di controllo* selezionato.   
+### Srodni planovi kontrole
+Na ovom popisu moguće je vidjeti *Kontrolne planove* duplicirane sa sljedivošću iz prikazanog *Kontrolnog plana*.   
+Dvostrukim klikom miša na željeni redak, moguće je izvršiti upravljanje odabranim *Kontrolnim planom*.   
 
 
-### Revisioni
-In questo elenco è possibile visualizzare lo storico delle *Revisioni* antecedenti al *Piano di controllo* visualizzato.   
-Tramite un doppio click del mouse sulla riga desiderata è possibile eseguire la gestione della *Piano di controllo* selezionato.   
+### Pregled
+Na ovom popisu moguće je vidjeti povijest *Revizija* koje prethode prikazanom *Kontrolnom planu*.   
+Dvostrukim klikom miša na željeni redak, moguće je izvršiti upravljanje odabranim *Kontrolnim planom*.   
 
 
-### Documenti collegati
-In questo elenco è possibile inserire e consultare eventuali allegati; è possibile visualizzare l'anteprima.   
+### Povezani dokumenti
+Na ovom popisu moguće je unijeti i pregledati eventualne priloge; moguće je prikazati pretpregled.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).   
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).   
