@@ -11,7 +11,7 @@ Unutar ovog obrasca također je moguće dodati nove tipove kontakta u mrežu kli
 
 Za svaki tip kontakta također je moguće definirati  
 
-## Ulogu tipa kontakta
+## Uloga tipa kontakta
 
 odnosno za pojedinačne Fluentis korisnike (ili grupe korisnika definirane prema ulogama), moguće je odrediti koje kartice mogu biti prikazane. Za svaku vrstu uloge kontakta potrebno je definirati:
 **Datum kreiranja**: datum stvaranja vrste uloge kontakta;
