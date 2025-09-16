@@ -1,10 +1,10 @@
 ---
-title: Motivo di Chiusura
+title: Razlog zatvaranja 
 sidebar_position: 1
 ---
 
-E' una tabella descrittiva per catalogare le **motivazioni di chiusura** che è possibile indicare nelle [Opportunità](/docs/crm dati ed è costituita da una semplice tabella codice/descrizione, oltre al segno Positivo/Negativo della motivazione.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione del motivo di chiusura e il segno dell’operazione (Positivo/Negativo), e da una griglia in cui appunto verranno elencati tutte le motivazioni inserite.
+Tablica je deskriptivna i koristi se za katalogizaciju **razloga zatvaranja** koji se mogu naznačiti u CRM [Prilikama](/docs/crm/chance/new-chance/). Zajednička je za sve tvrtke prisutne u bazi podataka i sastoji se od jednostavne tablice s kodom/opisom, osim znaka Pozitivno/Negativno razloga. 
+Sastoji se od dijela s filtrom u kojem se može pretraživati ​​prema kodu ili opisu razloga zatvaranja i znaku operacije (Pozitivno/Negativno), te mreže u kojoj će biti navedeni svi uneseni razlozi.
 
 
 
