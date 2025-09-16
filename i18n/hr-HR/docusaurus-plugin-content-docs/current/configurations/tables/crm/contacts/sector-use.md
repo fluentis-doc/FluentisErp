@@ -1,7 +1,7 @@
 ---
-title: Settore d'Uso
+title: Sektor upotrebe
 sidebar_position: 6
 ---
 
-E' una tabella descrittiva per catalogare i **Settori d'uso** in cui si collocano i contatti e può essere utilizzata nei [Contatti](/docs/crm comune a tutte le società presenti nella base dati ed è costituita da una semplice tabella codice/descrizione.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione del settore, e da una griglia in cui appunto verranno elencati tutti i settori inseriti.
+To je opisna tablica za kategorizaciju **Sektora upotrebe** u koje se smještaju kontakti u CRM-u i može se koristiti u modulu *Kontakata* CRM-a. Zajednička je za sve tvrtke u bazi podataka i sastoji se od jednostavne tablice s kodom/opisom.
+Uključuje dio za filtriranje prema kodu ili opisu sektora te mrežu u kojoj će biti navedeni svi uneseni sektori.
