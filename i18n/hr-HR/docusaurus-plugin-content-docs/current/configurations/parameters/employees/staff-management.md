@@ -14,7 +14,7 @@ Podaci prisutni u ovom upravljanju koriste se za predlaganje informacija u uprav
 
 Kako biste mogli pohraniti izmijenjene podatke morate pritisnuti gumb **Spremi**.  
 
-*Posebna polja*: 
+#### Specifična polja
     
 > expander Tečajevi obuke
 >> **Vrsta osnovnog tečaja**: *Vrsta osnovnog tečaja* koju treba predložiti prilikom umetanja *Osnovnog tečaja*.   
