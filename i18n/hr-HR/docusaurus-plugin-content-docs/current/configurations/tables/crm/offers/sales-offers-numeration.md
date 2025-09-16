@@ -1,8 +1,8 @@
 ---
-title: Numerazione preventivi
+title: Numeracija ponuda 
 sidebar_position: 2
 ---
 
-La tabella permette definire dei progressivi di numerazione diversi all'interno dello stesso anno da attribuire a uno o più tipi offerta.
+Tablica omogućuje definiranje različitih progresivnih numeracija unutar iste godine koje se mogu dodijeliti jednoj ili više vrsta ponuda.  
 
-Per le modalità di inserimento delle numerazioni, si rimanda all'articolo [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations).
+Za način unosa numeracija, pogledajte članak [Numeracije Fluentis](/docs/configurations/tables/fluentis-numerations).
