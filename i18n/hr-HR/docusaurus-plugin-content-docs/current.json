@@ -320,7 +320,7 @@
     "description": "The label for category Gestione ore produzione in sidebar erpHome"
   },
   "sidebar.erpHome.category.Utilità": {
-    "message": "Utilità",
+    "message": "Korisnost",
     "description": "The label for category Utilità in sidebar erpHome"
   },
   "sidebar.erpHome.category.ExtraData": {
@@ -1864,7 +1864,7 @@
     "description": "The label for category Ticket in sidebar configurations"
   },
   "sidebar.configurations.category.Utilità": {
-    "message": "Utilità",
+    "message": "Korisnost",
     "description": "The label for category Utilità in sidebar configurations"
   },
   "sidebar.configurations.category.ExtraData": {
