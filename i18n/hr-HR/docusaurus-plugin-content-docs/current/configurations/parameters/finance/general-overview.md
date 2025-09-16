@@ -3,24 +3,24 @@ title: Administrativna
 sidebar_position: 1
 ---
 
-I parametri dell'area **Amministrativa** concernono i moduli di 
+Parametri područja **Administrativna** odnose se na module za: 
 
-[**Contabilità**](/docs/configurations/parameters/finance/accounting-parameters): **Indispensabili** per l'utilizzo di qualsiasi funzionalità contabile, contengono la definizione di dati fondamentali quali la durata dell'esercizio i conti utilizzati per le operazioni contabili automatizzate e l'abbinamento tra le anagrafiche ed il piano dei conti, pertanto influenzano anche il processo di creazione di nuove anagrafiche clienti e fornitori.
+[**Knjigovodstvo**](/docs/configurations/parameters/finance/accounting-parameters): **neophodni** za korištenje bilo koje računovodstvene funkcionalnosti, sadrže definiciju osnovnih podataka kao što su trajanje poslovne godine, računi korišteni za automatizirane računovodstvene operacije te povezivanje između matičnih podataka i plana konta, stoga utječu i na proces kreiranja novih matičnih podataka kupaca i dobavljača.  
 
-**Percipienti**:  Parametri **non necessari** e presenti per retro compatibilità
+**Vanjski suradnik**: parametri **koji nisu nužni** i prisutni su zbog unatrag kompatibilnosti.  
 
-[**Cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters): parametri che prevedono opzioni specifiche di interesse limitatamente al modulo cespiti/controlling
+[**Osnovna sredstva**](/docs/configurations/parameters/finance/fixed-assets-parameters): parametri koji sadrže specifične opcije relevantne isključivo za modul dugotrajne imovine/kontroling.
 
-[**Importazione paghe**](/docs/configurations/parameters/finance/payroll-import-parameters) Parametri specifici per l'importazione delle scritture relative alle paghe dipendenti da altri sistemi gestionali tramite il flusso di importazione Bizlink.
+[**Uvoz plaće za kontrolu**](/docs/configurations/parameters/finance/payroll-import-parameters) specifični parametri za uvoz knjiženja vezanih uz plaće zaposlenika iz drugih upravljačkih sustava putem Bizlink uvoznog toka.
 
-:::danger[Attenzione]
-Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo delle funzionalità interessate.
+:::danger[Pažnja]
+Neodgovarajuće upravljanje ovim osnovnim podacima može onemogućiti korištenje pripadajućih funkcionalnosti.  
 :::
 
-:::tip[Nota]
-A fronte della stretta interconnessione con l'area Tesoreria, in particolare per le varie procedure di contabilizzazione automatica del modulo Portafoglio attivo e Pagamenti fornitori, si consiglia di controllare e gestire anche i [**parametri**](/docs/configurations/parameters/treasury/general-overview) dell'area tesoreria.
+:::tip[Napomena]
+Zbog uske povezanosti s područjem Riznice, osobito za različite procedure automatskog knjiženja u modulima Aktivni portfelj i Plaćanja dobavljačima, preporučuje se provjera i upravljanje i [**parametrima**](/docs/configurations/parameters/treasury/general-overview) područja riznice.  
 :::
 
 :::important[**Fast Start**]
-I parametri dell'area amministrativa possono essere configurati tramite l'inizializzazione di un [**ambiente *FastStart***](/docs/guide/fast-start) progettato per consentire una configurazione rapida e un utilizzo immediato del sistema.
+Parametri administrativnog područja mogu se konfigurirati putem inicijalizacije [***FastStart* okruženja**](/docs/guide/fast-start) koje je dizajnirano za brzu konfiguraciju i trenutno korištenje sustava.  
 :::
