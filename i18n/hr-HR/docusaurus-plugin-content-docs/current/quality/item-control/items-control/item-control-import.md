@@ -1,87 +1,87 @@
 ---
-title: Importa articoli da controllare
+title: Uvoz artikala za provjeru
 sidebar_position: 2
 ---
 
-La procedura di importazione si trova sul percorso **Qualità > Controlli articolo > Controlli articolo > Importa articoli da controllare**.   
+Procedura uvoza nalazi se na putanji **Kvaliteta > Kontrola artikla > Kontrola artikla > Uvoz artikala za provjeru**.      
 
 
-:::important A cosa serve
-Questa gestione permette di creare nuovi *Controlli articolo* importando gli *Articoli* da controllare dai *Tipi documento* previsti:   
-> ***Ricevimento merci***   
-> ***DDT di acquisto***   
-> ***Fatture di acquisto***   
-> ***Dichiarazioni di produzione***   
-> ***Fasi ordine di produzione***   
-> ***Rientri di conto lavoro***   
-> ***Movimentazioni di carico***   
+:::important Čemu služi
+Ovo upravljanje omogućuje stvaranje novih *Kontrola artikla* uvozom *Artikala* za kontrolu iz predviđenih *Vrsta dokumenata*:   
+> ***Prijem robe***   
+> ***Primke***   
+> ***Ulazni račun***   
+> ***Izjave o proizvodnji***   
+> ***Faze izrada nadrudžbe***   
+> ***Povrat od podizvođača***   
+> ***Rukovanje teretom***   
 
-associarli al *Piano di controllo* previsto per poi, tramite rilevazioni visive o con l'ausilio di *Strumenti di misura*, andare a verificare la loro conformità.   
+te ih povezati s predviđenim *Kontrolnim planom* kako bi se zatim, putem vizualnih pregleda ili uz pomoć *Mjernih instrumenata*, provjerila njihova sukladnost.   
 :::
 
 
-La form è suddivisa in:
-- un'area di filtro, contestuale al *Tipo documento* da cui si desiderano importare gli *Articoli* da controllare;   
-- un'area composta da diversi tabulatori, uno per *Tipo documento*,  ognuno dei quali contiene le griglie dedicate al risultato del filtro.   
+Obrazac je podijeljen na:   
+- područje filtra, *Vrsta dokumenta* iz koje se žele uvesti *Artikli* za kontrolu;   
+- područje koje se sastoji od različitih kartica, po jedna za *Vrstu dokumenta*, od kojih svaka sadrži tablice posvećene rezultatu filtra.      
 
-## Pulsanti specifici
+## Specifične tipke
 
-### ![](/img/neutral/common/search.png) Ricerca righe documento da importare
+### ![](/img/neutral/common/search.png) Pretraživanje redaka dokumenta za uvoz
 
-L'area di filtro e il tabulatore contenente la griglia risultato variano una volta indicato il *Tipo documento*.   
-Impostati i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
-Del *Tipo documento* selezionato, verranno visualizzate solamente le righe documento di articoli:   
-- codificati per *Ricevimento merci*, *DDT di acquisto*, *Fatture di acquisto* e *Rientri di conto lavoro*;   
-- con quantità prodotte e/o scartate per *Dichiarazioni di produzione*;   
+Područje filtra i kartica koja sadrži tablicu rezultata mijenjaju se nakon što se odredi *Vrsta dokumenta*.   
+Nakon što se postave željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar tablice rezultata.   
+Od odabrane *Vrste dokumenta* prikazat će se samo retci dokumenata artikala:   
+- kodirani za *Prijem robe*, *Primke*, *Ulazne račune* i *Povrate od podizvođača*;   
+- s proizvedenim i/ili odbačenim količinama za *Izjave o proizvodnji*;      
 
-per i restanti *tipi documento* di *Fasi ordine di produzione* e *Movimentazioni di carico* verranno visualizzate tutte le righe documento.   
+za preostale *vrste dokumenata* *Faza proizvodnog naloga* i *Rukovanje teretom* prikazat će se svi retci dokumenata.   
 
-### Conferma righe documento da importare
+### Potvrda redaka dokumenta za uvoz
 
-Abilitato se si seleziona almeno una riga dalla griglia risultato e il *Tipo controllo* da creare.   
-Selezionate le righe desiderate è necessario cliccare sul pulsante **Conferma** per associare i *Piani di controllo* e creare i *Controlli articolo*.   
-Al termine dell'operazione viene richiesto se proseguire nell'attività di importazione o aprire i *Controlli articolo* appena creati.   
+Omogućeno je ako se odabere barem jedan redak iz tablice rezultata i *Vrsta kontrole* koju treba stvoriti.   
+Nakon što se odaberu željeni reci, potrebno je kliknuti na tipku **Potvrda** kako bi se povezali *Kontrolni planovi* i stvorile *Kontrole artikla*.   
+Po završetku operacije postavlja se pitanje želite li nastaviti s aktivnostima uvoza ili otvoriti upravo stvorene *Kontrole artikla*.   
 
 import ControlPlanSearchMethod from './../../../import/procedure/control-plan-search-method.md'
 
 <ControlPlanSearchMethod />
 
-## Gestione Importa articoli da controllare
+## Upravljanje uvozom artikla za provjeru   
 
-### Area di filtro
+### Područje filtra
 
-L'area è composta da una parte fissa dove vengono riportati i filtri di ricerca relativi alle informazioni generali e da una parte variabile e contestuale al *Tipo documento* selezionato; la parte variabile viene visualizzata al di sotto dell'expander *Articolo*.   
-I filtri di ricerca relativi alle informazioni generali sono:   
-> **Tipo documento**: è il *Tipo documento* nel quale ricercare le informazioni.   
-> All'esecuzione della gestione viene proposto il *Tipo documento* indicato come *Default* nell'elenco *Tipi documento per l'importazione* presente nel tabulatore *Controlli articolo* dei *Parametri controlli articolo*; se non indicato viene proposto *DDT di acquisto*.   
-> La proposta automatica, o la successiva variazione da parte dell'operatore, faranno variare la parte variabile del filtro dati e il tabulatore visualizzato.
+Područje se sastoji od fiksnog dijela gdje se prikazuju filtri za pretraživanje vezani uz opće informacije i dijela koji za odabranu *Vrstu dokumenta*; taj dio prikazuje se ispod proširenja *Artikl*.      
+Filtri za pretraživanje vezani uz opće informacije su:   
+> **Vrsta dokumenta**: to je *Vrsta dokumenta* u kojoj se pretražuju informacije.   
+> Pri izvršavanju upravljanja predlaže se *Vrsta dokumenta* označena kao *Zadana* na popisu *Vrsta dokumenata za uvoz* koji se nalazi na kartici *Kontrole artikla* unutar *Parametara kontrole artikla*; ako nije navedena, predlaže se *Primka*.   
+> Automatski prijedlog, ili naknadna promjena od strane operatera, uzrokovat će promjenu varijabilnog dijela filtra podataka i prikazane kartice.   
 >   
-> **Dettaglio articolo**: è il tipo di dettaglio da controllare dell'*Articolo* per la tipologia documento specifica.   
-> E' un elenco di valori predefiniti dal sistema:   
-> - *Nessuno* - la riga *Articolo* considerata non prenderà alcun dato di dettaglio;   
-> - *Lotto* - la riga *Articolo* considerata prenderà come massimo dettaglio il *Lotto*;   
-> - *S.N.* - la riga *Articolo* considerata prenderà come massimo dettaglio il *Serial Number*;   
-> - *UDC* - la riga *Articolo* considerata prenderà come massimo dettaglio l'*Unità di Carico*.   
+> **Detalj artikla**: vrsta detalja za kontrolu *Artikla* za specifičnu vrstu dokumenta.   
+> To je popis unaprijed definiranih vrijednosti sustava:   
+> - *Nijedan* - razmatrani redak *Artikla* neće uzeti nikakve detaljne podatke;   
+> - *Lot* - razmatrani redak *Artikla* uzet će kao detalj *Lot*;   
+> - *S.N.* - razmatrani redak *Artikla* uzet će kao detalj *Serijski broj*;   
+> - *UDC* - razmatrani redak *Artikla* uzet će kao detalj *Jedinicu utovara*.   
 >   
-> All'esecuzione della gestione viene proposto il *Dettaglio articolo* indicato in *Dettaglio articolo* nell'elenco *Tipi documento per l'importazione* presente nel tabulatore *Controlli articolo* dei *Parametri controlli articolo*.   
+> Prilikom izvršavanja upravljanja predlaže se *Detalj artikla* naveden u *Detaljima artikla* na popisu *Vrste dokumenata za uvoz* koji se nalazi na kartici *Kontrole artikla* u *Parametrima kontrole artikla*.      
 >
-> **Tipo controllo**: il codice del *Tipo controllo* da associare al *Controllo articoli* da creare.   
-> All'esecuzione della gestione viene proposto il *Tipo controllo* indicato in *Tipo controllo* nell'elenco *Tipi documento per l'importazione* presente nel tabulatore *Controlli articolo* dei *Parametri controlli articolo*.   
+> **Tip kontrole**: šifra *Vrste kontrole* koju treba povezati s *Kontrolama artikala* koje se stvaraju.   
+> Pri izvršavanju upravljanja predlaže se *Vrsta kontrole* navedena u *Vrsti kontrole* na popisu *Vrsta dokumenata za uvoz* koji se nalazi na kartici *Kontrole artikla* unutar *Parametara kontrole artikla*.   
 >   
-> expander **Dettaglio**   
->> **Non ancora considerate**: indica se ricercare solamente le righe del documento non ancora considerate in precedenti importazioni.   
->> **Già considerate**:  indica se ricercare, oltre a quelle non ancora considerate, anche le righe del già considerate in precedenti importazioni (solitamente utilizzata nel caso si desideri effettuare ulteriori controlli).   
+> proširenje **Detalj**   
+>> **Još nije razmatrano**: označava treba li pretraživati samo retke dokumenta koji još nisu razmotreni u prethodnim uvozima.   
+>> **Već razmatrano**: označava treba li pretraživati, osim onih koje još nisu razmotrene, i retke koji su već razmotreni u prethodnim uvozima (obično se koristi u slučaju da se žele provesti dodatne kontrole).    
 >   
-> **Bar Code**: è il codice che abilitato al riconoscimento di: *Articolo*, *Unità di carico*, *Lotto* e *Serial number*.   
+> **Barkod**: to je kod koji je omogućen za prepoznavanje: *Artikla*, *Jedinice tereta*, *Lota* i *Serijskog broja*.   
 >   
-> expander **Articolo**
->> **Unità di carico**: è il codice formattato dell'*Unità di carico*.   
->> **Lotto**: è il codice del *Lotto*.   
->> **Serial number**: è il codice del *Serial number*.   
+> proširenje **Artikl**
+>> **Učitavanje jedinice**: formatirani je kod *Jedinice tereta*.   
+>> **Lot**: šifra *Lota*.   
+>> **Serijski broj**: je kod *Serijskog broja*.   
 
-### Area di risultato   
+### Područje rezultata   
 
-Contenuta in ogni tabulatore, è la "griglia" che contiene il risultato della *Ricerca* applicata all'area di filtro.   
-Le informazioni contenute nell'elenco sono contestuali al *Tipo documento* selezionato.   
+Sadržano je u svakoj kartici, to je tablica koja sadrži rezultat *Pretraživanja* primijenjenog na području filtra.   
+Informacije sadržane u popisu povezane su s odabranom *Vrstom dokumenta*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).

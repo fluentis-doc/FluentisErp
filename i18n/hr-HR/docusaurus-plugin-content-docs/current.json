@@ -1232,7 +1232,7 @@
     "description": "The label for category Procedure in sidebar quality"
   },
   "sidebar.quality.category.piani di controllo": {
-    "message": "Control plans",
+    "message": "Kontrolni planovi",
     "description": "The label for category piani di controllo in sidebar quality"
   },
   "sidebar.quality.category.Stampe": {
@@ -1912,7 +1912,7 @@
     "description": "The label for category Controllo articolo in sidebar quality"
   },
   "sidebar.quality.category.Piani di controllo": {
-    "message": "Piani di controllo",
+    "message": "Kontrolni planovi",
     "description": "The label for category Piani di controllo in sidebar quality"
   },
   "sidebar.quality.category.Certificati di Analisi": {

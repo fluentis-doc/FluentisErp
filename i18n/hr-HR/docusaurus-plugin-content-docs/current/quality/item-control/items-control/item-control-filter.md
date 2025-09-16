@@ -1,23 +1,23 @@
 ---
-title: Ricerca Controlli articolo
+title: Pretraga kontrole artikala
 sidebar_position: 1
 ---
 
-Il filtro si trova sul percorso **Qualità > Controlli articolo > Controlli articolo**.   
+Filtar se nalazi na putanji **Kvaliteta > Kontrola artikla > Kontrola artikla**.      
 
-Il filtro dati consente di inserire nuovi *Controlli articolo* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
-I diversi colori delle righe si possono impostare nei **Parametri controlli articoli > Controlli Articoli**.   
+Filtar podataka omogućuje unošenje novih *Kontrola artikla* ili pretraživanje već postojećih kako bi ih se vidjelo, izmijenilo ili izbrisalo.   
+Različite boje redaka mogu se postaviti u **Parametri kontrole artikla > Kontrole artikla**.     
 
-### ![](/img/neutral/common/search.png) Ricerca Controlli articolo
+### ![](/img/neutral/common/search.png) Pretraga kontrole artikala
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Obrazac se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar tablice rezultata.      
 
-### ![](/img/neutral/common/new.png) Inserimento Controlli articolo
+### ![](/img/neutral/common/new.png) Unos kontrole artikala
 
-Per poter inserire nuovi *Controlli articoli* è necessario premere il pulsante **Importa articoli da controllare**.   
+Kako bi se unijele nove *Kontrole artikla*, potrebno je pritisnuti tipku **Uvoz artikala za provjeru**.      
 
-### ![](/img/neutral/common/edit.png) Modifica o ![](/img/neutral/common/view.png) Visualizzazione Controlli articolo
+### ![](/img/neutral/common/edit.png) Izmijeni ili ![](/img/neutral/common/view.png) Prikaži Kontrolu artikla
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Kako bi se otvorilo upravljanje tablicom rezultata, potrebno je dvaput kliknuti na redak od interesa ili, odabirom jednog ili više redaka, pritisnuti tipke **Izmijeni** ili **Prikaži**.      
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
