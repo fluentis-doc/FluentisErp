@@ -1,21 +1,21 @@
 ---
-title: Tipo Contatto
+title: Vrsta kontakta 
 sidebar_position: 1
 ---
 
-È una tabella che permette di definire i **Tipi Contatto** per quanto riguarda i contatti del CRM, in modo tale da poterli categorizzare.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione del tipo, e da una griglia in cui appunto verranno elencati tutti i tipi contatto inseriti.
-Sempre all'interno di questa form è possibile aggiungere nuovi tipi contatto all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si andrà ad inserire il codice e la descrizione del nuovo tipo.
-Per ogni contatto è inoltre possibile definire:
--	La tipologia, selezionando dalla griglia una voce tra Contatto, Prospect, Lead, Opportunità, Cliente, Fornitore;
--	La *Pipeline flux*, che dovrà essere proposta in automatico alla selezione del tipo contatto;
--	Le tab che dovranno essere visualizzate per quel tipo di contatto.
+To je tabela koja omogućuje definiranje **Tipova kontakta** u CRM-u kako bi se mogli kategorizirati.
+Sastoji se od dijela za filtriranje u kojem se može pretraživati po kodu ili opisu tipa, te od mreže u kojoj će biti navedeni svi uneseni tipovi kontakta.
+Unutar ovog obrasca također je moguće dodati nove tipove kontakta u mrežu klikom na gumb [](/img/neutral/common/new.png) Novo: na taj način će se dodati nova linija unutar mreže gdje će se unijeti kod i opis novog tipa. 
+Za svaki kontakt također je moguće definirati:
+-	Tipologija, odabir jednog od zapisa iz mreže: Kontakt, Potencijalni klijent, Prospekt, Prilika, Klijent, Dobavljač; 
+-	*Pipeline flux*, koji će se automatski predložiti pri odabiru tipa kontakta; 
+-	Kartice koje će biti prikazane za taj tip kontakta. 
 
-Per ogni tipologia di contatto è inoltre possibile definire un **Tipo di contatto Ruolo**, ossia per i singoli utenti Fluentis (o i gruppi di utenti definiti in base ai Ruoli) è possibile definire quali tab possano essere visualizzate. Per ogni Tipo di contatto Ruolo è necessario definire:
-**Data Creazione**: è la data di creazione del tipo contatto Ruolo;
-**Ruolo**: fa riferimento alla tabella dei ruoli degli utenti di Fluentis;
-**Operatore**: fa riferimento alla tabella degli utenti di Fluentis.
+Za svaki tip kontakta također je moguće definirati **ulogu tipa kontakta**, odnosno za pojedinačne Fluentis korisnike (ili grupe korisnika definirane prema ulogama), moguće je odrediti koje kartice mogu biti prikazane. Za svaku vrstu uloge kontakta potrebno je definirati:
+**DDatum kreiranja**: datum stvaranja vrste uloge kontakta;
+**Uloga**: : odnosi se na tablicu uloga Fluentis korisnika;
+**Operater**: odnosi se na tablicu Fluentis korisnika. 
 
-È inoltre possibile definire per ogni tipo contatto anche degli [Extra data](/docs/configurations/utility/extra-data/extradata/search-extradata/), che dovranno essere proposti per i contatti che presentano tale tipologia (per ulteriori informazioni riguardo gli Extra data fare riferimento all’apposita sezione della presente guida).
+Također je moguće definirati [Extra data](/docs/configurations/utility/extra-data/extradata/search-extradata/), za svaki tip kontakta, koji će se predložiti za kontakte koji imaju tu vrstu tipologije (za više informacija o dodatnim podacima, pogledajte odgovarajući odjeljak u ovom vodiču).
 
 
