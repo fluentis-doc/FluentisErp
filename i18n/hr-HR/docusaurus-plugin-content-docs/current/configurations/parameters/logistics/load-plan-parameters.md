@@ -3,7 +3,7 @@ title: Parametri planova utovara
 sidebar_position: 5
 ---
 
-Parametri plana utovara sastoje se od jedne kartice, Općenito. Oznake koje dopuštaju parametriranje su sljedeće.       
+Flagovi koji omogućuju parametrizaciju su:       
 
 **Provjeri dostupnost**: ova zastavica omogućuje umetanje stupca za prikaz dostupnosti artikala;          
 **Provjeri raspoloživost**: ova vam zastavica omogućuje provjeru raspoloživosti;  
