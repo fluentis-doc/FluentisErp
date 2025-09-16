@@ -1,26 +1,26 @@
 ---
-title: Extra Data
+title: ExtraData
 sidebar_position: 0
 ---
 
-The **ExtraData** form is accessible from **Configuration** > **Utilities** > **ExtraData**.
+Obrazac **ExtraData** dostupan je putem izbornika **Konfiguracija > Uslužni program > **ExtraData**.
 
-**ExtraData** is a way to add **new properties** to both standard and custom Fluentis objects without having to resort to using custom code and thus compiling projects based on **custom code**.    
-All major functional objects such as items, orders, and invoices are already prepared for the addition of ExtraData.
+**ExtraData** omogućuje dodavanje **novih svojstava** standardnim i prilagođenim Fluentis objektima bez potrebe za korištenjem prilagođenog koda i kompilacijom projekata temeljenih na **custom code**.      
+Svi glavni funkcionalni objekti, poput artikala, narudžbi i računa, već su pripremljeni za proširenje putem ExtraData.  
 
-### Standard Filter
-The standard filter allows searching for the ExtraData defined in Fluentis by **Code**.  
+### Standardni filter  
+Standardni filter omogućuje pretraživanje definiranih ExtraData unutar Fluentisa putem **šifre**.  
 
-### Extra Data
+### ExtraData
 
-The table contains the results related to the individual Extra Data defined in Fluentis.  
+Tablica prikazuje rezultate koji se odnose na pojedinačne ExtraData definicije u Fluentisu.  
 
-By opening the detail form of an ExtraData, you will have access to the parameterization panel of the ExtraData.
+Otvaranjem detaljnog obrasca pojedinog ExtraData, pristupa se panelu za parametrizaciju ExtraData vrijednosti.
 
-#### Specific Buttons
+#### Specifične tipke
 
-> **Search**: allows you to search for the existing ExtraData.  
-> **New**: allows you to create a new ExtraData.  
-> **Edit**: allows you to open an existing ExtraData in read-write mode.  
-> **View**: allows you to open an existing ExtraData in read-only mode.  
-> **Remove**: allows you to delete an existing ExtraData.
+> **Pretraži**: omogućuje pretragu postojećih ExtraData.  
+> **Novi**: omogućuje kreiranje nove ExtraData definicije.   
+> **Uredi**: omogućuje otvaranje postojeće ExtraData u načinu za uređivanje.   
+> **Prikaz**: omogućuje otvaranje postojeće ExtraData u načinu samo za čitanje.   
+> **Obriši**:  omogućuje brisanje postojeće ExtraData definicije.  

@@ -1,33 +1,35 @@
 ---
-title: Generazione contatori nuovo anno
+title: Generiranje brojača za novu godinu
 sidebar_position: 3
 ---
 
-La form permette di gestire i numeratori presenti in Fluentis, in particolare nel momento del cambio d'anno.
+Ovaj obrazac omogućuje upravljanje brojačima prisutnima u Fluentisu, posebno prilikom prijelaza na novu godinu.
 
-All'apertura della form, Fluentis visualizza l'**Ultimo anno gestionale esistente** (preso dai parametri di contabilità) e il filtro per i *contatori non validi per il prossimo anno*.
+Prilikom otvaranja obrasca, Fluentis prikazuje **Zadnju postojeću upravljanu godinu** (preuzetu iz računovodstvenih parametara) i filter za *brojače koji nisu valjani za sljedeću godinu*.
 
-La griglia presenta la lista dei numeratori non definiti (o non definiti correttamente) per l'anno prossimo permettendo all'utente, con un doppio click, di identificare il motivo: generalmente il problema risiede nella configurazione del numeratore con una data di fine validità senza un motivo valido, costringendo (prima della creazione del presente automatismo) a creare una nuova riga ogni anno, anziché impostare il numeratore con l'opzione Annuale che riparte da capo ogni anno automaticamente, tuttavia potrebbe essere che il numeratore sia stato bloccato per un motivo preciso (cambio di politica della numerazione ecc.).
+Mrežna tablica prikazuje popis brojača koji nisu definirani (ili nisu ispravno definirani) za nadolazeću godinu, što korisniku omogućuje da dvostrukim klikom identificira razlog: problem obično proizlazi iz konfiguracije brojača s datumom završetka valjanosti bez opravdanog razloga. To je ranije zahtijevalo ručno dodavanje novog retka svake godine, umjesto da se brojač postavi kao "godišnji", koji se automatski resetira svake godine.
+Ipak, moguće je da je brojač namjerno deaktiviran iz određenog razloga (npr. promjena politike numeracije itd.).
 
-#### Pulsanti specifici 
+#### Specifične tipke
 
-> **Creazione**: il pulsante mostra un messaggio di conferma della correzione automatica dei numeratori per le righe selezionate nella griglia.  
-> **Rollback**: esegue il ripristino della procedura.
+> **Kreiranje**: prikazuje poruku za potvrdu automatske korekcije brojača za odabrane retke u tablici.  
+> **Povrat postupka**: izvršava povrat postupka.
 
-*Esempio*  
-Se al messaggio si risponde in modo:  
-- affermativo, saranno tolte le date fine validità dei numeratori che sono stati (si suppone) erroneamente chiusi nell'anno 2017 dell'esempio (non si sbloccheranno quindi numeratori chiusi negli anni precedenti), impostandoli inoltre come ‘annuali' in modo da renderli validi per sempre.  
-- negativo, i numeratori Fluentis resteranno come sono.
+*Primjer*  
+Ako se na poruku odgovori:  
+- potvrdno: bit će uklonjeni datumi završetka valjanosti za brojače koji su (pretpostavlja se) pogrešno zatvoreni tijekom 2017. godine iz primjera (brojači zatvoreni prije 2017. neće biti otključani). Uz to, brojači će biti postavljeni kao godišnji, kako bi ostali trajno valjani.  
+- Odbijeno: Fluentis brojači ostat će nepromijenjeni.  
 
 
-Facciamo qualche esempio:
+Napravimo nekoliko primjera:  
 
-A) supponiamo ultimo anno 2017, numeratore fatture Fluentis con codice ‘1' impostato con data di fine validità 2020 e quindi valido per il 2018, la procedura andrà a creare anche il numeratore ex-Ideale2010 con codice 1 per il 2018.
+A) Pretpostavimo da je posljednja godina 2017., a brojač faktura u Fluentisu s kodom ‘1’ postavljen je s datumom završetka valjanosti u 2020., dakle važi i za 2018, postupak će tada automatski kreirati i odgovarajući brojač ex-Ideale2010 s kodom ‘1’ za 2018.
 
-B) supponiamo ultimo anno 2017, numeratore fatture Fluentis con codice ‘2' impostato con data di fine validità 2017 e quindi NON valido per il 2018, se l'utente conferma la sistemazione del numeratore Fluentis allora nel numeratore sarà tolta la data fine validità e impostato il tipo come annuale e poi sarà ricreato il corrispondente numeratore ex-Ideale2010 con codice ‘2'; in caso il numeratore Fluentis non venga sistemato, questo numeratore non sarà valido per il 2018 e quindi anche il numeratore ex-Ideale2010 con codice ‘2' resterà bloccato.
+B) pretpostavimo posljednju godinu 2017., brojač faktura Fluentis s kodom ‘2’ postavljen s datumom završetka valjanosti 2017., i stoga NIJE valjan za 2018. Ako korisnik potvrdi ispravak brojača u Fluentisu, tada će u brojaču: biti uklonjen datum završetka valjanosti, tip će biti postavljen kao godišnji, i zatim će biti ponovno kreiran odgovarajući brojač ex-Ideale2010 s kodom ‘2’. U slučaju da brojač u Fluentisu ne bude ispravljen, taj brojač neće biti valjan za 2018., i stoga će i brojač ex-Ideale2010 s kodom ‘2’ ostati blokiran.
 
-C) supponiamo ultimo anno 2017, numeratore fatture Fluentis con codice ‘3' senza data fine validità e quindi valido per il 2018, la procedura andrà a creare anche il numeratore ex-Ideale2010 con codice 3 per il 2018 (indipendentemente da come l'utente risponde al messaggio di conferma della sistemazione Fluentis).
+C) Pretpostavimo da je posljednja godina 2017., a brojač faktura u Fluentisu s kodom ‘3’ nema definiran datum završetka valjanosti, pa je već valjan za 2018. U tom slučaju, postupak će u svakom slučaju (bez obzira na korisnikov odgovor na poruku) kreirati brojač ex-Ideale2010 s kodom ‘3’ za 2018.
 
-:::tip NOTA
-Questa utilità permette di creare anche i parametri di contabilità per il nuovo anno. Verrà visualizzato un apposito messaggio che chiede di confermare. Si consiglia di accettare la creazione, diversamente i parametri di contabilità, **necessari** per eseguire qualsiasi registrazione contabile dovranno essere creati, per il nuovo anno dalla [**apposita form**](/docs/configurations/parameters/finance/accounting-parameters).
+:::tip NAPOMENA
+Ova funkcionalnost omogućuje i kreiranje računovodstvenih parametara za novu godinu.
+Prikazat će se poruka koja traži potvrdu. Preporučuje se prihvatiti kreiranje, jer će u protivnom računovodstveni parametri, **neophodni** za bilo kakvo knjiženje, morati biti ručno kreirani za novu godinu putem [**odgovarajućeg obrasca**](/docs/configurations/parameters/finance/accounting-parameters).
 :::

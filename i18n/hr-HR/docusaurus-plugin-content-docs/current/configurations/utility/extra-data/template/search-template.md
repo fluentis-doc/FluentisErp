@@ -1,10 +1,14 @@
 ---
-title: Ricerca template
+title: Pretraga predloška
 sidebar_position: 1
 ---
 
-import SearchForm from './../../../../import/sections/search-form.md'
+Omogućuje pretraživanje svih dokumenata s ciljem da ih se prikaže, izmijeni, eventualno i obriše ili nastavi s unosom novog dokumenta; prozor se sastoji od područja za filtriranje i mreže rezultata.
 
-<SearchForm />
+Jednom kada su postavljeni svi željeni filteri, dovoljno je kliknuti na tipku **Traži** koji se nalazi u *Izborniku* za prikaz rezultata unutar mreže rezultata.
 
-Sempre da questa form è possibile creare un nuovo Extradata, cliccando sul pulsante **Nuovo**.
+Za otvaranje detalja dokumenta, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gtipkuumb **Izmijeni** (omogućuje ulazak u detalje i njihovo uređivanje) ili na tipku **Prikaži** (omogućuje ulazak u detalje i njihovo prikazivanje, ali bez mogućnosti uređivanja).
+
+Za detalje, općenito o funkcioniranju obrazaca, pogledajte poveznicu.[Funkcionalnosti, tipke i polja općenito](/docs/guide/common).
+
+Uvijek iz ovog obrasca moguće je stvoriti novi Extradata, klikom na tipku **Novo**.
