@@ -1,5 +1,5 @@
 ---
-title: Piano di controllo
+title: Kontrolni planovi
 sidebar_position: 2
 ---
 
