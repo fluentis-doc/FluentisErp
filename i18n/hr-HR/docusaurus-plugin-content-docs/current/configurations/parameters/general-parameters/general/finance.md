@@ -20,3 +20,7 @@ Query koji se mora izvršiti:
         join fluentis.SH_LocalizationParameters on SHLP_Id = SHCP_Parameter_SHLP_Id
         	
         where SHLP_Code like 'IN-IntrastatRoundByOperation'
+
+**Blokiraj knjiženje kada je datum knjiženja raniji od datuma primitka** (kod FS-FI-Posting-BlockPostingBeforeReceiveDate): ako je ovaj parametar omogućen, knjiženje ulaznih računa iz SDI datoteke neće biti dopušteno s datumom ranijim od datuma primitka SDI-a.  
+
+**Dozvoli kreiranje opomena za zatvorene stavke** (kod FS-FI-DunningLetters-AllowClosedMaturities): s ovim parametrom omogućuje se generiranje opomena i za one stavke za koje je plaćanje već izvršeno, tj. kreiranje pisama o izvršenoj uplati.  
