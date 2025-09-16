@@ -1,56 +1,56 @@
 ---
-title: Richieste Piani di Controllo
+title: Zahtjevi za kontrolne planove
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Controlli articolo > Piani di controllo > Procedure > Richieste Piani di Controllo**   
+Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikla > Kontrolni planovi > Procedure > Zahtjevi za kontrolne planove**.   
 
 
-:::important A cosa serve
-Questa procedura permette di assegnare le Richieste generate durante l’associazione dei Piani di controllo ai Controlli articoli dove non è stato possibile tale associazione. Una volta associato il Controllo al Piano, le prove del Piano di controllo verranno proposte automaticamente al Controllo articoli.   
-Per poter usufruire della funzione di *Associazione*/*Inserimento* è necessario:   
-- dal tabulatore **Richieste** scegliere le righe di *Controlli articolo*;  
-- dal tabulatore **Piani di controllo** scegliere i *Piani di controllo*;      
-- cliccare il pulsante **Nuovo Piano di controllo** o **Associa Piano di controllo**.   
+:::important Čemu služi
+Ova procedura omogućava dodjeljivanje *Zahtjeva* generiranih tijekom povezivanja *Kontrolnih planova* s *Kontrolama artikla* gdje takvo povezivanje nije bilo moguće. Nakon što se Kontrola poveže s Planom, testovi *Kontrolnog plana* automatski će se predložiti Kontroli artikla.   
+Kako bi se iskoristila funkcija *Povezivanja*/*Unosa*, potrebno je:   
+- s kartice **Zahtjevi** odabrati retke *Kontrola artikla*;   
+- s kartice **Kontrolni planovi** odabrati *Kontrolne planove*;    
+- kliknuti na tipku **Novi kontrolni plan** ili **Poveži kontrolni plan**.   
 :::
 
-## Richieste   
+## Zahtjevi   
 
-In questo tabulatore è possibile ricercare e selezionare le *richieste* di associazione generate da *Importa articoli da controllare* dove non si è riusciti ad associare, alla riga articolo, un *Piano di controllo*.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca richieste** per visualizzare i risultati all'interno della griglia di risultato.    
+Na ovoj kartici moguće je pretraživati i odabirati *zahtjeve* za povezivanje generirane putem *Uvoza artikala za kontrolu* gdje nije bilo moguće povezati *Kontrolni plan* s retkom artikla.   
+Radno područje sastoji se od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretraga zahtjeva** kako bi se prikazali rezultati unutar tablice rezultata.   
 
-*Pulsanti specifici*:   
+*Specifične tipke*:   
 
-### ![](/img/neutral/common/search.png) Ricerca richieste   
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
+### ![](/img/neutral/common/search.png) Pretraga zahtjeva   
+Na temelju postavljenog filtra prikazuju se rezultati unutar tablice rezultata.   
 
-### Apri Controlli articolo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Premendo il pulsante vengono eseguite le gestioni dei *Controlli articolo* selezionati.   
+### Otvori kontrole artikala  
+Omogućeno je ako se odabere barem jedan redak iz tablice rezultata.   
+Pritiskom na tipku izvršava se upravljanje odabranim *Kontrolama artikla*.   
 
-### ![](/img/neutral/common/item-web.png) Apri Piani di controllo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato.   
-Premendo il pulsante vengono eseguite le gestioni dei *Piani di controllo* selezionati.   
+### ![](/img/neutral/common/item-web.png) Otvori kontrolne planove   
+Omogućeno je ako se odabere barem jedan redak iz tablice rezultata.   
+Pritiskom na tipku izvršava se upravljanje odabranim *Kontrolnim planovima*.   
 
-### ![](/img/neutral/common/new.png) Nuovo Piano di controllo   
-Abilitato se si seleziona almeno una riga dalla griglia risultato del tabulatore *Richieste*.   
-Premendo il pulsante viene creato un nuovo *Piano di controllo* contenente gli *Articoli* dei *Controlli articolo* selezionati.   
-Alle righe di *Richieste* selezionate viene associato il *Piano di controllo* appena creato e le righe *Richieste* vengono nascoste.   
-Per poterle rivedere è necessario agire nell'area filtro indicando il filtro *Già associati* e premere il pulsante **Ricerca richieste**
+### ![](/img/neutral/common/new.png) Novi plan kontrole   
+Omogućeno je ako se odabere barem jedan redak iz tablice rezultata kartice *Zahtjevi*.   
+Pritiskom na tipku stvara se novi *Kontrolni plan* koji sadrži *Artikle* odabranih *Kontrola artikla*.   
+Redcima odabranih *Zahtjeva* povezuje se upravo stvoreni *Kontrolni plan* i retci *Zahtjeva* se skrivaju.   
+Kako bi se ponovno vidjeli, potrebno je djelovati u području filtra navodeći filtar *Već povezano* i pritisnuti tipku **Pretraga zahtjeva**.   
 
-### ![](/img/neutral/common/duplicate.png) Scegli Piani di controllo   
-Premendo il pulsante ci si posiziona automaticamente nel tabulatore **Piani di controllo**.   
+### ![](/img/neutral/common/duplicate.png) Odaberite kontrolne planove   
+Pritiskom na tipku automatski se pozicionira na karticu **Kontrolni planovi**.   
 
 
-## Piani di controllo   
+## Kontrolni planovi
 
-In questo tabulatore è possibile ricercare e selezionare il *Piano di controllo* in cui si desidera inserire gli *Articoli* dei *Controlli articolo* selezionati nel tabulatore *Richieste*.   
-La sessione si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca Piani di controllo** per visualizzare i risultati all'interno della griglia di risultato.    
+Na ovoj kartici moguće je pretraživati i odabrati *Kontrolni plan* u koji se žele unijeti *Artikli* iz *Kontrola artikla* odabranih na kartici *Zahtjevi*. Radno područje sastoji se od područja filtra i područja rezultata.   
+Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretraži kontrolne planove** kako bi se prikazali rezultati unutar tablice rezultata.    
 
-*Pulsanti specifici*:   
+*Specifične tipke*:   
 
-### ![](/img/neutral/common/search.png) Ricerca Piani di controllo   
-Sulla base del filtro impostato si visualizzano i risultati all'interno della griglia di risultato.   
+### ![](/img/neutral/common/search.png) Pretraži kontrolne planove   
+Na temelju postavljenog filtra prikazuju se rezultati unutar tablice rezultata.   
 
 ### ![](/img/neutral/common/item-web.png) Apri Piani di controllo   
 Abilitato se si seleziona almeno una riga dalla griglia risultato.   
