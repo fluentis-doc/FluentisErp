@@ -4,18 +4,18 @@ sidebar_label: Kartice zadataka
 sidebar_position: 1
 ---
 
-La form riguardante i task è suddivisa in ulteriori tre tab.  
-In particolare:
+Obrazac vezan uz zadatke podijeljen je u još tri taba.  
+Konkretno:
 
-Tab **Script**
-In questo tab è possibile:
-* scegliere la modalità di creazione dello script (editor visuale Blockly piuttosto che editor testuale).
-* compilare lo script attraverso l'apposito pulsante.
-  
-Tab **Parametri**
-Possono essere definiti e gestiti diversi parametri di input e di output che l'utente però valorizzare in diverse madalità.
+Tab **Script**  
+U ovom tabu moguće je:  
+* odabrati način kreiranja skripte (vizualni Blockly editor ili tekstualni editor).  
+* kompajlirati skriptu pomoću namjenskog gumba.
 
-Tab **Logs Esecuzione**
-In questo tab vengono visualizzati tutti i log relativi all'esecuzione dello script.
+Tab **Parametri**  
+Mogu se definirati i upravljati različiti ulazni i izlazni parametri koje korisnik može postaviti na različite načine.
+
+Tab **Registar izvršenja**  
+U ovom tabu prikazuju se svi zapisi (logovi) povezani s izvršenjem skripte.
 
 ![alt text](/img/it-it/applications/supervisor/supervisor9.png) 
