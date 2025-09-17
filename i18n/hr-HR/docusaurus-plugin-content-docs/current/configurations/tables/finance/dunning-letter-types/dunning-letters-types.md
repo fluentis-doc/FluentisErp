@@ -1,10 +1,10 @@
 ---
-title: Ricerca tipi solleciti
+title: Tražite vrste podsjetnika 
 sidebar_position: 1
 ---
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje umetanje novih zapisa ili traženje postojećih kako biste ih pregledali, izmijenili ili izbrisali. 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja filtra i područja rezultata. Nakon što ste postavili sve željene filtre, jednostavno kliknite na gumb **Traži** kako biste vidjeli rezultate unutar mreže rezultata. 
 
-Per poter inserire nuovi record è necessario cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
+Za umetanje novih zapisa potrebno je kliknuti na prvi prazan red mreže ili pritisnuti gumb **Novo**.
