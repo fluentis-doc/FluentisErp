@@ -24,6 +24,16 @@ In questo tab, l'utente ha la possibilità di cercare e di trasferire le fatture
 > **Ricerca**: permette di cercare le fatture da scaricare.  
 > **Scarico**: permette di eseguire lo scarico delle fatture selezionate dal magazzino, in base agli algoritmi di scarico e ai parametri inseriti nel successivo tab *Parametri*. 
 
+:::note NOTA
+Possono essere movimentate a magazzino solo le fatture di tipo Immediato che non derivano da DDT.
+
+Quando la fattura è generata a partire da DDT, è necessario procedere con lo scarico dei documenti di trasporto. Una volta che tutti i DDT valorizzati nella fattura risultano scaricati, l’attivazione del flag *Stampata* in fattura comporterà anche l’attivazione automatica del flag *Scaricata*.
+
+Eccezione: se nel tipo fattura è attivo il flag [*Scollega DDT*](/docs/configurations/tables/sales/invoices-type), sarà possibile movimentare a magazzino anche la fattura di vendita.
+
+Le fatture non immediate, invece, non possono mai essere movimentate a magazzino: di conseguenza, il flag Scaricata non si attiverà nemmeno dopo lo scarico di tutti i DDT in esse contenuti.
+:::
+
 ### Parametri
 
 In questa maschera, l'utente ha la possibilità di specificare, per le righe articolo, il modo di trattare le eccezioni.
