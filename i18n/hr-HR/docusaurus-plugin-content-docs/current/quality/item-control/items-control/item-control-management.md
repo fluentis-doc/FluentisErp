@@ -1,5 +1,5 @@
 ---
-title: Controlli articolo
+title: Kontrola artikala
 sidebar_position: 3
 ---
 
