@@ -496,7 +496,7 @@
     "description": "The label for category Generale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Controllo articolo": {
-    "message": "Controllo articolo",
+    "message": "Kontrola artikala",
     "description": "The label for category Controllo articolo in sidebar erpHome"
   },
   "sidebar.erpHome.category.Reclami e non conformità": {
@@ -1220,7 +1220,7 @@
     "description": "The label for category Stato avanzamento lavori in sidebar projectManagement"
   },
   "sidebar.quality.category.Controllo articoli": {
-    "message": "Item control",
+    "message": "Kontrola artikala",
     "description": "The label for category Controllo articoli in sidebar quality"
   },
   "sidebar.quality.category.Schede tecniche": {
@@ -1908,7 +1908,7 @@
     "description": "The label for category Documenti di origine interna in sidebar quality"
   },
   "sidebar.quality.category.Controllo articolo": {
-    "message": "Controllo articolo",
+    "message": "Kontrola artikala",
     "description": "The label for category Controllo articolo in sidebar quality"
   },
   "sidebar.quality.category.Piani di controllo": {
@@ -2152,7 +2152,7 @@
     "description": "The label for category Generale in sidebar configurations"
   },
   "sidebar.configurations.category.Controlli articolo": {
-    "message": "Controlli articolo",
+    "message": "Kontrole artikala",
     "description": "The label for category Controlli articolo in sidebar configurations"
   },
   "sidebar.configurations.category.Documenti": {
@@ -2180,7 +2180,7 @@
     "description": "The label for category Previsioni di vendita in sidebar configurations"
   },
   "sidebar.quality.category.Controlli articolo": {
-    "message": "Controlli articolo",
+    "message": "Kontrole artikala",
     "description": "The label for category Controlli articolo in sidebar quality"
   },
   "sidebar.quality.category.Qualificazione fornitore": {
