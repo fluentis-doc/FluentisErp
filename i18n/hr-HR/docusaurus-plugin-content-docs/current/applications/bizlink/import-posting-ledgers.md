@@ -1,15 +1,15 @@
 ---
-title: Uvoz Knjigovodstvenih prometa
+title: Uvoz Knjiženja glavne knjige
 sidebar_position: 2
 ---
 
-Excel datoteka (predložak) za uvoz knjigovodstvenih prometa u Administrativni modul omogućuje popunjavanje i dijela za PDV i dijela za knjiženje te se stoga popunjava na odgovarajući način ovisno o tome da li se uvoze knjigovodstveni prometi koji uključuju PDV ili jednostavno knjigovodstveni prometi.
+Excel datoteka (predložak) za uvoz knjiženja glavne knjige u Administrativni modul omogućuje popunjavanje i dijela za PDV i dijela za knjiženje te se stoga popunjava na odgovarajući način ovisno o tome da li se uvoze knjiženja koja uključuju PDV ili jednostavno knjiženja glavne knjige.
 
 
-AKO se uvoze knjigovodstveni prometi faktura:   
+AKO se uvoze knjiženja faktura:   
 1^ redak = zaglavlje   
 2^ redak = dnevnik + PDV  
-3^ redak (i nakon toga) = knjigovodstveni prometi dnevnika  
+3^ redak (i nakon toga) = knjiženja glavne knjige  
 
 Prva knjiga  
 1^ redak = zaglavlje  
@@ -23,7 +23,7 @@ Primjer
 
 **Broj knjiženja:** pažnja, mora biti slobodan u odredišnoj bazi podataka ili će funkcija prepisati ono što pronađe bez provjere (to je SQL ažuriranje);
 
-**Predložak:** koristite kod povoda koji je već prisutan i koji je u skladu s knjiženjem (primjerice, PDV povod ako uvozite knjiženja faktura);
+**Predložak:** koristite kod predloška koji je već prisutan i koji je u skladu s knjiženjem (primjerice, PDV predložak ako uvozite knjiženja faktura);
 
 **Knjiga računa:** koristite kod već prisutnog registra;  
 
@@ -31,7 +31,7 @@ Primjer
 
 **Valuta; Valuta; Euro:** uvijek popunite sve čak i ako je sve u eurima i nema promjene. Uvijek popunite i drugi stupac s 0,00 (primjer: ako popunite Dugujući stupac s 1000,00, u susjedni stupac Potražuje stavite 0,00);
 
-**Račun / Podračun:** koristite kodove računa koji su već prisutni.
+**Konto / podkonto:** koristite kodove konta koji su već prisutni.
 
 ---
 **PDV podaci**
