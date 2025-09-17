@@ -31,7 +31,7 @@ Proračunska tablica za uvoz sada je prikazana na zaslonu.
 
 Od ove točke možete krenuti različitim putevima:
 
- 1. Uvezite već kompiliranu proračunsku tablicu, **Datoteka > Otvori**.  
+ 1. Uvezite već popunjenu proračunsku tablicu, **Datoteka > Otvori**.  
  2. Dodajte različite stupce kopiranjem i lijepljenjem s popisa spremljenog na našem računalu.  
  3. Spremite ovu datoteku (**Datoteka > Spremi**) na svoje računalo, zatim dodajte razne podatke i zatim je ponovno uvezite u Fluentis (pogledajte točku 1). Ovo bi moglo biti vrlo korisno za prosljeđivanje predloška proračunske tablice za uvoz koji treba ispuniti za buduće cjenike koje će nam dobavljači slati.  
 
@@ -46,7 +46,7 @@ Opće indikacije:
 
 -        Ako je polje napisano crvenom bojom ono je obavezno polje
 
--        Ako je naziv ćelije označen zelenom bojom, to **odjeljak**
+-        Ako je naziv ćelije označen zelenom bojom, to je **odjeljak**
 
 -        Ako je naziv ćelije označen žutom bojom, to je **polje**
 
@@ -111,7 +111,7 @@ Opis:
 
 -        Opis: opis artikla, može odgovarati i šifri 
 
-*Primjer*: teniska loptica responzivna na rotaciju, može odgovarati broju artikla  
+*Primjer*: teniska loptica, može odgovarati broju artikla  
 
 Jedinica mjere:
 
@@ -141,7 +141,7 @@ PDV:
 
 -        Opis: šifra koja se odnosi na mjerenje koje se koristi za dotičnu stavku
 
-*Primjer*: “22” odgovara 22% PDV-a, “944” Oslobođeno čl. 40 c. 4 bis DL 331
+*Primjer*: “25” odgovara 25% PDV-a, “N” Ne podliježe oporezivanju PDV-om prema čl. 13. st. 10. Zakona o PDV-u
 
 -        Mapiranje tablice/stupca: select MBIV_Code from MB_iva
 
@@ -171,13 +171,13 @@ Račun za kupnju:
 
 -        Maksimalna duljina: 10 znakova
 
--        Primjer: codice riferito al tipo di fattura emessa dell'articolo in questione
+-        Primjer: šifra koja se odnosi na vrstu izdane fakture za predmetnu stavku
 
-*Esempio*: “4” odgovara kupnji poluproizvoda, “1” odgovara sirovinama
+*Primjer*: “4” odgovara kupnji poluproizvoda, “1” odgovara sirovinama
 
 -        Mapiranje tablice/stupca: select MBFA_TipoFatt from mb_TipoFattAcq
 
-Prodajna faktura:
+Izlazni račun:
 
 -        Polje: nije obavezno
 
@@ -193,7 +193,7 @@ Prodajna faktura:
 
 -        Mapiranje tablice/stupca: select MBFA_TipoFatt from mb_TipoFattVend
 
-Ime Intra:
+Nomenklatura:
 
 -        Polje: nije obavezno
 
@@ -262,7 +262,7 @@ Mjerna jedinica:
 
 -        Vrsta: niz znakova
 
--        Formattazione Excel: testo
+-        Excel formatiranje: tekst
 
 -        Maksimalna duljina: /
 
@@ -324,7 +324,7 @@ Potpuno ista stvar za druga dva popusta, samo se vrijednost popusta mijenja.
 ![](/img/it-it/applications/bizlink/import-sales-price-lists/image08.png) 
 
 
-**Popusti po količini (Tip Bracket ‘Qty')**:
+**Popusti po količini (Tip razreda ‘Qty')**:
 
 Popust11:
 
@@ -359,7 +359,7 @@ Ista stvar za druga dva popusta i količine, samo se mijenja odgovarajuća vrije
  ![](/img/it-it/applications/bizlink/import-sales-price-lists/image09.png)
 
 
-**Popust za vrijednost (Tip platnog razreda ‘Val'):**
+**Popust za vrijednost (Tip razreda ‘Val'):**
 
 Popust1:
 
@@ -394,7 +394,7 @@ Potpuno ista stvar za druga dva popusta i vrijednosti.
 ![](/img/it-it/applications/bizlink/import-sales-price-lists/image10.png) 
 
 
-**Cijena po količini (Tip nosača ‘PxQ')**:
+**Cijena po količini (Tip razreda ‘PxQ')**:
 
 Cijena1:
 
@@ -443,7 +443,7 @@ Bilješka:
 
 -        Opis: dodatne napomene
 
-*Primjer*: non esporre ai raggi solari
+*Primjer*: ne izlagati sunčevoj svjetlosti
 
 -        Tablica/stupac mapiranja: select MBNC_Codice from MB_NoteCodificat
 
@@ -466,7 +466,7 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 -        Opis: ISO kod koji se odnosi na jezik
 
-*Primjer*: “it-IT” predstavlja talijanski jezik, “en-US” predstavlja engleski jezik u Americi.
+*Primjer*: “it-IT” predstavlja talijanski jezik, “hr-HR” predstavlja hrvatski jezik.
 
 3      Tvrtka:
 
@@ -492,7 +492,7 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 -        Mapiranje tablice/stupc: select MBDP_Code from MB_Dep
 
-5      Nacija:
+5      Država:
 
 -        Polje: obavezno
 
@@ -500,7 +500,7 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 -        Opis: država u kojoj se nalazi odjel za koji je uvezen cjenik
 
-*Primjer*: “GB” odgovara Velikoj Britaniji, “USA” odgovara Sjedinjenim Državama
+*Primjer*: “HR” odgovara Hrvatskoj, “USA” odgovara Sjedinjenim Američkim Državama
 
 -        Mapiranje tablice/stupca: select MBNZ_Codice from MB_Nazioni
 
@@ -522,7 +522,7 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 -        Vrsta: niz znakova
 
--        Opis: služi za označavanje je li cjenik standardni ili prilagođeni. GEN se obično navodi za cjenike koji se mogu prenositi od kupca do kupca jer će biti isti. Ako je umjesto toga CUST, to odgovara personaliziranom cjeniku za kupca, tj. posebno kreiranom za kupca čiji su račun i podračun umetnuti u parametre.
+-        Opis: služi za označavanje je li cjenik standardni ili prilagođeni. GEN se obično navodi za cjenike koji se mogu prenositi od kupca do kupca jer će biti isti. Ako je umjesto toga CUST, to odgovara personaliziranom cjeniku za kupca, tj. posebno kreiranom za kupca čiji su konto i podkonto umetnuti u parametre.
 
 *Primjer*: “GEN” odgovara općem “CUST”
 
@@ -540,27 +540,27 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 -        Mapiranje tablice/stupca: select MBLV_List from MB_LisVen
 
-9      Račun:
+9      Konto:
 
 -        Polje: obavezno
 
 -        Vrsta: niz znakova
 
--        Opis: račun kupaca, knjiga kupaca. Ako je cjenik prilagođen, kreirat će se račun i podračun kako je navedeno u odgovarajućim parametrima. Ako je opći, ne treba ga unositi
+-        Opis: konto kupaca, knjiga kupaca. Ako je cjenik prilagođen, kreirat će se konto i podračun kako je navedeno u odgovarajućim parametrima. Ako je opći, ne treba ga unositi
 
-*Primjer*: “1701” koji ima 3 podračuna (vidi dolje)
+*Primjer*: “1200” koji ima 3 podračuna (vidi dolje)
 
 -        Mapiranje tablice/stupca: select MBPC_Conto from MB_PiaCon
 
-10  Podračun:
+10  Podkonto:
 
 -        Polje: obavezno 
 
 -        Vrsta: niz znakova
 
--        Opis: podračun kupaca, knjiga kupaca. Ako je cjenik prilagođen, kreirat će se račun i podračun kako je navedeno u odgovarajućim parametrima. Ako je opći, ne treba ga unositi 
+-        Opis: podračun kupaca, knjiga kupaca. Ako je cjenik prilagođen, kreirat će se konto i podkonto kako je navedeno u odgovarajućim parametrima. Ako je opći, ne treba ga unositi 
 
-*Primjer*: za prethodno viđeni račun 1701 postoje 3 podračuna: “001” koji odgovara računima, “002” koji odgovara vrijednostima otpremnica i “” (nije naveden podračun) koji odgovara novcu i novčanim ekvivalentima. 
+*Primjer*: za prethodno viđeni konto 1200 postoje 3 podkonto: “001” koji odgovara računima, “002” koji odgovara vrijednostima otpremnica i “” (nije naveden podkonto) koji odgovara novcu i novčanim ekvivalentima. 
 
 -        Mapiranje tablice/stupca: select BPC_SottoConto from MB_PiaCon
 
@@ -697,13 +697,13 @@ Odaberite lijevim klikom **> Formatiraj ćelije…**
 
  ![](/img/it-it/applications/bizlink/import-sales-price-lists/image16.png)
 
-Na ovom zaslonu zatim možete oblikovati odabrani stupac. Na temelju indikacija navedenih u poljima za umetanje, odaberite odgovarajuću kategoriju, s relevantnim specifikacijama (npr. valuta, simbol nema). Potpuno ista stvar može se učiniti iz proračunske tablice unutar Fluentisa. 
+Na ovom zaslonu zatim možete oblikovati odabrani stupac. Na temelju indikacija navedenih u poljima za umetanje, odaberite odgovarajuću kategoriju, s relevantnim specifikacijama (npr. valuta). Potpuno ista stvar može se učiniti iz proračunske tablice unutar Fluentisa. 
 
-**Pažnja**: Klasični slučaj odnosi se na kodove koji sadrže naizgled beznačajne nule, npr.  “001”. Ako je polje formatirano generički ili brojčano, nule će biti odbačene, a ako je formatirano kao niz, umjesto toga će se zadržati. 
+**Pažnja**: Klasični slučaj odnosi se na kodove koji sadrže nule, npr.  “001”. Ako je polje formatirano generički ili brojčano, nule će biti odbačene, a ako je formatirano kao niz, umjesto toga će se zadržati. 
 
 **Mapiranje tablice/stupca**:
 
--        Ako je stavka mapiranja tablice/stupca prisutna u umetanju polja, to znači da vrijednost umetnuta u polje za uvoz mora već biti prisutna u bazi podataka. Da biste vidjeli relevantne podatke prisutne u bazi podataka, jednostavno slijedite korake u nastavku, u kojima će se klasa članka i njeno mapiranje koristiti kao primjer: 
+-        Ako je stavka mapiranja tablice/stupca prisutna u umetanju polja, to znači da vrijednost umetnuta u polje za uvoz mora već biti prisutna u bazi podataka. Da biste vidjeli relevantne podatke prisutne u bazi podataka, jednostavno slijedite korake u nastavku, u kojima će se klasa artikla i njeno mapiranje koristiti kao primjer: 
 
 select MBDC_Classe from MB_Classi (ß ovo je mapiranje). okrećemo upit u “Microsoft SQL server management studio” i dobivamo sljedeći rezultat: 
 

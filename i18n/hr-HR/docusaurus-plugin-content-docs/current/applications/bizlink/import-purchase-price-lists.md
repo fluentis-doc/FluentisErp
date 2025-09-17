@@ -97,7 +97,7 @@ Opis:
 
 -        Opis: opis artikla koji je dao dobavljač  
 
-*Primjer*: teniska loptica osjetljiva na rotaciju, može odgovarati broju artikla
+*Primjer*: teniska loptica, može odgovarati broju artikla
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image06.png) 
 
@@ -160,7 +160,7 @@ Jedinica mjere:
 
 -        Opis: šifra koja se odnosi na mjerenje koje se koristi za dotičnu stavku  
 
-*Primjer*: “cm” odgovara centimetrima, “Transportna jedinica” odgovara paleti 
+*Primjer*: “cm” odgovara centimetrima, "Utovarna jedinica” odgovara paleti 
 
 -        Mapiranje tablice/stupca: select MBUM_Codice from MB_UnitaMisura
 
@@ -176,7 +176,7 @@ PDV:
 
 -        Opis: šifra koja se odnosi na mjerenje koje se koristi za dotičnu stavku
 
-*Primjer*: “22” Primjer odgovara 22% PDV-a, “N” Ne podliježe oporezivanju PDV-om prema čl. 13. st. 10. Zakona o PDV-u
+*Primjer*: “25” Primjer odgovara 25% PDV-a, “N” Ne podliježe oporezivanju PDV-om prema čl. 13. st. 10. Zakona o PDV-u
 
 -        Mapiranje tablice/stupca: select MBIV_Code from MB_iva
 
@@ -196,7 +196,7 @@ Kategorija proizvoda
 
 -        Mapiranje tablice/stupca: select MBCM_Codice from MB_CatMerceologica
 
-Račun za kupnju:
+Ulazni račun:
 
 -        Polje: nije obavezno
 
