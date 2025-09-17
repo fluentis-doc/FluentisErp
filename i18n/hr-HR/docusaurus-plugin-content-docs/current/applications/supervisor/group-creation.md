@@ -4,16 +4,16 @@ sidebar_label: Stvaranje grupe
 sidebar_position: 2
 ---
 
-In Supervisor, attività, task ed eventi sono associati ai rispettivi gruppi. Si hanno quindi i seguenti gruppi:
+U Supervisoru, aktivnosti, zadaci (task) i događaji povezani su s pripadajućim grupama. Postoje sljedeće grupe:
 
-* *Gruppi di attività (activity groups)*
-* *Gruppi di task (task groups)*
-* *Gruppi di eventi (event groups)*
+* *Grupe aktivnosti*
+* *Grupe zadataka*
+* *Grupe događaja*
 
-La creazione dei rispettivi gruppi è indispensabile per l'aggiunta degli elementi relativi a supervisor (attività, gruppi, eventi) in quanto verranno contenuti in essi.
+Stvaranje pripadajućih grupa neophodno je za dodavanje elemenata povezanih sa Supervisorom (aktivnosti, grupe, događaji), budući da će oni biti sadržani unutar njih.
 
-Per creare un nuovo gruppo di Attività, Tasks o Eventi, aprire la form di gestione dei Gruppi da **Configurazione** > **Tabelle** > **Fluentis Supervisor** > **Gruppi Attività/Tasks/Eventi**.
+Za kreiranje nove grupe Aktivnosti, Zadataka ili Događaja, otvorite obrazac za upravljanje Grupama putem **Konfiguracija** > **Tablice** > **Fluentis Supervisor** > **Grupe Aktivnosti/Taskova/Događaja**.
 
-Alcune delle funzionalità all'interno della form si riferiscono ad un utilizzo standard. Per qualsiasi dettaglio sull'utilizzo di questa form non esplicitato qui, riferirsi a questo [articolo](/docs/guide/common).
+Neke funkcionalnosti unutar obrasca odnose se na standardnu upotrebu. Za sve dodatne detalje o korištenju ovog obrasca koji ovdje nisu izričito navedeni, pogledajte ovaj [članak](/docs/guide/common).
 
 ![alt text](/img/it-it/applications/supervisor/supervisor2.png)
