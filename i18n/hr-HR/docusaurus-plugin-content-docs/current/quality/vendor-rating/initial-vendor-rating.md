@@ -1,102 +1,102 @@
 ---
-title: Valutazioni iniziali e periodiche
+title: Početne i periodične procjene
 sidebar_position: 2
 ---
 
-La gestione si trova sul percorso **Qualità > Valutazioni fornitore > Valutazioni iniziali e periodiche**
+Upravljanje se nalazi na putanji **Kvaliteta > Kvalifikacije dobavljača > Početne i periodične procjene**
 
 
-:::important A cosa serve
-Le *Valutazioni iniziali e periodiche* è uno dei metodi di valutazione dei fornitori che vengono messi a disposizione per la valutazione degli stessi.
-Questo metodo "soggettivo" è manuale e viene abitualmente utilizzato per le prime valutazioni e valutazioni successive.   
+:::important Čemu služi
+*Početne i periodične procjene* jedna je od dostupnih metoda evaluacije dobavljača.   
+Ova subjektivna metoda je ručna i obično se koristi za početne i naknadne evaluacije.   
 
-La gestione consente di inserire nuove *Valutazioni iniziali e periodiche* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+Upravljanje omogućuje umetanje novih *Početnih i periodičnih procjena* ili pretraživanje postojećih kako bi se pregledale, izmijenile ili izbrisale.   
 :::
 
 
-## Pulsanti di comando
+## Tipke za upravljanje
 
 
-### ![](/img/neutral/common/search.png) Ricerca Valutazioni iniziali e periodiche
+### ![](/img/neutral/common/search.png) Pretraga Početnih i periodičnih procjena
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
-
-
-### ![](/img/neutral/common/new.png) Inserimento Valutazioni iniziali e periodiche
-
-Per poter inserire nuove *Valutazioni iniziali e periodiche* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: La **Data valutazione**, il **Fornitore** e il **Tipo valutazione**.
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se klikne tipka **Traži** da bi se vidjeli podaci u pregeldu rezultata.
 
 
-### ![](/img/neutral/common/select-all.png) Associa Check-list
+### ![](/img/neutral/common/new.png) Unos Početnih i periodičnih procjena
 
-Pulsante abilitato solamente se si seleziona una sola *Valutazione iniziale e periodica* e il *Fornitore* non è già stato valutato.   
-Viene visualizzato l'*Help delle Check-list* dal quale è possibile selezionarne una sola.
-Se esiste già una *Check-list* associata alla riga viene richiesto se sostituire quella esistente (e relative *Domande*) con la nuova *Check-list* selezionata.
-
-
-## Gestione dati
+Za unos novih *Početnih i periodičnih procjena* klikne se na prvi prazan redak u pregledu ili pritisne tipka **Novo**.   
+Za novi zapis moraju se unijeti barem obavezna polja koja zahtijeva program: **Datum procjene**, **Dobavljač** i **Tip procjene**.
 
 
-### Valutazioni iniziali e periodiche
+### ![](/img/neutral/common/select-all.png) Pridruži Check-listu
 
-E' l'elenco dove vengono inserite le informazioni principali della *Valutazione iniziale e periodica*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Data valutazione**: (dato obbligatorio) è la data nella quale viene effettuata la valutazione.   
-> All'inserimento di una nuova valutazione viene proposta in automatico la data odierna.   
+Ova tipka je omogućena samo ako se odabere samo jednu *Početna i periodična procjena*, a *Dobavljač* još nije evaluiran.   
+Pojavljuje se *Pomoć za kontrolnu listu* s koje se može odabrati samo jedna takva lista.
+Ako za redak već postoji *Kontrolna lista*, pojavit će se upit želi li se zamijeniti postojeća lista (i pripadajuća *Pitanja*) s novoodabranom *Kontrolnom listom*.
+
+
+## Upravljani podaci
+
+
+### Početne i periodične procjene
+
+Ovo je popis na koji se unose glavni podaci iz *Početne i periodične procjene*.   
+Popis se sastoji od sljedećih podataka:  
+> **Datum procjene**: (obavezno) ovo je datum kada je evaluacija provedena.   
+> Prilikom unosa nove evaluacije, automatski se prikazuje današnji datum.   
 >
-> **Fornitore**: (dato obbligatorio) è la ragione sociale del *Fornitore* che viene valutato.   
+> **Dobavljač**: (obavezno) je naziv tvrtke *Dobavljača* koji se ocjenjuje.    
 >
-> **Tipo valutazione**: (dato obbligatorio) è il codice del *Tipo valutazione*.   
-> All'inserimento di una nuova valutazione viene proposto il *Tipo valutazione* indicato nei *Parametri qualificazione fornitore*.   
+> **Tip procjene**: (obavezno polje) je šifra *Vrste evaluacije*.   
+> Prilikom unosa nove evaluacije, predlaže se *Vrsta evaluacije* naznačena u *Parametrima kvalifikacije dobavljača*.   
 >
-> **Check-list**: è il codice della *Check-list*.   
-> All'inserimento di un *Fornitore* viene proposta in automatico la *Check-list* presente nei suoi *Dati contabili > Dati qualità* e le relative *Domande*.   
-> La modifica di una *Check-list* comporta la sostituzione delle *Descrizioni/Domande* presenti previo richiesta.
+> **Kontrolna lista**: ovo je šifra za *Kontrolnu listu*.   
+> Prilikom unosa *Dobavljača*, automatski se prikazuje *Kontrolna lista* koja se nalazi u njegovim *Računovodstvenim podacima > Podaci o kvaliteti* i povezana *Pitanja*.   
+> Uređivanje *Kontrolne liste* zamjenjuje postojeće *Opise/Pitanja* na zahtjev.
 >
-> **Ispettore**: è il codice dell'*Ispettore* che effettua la valutazione.   
+> **Inspektor**: je šifra *Inspektora* koji provodi evaluaciju.   
 >
-> **Motivo valutazione**: annotazioni libere sull'argomento, è una descrizione della motivazione della valutazione.   
+> **Raztog procjene**: slobodne bilješke o temi, to je opis motivacije za evaluaciju.   
 >
-> **Valutazione**: è la *Valutazione* data al *Fornitore* dall'*Ispettore*.   
-> La cella viene colorata con i colori di *sfondo* e di *testo* previsti nella tabella delle *Valutazioni fornitore*.   
-> Se la *Valutazione* attribuita è associata ad una *Valutazione fornitore* con *Sospensione automatica* il *Fornitore* valutato verrà *Sospeso* dalla *Data valutazione*.
-> Il ripristino della sospensione deve essere fatto manualmente dalla *Funzione aziendale* preposta.   
-> Associata una *Valutazione* le informazioni di: *Data valutazione*, *Fornitore* e *Tipo valutazione* non saranno più modificabili.   
+> **Procjena**: ovo je *Ocjena* koju je *Inspektor* dao *Dobavljaču*.   
+> Ćelija je obojena bojama *pozadine* i *teksta* navedenima u tablici *Ocjene dobavljača*.   
+> Ako je dodijeljena *Ocjena* povezana s *Ocjenom dobavljača* s *Automatskom suspenzijom*, ocijenjeni *Dobavljač* bit će *Suspendiran* od *Datuma ocjenjivanja*.   
+> Suspenziju mora ručno vratiti odgovorna *Funkcija tvrtke*.   
+> Nakon što je *Ocjena* povezana, podaci o *Datumu ocjenjivanja*, *Dobavljaču* i *Vrsti ocjenjivanja* više se neće moći uređivati.   
 >
-> **Descrizione tipo valutazione**: è la descrizione del *Tipo valutazione*.   
-> **Descrizione check-list**: è la descrizione della *Check-list*.   
-> **Descrizione ispettore**: è la descrizione dell'*Ispettore*.   
-> **Note**: annotazioni libere.  
+> **Opis vrste procjene**: ovo je opis *Vrste procjene*.   
+> **Opis kontrolne liste**: ovo je opis *Kontrolne liste*.   
+> **Opis inspektora**: ovo je opis *Inspektora*.   
+> **Napomene**: bilješke u slobodnom obliku.   
 
 
-### Descrizioni/Domande
+### Opisi/Pitanja
 
-E' l'elenco delle domande/attività da utilizzare/effettuare per le valutazioni a fornitori.   
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di attuazione delle *domande/attività*.   
-> **Descrizione/Domanda**: annotazioni libere sull'argomento.   
-> **Risposta**: annotazioni libere sull'argomento.   
-> **Categoria**: è la *Categoria* associata alla *Descrizione/Domanda* se ripresa dalla *Check-list*.   
-> **Valutazione attesa**: è il *Livello di valutazione* minimo richiesto per la valutazione.   
-> **Peso (%)**: indica il *peso* (importanza), espresso in percentuale, associato alla *Descrizione/Domanda* se ripresa dalla *Check-list*.   
-> **Valutazione rilevata**: è il *Livello di valutazione* valutato.   
-> Il carattere diventa *Rosso* se la *Valutazione rilevata* è inferiore alla *Valutazione attesa*.   
-> **Punteggio Peso**: è il *Punteggio* dato automaticamente dal sistema alla valutazione data alla *Descrizione/Domanda* specifica sulla base del *Livello* della *Valutazione rilevata*;   
-> questo punteggio viene calcolato (Punteggio Peso" = EvaluationLevelDetected.Level / 100 * CheckListQuestion.WeightPercentage).   
-> **Note**: annotazioni libere.
+Ovo je popis pitanja/aktivnosti koje će se koristiti/izvoditi za evaluaciju dobavljača.   
+Popis se sastoji od sljedećih informacija:   
+> **Redoslijed**: ovo je slijed kojim se provode *pitanja/aktivnosti*.   
+> **Opis/Pitanje**: bilješke u slobodnom obliku o temi.   
+> **Odgovor**: bilješke u slobodnom obliku o temi.   
+> **Kategorija**: ovo je *Kategorija* povezana s *Opisom/Pitanjem* ako je preuzeto s *Kontrolne liste*.   
+> **Očekivana procjena**: ovo je minimalna *Razina ocjene* potrebna za ocjenu.   
+> **Težina (%)**: ovo označava *Težinu* (važnost), izraženu kao postotak, povezanu s *Opisom/Pitanjem* ako je preuzeto s *Kontrolne liste*.   
+> **Zabilježena procjena**: ovo je procijenjena *Razina ocjene*.   
+> Font postaje *crven* ako je *Otkrivena ocjena* niža od *Očekivane ocjene*.   
+> **Ocjena težine**: ovo je *Ocjena* koju sustav automatski dodjeljuje evaluaciji danoj određenom *Opisu/Pitanju* na temelju *Razine* *Otkrivene evaluacije*;
+> Ova se ocjena izračunava (Ocjena težine = Otkrivena Razina Evaluacije.Razina / 100 * Pitanje S Popisa Provjere.Postotak težine).
+> **Napomene**: bilješke u slobodnom obliku.
 
 
-:::tip Metodo utilizzato per il calcolo del Punteggio Peso   
-Per ogni singola *Descrizione/Domanda*, dove sono state inserite le informazioni di: *Peso (%)* e *Valutazione rilevata* viene applicata la seguente espressione:   
-- **Punteggio Peso** = **Livello** della **Valutazione rilevata** / **100** * **Peso (%)**;     
-- **Punteggio Peso** = **15** / **100** * **20** = **3**.   
+:::tip Metoda korištena za izračun ocjene težine   
+Za svaki *Opis/Pitanje*, gdje su uneseni podaci *Težina (%)* i *Otkrivena ocjena*, primjenjuje se sljedeći izraz:
+- **Ocjena težine** = **Razina** od **Zabilježena procjene** / **100** * **Težina (%)**;
+- **Ocjena težine** = **15** / **100** * **20** = **3**.
 :::
 
 
-### Extra data
+### Dodatni podaci
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Valutazione iniziale e periodica*.   
+ Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) generalno za *Početne i periodične procjene*.   
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
