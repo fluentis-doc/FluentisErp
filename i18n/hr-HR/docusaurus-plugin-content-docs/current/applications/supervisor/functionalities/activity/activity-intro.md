@@ -8,6 +8,6 @@ sidebar_position: 0
 
 Obrazac **Aktivnost** otvara se iz dopunskog izbornika **Alati** > **Fluentis Supervisor** > **Aktivnosti**.
 
-Neke od značajki unutar obrasca odnose se na standardnu ​​upotrebu. Za sve detalje o korištenju ovog obrasca koji nisu ovdje objašnjeni, pogledajte ova [artikl](/docs/guide/common).
+Neke od značajki unutar obrasca odnose se na standardnu ​​upotrebu. Za sve detalje o korištenju ovog obrasca koji nisu ovdje objašnjeni, pogledajte ova [članak](/docs/guide/common).
 
 *Aktivnosti* su organizirane u grupe (kao što su *Pomoćni Programi*, *Primjeri*, *Demo*) na temelju konteksta korištenja. Da biste stvorili novu grupu  *Aktivnosti* pogledajte članak [Stvaranje grupa](../../group-creation).
