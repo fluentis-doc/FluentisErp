@@ -3,79 +3,78 @@ title: Tipo Ticket
 sidebar_position: 1
 ---
 
-La tabella permette di definire le tipologie di ticket che potranno essere utilizzate in fase di inserimento di un nuovo ticket, andando a definire a priori alcune caratteristiche dei ticket che verranno registrati con tale tipologia.
-E' composta da una parte di filtro in cui si può ricercare attraverso il codice o la descrizione della tipologia e da una griglia in cui appunto verranno elencati tutte le tipologie inserite.
+Tablica omogućuje definiranje Tip tiketa koje će se moći koristiti prilikom unosa novog tiketa, postavljajući unaprijed određene karakteristike tiketa koji će biti registrirani s tom vrstom. Sastoji se od dijela za filtriranje u kojem se može pretraživati prema kodu ili opisu vrste tiketa te rešetke u kojoj su navedene sve unesene vrste. 
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante **Nuovo**: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si andranno a definire i seguenti parametri:
+U okviru ovog obrasca moguće je dodavati nove vrste tiketa u rešetku klikom na gumb **Novo**: Na taj način će se dodati nova linija u rešetku gdje će se definirati sljedeći parametri:
 
-**Codice**: è il codice del tipo ticket;
+**Kod**: ovo je kod vrste tiketa;
 
-**Descrizione**: è la descrizione del tipo ticket;
+**Opis**: ovo je opis vrste tiketa;
 
-**Numerazione**: è la numerazione del tipo ticket e fa riferimento alla tabella *Numerazione Tipo*;
+**Numeracija**: ovo je numeracija vrste tiketa i odnosi se na tablicu *Numeracija Vrsta*;
 
-**Tipo offerta**: contiene il [Tipo offerta](/docs/configurations/tables/sales/sales-offer-type) da creare con la procedura di *Creazione offerta da ticket*;
+**Tip ponude**: sadrži [Tip ponude](/docs/configurations/tables/sales/sales-offer-type) koji se predlaže za ovu vrstu tiketa; 
 
-**Classe e Codice Articolo**: 
+**Klasa i kod artikla**: 
 
-**Template ticket**: contiene il [Template](/docs/configurations/tables/crm/tickets/template-ticket) da proporre per questo Tipo ticket;   
+**Predložak ticketa**: sadrži [Predložak](/docs/configurations/tables/crm/tickets/template-ticket) koji se predlaže za ovu vrstu ticketa;   
 
 
-Flag per rendere i campi obbligatori
+Oznake za postavljanje obaveznih polja
 
-**Cliente**: se abilitato, indica l'obbligatorietà di valorizzare il campo Cliente nel ticket
+**Klijent**: ako je omogućeno, označava obaveznost popunjavanja polja Klijent u ticketu
 
-**Soggetto**: 
+**Predmet**: 
 
-**Soggetto di Riferimento**: se abilitato, indica l'obbligatorietà di valorizzare il campo soggetto di riferimento nel ticket
+**Referentni subjekt**: ako je omogućeno, označava obaveznost popunjavanja polja Referentni subjekt u ticketu
 
-**Email soggetto di Riferimento**: se abilitato, indica l'obbligatorietà di valorizzare il campo Email soggetto di riferimento nel ticket
+**Email referentnog subjekta**: ako je omogućeno, označava obaveznost popunjavanja polja Email referentnog subjekta u ticketu
 
-**Progetto**: se abilitato, indica l'obbligatorietà di valorizzare il campo Progetto nel ticket
+**Projekt**: ako je omogućeno, označava obaveznost popunjavanja polja Projekt u ticketu
  
-**Livello di servizio**: se abilitato, indica l'obbligatorietà di valorizzare il campo Livello di servizio nel ticket
+**Razina usluge**: ako je omogućeno, označava obaveznost popunjavanja polja Razina usluge u ticketu
 
-**Severità**: se abilitato, indica l'obbligatorietà di valorizzare il campo Severità nel ticket
+**Važnost**: ako je omogućeno, označava obaveznost popunjavanja polja Važnost u ticketu
 
-**Primo utente assegnato**: utente proposto di default 
+**Prvi dodijeljeni korisnik**: korisnik predložen po zadanim postavkama 
 
-Per ogni tipologia è possibile indicare uno o più **Stato Ticket** nella griglia sottostante. Questi stati possono essere diversi per ogni tipologia di Ticket e verranno proposti come Stati possibili nella creazione di un Nuovo ticket con questa tipologia.   
+Za svaku tipologiju moguće je navesti jedan ili više **Statusa ticketa** u donjoj tablici. Ti statusi mogu biti različiti za svaku vrstu ticketa i bit će predloženi kao mogući statusi pri kreiranju Novog ticketa s tom tipologijom.   
 
-Per ogni stato ticket è possibile definire i seguenti parametri:
+Za svaki status ticketa moguće je definirati sljedeće parametre:
 
-**Codice**: è il codice dello stato ticket;
+**Šifra**: šifra statusa ticketa;
 
-**Descrizione**: è la descrizione dello stato ticket;
+**Opis**: opis statusa ticketa;
 
-**Data fine**: è la data fine dello stato ticket;
+**Datum završetka**: datum završetka statusa ticketa;
 
-**Nota**: in questo campo è possibile aggiungere delle note aggiuntive al ticket.
+**Bilješka**: u ovom polju moguće je dodati dodatne bilješke na ticket.
 
 
-Per ogni tipologia è possibile indicare uno o più **Utenti** nella griglia sottostante. Questa configurazione è obbligatoria se si vuole abilitare tutte le tab gestibili nel ticket. Può essere configurata per singolo utente oppure per ruolo. 
+Za svaku tipologiju moguće je navesti jednog ili više **Korisnika** u donjoj tablici. Ova konfiguracija je obavezna ako se želi omogućiti sve kartice/sekcije koje se mogu upravljati u ticketu. Može se konfigurirati za pojedinog korisnika ili za ulogu. 
 
-**Ruolo**: indica il ruolo per cui è valida la configurazione impostata
+**Uloga**: označava ulogu za koju vrijedi postavljena konfiguracija
 
-**Utente** indicare in alternativa al ruolo, indica l'utente per cui è valida la configurazione impostata
+**Korisnik** kao alternativa ulozi, označava korisnika za kojeg vrijedi postavljena konfiguracija
 
-**Dettaglio ticket**: abilitare per rendere visibile la sezione/tab Dettaglio ticket nel ticket
+**Detalj ticketa**: omogućiti za prikaz sekcije/kartice Detalj ticketa u ticketu
 
-**Utenti** abilitare per rendere visibile la sezione/tab Utenti nel ticket
+**Korisnici** omogućiti za prikaz sekcije/kartice Korisnici u ticketu
 
-**Stima/Sforzo** abilitare per rendere visibile la sezione/tab Stima/Sforzo nel ticket
+**Procjena/Uloženi trud** omogućiti za prikaz sekcije/kartice Procjena/Uloženi trud u ticketu
 
-**Stima Commerciale** abilitare per rendere visibile la sezione/tab Stima Commerciale nel ticket
+**Komercijalna procjena** omogućiti za prikaz sekcije/kartice Komercijalna procjena u ticketu
 
-**Informazione chiusura** abilitare per rendere visibile la sezione/tab Informazione chiusura nel ticket
+**Informacije o zatvaranju** omogućiti za prikaz sekcije/kartice Informacije o zatvaranju u ticketu
 
-**Ticket collegati** abilitare per rendere visibile la sezione/tab Ticket collegati nel ticket
+**Povezani ticketi** omogućiti za prikaz sekcije/kartice Povezani ticketi u ticketu
 
-**Nota** abilitare per rendere visibile la sezione/tab Nota nel ticket
+**Bilješka** omogućiti za prikaz sekcije/kartice Bilješka u ticketu
 
-**Prodotto** abilitare per rendere visibile la sezione/tab Prodotto nel ticket
+**Proizvod** omogućiti za prikaz sekcije/kartice Proizvod u ticketu
 
-**Extra data** abilitare per rendere visibile la sezione/tab Extra data nel ticket
+**Extra data** omogućiti za prikaz sekcije/kartice Dodatni podaci u ticketu
  
-**Gestione documentale** abilitare per rendere visibile la sezione/tab Gestione documentale nel ticket
+**Upravljanje dokumentima** omogućiti za prikaz sekcije/kartice Upravljanje dokumentima u ticketu
 
-**Offerte** abilitare per rendere visibile la sezione/tab Offerte nel ticket
+**Ponude** omogućiti za prikaz sekcije/kartice Ponude u ticketu
