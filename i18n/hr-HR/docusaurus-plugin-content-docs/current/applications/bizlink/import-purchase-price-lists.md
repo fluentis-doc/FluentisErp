@@ -31,8 +31,8 @@ Proračunska tablica za uvoz sada je prikazana na zaslonu.
 
 Od ove točke možete krenuti različitim putevima:
 
- 1. Uvezite već kompiliranu proračunsku tablicu, **Datoteka > Open**.  
- 2. Dodajte različite stupce kopiranjem i lijepljenjem s popisa spremljenog na našem računalu.  
+ 1. Uvezite već popunjenu proračunsku tablicu, **Datoteka > Open**.  
+ 2. Dodajte različite stupce kopiranjem i lijepljenjem s popisa spremljenog na vašem računalu.  
  3. Spremite ovu datoteku (**Datoteka > Spremi**) na računalo, zatim dodajte različite podatke i zatim je ponovno uvezite u Fluentis (vidi točku 1). Ovo bi moglo biti vrlo korisno za prosljeđivanje predloška proračunske tablice za uvoz koji treba ispuniti za buduće cjenike koje će nam dobavljači slati.  
  4. Dodajte polja ručno.  
 
