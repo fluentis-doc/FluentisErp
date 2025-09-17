@@ -4,15 +4,15 @@ sidebar_label: Kartica Komponente
 sidebar_position: 1
 ---
 
-:::info Nota
-Una volta aperta la form di dettaglio della *Lista di Distrubuzione*, nella parte superiore sono presenti alcuni parametri standard come *Codice*, *Nome*, *Descrizione*, *Data Crazione*, *Data Ultima Modifica*, *Utente di Creazione*, *Utente di Modifica* e *Lista di Distribuzione Collegata* (quest'ultimo, si riferisce alle liste CRM).
+:::info Napomena
+Nakon što se otvori obrazac za detalje *Liste distribucije*, u gornjem dijelu nalaze se neki standardni parametri kao što su *Šifra*, *Naziv*, *Opis*, *Datum kreiranja*, *Datum zadnje izmjene*, *Korisnik koji je kreirao*, *Korisnik koji je izmijenio* i *Povezana lista distribucije* (posljednji se odnosi na CRM liste).
 :::
-In questo tab possono essere definite delle liste di distribuzione composte dai seguenti parametri:
-- codice;
-- descrizione;
-- data di creazione;
-- data di ultima modifica.
+U ovom tabu moguće je definirati liste distribucije sastavljene od sljedećih parametara:
+- šifra;
+- opis;
+- datum kreiranja;
+- datum zadnje izmjene.
 
-Inoltre, espandendo tramite l'icona **'+'** è possibile definire i contatti che compongono la lista di distribuzione.
+Nadalje, proširivanjem preko ikone **'+'** moguće je definirati kontakte koji čine listu distribucije.
 
 ![alt text](/img/it-it/applications/supervisor/supervisor17.png)
