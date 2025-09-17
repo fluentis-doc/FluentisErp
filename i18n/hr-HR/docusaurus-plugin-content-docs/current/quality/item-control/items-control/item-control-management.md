@@ -3,35 +3,35 @@ title: Kontrola artikala
 sidebar_position: 3
 ---
 
-La gestione è possibile eseguirla dalla **Ricerca Controlli articolo**.   
+Upravljanje je moguće izvršiti iz **Pretraživanja kontrole artikala**.      
 
 
-:::important A cosa serve
-I Controlli articolo permettono la registrazione delle misurazioni effettuate, dei valori rilevati e la conseguente indicazione della conformità o meno del materiale, semilavorato o prodotto controllato.   
-Elenchiamo i documenti dai quali è possibile effettuare dei controlli sugli articolo: Ricevimenti merce, D.D.T. e Fatture di acquisto, Dichiarazioni di produzione, Fasi ordini di produzione, Rientri da Conto lavoro e Movimentazioni di carico.   
-I controlli possono essere specifici per: Lotto articolo, Serial number o per Unità di carico.   
-Tramite la soluzione M.E.S., integrata in Fluentis, è possibile inserire le suddette informazioni richieste in modo diretto e semplificato.   
+:::important Čemu služi
+Kontrole artikala omogućuju bilježenje izvršenih mjerenja, utvrđenih vrijednosti i posljedično navođenje sukladnosti ili nesukladnosti kontroliranog materijala, poluproizvoda ili proizvoda.   
+Dokumenti iz kojih je moguće provoditi kontrole nad artiklima: Prijem robe, Primke i Ulazni računi, Izjave o proizvodnji, Faze izrada narudžbe, Povrat od podizvođača i Kretanja zaliha.   
+Kontrole mogu biti specifične za: Lot artikla, Serijski broj ili Jedinicu utovara.   
+Putem M.E.S. rješenja, integriranog u Fluentis, moguće je unositi navedene tražene informacije na izravan i pojednostavljen način.   
 
-A standard sono disponibili le reportistiche di:   
-> **Elenco Controlli articolo per Articolo**:  elenco dei *Controlli articolo* raggruppati per: *Articolo*.   
-> **Elenco Controlli articolo per Cliente/Fornitore**:  elenco dei *Controlli articolo* raggruppati per: *Cliente/Fornitore*.   
-> **Elenco Controlli articolo per Tipo documento**:  elenco dei *Controlli articolo* raggruppati per: *Tipo documento*.   
-> **Etichetta Articolo C e NC**: etichetta che riporta i riferimenti *Articolo* e dettaglio *Lotto* o *Serial number* controllato.   
+Standardno su dostupna izvješća o:   
+> **Popisu kontrola artikla po artiklu**: popis *Kontrola artikla* grupiranih po: *Artiklu*.   
+> **Popisu kontrola artikla po kupcu/dobavljaču**: popis *Kontrola artikla* grupiranih po: *Kupcu/Dobavljaču*.   
+> **Popisu kontrola artikla po vrsti dokumenta**: popis *Kontrola artikla* grupiranih po: *Vrsti dokumenta*.   
+> **Naljepnici artikla C i NC**: naljepnica koja prikazuje reference *Artikla* i detalje kontroliranog *Lota* ili *Serijskog broja*.   
 :::
 
 
-## Pulsanti di comando
+## Tipke za upravljanje
 
 
-### ![](/img/neutral/common/save.png) Salva
+### ![](/img/neutral/common/save.png) Spremi
 
-Premendo questo pulsante si memorizzano tutte le informazioni modificate dei *Controlli articolo* visualizzati.   
+Pritiskom na ovu tipku pohranjuju se sve izmijenjene informacije *Kontrola artikla* koje su prikazane.   
 
-### ![](/img/neutral/common/tick.png) Ricerca Piano di controllo
+### ![](/img/neutral/common/tick.png) Pretraživanje kontrole artikala
 
-Premendo questo pulsante si ricerca il *Piano di controllo* da associare ai *Controlli articolo* selezionati. Se, per il *Controllo articolo* esaminato:
-- sono presenti delle *Prove* con dei valori già rilevati per quei *Controlli* non verrà fatta alcuna ricerca;   
-- tutte le *Prove* non sono state ancora rilevate, le *Prove* verranno sostituite con quelle associate al *Piano di controllo* trovato nella ricerca.
+Pritiskom na ovu tipku pretražuje se *Kontrolni plan* za povezivanje s odabranim *Kontrolama artikla*. Ako za ispitivani *Kontrolni artikal*:   
+- postoje *Testovi* s već utvrđenim vrijednostima za te *Kontrole*, neće se provesti nikakvo pretraživanje;   
+- svi *Testovi* još nisu utvrđeni, *Testovi* će biti zamijenjeni onima povezanim s *Kontrolnim planom* pronađenim u pretraživanju.   
 
 import ControlPlanSearchMethod from './../../../import/procedure/control-plan-search-method.md'
 
