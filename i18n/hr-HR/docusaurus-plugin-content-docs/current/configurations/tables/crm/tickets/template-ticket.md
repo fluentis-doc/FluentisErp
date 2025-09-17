@@ -1,13 +1,13 @@
 ---
-title: Template Ticket
+title: Predložak tiketa
 sidebar_position: 4
 ---
 
-In questa tabella è possibile inserire dei diversi Template da proporre quando viene inserito un [Nuovo ticket](/docs/crm/helpdesk/tickets). I template per essere proposti devono essere inseriti nel Tipo ticket. I dati di questa maschera sono i seguenti.        
-**Codice/Descrizione**: contiene un codice e una descrizione per questo Template;         
-**Descrizione dell'offerta**: contiene una Descrizione da proporre nell'omonimo campo del Ticket, tab Stima;      
-**Descrizione testata**: contiene una Descrizione da proporre nell'omonimo campo del Ticket, tab Stima;      
-**Descrizione piè di pagina**: contiene una Descrizione da proporre nell'omonimo campo del Ticket, tab Stima;      
-**Offerta dettagliata**: se presente, il Ticket nascerà con questo flag, altrimenti no, nel tab Stima;       
-**Classe/Codice/Descrizione**: contiene l'articolo (servizio) da proporre  e fatturare quando viene creato un ticket con questa tipologia; l'articolo viene proposto nel tab *Stima/Sforzo* e *Stima commerciale*;        
-Successivamente è possibile, con diversi flag, decidere l'obbligatorietà o meno di diversi campi. L'obbligatorietà sarà presente in sede di creazione nuovo Ticket con questo template.    
+U ovoj tablici moguće je unijeti različite predloške koje će se predložiti prilikom unosa [Novog tiketa](/docs/crm/helpdesk/tickets). Predlošci moraju biti uneseni za ovu vrstu tiketa. Podaci u ovom obrascu su sljedeći:         
+**Kod/Opis**: sadrži kôd i opis za ovaj predložak;          
+**Opis ponude**: sadrži opis koji će se predložiti u istoimenom polju Tiketa, kartica Procjena;       
+**Opis zaglavlja**: sadrži opis koji će se predložiti u istoimenom polju Tiketa, kartica Procjena;      
+**Opis podnožja stranice**: sadrži opis koji će se predložiti u istoimenom polju Tiketa, kartica Procjena;      
+**Detaljna ponuda**: ako je označeno, Tiket će biti stvoren s ovom oznakom, inače ne, na kartici Procjena;       
+**Klasa/Kod/Opis**: sadrži stavku (uslugu) koja će se predložiti za naplatu prilikom stvaranja tiketa s ovom vrstom; stavka se predlaže na karticama *Procjena/Efort* i *Komercijalna procjena*; 
+Nakon toga, moguće je odlučiti o obveznosti različitih polja putem različitih oznaka. Obveznost će biti prisutna prilikom stvaranja novog Tiketa s ovim predloškom.   
