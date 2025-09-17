@@ -45,7 +45,7 @@
   },
   "link.item.label.Integration": {
     "message": "Integration",
-    "description": "The label of footer link with label=Integration linking to https://docs.fluentis.com/Integration/docs/webApi/getting-started"
+    "description": "The label of footer link with label=Integration linking to https://docs.fluentis.com/Integration/"
   },
   "link.item.label.Training": {
     "message": "Training",

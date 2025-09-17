@@ -1338,5 +1338,37 @@
   "sidebar.releaseNotes.category.Versione 707": {
     "message": "Versiune 707",
     "description": "The label for category Versione 707 in sidebar releaseNotes"
+  },
+  "sidebar.planning.category.Gannts e istogrammi F.C.S.": {
+    "message": "Diagrame Gantt și histograme F.C.S.",
+    "description": "The label for category Gannts e istogrammi F.C.S. in sidebar planning"
+  },
+  "sidebar.purchase.category.Richieste di offerta": {
+    "message": "Cereri de ofertă",
+    "description": "The label for category Richieste di offerta in sidebar purchase"
+  },
+  "sidebar.sales.category.Documenti SDI e NSO": {
+    "message": "Documente SDI și NSO",
+    "description": "The label for category Documenti SDI e NSO in sidebar sales"
+  },
+  "sidebar.sales.category.Documenti SDI": {
+    "message": "Documente SDI",
+    "description": "The label for category Documenti SDI in sidebar sales"
+  },
+  "sidebar.sales.category.Documenti NSO": {
+    "message": "Documente NSO",
+    "description": "The label for category Documenti NSO in sidebar sales"
+  },
+  "sidebar.subcontractor.category.Rientri": {
+    "message": "Reintrări",
+    "description": "The label for category Rientri in sidebar subcontractor"
+  },
+  "sidebar.configurations.category.Tabelle F.C.S.": {
+    "message": "Tabele F.C.S.",
+    "description": "The label for category Tabelle F.C.S. in sidebar configurations"
+  },
+  "sidebar.applications.category.Database": {
+    "message": "Database",
+    "description": "The label for category Database in sidebar applications"
   }
 }

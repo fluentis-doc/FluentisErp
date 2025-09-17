@@ -593,7 +593,7 @@
     "description": "The unlisted content banner message"
   },
   "Anagrafiche/Impostazioni": {
-    "message": "Registre/Sertări"
+    "message": "Registre/Setări"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
     "message": "1 item|{count} items",
@@ -634,7 +634,7 @@
     "message": "Newsletter"
   },
   "Campagne marketing": {
-    "message": "Campagne marketing"
+    "message": "Campanii marketing"
   },
   "Previsioni di vendita": {
     "message": "Previziuni de vânzare"
@@ -648,16 +648,20 @@
   "Spedizioni": {
     "message": "Transport"
   },
-  "siteConfig.title":{
-     "message":"Fluentis ERP Documentation",
-     "description":"Homepage title"
+  "siteConfig.title": {
+    "message": "Fluentis ERP Documentation"
   },
-  "siteConfig.tagline":{
-     "message":"Documentația creată pentru a vă oferi suport la utilizarea suitei Fluentis ERP",
-     "description":"Homepage subtitle"
+  "siteConfig.tagline": {
+    "message": "Documentația creată pentru a vă oferi suport la utilizarea suitei Fluentis ERP"
   },
-  "siteConfig.introductionButton":{
-     "message":"Introducere",
-     "description":"Label for the introduction button on the homepage"
+  "siteConfig.introductionButton": {
+    "message": "Introducere"
+  },
+  "Budget": {
+    "message": "Budget"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
   }
 }
