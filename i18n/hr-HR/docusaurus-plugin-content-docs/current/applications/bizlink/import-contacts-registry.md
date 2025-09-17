@@ -5,7 +5,7 @@ sidebar_position: 1
 
 
 
-U ovom članku bit će objašnjeno kako **uvesti kontakte** (klijente ili dobavljače)  u **Fluentis** putem korištenja **proračunske tablice**.
+U ovom članku bit će objašnjeno kako **uvesti kontakte** (kupce ili dobavljače)  u **Fluentis** putem korištenja **proračunske tablice**.
 
 Ovaj uvoz je moguć zahvaljujući korištenju **BizLink Parameters** jer će svaki put kada se procesira redak, oni biti pozvani.
 
@@ -16,7 +16,7 @@ Kliknite na **Alati** (obično se nalazi na desnoj strani Fluentisa).
 
 Kliknite na odjeljak **BizLink**
 
-Kliknite na **Uvoz na zahtjev > Šifarnik> Uvoz klijenata/dobavljača** kao što je prikazano na slici ispod.  
+Kliknite na **Uvoz na zahtjev > Šifarnik> Uvoz kupca/dobavljača** kao što je prikazano na slici ispod.  
 
 ![](/img/it-it/applications/bizlink/import-contacts-registry/image03.png) 
 
@@ -83,7 +83,7 @@ Opće smjernice:
 
 -        Opis: referentni kod kupca/dobavljača  
 
-*Primjer*: TEGOL
+*Primjer*: TVTK
 
 -         Tablica/mapping stupac: select MBAN_Nomignolo from MB_Anagr
 
@@ -99,7 +99,7 @@ Naziv tvrtke:
 
 -        Opis: naziv tvrtke kupca/dobavljača  
 
-*Primjer*: TEGOLA CANADESE spa
+*Primjer*: TVRTKA d.o.o.
 
 -         Tablica/mapping stupac: select MBAN_RagSoc from MB_Anagr
 
@@ -115,11 +115,11 @@ Kupac/Dobavljač:
 
 -        Opis: Označava da li unosimo kupca ili dobavljača. Dvije oznake koje predstavljaju kupca i dobavljača specificirane su u parametrima.
 
-*Primjer*: “C” odgovara dobavljaču, ”F” odgovara kupcu
+*Primjer*: “D” odgovara dobavljaču, ”k” odgovara kupcu
 
 **Pažnja**: jedini način za unos kontakta koji je i kupac i dobavljač je da ga prvo unesete kao kupca, a zatim kao dobavljača.
 
-Račun:
+Konto:
 
 -        Polje: nije obvezno
 
@@ -127,11 +127,11 @@ Račun:
 
 -        Opis: račun dobavljača, glavna knjiga dobavljača
 
-*Primjer*: “15200” codgovara Kupcima Italije
+*Primjer*: “1200” codgovara Kupcima iz Hrvatske
 
 -         Tablica/mapping stupac: select MBPC_Conto from MB_PiaCon
 
-Podračun:
+Podkonto:
 
 -        Polje: nije obvezno
 
@@ -139,7 +139,7 @@ Podračun:
 
 -        Opis: podračun dobavljača, malo glavne knjige dobavljača  
 
-*Primjer*: ako se prenesu računi s praznim sustavom, može se koristiti kodiranje poput 01; 02; 03 oppure 001; 002; 003
+*Primjer*: ako se prenesu konta s praznim sustavom, može se koristiti kodiranje poput 01; 02; 03 ili 001; 002; 003
 
 -         Tablica/mapping stupac: select BPC_SottoConto from MB_PiaCon
 
@@ -169,7 +169,7 @@ Adresa:
 
 -        Opis: adresa sjedišta kupca/dobavljača  
 
-*Primjer*: Ulica Bez prsti sa tastature 7 
+*Primjer*: Ulica bb 
 
 -         Tablica/mapping stupac: select MBAN_Indirizzo from MB_Anagr
 
@@ -185,7 +185,7 @@ Općina:
 
 -        Opis: grad sjedišta kupca/dobavljača
 
-*Primjer*: Cordignano
+*Primjer*: Rijeka
 
 -         Tablica/mapping stupac: select MBAN_Comune from MB_Anagr
 
@@ -201,7 +201,7 @@ Poštanski broj:
 
 -        Opis: poštanski broj sjedišta kupca/dobavljača
 
-*Primjer*: 31016
+*Primjer*: 51000
 
 -         Tablica/mapping stupac: select MBAN_CAP from MB_Anagr
 
@@ -217,7 +217,7 @@ Poštanski broj:
 
 -        Opis: županija sjedišta kupca/dobavljača  
 
-*Primjer*: “TV” odgovara Trevisu
+*Primjer*: “8” odgovara Primorsko-goranskoj
 
 -         Tablica/mapping stupac: select MBAN_Provincia from MB_Anagr
 
@@ -233,7 +233,7 @@ Država:
 
 -        Opis: država sjedišta kupca/dobavljača
 
-*Primjer*: “IT” odgovara Italiji
+*Primjer*: “HR” odgovara Hrvatskoj
 
 -         Tablica/mapping stupac: select MBNZ_CodIso from MB_Nazioni
 
@@ -249,7 +249,7 @@ Jezik:
 
 -        Opis: jezik koji koristi kupac/dobavljač
 
-*Primjer*: “IT” odgovara talijanskom  
+*Primjer*: “HR” odgovara hrvatskom  
 
 -         Tablica/mapping stupac: select MBAN_RagSoc from MB_Anagr
 
@@ -265,7 +265,7 @@ Telefon:
 
 -        Opis: telefon kupca/dobavljača
 
-*Primjer*: 0438-123456
+*Primjer*: 051-999999
 
 -         Tablica/mapping stupac: select MBAN_Telefono from MB_Anagr
 
@@ -281,7 +281,7 @@ E-mail:
 
 -        Opis: glavna e-mail adresa kupca/dobavljača
 
-*Primjer*: info@mycompany.com
+*Primjer*: info@tvrtka.com
 
 -         Tablica/mapping stupac: select MBAN_Email from MB_Anagr
 
@@ -297,7 +297,7 @@ Napomena:
 
 -        Opis: dodatne napomene
 
-*Primjer*:
+*Primjer*: Ovo je napomena.
 
 -         Tablica/mapping stupac: select MBAN_Note from MB_Anagr
 
@@ -318,7 +318,7 @@ Porezni broj:
 -        Opis: porezni identifikacijski broj kupca/dobavljača
 
 
-*Primjer*: IT01720550936
+*Primjer*: HR29907997990
 
 -         Tablica/mapping stupac: select MBAN_CodFiscale from MB_Anagr
 
@@ -334,7 +334,7 @@ ISO šifra:
 
 -        Opis:
 
-*Primjer*: “IT” odgovara Italiji
+*Primjer*: “HR” odgovara Hrvatskoj
 
 -        Tablica/mapping stupac: select MBAN_CodIso from MB_Anagr
 
@@ -351,7 +351,7 @@ OIB broj:
 -        Opis: porezni identifikacijski broj kupca/dobavljača
 
 
-*Primjer*: 28207227700
+*Primjer*: 29907997990
 
 -         Tablica/mapping stupac: select MBAN_PartitaIva from MB_Anagr
 
@@ -372,7 +372,7 @@ Tip plaćanja:
 -        Opis: vrsta plaćanja koju koristi kupac/dobavljač
 
 
-*Primjer*: “04” odgovara bankovnom transferu
+*Primjer*: “T” odgovara bankovnom transferu
 
 -        Tablica/mapping stupac: select MBTP_Pagamento from MB_TipoPag
 
@@ -435,7 +435,7 @@ IBAN:
 identifikaciju zemlje, banke i broja tekućeg računa.
 
 
-*Primjer*: IT66C010050338 2000000218020     
+*Primjer*: HR2223600007701277167     
 
 SWIFT:
 
@@ -464,7 +464,7 @@ Zona:
 
 -        Opis: Zona definirana na početku IBAN-a
 
-*Primjer*: “IT” Odgovara Italiji  
+*Primjer*: “HR” Odgovara Hrvatskoj  
   
  ![](/img/it-it/applications/bizlink/import-contacts-registry/image08.png)
 
@@ -569,7 +569,7 @@ Jezik:
 
 -        Opis: ISO kod jezika  
 
-*Primjer*: “it-IT” predstavlja talijanski jezik, “en-US predstavlja engleski jezik u Americi.
+*Primjer*: “it-IT” predstavlja talijanski jezik, “hr-HR predstavlja hrvatski jezik.
 
 Tvrtka:
 
@@ -592,7 +592,7 @@ Odjel:
 
 -        Opis: Kao i za tvrtku, prethodno je popunjeno
 
-*Primjer*: “1” odgovara glavnom sjedištu, “2” sjedištu u Milanu  
+*Primjer*: “1” odgovara glavnom sjedištu, “2” sjedištu u Zagrebu  
 
 -         Tablica/mapping stupac: select MBDP_Code from MB_Dep
 
@@ -602,9 +602,9 @@ Identifikacijski broj klijenta:
 
 -        Tip: niz znakova
 
--        Opis: Bilo koje slovo koje unesemo u parametre koji će se zatim odnositi na polje klijenta/dobavljača. Radi jednostavnosti, preporučuje se “C”
+-        Opis: Bilo koje slovo koje unesemo u parametre koji će se zatim odnositi na polje kupca/dobavljača. Radi jednostavnosti, preporučuje se “K”
 
-*Primjer*: “C” odgovara klijentima
+*Primjer*: “K” odgovara kupcima
 
 Identifikacijski broj dobavljača:
 
@@ -612,29 +612,29 @@ Identifikacijski broj dobavljača:
 
 -        Tip: niz znakova
 
--        Opis: Bilo koje slovo koje unesemo u parametre koji će se zatim odnositi na polje klijenta/dobavljača. Radi jednostavnosti, preporučuje se “F”
+-        Opis: Bilo koje slovo koje unesemo u parametre koji će se zatim odnositi na polje klijenta/dobavljača. Radi jednostavnosti, preporučuje se “D”
 
-*Primjer*: “F” odgovara dobavljačima
+*Primjer*: “D” odgovara dobavljačima
 
-Kod vrste računa za klijente:
-
--        Polje: obavezno
-
--        Tip: niz znakova
-
--        Opis: Glavni račun u odnosu na klijente. Da biste ga vidjeli i iz Fluentisa, idite na **Početna > Parametri > Administracija > Računovodstveni parametri**. Dvaput kliknite na trenutnu godinu, a zatim desno biste trebali vidjeti “Vrsta računa”
-
-*Primjer*: “FIT” odgovara klijentima u Italiji
-
-Kod vrste računa za dobavljače:
+Kod tipa konta za kupce:
 
 -        Polje: obavezno
 
 -        Tip: niz znakova
 
--        Opis: Glavni račun u odnosu na dobavljače. Da biste ga vidjeli i iz Fluentisa, idite na **Početna stranica > Parametri > Administracija > Računovodstveni parametri**. Dvaput kliknite na trenutnu godinu, a zatim desno biste trebali vidjeti “Vrsta računa”
+-        Opis: Glavni konto u odnosu na kupce. Da biste ga vidjeli i iz Fluentisa, idite na **Početna > Parametri > Administracija > Računovodstveni parametri**. Dvaput kliknite na trenutnu godinu, a zatim desno biste trebali vidjeti “Tip konta”
 
-*Primjer*: “CIT” odgovara dobavljačima u Italiji  
+*Primjer*: “KHR” odgovara kupcima u Hrvatskoj
+
+Kod tipa konta za dobavljače:
+
+-        Polje: obavezno
+
+-        Tip: niz znakova
+
+-        Opis: Glavni konto u odnosu na dobavljače. Da biste ga vidjeli i iz Fluentisa, idite na **Početna stranica > Parametri > Administracija > Računovodstveni parametri**. Dvaput kliknite na trenutnu godinu, a zatim desno biste trebali vidjeti “Tip konta”
+
+*Primjer*: “DHR” odgovara dobavljačima u Hrvatskoj  
 
 Grupa klijenata:
 
@@ -644,7 +644,7 @@ Grupa klijenata:
 
 -        Opis: Možete vidjeti kodove iz Home **Početna > Računovodstvo > Kontni plan**, na prvoj kartici prikaza nalazi se kod grupe.
 
-*Primjer*: “1520” odgovara klijentima u Italiji
+*Primjer*: “1200” odgovara lupcima u Hrvatskoj
 
 -        Tablica/mapping stupac: select MBGR_Gruppo from MB_GRUPP
 
@@ -656,7 +656,7 @@ Grupa dobavljača:
 
 -        Opis: Možete vidjeti kodove prisutne od **Početna stranica > Računovodstvo > Kontni plan**, u prvom prikazu postoji kod grupe.
 
-*Primjer*: “2506” odgovara Dobavljačima Italije
+*Primjer*: “2200” odgovara Dobavljačima u Hrvatskoj
 
 -        Tablica/mapping stupac: select MBGR_Gruppo from MB_GRUPPI
 
@@ -669,7 +669,7 @@ Grupa dobavljača:
 -        Opis: Predstavlja kategoriju primijenjenog 
 popusta na cjenik
 
-*Primjer*: “C1” odgovara kaskadnom popustu
+*Primjer*: “10” odgovara kaskadnom popustu
 
 -        Tablica/mapping stupac: select MBST_TipSco from MB_Sconti
 
@@ -682,7 +682,7 @@ popusta na cjenik
 -        Opis: Predstavlja kategoriju primijenjenog 
 popusta na cjenik
 
-*Primjer*: “3” odgovara komercijalnom popustu
+*Primjer*: “20” odgovara komercijalnom popustu
 
 -        Tablica/mapping stupac: select MBST_TipSco from MB_Sconti
 
@@ -698,7 +698,7 @@ Nakon što unesete podatke, za pokretanje uvoza kliknite na gumb u izborniku uvo
 
 ### Zaključci-Uspješan unos
 
-Ako sve prođe bez problema, neće se pojaviti nikakva poruka o pogrešci. Za dodatnu provjeru uspješnosti, provjerite u kartici članaka (**Početna stranica > Artikli**) jesu li uvezeni članci od dobavljača prisutni. Inače, na zaslonu će se pojaviti poruka o pogrešci koja će pokazati koje su postavke i/ili polja neispravni. Za tumačenje vrste pogreške pogledajte Korisne savjete i upozorenja u posljednjem odlomku.
+Ako sve prođe bez problema, neće se pojaviti nikakva poruka o pogrešci. Za dodatnu provjeru uspješnosti, provjerite u kartici artikala (**Početna stranica > Artikli**) jesu li uvezeni artikli od dobavljača prisutni. Inače, na zaslonu će se pojaviti poruka o pogrešci koja će pokazati koje su postavke i/ili polja neispravni. Za tumačenje vrste pogreške pogledajte Korisne savjete i upozorenja u posljednjem odlomku.
 
 
 
@@ -708,7 +708,7 @@ Ako sve prođe bez problema, neće se pojaviti nikakva poruka o pogrešci. Za do
 
 **Preporučena Excel formatiranja**:
 
--        Za ispravan uvoz, snažno se preporučuje formatiranje stupaca prema tipu navedenom pod "Formattazione Excel" za svako polje. Na primjer, ako je tip polja decimalan i u tom polju treba unijeti valutu, formatirajte polje kao valutu. To je zato što će, primjerice, ako se ćelija ne formatira, Excel ukloniti nevažne znamenke. Za unos formatiranja slijedite sljedeće korake:
+-        Za ispravan uvoz, preporučuje se formatiranje stupaca prema tipu navedenom pod "Formatiranje Excel" za svako polje. Na primjer, ako je tip polja decimalan i u tom polju treba unijeti valutu, formatirajte polje kao valutu. To je zato što će, primjerice, ako se ćelija ne formatira, Excel ukloniti nevažne znamenke. Za unos formatiranja slijedite sljedeće korake:
 
 Prvo odaberite željeni stupac kao što je prikazano na slici ispod:
 
@@ -724,11 +724,11 @@ Odaberite lijevim klikom  **> Oblikuj ćelije**…
 
 Na ovom se zaslonu može formatirati odabrani stupac. Na temelju uputa navedenih u "Unos polja" odaberite odgovarajuću kategoriju, s pripadajućim specifikacijama (npr. valuta, simbol nijedan). Istu stvar moguće je učiniti i iz elektroničke tablice unutar Fluentisa.
 
-**Pažnja:** Klasičan slučaj odnosi se na kodove koji sadrže nule, navodno neznačajne, npr. “001”. Ako je polje formatirano kao generičko ili numeričko, nule bi bile odbačene; ako je formatirano kao niz, nule bi se zadržale.
+**Pažnja:** Klasičan slučaj odnosi se na kodove koji sadrže nule, npr. “001”. Ako je polje formatirano kao generičko ili numeričko, nule bi bile odbačene; ako je formatirano kao niz, nule bi se zadržale.
 
 **Tablica/mapping stupac**:
 
--        Ako postoji unos  “Unos polja” ", to znači da unesena vrijednost u polje za uvoz već može biti prisutna u bazi podataka. Također je unesena i u polja koja će biti unesena iz početka kako bismo možda vidjeli primjer, ako postoji, u bazi podataka. Za pregled povezanih podataka prisutnih u bazi podataka dovoljno je slijediti ove korake, koristeći kao primjer klasu artikala i pripadno mapiranje:
+-        Ako je u "Unosu polja" prisutna stavka mapping tablica/stupac, to znači da vrijednost unesena unutar polja za uvoz može već biti prisutna u bazi podataka. Uključena je i u polja koja će biti unesena ispočetka kako bi se eventualno mogao vidjeti primjer, ako postoji, u bazi podataka. Za prikaz relevantnih podataka prisutnih u bazi podataka, dovoljno je slijediti sljedeće korake, pri čemu će kao primjer biti korištena klasa artikli i odgovarajući mapping:
 
 select MBDC_Classe from MB_Classi (**\<-** ovo je mapiranje). Izvršite upit u “Microsoft SQL server management studio” i dobijte sljedeći rezultat:
 
@@ -742,7 +742,7 @@ Ovo je korisno jer, kao što je prikazano na slici, putem opisa (MBDC_Descr) mog
 
 Ovaj opisani postupak je univerzalan, odnosno vrijedi za svako polje.
 
-Istu reprezentaciju moguće je vidjeti i u Fluentisu:
+Isto je moguće vidjeti i u Fluentisu:
 
 S početne stranice Fluentisa odaberite **Artikli > Artikli dobavljača** (vidi sliku ispod).
 

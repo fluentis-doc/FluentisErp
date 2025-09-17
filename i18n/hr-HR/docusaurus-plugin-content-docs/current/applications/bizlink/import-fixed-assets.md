@@ -16,9 +16,9 @@ Excel datoteka (predložak) za uvoz imovine u Administrativnom modulu omogućuje
 
 **Datum nabave:** obavezno, datum je učitavanja povijesnih troškova;
 
-**Broj dokumenta / Datum računa o nabavi:** neobavezno, korisno za navođenje reference na račun o kupovini;
+**Broj dokumenta / Datum računa o nabavi:** neobavezno, korisno za navođenje reference na ulaznom računu;
 
-**Dobavljač kupnje:** neobavezno, koristi se za popunjavanje polja dobavljača dobra na kartici imovine, ispuniti s nazivom dobavljača u anketi dobavljača;
+**Dobavljač:** neobavezno, koristi se za popunjavanje polja dobavljača dobra na kartici imovine, ispuniti s nazivom dobavljača u anketi dobavljača;
 
 **Ukupna vrijednost sredstva:** to je povijesni trošak imovine učitan s datumom u stupcu Datum nabave;
 

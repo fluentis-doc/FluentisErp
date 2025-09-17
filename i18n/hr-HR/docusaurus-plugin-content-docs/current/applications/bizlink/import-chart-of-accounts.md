@@ -3,16 +3,16 @@ title: Uvoz Kontnog plana
 sidebar_position: 2
 ---
 
-Excel datoteka (predložak) za uvoz plana računa u Administrativni modul omogućuje popunjavanje detaljnog dijela plana računa.
+Excel datoteka (predložak) za uvoz kontnog plana u Administrativni modul omogućuje popunjavanje detaljnog dijela kontnog plana.
 
-**Stoga, u gornjem mrežnom dijelu obrasca plana računa već mora biti prisutan dio strukture (grupe).**
+**Stoga, u gornjem mrežnom dijelu obrasca kontnog plana već mora biti prisutan dio strukture (grupe).**
 
-**Stupci Grupa Razina (1, 2, 3, 4, 5):** u ovim stupcima navedite kodove različitih razina i podrazina (mogućih do pete razine) gdje treba smjestiti račune koje želite uvesti.
+**Stupci Grupa Razina (1, 2, 3, 4, 5):** u ovim stupcima navedite kodove različitih razina i podrazina (mogućih do pete razine) gdje treba smjestiti konta koje želite uvesti.
 
 PAŽNJA: Traže se već postojeće grupe, uvoz ne stvara nove grupe.
 
-**Račun / Podračun / Opis:** unesite kod računa i podračuna te opis koji želite uvesti (u ovom slučaju račun / podračun će biti stvoren s unesenim kodom).
+**Konto / Podkonto / Opis:** unesite kod konta i podkonta te opis koji želite uvesti (u ovom slučaju konto / podkonto će biti stvoren s unesenim kodom).
 
-**Opis 2:** moguće je također ispuniti drugi opis (neobavezno) za novi račun.
+**Opis 2:** moguće je također ispuniti drugi opis (neobavezno) za novi konto.
 
-**Vrsta računa:** popunite kodom jedne od vrsta računa već prisutnih u Fluentisu kako biste je dodijelili novom računu koji se stvara.
+**Tip konta:** popunite jednim od tipa konta već prisutnih u Fluentisu kako biste ga dodijelili novom kontu koji se stvara.
