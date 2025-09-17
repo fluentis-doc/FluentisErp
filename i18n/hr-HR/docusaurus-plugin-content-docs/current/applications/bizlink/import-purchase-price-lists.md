@@ -146,7 +146,7 @@ Interni opis:
 
 -        Opis: ako nije dodijeljen, uzima se onaj dobavljača
 
-*Primjer*: teniska loptica osjetljiva na vrtnju
+*Primjer*: teniska loptica
 
 Jedinica mjere:
 
@@ -176,7 +176,7 @@ PDV:
 
 -        Opis: šifra koja se odnosi na mjerenje koje se koristi za dotičnu stavku
 
-*Primjer*: “22” Primjer odgovara 22% PDV-a, “944” Oslobođeno čl. 40 c. 4 bis DL 331
+*Primjer*: “22” Primjer odgovara 22% PDV-a, “N” Ne podliježe oporezivanju PDV-om prema čl. 13. st. 10. Zakona o PDV-u
 
 -        Mapiranje tablice/stupca: select MBIV_Code from MB_iva
 
@@ -341,9 +341,9 @@ UM cijena:
 
 -        Tipo: decimale
 
--        Formattazione Excel: numero, posizione decimali = 2
+-        Excel formatiranje: broj, decimalno mjesto = 2
 
--        Lunghezza massima: /
+-        Maksimalna duljina: /
 
 -        Opis: dodatna vrijednost koja se može koristiti pri izradi prodajnih cjenika iz nabavnih cjenika. Na primjer, ako postoje troškovi prijevoza (koje moramo platiti dobavljaču), oni su ovdje prijavljeni da bi se zatim koristili u izračunu prodajne cijene tog artikla.
 
@@ -358,7 +358,7 @@ UM cijena:
 
 -        Excel formatiranje: broj, decimalno mjesto = 2
 
--        Lunghezza massima: /
+-        Maksimalna duljina: /
 
 -        Opis: dodatni postotak koji se može koristiti pri izradi prodajnih cjenika iz nabavnih cjenika
 Primjer: 10
@@ -516,7 +516,7 @@ Bilješka:
 
 ### BizLink Parameters
 
-Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao što možete vidjeti na slici, neka su polja već unaprijed popunjena, ali ništa nas ne sprječava da ih izmijenimo.
+Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao što možete vidjeti na slici, neka su polja već unaprijed popunjena, ali ništa nas ne spriječava da ih izmijenimo.
 
  ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image13.png)
 
@@ -532,7 +532,7 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 -        Opis: ISO kod koji se odnosi na jezik
 
-*Primjer*: “it-IT” predstavlja talijanski jezik, “en-US” predstavlja engleski jezik u Americi.
+*Primjer*: “it-IT” predstavlja talijanski jezik, “hr-HR” predstavlja hrvatski jezik.
 
 3      Tvrtke:
 
@@ -546,7 +546,7 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 -        Mapiranje tablice/stupca: Select MBSC_Code from MB_Soc
 
-4      Divizija:
+4      Odjel:
 
 -        Polje: obavezno
 
@@ -554,11 +554,11 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 -        Opis: što se tiče tvrtke, unaprijed je popunjeno
 
-*Primjer*: “1” odgovara registriranom uredu, “2” operativnom sjedištu u Milanu
+*Primjer*: “1” odgovara registriranom uredu, “2” operativnom sjedištu u Zagrebu
 
 -        Mapiranje tablice/stupca: select MBDP_Code from MB_Dep
 
-5      Nacija:
+5      Država:
 
 -        Polje: obavezno
 
@@ -566,7 +566,7 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 -        Opis: država u kojoj se nalazi odjel za koji je uvezen cjenik
 
-*Primjer*: “GB” odgovara Velikoj Britaniji, “USA” odgovara Sjedinjenim Državama
+*Primjer*: “HR” odgovara Hrvatskoj, “USA” odgovara Sjedinjenim Američkim Državama
 
 -        Mapiranje tablice/stupca: select MBNZ_Codice from MB_Nazioni
 
@@ -582,27 +582,27 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 -        Mapiranje tablice/stupca: select MBBC_Codice from MB_BarCode
 
-7      Račun:
+7      Konto:
 
 -        Polje: obavezno
 
 -        Vrsta: niz znakova
 
--        Opis: račun dobavljača, knjiga dobavljača
+-        Opis: konto dobavljača, knjiga dobavljača
 
-*Primjer*: “1701” koji ima 3 podračuna (vidi dolje)
+*Primjer*: “2200” koji ima 3 podkonta (vidi dolje)
 
 -        Mapiranje tablice/stupca: select MBPC_Conto from MB_PiaCon
 
-8      Podračun:
+8      Podkonto:
 
 -        Polje: obavezno
 
 -        Vrsta: niz znakova 
 
--        Opis: podračun dobavljača, knjiga dobavljača
+-        Opis: podkonto dobavljača, knjiga dobavljača
 
-*Primjer*: za račun 1701 koji smo vidjeli ranije, postoje 3 podračuna: “001” koji odgovara računima, “002” koji odgovara vrijednostima otpremnice i “” (nije naveden podračun) koji odgovara novcu i novčanim ekvivalentima.
+*Primjer*: za konto 2200 koji smo vidjeli ranije, postoje 3 podkonta: “001” koji odgovara računima, “002” koji odgovara vrijednostima otpremnice i “” (nije naveden podkonto) koji odgovara novcu i novčanim ekvivalentima.
 
 -      Mapiranje tablice/stupca: select BPC_SottoConto from MB_PiaCon
 
@@ -737,13 +737,13 @@ Odaberite lijevim klikom  **> Format Cells…**
 
 ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image17.png) 
 
-Na ovom zaslonu zatim možete oblikovati odabrani stupac. Na temelju indikacija navedenih u poljima za umetanje, odaberite odgovarajuću kategoriju, s relevantnim specifikacijama (npr. valuta, simbol nema). Potpuno ista stvar može se učiniti iz proračunske tablice unutar Fluentisa.
+Na ovom zaslonu zatim možete oblikovati odabrani stupac. Na temelju indikacija navedenih u poljima za umetanje, odaberite odgovarajuću kategoriju, s relevantnim specifikacijama (npr. valuta). Potpuno ista stvar može se učiniti iz proračunske tablice unutar Fluentisa.
 
-**Pažnja**: klasični slučaj odnosi se na kodove koji sadrže naizgled beznačajne nule, npr. “001”. Ako je polje formatirano generički ili brojčano, nule će biti odbačene, a ako je formatirano kao niz, umjesto toga će se zadržati.
+**Pažnja**: klasični slučaj odnosi se na kodove koji sadrže nule, npr. “001”. Ako je polje formatirano generički ili brojčano, nule će biti odbačene, a ako je formatirano kao niz, umjesto toga će se zadržati.
 
 **Mapiranje tablice/stupca**:
 
--        Ako je stavka mapiranja tablice/stupca prisutna u umetanju polja, to znači da vrijednost umetnuta u polje za uvoz mora već biti prisutna u bazi podataka. Za pregled relevantnih podataka prisutnih u bazi podataka, jednostavno slijedite korake u nastavku, u kojima će se klasa članka i njeno mapiranje koristiti kao primjer:
+-        Ako je stavka mapiranja tablice/stupca prisutna u umetanju polja, to znači da vrijednost umetnuta u polje za uvoz mora već biti prisutna u bazi podataka. Za pregled relevantnih podataka prisutnih u bazi podataka, jednostavno slijedite korake u nastavku, u kojima će se klasa artikla i njeno mapiranje koristiti kao primjer:
 
 select MBDC_Classe from MB_Classi (**\<-** ovo je mapiranje). Pokrećemo upit u “Microsoft SQL server management studio” i dobivamo sljedeći rezultat:
 
@@ -753,7 +753,7 @@ Ovako gledano, ne prikazuje ništa kako bi razumjeli njegovo značenje, zamijeni
 
  ![](/img/it-it/applications/bizlink/import-purchase-price-lists/image19.png)
 
-Ovo je koristi jer je, kao što je prikazano na slici, kroz opis (MBDC_Descr) moguće razumjeti što polje predstavlja i provjeriti nalazi li se ono što ćete unijeti u bazu ili ne.
+Ovo se koristi jer je, kao što je prikazano na slici, kroz opis (MBDC_Descr) moguće razumjeti što polje predstavlja i provjeriti nalazi li se ono što ćete unijeti u bazu ili ne.
 
 Ovaj opisani postupak je univerzalan, odnosno odnosi se na svako polje.
 
