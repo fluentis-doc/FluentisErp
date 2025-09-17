@@ -7,15 +7,15 @@ Za uređivanje MRP parametara:
 1. otvorite obrazac koji se nalazi na putu **Parametri > Proizvodnja > MRP parametri**. 
 2. odaberite članak i dvaput kliknite na red ili upotrijebite gumb **Izmjeni parametre**.
 
-### Opći podaci 
+I parametri MRP vengono creati in automatico dal sistema al salvataggio di un nuovo articolo inserito in anagrafica, con dei valori di default che possono essere variati manualmente dall’operatore singolarmente o in maniera massiva tramite il pulsante **Sostituzione parametri** presente nella form di filtro.
+
+## 1. Opći podaci 
 
 Parametri koji se mogu definirati unutar ove kartice su sljedeći:   
 
-**Referenca sastavnice materijala**: odjeljak u kojem se po potrebi postavlja artikl čiji se troškovnik mora uzeti kao referenca za raspored eventualnog proizvodnog naloga za artikl/varijantu na čijim MRP parametrima radite. Zatim možete unijeti stavku (uključujući *klasu*, *šifru* i *opis*), *mjernu jedinicu* i bilo koju *varijantu*.
-
 **Politika upravljanja**: ovaj kombinirani okvir omogućuje korisniku da odabere hoće li upravljati stavkom na:    
-> **Prognoza**:  u ovom slučaju stavkom će se upravljati generiranjem predviđanja prodaje ili umetanjem glavnog plana proizvodnje. Ova se politika upravljanja uzima u obzir i u *MPS definiciji* i u *MRP-u*. 
-> **Zaliha**: u ovom slučaju artiklom će se upravljati na temelju informacija koje se odnose na ponovnu narudžbu i minimalne bodove zaliha unesene u karticu  [Nabava](/docs/erp-home/registers/items/create-new-item) matičnih podataka artikla. To je zato što su to artikli za koje potražnja stiže prekasno u usporedbi s mojom potrebom za nabavom i/ili proizvodnjom i stoga se javlja potreba za upravljanjem tim artiklima na zalihama na takav način da se nastavi s nabavom ili proizvodnjom prije nego što stignu pravo pitanje. Također u ovom slučaju, generiranje naloga za proizvodnju artikla bit će dobiveno upotrebom postupka *definicije MPS-a* i *MRP-a*. 
+> **Prognoza**:  u ovom slučaju stavkom će se upravljati generiranjem predviđanja prodaje ili umetanjem glavnog plana proizvodnje. Ova se politika upravljanja uzima u obzir i u [MPS definicij](/docs/planning/mps-master-production-scheduling/job-order-creation) i u [MRP-u](/docs/planning/ms-master-scheduling/mrp).   
+> **Zaliha**: u ovom slučaju artiklom će se upravljati na temelju informacija koje se odnose na ponovnu narudžbu i minimalne bodove zaliha unesene u karticu  [Nabava](/docs/erp-home/registers/items/create-new-item) matičnih podataka artikla. To je zato što su to artikli za koje potražnja stiže prekasno u usporedbi s mojom potrebom za nabavom i/ili proizvodnjom i stoga se javlja potreba za upravljanjem tim artiklima na zalihama na takav način da se nastavi s nabavom ili proizvodnjom prije nego što stignu pravo pitanje. Također u ovom slučaju, generiranje naloga za proizvodnju artikla bit će dobiveno upotrebom postupka [definicije MPS-a*](/docs/planning/mps-master-production-scheduling/job-order-creation) * i [MRP-a](/docs/planning/ms-master-scheduling/mrp).
  
 > **Narudžba**: stavke za koje će se izraditi narudžba, dakle za koje želite zadržati sljedivost faza proizvodnje; u ovom slučaju ova vrsta politike upravljanja će se prema zadanim postavkama provoditi samo kroz definiciju MPS-a, unutar kartice Narudžbe kupaca, jer se kroz upravljanje MPS-om generiraju proizvodni nalozi. Njime se također može upravljati s MRP-om, ali samo ako je izričito navedeno putem oznake *Razmotrite stavku u MRP-u* za izračun koja se također nalazi kasnije u ovom obrascu.    
 *Primjer*: ako odaberete ovu vrstu upravljanja, ako imate narudžbu kupca za ovaj artikal od 6 komada i drugu narudžbu kupca za isti artikl od 8 komada, kako biste mogli pratiti proizvodnju i vezu između narudžbe kupca i proizvodnje proizvodnja narudžbi, stvorit će se dva različita proizvodna naloga, svaki povezan s određenom narudžbom kupca.   
