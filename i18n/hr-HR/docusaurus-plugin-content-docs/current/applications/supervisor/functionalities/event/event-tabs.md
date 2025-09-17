@@ -4,42 +4,41 @@ sidebar_label: Kartice događaja
 sidebar_position: 1
 ---
 
-:::info Info
-La form di dettaglio dell'*Evento* si compone:
-* Di un ribbon menu con cui è possibile salvare, create o eseguire un evento, gestire i profili e festire eventuali parametri.  
-* Informazioni di testata, in cui impostare codice, task da eseguire e gruppo di riferimento con informazioni obbligatorie.
-* Tre tab per la gestione dei parametri legati al task, il log di esecuzione e i parametri di schedulazione.
+:::info Info  
+Obrazac za detalje *Događaja* sastoji se od:  
+* Ribbon izbornika kojim je moguće spremiti, kreirati ili izvršiti događaj, upravljati profilima i eventualnim parametrima.  
+* Zaglavnih informacija u kojima se postavljaju šifra, zadatak za izvršenje i pripadajuća grupa s obaveznim informacijama.  
+* Tri taba za upravljanje parametrima vezanim uz zadatak, zapisom (logom) izvršenja i parametrima rasporeda (schedulacije).  
 :::
 
-### Tab Parametri
-Il tab Parametri permette di gestire i parametri di input dell'evento.
-Tramite la colonna Task Parameter si ha accesso alla lista di parametri del task selezionato, si procede associando un codice e un nome da Dizionario.
+### Tab Parametri  
+Tab Parametri omogućuje upravljanje ulaznim parametrima događaja.  
+Putem stupca Task Parameter pristupa se listi parametara odabranog zadatka, a nastavlja se pridruživanjem šifre i naziva iz Rječnika.
 
 ![alt text](/img/it-it/applications/supervisor/supervisor12.png)
 
-### Tab Logs
-Il tab LOG permette di visualizzare il log di esecuzione del task, sia per le esecuzione schedulate che per quelle
-manuali.
+### Tab Zapis  
+Tab Log omogućuje pregled zapisa izvršenja zadatka, kako za zakazano, tako i za ručno izvršenje.
 
 ![alt text](/img/it-it/applications/supervisor/supervisor13.png)
 
 
-### Tab Schedulazioni
-Il tab SCHEDULES permette di schedulare tramite il pulsante dedicato l'esecuzione dell'evento.
-il popup permette di definire il tipo di occorrenza con la relativa parametrizzazione di dettaglio distinguendo tra:
+### Tab Planiranja  
+Tab Planiranja omogućuje zakazivanje izvršenja događaja putem namjenskog gumba.  
+Popup prozor omogućuje definiranje tipa pojavljivanja s pripadajućom detaljnom parametrizacijom, razlikujući:
 
-**Una volta**
-> Permette di indicare data/ora esatti per l'esecuzione.
+**Jednom**  
+> Omogućuje navođenje točnog datuma/vremena izvršenja.
 
-**Giornaliero**
-> Permette di indicare l'ora di avvio, ogni quanti giorni ripetere nel corso della giornata e in quale intervallo orario.
+**Dnevno**  
+> Omogućuje navođenje vremena početka, koliko dana ponavljati unutar dana i u kojem vremenskom intervalu.
 
-**Settimanale**
-> Permette una pianificazione settimanale, in cui oltre alle impostazioni su esecuzione giornaliera possiamo definire per quante settimane ripetere e indicare i giorni esatti della settimana.
+**Tjedno**  
+> Omogućuje tjedno planiranje, gdje osim postavki dnevnog izvršenja možemo definirati koliko tjedana ponavljati i odabrati točne dane u tjednu.
 
-**Mensile**
-> Permette una pianificazione mensile indicando i mesi in cui ripetere, i giorni del mese etc.  
+**Mjesečno**  
+> Omogućuje mjesečno planiranje, navođenjem mjeseci ponavljanja, dana u mjesecu itd.
 
-Infine, sarà possibile indicare un’eventuale data di fine esecuzione con il flag End date e decidere se abilitare o meno il task in automatico.
+Na kraju, moguće je navesti eventualni datum završetka izvršenja koristeći oznaku Datum završetka i odlučiti hoće li zadatak biti automatski omogućen ili ne.
 
 ![alt text](/img/it-it/applications/supervisor/supervisor14.png)
