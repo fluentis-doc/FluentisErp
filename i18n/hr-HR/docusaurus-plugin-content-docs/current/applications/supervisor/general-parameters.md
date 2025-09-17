@@ -4,47 +4,47 @@ sidebar_label: Opći parametri
 sidebar_position: 1
 ---
 
-Supervisor permette di definire dei parametri che solitamente vengono utilizzati nell'esecuzione di specifiche attività, task o eventi.
-Una prima distinzione tra i diversi parametri concerne l'ambito di applicazione degli stessi, e si distingue tra:
-* *parametri locali*
-* *parametri globali*
+Supervisor omogućuje definiranje parametara koji se uobičajeno koriste pri izvođenju specifičnih aktivnosti, zadataka ili događaja.
+Prva podjela među različitim parametrima odnosi se na područje njihove primjene, i razlikujemo:
+* *lokalne parametre*
+* *Globalne parametre*
 
-I parametri locali sono operativi e visibili all'interno di specifiche attività, task o eventi in funzione di dove vengono definiti.
-I parametri globali sono invece operativi e visibili all'interno di tutte le attività, task o eventi e possono essere riutilizzati ogni qualvolta sia necessario.
+Lokalni parametri su operativni i vidljivi unutar specifičnih aktivnosti, zadataka ili događaja, ovisno o tome gdje su definirani.
+Globalni parametri su pak operativni i vidljivi unutar svih aktivnosti, zadataka ili događaja te se mogu ponovno koristiti kad god je to potrebno.
 
-I parametri globali sono visibili e configurabili aprendo il menu laterale **Configurazione** > **Parametri** > **Supervisor** > **Parametri Globali**
+Globalni parametri su vidljivi i mogu se konfigurirati otvaranjem izbornika sa strane **Konfiguracija** > **Parametri** > **Supervisor** > **Globalni parametri**
 
-Cliccando su parametri generali si aprirà la form di gestione dei parametri generali con cui è possibile definirli.  
-Nello specifico sono presenti parametri relativi a:
+Klikom na globalne parametre otvorit će se obrazac za upravljanje globalnim parametrima pomoću kojeg ih je moguće definirati.  
+Konkretno, dostupni su parametri koji se odnose na:
 * *Email*
-* *Database esterno*
+* *Vanjski database*
 * *HTML*
-* *Generali*
+* *Općenito*
 
-![alt text](/img/it-it/applications/supervisor/supervisor4.jpg)  
+![alt text](/img/it-it/applications/supervisor/supervisor4.jpg)
 
 > <mark> Parametri Email</mark>  
-Fanno riferimento ai parametri di autenticazione al server di posta elettronica SMTP desiderato.
-* SMTPServer -> si tratta dell'indirizzo IP Pubblico del server di posta oppure del suo hostname nel caso sia stato configurato il server DNS.
-* FromEmail -> si tratta dell'indirizzo completo di posta dal quale vogliamo spedire le mail che dovrà essere definito come alias all'interno del server di posta.
-* UseTLS -> si tratta dell'opzione di crittografia utilizzata per lo scambio dei messaggi utilizzata nella stragrande maggioranza dei casi di comunicazione tramite mail
-* AuthenticationUser e Authentication Password-> si trattano dell'utente definito nel server di posta con la relativa password.
-* SMTPServerPort -> si tratta della porta utilizzata dal server SMTP per l'invio di mail (solitamente 587, 465 o 25 ).
+Odnose se na parametre autentifikacije prema željenom SMTP poslužitelju elektroničke pošte.
+* SMTPServer -> radi se o javnoj IP adresi poslužitelja e-pošte ili njegovom hostname-u u slučaju da je konfiguriran DNS poslužitelj.
+* FromEmail -> radi se o punoj adresi e-pošte s koje želimo slati poruke, a koja mora biti definirana kao alias unutar poslužitelja e-pošte.
+* UseTLS -> radi se o opciji enkripcije korištenoj za razmjenu poruka, što je u većini slučajeva standardna metoda za slanje pošte.
+* AuthenticationUser i AuthenticationPassword -> radi se o korisniku definiranom na poslužitelju e-pošte, zajedno s pripadajućom lozinkom.
+* SMTPServerPort -> radi se o portu koji koristi SMTP poslužitelj za slanje e-pošte (najčešće 587, 465 ili 25).
 
-> <mark> Parametri Db esterno </mark>:  
-Fanno riferimento all possibilità di specificare una base di dati esterna a quella corrente in uso da Fluentis.
-* Server -> si tratta dell'endpoint dell'istanza del motore database di SQL Server.
-* Database -> si tratta del nome del database.
-* User e password -> si trattano dell'utente con cui accedere all'istanza del motore database (di solito utente sa) e della relativa password.
+> <mark> Parametri Db esterno</mark>:  
+Odnose se na mogućnost specificiranja baze podataka izvan one koju trenutno koristi Fluentis.
+* Server -> radi se o endpointu SQL Server instance baze podataka.
+* Database -> radi se o nazivu baze podataka.
+* User i password -> radi se o korisniku (najčešće korisnik sa) kojim se pristupa instanci baze podataka, i pripadajućoj lozinki.
 
-> <mark> Parametri HTML </mark>:  
-Fanno riferimento alla possibilità di specificare degli elementi di stile HTML utilizzando i fogli di stile CSS.
+> <mark> Parametri HTML</mark>:  
+Odnose se na mogućnost definiranja HTML stilskih elemenata pomoću CSS stilskih listova.
 
-> <mark> Parametri Generali </mark>:  
-Fanno riferimento a user e password con cui viene eseguito Supervisor.
+> <mark> Parametri Generali</mark>:  
+Odnose se na korisničko ime i lozinku s kojima se izvršava Supervisor.
 
 
 <!-- 
 :::tip Video Tutorial
-A questo link potete trovare il **[video](https://youtu.be/FCcnCDgtLV8)** che illustra la sopracitata procedura.
+Na ovoj poveznici možete naći **[video](https://youtu.be/FCcnCDgtLV8)** koja pokazuje gore navedenu proceduru.
 ::: -->
