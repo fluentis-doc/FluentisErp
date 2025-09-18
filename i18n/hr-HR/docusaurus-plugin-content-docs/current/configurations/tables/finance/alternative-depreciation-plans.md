@@ -1,24 +1,24 @@
 ---
-title: Piani di ammortamento alternativi
+title: Alternativni plan amortizacije
 sidebar_position: 16
 ---
 
-La definizione di questa tabella consente di definire i piani d'ammortamento da valorizzare nella simulazione pluriannuale degli ammortamenti.
+Definicija ove tablice omogućuje definiranje planova amortizacije koji će se koristiti u višegodišnjoj simulaciji amortizacije.
 
 
-I campi della prima sezione sono:
+Polja prve sekcije:
 
-**Codice**:  codice del piano di ammortamento.
+**Šifra**:  šifra plana amortizacije.
 
-**Descrizione**: descrizione del piano di ammortamento.
+**Opis**: opis plana amortizacije.
 
-**Divisione**: flag di gestione sulla sola divisione attiva.
+**Divizija**: oznaka koja upravlja primjenom samo na aktivnu diviziju.
 
 
-I campi della seconda sezione sono:
+Polja druge sekcije:
 
-**Categoria**: categoria a cui applicare il piano di ammortamento.
+**Kategorija**: kategorija na koju se primjenjuje plan amortizacije.
 
-**Descrizione**: descrizione categoria a cui applicare il piano di ammortamento.
+**Opis**: opis kategorije na koju se primjenjuje plan amortizacije.
 
-**Perc. di applicazione**: percentuale da applicare.
+**Postotak primjene**: postotak koji se primjenjuje.
