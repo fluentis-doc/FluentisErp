@@ -1,31 +1,31 @@
 ---
-title: Livelli autorizzativi
+title: Razine odobrenja
 sidebar_position: 23
 ---
 
-Questa tabella consente di estendere la gestione del blocco partite passive secondo una logica più articolata.
+Ova tablica omogućuje proširenje upravljanja blokadom pasivnih stavki prema složenijoj logici.
 
-Ipotizzando che ci sia
-- un controllo amministrativo della fattura  
-- un controllo successivo da parte dell’ ufficio acquisti della fattura  
-- un' autorizzazione finale da parte del titolare  
+Pretpostavimo da postoji:
+- administrativna kontrola računa,  
+- naknadna kontrola od strane nabavnog odjela, 
+- konačna autorizacija od strane vlasnika. 
 
-si potrebbe ipotizzare una codifica dei livelli autorizzativi come segue:
+Moguća kodifikacija razina autorizacije mogla bi biti sljedeća:
 
 ![](/img/it-it/configurations/tables/finance/authorization-levels.png)
 
-Il livello *00 – Blocco iniziale* va preimpostato in ogni **anagrafica fornitore**, nel tab [**Pagamenti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/), per fare in modo che le sue partite siano create bloccate con questo livello di partenza.
+Razina *00 – Početna blokada* mora biti unaprijed postavljena u svakoj **kartici dobavljača**, u kartici [**Plaćanja**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/), kako bi stavke bile kreirane blokirane s ovom početnom razinom.
 
 ![](/img/it-it/configurations/tables/finance/authorization-levels-combo.png)
 
-La partita può essere poi portata al livello *01* dagli utenti del ruolo *Amministrazione* (nell’ immagine *Fluentis Users* Cfr. gestione utenti e ruoli utente nella sezione ARM): questo perché ha *livello padre* 0, e lo porta a livello 1
+Stavka se potom može podići na razinu *01* od strane korisnika u ulozi *Administracija* (na slici *Fluentis Users*, usp. upravljanje korisnicima i ulogama u odjeljku ARM): to je moguće jer ima roditeljsku *razinu* 0 i podiže je na razinu 1.
 
-Poi la partita può essere portata a livello *02* dagli utenti del ruolo *Acquisti* (nell’immagine è *Fluentis Admins*): questo perché ha *livello padre* 1 e lo porta a livello 2
+Zatim stavka može biti podignuta na razinu *02* od strane korisnika u ulozi *Nabava* (na slici *Fluentis Admins*): ovo je moguće jer ima *roditeljsku* razinu 1 i podiže je na razinu 2.
 
-Poi ancora la partita può arrivare al livello finale *03* solo ad opera dell’utente XXXXXXX (il titolare), che darà effettivamente l’autorizzazione al pagamento (e quindi solo a questo punto verrà rimosso il blocco nella partita, che diventerà pagabile)
+Na kraju, stavka može doći do konačne razine *03* samo od strane korisnika XXXXXXX (vlasnika), koji daje stvarnu autorizaciju za plaćanje (tek tada se blokada stavke uklanja i stavka postaje plaćiva).
 
-Ogni step può richiedere l’inserimento di una nota di autorizzazione, se è impostato il flag al livello
+Svaki korak može zahtijevati unos napomene o autorizaciji ako je na razini postavljena odgovarajuća oznaka (flag).
 
-Questi cambi stati possono essere eseguiti dalla maschera [**Gestione Liquidità**](/docs/finance-area/maturity-values/procedures/cash-management/), tramite il pulsante *Autorizza partita*. 
+Promjene stanja mogu se izvršavati kroz sučelje [**Upravljanje likvidnošću**](/docs/finance-area/maturity-values/procedures/cash-management/), putem gumba *Autoriziraj stavku*. 
 
-Dopo il rilascio dell'autorizzazione sempre dalla maschera *Gestione liquidità* è possibile anche preparare direttamente le distinte di pagamento del modulo *Pagamenti fornitori*, per le partite autorizzate (o comunque quelle non bloccate) in alternativa alla classica procedura di creazione della distinta di pagamento e, da dentro la distinta, ricerca delle partite passive da inserire.
+Nakon davanja autorizacije, također iz sučelja *Upravljanje likvidnošću*, moguće je pripremiti izravno liste plaćanja iz modula *Plaćanja dobavljača* za autorizirane stavke (ili one koje nisu blokirane), kao alternativa klasičnoj proceduri kreiranja liste plaćanja i naknadnog pretraživanja pasivnih stavki za uključivanje u listu.
