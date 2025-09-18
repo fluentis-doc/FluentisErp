@@ -31,19 +31,20 @@ Obrazac se otvara preko putanje **Parametri > Proizvodnja > Parametri proizvodno
 
 **Ažuriranje materijala korištenih u proizvodnom nalogu**: ako je aktivno, kada se količina navedena u proizvodnoj deklaraciji promijeni, prikazat će se poruka s pitanjem treba li ili ne ponovno izračunati količine korištenih materijala; ako nije aktivan, ponovni izračun materijala događa se automatski;
 
-**Omogući kontrolu u MES-u**: **Abilita controllo presenze nel MES**: se attivo, abilita il controllo presenze all'interno di [Fluentis MES](/docs/production/mes/mes-intro), Il controllo si basa sulla tabella *Fluentis.HR_BadgeRecords*.       
-In questa i campi obbligatori per il controllo sono: *HRBR_Resource_HRR_Id*, *HRBR_RecordDateTime*, *HRBR_BadgeRecordType_HRBRTY_Id*, che può assumere i valori E = Ingresso o U = Uscita.
-Per ogni riga ci può essere solo l’orario di entrata o quello di uscita, quindi in giorno ci saranno 4 righe per ogni utente, ad esempio:     
-- 2024-01-02 08:30:00.000 - tipo E 
-- 2024-01-02 12:30:00.000 - Tipo U 
-- 2024-01-02 14:00:00.000 - Tipo E 
-- 2024-01-02 18:00:00.000 - Tipo U      
-I dati devono essere importati all'interno di questa tabella partendo dai dati del timbratore utilizzato.      
-Questi verranno poi incrociati con i valori di inizio e fine lavoro di ciascun operatore inserito all’interno del tab *Squadra* presente in [Fluentis MES](/docs/production/mes/mes-intro).
+**Omogući kontrolu u MES-u**: **Abilita controllo presenze nel MES**: ako je aktivirano, omogućuje se kontrola prisutnosti unutar [Fluentis MES](/docs/production/mes/mes-intro), kontrola se temelji na tablici *Fluentis.HR_BadgeRecords*.       
+U ovoj tablici obavezna polja za kontrolu su: *HRBR_Resource_HRR_Id*, *HRBR_RecordDateTime*, *HRBR_BadgeRecordType_HRBRTY_Id*, koje može imati vrijednosti U = Ulazak ili I = Izlazak.
+Za svaki red moguće je zabilježiti samo vrijeme ulaska ili vrijeme izlaska, stoga će za svaki korisnik postojati 4 reda dnevno, na primjer:      
+- 2024-01-02 08:30:00.000 - tipo U 
+- 2024-01-02 12:30:00.000 - Tipo I 
+- 2024-01-02 14:00:00.000 - Tipo U 
+- 2024-01-02 18:00:00.000 - Tipo I      
 
-**Mostra la versione per componente dentro distinta base**: se attivo, abilita il campo della versione presente nel tab componente della distinta base.
+Podaci se moraju uvesti u ovu tablicu polazeći od podataka zabilježenih putem korištenog uređaja za evidentiranje radnog vremena.      
+Ti će se podaci potom usporediti s vrijednostima početka i završetka rada svakog operatera unesenog u karticu *Tim* koja se nalazi u [Fluentis MES](/docs/production/mes/mes-intro).
 
-**Abilita il salvataggio automatico sulle dichiarazioni di produzione**: se attivo, abilita il salvataggio automatico all'interno delle dichiarazioni di produzione.
+**Prikaži verziju komponente unutar troška materijala**: ako je aktivirano, omogućuje se prikaz polja verzije unutar kartice komponente u strukturi proizvoda.  
+
+**Omogući automatsko spremanje na proizvodnim izvještajima**: ako je aktivirano, omogućuje se automatsko spremanje unutar izjava o proizvodnji.  
 
 Konačno, postoje još četiri odjeljka: **Lista posla upravljana za, Period analize, Vrednovanje materijala po cijeni, Sekvenca faze prijedloga**. 
 
@@ -51,64 +52,66 @@ Konačno, postoje još četiri odjeljka: **Lista posla upravljana za, Period ana
 
 **Period analize**: odjeljak omogućuje, aktiviranjem jednog od radio gumba, odabir razdoblja filtriranja proizvodnih naloga koji moraju biti prikazani u prozoru za ispis radnog lista (tjedno, dnevno ili svakih X dana); 
 
-**Valorizzazione materiali a costo**: la sezione consente di definire dei parametri che saranno utilizzati per il calcolo dei costi relativi alle dichiarazioni di produzione registrate. (Questi parametri non sono presi in considerazione dalla [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), in quando questa prende i valori direttamente dalle registrazioni delle dichiarazioni di produzione).   
+**Valorizacija materijala po cijeni**: Ovaj odjeljak omogućuje definiranje parametara koji će se koristiti za izračun troškova vezanih uz evidentirane izjave o proizvodnji. (Ovi parametri se ne uzimaju u obzir kod [Obračun troškova](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), budući da ona preuzima vrijednosti izravno iz zapisa izjava o proizvodnji.)  
 
-> **Ultimo**: permette di valorizzare i materiali a costo *Ultimo*;      
-> **Medio**: permette di valorizzare i materiali a costo *Medio*;                
-> **Standard**: permette di valorizzare i materiali a costo *Standard*;          
-> **Da area gestionale**: permette di valorizzare i materiali in base al costo legato all'*Area gestionale* selezionata nella relativa combo box;     
-> **Costo del lotto**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quello specifico lotto;     
-> **Costo della commessa**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa.     
+> **Zadnji**: omogućuje vrednovanje materijala po *Zadnjoj* cijeni;      
+> **Srednji**: omogućuje vrednovanje materijala po *Prosječnoj* cijeni;                
+> **Standard**: omogućuje vrednovanje materijala po *Standardnoj* cijeni;          
+> **Iz područja upravljanja**: omogućuje vrednovanje materijala na temelju troška povezanog s odabranim *Upravljačkim područjem* u odgovarajućem padajućem izborniku;       
+> **Trošak lota**: aktiviranjem ove opcije, procedura će vrednovati trošak materijala prema odabranoj vrsti troška, uzimajući u obzir isključivo vrijednosti tog konkretnog lota;       
+> **Trošak narudžbe proizvodnje**: aktiviranjem ove opcije, procedura će vrednovati trošak materijala prema odabranoj vrsti troška, uzimajući u obzir isključivo vrijednosti te konkretne proizvodne narudžbe.      
 
-:::note Nota
-Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto, ovviamente tra i movimenti effettuati con causali di carico con il flag aggiorna costo ultimo o medio (a seconda del valore indicato nel campo **Tipo di costo**) e il flag di interesse fiscale attivi; se non trova nessun movimento con queste caratteristiche va a cercare tra i movimenti che hanno caricato quel lotto, se non trova nemmeno questi va a cercare tra tutti i movimenti di quell'articolo. Se non ho nessun movimento di carico per quell'articolo va a vedere nei rispettivi campi costo ultimo, medio e standard dell'anagrafica dell'articolo.
+:::note Napomena 
+Ako su **Trošak lota** i **Trošak narudžbe proizvodnje** istovremeno aktivirani, procedura će vrednovati trošak materijala prema odabranoj vrsti troška, uzimajući u obzir isključivo vrijednosti te konkretne proizvodne narudžbe i tog konkretnog lota — naravno, među prometima evidentiranim uz ulazne uzroke koji imaju aktivirane oznake ažuriranja zadnjeg ili prosječnog troška (ovisno o vrijednosti u polju **Vrsta troška**) i fiskalnog značaja; ako se ne pronađe nijedan promet s tim karakteristikama, sustav traži među prometima koji su unijeli taj lot. Ako ni tu nema rezultata, traži među svim prometima tog artikla. Ako nema nijednog ulaznog prometa za taj artikl, tada sustav uzima vrijednosti iz pripadajućih polja za zadnji, prosječni i standardni trošak u šifrarniku artikla.
+:::
 
 **Sekvenca faze prijedloga**: odjeljak vam omogućuje da odaberete, tijekom stvaranja radnog ciklusa, redni broj predložene faze, koji se može uzeti iz rednog broja standardne faze ili kao progresivni broj naloga za umetanje , označavajući i vrijednost koraka.
 
 ## 2. Skladišta 
 
 Obrazac je posvećen umetanju skladišta i povezanih razloga koji reguliraju kretanje artikala kroz proizvodne postupke; isti ekran ponovno se prikazuje u *MRP parametrima* artikla u kartici [Skladišta](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), s razlikom da se skladišta postavljena u *Parametrima proizvodnje* smatraju općim podacima koji prema zadanim postavkama vrijede za artikle; ako su različita skladišta postavljena za određenu stavku u *MRP parametrima* stavke, sustav će dati <u>prioritet parametrima</u> koje nađe postavljenima u ovom zadnjem prozoru za utovar i istovar materijala povezanih s proizvodnjom ove stavke.  
-Inoltre, è possibile settare gli stessi parametri anche per uno specifico Sito di produzione.     
+Također, moguće je postaviti iste parametre i za specifičnu Proizvodnu lokaciju.  
 
-Quindi la priorità per il **carico** sarà presa nel seguente ordine:
-- Magazzino e casuale se sono indicati nella testata dell'ordine di produzione
-- [Parametri del sito produttivi](/docs/configurations/parameters/production/production-orders-parameters/production-site) indicato nella commessa collegata all'ordine di produzione
-- [Parametri MRP dell'articolo](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
-- Dal sito di produzione collegato alla macchina che è inserita nella dichiarazione di produzione; se la macchina non è stata indicata nella dichiarazione, i parametri sono presi dal sito di produzione collegato alla macchina indicata nella fase dell'ordine di produzione
-- [Parametri degli ordini di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro)
+Dakle, prioritet za **Zaduženje** bit će određen sljedećim redoslijedom:  
 
-La priorità per lo **scarico** sarà data nell'ordine da:
+- Skladište i predložak ako su navedeni u zaglavlju proizvodne narudžbe 
+- [Parametri proizvodnog mjesta](/docs/configurations/parameters/production/production-orders-parameters/production-site) navedeni u radnom nalogu povezanoj s proizvodnom narudžbom  
+- [MRP parametri artikla](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
+- Proizvodno mjesto povezano sa strojem koji je naveden u izjavi o proizvodnji; ako stroj nije naveden u izjavi, parametri se preuzimaju iz proizvodnog mjesta povezanog sa strojem koji je naveden u fazi proizvodne narudžbe  
+- [Parametri proizvodnih narudžbi](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro)
 
-- [Parametri del sito produttivi](/docs/configurations/parameters/production/production-orders-parameters/production-site) indicato nella commessa collegata all'ordine di produzione
-- [Parametri MRP dell'articolo](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
-- Dal sito di produzione collegato alla macchina che è inserita nella dichiarazione di produzione; se la macchina non è stata indicata nella dichiarazione, i parametri sono presi dal sito di produzione collegato alla macchina indicata nella fase dell'ordine di produzione
-- [Parametri degli ordini di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro)
+Prioritet za **Istovar** bit će određen sljedećim redoslijedom:  
 
+- [Parametri proizvodnog mjesta](/docs/configurations/parameters/production/production-orders-parameters/production-site) navedeni u radnom nalogu povezanoj s proizvodnom narudžbom  
+- [MRP parametri artikla](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
+- Proizvodno mjesto povezano sa strojem koji je naveden u izjavi o proizvodnji; ako stroj nije naveden u izjavi, parametri se preuzimaju iz proizvodnog mjesta povezanog sa strojem navedenim u fazi proizvodne narudžbe  
+- [Parametri proizvodnih narudžbi](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro)
+  
 Stoga u ovoj kartici možete postaviti skladišta koja se odnose na *Sirovine*,*Poluproizvode*, *Gotove proizvode* i bilo koji *Otpad* s pripadajućim razlozima za utovar i istovar.
 
-Per poter impostare uno di questi magazzini sarà sufficiente selezionare tramite le relative combo box il magazzino e le causali (precodificati nelle rispettive tabelle [Magazzini](/docs/configurations/tables/logistics/warehouses) e [Causali](/docs/configurations/tables/logistics/warehouse-templates)) che si vogliono impostare.
+Za postavljanje jednog od ovih skladišta bit će dovoljno odabrati putem pripadajućih padajućih izbornika skladište i predloške, koji su unaprijed definirani u odgovarajućim tablicama [Skladišta](/docs/configurations/tables/logistics/warehouses) i [Predlošci](/docs/configurations/tables/logistics/warehouse-templates) koje želite postaviti.  
 
-Pored ovih glavnih skladišta postoje i skladišta W.I.P. (upravljanje nije široko korišteno) koje se aktiviraju odabirom stavke W.I.P. i nastavak odabira unutar kombiniranog okvira skladišta i razloga kao što je učinjeno za druga skladišta. 
+Pored ovih glavnih skladišta, postoje i W.I.P. skladišta (upravljanje se ne koristi često), koja se aktiviraju odabirom stavke W.I.P. te daljnjim odabirom unutar kombiniranog okvira skladišta i predloška, kao što je to učinjeno za ostala skladišta.
 
-Per magazzini *W.I.P.* (Work in Progress) si intendono dei magazzini di transizione, in cui la merce transita nel momento in cui l'ordine di produzione del prodotto finito o del semilavorato viene rilasciato. Quando vengono settati questi magazzini il tipo di prelievo del materiale deve essere *Manuale*, altrimenti se fosse un tipo di prelievo *Automatico* lo scarico dei materiali avverrebbe in automatico nel momento del rilascio dell'ordine di produzione. Nel caso dei magazzini W.I.P. il materiale al momento del rilascio viene quindi spostato in questi magazzini (tramite la [Lista di prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list)) e viene scaricato durante la dichiarazione di produzione dell'ultima fase di lavorazione (produttiva e movimentabile) dell'articolo dell'ordine di produzione oppure durante la fase di lavorazione a cui il materiale è associato.
+Pod *W.I.P.* (Work in Progress) skladištima podrazumijevaju se prijelazna skladišta u koja roba ulazi u trenutku kada se proizvodna narudžba za gotov proizvod ili poluproizvod pusti u rad. Kada se ova skladišta postave, vrsta izdavanja materijala mora biti postavljena na *Ručno*, u suprotnom, ako je izdavanje postavljeno na *Automatski* način, materijal bi se automatski skinuo sa skladišta već u trenutku puštanja proizvodne narudžbe. U slučaju W.I.P. skladišta, materijal se u trenutku puštanja narudžbe prebacuje u ta skladišta (putem [Liste za izdavanje materijala](/docs/production/pp-production-in-progress/picking-materials-list)) i zatim se skida (iz skladišta) tijekom izrade izjave o proizvodnji za završnu fazu obrade (koja je proizvodna i omogućuje promet) artikla iz te narudžbe, ili tijekom faze obrade s kojom je taj materijal povezan.
 
-Diversamente, se il tipo di prelievo del materiale è *Con Lista*, allora mentre lo spostamento del materiale al magazzino W.I.P. avviene nello stesso modo rispetto al tipo di prelievo manuale, lo scarico dal W.I.P. avviene tramite la procedura della [Lista di prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list).     
+U suprotnom, ako je vrsta izdavanja materijala postavljena na *Sa Listom*, tada se premještanje materijala u W.I.P. skladište odvija na isti način kao kod ručnog izdavanja, dok se skidanje sa W.I.P. skladišta vrši putem procedure [Liste za izdavanje materijala](/docs/production/pp-production-in-progress/picking-materials-list).     
 
-### Funzionamento Magazzini e Causali
+### Funkcioniranje skladišta i predložaka
 
-Per quanto riguarda il **carico** di prodotti finiti e semilavorati:
+Što se tiče **knjiženja** izlaza materijala: 
 
-- Se si considera l'**ultima fase produttiva e movimentabile** del ciclo, vengono usati magazzini e causali della sezione **Prodotti finiti**, se l'ordine di produzione è di **livello 1** (quindi relativo al prodotto finito), invece vengono usate quelle della sezione **Semilavorati**, se l'ordine di produzione **non è di livello 1** (quindi è un semilavorato). Se la sezione **Semilavorati** non è valorizzata vengono usate quelle della sezione **Prodotti finiti**.
-- Nel caso in cui **non sia l'ultima fase produttiva e movimentabile** del ciclo e la **gestione WIP** **non è stata attivata**, vengono usati magazzini e causali della sezione **Semilavorati WIP**. Invece, se **è attiva** la **gestione WIP** vengono usate quelle della **sezione WIP** e quelle della sezione **Semilavorati WIP** non vengono più considerate.
+- Ako se smatra **posljednjom proizvodnom i pokretnom fazom** ciklusa, koriste se skladišta i uzroci iz odjeljka **Gotovi proizvodi**, ako je narudžba proizvodnje **razine 1** (dakle, povezana s gotovim proizvodom), dok se koriste oni iz odjeljka **Poluproizvodi**, ako narudžba proizvodnje **nije razine 1** (dakle, radi se o poluproizvodu). Ako odjeljak **Poluproizvodi** nije popunjen, koriste se oni iz odjeljka **Gotovi proizvodi**.    
+- U slučaju da **nije posljednja proizvodna i pokretna faza** ciklusa i **upravljanje WIP-om** **nije aktivirano**, koriste se skladišta i uzroci iz odjeljka **WIP Poluproizvodi**. Međutim, ako je **aktivirano** **upravljanje WIP-om**, koriste se oni iz **odjeljka WIP**, a oni iz odjeljka **WIP Poluproizvodi** više se ne uzimaju u obzir.
 
-Per lo **scarico** dei materiali invece:
+Za **otpremu** materijala umjesto:
 
-- Se la **gestione WIP** **non è stata attivata**, vengono usati magazzini e causali presenti nella sezione **Materie prime** se l'articolo ha **tipo approvvigionamento Acquisto** nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), mentre se ha **tipo approvvigionamento Produzione o Conto lavoro**, vengono usati per lo scarico magazzini e causali presenti nella sezione **Semilavorati**.       
-- Invece, se **è attiva la gestione WIP**, vengono usati magazzini e causali presenti nella **sezione WIP** (nel caso in cui questi non fossero valorizzate vengono utilizzate quelle della sezione Materie prime). Quindi, se l'articolo ha **tipo approvvigionamento Acquisto**, viene usata la causale **Consumo materiali**. Invece, se ha **tipo approvvigionamento Produzione o Conto lavoro**, viene usata la causale consumo **semilavorati**.
+- Ako **upravljanje WIP-om nije aktivirano**, koriste se skladišta i predlošci iz odjeljka **Sirovi materijal** ako artikl u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ima **vrstu nabave: Kupnja**, ako artikl ima **vrstu nabave: Proizvodnja ili Podizvođač**, za knjiženje izlaza koriste se skladišta i predlošci iz odjeljka **Nezavršeni proizvodi**.       
+- S druge strane, ako je **upravljanje WIP-om aktivirano**, koriste se skladišta i predlošci iz **odjeljka WIP** (ako nisu definirani, tada se koriste oni iz odjeljka Sirovi materijal). Dakle, ako artikl ima **vrstu nabave: Kupnja**, koristi se predložak **Potrošnja materijala**. Ako artikl ima **vrstu nabave: Proizvodnja ili Podizvođač**, koristi se predložak **Nezavršeni proizvodi**.
 
 :::note Nota
-Quando viene attivato il flag *W.I.P.* nei *Parametri ordini produzione*, automaticamente nella creazione degli ordini di conto lavoro (dal *Rilascio ordini pianificati* o direttamente dall'ordine di produzione), vengono considerate per i materiali da inviare al terzista il magazzino e la causale presenti nei  [Parametri conto lavoro](/docs/configurations/parameters/production/subcontractor-parameters) alla sezione *Consegne materiali a terzisti W.I.P.*; quindi in questo caso i materiali da inviare ai terzisti saranno prelevati direttamente dal magazzino *W.I.P.*    
+Kada se aktivira flag  *W.I.P.* u *Parametrima proizvodnih naloga*,prilikom kreiranja naloga za kooperaciju (bilo putem *Izdavanje planiranih naloga* o izravno iz narudžbe proizvodnje), vode se u obzir za materijale koji se šalju trećoj strani skladište i uzrok prisutni u [Parametri za podizvođača](/docs/configurations/parameters/production/subcontractor-parameters) u odjeljku *Isporuke materijala podizvođačima W.I.P.*; dakle, u tom slučaju materijali koji se šalju podizvođačima bit će preuzeti izravno iz *W.I.P.* skladišta.      
 :::    
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju obrazaca, molimo se obratite na sljedeću poveznicu [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
 
