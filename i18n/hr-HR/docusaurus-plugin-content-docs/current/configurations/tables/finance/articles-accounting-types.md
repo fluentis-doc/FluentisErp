@@ -1,19 +1,19 @@
 ---
-title: Tipi contabilizzazione articoli
+title: Vrsta knjiženja artikala
 sidebar_position: 23
 ---
 
-La tabella è d'appoggio alla procedura che definisce una o più contabilizzazioni alternative al conto di contropartita collegato direttamente alla voce di fatturato vendite nella tabella relativa.
+Ova tablica služi kao pomoć proceduri koja definira jednu ili više alternativnih kontabilizacija na račun protuparte izravno povezan s računom prihoda od prodaje u pripadajućoj tablici.
 
-*Esempi di codifica*:
-XUE: Extra Ue -> sarà poi abbinato ad un conto di ricavo "Estero" ed abbinato alle anagrafiche dei clienti esteri per evitare di cambiare manualmente il fatturato vendite da "Italia" a estero per ogni articolo che riporta in automatico la voce di fatturato vendite principale (Ricavi Italia ad esempio).
+*Primjeri kodiranja*:
+XUE: Extra EU -> bit će zatim povezan s računom prihoda "Strano" i dodijeljen karticama stranih klijenata kako bi se izbjegla ručna promjena prihoda od prodaje s "Italija" na "Strano" za svaki artikl koji automatski upisuje glavni prihod od prodaje (npr. Prihodi Italija).
 
-Per maggiori dettagli vedere [**qui**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance).
+Za više detalja pogledajte [**ovdje**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance).
 
-**Codice**: codice identificativo del tipo di contabilizzazione articoli.
+**Šifra**: identifikacijska šifra tipa kontabilizacije artikala.
 
-**Descrizione**: descrizione del tipo di contabilizzazione articoli.
+**Opis**: opis tipa kontabilizacije artikala.
 
-**Cliente**: per attivare il campo di contabilizzazione articoli sul Cliente.
+**Klijent**: aktivira polje kontabilizacije artikala za klijenta.
 
-**Fornitore**: per attivare il campo di contabilizzazione articoli sul Fornitore.
+**Dobavljač**: aktivira polje kontabilizacije artikala za dobavljača.
