@@ -3,26 +3,26 @@ title: Valutazioni periodiche su Non conformità
 sidebar_position: 3
 ---
 
-La gestione si trova sul percorso **Qualità > Valutazioni fornitore > Valutazioni periodiche su Non conformità**.   
+Upravljanje se nalazi na putanji **Kvaliteta > Kvalifikacije dobavljača > Periodične procjene nesukladnosti**.  
 
 
-:::important A cosa serve
-Le *Valutazioni periodiche su Non conformità* è uno dei metodi di valutazione dei fornitori che vengono messi a disposizione per la valutazione degli stessi.   
-Questo metodo "oggettivo" si basa sul peso delle difettosità assegnate alle *Non conformità a fornitore* e viene abitualmente utilizzato per le valutazioni periodiche.   
+:::important Čemu služi
+*Periodične procjene nesukladnosti* jedna su od metoda ocjenjivanja dobavljača koje su dostupne za njihovo ocjenjivanje.   
+Ova se objektivna metoda temelji na težini neispravnosti dodijeljenima *Nesukladnostima dobavljaču* i uobičajeno se koristi za periodične procjene.   
 
-La gestione consente di inserire nuove *Valutazioni periodiche su Non conformità* o di ricercare quelle già esistenti per visualizzarle.   
+Upravljanje omogućuje unos novih *Periodičnih procjena nesukladnosti* ili pretraživanje već postojećih za pregled.   
 :::
 
 
-## Pulsanti di comando
+## Tipke za upravljanje
 
 
-### ![](/img/neutral/common/search.png) Ricerca Valutazioni periodiche su Non conformità
+### ![](/img/neutral/common/search.png) Pretraga Periodičnih procjena nesukladnosti
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Obrazac se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali podaci unutar tablice rezultata.   
 
 
-### ![](/img/neutral/common/accountant-search.png) Qualificazione periodica
+### ![](/img/neutral/common/accountant-search.png) Periodična kvalifikacija
 
 Per poter eseguire la valutazione è necessario premere il pulsante **Qualificazione periodica**.   
 Viene visualizzata una richiesta di:
