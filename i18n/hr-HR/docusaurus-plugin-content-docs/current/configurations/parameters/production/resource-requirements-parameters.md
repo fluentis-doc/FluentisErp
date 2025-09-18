@@ -8,36 +8,67 @@ Kroz ovaj prozor se postavljaju parametri koji se tiču nekih od osnovnih postav
 
 **Prvi dan u tjednu za izračun proizvodnih kapaciteta**: moguće je odlučiti koji dan treba smatrati prvim u tjednu u [Kalendaru proizvodnih kapaciteta](/docs/configurations/tables/production/factory-calendar), a time i u kalendaru radnog centra. Obično se postavlja u ponedjeljak.
 
-**Zadnji planirani nalog umetnut za ovu godinu**: predstavlja zadnji progresivni broj korišten u tekućoj godini za planske naloge.  
+**Zadnji planirani nalog umetnut za ovu godinu**: predstavlja zadnji progresivni broj korišten u tekućoj godini za planske naloge. 
 
-**Pusti autorizirani PD**: ako je aktivno, omogućuje vam da osigurate da se zahtjevi za kupnju generirani putem izdavanja planiranih narudžbi za kupnju kreiraju s automatski aktiviranom oznakom 'Ovlašteno'. U suprotnom, korisnik koji mora generirati narudžbe dobavljača iz RDA bit će prisiljen autorizirati sve retke zahtjeva za kupnju prije nego što iz njega može generirati narudžbu. Međutim, moguće je autorizirati samo neke od redaka Zahtjeva za ponudu i zatim nastaviti s generiranjem narudžbi dobavljača počevši samo od ovlaštenih redaka.  
+**Boje tipova dokumenatao**: omogućuje postavljanje boje pozadine i teksta za različite tipove narudžbi: narudžbe za nabavu, proizvodnju ili podizvođača, koje su u kašnjenju i/ili isteku.
 
-**Boje pozadine**:omogućuju vam postavljanje boje pozadine za različite vrste naloga: Kupnju, Proizvodnju ili Račune za plaćanje, dok odjeljak *Boje teksta* omogućuje postavljanje boje teksta za različite vrste naloga: kasne i/ili istekle.
+## Parametri za puštanje planiranih narudžbi 
 
-**Parametri za puštanje planiranih naloga**  
-U ovom odjeljku korisnik može postaviti vrstu zahtjeva za kupnju i vrstu naloga za podizvođače (ako je zatvoren i stoga se ne može dalje mijenjati ili otvoren i stoga se može mijenjati) koji se moraju automatski generirati tijekom izdavanja planiranih naloga za nabavu odnosno proizvodnih naloga. 
+U ovom odjeljku korisnik može postaviti vrstu zahtjeva za kupnju i vrstu narudžbe za vanjsku obradu (ako je zatvorena, dakle nije daljnje moguće mijenjati ili otvorena i stoga je moguće mijenjati) koje se automatski generiraju tijekom puštanja planiranih narudžbi za kupnju i vanjsku obradu.
 
-**Obavezna provjera izvođača u vanjskim fazama**: ako je aktivna, ako podizvođač nije naveden u vanjskoj fazi, to će biti prijavljeno **Bojom teksta za redak narudžbe** navedenom u nastavku. 
-**Obavezna kontrola materijala**: omogućuje kontrolu prisutnosti ili odsutnosti materijala na zalihama i ovisno o dostupnosti bit će istaknuti različitim bojama (**Boja pozadine reda narudžbe**: *Potpuna / Djelomična / Nema*); nadalje, također je moguće u **Tipu kontrole** naznačiti treba li to učiniti na zalihi ili na raspoloživosti materijala.  
+**Obavezna provjera izvođača u vanjskim fazama**: ako je aktivno, u slučaju da nije naznačen vanjski suradnik u vanjskoj fazi, to će biti označeno pomoću opcije **Boja teksta za redak narudžbe** dolje navedeno.   
 
-**Pojednostavljeno upravljanje proizvodnjom**: zastarjelo je i koristi se samo u starim verzijama.   
+**Pojednostavljeno upravljanje proizvodnjom**: je zastarjelo i koristi se samo u starim verzijama.
 
-**Otpustite izvršne proizvodne narudžbe**; ako je aktivan, omogućuje vam da osigurate da su proizvodni nalozi generirani otpuštanjem planiranih proizvodnih naloga već kreirani u stanju “Izvršni“ i stoga ne zahtijevaju daljnji postupak Otpuštanja.
+**Zadrži poveznicu između naloga i podnaloga**: ako je aktivno, omogućuje, koristeći također i flagove koji slijede odmah, odlučiti da ukoliko se ručno promijeni datum planirane narudžbe, procedura izvrši odgovarajuću promjenu i na planiranim narudžbama koje su odmah susjedne onoj koja je pretrpjela prvotnu promjenu.
 
-**Prikaži stablo naloga**: ako je aktivan, omogućuje vam pregled, u donjem dijelu obrasca za *Pretraživanje planirane narudžbe*, stabla koje povezuje elemente proizvodnog naloga, na temelju veza sastavnica materijala uključenih u raspored tog narudžba.
+**Broj dana za izračun dostupnosti**: označava koliko unaprijed treba procjenjivati dostupnost, pri čemu se ne uzimaju u obzir narudžbe i potreba koje prelaze taj datum.  
 
-**Zadrži poveznicu između naloga i podnaloga**: ako je aktivna, dopušta, također iskorištavanjem neposredno sljedećih oznaka, odlučivanje da će, ako je datum planirane narudžbe ručno izmijenjen, postupak implementirati posljedičnu izmjenu i na planirane narudžbe neposredno uz onaj koji ima početnu promjenu odmah.  
+**Datum predaje materijala u fazi istovara materijala**: ako je aktivno, datum korištenja materijala naveden u planiranim narudžbama bit će jednak datumu početka koji je najveći među svim fazama, što znači da će biti jednak datumu početka posljednje faze. Dok, ako flag nije aktivan, datum korištenja materijala naveden u planiranim narudžbama bit će jednak datumu početka narudžbe, dakle datumu početka prve faze.
 
-**Broj dana za izračun raspoloživosti**: pokazuje koliko daleko treba ići za procjenu izračuna dostupnosti, ne uzimajući u obzir narudžbe i potrebe koje prelaze taj datum.  
+**Dani unaprijed za predavanje materijala**: Vrijednost koja je navedena omogućuje da se dostupnost materijala unaprijedi za taj broj dana u odnosu na početak obrade (bilo u planiranim proizvodnim narudžbama ili u proizvodnim narudžbama), kako bi se logistici omogućilo da materijal dostavi na vrijeme u proizvodnju. Ovo se uzima u obzir u sljedećim procedurama: sve planiranja "što je prije moguće", "što je kasnije moguće", "s ograničenim kapacitetom", "MRP", "Dovršavanje podataka narudžbe" kako u planiranim narudžbama tako i u proizvodnim narudžbama, "Ponovno izračunavanje datuma početka" kako u planiranim narudžbama tako i u proizvodnim narudžbama, te sve procedure CRP ("Gantt", "Kapacitet radnih centara" i "Sekvenca faza") koje djeluju na promjenu datuma početka ili završetka faze narudžbe.
 
-**Datum predaje materijala u fazi istovara materijala**:
+**M.R.P. povijesni dani za ostaviti**: omogućuje označavanje razdoblja u danima za koje će se rezultati MRP obrada čuvati unutar povijesti. Kada obrada premaši broj dana unesenih u ovo polje, ona će biti uklonjena iz povijesti prilikom sljedeće MRP obrade. Ako se polje ostavi prazno, nijedna obrada neće biti izbrisana iz povijesti.
 
-**Dani unaprijed za predavanje materijala**: naznačena vrijednost omogućuje da se dostupnost materijala pomakne za taj broj dana u odnosu na početak obrade (i u planiranim proizvodnim nalozima i u proizvodnim nalozima), kako bi se omogućilo logistici da donese materijal na vrijeme u proizvodnji. Ovo se uzima u obzir sljedećim postupcima: svi rasporedi "što je prije moguće", "najkasnije", "konačnim kapacitetom", "MRP", "Završetak podataka o narudžbi" u planiranim i proizvodnim nalozima, " Ponovno izračunavanje početka datum", kako u planiranim nalozima tako iu proizvodnim nalozima, svi CRP postupci ("Gantt", "Kapacitet radnog centra" i "Slijed faza") koji djeluju na promjenu datuma početka ili završetka faze naloga.
- 
-**Skladišta za raspoređivanje naloga**  
-Mreža je jednostavan prikaz popisa skladišta čiju dostupnost je potrebno provjeriti. Ovaj popis postavljen je u obliku koji se zove *Izračun dostupnosti* koji se nalazi u Pomoćnim programima sustava upravljanja.
+## Skladišta za raspored narudžbi  
 
-**Parametri Ganttogram**
-Omogućuju unos zadanih parametara za upravljanje Ganttovim obrascem (*Vrsta Ganttove simulacije* i *Vrsta simulacije snimke*).
+Mreža prikazuje jednostavan pregled liste skladišta za koja se mora provjeriti dostupnost. Ta se lista postavlja u obrascu pod nazivom *Izračun dostupnosti*, koji se nalazi među alatima upravljačkog sustava.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, gumbi i polja](/docs/guide/common).
+## Gantt parametri  
+
+Omogućuje unos zadatih parametara za upravljanje obrascem Gantt (*Vrsta simulacije Gantt* i *Vrsta simulacije Snapshot*).
+
+## Parametri izračuna izvedivosti   
+
+Omogućuje unos uputa za aktivaciju i prikaz **Izvodljivost** radnih faza.   
+
+U trenutnoj verziji proizvoda jedina dostupna aktivacija je u upravljanju *Sekvenca faza*.U budućim verzijama bit će uvedene i druge procedure.  
+
+Moguće je aktivirati kontrolu izvedivosti: 
+
+- **Razmotri materijale**: omogućuje tipku *Detalj procjene materijala* i polje *Procjena materijala* u mreži aktivnih procedura u okviru **Izračun izvedivosti za primjenu u**;    
+- **Razmotri prethodne faze**: omogućuje tipku *Detalj procjene faza* i polje *Procjena faza* u mreži aktivnih procedura u okviru **Izračun izvedivosti za primjenu u**.
+
+## Izračun izvedivosti za primjenu u
+Dopusti omogućavanje izvedivosti u pojedinim postupcima:
+- Sekvenca faza
+- Kapaciteti radnih centara
+- Oslobađanje planiranih narudžbi
+- Lista za preuzimanje materijala
+- Filtriranje proizvodnih naloga  
+
+## Boje izračuna izvedivosti
+
+Moguće je postaviti boje koje ističu različite informacije o dostupnosti materijala koji se koristi:    
+- *Materijal nije dostupan*: označava da nijedan materijal nije dostupan, čak ni u djelomičnoj količini;     
+- *Materijal djelomično dostupan*: označava da postoji barem djelomična količina nekog materijala, ali ne i potpuna dostupnost svih;     
+- *Materijal dostupan*: označava da su svi materijali dostupni u potrebnim količinama;     
+- *Materijal nije potreban*: označava da nije potreban nijedan materijal;     
+
+Također se prikazuje i status napretka radnih faza koje prethode analiziranoj fazi:    
+- *Prethodna faza nije započeta*: označava da prethodna faza još nije započela;     
+- *Prethodna faza započeta*: označava da je prethodna faza započela, ali nije dovršena;     
+- *Prethodna faza dovršena*: označava da je prethodna faza završena;     
+- *Faza započeta*: označava da je analizirana faza započela.    
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, tipke i polja](/docs/guide/common).
