@@ -2160,7 +2160,7 @@
     "description": "The label for category Documenti in sidebar configurations"
   },
   "sidebar.configurations.category.Qualificazione fornitori": {
-    "message": "Qualificazione fornitori",
+    "message": "Kvalifikacija dobavljača",
     "description": "The label for category Qualificazione fornitori in sidebar configurations"
   },
   "sidebar.configurations.category.Reclami e Non conformità": {
@@ -2184,7 +2184,7 @@
     "description": "The label for category Controlli articolo in sidebar quality"
   },
   "sidebar.quality.category.Qualificazione fornitore": {
-    "message": "Qualificazione fornitore",
+    "message": "Kvalifikacija dobavljača",
     "description": "The label for category Qualificazione fornitore in sidebar quality"
   },
   "sidebar.releaseNotes.category.Versione 704": {

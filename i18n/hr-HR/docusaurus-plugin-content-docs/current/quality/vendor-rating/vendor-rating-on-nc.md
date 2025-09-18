@@ -1,5 +1,5 @@
 ---
-title: Valutazioni periodiche su Non conformità
+title: Periodične procjene nesukladnosti
 sidebar_position: 3
 ---
 
@@ -24,68 +24,68 @@ Obrazac se sastoji od područja filtra i područja rezultata. Nakon što se post
 
 ### ![](/img/neutral/common/accountant-search.png) Periodična kvalifikacija
 
-Per poter eseguire la valutazione è necessario premere il pulsante **Qualificazione periodica**.   
-Viene visualizzata una richiesta di:
-> **Data fine valutazione**: proposta alla data odierna è la data dalla quale valutare ogni singolo *Fornitore*, andando nel passato, per il periodo a lui assegnato.   
-> **Tipo valutazione**: è la tipologia attribuita alla valutazione di ogni singolo *Fornitore*.   
-> Viene proposto il *Tipo valutazione* indicato nei *Parametri qualificazione fornitore*.
-Entrambe le informazioni sono obbligatorie.   
+Za izvršavanje procjene potrebno je pritisnuti tipku **Periodična kvalifikacija**.   
+Prikazuje se zahtjev za:   
+> **Datum završetka procjene**: predložen na današnji datum, to je datum od kojeg se ocjenjuje svaki pojedini *Dobavljač*, idući unatrag, za razdoblje koje mu je dodijeljeno.   
+> **Tip procjene**: to je vrsta dodijeljena procjeni svakog pojedinog *Dobavljača*.   
+> Predlaže se *Vrsta procjene* navedena u *Parametrima kvalifikacije dobavljača*.   
+Obje informacije su obvezne.   
 
 
 
-## Gestione dati
+## Upravljani podaci
 
 
-### Valutazioni periodiche su Non conformità
+### Periodične procjene nesukladnosti
 
-E' l'elenco dove vengono visualizzate le informazioni principali della *Valutazione periodiche su Non conformità*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Da data valutazione**: è la data iniziale del periodo di valutazione.   
-> **A data valutazione**: è la data finale del periodo di valutazione.   
-> **Fornitore**: è la ragione sociale del *Fornitore* valutato.   
-> **Bonus**: è il valore di partenza del *Bonus* associato al *Fornitore*.   
-> **Bonus residuo**: è il valore finale del *Bonus* una volta effettuata la valutazione.   
-> **Punteggio %**: è il valore percentuale tra *Bonus residuo* e *Bonus iniziale*.   
-> **Valutazione**: è la *Valutazione* data al *Fornitore* sulla base del *Punteggio %* ottenuto.   
-> La cella viene colorata con i colori di *sfondo* e di *testo* previsti nella tabella delle *Valutazioni fornitore*.   
-> Se la *Valutazione* attribuita è associata ad una *Valutazione fornitore* con *Sospensione automatica* il *Fornitore* valutato verrà *Sospeso* dalla *Data valutazione*.
-> Il ripristino della sospensione deve essere fatto manualmente dalla *Funzione aziendale* preposta.   
-> **Note**: annotazioni libere.   
-Tutte le informazione sono di sola lettura ad eccezione delle Note.   
-
-
-### Valori Non conformità nel periodo
-
-E' l'elenco delle diverse *Gravità* riscontrate nel periodo valutato.   
-L'elenco si compone delle seguenti informazioni:   
-> **Gravità**: è il codice della *Gravità*.   
-> **Descrizione gravità**: è la descrizione della *Gravità*.   
-> **Conteggio**: è il numero delle *Gravità* conteggiate.   
-> **Punteggio gravità**: è il *Punteggio calcolo indice di qualificazione fornitore* associato alla *Gravità*.   
-> **Totale punteggio calcolato**: è la sommatoria di tutti i *Punteggi calcolo indici di qualificazione fornitore* (**IQF**) e tra loro moltiplicati.   
+To je popis gdje se prikazuju glavne informacije o *Periodičnim procjenama nesukladnosti*.   
+Popis se sastoji od sljedećih informacija:   
+> **Od datuma procjene**: početni je datum razdoblja procjene.   
+> **Do datuma procjene**: krajnji je datum razdoblja procjene.   
+> **Dobavljač**: naziv je tvrtke ocijenjenog *Dobavljača*.   
+> **Bonus**: početna je vrijednost *Bonusa* dodijeljenog *Dobavljaču*.   
+> **Preostali bonus**: konačna je vrijednost *Bonusa* nakon izvršene procjene.   
+> **Bodovi %**: postotna je vrijednost između *Preostalog bonusa* i *Početnog bonusa*.   
+> **Procjena**: *Procjena* je dodijeljena *Dobavljaču* na temelju postignutog *Bodovi %*.   
+> Ćelija je obojena *pozadinskom* i *tekstualnom* bojom predviđenom u tablici *Procjena dobavljača*.   
+> Ako je dodijeljena *Procjena* povezana s *Procjenom dobavljača* s *Automatskom suspenzijom*, ocijenjeni *Dobavljač* bit će *Suspendiran* od *Datuma procjene*.   
+> Oporavak suspenzije mora se izvršiti ručno od strane nadležne *Poslovne funkcije*.   
+> **Napomene**: slobodne bilješke.   
+Sve su informacije samo za čitanje, osim Bilješki.   
 
 
-### Extra data
+### Vrijednosti nesukladnosti u periodu
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Valutazione periodiche su Non conformità*.   
+To je popis različitih *Ozbiljnosti* utvrđenih u procijenjenom razdoblju.   
+Popis se sastoji od sljedećih informacija:   
+> **Ozbiljnost**: to je šifra *Ozbiljnosti*.   
+> **Opis ozbiljnosti**: opis *Ozbiljnosti*.   
+> **Broj**: broj je prebrojanih *Ozbiljnosti*.   
+> **Bodovi ozbiljnosti**: *Bodovi izračuna indeksa kvalifikacije dobavljača* povezani su s *Ozbiljnošću*.   
+> **Ukupni izračunati bodovi**: zbroj je svih *Bodova izračuna indeksa kvalifikacije dobavljača* (**IQF**) i međusobno pomnoženih.   
 
 
-:::tip Metodo utilizzato per il calcolo   
-*Metodo utilizzato per il calcolo di:* **Totale punteggio calcolato**, **Bonus residuo**, **Punteggio %** e **Valutazione**.   
-- Viene considerata ogni singola riga *Difetto* di *Non conformità* inserite nel periodo valutato, e attribuite al *Fornitore* in valutazione.   
-- Per ogni riga di *Difetto riscontrato* viene moltiplicato ogni singolo *IQF* di: *Difetto riscontrato*, *Causa effettiva* oppure *Causa presunta* (in mancanza di una *Causa effettiva* associata), *Soluzione proposta* e *Decisione intrapresa*. Se uno di questi dati non viene inserito l'*IQF* è pari a **1,0**. Esempio:   
-  - riga 1: *IQF Difetto riscontrato* = **5,1**, *IQF Causa effettiva* = **1,5**, *IQF Soluzione proposta* = **1,3** e *IQF Decisione intrapresa* = **2,1**;   
-  il totale riga è pari a: **5,1 * 1,5 * 1,3 * 2,1 = 20.8845** = *Totale Riga 1*.   
-  - riga 2: *IQF Difetto riscontrato* = **2,1**, *IQF Causa presunta* = **4,2** (*Causa effettiva* non inserita), *Soluzione proposta* non inserita quindi *IQF* = **1,0** e *IQF Decisione intrapresa* = **1,7**;   
-  il totale riga è pari a: **2,1 * 4,2 * 1,0 * 1,7 = 14,994** = *Totale Riga 2*.   
-- Il Totale punteggio calcolato per singola riga viene sommato alle altre righe considerate che hanno la medesima *Gravità*. La sommatoria di tutti i punteggi per riga è il *Totale punteggio calcolato* per quella *Gravità*. Esempio:   
-  - **Totale punteggio calcolato** = *Totale Riga 1* + *Totale Riga 2* = **20,8845 + 14,994 = 35,8785**.   
-- Per calcolare il *Bonus residuo* consideriamo un *Bonus* iniziale del *Fornitore* pari a **500**. Quindi:   
-    - **Bonus residuo** = **Bonus** - sommatoria dei **Totale punteggi calcolati** per ogni *Gravità* = **500 - 35,8785 = 464,1215**.   
-- Per calcolare il *Punteggio %* è l'applicazione della percentuale tra *Bonus residuo* e *Bonus iniziale*:   
-    - **Bonus residuo** / **Bonus** * 100 = **464,1215 / 500 * 100 = 92.8243%**.   
-- La **Valutazione** viene attribuita sulla base dei valori di *Punteggio da* indicati nell'elenco *Intervalli di punteggio per la valutazione* presente nei *Parametri Qualificazione fornitore*. Viene considerata la *Valutazione* con *Punteggio da* immediatamente inferiore al **Punteggio %**.
+### Dodatni podaci
+
+Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) generalno za *Periodične procjene nesukladnosti*.   
+
+
+:::tip Metoda korištena za izračun   
+*Metoda korištena za izračun:* **Ukupno izračunati bodovi**, **Preostali bonus**, **Bodovi %** i **Ocjena**.   
+- Razmatra se svaki pojedini redak *Kvara* *Nesukladnosti* unesen u procijenjenom razdoblju, i dodijeljen *Dobavljaču* u procjeni.   
+- Za svaki redak *Uočenog kvara* množi se svaki pojedini *IQF*: *Uočenog kvara*, *Stvarnog uzroka* ili *Pretpostavljenog uzroka* (u nedostatku povezanog *Stvarnog uzroka*), *Predloženog rješenja* i *Poduzete odluke*. Ako jedan od tih podataka nije unesen, *IQF* je jednak **1,0**. Primjer:   
+  - redak 1: *IQF Uočenog kvara* = **5,1**, *IQF Stvarnog uzroka* = **1,5**, *IQF Predloženo rješenje* = **1,3** i *IQF Poduzete odluke* = **2,1**;   
+  Ukupno za redak iznosi: **5,1 * 1,5 * 1,3 * 2,1 = 20,8845** = *Ukupno Redak 1*.   
+  - redak 2: *IQF Uočenog kvara* = **2,1**, *IQF Pretpostavljenog uzroka* = **4,2** (*Stvarni uzrok* nije unesen), *Predloženo rješenje* nije uneseno, stoga *IQF* = **1,0** i *IQF Poduzete odluke* = **1,7**;   
+  Ukupno za redak iznosi: **2,1 * 4,2 * 1,0 * 1,7 = 14,994** = *Ukupno Redak 2*.   
+- Ukupan izračunati rezultat za pojedinačni redak zbraja se s ostalim razmatranim recima koji imaju istu *Ozbiljnost*. Zbroj svih rezultata po retku je *Ukupno izračunati rezultat* za tu *Ozbiljnost*. Primjer:   
+  - **Ukupno izračunato bodova** = *Ukupno Redak 1* + *Ukupno Redak 2* = **20,8845 + 14,994 = 35,8785**.   
+- Za izračun *Preostalog bonusa* uzimamo početni *Bonus* *Dobavljača* jednak **500**. Dakle:   
+    - **Preostali bonus** = **Bonus** - zbroj **Ukupno izračunatih bodova** za svaku *Ozbiljnost* = **500 - 35,8785 = 464,1215**.   
+- Za izračun *Postotka bodova* primjenjuje se postotak između *Preostalog bonusa* i *Početnog bonusa*:   
+    - **Preostali bonus** / **Bonus** * 100 = **464,1215 / 500 * 100 = 92.8243%**.   
+- **Ocjena** se dodjeljuje na temelju vrijednosti *Bodova od* navedenih na popisu *Raspona bodova za ocjenjivanje* koji se nalazi u *Parametrima kvalifikacije dobavljača*. Uzima se u obzir *Ocjena* s *Bodovi od* koja je odmah niža od **Postotka bodova**.   
 :::
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
