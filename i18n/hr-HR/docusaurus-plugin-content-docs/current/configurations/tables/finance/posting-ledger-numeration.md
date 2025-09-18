@@ -4,14 +4,13 @@ sidebar_position: 19
 ---
 
 
-:::note Percorso
-**Configurazione > Amministrazione > Numerazione registrazioni contabili**
+Percorso form: **Configurazione > Amministrazione > Numerazione registrazioni contabili**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
 
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
 :::
-
 ---
 
 In questa tabella viene definita, attraverso un ** [*Numeratore standard di Fluentis* ](/docs/configurations/tables/fluentis-numerations) ** , la politica per le registrazioni contabili definitive e provvisorie.
@@ -31,7 +30,9 @@ E' anche possibile, in casi particolari o di specifica necessità, far partire l
 
 :::danger ATTENZIONE
 Si sconsiglia di impostare, in situazioni normali, più di un numeratore, rispettivamente per le registrazioni definitive e provvisorie, contemporaneamente. Se emerge questa necessità si veda ** [*la testata della causale contabile* campo *Numerazione*](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) **.
-Si sconsigli altresì di inserire una data fine validità per la numerazione in corso se questo non è motivato da un effettivo cambio nei dettagli della politica stessa. La periodicità scelta nella numerazione stessa fa sì che il numero riparta ogni anno , oppure ogni giorno ecc... Si veda per ulteriori dettagli in merito al rinnovo dei numeratori al cambio d'anno [**qui**](/docs/configurations/utility/new-year-counter-generation).
+Si sconsiglia altresì di inserire una data fine validità per la numerazione in corso se questo non è motivato da un effettivo cambio nei dettagli della politica stessa. La periodicità scelta nella numerazione stessa fa sì che il numero riparta ogni anno , oppure ogni giorno ecc... Si veda per ulteriori dettagli in merito al rinnovo dei numeratori al cambio d'anno [**qui**](/docs/configurations/utility/new-year-counter-generation).
 :::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r62pWFU1tuk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro)
+:::

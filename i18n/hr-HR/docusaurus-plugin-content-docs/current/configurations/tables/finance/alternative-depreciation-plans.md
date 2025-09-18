@@ -22,9 +22,3 @@ I campi della seconda sezione sono:
 **Descrizione**: descrizione categoria a cui applicare il piano di ammortamento.
 
 **Perc. di applicazione**: percentuale da applicare.
-
-
-
-
-
-

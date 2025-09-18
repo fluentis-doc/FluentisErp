@@ -15,7 +15,8 @@ La tabella consente di definire e gestire la lista dei codici di nomenclatura co
 
 **Data fine validità**: per bloccare l'uso del codice corrispondente.
 
+**Servizio**: indica la codifica di una nomenclatura dei servizi, a 5 caratteri, da proporre in valorizzazione delle sezioni dei servizi nei modelli
 
-
-
-
+:::tip Nota
+All'interno di Bizlink è prevista una procedura di import da foglio elettronico per aggiornare di anno in anno le nomenclature in modo massivo
+:::

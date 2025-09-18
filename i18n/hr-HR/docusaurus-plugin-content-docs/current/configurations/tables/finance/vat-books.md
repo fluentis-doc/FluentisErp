@@ -3,31 +3,36 @@ title: Registri IVA
 sidebar_position: 20
 ---
 
-:::note Percorso
-**Configurazione > Tabelle > Amministrazione > Registri IVA**
+Percorso form: **Configurazione > Tabelle > Amministrazione > Registri IVA**
 
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+
+I registri creati dal Fast Start sono già pronti per gestire
+
+- Acquisti e vendite Italia
+- Acquisti e vendite Reverse Charge oltre a sezionale per giroconto acquisti
+- Acquisti e vendite UE oltre a sezionale per giroconto acquisti
+- Acquisti e vendite Extra UE
+- Corrispettivi
+- Riepilogativo per stampa liquidazioni iva
 :::
 
----
+### Pulsanti specifici
 
-Tabella di impostazione dei registri IVA da gestire nella società attiva. 
-
-:::note Pulsanti della Ribbon bar
-| Funzione | Significato |
-| --- | --- |
-| Nuovo | Pulsante per effettuare l'inserimento di un nuovo registro IVA. |
-| Inserimento anno | Pulsante per effettuare l'inserimento di un nuovo anno per il registro IVA su cui si è posizionati. |
-| Cancella | Pulsante per effettuare la cancellazione del registro IVA su cui si è posizionati. |
-| Cancella anno | Pulsante per effettuare la cancellazione dell'anno del registro IVA su cui si è posizionati. |
-| Anteprima | Pulsante per effettuare la stampa. |
-| Stampa | Pulsante per effettuare la stampa. |
-| Annulla stampe definitive | Pulsante per effettuare l'annullamento delle stampe definitive dei registri. Si apre un dialog nel quale selezionare il registro e il periodo che si intende annullare. |
+**Nuovo**: permette di effettuare l'inserimento di un nuovo registro IVA.  
+**Inserimento anno**: permette di effettuare l'inserimento di un nuovo anno per il registro IVA su cui si è posizionati.  
+**Cancella**: permette di effettuare la cancellazione del registro IVA su cui si è posizionati.  
+**Cancella anno**: permette di effettuare la cancellazione dell'anno del registro IVA su cui si è posizionati.  
+**Anteprima**: permette di effettuare la stampa.  
+**Stampa**: permette di effettuare la stampa.  
+**Annulla stampe definitive**: permette di effettuare l'annullamento delle stampe definitive dei registri. Si apre un dialog nel quale selezionare il registro e il periodo che si intende annullare.  
 :::
 
-I campi della **prima sezione**:
+### Prima sezione 
 
 **Codice**: codice alfanumerico identificativo del registro.
 
@@ -45,7 +50,7 @@ I campi della **prima sezione**:
 
 **Descrizione**: descrizione rif. reg. acquisto.
 
-**Numerazione**: consente di impostare per ogni registro un numeratore con le consuete opzioni standard comuni agli altri numeratori presenti nel gestionale, al posto della numerazione standard prevista per i registri iva.
+**Numerazione**: consente di impostare per ogni registro un numeratore con le consuete opzioni standard comuni agli altri numeratori presenti nel gestionale, al posto della numerazione standard prevista per i registri iva. Nella localizzazione italiana questo campo non viene utilizzato.
 
 **Descrizione**: descrizione del numeratore associato
 
@@ -53,9 +58,9 @@ I campi della **prima sezione**:
 
 **Descrizione**: descrizione del tipo attività iva
 
----
+### Seconda sezione  
 
-**La seconda sezione** consente di impostare il contatore dei protocolli per ogni anno contabile nel campo 'Prot. IVA Iniziale'.
+Consente di impostare il contatore dei protocolli per ogni anno contabile nel campo 'Prot. IVA Iniziale'.
 
 **Anno**: anno di riferimento.
 
@@ -67,6 +72,10 @@ I campi della **prima sezione**:
 
 **Ultima pag. stampata**: ultimo numero di pagina stampata in definitiva.
 
----
+:::tip nota
+la stampa di questa tabella consente di visualizzare l'ultimo periodo stampato in modo definitivo per ogni registro e anno
+:::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r62pWFU1tuk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro)
+:::

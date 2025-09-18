@@ -3,20 +3,19 @@ title: Causali contab. VIDEO TUTORIALS
 sidebar_position: 1
 ---
 
-All'interno di questa tabella si possono cercare e codificare le causali di contabilità generale.
+La configurazione delle contabili contabili rappresenta il cuore logico  del modulo relativo alle registrazioni contabili e permette di gestire e sfruttare tutta l'automazione connessa.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u-tX9Gx4JQA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+La visione di questi video è raccomandata a tutti quelli che vogliono entrare nel merito dei settaggi specifici.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EKrOH5__a08" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+Mentre risulta del tutto necessaria per chi intende configurare un ambiente operativo su misura.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aHWrFseEiYU" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+Attraverso una corretta configurazione e applicazione di queste procedure, l'utente ERP può ottimizzare il flusso di contabilizzazione automatica, riducendo gli errori manuali e migliorando la tracciabilità delle operazioni contabili.
 
----
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9JwJVWUl8PM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro)
+:::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JZaPIKhRfHk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IUb1jeTteB4" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hKPW4QfQnt8" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+:::tip[Maggiori informazioni]
+Consultare la pagina sull' [**Inserimento di una nuova causale**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+:::

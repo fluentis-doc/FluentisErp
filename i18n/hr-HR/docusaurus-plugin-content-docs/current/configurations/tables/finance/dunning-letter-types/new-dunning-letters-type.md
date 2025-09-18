@@ -1,47 +1,48 @@
 ---
-title: Nova vrsta podsjetnika 
+title: Nuovo tipo solleciti
 sidebar_position: 3
 ---
 
-Polja ovog obrasca su: 
+I campi di questa form sono:
 
-**Šifra**: identifikacijski kod vrste podsjetnika.
+**Codice**: codice identificativo del tipo sollecito.
 
-**Opis**: opis vrste podsjetnika.
+**Descrizione**: descrizione del tipo sollecito.
 
-**Vrsta kamate**: izborno, to je poveznica na vrstu kamate koja se primjenjuje na zakašnjelo plaćanje, kako bi se dobio izračun na dan izdavanja opomene.
+**Tipo interesse**: opzionale, è il collegamento al tipo di tasso di interesse da applicare al ritardo di pagamento, per ottenere un calcolo alla data di emissione del sollecito.
 
-**Podsjetnik za grupu stavki**: upravljačka zastavica za grupu stavki, posebno će upravljati pismom podsjetnika za grupu stavki u isto vrijeme (standardno upravljanje), dok bi bez oznake svaka računovodstvena stavka imala svoj vlastiti podsjetnik odvojen od ostali.
+**Sollecito per gruppo partite**: il flag di gestione per gruppo di partite, in particolare, andrà a gestire una lettera di sollecito per un gruppo di partite contemporaneamente (gestione standard), mentre senza flag ogni partita contabile avrebbe il suo sollecito separato dalle altre.
 
-Nakon što je vrsta podsjetnika spremljena, moguće je kreirati različite razine pomoću gumba 'novo'. 
+Una volta salvato il tipo di sollecito è possibile crearne i vari livelli con il pulsante ‘nuovo'.
 
-**Šifra**: identifikacijski kod podsjetnika.
+**Codice**: codice identificativo del sollecito.
 
-**Opis**: opis vrste podsjetnika.
+**Descrizione**: descrizione del tipo sollecito.
 
-**Prioritet**: Prioritet stvaranja od 1 do N razina.
+**Priorità**: priorità di creazione da 1 a N livelli.
 
-**Opis tipa kredita**: ne upravlja se vezom s vrstom kontrole kredita kupca.
+**Descrizione tipo fido**: il collegamento ad un tipo di controllo fido cliente non è gestito.
 
-**Dani kašnjenja**: naznaka dana odgode koji moraju proći prije nego što se zatraži utakmica.
+**Giorni di ritardo**: indicazione dei giorni di ritardo che devono decorrere prima di sollecitare la partita.
 
 :::tip[Info]
-U postupku [***Generiranja opomena***](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro), mogu se upravljati i opomenama s brojem **negativnih Dana kašnjenja**. Tipično se negativni dani postavljaju kako bi se kreiralo upozorenje prije dospijeća. Postupak [*Automatskog generiranja opomena*](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue) međutim **NE** podržava negativni parametar.
+Nella procedura di [***Generazione solleciti***](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro), possono essere gestiti anche solleciti con Numero **Giorni di Ritardo negativi**. Tipicamente i giorni negativi vengono impostati per creare un avviso prima della scadenza. La Procedura di [*Generazione automatica solleciti*](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue) invece **NON** supporta il parametro negativo.
 :::
 
-**Dani**: broj dana za koje podsjetnik ističe i hoće li se oni računati od datuma kreiranja ili datuma isteka prethodnog podsjetnika. 
+**Giorni**: il numero di giorni di scadenza del sollecito e se questi siano da conteggiare dalla data di creazione o dalla data di scadenza del sollecito precedente.
 
-**Od prethodnog datuma kretanja**: referentni datum za razine koje slijede prve.
+**Da data movimento precedente**: data di riferimento per i livelli successivi al primo.
 
-**Od datuma kreiranja**: referentni datum koji se obično koristi za prvu razinu.
+**Da data creazione**: data di riferimento solitamente utilizzata per il primo livello.
 
-:::danger PAŽNJA 
-Vrijednosti polja "**dani kašnjenja**" i "**dani**", posebno za podsjetnike koji slijede nakon prvog, dodaju se i stoga u slučaju drugog, trećeg podsjetnika itd. općenito nije potrebno dodati vrijednost u parametru *dana odgode*, umjesto toga moguće je pozvati se na dodatno vrijeme proteklo od datuma prvog podsjetnika putem parametra *dana*. 
+:::danger ATTENZIONE
+I valori dei campi "**giorni di ritardo**" e "**giorni**" , in particolare per i solleciti successivi al primo, vengono sommati e pertanto nel caso del secondo, terzo sollecito ecc.. in genere non è necessario aggiungere un valore nel parametro *giorni di ritardo*, è possibile invece riferirsi all'ulteriore tempo intercorso dalla data del primo sollecito  tramite il parametro *giorni*.
 :::
 
-Za svaki broj podsjetnika, nakon što ga spremite, možete nastaviti s umetanjem tekstova na različitim jezicima: prvi koji ćete učitati je onaj koji će se koristiti prema zadanim postavkama kada registar kupaca nema dodijeljen jezik. 
+Per ogni numero di sollecito si potrà procedere, una volta salvato, all'inserimento dei vari testi in lingua: il primo che si andrà a caricare è quello che sarà utilizzato di default quando l'anagrafica cliente non ha una lingua assegnata.
 
-Tekstovi su podijeljeni u 4 dijela: predmet pisma, naslov, zaključak i dio literature (aktivan samo za podsjetnike na grupe stavki). Konkretno, u odjeljku s referencama možete umetnuti tekst pomoću kodova navedenih u podnožju obrasca: npr. “Ref. (3) br. (4) od (5), (9) od (8) (10) koji istječe (6)”.
+I testi sono divisi in 4 sezioni: l'oggetto della lettera, la testata, la conclusione e la sezione riferimenti (attiva solo per solleciti su gruppi di partite). Nella sezione riferimenti, in particolare, si può inserire un testo utilizzando i codici previsti alla base della maschera: ad es. “Rif. (3) nr. (4) del (5), (9) di (8) (10) con scadenza al (6)”.
+
 
 
 

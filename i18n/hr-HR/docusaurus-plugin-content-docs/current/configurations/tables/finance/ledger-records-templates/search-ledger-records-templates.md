@@ -15,4 +15,10 @@ Per inserire una nuova causale, cliccare sul pulsante **Nuova**.
 
 > **Duplica la causale selezionata**: permette di duplicare la causale selezionata.  Utile per creare una nuova causale partendo da una con caratteristiche simili. Si aprirà una finestra nella quale verrà chiesto di attribuire un codice alla causale nuova che si intende creare e dopo aver confermato verrà chiesto di poter entrare nella causale appena creata per modificarne alcune caratteristiche. 
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro)
+:::
+
+:::tip[Maggiori informazioni]
+Consultare la pagina sull' [**Inserimento di una nuova causale**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+:::

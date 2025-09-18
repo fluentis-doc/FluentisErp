@@ -3,9 +3,15 @@ title: Categoria cespite
 sidebar_position: 5
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 All'interno di questa tabella si codificano le categorie dei cespiti gestiti nella società. 
 
-### **Griglia superiore**
+### Tabella superiore 
 
 **Categoria**: codice alfanumerico.
 
@@ -31,13 +37,13 @@ All'interno di questa tabella si codificano le categorie dei cespiti gestiti nel
 
 **Cod. bilancio**: codice di bilancio per la stampa del prospetto delle rivalutazioni.
 
-**Amm. oggettivo**: attiva la gestione dei dati oggettivi del cespite: questa prevede una duplicazione dei valori patrimoniali contabili al fine di applicare una logica d'ammortamento extracontabile separata
+**Gestione extra-contabile**: attiva la gestione dei dati extracontabili del cespite: questa prevede una duplicazione dei valori patrimoniali contabili al fine di applicare una logica d'ammortamento extracontabile separata
 
 **Giorni**: Attivando questo flag il calcolo della quota di ammortamento terrà conto dei giorni esatti di possesso del bene nell'anno in corso, anzichè riferirsi alla logica standard che calcola la quota intera indipendentemente dalla data di acquisto, eventualmente dimezzandola il primo anno se il flag *Amm. Primo anno* presente nella seconda griglia è stato attivato (vedi sotto).
 
 **Numerazione**: (Facoltativo) Permette di definire una numerazione delle schede cespite specifica per ogni singola categoria. Il campo si collega all'[**apposita tabella**](/docs/configurations/tables/fluentis-numerations) dove definire il numeratore. Se non viene definito, di default, continua ad essere utilizzata la numerazione generale dei cespiti eventualmente collegata al precodice (oppure unica).
 
-### Seconda griglia
+### Seconda Tabella
 
 La seconda sezione  è dedicata all'impostazione dei dettagli di ammortamento applicabili alla categoria superiore selezionata.
 
@@ -69,22 +75,20 @@ La seconda sezione  è dedicata all'impostazione dei dettagli di ammortamento a
 
 **Descr. deducibilità**: descrizione del tipo di deducibilità.
 
----
+**Conto / sottoconto / descrizione Non Deducibile**: in questo campo è possibile inserire il sottoconto contabile sul quale contabilizzare automaticamente la parte indeducibile fiscalmente della quota di ammortamento. Il conto viene riportato all'interno della scheda cespite in corrispondenza della riga relativa alla quota di ammortamento. Affinchè venga movimentato, sia in fase di contabilizzazione dell'ammortamento annuale, sia in fase di ripresa ammortamento nelle chiusure dei conti infrannuali, è necessario attivare l'apposito flag. Il flag può essere predefinito all'interno dei [**parametri cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters).
 
-| Bottone della Ribbon Bar | Significato |
-| --- | --- |
-| Cerca nella tabella superiore | Pulsante per effettuare la ricerca nella tabella superiore attraverso i campi di filtro categoria e descrizione. |
-| Inserisce nella tabella superiore | Pulsante per inserire una nuova categoria cespite. |
-| Inserisce nella tabella dettaglio | Pulsante per inserire il dettaglio della tabella superiore selezionata. |
-| Inserisce nella tabella Cdc | Pulsante per inserire i Cdc della tabella superiore selezionata. OBSOLETO |
-| Cancella righe selezionate | Pulsante per effettuare la cancellazione delle righe selezionate  (categoria cespite). |
-| Cancella righe selezionate dalla tabella inferiore | Pulsante per effettuare la cancellazione delle righe selezionate di tabella inferiore ( dettaglio del tipo ammortamento). |
-| Cancella righe selezionate dalla tabella Cdc | Pulsante per effettuare la cancellazione delle righe selezionate di tabella centri di costo. OBSOLETO |
-| Salva | Pulsante per salvare le modifiche. |
+#### Pulsanti specifici
 
----
+**Cerca nella tabella superiore**: permette di effettuare la ricerca nella tabella superiore attraverso i campi di filtro categoria e descrizione.  
+**Inserisce nella tabella superiore**: permette di inserire una nuova categoria cespite.  
+**Inserisce nella tabella dettaglio**: permette di inserire il dettaglio della tabella superiore selezionata.  
+**Inserisce nella tabella Cdc**: permette di inserire i Cdc della tabella superiore selezionata. OBSOLETO  
+**Cancella righe selezionate**: permette di effettuare la cancellazione delle righe selezionate  (categoria cespite).  
+**Cancella righe selezionate dalla tabella inferiore**: permette di effettuare la cancellazione delle righe selezionate di tabella inferiore ( dettaglio del tipo ammortamento).  
+**Cancella righe selezionate dalla tabella Cdc**: permette di effettuare la cancellazione delle righe selezionate di tabella centri di costo. OBSOLETO  
+**Salva**: permette di salvare le modifiche.  
 
-### GRIGLIA DEI CENTRI DI COSTO (RIMOSSA SE ATTIVO IL MODULO CONTROLLING COMPLETO)
+### GRIGLIA DEI CENTRI DI COSTO (RIMOSSA SE ATTIVO IL MODULO CONTROLLING COMPLETO IN TABELLA SOCIETA', SENZA IL PARAMETRO DI USO CENTRI CONTABILI)
 
 :::note NOTA
 Nonostante la gestione dei centri di costo per i cespiti possa essere elaborata con delle logiche più sofisticate di gestione dell'ammortamento oggettivo, utili alle esigenze di un controllo di gestione approfondito, è comunque possibile agganciare un centro di costo specifico per il singolo cespite, **nella tab Dettaglio**, (oppure direttamente sulla categoria cespite ma in tal caso occorre disattivare il Flag Gestione controlling nell'anagrafica della società in uso) da valorizzare con la quota annuale calcolata ai fini fiscali e contabili.
@@ -98,10 +102,7 @@ All'interno della scheda cespite nella griglia centri di costo della tab **Opera
 
 **Percentuale**: Impostazione della percentuale di valorizzazione al centro di costo.
 
----
-
 ### **VIDEO TUTORIALS**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
+:::important Vedi Anche
+[**VIDEO TUTORIALS SULLE TABELLE CESPITI**](/docs/video/finance/intro)
+:::

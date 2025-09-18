@@ -14,17 +14,17 @@ si potrebbe ipotizzare una codifica dei livelli autorizzativi come segue:
 
 ![](/img/it-it/configurations/tables/finance/authorization-levels.png)
 
-Il livello *00 – Blocco iniziale* andrebbe preimpostato in ogni **anagrafica fornitore**, nel tab [**Pagamenti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/), per fare in modo che le sue partite siano create bloccate con questo livello di partenza.
+Il livello *00 – Blocco iniziale* va preimpostato in ogni **anagrafica fornitore**, nel tab [**Pagamenti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/), per fare in modo che le sue partite siano create bloccate con questo livello di partenza.
 
 ![](/img/it-it/configurations/tables/finance/authorization-levels-combo.png)
 
 La partita può essere poi portata al livello *01* dagli utenti del ruolo *Amministrazione* (nell’ immagine *Fluentis Users* Cfr. gestione utenti e ruoli utente nella sezione ARM): questo perché ha *livello padre* 0, e lo porta a livello 1
 
-Poi la partita può essere portata a livello *02* dagli utenti del ruolo *Acquisti* (nell’ immagine è *Fluentis Admins*): questo perché ha *livello padre* 1 e lo porta a livello 2
+Poi la partita può essere portata a livello *02* dagli utenti del ruolo *Acquisti* (nell’immagine è *Fluentis Admins*): questo perché ha *livello padre* 1 e lo porta a livello 2
 
-Poi ancora la partita può arrivare al livello finale *03* solo ad opera dell’ utente XXXXXXX (il titolare), che darà effettivamente l’ autorizzazione al pagamento (e quindi solo a questo punto verrà rimosso il blocco nella partita, che diventerà pagabile)
+Poi ancora la partita può arrivare al livello finale *03* solo ad opera dell’utente XXXXXXX (il titolare), che darà effettivamente l’autorizzazione al pagamento (e quindi solo a questo punto verrà rimosso il blocco nella partita, che diventerà pagabile)
 
-Ogni step può richiedere l’ inserimento di una nota di autorizzazione, se è impostato il flag al livello
+Ogni step può richiedere l’inserimento di una nota di autorizzazione, se è impostato il flag al livello
 
 Questi cambi stati possono essere eseguiti dalla maschera [**Gestione Liquidità**](/docs/finance-area/maturity-values/procedures/cash-management/), tramite il pulsante *Autorizza partita*. 
 
