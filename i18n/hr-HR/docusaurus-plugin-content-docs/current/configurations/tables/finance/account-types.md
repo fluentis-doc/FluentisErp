@@ -1,63 +1,63 @@
 ---
-title: Tipi conto
+title: Tipovi konta
 sidebar_position: 30
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Fast Start]
+Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako se planira ručna konfiguracija, potrebno je slijediti kontrolni popis na poveznici.
 :::
 
 
-Percorso: **Configurazione > Tabelle > Amministrazione > Tipi conto**
+Putanja: **Konfiguracija > Tablice > Administracija > Tipovi računa**
 
-### Gestione tabella
+### Upravljanje tablicom
 
-La definizione della tabella tipo conto non è altro che una ‘qualifica' che va a indicare alla procedura come gestire il codice di sottoconto cui è assegnato:
+Definicija tablice tipa računa predstavlja ‘kvalifikaciju’ koja proceduri govori kako upravljati šifrom podračuna kojem je dodijeljena:
 
-- innanzi tutto va a identificare come valorizzare il dettaglio di gestione delle 4 tipologie di anagrafica previste;
+- Prvenstveno identificira način vrednovanja detalja upravljanja za 4 predviđene vrste kartica (anagrafika).
 
-- in secondo luogo va a identificare le sezioni di appartenenza a bilancio (attivo/passivo/costi/ricavi);
+- Zatim određuje sekcije pripadnosti u bilanci (aktiva/pasiva/troškovi/prihodi).
 
-- può infine servire come criterio di filtro, tipicamente all'interno dell'help conti.
+- Može se koristiti i kao kriterij filtriranja, tipično unutar pomoćnog sustava za račune.
 
-#### Campi specifici
+#### Specifična polja
 
-**Codice**: codice tipo conto.
+**Šifra**: šifra tipa računa.
 
-**Descrizione**: descrizione tipo conto.
+**Opis**: opis tipa računa.
 
-**P. Attivo**: con flag su attivo.
+**P. Aktiva**: označeno ako pripada aktivi.
 
-**P. Passivo**: con flag su passivo.
+**P. Pasiva**: označeno ako pripada pasivi.
 
-**E. Costi**: con flag su costi.
+**E. Troškovi**: označeno ako pripada troškovima.
 
-**E. Ricavi**: con flag su ricavi.
+**E. Prihodi**: označeno ako pripada prihodima.
 
-**C. Ordine**: con flag su conti d'ordine.
+**C. Nalog**: označeno ako pripada nalog-računima.
 
-**Cliente**: con flag su clienti + attivo.
+**Klijent**: označeno za klijente + aktiva.
 
-**Fornitore**: con flag su fornitori + passivo.
+**Dobavljač**: označeno za dobavljače + pasiva.
 
-**Banca**: con flag su attivo o passivo + banca.
+**Banka**: označeno za aktivu ili pasivu + banka.
 
-**Agente**: con flag su agente + passivo.
+**Agent**: označeno za agenta + pasiva.
 
-**Servizio**: con flag su servizio. I conti con tale flag attivo sono i sottoconti per i quali Ia procedura gestisce in automatico le scritture di rettifica e integrazione a livello di bilanci infrannuali, ma anche le scritture di assestamento di contabilità generale.
+**Usluga**: označeno za uslugu. Računi s ovom oznakom su podračuni za koje procedura automatski upravlja knjiženjima korekcija i dopuna na razini polugodišnjih bilanci, ali i knjiženjima usklađenja glavne knjige.
 
-**Controlling**: I conti con questo tipo si possono utilizzare solo nell'area controlling e non in registrazioni di Contabilità generale
+**Kontroling**: računi ovog tipa mogu se koristiti samo u području kontrolinga, a ne u knjiženjima glavne knjige.
 
 ---
 
-#### Flag successivi (da *Tutti* a *Impostazioni Conai*)**
+#### Sljedeće oznake (od *Sve* do *Conai postavke*)**
 
-Con questi flag si abilita la visibilità dei corrispondenti tab all'interno delle anagrafiche contabili clienti / fornitori. Attivando *Tutti* i tab saranno tutti visibili.
+Ovim oznakama omogućuje se vidljivost odgovarajućih kartica unutar kartica knjigovodstvenih zapisa klijenata/dobavljača. Aktiviranjem Sve sve kartice će biti vidljive.
 
-### Video Tutorials
+### Video tutorijali
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro)
+:::important Pogledajte također
+[**VIDEO TUTORIJALI O ADMINISTRATIVNIM TABLICAMA**](/docs/video/finance/intro)
 :::
