@@ -1,12 +1,12 @@
 ---
-title: Voci di spesa
+title: Elementi potrošnje
 sidebar_position: 31
 ---
 
-La definizione della tabella delle voci di spesa consente di codificare delle voci da associare al piano dei conti per fini statistici.
+Definicija tablice stavki troška omogućuje kodificiranje stavki koje se povezuju s planom konta u statističke svrhe.
 
-#### Campi specifici
+#### Specifična polja
 
-**Codice**: codice voci di spesa.
+**Šifra**: šifra stavki troška.
 
-**Descrizione**: descrizione voci di spesa.
+**Opis**: opis stavki troška.
