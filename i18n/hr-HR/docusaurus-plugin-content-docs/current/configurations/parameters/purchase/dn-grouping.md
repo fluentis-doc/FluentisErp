@@ -17,22 +17,22 @@ Se nell'anagrafica del fornitore, nel tab *Parametri raggruppamento per cliente/
 
 Quando il DDT viene creato a partire da un unico ordine vengono riportati tutti i dati di testata presenti nel documento di partenza. Per i DDT creati da più ordini invece, vengono riportati i dati dell'anagrafica fornitore.    
 
-*Campi specifici*:
+#### Campi specifici  
 
-> **Riepilogativa**: se attivo, al momento dell'evasione ordini sarà creato un unico DDT per fornitore. Se non è attivo sarà sempre creato un DDT per ciascun ordine evaso. Il raggruppamento funziona solo per i *Tipi ordine* (di Acquisto o di Vendita, a seconda dell'operazione selezionata) che hanno codificato lo stesso *Tipo DDT* da creare. Tutti i flag successivi devono essere utilizzati in concomitanta con questo flag.    
->
-> **Raggruppamento per tipo documento**: se attivo, saranno raggruppati in un unico DDT tutti i documenti che hanno lo stesso *Tipo ordine*.     
->
-> **Raggruppamento per anno**: attivando questo flag sarà effettuato un raggruppamento per anno di creazione degli ordini.   
->
-> **Raggruppamento per mese**: per poter effettuare un raggruppamento per mese di creazione degli ordini è necessario attivare anche il flag precedente.    
->
-> **Raggruppamento per cambio**: se attivo, i documenti con la stessa divisa e stesso cambio sranno raggruppati in un unico DDT.    
->
-> **Raggruppamento per ordine**: questo flag viene utilizzato solo per la *Creazione DDT e fatture di vendita da Picking* (vedi [Parametri raggruppamento DDT](/docs/configurations/parameters/sales/dn-grouping) e [fatture](/docs/configurations/parameters/sales/invoice-grouping)).    
->
-> **Raggruppamento per progetto**: attivando questo flag sarà effettuato un raggruppamento per progetto. Il raggruppamento funziona anche per i progetti inseriti a livello di riga articolo; se alcune delle righe articolo non hanno un progetto associato sarà creata un DDT diverso per tutti gli articoli che non lo contengono. Quando il progetto è stato inserito nella testata dei documenti di origine esso sarà riportato anche nella testata dei documenti di destinazione, in alternativa sarà mantenuto solo sulle righe articolo.    
->
-> **Raggruppamento per tipo e soluzione di pagamento**: attivando questo flag sarà effettuato un raggruppamento sulla base del tipo e della soluzione di pagamento inserito nell'ordine; tale dato sarà riportato nella testata del DDT creato.   
->
-> **Raggruppamento per destinazione**: attivando questo flag sarà effettuato un raggruppamento sulla base della destinazione inserita all'interno degli ordini; tale dato sarà riportato nella testata del DDT creato, nel tab *Trasporto*.     
+- **Riepilogativa**: se attivo, al momento dell'evasione ordini sarà creato un unico DDT per fornitore. Se non è attivo sarà sempre creato un DDT per ciascun ordine evaso. Il raggruppamento funziona solo per i *Tipi ordine* (di Acquisto o di Vendita, a seconda dell'operazione selezionata) che hanno codificato lo stesso *Tipo DDT* da creare. Tutti i flag successivi devono essere utilizzati in concomitanza con questo flag.    
+
+- **Raggruppamento per tipo documento**: se attivo, saranno raggruppati in un unico DDT tutti i documenti che hanno lo stesso *Tipo ordine*.     
+
+- **Raggruppamento per anno**: attivando questo flag sarà effettuato un raggruppamento per anno di creazione degli ordini.   
+
+- **Raggruppamento per mese**: per poter effettuare un raggruppamento per mese di creazione degli ordini è necessario attivare anche il flag precedente.    
+
+- **Raggruppamento per cambio**: se attivo, i documenti con la stessa divisa e stesso cambio saranno raggruppati in un unico DDT.    
+
+- **Raggruppamento per ordine**: questo flag viene utilizzato solo per la *Creazione DDT e fatture di vendita da Picking* (vedi [Parametri raggruppamento DDT](/docs/configurations/parameters/sales/dn-grouping) e [fatture](/docs/configurations/parameters/sales/invoice-grouping)).    
+
+- **Raggruppamento per progetto**: attivando questo flag sarà effettuato un raggruppamento per progetto. Il raggruppamento funziona anche per i progetti inseriti a livello di riga articolo; se alcune delle righe articolo non hanno un progetto associato sarà creata un DDT diverso per tutti gli articoli che non lo contengono. Quando il progetto è stato inserito nella testata dei documenti di origine esso sarà riportato anche nella testata dei documenti di destinazione, in alternativa sarà mantenuto solo sulle righe articolo.    
+
+- **Raggruppamento per tipo e soluzione di pagamento**: attivando questo flag sarà effettuato un raggruppamento sulla base del tipo e della soluzione di pagamento inserito nell'ordine; tale dato sarà riportato nella testata del DDT creato.   
+
+- **Raggruppamento per destinazione**: attivando questo flag sarà effettuato un raggruppamento sulla base della destinazione inserita all'interno degli ordini; tale dato sarà riportato nella testata del DDT creato, nel tab *Trasporto*.     
