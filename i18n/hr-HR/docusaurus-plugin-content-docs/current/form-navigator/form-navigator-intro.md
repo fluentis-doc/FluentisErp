@@ -9,7 +9,7 @@ Povezane teme:
 
  [Dodavanje polja pomoću Form Navigatora i Object Navigatora](/docs/object-navigator/load-request-object) 
 
- [Postavljanje podataka u prikazima](/docs/form-navigator/data-grid-settings) 
+ [Postavljanje podataka u prikazima i tablicama](/docs/form-navigator/data-grid-settings) 
 
  [Prilagodbe obrazaca](/docs/guide/common/operations-with-data/form-customization-and-profiles-management) 
 
