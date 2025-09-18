@@ -30,5 +30,5 @@ Druga opcija dostupna s ovim grupama u tablici s potpunim učitavanjem je sortir
 
 ![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image05.png)  
 
-Ottenendo così un risultato come questo:  
+Tako se dobije rezultat poput ovog:  
 ![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image06.png) 
