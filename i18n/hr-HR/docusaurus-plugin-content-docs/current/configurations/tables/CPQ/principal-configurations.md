@@ -1,16 +1,16 @@
 ---
-title: Principali configurazioni
+title: Glavne konfiguracije
 sidebar_position: 2
 ---
 
-Aprendo questa tabella si accede alla maschera di ricerca delle configurazioni principali precedentemente codificate e punto di partenza per crearne di nuove.        
-Aprendo una configurazione sono presenti i dati di testata e tre tab sottostanti. 
+Otvaranjem ove tablice pristupa se sučelju za pretraživanje prethodno kodificiranih glavnih konfiguracija, što je polazna točka za kreiranje novih.
+Otvaranjem konfiguracije prikazuju se podaci zaglavlja i tri donje kartice.
 
-## Testata
+## Zaglavlje
 
-La testata presenta i seguenti campi:
-- **Tipo di configurazione**: qui si indica la [tipologia](/docs/configurations/tables/CPQ/configuration-type) di configurazione. 
-- **Codice**: viene assegnato un codice univoco, modificabile.
-- **Versione**: viene assegnato un numero di versione alla configurazione, che parte da 1.
-- **Descrizione**: è possibile associare una descrizione libera.
-- **Data inizio/fine validità**: è possibile associare un intervallo di validità per la configurazione. 
+Zaglavlje sadrži sljedeća polja:
+- **Vrsta konfiguracije**:ovdje se navodi [tip](/docs/configurations/tables/CPQ/configuration-type) konfiguracije. 
+- **Šifra**: dodjeljuje se jedinstvena šifra, koja se može mijenjati.
+- **Verzija**: konfiguraciji se dodjeljuje broj verzije, koji počinje od 1.
+- **Opis**: moguće je dodati slobodan opis.
+- **Datum početka/kraja valjanosti**: moguće je odrediti vremenski raspon valjanosti konfiguracije. 
