@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Kako bi se definiralo da tablica treba biti postavljena s opcijom **potpunog učitavanja podataka**, postupiti na sljedeći način:
 
-**1.** otvoriti lijevo *Navigator obrasca* (Form navigator), otvoriti *Widgete rezultata* (Resuls Widgets), zatim definiciju tablice i odaberati objekt *Tablica* (Grid): dolje će se pojaviti *Kontrola tablice* (Grid Control) gdje se može označiti *Učitaj sve podatke* (Load all data) s maksimalnim brojem redaka koje treba uzeti u obzir - *Ograniči broj redaka* (Limit rows number). 
+**1.** otvoriti lijevo *Navigator obrasca* (Form navigator), otvoriti *Widgete rezultata* (Results Widgets), zatim definiciju tablice i odaberati objekt *Tablica* (Grid): dolje će se pojaviti *Kontrola tablice* (Grid Control) gdje se može označiti *Učitaj sve podatke* (Load all data) s maksimalnim brojem redaka koje treba uzeti u obzir - *Ograniči broj redaka* (Limit rows number). 
 
 **2.** ponovno izvršiti pretraživanje u tablici kako bi se učitali svi podatci. 
  
