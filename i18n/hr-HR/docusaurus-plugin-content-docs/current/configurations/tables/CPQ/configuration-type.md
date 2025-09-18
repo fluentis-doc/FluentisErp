@@ -1,10 +1,10 @@
 ---
-title: Tipi di configurazione
+title: Tipovi konfiguracije
 sidebar_position: 1
 ---
 
-In questa tabella vengono definite le tipologie di Configurazione che si possono creare. Le tipologie sono definite dalle seguenti caratteristiche:
+U ovoj tablici definiraju se vrste konfiguracija koje se mogu kreirati. Vrste se definiraju sljedećim karakteristikama:
 
-- **Codice/Descrizione**: identificativi univoci della tipologia.
-- **Nota**: è possibile associare una nota libera da riportare in queste tipologie di configurazione.
-- **Oggetto configurato**: in questo campo viene indicato l'oggetto business per cui è valido il tipo di configurazione.
+- **Šifra/Opis**: jedinstveni identifikatori vrste.
+- **Bilješka**: moguće je pridružiti slobodnu bilješku koja se odnosi na ove vrste konfiguracija.
+- **Konfigurirani objekt**: u ovom polju navodi se poslovni objekt za koji je određena vrsta konfiguracije valjana.
