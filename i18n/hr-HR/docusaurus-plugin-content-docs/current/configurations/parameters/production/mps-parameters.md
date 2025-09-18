@@ -6,17 +6,19 @@ tags: [MPS]
 
 Kroz ovaj prozor se moraju upravljati svim parametrima koji se tiču upravljanja proizvodnim nalozima i načinom na koji se vode faze koje slijede nakon generiranja samih naloga.
 
-**Metoda generiranja podnaloga**  
+## Metoda generiranja podnaloga 
+
 U ovom odjeljku, **Vrsta narudžbe** (jedan proizvod / više proizvoda) mora biti postavljena i predložena u postupku **Generiranja proizvodnog naloga**, kartici [Parametri](/docs/planning/mps-master-production-scheduling/job-order-creation).  
 Prilikom generiranja narudžbe iz [Stvaranje proizvodnog naloga](/docs/planning/mps-master-production-scheduling/job-order-creation) moguće je izmijeniti ovu postavku, kao i onu koja se odnosi na sljedeću kombinaciju koja se zove Grupiranje po, putem koje je moguće naznačiti kako stavke trebaju biti **Grupiranje za** istog *pojedinačnog proizvoda* ili *Narudžba jednog proizvoda*.
 
 Ako je *Vrsta naloga*:   
 - *Mono proizvod*, jedino dopušteno grupiranje je ono prema artiklu: ova vrsta upravljanja omogućuje korisniku da sustav automatski generira niz narudžbi za jedan proizvod, odabirom popisa redova narudžbi kupaca, redova koji dolaze iz predviđanja prodaje ili plana proizvodnje Glavni ili dolazi iz podzaliha, osiguravajući da svaka narudžba koja se generira predstavlja zbroj traženih količina za istu stavku. Datum završetka grupiranog naloga uvijek je isti kao i datum zahtjeva koji je najbliži datumu pokretanja obrade.      
-- *Multiproizvod* grupiranje više proizvoda može se izvršiti prema kupcu, prodajnom nalogu, kupcu/narudžbi i omogućiti korisniku da umetne više stavki iz redova kupčeve narudžbe povezanih s istim kupcem, istom prodajnom narudžbom ili istom prodajnom narudžbom od istog kupca.
+- *Multi proizvod* grupiranje više proizvoda može se izvršiti prema kupcu, prodajnom nalogu, kupcu/narudžbi i omogućiti korisniku da umetne više stavki iz redova kupčeve narudžbe povezanih s istim kupcem, istom prodajnom narudžbom ili istom prodajnom narudžbom od istog kupca.
 
-**Prioritet nabave** bit će zadani kada se generiraju narudžbe.  
+Polje **Prioritet nabave**, omogućuje unos zadane vrijednosti prioriteta za komese koje se kreiraju; taj će se prioritet uzeti u obzir u proceduri [Parametri planiranja konačnih kapaciteta](/docs/planning/ms-master-scheduling/finite-capacityscheduling/).
 
-**Generiranje naloga**   
+## Generiranje naloga
+
 U ovom odjeljku korisnik može postaviti s odgovarajućim zastavicama hoće li se narudžba generirati iz *Narudžbi kupaca* ili iz *Predviđanja* (konkretno, tada može odabrati hoće li iz *Predviđanja prodaje*, i/ili iz  *Glavnog plana proizvodnje*).  
 Ti se parametri tada mogu mijenjati iz prozora [Generiranje proizvodnog naloga](/docs/planning/mps-master-production-scheduling/job-order-creation).  
 U slučaju *Stvaranja proizvodnog naloga iz Predviđanja*, mora se navesti da li je poželjno da se proizvodni nalog generira na tjednoj ili mjesečnoj osnovi.  
@@ -24,7 +26,7 @@ U slučaju *Stvaranja proizvodnog naloga iz Predviđanja*, mora se navesti da li
 **Uzmi raspoloživost iz**   
 U ovom odjeljku korisnik može odlučiti postaviti razmatranje raspoloživosti gotovih proizvoda prilikom generiranja proizvodnog naloga iz: *Podizvođač*, *Nabave*, *Prodaje*, *Proizvodnje*, *Skladišta*.
 
-Zatim postoji niz zastava:
+Zatim postoji niz flaga:  
 
 **Izračunaj količinu prema pripremnom vremenu stavke**: aktivira se ako ne želite koristiti cikluse obrade za izračun trajanja proizvodnog naloga; u ovom slučaju, za potrebe izračuna trajanja narudžbe, upućuje se na polje vremena proizvodnje koje je prisutno u [MRP Parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  stavke. 
 
@@ -32,10 +34,17 @@ Zatim postoji niz zastava:
 
 **Ažuriraj datum kad će roba biti spremna**: ako je aktivno, kada se promijeni predviđeni datum završetka obrade u nalogu (ručno ili putem procedure), novi datum će se prikazati i u polju *Datum kad je roba spremna* samog naloga, kao i u povezanoj narudžbi kupca. Također, stvorena je i tablica loga pod nazivom **MS_ProductionJobOrderItemReadyGoodsDateLogs** koja prati sve promjene napravljene. Ova tablica može se pregledavati samo putem SQL-a.       
 
-**Automatsko generiranje tijeka proizvodnje**: ako je aktivno, korisnik može odlučiti aktivirati oznaku **Zakazivanje**,  koja vam omogućuje da vidite već zakazane proizvodne naloge čim ih generira **Generacija proizvodnih naloga**. Aktiviranje zastavice za *Planiranje* tada vam omogućuje da aktivirate zastavicu za **Puštanje**, koji omogućuje odlučivanje hoće li nakon automatskog rasporeda planirani narudžbe za nabavu, proizvodnju i/ili račun rada također biti automatski otpušteni. U tom slučaju, za planirane narudžbe proizvodnje može se aktivirati i oznaka **Otpuštanje izvršnih OP**, koja omogućuje izravno generiranje izvršnih narudžbi proizvodnje, čime se preskoči i postupak otpuštanja narudžbi proizvodnje.    
+**Automatsko generiranje tijeka proizvodnje**: Ako je ova opcija aktivirana, korisnik može odlučiti aktivirati flag **Vremensko planiranje**, koji omogućuje korisniku da definira razinu automatizacije koju želi u generiranju proizvodnog toka; ovaj tok će se pokrenuti izravno s tipkom **Generiranje toka** prisutan u [Generiranje proizvodnih narudžbi](/docs/planning/mps-master-production-scheduling/job-order-creation).        
+Dakle, na primjer, korisnik može aktivirati flag **Vremensko planiranje**, koji omogućuje pregled već planiranih proizvodnih narudžbi odmah nakon što su generirane od strane [Generiranje proizvodnih narudžbi](/docs/planning/mps-master-production-scheduling/job-order-creation). Aktivacija flaga **Vremensko planiranje** omogućuje zatim aktivaciju flaga **Puštanje**, koji omogućuje odlučivanje hoće li nakon automatskog planiranja planirane narudžbe za kupnju, proizvodnju i/ili vanjsku obradu također biti automatski puštene. U ovom posljednjem slučaju, za **planirane proizvodne naloge** moguće je dodatno aktivirati flag **Otpustite izvršne proizvodne narudžbe**, koji omogućuje izravno generiranje izvršnih proizvodnih narudžbi, preskočivši tako i postupak [Izdavanje  proizvodnih naloga](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders). 
 
-**Otpusti izvršne proizvodne naloge**        
-koja vam omogućuje izravno generiranje izvršnih proizvodnih naloga, čime također preskačete postupak Otpuštanja proizvodnih naloga.    
+:::note važno 
+Ovaj automatizam može se aktivirati i prilikom potvrde prodajnog naloga, samo ako je u tablici [Tipovi narudžbi kupaca](/docs/configurations/tables/sales/sales-order-types/) unesen **Tip proizvodnog naloga** i aktiviran flag **Generiranje proizvodnog naloga**.     
+Podsjećamo da se automatizam pokreće samo ako je prodajni nalog *potvrđeno*, *ispisano* i moraju biti uneseni *datumi isporuke* i *datumi spremnosti* robe za sve stavke artikala.  
+:::
+
+## Kostifikacija proizvodnog naloga
+
+U ovom odjeljku moguće je unijeti parametre koji će se predlagati kao zadane vrijednosti prilikom kostifikacije proizvodnih naloga.     
 
 > **Troškovi posla**: omogućuje označavanje vrste troška koja će se koristiti za obračun materijalnih troškova između troška * Zadnjeg, Srednjeg* i *Standardnog*;      
 > **Vrsta troška**: omogućuje vam da naznačite vrstu troška koji će se koristiti za obračun troškova sirovina između *krajnjih*, *prosječnih* i *standardnih troškova*;      
@@ -43,15 +52,13 @@ koja vam omogućuje izravno generiranje izvršnih proizvodnih naloga, čime tako
 > **Trošak lota**: aktiviranjem ove zastavice, postupak će vrednovati cijenu materijala na temelju odabrane vrste cijene uzimajući u obzir vrijednosti samo te određene serije;  
 > **Trošak narudžbe proizvodnje**: aktiviranjem ove zastavice, procedura će vrednovati trošak materijala na temelju odabrane vrste troška, uzimajući u obzir samo vrijednosti te specifične narudžbe.   
 
-:::note BILJEŠKA
-Ako su aktivirani i **Trošak serije** i **Trošak naloga**, postupak će vrednovati trošak materijala na temelju odabrane vrste troška uzimajući u obzir vrijednosti samo te određene narudžbe i za taj određeni lot.
+:::note Napomena 
+Ako su **Trošak serije** i **Trošak narudžbe** oba aktivirana, postupak će odrediti trošak materijala na temelju odabranog tipa troška, uzimajući u obzir vrijednosti samo te specifične narudžbe i za tu specifičnu seriju, naravno, među kretanjima izvršenim s uzrocima punjenja s aktivnim flagom za ažuriranje posljednjeg ili prosječnog troška (ovisno o vrijednosti navedeno u polju **Tip troška**) i aktivnim flagom za poreznu svrhu; ako ne pronađe nijedno kretanje s ovim karakteristikama, traži među kretanjima koja su napunila tu seriju, a ako ni tada ne pronađe, traži među svim kretanjima tog artikla. Ako nemam nijedno kretanje punjenja za taj artikal, provjerava u odgovarajućim poljima posljednjeg, prosječnog i standardnog troška kartona artikla.
 ::: 
 
 **Skladišta za raspoređivanje podnaloga**   
 Ova mreža je jednostavan prikaz popisa skladišta na kojima je potrebno provjeriti dostupnost prilikom generiranja proizvodnog naloga. Ovaj je popis postavljen u obliku koji se zove *Izračun dostupnosti* koji se nalazi u *Početna stranica > Artikli >  [Izračun dostupnosti](/docs/erp-home/registers/items/calculate-availability)*.
 
-**Zadnji datum vremenskog planiranja**   
-Ovaj odjeljak sadrži neke sažete podatke posljednjeg rasporeda (početni datum i vrijeme, broj generiranih pogrešaka, završni datum i vrijeme, progresivni broj rasporeda).  
 
 **Predloženi zakazani parametri**: omogućuje vam da definirate koje parametre želite predložiti za raspored, može ponovno predložiti parametre zadnjeg izvršenog rasporeda ili predložiti parametre koje za raspored koristi pojedinačni operater.  
 
@@ -63,9 +70,8 @@ Ovaj odjeljak sadrži neke sažete podatke posljednjeg rasporeda (početni datum
 
 **Prvi dan u tjednu vizualiziran u kalendara tvornice**: omogućuje vam da unesete dan koji želite da se pojavi kao prvi dan radnog tjedna u  [Tvorničkom kalendaru](/docs/configurations/tables/production/factory-calendar). Obično se ubacuje u ponedjeljak.  
 
-**Boja podnaloga**   
+## Boja podnaloga 
+ 
 U ovoj sekciji moguće je postaviti boje pozadine i teksta proizvodnih naloga na temelju njihovog statusa (nije ispitano, lansirano... itd.).  
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, gumbi i polja](/docs/guide/common).
-
-
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, tipke i polja](/docs/guide/common).
