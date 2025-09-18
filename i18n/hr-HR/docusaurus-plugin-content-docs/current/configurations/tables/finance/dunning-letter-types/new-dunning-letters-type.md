@@ -1,47 +1,47 @@
 ---
-title: Nuovo tipo solleciti
+title: Novi tip opomena
 sidebar_position: 3
 ---
 
-I campi di questa form sono:
+Polja ove forme su:
 
-**Codice**: codice identificativo del tipo sollecito.
+**Šifra**: identifikacijska šifra tipa opomene.
 
-**Descrizione**: descrizione del tipo sollecito.
+**Opis**: opis tipa opomene.
 
-**Tipo interesse**: opzionale, è il collegamento al tipo di tasso di interesse da applicare al ritardo di pagamento, per ottenere un calcolo alla data di emissione del sollecito.
+**Vrsta kamata**: opcionalno, povezuje se s vrstom kamatne stope koja se primjenjuje na kašnjenje u plaćanju, kako bi se izračun izvršio na datum izdavanja opomene.
 
-**Sollecito per gruppo partite**: il flag di gestione per gruppo di partite, in particolare, andrà a gestire una lettera di sollecito per un gruppo di partite contemporaneamente (gestione standard), mentre senza flag ogni partita contabile avrebbe il suo sollecito separato dalle altre.
+**Opomena po grupi stavki:**: oznaka za upravljanje grupom stavki; posebno, omogućuje slanje jednog pisma opomene za grupu stavki istovremeno (standardno upravljanje), dok bez oznake svaka stavka ima zasebnu opomenu.
 
-Una volta salvato il tipo di sollecito è possibile crearne i vari livelli con il pulsante ‘nuovo'.
+Nakon što se tip opomene spremi, moguće je kreirati različite razine klikom na gumb Novi.
 
-**Codice**: codice identificativo del sollecito.
+**Šifra**: identifikacijska šifra opomene.
 
-**Descrizione**: descrizione del tipo sollecito.
+**Opis**: opis tipa opomene.
 
-**Priorità**: priorità di creazione da 1 a N livelli.
+**Prioritet**: redoslijed kreiranja od 1 do N razina.
 
-**Descrizione tipo fido**: il collegamento ad un tipo di controllo fido cliente non è gestito.
+**Opis vrste limita**: veza na tip kontrole kredita za klijenta nije aktivna.
 
-**Giorni di ritardo**: indicazione dei giorni di ritardo che devono decorrere prima di sollecitare la partita.
+**Dani kašnjenja**: broj dana kašnjenja koji mora proteći prije nego se opomena pošalje.
 
-:::tip[Info]
-Nella procedura di [***Generazione solleciti***](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro), possono essere gestiti anche solleciti con Numero **Giorni di Ritardo negativi**. Tipicamente i giorni negativi vengono impostati per creare un avviso prima della scadenza. La Procedura di [*Generazione automatica solleciti*](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue) invece **NON** supporta il parametro negativo.
+:::tip[Informacija]
+U proceduri [***Generiranja opomena***](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro), moguće je upravljati i opomenama s negativnim brojem **Dana kašnjenja**. Obično se negativni dani koriste za slanje upozorenja prije dospijeća. Procedura [*Automatsko generiranje opomena*](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue) **NE** podržava negativni parametar.
 :::
 
-**Giorni**: il numero di giorni di scadenza del sollecito e se questi siano da conteggiare dalla data di creazione o dalla data di scadenza del sollecito precedente.
+**Dani**: broj dana do dospijeća opomene i da li se ti dani računaju od datuma kreiranja ili od datuma dospijeća prethodne opomene.
 
-**Da data movimento precedente**: data di riferimento per i livelli successivi al primo.
+**Od datuma prethodnog dokumenta**: referentni datum za razine nakon prve.
 
-**Da data creazione**: data di riferimento solitamente utilizzata per il primo livello.
+**Od datuma kreiranja**: referentni datum koji se obično koristi za prvu razinu.
 
-:::danger ATTENZIONE
-I valori dei campi "**giorni di ritardo**" e "**giorni**" , in particolare per i solleciti successivi al primo, vengono sommati e pertanto nel caso del secondo, terzo sollecito ecc.. in genere non è necessario aggiungere un valore nel parametro *giorni di ritardo*, è possibile invece riferirsi all'ulteriore tempo intercorso dalla data del primo sollecito  tramite il parametro *giorni*.
+:::danger PAŽNJA
+Vrijednosti polja "**dani kašnjenja**" i "**dani**", posebno za opomene nakon prve, se zbrajaju. Stoga, kod druge, treće opomene itd., obično nije potrebno unositi dodatnu vrijednost u parametar *dani kašnjenja*, već se može koristiti dodatno proteklo vrijeme od datuma prve opomene preko parametra *dani*.
 :::
 
-Per ogni numero di sollecito si potrà procedere, una volta salvato, all'inserimento dei vari testi in lingua: il primo che si andrà a caricare è quello che sarà utilizzato di default quando l'anagrafica cliente non ha una lingua assegnata.
+Za svaki broj opomene moguće je, nakon spremanja, unijeti različite tekstove na jeziku: prvi uneseni tekst bit će zadani kada klijentski zapis nema dodijeljen jezik.
 
-I testi sono divisi in 4 sezioni: l'oggetto della lettera, la testata, la conclusione e la sezione riferimenti (attiva solo per solleciti su gruppi di partite). Nella sezione riferimenti, in particolare, si può inserire un testo utilizzando i codici previsti alla base della maschera: ad es. “Rif. (3) nr. (4) del (5), (9) di (8) (10) con scadenza al (6)”.
+Tekstovi su podijeljeni u 4 sekcije: predmet pisma, zaglavlje, zaključak i sekcija referenci (aktivna samo za opomene na grupu stavki). U sekciji referenci posebno je moguće unijeti tekst koristeći kodove predviđene na dnu forme; npr. “Ref. (3) br. (4) od (5), (9) od (8) (10) s dospijećem na (6)”.
 
 
 

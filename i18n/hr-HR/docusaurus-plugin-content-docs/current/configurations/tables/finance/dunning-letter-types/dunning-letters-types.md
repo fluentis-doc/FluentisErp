@@ -1,10 +1,10 @@
 ---
-title: Ricerca tipi solleciti
+title: Pretraživanje tipova opomena
 sidebar_position: 1
 ---
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi ih se moglo pregledati, izmijeniti ili izbrisati.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na gumb **Pretraži** kako bi se rezultati prikazali u mreži rezultata.
 
-Per poter inserire nuovi record è necessario cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
+Za unos novih zapisa potrebno je kliknuti na prvi prazni red u mreži ili pritisnuti gumb **Novi**.
