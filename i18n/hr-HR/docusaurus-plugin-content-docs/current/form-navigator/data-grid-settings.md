@@ -1,32 +1,32 @@
 ---
-title: Form Navigator - Impostazioni dati griglie
+title: (Form navigator) Navigator obrasca - Postavke podataka tablica
 sidebar_position: 3
 ---
 
-Per definire che la griglia va impostata con l'opzione di **caricamento completo dei dati**, operare nel seguente modo:
+Kako bi se definiralo da tablica treba biti postavljena s opcijom **potpunog učitavanja podataka**, postupiti na sljedeći način:
 
-**1.** aprire a sinistra il *Form navigator*, aprire il *Results Widgets*, poi la definizione della griglia e selezionare l'oggetto *Grid*: apparirà in basso il *Grid Control* dove potete selezionare il flag *Load all data* con il numero massimo di righe da considerare (*Limit rows number*). 
+**1.** otvoriti lijevo *Navigator obrasca* (Form navigator), otvoriti *Widgete rezultata* (Resuls Widgets), zatim definiciju tablice i odaberati objekt *Tablica* (Grid): dolje će se pojaviti *Kontrola tablice* (Grid Control) gdje se može označiti *Učitaj sve podatke* (Load all data) s maksimalnim brojem redaka koje treba uzeti u obzir - *Ograniči broj redaka* (Limit rows number). 
 
-**2.** rieseguire la ricerca nella griglia, in modo da caricare tutti i dati.
+**2.** ponovno izvršiti pretraživanje u tablici kako bi se učitali svi podatci. 
  
-**3.** questa opzione deve essere salvata in un profilo, che eventualmente si potrà memorizzare e richiamare al bisogno: bisogna considerare, infatti, che il caricamento di tutti i dati rallenterà i tempi del caricamento dei dati:
+**3.** ovu opciju treba spremiti u profil, koji se po potrebi može memorirati i pozvati: naime, treba uzeti u obzir da će učitavanje svih podataka usporiti vrijeme učitavanja podataka:
  
 ![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image01.png)  
 
-Una volta definita questa modalità di gestione dei dati, si presentano alcune opzioni di **totalizzazione/gestione dei dati**: 
+Nakon što se definira ovaj način upravljanja podacima, predstavljaju se neke opcije **zbrajanja/upravljanja podacima**: 
 
-Con clic destra sulla testata della griglia si apre il menù da dove scegliete l'opzione *Pannello riepilogo totali* poi clic destro fuori dalla griglia, ma in corrispondenza della colonna da totalizzare per scegliere se visualizzare: Somma, Min, Max, Conta, Medio:
+Desnim klikom na zaglavlje tablice otvara se izbornik gdje se odabire opcija *Panel ukupnog sažetka*, a zatim desnim klikom izvan tablice, ali u visini stupca koji treba zbrojiti, odabere se želi li se prikazati: Suma, Min, Maks, Broj, Prosjek:
 
 ![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image02.png)
 
-Si può impostare questa totalizzazione anche a livello di gruppo, scegliendo sempre dal menù l'opzione *Raggruppa per questa colonna*  
+Ovo zbrajanje se može postaviti i na razini grupe, uvijek birajući iz izbornika opciju *Grupiraj po ovoj koloni*  
 ![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image03.png)  
 
-Se si raggruppa per un campo data in una griglia a caricamento totale, premendo il pulsante destro sulla label di raggruppamento sarà disponibile l'opzione *Raggruppa intervallo* con le seguenti opzioni: Nessuno (quindi ogni data sarà un gruppo diverso), ‘Giorno', ‘Mese', ‘Anno', ‘Intelligente' dove quest'ultimo farà vedere i giorni scorsi, la settimana precedente, e poi all'indietro i mesi:
+Ako se grupira po polju datuma u tablici s potpunim učitavanjem, desnim pritiskom na oznaku grupiranja bit će dostupna opcija *Grupiraj interval* sa sljedećim opcijama: Nijedno (tako će svaki datum biti drugačija grupa), 'Dan', 'Mjesec', 'Godina', 'Pametno' gdje će potonje prikazati prošle dane, prethodni tjedan, a zatim unatrag mjesece:
 
 ![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image04.png)  
 
-Altra opzione disponibile con questi gruppi su griglia a caricamento totale è l'ordinamento per la sommatoria impostata, in senso crescente o decrescente:  
+Druga opcija dostupna s ovim grupama u tablici s potpunim učitavanjem je sortiranje po postavljenom zbroju, uzlazno ili silazno.  
 
 ![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image05.png)  
 
