@@ -1,13 +1,13 @@
 ---
-title: Istanza matrice
+title: Instanca matrice
 sidebar_position: 4
 ---
 
-Aprendo questa tabella si accede alla maschera di ricerca delle matrici precedentemente codificate e punto di partenza per crearne di nuove.        
-Andando in creazione di una istanza di matrice, come prima cosa è necessario assegnare **Codice** univoco identificativo e **[Definizione di matrice](/docs/configurations/tables/CPQ/matrices-definition)**; in base alla definizione selezionata, nei tab sottostanti sarà possibile selezionare solo gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) validi per questa matrice. 
+Otvaranjem ove tablice pristupa se sučelju za pretraživanje prethodno kodificiranih matrica, što je i polazna točka za kreiranje novih.        
+Prilikom kreiranja instance matrice, prvo je potrebno dodijeliti jedinstveni identifikacijski **kod** [Definiciju matrice](/docs/configurations/tables/CPQ/matrices-definition)**; na temelju odabrane definicije, u donjim karticama moguće je odabrati samo one [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) koji su valjani za ovu matricu.
 
-Spostandosi nella sezione *Valori dimensione consentiti*, il passo successivo è selezionare, uno ad uno, gli Extra Data dal combo box **Attributo**. Una volta selezionato l'attributo, nella griglia *Risultati disponibili* vengono visualizzati i valori dell'Extra Data (per esempio, se selezioniamo l'attributo Taglia, in questa griglia saranno visualizzati i valori dell Extra Data: XS, S, M, L, XL, ecc.). Una volta selezionati i valori dell'attributo che vogliamo rendere validi per questa matrice, è necessario trascinarli nella griglia *Valori ammessi* per indicare che quei valori saranno validi per le combinazioni della matrice.        
-Una volta scelti i valori validi per ogni attributo, automaticamente compariranno dei nuovi tab, uno per ogni matrice di supporto e un tab per la matrice completa, che unirà le varie matrici di supporto per averne una unica con tutte le combinazioni possibili.        
-Spostandosi nei tab generati dalle matrici di supporto, è necessario flaggare le combinazioni di valori valide. Per ogni combinazione, quindi, è necessario inserire il flag solo se valida.        
-Nel tab della *Matrice completa*, invece, viene generata una matrice unica con tutte le combinazioni valide, impostate nel tab precedente.      
-La matrice ora può essere utilizzata negli oggetti per i quali è stata configurata.   
+U odjeljku *Dozvoljene vrijednosti dimenzija*, sljedeći korak je odabrati, jedan po jedan, Extra Data iz padajućeg izbornika **Atribut**. Nakon odabira atributa, u mreži *Dostupni rezultati* prikazuju se vrijednosti odabranog Extra Data (na primjer, ako odaberemo atribut Veličina, u ovoj mreži prikazat će se vrijednosti Extra Data: XS, S, M, L, XL itd.). Nakon što se odaberu vrijednosti atributa koje želimo učiniti valjanima za ovu matricu, potrebno ih je povući u mrežu *Dozvoljene vrijednosti* kako bi se označilo da će te vrijednosti biti valjane za kombinacije u matrici.
+Nakon što se odaberu valjne vrijednosti za svaki atribut, automatski će se pojaviti nove kartice, po jedna za svaku pomoćnu matricu i jedna kartica za kompletnu matricu, koja će objediniti različite pomoćne matrice u jednu jedinstvenu s svim mogućim kombinacijama.
+U karticama generiranim iz pomoćnih matrica potrebno je označiti kombinacije vrijednosti koje su valjane. Za svaku kombinaciju, stoga, potrebno je postaviti oznaku samo ako je kombinacija valjana.
+U kartici *Kompletna matrica* generira se jedinstvena matrica sa svim valjanim kombinacijama koje su prethodno postavljene u pomoćnim matricama.
+Matrica se sada može koristiti u objektima za koje je konfigurirana. 
