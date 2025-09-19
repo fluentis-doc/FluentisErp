@@ -1,80 +1,71 @@
 ---
-title: Gestione ticket
+title: Gestiune ticket
 sidebar_position: 1
 ---
 
-Dalla maschera di ricerca Ticket è possibile visualizzare i ticket già inseriti. Generalmente la Gestione ticket viene utilizzata dal servizio aziendale di helpdesk.
-Da questa maschera è possibile aprire in modifica o visualizzazione i ticket e crearne di nuovi.     
-Inoltre, il pulsante della ribbon bar **Creazione offerte da Ticket** permette di creare delle [Offerte](/docs/sales/offers/insert-offer) direttamente dai ticket selezionati. L'articolo/servizio inserito nel ticket diventerà una riga articolo dell'offerta e verranno riportati nell'Offerta anche gli altri dati inseriti nel ticket: Progetto, Cliente, Importi di riga (fare attenzione in questo caso se esistono listini validi per il cliente: l'offerta modificherà gli importi in base al listino associato al cliente). Questa procedura è presente anche all'interno dei singoli ticket.         
+Formul permite vizualizarea și modificarea tichetelor deja inserate iar cu clic pe butonul *Nou* puteți să inserați un ticket nou. 
 
-Cliccando *Nuovo* è possibile inserire un nuovo Ticket. La Gestione ticket si compone di due parti: la Testata e le tab Sottostanti, che andremo ad elencare.     
+În plus, butonul **Creare oferte din ticket** permite crearea [Ofertelor](/docs/sales/offers/insert-offer) direct din tichetele selectate, cu datele sale: articol, Proiect, Client, Valorile din linie (verificați în acest caz dacă există oferte de preț valide pentru client: oferta va modifica valorile pe baza ofertei de preț asociate clientului). Această procedură este prezentă în fiecare ticket.
 
-## Testata  
+## Antet 
 
-La testata contiene i seguenti campi.     
-**Tipo/Anno/Numero**: questi dati vengono compilati automaticamente se all'Operatore è stato assegnato un Tipo ticket di default nei [Parametri per operatore del CRM](/docs/configurations/parameters/crm/ticket-parameters); il numero è progressivo.     
-**Data creazione/Scadenza**: la data di creazione viene inserita in automatico con la data odierna; la data scadenza è un campo da inserire manualmente.     
-**Data chiusura/Chiuso**: inserendo il flag Chiuso, viene riportata in automatico la Data chiusura.     
-**Cliente**: questo campo viene compilato automaticamente se all'Operatore è stato assegnato un Cliente di default nei [Parametri per operatore del CRM](/docs/configurations/parameters/crm/ticket-parameters); altrimenti è possibile inserirlo manualmente.     
-**Contatto**: è possibile inserire in alternativa un [Contatto](/docs/crm/home-crm/contacts/new-contact/header).        
-**Progetto**: è possibile indicare un progetto a cui fare riferimento;      
-**Operazioni ticket**: in questo campo vengono visualizzate le possibili [Operazioni](/docs/configurations/tables/crm/tickets/operations) per questo Tipo ticket;      
-**Referente**: in questo campo viene riportata la *Persona di riferimento* del cliente inserito, presa dall'anagrafica; il campo è comunque modificabile;      
-**Severità ticket**: è un campo contenente la [Severità](/docs/configurations/tables/crm/tickets/severity);   
-**Oggetto**: è un campo compilabile manualmente;     
-**Stato**: è possibile assegnare uno stato al ticket; gli stati visualizzati sono quelli inseriti nel [Tipo ticket](/docs/configurations/tables/crm/tickets/ticket-type) corrispondente;              
-**Fatturato/Fatturabile**: questi flag indicano se il ticket è già stato fatturato oppure se dovrà esserlo;      
-**Criteri di fatturazione**: indicare se il criterio di fatturazione sono le re previste dall'offerta o quelle effettivamente svolte;      
-**Periodo di fatturazione**: indicare se la fatturazione deve andare a consuntivo oppure alla consegna.      
+**Tip/An/Număr**: sunt completate automat dacă operatorului i-a fost atribuit un tip de ticket implicit în [Parametri pentru operator CRM](/docs/configurations/parameters/crm/ticket-parameters); numărul este progresiv.  
+**Data creare/scadență**: este introdusă automat data curentă;    
+**Data închidere/închis**: bifând opțiunea *închis*, se completează automat *Dată închiderii*.  
+**Client**: este completat automat dacă operatorului i-a fost atribuit un client implicit în [Parametri pentru operator CRM](/docs/configurations/parameters/crm/ticket-parameters).  
+**Contact**: permite inserarea unui [Contact](/docs/crm/home-crm/contacts/new-contact/header) alternativ;    
+**Proiect**: permite inserarea unui proiect de referință.  
+**Operațiuni ticket**: afișează posibilele [Operațiuni](/docs/configurations/tables/crm/tickets/operations) pentru acest tip de ticket.  
+**Contact**: reprezintă *Persoana de contact* a clientului introdus, preluată din registru;    
+**Severitate ticket**: reprezintă gravitatea problemei raportate în ticket;  
+**Stare**: reprezintă starea tichetului; stările afișate sunt cele introduse în [Tip ticket](/docs/configurations/tables/crm/tickets/ticket-type);  
+**Facturat/Facturabil**: indică dacă ticketul a fost deja facturat sau dacă trebuie să fie facturabil.  
+**Criterii de facturare**: indică dacă criteriile de facturare sunt orele prevăzute de ofertă sau cele efectiv realizate.  
+**Perioadă de facturare**: indică dacă facturarea trebuie să fie pe consum sau pe livrare.  
 
-Analizziamo le tab sottostanti.     
+### Detaliu ticket
 
-## Dettaglio ticket
+Acest tab este alcătuit din două câmpuri: **Limbă** (completat automat) și **Descriere** (obligatoriu).  
 
-Questa tab è composta da due campi: **Lingua** (compilato automaticamente) e **Descrizione** (obbligatoria).    
+### Utilizatori
 
-## Utenti 
+În acest tab sunt afișați operatorii care desfășoară activitățile din ticket. La crearea unui ticket nou sunt completate automat câmpurile **Operator** și **Prima dată atribuită**.  
 
-In questa tab vengono riportati gli operatori che che effettuano le attività sul ticket; alla creazione di un nuovo ticket vengono compilati in automatico i campi **Operatore** e **Prima data assegnata**.     
+### Estimare/Efort  
 
-## Stima/Sforzo
+Acest tab se activează după ce faceți clic pe butonul *Estimare tehnică*.  
+În funcție de tipul de ticket pe care îl creați, va fi propus un [template](/docs/configurations/tables/crm/tickets/template-ticket) asociat, cu datele aferente deja introduse în tabelul corespunzător.  
 
-Questa tab si attiva dopo aver cliccato il pulsante *Stima tecnica* sulla ribbon bar. In base al Tipo ticket che si sta creando, verrà proposto il [Template](/docs/configurations/tables/crm/tickets/template-ticket) associato, con i relativi dati già inseriti nella relativa tabella. L'utente può modificare tutti i campi. I campi che non vengono ripresi dalle tabelle del Tipo ticket o Template, e che quindi devono essere compilati manualmente, sono i seguenti:        
-**Effettiva data inizio**: in questo campo è possibile inserire una Data di effettivo inizio lavori, che può essere diversa dalla **Data previsto inizio**, accanto e compilata automaticamente con la data di creazione ticket;     
-**Commerciale/Tecnico**: in questi campi vengono inseriti i rispettivi operatori, che verranno proposti anche nella successiva tab *Stima commerciale*.       
-Nella griglia sottostante è importante indicare nella colonna **Quantità prevista** il tempo previsto per lo svolgimento delle attività e la relativa **Unità di misura**. La compilazione di questa colonna farà compilare in automatico anche i campi **Minuti stimato sforzo** e **Ore lavorative** e servirà per la successiva creazione della stima commerciale.      
-**Risorse Commesse** permette di associare una risorsa dell'area progetti, indicando quale sarà la risorsa che svolgerà questa fase di Stima Tecnica. 
-Quando la risorsa dichiarerà l' attività nell'area progetti, selezionando il ticket corrispondente, avrà proposto in automatico il progetto di riferimento inserito nella corrispondente stima tecnica del ticket.
+#### Câmpuri specifice
 
+**Data efectivă început**: reprezintă dată pentru începerea efectivă a lucrărilor, care poate fi diferită de **Data prevăzută început**, aflată alături și completată automat cu data creării tichetului.  
+**Comercial/Tehnic**: reprezintă operatorii care vor fi propuși și în tabul următor, *Estimare comercială*.  
+În tabelul inferior, în coloana **Cantitate prevăzută**, indicați timpul estimat pentru desfășurarea activităților și unitatea de măsură aferentă. Acest lucru va determina completarea automată a câmpurilor **Efort estimat in minute** și **Ore de lucru** și va fi necesară pentru crearea ulterioară a estimării comerciale.  
+**Resurse comenzi** permite asocierea unei resurse din aria proiecte, indicând care va fi resursa care va desfășura această fază de *Estimare tehnică*.  
+Când resursa va declara activitatea în proiecte, selectând tichetul corespunzător, îi va fi propus automat proiectul de referință introdus în estimarea tehnică aferentă tichetului.
 
-**Progetto** permette di indicare una riga di progetto dell'area Progetti, che verrà proposto in automatico quando la risorsa effettuerà la dichiarazione attività nell'area progetti, selezionando il ticket corrispondente.
+**Proiect** permite inserarea unui proiect, care va fi propus automat atunci când resursa va declara activitățile în zona de proiecte, selectând tichetul corespunzător.
 
-**Data Inizio** e **Data Fine** : indica con precisione la data inizio e fine di ogni step della stima tecnica. 
+**Data început** și **Data sfârșit**: indică data de început și de sfârșit pentru fiecare etapă a estimării tehnice.
 
-Una volta completata la Stima tecnica, cliccare il pulsante della ribbon bar *Fine stima tecnica*: questo bloccherà nuovamente la modifica della tab Stima/Sforzo. Per poterla nuovamente modificare, cliccare il pulsante *Annulla stima tecnica*.       
+După completarea *Estimării tehnice*, faceți clic pe butonul *Sfârșit estimare tehnică*: acest lucru va bloca din nou posibilitatea de a modifica tabul *Estimare/Efort*. Pentru a putea modifica din nou, faceți clic pe butonul *Anulează estimare tehnică*.  
 
-## Informazioni chiusura
+### Tichete asociate
 
-Questa tab è composta dai campi **Data chiusura** e **Note**; entrambi i campi sono di libera digitazione e non obbligatori.     
+Permite inserarea eventualelor tichete asociate. Pentru a face acest lucru, puteți să utilizați help-ul de câmp, făcând dublu click pe coloana **Număr**.  
 
-## Ticket collegati 
+### Notă  
 
-In questa tab è possibile inserire eventuali ticket collegati. Per farlo è possibile sfruttare l'Help di campo, facendo doppio click sulla colonna **Numero**.     
+Permite inserarea/ștergerea notelor. Pentru a face acest lucru, utilizați butoanele *Notă nouă* și *Șterge notă*. Coloanele **Operator** și **Dată inserare** sunt completate automat. Opțiunea **informații confidențiale** indică faptul că nota trebuie să fie disponibilă doar pentru operatorul care a introdus-o.  
 
-## Nota
+### Estimare comercială
 
-In questa tab è possibile inserire/cancellare delle note. Per farlo, utilizzare i pulsanti della ribbon bar *Nuova nota* ed *Elimina nota*. Le colonne **Operatore** e **Data inserimento** vengono compilate in automatico. Il flag **info riservata** indica che la Nota deve essere disponibile solo per l'Operatore che la ha inserita.        
+Acest tab se activează după ce faceți clic pe butonul *Estimare comercială*. În funcție de [Tipul de ticket](/docs/configurations/tables/crm/tickets/ticket-type) pe care îl creați și de [Template](/docs/configurations/tables/crm/tickets/template-ticket), va fi propus un set de câmpuri, de exemplu *Descrieri*.   
+Câmpul **Tehnic/Comercial** este preluat din tabul *Estimare tehnică*.  
+În tabel este important să verificați/modificați coloana **Cantitate comercială**. Această coloană preia *Cantitatea prevăzută* din estimarea tehnică, dar poate fi majorată/redusă de comercial, care va crea estimarea finală. Această coloană va popula și câmpul de sub tabel: **Cantitate totală comercială**.  
+După completarea Estimării tehnice, faceți clic pe butonul *Sfârșit estimare comercială*: acest lucru va bloca din nou posibilitatea de a modifica tabul Estimare/Efort. Pentru a-l modifica iar, faceți clic pe butonul *Anulează estimare comercială*.  
+Odată finalizată și estimarea comercială, se va putea crea oferta prin procedura *Creare oferte din ticket*.  
 
-## Stima commerciale
+### Oferte
 
-Questa tab si attiva dopo aver cliccato il pulsante *Stima commerciale* sulla ribbon bar. In base al [Tipo ticket](/docs/configurations/tables/crm/tickets/ticket-type) che si sta creando ed al relativo [Template](/docs/configurations/tables/crm/tickets/template-ticket) associato, verranno proposti una serie di campi, per esempio le Descrizioni. L'utente può modificare tutti i campi.       
-Il campo **Tecnico/Commerciale** viene ripreso dalla tab *Stima tecnica*.     
-Nella griglia è importante controllare/modificare la colonna **Quantità commerciale**. Questa colonna riporta la Quantità prevista dalla stima tecnica, ma può essere incrementata/decrementata dal commerciale, che creerà la stima definitiva. Questa colonna popolerà anche il campo sottostante alla griglia: **Quantità totale commerciale**.       
-Una volta completata la Stima tecnica, cliccare il pulsante della ribbon bar *Fine stima commerciale*: questo bloccherà nuovamente la modifica della tab Stima/Sforzo. Per poterla nuovamente modificare, cliccare il pulsante *Annulla stima commerciale*.       
-Una volta completata anche la stima commerciale, si potrà creare l'offerta attraverso la procedura di *Creazione Offerte da ticket*.    
-
-## Offerte
-
-In questa tab vengono riportate eventuali Offerte collegate al ticket e create con la procedura di *Creazione Offerte da ticket*.      
-
-
+În acest tab sunt afișate eventualele Oferte asociate tichetului și create prin procedura de *Creare oferte din ticket*.
