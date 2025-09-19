@@ -1,24 +1,24 @@
 ---
-title: Tipi deducibilità
+title: Vrste odbitaka
 sidebar_position: 25
 ---
 
-La definizione della tabella consente all'utente di poter prevedere dei tipi di deducibilità fiscale da associare nella categoria cespite al tipo di ammortamento desiderato.
+Definicija tablice omogućuje korisniku predviđanje vrsta porezne odbitnosti koje se mogu povezati s kategorijom sredstva za željeni tip amortizacije.
 
-La combo box che richiama questa tabella è nella [**scheda cespite**](/docs/finance-area/fixed-assets/fixed-assets-management/detail/)
-
-
-La prima sezione, Tipi deducibilità, contiene i seguenti campi:
-
-**Codice**: codice identificativo del tipo di deducibilità.
-
-**Descrizione**: descrizione del tipo di deducibilità.
+Padajući izbornik koji poziva ovu tablicu nalazi se u [**kartici sredstva**](/docs/finance-area/fixed-assets/fixed-assets-management/detail/)
 
 
-La seconda sezione, Dettagli, contiene i seguenti campi:
+Prva sekcija, Vrste odbitnosti, sadrži sljedeća polja:
 
-**Data inizio**: data di inizio del tipo di deducibilità su cui si è posizionati.
+**Šifra**: identifikacijska šifra vrste odbitnosti.
 
-**Data fine**: data fine del tipo di deducibilità su cui si è posizionati.
+**Opis**: opis vrste odbitnosti.
 
-**Perc. deduc.**: percentuale di deducibilità da applicare al tipo di deducibilità su cui si è posizionati.
+
+Druga sekcija, Detalji, sadrži sljedeća polja:
+
+**Datum početka**: datum početka primjene odabrane vrste odbitnosti.
+
+**Datum završetka**: datum završetka primjene odabrane vrste odbitnosti.
+
+**Postotak odbitnosti**: postotak odbitnosti koji se primjenjuje na odabranu vrstu odbitnosti.
