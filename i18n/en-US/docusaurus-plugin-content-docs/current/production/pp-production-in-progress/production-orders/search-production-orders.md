@@ -17,7 +17,7 @@ import SearchForm from './../../../import/sections/search-form.md'
 
 *Specific buttons*:
 
-> **Generate batches**: this button, which only becomes enabled after selecting an order, allows you to create production batches based on the quantity of the production order itself; thus, it provides the ability to create new production orders with the same main number but with a different batch number, and for each of them, it allows you to specify the quantities to produce;     
+> **Generate batches**: this button, which is enabled only after selecting an order, allows for the creation of production batches starting from the quantity of the production order itself; therefore, it provides the possibility to create new production orders with the same main number, but with a different batch number, and for each of them, it allows specifying the quantities to be produced. In the case where the production order is in *Closed* status, the flag **Maintain the reference to the production order** is also enabled, which allows deciding whether the new batch of the order should be created with reference to the original job or not; in this case, it is important to remember that the job will remain in *Closed* status, so if necessary, the user will have to reopen it manually.
 :::note Note
 The quantity of the originating batch cannot be changed if *Pick Lists*, *Production declarations* have already been created, or if some materials have already been consumed. In these cases, it is still possible to create new production batches, but without being able to change the quantity of the originating batch.     
 :::
