@@ -1,6 +1,6 @@
 ---
-title: Causali di contributo
+title: Predlošci doprinosa
 sidebar_position: 8
 ---
 
-La tabella consente all'utente di definire le causale di contribuzione INPS da collegare ai tipi di ritenuta: **come detto nella documentazione dei tipi ritenuta, la gestione di tale sezione non è più necessaria.**
+Tablica omogućuje korisniku definiranje uzroka doprinosa INPS koji se povezuju s vrstama zadržavanja: **kao što je navedeno u dokumentaciji o vrstama zadržavanja, upravljanje ovom sekcijom više nije potrebno.**
