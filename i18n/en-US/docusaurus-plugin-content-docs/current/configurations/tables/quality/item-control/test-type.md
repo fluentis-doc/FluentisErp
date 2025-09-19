@@ -36,7 +36,7 @@ This is the list where the main information of the *Test Type* is entered.
 The list consists of the following information:   
 > **Code**: the code of the *Test Type*.   
 > **Description**: the description of the *Test Type*.   
-> **Standard Control plan reference**: a descriptive field that contains references to globally recognized test codes.   
+> **Standard Control plan reference**: It is a descriptive field that contains references to standard recognized testing methodologies.
 >  
 > **Category**
 >> **Code**: the code of the *Category*.   
@@ -46,7 +46,7 @@ The list consists of the following information:
 > **Internal laboratory**: indicates whether the test is performed internally.   
 >  
 > **External laboratory**
->> **Description**: enabled if the laboratory is external, it is the company name of the *analysis laboratory* that will perform the test.
+>> **Description**: enabled if the Internal Laboratory has not been indicated, it is the company name of the *analysis laboratory* that will perform the test.
 >  
 > **Measurement tool**
 >> **Code**: the code of the *Measurement tool* to be used for detecting the values of the *Test Type*.   

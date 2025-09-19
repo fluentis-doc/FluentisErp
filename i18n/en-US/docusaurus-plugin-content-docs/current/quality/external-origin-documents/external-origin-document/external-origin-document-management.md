@@ -129,7 +129,9 @@ The list consists of the following information:
 > **Data for delivery**   
 >> **Paper**: indicates that at the time of distribution, the subject wishes to receive a *Paper* copy of the document or as an attachment via *Email*.   
 >> **Delivery method**: indicates the usual delivery method of the *Document*.   
->> **Email**: indicates a destination email if not coded in the recipient's register.   
+>> **Email**: indicates a destination email if not coded in the recipient's register.
+>> **Delivery**: indicates that the delivery has been made; it is automatically set at the time of document distribution and can be modified later.  
+>> **Delivery date**: reports the delivery date of the document; it is an information that is automatically updated at the time of document distribution and can be modified later.   
 >> **Number of copies**: indicates the number of paper copies the recipient wishes to receive.   
 >> **Notes**: free notes.   
 
