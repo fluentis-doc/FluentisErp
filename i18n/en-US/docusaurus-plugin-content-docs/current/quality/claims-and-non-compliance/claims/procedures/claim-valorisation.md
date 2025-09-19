@@ -6,10 +6,11 @@ sidebar_position: 1
 The Complaints valorization procedure allows for the simultaneous creation of one or more credit notes for the desired *Claims* senders.
 
 ## Valorization
-In this session, it is possible to select the *Claims* to be valued. You can search for *Claims* to be valued using the available filters.   
+In this session, it is possible to select the *Claims* to be valued. 
+You can search for *Claims* to be valued using the available filters.   
 The *Claims* that can be searched are those that are *Authorized*, with a *Value to be credited* and not yet *Valorized*.   
 The *Credit Notes* will be created with the **Creation Date** present below the list.   
-By selecting one or more *Claims*, the valuation can be executed by pressing the **Creating Invoices from Non-compliance** button.
+By selecting one or more *Claims*, the valuation can be executed by pressing the **Creating Invoices from Complaints** button.
 
 ## Parameters
 In the tabulator, it is possible to enter parameters to be used in the procedure and during the valuation in the management of the [Claim](/docs/quality/claims-and-non-compliance/claims/claim).  
@@ -26,11 +27,9 @@ The managed information is:
 >  
 Once the parameters have been modified, to use them, it is necessary to save the changes by pressing the **Save** button.
 
-
-
-The flag **Insert Non-compliance references** allows you to insert the reference in the invoice; the reference can be coded in the field below.
-
 ## Restore Valorization
-In this tab, it is possible to search for invoices previously created with the procedure. There are filters available to carry out a more targeted search.      
-In the first grid, the operations performed are present, while in the second grid are the **Invoices** and the **Non-compliance** of each operation.       
-To cancel the operations, it is necessary to select the operations to be deleted and click **Restore creation** in the ribbon bar. To instead cancel individual invoices among multiple invoices created in the same operation, it is necessary to select in the second grid the invoices to be deleted and click the **Restore invoice** button in the ribbon bar.
+In this session, it is possible to search for *Credit Notes* previously created with the valuation procedure.  
+You can search for *Credit Notes* to restore using the available filters.  
+In the first grid, the operations performed are present, while in the second grid, there are the **Invoices** and **Complaints** for each operation.  
+To cancel the operations, it is necessary to select the operations to be deleted and press the **Restore Creation** button.  
+To cancel individual invoices among multiple invoices created in the same operation, you need to select the invoices to be deleted in the second grid and press the **Restore Invoice** button.  

@@ -7,7 +7,8 @@ The non-conformity valuation procedure allows for the simultaneous creation of o
 To use the procedure, it is necessary that the *Supplier* account, to which the product or service is contested, is associated with a *Customer* account to which the invoice will be addressed.   
 
 ## Valorization
-In this session, it is possible to select the *Non-compliance* to be valued. You can search for the *Non-compliance* to be valued using the available filters.   
+In this session, it is possible to select the *Non-compliance* to be valued. 
+You can search for the *Non-compliance* to be valued using the available filters.   
 The *Non-Compliance* that can be searched for are those of *Supplier Type*, *Authorized*, with a *Value to be charged* and not yet *Valorized*.   
 The *Debit Notes* will be created with the **Creation Date** present below the list.   
 By selecting one or more *Non-Compliance*, the valuation can be executed by pressing the **Invoices Creation from Complaints** button.   
@@ -28,7 +29,8 @@ The managed information includes:
 Once the parameters are modified, to use them, it is necessary to save the changes by pressing the **Save** button.
 
 ## Restore Valorization
-In this tab, it is possible to search for invoices previously created with the procedure.  
-There are filters available to conduct a more targeted search.      
-In the first grid, there are the performed operations, while in the second grid, there are the **Invoices** and **Non-Compliance** of each operation.       
-To cancel the operations, it is necessary to select the operations to be deleted and click **Restore Creation** on the ribbon bar. To cancel individual invoices among multiple invoices created in the same operation, it is necessary to select the invoices to be deleted in the second grid and click the **Restore Invoice** button on the ribbon bar.
+In this session, it is possible to search for *Debit Notes* previously created with the valuation procedure.  
+You can search for *Debit Notes* to restore using the available filters.  
+In the first grid, the operations performed are present, while in the second grid, there are **Invoices** and **Non-compliance** for each operation.  
+To cancel the operations, it is necessary to select the operations to delete and press the **Restore Creation** button.  
+To cancel individual invoices among multiple invoices created in the same operation, it is necessary to select the invoices to delete in the second grid and press the **Restore Invoice** button.
