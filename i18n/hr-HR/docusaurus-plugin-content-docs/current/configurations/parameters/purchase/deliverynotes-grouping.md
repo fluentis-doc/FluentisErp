@@ -3,9 +3,9 @@ title: Parametri grupiranja Napomene o primitku robe
 sidebar_position: 9
 ---
 
-I parametri di raggruppamento consentono di definire come suddividere i documenti durante le procedure di evasione. A tal fine, è possibile utilizzare specifici flag per raggruppare i documenti in base a diverse proprietà, come ad esempio la categoria, il tipo di documento, o altre caratteristiche rilevanti.            
-Questi parametri generali di raggruppamento devono essere configurati una sola volta e saranno applicati automaticamente a tutte le procedure, risultando validi per tutti i clienti e fornitori. Tuttavia, se un cliente o un fornitore richiede un comportamento diverso rispetto a quello impostato nei parametri generali, sarà necessario personalizzare i parametri di raggruppamento all'interno della loro specifica anagrafica.           
-In questo modo, si garantisce una gestione flessibile e adattabile delle evasioni, permettendo di soddisfare le esigenze specifiche di ogni cliente o fornitore, pur mantenendo una configurazione centralizzata e coerente per la maggior parte delle operazioni.
+Parametri grupiranja omogućuju definiranje kako podijeliti dokumente tijekom postupaka ispunjenja. U tu svrhu, moguće je koristiti specifične flagove za grupiranje dokumenata prema različitim svojstvima, kao što su kategorija, tip dokumenta ili druge relevantne karakteristike.  
+Ovi opći parametri grupiranja trebaju se konfigurirati samo jednom i automatski će se primjenjivati na sve postupke, ostajući valjani za sve kupce i dobavljače. Međutim, ako kupac ili dobavljač zahtijeva drugačije ponašanje od onoga postavljenog u općim parametrima, bit će potrebno prilagoditi parametre grupiranja unutar njihove specifične kartice.  
+Na taj način osigurava se fleksibilno i prilagodljivo upravljanje ispunjenjima, omogućujući zadovoljenje specifičnih potreba svakog kupca ili dobavljača, dok se istovremeno održava centralizirana i dosljedna konfiguracija za većinu operacija.
 
 Pomoću ovih parametara odlučuju se pravila grupiranja za postupke:
 
@@ -14,5 +14,5 @@ Pomoću ovih parametara odlučuju se pravila grupiranja za postupke:
 
 Ovi se postupci koriste samo u slučaju rumunjske lokalizacije. 
 
-E' necessario flaggare le colonne che prevedono i raggruppamenti che si vogliono prevedere per queste evasioni.
-Il flag Riepilogativa è fondamentale per creare un unico documento avendo diversi documenti di partenza. Gli altri flag invece riguardano i raggruppamenti particolari.
+Potrebno je označiti stupce koji predviđaju grupiranja koja se žele primijeniti za ova ispunjenja.  
+Flag **Sažetak** je ključan za stvaranje jednog dokumenta s različitim početnim dokumentima. Ostali flagovi se odnose na posebna grupiranja.

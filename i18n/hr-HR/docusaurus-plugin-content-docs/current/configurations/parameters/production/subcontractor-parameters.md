@@ -8,7 +8,7 @@ Kroz ovaj prozor postavljaju se svi parametri koji se odnose na upravljanje podu
 
 ## Općenito
 
-#### Dati proposti negli ordini  
+#### Podaci navedeni u narudžbama  
 
 
 > **Regenerirati materijale na ažuriranju stavke**: Ako je flag aktiviran, svaki put kada se izvrši izmjena na retku artikla prisutnom na tabu *Artikli za proizvesti* narudžbe radnog naloga, procedura regenerira informacije vezane uz materijale koji se trebaju isporučiti i upotrijebiti, koje se unose u posljednjem tabu same narudžbe.  
@@ -25,7 +25,8 @@ Kroz ovaj prozor postavljaju se svi parametri koji se odnose na upravljanje podu
 
  #### Razmotrite raspoloživosti iz     
 
-> Questa sezione permette di decidere se considerare o no le disponibilità provenienti da **Conto Lavoro** / **Produzione** / **Acquisti** / **Magazzino** / **Vendite**; ciascuno di questi flag sta a indicare la volontà da parte dell'utente di fare in modo che la procedura di creazione dell'ordine di conto lavoro consideri la disponibilità dei materiali in base alle informazioni che provengono dalle singole aree applicative di ERP. Quindi per esempio se l'utente sceglie di attivare il flag solo su Acquisti e non su Vendite, significa che saranno considerate le disponibilità provenienti dagli ordini fornitori, dalle DDT e fatture di acquisto e dalle richieste di acquisto e non quelle provenienti da ordini clienti, DDT e fatture di vendita.   
+> Ovaj odjeljak omogućuje korisniku da odluči hoće li uzeti u obzir dostupnost materijala iz **Podizvođač** / **Proizvodnja** / **Nabava** / **Skladište** / **Prodaja**; svaki od ovih flagova označava namjeru korisnika da postupak kreiranja narudžbe za kooperaciju uzme u obzir dostupnost materijala na temelju informacija koje dolaze iz pojedinih funkcionalnih područja ERP-a.
+Na primjer, ako korisnik odluči aktivirati flag samo za Nabavu, a ne za Prodaju, to znači da će se uzimati u obzir dostupnosti koje dolaze iz narudžbi dobavljačima, otpremnica, ulaznih računa i zahtjeva za nabavom, dok se one koje dolaze iz narudžbi kupaca, otpremnica i izlaznih računa neće uzimati u obzir.
 
 #### Gotovi proizvodi
 
@@ -35,52 +36,51 @@ Kroz ovaj prozor postavljaju se svi parametri koji se odnose na upravljanje podu
 
 **Tip otpremnice**: u ovoj sekciji se postavlja [Tip otpremnice](/docs/configurations/tables/sales/delivery-notes-type) koji se treba predložiti kao zadani prilikom korištenja procedure za kreiranje otpremnice za isporuku materijala kod podizvođača. Ova vrsta otpremnice automatski će koristiti skladište i šifru knjiženja postavljene u odgovarajućim padajućim izbornicima pod stavkom "Isporuke materijala podizvođačima" koja se nalazi u prozoru parametara za podizvođače.
 
-**Unità di misura volume predefinita**: permette di indicare l'unità di misura da utilizzare di default per i volumi.   
+**Zadana mjerna jedinica za volumen**: permette di indicare l'unità di misura da utilizzare di default per i volumi.   
 
-**Unità di misura pesi predefinita**: permette di indicare l'unità di misura da utilizzare di default per i pesi.   
+**Zadana mjerna jedinica za težinu**: permette di indicare l'unità di misura da utilizzare di default per i pesi.   
 
-**Valor. lavorazione materiali a costo**: permette di definire se la valorizzazione della lavorazione dei materiali debba avvenire a costo ultimo o a costo medio. Quindi si tratta di un metodo per decidere se i materiali utilizzati dai terzisti debbano essere imputati alla lavorazione utilizzando il  costo ultimo oppure il  costo medio tra quelli inseriti nell'anagrafica dell'articolo stesso. Inoltre, è possibile, selezionando i flag **Lotti** e/o **Commessa di produzione**, andare a proporre come costo del materiale il costo ultimo/Medio per il relativo lotto e/o commessa di produzione in base ai flag attivati.    
+**Valorizacija radnog materijala naspram troška:**: Omogućuje definiranje treba li se vrednovanje obrade materijala vršiti po zadnjoj ili po prosječnoj cijeni. Radi se, dakle, o metodi kojom se određuje hoće li se materijali koje koriste kooperanti pripisivati obradi koristeći zadnju cijenu ili prosječnu cijenu unesenu u šifarniku artikla. Osim toga, moguće je, odabirom flagova **Lotovi** i/ili **Nalog proizvodnje**, predložiti da se kao cijena materijala koristi zadnja/prosječna cijena za odgovarajući lot i/ili proizvodni nalog, ovisno o tome koji su flagovi aktivirani.  
 
+#### Izuzimanje  
 
-#### Evasione  
-
-> **Visualizzazione griglia di evasione**: se attivo, nelle procedure di evasione ordine in DDT di consegna o nel rientro sarà visibile la griglia di evasione.   
+> **Prikaz mreže za isporuku**: ako je flag aktivan, u procedurama ispunjenja narudžbi kroz DDT isporuke ili povrat, bit će prikazana mreža za isporuku.
 > 
-> **Visualizzazione tree evasione**: se attivo, nelle procedure di evasione ordine in DDT di consegna o nel rientro sarà visibile la struttura gerarchica. Questi due flag possono essere attivati in concomitanza.    
+> **Prikaz stabla izvršenja**: ako je flag aktivan, u procedurama ispunjenja narudžbi kroz DDT isporuke ili povrat, bit će prikazana hijerarhijska struktura. Ova dva flaga mogu biti aktivirana istovremeno.   
 
-**Codice operatore obbligatorio**: se attivo, permette di decidere se sia necessario inserire il codice operatore nel momento in cui si inserisce la DDT di consegna di conto lavoro.
+**Obvezna šifra korisnika**: Ako je flag aktivan, određuje treba li pri unosu DDT isporuke za kooperaciju obavezno unijeti šifru operatera.  
 
-**Proposta automatica serial number per l'articolo rientrato se presente anche come materiale consumato**: nei rientri di conto lavoro questo flag attivo permette di far proporre in automatico il serial number per l'articolo.
+**Automatski prijedlog serijskog broja za vraćeni artikl ako je također zabilježen kao potrošeni materijal**: u povratima iz kooperacije, ako je flag aktivan, sustav automatski predlaže serijski broj za artikl.  
 
-**Controlla disponibilità**: se attivo, permette di decidere se fare in modo che la procedura controlli o meno la disponibilità proveniente dai flag impostati nella sezione *Considera le disponibilità provenienti da*.
+**Provjera dostupnosti**: ako je flag aktivan, omogućuje odlučiti hoće li procedura provjeravati dostupnost na temelju flagova postavljenih u odjeljku *Uzimanje u obzir dostupnosti iz*.  
 
-**Disponibilità obbligatoria**: se attivo, impedisce l'inserimento di materiali in ordini di conto lavoro nel caso di mancata disponibilità alla data dell'eventuale consegna al terzista.
+**Obvezna raspoloživost**: ako je flag aktivan, sprječava unos materijala u naloge za kooperaciju ako nema dostupnosti na datum moguće isporuke kooperantu.  
 
-**Nessun materiale in consegna**: se attivo, fa in modo che nel tab *Materiali da consegnare* non sia inserito alcun articolo per nessun articolo da produrre.
+**Nema materijala u dostavi**: ako je aktivno, osigurava da u tabu *Materijali za isporuku* nije unesen nijedan artikal za nijedan artikal koji treba proizvesti.
 
-**Carico/Scarico automatico**: se attivo, permette all'utente di fare in modo che le movimentazioni di magazzino in uscita avvengano automaticamente non appena la DDT di consegna venga stampata. Questo consente di saltare lo step dello scarico dei  DDT di consegna di conto lavoro
+**Automatski utovar/istovar**: ako je aktivno, omogućuje korisniku da automatski izvrši izlazne skladišne pokrete čim se otisne DDT za isporuku. To omogućuje preskočiti korak otpreme DDT-a za isporuku vanjske obrade.
 
-**Registrazioni di magazzino con data del documento**: 
-per la registrazione dei **DDT di consegna**, se questo flag è attivo, viene usata la *Data trasporto* (presente nel tab *Riepiloghi* > *Destinatario*), se valorizzata, altrimenti viene considerata la data di creazione del documento presente in testata. Se il flag non è attivo, lo scarico dall'interno del documento viene sempre effttuato con la data corrente.    
-Per la registrazione dei **Rientri di conto lavoro**: se il flag è attivo viene sempre utilizzata la *Data rientro* presente in testata; se non attivo la registrazione dall'interno del documento viene effettuata con la *Data documento def.* presente in testata.
+**Registracija zaliha s datumom dokumenta**: 
+Za registraciju **Otpremnica**, ako je ovaj flag aktivan, koristi se *Datum transporta* (prisutan u kartici *Sažeci* > *Primatelj*), ako je postavljen, inače se uzima u obzir datum kreiranja dokumenta prisutan u zaglavlju. Ako flag nije aktivan, otprema unutar dokumenta uvijek se vrši s trenutnim datumom.  
+Za registraciju **Povrata vanjske obrade**: ako je flag aktivan, uvijek se koristi *Datum povrata* prisutan u zaglavlju; ako nije aktivan, registracija unutar dokumenta vrši se s *Datumom dokumenta* prisutnim u zaglavlju.
 
-**Blocca inserimento documento in date festive**: se attivo, impedisce l'inserimento di un ordine, di una DDT e di un rientro di conto lavoro in date festive.
+**Blokiraj umetanje dokumenata na državni praznik**: ako je aktivno, sprječava unos narudžbe, DDT-a i povrata vanjske obrade na praznične datume.
 
-**Controllo terzista di riferimento per gli articoli**: se attivo, consente all'utente di fare in modo che la procedura di creazione degli ordini di conto lavoro controlli se l'articolo che si sta inserendo nel tab *Articoli da Produrre* abbia, come fornitore preferenziale, il terzista inserito nella testata dell'ordine stesso.
+**Provjeri referentnog podizvođača za stavke**: ako je aktivno, omogućuje korisniku da postavi proceduru za kreiranje narudžbi vanjske obrade da provjeri ima li artikal koji se unosi u karticu *Artikala za proizvodnju*, kao preferiranog dobavljača, vanjskog izvođača unesenog u zaglavlje same narudžbe.
 
-**Lotti e numeri serali obbligatori**: se attivato, obbliga l'utente ad inserire in tutti i documenti il lotto dell'articolo inserito nel documento stesso, sempre che l'articolo sia gestito a lotti o a serial numbers.
+**Lotti e numeri serali obbligatori**: ako je aktivno, obvezuje korisnika da unese u sve dokumente seriju artikla unesenog u samom dokumentu, pod uvjetom da se artikal upravlja po serijama ili serijskim brojevima.
 
-**Ricalcola trasporto**: questo flag fa in modo che nel tab Trasporto del DDT vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.
+**Preračunaj prijevoz**: ovaj flag osigurava da se na tabu **Prenos** DDT prikazuju ukupne težine, volumeni i paketi redaka dokumenta; bez ovog flag-a, polja neće biti popunjena.
 
-**Verifica articoli in esaurimento**: se attivato, il sistema fa un controllo sulla disponibilità degli articoli in riga ordine ed avvisa qualora l'articolo fosse in esaurimento, ovvero se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item) è stato attivato il flag *In esaurimento*.
+**Provjeri zalihe artikala**: ako je flag aktivan, sustav provjerava dostupnost artikala u redovima narudžbe i upozorava ako je artikl pri isteku zaliha, to jest, ako je u [šifarniku artikla](/docs/erp-home/registers/items/create-new-item) aktiviran flag  *Pri isteku*.  
 
-**Attiva il controllo qualità**: work in progress.
+**Aktiviraj kontrolu kvalitete**: u pripremi.  
 
-**Gestione doppia unità misura**: solo se attivato, il sistema può gestire l'unità di misura alternativa nei documenti di conto lavoro.
+**Upravljanje dvostrukom jedinicom mjere**: samo ako je flag aktivan, sustav može upravljati alternativnom jedinicom mjere u dokumentima za kooperaciju.  
 
-**Proposta automatica UM alternativa**: se attivato, fa in modo che venga proposta la quantità relativa all'unità di misura alternativa, a patto che sull'anagrafica dell'articolo ne sia stata impostata una di default. È possibile attivare questo flag solo se il flag precedente è stato attivato.
+**Automatski prijedlog alternativne jedinice mjere**: ako je flag aktivan, sustav automatski predlaže količinu prema alternativnoj jedinici mjere, pod uvjetom da je u šifarniku artikla postavljena kao zadana. Ovaj flag moguće je aktivirati samo ako je prethodni flag također aktivan.  
 
-**Considera magazzini in base al tipo DDT rientro**: permette di scegliere se considerare i magazzini in base al tipo di DDT di rientro o al tipo di DDT consegna, invece che utilizzare le impostazioni inserite nelle apposite combo delle voci *Consegne materiali a terzisti* e *Rientro prodotto*.
+**Uzimanje u obzir skladišta prema tipu DDT povrata**: omogućuje odabir hoće li se skladišta uzimati u obzir prema tipu DDT povrata ili prema tipu DDT isporuke, umjesto da se koriste postavke iz izbornika *Isporuke materijala kooperantima* i *Povrat proizvoda*.
 
 ### Skladišta
 

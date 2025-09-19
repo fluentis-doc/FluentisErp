@@ -3,4 +3,4 @@ title: Općenito
 sidebar_position: 1
 ---
 
-Parametri područja nabave nalaze se u **Parametri > Nabava** i omogućuju definiranje tijeka dokumenata nabave prema logici koja je potrebna za svaku tvrtku.
+Parametri vezani uz nabavu nalaze se u **Parametri > Nabava** te omogućuju definiranje toka dokumenata nabave prema poslovnoj logici specifičnoj za svaku tvrtku.

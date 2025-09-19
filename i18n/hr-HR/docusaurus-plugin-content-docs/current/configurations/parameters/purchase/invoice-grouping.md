@@ -19,7 +19,7 @@ Ako su u Šifarniku dobavljača, u kartici *Parametri grupiranja za kupca/dobavl
 
 Kada se faktura kreira iz jedne jedine otpremnice, prenose se svi zaglavni podaci iz početnog dokumenta. Za fakture kreirane iz više otpremnica, prenose se podaci iz Šifarnika dobavljača.  
 
-#### Campi specifici  
+#### Specifična polja  
 
 - **Sažetak**: ako je aktivno, prilikom obrade više otpremnica bit će kreirana jedinstvena faktura za svakog dobavljača. Ako nije aktivno, uvijek će biti kreirana jedna faktura za svaku obrađenu otpremnicu. Grupiranje funkcionira samo za *Vrste otpremnica* (kupovne ili prodajne, ovisno o odabranoj operaciji) koje imaju kodificiran isti *Tip fakture* za kreiranje. Svi sljedeći flagovi moraju se koristiti zajedno s ovim flagom.
 
