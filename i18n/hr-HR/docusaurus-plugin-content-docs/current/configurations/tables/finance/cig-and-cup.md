@@ -1,22 +1,22 @@
 ---
-title: Codice Identificativo di Gara / Codice Unico Progetto
+title: Identifikacijska šifra natječaja / Jedinstvena šifra projekta
 sidebar_position: 8
 ---
 
-Le due tabelle, sostanzialmente identiche, permettono di inserire i codici identificativi di gara d'appalto ed i codici progetto da richiamare poi nei documenti del ciclo attivo.
+Dvije tablice, u osnovi identične, omogućuju unos identifikacijskih kodova javne nabave i projektnih kodova koji se zatim mogu koristiti u dokumentima aktivnog ciklusa.
 
-Si ricorda che sono presenti due flag nelle [**anagrafiche clienti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) al fine di rendere visibili i campi nella testata dei documenti (ordine, bolla, fattura).
+Podsjeća se da postoje dvije oznake u [**karticama klijenata**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) kako bi polja bila vidljiva u zaglavlju dokumenata (narudžba, otpremnica, račun).
 
-**Codice:** accoglie il codice di gara o il codice progetto, che sarà poi riportato nei file SDI ad esempio
+**Šifra:** sadrži šifru natječaja ili projektnu šifru, koja će se, primjerice, prenijeti u SDI datoteke.
 
-**Data / Data richiesta:** accoglie la data di inizio validità del codice
+**Datum / Datum zahtjeva:** sadrži datum početka valjanosti šifre.
 
-**Cod. attivo:** permette di rendere attivo o disattivato il codice
+**Aktivna šifra:** omogućuje aktiviranje ili deaktiviranje šifre.
 
-**Descrizione:** accoglie una descrizione di dettaglio riferita al codice, al fine di identificare a quale gara d'appalto o progetto si riferisca
+**Opis:** detaljan opis povezan sa šifrom, kako bi se identificiralo na koji se natječaj ili projekt odnosi.
 
-**IBAN:** permette di inserire il codice IBAN del conto corrente bancario che, tipicamente, è associato specificamente alla gara d'appalto o al progetto al fine di canalizzare gli incassi relativi.
+**IBAN:** omogućuje unos IBAN koda bankovnog računa koji je, u pravilu, posebno povezan s natječajem ili projektom radi usmjeravanja pripadajućih uplata.
 
-:::tip[Nota]
-Per la corretta gestione dei codici CIG e CUP nei tracciati della fattura elettronica, essendo il relativo tag un figlio dei dati ordine, vedere [**qui**](/docs/finance-area/e-invoice/configuration_einvoice)
+:::tip[Napomena]
+Za ispravno upravljanje CIG i CUP kodovima u elektroničkom računu, budući da je odgovarajući tag podređen podacima narudžbe, pogledati [**ovdje**](/docs/finance-area/e-invoice/configuration_einvoice)
 :::
