@@ -1,31 +1,31 @@
 ---
-title: Cambi valute
+title: Devizni tečajevi
 sidebar_position: 4
 ---
 
-La tabella dei Cambi valute, comune a tutte le società della stessa base dati, consente di impostare giorno per giorno i cambi ufficiali da utilizzare nelle varie procedure del gestionale: in particolare si segnala che il programma andrà a recuperare da questa tabella l'ultimo cambio valido a ritroso dalla data del documento/registrazione che si sta inserendo.
+Tablica Tečajevi valuta, zajednička za sve tvrtke iste baze podataka, omogućuje postavljanje službenih tečajeva za svaki dan koji će se koristiti u različitim procedurama u sustavu. Posebno se ističe da program preuzima iz ove tablice posljednji važeći tečaj unatrag od datuma dokumenta/knjiženja koji se unosi.
 
-:::note Nota
-La tabella può essere valorizzata manualmente inserendo direttamente il tasso di cambio relativo alla divisa ed al giorno anch'essi impostati manualmente, oppure può essere eseguito un aggiornamento automatico scaricando i tassi di cambio tramite l'apposito bottone posto nella ribbon bar ***Scarica tassi di cambio***.
+:::note Napomena
+Tablica se može popuniti ručno unosom tečaja za određenu valutu i datum, ili se može izvršiti automatsko ažuriranje preuzimanjem tečajeva putem gumba ***Preuzmi tečajeve*** u traci izbornika.
 
- Premendo il bottone apparirà un **popup** che richiede l'inserimento delle **date Da / A** all'interno delle quali ricercare i tassi di cambio ed il **flag Inserimento automatico** che va direttamente a popolare la tabella (e che si consiglia di lasciare attivo).
+ Klikom na gumb pojavit će se **popup** u kojem se unose **datumi Od / Do** za pretraživanje tečajeva te se može aktivirati **označavanje Automatski unos**, koje izravno popunjava tablicu (preporučuje se da ostane aktivirano).
 
-**ATTENZIONE:** vengono scaricati i tassi di cambio relativi solamente alle divise che hanno il flag Scarica cambi nella tabella [**Divisa**](/docs/configurations/tables/general-settings/currencies).
+**PAŽNJA:** preuzimaju se tečajevi samo za valute koje imaju označen gumb Preuzmi tečajeve u tablici [**Valuta**](/docs/configurations/tables/general-settings/currencies).
 :::
 
 
-##### Campi specifici
+##### Specifična polja
 
-**Cambio**: normalmente va inserita la divisa della società (euro).
+**Tečaj**: obično se unosi valuta tvrtke (npr. euro).
 
-**Descrizione**: descrizione della divisa.
+**Opis**: opis valute.
 
-**In**: divisa di riferimento.
+**U**: referentna valuta.
 
-**Descrizione**: descrizione divisa di riferimento.
+**Opis**: opis referentne valute.
 
-**Data valuta**: data di riferimento del cambio.
+**Datum tečaja**: datum na koji se tečaj odnosi.
 
-**Valore cambio**: si tratta del cambio 'incerto per certo', effettivamente utilizzato dal programma nei calcoli dei controvalori. Nel caso dell'euro, quindi, è il valore inverso al cambio ufficiale del giorno.
+**Vrijednost tečaja**: to je tečaj 'neizvjesno za sigurno', koji program koristi za izračun protuvrijednosti. Za euro, to je vrijednost obrnuta od službenog tečaja za taj dan.
 
-**Valore diretto**: si tratta del cambio 'certo per incerto'. Nel caso dell'euro, quindi, è il valore de cambio ufficiale del giorno.
+**Vrijednost izravno**: to je tečaj 'sigurno za neizvjesno'. Za euro, to je vrijednost službenog tečaja za taj dan.
