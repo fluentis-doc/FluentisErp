@@ -31,7 +31,7 @@ In the section **Batch and serial number management**, the following flags can b
 
 **Suggest Batches/Serial numbers**: if active, when changing the quantity of the picking line, if the item is managed by batches with FIFO picking or expiration date, the batches will be automatically suggested in the relative grid.
 
-**Automatic Movement Check**: if active, in the *Check row management* form, it automatically discharges the line.   
+**Automatic Movement Check**: if active, in the forms *Check Management* and *Confirm Picking* it performs the automatic unloading of the line, and in this case, it will not be necessary to do it from [Unload from Check](/docs/logistics/picking/unload-check-row-management); while if the flag is not active, then the check will be performed but without the movement, which must be carried out through the procedure [Unload from Check](/docs/logistics/picking/unload-check-row-management).
 
 **Display discharge grid**: if active, the flag enables grid mode in the picking discharge form.
 
