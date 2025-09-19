@@ -1,14 +1,14 @@
 ---
-title: Cambi fissi per l'euro
+title: Fiksni tečaj za EURO
 sidebar_position: 3
 ---
 
-La tabella presenta la lista dei cambi fissi di conversione all'euro: impostando il valore dell'euro il programma procederà automaticamente al calcolo delle valore inverso che sarà utilizzato poi nei calcoli dei controvalori del gestionale.
+Tablica prikazuje popis fiksnih tečajeva za konverziju u euro: postavljanjem vrijednosti eura program će automatski izračunati inverzni tečaj koji će se zatim koristiti u izračunima protuvrijednosti u sustavu.
 
-#### Campi specifici
+#### Specifična polja
 
-**Divisa**: rappresenta il codice della divisa (tabella di riferimento: ) 
+**Valuta**: predstavlja šifru valute (referentna tablica: ) 
 
-**1 EURO**: valore di 1 EURO = divisa di riferimento.
+**1 EURO**: vrijednost 1 EUR = referentna valuta.
 
-**Cambio inverso**: calcolo del cambio inverso.
+**Inverzni tečaj**: izračun inverznog tečaja.
