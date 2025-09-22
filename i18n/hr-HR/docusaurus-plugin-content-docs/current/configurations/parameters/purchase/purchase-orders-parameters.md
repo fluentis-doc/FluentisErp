@@ -7,36 +7,17 @@ Parametri narudžbe dobavljača omogućuju pravilno upravljanje osnovnom postavk
 
 Prozor se sastoji od gumba i tri različite kartice: Općenito, Učitaj, Analitika.
 
-*Gumbi*:
-
-> **Spremi**: omogućuje vam spremanje postavljenih parametara.
-> **Vrati**: omogućuje vraćanje parametara na njihove početne vrijednosti.
-
 ### Općenito
 
 **Upravljanje duplom mjernom jedinicom**:  samo ako je aktivirano, sustav može upravljati alternativnom mjernom jedinicom u narudžbi dobavljača.
 
 **Automatski prijedlog alternativne jedinice mjere**: ako je aktiviran, osigurava da se predloži količina koja se odnosi na alternativnu mjernu jedinicu, pod uvjetom da je zadana postavljena u matičnim podacima stavke. Ovu zastavu možete aktivirati samo ako je prethodna zastavica bila aktivirana;
 
-**Povrati samo za tekući datum**: omogućuje vam da oporavite sve praznine u numeriranju naloga samo ako nalog ima današnji datum;
+**Trošak nula ako nedostaje cjenik**: ako je aktivno, u odsutnosti važeće cjenovne liste popunjava cijenu s vrijednošću nula. U slučaju da ova stavka nije označena, polje bi bilo popunjeno s posljednjim troškom artikla, ako je prisutno.
 
-**Auto insert varijante u varijante karakteristika**: više se ne koristi;
+**Blokiraj umetanje dokumenata na državni praznik**: ako je aktivno, sustav ne dopušta unos narudžbe na prazničnim danima (subota, nedjelja i blagdani). Ako nije aktivno, sustav ne provodi nikakvu kontrolu i dopušta unos narudžbe.
 
-**Ne dopusti da se izvrši veća količina**: ako je aktivan, sprječava, prilikom obrade narudžbe s potvrdom o primitku robe, navođenje količina većih od onih navedenih u redovima narudžbe, izbjegavajući bilo kakve neusklađenosti između naručenih količina i onih koje su stvarno utovarene u skladište;
-
-**Kontroliraj redni broj dokumenta i datum**: kontrolira slijed datuma/brojeva narudžbenica. Ako nema slijeda, sustav će vratiti grešku koja sprječava unos naloga;
-
-**Trošak nula ako nedostaje cjenik**: ako je aktivan, u nedostatku važećeg cjenika popunjava cijenu s vrijednošću nula. Ako ova stavka nije označena, polje će biti ispunjeno konačnom cijenom stavke, ako postoji;
-
-**Prikaži dimenzije**: ako je aktivno, upravlja se i prikazuje stupce dimenzija (visina, širina, dubina) mreže stavki;
-
-**Dopusti otpremnice s istim brojem i kupcem**: ako je aktivno, dopušta umetanje iste dostavnice broja za istog dobavljača. Preporuča se ostaviti ovu zastavu deaktiviranom kako bi sustav mogao izvršiti provjeru jedinstvenosti;
-
-**Blokiraj unos na praznike**: ako je aktivan, sustav ne dopušta unos naloga na praznike (subota, nedjelja i praznici). Ako nije aktivan, sustav ne provodi nikakve provjere i dopušta unos naloga;
-
-**Izvrši samo autorizirane naloge**: ako je aktivan, ne dopušta obradu neovlaštenih narudžbi dobavljača s povezanom provjerom (u *Narudžbe dobavljača* > kartica *Zaglavlje*);
-
-**Predloži marku s prioritetnim cjenikom/Narudžba prodaje**: više se ne koristi;
+**Predloži marku s prioritetnim cjenikom/Narudžba prodaje**: ne koristi se više.
 
 **Dopusti uređivanje PDV-a**: ako je aktivan, u slučaju [Automatskog kreiranja narudžbi iz zahtjeva za kupnju](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) predlaže se PDV šifra iz šifarnika dobavljača;
 
@@ -46,11 +27,15 @@ Prozor se sastoji od gumba i tri različite kartice: Općenito, Učitaj, Analiti
 
 **Koristi predmet dobavljača**: ako je aktivno, polje za unos šifre stavke dobavljača također se predlaže u mreži stavki narudžbe dobavljača. Ako nije aktivirano, ovo polje neće biti vidljivo; 
 
-**Provjeri zalihe artikala**: ako je aktivirano, sustav provjerava dostupnost artikala u retku narudžbe i upozorava vas ako artikal ponestaje;
+**Provjeri zalihe artikala**: ako je aktivirano, sustav provjerava dostupnost artikala u retku narudžbe i upozorava vas ako artikal ponestaje, odnosno, ako je u [šifrarnik artikala](/docs/erp-home/registers/items/create-new-item) aktivirana opcija *Na izmaku zaliha*.
 
-**Ambalažno računovodstvo**: omogućuje vam da u općem računovodstvu obračunate i linije s ambalažnim artiklima kojima se obično upravlja za provjeru zaliha povratne ambalaže. Upravljanje povratnom ambalažom bit će objašnjeno u odgovarajućem videu.
+**Ambalažno računovodstvo**: omogućuje vam da u općem računovodstvu obračunate i linije s ambalažnim artiklima kojima se obično upravlja za provjeru zaliha [Povratne ambalaže](/docs/configurations/tables/logistics/package-to-be-returned).
+
 
 ### Utovar
+
+U ovoj karticu definiraju se parametri koji se koriste za [Zaduženje skladišta pristiglom robom](/docs/purchase/goods-reception/procedures/good-receipt-load).
+
 
 **Kreiraj zapis s datumom dokumenta**: ako je aktivan, registracija skladišta se vrši s istim datumom kao i narudžba i neće biti potrebno navesti datum registracije u obrascu za utovar. Ako nije aktivan, morat ćete navesti datum u obrascu za učitavanje.  
 
@@ -69,9 +54,6 @@ Možete promijeniti prioritete pomoću gumba:
 
 **Preračun**: ako je aktivan, ova zastavica ponovno izračunava troškovne/profitne centre prema odabranom prioritetu.  
 
-**Obvezni CdP/CDC**: ako je aktivan, ova oznaka čini atribuciju troškovnih/profitnih centara obveznom.
+**Obavezni centar troška/prihoda**: ako je ova opcija aktivirana, unos centara troška/dobiti postaje obavezan.
 
-Nakon što postavite parametre najbolje što želite, morat ćete ih spremiti kako bi postali učinkoviti klikom na gumb **Spremi**.
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ly9eQJHYYro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Ocijeni prioritet za svaku dimenziju**: Ako je aktivan, ovaj flag omogućuje procjenu svake prioritetne stavke unesene na vrhu kako bi se utvrdilo postoje li dodatne dimenzije koje još nisu valorizirane. Na primjer, pretpostavimo da imamo u *Šifarniku artikla* troškovni centar dimenzije *Poslovna jedinica* i u *Vrsti fakturiranja* nabave dimenziju *Upravna*. Ako flag nije aktivan, sustav procjenjuje samo CDC prisutan u *Kartonu artikla*; ako je flag aktivan, nakon učitavanja CDC-a prisutnog u *Kartonu artikla*, sustav također procjenjuje dimenziju prisutnu u *Vrsti fakturiranja* nabave (u našem primjeru dimenziju *Upravna*), i ako se razlikuje od onih koje je već obradio (*Poslovna jedinica*), učitava centar i nastavlja s provjerom drugih prioriteta.

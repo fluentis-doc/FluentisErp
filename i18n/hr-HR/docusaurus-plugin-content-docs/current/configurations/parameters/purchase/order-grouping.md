@@ -1,5 +1,5 @@
 ---
-title: Parametri raggruppamento Ordini di acquisto
+title: Parametri za grupiranje narudžbenica  
 sidebar_position: 8
 ---
 
@@ -19,22 +19,22 @@ Ako su u šifarniku dobavljača, u kartici *Parametri grupiranja za kupca/dobavl
 
 Kada se narudžba dobavljača kreira iz jedne narudžbe kupca, svi podaci zaglavlja prisutni u izvornoj dokumentaciji bit će preneseni. Međutim, za narudžbe za kupnju koje se kreiraju iz više narudžbi prodaje, prenose se podaci šifarnika dobavljača.
 
-*Specifična polja*:
+#### Specifična polja
 
-> **Sažetak**: ako je aktivirano, prilikom kreiranja narudžbi dobavljača iz više narudžbi kupaca bit će kreiran jedan jedini dokument za dobavljača. Ako nije aktivirano, uvijek će biti kreiran dokument za svaku narudžbu kupca. Grupiranje djeluje samo za [Tipove narudžbi kupaca](/docs/configurations/tables/sales/sales-order-types/) koji imaju kodificirani isti *Tip narudžbe dobavljača* koji se treba kreirati. Sve sljedeće oznake moraju se koristiti u kombinaciji s ovom oznakom.    
->
-> **Gruppiranje po vrsti dokumenta**: ako je aktivirano, bit će grupirani u jednu narudžbu svi dokumenti koji imaju isti *Tip narudžbe kupca.*       
->
-> **Gruppiranje po godini**: aktiviranjem ove oznake bit će izvršeno grupiranje prema godini unosa narudžbe kupca. 
->
-> **Gruppiranje po mjesecu**: kako bi se izvršilo grupiranje prema mjesecu kreiranja narudžbe, potrebno je također aktivirati prethodnu oznaku.   
->
-> **Gruppiranje po tečaju**: ako je aktivirano, dokumenti s istom valutom i istim tečajem bit će grupirani u jednu narudžbu za kupnju.     
->
-> **Gruppiranje po narudžbi**: ova oznaka se koristi samo za *Kreiranje Otpremnica i faktura za prodaju iz Picking-a* (vidi [Parametre grupiranja otpremnica](/docs/configurations/parameters/sales/dn-grouping) i [fakture](/docs/configurations/parameters/sales/invoice-grouping)), stoga u ovom postupku nema smisla.    
->
-> **Gruppiranje po projektu**: aktiviranjem ove oznake bit će izvršeno grupiranje po projektu. Grupiranje također djeluje za projekte unesene na razini stavke artikla; ako neke od stavki artikla nemaju pridružen projekt, bit će kreirana drugačija narudžba za sve artikle koji ga nemaju. Kada je projekt unesen u zaglavlje izvornog dokumenta, bit će prikazan i u zaglavlju odredišnog dokumenta, inače će biti zadržan samo na stavkama artikla.     
->
-> **Gruppiranje po vrsti i rješenju plaćanja**: aktiviranjem ove oznake bit će izvršeno grupiranje na temelju vrste i rješenja plaćanja unesenog u narudžbu kupca; ta će informacija biti prikazana u zaglavlju kreirane narudžbe dobavljača.   
->
-> **Gruppiranje po odredištu**: aktiviranjem ove oznake bit će izvršeno grupiranje na temelju odredišta unesenog unutar narudžbe kupca u kartici *Odredište*; ta će informacija biti prikazana u zaglavlju kreirane narudžbe dobavljača.   
+-  **Sažetak**: ako je aktivirano, prilikom kreiranja narudžbi dobavljača iz više narudžbi kupaca bit će kreiran jedan jedini dokument za dobavljača. Ako nije aktivirano, uvijek će biti kreiran dokument za svaku narudžbu kupca. Grupiranje djeluje samo za [Tipove narudžbi kupaca](/docs/configurations/tables/sales/sales-order-types/) koji imaju kodificirani isti *Tip narudžbe dobavljača* koji se treba kreirati. Sve sljedeće oznake moraju se koristiti u kombinaciji s ovom oznakom.    
+
+-  **Gruppiranje po vrsti dokumenta**: ako je aktivirano, bit će grupirani u jednu narudžbu svi dokumenti koji imaju isti *Tip narudžbe kupca.*       
+
+- **Gruppiranje po godini**: aktiviranjem ove oznake bit će izvršeno grupiranje prema godini unosa narudžbe kupca. 
+
+- **Gruppiranje po mjesecu**: kako bi se izvršilo grupiranje prema mjesecu kreiranja narudžbe, potrebno je također aktivirati prethodnu oznaku.   
+
+- **Gruppiranje po tečaju**: ako je aktivirano, dokumenti s istom valutom i istim tečajem bit će grupirani u jednu narudžbu za kupnju.     
+
+- **Gruppiranje po narudžbi**: ova oznaka se koristi samo za *Kreiranje Otpremnica i faktura za prodaju iz Picking-a* (vidi [Parametre grupiranja otpremnica](/docs/configurations/parameters/sales/dn-grouping) i [fakture](/docs/configurations/parameters/sales/invoice-grouping)), stoga u ovom postupku nema smisla.    
+
+- **Gruppiranje po projektu**: aktiviranjem ove oznake bit će izvršeno grupiranje po projektu. Grupiranje također djeluje za projekte unesene na razini stavke artikla; ako neke od stavki artikla nemaju pridružen projekt, bit će kreirana drugačija narudžba za sve artikle koji ga nemaju. Kada je projekt unesen u zaglavlje izvornog dokumenta, bit će prikazan i u zaglavlju odredišnog dokumenta, inače će biti zadržan samo na stavkama artikla.     
+
+- **Gruppiranje po vrsti i rješenju plaćanja**: aktiviranjem ove oznake bit će izvršeno grupiranje na temelju vrste i rješenja plaćanja unesenog u narudžbu kupca; ta će informacija biti prikazana u zaglavlju kreirane narudžbe dobavljača.   
+
+- **Gruppiranje po odredištu**: aktiviranjem ove oznake bit će izvršeno grupiranje na temelju odredišta unesenog unutar narudžbe kupca u kartici *Odredište*; ta će informacija biti prikazana u zaglavlju kreirane narudžbe dobavljača.   
