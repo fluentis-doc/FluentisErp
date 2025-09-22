@@ -5,37 +5,37 @@ sidebar_position: 1
 
 ### Patch 707.1-0047 - 19/09/2025
 
-> - Risolto problema di autenticazione per server di posta moderni  come GMail 
-> - PM - Risolto caso per cui generando fattura da progetti tramite procedura, in caso di ritenuta d'acconto veniva riportata solo come riferimento e non calcolata nei totali. (#TT03799/25) 
-> - WM - Ottimizzato e velocizzato il caricamento dei picking nella form di filtro picking. (#TT03764/25) 
-> - WM - Corretto bug nella procedura di chiusura di magazzino nel caso di gestione con UDC. Corretto bug nella procedura “Aggiungi / sposta articoli” presente in gestione UDC. (#TT03596/25) 
-> - corretto tracciato per importazione excel cespiti che non riportava correttamente all’interno della scheda il dettaglio dell’ammortamento pregresso. Rif. #TT02237/25 
-> - WMS - In conferma picking e Gestione spunta, nel caso in cui un articolo venga sovraevaso la quantità presente nel tab articoli non viene più visualizzata negativa ma viene visualizzata pari a zero. (#TT03734/25) 
-> - SD - I campi CIG e CUP inseriti nella testata dell’Ordine Cliente vengono riportati automaticamente anche nel Progetto generato dall’ordine. Inoltre, durante l’evasione di un progetto in Ordine Cliente, i valori di CIG e CUP presenti nella testata del progetto vengono trasferiti anche sulle righe articolo dell’ordine. (#TT03627/25) 
-> - SD - Fatture di vendita: Per le fatture di tipo differito, l’attivazione del flag Stampata a seguito della stampa del documento non richiama più la procedura di scarico automatico. (#TT03689/25) 
-> - MES - Corretto bug che al refresh della form principale del MES cancellava il lotto di produzione nel tab lotti e serial number. (#TT03739/25) 
-> - MES - Corretta anomalia relativa al ricalcolo dei materiali consumati nelle dichiarazioni di produzione. (#TT03888/25) 
-> - FI - stampa Liquidazioni Agenti - vuota ( TT03928/25) 
-> - Fi - nella stampa di controllo delle dichiarazioni di intento, revisione calcoli per conteggio delle spese finali in esenzione nei documenti (#TT03765/24) 
-> - SD - I DDT valorizzati nella stessa fattura possono essere scaricati anche separatamente. Le fatture generate da DDT sono scaricabili solo se di tipo immediato e con flag Scollega DDT, altrimenti lo scarico va effettuato direttamente dai DDT. Per le fatture immediate, quando tutti i DDT risultano scaricati, l’attivazione del flag Stampata in fattura imposta automaticamente anche il flag Scaricata. (#TT03152/25) 
-> - CRM - L’Agente principale viene riportato in testata Offerta anche se il Contatto CRM non ha un’anagrafica contabile associata (#TT02925/25) 
-> - Risolto bug esportazioni multiple da WorkFlow (#TT03916/25) 
-> - WM - Corretta anomalia che nel caso in cui la form Visualizzazione giacenze avesse un profilo, quando con il tasto dx su un codice articolo veniva aperta, questa non aveva l’articolo filtrato. (#TT03803/25) 
-> - SD - Nell’importazione Web API dei documenti di vendita, l’agente inserito aggiorna l’eventuale agente proposto da anagrafica (#TT02486/25) 
-> - SH - WEB - Corretta l’esportazione in formato Excel delle griglie dei documenti. (#TT03134/25) 
-> - WM - Ottimizzata e migliorata la visualizzazione in analisi disponibilità degli ordini di produzione e delle relative dichiarazioni di produzione. (#TT03754/25 - #TT01102/25 - #TT04027/25) 
-> - CO - revisione ‘Ripresa ammortamento cespiti’ nelle chiusure infrannuali, ottimizzazione (si consiglia di eseguire la procedura con l’opzione ‘singola registrazione’ attiva) (TT03929/25) 
-> - FI - Corretto comportamento del filtro Categoria amministrativa nelle form generazione solleciti e generazione automatica solleciti ( #TT03618/25) 
-> - FI - causali automatiche, revisione gestione Sottoconti automatici (#TT03869/25) 
-> - WM - Rinominate le labels relative alla giacenza in analisi disponibilità, da: “Giacenza, Giacenza Disponibile, Giacenza Non Disponibile” a “Giacenza Operativa, Giacenza Operativa Disponibile, Giacenza Operativa Non Disponibile”.(#TT04072/25) 
-> - WM - In analisi disponibilità migliorata la leggibilità del campo numero documento, dove nel caso in cui si tratti di un ordini di produzione viene visualizzato:  
-> - "numero ordine di produzione - numero lotto" e nel caso di una dichiarazione di produzione viene visualizzato: "numero ordine di produzione - numero lotto - numero dichiarazione di produzione". (#TT04069/25) 
 > - CO - Corretta anomalia nella procedura di calcolo costo nel caso di listini con prezzi con UM diversa da quella principale dell’articolo. (#TT03766/25) 
-> - WM - Corretto filtro magazzino nella chiamata API GetItemsAvailability . (TT03867/25 ) 
-> - SH - fast start, valorizzazione della tabella di dettaglio delle nature transazioni intrastat (#TT03930/25) 
+> - CO - revisione ‘Ripresa ammortamento cespiti’ nelle chiusure infrannuali, ottimizzazione (si consiglia di eseguire la procedura con l’opzione ‘singola registrazione’ attiva) (TT03929/25) 
+> - corretto tracciato per importazione excel cespiti che non riportava correttamente all’interno della scheda il dettaglio dell’ammortamento pregresso. Rif. #TT02237/25 
+> - CRM - L’Agente principale viene riportato in testata Offerta anche se il Contatto CRM non ha un’anagrafica contabile associata (#TT02925/25) 
+> - FI - causali automatiche, revisione gestione Sottoconti automatici (#TT03869/25) 
+> - FI - Corretto comportamento del filtro Categoria amministrativa nelle form generazione solleciti e generazione automatica solleciti ( #TT03618/25) 
 > - FI - Declaration 300 and 394 for RO - vat code 11 and 21 ( TT04041/25) 
+> - Fi - nella stampa di controllo delle dichiarazioni di intento, revisione calcoli per conteggio delle spese finali in esenzione nei documenti (#TT03765/24) 
+> - FI - stampa Liquidazioni Agenti - vuota ( TT03928/25) 
+> - MES - Corretta anomalia relativa al ricalcolo dei materiali consumati nelle dichiarazioni di produzione. (#TT03888/25) 
+> - MES - Corretto bug che al refresh della form principale del MES cancellava il lotto di produzione nel tab lotti e serial number. (#TT03739/25) 
+> - "numero ordine di produzione - numero lotto" e nel caso di una dichiarazione di produzione viene visualizzato: "numero ordine di produzione - numero lotto - numero dichiarazione di produzione". (#TT04069/25) 
+> - PM - Risolto caso per cui generando fattura da progetti tramite procedura, in caso di ritenuta d'acconto veniva riportata solo come riferimento e non calcolata nei totali. (#TT03799/25) 
+> - Risolto bug esportazioni multiple da WorkFlow (#TT03916/25) 
+> - Risolto problema di autenticazione per server di posta moderni  come GMail 
+> - SD - Fatture di vendita: Per le fatture di tipo differito, l’attivazione del flag Stampata a seguito della stampa del documento non richiama più la procedura di scarico automatico. (#TT03689/25) 
+> - SD - I campi CIG e CUP inseriti nella testata dell’Ordine Cliente vengono riportati automaticamente anche nel Progetto generato dall’ordine. Inoltre, durante l’evasione di un progetto in Ordine Cliente, i valori di CIG e CUP presenti nella testata del progetto vengono trasferiti anche sulle righe articolo dell’ordine. (#TT03627/25) 
+> - SD - I DDT valorizzati nella stessa fattura possono essere scaricati anche separatamente. Le fatture generate da DDT sono scaricabili solo se di tipo immediato e con flag Scollega DDT, altrimenti lo scarico va effettuato direttamente dai DDT. Per le fatture immediate, quando tutti i DDT risultano scaricati, l’attivazione del flag Stampata in fattura imposta automaticamente anche il flag Scaricata. (#TT03152/25) 
+> - SD - Nell’importazione Web API dei documenti di vendita, l’agente inserito aggiorna l’eventuale agente proposto da anagrafica (#TT02486/25) 
+> - SH - fast start, valorizzazione della tabella di dettaglio delle nature transazioni intrastat (#TT03930/25) 
 > - SH - revisione webapi di import dell’oggetto FSLedgerAccount per gestione anagrafica agenti (#TT03911/25) 
+> - SH - WEB - Corretta l’esportazione in formato Excel delle griglie dei documenti. (#TT03134/25) 
+> - WM - Corretta anomalia che nel caso in cui la form Visualizzazione giacenze avesse un profilo, quando con il tasto dx su un codice articolo veniva aperta, questa non aveva l’articolo filtrato. (#TT03803/25) 
+> - WM - Corretto bug nella procedura di chiusura di magazzino nel caso di gestione con UDC. Corretto bug nella procedura “Aggiungi / sposta articoli” presente in gestione UDC. (#TT03596/25) 
+> - WM - Corretto filtro magazzino nella chiamata API GetItemsAvailability . (TT03867/25 ) 
+> - WM - In analisi disponibilità migliorata la leggibilità del campo numero documento, dove nel caso in cui si tratti di un ordini di produzione viene visualizzato:  
 > - WM - In conferma picking di articoli gestiti a lotti aggiornata quantità di riga anche alla prima sovraevasione(#TT04004/25).
+> - WM - Ottimizzata e migliorata la visualizzazione in analisi disponibilità degli ordini di produzione e delle relative dichiarazioni di produzione. (#TT03754/25 - #TT01102/25 - #TT04027/25) 
+> - WM - Ottimizzato e velocizzato il caricamento dei picking nella form di filtro picking. (#TT03764/25) 
+> - WM - Rinominate le labels relative alla giacenza in analisi disponibilità, da: “Giacenza, Giacenza Disponibile, Giacenza Non Disponibile” a “Giacenza Operativa, Giacenza Operativa Disponibile, Giacenza Operativa Non Disponibile”.(#TT04072/25) 
+> - WMS - In conferma picking e Gestione spunta, nel caso in cui un articolo venga sovraevaso la quantità presente nel tab articoli non viene più visualizzata negativa ma viene visualizzata pari a zero. (#TT03734/25)
 
 ### Patch 707.1-0046 - 11/09/2025
 
