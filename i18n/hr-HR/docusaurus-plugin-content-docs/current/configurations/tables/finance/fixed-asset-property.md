@@ -1,12 +1,12 @@
 ---
-title: Proprietà cespite
+title: Svojstva imovine
 sidebar_position: 19
 ---
 
-Questa tabella permette di definire un semplice codice e descrizione della caratteristica da assegnare ai vari cespiti: sarà utilizzabile come filtro di ricerca/stampa per ottenere una lista di cespiti che hanno una determinata proprietà o caratteristica.
+Ova tablica omogućuje definiranje jednostavne šifre i opisa svojstva koje se dodjeljuje različitoj imovini. Može se koristiti kao filter za pretraživanje/ispis kako bi se dobio popis imovine koja ima određeno svojstvo ili karakteristiku.
 
-#### Campi specifici
+#### Specifična polja
 
-**Tipo**: Tipo della proprietà cespite.
+**Tip**: tip svojstva imovine.
 
-**Descrizione**: descrizione della proprietà cespite.
+**Opis**: opis svojstva imovine.
