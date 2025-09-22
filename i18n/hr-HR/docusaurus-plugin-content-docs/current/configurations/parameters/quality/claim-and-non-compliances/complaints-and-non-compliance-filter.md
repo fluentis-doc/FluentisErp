@@ -1,23 +1,24 @@
 ---
-title: Ricerca Parametri reclami e non conformità
+title: Pretraga parametara reklamacija i nesukladnosti
 sidebar_position: 1
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri reclami e non conformità**.   
+I parametri se nalaze na putu **Parametri > Kvaliteta > Parametri reklamacija i nesukladnosti**.   
 
-Le informazioni sono memorizzate per *Anno*.   
-Il filtro dati consente di inserire nuovi parametri o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.   
+Informacije se pohranjuju po *Godini*.  
+Filtriranje podataka omogućuje unos novih parametara ili pretraživanje već postojećih kako bi ih se prikazalo, izmijenilo ili izbrisalo. 
 
-**Ricerca Parametri**
+**Pretraga parametara**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Obrazac se sastoji od područja za filtriranje i područja za prikaz rezultata.
+Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na tipku **Pretraživanje** kako bi se rezultati prikazali unutar mreže rezultata.
 
 **Inserimento Parametri**
 
-Per poter inserire nuovi *Anni* è necessario premere il pulsante **Nuovo**.   
+Za unos novih *Godina* potrebno je kliknuti na tipku **Novo**.   
 
-**Modifica o Visualizzazione Parametri**
+**Izmjena ili pregled parametara**
 
-Per aprire la gestione, della griglia di risultato, è necessario fare doppio click sulla riga di nostro interesse oppure, selezionando una o più righe, premere i pulsanti **Modifica** o **Visualizza**.   
+Za otvaranje upravljanja iz mreže rezultata potrebno je dvostruko kliknuti na red koji vas zanima ili, nakon odabira jednog ili više redaka, kliknuti na tipke **Izmijeni** ili **Pregledaj**.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije posebno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju obrazaca, pogledajte sljedeću poveznicu:[Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).

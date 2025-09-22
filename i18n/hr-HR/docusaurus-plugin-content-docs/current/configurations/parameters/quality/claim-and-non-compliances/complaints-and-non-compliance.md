@@ -1,52 +1,53 @@
 ---
-title: Parametri reclami e non conformità
+title: Parametri reklamacija i nesukladnosti
 sidebar_position: 2
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri reclami e non conformità**.   
+Parametri se nalaze putem izbornika **Parametri > Kvaliteta > Parametri reklamacija i nesukladnosti**.   
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nelle gestioni:   
-> **Reclami**;   
-> **Non conformità**.   
-> **Autorizzazione al rientro** - nella stampa di *Autorizzazione al rientro*.   
+Podaci uneseni u ovom modulu koriste se za predlaganje informacija u sljedećim modulima:     
+- **Reklamacije**;   
+- **Nesukladnosti**.   
+- **Autorizacija povrata** - pri ispisu *Odobrenja za povrat*.   
 
-**Salvataggio dei Parametri**
+**Spremanje parametara**
 
-Per poter memorizzare le informazioni modificate è necessario premere il pulsante **Salva**.   
+Za pohranu izmijenjenih podataka potrebno je kliknuti na tipku **Spremi**.   
 
-## Parametri reclami e non conformità      
+## Parametri reklamacija i nesukladnosti     
 
-> **Anno**: è l'*Anno* di riferimento dei *Parametri reclami e non conformità*.   
-> **Note**: annotazioni libere.   
+- **Godina**: *Godina* na koju se odnose *parametri reklamacija i nesukladnosti*.   
+- **Bilješke**: slobodne napomene.   
 
-### Reclami      
+### Reklamacije      
 
-In questo expander è possibile inserire dati da proporre nei *Reclamo*.   
-Nell'expander è possibile inserire:   
-> **Tipo reclamo**: *Tipo reclamo* da proporre all'inserimento di un *Reclamo*.   
-> **Persona responsabile**: *Dipendente* da proporre come responsabile alla creazione di un nuovo *Reclamo*.   
-> **Funzione responsabile**: *Funzione aziendale* da proporre come responsabile alla creazione di un nuovo *Reclamo*.   
-> **Costo di gestione**: valore da proporre nel *Costo di gestione* di un nuovo *Reclamo*.   
-> **Ricalcolo automatico totali**: indica se ricalcolare automaticamente i totali del *Reclamo* sulla base dei difetti inseriti altrimenti i valori dovranno essere inseriti manualmente.   
-> **Raggruppamento dati U.D.C.**: indica se riportare automaticamente, tra gli *Oggetti difettosi* di un *Reclamo*, tutti gli articoli contenuti in una U.D.C. all'inserimento di un articolo difettoso che è contenuto nella U.D.C. specificata.   
->
-> expander **Autorizzazione al rientro**   
->> **Autorizzazione al rientro**: indica se deve essere gestita l'*Autorizzazione al rientro* nella gestione *Reclamo*.   
->> **Frase di testa del documento**: annotazioni libere sull'argomento, vengono proposte nella stampa *Autorizzazione al rientro*.   
->> **Frase di corpo del documento**: annotazioni libere sull'argomento, vengono proposte nella stampa *Autorizzazione al rientro*.   
->> **Note su accrediti**: annotazioni libere sull'argomento, vengono proposte nella stampa *Autorizzazione al rientro*.   
->> **Istruzioni per il reso**: annotazioni libere sull'argomento, vengono proposte nella stampa *Autorizzazione al rientro*.   
+U ovom proširivom odjeljku moguće je unijeti podatke koji će se predložiti prilikom unosa nove *Reklamacije*.   
 
-### Non conformità      
+Moguće je unijeti:   
+- **Vrsta reklamacije**: *Vrsta reklamacije* koja će se predložiti pri unosu.    
+- **Odgovorna osoba**: *Zaposlenik* koji će se predložiti kao odgovorna osoba.     
+- **Odgovorna funkcija**: *Funkcija u poduzeću* koja će se predložiti kao odgovorna.     
+- **Trošak obrade**: iznos koji će se predložiti u polju *Trošak obrade*.   
+- **Automatski preračun ukupnog iznosa**: označava treba li se automatski preračunati ukupni iznosi *Reklamacije* na temelju unesenih nedostataka; u suprotnom se vrijednosti moraju unositi ručno.     
+- **Grupiranje podataka J.J.J.**: ako je aktivirano, sustav automatski dodaje sve *artikle sadržane u istoj J.J.J.* kada se unese artikl koji pripada toj jedinici
 
-In questo expander è possibile inserire dati da proporre nelle *Non conformità*.   
-Nell'expander è possibile inserire:   
-> **Tipo non conformità**: *Tipo reclamo* da proporre all'inserimento di una *Non conformità*.   
-> **Persona responsabile**: *Dipendente* da proporre come responsabile alla creazione di una *Non conformità*.   
-> **Funzione responsabile**: *Funzione aziendale* da proporre come responsabile alla creazione di una *Non conformità*.   
-> **Costo di gestione**: valore da proporre nel *Costo di gestione* di un *Non conformità*.   
-> **Ricalcolo automatico totali**: indica se ricalcolare automaticamente i totali della *Non conformità* sulla base dei difetti inseriti altrimenti i valori dovranno essere inseriti manualmente.   
-> **Raggruppamento dati U.D.C.**: indica se riportare automaticamente, tra gli *Oggetti difettosi* di una *Non conformità*, tutti gli articoli contenuti in una U.D.C. all'inserimento di un articolo difettoso che è contenuto nella U.D.C. specificata.   
-> **Proposta U.M. alternativa**: indica se visualizzare, negli *Oggetti difettosi*, le informazioni sulle *Quantità* espresse in un'unità di misura alternativa rispetto alla principale.   
+**Odobrenje za povrat**   
+>- **Odobrenje za povrat**: označava treba li se *Odobrenje za povrat* obrađivati unutar modula *Reklamacija*.   
+>- **Zaglavlje dokumenta**: slobodne bilješke na temu, koje se predlažu prilikom ispisa *Odobrenja za povrat*.   
+>- **Tijelo dokumenta**: slobodne bilješke na temu, koje se predlažu prilikom ispisa *Odobrenja za povrat*.   
+>- **Napomene o odobrenjima**: slobodne bilješke na temu, koje se predlažu prilikom ispisa *Odobrenja za povrat*.   
+>- **Upute za povrat**: slobodne bilješke na temu, koje se predlažu prilikom ispisa *Odobrenja za povrat*.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+### Nesukladnosti     
+
+U ovom proširivom odjeljku moguće je unijeti podatke koji će se predložiti prilikom unosa nove *Nesukladnosti*.   
+Moguće je unijeti:   
+- **Vrsta nesukladnosti**: *Vrsta reklamacije* koja će se predložiti pri unosu *Nesukladnosti*.   
+- **Odgovorna osoba**: *Zaposlenik* koji će se predložiti kao odgovorna osoba prilikom kreiranja *Nesukladnosti*.   
+- **Odgovorna funkcija**: *Funkcija u poduzeću* koja će se predložiti kao odgovorna prilikom kreiranja *Nesukladnosti*.   
+- **Trošak obrade**: vrijednost koja će se predložiti u polju *Trošak obrade* za *Nesukladnosti*.   
+- **Automatski preračun ukupnih iznos**: označava treba li automatski izračunati ukupne iznose *Nesukladnosti* na temelju unesenih nedostataka; u suprotnom se vrijednosti unose ručno.     
+- **Grupiranje podataka J.J.J.**: označava treba li jednake *Artikle* grupirati zbrajanjem njihovih *Količina* durante prilikom unosa *Jedinice tereta* u *Neispravne artikle*.   
+- **Prijedlog alternativne mjere (J.M.)**: označava treba li u *Neispravnim artiklima*, prikazivati informacije o *Količinama* izraženima u alternativnoj jedinici mjere (različitoj od glavne).   
+
+Za sve funkcionalnosti obrazaca koje nisu posebno objašnjene u ovom dokumentu, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
