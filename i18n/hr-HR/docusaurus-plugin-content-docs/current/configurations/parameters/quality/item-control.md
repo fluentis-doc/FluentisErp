@@ -1,96 +1,96 @@
 ---
-title: Parametri controllo articoli
+title: Parametri za kontrolu artikala
 sidebar_position: 1
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri controllo articoli**.
+Parametri se nalaze na putu **Parametri > Kvaliteta > Parametri za kontrolu artikala**.
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nelle gestioni:   
-- **Schede tecniche**;   
-- **Piani di controllo**;   
-- **Controllo articoli**;   
-- **Certificati di analisi**.   
+Podaci prisutni u ovom upravljanju koriste se za predlaganje informacija u upravljanjima:  
+- **Tehnička uputstva**;   
+- **Kontrolni planovi**;   
+- **Kontrola artikala**;   
+- **Certifikati analiza**.   
 
-#### Pulsante specifico
+#### Specifična tipka
 
-**Salva**: permette di memorizzare le informazioni modificate. 
+**Spremi**: omogućuje spremanje izmijenjenih informacija. 
 
-## Generale   
+## Općenito   
 
-In questo tabulatore è possibile inserire dati da proporre di default nei documenti del modulo *Controllo articoli*.   
+U ovom kartici moguće je unijeti podatke koji se zadano predlažu u dokumentima modula *Kontrola artikala*.   
 
-### Tipi prova      
+### Vrsta testiranja     
 
-In questo expander è possibile inserire dati da proporre nei *Tipi prova*.   
-Nell'expander è possibile inserire:   
-- **Tipo valore**: *Tipo valore* da proporre all'inserimento di un *Tipo prova*.   
-- **Tipo limite**: *Tipo limite* da proporre all'inserimento di un *Tipo prova*.   
+U ovom ekspanderu moguće je unijeti podatke koje treba predložiti u *Vrsta testiranja*.   
+U expanderu je moguće unijeti:   
+- **Vrsta iznosa**: *Vrsta iznosa* da predloži unos jednog *Vrsta testa*.   
+- **Vrsta limita**: *Vrsta limita* da predloži unos jednog *Vrsta testa*.   
 
-### Schede tecniche      
+### Tehnički listovi   
 
-In questo expander è possibile inserire dati da proporre nelle *Schede tecniche*.   
-Nell'expander è possibile inserire:   
-- **Tipo scheda tecnica**: *Tipo scheda tecnica* da proporre all'inserimento di una *Scheda tecnica*.   
-- **Responsabile**: *Dipendente* da proporre come responsabile all'inserimento di una *Scheda tecnica*.   
-- **Tipo dichiarazione in Articoli**: *Tipo di dichiarazione* da proporre all'inserimento di *Articolo associato* di una *Scheda tecnica*.   
-- **Tipo dichiarazione in stampa**: *Tipo di dichiarazione* da proporre in *Tipo dichiarazione da stampare in caso l'articolo ne sia sprovvisto* nella *Stampa scheda tecnica*.   
+U ovom expanderu moguće je unijeti podatke za predlaganje u *Tehničke listove*.   
+U expanderu je moguće unijeti:    
+- **Vrsta podatkovnog lista**: *Vrsta podatkovnog lista* za predlaganje pri unosu *Tehničkog lista*.   
+- **Odgovoran**: *Zaposlenik* koji se predlaže kao odgovorna osoba pri unosu *Tehničkog lista*.   
+- **Vrsta deklaracije u artiklima**: *Vrsta izjave* za predlaganje pri unosu *Povezanog artikla* u *Tehničkom listu*.    
+- **Vrsta izjave za ispis**: *Vrsta izjave* za predlaganje u *Vrsta izjave za ispis u slučaju da artikal nije opremljen* u  *Ispis tehničkog lista*.   
 
-### Piani di controllo      
+### Planovi kontrole      
 
-In questo expander è possibile inserire dati da proporre nei *Piani di controllo*.   
-Nell'expander è possibile inserire:   
-- **Tipo piano di controllo**: *Tipo piano di controllo* da proporre all'inserimento di un *Piano di controllo*.   
-- **Responsabile**: *Dipendente* da proporre come responsabile all'inserimento di un *Piano di controllo*.   
+U ovom proširivom dijelu moguće je unijeti podatke za predlaganje u *Planove kontrole*.   
+U proširivom dijelu moguće je unijeti:    
+- **Vrsta plana kontrole**: *Vrsta plana kontrole* za predlaganje pri unosu *Plana kontrole*.   
+- **Odgovorna osoba**: *Zaposlenik* za predlaganje kao odgovorna osoba pri unosu *Plana kontrole*.   
 
-### Certificati di analisi      
+### Certifikati analize     
 
-In questo expander è possibile inserire dati da proporre nei *Certificati di analisi*.   
-Nell'expander è possibile inserire:   
-- **Tipo certificato**: *Tipo certificato di analisi* da proporre all'inserimento di un *Certificato di analisi*.   
-- **Responsabile**: *Dipendente* da proporre come responsabile all'inserimento di un *Certificato di analisi*.   
+U ovom proširivom dijelu moguće je unijeti podatke za predlaganje u *Certifikate analize*.   
+U proširivom dijelu moguće je unijeti:    
+- **Vrsta certifikata**: *Vrsta certifikata analize* za predlaganje pri unosu *Certifikata analize*.   
+- **Odgovorna osoba**: *Zaposlenik* za predlaganje kao odgovorna osoba pri unosu *Certifikata analize*.   
 
 
-## Controllo articoli   
+## Kontrola artikala
 
-In questa tabulatore è possibile inserire dati:
-> - da proporre di default nei *Controllo articoli*;   
-> - per definire varie colorazioni, utilizzate nel filtro di ricerca, per riconoscere vari stati di un *Controllo*;   
-> - per impostare parametri di gestione;   
-> - per la ricerca e associazione automatica dei *Piani di controllo* da associare al *Controllo articolo*.   
+U ovom tabulatoru moguće je unijeti podatke:  
+> - za predlaganje po defaultu u *Kontroli artikala*;   
+> - za definiranje različitih boja koje se koriste u filteru pretrage za prepoznavanje različitih stanja *Kontrole*;   
+> - za postavljanje upravljačkih parametara;     
+> - za automatsku pretragu i povezivanje *Planova kontrole* koje treba povezati s *Kontrolom artikla*.   
 
-- **Abilita il rilevamento multiplo valori**: indica l'abilitazione della possibilità di rilevare più valori per ogni prova, in tutte le tipologie di documento.   
-- **Approvazione automatica dei valori rilevati**: indica l'*Approvazione* automatica della *Prova* alla rilevazione dei *Valori* e all'attribuzione automatica dell'*Esito*.   
-- **Proposta esito negativo**: è un elenco di valori predefiniti dal sistema che indicano la metodologia di attribuzione di non conformità della *Prova*.   
-> La metodologia viene considerata solo per la rilevazione di *Prove* di tipo *Numerico* nella *Rilevazione multipla valori*.   I valori predefiniti sono:   
-> - *al primo valore rilevato non conforme*;   
-> - *sulla media aritmetica dei valori rilevati (solo valori numerici)*.   
+- **Omogući višestruko očitavanje vrijednosti**: označava omogućavanje mogućnosti očitavanja više vrijednosti za svaki test, u svim vrstama dokumenata.     
+- **Automatsko odobrenje očitanih vrijednosti**: označava automatsko *Odobrenje* *Testa* aprilikom očitavanja *Vrijednosti* i *Ishoda*.   
+- **Prijedlog negativnog rezultata**: popis unaprijed definiranih vrijednosti koje sustav koristi za određivanje metodologije dodjele nesukladnost *Testu*.    
+> Metodologija se uzima u obzir samo za očitavanje *Testova* tipa *Numerički* u *Višestrukom očitavanju vrijednosti*. Predefinirane vrijednosti su:     
+> - *pri prvoj zabilježenoj nesukladnoj vrijednosti*;   
+> - *na osnovu aritmetičke sredine očitanih vrijednosti (samo numeričke vrijednosti)*.   
 >
-- **Tipo di esito negativo**: è la proposta del *Tipo esito* nel caso di *Prove* non conformi.   
-- **Tipo di esito positivo**: è la proposta del *Tipo esito* nel caso di *Prove* conformi.   
+- **Vrsta negativnog rezultata**: prijedlog *Vrste ishoda* u slučaju nesukladnih *Testova*.   
+- **Vrsta pozitivnog rezultata**: prijedlog *Vrste ishoda* u slučaju nesukladnih *Testova*.   
 
 
-### Tipi documento per l'importazione      
+### Vrste dokumenata za uvoz        
 
-In questo expander/elenco è possibile inserire dati da considerare durante l'*Importazione articoli da controllare* e da proporre nel *Controllo articolo*.   
-La tabella contiene le tipologie di documento gestite dal *Controllo articoli*.   
-Sono tipologie predefinite dal sistema e non è possibile inserirne di nuove o eliminarle. I valori predefiniti sono:
-> - *Ricevimento merce*;   
-> - *DDT di Acquisto*;   
-> - *Fattura di Acquisto*;   
-> - *Dichiarazione di produzione*;   
-> - *Fase Ordine di produzione*;   
-> - *Rientro da Conto lavoro*;   
-> - *Movimentazione di carico*.   
+U ovom proširivom dijelu/popisu moguće je unijeti podatke koji se uzimaju u obzir tijekom *Uvoza artikala za kontrolu* i predlažu se u *Kontroli artikla*.   
+Tablica sadrži vrste dokumenata kojima upravlja *Kontrola artikala*.   
+Radi se o unaprijed definiranim vrstama u sustavu kojima se ne mogu dodavati nove ili brisati postojeće. Predefinirane vrijednosti su:  
+> - *Prijem robe*;   
+> - *Primka*;   
+> - *Ulazni račun*;   
+> - *Izvješćivanje proizvodnje*;   
+> - *Faza Izrada narudžbe*;   
+> - *Povrat od podizvođača*;   
+> - *Rukovanje teretom*.   
 
-Nell'elenco, per ogni tipologia di documento, è possibile inserire:   
-- **Def.**: indica la tipologia documento proposta nei filtri di ricerca; può essere selezionata una sola tipologia o nessuna.   
-- **Dettaglio articolo**: è un elenco di valori predefiniti dal sistema che identificano il tipo di dettaglio da controllare dell'*Articolo* per la tipologia documento specifica. I valori predefiniti sono:   
->- *Nessuno* - la riga *Articolo* considerata non prenderà alcun dato di dettaglio;   
->- *Lotto* - la riga *Articolo* considerata prenderà come massimo dettaglio il *Lotto*;   
->- *S.N.* - la riga *Articolo* considerata prenderà come massimo dettaglio il *Serial Number*;   
->- *UDC* - la riga *Articolo* considerata prenderà come massimo dettaglio l'*Unità di Carico*;   
+U popisu, za svaku vrstu dokumenta, moguće je unijeti:    
+- **Def.**: označava vrstu dokumenta koja se predlaže u filterima pretrage; može se odabrati samo jedna vrsta ili nijedna.    
+- **Detalj artikla**: popis unaprijed definiranih vrijednosti koje sustav koristi za identifikaciju vrste detalja za kontrolu *Artikla* za određenu vrstu dokumenta. Predefinirane vrijednosti su:    
+>- *Nijedan* - redak *Artikla* neće imati dodatne detalje;   
+>- *Lot* - redak *Artikla* ima najviše detalje u obliku *Serije*;   
+>- *S.N.* - redak *Artikla* ima najviše detalje u obliku *Serijskog broja*;   
+>- *Utovarna jedinica* - redak *Artikla* ima najviše detalje u obliku *Jedinice utovara*;   
 >
-- **Mult.**: indica se abilitare la *Rilevazione multipla valori* nel *Controllo articoli* per la tipologia documento specifica.   
+- **Višestr.**: označava je li omogućeno *Višestruko očitavanje vrijednosti* u *Kontroli artikala* za određenu vrstu dokumenta.  
 > Per essere considerato deve essere indicato il parametro generale *Abilita il rilevamento multipli valori*.   
 - **Tipo controllo**: *Tipo controllo* da proporre all'inserimento di un *Controllo articoli* per la tipologia documento specifica.   
 - **Tipo piano di controllo**: durante l'*Importazione articoli da controllare*, escluse le tipologie documento di produzione (*Dichiarazione di produzione* e *Fase Ordine di produzione*), è il *Tipo piano di controllo* che ha priorità maggiore per la ricerca del *Piano di controllo* da associare al *Controllo articoli*.   

@@ -380,7 +380,7 @@
     "description": "The label for category Parametri iniziali magazzino in sidebar erpHome"
   },
   "sidebar.erpHome.category.Qualità": {
-    "message": "Qualità",
+    "message": "Kvaliteta",
     "description": "The label for category Qualità in sidebar erpHome"
   },
   "sidebar.erpHome.category.Tabelle": {
@@ -1732,7 +1732,7 @@
     "description": "The label for category Parametri generali in sidebar configurations"
   },
   "sidebar.configurations.category.Tesoreria": {
-    "message": "Tesoreria",
+    "message": "Riznica",
     "description": "The label for category Tesoreria in sidebar configurations"
   },
   "sidebar.configurations.category.Amministrazione": {
@@ -1756,7 +1756,7 @@
     "description": "The label for category Acquisti in sidebar configurations"
   },
   "sidebar.configurations.category.Vendite": {
-    "message": "Vendite",
+    "message": "Prodaja",
     "description": "The label for category Vendite in sidebar configurations"
   },
   "sidebar.configurations.category.Logistica": {
@@ -1780,11 +1780,11 @@
     "description": "The label for category CRM in sidebar configurations"
   },
   "sidebar.configurations.category.Qualità": {
-    "message": "Qualità",
+    "message": "Kvaliteta",
     "description": "The label for category Qualità in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle": {
-    "message": "Tabelle",
+    "message": "Tablice",
     "description": "The label for category Tabelle in sidebar configurations"
   },
   "sidebar.configurations.category.Causali di contabilità generale": {
@@ -2028,7 +2028,7 @@
     "description": "The label for category Acquisti in sidebar knowlegdeBase"
   },
   "sidebar.knowlegdeBase.category.Vendite": {
-    "message": "Vendite",
+    "message": "Prodaja",
     "description": "The label for category Vendite in sidebar knowlegdeBase"
   },
   "sidebar.knowlegdeBase.category.Logistica": {
@@ -2040,7 +2040,7 @@
     "description": "The label for category Produzione in sidebar knowlegdeBase"
   },
   "sidebar.knowlegdeBase.category.Qualità": {
-    "message": "Qualità",
+    "message": "Kvaliteta",
     "description": "The label for category Qualità in sidebar knowlegdeBase"
   },
   "sidebar.video.category.Amministrativa": {
@@ -2052,7 +2052,7 @@
     "description": "The label for category Home in sidebar video"
   },
   "sidebar.video.category.Tesoreria": {
-    "message": "Tesoreria",
+    "message": "Riznica",
     "description": "The label for category Tesoreria in sidebar video"
   },
   "sidebar.video.category.Acquisti": {
@@ -2060,7 +2060,7 @@
     "description": "The label for category Acquisti in sidebar video"
   },
   "sidebar.video.category.Vendite": {
-    "message": "Vendite",
+    "message": "Prodaja",
     "description": "The label for category Vendite in sidebar video"
   },
   "sidebar.video.category.Logistica": {
@@ -2072,7 +2072,7 @@
     "description": "The label for category Produzione in sidebar video"
   },
   "sidebar.video.category.Qualità": {
-    "message": "Qualità",
+    "message": "Kvaliteta",
     "description": "The label for category Qualità in sidebar video"
   },
   "sidebar.releaseNotes.category.Versione 605": {
@@ -2216,7 +2216,7 @@
     "description": "The label for category Creazione e Gestione insoluti in sidebar treasury"
   },
   "sidebar.configurations.category.Parametri Generali": {
-    "message": "Parametri Generali",
+    "message": "Opći parametri",
     "description": "The label for category Parametri Generali in sidebar configurations"
   },
   "sidebar.configurations.category.CPQ": {
