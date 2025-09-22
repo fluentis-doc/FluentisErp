@@ -1,14 +1,14 @@
 ---
-title: Numerazione partite
+title: Numeriranje dospijeća plaćanja
 sidebar_position: 17
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
 :::
 
-Definisce la numerazione valida per le partite contabili, che **deve** essere di tipo annuale e **senza** recupero di eventuali buchi di numerazione.
+Definira numeraciju važeću za knjižene stavke, koja **mora** biti godišnja i **bez** nadoknade eventualnih praznina u numeraciji.
 
 :::tip Alert
-in fase di start up aziendale, nel caso in cui si importino da excel le partite aperte, si raccomanda di abilitare il numeratore a partire da una data precedente alla minima data documento, in quanto ***FluentisERP*** attribuirà il numero partita sulla base dell'anno documento e quindi il numeratore deve essere valido per poter eseguire l'import
+u fazi pokretanja poduzeća, u slučaju uvoza otvorenih stavki iz Excela, preporučuje se omogućiti brojač s datumom koji prethodi minimalnom datumu dokumenta, budući da će ***FluentisERP*** dodijeliti broj stavke na temelju godine dokumenta i stoga brojač mora biti važeći kako bi se mogao izvršiti uvoz
 :::
