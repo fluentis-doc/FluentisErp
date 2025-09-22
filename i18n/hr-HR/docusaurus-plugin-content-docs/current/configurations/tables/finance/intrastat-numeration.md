@@ -1,13 +1,13 @@
 ---
-title: Numerazione Intrastat
+title: Numeriranje Intrastat
 sidebar_position: 15
 ---
 
-La tabella consente di definire, tramite un numeratore standard Fluentis la numerazione di modelli Intrastat.
+Tablica omogućuje definiranje, putem standardnog Fluentis brojača, numeraciju Intrastat obrazaca.
 
-Per la definizione dei campi del numeratore si veda [**qui**](/docs/configurations/tables/fluentis-numerations).
+Za definiciju polja brojača pogledati [**ovdje**](/docs/configurations/tables/fluentis-numerations).
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
 :::
 
