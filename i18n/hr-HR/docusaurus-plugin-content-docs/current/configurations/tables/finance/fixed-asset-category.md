@@ -1,108 +1,108 @@
 ---
-title: Categoria cespite
+title: Kategorija osnovnog sredstva
 sidebar_position: 5
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+NU slučaju da se želi konfigurirati ručno, potrebno je pratiti kontrolni popis na poveznici.
 :::
 
-All'interno di questa tabella si codificano le categorie dei cespiti gestiti nella società. 
+Unutar ove tablice kodificiraju se kategorije dugotrajne imovine kojima upravlja poduzeće. 
 
-### Tabella superiore 
+### Gornja tablica 
 
-**Categoria**: codice alfanumerico.
+**Kategorija**: alfanumerička šifra.
 
-**Descrizione categoria**: descrizione della categoria.
+**Opis kategorije**: opis kategorije.
 
-**Conto**: il conto patrimoniale dell'immobilizzazione.
+**Konto**: bilancni konto dugotrajne imovine.
 
-**Sottoconto**: il sottoconto patrimoniale dell'immobilizzazione.
+**Podkonto**: bilancni podkonto dugotrajne imovine.
 
-**Descrizione**: descrizione del sottoconto patrimoniale dell'immobilizzazione.
+**Opis**: opis bilancnog podkonta dugotrajne imovine.
 
-**Mat/Imm.**: indicazione della tipologia Materiale o Immateriale del bene.
+**Mat/Nem.**: oznaka tipologije – materijalna ili nematerijalna imovina.
 
-**Massimale amm.**: importo massimo dell'ammortamento raggiungibile per ogni cespite della categoria.
+**Maksimalna amortizacija**: maksimalni iznos amortizacije koji se može ostvariti za svaku imovinu u kategoriji.
 
-**Perc. amm.**: la percentuale massima del valore del cespite che potrà essere ammortizzata.
+**Post. amort.**: maksimalni postotak vrijednosti imovine koji se može amortizirati.
 
-**Oper. incrementali**: se il flag non è impostato, così come di default, ogni riga di incremento del valore del cespite sarà gestita con un dettaglio d'ammortamento separato e autonomo Se il flag è impostato, al contrario, ogni incremento sarà attribuito alla riga d'acquisto iniziale, andando ad incrementare sempre il valore iniziale alla sua data d'origine.
+**Inkrementalne operacije**: ako zastavica nije postavljena (zadano stanje), svaka stavka povećanja vrijednosti imovine vodit će se kao zaseban i autonoman detalj amortizacije. Ako je zastavica postavljena, svako povećanje će se pridružiti početnoj stavci kupnje, povećavajući uvijek početnu vrijednost na njezin datum nastanka.
 
-**Limite amm. totale**: quota limite per l'applicazione dell'ammortamento totale al 100% nell'anno d'acquisto.
+**Ukupni limit amortizacije**: granica za primjenu ukupne amortizacije od 100% u godini kupnje.
 
-**Rivalutazioni**: flag di gestione dei dettagli delle rivalutazioni.
+**Revalorizacije**: oznaka za upravljanje detaljima revalorizacija.
 
-**Cod. bilancio**: codice di bilancio per la stampa del prospetto delle rivalutazioni.
+**Šifra bilance**: šifra bilance za ispis pregleda revalorizacija.
 
-**Gestione extra-contabile**: attiva la gestione dei dati extracontabili del cespite: questa prevede una duplicazione dei valori patrimoniali contabili al fine di applicare una logica d'ammortamento extracontabile separata
+**Upravljanje izvan knjigovodstva**: aktivira upravljanje izvanknjigovodstvenim podacima imovine; to podrazumijeva dupliciranje bilancnih vrijednosti radi primjene posebne logike izvanknjigovodstvene amortizacije.
 
-**Giorni**: Attivando questo flag il calcolo della quota di ammortamento terrà conto dei giorni esatti di possesso del bene nell'anno in corso, anzichè riferirsi alla logica standard che calcola la quota intera indipendentemente dalla data di acquisto, eventualmente dimezzandola il primo anno se il flag *Amm. Primo anno* presente nella seconda griglia è stato attivato (vedi sotto).
+**Dani**: aktiviranjem ove oznake izračun amortizacijskog dijela uzima u obzir točan broj dana posjedovanja imovine u tekućoj godini, umjesto standardne logike koja izračunava cjelokupni dio neovisno o datumu kupnje, eventualno ga prepolovljujući u prvoj godini ako je zastavica *Prva godina amortizacije* aktivirana (vidi dolje).
 
-**Numerazione**: (Facoltativo) Permette di definire una numerazione delle schede cespite specifica per ogni singola categoria. Il campo si collega all'[**apposita tabella**](/docs/configurations/tables/fluentis-numerations) dove definire il numeratore. Se non viene definito, di default, continua ad essere utilizzata la numerazione generale dei cespiti eventualmente collegata al precodice (oppure unica).
+**Numeracija**: (Opcionalno) Omogućuje definiranje numeracije kartica imovine specifične za svaku kategoriju. Polje se povezuje s [**odgovarajućom tablicom**](/docs/configurations/tables/fluentis-numerations) za definiranje numeratora. Ako nije definirano, zadano se koristi opća numeracija imovine povezana s predšifrom (ili jedinstvena).
 
-### Seconda Tabella
+### Druga tablica
 
-La seconda sezione  è dedicata all'impostazione dei dettagli di ammortamento applicabili alla categoria superiore selezionata.
+Druga sekcija posvećena je postavljanju detalja amortizacije primjenjivih na odabranu nadređenu kategoriju.
 
-**Tipo amm.**: selezionare la tipologia di ammortamento fra ammortamento ordinario, ammortamento anticipato e ammortamento decelerato, quest'ultimo normalmente non utilizzato.
+**Tip amortizacije**: odabrati tip amortizacije između redovne amortizacije, ubrzane amortizacije i usporene amortizacije (posljednja se obično ne koristi).
 
-**Conto**: conto di costo sul quale rilevare l'ammortamento periodico.
+**Konto**: troškovni konto na kojem se evidentira periodična amortizacija.
 
-**Sottoconto**: sottoconto di costo sul quale rilevare l'ammortamento periodico.
+**Podkonto**: troškovni podkonto na kojem se evidentira periodična amortizacija.
 
-**Descrizione conto**: descrizione sottoconto di costo.
+**Opis konta**: opis troškovnog podkonta.
 
-**Fondo conto**: conto di fondo sul quale accantonare l'ammortamento periodico.
+**Konto rezerve**: rezerni konto na kojem se knjiži periodična amortizacija.
 
-**Fondo sottoconto**: sottoconto di fondo sul quale accantonare l'ammortamento periodico che potrebbe essere anche lo stesso valore patrimoniale attivo per stornare direttamente da questo il valore.
+**Podkonto rezerve**: rezerni podkonto na kojem se knjiži periodična amortizacija, koji može biti i ista aktivna bilancna vrijednost za izravno smanjenje te vrijednosti.
 
-**Descrizione conto**: descrizione sottoconto di fondo.
+**Opis konta**: opis rezernog podkonta.
 
-**Escludi**: il flag consente di escludere dal calcolo automatico degli ammortamenti il tipo ammortamento selezionato.
+**Isključi**: oznaka koja omogućuje isključenje odabranog tipa amortizacije iz automatskog izračuna amortizacije.
 
-**Percentuale**: la percentuale d'ammortamento da applicare per il tipo d'ammortamento impostato.
+**Postotak**: postotak amortizacije koji se primjenjuje za odabrani tip amortizacije.
 
-**N. anno**: si attiva solo in corrispondenza degli ammortamenti anticipati, nel quale vanno inseriti i 3 anni di applicazione. In riferimento a questo valore, va ricordato che per i cespiti usati il numero di anni d'applicazione è impostato automaticamente sul solo anno d'acquisto.
+**Broj godina**: aktivira se samo za ubrzanu amortizaciju, gdje se unose 3 godine primjene. Za rabljenu imovinu broj godina primjene automatski se postavlja samo na godinu kupnje.
 
-**Amm. primo anno**: viene proposto automaticamente per tutte le categorie materiali, andrà a dimezzare la percentuale d'ammortamento nell'anno di inizio attività del cespite.
+**Amortizacija prve godine**: automatski se predlaže za sve materijalne kategorije; prepolovljuje postotak amortizacije u godini početka korištenja imovine.
 
-**Fiscale**: potrà essere impostato per le righe di ammortamento anticipato per gestirlo come ammortamento fiscale non contabilizzabile.
+**Porezna**: može se postaviti za stavke ubrzane amortizacije kako bi se tretirala kao porezna amortizacija koja se ne knjiži.
 
-**Tipo deducibilità**: consente di assegnare al tipo di ammortamento un codice di deducibilità ai fini fiscali.
+**Tip odbitnosti**: omogućuje dodjelu šifre odbitnosti za porezne svrhe određenom tipu amortizacije.
 
-**Descr. deducibilità**: descrizione del tipo di deducibilità.
+**Opis odbitnosti**: opis tipa odbitnosti.
 
-**Conto / sottoconto / descrizione Non Deducibile**: in questo campo è possibile inserire il sottoconto contabile sul quale contabilizzare automaticamente la parte indeducibile fiscalmente della quota di ammortamento. Il conto viene riportato all'interno della scheda cespite in corrispondenza della riga relativa alla quota di ammortamento. Affinchè venga movimentato, sia in fase di contabilizzazione dell'ammortamento annuale, sia in fase di ripresa ammortamento nelle chiusure dei conti infrannuali, è necessario attivare l'apposito flag. Il flag può essere predefinito all'interno dei [**parametri cespiti**](/docs/configurations/parameters/finance/fixed-assets-parameters).
+**Konto / podkonto / opis Neodbitno**: u ovom polju moguće je unijeti računovodstveni podkonto na kojem se automatski knjiži fiskalno neodbitni dio amortizacijskog dijela. Konto se prikazuje u kartici imovine uz redak koji se odnosi na amortizacijski dio. Da bi se knjižio, i prilikom godišnje amortizacije i prilikom ponovnog obračuna amortizacije u zatvaranju polugodišnjih konta, potrebno je aktivirati odgovarajuću oznaku (flag). Zastavica se može unaprijed definirati unutar [**parametara imovine**](/docs/configurations/parameters/finance/fixed-assets-parameters).
 
-#### Pulsanti specifici
+#### Specifični gumbi
 
-**Cerca nella tabella superiore**: permette di effettuare la ricerca nella tabella superiore attraverso i campi di filtro categoria e descrizione.  
-**Inserisce nella tabella superiore**: permette di inserire una nuova categoria cespite.  
-**Inserisce nella tabella dettaglio**: permette di inserire il dettaglio della tabella superiore selezionata.  
-**Inserisce nella tabella Cdc**: permette di inserire i Cdc della tabella superiore selezionata. OBSOLETO  
-**Cancella righe selezionate**: permette di effettuare la cancellazione delle righe selezionate  (categoria cespite).  
-**Cancella righe selezionate dalla tabella inferiore**: permette di effettuare la cancellazione delle righe selezionate di tabella inferiore ( dettaglio del tipo ammortamento).  
-**Cancella righe selezionate dalla tabella Cdc**: permette di effettuare la cancellazione delle righe selezionate di tabella centri di costo. OBSOLETO  
-**Salva**: permette di salvare le modifiche.  
+**Pretraži u gornjoj tablici**: omogućuje pretraživanje u gornjoj tablici putem polja za filtriranje kategorije i opisa.  
+**Unesi u gornju tablicu**: omogućuje unos nove kategorije imovine.  
+**Unesi u tablicu detalja**: omogućuje unos detalja za odabranu gornju tablicu.  
+**Unesi u tablicu Cdc**: omogućuje unos centara troškova za odabranu gornju tablicu. ZASTARJELO  
+**Izbriši odabrane retke**: omogućuje brisanje odabranih redaka (kategorija imovine).  
+**Izbriši odabrane retke iz donje tablice**: omogućuje brisanje odabranih redaka donje tablice (detalj vrste amortizacije).  
+**Izbriši odabrane retke iz tablice Cdc**: omogućuje brisanje odabranih redaka tablice centara troškova. ZASTARJELO  
+**Spremi**: omogućuje spremanje izmjena.  
 
-### GRIGLIA DEI CENTRI DI COSTO (RIMOSSA SE ATTIVO IL MODULO CONTROLLING COMPLETO IN TABELLA SOCIETA', SENZA IL PARAMETRO DI USO CENTRI CONTABILI)
+### MREŽA CENTARA TROŠKOVA (UKLONJENA AKO JE AKTIVAN MODUL PUNOG KONTROLINGA U TABLICI TVRTKE, BEZ PARAMETRA ZA UPORABU KNJIGOVODSTVENIH CENTARA)
 
-:::note NOTA
-Nonostante la gestione dei centri di costo per i cespiti possa essere elaborata con delle logiche più sofisticate di gestione dell'ammortamento oggettivo, utili alle esigenze di un controllo di gestione approfondito, è comunque possibile agganciare un centro di costo specifico per il singolo cespite, **nella tab Dettaglio**, (oppure direttamente sulla categoria cespite ma in tal caso occorre disattivare il Flag Gestione controlling nell'anagrafica della società in uso) da valorizzare con la quota annuale calcolata ai fini fiscali e contabili.
+:::note NAPOMENA
+Iako se upravljanje centrima troškova za imovinu može obrađivati složenijim logikama upravljanja objektivnom amortizacijom, korisnim za potrebe detaljne kontrole upravljanja, ipak je moguće povezati specifični centar troškova za pojedinu imovinu, **u kartici Detalji**, (ili izravno na kategoriji imovine, no u tom slučaju potrebno je deaktivirati zastavicu Upravljanje controllingom u kartici tvrtke u upotrebi) kako bi se valorizirala godišnja amortizacija za porezne i računovodstvene svrhe.
 :::
 
-All'interno della scheda cespite nella griglia centri di costo della tab **Operazioni patrimoniali** è possibile assegnare, in riferimento alla **singola riga d'ammortamento**, la valorizzazione percentuale di default a centro di costo per i cespiti collegati alla categoria. Tale impostazione è secondaria rispetto all'assegnazione dei centri di costo all'interno della singola anagrafica cespite (quella della tab Dettaglio).
+U kartici imovine, u mreži centara troškova unutar taba **Operacije imovine** moguće je dodijeliti, u odnosu na **pojedini redak amortizacije**, zadanu postotnu valorizaciju po centru troškova za imovinu povezanu s kategorijom. Ova postavka ima sekundarnu važnost u odnosu na dodjelu centara troškova unutar pojedinačne kartice imovine (u tabu Detalji).
 
-**CDC**: centro di costo a cui assegnare la valorizzazione dei cespiti appartenenti alla categoria.
+**CDC**: centar troškova kojem se dodjeljuje valorizacija imovine pripadajuće kategoriji.
 
-**Descrizione**: Descrizione centro di costo.
+**Opis**: opis centra troškova.
 
-**Percentuale**: Impostazione della percentuale di valorizzazione al centro di costo.
+**Postotak**: postavka postotka valorizacije centra troškova.
 
-### **VIDEO TUTORIALS**
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE CESPITI**](/docs/video/finance/intro)
+### **VIDEO TUTORIALI**
+:::important Pogledajte također
+[**VIDEO TUTORIALI O TABLICAMA IMOVINE**](/docs/video/finance/intro)
 :::
