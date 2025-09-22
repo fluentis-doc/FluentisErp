@@ -1,36 +1,36 @@
 ---
-title: Parametri azioni correttive
+title: Parametri korektivnih mjera
 sidebar_position: 4
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri azioni correttive**.
+Parametri se nalaze na putanji **Parametri > Kvaliteta > Parametri korektivnih mjera**.
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nella gestione: *Azioni correttive*.   
+Podaci u ovom upravljanju koriste se za predlaganje informacija u modulu: *Korektivne mjere*.   
 
-**Salvataggio dei Parametri**
+#### Specifična tipka 
 
-Per poter memorizzare le informazioni modificate è necessario premere il pulsante **Salva**.   
+**Spremi**: permette di memorizzare le informazioni modificate.
 
-*Campi specifici*: 
-    
-> **Tipo azione proposta**: *Tipo di azione* da proporre nel caso di inserimento di una nuova *Azione correttiva*.   
-> **Settore proposta**: *Settore qualità* da proporre nel caso di inserimento di una nuova *Azione correttiva*.   
-> **Area proposta**: *Area qualità* da proporre nel caso di inserimento di una nuova *Azione correttiva*.   
-> **Persona responsabile proposta**: *Dipendente* da proporre come responsabile alla creazione di una nuova *Azione correttiva*.   
-> **Funzione responsabile proposta**: *Funzione aziendale* da proporre proposta come responsabile alla creazione di una nuova *Azione correttiva.   
+#### Specifična polja
+      
+- **Predložena vrsta mjere**: *Vrsta mjere* koja se predlaže prilikom unosa nove *Korektivne mjere*.
+- **Predloženi sektor**: *Sektor kvalitete* koji se predlaže prilikom unosa nove *Korektivne mjere*.  
+- **Predloženo područje**: *Područje kvalitete* koje se predlaže prilikom unosa nove *Korektivne mjere*.  
+- **Predložena odgovorna osoba**: *Zaposlenik* koji se predlaže kao odgovorna osoba za kreiranje nove *Korektivne mjere*.  
+- **Predložena odgovorna funkcija**: *Funkcija u tvrtki* koja se predlaže kao odgovorna za kreiranje nove *Korektivne mjere*.
 
-> **Colore azioni correttive**   
-> In questo elenco è possibile definire varie colorazioni per riconoscere i vari stati di un'*Azione correttiva*.
-> Tali colori sono applicati nel *Filtro delle Azioni correttive*. L'elenco si compone delle seguenti informazioni:   
->> **Colori azioni correttive**: è lo stato dell'*Azione correttiva* al quale associare le colorazioni.   
->> La tabella contiene dei valori predefiniti dal sistema e non è possibile inserirne di nuovi, eliminarli o modificarli. I valori predefiniti sono:
->> - *Approvate*;   
->> - *Bloccate*;   
->> - *Chiuse*;   
->> - *Da valutare*;   
->> - *Verificate*.   
+- **Boje korektivnih mjera**   
+> U ovom popisu moguće je definirati različite boje za prepoznavanje različitih stanja *Korektivne mjere*.
+> Te se boje primjenjuju u *Filtru korektivnih mjera*. Popis sadrži sljedeće informacije:   
+>- **Boje korektivnih mjera**: stanje *Korektivne mjere* kojemu se dodjeljuju boje.   
+>> Tablica sadrži unaprijed definirane vrijednosti od sustava i nije moguće unositi nove, brisati ili mijenjati postojeće. Zadane vrijednosti su:  
+>> - *Odobrene*;   
+>> - *Blokirane*;   
+>> - *Zatvorene*;   
+>> - *Za procjenu*;   
+>> - *Provjerene*.   
 >>
->> **Sfondo**: è il colore applicato allo sfondo della riga dell'*Azione correttiva* dello stato specifico.   
->> **Testo**: è il colore applicato al testo della riga dell'*Azione correttiva* dello stato specifico.   
+>- **Pozadina**: boja koja se primjenjuje kao pozadina retka *Korektivne mjere* za određeno stanje. 
+>- **Tekst**: boja koja se primjenjuje na tekst retka *Korektivne mjere* za određeno stanje.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostale funkcionalnosti obrazaca koje nisu detaljno opisane u ovom dokumentu, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).  
