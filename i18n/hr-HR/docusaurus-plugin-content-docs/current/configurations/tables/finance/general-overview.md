@@ -1,28 +1,28 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Le Tabelle dell'Area Amministrativa concernono i diversi moduli della suddetta Area. 
+Tablice u području Administracije odnose se na različite module navedenog područja. 
 
-**Esse accolgono i dati di base e le configurazioni che saranno richiamate in tutte le procedure operative**. 
+**One sadrže osnovne podatke i konfiguracije koje će se koristiti u svim operativnim postupcima.**. 
 
-:::danger[Attenzione]
-Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo concreto dell'ERP nell'area interessata.
+:::danger[Pažnja]
+Ako se ti osnovni podaci ne unesu, moglo bi se onemogućiti konkretno korištenje ERP-a u dotičnom području.
 :::
 
-:::note[Esempio]
-Un esempio di dati di base è rappresentato dai Tipo Conto, ovvero le tipologie di conto contabile necessarie per definire poi il piano dei conti e tutti i suoi collegamenti, oppure le aliquote iva, necessarie per gestire le scritture contabili, ma anche i documenti di acquisto e vendita.
+:::note[Primjer]
+Primjer osnovnih podataka su vrste računa, tj. tipologije računovodstvenih računa potrebne za definiranje kontnog plana i svih njegovih poveznica, ili pak stope PDV-a, nužne za upravljanje računovodstvenim knjiženjima, ali i za dokumente kupnje i prodaje.
 :::
 
-Una opportuna e necessaria parametrizzazione consentirà sia la definizione della gestione del modulo relativo sia l'opportunità di poter usufruire di determinati automatismi.
+Odgovarajuća i nužna parametrija omogućit će i definiranje upravljanja odgovarajućim modulom i korištenje određenih automatizama.
 
-Le tabelle di Contabilità si trovano in **Configurazione > Tabelle > Amministrativa**.
+Tablice računovodstva nalaze se u **Konfiguriranje > Tablice > Administracija**.
 
-L'area amministrativa è fortemente interessata dai benefici derivanti dall'attivazione della procedura di [**Fast Start**](/docs/guide/fast-start).
+Administrativno područje uvelike koristi pogodnosti koje proizlaze iz aktiviranja postupka [**Fast Start**](/docs/guide/fast-start).
 
-A partire dal piano dei conti che viene inizializzato secondo uno schema standard, si collegano ad esso varie tabelle secondo vari livelli gerarchici, dalle Casuali contabili alle aliquote Iva ecc... 
+Počevši od kontnog plana, koji se inicijalizira prema standardnoj shemi, na njega se povezuje više tablica različitih hijerarhijskih razina, od računovodstvenih temeljnica do stopa PDV-a itd.
 
-Si invita a fare riferimento al link sopra per ulteriori dettagli.
+Preporučuje se pogledati gornju poveznicu za dodatne pojedinosti.
 
-In particolare la pagina linkata fa riferimento al dettaglio delle tabelle interessate e nel caso in cui si intenda procedere con una configurazione manuale offre una check list per la configurazione.
+Posebno se u povezanoj stranici navodi detalj tablica na koje se odnosi te, u slučaju da se želi nastaviti s ručnom konfiguracijom, pruža popis za provjeru (check list) za konfiguraciju.
