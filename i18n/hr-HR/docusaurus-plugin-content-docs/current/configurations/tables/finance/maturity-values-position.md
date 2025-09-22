@@ -1,17 +1,17 @@
 ---
-title: Posizione partite
+title: Status dospijeća plaćanja
 sidebar_position: 17
 ---
 
-Questa tabella, permette di definire, liberamente, delle voci da attribuire alle partite al fine di contrassegnarne, ad esempio, una situazione o uno stato particolare.
+Ova tablica omogućuje slobodno definiranje stavki koje se mogu dodijeliti knjiženim stavkama kako bi se, na primjer, označila određena situacija ili posebno stanje.
 
-A titolo di esempio: Contestata, sospesa, da verificare ec....
+Primjerice: osporena, obustavljena, za provjeru itd.
 
-La posizione viene assegnata alle partite (anche massivamente) dalla form *Partite* attraverso il pulsante (nella ribbon bar) *Cambia posizione partite*.
+Pozicija se dodjeljuje stavkama (čak i masovno) iz forme *Stavke* putem gumba (u traci izbornika) Promijeni *poziciju stavki*.
 
-#### Campi specifici
+#### Specifična polja
 
-**Codice**: codice della posizione delle partite.
+**Šifra**: šifra pozicije stavki.
 
-**Descrizione**: descrizione della posizione delle partite.
+**Opis**: opis pozicije stavki.
 
