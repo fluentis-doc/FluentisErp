@@ -1,19 +1,19 @@
 ---
-title: Marketing budget
+title: Buget de marketing
 sidebar_position: 5
 ---
 
-Con questa funzionalità è possibile creare dei Budget di periodo.        
-I dati di testata sono i seguenti:       
-**Periodo budget**: in questo campo è necessario inserire il [Periodo](/docs/configurations/tables/crm/sales-forecast/budget-period) da utilizzare come unità di suddivisione dell'anno; in base al periodo selezionato, gli importi inseriti successivamente verranno automaticamente distribuiti nei vari periodi, riportati nella tabella sottostante *Periodi*;      
-**Descrizione**: contiene una libera descrizione;      
-**Data fine validità**: contiene un'evebtuale data di chiusura del budget;      
-**Progetto**: è possibile collegare un progetto.     
+Cu această funcționalitate pot fi create bugete pe perioade.        
 
-Nella griglia è possibile costruire l'albero del budget, servendosi dei bottoni sulla barra degli strumenti. Ogni nodo radice dell'albero conterrà la Somma delle quantità e degli importi dei vari nodi sottostanti. I nodi finali dell'albero sono quelli nei quali è possibile inserire le spese, attraverso i seguenti campi:      
-**Tipo spese**: in base alla selezione del [Tipo spesa](/docs/configurations/tables/crm/sales-forecast/expenses-type), sarà possibile inserire una Descrizione, un Conto oppure un Articolo;       
-**Unità di misura**: contiene l'unità di misura da usare per la spesa;      
-**Quantità totale**: contiene la quantità totale da suddividere nei vari Periodi del budget;       
-**Prezzo unitario**: questo campo viene compilato automaticamente con il risultato della divisione tra *Importo totale* e *Quantità totale*:        
-**Importo totale**: contiene l'Importo totale da suddividere nei vari Periodi del budget.        
-Nella griglia di destra, *Quantità totale* e *Importo totale* vengono suddivisi per il numero di Periodi previsti dal [Periodo budget](/docs/configurations/tables/crm/sales-forecast/budget-period) inserito in testata. In questo modo sarà possibile consultare il Budget per ogni periodo. La griglia *Periodo* è modificabile utilizzando i pulsanti della ribbon bar, nel caso in cui il calendario debba discostarsi dallo standard codificato.                     
+#### Câmpuri specifice
+**Perioadă buget**: permite inserarea [Perioadei](/docs/configurations/tables/crm/sales-forecast/budget-period) care va fi utilizată ca unitate de împărțire a anului. În funcție de perioada selectată, valorile introduse ulterior vor fi distribuite automat pe diferitele perioade, afișate în tabelul *Perioade*;  
+**Data sfârșit valabilitate**: conține o eventuală dată de închidere a bugetului;  
+**Proiect**: permite asocierea unui proiect.  
+
+În tabel se poate construi arborele unui buget, folosind butoanele din bara de instrumente. Fiecare nod principal al arborelui va conține suma cantităților și a valorilor din nodurile subordonate. Nodurile finale ale arborelui sunt cele în care pot fi introduse cheltuielile, prin intermediul următoarelor câmpuri:  
+**Unitate de măsură**: reprezintă unitatea de măsură a cheltuieli;  
+**Cantitate totală**: conține cantitatea totală care va fi împărțită pe diferitele *Perioade* ale bugetului;  
+**Preț unitar**: acest câmp se completează automat cu rezultatul împărțirii dintre **Valoarea totală** și **Cantitatea totală**;  
+**Valoare totală**: conține valoarea totală ce va fi împărțită pe diferitele *Perioade* ale bugetului.  
+
+În tabelul din dreapta, **Cantitatea totală** și **Valoarea totală** sunt împărțite conform numărului de Perioade definit de [Perioade buget](/docs/configurations/tables/crm/sales-forecast/budget-period) introdus în antet. În acest fel, va fi posibilă consultarea bugetului pentru fiecare perioadă. 

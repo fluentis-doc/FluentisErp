@@ -17,8 +17,8 @@ Acest raport permite compararea dintre previziuni și rezultate reale, prin impo
 
 Permite generarea de rapoarte de închidere care compară previziunile cu datele efective. Sistemul verifică automat existența unor rapoarte  anterioare pentru aceeași perioadă și, dacă acestea lipsesc, creează altele noi. Documentele importate sunt conectate la previziunea selectată, oferind o analiză detaliată a diferențelor.
 
-### Buget marketing (Marketing Budget)
+### Buget marketing
 
-Permite planificarea și distribuirea bugetului de marketing pe mai multe perioade, printr-o structură arborescentă. Cheltuielile pot fi împărțite pe tipologii, cu gestionarea cantităților și a sumelor totale, repartizate automat pe perioadele selectate. De asemenea, este posibilă modificarea calendarului pentru a-l adapta nevoilor companiei.
+Permite planificarea și distribuirea bugetului de marketing pe mai multe perioade, cu o structură arborescentă. Cheltuielile pot fi împărțite pe tipologii, cu gestionarea cantităților și a sumelor totale, repartizate automat pe perioadele selectate. De asemenea, este posibilă modificarea calendarului pentru a-l adapta nevoilor companiei.
 
 Modulul permite o gestionare completă a previziunilor de vânzări, cu instrumente pentru analiza rezultatelor, integrarea cu documentele companiei și suportul pentru planificarea bugetului de marketing.
