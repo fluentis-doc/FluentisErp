@@ -1,18 +1,18 @@
 ---
-title: Natura transazione Intrastat
+title: Vrsta Intrastat transakcije
 sidebar_position: 14
 ---
 
-La tabella, precaricata, definisce la natura delle transazioni per le dichiarazioni Intrastat (come prevista delle istruzioni ufficiali).
+Tablica, unaprijed učitana, definira prirodu transakcija za Intrastat prijave (prema službenim uputama).
 
-È presente una tipologia *fittizia* **‘S – Servizi'** che ha il fine di individuare quali documenti (se inseriti come documento dell'area acquisti/vendite) riportare nelle sezioni quater/quinquies relative alle prestazioni di servizi, così come **‘Z – Call of stock'** per riportare dalle vendite le operazioni della sezione relativa dell'intra vendite.
+Postoji *fiktivna* tipologija **„S – Usluge“** koja služi za označavanje dokumenata (ako su uneseni kao dokumenti iz područja nabave/prodaje) koji će se prikazati u sekcijama quater/quinquies vezanim uz pružanje usluga, kao i **„Z – Call of stock“** za prijenos iz prodaje u odgovarajuću sekciju intra prodaje.
 
-#### Campi specifici
+#### Specifična polja
 
-**Codice**: codice natura transazione.
+**Šifra**: šifra prirode transakcije.
 
-**Descrizione**: descrizione natura transazione.
+**Opis**: opis prirode transakcije.
 
-**Triangolazione**: il flag ‘operazioni triangolari' consente di caricare la lista dell'ultima colonna della tabella.
+**Trokut**: oznaka trokutaste operacije omogućuje učitavanje popisa posljednjeg stupca tablice.
 
-Nella griglia sottostante sono visualizzate, invece, le Nature di dettaglio delle transazioni suddette.
+U donjoj mreži prikazane su detaljne prirode navedenih transakcija.
