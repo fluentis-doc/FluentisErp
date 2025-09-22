@@ -1,8 +1,8 @@
 ---
-title: Numerazione cespite
+title: Numeracija imovine
 sidebar_position: 28
 ---
 
-La tabella consente di definire una numerazione standard Fluentis (quindi dotata anche di numero formattato , ad esempio) valida per i cespiti (in passato  provvisti di numerazioni di tipo semplice) ed eventualmente collegabile alle categorie cespite.
+Tablica omogućuje definiranje standardne Fluentis numeracije (uključujući i formatirani broj, na primjer), koja je važeća za imovinu (ranije je imovina imala jednostavne numeracije) i po potrebi se može povezati s kategorijama imovine.
 
-Nel caso in cui non venga impostato un numeratore (del tipo standard qui descritto) sarà utilizzata la numerazione classica (quella che non prevede le opzioni per il numero formattato ecc.. per intendersi).
+Ako se ne postavi numerator (standardnog tipa opisanog ovdje), koristit će se klasična numeracija (ona koja ne uključuje opcije za formatirani broj i slično).
