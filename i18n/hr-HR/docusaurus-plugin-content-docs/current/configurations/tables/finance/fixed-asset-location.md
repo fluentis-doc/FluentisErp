@@ -1,9 +1,9 @@
 ---
-title: Ubicazione cespiti
+title: Lokacija imovine
 sidebar_position: 35
 ---
 
-In questa tabella possiamo codificare le ubicazioni da assegnare ai cespiti.
-La tabella si compone solo dei campi:  
-- *Codice*  
-- *Descrizione*
+U ovoj tablici možemo kodificirati lokacije koje će se dodijeliti imovini.
+Tablica se sastoji samo od polja:
+- *Šifra*  
+- *Opis*
