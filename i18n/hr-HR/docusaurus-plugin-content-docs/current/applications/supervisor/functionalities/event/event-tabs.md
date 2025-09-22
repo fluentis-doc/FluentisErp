@@ -27,7 +27,7 @@ Tab Log omogućuje pregled zapisa izvršenja zadatka, kako za zakazano, tako i z
 Tab Planiranja omogućuje zakazivanje izvršenja događaja putem namjenskog gumba.  
 Popup prozor omogućuje definiranje tipa pojavljivanja s pripadajućom detaljnom parametrizacijom, razlikujući:
 
-**Jednom**  
+**Opći**  
 > Omogućuje navođenje točnog datuma/vremena izvršenja.
 
 **Dnevno**  

@@ -11,7 +11,8 @@ Nakon što se otvori obrazac s detaljima aktivnosti, u gornjem dijelu nalaze se 
 
 ### Povezani parametri 
 
-Sve *Vrste aktivnosti* imaju *povezane parametre* (i ulazne i izlazne). Kada se koriste unutar *Zadatka* vidljivi su (shvaćate što je rečeno kada se koriste unutar  *Blockly* Widgeta). Ovi parametri su ključni u mnogim slučajevima, jer su oni jedini način povezivanja *Aktivnosti* sa *Zadatkom*. 
+Sve vrste Aktivnosti imaju Povezive Parametre (kako ulazne tako i izlazne); ti parametri, za razliku od globalnih, imaju lokalnu vidljivost unutar same aktivnosti, zadatka ili događaja. Oni omogućuju definiranje svih parametara koji će biti povezani s aktivnošću kao ulaz ili izlaz.
+Ova konfiguracija zatim će biti pridružena bloku dostupnom putem Zadatka, omogućujući upravljanje parametrima.
 
 Za izradu parametra trebate navesti zadanu vrijednost (kao što je *Naziv*, *Opis*) i neke specifičnije vrijednosti *Ulaznog parametra*, *Obaveznog*, *Tipa* i *Globalnog parametra*. 
 
