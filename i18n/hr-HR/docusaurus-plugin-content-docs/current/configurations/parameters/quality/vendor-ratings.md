@@ -1,46 +1,46 @@
 ---
-title: Parametri qualificazione fornitore
+title: Parametri kvalifikacije dobavljača
 sidebar_position: 5
 ---
 
-I parametri si trovano sul percorso **Parametri > Qualità > Parametri qualificazione fornitore**.
+Parametri se nalaze na putanji: **Parametri > Kvaliteta > Parametri kvalifikacije dobavljača**.
 
-I dati presenti in questa gestione sono utilizzati per proporre informazioni nelle gestioni:   
-- **Valutazioni fornitori iniziali e periodiche** - nell'elenco dei *dati di testata*;   
-- **Valutazioni fornitori periodiche su Non conformità** - nell'elenco dei *dati di testata*;   
-- **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
+Podaci uneseni u ovom sučelju koriste se za predlaganje informacija u sljedećim funkcionalnostima:     
+- **Početne i periodične evaluacije dobavljača** - u popisu *zaglavnih podataka*;   
+- **Periodične evaluacije dobavljača na temelju nesukladnosti** - u popisu *zaglavnih podataka*;   
+- **Matični podaci kontakata** - u kartici *Računovodstveni podaci > Podaci o kvaliteti*.   
 
-#### Pulsante specifico
+#### Posebna tipka
 
-**Salva**: permette di memorizzare le informazioni modificate.  
+**Spremi**: omogućuje spremanje unesenih ili izmijenjenih informacija.   
 
-**Proponi valutazioni**
+**Predloži procjene**
 
-Per proporre le *Valutazioni fornitore* nell'elenco degli *Intervalli punteggio per la valutazione* premere il pulsante **Proponi valutazioni**.   
-Vengono riportate tutte le *Valutazioni* non ancora inserite in elenco; i valori in *Punteggio da* delle pre-esistenti *Valutazioni* non vengono modificati.   
+Za predlaganje *Evaluacija dobavljača* unutar popisa *Intervali bodova za evaluaciju* pritisnuti tipku **Predloži procjene**.    
+U tablicu će se dodati sve *Evaluacije* koje još nisu evidentirane u popisu; vrijednosti u polju *Bodovi od* kod već postojećih evaluacija neće se mijenjati.  
 
-## Valutazioni iniziali      
+## Početne procjene   
 
-In questo expander è possibile inserire dati da proporre nelle *Valutazione iniziale e periodica*.   
-Nell'expander è possibile inserire:   
-- **Tipo valutazione proposta**: *Tipo di valutazione* da proporre all'inserimento di una *Valutazione iniziale e periodica*.   
-- **Ispettore proposto**: *Ispettore* da proporre all'inserimento di una *Valutazione iniziale e periodica*.   
-- **Sospensione automatica**: indica se, al riconoscimento di una *Valutazione fornitore* di sospensione, il fornitore verrà automaticamente *sospeso*.   
+U ovom proširivom odjeljku moguće je unijeti podatke koji će se predlagati prilikom unosa *početne ili periodične evaluacije*.   
+Unosom su dostupna sljedeća polja:    
+- **Tip predložene procjene**: *Vrsta evaluacije* koja će se automatski predložiti pri unosu *početne ili periodične evaluacije*.   
+- **Predloženi inspektor**: *Inspektor* koji će se predložiti pri unosu *početne ili periodične evaluacije*.   
+- **Automatska obustava**: označava hoće li, u slučaju prepoznavanja *evaluacije dobavljača* kao suspenzijske, dobavljač biti automatski suspendiran.  
 
-## Valutazioni periodiche non conformità      
+## Periodične evaluacije na temelju nesukladnosti       
 
-In questo expander è possibile inserire dati da proporre nelle *Valutazione periodica su Non conformità*.   
-Nell'expander è possibile inserire:   
-- **Tipo valutazione proposta**: *Tipo di valutazione* da proporre all'inserimento di una *Valutazione periodica su Non conformità*.   
-- **Sospensione automatica**: indica se, al riconoscimento di una *Valutazione fornitore* di sospensione, il fornitore verrà automaticamente *sospeso*.   
+U ovom proširivom odjeljku moguće je unijeti podatke koji će se automatski predlagati prilikom unosa *Periodične evaluacije na temelju nesukladnosti*.   
+Dostupna su sljedeća polja:    
+- **Predložena vrsta evaluacije**: *Vrsta evaluacije* koja će se predložiti pri unosu *periodične evaluacije na temelju nesukladnosti*.     
+- **Automatska obustava**: označava hoće li, u slučaju prepoznavanja *evaluacije dobavljača* kao suspenzijske, dobavljač biti automatski suspendiran.    
 >
-- **Intervalli punteggio per la valutazione**   
-> In questo elenco è possibile definire le fascie di percentuale per l'attribuzione automatica della *Valutazione periodica su Non conformità*.   
-> La tabella consente di inserire nuovi record, modificarli oppure cancellarli. L'elenco si compone delle seguenti informazioni:   
->- **Valutazione**: è il codice della *Valutazione fornitore*.   
->- **Descrizione valutazione**: è la descrizione della *Valutazione fornitore*.   
->- **Punteggio da**: valore espresso in percentuale, è il valore iniziale dell'intervallo alla quale viene attribuita la *Valutazione*;   
->> la *Valutazione* da attribuire ad un *Fornitore* viene calcolata considerando la percentuale ottenuta dalla valutazione;   
->> la percentuale deve essere uguale o maggiore al valore iniziale e inferiore al valore della percentuale di fascia maggiore.  
+- **Intervali bodova za evaluaciju**   
+> U ovom popisu moguće je definirati postotne raspona (fascije) za automatsko dodjeljivanje *periodične evaluacije na temelju nesukladnosti*.     
+> Tablica omogućuje unos novih zapisa, njihovo uređivanje ili brisanje. Sadrži sljedeće podatke:     
+>- **Evaluacija**: šifra *evaluacije dobavljača*.   
+>- **Opis evaluacije**: opis pripadajuće *evaluacije dobavljača*.   
+>- **Bodovi od**: vrijednost izražena u postocima, početna vrijednost intervala kojem se dodjeljuje određena *evaluacija*;   
+>> *Evaluacija* koja će se dodijeliti *dobavljaču* izračunava se na temelju postotka ostvarenog evaluacijom;     
+>> Postotak mora biti jednak ili veći od početne vrijednosti i manji od postotka sljedećeg višeg intervala.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom načinu rada formi, pogledajte sljedeću poveznicu:[Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).  

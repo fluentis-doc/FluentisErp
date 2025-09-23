@@ -91,55 +91,55 @@ U popisu, za svaku vrstu dokumenta, moguće je unijeti:
 >- *Utovarna jedinica* - redak *Artikla* ima najviše detalje u obliku *Jedinice utovara*;   
 >
 - **Višestr.**: označava je li omogućeno *Višestruko očitavanje vrijednosti* u *Kontroli artikala* za određenu vrstu dokumenta.  
-> Per essere considerato deve essere indicato il parametro generale *Abilita il rilevamento multipli valori*.   
-- **Tipo controllo**: *Tipo controllo* da proporre all'inserimento di un *Controllo articoli* per la tipologia documento specifica.   
-- **Tipo piano di controllo**: durante l'*Importazione articoli da controllare*, escluse le tipologie documento di produzione (*Dichiarazione di produzione* e *Fase Ordine di produzione*), è il *Tipo piano di controllo* che ha priorità maggiore per la ricerca del *Piano di controllo* da associare al *Controllo articoli*.   
-- **Descrizione tipo controllo**: è la descrizione del *Tipo controllo*.   
-- **Descrizione tipo piano di controllo**: è la descrizione del *Tipo piano di controllo*.   
+> Kako bi se omogućila ova funkcionalnost, potrebno je u općim postavkama označiti parametar *Omogući višestruko očitavanje vrijednosti*.   
+- **Vrsta kontrole**: *Vrsta kontrole* koja se automatski predlaže prilikom unosa nove *Kontrole artikala* za određenu vrstu dokumenta.     
+- **Tip kontrolnog plana**: tijekom *Uvoza artikala za kontrolu*, osim za vrste dokumenata vezane uz proizvodnju (*Izjava o proizvodnji* i *Faza proizvodnog naloga*), ova postavka ima najveći prioritet prilikom traženja *Tip kontrolnog plana* koji se pridružuje *Kontroli artikala*.     
+- **Opis kontrola tipa**: opis odabranog *Tipa kontrole*.   
+- **Opis tipa upravljačkog plana**: opis odabranog *Tipa kontrolnog plana*.   
 
-### Colori righe Controlli articolo      
+### Boje redaka u Kontroli artikala    
 
-In questo elenco è possibile definire varie colorazioni per riconoscere i vari stati di un'*Controllo articolo*.   
-Tali colori sono applicati nel *Filtro dei Controlli articolo*. L'elenco si compone delle seguenti informazioni:   
-- **Tipo**: è lo stato del *Controllo articolo* al quale associare le colorazioni.   
-> La tabella contiene dei valori predefiniti dal sistema e non è possibile inserirne di nuovi, eliminarli o modificarli. I valori predefiniti sono:
-> - *Articoli non soggetti a controllo*;   
-> - *Controlli privi di un Piano di controllo*;   
-> - *Controlli con più Piani di controllo*;   
-> - *Controlli ancora da rilevare*;   
-> - *Controlli con esiti Non conformi*;   
-> - *Controlli ancora da validare*;   
-> - *Controlli già validati*.   
+U ovom popisu moguće je definirati različite boje kako bi se lakše prepoznala različita stanja pojedine *Kontrole artikala*.   
+Te se boje primjenjuju unutar *filtera Kontrola artikala*. Popis sadrži sljedeće informacije:  
+- **Tip**: označava stanje *Kontrole artikla* kojem treba pridružiti određene boje.    
+> Tablica sadrži unaprijed definirane vrijednosti koje nije moguće dodavati, brisati niti mijenjati. Predefinirane vrijednosti su:  
+> - *Artikli koji nisu predmet kontrole*;   
+> - *Kontrole bez plana upravljanja*;   
+> - *Kontrola planova kontrole*;   
+> - *Kontrole nisu otkrivene*;   
+> - *Kontrole s nezadovoljnim rezultatom*;   
+> - *Provjerite opet biti potvrđene*;   
+> - *Već validirani Kontrole*.   
 >
-- **Sfondo**: è il colore applicato allo sfondo della riga del *Controllo articolo* dello stato specifico.   
-- **Testo**: è il colore applicato al testo della riga del *Controllo articolo* dello stato specifico.   
+- **Pozadina**: boja koja se primjenjuje na pozadinu retka za određeno stanje *Kontrole artikla*.   
+- **Tekst**: boja teksta retka za određeno stanje *Kontrole artikla*.   
 
-### Personalizzazione dati per tipo documento      
+### Prilagodba podataka po vrsti dokumenta      
 
-In questo elenco è possibile aggiungere *Proprietà* della tipologia documento di origine nell'elenco dati del *Controllo articolo*.   
-La tabella contiene le medesime tipologie di documento riportate in **Tipi documento per l'importazione**.   
-Sono tipologie predefinite dal sistema e non è possibile inserirne di nuove o eliminarle.   
-Sono previste 5 informazioni per tipo di dato: *Testo*, *Si/No*, *Intero*, *Decimale*, *Data*.   
-Tramite un doppio click sulla cella è possibile selezionare la *Proprietà* desiderata del documento.   
+U ovom je popisu moguće dodati *Svojstva* izvornog dokumenta u prikaz podataka unutar *Kontrole artikala*.   
+Tablica sadrži iste vrste dokumenata kao one navedene u odjeljku **Vrste dokumenata za uvoz**.   
+Radi se o vrstama dokumenata koje su unaprijed definirane u sustavu i nije ih moguće dodavati niti brisati.    
+Za svaku vrstu podatka moguće je unijeti do 5 informacija, ovisno o tipu: *Tekst*, *Da/Ne*, *Cijeli broj*, *Decimalni broj*, *Datum*.   
+Dvaput klikom na ćeliju moguće je odabrati željeno *Svojstvo* dokumenta.   
 
-:::tip *Esempio:*   
-per la tipologia documento *Fattura di Acquisto* è possibile aggiungere il valore della *Proprietà* di testata *Vostro riferimento*.   
-Essendo *Vostro riferimento* un’informazione di testo, tramite il doppio click del mouse sulla colonna *Testo 01* viene eseguito l'Help sulle proprietà di riga del documento *Fattura di Acquisto*.   
-Espandere il riferimento *Invoice (Fattura)*, selezionare la proprietà *Your reference (Vostro riferimento)* e premere il pulsante *Seleziona*.   
-Nella cella dove è stata effettuata la selezione comparirà la proprietà *YourReference*.
+:::tip *Primjer*:   
+Za vrstu dokumenta *Ulazna faktura* moguće je dodati vrijednost iz zaglavlja, npr. *Svojstvo* *Vaša referenca*.   
+Budući da je *Vaša referenca* tekstualna informacija, dvostrukim klikom miša na stupac *Tekst 01* pokreće se pomoć s popisom svojstava redaka dokumenta *Ulazna faktura*.   
+Potrebno je proširiti stavku *Invoice (Faktura)*, odabrati svojstvo *Your reference (Vaša referenca)* i pritisnuti tipku *Odaberi*.   
+U ćeliji u kojoj je izvršen odabir prikazat će se svojstvo *YourReference*.
 :::
 
-### Personalizzazione intestazioni colonne per tipo documento      
+### Prilagodba zaglavlja stupaca po vrsti dokumenta       
 
-In questo elenco è possibile indicare il *Titolo della proprietà*, corrispondenti alle *Proprietà* selezionate dell'elenco **Personalizzazione dati per tipo documento** e che compariranno nell'elenco dati del *Controllo articolo*.   
-La tabella contiene le medesime tipologie di documento riportate in **Tipi documento per l'importazione**.   
-Sono tipologie predefinite dal sistema e non è possibile inserirne di nuove o eliminarle.   
-Sono previste 5 informazioni per tipo di dato: *Testo*, *Si/No*, *Intero*, *Decimale*, *Data*.   
-Tramite un doppio click sulla cella è possibile selezionare la *Voce del dizionario* desiderata da riportare come intestazione.   
-
-:::tip *Esempio:*   
-per la tipologia documento *Fattura di Acquisto* è possibile indicare l'intestazione corrispondente all'esempio fatto precedentemente per il valore della *Proprietà* di testata *Vostro riferimento*.   
-Tramite il doppio click del mouse sulla colonna *Testo 01* o digitando manualmente la *Voce del dizionario* inserire *Vostro riferimento*.   
+U ovom popisu moguće je unijeti *Naslov svojstva*, koji odgovara prethodno odabranim *Svojstvima* iz popisa **Prilagodba podataka po vrsti dokumenta** i koji će se prikazivati u prikazu podataka unutar *Kontrole artikala*.   
+Tablica sadrži iste vrste dokumenata kao i u odjeljku **Vrste dokumenata za uvoz**.   
+Radi se o vrstama koje su unaprijed definirane u sustavu te ih nije moguće dodavati niti brisati.  
+Moguće je postaviti do 5 informacija po tipu podatka: *Tekst*, *Da/Ne*, *Cijeli broj*, *Decimalni broj*, *Datum*.   
+Dvaput klikom na ćeliju moguće je odabrati željeni unos iz *rječnika* koji će se prikazivati kao naziv stupca.  
+ 
+:::tip *Primjer:*   
+Za vrstu dokumenta *Ulazna faktura* moguće je postaviti zaglavlje koje odgovara prethodno navedenom primjeru za svojstvo zaglavlja *Vaša referenca*.    
+Dvaput klikom na stupac *Tekst 01* ili ručnim unosom naziva iz rječnika, unesite *Vaša referenca*.   
 :::
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostale funkcionalnosti koje nisu posebno objašnjene u ovom dokumentu, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
