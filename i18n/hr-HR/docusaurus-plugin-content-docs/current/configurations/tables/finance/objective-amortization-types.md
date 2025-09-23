@@ -1,24 +1,24 @@
 ---
-title: Tipi ammortamenti fiscali/oggettivi
+title: Vrste poreznih/objektivnih amortizacija
 sidebar_position: 26
 ---
 
-La tabella permette di definire delle tipologie di ammortamento fiscali (o extracontabili) al fine di dare libertà nel calcolare extra-contabilmente ammortamenti a fini alternativi. 
+Tablica omogućuje definiranje vrsta poreznih (ili izvanknjigovodstvenih) amortizacija s ciljem da se omogući fleksibilnost pri izračunu izvanknjigovodstvenih amortizacija za alternativne svrhe. 
 
-:::note Attenzione
-Per il modulo *controlling* è stata sviluppata una nuova funzionalità specifica (creando un tab apposito all'interno della scheda cespite). 
+:::note Pažnja
+Za modul *kontroling* razvijena je nova posebna funkcionalnost (stvaranjem posebne kartice unutar evidencije osnovnog sredstva).
 ::: 
 
-La presente funzionalità rimane attiva (anche per retro-compatibilità) nel modulo amministrazione, e potrebbe in futuro essere arricchita di ulteriori funzionalità utili ai fini fiscali.
+Ova funkcionalnost ostaje aktivna (također radi unatrag kompatibilnosti) u modulu administracije i u budućnosti bi mogla biti obogaćena dodatnim funkcionalnostima korisnim u porezne svrhe.
 
-**Tipo**: codice identificativo del tipo di ammortamento oggettivo.
+**Vrsta**: identifikacijska šifra vrste objektivne amortizacije.
 
-**Descrizione**: descrizione del tipo di ammortamento oggettivo.
+**Opis**: opis vrste objektivne amortizacije.
 
-**Oper. incrementali**: flag di gestione come ‘incrementali' anche per i dati oggettivi (si rimanda all'omonimo flag della categoria cespite).
+**Inkrementalne operacije**: oznaka za upravljanje kao „inkrementalne“ također za objektivne podatke (vidi istoimenu oznaku u kategoriji osnovnog sredstva).
 
-**Calcolo giorni d'uso**: flag di calcolo per giorni d'uso che andrà a calcolare effettivamente i giorni d'utilizzo del cespite nell'anno invece che utilizzare tutto l'esercizio come per il calcolo normale.
+**Izračun po danima korištenja**: oznaka za izračun prema danima korištenja koja omogućuje stvarni obračun dana upotrebe osnovnog sredstva tijekom godine, umjesto korištenja cijele poslovne godine kao kod uobičajenog izračuna.
 
-**Perc**.: la percentuale standard da applicare.
+**Post.**.: standardna postotna stopa za primjenu.
 
-**Perc. fissa**: con tale flag attivo la percentuale sarà fissa senza possibilità di personalizzarla cespite per cespite.
+**Fiksni postotak**: ako je ova oznaka aktivna, postotna stopa bit će fiksna bez mogućnosti prilagodbe za svako osnovno sredstvo zasebno.
