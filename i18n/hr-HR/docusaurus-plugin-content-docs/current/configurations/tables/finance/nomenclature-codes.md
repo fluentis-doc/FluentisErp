@@ -1,22 +1,22 @@
 ---
-title: Codici nomenclatura
+title: Šifre nomenklature
 sidebar_position: 12
 ---
 
-La tabella consente di definire e gestire la lista dei codici di nomenclatura combinata Intrastat in uso nell'azienda. E' quindi possibile cancellare, aggiungere e modificare la lista esistente.
+Tablica omogućuje definiranje i upravljanje popisom kodova kombinirane nomenklature Intrastat koji se koriste u poduzeću. Stoga je moguće brisati, dodavati i mijenjati postojeći popis.
 
-**Codice nomenclatura**: rappresenta il codice della nomenclatura.
+**Šifra nomenklature**: predstavlja šifru nomenklature.
 
-**Descrizione breve**: campo non indispensabile utile per inserire una seconda descrizione o descrizione abbreviata.
+**Kratki opis**: neobavezno polje korisno za unos drugog opisa ili skraćenog opisa.
 
-**Descrizione**: rappresenta la descrizione del codice nomenclatura.
+**Opis**: predstavlja opis šifre nomenklature.
 
-**UM supp.**: rappresenta l'unità di misura supplementare (Cfr. istruzioni ufficiali dei modelli Intrastat sul sito dell'Agenzia delle Dogane).
+**Dodatna JM**: predstavlja dodatnu jedinicu mjere (vidi službene upute za obrasce Intrastat na web stranici Carinske uprave).
 
-**Data fine validità**: per bloccare l'uso del codice corrispondente.
+**Datum završetka valjanosti**: služi za blokiranje korištenja odgovarajuće šifre.
 
-**Servizio**: indica la codifica di una nomenclatura dei servizi, a 5 caratteri, da proporre in valorizzazione delle sezioni dei servizi nei modelli
+**Usluga**: označava šifru nomenklature usluga, od 5 znakova, koju treba koristiti za popunjavanje odjeljaka o uslugama u obrascima.
 
-:::tip Nota
-All'interno di Bizlink è prevista una procedura di import da foglio elettronico per aggiornare di anno in anno le nomenclature in modo massivo
+:::tip Napomena
+Unutar Bizlink-a predviđen je postupak uvoza iz proračunske tablice radi masovnog godišnjeg ažuriranja nomenklatura.
 :::
