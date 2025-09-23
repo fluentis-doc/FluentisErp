@@ -1,9 +1,9 @@
 ---
-title: Ricerca Contatti CRM
+title: Caută Contacte CRM
 sidebar_position: 1
 ---
 
-Modulul **Contacte** permite operatorului să gestioneze registrul contactelor din CRM. Acesta se află în aria CRM și oferă posibilitatea de a gestiona activitățile unui contact, fluxul operațional de gestionare a contactului, referințele sale, agenții aferenți și ofertele prezentate acestuia.
+Modulul permite operatorului să gestioneze registrul contactelor din CRM. Acesta se află în aria CRM și oferă posibilitatea de a gestiona activitățile unui contact, fluxul operațional de gestionare a contactului, referințele sale, agenții aferenți și ofertele prezentate acestuia.
 Contactele CRM au propriul registru, diferit de cel al contactelor Fluentis, la care se pot conecta în momentul în care un contact CRM devine un client.
 
 Procedura de **Căutare Contacte** este concepută pentru a permite utilizatorului să caute cu ușurință contactele CRM deja introduse, cu scopul de a le vizualiza, modifica și eventual șterge.
