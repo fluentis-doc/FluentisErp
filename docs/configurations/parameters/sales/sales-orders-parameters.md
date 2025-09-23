@@ -29,7 +29,8 @@ I parametri degli ordini clienti permettono l'impostazione di base per gestire c
 
 **Obbligo rapporto colli articolo con quantità**: se settato il flag costringe l’utente ad inserire una quantità corrispondente o multipla del numero colli definito nel tab *Pesi/Dimensioni* dell’anagrafica articoli; se la quantità non è il numero colli o un suo multiplo appare il messaggio: “Articolo non vendibile in quantità inferiore o non multiplo di .      
 
-**Proponi lotto economico**: se il flag è settato viene proposto come quantità il lotto economico e se la quantità è inferiore al lotto economico viene dato il messaggio “La quantità non può essere inferiore a …”.       
+**Proponi lotto economico**: se il flag è attivo e nell’anagrafica articolo è stato definito un lotto economico per il cliente del documento, in fase di inserimento riga ordine la quantità verrà proposta automaticamente pari al lotto economico. 
+Se il flag non è attivo, la verifica viene effettuata al momento della conferma riga: qualora la quantità inserita sia inferiore al lotto economico, verrà restituito il messaggio “La quantità non può essere inferiore a …”.    
 
 **Verifica articoli in esaurimento**: se settato, questo flag farà apparire un pop-up di avviso nel caso in cui vengano inseriti in ordine degli articoli che hanno settato in anagrafica il flag in Esaurimento e la data in cui l’articolo va in esaurimento; questo controllo evita di vendere articoli che non verranno più prodotti o riassortiti.      
 
