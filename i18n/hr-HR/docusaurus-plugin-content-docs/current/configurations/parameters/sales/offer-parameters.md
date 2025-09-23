@@ -1,54 +1,54 @@
 ---
-title: Parametri offerte
+title: Parametri ponuda
 sidebar_position: 2
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+U slučaju ručne konfiguracije, pogledaj kontrolnu listu na povezanom linku.
 :::
 
-I parametri offerte permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società. La finestra si compone di due tab: Generale e Scarico.     
+Parametri ponuda omogućuju osnovne postavke za ispravno upravljanje ponudama, u skladu sa specifičnim zahtjevima svake pojedine tvrtke. Prozor je podijeljen na dvije kartice: Općenito i Otpremanje.     
 
-### Generale 
+### Općenito 
 
-I campi presenti in questa tab sono:      
+Polja prisutna u ovoj kartici su:
 
-**Gestione doppia unità misura**: se attivo, nelle righe offerta verranno visualizzate le due colonne UM Alternativa e Quantità Alternativa, sarà perciò possibile gestire la doppia unità di  misura, considerando sempre che è l’unità di misura principale sulla quale vengono fatti i controlli per l’evasione.     
+**Upravljanje dvostrukom jedinicom mjere**: ako je aktivirano, u redovima ponude bit će prikazane dvije kolone, Alternativna JM i Alternativna količina, što omogućuje upravljanje dvostrukim jedinicama mjere, uzimajući u obzir da se provjere za ispunjenje vrše prema glavnoj jedinici mjere.       
 
-**Proposta automatica UM alternativa:** questo flag diventa editabile solo se è stato attivato il flag di gestione della doppia unità di misura e consente di riportare nel tab articoli dell'offerta l'unità di misura alternativa impostata nell'anagrafica articolo, nel apposita colonna 'UM alternativa'; se non attivo, l'unità di misura non viene proposta.       
+**Automatski prijedlog alternativne JM**: ovaj je parametar dostupan za uređivanje samo ako je aktivirano upravljanje dvostrukom jedinicom mjere i omogućuje da se u tabu artikala ponude automatski prijedloži alternativna jedinica mjere definirana u kartici artikla, u koloni Alternativna JM; ako nije aktiviran, alternativna JM se neće predložiti.      
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: quando si cercano il prezzo e gli sconti per un articolo all'interno di un'offerta, il sistema segue delle regole basate sulle impostazioni configurate nell'anagrafica cliente, sotto la sezione *Listini*. Se è attivata l'opzione 'default' su un determinato tipo di listino, la ricerca di prezzi e sconti si concentrerà solo su quella specifica tipologia di listino; se il flag "default" non è attivo, il sistema estenderà la ricerca a tutti i tipi di listini presenti, seguendo un ordine di priorità. In pratica, con il flag 'default' attivo, il sistema cercherà prima un listino valido per la tipologia predefinita; se non trova risultati, passerà a controllare le altre tipologie di listino in ordine di priorità inserita. Tuttavia, se nell'anagrafica del cliente non è presente alcuna tipologia di listino impostata come 'default' e ci sono solo priorità, questo parametro non influenzerà la ricerca, anche se attivo.       
+**Pretraga cijena artikala u svim unaprijed definiranim cjenicima**: prilikom traženja cijene i popusta za artikl u ponudi, sustav slijedi pravila prema postavkama u kartici kupca, u odjeljku Cjenici. Ako je opcija ‘default’ aktivirana za određenu vrstu cjenika, pretraga će se ograničiti samo na tu vrstu. Ako ‘default’ nije aktivan, sustav će pretražiti sve vrste cjenika prema prioritetnom redu. Konkretno, ako je ‘default’ aktivan, sustav prvo traži valjani cjenik za zadanu vrstu; ako nema rezultata, nastavlja s drugim vrstama po prioritetu. Međutim, ako u kartici kupca nema nijedne vrste cjenika postavljene kao ‘default’ nego samo prioriteti, ovaj parametar neće utjecati na pretragu, čak i ako je aktivan.  
 
-**Proponi provvigione per gli articoli omaggio**: con questo flag verranno proposte le provvigioni agente anche per le righe articolo di tipo omaggio come avviene per le righe di tipo Articolo Codificato.                
+**Predloži proviziju za artikle na poklon**: ako je aktivno, agent će dobiti proviziju i za redove artikala označenih kao poklon, kao i za redove standardnih artikala.              
 
-**Consentire sconti per gli articoli omaggio**: con questo flag verranno inseriti gli sconti sull'importo di riga anche per le righe articolo di tipo omaggio.    
+**Dozvoli popuste za artikle na poklon**: ako je aktivno, na redove artikala označenih kao poklon mogu se primijeniti popusti na iznos retka.  
 
-**Verifica articoli in esaurimento**: se settato, questo flag farà apparire un pop-up di avviso nel caso in cui vengano inseriti in offerta degli articoli che hanno settato in anagrafica il flag in Esaurimento e la data di esaurimento.          
+**Provjera artikala pri kraju zaliha**: ako je aktivirano, pojavit će se skočni prozor upozorenja ako se u ponudu unesu artikli koji u svojoj kartici imaju označeno stanje pri kraju i definirani datum isteka.         
 
-**[Abilita Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)**: attivando questo flag nella sezione Articoli delle offerte non gerarchiche, verranno visualizzate due nuove colonne: *Sconti Articolo* e *Sconti Finali Articolo*. La colonna *Sconti Articolo* è modificabile e mostra gli sconti applicati automaticamente in base alle impostazioni relative al cliente, all'articolo, al listino o alla categoria di sconto. L'utente ha la possibilità di inserire, modificare o eliminare gli sconti direttamente in questa colonna. Per utilizzare questo widget è necessario che, oltre ad attivare il flag, sia specificato nel tipo di offerta quale tipo di sconto utilizzare.     
+**[Omogući widget pojednostavljenih popusta](/docs/sales/sales-flow/discount-widget)**: Omogući pojednostavljeni widget za popuste aktiviranjem ove opcije u sekciji Artikli ne-hijerarhijskih ponuda prikazuju se dvije nove kolone: *Popusti artikla* i *Završni popusti artikla*. Kolona *Popusti artikla* je uređiva i prikazuje automatski primijenjene popuste prema postavkama za kupca, artikl, cjenik ili kategoriju popusta. Korisnik može dodavati, mijenjati ili brisati popuste direktno u ovoj koloni. Za korištenje ovog widgeta potrebno je, osim aktivacije opcije, definirati i vrstu popusta u vrsti ponude.   
 
-**Uso articolo cliente**: se settato, questo flag inserirà, nella griglia articoli dell'offerta, le colonne per il Codice e la Descrizione cliente inseriti in anagrafica articolo, tab Cliente.       
+**Koristi stavku kupca**: ako je aktivno, u tablici artikala ponude prikazuju se dodatne kolone za Šifru i Opis artikla prema kupcu, preuzete iz kartice artikla u kartici Kupac.      
 
-**Uso barcode**: se settato, questo flag inserirà, nella griglia articoli dell'offerta, la colonna per riportare il barcode dell'articolo.     
+**Koristi barkod**: ako je aktivno, u tablici artikala ponude prikazuje se kolona za barkod artikla.  
 
-**Codice operatore obbligatorio**: questo flag rende obbligatorio compilare il campo *Operatore* in testata offerta.     
+**Obvezna šifra korisnika**: ako je aktivno, polje *Operater* u zaglavlju ponude postaje obavezno za ispunjavanje.  
 
-**Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
+**Blokiraj unos dokumenta na praznike prema tvorničkom kalendaru**: ako je aktivno, sustav neće dopustiti unos ponude na neradne dane definirane u kalendaru tvornice (provjera se radi prvo prema tvorničkom kalendaru, a zatim prema kalendaru proizvodnih kapaciteta). Ako nije aktivno, nema provjere i dokument se može unijeti.       
 
-**Riferimenti offerta**: se questo flag viene impostato, nel progetto creato da offerta verrà inserito il Riferimento dell'offerta nel titolo del progetto; la composizione di questa nota deve essere inserita nel campo *Descrizione* secondo i parametri descritti nella label.     
+**Referenca ponude**: ako je aktivno, u naslov projekta stvorenog iz ponude dodaje se referenca ponude; sadržaj bilješke mora biti unesen u polje *Opis* prema pravilima navedenima u opisu.   
 
-**Costo predefinito materiali offerta**: in questo campo è possibile indicare il *Tipo costo origine* da usare come importo di partenza per il calcolo del ricavo dei *Materiali* di un'[offerta gerarchica](/docs/sales/offers/insert-offer).       
+**Zadani trošak materijala ponude**: ovdje se definira *Vrsta izvora troška* koja se koristi kao početna vrijednost za izračun prihoda *Materijala* u [hijerarhijskoj ponudi](/docs/sales/offers/insert-offer).       
 
-**Articolo ordine risorse da offerta**: in questo campo è possibile indicare quale articolo codificato associare alle risorse di un'Offerta, per la creazione delle righe dell'Ordine dall'[offerta gerarchica](/docs/sales/offers/insert-offer).      
+**Artikl narudžbe resursa iz ponude**: ovdje se može odabrati artikl koji će se povezati s resursima iz ponude za kreiranje redova narudžbe iz [hijerarhijske ponude](/docs/sales/offers/insert-offer).      
 
-**Riferimenti prototipo**: in questa sezione è possibile comporre la nota di riferimento al prototipo associato all'offerta; essa verrà riportata nel campo *Prototipo* del tab *Attività* dell'offerta gerarchica.     
+**Reference prototipa**: ovdje se može unijeti bilješka o referenci na prototip povezan s ponudom; bilješka će se prikazati u polju *Prototip* u kartici *Aktivnosti* hijerarhijske ponude.       
 
-**Blocca conferma e conversione offerta in ordine se presenti prototipi non codificati**: questo flag impedisce conferma e conversione offerta in ordine se sono associati prototipi non codificati.
+**Blokiraj potvrdu i konverziju ponude u narudžbu ukoliko postoje nekodificirani prototipi**: ako je aktivno, onemogućava potvrdu i konverziju ponude u narudžbu dok se ne kodificiraju svi povezani prototipovi.   
 
-### Scarico
+### Istovar
 
-I parametri di scarico sono utilizzati solo per proporre il magazzino e la causale nelle righe delle offerte non gerarchiche.
+Parametri otpremanja koriste se samo za automatski prijedlog skladišta i uzroka otpreme u redovima ne-hijerarhijskih ponuda.  
 
-**Priorità parametri inseriti per ogni riga ordine**: se attivo il magazzino e la causale di scarico vengono letti dalle righe dell'ordine mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (**Magazzino** e **Causale di magazzino**).     
+**Prioritet parametara umetnutih za svaku liniju naloga**: ako je aktivno, skladište i uzrok otpreme uzimaju se iz redova narudžbe, inače se koriste skladište i uzrok definirani u poljima (**Skladište** i **Uzrok otpreme**).     

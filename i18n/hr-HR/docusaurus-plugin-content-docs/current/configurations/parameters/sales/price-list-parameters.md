@@ -1,8 +1,8 @@
 ---
-title: Parametri listini di vendita
+title: Parametri prodajnih cijena
 sidebar_position: 6
 ---
 
-In questa form vengono impostati i parametri per i listini di vendita. I flag disponibili sono:       
-- **Visualizza colonna Escludi**: questo flag fa attivare la visualizzazione del flag *Non considerare* nella procedura di [Creazione listini di vendita](/docs/sales/sales-price-list/procedures/price-list-creation).        
-- **Visualizza Prezzo e Prezzo Ivato**: questo flag fa attivare la visualizzazione del prezzo e del prezzo ivato indipendentemente dall'impostazione inserita nei [tipi listino](/docs/configurations/tables/sales/sales-price-lists). 
+U ovom obrascu postavljaju se parametri za prodajne cjenike. Dostupni su sljedeći flagovi:       
+- **Prikaži stupac Isključi**: ovaj flag omogućuje prikaz zastavice *Ne uzimaj u obzir* u postupku [Kreiranja prodajnih cjenika](/docs/sales/sales-price-list/procedures/price-list-creation).        
+- **Prikaži cijenu i cijenu s PDV-om**: ovaj flag omogućuje prikaz cijene i cijene s PDV-om neovisno o postavci definiranoj u [vrstama cjenika](/docs/configurations/tables/sales/sales-price-lists). 

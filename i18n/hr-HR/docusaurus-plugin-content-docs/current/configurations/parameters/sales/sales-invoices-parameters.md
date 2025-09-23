@@ -1,92 +1,94 @@
 ---
-title: Parametri fatture di vendita
+title: Parametri izlaznih računa
 sidebar_position: 5
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako želite ručno konfigurirati, pogledajte kontrolni popis na povezanoj stranici.    
 :::
 
-I parametri delle fatture di vendita permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società. La finestra relativa a questi parametri si compone di 4 diversi tab: Generale, Evasione, Scarico e Analitica.
+Parametri faktura prodaje omogućuju osnovnu postavku za ispravno upravljanje, u skladu sa specifičnim zahtjevima svake pojedine tvrtke. Prozor povezan s ovim parametrima sastoji se od 4 različitih kartica: Općenito, Ispunjenje,Otprema  i Analitika.
 
-### Generale
+### Općenito
 
-**Gestione doppia unità misura**: se attivo, nelle righe fattura verranno visualizzate le due colonne UM Alternativa e Quantità Alternativa, sarà perciò possibile gestire la doppia unità di  misura, considerando sempre che è l’unità di misura principale sulla quale vengono fatti i controlli per l’evasione.      
+**Upravljanje dvostrukom mjernom jedinicom**: ako je aktivno, u redovima računa bit će prikazane dvije kolone Alternativna JM i Alternativna Količina, stoga će biti moguće upravljati dvostrukom jedinicom mjere, uzimajući uvijek u obzir da je to glavna jedinica mjere na kojoj se provode kontrole za ispunjenje.
 
-**Proposta automatica UM alternativa:** questo flag diventa editabile solo se è stato attivato il flag di gestione della doppia unità di misura e consente di riportare nel tab articoli della fattura l'unità di misura alternativa impostata nell'anagrafica articolo, nell’apposita colonna 'UM alternativa'; se non attivo, l'unità di misura non viene proposta.      
+**Automatski prijedlog alternativne JM**: ovaj se flag može uređivati samo ako je aktivirana opcija upravljanja dvostrukom jedinicom mjere i omogućuje prikaz alternativne jedinice mjere postavljene u kartici artikla na kartici stavki računa u posebnom stupcu 'Alternativna JM'; ako nije aktivna, jedinica mjere se ne predlaže.      
 
-**Controllo Disponibilità:** questo flag e gli altri relativi al controllo, visualizzazione e obbligorietà con la considerazion per area, nella versione attuale, non sono gestite.     
+**Provjerite dostupnost**: ovaj flag i ostale vezane za kontrolu, prikaz i obaveznost s obzirom na područje trenutno nisu podržane u ovoj verziji.   
 
-**Unità di misura volume/pesi predefinita**: queste unità di misura vengono considerate come UM di default da proporre nel tab [Trasporto](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT, come unità di misura di volume e pesi; il dato è modificabile nei documenti. 
+**Zadane jedinice mjere za volumen/težinu**: ove jedinice mjere smatraju se zadanim za prikaz u kartici [Prenos](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) otpremnice kao jedinice mjere volumena i težine; vrijednost se može mijenjati u dokumentima.  
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: quando si cercano il prezzo e gli sconti per un articolo all'interno di una fattura, il sistema segue delle regole basate sulle impostazioni configurate nell'anagrafica cliente, sotto la sezione *Listini*. Se è attivata l'opzione 'default' su un determinato tipo di listino, la ricerca di prezzi e sconti si concentrerà solo su quella specifica tipologia di listino; se il flag "default" non è attivo, il sistema estenderà la ricerca a tutti i tipi di listini presenti, seguendo un ordine di priorità. In pratica, con il flag 'default' attivo, il sistema cercherà prima un listino valido per la tipologia predefinita; se non trova risultati, passerà a controllare le altre tipologie di listino in ordine di priorità inserita. Tuttavia, se nell'anagrafica del cliente non è presente alcuna tipologia di listino impostata come 'default' e ci sono solo priorità, questo parametro non influenzerà la ricerca, anche se attivo.       
+**Pretraživanje cijena artikala u svim unaprijed definiranim cjenicima**: pri traženju cijene i popusta za artikal u računu, sustav slijedi pravila definirana u kartici klijenta, u odjeljku *Cjenici*. Ako je na određenom tipu cjenika označena opcija 'zadano', pretraživanje cijena i popusta ograničit će se samo na tu vrstu cjenika; ako opcija 'zadano' nije aktivna, sustav će pretraživati sve vrste cjenika po prioritetnom redu. Drugim riječima, s aktivnim 'zadano' zastavicom sustav prvo traži cjenik odgovarajuće vrste; ako ne pronađe rezultat, prelazi na druge vrste po prioritetu. Međutim, ako u kartici klijenta nema niti jedne vrste cjenika označene kao 'zadano', već samo prioriteti, ovaj parametar neće utjecati na pretraživanje, čak i ako je aktivan.  
 
-**Proponi provvigione per gli articoli omaggio**: con questo flag verranno proposte le provvigioni agente anche per le righe articolo di tipo omaggio come avviene per le righe di tipo Articolo Codificato.     
+**Predloži proviziju za artikle na poklon**: s ovim flagom provizije za agente bit će ponuđene i za stavke darovane robe, kao što je slučaj i za stavke tipa Kodirani artikal.
 
-**Inserimento provvigioni nei tipi 6 e 7 (Acconto/Storno):** se attivo, permette l'inserimento e la gestione delle provvigioni anche per le i tipi riga 6 e 7 delle fatture. Per approfondimenti fare riferimento all'articolo relativo all' [inserimento della fattura](/docs/sales/sales-invoices/invoicing/sales-invoice).
+**Unos provizija za vrste 6 i 7 (Avans/Storno)**: ako je aktivirano, omogućuje unos i upravljanje provizijama i za stavke vrste 6 i 7 na računima. Za dodatne informacije, pogledajte članak vezan uz [unos računa](/docs/sales/sales-invoices/invoicing/sales-invoice).  
 
-**Consentire sconti per gli articoli omaggio**: con questo flag saranno calcolati gli sconti anche per gli articoli omaggio e incideranno sui totali.
+**Dozvoli rabat za stavke promotivnih poklona**: con questo flag saranno calcolati gli sconti anche per gli articoli omaggio e incideranno sui totali.
 
-**Prezzi negativi delle note di credito**: se attivo, il sistema notificherà un avviso qualora ci fossero dei prezzi positivi all'interno di note di accredito. Se non attivo, il sistema non farà nessun controllo e non restituirà nessun avviso.
+**Negativne cijene na kreditnim računima**: ako je aktivirano, sustav će upozoriti ako postoje pozitivne cijene unutar kreditnih računa. Ako nije aktivirano, sustav neće vršiti nikakvu provjeru niti će davati upozorenja.  
 
-**Senza spese incacco in note di accredito**: se attivo, non si mettono le spese incasso nelle note di credito.
+**Bez troškova naplate na kreditnim računima**: ako je aktivirano, troškovi naplate se neće dodavati na kreditne račune.  
 
-**Verifica vendite prezzo lotti**: campo obsoleto, non più utilizzato.
+**Provjera prodaje po cijenama serija**: zastarjelo polje, više se ne koristi.
 
-**Numero massime righe**: è il numero massimo di articoli per una fattura, attivo solo nella versione romena.
+**Maksimalan broj redaka**: maksimalan broj artikala po fakturi, aktivno samo u rumunjskoj verziji.  
 
-**Verifica articoli in esaurimento**: con questo flag viene attivata la gestione degli articoli in esaurimento; se in anagrafica articolo è presente una Data esaurimento e il relativo flag, Fluentis avviserà l'utente con un pop up se l'articolo viene inserito nel documento.    
+**Provjera artikala pri iscrpljenju zaliha**: ovom opcijom se aktivira upravljanje artiklima kojima je zaliha pri kraju; ako je u kartici artikla postavljen datum iscrpljenja i odgovarajući flag, Fluentis će korisnika upozoriti skočnim prozorom kada se artikl unese u dokument.     
 
-**[Abilita Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)**: attivando questo flag nella sezione Articoli verranno visualizzate due nuove colonne: *Sconti Articolo* e *Sconti Finali Articolo*. La colonna *Sconti Articolo* è modificabile e mostra gli sconti applicati automaticamente in base alle impostazioni relative al cliente, all'articolo, al listino o alla categoria di sconto. L'utente ha la possibilità di inserire, modificare o eliminare gli sconti direttamente in questa colonna. Per utilizzare questo widget è necessario che, oltre ad attivare il flag, sia specificato nel tipo di fattura quale tipo di sconto utilizzare.     
+**[Omogući widget pojednostavljenih popusta](/docs/sales/sales-flow/discount-widget)**: aktiviranjem ove opcije u odjeljku Artikli prikazat će se dva nova stupca: *Popusti na artikl* i *Završni popusti na artikl*. Stupac *Popusti na artikl* je moguće uređivati i prikazuje popuste koji se automatski primjenjuju na temelju postavki vezanih uz kupca, artikl, cjenik ili kategoriju popusta. Korisnik ima mogućnost unosa, izmjene ili brisanja popusta izravno u ovom stupcu. Za korištenje ovog widgeta potrebno je, osim aktivacije ove opcije, i da u vrsti fakture bude specificirano koju vrstu popusta koristiti.     
 
-**Uso articolo cliente**: se settato, questo flag inserirà, nella griglia articoli della fattura, le colonne per il Codice e la Descrizione cliente inseriti in anagrafica articolo, tab Cliente.       
+**Koristi stavku kupca**: ako je postavljen, ovaj flag će umetnuti, u mrežu artikala računa, kolone za Kod i Opis kupca unesene u kartonu artikla, na kartici Kupac.   
 
-**Uso barcode**: se settato, questo flag inserirà, nella griglia articoli della fattura, la colonna per riportare il barcode dell'articolo.     
+**Koristi barkod**: ako je postavljeno, ovaj flag će umetnuti, u mrežu artikala računa, kolonu za prikaz bar koda artikla.    
 
-**Codice operatore obbligatorio**: questo flag rende obbligatorio compilare il campo *Operatore* in testata.     
+**Obvezna šifra korisnika**: ovaj flag čini obaveznim ispunjavanje polja *Operater* u zaglavlju.    
 
-**Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
+**Blokiraj unos dokumenta na praznike prema tvorničkom kalendaru**: ako je aktivno, sustav ne dopušta unos ponude na praznike (prvo se provjerava Kalendar tvornice tvrtke, a zatim Kalendar proizvodnih kapaciteta); ako nije aktivno, sustav ne provodi nikakvu provjeru i dopušta unos dokumenta.   
 
-**Controlla intra-cee**: se attivo e il paese del cliente appartiene all’Unione Europea, il sistema verifica che il [Tipo Fattura](/docs/configurations/tables/sales/invoices-type) abbia il flag *Intracomunitaria* attivo e che, nell’anagrafica del cliente, sia abilitato il flag *Intrastat*; se queste condizioni non sono soddisfatte, verrà visualizzato un messaggio di errore: "Il tipo documento è intracomunitario, ma il codice cliente non è contrassegnato come intracomunitario".
+**Provjera unutar EU (Intra-CEE)**: ako je ova opcija aktivna i zemlja kupca pripada Europskoj uniji, sustav provjerava da je u [Vrsti računa](/docs/configurations/tables/sales/invoices-type) označena opcija *Intrakomunitarna* te da je u matičnim podacima kupca aktiviran flag *Intrastat*; ako ti uvjeti nisu ispunjeni, prikazat će se poruka o grešci: "Vrsta dokumenta je intrakomunitarna, ali šifra kupca nije označena kao intrakomunitarna".  
 
-**Ricalcola trasporto**: questo flag fa in modo che nel tab [Trasporto](/docs/sales/sales-invoices/invoicing/sales-invoice) della fattura vengano riportati i totali di peso, volume e colli delle righe del documento; senza questo flag, i campi non saranno compilati.        
+**Preračunaj prijevoz**: ova opcija omogućuje da se u kartici [Prenos](/docs/sales/sales-invoices/invoicing/sales-invoice) računa automatski popune ukupne vrijednosti težine, volumena i broja paketa iz redaka dokumenta; ako ova opcija nije aktivna, ta polja neće biti popunjena.       
 
-**Riferimenti esterni ordine**: questo flag fa in modo che i campi *Nostro* e *Vostro riferimento* vengano trasferiti dalle righe ordine/DDT alle righe fattura.
+**Vanjske reference narudžbe**: ova opcija omogućuje da se polja *Naša referenca* i *Vaša referenca* renesu iz redaka narudžbe/otpremnice u retke računa.  
 
-**Mantieni prezzi da ordini per gli scaglioni**: è utilizzato nell'evasione degli ordini in fattura nel caso in cui la quantità evasa sia diversa (solitamente parziale) della quantità ordinata per la quale è stato inserito un prezzo o uno sconto a scaglione di quantità. Se il prezzo o lo sconto non dipendono dalla quantità consegnata ma solo dalla quantità in ordine questo flag deve essere attivato, se invece il prezzo o sconto a scaglione non deve essere inserito nel documento di consegna nel caso in cui l'evasione non avvenga per la quantità totale dell'ordine il flag non deve essere attivato.
+**Održavajte cijene narudžbe za zagrade**: koristi se u ispunjavanju narudžbi na računu u slučaju kada je ispunjena količina različita (obično djelomična) od naručene količine za koju je unesena cijena ili popust po razredima količine. Ako cijena ili popust ne ovise o isporučenoj količini, već samo o količini u narudžbi, ovaj flag treba biti aktiviran; međutim, ako cijena ili popust po razredima ne trebaju biti uneseni u dokument isporuke u slučaju da ispunjenje ne bude za ukupnu količinu narudžbe, flag ne treba biti aktiviran.
 
-**Contabilizzazione imballi**: se attivo, considera nella contabilizzazione anche le righe imballo.
+**Ambalažno računovodstvo**: ako je aktivno, uzmi u obzir u knjiženju i redove pakiranja.
 
-### Evasione
+### Izuzimanje
 
-**Pagamento**: specifica il valore usato per il pagamento della fattura cliente nel caso dell'evasione multipla commessa vendita: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**Plaćanje**: određuje vrijednost koja će se koristiti za način plaćanja računa kupca u slučaju višestruke obrade prodajnih naloga: Prva narudžba, *Šifarnik* ili *Prva narudžba*. 
 
-**Destinatario**: specifica il valore usato per il destinatario dell'ordine cliente nel caso dell'evasione multipla commessa vendita: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**Primatelj**: određuje vrijednost koja se koristi za primatelja narudžbe kupca u slučaju višestrukog ispunjenja prodajne narudžbe: *Prva narudžba, *Šifarnik* ili *Prva narudžba*.
 
-**Ricalcola CDC/CDP**: nel caso in cui si sia scelto di generare la fattura partendo dall'ordine cliente con l'apposta procedura, attivando questo flag, il sistema andrà a ricalcolare i centri di costo e di profitto nella fattura, non considerando quelli impostati nell'ordine di vendita. Se non attivo il sistema non ricalcolerà questi dati ma terrà quelli inseriti nell'ordine cliente;
+**Ponovno izračunaj CDC/CDP**: u slučaju kada je odabrano generiranje računa iz naloga kupca pomoću odgovarajuće procedure, aktiviranjem ove opcije sustav će ponovno izračunati centre troška i profita na računu, zanemarujući one postavljene na prodajnom nalogu. Ako opcija nije aktivna, sustav neće ponovno izračunati podatke već će zadržati one unesene na nalogu kupca. 
 
-**Visualizzazione griglia evasione:** se attivo, il flag abilita la modalità griglia nella form di evasione ddt di vendita.      
+**Prikaz tablice izvršenja:** ako je aktivno, ova opcija omogućuje prikaz u obliku tablice u formi za izvršenje otpremnice prodaje.      
 
-**Visualizzazione tree evasione:** se attivo, il flag abilita la modalità tree nella form di evasione ddt di vendita.
+**Prikaz stabla izvršenja:** ako je aktivno, ova opcija omogućuje prikaz u obliku stabla u formi za izvršenje otpremnice prodaje.
 
-**Proposta lotti**: se non ci sono lotti nella riga ordine, all’evasione si cercano lotti disponibili nella giacenza, se il tipo prelievo *non* è *Manuale*.
+**Predložite Lotove**: ako u retku narudžbe nema lotova, prilikom izvršenja traže se dostupni lotovi iz zaliha, pod uvjetom da vrsta preuzimanja *nije Ručno*.
 
-### Scarico
+### Istovar
 
-**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data della fattura, e non sarà necessario specificare la data registrazione nella form di scarico. Se non attivo, sarà necessario specificare la data nella form di scarico della fattura;
+**Kreiraj zapis s datumom dokumenta**: ako je aktivno, registracija skladišta vršit će se s istim datumom kao i faktura, i neće biti potrebno specificirati datum registracije u obrascu za otpremu. Ako nije aktivno, bit će potrebno specificirati datum u obrascu za otpremu fakture;
 
-**Priorità magazzino e causale di scarico alle righe articoli dei DDT**: se attivo il magazzino e la causale di scarico vengono letti dalle righe della fattura mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (Magazzino e Causale di magazzino);
+**Prioritet skladišta i uzroka otpreme na stavkama otpremnice**: Ako je aktivno, skladište i razlog izdavanja robe (knjiženja) preuzimaju se iz redaka fakture.
+Ako nije aktivno, koriste se skladište i razlog izdavanja uneseni u sljedeća polja (Skladište i Razlog izdavanja robe);
 
-**Carico/Scarico Automatico**: se attivo, lo scarico del DDT verrà effettuato in automatico all'attivazione del flag Stampata. Se non attivo lo scarico dovrà essere fatto con l'apposito pulsante presente nella ribbon bar della form di inserimento fattura (vedi [Inserimento fatture di vendita](/docs/sales/sales-invoices/invoicing/sales-invoice)) oppure con l'apposita procedura;
+**Automatski utovar/istovar**: ako je aktivirano, iskrcaj otpremnice će se automatski izvršiti prilikom aktivacije zastavice Ispisano. Ako nije aktivirano, iskrcaj se mora izvršiti pomoću odgovarajuće tipke koja se nalazi na traci izbornika u formi za unos računa (vidi [Unos prodajnih računa](/docs/sales/sales-invoices/invoicing/sales-invoice)) ili putem odgovarajuće procedure;  
 
-**Avviso articoli fittizi**: se attivo, durante lo scarico della fattura il sistema andrà a controllare se sono presenti degli articoli fittizi e nel caso in cui ve ne siano comparirà un messaggio che permetterà all'utente di scegliere se completare lo stesso la procedura oppure no; in caso di risposta affermativa tutta la fattura verrà scaricata (ad eccezione degli articoli fittizi ), mentre in caso di risposta negativa la fattura NON verrà scaricata.
+**Upozorenje fiktivne stavke**: ako je aktivno, tijekom otpreme računa sustav će provjeriti postoje li lažni artikli, a u slučaju da ih ima, pojavit će se poruka koja će korisniku omogućiti da odabere želi li dovršiti postupak ili ne; u slučaju afirmativnog odgovora, cijeli račun bit će otpremljen, dok u slučaju negativnog odgovora račun NEĆE biti otpremljen.
 
-### Analitica
+### Analitika
 
-Questo TAB specifica con che priorità recuperare il Centro di costo(CDC) o Centro di profitto(CDP) nella riga documento.      
-È possibile modificare le priorità utilizzando i tasti **Sposta su**![](/img/neutral/common/move-up.png) e **Sposta Giù**![](/img/neutral/common/delete-cc.png).      
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato](/docs/configurations/tables/sales/sales-turnover);         
-Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in anagrafica Cliente. Se non presente verrà cercato in anagrafica articolo e successivamente a livello di magazzino.      
-Il flag **Valuta la priorità di ogni dimensione** fa in modo che nei documenti i CDC/CDP vengano raggruppati per dimensione, nel tab Analitica. 
+Ova KARTICA specificira kojim prioritetom se dohvaća Centar troškova (CDC) ili Centar profita (CDP) u retku dokumenta.        
+Prioriteti se mogu mijenjati pomoću tipki **Premjesti gore**![](/img/neutral/common/move-up.png) i **Premjesti dole**![](/img/neutral/common/delete-cc.png).     
+*Zadane vrijednosti*: CDC ili CDP dohvaćaju se iz vrste fakturiranog, ako je prisutna.      
+Za dodatne informacije pogledajte tablicu [Vrsta fakturiranog](/docs/configurations/tables/sales/sales-turnover).      
+Ako nije prisutno u *Vrsti fakturiranog* sustav će ga tražiti u *Podacima kupca*. Ako nije ni tamo, tražit će u kartoteci artikla, a potom na razini skladišta.         
+Flag **Procijeni prioritet za svaku dimenziju** omogućava da se u dokumentima CDC/CDP grupiraju po dimenziji, u kartici Analitika.
