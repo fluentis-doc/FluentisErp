@@ -1,36 +1,36 @@
 ---
-title: Codice tributo
+title: Šifra poreza
 sidebar_position: 10
 ---
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako se planira ručna konfiguracija, potrebno je konzultirati kontrolni popis na poveznici.
 :::
 
-La tabella ‘Codice tributo', preimpostata, memorizza tutti i codici tributo previsti per la dichiarazione F24 gestita all'interno del modulo percipienti: si tratta di codici ufficiali ministeriali.
+Tablica ‘Šifra poreza’, unaprijed postavljena, pohranjuje sve šifre poreza predviđene za F24 obrazac koji se upravlja unutar modula Primatelji; radi se o službenim ministarskim šiframa.
 
-I campi 'Utilizzo', 'Tipo', 'Rata','Anno', 'Ufficio' e 'Atto' sono rilevanti per la gestione del modello F24.
+Polja ‘Upotreba’, ‘Vrsta’, ‘Rata’, ‘Godina’, ‘Ured’ i ‘Akt’ relevantna su za upravljanje F24 obrascem.
 
-**Codice**: codice tributo ministeriale;
+**Šifra**: šifra ministarskog poreza;
 
-**Descrizione**: descrizione codice tributo;
+**Opis**: opis šifre poreza;
 
-**Utilizzo**: codice utilizzo;
+**Upotreba**: šifra upotrebe;
 
-**Tipo**: tipo tributo (es. Sez. Erario, sez. Enti locali ecc...);
+**Vrsta**: vrsta poreza (npr. Sekcija Država, sekcija Lokalna samouprava itd.);
 
-**Rata**: rata tributo (cfr. Istruzioni modello F24);
+**Rata**: rata poreza (vidi upute F24 obrasca);
 
-**Anno**: anno tributo;
+**Godina**: godina poreza;
 
-**Uff**.: ufficio;
+**Ured**: ured;
 
-**Atto**: atto;
+**Akt**: akt;
 
-**Data fine validità**: permette di bloccare l'utilizzo del codice in questione
+**Datum završetka valjanosti**: omogućuje blokiranje korištenja odgovarajuće šifre;
 
-**IVA**: qualifica i codici tributo da utilizzare nella gestione dei versamenti IVA
+**PDV**: označava šifre poreza koje se koriste u upravljanju uplatom PDV-a.
 
 
-La sezione CONTO permette di assegnare un sottoconto contabile al codice tributo che andrà a prevalere rispetto ai conti impostati nei parametri generali di contabilità nell'ambito della contabilizzazione del modello F24.
+Sekcija KONTO omogućuje dodjelu podračuna za šifru poreza, koji će imati prednost u odnosu na račune postavljene u općim računovodstvenim parametrima unutar knjiženja F24 obrasca.
