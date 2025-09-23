@@ -1,5 +1,5 @@
 ---
-title: Parametri ordini clienti
+title: Parametri narudžbi kupaca
 sidebar_position: 2
 ---
 
