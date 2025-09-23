@@ -1,18 +1,18 @@
 ---
-title: Tipo Attività IVA
+title: Vrsta aktivnosti PDV-a
 sidebar_position: 22
 ---
 
-In questa tabella è possibile definire le tipologie di attività IVA svolte dalla società (qualora ricorra il caso) e ad ogni tipo attività associare eventualmente un pro-rata di detraibilità IVA.
+U ovoj tablici moguće je definirati vrste PDV aktivnosti koje provodi poduzeće (ako je primjenjivo) i svakom tipu aktivnosti eventualno pridružiti pro-rata za odbitak PDV-a.
 
-Le tipologie configurate a loro volta saranno associate ai vari [**registri iva**](/docs/configurations/tables/finance/vat-books).
+Konfigurirane vrste aktivnosti zatim se povezuju s različitim [**PDV knjigama**](/docs/configurations/tables/finance/vat-books).
 
-E' possibile contrassegnare l'attività principale che raggrupperà nelle stampe delle liquidazioni iva periodiche il credito o debito iva.
+Moguće je označiti glavnu aktivnost koja će u ispisima periodičnih PDV obračuna grupirati PDV dugovanja ili potraživanja.
 
-Nella stampa della liquidazione automaticamente verranno visualizzati i dettagli riferiti ad ogni singola attività ed il riassunto finale.
+Prilikom ispisa obračuna automatski će se prikazati detalji za svaku pojedinu aktivnost i konačni sažetak.
 
-**Codice / Descrizione:** liberamente configurabili per nominare il tipo di attività inserito (es. Produzione... Immobiliare...)
+**Šifra / Opis:** slobodno konfigurabilni za imenovanje unesenog tipa aktivnosti (npr. Proizvodnja, Nekretnine…).
 
-**Pro-rata:** campo per inserire la percentuale di detraibilità (100% detrazione piena o percentuali inferiori fino a 0 se detrazione limitata) il campo ha la stessa logica del pro-rata generale definibile nei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters) e rappresenta una possibilità di dettaglio potendolo settare su ogni singolo tipo attività.
+**Pro-rata:** polje za unos postotka odbitka (100% puni odbitak ili niži postotci do 0% ako je odbitak ograničen). Polje ima istu logiku kao opći pro-rata definiran u [**računovodstvenim parametrima**](/docs/configurations/parameters/finance/accounting-parameters) i omogućuje detaljnije podešavanje za svaki pojedini tip aktivnosti.
 
-**Attività principale:** flag da apporre sul tipo di attività svolta in via principale (in termini di fatturato, si vedano le disposizioni fiscali).
+**Glavna aktivnost:** oznaka koja se postavlja na tip aktivnosti koja se provodi primarno (u smislu prihoda, prema poreznim propisima).
