@@ -1,64 +1,91 @@
 ---
-title: Parametri DDT
+title: Parametri otpremnice
 sidebar_position: 3
 ---
 
-I parametri dei DDT permettono l'impostazione di base per gestire correttamente e secondo le specifiche richieste da ogni singola società. La finestra si compone di quattro tab: Generale, evasione, scarico e analitica.
+:::tip[FAst Start]
+Ova tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
-### Generale
+Ako se želi konfigurirati ručno, pogledajte kontrolni popis (check‑listu) na navedenu stranicu.   
+:::
 
-**Proponi provvigioni per tutti gli articoli:** campo diventato obsoleto, in quanto la provvigione viene sempre gestita indipendentemente da questo flag;
+Parametri otpremnice omogućuju osnovno podešavanje za ispravno upravljanje dokumentima, u skladu sa specifičnim zahtjevima svake pojedine tvrtke. Prozor se sastoji od četiri kartice: Općenito, Isporuka, Otpis i Analitika.  
 
-**Gestione doppia unità misura**: se attivo, il sistema andrà a gestire l'unità di misura alternativa all'interno del DDT cliente;
+### Općenito
 
-**Proposta automatica UM alternativa:** questo flag diventa editabile solo se è stato attivato il flag di gestione della doppia unità di misura e consente di riportare nel tab articoli del DDT l'unità di misura alternativa impostata nell'anagrafica articolo, nel apposita colonna 'UM alternativa'; altrimenti se non se attivo, l'unità di misura non verrebbe riproposta nel DDT;
+**Upravljanje dvostrukom mjernom jedinicom**: ako je aktivno, u redovima otpremnice bit će prikazane dvije kolone: Alternativna JM i Alternativna količina. Na taj način će se moći upravljati dvostrukom jedinicom mjere, pri čemu se kontrole za isporuku uvijek rade prema glavnoj jedinici mjere.   
 
-**Controllo sequenza data e numero documento**: questo flag, se attivo, fa si che il sistema controlli la sequenzialità data/numero dei DDT. Qualora non ci fosse sequenzialità il sistema ritornerà un errore impedendo all'utente di inserire il DDT; se questo flag è attivo, non sarà possibile attivare i due flag successivi 'Recupera solo nella giornata' e ' Recupero automatico';
+**Automatski prijedlog alternativne JM**: ovaj flag postaje uređiv samo ako je aktivirana opcija za upravljanje dvostrukom jedinicom mjere, i omogućuje da se u kartici artikala DDT‑a automatski predloži alternativna jedinica mjere navedena u kartici artikla, u posebnoj koloni Alternativna JM. Ako nije aktivna, alternativna JM se neće predlagati.      
 
-**Recupera solo nella giornata**: se attivo, permette di recuperare i numeri solo per la giornata in corso.
+**Provjera dostupnosti**: ovaj flag i druge povezane s kontrolom, prikazom i obavezom po područjima, u sadašnjoj verziji nisu podržane.
 
-**Controlla disponibilità**: se attivo, fa si che il sistema vada a controllare la disponibilità dell'articolo.
+**Zadane jedinice mjere za volumen/težinu**: ve jedinice mjere se smatraju zadanim UM koje se predlažu u kartici [Prijevoz](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) otpremnice, kao jedinice mjere za volumen i težinu; podatak je moguće mijenjati unutar dokumenata.  
 
-**Disponibilità obbligatoria**: se attivo, la disponibilità dell'articolo nel DDT sarà obbligatoria, cioè la quantità non potrà essere maggiore della disponibilità. Se non attivo il sistema non farà questo controllo;
+**Traži cijenu stavke u svim zadanim cjenicima**: Kada se traže cijene i popusti za artikal unutar DDT-a, sustav slijedi pravila temeljena na postavkama konfiguriranim u kartonu kupca, pod sekcijom *Cjenici*. Ako je aktivna opcija 'zadano (default)' za određenu vrstu cjenika, pretraživanje cijena i popusta fokusirat će se samo na tu specifičnu vrstu cjenika; ako flag "zadano (default)" nije aktivan, sustav će proširiti pretraživanje na sve vrste cjenika koji su prisutni, slijedeći redoslijed prioriteta. U praksi, s aktivnim flagom 'zadano (default)', sustav će prvo tražiti važeći cjenik za unaprijed definiranu vrstu; ako ne pronađe rezultate, preći će na provjeru drugih vrsta cjenika u redoslijedu unesenih prioriteta. Međutim, ako u kartonu kupca nije prisutna nijedna vrsta cjenika postavljena kao 'zadano (default)' i postoje samo prioriteti, ovaj parametar neće utjecati na pretraživanje, čak i ako je aktivan.     
 
-**Recupero automatico**: se attivo, segnala il fatto che nel recupero verrà proposto in automatico il primo numero disponibile.  Questo flag è attivabile solo se il flag precedente è attivato. Se disattivato il sistema permetterà il recupero del numero, ma dovrà essere inserito manualmente dall'utente,
+**Predloži proviziju za promotivne artikle**: kada je ova opcija aktivirana, agentima će biti predložene provizije i za redove artikala koji su promotivni (besplatni), isto kao i za redove s kodiranim artiklima.    
 
-**Escludi ordine cliente**: se attivo, l'impegno degli ordini clienti non verrà considerato nel calcolo della disponibilità;
+**Dozvoli rabat za stavke promotivnih poklona**: kada je ova opcija aktivirana, na iznos retka će se primjenjivati popusti čak i za promotivne (besplatne) artikle.  
 
-**Visualizza Disponibilità**: se attivo, verrà visualizzata la disponibilità a livello di riga articolo nel momento in cui si andrà ad inseire la quantità;
+**Maksimalan broj redaka**: označava maksimalan broj artikala po fakturi; opcija je aktivna samo u rumunjskoj verziji.  
 
-**Considera disponibilità provenienti da**: questi flag permettono di decidere quali tipologie di movimenti debbano essere considerati per il calcolo della disponibilità dell'articolo nel DDT cliente, scegliendo tra: Conto lavoro, Acquisti, Vendite, Produzione Pianificata, Produzione rilasciata e Magazzino.
+**Provjeri zalihe artikala**: Ako je postavljen, ovaj flag će prikazati obavijesni pop-up u slučaju da se u DDT unesu artikli koji imaju postavljen flag "Na isteku (in Esaurimento)" u kartonu, kao i datum kada artikal ide u istek; ova provjera sprječava prodaju artikala koji se više neće proizvoditi ili dopunjavati.
 
-### Evasione
+**[Omogući widget pojednostavljenih popusta](/docs/sales/sales-flow/discount-widget)**: aktiviranjem ove opcije u odjeljku Artikli prikazat će se dva nova stupca: *Popusti na artikl* i *Završni popusti na artikl*. Stupac *Popusti na artikl* moguće uređivati i prikazuje popuste koji se automatski primjenjuju na temelju postavki vezanih uz kupca, artikl, cjenik ili kategoriju popusta. Korisnik ima mogućnost unosa, izmjene ili brisanja popusta izravno u ovom stupcu.
 
-**Pagamento**: specifica il valore usato per il pagamento dell'ordine cliente nel caso dell'evasione multipla commessa vendita: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**Koristi stavku kupca**: ako je ovaj flag postavljen, u mreži artikala dokumenta bit će dodani stupci za Šifru i Opis kupca unesen u kartici Artikla, pod karticom Kupac.      
 
-**Destinatario**: specifica il valore usato per il destinatario dell'ordine cliente nel caso dell'evasione multipla commessa vendita: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**Koristi barkod**: ako je postavljen, ovaj flag će u mreži artikala dokumenta prikazati stupac za barkod artikla. 
 
-**Controllo coerenza tra pagamenti DDT e ordine**: se attivo, il sistema non permetterà l'evasione da ordini con pagamenti diversi.
+**Obvezna šifra korisnika**: ovaj flag čini obaveznim popunjavanje polja *Operater* u zaglavlju.    
 
-**Ricalcola CDC/CDP:** nel caso in cui si sia scelto di generare il DDT partendo dall'ordine cliente con l'apposta procedura, attivando questo flag, il sistema andrà a ricalcolare i centri di costo e di profitto se il DDT è stato generato da ordine, non considerando quelli impostati nell'ordine di vendita. Se non attivo il sistema non ricalcolerà questi dati ma terrà quelli inseriti nell'ordine cliente;
+**Blokiraj unos dokumenta na praznike prema tvorničkom kalendaru**: ako je aktivno, sustav ne dopušta unos ponude na prazničnim datumima (prvo se provjerava Kalendar tvornice tvrtke, zatim Kalendar proizvodnih kapaciteta); ako nije aktivno, sustav ne provodi nikakvu provjeru i dopušta unos dokumenta.  
 
-**Proposta lotti**: 
+**Preračunaj prijevoz**: ovaj flag osigurava da se u kartici [Prenos](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) dokumenta prikažu ukupne vrijednosti težine, volumena i paketa redaka dokumenta; bez ovog flag-a, ta polja neće biti popunjena.         
 
-### Scarico
+**Vanjske reference narudžbe**: ovaj flag omogućuje da se polja *Naša* i *Vaša referenca* prenesu s redaka narudžbe na retke dokumenta.  
 
-**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data del DDT, e non sarà necessario specificare la data registrazione nella form di scarico. Se non attivo, sarà necessario specificare la data nella form di scarico DDT
+**Očuvaj cijene iz narudžbe za cjenovne razrede**: ovaj flag osigurava da se prilikom djelomične realizacije narudžbe u dokumentu zadrži isti cjenovni razred koji je bio u originalnoj narudžbi, bez prepreračunavanja. Na primjer, ako je u narudžbi određena količina od 100 jedinica koja aktivira određeni cjenovni razred, a u dokumentu se realizira samo 20 jedinica, s aktiviranim flag-om dokument će zadržati cijenu povezanu s originalnim cjenovnim razredom, bez promjene na temelju stvarno realizirane količine.
 
-**Priorità magazzino e causale di scarico alle righe articoli dei DDT**: se attivo il magazzino e la causale di scarico vengono letti dalle righe del DDT mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (Magazzino e Causale di magazzino);
+### Izuzimanje
 
-**Carico/Scarico Automatico**: se attivo, lo scarico del DDT verrà effettuato in automatico all'attivazione del flag Stampata. Se non attivo lo scarico dovrà essere fatto con l'apposito pulsante (vedi [Inserimento DDT](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) oppure con l'apposita procedura.
+U ovoj kartici su prisutna sljedeća polja:    
 
-**Avviso articoli fittizi**: se attivo, durante lo scarico del DDT il sistema andrà a controllare se sono presenti degli articoli fittizi e nel caso in cui ve ne siano comparirà un messaggio che permetterà all'utente di scegliere se completare lo stesso la procedura oppure no; in caso di risposta affermativa tutto il DDT verrà scaricato (ad eccezione degli articoli fittizi ), mentre in caso di risposta negativa il DDT NON verrà scaricato.
+**Plaćanje**: specificira vrijednost koja se koristi za plaćanje dokumenta kod višestruke realizacije narudžbi u dokumentu: *Prva narudžba*, *Korisnički podaci* ili *Ručno odabiranje*.
 
-### Analitica
+**Primatelj**: specificira vrijednost koja se koristi za primatelja dokumenta kod višestruke realizacije narudžbi u dokumentu: *Prva narudžba*, *Korisnički podaci* ili *Ručno odabiranje*.
 
-Questo TAB specifica con che priorità recuperare il Centro di costo(CDC) o Centro di profitto(CDP) nella riga del DDT.
+**Kontroliraj podudaranje između plaćanja otpremnica i narudžbe**: ako je aktivno, sustav neće omogućiti ispunjenje narudžbi s različitim plaćanjima.
 
-È possibile modificare le priorità utilizzando i tasti **Sposta su**![](/img/neutral/common/move-up.png) e **Sposta Giù**![](/img/neutral/common/delete-cc.png).
+**Preračunaj CDC/CDP**: ako je odabrano generiranje otpremnice iz narudžbe kupca posebnom procedurom, aktiviranjem ovog flag-a sustav će preračunati troškovne i profitne centre ukoliko je otpremnica generirana iz narudžbe, ne uzimajući u obzir one postavljene u prodajnoj narudžbi. Ako flag nije aktivan, sustav neće preračunavati ove podatke, već će zadržati one unesene u narudžbi kupca.
 
-*Valori di default*: il CDC o CDP viene recuperato dal tipo fatturato qualora presente. Per approfondimenti fare riferimento a tabella [Tipo Fatturato](/docs/configurations/tables/sales/sales-turnover).
+**Prikaz tablice izvršenja**: ako je aktiviran, ovaj flag omogućuje prikaz u obliku tablice u formi za izvršenje prodajnih narudžbi.     
 
-Qualora non fosse presente nel tipo fatturato il sistema lo cercherà in anagrafica Cliente. Se non presente verrà cercato in anagrafica articolo e successivamente a livello di magazzino.
+**Prikaz stabla izvršenja**: ako je aktiviran, ovaj flag omogućuje prikaz u obliku stabla u formi za izvršenje prodajnih narudžbi.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fEpcxS9pRkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**Predložite Lotove**: ovaj flag osigurava da u trenutku ispunjenja, u slučaju da se unese količina koja se razlikuje od one prisutne u izvornom dokumentu, količina serija bude jednaka količini retka u kreiranom dokumentu; to je kako bi se izbjeglo da kreirani dokument ima količinu retka koja se razlikuje od one serija.
+
+### Istovar
+
+**Kreiraj zapis s datumom dokumenta**: ako je aktivirano, knjiženje u skladištu vrši se s istim datumom kao i dokument o isporuci, te neće biti potrebno unositi datum knjiženja u formi za otpremu. Ako nije aktivirano, bit će potrebno unijeti datum u formi za otpremu.
+
+**Prioritet skladišta i razlog otpreme na stavkama otpremnice**: ako je aktivirano, skladište i razlog otpreme se uzimaju iz redaka otpremnice, dok ako nije aktivirano, koristi se skladište i razlog otpreme uneseni u poljima (**Skladište** e **Razlog skladišta**);
+
+**Automatsko knjiženje/otpremanje**: ako je aktivirano, otprema otpremnice će se automatski izvršiti pri aktivaciji zastavice "Ispisano". Ako nije aktivirano, otprema se mora izvršiti ručno pritiskom na odgovarajuće dugme.  
+
+**Upozorenje fiktivne stavke**: ako je aktivirano, tijekom otpreme otpremnice sustav će provjeriti postoje li fiktivni artikli i, ako ih ima, prikazat će poruku koja će korisniku omogućiti da odluči želi li ipak dovršiti postupak ili ne; u slučaju pozitivnog odgovora, cijela otpremnica će biti otpremljena (osim fiktivnih artikala), dok u slučaju negativnog odgovora otpremnica NEĆE biti otpremljena.
+
+:::tip Zapamti
+Ako dokument sadrži **fiktivne artikle**, postupak će uzeti u obzir *Tip opskrbe* definiran u MRP parametrima artikla:  
+- Artikli tipa *Nabava* neće biti uključeni u skladišno knjiženje.    
+- Artikli tipa *Proizvodnja* i *Podizvođač* će se knjižiti u skladištu na prvom nivou strukture materijala.  
+:::
+
+### Analitika
+
+Ova KARTICA specificira kojim prioritetom se dohvaća Centar troškova (CDC) ili Centar profita (CDP) u retku otpremnice.        
+Prioriteti se mogu mijenjati pomoću tipki **Premjesti gore**![](/img/neutral/common/move-up.png) i **Premjesti dole**![](/img/neutral/common/delete-cc.png).     
+*Zadane vrijednosti*: CDC ili CDP dohvaćaju se iz vrste fakturiranog, ako je prisutna.      
+Za dodatne informacije pogledajte tablicu [Vrsta fakturiranog](/docs/configurations/tables/sales/sales-turnover).      
+Ako nije prisutno u *Vrsti fakturiranog* sustav će ga tražiti u *Podacima kupca*. Ako nije ni tamo, tražit će u kartoteci artikla, a potom na razini skladišta.         
+Flag **Procijeni prioritet za svaku dimenziju** omogućava da se u dokumentima CDC/CDP grupiraju po dimenziji, u kartici Analitika.
