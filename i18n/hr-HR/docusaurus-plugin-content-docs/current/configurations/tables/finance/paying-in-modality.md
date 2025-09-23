@@ -1,14 +1,14 @@
 ---
-title: Modalità di versamento
+title: Modalitet uplate
 sidebar_position: 13
 ---
 
-La tabella consente di definire e gestire le modalità di versamento dei tributi nel modulo Percipienti.
+Tablica omogućuje definiranje i upravljanje načinima uplate poreza u modulu Primatelji.
 
-#### Campi specifici
+#### Specifična polja
 
-**Codice**: codice della modalità di versamento.
+**Šifra**: šifra načina uplate.
 
-**Descrizione**: descrizione della modalità di versamento.
+**Opis**: opis načina uplate.
 
-Esempio: un tipico record da inserire in questa tabella per poi richiamarlo al fine di aggiornare i dati del versamento delle ritenute d'acconto percipienti è ***F24*** (modello di versamento tributi).
+Primjer: tipičan zapis koji se unosi u ovu tablicu, a zatim koristi za ažuriranje podataka o uplati poreznih predujmova primatelja, jest ***F24*** (obrazac za uplatu poreza).
