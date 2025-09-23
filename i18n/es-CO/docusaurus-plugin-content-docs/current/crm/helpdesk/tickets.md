@@ -16,7 +16,7 @@ La cabecera contiene los siguientes campos.
 **Fecha de creación/Fecha de caducidad (Data creazione/Scadenza)**: la fecha de creación se inserta automáticamente con la fecha de hoy; la fecha de caducidad es un campo que debe ser ingresado manualmente.  
 **Fecha de cierre/Cerrado (Data chiusura/Chiuso)**: al marcar el indicador Cerrado, se registra automáticamente la Fecha de cierre.  
 **cliente**: este campo se completa automáticamente si se ha asignado a la Operador un Cliente por defecto en los [Parámetros para operador del CRM](/docs/configurations/parameters/crm/ticket-parameters); de lo contrario, se puede ingresar manualmente.  
-**contatto**: es posible ingresar alternativamente un [Contacto](/docs/crm/home-crm/contacts/new-contact/header).  
+**contatto**: es posible ingresar alternativamente un [Contacto](/docs/crm/home-crm/contacts/new-contact).  
 **progetto**: se puede indicar un proyecto al que hacer referencia;  
 **Operaciones de ticket (Operazioni ticket)**: en este campo se visualizan las posibles [Operaciones](/docs/configurations/tables/crm/tickets/operations) para este Tipo de ticket;  
 **referente**: en este campo se registra la *Persona de referencia* del cliente ingresado, tomada del registro; el campo es modificable;  

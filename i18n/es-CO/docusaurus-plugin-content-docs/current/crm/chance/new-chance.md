@@ -28,7 +28,7 @@ En este formulario se ingresarán toda la información general relacionada con l
 
 **data di chiusura**: este campo permite indicar una fecha de cierre de la oportunidad y puede funcionar como un filtro en la máscara de búsqueda de oportunidades;
 
-**contatto**: este campo se utiliza para indicar el Contacto a nombre del cual está la oportunidad. Hace referencia al registro de [contactos](/docs/crm/home-crm/contacts/new-contact/header) del CRM;
+**contatto**: este campo se utiliza para indicar el Contacto a nombre del cual está la oportunidad. Hace referencia al registro de [contactos](/docs/crm/home-crm/contacts/new-contact) del CRM;
 
 **agente principale**: este dato se obtiene automáticamente según lo indicado en el registro del contacto del CRM titular de la oportunidad;  
 

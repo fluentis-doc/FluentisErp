@@ -15,7 +15,7 @@ The header contains the following fields.
 **Creation Date/Deadline**: the creation date is automatically inserted with today’s date; the deadline date is a field to be manually entered.     
 **Closing Date/Closed**: by checking the Closed flag, the Closing Date is automatically recorded.     
 **Client**: this field is automatically filled if the Operator has been assigned a default Client in the [Parameters for CRM User](/docs/configurations/parameters/crm/ticket-parameters); otherwise, it can be manually entered.     
-**Contact**: it is possible to alternatively enter a [Contact](/docs/crm/home-crm/contacts/new-contact/header).        
+**Contact**: it is possible to alternatively enter a [Contact](/docs/crm/home-crm/contacts/new-contact).        
 **Project**: it is possible to indicate a project to refer to;      
 **Ticket Operations**: in this field, the possible [Operations](/docs/configurations/tables/crm/tickets/operations) for this Ticket type are displayed;      
 **Referent**: in this field, the *Contact Person* of the entered client is displayed, taken from the registry; the field is modifiable;      

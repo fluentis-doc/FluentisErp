@@ -28,7 +28,7 @@ In questa form verranno inserite tutte le informazioni generali legate all’**O
 
 **Data di Chiusura**: tale campo permette di indicare una data di chiusura dell’opportunità e può fungere da filtro nella maschera di ricerca delle opportunità;
 
-**Contatto**: questo campo serve per indicare il Contatto a cui è intestata l’opportunità. Fa riferimento all’anagrafica [contatti](/docs/crm/home-crm/contacts/new-contact/header) del CRM;
+**Contatto**: questo campo serve per indicare il Contatto a cui è intestata l’opportunità. Fa riferimento all’anagrafica [contatti](/docs/crm/home-crm/contacts/new-contact) del CRM;
 
 **Agente Principale**: questo dato viene reperito automaticamente in base a quanto indicato sull’anagrafica del contatto CRM intestatario dell’opportunità;    
 

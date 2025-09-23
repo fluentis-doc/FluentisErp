@@ -13,7 +13,7 @@ Formul permite vizualizarea și modificarea tichetelor deja inserate iar cu clic
 **Data creare/scadență**: este introdusă automat data curentă;    
 **Data închidere/închis**: bifând opțiunea *închis*, se completează automat *Dată închiderii*.  
 **Client**: este completat automat dacă operatorului i-a fost atribuit un client implicit în [Parametri pentru operator CRM](/docs/configurations/parameters/crm/ticket-parameters).  
-**Contact**: permite inserarea unui [Contact](/docs/crm/home-crm/contacts/new-contact/header) alternativ;    
+**Contact**: permite inserarea unui [Contact](/docs/crm/home-crm/contacts/new-contact) alternativ;    
 **Proiect**: permite inserarea unui proiect de referință.  
 **Operațiuni ticket**: afișează posibilele [Operațiuni](/docs/configurations/tables/crm/tickets/operations) pentru acest tip de ticket.  
 **Contact**: reprezintă *Persoana de contact* a clientului introdus, preluată din registru;    

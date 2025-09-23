@@ -16,7 +16,7 @@ La testata contiene i seguenti campi.
 **Data creazione/Scadenza**: la data di creazione viene inserita in automatico con la data odierna; la data scadenza è un campo da inserire manualmente.     
 **Data chiusura/Chiuso**: inserendo il flag Chiuso, viene riportata in automatico la Data chiusura.     
 **Cliente**: questo campo viene compilato automaticamente se all'Operatore è stato assegnato un Cliente di default nei [Parametri per operatore del CRM](/docs/configurations/parameters/crm/ticket-parameters); altrimenti è possibile inserirlo manualmente.     
-**Contatto**: è possibile inserire in alternativa un [Contatto](/docs/crm/home-crm/contacts/new-contact/header).        
+**Contatto**: è possibile inserire in alternativa un [Contatto](/docs/crm/home-crm/contacts/new-contact).        
 **Progetto**: è possibile indicare un progetto a cui fare riferimento;      
 **Operazioni ticket**: in questo campo vengono visualizzate le possibili [Operazioni](/docs/configurations/tables/crm/tickets/operations) per questo Tipo ticket;      
 **Referente**: in questo campo viene riportata la *Persona di riferimento* del cliente inserito, presa dall'anagrafica; il campo è comunque modificabile;      

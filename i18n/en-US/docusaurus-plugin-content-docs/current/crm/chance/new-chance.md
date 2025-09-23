@@ -28,7 +28,7 @@ In this form, all general information related to the **Opportunity** that you wa
 
 **Closed date**: this field allows you to indicate a closing date for the opportunity and can serve as a filter in the opportunity search mask;
 
-**Contact**: this field is used to specify the Contact to whom the opportunity is assigned. It refers to the [contacts register](/docs/crm/home-crm/contacts/new-contact/header) of the CRM;
+**Contact**: this field is used to specify the Contact to whom the opportunity is assigned. It refers to the [contacts register](/docs/crm/home-crm/contacts/new-contact) of the CRM;
 
 **Main Agent**: this data is retrieved automatically based on what is indicated in the CRM contact registry for the owner of the opportunity;    
 

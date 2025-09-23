@@ -23,7 +23,7 @@ Partea superioară a formului prezintă eventualele fluxuri de lucru asociate. S
 
 **Data închidere**: permite indicarea unei date de închidere a oportunității și poate funcționa ca filtru în fereastra de căutare a oportunităților;  
 
-**Contact**: reprezintă contactul la care este alocată oportunitatea. Face referire la [contactele](/docs/crm/home-crm/contacts/new-contact/header) din CRM;  
+**Contact**: reprezintă contactul la care este alocată oportunitatea. Face referire la [contactele](/docs/crm/home-crm/contacts/new-contact) din CRM;  
 
 **Agent principal**: este preluat automat din registrul contactului CRM, titular al oportunității;  
 

@@ -28,7 +28,7 @@ U ovom obrascu unose se sve opće informacije vezane uz **Priliku** koja se žel
 
 **Datum zatvaranja**: ovo polje omogućuje navođenje datuma zatvaranja prilike i može poslužiti kao filtar u prozoru pretrage prilika;
 
-**Kontakt**: ovo polje koristi se za označavanje kontakta na koji je prilika upućena. Odnosi se na [kontaktne podatke](/docs/crm/home-crm/contacts/new-contact/header) u CRM-u.
+**Kontakt**: ovo polje koristi se za označavanje kontakta na koji je prilika upućena. Odnosi se na [kontaktne podatke](/docs/crm/home-crm/contacts/new-contact) u CRM-u.
 
 **Glavni Agent**: ova se informacija automatski preuzima na temelju podataka navedenih u kontaktu CRM-a koji je vlasnik prilike;   
 
