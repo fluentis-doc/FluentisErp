@@ -1,12 +1,12 @@
 ---
-title: Tipi rivalutazione
+title: Tipovi revalorizacije
 sidebar_position: 29
 ---
 
-La definizione di  questa tabella consente di  codificare i riferimenti alle leggi di rivalutazione da utilizzare per gestire i dettagli delle rivalutazioni all'interno delle singole schede cespite. In particolare, la gestione dei dettagli viene abilitata solo per le categorie cespiti che presentano il flag **Rivalutazioni**.
+Definicija ove tablice omogućuje kodificiranje referenci na zakone o preraspodjeli (rivalutaciji) koji se koriste za upravljanje detaljima preraspodjela unutar pojedinačnih kartica osnovnog sredstva. Posebno, upravljanje detaljima omogućeno je samo za kategorije osnovnih sredstava koje imaju označeno polje **Preraspodjele**.
 
-### Campi specifici
+### Specifična polja
 
-**Codice**: codice identificativo del tipo di rivalutazione.
+**Šifra**: identifikacijska šifra vrste preraspodjele.
 
-**Descrizione**: descrizione del tipo di rivalutazione.
+**Opis**: opis vrste preraspodjele.
