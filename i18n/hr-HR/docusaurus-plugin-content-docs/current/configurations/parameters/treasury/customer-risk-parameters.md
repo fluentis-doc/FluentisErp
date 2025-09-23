@@ -33,9 +33,9 @@ U **parametrima** modula Rizičnost klijenata mogu se unaprijed postaviti zadane
 **Multiplikator kreditne procjene**: vrijednost koja se koristi u obrascu [**Korištenje kredita**](/docs/treasury/customer-risk/use-credit) za izračun iznosa polja *Procijenjeni kredit*.
 
 
-#### Base di calcolo per determinare il rischio cliente    
-> **Stanje glavne knjige**: s ovom postavkom izračun kredita temelji se na knjigovnom saldu klijenta. 
-> **Otvorene stavke**: s ovom postavkom izračun kredita temelji se na otvorenim stavkama klijenta.  
-> **Razmotrite dospjele vrijednosti iz privremenih zapisa**: ako je prethodno polje aktivno, izračun uzima u obzir i eventualne promjene nastale iz privremenih knjiženja.
-> **Blokiraj fizički izvještaj**: ako kredit klijenta predviđa blokadu dokumenta, ova opcija sprječava fizički ispis blokiranog dokumenta. Ako nije uključeno, dokument se može ispisati, ali polje ‘otisnuto’ neće biti dodijeljeno dokumentu.  
-> **Razmotri račune za ispis**: uzima u obzir, pri izračunu kredita, fakture koje su kreirane, ali još nisu otisnute. Ako nije uključeno, zadana logika računa fakture samo ako su otisnute (s aktivnim poljem ‘otisnuto’).  
+#### Osnovica izračuna za izračun rizika kupca   
+> **Stanje glavne knjige**: s ovom postavkom izračun kredita temelji se na knjigovnom saldu klijenta.   
+> **Otvorene stavke**: s ovom postavkom izračun kredita temelji se na otvorenim stavkama klijenta.    
+> **Razmotrite dospjele vrijednosti iz privremenih zapisa**: ako je prethodno polje aktivno, izračun uzima u obzir i eventualne promjene nastale iz privremenih knjiženja.  
+> **Blokiraj fizički izvještaj**: ako kredit klijenta predviđa blokadu dokumenta, ova opcija sprječava fizički ispis blokiranog dokumenta. Ako nije uključeno, dokument se može ispisati, ali polje ‘otisnuto’ neće biti dodijeljeno dokumentu.    
+> **Razmotri račune za ispis**: uzima u obzir, pri izračunu kredita, fakture koje su kreirane, ali još nisu otisnute. Ako nije uključeno, zadana logika računa fakture samo ako su otisnute (s aktivnim poljem ‘otisnuto’).    

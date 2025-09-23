@@ -1,5 +1,5 @@
 ---
-title: Parametri Neplaćeno
+title: Parametri neplaćeno
 sidebar_position: 2
 ---
 
@@ -25,17 +25,17 @@ Ovaj odjeljak treba postaviti ako se želi imati zadana postavka koja će se pre
 - **Rok plaćanja**: omogućuje postavljanje rješenja plaćanja za generiranje odgovarajućeg roka plaćanja.  
 
 #### Troškovi regresije
-- **Contabilizzazione a costo spese di rivalsa**: FluentisERP contabilizzerà il costo delle spese di rivalsa riaddebitate al cliente
-- **Tipo fatturazione**: consente di impostare il fatturato vendite ovvero la contropartita di ricavo da associare alla riga fattura.  
-- **Aliq. IVA**: consente di impostare l'aliquota iva. 
+- **Knjiženje troškova regresije**: FluentisERP će knjižiti trošak regresije koji se ponovno tereti kupcu.  
+- **Vrsta fakturiranja**: omogućuje postavljanje prihoda od prodaje ili kontrole prihoda koja će se povezati sa stavkom na fakturi.  
+- **PDV stopa**: omogućuje postavljanje stope PDV-a.   
 
-#### Recupero bolli 
-- **Tipo fatturazione**: consente di impostare il fatturato vendite ovvero la contropartita di ricavo da associare alla riga fattura.  
-- **Aliq. IVA**: consente di impostare l'aliquota iva. 
+#### Povrat ovjere 
+- **Tip izdavanja računa**: omogućuje postavljanje prihoda od prodaje, odnosno protivvrijednosti prihoda koja se treba povezati s linijom računa.  
+- **Postotak PDV-a**: omogućuje postavljanje stope PDV-a.
 
-#### Spese di rivalsa 
-- **Tipo fatturazione**: consente di impostare il fatturato vendite ovvero la contropartita di ricavo da associare alla riga fattura.
-- **Aliq. IVA**: consente di impostare l'aliquota iva. 
+#### Regres naknada
+- **Tip izdavanja računa**: omogućuje postavljanje prihoda od prodaje, odnosno konta prihoda koje treba povezati s linijom računa.
+- **Postotak PDV-a**: može se postaviti stopa PDV-a.
 
 #### Parametri
 - **Knjigovodstvena oznaka**: oznaka koja se predlaže u procedurama knjiženja neplaćenih stavki.  
@@ -53,8 +53,8 @@ Ako se ovo polje popuni, postavljeni konto će se koristiti bez obzira na postav
 - **Tip kamate**: neplaćenoj stavci može biti pridružen referentni kamatni stopa. U slučaju mjenica može se simulirati početni izračun kamata između predviđenog datuma dospijeća i datuma evidentiranja neplaćene stavke.  
 - **Kreiranje jedne stavke**: ova zastavica omogućuje otvaranje samo jedne stavke za neplaćenu riba kreiranu iz više različitih stavki. 
 
-:::danger Attenzione
-da non impostare se si gestiscono Agenti con maturazione su pagamento avvenuto o totale
+:::danger Pažnja 
+Ne postavljati ako se upravljanje Agentima vrši prema kriteriju izvršenog plaćanja ili ukupnog iznosa.. 
 :::
 
 - **Datum dospijeća jednak datumu dospijeća efekta**: aktiviranjem ovog parametra datum dospijeća ponovno otvorene stavke zbog neplaćene stavke postavlja se jednak datumu dospijeća efekta, umjesto datumu neplaćene stavke.
