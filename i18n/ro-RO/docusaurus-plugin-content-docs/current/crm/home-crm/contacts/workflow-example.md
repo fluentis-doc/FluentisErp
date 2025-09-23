@@ -1,15 +1,15 @@
 ---
-title: Exemplu workflow contacte CRM 
+title: Esempio Workflow Contatti CRM
 sidebar_position: 3
 ---
 
-Prezentăm un exemplu de workflow creat pentru a gestiona customer journey. Reamintim că, pentru a fi vizualizat, fluxul de lucru trebuie să fie inclus în fluxurileor de lucru active din Fluentis:
+Qui di seguito viene illustrato un esempio di Workflow creato per gestire il customer journey.
+Ricordiamo che per essere visualizzato, il Workflow deve essere inserito tra i Workflow Attivi di Fluentis:    
 
 ![](/img/it-it/crm/workflows.png)
 
-Propunem un workflow care să includă următoarele stadii: Start > Qualification > Prospect > Lead > Opportunity > Not qualified customer > Customer > Closed.  
-Stadiul Start este starea inițială, iar stadiul Closed este starea finală.  
-
-În imaginea de mai jos este selectat stadiul Start. În dreapta, pentru acest stadiu, sunt vizibile mai multe informații, cum ar fi Codul (care trebuie să fie unic pentru fiecare stadiu), eventualele drepturi de vizualizare, culorile posibile valabile doar pentru acel stadiu. Pentru acest stadiu au fost adăugate și două activități obligatorii (din cauza flag-ului *obligatoriu*: fără executarea acestei activități nu va fi posibilă trecerea la stadiul următor): introducerea registrului în CRM-ul companiei și primul apel. Va fi posibilă adăugarea altor activități în cadrul contactului CRM dacă sunt disponibile.
+Proponiamo un workflow che preveda i seguenti stadi: Start > Qualification > Prospect > Lead > Opportunity > Not qualified customer > Customer > Closed.     
+Lo stadio Start è lo Stato iniziale, lo stato Closed quello finale.    
+Nell'immagine che segue è selezionato lo stadio Start. Nella griglia destra, per questo stadio, sono visibili diversi dati, come il Codice (che deve essere unico per ogni stadio), eventuali diritti di visualizzazione, eventuali colorazioni valide solo per quello stadio. Per esso sono state anche inserite due attività obbligatorie (a causa del flag *Obbligatorio*: senza l'esecuzione di questa attività non sarà possibile passare allo stadio successivo): l'inserimento dell'anagrafica nel CRM aziendale e la prima call conoscitiva. Sarà possibile inserire altre attività all'interno del contatto CRM, se disponibili, il non inserimento in questa griglia non ne preclude l'utilizzo.   
 
 ![](/img/it-it/crm/contactworkflow.png)

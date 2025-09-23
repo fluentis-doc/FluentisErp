@@ -1,25 +1,22 @@
 ---
-title: Caută Contacte CRM 
+title: Ricerca Contatti CRM
 sidebar_position: 1
 ---
 
-Modulul **Contacte** permite operatorului să gestioneze registrul contactelor din CRM. Acesta se află în aria CRM și oferă posibilitatea de a gestiona activitățile unui contact, fluxul operațional de gestionare a contactului, referințele sale, agenții aferenți și ofertele prezentate acestuia.  
-Contactele CRM au propriul registru, diferit de cel al contactelor Fluentis, la care se pot conecta în momentul în care un contact CRM devine un client.
+Il modulo Contatti consente all’operatore di gestire l’anagrafica dei contatti del CRM. Si trova all’interno dell’area CRM e permette di gestire le attività sul contatto, il flusso operativo di gestione contatto, i suoi riferimenti, gli agenti a lui collegati e le offerte a lui presentate.
+I contatti del CRM hanno una propria anagrafica, differente da quella dei contatti Fluentis, ma alla quale si può collegare nel momento in cui un contatto del CRM diventi un cliente a tutti gli effetti.
 
-Procedura de **Căutare Contacte** este concepută pentru a permite utilizatorului să caute cu ușurință contactele CRM deja introduse, cu scopul de a le vizualiza, modifica și eventual șterge.  
-Cu ajutorul filtrelor se poate vizualiza: un singur contact, mai multe contacte aparținând aceleiași tipologii ([**Tip contact**](/docs/configurations/tables/crm/contacts/contact-type/)), mai multe contacte aparținând aceleiași categorii comerciale ([**Categorie comercială**](/docs/configurations/tables/crm/contacts/commercial-category/)). De asemenea, se poate filtra după **Agentul principal** indicat pe contact, căruia îi sunt asociate și filtrele referitoare la **Concurenți** și **Sector de utilizare**, sau după alte filtre.
+La procedura di **Ricerca Contatti** è stata disegnata per permettere all’utente di ricercare facilmente i contatti del CRM già inseriti, con lo scopo di visualizzarli, modificarli ed eventualmente cancellarli.
+Con l’aiuto dei filtri si può visualizzare: un solo contatto (**Nome**), più contatti appartenenti alla stessa tipologia ([**Tipo Contatto**](/docs/configurations/tables/crm/contacts/contact-type/)), più contatti appartenenti alla stessa categoria commerciale ([**Categoria commerciale**](/docs/configurations/tables/crm/contacts/commercial-category/)). È possibile inoltre filtrare per l’**Agente principale** indicato sul Contatto, al quale sono legati anche i filtri relativi ai **Concorrenti** ed al **Settore d’Uso**, oppure per altri filtri.
 
-#### Butoane specifice 
-> **Caută**: permite afișarea contactelor importate sau introduse manual, împreună cu caracteristicile lor.  
-> **Conversie la client (Conversione a cliente)**: cu acest buton este posibilă convertirea unui contact CRM într-un [Client (Cliente)](/docs/erp-home/registers/contacts/create-new-contact/general); datele introduse în contact vor fi copiate în noul registru; butonul este activ pentru [Tipuri contact (Tipi contatto)](/docs/configurations/tables/crm/contacts/contact-type) care nu au activ flag-ul *client (cliente)*.
+Cliccando **Ricerca** nella ribbon bar è possibile visualizzare i contatti importati o inseriti manualmente, con le relative caratteristiche.
+L’icona a sinistra rappresentante un omino è di colore grigio se il soggetto è ancora un contatto, ma diventerà verde quando sarà cliente.
+Nella parte alta è possibile filtrare la ricerca secondo le caratteristiche preferite. Cliccando sul **+** a sinistra della riga, è possibile visualizzare ulteriori informazioni del contatto. 
+Per aprire i dettagli di un contatto, basterà selezionarlo e fare doppio click con il mouse.       
 
-#### Câmpuri specifice tabelelor din formul de căutare   
-Fiecare rând conține:  
-- pictograma cu un bust, care dacă este de culoare gri înseamnă că subiectul este încă un contact, dar când este verde înseamnă că a devenit client.  
-- simbolul **+** care permite vizualizarea unor informații suplimentare despre contact.  
+A destra della griglia sono presenti due label:
+- **Map**: questa funzione permette di visualizzare i Contatti nella mappa. Per la visualizzazione dei Contatti CRM nella Mappa, viene ricercata prima la presenza di un Indirizzo, poi la presenza di Latitudine e Longitudine. Nel primo caso, cliccando sul pin nella Mappa, saranno visualizzati Nome della società ed Indirizzo, nel secondo caso solo il Nome della società.     
+- **Funnel per qualità contatto**: in questa sezione viene visualizzato graficamente l'andamento della gestione contatti basato sulla [Qualità](/docs/configurations/tables/crm/contacts/contact-quality).
 
-#### Funcționalități specifice tabelelor din formul de căutare
-
-În dreapta lor sunt prezente două etichete:  
-- **Map**: permite vizualizarea contactelor pe hartă. Pentru afișarea contactelor CRM pe hartă, sistemul caută mai întâi prezența unei adrese, apoi prezența latitudinii și longitudinii. În primul caz, făcând clic pe pin în hartă, vor fi afișate numele companiei și adresa, în al doilea caz doar numele companiei.
-- **Funnel pe calitate contact**: în această secțiune este afișată grafic evoluția gestionării contactelor  pe baza [Calității](/docs/configurations/tables/crm/contacts/contact-quality).
+#### Pulsante specifico  
+> **Conversione a cliente**: con questo pulsante è possibile convertire un contatto CRM in un [Cliente](/docs/erp-home/registers/contacts/create-new-contact/general); i dati inseriti nel contatto verranno copiati nella nuova anagrafica; il pulsante è attivo per i [Tipi contatto](/docs/configurations/tables/crm/contacts/contact-type) che non hanno attivo il flag *Cliente*.
