@@ -3,7 +3,7 @@ title: Parametri rizika kupca
 sidebar_position: 6
 ---
 
-**UVOD:**
+**UVOD**
 
 Modul rizičnosti klijenta očitava narudžbe klijenata, otpremnice, fakture, otvorene stavke, dospjele račune (ukratko, sve što zauzima kreditni limit i stvara izloženost).
 
@@ -14,7 +14,7 @@ Polje koje treba označiti za uključivanje određenog tipa dokumenta je **Kredi
 Postoji i polje **Isključi blokadu**: čak i ako dokument zauzima kreditni limit, bit će isključen iz blokade (dakle, neće biti blokiran, ali će ipak biti evidentiran i označen).
 
 
-**OPĆA LOGIKA:**
+### OPĆA LOGIKA
 
 Narudžbe se uzimaju u obzir ako su otisnute i potvrđene te ako je označeno odgovarajuće polje u tipu (neispunjene ili prisilno ispunjene).
 Prisilno ispunjene = preostali dio neće biti isporučen, a narudžba se smatra zatvorenom iako tehnički možda nije.
@@ -33,7 +33,7 @@ U **parametrima** modula Rizičnost klijenata mogu se unaprijed postaviti zadane
 **Multiplikator kreditne procjene**: vrijednost koja se koristi u obrascu [**Korištenje kredita**](/docs/treasury/customer-risk/use-credit) za izračun iznosa polja *Procijenjeni kredit*.
 
 
-*Osnova za izračun rizičnosti klijenta*:  
+#### Base di calcolo per determinare il rischio cliente    
 > **Stanje glavne knjige**: s ovom postavkom izračun kredita temelji se na knjigovnom saldu klijenta. 
 > **Otvorene stavke**: s ovom postavkom izračun kredita temelji se na otvorenim stavkama klijenta.  
 > **Razmotrite dospjele vrijednosti iz privremenih zapisa**: ako je prethodno polje aktivno, izračun uzima u obzir i eventualne promjene nastale iz privremenih knjiženja.
