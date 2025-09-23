@@ -31,7 +31,7 @@ I parametri delle fatture di vendita permettono l'impostazione di base per gesti
 
 **Prezzi negativi delle note di credito**: se attivo, il sistema notificherà un avviso qualora ci fossero dei prezzi positivi all'interno di note di accredito. Se non attivo, il sistema non farà nessun controllo e non restituirà nessun avviso.
 
-**Senza spese incacco in note di accredito**: se attivo, non si mettono le spese incasso nelle note di credito.
+**Senza spese incasso in note di accredito**: se attivo, non si mettono le spese incasso nelle note di credito.
 
 **Verifica vendite prezzo lotti**: campo obsoleto, non più utilizzato.
 
