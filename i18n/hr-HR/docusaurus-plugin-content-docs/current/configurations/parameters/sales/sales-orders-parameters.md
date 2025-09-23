@@ -11,71 +11,71 @@ Ako želite ručno konfigurirati, pogledajte kontrolni popis na povezanoj strani
 
 Parametri faktura prodaje omogućuju osnovnu postavku za ispravno upravljanje, u skladu sa specifičnim zahtjevima svake pojedine tvrtke. Prozor povezan s ovim parametrima sastoji se od 4 različitih kartica: Općenito, Ispunjenje,Otprema  i Analitika. 
 
-### Generale
+### Općenito
 
-**Gestione doppia unità misura**: se attivo, nelle righe ordine verranno visualizzate le due colonne UM Alternativa e Quantità Alternativa, sarà perciò possibile gestire la doppia unità di  misura, considerando sempre che è l’unità di misura principale sulla quale vengono fatti i controlli per l’evasione.      
+**Upravljanje dvostrukom mjernom jedinicom**: ako je aktivno, u redovima narudžbe bit će prikazane dvije kolone Alternativna JM i Alternativna Količina, stoga će biti moguće upravljati dvostrukom jedinicom mjere, uzimajući uvijek u obzir da je to glavna jedinica mjere na kojoj se provode kontrole za ispunjenje.    
 
-**Proposta automatica UM alternativa:** questo flag diventa editabile solo se è stato attivato il flag di gestione della doppia unità di misura e consente di riportare nel tab articoli dell’ordine l'unità di misura alternativa impostata nell'anagrafica articolo, nell’apposita colonna 'UM alternativa'; se non attivo, l'unità di misura non viene proposta.      
+**Proposta automatica UM alternativa**: ovaj flag postaje uređiv samo ako je aktiviran flag za upravljanje dvostrukom jedinicom mjere i omogućuje prikaz alternativne jedinice mjere postavljene u kartonu artikla u odgovarajućem stupcu 'UM alternativa'; ako nije aktivno, jedinica mjere se ne predlaže.     
 
-**Controllo Disponibilità:** questo flag e gli altri relativi al controllo, visualizzazione e obbligorietà con la considerazion per area, nella versione attuale, non sono gestite.     
+**Provjerite dostupnost**: ovaj flag i ostali povezani s kontrolom, vizualizacijom i obveznošću s obzirom na područje, u trenutnoj verziji nisu upravljani.     
 
-**Riferimento Ordine**: se questo flag viene impostato, nel progetto creato da ordine verrà inserito il Riferimento all’ordine nel titolo del progetto; la composizione nota deve essere specificata nel campo *Descrizione* secondo i parametri descritti nella label.     
+**Referenca naloga**: ako je ovaj flag postavljen, u projektu kreiranom iz narudžbe bit će umetnut Referenca na narudžbu u naslov projekta; sastav napomene mora biti specificiran u polju *Opis* prema parametrima opisanim u oznaci.
 
-**Ricerca prezzi articoli in tutti i listini predefiniti**: quando si cercano il prezzo e gli sconti per un articolo all'interno di un ordine, il sistema segue delle regole basate sulle impostazioni configurate nell'anagrafica cliente, sotto la sezione *Listini*. Se è attivata l'opzione 'default' su un determinato tipo di listino, la ricerca di prezzi e sconti si concentrerà solo su quella specifica tipologia di listino; se il flag "default" non è attivo, il sistema estenderà la ricerca a tutti i tipi di listini presenti, seguendo un ordine di priorità. In pratica, con il flag 'default' attivo, il sistema cercherà prima un listino valido per la tipologia predefinita; se non trova risultati, passerà a controllare le altre tipologie di listino in ordine di priorità inserita. Tuttavia, se nell'anagrafica del cliente non è presente alcuna tipologia di listino impostata come 'default' e ci sono solo priorità, questo parametro non influenzerà la ricerca, anche se attivo.       
+**Ricerca prezzi articoli in tutti i listini predefiniti**: prilikom traženja cijene i popusta za artikl unutar narudžbe, sustav slijedi pravila temeljena na postavkama u evidenciji kupca, u sekciji *Cjenici*. Ako je za određenu vrstu cjenika aktivirana opcija 'zadano', pretraživanje cijena i popusta vršit će se samo za tu specifičnu vrstu cjenika; ako zastavica "zadano" nije aktivna, sustav će proširiti pretraživanje na sve vrste cjenika, prateći redoslijed prioriteta. U praksi, sa zastavicom 'zadano' aktiviranom, sustav će prvo tražiti cjenik važeći za zadanu vrstu; ako nema rezultata, nastavit će s ostalim vrstama cjenika prema unesenom prioritetu. Međutim, ako u evidenciji kupca ne postoji nijedna vrsta cjenika postavljena kao 'zadano', a postoje samo prioriteti, ovaj parametar neće utjecati na pretraživanje, čak i ako je aktivan.
 
-**Proponi provvigione per gli articoli omaggio**: con questo flag verranno proposte le provvigioni agente anche per le righe articolo di tipo omaggio come avviene per le righe di tipo Articolo Codificato.     
+**Proponi provvigione per gli articoli omaggio**: S ovim flagom bit će predložene provizije za agente i za stavke artikala tipa poklon, kao što je slučaj za stavke tipa Katalogizirani artikl.   
 
-**Consentire sconti per gli articoli omaggio**: con questo flag verranno inseriti gli sconti sull'importo di riga anche per le righe articolo di tipo omaggio.     
+**Dozvoli rabat za stavke promotivnih poklona**: S ovim flag-om bit će uneseni popusti na iznos stavke i za redove artikala tipa poklon.  
 
-**Obbligo rapporto colli articolo con quantità**: se settato il flag costringe l’utente ad inserire una quantità corrispondente o multipla del numero colli definito nel tab *Pesi/Dimensioni* dell’anagrafica articoli; se la quantità non è il numero colli o un suo multiplo appare il messaggio: “Articolo non vendibile in quantità inferiore o non multiplo di .      
+**Obvezni omjer između kutija i količine**: ako je flag postavljen, korisnik je prisiljen unijeti količinu koja odgovara ili je višekratnik broja paketa definiranog u kartici *Težine/Dimenzije* u kartici artikla; ako količina nije broj paketa ili njegov višekratnik, pojavljuje se poruka: “Artikal se ne može prodavati u količini manjoj ili koja nije višekratnik.      
 
-**Proponi lotto economico**: se il flag è settato viene proposto come quantità il lotto economico e se la quantità è inferiore al lotto economico viene dato il messaggio “La quantità non può essere inferiore a …”.       
+**Predloži ekonomski lot**: ako je flag postavljen, kao količina će se predložiti ekonomska serija, a ako je količina manja od ekonomske serije, pojavit će se poruka “Količina ne može biti manja od …”.       
 
-**Verifica articoli in esaurimento**: se settato, questo flag farà apparire un pop-up di avviso nel caso in cui vengano inseriti in ordine degli articoli che hanno settato in anagrafica il flag in Esaurimento e la data in cui l’articolo va in esaurimento; questo controllo evita di vendere articoli che non verranno più prodotti o riassortiti.      
+**Provjeri zalihe artikala**: ako je postavljen, ovaj flag će prikazati iskačuću obavijest u slučaju da se u narudžbu unesu artikli koji su u kartonu postavili flag "Na isteku" i datum kada artikal ide u istek; ova provjera sprječava prodaju artikala koji se više neće proizvoditi ili dopunjavati.     
 
-**[Abilita Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)**: attivando questo flag nella sezione Articoli verranno visualizzate due nuove colonne: *Sconti Articolo* e *Sconti Finali Articolo*. La colonna *Sconti Articolo* è modificabile e mostra gli sconti applicati automaticamente in base alle impostazioni relative al cliente, all'articolo, al listino o alla categoria di sconto. L'utente ha la possibilità di inserire, modificare o eliminare gli sconti direttamente in questa colonna. Per utilizzare questo widget è necessario che, oltre ad attivare il flag, sia specificato nel tipo di ordine quale tipo di sconto utilizzare.     
+**[Omogući widget pojednostavljenih popusta](/docs/sales/sales-flow/discount-widget)**: aktiviranjem ovog flaga u odjeljku Artikli prikazuju se dvije nove kolone: *Popusti artikla* i *Konačni popusti*. Kolona *Popusti artikla* èje uređiva i prikazuje popuste koji se automatski primjenjuju na temelju postavki vezanih za kupca, artikl, cjenik ili kategoriju popusta. Korisnik može direktno unositi, mijenjati ili brisati popuste u toj koloni. Za korištenje ovog widgeta potrebno je, osim aktiviranja flaga, u tipu narudžbe specificirati koji tip popusta koristiti.  
 
-**Uso articolo cliente**: se settato, questo flag inserirà, nella griglia articoli dell'ordine, le colonne per il Codice e la Descrizione cliente inseriti in anagrafica articolo, tab Cliente.       
+**Koristi stavku kupca**: ako je postavljeno, ovaj flag će umetnuti, u mrežu artikala narudžbe, kolone za Kod i Opis kupca unesene u kartonu artikla, na kartici Kupac. 
 
-**Uso barcode**: se settato, questo flag inserirà, nella griglia articoli dell'ordine, la colonna per riportare il barcode dell'articolo.     
+**Koristi barkod**: ako je aktivirano, ovaj flag će umetnuti, u mrežu artikala narudžbe, kolonu za prikaz barkoda artikla.
 
-**Consenti modifica commessa di produzione da ordine cliente collegato**: se attivo, permette di modificare la commessa di produzione collegataq ad un ordine.
+**Dozvoli izmjenu proizvodne narudžbe povezane s narudžbom kupca**: ako je aktivno, omogućuje izmjenu povezanog proizvodnog naloga za narudžbu.
 
-**Codice operatore obbligatorio**: questo flag rende obbligatorio compilare il campo *Operatore* in testata.     
+**Obvezna šifra korisnika**: ovaj flag čini obaveznim popunjavanje polja *Operater* u zaglavlju.  
 
-**Blocca inserimento documento in date festive da calendario di fabbrica**: se attivo, il sistema non permette l'inserimento dell'offerta in date festive (viene controllato prima il Calendario di Fabbrica della società, poi il Calendario delle capacità produttive); se non attivo, il sistema non effettua nessun controllo e lascia inserire il documento.     
+**Blokiraj unos dokumenta na praznike prema tvorničkom kalendaru**: ako je aktivno, sustav ne dopušta unos ponude na praznike (prvo se provjerava Kalendar tvornice tvrtke, a zatim Kalendar proizvodnih kapaciteta); ako nije aktivno, sustav ne provodi nikakvu provjeru i dopušta unos dokumenta.
 
-**Utilizzo il configuratore matrici**: questo parametro attiva la gestione delle matrici.       
+**Utilizzo il configuratore matrici**: ovaj parametar aktivira upravljanje matricama.     
 
-**Esplodi distinta base**: se attivo, nel momento dell'inserimento di un articolo questo verrà sostituito dal primo livello della sua distinta base, se esiste; quindi invece dell'articolo “prodotto Finito” l'ordine sarà popolato con la distinta base di questo articolo.        
+**Proširi sastavnicu materijala**: ako je aktivno, u trenutku unosa artikla, on će biti zamijenjen prvim nivoom njegove liste materijala, ako postoji; tako da umjesto artikla “gotov proizvod” narudžba će biti popunjena listom materijala ovog artikla.   
 
-**Proponi Dati commerciali per distinta base esplosa manualmente**: se attivo, questo flag indica che per i componenti di primo livello inseriti tramite il flag “Esplodi distinta base” verranno proposti prezzi di listino, sconti e provvigioni come per gli articoli codificati.         
+**Predloži komercijalne podatke za ručno razdvojenu strukturu proizvoda**: ako je flag aktiviran, označava da će za komponente prvog nivoa unesene pomoću flag-a “Razdvoji strukturu proizvoda” biti ponuđene liste cijena, popusti i provizije kao i za kodirane artikle.     
 
-**Gestione Versione Distinta Base**: se attivo, il flag abilita nel tab articoli la colonna Versione distinta base pe poter scegliere una versione diversa da quella di default automaticamente utiizzata.        
+**Upravljanje verzijom strukture proizvoda**: ako je flag aktiviran, omogućuje u kartici artikala stupac Verzija strukture proizvoda za izbor verzije različite od one koja se automatski koristi kao zadana.    
 
-**Non raggruppare le righe quando inserisci da distinta base**: se attivo, il flag permette di inserire i componenti del primo livello di distinta in righe diverse anche se hanno lo stesso codice materiale.        
+**Ne grupiraj redove prilikom unosa iz strukture proizvoda**: ako je flag aktiviran, omogućuje unošenje komponenti prvog nivoa strukture u različite retke čak i ako imaju isti šifru materijala.        
 
-### Evasione
+### Izuzimanje
 
-In questo tab sono presenti i seguenti campi:       
+U ovoj kartici su prisutna sljedeća polja:     
 
-**Pagamento**: specifica il valore usato per il pagamento dell'ordine cliente nel caso dell'evasione multipla dei progetti in Ordine: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**Plaćanje**: određuje vrijednost koja se koristi za plaćanje narudžbe kupca u slučaju višestrukog ispunjenja projekata u Narudžbi: *Prva narudžba*, *Šifarnik* ili *Ručni odabir*.
 
-**Destinatario**: specifica il valore usato per il destinatario dell'ordine cliente nel caso dell'evasione multipla dei progetti in Ordine: *Primo ordine*, *Anagrafica* oppure *Selezione manuale*.
+**Primatelj**: određuje vrijednost koja se koristi za primatelja narudžbe kupca u slučaju višestrukog ispunjenja projekata u Narudžbi: *Prva narudžba*, *Šifarnik* ili *Ručni odabir*.
 
-**Raggruppamento per tipo e soluzione pagamento**: Specifica il fatto che gli ordini clienti verranno raggruppati per tipo e soluzione pagamento all'evasione dalla form di ricerca Ordini con i ribbon Button  Evasione DDT o Evasione fatture.       
+**Grupiranje po vrsti i rješenju plaćanja**: specificira da će narudžbe kupaca biti grupirane po vrsti i rješenju plaćanja prilikom ispunjenja iz obrasca za pretraživanje Narudžbi s tipkama Izvršenje otpremnice/primke ili Izvršenje računa.
 
-**Raggruppamento per destinazione**: Specifica il fatto che gli ordini clienti verranno raggruppati per il destinatario e la destinazione all'evasione dalla form di ricerca Ordini con i ribbon Button  Evasione DDT o Evasione fatture.       
+**Grupiranje po odredištu**: specificira da će narudžbe kupaca biti grupirane prema primatelju i odredištu prilikom ispunjenja iz obrasca za pretraživanje Narudžbi s tipkama Izvršenje otpremnice/primke ili Izvršenje računa.
 
-**Visualizzazione griglia evasione:** se attivo, il flag abilita la modalità griglia nella form di evasione ordini vendita.      
+**Prikaz mreže ispunjenja**: ako je aktivno, flag omogućuje način prikaza u mreži u obrascu za ispunjenje prodajnih narudžbi.
 
-**Visualizzazione tree evasione:** se attivo, il flag abilita la modalità tree nella form di evasione ordini vendita.
+**Prikaz stabla ispunjenja**: ako je aktivno, flag omogućuje način prikaza u obliku stabla u obrascu za ispunjenje prodajnih narudžbi.
 
-### Scarico
+### Istovar
 
-**Priorità parametri inseriti per ogni riga ordine**: se attivo il magazzino e la causale di scarico vengono letti dalle righe dell'ordine mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (*Magazzino* e *Causale di magazzino*).
+**Prioritet parametara unesenih za svaku liniju narudžbe**: ako je aktivno, skladište i uzrok otpisa čitaju se iz redaka narudžbe, dok ako nije aktivno, koristit će se skladište i uzrok uneseni u sljedećim poljima (*Skladište* i *Razlog skladišta*).
 
-### Analitica
+### Analitika
 
 Ova KARTICA specificira kojim prioritetom se dohvaća Centar troškova (CDC) ili Centar profita (CDP) u retku dokumenta.        
 Prioriteti se mogu mijenjati pomoću tipki **Premjesti gore**![](/img/neutral/common/move-up.png) i **Premjesti dole**![](/img/neutral/common/delete-cc.png).     
