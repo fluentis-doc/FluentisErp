@@ -1,16 +1,16 @@
 ---
-title: Tipi contabilizzazione IVA
+title: Vrste knjiženja PDV-a
 sidebar_position: 24
 ---
-Questa tabella è richiamata all'interno dell'anagrafica clienti / fornitori alla quale si rinvia e poi all'interno delle Aliquote/modalità iva, per definire gli specifici sottoconti da utilizzare su ogni tipologia.
+Ova se tablica poziva unutar kartoteke klijenata / dobavljača, na koju se upućuje, a zatim unutar Stopa / načina obračuna PDV-a, kako bi se definirali specifični podračuni koji se koriste za svaku vrstu.
 
 
-**Codice**: codice identificativo del tipo di contabilizzazione IVA.
+**Šifra**: identifikacijska šifra vrste knjiženja PDV-a.
 
-**Descrizione**: descrizione del tipo di contabilizzazione IVA.
+**Opis**: opis vrste knjiženja PDV-a.
 
-**Cliente**: flag per specificare se la riga fa riferimento ad un cliente.
+**Klijent**: oznaka koja specificira da se red odnosi na klijenta.
 
-**Fornitore**: flag per specificare se la riga fa riferimento ad un fornitore.
+**Dobavljač**: oznaka koja specificira da se red odnosi na dobavljača.
 
-É possibile spuntare entrambi i flag quando la riga è sia cliente che fornitore.
+Moguće je označiti oba polja kada se red odnosi i na klijenta i na dobavljača.
