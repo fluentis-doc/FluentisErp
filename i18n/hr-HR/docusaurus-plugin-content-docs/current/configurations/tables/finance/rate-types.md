@@ -1,42 +1,42 @@
 ---
-title: Tipi tasso
+title: Tipovi kamatnih stopa
 sidebar_position: 28
 ---
 
-La definizione di questa tabella consente di codificare e impostare le varie tipologie di tipi tasso da gestire nella società attiva.
+Definicija ove tablice omogućuje kodificiranje i postavljanje različitih vrsta kamatnih stopa koje se upravljaju u aktivnom poduzeću.
 
  
 
-### Griglia superiore
+### Gornja mreža
 
-**Codice**: codice identificativo del tasso d'interesse.
+**Šifra**: identifikacijska šifra kamatne stope.
 
-**Descrizione**: descrizione del tasso d'interesse.
+**Opis**: opis kamatne stope.
 
-**Da data documento**: data documento a partire dalla quale va gestito il calcolo interessi (il rif. è al DECRETO LEGISLATIVO 9 ottobre 2002, n. 231). Lo scopo del campo è quello di impedire che siano calcolati interessi su documenti aventi data anteriore a quella di emanazione della legge.
+**Od datuma dokumenta**: datum dokumenta od kojeg se obračun kamata treba upravljati (referenca: Zakonodavni dekret 9. listopada 2002., br. 231). Svrha ovog polja je spriječiti obračun kamata na dokumente s datumom prije stupanja zakona na snagu.
 
-**Da data scadenza**: data scadenza a partire dalla quale va gestito il calcolo interessi (il rif. è al DECRETO LEGISLATIVO 9 ottobre 2002, n. 231). Lo scopo del campo è quello di impedire che siano calcolati interessi su documenti aventi scadenza anteriore a quella di emanazione della legge.
+**Od datuma dospijeća**: datum dospijeća od kojeg se obračun kamata treba upravljati (referenca: Zakonodavni dekret 9. listopada 2002., br. 231). Svrha ovog polja je spriječiti obračun kamata na dokumente čije je dospijeće bilo prije stupanja zakona na snagu.
 
-**Interesse min.**: importo minimo degli interessi al di sotto del quale non valorizzare alcun importo.
+**Minimalna kamata**: minimalni iznos kamate ispod kojeg se neće obračunavati nikakav iznos.
 
-**Giorni franchigia**: numero di giorni di franchigia che saranno detratti dal conteggio dei giorni di ritardo.
+**Broj dana bez kamata**: broj dana „gracije“ koji će se odbiti od obračuna dana zakašnjenja.
 
-**Calcolo anche sconto**: flag di gestione anche in sconto in caso di pagamento anticipato. 
+**Obračun i za popust**: oznaka koja omogućuje obračun i u slučaju ranije uplate (popusta).
 
-:::tip nota
-ESEMPIO: in caso di pagamento anticipato da parte del cliente e successivo ritardo di pagamento, se l'importo dell'interesse calcolato sul ritardo è superiore al valore impostato nel campo Interesse min. , al valore dell'interesse calcolato sarà detratto il valore (negativo) calcolato in base ai giorni che intercorrono tra la data pagamento e la data scadenza. In ogni caso il risultato del calcolo non potrà mai essere un interesse negativo.
+:::tip Napomena
+PRIMJER: u slučaju ranije uplate od strane klijenta i kasnijeg kašnjenja plaćanja, ako je iznos kamate obračunate na kašnjenje veći od vrijednosti postavljene u polju Minimalna kamata, od obračunate kamate će se odbiti iznos (negativan) izračunat na temelju dana između datuma plaćanja i datuma dospijeća. U svakom slučaju, rezultat obračuna nikada ne može biti negativna kamata.
 :::
 
-### Griglia inferiore  
+### Donja mreža  
 
-**Codice**: codice identificativo del tasso.
+**Šifra**: identifikacijska šifra stope.
 
-**Da data**: data a partire dalla quale va gestito il tasso indicato nella riga.
+**Od datuma**: datum od kojeg se upravlja stopom navedenu u retku.
 
-**A data**: data fino alla quale sarà gestito il tasso indicato nella riga
+**Do datuma**: datum do kojeg se upravlja stopom navedenu u retku.
 
-**Percentuale**: percentuale di tasso d'interesse applicabile.
+**Postotak**: primjenjivi postotak kamatne stope.
 
-I campi relativi alle date di validità riferiti alla percentuale permettono di definire l'andamento della politica del tasso di interesse che, come noto, è soggetta a periodiche revisioni relative al tasso legale.
+Polja vezana uz datume valjanosti postotka omogućuju definiranje kretanja politike kamatne stope koja, kao što je poznato, podliježe periodičnim revizijama u skladu s zakonskom kamatnom stopom.
 
 ![](/img/it-it/configurations/tables/finance/rate-types/image01.png)
