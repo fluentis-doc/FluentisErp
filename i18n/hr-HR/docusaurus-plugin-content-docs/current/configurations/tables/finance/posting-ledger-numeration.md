@@ -1,26 +1,26 @@
 ---
-title: Numerazione registrazioni contabili
+title: Numeriranje računovodstvenih zapisa
 sidebar_position: 19
 ---
 
 
-Percorso form: **Configurazione > Amministrazione > Numerazione registrazioni contabili**
+Putanja u formi: **Konfiguracija > Administracija > Numeriranje računovodstvenih zapisa**
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako se planira ručna konfiguracija, potrebno je konzultirati kontrolni popis na poveznici.
 :::
 ---
 
-In questa tabella viene definita, attraverso un ** [*Numeratore standard di Fluentis* ](/docs/configurations/tables/fluentis-numerations) ** , la politica per le registrazioni contabili definitive e provvisorie.
+U ovoj tablici se, preko ** [*Standardnog brojača Fluentis* ](/docs/configurations/tables/fluentis-numerations) ** , definira politika za konačna i privremena knjiženja.
 
-**<u>Si raccomanda di seguire le impostazioni visibili nelle immagini</u>** per una ottimale gestione della numerazione.
-E' possibile scegliere una diversa periodicità, ad esempio annuale, oppure non adottare il recupero dei numeri liberi, o anche vincolare la numerazione al criterio di coerenza tra data e numero (esempio non posso avere il numero 2 oggi ed il numero 1 domani).
+**<u>Preporučuje se slijediti postavke vidljive na slikama</u>** radi optimalnog upravljanja numeracijom.
+Moguće je odabrati drugačiju periodičnost, npr. godišnju, ili ne koristiti automatsko dodjeljivanje slobodnih brojeva, ili ograničiti numeraciju kriterijem konzistentnosti između datuma i broja (npr. ne može broj 2 biti danas, a broj 1 sutra).
 
-E' anche possibile, in casi particolari o di specifica necessità, far partire la numerazione da un numero diverso da 1.
+Također je moguće, u posebnim slučajevima ili po potrebi, započeti numeraciju od broja različitog od 1.
 
-**NOTA:** per la numerazione provvisoria è necessario che la numerazione sia negativa.
+**NAPOMENA:** za privremenu numeraciju potrebno je da numeracija bude negativna.
 
 ![](/img/it-it/configurations/tables/finance/posting-ledger-numerations/posting-ledger-numerations.png)
 
@@ -28,11 +28,11 @@ E' anche possibile, in casi particolari o di specifica necessità, far partire l
 
 ![](/img/it-it/configurations/tables/finance/posting-ledger-numerations/posting-ledger-numerations-detail-provisory.png)
 
-:::danger ATTENZIONE
-Si sconsiglia di impostare, in situazioni normali, più di un numeratore, rispettivamente per le registrazioni definitive e provvisorie, contemporaneamente. Se emerge questa necessità si veda ** [*la testata della causale contabile* campo *Numerazione*](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) **.
-Si sconsiglia altresì di inserire una data fine validità per la numerazione in corso se questo non è motivato da un effettivo cambio nei dettagli della politica stessa. La periodicità scelta nella numerazione stessa fa sì che il numero riparta ogni anno , oppure ogni giorno ecc... Si veda per ulteriori dettagli in merito al rinnovo dei numeratori al cambio d'anno [**qui**](/docs/configurations/utility/new-year-counter-generation).
+:::danger PAŽNJA
+U normalnim situacijama se ne preporučuje postavljanje više od jednog brojača istovremeno, za konačna i privremena knjiženja. Ako postoji stvarna potreba, pogledajte ** [*zaglavlje knjiženja polje *Numeracija*](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) **.
+Također se ne preporučuje postavljanje datuma završetka valjanosti trenutne numeracije ako to nije motivirano stvarnom promjenom u politici numeracije. Odabrana periodičnost numeracije osigurava da se broj resetira svake godine, ili svakog dana itd. Za dodatne detalje o obnovi brojača na početku godine pogledajte [**ovdje**](/docs/configurations/utility/new-year-counter-generation).
 :::
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro)
+:::important Vidi također
+[**VIDEO TUTORIALI O ADMINISTRATIVNIM TABLICAMA**](/docs/video/finance/intro)
 :::
