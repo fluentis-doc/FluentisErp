@@ -1,63 +1,63 @@
 ---
-title: Tipi ritenuta
+title: Tipovi odbitka poreza
 sidebar_position: 34
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Na ovu tablicu utječe procedura [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+U slučaju ručne konfiguracije potrebno je slijediti kontrolni popis na poveznici.
 :::
 
-In questa tabella vengono ricercate ed inserite le tipologie di ritenuta d'acconto da associare ai compensi percipienti (gli agenti di commercio sono a loro volta anche dei percipienti) per la corretta gestione delle contabilizzazioni e degli altri adempimenti fiscali connessi.
+U ovoj se tablici pretražuju i unose vrste poreza po odbitku koje se dodjeljuju primateljima naknada (trgovački agenti također spadaju u primatelje) radi pravilnog upravljanja knjiženjima i ostalim povezanim poreznim obvezama.
 
-#### Campi specifici
+#### Specifična polja
 
-**Codice ritenuta**: codice alfanumerico di 5 caratteri di identificazione della ritenuta; normalmente si richiama il codice tributo ministeriale.
+**Šifra poreza**: alfanumerička šifra od 5 znakova koja identificira porez; obično se koristi šifra ministarstva.
 
-**Descrizione ritenuta**: descrizione del codice ritenuta.
+**Opis poreza**: opis šifre poreza.
 
-**[Codice tributo](/docs/configurations/tables/finance/tax-code)**: richiama la tabella dei codici tributo: questa è precompilata al momento dell'installazione e contiene la lista completa dei codici tributo previsti per il modello F24.
+**[Šifra poreza prema zakonu](/docs/configurations/tables/finance/tax-code)**: poziva tablicu šifri poreza; unaprijed je popunjena prilikom instalacije i sadrži cjelokupan popis šifri poreza predviđenih za obrazac F24.
 
-**Causale di contabilità generale**: questo campo prevede l'impostazione obbligatoria per registrare il compenso in contabilità: si tratta normalmente di una causale iva, tipo un normale acquisto Italia. E' comunque prevista anche la valorizzazione di causali non Iva per gestire i casi di gestione ritenute a collaboratori saltuari non titolari di partita IVA.
+**Računovodstvena šifra**: questo campo prevede l'impostazione obbligatoria per registrare il compenso in contabilità: si tratta normalmente di una causale iva, tipo un normale acquisto Italia. E' comunque prevista anche la valorizzazione di causali non Iva per gestire i casi di gestione ritenute a collaboratori saltuari non titolari di partita IVA.
 
-**Tipi ritenuta fatturazione elettronica**: in questo campo è possibile inserire il codice specifico del tipo ritenuta valido ai fini della fatturazione elettronica attiva (ovvero quando la società in uso è soggetta a ritenuta d'acconto subita da parte del proprio cliente / cessionario /committente). Per codifica in vigore si rinvia alle specifiche tecniche aggiornate sulla fatturazione elettronica scaricabili dal sito dell'Agenzia delle Entrate.
+**Vrste poreza za elektroničko fakturiranje**: u ovom polju moguće je unijeti šifru vrste poreza koja vrijedi za elektroničko fakturiranje (kada tvrtka podliježe odbitku poreza od strane svog klijenta / primatelja / naručitelja). Za važeće šifre pogledajte tehničke specifikacije elektroničkog fakturiranja na webu Porezne uprave.
 
-**Quadro in Mod. 770**: è un campo obbligatorio: il modello 770, comunque, non è gestito nella procedura.
+**Odjeljak u obrascu 770**: obavezno polje; napomena: obrazac 770 se ipak ne obrađuje u ovoj proceduri.
 
-**Codice di pag. in mod. 770**: codice di pagamento in 770 è un campo non obbligatorio e non utilizzato.
+**Šifra plaćanja u obrascu 770**: šifra plaćanja u 770 nije obavezna i trenutno se ne koristi.
 
-**Tipi partite**: la scelta è tra partite nette e partite lorde. La distinzione è relativa alla creazione delle scadenze al netto o al lordo di tutti i tributi a carico del percipiente: l'impostazione standard prevede le partite nette, al fine d'avere uno scadenziario con l'effettivo importo da pagare al professionista, nel qual caso la causale contabile di riferimento non dovrà avere il blocco alla registrazione di movimenti sbilanciati con le partite.
+**Vrste stavki**: izbor je između neto stavki i bruto stavki. Razlika se odnosi na kreiranje dospijeća neto ili bruto svih poreza i obaveza koje snosi primatelj. Standardna postavka su neto stavke kako bi se dobio raspored dospijeća s stvarnim iznosom za isplatu profesionalcu. U tom slučaju računovodstvena šifra ne smije imati blokadu za knjiženje neuravnoteženih stavki.
 
-**Tipo ritenuta**: prevede l'opzione a titolo d'acconto o a titolo d'imposta: la distinzione non ha attualmente alcuna rilevanza sull'operatività del modulo, ma è rilevante a livello di CU (Certificazione unica) per valorizzare i due campi *Ritenuta acconto* o *Ritenuta imposta*.
+**Vrsta poreza**: opcija predujam ili porez po odbitku. Trenutno ovo nema utjecaja na rad modula, ali je važno za CU (Certificazione Unica / Jedinstvenu potvrdu) za popunjavanje polja Predujam ili *Porez po odbitku*.
 
-**Codice pagamento**: è il codice del pagamento della ritenuta. Questo dato è ripreso nella procedura di elaborazione della CU (certificazione unica) e per la sua gestione si consiglia di riferirsi alle relative istruzioni ministeriali scaricabili dal sito dell'Agenzia delle Entrate. 
+**Šifra plaćanja**:šifra plaćanja poreza. Ovaj podatak koristi se u postupku pripreme CU i za njegovo pravilno vođenje preporučuje se konzultirati službene upute Porezne uprave.
 
-**Codice altre somme non soggette a ritenuta**: il campo permette di contrassegnare in modo specifico, per ogni tipologia di ritenuta, il codice (generalmente numerico come da istruzioni ministeriali dell'Agenzia delle entrate) relativo alle somme non soggette alla ritenuta d'acconto. Se il campo non viene compilato, all'atto dell'elaborazione della CU nel [**modulo relativo**](/docs/finance-area/declarations/declarations/withholding-tax-certification), sarà compilato di default il *codice 21* per quanto riguarda le righe dei compensi percipienti inserite nei documenti con il **tipo riga 4** (*Altro*) da utilizzare, ad esempio, per le spese anticipate dal percipiente per conto del cliente e riaddebitate. 
+**Šifra za ostale iznose koji nisu podložni porezu**: omogućuje specifično označavanje, za svaku vrstu poreza, šifre (obično numeričke prema uputama Porezne uprave) za iznose koji nisu predmet poreza po odbitku. Ako polje nije popunjeno, prilikom pripreme CU u [**odgovarajućem modulu**](/docs/finance-area/declarations/declarations/withholding-tax-certification), automatski će se koristiti *šifra 21* za stavke naknada primatelja unesene u dokumentima s **vrsta stavke 4** (*Ostalo*) npr. za unaprijed plaćene troškove primatelja u ime klijenta koje se naknadno tereće. 
 
-**Debiti v/erario**: questo sottoconto memorizza il sottoconto di debito da utilizzare per rilevare il debito relativo alla ritenuta d'acconto. Questo sottoconto viene utilizzato nella procedura di contabilizzazione pagamenti (con la contabilizzazione pagamenti viene rilevato il debito della ritenuta da versare, che è un tributo che segue la logica di cassa appunto): quando il pagamento riguarda i compensi percipienti, infatti, è necessario integrare la registrazione con i movimenti relativi alla ritenuta e gestire le tabelle del modulo per garantire la possibilità di ottenere la stampa delle certificazioni ritenute.
+**Dug prema državnom proračunu**: ovaj podračun pohranjuje podračun obaveze za porez po odbitku. Koristi se u postupku knjiženja plaćanja: prilikom plaćanja naknada primateljima potrebno je integrirati knjiženje s poreznim stavkama i upravljati tablicama modula kako bi se omogućio ispis potvrda o porezu po odbitku.
 
-**Categoria agente** è la tipologia di agente dalla quale individuare le percentuali di contribuzione all'istituto Enasarco. Nel caso in cui la categoria sia stata impostata sarà necessario inserire anche il precedente sottoconto di debito verso l'Enasarco. Il campo è obbligatorio nel caso in cui sia inserita la gestione dell' Enasarco a carico ditta.
+**Kategorija agenta** tip agenta koji određuje postotke doprinosa za Enasarco (talijanski fond za agente). Ako je kategorija postavljena, potrebno je unijeti i prethodni podračun obaveze prema Enasarcu. Polje je obavezno ako se vodi upravljanje Enasarco doprinosima na teret tvrtke.
 
-**Cont. Enasarco a carico ditta**: questo flag attiva l'impostazione dei due sottoconti successivi e rende obbligatoria l'assegnazione di una categoria agente e del sottoconto di debito per la quota a carico agente. L'attivazione di questo flag attiverà la rilevazione contabile dei contributi Enasarco con la procedura di contabilizzazione omonima. L'opzione è consigliata al fine di rendere autonoma tale rilevazione, dato che il contributo Enasarco va rilevato per competenza e non per cassa come la ritenuta d'acconto. All'interno di questo flag si trovano anche:
+**Enasarco doprinos na teret tvrtke**: ovaj označivač aktivira postavljanje dva sljedeća podračuna i čini obaveznim dodjelu kategorije agenta i podračuna obaveze za dio koji snosi agent. Aktivacija ovog označivača omogućuje knjiženje Enasarco doprinosa pomoću odgovarajuće procedure. Opcija je preporučena kako bi se omogućilo autonomno knjiženje, budući da se Enasarco doprinos obračunava po razdoblju (competenza), a ne po naplati kao porez po odbitku.
 
-**Debito Enasarco a carico agente**: il campo è dedicato all'impostazione del sottoconto di debito sul quale sarà rilevato l'importo a carico dell'agente. Tale sottoconto sarà utilizzato nella contabilizzazione pagamenti o nella contabilizzazione enasarco a seconda che sia stata impostata la gestione enasarco a carico ditta o meno. Il campo è obbligatorio se è settato il campo successivo della categoria agente.
+**Dug Enasarco na teret agenta**: polje za postavljanje podračuna obaveze na kojem će se evidentirati iznos koji snosi agent. Ovaj podračun koristi se pri knjiženju plaćanja ili pri knjiženju Enasarco doprinosa, ovisno o tome je li aktivirana opcija upravljanja Enasarco doprinosima na teret tvrtke. Polje je obavezno ako je definirana kategorija agenta.
 
-**Costo a carico ditta**: sottoconto da attribuire alla rilevazione contabile di costo Enasarco a carico ditta.
+**Trošak na teret tvrtke**: podračun koji se koristi za knjiženje Enasarco troška na teret tvrtke.
 
-**Debito a carico ditta**: sottoconto da attribuire alla rilevazione contabile di debito Enasarco a carico ditta.
+**Dug na teret tvrtke**: podračun koji se koristi za knjiženje Enasarco obaveze na teret tvrtke.
 
 
-### Percentuali 
+### Postotci
 
-La sezione contiene i seguenti campi (clic sulla freccia a destra di questa sezione):
+Ovaj odjeljak sadrži sljedeća polja (klikom na strelicu desno):
 
-% **Ritenuta**: percentuale di applicazione della ritenuta.
+% **Porez po odbitku**: postotak primjene poreza po odbitku.
 
-% **Imponibile**: base percentuale di applicazione della ritenuta.
+% **Osnova**: osnovica za obračun poreza po odbitku.
 
-% **Cassa previdenza**:  percentuale di cassa previdenza.
+% **Doprinos za mirovinsku štednju**:  postotak doprinosa za mirovinsku štednju.
 
-% **Rid. forf. compenso**: campo non in uso.
+% **Smanjenje paušalne naknade**: polje trenutno nije u upotrebi.
 
-La sezione INPS consente di attivare una sezione tributi ulteriore all'interno del compenso percipiente, per gestire i contributi INPS dovuti ad esempio dai collaboratori a progetto e simili.
+Odjeljak INPS omogućuje aktiviranje dodatnog odjeljka za poreze unutar naknade primatelja, kako bi se upravljalo INPS doprinosima koje, primjerice, plaćaju projektni suradnici i slični vanjski suradnici.
