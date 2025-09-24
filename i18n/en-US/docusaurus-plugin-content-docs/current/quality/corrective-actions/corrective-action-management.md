@@ -164,7 +164,7 @@ The managed information is:
 >> **Result description**: it is the description of the *Result* that is assigned to the verification of the *Corrective Action*.   
 >
 > **Verified by the user**   
->> **User**: it is the *User* who performed the intermediate verification.   
+>> **User**: it is the *A.R.M. User* who performed the intermediate verification.   
 >
 > **Verified by the person**   
 >> **User**: it is the code of the *Employee* who performed the intermediate verification.   
@@ -206,15 +206,15 @@ The list consists of the following information:
 
 ### Origin Documents Reference
 
-The tab contains indications on the documents that originated the *Corrective Action* in management.   
-The visible information is:   
+The tab contains references on the documents that originated the *Corrective Action* in management.   
+The information present is:   
 > **Complaint**: expander where it is possible to view:   
 >
 >> **Complaint**: is the reference to the original *Complaint*.   
 >> **Defects Management**: is the reference to the row of *Defect Management* of the original *Complaint*.   
->> **Containment Action**: is the reference to the row of *Containment Action* of the original *Complaint* modeled as *8D - Problem Solving*.   
->> **Permanent Action**: is the reference to the row of *Permanent Action* of the original *Complaint* modeled as *8D - Problem Solving*.   
->> **Phase**: is the reference to the row of the *Implementation Phase* of the original *Complaint* modeled as *8D - Problem Solving*.   
+>> **Containment Action**: it is the reference to the line of the *Containment Action* originating from the *Complaint* model *8D - Problem Solving*.
+>> **Permanent Action**: It is the reference to the line of the *Permanent Action* of the origin of the *Complaint* model *8D - Problem solving*.
+>> **Phase**: It is the reference to the line of the *Implementation Phase* of the *Complaint* model *8D - Problem solving* of origin.
 >
 > **Non-compliance**: expander where it is possible to view:   
 >
@@ -327,7 +327,7 @@ The managed information includes:
 
 ### Subjects Involved
 
-The tab contains indications on the *Business Functions* and/or *Employees* that will participate in the management of the *Corrective Action Program*.   
+The tab contains indications on the *Business Functions* and/or *Employees* that will participate in the management of the *Corrective Action Program*, the reasons for involvement, expected implementation dates, and closure dates.
 The list consists of the following information:   
 > **Business function**   
 >> **Code**: is the code of the involved *Business Function*.   
