@@ -1,42 +1,42 @@
 ---
-title: FAQ Amministrazione
+title: FAQ Administracija 
 sidebar_position: 1
 ---
 
 
 <details>
 
-  <summary>1. Quali fatture elettroniche vengono inserite nel folder impostato nella tabella <b>Configurazione documenti elettronici</b>?</summary>
+  <summary>1. Koje se elektroničke fakture spremaju u folder postavljen u tablici <b>Konfiguracija elektroničkih dokumenata?</b>?</summary>
   
-Ci sono due condizioni da rispettare nell'anagrafica cliente. 
+Postoje dva uvjeta u kartici klijenta.   
 
-La prima condizione è il flag <b>Firma del documento</b>, che deve essere attivo.                 
-La seconda condizione è il flag <b>Fatturazione elettronica firmata</b>, che è un 3-state flag:   
+Prvi uvjet je flag <b>Potpis dokumenta</b>, koji mora biti aktivan.                 
+Drugi uvjet je flag <b>Elektroničko fakturiranje s potpisom</b>, koji je 3-state flag:   
 
-- Quando è 1 per il cliente si prevede la firma, indipendentemente da altre opzioni di configurazione, quindi si esporta sempre il file nel folder definito in configurazione documenti elettronici per farne la firma;           
+- Kada je postavljen na 1, za klijenta se predviđa potpis, bez obzira na druge konfiguracijske opcije, pa se datoteka uvijek izvozi u mapu definiranu u konfiguraciji elektroničkih dokumenata radi potpisivanja;             
 
-- Quando è 0 per il cliente non si prevede la firma, indipendentemente da altre opzioni di configurazione, quindi non si esporta il file nel folder di configurazione documenti elettronici, anche se è impostato il folder;      
+- Kada je postavljen na 0, za klijenta se ne predviđa potpis, bez obzira na druge konfiguracijske opcije, pa se datoteka ne izvozi u mapu konfiguracije elektroničkih dokumenata, čak i ako je mapa definirana;      
 
-- Quando è Null come qui sopra (che è l’impostazione di default) vale l’impostazione nella ‘configurazione documenti elettronici’, cioè se c’è un percorso dove creare il file lo crea sempre, altrimenti non lo crea.
+- Kada je Null (kao u ovom slučaju, što je zadana postavka), vrijedi postavka u ‘konfiguraciji elektroničkih dokumenata’, tj. ako postoji putanja za kreiranje datoteke, datoteka se uvijek kreira, inače se ne kreira.
 
 </details>
 
 
 <details>
 
-  <summary>2. Per i pesi, in fase di creazione fattura elettronica, Fluentis mi dice che non possono essere superiori a 9.999 come faccio a togleire questo blocco? </summary>
+  <summary>2. Za težine, tijekom kreiranja elektroničke fakture, Fluentis mi kaže da ne smiju biti veće od 9.999. Kako mogu ukloniti ovu blokadu? </summary>
   
-Questo blocco è legato alle regole della Fatturazione Elettronica, la quale non accetta PESI superiori
-Per ovviare a questo problema è necessario scalare di UM se si dovesse superare la soglia dei 9999, in modo tale da utilizzare una UM coerente ed ottenere i valori desiderati.
+Ova blokada je vezana uz pravila Elektroničkog fakturiranja, koje ne prihvaća TEŽINE veće od 9.999.
+Da biste zaobišli ovaj problem, potrebno je skalirati jedinicu mjere (UM) ako se premaši granica od 9.999, tako da se koristi odgovarajuća jedinica mjere i dobiju željene vrijednosti.  
 
 </details>
 
 
 <details>
 
-  <summary>3. Come è possibile inserire il flag <b>Gruppo IVA </b> in una <b>Dichiarazione di intento</b> già creata? </summary>
+  <summary>3. Kako je moguće unijeti flag <b>Grupa PDV-a</b> u već kreiranu <b>Izjavu o namjeri</b>? </summary>
   
-E' necessario effettuare il seguente update, inserendo l'id della dichiarazione di intento.
+Potrebno je izvršiti sljedeći SQL update, unoseći ID predmetne izjave o namjeri:  
 
 update CA_DichIntMain set CADM_IsVatGroup = 1 
 where CADM_Id = '[id della dichiarazione di intento]'
@@ -46,53 +46,59 @@ where CADM_Id = '[id della dichiarazione di intento]'
 
 <details>
 
-  <summary> 4. Come è possibile effettuare la stampa di un mastrino filtrando i movimenti in base alla competenza economica? Infatti ad esempio impostando il periodo richiesto, nella stampa dei sottoconti, nei campi "da data competenza" e "a data competenza" non viene presa in considerazione la competenza economica, ma sembrerebbe venga letta la data di competenza che nelle registrazioni contabili è posta di fianco alla data di registrazione.</summary>
+  <summary> 4. Kako je moguće izvršiti ispis mastrina filtriranjem pokreta na temelju ekonomske kompetencije?
+Naime, primjerice, prilikom postavljanja traženog perioda, u ispisa pomoćnih konta, u poljima "od datuma kompetencije" i "do datuma kompetencije", ne uzima se u obzir ekonomska kompetencija, već se čini da se čita datum kompetencije koji je u računovodstvenim knjiženjima smješten pored datuma knjiženja.</summary>
 
-Confermo che nei filtri, quando scrive da data competenza a data competenza si intende quella di competenza (per così dire "contabile") della testata. Normalmente coincidono ma può essere usata (anche se di fatto da pochi) per registrare ad esempio scritture di rettifica in data approvazione bilancio che si riferiscano al 31/12 dove a tale data magari il periodo è già bloccato per stampa definitiva del giornale e quindi non accetterebbe la data registrazione. Per quanto riguarda la data competenza economica, la stampa del mastrino e più in generale il sistema non è pensato per lavorare in quel modo. La procedura più corretta è calcolare una chiusura dei conti del periodo (chiusure infrannuali) e lanciare le relative scritture di rettifica integrazione. In alternativa posso consigliare di usare la form visualizzazione conti dove aggiungere dall'object navigator le proprietà From AccrualDate ToAccrualDate che sono le date di competenza economica (Da A) e usare il filtro posto sulla prima riga della griglia di dettaglio. In alternativa ancora occorre eseguire una personalizzazione del report e della form di lancio aggiungendo filtri e capi ecc...
-
-</details>
-
-<details>
-
-  <summary> 5. Come mai, confrontando una chiusura conti infrannuale calcolata dall'1/1 al 31/12 con i risultati del modulo amministrativo, nella chiusra del controling trovo dei risconti che in amministrazione non vengono calcolati?</summary>
-
-Il modulo controlling ragione in modo più flessibile, in alcune situazioni, rispetto al modulo amministrativo.
-Infatti è in grado di rettificare qualsiasi costo ricavo (con tipo conto compatibile) anche per quote di competenza economica nel passato. Ad esempio se il costo registrato nell'anno X ha competenza parzialmente (o totalmente) nell'anno X-1, elaborando la chiusura dell'anno X si avrà comunque una rettifica (ad esempio un risconto attivo).
-Occorre porre particolare attenzione alla **gestione degli assestamenti eseguiti nel modulo amministrativo**.
-**Si raccomanda di eseguire il calcolo e contabilizzazione assestamenti e la chiusura e riapertura conti con riapertura assestamento tramite le procedure automatiche evitando di eseguire scritture manualmente**.
-La procedura automatica impone, infatti, alle scritture di riapertura degli assestamenti la data pari alla scrittura originaria oggetto di rettifica e la competenza economica di tale scrittura pari all'anno X-1. In tale modo si evita infatti che elaborando le chiusure di periodo dell'anno X il software vada a calcolare ulteriori rettifiche, avendosi già nel saldo dell'anno X (o periodo infrannuale dell'anno X) il risultato corretto di competenza per effetto della corretta riapertura dell'assestamento precedente.  
+Potvrđujem da se u filtrima, kada piše "od datuma kompetencije" do "datuma kompetencije", misli na kompetenciju (tzv. "računovodstvenu") zaglavlja.
+Uobičajeno se ti datumi poklapaju, ali se mogu koristiti (iako to u praksi rijetko tko radi) za knjiženje ispravki, primjerice na datum odobrenja bilance koje se odnose na 31.12., gdje je taj datum možda već blokiran za konačni ispis dnevnika i stoga ne bi prihvatio datum knjiženja.
+Što se tiče datuma ekonomske kompetencije, ispis mastrina – i šire gledano, cijeli sustav – nije predviđen za rad na taj način.
+Najispravnija procedura je izračunati zatvaranje računa za razdoblje (intra-godišnja zatvaranja) i pokrenuti odgovarajuća knjiženja ispravki i integracija.
+Alternativno, mogu preporučiti korištenje forme za pregled konta, gdje se preko object navigatora mogu dodati svojstva From AccrualDate i To AccrualDate, što su zapravo datumi ekonomske kompetencije ("od" – "do"), te koristiti filter na prvom redu detaljne mreže (grida).
+Još jedna alternativa je prilagodba izvještaja i forme za pokretanje dodavanjem filtera i polja itd...
 
 </details>
 
 <details>
 
-  <summary> 6. Come mai nella maschera di gestione dell'assestamento (ratei e risconti) pur essendo sicuro di aver inserito movimenti contabili idonei non calcola nulla?</summary>
+  <summary>5. Zašto, uspoređujući zatvaranje računa unutar godine obračunato od 1.1. do 31.12. s rezultatima iz modula administracije, u zatvaranju u controlling modu nalazim razgraničenja koja u administraciji nisu izračunata?</summary>
 
-Dopo essersi accertati di aver effettivamente inserito movimenti contabili con date di competenza economica a cavallo dell'esercizio contabile, e di aver utilizzato conti di costo aventi il tipo "da rettificare" (db Fast Start) o comunque avente il flag Servizio nella tabella *tipi conto*, se ancora non vedo alcun rateo o risconto proposto, potrei aver attivato, inavvertitamente il flag *Chiusura mensile* nei parametri generali di contabilità. Questo flag attiva infatti logiche per localizzazioni estere non italiane.
-
-</details>
-
-<details>
-
-  <summary> 7. Ho associato un tipo ritenuta d'acconto ad un cliente per generare la fattura elettronica completa dei tag necessari, ora voglio contabilizzare la fattura ma vedo che la scrittura contabile non è corretta e non riporta la ritenuta d'acconto, perchè?</summary>
-
-All'interno nella tabella *Tipi Ritenuta*, aprire la tipologia associata al cliente in questione e verificare che il campo *Tipi partite* sia settato su *Partite Nette*.
+Modul controlling u nekim situacijama radi na fleksibilniji način u usporedbi s modulom administracije.
+Naime, sposoban je ispraviti bilo koji trošak ili prihod (s kompatibilnim tipom konta) čak i za udjele ekonomske nadležnosti iz prošlosti. Na primjer, ako je trošak evidentiran u godini X, a nadležnost je djelomično (ili potpuno) u godini X-1, prilikom obrade zatvaranja godine X svejedno će doći do ispravke (npr. aktivno razgraničenje).
+Potrebno je obratiti posebnu pažnju na **upravljanje dispravkama izvršenima u modulu administracije.**
+**Preporučuje se izvršiti izračun i knjiženje ispravki te zatvaranje i ponovno otvaranje konta s ponovnim otvaranjem ispravki putem automatskih procedura, izbjegavajući ručna knjiženja**.
+Automatska procedura nameće, naime, da stavke ponovnog otvaranja ispravki imaju datum jednak originalnoj stavci na koju se ispravka odnosi te da ekonomska nadležnost te stavke bude godina X-1. Na taj način se izbjegava da prilikom obrade zatvaranja razdoblja za godinu X softver izračunava dodatne ispravke, jer su one već uključene u saldo godine X (ili unutar-godišnjeg razdoblja godine X) zahvaljujući pravilnom ponovnom otvaranju prethodne ispravke.  
 
 </details>
 
 <details>
 
-  <summary> 8. Fluentis mi propone all'interno di una nuova registrazione contabile sempre l'ultima divisa utilizzata con la causale selezionata ignorando la divisa di default del cliente o fornitore, perchè? </summary>
+  <summary> 6. Zašto u maski za upravljanje ispravkama (obračun razgraničenja i vremenskih razgraničenja), iako sam siguran da sam unio odgovarajuće računovodstvene promjene, ne dolazi ni do kakvog izračuna?</summary>
 
-Verificare il settaggio del parametro generale nella tabella PARAM_Parameter codice CA-RegCont-General_PurposeCurrencyByTemplate. Se il parametro è impostato a 1 verrà proposta la divisa ultima utilizzata con la causale, se impostato a 0 non verrà proposta alcuna divisa seguendo la logica base della divisa della società e poi lettura della divisa del cliente o fornitore.
+Nakon što ste se uvjerili da ste zaista unijeli računovodstvene promjene s datumima ekonomske nadležnosti koji prelaze granicu poslovne godine, i da ste koristili konta troška tipa "za ispravku" (db Fast Start) ili koji u tablici tipi conto imaju označen flag Servizio, ako još uvijek ne vidite predložene obračune (ratei ili risconti), moguće je da ste nenamjerno aktivirali flag *Mjesečno zatvaranje* u općim parametrima kontabiliteta. Taj flag zapravo aktivira logiku za strane (ne-talijanske) lokalizacije.
 
 </details>
 
 <details>
 
-  <summary> 9. Ho la necessità di creare più numerazioni per le fatture si vendita. Non è chiaro se devo creare tanti registri iva vendita per quante sono le numerazioni o l'unico registro vendita può avere più numerazioni </summary>
+  <summary> 7. Povezao sam vrstu poreza na dohodak s klijentom kako bih generirao elektronički račun s potrebnim oznakama, sada želim knjižiti račun, ali vidim da knjiženje nije ispravno i ne prikazuje porez na dohodak, zašto?</summary>
 
-la relazione presente nel ciclo di contabilizzazione delle vendite è Tipo Fattura > Numerazione > Causale contabile associata > Registro iva associato alla causale. In un ambiente standard si nota che possono esserci più tipologie, ma se abbinate alla stessa causale, che quindi ha lo stesso sezionale iva, la numerazione è la stessa (condivisa, quindi la FT nr 1 per il tipo A e poi per il tipo B nascerà la nr 2). Nel caso di diversi tipi fattura con diverse numerazioni concorrenti è opportuno differenziare i sezionali iva e pertanto abbinargli anche diverse causali, altrimenti la protocollazione iva andrà in conflitto. Questo inquanto normalmente nelle causali è attiva una spunta di opzione che propone il protocollo iva pari al numero del documento (in modo da non dover fare attenzione a contabilizzare le fatture nell'ordine di numero). Diversamente è necessario disattivare tale opzione
+Unutar tablice *Tipovi odbitka poreza*, otvorite vrstu povezanu s dotičnim klijentom i provjerite je li polje *Tipovi dospjele vrijednosti* postavljeno na *Neto dospjele vrijednosti*.
+
+</details>
+
+<details>
+
+  <summary> 8. Fluentis mi u novom knjiženju uvijek predlaže zadnju valutu korištenu s odabranim razlogom, zanemarujući zadanu valutu klijenta ili dobavljača, zašto? </summary>
+
+Provjerite postavku općeg parametra u tablici PARAM_Parameter kod CA-RegCont-General_PurposeCurrencyByTemplate. Ako je parametar postavljen na 1, bit će predložena valuta zadnje korištena s razlogom, ako je postavljen na 0, neće biti predložena nijedna valuta, slijedeći osnovnu logiku valute društva, a zatim čitanje valute klijenta ili dobavljača.  
+
+</details>
+
+<details>
+
+  <summary> 9. Trebam kreirati više numeracija za prodajne račune. Nije jasno trebam li kreirati onoliko prodajnih PDV registara koliko imam numeracija ili jedan prodajni registar može imati više numeracija </summary>
+
+Veza u procesu knjiženja prodaje je Vrsta računa > Numeracija > Povezana knjižbena osnova > PDV registar povezan s osnovom. U standardnom okruženju može postojati više vrsta, ali ako su povezane s istom osnovom, koja ima isti PDV odjeljak, numeracija je ista (zajednička, tako da će račun br. 1 za vrstu A, a zatim za vrstu B biti br. 2). U slučaju različitih vrsta računa s različitim konkurentnim numeracijama preporučljivo je razlikovati PDV odjeljke i povezati im različite osnove, inače će doći do sukoba u PDV protokoliranju. To je zato što je u osnovama obično aktivirana opcija koja predlaže PDV protokol jednako kao i broj dokumenta (kako se ne bi moralo paziti na knjiženje računa po redoslijedu brojeva). Inače je potrebno deaktivirati tu opciju
 
 </details>
 
@@ -100,34 +106,34 @@ la relazione presente nel ciclo di contabilizzazione delle vendite è Tipo Fattu
 
   <summary> 10. Come posso gestire una nota di accredito semplificata di sola iva TD08 per il recupero, ad esempio, dell'iva di un cliente fallito? </summary>
 
-1. Nella tabella Amministrazione > **Tipi Documento** verificare la presenza (e se necessario aggiungere) di una tipologia corrispondente. Il campo Codice / Descrizione può essere liberamente nominato, ad esempio *Nota di accredito semplificata per recupero IVA*, oppure *Nota di accredito di sola iva* ecc...; il flag **Nota di accredito** deve essere **attivo** ed il campo **Codice per fatture elettroniche** deve riportare *TD08*
-2. Nella tabella Vendite > **Tipi Fatture** verificare la presenza (e se necessario aggiungere) di una tipologia corrispondente. Il campo Codice / Descrizione può essere liberamente nominato, ad esempio *Nota di accredito semplificata per recupero IVA*, oppure *Nota di accredito di sola iva* ecc... ; nel campo **Natura Fattura** DEVE essere selezionata la voce ***Nota di variazione di sola IVA***; il campo **Tipo documento** riporterà la tipologia di cui al punto 1. ed il campo **Causale** (contabile) riporterà la corretta causale (da creare o selezionare all'interno della tabella Amministrativa > Causali di contabilità generale) in modo che la scrittura contabile risulti adeguata alla situazione in questione. (ad esempio sarà una causale che gestisce le note di accredito con conseguente schema contabile).
-3. Creare il nuvo documento nel modulo Vendita > Fatture di Vendita utilizzando la tipologia di fattura creata al punto 2. 
-    - La particolare tipologia impostata nel campo Natura Fattura di cui al punto 2. permette di inserire, nella griglia Articoli del documento, unicamente righe di tipo *Note* dove potremo inserire una breve descrizione della rettifica effettuata, ad esempio: "Documento emesso ai sensi dell'art. 26, comma 3 bis, D.P.R. n. 633/1972, al solo fine di recuperare l'IVA".
-    - Espandendo la sezione *Tipo Riferimento* della *Testata* del documento è possibile, oltre al campo Tipo riferimento, valorizzare anche il dettaglio della fattura precedente che viene rettificata.
-    - In questo particolare tipo di Nota di accredito la possibilità di gestire i valori è limitata esclusivamente alla sezione **Riepilogo** e precisamente nella griglia *Riepilogo IVA* dove si movimenterà direttamente il campo **Imposta** (in negativo) oltre al campo (codice) IVA (es. 22%), lasciano a zero l'imponibile (parliamo infatti di nota di accredito di sola iva)
-4. Generare il tracciato xml ed inviare la fattura elettronica come di consueto (secondo le istruzioni della guida in linea).
-5. Contabilizzare la Nota di accredito come di consueto. Abbinando una causale contabile tipica per le note di accredito Italia, ad esempio (presente nella lista degli ambienti Fast Start), la scrittura contabile sarà comunque eseguita in modo adeguato movimentando, nella sezione iva, solo l'imposta e non l'imponibile e nella sezione contabile stornando dal credito verso il cliente (in Avere) il valore dell'iva che viene dedotta dal conto iva vendite (in Dare) a fronte del recupero effettuato.
+1. U tablici Administracija > **Vrste dokumenata** provjerite postoji li (i po potrebi dodajte) odgovarajuća vrsta dokumenta. Polje Šifra / Opis može se slobodno imenovati, na primjer *Pojednostavljeni dobropis za povrat PDV-a*, ili *Dobropis samo za PDV* itd...; flag **Odobrenje** mora biti **aktivan** a polje **Kod za elektronski oblik dokumenta** mora sadržavati *TD08*
+2. U tablici Prodaja > **Vrste računa** provjerite postoji li (i po potrebi dodajte) odgovarajuća vrsta računa. Polje Šifra / Opis može se slobodno imenovati, na primjer *Pojednostavljeni dobropis za povrat PDV-a*, ili *Dobropis samo za PDV* itd... ; u polju **Vrsta računa** MORA biti odabrana opcija ***Dobropis samo za PDV***; polje **Vrsta dokumenta** treba sadržavati vrstu definiranu u točki 1., a polje **Predložak** (knjigovodstven) treba sadržavati odgovarajuću osnovu (koju je potrebno kreirati ili odabrati u tablici Administracija > Knjigovodstvene osnove), tako da knjiženje odgovara situaciji (na primjer, osnova koja upravlja dobropisima s odgovarajućim kontnim šemama).  
+3. Kreirajte novi dokument u modulu Prodaja > Prodajni računi koristeći vrstu računa definiranu u točki 2.   
+    - Posebna vrsta postavljena u polju Vrsta računa iz točke 2. omogućava unos u tablicu Artikala dokumenta samo redaka tipa *Napomena* gdje možete unijeti kratki opis izvršene ispravke, na primjer: "Dokument izdan prema članku 26, stavak 3 bis, D.P.R. br. 633/1972, isključivo za povrat PDV-a".  
+    - Proširivanjem sekcije *Vrsta reference* u *Zaglavlju* dokumenta moguće je, osim polja Vrsta reference, unijeti i detalje prethodnog računa koji se ispravlja.  
+    - U ovoj posebnoj vrsti dobropisa upravljanje vrijednostima ograničeno je isključivo na sekciju **Sažetak** točnije u tablicu *Sažetak PDV-a* gdje se direktno obrađuje polje **Porezi** (u negativnom iznosu) uz polje (šifra) PDV-a (npr. 22%), dok je osnovica nula (radi se o dobropisu samo za PDV).  
+4. Generirajte XML datoteku i pošaljite elektronički račun kao i obično (prema uputama u online vodiču).  
+5. Knjigovodstveno evidentirajte dobropis kao i obično. Povezujući odgovarajuću knjigovodstvenu osnovu tipičnu za dobropise u Italiji (npr. onu iz Fast Start okruženja), knjiženje će se izvršiti ispravno, obrađujući u PDV sekciji samo porez, a ne osnovicu, te u kontnom dijelu knjižeći iznos PDV-a koji se odbija s računa PDV prodaje (dužna strana) protiv potraživanja prema kupcu (potražna strana).  
 </details>
 
 <details>
 
-  <summary> 11. Come posso gestire una "Comunicazione" TD29 per comunicare una omessa o irregolare fatturazione da parte del fornitore? </summary>
+  <summary> 11. Kako mogu upravljati "Obavijesti" TD29 za prijavu izostavljene ili nepravilne fakturacije od strane dobavljača? </summary>
 
-1. Nella tabella Amministrazione > **Tipi Documento** verificare la presenza (e se necessario aggiungere) di una tipologia corrispondente. Il campo Codice / Descrizione può essere liberamente nominato, ad esempio *Comunicazione per errata fatturazione fornitore*, il flag **Autofattura** deve essere **attivo**, il campo **Codice per fatture elettroniche** deve riportare *TD29*
-2. Nella tabella Vendite > **Tipi Fatture** verificare la presenza (e se necessario aggiungere) di una tipologia corrispondente. Il campo Codice / Descrizione può essere liberamente nominato, ad esempio *Comunicazione per errata fatturazione*; nel campo **Natura Fattura** deve essere selezionata la voce ***Fattura***; il campo **Tipo documento** riporterà la tipologia di cui al punto 1. nel campo **Causale** (contabile) non è detto che sia necessario collegare una voce essendo questa solo una comunicazione di omessa fatturazione del fornitore, senza rilevanza ai fini IVA.
-3. Creare il nuvo documento nel modulo Vendita > Fatture di Vendita utilizzando la tipologia di fattura creata al punto 2. 
-   - Espandendo la sezione *Tipo Riferimento* della *Testata* del documento è possibile, se necessario, oltre al campo Tipo riferimento, valorizzare anche il dettaglio della fattura precedente che viene rettificata.
-   - Nel campo Cedente, nella testata del documento inserire i dati del Fornitore, mentre nel campo Cliente inserire l'anagrafica della nostra società appositamente creata per le autofatture.
-   - Nella sezione Articoli del documento inserire una riga con, ad esempio, la descrizione della merce non fatturata ed i relativi importi, oppure e si tratta di rettifica di irregolare o errata fattura il valore della rettifica.
-4. Creare il file xml ed inviarlo con le consuete procedure.
+1. U tablici Administracija > **Vrste Računa** provjerite postoji li (i po potrebi dodajte) odgovarajuću vrstu dokumenta. Polje Šifra / Opis može biti slobodno imenovano, na primjer *Obavijest o nepravilnoj fakturaciji*, flag **Samoobračun** mora biti **aktivan**, a polje **Kod za elektronski oblik dokumenta** mora sadržavati vrijednost *TD29*  
+2. U tablici Prodaja > **Tipovi računa** provjerite postoji li (i po potrebi dodajte) odgovarajuća tipologija. Polje Šifra / Opis može biti slobodno imenovano, na primjer *Obavijest o nepravilnoj fakturaciji*; u polju **Priroda računa** mora biti odabrana opcija ***Račun***; polje **Vrsta dokumenta** sadržavat će tip iz točke 1.; u polju **Predložak** (knjigovodstveni) nije nužno povezivati vrijednost, budući da se ovdje radi samo o obavijesti o propuštenoj fakturaciji od strane dobavljača, bez značaja za PDV.  
+3. Kreirati novi dokument u modulu Prodaja > Računi prodaje koristeći tipologiju računa kreiranu u točki 2.  
+   - Proširivanjem sekcije *Vrsta reference* u *Zaglavlju* dokumenta moguće je, ako je potrebno, osim polja Vrsta reference, popuniti i detalje prethodnog računa koji se ispravlja.  
+   - U polje Izdavatelj, u zaglavlju dokumenta, unijeti podatke Dobavljača, dok u polje Klijent unijeti šifru naše tvrtke posebno kreirane za samoobračune.  
+   - U sekciji Artikli dokumenta unijeti jedan red s opisom robe koja nije fakturirana i pripadajućim iznosima, ili ako se radi o ispravku nepravilnog ili pogrešnog računa, iznos ispravka.
+4. Kreirati XML datoteku i poslati je prema uobičajenim procedurama.  
 </details>
 
 <details>
-  <summary> 12. Come posso sbloccare una liquidazione periodica IVA stampata in definitivo? </summary>
+  <summary> 12. Kako mogu otključati periodičnu PDV likvidaciju koja je ispisana kao konačna? </summary>
 
-1. Nella form Amministrazione > DICHIARAZIONI > **Versamenti Iva**, dove sono riportati tutti i periodi per i quali è presente la liquidazione in definitivo, selezionare il periodo (anche più di uno) da sbloccare e premere il pulsante ***Cancella Liquidazioni IVA***.
-2. Normalmente, se quando è stata fatta la liquidazione in definitivo, è stata abilitata l'opzione per le scritture automatiche di giroconto, verrà visualizzato un messaggio che conferma la cancellazione automatica dei giroconti. Verrà inoltre mostrato un messaggio di avviso che ricorda di cancellare manualmente il record (per il periodo corrispondente) presente nella form **Dichiarazione iva periodica** che era stato creato automaticamente al lancio della liquidazione in definitivo.
+1. U tablici Administracija > IZJAVE > **Uplate PDV-a**, gdje su prikazani svi periodi za koje postoji konačna likvidacija, odabrati period (ili više njih) koji želite otključati i pritisnuti tipku ***Izbriši PDV likvidacije***.
+2. Ako je prilikom zaključavanja likvidacije bila aktivirana opcija za automatske knjiženja prijenosa (giroconto), prikazat će se poruka koja potvrđuje automatsko brisanje tih prijenosa. Također će se prikazati poruka koja podsjeća da je potrebno ručno izbrisati zapis (za odgovarajući period) iz forme **Periodična PDV prijava** koji je bio automatski kreiran prilikom pokretanja zaključavanja likvidacije.  
 3. Come riportato al punto precedente cancellare manualmente il record presente nella form **Dichiarazione iva periodica** per il periodo corrispondente a quello sbloccato. Ricordiamo che in questa tabella vengono memorizzati i dati per la gestione dei campi manuali della liquidazione (riporto credito, compensazione ecc...)
 4. Riportare indietro il contatore delle pagine e la data i ultima stampa per il sezionale IVA sul quale vengono stampate le liquidazioni periodiche (generalmente codice RIE in database FastStart). Accedere alla tabella Registri IVA, localizzare il sezionale da ripristinare (es. *RIE*) e manualmente correggere, per l'anno corrente nella griglia inferiore di dettaglio, i campi **Ultima pagina stampata**, **Data ultima stampa**.
 5. Se le liquidazioni periodiche vengono stampate accodandole ad un sezionale iva ordinario (ad esempio alle vendite o agli acquisti), ed in tutti i casi in cui si necessiti di modificare movimenti iva per i quali, oltre alla liquidazione in definitivo, sono stati stampati in definitivo anche i sezionali, dalla tabella **Registri IVA** premere il pulsante nella ribbon bar **Annulla stampe definitive**. Verrà mostrato un popup dove selezionare e confermare il periodo da sbloccare ed il sezionale iva da sbloccare. Nel caso di sblocco di più periodi per un determinato sezionale, si consiglia di procedere in modo consecutivo e sbloccando tutti gli eventuali periodi intermedi, procedendo dal più recente al più vecchio. Procedere quindi al ripristino manuale dei dati di *ultima pagina stampata, ultima data stampa, ed ultimo protocollo IVA*.
