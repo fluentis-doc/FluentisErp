@@ -1,15 +1,15 @@
 ---
-title: Numerazione Registri IVA
+title: Numeriranje zapisa PDV-a
 sidebar_position: 22
 ---
 
-Consente di impostare per ogni registro un numeratore dei protocolli iva con le consuete opzioni standard comuni agli altri numeratori presenti nel gestionale (salvo che per la formula di gestione alfanumerica: il protocollo iva è **SEMPRE** un numero), al posto della numerazione standard prevista per i registri iva.
+Omogućuje postavljanje za svaki registar brojača PDV protokola s uobičajenim standardnim opcijama koje su zajedničke s drugim brojačima prisutnim u sustavu (osim za formulu alfanumeričkog upravljanja: PDV protokol je **UVJEK** broj), umjesto standardne numeracije predviđene za PDV registre.
 
-Le impostazioni del numeratore sono le medesime degli altri numeratori standard.
+Postavke brojača iste su kao i kod ostalih standardnih brojača.
 
-La numerazione impostata nella presente tabella viene richiamata all'interno della [**tabella dei registri iva**](/docs/configurations/tables/finance/vat-books/)
+Numeracija postavljena u ovoj tablici poziva se unutar [**tablice PDV registara**](/docs/configurations/tables/finance/vat-books/)
 
-:::tip Nota
-Nella realtà italiana **non** è necessario definire nessun numeratore in questa tabella, in quanto la protocollazione segue **sempre** l'anno solare, indipendentemente dall'anno contabile a cavallo o meno dell'anno solare stesso, e quindi la numerazione standard già prevista in tabella Registri Iva è sufficiente alla gestione.
-L'opzione è stata inserita per casi esteri nei quali la protocollazione non segue l'anno solare
+:::tip Napomena
+U talijanskoj praksi **nije** potrebno definirati nikakav brojač u ovoj tablici, budući da protokoliranje **uvijek** prati kalendarsku godinu, neovisno o tome poklapa li se s računovodstvenom godinom ili ne, pa je standardna numeracija predviđena u tablici PDV registara dovoljna za upravljanje.
+Ova opcija unesena je za strane slučajeve u kojima protokoliranje ne prati kalendarsku godinu.
 :::
