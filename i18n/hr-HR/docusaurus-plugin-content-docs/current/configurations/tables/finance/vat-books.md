@@ -1,81 +1,81 @@
 ---
-title: Registri IVA
+title: Knjige PDV-a
 sidebar_position: 20
 ---
 
-Percorso form: **Configurazione > Tabelle > Amministrazione > Registri IVA**
+Putanja forme: **Konfiguracija > Tablice > Administracija > Knjige PDV-a**
 
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Na ovu tablicu utječe procedura [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+slučaju ručne konfiguracije potrebno je slijediti kontrolni popis na poveznici.
 
-I registri creati dal Fast Start sono già pronti per gestire
+Knjige PDV-a kreirane pomoću Fast Start-a već su spremne za upravljanje:
 
-- Acquisti e vendite Italia
-- Acquisti e vendite Reverse Charge oltre a sezionale per giroconto acquisti
-- Acquisti e vendite UE oltre a sezionale per giroconto acquisti
-- Acquisti e vendite Extra UE
-- Corrispettivi
-- Riepilogativo per stampa liquidazioni iva
+- Kupnje i prodaje u Italiji
+- Kupnje i prodaje s Reverse Charge-om, uz dodatnu pomoćnu knjigu za prijeboj kupnji
+- Kupnje i prodaje unutar EU, uz dodatnu pomoćnu knjigu za prijeboj kupnji
+- Kupnje i prodaje izvan EU
+- Gotovinske prometne račune (corrispettivi)
+- Sažetak za ispis obračuna PDV-a
 :::
 
-### Pulsanti specifici
+### Specifične tipke
 
-**Nuovo**: permette di effettuare l'inserimento di un nuovo registro IVA.  
-**Inserimento anno**: permette di effettuare l'inserimento di un nuovo anno per il registro IVA su cui si è posizionati.  
-**Cancella**: permette di effettuare la cancellazione del registro IVA su cui si è posizionati.  
-**Cancella anno**: permette di effettuare la cancellazione dell'anno del registro IVA su cui si è posizionati.  
-**Anteprima**: permette di effettuare la stampa.  
-**Stampa**: permette di effettuare la stampa.  
-**Annulla stampe definitive**: permette di effettuare l'annullamento delle stampe definitive dei registri. Si apre un dialog nel quale selezionare il registro e il periodo che si intende annullare.  
+**Novi**: omogućuje unos nove knjige PDV-a.  
+**Unos godine**: omogućuje unos nove godine za knjigu PDV-a na kojoj se trenutno nalazite.  
+**Obriši**: omogućuje brisanje knjige PDV-a na kojoj se trenutno nalazite.  
+**Obriši godinu**: omogućuje brisanje godine knjige PDV-a na kojoj se trenutno nalazite.  
+**Pregled**: omogućuje pregled ispisa.  
+**Ispis**: omogućuje ispis.  
+**Poništi konačne ispise**: omogućuje poništavanje konačnih ispisa knjiga PDV-a. Otvara se dijalog u kojem se odabire knjiga i razdoblje koje želite poništiti.  
 :::
 
-### Prima sezione 
+### Prvi odjeljak 
 
-**Codice**: codice alfanumerico identificativo del registro.
+**Šifra**: alfanumerička šifra koja identificira knjigu PDV-a.
 
-**Descrizione**: descrizione del registro stampato normalmente nei report ufficiali.
+**Opis**: opis knjige PDV-a koji se obično ispisuje u službenim izvještajima.
 
-**Tipo registro**: tipologia precodificata del registro. Prestare attenzione al corretto settaggio ad esempio dei registri che accolgono il giroconto per acquisti intra o reverse charge i quali saranno impostati su *Vendite* ed a differenziare correttamente la fattispecie degli acquisti / vendite in sospensione d'imposta ed il regime speciali ex art. 74 ter dpr 633/72.
+**Vrsta knjige**: unaprijed definirana tipologija knjige PDV-a. Potrebno je obratiti pažnju na ispravno postavljanje, primjerice kod knjiga koje primaju prijeboj za unutarzajamne kupnje (intra) ili reverse charge, koje će biti postavljene na Prodaje, te ispravno razlikovati slučajeve kupnji/prodaja u suspenziji poreza i posebne režime prema čl. 74-ter DPR 633/72.
 
-**Controllo protocolli**: l'impostazione di questo flag blocca la possibilità di stampare in definitivo un registro che abbia buchi nei protocolli o incongruenze nell'ordinamento degli stessi.
+**Kontrola protokola**: postavljanje ove opcije blokira mogućnost konačnog ispisa knjige PDV-a koja ima praznine u protokolima ili nedosljednosti u njihovom redoslijedu.
 
-**Da ventilare**: questo flag impone la gestione del registro relativo nella procedura di ventilazione dei corrispettivi.
+**Za ventilaciju**: ova opcija zahtijeva da se knjiga PDV-a uključi u postupak ventilacije gotovinskih računa.
 
-**Da liquidare**: permette di determinare quali registri IVA siano da gestire nella stampa della Liquidazione IVA periodica.
+**Za obračun**: omogućuje određivanje koje će se knjige PDV-a koristiti u ispisu periodičnog obračuna PDV-a.
 
-**Rif. reg. acquisto**: il campo è attivo solo per i registri vendite/corrispettivi, al fine di indicare il registro iva acquisti d'origine della ventilazione dei corrispettivi.
+**Ref. knjige kupnji**: polje je aktivno samo za knjige prodaje/gotovinskih računa, kako bi se mogla naznačiti knjiga PDV-a kupnji iz koje potječe ventilacija gotovinskih računa.
 
-**Descrizione**: descrizione rif. reg. acquisto.
+**Opis**: opis referentne knjige kupnji.
 
-**Numerazione**: consente di impostare per ogni registro un numeratore con le consuete opzioni standard comuni agli altri numeratori presenti nel gestionale, al posto della numerazione standard prevista per i registri iva. Nella localizzazione italiana questo campo non viene utilizzato.
+**Numeracija**: omogućuje postavljanje brojača za svaku knjigu PDV-a s uobičajenim standardnim opcijama koje su zajedničke ostalim brojačima u sustavu, umjesto standardne numeracije predviđene za knjige PDV-a. U talijanskoj lokalizaciji ovo se polje ne koristi.
 
-**Descrizione**: descrizione del numeratore associato
+**Opis**: opis povezan s brojačem.
 
-**Tipo attività Iva**: la combo box rinvia alla tabella Tipo attività Iva dove è possibile codificare liberamente diverse tipologie di attività ai fini iva (a titolo di esempio "Produzione" ed "Immobiliare") ai quali associare una percentuale di *Pro Rata* di detraibilità iva. E' presenta anche un flag per definire quale sia l'attività principale prevalente sulla quale totalizzare i valori nella liquidazione iva.
+**Vrsta PDV aktivnosti**: padajući izbornik povezan je s tablicom Vrste PDV aktivnosti, gdje je moguće slobodno definirati različite tipove aktivnosti u svrhu PDV-a (npr. "Proizvodnja" ili "Nekretnine"), kojima se može pridružiti postotak Pro Rata odbitka PDV-a. Dostupna je i opcija za označavanje glavne aktivnosti, na kojoj će se totalizirati vrijednosti u obračunu PDV-a.
 
-**Descrizione**: descrizione del tipo attività iva
+**Opis**: opis vrste PDV aktivnosti
 
-### Seconda sezione  
+### Drugi odjeljak
 
-Consente di impostare il contatore dei protocolli per ogni anno contabile nel campo 'Prot. IVA Iniziale'.
+Omogućuje postavljanje brojača protokola za svaku poslovnu godinu u polju Početni PDV protokol.
 
-**Anno**: anno di riferimento.
+**Godina**: referentna godina.
 
-**Prot. IVA iniziale**: protocollo IVA iniziale dell'anno di riferimento.
+**Početni PDV protokol**: početni PDV protokol za referentnu godinu.
 
-**Ultimo prot. IVA**: consente di visualizzare qual'è l'ultimo protocollo IVA che è stato stampato in definitivo nel registro stesso.
+**Zadnji PDV protokol**: omogućuje pregled koji je zadnji PDV protokol ispisan kao konačan u samoj knjizi.
 
-**Data ultima stampa**: data di esecuzione dell'ultima stampa definitiva.
+**Datum zadnjeg ispisa**: datum izvršenja zadnjeg konačnog ispisa.
 
-**Ultima pag. stampata**: ultimo numero di pagina stampata in definitiva.
+**Zadnja ispisana stranica**: zadnji broj stranice ispisane u konačnoj verziji.
 
-:::tip nota
-la stampa di questa tabella consente di visualizzare l'ultimo periodo stampato in modo definitivo per ogni registro e anno
+:::tip Napomena
+Ispis ove tablice omogućuje pregled zadnjeg razdoblja koje je u cijelosti ispisano kao konačno za svaku knjigu PDV-a i godinu.
 :::
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE AMMINISTRATIVE**](/docs/video/finance/intro)
+:::important Vidi također
+[**VIDEO TUTORIJALI O ADMINISTRATIVNIM TABLICAMA**](/docs/video/finance/intro)
 :::
