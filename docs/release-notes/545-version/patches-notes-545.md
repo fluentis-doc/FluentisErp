@@ -3,6 +3,12 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+
+### Patch 545.1-0122 - 23/09/2025
+
+> - WM - Corretto mancato filtro su componenti scaduti in inserimento massivo componenti distinta base (#TT04070/25).  
+> - SD - Risolvere il problema di cancellazione fatture di vendita con più di 2100 articoli(#TT04134/25).
+
 ### Patch 545.1-0121 - 04/09/2025
 
 > - MES - Ora con la procedura di rilascio degli ordini di produzione vengono movimentati solo gli articoli che hanno come tipo prelievo Automatico nei parametri MRP. (#TT03691/25)  
