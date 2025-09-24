@@ -1,126 +1,126 @@
 ---
-title: Aliquote IVA
+title: PDV stope
 sidebar_position: 1
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Na ovu tablicu utječe procedura [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+U slučaju ručne konfiguracije potrebno je slijediti kontrolni popis na poveznici.
 :::
 
-Questa tabella è comune a tutte le società presenti nella base dati e presenta la lista delle aliquote IVA applicabili in tutto il gestionale.
+Ova tablica je zajednička za sve tvrtke u bazi podataka i prikazuje popis PDV stopa primjenjivih u cijelom sustavu.
 
-Si tratta di una tabella precaricata sulla quale l'utente abilitato può operare per modificare o aggiungere quanto fosse necessario per l'attività della società.
+Radi se o unaprijed učitanoj tablici na kojoj ovlašteni korisnik može izvršavati izmjene ili dodavanja prema potrebama poslovanja tvrtke.
 
-### Griglia principale
+### Glavna mreža
 
-**Codice / Descrizione**: codice e relativa descrizione per richiamare l'aliquota iva che si sta parametrizzando numerico, di identificazione dell'aliquota.
+**Šifra / Opis**: šifra i odgovarajući opis za pozivanje PDV stope koju se parametrizira; numerički identifikator stope.
 
-**Descrizione secondaria**: ulteriore descrizione che può essere utilizzata per report di stampa personalizzati ecc... (normalmente non necessaria)
+**Sekundarni opis**: dodatni opis koji se može koristiti za prilagođene izvještaje i ispise (obično nije nužan).
 
-**Percentuale**: definisce la percentuale IVA da applicare. Per i codici di esenzione, esclusione e non imponibilità occorre impostare 0.
+**Postotak**: definira postotak PDV-a koji se primjenjuje. Za kodove oslobađanja, izuzeća i neoporezivosti potrebno je postaviti 0.
 
-**Cat. IVA**: richiama le tipologie di IVA fisse previste dal gestionale. La tipologia è molto importante, ad esempio, per la totalizzazione dei vari movimenti nella comunicazione trimestrale delle liquidazioni IVA e più in generale per tutti i dichiarativi IVA. Le opzioni disponibili per la localizzazione italiana sono:
-    - *Aliquota*
-    - *Non imponibile*
-    - *Esente*
-    - *Escluso*
-    - *74 ter CEE*, per le agenzie viaggio
-    - *74 ter FUORI CEE*, per le agenzie viaggio
-    - *74 ter PARTE CEE*, per le agenzie viaggio
-    - *74 ter PARTE FUORI CEE*, per le agenzie viaggio
+**Kategorija PDV-a**: poziva unaprijed definirane tipove PDV-a predviđene u sustavu. Tip je vrlo važan, primjerice, za totalizaciju različitih transakcija u tromjesečnom izvještaju PDV-a i, općenito, za sve PDV deklaracije. Opcije dostupne za talijansku lokalizaciju su:
+    - *Stopa*
+    - *Neoporezivo*
+    - *Oslobođeno*
+    - *Isključeno*
+    - *74 ter CEE*, za putničke agencije
+    - *74 ter FUORI CEE*, za putničke agencije
+    - *74 ter PARTE CEE*, za putničke agencije
+    - *74 ter PARTE FUORI CEE*, za putničke agencije
 
-**Perc. indetraibilità**: definisce la percentuale di indetraibilità da applicare all'imposta. Verrà riportata all'interno della registrazione contabile nella sezione IVA ai fini del calcolo effettiva della quota indetraibile, può essere modificata o forzata direttamente nella registrazione. 
+**Postotak nedopustivosti odbitka**: definira postotak PDV-a koji se ne može odbiti. Ova vrijednost se prikazuje unutar knjiženja u sekciji PDV-a za izračun stvarnog dijela koji se ne može odbiti i može se promijeniti ili prisilno postaviti izravno u knjiženju. 
 
-**Plafond**: il flag definisce quali aliquote sono collegate alle dichiarazioni di intento: solo le aliquote che hanno questo flag attivo rendono visibile, nella griglia iva della registrazione contabile, il combo box di collegamento delle dichiarazioni di intento. 
+**Plafond**: ova opcija definira koje su PDV stope povezane s izjavama o namjeri (dichiarazioni d’intento). Samo stope s uključenim ovim označivačem omogućuju prikaz padajućeg izbornika za povezivanje s izjavama o namjeri u mreži PDV-a knjiženja.
 
-ATTENZIONE: il flag è irrilevante per la gestione delle dichiarazioni di intento nel ciclo documentale in acquisto/vendita: qui è rilevante solo quello che viene impostato dentro il rispettivo registro delle dichiarazioni di intento emesse / ricevute.
+PAŽNJA: opcija je nevažna za upravljanje izjavama o namjeri u dokumentnom ciklusu kupnje/prodaje; tamo je relevantno isključivo ono što je postavljeno unutar odgovarajuće knjige izdanih/prihvaćenih izjava o namjeri.
 
-Ai fini del calcolo del plafond generale, inoltre, questo flag identifica l’aliquota che "**consuma**" mese per mese il nostro plafond generale disponibile in qualità di esportatori abituali (dentro la procedura di gestione plafond), quindi lato acquisti.
+Za izračun ukupnog plafonda, ovaj označivač također identificira stopu koja **"troši"** mjesečno naš ukupni raspoloživi plafon kao redovni izvoznici (u okviru procedure upravljanja plafonom), posebno s aspekta kupnji.
 
-**Vendita Estera per Plafond**: con questo flag si identificano le aliquote iva, presenti nelle registrazioni di vendita dell’anno yyyy, che **incrementano** il nostro plafond disponibile per l’anno yyyy+1 in qualità di esportatore abituale.
+**Strana prodaja za Plafond**: s ovim označivačem identificiraju se PDV stope u knjigama prodaje godine yyyy koje **povećavaju** raspoloživi plafon za godinu yyyy+1 kao redovni izvoznici.
 
-**In dich. IVA**: il flag imposta quali aliquote siano da gestire nella dichiarazione/comunicazione trimestrale delle liquidazioni IVA e più in generale in tutti i dichiarativi IVA. Esempio: tipicamente i codici corrispondenti alla categoria IVA *Escluso* avranno il presente flag <u>non</u> attivo, mentre le *aliquote*, gli *esenti* ed i *non imponibili* avranno il flag attivo in quanto devono essere inseriti nei dichiarativi iva. (Cfr le istruzioni ministeriali della dichiarazione iva annuale o della comunicazione trimestrale delle liquidazioni).
+**U PDV prijavi**: označava koje PDV stope treba uključiti u tromjesečne PDV prijave i, općenito, u sve PDV deklaracije. Primjer: kodovi u kategoriji PDV-a *Isključeno* obično <u>nemaju</u> aktiviran ovaj označivač, dok *stope*, *oslobođeno* i *neoporezivo* imaju označivač aktiviran jer moraju biti uključene u PDV deklaracije (usp. upute ministarstva za godišnju PDV prijavu ili tromjesečnu komunikaciju obračuna PDV-a).
 
-**Non Intra**: il flag imposta le aliquote che, pur essendo utilizzate in documenti (nei moduli fatture acquisti/vendite) o in registrazioni di tipo intra-cee, non vanno considerate tali. Viene letto nella creazione automatica dei riepiloghi Intrastat.
+**Ne Intra**: označava PDV stope koje, iako se koriste u dokumentima (u modulima faktura kupnje/prodaje) ili u intra-CEE knjiženjima, ne trebaju biti smatrane intra-CEE stopama. Koristi se prilikom automatskog generiranja Intrastat sažetaka.
 
-**Rep. San Marino**: il flag determina quali siano le aliquote utilizzate nelle operazioni con San Marino (Obsoleto, comunicazione abrogata).
+**Rep. San Marino**: označava PDV stope korištene u transakcijama sa San Marinom (zastarjelo, obavijest ukinuta).
 
-**% IVA Agr. Detr.**: il campo imposta la percentuale di indetraibilità compensativa fissa dell'aliquota in caso di movimento in regime agricolo.
+**% PDV poljoprivredne nedopustivosti**: polje definira fiksni postotak odbitka PDV-a za poljoprivredni režim u slučaju knjiženja u skladu s poljoprivrednim režimom.
 
-**Consenti IVA 0 in LG**: il flag impone la registrazione di righe IVA con importo 0 sia dare che avere nel Libro giornale. La [**causale contabile**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) causale contabile d'utilizzo, comunque, deve prevedere lo stesso tipo di autorizzazione delle righe a 0.
+**Omogući PDV 0 u Dnevniku**: ovaj označivač zahtijeva knjiženje PDV stavki s iznosom 0, i na dugu i na potražnoj strani, u Dnevniku. Ipak, [**računovodstvena šifra**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) koja se koristi mora također omogućavati stavke s iznosom 0.
 
-**Import oro argento**: il flag consente di impostare quali aliquote vadano riepilogate nei campi previsti nella Comunicazione IVA annuale. (Da considerare attualmente obsoleto)
+**Uvoz zlato/srebro**: označava koje PDV stope se sažimaju u polja predviđena za Godišnju PDV prijavu. (Trenutno zastarjelo)
 
-**Import rottami**: il flag consente di impostare quali aliquote vadano riepilogate nei campi previsti nella Comunicazione IVA annuale. (Da considerare attualmente obsoleto)
+**Uvoz otpadaka**: označava koje PDV stope se sažimaju u polja predviđena za Godišnju PDV prijavu. (Trenutno zastarjelo)
 
-**Non in spesometro**: il flag consente di escludere dallo *spesometro* i movimenti IVA collegati a questa aliquota. (Da considerare attualmente obsoleto)
+**Ne u spesometro**: označava isključivanje PDV transakcija povezanim s ovom stopom iz *spesometra*. (Trenutno zastarjelo)
 
-**Codice PA**: In questo campo va inserito il codice previsto per la fatturazione elettronica tra privati e verso la pubblica amministrazione nei casi in cui non sia presente l'iva (esenzione, esclusione, non imponibilità). Per il dettaglio dei codici previsti Cfr. alle specifiche tecniche della fattura elettronica pubblicate sul sito dell'Agenzia delle Entrate.
+**Šifra PA**: u ovo polje unosi se šifra predviđena za elektroničko fakturiranje između privatnih subjekata i prema javnoj upravi u slučajevima kada nema PDV-a (oslobođenje, izuzeće, neoporezivo). Za detalje šifri pogledajte tehničke specifikacije elektroničkih faktura objavljene na webu Porezne uprave.
 
-**Escludi da Dichiarazione di intento**: flag attualmente non utilizzato in concreto da alcuna procedura. Sviluppato per impostare, eventualmente, che l'aliquota iva corrispondente, con flag attivo, non possa essere sovrascritta dal codice iva impostato nel registro dichiarazioni di intento come codice da utilizzare per le operazioni in esenzione a fronte di dichiarazione di intento.
+**Isključi iz Izjave o namjeri**: opcija trenutno nije aktivno korištena u nijednoj proceduri. Razvijena je da, eventualno, spriječi da PDV stopa s aktiviranim označivačem bude prepisana šifrom PDV-a postavljenom u knjizi izjava o namjeri za transakcije u oslobođenju prema toj izjavi.
 
-**Escludi da causale automatica**: attivando questo flag il codice iva corrispondente non viene riportato all'interno di scritture contabili generate in automatico in quanto collegate alla causale contabile principale tramite il campo *Causale automatica*.
+**Isključi iz automatske šifre**: aktiviranjem ovog označivača odgovarajuća šifra PDV-a ne se prenosi u automatski generirane knjiženja jer je povezana s glavnom računovodstvenom šifrom preko polja *Automatska šifra*.
 
-:::note  Nota
-L'utilizzo del flag diventa **fondamentale** in un caso in particolare: si pensi al ricevimento di una **fattura d'acquisto "mista"**, in cui il fornitore ha fatturato parte **in reverse charge** e parte in regime ordinario. Pertanto sulla parte ordinaria si avrà la detrazione dell'iva sull'acquisto, mentre la quota parte in reverse charge risulterà neutra in quanto registrata sia sul registro acquisti, sia sul registro vendite. Differenziando opportunamente i codici iva utilizzati, ad esempio creando un codice "Reverse charge misto quota detraibile" ed attivando il presente flag su detto codice, se nella registrazione principale lato acquisto saranno imputate le somme corrispondenti ai due codici (es. 22 per la quota in reverse charge e "Reverse charge misto....") nel giroconto creato automaticamente soltanto il codice 22 sarà riportato, generando in automatico la detrazione soltanto sulla quota esclusa dal meccanismo di reverse charge.
+:::note  Napomena
+Korištenje ovog označivača postaje **ključno** u određenim situacijama, primjerice kod primitka **“mješovite” fakture kupnje**, gdje je dobavljač fakturirao dio u **reverse charge** režimu, a dio u redovnom režimu. Za dio u redovnom režimu PDV se može odbiti pri kupnji, dok će dio u reverse charge biti neutralan jer se knjiži i u knjizi kupnji i u knjizi prodaja. Pravilnim razlikovanjem PDV šifri, primjerice kreiranjem šifre "Reverse charge mješoviti – odbitni dio" i aktiviranjem ovog označivača na toj šifri, u automatski kreiranom prijebojnom knjiženju bit će prikazana samo šifra 22, čime se automatski priznaje odbitak samo na dijelu koji nije uključen u reverse charge mehanizam.
 :::
 
-**IVA per causali automatiche**: questo campo serve per forzare un particolare codice iva nella registrazione contabile generata automaticamente (es un giroconto per reverse charge) rispetto a quello usato nella registrazione principale (es. quella lato acquisto nel reverse charge).
+**PDV za automatske šifre**: ovo polje služi za prisilno postavljanje određene PDV šifre u automatski generiranom knjiženju (npr. prijeboj za reverse charge) u odnosu na šifru korištenu u glavnom knjiženju (npr. s kupovne strane u reverse charge-u).
 
-:::note Nota
-L'utilizzo del campo diventa **fondamentale** in un caso in particolare: si pensi al ricevimento di una **fattura di acquisto in reverse charge con iva parzialmente o totalmente indetraibile**. Di default il software imposterebbe lo stesso codice iva anche nel giroconto lato vendita e la percentuale di indetraibilità determina di fatto una "non imponibilità" per pari quota. Dunque di fatto l'effetto sarebbe sempre neutro. Per esercitare la detrazione limitata occorre invece che tutta l'iva lato vendite sia imponibile, rimanendo così un costo la quota indetraibile sul lato acquisti. Per evitare di entrare manualmente nella registrazione di giroconto generata automaticamente a correggere il codice iva (ad esempio il 2250 che presenta una detrazione limitata al 50%) rimettendo un codice 22, è possibile impostare il presente campo che in automatico provvederà alla correzione.
+:::note Napomena
+Korištenje ovog polja postaje **ključno** u slučaju primitka **fakture kupnje u reverse charge-u s djelomično ili potpuno neodbitnim PDV-om**. Po zadanim postavkama softver bi primijenio istu PDV šifru i u prijebojnom knjiženju s prodajne strane, a postotak neodbitnosti bi efektivno značio "neoporezivo" za taj dio. Dakle, efekt bi bio neutralan.
+Za ostvarivanje ograničenog odbitka potrebno je da PDV s prodajne strane bude u potpunosti oporeziv, dok neodbitni dio ostaje trošak s kupovne strane. Kako bi se izbjeglo ručno mijenjanje PDV šifre u automatski generiranom prijebojnom knjiženju (npr. šifra 2250 s 50% ograničenog odbitka koja bi se trebala promijeniti u šifru 22), moguće je koristiti ovo polje, koje automatski vrši korekciju.
 :::
 
-**Data fine validità**: il codice non sarà più utilizzabile dopo la data che viene impostata, utile per bloccare l'utilizzo di codici non più in vigore.
+**Datum isteka valjanosti**: nakon postavljenog datuma šifra više neće biti dostupna, što je korisno za blokiranje korištenja zastarjelih PDV šifri.
 
-**Base per conteggio bollo**: poiché il bollo in fattura viene inserito in automatico solo quando si è in presenza di codici iva esenti, esclusi o non imponibili (viene rilevata la *Categoria IVA* del codice stesso) e la fattura supera un certo importo (impostato nella tabella dell'anagrafica della società) il significato di questo flag è di andare a gestire alcune casistiche che, seppur esenti o non imponibili o escluse, fanno eccezione e non prevedono l'applicazione del bollo. In questi casi pertanto il flag dovrà essere disattivato.
+**Osnova za obračun pečata**: budući da se pečat na fakturi unosi automatski samo kada postoje PDV šifre oslobođene, isključene ili neoporezive (prepoznaje se Kategorija PDV-a same šifre) i kada faktura prelazi određeni iznos (postavljeno u tablici osnovnih podataka tvrtke), funkcija ovog označivača je upravljanje posebnim slučajevima koji, iako oslobođeni, neoporezivi ili isključeni, predstavljaju iznimku i ne podliježu primjeni pečata. U tim slučajevima označivač treba biti isključen.
 
-NOTA: in caso di errata attivazione del flag su codici di tipo Aliquota prevale comunque la lettura della categoria IVA e pertanto il bollo NON viene inserito.
+NAPOMENA: u slučaju pogrešnog aktiviranja označivača na šiframa tipa Stopa, prevladava čitanje kategorije PDV-a i pečat NE se unosi.
 
-**Reverse charge**: vedere [**qui**](/docs/finance-area/particular-cases/mixed-reverse-charge)
+**Reverse charge**: vidi [**ovdje**](/docs/finance-area/particular-cases/mixed-reverse-charge)
 
-**Iva del margine / Iva del margine di riferimento**: vedere [**qui**](/docs/finance-area/particular-cases/VAT_regime-del-maine)
+**PDV na maržu / Referentni PDV na maržu**: vidi [**ovdje**](/docs/finance-area/particular-cases/VAT_regime-del-maine)
 
-###  Tipo contab IVA  
+###  Vrsta PDV knjiženja  
 
-in questa sezione è possibile definire per ogni aliquota IVA uno o più sottoconti per l'IVA acquisti/vendite (necessità tipicamente connessa a localizzazioni non italiane, ad esempio dei paesi dell'est Europa, dove vi è l'obbligo di rilevare contabilmente su sottoconti separati l'applicazione di iva ridotta, piuttosto che normale o maggiorata).
-E' inoltre possibile abbinare detti conti ad un *Tipo contabilizzazione IVA* da codificare nell'apposita  [**tabella**](/docs/configurations/tables/finance/vat-accounting-types) , attribuito al cliente/fornitore all'interno dell'anagrafica, o previsto di default nei [**parametri generali di contabilità**](/docs/configurations/parameters/finance/accounting-parameters)
+U ovom odjeljku moguće je definirati za svaku PDV stopu jedan ili više podračuna za PDV kupnji/prodaja (obično relevantno za lokalizacije izvan Italije, npr. zemlje Istočne Europe, gdje je obavezno knjiženje smanjenog, normalnog ili povećanog PDV-a na zasebne podračune).
+Također je moguće povezati te račune s *Vrsta PDV knjiženja* koja se kodira u odgovarajućoj [**tablici**](/docs/configurations/tables/finance/vat-accounting-types) , dodjeljuje klijentu/dobavljaču unutar osnovnih podataka ili se definira kao zadana u [**općim računovodstvenim parametrima**](/docs/configurations/parameters/finance/accounting-parameters)
 
-**Tipo / Descr. contab. IVA**: codice /descrizione del tipo di contabilizzazione IVA (campo non obbligatorio).
+**Vrsta / Opis PDV knjiženja**: šifra / opis vrste PDV knjiženja (polje nije obavezno).
 
- **Conto acquisti**: il conto di acquisto da proporre per questo tipo di contabilizzazione IVA.
+ **Račun kupnji**: račun kupnje predložen za ovu vrstu PDV knjiženja.
 
-**Sottoconto acquisti**: il sottoconto di acquisto da proporre per questo tipo di contabilizzazione IVA.
+**Podračun kupnji**: podračun kupnje predložen za ovu vrstu PDV knjiženja.
 
-**Descrizione**: descrizione del sottoconto di acquisto da proporre per questo tipo di contabilizzazione IVA.
+**Opis**: opis podračuna kupnje predložen za ovu vrstu PDV knjiženja.
 
-**Conto vendite**: il conto di vendita da proporre per questo tipo di contabilizzazione IVA.
+**Račun prodaje**: račun prodaje predložen za ovu vrstu PDV knjiženja.
 
-**Sottoconto vendite**: il sottoconto di vendita da proporre per questo tipo di contabilizzazione IVA.
+**Podračun prodaje**: podračun prodaje predložen za ovu vrstu PDV knjiženja.
 
-**Descrizione**: descrizione del sottoconto di vendita da proporre per questo tipo di contabilizzazione IVA.
+**Opis**: opis podračuna prodaje predložen za ovu vrstu PDV knjiženja.
 
-### Note 
+### Napomene 
 
-**Codice**: codice, numerico, di identificazione dell'aliquota.
+**Šifra**: numerička šifra koja identificira PDV stopu.
 
-**Note**: eventuali note da aggiungere. 
+**Napomene**: eventualne dodatne napomene.
 
-### Specifiche per Dichiarazione 
+### Specifikacije za prijavu
 
-In questa sezione è possibile parametrizzare i vari codici iva, utilizzati nelle registrazioni contabili, in modo tale da ottenere un report di stampa (da creare al bisogno tramite il report designer integrato in Fluentis) che rappresenti un fac-simile di Dichiarazione annuale iva.
-Il report aggregherà i vari codici iva utilizzati durante l'anno in modo da esporre i vari totali da riportare nei righi della dichiarazione fiscale.
-Occorre pertanto abbinare ad ogni codice iva il corretto rigo della dichiarazione dove dovrà essere inserito, riferendosi alle istruzioni ministeriali ed alle logiche specifiche del dichiarativo in oggetto, alle quali si rinvia.
+U ovom odjeljku moguće je parametizirati različite PDV šifre korištene u knjiženjima kako bi se generirao ispisni izvještaj (po potrebi kreiran putem integriranog report designera u Fluentisu) koji predstavlja primjer godišnje PDV prijave.
+Izvještaj će agregirati sve PDV šifre korištene tijekom godine kako bi prikazao ukupne iznose koje treba unijeti u redove porezne prijave. Stoga je potrebno povezati svaku PDV šifru s odgovarajućim redom prijave prema uputama ministarstva i specifičnim pravilima relevantne prijave.
 
-**Operazioni**: Richiamare tramite la combo box il tipo di operazione: Attiva, passiva o Reverse charge al fine di distinguere la quota parte di operazioni iva inserite con il codice corrispondente da inserire nei righi del dichiarativo riferiti agli acquisti, vendite oppure reverse charge.
+**Operacije**: pomoću padajućeg izbornika odabrati tip operacije: Aktivna, Pasivna ili Reverse charge, kako bi se razlikovali dijelovi transakcija koje se knjiže s odgovarajućom PDV šifrom u redove prijave za kupnje, prodaje ili reverse charge.
 
-**Riga dichiarazione fiscale / Descrizione**: Richiamare tramite la combo box il rigo (codice e descrizione) della dichiarazione iva da associare (l'elenco è precaricato e non modificabile dall'utente).
+**Redak prijave / Opis**: pomoću padajućeg izbornika odabrati redak (šifra i opis) PDV prijave kojem će PDV šifra biti pridružena (popis je unaprijed učitan i korisnik ga ne može mijenjati).
   
-### VIDEO TUTORIALS
+### VIDEO TUTORIJALI
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS ALIQUOTE IVA**](/docs/video/finance/intro)
+:::important Vidi također
+[**VIDEO TUTORIJALI PDV STOPA**](/docs/video/finance/intro)
 :::
  
