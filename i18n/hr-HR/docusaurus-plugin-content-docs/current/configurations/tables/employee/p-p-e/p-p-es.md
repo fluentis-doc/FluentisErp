@@ -1,55 +1,55 @@
 ---
-title: D.P.I.
+title: Oprema zaštite na radu
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > D.P.I. > D.P.I.**.
+Tablica se nalazi na putu **Tabele > Zaposlenici > Oprema zaštite na radu > Oprema zaštite na radu**.
 
-In questa tabella è possibile codificare i D.P.I., acronimo di Dispositivi di Protezione Individuale, che gli operatori necessitano di possedere per svolgere determinate mansioni.   
-Alcuni esempi di utilizzo dei *D.P.I.* li troviamo nelle gestioni:
-> **Mansioni** - nel tabulatore *D.P.I. da consegnare*;   
-> **Consegne/Resi D.P.I.**;   
-> **Storico Consegne/Resi D.P.I.**.
+U ovoj tablici moguće je kodirati Oprema zaštite na radu, skraćeno O.Z.R., koju operateri trebaju posjedovati za obavljanje određenih zadataka.  
+Neki primjeri korištenja *O.Z.R.* nalazimo u upravljanjima:
+> **Zadaci** - u kartici *O.Z.R. za dodijeliti*;
+> **Dodjela/Povrat O.Z.R.**;   
+> **Povijest dodjele/povrata O.Z.R.**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-#### Ricerca D.P.I. 
+#### Pretraživanje O.Z.R.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na gumb **Traži** kako bi se prikazali rezultati unutar mreže rezultata.
 
-#### Inserimento D.P.I. 
+#### Unos O.Z.R.
 
-Per poter inserire nuovi *D.P.I.* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih O.Z.R. potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti gumb **Novo**.   
+Za novi zapis moraju se unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-## D.P.I.
+## Oprema zaštite na radu
 
-E' l'elenco dove vengono inserite le informazioni principali del *D.P.I.*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *D.P.I.*.   
-> **Descrizione**: è la descrizione del *D.P.I.*.   
-> **Codice categoria**: è il codice della *Categoria D.P.I.*.   
-> **Descrizione categoria**: è la descrizione della *Categoria D.P.I.*.   
-> **Codice categoria di rischio**: è il codice della *Categoria rischio D.P.I.*.   
-> **Descrizione categoria di rischio**: è la descrizione della *Categoria rischio D.P.I.*.   
-> **Mesi validità**: è il numero di mesi di validità del *D.P.I.* in condizioni normali di utilizzo.   
-> **CE**: indica se il *D.P.I.* è marchiato CE (marchio di Certificazione Europea).   
-> **Attivo**: indica se il *D.P.I.* è ancora valido e utilizzabile.   
-> **Uso**: annotazioni libere sull'argomento.   
-> **Prescrizioni o raccomandazioni per l'uso**: annotazioni libere sull'argomento.   
-> **Documentazione disponibile**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.
+Ovo je popis u koji se unose osnovne informacije o *O.Z.R.*.   
+Popis se sastoji od sljedećih informacija:   
+> **Šifra**: šifra Kategorije *O.Z.R.*   
+> **Opis**: opis Kategorije *O.Z.R.*   
+> **Šifra kategorije**: šifra *Kategorije O.Z.R.*  
+> **Opis kategorije**: opis *Kategorije O.Z.R.*   
+> **Šifra kategorije rizika**: šifra *Kategorije rizika O.Z.R.*  
+> **Opis kategorije rizika**: opis *Kategorije rizika O.Z.R.*   
+> **Mjeseci valjanosti**: broj mjeseci valjanosti *O.Z.R.* u normalnim uvjetima korištenja   
+> **CE**: označava je li *O.Z.R.* označen CE znakom (Certifikacija Europske unije)   
+> **Aktivno**: označava je li *O.Z.R.* još uvijek valjan i upotrebljiv   
+> **Uporaba**: slobodne napomene o korištenju   
+> **Preporuke ili upute za uporabu**: slobodne napomene   
+> **Dostupna dokumentacija**: slobodne napomene  
+> **Bilješka**: slobodne napomene
 
-### Dispositivo di Protezione Individuale utilizzato nelle Mansioni
+### Oprema zaštite na radu korištena u Zadacima
 
-E' l'elenco, di sola lettura, dove vengono visualizzate tutte le *Mansioni* che utilizzano il *D.P.I.* selezionato.   
-Le informazioni visualizzate sono inserite e gestite nella gestione delle *Mansioni*.
-L'elenco si compone delle seguenti informazioni:   
-> **Codice della mansione**: è il codice della *Mansione*.   
-> **Descrizione della mansione**: è la descrizione della *Mansione*.   
-> **Uso**: annotazioni riportate per l'*Uso* specifico del *D.P.I.* se utilizzato per la specifica *Mansione*.   
-> **Prescrizioni o raccomandazioni per l'uso**: annotazioni riportate per le *Prescrizioni o raccamandazioni per l'uso* specifico del *D.P.I.* se utilizzato per la specifica *Mansione*.   
-> **Note**: annotazioni libere.
+Ovo je popis samo za pregled, u kojem se prikazuju svi *Zadaci* koji koriste odabrani *O.Z.R.*.
+Informacije se unose i upravljaju u upravljanju *Zadacima*.
+Popis se sastoji od sljedećih informacija:  
+> **Šifra zadatka**: šifra *Zadatka*.   
+> **Opis zadatka**:  opis *Zadatka*.   
+> **Uporaba**: napomene unesene za specifičnu *Uporabu* O.Z.R. u okviru odabranog *Zadatka*.   
+> **Preporuke ili upute za uporabu**: napomene unesene za *Preporuke* ili upute za uporabu *O.Z.R.* specifične za taj *Zadatak*.  
+> **Bilješke**: slobodne napomene.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
