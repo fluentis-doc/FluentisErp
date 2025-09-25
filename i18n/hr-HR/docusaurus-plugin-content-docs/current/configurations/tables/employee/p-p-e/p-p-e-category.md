@@ -1,28 +1,28 @@
 ---
-title: Categorie D.P.I.
+title: P.P.E. Category
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > D.P.I. > Categorie D.P.I.**.
+Tablica se nalazi na putu **Tablice > Zaposlenici > P.P.E. Category > P.P.E. Category**.
 
-In questa tabella è possibile codificare le *Categorie D.P.I.* che sono utilizzate per categorizzare i *D.P.I.*.   
-Un esempio di utilizzo lo troviamo nella gestione **D.P.I.**.
+U ovoj tablici moguće je kodirati P.P.E. Category koje se koriste za kategorizaciju OZO-a.
+Primjer korištenja nalazi se u upravljanju OZO-om.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-#### Ricerca Categorie D.P.I. 
+#### Pretraživanje P.P.E. Category 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na gumb **Traži** kako bi se prikazali rezultati unutar mreže rezultata.
 
-#### Inserimento Categorie D.P.I. 
+#### Unos P.P.E. Category
 
-Per poter inserire nuove *Categorie D.P.I.* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih P.P.E. Category potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti gumb **Novo**.   
+Za novi zapis moraju se unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-#### Campi specifici 
+#### Specifična polja
     
-> **Codice**: è il codice della *Categoria D.P.I.*.   
-> **Descrizione**: è la descrizione della *Categoria D.P.I.*.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *P.P.E. Category*.  
+> **Opis**: opis *P.P.E. Category*.     
+> **Bilješke**: slobodne napomene.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju formi pogledajte sljedeću poveznicu [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
