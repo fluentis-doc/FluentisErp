@@ -145,53 +145,53 @@ Veza u procesu knjiženja prodaje je Vrsta računa > Numeracija > Povezana knji�
   <summary> 13. Kako postupiti za otključavanje konačnog ispisa Dnevnik knjiženja? </summary>
 
 1. Kada je izrađen konačni ispis Knjige dnevnika, u formi za ispis **Dnevnik knjiženja**  bila je pokrenuta funkcija ispisa s uključenim oznakom *Definitivno*. U tom trenutku, podsjećamo, izvršavala se i kontrola s odgovarajućom porukom upozorenja, ukoliko su postojali knjiženi dokumenti s datumom prije odabranih datuma u filtru ispisa, a koji još nisu bili ispisani kao konačni. Upozorenje se ipak moglo zanemariti. Period ispisan kao konačan postajao je zaključan za bilo kakve izmjene u knjiženjima.  
-2. **Per sbloccare** un periodo stampato in definitivo accedere alla form Configurazione > Parametri > Amministrazione > **Parametri di contabilità**  per l'anno corrente o quello da sbloccare ed utilizzare il pulsante **Annulla stampe definitive**. Apparirà un popup dove specificare il periodo (da data a data) per il quale eseguire lo sblocco. Lo sblocco consiste, tecnicamente, nel porre le registrazioni interessate nel periodo in stato non definitivo (campo visibile solo nel database oppure trascinando la proprietà IsPrintedInJournal - Stampato in libro giornale, in una form che punta all'oggetto FSPosting quale ad esempio la form *Registrazioni contabili* accessibile dal menu Amministrazione > Registrazioni > Registrazioni), pertanto si consiglia di agire in modo ordinato e consecutivo evitando di lasciare periodi non in definitivo, i quali saranno comunque segnalati dall'avviso di cui al punto precedente.
-3. Dopo lo sblocco occorre ripristinare manualmente i dati memorizzati nella form dei Parametri di contabilità in fase di stampa definitiva:
-    - Data ultima stampa libro giornale: riportandola indietro all'ultima data registrazione non sbloccata
-    - Ultima pagina / riga: riportandola all'ultima non sbloccata
-    - Saldo Dare / Avere: cancellando i valori che poi saranno ricreati automaticamente con la nuova stampa definitiva.
+2. **Za otključavanje** razdoblja koje je već definitivno otisnuto, potrebno je pristupiti formi Konfiguracija > Parametri > Administracija > **Računovodstveni parametri**  za tekuću godinu ili godinu koju želite otključati, te koristiti tipku **Otkaži zaključni izvještaj**. Pojavit će se skočni prozor u kojem treba navesti razdoblje (od datuma do datuma) za koje želite izvršiti otključavanje. Otključavanje tehnički znači postavljanje svih relevantnih knjiženja unutar odabranog razdoblja u status nije definitivno (polje je vidljivo samo u bazi podataka, ili ako se svojstvo IsPrintedInJournal - Otisnuto u glavnoj knjizi doda u formu koja referira na objekt FSPosting poput forme *Računovodstvene evidencije* dostupne putem izbornika Administracija > Evidencije > Evidencije), Stoga se preporučuje postupati uredno i kronološki, kako bi se izbjegla situacija u kojoj ostaju razdoblja koja nisu u definitivnom stanju, takva razdoblja će i dalje biti prijavljena kroz upozorenje opisano u prethodnoj točki.  
+3. Nakon otključavanja, potrebno je ručno vratiti podatke koji su prethodno bili pohranjeni u formi Računovodstveni parametri tijekom procesa konačnog ispisa:  
+    - Datum posljednjeg ispisa glavne knjige: postaviti na posljednji datum knjiženja koji nije bio otključan  
+    - Zadnja stranica / redak: vratiti na posljednju vrijednost koja nije bila obuhvaćena otključavanjem  
+    - Saldo Dugovna / Potražna strana: izbrisati postojeće vrijednosti, budući da će se one automatski ponovno izračunati prilikom nove konačne ispise  
 </details>
 
 <details>
 
-  <summary> 14. Come posso chiudere forzatamente una partita aperta? </summary>
+  <summary> 14. Kako mogu prisilno zatvoriti otvorenu partiju? </summary>
 
-Lo stato di una partita, (aperta, chiusa, parzialmente aperta) è calcolato dal sistema e non può essere forzato agendo direttamente sul campo dello Stato partita, verrebbe immediatamente ricalcolato.
-La partita è *chiusa* (e viene rilevato questo stato) solo se esiste un pagamento per quella partita (ad essa agganciato ed avente lo stesso numero).
+Stanje jedne partije (otvorena, zatvorena, djelomično otvorena) izračunava sustav i ne može se prisiliti izravnim djelovanjem na polje Stanje partije; odmah bi se ponovno izračunalo.  
+Partija je *zatvorena* (i ovo stanje se bilježi) samo ako postoji uplata za tu partiju (vezana uz nju i s istim brojem).
 
-Pertanto il modo corretto per la chiusura di una partita creata extra-contabilmente, oppure rimasta aperta inquanto una registrazione contabile di pagamento non ha generato anche il pagamento a livello di partite, consiste nell'utilizzare la seguente procedura.
+Stoga, ispravan način za zatvaranje stavke koja je stvorena izvan knjigovodstva, ili koja je ostala otvorena jer knjiženje plaćanja nije generiralo i plaćanje na razini stavki, sastoji se u korištenju sljedeće procedure.
 
-1. Accedere alla form Amministrazione > Partite > **Pagamenti**
-2. Creare un nuovo pagamento con il tasto **Nuovo** 
-3. Subito dopo l'apertura della form con i dati del nuovo pagamento, anzichè compilare manualmente, utilizzare il comando **Crea da partite / Pagamenti** che fa comparire un popup per la ricerca e selezione della partita aperta che si vuole chiudere. Nel popup sono presenti i consueti campi di ricerca delle partite, è sufficiente selezionare con il mouse la partita da chiudere e premere il bottone **Seleziona**. Verranno creati automaticamente i collegamenti tra partita e pagamento in modo corretto. Lo stato della partita verrà automaticamente ricalcolato come *Chiusa*.
+1. Otvorite formu Administracija > Partije > **Plaćanja**
+2. Kreirajte novo plaćanje klikom na tipku **Novo** 
+3. Odmah nakon otvaranja forme s podacima novog plaćanja, umjesto da ih unosite ručno, kliknite na naredbu **Kreiraj iz partija / Plaćanja** koji prikazuje iskačući prozor za pretraživanje i odabir otvorene stavke koju želite zatvoriti. U iskačućem prozoru nalaze se uobičajena polja za pretraživanje stavki, dovoljno je odabrati mišem stavku koju želite zatvoriti i pritisnuti gumb **Odaberi**. Automatski će se stvoriti ispravne veze između stavke i plaćanja. Status stavke bit će automatski preračunat kao *Zatvorena*.
 
 </details>
 
 <details>
 
-  <summary> 15. Come posso ripristinare una ricevuta bancaria già presentata o accreditata? </summary>
+  <summary> 15. Kako mogu poništiti (vratiti natrag) bankovnu mjenicu koja je već prezentirana ili odobrena? </summary>
 
-La procedura di emissione di una ricevuta bancaria e la sua successiva contabilizzazione e presentazione la salvo buon fine prevede una serie di passaggi tra loro sequenziali. Pertanto nel caso in cui si tenti di eseguire il ripristino (rollback) ad esempio della,creazione di una ricevuta bancaria che è già stata presentata in banca o accreditata, il software impedirà questa operazione restituendo un messaggio di avviso.
+Postupak izdavanja bankovne potvrde i njezine kasnije knjiženja i prezentacije na račun dobar završetak (salvo buon fine) uključuje niz uzastopnih koraka. Stoga, u slučaju da se pokuša izvršiti vraćanje (rollback), na primjer, stvaranja bankovne potvrde koja je već predstavljena banci ili akreditirana, softver će onemogućiti ovu operaciju vraćajući poruku upozorenja.
 
-Tutte le fasi della creazione e presentazione con successivo accredito, nonchè le operazioni di contabilizzazione, possono essere ripristinate, ma occorre agire nell'ordine logico corretto, partendo dalle operazioni eseguite successivamente fino ad arrivare alle prime fasi.
+Sve faze kreiranja i prezentacije s naknadnim knjiženjem, kao i operacije knjiženja, mogu se obnoviti, ali je potrebno djelovati u ispravnom logičkom redoslijedu, počevši od kasnijih operacija do prvih faza.
 
-Se, pertanto, la sequenza delle operazioni compiute per la creazione è la seguente:
+Dakle, redoslijed operacija izvršenih za kreiranje je sljedeći:
 
-- Contabilizzazione della fattura di vendita con apertura partita
-- Creazione automatica delle Ricevuta bancaria dalle partite aperte
-- Contabilizzazione dell'emissione della ricevuta bancaria (spesso eseguita contestualmente al punto precedente - wizard)
-- Creazione distinta di presentazione e inserimento degli effetti (ricevute bancarie) nella distinta
-- Contabilizzazione della presentazione distinta
-- Contabilizzazione Accredito Ricevute bancarie
+- Knjiženje izlazne fakture s otvaranjem partije
+- Automatsko kreiranje bankovne mjenice iz otvorenih partija
+- Knjiženje izdavanja bankovne mjenice (često se obavlja zajedno s prethodnim korakom putem čarobnjaka – wizard)
+- Kreiranje prezentacijske liste i umetanje efekata (bankovnih mjenica) u listu  
+- Knjiženje prezentacije liste  
+- Knjiženje odobrenja (accredito) bankovnih mjenica  
 
-Il rollback dovrà seguire questo ordine
+Redoslijed za poništavanje (rollback)  
 
-- Ripristino contabilizzazione accredito
-- Ripristino contabilizzazione distinta
-- Rimozione dell'effetto (ricevuta bancaria) dalla distinta (che potrebbe non essere cancellabile contenendo anche altri effetti) selezionandolo da dentro la distinta e premendo il tasto CANC
-- Ripristino della contabilizzazione effetti (PRIMA DEL PUNTO SUCCESSIVO)
-- Ripristino della creazione automatica effetti dalle partite
+- Poništavanje knjiženja odobrenja  
+- Poništavanje knjiženja prezentacijske liste  
+- Uklanjanje efekta (bankovne mjenice) iz prezentacijske liste (koja možda neće biti moguće izbrisati ako sadrži i druge efekte), odabirom unutar liste i pritiskom na tipku DELETE
+- Poništavanje knjiženja efekata (PRIJE sljedećeg koraka)  
+- Poništavanje automatskog kreiranja efekata iz partija  
  
-Ricordiamo che le procedure di ripristino sono accessibili dalle stesse form dove è avvenuta la creazione, nell'apposito tab successivo, sempre presente.
+Podsjećamo da su procedure poništavanja dostupne unutar istih formi u kojima je izvršeno početno kreiranje, u odgovarajućoj kartici koja se nalazi odmah uz glavnu, i koja je uvijek prisutna.
 
 </details>

@@ -1,34 +1,35 @@
 ---
-title: Home KB
+title: Početna stranica KB
 sidebar_position: 2
 ---
 
 
 <details>
 
-  <summary>1. Inserendo la Partita IVA in una nuova anagrafica contatto e cliccando Proponi dati nella ribbon bar, vengono completati i campi generici. C'è un collegamento diretto alle camere di commercio o altro servizio simile? </summary>
+  <summary> 1. Unosom PDV broja u novi kontakt i klikom na Predloži podatke u traci s alatima, popunjavaju se opća polja. Postoji li izravna veza s trgovačkim komorama ili sličnom uslugom? </summary>
   
-Fluentis è collegato con gli archivi VIES, messi a disposizione dalla comunità europea, quindi sono reperibili le informazioni di molte aziende italiane ed europee. All'inserimento quindi del numero della partita iva verranno proposti i dati conosciuti.
+Fluentis je povezan s VIES arhivima, koje je osigurala europska zajednica, tako da su dostupne informacije o mnogim talijanskim i europskim tvrtkama. Pri unosu broja PDV-a bit će ponuđeni poznati podaci.
 
 </details>
 
 <details>
 
-  <summary>2. E' possibile colorare a piacimento le celle delle griglie di ricerca se contengono un determinato valore? </summary>
+  <summary>2. Je li moguće po želji obojati ćelije u mrežama za pretraživanje ako sadrže određenu vrijednost? </summary>
 
-Sì, questa funzionalità è possibile utilizzando il **Conditional formatting**. Per scegliere il colore da attribuire a una cella contenente un determinato valore, posizionarsi sull'intestazione della colonna, poi tasto destro > Conditional Formatting > Manage rules. Nella maschera uscente selezionare **New Rule**, per far aprire la maschera New Formatting Rule.
-Qui selezionare come tipologia la tipologia di regola desiderata dall'elenco. Nella sezione **Edit the rule description**, selezionare **[...]** e nella maschera uscente, inserire il primo valore che potrebbe assumere la colonna; salvare.
-Cliccare poi **Format** e nella maschera uscente, tab **Fill**, scegliere il colore che la colonna deve assumere se il valore corrisponde a quello appena inserito. Confermare. 
-Creare una nuova regola per ogni valore che la colonna può assumere. Salvare ed effettuare un refresh della maschera per visualizzare il risultato.
+Da, ta je funkcionalnost moguća korištenjem **Uvjetnog oblikovanja**. Da biste odabrali boju koju će ćelija dobiti ako sadrži određenu vrijednost, postavite se na zaglavlje stupca, zatim kliknite desnim klikom > Conditional Formatting > Manage rules. U otvorenom prozoru odaberite *New Rule**, da biste otvorili prozor za stvaranje novog pravila (New Formatting Rule).  
+Ovdje odaberite vrstu pravila koje želite iz popisa. U dijelu **Edit the rule description**, kliknite na **[...]** u otvorenom prozoru unesite prvu vrijednost koju stupac može imati i spremite.  
+Zatim kliknite na **Format** u otvorenom prozoru na kartici **Fill**, odaberite boju koju želite da ćelija dobije ako je vrijednost jednaka onoj koju ste upravo unijeli. Potvrdite odabir.  
+Za svaku vrijednost koju stupac može imati, kreirajte novo pravilo. Spremite i osvježite formu da biste vidjeli rezultat.  
 
 </details>
 
 
 <details>
 
-  <summary>3. E' possibile nascondere ad un utente una determinata tipologia di fattura? </summary>
+  <summary>3. Je li moguće sakriti određenoj korisniku određenu vrstu računa? </summary>
   
-Sì, con le <b>Restrizioni</b>. Esse impediscono agli utenti di creare, visualizzare o modificare determinate tipologie di documenti. Di seguito viene riportato l'esempio per impedire ad un utente di utilizzare il Tipo fattura con codice FVITDIF. Ricordiamo che è necessario aggiungere la Restrizione anche nel profilo Arm dell'utente, nell'appostia griglia.            
+Da, pomoću <b>restrikcija</b>. One sprječavaju korisnike u kreiranju, pregledavanju ili izmjeni određenih tipova dokumenata.
+Primjerice, da biste spriječili korisnika da koristi vrstu računa s kodom FVITDIF, potrebno je dodati odgovarajuću restrikciju i u korisnički ARM profil, u predviđenu tablicu.            
 
 
 ![](/img/it-it/sales/sales-invoices/search-sales-invoices/restriction.png)
