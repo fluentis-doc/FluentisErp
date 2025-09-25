@@ -1,15 +1,15 @@
 ---
-title: Qualità KB
+title: Kvaliteta KB
 sidebar_position: 1
 ---
 
 <details>
 
-  <summary>1. Chi può Approvare e Chiudere i <b>Reclami</b> e le <b>Non conformità</b>?</summary>
+  <summary>1. Tko može odobriti i zatvoriti <b>Reklamacije</b> i <b>Nesukladnosti</b>?</summary>
   
-I Reclami e le Non conformità possono essere Approvati e Chiusi solo da:
-- Persona responsabile: in questo campo è possibile inserire il Dipendente codificato, che deve avere un utente Arm associato;
-- Funzione responsabile: è possibile abilitare alla modifica un'intera funzione aziendale; in questo caso deve fare Apri form nella Funzione aziendale ed inserire, nella griglia in basso, i Dipendenti da abilitare per ogni funzione aziendale selezionata.
+Reklamacije i Nesukladnosti mogu odobravati i zatvarati isključivo:  
+- Odgovorna osoba: u ovo polje moguće je unijeti šifriranog zaposlenika koji mora imati pridružen ARM korisnički račun;  
+- Odgovorna funkcija: moguće je omogućiti uređivanje čitavoj poslovnoj funkciji; u tom slučaju potrebno je otvoriti formu za poslovnu funkciju i u donjoj tablici unijeti Zaposlenike koje želite ovlastiti za svaku odabranu funkciju.  
 
 
 </details>
