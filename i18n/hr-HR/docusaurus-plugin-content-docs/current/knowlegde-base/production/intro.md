@@ -1,20 +1,20 @@
 ---
-title: Produzione KB
+title: Proizvodnja KB
 sidebar_position: 1
 ---
 
 <details>
 
-  <summary>1. Come esporre a video la <b>versione</b> del componente nella distinta base?</summary>
+  <summary>1. Kako prikazati na ekranu <b>verziju</b> komponente u glavnoj listi?</summary>
   
-  Per esporre a video la versione del componente nella distinta base bisogna inserire il valore 1 nel campo OPPR_componentversion della tabella OP_Param. 
+  Da biste prikazali verziju komponente u glavnoj listi, potrebno je unijeti vrijednost 1 u polje OPPR_componentversion u tablici OP_Param. 
 
   > select OPPR_componentversion,* from OP_Param   
     update OP_Param   
     set OPPR_componentversion = 1    
 
-:::danger Attenzione
-Fare attenzione ad aggiornare la riga che corrisponde alla società e divisione di riferimento.
+:::danger Upozorenje
+Pazite da ažurirate redak koji odgovara relevantnoj tvrtki i diviziji.
 :::
 
 </details>

@@ -1,15 +1,15 @@
 ---
-title: Logistica KB
+title: Logistika KB
 sidebar_position: 1
 ---
 
 
 <details>
 
-  <summary>1. Nella <b>Visualizzazione giacenze</b> come vengono utilizzati i filtri dell'UM alternativa?</summary>
+  <summary>1. Kako se u <b>Vizualizaciji zaliha</b> koriste filtri za alternativnu mjernu jedinicu?</summary>
   
-Questo filtro viene utilizzato nel caso in cui il cliente abitualmente cambi il fattore di conversione degli articoli per svariati motivi.
-Il filtro <b>somma dei movimenti</b> considera l'UM alternativa come somma dei movimenti di carico/scarico effettuati e prende come valori i valori presenti nelle registrazioni di magazzino.
-Il filtro <b>fattore di conversione</b> effettua invece un ricalcolo per tutti i movimenti andando ad inserire il fattore di conversione attivo al momento della ricerca e quindi ignorando il valore interno alle registrazioni di magazzino e inserendo la nuova conversione in base al nuovo fattore.
+Ovaj filter se koristi kada kupac redovito mijenja faktor pretvorbe artikala iz različitih razloga.  
+Filter <b>zbroj kretanja</b> tretira alternativnu mjernu jedinicu kao zbroj ulaznih i izlaznih kretanja te uzima vrijednosti iz skladišnih zapisa.  
+Filter <b>Faktor pretvorbe</b> vrši ponovno preračunavanje za sva kretanja tako da koristi faktor pretvorbe koji je aktivan u trenutku pretraživanja, ignorirajući vrijednosti u skladišnim zapisima i primjenjujući novu pretvorbu prema novom faktoru.  
 
 </details>
