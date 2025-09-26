@@ -1,28 +1,28 @@
 ---
-title: Categorie competenza
+title: Kategorije kompetencija
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Mansioni > Categorie competenza**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Radna mjesta > Kategorije kompetencija**.
 
-In questa tabella è possibile codificare le *Categorie competenza* che sono utilizzate per categorizzare le *Mansioni*.   
-Un esempio di utilizzo lo troviamo nella gestione **Competenze**.
+U ovoj tablici moguće je kodirati *Kategorije kompetencija*, koje se koriste za kategorizaciju *Radnih mjesta*.
+Primjer primjene vidljiv je u upravljanju **Kompetencijama**.
 
-La tabella consente di inserire nuove *Categorie competenza* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.
+Tablica omogućuje unos novih *Kategorija kompetencija* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.
 
-#### Ricerca Categorie competenza 
+#### Pretraživanje kategorija kompetencija
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-#### Inserimento Categorie competenza 
+#### Unos kategorija kompetencija
 
-Per poter inserire nuove *Categorie competenza* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih Kategorija kompetencija potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-#### Campi specifici 
+#### Specifična polja
     
-> **Codice**: è il codice della *Categoria competenza*.   
-> **Descrizione**: è la descrizione della *Categoria competenza*.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Kategorije kompetencija*.   
+> **Opis**: opis *Kategorije kompetencija*.   
+> **Napomene**: slobodne bilješke
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
