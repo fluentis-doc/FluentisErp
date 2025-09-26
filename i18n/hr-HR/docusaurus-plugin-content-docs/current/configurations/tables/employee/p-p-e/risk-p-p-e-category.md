@@ -1,30 +1,30 @@
 ---
-title: Categorie rischio D.P.I.
+title: P.P.E. Kategorija rizika
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > D.P.I. > Categorie rischio D.P.I.**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > D.P.I. > Kategorije rizika D.P.I.**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le *Categorie rischio D.P.I.* che sono utilizzate per categorizzare le fasce di rischio dei *D.P.I.*.   
-Un esempio di utilizzo lo troviamo nella gestione **D.P.I.**.
+:::important Čemu služi
+U ovoj tablici moguće je kodirati *Kategorije rizika D.P.I.*, koje se koriste za kategorizaciju razina rizika *D.P.I.-ja.*.   
+Primjer primjene vidljiv je u upravljanju **D.P.I.**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.
 
-#### Ricerca Categorie rischio D.P.I. 
+#### Pretraživanje kategorija rizika D.P.I.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti *Traži* kako bi se rezultati prikazali u mreži rezultata.
 
-#### Inserimento Categorie rischio D.P.I. 
+#### Unos kategorija rizika D.P.I. 
 
-Per poter inserire nuove *Categorie rischio D.P.I.* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Kategorija rizika D.P.I.* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-#### Campi specifici 
+#### Specifična polja
     
-> **Codice**: è il codice della *Categoria rischio D.P.I.*.   
-> **Descrizione**: è la descrizione della *Categoria rischio D.P.I.*.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Kategorije rizika D.P.I.*   
+> **Opis**: opis *Kategorije rizika D.P.I.*   
+> **Napomene**: slobodne bilješke
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link:[Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
