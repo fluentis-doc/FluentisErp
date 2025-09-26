@@ -2204,11 +2204,11 @@
     "description": "The label for category Nuova Fattura in sidebar purchase"
   },
   "sidebar.purchase.category.Procedure comuni": {
-    "message": "Procedure comuni",
+    "message": "Zajednički postupci",
     "description": "The label for category Procedure comuni in sidebar purchase"
   },
   "sidebar.sales.category.Procedure comuni": {
-    "message": "Procedure comuni",
+    "message": "Zajednički postupci",
     "description": "The label for category Procedure comuni in sidebar sales"
   },
   "sidebar.treasury.category.Creazione e Gestione insoluti": {
@@ -2276,27 +2276,27 @@
     "description": "The label for category Gannts e istogrammi F.C.S. in sidebar planning"
   },
   "sidebar.purchase.category.Richieste di offerta": {
-    "message": "Richieste di offerta",
+    "message": "Zahtjevi za ponudu",
     "description": "The label for category Richieste di offerta in sidebar purchase"
   },
   "sidebar.purchase.category.Commesse di acquisto": {
-    "message": "Commesse di acquisto",
+    "message": "Nabavne narudžbe",
     "description": "The label for category Commesse di acquisto in sidebar purchase"
   },
   "sidebar.sales.category.Documenti SDI e NSO": {
-    "message": "Documenti SDI e NSO",
+    "message": "Dokumenti SDI i NSO",
     "description": "The label for category Documenti SDI e NSO in sidebar sales"
   },
   "sidebar.sales.category.Documenti SDI": {
-    "message": "Documenti SDI",
+    "message": "Dokumenti SDI",
     "description": "The label for category Documenti SDI in sidebar sales"
   },
   "sidebar.sales.category.Documenti NSO": {
-    "message": "Documenti NSO",
+    "message": "Dokumenti NSO",
     "description": "The label for category Documenti NSO in sidebar sales"
   },
   "sidebar.logistics.category.Spedizioni": {
-    "message": "Spedizioni",
+    "message": "Dostave",
     "description": "The label for category Spedizioni in sidebar logistics"
   },
   "sidebar.configurations.category.Tabelle F.C.S.": {
