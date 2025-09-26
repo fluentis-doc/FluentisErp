@@ -1,42 +1,42 @@
 ---
-title: Gestione della Campagna Marketing
+title: Upravljanje marketinškom kampanjom 
 sidebar_position: 3
 ---
 
-La gestione delle campagne marketing in Fluentis è altamente strutturata e flessibile, permettendo di creare workflow personalizzati, definire budget e costi, selezionare i contatti destinatari e gestire l’esecuzione delle campagne in maniera automatizzata o manuale. Di seguito viene spiegato tecnicamente come viene gestito questo processo all'interno del gestionale.
+Upravljanje marketinškim kampanjama u Fluentisu je visoko strukturirano i fleksibilno, omogućujući kreiranje prilagođenih radnih tokova, definiranje budžeta i troškova, odabir kontaktnih osoba kao primatelja te upravljanje izvršenjem kampanja na automatiziran ili ručan način. U nastavku se tehnički objašnjava kako se ovaj proces upravlja unutar sustava.
 
-**Creazione del Workflow della Campagna Marketing**
-In Fluentis, la gestione delle campagne marketing si basa sulla creazione di un workflow, che rappresenta il flusso di lavoro della campagna. Il workflow è suddiviso in vari stati, ognuno dei quali può prevedere azioni specifiche, come l'invio di email, la registrazione di interazioni o l'avvio di altre attività di marketing.
+**Izrada workflowa za marketinšku kampanju**
+U Fluentisu se upravljanje marketinškim kampanjama temelji na izradi workflowa, koji predstavlja tijek rada kampanje. Workflow se sastoji od više faza (stanja), od kojih svaka može uključivati specifične radnje, poput slanja emailova, bilježenja interakcija ili pokretanja drugih marketinških aktivnosti.  
 
-*Stati del Workflow*: Ogni stato del workflow rappresenta una fase della campagna. Per esempio, lo stato iniziale potrebbe essere "Preparazione", seguito da "Invio Email", "Follow-up", "Analisi Risultati", ecc.
+*Stanja workflowa*: svako stanje workflowa predstavlja određenu fazu kampanje. Na primjer, početno stanje može biti "Priprema", zatim slijedi "Slanje emaila", "Follow-up", "Analiza rezultata", itd.
 
-*Azioni Predefinite*: All'interno di ogni stato, è possibile definire azioni specifiche. Ad esempio, nello stato "Invio Email", si può programmare l’invio automatico di una email a tutti i contatti selezionati. Le azioni possono includere anche attività come l'aggiornamento del CRM, la registrazione delle risposte o il passaggio a uno stato successivo del workflow in base ai risultati ottenuti.
+*Predefinirane radnje*: Unutar svakog stanja mogu se definirati konkretne radnje. Primjerice, u fazi „Slanje emaila“ moguće je automatski zakazati slanje emailova svim odabranim kontaktima. Radnje također mogu uključivati ažuriranje CRM baze, bilježenje odgovora ili automatski prijelaz u sljedeću fazu workflowa na temelju ostvarenih rezultata.  
 
-*Automazione*: Il workflow può essere configurato per eseguire automaticamente determinate azioni al verificarsi di condizioni specifiche. Ad esempio, se un contatto non risponde a una email entro un certo periodo, il sistema può inviare automaticamente un promemoria o aggiornare lo stato del contatto nel CRM.
+*Automatizacija*: Workflow se može konfigurirati za automatsko izvođenje određenih radnji kad se ispune zadani uvjeti. Primjerice, ako kontakt ne odgovori na email unutar određenog vremena, sustav može automatski poslati podsjetnik ili ažurirati status kontakta u CRM-u.  
 
-**Compilazione della Campagna Marketing**
-Durante la creazione della campagna marketing, Fluentis permette di compilare tutti i dettagli rilevanti per la gestione e il monitoraggio della campagna.
+**Ispunjavanje podataka kampanje**
+Tijekom kreiranja marketinške kampanje, Fluentis omogućuje ispunjavanje svih relevantnih detalja za upravljanje i praćenje kampanje.
 
-*Definizione del Budget*: È possibile specificare il budget totale disponibile per la campagna. Questo budget viene monitorato durante l’esecuzione della campagna per garantire che le spese rimangano entro i limiti definiti.
+*Definiranje budžeta*: Moguće je postaviti ukupan budžet za kampanju, koji se zatim može pratiti tijekom provedbe kako bi se osiguralo da troškovi ostanu unutar zadanih granica.  
 
-*Registrazione dei Costi*: Man mano che la campagna procede, è possibile registrare i costi associati a ciascuna attività (come costi per l'acquisto di liste di contatti, spese per il design delle email, ecc.). Fluentis permette di confrontare i costi effettivi con il budget pianificato, fornendo una visione chiara delle spese.
+*Evidentiranje troškova*: Kako kampanja napreduje, moguće je bilježiti troškove povezane s pojedinim aktivnostima (npr. kupnja kontakt lista, dizajn emailova itd.). Fluentis omogućuje usporedbu stvarnih troškova s planiranim budžetom, dajući jasnu sliku o potrošnji.  
 
-*Obiettivi della Campagna*: Oltre ai costi, è possibile definire gli obiettivi della campagna, come il numero di lead generati, il tasso di conversione atteso, o il ritorno sull'investimento (ROI). Questi parametri aiutano a valutare l'efficacia della campagna una volta completata.
+*Postavljanje ciljeva kampanje*: Osim budžeta, moguće je definirati i konkretne ciljeve kampanje, poput broja generiranih leadova, očekivane stope konverzije ili povrata na ulaganje (ROI). Ovi parametri pomažu u ocjeni uspješnosti kampanje nakon njezina završetka.  
 
-**Scelta della Lista di Distribuzione e Selezione dei Contatti**
-Una volta definito il workflow e i dettagli della campagna, è necessario selezionare i destinatari della campagna.
+**Odabir distribucijske liste i kontakata**
+Nakon što su workflow i detalji kampanje definirani, potrebno je odabrati kontakte kojima će kampanja biti poslana.  
 
-*Creazione della Lista di Distribuzione*: Fluentis consente di creare liste di distribuzione basate su segmentazioni avanzate dei contatti. Queste liste possono essere generate utilizzando criteri specifici, come la demografia, lo storico degli acquisti, l'interesse per determinati prodotti o servizi, e altro ancora.
+*Izrada distribucijske liste*: Fluentis omogućuje kreiranje distribucijskih lista temeljenih na naprednoj segmentaciji kontakata. Liste se mogu generirati prema specifičnim kriterijima, poput demografskih podataka, povijesti kupnji, interesa za određene proizvode ili usluge i slično.  
 
-*Selezione dei Contatti*: Dalla lista di distribuzione, è possibile selezionare i contatti che riceveranno la campagna. Questa selezione può essere ulteriormente raffinata manualmente o tramite filtri aggiuntivi, per assicurare che i messaggi raggiungano il pubblico più appropriato.
+*Odabir kontakata*: Iz distribucijske liste moguće je selektirati kontakte koji će primiti kampanju. Ova selekcija može se dodatno precizirati ručno ili pomoću dodatnih filtara, kako bi se osiguralo da poruke dosegnu najrelevantniju ciljanu skupinu.  
 
-Personalizzazione*: Fluentis permette anche di personalizzare i contenuti della campagna in base ai dati dei singoli contatti, migliorando l'efficacia del messaggio.
+*Personalizacija*: Fluentis također omogućuje personalizaciju sadržaja kampanje na temelju podataka iz profila pojedinih kontakata, čime se povećava učinkovitost poruke.
 
-**Esecuzione del Workflow o Invio Manuale delle Email**
-L'ultima fase della gestione della campagna riguarda l'esecuzione del workflow e l'invio delle comunicazioni ai contatti selezionati.
+**Izvršavanje workflowa ili ručno slanje emailova**
+Završna faza upravljanja kampanjom odnosi se na provođenje workflowa i slanje komunikacija odabranim kontaktima.  
 
-*Esecuzione Automatica del Workflow*: Se il workflow è stato configurato per l'automazione, Fluentis eseguirà le azioni predefinite in ciascuno stato del workflow senza bisogno di intervento manuale. Questo include l'invio di email, la gestione delle risposte, e il passaggio automatico tra gli stati del workflow in base alle condizioni impostate.
+*Automatsko izvršavanje workflowa*: Ako je workflow konfiguriran za automatizaciju, Fluentis će automatski izvršavati sve definirane radnje u svakom stanju workflowa, bez potrebe za ručnim intervencijama. To uključuje slanje emailova, upravljanje odgovorima i automatsko prebacivanje između faza, ovisno o postavljenim uvjetima.  
 
-*Invio Manuale delle Email*: Se preferito, è possibile gestire l’invio delle email manualmente. Questo può essere utile in situazioni in cui si desidera avere un controllo più diretto sul momento esatto in cui vengono inviate le comunicazioni, o per invii ad hoc non pianificati nel workflow automatico.
+*Ručno slanje emailova*: Ako se preferira, moguće je upravljati slanjem emailova ručno. To je korisno u situacijama kada je potreban veći nadzor nad vremenom slanja ili kod ad hoc kampanja koje nisu dio automatiziranog workflowa.  
 
-*Monitoraggio in Tempo Reale*: Durante l'esecuzione, Fluentis permette di monitorare in tempo reale lo stato della campagna, visualizzando quali email sono state inviate, aperte, o se ci sono state interazioni da parte dei destinatari.
+*Praćenje u stvarnom vremenu*: Tijekom provođenja kampanje, Fluentis omogućuje praćenje kampanje u stvarnom vremenu – moguće je vidjeti koje su emailove poslane, otvorene ili ako su primatelji ostvarili interakciju s porukama.  

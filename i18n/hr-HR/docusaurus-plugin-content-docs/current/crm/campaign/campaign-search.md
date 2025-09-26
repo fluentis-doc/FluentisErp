@@ -1,20 +1,20 @@
 ---
-title: Ricerca Campagne Marketing
+title: Istraživanje marketinških kampanja
 sidebar_position: 1
 ---
 
-La gestione delle campagne marketing in Fluentis è una funzione pensata per supportare e ottimizzare le attività di marketing dell'azienda. Attraverso questa funzionalità, è possibile pianificare, eseguire, monitorare e analizzare campagne di marketing in modo integrato e coordinato, utilizzando i dati già presenti nel sistema gestionale. Di seguito viene spiegato a cosa serve e come può essere utilizzata.
+Upravljanje marketinškim kampanjama u Fluentisu je funkcija osmišljena za podršku i optimizaciju marketinških aktivnosti tvrtke. Kroz ovu funkcionalnost moguće je planirati, provoditi, pratiti i analizirati marketinške kampanje na integriran i koordiniran način, koristeći podatke koji su već prisutni u sustavu za upravljanje. U nastavku se objašnjava čemu služi i kako se može koristiti.
 
-**Pianificazione delle Campagne Marketing**
-La gestione delle campagne marketing consente di pianificare attività promozionali a breve, medio e lungo termine. È possibile definire gli obiettivi della campagna, il target di riferimento, il budget, le risorse coinvolte e le tempistiche. Questa pianificazione dettagliata aiuta a organizzare le iniziative in modo strutturato, allineandole con la strategia di marketing complessiva dell'azienda.
+**Planiranje marketinških kampanja**
+Upravljanje marketinškim kampanjama omogućuje planiranje promotivnih aktivnosti na kratkoročnoj, srednjoročnoj i dugoročnoj razini. Moguće je definirati ciljeve kampanje, ciljanu skupinu, budžet, uključene resurse te vremenski okvir. Ovakvo detaljno planiranje pomaže u strukturiranju inicijativa i njihovu usklađivanju s cjelokupnom marketinškom strategijom poduzeća.  
 
-**Segmentazione e Targeting dei Contatti**
-E' possibile segmentare i contatti in base a criteri specifici attraverso le [Liste di distribuzione](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-search). Questo permette di identificare gruppi specifici di clienti o potenziali clienti su cui focalizzare le campagne, aumentando la rilevanza e l'efficacia delle comunicazioni.
+**Segmentacija i ciljanje kontakata**
+Kontakti se mogu segmentirati prema određenim kriterijima pomoću [Distribucijskih lista](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-search). Na taj se način identificiraju specifične skupine kupaca ili potencijalnih kupaca na koje se kampanje mogu usmjeriti, čime se povećava relevantnost i učinkovitost komunikacije.  
 
-**Esecuzione e Gestione delle Campagne**
-Una volta pianificata la campagna, Fluentis offre strumenti per eseguirla in modo coordinato. È possibile gestire diversi tipi di attività di marketing, come invii di email, campagne social, telefonate, eventi, e altre iniziative promozionali. La gestione delle campagne consente di assegnare compiti ai membri del team attraverso l'assegnazione delle Attività, monitorare lo stato di avanzamento delle attività e coordinare le varie azioni coinvolte nella campagna.
+**Provedba i upravljanje kampanjama**
+Nakon što je kampanja isplanirana, Fluentis nudi alate za njezinu koordiniranu provedbu. Moguće je upravljati različitim vrstama marketinških aktivnosti kao što su slanje e-poruka, kampanje na društvenim mrežama, telefonski pozivi, događanja i druge promotivne inicijative. Upravljanje kampanjama omogućuje i dodjelu zadataka članovima tima putem funkcije Aktivnosti, praćenje napretka te koordinaciju svih aktivnosti unutar kampanje.
 
-**Analisi dei Risultati e ROI (Return on Investment)**
-La gestione delle campagne marketing in Fluentis include strumenti di reporting che permettono di analizzare i risultati delle campagne, grazie alla possibilità di utilizzare i Workflow. È possibile valutare metriche come il tasso di conversione, il numero di nuovi lead generati, il costo per acquisizione (CPA), e il ritorno sull'investimento (ROI). Questi dati sono fondamentali per comprendere l’efficacia delle campagne, identificare aree di miglioramento e ottimizzare le strategie future.
+**Analiza rezultata i ROI (povrat ulaganja)**
+Upravljanje marketinškim kampanjama u sustavu Fluentis uključuje alate za izvještavanje koji omogućuju analizu rezultata kampanja, koristeći Workflow funkcionalnosti. Moguće je pratiti metrike poput stope konverzije, broja novostvorenih leadova, cijene po akviziciji (CPA) i povrata ulaganja (ROI). Ovi su podaci ključni za razumijevanje učinkovitosti kampanja, prepoznavanje prostora za poboljšanje te optimizaciju budućih strategija.  
 
-In sintesi, la gestione delle campagne marketing nel gestionale Fluentis è un potente strumento per orchestrare e ottimizzare le attività di marketing dell'azienda. Dalla pianificazione alla segmentazione, dall'esecuzione al monitoraggio e all'analisi, Fluentis fornisce tutte le funzionalità necessarie per gestire campagne marketing efficaci e per migliorare continuamente le performance grazie a un’analisi dettagliata dei risultati.
+Upravljanje marketinškim kampanjama putem ERP sustava Fluentis predstavlja snažan alat za organizaciju i optimizaciju marketinških aktivnosti tvrtke. Od planiranja i segmentacije do provedbe, praćenja i analize – Fluentis pruža sve potrebne funkcionalnosti za uspješno vođenje marketinških kampanja te kontinuirano poboljšavanje performansi kroz detaljnu analizu rezultata.

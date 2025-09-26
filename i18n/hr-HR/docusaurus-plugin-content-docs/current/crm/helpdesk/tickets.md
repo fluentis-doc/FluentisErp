@@ -14,8 +14,8 @@ Zaglavlje sadrži sljedeće polja:
  
 **Tip/Godina/Redni broj**: ovi se podaci automatski popunjavaju ako je operateru dodijeljena zadana vrsta ticketa u [Postavkama operatera za CRM](/docs/configurations/parameters/crm/ticket-parameters); broj je progresivan.    
 **Datum stvaranja/Rok**: datum stvaranja automatski se unosi s današnjim datumom; datum roka je polje koje se mora unijeti ručno.     
-**Datum zatvaranja/Zatvoreno**: unoseći oznaku Zatvoreno, automatski se upisuje datum zatvaranja.
-**Klijent**: ovo polje automatski se popunjava ako je operateru dodijeljen zadani klijent u  [Postavkama operatera za CRM](/docs/configurations/parameters/crm/ticket-parameters); inače ga je moguće unijeti ručno.      
+**Datum zatvaranja/Zatvoreno**: unoseći oznaku Zatvoreno, automatski se upisuje datum zatvaranja.  
+**Klijent**: ovo polje automatski se popunjava ako je operateru dodijeljen zadani klijent u  [Postavkama operatera za CRM](/docs/configurations/parameters/crm/ticket-parameters); inače ga je moguće unijeti ručno.        
 **Kontakt**: moguće je unijeti i alternativni [Kontakt](/docs/crm/home-crm/contacts/new-contact).         
 **Projekt**: moguće je navesti projekt na koji se tiket odnosi;        
 **Operacije ticketa**: U ovom se polju prikazuju moguće [Operacije](/docs/configurations/tables/crm/tickets/operations) za ovu Vrstu ticketa;      

@@ -1,22 +1,22 @@
 ---
-title: Introduzione
+title: Uvod 
 sidebar_position: 1
 ---
 
-Il modulo permette la gestione integrata delle trattative commerciali. Consente di monitorare il ciclo di vendita in modo strutturato, partendo dalla fase iniziale di lead generation fino alla chiusura della trattativa. Le opportunità vengono utilizzate per raccogliere informazioni rilevanti riguardanti i clienti potenziali, collegando queste informazioni ad altre aree aziendali, come il marketing.         
-Dal punto di vista tecnico, le opportunità permettono di tracciare ogni interazione con il cliente, collegandola a documenti specifici, preventivi e attività pianificate. I dati raccolti attraverso questo modulo sono utilizzati per generare previsioni di vendita basate su parametri statistici e probabilistici. Inoltre, integrano funzionalità di workflow management per automatizzare determinati passaggi del processo di vendita e fornire notifiche in tempo reale sui cambiamenti dello stato dell'opportunità.         
+Modul omogućuje integrirano upravljanje poslovnim pregovorima. Omogućuje praćenje prodajnog ciklusa na strukturiran način, počevši od početne faze generiranja potencijalnih klijenata (lead generation) do zatvaranja pregovora. Prilike se koriste za prikupljanje relevantnih informacija o potencijalnim kupcima, povezujući te informacije s drugim poslovnim područjima, poput marketinga.  
+S tehničkog stajališta, prilike omogućuju praćenje svake interakcije s kupcem, povezujući je s određenim dokumentima, ponudama i planiranim aktivnostima. Podaci prikupljeni putem ovog modula koriste se za generiranje prognoza prodaje temeljenih na statističkim i probabilističkim parametrima. Osim toga, integriraju funkcionalnosti upravljanja radnim procesima (workflow management) kako bi automatizirali određene korake prodajnog procesa i pružili obavijesti u stvarnom vremenu o promjenama statusa prilike.       
  
-**Opportunità**       
-Il modulo Opportunità di Fluentis ERP consente di gestire l'intero ciclo di vita di un'opportunità commerciale, dalla creazione alla chiusura.       
+**Prilika**       
+Modul Prilike u Fluentis ERP-u omogućuje upravljanje cijelim životnim ciklusom prodajne prilike – od njezina stvaranja do zatvaranja.   
 
-**Mappa opportunità CRM**       
-Questa funzionalità offre una visualizzazione geografica delle opportunità attive, utilizzando le informazioni geografiche presenti nell'anagrafica dei contatti CRM. È possibile filtrare le opportunità per tipologia, utente operatore, o probabilità di successo.     
+**CRM karta prilika**       
+Ova funkcionalnost omogućuje geografski prikaz aktivnih prilika, koristeći geolokacijske podatke iz baze CRM kontakata. Moguće je filtrirati prilike prema vrsti, odgovornom korisniku ili vjerojatnosti uspjeha.     
 
-**Opportunity Progress KanBan Board**     
-Questa funzione visualizza le opportunità suddivise per probabilità di successo, utilizzando una KanBan Board. Attraverso filtri avanzati è possibile isolare specifici set di opportunità, con colonne che rappresentano diverse percentuali di successo. Ogni colonna mostra il numero di opportunità, il loro valore netto complessivo, e dettagli singoli per ogni opportunità.       
+**Kanban ploča – Napredak prilika prema vjerojatnosti uspjeha**     
+Ova funkcija prikazuje prilike raspoređene prema vjerojatnosti zatvaranja pomoću Kanban ploče. Napredni filtri omogućuju izdvajanje određenih skupina prilika, a stupci predstavljaju različite postotke vjerojatnosti uspjeha. Svaki stupac prikazuje broj prilika, njihov ukupni neto iznos te pojedinosti za svaku priliku.        
 
-**Opportunity Stages KanBan Board**      
-Simile alla precedente, questa funzionalità suddivide le opportunità per stadi del workflow associato. Ogni colonna della KanBan Board rappresenta uno stadio del workflow, con informazioni sul numero e valore netto delle opportunità.      
+**Kanban ploča – Faze workflowa prilika**      
+Slično prethodnoj, ova funkcionalnost prikazuje prilike raspoređene prema fazama pripadajućeg workflowa. Svaki stupac Kanban ploče predstavlja jednu fazu, uz informacije o broju prilika i njihovom neto iznosu.     
 
-**Invoicing Progress KanBan Board**       
-Questa procedura consente di monitorare lo stato delle opportunità, ordini e fatture in un periodo di tempo definito, suddiviso per mesi. I documenti possono essere visualizzati aggregati o individualmente, con dettagli economici e collegamenti per la modifica diretta.
+**Kanban ploča – Napredak fakturiranja**       
+Ova funkcionalnost omogućuje praćenje statusa prilika, narudžbi i računa u definiranom vremenskom razdoblju, raspoređeno po mjesecima. Dokumenti se mogu pregledavati agregirano ili pojedinačno, uz financijske detalje i poveznice za izravno uređivanje.
