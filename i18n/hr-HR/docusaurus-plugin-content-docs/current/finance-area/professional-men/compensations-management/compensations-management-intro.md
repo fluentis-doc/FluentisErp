@@ -5,17 +5,17 @@ sidebar_position: 1
 
 ### **POVEZNICA NA KARTICE NA DNU OBRASCA**:
 
-** [Ukupni porez po odbitku](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **
+**[Ukupni porez po odbitku](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**
 
-** [Lista plaćanja](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **
+**[Lista plaćanja](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**
 
-** [Plaćanja po odbitku](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in) **
+**[Plaćanja po odbitku](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in)**
 
-** [Sažeci PDV-a](/docs/finance-area/professional-men/compensations-management/vat-summaries) **
+**[Sažeci PDV-a](/docs/finance-area/professional-men/compensations-management/vat-summaries)**
 
-** [Centri troškova/profita](/docs/finance-area/professional-men/compensations-management/cost-profit-centres) **
+**[Centri troškova/profita](/docs/finance-area/professional-men/compensations-management/cost-profit-centres)**
 
-** [INPS](/docs/finance-area/professional-men/compensations-management/national-insurance) **
+**[INPS](/docs/finance-area/professional-men/compensations-management/national-insurance)**
 
  
 

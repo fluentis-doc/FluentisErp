@@ -5,11 +5,11 @@ sidebar_position: 1
 
 LINK:
 
-** [Filter](/docs/finance-area/professional-men/accounting/payments-accounting/filter) **
+**[Filter](/docs/finance-area/professional-men/accounting/payments-accounting/filter)**
 
-** [Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters) **
+**[Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)**
 
-** [Povratak](/docs/finance-area/professional-men/accounting/payments-accounting/previous) **
+**[Povratak](/docs/finance-area/professional-men/accounting/payments-accounting/previous)**
 
  
 

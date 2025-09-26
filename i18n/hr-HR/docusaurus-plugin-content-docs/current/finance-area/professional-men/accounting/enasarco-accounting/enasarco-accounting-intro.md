@@ -5,9 +5,9 @@ sidebar_position: 1
 
 LINK:
 
-** [Nabava](/docs/finance-area/professional-men/accounting/enasarco-accounting/acquisition) **
+**[Nabava](/docs/finance-area/professional-men/accounting/enasarco-accounting/acquisition)**
 
-** [Rollback](/docs/finance-area/professional-men/accounting/enasarco-accounting/previous) **
+**[Rollback](/docs/finance-area/professional-men/accounting/enasarco-accounting/previous)**
 
  
 

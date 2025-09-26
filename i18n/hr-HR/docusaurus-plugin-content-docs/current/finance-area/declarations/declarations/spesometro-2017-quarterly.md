@@ -29,7 +29,7 @@ Kako bi se ispravno generirao datoteku (u xml formatu koja se mora prenijeti na 
 
 ![](/img/it-it/finance-area/declarations/declarations/spesometro-2017-quarterly/image02.png)
 
-All'interno delle tabelle di cui sopra è necessario, in particolare, gestire i campi **Šifra javne uprave** (isti oni koji se koriste za elektroničko fakturiranje prema Javnim Upravama – budući da se radi o sličnom sustavu razmjene podataka)
+Unutar tablica gore navedenih potrebno je, posebno, upravljati poljima **Šifra javne uprave** (isti oni koji se koriste za elektroničko fakturiranje prema Javnim Upravama – budući da se radi o sličnom sustavu razmjene podataka)
 
 Šifriranje koje treba koristiti objavila je Porezna uprava kao dio tehničke dokumentacije za izradu telematske datoteke, a u nastavku ga prenosimo:  
 

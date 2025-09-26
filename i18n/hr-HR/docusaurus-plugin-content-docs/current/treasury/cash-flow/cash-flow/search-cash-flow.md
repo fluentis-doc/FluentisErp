@@ -5,11 +5,11 @@ sidebar_position: 1
 
 LINK:
 
-** [Preliminarne tablice za upravljanje](/docs/treasury/cash-flow/general-overview) **
+**[Preliminarne tablice za upravljanje](/docs/treasury/cash-flow/general-overview)**
 
-** [Automatska obrada](/docs/treasury/cash-flow/procedures) **
+**[Automatska obrada](/docs/treasury/cash-flow/procedures)**
 
-** [Ispis](/docs/treasury/cash-flow/reports) **
+**[Ispis](/docs/treasury/cash-flow/reports)**
 
  
 
