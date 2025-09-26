@@ -1,29 +1,29 @@
 ---
-title: Categorie mansione
+title: Kategorija zadatka
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Mansioni > Categorie mansione**.
+Tablica se nalazi na putanji: **Tablice > Zaposlenici > Radna mjesta > Kategorije radnih mjesta**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le *Categorie mansione* che sono utilizzate per categorizzare le *Mansioni*.   
-Un esempio di utilizzo lo troviamo nella gestione **Mansioni**.
+:::important Čemu služi
+U ovoj tablici moguće je kodirati *Kategorije radnih mjesta*, koje se koriste za kategorizaciju *Radnih mjesta*.
+Primjer primjene vidljiv je u upravljanju **Radnim mjestima**.
 :::
 
-La tabella consente di inserire nuove *Categorie mansione* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.
+Tablica omogućuje unos novih *Kategorija radnih mjesta* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.
 
-#### Ricerca Categorie mansione 
+#### Pretraživanje kategorija radnih mjesta
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-#### Inserimento Categorie mansione 
+#### Unos kategorija radnih mjesta 
 
-Per poter inserire nuove *Categorie mansione* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Kategorija radnih mjesta* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-#### Campi specifici 
+#### Specifična polja 
     
-> **Codice**: è il codice della *Categoria mansione*.   
-> **Descrizione**: è la descrizione della *Categoria mansione*.   
+> **Šifra**: šifra *Kategorije radnih mjesta*.   
+> **Opis**: opis *Kategorije radnih mjesta*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link:[Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
