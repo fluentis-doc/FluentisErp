@@ -14,105 +14,109 @@ Potrebno je uključiti opciju „Predloži komercijalne podatke za ručno raspak
 
 <details>
 
-  <summary>2. Come gestire la <b>data validità</b> della tab Listini dell’anagrafica cliente?</summary>
+  <summary>2. Kako funkcionira <b>datum valjanosti</b> u kartici Cjenici unutar šifrarnika kupca?</summary>
   
-La data validità inserita nella griglia della tab Listini in anagrafica cliente serve ad indicare quali tipologie di listini sono valide da quella data per quel cliente. La ripresa prezzi nei documenti deve sapere in quali listini cercare l’articolo.
-Come prima condizione, il listino da inserire nei documenti deve essere valido in questa data. 
-Come seconda condizione per la scelta della tipologia di listino da inserire nei documenti, il listino scelto ha la data inizio validità strettamente minore alla data del documento.     
-In questo modo è possibile creare tutti i listini che vogliamo e applicarli al cliente solo da una determinata data.
-Tecnicamente, tutti i listini che vengono creati, per essere utilizzati per la ricerca prezzi devono avere:            
-1. la data inizio validità maggiore o uguale alla data validità;       
-2. la data inizio validità minore o uguale alla data del documento;       
-3. data fine validita maggiore o uguale alla data documento oppure data fine validità nulla;              
-Tra tutti i listini trovati con queste condizioni prende quello con range di validità più vicino alla data del documento.
+Datum valjanosti uneseno u mreži taba Cjenici (Listini) u kartonu kupca služi za označavanje koje vrste cjenika su valjane od tog datuma za tog kupca. Preuzimanje cijena u dokumentima mora znati u kojim cjenicima tražiti artikal.    
+Kao prvi uvjet, cjenik koji se treba unijeti u dokumente mora biti valjan na ovaj datum.    
+Kao drugi uvjet za odabir vrste cjenika koji će se unijeti u dokumente, odabrani cjenik mora imati datum početka valjanosti strogo manji od datuma dokumenta.    
+Na taj način moguće je kreirati sve cjenike koje želimo i primijeniti ih na kupca samo od određenog datuma.
+Tehnički, svi cjenici koji se kreiraju, da bi se koristili za pretraživanje cijena, moraju ispunjavati sljedeće uvjete:             
+1. Datum početka valjanosti mora biti veći ili jednak datumu valjanosti definiranom u kartici kupca;         
+2. Datum početka valjanosti mora biti manji ili jednak datumu dokumenta;        
+3. Datum završetka valjanosti mora biti veći ili jednak datumu dokumenta ili može biti neodređen (prazan)                
+Od svih cjenika koji zadovoljavaju ove uvjete, sustav odabire onaj čiji je raspon valjanosti najbliži datumu dokumenta.  
 
 </details>
 
 <details>
 
-  <summary>3. Se ho più <b>sconti</b> sullo stesso articolo in un listino qual è la **priorità**? </summary>
+  <summary>3. Imam više <b>popusta</b> za isti artikl unutar cjenika, koji ima **prioritet**? </summary>
   
-La priorità considerata è quella riportata nel tipo sconto. Ricordiamo che la tipologia di sconto è importante per la gestione della priorità è della natura sconto (Imponibile o Cascata).
+Prioritet koji se uzima u obzir je onaj naveden u vrsti popusta. Podsjećamo da je tip popusta važan za upravljanje prioritetom i prirodom popusta (Oporezivo ili Kaskadno).
 
 </details>
 
 <details>
 
-  <summary>4. E’ possibile duplicare solamente alcuni articoli del listino e non tutto il listino? </summary>
+  <summary>4. Mogu li se duplicirati samo određeni artikli iz cjenika, a ne cijeli cjenik? </summary>
   
-Sì, è possibile duplicare solo alcuni articoli, utilizzando la procedura di “Duplica e Manutenzione listini di vendita” e selezionando solo gli articoli desiderati.
-Il risultato sarà un nuovo listino contenente solo gli articoli modificati.
-Per gli altri artioli rimarrà valido il listino precedente, in assenza di data fine validità.
-
-</details>
-
-
-<details>
-
-  <summary>5. Per le fatture non c'è il flag <b>Controllo disponibilità</b>: in che modo possiamo escluderle dal calcolo del fabbisogno? </summary>
-  
-Le fatture considerate nel fabbisogno sono:
-- le fatture immediate, cioè accompagnatorie;
-- le fatture che derivano da DDT se il DDT non è stato scaricato a magazzino.
+Da, moguće je. Pomoću funkcije „Dupliciraj i održavanje prodajnih cjenika“ možete odabrati samo one artikle koje želite duplicirati.
+Rezultat će biti novi cjenik koji sadrži isključivo odabrane artikle.
+Za sve ostale artikle i dalje ostaje važeći prethodni cjenik – pod uvjetom da im nije zadan datum završetka valjanosti.  
 
 </details>
 
 
 <details>
 
-  <summary>6. A cosa serve il <b>Tipo scaglione</b> nelle righe articolo del listino? </summary>
+  <summary>5. Budući da fakture nemaju oznaku <b>Provjera dostupnosti</b>: kako ih možemo isključiti iz izračuna potreba? </summary>
   
-Il tipo scaglione inserito nella riga articolo del listino viene proposto in automatico nei documenti, altrimenti sarà l'utente a scegliere manualmente il tipo di scaglione da applicare alla riga.
+U izračun potreba ulaze sljedeće fakture:  
+- odmah izdane fakture (prateće fakture);
+- fakture koje proizlaze iz otpremnica, ako otpremnice nisu knjižene u skladištu.  
 
 </details>
 
 
 <details>
 
-  <summary>7. Con BizLink posso esportare le fatture di vendita verso un altro gestionale, ad esempio quello del commercialista ? </summary>
+  <summary>6. Čemu služi <b>Vrsta razreda</b> u stavkama cjenika?</summary>
   
-Sì, è possibile creare un parser dedicato per esportare i dati, come richiesti da un altro gestionale.
-Oppure, è possibile utilizzare direttamente il file XML della fatturazione elettronica, se il gestionale che acquisisce la fattura lo permette: Fluentis gestisce la creazione delle fatture importando il file XML della fatturazione elettronica.
+Vrsta razreda unesena u stavku cjenika automatski se predlaže u dokumentima.
+Ako nije zadana, korisnik mora ručno odabrati vrstu razreda koju želi primijeniti na stavku.  
 
 </details>
 
 
 <details>
 
-  <summary>8. Come è possibile impostare le <b>spese di incasso</b> per le riba in modo che siano gestite automaticamente dal gestionale in base al numero di scadenze? </summary>
+  <summary>7. Mogu li pomoću BizLink modula izvesti fakture prodaje u drugi program, npr. za računovođu? </summary>
   
-Se la spesa ha il flag "Spesa Incasso" e il tipo pagamento ha la natura effetto = 0 (RIBA), per ogni scadenza della soluzione pagamento verrà aggiunta la spesa di incasso.
-Se si hanno più scadenze, ognuna avrà la sua spesa di incasso. 
+Da, moguće je kreirati poseban parser za izvoz podataka u formatu koji zahtijeva drugi poslovni sustav.
+Alternativno, moguće je koristiti XML datoteku elektroničke fakture, ako drugi program podržava njezin uvoz.
+Fluentis podržava kreiranje faktura putem uvoza XML-a iz elektroničke fakturacije 
 
 </details>
 
 
 <details>
 
-  <summary>9. Quali sono le condizioni per gestire il <b>barcode</b> nei documenti? </summary>
+  <summary>8. Kako automatski obračunavati <b>troškove naplate</b> a RIBA-e, prema broju rata? </summary>
   
-I passaggi sono i seguenti.     
-1. Nei Parametri del documento di vendita, inserire il flag <b>Uso barcode</b>;                            
-2. In anagrafica articolo, inserire il <b>codice Barcode</b>;                    
-3. Nei documenti, inserire nella colonna <b>Barcode</b> della griglia articolo il codice inserito in anagrafica cliente; se il programma riconosce il codice, inserisce in automatico l'articolo.
+Ako trošak ima uključen parametar „Trošak naplate“, i ako način plaćanja ima vrstu učinka = 0 (RIBA), tada će se za svaku ratu automatski dodati trošak naplate.
+Dakle, više rata znači više pojedinačnih troškova naplate, koje sustav automatski pridodaje.   
 
 </details>
 
 
 <details>
 
-  <summary>10. Dove deve essere inserita la <b>Marca</b> per essere riportata nei documenti di vendita? </summary>
+  <summary>9. Koji su uvjeti za korištenje <b>barkoda</b> u dokumentima? </summary>
   
-La Marca deve essere inserita nella griglia articoli dei listini di vendita per essere riportata nei documenti.
+Potrebno je slijediti sljedeće korake:     
+1. U parametrima prodajnog dokumenta uključiti opciju <b>Koristi barkod</b>;                            
+2. U šifarniku artikla unijeti <b>Unesi barkod</b>;                    
+3. U dokumentu, u stupcu <b>Barkod</b> unijeti kod iz šifarnika – ako sustav prepozna kod, automatski će popuniti odgovarajući artikl.
 
 </details>
 
 
 <details>
 
-  <summary>11. E' possibile nascondere ad un utente una determinata tipologia di fattura? </summary>
+  <summary>10. Gdje se unos <b>Marka</b> artikla kako bi bila vidljiva u prodajnim dokumentima? </summary>
   
-Sì, con le <b>Restrizioni</b>. Esse impediscono agli utenti di creare, visualizzare o modificare determinate tipologie di documenti. Di seguito viene riportato l'esempio per impedire ad un utente di utilizzare il Tipo fattura con codice FVITDIF. Ricordiamo che è necessario aggiungere la Restrizione anche nel profilo Arm dell'utente, nell'appostia griglia.            
+Marka se mora unijeti u stavke prodajnog cjenika. Samo tako unesena, prenijet će se i prikazivati u dokumentima prodaje.
+
+</details>
+
+
+<details>
+
+  <summary>11. Može li se određenom korisniku onemogućiti pristup određenoj vrsti fakture? </summary>
+  
+Da, pomoću <b>Ograničenja</b>. Ona sprječavaju korisnike da kreiraju, pregledavaju ili uređuju određene vrste dokumenata.
+Primjer: moguće je ograničiti pristup vrsti fakture s kodom FVITDIF.
+Napomena: ograničenje je potrebno dodati i u ARM profil korisnika, u odgovarajuću tablicu.            
 
 
 ![](/img/it-it/sales/sales-invoices/search-sales-invoices/restriction.png)
@@ -123,18 +127,18 @@ Sì, con le <b>Restrizioni</b>. Esse impediscono agli utenti di creare, visualiz
 
 <details>
 
-  <summary>12. La fattura risulta Scaricata anche se non ho effettuato nessun movimento di magazzino, inoltre il flag Scaricata è bloccato e non si può togliere. </summary>
+  <summary>12. Faktura je označena kao „Knjižena“, iako nema skladišnog prometa, a oznaku nije moguće ukloniti. </summary>
   
-Nel caso di fattura creata da documento di trasporto già scaricato, è presente il parametro generale VE-PurchaseInvoices_VerifyLoadStatusDDT che blocca il flag Scaricata anche nella fattura.          
+Ako je faktura nastala iz otpremnice koja je već knjižena, tada je aktivan opći parametar VE-PurchaseInvoices_VerifyLoadStatusDDT koji automatski postavlja status „Knjižena“ i onemogućuje njegovo uklanjanje.          
 
 </details>
 
 
 <details>
 
-  <summary>13. Come faccio a popolare i Pesi nei riepiloghi della fattura? </summary>
+  <summary>13. Kako mogu prikazati Težinene u sažecima fakture? </summary>
   
-Per poter vedere il riepilogo dei pesi è necessario flaggare il parametro **Ricalcola trasporto** nei Parametri del documento. Sarà inoltre necessario selezionare l'unità di misura corretta, nei riepiloghi, per visualizzare il valore.        
+Da bi se u sažecima fakture prikazivale težine, potrebno je: u Parametrima dokumenta uključiti opciju **Preračunaj prijevoz** u sažecima odabrati ispravnu jedinicu mjere, kako bi se vrijednost pravilno prikazala.        
 
 </details>
 
