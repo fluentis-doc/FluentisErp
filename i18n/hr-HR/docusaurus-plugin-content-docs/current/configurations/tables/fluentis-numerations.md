@@ -17,11 +17,11 @@ U formi **Numeriranje naplate** prikazana je tablica s popisom postojećih numer
 
 ### Sezione superiore
 
-**Codice**: è il codice del numeratore;
+**Šifra**: kod numeratora;  
 
-**Descrizione**: la descrizione del numeratore;
+**Naziv konta**: opis numeratora;
 
-**Formula numero**: in questo campo si può impostare una valorizzazione di una stringa alfanumerica, che sarà memorizzata nella proprietà alfanumerica predefinita ‘FormattedNumber' dell'oggetto (mentre il campo numerico viene memorizzato nella proprietà ‘Number'). La definizione della *Formula* per la formattazione del numero del documento può essere definita a livello di tipo numerazione, al livello di periodo di validità del tipo numerazione oppure a livello definizione dei range di validità. La priorità di applicazione è bottom-up, si verifica se è definita nei range di validità, se null si verifica se è definita nei periodi di validità se nulla si verifica se è definita nel tipo numerazione.
+**Formula broja**: u ovom polju može se postaviti vrijednost alfanumeričkog niza koja će biti pohranjena u zadanoj alfanumeričkoj svojini ‘FormattedNumber’ objekta (dok se numeričko polje pohranjuje u svojinu ‘Number’). Definicija *Formule* za formatiranje broja dokumenta može se postaviti na razini tipa numeracije, razini razdoblja valjanosti tipa numeracije ili na razini definicije intervala valjanosti. Prioritet primjene je odozdo prema gore: prvo se provjerava postoji li definirana formula u intervalima valjanosti, ako nema, provjerava se na razini razdoblja valjanosti, a ako ni tamo nema, provjerava se na razini tipa numeracije.
 
 Na slici iznad (preuzeto iz numeracija za kompenzacije) unesena je sljedeća formula “Year.ToString() + "-" + Number.ToString("D5") + "-" + SalesInvoiceType.Code”, što će generirati niz u formatu: “2015-00001-TestCode”.
 
