@@ -1,59 +1,59 @@
 ---
-title: Mansioni
+title: Zadaci
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Mansioni > Mansioni**.   
+Tablica se nalazi na putanji: **Tablice > Zaposlenici > Zadaci > Zadaci**.   
 
-In questa tabella è possibile codificare le *Mansioni* aziendali.   
-Alcuni esempi di utilizzo delle *Mansioni* le troviamo nelle gestioni:   
-> **Dipendenti** - nel tabulatore *Mansioni*;   
-> **Corsi base** - nel tabulatore *Mansioni interessate*;   
-> **Corsi di formazione** - nel tabulatore *Mansioni coinvolte*;   
-> **D.P.I.** - nell'elenco *Dispositivo di Protezione Individuale utilizzato nelle Mansioni*;   
-> **Competenze** - nell'elenco *Competenza richiamata nelle mansioni*.   
+U ovoj tablici moguće je kodirati *Zadaci* u tvrtki.   
+Primjeri korištenja *Zadaci* vidljivi su u sljedećim modulima:   
+> **Zaposlenici** - u kartici *Radna mjesta*;   
+> **Osnovni tečajevi** - u kartici *Pogođena radna mjesta*;   
+> **Tečajevi osposobljavanja** - u kartici *Uključena radna mjesta*;   
+> **D.P.I.** - u popisu *Zaštićena oprema korištena na radnim mjestima*;   
+> **Kompetencije** - u popisu *Kompetencije povezane s radnim mjestima*.   
 
-La tabella consente di inserire nuove *Mansioni* o di ricercare quelle già esistenti per visualizzarle, modificarle oppure cancellarle.   
+Tablica omogućuje unos novih *Radnih mjesta* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.   
 
-## Ricerca Mansioni   
+## Pretraživanje radnih mjesta  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.   
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u mreži rezultata.   
 
-## Inserimento Mansioni  
+## Unos radnih mjesta 
 
-Per poter inserire nuove *Mansioni* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.   
+Za unos novih *Radnih mjesta* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: ***Šifra*** i **Opis**.      
 
-### Mansioni   
+### Radna mjesta  
 
-E' l'elenco dove vengono inserite le informazioni principali della *Mansione*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Mansione*.   
-> **Descrizione**: è la descrizione della *Mansione*.   
-> **Centro aziendale**: è il codice del *Centro aziendale*.   
-> **Voce costo**: è il codice della *Voce di costo*.   
-> **Descrizione voce di costo**: è la descrizione della *Voce di costo*.   
+To je popis u koji se unose osnovne informacije o *Radnom mjestu*.
+Popis se sastoji od sljedećih podataka:   
+> **Šifra**: šifra *Radnog mjesta*.   
+> **Opis**: opis *Radnog mjesta*.   
+> **Poslovni centar**: šifra *Poslovnog centra*.   
+> **Stavka troška**: šifra *Stavke troška*.   
+> **Opis stavke troška**: opis *Stavke troška*.   
 
-### D.P.I. da consegnare   
+### Zaštitna oprema za dodjelu
 
-E' l'elenco dove vengono inseriti i *D.P.I.* necessari alla *Mansione* selezionata.   
-Queste informazioni vengono utilizzate nella gestione *Consegne/Resi D.P.I.*   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice D.P.I.**: è il codice del *D.P.I.*   
-> **Descrizione D.P.I.**: è la descrizione del *D.P.I.*   
-> **Mesi validità**: sono i mesi di validità del *D.P.I.* per la *Mansione* selezionata.   
-> **Uso**: annotazioni libere sull'argomento.   
-> **Prescrizioni o raccomandazioni per l'uso**: annotazioni libere sull'argomento.   
-> **Note**: annotazioni libere.   
+To je popis u koji se unosi *Zaštitna oprema (D.P.I.)* potrebna za odabrano *Radno mjesto*.
+Ove informacije koriste se u upravljanju *Isporučenom/Vraćenom zaštitnom opremom*.   
+Popis se sastoji od sljedećih podataka:   
+> **Šifra D.P.I**.: šifra *Zaštitne opreme*  
+> **Opis D.P.I.**: opis *Zaštitne opreme*   
+> **Mjeseci valjanosti**: razdoblje valjanosti Zaštitne opreme za odabrano *Radno mjesto* (u mjesecima).   
+> **Upotreba**:slobodne bilješke o upotrebi   
+> **Upute ili preporuke za uporabu**: slobodne bilješke s preporukama ili uputama.   
+> **Napomene**: slobodne bilješke
 
-### Competenze   
+### Kompetencije   
 
-E' l'elenco dove vengono inserite le *Competenze* richieste per ricoprire la *Mansione* selezionata.   
-Queste informazioni vengono utilizzate nella gestione *Valutazioni competenze*   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice Competenza**: è il codice della *Competenza*.   
-> **Descrizione Competenza**: è la descrizione della *Competenza*.   
-> **Codice livello**: è il codice del *Livello di valutazione competenza* richiesto per ricoprire la *Mansione* selezionata.   
-> **Descrizione livello**: è la descrizione del *Livello di valutazione competenza*.   
-> **Criteri di valutazione**: annotazioni per definire i *Criteri di valutazione* da utilizzare per valutare la *Competenza* nella specifica *Mansione*.   
-> **Note**: annotazioni libere.   
+To je popis u koji se unose *Kompetencije* potrebne za obavljanje odabranog *Radnog mjesta*.
+Ove informacije koriste se u upravljanju *Procjenama kompetencija*.  
+Popis se sastoji od sljedećih podataka:   
+> **Šifra kompetencije**: šifra *Kompetencije*.   
+> **Opis kompetencije**: opis *Kompetencije*.   
+> **Šifra razine**: šifra *Razine procjene kompetencije* potrebne za odabrano *Radno mjesto*.   
+> **Opis razine**: opis *Razine procjene kompetencije*.   
+> **Kriteriji procjene**: bilješke za definiranje *Kriterija procjene* koji se koriste pri procjeni kompetencije za određeno *Radno mjesto*.   
+> **Napomene**: slobodne bilješke.   
