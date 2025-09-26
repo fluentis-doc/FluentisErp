@@ -1,32 +1,32 @@
 ---
-title: Livelli di valutazione competenza
+title: Razine ocjena kompetencije
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Mansioni > Livelli di valutazione competenza**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Radna mjesta > Razine ocjene kompetencija**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare i *Livelli di valutazione competenza* che sono utilizzati per valutare le *Competenze per mansione*.   
-Un esempio di utilizzo lo troviamo nella gestione **Competenze**.
+:::important Čemu služi
+U ovoj tablici moguće je kodirati *Razine ocjene kompetencija*, koje se koriste za procjenu *Kompetencija po radnom mjestu*.   
+Primjer primjene vidljiv je u upravljanju **Kompetencijama**.
 :::
 
-La tabella consente di inserire nuovi *Livelli di valutazione competenza* o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih *Razine ocjene kompetencija* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.
 
-#### Ricerca Livelli di valutazione competenza 
+#### Pretraživanje razina ocjene kompetencija
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-#### Inserimento Livelli di valutazione competenza 
+#### Unos razina ocjene kompetencija 
 
-Per poter inserire nuovi *Livelli di valutazione competenza* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Razine ocjene kompetencija* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-#### Campi specifici 
+#### Specifična polja 
     
-> **Codice**: è il codice del *Livello di valutazione competenza*.   
-> **Descrizione**: è la descrizione del *Livello di valutazione competenza*.   
-> **Livello**: è il punteggio dato al *Livello di valutazione competenza*.   
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Livelli di valutazione competenza*.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Razine ocjene kompetencija*.   
+> **Opis**: opis *Razine ocjene kompetencija*.   
+> **Razina**: bodovna vrijednost dodijeljena razini ocjene kompetencije.   
+> **Sekvenca**: redoslijed prikaza u popisima *Razine ocjene kompetencija*.   
+> **Napomene**: slobodne bilješke.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
