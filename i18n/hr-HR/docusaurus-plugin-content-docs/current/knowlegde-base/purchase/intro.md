@@ -1,69 +1,70 @@
 ---
-title: Acquisti KB
+title: Nabava KB
 sidebar_position: 1
 ---
 
 <details>
 
-  <summary>1. Come mai il campo <b>Descrizione</b> dell'articolo fornitore è obbligatorio mentre per il cliente non lo è?</summary>
+  <summary>1. Zašto je polje <b>Opis</b> obavezno za artikle dobavljača, dok za kupca nije?</summary>
   
-Il cliente ha la necessità di sapere qual è il suo codice ma la descrizione non è importante, in quanto viene utilizzato il codice nello stampato. Invece, per il fornitore la descrizione potrebbe essere molto più tecnica e necessaria, essendo i dati importati, solitamente.
+Kupcu je važno znati svoj šifru artikla, dok opis nije presudan jer se u ispisu koristi upravo ta šifra. S druge strane, za dobavljača opis može sadržavati tehnički važne informacije, posebno ako se podaci uvoze iz drugih sustava.  
 
 </details>
 
 
 <details>
 
-  <summary>2. A cosa serve il <b>Tipo scaglione</b> nelle righe articolo del listino? </summary>
+  <summary>2. Čemu služi <b>Tip platnog razreda</b> u stavkama cjenika?</summary>
   
-Il tipo scaglione inserito nella riga articolo del listino viene proposto in automatico nei documenti, altrimenti sarà l'utente a scegliere manualmente il tipo di scaglione da applicare alla riga. Ricordiamo che per uno stesso articolo di listino è possibile inserire diversi scaglioni di sconto.
+Tip platnog razreda unijeta u stavku cjenika automatski se predlaže u dokumentima. U suprotnom, korisnik mora ručno odabrati koju vrstu razreda želi primijeniti. Za isti artikl moguće je definirati više razreda popusta.
+
 
 </details>
 
 
 <details>
 
-  <summary>3. Esiste un controllo che permetta di evitare un doppio carico di magazzino da ddt e da fattura? </summary>
+  <summary>3. Postoji li kontrola koja sprječava dvostruki unos u skladište putem otpremnice i računa?</summary>
   
-Sì, se una fattura è collegata ad un ddt caricato o scaricato, la fattura non si potrà caricare/scaricare, a meno che nel tipo fattura non ci sia il flag “Scollega” attivo: in questo caso sarà possibile movimentare sia il ddt che la fattura.
+Da. Ako je račun povezan s otpremnicom koja je već knjižena (unos ili iznos iz skladišta), nije moguće ponovno obaviti skladišno knjiženje putem računa, osim ako u vrsti dokumenta računa nije aktivirana opcija Odvoji. U tom slučaju, moguće je knjižiti i otpremnicu i račun.
 
 </details>
 
 
 <details>
 
-  <summary>4. Come faccio a conservare lo storico dei prezzi precedenti di un listino aggiornato? </summary>
+  <summary>4. Kako mogu sačuvati povijest prethodnih cijena kad ažuriram cjenik? </summary>
   
-E’ necessario in questo caso effettuare una duplica del documento.
+Potrebno je prethodno napraviti duplikat dokumenta cjenika prije ažuriranja cijena, kako bi se sačuvala povijest.  
 
 </details>
 
 
 <details>
 
-  <summary>5. Quali sono le condizioni per utilizzare la <b>Modifica massiva </b> nei Riepiloghi di una fattura di acquisto? </summary>
+  <summary>5. Koji su uvjeti za korištenje opcije <b>Masovna izmjena</b> u sažecima računa za nabavu? </summary>
   
-Le condizioni sono:       
- 1. Il prezzo non deve essere Ivato;     
- 2. Gli articoli non devono avere sconti;
- 3. Gli articoli devono avere una quantità effettiva.
+Uvjeti su sljedeći:         
+ 1. Cijena ne smije sadržavati PDV;     
+ 2. Artikli ne smiju imati popuste;
+ 3. Artikli moraju imati stvarnu količinu.  
 
 </details>
 
 
 <details>
 
-  <summary>6. Come posso impedire la modifica della quantità articoli in documenti già caricati a magazzino? </summary>
+  <summary>6. Kako mogu spriječiti izmjenu količine artikala u dokumentima koji su već uneseni u skladište? </summary>
   
-E' necessario aprire i Parametri iniziali di magazzino corrispondenti all'anno in corso e togliere il flag **Modifica quantità** dalla sezione *Modifica reg. di magazzino da documenti*. Questo impedirà la modifica della quantità di riga nei documenti già movimentati a magazzino.
+Potrebno je otvoriti Početne parametre skladišta za tekuću godinu i deaktivirati opciju  **Izmjena količine** u dijelu *Izmjena skladišne evidencije iz dokumenata*. Time se onemogućuje izmjena količine u stavkama dokumenata koji su već evidentirani u skladištu.  
 
 </details>
 
 
 <details>
 
-  <summary>7. La fattura risulta Caricata anche se non ho effettuato nessun movimento di magazzino, inoltre il flag Caricata è bloccato e non si può togliere. </summary>
+  <summary>7. Račun je označen kao Unesen iako nije izvršeno skladišno knjiženje, a opciju Unesen nije moguće deaktivirati. </summary>
   
-Nel caso di fattura creata da documento di trasporto già caricato, è presente il parametro generale VE-PurchaseInvoices_VerifyLoadStatusDDT che blocca il flag Caricata anche nella fattura.          
+Ako je račun kreiran na temelju otpremnice koja je već unesena u skladište, tada je aktivan opći parametar VE-PurchaseInvoices_VerifyLoadStatusDDT  koji onemogućuje izmjenu statusa Unesen i na razini računa.       
 
 </details>

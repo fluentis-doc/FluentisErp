@@ -1,14 +1,14 @@
 ---
-title: Vendite KB
+title: Prodaja KB
 sidebar_position: 1
 ---
 
 
 <details>
 
-  <summary>1. Come è possibile fare in modo che i prezzi di Listino dei componenti di una Distinta vengano riportati nella righe articolo degli Ordini, dopo aver cliccato il pulsante della ribbon bar <b>Esplodi il primo livello distinta</b>?</summary>
+  <summary>1. Kako osigurati da se cijene iz cjenika za komponente iz strukture artikla prenesu u narudžbu nakon korištenja opcije <b>Raspakiraj prvu razinu strukture</b>?</summary>
   
-E' necessario impostare il flag "Proponi dati comm. per dist. base esplosa manualmente", che si trova all'interno dei Parametri ordini clienti. In questo modo, i dati commerciali vengono riportati e quindi anche i prezzi di listino dei componenti.
+Potrebno je uključiti opciju „Predloži komercijalne podatke za ručno raspakiranu osnovnu strukturu“, koja se nalazi u parametrima narudžbi kupaca. Time će se komercijalni podaci (uključujući i cijene iz cjenika) prenijeti na stavke.  
 
 </details>
 
