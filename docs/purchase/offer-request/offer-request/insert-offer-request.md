@@ -118,7 +118,8 @@ Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codi
 
 - **Quantità**: rappresenta la quantità dell'U.M. principale e di default ha il valore 1; può essere modificata manualmente oppure può essere ripresa dal documento considerato per l'evasione.
 
-- **Prezzo**: il prezzo viene proposto dal listino inserito nell'anagrafica contatto; il listino di riferimento per l'articolo stesso è visualizzato nel tab *Dati articolo*; lo stesso documento potrebbe contenere articoli con prezzi presi da listini diversi, se nell'anagrafica soggetto sono associati più listini in cascata. Attraverso il doppio click nel campo Listini l'utente ha la possibilità di selezionare un listino diverso da quello di default, dal quale sarà ripreso il prezzo dell'articolo inserito.   
+- **Prezzo**: il prezzo viene proposto dal listino inserito nell'anagrafica contatto; il listino di riferimento per l'articolo stesso è visualizzato nel tab *Dati articolo*; lo stesso documento potrebbe contenere articoli con prezzi presi da listini diversi, se nell'anagrafica soggetto sono associati più listini in cascata. Attraverso il doppio click nel campo Listini l'utente ha la possibilità di selezionare un listino diverso da quello di default, dal quale sarà ripreso il prezzo dell'articolo inserito.    
+In assenza del listino, il dato proposto sarà ripreso dal costo ultimo di anagrafica articolo.    
 
 - **IVA**: è prioritario il dato inserito nel campo IVA dell'Anagrafica contatto. Se questo non è presente, viene proposto il valore presente nell'Anagrafica articolo, ma l'utente ha la possibilità di inserire un'altro dato. 
 
