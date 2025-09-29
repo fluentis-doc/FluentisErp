@@ -1,30 +1,30 @@
 ---
-title: Categorie corso
+title: Kategorije tečaja
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Corsi di formazione > Categorie corso**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Edukacijski tečajevi > Kategorije tečajeva**.
 
-In questa tabella è possibile codificare le *Categorie corso* che sono utilizzate per categorizzare i *Corsi base e di formazione*.   
-Alcuni esempi di utilizzo delle *Categorie corso* li troviamo nelle gestioni:
-> **Corsi di base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*.
+U ovoj tablici moguće je kodirati *Kategorije tečaja* koje se koriste za kategorizaciju *Osnovnih i edukacijskih tečajeva*.   
+Neki primjeri korištenja *Kategorija tečajeva* nalaze se u sljedećim modulima:
+> **Osnovni tečajevi** - u *zaglavnim podacima*;   
+> **Tečajevi osposobljavanja** - u *zaglavnim podacima*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se prikazalo, izmijenilo ili izbrisalo.
 
-### Ricerca Categorie corso
+### Pretraživanje kategorija tečajeva
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraživanje** da biste prikazali rezultate unutar mreže rezultata.
 
-### Inserimento Categorie corso 
+### Unos kategorija tečajeva
 
-Per poter inserire nuove *Categorie corso* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Kategorija tečajeva* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.   
+Za novi zapis obavezno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-#### Campi specifici 
+#### Specifična polja
     
-> **Categoria corso**: è il codice della *Categoria corso*.   
-> **Descrizione categoria corso**: è la descrizione della *Categoria corso*.   
-> **Note**: annotazioni libere.
+> **Kategorija tečaja**: šifra *Kategorije tečaja*.   
+> **Opis kategorije tečaja**: opis *Kategorije tečaja*.   
+> **Napomene**: slobodne bilješke.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

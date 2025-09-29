@@ -1,32 +1,32 @@
 ---
-title: Tipi corso di formazione
+title: Tipovi obuke
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Corsi di formazione > Tipi corso di formazione**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Tečajevi osposobljavanja > Tipovi obuke**.
 
-In questa tabella è possibile codificare i *Tipi corso di formazione*.   
-Alcuni esempi di utilizzo di *Tipi corso di formazione* li troviamo nelle gestioni:
-> **Corsi di formazione** - nei *dati di testata*;   
-> **Parametri di gestione del personale** - nei *dati di testata*.
+U ovoj tablici moguće je definirati *Tipovi obuke*.   
+Neki primjeri korištenja *Tipovi obuke* nalaze se u sljedećim modulima:
+> **Tečajevi osposobljavanja** - u *Podaci o zaglavlju*;   
+> **Parametri upravljanja osobljem** - u *Podaci o zaglavlju*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi ih se prikazalo, izmijenilo ili obrisalo.
 
-### Ricerca Tipi corso di formazione**
+### Pretraživanje Tipovi obuke**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u mreži rezultata.
 
-### Inserimento Tipi corso di formazione**
+### Unos Tipovi obuke**
 
-Per poter inserire nuovi *Tipi corso di formazione* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Tipovi obuke* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku *Novo**.   
+Za novi zapis obavezno je unijeti barem polja koja su obavezna prema zahtjevima programa: **Šifra** i **Opis**.
 
-#### Campi specifici 
+#### Specifična polja
     
-> **Tipo**: è il codice del *Tipo corso di formazione*.   
-> **Descrizione tipo**: è la descrizione del *Tipo corso di formazione*.   
-> **Numerazione**: è il codice della *Numerazione*.   
-> **Descrizione numerazione**: è la descrizione della *Numerazione*.   
-> **Note**: annotazioni libere.
+> **Vrsta**: šifra *Tip obuke*.   
+> **Opis tipa**: opis *Tip obuke*.   
+> **Numeracija**: šifra povezane *Numeracije*.   
+> **Opis numeracije**: opis povezane *Numeracije*.   
+> **Napomene**: slobodno polje za bilješke
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
