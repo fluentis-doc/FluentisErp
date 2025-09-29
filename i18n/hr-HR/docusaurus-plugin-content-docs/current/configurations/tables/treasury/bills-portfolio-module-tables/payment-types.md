@@ -1,9 +1,9 @@
 ---
-title: Tipi pagamento
+title: Načini placanja
 sidebar_position: 7
 ---
 
-Nella tabella tipi pagamento è possibile (ma non obbligatorio) legare il tipo pagamento al tipo di effetto da creare nel modulo portafoglio effetti
+U tablici Načini placanja moguće je (ali nije obavezno) povezati tip plaćanja s tipom učinka koji treba stvoriti u modulu portfelja učinaka.
 
 
 

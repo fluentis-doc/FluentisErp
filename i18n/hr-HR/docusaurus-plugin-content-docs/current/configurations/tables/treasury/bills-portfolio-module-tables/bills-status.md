@@ -1,37 +1,31 @@
 ---
-title: Stati effetti
+title: Statusi vrijednosnih papira
 sidebar_position: 5
 ---
 
-La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente per gli stati necessari alla gestione effetti della società, impostando uno degli stati predefiniti fra:
+:::tip[FAst Start]
+Tablica je obuhvaćena procedurom [**Fast Start**](/docs/guide/fast-start)
 
-**Effetto emesso;**
+Ako se želi izvršiti ručna konfiguracija, potrebno je slijediti kontrolnu listu dostupnu na poveznici.  
+:::
 
-**Effetto presentato allo sconto;**
+Tablica se popunjava unosom šifre i opisa koje definira korisnik, za različita stanja potrebna za upravljanje mjenicama unutar poduzeća.
 
-**Effetto presentato salvo buon fine;**
+**Izdana mjenica;**
 
-**Effetto presentato al dopo incasso;**
+**Mjenica prezentirana na eskont (diskontiranje);**
 
-**Effetto ritornato accreditato;**
+**Oznaka koja identificira predstavljeni status učinka pod uvjetom dovršetka;**
 
-**Effetto ritornato insoluto;**
+**Oznaka koja identificira status učinka predstavljenog nakon naplate;**
 
-**Effetto girato;**
+**Oznaka koja identificira status vraćenog akreditiranog učinka;**
 
-**Effetto generale.**
+**Oznaka koja identificira status vraćenog neplaćenog učinka;**
 
+**Oznaka koja identificira status prenesenog učinka;**
 
-
-| Funzione | Significato |
-| --- | --- |
-| Ricerca | Con questo pulsante si esegue la ricerca stati effetti secondo i filtri impostati. |
-| Nuovo | Posiziona il cursore all'inserimento di una nuova riga. |
-| Cancella | Cancella il tipo anticipo selezionato. |
-| Anteprima | Esegue l'anteprima di stampa della tabella in uso. |
-| Stampa | Esegue la stampa della tabella in uso. |
-
-
+**Opće stanje mjenice.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

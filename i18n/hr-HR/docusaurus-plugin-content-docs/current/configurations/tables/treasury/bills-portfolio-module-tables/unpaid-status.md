@@ -1,31 +1,37 @@
 ---
-title: Stati insoluti
+title: Status potraživanja
 sidebar_position: 6
 ---
 
-La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente per gli stati necessari alla gestione insoluti della società, impostando uno degli stati predefiniti fra:
+:::tip[FAst Start]
+Tablica je obuhvaćena procedurom [**Fast Start**](/docs/guide/fast-start)
 
-**Insoluto;**
+Ako želite konfigurirati ručno, pogledajte kontrolnu listu na poveznici. 
+:::
 
-**Contabilizzato;**
+Tablica se popunjava kroz unos koda i korisničkog opisa za potrebna stanja za upravljanje neplaćenim obvezama tvrtke, postavljajući jedno od unaprijed definiranih stanja među:
 
-**Emesso note debito (non utilizzato);**
+**Neplaćeno;**
 
-**Contabilizzato note debito (non utilizzato);**
+**Knjiženo;**
 
-**Incassato;**
+**Izdane zadužnice (nije u upotrebi);**
 
-**Autorizzato (non utilizzato).**
+**Proknjižene zadužnice (nije u upotrebi);**
+
+**Naplaćen;**
+
+**Odobren (nije u upotrebi).**
 
 
 
-| Funzione | Significato |
+| Funkcija | Prošireno značenje |
 | --- | --- |
-| Ricerca | Con questo pulsante si esegue la ricerca stati insoluti secondo i filtri impostati. |
-| Nuovo | Posiziona il cursore all'inserimento di una nuova riga. |
-| Cancella | Cancella il tipo anticipo selezionato. |
-| Anteprima | Esegue l'anteprima di stampa della tabella in uso. |
-| Stampa | Esegue la stampa della tabella in uso. |
+| Pretraga | Ovom se tipkom pokreće pretraga nepodmirenih stanja prema postavljenim filtrima. |
+| Novo | Postavlja pokazivač za unos novog retka. |
+| Izbriši | Briše odabranu vrstu predujma. |
+| Pregled | Pokreće ispisni pregled trenutno korištene tablice. |
+| Ispis | Pokreće ispis trenutno korištene tablice. |
 
 
 

@@ -1,24 +1,19 @@
 ---
-title: Numerazione distinte di presentazione
+title: Numeriranje popisa prezentacije
 sidebar_position: 2
 ---
 
-Per definire una numerazione è sufficiente impostare l'anno di riferimento, il codice della numerazione, la sua descrizione e il numero di partenza.
+:::tip[FAst Start]
+Tablica je obuhvaćena procedurom [**Fast Start**](/docs/guide/fast-start)
 
-La tabella è fra quelle gestite automaticamente nella procedura di generazione dei contatori del nuovo esercizio contabile, che si trova all'interno degli ‘Strumenti'-‘Utilità'.
+Ako želite konfigurirati ručno, pogledajte kontrolnu listu na poveznici.   
+:::
 
+Za definiranje numeracije dovoljno je postaviti referentnu godinu, kod numeracije, njezin opis i broj početka.
 
-
-| Funzione | Significato |
-| --- | --- |
-| Ricerca | Con questo pulsante si esegue la ricerca delle numerazioni distinte secondo i filtri impostati. |
-| Nuovo | Posiziona il cursore all'inserimento di una nuova riga. |
-| Cancella | Cancella il tipo anticipo selezionato. |
-| Anteprima | Esegue l'anteprima di stampa della tabella in uso. |
-| Stampa | Esegue la stampa della tabella in uso. |
-
-
+Tablica je među onima koje se automatski upravljaju u postupku generiranja brojila nove računovodstvene godine, koja se nalazi unutar ‘Alata’ - ‘Korisnost’.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+
 
 
