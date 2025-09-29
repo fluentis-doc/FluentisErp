@@ -1,33 +1,33 @@
 ---
-title: Tipi corso base
+title: Tipovi osnovnih tečaja
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Corsi di formazione > Tipi corso base**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Edukacijski tečajevi > Osnovne vrste tečajeva**.
 
-In questa tabella è possibile codificare i *Tipi corso base*.   
-Alcuni esempi di utilizzo di *Tipi corso base* li troviamo nelle gestioni:
-> **Corsi base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*;   
-> **Parametri di gestione del personale** - nei *dati di testata*.
+U ovoj tablici moguće je kodificirati *Tipovi osnovnih tečaja*.   
+Neki primjeri korištenja *Tipovi osnovnih tečaja* nalazimo u modulima:
+> **Osnovni tečajevi** - u *Podaci o zaglavlju*;   
+> **Edukacijski tečajevi** - u *Podaci o zaglavlju*;   
+> **Parametri upravljanja osobljem** - u *Podaci o zaglavlju*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregledavanja, izmjene ili brisanja.  
 
-### Ricerca Tipi corso base**
+### Pretraživanje Osnovnih vrsta tečajeva**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave željeni filtri, potrebno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
 
-### Inserimento Tipi corso base**
+### Unos Osnovnih vrsta tečajeva**
 
-Per poter inserire nuovi *Tipi corso base* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Osnovnih vrsta tečajeva* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.   
+Za novi zapis obavezno je unijeti minimalno polja tražena od strane programa: **Šifra** i **Opis**.
 
-#### Campi specifici  
+#### Specifična polja  
     
-> **Tipo**: è il codice del *Tipo corso base*.   
-> **Descrizione tipo**: è la descrizione del *Tipo corso base*.   
-> **Tipo corso di formazione**: è il codice del *Tipo corso di formazione* che viene proposto alla creazione di un nuovo *Corso di formazione* da questo *Tipo corso base*.   
-> **Descrizione tipo corso di formazione**: è la descrizione del *Tipo corso di formazione*.   
-> **Note**: annotazioni libere.
+> **Vrsta**: šifra *Tip osnovnog tečaja*.   
+> **Opis tipa**: opis *Tip osnovnog tečaja*.   
+> **Tip obuke**: šifra *Tip obuke* koja se predlaže pri kreiranju novog *Tečaj obuke* iz ove *Osnovne vrste tečaja*.   
+> **Opis vrste obuke**: opis *Vrste edukacijskog tečaja*.   
+> **Napomene**: slobodne bilješke.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
