@@ -15,7 +15,7 @@ U formi **Numeriranje naplate** prikazana je tablica s popisom postojećih numer
 
 ![](/img/it-it/configurations/tables/fluentis-numerations/image01.png)
 
-### Sezione superiore
+### Gornji odjeljak 
 
 **Šifra**: kod numeratora;  
 
