@@ -16,4 +16,4 @@ nella videata sono presenti due campi “Movimenti” e “Valori” che consent
 
 Strumenti > Bizlink > Configurazione > Flussi 
 aprire la voce **Intercompany**
-cercando per Payroll saranno visibili i tracciati già presenti a standard, e dalla stessa videata è possibile configurare eventuali altri nuovi tracciati. 
+cercando per Payroll saranno visibili i tracciati già presenti a standard, e dalla stessa videata è possibile configurare eventuali altri nuovi tracciati.
