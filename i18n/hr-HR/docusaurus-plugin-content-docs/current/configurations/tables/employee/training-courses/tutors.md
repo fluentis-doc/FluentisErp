@@ -1,13 +1,13 @@
 ---
-title: Docenti
+title: Predavači
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Corsi di formazione > Docenti**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Edukacijski tečajevi > Predavači**.
 
-In questa tabella è possibile codificare i *Docenti*.   
-Alcuni esempi di utilizzo di *Docenti* li troviamo nelle gestioni:  
-> **Corsi di base** - nei *dati di testata*;   
+U ovoj tablici moguće je unijeti i evidentirati *Predavače*.   
+Neki primjeri upotrebe *Predavača* nalazimo u sljedećim modulima:    
+> **Osnovni tečajevi** - u *dati di testata*;   
 > **Corsi di formazione** - nei *dati di testata*.
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
