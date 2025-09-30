@@ -1,16 +1,14 @@
 ---
-title: Introduzione
+title: Uvod 
 sidebar_position: 1
 ---
 
-**Fluentis ERP** consente di gestire la Produzione e tutti i suoi aspetti operativi nelle aziende del settore Manifatturiero e Industriale che devono gestire situazioni, anche complesse, di preventivazione, consuntivazione costi, materiali ed attività.
-Gli algoritmi di **Fluentis** permettono di gestire tutti i processi aziendali interni ed esterni dell'intero ciclo di vita del prodotto, dalla preventivazione alla progettazione, all'approvvigionamento dei materiali e delle risorse produttive, alla Pianificazione della Produzione interna e/o in Conto Lavoro, alla Raccolta Dati di Produzione e Controllo costi, senza dimenticare il collegamento in ottica Industry 4.0 degli impianti di Produzione e Magazzini Automatici.
+**Fluentis ERP** omogućuje upravljanje proizvodnjom i svim njezinim operativnim aspektima u tvrtkama iz sektora proizvodnje i industrije koje se suočavaju s često kompleksnim scenarijima vezanim uz procjenu troškova, upravljanje materijalima i aktivnostima. Algoritmi **Fluentis-a** omogućuju upravljanje svim internim i vanjskim poslovnim procesima tijekom cijelog životnog ciklusa proizvoda, počevši od procjene i dizajna, preko nabave materijala i resursa za proizvodnju, do raspoređivanja unutarnje proizvodnje ili proizvodnje na narudžbu, te prikupljanja podataka o proizvodnji i kontrole troškova. Također je podržana integracija proizvodnih postrojenja i automatiziranih skladišta u skladu s konceptom Industrije 4.0.
 
-In Fluentis ERP l'applicazione del modello MES è stata progettata implementando una numerosa serie di parametri, per la gestione integrata dei dati provenienti dai processi produttivi che influenzano in modo considerevole la redditività dell'azienda. Nel software MES di Fluentis possiamo notare come i documenti relativi agli ordini di produzione, effettivamente lanciati, ma non necessariamente esecutivi, definiscano la sequenza tramite la quale, in ciascun reparto, e ancora più in dettaglio in ogni centro di lavoro, si trovi la definizione di tutte le informazioni necessarie all'esecuzione dell'attività produttiva.
-I materiali, le fasi e sottofasi, gli attrezzaggi ed in genere tutta la documentazione a supporto è finalizzata a rendere l'esecuzione dell'attività il più automatizzata, organizzata e fluida possibile.
-L'algoritmo principale di un ERP specializzato in ambito Produzione è definito dal MRP, il sistema di pianificazione che si occupa di verificare la corretta allocazione dei materiali e delle risorse necessarie alla realizzazione dell'attività produttiva. L'algoritmo del MRP viene configurato in funzione di una serie corposa di parametri, al fine di adattarsi al meglio in funzione del tipo di realtà produttiva rappresentata dall'azienda.
+U Fluentis ERP-u, primjena modela MES implementirana je uz široku paletu parametara za integrirano upravljanje podacima iz proizvodnih procesa koji značajno utječu na profitabilnost tvrtke. U MES softveru Fluentis-a, dokumenti koji se odnose na proizvodne narudžbe koje su stvarno pokrenute, ali ne nužno i izvršne, definiraju redoslijed izvođenja u svakom odjelu, a detaljnije u svakom radnom centru, pružajući sve potrebne informacije za izvršenje proizvodnih aktivnosti. Materijali, faze, podfaze, alati i općenito sva dokumentacija podrške usmjerena su na automatizaciju, organizaciju i fluidnost izvođenja aktivnosti.  
+Glavni algoritam specijaliziranog ERP-a za proizvodnju definiran je prema MRP-u, sustavu planiranja koji osigurava pravilnu alokaciju materijala i resursa potrebnih za realizaciju proizvodnih aktivnosti. Algoritam MRP-a konfiguriran je prema nizu parametara kako bi se najbolje prilagodio specifičnim potrebama proizvodne realnosti tvrtke.  
 
-## Moduli dell'area 
+## Moduli područja
 
 import Link from '@docusaurus/Link';
 
@@ -18,33 +16,32 @@ import Link from '@docusaurus/Link';
     <div className="card">
 ###     <Link to="/docs/planning/ms-master-scheduling/mrp">MRP - Material Requirement Planning</Link>
         <p><Link to="/docs/planning/ms-master-scheduling/mrp" className="bold-link">M.R.P.</Link></p>
-        <p>La procedura MRP (Material Requirements Planning) è un sistema integrato di pianificazione delle risorse che aiuta le aziende a ottimizzare la gestione dell'inventario e della produzione, sincronizzando la disponibilità dei materiali con le esigenze di produzione per migliorare l'efficienza operativa e ridurre i costi.</p>
+        <p>Procedura MRP (Material Requirements Planning) je integrirani sustav planiranja resursa koji pomaže poduzećima u optimizaciji upravljanja zalihama i proizvodnjom, sinkronizirajući dostupnost materijala s potrebama proizvodnje kako bi se poboljšala operativna učinkovitost i smanjili troškovi.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/production/production-intro">MES - Manufacturing Execution System</Link>
-        <p><Link to="/docs/production/pp-production-in-progress/production-orders/search-production-orders" className="bold-link">Ordini di produzione</Link></p>
-        <p>Il modulo è progettato per ottimizzare e semplificare la pianificazione dei processi produttivi. Consente di gestire ordini in stato "Lanciato" ed "Esecutivo", permettendo una chiara distinzione tra gli ordini pronti per l'avvio e quelli già in fase di esecuzione.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/picking-materials-list" className="bold-link">Lista prelievo materiali</Link></p>
-        <p>Permette di gestire e movimentare efficacemente i materiali destinati alla produzione.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/signals/sisgnals" className="bold-link">Dichiarazioni di produzione</Link></p>
-        <p>Questo modulo consente agli utenti di generare dichiarazioni di produzione tracciando lo stato di avanzamento di ogni fase, garantendo così una completa visibilità e controllo del processo produttivo</p>
-        <p><Link to="/docs/production/pp-production-in-progress/procedures/signals-record" className="bold-link">Registrazione dichiarazioni</Link></p>
-        <p>Questa procedura consente di registrare più dichiarazioni di produzione contemporaneamente.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/procedures/production-orders-release" className="bold-link">Rilascio ordini di produzione</Link></p>
-        <p>La procedura di rilascio degli ordini di produzione in Fluentis consente di cambiare lo stato degli ordini da *Lanciato* a *Esecutivo*, generando contestualmente i movimenti di magazzino necessari.</p>
+        <p><Link to="/docs/production/pp-production-in-progress/production-orders/search-production-orders" className="bold-link">Proizvodni nalozi</Link></p>
+        <p>Modul je osmišljen za optimizaciju i pojednostavljenje planiranja proizvodnih procesa. Omogućuje upravljanje narudžbama u stanju Pokrenuto i Izvršno, omogućujući jasnu razliku između narudžbi spremnih za pokretanje i onih koje su već u fazi izvršenja.</p>
+        <p><Link to="/docs/production/pp-production-in-progress/picking-materials-list" className="bold-link">Popis za podizanja matrijala</Link></p>
+        <p>Omogućuje učinkovito upravljanje i kretanje materijala namijenjenih proizvodnji.</p>
+        <p><Link to="/docs/production/pp-production-in-progress/signals/sisgnals" className="bold-link">Deklaracije o proizvodnji</Link></p>
+        <p>Ovaj modul omogućuje korisnicima generiranje izjava o proizvodnji prateći napredak svake faze, čime se osigurava potpuna vidljivost i kontrola nad proizvodnim procesom.</p>
+        <p><Link to="/docs/production/pp-production-in-progress/procedures/signals-record" className="bold-link">Zapis signala</Link></p>
+        <p>Ova procedura omogućuje istovremeno registriranje više izjava o proizvodnji.</p>
+        <p><Link to="/docs/production/pp-production-in-progress/procedures/production-orders-release" className="bold-link">Izdavanje  proizvodnih naloga</Link></p>
+        <p>Postupak puštanja proizvodnih naloga u Fluentisu omogućuje promjenu stanja narudžbi s Pokrenuto na Izvršno, pri čemu se istovremeno generiraju potrebni skladišni pokreti.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/production/mes/mes-intro">Fluentis MES</Link>
-        <p><Link to="/docs/production/mes/workstation" className="bold-link">Workstation</Link></p>
-        <p>Consentono una gestione efficiente delle operazioni produttive, permettendo di codificare, filtrare e associare risorse. Grazie alla loro interfaccia intuitiva, gli utenti possono ottimizzare il flusso di lavoro e migliorare l'efficienza operativa</p>
-        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Risorse di produzione</Link></p>
-        <p>Permette di personalizzare in maniera semplice e veloce il layout e il comportamento del singolo centro di lavoro, adattando il sistema alle specifiche esigenze aziendali.</p>
+        <p><Link to="/docs/production/mes/workstation" className="bold-link">Radna stanica</Link></p>
+        <p>Omogućuju učinkovito upravljanje proizvodnim operacijama, omogućavajući kodiranje, filtriranje i povezivanje resursa. Zahvaljujući svom intuitivnom sučelju, korisnici mogu optimizirati tijek rada i poboljšati operativnu učinkovitost.</p>
+        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Proizvodni resursi</Link></p>
+        <p>Omogućuje jednostavno i brzo prilagođavanje izgleda i ponašanja pojedinog radnog centra, prilagođavajući sustav specifičnim poslovnim potrebama.</p>
         <p><Link to="/docs/production/mes/mes-main-form" className="bold-link">MES</Link></p>
-        <p>È progettata per ottimizzare e semplificare il processo di dichiarazione delle attività produttive. Questa interfaccia consente agli operatori di monitorare e gestire in tempo reale le risorse di produzione, facilitando l'inserimento dei dati relativi alle fasi di lavorazione e alle quantità prodotte.</p>
+        <p>Osmišljena je za optimizaciju i pojednostavljenje procesa prijave proizvodnih aktivnosti. Ovo sučelje omogućuje operaterima da u realnom vremenu prate i upravljaju proizvodnim resursima, olakšavajući unos podataka vezanih za faze obrade i proizvedene količine.</p>
     </div>
 </div>
-

@@ -1,18 +1,23 @@
 ---
-title: Dichiarazioni
+title: Signali
 sidebar_position: 1
 ---
 
-:::important A cosa serve
-Il modulo per le **Dichiarazioni di Produzione** di Fluentis è uno strumento essenziale per gestire e monitorare efficacemente il ciclo produttivo. Ogni dichiarazione inizia con un'apertura, seguita da possibili segnalazioni di avanzamento, sospensione, ripresa e chiusura del processo. Gli operatori possono facilmente inserire dati cruciali come quantità prodotte, scartate, materiali impiegati, personale coinvolto e indicare lotti e serial number, garantendo una tracciabilità completa delle operazioni produttive; inoltre, al loro interno è anche integrato il controllo qualità. Questo approccio strutturato ottimizza l'efficienza, migliorando il controllo delle attività e la gestione delle risorse.
+:::important Čemu služi
+Modul za **Deklaracije signala** u Fluentisu je ključni alat za učinkovito upravljanje i praćenje proizvodnog ciklusa. Svaka izjava započinje otvaranjem, a slijede moguće prijave napretka, prekida, nastavka i zatvaranja procesa. Operateri mogu jednostavno unijeti ključne podatke kao što su proizvedene količine, odbačene količine, upotrijebljeni materijali, uključeno osoblje te navesti serije i serijske brojeve, osiguravajući potpunu sljedivost proizvodnih operacija; unutar njih je također integrirana kontrola kvalitete. Ovaj strukturirani pristup optimizira učinkovitost, poboljšava kontrolu aktivnosti i upravljanje resursima.  
 :::
 
-Il modulo **Dichiarazioni** consente di gestire le dichiarazioni di produzione.
+Modul **Signali** omogućuje upravljanje proizvodnim deklaracijama.   
 
-import SearchForm from './../../../import/sections/search-form.md'
+Obrazac za Pretraživanje dokumenata omogućuje pretraživanje svih dokumenata radi pregleda, izmjene, eventualnog brisanja ili unosa novog dokumenta; prozor se sastoji od područja za filtriranje i rezultatne mreže. 
 
-<SearchForm />
+Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na gumb **Traži** u *traci izbornika* kako biste prikazali rezultate unutar rezultatne mreže. 
 
-:::note Nota
-Nel caso in cui si voglia visualizzare anche le dichiarazioni di produzione già registrate, è necessario abilitare il flag "Registrato" nel filtro della form.
+Za otvaranje detalja dokumenta dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u detalje i uređivanje) ili gumb **Prikaži** (omogućuje ulazak u detalje i pregled, ali bez mogućnosti uređivanja). 
+
+*Vidi također*: 
+*Zajedničke funkcionalnosti, gumbe i polja*   *Dodavanje novih polja u obrasce za pretraživanje* 
+
+:::note NAPOMENA 
+Ako želite prikazati i već registrirane Deklaracije signala, potrebno je omogućiti opciju *Registrirano* u filteru obrasca.  
 :::

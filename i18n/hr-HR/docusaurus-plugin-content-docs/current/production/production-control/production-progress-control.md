@@ -1,16 +1,15 @@
 ---
-title: Verifica avanzamento di produzione
+title: Provjera napretka proizvodnje
 sidebar_position: 1
 ---
 
-Questa form consente di stampare il report **Verifica avanzamento di produzione** che per ogni ordine di produzione mostra lo stato di avanzamento delle singole fasi tramite una *barra di avanzamento*, in base al tempo o alla quantità prodotta.
+Ovaj obrazac omogućuje ispis izvješća o  **Provjeri napretka proizvodnje** koje za svaku proizvodnu narudžbu prikazuje stanje napretka pojedinih faza putem *trake napretka*, na temelju vremena ili proizvedene količine.  
 
-Nel report è presente un campo *Stato* che indica lo stato della fase tramite un quadratino colorato con il seguente significato:
+U izvješću je prisutno polje *Stanje* koje označava status faze putem kvadratića u boji sa sljedećim značenjem:  
 
-- **Verde**: indica che la fase non è in ritardo;       
-- **Rosso**: indica che la fase è in ritardo;        
-- **Grigio**: indica che la fase è evasa.
+- **Zeleno**: označava da faza nije u kašnjenju;         
+- **Crveno**: označava da faza kasni;            
+- **Sivo**: označava da je faza završena.
 
-La **Percentuale di avanzamento** della fase nel grafico, viene calcolata sulla base della somma delle quantità prodotte e scartate nelle dichiarazioni di produzione, oppure sulla base del valore maggiore tra la somma dei tempi macchina e la somma dei tempi manodopera. L'utente, può scegliere il criterio di valorizzazione della **Percentuale di avanzamento** tramite gli appositi flag presenti nel box *Previsione fine lavori* del filtro del report.       
-Nel caso in cui la **Percentuale di avanzamento** superi il 100 % verrà mostrato, accanto al grafico, un *Triangolino rosso* che indica appunto il superamento del valore preventivato.
-
+**Postotak napretka** faze u grafikonu izračunava se na temelju zbroja proizvedenih i odbačenih količina u prijavama proizvodnje, ili na temelju veće vrijednosti između zbroja vremena stroja i zbroja vremena radne snage. Korisnik može odabrati kriterij za izračunavanje **Postotka napretka** putem odgovarajućih zastavica prisutnih u okviru *Predviđanje završetka radova* u filteru izvješća.          
+U slučaju da **Postotak napretka** premaši 100%, pored grafikona će se prikazati *Crveni trokut* koji označava prekoračenje predviđene vrijednosti.  

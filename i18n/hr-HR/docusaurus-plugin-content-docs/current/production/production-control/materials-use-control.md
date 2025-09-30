@@ -1,13 +1,14 @@
+
 ---
-title: Controllo utilizzo materiali
+title: Kontrola korištenje materijala
 sidebar_position: 5
 ---
 
-Questa form consente di stampare il report **Controllo utilizzo materiali** che permette di visualizzare l'impiego di tutti i materiali raggruppati per:
+Ovaj obrazac omogućuje ispis izvješća **Kontrola korištenja materijala** koje omogućuje prikaz upotrebe svih materijala grupiranih prema:  
 
-- commesse di produzione 
-- Ordine
-- Articolo
-- Data impiego
+- Proizvodnim narudžbama
+- Narudžbi
+- Artiklu
+- Datumu upotrebe
 
-con per ciascuno l'indicazione delle relative quantità prelevate, consumate e scartate.
+s naznakom odgovarajućih količina preuzetih, potrošenih i odbačenih za svaki od njih.

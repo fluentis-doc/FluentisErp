@@ -1,26 +1,23 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il MES (Manufacturing Execution System) di Fluentis è una soluzione software progettata per ottimizzare e gestire i processi produttivi all'interno delle aziende manifatturiere. Il MES di Fluentis integra diverse funzionalità, come la gestione delle ordini di lavoro, la tracciabilità delle materie prime e dei prodotti finiti, la raccolta dei dati delle macchine e l'analisi delle performance. Questo sistema aiuta le aziende a ridurre i tempi di fermo, ottimizzare l'uso delle risorse e migliorare la qualità del prodotto finale, garantendo una maggiore competitività nel mercato globale.   
+MES (Manufacturing Execution System) tvrtke Fluentis softversko je rješenje dizajnirano za optimizaciju i upravljanje proizvodnim procesima unutar proizvodnih tvrtki. MES tvrtke Fluentis integrira različite funkcionalnosti, poput upravljanja radnim nalozima, praćenja sirovina i gotovih proizvoda, prikupljanja podataka s strojeva i analize performansi. Ovaj sustav pomaže tvrtkama smanjiti vrijeme zastoja, optimizirati korištenje resursa i poboljšati kvalitetu krajnjeg proizvoda, jamčeći veću konkurentnost na globalnom tržištu.  
 
-## Moduli dell'area 
+## Moduli područja
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/planning/ms-master-scheduling/mrp">Fluentis MES</Link>
-        <p><Link to="/docs/production/mes/configuration" className="bold-link">Installazione</Link></p>
-        <p>breve guida sull'installazione di Fluentis MES</p>
-        <p><Link to="/docs/production/mes/workstation" className="bold-link">Workstation</Link></p>
-        <p>Sono progettate per ottimizzare la gestione delle operazioni produttive, offrendo una piattaforma intuitiva per la codifica, la modifica e la cancellazione delle workstation. Gli utenti possono facilmente filtrare e cercare workstation, associando risorse specifiche per ogni attività. Questo sistema migliora l'efficienza del flusso di lavoro, consentendo di gestire in modo efficace le risorse di produzione, quali macchine e operatori, e facilitando la pianificazione delle attività operative.</p>
-        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Risorse di produzione</Link></p>
-        <p>Permettono di gestire articoli, macchine, dipendenti e strumenti di misura, garantendo una pianificazione ottimizzata delle operazioni. È possibile personalizzare il layout e il comportamento del singolo centro di lavoro, rendendo il sistema flessibile e adattabile alle esigenze specifiche dell'azienda, e facilitando la copia delle impostazioni predefinite per un'efficienza maggiore.</p>
+        <p><Link to="/docs/production/mes/workstation" className="bold-link">Radne stanice</Link></p>
+        <p>Dizajnirane su za optimizaciju upravljanja proizvodnim operacijama, nudeći intuitivnu platformu za kodiranje, izmjenu i brisanje radnih stanica. Korisnici mogu lako filtrirati i pretraživati radne stanice, povezujući specifične resurse za svaku aktivnost. Ovaj sustav poboljšava učinkovitost tijeka rada, omogućujući učinkovito upravljanje proizvodnim resursima, kao što su strojevi i operateri, te olakšavajući planiranje operativnih aktivnosti.</p>
+        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Proizvodni resursi</Link></p>
+        <p>Omogućuju upravljanje artiklima, strojevima, zaposlenicima i mjernim instrumentima, jamčeći optimizirano planiranje operacija. Moguće je prilagoditi izgled i ponašanje pojedinog radnog centra, čineći sustav fleksibilnim i prilagodljivim specifičnim potrebama tvrtke, te olakšavajući kopiranje unaprijed postavljenih postavki radi veće učinkovitosti.</p>
         <p><Link to="/docs/production/mes/mes-main-form" className="bold-link">MES</Link></p>
-        <p>La forma principale del MES di Fluentis è progettata per ottimizzare il monitoraggio e la gestione delle attività produttive in tempo reale. Questa interfaccia consente agli operatori di inserire e modificare rapidamente i dati delle risorse di produzione, grazie a funzionalità intuitive.</p>
-        <p>Questo approccio integrato non solo migliora la visibilità delle operazioni, ma contribuisce anche a ottimizzare i flussi di lavoro e la produttività complessiva dell'impresa.</p>
+        <p>Osnovni oblik MES-a tvrtke Fluentis dizajniran je za optimizaciju praćenja i upravljanja proizvodnim aktivnostima u stvarnom vremenu. Ova sučelja omogućuju operaterima brzo unos i izmjenu podataka o proizvodnim resursima, zahvaljujući intuitivnim funkcionalnostima.</p>
+        <p>Ovaj integrirani pristup ne samo da poboljšava vidljivost operacija, već također pridonosi optimizaciji tijekova rada i ukupne produktivnosti poduzeća.</p>
     </div>
 </div>
-

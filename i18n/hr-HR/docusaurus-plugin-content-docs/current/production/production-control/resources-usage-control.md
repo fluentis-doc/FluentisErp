@@ -1,14 +1,14 @@
 ---
-title: Controllo utilizzo risorse
+title: Kontrola korištenja resursa
 sidebar_position: 4
 ---
 
-Questa form consente di stampare il report **Controllo utilizzo risorse**.
+Ovaj obrazac omogućuje ispis izvješća **Kontrola korištenja resursa**.
 
-Una volta selezionato l'oggetto di riferimento tra:
+Nakon odabira referentnog objekta među:  
 
-- Centro di lavoro
-- Macchina
-- Manodopera
+- Radni centar
+- Stroj
+- Radna snaga
 
-il report permette di visualizzare tutte le informazioni relative alle fasi che interessano l'oggetto selezionato e ne determinano l'utilizzo.
+Izvješće omogućuje prikaz svih informacija vezanih uz faze koje se odnose na odabrani objekt i određuju njegovo korištenje. 

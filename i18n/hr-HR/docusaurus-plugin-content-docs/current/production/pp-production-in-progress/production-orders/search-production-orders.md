@@ -1,34 +1,34 @@
 ---
-title: Ricerca Ordini di Produzione
+title: Pretraga Proizvodnih naloga 
 sidebar_position: 2
 ---
 
-:::important A cosa serve
-Il modulo per la gestione degli **Ordini di Produzione** di Fluentis è una soluzione dinamica e versatile, pensata per supportare in modo efficace il controllo e la pianificazione delle attività produttive. Direttamente dalla form principale, gli utenti possono gestire ordini in diversi stati, tra cui "Lanciato" ed "Esecutivo", permettendo una chiara distinzione tra gli ordini pronti per l'avvio e quelli già in fase di esecuzione.
+:::important Čemu služi 
+Modul za upravljanje **Proizvodnim nalozima** u Fluentisu je dinamično i svestrano rješenje, osmišljeno kako bi učinkovito podržalo kontrolu i planiranje proizvodnih aktivnosti. Izravno s glavnog obrasca, korisnici mogu upravljati nalozima u različitim stanjima, uključujući *Pokrenut* i *Izvršni*, omogućujući jasnu razliku između naloga spremnih za početak i onih koji su već u fazi izvršenja.
 
-Una delle funzionalità principali è la possibilità di creare vari lotti a partire da un singolo ordine di produzione, consentendo così una maggiore flessibilità e una gestione più precisa delle quantità da produrre. Ogni lotto può essere associato a dettagli specifici, garantendo così una tracciabilità ottimale. La gestione intuitiva degli ordini non solo semplifica il monitoraggio delle fasi di produzione, ma facilita anche l'adeguamento ai cambiamenti delle esigenze operative, rendendo Fluentis un alleato strategico per l'efficienza produttiva.
+Jedna od glavnih funkcionalnosti je mogućnost kreiranja različitih serija na temelju jednog proizvodnog naloga, čime se omogućuje veća fleksibilnost i preciznije upravljanje količinama koje treba proizvesti. Svaka serija može biti povezana sa specifičnim detaljima, čime se osigurava optimalna sljedivost. Intuitivno upravljanje nalozima ne samo da pojednostavljuje praćenje faza proizvodnje, već također olakšava prilagodbu promjenama operativnih potreba, čineći Fluentis strateškim saveznikom za proizvodnu učinkovitost.  
 :::
 
-Il modulo **Ordini di Produzione** consente di gestire gli ordini di produzione.
+Modul **Proizvodnih Naloga** omogućuje upravljanje narudžbama proizvodnje. 
 
-import SearchForm from './../../../import/sections/search-form.md'
+Obrazac za Pretraživanje dokumenata omogućuje pretraživanje svih dokumenata s ciljem pregleda, uređivanja, eventualnog brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja za filtriranje i rezultatne mreže.
 
-<SearchForm />
+Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na gumb **Traži** u *traci izbornika* kako bi se rezultati prikazali unutar rezultatne mreže.
 
-*Pulsanti specifici*:
+Za otvaranje detalja jednog dokumenta, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u detalje i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u detalje i pregled, ali bez mogućnosti uređivanja). 
 
-> **Generazione lotti**: questo pulsante, che si abilita solamente dopo aver selezionato un ordine, permette di creare dei lotti di produzione partendo dalla quantità dell'ordine di produzione stesso; quindi, da la possibilità di creare dei nuovi ordini di produzione con lo stesso numero principale, ma con numero lotto diverso e per ciascuno di essi permette di indicare le quantità da produrre. Nel caso in cui l'ordine di produzione si trovi in stato *Evaso*, si abilita anche il flag **Mantenere il riferimento alla commessa di produzione**, che permette di decidere se il nuovo lotto dell'ordine debba essere creato con il riferimento alla commessa di origine o meno; in questo caso è importante ricordare che la commessa rimarrà in stato *Evaso*, quindi se necessario, l'utente dovrà riaprirla manualmente.     
-:::note Nota
-La quantità del lotto di origine non può essere variata nel caso in cui siano già state create delle *Liste di prelievo*, delle *Dichiarazioni di produzione*, oppure nel caso in cui alcuni materiali siano già stati consumati. In questi casi è comunque possibile creare nuovi lotti di produzione, ma senza poter variare la quantità del lotto di origine.          
+*Vidi također*:
+*Zajedničke funkcionalnosti, gumbe i polja*
+*Dodavanje novih polja u obrasce pretraživanja*
+
+*Specifični gumbi*:
+
+> **Generiraj lotove**: ovaj gumb postaje dostupan tek nakon što je odabran jedan redak narudžbe. Omogućuje stvaranje proizvodnih serija temeljem količine same narudžbe proizvodnje; stoga, pruža mogućnost stvaranja novih narudžbi proizvodnje s istim glavnim brojem, ali s različitim brojem serije, i omogućuje unos količina za proizvodnju za svaku od njih;     
+:::note NAPOMENA  
+Količina izvorne serije ne može se mijenjati ako su već stvoreni *Popis za podizanje* ili *Proizvodne izjave* ili ako su neki materijali već potrošeni. U tim slučajevima, i dalje je moguće stvoriti nove proizvodne serije, ali bez mogućnosti mijenjanja količine izvorne serije.           
 :::
-> **Seleziona progetto**: questo pulsante permette di associare un progetto agli ordini di produzione selezionati;    
-> **Modifica stato ordine**: questo pulsante, che si abilita solamente dopo aver selezionato uno o più ordini, permette di variare lo stato degli ordini selezionati (Lanciato, Esecutivo, Evaso, Storicizzato);     
-> **Completamento dati ordine**: questo pulsante, che si abilita solamente dopo aver selezionato uno o più ordini, permette di rigenerare i dati dell'ordine di produzione, sostituendoli con quelli presenti nella distinta base e nel ciclo di lavoro presenti in anagrafica;    
-> **Ricalcolo costi Ordine di Produzione**: questo pulsante permette di effettuare il ricalcolo dei costi di produzione degli ordini di produzione selezionati;            
-> **Attiva tassativo**: permette di attivare il flag **Tassativo** all'interno di tutti gli ordini di produzione selezionati;       
-> **Disattiva tassativo**: permette di disattivare il flag **Tassativo** all'interno di tutti gli ordini di produzione selezionati. 
-         
-
-
-
-
+> **Odaberi prodajni nalog**: ovaj gumb omogućuje povezivanje projekta s odabranim narudžbama proizvodnje;      
+> **Ponovno izračunaj raspoloživost**: ovaj gumb pokreće izračun dostupnosti za odabrane narudžbe proizvodnje;      
+> **Promjeni status narudžbe**: ovaj gumb postaje dostupan tek nakon što su odabrane jedna ili više narudžbi i omogućuje promjenu statusa odabranih narudžbi (Pokrenuto, Izvršno, Isporučeno, Arhivirano);       
+> **Kompletiranje podataka narudžbe**: ovaj gumb postaje dostupan tek nakon što su odabrane jedna ili više narudžbi, omogućuje ponovno generiranje podataka narudžbe proizvodnje zamjenom postojećih podataka u osnovnom računu i radnom ciklusu koji su registrirani;    
+> **Ponavljanje izračuna Troškova Narudžbe Proizvodnje**: ovaj gumb omogućuje izračunavanje troškova proizvodnje odabranih narudžbi proizvodnje.     

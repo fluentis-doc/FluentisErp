@@ -1,37 +1,34 @@
 ---
-title: Workstation
-sidebar_position: 3
+title: Radna stanica
+sidebar_position: 2
 ---
 
-:::important A cosa serve
-L'introduzione alle workstation del MES di Fluentis è fondamentale per comprendere come gestire efficacemente le risorse e le operazioni produttive all'interno dell'ambiente di lavoro. Il sistema MES offre una tabella dedicata alla codifica delle workstation, utile per inserire, modificare o cancellare record. Attraverso un'interfaccia intuitiva, gli utenti possono cercare workstation tramite un'area di filtro, e all'inserimento di nuove codifiche bisogna fornire il codice e la descrizione della workstation.
+:::important Čemu služi
+Uvod u radne stanice MES sustava Fluentis ključan je za razumijevanje učinkovitog upravljanja resursima i proizvodnim operacijama unutar radnog okruženja. MES sustav nudi posebnu tablicu za kodiranje radnih stanica, koja omogućuje unos, izmjenu ili brisanje zapisa. Kroz intuitivno sučelje, korisnici mogu pretraživati radne stanice putem filtra, a prilikom unosa novih kodova potrebno je unijeti kod i opis radne stanice.
 
-Ogni workstation può essere associata a diverse risorse, a seconda delle necessità operative. Ad esempio, se è prevista un'associazione a risorse multiple, in fase di avvio del MES, sarà compito dell'utente selezionare manualmente la risorsa desiderata. Al contrario, nel caso di un'associazione a una sola risorsa, il sistema carica automaticamente tutte le fasi operative già iniziate di quella risorsa, semplificando il flusso di lavoro e migliorando l'efficienza.
+Svaka radna stanica može biti povezana s različitim resursima, ovisno o operativnim potrebama. Na primjer, ako je predviđena povezanost s više resursa, prilikom pokretanja MES sustava, korisnik će morati ručno odabrati željeni resurs. Nasuprot tome, u slučaju povezanosti s jednim resursom, sustav automatski učitava sve započete operativne faze tog resursa, pojednostavljujući tijek rada i poboljšavajući učinkovitost.  
 :::
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Workstation*.
+Tablica omogućuje upravljanje kodiranjem različitih vrsta  *Radnih Stanica*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi se prikazali, izmijenili ili izbrisali.  
 
-**Ricerca Workstation**
+**Pretraživanje radnih stanica**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i rezultate. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na gumb  **Taži** kako bi se rezultati prikazali unutar mreže rezultata.  
 
-**Inserimento Workstation**
+**Unos radne stanice**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia principale sulla prima riga vuota oppure premere il pulsante **Nuovo** ed inserire i seguenti dati:      
-- **Codice**: indica il nome del pc che farà da workstation;        
-:::note Nota
-È possibile ottenere il nome del pc lanciando il comando *hostname* dal prompt dei comandi. 
+Za unos novih kodova potrebno je kliknuti na prazan red u glavnoj mreži ili pritisnuti gumb **Novo** i unijeti sljedeće podatke:        
+- **Kod**: označava naziv računala koje će služiti kao radna stanica;   
+
+:::note NAPOMENA
+Naziv računala možete dobiti pokretanjem naredbe *hostname* iz naredbenog retka.  
 :::         
-- **Descrizione**: indica la descrizione del nome del pc che farà da workstation.     
+- **Opis**: označava opis naziva računala koje će služiti kao radna stanica.     
 
-Nella griglia secondaria (sottostante la principale), è possibile associare le *risorse* che potranno lavorare su ciascuna workstation.
-- Nel caso in cui per una workstation venga associato solo una risorsa (es. di tipo centro di lavoro), in fase di avvio il MES caricherà automaticamente quella risorsa e tutte le fasi già iniziate associate ad essa.      
-Esempio di workstation dedicata ad un centro di lavoro.        
-- Nel caso in cui per una workstation vengano associate più risorse (es. di tipo centro di lavoro), in fase di avvio del MES non verrà caricata nessuna di esse e l'utente potrà selezionare solo una delle risorse associate.      
-Esempio di workstation dedicata ad un reparto dove avverranno le dichiarazioni di tutti i centro di lavoro di quel particolare reparto.     
-- Nel caso in cui, invece, per una workstation non venga associata alcuna risorsa, in fase di avvio del MES non verrà caricata nessuna di esse e l'utente potrà selezionare una qualsiasi delle risorse inserite nella tabella [Risorse di produzione](/docs/production/mes/production-resources).       
-Esempio di workstation dedicata ad un attrezzista che dichiarerà le proprie attività per tutti i centro di lavoro.      
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+U sekundarnoj mreži (ispod glavne), možete dodijeliti *resurse* koji mogu raditi na svakoj radnoj stanici.  
+- U slučaju da je radnoj stanici dodijeljen samo jedan resurs (npr. radni centar), MES će automatski učitati taj resurs i sve već započete faze koje su s njim povezane. Primjer radne stanice posvećene radnom centru.        
+- U slučaju da su radnoj stanici dodijeljeni više resursa (npr. radni centri), MES neće automatski učitati nijedan od njih pri pokretanju, a korisnik će moći odabrati samo jedan od dodijeljenih resursa. Primjer radne stanice posvećene odjelu gdje će se izjavljivati sve faze svih radnih centara tog odjela.     
+- U slučaju da radnoj stanici nije dodijeljen nijedan resurs, MES neće automatski učitati nijedan resurs pri pokretanju, a korisnik će moći odabrati bilo koji resurs koji je unesen u tablicu [Proizvodnih resursa](/docs/production/mes/production-resources).       
+Primjer radne stanice posvećene tehničaru koji će izjavljivati svoje aktivnosti za sve radne centre.      
