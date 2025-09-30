@@ -1,11 +1,11 @@
 ---
-title: Codici Paghe
+title: Kodovi plaća
 sidebar_position: 4
 ---
 
-#### Campi specifici 
+#### Specifična polja  
 
-**Codice** / **Descrizione** : codice e descrizione per identificare il codice paga
+**Šifra / Opis** : šifra i opis koji identificiraju šifru za obračun plaće.  
 
 **Intervento** : flag utilizzato in qualche tracciato file esportato dall'elaborazione paghe per gestioni esterne a Fluentis.
 

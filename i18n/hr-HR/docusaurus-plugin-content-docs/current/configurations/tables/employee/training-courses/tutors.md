@@ -7,39 +7,39 @@ Tablica se nalazi na putanji **Tablice > Zaposlenici > Edukacijski tečajevi > P
 
 U ovoj tablici moguće je unijeti i evidentirati *Predavače*.   
 Neki primjeri upotrebe *Predavača* nalazimo u sljedećim modulima:    
-> **Osnovni tečajevi** - u *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*.
+> **Osnovni tečajevi** - u *zaglavlju podataka*;   
+> **Corsi di formazione** - u *zaglavlju podataka*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućava unos novih zapisa, kao i pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Docenti**
+**Pretraživanje predavača**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite željene filtere, kliknite na tipki **Traži** kako biste vidjeli rezultate u tablici ispod.
 
-**Inserimento Docenti**
+**Unos predavača**
 
-Per poter inserire nuovi *Docenti* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novog *Predavača* potrebno je kliknuti na prvu praznu liniju u tablici ili pritisnuti tipku **Novo**.   
+Za novi zapis obavezno je unijeti minimalno sljedeća polja: **Šifra** i **Naziv konta**.
 
-#### Campi specifici 
+#### Specifična polja
     
-> **Docente**   
->> **Codice**: è il codice del *Docente*.   
->> **Descrizione**: è la descrizione del *Docente*.   
+> **Predavač**   
+>> **Šifra**: jedinstvena oznaka *Predavača*.   
+>> **Opis**: naziv ili ime *Predavača*.   
 >
-> **Docente interno**
->> **Codice**: è il codice del *Dipendente* che ricopre il ruolo di *Docente*.   
->> **Cognome**: è il cognome del *Dipendente* che ricopre il ruolo di *Docente*.   
->> **Nome**: è il nome del *Dipendente* che ricopre il ruolo di *Docente*.   
+> **Interni predavač**
+>> **Šifra**: šifra *Zaposlenika* koji obnaša ulogu *Predavača*.   
+>> **Prezime**: prezime *Zaposlenika* koji je *Predavač*.   
+>> **Ime**: ime *Zaposlenika* koji je *Predavač*.   
 >
-> **Docente esterno**
->> **Descrizione**: è la ragione sociale del *Fornitore* che ricopre il ruolo di *Docente*.   
+> **Eksterni predavač**
+>> **Opis**: naziv tvrtke ili *Dobavljača* koji obavlja ulogu *Predavača*.   
 >
-> **Attivo**: indica se il *Docente** è ancora in carica.   
-> **Inizio validità**: è la data dalla quale il *Docente** entra in carica.   
-> **Fine validità**: è la data dalla quale il *Docente** cessa di essere in carica.   
-> **Curriculum**: annotazioni libere relative al curriculum.   
-> **Costo orario**: tariffa oraria.   
-> **Note**: annotazioni libere.
+> **Aktivan**: označava je li *Predavač** trenutno aktivan.    
+> **Početak valjanosti**: datum od kojeg *Predavač** počinje s radom.   
+> **Kraj valjanosti**: datum do kojeg *Predavač** obavlja svoj posao.     
+> **Nastavni plan**: slobodne bilješke vezane uz obrazovanje i iskustvo predavača.     
+> **Troškovi po satu**: cijena rada po satu.  
+> **Napomene**: dodatne bilješke. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostale detalje vezane uz opće funkcioniranje formi pogledajte sljedeći link: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
