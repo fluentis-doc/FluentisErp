@@ -29,4 +29,4 @@ Para el nuevo registro se deben ingresar al menos los campos obligatorios requer
 > **Meses**: indica si la *Unidad de medida de herramientas* identifica los meses; solo una *Unidad de medida* entre todas las codificadas puede identificar los meses.  
 > **Notas**: anotaciones libres.
 
-Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

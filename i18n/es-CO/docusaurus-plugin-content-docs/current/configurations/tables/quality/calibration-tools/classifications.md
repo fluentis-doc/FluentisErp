@@ -10,7 +10,7 @@ Un ejemplo de uso lo encontramos en la gestión de **Herramientas de Medición**
 
 La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Búsqueda de clasificaciones de herramientas de medición**
+**Búsqueda de clasificaciones de herramientas de medición**  
 
 El formulario consta de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 

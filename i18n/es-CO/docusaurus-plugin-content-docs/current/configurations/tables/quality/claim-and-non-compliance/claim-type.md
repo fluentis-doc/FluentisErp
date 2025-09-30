@@ -1,61 +1,61 @@
 ---
-title: tipi di reclamo
+title: Tipos de reclamaciones
 sidebar_position: 1
 ---
 
-La tabla se encuentra en la ruta **Tablas > Calidad > Reclamos y No conformidades > tipi di reclamo**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Quejas y No conformidades > Tipos de reclamaciones**.
 
-En esta tabla es posible codificar los *tipi di reclamo*.  
-El *Tipo de reclamo* es parte integral, junto con el *Año* y el *Número*, del código único del *Reclamo*.  
-Algunos ejemplos de uso de *tipi di reclamo* los encontramos en las gestiones:  
-> **reclami** - en los *dati di testata*;  
-> **parametri reclami e non conformità** - en la pestaña *generale*;  
-y en todas las gestiones donde se utiliza el *Reclamo*.  
+En esta tabla es posible codificar los *Tipos de reclamaciones*.  
+El *Tipo de reclamación* es parte integral, junto con el *Año* y el *Número*, del código único de *Reclamación*.  
+Algunos ejemplos de uso de *Tipos de reclamaciones* los encontramos en las gestiones:  
+> **Quejas** - en los *Información del encabezado*;  
+> **Parámetros de quejas y no conformidad** - en la pestaña *General*;  
+y en todas las gestiones donde se utiliza la *Reclamación*.  
 
 La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Búsqueda de tipi di reclamo (Ricerca Tipi di reclamo)**
+**Búsqueda de Tipos de reclamaciones**
 
-El formulario se compone de un área de filtro y otra de resultados. Una vez que se han configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario se compone de un área de filtro y otra de resultados. Una vez que se han configurado todos los filtros deseados, basta con hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserción de tipi di reclamo (Inserimento Tipi di reclamo)**
+**Inserción de Tipos de reclamaciones**
 
-Para poder insertar nuevos *tipi di reclamo*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
-Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
+Para poder insertar nuevos *Tipos de reclamaciones*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **Nuevo  **.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **Código** y la **Descripción**.
 
-## tipi di reclamo (Tipi di reclamo)
+## Tipos de reclamaciones 
 
-Es la lista donde se ingresan las informaciones principales de los *tipi di reclamo*.  
+Es la lista donde se ingresan las informaciones principales de los *Tipos de reclamaciones*.  
 La lista se compone de la siguiente información:  
-> **tipo di reclamo**  
->> **codice**: es el código del *Tipo de reclamo*.  
->> **descrizione**: es la descripción del *Tipo de reclamo*.  
+> **Tipo di Reclamación**  
+>> **Código**: es el código del *Tipo de Reclamación*.  
+>> **Descripción**: es la descripción del *Tipo de Reclamación*.  
 >  
-> **modello reclamo**  
-> es una lista de valores predeterminados del sistema que identifican el modelo de gestión del *Reclamo*; los valores predeterminados son:  
+> **Modelo de queja**  
+> es una lista de valores predeterminados del sistema que identifican el modelo de gestión de *Reclamación*; los valores predeterminados son:  
 > - *CL - Clásico (Classic)*;  
 > - *8D - Resolución de Problemas 8D (8D Problem Solving)*.  
->> **codice**: es el código del *Modelo de reclamo*;  
->> **descrizione**: es la descripción del *Modelo de reclamo*.  
+>> **Código**: es el código del *Modelo de Reclamación*;  
+>> **Descripción**: es la descripción del *Modelo de queja*.  
 >  
-> **numerazione**  
->> **codice**: es el código de la *Numeración*.  
->> **descrizione**: es la descripción de la *Numeración*.  
->> **oggetto**: es el tipo de objeto sobre el cual se basa la *Numeración*.  
+> **Numeración**  
+>> **Código**: es el código de la *Numeración*.  
+>> **Descripción**: es la descripción de la *Numeración*.  
+>> **Objeto**: es el tipo de objeto sobre el cual se basa la *Numeración*.  
 >  
-> **tipo fattura**  
->> **codice**: es el código del *Tipo de factura* que se utiliza para la *Valorización* del *Reclamo* para la creación de las *Notas de crédito (Note di accredito)*.  
->> **descrizione**: es la descripción del *Tipo de factura*.  
+> **Tipo de factura**  
+>> **Código**: es el código del *Tipo de factura* que se utiliza para la *Valorización* de *Reclamación* para la creación de las *Notas de crédito*.  
+>> **Descripción**: es la descripción del *Tipo de factura*.  
 >  
-> **tipo iva**  
->> **codice**: es el código del *Tipo de IVA* que se utiliza para la *Valorización* del *Reclamo* para la creación de las *Notas de crédito* en caso de que el cliente no disponga de ello.  
->> **descrizione**: es la descripción del *Tipo de IVA*.  
+> **Tipo de IVA**  
+>> **Código**: es el código del *Tipo de IVA* que se utiliza para la *Valorización* de *Reclamación* para la creación de las *Notas de crédito* en caso de que el cliente no disponga de ello.  
+>> **Descripción**: es la descripción del *Tipo de IVA*.  
 >  
-> **note**: anotaciones libres.
+> **Notas**: anotaciones libres.
 
-### Atributos del Tipo de reclamo (Attributi Tipo di reclamo)
+### Atributos del Tipo de Reclamación 
 
-Es posible ingresar [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para el *Tipo de reclamo*.  
-Estos *Datos extra* se heredan en los *Reclamos* de esa determinada tipología.
+Es posible ingresar [Datos Adicionales](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para el *Tipo de Reclamación*.  
+Estos *Datos adicionales* se heredan en las *Quejas* de esa determinada tipología.
 
-Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
