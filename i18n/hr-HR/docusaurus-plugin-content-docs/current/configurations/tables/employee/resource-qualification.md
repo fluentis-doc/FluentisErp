@@ -1,21 +1,21 @@
 ---
-title: Qualifiche
+title: Kvalifikacije
 sidebar_position: 10
 ---
 
-La tabella si trova sul percorso **Tabelle > Dipendenti > Qualifiche**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Kvalifikacije**.
 
-Questa form definisce le qualifiche di lavorazione che sono poi richiamate nei centri di lavoro per le attività di attrezzaggio e di lavorazione.     Ogni lavoratore può possedere una o più qualifiche, specificandone il grado di preferenza (A, B,..).      
-Le qualifiche sono definite nell'anagrafica lavoratori.
+Ovaj obrazac definira kvalifikacije obrade koje se zatim koriste u radnim centrima za aktivnosti postavljanja i obrade. Svaki radnik može imati jednu ili više kvalifikacija, određujući njihov stupanj preferencije (A, B,...). Kvalifikacije su definirane u kartonu radnika.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se moglo pregledati, izmijeniti ili izbrisati.
 
-**Ricerca Qualifiche**
+**Pretraživanje kvalifikacija**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od dijela za filtriranje i dijela za prikaz rezultata.
+Nakon što odaberete željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u tablici.  
 
-**Inserimento Qualifiche**
+**Unos kvalifikacija**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos nove kvalifikacije potrebno je kliknuti na prvu praznu liniju u tablici ili pritisnuti tipku **Novo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostale informacije koje nisu obuhvaćene ovim dokumentom, a odnose se na osnovne funkcionalnosti formi, gumba i polja, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

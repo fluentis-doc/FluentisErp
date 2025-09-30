@@ -7,34 +7,32 @@ sidebar_position: 4
 
 **Šifra / Opis** : šifra i opis koji identificiraju šifru za obračun plaće.  
 
-**Intervento** : flag utilizzato in qualche tracciato file esportato dall'elaborazione paghe per gestioni esterne a Fluentis.
+**Intervencija** : flag koji se koristi u određenim izvoznim datotekama obračuna plaće za potrebe vanjskih sustava koji nisu dio Fluentis-a.
 
-**Esterno** : se abilitato, verifica la configurazione del tipo intervento collegato alla dichiarazione attività, verificando se nel tipo intervento il flag esterno è abilitato, per impostarlo di conseguenza nel cedolino paga.
+**Vanjski** : ako je omogućeno, sustav provjerava postavke vrste intervencije povezane s izjavom o aktivnostima. Ako ta vrsta intervencije ima aktiviranu oznaku vanjsko, ista će biti automatski postavljena u platnoj listi.
 
-**Codice unità di misura** : unità di misura utilizzata nel tracciato del file esportato dall'elaborazione paghe per gestioni esterne a Fluentis.
+**Šifra mjerne jedinice** : mjerna jedinica korištena u izvoznim datotekama obračuna plaće za vanjske sustave.
 
-**Ordinario**: se abilitato, utilizzato come codice di default per le ore ordinarie di lavoro, in caso di mancanza di configurazioni più specifiche.  
+**Redovno**: ako je omogućeno, koristi se kao zadana šifra za redovne radne sate u slučaju da nisu postavljene preciznije konfiguracije.
 
-**Valori Finali**: se abilitato, il valore associato a questo codice paga verrà inserito nel riquadro "Valori" del Riepilogo per cedolini e verrà escluso dai movimenti
+**Konačne vrijednosti**: ako je omogućeno, vrijednost pridružena ovoj šifri plaće bit će prikazana u odjeljku "Vrijednosti" u sažetku platne liste te neće biti uključena u pokrete.
 
-**Rimborso Viaggio**: se abilitato le ore di viaggio identificate con questo codice verranno sommate alle ore ordinarie. Se la somma risulta maggiore di 8 ore, verrà inserita una riga con quantità 1 nei movimenti come identificativo di 1 trasferta indipendentemente dalle ore di viaggio di dichiarate. Se disabilitato, le ore viaggio verranno inserite separatamente per le ore effettivamente dichiarate.
+**Povrat putovanja**: Ako je omogućeno, sati putovanja uneseni s ovom šifrom bit će zbrojeni s redovnim satima. Ako ukupni broj sati prelazi 8, sustav automatski unosi red s količinom 1 u pokretima, što označava jednu službenu cestu, neovisno o stvarnom broju prijavljenih sati putovanja. Ako nije omogućeno, sati putovanja bit će evidentirani odvojeno, prema stvarnim prijavljenim satima. Ova opcija služi za identifikaciju dana službenih putovanja u odjeljku Pokreti sažetka platne liste.
 
-verrà utilizzato per identificare le giornate di trasferta nel riquadro "Movimenti" del Riepilogo per cedolini. Con flag abilitato, se le ore ordinarie sommate alle ore di viaggio
+**Svečanost**: ako je omogućeno, koristi se za označavanje dana blagdana u odjeljku Pokreti sažetka platne liste – prema postavkama iz kalendara blagdana.
 
-**Festività**: se abilitato verrà utilizzato per identificare le giornate di festività nel riquadro "Movimenti" del Riepilogo per cedolini - configurate nel Calendario giorni festivi
+**Prekovremeni rad**: ako je omogućeno, koristi se za označavanje prekovremenih sati u odjeljku Pokreti sažetka platne liste – prema definiranim satnicama za zaposlenika.
 
-**Straordinario**: se abilitato verrà utilizzato per identificare le ore di straordinario nel riquadro "Movimenti" del Riepilogo per cedolini - calcolate in base agli orari stabiliti per la risorsa 
+**Prekovremeni rad na blagdane i vikende**: ako je omogućeno, koristi se za označavanje prekovremenih sati odrađenih subotom i nedjeljom u odjeljku Pokreti sažetka platne liste – prema važećim radnim rasporedima. 
 
-**Straordinari festivi**: se abilitato verrà utilizzato per identificare le ore di straordinario effettuate di sabato/domenica nel riquadro "Movimenti" del Riepilogo per cedolini - calcolate in base agli orari stabiliti per la risorsa 
+**Godišnji odmor**: ako je omogućeno, koristi se za označavanje dana godišnjeg odmora u odjeljku Pokreti sažetka platne liste – na temelju kategorije aktivnosti iz prijave aktivnosti.
 
-**Ferie**: se abilitato verrà utilizzato per identificare le giornate di ferie nel riquadro "Movimenti" del Riepilogo per cedolini - in base alla categoria attività inserita nella dichiarazione attività 
+**Dozvoljeno**: ako je omogućeno, koristi se za označavanje sati dopusta (npr. privatnih obveza) u odjeljku Pokreti sažetka platne liste – prema kategoriji aktivnosti iz prijave aktivnosti.
 
-**Permessi**: se abilitato verrà utilizzato per identificare le ore di permessi nel riquadro "Movimenti" del Riepilogo per cedolini - in base alla categoria attività inserita nella dichiarazione attività 
+**ROL**: ako je omogućeno, koristi se za označavanje sati ROL-a u odjeljku Pokreti sažetka platne liste – također na temelju prijavljenih aktivnosti.
 
-**ROL**: se abilitato verrà utilizzato per identificare le ore di ROL nel riquadro "Movimenti" del Riepilogo per cedolini - in base alla categoria attività inserita nella dichiarazione attività 
+**Smart Working**: ako je omogućeno, koristi se za označavanje dana rada na daljinu u odjeljku Pokreti sažetka platne liste – prema aktivnostima kod kojih je označen “Smartworking”. Ova opcija zamjenjuje šifru plaće povezanu s kategorijom aktivnosti.
 
-**Smart Working**: se abilitato verrà utilizzato per identificare le giornate di smartworking nel riquadro "Movimenti" del Riepilogo per cedolini - identificate in base alle dichiarazioni attività con flag "Smartworking" abilitato, sostituirà il codice paga associato alla categoria di attività
+**Ne izvozi se**: ako je omogućeno, sprječava izvoz ove šifre plaće u datoteke za vanjske sustave izvan Fluentis-a.
 
-**Non viene esportato**: blocca l'esportazione nel tracciato file per gestioni esterne a Fluentis
-
-**Codice Esportato**: codice utilizzato nel tracciato file per gestioni esterne a fluentis 
+**Izvozna šifra**: šifra koja se koristi u izvoznim datotekama za sustave koji nisu dio Fluentis-a.  
