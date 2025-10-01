@@ -1,11 +1,11 @@
 ---
-title: categorie documenti di origine interna
+title: Categorías de documentos de origen interno
 sidebar_position: 2
 ---
 
-La tabla se encuentra en la ruta **Tablas > Calidad > Documentos > categorie documenti di origine interna**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Documentos > Categorías de documentos de origen interno**.
 
-:::important ¿Para qué sirve? (A cosa serve)
+:::important ¿Para qué sirve? 
 Los datos presentes en esta tabla se utilizan para catalogar las diferentes tipologías de los Documentos de Origen Interno.  
 Los datos ingresados en estas tablas se reflejarán en la creación de los Documentos de Origen Interno.  
 Un ejemplo de uso lo encontramos en la gestión de **Documentos de Origen Interno**.
@@ -13,22 +13,22 @@ Un ejemplo de uso lo encontramos en la gestión de **Documentos de Origen Intern
 
 La tabla permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Búsqueda de categorie documenti di origine interna**
+**Búsqueda de Categorías de documentos de origen interno**
 
 El formulario consta de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, solo hay que hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserción de categorie documenti di origine interna**
+**Inserción de Categorías de documentos de origen interno**
 
-Para poder insertar nuevas *categorie documenti di origine interna* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo**.   
+Para poder insertar nuevas *Categorías de documentos de origen interno* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo**.   
 Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **Código** y la **Descripción**.
 
-**Duplicar categorie documenti di origine interna**
+**Duplicar Categorías de documentos de origen interno**
 
 Para poder duplicar una *Categoría de Documento* existente en una nueva *Categoría de Documento*, es necesario hacer clic en la cuadrícula en la *Categoría de Documento* de la que se desea duplicar y presionar el botón **Duplicar**.   
 Se mostrará un pedido de **Código** y **Descripción** de la nueva *Categoría de Documento* (ambos datos son obligatorios).   
 Luego presione el botón **OK** o el botón **Cancelar** si desea continuar con la actividad de duplicación o no.
 
-## categorie documenti di origine interna
+## Categorías de documentos de origen interno
 
 Es la lista donde se ingresan las principales informaciones de la *Categoría de Documento*.  
 La lista se compone de la siguiente información:   
@@ -92,7 +92,7 @@ La lista se compone de la siguiente información:
 **Nuevo destinatario**: inserta una nueva fila en la lista.   
 **Eliminar destinatario**: elimina la fila seleccionada de la lista.   
 
-### Acceso permitido a las funciones (Accesso consentito alle funzioni)
+### Acceso permitido a las funciones 
 En esta lista es posible ingresar las *Funciones empresariales* a las que se les otorguen derechos de acceso.   
 Si no se ingresan filas en esta tabla, entonces el acceso está permitido para todos.   
 La lista se compone de la siguiente información:  
@@ -104,8 +104,8 @@ La lista se compone de la siguiente información:
 **Nueva función de acceso**: inserta una nueva fila en la lista.   
 **Eliminar función de acceso**: elimina la fila seleccionada de la lista.   
 
-### Datos extra (Extra data)
-Es posible ingresar [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *Documento de Origen Interno*.   
-Estos *Datos Extra* se heredan en el *Documento interno* de esa categoría determinada.   
+### Datos adicionales
+Es posible ingresar [Datos adicionales](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *Documento de Origen Interno*.   
+Estos *Datos adicionales* se heredan en el *Documento interno* de esa categoría determinada.   
 
-Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

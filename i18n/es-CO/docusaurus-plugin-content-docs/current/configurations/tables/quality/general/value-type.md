@@ -1,33 +1,33 @@
 ---
-title: tipi valore
+title: Tipos de valor
 sidebar_position: 3
 ---
 
-La tabla se encuentra en la ruta **Tablas (Tabelle) > Calidad (Qualità) > General (Generale) > tipi valore (Tipi valore)**.
+La tabla se encuentra en la ruta **Tablas > Calidad > General > Tipos de valor**.
 
-En esta tabla es posible codificar los *tipi valore* requeridos en la recopilación de valores.  
-Algunos ejemplos de uso de los *tipi valore* se encuentran en las gestiones:  
-> **schede tecniche** - en la pestaña *proprietà*;  
-> **piani di controllo** - en la pestaña *prove pianificate*;  
-> **Control de artículos (Controllo articoli)** - en la pestaña *prove*;  
-> **certificati di analisi** - en la pestaña *Controles y valores recopilados (Controlli e valori rilevati) > Valores recopilados (Valori rilevati)*;  
-> **M.E.S.** - en la pestaña *Controles de calidad (Controlli qualità) > Pruebas (Prove)*.
+En esta tabla es posible codificar los *Tipos de valor* requeridos en la recopilación de valores.  
+Algunos ejemplos de uso de los *Tipos de valor* se encuentran en las gestiones:  
+> **Hojas de datos** - en la pestaña *Propiedad*;  
+> **Planes de control** - en la pestaña *Prueba planificada*;  
+> **Control de artículos** - en la pestaña *Pruebas*;  
+> **Certificados de Análisis** - en la pestaña *Controles y valores detectados > Valores detectados*;  
+> **M.E.S.** - en la pestaña *Controles de calidad > Pruebas*.
 
 La tabla contiene valores predeterminados por el sistema y no es posible insertar nuevos, eliminarlos o modificarlos. Los valores predeterminados son:  
-| Código (Codice) | Descripción (Descrizione) |   
+| Código | Descripción |   
 |:-:|:--|
-| 1 | Numérico (Numerico) |   
-| 2 | Sí/No (Si/No) |   
-| 3 | Texto (Testo) |   
+| 1 | Numérico |   
+| 2 | Sí/No |   
+| 3 | Texto |   
 
-**Búsqueda de tipi valore (Ricerca Tipi valore)**
+**Búsqueda de Tipos de valor**
 
-El formulario consta de un área de filtrado y de una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario consta de un área de filtrado y de una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-*Campos específicos (Campi specifici)*:
+*Campos específicos*:
 
-> **codice**: información de solo lectura, es el código del *tipo valore*.  
-> **tipo valore**: información de solo lectura, es la descripción del *tipo valore*.  
-> **note**: anotaciones libres.
+> **Código**: información de solo lectura, es el código del *Tipo de valor*.  
+> **Tipo de valor**: información de solo lectura, es la descripción del *Tipo de valor*.  
+> **Notas**: anotaciones libres.
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funciones, botones y campos comunes](/docs/guide/common).

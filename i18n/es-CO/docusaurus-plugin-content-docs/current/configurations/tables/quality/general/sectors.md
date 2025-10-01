@@ -1,38 +1,38 @@
 ---
-title: settori qualità
+title: Calidad de sectores
 sidebar_position: 7
 ---
 
-La tabla se encuentra en la ruta **Tablas > Calidad > General > settori qualità** (Tabelle > Qualità > Generale > Settori qualità).
+La tabla se encuentra en la ruta **Tablas > Calidad > General > Calidad de sectores**.
 
-En esta tabla es posible codificar los *settori qualità* de interés del documento.  
-Algunos ejemplos de uso de los *settori qualità* se encuentran en las gestiones:  
-> **azioni correttive** - en los *dati di testata*;  
-> **corsi base** - en los *dati di testata*;  
-> **corsi di formazione** - en los *dati di testata*.  
+En esta tabla es posible codificar la *Calidad de sectores* de interés del documento.  
+Algunos ejemplos de uso de la *Calidad de sectores* se encuentran en las gestiones:  
+> **Acciones Correctivas** - en *Información del encabezado*;  
+> **Cursos básicos** - en *Información del encabezado*;  
+> **Cursos de capacitación** - en *Información del encabezado*.  
 
 La tabla contiene valores predeterminados del sistema; los valores predeterminados son:  
-| Código (Codice) |  
+| Código |  
 |:--|
 | Ambiente |  
-| Ética (Etica) |  
-| Calidad (Qualità) |  
-| Seguridad (Sicurezza) |  
+| Ética |  
+| Calidad |  
+| Seguridad |  
 
 La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Búsqueda de settori qualità (Ricerca Settori qualità)**
+**Búsqueda de Calidad de sectores**
 
-El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, solo es necesario hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserción de settori qualità (Inserimento Settori qualità)**
+**Inserción de Calidad de sectores**
 
-Para poder insertar nuevos *settori qualità* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
-Para el nuevo registro, se debe ingresar al menos el campo obligatorio requerido por el programa: el **codice**.
+Para poder insertar nuevos *settori qualità* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo**.  
+Para el nuevo registro, se debe ingresar al menos el campo obligatorio requerido por el programa: el **Código**.
 
-*Campos específicos (Campi specifici)*: 
+*Campos específicos*: 
 
-> **codice**: es el código del *Sector de calidad (Settore qualità)*.  
-> **note**: anotaciones libres.
+> **Código**: es el código de *Calidad de sectore*.  
+> **NOtas**: anotaciones libres.
 
-Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
