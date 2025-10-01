@@ -3,6 +3,12 @@ title: Tipi anticipo
 sidebar_position: 4
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 In questa tabella sono definite le possibili tipologie di [**distinta di anticipo**](/docs/treasury/advance/advances-collections) fatture ed i relativi parametri.
 
 
@@ -23,9 +29,3 @@ In questa tabella sono definite le possibili tipologie di [**distinta di anticip
 **Conto interessi passivi:** inserire il conto da utilizzare per la contabilizzazione interessi
 
 **Conto commissioni:** inserire il conto da utilizzare per la contabilizzazione commissioni bancarie.
-
-
-
-
-
-

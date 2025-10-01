@@ -7,11 +7,11 @@ Non sono presenti tabelle specifiche del modulo in oggetto, ma va segnalato che 
 
 Il fido cliente preleva i dati dai seguenti documenti dell'area vendita:
 
-** [Tipo ordine cliente](/docs/configurations/tables/sales/sales-order-types) **: il ‘flag fido' indica che se il documento (stampato e confermato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
+**[Tipo ordine cliente](/docs/configurations/tables/sales/sales-order-types)**: il ‘flag fido' indica che se il documento (stampato e confermato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
 
 **Tipi DDT**: il ‘flag fido' indica che se il documento (stampato, non valorizzato in fattura) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
 
-** [Tipi fattura](/docs/configurations/tables/purchase/purchase-invoices-type) **: il ‘flag fido' indica che se il documento (stampato, non contabilizzato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente.
+**[Tipi fattura](/docs/configurations/tables/purchase/purchase-invoices-type)**: il ‘flag fido' indica che se il documento (stampato, non contabilizzato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente.
 
 Infine, ogni anagrafica cliente presenta due impostazioni collegate al modulo in oggetto:
 

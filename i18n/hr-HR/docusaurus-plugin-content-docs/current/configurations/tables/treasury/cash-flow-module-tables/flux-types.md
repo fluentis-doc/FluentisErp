@@ -3,6 +3,12 @@ title: Tipi flusso
 sidebar_position: 2
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
 La tabella, propedeutica all'utilizzo del modulo, prevede la codifica delle tipologie di flusso di cash flow che l'azienda intende abilitare per le simulazioni. 
 
 Si consiglia di codificate comunque tutte le tipologie previste: la procedura di *generazione automatica cashflow* consente di definire, volta per volta, quali di queste considerare e quali no.
@@ -37,16 +43,6 @@ Sono previste le seguenti origini dati:
 
 **Ordine pianificato**: ordini di produzione con fasi esterne pianificati o ordini di produzione che prevedono una richiesta d'acquisto.
 
-**Portafoglio Effetti**: Effetti emessi (e presentati, a seconda dell'impostazione del flag *Usa in scad. nel castelletto* presente nella maschera di *Generazione automatica cashflow*)
+**Portafoglio effetti**: Effetti emessi (e presentati, a seconda dell'impostazione del flag *Usa in scad. nel castelletto* presente nella maschera di *Generazione automatica cashflow*)
 
 **Anticipi**: Distinte di anticipo fattura create. L'elaborazione del cash flow, se per questo tipo è impostato il flag 'Usa in scad. nel castelletto' (nella maschera *Generazione automatica Cashflow*) va a rilevare gli importi delle distinte contabilizzate per l'importo anticipato sul conto bancario, e nei flussi alle date scadenza. Quando el fatture vengono incassate (elaborando un nuovo cashflow) i flussi in scadenza vengono eliminati e l'importo del conto bancario viene aggiornato con la quota residua non già anticipata al netto di eventuali commissioni e interessi.
-
----
-
-| Funzione | Significato |
-| --- | --- |
-| Ricerca | Con questo pulsante si esegue la ricerca dei tipi flusso secondo i filtri impostati. |
-| Nuovo | Posiziona il cursore all'inserimento di una nuova riga. |
-| Cancella | Cancella il tipo flusso selezionato. |
-
-
