@@ -192,7 +192,7 @@ Ova kartica omogućuje specificiranje više skladišta i predloška odbacivanja 
 
 Omogućuje upravljanje i pregled Dodatnih podataka povezanih s izvješćem. 
 
-Za detaljan opis dodatnih podataka, molimo pogledajte članak o [Dodatnim podacima](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+Za detaljan opis dodatnih podataka, molimo pogledajte članak o *Dodatnim podacima*.
 
 ## Lotovi/Serijski broj
 

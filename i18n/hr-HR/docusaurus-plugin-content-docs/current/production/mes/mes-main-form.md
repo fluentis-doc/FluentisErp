@@ -51,7 +51,7 @@ označava radni centar na kojem operater obavlja izvještavanje; mogu se prikaza
 
 - **Faze u radu**
 faze se mogu dodati unutar mreže koristeći polje *Šifra barkoda* ili korištenjem posebnog gumba *Odaberi nove faze* u desnom izborniku. Mreža sadrži različite informacije o narudžbi, proizvodnom nalogu, projektu, varijanti, itd. Sve te informacije mogu se prikazati ili sakriti putem upravljanja u kartici *Layout* [Proizvodnih resursa](/docs/production/mes/production-resources).   
-Za odabrani redak u mreži, na desnoj strani, moguće je vidjeti zadano sliku iz  [Šifarnik artikla](/docs/erp-home/registers/items/create-new-items/item-registry/images); također, dvostrukim klikom na sliku možete je prikazati u cijelom zaslonu.     
+Za odabrani redak u mreži, na desnoj strani, moguće je vidjeti zadano sliku iz  [Šifarnik artikla](/docs/erp-home/registers/items/create-new-item); također, dvostrukim klikom na sliku možete je prikazati u cijelom zaslonu.     
                 
 ### Kartica Proizvodnja     
 

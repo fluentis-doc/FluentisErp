@@ -146,6 +146,6 @@ Na ovoj kartici moguće je unijeti operatere koji će obavljati pojedinačne faz
 
 ## Dodatni podaci 
 
-Za detaljan opis dodatnih podataka, molimo pogledajte članak o [Dodatnim podacima](/docs/configurations/utility/extra-data/extradata/new-extradata-simple).
+Za detaljan opis dodatnih podataka, molimo pogledajte članak o [Dodatnim podacima](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
 Za detalje o zajedničkom funkcioniranju formi, pogledajte link [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
