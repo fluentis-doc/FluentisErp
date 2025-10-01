@@ -1,21 +1,21 @@
 ---
-title: Causali contab. VIDEO TUTORIALS
+title: Predlošci knjiženja – VIDEO TUTORIJALI
 sidebar_position: 1
 ---
 
-La configurazione delle contabili contabili rappresenta il cuore logico  del modulo relativo alle registrazioni contabili e permette di gestire e sfruttare tutta l'automazione connessa.
+Konfiguracija predložaka knjiženja čini logičku srž modula za računovodstvena knjiženja i omogućuje potpunu primjenu svih povezanih automatizacija.
 
-La visione di questi video è raccomandata a tutti quelli che vogliono entrare nel merito dei settaggi specifici.
+Pregled ovih videozapisa preporučuje se svim korisnicima koji žele bolje razumjeti specifične postavke sustava.
 
-Mentre risulta del tutto necessaria per chi intende configurare un ambiente operativo su misura.
+Za one koji žele postaviti prilagođeno radno okruženje, gledanje ovih materijala je neophodno.
 
-Attraverso una corretta configurazione e applicazione di queste procedure, l'utente ERP può ottimizzare il flusso di contabilizzazione automatica, riducendo gli errori manuali e migliorando la tracciabilità delle operazioni contabili.
+Kroz pravilnu konfiguraciju i primjenu opisanih postupaka, ERP korisnik može značajno optimizirati tijek automatskog knjiženja, smanjiti ručne pogreške i poboljšati sljedivost računovodstvenih operacija.
 
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro)
+:::important Pogledaj i
+[**VIDEO TUTORIJALE O PREDLOŠCIMA KNJIŽENJA**](/docs/video/finance/intro)
 :::
 
-:::tip[Maggiori informazioni]
-Consultare la pagina sull' [**Inserimento di una nuova causale**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+:::tip[Više informacija]
+Pogledaj stranicu o [**Unosu novog predloška knjiženja**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
 :::

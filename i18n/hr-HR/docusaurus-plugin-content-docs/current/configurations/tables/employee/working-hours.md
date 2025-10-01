@@ -1,13 +1,13 @@
 ---
-title: Orari di lavoro
+title: Radno vrijeme  
 sidebar_position: 7
 ---
 
-In questa tabella sono configurati i vari monte ore di lavoro che possono esserci a livello aziendale, come ad es. full time, part time, part time 60% etc. 
-I valori presenti vengono utilizzati sia nell'anagrafica risorse e dipendenti, sia nei parametri generali dei progetti. 
+U ovoj tablici definiraju se različiti modeli radnog vremena koji se mogu primjenjivati na razini tvrtke, poput punog radnog vremena, rada na pola radnog vremena, 60% radnog vremena i slično.
+Unesene vrijednosti koriste se kako u evidenciji resursa i zaposlenika, tako i u općim postavkama projekata.  
 
-**Codice**: codice della riga. 
+**Šifra**: šifra retka.  
 
-**Descrizione**: descrizione della riga.
+**Opis**: opis retka.  
 
-**Monte ore**: Ore previste per la riga.
+**Ukupni broj sati**: predviđeni broj sati za taj redak.  

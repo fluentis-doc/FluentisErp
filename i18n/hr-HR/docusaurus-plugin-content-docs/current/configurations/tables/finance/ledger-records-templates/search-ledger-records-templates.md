@@ -1,24 +1,24 @@
 ---
-title: Ricerca le causali di contabilità generale
+title: Pretraživanje predložaka za računovodstveno knjiženje
 sidebar_position: 2
 ---
 
-Consente di ricercare tutte le causali con lo scopo di visualizzarle, modificarle, ed eventualmente cancellarle oppure procedere all'inserimento di una nuova causale. La finestra si compone di un'area di filtro e da una griglia di risultato.
+Ova funkcionalnost omogućuje pretraživanje svih predložaka knjiženja s ciljem njihovog pregleda, izmjene, eventualnog brisanja ili unosa novog predloška. Prozor je podijeljen na područje za filtriranje i mrežu s rezultatima pretrage.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *Ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** u *traci izbornika* kako bi se prikazali rezultati u mreži s podacima.
 
-Per aprire i dettagli di una causale, basterà selezionarla e fare doppio click con il mouse oppure cliccare sul pulsante **Modifica** (consente di entrare nei dettagli e modificarli) o sul pulsante **Visualizza** (consente di entrare nei dettagli e visualizzarli ma senza poterli modificare).
+Za otvaranje detalja predloška, potrebno je označiti željeni redak i dvaput kliknuti mišem ili kliknuti na tipku **Uredi** (omogućuje pregled i izmjenu podataka) ili na tipku **Pregledaj** (omogućuje pregled podataka bez mogućnosti izmjene).
 
-Per inserire una nuova causale, cliccare sul pulsante **Nuova**.
+Za unos novog predloška kliknite na tipku **Novi**.
 
-*Pulsante specifico*  
+*Specifična tipka*  
 
-> **Duplica la causale selezionata**: permette di duplicare la causale selezionata.  Utile per creare una nuova causale partendo da una con caratteristiche simili. Si aprirà una finestra nella quale verrà chiesto di attribuire un codice alla causale nuova che si intende creare e dopo aver confermato verrà chiesto di poter entrare nella causale appena creata per modificarne alcune caratteristiche. 
+> **Dupliciraj označeni predložak**: omogućuje dupliciranje trenutno označenog predloška. Korisno kada se želi kreirati novi predložak sličan postojećem. Otvara se prozor u kojem se traži unos koda za novi predložak, a nakon potvrde korisniku se nudi mogućnost ulaska u novi predložak radi dodatnih izmjena.  
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE CAUSALI CONTABILI**](/docs/video/finance/intro)
+:::important Pogledaj i 
+[**VIDEO TUTORIJALE O PREDLOŠCIMA KNJIŽENJA**](/docs/video/finance/intro)
 :::
 
-:::tip[Maggiori informazioni]
-Consultare la pagina sull' [**Inserimento di una nuova causale**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
+:::tip[Više informacija]
+Pogledaj stranicu o [**Unosu novog predloška knjiženja**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)
 :::
