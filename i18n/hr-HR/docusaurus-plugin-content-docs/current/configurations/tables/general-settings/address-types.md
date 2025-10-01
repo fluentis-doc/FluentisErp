@@ -1,5 +1,5 @@
 ---
-title: Tipi indirizzi
+title: Tipovi adrese
 sidebar_position: 6
 ---
 
