@@ -4,25 +4,15 @@ sidebar_position: 9
 ---
 
 
-:::note Percorso
-**Tabelle > Impostazioni generali > Unità di misura**
-
-Nota:
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
-
-:::
-
----
+Percorso form: **Tabelle > Impostazioni generali > Unità di misura**
 
 La tabella consente la definizione delle varie unità di misure presenti a sistema e dei relativi attributi di dettaglio.
  
-
-
 ### Unità di misura
 
 dove codificare la nuova unità di misura e attribuire le caratteristiche principali
 
-|
+#### Campi specifici
 
 **U.M. / Descrizione:** Codice e descrizione dell'unità di misura per poterla richiamare
 
@@ -46,16 +36,11 @@ dove codificare la nuova unità di misura e attribuire le caratteristiche princi
 
 :::important IMPORTANTE
 **Tipo di valutazione del tempo:** campo utilizzato nel modulo controlling per definire se l'UM si di tipo Flusso o Stato.
-Es. ore macchina è flusso, mentre metri quadri è stato perché valido ogni mese, è sempre quello, flusso varia ogni mese.
-
-**NOTA**
-La registrazione delle grandezze ***stato*** nella *prima nota registrazioni gestionali* deve essere comunque fatta ogni anno anche di per se non variano nel corso del tempo, è presente un comando per la duplica al fine di velocizzare l'inserimento ed un messaggio di errore in *elaborazione periodi* se viene dimenticato.
+Es. ore macchina è flusso, mentre i metri quadri di uno stabile sono tipicamente di stato perché valido ogni mese.
 :::
 
-
----
-
 ### Conversioni tra unità di misura
+
 dove gestire i fattori di conversioni tra diverse unità di misura al fine di gestire nei documenti la doppia unità di misura
 
 **UM alternativa:** inserire l'UM nella quale dovrà essere convertita l'unità di misura principale selezionata
@@ -64,10 +49,6 @@ dove gestire i fattori di conversioni tra diverse unità di misura al fine di ge
 
 **Da moltiplicare:** se non attivo divide per ..., se attivo moltiplica per il fatt. conv.
 
----
-
 ### Tipo valutazione tariffa 
-assieme al campo **Tipo valutazione** del tempo (nella griglia principale) è utilizzata dal modulo Controlling.
 
-E' possibile associare ad ogni unità di misura il [**TIPO DI DISTRIBUZIONE PERIODI**](/docs/configurations/tables/controlling/managerial-accounting/periods-distribution) 
-(ad esempio in undicesimi, in dodicesimi, in giorni lavorativi ecc...) ed il <u>**criterio di valutazione della tariffa**</u> tra quelli presenti nella combo box.
+Gestione non attiva

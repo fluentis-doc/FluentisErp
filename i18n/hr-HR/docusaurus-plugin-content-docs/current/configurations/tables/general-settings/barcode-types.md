@@ -11,4 +11,9 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuovi record è necessario cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
 
+**Campi Specifici**
+
+**Export pubblica amministrazione**: attivando questo flag viene creato un [tag](https://docs.fluentis.com/FluentisErp/docs/finance-area/e-invoice/configuration_einvoice#codifica-articolo-per-cliente--tag-2213-codicearticolo) per la gestione del barcode nel tracciato xml della fattura elettronica.           
+Inoltre, se attivo il controllo di unicità del barcode inserito viene fatto solo a livello del singolo articolo, mentre se il flag è disattivato il controllo dell'unicità del barcode viene effettuato a livello globale, quindi per tutti gli articoli.
+
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

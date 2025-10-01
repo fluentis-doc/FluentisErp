@@ -3,6 +3,14 @@ title: Divise
 sidebar_position: 1
 ---
 
+:::tip[FAst Start]
+La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+
+Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+:::
+
+### Sezione superiore
+
 La tabella, comune a tutte le società della base dati, consente di definire la lista delle divise da utilizzare nei vari documenti/registrazioni. 
 
 **Divisa / Descrizione**: Codice / Descrizione della divisa codificata 

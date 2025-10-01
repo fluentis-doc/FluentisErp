@@ -7,6 +7,8 @@ In questa tabella vengono definite delle tipologie di spesa finale da aggiungere
 
 Possono essere aggiunte poi direttamente nel documento , oppure nell'anagrafica del cliente per l'automazione dell'inserimento della spesa.
 
+### Campi di aggancio articolo e IVA
+
 **Tipo / Descrizione:** Codice e descrizione della spesa per richiamarla
 
 **Classe / Codice / Descrizione articolo:** campo per effettuare l'associazione tra il tipo spesa ed un codice articolo di riferimento
@@ -17,31 +19,57 @@ Possono essere aggiunte poi direttamente nel documento , oppure nell'anagrafica 
 
 **Tipo IVA:** Tipo iva per gestire il riaddebito (Salvo casi o regimi iva particolari indicare Generico)
 
-**Varie:** identifica una spesa varia ad addebito semplice, senza particolari logiche
 
-**Incasso:** apponendo questo flag la spesa sarà calcolata in automatico una per ogni rata di ricevuta bancaria definita nelle condizioni di pagamento (funziona pertanto soltanto con questa tipologia di pagamento)
+### Flag di aggancio alle logiche {#link-to-logic}
 
-**Trasporto:** apponendo questo flag la spesa sarà calcolata in fattura una per ogni ddt che ha contribuito a generare la fattura
+**Varie:** identifica una spesa varia ad addebito semplice. Le spese Varie presenti nei documenti vengono tutte riportate nel documento riepilogativo che evade i documenti stessi.
+
+**Incasso:** apponendo questo flag la spesa sarà calcolata in automatico una per ogni rata di ricevuta bancaria definita nelle condizioni di pagamento (funziona pertanto soltanto con questa tipologia di pagamento). Le spese di Incasso sono assoggettate automaticamente all’iva principale del documento.
+
+**Trasporto:** apponendo questo flag la spesa sarà calcolata in fattura una per ogni ddt che ha contribuito a generare la fattura; nel caso invece di evasione di più ordini in un ddt, verrà riportata una sola spesa di incasso.      
 
 **Imballo:**
 
 **Spedizione:**
 
-**Viaggio:**
+**Viaggio:** se abilitato il tipo spesa verrà proposto nell'elenco delle spese selezionabili negli interventi dell'area Progetti. 
+
+**Tipo spesa viaggio**: abilitato solo se il flag "Viaggio" è abilitato, indentifica la tipologia di spesa Viaggio: necessario per abilitare appositi campi nelle spese degli interventi (es. nel caso di Distanza verranno abilitati i campi di km e costo km, etc)
 
 **Bollo / Valore Bollo:** utilizzando questa tipologia con il relativo valore indicato nel campo adiacente si attiva la logica del bollo in fattura nel caso di esenzione iva e documento superiore ai 77euro (vedere norme attualmente in vigore per dettagli), oltre alla valorizzazione del tag corrispondente nella fattura elettronica.
 
+:::note[Info]
+La logica, in dettaglio prevede che, se il cliente ha delle spese bollo nella sua anagrafica, venga eseguita la somma del valore imponibile per le righe documento aventi il codice iva compreso nelle seguenti categorie: 
+
+Non Imponibile
+Esente
+Escluso
+
+Se il totale ( convertito  nella divisa della societa’con il cambio della testata fattura) e’ maggiore del **Tetto minimo  spese** della sezione **Spese Bollo** in tabella società, viene aggiunto come spesa bollo.
+
+I codici IVA delle tipologie di cui sopra devono anche avere il flag *Base per conteggio bollo* settato.
+:::
+
 **Val. stat. intra:** con questa logica la spesa finale inserita in fattura sarà ripartita sulle righe del documento ai fini della creazione dei modelli intrastat dalla procedura di creazione automatica (dalle fatture)
 
-**Ripartito:**
+**Ripartito:** il flag fa in modo che la registrazione di magazzino abbia la spesa ripartita nelle varie righe della registrazione della fattura; questo flag non implica che la spesa venga ripartita nelle registrazioni dei documenti collegati.     
 
 **RAEE:**
 
 **IVA obbl.**
 
+
+### Altri campi
+
 **Categoria merceologica:**
 
-**Codici / Descrizione Paghe:** opzione utile nel modulo Progetti e Dipendenti; nell’ esportazione delle ore dei dipendenti dalle attività inserite (viene esportato un file Xml per la gestione paghe di Zucchetti), le ore viaggio e i rimborsi spese (che arrivano dagli interventi) hanno necessità di essere codificate per inserirle nelle paghe. Quindi viene associata la tabella spese, che si usa nelle attività, ai codici paghe del modulo Dipendenti
+**Codici / Descrizione Paghe:** codice utilizzato per inserire nel riquadro "Valori" del Riepilogo per cedolini dei dipendenti le spese presenti negli interventi e nelle dichiarazioni attività.
+
+**Tipo attività**: valido soltanto per le spese di tipo "Viaggio" - Ore di Viaggio". Il tipo attività viene utilizzato per generare in automatico la dichiarazione attività in base alle ore di viaggio dichiarate nelle spese sostenute dell'intervento nell'area Progetti. 
+
+**Categoria attività**: valido soltanto per le spese di tipo "Viaggio" - Ore di Viaggio". La categoria attività viene utilizzata nella dichiarazione attività generata in automatico in base alle ore di viaggio dichiarate nelle spese sostenute dell'intervento nell'area Progetti. 
+
+### Ritenuta d'acconto e cassa previdenza
 
 **Cassa previdenza / Soggetto Ritenuta / Codice P.A.:** campi per consentire di gestire nel file xml delle fatture elettroniche di vendita la *Cassa previdenza* che si può applicare nella fattura di un professionista.
 
