@@ -19,10 +19,10 @@ Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal 
 
 *Campi specifici*: 
 
-**Reparto**: indica il codice del reparto;
-**Descrizione**: indica la descrizione del reparto;
-**Data inserimento**: indica la data di inserimento del record;
-**Data modifica**: indica la data di modifica del record;
+**Reparto**: indica il codice del reparto;  
+**Descrizione**: indica la descrizione del reparto;  
+**Data inserimento**: indica la data di inserimento del record;  
+**Data modifica**: indica la data di modifica del record.
 
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

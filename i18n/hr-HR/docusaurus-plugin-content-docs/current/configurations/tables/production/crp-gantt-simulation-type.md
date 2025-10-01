@@ -15,4 +15,13 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
 
+Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice**, la **Descrizione** e la **Numerazione**.
+
+*Campi specifici*:
+
+> **Codice**: indica il codice del *Tipo Simulazione Gantt*;           
+> **Descrizione** tipo: indica la descrizione del *Tipo Simulazione Gantt*;        
+> **Numerazione**: indica la numerazione associata al *Tipo Simulazione Gantt*;           
+> **Snapshot**: se attivo, indica the questo è un *Tipo Simulazione Gantt* usato per gli *Snapshot*.
+
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
