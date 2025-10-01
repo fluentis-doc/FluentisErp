@@ -1,6 +1,6 @@
 ---
 title: Numerazione magazzino
-sidebar_position: 20
+sidebar_position: 19
 ---
 
 La tabella permette di gestire la codifica delle diverse tipologie di *Numerazione magazzino*.

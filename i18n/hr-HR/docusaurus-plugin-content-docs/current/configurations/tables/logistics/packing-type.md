@@ -3,7 +3,9 @@ title: Tipi imballo
 sidebar_position: 29
 ---
 
-La tabella permette di gestire la codifica delle diverse *Tipi imballo*.
+La tabella si trova sul percorso **Tabelle > Logistica > Tipi imballo**.
+
+In questa tabella è possibile codificare i diversi *Tipi imballo*.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

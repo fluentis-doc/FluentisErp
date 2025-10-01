@@ -1,11 +1,11 @@
 ---
 title: Caratteristiche articolo
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 La tabella si trova sul percorso **Tabelle > Logistica > Caratteristiche articolo**
 
-La tabella di inserimento caratteristiche articolo è necessaria per poter effettuare un raggruppamento degli articoli. Ai fini statistici è fondamentale poter raggruppare gli articoli in modo da poterli ricercare secondo un parametro.
+La tabella di inserimento *Caratteristiche articolo* è necessaria per poter effettuare un raggruppamento degli articoli. Ai fini statistici è fondamentale poter raggruppare gli articoli in modo da poterli ricercare secondo un parametro.
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
@@ -19,6 +19,6 @@ Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla pr
 
 Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** alfanumerico della caratteristica e la sua **Descrizione**. 
 
-Per ogni caratteristica, nella griglia inferiore, si possono inserire le **Descrizioni in lingua**.
+Per ciascuna caratteristica è possibile inserire le **Descrizioni in lingua** nella griglia inferiore.
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

@@ -1,6 +1,6 @@
 ---
 title: Tipi UDC
-sidebar_position: 9
+sidebar_position: 37
 ---
 
 La tabella di inserimento dei tipi UDC è una tabella di base per l'utilizzo delle unità di carico. Nello specifico vengono definiti i tipi imballo e relativi dati che serviranno per la creazione e l'ottimizzazione dei piani di carico (come per esempio pesi e dimensioni).

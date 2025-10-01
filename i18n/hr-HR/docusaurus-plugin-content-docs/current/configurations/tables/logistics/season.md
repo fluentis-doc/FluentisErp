@@ -3,7 +3,7 @@ title: Stagioni
 sidebar_position: 47
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Stagioni*.
+La tabella permette di gestire la codifica delle *Stagioni*.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

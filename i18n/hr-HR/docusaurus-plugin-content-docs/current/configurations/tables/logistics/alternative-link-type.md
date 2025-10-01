@@ -1,5 +1,5 @@
 ---
-title: Tipo legame alternativi
+title: Tipo  legame alternativi
 sidebar_position: 31
 ---
 

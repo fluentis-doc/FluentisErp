@@ -3,7 +3,7 @@ title: Origini materiale
 sidebar_position: 51
 ---
 
-La tabella permette di gestire la codifica delle diverse *Origini materiale*.
+La tabella permette di gestire la codifica delle possibili *Origini del materiale*.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

@@ -3,7 +3,7 @@ title: Aspetto Esteriore Beni
 sidebar_position: 4
 ---
 
-La tabella permette di gestire la codifica delle diverse *Aspetto Esteriore Beni*.
+La tabella si trova sul percorso **Tabelle > Logistica > Aspetto Esteriore Beni**.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
@@ -13,6 +13,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 **Inserimento Aspetto Esteriore Beni**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

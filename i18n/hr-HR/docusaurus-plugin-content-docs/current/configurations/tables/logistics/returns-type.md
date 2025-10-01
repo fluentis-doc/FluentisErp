@@ -3,7 +3,7 @@ title: Tipo rientri
 sidebar_position: 35
 ---
 
-La tabella serve per impostare i tipi dei rientri di conto lavoro, in modo tale che a seconda del tipo rientro si possa veicolare il materiale da e per determinati magazzini.
+La tabella serve per impostare i tipi dei rientri di conto lavoro, in modo da poter veicolare il materiale da e per determinati magazzini, a seconda del tipo rientro.
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

@@ -1,9 +1,11 @@
 ---
 title: Imballi
-sidebar_position: 13
+sidebar_position: 14
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Imballi*.
+La tabella si trova sul percorso **Tabelle > Logistica > Imballi**.
+
+In questa tabella è possibile codificare le diverse tipologie di *Imballi* da inserire nella testata di un documento sotto la voce *Spedizioni*.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
@@ -13,6 +15,7 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 **Inserimento Imballi**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: un **Codice** alfanumerico e la sua **Descrizione**.  
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

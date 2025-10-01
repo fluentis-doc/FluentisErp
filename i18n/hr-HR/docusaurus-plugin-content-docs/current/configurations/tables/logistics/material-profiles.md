@@ -3,7 +3,10 @@ title: Profili materiale
 sidebar_position: 7
 ---
 
-La tabella permette di gestire la codifica delle diverse *Profili materiale* da associare ai singoli articoli.
+La tabella si trova sul percorso **Tabelle > Logistica > Profili materiale**.  
+
+In questa tabella è possibile codificare i diversi *Profili materiale* da associare ai singoli articoli.  
+Un esempio di utiizzo lo troviamo all'interno dell'Anagrafica Articolo nel tabulatore [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-item) sotto la voce *Profilo*.  
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
@@ -13,6 +16,13 @@ La form si compone di un'area di filtro e da una di risultato. Una volta imposta
 
 **Inserimento Profili materiale**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Per poter inserire nuovi *Profili materiali* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
+Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+
+#### Campi specifici 
+
+> **Codice**: è il codice del *Profilo materiale*.   
+> **Descrizione**: è la descrizione del *Profilo materiale*.     
+> **Note**: annotazioni libere.  
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).

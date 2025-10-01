@@ -3,7 +3,7 @@ title: Made in
 sidebar_position: 43
 ---
 
-La tabella permette di gestire la codifica delle diverse voci di *Made in*, ovvero dove è stato prodotto.
+La tabella permette di gestire la codifica delle diverse voci di *Made in*, utilizzate per indicare dove è stato prodotto l'articolo.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
