@@ -14,7 +14,11 @@ Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'in
 
 **Descrizione**: contiene la descrizione della categoria;
 
-**Attività fatturabile**: questo flag rende l’attività fatturabile di defaul;
+**Attività fatturabile**: questo flag rende l’attività fatturabile di default;
+
+**Attività a valore aggiunto**: questo flag marca l’attività come attività a valore aggiunto; questo flag è presente in tutti i documenti dell'area progetti, valorizzato dalla categoria attività e poi modificabile dall'utente. In caso di documenti generati da procedura e non inseriti ex-novo, il valore del flag verrà ereditato dal documento precedente da cui è stato generato il nuovo. Sarà quindi possibile fare analisi tra attività a valore aggiunto e non. 
+
+**Codice Paghe**: codice che verrà utilizzato nella procedura di calcolo dati paghe, configurati nella tabella **Codici Paghe**.
 
 **Centro aziendale**: contiene il centro di costo che servirà ad aggregare le attività, per dare al controllo di gestione un’informazione di tutte le attività svolte nel periodo.
 

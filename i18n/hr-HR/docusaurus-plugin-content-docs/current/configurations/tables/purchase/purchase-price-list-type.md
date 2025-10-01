@@ -1,6 +1,6 @@
 ---
 title: Tipi listino fornitori
-sidebar_position: 11
+sidebar_position: 7
 ---
 
 La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi listino fornitori** e viene utilizzata per indicare le diverse tipologie di listini fornitori.

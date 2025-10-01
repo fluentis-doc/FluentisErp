@@ -22,3 +22,5 @@ Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'in
 
 Sono poi presenti una serie di flag che indicano, se flaggati, l’obbligatorietà di alcuni campi nella tipologia di attività selezionata.
 
+**Colore**: colore per identificare le dichiarazioni attività nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)
+

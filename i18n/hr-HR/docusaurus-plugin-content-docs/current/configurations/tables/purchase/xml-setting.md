@@ -1,21 +1,12 @@
 ---
 title: Impostazione XML
-sidebar_position: 15
+sidebar_position: 10
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Fatturato acquisti** ed è utilizzato per determinare le proprietà di una richiesta.
-
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
-
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
-
-Per poter inserire record è necessario cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
-
+La tabella si apre tramite il percorso **Tabelle > Acquisti > Fatturato acquisti** ed è utilizzata per determinare le proprietà di una richiesta.   
 Questa tabella è necessaria per impostare i dati per importare un listino fornitore scaricandolo da un sito internet in formato XML.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
-
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+I campi presenti sono:
 
 **Conto-Sottoconto/Descrizione sottoconto**: conto e sottoconto del cliente per cui importare il listino.
 

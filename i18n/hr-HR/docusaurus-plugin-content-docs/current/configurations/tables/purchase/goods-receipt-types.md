@@ -1,26 +1,28 @@
 ---
-title: Tipi Ricevimento merci
-sidebar_position: 13
+title: Tipi ricevimento merci
+sidebar_position: 4
 ---
 
 La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi Ricevimento merci** ed è utilizzato per determinare le proprietà di un ricevimento merce.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
-
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
-
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+I campi presenti sono:
 
 **Codice**: codice del tipo ricevimento merci.
 
 **Descrizione**: descrizione del tipo ricevimento merci.
 
-**DDT:** se attivo, il sistema permette la generazione di una DDT dal ricevimento merci. Se non attivo, non sarà possibile generare la DDT dal ricevimento merci quindi le operazioni (carico a magazzino e registrazione DDT) rimarranno non collegati.
+**Bolla di consegna**: se attivo, il sistema permette la generazione di una DDT dal ricevimento merci. Se non attivo, non sarà possibile generare la DDT dal ricevimento merci quindi le operazioni di carico a magazzino e registrazione DDT rimarranno non collegate. 
 
-**Fattura**: se attivo, il sistema permette la generazione di una fattura dal ricevimento merci. Se non attivo, non sarà possibile generare la fattura dal ricevimento merci quindi le operazioni (carico a magazzino e registrazione fatture) rimarranno non collegati.
+**Fattura**: se attivo, il sistema permette la generazione di una fattura dal ricevimento merci. Se non attivo, non sarà possibile generare la fattura dal ricevimento merci quindi l'operazione di carico a magazzino resterà non collegata. 
 
-**Senza sommare quantità**: se settato, in evasione degli ordini di questo tipo, le quantità evase vengono riportate nel documento di evasione per singole righe di evasione.
+**Evasione quantità articolo non sommata**: se settato, nel momento in cui si andranno ad evadere righe ordine con quantità parziali nello stesso ricevimento merci questo flag consentirà di riportare le quantità evase dell'ordine suddivise per riga articolo senza sommare le quantità.
 
-**[Numerazione](/docs/configurations/tables/fluentis-numerations)  - Descrizione**: per selezionare il codice e la descrizione appropriati.
+**Numerazione**: determina la [Numerazione](/docs/configurations/tables/fluentis-numerations) e la relativa **Descrizione** che è associata al *Tipo ricevimento merci*. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+**Controllo qualità**: i *tipi Ricevimento* che hanno questo flag attivo sono visibili nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
+
+**Gerstione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ricevimento e di selezionare il **Tipo operazione** che si vuole effettuare, che nel caso degli acquisti sarà un *Costo originario*.
+
+:::tip NOTA
+Il Magazzino e la Causale da utilizzare per il Carico ricevimento merci vanno definiti nei Parameti Ordini fornitori, tab [Carico](/docs/configurations/parameters/purchase/purchase-orders-parameters).  
+:::

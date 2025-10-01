@@ -28,3 +28,5 @@ Sempre all'interno di questa form è possibile aggiungere nuove tipologie di pro
 **Tipo pianificato**: indica la tipologia di pianificazione predefinita;
 
 **Descrizione**: contiene la descrizione del tipo pianificato.
+
+**Colore**: colore per identificare le richieste di intervento nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)

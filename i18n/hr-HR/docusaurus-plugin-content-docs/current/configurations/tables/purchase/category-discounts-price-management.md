@@ -1,6 +1,6 @@
 ---
 title: Categorie sconti gestione prezzi
-sidebar_position: 1
+sidebar_position: 11
 ---
 
 La tabella si apre tramite il percorso **Tabelle > Acquisti > Categorie sconti gestione prezzi** e viene utilizzata per assegnare la categoria di sconto agli articoli in anagrafica articolo.

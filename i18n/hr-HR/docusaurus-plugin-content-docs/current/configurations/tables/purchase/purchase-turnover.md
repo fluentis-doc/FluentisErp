@@ -1,15 +1,11 @@
 ---
 title: Fatturato acquisti
-sidebar_position: 16
+sidebar_position: 9
 ---
 
 La tabella si apre tramite il percorso **Tabelle > Acquisti > Fatturato acquisti** e contiene dati necessari per la contabilizzazione dei documenti.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
-
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
-
-Per poter inserire record è necessario cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
+*Campi specifici*:
 
 **Tipo**: codice di identificazione del fatturato;
 

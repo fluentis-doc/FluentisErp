@@ -1,6 +1,6 @@
 ---
 title: Risorse Progetti
-sidebar_position: 3
+sidebar_position: 10
 ---
 
 Questa tabella è accessibile da **Tabelle > Gestione Progetti > Risorse Progetti** e contiene alcuni dati di default delle risorse. L’area di filtro permette di ricercare i dati in maniera più mirata.
