@@ -3,24 +3,24 @@ title: Tipovi adrese
 sidebar_position: 6
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Tipi indirizzi** e serve per codificare liberamente (a livello di codice e descrizione) una serie di indirizzi alternativi da associare all'anagrafica contatti (sia essa Fornitore, Cliente, Banca o Agente).
+Tablica se otvara putem izbornika **Tablice > Opće postavke > Tipovi adrese** i služi za slobodno kodiranje (kod i opis) različitih alternativnih adresa koje se mogu povezati s kontaktima u bazi (bilo da se radi o Dobavljaču, Klijentu, Banci ili Agentu).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, potrebno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u mreži rezultata.
 
-Per poter inserire i record è necessario cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**.
 
-Sono presenti una serie di flag predefiniti che attribuiscono una caratteristica utilizzabile in ulteriori automazioni (alcune già previste nella versione standard) presenti nel programma.
+Dostupni su određeni unaprijed definirani flagovi koji dodjeljuju svojstva korisna za daljnje automatizacije (neke su već uključene u standardnu verziju programa).
 
-Le automazioni già presenti e pronte all'uso sono:
+Već dostupne i spremne automatizacije uključuju:
 
-**Email Fatt C.**: associando questo flag al tipo di indirizzo che si sta codificando ed inserendo tale indirizzo nell'anagrafica contatti alla sezione **Indirizzi alternativi**, l'indirizzo (o gli indirizzi) e-mail inserito nell'apposito campo sarà utilizzato nel Workflow (cambio stato) di invio automatico massivo delle fatture di vendita.
+**E-mail za slanje računa kupcima**: kada se ovom flagu pridruži određena vrsta adrese i ta adresa unese u kontakte u odjeljku **Alternativne adrese**, e-mail adresa(e) unesena u za to predviđeno polje koristit će se u Workflow procesu (promjena stanja) za automatsko masovno slanje prodajnih računa.
 
-**Cointestatari**: associando questo flag si codifica il tipo indirizzo idoneo per definire i dati anagrafici (relativi ad ogni cointestatario inserito in anagrafica) per poterli poi richiamare nella fattura id vendita.
+**Zajednički nositelji**: ovim flagom se kodira vrsta adrese prikladna za definiranje osobnih podataka (za svakog Zajedničkog nositelja unesenog u kontakte) kako bi se ti podaci mogli pozvati prilikom izdavanja prodajnog računa.
 
-Gli altri possibili flag relativi all'invio-email possono essere associati al documento specifico previa *configurazione*.
+Ostali mogući flagovi vezani uz slanje e-maila mogu se povezati s određenim dokumentima uz prethodnu *konfiguraciju*.
 
-Vi sono infine altri flag che potranno essere gestiti per eventuali automazioni di tipo fiscale (Stabile organizzazione e Rappresentante fiscale) ed il residuale Sede generica.
+Na kraju, postoje i drugi flagovi koji se mogu koristiti za moguće porezne automatizacije (Stalna poslovna jedinica i Porezni zastupnik), kao i rezidualni Opća lokacija.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a tiče se zajedničkog funkcioniranja formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

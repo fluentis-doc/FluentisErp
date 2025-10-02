@@ -1,33 +1,34 @@
 ---
-title: Società
+title: Poduzeće
 sidebar_position: 3
 ---
 
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica se koristi u postupku [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+U slučaju ručne konfiguracije, potrebno je pratiti check listu s navedene stranice.
 :::
 
-### PREMESSA
+### UVOD
 
-La tabella, da considerare come fondamentale e necessaria per poter poi gestire qualsiasi altro dato, permette di codificare le aziende riferite alla base dati alla quale si è collegati.
+Tablica, koja se smatra osnovnom i neophodnom za upravljanje bilo kojim drugim podacima, omogućuje kodiranje tvrtki povezanih s bazom podataka na koju ste povezani.
 
-E' possibile codificare un numero illimitato di società (aziende) che saranno sempre tutte in linea contemporaneamente all'interno dello stesso database.
-Dopo l'inserimento / creazione di una nuova azienda sarà necessario gestire i diritti di visibilità per gli utenti attraverso l'applicazione ARM.
+Moguće je kodirati neograničen broj tvrtki koje će uvijek biti sve istovremeno dostupne unutar iste baze podataka.  
+Nakon unosa / kreiranja nove tvrtke, bit će potrebno upravljati pravima vidljivosti za korisnike putem aplikacije ARM.
 
-:::note Nota
-Normalmente la procedura di installazione di Fluentis crea una società di default e pertanto la base dati non risulta mai del tutto vuota.
+:::note Napomena
+Prilikom instalacije Fluentis ERP-a automatski se kreira jedno početno društvo, tako da baza nikada nije potpuno prazna.
 :::
 
-Accanto al concetto di azienda (o più precisamente società, anche in senso giuridico, codificate nel database) occorre accennare subito alla **DIVISIONE**.
+Uz pojam tvrtke (ili preciznije, društva, uključujući i pravni smisao, kako su evidentirana u bazi podataka), potrebno je odmah spomenuti i pojam **DIVIZIJE**.
 
-Per ogni società è necessario <u>**codificare almeno una divisione**</u> (ad esempio è possibile nominarla "*Sede principale*" o altri nomi simili se non emerge la specifica necessità di definire diverse divisioni avendo compreso la relativa gestione e peculiarità).
+Za svako društvo je potrebno <u>**kodirati barem jednu diviziju**</u> (na primjer, moguće ju je nazvati "*Glavna poslovnica*" ili sličnim nazivima, ako ne postoji posebna potreba za definiranjem više divizija, pod uvjetom da su shvaćeni način upravljanja i njihove specifičnosti).
 
 :::tip INFO
-Il concetto di divisione può essere inteso come dipartimento aziendale o anche ramo d'azienda, di importanza tale, tuttavia, da determinare un ciclo attivo e passivo, inteso come produzione di documenti, ordini fatture ecc... separato.
-La contabilità seppur unica a livello di azienda che redige un unico bilancio, può essere agevolmente filtrata per divisione in modo da produrre un bilancio divisionale. Anche nelle varie maschere come la ricerca dei movimenti contabili e delle partite aperte è possibile filtrare (a volte il campo di filtro è inizialmente "nascosto" all'interno di una sezione espandibile). Anche le anagrafiche degli articoli sono separate inquanto riferite a "business" diversi.
+Pojam divizije može se tumačiti kao poslovni odjel ili čak poslovna jedinica, koja je dovoljno značajna da ima vlastiti aktivni i pasivni ciklus, odnosno zasebno kreira dokumente, narudžbe, račune itd.
+Računovodstvo, iako jedinstveno na razini društva koje sastavlja jednu bilancu, može se jednostavno filtrirati po diviziji kako bi se izradio divizijski bilanc. Također, u raznim formama – poput pretrage knjiženja ili otvorenih stavki – moguće je filtriranje po diviziji (u nekim slučajevima je to polje filtriranja inicijalno "skriveno" unutar proširivog dijela forme).
+Čak su i šifrarnici artikala odvojeni jer se odnose na različite poslovne jedinice
 :::
 
 ---

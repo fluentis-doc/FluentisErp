@@ -1,33 +1,33 @@
 ---
-title: Porto
+title: Paritet
 sidebar_position: 2
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Porto** e viene utilizzata per inserire le condizioni di resa utilizzabili nei documenti di acquisto/vendita.
+Tablica se otvara putem izbornika **Tablice > Opće postavke > Paritet** i koristi se za unos uvjeta isporuke koji se primjenjuju u dokumentima kupnje/prodaje.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Ricerca** kako bi se rezultati prikazali u mreži rezultata.  
 
-Per poter inserire nuovi record è necessario cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži ili pritisnuti tipku **Novi**. 
 
-### Porto
+### Paritet
 
-**Codice/Descrizione**: indicare un codice univoco per la condizione di resa e relativa descrizione;
+**Kod / Opis**: unosi se jedinstvena šifra za uvjet isporuke te njegov opis;
 
-**Cod Intra**: indicare il codice ufficiale da utilizzare in dichiarazione intrastat;
+**Intra kod**: navodi se službeni kod koji se koristi u Intrastat prijavi;   
 
 
-**Segno intra.**: campo non obbligatorio, serve per indicare se le spese del documento, che hanno flag *Val stat. Intra*, incrementano o decrementano il valore merce per il calcolo del valore statistico;
+**Znak za Intra**: neobavezno polje, koristi se za označavanje treba li trošak iz dokumenta, ako ima aktiviran flag *Stat. vrijednost Intra*, povećati ili smanjiti vrijednost robe za izračun statističke vrijednosti;
 
-**Codice ISO della nazione** indica che questo codice è utilizzabile nelle dichiarazioni intrastat delle società di questa nazionalità;
+**ISO kod države** označava da se ovaj kod može koristiti u Intrastat prijavama za društva te nacionalnosti;  
 
-**Spese**: abilita la gestione spese per il valore statistico intrastat;
+**Troškovi**: omogućuje upravljanje troškovima za statističku vrijednost u Intrastat sustavu;  
 
-**Data fine validità**: indica la data di fine validità della condizione di resa.
+**Datum kraja valjanosti**: označava do kojeg je datuma uvjet isporuke valjan.
 
-### Lingue
+### Jezici
 
-Nella griglia è possibile impostare le descrizioni in lingua della riga selezionata nella griglia *Porto*.
+U mreži je moguće unijeti prijevode opisa na strane jezike za trenutno označeni redak u mreži *Paritet*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a tiče se zajedničkog funkcioniranja formi, pogledajte poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

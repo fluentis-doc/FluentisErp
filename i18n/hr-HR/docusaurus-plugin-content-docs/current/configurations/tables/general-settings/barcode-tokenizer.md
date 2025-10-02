@@ -1,82 +1,82 @@
 ---
-title: Barcode tokenizer
+title: Barkod tokenizator
 sidebar_position: 4
 ---
 
-Gran parte delle operazioni che possono essere effettuate in Fluentis WMS, possono essere agevolate e velocizzate grazie all’utilizzo del campo *Codice barcode*, che se opportunamente configurato, rielabora in maniera intelligente i dati acquisiti tramite la lettura del barcode e autonomamente va ad inserire i valori nei campi corrispondenti.
-Questo da un grande vantaggio all’operatore sia in termini di velocità di inserimento che di efficienza, dato che dovrà leggere i dati sempre nello stesso campo *Codice barcode* senza avere il problema di dover cambiare il focus. 
+Mnoge operacije koje se mogu izvršavati unutar Fluentis WMS sustava mogu biti znatno olakšane i ubrzane korištenjem polja *Kod barkoda*, koje ako je pravilno konfigurirano, inteligentno obrađuje podatke dobivene očitavanjem barkoda i automatski popunjava odgovarajuća polja.
+To operatoru donosi veliku prednost u smislu brzine unosa i učinkovitosti, jer podatke uvijek unosi u isto polje *Kod barkoda* bez potrebe za promjenom fokusa unutar forme
 
-Nella tabella di testata i campi da inserire sono: 
+U tablici zaglavlja potrebno je unijeti sljedeća polja:
 
-> **Codice**: indica il prefisso del barcode tokenizer;        
-> **Descrizione**: indica la descrizione del barcode tokenizer;        
-> **Separatore**: indica il carattere separatore del barcode tokenizer.
+> **Kod**: označava prefiks barcode tokenizer-a;        
+> **Opis**: opisuje barcode tokenizer;        
+> **Razdjelnik**: znak koji se koristi kao razdjelnik unutar barcode tokenizer-a.
 
-Nella tabella di dettaglio vanno definiti gli oggetti e le proprietà che andremo a leggere nel barcode.
+U tablici detalja definiraju se objekti i svojstva koja će se čitati iz barkoda.
 
-Il barcode deve essere creato utilizzando **CodiceBarcode** + **Separatore** + **OggettoBusiness.Proprietà** [ + **Separatore** + **OggettoBusiness.Proprietà** ]  
+Barkod se mora sastaviti prema formatu: **KodBarkoda** + **Razdjelnik** + **PoslovniObjekt.Svojstvo** [ + **Razdjelnik** + **PoslovniObjekt.Svojstvo** ]  
 
-L’ultima parte **OggettoBusiness.Proprietà** può essere ripetuta più volte, sarà la Lunghezza o il **Separatore** definito in tabella che permetterà di individuare i valori corretti.       
+Zadnji dio **PoslovniObjekt.Svojstvo** može se ponavljati više puta; duljina vrijednosti ili **razdjelnik** definiran u tablici omogućit će ispravnu identifikaciju svakog podatka.      
  
-Di norma, in un barcode tokenizer, è presente un solo **Oggetto principale**, il quale può essere composto a sua volta da più **Oggetti business**.      
-Questi **Oggetti business** posso essere proprietà dirette dell'**Oggetto principale** (in questo caso l'**Oggetto business** sarà uguale all'**Oggetto principale**) oppure possono essere proprietà appartenenti ad altri **Oggetti business**, ma comunque referenziati nell'**Oggetto principale**.          
-Possiamo dire che l'**Oggetto principale** che viene restituito dalla lettura del barcode è costituito dalla composizione di tutte le proprietà degli **Oggetti business** inseriti.     
+U pravilu, svaki barcode tokenizer sadrži jedan **glavni objekt**, koji može biti sastavljen od više **poslovnih objekata**.      
+Ovi **poslovni objekti** mogu biti direktna svojstva **glavnog objekta** (u tom slučaju su **poslovni** i **glavni objekt** isti) ili mogu pripadati drugim **poslovnim objektima**, ali su i dalje referencirani unutar **glavnog objekta**.          
+Možemo reći da **glavni objekt** koji se dobiva čitanjem barkoda čini skup svih svojstava definiranih **poslovnih objekata**.     
 
-:::note Nota
-Ovviamente a seconda del set di dati su cui viene utilizzato, bisogna assicurarsi che la configurazione individui un unico risultato.
+:::note Napomena
+Naravno, ovisno o skupu podataka na kojem se koristi tokenizer, važno je osigurati da konfiguracija daje jedinstveni rezultat. 
 :::
 
-Di seguito alcuni esempi di costruzione del Barcode Tokenizer:
+Primjeri sastavljanja Barcode Tokenizer-a: 
 
-Esempio: Item-MOB-ART
+Primjer: Item-MOB-ART
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Kod | Opis | Razd | Poslovni objekt | Svojstvo | Duljina | Razd | Redoslijed | Glavni objekt |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
 | Item | Item Barcode | - | FSItemClass | Code | 3 | - | 10 | FSItem |
 | Item | Item Barcode | - | FSItem | Code | 50 | - | 20 | FSItem |
 
-Esempio: Loc-01-L1
+Primjer: Loc-01-L1
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Kod | Opis | Razd | Poslovni objekt | Svojstvo | Duljina | Razd | Redoslijed | Glavni objekt |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
 | Loc | Location Barcode | - | FSWarehouse | Code | 10 | - | 10 | FSLocation |
 | Loc | Location Barcode | - | FSLocation | CodeLocation | 100 | - | 20 | FSLocation |
 
-Esempio: UDC-2023-5-21
+Primjer: UDC-2023-5-21
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Kod | Opis | Razd | Poslovni objekt | Svojstvo | Duljina | Razd | Redoslijed | Glavni objekt |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
 | UDC | UDC Barcode | - | FSLoadingUnit | Year | 4 | - | 10 | FSLoadingUnit |
 | UDC | UDC Barcode | - | FSLoadingUnit | Group | 4 | - | 20 | FSLoadingUnit |
 | UDC | UDC Barcode | - | FSLoadingUnit | Number | 4 | - | 30 | FSLoadingUnit |
 
-Esempio: Lot-MOB-ART-123
+Primjer: Lot-MOB-ART-123
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Kod | Opis | Razd | Poslovni objekt | Svojstvo | Duljina | Razd | Redoslijed | Glavni objekt |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
 | Lot | Lotto | - | FSItemClass | Code | 3 | - | 10 | FSBatchRegister |
 | Lot | Lotto | - | FSItem | Code | 50 | - | 20 | FSBatchRegister |
 | Lot | Lotto | - | FSBatchRegister | Code | 05 | - | 30 | FSBatchRegister |
 
-Esempio: MesPop-10824
+Primjer: MesPop-10824
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Kod | Opis | Razd | Poslovni objekt | Svojstvo | Duljina | Razd | Redoslijed | Glavni objekt |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
 | MesPop | Production Order Phase | - | FSProductionOrderPhase | Id |  | - | 10 | FSProductionOrderPhase |
 
-Esempio: Qta-50
+Primjer: Qta-50
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Kod | Opis | Razd | Poslovni objekt | Svojstvo | Duljina | Razd | Redoslijed | Glavni objekt |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
 | Qta | Quantity | - |  |  | 100 | - | 10 |  |
 
-Esempio: ItemQta-MOB-ART-35
+Primjer: ItemQta-MOB-ART-35
 
-| Codice | Descrizione | Separatore | Oggetto business | Proprietà | Lunghezza | Separatore | Sequenza | Oggetto principale |
+| Kod | Opis | Razd | Poslovni objekt | Svojstvo | Duljina | Razd | Redoslijed | Glavni objekt |
 | :-- | :-- | :-: | :-- | :-- | :-- | :-: | --: | :-- |
 | ItemQta | Item Quantity | - | FSItemClass | Code | 3 | - | 10 | FSItem |
 | ItemQta | Item Quantity | - | FSItem | Code | 50 | - | 20 | FSItem |
 | ItemQta | Item Quantity | - |  |  | 100 | - | 30 |  |
 
-Gli ultimi esempi non rientrano nella logica descritta per il barcode tokenizer, questo perché si voleva avere un modo per mappare nel barcode anche la quantità che però non è attribuibile a nessun Oggetto/Proprietà nel momento della lettura.
-Ovviamente questa logica va implementata nelle singole form.
+Zadnji primjeri ne slijede klasičnu logiku barcode tokenizer-a, budući da se željela omogućiti i interpretacija količine, koja u trenutku očitavanja barkoda nije vezana ni uz jedan konkretan objekt/svojstvo.  
+Naravno, ova logika mora biti zasebno implementirana unutar svake forme.

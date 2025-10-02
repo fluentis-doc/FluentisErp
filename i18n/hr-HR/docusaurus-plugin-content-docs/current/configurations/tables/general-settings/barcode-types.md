@@ -1,19 +1,19 @@
 ---
-title: Tipi barcode
+title: Tipovi barkoda
 sidebar_position: 4
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Tipi barcode** e permette la codifica delle diverse classi articolo e il raggruppamento degli articoli.
+Tablica se otvara putem izbornika **Tablice > Opće postavke > Vrste barkoda** i omogućuje kodiranje različitih klasa artikala te grupiranje artikala.  
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u mreži rezultata.  
 
-Per poter inserire nuovi record è necessario cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži ili pritisnuti tipku **Novi**. 
 
-**Campi Specifici**
+**Specifična polja**
 
-**Export pubblica amministrazione**: attivando questo flag viene creato un [tag](https://docs.fluentis.com/FluentisErp/docs/finance-area/e-invoice/configuration_einvoice#codifica-articolo-per-cliente--tag-2213-codicearticolo) per la gestione del barcode nel tracciato xml della fattura elettronica.           
-Inoltre, se attivo il controllo di unicità del barcode inserito viene fatto solo a livello del singolo articolo, mentre se il flag è disattivato il controllo dell'unicità del barcode viene effettuato a livello globale, quindi per tutti gli articoli.
+**Izvoz za javnu upravu**: aktiviranjem ovog flaga kreira se [tag](https://docs.fluentis.com/FluentisErp/docs/finance-area/e-invoice/configuration_einvoice#codifica-articolo-per-cliente--tag-2213-codicearticolo) za upravljanje barkodom unutar XML zapisa elektroničke fakture.  
+Također, ako je ovaj flag aktivan, provjera jedinstvenosti unesenog barkoda vrši se samo na razini pojedinog artikla, dok se – ako je flag deaktiviran – provjera jedinstvenosti provodi globalno, dakle za sve artikle.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije posebno objašnjeno u ovom dokumentu, a odnosi se na zajedničko ponašanje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
