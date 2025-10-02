@@ -21,7 +21,7 @@ Nakon unosa / kreiranja nove tvrtke, bit će potrebno upravljati pravima vidljiv
 Prilikom instalacije Fluentis ERP-a automatski se kreira jedno početno društvo, tako da baza nikada nije potpuno prazna.
 :::
 
-Uz pojam tvrtke (ili preciznije, društva, uključujući i pravni smisao, kako su evidentirana u bazi podataka), potrebno je odmah spomenuti i pojam **DIVIZIJE**.
+Uz pojam tvrtke (ili preciznije, poduzeća, uključujući i pravni smisao, kako su evidentirana u bazi podataka), potrebno je odmah spomenuti i pojam **DIVIZIJE**.
 
 Za svako društvo je potrebno <u>**kodirati barem jednu diviziju**</u> (na primjer, moguće ju je nazvati "*Glavna poslovnica*" ili sličnim nazivima, ako ne postoji posebna potreba za definiranjem više divizija, pod uvjetom da su shvaćeni način upravljanja i njihove specifičnosti).
 
@@ -33,61 +33,64 @@ Računovodstvo, iako jedinstveno na razini društva koje sastavlja jednu bilancu
 
 ---
 
-### GESTIONE TABELLA
+### UPRAVLJANJE TABLICOM  
 
-La maschera che si apre rappresenta la lista delle società presenti nel database.
-Vengono riportati in griglia, per comodità, alcuni campi presenti nel dettaglio della società stessa, illustrato qui di seguito.
+Maska koja se otvara prikazuje popis društava prisutnih u bazi podataka.
+Radi praktičnosti, u mreži su prikazana neka polja koja se nalaze i u detaljima samog društva, kako je prikazano u nastavku.
 
-**Per creare una nuova società** (sarà poi definita l'unica o le varie divisioni relative) **premere il tasto *NUOVO***.
+**Za kreiranje novog poduzeća** (naknadno će biti definirana jedna ili više pripadajućih divizija) **pritisnite tipku *NOVO***.
 
-:::note Nota
-Dopo la creazione della nuova società nella presente tabella è necessario gestirne i permessi di visibilità ai vari utenti tramite l'applicazione ARM e preliminarmente definire anche la società stessa anche su ARM (menu Società)
+:::note Napomena 
+Nakon kreiranja novog poduzeća u ovoj tablici, potrebno je upravljati dopuštenjima vidljivosti za različite korisnike putem aplikacije ARM, te prethodno definirati i samo poduzeće unutar ARM-a (izbornik "Poduzeća")  
 :::
 
-### DETTAGLIO ANAGRAFICA SOCIETA'
+### DETALJI OSNOVNIH PODATAKA O PODUZEĆU 
 
-il **codice** della Società (che deve corrispondere al codice definito nel portale Arm)
+**Šifra** poduzeća (koja mora odgovarati šifri definiranoj na portalu ARM)  
 
-**Descrizione**: ovvero la ragione sociale ufficiale della società
+**Opis**: službeni naziv poduzeća (pravna forma)  
 
-**Partita IVA**: normalmente viene inserita senza il precodice nazione ad esempio IT per l’Italia)
+**PDV broj (OIB)**: obično se unosi bez predfiksa države, npr. IT za Italiju  
 
-**Codice fiscale della società**: che può corrispondere alla partita iva
+**Porezni broj poduzeća**: može biti isti kao i PDV broj
 
-**Codice Attività**: ovvero il codice Ateco dell’attività principale della società
+**Šifra djelatnosti**: tj. ATECO šifra glavne djelatnosti poduzeća  
 
-**Nazione della società**: sulla base di questo campo Fluentis riconosce la localizzazione e le impostazioni fiscali da presentare di default nel sistema
+**Država poduzeća**: na temelju ovog polja Fluentis prepoznaje lokalizaciju i zadane porezne postavke koje će prikazati u sustavu
 
-**Divisa**: è la divisa nella quale è tenuta la contabilità ufficiale della società.
+**Valuta**: valuta u kojoj se vodi službeno knjigovodstvo poduzeća.  
 
-:::note Nota
-La nazione e divisa della società sono già popolate inquanto richieste e impostate all’atto dell’installazione di Fluentis. Sono chiaramente dati fondamentali che implementano tutta una serie di altre impostazioni di carattere amministrativo e fiscale. La divisa, in particolare, è quella nella quale è denominata la nostra contabilità.
+:::note Napomena
+Država i valuta poduzeća su već unaprijed postavljene jer su obavezni podaci definirani prilikom instalacije Fluentis sustava.
+To su ključni podaci koji utječu na čitav niz drugih administrativnih i poreznih postavki.
+Valuta, posebno, označava onu u kojoj se vodi naše službeno knjigovodstvo.  
 :::
 
-**Lingua**: in questo campo, non obbligatorio ma molto importante, si indica la lingua ufficiale della società. È utilizzato come lingua di default da riportare nelle stampe, così come nella valorizzazione automatica delle stringhe descrittive in contabilità
+**Jezik**: ovo polje nije obavezno, ali je vrlo važno – u njemu se definira službeni jezik poduzeća.
+Koristi se kao zadani jezik za ispis dokumenata, kao i za automatsko popunjavanje opisnih nizova u računovodstvu.  
 
-**Anagrafica associata**: questo è un campo opzionale che serve per due tipi di utilizzo: il primo nel caso in cui l’azienda sia una ditta individuale, questo è il collegamento all’anagrafica che ci consente di riprendere i dati della persona fisica per le dichiarazioni fiscali
-Il secondo utilizzo: nel caso di due aziende appartenenti ad un gruppo che abbiano rapporti, e quindi documenti, intercompany, serve per il passaggio di dati da una società all’altra; ad esempio per fare in modo che la fattura di vendita della prima società diventi automaticamente fattura di acquisto per la seconda società: per far questo, quindi, la seconda società deve sapere in quale anagrafica andare a cercare il fornitore per intestare il documento correttamente.
-L'impostazione viene anche utilizzata per la procedura del modulo Controlling > Chiusure > Infrannuali > Consolidamento dove il sistema va a neutralizzare i costi e ricavi, crediti e debiti reciproci tra le due società facenti parte del gruppo ed aggregando invece costi e ricavi, crediti e debiti "esterni" al fine di ottenere un bilancio consolidato.
+**Povezana evidencija**: ovo je opcionalno polje koje služi za dvije vrste korištenja: prvo, u slučaju da je tvrtka samostalni poduzetnik, ovo je poveznica na karton koji nam omogućuje preuzimanje podataka fizičke osobe za porezne prijave.  
+Drugo korištenje: u slučaju dvije tvrtke koje pripadaju grupi i imaju međusobne odnose, a time i međusobne dokumente, služi za prijenos podataka iz jedne tvrtke u drugu; na primjer, kako bi račun za prodaju prve tvrtke automatski postao račun za kupnju za drugu tvrtku: da bi se to postiglo, druga tvrtka mora znati u kojem kartonu potražiti dobavljača kako bi ispravno naslovila dokument.
+Postavka se također koristi za proceduru modula Kontroling  > Zatvaranja > Međugodišnji > Konsolidacija gdje sustav neutralizira troškove i prihode, potraživanja i dugove između dviju društava koja su dio grupe, dok se troškovi i prihodi, potraživanja i dugovi "vanjski" agregiraju kako bi se dobio konsolidirani bilans.
 
-**Campi indirizzo**: ovvero l’indirizzo della sede legale
+**Polja adrese**: adresa sjedišta poduzeća
 
-**Ufficio IVA**: in questo campo si indica la città dove si trova l’ufficio iva di riferimento della società
+**Porezni ured (PDV)**: u ovo se polje unosi grad u kojem se nalazi nadležni porezni ured za PDV poduzeća
 
-**Ufficio REA/Numero di iscrizione REA**: codice della provincia e numero di iscrizione al registro delle imprese (necessari per la fatturazione elettronica)
+**REA ured / Broj REA upisa**: šifra županije i broj upisa u registar poduzeća (potrebno za e-račune)
 
-**Capitale sottoscritto/Capitale versato**: testi relativi ai valori della situazione del capitale societario (necessari per la fatturazione elettronica)
+**Upisani/ uplaćeni temeljni kapital**: podaci o stanju temeljnog kapitala poduzeća (također obavezni za e-račune)
 
-Necessario pure il campo **Soci** e lo **Stato**, se in liquidazione o meno, sempre per la fatturazione elettronica.
+Potrebno je unijeti i podatke o **Članovima** te **Status** poduzeća, npr. je li u likvidaciji – što je također obavezno za potrebe elektroničkog fakturiranja.
 
-**Natura giuridica**: in questo campo si indica il codice che identifica il tipo di società. La tabella è fissa e predefinita
+**Pravni oblik**: u ovom polju se navodi kod koji identificira vrstu tvrtke. Tablica je fiksna i unaprijed definirana.
 
-**Regime fiscale**: in questo campo si indica in che regime fiscale opera. La tabella è fissa e predefinita
+**Porezni režim**: u ovom polju se označava pod kojim poreznim režimom se posluje. Tablica je fiksna i unaprijed definirana.
 
-:::tip GRUPPO IVA
-Nella lista dei possibili regimi è stato aggiunto il codice 61 GRUPPO IVA. Selezionando questa voce (se la società che stiamo gestendo fa parte di un gruppo iva e dunque presenta il suo codice fiscale ma la partita iva della capogruppo), in fase di esportazione del file xml della fattura elettronica di vendita, sarà riportato sia la partita iva sia il codice fiscale. Infatti lo SDI controlla entrambi i campi (e non solo la partita iva) nel caso in cui la società dichiari di far parte di un gruppo iva.
+:::tip GRUPA PDV-a
+U popis mogućih poreznih režima dodan je kod 61 – GRUPA PDV-a. Ako se odabere ova opcija (u slučaju da poduzeće koje se trenutno uređuje pripada grupi PDV-a, te stoga koristi svoj porezni broj (OIB), ali PDV broj matičnog poduzeća), prilikom izvoza XML datoteke za izlazni e-račun, bit će uključeni i PDV broj i porezni broj (OIB).
 
-Per quanto riguarda i file xml delle fatture d'acquisto in entrata, con questa impostazione viene effettuato il controllo sia sulla partita iva e poi, se all'interno del db ci sono più società con la stessa partita iva, anche del codice fiscale.
+To je zato što sustav SDI (Sistema di Interscambio) provjerava oba podatka – ne samo PDV broj – u slučaju kada poduzeće izjavljuje da pripada grupi PDV-a.
 :::
 
 **Numero decimali per i campi qtà**: che indica quanti decimali riportare nelle stampe per i campi quantità dei documenti
