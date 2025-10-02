@@ -1,18 +1,18 @@
 ---
-title: Postavke
+title: Impostazioni
 sidebar_position: 1
 ---
 
-Fluentis nudi mogućnost postavljanja različitih funkcionalnosti i parametara:
+Fluentis offre la possibilità di impostare diverse funzionalità e parametri:
 
-- [Alati](/docs/applications/applications-intro): sadrži dodatne aplikacije;
+- [Strumenti](/docs/applications/applications-intro): contiene le applicazioni complementari; 
 
-- [Object Navigator](/docs/object-navigator/object-navigator-intro): sadrži sva svojstva trenutnog objekta korisna za prilagodbu obrazaca dodavanjem dodatnih podataka ili informacija;
+- [Object Navigator](/docs/object-navigator/object-navigator-intro): contiene tutte le proprietà dell'oggetto corrente utile a personalizzare le form con l'aggiunta di ulteriori dati o informazioni;
 
-- [Konfiguriranje](/docs/configurations/configuration): sadrže konfiguracije parametara, tablica i alata;  
+- [Configurazioni](/docs/configurations/configuration): contiene le configurazioni dei parametri, delle tabelle e utilità;  
 
-- **Context Panel**: predstavlja svojevrsnu nadzornu ploču (DashBoard) kontekstualiziranu s aktivnim odabirom;
+- **Context Panel**: rappresenta una sorta di DashBoard contestualizzata alla selezione attiva;
 
-- **Fluentis Chat**: omogućuje interakciju s korisnicima koji su ovlašteni za ovu komunikacijsku uslugu, kako unutar poslovnog okruženja, tako i izvan njega radi pristupa Fluentis podršci;  
+- **Fluentis Chat**: permette di interagire con gli utenti abilitati a tale servizio di comunicazione, sia interno nel contesto aziendale, sia esterno per accedere al supporto di Fluentis;  
 
 - [Form Navigator](/docs/form-navigator/form-navigator-intro).
