@@ -3,6 +3,27 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0049 - 03/10/2025
+
+> -	CO - ottimizzazione scritture di integrazione (#TT03929/25) 
+> -	FI - ‘New options for Ro 394 fiscal declaration’. Modifications in declaration 394 object form can have an impact on profile ( TT04183/25) 
+> -	FI - la modifica della categoria cespite ora cambia il sottoconto patrimoniale in testata cespite. (#TT03931/25) 
+> -	FI - revisione test di quadratura in contabilizzazione fatture con omaggi (#TT03708/25) 
+> -	FI - Stampa Analisi Centri di Costo: Revisione logica proposta totali (TT03996/25) 
+> -	MS - Fase soggetta a controllo qualità in  un Ciclo di produzione -  Tipo piano di controllo inseribile anche se la fase è stata resa soggetta a Controllo qualità senza confermare i valori (cambio riga).(#TT04190/25) 
+> -	Risolto bug esportazioni multiple vedi ticket #TT03916/25 
+> -	SCM - verticalizzazione Pharma - Edizioni - Ora è possibile modificare le informazioni di: Acquistabile, Data inizio, Data fine e Osservazioni, prima non editabili. 
+> -	SD - Abilitato l’inserimento degli articoli nei documenti tramite selezione dall’help, tab Documenti. (#TT02792/25) 
+> -	SD - Risoluzione dell’errore che duplicava gli sconti finali derivanti dal tipo pagamento, in tutte le procedure di evasione (#TT03745/25) 
+> -	SD: Elimina le fatture con più di 2100 articoli (TT04134/25) 
+> -	SH - Gestione documentale: Corretta la scansione in formato PDF. (#TT03705/25) 
+> -	SH - WEB - Corretta anomalia nella visualizzazione della data dell’operazione nel tab Workflow Logs dei documenti. #TT03990/25) 
+> -	SH - WEB - Corretta la visualizzazione dei dati in caso di filtri applicati allo stato del Workflow. (#TT03988/25) 
+> -	WM - Analisi Disponibilità: Corretta errata lettura scarichi di produzione. (#TT04181/25, #TT04123/25, #TT04175/25) 
+> -	WM - Piani di carico - Migliorato inserimento ordine cliente in piano di carico (#TT03326/25, 2960/25) 
+> -	WM - Tipologia prelievo FIFO dei lotti ora non considera le ubicazioni bloccate. (#TT03598/24) 
+> -	WMS - Gestione spunta: spunte multiple eseguite con registrazioni di scarico distinte (#TT04029/25) 
+
 ### Patch 707.1-0048 - 25/09/2025
 
 > -	CRM - in conversione contatto CRM in contatto ERP, confermando la conversione vengono portati anche i riferimenti ai documenti allegati al contatto CRM nel contatto ERP. (#TT03641/25) 
