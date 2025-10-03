@@ -1,6 +1,6 @@
 ---
-title: Proprietà anagrafica
+title: Svojstvo kontakta
 sidebar_position: 49
 ---
 
-La tabella consente di creare una struttura ad albero di proprietà libere da associare ai clienti/fornitori.
+Tablica omogućuje stvaranje strukture stabla slobodnih svojstava koja se mogu povezati s kupcima/dobavljačima.

@@ -93,98 +93,100 @@ U popis mogućih poreznih režima dodan je kod 61 – GRUPA PDV-a. Ako se odaber
 To je zato što sustav SDI (Sistema di Interscambio) provjerava oba podatka – ne samo PDV broj – u slučaju kada poduzeće izjavljuje da pripada grupi PDV-a.
 :::
 
-**Numero decimali per i campi qtà**: che indica quanti decimali riportare nelle stampe per i campi quantità dei documenti
-Il flag **Mosta simbolo valuta** con il quale si indica se visualizzare o meno il simbolo della valuta (e i campi uguali a zero) nelle maschere di visualizzazione dei movimenti contabili
+**Decimalni brojevi za polja količina**: označava koliko decimalnih mjesta treba prikazati u ispisima za polja količina u dokumentima.  
+Flag **Prikaz simbola valute** označava treba li prikazivati simbol valute (i polja s vrijednošću nula) u ekranima za prikaz knjiženja.  
 
-Flag **Gestione controlling** che abilita le procedure "avanzate" (set completo delle funzioni) dell’ area controlling per la società che stiamo modificando
+Flag **Upravljanje kontrolingom** omogućuje "napredne" procedure (kompletan set funkcionalnosti) za controlling područje za društvo koje se trenutno uređuje.  
 
-**Società Capogruppo**: campo gestito nella procedura del modulo controlling *Consolidamento master*. Questa opera uno specifico consolidamento dati sulla società capogruppo.
+**Matična tvrtka**: polje koje se koristi u proceduri modula kontrolling *Konsolidacija master*. Ova funkcionalnost provodi specifičnu konsolidaciju podataka na matičnom poduzeću.  
 
-Inserendo la società capogruppo, viene reso visibile all’interno del piano dei conti della società selezionata anche il campo per la corrispondenza con il piano dei conti della master.
-Dunque in fase di consolidamento il movimento contabile della società controllata verrà ribaltato sul conto indicato relativo alla società master.
-Il dato che viene gestito in questa elaborazione, in ogni caso, è quello gestito nel modulo controlling e già elaborato dai cost driver relativi, non il dato di contabilità generale.
-Solo la parte di dato di natura contabile verrà transcodificato, mentre il movimento di centro di costo (centro aziendale) sarà riportato senza modifiche ed il prerequisito per il riporto è, infatti, quello che il codice del centro aziendale sia uguale sia nella società master sia nella società controllata.
+Unosem društvo matičnu kompaniju, polje za usklađivanje s planom računa matične kompanije postaje vidljivo unutar plana računa odabrane kompanije.  
+Dakle, u fazi konsolidacije, računovodstveni zapis podružnice bit će prebačen na navedeni račun koji se odnosi na matičnu kompaniju.  
+Podatak koji se obrađuje u ovoj obradi, u svakom slučaju, je onaj koji se upravlja u modulu kontrolinga i koji su već obradili odgovarajući uzroci troškova, a ne podatak iz općeg računovodstva.  
+Samo će dio podataka od računovodstvene prirode biti transkodiran, dok će se kretanje troškovnog centra (centar poduzeća) prikazati bez izmjena, a preduvjet za prijenos je, zapravo, da kod troškovnog centra bude isti i u matičnoj kompaniji i u podružnici.
 
-#### Sezione inferiore
+#### Donji odjeljak
 
-Nella parte bassa della finestra troviamo tre sezioni espandibili con ulteriori dati inseribili, in questo caso si tratta di dati di tipo opzionale che possono anche non essere presenti, quantomeno in fase iniziale:
+U donjem dijelu prozora nalaze se tri proširive sekcije s dodatnim podacima koji se mogu unijeti. U ovom slučaju radi se o opcionalnim podacima koji nisu nužno prisutni, barem ne u početnoj fazi:
 
-All’interno della sezione **EDI** (Electronic Data Interchange) si possono indicare alcuni valori societari utilizzati in questi file telematici
+U sekciji **EDI** (Electronic Data Interchange) moguće je navesti određene identifikacijske podatke poduzeća koji se koriste u tim telematičkim datotekama. 
 
-Nella sezione **Spese bollo**, invece, si indica il valore delle spese bollo ed il valore che fa scattare l’obbligo della sua applicazione in fattura, il numero di autorizzazione al bollo virtuale e la provincia dell’intendenza di finanza. Ricordo che nella tabella società si inserisce il valore minimo delle operazioni esenti IVA che fanno scattare l’aggiunta del bollo in fattura, ma questa spesa bollo deve essere codificata anche nella tabella Tipi spese e deve essere inserita nell’anagrafica del cliente. Solo in questo modo, se l’importo in fattura è esente IVA, la spesa bollo verrà aggiunta.
+U sekciji **Trošak biljega**, unosi se vrijednost troška biljega te prag iznosa koji uzrokuje obvezu primjene biljega na računu, broj odobrenja za virtualni biljeg te županija porezne uprave.
+Podsjećamo da se u tablici poduzeća unosi minimalna vrijednost transakcija oslobođenih PDV-a koje pokreću obvezu dodavanja biljega na računu. No, ovaj trošak biljega mora također biti definiran u tablici Vrste troškova i unesen u matične podatke klijenta.
+Samo pod tim uvjetima, ako je iznos na računu oslobođen PDV-a, trošak biljega bit će automatski dodan.  
 
-**Expander Ri.Ba.** : trovano posto i dati identificativi della società per il sistema telematico bancario: il codice SIA (5 caratteri alfanumerici) e il codice CUC (8 caratteri) per il Sepa.
-
-
-### Griglia delle divisioni, Banca d'appoggio di default e Logo
-
-Nella colonna di destra della maschera abbiamo tre griglie.
-
-Nella prima sono visibili le divisioni definite per la società. E’ bene ricordarsi sempre che per ogni società deve esistere all’interno del software almeno una divisione, anche se questa, come avviene in molti casi, corrisponde all’unica sede. Infatti viene spesso rinominata in divisione 1 o, ancora meglio, semplicemente sede. Su ogni divisione è possibile definire se il controllo di gestione avviene con cadenza settimanale o mensile.
-
-Nella seconda possiamo indicare le 
-
-L’ ultima parte riguarda il logo aziendale, per il quale quello di default (impostato attraverso il pulsante ***Cambia logo di default*** della ribbon bar) viene utilizzato automaticamente all’ interno dei documenti del ciclo attivo/passivo.
-
-Occorre previamente importare una o più immagini da utilizzare come logo tramite il bottone ***Importazione immagini***.
-
----
-
-### PULSANTE IMPOSTAZIONI GENERALI (PER IL LANCIO DELLA PROCEDURA DI FAST START)
-
-Questo pulsante crea, in un database appena installato, oppure in una azienda aggiunta alla base dati tutta una serie di dati di base di default; ad esempio, un piano dei conti ed impostazioni di base di registri iva, causali contabili, tipi documenti quali ordini, bolle e fatture  ecc.
-
-Si tratta di una funzionalità molto utile in fase di definizione della strategia per l’ avvio di una nuova società e per la relativa impostazione del software, inquanto, in certi casi, potrebbe essere più conveniente, al fine di rendere il software completamente operativo in tempi contenuti, partire da una situazione di default, facendo poi delle modifiche per adattare ad esempio il piano dei conti, le causali contabili e le altre tabelle di default alla situazione concreta, piuttosto che partire da zero creando queste tabelle ed impostazioni. 
-
-:::tip[Più Info]
-per maggiori informazioni di dettaglio vedere [**qui**](/docs/guide/fast-start)
-:::
-
-### DATI NECESSARI PER LA FATTURAZIONE ELETTRONICA
-
-:::tip ATTENZIONE
-
-Si consiglia di compilare in maniera compiuta tutti i dati gestiti dall’ anagrafica societaria, cogliamo tuttavia l’ occasione per evidenziare i campi che sono necessari per la creazione della fatturazione elettronica. 
-
--	Primo fra tutti la partita IVA e il codice fiscale 
--	Il codice destinatario e la PEC invece sono campi non obbligatori utili unicamente per memorizzare i propri dati
--	Per quanto riguarda il telefono e fax, se si desidera compilarli, si consiglia di non usare la barra per separare il prefisso per evitare possibili problemi nei controlli formali del sistema di interscambio, a fronte di caratteri non riconosciuti.
--	I campi relativi all’ ufficio REA, il primo accoglie la sigla della provincia ed il secondo il numero
--	Necessario pure il campo Soci e lo Stato, se in liquidazione o meno
--	Si dovrà anche, a tale scopo, completare con il capitale sottoscritto e versato, avendo cura di non mettere il puntino delle migliaia e di separare i due decimali con il punto anziché la virgola, sempre per via dei controlli formali dello SdI, 
--	la natura giuridica ed il regime fiscale.
-:::
+**Proširiva sekcija Ri.Ba.** : ovdje se unose identifikacijski podaci poduzeća za bankovni telematski sustav: SIA kod (5 alfanumeričkih znakova) i CUC kod (8 znakova) za SEPA sustav.  
 
 
-### IMPOSTAZIONE PER SOCIETA' APPARTENENTI AD UN GRUPPO IVA
+### Mreža podjela, Zadana banka za knjiženje i Logotip
 
-:::tip Info: il gruppo iva
-Con l’introduzione di tale norma, è stata prevista la possibilità, per le imprese collegate da interessi finanziari, economici ed organizzativi, di creare un gruppo unico, considerato come un solo contribuente (ai soli fini Iva) nei confronti del fisco. Esso sarà, pertanto, dotato di un unico numero di Partita Iva. Le imprese che fanno parte del gruppo fattureranno le operazioni verso terzi con una partita Iva comune, la partita Iva di gruppo. Invece le cessioni di beni e le prestazioni di servizi scambiati tra le aziende interne al gruppo non rileveranno ai fini dell’imponibile Iva. In conseguenza di ciò, tutte le operazioni effettuate da uno dei soggetti del gruppo sono considerate come effettuate dall’intero gruppo. La fattura e gli altri documenti sono emessi dal rappresentante del Gruppo o dai partecipanti indicando sugli stessi oltre al numero di partita Iva del Gruppo anche il codice fiscale del soggetto partecipante che ha realizzato l’operazione.
-:::
+U desnom stupcu maske nalaze se tri mreže.
 
-Nel caso in cui una o più società esistenti nella base dati siano parte di un gruppo IVA all’interno della presente tabella è necessario  valorizzare i campi **PARTITA IVA** (con la PI del gruppo) e il **CODICE FISCALE** (specifico per la società facente parte del gruppo)
-È importante andare ad impostare anche la **NATURA GIURIDICA** che dovrà essere ’61- Gruppo iva’ 
+U prvoj su vidljive podjele definirane za poduzeće. Važno je uvijek imati na umu da za svako poduzeće unutar softvera mora postojati barem jedna podjela, čak i ako ona, kao što je često slučaj, odgovara jedinoj poslovnici. U tom se slučaju često preimenuje u Podjela 1 ili, još bolje, jednostavno u Poslovnica. Na svakoj podjeli moguće je definirati odvija li se kontroling s tjednom ili mjesečnom učestalošću.
 
+U drugoj mreži možemo označiti flagove koji se odnose na:
 
-### **NUOVO TAB IVA DI GRUPPO**
+Zadnji dio odnosi se na logotip poduzeća, pri čemu se zadani logotip (postavljen putem tipke ***Promijeni zadani logotip*** u traci izbornika) automatski koristi unutar dokumenata aktivnog/pasivnog ciklusa.
 
-In questo tab vengono inserite le configurazioni del gruppo iva costituito da una o più delle società presenti nel db.
-
-Periodo / Anno inizio e Periodo / Anno Fine: per definire la validità dell'impostazione e sussistenza dello stato di gruppo iva
-
-E' società capogruppo: da attivare se la società in uso è la capogruppo ovvero quella che impone la sua partita iva alle altre.
-
-Combo box soc. Capogruppo: serve per agganciare la società in uso alla società capogruppo già presente all'interno dello stesso db.
-
-Anagrafica Capogruppo: serve per selezionare una capogruppo esterna, dunque non presente all'interno dello stesso db come società (ad esempio perchè gestita con altro software e pertanto occorre inserirla come semplice anagrafica di contatto dalla quale leggere i dati quali la partita iva ecc.).
-
-
-**NOTA: All'interno dell'elaborazione della LiPe (comunicazione trimestrale liquidazioni iva) è prese te un flag per abilitare la modalità gruppo iva per il dichiarativo stesso.**
+Potrebno je prethodno uvesti jednu ili više slika koje će se koristiti kao logotip putem tipke ***Uvoz slika***.
 
 ---
 
-### VIDEO TUTORIALS
+### TIPKA OPĆE POSTAVKE (ZA POKRETANJE FAST START PROCEDURE)
 
-:::important Vedi Anche
-[**VIDEO TUTORIALS SULLE TABELLE GENERALI**](/docs/video/finance/intro)
+Ova tipka u novoinstaliranoj bazi podataka ili u poduzeću koje je dodano u bazu podataka, kreira cijeli niz osnovnih početnih podataka; na primjer, kontni plan te osnovne postavke za evidenciju PDV-a, knjižne temeljnice, vrste dokumenata kao što su narudžbe, otpremnice i računi itd.
+
+Radi se o vrlo korisnoj funkcionalnosti u fazi definiranja strategije za pokretanje novog poduzeća i za odgovarajuće postavljanje softvera, jer u određenim slučajevima može biti isplativije, kako bi se softver što prije doveo u potpuno operativno stanje, započeti s početnim zadanim postavkama, a zatim ih prilagoditi — primjerice kontni plan, knjižne temeljnice i druge zadane tablice — konkretnim potrebama, nego početi od nule stvaranjem svih tih tablica i postavki.
+
+:::tip[Više informacija]
+Za više detaljnih informacija pogledajte [**ovdje**](/docs/guide/fast-start)
+:::
+
+### POTREBNI PODACI ZA ELEKTRONIČKO IZDAVANJE RAČUNA
+
+:::tip PAŽNJA
+
+Preporučuje se da se svi podaci u matičnim podacima poduzeća popune na potpun način. Ipak, ovom prilikom želimo istaknuti polja koja su nužna za kreiranje elektroničkih računa. 
+
+-	Prije svega, PDV identifikacijski broj (OIB) i porezni broj  
+-	Kod primatelja i PEC adresa nisu obavezna polja, već služe isključivo za pohranu vlastitih podataka  
+-	Kada je riječ o telefonu i faksu, ako ih se želi unijeti, preporučuje se ne koristiti kosu crtu (/) za odvajanje pozivnog broja, kako bi se izbjegli mogući problemi prilikom formalne provjere od strane sustava za razmjenu (SdI), zbog neprihvaćenih znakova.  
+-	Polja koja se odnose na URED REA: prvo polje predviđeno je za unos oznake županije, a drugo za broj  
+-	Također je potrebno unijeti podatke o članovima (Soci) i stanje poduzeća, tj. nalazi li se ono u likvidaciji ili ne  
+-	U tu svrhu također treba unijeti podatke o upisanom i uplaćenom kapitalu, pazeći da se: ne koristi točka za tisuće, decimalna vrijednost odvaja točkom, a ne zarezom, zbog formalnih kontrola od strane SdI,  
+-	Pravna forma i porezni režim također su obavezni podaci  
+:::
+
+
+### POSTAVKE ZA PODUZEĆA KOJA SU DIO PDV GRUPE
+
+:::tip Info: PDV grupa  
+Uvođenjem ove norme, predviđena je mogućnost za poduzeća povezana financijskim, ekonomskim i organizacijskim interesima da stvore jedinstvenu grupu, koja se smatra jednim poreznim obveznikom (samo u svrhu PDV-a) prema fiskalnim vlastima. Stoga će imati jedinstveni broj PDV-a. Poduzeća koja su dio grupe fakturirat će transakcije prema trećim stranama s zajedničkim PDV-om, PDV-om grupe. S druge strane, isporuke dobara i usluga razmijenjene između tvrtki unutar grupe neće se smatrati oporezivim za PDV. Kao posljedica toga, sve transakcije koje izvrši jedan od subjekata grupe smatraju se kao izvršene od strane cijele grupe. Račun i drugi dokumenti izdaju se od strane predstavnika Grupe ili sudionika, a na njima se osim broja PDV-a Grupe navodi i OIB subjekta sudionika koji je izvršio transakciju.
+:::
+
+U slučaju da je jedno ili više poduzeća prisutnih u bazi podataka dio PDV grupe, u ovoj tablici je nužno popuniti sljedeća polja **PDV br** i **Porezni broj** (specifico za društvo koje je dio grupe)
+Također je važno postaviti i pravnu formu **Pravni oblik** na vrijednost "61 – PDV grupa. 
+
+
+### **NOVA KARTICA – PDV GRUPA**
+
+Na ovoj kartici unose se postavke PDV grupe koju čini jedno ili više poduzeća prisutnih u bazi podataka.
+
+Razdoblje / Godina početka i Razdoblje / Godina završetka: koriste se za definiranje valjanosti postavke i statusa pripadnosti PDV grupi
+
+Je li poduzeće matično: označava se flag ako je trenutno aktivno poduzeće matično, tj. ono koje koristi vlastiti PDV broj i prenosi ga na ostala poduzeća u grupi
+
+Combo box – matično poduzeće: služi za povezivanje aktivnog poduzeća s već postojećim matičnim poduzećem unutar iste baze podataka
+
+Matično poduzeće – vanjska evidencija: koristi se kada je matično poduzeće vanjsko, tj. nije prisutno u istoj bazi kao poduzeće (npr. jer se vodi u drugom softveru); u tom slučaju ga je potrebno unijeti kao jednostavan kontakt iz kojeg se mogu čitati podaci poput PDV broja itd.
+
+
+**NAPOMENA: Unutar obrade LiPe izvještaja (tromjesečna prijava PDV likvidacija) nalazi se flag za omogućavanje načina rada PDV grupe za samu prijavu.**
+
+---
+
+### VIDEO TUTORIJALI
+
+:::important Pogledaj također
+[**VIDEO TUTORIJALI O OPĆIM TABLICAMA**](/docs/video/finance/intro)
 :::

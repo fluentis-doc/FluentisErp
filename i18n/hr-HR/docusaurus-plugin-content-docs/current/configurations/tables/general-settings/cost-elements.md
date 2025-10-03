@@ -1,37 +1,37 @@
 ---
-title: Voci di costo
+title: Elementi troška
 sidebar_position: 44
 ---
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
 
-### Ricerca Voci di costo
+### Pretraživanje stavki troškova
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite sve željene filtre, potrebno je kliknuti na tipku **Traži** kako biste prikazali rezultate u mreži rezultata.
 
-### Inserimento Voci di costo 
+### Unos stavki troškova
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih kodova potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.
 
-#### Campi specifici
+#### Specifična polja
     
-**Codice**: indica il codice della voce di costo;      
-**Descrizione**: indica la descrizione della voce di costo;      
-**Tipo di costo**: indica la tipologia della voce di costo tra *Costi diretti*, *Costi generali* e *Altri costi*;      
-**Applicazione su**: indica dove verrà applicato questo costo: 
-> *Costo materiali*: il costo viene applicato solo sul costo dei materiali (applicabile solo su voci con *Tipo costo* uguale a *Costi diretti*);    
-> *Costo macchina*: il costo viene applicato solo sul costo macchina (applicabile solo su voci con *Tipo costo* uguale a *Costi diretti*);     
-> *Costo manodopera*: il costo viene applicato solo sul costo della manodopera (applicabile solo su voci con *Tipo costo* uguale a *Costi diretti*);    
-> *Costo lavorazioni*: il costo viene applicato solo sul costo delle lavorazioni (totale dei costi macchina e manodopera) (applicabile solo su voci con *Tipo costo* uguale a *Costi diretti*);     
-> *Costo industriale*: il costo viene applicato solo sul totale del costo dei materiali e del costo delle lavorazioni (applicabile solo su voci con *Tipo costo* uguale a *Costi diretti* o *Costi generali*);    
-> *Costo generale*: il costo viene applicato al totale costi generali (applicabile solo su voci con *Tipo costo* uguale a *Costi generali*);     
-> *Altri costi*: il costo viene applicato al totale altri costi (applicabile solo su voci con *Tipo costo* uguale ad *Altri costi*);   
+**Šifra**: označava šifru stavke troška;    
+**Opis**: označava opis stavke troška;     
+**Vrsta troška**: označava tip stavke troška između *Ukupni izravni troškovi*, *Opći troškovi* i *Ostali troškovi*;      
+**Primjeni na**: označava gdje će se ovaj trošak primijeniti:  
+> *Trošak materijala*: trošak se primjenjuje samo na trošak stroja (primjenjivo samo na stavke s *Vrsta troška* jednako *Izravni troškovi*);    
+> *Trošak stroja*: trošak se primjenjuje samo na trošak rada (primjenjivo samo na stavke s *Vrsta troška* jednako *Izravni troškovi*);     
+> *Troškovi radne snage*: trošak se primjenjuje samo na trošak rada (primjenjivo samo na stavke s *Vrsta troška* jednako *Izravni troškovi*);;    
+> *Radni trošak*: trošak se primjenjuje samo na trošak obrade (zbroj troškova stroja i rada) (primjenjivo samo na stavke s *Vrsta troška* jednako *Izravni troškovi*);     
+> *Industrijski trošak*: trošak se primjenjuje samo na ukupni trošak materijala i trošak obrade (primjenjivo na stavke s *Vrsta troška* jednako *Izravni troškovi* ili *Opći troškovi*);    
+> *Opći trošak*: trošak se primjenjuje na ukupne opće troškove (primjenjivo samo na stavke s *Vrsta troška* jednako *Opći troškovi*);;     
+> *Altri costi*: trošak se primjenjuje na ukupne ostale troškove (primjenjivo samo na stavke s *Vrsta troška* jednako *Ostali troškovi*);   
 
 :::note Nota
-Le voci di costo create con **Applicazione su** uguale a *Costo materiali*, *Costo macchina*, *Costo manodopera*, *Costo lavorazioni*o *Costo industriale* saranno tutte incluse nella sezione dedicata ai **Costi diretti**, mentre le voci di costo create con **Applicazione su** uguale a *Costo generale* o *Altri costi* verranno incluse, rispettivamente, nella sezione dedicata ai **Costi generali** o a quella dedicata a **Altri costi** all'interno della [Valorizzazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+Stavke troškova kreirane s **Primjena na** jednako *Trošak materijala*, *Trošak stroja*, *Trošak rada*, *Trošak obrade* ili *Industrijski trošak* bit će uključene u odjeljak **Izravni troškovi**,dok će stavke troškova kreirane s **Primjena na** jednako *Opći trošak* ili *Ostali troškovi* biti uključene, redom, u odjeljak **Opći troškovi** ili **Ostali troškovi** unutar [Valorizacije](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 :::
 
-**Percentuale/Valore**: indica se la voce di costo sia di tipo: *percentuale*, a *valore fisso* o a *valore variabile* (attivo solo per le voci di costo con **Applicazione su** = *Altri costi*). Nello specifico la *percentuale* viene calcolata sul totale del costo indicato nel campo **Applicazione su**; il *valore fisso* viene aggiunto al totale del costo indicato nel campo **Applicazione su**, mentre il *valore variabile* viene moltiplicato per la quantità presente nella gestione degli *Altri costi* in costificazione.              
-**Valore**: indica il valore di default della voce di costo che verrà poi proposto in automatico.     
+**Postotak/Vrijednost**: označava je li stavka troška tipa *postotak*, *fiksna vrijednost* ili *varijabilna vrijednost* (aktivno samo za stavke troškova s **Primjena na** = *Ostali troškovi*). Konkretno, *postotak* se računa na ukupni trošak naveden u polju **Primjena na**; il *fiksna vrijednost* se dodaje ukupnom trošku navedenom u polju **Primjena na**, dok se *varijabilna vrijednost*množi s količinom prisutnom u upravljanju *Ostalim troškovima* u obračunu troškova.               
+**Vrijednost**: označava zadanu vrijednost stavke troška koja će se automatski predložiti.     
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu vezano uz zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
