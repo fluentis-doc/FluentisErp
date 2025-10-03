@@ -1,35 +1,35 @@
 ---
-title: Divise
+title: Valuta
 sidebar_position: 1
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+U slučaju da se želi konfigurirati ručno, potrebno je pogledati kontrolni popis na povezanom linku
 :::
 
-### Sezione superiore
+### Gornji dio
 
-La tabella, comune a tutte le società della base dati, consente di definire la lista delle divise da utilizzare nei vari documenti/registrazioni. 
+Tablica, zajednička za sve tvrtke u bazi podataka, omogućuje definiranje liste valuta koje se koriste u različitim dokumentima/unosima.  
 
-**Divisa / Descrizione**: Codice / Descrizione della divisa codificata 
+**Valuta / Opis**: Šifra / opis kodirane valute   
 
-**Decimali**: va valorizzato con il numero di cifre decimali previste dalla divisa
+**Decimale**: potrebno je upisati broj decimalnih mjesta predviđenih za valutu  
 
-**CEE**: il flag definisce le divise facenti parte del sistema dei cambi fissi per l'euro
+**CEE**: flag označava valute koje su dio sustava fiksnih tečajeva za euro  
 
-**EURO**: il flag identifica l'euro.
+**EURO**: flag identificira euro.  
 
-**Scarica cambi**: abilita lo [**scarico automatico**](/docs/configurations/tables/finance/currency-exchange) dei tassi di cambio per la divisa corrispondente
+**Preuzmi tečajeve**: omogućuje [**automatsko preuzimanje**](/docs/configurations/tables/finance/currency-exchange) tečajeva za odgovarajuću valutu.  
 
 
-### Sezione inferiore
+### Donji dio
 
-I campi della griglia consentono di impostare i sottoconti di utile e perdita cambi, specifici ad ogni società, da utilizzare nelle valorizzazioni automatiche delle differenze cambio contabili.
+Polja u tablici omogućuju postavljanje pomoćnih računa dobiti i gubitka od tečajnih razlika, specifičnih za svaku tvrtku, koji se koriste pri automatskoj valorizaciji knjigovodstvenih tečajnih razlika.  
 
-**Conto / Sottoconto / Descrizione Utile:** sarà utilizzato per contabilizzare l'utile su cambi
+**Račun / Pomoćni račun / Opis dobiti**: koristi se za evidentiranje dobiti od tečajnih razlika  
 
-**Conto / Sottoconto / Descrizione Perdite:** sarà utilizzato per contabilizzare le perdite su cambi
+**Račun / Pomoćni račun / Opis gubitaka**: koristi se za evidentiranje gubitaka od tečajnih razlika
 
-**Conto / Sottoconto / Descrizione Fondi:** sarà utilizzato per contabilizzare l'accantonamento al fondo rischi su cambi
+**Račun / Pomoćni račun / Opis rezervi**: koristi se za evidentiranje knjiženja rezervi za rizike od tečajnih razlika  
