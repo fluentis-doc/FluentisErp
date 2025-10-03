@@ -3,6 +3,56 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 801.0024 - 03/10/2025
+
+> - FI - ‘New options for Ro 394 fiscal declaration’. Modifications in declaration 394 object form can have an impact on profile ( TT04183/25) 
+> - FI - la modifica della categoria cespite ora cambia il sottoconto patrimoniale in testata cespite. (#TT03931/25) 
+> - FI - revisione test di quadratura in contabilizzazione fatture con omaggi (#TT03708/25) 
+> - MS - Fase soggetta a controllo qualità in  un Ciclo di produzione -  Tipo piano di controllo inseribile anche se la fase è stata resa soggetta a Controllo qualità senza confermare i valori (cambio riga).(#TT04190/25) 
+> - SCM - verticalizzazione Pharma - Edizioni - Ora è possibile modificare le informazioni di: Acquistabile, Data inizio, Data fine e Osservazioni, prima non editabili. 
+> - SD - Gestione Acconti: Corretto l’aggiornamento del residuo acconto in caso di storno parziale. Abilitata la chiusura forzata dell’acconto tramite l’attivazione del flag Forzatamente evaso anche su fatture contabilizzate o con documento Sdi generato. (#TT03759/25) 
+> - WM - Ottimizzato algoritmo Valorizzazione Magazzino per UDC. (#TT04132/25) 
+> - WM - Tipologia prelievo FIFO dei lotti ora non considera le ubicazioni bloccate. (#TT03598/24) 
+
+### Patch 801.0023 - 19/10/2025
+
+> - CO - Corretta anomalia nella procedura di calcolo costo nel caso di listini con prezzi con UM diversa da quella principale dell’articolo. (#TT03766/25) 
+> - CO - revisione ‘Ripresa ammortamento cespiti’ nelle chiusure infrannuali, ottimizzazione (si consiglia di eseguire la procedura con l’opzione ‘singola registrazione’ attiva) (TT03929/25) 
+> - FI - causali automatiche, revisione gestione Sottoconti automatici (#TT03869/25) 
+> - FI - Corretto comportamento del filtro Categoria amministrativa nelle form generazione solleciti e generazione automatica solleciti ( #TT03618/25) 
+> - FI - Declaration 300 and 394 for RO - vat code 11 and 21 ( TT04041/25) 
+> - FI - revisione import da DocFinance per esclusione blocchi in ricerca solleciti. (#TT03926/25) 
+> - FI - stampa Liquidazioni Agenti - vuota ( TT03928/25) 
+numero ordine di produzione - numero lotto" e nel caso di una dichiarazione di produzione viene visualizzato: "numero ordine di produzione - numero lotto - numero dichiarazione di produzione". (#TT04069/25) 
+Rilascio set workflow base 
+Risolto bug esportazioni multiple da workflow (#TT03916/25) 
+> - SH - fast start, valorizzazione della tabella di dettaglio delle nature transazioni intrastat (#TT03930/25) 
+> - SH - revisione webapi di import dell’oggetto FSLedgerAccount per gestione anagrafica agenti (#TT03911/25) 
+> - WM - Corretto bug nella procedura di chiusura di magazzino nel caso di gestione con UDC. Corretto bug nella procedura “Aggiungi / sposta articoli” presente in gestione UDC. (#TT03596/25) 
+> - WM - Corretto filtro magazzino nella chiamata API GetItemsAvailability . (TT03867/25 ) 
+> - WM - In analisi disponibilità migliorata la leggibilità del campo numero documento, dove nel caso in cui si tratti di un ordini di produzione viene visualizzato:  
+> - WM - Rinominate le labels relative alla giacenza in analisi disponibilità, da: “Giacenza, Giacenza Disponibile, Giacenza Non Disponibile” a “Giacenza Operativa, Giacenza Operativa Disponibile, Giacenza Operativa Non Disponibile”. 
+
+
+### Patch 801.0022 - 19/09/2025
+
+> - CO - Corretta anomalia nella procedura di calcolo costo nel caso di listini con prezzi con UM diversa da quella principale dell’articolo. (#TT03766/25) 
+> - CO - revisione ‘Ripresa ammortamento cespiti’ nelle chiusure infrannuali, ottimizzazione (si > - consiglia di eseguire la procedura con l’opzione ‘singola registrazione’ attiva) (TT03929/25) 
+> - FI - causali automatiche, revisione gestione Sottoconti automatici (#TT03869/25) 
+> - FI - Corretto comportamento del filtro Categoria amministrativa nelle form generazione solleciti e generazione automatica solleciti ( #TT03618/25) 
+> - FI - Declaration 300 and 394 for RO - vat code 11 and 21 ( TT04041/25) 
+> - FI - revisione import da DocFinance per esclusione blocchi in ricerca solleciti. (#TT03926/25) 
+> - FI - stampa Liquidazioni Agenti - vuota ( TT03928/25) 
+numero ordine di produzione - numero lotto" e nel caso di una dichiarazione di produzione viene visualizzato: "numero ordine di produzione - numero lotto - numero dichiarazione di produzione". (#TT04069/25) 
+Rilascio set workflow base 
+Risolto bug esportazioni multiple da workflow (#TT03916/25) 
+> - SH - fast start, valorizzazione della tabella di dettaglio delle nature transazioni intrastat (#TT03930/25) 
+> - SH - revisione webapi di import dell’oggetto FSLedgerAccount per gestione anagrafica agenti (#TT03911/25) 
+> - WM - Corretto bug nella procedura di chiusura di magazzino nel caso di gestione con UDC. Corretto bug nella procedura “Aggiungi / sposta articoli” presente in gestione UDC. (#TT03596/25) 
+> - WM - Corretto filtro magazzino nella chiamata API GetItemsAvailability . (TT03867/25 ) 
+> - WM - In analisi disponibilità migliorata la leggibilità del campo numero documento, dove nel caso in cui si tratti di un ordini di produzione viene visualizzato:  
+> - WM - Rinominate le labels relative alla giacenza in analisi disponibilità, da: “Giacenza, Giacenza Disponibile, Giacenza Non Disponibile” a “Giacenza Operativa, Giacenza Operativa Disponibile, Giacenza Operativa Non Disponibile”. 
+
 ### Patch 801.0021 - 11/09/2025
 
 > - Add common libraries for Json on Script editor 

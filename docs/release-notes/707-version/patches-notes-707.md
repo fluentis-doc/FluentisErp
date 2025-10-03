@@ -15,7 +15,7 @@ sidebar_position: 1
 > -	SCM - verticalizzazione Pharma - Edizioni - Ora è possibile modificare le informazioni di: Acquistabile, Data inizio, Data fine e Osservazioni, prima non editabili. 
 > -	SD - Abilitato l’inserimento degli articoli nei documenti tramite selezione dall’help, tab Documenti. (#TT02792/25) 
 > -	SD - Risoluzione dell’errore che duplicava gli sconti finali derivanti dal tipo pagamento, in tutte le procedure di evasione (#TT03745/25) 
-> -	SD: Elimina le fatture con più di 2100 articoli (TT04134/25) 
+> -	SD - Elimina le fatture con più di 2100 articoli (TT04134/25) 
 > -	SH - Gestione documentale: Corretta la scansione in formato PDF. (#TT03705/25) 
 > -	SH - WEB - Corretta anomalia nella visualizzazione della data dell’operazione nel tab Workflow Logs dei documenti. #TT03990/25) 
 > -	SH - WEB - Corretta la visualizzazione dei dati in caso di filtri applicati allo stato del Workflow. (#TT03988/25) 
