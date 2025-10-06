@@ -3,11 +3,28 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
-### Patch 801.0001 - 19/10/2025
+### Patch 802.0003 - 03/10/2025
 
+> -	BI - pivot - add Excel Export command in contextual menu 
+> -	FI - ‘New options for Ro 394 fiscal declaration’. Modifications in declaration 394 object form can have an impact on profile ( TT04183/25) 
+> -	FI - fix RO declaration D300 
+> -	FI - la modifica della categoria cespite ora cambia il sottoconto patrimoniale in testata cespite. (#TT03931/25) 
+> -	FI - revisione test di quadratura in contabilizzazione fatture con omaggi (#TT03708/25) 
+> -	FI - Stampa Analisi Centri di Costo: Revisione logica proposta totali (TT03996/25) 
+> -	MS - Fase soggetta a controllo qualità in  un Ciclo di produzione -  Tipo piano di controllo inseribile anche se la fase è stata resa soggetta a Controllo qualità senza confermare i valori (cambio riga).(#TT04190/25) 
+> -	PM - Risolta casistica che bloccava la valorizzazione interventi (#TT04266/25) 
+> -	QY - Calibration planner fixes/changes (TT03064/25) 
+> -	  QY - Sono stati implementati i diagrammi generali per le relazioni tra i seguenti documenti: (Reclamo e Azioni correttive; Non conformità e Azioni correttive; Azione correttiva padre e Azioni correttive figlie; Corso di base e Corsi di formazione - #TT03480/25) 
+> -	SCM - verticalizzazione Pharma - Edizioni - Ora è possibile modificare le informazioni di: Acquistabile, Data inizio, Data fine e Osservazioni, prima non editabili. 
+> -	SD - Risoluzione dell’errore che duplicava gli sconti finali derivanti dal tipo pagamento, in tutte le procedure di evasione (#TT03745/25) 
+> -	SD - Sconti Offerta - Implementata possibilità di non far modificare, visualizzare, elininare o creare gli sconti in testa dell'offerta tramite il diritto FSSalesOfferPredefinedDiscount (#TT003853/25) 
+> -	SD Pos- Fix Item barcode problem(TT01258/21) 
+> -	SD - Elimina le fatture con più di 2100 articoli (TT04134/25) 
+> -	WM - Ottimizzato algoritmo Valorizzazione Magazzino per UDC. (#TT04132/25) 
+> -	WM - Tipologia prelievo FIFO dei lotti ora non considera le ubicazioni bloccate. (#TT03598/24) 
+> -	WMS - Gestione spunta: spunte multiple eseguite con registrazioni di scarico distinte (#TT04029/25) 
 
-
-### Patch 801.0001 - 19/10/2025
+### Patch 802.0002 - 25/09/2025
 
 > -	FI - Declaration 300 and 394 for RO - vat code 11 and 21 ( TT04041/25) 
 > -	FI - liquidazione iva periodica, aggiunto collegamento alle anagrafiche per impostare la società che presenta la comunicazione per conto di un altro contribuente. Modifications in periodic vat calculation form can have an impact on profiles. (#TT04050/25) 
@@ -28,7 +45,7 @@ sidebar_position: 1
 > -	WM - Nascosti dati sensibili (costi) nell’expander dell’articolo (#TT02167/25) 
 > -	WM -  Corretto calcolo giacenza in griglia anagrafica lotti. (#TT04045/25) 
 
-### Patch 801.0001 - 19/10/2025
+### Patch 802.0001 - 19/09/2025
 
 > -	CO - Corretta anomalia nella procedura di calcolo costo nel caso di listini con prezzi con UM diversa da quella principale dell’articolo. (#TT03766/25) 
 > -	CO - modificato algoritmo di creazione della chiusura da private a virtual. (#TT03923/25) 
