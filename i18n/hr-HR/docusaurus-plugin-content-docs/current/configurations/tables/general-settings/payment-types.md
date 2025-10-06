@@ -1,26 +1,26 @@
 ---
-title: Tipi pagamento
+title: Načini plaćanja
 sidebar_position: 7
 ---
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je obuhvaćena procedurom [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako želite izvršiti ručnu konfiguraciju, pogledajte kontrolni popis na poveznici iznad.  
 :::
 
-La tabella contiene le tipologie di pagamento da utilizzare nel gestionale.
+Ova tablica sadrži vrste plaćanja koje se koriste u sustavu za upravljanje.  
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa te pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-Per inserire nuovi record cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novog zapisa kliknite na prvi prazan redak u gornjoj rešetki ili pritisnite tipku **Novo**. 
 
-## Tipo pagamento
+## Načini plaćanja
 
-**Pagamento**: è il codice alfanumerico di riconoscimento;
+**Plaćanje**: alfanumerički identifikacijski kod;
 
-**Descrizione**: è la descrizione del pagamento, riportata normalmente nelle varie stampe del ciclo attivo/passivo;
+**Opis**: opis vrste plaćanja, koji se uobičajeno prikazuje na raznim ispisima u okviru izlaznih/ulaznih procesa;
 
-**Importo di bollo**: importo del bollo;
+**Iznos biljega**: iznos pristojbe (biljega);  
 
 **Percentuale Pagamento**: consente di associare una tipologia (richiamandola dalla tabella Tipi Sconto) e la relativa percentuale di sconto alle righe articolo del documento in relazione alla tipologia di pagamento; Ad esempio è possibile definire uno sconto 5% nel caso venga utilizzato il tipo pagamento Contanti.
 
