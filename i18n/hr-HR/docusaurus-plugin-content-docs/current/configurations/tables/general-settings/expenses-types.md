@@ -1,124 +1,124 @@
 ---
-title: Tipi spese
+title: Vrste troškova 
 sidebar_position: 11
 ---
 
-In questa tabella vengono definite delle tipologie di spesa finale da aggiungere ai documenti (in particolare del ciclo attivo) per l'addebito automatico.
+U ovoj tablici definiraju se vrste završnih troškova koji se dodaju dokumentima (posebice u prodajnom ciklusu) za automatsko terećenje.  
 
-Possono essere aggiunte poi direttamente nel documento , oppure nell'anagrafica del cliente per l'automazione dell'inserimento della spesa.
+Ti se troškovi mogu dodavati izravno u dokument ili u karticu kupca radi automatizacije unosa troška.  
 
-### Campi di aggancio articolo e IVA
+### Polja za povezivanje artikla i PDV-a  
 
-**Tipo / Descrizione:** Codice e descrizione della spesa per richiamarla
+**Vrsta / Opis:** Codice e descrizione della spesa per richiamarla
 
-**Classe / Codice / Descrizione articolo:** campo per effettuare l'associazione tra il tipo spesa ed un codice articolo di riferimento
+**Klasa / Šifra / Opis artikla:** polje za povezivanje vrste troška s referentnom šifrom artikla  
 
-**Conto / Sottoconto / Descrizione:** necessario per associare un conto contabile sul quale contabilizzare automaticamente il riaddebito della spesa in oggetto
+**Konto / Podkonto / Opis:** potrebno za povezivanje konta na koji se automatski knjiži terećenje troška  
 
-**IVA / Descrizione:** necessario per specificare il codice iva (aliquota o codice di esenzione) al quale sarà fatturato il riaddebito della spesa
+**PDV / Opis:** potrebno za definiranje PDV šifre (stopa ili šifra oslobođenja) prema kojoj će se terećenje fakturirati  
 
-**Tipo IVA:** Tipo iva per gestire il riaddebito (Salvo casi o regimi iva particolari indicare Generico)
+**Vrsta PDV-a:** vrsta PDV-a za upravljanje terećenjem (osim posebnih slučajeva ili režima, navesti „Generički“)  
 
 
-### Flag di aggancio alle logiche {#link-to-logic}
+### Flagovi za povezivanje s logikom {#link-to-logic}
 
-**Varie:** identifica una spesa varia ad addebito semplice. Le spese Varie presenti nei documenti vengono tutte riportate nel documento riepilogativo che evade i documenti stessi.
+**Razno:** označava pojedinačni trošak jednostavnog terećenja. Svi troškovi označeni kao „Razno“ u dokumentima prenose se u sažeti dokument koji obrađuje same dokumente.  
 
-**Incasso:** apponendo questo flag la spesa sarà calcolata in automatico una per ogni rata di ricevuta bancaria definita nelle condizioni di pagamento (funziona pertanto soltanto con questa tipologia di pagamento). Le spese di Incasso sono assoggettate automaticamente all’iva principale del documento.
+**Naplate:** ako je ovaj flag označen, trošak se automatski računa za svaku ratu bankovne primitke definiranu u uvjetima plaćanja (funkcionira samo za ovu vrstu plaćanja). Troškovi naplate podliježu glavnom PDV-u dokumenta.  
 
-**Trasporto:** apponendo questo flag la spesa sarà calcolata in fattura una per ogni ddt che ha contribuito a generare la fattura; nel caso invece di evasione di più ordini in un ddt, verrà riportata una sola spesa di incasso.      
+**Prenos:** ako je ovaj flag označen, trošak se računa po jednom po svakom otpremnom listu koji je pridonio izradi fakture; kod isporuke više narudžbi jednim otpremnim listom, terećenje se evidentira samo jednom.      
 
-**Imballo:**
+**Pakiranje:**
 
-**Spedizione:**
+**Dostava:**
 
-**Viaggio:** se abilitato il tipo spesa verrà proposto nell'elenco delle spese selezionabili negli interventi dell'area Progetti. 
+**Putovanje:** ako je ovaj flag omogućeno, vrsta troška bit će dostupna u popisu troškova za odabir u intervencijama unutar područja Projekti.
 
-**Tipo spesa viaggio**: abilitato solo se il flag "Viaggio" è abilitato, indentifica la tipologia di spesa Viaggio: necessario per abilitare appositi campi nelle spese degli interventi (es. nel caso di Distanza verranno abilitati i campi di km e costo km, etc)
+**Vrsta troška za putovanje**: aktivira se samo ako je flag „Putovanje“ označen, identificira vrstu troška putovanja; potrebno za aktivaciju posebnih polja u troškovima intervencija (npr. za udaljenost će se aktivirati polja za kilometre i cijenu po kilometru, itd.)
 
-**Bollo / Valore Bollo:** utilizzando questa tipologia con il relativo valore indicato nel campo adiacente si attiva la logica del bollo in fattura nel caso di esenzione iva e documento superiore ai 77euro (vedere norme attualmente in vigore per dettagli), oltre alla valorizzazione del tag corrispondente nella fattura elettronica.
+**Pečat / Vrijednost pečata:** korištenjem ove vrste troška s navedenom vrijednošću aktivira se logika pečata na fakturi u slučaju oslobođenja PDV-a i dokumenta veće vrijednosti od 77 eura (pogledati važeće propise za detalje), uz valorizaciju pripadajućeg taga u elektroničkoj fakturi.
 
 :::note[Info]
-La logica, in dettaglio prevede che, se il cliente ha delle spese bollo nella sua anagrafica, venga eseguita la somma del valore imponibile per le righe documento aventi il codice iva compreso nelle seguenti categorie: 
+Logika detaljno predviđa da, ako kupac u svojoj kartici ima troškove pečata, izvrši se zbroj vrijednosti osnovice za stavke dokumenta s PDV šifrom uključenom u sljedeće kategorije:
 
-Non Imponibile
-Esente
-Escluso
+Neoporezivo
+Oslobođeno
+Izuzeto
 
-Se il totale ( convertito  nella divisa della societa’con il cambio della testata fattura) e’ maggiore del **Tetto minimo  spese** della sezione **Spese Bollo** in tabella società, viene aggiunto come spesa bollo.
+Ako je ukupni iznos (konvertiran u valutu društva s tečajem iz zaglavlja fakture) veći od **Minimalnog limita troškova** u sekciji **Troškovi pečata** u tablici društva, tada se dodaje kao trošak pečata.
 
-I codici IVA delle tipologie di cui sopra devono anche avere il flag *Base per conteggio bollo* settato.
+PDV šifre gore navedenih kategorija moraju imati označen flag *Osnova za obračun pečata*.
 :::
 
-**Val. stat. intra:** con questa logica la spesa finale inserita in fattura sarà ripartita sulle righe del documento ai fini della creazione dei modelli intrastat dalla procedura di creazione automatica (dalle fatture)
+**Vrijednost intra statistike:** s ovom logikom završni trošak u fakturi bit će raspoređen na stavke dokumenta radi kreiranja intrastat obrazaca kroz automatsku proceduru (iz faktura)
 
-**Ripartito:** il flag fa in modo che la registrazione di magazzino abbia la spesa ripartita nelle varie righe della registrazione della fattura; questo flag non implica che la spesa venga ripartita nelle registrazioni dei documenti collegati.     
+**Raspoređeno:** ovaj flag osigurava da se knjiženje u skladištu odnosi na raspoređeni trošak po stavkama fakture; flag ne znači da se trošak raspoređuje u knjiženjima povezanih dokumenata. 
 
 **RAEE:**
 
-**IVA obbl.**
+**Obavezni PDV**
 
 
-### Altri campi
+### Ostala polja
 
-**Categoria merceologica:**
+**Kategorija proizvoda:**
 
-**Codici / Descrizione Paghe:** codice utilizzato per inserire nel riquadro "Valori" del Riepilogo per cedolini dei dipendenti le spese presenti negli interventi e nelle dichiarazioni attività.
+**Šifre / Opis plaća:** šifra korištena za unos u okvir „Vrijednosti“ u sažetku za obračun plaća, za troškove iz intervencija i aktivnosti.
 
-**Tipo attività**: valido soltanto per le spese di tipo "Viaggio" - Ore di Viaggio". Il tipo attività viene utilizzato per generare in automatico la dichiarazione attività in base alle ore di viaggio dichiarate nelle spese sostenute dell'intervento nell'area Progetti. 
+**Vrsta aktivnosti**: vrijedi samo za troškove tipa „Putovanje“ – „Sate putovanja“. Koristi se za automatsko generiranje izvještaja aktivnosti na temelju sati putovanja navedenih u troškovima intervencije u području Projekti.
 
-**Categoria attività**: valido soltanto per le spese di tipo "Viaggio" - Ore di Viaggio". La categoria attività viene utilizzata nella dichiarazione attività generata in automatico in base alle ore di viaggio dichiarate nelle spese sostenute dell'intervento nell'area Progetti. 
+**Kategorija aktivnosti**: vrijedi samo za troškove tipa „Putovanje“ – „Sate putovanja“. Kategorija aktivnosti koristi se u izvještaju aktivnosti koji se automatski generira prema navedenim satima putovanja u intervencijama u području Projekti.
 
-### Ritenuta d'acconto e cassa previdenza
+### Porez po odbitku i mirovinski fond
 
-**Cassa previdenza / Soggetto Ritenuta / Codice P.A.:** campi per consentire di gestire nel file xml delle fatture elettroniche di vendita la *Cassa previdenza* che si può applicare nella fattura di un professionista.
+**Mirovinski fond / Obveznik poreza po odbitku / Šifra P.A.:** polja za upravljanje u XML datoteci elektroničkih faktura za prodaju *Mirovinskim fondom* koji se može primijeniti na fakturi profesionalca.
 
-Se l'anagrafica cliente della fattura ha il flag [**ritenuta d’acconto**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) attivo, infatti, un percipiente che utilizza Fluentis potrebbe creare una fattura di vendita e spedirla allo Sdi: se ha un riaddebito spesa Cassa previdenza (il 4% tipicamente) codifica questo tipo spesa nella presente tabella, poi imposta se è soggetta a ritenuta o meno (con il secondo flag) e inserisce nel terzo campo il codice che lo Sdi prevede:
+Ako kupac na fakturi ima aktiviran flag [**Porez po odbitku**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) tada korisnik Fluentis može izdati fakturu i poslati je na Sdi; ako postoji terećenje za Mirovinski fond (obično 4%), ta vrsta troška se definira u ovoj tablici, zatim se označi da li je predmet poreza po odbitku (drugi flag) te se u treće polje upisuje šifra koju Sdi zahtijeva:
 
 
-:::note Esempio di codifica
+:::note Primjeri šifri
 
-TC01	Cassa nazionale previdenza e assistenza avvocati e procuratori legali 
+TC01	Nacionalni fond za mirovinsko osiguranje i pomoć odvjetnicima i pravnim zastupnicima
 
-TC02	Cassa previdenza dottori commercialisti
+TC02	Mirovinski fond za ovlaštene računovođe
 
-TC03	Cassa previdenza e assistenza geometri
+TC03	Mirovinski fond i pomoć geodetima
 
-TC04	Cassa nazionale previdenza e assistenza ingegneri e architetti liberi professionisti
+TC04	Nacionalni fond za mirovinsko osiguranje i pomoć inženjerima i arhitektima slobodnim profesijama
 
-TC05	Cassa nazionale del notariato
+TC05	Nacionalni fond javnih bilježnika
 
-TC06	Cassa nazionale previdenza e assistenza ragionieri e periti commerciali
+TC06	Nacionalni fond za mirovinsko osiguranje i pomoć knjigovođama i komercijalnim stručnjacima 
 
-TC07	Ente nazionale assistenza agenti e rappresentanti di commercio (ENASARCO)
+TC07	Nacionalni zavod za pomoć i zaštitu agenata i trgovačkih predstavnika (ENASARCO) 
 
-TC08	Ente nazionale previdenza e assistenza consulenti del lavoro (ENPACL)
+TC08	Nacionalni fond za mirovinsko osiguranje i pomoć radnim savjetnicima (ENPACL) 
 
-TC09	Ente nazionale previdenza e assistenza medici (ENPAM)
+TC09	Nacionalni fond za mirovinsko osiguranje i pomoć liječnicima (ENPAM) 
 
-TC10	Ente nazionale previdenza e assistenza farmacisti (ENPAF)
+TC10	Nacionalni fond za mirovinsko osiguranje i pomoć farmaceutima (ENPAF) 
 
-TC11	Ente nazionale previdenza e assistenza veterinari (ENPAV)
+TC11	Nacionalni fond za mirovinsko osiguranje i pomoć veterinarima (ENPAV) 
 
-TC12	Ente nazionale previdenza e assistenza impiegati dell'agricoltura (ENPAIA)
+TC12	Nacionalni fond za mirovinsko osiguranje i pomoć zaposlenicima u poljoprivredi (ENPAIA) 
 
-TC13	Fondo previdenza impiegati imprese di spedizione e agenzie marittime
+TC13	Mirovinski fond za zaposlenike brodarskih poduzeća i pomorskih agencija 
 
-TC14	Istituto nazionale previdenza giornalisti italiani (INPGI)
+TC14	Nacionalni institut za mirovinsko osiguranje talijanskih novinara (INPGI) 
 
-TC15	Opera nazionale assistenza orfani sanitari italiani (ONAOSI)
+TC15	Nacionalna ustanova za pomoć siročadi talijanskih zdravstvenih radnika (ONAOSI) 
 
-TC16	Cassa autonoma assistenza integrativa giornalisti italiani (CASAGIT)
+TC16	Samostalni fond za dodatnu pomoć talijanskim novinarima (CASAGIT) 
 
-TC17	Ente previdenza periti industriali e periti industriali laureati (EPPI)
+TC17	Fond za mirovinsko osiguranje industrijskih i diplomiranih industrijskih stručnjaka (EPPI) 
 
-TC18	Ente previdenza e assistenza pluricategoriale (EPAP)
+TC18	Fond za mirovinsko osiguranje i pomoć višekategorialnim djelatnostima (EPAP) 
 
-TC19	Ente nazionale previdenza e assistenza biologi (ENPAB)
+TC19	Nacionalni fond za mirovinsko osiguranje i pomoć biologima (ENPAB) 
 
-TC20	Ente nazionale previdenza e assistenza professione infermieristica (ENPAPI)
+TC20	Nacionalni fond za mirovinsko osiguranje i pomoć sestrinskoj profesiji (ENPAPI) 
 
-TC21	Ente nazionale previdenza e assistenza psicologi (ENPAP)
+TC21	Nacionalni fond za mirovinsko osiguranje i pomoć psiholozima (ENPAP)
 
 TC22	INPS
 
@@ -126,6 +126,6 @@ TC22	INPS
 
 ---
 
-**Lingue**
+**Jezici**
 
-Per ogni tipo di pagamento selezionato nella griglia superiore, è possibile definire delle descrizioni in lingua: utilizzabile per stampe personalizzate.
+Za svaki odabrani način plaćanja u gornjoj tablici moguće je definirati opise na različitim jezicima, što se koristi za prilagođene ispise.

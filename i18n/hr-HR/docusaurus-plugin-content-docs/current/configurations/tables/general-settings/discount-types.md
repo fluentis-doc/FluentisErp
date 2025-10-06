@@ -1,34 +1,34 @@
 ---
-title: Tipi sconti
+title: Vrste popusta
 sidebar_position: 8
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Tipi sconti** e viene utilizzata per inserire le tipologie di sconto ed è già popolata durante l'installazione del programma. E' possibile aggiungere altri tipi di sconto e questi potranno essere utilizzati solo come sconti in percentuale.
+Tablica se otvara putem izbornika **Tablice > Opće postavke > Vrste popusta** i koristi se za unos vrsta popusta i već je popunjena tijekom instalacije programa. Moguće je dodati druge vrste popusta, a ti će se moći koristiti samo kao popusti u postotku.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se prikazalo, izmijenilo ili obrisalo.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
 
-Per poter inserire nuovi record è necessario cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novog zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži ili pritisnuti tipku **Novo**. 
 
-## Sconto
+## Popust
 
-**Codice/Descrizione**: indicare un codice univoco per la tipologia di sconto e relativa descrizione
+**Šifra / Opis**: unesite jedinstvenu šifru za vrstu popusta i odgovarajući opis.  
 
-**Priorità**: indicare la priorità per il reperimento di questo sconto
+**Prioritet**: definirajte prioritet kod preuzimanja ovog popusta.  
 
-**Applicazione**: indicare come applicare lo sconto. Può essere applicato in CASCATA rispetto agli sconti con priorità più alta oppure su IMPONIBILE indipendentemente da priorità.
+**Primjena**: navesti kako primijeniti popust. Može se primijeniti u KASKADI u odnosu na popuste s višim prioritetom ili na OSNOVICU neovisno o prioritetu.
 
-**Escludi da provvigioni**: con questo flag gli sconti NON verranno conteggiati nel calcolo della base provvigionale.
+**Isključi iz provizije**: ako je ova opcija označena, popust se neće uključiti u izračun osnovice za proviziju.  
 
-**Contab. al lordo**: è possibile attivando questo flag contabilizzare il ricavo al lordo dello sconto. Lo sconto verrà registrato poi su un conto indicato nella schermata a piè di pagina(Contabilizzazione Vendite)
+**Knjigovodstvo po bruto iznosu**: je moguće aktiviranjem ovog flag-a evidentirati prihod bruto bez popusta. Popust će se zatim registrirati na račun naveden u donjem dijelu ekrana (Knjigovodstvo prodaje).
 
-### Descrizione Lingua
+### Opis jezika
 
-Per ogni riga di sconto selezionata nella griglia superiore, è possibile mettere delle descrizioni in lingua che verranno poi riportate sui documenti.
+Za svaki redak popusta odabran u gornjoj mreži, moguće je unijeti opise na jeziku koji će se zatim prikazati na dokumentima.
 
-### Contabilizzazione Acquisti/Vendite
+### Knjigovodstveno evidentiranje kupnji/prodaja
 
-Per ogni riga di sconto selezionata nella griglia superiore, è possibile indicare un conto su cui pilotare gli importi degli sconti sia per la parte acquisti, sia per la parte vendite. Questa opzione verrà attivata qualora venga attivato il campo *Contabilizzare al lordo*.
+Za svaki redak popusta odabran u gornjoj tablici moguće je odrediti račun na koji će se usmjeriti iznosi popusta, i za dio kupnji i za dio prodaja. Ova opcija će biti aktivirana ako je označeno polje *Knjigovodstveno evidentiranje bruto*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, molimo da se obratite na sljedeću poveznicu:[Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

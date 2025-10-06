@@ -1,45 +1,45 @@
 ---
-title: Soluzioni di pagamento
+title: Mogućnosti / Načini plaćanja
 sidebar_position: 10
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Ova je tablica uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+U slučaju da se konfiguracija želi provesti ručno, preporučuje se konzultirati kontrolni popis na poveznici.  
 :::
 
-La tabella contiene le soluzioni di pagamento da utilizzare nel gestionale per il calcolo delle scadenze e delle partite aperte.
+Tablica sadrži rješenja plaćanja koja se koriste u sustavu za izračun dospijeća i otvorenih stavki.  
 
-:::danger Attenzione
-Il corretto inserimento di una soluzione di pagamento richiede di compilare sia la griglia superiore, sia quella di dettaglio che definisce il calcolo dei giorni di scadenza. Nonostante il programma permetta di salvare senza la griglia di dettaglio, una soluzione creata in questo modo non sarà utilizzabile. 
+:::danger Pažnja 
+Ispravno unesen način plaćanja zahtijeva popunjavanje i gornje mreže i mreže s detaljima koja definira izračun dana dospijeća. Iako program omogućuje spremanje bez unosa u mrežu s detaljima, takvo rješenje neće biti moguće koristiti u praksi. 
 :::
 
-### Griglia superiore
+### Gornja mreža
 
-**Soluzione / Descrizione**: Rappresenta il codice e descrizione della dilazione di pagamento da applicare
+**Rješenje / Opis**: Predstavlja šifru i opis načina plaćanja koji će se primijeniti.
 
-**Fine mese**: il flag attivo porta la dilazione di pagamento a fine mese dopo aver applicato il numero di giorni definiti nella griglia di dettaglio in basso
+**Kraj mjeseca**: Ako je flag aktivan, odgoda plaćanja se računa do kraja mjeseca nakon primjene broja dana definiranih u donjoj mreži s detaljima.
 
-**Fine settimana**: il flag attivo porta la dilazione di pagamento al venerdì seguente alla data ottenuta dopo aver applicato il numero di giorni definiti nella griglia di dettaglio in basso
+**Kraj tjedna**: Ako je flag aktivan, dospijeće se pomiče na prvi sljedeći petak nakon datuma dobivenog primjenom dana iz donje mreže.
 
-**Giorni**: numero di giorni da aggiungere al fine mese per ottenere il giorno fisso di scadenza (il corretto settaggio prevde quindi di definire in basso il numero di giorni di dilazione, anche zero se del caso, poi viene letto il flag fine mese e infine aggiunti i giorni ulteriori oltre il fine mese. Per normalizzare il calcolo si consiglia di abbinare anche il flag per il calendario commerciale che rende tutti i mesi di 30 giorni)
+**Dani**: Broj dana koji se dodaje na kraj mjeseca za dobivanje fiksnog dana dospijeća. Ispravno postavljanje uključuje definiranje broja dana odgode u donjoj mreži (može biti i nula), zatim se primjenjuje flag "kraj mjeseca" te se dodatno dodaju eventualni dani iz ovog polja. Za normalizaciju izračuna preporučuje se uključiti i flag za komercijalni kalendar, kojim se svi mjeseci tretiraju kao da imaju 30 dana.
 
-**DL Art 62**: flag che identifica le due rate dei 30 e 60 giorni che saranno da utilizzare per il calcolo delle scadenze di pagamento in fatture contenenti merci deperibili secondo l’art.62 del Decreto Legge 24 gennaio 2012 n.1.
+**DL Članak 62**: koji označava dvije rate na 30 i 60 dana, koje se primjenjuju na račune s pokvarljivom robom, sukladno članku 62 Zakonske uredbe od 24. siječnja 2012. br. 1.
 
-[**Vedere anagrafiche clienti fornitori**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)
+[**Vidi šifrarnik kupaca i dobavljača**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)
 
-**Nazione**: filtro per rendere visibile quella soluzione pagamento solo alle società del database che hanno la nazionalità specificata (utile in quanto la tabella essendo di base è visibile a tutte le società della stessa base dati).
+**Država**: Filtriranje koje omogućuje da je određeni način plaćanja vidljiv samo tvrtkama u bazi podataka koje imaju navedenu državu kao matičnu. Ovo je korisno jer je tablica zajednička svim tvrtkama u istoj bazi.
 
 
-### Griglia inferiore
+### Donja mreža
 
-A livello di rateizzazione, è possibile ripartire in percentuale sulle varie rate l’imponibile, l’iva e le spese del documento (la % spese non è applicabile direttamente nelle registrazioni di contabilità generale). Nel caso in cui la percentuale venga lasciata a zero, ***Fluentis*** ripartirà in modo uniforme sul numero di rate presenti
+Kod definiranja obročne otplate moguće je raspodijeliti osnovicu, PDV i troškove dokumenta po različitim ratama u postotcima (napomena: postotak troškova se ne primjenjuje izravno u knjiženjima u glavnoj knjizi). Ako postotak ostane nula, ***Fluentis*** će ravnomjerno raspodijeliti iznos na broj rata.
 
-**Commerciale**: con questa opzione possiamo inserire solo multipli di 30 giorni nel campo relativo, che saranno gestiti come singolo mese
+**Komercijalno**: Ova opcija omogućuje unos samo višekratnika od 30 dana, koji se zatim tretiraju kao puni mjeseci.
 
-caso tipico è una scadenza a 30gg fine mese, quando la data fattura è il 31/01: se applichiamo 30 giorni di calendario (quindi senza il flag ‘commerciale’), andremo ad ottenere una scadenza al 02/03 e quindi il fine mese porterà la scadenza al 31/03, cioè sostanzialmente 60gg dopo e non 30 come inteso dal nome. Se invece è presente il flag commerciale, i 30 giorni saranno in realtà gestiti come 1 mese in più + fine mese, quindi dal 31/01 si andrà correttamente al 28 o 29 febbraio come da calendario.
+Primjer: Ako imamo dospijeće „30 dana kraj mjeseca“ i račun je izdan 31.01., tada bez flag-a „komercijalno“ 30 kalendarskih dana vodi do 02.03., a kraj mjeseca daje 31.03. — dakle zapravo 60 dana. Ako je flag komercijalno aktivan, tada se 30 dana tretira kao jedan mjesec, pa dospijeće ispravno pada na 28. ili 29. veljače.
 
-### Lingue
+### Jezici
 
-Per ogni tipo di pagamento selezionato nella griglia superiore, è possibile definire delle descrizioni in lingua: utilizzabile per stampe personalizzate.
+Za svaki odabrani način plaćanja u gornjoj mreži moguće je definirati opise na drugim jezicima, što je korisno za potrebe prilagođenog ispisa.

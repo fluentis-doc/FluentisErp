@@ -1,40 +1,40 @@
 ---
-title: Tipi documenti
+title: Vrste dokumenata
 sidebar_position: 5
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako želiš ručno konfigurirati, pogledaj kontrolnu listu na poveznici.  
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Tipi documenti** e accoglie le possibili tipologie di documento che saranno memorizzate nel database e gestite dal Documentale Fluentis.
+Tablica se otvara putem izbornika **Tablice > Opće postavke > Vrste dokumenata** i prikazuje moguće vrste dokumenata koje će biti pohranjene u bazu podataka i upravljane u sustavu Upravljanje dokumentima Fluentis.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postaviš željene filtere, klikni na tipku **Traži** da vidiš rezultate u prikazu tablice.
 
-:::note Nota
-Generalmente la tabella viene precompilata dalle procedure di installazione e creazione dei parametri di default del programma, pertanto la sua gestione è limitata alla possibile creazione di tipologie particolari al fine di associare dei documenti da archiviare.
+:::note Napomena
+Obično je tablica unaprijed popunjena tijekom instalacije i postavljanja zadane konfiguracije programa, stoga je upravljanje ograničeno na stvaranje posebnih vrsta dokumenata radi povezivanja dokumenata za arhiviranje. 
 
-Tuttavia, in caso di anomalie o restituzione di messaggi di errore nella fase di esportazione di documenti (prevalentemente gestiti dal componente Bizlink) potrebbe essere necessario verificare la presenza della corretta tipologia di documento che viene richiamata dagli algoritmi di esportazione.
+Međutim, u slučaju grešaka ili poruka o pogreškama tijekom izvoza dokumenata (uglavnom u komponenti Bizlink), možda će biti potrebno provjeriti postoji li odgovarajuća vrsta dokumenta koju pozivaju izvozni algoritmi.  
 :::
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se moglo prikazati, izmijeniti ili izbrisati.
 
-Per inserire un nuovo tipo documento premere il tasto **Nuovo** nella ribbon bar.
+Za unos nove vrste dokumenta klikni na tipku **Novo** u traci izbornika.
 
 ![](/img/it-it/configurations/tables/general-settings/document-types/image02.png)
 
-#### Campi specifici
+#### Specifična polja
 
-**Dimensione massima (MByte)**: Definisce la dimensione massima del documento archiviabile (solitamente impostato a 10)
+**Maksimalna veličina (MByte)**: Definira maksimalnu veličinu dokumenta koji se može arhivirati (obično je postavljeno na 10).  
 
-**Compressione**: abilita il salvataggio di un file compresso (es. .zip)
+**Komprimiranje**: omogućuje spremanje komprimiranih datoteka (npr. .zip).  
 
-**Modalità**: permette di settare il salvataggio nel database, in una cartella esterna, o in entrambe le posizioni. (Attualmente non è attiva la possibilità di salvare esternamente)
+**Modalitet**: omogućuje postavljanje spremanja u bazu podataka, u vanjsku mapu ili na oba mjesta. (Trenutno nije omogućeno spremanje izvan baze).  
 
-**Usa impostazioni di sicurezza**: attiva la gestione dei diritti (lettura , scrittura...) sul documento, da gestire nella sezione che compare sotto
+**Koristi sigurnosne postavke**: aktivira upravljanje pravima (čitanje, pisanje i dr.) za dokument, što se uređuje u sekciji koja se nalazi ispod.  
 
 ![](/img/it-it/configurations/tables/general-settings/document-types/image03.png)
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledaj sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

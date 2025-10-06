@@ -1,54 +1,54 @@
 ---
-title: Unità di misura
+title: Jedinice mjere 
 sidebar_position: 9
 ---
 
 
-Percorso form: **Tabelle > Impostazioni generali > Unità di misura**
+Putanja forme: **Tablice > Opće postavke > Jedinice mjere**
 
-La tabella consente la definizione delle varie unità di misure presenti a sistema e dei relativi attributi di dettaglio.
+Ova tablica omogućuje definiranje različitih jedinica mjere prisutnih u sustavu, kao i njihovih detaljnih atributa.  
  
-### Unità di misura
+### Jedinice mjere
 
-dove codificare la nuova unità di misura e attribuire le caratteristiche principali
+Ovdje se kodira nova jedinica mjere i dodjeljuju joj se osnovne karakteristike.  
 
-#### Campi specifici
+#### Specifična polja  
 
-**U.M. / Descrizione:** Codice e descrizione dell'unità di misura per poterla richiamare
+**J.M. / Opis:** Šifra i opis jedinice mjere kako bi se mogla pozivati unutar sustava.
 
-**Rappresent. Kg:** identifica qual' è il codice che rappresenta il KG per il peso (sarà normalmente attivo sull'UM denominata Kg / Kilogrammi)
+**Predstavlja Kg:** označava koja šifra predstavlja kilogram kao mjernu jedinicu mase (najčešće se odnosi na jedinicu označenu kao „Kg / Kilogrami“).
 
-**UM decimali:** permette di inserire il numero dei decimali dopo la virgola per rappresentare l'unità di misura corrispondente. Ad esempio inserendo 2 accanto all'UM Kilowatt si otterranno dei valori all'interno dei documenti del tipo X,00. Inserendo il valore 3 si otterrà X,000
+**Decimalna mjesta:** omogućuje definiranje broja decimalnih mjesta nakon zareza za prikaz vrijednosti. Na primjer, unosom broja 2 za jedinicu „Kilovat“ vrijednosti će biti prikazane kao X,00; unosom broja 3 kao X,000.
 
-**UM suppl. intrastat:** Unità supplementare (colonna 8 cessioni; colonna 9 acquisti): l'unità supplementare è un'unità di misura diversa dai kg previsti nella massa netta e va indicata obbligatoriamente per alcune merci laddove lo preveda la tariffa doganale. Se impostata in corrispondenza dell' UM KG sarà proposta e utilizzata nelle procedure di creazione Intrastat
+**Dodatna jedinica za Intrastat:** dodatna jedinica mjere (stupac 8 – isporuke; stupac 9 – nabave): koristi se kada carinska tarifa propisuje jedinicu mjere drugačiju od kilograma kao neto mase. Ako je postavljena za J.M. „kg“, automatski će se koristiti u Intrastat izvještavanju.
 
-**UM pesi:** contrassegna l'unità di misura come peso (da apporre sulle UM relative)
+**Jedinica mase:** označava jedinicu mjere kao mjeru mase (primjenjuje se na odgovarajuće jedinice).  
 
-**UM volume:** contrassegna l'unità di misura come volume (da apporre sulle UM relative)
+**Jedinica volumena:** označava jedinicu mjere kao mjeru volumena. 
 
-**UM dimensioni:** contrassegna l'unità di misura come dimensione (da apporre sulle UM relative)
+**Jedinica dimenzije:** označava jedinicu mjere kao mjeru dimenzije.  
 
-**Riferimento:** contrassegna l'unita di misura di default proposta in automatico
+**Zadana jedinica:** označava jedinicu mjere koja će se automatski predlagati kao zadana.  
 
-**UM Tempo:** contrassegna l'unità di misura come tempo (da apporre sulle UM relative)
+**Jedinica vremena:** označava jedinicu mjere kao mjeru vremena.  
 
-**Minuti:** contrassegna l'unità di misura come tempo in minuti (da apporre sulle UM relative)
+**Minute:** označava jedinicu mjere kao mjernu jedinicu izraženu u minutama.  
 
 :::important IMPORTANTE
-**Tipo di valutazione del tempo:** campo utilizzato nel modulo controlling per definire se l'UM si di tipo Flusso o Stato.
-Es. ore macchina è flusso, mentre i metri quadri di uno stabile sono tipicamente di stato perché valido ogni mese.
+**Vrsta vrednovanja vremena:** polje koje se koristi u controlling modulu za definiranje je li jedinica mjere tipa „tok“ ili „stanje“.  
+Primjer: „strojni sati“ predstavljaju tok (jer se troše), dok su kvadratni metri zgrade tipično stanje (jer vrijede kontinuirano iz mjeseca u mjesec).
 :::
 
-### Conversioni tra unità di misura
+### Konverzije između jedinica mjere  
 
-dove gestire i fattori di conversioni tra diverse unità di misura al fine di gestire nei documenti la doppia unità di misura
+Ovdje se upravlja konverzijskim faktorima između različitih jedinica mjere radi podrške korištenju dvostrukih jedinica mjere u dokumentima.  
 
-**UM alternativa:** inserire l'UM nella quale dovrà essere convertita l'unità di misura principale selezionata
+**Alternativna J.M:** unosi se jedinica u koju se konvertira primarna jedinica mjere.  
 
-**Fatt. Conv.:** inserire il fattore di conversione, ad es. 0,5 (valore per il quale sarà divisa o moltiplicata l'unità principale)
+**Faktor konverzije:** unosi se faktor kojim se množi ili dijeli (npr. 0,5).  
 
-**Da moltiplicare:** se non attivo divide per ..., se attivo moltiplica per il fatt. conv.
+**Za umnožiti:** ako flag nije aktivan, vrijednost se dijeli; ako je flag aktivan, vrijednost se množi s definiranim faktorom.
 
-### Tipo valutazione tariffa 
+### Vrsta vrednovanja tarife
 
-Gestione non attiva
+Trenutno nije u upotrebi.
