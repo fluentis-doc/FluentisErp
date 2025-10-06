@@ -17,7 +17,7 @@ Il primo controllo da effettuare è cliccare *Verifica connessione* nella ribbon
 ![image](/img/it-it/finance-area/e-invoice/bizlink/checkConnections.png)
 
 :::danger ATTENZIONE
-Nel caso in cui riceviate un errore di contesto durante la verifica connessione, o comunque un messaggio diverso da quello dell'immagine sopra, significa che al momento dell'attivazione del servizio sono stati comunicati un nome server MSSQL e/o un nome database errati. Sarà necessario contattare il commerciale di riferimento oppure l'assistenza per fornire i dati corretti come riportato qui sotto.
+Nel caso in cui riceviate un errore di contesto durante la verifica connessione, o comunque un messaggio diverso da quello dell'immagine sopra, significa che al momento dell'attivazione del servizio sono stati comunicati un nome server MSSQL e/o un nome database errati. Sarà necessario contattare il commerciale di riferimento per fornire i dati corretti come riportato qui sotto.
 :::
 
 Per poter riportare il nome del server MSSQL e il nome del database corretti, eseguire la seguente query sul database di Fluentis sul quale si vuole attivare il servizio di fatturazione elettronica e comunicare il risultato tramite screenshot e testo in modo da poterlo copiare, al commerciale con il quale avete sottoscritto il contratto di FBH.    
