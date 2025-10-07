@@ -7,18 +7,18 @@ Tablica omogućuje upravljanje šifriranjem različitih vrsta *Vrsta plana utova
 
 Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se moglo prikazati, izmijeniti ili izbrisati.
 
-**Ricerca Tipo Piano di Carico**
+**Pretraživanje tipa plana utovara**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraživanje** kako bi se rezultati prikazali unutar mreže rezultata.
 
-**Inserimento Tipo Piano di Carico**
+**Unos tipa plana utovara**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
 
-#### Campi specifici
+#### Specifična polja
 
-> **Codice**: indica il codice del Tipo Piano di Carico;           
-> **Descrizione**: indica la descrizione del Tipo Piano di carico;   
-> **Predefinito**: indica il Piano di carico di default da creare;       
-> **Numerazione**: indica la [Numerazione](/docs/configurations/tables/fluentis-numerations);       
-> **Automezzo**: indica l'[Automezzo](/docs/logistics/motorvehicles/motorvehicle) configurato per questa tipologia di piano di carico.
+> **Šifra**: označava šifru tipa plana utovara;           
+> **Opis**: označava opis tipa plana utovara;   
+> **Zadano**: označava zadani (default) plan utovara koji će se automatski kreirati;       
+> **Numeracija**: odnosi se na [Numeraciju](/docs/configurations/tables/fluentis-numerations);       
+> **Vozilo**: označava [Vozilo](/docs/logistics/motorvehicles/motorvehicle) koje je konfigurirano za ovu vrstu plana utovara.  
