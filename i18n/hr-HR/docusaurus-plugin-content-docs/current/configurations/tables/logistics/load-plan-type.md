@@ -1,11 +1,11 @@
 ---
-title: Tipo Piano di Carico
+title: Vrsta plana utovara 
 sidebar_position: 56
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo Piano di Carico*.
+Tablica omogućuje upravljanje šifriranjem različitih vrsta *Vrsta plana utovara *.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se moglo prikazati, izmijeniti ili izbrisati.
 
 **Ricerca Tipo Piano di Carico**
 

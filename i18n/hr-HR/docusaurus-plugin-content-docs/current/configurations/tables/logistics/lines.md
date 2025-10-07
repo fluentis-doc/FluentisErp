@@ -1,18 +1,18 @@
 ---
-title: Linee
+title: Linije
 sidebar_position: 42
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Linee*.
+Tablica omogućuje upravljanje šifriranjem različitih vrsta *Linija*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Linee**
+**Pretraživanje linija**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraživanje** da biste prikazali rezultate unutar mreže rezultata.
 
-**Inserimento Linee**
+**Unos linija**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Da biste unijeli nove kodifikacije, potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novi**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opće funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
