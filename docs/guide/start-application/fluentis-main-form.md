@@ -5,19 +5,16 @@ sidebar_position: 2
 
 La form principale di **Fluentis** è composta da più zone con funzionalità diverse:
 
-## Sezione superiore 
+## Ribbon Bar 
 
-La toolbar contiene i combo-box per selezionare la **Società** e/o la **Divisione** che vengono utilizzate per l'inserimento dei dati e l'editore per facilitare la ricerca delle form all'interno dell'applicazione
+La barra multifunzione contiene i menu principali, Home, con alcune impostazioni di base, ed i menu specifici per le varie aree funzionali.
 
-Subito sotto ci sono diversi tab:
 
-### Primo tab
-
-Contiene Informazioni sulle **Versioni**, permette di **Stampare**, contiene informazioni dettagliate sulla **Licenza**, permette di **Chiudere** il programma.
 
 ### Tab Home
 
 Il tab contiene:
+- i combo-box per selezionare la **Società** e/o la **Divisione** che vengono utilizzate per l'inserimento dei dati
 
 - il combo-box per selezionare la **Lingua** desiderata,
     
@@ -43,25 +40,44 @@ Per informazioni dettagliate sulla form in uso, l'utente può consultare la docu
 
 ## Panello sinistro
 
-Contiene la [Form Navigator](/docs/form-navigator/data-grid-settings) con informazioni sulla form attiva.
+Contiene la [Form Navigator](/docs/form-navigator/data-grid-settings) con informazioni sulla form attiva e possibilità di gestione degli elementi della form stessa.
 
 ## Panello destro
 
 Contiene:
 
-**[Strumenti](/docs/applications/applications-intro)** contiene diverse applicazioni complementari: ARM, Audit Trail, BizLink, Business Intelligence, CRM, Gestione Documentale, Applicazioni non supportate.
+**[Strumenti](/docs/applications/applications-intro)** contiene diverse applicazioni complementari: 
+
+- Application Resource Manager: una selezione ridotta di comandi utili presenti anche nell'applicazione omonima per la gestione "backend" del sistema.
+- Audit Trail: un componente che permette la tracciabilità delle operazioni degli utenti 
+- BizLink: il componente trasversale che gestisce tutte le comunicazioni input ed output (esportazione e importazione dati) 
+- Gestione Documentale: il componente trasversale che gestisce l'archiviazione documentale contestuale alle varie form, oppure l'archiviazione automatica dei file esportati dall'ERP (quali ad esempio le fatture elettroniche, i tracciati telematici dei documenti fiscali e bancari ecc.) 
+- Supervisor: il componente che permette di automatizzare controlli eseguiti direttamente sulla    base dati
+- Applicazioni non supportate: presenti per retro-compatibilità e/o funzionalità obsolete
 
 **[Object Navigator](/docs/object-navigator/object-navigator-intro)** contiene informazioni sull'oggetto attivo, utile a personalizzare le form con l'aggiunta di ulteriori dati o informazioni.
 
 **[Context Panel](/docs/panels/context-panel)** in base alle impostazioni, Fluentis permette di visualizzare informazioni contestuali al campo selezionato (esempio: se selezionate l'articolo l'applicazione mostra la sua disponibilità).
 
-**[Configurazioni](/docs/configurations/configuration)** contiene informazioni che consentiranno la definizione della gestione dei moduli.
+**[Configurazione](/docs/configurations/configuration)** contiene informazioni che consentiranno la definizione della gestione dei moduli.
 
-**Fluentis Chat** permette di interagire con gli utenti abilitati a tale servizio di comunicazione, sia interno nel contesto aziendale, sia esterno per accedere al supporto di Fluentis. La chat è uno strumento molto utile per condividere informazioni rapidamente con un altro l'operatore, condividere documenti digitali o addirittura documenti attivi del gestionale. 
 
-## Sezione inferiore
+## Barra di stato
 
-Nella parte inferiore dell'applicazione, la barra di stato contiene una serie di informazioni che spieghiamo di seguito:
+Nella parte inferiore dell'applicazione è presente una barra di stato che contiene informazioni sulla connessione al database e sono, in ordine visualizzata: *Utente*, *Server\Database*, *Società*, (*Divisione*).
+
+## Barra Multifunzione
+
+**Settings**: Permette di accedere ad una serie di funzionalità di sistema:
+
+- Solutions: che fornisce informazioni sui pacchetti software disponibili
+- Informazioni: che visualizza un popup contenente la versione correntemente in uso
+- Stampa, che permette la gestione stampanti
+- Licenza: che contiene infomazioni sulla licenza e sui pacchetti software disponibili in base alla propri licenza
+- Startup Forms: una utility che permette di configurare quali form eseguire automaticamente all'apertura dell'applicazione
+- Impostazioni: parametri per la scelta del layout grafico dell'applicazione (si tratta di layout alternativi rispetto a quello standard) oltre alla scelta di visualizzare o meno la barra di stato e la memorizzazione dei dati di login.
+- Chiudi: termina l'applicazione
+ 
 
 **Attività**: permette un rapido collegamento con la gestione delle attività pending (derivanti dalle procedure di WorkFlow configurate);
 
@@ -91,6 +107,5 @@ Vedi anche [Pianificazione a calendario delle risorse](/docs/project-management/
 
 **Trova**: permette di visualizzare tutti i comandi dell'applicazione. Usato insieme al campo di ricerca che si trova in alto, nel menu principale, possiamo trovare un comando specifico oppure dei comandi raggruppati;
 
-**...**: permette all'utente di accedere, con clic destra, alla finestra **Navigation Options** per selezionare il numero massimo degli elementi da visualizzare (freccette su/giù per aumentare/diminuire) e per stabilire l'ordine in quale questi devono essere esposti (freccette su/giù per cambiare l'ordine). Usare il pulsante 'OK' per confermare le scelte e il pulsante 'Reset' per tornare alla situazione standard;
 
-**Database**: le informazioni esposte fanno riferimento alla connessione alla database e sono, in ordine visualizzata: *Utente*, *Server\Database*, *Società*, (*Divisione*).
+
