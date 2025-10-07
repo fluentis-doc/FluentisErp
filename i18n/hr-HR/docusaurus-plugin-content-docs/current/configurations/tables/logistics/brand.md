@@ -1,19 +1,19 @@
 ---
-title: Marchi
+title: Marka
 sidebar_position: 44
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Marchi** e permette di gestire la codifica dei diversi *Marchi*.
+Tablica se nalazi na putanji **Tablice > Logistika > Marka** i služi za upravljanje kodiranjem različitih *Marki*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
 
-**Ricerca Marchi**
+**Pretraživanje marki**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
 
-**Inserimento Marchi**
+**Unos marke**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione** ed eventualmente si possono aggiungere delle **Note**.
+Za unos novih kodova potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.  
+Za novi zapis potrebno je unijeti obavezna polja koja program zahtijeva: **Šifra** i **Opis** a po želji se mogu dodati i **Napomene**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu vezano uz zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu:[Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).

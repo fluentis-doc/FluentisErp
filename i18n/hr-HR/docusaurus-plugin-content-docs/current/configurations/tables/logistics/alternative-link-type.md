@@ -1,5 +1,5 @@
 ---
-title: Tipo  legame alternativi
+title: Vrsta alternativne veze  
 sidebar_position: 31
 ---
 

@@ -1,57 +1,57 @@
 ---
-title: Classi articolo
+title: Klase artikala
 sidebar_position: 12
 ---
 
 :::important A cosa serve
-La Classe Articolo in Fluentis è un elemento cruciale per la gestione efficiente degli articoli. Essa consente di raggruppare articoli omogenei, facilitandone la rintracciabilità e permettendo analisi dettagliate.        
-Ogni articolo viene identificato in modo univoco grazie alla combinazione tra la Classe, un dato precodificato, e un Codice alfanumerico. In alcuni casi, la classe articolo può essere configurata per generare automaticamente sia il codice che la descrizione degli articoli appartenenti a quella classe, agevolando così i processi di codifica.           
-Inoltre, è possibile gestire le classi articolo, personalizzandole in base alle esigenze operative. Questo approccio garantisce una maggiore efficienza nella classificazione e nella gestione dei prodotti.     
+Klasa artikla u sustavu Fluentis predstavlja ključni element za učinkovito upravljanje artiklima. Omogućuje grupiranje sličnih artikala, čime se olakšava njihovo pronalaženje i omogućuje detaljna analiza.
+Svaki artikl se jednoznačno identificira kombinacijom klase, unaprijed definiranog podatka, i alfanumeričkog koda. U nekim slučajevima, klasa artikla može biti konfigurirana tako da automatski generira i kod i opis artikala koji joj pripadaju, čime se pojednostavljuje proces kodiranja.
+Također je moguće prilagoditi klase artikala prema operativnim potrebama, što osigurava veću učinkovitost u klasifikaciji i upravljanju proizvodima.    
 :::
 
-La tabella si trova sul percorso **Tabelle > Logistica > Classi articolo**.  
+Tablica se nalazi na putu **Tablice > Logistika > Klase artikala**.  
 
-La tabella permette di gestire la codifica delle diverse classi articolo per poter effettuare il raggruppamento degli articoli.
+Ova tablica omogućuje upravljanje kodiranjem različitih klasa artikala kako bi se omogućilo grupiranje artikala.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
 
-**Ricerca Classi articolo**
+**Pretraživanje klasa artikala**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u rešetki s rezultatima.  
 
-**Inserimento Classi articolo**
+**Pretraživanje klasa artikala**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti na tipku **Novo**.
 
-#### Campi specifici 
+#### Specifična polja
 
-> **Codice**: indica il codice della classe articoli;  
-> **Descrizione**: indica la descrizione della classe articoli;  
-> **Cambiamento classe**: se attivo, permette di modificare la classe articolo di un articolo anche se già movimentato;  
-> **Famiglia Prodotti**: indica il codice della famiglia prodotti che include la classe articolo;  
-> **Descrizione Famiglia Prodotti**: indica la descrizione della famiglia prodotti che include la classe articolo.  
+> **Šifra**: označava kod klase artikala;    
+> **Opis**: opis klase artikala;  
+> **Promjena klase**: ako je aktivirano, omogućuje promjenu klase artikla čak i ako je već korišten u prometu;    
+> **Grupa proizvoda**: označava šifru obitelji proizvoda kojoj pripada klasa artikala;  
+> **Opis grupe proizvoda**: opis obitelji proizvoda kojoj pripada klasa artikala.  
 
-*Nella parte destra della form invece, sono presenti tre ulteriori tab:*
+*Na desnoj strani forme nalaze se tri dodatne kartice:*
 
-- **Codificatore articolo**: permette di guidare l’operatore nella codifica di un nuovo articolo per quella classe articolo; sarà possibile definire delle regole di codifica utilizzando i seguenti campi:   
-> **Ordinamento**: indica l’ordinamento del singolo componente della codifica;   
-> **Tipo**: indica il tipo di dato da utilizzare nella codifica;   
-> **ExtraData**: indica il codice di extra data utilizzato nella codifica;   
-> **Utilizza in codice**: se attivo, questo elemento sarà impiegato nel codice articolo;  
-> **Utilizza in descrizione**: se attivo, questo elemento sarà impiegato nella descrizione dell’articolo;  
-> **Proprietà codice**: indica la proprietà dell'oggetto business;   
-> **Descrizione proprietà**: indica la descrizione della proprietà di oggetto business;  
-> **Lunghezza**: indica la lunghezza del componente del codice;   
-> **Separatore**: indica il carattere da usare come separatore;   
-> **Char Riempimento Progressivo**: indica il carattere da utilizzare come riempimento del progressivo;   
-> **Valore iniziale progressivo**: indica il valore iniziale del progressivo della codifica;   
-> **Valore Fisso**: Indica il valore fisso da inserire nella codifica;   
-> **Propagazione**: indica che è attiva la propagazione del dato;   
-> **Obbligatorio**: indica che il dato è obbligatorio.   
+- **Kodifikator artikla**: omogućuje operateru vođeni unos kodiranja novog artikla unutar te klase artikla. Moguće je definirati pravila kodiranja koristeći sljedeća polja:     
+> **Redoslijed**: određuje redoslijed pojedinog elementa kodiranja;   
+> **Tip**: definira vrstu podatka koji će se koristiti u kodiranju;   
+> **ExtraData**: označava šifru dodatnog podatka korištenog u kodiranju;   
+> **Koristi u kodu**: ako je aktivirano, element se koristi u kodu artikla;  
+> **Upotrijebite u opisu**: ako je aktivirano, element se koristi u opisu artikla;  
+> **Kod objekta**: označava svojstvo poslovnog objekta.;     
+> **Opis svojstva**: opisuje svojstvo poslovnog objekta;    
+> **Dužina**: određuje duljinu komponente koda;     
+> **Separator**: znak koji se koristi kao separator;   
+> **Znak za popunjavanje brojača**: znak koji se koristi za popunjavanje brojača kod generiranja šifre.;   
+> **Progresivni vrijednost početak**: početna vrijednost za numerički dio koda;     
+> **Fiksna vrijednost**: unaprijed definirana vrijednost koja se koristi u kodu;   
+> **Propagacija**: označava da je omogućeno automatsko prenošenje podatka;     
+> **Obavezno**: označava da je unos ovog podatka obavezan.     
 
-- **Extra Data**: permette di gestire gli extra data legati a quella classe articolo;
-*Per quanto riguarda le funzionalità presenti negli Extradata si rimanda all'articolo Extradata.*
+- **Extra Data**: omogućuje upravljanje dodatnim podacima vezanim uz tu klasu artikla;
+*Za više informacija o funkcionalnostima dodatnih podataka, pogledajte članak Extra Data*
 
-- **Descrizione in lingua**: permette di inserire la traduzione della descrizione della classe articolo in una nuova lingua.
+- **Jezik opisa**: Omogućuje unos prijevoda opisa klase artikla na druge jezike.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije posebno navedeno u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).

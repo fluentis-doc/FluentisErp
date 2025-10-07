@@ -1,21 +1,21 @@
 ---
-title: Tipo articolo
+title: Vrsta artikla
 sidebar_position: 24
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipo articolo**.
+Tablica se nalazi na putanji: **Tablice > Logistika > Tip artikla**.
 
-In questa tabella è possibile gestire la codifica dei diversi *Tipi articolo* da associare ai singoli articoli nel tabulatore [Generealità](/docs/erp-home/registers/items/create-new-item).    
+U ovoj tablici moguće je upravljati šifriranjem različitih *Tipova artikla* da associare ai singoli articoli nel tabulatore [Generealità](/docs/erp-home/registers/items/create-new-item).    
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Tipo articolo**
+**Pretraživanje tipa artikla**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraživanje** da biste prikazali rezultate unutar mreže rezultata.
 
-**Inserimento Tipo articolo**
+**Unos tipa artikla**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record è sufficiente inserire la **Descrizione**, a cui eventualmente associare una **Descrizione in lingua**, ovvero la traduzione del *Tipo articolo* in un'altra lingua.   
+Za unos nove šifre potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.    
+Za novi zapis dovoljno je unijeti **Opis**, uz mogućnost dodavanja **Prijevoda opisa**, na drugi jezik putem polja *Opis na jeziku*.    
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opće funkcionalnosti formi, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).

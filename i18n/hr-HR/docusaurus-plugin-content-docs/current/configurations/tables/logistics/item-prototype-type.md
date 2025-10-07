@@ -1,18 +1,18 @@
 ---
-title: Tipo Prototipo Articolo
+title: Vrsta prototipa artikla
 sidebar_position: 50
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo Prototipo Articolo*.
+Tablica omogućuje upravljanje šifriranjem različitih vrsta *Tipa prototipa artikla*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Tipo Prototipo Articolo**
+**Pretraživanje tipa prototipa artikla**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraživanje** kako bi se rezultati prikazali unutar mreže rezultata.
 
-**Inserimento Tipo Prototipo Articolo**
+**Unos tipa prototipa artikla**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Novo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na opće funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).

@@ -1,24 +1,24 @@
 ---
-title: Caratteristiche articolo
+title: Karakteristike artikala
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Caratteristiche articolo**
+Tablica se nalazi na putu **Tablice > Logistika > Karakteristike artikla**
 
-La tabella di inserimento *Caratteristiche articolo* è necessaria per poter effettuare un raggruppamento degli articoli. Ai fini statistici è fondamentale poter raggruppare gli articoli in modo da poterli ricercare secondo un parametro.
+Tablica za unos *Karakteristike artikla* potrebna je kako bi se omogućilo grupiranje artikala. U statističke svrhe ključno je omogućiti grupiranje artikala kako bi ih se moglo pretraživati prema određenom parametru.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se oni prikazali, izmijenili ili izbrisali.  
 
-**Ricerca Caratteristiche articolo**
+**Pretraživanje karakteristika artikla**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
-**Inserimento Caratteristiche articolo**
+**Unos karakteristika artikla**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** alfanumerico della caratteristica e la sua **Descrizione**. 
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: Alfanumerički **kod** alfanumerico karakteristike i njezin **Opis**. 
 
-Per ciascuna caratteristica è possibile inserire le **Descrizioni in lingua** nella griglia inferiore.
+Za svaku karakteristiku moguće je unijeti **Opise na drugim jezicima** u donjoj tablici.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije posebno navedeno u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i polja zajednička za sve forme](/docs/guide/common).
