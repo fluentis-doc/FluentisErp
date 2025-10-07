@@ -1,19 +1,19 @@
 ---
-title: tipi piano di controllo
+title: Tipos de plan de control
 sidebar_position: 8
 ---
 
-La tabla se encuentra en la ruta **Tablas > Calidad > Controles de artículo > tipi piano di controllo**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Controles de artículo > Tipos de plan de control**.
 
-En esta tabla es posible codificar los *tipi piano di controllo*.  
+En esta tabla es posible codificar los *Tipos de plan de control*.  
 El *Tipo de plan de control* es parte integral, junto con el *Año*, *Número* y *Revisión*, del código único del *Plan de control*.  
-Algunos ejemplos de uso de los *tipi piano di controllo* los encontramos en las gestiones:  
-> **piani di controllo** - en los *datos de cabecera*;  
-> **Parámetros de Controles de artículo (Parametri Controlli articolo)** - en la pestaña *generale*;  
+Algunos ejemplos de uso de los *Tipos de plan de control* los encontramos en las gestiones:  
+> **Planes de control** - en *Información del encabezado*;  
+> **Parámetros de Controles de artículo** - en la pestaña *General*;  
 y en todas las gestiones donde se utiliza el *Plan de control*.  
 
 La tabla contiene valores predeterminados del sistema y no es posible modificarlos ni eliminarlos. Los valores predeterminados son:  
-| Código (Codice) | Descripción (Descrizione) |  
+| Código | Descripción |  
 |:--|:--|  
 | MInt | Interno |  
 | MNNr | No normalizado |  
@@ -22,43 +22,43 @@ La tabla contiene valores predeterminados del sistema y no es posible modificarl
 
 La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos (si son *Eliminables*).
 
-**Búsqueda de tipi piano di controllo**
+**Búsqueda de Tipos de plan de control**
 
-El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, bastará con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario se compone de un área de filtro y de una de resultados. Una vez establecidos todos los filtros deseados, bastará con hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-**Inserción de tipi piano di controllo**
+**Inserción de Tipos de plan de control**
 
-Para poder insertar nuevos *tipi piano di controllo*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
-Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
+Para poder insertar nuevos *Tipos de plan de control*, es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo**.  
+Para el nuevo registro, se deben ingresar al menos los campos obligatorios requeridos por el programa: el **Código** y la **Descripción**.
 
-## tipi piano di controllo (Tipi piano di controllo)
+## Tipos de plan de control 
 
-Es la lista donde se ingresan las principales informaciones de los *tipi piano di controllo*.  
+Es la lista donde se ingresan las principales informaciones de los *Tipos de plan de control*.  
 La lista se compone de la siguiente información:  
-> **codice**: es el código del *Tipo de plan de control*.  
-> **descrizione**: es la descripción del *Tipo de plan de control*.  
-> **numerazione**: es el código de la *Numeración*.  
-> **eliminabile**: indica si el *Tipo de plan de control* es eliminable.  
-> **note**: anotaciones libres.
+> **Código**: es el código del *Tipo de plan de control*.  
+> **Descripción**: es la descripción del *Tipo de plan de control*.  
+> **Numeración**: es el código de la *Numeración*.  
+> **Eliminable**: indica si el *Tipo de plan de control* es eliminable.  
+> **Notas**: anotaciones libres.
 
-### Datos adicionales (Extra data)
+### Datos adicionales 
 
-Es posible insertar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para los *tipi piano di controllo*.  
+Es posible insertar [Datos adicionales](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para los *Tipos de plan de control*.  
 Estos *Datos adicionales* se heredan en los *Planes de control* de esa determinada tipología.  
 
-### Pruebas planificadas (Prove pianificate)
+### Pruebas planificadas 
 
-Es posible insertar [Tipos de prueba (Tipi prova)](/docs/configurations/tables/quality/item-control/test-type) generales para los *tipi piano di controllo*.  
+Es posible insertar [Tipos de prueba](/docs/configurations/tables/quality/item-control/test-type) generales para los *Tipos de plan de control*.  
 Estos *Tipos de prueba* se heredan en los *Planes de control* de esa determinada tipología.  
 
-#### Atributos de Pruebas Planificadas (Attributi Prove Pianificate)
+#### Atributos de Pruebas Planificadas 
 
-Es posible insertar [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para la *Prueba planificada (Prova pianificata)*.  
+Es posible insertar [Datos adicionales](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para la *Prueba planificada*.  
 Estos *Datos adicionales* se heredan en las *Pruebas* de los documentos donde se prevé el uso de los atributos.  
 
-#### Configuración de Pruebas Planificadas (Configurazione Prove Pianificate)
+#### Configuración de Pruebas Planificadas
 
-Contiene los [Datos adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) necesarios para que los operadores preparen todos los instrumentos necesarios para poder comenzar una determinada prueba. Pueden considerarse configuraciones necesarias, información operativa previa a la ejecución de la prueba.  
+Contiene los [Datos adicionales](/docs/configurations/utility/extra-data/extradata/search-extradata) necesarios para que los operadores preparen todos los instrumentos necesarios para poder comenzar una determinada prueba. Pueden considerarse configuraciones necesarias, información operativa previa a la ejecución de la prueba.  
 Estos *Datos adicionales* se heredan en las *Pruebas* de los documentos donde se prevé una configuración.  
 
-Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

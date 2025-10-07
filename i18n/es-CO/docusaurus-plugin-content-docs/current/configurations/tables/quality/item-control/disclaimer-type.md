@@ -1,28 +1,28 @@
 ---
-title: tipi di dichiarazione
+title: Tipos de avisos legales
 sidebar_position: 5
 ---
 
-La tabla se encuentra en la ruta **dichiarazione**.  
+La tabla se encuentra en la ruta **Advertencia**.  
 
 En esta tabla es posible codificar las diferentes tipologías de Declaración de no responsabilidad.  
-Algunos ejemplos de uso de los *tipi di dichiarazione* los encontramos en la gestión de **dichiarazione di non responsabilità**.  
+Algunos ejemplos de uso de los *Tipos de avisos legales* los encontramos en la gestión de **Aviso Legal**.  
 
 La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.  
 
-**Búsqueda de tipi di dichiarazione (Ricerca Tipi di dichiarazione)**
+**Búsqueda de Tipos de avisos legales**
 
-El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.  
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **Buscar** para visualizar los resultados dentro de la cuadrícula de resultados.  
 
-**Inserción de tipi di dichiarazione (Inserimento Tipi di dichiarazione)**
+**Inserción de Tipos de avisos legales**
 
-Para poder insertar nuevos *tipi di dichiarazione* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
-Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.  
+Para poder insertar nuevos *Tipos de avisos legales* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo**.  
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **Código** y la **Descripción**.  
 
-*Campos específicos (Campi specifici)*:  
+*Campos específicos*:  
 
-> **codice tipo**: es el código del *tipo di dichiarazione*.  
-> **descrizione tipo**: es la descripción del *tipo di dichiarazione*.  
-> **note**: anotaciones libres.  
+> **Código de tipo**: es el código del *Tipo de descargo de responsabilidad*.  
+> **Descripción del tipo**: es la descripción del *Tipo de descargo de responsabilidad*.  
+> **Notas**: anotaciones libres.  
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
