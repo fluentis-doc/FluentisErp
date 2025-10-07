@@ -1,5 +1,5 @@
 ---
-title: Tipi UDC
+title: Tipovi utovarnih jedinica
 sidebar_position: 37
 ---
 

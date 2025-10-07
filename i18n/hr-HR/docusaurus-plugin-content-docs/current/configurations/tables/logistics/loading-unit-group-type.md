@@ -1,36 +1,36 @@
 ---
-title: Tipi gruppo UDC
+title: Tipovi grupa utovarnih jedinica
 sidebar_position: 30
 ---
 
-:::important A cosa serve
-La tabella Tipo Gruppo UDC di Fluentis rappresenta un altro elemento chiave per la categorizzazione e l'organizzazione delle Unità Di Carico all'interno della logistica. Questa tabella consente agli utenti di gestire i diversi gruppi di unità di carico, facilitando la loro classificazione e l'assegnazione a specifiche categorie di utilizzo.
+:::important Čemu služi
+Tablica Tip grupe utovarnih jedinica u sustavu Fluentis predstavlja još jedan ključni element za kategorizaciju i organizaciju utovarnih jedinica unutar logistike. Ova tablica korisnicima omogućuje upravljanje različitim grupama utovarnih jedinica, čime se olakšava njihova klasifikacija i dodjeljivanje određenim kategorijama upotrebe.   
 
-La form di gestione offre un'area dedicata alla ricerca con filtri personalizzabili, che aiutano a identificare rapidamente i gruppi UDC di interesse. I campi principali includono un codice alfanumerico per il tipo gruppo, una descrizione e l'identificazione del gruppo stesso, che può riferirsi a numerazioni, commesse di produzione o ordini fornitori. 
+Forma za upravljanje sadrži posebno područje za pretraživanje s prilagodljivim filtrima, koji omogućuju brzo prepoznavanje relevantnih grupa utovarnih jedinica. Glavna polja uključuju alfanumerički kod za tip grupe, opis, te identifikaciju same grupe, koja se može odnositi na numeracije, proizvodne komese ili narudžbe dobavljačima.  
 :::
 
-La tabella si trova sul percorso **Tabelle** > **Logistica** > **Tipi gruppo UDC**.
+Tablica se nalazi na putanji **Tablice > Logistika > Tipovi grupa utovarnih jedinica**.
 
-La tabella di inserimento dei *Tipi gruppo UDC* è una tabella di base per l'utilizzo delle *Unità Di Carico* e viene utilizzata all'interno dei [Tipi UDC](/docs/configurations/tables/logistics/loading-unit-types).   
+Tablica za unos *Tipova grupa utovarnih jedinica* predstavlja osnovnu tablicu za korištenje *Utovarnih jedinica* a koristi se unutar [Tipova utovarnih jedinica](/docs/configurations/tables/logistics/loading-unit-types). 
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Tipi gruppo UDC**
+**Pretraživanje tipova grupa utovarnih jedinica**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filteri postavljeni, dovoljno je kliknuti na gumb **Pretraživanje** da biste prikazali rezultate unutar mreže rezultata.
 
-**Inserimento Tipi gruppo UDC**
+**Unos tipova grupa utovarnih jedinica**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Da bi se mogle unijeti nove kodifikacije, potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novo**..
 
-#### Campi specifici  
-> **Tipo**: codice alfanumerico che indica il *Tipo gruppo UDC*;   
-> **Descrizione**: è la descrizione del *Tipo gruppo UDC*;   
-> **Gruppo**: indica il gruppo che identifica l'UDC. Può essere un *Numero progressivo*, una *Commessa di produzione*, un *Ordine fornitore* oppure un *Ordine di produzione*;   
-> **Descrizione gruppo**: è la descrizione del *Gruppo* che identifica l'UDC.     
+#### Specifična polja  
+> **Tip**: alfanumerički kod koji označava *Tip grupe utovarnih jedinica*;   
+> **Opis**: opis tipa grupe *Utovarnih jedinica*;   
+> **Grupa**: označava grupu koja identificira utovarnu jedinicu. Može biti: *Progresivni broj*, *proizvodna komesa*, *narudžba dobavljaču* ili *proizvodna narudžba*;   
+> **Opis grupe**: opis *Grupe* koja identificira utovarnu jedinicu.    
 
-:::note Nota
-Per far si che sia possibile utilizzare l'unità di carico nelle dichiarazioni di produzione è necessario che il **Gruppo** indicato sia di tipo *Commessa di produzione* oppure *Ordine di produzione*.    
+:::note Napomena  
+Kako bi bilo moguće koristiti utovarnu jedinicu u proizvodnim prijavama, potrebno je da je polje **Grupa** postavljeno na *Proizvodna komesa* ili  *Proizvodna narudžba*.    
 :::
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu, vezano uz rad sa standardnim formama, pogledajte poveznicu [Funkcionalnosti, tipke i uobičajena polja](/docs/guide/common).
