@@ -1,20 +1,20 @@
 ---
-title: Categorie pittogrammi
+title: Kategorije ikona
 sidebar_position: 7
 ---
 
-All'interno di questa tabella vengono codificate tutte le **Categorie pittogrammi** che possono poi essere richiamati all'interno della tabella [Pittogrammi](/docs/configurations/tables/general-settings/pictograms).
+Unutar ove tablice kodiraju se sve **Kategorije ikona** koje se kasnije mogu koristiti u tablici [Piktogrami](/docs/configurations/tables/general-settings/pictograms).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa, kao i pretraživanje postojećih radi prikaza, izmjene ili brisanja.
 
-**Ricerca Categorie pittogrammi**
+**Pretraživanje kategorija piktograma**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u donjoj mreži rezultata.
 
-**Inserimento Categorie pittogrammi**
+**Unos novih kategorija piktograma**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos nove šifre kategorije piktograma, kliknite na prvi prazan redak u mreži ili pritisnite tipku **Novo**. 
 
-Per il nuovo record si deve inserire almeno il campo obbligatorio richiesto dal programma: il **Codice**.
+Za svaki novi zapis potrebno je unijeti barem obavezno polje koje program zahtijeva: **Šifra**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve dodatne informacije koje nisu posebno objašnjene u ovom dokumentu, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).

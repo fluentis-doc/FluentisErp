@@ -22,33 +22,34 @@ Za unos novog zapisa kliknite na prvi prazan redak u gornjoj rešetki ili pritis
 
 **Iznos biljega**: iznos pristojbe (biljega);  
 
-**Percentuale Pagamento**: consente di associare una tipologia (richiamandola dalla tabella Tipi Sconto) e la relativa percentuale di sconto alle righe articolo del documento in relazione alla tipologia di pagamento; Ad esempio è possibile definire uno sconto 5% nel caso venga utilizzato il tipo pagamento Contanti.
+**Postotak popusta pri plaćanju**: Omogućuje povezivanje određene vrste (pozivom iz tablice Vrste popusta) i pripadajućeg postotka popusta s redovima artikala u dokumentu, ovisno o odabranoj vrsti plaćanja.
+Na primjer, moguće je definirati popust od 5% u slučaju kada se koristi vrsta plaćanja "Gotovina".
 
-:::note Nota
-Questo è uno sconto che va ad abbattere l’imponibile di riga, insieme agli altri sconti derivanti da listini e condizioni commerciali in anagrafica.
+:::note Napomena
+Ovaj se popust odnosi na umanjenje osnovice po stavci, zajedno s ostalim popustima koji proizlaze iz cjenika i komercijalnih uvjeta definiranih u matičnim podacima.
 :::
 
-**Tipo sconto finanziario / Valore sconto finanziario:** legati alla scadenza fattura, che non vanno a toccare quindi il totale documento ma vengono applicati all’atto della registrazione d’incasso
+**Vrsta financijskog popusta / Vrijednost financijskog popusta:** Povezani su s datumom dospijeća računa, i ne utječu na ukupni iznos dokumenta, već se primjenjuju prilikom evidentiranja naplate.
 
 
-**Natura effetto**: consente di definire la tipologia di effetto eventualmente connesso o di altro tipo di pagamento. Attualmente il campo ha solo valenza informativa senza particolari automazioni connesse ad eccezione del tipo Ricevuta bancaria che identifica il tipo pagamento adatto alla successiva gestione della creazione effetto.
+**Vrsta računa**: Omogućuje definiranje vrste efekta povezanog s plaćanjem ili nekom drugom vrstom naplate. Trenutačno ovo polje ima samo informativnu svrhu i nema povezane automatizacije, osim u slučaju vrste Bankovna mjenica koja identificira odgovarajuću vrstu plaćanja za kasnije kreiranje efekta.
 
-**Cod. intra serv.** : codice del pagamento da inserire nelle dichiarazioni intrastat
+**Intra kod usluge** : Kod plaćanja koji se koristi u Intrastat izvješćima.
 
-**Codice per fatture elettroniche** : codice identificativo del tipo pagamento per le fatture elettroniche e le fatture alla pubblica amministrazione (esempio. MP01, MP02 ecc... vedere istruzioni ministeriali per la compilazione delle fatture elettroniche)
+**Kod za elektroničke račune** : Identifikacijski kod vrste plaćanja za elektroničke račune i račune prema javnim institucijama (primjeri: MP01, MP02 itd. – pogledati službene upute ministarstva za ispravno popunjavanje elektroničkih računa).
 
-**Nazione**: filtro per rendere visibile quel tipo pagamento solo alle società del database che hanno la nazionalità specificata (utile in quanto la tabella essendo di base è visibile a tutte le società della stessa base dati).
+**Država**: Filtar koji omogućuje da se određena vrsta plaćanja prikaže samo onim tvrtkama unutar baze podataka koje imaju naznačenu nacionalnost. (Ovo je korisno jer je tablica zajednička svim tvrtkama unutar iste baze podataka.)
 
-### Lingue
+### Jezici
 
-Per ogni tipo di pagamento selezionato nella griglia superiore, è possibile definire delle descrizioni in lingua: utilizzabile per stampe personalizzate.
+Za svaku vrstu plaćanja odabranu u gornjoj tablici, moguće je definirati opise na više jezika, što omogućuje korištenje za prilagođene ispise.
 
 ### Tipi effetti
 
-Per ogni tipo di pagamento selezionato nella griglia superiore, è possibile preimpostare il tipo di effetto da creare dalla partita/scadenza nel modulo *Portafoglio effetti*.
+Za svaku vrstu plaćanja odabranu u gornjoj tablici, moguće je unaprijed definirati vrstu efekta koja će se kreirati iz stavke/dospijeća unutar modula *Portfelj efekata*.
 
-:::danger Attenzione
-L'associazione pagamento - effetto serve per fare in modo che nella maschera di creazione effetti vengano visualizzate solo le partite coerenti per la creazione delle effetto. Ad esempio il corretto settaggio potrebbe essere quello di associare al tipo pagamento RiBa la tipologia di effetto Ricevuta Bancaria, e al tipo pagamento Cambiale il tipo effetto Cambiale, in questo modo non verranno visualizzate ad esempio le partite aperte con tipo pagamento Bonifico nella maschera di creazione effetti dalle partite o dalle scadenze evitando di generare dati incoerenti.
+:::danger Upozorenje
+Povezivanje vrste plaćanja s efektom omogućuje da se u sučelju za kreiranje efekata prikazuju samo stavke koje su relevantne za određenu vrstu efekta. Na primjer, ispravna postavka bila bi povezivanje vrste plaćanja RiBa s efektom Bankovna mjenica, a vrste plaćanja Mjenica s efektom Mjenica. Na taj način, stavke s vrstom plaćanja Transakcija neće se prikazivati prilikom kreiranja efekata, čime se izbjegava generiranje nedosljednih podataka.
 :::
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve dodatne informacije koje nisu posebno objašnjene u ovom dokumentu, pogledajte sljedeću poveznicu:[Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).

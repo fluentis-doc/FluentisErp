@@ -1,22 +1,22 @@
 ---
-title: Pittogrammi
+title: Piktogrami
 sidebar_position: 60
 ---
 
-All'interno di questa tabella vengono codificati tutti i *Pittogrammi* che possono poi essere richiamati all'interno del relativo tab dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item).
+U ovoj se tablici kodiraju svi *Piktogrami* koji se zatim mogu koristiti unutar odgovarajuće kartice u [Registar stavki](/docs/erp-home/registers/items/create-new-item).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa, kao i pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Pittogrammi**
+**Pretraživanje piktograma**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
 
 **Inserimento Pittogrammi**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Novo**. 
 
-Per il nuovo record si deve inserire almeno il campo obbligatorio richiesto dal programma: il **Codice**.      
-Per ogni record è possibile inserire: una descrizione, la categoria selezionandola tra quelle codificate all'interno della tabella [Pittogrammi](/docs/configurations/tables/general-settings/pictograms), un'eventuale nota libera e l'immagine stessa del pittogramma. 
+Za svaki novi zapis potrebno je unijeti barem obavezno polje koje sustav zahtijeva: **Šifra**.      
+Za svaki zapis moguće je unijeti: opis, kategoriju odabirom među onima kodiranim unutar tablice [Piktogrami](/docs/configurations/tables/general-settings/pictograms), eventualnu slobodnu napomenu i samu sliku piktograma.
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu vezano uz zajedničko funkcioniranje formi, pogledati sljedeću poveznicu [Funkcionalnosti, tipke i polja zajednička za sve forme](/docs/guide/common).

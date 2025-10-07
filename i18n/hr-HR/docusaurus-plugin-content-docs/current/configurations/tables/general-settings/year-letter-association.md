@@ -1,14 +1,14 @@
 ---
-title: Associazione anno - lettera
+title: Pridruživanje godina - slovo
 sidebar_position: 1
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Impostazioni generali > Associazione mese - lettera** e permette di inserire le codifiche relative ai vari anni che verranno poi usate nelle codifiche lotti.
+Tablica se otvara putem izbornika **Tablice > Opće postavke > Povezivanje mjesec – slovo** i omogućuje unos šifri vezanih uz različite godine koje će se potom koristiti u šifriranju serija (lotova).  
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
 
-Per poter inserire nuovi record è necessario cliccare nella griglia superiore sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan redak u gornjoj mreži ili pritisnuti tipku **Novo**. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu vezano uz zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i polja zajednička za sve forme](/docs/guide/common).

@@ -1,20 +1,20 @@
 ---
-title: Banca d'Appoggio
+title: Banka prezentacije
 sidebar_position: 1
 ---
 
-In questa tabella si inseriscono le banche d'appoggio che possono essere richiamate nelle anagrafiche Clienti e Fornitori (e Anagrafica Banche) per gestire diverse automazioni, quali soprattutto inserimento nelle stampe (es. coordinate bancarie di pagamento in una fattura attiva) e canalizzazione dei flussi finanziari riferiti alle partite aperte ecc.
+U ovu tablicu unose se banke za naplatu koje se mogu pozivati u matičnim podacima Klijenata i Dobavljača (i Matičnim podacima Banaka) radi upravljanja raznim automatizmima, kao što su ponajprije uključivanje u ispis (npr. bankovni podaci za plaćanje na izlaznom računu) i kanalizacija financijskih tokova vezanih uz otvorene stavke itd.   
 
-All'interno di questa tabella è possibile inserire sia la banche della società, sia le banche della controparte (cliente o fornitore). 
+Unutar ove tablice moguće je unijeti i banke društva i banke druge strane (klijenta ili dobavljača).
 
 :::tip
-Si consiglia di utilizzare ad esempio una codifica alfabetica per le banche della società e le banche di clienti e fornitori con una codifica numerica in modo da differenziarle opportunamente.
+Preporučuje se, primjerice, koristiti slovnu šifru za banke društva, a brojčanu šifru za banke klijenata i dobavljača kako bi se one jasno razlikovale.  
 
-Inoltre è possibile inserire sia righe complete di codice IBAN e/o SWIFT (consigliato per le banche della società) sia righe complete di soli codice ABI e CAB (consigliato per le banche di controparte per le quali IBAN e SWIFT possono essere indicati nei campi della griglia presente in anagrafica).
+Također, moguće je unijeti retke s potpunim podacima IBAN i/ili SWIFT (preporučeno za banke društva) ili retke s isključivo ABI i CAB šiframa (preporučeno za banke druge strane za koje se IBAN i SWIFT mogu navesti u poljima unutar mreže u matičnim podacima).  
 :::
 
-Se la riga presente nella tabella Banca d'appoggio è completa di IBAN e/o SWIFT, oltre che di ABI e CAB, richiamando tale riga tramite la combobox i dati saranno riportati nella griglia in anagrafica, diversamente, saranno riportati solo ABI e CAB, ma sarà sempre possibile aggiungere i dati mancanti direttamente nella griglia. 
+Ako je redak u tablici Banka za naplatu potpun s IBAN i/ili SWIFT, uz ABI i CAB, pozivanjem tog retka putem padajuće liste podaci će biti preneseni u mrežu u matičnim podacima. U suprotnom, prenijet će se samo ABI i CAB, no uvijek je moguće naknadno unijeti nedostajuće podatke izravno u mrežu.
 
-Ciò è consigliabile per le banche di controparte al fine di evitare di codificare nella tabella Banca d'appoggio troppe righe utilizzate solo per un unico cliente o fornitore. E' preferibile indicare solo i dati dello sportello bancario (ABI e CAB) presso il quale potrebbero avere il conto corrente diversi clienti o fornitori.
+Ovo se preporučuje za banke druge strane kako bi se izbjeglo kodiranje prevelikog broja redaka u tablici Banka za naplatu koji se koriste samo za jednog klijenta ili dobavljača. Poželjno je navesti samo podatke o bankovnoj poslovnici (ABI i CAB) preko koje više klijenata ili dobavljača može imati tekući račun.
 
-L'inserimento di una banca può essere eseguita anche attraverso un doppio click nei campi abi/cab **di un'anagrafica Cliente o Fornitore** per aprire l'help di ricerca tra le agenzie bancarie nazionali (Help che si appoggia ad una tabella denominata *ABI CAB*), dalle quali selezionare quella del caso. La selezione memorizzerà il dato nella presente tabella e nell'anagrafica, dove è possibile completare subito con i dati di conto corrente, cin, iban, swift.
+Unos banke može se izvršiti i dvostrukim klikom u polja abi/cab **u matičnim podacima Klijenta ili Dobavljača** kako bi se otvorio pomoćni prozor za pretraživanje nacionalnih bankovnih poslovnica (Pomoć se oslanja na tablicu pod nazivom *ABI* *CAB*), iz kojih se može odabrati odgovarajuća. Odabir će spremiti podatke u ovu tablicu i u matične podatke, gdje je moguće odmah dopuniti s podacima tekućeg računa, cin, iban, swift.
