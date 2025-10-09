@@ -5,11 +5,11 @@ sidebar_position: 2
 
 ### Patch 608.1-0079 - 12/09/2025
 
-> - ARM - Fix executing actions for multiple documents (#TT02094/25) 
+> - ARM - Correzione dell’esecuzione delle azioni per documenti multipli (#TT02094/25) 
 > - MES - Ora con la procedura di rilascio degli ordini di produzione vengono movimentati solo gli articoli che hanno come tipo prelievo Automatico nei parametri MRP (#TT03691/25) 
 > - MS - Nel tab sotto scorta della generazione commesse di produzione vengono considerati anche i lotti economici (#TT02835/25, #TT03073/25) 
-> - PR - creazione manuale movimenti ordini clienti/fornitori nel cash flow, ottimizzazione procedura. Quando le righe da inserire sono più di 100, Fluentis segnala che è necessario salvare direttamente il cash flow. Modifications in help subcontractor of cash flow can have an impact on profiles (#TT01803/24) 
-> - PR - DueDate/EstimatedDate properties without minutes/hours ang bug fixed for Subcontractor order, return and Purchase order commands (#TT02672/25) 
+> - PR - Creazione manuale movimenti ordini clienti/fornitori nel cash flow, ottimizzazione procedura. Quando le righe da inserire sono più di 100, Fluentis segnala che è necessario salvare direttamente il cash flow. **Attenzione! Questa modifica può impattare sui profili** (#TT01803/24) 
+> - PR - Proprietà DueDate/EstimatedDate senza minuti/ore e bug corretto per i comandi Ordine Subappalto, Reso e Ordine di Acquisto (#TT02672/25) 
 > - SCM - Corretta la proposta dei prezzi negli Ordini di Conto Lavoro rilasciati dalla Produzione, nei casi in cui il listino preveda prezzi diversi per fase di lavorazione (#TT03418/25) 
 > - SCM - Corretto errore nella generazione della Stampa Scadenziario Ordini fornitori (#TT03881/25) 
 > - SD - Ordini e Offerte di vendita: Introdotta la possibilità di salvare un profilo includendo informazioni relative a Lingua e Nazione nella griglia (#TT02870/25) 
@@ -18,21 +18,21 @@ sidebar_position: 2
 ### Patch 608.1-0078 - 07/08/2025
 
 > - Bizlink - importazione da DocFinance, se la partita da chiudere è legata ad un compenso professionista con partite gestite al netto ora Fluentis aggiunge automaticamente la registrazione che valorizza il debito della ritenuta (#TT03211/25) 
-> - SD - Stampa Fattura e DDT di Vendita: Risolta anteprima di stampa che esce vuota se non è già attivo il flag stampata (rif.ticket 3536/25, 3531/25)  
+> - SD - Stampa Fattura e DDT di Vendita: Risolta anteprima di stampa che esce vuota se non è già attivo il flag stampata (#TT03536/25, #TT03531/25)  
 
 ### Patch 608.1-0077 - 31/07/2025
 
-> - CO - nel modulo Chiusure infrannuali, per la procedura Valorizzazione area acquisti e vendite sono stati rivisti i test effettuati all’esecuzione del rollback (#TT04436/24) 
-> - CO - revisione esecuzione procedura (#TT03054/25) 
-> - FI - revisione calcolo visualizzazione conti per conteggio saldo precedente nella colonna progressivo (#TT03163/25) 
-> - FI - revisione contabilizzazione da acquisti/vendite per assegnazione, in tab intrastat della registrazione, della nazione del codice iso partita iva; modifica dell’inserimento manuale in griglia intrastat (#TT01817/25) 
-> - PR - corretto errore nel calcolo del cashflow relativamente al flusso delle richiesta di acquisto. Rif.  #TT03145/25 
-> - PR - creazione file Sepa, modificata gestione caratteri speciali ‘-‘ (#TT02214/25) 
-> - PR - risolto problema in fase di elaborazione del cashflow a causa della mancanza del codice DocFinance nella tabella Anagrafiche in corrispondenza della società in uso (#TT02965/25)  
+> - CO - Nel modulo Chiusure infrannuali, per la procedura Valorizzazione area acquisti e vendite sono stati rivisti i test effettuati all’esecuzione del rollback (#TT04436/24) 
+> - CO - Revisione esecuzione procedura (#TT03054/25) 
+> - FI - Revisione calcolo visualizzazione conti per conteggio saldo precedente nella colonna progressivo (#TT03163/25) 
+> - FI - Revisione contabilizzazione da acquisti/vendite per assegnazione, in tab intrastat della registrazione, della nazione del codice iso partita iva; modifica dell’inserimento manuale in griglia intrastat (#TT01817/25) 
+> - PR - Corretto errore nel calcolo del cashflow relativamente al flusso delle richiesta di acquisto (#TT03145/25)
+> - PR - Creazione file Sepa, modificata gestione caratteri speciali ‘-‘ (#TT02214/25) 
+> - PR - Risolto problema in fase di elaborazione del cashflow a causa della mancanza del codice DocFinance nella tabella Anagrafiche in corrispondenza della società in uso (#TT02965/25)  
 > - SCM - Corretto errore nella procedura Evasione da Ordini che, a seguito della creazione del DDT, non aggiornava correttamente lo stato di evasione nell’ordine (#TT03117/25) 
 > - SCM - Risolto errore che non calcolava correttamente il valore della percentuale nella stampa Fatturato acquisti (#TT02798/25, #TT05463/24) 
 > - SD - In fase di duplicazione di un documento di vendita con Dichiarazione di intento viene verificata la presenza di una dichiarazione attiva; in assenza, l’aliquota IVA degli articoli viene ripresa dall’anagrafica del cliente o dell’articolo (#TT03382/25) 
-> - SD - Fix SalesOrder widget problem (rif.ticket 1258/21) 
+> - SD - Fix problema SalesOrder widget (#TT01258/21) 
 > - WM - Ottimizzata l’esplosione dei component nei prototipi e corretto bug che non visualizzava correttamente i componenti (#TT03144/25) 
 > - WM - Risolto blocco in fase di cancellazione articolo con ricalcolo costi già eseguito (#TT02818/25) 
 
@@ -52,50 +52,50 @@ sidebar_position: 2
 
 > - SD - Risoluzione errore che lasciava valorizzato il DDT dopo la cancellazione della fattura collegata (#TT02690/25)  
 > - SCS - Negli Ordini di Conto Lavoro è ora possibile associare un Ordine di Produzione alla riga articolo solo se viene specificata anche la fase (#TT01078/25) 
-> - PM - dichiarazione attività progetti - corretto funzionamento del salvataggio extradata in profilo, relativo ad una tabella configurata in produzione (#TT02307/25)
+> - PM - Dichiarazione attività progetti - corretto funzionamento del salvataggio extradata in profilo, relativo ad una tabella configurata in produzione (#TT02307/25)
 
 ### Patch 608.1-0074 - 13/06/2025
 
 > - PM - Interventi - servizi, cambiato parametro nell’algoritmo dell’assegnazione prezzo. Ora è sempre abilitata la ricerca in tutti i listini predefiniti (#TT01320/25) 
 > - SD - La riga spesa Conai, al salvataggio del documento, prende la stessa IVA della riga articolo che l’ha generata (#TT02599/24) 
-> - CO - nelle scritture di integrazione, esclusione righe con giorni totali 0 (#TT02417/25) 
-> - SCM - Nella maschera di Dettaglio righe ordini fornitori è ora possibile applicare un filtro sul campo Descrizione fornitore (#TT02511/25) Modification that can affect the profiles on the purchase order items details 
+> - CO - Nelle scritture di integrazione, esclusione righe con giorni totali 0 (#TT02417/25) 
+> - SCM - Nella maschera di Dettaglio righe ordini fornitori è ora possibile applicare un filtro sul campo Descrizione fornitore. **Attenzione! Questa modifica può impattare sui profili** (#TT02511/25) 
 > - WM - Implementata la migrazione dei Serial Number dalla versione F2015 (#TT01764/25) 
 > - SD - Ottimizzata la procedura di creazione Fatture da DDT di Vendita (#TT02317/25, #TT00435/25) 
 > - SD - Rivisto calcolo nella stampa provvigioni maturate per le note di accredito, ora con il criterio del pagamento avvenuto seguono la stessa logica delle fatture (#TT02360/25) 
-> - SCS - ordine conto lavoro, corretto mancato inserimento unità di misura quando viene inserito un articolo codificato in tab articoli (#TT01773/25) 
+> - SCS - Ordine conto lavoro, corretto mancato inserimento unità di misura quando viene inserito un articolo codificato in tab articoli (#TT01773/25) 
 > - SD, SCM - È stato introdotto un controllo in fase di inserimento delle date di competenza nei documenti, che impedisce l’inserimento di una data fine antecedente alla data inizio. Il controllo viene effettuato sulle date inserite nel tab Analitica di tutti i documenti di acquisto e vendita e sulle righe articolo delle Fatture di Vendita (#TT02421/25) 
-> - PR - Vendor Payment - manage exchange rate differences (#TT02563/25) 
-> - FI - Comunicazione liquidazioni periodiche IVA: rivista la generazione del file nel caso in cui il campo "Impegno alla presentazione telematica" sia impostato su "Nessuno" (Rif. TT02451/25) 
+> - PR - Pagamento fornitore - gestite le differenze di cambio (#TT02563/25) 
+> - FI - Comunicazione liquidazioni periodiche IVA: rivista la generazione del file nel caso in cui il campo "Impegno alla presentazione telematica" sia impostato su "Nessuno" (#TT02451/25) 
 > - FI, SD - Migrazione ambiente 2015-2023 (#TT02327/25) 
-> - FI - Contabilizzazione pagamenti compensi: risolto problema in fase di contabilizzazione dei pagamenti compensi con ritenuta e previdenza sociale attiva (Rif. TT01857/25) 
-> - PR - generazione file bonifici Sepa, sostituzione automatica caratteri invalidi (#TT02214/25) 
-> - PR - import DocFinance error (#TT02102/25) 
-> - FI - take first not empty description for PostingData.MovementDescription on DocFinance import/management (#TT02172/25) 
-> - PR - l’esportazione del cash flow per DocFinance ora inserisce nel file tutti i cash flow di tutte le società che esportano dati a DocFinance (#TT02723/25) 
+> - FI - Contabilizzazione pagamenti compensi: risolto problema in fase di contabilizzazione dei pagamenti compensi con ritenuta e previdenza sociale attiva (#TT01857/25) 
+> - PR - Generazione file bonifici Sepa, sostituzione automatica caratteri invalidi (#TT02214/25) 
+> - PR - Risolto errore importazione DocFinance (#TT02102/25) 
+> - FI - Prendere la prima descrizione non vuota per PostingData.MovementDescription durante l'importazione/gestione di DocFinance (#TT02172/25) 
+> - PR - L’esportazione del cash flow per DocFinance ora inserisce nel file tutti i cash flow di tutte le società che esportano dati a DocFinance (#TT02723/25) 
 > - MES - Risolto errore che, nel caso di cancellazione di un Ordine di Produzione associato a una riga articolo di un Ordine di Conto Lavoro, comportava l’eliminazione dell’intero Ordine di Conto Lavoro (#TT01078/25) 
 
 ### Patch 608.1-0073 - 09/05/2025 
 
 > - CO - Corretto bug nel calcolo costo che non leggeva correttamente il valore del listino fornitore di conto lavoro (#TT01472/25) 
-> - SD - modificato test al salvataggio fatture, per il nuovo tipo delle Autofatture TD29 (#TT01693/25) 
+> - SD - Modificato test al salvataggio fatture, per il nuovo tipo delle Autofatture TD29 (#TT01693/25) 
 > - SD - Risolto errore nella cancellazione di un Ordine Cliente creato tramite conversione di un’Offerta, quando il tipo ordine prevedeva la generazione automatica del progetto (#TT01211/25)
-> - SCM - revisione contabilizzazione fatture da ricevere su bolle acquisto con articoli fittizi caricati su magazzini differenti (#TT01550/25) 
-> - SCM - la contabilizzazione fatture da ricevere utilizza il prezzo netto di riga invece di calcolare (prezzo*qta)-sconti (#TT01612/25) 
-> - FI - revisione gestione causale automatica per giroconto iva in sospensione, escluso messaggio di protocolli non ordinati (#TT01845/25) 
+> - SCM - Revisione contabilizzazione fatture da ricevere su bolle acquisto con articoli fittizi caricati su magazzini differenti (#TT01550/25) 
+> - SCM - La contabilizzazione fatture da ricevere utilizza il prezzo netto di riga invece di calcolare (prezzo*qta)-sconti (#TT01612/25) 
+> - FI - Revisione gestione causale automatica per giroconto iva in sospensione, escluso messaggio di protocolli non ordinati (#TT01845/25) 
 > - FI - Mancato riporto Dichiarazione d'intento da Documento SDI (#TT01820/25) 
-> - FI - la creazione Intra2 acquisti da fatture di acquisto ora valorizza la nazione della partita iva dal campo IsoCode dell’anagrafica e non dalla nazione dell’anagrafica stessa (#TT01817/25) 
+> - FI - La creazione Intra2 acquisti da fatture di acquisto ora valorizza la nazione della partita iva dal campo IsoCode dell’anagrafica e non dalla nazione dell’anagrafica stessa (#TT01817/25) 
 > - CO - nelle chiusure infrannuali, le procedure Scritture di rettifica, Scritture di integrazione e Contabilizzazione rimanenze non verificano più se i conti soggetti sono scaduti o no (#TT05145/24) 
 > - FI - Chiusura automatica conti, revisione contabilizzazione (#TT02116/25) Nella procedura Scritture di assestamento, revisione assegnazione link di collegamento alle registrazioni di assestamento. 
 
 ### Patch 608.1-0072 - 27/03/2025  
 > - SD - Nelle Fatture di Vendita scaricate per cui è stato generato il documento Sdi le quantità e i prezzi degli articoli non sono più modificabili (#TT00881/25)  
-> - FI - revisione calcolo ammortamento su categorie impostate sul conteggio giornaliero (#TT01271/25)  
-> - WM - ripristinato valore in anagrafica articolo tab listino fornitori campo conto fornitore (#TT01233/25)  
-> - FI - revisione contabilizzazione chiusura/riapertura conti per caso di periodo senza costi o senza ricavi (#TT00308/25)  
+> - FI - Revisione calcolo ammortamento su categorie impostate sul conteggio giornaliero (#TT01271/25)  
+> - WM - Ripristinato valore in anagrafica articolo tab listino fornitori campo conto fornitore (#TT01233/25)  
+> - FI - Revisione contabilizzazione chiusura/riapertura conti per caso di periodo senza costi o senza ricavi (#TT00308/25)  
 > - SD - Corretto problema di visibilità nella stampa delle provvigioni maturate in presenza di fatture a zero create stornando acconti nati dalle partite di anticipo (#TT00783/25)  
 > - SD - Corretto problema di visibilità della formattazione delle date documento nella stampa delle provvigioni maturate quando la fattura aveva al suo interno due agenti, uno con tipo maturazione fattura messa, l’altro con pagamento avvenuto (#TT01134/25)  
-> - PR - in una nuova distinta di anticipo fatture, il cambio del tipo distinta aggiorna entrambi i sottoconti delle testata distinta (#TT01384/25) 
+> - PR - In una nuova distinta di anticipo fatture, il cambio del tipo distinta aggiorna entrambi i sottoconti delle testata distinta (#TT01384/25) 
 
 ### Patch 608.1-0071 - 13/03/2025  
 > - Aggiunto ConnectionTimeout al servizio BizLink (#TT00803/25)
@@ -106,7 +106,7 @@ sidebar_position: 2
 > - MS - Corretto bug nel calcolo delle ore inizio e fine delle fasi nella procedura di schedulazione a capacità finita (#TT00820/25)
 > - FI - nelle scritture di assestamento, abilitazione della cancellazione da tastiera delle righe selezionate (#TT01093/25)
 > - FI - Registrazioni contabili: revisione del messaggio di avviso quando si apre una registrazione contabile che ha già la sua scheda cespiti aperta (#TT01023/25)
-> - WMS - In gestione spunta del WMS, ora è possibile andare in negativo per articoli gestiti a lotti se nei parametri iniziali di magazzino vengono attivati i relativi flag.  (#TT05102/24)
+> - WMS - In gestione spunta del WMS, ora è possibile andare in negativo per articoli gestiti a lotti se nei parametri iniziali di magazzino vengono attivati i relativi flag (#TT05102/24)
 
 ### Patch 608.1-0070 - 28/02/2025
 > - FI - Stampa liquidazione IVA annuale: risolto errore nella stampa della liquidazione IVA annuale quando veniva attivato il flag nei parametri ‘Memorizza il numero dell'ultima pagina’ (#TT00200/25)
@@ -410,7 +410,7 @@ Con questa patch viene rilasciato il ticket 2097/24 che consente l'aggiornamento
 > - SCM - Creazione nuovo report per gli ordini fornitori 'Scadenziario con UM alternativa' con le seguenti proprietà- date in formato europeo, colonna Quantità residua, colonna UM, considerazione della UM alternativa nel prezzo se previsto nel documento (#TT01820/24)
 > - SCM - Risoluzione dell'errore che non rendeva visibile la Data consegna nel report Portafoglio Ordini (#TT01819/24)
 > - Risolto bug con righe contenenti Debito e Credito (#TT02694/24)
-> - MS - Rilascio ordini pianificati - Viene considerata la quantità fissa del padre nella distinta base durante il rilascio degli Ordini di produzione e di Conto lavoro.(#TT00873/24)
+> - MS - Rilascio ordini pianificati - Viene considerata la quantità fissa del padre nella distinta base durante il rilascio degli Ordini di produzione e di Conto lavoro (#TT00873/24)
 > - MS - Rilascio Ordini pianificati - Ricalcolo errato quantità totale consumo materiali se Ordine diviso in più lotti (#TT01949/24)
 > - FI - allineato comportamento della stampa controllo cespiti che ora restituisce i risultati di tutte le categorie se non viene selezionata alcuna categoria in particolare (#TT02502/24)
 > - SD - Implementazione apertura ordini dopo conversione(#TT02247/24)
