@@ -73,9 +73,9 @@ sidebar_position: 1
 > - SH - Revisione webapi di import dell’oggetto FSLedgerAccount per gestione anagrafica agenti (#TT03911/25) 
 > - WM - Corretta anomalia che nel caso in cui la form Visualizzazione giacenze avesse un profilo, quando con il tasto dx su un codice articolo veniva aperta, questa non aveva l’articolo filtrato (#TT03803/25) 
 > - WM - Corretto bug nella procedura di chiusura di magazzino nel caso di gestione con UDC. Corretto bug nella procedura “Aggiungi / sposta articoli” presente in gestione UDC (#TT03596/25) 
-> - WM - Corretto filtro magazzino nella chiamata API GetItemsAvailability  (#TT03867/25 ) 
+> - WM - Corretto filtro magazzino nella chiamata API GetItemsAvailability  (#TT03867/25) 
 > - WM - In analisi disponibilità migliorata la leggibilità del campo numero documento, dove nel caso in cui si tratti di un ordini di produzione viene visualizzato:  
-> - WM - In conferma picking di articoli gestiti a lotti aggiornata quantità di riga anche alla prima sovraevasione(#TT04004/25)
+> - WM - In conferma picking di articoli gestiti a lotti aggiornata quantità di riga anche alla prima sovraevasione (#TT04004/25)
 > - WM - Ottimizzata e migliorata la visualizzazione in analisi disponibilità degli ordini di produzione e delle relative dichiarazioni di produzione (#TT03754/25 - #TT01102/25 - #TT04027/25) 
 > - WM - Ottimizzato e velocizzato il caricamento dei picking nella form di filtro picking (#TT03764/25) 
 > - WM - Rinominate le labels relative alla giacenza in analisi disponibilità, da: “Giacenza, Giacenza Disponibile, Giacenza Non Disponibile” a “Giacenza Operativa, Giacenza Operativa Disponibile, Giacenza Operativa Non Disponibile” (#TT04072/25) 
