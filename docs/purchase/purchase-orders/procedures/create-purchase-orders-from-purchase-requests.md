@@ -60,7 +60,7 @@ La griglia inferiore mostra i dettagli degli articoli contenuti in ciascun ordin
 
 - **Tipo ordine fornitore da richieste di acquisto**: indica il tipo di ordine fornitore da creare a partire dalle RDA. Può essere modificato nei *Prototipi ordine*.  
 - **Tipo ordine fornitore da ordini clienti**: indica il tipo di ordine fornitore da creare a partire dagli ordini clienti. Può essere modificato nei *Prototipi ordine*.  
-- **Raggruppa per articolo**: raggruppa gli ordini per articolo.
+- **Raggruppa per articolo**: se la RDA o l'Ordine cliente contengono più righe con lo stesso articolo, la procedura crea una singola riga con la somma delle quantità dell'articolo. Il raggruppamento viene effettuato solo per gli articoli contenuti nello stesso documento di origine.     
 
 ### 4.3 Dati da utilizzare se non codificati per ogni articolo
 
