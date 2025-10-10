@@ -3,10 +3,43 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 802.0004 - 09/10/2025
+
+> -	Aggiornamento parser sistemi per esportazione paghe 
+> -	CO - Valorizzazione Distinta Base - E' stato corretto il calcolo del Costo dell'articolo. Il costo considera la ripartizione del Costo di attrezzaggio sulla base della quantità indicata nel parametro Lotto (parametro richiesto all'esecuzione del report) Costo materiali + Costo lavorazioni: macchina, manodopera ed esterne + Costo attrezzaggio / Lotto. (#TT04238/25) 
+> -	FI - Blazor : crash in posting in account widget URI too large ( TT04354/25) 
+> -	FI - correct indexes ( TT04299/25) 
+> -	FI - Corretto Calcolo LIPE errato in presenza di IVA indetraibile e Pro-Rata ( TT03934/25) 
+> -	FI - implementato giroconto automatico dell’iva indetraibile per pro-rata in fase di stampa definitiva e contabilizzazione della liquidazione periodica. Le modifiche nel FSGeneralLedgerParameter and PeriodicalVatSettlmentReport forms possono avere un impatto sul profilo. ( TT04295/25) 
+> -	FI - revisione contabilizzazione fatture per valorizzazione dimensione progetti (#TT04328/25) 
+> -	FI - SafTGeneralLedgerEntryFilterResults - add option "Grouped" default 0. Le modifiche nel SafTGeneralLedgerEntryFilter object form possono avere un impatto sul profilo. ( TT04178/25 ) 
+> -	MES - Corretta anomalia nella registrazione delle dichiarazioni di produzione nel caso in cui venisse inserita una quantità scartata per un materiale. (#TT04110/25) 
+> -	MES - Corrette anomalie in MES sul tab operatori, dove gli operatori non attivi venivano riproposti come attivi nelle dichiarazioni successive e all’ordine di produzione che rimaneva in alcuni casi bloccato. (#TT04122/25) 
+> -	MS - Implementata nelle commesse indipendenti o previsionali (in stato non esaminato o pianificato) la possibilità di modificare le date di inizio e fine previsione. (#TT03335/25) 
+> -	MS - Nella maschera Gestione cicli e fase di lavoro abbiamo corretto il filtro predefinito sullo stato per ogni tab del workflow e aggiunto anche il filtro ExtraData, che permette di visualizzare gli extra data relativi al ciclo, alle fasi del ciclo e all’articolo del ciclo. (#TT03893/25) 
+> -	MS - Ora quando viene aggiunta una fase manualmente in un ordine pianificato o di produzione viene riportato correttamente anche il flag movimentabile della fase stessa. (#TT04269/25) 
+> -	MS - Ottimizzato il refresh delle griglie della form sequenza fasi nel caso in cui venisse modificato il campo note. (#TT04306/25) 
+> -	PM: WEB - interventi - risolta casistica per cui i campi vuoti non erano editabili (#TT04334/25) 
+> -	PM: WEB ripristinata funzionalità del WBS assegnazione risorse - drag&drop degli appuntamenti (TT04368/25) 
+> -	PM: WEB valorizzazione interventi - ripristinato bottone "valorizzazione" che da interfaccia web risultava disabilitato (#TT04307/25) 
+> -	PR - Corretto errore in fase di raggruppamento delle note di accredito con le fatture nelle ricevute bancarie. ( TT03636/25) 
+> -	QY - Taratura strumenti - Corretta l'anomalia segnalata di errata gestione del numero di decimali nei valori da rilevare e rilevati dovuta alla non presenza dell'Unità di misura dello Strumento verificato. (#TT04371/25) 
+> -	Risolto problema salvataggio attività di supervisor (TT04332/25) 
+> -	SCM - L’importazione Web API dei DDT calcola correttamente le scadenze (#TT04223/25) 
+> -	SCS - Conto lavoro di fase: Corretta anomalia che aggiornava lo stato della Commessa di Produzione a seguito dell’evasione di un Ordine di Produzione con ultima fase esterna, anche in presenza di ordini di livello superiore ancora in stato esecutivo. (#TT03393/25) 
+> -	SD - Abilitata la possibilità di modificare la Data consegna e la Data merce pronta negli Ordini Clienti che hanno generato automaticamente il Progetto e la Commessa di Produzione. Le modifiche nel SalesOrder object form possono avere un impatto sul profilos. (#TT03882/25) 
+> -	SD - In fase di duplicazione di DDT, Fatture o Pos, se non viene trovata un’aliquota IVA valida tra dichiarazione d’intento, anagrafica cliente o anagrafica articolo, viene proposto il codice IVA presente nel documento di origine. (#TT03962/25) 
+> -	SD - In fase di Evasione di un Ordine cliente in DDT o Fattura viene ora popolata anche l’ora di inizio trasporto. (#TT03386/25) 
+> -	SH - Corretta anomalia che talvolta causava il cambiamento di stato del Workflow durante l’uso delle frecce della tastiera. (#TT04285/25) 
+> -	SH - DataSources - Consider simple datasources properties formulas as Devexpress Criteria expressions (TT04074/25) 
+> -	SH - webapi sull’oggetto FSLedgerAccount, revisione attribuzione codice di sottoconto del file su conti con numero massimo raggiunto (#TT04339/25) 
+> -	SH: WEB - nei report che richiedono l'inserimento di filtri nell'anteprima, corretta disposizione label dei filtri che in alcuni casi era sovrapposta (#TT04338/25) 
+> -	WM - Differenze Inventariali: aggiunge articoli a 0 anche per lotti su cui ci sono altri lotti dell’articolo in lista. (#TT03865/25) 
+
 ### Patch 802.0003 - 03/10/2025
 
 > -	BI - pivot - add Excel Export command in contextual menu 
-> -	FI - ‘New options for Ro 394 fiscal declaration’. Modifications in declaration 394 object form can have an impact on profile ( TT04183/25) 
+> -	FI - ‘New options for Ro 394 fiscal declaration’. Le modifiche nel declaration 394 object form possono avere un impatto sul profilo ( TT04183/25) 
 > -	FI - fix RO declaration D300 
 > -	FI - la modifica della categoria cespite ora cambia il sottoconto patrimoniale in testata cespite. (#TT03931/25) 
 > -	FI - revisione test di quadratura in contabilizzazione fatture con omaggi (#TT03708/25) 
@@ -27,7 +60,7 @@ sidebar_position: 1
 ### Patch 802.0002 - 25/09/2025
 
 > -	FI - Declaration 300 and 394 for RO - vat code 11 and 21 ( TT04041/25) 
-> -	FI - liquidazione iva periodica, aggiunto collegamento alle anagrafiche per impostare la società che presenta la comunicazione per conto di un altro contribuente. Modifications in periodic vat calculation form can have an impact on profiles. (#TT04050/25) 
+> -	FI - liquidazione iva periodica, aggiunto collegamento alle anagrafiche per impostare la società che presenta la comunicazione per conto di un altro contribuente. Le modifiche nel periodic vat calculation form possono avere un impatto sul profilos. (#TT04050/25) 
 > -	FI - propose department in postingCostCenter (TT04126/25) 
 > -	MES - Corretta anomalia nella dichiarazioni di produzione che non inseriva correttamente il valore nella registrazione di magazzino nel caso in cui nel centro di costo fosse specificata una unità di misura. (#TT03519/25) 
 > -	PM - procedura di generazione fattura di vendita da progetto, gestito caso in cui non compariva messaggio di blocco nel caso di cliente bloccato nel Lock Manager (TT03721/25) 
@@ -38,7 +71,7 @@ sidebar_position: 1
 > -	SD - Gestione Acconti: Corretto l’aggiornamento del residuo acconto in caso di storno parziale. Abilitata la chiusura forzata dell’acconto tramite l’attivazione del flag Forzatamente evaso anche su fatture contabilizzate o con documento Sdi generato. (#TT03759/25) 
 > -	SD - Nel caso in cui il parametro ‘Codice operatore obbligatorio’ sia attivo in fattura, la procedura ‘Creazione da DDT’ riporta l’operatore inserito nel DDT nel caso di evasione 1-1, mentre nel caso di evasione n-1 la creazione non avviene (#TT04107/25) 
 > -	SD - Risolta anomalia nella duplicazione di DDT e Fatture di Vendita che applicava l’aliquota IVA del cliente anche alle righe di tipo Note. (#TT04147/25) 
-> -	SD - Corretto problema di visibilità nel campo Descrizione agente per la bolla di vendita. Modifications in SalesDeliveryNote object form can have an impact on profiles. (#TT01258/21) 
+> -	SD - Corretto problema di visibilità nel campo Descrizione agente per la bolla di vendita. Le modifiche nel SalesDeliveryNote object form possono avere un impatto sul profilos. (#TT01258/21) 
 > -	SH - Webapi di import FSLedgerAccount, revisione gestione banche d’appoggio e dati fido. (#TT04082/25) 
 > -	WM - Anagrafica lotti: Aggiunti i campi “Quantità impegnata”, che consente di visualizzare i documenti e le quantità con cui il lotto risulta impegnato, e “Chiuso forzatamente”, che indica l’evasione forzata della riga con conseguente liberazione dell’impegno del lotto. (#TT03787/25) 
 > -	WM - Corretto mancato filtro su componenti scaduti in inserimento massivo componenti distinta base (#TT04070/25) 
