@@ -3,6 +3,32 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0050 - 10/10/2025
+
+> -	CO - Valorizzazione Distinta Base - E' stato corretto il calcolo del Costo dell'articolo. Il costo considera la ripartizione del Costo di attrezzaggio sulla base della quantità indicata nel parametro Lotto (parametro richiesto all'esecuzione del report) Costo materiali + Costo lavorazioni: macchina, manodopera ed esterne + Costo attrezzaggio / Lotto. (#TT04238/25) 
+> -	FI - Corretto Calcolo LIPE errato in presenza di IVA indetraibile e Pro-Rata ( TT03934/25) 
+> -	FI - implementato giroconto automatico dell’iva indetraibile per pro-rata in fase di stampa definitiva e contabilizzazione della liquidazione periodica. Le modifiche nel FSGeneralLedgerParameter and PeriodicalVatSettlmentReport forms possono avere un impatto sul profilo. ( TT04295/25) 
+> -	FI - revisione contabilizzazione fatture per valorizzazione dimensione progetti (#TT04328/25) 
+> -	FI - SafTGeneralLedgerEntryFilterResults - add option "Grouped" default 0. Le modifiche nel SafTGeneralLedgerEntryFilter object form possono avere un impatto sul profilo. ( TT04178/25 ) 
+> -	MES - Corretta anomalia nella registrazione delle dichiarazioni di produzione nel caso in cui venisse inserita una quantità scartata per un materiale. (#TT04110/25) 
+> -	MES - Corrette anomalie in MES sul tab operatori, dove gli operatori non attivi venivano riproposti come attivi nelle dichiarazioni successive e all’ordine di produzione che rimaneva in alcuni casi bloccato. (#TT04122/25) 
+> -	MS - Generazione Commesse di produzione da previsionale - Corretta anomalia (exception) generata durante la creazione della Commessa di produzione dai prototipi commesse.(rif. 4284/25) 
+> -	MS - Implementata nelle commesse indipendenti o previsionali (in stato non esaminato o pianificato) la possibilità di modificare le date di inizio e fine previsione. (#TT03335/25) 
+> -	MS - Ora quando viene aggiunta una fase manualmente in un ordine pianificato o di produzione viene riportato correttamente anche il flag movimentabile della fase stessa. (#TT04269/25) 
+> -	PR - Corretto errore in fase di raggruppamento delle note di accredito con le fatture nelle ricevute bancarie. ( TT03636/25) 
+> -	QY - Taratura strumenti - Corretta l'anomalia segnalata di errata gestione del numero di decimali nei valori da rilevare e rilevati dovuta alla non presenza dell'Unità di misura dello Strumento verificato. (#TT04371/25) 
+> -	Risolvere problemi di chiusura IVA versione RO (TT04377/25) 
+> -	SCM - L’importazione Web API dei DDT calcola correttamente le scadenze (#TT04223/25) 
+> -	SCS - Conto lavoro di fase: Corretta anomalia che aggiornava lo stato della Commessa di Produzione a seguito dell’evasione di un Ordine di Produzione con ultima fase esterna, anche in presenza di ordini di livello superiore ancora in stato esecutivo. (#TT03393/25) 
+> -	SD - Abilitata la possibilità di modificare la Data consegna e la Data merce pronta negli Ordini Clienti che hanno generato automaticamente il Progetto e la Commessa di Produzione. Le modifiche nel SalesOrder object form possono avere un impatto sui profili. (#TT03882/25) 
+> -	SD - In fase di duplicazione di DDT, Fatture o Pos, se non viene trovata un’aliquota IVA valida tra dichiarazione d’intento, anagrafica cliente o anagrafica articolo, viene proposto il codice IVA presente nel documento di origine. (#TT03962/25) 
+> -	SD - L'Evasione di un Ordine cliente in DDT o Fattura accompagnatoria non comporta la modifica della data e dell'ora di inizio trasporto: vengono mantenute le informazioni presenti nel documento prima dell'evasione. (#TT03386/25) 
+> -	SH - Documenti Sdi: Abilitato l’invio massivo dei Documenti di Vendita in uscita anche per file Sdi importati dall’esterno. (#TT03619/25) 
+> -	SH - webapi sull’oggetto FSLedgerAccount, revisione attribuzione codice di sottoconto del file su conti con numero massimo raggiunto (#TT04339/25) 
+> -	WM - Corretto calcolo analisi disponibilità su Scarichi di Produzione e calcolo Giacenza operativa per versamenti su ultima fase. (#TT04304/25) 
+> -	WM - Differenze Inventariali: aggiunge articoli a 0 anche per lotti su cui ci sono altri lotti dell’articolo in lista. (#TT03865/25) 
+> -	WMS - Corretta anomalia nel tab articoli delle forma gestione spunta e conferma picking nella quale non veniva visualizzato il corretto numero di decimali. Le modifiche nel CheckRowManagement form possono avere un impatto sui profili. (#TT04208/25) 
+
 ### Patch 707.1-0049 - 03/10/2025
 
 > -	CO - Ottimizzazione scritture di integrazione (#TT03929/25) 
@@ -17,7 +43,7 @@ sidebar_position: 1
 > -	SD - Risoluzione dell’errore che duplicava gli sconti finali derivanti dal tipo pagamento, in tutte le procedure di evasione (#TT03745/25) 
 > -	SD - Elimina le fatture con più di 2100 articoli (#TT04134/25) 
 > -	SH - Gestione documentale: Corretta la scansione in formato PDF (#TT03705/25)  
-> -	WM – Analisi Disponibilità: ottimizzazione delle prestazioni, corretta lettura della disponibilità e della quantità non disponibile, corretta lettura degli scarichi registrati e non, corretta lettura dei sovraconsumi di produzione. Corretta lettura difforme dei dati in base alle condizioni di filtro dell’articolo (#TT04181/25, #TT04123/25, #TT04175/25) 
+> -	WM - Analisi Disponibilità: ottimizzazione delle prestazioni, corretta lettura della disponibilità e della quantità non disponibile, corretta lettura degli scarichi registrati e non, corretta lettura dei sovraconsumi di produzione. Corretta lettura difforme dei dati in base alle condizioni di filtro dell’articolo (#TT04181/25, #TT04123/25, #TT04175/25) 
 > -	WM - Piani di carico - Migliorato inserimento ordine cliente in piano di carico (#TT03326/25, #TT02960/25) 
 > -	WM - Tipologia prelievo FIFO dei lotti ora non considera le ubicazioni bloccate (#TT03598/24) 
 > -	WMS - Gestione spunta: spunte multiple eseguite con registrazioni di scarico distinte (#TT04029/25) 
@@ -25,7 +51,7 @@ sidebar_position: 1
 ### Patch 707.1-0048 - 25/09/2025
 
 > -	CRM - In conversione contatto CRM in contatto ERP, confermando la conversione vengono portati anche i riferimenti ai documenti allegati al contatto CRM nel contatto ERP (#TT03641/25) 
-> -	FI - Dichiarazioni 300 e 394 per la Romania – codici IVA 11 e 21 (#TT04041/25) 
+> -	FI - Dichiarazioni 300 e 394 per la Romania - codici IVA 11 e 21 (#TT04041/25) 
 > -	FI - Liquidazione iva periodica, aggiunto collegamento alle anagrafiche per impostare la società che presenta la comunicazione per conto di un altro contribuente. **Attenzione! Questa modifica può impattare sui profili** (#TT04050/25) 
 > -	FI - Proposta dipartimento PostingCostCenter quando non arriva sulla struttura (#TT04126/25) 
 > -	FI/SD - Corretto problema di visibilità nel campo Conto Sottoconto Descrizione, Form Interessate: Tesoreria > Lock Manager > tab Blocco Clienti e Vendite > Ordine Cliente > Dettaglio righe > Tab Agenti. **Attenzione! Questa modifica può impattare sui profili** (#TT03290/25) 
@@ -56,7 +82,7 @@ sidebar_position: 1
 > - CRM - L’Agente principale viene riportato in testata Offerta anche se il Contatto CRM non ha un’anagrafica contabile associata (#TT02925/25) 
 > - FI - Causali automatiche, revisione gestione Sottoconti automatici (#TT03869/25) 
 > - FI - Corretto comportamento del filtro Categoria amministrativa nelle form generazione solleciti e generazione automatica solleciti (#TT03618/25) 
-> - FI - Dichiarazioni 300 e 394 per la Romania – codici IVA 11 e 21 (#TT04041/25) 
+> - FI - Dichiarazioni 300 e 394 per la Romania - codici IVA 11 e 21 (#TT04041/25) 
 > - Fi - Nella stampa di controllo delle dichiarazioni di intento, revisione calcoli per conteggio delle spese finali in esenzione nei documenti (#TT03765/24) 
 > - FI - Stampa Liquidazioni Agenti - vuota (#TT03928/25) 
 > - MES - Corretta anomalia relativa al ricalcolo dei materiali consumati nelle dichiarazioni di produzione (#TT03888/25) 
@@ -194,7 +220,7 @@ sidebar_position: 1
 > - SD - Calendario spedizioni - gestito caso di assenza vettore-autista senza causale valida assegnata (#TT03357/25) 
 > - SD - Generazione progetto in automatico da ordine, se i contatti di destinatario e destinazione sono impostati nell'ordine verranno riportati anche nel progetto (#TT03281/25) 
 > - SD - Risolto errore che impediva la valorizzazione di un DDT di Vendita in presenza di articoli gestiti a lotti, nel caso in cui fossero presenti più righe con lo stesso codice lotto (#TT03286/25) 
-> - SH - Datasource – caricamento della proprietà di estensione se è presente una personalizzazione per l’oggetto business (#TT03250/25)  
+> - SH - Datasource - caricamento della proprietà di estensione se è presente una personalizzazione per l’oggetto business (#TT03250/25)  
 > - SH - Introdotta la possibilità di salvare la riga filtro all'interno dei profili (#TT02942/25) 
 > - WM - Aggiunta la colonna ubicazione nella griglia lotti e serial number del picking. Inoltre, corretto bug in gestione spunta nel caso in cui venisse spuntato un lotto, già presente nel tab lotti e serial number, ma con un'altra ubicazione. Modifications in Picking form can have an impact on profiles (#TT03288/25) 
 > - WM - Corretto bug nell’help articoli movimentati delle liste inventariali che non visualizzava correttamente gli articoli nel caso in cui le date di inizio e fine ricerca fossero uguali (#TT03340/25) 
