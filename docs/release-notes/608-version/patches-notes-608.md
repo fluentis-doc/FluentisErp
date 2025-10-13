@@ -6,6 +6,15 @@ sidebar_position: 2
 ### Patch 608.1-0080 - 13/10/2025
 
 
+> - FI - Centri di Costo/Aggiornamento alla 50 Flu 2021 ( TT03826/24). 
+> - FI - Corretto Calcolo LIPE errato in presenza di IVA indetraibile e Pro-Rata ( TT03934/25). 
+> - FI - la modifica della categoria cespite ora cambia il sottoconto patrimoniale in testata cespite(#TT03931/25). 
+> - MPS - Corretto bug nella procedura MRP che in alcuni casi non cancellava gli ordini pianificati. (#TT04172/25). 
+> - MPS - Implementata nelle commesse indipendenti o previsionali (in stato non esaminato o pianificato) la possibilità di modificare le date di inizio e fine previsione (#TT03335/25). 
+utilizzo del campo Creditor invece che della Ragione sociale (#TT04407/25). 
+> - WM - Corretto mancato filtro su componenti scaduti in inserimento massivo componenti distinta base (#TT04070/25). 
+> - WM - Ottimizzata la gestione dei prototipi nel caso in cui fossero composti da un numero molto elevato di componenti (#TT04291/25). 
+
 
 ### Patch 608.1-0079 - 12/09/2025
 
