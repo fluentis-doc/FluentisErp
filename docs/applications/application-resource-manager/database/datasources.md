@@ -5,7 +5,6 @@ sidebar_position: 3
 ---
 
 ### Form
-Come anticipato nell'overview generale di cui alla sezione [LINK](/docs/applications/database/database-intro) i datasources permettono di esporre dati in maniera strutturata ed organizzata.  
 La form dei datasource è raggiungibile tramite il seguente percorso: **Applications Resource Manager** > **Database** > **Data Sources**.  
 
 La form dei datasource si presenta è così composta:

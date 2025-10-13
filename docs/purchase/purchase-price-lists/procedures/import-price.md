@@ -3,7 +3,7 @@ title: Importazione da Prezzi fornitori
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Acquisti > Listini fornitori > Procedure > Importazione prezzi fornitori** e permette di selezionare per l'importazione gli articoli precedentemente inseriti tramite l'[Importazione prezzi e articoli fornitore](/docs/applications/bizlink/price-item-supplier), disponibile tra le *importazione on demand* di Bizlink. 
+La form si apre tramite il percorso **Acquisti > Listini fornitori > Procedure > Importazione prezzi fornitori** e permette di selezionare per l'importazione gli articoli precedentemente inseriti tramite l'[Importazione prezzi e articoli fornitore](/docs/applications/bizlink/_old-documents/price-item-supplier), disponibile tra le *importazione on demand* di Bizlink. 
 
 Mediante questa procedura è possibile creare o aggiornare le anagrafiche degli articoli selezionati e creare un nuovo listino fornitore con i prezzi aggiornati.
 
