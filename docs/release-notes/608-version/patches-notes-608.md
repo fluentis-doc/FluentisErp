@@ -3,6 +3,10 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0080 - 13/10/2025
+
+
+
 ### Patch 608.1-0079 - 12/09/2025
 
 > - ARM - Correzione dell’esecuzione delle azioni per documenti multipli (#TT02094/25) 
