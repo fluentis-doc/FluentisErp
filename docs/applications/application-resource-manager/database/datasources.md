@@ -43,7 +43,7 @@ A seconda della tipologia di datasource selezionato i campi di input da popolare
   * area, si tratta di una descrizione presa da dizionario.
   * Modulo di business.
 
-Per quanto concerne l'utilizzo di **FluentisQueryStudio** quale strumento per la creazione / salvataggio di query in base dati, si rimanda al seguente [LINK](/docs/applications/database/database-intro).   
+Per quanto concerne l'utilizzo di **FluentisQueryStudio** quale strumento per la creazione / salvataggio di query in base dati, si rimanda al seguente [LINK](/docs/applications/application-resource-manager/database/database-intro).   
 E' fondamentale che la query creata tramite il **FluentisQueryStudio** rispetti delle precise regole di formattazione:
 * la query deve restituire almeno i campi **Id**, **Code**, **Description** per poter essere riutilizzata all'interno di un datasource altrimenti non sarà visibile all'interno della relativa combobox.   
   

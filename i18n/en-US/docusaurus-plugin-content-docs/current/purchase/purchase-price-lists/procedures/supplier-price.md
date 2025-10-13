@@ -5,7 +5,7 @@ sidebar_position: 1
 
 The form opens via the path **Purchases > Supplier Price Lists > Procedures > Supplier Prices**.
 
-In this form, it is possible to consult the results of the [Import Supplier Prices and Items](/docs/applications/bizlink/price-item-supplier). All items imported via bizlink along with their respective prices are entered in this screen, from which they can be consulted and selected for processing.
+In this form, it is possible to consult the results of the [Import Supplier Prices and Items](/docs/applications/bizlink/template-example/price-item-supplier). All items imported via bizlink along with their respective prices are entered in this screen, from which they can be consulted and selected for processing.
 
 This procedure is widely used for importing catalogs: through the *import of supplier prices and items*, all items present in the supplier's catalog are entered in this screen. Subsequently, the user can search for and select the items they wish to manage. The screen allows the user to understand the purchase price of an item without it having been previously coded and entered in a price list, and to code only the items they will actually manage.
 

@@ -3,7 +3,7 @@ title: Cijene dobavljača
 sidebar_position: 2
 ---
 
-Na ovoj formi moguće je pregledati rezultate [Uvoza cijena i artikala dobavljača](/docs/applications/bizlink/price-item-supplier). Naime, prikazani su uvezeni artikli s poljima unesenim u listiću:         
+Na ovoj formi moguće je pregledati rezultate [Uvoza cijena i artikala dobavljača](/docs/applications/bizlink/template-example/price-item-supplier). Naime, prikazani su uvezeni artikli s poljima unesenim u listiću:         
 -	Kategorija artikla: ovi podaci bit će prisutni samo ako je artikl već postojao, inače, ako je samo uvezen, neće imati dodijeljenu kategoriju artikla.;          
 -	Šifra artikla: ovi podaci prate pravila prethodnih; uvezeni artikli mogu se razlikovati od onih koji nisu uvezeni i po različitoj boji.            
 -	Dobavljač: ovi podaci će popuniti preferiranog Dobavljača u kartici artikla, nakon što bude stvoren.

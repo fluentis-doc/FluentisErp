@@ -3,7 +3,7 @@ title: Importación de Precios de Proveedores (Importazione da Prezzi fornitori)
 sidebar_position: 2
 ---
 
-El formulario se abre a través de la ruta **Compras  Listas de proveedores  Procedimientos  Importación de precios de proveedores** y permite seleccionar para la importación los artículos previamente ingresados a través de la [Importación de precios y artículos de proveedores](/docs/applications/bizlink/price-item-supplier).
+El formulario se abre a través de la ruta **Compras  Listas de proveedores  Procedimientos  Importación de precios de proveedores** y permite seleccionar para la importación los artículos previamente ingresados a través de la [Importación de precios y artículos de proveedores](/docs/applications/bizlink/template-example/price-item-supplier).
 
 Mediante este procedimiento es posible crear o actualizar los registros de los artículos seleccionados y crear una nueva lista de precios de proveedor con los precios actualizados.
 

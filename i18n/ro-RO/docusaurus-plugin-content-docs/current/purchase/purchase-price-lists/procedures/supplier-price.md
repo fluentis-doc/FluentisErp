@@ -5,7 +5,7 @@ sidebar_position: 1
 
 La form si apre tramite il percorso **Acquisti > Listini fornitori > Procedure > Prezzi fornitore**.
 
-In questa form è possibile consultare i risultati dell’[Importazione prezzi e articoli fornitore](/docs/applications/bizlink/price-item-supplier). Tutti gli articoli importati tramite bizlink con i rispettivi prezzi vengono inseriti in questa maschera da cui è possibile consultarli e scegliere quali trattare.
+In questa form è possibile consultare i risultati dell’[Importazione prezzi e articoli fornitore](/docs/applications/bizlink/template-example/price-item-supplier). Tutti gli articoli importati tramite bizlink con i rispettivi prezzi vengono inseriti in questa maschera da cui è possibile consultarli e scegliere quali trattare.
 
 Questa procedura è utilizzata molto per l’importazione dei cataloghi: mediante l'*importazione prezzi e articoli fornitore* vengono inseriti in questa maschera tutti gli articoli presenti nel catalogo del fornitore. Successivamente l'utente può cercare e scegliere gli articoli che vuole gestire. La maschera permette di capire il prezzo di acquisto di un articolo senza che questo sia stato precedentemente codificato e inserito in un listino e di codificare poi solo gli articoli che si andrà effettivamente a gestire.
 

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 El formulario se abre a través de la ruta **Compras > Listas de proveedores > Procedimientos > Precios de proveedor**.
 
-En este formulario es posible consultar los resultados de la [Importación de precios y artículos de proveedor](/docs/applications/bizlink/price-item-supplier). Todos los artículos importados a través de bizlink con sus respectivos precios se insertan en esta máscara desde la cual es posible consultarlos y elegir cuáles tratar.
+En este formulario es posible consultar los resultados de la [Importación de precios y artículos de proveedor](/docs/applications/bizlink/template-example/price-item-supplier). Todos los artículos importados a través de bizlink con sus respectivos precios se insertan en esta máscara desde la cual es posible consultarlos y elegir cuáles tratar.
 
 Este procedimiento se utiliza mucho para la importación de catálogos: mediante la *importación de precios y artículos de proveedor* se insertan en esta máscara todos los artículos presentes en el catálogo del proveedor. Posteriormente, el usuario puede buscar y seleccionar los artículos que desea gestionar. La máscara permite conocer el precio de compra de un artículo sin que este haya sido codificado y registrado previamente en una lista, y posteriormente codificar solo los artículos que se gestionarán efectivamente.
 
