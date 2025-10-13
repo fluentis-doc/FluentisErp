@@ -1,6 +1,6 @@
 ---
-title: Strumenti
-sidebar_position: 1
+title: STRUMENTI
+sidebar_position: 0
 ---
 
 Il pannello degli **Strumenti** contiene la lista delle applicazioni che possono essere configurate e gestite all'interno di **Fluentis ERP**.

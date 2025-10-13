@@ -1,11 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
- 
+
   //themes: ['@docusaurus/theme-mermaid'],
   title: 'Fluentis ERP Documentation',
   tagline: 'La guida progettata per supportarti nell’utilizzo quotidiano di Fluentis ERP',
@@ -52,7 +52,7 @@ const config = {
       },
     },
   },
-    themeConfig: {
+  themeConfig: {
     prism: {
       additionalLanguages: ['csharp'],
     },
@@ -117,19 +117,9 @@ const config = {
           position: 'left',
           items: [
             {
-              to: 'docs/configurations/configuration',
+              to: 'docs/applications/applications-intro',
               activeBasePath: 'docs',
-              label: 'Configurazioni (Tabelle, Parametri...)',
-            },
-            {
-              to: 'docs/panels/context-panel',
-              activeBasePath: 'docs',
-              label: 'Context Panel',
-            },
-            {
-              to: 'docs/form-navigator/form-navigator-intro',
-              activeBasePath: 'docs',
-              label: 'Form navigator',
+              label: 'Strumenti',
             },
             {
               to: 'docs/object-navigator/object-navigator-intro',
@@ -137,9 +127,19 @@ const config = {
               label: 'Object Navigator',
             },
             {
-              to: 'docs/applications/applications-intro',
+              to: 'docs/panels/context-panel',
               activeBasePath: 'docs',
-              label: 'Strumenti',
+              label: 'Context Panel',
+            },
+            {
+              to: 'docs/configurations/configuration',
+              activeBasePath: 'docs',
+              label: 'Configurazioni (Tabelle, Parametri...)',
+            },
+            {
+              to: 'docs/form-navigator/form-navigator-intro',
+              activeBasePath: 'docs',
+              label: 'Form navigator',
             },
           ]
         },
@@ -244,7 +244,7 @@ const config = {
               label: 'Qualità',
             },
           ],
-        }, 
+        },
         {
           type: 'localeDropdown',
           position: 'right',
@@ -325,8 +325,8 @@ const config = {
           // Please change this to your repo.
           showLastUpdateTime: true,
           editUrl:
-          'https://github.com/fluentis-doc/FluentisErp/edit/website-edits/',
-        editLocalizedFiles: true,
+            'https://github.com/fluentis-doc/FluentisErp/edit/website-edits/',
+          editLocalizedFiles: true,
         },
         /* blog: {
           showReadingTime: true,
@@ -407,7 +407,7 @@ const config = {
           parentCategoriesBoost: 2, // Only used when indexDocSidebarParentCategories > 0
         }
       },
-    ],    
+    ],
   ],
   future: {
     experimental_faster: true,
