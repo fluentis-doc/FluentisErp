@@ -3,6 +3,11 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 802.0005 - 14/10/2025
+
+> -	SH - Import Contatti - Corretta anomalia su schema di importazione (#TT04225/25). 
+> -	WMS - Corretta anomalia nel tab articoli delle forma gestione spunta e conferma picking nella quale non veniva visualizzato il corretto numero di decimali. Le modifiche nel CheckRowManagement form possono avere un impatto sui profili (#TT04208/25).  
+
 ### Patch 802.0004 - 09/10/2025
 
 > -	Aggiornamento parser sistemi per esportazione paghe 
@@ -19,9 +24,9 @@ sidebar_position: 1
 > -	MS - Nella maschera Gestione cicli e fase di lavoro abbiamo corretto il filtro predefinito sullo stato per ogni tab del workflow e aggiunto anche il filtro ExtraData, che permette di visualizzare gli extra data relativi al ciclo, alle fasi del ciclo e all’articolo del ciclo. (#TT03893/25) 
 > -	MS - Ora quando viene aggiunta una fase manualmente in un ordine pianificato o di produzione viene riportato correttamente anche il flag movimentabile della fase stessa. (#TT04269/25) 
 > -	MS - Ottimizzato il refresh delle griglie della form sequenza fasi nel caso in cui venisse modificato il campo note. (#TT04306/25) 
-> -	PM: WEB - interventi - risolta casistica per cui i campi vuoti non erano editabili (#TT04334/25) 
-> -	PM: WEB ripristinata funzionalità del WBS assegnazione risorse - drag&drop degli appuntamenti (TT04368/25) 
-> -	PM: WEB valorizzazione interventi - ripristinato bottone "valorizzazione" che da interfaccia web risultava disabilitato (#TT04307/25) 
+> -	PM - WEB - interventi - risolta casistica per cui i campi vuoti non erano editabili (#TT04334/25) 
+> -	PM - WEB ripristinata funzionalità del WBS assegnazione risorse - drag&drop degli appuntamenti (TT04368/25) 
+> -	PM - WEB valorizzazione interventi - ripristinato bottone "valorizzazione" che da interfaccia web risultava disabilitato (#TT04307/25) 
 > -	PR - Corretto errore in fase di raggruppamento delle note di accredito con le fatture nelle ricevute bancarie. ( TT03636/25) 
 > -	QY - Taratura strumenti - Corretta l'anomalia segnalata di errata gestione del numero di decimali nei valori da rilevare e rilevati dovuta alla non presenza dell'Unità di misura dello Strumento verificato. (#TT04371/25) 
 > -	Risolto problema salvataggio attività di supervisor (TT04332/25) 
@@ -33,7 +38,7 @@ sidebar_position: 1
 > -	SH - Corretta anomalia che talvolta causava il cambiamento di stato del Workflow durante l’uso delle frecce della tastiera. (#TT04285/25) 
 > -	SH - DataSources - Consider simple datasources properties formulas as Devexpress Criteria expressions (TT04074/25) 
 > -	SH - webapi sull’oggetto FSLedgerAccount, revisione attribuzione codice di sottoconto del file su conti con numero massimo raggiunto (#TT04339/25) 
-> -	SH: WEB - nei report che richiedono l'inserimento di filtri nell'anteprima, corretta disposizione label dei filtri che in alcuni casi era sovrapposta (#TT04338/25) 
+> -	SH - WEB - nei report che richiedono l'inserimento di filtri nell'anteprima, corretta disposizione label dei filtri che in alcuni casi era sovrapposta (#TT04338/25) 
 > -	WM - Differenze Inventariali: aggiunge articoli a 0 anche per lotti su cui ci sono altri lotti dell’articolo in lista. (#TT03865/25) 
 
 ### Patch 802.0003 - 03/10/2025
