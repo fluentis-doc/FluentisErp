@@ -1,28 +1,28 @@
 ---
-title: Stato lotto
+title: Status lota
 sidebar_position: 22
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Stato lotto**.
+Tablica se nalazi na putanji **Tablice > Logistika > Stanje lota**.
 
-In questa tabella è possibile codificare lo *Stato dei lotti* per definirne la validità.
+U ovoj tablici moguće je kodirati *Stanje lotova* radi definiranja njihove valjanosti.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja. 
 
-**Ricerca Stato lotto**
+**Pretraživanje stanja lota**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite sve željene filtere, potrebno je kliknuti na tipku **Traži** kako biste prikazali rezultate unutar mreže rezultata.  
 
-**Inserimento Stato lotto**
+**Unos stanja lota**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih kodova potrebno je kliknuti na prvu praznu redak u mreži ili pritisnuti tipku **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva **Šifra** i **Opis**.
 
-Un lotto è caratterizzato da uno stato che ne va a definire la validità. Per alcuni tipi di materiali in particolare, come i prodotti alimentari e farmaceutici, lo stato è obbligatorio (per es. nell'ambito farmaceutico un lotto che necessita di analisi prima di poter essere utilizzato avrà come stato iniziale *In quarantena* fino al completamento delle analisi).
+Lot karakterizira stanje koje definira njegovu valjanost. Za određene vrste materijala, poput prehrambenih i farmaceutskih proizvoda, stanje je obavezno (npr. u farmaceutskoj industriji lot koji zahtijeva analize prije upotrebe početno će imati stanje *U karanteni* dok se analize ne završe).
 
-#### Campi specifici 
+#### Specifična polja 
 
-> **Disp. prel. auto**: se attivo, questo lotto non verrà considerato dalla disponibilità;     
-> **Non disponibile per MRP**: se attivo, questo lotto verrà considerato dall'mrp solo se nei *Parametri MRP* dell'articolo è stato flaggato anche il flag *Considera lotti in stato non disponibile*. Se uno dei due flag *Non disp. per MRP* e *Considera lotti in stato non disponibile* non è attivo allora non verrà considerato nemmeno dall'MRP.
+> **Automatska privremena dostupnost**: ako je aktivno, ovaj lot neće biti uračunat u dostupnost;     
+> **Nedostupno za MRP**: Ako je aktivan, ovaj lot će biti uzet u obzir od strane MRP-a samo ako je u *Parametri MRP* artikla također označen flag *Razmotrite lotove s stanjem'nije raspoloživo' *. Ako jedan od ta dva flaga, *Nije dostupno za MRP* i *Razmotrite lotove s stanjem'nije raspoloživo' * nije aktivan, tada lot neće biti uzet u obzir ni od strane MRP-a.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link  [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

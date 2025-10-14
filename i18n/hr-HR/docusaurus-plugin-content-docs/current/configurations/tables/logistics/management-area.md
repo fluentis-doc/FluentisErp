@@ -1,20 +1,20 @@
 ---
-title: Area Gestionale
+title: Područje upravljanja
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Area Gestionale** e permette di gestire la codifica delle diverse *Aree Gestionali*.
+Tablica se nalazi na putanji **Tablice > Logistika > Područje upravljanja**i omogućuje upravljanje kodiranjem različitih *Područja upravljanja*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja. 
 
-Un esempio di utilizzo dell'*Area gestionale* lo troviamo nel [Calcolo costo](/docs/controlling/cost-calculation/cost/) o nella [Valorizzazione Distinta Base](/docs/erp-home/registers/production/bill-of-materials/assemblies-valorization/), in cui è possibile effettuare una *Valorizzazione da area gestionale*.
+Primjer korištenja *Područja upravljanja* nalazi se u [Izračunu troška](/docs/controlling/cost-calculation/cost/) ili u [Vrednovanju strukture proizvoda](/docs/erp-home/registers/production/bill-of-materials/assemblies-valorization/), gdje je moguće izvršiti *Vrednovanje prema području upravljanja*.
 
-**Inserimento Area Gestionale**
+**Unos područja upravljanja**
 
-La tabella è composta da due griglie: nella prima si inseriscono **Codice** e **Descrizione**; nella seconda è possibile imputare per ciascuna *Area gestionale* una serie di dati quali la *Categoria fiscale* o il *Tipo costo*. La tabella [Tipo costo](/docs/configurations/tables/logistics/cost-type/) può contenere a sua volta svariate tipologie di costo.
+Tablica se sastoji od dvije mreže: u prvu se unose **Šifra** i **Opis**; u drugu je moguće za svako *Područje upravljanja* unijeti niz podataka kao što su *Porezna kategorija* ili *Vrsta troška*. Tablica [Vrsta troška](/docs/configurations/tables/logistics/cost-type/) može sadržavati različite tipove troškova.  
 
-Per poter inserire nuove codifiche nella griglia superiore è necessario cliccare sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih šifri u gornju mrežu potrebno je kliknuti na prvi prazan redak ili pritisnuti tipku **Novo**.
 
-Per poter inserire nuove codifiche nella griglia inferiore è necessario selezionare prima l'area gestionale nella griglia superiore e successivamente inserire i dati richiesti sulla sulla prima riga vuota.
+Za unos novih šifri u donju mrežu potrebno je najprije odabrati Područje upravljanja u gornjoj mreži, a zatim unijeti potrebne podatke u prvi prazan redak.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link  [Funkcionalnosti, tipke i uobičajena polja](/docs/guide/common).

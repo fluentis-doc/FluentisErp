@@ -1,32 +1,32 @@
 ---
-title: Tipi materiale
+title: Tipovi materijala 
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi materiale**.
+Tablica se nalazi na putanji **Tablice > Logistika > Tipovi materijala**.
 
-In questa tabella è possibile gestire la codifica dei diversi *Tipi materiale* di imballaggio usati nella [Gestione Conai](/docs/sales/sales-flow/conai).
+U ovoj tablici moguće je upravljati šifriranjem različitih *Tipova materijala* ambalaže koji se koriste u okviru [CONAI upravljanja](/docs/sales/sales-flow/conai).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Tipi materiale**
+**Pretraživanje tipova materijala**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
 
-**Inserimento Tipi materiale**
+**Unos tipova materijala**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.  
 
-Nella griglia superiore vengono codificati i *Tipi materiale*. I campi obbligatori richiesti dal programma sono il **Codice** e la **Descrizione**.  
+U gornjoj rešetki se šifriraju *Tipovi materijala*. Obavezna polja koja sustav zahtijeva su: **Šifra** i **Opis**.  
 
-#### Campi specifici 
+#### Specifična polja 
 
-> **Codice materiale Conai**: codice alfanumerico che indica il tipo di materiale di cui è composto l'imballaggio (cioè Acciaio, Alluminio, Carta, Legno, Plastica, ecc.);     
-> **Classi articolo**: indica la [Classe](/docs/configurations/tables/logistics/item-class) a cui appartiene l'articolo;   
-> **Articolo per tassa di riciclo**: indica un codice articolo fittizio da utilizzare per l’inserimento della riga *Spesa Conai* in bolla/fattura (se non viene indicato un codice articolo, il materiale non sarà valido per la configurazione Conai negli articoli di vendita/acquisto);   
-> **Descrizione articolo**: indica la descrizione dell'*Articolo per tassa di riciclo*;    
-> **Note**: annotazioni libere.  
+> **CONAI šifra materijala**: alfanumerička šifra koja označava vrstu materijala od kojeg je ambalaža sastavljena (npr. čelik, aluminij, papir, drvo, plastika itd.);       
+> **Klasa artikla**: označava [Klasu](/docs/configurations/tables/logistics/item-class) kojoj pripada artikl;     
+> **Artikl za reciklažnu naknadu**: označava fiktivnu šifru artikla koja se koristi za unos retka *CONAI trošak* na otpremnici/računu (ako nije navedena šifra artikla, materijal neće biti valjan za CONAI konfiguraciju u artiklima prodaje/nabave); 
+> **Opis artikla**: opis *Artikla za reciklažnu naknadu*;    
+> **Bilješke**: slobodne napomene.   
 
-Nella griglia inferiore è possibile definire i *Costi di riciclo* associati a ciascun materiale inserito nella tabella superiore, ovvero le tariffe da applicare all’interno dei vari *range di date*, con l’**Unità di misura** da applicare: questa deve essere coerente con l’unità di misura che si utilizzerà all’interno degli articoli di vendita e degli articoli fittizi Conai.
+U donjoj rešetki moguće je definirati *Troškove reciklaže* povezane s pojedinim materijalima unesenima u gornjoj tablici, odnosno tarife koje se primjenjuju unutar različitih *raspona datuma*, zajedno s **Jedinicom mjere** koja se mora koristiti, a ta jedinica mora biti u skladu s jedinicom mjere definiranoj u prodajnim artiklima i fiktivnim CONAI artiklima.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento della *Gestione Conai* in Fluentis fare riferimento al seguente link [Gestione Conai](/docs/sales/sales-flow/conai).
+Za sve što nije detaljno opisano u ovom dokumentu o funkcioniranju *CONAI upravljanja* u Fluentisu, pogledajte sljedeći link [CONAI upravljanje](/docs/sales/sales-flow/conai).

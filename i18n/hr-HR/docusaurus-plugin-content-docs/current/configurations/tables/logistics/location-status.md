@@ -1,21 +1,21 @@
 ---
-title: Stato ubicazione
+title: Status lokacije
 sidebar_position: 23
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Stato ubicazione**.
+Tablica se nalazi na putu **Tablice > Logistika > Status lokacije**.
 
-In questa tabella è possibile gestire la codifica degli stati dell’[Ubicazione](/docs/logistics/warehouse/location/locations/) di magazzino.    
+U ovoj tablici moguće je upravljati kodiranjem statusa [lokacija](/docs/logistics/warehouse/location/locations/) di magazzino.    
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Stato ubicazione**
+**Pretraživanje statusa lokacije**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-**Inserimento Stato ubicazione**
+**Unos statusa lokacije**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.    
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih kodova potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.    
+Za novi zapis obavezno je unijeti polja koja program zahtijeva: **Šifra** i **Opis**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

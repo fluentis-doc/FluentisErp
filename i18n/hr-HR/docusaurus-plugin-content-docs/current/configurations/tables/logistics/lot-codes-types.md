@@ -1,80 +1,84 @@
 ---
-title: Tipo codice lotto
+title: Vrsta šifre lota
 sidebar_position: 26
 ---
 
-:::important A cosa serve
-La tabella Tipi Codice Lotto di Fluentis rappresenta uno strumento fondamentale per la personalizzazione e la gestione dei codici lotto utilizzati nella logistica e nella tracciabilità dei prodotti. Questa tabella consente di definire vari tipi di codice lotto in base alle specifiche esigenze aziendali, con l'obiettivo di ottimizzare le operazioni di gestione dei materiali e garantire una corretta identificazione dei lotti.
+:::important Čemu služi
+Tablica Tip šifre serije u sustavu Fluentis predstavlja ključno sredstvo za prilagodbu i upravljanje šiframa serija koje se koriste u logistici i praćenju proizvoda. Ova tablica omogućuje definiranje različitih vrsta šifri serija prema specifičnim poslovnim potrebama, s ciljem optimizacije upravljanja materijalima i osiguravanja točne identifikacije serija.
 
-All'interno di questa tabella, è possibile inserire nuovi codici lotto, specificando sia un codice identificativo che una descrizione associata. Inoltre, è possibile configurare parametri come il valore iniziale del numero progressivo e la gestione dei caratteri alfabetici, permettendo una maggiore flessibilità nella composizione dei codici lotto. È importante notare che ogni tipo di codice deve essere associato all'anagrafica articolo per garantire una corretta integrazione durante le procedure di creazione automatica del lotto.
+U okviru tablice moguće je unositi nove šifre serija, uz navođenje identifikacijskog koda i pripadajućeg opisa. Također je moguće konfigurirati parametre poput početne vrijednosti numeričkog brojača i upravljanja slovnim znakovima, čime se omogućuje veća fleksibilnost u sastavljanju šifre serije. Važno je napomenuti da svaki tip šifre mora biti povezan s artiklom u šifrarniku, kako bi se prilikom automatskog generiranja serijskog broja primijenila pravila definirana u ovoj tablici.
 
-La configurazione di questi codici lotto non solo facilita il controllo e la tracciabilità, ma si rivela essenziale anche in contesti di gestione multi-magazzino, dove la rintracciabilità delle giacenze diventa fondamentale. Gli utenti possono così navigare attraverso diverse sezioni della tabella per definire in dettaglio le caratteristiche, le associazioni e i progressivi dei lotti, contribuendo a una gestione più efficiente e accurata dei materiali all'interno dell'azienda.
+Ova konfiguracija ne samo da olakšava kontrolu i sljedivost, već je ključna i u kontekstu upravljanja s više skladišta, gdje je praćenje zaliha od presudne važnosti. Korisnici mogu detaljno definirati karakteristike, povezanosti i brojače serija kroz različite sekcije tablice, što doprinosi učinkovitijem i preciznijem upravljanju materijalima unutar poduzeća.  
 :::
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipo codice lotto**.
+:::
 
-In questa tabella è possibile codificare i *Tipi di codice lotto* personalizzandoli in base alle esigenze.
+Tablica se nalazi na putu **Tablice > Logistika > Tip šifre serije**.
 
-### Ricerca Codici lotto 
+U ovoj tablici moguće je kodirati *Tipove šifre serije* prilagođavajući ih specifičnim zahtjevima.  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati nell'aria di risultato.
+### Pretraživanje šifri serije   
 
-### Inserimento Codici lotto 
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u prikazu rezultata.
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+### Unos šifri serije  
 
-È necessario inserire **Codice** e **Descrizione** del tipo codice lotto, abilitare o meno il flag **Riempire valore progressivo** per riempire i valori mancanti nella numerazione, ed inserire il valore iniziale del progressivo numerico nel campo **Inizia valore progressivo** e quello alfabetico nel campo **Inizio valore carattere**. Ovviamente, il primo sarà il valore iniziale del **Numero progressivo**, mentre il secondo sarà il valore iniziale usato per i **Caratteri alfabetici**.
+Za unos novih kodova potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**. 
 
-Il **Tipo codice lotto** deve poi essere agganciato all'*Anagrafica articolo* nell'apposito ed omonimo campo situato nel tab [Lotti e serial number](/docs/erp-home/registers/items/create-new-item), in modo che nelle procedure che creano automaticamente il codice lotto per l'articolo in questione il lotto stesso venga generato secondo le regole impostate qui.
+Potrebno je unijeti **Šifru** i **Opis** tipa šifre serije, te po potrebi uključiti flag **Popuni vrijednost brojača**  kako bi se popunile praznine u numeraciji. Zatim treba unijeti početnu vrijednost numeričkog brojača u polje **Početna vrijednost brojača** te početnu slovnu vrijednost u polje **Početna vrijednost znaka**. Prva vrijednost predstavlja **početni brojčani brojač**, dok je druga početna vrijednost za **slovne znakove**.
 
-Al di sotto della tabella principale, sono presenti tre tab:   
-- **Dettagli tipo codice lotto**
-- **Dettagli tipo codice lotto definizione progressivo**  
-- **Dettagli tipo codice lotto dei valori chiave progressivi**    
+**Tip šifre serije** zatim mora biti povezan s *šifranikom artikla*  u pripadajućem istoimenom polju unutar kartice [Serije i serijski brojevi](/docs/erp-home/registers/items/create-new-item),  kako bi se prilikom automatskog generiranja šifre serije za predmetni artikl primijenila ovdje definirana pravila.
+ 
+Ispod glavne tablice nalaze se tri kartice:      
+- **Detalji tipa šifre serije**
+- **Detalji tipa šifre serije – definicija brojača**  
+- **Detalji tipa šifre serije – definicija brojača**    
 
-### Dettagli tipo codice lotto 
+### Detalji tipa šifre serije
 
-nella tabella *Codice predefinito*, sono presenti tutti i valori che è possibile utilizzare per la composizione del lotto che stiamo creando, che nello specifico sono:
+U tablici *Zadani kod*, nalaze se sve vrijednosti koje je moguće koristiti za sastavljanje šifre serije koju kreiramo. Konkretno, to su:  
 
-> *Classe*: riporta la classe dell'articolo;    
-> *Matricola*: riporta il codice articolo;     
-> *Caratteristica*: riporta la caratteristica dell'anagrafica articolo;     
-> *Cat. Merceologica*: riporta la categoria merceologica dell'anagrafica articolo;    
-> *Tipo Articolo*: riporta il tipo articolo dell'anagrafica articolo;    
-> *Variante*: riporta la variante dell'articolo;    
-> *Numero progressivo*: è un progressivo di tipo numerico;          
-> *Caratteri alfabetici*: è un progressivo di tipo alfabetico, al contrario del *Numero progressivo* che è numerico;        
-> *Giorno Data Inserimento*: riporta il giorno della data inserimento;    
-> *Mese Data Inserimento*: riporta il mese della data inserimento;    
-> *Anno Data Inserimento*: riporta l'anno della data inserimento;    
-> *Giorno Data Scadenza*: riporta il giorno della data di scadenza;    
-> *Mese Data Scadenza*: riporta il mese della data di scadenza;    
-> *Anno Data Scadenza*: riporta l'anno della data di scadenza;     
-> *Tipo Lotto*: riporta il tipo lotto dell'articolo;     
-> *Associazione Anno Lettera*: riporta il valore associato all'anno nella tabella [Associazione anno - lettera](/docs/configurations/tables/general-settings/year-letter-association);    
-> *Associazione Mese Lettera*: riporta il valore associato al mese nella tabella [Associazione mese - lettera](/docs/configurations/tables/general-settings/month-letter-association);    
-> *Nomignolo fornitore*: riporta il nomignolo presente in anagrafica del fornitore;          
-> *Numero Bolla Acquisto*: riporta il numero della bolla di acquisto;     
-> *Numero Fattura Acquisto*: riporta il numero della fattura di acquisto;    
-> *Lotto Fornitore*: riporta il numero del lotto fornitore.    
+> *Klasa*: prikazuje klasu artikla;       
+> *Šifra artikla*: prikazuje šifru artikla;        
+> *Karakteristika*: prikazuje karakteristiku iz šifrarnika artikla;       
+> *Kategorija proizvoda*: prikazuje robnu kategoriju artikla;    
+> *Tip artikla*: prikazuje tip artikla;      
+> *Varijanta*: prikazuje varijantu artikla;     
+> *Brojčani brojač*: numerički brojač;           
+> *Slovni znakovi*: To je brojač slovnog tipa, za razliku od *Progresivnog broj* koji je numerički;          
+> *Dan unosa*: dan datuma unosa;       
+> *Mjesec unosa*: mjesec datuma unosa;       
+> *Godina unosa*: godina datuma unosa;    
+> *Dan isteka*: dan datuma isteka;     
+> *Mjesec isteka*: mjesec datuma isteka;    
+> *Godina isteka*: godina datuma isteka;    
+> *Tip serije*: prikazuje tip serije artikla;      
+> *Poveznica godina-slovo*: vrijednost iz tablice [Poveznica godina - slovo](/docs/configurations/tables/general-settings/year-letter-association);    
+> *Poveznica mjesec-slov*: vrijednost iz tablice [Poveznica mjesec-slov](/docs/configurations/tables/general-settings/month-letter-association);    
+> *Nadimak dobavljača*: nadimak iz šifarnika dobavljača;          
+> *Broj otpremnice*: broj otpremnice ulazne narudžbe;    
+> *Broj računa*: broj računa ulazne narudžbe;    
+> *Dobavljačeva serija*: broj serije dobavljača.    
 
-Ognuno di questi, a seconda delle esigenze, deve essere poi spostato nella tabella *Dettagli tipo codice lotto* tramite l'uso degli appositi pulsanti presenti nella ribbon bar. 
-Per ciascuna voce aggiunta, è possibile definire la *Lunghezza* e il *Carattere di riempimento*.
+Svaka od ovih vrijednosti, ovisno o potrebi, može se prenijeti u tablicu *Detalji tipa šifre serije* pomoću pripadajućih tipki u traci izbornika. 
+Za svaku dodanu stavku moguće je definirati *Duljinu* i *Znak za popunjavanje*.
 
-#### Pulsanti specifici  
-> **Sposta: Predefinito -> Dettaglio**: permette di aggiungere una delle voci presenti nella tabella *Codice predefinito* alla tabella *Dettaglio tipo codice lotto*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Codice predefinito* del tab *Dettaglio tipo codice lotto*;          
-> **Sposta: Dettaglio -> Predefinito**: permette di rimuovere una delle voci presenti nella tabella *Dettaglio tipo codice lotto* riportandola nella tabella *Codice predefinito*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Dettaglio tipo codice lotto* del tab *Dettaglio tipo codice lotto*;               
+#### Posebne tipke 
+> **Premjesti: Zadano -> Detalji**:  omogućuje dodavanje odabrane stavke iz tablice *Zadani kod* u *Detalje tipa šifre serije*. Tipka se aktivira samo kada je označen redak u tablici *Zadani kod* unutar kartice *Detalji tipa šifre serije*;         
+> **Premjesti: Detalji -> Zadano**: omogućuje uklanjanje stavke iz tablice *Detalji tipa šifre serije* i vraćanje u *Zadani kod*. Tipka se aktivira samo kada je označen redak u kartici *Detalji tipa šifre serije*.              
 
-#### Dettagli tipo codice lotto definizione progressivo 
+#### Detalji tipa šifre serije – definicija brojača 
 
-In questo tab è possibile definire quali delle voci presenti nella tabella *Codice predefinito* debbano comporre la radice del codice lotto, quindi quella parte del codice che rimarrà fissa mentre varierà il progressivo. In questo caso non è possibile selezionare le voci *Numero progressivo* e *Caratteri alfabetici* perchè essendo dei progressivi variano continuamente, mentre è possibile selezionare tutte le altre voci.
+U ovoj kartici moguće je definirati koje stavke iz *Zadanog koda* čine osnovu šifre serije – tj. dio koda koji ostaje fiksan dok se brojač mijenja.  
+Nije moguće odabrati stavke *Brojčani brojač* i *Slovni znakovi*, jer su to promjenjive vrijednosti.
 
-#### Pulsanti specifici  
-> **Sposta: Predefinito -> Definizione progressivo**: permette di aggiungere una delle voci presenti nella tabella *Codice predefinito* alla tabella *Definizione progressivo*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Codice predefinito* del tab *Dettaglio tipo codice lotto definizione progressivo*;          
-> **Sposta: Definizione progressivo -> Predefinito**: permette di rimuovere una delle voci presenti nella tabella *Definizione progressivo* riportandola nella tabella *Codice predefinito*. Questo pulsante si abilita solamente dopo aver selezionato una riga nella tabella *Definizione progressivo* del tab *Dettaglio tipo codice lotto definizione progressivo*;  
+#### Posebne tipke  
+> **Premjesti: Zadano -> Definicija brojača**: dodaje stavku iz *Zadanog koda* u karticu *Definicija brojača*. Tipka se aktivira tek nakon što označite redak u kartici *Detalji tipa šifre serije – definicija brojača*;          
+> **Premjesti: Definicija brojača -> Zadano**: uklanja stavku iz kartice *Definicija brojača* i vraća je u *Zadani kod*. Tipka se aktivira nakon označavanja retka u istoj kartici.
+---  
 
-#### Dettagli tipo codice lotto dei valori chiave progressivi 
+#### Detalji tipa šifre serije – vrijednosti ključnih brojača 
 
-In questa tab vengono visualizzati tutti i valori degli ultimi progressivi relativi ad ogni singola radice del codice.
+U ovoj kartici prikazane su sve zadnje korištene vrijednosti brojača povezane s pojedinom osnovom šifre serije.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).  

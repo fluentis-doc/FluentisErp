@@ -1,21 +1,21 @@
 ---
-title: Tipi lotto
+title: Tipovi lota
 sidebar_position: 33
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi lotto**.
+Tablica se nalazi na putanji **Tabelle > Logistica > Tipi lotto**.
 
-In questa tabella è possibile gestire la codifica delle diverse tipologie di *Tipi lotto*.
+U ovoj tablici moguće je upravljati kodiranjem različitih tipova *Tipova lotova*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje već postojećih za pregled, izmjenu ili brisanje.  
 
-**Ricerca Tipi lotto**
+**Pretraživanje Tipova lotova**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za rezultat. Nakon što postavite sve željene filtre, potrebno je kliknuti na tipku **Traži** kako biste prikazali rezultate unutar mreže rezultata.
 
-**Inserimento Tipi lotto**
+**Unos Tipova lotova**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih kodiranja potrebno je kliknuti na prvu praznu redak unutar mreže ili pritisnuti tipku **Novo**.   
+Za novi zapis potrebno je unijeti obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link  [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

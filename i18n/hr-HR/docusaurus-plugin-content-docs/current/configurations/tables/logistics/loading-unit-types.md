@@ -3,39 +3,39 @@ title: Tipovi utovarnih jedinica
 sidebar_position: 37
 ---
 
-:::important A cosa serve
-La tabella Tipo UDC (Unità Di Carico) di Fluentis consente di codificare e definire le varie categorie di UDC, fornendo un framework strutturato che facilita la movimentazione e la tracciabilità dei materiali. Gli utenti possono creare nuovi record, modificare quelli esistenti o cancellarli, utilizzando un'interfaccia intuitiva.
+:::important Čemu služi
+Tablica Tip utovarne jedinice u Fluentisu omogućuje kodiranje i definiranje različitih kategorija utovarnih jedinica, pružajući strukturirani okvir koji olakšava rukovanje materijalima i njihovo praćenje. Korisnici mogu kreirati nove zapise, mijenjati postojeće ili ih brisati putem intuitivnog sučelja.
 
-La procedura di ricerca è semplice e consente di filtrare rapidamente i tipi di UDC desiderati, visualizzando i risultati in una griglia di facile lettura. Ogni record può contenere dettagli chiave, come un codice alfanumerico univoco e una descrizione, che identificano chiaramente il tipo di unità di carico. Questa gestione efficace delle UDC è essenziale per garantire una logistica fluida e organizzata, contribuendo così a migliorare l'efficienza operativa all'interno dell'azienda.
+Postupak pretraživanja je jednostavan i omogućuje brzo filtriranje željenih tipova utovarnih jedinica, prikazujući rezultate u lako čitljivoj mreži. Svaki zapis može sadržavati ključne podatke, poput jedinstvenog alfanumeričkog koda i opisa, koji jasno identificiraju tip utovarne jedinice. Učinkovito upravljanje utovarnim jedinicama ključno je za osiguravanje nesmetane i organizirane logistike, čime se doprinosi većoj operativnoj učinkovitosti unutar poduzeća.
 :::
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipi UDC*.
+Tablica omogućuje upravljanje kodiranjem različitih vrsta *Tipova utovarnih jedinica*.
 
 Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 
-**Ricerca Tipi UDC**
+**Pretraživanje tipova utovarnih jedinica**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata. 
 
-**Inserimento Tipi UDC**
+**Unos tipova utovarnih jedinica**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih kodova potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.
 
-#### Campi specifici 
+#### Specifična polja
 
-> **Tipo**: indica il codice del tipo unità di carico;    
-> **Descrizione**: indica la descrizione del tipo unità di carico;    
-> **Tipo gruppo**: indica il tipo del gruppo selezionato nella tabella [Tipo gruppo](/docs/configurations/tables/logistics/loading-unit-group-type/), il quale permette di definire come deve essere composto una parte del codice dell'unità di carico;      
-> **Descrizione tipo gruppo**: indica la descrizione del tipo gruppo;          
-> **Unità di misura dimensioni**: indica l'unità di misura in cui sono definite le dimensioni di altezza, larghezza e profondità dell'unità di carico vuota; in fase di inserimento viene proposta l'unità di misura con il flag *Unità di misura dimensioni* attivo presente nella tabella [Unità di misura](/docs/configurations/tables/general-settings/measurement-units/);     
-> **Altezza / Larghezza / Profondità**: indicano rispettivamente i valori di altezza, larghezza e profondità dell'unità di carico vuota nell'unità di misura definita nel campo **Unità di misura dimensioni**;         
-> **Unità di misura Peso**: indica l'unità di misura in cui è definito il peso dell'unità di carico vuota; in fase di inserimento viene proposta l'unità di misura con il flag *Unità di misura peso* attivo presente nella tabella [Unità di misura](/docs/configurations/tables/general-settings/measurement-units/);   
-> **Peso**: indica il valore del peso dell'unità di carico vuota nell'unità di misura definita nel campo **Unità di misura peso**;         
-**Unità di misura volume**: indica l'unità di misura in cui è definito il volume dell'unità di carico vuota; in fase di inserimento viene proposta l'unità di misura con il flag *Unità di misura volume* attivo presente nella tabella [Unità di misura](/docs/configurations/tables/general-settings/measurement-units/);       
-> **Volume**: indica il valore del volume dell'unità di carico vuota nell'unità di misura definita nel campo **Unità di misura peso**; questo verrà calcolato in automatico sulla base dei valori inseriti nei campi **Altezza / Larghezza / Profondità**, ma sarà comunque modificabile manualmente;             
-> **Volume variabile**: di default è attivo ed indica che il volume dell'unità di carico è variabile, quindi il volume totale varierà a seconda di che cosa e come ci verrà caricato, ad esempio un pallet; mentre se non attivo, significa che il volume dell'unità di carico non varierà come nel caso di un cassone;      
-> **Tipo imballo**: permette di indicare il tipo di imballo utilizzato tra quelli inseriti nella tabella [Tipi imballo](/docs/configurations/tables/logistics/packing-type/);     
-> **Descrizione tipo imballo**: indica la descrizione del tipo di imballo utilizzato;      
-> **Numerazione**: indica la numerazione del tipo unità di carico.         
+> **Tip**: označava šifru tipa utovarne jedinice;   
+> **Opis**: opis tipa utovarne jedinice;    
+> **Tip grupe**: označava tip grupe odabrane u tablici [Tip grupe](/docs/configurations/tables/logistics/loading-unit-group-type/), koji definira kako se sastavlja dio šifre utovarne jedinice;        
+> **Opis tipa grupe**: opis odabranog tipa grupe;          
+> **Jedinica mjere za dimenzije**: označava jedinicu mjere u kojoj su definirane dimenzije visine, širine i dubine prazne utovarne jedinice; prilikom unosa predložena je jedinica mjere sa aktivnim flagom *Jedinica mjere za dimenzije* iz tablice [Jedinice mjere](/docs/configurations/tables/general-settings/measurement-units/);     
+> **Visina / Širina / Dubina**: označavaju vrijednosti visine, širine i dubine prazne utovarne jedinice, izražene u jedinici mjere definiranoj u polju **Jedinica mjere za dimenzije**;           
+> **Jedinica mjere težine**: označava jedinicu mjere u kojoj je definirana težina prazne utovarne jedinice; prilikom unosa predložena je jedinica mjere s aktivnim flagom *Jedinica mjere težine* iz tablice [Jedinice mjere](/docs/configurations/tables/general-settings/measurement-units/);   
+> **Težina**: označava težinu prazne utovarne jedinice u definiranoj jedinici mjere iz polja **Jedinica mjere za težinu**;         
+**Jedinica mjere za volumen**: označava jedinicu mjere u kojoj je definiran volumen prazne utovarne jedinice; prilikom unosa predložena je jedinica mjere s aktivnim flagom *Jedinica mjere za volumen* iz tablice [Jedinice mjere](/docs/configurations/tables/general-settings/measurement-units/);       
+> **Volumen**: označava volumen prazne utovarne jedinice u definiranoj jedinici mjere; automatski se izračunava na temelju vrijednosti unesenih u polja **Unità di misura peso**; questo verrà calcolato in automatico sulla base dei valori inseriti nei campi **Visina / Širina / Dubina**, ali ga je moguće i ručno prilagoditi;               
+> **Promjenjiv volumen**: po zadanim postavkama je aktivan i označava da je volumen utovarne jedinice promjenjiv – dakle, ukupan volumen će varirati ovisno o tome što i kako se utovara (npr. paleta); ako nije aktivan, znači da se volumen ne mijenja, kao kod npr. metalnih sanduka;       
+> **Tip ambalaže**: omogućuje označavanje vrste ambalaže korištene među onima definiranima u tablici [Tipovi ambalaže](/docs/configurations/tables/logistics/packing-type/);     
+> **Opis tipa ambalaže**: opis korištene vrste ambalaže;      
+> **Numeracija**: označava numeraciju tipa utovarne jedinice.      
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link  [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

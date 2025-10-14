@@ -1,18 +1,18 @@
 ---
-title: Valutazione Lotto
+title: Procjena lotova
 sidebar_position: 39
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Valutazione Lotto*.
+Tablica omogućuje upravljanje kodiranjem različitih vrsta *Procjene lotova*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi ih se moglo pregledavati, uređivati ili brisati.  
 
-**Ricerca Valutazione Lotto**
+**Pretraživanje procjene lotove**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite sve željene filtere, potrebno je kliknuti na tipku **Traži** kako biste prikazali rezultate unutar mreže rezultata.  
 
-**Inserimento Valutazione Lotto**
+**Unos procjene lotova**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih kodova potrebno je kliknuti na prvu praznu redak u mreži ili pritisnuti tipku **Novi**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link[Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

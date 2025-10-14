@@ -1,24 +1,24 @@
 ---
-title: Marchi automezzi
+title: Marke vozila
 sidebar_position: 56
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Marchi automezzi**.
+Tablica se nalazi na putanji **Tablice > Logistika > Marke vozila**.
 
-In questa tabella è possibile codificare le *Marchi automezzi* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+U ovoj tablici moguće je šifrirati *Marke vozila* koje se kasnije mogu odabrati unutar [Šifarnika vozila](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Marchi automezzi**
+**Pretraživanje marki vozila**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u rešetki rezultata.
 
-**Inserimento Marchi automezzi**
+**Unos marki vozila**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
+Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra** i **Opis**.
+Pomoću tipke **Obriši** moguće je izbrisati odabrani zapis. 
 
-Inoltre, è possibile indicare nella tabella sottostante una descrizione dei vari modelli di mezzi di quel marchio.
+Također, u donjoj rešetki moguće je unijeti opise različitih modela vozila koji pripadaju toj marki. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link  [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

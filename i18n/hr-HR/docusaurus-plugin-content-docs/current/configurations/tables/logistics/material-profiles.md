@@ -1,28 +1,28 @@
 ---
-title: Profili materiale
+title: Materijalni profili
 sidebar_position: 7
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Profili materiale**.  
+Tablica se nalazi na putanji **Tablice > Logistika > Profili materijala**.  
 
-In questa tabella è possibile codificare i diversi *Profili materiale* da associare ai singoli articoli.  
-Un esempio di utiizzo lo troviamo all'interno dell'Anagrafica Articolo nel tabulatore [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-item) sotto la voce *Profilo*.  
+U ovoj tablici moguće je šifrirati različite *Profili materijala* koje se zatim mogu povezati s pojedinačnim artiklima.    
+Primjer korištenja nalazi se unutar Šifarnika artikla, u kartici [Težine/Dimenzije](/docs/erp-home/registers/items/create-new-item) pod stavkom *Profil*.  
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.  
 
-**Ricerca Profili materiale**
+**Pretraživanje profila materijala**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u rešetki s rezultatima.  
 
-**Inserimento Profili materiale**
+**Unos profila materijal**
 
-Per poter inserire nuovi *Profili materiali* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Profila materijala* potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-#### Campi specifici 
+#### Specifična polja
 
-> **Codice**: è il codice del *Profilo materiale*.   
-> **Descrizione**: è la descrizione del *Profilo materiale*.     
-> **Note**: annotazioni libere.  
+> **Šifra**: šifra *Profila materijala*.   
+> **Opis**: opis *Profila materijala*.     
+> **Bilješke**: slobodne napomene.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link [Funkcionalnosti, tipke i uobičajena polja](/docs/guide/common).

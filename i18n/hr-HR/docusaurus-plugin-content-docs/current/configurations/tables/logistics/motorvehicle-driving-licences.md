@@ -1,22 +1,22 @@
 ---
-title: Licenze di guida automezzo
+title: Dozvole za upravljanje vozilima
 sidebar_position: 57
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Licenze di guida automezzo**.
+Tablica se nalazi na putanji **Tablice > Logistika > Dozvole za upravljanje vozilima.**.
 
-In questa tabella è possibile codificare le *Licenze di guida automezzo* che potranno essere selezionati nell'[Angrafica autisti](/docs/logistics/shipping/shippings-intro).
+U ovoj tablici moguće je šifrirati *Dozvole za upravljanje vozilima* koje se mogu odabrati unutar [Šifarnika vozača](/docs/logistics/shipping/shippings-intro).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Licenze di guida automezzo**
+**Pretraživanje dozvola za upravljanje vozilima**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rešetke. 
 
-**Inserimento Licenze di guida automezzo**
+**Unos dozvola za upravljanje vozilima**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
+Za novi zapis obavezno je unijeti minimalno polja koja sustav zahtijeva: **Šifra** i **Opis**.
+Pomoću tipke **Obriši** moguće je izbrisati odabrani zapis. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
