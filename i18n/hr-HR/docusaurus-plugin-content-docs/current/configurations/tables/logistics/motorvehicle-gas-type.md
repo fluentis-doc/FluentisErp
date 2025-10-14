@@ -1,9 +1,9 @@
 ---
-title: Tipi carburanti autoveicolo
+title: Vrste goriva za motorna vozila
 sidebar_position: 55
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi carburanti autoveicolo**.
+Tablica se nalazi na putanji **Tablice > Logistika > Vrste goriva za motorna vozila**.
 
 In questa tabella è possibile codificare i *Tipi carburanti autoveicolo* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
 
