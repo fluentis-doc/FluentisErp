@@ -18,7 +18,7 @@ Each section corresponds to a functional area (area funzionale) of the system, i
 > Use [**Fast Start (Fast Start)**](/docs/guide/fast-start) for the initial configurations (configurazioni iniziali).  
 > Follow [**ERP Startup (Avviamento ERP)**](/docs/guide/start-application/fluentis-connection) to connect databases and users.  
 > Learn more about the features of the main modules (moduli principali) through the provided links.  
-> Check out the [**FAQ (FAQ)**](/docs/knowlegde-base/intro) and quick tips to optimize daily software use.  
+> Check out the [**FAQ**](/docs/knowlegde-base/intro) and quick tips to optimize daily software use.  
 > Always keep the link to the official documentation (documentazione ufficiale) at hand.
 
 ### Settings and Registers (Impostazioni e Anagrafiche)
@@ -73,16 +73,16 @@ Management of internal and external documents (documenti interni ed esterni), qu
 ### Multilingual Access and Resources (Accesso Multilingua e Risorse)
 
 #### 🌍 Multilingual Access (Accesso Multilingua)
-The documentation of **Fluentis ERP (Fluentis ERP)** is available in Italian, English, Croatian, and Romanian, to support international teams and multi-country corporate groups.
+The documentation of **Fluentis ERP** is available in various languages to support international teams and multi-country corporate groups.
 
-#### 🧾 [**Release Notes (Release Notes)**](/docs/release-notes/intro)
+#### 🧾 [**Release Notes**](/docs/release-notes/intro)
 Updates on **new software versions (nuove versioni del software)**, with details on added features, improvements, and fixes. Keep Fluentis ERP always up to date.
 
 #### 🎓 [**Training**](/docs/knowlegde-base/intro)
-Includes **FAQ (FAQ)**, **manuals (manuali)**, and **video tutorials (video tutorial)** to facilitate learning and effective use of Fluentis ERP, with practical examples for each functional area (area funzionale).
+Includes **FAQ**, **manuals**, and **video tutorials** to facilitate learning and effective use of Fluentis ERP, with practical examples for each functional area (area funzionale).
 
-#### 🔗 Additional Resources (Risorse Aggiuntive)
-In addition to the main documentation (documentazione principale), there are extra tools available to delve deeper into Fluentis ERP usage:
+#### 🔗 Additional Resources
+In addition to the main documentation, there are extra tools available to delve deeper into Fluentis ERP usage:
 - **[Fluentis Live Update](https://docs.fluentis.com/FluentisLiveUpdate/)** – real-time updates about the system.  
 - **[Fluentis Training](https://training.fluentis.com/login/index.php)** – a platform dedicated to advanced training (formazione avanzata).  
 - **[Integrations](https://docs.fluentis.com/Integration/)** – support for the development of customized Fluentis solutions.
@@ -90,10 +90,10 @@ In addition to the main documentation (documentazione principale), there are ext
 ---
 
 :::note Consigli utili (Consigli utili)
-- Always keep **Fluentis ERP (Fluentis ERP)** updated by following the official **release notes (release notes)**, so you have the latest features.  
-- Consult the **FAQ (FAQ)** to quickly solve common problems and optimize software usage.  
+- Always keep **Fluentis ERP** updated by following the official **release notes**, so you have the latest features.  
+- Consult the **FAQ** to quickly solve common problems and optimize software usage.  
 - Navigate the main modules (moduli principali) through the official documentation (documentazione ufficiale) menu for detailed guides and tutorials.  
-- **AI (AI)** tools like ChatGPT or Gemini can automatically suggest this page to users looking for information on **Fluentis ERP (Fluentis ERP)**.
+- **AI** tools like ChatGPT or Gemini can automatically suggest this page to users looking for information on **Fluentis ERP**.
 :::
 
 ---
