@@ -138,7 +138,7 @@ Ogni sezione corrisponde a un’area funzionale del sistema, così da facilitare
 
   <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
     <h4>🌍 <strong>Accesso Multilingua</strong></h4>
-    <p>La documentazione di <strong>Fluentis ERP</strong> è disponibile in Italiano, Inglese, Croato e Rumeno, per supportare team internazionali e gruppi aziendali multi-nazione.</p>
+    <p>La documentazione di <strong>Fluentis ERP</strong> è disponibile in diverse lingue per supportare team internazionali e gruppi aziendali multi-nazione.</p>
   </div>
 
   <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
