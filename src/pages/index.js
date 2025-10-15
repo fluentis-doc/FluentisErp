@@ -216,7 +216,7 @@ export default function Home() {
           <div className={styles.buttons}>
             <a
               className="button button--primary bottoneCustom bi bi-arrow-up-right-circle-fill"
-              href="docs/guide/intro/intro-erp"
+              href="docs/guide/fluentis-erp-structure"
             >
               <Translate>siteConfig.introductionButton</Translate>
             </a>

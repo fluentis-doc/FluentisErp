@@ -6,7 +6,7 @@ sidebar_position: 1
 In an ERP software like Fluentis, where there is a connection and synergy between various areas and modules and a shared data origin among various managed companies and the different areas and functionalities involved, efficient and effective management of **Registers** plays a fundamental role.
 
 :::tip[Info]
-For a general introduction and in-depth information on the **ERP structure**, click [**here**](/docs/guide/intro/intro-erp).
+For a general introduction and in-depth information on the **ERP structure**, click [**here**](/docs/guide/fluentis-erp-structure).
 :::
 
 This basic data significantly automates downstream procedures by reading the data contained within it.

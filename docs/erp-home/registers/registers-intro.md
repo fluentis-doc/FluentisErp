@@ -6,7 +6,7 @@ sidebar_position: 1
 In un software ERP come Fluentis, dove esiste un collegamento ed una sinergia tra le varie aree e moduli e sussiste un'origine dati condivisa tra varie aziende gestite e le varie aree e funzionalità coinvolte, un ruolo fondamentale riveste un 'efficiente ed efficace gestione delle **anagrafiche**.
 
 :::tip[Info]
-Per un'introduzione generale e approfondimento sulla **struttura ERP** clicca [**qui**](/docs/guide/intro/intro-erp)
+Per un'introduzione generale e approfondimento sulla **struttura ERP** clicca [**qui**](/docs/guide/fluentis-erp-structure)
 :::
 
 Questi dati di base permettono di automatizzare notevolmente le procedure a valle tramite la lettura dei dati in esse contenute.

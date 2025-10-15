@@ -6,7 +6,7 @@ sidebar_position: 1
 En un software ERP como Fluentis, donde existe un enlace y una sinergia entre las diversas áreas y módulos y hay una fuente de datos compartida entre diversas empresas gestionadas y las diferentes áreas y funcionalidades involucradas, desempeña un papel fundamental una gestión eficiente y efectiva de los **Registros**.
 
 :::tip[Información]
-Para una introducción general y un análisis sobre la **estructura ERP**, haz clic [**aquí**](/docs/guide/intro/intro-erp)
+Para una introducción general y un análisis sobre la **estructura ERP**, haz clic [**aquí**](/docs/guide/fluentis-erp-structure)
 :::
 
 Estos datos básicos permiten automatizar considerablemente los procedimientos posteriores mediante la lectura de los datos que contienen.

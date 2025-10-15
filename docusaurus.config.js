@@ -91,7 +91,7 @@ const config = {
           position: 'left',
           items: [
             {
-              to: 'docs/guide/intro/intro-erp/',
+              to: 'docs/guide/fluentis-erp-structure/',
               activeBasePath: 'docs',
               label: 'Introduzione',
             },
