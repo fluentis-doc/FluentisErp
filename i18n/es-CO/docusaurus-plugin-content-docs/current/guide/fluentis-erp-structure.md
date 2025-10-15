@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Introducción y Estructura de la Documentación Fluentis ERP
 description: Descubre cómo está organizada la documentación oficial de Fluentis ERP. Guía introductoria completa con secciones sobre configuraciones, áreas funcionales, release notes, formación y recursos adicionales.
@@ -174,4 +173,3 @@ Cada sección corresponde a un área funcional del sistema, para facilitar la b�
 ---
 
 Para más información, visita el sitio oficial: [www.fluentis.com](https://www.fluentis.com)
-```
