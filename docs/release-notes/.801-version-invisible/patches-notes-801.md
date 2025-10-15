@@ -3,6 +3,15 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 801.0026 - 15/10/2025
+
+> -	MES - Verticalizzazione Pharma - Ordini di produzione - Corretta anomalia che non effettuava un refresh della form al cambio stato workflow di "Parzialmente associato", non visualizzando automaticamente la griglia del dettaglio dei Lotti. (#TT04063/25) 
+> -	MES - Verticalizzazione Pharma - Ordini di produzione - Corretta anomalia che non decrementava la "Quantità totale" di consumo del materiale principale assegnando una "Quantità totale" di consumo ai materiali alternativi. (#TT04062/25) 
+> -	SCM - Dettaglio righe ordini: Risolta anomalia che causava l’applicazione delle modifiche anche a righe non selezionate, nel caso in cui fossero state deselezionate a seguito dell’applicazione di un filtro nella griglia. (#TT04404/25) 
+> -	SCM Nir - correzione delle sorgenti lotti e delle quantità residue. TT04344/25 
+> -	SH - Documenti Sdi: Abilitato l’invio massivo dei Documenti di Vendita in uscita anche per file Sdi importati dall’esterno. (#TT03619/25)  
+WMS - Corretto errore in ricevimento merce al salvataggio nel ricalcolo delle scadenze.(#TT04454/25) 
+
 ### Patch 801.0025 - 10/10/2025
 
 > -	CO - Valorizzazione Distinta Base - E' stato corretto il calcolo del Costo dell'articolo. Il costo considera la ripartizione del Costo di attrezzaggio sulla base della quantità indicata nel parametro Lotto (parametro richiesto all'esecuzione del report) Costo materiali + Costo lavorazioni: macchina, manodopera ed esterne + Costo attrezzaggio / Lotto. (#TT04238/25) 
