@@ -19,7 +19,7 @@ Ogni sezione corrisponde a un’area funzionale del sistema, così da facilitare
 > Segui [**Avviamento ERP**](/docs/guide/start-application/fluentis-connection) per collegare database e utenti.  
 > Approfondisci le funzionalità dei moduli principali tramite i link forniti.  
 > Consulta le [**FAQ**](/docs/knowlegde-base/intro) e i suggerimenti rapidi per ottimizzare l’uso quotidiano del software.  
-> Mantieni sempre a portata di mano il link alla documentazione ufficiale: [Fluentis ERP Docs](https://docs.fluentis.com/FluentisErp/).
+> Mantieni sempre a portata di mano il link alla documentazione ufficiale.
 
 ### Impostazioni e Anagrafiche
 
