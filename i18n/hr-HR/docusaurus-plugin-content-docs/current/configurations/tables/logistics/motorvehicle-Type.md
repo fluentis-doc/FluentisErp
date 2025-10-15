@@ -3,20 +3,20 @@ title: Vrste vozila
 sidebar_position: 54
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi automezzi**.
+Tablica se nalazi na putanji **Tablice > Logistika > Vrste vozila**.
 
 U ovoj tablici moguće je kodirati *Vrste vozila* koje će se moći odabrati u [Registru vozila](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Tipi automezzi**
+**Pretraživanje vrsta vozila**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata. 
 
-**Inserimento Tipi automezzi**
+**Unos novih vrsta vozila**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.      
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.        
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.        
+Za svaki novi zapis obavezno je unijeti polja koja program zahtijeva: **Šifra** i **Opis**.        
+Pritiskom na tipku **Otkaži** moguće je izbrisati odabrani zapis.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

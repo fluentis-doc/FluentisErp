@@ -1,40 +1,40 @@
 ---
-title: Imballi a rendere
+title: Povratna ambalaža
 sidebar_position: 15
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Imballi a rendere**.
+Tablica se nalazi na putanji **Tablice > Logistika > Povratna ambalaža**.
 
-In questa tabella è possibile codificare i diversi *Imballi a rendere* da utilizzare nella *Gestione imballi* nei documenti di acquisto, vendita e conto lavoro.
+U ovoj tablici moguće je kodirati različite vrste *Povratne ambalaže* koje se koriste u *Upravljanju ambalažom* unutar dokumenata nabave, prodaje i rada s podizvođačima.   
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Imballi a rendere**
+**Pretraživanje povratne ambalaže**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
 
-**Inserimento Imballi a rendere**
+**Unos povratne ambalaže**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Inserimento**.  
+Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Umetanje**.  
 
-Questa tabella contiene gli articoli che sono da considerarsi *Imballi a rendere* per la tracciabilità della giacenza. L’articolo inserito in questa tabella deve avere come Natura articolo: *Imballo* (la Natura articolo si inserisce in Anagrafica articolo, tab [Generalità](/docs/erp-home/registers/items/create-new-item)).     
-Attraverso i flag in griglia è possibile scegliere in quali aree l'articolo sarà gestibile per essere movimentato.    
+Ova tablica sadrži artikle koji se smatraju *Povratnom ambalažome* radi praćenja zaliha. Artikl unesen u ovu tablicu mora imati kao Vrstu artikla postavljeno: *Ambalaža* (vrsta artikla unosi se u šifrarniku artikala, kartica [Općenito](/docs/erp-home/registers/items/create-new-item)).     
+Pomoću flagova u tablici moguće je odabrati u kojim će područjima artikl biti dostupan za manipulaciju.  
 
-#### Dati obbligatori 
+#### Obavezni podaci
 
-> **Codice**: è il codice dell'*Imballo a rendere*;     
-> **Descrizione**: è la descrizione dell'*Imballo a rendere*;   
-> **Classe articolo**: indica la [Classe](/docs/configurations/tables/logistics/item-class) a cui appartiene l'articolo;   
-> **Codice articolo**: indica il codice dell'articolo.    
+> **Šifra**: šifra *Povratne ambalaže*;     
+> **Opis**: opis *povratne ambalaže*;   
+> **Klasa artikla**: označava [Klasu](/docs/configurations/tables/logistics/item-class) kojoj artikl pripada;   
+> **Šifra artikla**: šifra samog artikla.    
 
-#### Campi specifici  
+#### Specifična polja  
 
-> **Utilizzo negli acquisti**:  attivando questo flag l'imballo sarà visibile nei documenti dell'area acquisti;     
-> **Utilizzo nel conto lavoro**: attivando questo flag l'imballo sarà visibile nei documenti dell'area conto lavoro;   
-> **Utilizzo nelle vendite**: attivando questo flag l'imballo sarà visibile nei documenti dell'area vendite.   
+> **Upotreba u nabavi**: aktiviranjem ovog flaga, ambalaža će biti vidljiva u dokumentima iz područja nabave;       
+> **Upotreba kod podizvođača**: aktiviranjem ovog flaga, ambalaža će biti vidljiva u dokumentima za rad s podizvođačima;  
+> **Upotreba u prodaji**: aktiviranjem ovog flaga, ambalaža će biti vidljiva u dokumentima iz područja prodaje. 
 
-Infine è possibile inserire **Magazzino** e **Causale** da utilizzare per l'articolo per ciascuna area.
+Također je moguće unijeti **Skladište** i **Predložak** koji će se koristiti za taj artikl u svakom pojedinom području.
 
-Una volta parametrizzata questa tabella, nei documenti che lo prevedono sarà possibile aprire la form degli imballi a rendere con il ribbon button **Gestione Imballi**. Il bottone aprirà la procedura di *Gestione imballi*, già compilata con gli imballi definiti nella tabella *Imballi a rendere*, in modo che l’utente debba solo inserire le quantità.   
+Nakon što je ova tablica parametarski postavljena, u dokumentima gdje je to predviđeno moguće je otvoriti formu povratne ambalaže pomoću tipke na traci izbornika pod nazivom **Upravljanje ambalažom**. Ta tipka će otvoriti proceduru *Upravljanje ambalažom*, već unaprijed popunjenu ambalažom definiranim u tablici *Povratna ambalaža*, tako da korisnik mora unijeti samo količine.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

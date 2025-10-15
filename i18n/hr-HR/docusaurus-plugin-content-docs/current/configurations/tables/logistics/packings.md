@@ -1,21 +1,21 @@
 ---
-title: Imballi
+title: Ambalaža
 sidebar_position: 14
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Imballi**.
+Tablica se nalazi na putanji **Tablice > Logistika > Ambalaža**.
 
-In questa tabella è possibile codificare le diverse tipologie di *Imballi* da inserire nella testata di un documento sotto la voce *Spedizioni*.
+U ovoj tablici moguće je kodirati različite vrste *Ambalaže* koje se unose u zaglavlje dokumenta pod stavkom *Otpreme*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Imballi**
+**Pretraživanje ambalaže**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
-**Inserimento Imballi**
+**Unos ambalaže*
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: un **Codice** alfanumerico e la sua **Descrizione**.  
+Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.  
+Za novi zapis obavezno je unijeti polja koja program zahtijeva: **Alfanumeričku šifru** i njezin **Opis**.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

@@ -1,5 +1,5 @@
 ---
-title: Configurazione oggetto
+title: Konfiguracija predmeta
 sidebar_position: 49
 ---
 

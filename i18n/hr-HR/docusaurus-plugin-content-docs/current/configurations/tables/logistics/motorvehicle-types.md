@@ -1,21 +1,21 @@
 ---
-title: Tipi automezzo
+title: Vrste vozila
 sidebar_position: 25
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi automezzo**.
+Tablica se nalazi na putanji **Tablice > Logistika > Vrste vozila**.
 
-In questa tabella è possibile gestire la codifica dei diversi *Tipi automezzo* utilizzati nella [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management).    
+U ovoj tablici moguće je upravljati kodiranjem različitih *Vrsta vozila* koje se koriste u [Upravljanje prijevozom](/docs/logistics/motorvehicles/motorvehicle-management).    
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Tipo automezzo**
+**Pretraživanje vrste vozila**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
 
-**Inserimento Tipo automezzo**
+**Unos nove vrste vozila**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.   
+Za novi zapis obavezno je unijeti polja koja program zahtijeva: **Šifra** i **Opis**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

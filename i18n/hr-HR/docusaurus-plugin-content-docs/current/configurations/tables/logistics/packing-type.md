@@ -1,20 +1,20 @@
 ---
-title: Tipi imballo
+title: Vrste pakiranja
 sidebar_position: 29
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi imballo**.
+Tablica se nalazi na putanji **Tablice > Logistika > Vrste ambalaže**.
 
-In questa tabella è possibile codificare i diversi *Tipi imballo*.
+U ovoj tablici moguće je kodirati različite *Vrste ambalaže*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Tipi imballo**
+**Pretraživanje vrsta ambalaže**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata. 
 
-**Inserimento Tipi imballo**
+**Unos vrsta ambalaže**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
