@@ -5,30 +5,30 @@ sidebar_position: 55
 
 Tablica se nalazi na putanji **Tablice > Logistika > Vrste goriva za motorna vozila**.
 
-In questa tabella è possibile codificare i *Tipi carburanti autoveicolo* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+U ovoj tablici moguće je kodirati *Vrste goriva za motorna vozila* koje će se moći odabrati u [Registru vozila](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati. 
 
-**Ricerca Tipi carburanti autoveicolo**
+**Pretraživanje Vrsta goriva za motorna vozila**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraga** kako bi se prikazali rezultati u rešetki rezultata.  
 
-**Inserimento Tipi carburanti autoveicolo**
+**Unos Vrsta goriva za motorna vozila**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si deve inserire un solo campo obbligatorio richiesto dal programma: la **Descrizione**.         
-Inoltre, per ogni tipologia è possibile indicare se sia:  
-- **Carburante a metano**
-- **Carburante diesel**
-- **Carburante ibrido**
-- **Carburante elettrico**
-- **Carburante a GPL**
-- **Carburante organico**
-- **Carburante benzina**
-- **Carburante ibrido/benzina**
-semplicemente attivando il relativo flag.
-Questi flag sono usati per identificare il tipo di combustibile usato dall'automezzo ai fini dell'ESG.
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
+Za novi zapis potrebno je unijeti jedno obavezno polje koje program zahtijeva: **Opis**.         
+Osim toga, za svaki tip moguće je označiti sljedeće karakteristike:   
+- **Gorivo na metan**
+- **Dizelsko gorivo**
+- **Hibridno gorivo**
+- **Električno gorivo**
+- **Gorivo na LPG**
+- **Organsko gorivo**
+- **Benzinsko gorivo**
+- **Hibridno/benzinsko gorivo**
+jednostavnim aktiviranjem odgovarajućeg flag-a.  
+Ovi flag-ovi koriste se za identifikaciju vrste goriva koje koristi vozilo u svrhu ESG-a.  
 
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Pomoću tipke **Obriši** moguće je izbrisati odabrani zapis.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common). 
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common). 

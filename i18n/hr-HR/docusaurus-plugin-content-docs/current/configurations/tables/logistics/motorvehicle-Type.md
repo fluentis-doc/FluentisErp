@@ -1,11 +1,11 @@
 ---
-title: Tipi automezzi
+title: Vrste vozila  
 sidebar_position: 54
 ---
 
 La tabella si trova sul percorso **Tabelle > Logistica > Tipi automezzi**.
 
-In questa tabella è possibile codificare le *Tipi automezzi* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+U ovoj tablici moguće je kodirati *Vrste vozila* koje će se moći odabrati u [Registru vozila](/docs/logistics/motorvehicles/motorvehicle).
 
 La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
 

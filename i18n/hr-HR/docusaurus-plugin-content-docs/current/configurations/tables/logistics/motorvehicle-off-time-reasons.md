@@ -1,29 +1,29 @@
 ---
-title: Motivi di fermo autoveicolo
+title: Razlozi za zadržavanje vozila
 sidebar_position: 58
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Motivi di fermo autoveicolo**.
+Tablica se nalazi na putu **Tablice > Logistika > Razlozi za zadržavanje vozila**.
 
-In questa tabella è possibile codificare i *Motivi di fermo autoveicolo*.
+U ovoj tablici moguće je kodirati *Razloge za zadržavanje vozila*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
 
-**Ricerca Motivi di fermo autoveicolo**
+**Pretraživanje Razloga za zadržavanje vozila**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraga** kako bi se prikazali rezultati u rešetki rezultata.  
 
-**Inserimento Motivi di fermo autoveicolo**
+**Unos Razloga za zadržavanje vozila**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Pomoću tipke **Obriši** moguće je izbrisati odabrani zapis.  
 
-#### Campi specifici  
+#### Specifična polja    
 
-> **Codice**: è il codice del *Motivo di fermo autoveicolo*.   
-> **Descrizione**: è la descrizione del *Motivo di fermo autoveicolo*.   
-> **Colore di sfondo**: permette di definire il colore di sfondo dell'impegno del mezzo presente nel [Calendario](/docs/logistics/shipping/calendar).      
-> **Colore di primo piano**: permette di definire il colore del testo dell'impegno del mezzo presente nel [Calendario](/docs/logistics/shipping/calendar).     
+> **Šifra**: predstavlja šifru za *Razlog zadržavanja vozila*.   
+> **Opis**: opisuje *Razlog zadržavanja vozila*.   
+> **Boja pozadine**: omogućuje definiranje boje pozadine za zauzeće vozila prikazano u [Kalendaru](/docs/logistics/shipping/calendar).      
+> **Boja teksta**: omogućuje definiranje boje teksta za zauzeće vozila prikazano u [Kalendaru](/docs/logistics/shipping/calendar).     
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

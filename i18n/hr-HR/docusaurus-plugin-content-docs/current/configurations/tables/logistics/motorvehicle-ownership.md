@@ -1,27 +1,27 @@
 ---
-title: Proprietà autoveicolo
+title: Svojstvo vozila
 sidebar_position: 57
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Proprietà autoveicolo**.
+Tablica se nalazi na putu **Tablice > Logistika > Svojstvo vozila**.
 
-In questa tabella è possibile codificare le tipologie di *Proprietà autoveicolo* che potranno essere selezionati nell'[Angrafica automezzi](/docs/logistics/motorvehicles/motorvehicle).
+U ovoj tablici moguće je kodirati tipologije *Svojstva vozila* koje će se moći odabrati u [Registru vozila](/docs/logistics/motorvehicles/motorvehicle).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
 
-**Ricerca Proprietà autoveicolo**
+**Pretraživanje Svojstva vozila**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraga** kako bi se prikazali rezultati u rešetki rezultata.  
 
-**Inserimento Proprietà autoveicolo**
+**Unos Svojstva vozila**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.     
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.          
-Inoltre, per ogni tipologia è possibile indicare se sia:
-- **Asset**: indica che il mezzo è di proprietà;
-- **Leasing**: indica che il mezzo è in leasing;
-- **Noleggio**: indica che il mezzo è a noleggio.
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.     
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.          
+Osim toga, za svaku tipologiju moguće je naznačiti da li je:  
+- **Asset**: označava da je vozilo u vlasništvu;
+- **Leasing**: označava da je vozilo u leasingu;
+- **Najam**: označava da je vozilo u najmu.  
 
-Con il pulsante **Cancella** è possibile eliminare il record selezionata.
+Pomoću tipke **Otkaži** moguće je izbrisati odabrani zapis.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common). 
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common). 
