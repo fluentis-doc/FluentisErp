@@ -21,7 +21,7 @@ Each section corresponds to a functional area of the system, in order to make it
 > Check out the [**FAQ**](/docs/knowlegde-base/intro) and quick tips to optimize daily software use.  
 > Always keep the link to the official documentation at hand.
 
-### Settings and Registries (Impostazioni e Anagrafiche)
+### Settings and Registries  
 
 <div style={{ 
   display: 'grid', 
@@ -37,13 +37,13 @@ Each section corresponds to a functional area of the system, in order to make it
     border: '1px solid #e5e7eb',
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
   }}>
-    <h4>🏦 <strong><Link to="/docs/configurations/configuration">Settings (Impostazioni)</Link></strong></h4>
+    <h4>🏦 <strong><Link to="/docs/configurations/configuration">Settings</Link></strong></h4>
     <p>Describes the initial configurations, tables, parameters, and common tools necessary 
       to customize Fluentis ERP according to the specific needs of the company.</p>
   </div>
 
   <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-    <h4>🧭 <strong><Link to="/docs/erp-home/registers/registers-intro">Registries (Anagrafiche)</Link></strong></h4>
+    <h4>🧭 <strong><Link to="/docs/erp-home/registers/registers-intro">Registries</Link></strong></h4>
     <p>Includes detailed information on managing: Contacts, Chart of accounts, Items, 
       Production, and Employees.</p>
   </div>

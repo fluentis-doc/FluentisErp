@@ -155,7 +155,7 @@ Cada sección corresponde a un área funcional del sistema, para facilitar la b�
     <ul style={{ marginTop: '2px', paddingLeft: '16px' }}>
       <li><strong>[Fluentis Live Update](https://docs.fluentis.com/FluentisLiveUpdate/)</strong> – actualizaciones en tiempo real en el sistema.</li>
       <li><strong>[Fluentis Training](https://training.fluentis.com/login/index.php)</strong> – plataforma dedicada a la formación avanzada.</li>
-      <li><strong>[Integraciones (Integrazioni)](https://docs.fluentis.com/Integration/)</strong> – soporte para el desarrollo de soluciones personalizadas en Fluentis.</li>
+      <li><strong>[Integraciones](https://docs.fluentis.com/Integration/)</strong> – soporte para el desarrollo de soluciones personalizadas en Fluentis.</li>
     </ul>
   </div>
 
