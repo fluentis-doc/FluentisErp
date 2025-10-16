@@ -1,27 +1,27 @@
 ---
-title: Tipo rientri
+title: Tipovi povrata 
 sidebar_position: 35
 ---
 
-La tabella serve per impostare i tipi dei rientri di conto lavoro, in modo da poter veicolare il materiale da e per determinati magazzini, a seconda del tipo rientro.
+Ova tablica služi za postavljanje tipova povrata od podizvođača, kako bi se omogućilo usmjeravanje materijala iz i prema određenim skladištima, ovisno o vrsti povrata. 
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa, kao i pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Tipo Rientri**
+**Pretraživanje tipova povrata**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postaviš željene filtere, klikni na tipku **Traži** kako bi se prikazali rezultati u rešetki.  
 
-**Inserimento Tipo Rientri**
+**Unos tipa povrata**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novog tipa potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.
 
-**Codice**: rappresenta il codice del tipo rientro;
+**Šifra**: predstavlja šifru tipa povrata;
 
-**Descrizione**: rappresenta la descrizione del tipo rientro;
+**Opis**: opis tipa povrata;
+  
+**Skladište**: u ovoj koloni korisnik može odabrati skladište na koje će se teret proizveden od strane vanjskog izvođača i poslan od strane istog učitati putem povrata vanjske obrade stvorenog s upravo unesenim tipom;  
 
-**Magazzino**: in questa colonna l'utente può scegliere il magazzino su cui dovrà essere caricato il materiale prodotto dal terzista e spedito dallo stesso tramite un rientro di conto lavoro creato con il tipo appena inserito;
-
-**Descrizione magazzino**: rappresenta la descrizione del magazzino inserito nella colonna precedente;
+**Opis skladišta**: rappresenta la descrizione del magazzino inserito nella colonna precedente;
 
 **Causale**: in questa colonna l'utente può scegliere la causale con la quale deve essere caricato il materiale prodotto dal terzista e spedito dallo stesso tramite un rientro di conto lavoro creato con il tipo appena inserito;
 

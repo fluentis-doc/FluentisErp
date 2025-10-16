@@ -1,63 +1,62 @@
 ---
-title: Tipi picking
+title: Tipovi pickinga
 sidebar_position: 34
 ---
 
-:::important A cosa serve
-La tabella Tipo Picking di Fluentis consente di codificare e definire le diverse tipologie di picking che possono essere utilizzate durante la creazione delle liste di prelievo. Gli utenti possono inserire nuovi record, modificare quelli esistenti o eliminarli in base alle esigenze operative.
+:::important Čemu služi
+Tablica Tip pickinga u sustavu Fluentis omogućuje kodiranje i definiranje različitih tipova pickinga koji se mogu koristiti prilikom izrade lista za preuzimanje. Korisnici mogu unositi nove zapise, uređivati postojeće ili ih brisati, ovisno o operativnim potrebama.
 
-Ogni tipologia di picking può essere associata a parametri specifici, tra cui il codice alfanumerico univoco, la numerazione dei documenti, e le causali di movimentazione. È possibile stabilire anche il tipo di fattura o DDT da utilizzare e gestire configurazioni come lo stato iniziale del picking e la priorità delle ubicazioni di magazzino. Questa flessibilità consente alle aziende di adattare il sistema alle proprie necessità, migliorando così l'efficienza nelle operazioni di magazzino e contribuendo a una gestione ottimale dei flussi di materiali.
+Svaki tip pickinga može imati pridružene specifične parametre, uključujući jedinstveni alfanumerički kôd, numeraciju dokumenata i predloške za manipulaciju robom. Moguće je definirati i tip računa ili otpremnice koji će se koristiti, kao i konfiguracije poput početnog statusa pickinga i prioriteta skladišnih lokacija. Ova fleksibilnost omogućuje tvrtkama prilagodbu sustava vlastitim potrebama, čime se povećava učinkovitost skladišnog poslovanja i omogućuje optimalno upravljanje materijalnim tokovima.
 :::
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi picking**.
+Tablica se nalazi putem izbornika: **Tablice > Logistika > Tipovi pickinga**.
 
-In questa tabella è possibile codificare le diverse tipologie di picking da utilizzare quando si crea un [Nuovo Picking](/docs/logistics/picking/picking-management).
+U ovoj tablici moguće je kodirati različite tipove pickinga koji će se koristiti prilikom kreiranja [Novog pickinga](/docs/logistics/picking/picking-management).
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Tipo picking**
+**Pretraživanje tipova pickinga**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u donjoj tablici.
 
-**Inserimento Tipo picking**
+**Unos tipova pickinga**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Novo**.
 
-**Tipo/Descrizione**: codice alfanumerico univoco e descrizione del *Tipo picking*;   
+**Tip/Opis**: jedinstveni alfanumerički kod i opis *Tipa pickinga*;   
 
-**Numerazione**: in questo campo va inserito il codice della numerazione appropriato. Per approfondimenti fare riferimento all'articolo relativo alle [Numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations);
+**Numeracija**: ovdje se unosi šifra odgovarajuće numeracije. Više informacija dostupno je u članku [Numeracije u Fluentisu](/docs/configurations/tables/fluentis-numerations);
 
-**Numerazione lista di prelievo**: indica la numerazione da utilizzare per le liste UDC create con questo tipo picking;   
+**Numeracija liste za preuzimanje**: označava numeraciju koja će se koristiti za liste utovarnih jedinica kreirane s ovim tipom pickinga;   
 
-**Evasione tipo fattura**: in questo campo va definito il tipo fattura che deve essere proposto per creare la fattura da picking tramite l'apposita procedura;
+**Izvršenje tipa računa**: u ovo polje unosi se tip računa koji se predlaže za kreiranje računa iz pickinga putem predviđene procedure;  
 
-**Evasione tipo DDT**: in questo campo va definito il tipo DDT che deve essere proposto per creare la bolla da picking tramite l'apposita procedura;
+**Izvršenje tipa otpremnice**: u ovo polje unosi se tip otpremnice koji se predlaže za kreiranje otpremnice iz pickinga putem predviđene procedure;  
 
-**Stato iniziale**: indica lo *Stato* di default con cui viene creato il picking;
+**Početno stanje**: označava početni *Status* koji se automatski dodjeljuje novom pickingu;
 
-**Magazzino/Descrizione magazzino**: in questi campi viene inserito il magazzino di movimentazione della merce da proporre in automatico sulle righe articolo inserite nel picking;   
+**Skladište / Opis skladišta**: u ova polja unosi se skladište iz kojeg se predlaže kretanje robe na redovima artikala unutar pickinga;     
 
-**Causale/Descrizione causale**: in questi campi viene indicata la causale di movimentazione della merce contenuta nei picking appartenenti a questa tipologia;  
+**Predložak / Opis predloška**: u ova polja navodi se predložak za manipulaciju robom koji se koristi za pickinge ove vrste;  
 
-**Senza evasione**: al momento dell'evasione dell'ordine nel picking non viene cambiato lo stato evasione dell'ordine;
+**Bez izvršenja**: prilikom izvršenja narudžbe putem pickinga, status izvršenja narudžbe se ne mijenja;
 
-**Evasione quantità articolo non sommata**: se questo flag è attivo, nel momento in cui si andrà a creare un picking a partire da un altro documento le quantità delle righe articolo evase non saranno sommate; 
+**Izvršenje bez zbrajanja količina artikala**: ako je ova opcija aktivna, prilikom kreiranja pickinga na temelju drugog dokumenta, količine artikala na redovima se neće zbrajati; 
 
-**Trasferimento**: se attivo indica che si tratta di un picking di trasferimento tra magazzini interni; 
+**Prijenos**: ako je ova opcija aktivna, označava da se radi o internom prijenosu između skladišta;   
 
-**Lista prelievo materiali**: i *Tipi picking* che hanno questo flag attivo saranno visibili nella *Lista prelievo materiali*;
+**Lista preuzimanja materijala**: *Tipovi pickinga* s ovom aktivnom opcijom bit će vidljivi u *Listi preuzimanja materijala*;
 
-:::note Nota
-Per i *Tipi picking* che saranno utilizzati nelle *Liste di prelievo materiali*, quindi per quelli che avranno il flag *Lista prelievo materiali* attivo, è necessario inserire una causale di magazzino che abbia anche una contropartita.
+:::note Napomena
+Za *Tipove pickinga* koji će se koristiti u *Listama preuzimanja materijala*, dakle one s aktiviranom opcijom *Lista preuzimanja materijala* potrebno je unijeti skladišni predložak koji uključuje i kontropartiju.  
 :::
 
-**Evade ordini con commessa di produzione**: non più utilizzato;
+**Isporuka narudžbi s radnim nalozima**: više se ne koristi;  
 
-**Unità di carico obbligatoria**: i tipi picking che hanno questo flag disattivato non potranno essere usati per il prelievo delle UDC e saranno visibili nella form di [Conferma picking](/docs/logistics/wms/sales/check-row-management) del WMS. Viceversa, le tipologie di picking che hanno questo flag attivo saranno visualizzate nella [Gestione spunta](/docs/logistics/wms/sales/check-row-management) del WMS. 
+**Obavezna utovarna jedinica**: tipovi pickinga kod kojih je ova opcija deaktivirana ne mogu se koristiti za preuzimanje utovarnih jedinica te će biti vidljivi u formi za [Potvrdu pickinga](/docs/logistics/wms/sales/check-row-management) unutar WMS-a. Suprotno tome, tipovi pickinga s aktiviranom ovom opcijom bit će prikazani u modulu [Upravljanje označavanjem](/docs/logistics/wms/sales/check-row-management) u WMS-u. 
 
-**Sovraevadibile**: se attivo, permette di sovra evadere la quantità indicata nel picking; è utilizzabile sia nella [Gestione spunta](/docs/logistics/wms/sales/check-row-management) che nella [Conferma picking](/docs/logistics/wms/sales/check-row-management) del WMS. Nel caso non sia attivo e si tenti di movimentare una quantità maggiore rispetto a quella indicata viene mostrato un messaggio di avviso che impedisce di proseguire.
+**Mogućnost isporuke veće količine**: ako je opcija uključena, sustav omogućuje isporuku količine veće od one navedene u pickingu. Funkcija je dostupna i u [Upravljanju označavanjem](/docs/logistics/wms/sales/check-row-management) i u [Potvrdi pickinga](/docs/logistics/wms/sales/check-row-management). Ako opcija nije uključena, a pokuša se isporučiti veća količina, pojavljuje se upozorenje i onemogućuje se nastavak.  
+**Ispis**: označava naziv pripadajuće ispise te **Broj kopija** koje se automatski ispisuju.   
 
-**Stampa**: indica il nome della stampa associata e il **Numero di copie** da eseguire di default. 
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
 

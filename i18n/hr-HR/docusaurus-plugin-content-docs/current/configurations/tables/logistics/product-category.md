@@ -1,26 +1,26 @@
 ---
-title: Categorie merceologiche articolo
+title: Kategorija artikla
 sidebar_position: 10
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Categorie merceologiche articolo**.
+Pozicija u izborniku **Tablice > Logistika > Kategorije artikla**.
 
-Questa tabella gestisce la codifica delle diverse categorie secondo la logica merceologica, la quale può essere poi associata al prodotto per poterla utilizzare come raggruppamento oppure come dato statistico oppure come funzionalità nei moduli competenti.  
+Ova tablica omogućuje upravljanje šifriranjem različitih kategorija prema logici grupiranja artikala. Kategorija se može povezati s artiklom kako bi se koristila kao grupiranje, statistički podatak ili funkcionalni element u relevantnim modulima.
 
-Un esempio di utiizzo lo troviamo all'interno dell'[Anagrafica articolo](/docs/erp-home/registers/items/create-new-item) alla voce *Categoria merceologica*.  
+Primjer korištenja može se vidjeti unutar [Šifarnika artikla](/docs/erp-home/registers/items/create-new-item) alla voce *Categoria merceologica*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa, kao i pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Categorie merceologiche articolo**
+**Pretraživanje kategorija artikla**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postaviš željene filtre, klikni na tipku **Traži** kako bi se prikazali rezultati u rešetki.
 
-**Inserimento categoria merceologica**
+**Unos kategorije artikla**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
+Za unos nove šifre potrebno je kliknuti na prvi prazan red u rešetki ili pritisnuti tipku **Novo**.  
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: un **Codice** alfanumerico e la sua **Descrizione**. 
+Za novi zapis obavezno je unijeti barem sljedeća polja: **Šifra** i njegov **Opis**. 
 
-Nella griglia inferiore è possibile inserire le **Descrizioni in lingua** per ciascuna *Categoria merceologica*.
+U donjoj rešetki moguće je unijeti i **Opise na drugim jezicima** za svaku *kategoriju artikla*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

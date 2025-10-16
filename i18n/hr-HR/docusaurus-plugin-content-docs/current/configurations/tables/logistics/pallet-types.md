@@ -1,20 +1,20 @@
 ---
-title: Tipi UDC
+title: Tipovi utovarnih jedinica
 sidebar_position: 37
 ---
 
-La tabella di inserimento dei tipi UDC è una tabella di base per l'utilizzo delle unità di carico. Nello specifico vengono definiti i tipi imballo e relativi dati che serviranno per la creazione e l'ottimizzazione dei piani di carico (come per esempio pesi e dimensioni).
+Ova tablica predstavlja osnovu za korištenje utovarnih jedinica. U njoj se definiraju vrste pakiranja i pripadajući podaci koji su potrebni za izradu i optimizaciju planova utovara, poput težine i dimenzija.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Putem tablice moguće je unositi nove zapise, kao i pretraživati postojeće radi pregleda, izmjene ili brisanja.
 
-**Ricerca Tipi gruppo UDC**
+**Pretraživanje tipova grupa utovarnih jedinica**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od dva dijela: područja za filtriranje i prikaza rezultata. Nakon što postavite željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici ispod.
 
-**Inserimento tipi UDC**
+**Unos tipova utovarnih jedinica**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos nove šifre potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: Tipo, Descrizione, Tipo gruppo (proposto dalla tabella *Tipi gruppo UDC*), Numerazione. 
+Prilikom unosa novog zapisa, potrebno je ispuniti barem obavezna polja koja sustav zahtijeva: Tip, Opis, Grupa tipova (koja se preuzima iz tablice *Tipovi grupa utovarnih jedinica*) i Numeracija.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

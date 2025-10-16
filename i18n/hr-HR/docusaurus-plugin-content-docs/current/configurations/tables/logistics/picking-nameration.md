@@ -1,18 +1,18 @@
 ---
-title: Numerazione picking
+title: Numeracija za picking
 sidebar_position: 21
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Numerazioni picking*.
+Ova tablica omogućuje upravljanje kodiranjem različitih tipova *Numeracija za picking*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Putem tablice moguće je unositi nove zapise ili pretraživati postojeće radi pregleda, izmjene ili brisanja.
 
-**Ricerca Numerazioni picking**
+**Pretraživanje numeracija za picking**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici ispod.
 
-**Inserimento Numerazioni picking**
+**Unos numeracija za picking**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

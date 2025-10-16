@@ -1,18 +1,18 @@
 ---
-title: Stampanti magazzino
+title: Skladišni pisači
 sidebar_position: 50
 ---
 
-La tabella permette di gestire la codifica delle diverse *Stampanti di magazzino*.
+Ova tablica omogućuje upravljanje šifriranjem različitih *Skladišnih pisača*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se oni pregledali, izmijenili ili izbrisali.  
 
-**Ricerca Stampanti magazzino**
+**Pretraživanje skladišnih pisača**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od filtracijskog područja i područja s rezultatima. Nakon što postaviš željene filtere, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u rešetki s rezultatima. 
 
-**Inserimento Stampanti magazzino**
+**Unos skladišnih pisača**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos nove šifre potrebno je kliknuti na prvi prazan redak u rešetki ili pritisnuti tipku **Novo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
