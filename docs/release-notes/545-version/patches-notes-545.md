@@ -3,6 +3,9 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0123 - 16/10/2025
+
+> - SD - In fase di duplicazione di DDT, Fatture o Pos, se non viene trovata un’aliquota IVA valida tra dichiarazione d’intento, anagrafica cliente o anagrafica articolo, viene proposto il codice IVA presente nel documento di origine (#TT03962/25).  
 
 ### Patch 545.1-0122 - 23/09/2025
 
