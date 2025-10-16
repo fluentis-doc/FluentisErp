@@ -2,6 +2,35 @@
 title: Patch notes Versione 802
 sidebar_position: 1
 ---
+### Patch 802.0006 - 16/10/2025
+
+> -	CO - ripresa dati da produzione del controlling, i valori di progetto ripresi dai rientri del conto lavoro ora usano il prezzo netto di riga e non il lordo (#TT04478/25) 
+> -	FI - corretto calcolo interessi trimestrali iva nella comunicazione periodica delle liquidazioni IVA. Non vengono più esposti nel quarto trimestre come da istruzioni ministeriali. Rif. #TT00124/22 
+> -	FI - corretto problema che non riportava I dati dei centri di costo riferiti alle commesse nelle scritture di assestamento. (TT03979/25) 
+> -	FI - Creazione compenso da documenti di acquisto in entrata: Risolto problema relativo alla creazione di un nuovo contatto e al calcolo delle righe all’interno del compenso (Rif. Ticket TT01805/25). 
+> -	MES - Dichiarazioni di produzione da soluzione MES - Corretta anomalia che, alla doppia pressione del pulsante [Avanza], creava una doppia dichiarazione di produzione. (#TT04436/25) 
+> -	MES - Dichiarazioni di produzione da soluzione MES - Corretta anomalia che, alla doppia pressione del pulsante [Avanza], creava una doppia dichiarazione di produzione. (#TT04436/25) 
+> -	MES - Verticalizzazione Pharma - Ordini di produzione - Corretta anomalia che non effettuava un refresh della form al cambio stato workflow di "Parzialmente associato", non visualizzando automaticamente la griglia del dettaglio dei Lotti. (#TT04063/25) 
+> -	MES - Verticalizzazione Pharma - Ordini di produzione - Corretta anomalia che non decrementava la "Quantità totale" di consumo del materiale principale assegnando una "Quantità totale" di consumo ai materiali alternativi. (#TT04062/25) 
+> -	MS - Corretto bug in costificazione delle commesse di produzione che non valorizzava correttamente il costo di setup. (#TT04167/25) 
+> -	SCM - Dettaglio righe ordini: Risolta anomalia che causava l’applicazione delle modifiche anche a righe non selezionate, nel caso in cui fossero state deselezionate a seguito dell’applicazione di un filtro nella griglia. (#TT04404/25) 
+> -	SCM Nir - correzione delle sorgenti lotti e delle quantità residue. (# TT04344/25) 
+> -	SD - Abilitata la modifica del vettore nei DDT di Vendita valorizzati ma non ancora movimentati a magazzino. (#TT03807/25) 
+> -	SD - Corretto calcolo della provvigione agente negli ordini cliente che veniva azzerato in caso di percentuale agente impostata manualmente nelle righe ordine e inserimento sconto finale nei riepiloghi. (#TT04058/25) 
+> -	SD - Creazione DDT da Picking: corretta anomalia che in alcuni casi non riportava nel DDT il Destinatario e la Destinazione dell'Ordine cliente quando veniva utilizzato il raggruppamento per destinazione. (#TT04275/25) 
+> -	SD - Lo scarico di magazzino valorizza i centri di costo a carico di magazzino valutando la dimensione dei centri (#TT04277/25) 
+> -	SD - Modificata la logica della stampa Provvigioni maturate che ora mostra la provvigione anche se il totale fattura è zero, nel caso di storno acconti, e l’agente ha il criterio di maturazione a fattura emessa. Rif #TT04367/25 
+> -	SD - Nelle procedure di creazione di DDT, Fatture o Picking da Ordini, DDT, POS, Picking, Liste di prelievo UDC, Liste di trasferimento UDC, Spedizioni o Interventi, è stato implementato un controllo che impedisce la generazione del documento qualora il cliente risulti bloccato nel Lock Manager. (#TT04207/25) 
+> -	SD - Ordini Clienti: Data la possibilità di aprire Proprietà Ordine Cliente  di ordini diversi (rif.ticket 4409/25) 
+> -	SD - Provvigioni per Range Sconto: Per il calcolo del range sconto corretto  la % di sconto per la ricerca del range corretto viene calcolata nel seguente modo: totale sconto di riga (non arrotondato) diviso per la quantita di riga e il risultato diviso per il prezzo di riga, il risultato non arrotondato è la % di sconto per la ricerca del range corretto. (rif ticket 4408/25) 
+> -	SD - Revisione creazione compenso percipiente da liquidazione agenti con opzione ‘Non ricalcolare enasarco’, caso con sottoconto di fatturazione attivo (#TT04247/25) 
+> -	SH - Documenti Sdi: Abilitato l’invio massivo dei Documenti di Vendita in uscita anche per file Sdi importati dall’esterno. (#TT03619/25) 
+> -	WM - Analisi Disponibilità: disponibilità del rientro di conto lavoro slegata dal magazzino del materiale. (#TT04419/25) 
+> -	WM - Analisi disponibilità: tolta dalla disponibilità la giacenza su ubicazioni bloccate. (#TT04477/25) 
+> -	WM - Corretto bug che impediva di inserire lotto economico nei parametri MRP dell’articolo nel caso in cui l’unità di misura dello stesso fosse con zero decimali. (#TT04418/25) 
+> -	WM - Corretto mancato aggiornamento lotto economico in parametri mrp se um senza decimali. (#TT04481/25) 
+> -	WM - revisione test di quadratura quantità nei movimenti dei centri di costo delle registrazioni di magazzino, valutazione per dimensione dei centri (#TT04488/25) 
+> -	WMS - Corretto errore in ricevimento merce al salvataggio nel ricalcolo delle scadenze. (#TT04454/25) 
 
 ### Patch 802.0005 - 14/10/2025
 
