@@ -1,25 +1,37 @@
 ---
 title: Nuovo Visit Report
+description: Guida passo passo per creare un nuovo Visit Report in Fluentis ERP, con tutti i campi della form spiegati.
+keywords: [Fluentis ERP, Visit Report, CRM, guida, procedura]
 sidebar_position: 2
+schema_type: HowTo
 ---
 
-La procedura di creazione di un nuovo **Visit Report** permette di andare a definire le caratteristiche della visita effettuata dal contatto.
+# Creazione di un nuovo Visit Report
 
-La form è divisa in due parti.
-Nella parte superiore sono presenti i seguenti campi:
+La procedura di creazione di un nuovo **Visit Report** permette di definire le caratteristiche della visita effettuata dal contatto.
 
-**Tipo Visit Report**: permette di indicare il tipo di Visit Report che si sta inserendo e fa riferimento all'omonima tabella, composta da *Codice* e *Descrizione*      
-**Numero**: è il numero del Visit Report, viene assegnato in automatico da Fluentis.           
-**Data**: è la data relativa alla visita e viene impostata con la data odierna.          
-**Oggetto**: in questo campo deve essere indicata la motivazione della visita al cliente.          
-**Nota**: campo libero per l’inserimento di ulteriori note relative alla visita.           
-**Contatto/Cliente**: in questo campo deve essere indicato il contatto CRM o il cliente a cui fa riferimento il Visit Report. La label del campo e l’oggetto di riferimento del campo stesso cambiano a seconda che il flag venga apposto sulla voce *Contatto CRM* o sulla voce *Conto Fluentis*.     
-**Partecipanti**: in questo campo, di compilazione libera, devono essere indicati i soggetti che hanno partecipato all’incontro.     
-**Agente**: in questo campo, che fa riferimento all’anagrafica agenti di Fluentis, deve essere indicato l’agente che ha presenziato all’incontro, se presente.     
+## Struttura della form
 
-La parte inferiore della form presenta invece due tab.
+La form è divisa in due parti: superiore e inferiore.
 
-## Doc.
+### Parte superiore
+
+I campi principali sono:
+
+1. **Tipo Visit Report**: permette di indicare il tipo di Visit Report che si sta inserendo, fa riferimento all'omonima tabella (*Codice* e *Descrizione*).  
+2. **Numero**: numero assegnato automaticamente da Fluentis.  
+3. **Data**: data della visita, impostata con la data odierna.  
+4. **Oggetto**: motivazione della visita al cliente.  
+5. **Nota**: campo libero per ulteriori note.  
+6. **Contatto/Cliente**: indica il contatto CRM o il cliente; il campo cambia label e oggetto a seconda del flag (*Contatto CRM* o *Conto Fluentis*).  
+7. **Partecipanti**: indicare i soggetti che hanno partecipato all’incontro.  
+8. **Agente**: riferimento all’anagrafica agenti; indicare l’agente presente all’incontro, se disponibile.  
+
+### Parte inferiore
+
+La parte inferiore della form presenta due tab.
+
+#### Documento
 
 In questa tab generalmente viene compilato il vero e proprio report creato durante la visita. Questo documento può contenere svariate informazioni, in base alla tipologia di visita effettuata. Per questo motivo, nella griglia è possibile selezionare un [Template](/docs/crm/budget-marketing-automation/template/template-search) da utilizzare come base del report e da compilare con le informazioni del cliente. E' necessario quindi creare a priori i vari template per averli disponibili in fase di visita e poterli utilizzare. 
 Nella parte destra sarà visualizzato il Template selezionato e sarà possibile compilarlo. E' inoltre possibile inserire i dati necessari per l'invio tramite email del documento.            
@@ -57,7 +69,7 @@ Richiama le funzioni di base degli editor di testo più diffusi, quali Microsoft
 > - *Next record*: permette di posizionarsi sul record successivo rispetto a quello attuale estrapolato dai merge data;
 > - *Last Record*: permette di posizionarsi sull’ultimo record estrapolato dai merge data.
 
-## Documenti allegati
+#### Documenti allegati
 
 In questa tab è possibile consultare i documenti allegati. Per allegare i documenti è possibile procedere in due modi:
 
