@@ -1,67 +1,78 @@
----
-title: Visit Report nou
+--
+title: Raport de vizită nou
+description: Ghid pentru crearea unui nou Raport de vizită în Fluentis ERP, cu toate câmpurile form-ului explicate.
+keywords: [Fluentis ERP, Raport de vizită, CRM, ghid, procedură]
 sidebar_position: 2
-translated: "auto"
+schema_type: HowTo
 ---
 
-Procedura de creare a unui **Visit Report** nou permite să se definească caracteristicile vizitei efectuate de contact.
+# Crearea unui nou Raport de vizită  
 
-Form-ul este împărțit în două părți.  
-În partea superioară sunt prezente următoarele câmpuri:
+Procedura de creare a unui nou **Raport de vizită** permite definirea caracteristicilor vizitei efectuate de contact.
 
-**Tip Visit Report**: permite indicarea tipului de Visit Report care se introduce și face referire la tabelul omonim, compus din *Cod* și *Descriere*  
-**Număr**: este numărul Visit Report, asignat automat de Fluentis.  
-**Dată (Data)**: este data vizitei și este setată cu data curentă.  
-**Subiect (Oggetto)**: în acest câmp trebuie specificată motivația vizitei la client.  
-**Notă (Nota)**: câmp liber pentru introducerea unor note suplimentare referitoare la vizită.  
-**Contact/Client (Contatto/Cliente)**: în acest câmp trebuie indicat contactul CRM sau clientul la care face referire Raportul de vizită (Visit Report). Eticheta câmpului și obiectul de referință al câmpului se modifică în funcție de faptul că este bifată opțiunea *Contatto CRM (Contatto CRM)* sau *Conto Fluentis (Conto Fluentis)*.  
-**Participanți (Partecipanti)**: în acest câmp, cu completare liberă, trebuie indicați participanții care au luat parte la întâlnire.  
-**Agent (Agente)**: în acest câmp, care face referire la anagrafica agenților din Fluentis, trebuie indicat agentul care a fost prezent la întâlnire, dacă este cazul.
+## Structura form  
 
-Partea inferioară a form-ului conține două taburi.
+Form-ul este împărțit în două părți: superioară și inferioară.
 
-## Doc. (Doc.)
+### Partea superioară  
 
-În acest tab se completează, în general, adevăratul raport creat în timpul vizitei. Acest document poate conține informații variate, în funcție de tipul de vizită efectuată. Din acest motiv, în grilă este posibil să se selecteze un [Șablon (Template)](/docs/crm/budget-marketing-automation/template/template-search) utilizat ca bază pentru raport și care poate fi completat cu informațiile clientului. Este necesar, așadar, să se creeze în prealabil diverse șabloane pentru a fi disponibile în faza de vizită și pentru a putea fi utilizate.  
-În partea dreaptă va fi afișat Șablonul (Template) selectat și va fi posibil să îl completați. De asemenea, este posibil să introduceți datele necesare pentru trimiterea prin email a documentului.  
+#### Câmpuri specifice:
 
-Pentru gestionarea șablonului (template) sunt disponibile următoarele secțiuni:  
-- **Email (Email)**: acest tab conține:  
-> - *Print (Stampa)*: permite tipărirea foii de lucru;  
-> - *Print Preview (Anteprima di stampa)*: permite tipărirea pe ecran a foii de lucru, în modul de previzualizare;  
-> - *Save (Salva)*: permite salvarea unei copii a documentului;  
-> - *Undo (Undo)*: șterge ultima modificare din șablon (template);  
-> - *Redo (Redo)*: reface ultima modificare ștearsă din șablon (template).
+1. **Tip Raport de vizită**: permite indicarea tipului de Raport de vizită și face referire la tabelul cu același nume (*Cod* și *Descriere*).  
+2. **Număr**: număr atribuit automat de Fluentis.  
+3. **Dată**: data vizitei, setată cu data de astăzi.  
+4. **Obiect**: motivul vizitei la client.  
+5. **Notă**: câmp liber pentru note suplimentare.  
+6. **Contact/Client**: indică contactul CRM sau clientul; eticheta și obiectul câmpului se schimbă în funcție de indicatorul (*Contact CRM* sau *Cont Fluentis*).  
+7. **Participanți**: indicați persoanele care au participat la întâlnire.  
+8. **Agent**: indicați agentul prezent la întâlnire, dacă este disponibil.  
 
-- **Home (Home)**: acest tab conține butoanele pentru funcționalitățile de bază privind editarea textului din Șablon (Template), cum ar fi dimensiunile fontului, listele, alinierea textului etc.  
-Reia funcțiile de bază ale celor mai cunoscute editoare de text, precum Microsoft Word.
+### Partea inferioară  
 
-- **Insert (Insert)**: acest tab conține butoanele pentru inserarea unor elemente în Șablon (Template):  
-> - *Inserisci tabella (Inserisci tabella)*: permite inserarea unui tabel în foaia de lucru;  
-> - *Allinea Immagine (Allinea Immagine)*: permite inserarea unei imagini în corpul documentului;  
-> - *Immagine (Immagine)*: permite inserarea unei imagini în corpul documentului;  
-> - *Bookmark (Bookmark)*: permite inserarea unui semn de carte în cadrul șablonului (template);  
-> - *Hyperlink (Hyperlink)*: permite inserarea unui link către o pagină web sau către un semn de carte din șablon (template);  
-> - *Header (Header)*: permite inserarea antetului șablonului (template);  
-> - *Footer (Footer)*: permite inserarea subsolului șablonului (template);  
-> - *Page Number (Page Number)*: servește pentru a indica numărul paginii în antetul sau subsolul Șablonului (Template);  
-> - *Page Count (Page Count)*: servește pentru a indica numărul total de pagini ale șablonului (template) în antet sau subsol;  
-> - *Text Box (Text Box)*: permite inserarea unei casete de text în Șablon (Template);  
-> - *Symbol (Symbol)*: servește pentru a insera un simbol special în Șablon (Template).
+Partea inferioară a form-ului prezintă două taburi.
 
-- **Merge data (Merge data)**: în acest tab se găsesc butoanele necesare gestionării și introducerii datelor de fuziune (merge data).  
-> - *Insert Merge Field (Insert Merge Field)*: butonul permite inserarea datelor de fuziune, selectându-le dintr-o listă bazată pe Sursa de date (Data Source) la care face referire Șablonul (Template);  
-> - *View Merged Data (View Merged Data)*: butonul permite ascunderea/vizualizarea datelor de fuziune inserate în șablon (template);  
-> - *Show All Field Codes (Show All Field Codes)*: butonul servește pentru a afișa codurile câmpurilor utilizate ca date de fuziune;  
-> - *Show All Field Results (Show All Field Results)*: butonul servește pentru a afișa rezultatul extrapolării câmpurilor utilizate ca date de fuziune;  
-> - *First Record (First Record)*: permite poziționarea pe primul înregistrat extras din datele de fuziune;  
-> - *Previous record (Previous record)*: permite poziționarea pe înregistrarea anterioară față de cea curentă extrasă din datele de fuziune;  
-> - *Next record (Next record)*: permite poziționarea pe înregistrarea următoare față de cea curentă extrasă din datele de fuziune;  
-> - *Last Record (Last Record)*: permite poziționarea pe ultima înregistrare extrasă din datele de fuziune.
+#### Document  
 
-## Documente atașate (Documenti allegati)
+În acest tab se completează, în general, raportul creat în timpul vizitei. Acest document poate conține informații variate, în funcție de tipul de vizită efectuată. Din acest motiv, în tabel se poate selecta un [Șablon](/docs/crm/budget-marketing-automation/template/template-search) utilizat ca bază pentru raport și care poate fi completat cu informațiile clientului. Este necesar, așadar, să se creeze în prealabil diverse șabloane pentru a fi disponibile în momentul vizitei pentru a fi utilizate.  
+În partea dreaptă va fi afișat șablonul selectat. De asemenea, puteți să inserați datele necesare pentru trimiterea prin email a documentului.  
+
+Pentru gestionarea șablonului sunt disponibile următoarele secțiuni:  
+- **Email**: acest tab conține:  
+> - *Print*: permite tipărirea foii de lucru;  
+> - *Print Preview*: permite tipărirea pe ecran a foii de lucru, pentru previzualizare;  
+> - *Salvează*: permite salvarea unei copii a documentului;  
+> - *Undo*: șterge ultima modificare din șablon;  
+> - *Redo*: reface ultima modificare ștearsă din șablon.
+
+- **Home**: acest tab conține butoanele pentru funcționalitățile de bază privind editarea textului din Șablon, cum ar fi dimensiunile fontului, listele, alinierea textului etc.  
+Preia funcțiile de bază ale celor mai cunoscute editoare de text, precum Microsoft Word.
+
+- **Insert**: acest tab conține butoanele pentru inserarea unor elemente în Șablon:  
+> - *Inserează tabel*: permite inserarea unui tabel în foaia de lucru;  
+> - *Aliniere imagine*: permite inserarea unei imagini în corpul documentului;  
+> - *Imagine*: permite inserarea unei imagini în corpul documentului;  
+> - *Bookmark*: permite inserarea unui semn de carte în cadrul șablonului;  
+> - *Hyperlink*: permite inserarea unui link către o pagină web sau către un semn de carte din șablon;  
+> - *Header*: permite inserarea antetului șablonului;  
+> - *Footer*: permite inserarea subsolului șablonului;  
+> - *Page Number*: servește pentru a indica numărul paginii în antetul sau subsolul Șablonului;  
+> - *Page Count*: servește pentru a indica numărul total de pagini ale șablonului în antet sau subsol;  
+> - *Text Box*: permite inserarea unei casete de text în Șablon;  
+> - *Symbol*: servește pentru a insera un simbol special în Șablon.
+
+- **Merge data**: în acest tab se găsesc butoanele necesare pentru gestionarea și inserarea datelor de tip merge.   
+> - *Insert Merge Field*: permite inserarea datelor de tip merge, selectându-le dintr-o listă bazată pe Data Source la care face referire Șablonul;  
+> - *View Merged Data*: permite ascunderea/vizualizarea datelor de tip merge inserate în șablon;  
+> - *Show All Field Codes*: permite afișarea codurilor câmpurilor utilizate ca date de tip merge;  
+> - *Show All Field Results*: permite afișarearezultatului extrapolării câmpurilor utilizate ca date de tip merge;  
+> - *First Record*: permite poziționarea pe primul înregistrare extrasă din datele de tip merge;  
+> - *Previous record*: permite poziționarea pe înregistrarea anterioară celei curente, extrasă din datele de tip merge;  
+> - *Next record*: permite poziționarea pe înregistrarea următoare celei curentă, extrasă din datele de tip merge;  
+> - *Last Record*: permite poziționarea pe ultima înregistrare extrasă din datele de tip merge.
+
+#### Documente atașate  
 
 În acest tab este posibilă consultarea documentelor atașate. Pentru a atașa documentele, se poate proceda în două moduri:
 
-- utilizând butonul din bara de instrumente **Documenti (Documenti)** se poate alege dacă se atașează un document deja codificat în Fluentis sau dacă se creează un nou Document (Documento) de atașat.  
-- utilizând direct în grilă click dreapta și selectând **Allega file (Allega file)** se trece la crearea unui nou Document (Documento) de atașat.
+- utilizând butonul din bara de instrumente **Documente** cu care se poate alege dacă se atașează un document deja codificat în Fluentis sau dacă se creează un nou Document de atașat.  
+- efectuând direct în tabel click dreapta și selectând **Ataşează fişier** pentru a crea un nou Document de atașat.
