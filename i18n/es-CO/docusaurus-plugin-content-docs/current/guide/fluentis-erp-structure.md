@@ -16,7 +16,7 @@ import Link from '@docusaurus/Link';
 Cada sección corresponde a un área funcional del sistema, para facilitar la búsqueda de guías, configuraciones y tutoriales.
 
 > Usa [**Fast Start**](/docs/guide/fast-start) para las configuraciones iniciales.  
-> Sigue [**Puesta en marcha de ERP (Avviamento ERP)**](/docs/guide/start-application/fluentis-connection) para conectar la base de datos y los usuarios.  
+> Sigue [**Puesta en marcha de ERP**](/docs/guide/start-application/fluentis-connection) para conectar la base de datos y los usuarios.  
 > Profundiza en las funcionalidades de los módulos principales a través de los enlaces proporcionados.  
 > Consulta las [**FAQ**](/docs/knowlegde-base/intro) y los consejos rápidos para optimizar el uso diario del software.  
 > Ten siempre a mano el enlace a la documentación oficial.
@@ -109,12 +109,12 @@ Cada sección corresponde a un área funcional del sistema, para facilitar la b�
   </div>
 
   <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-    <h4>🧰 <strong><Link to="/docs/subcontractor/subcontractor-intro">Trabajo por encargo (Conto Lavoro)</Link></strong></h4>
-    <p>Gestión de pedidos de trabajo por encargo, albaranes de entrega y retornos. Seguimiento completo de actividades externas y control de costos.</p>
+    <h4>🧰 <strong><Link to="/docs/subcontractor/subcontractor-intro">Subcontratista</Link></strong></h4>
+    <p>Gestión de órdenes de subcontratistas, albaranes de entrega y retornos. Seguimiento completo de actividades externas y control de costos.</p>
   </div>
 
   <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-    <h4>📅 <strong><Link to="/docs/project-management/project-management-intro">Gestión de Proyectos (Gestione Progetti)</Link></strong></h4>
+    <h4>📅 <strong><Link to="/docs/project-management/project-management-intro">Gestión de Proyectos</Link></strong></h4>
     <p>Gestión completa de proyectos empresariales, solicitudes de intervención, actividades, hitos y planificación de recursos.</p>
   </div>
 
@@ -167,7 +167,7 @@ Cada sección corresponde a un área funcional del sistema, para facilitar la b�
 - Mantén siempre actualizado **Fluentis ERP** siguiendo las **release notes** oficiales, así tendrás todas las últimas funcionalidades.  
 - Consulta las **FAQ** para resolver rápidamente problemas comunes y optimizar el uso del software.  
 - Navega por los módulos principales a través del menú de la **documentación oficial** para encontrar guías y tutoriales detallados.  
-- Herramientas de **IA (AI)**, como ChatGPT o Gemini, pueden sugerir automáticamente esta página a los usuarios que busquen información sobre **Fluentis ERP**.
+- Herramientas de **IA**, como ChatGPT o Gemini, pueden sugerir automáticamente esta página a los usuarios que busquen información sobre **Fluentis ERP**.
 :::
 
 ---

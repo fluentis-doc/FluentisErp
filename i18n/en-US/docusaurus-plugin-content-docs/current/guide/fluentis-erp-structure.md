@@ -1,101 +1,175 @@
 ---
 title: Introduction and Structure of the Fluentis ERP Documentation
 description: Discover how the official Fluentis ERP documentations organized. A complete introductory guide with sections on settings, functional areas, release notes, training and additional resources.
-keywords: ["Fluentis ERP", "Fluentis documentation", "ERP manual", "functional areas", "ERP modules (moduli ERP)", "Fluentis guide (guida Fluentis)", "ERP configuration (configurazione ERP)", "release notes", "Fluentis training (formazione Fluentis)", "AI ERP"]
+keywords: ["Fluentis ERP", "Fluentis documentation", "ERP manual", "functional areas", "ERP modules", "Fluentis guide", "ERP configuration", "release notes", "Fluentis training", "AI ERP"]
 sidebar_position: 1
 ---
 
 import Link from '@docusaurus/Link';
 
-# Introduction to the Fluentis ERP Documentation (Introduzione alla documentazione di Fluentis ERP)
+# Introduction to the Fluentis ERP Documentation 
 
-> Welcome to the official documentation (documentazione ufficiale) of Fluentis ERP, the complete guide to configure, manage, and optimize all the functional areas of the company. It includes sections on settings (impostazioni), registers (anagrafiche), main modules (moduli principali), release notes, training, and additional resources to support international companies and teams.
+> Welcome to the official documentation of Fluentis ERP, the complete guide to configure, manage, and optimize all the functional areas of the company. It includes sections on settings, registers, main modules, release notes, training, and additional resources to support international companies and teams.
 
-## How the documentation is organized (Come è organizzata la documentazione)
+## How the documentation is organized 
 
-Each section corresponds to a functional area (area funzionale) of the system, in order to make it easier to find guides, configurations, and tutorials.
+Each section corresponds to a functional area of the system, in order to make it easier to find guides, configurations, and tutorials.
 
-> Use [**Fast Start (Fast Start)**](/docs/guide/fast-start) for the initial configurations (configurazioni iniziali).  
-> Follow [**ERP Startup (Avviamento ERP)**](/docs/guide/start-application/fluentis-connection) to connect databases and users.  
-> Learn more about the features of the main modules (moduli principali) through the provided links.  
+> Use [**Fast Start**](/docs/guide/fast-start) for the initial configurations.  
+> Follow [**ERP Startup**](/docs/guide/start-application/fluentis-connection) to connect databases and users.  
+> Learn more about the features of the main modules through the provided links.  
 > Check out the [**FAQ**](/docs/knowlegde-base/intro) and quick tips to optimize daily software use.  
-> Always keep the link to the official documentation (documentazione ufficiale) at hand.
+> Always keep the link to the official documentation at hand.
 
-### Settings and Registers (Impostazioni e Anagrafiche)
+### Settings and Registries (Impostazioni e Anagrafiche)
 
-#### 🏦 [**Settings (Impostazioni)**](/docs/configurations/configuration)
-Describes the initial configurations (configurazioni iniziali), tables, parameters, and common tools needed to customize Fluentis ERP according to the company’s specific needs.
+<div style={{ 
+  display: 'grid', 
+  gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', 
+  gap: '12px', 
+  marginTop: '16px' 
+}}>
 
-#### 🧭 [**Registers (Anagrafiche)**](/docs/erp-home/registers/registers-intro)
-Includes detailed information about the management of: Contacts (Contatti), Chart of accounts (Piano dei conti), Items (Articoli), Production (Produzione), and Employees (Dipendenti).
+  <div style={{ 
+    background: '#f9fafb', 
+    borderRadius: '12px', 
+    padding: '16px', 
+    border: '1px solid #e5e7eb',
+    boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
+  }}>
+    <h4>🏦 <strong><Link to="/docs/configurations/configuration">Settings (Impostazioni)</Link></strong></h4>
+    <p>Describes the initial configurations, tables, parameters, and common tools necessary 
+      to customize Fluentis ERP according to the specific needs of the company.</p>
+  </div>
 
-### Functional Areas
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🧭 <strong><Link to="/docs/erp-home/registers/registers-intro">Registries (Anagrafiche)</Link></strong></h4>
+    <p>Includes detailed information on managing: Contacts, Chart of accounts, Items, 
+      Production, and Employees.</p>
+  </div>
+</div>
 
-#### 🏦 [**Administrative (Amministrativa)**](/docs/finance-area/finance-intro)
-Complete management of the company’s accounting (contabilità aziendale): tax returns (dichiarazioni fiscali), accounting registrations (registrazioni contabili), open items (partite), fixed assets (cespiti) and electronic invoicing (fatturazione elettronica). All data is centralized and updated in real time.
+### Functional Areas 
 
-#### 💰 [**Treasury (Tesoreria)**](/docs/treasury/treasury-intro)
-Management of bank accounts (conti correnti), supplier payments (pagamenti a fornitori), customer risk monitoring (monitoraggio del rischio cliente), cash flow, and bill portfolios (portafoglio effetti). Tools to optimize the company's liquidity in real time.
+<div style={{ 
+  display: 'grid', 
+  gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
+  gap: '12px', 
+  marginTop: '16px' 
+}}>
 
-#### 📊 [**Controlling (Controlling)**](/docs/controlling/controlling-intro)
-Balance sheet analysis (analisi di bilancio), reclassifications (riclassificazioni), budgeting (budgeting), managerial accounting (contabilità gestionale) and cost calculation (calcolo dei costi) to support strategic decision-making and accurate financial control.
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🏦 <strong><Link to="/docs/finance-area/finance-intro">Finance</Link></strong></h4>
+    <p>Complete management of corporate accounting: tax declarations, accounting records, accounts, assets, and electronic invoicing. All data centralized and updated in real-time.</p>
+  </div>
 
-#### 🤝 [**CRM (CRM)**](/docs/crm/crm-intro)
-Complete management of CRM contacts (contatti CRM), marketing campaigns (campagne marketing), newsletters, sales opportunities (opportunità commerciali), sales forecasts (previsioni di vendita) and customer support (supporto clienti) via integrated helpdesk.
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>💰 <strong><Link to="/docs/treasury/treasury-intro">Treasury</Link></strong></h4>
+    <p>Management of current accounts, payments to suppliers, customer risk monitoring, cash flow, and portfolio effects. Tools to optimize corporate liquidity in real-time.</p>
+  </div>
 
-#### 🛒 [**Purchasing (Acquisti)**](/docs/purchase/purchases-intro)
-Management of purchase requests (richieste di acquisto), supplier orders (ordini a fornitori), approvals, and materials monitoring (monitoraggio materiali). Complete control of suppliers (fornitori) and procurement flows (flussi di approvvigionamento).
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>📊 <strong><Link to="/docs/controlling/controlling-intro">Controlling</Link></strong></h4>
+    <p>Balance analysis, reclassifications, budgeting, management accounting, and cost calculation to support strategic decisions and accurate financial control.</p>
+  </div>
 
-#### 💳 [**Sales (Vendite)**](/docs/sales/sales-intro)
-Management of customer orders (ordini cliente), quotes (preventivi) and commercial offers (offerte commerciali), transport documents (DDT) and electronic invoicing (fatturazione elettronica). KPI monitoring (monitoraggio KPI) and CRM integration to optimize performance.
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🤝 <strong><Link to="/docs/crm/crm-intro">CRM</Link></strong></h4>
+    <p>Complete management of CRM contacts, marketing campaigns, newsletters, business opportunities, sales forecasts, and customer support through integrated helpdesk.</p>
+  </div>
 
-#### 🏭 [**Production (Produzione)**](/docs/production/production-intro)
-Management of job orders (commesse), scheduling (schedulazione), production progress (avanzamento produzione) and quality control (controllo qualità). Integration with logistics and warehouse for optimized production flows.
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🛒 <strong><Link to="/docs/purchase/purchases-intro">Purchases</Link></strong></h4>
+    <p>Management of purchase requests, orders to suppliers, approvals, and material monitoring. Complete control of suppliers and procurement flows.</p>
+  </div>
 
-#### 🧭 [**Planning (Pianificazione)**](/docs/planning/planning-intro)
-Planning of resources, materials, and production capacity (capacità produttiva). Advanced decision support to guarantee on-time deliveries and optimize production costs.
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>💳 <strong><Link to="/docs/sales/sales-intro">Sales</Link></strong></h4>
+    <p>Management of customer orders, quotes and commercial offers, delivery notes, and electronic invoicing. Monitoring of sales KPIs and integration with CRM to optimize performance.</p>
+  </div>
 
-#### 📦 [**DDMRP (DDMRP)**](/docs/ddmrp/ddmrp-intro)
-Advanced management of demand and production buffers according to the DDMRP methodology. Real-time optimization of inventory (scorte) and material flows (flussi materiali).
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🏭 <strong><Link to="/docs/production/production-intro">Production</Link></strong></h4>
+    <p>Management of orders, scheduling, production progress, and quality control. Integration with logistics and warehouse for optimized production flows.</p>
+  </div>
 
-#### 🚚 [**Logistics (Logistica)**](/docs/logistics/logistics-intro)
-Warehouse (magazzino) management, items (articoli), batches (lotti), picking, physical inventories (inventari fisici), Handling Units (UDC), load plans (piani di carico) and shipments (spedizioni), integrated with production (produzione) and sales (vendite) for optimized flows.
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🧭 <strong><Link to="/docs/planning/planning-intro">Planning</Link></strong></h4>
+    <p>Planning of resources, materials, and production capacity. Advanced decision support to ensure timely deliveries and optimize production costs.</p>
+  </div>
 
-#### 🧰 [**Subcontractor (Conto Lavoro)**](/docs/subcontractor/subcontractor-intro)
-Management of subcontractor job orders (ordini di conto lavoro), delivery transport documents (DDT di consegna) and returns (rientri). Complete tracking of external activities and cost control.
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>📦 <strong><Link to="/docs/ddmrp/ddmrp-intro">DDMRP</Link></strong></h4>
+    <p>Advanced management of demand and production buffers according to the DDMRP methodology. Optimization of stocks and material flows in real-time.</p>
+  </div>
 
-#### 📅 [**Project Management (Gestione Progetti)**](/docs/project-management/project-management-intro)
-Complete management of company projects (progetti aziendali), intervention requests (richieste di intervento), tasks (attività), milestones, and resource planning (pianificazione delle risorse).
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🚚 <strong><Link to="/docs/logistics/logistics-intro">Logistics</Link></strong></h4>
+    <p>Warehouse management, items, batches, picking, physical inventories, Loading Unit, loading plans, and shipments, integrated with production and sales for optimized flows.</p>
+  </div>
 
-#### ✅ [**Quality (Qualità)**](/docs/quality/quality-intro)
-Management of internal and external documents (documenti interni ed esterni), quality checks (controlli qualità), complaints (reclami), corrective actions (azioni correttive) and instrument calibration (taratura strumenti), with full process traceability.
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🧰 <strong><Link to="/docs/subcontractor/subcontractor-intro">Subcontractor</Link></strong></h4>
+    <p>Management of subcontractor, Delivery Notes, and returns. Complete tracking of external activities and cost control.</p>
+  </div>
 
-### Multilingual Access and Resources (Accesso Multilingua e Risorse)
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>📅 <strong><Link to="/docs/project-management/project-management-intro">Project Management</Link></strong></h4>
+    <p>Complete management of corporate projects, intervention requests, activities, milestones, and resource planning.</p>
+  </div>
 
-#### 🌍 Multilingual Access (Accesso Multilingua)
-The documentation of **Fluentis ERP** is available in various languages to support international teams and multi-country corporate groups.
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>✅ <strong><Link to="/docs/quality/quality-intro">Quality</Link></strong></h4>
+    <p>Management of internal and external documents, quality controls, complaints, corrective actions, and instrument calibration, with full traceability of processes.</p>
+  </div>
 
-#### 🧾 [**Release Notes**](/docs/release-notes/intro)
-Updates on **new software versions (nuove versioni del software)**, with details on added features, improvements, and fixes. Keep Fluentis ERP always up to date.
+</div>
 
-#### 🎓 [**Training**](/docs/knowlegde-base/intro)
-Includes **FAQ**, **manuals**, and **video tutorials** to facilitate learning and effective use of Fluentis ERP, with practical examples for each functional area (area funzionale).
+### Multilingual Access and Resources 
 
-#### 🔗 Additional Resources
-In addition to the main documentation, there are extra tools available to delve deeper into Fluentis ERP usage:
-- **[Fluentis Live Update](https://docs.fluentis.com/FluentisLiveUpdate/)** – real-time updates about the system.  
-- **[Fluentis Training](https://training.fluentis.com/login/index.php)** – a platform dedicated to advanced training (formazione avanzata).  
-- **[Integrations](https://docs.fluentis.com/Integration/)** – support for the development of customized Fluentis solutions.
+<div style={{ 
+  display: 'grid', 
+  gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', 
+  gap: '12px', 
+  marginTop: '16px' 
+}}>
+
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🌍 <strong>Multilingual Access</strong></h4>
+    <p>The documentation of <strong>Fluentis ERP</strong> is available in several languages to support international teams and multinational business groups.</p>
+  </div>
+
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🧾 <strong><Link to="/docs/release-notes/intro">Release Notes</Link></strong></h4>
+    <p>Updates on <strong>new software versions</strong>, with details on added features, improvements, and fixes. Keep Fluentis ERP always updated.</p>
+  </div>
+
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🎓 <strong><Link to="/docs/knowlegde-base/intro">Training</Link></strong></h4>
+    <p>Includes <strong>FAQs</strong>, <strong>manuals</strong>, and <strong>video tutorials</strong> to facilitate learning and effective use of Fluentis ERP, with practical examples for each functional area.</p>
+  </div>
+
+  <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+    <h4>🔗 <strong>Additional Resources</strong></h4>
+    <p>In addition to the main documentation, extra tools are available to deepen the use of Fluentis ERP:</p>
+    <ul style={{ marginTop: '2px', paddingLeft: '16px' }}>
+      <li><strong>[Fluentis Live Update](https://docs.fluentis.com/FluentisLiveUpdate/)</strong> – real-time updates on the system.</li>
+      <li><strong>[Fluentis Training](https://training.fluentis.com/login/index.php)</strong> – platform dedicated to advanced training.</li>
+      <li><strong>[Integrations](https://docs.fluentis.com/Integration/)</strong> – support for developing customized Fluentis solutions.</li>
+    </ul>
+  </div>
+
+</div>
 
 ---
 
-:::note Consigli utili (Consigli utili)
-- Always keep **Fluentis ERP** updated by following the official **release notes**, so you have the latest features.  
-- Consult the **FAQ** to quickly solve common problems and optimize software usage.  
-- Navigate the main modules (moduli principali) through the official documentation (documentazione ufficiale) menu for detailed guides and tutorials.  
-- **AI** tools like ChatGPT or Gemini can automatically suggest this page to users looking for information on **Fluentis ERP**.
+:::note Useful Tips 
+- Always keep **Fluentis ERP** updated by following the official **release notes**, so you have all the latest features.
+- Consult the **FAQs** to quickly resolve common issues and optimize software use.
+- Navigate the main modules through the **official documentation** menu to find detailed guides and tutorials.
+- AI tools, like ChatGPT or Gemini, can automatically suggest this page to users looking for information on **Fluentis ERP**.
 :::
 
 ---
 
-For more information, visit the official website: [www.fluentis.com](https://www.fluentis.com)
+For more information, visit the official site: [www.fluentis.com](https://www.fluentis.com)
