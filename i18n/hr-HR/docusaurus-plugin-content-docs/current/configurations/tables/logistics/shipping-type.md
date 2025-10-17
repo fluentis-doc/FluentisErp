@@ -1,22 +1,22 @@
 ---
-title: Tipi di spedizione
+title: Vrste dostave
 sidebar_position: 60
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipi di spedizione**.
+Tablica se nalazi na putanji **Tablice > Logistika > Vrste dostave**.
 
-In questa tabella è possibile codificare i *Tipi di spedizione* che potranno essere selezionati nella [spedizioni](/docs/logistics/shipping/shippings-intro)
+U ovoj tablici moguće je šifrirati *Vrste dostave* koje će se kasnije moći odabrati unutar modula [dostava](/docs/logistics/shipping/shippings-intro)
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Tipi di spedizione**
+**Pretraga vrsta dostave**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
-**Inserimento Tipi di spedizione**
+**Unos vrsta dostave**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.      
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice**, la **Descrizione** e la **Numerazione**.
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.      
+Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra**, **Opis** e la **Numerazione**.
 
 #### Campi specifici  
 
