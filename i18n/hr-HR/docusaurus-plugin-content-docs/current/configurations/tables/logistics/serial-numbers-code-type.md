@@ -1,32 +1,32 @@
 ---
-title: Tipo codice serial number
+title: Tip šifre serijskog broja
 sidebar_position: 27
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Tipo codice serial number**.
+Tablica se nalazi na putanji **Tablice > Logistika > Tip šifre serijskog broja**.
 
-In questa tabella è possibile codificare i *Tipi di codici serial number* da gestire poi nel database.
+U ovoj tablici moguće je šifrirati *Tipove šifri serijskog broja* koji će se zatim koristiti u bazi podataka. 
 
-**Ricerca Tipi codice serial number**
+**Pretraga tipova šifri serijskog broja**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati nell'aria di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u području s rezultatima.
 
-**Inserimento Tipi codice serial number**
+**Unos tipova šifri serijskog broja**  
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novi**. Potrebno je unijeti **Šifru** i **Opis** tipa šifre serijskog broja, spremiti red i odabrati parametre koji će se koristiti za sastavljanje upravo kreiranog tipa šifre.  
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. Inserire il **Codice** e la **Descrizione** del tipo codice serial number, salvare la riga e decidere quali parametri si vogliono utilizzare per la composizione del tipo codice serial number appena creato.
+Za svaki korišteni parametar moguće je definirati broj znakova koji će ga činiti te, ako je potrebno, i znak za popunjavanje.
+Na primjer, za parametar Progresivni broj, ako se kao znak za popunjavanje postavi "0", a duljina na 5 znakova, generirat će se šifre kao što su 00000, zatim 00001, 00002 itd.  
 
-Per ogni parametro utilizzato si può decidere da quanti caratteri deve essere formato ed eventualmente anche il carattere di riempimento da utilizzare. Per esempio, con il parametro “Numero progressivo” impostando come carattere di riempimento lo “0” e come Lunghezza 5 verranno creati lotti con come primo numero lo 00000, poi lo 00001, poi lo 00002 e così via. 
+**Tip šifre serijskog broja** mora se zatim povezati s *Identifikacijom artikla* u istoimenom polju unutar kartice [Serije i serijski brojevi](/docs/erp-home/registers/items/create-new-item), kako bi se u procedurama koje automatski generiraju serijski broj za određeni artikl, broj generirao prema ovdje definiranim pravilima.  
 
-Il **Tipo codice serial number** deve poi essere agganciato all'*Anagrafica articolo* nel campo omonimo situato nel tab [Lotti e serial number](/docs/erp-home/registers/items/create-new-item), in modo che nelle procedure che creano automaticamente il codice serial number per l'articolo in questione il SN stesso venga generato secondo le regole impostate qui.
+#### Detalji tipa šifre serijskog broja  
 
-#### Dettagli tipo codice serial number 
+> *Klasa*: prikazuje klasu artikla;      
+> *Serijski broj*: prikazuje šifru artikla;       
+> *Karakteristika*: prikazuje karakteristiku iz identifikacije artikla;     
+> *Robna kategorija*: prikazuje robnu kategoriju iz identifikacije artikla;     
+> *Tip artikla*: prikazuje tip artikla iz identifikacije artikla;     
+> *Varijanta*: prikazuje varijantu artikla;     
+> *Abecedni znakovi*: omogućuje unos abecednih znakova.         
 
-> *Classe*: riporta la classe dell'articolo;    
-> *Matricola*: riporta il codice articolo;     
-> *Caratteristica*: riporta la caratteristica dell'anagrafica articolo;     
-> *Cat. Merceologica*: riporta la categoria merceologica dell'anagrafica articolo;    
-> *Tipo Articolo*: riporta il tipo articolo dell'anagrafica articolo;    
-> *Variante*: riporta la variante dell'articolo;     
-> *Caratteri alfabetici*:  permette di inserire dei caratteri alfabetici.        
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

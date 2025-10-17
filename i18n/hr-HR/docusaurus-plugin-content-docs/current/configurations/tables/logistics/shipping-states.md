@@ -1,29 +1,29 @@
 ---
-title: Stati di spedizione
+title: Status dostave
 sidebar_position: 61
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Stati di spedizione**.
+Tablica se nalazi na putanji **Tablice > Logistika > Statusi dostave**.
 
-In questa tabella è possibile codificare i *Stati di spedizione* che potranno essere selezionati nella [spedizioni](/docs/logistics/shipping/shippings-intro)
+U ovoj tablici moguće je šifrirati statuse dostave koji će se kasnije moći odabrati unutar [dostave](/docs/logistics/shipping/shippings-intro)
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Stati di spedizione**
+**Pretraga statusa dostave**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
-**Inserimento Stati di spedizione**
+**Unos statusa dostave**
 
-Per poter inserire nuovi è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra** i **Descrizione**.
 
-#### Campi specifici  
+#### Specifična polja  
 
-> **Codice**: è il codice del *Stato di spedizione*.   
-> **Descrizione**: è la descrizione del *Stato di spedizione*.   
-> **Colore di sfondo**: permette di definire il colore di sfondo della riga presente nel [Filtro delle spedizioni](/docs/logistics/shipping/search-shippings). 
-> **Colore testo**: permette di definire il colore del testo della riga presente nel [Filtro delle spedizioni](/docs/logistics/shipping/search-shippings). 
-> **Voce del dizionario**: permette di definire la *Voce del dizionario*.   
+> **Šifra**: predstavlja šifru *Statusa dostave*.   
+> **Opis**: opis *Statusa dostave*.   
+> **Boja pozadine**: omogućuje definiranje boje pozadine retka prikazanog u [Filtru dostave](/docs/logistics/shipping/search-shippings). 
+> **Boja teksta**: omogućuje definiranje boje teksta retka prikazanog u [Filtru dostave](/docs/logistics/shipping/search-shippings). 
+> **Stavka rječnika**: permette di definire la *Voce del dizionario*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

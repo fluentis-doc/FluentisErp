@@ -1,20 +1,20 @@
 ---
-title: Stagionalità
+title: Sezonski
 sidebar_position: 46
 ---
 
-Questa form permette di gestire le variazioni stagionali dell'approvvigionamento nei periodi precedenti, per articolo e periodo. Quest'operazione si può fare manualmente oppure in automatico con la procedura di *Ripresa dati* nella previsione corrente dall'approvvigionamento precedente; la procedura offre la possibilità di generare la stagionalità. 
+Questa form permette di gestire le variazioni stagionali dell'approvvigionamento nei periodi precedenti, per articolo e periodo. Quest'operazione si può fare manualmente oppure in automatico con la procedura di *Preuzimanja podataka* u tekućoj prognozi iz prethodne opskrbe; procedura omogućuje generiranje sezonalnosti.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Stagionalità**
+**Pretraga Sezonalnosti**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
-**Inserimento Stagionalità**
+**Unos Sezonalnosti**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novi**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za novi zapis obavezno je unijeti barem polja koja program zahtijeva: **Šifra** i **Opis**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).  

@@ -1,18 +1,18 @@
 ---
-title: Tipi Campionamento
+title: Vrsta uzorkovanja
 sidebar_position: 53
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di campionamento con cui verranno prelevati dei campioni da un ordine di produzione.
+Tablica omogućuje upravljanje šifriranjem različitih vrsta uzorkovanja prema kojima će se uzorci uzimati iz proizvodnog naloga.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Tipi Campionamento**
+**Pretraga Vrsta Uzorkovanja**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-**Inserimento Tipi Campionamento**
+**Unos Vrsta Uzorkovanja**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

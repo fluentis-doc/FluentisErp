@@ -1,21 +1,21 @@
 ---
-title: Chiavi SAP
+title: SAP ključevi
 sidebar_position: 11
 ---
 
-La tabella si trova sul percorso **Tabelle > Logistica > Chiavi SAP**.  
+Tablica se nalazi na putanji **Tablice > Logistika > SAP ključevi**.  
 
-In questa tabella è possibile codificare le diverse tipologie di *Chiavi SAP*.
+U ovoj tablici moguće je šifrirati različite vrste *SAP ključeva*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Chiavi SAP**
+**Pretraga SAP ključeva**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.
 
-**Inserimento Chiavi SAP**
+**Unos SAP ključeva**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.  
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.  
+Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra** i **Opis**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

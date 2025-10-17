@@ -21,18 +21,18 @@ Za unos novog tipa potrebno je kliknuti na prvi prazan red u rešetki ili pritis
   
 **Skladište**: u ovoj koloni korisnik može odabrati skladište na koje će se teret proizveden od strane vanjskog izvođača i poslan od strane istog učitati putem povrata vanjske obrade stvorenog s upravo unesenim tipom;  
 
-**Opis skladišta**: rappresenta la descrizione del magazzino inserito nella colonna precedente;
+**Opis skladišta**: prikazuje opis skladišta unesenog u prethodnom stupcu;
 
-**Causale**: in questa colonna l'utente può scegliere la causale con la quale deve essere caricato il materiale prodotto dal terzista e spedito dallo stesso tramite un rientro di conto lavoro creato con il tipo appena inserito;
+**Predložak**: u ovom stupcu korisnik može odabrati predložak prema kojemu se knjiži materijal proizveden kod kooperanta i otpremljen od strane istoga, putem povratnog dokumenta za uslužnu obradu kreiranog s upravo unesenim tipom;
 
-**Descrizione causale**: rappresenta la descrizione della causale inserita nella colonna precedente;
+**Opis predloška**: prikazuje opis predloška unesenog u prethodnom stupcu;
 
-**Sc. mag.**: in questa colonna l'utente può scegliere il magazzino da cui dovrà essere scaricato il materiale utilizzato dal terzista ed inserito nel tab Materiali del rientro di conto lavoro creato con il tipo appena inserito;
+**Otp. predl.**: u ovom stupcu korisnik može odabrati predložak prema kojem se vrši otpis materijala koji je kooperant iskoristio, a koji je unesen u karticu Materijali unutar povratnog dokumenta za uslužnu obradu kreiranog s upravo unesenim tipom;
 
-**Sc. mag. descrizione**: rappresenta la descrizione del magazzino inserito nella colonna precedente;
+**Opis otp. predloška**: prikazuje opis skladišta unesenog u prethodnom stupcu;
 
-**Sc. caus.** ****: in questa colonna l'utente può scegliere la causale con la quale deve essere scaricato il materiale utilizzato dal terzista ed inserito nel tab Materiali del rientro di conto lavoro creato con il tipo appena inserito;
+**Otp. predl.**: in questa colonna l'utente può scegliere la causale con la quale deve essere scaricato il materiale utilizzato dal terzista ed inserito nel tab Materiali del rientro di conto lavoro creato con il tipo appena inserito;
 
-**Sc. caus. descrizone**: rappresenta la descrizione della causale inserita nella colonna precedente.
+**Opis otp. predloška**: prikazuje opis predloška unesenog u prethodnom stupcu.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
