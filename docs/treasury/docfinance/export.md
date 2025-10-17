@@ -81,4 +81,11 @@ Ad esempio potrebbe essere configurata con diritti "everyone".
 :::
 
 
+## SCRIPT DI CREAZIONE CONNETTORI
+ATTENZIONE: dopo il lancio degli script occorre modificare i connettori adattandoli specificamente al client in uso, esempio verificare il nome del folder di uscita, l'identificativo ecc...
 
+[**Scarica lo script SQL 1**](/sql/it-IT/DocFinance_Setup_Connector1.sql)
+
+[**Scarica lo script SQL 2**](/sql/it-IT/DocFinance_Setup_Connector2.sql)
+
+[**Scarica lo script SQL 3**](/sql/it-IT/DocFinance_Setup_Connector3.sql)
