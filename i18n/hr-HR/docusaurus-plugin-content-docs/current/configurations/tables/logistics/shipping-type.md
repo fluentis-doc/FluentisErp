@@ -16,14 +16,14 @@ Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon 
 **Unos vrsta dostave**
 
 Za unos novih zapisa potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.      
-Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra**, **Opis** e la **Numerazione**.
+Za novi zapis potrebno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra**, **Opis** i **Numeracija**.
 
-#### Campi specifici  
+#### Specifična polja
 
-> **Codice**: è il codice del *Tipo di spedizione*.   
-> **Descrizione**: è la descrizione del *Tipo di spedizione*.   
-> **Nota**: annotazioni libere.   
-> **Numerazione**: è il codice della numerazione del *Tipo di spedizione*.   
-> **Descrizione**: è la descrizione della numerazione del *Tipo di spedizione*.   
+> **Šifra**: šifra *Tipa pošiljke*.   
+> **Opis**: opis *Tipa pošiljke*.   
+> **Napomena**: slobodne bilješke.    
+> **Numeracija**: šifra numeracije *Tipa otpreme.*.   
+> **Opis**: opis numeracije *Tipa otpreme*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

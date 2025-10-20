@@ -1,20 +1,20 @@
 ---
-title: Tipo liste inventariali
+title: Tipovi inventurnih lista  
 sidebar_position: 32
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Liste inventariali*.
+Tablica omogućuje upravljanje šifriranjem različitih tipova *Inventurnih lista*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Tipo liste inventariali**
+**Pretraga tipova inventurnih lista**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretraga** kako bi se rezultati prikazali u mreži rezultata.  
 
-**Inserimento Tipo liste inventariali**
+**Unos tipova inventurnih lista**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih šifri potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.
 
-Il flag **Mantieni ubicazione** nella tabella dei *Tipi liste inventariali*, se attivo, fa in modo che in fase di inventario con il **WMS** l'ubicazione inserita non verrà variata fino a quando non sarà  letta un'altra ubicazione; nel caso in cui invece, fosse disattivato, l'ubicazione dovrà essere inserita ogni volta prima della conferma dell'articolo.
+Flag **Zadrži lokaciju** u tablici *Tipovi inventurnih lista*, ako je aktiviran, omogućuje da se tijekom inventure putem **WMS** unesena lokacija ne mijenja sve dok se ne očita neka druga lokacija. Ako je flag deaktiviran, lokaciju će biti potrebno unositi svaki put prije potvrde artikla.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

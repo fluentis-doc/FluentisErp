@@ -1,5 +1,5 @@
 ---
-title: Causali di magazzino
+title: Predlošci zapisa skladišta
 sidebar_position: 9
 ---
 
