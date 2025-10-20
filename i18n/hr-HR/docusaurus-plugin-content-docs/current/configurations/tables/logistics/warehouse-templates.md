@@ -3,73 +3,74 @@ title: Predlošci zapisa skladišta
 sidebar_position: 9
 ---
 
-:::important A cosa serve
-La tabella Causali di Magazzino di Fluentis è un elemento essenziale per la gestione delle movimentazioni di magazzino, consentendo di definire e personalizzare le causali utilizzate nei movimenti di carico e scarico. Gli utenti possono facilmente inserire nuove causali nella griglia, specificando informazioni obbligatorie come il magazzino di riferimento, il codice della causale e la descrizione.      
+:::important Čemu služi 
+Tablica Predlošci zapisa skladišta u Fluentisu ključna je za upravljanje skladišnim operacijama, omogućujući definiranje i prilagodbu razloga koji se koriste za knjiženje ulaza i izlaza robe. Korisnici jednostavno mogu dodavati nove razloge u tablicu, unoseći obavezne podatke poput skladišta, koda razloga
 
-Una delle caratteristiche principali di questa tabella è la possibilità di associare causali specifiche a ciascun magazzino, il che offre una flessibilità notevole nella personalizzazione delle procedure operative. Ogni causale può essere caratterizzata come carico o scarico, permettendo di gestire in modo preciso come influiscono sulla giacenza di magazzino.      
+Jedna od glavnih značajki ove tablice je mogućnost dodjele specifičnih razloga za svako skladište, što daje veliku fleksibilnost u prilagodbi poslovnih procesa. Svaki razlog može biti definiran kao ulazni ili izlazni, što omogućuje precizno upravljanje utjecajem na stanje zaliha.
 
-Inoltre, gli utenti possono configurare vari parametri opzionali, tra cui flag per la visibilità in aree specifiche e definire il costo proposto per i movimenti. È anche possibile attivare funzioni per aggiornare automaticamente il costo medio, il costo ultimo e il prezzo di vendita in funzione delle movimentazioni effettuate. Queste caratteristiche rendono la tabella un componente chiave per una gestione efficiente delle operazioni di magazzino e per il monitoraggio dei costi.
+Osim toga, moguće je konfigurirati različite opcijske parametre, uključujući vidljivost u određenim područjima i definiranje predloženih troškova za knjiženja. Također, može se aktivirati automatsko ažuriranje prosječnih troškova, zadnjih troškova i prodajnih cijena ovisno o izvršenim skladišnim operacijama. Sve ove značajke čine ovu tablicu ključnim dijelom učinkovite kontrole skladišnih procesa i praćenja troškova.  
 :::
 
-Attraverso questa finestra vengono impostate tutte le causali di magazzino che servono alla movimentazione degli articoli da e per i vari magazzini inseriti nell'apposita tabella *Magazzini*.
+Kroz ovaj prozor postavljaju se svi razlozi skladišnih knjiženja potrebni za premještanje artikala u i iz različitih skladišta upisanih u posebnu tablicu *Skladišta*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
 
-**Ricerca Causali di Magazzino**
+**Predlošci zapisa skladišta**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u tablici rezultata.  
 
-**Inserimento Causali di Magazzino**
+**Unos predložaka zapisa skladišta**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih kodova potrebno je kliknuti u prazni prvi red tablice ili pritisnuti tipku **Novi**.
 
-**Magazzino**: in questa colonna l'utente deve impostare, usando l'apposita combo box che richiama i dati dalla tabella *Magazzini*, il codice del magazzino per il quale deve inserire la causale di movimentazione;
+**Skladište**: u ovom stupcu korisnik treba postaviti, koristeći padajući izbornik koji dohvaća podatke iz tablice *Skladišta*, šifru skladišta za koje se želi unijeti predložak zapisa;
 
-**Causale**: in questa colonna l'utente deve inserire il codice della causale di magazzino. Esso può raggiungere una lunghezza massima di 3 caratteri alfanumerici. È possibile creare più causali di magazzino con lo stesso codice, a patto che le causali siano generate per magazzini diversi; due causali con lo stesso codice sullo stesso magazzino non sono quindi ammesse;
+**Predložak**: u ovom stupcu korisnik unosi šifru predloška zapisa skladišta. Maksimalna duljina je 3 alfanumerička znaka. Moguće je kreirati više predložaka s istom šifrom, pod uvjetom da su za različita skladišta; dva predloška s istom šifrom za isto skladište nisu dopuštena;
 
-**Descrizione**: in questa colonna l'utente deve inserire la descrizione della causale di magazzino, che può raggiungere una lunghezza massima di 80 caratteri alfanumerici;
+**Opis**: u ovom stupcu korisnik unosi opis predloška zapisa skladišta, koji može imati maksimalno 80 alfanumeričkih znakova;
 
-**Tipo**: in questa colonna l'utente deve inserire *Tipo di movimentazione* che caratterizza la causale. Essa può essere di *Carico*, nel qual caso la quantità del movimento di magazzino creato con quella causale viene salvata nel database come positiva, oppure di *Scarico*, nel qual caso la quantità del movimento di magazzino creato con quella causale viene salvata come negativa;
+**Tip**: u ovom stupcu korisnik unosi *Tip pokreta* koji karakterizira predložak. Može biti *Zadužen*, gdje se količina pokreta u skladištu bilježi kao pozitivna, ili *Istovaren*, gdje se količina bilježi kao negativna;  
 
-**Visibile in Acquisto**: se attivo, rende visibile la causale nell’area acquisti;
+**Vidljivo u nabavi**: ako je aktivno, predložak je vidljiv u području nabave;
 
-**Visibile in Vendita**: se attivo, rende visibile la causale nell’area vendite;
+**Vidljivo u prodaji**: ako je aktivno, predložak je vidljiv u području prodaje;
 
-**Visibile in Prduzione**: se attivo, rende visibile la causale nell’area produzione;
+**Vidljivo u proizvodnji**: ako je aktivno, predložak je vidljiv u području proizvodnje;
 
-**Visibile in Conto Lavoro**: se attivo, rende visibile la causale nell’area conto lavoro;
+**Vidljivo u podizvođaču**: se attivo, rende visibile la causale nell’area conto lavoro;
 
 **Visibile in Logistica**: se attivo, rende visibile la causale nell’area logistica;
 
-**Costo proposto**: in questa colonna l'utente deve scegliere quale costo deve essere proposto automaticamente quando si inserisce un movimento manualmente. Il costo proposto può essere il costo ultimo, il costo medio, il prezzo di vendita oppure il costo standard dell'articolo movimentato. Da notare che i valori proposti vengono ripresi direttamente dall'anagrafica dell'articolo. Inoltre, è molto importante tener presente che il costo proposto ha priorità sui documenti; quindi, le causali di magazzino che saranno usate nei documenti dovranno avere come “Costo proposto” il valore “Nessuno”, in questo modo andrà a prendersi il costo indicato all’interno del documento.
+**Predloženi trošak**: u ovom stupcu korisnik bira koji se trošak automatski predlaže prilikom ručnog unosa pokreta. Predloženi trošak može biti posljednji trošak, prosječni trošak, prodajna cijena ili standardni trošak artikla. Vrijednosti dolaze iz kartice artikla. Važno je napomenuti da predloženi trošak ima prioritet nad dokumentima; stoga predlošci koji će se koristiti u dokumentima trebaju imati vrijednost "Nijedan" za predloženi trošak kako bi se uzimao trošak iz dokumenta;  
 
-**Aggiorna costo medio**: tutti i movimenti eseguiti usando una causale che ha questo flag attivato concorrono al calcolo del costo medio ponderato dell'articolo. Da notare che il flag non è attivabile o disattivabile dopo che la causale sia già stata utilizzata anche per un solo movimento di magazzino. Solitamente questo flag si attiva solo per i movimenti di carico, ma può essere attivato anche per i movimenti di scarico, quando si vuole fare in modo che la media ponderata del costo dell'articolo sia calcolata anche considerando i prezzi di vendita legati agli scarichi di magazzino dell'articolo stesso. 
-Il costo medio in anagrafica dell'articolo viene aggiornato con l'importo del movimento solo se sono attivi anche i flag *Aggiorna costo articolo* e *Interesse fiscale*;    
+**Ažuriraj prosječni trošak**: svi pokreti izvršeni korištenjem uzroka koji ima ovaj flag aktiviran doprinose izračunu prosječne ponderirane cijene artikla. Treba napomenuti da se flag ne može aktivirati ili deaktivirati nakon što je uzrok već korišten, čak i za samo jedan pokret skladišta. Obično se ovaj flag aktivira samo za pokrete utovara, ali se može aktivirati i za pokrete istovara, kada se želi osigurati da se prosječna ponderirana cijena artikla izračunava uzimajući u obzir i prodajne cijene povezane s istovarima skladišta samog artikla.  
+Prosječna cijena u kartonu artikla ažurira se s iznosom pokreta samo ako su aktivni i flagovi *Ažuriraj trošak artikla* i *Porezni interes*;
 
-**Aggiorna costo ultimo**: tutti i movimenti eseguiti usando una causale che ha questo flag attivato concorrono al calcolo del costo ultimo dell'articolo. Da notare che il flag non è attivabile o disattivabile dopo che la causale sia già stata utilizzata anche per un solo movimento di magazzino. Questo flag si attiva solo per i movimenti di carico. 
-Il costo ultimo in anagrafica dell'articolo viene aggiornato con l'importo del movimento solo se sono attivi anche i flag *Aggiorna costo articolo* e *Interesse fiscale*;    
+**Ažuriraj posljednji trošak**: svi pokreti s predloškom koji ima ovaj označivač aktiviran sudjeluju u izračunu posljednjeg troška artikla. Ne može se mijenjati nakon prvog korištenja. Obično se koristi samo za prijeme.   
+Posljednji trošak u kartici artikla ažurira se samo ako su aktivni i *Ažuriraj trošak artikla* i *Porezni interes*;    
 
-**Aggiorna prezzo di vendita**: Da notare che il flag non è attivabile o disattivabile dopo che la causale sia già stata utilizzata anche per un solo movimento di magazzino. Questo flag si attiva solo per i movimenti di scarico. 
-Il prezzo di vendita in anagrafica dell'articolo viene aggiornato con l'importo del movimento solo se è attivo anche il flag *Agg. C.Art.*;     
+**Ažuriraj prodajnu cijenu**: ne može se mijenjati nakon prvog korištenja. Koristi se uglavnom za otpremu. Prodajna cijena u kartici artikla ažurira se samo ako je aktivan označivač *Ažuriraj trošak artikla*;     
 
-**Aggiorna costo articolo**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag **Aggiorna Costo Articolo** attivato, vengono aggiornati rispettivamente il costo medio, il costo ultimo e/o il prezzo di vendita in anagrafica dell'articolo con l'importo del movimento in base a quali dei seguenti flag sono attivi: *Aggiorna costo medio*, *Aggiorna costo ultimo* e *Aggiorna prezzo di vendita*.      
+**Ažuriraj trošak artikla**: kada se unosi pokret skladišta koristeći u zaglavlju registracije predložak koji ima aktiviran flag **Ažuriraj trošak artikla**ažuriraju se prosječni trošak, posljednji trošak i/ili prodajna cijena u kartici artikla, ovisno o tome koji su od sljedećih flagova aktivirani: *Aggiorna costo medio*, *Aggiorna costo ultimo* e *Aggiorna prezzo di vendita*.      
 
-**Interesse fiscale**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag **Interesse Fiscale** attivato, il movimento stesso viene considerato nel giornale di magazzino e nel calcolo del costo ultimo, medio e dell'inventario quantità valorizzato, sempre che l'articolo movimentato abbia anch'esso il flag *Interesse Fiscale* attivato sul tab *Generalità*;
+**Porezni interes**: kada se unosi skladišni pokret koristeći u zaglavlju registracije predložak koji ima aktiviran flag **Porezni interes** sam pokret se uključuje u skladišni dnevnik te u izračun posljednjeg i prosječnog troška, kao i u valorizirani inventar po količini – pod uvjetom da i artikl koji se koristi ima aktiviran flag *Porezni interes* u kartici *Općenito*;
 
-**Punto di riordino**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag **Punto di Riordino** attivato, il movimento viene considerato dalla procedura che esegue il calcolo del punto di riordino;     
+**Točka narudžbe**: kada se unosi skladišni pokret koristeći u zaglavlju registracije predložak koji ima aktiviran flag **Točka narudžbe** taj pokret se uzima u obzir prilikom obrade u postupku izračuna točke narudžbe;       
 
-**Gestione lotti**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag **Gestione lotti** attivato il movimento permette l'inserimento del lotto nell'apposita griglia della registrazione di magazzino per un dato articolo che è gestito a lotti.  
-Lo stesso procedimento è valido per la gestione a **Serial Numbers**;
+**Upravljanje serijama**: kada se unosi skladišni pokret koristeći u zaglavlju registracije predložak koji ima aktiviran flag **Upravljanje serijama** pokret omogućuje unos serije u odgovarajuću tablicu registracije skladišta za artikl koji se vodi po serijama.
+Isti princip vrijedi i za upravljanje **Serijskim brojevima**;
 
-**Integra quantità iniziale**: si utilizza solo con la gestione lotti; permette di incrementare la quantità di un lotto caricato con un movimento precedente mantenendo lo stesso numero di lotto; 
+**Integracija početne količine**: koristi se isključivo uz upravljanje serijama; omogućuje povećanje količine serije već unešene prethodnim pokretom, zadržavajući isti broj serije.  
 
-**Crea lotto da lotto**: se attivo, permette di visualizzare quella causale come causale della procedura “Creazione lotto da lotto” per cambiare un lotto in un altro ; quindi, il programma farà automaticamente lo scarico di un lotto e il carico di un altro dello stesso articolo; inoltre, è disponibile anche la procedura “Creazione lotto da lotto con cambio articolo” che permette di scaricare un articolo con un certo lotto e caricare un altro articolo con un altro lotto; per poter attivare questo flag la casuale creata deve essere di **Scarico** e devono essere attivi anche i seguenti flag: **Gestione Lotti**, **Integra quantità iniziale** ed inoltre, non deve essere attivo il flag **Distinta Base** e deve esserci una causale in **Causale di contropartita di carico**;
+**Kreiraj seriju iz serije**: ako je flag aktivan, omogućuje da se ta skladišna predložena zapisa prikaže kao predložak unutar procedure Kreiranje serije iz serije, kojom se omogućuje zamjena jedne serije drugom; program tada automatski kreira pokret za izlaz iz jedne serije i ulaz u drugu seriju istog artikla.
+Dostupna je i dodatna procedura Kreiranje serije iz serije uz promjenu artikla, kojom je moguće iz jedne serije određenog artikla preći na drugu seriju drugog artikla.
+Da bi se ovaj flag mogao aktivirati, predložak mora biti tipa **Istovar** a aktivni moraju biti i sljedeći flagovi: **Upravljanje serijama**, **Integracija početne količine**. Također, flag **Sastavnica materijala** e smije biti aktivna, a u polju **Predložak protupokreta za ulaz** mora biti postavljen odgovarajući predložak.;
 
-**Lotti non disponibili**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag *Lotti non disponibili* attivato con il movimento si potranno anche scaricare lotti che si trovano in uno stato che non è disponibile;
+**Nedostupne serije**: kada se unosi skladišni pokret koristeći predložak koji ima aktivan flag *Nedostupne serije* moguće je obaviti izlaz i iz serija koje se nalaze u statusu "nedostupno";
 
-**Crea S/N**: se attivo, permette di abilitare la gestione e la creazione automatica dei serial number;
+**Kreiraj serijske brojeve (S/N)**: ako je flag aktivan, omogućuje se upravljanje serijskim brojevima te njihovo automatsko generiranje pri unosu pokreta;  
 
-**Documento obbligatorio**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag **Documento Obbligatorio** attivato, è obbligatorio specificare qualcosa nel campo *Documento di riferimento* della registrazione di magazzino, altrimenti non è possibile proseguire;
+**Obavezan dokument**: kada se unosi skladišni pokret koristeći predložak koji ima aktiviran flag **Obavezan dokument** obavezno je unijeti podatak u polje *Referentni dokument* unutar registracije skladišta – u suprotnom nije moguće nastaviti s unosom.;
 
 **Conto obbligatorio**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag **Conto Obbligatorio** attivato, è obbligatorio specificare qualcosa nel campo *Cliente/Fornitore* della registrazione di magazzino. Viene usata di solito per le registrazioni relative al consumo e alla consegna materiali di conto lavoro, altrimenti non è possibile proseguire;
 
