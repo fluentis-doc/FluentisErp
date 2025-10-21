@@ -1,28 +1,30 @@
 ---
-title: Attributi attrezzaggio
+title: Atributi podešavanja
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Attributi attrezzaggio**.
+Tablica se nalazi putem izbornika **Tablice > Proizvodnja > Tablice F.C.S. > Atributi podešavanja**.
 
-I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+Podaci iz ove tablice koriste se isključivo unutar postupka[F.C.S. Planiranja](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
-Questa tabella registra tutti i possibili attributi di attrezzaggio.         
-Il flag **Numerico** deve essere selezionato per attributi numerici (per esempio temperatura). Per gli attributi non numerici vanno salvati tutti i valori possibili, che verranno selezionati dove richiesto, evitando la possibilità di inserire errori di input.       
-Gli attributi di attrezzaggio, sono gli elementi che definiscono lo stato di una macchina, al fine del calcolo del tempo di attrezzaggio, quando si passa da una lavorazione a quella successiva.        
-Questi sono associati alle macchine per le quali si vuole calcolare con precisione i tempi di attrezzaggio, ed alle fasi di lavorazione da lavorare su tali macchine.      
-Il tempo di attrezzaggio è determinato da una opportuna regola di attrezzaggio.
+Ova tablica sadrži sve moguće atribute podešavanja.        
+Flag **Numerički** mora biti označen za numeričke atribute (npr. temperatura).  
+Za atribute koji nisu numerički, potrebno je unaprijed definirati sve moguće vrijednosti — one će se kasnije birati s liste, čime se izbjegavaju greške prilikom unosa podataka.  
+Atributi podešavanja predstavljaju stanja stroja koja se koriste za izračun vremena podešavanja prilikom prijelaza s jedne obrade na drugu.
+Oni se dodjeljuju strojevima za koje se želi precizno izračunati vrijeme podešavanja, kao i fazama obrade koje se odvijaju na tim strojevima.
+Vrijeme podešavanja određuje se na temelju odgovarajućeg pravila podešavanja.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Attributi attrezzaggio**
+**Pretraživanje atributa podešavanja**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i prikaza rezultata.
+Nakon što se postave svi željeni filteri, klikni na tipku **Traži** kako bi se rezultati prikazali u mreži.  
 
-**Inserimento Attributi attrezzaggio**
+**Unos atributa podešavanja**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za novi zapis obavezno je unijeti barem sljedeća polja: **Šifra** i **Opis**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

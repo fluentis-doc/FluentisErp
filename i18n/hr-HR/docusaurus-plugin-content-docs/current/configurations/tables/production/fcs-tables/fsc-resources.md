@@ -1,23 +1,25 @@
 ---
-title: Risorse F.C.S.
+title: Resursi F.C.S.
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Risorse F.C.S.**.
+Tablica se nalazi putem izbornika **Tablice > Proizvodnja > Tablice F.C.S. > Resursi F.C.S.**.
 
-I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+Podaci iz ove tablice koriste se isključivo unutar postupka [F.C.S. Planiranja](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
-Questa form consente di gestire le risorse di produzione da schedulare a capacità finita, il cui tipo è associato alle fasi di lavorazione. Su ogni fase si indica il tipo di risorsa necessaria e la relativa quantità, non si specifica l'identificativo della singola risorsa.        
-Per esempio, se serve un utensile, indicherò sulla fase che tipo di utensile serve. Di quel tipo di utensili ce ne può essere uno solo o più di uno. Ciascuno di essi verrebbe definito e gestito tramite questo form.
+Ova forma omogućuje upravljanje proizvodnim resursima koje je potrebno planirati prema načelu ograničenog kapaciteta, a čiji je tip povezan s fazama obrade.
+Na svakoj fazi obrade navodi se tip potrebnog resursa i pripadajuća količina — ne navodi se identifikator pojedinačnog resursa.
+Na primjer, ako je potreban alat, u fazi će biti navedeno koji tip alata je potreban. Takvih alata može postojati jedan ili više, a svaki od njih definira se i upravlja putem ove forme.
 
-**Ricerca Risorse F.C.S.**
+**Pretraživanje resursa F.C.S.**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i prikaza rezultata.
+Nakon što se postave željeni filteri, klikni na tipku **Traži** za prikaz rezultata unutar mreže.
 
-**Inserimento Risorse F.C.S.**
+**Unos resursa F.C.S.**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice**, **Descrizione** e **Tipo risorsa F.C.S.**.
+Kod unosa novog zapisa obavezno je unijeti barem sljedeća polja: **Šifra**, **Opis** i **Vrsta resursa F.C.S.**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

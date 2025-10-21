@@ -1,22 +1,26 @@
 ---
-title: Regole attrezzaggio
+title: Pravila postavljanja
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Regole attrezzaggio**.
+La tabella si trova sul percorso **Tablice > Proizvodnja > Tablice F.C.S. > Pravila podešavanja**.
 
-I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+Podaci iz ove tablice koriste se isključivo unutar postupka [F.C.S. Planiranja](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
-Questa form permette di definire le regole che consentono di calcolare il tempo di attrezzaggio delle lavorazioni da processare su una macchina per la quale sono definiti gli [Attributi di attrezzaggio](/docs/configurations/tables/production/fcs-tables/setup-property).       
-Una regola di attrezzaggio può essere definita tramite più di un record di questa tabella. Ogni record permette di gestire fino a 10 attributi di attrezzaggio. Per ciascuno degli attributi definiti nel record, esiste un coefficiente moltiplicativo (di default 1) che verrà applicato al valore di transizione di stato dell'attributo.         
-I valori ottenuti dopo la moltiplicazione per i coefficienti, vengono trattati secondo il tipo calcolo selezionato nel record (massimo, minimo, somma, media), ed infine il risultato è moltiplicato per il  coefficiente nel totale (default 1).      
-Se la regola è definita tramite più di un record, viene eseguita la somma dei risultati di ciascun record per giungere al calcolo finale del tempo di attrezzaggio.
+Ova forma omogućuje definiranje pravila za izračun vremena podešavanja obrade koja se odvija na stroju za koji su prethodno definirani [Atributi podešavanja](/docs/configurations/tables/production/fcs-tables/setup-property).       
+Jedno pravilo podešavanja može biti definirano putem više zapisa u ovoj tablici.
+Svaki zapis omogućuje upravljanje s najviše 10 atributa podešavanja.
+Za svaki od atributa definiranih u zapisu, postoji koeficijent množenja (zadano: 1) koji se primjenjuje na vrijednost promjene stanja atributa.
+Vrijednosti dobivene množenjem s koeficijentima zatim se obrađuju prema odabranoj vrsti izračuna u zapisu (maksimum, minimum, zbroj, prosjek).
+Nakon toga, rezultat se dodatno množi s ukupnim koeficijentom (zadano: 1).
+Ako je pravilo definirano kroz više zapisa, konačno vrijeme podešavanja izračunava se kao zbroj rezultata svih zapisa.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Regole attrezzaggio**
+**Pretraživanje pravila podešavanja**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i prikaza rezultata.
+Nakon što postaviš željene filtere, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži.  
 
 **Inserimento Regole attrezzaggio**
 

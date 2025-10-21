@@ -1,37 +1,37 @@
 ---
-title: Magazzini
+title: Skladišta
 sidebar_position: 15
 ---
 
-:::important A cosa serve
-La tabella Magazzini di Fluentis consente di creare, modificare e gestire i record dei magazzini, assicurando un'efficace movimentazione dei materiali all'interno del sistema. 
-Nella tabella, gli utenti trovano un'interfaccia intuitiva che include strumenti di ricerca e filtri per una rapida accessibilità ai dati. È possibile inserire nuovi magazzini specificando almeno il codice e la descrizione, oltre a dettagli come l'area gestionale e la data di fine validità.      
-Ogni magazzino può essere assegnato a uno specifico sito produttivo, facilitando così l'organizzazione delle risorse e il monitoraggio delle scorte.     
-Il collegamento di ogni magazzino a un determinato sito produttivo rappresenta un valore aggiunto, poiché permette di ottimizzare la distribuzione delle risorse e migliorare la pianificazione logistica aziendale.
+:::important Čemu služi
+Tablica Skladišta u sustavu Fluentis omogućuje kreiranje, uređivanje i upravljanje zapisima skladišta, čime se osigurava učinkovito kretanje materijala unutar sustava.
+Korisnicima je dostupno intuitivno sučelje koje uključuje alate za pretraživanje i filtre, omogućujući brz pristup podacima. Prilikom unosa novog skladišta potrebno je unijeti barem šifru i opis, uz dodatne detalje poput poslovnog područja i datuma završetka valjanosti.
+Svako skladište može biti povezano s određenom proizvodnom lokacijom, što olakšava organizaciju resursa i nadzor nad zalihama.
+Povezivanje skladišta s određenim proizvodnim mjestom dodaje vrijednost jer omogućuje optimizaciju raspodjele resursa i poboljšanje logističkog planiranja u tvrtki.
 :::
 
-La tabella si trova sul percorso **Tabelle > Logistica > Magazzini**.
+Tablica se nalazi putem izbornika **Tablice > Logistika > Skladišta**.
 
-La tabella di inserimento magazzini è necessaria per poter utilizzare in modo corretto tutte le funzioni del sistema che hanno a che vedere con la movimentazione dei materiali.
+Unos skladišta nužan je za ispravno korištenje svih funkcionalnosti sustava koje se odnose na kretanje materijala.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca magazzini**
+**Pretraživanje skladišta**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od filtra i prikaza rezultata. Nakon što se postave željeni filteri, potrebno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar mreže s rezultatima.
 
-**Inserimento magazzino**
+**Unos skladišta**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Inserimento**.
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il Codice del **Magazzino** e la **Descrizione**.
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Unos**.
+Za novi zapis obavezno je unijeti barem sljedeća polja: šifra **Skladišta** i **Opis**.
 
-#### Campi specifici 
+#### Specifična polja
 
-- **Sito produzione**: indica il [Sito Produzione](/docs/configurations/parameters/production/production-orders-parameters/production-site) a cui appartiene il magazzino;   
-- **Area gestionale**: indica l'[Area gestionale](/docs/configurations/tables/logistics/management-area) a cui appartiene il magazzino;     
-- **Data fine validità**: indica la data di fine validità del magazzino;  
-- **Nomignolo** e **Ragione sociale**: indica la destinazione (ripresa dall'*Anagrafica contatti*).   
+- **Proizvodni pogon**: označava [Mjesto proizvodnje](/docs/configurations/parameters/production/production-orders-parameters/production-site) kojem pripada skladište;   
+- **Poslovno područje**: označava [Područje upravljanja](/docs/configurations/tables/logistics/management-area) kojem skladište pripada;     
+- **Datum završetka valjanosti**: označava datum do kojeg je skladište važeće;  
+- **Nadimak** i **Tvrtka (naziv)**: označavaju odredište (preuzeto iz *Kontakti baze*).   
 
-Per ogni magazzino è poi possibile inserire i relativi **Centri di costo** e/o i **Centri di ricavo**. 
+Za svako skladište moguće je unijeti pripadajuće **Troškovne centre** i/ili **Centre prihoda**. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

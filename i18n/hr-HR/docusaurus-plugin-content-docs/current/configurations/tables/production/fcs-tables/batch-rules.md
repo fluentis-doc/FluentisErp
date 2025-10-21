@@ -1,38 +1,39 @@
 ---
-title: Regole di accorpamento macchina
+title: Pravila podešavanja stroja
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Regole di accorpamento macchina**.
+Tablica se nalazi putem izbornika **Tablice > Proizvodnja > Tablice F.C.S. > Pravila grupiranja po stroju**.
 
-I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+Podaci iz ove tablice koriste se isključivo unutar postupka [F.C.S. Planiranja](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
-Ogni regola di accorpamento è definita tramite un solo record di questa tabella. 
+Svako pravilo grupiranja definira se jedinstvenim zapisom u ovoj tablici.
 
-**Campi Specifici**
+**Specifična polja**
 
-> **Elemento da considerare**: va selezionato l'elemento in base al quale calcolare il livello di riempimento della macchina (una delle dimensioni lineari degli articoli, oppure il volume, oppure il peso, o si può impostare il numero massimo di lavorazioni a prescindere dalle dimensioni degli articoli, o la somma totale del numero pezzi da lavorare). Nel caso di valore dimensionale, il relativo valore ricavato dalla anagrafica articolo verrà moltiplicato per la quantità dell'ordine di produzione, a meno che il flag "Quantità indipendente" non sia stato selezionato.      
-> **Valore minimo**: valore minimo di riempimento della macchina affinchè venga avviata.      
-> **Valore massimo**: valore massimo di riempimento della macchina. Se le lavorazioni con lo stesso codice di accorpamento superano questo limite, lo schedulatore gestirà più sessioni di lavoro della macchina, creando un task per ciascuna di esse.     
-> **Quantità indipendente**: se questo flag è selezionato, il valore dimensionale dell'articolo al quale la regola fa riferimento, non verrà moltiplicato per la quantità dell'ordine di produzione.          
-> **Accorpa solo ordini con la stessa quantità**: se questo flag è selezionato, verranno accorpate le fasi aventi lo stesso codice di accorpamento e la stessa quantità da produrre. 
-Lo schedulatore creerà per queste fasi un codice accorpamento fittizio come stringa che concatena il codice di accorpamento e la quantità da produrre.           
-> **Note**: permette di inserire una nota libera.            
+> **Element za razmatranje**: odabire se element na temelju kojeg se računa razina popunjenosti stroja (jedna od linearnih dimenzija artikla, volumen, težina, maksimalan broj obrada neovisno o dimenzijama artikla ili ukupan broj komada za obradu).
+Ako je odabran dimenzionalni parametar, njegova vrijednost preuzeta iz šifrarnika artikla množi se s količinom proizvodnog naloga, osim ako nije označen flag "Neovisno o količini".     
+> **Minimalna vrijednost**: minimalna vrijednost popunjenosti stroja potrebna za pokretanje.      
+> **Maksimalna vrijednost**: maksimalna vrijednost popunjenosti stroja. Ako obrada s istim kodom grupiranja premaši ovu vrijednost, planer će podijeliti posao u više sesija, kreirajući jedan zadatak za svaku od njih.       
+> **Neovisno o količini**: ako je ovaj flag označen, dimenzionalna vrijednost artikla na koju se pravilo odnosi neće se množiti s količinom proizvodnog naloga.            
+> **Grupiraj samo naloge s istom količinom**: ako je ovaj flag označen, grupirat će se samo faze koje imaju isti kod grupiranja i istu količinu za proizvodnju.
+Planer će za te faze generirati fiktivni kod grupiranja spajanjem šifre grupiranja i količine za proizvodnju.        
+> **Bilješke**: omogućuje unos slobodne napomene          
 
-:::note Nota
-Notare che, se per il centro di lavoro non fosse stato abilitato il flag di tempo fisso di lavorazione, potremmo avere fasi da lavorare con lo stesso codice di accorpamento e tempi di lavorazione diversi (tempo di lavorazione unitario x quantità da produrre).          
-In questo caso verrebbe considerato come tempo di lavorazione il maggiore tra le fasi da accorpare (ipotesi pessimistica e cautelativa).          
-Durante la fase di importazione dati che precede l’avvio della schedulazione, il sistema elencherebbe dei warning nella lista degli errori di importazione, per ricordarci che verrà considerato il tempo di lavorazione maggiore.
+:::note Napomena
+Ako radnom centru nije aktiviran flag za fiksno vrijeme obrade, moguće je da faze s istim kodom grupiranja imaju različita vremena obrade (vrijeme po jedinici × količina).
+U tom slučaju, kao vrijeme obrade uzet će se najveće od svih faza koje se grupiraju (konzervativna i sigurnosna procjena).
+Tijekom uvoza podataka prije pokretanja planiranja, sustav će prikazati upozorenja na listi grešaka uvoza, podsjećajući da će biti uzeto najveće vrijeme obrade.
 :::
 
-**Ricerca Regole di accorpamento macchina**
+**Pretraživanje pravila grupiranja po stroju**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i prikaza rezultata. Nakon što se postave željeni filteri, klikni na tipku **Traži** za prikaz rezultata unutar mreže.
 
-**Inserimento Regole di accorpamento macchina**
+**Unos pravila grupiranja po stroju**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos nove šifre potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e **Elemento da considerare**.
+Kod unosa novog zapisa obavezno je unijeti barem polja: **Šifra** i **Element za razmatranje**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

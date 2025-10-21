@@ -1,23 +1,24 @@
 ---
-title: Tipo risorsa F.C.S.
+title: Tip resursa F.C.S.
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Tipo risorsa F.C.S.**.
+Tablica se nalazi putem izbornika **Tablice > Proizvodnja > Tablice F.C.S. > Vrsta resursa F.C.S**.
 
-I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+Podaci iz ove tablice koriste se isključivo unutar postupka [F.C.S. Planiranja](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
-Un tipo risorsa FCS definisce una categoria di risorse necessarie in alcune lavorazioni e da schedulare a capacità finita.       
-Esempi tipici sono gli stampi, utensili, mezzi di sollevamento etc.
+Tip resursa F.C.S. definira kategoriju resursa potrebnih u određenim obradama i koje je potrebno planirati prema načelu ograničenog kapaciteta.
+Tipični primjeri uključuju kalupe, alate, podizna sredstva itd.
 
-**Ricerca Tipo risorsa F.C.S.**
+**Pretraživanje vrsta resursa F.C.S.**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i prikaza rezultata.
+Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u mreži rezultata.
 
-**Inserimento Tipo risorsa F.C.S.**
+**Unos vrste resursa F.C.S.**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih zapisa potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e **Descrizione**.
+Za novi zapis obavezno je unijeti barem sljedeća polja: **Šifra** i **Opis**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
