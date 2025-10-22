@@ -1,28 +1,28 @@
 ---
-title: Reparti
+title: Odjeli
 sidebar_position: 11
 ---
 
-Questa è una tabella non obbligatoria, all'interno della quale si possono andare a codificare i vari reparti di produzione.
+Ova tablica nije obavezna i omogućuje šifriranje različitih proizvodnih odjela.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.
 
-**Ricerca Reparti**
+**Pretraživanje odjela**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
 
-**Inserimento Reparti**
+**Unos odjela**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** alfanumerico del reparto e la sua **Descrizione**. 
+Za novi zapis obavezno je unijeti barem osnovna polja koja sustav zahtijeva: alfanumerički **Kod** odjela i njegov **Opis**. 
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-**Reparto**: indica il codice del reparto;  
-**Descrizione**: indica la descrizione del reparto;  
-**Data inserimento**: indica la data di inserimento del record;  
-**Data modifica**: indica la data di modifica del record.
+**Odjel**: označava šifru odjela;  
+**Opis**: opisuje odjel;  
+**Datum unosa**: datum kada je zapis unesen;  
+**Datum izmjene**: datum posljednje izmjene zapis.  
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

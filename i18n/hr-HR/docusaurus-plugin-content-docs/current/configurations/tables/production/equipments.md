@@ -1,31 +1,31 @@
 ---
-title: Attrezzature
+title: Oprema
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Attrezzature**.
+Tablica se nalazi na putu **Tablice > Proizvodnja > Oprema**.
 
-I dati presenti in questa tabella sono utilizzati, ad esempio, nelle *fasi di lavorazione* delle gestioni:
-- **Cicli di lavoro**;   
-- **Ordini pianificati**;   
-- **Ordini di produzione**;
+Podaci u ovoj tablici koriste se, primjerice, u *fazama obrade* unutar sljedećih procesa:
+- **Radni ciklusi**;   
+- **Planirane narudžbe**;   
+- **Proizvodni nalozi**;
 
-in cui si può selezione l'attrezzatura da utilizzare.
+u kojima se može odabrati opremu koja će se koristiti.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.
 
-**Ricerca Attrezzature**
+**Pretraživanje opreme**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-**Inserimento Attrezzature**
+**Unos opreme**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos nove šifre opreme potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione** dell'attrezzatura.
+Za novi zapis obavezno je unijeti sljedeća polja: **Šifra** i **Opis** opreme.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-**Attiva**: si seleziona per indicare che l'attrezzatura può essere utilizzata.
+**Aktivna**: označava da se oprema može koristiti u procesima.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

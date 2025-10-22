@@ -1,32 +1,32 @@
 ---
-title: Tipi documenti
+title: Vrste dokumenata
 sidebar_position: 13
 ---
 
-:::important A cosa serve
-La tabella Tipo Documenti, permette di creare e collegare tra loto tutti i documenti che vengono gestiti all’interno delle aree di [Pianificazione](/docs/planning/planning-intro/) e [Produzione](/docs/production/production-intro/).
+:::important Čemu služi
+Tablica Vrste dokumenata, omogućuje kreiranje i međusobno povezivanje svih dokumenata koji se koriste unutar područja [Planiranja](/docs/planning/planning-intro/) i [Proizvodnje](/docs/production/production-intro/).
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Ova tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.
 
-**Ricerca Tipi documento**
+**Pretraživanje vrsta dokumenata**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-**Inserimento Tipi documento**
+**Unos vrsta dokumenata**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** alfanumerico del tipo e la sua **Descrizione**, il **Codice standard** a cui corrisponde e il **Tipo numerazione**. Il codice standard definisce la tipologia del documento appena creato, che quindi può essere: una Commessa di produzione, un ordine cliente, ordine di conto lavoro o di produzione, oppure un ordine pianificato di acquisto, conto lavoro o produzione.
+Za novi zapis obavezno je unijeti barem sljedeća polja: alfanumerički **Kod** vrste, njezin **Opis**, odgovarajući **Standardni kod** te **Vrstu numeriranja**. Standardni kod definira tip dokumenta koji se kreira, a to može biti: komisija proizvodnje, kupčev narudžbeni nalog, nalog za doradu ili proizvodni nalog, kao i planirana narudžba za nabavu, doradu ili proizvodnju.
 
-È possibile avere più documenti a parità di codice standard, quindi, tramite il flag default è possibile dire al sistema quale sia quello predefinito.     
+Moguće je imati više dokumenata s istim standardnim kodom; u tom slučaju pomoću flag-a Zadano određuje se koji će dokument sustav koristiti kao glavni/podrazumijevani.     
 
-Una volta terminato l’inserimento, per ciascuno dei documenti creati, è necessario inserire i relativi Tipo di documento generati.         
-Ad esempio, nel caso di un documento di tipo commessa di produzione, l’utente dovrà inserire i documenti generati da essa, che saranno: *ordini pianificati di acquisto, ordini pianificati di produzione e ordini pianificati di conto lavoro*.  
-Al loro volta gli *ordini pianificati di acquisto* genereranno un determinato tipo di *richiesta di acquisto*, mentre gli *ordini pianificati di conto lavoro* creeranno un tipo di *ordine di conto lavoro*, ed infine gli *ordini pianificati di produzione* avranno un tipo di *ordine di produzione* e anche di *conto lavoro* legato alle fasi esterne contenute nel ciclo di lavoro.
+Nakon unosa, za svaki dokument potrebno je definirati odgovarajuće Vrste generiranih dokumenata.        
+Primjerice, ako se radi o dokumentu tipa komisija proizvodnje, korisnik treba unijeti dokumente koji iz nje proizlaze: *planirane narudžbe za nabavu, proizvodnju i doradu.*    
+Zauzvrat, *planirane narudžbe za nabavu* generiraju odgovarajuću vrstu *zahtjeva za nabavu*, dok *planirane narudžbe za doradu* kreiraju vrstu *naloga za doradu*. Na kraju, *planirane narudžbe za proizvodnju* generiraju vrstu *naloga za proizvodnju* te potencijalno i *nalog za doradu* za vanjske faze unutar radnog ciklusa.
 
-Tramite l’attivazione del flag **Manutenzione**, è possibile indicare che il documento verrà utilizzato per gli interventi di Manutenzione, mentre se disattivato verrà impiegato per la produzione.
+Aktivacijom flag-a **Održavanje**, moguće je označiti da će se dokument koristiti za aktivnosti održavanja, dok će, ako je deaktiviran, biti korišten u kontekstu proizvodnje.
 
-Per i **Tipi documenti** con codice standard *CP* (Commesse di produzione) è possibile inserire il **Tipo costificazione commessa** che verrà poi proposta di default ad ogni elaborazione della costificazione della commessa. 
+Za **Vrste dokumenata** sa standardnim kodom *CP* (Komisije proizvodnje), moguće je unijeti i **Vrstu obračuna troškova komisije**koja će se automatski predložiti prilikom svake obrade troškova za tu komisiju.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

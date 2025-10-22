@@ -1,27 +1,27 @@
 ---
-title: CRP - Tipo Simulazione Gantt
+title: CRP - Vrsta Gantt simulacije
 sidebar_position: 17
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo Simulazione Gantt*.
+Ova tablica omogućuje upravljanje šifriranjem različitih vrsta *Vrste Gantt simulacije*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.
 
-**Ricerca CRP - Tipo Simulazione Gantt**
+**Pretraživanje – CRP: Vrsta Gantt simulacije**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
 
-**Inserimento CRP - Tipo Simulazione Gantt**
+**Unos – CRP: Vrsta Gantt simulacije**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novo**.
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice**, la **Descrizione** e la **Numerazione**.
+Za novi zapis obavezno je unijeti barem obavezna polja koja sustav zahtijeva: **Šifra**, **Opis** i **Numeriranje**.
 
-*Campi specifici*:
+*Specifična polja*:
 
-> **Codice**: indica il codice del *Tipo Simulazione Gantt*;           
-> **Descrizione** tipo: indica la descrizione del *Tipo Simulazione Gantt*;        
-> **Numerazione**: indica la numerazione associata al *Tipo Simulazione Gantt*;           
-> **Snapshot**: se attivo, indica the questo è un *Tipo Simulazione Gantt* usato per gli *Snapshot*.
+> **Šifra**: označava šifru *Vrste Gantt simulacije*;           
+> **Opis vrste**: opisuje *Vrstu Gantt simulacije*;        
+> **Numeriranje**: označava povezano numeriranje za tu *Vrstu Gantt simulacije*;           
+> **Snapshot**: ako je aktivno, označava da se radi o *Vrsti Gantt simulacije* koja se koristi za *Snapshot-e*.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

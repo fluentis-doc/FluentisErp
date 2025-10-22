@@ -1,26 +1,26 @@
 ---
-title: Centri di costo
+title: Troškovni centri
 sidebar_position: 6
 ---
+  
+Ovo je tablica u koju se unose tarife koje se povezuju sa strojem i grupom radne snage kako bi se moglo vrednovati faze obrade unutar različitih radnih centara.  
 
-Questa è la tabella in cui si inseriscono le tariffe da associare alla macchina e al gruppo manodopera per poter valorizzare le fasi di lavorazione dei vari centri di lavoro.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+**Pretraživanje troškovnih centara**
 
-**Ricerca Centri di costo**
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+**Unos troškovnih centara**
 
-**Inserimento Centri di costo**
+Za unos novih šifri potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi** nakon čega je moguće odabrati troškovni centar iz padajućeg izbornika. Ako želite unijeti novi troškovni centar, potrebno ga je prethodno dodati u tablicu [Poslovni centri](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers/) te aktivirati flag **Vidljiv u proizvodnji**. U suprotnom neće biti prikazan u izborniku za unos **Troškovnih centara**. 
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo** e sarà è possibile selezionare dalla combo il centro di costo che si vuole aggiungere. Per crearne uno nuovo, invece, sarà necessario inserirlo nella tabella dei [Centri aziendali](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers/) attivando il flag **Visibile in produzione**, altrimenti non sarà possibile visualizzarlo della combo di inserimento dei **Centri di costo**. 
+Za novi zapis obavezno je unijeti barem sljedeća polja: **Šifra** troškovnog centra i **Verzija**, budući da je moguće definirati različite troškove za različite verzije istog troškovnog centra.           
+Nakon toga moguće je dodijeliti tom centru određeni **Trošak**, koji će se koristiti za izračun troškova. Ako se ne specificira nijedna **JM**, unesena tarifa će se smatrati satnicom (tarifa po satu).
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** del centro di costo e la **Versione**, perchè è possibile avere costi diversi per le varie versioni a parità di centro di costo.         
-A questo punto è possibile associare al centro il **Costo**, il quale sarà utilizzato per la costificazione. Se non si specifica nessuna **UM**, la tariffa inserita si intenderà come tariffa oraria.       
+Troškovni centri mogu se povezati sa sljedećim resursima:  
+- [Stroj](/docs/configurations/tables/production/machines)
+- [Grupa radne snage](/docs/configurations/tables/production/labour-group)
+- [Pojedini operater unutar grupe radne snage](/docs/configurations/tables/production/labour-group)
 
-I centri di costo possono essere associati alle seguenti risorse:
-- [Macchina](/docs/configurations/tables/production/machines)
-- [Gruppo manodopera](/docs/configurations/tables/production/labour-group)
-- [Singolo operatore del gruppo manodopera](/docs/configurations/tables/production/labour-group)
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

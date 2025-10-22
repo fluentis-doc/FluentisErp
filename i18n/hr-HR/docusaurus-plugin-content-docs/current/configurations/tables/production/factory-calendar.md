@@ -1,32 +1,32 @@
 ---
-title: Calendario di fabbrica
+title: Tvornički kalendar
 sidebar_position: 4
 ---
 
-Attraverso questa finestra è possibile generare e/o modificare il *Calendario di fabbrica* dell'azienda, elemento fondamentale che viene tenuto in considerazione dalle procedure di **Pianificazione generale**, **Schedulazione a capacità finita** ed **MRP**.
+Putem ovog prozora moguće je generirati i/ili izmijenit *Tvornički kalendar* poduzeća, ključni element koji se uzima u obzir prilikom izvođenja procedura **Općeg planiranja**, **Planiranja s ograničenim kapacitetom** i **MRP-a**.
 
-La finestra si presenta come una tabella all'interno della quale vengono visualizzate tante caselle quanti sono i giorni del mese selezionato in alto a destra.  
-Nel primo campo si troverà il **Mese** e l'**Anno** di riferimento, che potranno essere selezionati tramite la combo e il campo editabile a lato o cliccando sui pulsanti **Anno precedente/Successivo** e **Mese precedente/successivo**.
+Prozor se prikazuje kao tablica u kojoj se nalaze onoliko ćelija koliko ima dana u mjesecu odabranom u gornjem desnom kutu.
+U prvom polju prikazuju se **Mjesec** i **Godina** na koje se kalendar odnosi, a koji se mogu odabrati putem kombiniranog izbornika i polja za unos ili klikom na tipke **Prethodna godina / Sljedeća godina** i **Prethodni mjesec / Sljedeći mjesec**.
 
-In ogni casella è presente un flag, che, se attivato, indica che il giorno in questione è *Festivo*.  
-Il fatto che un determinato giorno sia designato come *Festivo* consente all'utente di fare in modo che quando esegua la generazione del [Calendario delle capacità produttive](/docs/configurations/tables/production/productive-capacity-calendar)  l'applicazione generi in automatico una disponibilità della *Risorse produttiva* solo per i giorni che nel *Calendario di fabbrica* sono identificati appunto come non festivi.  
-Inoltre, l'indicazione relativa alla festività è importante anche quando si definiscono i *Tempi di approvvigionamento dei fornitori preferenziali*, che devono essere quindi indicati considerando il *Calendario di fabbrica*.  
-*Esempio*:
-Se vengono considerati festivi il sabato e la domenica, impostando un valore di 10 giorni come tempo di approvvigionamento si sottintende un tempo complessivo di circa 2 settimane, considerato il fatto che la settimana lavorativa è in questo caso composta di soli 5 giorni di calendario.
+U svakoj ćeliji nalazi se flag koji, ako je aktiviran, označava da je taj dan *Praznik*.  
+Ako je određeni dan označen kao *Praznik* sustav će pri generiranju [Kalendar proizvodnih kapaciteta](/docs/configurations/tables/production/productive-capacity-calendar) automatski generirati dostupnost *Proizvodnih resursa*isključivo za dane koji u *Tvorničkom kalendaru* nisu označeni kao praznici.  
+Ova informacija također je važna pri definiranju *vrijeme isporuke od preferiranih dobavljača*, jer se ono također mora računati prema *Tvorničkom kalendaru*.  
+*Primjer*:
+Ako se subota i nedjelja smatraju praznicima, a kao vrijeme isporuke postavi se 10 dana, to zapravo podrazumijeva otprilike 2 kalendarska tjedna, jer se radni tjedan u tom slučaju sastoji od 5 dana.
 
-Una volta settati i vari campi, basterà cliccare il pulsante **Salva**.
+Nakon što su svi podaci uneseni, dovoljno je kliknuti na tipku **Spremi**.
 
-I flag che indicano la festività possono essere impostati:
-- **manualmente** dall'utente  
-oppure, come di solito avviene,   
-- utilizzando il pulsante della ribbon chiamato **Generazione calendario di fabbrica**. Alla pressione di questo tasto si apre una finestra di pop up chiamata **Generazione calendario**.
+Flagovi koji označavaju praznike mogu se postaviti:  
+- **ručno** izravno od strane korisnika 
+ili, što je uobičajenije,   
+- korištenjem tipke na traci izbornika pod nazivom **Generiranje tvorničkog kalendara**. Klikom na ovu tipku otvara se pop-up prozor pod nazivom Generiranje kalendara.  
 
-In questa finestra pop up l'utente può decidere di generare automaticamente il calendario di fabbrica per un determinato anno, che può impostare nell'apposito campo **Generazione calendario per l'anno**.  
-Dopo aver deciso quali dovranno essere i giorni festivi della settimana e se considerare o meno le impostazioni eseguite nella tabella *Festività annuali*, si può cliccare sul pulsante **OK** per eseguire in automatico la creazione del calendario di fabbrica per l'anno indicato.
+U ovom prozoru korisnik može automatski generirati tvornički kalendar za određenu godinu, koju unosi u polje **Generiranje kalendara za godinu**.  
+Nakon odabira dana u tjednu koji se smatraju praznicima i odluke treba li uzeti u obzir postavke iz tablice *Godišnji praznici*, korisnik klikne na **OK** kako bi automatski generirao kalendar za odabranu godinu.  
 
-Una volta generato il calendario, l'utente dovrà cliccare di nuovo sul pulsante Salva e chiudere la finestra relativa al calendario di fabbrica.
+Nakon generiranja kalendara, potrebno je ponovno kliknuti na Spremi i zatvoriti prozor Tvorničkog kalendara. 
 
-*Pulsante specifico*:  
-> **Generazione calendario di fabbrica**: permette di aprire la finestra pop up per la generazione automatica del calendario di fabbrica per l'intero anno.
+*Specifična tipka*:  
+> **Generiranje tvorničkog kalendara**: otvara pop-up prozor za automatsko generiranje tvorničkog kalendara za cijelu godinu.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
