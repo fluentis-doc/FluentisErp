@@ -17,6 +17,13 @@ La form permette la creazione di:
 
 Il rilascio degli ordini comporta che questi non siano più visibili tra gli [Ordini pianificati](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) e, di conseguenza, non può essere generata una nuova [Pianificazione](/docs/planning/ms-master-scheduling/general-schedule) della commessa di produzione da cui gli ordini pianificati erano stati eventualmente generati tramite pianificazione generale. Gli ordini pianificati presenti nella griglia generati manualmente o tramite elaborazione MPR non presentano alcun legame con le commesse di produzione.
 
+Attivata nella griglia degli Ordini pianificati e di Conto lavoro, con la visualizzazione di una nuova colonna.
+La nuova colonna contiene l'indicazione visiva (tramite colori), se l'Ordine è fattibile sulla base della disponibilità dei Materiali.
+Per il risultato è necessario selezionare dalla griglia gli ordini desiderati e premere il pulsante [Ricalcola fattibilità].
+Con il pulsante [Dettaglio fattibilità] si ottiene l'analisi dettagliata per ogni singolo materiale necessario.
+I colori da visualizzare e l'attivazione della funzionalità sono parametrizzabili nei "Parametri Fabbisogno Materiali".
+
+
 ## Filtro
 
 In questo tab è possibile visualizzare la lista degli ordini pianificati che devono essere ancora rilasciati ed è possibile filtrarli attraverso una serie di criteri di selezione. 
@@ -27,10 +34,13 @@ Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **
 
 > **Rilascio**: questo pulsante si attiva solamente se viene selezionata almeno una riga nella griglia dei risultati da rilasciare; cliccando su questa funzionalità il sistema eseguirà:
 il rilascio degli *ordini pianificati di produzione* in *ordini di produzione lanciati o esecutivi*, a seconda di come siano stati impostati i parametri all'interno dei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters); il rilascio degli *ordini pianificati di acquisto* in *Richieste d'Acquisto* *autorizzare* oppure *non autorizzate*, a seconda di come si sia scelto di impostare il parametri all'interno dei  [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters); il rilascio degli *ordini pianificati di conto lavoro* in *ordini di Conto Lavoro*.                  
+> **Ricalcola fattibilità**: permette di visualizzare (tramite colori) la fattibilità degli ordini pianificati di produzione e conto lavoro selezionati. I colori da visualizzare e l'attivazione della funzionalità sono parametrizzabili nei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters).       
+> **Dettaglio fattibilità**: permette di otterene l'analisi dettagliata per ogni singolo materiale necessario dell'ordine pianificato di produzione e conto lavoro selezionata.        
 > **Apri ricerca ordini di produzione**: tramite questo pulsante sarà possibile aprire la Ricerca Ordini di Produzione filtrati con gli stessi criteri utilizzati nella sezione di filtro di questa finestra. Ad esempio se si filtrano gli ordini pianificati in questa schermata in base al numero di commessa 3 dell'anno 2018, la finestra di ricerca ordini di produzione di aprirà già filtrata per la commessa 3 dell'anno 2018.
 
 *Campi specifici*:
 
+**Fattibilità materiali**: contiene l'indicazione visiva (tramite colori), se l'Ordine è fattibile sulla base della disponibilità dei Materiali. Per il risultato è necessario selezionare dalla griglia gli ordini desiderati e premere il pulsante **Ricalcola fattibilità**. Con il pulsante **Dettaglio fattibilità** si ottiene l'analisi dettagliata per ogni singolo materiale necessario. I colori da visualizzare e l'attivazione della funzionalità sono parametrizzabili nei [Parametri Fabbisogno Materiali](/docs/configurations/parameters/production/resource-requirements-parameters).        
 **Anno**: indica l'anno dell'ordine pianificato;     
 **Ordine**: indica il numero dell'ordine pianificato;           
 **Livello**: indica il livello dell'articolo oggetto dell'ordine all'interno della distinta base;  
