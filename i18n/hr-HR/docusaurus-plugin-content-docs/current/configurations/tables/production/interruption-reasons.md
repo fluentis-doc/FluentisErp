@@ -1,38 +1,39 @@
 ---
-title: Causali di sospensione
+title: Razlozi prekida
 sidebar_position: 5
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Causali di sospensione*.
+Ova tablica omogućuje upravljanje šifriranjem različitih tipova *Razloga prekida*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja. 
 
-**Ricerca Causali di sospensione**
+**Pretraživanje razloga prekida**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima.
+Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u prikazanoj mreži.
 
-**Inserimento Causali di sospensione**
+**Unos razloga prekida**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos nove šifre potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Codice**: indica il codice della casuale di sospensione;           
-> **Descrizione**: indica la descrizione della casuale di sospensione;   
-> **Revisione ordinaria**: attualmente non implementato;                    
-> **Revisione straordinaria**: attualmente non implementato;            
-> **Generazione ordine di revisione**: attualmente non implementato;          
-> **Utenti**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;          
-> **Assenza**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;              
-> **Cessione**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;               
-> **Predefinito**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;               
-> **Predefinito cessione**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;               
-> **Indiretto**: attualmente non implementato;     
-> **Macchina**: attualmente non implementato;     
-> **Tipo**: indica il tipo della causale di sospensione e può essere:
-> > **Produzione**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di perso dovuto a cause esterne all'azienda (ad esempio materiale inviato dal fornitore/cliente non conforme);      
-> > **Attrezzaggio**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di attrezzaggio;          
-> > **Perdita**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di perso dovuto a cause intere all'azienda;         
-> > **Manutenzione**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di manutenzione sull'impianto.
+> **Šifra**: označava šifru razloga prekida;           
+> **Opis**: opis razloga prekida;   
+> **Redovno održavanje**: trenutno nije implementirano;                    
+> **Izvanredno održavanje**: trenutno nije implementirano;            
+> **Generiranje naloga za održavanje**: trenutno nije implementirano;          
+> **Korisnici**: koristi se u obrascu za upravljanje radnim satima osoblja, pod Proizvodnja > Upravljanje radnim satima > Upravljanje satima osoblja;          
+> **Odsutnost**: koristi se u obrascu za upravljanje radnim satima osoblja, pod Proizvodnja > Upravljanje radnim satima > Upravljanje satima osoblja;              
+> **Prenos**: koristi se u obrascu za upravljanje radnim satima osoblja, pod Proizvodnja > Upravljanje radnim satima > Upravljanje satima osoblja;               
+> **Zadano**: koristi se u obrascu za upravljanje radnim satima osoblja, pod Proizvodnja > Upravljanje radnim satima > Upravljanje satima osoblja;               
+> **Zadano za prenos**: koristi se u obrascu za upravljanje radnim satima osoblja, pod Proizvodnja > Upravljanje radnim satima > Upravljanje satima osoblja;               
+> **Neizravno**: trenutno nije implementirano;     
+> **Stroj**: trenutno nije implementirano;     
+> **Vrsta**: označava tip razloga prekida, može biti;
+> > **Proizvodnja**: vrijeme između *prekida* i *nastavka* smatra se izgubljenim vremenom zbog vanjskih uzroka (npr. neispravan materijal od dobavljača/klijenta);        
+> > **Podešavanje**: vrijeme se računa kao vrijeme podešavanja;          
+> > **Gubitak**: vrijeme se računa kao izgubljeno vrijeme zbog internih uzroka;           
+> > **Održavanje**: vrijeme se računa kao vrijeme održavanja stroja ili postrojenja.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

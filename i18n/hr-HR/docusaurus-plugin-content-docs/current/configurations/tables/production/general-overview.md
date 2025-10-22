@@ -1,6 +1,6 @@
 ---
-title: Generalità
+title: Općenito
 sidebar_position: 1
 ---
 
-Le tabelle dell'area produzione si trovano sul percorso **Tabelle > Produzione** e permettono l'inserimento di tutti i dati principali che vengono gestiti all'interno dell'intera Area Produzione. 
+Tabele u području proizvodnje nalaze se na putu **Tabele > Proizvodnja** i omogućuju unos svih glavnih podataka koji se upravljaju unutar cijelog područja proizvodnje.
