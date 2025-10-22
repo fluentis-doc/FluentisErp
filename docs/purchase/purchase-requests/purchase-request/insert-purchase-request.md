@@ -80,7 +80,7 @@ Nella sezione sottostante la griglia vengono riportati i totali del documento:
 
 > **Autorizzazione RDA**: permette di autorizzare tutte le righe articolo selezionate; da questo momento il documento è considerato confermato.   
 
-> **Generatore RDO**: cliccando questo bottone verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe presenti nel tan *Generatore RDO*. Per maggiori dettagli vedere il paragrafo [Generatore RDO](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request).   
+> **Generatore RDO**: cliccando questo bottone verrà creata la [Richiesta di Offerta](/docs/purchase/offer-request/settings) per le righe presenti nel tab *Generatore RDO*. Per maggiori dettagli vedere il paragrafo [Generatore RDO](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request#generate-RDO).   
 
 > **Rollback RDO**: permette di annullare ed eliminare la richiesta di offerta creata precedentemente.   
 
@@ -137,7 +137,7 @@ Gli altri campi presenti nella griglia sono:
 - **Codice/Descrizione/Barcode articolo fornitore**: riportano il codice e la decsrizione con cui il fornitore identifica l'articolo richiesto; sono campi facoltativi.     
 - **Unità di misura**: viene proposta l'unità di misura associata al fornitore nell'[angrafica dell'articolo](/docs/erp-home/registers/items/create-new-item), oppure l'unità di misura principale nel caso in cui tale campo non sia valorizzato.   
 - **Quantità**: viene proposta in base all'eventuale lotto economico del fornitore, se specificato nel tab [fornitori preferenziali](/docs/erp-home/registers/items/create-new-item) dell'articolo; in alternativa viene proposta la quantità presente nella riga articolo della RDA.
-- **Prezzo**: viene proposto in base al listino associato al fornitore preferenziale. 
+- **Prezzo**: viene proposto in base al listino associato al fornitore preferenziale. Se il prezzo dell’articolo nella RDA è stato modificato manualmente, sarà consentita anche la modifica del prezzo nel Generatore RDO. In tal caso, nella Richiesta di Offerta generata verrà riportato il prezzo impostato manualmente nel tab Generatore RDO e risulterà attivo il flag *Prezzo manuale*.      
 - **Data stimata consegna**: permette di inserire la data prevista per la consegna. 
 - **IVA**: viene proposta l'aliquota IVA presente nel tab *Dati articolo*, ma è modificabile manualmente.  
 - **Unità di misura/Quantità alternativa**: permette di selezionare un'unità di misura e una quantità alternativa che saranno riportate nei documenti generati dalla RDO. 
