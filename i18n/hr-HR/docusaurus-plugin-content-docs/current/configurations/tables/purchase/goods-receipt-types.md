@@ -1,28 +1,28 @@
 ---
-title: Tipi ricevimento merci
+title: Tipovi prijema robe
 sidebar_position: 4
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi Ricevimento merci** ed è utilizzato per determinare le proprietà di un ricevimento merce.
+Tablica se otvara putem puta **Tablice > Nabava > Tipovi prijema robe** i koristi se za određivanje svojstava primitka robe.
 
-I campi presenti sono:
+Polja koja se nalaze u tablici su:  
 
-**Codice**: codice del tipo ricevimento merci.
+**Šifra**: šifra vrste primitka robe.
 
-**Descrizione**: descrizione del tipo ricevimento merci.
+**Opis**: opis vrste primitka robe.
 
-**Bolla di consegna**: se attivo, il sistema permette la generazione di una DDT dal ricevimento merci. Se non attivo, non sarà possibile generare la DDT dal ricevimento merci quindi le operazioni di carico a magazzino e registrazione DDT rimarranno non collegate. 
+**Otpremnica**: Ako je aktivirano, sustav omogućuje generiranje otpremnice iz primitka robe. Ako nije aktivirano, neće biti moguće generirati otpremnicu iz primitka robe, pa će operacije skladišnog prijema i evidentiranja otpremnice ostati nepovezane.
 
-**Fattura**: se attivo, il sistema permette la generazione di una fattura dal ricevimento merci. Se non attivo, non sarà possibile generare la fattura dal ricevimento merci quindi l'operazione di carico a magazzino resterà non collegata. 
+**Račun**: ako je aktivirano, sustav omogućuje generiranje računa iz primitka robe. Ako nije aktivirano, neće biti moguće generirati račun iz primitka robe, te će skladišna prijema ostati nepovezana.  
 
-**Evasione quantità articolo non sommata**: se settato, nel momento in cui si andranno ad evadere righe ordine con quantità parziali nello stesso ricevimento merci questo flag consentirà di riportare le quantità evase dell'ordine suddivise per riga articolo senza sommare le quantità.
+**Narudžbina neubrojene količine artikla**: ako je označeno, prilikom realizacije redaka narudžbe s djelomičnim količinama u istom primitku robe, ovaj će zastavica omogućiti da se količine realizirane narudžbe prikazuju po pojedinačnim stavkama bez zbrajanja količina.  
 
-**Numerazione**: determina la [Numerazione](/docs/configurations/tables/fluentis-numerations) e la relativa **Descrizione** che è associata al *Tipo ricevimento merci*. 
+**Numeracija**: određuje [Numeraciju](/docs/configurations/tables/fluentis-numerations) i pripadajući **Opis** koji su povezani s *Vrsta primitka robe*. 
 
-**Controllo qualità**: i *tipi Ricevimento* che hanno questo flag attivo sono visibili nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
+**Kontrola kvalitete**: *Vrste primitka* koje imaju ovu zastavicu aktiviranu vidljive su u formi [Uvoz artikala za kontrolu](/docs/quality/item-control/items-control/item-control-import/) unutar područja *Kvaliteta*.
 
-**Gerstione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ricevimento e di selezionare il **Tipo operazione** che si vuole effettuare, che nel caso degli acquisti sarà un *Costo originario*.
+**Upravljanje osnovnim sredstvima**: ova zastavica omogućuje aktivaciju [Upravljanja osnovnim sredstvima](/docs/finance-area/fixed-assets/general-overview) za tu vrstu primitka te odabir **Vrsta operacije** ckoju želite izvršiti, a u slučaju nabave to će biti *Nabavna cijena*.
 
-:::tip NOTA
-Il Magazzino e la Causale da utilizzare per il Carico ricevimento merci vanno definiti nei Parameti Ordini fornitori, tab [Carico](/docs/configurations/parameters/purchase/purchase-orders-parameters).  
+:::tip NAPOMENA 
+Skladište i Klasu za prijem robe treba definirati u Parametrima Narudžbi dobavljača, kartica [Zaduženje](/docs/configurations/parameters/purchase/purchase-orders-parameters).  
 :::

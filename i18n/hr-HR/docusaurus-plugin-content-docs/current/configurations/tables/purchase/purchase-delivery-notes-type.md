@@ -1,38 +1,38 @@
 ---
-title: Tipi DDT acquisto
+title: Tipovi primki
 sidebar_position: 5
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di DDT di acquisto disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi DDT di acquisto*.
+Ova tablica je ključna za definiranje različitih tipova primki za nabavu, svaki sa svojim karakteristikama. Pristupa joj se putem *Konfiguracija > Tablice > Nabava > Tipovi primki*.
 
-I campi presenti sono:
+Polja su:  
 
-**Codice\Descrizione**: campi obbligatori per definire il tipo e la descrizione della bolla di acquisto.
+**Šifra/Opis**: obavezna polja za definiranje tipa i opisa primke za nabavu.
 
-**Numerazione\Descrizione**: campo obbligatorio per la [Numerazione](/docs/configurations/tables/fluentis-numerations) da associare al tipo DDT.
+**Numeracija/Opis**: obavezno polje za [Numeraciju](/docs/configurations/tables/fluentis-numerations) koju treba povezati s tipom primke.  
 
-**Tipo/Descrizione fattura di acquisto**: in questo campo va definito il [Tipo fattura](/docs/configurations/tables/purchase/purchase-invoices-type) da creare quando si utilizza la procedura di [Valorizzazione DDT di acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization). È possibile creare la fattura da DDT solo se questo campo è stato valorizzato.
+**Tip/Opis računa za nabavu**: ovdje se definira [Tip računa](/docs/configurations/tables/purchase/purchase-invoices-type) koji će se kreirati prilikom postupka [Vrijednovanja primke za nabavu](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization). Račun se može napraviti iz primke samo ako je ovo polje popunjeno.
 
-**Natura DDT**: in questo campo va inserita la natura del DDT: consegna, reso, c/visione o reso c/visione. Questo valore dovrà essere selezionato da un elenco.         
+**Priroda primke**: ovdje se unosi priroda primke: isporuka, povrat, na uvid ili povrat na uvid. Vrijednost se bira iz liste.  
 
-**Magazzino/Descrizione magazzino**: è il magazzino di arrivo della merce che viene settato in automatico sulle righe articolo dei DDT creati con questo tipo.
+**Skladište/Opis skladišta**: skladište dolaska robe koje se automatski postavlja na stavke artikala primke kreirane s ovim tipom.  
 
-**Causale/Descrizione causale**: è la [Causale](/docs/configurations/tables/logistics/warehouse-templates) di movimentazione della merce in arrivo che viene settata in automatico sulle righe articolo dei DDT creati con questo tipo.
+**Predložak/Opis predloška**: to je [Predložak](/docs/configurations/tables/logistics/warehouse-templates) za kretanje robe u dolasku koji se automatski postavlja na stavke artikala primki kreiranih s ovim tipom.  
 
-**Controllo fornitore**: serve ad attivare un controllo per il quale, in fase di selezione del soggetto intestatario della bolla, la procedura ci permetterà di selezionare solo conti di tipo fornitore e non di tipo cliente.
+**Kontrola dobavljača**: aktivira kontrolu kojom se prilikom odabira subjekta primke omogućuje odabir samo računa tipa dobavljač, a ne kupac.
 
-**Cash Flow**: se settato, il tipo ordine concorre al calcolo del cash flow.
+**Novčani tok (Cash Flow)**: ako je postavljeno, tip narudžbe utječe na izračun novčanog toka.
 
-**Evasione quantità articolo non sommata**: se settato, nel momento in cui si andranno ad evadere righe ordine con quantità parziali nello stesso DDT questo flag consentirà di riportare le quantità evase dell'ordine suddivise per riga articolo senza sommare le quantità.
+**Isporuka količine artikla bez zbrajanja**: ako je postavljeno, prilikom ispunjavanja redaka narudžbe s djelomičnim količinama u istoj primci, ovaj flag omogućuje prikaz količina ispunjenih po stavci bez zbrajanja.
 
-**Agricola acquisti IVA**: se attivo, in fase di creazione della bolla, il sistema controlla se per l'articolo utilizzato è presente un codice dell'IVA agricola, se non esiste viene preso il codice IVA normale.
+**Poljoprivredna nabava PDV**: ako je aktivno, pri kreiranju primke sustav provjerava postoji li za korišteni artikl šifra poljoprivrednog PDV-a; ako ne postoji, koristi se redovni PDV.
 
-**Gestione matrici extra data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice.
+**Upravljanje matricama dodatnih podataka**: ako je aktivno, za artikle s matricom prikazuje se dodatni tab za unos količine po pojedinoj ćeliji matrice.
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**Ispis**: moguće je odabrati zadani ispis (za ispis zadane verzije potrebno je prilikom ispisa označiti opciju *Višestruki ispisi*); u sljedećem polju može se definirati **Broj kopija**.    
 
-**Gestione Conai**: questo flag permette di attivare la gestione Conai per ciascun di tipo DDT. Per maggiori dettagli sulla gestione delle spese relative al [Conai](/docs/sales/sales-flow/conai) si rimanda all'apposita pagina della documentazione.
+**Upravljanje Conai**: ovaj flag aktivira upravljanje Conai troškovima za svaki tip primke. Za više detalja o [Conai](/docs/sales/sales-flow/conai) upravljanju, pogledajte odgovarajuću dokumentaciju. 
 
-**Controllo qualità**: i tipi DDT che hanno questo flag attivo sono visibili nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
+**Kontrola kvalitete**: tipovi primki s ovim aktiviranim flagom vidljivi su u formi [Uvoz artikala za kontrolu](/docs/quality/item-control/items-control/item-control-import/) unutar područja *Kvaliteta*.
 
-**Gestione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ordine e di selezionare il **Tipo operazione** che si vuole effettuare, che nel caso degli acquisti sarà un *Costo originario*.     
+**Upravljanje imovinom**: ovaj flag omogućuje aktivaciju [Upravljanja imovinom](/docs/finance-area/fixed-assets/general-overview) za taj tip narudžbe te izbor **Tipa operacije** koji će se izvršiti, što će za nabavu biti *Početni trošak*.     
