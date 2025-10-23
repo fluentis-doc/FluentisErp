@@ -47,6 +47,7 @@ Additionally, it is also possible to enter suspension declarations followed by a
 **Hour**: indicates the start time related to the declaration line;         
 **Number**: is a progressive number assigned to each declaration line (always starts from 1);        
 **Declaration state**: allows you to define the status related to the declaration line. It can assume the following values: *Opening*, *Interruption*, *Resumption*, *Progress*, or *Closing*;        
+**Setup Activity**: in the Production Declarations and M.E.S. Declarations, a Setup Activity indicator has been added. The flag is enabled (in the Production Declarations) and visible (in M.E.S. Declarations) only if the declared phase, or the first phase of a group of phases, involves the use of a machine. Activating the setup activity flag results in an increase in the time counter as **Setup Time**; otherwise, the increase will occur on the **Working Time** counter.
 **Suspension reason**: allows you to indicate the reason for suspension to be used for the related declaration line. It is enabled only if the *Declaration Status* is of type *Suspension*;     
 **Batch**: allows you to manually enter the lot number related to the quantity produced;    
 **Quantity produced**: indicates the produced quantity related to the declaration line;         

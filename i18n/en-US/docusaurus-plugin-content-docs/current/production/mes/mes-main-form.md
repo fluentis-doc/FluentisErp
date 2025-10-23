@@ -67,8 +67,9 @@ If, for example, there is a phase in a suspended state and the user adds a phase
 
 The **Production** tab is dedicated to entering information related to production/setup times and the quantities produced/discarded. This is the only tab that cannot be made invisible and consists of the following fields:
 > **Machine**: in this field, the *Machine* indicated in the *Work Center* is proposed by default if the phase has yet to begin. If declarations have already been entered, it proposes that from the previous declaration. Additionally, it can still be changed manually, but only with one of the alternative machines indicated in the registry of the main machine;      
-> **Working time**: allows viewing/modifying the working time manually; its behavior can be varied through the flags *Manual time entry* and *Proposed time* present in [Production Resources](/docs/production/mes/production-resources). The time is automatically calculated as the difference between the current declaration time and the previous one;                   
-> **Setup time**: allows entering/modifying the setup time manually;         
+> **Setup time**: allows you to manually enter / modify the work time;   
+> **Setup activity**: In the Production Reports and M.E.S. Reports, a Setup Activity indicator has been added. The flag is enabled (in the Production Reports) and visible (M.E.S. Reports) only if the declared phase, or the first phase of a group of phases, involves the use of a machine. Activating the flag for a setup activity results in an increase in the time counter as **Setup Time**; otherwise, the increase will occur on the **Working Time** counter. 
+> **Working time**: allows viewing/modifying the working time manually; its behavior can be varied through the flags *Manual time entry* and *Proposed time* present in [Production Resources](/docs/production/mes/production-resources). The time is automatically calculated as the difference between the current declaration time and the previous one;                      
 > **Quantity produced**: allows entering the quantity produced with that declaration;         
 > **Alternative quantity**: allows entering the alternative quantity produced with that declaration;      
 > **Warehouse for input**: indicates the warehouse for raw products made with the declaration;       
