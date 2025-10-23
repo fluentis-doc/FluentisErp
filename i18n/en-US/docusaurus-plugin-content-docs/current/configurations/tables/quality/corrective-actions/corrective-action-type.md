@@ -29,4 +29,9 @@ For the new record, at least the mandatory fields required by the program must b
 > **Numeration Description**: is the description for *Numeration*.   
 > **Notes**: free annotations.
 
+### Attributes of Corrective Action Type 
+
+It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Corrective Action Type*.  
+These *Extra data* can be inherited in the *Corrective Actions* of that specific type.
+
 For anything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

@@ -40,6 +40,6 @@ The list consists of the following information:
 ### Extra data
 
 It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Calibration Type*.   
-These *Extra Data* are inherited in the *Calibration Tool* of that specific type.   
+These *Extra Data* can be inherited in the *Calibration Tool* of that specific type.   
 
 For everything not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

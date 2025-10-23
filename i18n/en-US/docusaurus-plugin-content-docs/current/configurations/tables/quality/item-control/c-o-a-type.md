@@ -33,6 +33,6 @@ The list consists of the following information:
 ### Extra Data 
 
 It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Certificates of Analysis (C.O.A.) Types*.   
-These *Extra Data* are inherited in the *Certificates of Analysis* of that specific type.
+These *Extra Data* can be inherited in the *Certificates of Analysis* of that specific type.
 
 For everything not detailed in this document about the common functioning of the forms, please refer to the following link [Custom Features, Buttons, and Fields](/docs/guide/common).

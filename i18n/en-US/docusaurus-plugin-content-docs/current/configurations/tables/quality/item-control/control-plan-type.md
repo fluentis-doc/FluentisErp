@@ -44,21 +44,21 @@ The list consists of the following information:
 ### Extra Data 
 
 It is possible to input general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Control Plan Types*.   
-These *Extra Data* are inherited in the *Control Plans* of that specific type.   
+These *Extra Data* can be inherited in the *Control Plans* of that specific type.   
 
 ### Planned Tests
 
 It is possible to input general [Test Types](/docs/configurations/tables/quality/item-control/test-type) for the *Control Plan Types*.   
-These *Test Types* are inherited in the *Control Plans* of that specific type.   
+These *Test Types* can be inherited in the *Control Plans* of that specific type.   
 
 #### Planned Tests Attribute
 
 It is possible to input general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Planned Test*.   
-These *Extra Data* are inherited in the *Tests* of the documents where the attributes are used.   
+These *Extra Data* can be inherited in the *Tests* of the documents where the attributes are used.   
 
 #### Planned Tests Configuration
 
 Contains the [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessary for operators to prepare all the necessary tools to begin a specific test. They can be considered necessary configurations, operational information preparatory to the execution of the test.   
-These *Extra Data* are inherited in the *Tests* of the documents where a configuration is required.   
+These *Extra Data* can be inherited in the *Tests* of the documents where a configuration is required.   
 
 For anything not detailed in this document about the common functioning of the forms, refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

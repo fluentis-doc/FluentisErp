@@ -34,6 +34,6 @@ The list consists of the following information:
 ### Extra Data
 
 It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Measurement Tools Category*.  
-These *Extra Data* are inherited by the *Measurement Tool* of that specific category.   
+These *Extra Data* can be inherited by the *Measurement Tool* of that specific category.   
 
 For everything not detailed in this document regarding the common operation of forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

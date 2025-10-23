@@ -53,6 +53,6 @@ no offset *Causal* is provided since the *Test* is of type *Destructive* and it 
 ### Extra Data 
 
 It is possible to insert general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Item Control Types*.   
-These *Extra Data* are inherited in the *Item Controls* of that specific type.   
+These *Extra Data* can be inherited in the *Item Controls* of that specific type.   
 
 For everything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom features, buttons and fields](/docs/guide/common).

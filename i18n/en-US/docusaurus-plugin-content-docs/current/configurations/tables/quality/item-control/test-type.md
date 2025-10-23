@@ -71,12 +71,12 @@ The list consists of the following information:
 ### Attributes Type of test
 
 It is possible to insert [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Test Type*.   
-These *Extra data* are inherited in the *Tests* of documents where the use of attributes is expected.   
+These *Extra data* can be inherited in the *Tests* of documents where the use of attributes is expected.   
 
 ### Configuration Parameters Test and Measuring instrument
 
 Contains the necessary [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for operators to prepare all necessary instruments to begin a specific test. These can be considered necessary configurations, operational information needed for the execution of the test.   
-These *Extra data* are inherited in the *Tests* of documents where a configuration is expected.   
+These *Extra data* can be inherited in the *Tests* of documents where a configuration is expected.   
 
 ### Possible Results
 

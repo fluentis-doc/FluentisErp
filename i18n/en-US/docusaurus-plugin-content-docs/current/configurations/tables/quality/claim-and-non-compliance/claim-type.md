@@ -57,6 +57,6 @@ The list consists of the following information:
 ### Complaint Type Attributes
 
 It is possible to enter [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Claim Type*.  
-These *Extra Data* are inherited in the *Claims* of that specific type.
+These *Extra Data* can be inherited in the *Claims* of that specific type.
 
 For everything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Custom features, buttons, and fields](/docs/guide/common).

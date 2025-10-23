@@ -53,6 +53,6 @@ The list consists of the following information:
 ###  Non-compliance Type Attributes
 
 It is possible to insert general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Non-compliance Type*.   
-These *Extra Data* are inherited in the *Non-Compliance* of that specific type.   
+These *Extra Data* can be inherited in the *Non-Compliance* of that specific type.   
 
 For all that is not detailed in this document regarding the common functioning of the forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).

@@ -34,7 +34,7 @@ The list consists of the following information:
 ### Data Sheet Type Attributes
 
 It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Data Sheet Type*.   
-These *Extra Data* are inherited in the *Data Sheets* of that specific type.   
+These *Extra Data* can be inherited in the *Data Sheets* of that specific type.   
 
 ### Encoding Method 
 
