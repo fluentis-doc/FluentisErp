@@ -1,9 +1,9 @@
 ---
-title: Stato Interventi
+title: Statusi intervencija
 sidebar_position: 5
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Stato interventi** e contiene le tipologie di stato che possono assumere gli Interventi. È possibile ricercare, inserire e cancellare gli stati, ma la tabella è già precompilata con dei possibili stati di default.
+Ova tablica je dostupna putem **Tablice > Upravljanje projektima > Statusi intervencija** i sadrži tipove stanja koja intervencije mogu imati. Moguće je pretraživati, unositi i brisati stanja, no tablica je već unaprijed popunjena s mogućim zadanim stanjima.  
 
 ![](/img/it-it/configurations/tables/projects/interv.png)
 

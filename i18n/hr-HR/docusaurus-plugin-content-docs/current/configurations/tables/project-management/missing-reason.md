@@ -1,13 +1,13 @@
 ---
-title: Causali di Assenza
+title: Predlošci odsutnosti
 sidebar_position: 2
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Causali di assenza** e contiene le motivazioni di assenza associate alla società. Per ricercarle premere ![](/img/neutral/common/search.png) Ricerca nella ribbon bar dopo aver inserito i filtri.
- I dati da inserire sono:
+Ova tablica dostupna je putem **Tablice > Upravljanje projektima > Predlošci odsutnosti** i sadrži razloge odsutnosti povezane s tvrtkom. Za pretraživanje pritisnite ![](/img/neutral/common/search.png) Traži u traci izbornika nakon što unesete filtre.
+ Podaci koje treba unijeti su:  
 
-**Codice**: contiene il codice della causale;
+**Šifra**: sadrži šifru predloška;
 
-**Motivo**: contiene la descrizione del motivo;
+**Razlog**: sadrži opis razloga; 
 
-**Società**: contiene la società in cui validare la causale, con la relativa **Descrizione**.
+**Tvrtka**: sadrži tvrtku u kojoj se predložak validira, s pripadajućim **Opisom**.

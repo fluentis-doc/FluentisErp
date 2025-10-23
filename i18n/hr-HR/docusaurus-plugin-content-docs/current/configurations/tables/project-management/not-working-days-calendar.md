@@ -1,11 +1,11 @@
 ---
-title: Calendario giorni festivi
+title: Kalendar neradnih dana
 sidebar_position: 3
 ---
 
-In questa tabella vengono configurate le giornate festive o non lavorative aziendali. In fase di dichiarazione attività, le date qui inserite non verranno proposte, e nel calcolo cedolini paga la giornata verrà considerata festiva di default. 
-Inoltre se configurato nei parametri Progetti, il piano di fatturazione potrebbe subire delle variazioni di calcolo. 
+U ovoj tablici se konfiguriraju neradni ili praznični dani tvrtke. Tijekom evidentiranja aktivnosti, datumi uneseni ovdje neće biti ponuđeni, a pri obračunu plaća ti dani će se po defaultu smatrati praznicima.
+Osim toga, ako je konfigurirano u parametrima Projekata, plan fakturiranja može doživjeti promjene u izračunu. 
 
-**Giorno Libero**: indicare la data della giornata festiva o non lavorativa aziendale. 
+**Slobodan dan**: unesite datum prazničnog ili neradnog dana tvrtke.
 
-**Note**: eventuale nota o descrizione relativa alla data inserita. 
+**Napomene**: eventualna napomena ili opis vezan uz uneseni datum.

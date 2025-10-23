@@ -1,32 +1,33 @@
 ---
-title: Tipo richiesta intervento
+title: Vrsta zahtjeva za intervenciju
 sidebar_position: 13
 ---
 
-La tabella è accessibile da **Tabelle > Gestione Progetti > Tipo richiesta intervento**.
-La tabella contiene le possibili tipologie di **Richiesta Intervento**. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie di richiesta inserite (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) Ricerca nella ribbon bar per visualizzarle).
+Kartica je dostupna putem **Tablice > Upravljanje projektima > Vrsta zahtjeva za intervenciju**.
+Kartica sadrži moguće tipove **Zahtjeva za intervenciju**. Sastoji se od dijela za filtriranje u kojem je moguće pretraživati po kodu i opisu te mreže u kojoj će biti prikazane sve unesene vrste zahtjeva (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Pretraži u traci izbornika da se prikažu).  
 
 ![](/img/it-it/configurations/tables/projects/request.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie di progetto all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni, che verranno associate al documento:
+Unutar ove forme moguće je dodati nove tipove zahtjeva u mrežu klikom na tipku ![](/img/neutral/common/new.png) Novo; time će se dodati novi redak u mrežu u kojem se mogu definirati sljedeće informacije koje će biti povezane s dokumentom:  
 
-**Tipo**: contiene il codice del tipo richiesta;
+**Tip**: kod vrste zahtjeva;kod vrste zahtjeva;
 
-**Descrizione Tipo**: è la descrizione della tipologia;
+**Opis vrste**: opis tipa;
 
-**Numerazione**: è la numerazione associata;
-**Severità Ticket**: contiene la Severità di default dei ticket per questa tipologia;
+**Numeracija**: pridružena numeracija;
 
-**SLA**: contiene la Service Level Agreement associata;
+**Težina tiketa**: zadana težina tiketa za ovu vrstu;
 
-**Descrizione**: contiene la descrizione della SLA;
+**SLA**: pridruženi Service Level Agreement;
 
-**Tipo Intervento**: è il Tipo di intervento associato;
+**Opis**: opis SLA;
 
-**Esterna/Interna**: questo flag indica se la richiesta d’intervento è interna o esterna.
+**Tip intervencije**: pridruženi tip intervencije;
 
-**Tipo pianificato**: indica la tipologia di pianificazione predefinita;
+**Vanjska/Unutarnja**: ovaj indikator označava je li zahtjev za intervenciju vanjski ili unutarnji;
 
-**Descrizione**: contiene la descrizione del tipo pianificato.
+**Vrsta planiranja**: zadana vrsta planiranja;
 
-**Colore**: colore per identificare le richieste di intervento nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**Opis**: opis vrste planiranja;
+
+**Boja**: boja kojom se identificiraju zahtjevi za intervenciju u kalendarima područja projekata, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [i Dodjela WBS resursa](/docs/project-management/planned-interventions/wbs-resource-assignation)

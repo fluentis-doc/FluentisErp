@@ -1,22 +1,22 @@
 ---
-title: Tipo costificazione commessa
+title: Tip kostifikacije narudžbe
 sidebar_position: 19
 ---
 
-La tabella permette di gestire la codifica delle diverse tipologie di *Tipo costificazione commessa*.
+Tablica omogućuje upravljanje šifriranjem različitih vrsta *Tipova kostifikacije narudžbe*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
 
-**Ricerca Tipo costificazione commessa**
+**Pretraživanje tipa kostifikacije narudžbe**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-**Inserimento Tipo costificazione commessa**    
+**Unos tipa kostifikacije narudžbe**    
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.    
+Za unos novih šifri potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novo**.    
 
-:::note Nota
-Per ogni nuovo inserimento è necessario indicare un *Codice* e *Descrizione* del tipo costificazione e la relativa *Numerazione*; dopo di che in automatico vengono riportati i dati di *Tipo costo*, *Costo del lotto*, *Costo della commessa* e *Tipo ricarico* indicati nella sezione *costificazione commessa* dei [Parametri MS](/docs/configurations/parameters/production/mps-parameters), ovviamente possono essere poi modificati manualmente in base alle esigenze.     
+:::note Napomena
+Za svaki novi unos potrebno je navesti *Šifra* i *Opis* tipa kostifikacije te pripadajuću *Numeraciju*; nakon toga se automatski preuzimaju podaci o *Vrsti troška*, *Trošku lota*, *Trošku narudžbe* i *Vrsti marže* iz odjeljka  *kostifikacija narudžbe* unutar [MS parametara](/docs/configurations/parameters/production/mps-parameters), naravno, ti se podaci po potrebi mogu naknadno ručno izmijeniti.     
 :::    
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).     
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).     

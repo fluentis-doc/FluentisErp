@@ -1,23 +1,23 @@
 ---
-title: Gruppi manodopera
+title: Grupe radne snage
 sidebar_position: 8
 ---
 
-In questa tabella vengono codificati tutti i **gruppi manodopera** che verranno poi impiegati nelle varie fasi dei cicli di lavoro. Come nel caso delle [Macchine](/docs/configurations/tables/production/machines), i **gruppi manodopera** possono essere associati a loro volta ad un [centro di costo](/docs/configurations/tables/production/cost-center).
+U ovoj se tablici kodiraju sve **grupe radne snage** koje će se zatim koristiti u različitim fazama radnih ciklusa. Kao i u slučaju [Strojeva](/docs/configurations/tables/production/machines), **grupe radne snage** mogu se povezati s odgovarajućim [centrom troška](/docs/configurations/tables/production/cost-center).
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
 
-**Ricerca Gruppi manodopera**
+**Pretraživanje grupa radne snage**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-**Inserimento Gruppi manodopera**
+**Unos grupa radne snage**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih šifri potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novi**. 
 
-Per il nuovo record, nella griglia superiore, si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** del gruppo MDO e la sua **Descrizione**.         
-Inoltre, è possibile associare a ciascun **gruppo manodopera** un [centro di costo](/docs/configurations/tables/production/cost-center), che sarà molto importate in fase di [costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), per determinare il costo della fase in cui è impiegato questo gruppo manodopera.
+Za novi zapis, u gornjoj mreži, potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifru** grupe radne snage i njezin **Opis**.         
+Osim toga, svakoj **grupi radne snage** moguće je pridružiti [centar troška](/docs/configurations/tables/production/cost-center), što će biti vrlo važno u fazi [kalkulacije troškova](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), kako bi se odredio trošak faze u kojoj se ta grupa koristi.  
 
-Nella griglia inferiore, per ogni **gruppo manodopera**, si possono specificare i vari **Operatori** che ne fanno parte, indicando per ognuno anche il rispettivo [centro di costo](/docs/configurations/tables/production/cost-center), dato che i vari operatori possono avere costi diversi.
+U donjoj mreži, za svaku **grupu radne snage**, mogu se navesti pojedini **Operateri** koji joj pripadaju, uz mogućnost da se za svakog odredi i odgovarajući [centar troška](/docs/configurations/tables/production/cost-center), budući da različiti operateri mogu imati različite troškove.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

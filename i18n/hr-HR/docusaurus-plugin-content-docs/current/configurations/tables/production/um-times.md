@@ -1,18 +1,18 @@
 ---
-title: UM Tempi
+title: J.M. vremena
 sidebar_position: 14
 ---
 
-La tabella permette di gestire la codifica il numero di decimali per ogni unità di misura temporale (Giorni, Ore, Minuti, Secondi) *UM Tempi*.
+Tablica omogućava upravljanje kodiranjem broja decimalnih mjesta za svaku jedinicu mjere vremena (Dani, Sati, Minute, Sekunde) *J.M. vremena*.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregledavanja, izmjene ili brisanja.  
 
-**Ricerca UM Tempi**
+**Traži J.M. vremena**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako biste vidjeli rezultate u tablici rezultata.  
 
-**Inserimento UM Tempi**
+**Unos JM vremena**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.
+Za unos novih kodova potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

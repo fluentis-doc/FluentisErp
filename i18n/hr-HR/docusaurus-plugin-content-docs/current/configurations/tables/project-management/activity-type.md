@@ -1,26 +1,26 @@
 ---
-title: Tipo attività
+title: Vrsta aktivnosti
 sidebar_position: 7
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Tipi attività**.
-La tabella contiene le possibili tipologie di attività. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie di attività (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png)  Ricerca nella ribbon bar per visualizzarle).
+Tablica je dostupna putem **Tablice > Upravljanje projektima > Tipovi aktivnosti**.
+Tablica sadrži moguće tipove aktivnosti. Sastoji se od dijela za filtriranje gdje se može pretraživati po kodu i opisu, te mreže u kojoj će biti prikazani svi tipovi aktivnosti (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Traži na traci izbornika za prikaz).
 
 ![](/img/it-it/configurations/tables/projects/activitytype.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo; in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+Unutar ove forme moguće je također dodavati nove tipove aktivnosti u mrežu klikom na tipku ![](/img/neutral/common/new.png) Novo; na taj način će se dodati novi redak u mrežu u kojem je moguće definirati sljedeće informacije:
 
-**Codice**: è il codice del tipo attività;
+**Kod**: kod tipa aktivnosti;  
 
-**Descrizione**: è la descrizione del codice;
+**Opis**: opis koda;  
 
-**Attività fatturabile**: questo flag indica se l’attività è fatturabile o meno;
+**Fakturabilna aktivnost**: ovaj flag označava je li aktivnost fakturabilna ili ne;  
 
-**Tipo attività**: è possibile collegare la tipologia per la dichiarazione attività del CRM, con la relativa descrizione;
+**Tip aktivnosti**: moguće je povezati tip s tipologijom za prijavu aktivnosti u CRM-u, zajedno s pripadajućim opisom;  
 
-**Ricalcola progetto**: indica se effettuare il ricalcolo dell’avanzamento del progetto;
+**Ponovno izračunaj projekt**: označava hoće li se izvršiti ponovno izračunavanje napretka projekta;  
 
-Sono poi presenti una serie di flag che indicano, se flaggati, l’obbligatorietà di alcuni campi nella tipologia di attività selezionata.
+Nadalje, prisutni su različiti flagovi koji, ako su označeni, označavaju obaveznost određenih polja u odabranom tipu aktivnosti. 
 
-**Colore**: colore per identificare le dichiarazioni attività nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**Boja**: boja za označavanje prijava aktivnosti u kalendarima područja projekata, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [Dodjela WBS resursa](/docs/project-management/planned-interventions/wbs-resource-assignation)
 

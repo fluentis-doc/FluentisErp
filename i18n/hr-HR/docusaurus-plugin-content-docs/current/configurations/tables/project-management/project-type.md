@@ -1,79 +1,80 @@
 ---
-title: Tipi progetto
+title: Vrste projekta
 sidebar_position: 12
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Tipi progetto**
+Tablica je dostupna putem **Tablice > Upravljanje projektima > Vrste projekta**
 
-La tabella contiene le possibili tipologie di **Progetto**. E' composta da una parte di filtro in cui si può ricercare attraverso la descrizione del tipo, e da due griglie: una in cui verranno elencate tutte le tipologie di progetto inserite (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) ricerca nella ribbon bar per visualizzarle) ed una in cui potranno essere indicati i costi/ricavi predefiniti per ogni tipologia progetto da utilizzare nel calcolo SAL.
+Tablica sadrži moguće tipove **Projekta**. Sastoji se od dijela za filtriranje u kojem se može pretraživati po opisu tipa te od dvije mreže (grid): u jednoj će biti navedene sve unesene vrste projekta (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Traži u traci izbornika za prikaz), a u drugoj se mogu unijeti unaprijed definirani troškovi/prihodi za svaki tip projekta koji će se koristiti za izračun SAL-a.
 
 ![](/img/it-it/configurations/tables/projects/proj-type.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie di progetto all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) New: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+U ovoj formi moguće je dodati nove vrste projekta unutar mreže klikom na tipku ![](/img/neutral/common/new.png) Novo; time će se dodati novi red u mrežu gdje se mogu definirati sljedeće informacije:
 
-**Tipo**: è il codice del tipo progetto;
+**Tip**: kod vrste projekta;
 
-**Descrizione Tipo Progetto**: è la descrizione del tipo progetto;
+**Opis vrste projekta**: opis vrste projekta;
 
-**Numerazione**: è la numerazione associata al progetto configurata appositamente;
+**Numeracija**: numeracija dodijeljena projektu, konfigurirana posebno;
 
-**Struttura gerarchica**: questo flag se abilitato permette ai progetti di avere una struttura gerarchica, quindi multilivello; 
+**Hijerarhijska struktura**: ako je označeno, omogućuje projektima da imaju hijerarhijsku, višerazinsku strukturu;
 
-**Tipo ordine**: è possibile indicare un tipo ordine associato;
+**Tip naloga**: moguće je povezati tip naloga;
 
-**Descrizione Tipo Ordine**: è la descrizione del tipo ordine associato; utilizzato nel caso di creazione progetti da ordine.
+**Opis tipa naloga**: opis povezanog tipa naloga; koristi se kod kreiranja projekata iz naloga
 
-**Tipo Fattura**: è possibile indicare un tipo fattura associato, necessario per la fatturazione dei progetti;
+**Tip fakture**: moguće je povezati tip fakture potreban za fakturiranje projekata;
 
-**Descrizione Tipo Fattura**: è la descrizione della fattura associata;
+**Opis tipa fakture**: opis povezane fakture;
 
-**Template**: questo flag indica che il tipo progetto è un template, quindi non potrà essere richiamato in altri documenti, ma utilizzato solamente come modello per la generazione di nuovi progetti.  
+**Predložak**: ako je označeno, tip projekta je predložak (template), ne može se pozivati u drugim dokumentima, koristi se samo kao model za kreiranje novih projekata;
 
-**Sicurezza del Progetto abilitata**: se flaggato, abilita la possibilità di scegliere, nella tab Permessi Utente della Testata del Progetto, gli utenti che hanno il diritto di Read Only oppure Read Write sul progetto (gli altri utenti non potranno accedervi); se non flaggato, permette la modifica del Progetto a tutti gli utenti;
+**Omogućena sigurnost projekta**: ako je označeno, omogućuje u kartici Dozvole korisnika na zaglavlju projekta biranje korisnika koji imaju prava samo za čitanje ili za čitanje i pisanje projekta (ostali korisnici neće imati pristup); ako nije označeno, svi korisnici mogu mijenjati projekt;
 
-**Tipo richiesta d’acquisto**: è possibile associare un tipo di richiesta d’acquisto; in questo modo sarà possibile generare le richieste di acquisto direttamente da progetto. 
+**Tip zahtjeva za nabavku**: moguće je povezati tip zahtjeva za nabavku; time će se zahtjevi za nabavku moći generirati direktno iz projekta.
 
-Sono poi presenti alcuni flag nella griglia, che indicano le varie tab da mostrare per il tipo progetto.
+U mreži ispod nalaze se i neki flagovi koji označavaju koje će se kartice prikazivati za određeni tip projekta:
 
-**Attività**: tab contenente tutti i dati principali ed obbligatori per la riga di progetto, come articolo, quantità e prezzo ed il riepilogo dei costi;
+**Aktivnosti**: kartica s glavnim i obaveznim podacima za projektni redak, kao što su artikl, količina, cijena i sažetak troškova;
 
-**Pianificazione Servizio**: tab relativa alle date di inizio/fine previsti, la % di avanzamento, i tipi intervento da utilizzare ed eventuali legami con altre wbs;
+**Planiranje usluge**: tab vezan uz planirane datume početka/kraja, % napretka, tipove intervencija i moguće veze s drugim WBS-ovima;
 
-**Risorse**: tab di pianificazione risorse;
+**Resursi: kartica za planiranje resursa;
 
-**Materiali**: tab contenente l'elenco materiali con il relativo costo;
+**Materijali: kartica s popisom materijala i pripadajućim troškovima;
 
-**Fasi**:
+**Faze**:
 
-**Dati**: tab contenente informazioni generiche relative ai codici per il calcolo SAL di progetto, riferimento a ticket, commesse di produzione, contatti crm. 
+**Podaci: kartica s općim informacijama vezanim uz kodove za izračun SAL projekta, referencama na tikete, proizvodne naloge, CRM kontakte;
 
-**Avanzamento**: 
+**Napredak**: 
 
-**Agenti**: tab di inserimento Agenti relativi al progetto.
+**Agenti**: kartica za unos agenata povezanih s projektom;
 
-**Fatturazione**: tab per compilare la scaletta delle rate di fatturazione per la riga di progetto;
+**Fakturiranje**: kartica za popunjavanje plana obroka fakturiranja po projektnom retku;
 
-**Extra Data**: tab per gestire gli extra data;
+**Dodatni podaci**: kartica za upravljanje dodatnim podacima;
 
-**Documenti Allegati**: tab per gestire gli allegati.
+**Priloženi dokumenti**: kartica za upravljanje prilozima;
 
-**Gannt**: tab generale che mostra il diagramma di Gannt relativo al progetto. 
+**Gantt**: opća kartica koja prikazuje Ganttov dijagram projekta;
 
-**Fattura di Anticipo**: tab per gestire le fatture di anticipo legate ai progetti.
+**Avansna faktura**: kartica za upravljanje avansnim fakturama vezanim uz projekte.
 
-**Fatturato Obbligatorio**: nel caso di riga progetto fatturabile e flag fatturato obbligatorio, verrà bloccato il salvataggio.
+**Obavezni prihod**: ako je projektni redak fakturabilan i označen kao obavezan prihod, spremanje će biti onemogućeno.
 
-**Ricalcolo data inizio-fine**: se abilitato, permette la modifica automatica della data di inzio e fine pianificazione nelle righe wbs di progetto. Le date si aggiorneranno in base alla quantità di riga se la UM corrisponde alla UM dei giorni impostata nei parametri progetto, oppure in inserimento nuove risorse nella tab risorse della riga progetto.
+**Automatski preračun datuma početka i kraja**: ako je omogućeno, automatski se mijenjaju datumi početka i kraja planiranja u WBS retcima projekta. Datumi se ažuriraju ovisno o količini retka ako jedinica mjere (JM) odgovara postavljenoj JM dana u projektnim parametrima ili prilikom unosa novih resursa u karticu resursa projektnog retka.
 
-Nella griglia sottostante è possibile costruire la valorizzazione del SAL nell’ambito dello stato avanzamento lavori. Per ogni progetto è possibile indicare una serie di codici, che rappresenteranno documenti da includere nel calcolo dello stato avanzamento lavori. Questi codici verranno poi proposti nelle singole righe di progetto. 
-Dopo aver selezionato una riga dalla prima griglia, i campi da compilare nella seconda sono:
+U donjoj mreži moguće je definirati vrednovanje SAL-a u okviru stanja napretka radova. Za svaki projekt moguće je navesti niz kodova koji predstavljaju dokumente uključene u izračun stanja napretka radova. Ti će kodovi kasnije biti ponuđeni u pojedinačnim projektnim redcima.
 
-**Tipo origine Costo/Ricavo**: contiene l'elenco dei codici di costi/ricavi previsti per il calcolo SAL per i progetti di quello specifico tipo;
+Nakon odabira retka u prvoj mreži, polja za popunjavanje u drugoj su:
 
-**Descrizione**: è la descrizione dei costi/ricavi;
+**Tip porijekla troška/prihoda**: sadrži popis kodova troškova/prihoda predviđenih za SAL izračun za projekte tog tipa;
 
-**Tipo**: indica se è costo o un profitto.
+**Opis: opis troškova/prihoda**;
 
-**Espressione filtro**: se il campo non è valorizzato, vengono considerati tutti i documenti previsti per il specifico codice. Se invece si vuole escludere determinati documenti (ad es. per tipologia, numerazione, etc) è possibile configurare un'espressione filtrante. 
+**Tip**: označava je li riječ o trošku ili prihodu.
+
+**Izraz filtra**: ako polje nije popunjeno, uzimaju se svi dokumenti predviđeni za taj kod. Ako želite isključiti određene dokumente (npr. po tipu, numeraciji itd.), možete konfigurirati izraz za filtriranje. 
 
 ![](/img/it-it/configurations/tables/projects/revenue.png)

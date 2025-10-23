@@ -1,26 +1,25 @@
 ---
-title: Categoria di Attività
+title: Kategorija aktivnosti
 sidebar_position: 1
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Categoria di Attività**.
-La tabella contiene le possibili categorie di attività. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) Ricerca nella ribbon bar per visualizzarle).
+Kartica je dostupna putem **Tablice > Upravljanje projektima > Kategorija aktivnosti**.
+Kartica sadrži moguće kategorije aktivnosti. Sastoji se od dijela za filtriranje u kojem je moguće pretraživati po kodu i opisu te mreže u kojoj će biti prikazane sve vrste (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Traži u traci izbornika da se prikažu).
 
 ![](/img/it-it/configurations/tables/projects/task-category.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new-child.png) Nuovo gruppo o ![](/img/neutral/common/new-brother.png) Nuovo raggruppamento; in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+Unutar ove forme moguće je dodati nove tipove u mrežu klikom na tipku ![](/img/neutral/common/new-child.png) Novi grupu ili ![](/img/neutral/common/new-brother.png) Novi raspored; time će se dodati novi redak u mrežu u kojem se mogu definirati sljedeće informacije:
 
-**Codice**: è il codice della categoria;
+**Kod**: kod kategorije;
 
-**Descrizione**: contiene la descrizione della categoria;
+**Opis**: opis kategorije;
 
-**Attività fatturabile**: questo flag rende l’attività fatturabile di default;
+**Fakturabilna aktivnost**: ovaj indikator postavlja aktivnost kao fakturabilnu po defaultu;
 
-**Attività a valore aggiunto**: questo flag marca l’attività come attività a valore aggiunto; questo flag è presente in tutti i documenti dell'area progetti, valorizzato dalla categoria attività e poi modificabile dall'utente. In caso di documenti generati da procedura e non inseriti ex-novo, il valore del flag verrà ereditato dal documento precedente da cui è stato generato il nuovo. Sarà quindi possibile fare analisi tra attività a valore aggiunto e non. 
+**Aktivnost s dodanom vrijednošću**: ovaj indikator označava aktivnost kao aktivnost s dodanom vrijednošću; ovaj indikator se nalazi u svim dokumentima područja projekata, postavljen prema kategoriji aktivnosti, a korisnik ga može kasnije izmijeniti. U slučaju dokumenata generiranih procedurom, a ne unesenih ručno, vrijednost indikatora će se naslijediti iz prethodnog dokumenta od kojeg je novi dokument nastao. Tako je moguće napraviti analizu između aktivnosti s i bez dodane vrijednosti.
 
-**Codice Paghe**: codice che verrà utilizzato nella procedura di calcolo dati paghe, configurati nella tabella **Codici Paghe**.
+**Kod plaća**: kod koji će se koristiti u proceduri obračuna plaća, konfiguriran u kartici **Kodovi plaća**.
 
-**Centro aziendale**: contiene il centro di costo che servirà ad aggregare le attività, per dare al controllo di gestione un’informazione di tutte le attività svolte nel periodo.
+**Poslovni centar**: sadrži troškovni centar koji će služiti za agregaciju aktivnosti i pružiti kontrolingu informacije o svim aktivnostima obavljenim u određenom razdoblju.
 
-**Descrizione**: contiene la descrizione del centro aziendale.
-
+**Opis**: opis poslovnog centra.

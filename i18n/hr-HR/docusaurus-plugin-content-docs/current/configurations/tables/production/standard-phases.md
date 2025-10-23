@@ -1,70 +1,70 @@
 ---
-title: Fasi standard
+title: Standardne faze
 sidebar_position: 7
 ---
 
-Questa tabella corrisponde all'anagrafica delle fasi che vengono utilizzate nei cicli di lavoro; in questa tabella vengono quindi codificate tutte le fasi con i relativi dati allo scopo poi di poter essere proposte e selezionate all'interno del ciclo di lavoro.
+Ova tablica odgovara registru faza koje se koriste u radnim ciklusima; u njoj se kodiraju sve faze s pripadajućim podacima kako bi se kasnije mogle predložiti i odabrati unutar radnog ciklusa.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.
 
-**Ricerca Fasi standard**
+**Pretraživanje standardnih faza**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Obrazac se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-**Inserimento Fasi standard**
+**Unos standardnih faza**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih šifri potrebno je kliknuti u rešetki na prvi prazan redak ili pritisnuti tipku **Novi**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice**, **Descrizione fase/sottofase**, il **Centro di lavoro** e l’**Unità di misura dei tempi**.        
-Quando viene inserito il centro di lavoro, questo riporta anche le informazioni inerenti alla macchina e al gruppo manodopera inseriti nella tabella dei centri di lavoro, i quali possono essere comunque variati manualmente sulla fase stessa dall’utente.           
-Inoltre, bisogna fare attenzione ad inserire dei codici **Fase** e **Sottofase** univoci altrimenti viene visualizzato un messaggio di avviso.
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Kod**, **Opis faze/podfaze**, **Radni centar**  i **Jedinicu mjere vremena**.         
+Kada se unese radni centar, on automatski preuzima informacije o stroju i grupi radne snage navedene u tablici radnih centara, no korisnik ih može ručno izmijeniti na samoj fazi.
+Također, važno je obratiti pozornost da kodovi **Faza** i **Podfaza** budu jedinstveni, inače će se prikazati poruka upozorenja.  
 
-Uno dei dati più importanti da inserire in questa tabella è il **Tipo di fase/sottofase**: *Interna* oppure *Esterna*. Nel caso in cui sia interna, significa che viene prodotta internamente allo stabilimento produttivo, mentre se si tratta di una fase esterna, significa che viene data in conto lavoro ad un fornitore e questa genererà direttamente un ordine di conto lavoro dedicato all’esecuzione della stessa.
+Jedan od najvažnijih podataka za unos u ovu tablicu je **Vrsta faze/podfaze**: *Interna* ili *Eksterna*. Ako je interna, znači da se obavlja unutar proizvodnog pogona, dok ako je eksterna, znači da se daje u kooperaciju vanjskom dobavljaču i generirat će nalog za kooperaciju namijenjen njezinu izvršenju  
 
-*Campi specifici*: 
+*Specifična polja:*: 
 
-**Codice**: indica il codice della fase standard;  
-**Fase**: indica il numero progressivo di fase;  
-**Sottofase**: indica il numero di sottofase a parità di numero di fase;  
-**Descrizione fase/sottofase**: indica la descrizione della fase/sottofase;  
-**Tipo fase/sottofase**: indica se la fase/sottofase sia interna o esterna;  
-**Fase produttiva**: indica se si tratta di una fase di tipo produttivo;  
-**Movimentabile**: indica che la fase genererà dei movimenti di magazzino (scarichi e carichi);  
-**Controllo qualità**: se attivato, questo flag indica che questa fase è soggetta a tutta una serie di analisi inerenti al controllo qualità;  
-**Centro di lavoro**: indica il codice del CdL;  
-**Tempo fisso**: indica che il CdL lavora a tempo fisso, il tempo di lavorazione dell’articolo non dipende dal numero di pezzi;  
-**U.M. tempi**: indica l’unità di misura dei tempi della fase;  
-**Tempo attesa/coda**: indica il tempo necessario che bisogna attendere alla fine della fase prima di poterla eseguire nuovamente;       
-**Tempo attrezzaggio**: indica il tempo di attrezzaggio prima di iniziare la lavorazione;   
-**Tempo riattrezzaggio**: indica il tempo di riattrezzaggio, cioè il tempo necessario per riattrezzare la macchina tra la produzione di uno o più pezzi;  
-**Macchina**: indica il codice della macchina;  
-**Tempo macchina**: indica il tempo di impiego della macchina in questa fase;                       
-**Numero macchine**: indica il numero di macchine impegnate contemporaneamente dalla lavorazione;  
-**Numero pezzi**: indica il numero di pezzi prodotto ad ogni esecuzione di quella fase;              
-**Gruppi manodopera**: indica il codice del gruppo di manodopera;  
-**Tempo assegnato**: indica il tempo impiegato dalla manodopera in quella fase;            
-**Numero operai**: indica il numero di operai che stanno svolgendo la fase;           
-**Manutenzione**: indica se la fase è di tipo manutenzione;        
-**Costo**: indica il costo della fase per produrre i pezzi indicati nel campo Numero pezzi;    
-**Descrizione terzista**: indica la descrizione del terzista (è abilitato solo se la fase è di tipo **Esterno**);  
-**Ubicazione**: indica l'ubicazione di magazzino associata a quella fase; questo significa che tutti gli articoli impiegati in quella fase saranno presenti in quell'ubicazione;    
-**Tipo fatturato acquisto**: indica il tipo fatturato d'acquisto riportato a livello della riga articolo presente nell’ordine di conto lavoro (è abilitato solo se la fase è di tipo **Esterno**);      
-**Descrizione tipo fatturato acquisto**: indica la descrizione del tipo fatturato d'acquisto riportato a livello della riga articolo presente nell’ordine di conto lavoro (è abilitato solo se la fase è di tipo **Esterno**);      
-**Tipo piano di controllo**: indica il tipo di piano per il controllo qualità (solo se abilitato il flag **Controllo qualità**);  
-**Anno del piano di controllo**: indica l’anno del piano per il controllo qualità (solo se abilitato il flag **Controllo qualità**);  
-**Codice piano di controllo**: indica il codice del piano per il controllo qualità (solo se abilitato il flag **Controllo qualità**);  
-**Descrizione del piano di controllo**: indica la descrizione del piano per il controllo qualità (solo se abilitato il flag **Controllo qualità**);  
-**Data creazione**: indica la data di creazione del record;  
-**Data modifica**: indica la data di ultima modifica del record;  
-**Note**: Campo libero per l’inserimento di note;  
-**Descrizione centro di lavoro**: indica la descrizione del CdL;  
-**Descrizione macchina**: indica la descrizione della macchina;  
-**Descrizione gruppo MDO**: indica la descrizione del gruppo di manodopera.  
+**Kod**: označava kod standardne faze; 
+**Faza**: označava redni broj faze;   
+**Podfaza**: označava broj podfaze unutar iste faze;  
+**Opis faze/podfaze**: označava opis faze/podfaze;   
+**Vrsta faze/podfaze**: označava je li faza/podfaza interna ili eksterna;   
+**Proizvodna faza**: označava radi li se o fazi proizvodnog tipa;  
+**Kreiranje zaliha**: označava da faza generira skladišne pokrete (izdavanje i zaprimanje);    
+**Kontrola kvalitete**: ako je aktivirano, ovaj flag označava da je faza podložna analizama vezanim uz kontrolu kvalitete;    
+**Radni centar**: označava šifru radnog centra (CdL);  
+**Fiksno vrijeme**: označava da radni centar radi s fiksnim vremenom, tj. vrijeme obrade artikla ne ovisi o broju komada;    
+**J.M. vremena**: označava jedinicu mjere vremena faze;    
+**Vrijeme čekanja/red čekanja**: označava vrijeme potrebno pričekati nakon završetka faze prije njezina ponovnog izvođenja;         
+**Vrijeme pripreme**: označava vrijeme potrebno za pripremu stroja prije početka obrade;   
+**Vrijeme ponovne priprem**: označava vrijeme potrebno za prilagodbu stroja između izrade više komada;   
+**Stroj**: označava kod stroja;   
+**Vrijeme stroja**: označava vrijeme korištenja stroja u toj fazi;                         
+**Broj strojeva**: označava broj strojeva koji su istovremeno angažirani u proizvodnji;  
+**Broj komada**: označava broj komada proizvedenih pri jednom izvođenju te faze;               
+**Grupa radne snage**: označava kod grupe radne snage;  
+**Dodijeljeno vrijeme**: označava vrijeme koje radna snaga utroši u toj fazi;              
+**Broj radnika**: označava broj radnika koji rade na fazi;           
+**Održavanje**: označava je li faza tipa održavanja;          
+**Trošak**: indica il costo della fase per produrre i pezzi indicati nel campo Numero pezzi;    
+**Descrizione terzista**: označava trošak faze za izradu komada navedenih u polju **Broj komada**;  
+**Opis kooperanta**: indica l'ubicazione di magazzino associata a quella fase; questo significa che tutti gli articoli impiegati in quella fase saranno presenti in quell'ubicazione;    
+**Tipo fatturato acquisto**: označava vrstu fakturiranog troška prikazanog na razini stavke u nalogu za posao (omogućeno samo ako je faza tipa **Vanjska**);      
+**Opis vrste fakturiranog troška**: označava opis vrste fakturiranog troška prikazanog na razini stavke u nalogu za posao (omogućeno samo ako je faza tipa **Vanjska**);      
+**Vrsta plana kontrole**: označava vrstu plana za kontrolu kvalitete (samo ako je označeno polje **Kontrola kvalitete**);  
+**Godina plana kontrole**: označava godinu plana za kontrolu kvalitete (samo ako je označeno polje **Kontrola kvalitete**);  
+**Šifra plana kontrole**: označava šifru plana za kontrolu kvalitete (samo ako je označeno polje  **Kontrola kvalitete**);  
+**Opis plana kontrole**: označava opis plana za kontrolu kvalitete (samo ako je označeno polje **Kontrola kvalitete**);  
+**Datum kreiranja**: označava datum kreiranja zapisa;    
+**Datum izmjene**: označava datum zadnje izmjene zapisa;   
+**Bilješke**: slobodno polje za unos bilješki;  
+**Opis radnog centra**: označava opis radnog centra;    
+**Opis stroja**: označava opis stroja;  
+**Opis skupine radne snage**: označava opis skupine radne snage.  
       
 
-:::note Nota
-Tutte le fasi esterne devono sempre avere i flag **Fase produttiva** e **Fase movimentabile** attivi.
+:::note Napomena 
+Sve vanjske faze moraju uvijek imati aktivna polja **Proizvodna faza** i **Faza s pomicanjem**.
 :::
 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

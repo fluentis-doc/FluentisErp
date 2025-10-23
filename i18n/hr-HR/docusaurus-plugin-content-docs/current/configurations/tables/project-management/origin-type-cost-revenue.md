@@ -1,9 +1,9 @@
 ---
-title: Tipo origine Costo/Ricavo
+title: Tip porijekla Trošak / prihod
 sidebar_position: 16
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Tipo origine costo/ricavo** e contiene un elenco di codici origine di costi e ricavi. È possibile ricercare, inserire e cancellare i codici, ma è già presente un elenco di default.
+Ova tablica je dostupna putem **Tablice > Upravljanje projektima > Tip porijekla Trošak / prihod** i sadrži popis kodova izvora troškova i prihoda. Moguće je pretraživati, unositi i brisati kodove, ali već postoji zadani popis.
 
 ![](/img/it-it/configurations/tables/projects/cost-revenue.png)
 

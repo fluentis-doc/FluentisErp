@@ -1,6 +1,6 @@
 ---
-title: Stato richieste intervento
+title: Status zahtjeva za intervenciju
 sidebar_position: 6
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Stato richieste interventi** e contiene le tipologie di stato che possono assumere le richieste nterventi. È possibile ricercare, inserire e cancellare gli stati.
+Ova tablica je dostupna pod **Tablice> Upravljanje projektima  > Status zahtjeva za intervenciju** i sadrži tipove statusa koje mogu imati zahtjevi za intervenciju. Moguće je pretraživati, unositi i brisati statusa.

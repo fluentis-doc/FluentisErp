@@ -1,20 +1,20 @@
 ---
-title: Utensili
+title: Alati
 sidebar_position: 15
 ---
 
-All'interno di questa tabella vengono codificati tutti gli utensili che possono poi essere richiamati all'interno dei cicli di lavoro nel relativo tab *Utensili*.
+Unutar ove tablice kodificiraju se svi alati koji se zatim mogu pozivati unutar radnih ciklusa u odgovarajućoj kartici *Alati*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućava unos novih zapisa ili pretraživanje već postojećih za pregled, izmjenu ili brisanje.
 
-**Ricerca Utensili**
+**Traži Alati**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za rezultat. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako biste vidjeli rezultate u mreži rezultata.  
 
-**Inserimento Utensili**
+**Unos Alati**
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih kodova potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novi**. 
 
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**. Se il campo **Stato** è selezionato significa che l'utensile è utilizzabile.
+Za novi zapis potrebno je unijeti barem obavezna polja koja program traži: **Šifra** i **Opis**. Ako je polje **Stanje** označeno, znači da je alat upotrebljiv.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

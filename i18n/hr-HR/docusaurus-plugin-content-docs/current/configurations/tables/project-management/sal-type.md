@@ -1,6 +1,6 @@
 ---
-title: Tipo SAL
+title: Tip SAL
 sidebar_position: 14
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Tipo SAL** e contiene le tipologie di stato avanzamento lavori disponili. È possibile creare, ricercare e cancellare le tipologie. Ognuna è definita da un **Codice**, una **Descrizione** e una **Numerazione**.
+Ova tablica dostupna je putem **Tablice > Upravljanje projektima > Tip SAL** i sadrži dostupne tipove stanja napretka radova. Moguće je kreirati, pretraživati i brisati tipove. Svaki je definiran **Šifrom**, **Opisom** i **Numeracijom**.

@@ -1,25 +1,25 @@
 ---
-title: Tipo pianificato
+title: Vrsta planiranja
 sidebar_position: 11
 ---
 
-La tabella è accesssibile da **Tabelle > Gestione Progetti > Tipo pianificato**.
-La tabella contiene le possibili tipologie di pianificazione. E' composta da una parte di filtro in cui si può ricercare attraverso il codice e la descrizione, e da una griglia in cui verranno elencate tutte le tipologie di pianificato (basterà cliccare sul pulsante di ![](/img/neutral/common/search.png) Ricerca nella ribbon bar per visualizzarle).
+Tablica je dostupna putem **Tablice > Upravljanje projektima > Vrsta planiranja**.
+Tablica sadrži moguće vrste planiranja. Sastoji se od dijela za filtriranje u kojem se može pretraživati po kodu i opisu, te mreže u kojoj će biti prikazane sve vrste planiranja (dovoljno je kliknuti na tipku ![](/img/neutral/common/search.png) Traži u traci izbornika da bi ih se prikazalo).  
 
 ![](/img/it-it/configurations/tables/projects/planned-type.png)
 
-Sempre all'interno di questa form è possibile aggiungere nuove tipologie all'interno della griglia, cliccando sul pulsante ![](/img/neutral/common/new.png) Nuovo: in questo modo verrà aggiunta una nuova riga all'interno della griglia dove si potranno definire le seguenti informazioni:
+Unutar ovog obrasca moguće je dodati nove vrste u mrežu klikom na tipku ![](/img/neutral/common/new.png) Novo: na taj će način biti dodan novi redak u mreži u kojem se mogu definirati sljedeće informacije:  
 
-**Codice**: è il codice del tipo pianificato;
+**Kod**: kod vrste planiranja;  
 
-**Descrizione**: è la descrizione del codice;
+**Opis**: opis koda;
 
-**Non previsto**: se flaggato, indica che stiamo trattando una tipologia non prevista;
+**Nepredviđeno**: ako je označeno, označava da se radi o vrsti koja nije predviđena;  
 
-**Numerazione**: indica la numerazione associata;
+**Numeracija**: označava pridruženu numeraciju;  
 
-**Tipo intervento**: indica il tipo intervento associato di default, con la relatva descrizione;
+**Tip intervencije**: označava zadani tip intervencije s pripadajućim opisom;  
 
-**Esterno/Interno**: se flaggato, indica che è un’operazione esterna.
+**Vanjsko/Unutarnje**: ako je označeno, znači da je operacija vanjska. 
 
-**Colore**: colore per identificare gli interventi pianificati nei calendari dell'area progetti, come il [Planner](/docs/project-management/planned-interventions/planner) e [Assegnazione WBS risorse](/docs/project-management/planned-interventions/wbs-resource-assignation)
+**Boja**: boja za identifikaciju planiranih intervencija u kalendarima projektnog područja, kao što su [Planer](/docs/project-management/planned-interventions/planner) i [Dodjela WBS resursa](/docs/project-management/planned-interventions/wbs-resource-assignation)

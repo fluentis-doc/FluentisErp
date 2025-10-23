@@ -1,52 +1,53 @@
 ---
-title: Arrotondamenti temporali
+title: Vremenska zaokruživanja
 sidebar_position: 24
 ---
 
-La tabella è collocata in Configurazione > tabelle > Gestione progetti > Arrotondamenti temporali
+Kartica se nalazi u Konfiguracija > tablice > Upravljanje projektima > Vremenska zaokruživanja.
 
-in questa tabella sono configurati gli arrotondamenti da applicare nel piano di fatturazione alle ore di servizio dichiarate negli interventi
+U ovoj kartici konfiguriraju se zaokruživanja koja se primjenjuju u planu fakturacije na sate usluge evidentirane u intervencijama.
 
-**Minuti** indica lo scaglione da cui parte l'arrotondamento, utilizzato per trovare l'arrotondamento da applicare in base alle ore di servizio dell'intervento svolto. 
-**Arrotondamento** numero di minuti a cui arrotondare 
-**Tolleranza** minuti di tolleranza prima di far scattare l'arrotondamento o l'eventuale scaglione successivo
-
-
-La tabella ragiona in “scaglioni”.
+**Minuti** označava početni prag za primjenu zaokruživanja, koji se koristi za određivanje pravilnog zaokruživanja na osnovu sati usluge izvršene intervencije.  
+**Zaokruživanje** je broj minuta na koji se zaokružuje.
+**Tolerancija** je broj minuta tolerancije prije nego što se aktivira zaokruživanje ili sljedeći prag.
 
 
-Se ad es. si vuole arrotondare tutti gli interventi di 2 ore in 2 ore, è sufficiente configurare: 
+Kartica radi s “pragovima”.  
 
 
->> minuti 0 > arrotondamento in minuti 120 > tolleranza 0
+Primjer: ako želimo zaokružiti sve intervencije od 2 sata na 2 sata, dovoljno je konfigurirati:
 
 
->> questo indica che da 0 all’infinito le ore verranno sempre arrotondate di 2 in 2. Tolleranza indica il gap di tempo oltre al quale scatta lo scaglione successivo. 
+>> minuti 0 > zaokruživanje u minutama 120 > tolerancija 0
 
 
->> Es. 
-- intervento A: 1 h e 30 minuti > fatturato 2 ore
-- Intervento B: 2h e 10 minuti > fatturato 4 ore
-- Intervento C: 8h e 30 minuti > fatturato 10 ore
+>> to znači da će od 0 pa nadalje svi sati biti zaokruženi na višekratnike od 2 sata. Tolerancija označava vremenski “razmak” nakon kojeg se prelazi na sljedeći prag.
 
 
-Aggiungendo la tolleranza ad es. 15 minuti, l’intervento B verrà fatturato a 2 ore. 
-Aggiungendo un altro scaglione possiamo ad es. regolare l’arrotondamento per le ore successive alle 8 ad Es. 
-
->> minuti 0 > arrotondamento in minuti 120 > tolleranza 0
-
-
->> minuti 480 > arrotondamento in minuti 30 > tolleranza 0
-
-Per cui nell’esempio precedente l’intervento C verrà fatturato 8h e 30 minuti Se l’intervento C fosse stato 8h e 15 minuti, sarebbero stati fatturati comunque 8h e 30 minuti, essendo previsto l’arrotondamento alla mezz’ora. 
-
-Se si desidera fatturare ad es. o 4 o 8 ore , si può configurare 
+>> Primjer. 
+- Intervencija A: 1 sat i 30 minuta > fakturirano 2 sata
+- Intervencija B: 2 sata i 10 minuta > fakturirano 4 sata
+- Intervencija C: 8 sati i 30 minuta > fakturirano 10 sati
 
 
->> Minuti 0 > arrotondamento 240 minuti > tolleranza 0
+Ako dodamo toleranciju npr. 15 minuta, Intervencija B će se fakturirati kao 2 sata.
+Dodavanjem drugog praga možemo podesiti zaokruživanje za sate preko 8 sati, na primjer:  
+
+>> minuti 0 > zaokruživanje u minutama 120 > tolerancija 0
 
 
->> Minuti 240 > arrotondamento 240 minuti > tolleranza 0
+>> minuti 480 > zaokruživanje u minutama 30 > tolerancija 0
+
+U gore navedenom primjeru, Intervencija C će biti fakturirana kao 8 sati i 30 minuta.
+Ako je Intervencija C trajala 8 sati i 15 minuta, fakturirat će se i dalje 8 sati i 30 minuta jer je definirano zaokruživanje na pola sata.  
+
+Ako želimo fakturirati, na primjer, samo 4 ili 8 sati, možemo konfigurirati ovako:  
 
 
->> Minuti 480 > arrotondamento 1 minuti > tolleranza 0 in modo che oltre alle 8 ore non effettui arrotondamenti
+>> Minuti 0 > zaokruživanje 240 minuta > tolerancija 0
+
+
+>> Minuti 240 > zaokruživanje 240 minuta > tolerancija 0
+
+
+>> Minuti 480 > zaokruživanje 1 minuta > tolerancija 0

@@ -1,24 +1,24 @@
 ---
-title: Risorse Progetti
+title: Resursi projekata
 sidebar_position: 10
 ---
 
-Questa tabella è accessibile da **Tabelle > Gestione Progetti > Risorse Progetti** e contiene alcuni dati di default delle risorse. L’area di filtro permette di ricercare i dati in maniera più mirata.
+Ova tablica dostupna je putem **Tablice > Upravljanje projektima > Resursi projekat** i sadrži neke zadane podatke o resursima. Područje za filtriranje omogućuje ciljano pretraživanje podataka.
 
 ![](/img/it-it/configurations/tables/projects/resources.png)
 
-Una volta inseriti i filtri, con il tasto ![](/img/neutral/common/search.png) Ricerca compariranno i risultati in griglia. I dati sono:
+Nakon što se postave filteri, pritiskom na tipku ![](/img/neutral/common/search.png) Traži pojavit će se rezultati u tablici. Podaci su:
 
-**Codice/Descrizione**: contiene il codice e la descrizione della risorsa;
+**Šifra/Opis**: sadrži šifru i opis resursa;
 
-**Tipo risorsa**: contiene il [Tipo risorsa](/docs/configurations/tables/project-management/resource-type);
+**Vrsta resursa**: sadrži [Vrstu resursa](/docs/configurations/tables/project-management/resource-type);
 
-**Operatore**: contiene l’Operatore;
+**Operater**: sadrži operatera;
 
-**Cognome/Nome**: contiene cognome e nome della risorsa;
+**Prezime/Ime**: sadrži prezime i ime resursa;
 
-**Conto/Sottoconto**: contiene gli eventuali conto e sottoconto associati alla risorsa;
+**Konto/Potkonto**: sadrži eventualni konto i potkonto povezane s resursom;
 
-**Turno principale**: contiene il [turno di lavoro] solito della risorsa, con la relativa **Descrizione**;
+**Glavna smjena**: sadrži uobičajenu [radnu smjenu] resursa, s pripadajućim **Opisom**;
 
-Sono presenti ulteriori dati liberamente modificabili, come **Centri di costo**, **Ore mensili disponibili**, **Società di riferimento**, ecc.
+Dostupni su i drugi podaci koji se mogu slobodno mijenjati, kao što su **Centri troškova**, **Mjesečni dostupni sati**, **Referentno društvo**, itd.

@@ -1,31 +1,32 @@
 ---
-title: Calendario capacità produttiva
+title: Kalendar kapaciteta proizvodnje
 sidebar_position: 3
 ---
 
-La finestra si presenta come una tabella all'interno della quale vengono visualizzate tante caselle quanti sono i giorni del mese selezionato in alto a destra.  
-Nel primo campo si troverà il **Mese** e l'**Anno** di riferimento, che potranno essere selezionati tramite la combo e il campo editabile a lato o cliccando sui pulsanti **Anno precedente/Successivo** e **Mese precedente/successivo**.
+Prozor se prikazuje kao tablica u kojoj se nalaze onoliko polja koliko ima dana u mjesecu odabranom u gornjem desnom kutu.
+U prvom se polju nalaze **Mjesec** i **Godina** na koje se kalendar odnosi, a mogu se odabrati putem padajućeg izbornika i polja za unos pored njega ili pomoću tipki **Prethodna/Sljedeća godina** i **Prethodni/Sljedeći mjesec**.
 
-Di seguito ci sono una serie di combo, all'interno delle quali si andrà a selezionare il **Centro di lavoro** per il quale si vuole creare il calendario, la **Macchina**, il **Gruppo manodopera**.
+U nastavku se nalaze niz padajućih izbornika pomoću kojih se odabire Radni centar za koji se želi kreirati kalendar, **Stroj** te **Grupa radne snage**.
 
-In ogni casella è presente un flag, che, se attivato, indica che il giorno in questione è *Festivo*.  
-Il fatto che un determinato giorno sia designato come *Festivo* consente all'utente di fare in modo che quando esegua la generazione del *Calendario delle capacità produttive* l'applicazione generi in automatico una disponibilità della *Risorse produttiva* solo per i giorni che nel [Calendario di Fabbrica](/docs/configurations/tables/production/factory-calendar) sono identificati come non festivi.
+U svakoj ćeliji nalazi se flag koji, ako je aktiviran, označava da je taj dan *Praznik*.  
+Ako je određeni dan označen kao *Praznik* korisnik može osigurati da prilikom generiranja *Kalendara kapaciteta proizvodnje* aplikacija automatski generira dostupnost *proizvodnih resursa* samo za dane koji u [Kalendaru tvornice](/docs/configurations/tables/production/factory-calendar) nisu označeni kao praznični.  
 
-Oltre a questo flag, all'interno di ciascuna casella saranno visualizzabile e/o modificabile anche le *ore di capacità produttiva* di quel centro di lavoro (quindi per quante ore al giorno può lavorare).
+Osim flaga, unutar svake ćelije moguće je vidjeti i/ili izmijeniti i broj *sati proizvodnog kapaciteta* tog radnog centra (dakle, koliko sati dnevno može raditi).  
 
-E' possibile stabilire che il centro di lavoro lavori tutti i giorni tranne i giorni festivi, e nel caso di **Eccezioni**, basterà posizionarsi nella giornata che si desidera modificare e aggiungere/togliere il flag e aumentare/diminuire le ore di lavoro.
+Moguće je postaviti da radni centar radi svaki dan osim praznika, a u slučaju **Iznimki** dovoljno je pozicionirati se na određeni dan, dodati ili ukloniti flag te povećati ili smanjiti broj radnih sati.
 
-Il calendario delle capacità produttive prevale sul calendario di fabbrica.
+Kalendar kapaciteta proizvodnje ima prednost nad kalendarom tvornice.
 
-Una volta impostati i vari campi, basterà cliccare il pulsante **Salva**.
+Nakon što se svi potrebni podaci postave, dovoljno je kliknuti tipku **Spremi**.
 
-Premendo il pulsante di **Generazione automatiche**, invece, viene aperta una nuova form all’interno della quale è possibile indicare l’anno per il quale sarà generato il calendario e il numero di ore di capacità giornaliera che verrà considerato solo per quei centri di lavoro che non hanno indicato i rispettivi orari di inizio e fine.
+Klikom na tipku **Automatsko generiranje** otvara se novi obrazac u kojem se može navesti godina za koju će se kalendar generirati te broj sati dnevnog kapaciteta koji će se uzeti u obzir samo za one radne centre koji nemaju definirano vlastito radno vrijeme (početak i kraj).
 
-Con questa procedura si possono generare i calendari per tutti i centri di lavoro contemporaneamente, oppure rimuovendo il flag **Generazione calendario per tutti i centri di lavoro** e premendo il pulsante **Ricerca**, sarà possibile selezionare manualmente i centri di lavoro per i quali creare il calendario.
+Ovim postupkom moguće je generirati kalendare za sve radne centre istovremeno ili, uklanjanjem flaga **Generiranje kalendara** za sve radne centre i pritiskom na tipku **Traži**, ručno odabrati radne centre za koje se želi kreirati kalendar.
 
-In fase di creazione, è anche possibile decidere di considerare o meno la percentuale di utilizzo indicata all’interno del centro di lavoro.
+Tijekom kreiranja moguće je odlučiti hoće li se uzeti u obzir postotak iskorištenosti definiran unutar radnog centra.
 
-*Pulsante specifico*:  
-> **Generazione automatiche**: permette di entrare nella finestra in cui settare i vari parametri per la generazione di un calendario comune per più centri di lavoro e con parametri fissi per tutti i mesi dell'anno. Sempre grazie a questo pulsante, una volta inseriti i parametri per il calendario comune, si potrà procedere alla sua effettiva creazione.
+*Specifična tipka*:  
+> **Automatsko generiranje:**: omogućuje otvaranje prozora u kojem se postavljaju parametri za generiranje zajedničkog kalendara za više radnih centara s istim parametrima za sve mjesece u godini.
+Nakon što se unesu parametri zajedničkog kalendara, pomoću ove tipke može se pokrenuti njegovo stvarno kreiranje.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
