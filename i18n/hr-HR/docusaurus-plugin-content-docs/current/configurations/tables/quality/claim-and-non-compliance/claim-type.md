@@ -1,11 +1,11 @@
 ---
-title: Tipi di reclamo
+title: Vrste reklamacija
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Tipi di reclamo**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i Nesukladnosti > Vrste reklamacija**.
 
-In questa tabella è possibile codificare i *Tipi di reclamo*.   
+U ovoj tablici moguće je definirati *Vrste reklamacija*.   
 Il *Tipo di reclamo* è parte integrante, assieme all'*Anno* e *Numero*, del codice univoco del *Reclamo*.
 Alcuni esempi di utilizzo di *Tipi di reclamo* li troviamo nelle gestioni:
 > **Reclami** - nei *dati di testata*;   
