@@ -6,13 +6,14 @@ sidebar_position: 1
 The management can be found in the path **Quality > Item Controls > Control Plans > Procedures > Data Management**.
 
 :::important What is it for
-This management allows for the mass handling of many of the information in the *Data Sheets* without the need to manually enter each *Control Plan*.   
+This procedure allows for the bulk management of certain information present in the *Control Plans*, without the obligation to enter each document, make the desired changes, and save them.
 :::
 
 The form is divided into:
-- a filter area, contextual to the sessions of the information you wish to change;   
+- a filter area related to the search for header information of *Control Plans*;  
+- a filter area related to the sessions of the information you wish to modify;
 - an area composed of different tabs, each containing grids dedicated to modification and filter results;   
-- the last tab contains the *Error Found* encountered during *Modification* activities.   
+- the last tab contains the *Error History* encountered during modification activities.
 
 The tabs are:   
 > **Control Plans**;   

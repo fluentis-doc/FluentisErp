@@ -7,14 +7,15 @@ The management can be found at the path **Quality > Item Controls > Data Sheets 
 
 
 :::important What it is for
-This management allows for the handling of many of the *Data Sheets* information without having to manually enter each *Data Sheet*.   
+This procedure allows for the bulk management of certain information present in the *Technical Sheets*, without the obligation to enter each document, make the desired changes, and save them.
 :::
 
 
 The form is divided into:
-- a filter area, contextual to the sessions of the information you wish to change;   
+- a filter area related to the search for header information of *Technical Sheets*;  
+- a filter area related to the sessions of the information that you wish to modify;
 - an area comprised of various tabs, each containing grids dedicated to modification and the results of the filter;   
-- the last tab contains the *Errors Found* encountered during the *Modify* activities.   
+- the last tab contains the *Errors Found* encountered during modification activities.   
 
 The tabs are:   
 > **Data Sheets**;   
