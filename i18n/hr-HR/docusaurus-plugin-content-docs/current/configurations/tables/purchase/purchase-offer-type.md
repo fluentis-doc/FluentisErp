@@ -1,20 +1,20 @@
 ---
-title: Tipo richiesta di offerta
+title: Vrsta upita za ponudu
 sidebar_position: 2
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di richieste di offerta disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi richiesta di offerta*.     
+Ova tablica je ključna za definiranje različitih vrsta upita za ponudu, svaki sa svojim karakteristikama. Dostupna je putem *Konfiguracija > Tablice > Nabava > Vrste upita za ponudu*.     
 
-I campi presenti sono:
+Polja koja su prisutna su: 
 
-**Codice/Descrizione**: campi obbligatori per identificare il tipo di richiesta.
+**Šifra/Opis**: obavezna polja za identifikaciju vrste upita.
 
-**Numerazione**: contiene la [Numerazione](/docs/configurations/tables/fluentis-numerations) associata;      
+**Numeracija**: sadrži [numeraciju](/docs/configurations/tables/fluentis-numerations) koja je pridružena vrsti;        
 
-**Tipo ordine fornitore**: contiene il [Tipo ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type) e la relativa **descrizione**da creare partendo dalla RDO, nella procedura di [Creazione ordine fornitore da offerta fornitore](/docs/purchase/offer-request/procedures/order-creation).         
+**Tip narudžbe dobavljača**: sadrži [Tip narudžbe dobavljača](/docs/configurations/tables/purchase/purchase-orders-type) i pripadajući **opis** koji se kreira na temelju upita za ponudu (RDO) u postupku [Kreiranja narudžbe dobavljača iz ponude dobavljača](/docs/purchase/offer-request/procedures/order-creation).         
 
-**Prezzo ivato**: questo flag indica che nelle righe del documento sarà presente il Prezzo già ivato.    
+**Cijena s PDV-om**: ovaj flag označava da će u stavkama dokumenta cijena biti već uključujući PDV.
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**Ispis**: u ovom polju može se odabrati zadani obrazac za ispis (napomena: za ispis zadane forme, pri ispisu treba odabrati opciju  *Višestruki ispisi*); u sljedećem polju može se unijeti **Broj kopija** za ispis.    
 
-**Gestione cespiti**: questo flag indica che la tipologia di RDO deve gestire i cespiti; nel campo successivo è necessario indicare il **Tipo operazione**, che nel caso degli acquisti sarà sempre un *Costo originario*.     
+**Upravljanje dugotrajnom imovinom**: ovaj flag označava da vrsta upita za ponudu mora upravljati dugotrajnom imovinom; u sljedećem polju potrebno je definirati **Tip operacije**, koji je u nabavi uvijek *Izvorni trošak*.     

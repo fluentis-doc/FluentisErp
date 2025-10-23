@@ -1,37 +1,37 @@
 ---
-title: Impostazione XML
+title: Postavke XML-a
 sidebar_position: 10
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Fatturato acquisti** ed è utilizzata per determinare le proprietà di una richiesta.   
-Questa tabella è necessaria per impostare i dati per importare un listino fornitore scaricandolo da un sito internet in formato XML.
+Tablica se otvara putem **Tablice > Nabava > Promet nabave** i koristi se za definiranje svojstava zahtjeva.
+Ova je tablica potrebna za postavljanje podataka potrebnih za uvoz cjenika dobavljača preuzetog s internetske stranice u XML formatu.
 
-I campi presenti sono:
+Polja koja su prisutna su:
 
-**Conto-Sottoconto/Descrizione sottoconto**: conto e sottoconto del cliente per cui importare il listino.
+**Konto–Podkonto/Opis podkonta**: konto i podkonto kupca za kojeg se uvozi cjenik.
 
-**Indirizzo**: indirizzo da cui scaricare il file xml
+**Adresa**: adresa s koje se preuzima XML datoteka.
 
-**Utente**: utente per collegarsi all'indirizzo.
+**Korisnik**: korisničko ime za povezivanje na navedenu adresu.
 
-**Password**: password per collegarsi all'indirizzo.
+**Lozinka**: lozinka za povezivanje na navedenu adresu.
 
-**Webservice**: path dove trovare i dati da importare e il file.
+**Webservice**: putanja na kojoj se nalaze podaci i datoteka za uvoz.
 
-**Informazione iniziale**: informazione iniziale da dove partire per la creazione del file xml: offset=”1”.
+**Početna informacija**: početni podatak od kojeg započinje kreiranje XML datoteke, npr. offset=”1”.
 
-**Tag iniziale**: definisce il tag iniziale per riconoscere l'inizio dei file xml: listino.
+**Početni tag**: definira početni XML tag koji označava početak datoteke, npr. listino.
 
-**Riga iniziale**: definisce la riga da cui iniziare con l'importazione: articoli.
+**Početni redak**: definira redak od kojeg počinje uvoz, npr. artikli.
 
-**Pagina iniziale**: definisce la pagina iniziale: page.
+**Početna stranica**: definira početnu stranicu, npr. page.
 
-**Dimensione pagina**: definisce la dimensione delle pagine: offset=”500”.
+**Veličina stranice**: definira broj zapisa po stranici, npr. offset=”500”.
 
-**Classe**: classe da utilizzare per importare gli articoli.
+**Klasa**: klasa koja se koristi za uvoz artikala.
 
-**UM**: UM da utilizzare per importare gli articoli.
+**JM**: jedinica mjere koja se koristi za uvoz artikala.
 
-**Marca**: marca da utilizzare per importare gli articoli. 
+**Marka**: marka koja se koristi za uvoz artikala.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

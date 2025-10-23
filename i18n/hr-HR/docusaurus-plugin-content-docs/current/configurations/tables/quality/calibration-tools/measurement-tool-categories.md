@@ -1,12 +1,12 @@
 ---
-title: Categorie strumenti di misura
+title: Kategorije mjernih instrumenata
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Categorie strumenti di misura**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kalibracija instrumenata > Kategorije mjernih instrumenata**.
 
-In questa tabella è possibile codificare le *Categorie strumenti di misura*.   
-La *Categoria strumento di misura* è parte integrante, assieme al *Codice* e *Matricola*, del codice univoco dello *Strumento di misura*.
+U ovoj tablici moguće je definirat *Kategorije mjernih instrumenata*.   
+*Kategorija mjernog instrumenta* è parte integrante, assieme al *Codice* e *Matricola*, del codice univoco dello *Strumento di misura*.
 Alcuni esempi di utilizzo delle *Categorie strumenti di misura* li troviamo nelle gestioni:
 > **Strumenti di misura** - nei *dati di testata*;   
 e in tutte le gestioni dove viene ultilizzato lo *Strumento di misura*.

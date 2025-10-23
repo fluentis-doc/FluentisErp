@@ -1,24 +1,24 @@
 ---
-title: Tipi richiesta di acquisto
+title: Vrste zahtjeva za nabavu
 sidebar_position: 1
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di RDA disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi richiesta di acquisto*.
+Ova tablica je ključna za definiranje različitih vrsta RZN-a (zahtjeva za nabavu), svaka sa svojim specifičnostima. Dostupna je putem *Konfiguracija > Tablice > Nabava > Vrste zahtjeva za nabavu*.
 
-I campi presenti sono:    
+Polja koja su prisutna su:  
 
-**Codice/Descrizione**: campi obbligatori per identificare il tipo di richiesta.
+**Šifra/Opis**: obavezna polja za identifikaciju vrste zahtjeva.
 
-**Numerazione**: selezionare la [Numerazione](/docs/configurations/tables/fluentis-numerations) da associare al tipo richiesta.
+**Numeracija**: potrebno je odabrati [Numeraciju](/docs/configurations/tables/fluentis-numerations) koja će biti povezana s vrstom zahtjeva.  
 
-**Centro di costo**: centro di costo da proporre nella creazione della richiesta di acquisto. Può essere lasciato vuoto qualora non si usi il modulo di controllo di gestione.
+**Centar troška**: centar troška koji će se predložiti pri kreiranju zahtjeva za nabavu. Može ostati prazan ako se ne koristi modul kontrolinga.
 
-**Magazzino/Descrizione magazzino**: magazzino di default da utilizzare nella creazione della richiesta di acquisto.
+**Skladište/Opis skladišta**: zadano skladište koje će se koristiti prilikom kreiranja zahtjeva za nabavu.
 
-**Controlla disponibilità**: se settato, le richieste di acquisto create con questo tipo vengono utilizzate per il calcolo della disponibilità e sono visibili nella form di [Analisi disponibilità](/docs/erp-home/registers/items/availability-analysis).         
+**Provjera dostupnosti**: ako je uključeno, zahtjevi za nabavu kreirani s ovom vrstom koriste se u izračunu dostupnosti i vidljivi su u formi [Analiza dostupnosti](/docs/erp-home/registers/items/availability-analysis).         
 
-**Stampa**: in questo campo è possibile scegliere la stampa da utilizzare di default (si ricorda che, per stampare il report di default, in fase di stampa sarà necessario selezionare l'opzione *Stampe multiple*); nel campo successivo è possibile indicare un **Numero di copie** da stampare.    
+**Ispis**: u ovom polju moguće je odabrati zadani obrazac za ispis (napomena: za ispis zadane forme potrebno je u fazi ispisa odabrati opciju *Višestruki ispisi*); nu sljedećem polju može se unijeti **Broj kopija** za ispis.   
 
-**Cash flow**: se questo flag è attivo, questo tipo di RDA concorrà al calcolo del Cash Flow.      
+**Cash flow**: ako je ovaj flag aktivan, ova vrsta RZN-a uključuje se u izračun novčanog toka.   
 
-**Tipo richiesta di offerta**: in questo campo è necessario indicare quale [Tipo RDO](/docs/configurations/tables/purchase/purchase-offer-type) creare da questa tipologia di RDA.
+**Vrsta upita za ponudu**: u ovom polju potrebno je odabrati koju će [vrstu upita za ponudu (RDO)](/docs/configurations/tables/purchase/purchase-offer-type) sustav kreirati iz ove vrste zahtjeva za nabavu.  

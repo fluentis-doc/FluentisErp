@@ -1,32 +1,32 @@
 ---
-title: Fatturato acquisti
+title: Promet nabave
 sidebar_position: 9
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Fatturato acquisti** e contiene dati necessari per la contabilizzazione dei documenti.
+Tablica se otvara putem **Tablice > Nabava > Promet nabave** i sadrži podatke potrebne za knjiženje dokumenata.
 
-*Campi specifici*:
+*Specifična polja*:
 
-**Tipo**: codice di identificazione del fatturato;
+**Tip**: šifra identifikacije prometa;
 
-**Descrizione**: descrizione del fatturato;
+**Opis**: opis prometa;
 
-**Conto/Sottoconto/Descrizione sottoconto**: conto di costo utilizzato in contabilizzazione dei documenti;
+**Konto/Podkonto/Opis podkonta**: konto troška koji se koristi pri knjiženju dokumenata;
 
-**Tipo IVA**: utilizzato nella registrazione della contabilizzazione del documento. Solitamente è impostato a generico, per altri dettagli verificarne l'utilizzo nelle causali contabili e nelle registrazioni contabili in area amministrativa;
+**Tip PDV-a**: koristi se pri knjiženju dokumenta. Najčešće je postavljen na „generički“, a za dodatne detalje potrebno je provjeriti njegovo korištenje u računovodstvenim predlošcima i knjiženjima unutar administrativnog područja;
 
-**Conto/Sottoconto analitico/Descrizione**: conto utilizzato per contabilizzare il documento in contabilità analitica.
+**Analitički konto/Podkonto/Opis**: konto koji se koristi za knjiženje dokumenta u analitičkom računovodstvu.
 
-**Tipo/Descrizione**: utilizzato nella registrazione della contabilizzazione del documento. Per altri dettagli verificarne l'[utilizzo](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) contabile nelle registrazioni contabili in area amministrativa.
+**Tip/Opis**: koristi se pri knjiženju dokumenta. Za dodatne informacije o načinu [korištenja](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) u računovodstvenim knjiženjima pogledajte odgovarajuće postavke u administrativnom području.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
 
-:::note Note
-Se il *Tipo fatturato* viene inserito nell'*Anagrafica articoli* questo codice viene proposto nelle righe articolo del documento di acquisti e automatizza la contabilizzazione dei documenti su un determinato conto di contropartita.
+:::note Napomena
+Ako se *Tip prometa* unese u *Evidenciju artikala* taj će se kod automatski predložiti u stavkama artikala u dokumentu nabave i time automatizirati knjiženje dokumenata na određeni konto kontne protustavke.
 :::
 
-*Esempio di una fattura di acquisti*:
+*Primjer računa za nabavu*:
 
-Se quindi, il *Tipo fatturato* fosse presente già nell'*Anagrafica articolo*, nei documenti di acquisti lo troveremo riportato nel tab *Articoli*, nel campo *Fatturato acquisti*; nel caso in cui non sia presente in anagrafica articolo, è possibile andarlo a selezionare direttamente all'interno del documento di acquisti tramite l'apposita combo box.
+Ako je *Tip prometa*već unesen u *Evidenciju artikala*, u dokumentima nabave pojavit će se u kartici *Artikli*, u polju *Promet nabave*; ako nije unesen u evidenciju artikla, moguće ga je ručno odabrati unutar dokumenta nabave putem pripadne padajuće liste.
 
-Nel caso in cui non venga inserito nell'anagrafica articolo e non ci si ricordi di andarlo ad inserire manualmente nel documento di acquisti, il sistema per non bloccare la contabilizzazione dei documenti, permette (se questa scelta risulta opportuna) di riprendere il sottoconto di contropartita di default che si è deciso di impostare nell'*Anagrafica contatto > tab Dati Contabili > tab Amministrazione* nel campo **Costo/Ricavo di contropartita predefinito**.
+U slučaju da nije unesen ni u evidenciju artikla, a korisnik ga zaboravi ručno dodati u dokument nabave, sustav – kako ne bi blokirao knjiženje – omogućuje (ako je takva opcija postavljena) korištenje zadanog konta protustavke definiranog u *Evidenciji kontakta > kartica Računovodstveni podaci > kartica Administracija* u polju **Zadani konto troška/prihoda protustavke**.

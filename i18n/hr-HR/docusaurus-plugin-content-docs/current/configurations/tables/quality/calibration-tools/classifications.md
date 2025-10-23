@@ -1,28 +1,28 @@
 ---
-title: Classificazioni strumento di misura
+title: Klasifikacije mjernog instrumenta
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Classificazioni strumento**.
+Tablica se nalazi na putanji **ablice > Kvaliteta > Kalibracija instrumenata > Klasifikacije instrumenata**.
 
-In questa tabella è possibile codificare le *Classificazioni strumento di misura* che sono utilizzate per categorizzare gli *Strumenti di misura*.   
-Un esempio di utilizzo lo troviamo nella gestione **Strumenti di misura**.
+U ovoj tablici moguće je definirati (šifrirati) *Klasifikacije mjernih instrumenata* koje se koriste za kategorizaciju *Mjernih instrumenata*.   
+Primjer upotrebe nalazi se u modulu **Mjerni instrumenti**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Classificazioni strumento di misura**
+**Pretraga klasifikacija mjernih instrumenata**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u tablici s rezultatima.
 
-**Inserimento Classificazioni strumento di misura**
+**Unos klasifikacija mjernih instrumenata**
 
-Per poter inserire nuove *Classificazioni strumento di misura* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos nove *Klasifikacije mjernog instrumenta* potrebno je kliknuti u tablici na prvi prazan redak ili pritisnuti tipku **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifru** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
     
-> **Codice**: è il codice della *Classificazione strumento di misura*.   
-> **Descrizione**: è la descrizione della *Classificazione strumento di misura*.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Klasifikacije mjernog instrumenta*.   
+> **Opis**: opis *Klasifikacije mjernog instrumenta*.   
+> **Bilješke**: slobodne napomene.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeći link:[Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

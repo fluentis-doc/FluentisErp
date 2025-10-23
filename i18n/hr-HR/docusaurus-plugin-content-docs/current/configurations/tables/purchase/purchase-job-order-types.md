@@ -1,17 +1,17 @@
 ---
-title: Tipi commesse di acquisto
+title: Tipovi nabavnih poslova
 sidebar_position: 8
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi commessa di acquisto** e viene utilizzata per determinare le proprietà di una commessa.
+Tablica se otvara putem **Tablice > Nabava > Tipovi nabavnih poslova** i koristi se za definiranje svojstava nabavnog posla.
 
-I campi presenti sono:
+Polja koja su prisutna su:
 
-**Tipo/Descrizione tipo commessa di acquisto**: sono campi obbligatori per definire il tipo della commessa.
+**Tip/Opis tipa nabavnog posla**: obavezna polja za definiranje tipa posla.
 
-**Struttura gerarchica**: se settato, la visualizzazione degli articoli in commessa è di tipo gerarchico.
+**Hijerarhijska struktura**: ako je uključeno, prikaz artikala unutar posla bit će hijerarhijski organiziran.  
 
-**Numerazione**: per selezionare la [numerazione](/docs/configurations/tables/fluentis-numerations) appropriata. 
+**Numeracija**: za odabir odgovarajuće [numeracije](/docs/configurations/tables/fluentis-numerations). 
 
-**Stampa** permette di indicare il modello di stampa che verrà utilizzato in fase di stampa della commessa, mediante il campo **Numero copie**, il numero di copie del documento che sarà proposto di default per la stampa.
+**Ispis** omogućava odabir obrasca ispisa koji će se koristiti pri ispisu posla, a polje **Broj kopija**, određuje koliko će se primjeraka predložiti za ispis.
 

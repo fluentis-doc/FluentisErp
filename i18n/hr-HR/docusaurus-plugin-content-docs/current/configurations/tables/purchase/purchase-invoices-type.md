@@ -1,50 +1,50 @@
 ---
-title: Tipi fatture di acquisto
+title: Tipovi ulaznih računa
 sidebar_position: 6
 ---
 
-Questa tabella è fondamentale per definire le varie tipologie di fatture di acquisto disponibili, ognuna con le proprie caratteristiche. E' raggiungibile da *Configurazione > Tabelle > Acquisti > Tipi fatture di acquisto*.    
+Ova tablica je ključna za definiranje različitih tipova računa za nabavu, svaki sa svojim specifičnostima. Dostupna je putem *Konfiguracija > Tablice > Nabava > Tipovi računa za nabavu*.    
 
-I campi presenti sono:
+Polja koja su prisutna su:  
 
-**Codice/Descrizione**: sono campi obbligatori necessari per definire il tipo fattura.
+**Šifra/Opis**: obavezna polja potrebna za definiranje tipa računa.
 
-**Numerazione/Descrizione**: determina la [Numerazione](/docs/configurations/tables/fluentis-numerations) che è associata al tipo fattura.
+**Numerazione/Descrizione**: određuje [Numeraciju](/docs/configurations/tables/fluentis-numerations) koja je povezana s tipom računa.  
 
-**Natura fattura**: questo valore deve essere selezionato da un elenco e indica la natura della fattura: fattura, ricevuta fiscale, ricevuta fiscale riepilogativa, nota accredito da fornitore, nota addebito da fornitore.
+**Priroda računa**: ovaj podatak se bira s liste i označava prirodu računa: račun, fiskalni račun, zbirni fiskalni račun, dobavljačka kreditna nota, dobavljačka zadužnica.  
 
-**Causale/Descrizione causale**: [causale contabile](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates) utilizzata per contabilizzare la fattura. Verrà utilizzata questa causale qualora non ci fosse un fatturato acquisti oppure un conto di contropartita di default inserito in anagrafica fornitore.
+**Predložak/Opis predloška**: [knjigovodstveni predložak](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates) koji se koristi za knjiženje računa. Ovaj predložak će se koristiti ako ne postoji fakturirani promet ili zadani kontni par u evidenciji dobavljača.  
 
-**Tran. codice**: serve per indicare il codice di raggruppamento dei documenti per la dichiarazione Intrastat e deve essere compilato nei casi di fatture o documenti di variazione CEE.
+**Tran. šifra**: služi za označavanje šifre grupiranja dokumenata za Intrastat prijavu i treba biti popunjeno u slučajevima računa ili ispravaka iz EU.  
 
-**Magazzino/Descrizione** e **Causale magazzino/Descrizione**: sono proposti nell'inserimento delle righe della fattura accompagnatoria, dove possono essere poi variati e determinano il magazzino e la causale con cui verrà caricata la merce al momento del ricevimento.
+**Skladište/Opis** i **Predložak skladišta/Opis**: predlažu se prilikom unošenja redaka pratećeg računa, gdje se mogu izmijeniti i određuju skladište i predložak kojim će roba biti zavedena prilikom primitka.  
 
-**Da ordine**: se attivo, la fattura con questo tipo può evadere ordini fornitori.
+**Iz narudžbe**: ako je aktivirano, račun s ovim tipom može ispuniti narudžbe dobavljača.  
 
-**Fattura immediata**: se attivo, la fattura con questo tipo è di tipo immediato e dovranno essere compilati, nella fattura, anche i dati per il trasporto.
+**Neposredni račun**: ako je aktivirano, račun s ovim tipom je neposredan i u računu je potrebno unijeti i podatke o prijevozu.  
 
-**Intracomunitaria**: se attivo, il sistema verifica che la nazione del cliente sia una nazione CEE. Questo flag andrà impostato solo su tipi fattura Intracomunitari. Qualora non ci fosse il link tra cliente e tipo fattura intracomunitaria, il sistema ritornerà un messaggio di avviso.
+**Intrakomunitarni**: ako je aktivirano, sustav provjerava je li država kupca zemlja EU. Ovaj flag se postavlja samo za intrakomunitarne tipove računa. Ako nema veze između kupca i intrakomunitarnog tipa računa, sustav će dati upozorenje.  
 
-**In statistica**: se attivo, la fattura con questo tipo viene riportata nelle statistiche quindi sarà visibile nelle stampe *Fatturato*.
+**U statistici**: ako je aktivirano, račun s ovim tipom će se prikazivati u statistikama, dakle bit će vidljiv u izvještajima *Promet*.
 
-**Controllo fornitore**: serve ad attivare un controllo per il quale, in fase di selezione del soggetto intestatario della fattura, la procedura ci permetterà di selezionare solo conti di tipo fornitore e non di tipo cliente.
+**Kontrola dobavljača**: služi za aktivaciju kontrole prilikom odabira subjekta računa, gdje se može odabrati samo račun tipa dobavljač, a ne kupac.  
 
-**Raggruppamenti partite**: se settato, in fase di contabilizzazione della fattura le partite verranno raggruppate e si utilizzerà quindi la modalità raggruppamento partite.
+**Grupiranje stavki**: ako je uključeno, pri knjiženju računa stavke će se grupirati koristeći način grupiranja stavki.  
 
-**Evasione quantità articolo non sommata**: se settato, nel momento in cui si andranno ad evadere righe ordine/DDT con quantità parziali all'interno della stessa fattura, questo flag consentirà di riportare le quantità evase suddivise per riga articolo senza sommare le quantità.
+**Izdavanje količine po stavci bez zbrajanja**: ako je uključeno, kod djelomične realizacije stavki narudžbe/otpremnice u istom računu, ovaj flag omogućava prikaz količina po svakoj stavci bez njihovog zbrajanja.  
 
-**Agricola acquisti IVA**: se attivo, in fase di creazione fattura, il sistema controlla se per l'articolo utilizzato è presente un codice dell'IVA agricola. Se non esiste viene preso il codice IVA presente nell'articolo.
+**Poljoprivredna nabava PDV**: ako je aktivirano, pri kreiranju računa sustav provjerava postoji li za artikl kod poljoprivrednog PDV-a. Ako ne postoji, koristi se PDV kod iz samog artikla.  
 
-**Causale competenza economica**: è legata alla gestione delle fatture da ricevere e quindi alla possibilità di rilevare automaticamente i risconti per eventuali righe di costo che avessero un range di date competenza al di fuori dell'esercizio contabile.
+**Predložak ekonomske pripadnosti**: vezan je za upravljanje primljenim računima i mogućnost automatskog evidentiranja prijelaza za eventualne stavke troška s datumima pripadnosti izvan obračunskog razdoblja.
 
-**Gestione matrici extra data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice. Se non attivo, non viene visualizzato questo Tab e la conseguente matrice.
+**Upravljanje dodatnim matricama**: ako je aktivirano, omogućava prikaz dodatnog taba kod artikala s matricama za unos količina po pojedinoj ćeliji matrice. Ako nije aktivirano, taj tab i matrica nisu vidljivi.  
 
-**Fatture da ricevere** e **Storno fatture da ricevere**: sono visualizzate solo per retro compatibilità con le versioni precedenti e sono ormai obsolete e non più utilizzate.
+**Računi za primitak** i **Storniranje računa za primitak**: prikazuju se samo zbog unazadne kompatibilnosti sa starijim verzijama i više se ne koriste.  
 
-**Stampa**: permette di indicare il modello di stampa che verrà utilizzato in fase di stampa della fattura e, mediante il campo **Numero copie**, il numero di copie del documento che sarà proposto di default per la stampa. La stampa delle fatture d'acquisto in realtà non è di esteso utilizzo in quanto la fattura viene ricevuta dal fornitore e quindi non necessita di essere ulteriormente stampata da Fluentis.
+**Ispis**: omogućava odabir obrasca ispisa koji će se koristiti pri ispisu računa, a polje **Broj kopija** određuje koliko će se primjeraka predložiti za ispis. Ispis računa za nabavu se u praksi rijetko koristi jer račun dolazi od dobavljača i ne treba dodatni ispis iz Fluentisa.
 
-**Gestione Conai**: questo flag permette di attivare la gestione Conai per ciascun di tipo fattura. Per maggiori dettagli sulla gestione delle spese relative al [Conai](/docs/sales/sales-flow/conai) si rimanda all'apposita pagina della documentazione.
+**Upravljanje Conai**: ovaj flag omogućava aktivaciju upravljanja Conai naknadama za svaki tip računa. Za više detalja o Conai upravljanju troškovima pogledajte posebnu stranicu dokumentacije o [Conai](/docs/sales/sales-flow/conai).
 
-**Controllo qualità**: se attivo, questo flag rende visibili i tipi fattura nella form [Importa articoli da controllare](/docs/quality/item-control/items-control/item-control-import/) posta nell'area *Qualità*.
+**Kontrola kvalitete**: ako je aktivirano, ovaj flag prikazuje tipove računa u formi [Uvoza artikala za kontrolu](/docs/quality/item-control/items-control/item-control-import/) unutar područja *Kvaliteta*.
 
-**Gestione cespiti**: questo flag permette di abilitare la [Gestione cespiti](/docs/finance-area/fixed-assets/general-overview) per quel tipo ordine e di selezionare il **Tipo operazione**, che nel caso degli acquisti sarà sempre un *Costo originario*.    
+**Upravljanje dugotrajnom imovinom**: ovaj flag omogućava aktivaciju [Upravljanja dugotrajnom imovinom](/docs/finance-area/fixed-assets/general-overview) za taj tip narudžbe, uz izbor **Tipa operacije**, ckoji je kod nabave uvijek *Izvorni trošak*.    

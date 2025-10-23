@@ -1,45 +1,45 @@
 ---
-title: Tipi taratura
+title: Tipovi kalibracije
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Tipi taratura**.
+Tablica se nalazi na putanji **Tabelle > Qualità > Kalibracija uređaja > Tipovi kalibracije**.
 
-In questa tabella è possibile codificare i *Tipi taratura*.   
-Alcuni esempi di utilizzo di *Tipi taratura* li troviamo nelle gestioni:
-> **Taratura strumenti** - nei *dati di testata*;   
-> **Parametri Taratura strumenti** - nei *dati di testata*.
+U ovoj tablici moguće je definirati (šifrirati) različite *Tipove kalibracije*.   
+Neki primjeri korištenja *Tipova kalibracije* nalaze se u modulima:
+> **Kalibracija instrumenata** - u *zaglavlju podataka*;   
+> **Parametri Taratura strumenti** - u *zaglavlju podataka*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-**Ricerca Tipi taratura**
+**Pretraga tipova kalibracije**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u tablici s rezultatima.
 
-**Inserimento Tipi taratura**
+**Unos tipova kalibracije**
 
-Per poter inserire nuove *Tipi taratura* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novog *Tipa kalibracije* potrebno je kliknuti u tablici na prvi prazan redak ili pritisnuti tipku **Novi**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifru** i **Opis**.
 
-## Tipi taratura
+## Tipovi kalibracije
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi taratura*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo taratura**   
->> **Codice**: è il codice del *Tipo taratura*.   
->> **Descrizione**: è la descrizione del *Tipo taratura*.   
->> **Taratura interna**: indica se il *Tipo taratura* viene utilizzato per registrare *Tarature interne*.   
+Ovo je popis u kojem se unose osnovne informacije o *Tipovima kalibracije*.   
+Popis se sastoji od sljedećih informacija:    
+> **Tip kalibracije**   
+>> **Šifra**: šifra *Tipa kalibracije*.   
+>> **Opis**: opis *Tipa kalibracije*.   
+>> **Interna kalibracija**: označava koristi li se *Tip kalibracije* za evidentiranje *Internih kalibracija*.   
 >
-> **Numerazione**
->> **Codice**: è il codice della *Numerazione*.   
->> **Descrizione**: è la descrizione della *Numerazione*.   
->> **Tipo oggetto**: è la descrizione del tipo di oggetto sulla quale si basa la *Numerazione*.   
+> **Numeracija**
+>> **Šifra**: šifra *Numeracije*.   
+>> **Opis**: opis *Numeracije*.   
+>> **Tip objekta**: opis tipa objekta na kojem se temelji *Numeracija*.   
 >
-> **Note**: annotazioni libere.
+> **Bilješke**: slobodne napomene.
 
-### Extra data
+### Dodatni podaci
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo taratura*.   
-Questi *Extra data* possono venire ereditati nella *Taratura strumento* di quella determinata tipologia.   
+Moguće je unijeti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za određeni *Tip kalibracije*.   
+Ovi *Dodatni podaci* mogu se automatski naslijediti u *Kalibraciji instrumenta* te konkretne vrste. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

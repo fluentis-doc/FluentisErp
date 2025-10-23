@@ -1,16 +1,16 @@
 ---
-title: Tipi listino fornitori
+title: Vrste cjenika dobavljača
 sidebar_position: 7
 ---
 
-La tabella si apre tramite il percorso **Tabelle > Acquisti > Tipi listino fornitori** e viene utilizzata per indicare le diverse tipologie di listini fornitori.
+Tablica se otvara putem **Tablice > Nabava > Vrste cjenika dobavljača** i koristi se za definiranje različitih vrsta cjenika dobavljača.
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati u tablici s rezultatima.
 
-Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**. 
+Za unos novih šifri potrebno je kliknuti u tablici na prvi prazan redak ili pritisnuti tipku **Novo**. 
 
-**Codice/Descrizione**: campi obbligatori per definire il tipo di listino.
+**Šifra/Opis**: obavezna polja za definiranje vrste cjenika.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu vezano za uobičajeno funkcioniranje formi, pogledati sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
