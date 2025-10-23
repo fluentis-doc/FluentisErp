@@ -29,7 +29,7 @@ In the section, you can enter:
 - **Responsible function**: *Company function* to propose as responsible for creating a new *Claim*.   
 - **Management cost**: value to propose for the *Management cost* of a new *Claim*.   
 - **Total automatic recalculation**: indicates whether to automatically recalculate the totals of the *Claim* based on the defects entered; otherwise, the values must be entered manually.   
-- **U.D.C. data grouping**: indicates whether to automatically report, among the *Defective objects* of a *Claim*, all the items contained in a U.D.C. when entering a defective item that is contained in the specified U.D.C.   
+- **U.D.C. data grouping**: indicates whether to group identical *Items* by summing their *Quantities* during the insertion of a *Load Unit* in the *Defective Objects*.
 
 **Return Authorization Section**   
 >- **Return authorization**: indicates whether the *Return authorization* should be managed in the *Claim* management.   
@@ -47,7 +47,7 @@ In the expander, you can enter:
 - **Responsible function**: *Company function* to propose as responsible for creating a *Non-compliance*.   
 - **Management cost**: value to propose for the *Management cost* of a *Non-compliance*.   
 - **Total automatic recalculation**: indicates whether to automatically recalculate the totals of the *Non-compliance* based on the defects entered; otherwise, the values must be entered manually.   
-- **U.D.C. data grouping**: indicates whether to automatically report, among the *Defective objects* of a *Non-compliance*, all the items contained in a U.D.C. when entering a defective item that is contained in the specified U.D.C.   
+- **U.D.C. data grouping**: indicates whether to group identical *Items* by summing their *Quantities* during the insertion of a *Load Unit* in the *Defective Objects*.
 - **Propose alternative U.M.**: indicates whether to display, in the *Defective objects*, the information on the *Quantities* expressed in an alternative unit of measure compared to the main one.   
 
 For everything not detailed in this document regarding the common operation of the forms, please refer to the following link [Common functionalities, buttons, and fields](/docs/guide/common).
