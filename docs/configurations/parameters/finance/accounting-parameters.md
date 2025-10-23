@@ -158,7 +158,32 @@ In questa tab si impostano nel dettaglio i conti del piano dei conti che saranno
 **SottoConto autofattura**: consente di impostare il sottoconto per la creazione dell'autofattura dalle registrazioni contabili per la comunicazione dati sugli acquisti allo SDI. [**Cfr. Parametri specifici** ](/docs/finance-area/e-invoice/auto-invoice/parameters).
 **Contropartita interessi trimestrali liquidazione iva:**  consente di automatizzare la contabilizzazione degli interessi passivi derivanti da liquidazione iva trimestrale inserendo il conto di contropartita (costo) desiderato.
 
-## 3. Video tutorials Parametri
+## **3. Blocco Periodi di competenza**
+
+In questa tab è possibile gestire il blocco (e l'eventuale sblocco) dei periodi contabili (anche parzialmente) per prevenire le modifiche indesiderate dei dati. 
+
+:::tip[**Pulsante Chiusura Periodo di competenza**]
+Con il pulsante di *Chiusura periodo di competenza* si apre un popup con due campi di filtro per bloccare un certo range di date. Il filtro opera sulla data competenza posta **nella testata** della registrazione. 
+
+E' presenta  l’opzione per bloccare anche le competenze economiche di riga.
+:::
+
+Confermando la selezione apparirà il range bloccato nella griglia. 
+
+E' possibile procedere al *rollback* (pulsante **Ripristino Periodo chiuso**) per riaprire il periodo, oppure  creare un nuovo blocco (che potrà partire dal giorno dopo del blocco precedente).
+
+:::note[Info]
+Cosa succede quando viene bloccato un periodo: viene eseguito un *update* su tutte le registrazioni, memorizzando che è stata bloccata e da quale utente.
+Non sarà possibile intervenire sulle registrazioni (né modifica né cancellazione o rollback) né inserire nuove registrazioni con data competenza di testata nel range bloccato.
+
+Il flag di **blocco competenza economica**, opzionale, fa un qualcosa in più: blocca il salvataggio anche di eventuali registrazioni successive che abbiano, nelle righe del giornale, una data competenza **economica** che rientra in questo range chiuso. Questo per fare in modo che non possano apparire integrazioni o rettifiche di qualche tipo con una scrittura di assestamento.
+:::
+
+**Nell'immagine**: In verde la competenza **contabile** in testata registrazione sulla quale agisce il blocco in base lle date di filtro; in rosso la competenza **economica** che può essere bloccata opzionalmente.
+
+![](/img/it-it/configurations/parameters/finance/accounting-parameters/comp_cont_eco.png)
+
+## 4. Video tutorials Parametri
 
 :::important Vedi Anche
 [**VIDEO TUTORIALS SUI PARAMETRI**](/docs/video/finance/intro)
