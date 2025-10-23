@@ -1,32 +1,32 @@
 ---
-title: Unità di misura strumenti
+title: Jedinice mjere instrumenata
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Unità di misura strumenti**.
+Tablica se nalazi na putanji **Tabelle > Qualità > Taratura strumenti > Unità di misura strumenti**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le *Unità di misura* che sono utilizzate per determinare la periodicità di taratura degli *Strumenti di misura*.   
-Un esempio di utilizzo lo troviamo nella gestione **Strumenti di misura**.
+:::important Čemu služi
+U ovoj tablici moguće je definirati *Jedinice mjere* koje se koriste za određivanje periodičnosti kalibracije *Mjernih instrumenata*.    
+Primjer njihove upotrebe može se pronaći u modulu **Mjerni instrumenti**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.  
 
-**Ricerca Unità di misura strumenti**
+**Pretraživanje Jedinica mjere instrumenata**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
-**Inserimento Unità di misura strumenti**
+**Unos Jedinica mjere instrumenata**
 
-Per poter inserire nuove *Unità di misura strumenti* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Jedinica mjere instrumenata* potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
     
-> **Codice**: è il codice dell'*Unità di misura strumenti*.   
-> **Descrizione**: è la descrizione dell'*Unità di misura strumenti*.   
-> **Giorni**: indica se l'*Unità di misura strumenti* identifica i giorni; solo un'*Unità di misura* tra tutte quelle codificate, può identificare i giorni.   
-> **Mesi**: indica se l'*Unità di misura strumenti* identifica i mesi; solo un'*Unità di misura* tra tutte quelle codificate, può identificare i mesi.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Jedinice mjere instrumenata*.     
+> **Opis**: opis *Jedinice mjere instrumenata*.     
+> **Dani**: označava da *Jedinica mjere instrumenata* predstavlja dane; samo jedna *Jedinica mjere* od svih definiranih može predstavljati dane.    
+> **Mjeseci**: označava da *Jedinica mjere instrumenata* predstavlja mjesece; samo jedna *Jedinica mjere* od svih definiranih može predstavljati mjesece.  
+> **Napomene**: slobodne bilješke.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

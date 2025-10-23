@@ -6,34 +6,34 @@ sidebar_position: 1
 Tablica se nalazi na putanji **Tablice > Kvaliteta > Kalibracija instrumenata > Kategorije mjernih instrumenata**.
 
 U ovoj tablici moguće je definirat *Kategorije mjernih instrumenata*.   
-*Kategorija mjernog instrumenta* è parte integrante, assieme al *Codice* e *Matricola*, del codice univoco dello *Strumento di misura*.
-Alcuni esempi di utilizzo delle *Categorie strumenti di misura* li troviamo nelle gestioni:
-> **Strumenti di misura** - nei *dati di testata*;   
-e in tutte le gestioni dove viene ultilizzato lo *Strumento di misura*.
+*Kategorija mjernog instrumenta* sastavni je dio jedinstvenog koda *Mjernog instrumenta*, zajedno sa *Šifrom* i  *Serijskim brojem*.
+Neki primjeri korištenja *Kategorija mjernih instrumenata* nalaze se u upravljanju:
+> **Mjerni instrumenti** - u *zaglavlju podataka*;   
+i u svim upravljanjima gdje se koristi *Mjerni instrument*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućava unos novih zapisa ili pretraživanje postojećih radi pregledavanja, izmjene ili brisanja.
 
-**Ricerca Categorie strumenti di misura**
+**Pretraživanje Kategorija mjernih instrumenata**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako biste vidjeli rezultate prikazane u tablici.  
 
-**Inserimento Categorie strumenti di misura**
+**Unos Kategorija mjernih instrumenata**
 
-Per poter inserire nuove *Categorie strumenti di misura* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Categorie strumenti di misura* potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novi**.   
+Za novi zapis potrebno je unijeti barem obavezna polja tražena od strane programa: **Šifra** i **Opis**.
 
-## Categorie strumenti di misura
+## Kategorije mjernih instrumenata
 
-E' l'elenco dove vengono inserite le informazioni principali delle *Categorie strumenti di misura*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Categoria strumento di misura*.   
-> **Descrizione**: è la descrizione della *Categoria strumento di misura*.   
-> **Unità di misura**: è l'*Unità di misura* con la quale vengono rilevati i valori degli strumenti facenti parte della categoria.   
-> **Note**: annotazioni libere.
+Ovdje se unose glavne informacije o *Kategorijama mjernih instrumenata*.   
+Popis se sastoji od sljedećih podataka: 
+> **Šifra**: šifra *Kategorije mjernog instrumenta.a*.   
+> **Opis**: opis *Kategorije mjernog instrumenta*.   
+> **Jedinica mjere**: *jedinica mjere* kojom se bilježe vrijednosti instrumenata unutar kategorije.   
+> **Napomene**: slobodne bilješke.  
 
-### Extra data
+### Dodatni podaci  
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Categoria strumento di misura*.   
-Questi *Extra data* possono venire ereditati nello *Strumento di misura* di quella determinata categoria.   
+Mogu se unijeti i [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/search-extradata) koji su općeniti za *Kategoriju mjernog instrumenta*.   
+Ti *Dodatni podaci* mogu se naslijediti u *Mjerni instrument* te kategorije.     
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

@@ -1,30 +1,30 @@
 ---
-title: Classi strumento
+title: Klase instrumenata  
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Taratura strumenti > Classi strumento**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kalibracija instrumenata > Klase instrumenata**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le *Classi strumento* che sono utilizzate per determinare il livello di conformità degli *Strumenti di misura*.   
-Un esempio di utilizzo lo troviamo nella gestione **Strumenti di misura**.
+:::important Čemu služi  
+U ovoj tablici moguće je definirati *Klase instrumenata* koje se koriste za određivanje razine sukladnosti *Mjernih instrumenata*.   
+Primjer njihove upotrebe može se pronaći u modulu **Mjerni instrumenti**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregleda, izmjene ili brisanja.  
 
-**Ricerca Classi strumento**
+**Pretraživanje Klasa instrumenata**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku  **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
-**Inserimento Classi strumento**
+**Unos Klasa instrumenata**
 
-Per poter inserire nuove *Classi strumento* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Klasa instrumenata* potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.    
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
     
-> **Codice**: è il codice della *Classe strumento*.   
-> **Descrizione**: è la descrizione della *Classe strumento*.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Klase instrumenta*.   
+> **Opis**: opis *Klase instrumenta*.   
+> **Napomene**: slobodne bilješke.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

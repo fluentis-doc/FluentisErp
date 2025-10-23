@@ -1,38 +1,38 @@
 ---
-title: Cause
+title: Uzroci
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Cause**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i Nesukladnosti > Uzroci**.
 
-In questa tabella è possibile codificare le *Cause*, previste ed effettive, che hanno causato una situazione non conforme.   
-Alcuni esempi di utilizzo dei *Difetti riscontrati* li troviamo nelle gestioni:
-> **Reclami** - nei tabulatori *Gestione difetti*, *Gestione 8D > Cause* e *Gestione 8D > Azioni permanenti*;   
-> **Non conformità** - nel tabulatore *Gestione difetti*.
+U ovoj tablici moguće je definirati *Uzroke*, predviđene i stvarne — koji su doveli do pojave nesukladnosti.
+Neki primjeri korištenja *Utvrđenih nedostataka* nalaze se u sljedećim modulima:  
+> **Reklamacije** - u karticama *Upravljanje nedostacima*, *Upravljanje 8D > Uzroci* i *Upravljanje 8D > Trajne radnje*;     
+> **Nesukladnosti** - u kartici *Upravljanje nedostacima*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihova pregleda, izmjene ili brisanja.
 
-**Ricerca Cause**
+**Pretraživanje Uzroka**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici s rezultatima.  
 
-**Inserimento Cause**
+**Unos Uzroka**
 
-Per poter inserire nuove *Cause* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Uzroka* potrebno je kliknuti na prvi prazan red u tablici ili pritisnuti tipku **Novo**.     
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
     
-> **Codice**: è il codice della *Causa*.   
-> **Descrizione causa**: è la descrizione della *Causa*.   
-> **Presunta**: indica l'attivazione della causa nelle *Cause presunta*.   
-> **Effettiva**: indica l'attivazione della causa nelle *Cause effettive*.   
-> **Reclami**: indica l'attivazione della causa presunta e/o effettiva nella gestione dei *Reclami*.   
-> **Non conformità interne**: indica l'attivazione della causa presunta e/o effettiva nella gestione delle *Non conformità interne*.   
-> **Non conformità a fornitore**: indica l'attivazione della causa presunta e/o effettiva nella gestione delle *Non conformità a fornitore*.   
-> **Non conformità a cliente**: indica l'attivazione della causa presunta e/o effettiva nella gestione delle *Non conformità a cliente*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la causa è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Uzroka*.   
+> **Opis uzroka**: opis *Uzroka*.   
+> **Pretpostavljeni**: označava aktivaciju uzroka u *Pretpostavljenim uzrocima*.   
+> **Stvarni**: označava aktivaciju uzroka u *Stvarnim uzrocima*.   
+> **Reklamacije**: označava aktivaciju pretpostavljenog i/ili stvarnog uzroka u upravljanju *Reklamacijama*.   
+> **Unutarnje nesukladnosti**: označava aktivaciju pretpostavljenog i/ili stvarnog uzroka u upravljanju *Unutarnjim nesukladnostima*.   
+> **Nesukladnosti kod dobavljača**: označava aktivaciju pretpostavljenog i/ili stvarnog uzroka u upravljanju *Nesukladnosti kod dobavljač*.   
+> **Nesukladnosti kod kupca**: označava aktivaciju pretpostavljenog i/ili stvarnog uzroka u upravljanju *Nesukladnosti kod kupca*.   
+> **Bodovi za izračun indeksa kvalifikacije dobavljača**: predstavlja broj bodova za umanjenje *Bonusa* koji se koristi tijekom *Periodične procjene dobavljača prema nesukladnostima*.   
+> **Aktivan**: označava je li uzrok još uvijek valjan i upotrebljiv.    
+> **Napomene**: slobodne bilješke.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).  
