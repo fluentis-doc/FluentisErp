@@ -3,6 +3,26 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0052 - 23/10/2025
+
+> -	ARM - Simply default template for workflow script.  
+> -	FI - completata implementazione del regime iva Art 74 DPR 633/72 Trimestrali “per natura”. Allineata stampa della liquidazione IVA periodica e calcolo (senza interessi trimestrali) nella Comunicazione trimestrale delle liquidazioni. ( TT03154/25) 
+> -	FI - Creazione compenso da documenti di acquisto in entrata: risolto errore in fase di creazione del compenso dovuto a una descrizione troppo lunga e rivisti i calcoli nel riepilogo dati IVA (Rif. Ticket TT02622/25). 
+> -	MES - Corretto bug, che si verificava nel caso in cui venisse rilasciato un ordine pianificato di produzione di livello inferiore senza che aver rilasciato anche l’ordine padre, se veniva creato un lotto per quell’ordine di produzione e poi veniva rilasciato l’ordine pianificato di produzione padre, non venivano agganciati i riferimenti corretti del campo SourceProductionOrder (#TT04449/25) 
+> -	MS - Corretto bug in costificazione delle commesse che non calcolava correttamente il tempo macchina se il centro di lavoro aveva il tempo fisso. (#TT04500/25) 
+> -	MS - Corretto bug in pianificazione generale che generava in alcuni casi ordini pianificati con quantità doppia. (#TT04502/25) 
+> -	PM - calcolo SAL - Corretta inclusione spese anche se l’attività dichiarata ha totale tempo 0 (#TT04384/25) 
+> -	PR - distinte di anticipo, revisione gestione del tipo importo ‘imponibile’. Modifications in SalesInvoiceHelpFilterWidget and SalesInvoiceMaturityHelpAdvanceFilterWidget can have an impact on profile (#TT04280/25) 
+> -	PR - stampa lista fatture anticipate/incassate, revisione del repository method per gestione filtro incassate. Modifications in stampa lista fatture anticipate/incassate can have an impact on profile (#TT04572/25) 
+> -	Propaga il codice di nomenclatura da PurchaseDeliveryNoteItem e SubcontractorItem nell'articolo della fattura di acquisto (TT04504/25) 
+> -	Revisione procedure di carico magazzino per valorizzazione centri di costo su più dimensioni (#TT04277/25) 
+> -	SCS - Risolta anomalia nel calcolo del costo degli articoli durante la registrazione di un Rientro di Conto Lavoro, in presenza di valorizzazione dei materiali a costo ultimo e valorizzazione per lotto e commessa di produzione. (#TT04474/25) 
+> -	SD - Creazione Fattura di Vendita da Picking: In fase di salvataggio della Fattura, a seguito di modifiche, viene ora visualizzato un messaggio che segnala la presenza di fatture di acconto intestate al cliente del documento. (#TT04460/25) 
+> -	SD - Listini di Vendita: Aggiunto un controllo sul tipo conto in fase di creazione di listini di vendita personalizzati per permettere la creazione di listini intestati solo a conti di tipo cliente. Modifications in Filter SalesPriceList form, SalesPriceList object form  and Create SalesPriceList can have an impact on profile. (#TT04472/25) 
+> -	SH -  revisione webapi di import FSLedgerAccount, revisione gestione update su collection CustomerSupplierAccountPublicAdministrations (#TT04506/25) 
+> -	WM - Duplica articoli- creare la possibilità di estendere in modo personalizzato per altre proprietà da duplicare (#TT04607/25) 
+> -	WM - Tracciabilità lotti: corretto controllo validità componenti in distinta base. (TT04524/25) 
+
 ### Patch 707.1-0051 - 16/10/2025
 
 > -	CO - Ripresa dati da produzione del controlling, i valori di progetto ripresi dai rientri del conto lavoro ora usano il prezzo netto di riga e non il lordo (#TT04478/25) 
