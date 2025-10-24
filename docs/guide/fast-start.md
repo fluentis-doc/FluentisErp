@@ -311,9 +311,7 @@ Tabelle coinvolte (Stored Procedure Fluentis.SH_CreateNewYear_IT):
 
 </details>
 
- 
-
-## 🧩 Configurazione **manuale** nuovo ambiente
+## ⚙️ Configurazione **manuale** nuovo ambiente
 
  
 
@@ -323,7 +321,9 @@ Questa modalità richiede un controllo puntuale dei parametri e dei collegamenti
 
  
 
-### Scopo della roadmap manuale
+### **Checklist operativa**
+
+ 
 
 Questa sezione funge da **checklist operativa** per la verifica e la compilazione delle tabelle fondamentali, ordinate per area funzionale.  
 
@@ -337,7 +337,7 @@ Ogni voce è espandibile e contiene:
 
  
 
-### Tabelle di Base
+### Tabelle di base
 
  
 
