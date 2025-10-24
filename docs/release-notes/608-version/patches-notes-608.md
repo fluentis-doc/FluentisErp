@@ -3,8 +3,15 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
-### Patch 608.1-0080 - 13/10/2025
+### Patch 608.1-0081 - 23/10/2025
 
+> - MPS - Corretto bug in schedulazione generale che generava in alcuni casi ordini pianificati con quantità doppia. (#TT04502/25) 
+> - PR - distinte di anticipo, revisione gestione del tipo importo ‘imponibile’. Modifications in SalesInvoiceHelpFilterWidget and SalesInvoiceMaturityHelpAdvanceFilterWidget can have an impact on profile (#TT04280/25) 
+> - PR - nelle distinte di anticipo è stata abilitata la possibilità di cambiare l’importo anticipato, ricalcolando la relativa percentuale ( TT02585/25) 
+> - PR - stampa lista fatture anticipate/incassate, revisione del repository method per gestione filtro incassate. Modifications in stampa lista fatture anticipate/incassate can have an impact on profile (#TT04572/25) 
+> - WM - Duplica articoli- creare la possibilità di estendere in modo personalizzato per altre proprietà da duplicare (#TT04607/25) 
+
+### Patch 608.1-0080 - 13/10/2025
 
 > - FI - Centri di Costo/Aggiornamento alla 50 Flu 2021 (#TT03826/24)
 > - FI - Corretto Calcolo LIPE errato in presenza di IVA indetraibile e Pro-Rata (#TT03934/25)
