@@ -3,6 +3,38 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 801.0027 - 23/10/2025
+
+> -	CO - ripresa dati da produzione del controlling, i valori di progetto ripresi dai rientri del conto lavoro ora usano il prezzo netto di riga e non il lordo (#TT04478/25) 
+> -	FI - completata implementazione del regime iva Art 74 DPR 633/72 Trimestrali “per natura”. Allineata stampa della liquidazione IVA periodica e calcolo (senza interessi trimestrali) nella Comunicazione trimestrale delle liquidazioni. ( TT03154/25) 
+> -	FI - corretto calcolo interessi trimestrali iva nella comunicazione periodica delle liquidazioni IVA. Non vengono più esposti nel quarto trimestre come da istruzioni ministeriali. Rif. #TT00124/22 
+> -	FI - corretto problema che non riportava I dati dei centri di costo riferiti alle commesse nelle scritture di assestamento. (TT03979/25) 
+> -	FI - Creazione compenso da documenti di acquisto in entrata: Risolto problema relativo alla creazione di un nuovo contatto e al calcolo delle righe all’interno del compenso (Rif. Ticket TT01805/25). 
+> -	FI - Creazione compenso da documenti di acquisto in entrata: risolto errore in fase di creazione del compenso dovuto a una descrizione troppo lunga e rivisti i calcoli nel riepilogo dati IVA (Rif. Ticket TT02622/25). 
+> -	MES - Corretto bug, che si verificava nel caso in cui venisse rilasciato un ordine pianificato di produzione di livello inferiore senza che aver rilasciato anche l’ordine padre, se veniva creato un lotto per quell’ordine di produzione e poi veniva rilasciato l’ordine pianificato di produzione padre, non venivano agganciati i riferimenti corretti del campo SourceProductionOrder (#TT04449/25) 
+> -	MES - Dichiarazioni di produzione da soluzione MES - Corretta anomalia che, alla doppia pressione del pulsante [Avanza], creava una doppia dichiarazione di produzione. (#TT04436/25) 
+> -	MS - Corretto bug in costificazione delle commesse che non calcolava correttamente il tempo macchina se il centro di lavoro aveva il tempo fisso. (#TT04500/25) 
+> -	MS - Corretto bug in costificazione delle commesse di produzione che non valorizzava correttamente il costo di setup. (#TT04167/25) 
+> -	MS - Corretto bug in pianificazione generale che generava in alcuni casi ordini pianificati con quantità doppia. (#TT04502/25) 
+> -	MS - Corretto bug in sequenza fasi top down grid che non permetteva di filtrare sulla descrizione del cliente dopo averla trascinata in griglia dall’object navigator. (#TT04489/25) 
+> -	MS - Corretto il calcolo del tempo di inizio e fine in Sequenza fasi. (#TT03529/25) 
+> -	MS - Ricalcolo capacità giornaliera dei Centri di lavoro - Corretta anomalia del calcolo delle capacità giornaliere se gestite o meno le eccezioni. Variazione layout nel Calendario capacità produttive per la gestione dei Periodi di lavoro in sostituzione delle Eccezioni .(#TT03446/25) 
+> -	PR - distinte di anticipo, revisione gestione del tipo importo ‘imponibile’. Modifications in SalesInvoiceHelpFilterWidget and SalesInvoiceMaturityHelpAdvanceFilterWidget can have an impact on profile (#TT04280/25) 
+> -	PR - stampa lista fatture anticipate/incassate, revisione del repository method per gestione filtro incassate. Modifications in stampa lista fatture anticipate/incassate can have an impact on profile (#TT04572/25) 
+> -	Propaga il codice di nomenclatura da PurchaseDeliveryNoteItem e SubcontractorItem nell'articolo della fattura di acquisto (TT04504/25) 
+> -	Revisione procedure di carico magazzino per valorizzazione centri di costo su più dimensioni (#TT04277/25) 
+> -	SCM - Dettaglio righe ordini: Risolta anomalia che causava l’applicazione delle modifiche anche a righe non selezionate, nel caso in cui fossero state deselezionate a seguito dell’applicazione di un filtro nella griglia. (#TT04404/25) 
+> -	SCM - In fase di duplicazione di un ordine fornitore, il flag Prezzo manuale viene ora impostato anche nel nuovo ordine, se presente in quello originale. (#TT04446/25) 
+> -	SCS - Risolta anomalia nel calcolo del costo degli articoli durante la registrazione di un Rientro di Conto Lavoro, in presenza di valorizzazione dei materiali a costo ultimo e valorizzazione per lotto e commessa di produzione. (#TT04474/25) 
+> -	SD - Corretto l’aggiornamento dello stato di evasione dell’Ordine cliente in seguito alla creazione di una Lista di Prelievo UDC e di una Fattura generata dalla lista di prelievo. (#TT04412/25) 
+> -	SD - In fase di duplicazione di DDT, Fatture o Pos, se non viene trovata un’aliquota IVA valida tra dichiarazione d’intento, anagrafica cliente o anagrafica articolo, viene proposto il codice IVA presente nel documento di origine. (#TT03962/25) 
+> -	SD - Ordini Clienti: Data la possibilità di aprire Proprietà Ordine Cliente  di ordini diversi (rif.ticket 4409/25) 
+> -	SD - Risolta anomalia nella duplicazione di DDT e Fatture di Vendita che applicava l’aliquota IVA del cliente anche alle righe di tipo Note. (#TT04147/25) 
+> -	WM - Corretto bug che impediva di inserire lotto economico nei parametri MRP dell’articolo nel caso in cui l’unità di misura dello stesso fosse con zero decimali. (#TT04418/25) 
+> -	WM - Corretto mancato aggiornamento lotto economico in parametri mrp se um senza decimali. (#TT04481/25) 
+> -	WM - Duplica articoli- creare la possibilità di estendere in modo personalizzato per altre proprietà da duplicare (#TT04607/25) 
+> -	WMS - Corretto errore in ricevimento merce al salvataggio nel ricalcolo delle scadenze. (#TT04454/25) 
+
 ### Patch 801.0026 - 15/10/2025
 
 > -	MES - Verticalizzazione Pharma - Ordini di produzione - Corretta anomalia che non effettuava un refresh della form al cambio stato workflow di "Parzialmente associato", non visualizzando automaticamente la griglia del dettaglio dei Lotti (#TT04063/25) 
