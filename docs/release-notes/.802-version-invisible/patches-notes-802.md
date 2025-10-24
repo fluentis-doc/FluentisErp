@@ -2,6 +2,32 @@
 title: Patch notes Versione 802
 sidebar_position: 1
 ---
+
+### Patch 802.0007 - 22/10/2025
+
+> -	ARM - Simply default template for workflow script 
+> -	CRM: nella proposta dati di un contatto CRM, se il campo p.iva è vuoto viene segnalata l'obbligatorietà del dato. Dalla versione web rimosso dalla visualizzazione il campo Tax Identification Number nel caso di società non USA  (#TT04456/25) 
+> -	FI - Creazione compenso da documenti di acquisto in entrata: risolto errore in fase di creazione del compenso dovuto a una descrizione troppo lunga e rivisti i calcoli nel riepilogo dati IVA (Rif. Ticket TT02622/25). 
+> -	FI - Stampa iva periodica - Completata implementazione del regime iva Art 74 DPR 633/72 Trimestrali “per natura”. Allineata stampa della liquidazione IVA periodica e calcolo (senza interessi trimestrali) nella Comunicazione trimestrale delle liquidazioni. (#TT03154/25) 
+> -	FI - revisione gestione messaggi di conferma al salvataggio delle registrazioni contabili (#TT04552/25) 
+> -	MES - Corretto bug, che si verificava nel caso in cui venisse rilasciato un ordine pianificato di produzione di livello inferiore senza che aver rilasciato anche l’ordine padre, se veniva creato un lotto per quell’ordine di produzione e poi veniva rilasciato l’ordine pianificato di produzione padre, non venivano agganciati i riferimenti corretti del campo SourceProductionOrder (#TT04449/25) 
+> -	MS - Corretto bug in costificazione delle commesse che non calcolava correttamente il tempo macchina se il centro di lavoro aveva il tempo fisso. (#TT04500/25) 
+> -	MS - Corretto bug in sequenza fasi top down grid che non permetteva di filtrare sulla descrizione del cliente dopo averla trascinata in griglia dall’object navigator. (#TT04489/25) 
+> -	MS - Corretto errore in salvataggio commessa in assenza di magazzino/causale nell’ordine cliente. (#TT04543/25) 
+> -	PM - calcolo SAL - Corretta inclusione spese anche se l’attività dichiarata ha totale tempo 0 (#TT04384/25) 
+> -	PM - Corretta elaborazione SAL affinchè consideri i costi e ricavi da contabilità (#TT04540/25) 
+> -	PR, SH, WM - revisione esecuzione filtro automatico su form Controllo rimesse, Matrice applicazione tasse, Tasse, Tipo tassazione partner, Tipo tassazione documenti, Tipo tassazione articolo acquisto, Tipo tassazione articolo vendita (#TT04520/25) 
+> -	Propaga il codice di nomenclatura da PurchaseDeliveryNoteItem e SubcontractorItem nell'articolo della fattura di acquisto (TT04504/25) 
+> -	Revisione procedure di carico magazzino per valorizzazione centri di costo su più dimensioni (#TT04277/25) 
+> -	SCM - In fase di duplicazione di un ordine fornitore, il flag Prezzo manuale viene ora impostato anche nel nuovo ordine, se presente in quello originale. (#TT04446/25) 
+> -	SCS - Risolta anomalia nel calcolo del costo degli articoli durante la registrazione di un Rientro di Conto Lavoro, in presenza di valorizzazione dei materiali a costo ultimo e valorizzazione per lotto e commessa di produzione. (#TT04474/25) 
+> -	SD - Corretto l’aggiornamento dello stato di evasione dell’Ordine cliente in seguito alla creazione di una Lista di Prelievo UDC e di una Fattura generata dalla lista di prelievo. (#TT04412/25) 
+> -	SD - Creazione Fattura di Vendita da Picking: In fase di salvataggio della Fattura, a seguito di modifiche, viene ora visualizzato un messaggio che segnala la presenza di fatture di acconto intestate al cliente del documento. (#TT04460/25) 
+> -	SD - Listini di Vendita: Aggiunto un controllo sul tipo conto in fase di creazione di listini di vendita personalizzati per permettere la creazione di listini intestati solo a conti di tipo cliente. Modifications in Filter SalesPriceList form, SalesPriceList object form  and Create SalesPriceList can have an impact on profile. (#TT04472/25) 
+> -	SD: Nelle scadenze delle fatture, introdotto nuovo campo in database dove è possibile memorizzare i link per gestire i pagamenti online (#TT04563/25) 
+> -	SH -  revisione webapi di import FSLedgerAccount, revisione gestione update su collection CustomerSupplierAccountPublicAdministrations (#TT04506/25) 
+> -	WM - Corretto errato calcolo disponibilità in magazzino esterno. (#TT04532/25) 
+
 ### Patch 802.0006 - 16/10/2025
 
 > -	CO - ripresa dati da produzione del controlling, i valori di progetto ripresi dai rientri del conto lavoro ora usano il prezzo netto di riga e non il lordo (#TT04478/25) 
@@ -41,7 +67,7 @@ sidebar_position: 1
 
 > -	Aggiornamento parser sistemi per esportazione paghe 
 > -	CO - Valorizzazione Distinta Base - E' stato corretto il calcolo del Costo dell'articolo. Il costo considera la ripartizione del Costo di attrezzaggio sulla base della quantità indicata nel parametro Lotto (parametro richiesto all'esecuzione del report) Costo materiali + Costo lavorazioni: macchina, manodopera ed esterne + Costo attrezzaggio / Lotto. (#TT04238/25) 
-> -	FI - Blazor : crash in posting in account widget URI too large ( TT04354/25) 
+> -	FI - Blazor - crash in posting in account widget URI too large ( TT04354/25) 
 > -	FI - correct indexes ( TT04299/25) 
 > -	FI - Corretto Calcolo LIPE errato in presenza di IVA indetraibile e Pro-Rata ( TT03934/25) 
 > -	FI - implementato giroconto automatico dell’iva indetraibile per pro-rata in fase di stampa definitiva e contabilizzazione della liquidazione periodica. Le modifiche nel FSGeneralLedgerParameter and PeriodicalVatSettlmentReport forms possono avere un impatto sul profilo. ( TT04295/25) 
