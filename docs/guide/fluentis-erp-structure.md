@@ -1,4 +1,5 @@
 ---
+id: fluentis-erp-structure
 title: Introduzione e Struttura della Documentazione Fluentis ERP
 description: Scopri come è organizzata la documentazione ufficiale di Fluentis ERP. Guida introduttiva completa con sezioni su impostazioni, aree funzionali, release notes, formazione e risorse aggiuntive.
 keywords: ["Fluentis ERP", "documentazione Fluentis", "manuale ERP", "aree funzionali", "moduli ERP", "guida Fluentis", "configurazione ERP", "release notes", "formazione Fluentis", "AI ERP"]
