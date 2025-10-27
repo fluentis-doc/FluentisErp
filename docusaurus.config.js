@@ -337,10 +337,24 @@ const config = {
         },
       },
     ],
-  ],
+  ],  
   plugins: [
     [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
+    '@docusaurus/plugin-client-redirects',
+    {
+      redirects: [
+        {
+          to: '/docs/guide/fluentis-erp-structure/',  // nuovo URL
+          from: ['/docs/guide/intro/intro-erp'],     // vecchio URL
+        },
+      ],
+    },
+  ],
+    [
+    require.resolve('./plugins/md-jsonld'),
+    {}
+    ],
+    [ require.resolve("@cmfcmf/docusaurus-search-local"),
       {
         // whether to index docs pages
         indexDocs: true,

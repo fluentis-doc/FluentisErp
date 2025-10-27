@@ -1,26 +1,51 @@
 ---
-title: Configurazione
+title: Configurazione ERP
+description: Guida completa alla configurazione di Fluentis ERP
+keywords: ["ERP", "parametri ERP", "tabelle ERP", "Fast Start"]
+tags: [ERP, Configurazione, Fluentis]
+schema: TechArticle
 sidebar_position: 1
+lang: it
 ---
 
-L'area di confiugurazione si compone principalmente di due elementi: **Tabelle** e **Parametri**.
+# Configurazione di Fluentis ERP
 
-Entrambi sono raggruppati per area funzionale, oltre ad un gruppo di tabelle e parametri generali (necessari indipendentmente dall'area alla quale si è interessati).
+L’area di **configurazione** rappresenta il punto di partenza per l’utilizzo corretto di Fluentis ERP.  
+Si compone principalmente di due elementi fondamentali: **Tabelle** e **Parametri**.  
+
+Entrambi sono organizzati per **area funzionale**, oltre a un insieme di elementi **generali**, necessari indipendentemente dall’area operativa interessata.
 
 :::danger[Attenzione]
-Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo concreto dell'ERP nell'area interessata.
+Una configurazione incompleta o errata di questi dati di base può impedire il corretto utilizzo dell’ERP nell’area specifica.
 :::
 
-**TABELLE**: contengono dati di base necessari alla creazione di altri dati o documenti. Ad esempio la tabella Tipi Fatture contiene le tipologie di fattura. Per la creazione di una nuova fattura è necessario per prima cosa richiamare il tipo dall'apposita combo box.
+## Tabelle
 
-**PARAMETRI**: contengono generalmente delle opzioni o dei dati di default per il funzionamento di procedure di elaborazione o creazione automatica di dati. La loro mancata gestione, in particolare, in alcuni casi, il salvataggio di un parametro di default, potrebbe impedire il corretto funzionamento della procedura relativa.
+Le **tabelle** contengono i dati di base necessari alla creazione di documenti e informazioni operative.  
 
-:::important[**Fast Start**]
-Dopo l'installazione di Fluentis ERP, prima di iniziare ad utilizzarlo è possibile inizializzare un [**ambiente *FastStart* totalmente pronto all'uso**](/docs/guide/fast-start).
+Ad esempio, la tabella **Tipi Fatture** definisce le diverse tipologie di fattura disponibili.  
+Per creare una nuova fattura, è necessario selezionare il tipo appropriato tramite l’apposita *combo box*.
 
-Vedere il link per l'elenco delle **tabelle** e **parametri** che vengono popolati da questa procedura.
+> Le tabelle costituiscono la base del sistema: la loro corretta compilazione garantisce coerenza e integrità dei dati in tutte le aree gestionali.
 
-Un elemento discriminante per il lancio del Fast Start è il [**Piano dei conti**](/docs/erp-home/registers/accounting/analytic-chart-of-accounts) (area amministrativa).
+## Parametri
 
-Lanciando la procedura di Fast Start verrà creato un piano dei conti standard, è possibile comunque integrarlo e modificare le descrizioni dei conti, oppure cancellare alcuni conti ma solo se questi non sono già utilizzati in altri dati generati dalla procedura (es. causali contabili, modelli di riclassificazione di bilancio). Nel caso in cui il piano dei conti sia totalmente indatto alla relatà aziendale che ha installato Fluentis, è consigliabile procedere con una configurazione manuale delle tabelle e parametri relativi alle aree funzionali alle quali si è interessati (oltre che alla creazione manuale o importazione del piano dei conti desiderato). Al link sopra indicato è presente una **check list** per la verifica di dettaglio delle tabelle più importatnti.
+I **parametri** definiscono opzioni, valori predefiniti e impostazioni di comportamento per le procedure di elaborazione o generazione automatica dei dati.  
+
+La loro assenza o una configurazione errata può compromettere il funzionamento di alcune funzioni automatiche.  
+In particolare, il mancato salvataggio di un parametro di default può bloccare l’esecuzione della procedura associata.
+
+:::important[Fast Start]
+Dopo l’installazione di **Fluentis ERP**, è possibile inizializzare un [**ambiente *Fast Start* pronto all’uso**](/docs/guide/fast-start).  
+
+Questo ambiente preconfigura automaticamente molte **tabelle** e **parametri**, permettendo un avvio rapido e sicuro del sistema.
+
+Un elemento chiave per il Fast Start è il [**Piano dei Conti**](/docs/erp-home/registers/accounting/analytic-chart-of-accounts), parte dell’area amministrativa.
+
+La procedura di Fast Start genera un **piano dei conti standard**:  
+è possibile modificarne le descrizioni, aggiungere o eliminare conti (purché non già utilizzati da altri dati generati, come causali contabili o modelli di bilancio).
+
+Se il piano dei conti proposto non rispecchia la realtà aziendale, si consiglia di procedere con una **configurazione manuale** delle tabelle e dei parametri relativi alle aree funzionali desiderate, oltre all’**importazione del piano dei conti personalizzato**.
+
+Consulta la **checklist di verifica dettagliata** disponibile nel link sopra per controllare le tabelle più importanti.
 :::
