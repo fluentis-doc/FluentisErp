@@ -1,34 +1,34 @@
 ---
-title: Gravità
+title: Teškoća
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Gravità**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i Nepodudarnosti > Teškoća**.
 
-In questa tabella è possibile codificare le *Gravità* delle situazioni non conformi riscontrate.   
-Alcuni esempi di utilizzo di *Gravità* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti*;   
-> **Non conformità** - nel tabulatore *Gestione difetti*.
+U ovoj tablici moguće je kodificirati *Teškoće* uočene kod situacija nepodudarnosti.     
+Neki primjeri korištenja *Teškoća* nalazimo u upravljanjima: 
+> **Reklamacije** - u kartici *Upravljanje nedostacima*;   
+> **Nepodudarnosti** - u kartici *Upravljanje nedostacima*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati. 
 
-**Ricerca Gravità**
+**Pretraživanje Teškoća**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** za prikaz rezultata unutar rezultirajuće mreže.  
 
-**Inserimento Gravità**
+**Unos Teškoća**
 
-Per poter inserire nuove *Gravità* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Teškoća* potrebno je kliknuti u mrežu na prvi prazan redak ili pritisnuti tipku **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
     
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi delle *Gravità*.   
-> **Codice**: è il codice della *Gravità*.   
-> **Descrizione gravità**: è la descrizione della *Gravità*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Eliminabile**: indica se la *Gravità* è eliminabile.   
-> **Attiva**: indica se la *Gravità* è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+> **Redoslijed**: redoslijed prikaza u popisu *Teškoća*.   
+> **Kod**: kod *Teškoće*.   
+> **Opis teškoće**: opis *Teškoće*.   
+> **Bodovi za izračun indeksa kvalifikacije dobavljača**: bodovi za umanjenje *Bonus-a* korišteni tijekom *Periodične procjene dobavljača na Nepodudarnosti*.   
+> **Moguće brisanje**: označava može li se *Teškoća* izbrisati.   
+> **Aktivno**: označava je li *Teškoća* još uvijek valjana i upotrebljiva.     
+> **Napomene**: slobodne bilješke.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

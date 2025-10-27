@@ -1,47 +1,47 @@
 ---
-title: Proposte di soluzione
+title: Prijedlozi rješenja
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Proposte di soluzione**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i Nepodudarnosti > Prijedlozi rješenja**.  
 
-In questa tabella è possibile codificare le *Decisioni* tecniche/gestionali che sono state intraprese per risolvere i *Difetti riscontrati*.   
-Alcuni esempi di utilizzo di *Proposte di soluzione* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti > Dati difetto*;   
-> **Non conformità** - nel tabulatore *Gestione difetti > Dati difetto*.
+U ovoj tablici moguće je kodificirati tehničke/menadžerske *Odluke* koje su poduzete za rješavanje *Uočenih nedostataka*.   
+Neki primjeri korištenja *Prijedloga rješenja* nalazimo u upravljanjima:
+> **Reklamacije** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*;   
+> **Nepodudarnosti** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
 
-**Ricerca Proposte di soluzione**
+**Pretraživanje Prijedloga rješenja**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** za prikaz rezultata unutar mreže.  
 
-**Inserimento Proposte di soluzione**
+**Unos Prijedloga rješenja**
 
-Per poter inserire nuove *Proposte di soluzione* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Prijedloga rješenja* potrebno je kliknuti u mrežu na prvi prazan redak ili pritisnuti tipku **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.
 
-## Proposte di soluzione
+## Prijedlozi rješenja
 
-E' l'elenco dove vengono inserite le informazioni principali della *Proposta di soluzione*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Proposta di soluzione*.   
-> **Descrizione proposta di soluzione**: è la descrizione della *Proposta di soluzione*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la decisione è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+Ovo je popis u kojem se unose glavne informacije o *Prijedlogu rješenja*.   
+Popis se sastoji od sljedećih informacija:  
+> **Kod**: kod *Prijedloga rješenja*.   
+> **Opis prijedloga rješenja**: opis *Prijedloga rješenja*.   
+> **Bodovi za izračun indeksa kvalifikacije dobavljača**: bodovi za umanjenje *Bonus-a* korišteni tijekom *Periodične procjene dobavljača na Nepodudarnosti*.   
+> **Aktivno**: označava je li odluka još uvijek valjana i upotrebljiva.  
+> **Napomene**: slobodne bilješke.
 
-### Coinvolgimento soggetti
+### Uključenost subjekata
 
-In questo elenco è possibile associare le *Funzioni aziendali* e/o *Dipendenti* per il loro coinvolgimento nelle gestioni dei *Reclami* e *Non conformità*.   
-All'indicazione della *Proposta di soluzione* questi soggetti verranno proposti nell'elenco dei *Soggetti coinvolti* delle suddette gestioni.
-L'elenco si compone delle seguenti informazioni:   
-> **Sequenza**: è la sequenza di coinvolgimento del soggetto per la "Proposta di soluzione" selezionata.   
-> **Funzione aziendale**: è il codice della *Funzione aziendale* da coinvolgere.   
-> **Descrizione funzione aziendale**: è la descrizione della *Funzione aziendale* da coinvolgere.   
-> **Dipendente**: è il codice del *Dipendente* da coinvolgere.   
-> **Nome completo**: è il cognome e il nome del Dipendente* da coinvolgere.   
-> **Descrizione soggetto**: è la libera descrizione di un soggetto non codificato da coinvolgere.   
-> **Motivo del coinvolgimento**: è la libera descrizione del motivo che verrà proposto nell'elenco dei *Soggetti coinvolti* nelle gestioni dei *Reclami* e *Non conformità*.   
+U ovom popisu moguće je povezati *Poslovne funkcije* i/ili *Zaposlenike* za njihovu uključenost u upravljanja *Reklamacijama* i *Nepodudarnostima*.   
+Prilikom odabira *Prijedloga rješenja* ti subjekti bit će predloženi u popisu *Uključenih subjekata* u navedenim upravljanjima.  
+Popis se sastoji od sljedećih informacija:     
+> **Redoslijed**: redoslijed uključenosti subjekta za odabrani "Prijedlog rješenja".     
+> **Poslovna funkcija**: kod *Poslovne funkcije* koja se treba uključiti.   
+> **Opis poslovne funkcije**: opis *Poslovne funkcije* koja se treba uključiti.
+> **Zaposlenik**: kod *Zaposlenika* koji se treba uključiti.  
+> **Puno ime**: prezime i ime *Zaposlenika* koji se treba uključiti.  
+> **Opis subjekta**: slobodni opis subjekta koji nije kodificiran, a treba biti uključen.    
+> **Razlog uključenosti**: slobodni opis razloga koji će biti predložen u popisu *Uključenih subjekata u upravljanjima Reklamacijama i Nepodudarnostima*.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

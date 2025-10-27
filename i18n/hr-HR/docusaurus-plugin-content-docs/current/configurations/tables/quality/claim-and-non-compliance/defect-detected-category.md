@@ -1,28 +1,28 @@
 ---
-title: Categorie difetto riscontrato
+title: Kategorije utvrđenog nedostatka
 sidebar_position: 10
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Categorie difetto riscontrato**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Općenito > Kategorije utvrđenog nedostatka**.
 
-In questa tabella è possibile codificare i metodi utilizzati per la ricezione o l'invio di documenti.   
-Un esempio di utilizzo lo troviamo nella tabella **Difetti riscontrati**.   
+U ovoj je tablici moguće šifrirati metode koje se koriste za primanje ili slanje dokumenata.
+Primjer njezine upotrebe nalazi se u tablici **Utvrđeni nedostaci**.   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.
 
-**Ricerca Categorie difetto riscontrato**
+**Pretraživanje kategorija utvrđenog nedostatka**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
 
-**Inserimento Categorie difetto riscontrato**
+**Unos kategorija utvrđenog nedostatka**
 
-Per poter inserire nuove *Categorie difetto riscontrato* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Kategorija utvrđenog nedostatka* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novi**.   
+Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Codice**: è il codice della *Categoria difetto riscontrato*.   
-> **Descrizione**: è la descrizione della *Categoria difetto riscontrato*.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Kategorije utvrđenog nedostatka*.   
+> **Opis**: opis *Kategorije utvrđenog nedostatka.*.   
+> **Bilješke**: slobodne napomene.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

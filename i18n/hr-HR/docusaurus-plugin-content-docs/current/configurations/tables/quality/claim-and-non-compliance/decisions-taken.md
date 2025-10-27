@@ -1,32 +1,33 @@
 ---
-title: Decisioni intraprese
+title: Provedene odluke
 sidebar_position: 9
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Decisioni intraprese**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Donošene odluke**.
 
-In questa tabella è possibile codificare le *Decisioni intraprese* per la risoluzione dei *Difetti riscontrati*.   
-Alcuni esempi di utilizzo di *Decisioni intraprese* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti > Dati difetto*;   
-> **Non conformità** - nel tabulatore *Gestione difetti > Dati difetto*.
+U ovoj je tablici moguće šifrirati *Donošene odluke* koje se poduzimaju radi rješavanja *utvrđenih nedostataka*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Neke primjene *Donošenih odluka* nalazimo u modulima:  
+> **Reklamacije** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*;   
+> **Nesukladnosti** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*.
 
-**Ricerca Decisioni intraprese**
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+**Pretraživanje donošenih odluka**
 
-**Inserimento Decisioni intraprese**
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraga** kako bi se rezultati prikazali u mreži s rezultatima.
 
-Per poter inserire nuove *Decisioni intraprese* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+**Unos donošenih odluka**
 
-*Campi specifici*: 
+Za unos novih *Donošenih odluka* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novi**.   
+Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+
+*Specifična polja*: 
     
-> **Codice**: è il codice della *Decisione intrapresa*.   
-> **Descrizione decisione intrapresa**: è la descrizione della *Decisione intrapresa*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la decisione è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Donošene odluke*.   
+> **Opis donošene odluke**: opis *Donošene odluke*.   
+> **Bodovi za izračun indeksa kvalifikacije dobavljača**: broj bodova za umanjenje *Bonusa* koji se koristi tijekom *periodične procjene dobavljača u slučaju nesukladnosti*.   
+> **Aktivno**: označava je li odluka još uvijek valjana i upotrebljiva.   
+> **Note**: slobodne napomene.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

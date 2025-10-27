@@ -6,57 +6,57 @@ sidebar_position: 1
 Tablica se nalazi na putanji **Tablice > Kvaliteta > Reklamacije i Nesukladnosti > Vrste reklamacija**.
 
 U ovoj tablici moguće je definirati *Vrste reklamacija*.   
-Il *Tipo di reclamo* è parte integrante, assieme all'*Anno* e *Numero*, del codice univoco del *Reclamo*.
-Alcuni esempi di utilizzo di *Tipi di reclamo* li troviamo nelle gestioni:
-> **Reclami** - nei *dati di testata*;   
-> **Parametri Reclami e Non conformità** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzato il *Reclamo*.
+*Vrsta reklamacije* čini sastavni dio, zajedno s *Godinom* i *Brojem*, jedinstvenog koda *Reklamacije*.
+Neke primjene *Vrsta reklamacija* nalazimo u modulima:  
+> **Reklamacije** - u *zaglavnim podacima*;   
+> **Parametri reklamacija i nesukladnosti** - u kartici *Općenito*;   
+te u svim modulima u kojima se koristi *Reklamacija*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.  
 
-**Ricerca Tipi di reclamo**
+**Pretraživanje vrsta reklamacija**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
 
-**Inserimento Tipi di reclamo**
+**Unos vrsta reklamacija**
 
-Per poter inserire nuovi *Tipi di reclamo* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Vrsta reklamacija* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novi**.   
+Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-## Tipi di reclamo
+## Vrste reklamacija
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi di reclamo*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo di reclamo**
->> **Codice**: è il codice del *Tipo di reclamo*.   
->> **Descrizione**: è la descrizione del *Tipo di reclamo*.
+Ovo je popis u kojem se unose osnovne informacije o *Vrstama reklamacija*.   
+Popis se sastoji od sljedećih podataka:
+> **Vrsta reklamacije**
+>> **Šifra**: šifra *Vrste reklamacije*.   
+>> **Opis**: opis *Vrste reklamacije*.
 >   
-> **Modello reclamo**
-> è un elenco di valori predefiniti dal sistema che identificano il modello di gestione del *Reclamo*; I valori predefiniti sono:   
+> **Model reklamacije**
+> popis je unaprijed definiranih vrijednosti koje određuju model upravljanja *Reklamacijom*; Predefinirane vrijednosti su:   
 > - *CL - Classic*;   
 > - *8D - 8D Problem Solving*.   
 >>
->> **Codice**: è il codice del *Modello di reclamo*;      
->> **Descrizione**: è la descrizione del *Modello di reclamo*.
+>> **Šifra**: šifra *Modela reklamacije*;      
+>> **Opis**: opis *Modela reklamacije*.
 >   
-> **Numerazione**
->> **Codice**: è il codice della *Numerazione*.   
->> **Descrizione**: è la descrizione della *Numerazione*.
->> **Oggetto**: è il tipo di oggetto sulla quale si basa la *Numerazione*.
+> **Numeracija**
+>> **Šifra**: šifra *Numeracije*.   
+>> **Opis**: opis *Numeracije*.
+>> **Objekt**: vrsta objekta na kojem se temelji *Numeracija*.
 >   
-> **Tipo fattura**
->> **Codice**: è il codice del *Tipo fattura* che viene utilizzato per la *Valorizzazione* del *Reclamo* per la creazione delle *Note di accredito*.   
->> **Descrizione**: è la descrizione del *Tipo fattura*.
+> **Vrsta računa**
+>> **Šifra**: šifra *Vrste računa* koja se koristi za *vrednovanje reklamacije* pri izradi *odobrenja*.   
+>> **Opis**: opis *vrste računa*.
 >   
-> **Tipo IVA**
->> **Codice**: è il codice del *Tipo IVA* che viene utilizzato per la *Valorizzazione* del *Reclamo* per la creazione delle *Note di accredito* qualora il cliente ne fosse sprovvisto.   
->> **Descrizione**: è la descrizione del *Tipo IVA*.
+> **Vrsta PDV-a**
+>> **Šifra**: šifra *Vrste PDV-a* koja se koristi za *Vrednovanje reklamacije* pri izradi *odobrenja* u slučaju da ga kupac nema.    
+>> **Opis**: opis *Vrste PDV-a*.
 >   
-> **Note**: annotazioni libere.
+> **Bilješke**: slobodne napomene.  
 
-### Attributi Tipo di reclamo
+### Atributi vrste reklamacije  
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo di reclamo*.   
-Questi *Extra data* possono venire ereditati nei *Reclami* di quella determinata tipologia.   
+Moguće je dodati [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) općeg tipa za *Vrstu reklamacije*.   
+Ti *Extra data* mogu se nasljeđivati u *Reklamacijama* te određene vrste.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

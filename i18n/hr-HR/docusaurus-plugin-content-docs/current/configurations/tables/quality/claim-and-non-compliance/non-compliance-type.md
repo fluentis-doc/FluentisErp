@@ -1,59 +1,59 @@
 ---
-title: Tipi di non conformità
+title: Tipovi nepodudarnosti
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Tipi di non conformità**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Tipovi nepodudarnosti**.
 
-In questa tabella è possibile codificare i *Tipi di non conformità*.   
-Il *Tipo di non conformità* è parte integrante, assieme all'*Anno* e *Numero*, del codice univoco della *Non conformità*.
-Alcuni esempi di utilizzo di *Tipi di non conformità* li troviamo nelle gestioni:
-> **Non conformità** - nei *dati di testata*;   
-> **Parametri Reclami e Non conformità** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzata la *Non conformità*.
+U ovoj je tablici moguće šifrirati *Tipove nepodudarnosti*.   
+*Tip nepodudarnosti* je sastavni dio, zajedno s *Godinom* i *Brojem*, jedinstvenog koda *Nepodudarnosti*.  
+Neke primjene *Tipova nepodudarnosti* nalazimo u modulima:
+> **Nesukladnosti** - u *podacima zaglavlja*;   
+> **Parametri Reklamacije i Nesukladnost** - u kartici *Općenito*;   
+i u svim modulima gdje se koristi *Nepodudarnost*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
 
-**Ricerca Tipi di non conformità**
+**Pretraživanje tipova nepodudarnosti**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
 
-**Inserimento Tipi di non conformità**
+**Unos tipova nepodudarnosti**
 
-Per poter inserire nuovi *Tipi di non conformità* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Tipova nepodudarnosti* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novo**.   
+Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-## Tipi di non conformità
+## Tipovi nepodudarnosti
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi di non conformità*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo di non conformità**
->> **Codice**: è il codice del *Tipo di non conformità*.   
->> **Descrizione**: è la descrizione del *Tipo di non conformità*.
+Ovdje se unose osnovne informacije o *Tipovima nepodudarnosti*.   
+Popis uključuje sljedeće informacije:   
+> **Tip nepodudarnosti**
+>> **Šifra**: šifra *Tipa nepodudarnosti*.   
+>> **Opis**: opis *Tipa nepodudarnosti*.
 >   
-> **Utilizzo in**
->> **Non conformità interne**: indica l'attivazione della *Funzione/Area/Reparto* come soggetto destinatario della *Non conformità*.   
->> **Non conformità a fornitore**: indica l'attivazione del *Fornitore* come soggetto destinatario della *Non conformità*.   
->> **Non conformità a cliente**: indica l'attivazione del *Cliente* come soggetto destinatario della *Non conformità*.   
+> **Upotreba u**
+>> **Interna nepodudarnost**: označava aktivaciju *Funkcije/Područja/Odjela* kao primatelja *Nepodudarnosti*.   
+>> **Nepodudarnost kod dobavljača**: označava aktivaciju *Dobavljača* kao primatelja *Nepodudarnosti*.   
+>> **Nepodudarnost kod kupca**: označava aktivaciju *Kupca* kao primatelja *Nepodudarnosti*.   
 >   
-> **Numerazione**
->> **Codice**: è il codice della *Numerazione*.   
->> **Descrizione**: è la descrizione della *Numerazione*.
->> **Oggetto**: è il tipo di oggetto sulla quale si basa la *Numerazione*.
+> **Numeracija**
+>> **Šifra**: šifra *Numeracije*.   
+>> **Opis**: opis *Numeracije*.
+>> **Predmet**: tip objekta na kojem se temelji *Numeracija*.
 >   
-> **Tipo fattura**
->> **Codice**: è il codice del *Tipo fattura* che viene utilizzato per la *Valorizzazione* della *Non conformità* per la creazione delle *Note di addebito*.   
->> **Descrizione**: è la descrizione del *Tipo fattura*.
+> **Vrsta računa**
+>> **Šifra**: šifra *Vrste računa* koja se koristi za *Vrednovanje* nepodudarnosti pri izradi *obrazaca zaduženja*.   
+>> **Opis**: opis *Vrste računa*.
 >   
-> **Tipo IVA**
->> **Codice**: è il codice del *Tipo IVA* che viene utilizzato per la *Valorizzazione* della *Non conformità* per la creazione delle *Note di addebito* qualora il soggetto destinatario *Fornitore* o *Cliente* ne fosse sprovvisto.   
->> **Descrizione**: è la descrizione del *Tipo IVA*.
+> **Vrsta PDV-a**
+>> **Šifra**: šifra *vrste PDV-a* koja se koristi za *Vrednovanje* za *Nepodudarnost* pri izradi *Obrazaca zaduženja* ukoliko primatelj *Dobavljač* ili *Kupac* nema istu.   
+>> **Opis**: opis *vrste PDV-a*.
 >   
-> **Note**: annotazioni libere.
+> **Bilješke**: slobodne napomene.  
 
-### Attributi Tipo di non conformità
+### Atributi vrste nesukladnosti
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo di Non conformità*.   
-Questi *Extra data* possono venire ereditati nelle *Non conformità* di quella determinata tipologia.   
+Moguće je unijeti [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *vrstu nesukladnosti*.   
+Ovi *Extra data* mogu se naslijediti u *nesukladnostima* te određene vrste.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

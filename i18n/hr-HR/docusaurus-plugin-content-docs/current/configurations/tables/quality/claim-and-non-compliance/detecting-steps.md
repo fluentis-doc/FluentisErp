@@ -1,32 +1,32 @@
 ---
-title: Fasi di rilevamento
+title: Faze otkrivanja
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Fasi di rilevamento**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Faze otkrivanja**.
 
-In questa tabella è possibile codificare le *Fasi di rilevamento*, cioè il momento della fase produttiva/gestionale nel quale si sono rilevati i difetti.   
-Alcuni esempi di utilizzo di *Fasi di rilevamento* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti > Dati difetto*;   
-> **Non conformità** - nel tabulatore *Gestione difetti > Dati difetto*.
+U ovoj je tablici moguće šifrirati *Faze otkrivanja*, odnosno trenutke unutar proizvodnog ili upravljačkog procesa u kojima su uočeni nedostaci.   
+Neke primjene *faza otkrivanja* nalazimo u modulima:
+> **Reklamacije** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*;   
+> **Non conformità** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.
 
-**Ricerca Fasi di rilevamento**
+**Pretraživanje faza otkrivanja**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
 
-**Inserimento Fasi di rilevamento**
+**Unos faza otkrivanja**
 
-Per poter inserire nuove *Fasi di rilevamento* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Faza otkrivanja* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novo**.   
+Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
     
-> **Codice**: è il codice della *Fase di rilevamento*.   
-> **Descrizione fase di rilevamento**: è la descrizione della *Fase di rilevamento*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la fase è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Faze otkrivanja*.   
+> **Opis faze otkrivanja**: opis *Faze otkrivanja*.   
+> **Bodovi za izračun indeksa kvalifikacije dobavljača**: broj bodova za umanjenje *Bonusa* koji se koristi tijekom *periodične procjene dobavljača u slučaju nesukladnosti*.   
+> **Aktivno**: označava je li faza još uvijek valjana i upotrebljiva.     
+> **Bilješke**: slobodne napomene.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

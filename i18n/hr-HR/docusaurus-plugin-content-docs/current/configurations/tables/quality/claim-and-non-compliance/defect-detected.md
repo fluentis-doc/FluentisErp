@@ -1,41 +1,41 @@
 ---
-title: Difetti riscontrati
+title: Uočeni nedostaci
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Difetti riscontrati**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Uočeni nedostaci**.
 
-In questa tabella è possibile codificare i *Difetti riscontrati* in prodotti, materiali e servizi.   
-Alcuni esempi di utilizzo dei *Difetti riscontrati* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti*;   
-> **Non conformità** - nel tabulatore *Gestione difetti*;   
-> **M.E.S.** - nel tabulatore *Produzione*.
+U ovoj je tablici moguće šifrirati *uočene nedostatke* u proizvodima, materijalima i uslugama.   
+Neke primjene *uočenih nedostataka* nalazimo u modulima:
+> **Reklamacije** - u kartici *Upravljanje nedostacima*;   
+> **Nesukladnosti** - u kartici *Upravljanje nedostacima*;   
+> **M.E.S.** - u kartici *Proizvodnja*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.
 
-**Ricerca Difetti riscontrati**
+**Pretraživanje uočenih nedostataka**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
 
-**Inserimento Difetti riscontrati**
+**Unos uočenih nedostataka**
 
-Per poter inserire nuovi *Difetti riscontrati* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *uočenih nedostataka* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novi**.   
+Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Codice**: è il codice del *Difetto riscontrato*.   
-> **Descrizione difetto riscontrato**: è la descrizione del *Difetto riscontrato*.   
-> **Categoria**: è il codice della *Categoria difetto riscontrato*.   
-> **Descrizione categoria**: è la descrizione della *Categoria difetto riscontrato*.   
-> **Classe**: è la *Classificazione del difetto*.   
-> **Reclami**: indica l'attivazione del difetto nella gestione dei *Reclami*.   
-> **Non conformità interne**: indica l'attivazione del difetto nella gestione delle *Non conformità interne*.   
-> **Non conformità a fornitore**: indica l'attivazione del difetto nella gestione delle *Non conformità a fornitore*.   
-> **Non conformità a cliente**: indica l'attivazione del difetto nella gestione delle *Non conformità a cliente*.   
-> **Dichiarazioni di produzione**: indica l'attivazione del difetto nella gestione delle *Dichiarazioni di produzione*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attivo**: indica se il difetto è ancora valido e utilizzabile.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Uočenog nedostatka*.   
+> **Opis uočenog nedostatka**: opis *uočenog nedostatka*.     
+> **Kategorija**: šifra *kategorije uočenog nedostatka*.     
+> **Opis kategorije**: opis *kategorije uočenog nedostatka*.     
+> **Klasa**: *klasifikacija nedostatka*.     
+> **Reklamacije**: označava aktivaciju nedostatka u upravljanju *Reklamacijama*.     
+> **Unutarnje nesukladnosti**: označava aktivaciju nedostatka u upravljanju *Unutarnjim nesukladnostima*.     
+> **Nesukladnosti prema dobavljaču**: označava aktivaciju nedostatka u upravljanju *nesukladnostima prema dobavljaču*.   
+> **Nesukladnosti prema kupcu**: označava aktivaciju nedostatka u upravljanju *nesukladnostima prema kupcu*.     
+> **Proizvodne izjave**: označava aktivaciju nedostatka u upravljanju *proizvodnim izjavama*.    
+> **Bodovi za izračun indeksa kvalifikacije dobavljača**: broj bodova za umanjenje *Bonusa* koji se koristi tijekom *periodične procjene dobavljača u slučaju nesukladnosti*.   
+> **Aktivno**: označava je li nedostatak još uvijek valjan i upotrebljiv.   
+> **Bilješke**: slobodne napomene.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

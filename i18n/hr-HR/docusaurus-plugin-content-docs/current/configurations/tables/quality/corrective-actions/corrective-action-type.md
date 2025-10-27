@@ -1,37 +1,37 @@
 ---
-title: Tipi azione correttiva
+title: Vrste korektivne radnje
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Azioni correttive > Tipi azione correttiva**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Korektivne radnje > Vrste korektivne radnje**.
 
-In questa tabella è possibile codificare i *Tipi azione correttiva*.   
-Alcuni esempi di utilizzo di *Tipi azione correttiva* li troviamo nelle gestioni:
-> **Azioni correttive** - nei *dati di testata*;   
-> **Parametri Azioni correttive** - nei *dati di testata*.
+U ovoj tablici moguće je kodificirati *Vrste korektivne radnje*.   
+Neki primjeri korištenja *Vrsta korektivne radnje* nalaze se u upravljanjima:  
+> **Korektivne radnje** - u *zaglavnim podacima*;   
+> **Parametri korektivnih radnji** - u *zaglavnim podacima*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.
 
-**Ricerca Tipi azione correttiva**
+**Pretraživanje Vrsta korektivne radnje**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar mreže rezultata.
 
-**Inserimento Tipi azione correttiva**
+**Unos Vrsta korektivne radnje**
 
-Per poter inserire nuovi *Tipi azione correttiva* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Vrsta korektivne radnje* potrebno je kliknuti u mrežu na prvi prazan redak ili pritisnuti tipku **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
     
-> **Codice**: è il codice del *Tipo azione correttiva*.   
-> **Descrizione**: è la descrizione del *Tipo azione correttiva*.   
-> **Numerazione**: è il codice della *Numerazione*.   
-> **Descrizione numerazione**: è la descrizione della *Numerazione*.   
-> **Note**: annotazioni libere.
+> **Kod**: kod *Vrste korektivne radnje*.   
+> **Opis**: opis *Vrste korektivne radnje*.   
+> **Numeracija**: kod *Numerazione*.   
+> **Descrizione numerazione**: opis *Numeracije*.   
+> **Napomene**: slobodne bilješke.
 
-### Attributi Tipo azione correttiva
+### Atributi Vrste korektivne radnje
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo di azione correttiva*.   
-Questi *Extra data* possono venire ereditati nelle *Azioni correttive* di quella determinata tipologia.   
+Moguće je dodati [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) opće podatke za *Vrstu korektivne radnje*.   
+Ovi *Extra data* mogu se naslijediti u *Korektivnim radnjama* određenog tipa.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

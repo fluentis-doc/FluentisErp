@@ -1,31 +1,31 @@
 ---
-title: Risoluzioni commerciali
+title: Komercijalna riješenja
 sidebar_position: 7
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Reclami e Non conformità > Risoluzioni commerciali**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Reklamacije i Nesukladnosti > Komercijalna rješenja**.
 
-In questa tabella è possibile codificare le *Risoluzioni commerciali* intraprese per risolvara i *Difetti riscontrati*.   
-Alcuni esempi di utilizzo di *Risoluzioni commerciali* li troviamo nelle gestioni:
-> **Reclami** - nel tabulatore *Gestione difetti > Dati difetto*.
+U ovoj je tablici moguće šifrirati *Komercijalna rješenja* koja su poduzeta radi otklanjanja *Utvrđenih nedostataka*.   
+Neke primjene *Komercijalnih rješenja* nalazimo u modulima:  
+> **Reklamacije** - u kartici *Upravljanje nedostacima > Podaci o nedostatku*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog prikaza, izmjene ili brisanja.  
 
-**Ricerca Risoluzioni commerciali**
+**Pretraživanje komercijalnih rješenja**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
 
-**Inserimento Risoluzioni commerciali**
+**Unos komercijalnih rješenja**
 
-Per poter inserire nuove *Risoluzioni commerciali* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *komercijalnih rješenja* potrebno je kliknuti u mreži na prvi prazan red ili pritisnuti tipku **Novi**.   
+Za novi zapis moraju se unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
     
-> **Codice**: è il codice della *Risoluzione commerciale*.   
-> **Descrizione risoluzione commerciale**: è la descrizione della *Risoluzione commerciale*.   
-> **Punteggio calcolo indice di qualificazione fornitore**: è il punteggio di decurtazione del *Bonus* utilizzato durante la *Valutazione periodica fornitori su Non conformità*.   
-> **Attiva**: indica se la risoluzione è ancora valida e utilizzabile.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Komercijalnog rješenja*.   
+> **Opis komercijalnog rješenja**: opis *Komercijalnog rješenja*.   
+> **Bodovi za izračun indeksa kvalifikacije dobavljača**: broj bodova za umanjenje *Bonusa* koji se koristi tijekom *periodične procjene dobavljača u slučaju nesukladnosti*.   
+> **Aktivno**: označava je li rješenje još uvijek valjano i upotrebljivo.   
+> **Bilješke**: slobodne napomene.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
