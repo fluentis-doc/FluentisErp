@@ -1,75 +1,75 @@
 ---
-title: Categorie Documenti di origine esterna
+title: Kategorije dokumenata vanjskog podrijetla
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Documenti > Categorie Documenti di origine esterna**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Dokumenti > Kategorije dokumenata vanjskog podrijetla**.
 
-:::important A cosa serve
-I dati presenti in questa tabella sono utilizzati per catalogare le diverse tipologie dei Documenti di origine esterna.   
-I dati inseriti in queste griglie verranno riportati nella creazione dei Documenti di origine esterna.   
-Un esempio di utilizzo lo troviamo nella gestione **Documenti di origine esterna**.
+:::important Čemu služi
+Podaci u ovoj tablici koriste se za kategorizaciju različitih vrsta Dokumenata vanjskog podrijetla.
+Podaci uneseni u ovu tablicu prenose se prilikom izrade Dokumenata vanjskog podrijetla. 
+Primjer korištenja nalazi se u modulu **Dokumenti vanjskog podrijetla**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.
 
-**Ricerca Categorie Documenti di origine esterna**
+**Pretraživanje Kategorija dokumenata vanjskog podrijetla**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar mreže rezultata.  
 
-**Inserimento Categorie Documenti di origine esterna**
+**Unos Kategorija dokumenata vanjskog podrijetla**
 
-Per poter inserire nuovi *Categorie Documenti di origine esterna* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Kategorija dokumenata vanjskog podrijetla* potrebno je kliknuti u mrežu na prvi prazan redak ili pritisnuti tipku **Novo**.   
+Za novi zapis potrebno je unijeti najmanje obavezna polja koja zahtijeva program: **Kod** i **Opis**.
 
-**Duplica Categorie Documenti di origine esterna**
+**Dupliciranje Kategorije dokumenata vanjskog podrijetla**
 
-Per poter duplicare una *Categoria Documento* esistente in una nuova *Categoria Documento* è necessario cliccare nella griglia sulla *Categoria Documento* da cui si desidera duplicare e premere il pulsante **Duplica**.   
-Verrà visualizzata una richiesta di **Codice** e **Descrizione** della nuova *Categoria Documento* (dati entrambe obbligatori).   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno. 
+Za dupliciranje postojeće *Kategorije dokumenta* u novu *Kategoriju dokumenta* potrebno je u mreži označiti *Kategoriju dokumenta* koju želite duplicirati i pritisnuti tipku **Dupliciraj**.   
+Prikazat će se zahtjev za unos **Koda** i **Opisa** nove *Kategorije dokumenta* (oba podatka su obavezna).    
+Zatim pritisnite tipku **OK** za potvrdu ili **Otkaži** ako želite prekinuti postupak dupliciranja.
 
-## Categorie Documenti di origine esterna
+## Kategorije dokumenata vanjskog podrijetla  
 
-E' l'elenco dove vengono inserite le informazioni principali della *Categoria Documento*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Categoria**: è il codice della *Categoria Documento*.   
-> **Descrizione categoria**: è la descrizione della *Categoria Documento*.   
-> **Archivio**: in questo campo viene assegnato il magazzino dove trovare la categoria specifica.   
-> **Ubicazione**: indica la posizione fisica abituale della *Categoria*; è possibile scegliere solo le *Ubicazioni* facenti parte dell'*Archivio* selezionato.   
-> **Ubicazione descrittiva**: se la posizione non è codificata, è possibile inserirla manualmente in questo campo libero.   
-> **Periodo di conservazione**: contiene un periodo di conservazione da inserire manualmente.   
-> **Funzione responsabile**: contiene la *Funzione aziendale* responsabile della *Categoria*.   
-> **Note**: annotazioni libere.
+Ovo je popis u koji se unose osnovne informacije o *Kategoriji dokumenta*.   
+Popis sadrži sljedeće informacije:     
+> **Kategorija**: kod *Kategorije dokumenta*.   
+> **Opis kategorije**: opis *Kategorije dokumenta*.   
+> **Arhiva**: označava skladište u kojem se nalazi određena kategorija.   
+> **Lokacija**: izička lokacija gdje se uobičajeno nalazi *Kategorija*; moguće je odabrati samo *Lokacije* koje pripadaju odabranoj *Arhivi*.  
+> **Opis lokacije**: ako lokacija nije kodificirana, može se ručno unijeti u ovo slobodno polje.  
+> **Razdoblje čuvanja**: razdoblje čuvanja koje se unosi ručno.    
+> **Odgovorna funkcija**: *Poslovna funkcija* odgovorna za tu *Kategoriju*.   
+> **Napomene**: slobodne bilješke.  
 
-### Lista di distribuzione
+### Lista distribucije  
 
-In questo elenco è possibile associare: *Funzioni aziendali*, *Dipendenti*, *Clienti/Fornitori* e *Contatti* che abitualmente ricevono copia della *Categoria Documento* selezionata ed indicare le metodologie abituali di ricezione del documento.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione aziendale**   
->> **Codice**: è il codice della *Funzione aziendale* destinataria.   
->> **Descrizione**: è la descrizione della *Funzione aziendale* destinataria.   
+U ovom popisu moguće je povezati: *Poslovne funkcije*, *Zaposlenike*, *Klijente/Dobavljače* i *Kontakte* koji uobičajeno primaju kopiju *Kategorije dokumenta* te odrediti standardne načine dostave.  
+Popis sadrži sljedeće informacije:  
+> **Poslovna funkcija**   
+>> **Kod**: kod *Poslovne funkcije* primatelja.    
+>> **Opis**: opis *Poslovne funkcije* primatelja  
 >
-> **Dipendente**   
->> **Codice**: è il codice del dipendente* destinatario.   
->> **Cognome**: è il cognome del dipendente* destinatario.   
->> **Nome**: è il nome del dipendente* destinatario.   
+> **Zaposlenik**   
+>> **Kod**: kod *Zaposlenika* primatelja.   
+>> **Prezime**: prezime *Zaposlenika* primatelja.   
+>> **Ime**: ime *Zaposlenika* primatelja.   
 >
-> **Cliente/Fornitore**   
->> **Descrizione**: è la ragione sociale del *Cliente/Fornitore* destinatario.   
+> **Klijent/Dobavljač**   
+>> **Opis**: naziv tvrtke *Klijenta* ili *Dobavljača* primatelja.   
 >
-> **Contatto**   
->> **Codice**: è il codice del *Contatto* destinatario.   
->> **Descrizione**: è la descrizione del *Contatto* destinatario.   
+> **Kontakt**   
+>> **Kod**: kod *Kontakta* primatelja.   
+>> **Opis**: opis *Kontakta* primatelja.   
 >
-> **Altro destinatario**   
->> **Descrizione**: è la libera descrizione di un destinatario non codificato.   
+> **Drugi primatelj**   
+>> **Opis**: slobodan opis primatelja koji nije kodificiran.    
 >
-> **Dati per la consegna**   
->> **Cartacea**: indica che al momento della distribuzione (procedura interna alla gestione *Documenti di origine esterna*) il soggetto desidera ricevere copia *Cartacea* del documento o in allegato tramite *Email*.   
->> **Metodo di consegna**: indica la metodologia di consegna abituale della *Categoria Documento*.   
->> **Email**: indica una email di destinazione, se non codificata nell'anagrafica del destinatario.   
->> **Numero di copie**: indica il numero di copie cartacee che il destinatario desidera ricevere.   
->> **Note**: annotazioni libere.   
+> **Podaci za dostavu**   
+>> **Tiskano**: označava da, u trenutku distribucije (unutarnji postupak u okviru modula   *Dokumenti vanjskog podrijetla*) subjekt želi primiti *tiskanu kopiju* dokumenta ili kopiju u privitku putem *Emaila*.   
+>> **Način isporuke**: označava uobičajenu metodu isporuke za *Kategoriju dokumenta*.   
+>> **Email**: označava adresu e-pošte primatelja, ako nije definirana u matičnim podacima primatelja.    
+>> **Broj kopija**: označava broj tiskanih kopija koje primatelj želi primiti.    
+>> **Bilješke**: slobodne napomene   
 
 *Pulsanti specifici*:      
 **Nuovo destinatario**: inserisce una nuova riga in elenco.   
