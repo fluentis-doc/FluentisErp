@@ -5,10 +5,11 @@ description: Scopri come è organizzata la documentazione ufficiale di Fluentis 
 keywords: ["Fluentis ERP", "documentazione Fluentis", "manuale ERP", "aree funzionali", "moduli ERP", "guida Fluentis", "configurazione ERP", "release notes", "formazione Fluentis", "AI ERP"]
 sidebar_position: 1
 schema: TechArticle
-lang: it
-slug: /guide/fluentis-erp-structure
-tags: [Fluentis ERP, documentazione, guida introduttiva, ERP software]
+tags: [Fluentis ERP]
 toc_max_heading_level: 4
+last_update:
+  author: Fluentis Documentation Team
+  date: 2025-10-28
 ---
 
 # Introduzione alla documentazione di Fluentis ERP

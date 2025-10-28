@@ -11,6 +11,7 @@ keywords:
   - inizializzazione gestionale
   - roadmap setup Fluentis
 sidebar_position: 2
+schema: TechArticle
 sidebar_label: Fluentis Fast Start e configurazione nuovo ambiente
 tags:
   - setup
@@ -18,13 +19,13 @@ tags:
   - Fluentis ERP
 last_update:
   author: Fluentis Documentation Team
-  date: 2025-10-24
+  date: 2025-10-28
 ---
 
 # Roadmap di configurazione di un nuovo ambiente per Fluentis ERP
 
 :::tip[FAST START]
-Il **Fast Start** è una funzionalità progettata per rendere** rapida e semplice l'inizializzazione** di un nuovo ambiente  **Fluentis ERP**, progettata per ridurre al minimo i tempi di setup e garantire la coerenza dei dati iniziali.  
+Il **Fast Start** è una funzionalità progettata per rendere **rapida e semplice l'inizializzazione** di un nuovo ambiente  **Fluentis ERP**, progettata per ridurre al minimo i tempi di setup e garantire la coerenza dei dati iniziali.  
 :::
 
 Grazie al **Fast Start**, il sistema esegue in modo automatico la **creazione e configurazione delle tabelle fondamentali**, impostando i principali parametri amministrativi, contabili e anagrafici.  
@@ -184,7 +185,7 @@ Tabelle coinvolte (Stored Procedure Fluentis.SH_CreateNewYear_IT):
 Se si sceglie di **non utilizzare il Fast Start**, è necessario procedere con una **configurazione manuale** delle seguenti tabelle.  
 Questa modalità richiede un controllo puntuale dei parametri e dei collegamenti logici tra le varie tabelle, ma consente una **personalizzazione completa dell’ambiente**.
 
-### **Checklist operativa**
+### **Checklist operativa**:
 Questa sezione funge da **checklist operativa** per la verifica e la compilazione delle tabelle fondamentali, ordinate per area funzionale.  
 Ogni voce è espandibile e contiene:
 - La **finalità** della tabella.  
