@@ -1,35 +1,36 @@
 ---
-title: Ispettori
+title: Inspektori
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Ispettori**.
+Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Inspektori**.
 
-In questa tabella è possibile codificare gli *Ispettori* che effettueranno valutazioni interne o a fornitori.   
-Un esempio di utilizzo lo troviamo nella gestione **Valutazioni iniziali e periodiche fornitori**.
+U ovoj tablici moguće je kodirati *Inspektore* koji provode interne procjene ili procjene dobavljača.  
+Primjer primjene nalazi se u modulu **Početne i periodične procjene dobavljača**.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Ispettori**
+**Pretraga inspektora**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima.
+Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
 
-**Inserimento Ispettori**
+**Unos inspektora**
 
-Per poter inserire nuovi *Ispettori* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Inspektora* potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Ispettore - Codice**: è il codice dell'*Ispettore*.   
-> **Ispettore - Descrizione**: è la descrizione dell'*Ispettore*.   
-> **Ispettore interno - Codice**: è il codice del dipendente ispettore*.   
-> **Ispettore interno - Cognome**: è il cognome del dipendente ispettore*.   
-> **Ispettore interno - Nome**: è il nome del dipendente ispettore*.   
-> **Ispettore esterno - Descrizione**: è la ragione sociale del fornitore ispettore*.   
-> **Attivo**: indica se l'ispettore è ancora in carica.   
-> **Inizio validità**: è la data dalla quale l'ispettore entra in carica.   
-> **Fine validità**: è la data dalla quale l'ispettore cessa di essere in carica.   
-> **Note**: annotazioni libere.
+> **Inspektor – šifra**: è il codice dell'*Ispettore*.   
+> **Inspektor – opis**: è la descrizione dell'*Ispettore*.   
+> **Interni inspektor – šifra**: è il codice del dipendente ispettore*.   
+> **Interni inspektor – prezime**: è il cognome del dipendente ispettore*.   
+> **Interni inspektor – ime**: è il nome del dipendente ispettore*.   
+> **Eksterni inspektor – opis**: è la ragione sociale del fornitore ispettore*.   
+> **Aktivan**: indica se l'ispettore è ancora in carica.   
+> **Početak valjanosti**: è la data dalla quale l'ispettore entra in carica.   
+> **Kraj valjanosti**: è la data dalla quale l'ispettore cessa di essere in carica.   
+> **Napomene**: slobodne bilješke.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

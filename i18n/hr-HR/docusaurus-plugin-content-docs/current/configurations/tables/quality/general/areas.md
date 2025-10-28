@@ -1,30 +1,30 @@
 ---
-title: Aree qualità
+title: Područja kvalitete
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Aree qualità**.
+Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Područja kvalitete**.
 
-In questa tabella è possibile codificare le *Aree qualità* di azione dei documenti.   
-Alcuni esempi di utilizzo dei *Aree qualità* li troviamo nelle gestioni:
-> **Azioni correttive** - nei *dati di testata*;   
-> **Corsi base** - nei *dati di testata*;   
-> **Corsi di formazione** - nei *dati di testata*.   
+U ovoj tablici moguće je kodirati *područja kvalitete* na koja se dokumenti odnose.
+Neki primjeri primjene *područja kvalitete* nalaze se u sljedećim modulima:  
+> **Korektivne radnje** - u *zaglavnim podacima*;   
+> **Osnovni tečajevi** - u *zaglavnim podacima*;   
+> **Tečajevi osposobljavanja** - u *zaglavnim podacima*.   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Aree qualità**
+**Pretraga područja kvalitete**  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
 
-**Inserimento Aree qualità**
+**Unos područja kvalitete**
 
-Per poter inserire nuovi *Aree qualità* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si deve inserire almeno il campo obbligatoro richiesto dal programma: il **Codice**.
+Za unos novih *područja kvalitete* potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.   
+Za novi zapis potrebno je unijeti barem obavezno polje koje program zahtijeva: **Šifra**.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Codice**: è il codice dell'*Area qualità*.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *područja kvalitete*.   
+> **Napomene**: slobodne bilješke.   
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

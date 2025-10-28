@@ -1,20 +1,21 @@
 ---
-title: Tipi limite
+title: Vrste limita
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Tipi limite**.
+Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Vrste limita**.
 
-In questa tabella è possibile codificare i *Tipi limite*.   
-Il *Tipo limite* lo troviamo associato sempre al *Tipo valore* (solamente per *Tipi valore* numerici).   
-Alcuni esempi di utilizzo dei *Tipi limite* li troviamo nelle gestioni:
-> **Schede tecniche** - nel tabulatore *Proprietà*;   
-> **Piani di controllo** - nel tabulatore *Prove pianificate*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*.
+U ovoj tablici moguće je kodirati *Vrste limita*.   
+*Vrsta limita* uvijek je povezana s *vrstom vrijednosti* (samo za numeričke *vrste vrijednosti*).   
+Neki primjeri primjene *Tipi limite* li troviamo nelle gestioni:
+> **Tehničke kartice** - u kartici *Svojstva*;   
+> **Planovi kontrole** - u kartici *Planirana ispitivanja*;   
+> **Kontrola artikala** - u kartici *Ispitivanja*;   
+> **Certifikati analize** - u kartici *Kontrole i izmjerene vrijednosti > Izmjerene vrijednosti*;   
+> **M.E.S.** - u kartici *Kontrola kvalitete > Ispitivanja*.
 
-La tabella contiene dei valori predefiniti dal sistema e non è possibile inserirne di nuovi, eliminarli o modificarli; i valori predefiniti sono:   
+Tablica sadrži unaprijed definirane vrijednosti sustava koje nije moguće dodavati, brisati ili mijenjati.  
+Unaprijed definirane vrijednosti su:    
 | Codice | Descrizione |
 |:-:|:--|
 | N.L. | Nessun limite richiesto |   

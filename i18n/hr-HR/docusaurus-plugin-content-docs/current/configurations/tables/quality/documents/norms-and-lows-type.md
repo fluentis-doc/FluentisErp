@@ -1,31 +1,31 @@
 ---
-title: Tipi norme e leggi
+title: Tipovi normi i zakoni
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Documenti > Tipi norme e leggi**.
+Tablica se nalazi na putu **Tablice > Kvaliteta > Dokumenti > Tipovi normi i zakoni**.
 
-:::important A cosa serve
-In questa tabella è possibile codificare le diverse tipologie di Norme e Leggi.   
-Un esempio di utilizzo lo troviamo nella gestione **Norme e Leggi**.
+:::important Čemu služi  
+U ovoj je tablici moguće kodirati različite tipove normi i zakona.   
+Primjer upotrebe nalazi se u modulu **Norme i zakoni**.
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Tipi norme e leggi**
+**Pretraga Tipova normi i zakona**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
 
-**Inserimento Tipi norme e leggi**
+**Unos Tipova normi i zakona**
 
-Per poter inserire nuovi *Tipi norme e leggi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Tipova normi i zakona* potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja program traži: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Codice tipo**: è il codice del *Tipo norma o legge*.   
-> **Descrizione tipo**: è la descrizione del *Tipo norma o legge*.   
-> **Eliminabile**: indica che rende eliminabile o meno questa tipologia;   
-> **Note**: annotazioni libere.
+> **Šifra tipa**: šifra *tipa norme ili zakona*.   
+> **Opis tipa**: opis *tipa norme ili zakona*.   
+> **Mogućnost brisanja**: označava može li se ta tipologija izbrisati ili ne;   
+> **Napomene**: slobodne bilješke.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

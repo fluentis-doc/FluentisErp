@@ -71,24 +71,24 @@ Popis sadrži sljedeće informacije:
 >> **Broj kopija**: označava broj tiskanih kopija koje primatelj želi primiti.    
 >> **Bilješke**: slobodne napomene   
 
-*Pulsanti specifici*:      
-**Nuovo destinatario**: inserisce una nuova riga in elenco.   
-**Cancella destinatario**: cancella la riga selezionata dall'elenco.   
+*Specifične tipke*:      
+**Novi primatelj**: umeće novi redak u popis.     
+**Izbriši primatelja**: briše odabrani redak iz popisa.     
 
-### Accesso consentito alle funzioni
-In questo elenco è possibile inserire le *Funzioni aziendali* a cui dare i diritti di accesso.   
-Se non vengono inserite righe in questa tabella, allora l'accesso è consentito a tutti.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Note**: annotazioni libere.
+### Dozvoljen pristup funkcijama  
+U ovaj se popis mogu unijeti *poslovne funkcije* kojima će se dodijeliti prava pristupa.    
+Ako se u ovoj tablici ne unese nijedan redak, pristup je omogućen svima.     
+Popis se sastoji od sljedećih informacija:    
+> **Funkcija**: kod *poslovne funkcije*.     
+> **Opis funkcije**: opis *poslovne funkcije*.   
+> **Napomene**: slobodne bilješke.  
 
-*Pulsanti specifici*:      
-**Nuova funzione di accesso**: inserisce una nuova riga in elenco.   
-**Cancella funzione di accesso**: cancella la riga selezionata dall'elenco.   
+*Specifične tipke*:      
+**Nova funkcija pristupa**: umeće novi redak u popis.     
+**Izbriši funkciju pristupa**: briše odabrani redak iz popisa.   
 
-### Extra data
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) per ogni *Documento di origine esterna*.   
-Questi *Extra data* possono venire ereditati nel *Documento esterno* di quella determinata categoria.   
+### Dodatni podaci  
+Moguće je unijeti [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *dokument vanjskog podrijetla*.     
+Ti *Extra data* mogu se naslijediti u *vanjski dokument* određene kategorije.     
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

@@ -1,64 +1,64 @@
 ---
-title: Funzioni aziendali
+title: Uloge u poduzeću
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Funzioni aziendali**.
+Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Poslovne funkcije**.
 
-Per funzione aziendale si intende un gruppo di *dipendenti/utenti* o *centri di lavoro* che eseguono attività omogenee.   
-In questa tabella è possibile codificare le *Funzioni aziendale* utilizzate nella maggior parte delle gestioni dell'area Qualità per indicare: la funzione responsabile del documento; la funzione che può effettuare o che effettua determinati tipi di attività, ecc.   
+Pod poslovnom funkcijom podrazumijeva se skup *zaposlenika/korisnika* ili *radnih centara* koji obavljaju slične, homogeno definirane aktivnosti.  
+U ovoj tablici moguće je kodirati *poslovne funkcije* koje se koriste u većini modula područja Kvalitete za označavanje, primjerice: funkcije odgovorne za dokument, funkcije koje mogu izvršavati određene vrste aktivnosti i slično.     
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.  
 
-**Ricerca Funzioni aziendali**
+**Pretraga poslovnih funkcija**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
 
-**Inserimento Funzioni aziendali**
+**Unos poslovnih funkcija**
 
-Per poter inserire nuove *Funzioni aziendali* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *poslovnih funkcija* potrebno je kliknuti na prvi prazan redak u mreži ili pritisnuti tipku **Novi**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
 
-## Funzioni aziendali
+## Poslovne funkcije
 
-E' l'elenco dove vengono inserite le informazioni principali della *Funzione aziendale*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione aziendale**: è la descrizione della *Funzione aziendale*.   
-> **Ruolo**: è il codice del *Ruolo A.R.M.*   
-> **Descrizione ruolo**: è la descrizione del *Ruolo A.R.M.*   
-> **Motivo del coinvolgimento nei Reclami**: è possibile indicare eventuali coinvolgimenti nei *Reclami* specifici/caratteristici della *Funzione aziendale*; questi verranno riportati in automatico nei *Reclami* all'atto del coinvolgimento della *Funzione aziendale*.   
-> **Motivo del coinvolgimento nelle Non conformità**: è possibile indicare eventuali coinvolgimenti nelle *Non conformità* specifici/caratteristici della *Funzione aziendale*; questi verranno riportati in automatico nelle *Non conformità* all'atto del coinvolgimento della *Funzione aziendale*.   
-> **Note**: annotazioni libere.
+Ovo je popis u koji se unose osnovne informacije o *poslovnoj funkciji*.   
+Popis se sastoji od sljedećih informacija:    
+> **Šifra**: šifra *poslovne funkcije*.  
+> **Opis poslovne funkcije**: opis *poslovne funkcije*.   
+> **Uloga**: šifra *ARM uloge*   
+> **Opis uloge**: opis *ARM uloge*   
+> **Razlog uključivanja u pritužbe**: omogućuje navođenje tipičnih ili specifičnih slučajeva uključivanja poslovne funkcije u *Pritužbe* ti će se podaci automatski prenijeti u *Pritužbe*; ti će se podaci automatski prenijeti u *Pritužbe* kada se funkcija uključi.   
+> **Razlog uključivanja u nesukladnosti**: omogućuje navođenje specifičnih ili karakterističnih razloga uključivanja *poslovne funkcije* u *Nesukladnosti*; ti će se podaci automatski prenijeti u *Nesukladnosti* prilikom uključivanja funkcije.
+> **Napomene**: slobodne bilješke.
 
-### Dipendenti e Utenti collegati alla funzione
+### Zaposlenici i korisnici povezani s funkcijom
 
-In questo elenco è possibile associare i *Dipendenti* e/o *Utenti* che fanno parte della *Funzione aziendale* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Dipendente**   
->> **Operatore**: è il codice del *Dipendente*.   
->> **Cognome**: è il cognome del *Dipendente*.   
->> **Nome**: è il nome del *Dipendente*.   
+U ovom popisu moguće je povezati *zaposlenike* i/ili *korisnike* koji čine odabranu *poslovnu funkciju*.   
+Popis se sastoji od sljedećih informacija:   
+> **Zaposlenik**   
+>> **Operater**: šifra *zaposlenika*.   
+>> **Prezime**: prezime *zaposlenika*.   
+>> **Ime**: ime *zaposlenika*.   
 >
-> **Utente**   
->> **Nome**: è il codice dell'*Utente A.R.M.*   
->> **Descrizione**: è la descrizione dell'*Utente A.R.M.*   
+> **Korisnik**   
+>> **Naziv**: šifra *ARM korisnika*   
+>> **Opis**: opis *ARM korisnika*   
 >
-> **Validità**   
->> **Predefinito**: un solo soggetto può essere il soggetto predefinito; il *soggetto predefinito* sarà quello che verrà proposto, ove previsto, come referente per la *Funzione aziendale* .   
->> **Attivo**: indica se il soggetto fa ancora parte della *Funzione aziendale*.   
->> **Inizio validità**: è la data dalla quale il soggetto entra a far parte della *Funzione aziendale*.   
->> **Fine validità**: è la data dalla quale il soggetto cessa di far parte della *Funzione aziendale*.   
+> **Valjanost**   
+>> **Zadani**: samo jedan subjekt može biti postavljen kao *zadani*; taj će se subjekt, gdje je primjenjivo, automatski predlagati kao referent *poslovne funkcije* .   
+>> **Aktivan**: označava je li subjekt još uvijek dio *poslovne funkcije*.   
+>> **Početak valjanosti**:datum od kojeg subjekt postaje član *poslovne funkcije*.   
+>> **Kraj valjanosti**: datum od kojeg subjekt prestaje biti član *poslovne funkcije*.   
 >
-> **Note**: annotazioni libere.
+> **Napomene**: slobodne bilješke.
 
-### Centri di lavoro
+### Radni centri
 
-Le *Funzioni aziendali* possono ricoprire anche ruoli di tipo produttivo e identificare *Centri di lavoro* o loro gruppi.   
-In questo elenco è possibile associare i *Centri di lavoro* che fanno parte della *Funzione aziendale* selezionata.   
-L'elenco si compone delle seguenti informazioni:   
-> **Centro di lavoro**: è il codice del *Centro di lavoro*.   
-> **Descrizione centro di lavoro**: è la descrizione del *Centro di lavoro*.   
-> **Note**: annotazioni libere.
+*Poslovne funkcije* mogu imati i proizvodne uloge te predstavljati *radne centre* ili njihove skupine.     
+U ovom popisu moguće je povezat *radne centre* koji su dio odabrane *poslovne funkcije*.  
+Popis se sastoji od sljedećih informacija:     
+> **Radni centar**: šifra *radnog centra*.   
+> **Opis radnog centra**: opis *radnog centra*.   
+> **Napomene**: slobodne bilješke.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
