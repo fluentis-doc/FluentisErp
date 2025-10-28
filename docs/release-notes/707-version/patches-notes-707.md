@@ -22,6 +22,8 @@ sidebar_position: 1
 > -	SH -  revisione webapi di import FSLedgerAccount, revisione gestione update su collection CustomerSupplierAccountPublicAdministrations (#TT04506/25) 
 > -	WM - Duplica articoli- creare la possibilità di estendere in modo personalizzato per altre proprietà da duplicare (#TT04607/25) 
 > -	WM - Tracciabilità lotti: corretto controllo validità componenti in distinta base. (TT04524/25) 
+> - SH - Documenti Sdi: Risolto errore che si verificava nella maschera dei Documenti di Acquisto in Entrata in presenza di una personalizzazione sull'oggetto standard. (#TT04538/25)    
+> - SCM - DDT di Acquisto: Corretta anomalia nell'aggiornamento del prezzo di un articolo in caso di attivazione/disattivazione del flag Prezzo per unità di misura alternativa. (#TT04561/25)    
 
 ### Patch 707.1-0051 - 16/10/2025
 
