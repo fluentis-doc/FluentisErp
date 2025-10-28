@@ -16,33 +16,34 @@ Neki primjeri primjene *Tipi limite* li troviamo nelle gestioni:
 
 Tablica sadrži unaprijed definirane vrijednosti sustava koje nije moguće dodavati, brisati ili mijenjati.  
 Unaprijed definirane vrijednosti su:    
-| Codice | Descrizione |
+| Šifra | Opis |
 |:-:|:--|
-| N.L. | Nessun limite richiesto |   
-| = | Uguale |   
-| x\> | Maggiore |   
-| x\< | Minore |   
-| x \<\> | Diverso |   
-| x\<= | Minore o uguale |   
-| x\>= | Maggiore o uguale |   
-| \<;x;\> | Al di fuori di |   
-| \<;x;\>= | Minore o Maggiore/Uguale |   
-| \<=;x;\> | Minore/uguale o Maggiore |   
-| \<=;x;\>= | Minore/Uguale o Maggiore/Uguale |   
-| \>;x;\< | Strettamente compreso |   
-| \>;x;\<= | Maggiore e Minore o uguale |   
-| \>=;x;\< | Maggiore o uguale e Minore |   
-| \>=;x;\<= | Compreso |   
+| N.L. | Nije potreban limit |   
+| = | Jednako |   
+| x\> | Veće |   
+| x\< | Manje |   
+| x \<\> | Različito |   
+| x\<= | Manje ili jednako |   
+| x\>= | Veće ili jednako |   
+| \<;x;\> | Izvan granica |   
+| \<;x;\>= | Manje ili veće/jednako |   
+| \<=;x;\> | Manje/jednako ili veće |   
+| \<=;x;\>= | Manje/jednako ili veće/jednako |   
+| \>;x;\< | Strogo između |   
+| \>;x;\<= | Veće i manje ili jednako |   
+| \>=;x;\< | Veće ili jednako i manje |   
+| \>=;x;\<= | U granicama |   
 
-**Ricerca Tipi limite**
+**Pretraga vrsta limita**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja s rezultatima.
+Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Tipo limite**: informazione di sola lettura, è il codice del *Tipo limite*.   
-> **Descrizione tipo**: informazione di sola lettura, è la descrizione del *Tipo limite*.   
-> **Richiede limite minimo**: informazione di sola lettura, indica se è richiesto un limite minimo o inferiore e abilita la colonna *Carattere limite minimo*.   
+> **Vrsta limita**: samo za čitanje, šifra *Vrste limita*.   
+> **Opis vrste**: samo za čitanje, opis *Vrste limita*.   
+> **Zahtijeva donju granicu**: informazione di sola lettura, indica se è richiesto un limite minimo o inferiore e abilita la colonna *Carattere limite minimo*.   
 > **Richiede limite massimo**: informazione di sola lettura, indica se è richiesto un limite massimo o superiore e abilita la colonna *Carattere limite massimo*.   
 > **Carattere limite minimo**: è possibile indicare un testo per identificare un intervallo tra limite minimo e valore nominale; esempio: *< ≤ > ≥ ≠ =*.   
 > **Carattere limite massimo**: è possibile indicare un testo per identificare un intervallo tra valore nominale e limite massimo; esempio: *< ≤ > ≥ ≠ =*.   
