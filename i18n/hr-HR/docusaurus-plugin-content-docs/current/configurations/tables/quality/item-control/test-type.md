@@ -3,111 +3,111 @@ title: Vrsta testiranja
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putanji **Tabelle > Qualità > Controlli articolo > Tipi prova**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kontrola artikala > Vrsta testiranja**.
 
-In questa tabella è possibile codificare le tipologie di Prove da effettuare, in accettazione merce e durante il processo produttivo, sugli articoli.   
-Alcuni esempi di utilizzo dei *Tipi prova* li troviamo nelle gestioni:
-> **Schede tecniche** - nel tabulatore *Proprietà*;   
-> **Piani di controllo** - nel tabulatore *Prove pianificate*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*.
+U ovoj tablici moguće je definirati različite vrste testiranja koje se provode prilikom prijema robe i tijekom proizvodnog procesa na artiklima.       
+Primjeri korištenja *Vrsta testiranja* nalaze se u modulima:    
+> **Tehnički listovi** - kartica *Svojstva*;  
+> **Kontrolni planovi** - kartica *Planirani testovi*;     
+> **Kontrola artikala** - kartica *Testovi*;     
+> **Kontrola artikala** - kartica *Testovi*;    
+> **M.E.S.** - kartica *Kontrola kvalitete > Testovi*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
 
-**Ricerca Tipi prova**
+**Pretraživanje Vrsta testiranja**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon postavljanja željenih filtera, kliknite gumb **Pretraži** kako bi se rezultati prikazali u mreži rezultata.
 
-**Inserimento Tipi prova**
+**Unos Vrsta testiranja**
 
-Per poter inserire nuovi *Tipi prova* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos nove *Vrsta testiranja* kliknite na prvu praznu liniju u mreži ili pritisnite gumb **Novi**.  
+Za novi zapis potrebno je unijeti barem obavezna polja: **Šifra** i **Opis**.
 
-**Duplica Tipi prova**
+**Dupliciranje Vrsta testiranja**  
 
-Per poter duplicare un *Tipo prova* esistente in un nuovo *Tipo prova* è necessario cliccare nella griglia sul *Tipo prova* da cui si desidera duplicare e premere il pulsante **Duplica**.   
-Verrà visualizzata una richiesta di **Codice** del nuovo *Tipo prova* (dato obbligatorio) e dei flags che permettono di far scegliere se duplicare anche le informazioni di: *Configurazione*, *Esiti possibili*, *Funzione* e *Immagini*.   
-Premere successivamente il pulsante **OK** o il pulsante **Cancel** se si desidera proseguire nell'attività di duplica o meno. 
+Za dupliciranje postojeće *Vrsta testiranja* u novu, odaberite test u mreži i pritisnite gumb **Dupliciraj**.  
+Pojavit će se prozor za unos **Šifre** novog testa (obavezno) i opcije koje omogućuju kopiranje informacija o: *Konfiguraciji*, *Mogućim rezultatima*, *Funkcijama* i *Slikama*.  
+Zatim kliknite **OK** za nastavak ili **Cancel** za otkazivanje.  
 
-## Tipi prova
+## Vrsta testiranja  
 
-E' l'elenco dove vengono inserite le informazioni principali del *Tipo prova*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Tipo prova*.   
-> **Descrizione**: è la descrizione del *Tipo prova*.   
-> **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di metodologie di prove riconosciute standard.   
+Ovdje se unose osnovne informacije o *Vrsta testiranja*.  
+Popis sadrži sljedeća polja:    
+> **Šifra**: šifra testa.       
+> **Opis**: opis testa.       
+> **Referenca standardnog kontrolnog plana**: opisno polje koje sadrži reference na standardizirane metode testiranja.    
 >  
-> **Categoria**
->> **Codice**: è il codice della *Categoria*.   
->> **Descrizione**: è la descrizione della *Categoria*.   
->> **Distruttiva**: indica se la prova è di tipo distruttiva.   
+> **Kategorija**  
+>> **Šifra**: šifra kategorije.      
+>> **Opis**: opis kategorije.      
+>> **Destruktivno**: označava je li test destruktivan.     
 >
-> **Laboratorio interno**: indica se la prova viene effettuata internamente.   
+> **Interni laboratorij**: označava da li se test provodi u internom laboratoriju.    
 >  
-> **Laboratorio esterno**
->> **Descrizione**: abilitato se il Laboratorio interno non è stato indicato, è la ragione sociale del *laboratorio di analisi* (*fornitore*) che effettuerà la prova.   
+> **Vanjski laboratorij**    
+>> **Naziv**: ako interni laboratorij nije odabran, ovdje se upisuje naziv vanjskog laboratorija koji provodi test.      
 >  
-> **Strumento di misura**
->> **Codice**: è il codice della *Categoria di strumento di misura* da utilizzare per rilevare i valori del *Tipo prova*.   
->> **Descrizione**: è la descrizione della *Categoria di strumento di misura* da utilizzare per rilevare i valori del *Tipo prova*.   
+> **Mjerni instrument**    
+>> **Šifra**: šifra kategorije mjernog instrumenta koji se koristi za očitanje rezultata testa.     
+>> **Opis**: opis kategorije mjernog instrumenta koji se koristi.     
 >  
-> **Valori**
->> **Da rilevare**: indica se la prova è da rilevare o è solamente una *Proprietà* e non è rilevabile e viene quindi utilizzato nelle *Schede tecniche*.   
->> **Unità di misura**: è l'*Unità di misura* dei valori da rilevare.   
->> **Tipo valore**: è il *Tipo valore* da rilevare: *Numerico*, *Si/No* o *Testo*.   
->> **Tipo limite**: abilitato se il *Tipo valore* è *Numerico*, è il *Tipo limite* che verrà proposto nelle Prove.   
+> **Vrijednosti**    
+>> **Za očitavanje**: označava je li test za očitavanje ili se radi samo o svojstvu, koje se koristi u tehničkim listovima.     
+>> **Jedinica mjere**: jedinica mjere za očitavanje.      
+>> **Tip vrijednosti**: tip vrijednosti za očitavanje: *Numerički*, *Da/Ne* ili *Tekst*.       
+>> **Tip granice**: ako je tip vrijednosti numerički, ovdje se definira tip granice koji će biti ponuđen u testu.     
 >  
-> **Tipo controllo prova**
->> **Generico**: indica se la prova è comunemente attuata sulle tipologie di documento che si potranno specificare nelle successive colonne.   
->> **Tipo documento**: abilitato se il *Tipo valore* è *Generico*, è il documento dove il *Tipo prova* viene comunemente attuata.   
->> **Proposta in...**: abilitato se il *Tipo valore* è *Generico* e se il *Tipo documento* lo prevede, è il dettaglio (*Testata documento* o *Riga documento*) dove il *Tipo prova* viene comunemente attuata.   
->> **Codice**: è il codice del *Tipo controllo prova* da utilizzare.   
->> **Descrizione**: è la descrizione del *Tipo controllo prova* da utilizzare.   
->> **Frequenza**: è la frequenza descrittiva con la quale effettuare il controllo.   
->  
-> **Note**: annotazioni libere.   
+> **Tip kontrole testa**    
+>> **Generički**: označava se primjenjuje li se test na uobičajene tipove dokumenata.    
+>> **Tip dokumenta**: ako je tip vrijednosti generički, označava dokument u kojem se test obično provodi.      
+>> **Predloženo u...**: detalj dokumenta (*zaglavlje* ili *redak*) gdje se test obično provodi.    
+>> **Šifra**: šifra tipa kontrole testa koji se koristi.    
+>> **Opis**: opis tipa kontrole testa.       
+>> **Frekvencija**: opis frekvencije provođenja kontrole.    
+> **Napomene**: slobodne bilješke.       
 
-### Attributi Tipo di prova
+### Atributi Vrsta testiranja  
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo prova*.   
-Questi *Extra data* possono venire ereditati nelle *Prove* dei documenti dove è previsto l'utilizzo degli attributi.   
+Mogu se definirati [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/search-extradata) za test.       
+Ovi podaci mogu se naslijediti u testovima dokumenata gdje se atributi koriste.   
 
-### Parametri di configurazione Prova e strumento di misura
+### Parametri konfiguracije testa i mjernog instrumenta  
 
-Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Questi *Extra data* possono venire ereditati nelle *Prove* dei documenti dove è prevista una configurazione.   
+Sadrži [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) potrebne operaterima za pripremu instrumenata za izvođenje testa. To su pripremne konfiguracije i operativne informacije potrebne za izvođenje testa.  
+Ovi podaci mogu se naslijediti u testovima dokumenata gdje je konfiguracija potrebna.     
 
-### Esiti possibili
+### Mogući rezultati  
 
-E' possibile personalizzare, per il *Tipo prova* selezionato, i *Tipi esito* possibili.   
-Quando verrà rilevata una singola prova, in base alla sua conformità, il sistema proporrà l'esito *positivo* oppure *negativo* di default.   
-L'elenco si compone delle seguenti informazioni:   
-> **Esito**: è il codice del *Tipo esito*.   
-> **Descrizione esito**: è la descrizione del *Tipo esito*.   
-> **Predefinito positivo**: indica che sarà proposto come esito positivo quando verrà rilevata una prova.   
-> **Predefinito negativo**: indica che sarà proposto come esito negativo quando verrà rilevata una prova.   
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Tipi esito* per il "Tipo prova" selezionato.   
-> **Note**: annotazioni libere.
+Za odabranu *Vrsta testiranja* moguće je definirati moguće rezultate.    
+Kada se provede test, sustav predlaže *pozitivan* ili *negativan* rezultat prema zadanom.    
+Popis sadrži:      
+> **Rezultat**: šifra rezultata.      
+> **Opis rezultata**: opis rezultata.      
+> **Zadano pozitivno**: predloženo kao pozitivan rezultat.     
+> **Zadano negativno**: predloženo kao negativan rezultat.    
+> **Redoslijed**: redoslijed prikaza u popisu rezultata.       
+> **Napomene**: slobodne bilješke.  
 
-### Funzioni di rilevamento ed approvazione
+### Funkcije očitavanja i odobravanja
 
-E' un'attribuzione di diritti che elenca chi può rilevare e/o approvare i valori della prova.   
-L'elenco si compone delle seguenti informazioni:   
-> **Funzione**: è il codice della *Funzione aziendale*.   
-> **Descrizione funzione**: è la descrizione della *Funzione aziendale*.   
-> **Tipo attività**: è il diritto dato alla *Funzione aziendale* durante le attività di rilevamento e/o approvazione di una prova. I valori possibili sono:   
-> - *Può rilevare* - la *Funziona aziendale* ha i permessi di sola rilevazione dei valori;   
-> - *Può approvare* - la *Funziona aziendale* ha i permessi di sola approvazione della prova;   
-> - *Può rilevare e approvare* - la *Funziona aziendale* ha i permessi di rilevazione dei valori e approvazione della prova.   
+Definira prava tko može očitavati i odobravati rezultate testa.      
+Popis sadrži:     
+> **Funkcija**: šifra funkcije.    
+> **Opis funkcije**: opis funkcije.       
+> **Tip aktivnosti**: pravo dodijeljeno *Funkciji u tvrtki* tijekom aktivnosti očitavanja i/ili odobravanja testa. Moguće vrijednosti su:      
+> - *Može očitavati* - Funkcija u tvrtki ima dopuštenje samo za očitavanje vrijednosti;     
+> - *Može odobravati* - Funkcija u tvrtki ima dopuštenje samo za odobravanje testa;      
+> - *Može očitavati i odobravati* - Funkcija u tvrtki ima dopuštenje za očitavanje vrijednosti i odobravanje testa.     
 >
-> Le altre *Funzioni aziendali* non elencate non hanno alcun diritto di rilevazione valori e approvazione della prova.   
-> Se non vengono specificate *Funzioni aziendali* tutti gli operatori potranno rilevare valori e approvare la prova.
+> Ostale *Funkcije u tvrtki* koje nisu navedene nemaju pravo očitavanja vrijednosti niti odobravanja testa.     
+> Ako se funkcije ne definiraju, svi operateri imaju pravo očitavati vrijednosti i odobravati test.  
 >
-> **Note**: annotazioni libere.
+> **Napomene**: slobodne bilješke.  
 
-### Immagini
+### Slike
 
-E' possibile associare delle immagini utili alla prova da rilevare. Per esempio, potrebbe servire ad indicare visivamente alcune caratteristiche o attività da fare durante la preparazione e l'attuazione della prova stessa.
+Moguće je pridružiti slike koje mogu biti korisne za test koji se provodi.  
+Na primjer, slike mogu poslužiti za vizualno prikazivanje određenih karakteristika ili aktivnosti koje je potrebno obaviti tijekom pripreme i izvođenja samog testa.  
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
