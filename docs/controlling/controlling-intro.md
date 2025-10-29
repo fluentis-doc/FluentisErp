@@ -1,9 +1,20 @@
 ---
-title: Controlling
+title: Controlling Fluentis ERP
+description: Scopri il modulo Controlling di Fluentis ERP - chiusure infrannuali, budget, riclassificazioni, controllo di gestione e integrazione con produzione, vendite e acquisti.
 sidebar_position: 1
+keywords: [Controlling ERP, Fluentis ERP, Contabilità analitica, Budget, Riclassificazioni bilancio, Centro di costo, Reporting gestionale]
+schema: TechArticle
+tags:
+  - Controlling
+  - Fluentis ERP
+last_update:
+  author: Fluentis Documentation Team
+  date: 2025-10-29
 ---
 
-L'area dedicata al controlling di **Fluentis ERP** contempla tutte le funzionalità necessarie alla preparazione di simulazioni di bilancio infrannuale, la gestione delle riclassificazioni di bilancio su [*Modelli*](/docs/controlling/reclassifications/create-reclassification-model) liberamente configurabili, così come l'inserimento e manutenzione di tutte le registrazioni gestionali necessarie per la contabilità direzionale per centro di costo.
+# Controlling Fluentis ERP
+
+Il modulo **Controlling di Fluentis ERP** consente alle aziende di monitorare e gestire la preparazione di simulazioni di bilancio infrannuale, la gestione delle riclassificazioni di bilancio su [*Modelli*](/docs/controlling/reclassifications/create-reclassification-model) liberamente configurabili, così come l'inserimento e manutenzione di tutte le registrazioni gestionali necessarie per la contabilità direzionale per centro di costo.
 
 Sono presenti inoltre procedure di consolidamento di bilancio dedicate alle installazioni multisocietarie, così come la possibilità di effettuare comparazioni sui dati storici elaborati, le previsioni di vendita e il calcolo del costo prodotto, i budget per centro aziendale.
 
@@ -13,7 +24,18 @@ L'utente può configurare liberamente in ogni momento, seguendo l'evoluzione del
 
 La flessibilità del modulo consente la ripresa dei dati dalle varie aree di **Fluentis ERP** ma anche il caricamento da fogli excel esterni oppure l'inserimento manuale.
 
-## Moduli dell'area
+## Moduli Controlling ERP
+
+Le principali aree funzionali sono:
+
+- **[Chiusure infrannuali](/docs/controlling/mid-year-closures/general-overview)**: simulazione extracontabile del bilancio, gestione ratei, risconti, rimanenze e consolidamento.
+- **[Controllo di gestione](/docs/controlling/controlling-recordings/controlling-recording-intro)**: registrazione movimenti fisici, storici gestionali, procedure periodiche e storico di progetto.
+- **[Reporting e Riclassificazioni](/docs/controlling/reclassifications/reclassification-overview)**: modelli di riclassificazione, comparazioni e analisi dei dati.
+- **[Budgeting](/docs/controlling/budget/general-overview)**: registrazioni di budget mensilizzate, gestione delle registrazioni extracontabili.
+- **[Costo prodotto](/docs/controlling/cost-calculation/product-cost-intro)**: valorizzazione delle distinte basi di prodotto.
+- **[Previsioni di vendita](/docs/controlling/sales-forecast/sales-forecast-intro)**: elaborazione previsioni basate sui dati storici di vendita.
+
+Di seguito sono descritti tutti i moduli principali con link e sintesi dei contenuti:
 
 import Link from '@docusaurus/Link';
 
@@ -91,39 +113,17 @@ import Link from '@docusaurus/Link';
     </div>
 </div>
 
-## Integrazioni con altre aree
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/finance-area/finance-intro">Contabilità generale</Link>
-        <p>Dalla contabilità generale riprendiamo i saldi di periodo, sia di contabilità generale che di analitica e di progetto. Dal modulo cespiti si valorizzano i dati degli ammortamenti di competenza.</p>
-    </div>
-    <div className="card">
-###     <Link to="/docs/logistics/logistics-intro">Area logistica</Link>
-        <p>Dalla gestione di magazzino importiamo la valorizzazione di periodo delle rimanenze.</p>
-    </div>
-</div>
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/sales/sales-intro">Area vendite</Link>
-        <p>Per rilevare le fatture da emettere, le provvigioni di competenza del periodo prima della loro maturazione. Tutti i documenti dell'area vendite valorizzano la contabilità analitica e di progetto su ogni riga articolo.</p>
-    </div>
-    <div className="card">
-###     <Link to="/docs/purchase/purchases-intro">Area acquisti e c/lavoro</Link>
-        <p>Per rilevare le fatture da ricevere, sia per merce in entrata che per lavorazioni esterne non ancora fatturate. Tutti i documenti dell'area acquisti valorizzano la contabilità analitica e di progetto su ogni riga articolo.</p>
-    </div>
-</div>
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/project-management/project-management-intro">Gestione progetti</Link>
-        <p>Dall'area progetti recepiamo le ore del personale e i dati degli interventi esterni.</p>
-    </div>
-    <div className="card">
-###     <Link to="/docs/production/production-intro">Area produzione</Link>
-        <p>L'area produzione fornisce al controlling i tempi (manodopera e macchina) e le quantità utilizzate nelle fasi di produzione.</p>
-    </div>
-</div>
+## Integrazione Controlling con altre aree di Fluentis ERP
+
+- **[Contabilità generale](/docs/finance-area/finance-intro)**: ripresa saldi di periodo, , sia di contabilità generale che di analitica e di progetto. Dal modulo cespiti si valorizzano i dati degli ammortamenti di competenza.
+- **[Area logistica](/docs/logistics/logistics-intro)**: dalla gestione di magazzino importiamo la valorizzazione di periodo delle rimanenze.
+- **[Area vendite](/docs/sales/sales-intro)**: rilevazione fatture da emettere e provvigioni di competenza del periodo prima della loro maturazione. Tutti i documenti dell'area vendite valorizzano la contabilità analitica e di progetto su ogni riga articolo.
+- **[Area acquisti e c/lavoro](/docs/purchase/purchases-intro)**: rilevazione fatture da ricevere , sia per merce in entrata che per lavorazioni esterne non ancora fatturate. Tutti i documenti dell'area acquisti valorizzano la contabilità analitica e di progetto su ogni riga articolo.
+- **[Gestione progetti](/docs/project-management/project-management-intro)**: per le ore personale e dati interventi esterni.
+- **[Area produzione](/docs/production/production-intro)**: fornisce i tempi (manodopera e macchina) e le quantità utilizzate nelle fasi di produzione.
 
 ## Dati di Base
+
 :::danger[Attenzione]
 Prima di utilizzare le funzionalità disponibili del controllo di gestione, occorre gestire una serie di impostazioni nelle [**Tabelle di base**](/docs/controlling/controlling-parametrization/general-overview), che dipendono dagli obiettivi che si vogliono raggiungere. Per sua natura, il controlling può prevedere solo marginalmente una configurazione [**Fast start**](/docs/guide/fast-start).
 
