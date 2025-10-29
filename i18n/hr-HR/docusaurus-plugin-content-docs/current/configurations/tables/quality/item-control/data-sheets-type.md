@@ -1,65 +1,65 @@
 ---
-title: Tipi scheda tecnica
+title: Vrste podatkovne liste
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi scheda tecnica**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Kontrola artikala > Vrste podatkovne liste**. 
 
-In questa tabella è possibile codificare i *Tipi scheda tecnica*.   
-Il *Tipo scheda tecnica* è parte integrante, assieme all'*Anno*, *Numero* e *Revisione*, del codice univoco della *Scheda tecnica*.
-Alcuni esempi di utilizzo di *Tipi scheda tecnica* li troviamo nelle gestioni:
-> **Schede tecniche** - nei *dati di testata*;   
-> **Parametri Controlli articolo** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzata la *Scheda tecnica*.
+U ovoj tablici moguće je kodificirati *Vrste podatkovne liste*.  
+*Vrsta podatkovne liste* je sastavni dio, zajedno s *Godina*, *Broj* i *Revizija*, jedinstvenog koda *Podatkovne liste*.  
+Neki primjeri upotrebe *Vrste podatkovne liste* nalazimo u upravljanjima:  
+> **Podatkovne liste** - u *podacima zaglavlja*;   
+> **Parametri kontrole artikala** - u tabulatoru *Općenito*;   
+i u svim upravljanjima gdje se koristi *Podatkovna lista*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
 
-**Ricerca Tipi scheda tecnica**
+**Pretraži Vrste podatkovne liste**  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za rezultat. Kada postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rezultatne mreže.
 
-**Inserimento Tipi scheda tecnica**
+**Unos Vrste podatkovne liste**
 
-Per poter inserire nuovi *Tipi scheda tecnica* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Vrste podatkovne liste* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-## Tipi scheda tecnica
+## Vrste podatkovne liste
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi scheda tecnica*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Tipo scheda tecnica*.   
-> **Descrizione**: è la descrizione del *Tipo scheda tecnica*.   
-> **Note**: annotazioni libere.
+Ovdje se unose glavne informacije o *Vrste podatkovne liste*.  
+Popis se sastoji od sljedećih informacija:     
+> **Šifra**: šifra *Vrste podatkovne liste*.     
+> **Opis**: opis *Vrste podatkovne liste*.    
+> **Bilješke**: slobodne napomene.  
 
-### Attributi Tipo scheda tecnica
+### Atributi Vrste podatkovne liste
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipo scheda tecnica*.   
-Questi *Extra data* possono venire ereditati nelle *Schede tecniche* di quella determinata tipologia.   
+Moguće je unijeti [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *Vrstu podatkovne liste*.     
+Ovi *Extra data* mogu se naslijediti u *Podatkovnim listama* te vrste.  
 
-### Metodo di codifica
+### Metoda kodifikacije
 
-E' l'elenco dove vengono inserite le informazioni per la codifica del *Codice* e della *Descrizione* della *Scheda tecnica*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Ordinamento**: è la sequenza di attuazione nella creazione del *Codice* e della *Descrizione* della *Scheda tecnica*.   
-> **Tipo**: è un elenco di valori predefiniti dal sistema che identificano l'oggetto con il quale creare la codifica della *Scheda tecnica*; I valori predefiniti sono:   
->> *ExtraData* - utilizzato solo per la creazione del codice e della descrizione, è un Extra data identificabile dalla colonna *Extradata*;   
->> *Anno* - utilizzato solo per la creazione del codice, è l'*Anno* di creazione della *Scheda tecnica*, impostabile a 2, 3 o 4 cifre impostabili nel campo *Lunghezza*;   
->> *Mese* - utilizzato solo per la creazione del codice, è il *Mese* di creazione della *Scheda tecnica*, valore fisso a 2 cifre;   
->> *Giorno* - utilizzato solo per la creazione del codice, è il *Giorno* di creazione della *Scheda tecnica*, valore fisso a 2 cifre;   
->> *Progressivo* - utilizzato solo per la creazione del codice, è il *Progressivo* di creazione della *Scheda tecnica*, valore iniziale, carattere di riempimento e dimensioni impostabili nel campo *Lunghezza*;   
->> *Codice Tipo* - utilizzato solo per la creazione del codice, è il *Codice* del *Tipo scheda tecnica*;   
->> *Descrizione Tipo* - utilizzato solo per la creazione della descrizione, è la *Descrizione* del *Tipo scheda tecnica*;   
->> *Valore fisso Codice* - utilizzato solo per la creazione del codice, sono dei caratteri fissi impostabili nella colonna *Valore fisso*;   
->> *Valore fisso Descrizione* - utilizzato solo per la creazione della descrizione, sono dei caratteri fissi impostabili nella colonna *Valore fisso*.   
+Ovdje se unose informacije za kodiranje *Šifre* i *Opisa* *Podatkovne liste*.
+Popis se sastoji od sljedećih informacija  
+> **Redoslijed**: redoslijed primjene pri kreiranju *Šifre* i *Opisa* *Podatkovne liste*.    
+> **Tip**: popis unaprijed definiranih vrijednosti u sustavu koji identificiraju element za kodiranje *Podatkovne liste*; unaprijed definirane vrijednosti su:    
+>> *ExtraData* - koristi se samo za kreiranje šifre i opisa, to je Extra data prepoznat po stupcu *Extradata*;   
+>> *Godina* - koristi se samo za kreiranje šifre, to je *Godina* kreiranja *Podatkovne liste*, može se postaviti na 2, 3 ili 4 znamenke u polju *Duljina*;    
+>> *Mjesec* - koristi se samo za kreiranje šifre, to je *Mjesec* kreiranja *Podatkovne liste*, fiksna vrijednost 2 znamenke;  
+>> *Dan* - koristi se samo za kreiranje šifre, to je *Dan* kreiranja *Podatkovne liste*, fiksna vrijednost 2 znamenke;    
+>> *Progresivno* - koristi se samo za kreiranje šifre, to je *Progresivno* kreiranja *Podatkovne liste*, početna vrijednost, znak za popunjavanje i dimenzije se postavljaju u polju *Duljina*;    
+>> *Šifra tipa* - koristi se samo za kreiranje šifre, to je *Šifra* *Vrste podatkovne liste*;     
+>> *Opis tipa* - koristi se samo za kreiranje opisa, to je *Opis* *Vrste podatkovne liste*;     
+>> *Fiksna vrijednost šifre* - koristi se samo za kreiranje šifre, fiksni znakovi se postavljaju u stupcu *Fiksna vrijednost*;     
+>> *Fiksna vrijednost opisa* - koristi se samo za kreiranje opisa, fiksni znakovi se postavljaju u stupcu *Fiksna vrijednost*.     
 >
-> **Extradata**: abilitato se in *Tipo* è stato selezionato il valore *ExtraData*, è l'*ExtraData* da utilizzare per comporre *Codice* e/o *Descrizione* della *Scheda tecnica*.   
-> **Proprietà Codice**: abilitato se in *Tipo* è stato selezionato il valore *ExtraData*, è la proprietà *Codice* dell'*ExtraData* da utilizzare per comporre il *Codice* della *Scheda tecnica*.   
-> **Proprietà Descrizione**: abilitato se in *Tipo* è stato selezionato il valore *ExtraData*, è la proprietà *Descrizione* dell'*ExtraData* da utilizzare per comporre la *Descrizione* della *Scheda tecnica*.   
-> **Lunghezza**: abilitato se in *Tipo* è: *Anno* o *Progressivo*, è la lunghezza che verrà data al *Tipo*.   
-> **Spazio**: indica se verrà inserito uno spazio nel *Codice* tra questa componente di *Codice* e la successiva.   
-> **Separatore**: è il carattere utilizzato come separatore tra questa componente di *Codice* e la successiva.   
-> **Carattere riempimento**: è il carattere utilizzato per completare la lunghezza del *Progressivo*.   
-> **Valore iniziale progressivo**: è il valore iniziale del *Progressivo* all'inserimento della prima *Scheda tecnica*.   
-> **Valore fisso**: abilitato se in *Tipo* è: *Valore fisso Codice* o *Valore fisso Descrizione*.   
+> **Extradata**: aktivno ako je u *Tip* odabrana vrijednost *ExtraData*, to je *ExtraData* koji se koristi za sastavljanje *Šifre* i/ili *Opisa* *Podatkovne liste*.     
+> **Svojstvo Šifra**: aktivno ako je u *Tip* odabrana vrijednost *ExtraData*, to je svojstvo *Šifra* *ExtraData* koji se koristi za sastavljanje *Šifre* *Podatkovne liste*.    
+> **Svojstvo Opis**: aktivno ako je u *Tip* odabrana vrijednost *ExtraData*, to je svojstvo *Opis* *ExtraData* koji se koristi za sastavljanje *Opisa* *Podatkovne liste*.     
+> **Duljina**: aktivno ako je u *Tip*: *Godina* ili *Progresivno*, to je duljina koja će se dodijeliti *Tipu*.    
+> **Razmak**: označava hoće li se u *Šifri* umetnuti razmak između ove komponente i sljedeće.   
+> **Separator**: znak koji se koristi kao separator između ove komponente *Šifre* i sljedeće.     
+> **Znak popunjavanja**: znak koji se koristi za popunjavanje duljine *Progresivnog*.     
+> **Početna vrijednost progresivnog**: početna vrijednost *Progresivnog* prilikom unosa prve *Podatkovne liste*.     
+> **Fiksna vrijednost**: aktivno ako je u *Tip*: *Fiksna vrijednost šifre* ili *Fiksna vrijednost opisa*.    
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

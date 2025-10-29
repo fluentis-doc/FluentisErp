@@ -34,4 +34,4 @@ Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal 
 > **Testo**: abilitato se la sospensione è automatica, è il colore che verrà applicato al testo della cella se verrà attribuito questo tipo di valutazione per evidenziarne il valore negativo.   
 > **Note**: annotazioni libere.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

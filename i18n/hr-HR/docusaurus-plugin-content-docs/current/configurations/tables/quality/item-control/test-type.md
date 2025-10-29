@@ -1,9 +1,9 @@
 ---
-title: Tipi prova
+title: Vrsta testiranja
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi prova**.
+Tablica se nalazi na putanji **Tabelle > Qualità > Controlli articolo > Tipi prova**.
 
 In questa tabella è possibile codificare le tipologie di Prove da effettuare, in accettazione merce e durante il processo produttivo, sugli articoli.   
 Alcuni esempi di utilizzo dei *Tipi prova* li troviamo nelle gestioni:
@@ -110,4 +110,4 @@ L'elenco si compone delle seguenti informazioni:
 
 E' possibile associare delle immagini utili alla prova da rilevare. Per esempio, potrebbe servire ad indicare visivamente alcune caratteristiche o attività da fare durante la preparazione e l'attuazione della prova stessa.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

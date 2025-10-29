@@ -1,64 +1,65 @@
 ---
-title: Tipi piano di controllo
+title: Vrste kontrolnog plana
 sidebar_position: 8
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi piano di controllo**.
+Tablica se nalazi na putu **Tabele > Kvaliteta > Kontrola artikla > Tipovi kontrolnog plana**.
 
-In questa tabella è possibile codificare i *Tipi piano di controllo*.   
-Il *Tipo piano di controllo* è parte integrante, assieme all'*Anno*, *Numero* e *Revisione*, del codice univoco della *Piano di controllo*.
-Alcuni esempi di utilizzo di *Tipi piano di controllo* li troviamo nelle gestioni:
-> **Piani di controllo** - nei *dati di testata*;   
-> **Parametri Controlli articolo** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzato il *Piano di controllo*.
+U ovoj tablici moguće je kodirati *Tipove kontrolnog plana*.   
+*Tip kontrolnog plana* je sastavni dio, zajedno s *Godinom*, *Brojem* i *Revizijom*, jedinstvenog koda *Kontrolnog plana*.  
+Primjeri korištenja *Tipova kontrolnog plana* mogu se pronaći u upravljanjima:  
+> **Kontrolni planovi** - u *podacima zaglavlja*;   
+> **Parametri kontrole artikla** - u kartici *Općenito*;   
+i u svim upravljanjima gdje se koristi *Kontrolni plan*.
 
-La tabella contiene dei valori predefiniti dal sistema e non è possibile modificarli ed eliminarli. I valori predefiniti sono:
-| Codice | Descrizione |   
+Tablica sadrži unaprijed definirane vrijednosti od sustava i nije ih moguće mijenjati niti brisati. Unaprijed definirane vrijednosti su:  
+| Kod | Opis |   
 |:--|:--|
 | MInt | Interno |   
-| MNNr | Non normalizzato |   
-| MNrm | Normalizzato |   
-| MUff | Ufficiale |   
+| MNNr | Nenormalizirano |   
+| MNrm | Normalizirano |   
+| MUff | Službeno |   
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli (se *Eliminabili*).
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih za pregled, izmjenu ili brisanje (ako su *Brišivi*).  
 
-**Ricerca Tipi piano di controllo**
+**Pretraživanje Tipova kontrolnog plana**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za rezultat. Nakon što postavite sve željene filtre, kliknite na gumb **Traži** za prikaz rezultata u mreži.
 
-**Inserimento Tipi piano di controllo**
+**Unos Tipova kontrolnog plana**  
 
-Per poter inserire nuovi *Tipi piano di controllo* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Tipova kontrolnog plana* potrebno je kliknuti na prvi prazni redak u mreži ili pritisnuti gumb **Novo**.   
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.  
 
-## Tipi piano di controllo
+## Tipovi kontrolnog plana
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi piano di controllo*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Codice**: è il codice del *Tipo piano di controllo*.   
-> **Descrizione**: è la descrizione del *Tipo piano di controllo*.   
-> **Numerazione**: è il codice della *Numerazione*.   
-> **Eliminabile**: indica se il *Tipo piano di controllo* è eliminabile.   
-> **Note**: annotazioni libere.
+Ovo je popis gdje se unose glavne informacije o *Tipovima kontrolnog plana*.
+Popis sadrži sljedeće informacije: 
+> **Kod**: kod *Tipa kontrolnog plana*.  
+> **Opis**: opis *Tipa kontrolnog plana*.   
+> **Numeracija**: kod *Numeracije*.   
+> **Brišivo**: označava je li *Tip kontrolnog plana* brišiv. 
+> **Napomene**: slobodne bilješke.
 
-### Extra data
+### Extra podaci
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipi piano di controllo*.   
-Questi *Extra data* possono venire ereditati nei *Piani di controllo* di quella determinata tipologia.   
+Moguće je unijeti [Extra podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *Tip kontrolnog plana*.     
+Ti *Extra podaci* mogu se naslijediti u *Kontrolne planove* te vrste.    
 
-### Prove pianificate
+### Planirane probe
 
-E' possibile inserire dei [Tipi prova](/docs/configurations/tables/quality/item-control/test-type) generali per il *Tipi piano di controllo*.   
-Questi *Tipi prova* vengono ereditati nei *Piani di controllo* di quella determinata tipologia.   
+Moguće je unijeti [Tipove ispitivanja](/docs/configurations/tables/quality/item-control/test-type) općenito za *Tip kontrolnog plana*.     
+Ti *Tipovi ispitivanja* nasljeđuju se u *Kontrolnim planovima* te vrste.    
 
-#### Attributi Prove Pianificate
+#### Atributi planiranih probe
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per la *Prova pianificata*.   
-Questi *Extra data* possono venire ereditati nelle *Prove* dei documenti dove è previsto l'utilizzo degli attributi.   
+Moguće je unijeti [Extra podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *Planiranu probu*.   
+Ti *Extra podaci* mogu se naslijediti u *Probe* dokumenata gdje je predviđena upotreba atributa.     
 
-#### Configurazione Prove Pianificate
+#### Konfiguracija planiranih probe
 
-Contiene gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari agli operatori per preparare tutti gli strumenti necessari per poter iniziare una determinata prova. Possono essere considerate delle configurazioni necessarie, informazioni operative propedeutiche all'esecuzione della prova.   
-Questi *Extra data* possono venire ereditati nelle *Prove* dei documenti dove è prevista una configurazione.   
+Sadrži [Extra podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) necessari potrebne operaterima za pripremu svih potrebnih alata kako bi mogli započeti određenu probu.
+Mogu se smatrati potrebnom konfiguracijom, operativnim informacijama za izvođenje probe.
+Ti *Extra podaci* mogu se naslijediti u *Probe* dokumenata gdje je predviđena konfiguracija. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

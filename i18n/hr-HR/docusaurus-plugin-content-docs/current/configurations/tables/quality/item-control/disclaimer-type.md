@@ -1,28 +1,28 @@
 ---
-title: Tipi di dichiarazione
+title: Tipovi izjave
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi di dichirazione**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Kontrola artikala > Tipovi izjave**.  
 
-In questa tabella è possibile codificare le diverse tipologie di Dichiarazione di non responsabilità.   
-Alcuni esempi di utilizzo dei *Tipi di dichiarazione* lo troviamo nella gestione **Dichiarazione di non responsabilità**.
+U ovoj tablici moguće je kodificirati različite tipove *Tipovi izjave*.
+Neki primjeri upotrebe *Tipovi izjave* nalazimo u upravljanju **Izjava o odricanju odgovornosti**.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
 
-**Ricerca Tipi di dichiarazione**
+**Pretraži Tipovi izjave**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za rezultat. Kada postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rezultatne mreže.
 
-**Inserimento Tipi di dichiarazione**
+**Unos Tipovi izjave**
 
-Per poter inserire nuovi *Tipi di dichiarazione* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Tipovi izjave* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*:
 
-> **Codice tipo**: è il codice del *Tipo di dichiarazione*.   
-> **Descrizione tipo**: è la descrizione del *Tipo di dichiarazione*.   
-> **Note**: annotazioni libere.
+> **Šifra tipa**: šifra *Tipovi izjave*. 
+> **Opis tipa**: opis *Tipovi izjave*.    
+> **Bilješke**: slobodne napomene.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

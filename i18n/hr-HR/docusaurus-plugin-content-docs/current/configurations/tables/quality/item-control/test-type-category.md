@@ -1,30 +1,31 @@
 ---
-title: Categorie tipi prova
+title: Kategorija tipa ispitivanja
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Categorie tipi prova**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Kontrola artikala > Kategorija tipa ispitivanja**.    
 
-:::important A cosa serve
-In questa tabella è possibile codificare le diverse tipologie di Prove.   
-Un esempio di utilizzo lo troviamo nella gestione **Tipi prova**.
+:::important Čemu služi
+U ovoj tablici moguće je kodirati različite tipove testova.  
+Primjer upotrebe nalazi se u upravljanju **Tipovi ispitivanja**.  
 :::
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje već postojećih radi prikaza, izmjene ili brisanja.    
 
-**Ricerca Categorie tipi prova**
+**Pretraživanje Kategorija tipa ispitivanja** 
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar mreže rezultata.  
 
-**Inserimento Categorie tipi prova**
+**Unos Kategorija tipa ispitivanja**  
 
-Per poter inserire nuovi *Categorie tipi prova* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Kategorija tipa ispitivanja* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti tipku **Novo**.    
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Kod** i **Opis**.    
 
-*Campi specifici*: 
 
-> **Codice**: è il codice della *Categoria tipo prova*.   
-> **Descrizione**: è la descrizione della *Categoria tipo prova*.   
-> **Note**: annotazioni libere.
+*Specifična polja*:    
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **Kod**: to je kod *Kategorija tipa ispitivanja*.      
+> **Kod**: to je kod *Kategorija tipa ispitivanja*.     
+> **Bilješke**: slobodne bilješke.    
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

@@ -1,33 +1,33 @@
 ---
-title: Tipi controllo prova
+title: Vrste kontrolnih testova 
 sidebar_position: 6
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi controllo prova**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Kontrola artikala > Vrste kontrolnih testova**.
 
-In questa tabella è possibile codificare le diverse tipologie di controlli sulle prove da effettuare.   
-Alcuni esempi di utilizzo dei *Tipi controllo prova* li troviamo nelle gestioni:
-> **Tipi prova**;   
-> **Piani di controllo** - nel tabulatore *Prove pianificate*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*.
+U ovoj tablici moguće je kodificirati različite tipove kontrola nad testovima koji se trebaju provesti.
+Neki primjeri upotrebe *Vrste kontrolnih testova* nalazimo u upravljanjima:
+> **Vrste testova**;;   
+> **Kontrolni planovi** - u tabulatoru *Planirani testovi*;   
+> **Kontrola artikala** - u tabulatoru *Testovi*;   
+> **Certifikati analiza** - u tabulatoru *Kontrole i zabilježene vrijednosti > Zabilježene vrijednosti*;     
+> **M.E.S.** - u tabulatoru *Kontrole kvalitete > Testovi*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
 
-**Ricerca Tipi controllo prova**
+**Pretraživanje Vrste kontrolnih testova**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za rezultat. Kada postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rezultatne mreže.
 
-**Inserimento Tipi controllo prova**
+**Unos Vrste kontrolnih testova**
 
-Per poter inserire nuovi *Tipi norme e leggi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Tipova normi i zakona* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novi**.
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Tipo controllo prova**: è il codice del *Tipo controllo prova*.   
-> **Descrizione tipo controllo prova**: è la descrizione del *Tipo controllo prova*.   
-> **Note**: annotazioni libere.
+> **Vrsta kontrolnog testa**: šifra *Vrste kontrolnog testa*.
+> **Opis Vrste kontrolnog testa**: opis *Vrste kontrolnog testa*.  
+> **Bilješke**: slobodne napomene.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

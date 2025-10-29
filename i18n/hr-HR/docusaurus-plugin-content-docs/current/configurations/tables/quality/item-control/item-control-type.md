@@ -1,58 +1,58 @@
 ---
-title: Tipi controllo articolo
+title: Tipovi kontrole artikla
 sidebar_position: 9
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Controlli articolo > Tipi Controllo articolo**.
+Tablica se nalazi na putanji **Tabele > Kvaliteta > Kontrola artikala > Tipovi kontrole artikla**.
 
-In questa tabella è possibile codificare i *Tipi controllo articolo*.   
-Il *Tipo controllo articolo* è parte integrante, assieme all'*Anno* e *Numero*, del codice univoco del *Controllo articolo*.
-Alcuni esempi di utilizzo di *Tipi controllo articolo* li troviamo nelle gestioni:
-> **Importa articoli da controllare** - nei *dati di testata*;   
-> **Controlli articolo** - nell'elenco dei *dati di testata*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati*;   
-> **Parametri Controlli articolo** - nel tabulatore *Generale*;   
-e in tutte le gestioni dove viene ultilizzato il *Controllo articolo*.
+U ovoj tablici moguće je kodificirati različite tipove *Tipovi kontrole artikla*.   
+*Tip kontrole artikla* je sastavni dio, zajedno s *Godina* i *Broj*, jedinstvenog koda *Kontrola artikla*.
+Neki primjeri upotrebe *Tipovi kontrole artikla* nalazimo u upravljanjima:  
+> **Uvoz artikala za kontrolu** - u *podacima zaglavlja*;    
+> **Kontrola artikala** - u popisu *podataka zaglavlja*;   
+> **Certifikati analiza** - u tabulatoru *Kontrole i izmjereni rezultati*;   
+> **Parametri Kontrole artikala** - u tabulatoru *Općenito*;     
+i u svim upravljanjima gdje se koristi *Kontrola artikla*.  
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
 
-**Ricerca Tipi controllo articolo**
+**Pretraži Tipovi kontrole artikla**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja za filtriranje i područja za rezultat. Kada postavite sve željene filtre, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar rezultatne mreže.
 
-**Inserimento Tipi controllo articolo**
+**Unos Tipovi kontrole artikla**  
 
-Per poter inserire nuovi *Tipi controllo articolo* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Tipovi kontrole artikla* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-## Tipi controllo articolo
+## Tipovi kontrole artikla
 
-E' l'elenco dove vengono inserite le informazioni principali dei *Tipi controllo articolo*.   
-L'elenco si compone delle seguenti informazioni:   
-> **Tipo controllo**: è il codice del *Tipo controllo articolo*.   
-> **Descrizione tipo controllo**: è la descrizione del *Tipo controllo articolo*.   
-> **Magazzino**: è il codice del *Magazzino* che viene proposto in *Controllo articoli > Prove > Magazzino*;   
-è il *Magazzino* di controllo qualità utilizzato per movimentare gli articoli, una volta controllati, nel rispettivo *Magazzino* conforme e non conforme (se impostato come contropartita nella rispettiva *Causale*).   
-> **Causale scarico articoli non conformi**: è il codice della *Causale di magazzino* che viene proposta in *Controllo articoli > Prove > Causale scarico articoli non conformi*;   
-è la *Causale* di prelievo utilizzata per movimentare gli articoli non conformi, una volta controllati, nel rispettivo *Magazzino* non conforme;   
-la *Causale* di contropartita non è obbligatoria se non si desidera gestire un *Magazzino* scarti o di reintegro dopo successivo ricondizionamento o rilavorazione dell'articolo controllato.   
-> **Causale scarico articoli conformi**: è il codice della *Causale di magazzino* che viene proposta in *Controllo articoli > Prove > Causale scarico articoli conformi*;   
-è la *Causale* di prelievo utilizzata per movimentare gli articoli conformi, una volta controllati, nel rispettivo *Magazzino* conforme;   
-è auspicabile impostare la relativa *Causale* di contropartita per rendere nuovamente disponibile l'articolo conforme una volta controllato.   
-> **Causale scarico prove distruttive**: è il codice della *Causale di magazzino* che viene proposta in *Controllo articoli > Prove > Causale scarico articoli non conformi* se la *Prova* è di tipo *Distruttiva*;   
-è la *Causale* di prelievo utilizzata per movimentare gli articoli non conformi, una volta controllati;   
-non è prevista la *Causale* di contropartita in quanto la *Prova* è di tipo *Distruttiva* ed è impossibile effettuare un successivo ricondizionamento o rilavorazione dell'articolo controllato.   
-> **Tipo certificato proposto**: è il codice del *Tipo certificato di analisi* che viene proposto alla creazione di un nuovo *Certificato di analisi* da questo *Tipo controllo articolo*.   
-> **Descrizione magazzino**: è la descrizione del *Magazzino*;   
-> **Descrizione causale scarico articoli non conformi**: è la descrizione della *Causale scarico articoli non conformi*;   
-> **Descrizione causale scarico articoli conformi**: è la descrizione della *Causale scarico articoli conformi*;   
-> **Descrizione causale scarico prove distruttive**: è la descrizione della *Causale scarico prove distruttive*;   
-> **Descrizione tipo certificato proposto**: è la descrizione del *Tipo certificato proposto*;   
-> **Note**: annotazioni libere.
+To je popis gdje se unose osnovne informacije o *Tipovi kontrole artikla*.
+Popis sadrži sljedeće informacije:    
+> **Tip kontrole**: šifra *Tip kontrole artikla*.   
+> **Opis tipa kontrole**: opis *Tip kontrole artikla*.    
+> **Skladište**: šifra *Skladišta* koja se predlaže u *Kontrola artikala > Testovi > Skladište*;    
+to je *Skladište* kontrole kvalitete koje se koristi za premještanje artikala, nakon kontrole, u odgovarajuće *Skladište* sukladno i nesukladno (ako je postavljeno kao protukonto odgovarajućem *Predlošku*).   
+> **Predložak iskrcaja nekonformnih artikala**: to je kod *predložak skladišta* koji se predlaže u *Kontrola artikala > Testovi > Predložak iskrcaja nekonformnih artikala*;   
+to je *predložak* preuzimanja koji se koristi za premještanje nekonformnih artikala, jednom kada su kontrolirani, u odgovarajuće *Skladište* nekonformnih artikala;     
+*predložak* protustrane nije obavezan ako se ne želi upravljati *Skladište* otpada ili nadopune nakon naknadnog rekonfiguriranja ili prerade kontroliranog artikla.       
+> **Predložak iskrcaja konformnih artikala**: to je kod *predložak skladišta* koji se predlaže u *Kontrola artikala > Testovi > Predložak iskrcaja konformnih artikala*;    
+to je *predložak* preuzimanja koji se koristi za premještanje konformnih artikala, jednom kada su kontrolirani, u odgovarajuće *Skladište* konformnih artikala;    
+poželjno je postaviti odgovarajući *predložak* protustrane kako bi konformni artikl ponovno bio dostupan jednom kada je kontroliran;  
+> **Predložak iskrcaja destruktivnih testova**: to je kod *predložak skladišta* koji se predlaže u *Kontrola artikala > Testovi > Predložak iskrcaja nekonformnih artikala* ako je *Test* tipa *Destruktivni*;  
+to je *predložak* preuzimanja koji se koristi za premještanje nekonformnih artikala, jednom kada su kontrolirani;  
+nije predviđen *predložak* protustrane jer je *Test* tipa *Destruktivni* i nemoguće je izvršiti naknadnu rekondiciju ili preradu kontroliranog artikla.    
+> **Predloženi tip certifikata**: to je kod *Tip certifikata analize* koji se predlaže pri kreiranju novog *Certifikata analize* iz ovog *Tip kontrola artikla*.     
+> **Opis skladišta**: to je opis *Skladište*;       
+> **Opis predložak iskrcaja nekonformnih artikala**: to je opis *Predložak iskrcaja nekonformnih artikala*;  
+> **Opis predložak iskrcaja konformnih artikala**: to je opis *Predložak iskrcaja konformnih artikala*;     
+> **Opis predložak iskrcaja destruktivnih testova**: to je opis *Predložak iskrcaja destruktivnih testova*;     
+> **Opis predloženog tipa certifikata**: to je opis *Predloženi tip certifikata*;       
+> **Bilješke**: slobodne bilješke.      
 
-### Extra data
+### Dodatni podaci  
 
-E' possibile inserire degli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) generali per il *Tipi controllo articolo*.   
-Questi *Extra data* possono venire ereditati nei *Controlli articolo* di quella determinata tipologia.   
+Moguće je unijeti [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) općenito za *Tip kontrola artikla*.      
+Ovi *Extra data* mogu se naslijediti u *Kontrola artikala* za tu određenu vrstu.     
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
