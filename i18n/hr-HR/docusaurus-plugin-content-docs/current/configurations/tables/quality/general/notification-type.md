@@ -1,31 +1,31 @@
 ---
-title: Mezzi di notifica
+title: Vrste obavijesti
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Mezzi di notifica**.
+Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Vrste obavijesti**.
 
-In questa tabella è possibile codificare i metodi utilizzati per la ricezione o l'invio di documenti.   
-Alcuni esempi di utilizzo dei *Mezzi di notifica* li troviamo nelle gestioni:
-> **Categorie documenti e Documenti di origine esterna** - nel tabulatore *liste di distribuzione*;   
-> **Categorie documenti e Documenti di origine interna** - nel tabulatore *liste di distribuzione*;   
-> **Reclami** - nel tabulatore *Testata*.
+U ovoj je tablici moguće kodirati metode koje se koriste za primanje ili slanje dokumenata.  
+Neki primjeri upotrebe *Vrsta obavijesti* nalaze se u sljedećim upravljanjima:  
+> **Kategorije dokumenata i Dokumenti vanjskog podrijetla** - u kartici *liste distribucije*;   
+> **Kategorije dokumenata i Dokumenti unutarnjeg podrijetla** - u kartici *liste distribucije*;   
+> **Reklamacije** - u kartici *Zaglavlje*.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.
 
-**Ricerca Mezzi di notifica**
+**Pretraživanje Vrsta obavijesti**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
 
-**Inserimento Mezzi di notifica**
+**Unos Vrsta obavijesti**
 
-Per poter inserire nuovi *Mezzi di notifica* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Vrsta obavijesti* potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novi**.   
+Za novi zapis potrebno je unijeti barem obvezna polja koja program zahtijeva: **Šifru** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Codice**: è il codice del *Mezzo di notifica*.   
-> **Descrizione mezzo di notifica**: è la descrizione del *Mezzo di notifica*.   
-> **Note**: annotazioni libere.
+> **Šifra**: šifra *Vrste obavijesti*.   
+> **Opis vrste obavijesti**: opis *Vrste obavijesti*.   
+> **Napomene**: slobodne bilješke.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

@@ -1,33 +1,33 @@
 ---
-title: Tipi valore
+title: Tip vrijednosti
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Tipi valore**.
+Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Tipovi vrijednosti**.
 
-In questa tabella è possibile codificare i *Tipi valore* richiesti nelle rilevazioni di valori.   
-Alcuni esempi di utilizzo dei *Tipi valore* li troviamo nelle gestioni:
-> **Schede tecniche** - nel tabulatore *Proprietà*;   
-> **Piani di controllo** - nel tabulatore *Prove pianificate*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*.
+U ovoj je tablici moguće kodirati *Tipove vrijednosti* koje se zahtijevaju pri bilježenju vrijednosti.
+Neki primjeri primjene *Tipova vrijednosti* nalaze se u sljedećim upravljanjima::
+> **Tehnički listovi** - u kartici *Svojstva*;   
+> **Kontrolni planovi** - u kartic *Planirana ispitivanja*;   
+> **Kontrola artikala** - u kartic *Ispitivanja*;   
+> **Certifikati analize** - u kartic *Kontrole i zabilježene vrijednosti > Zabilježene vrijednosti*;   
+> **M.E.S.** - u kartici *Kontrole kvalitete > Ispitivanja*.
 
-La tabella contiene dei valori predefiniti dal sistema e non è possibile inserirne di nuovi, eliminarli o modificarli. I valori predefiniti sono:
-| Codice | Descrizione |   
+Tablica sadrži vrijednosti unaprijed definirane od strane sustava i nije moguće unositi nove, brisati ili mijenjati postojeće vrijednosti. Predefinirane vrijednosti su:  
+| Šifra | Opis |   
 |:-:|:--|
-| 1 | Numerico |   
-| 2 | Si/No |   
-| 3 | Testo |   
+| 1 | Numerička |   
+| 2 | Da/Ne |   
+| 3 | Tekstualna |   
 
-**Ricerca Tipi valore**
+**Pretraživanje Tipova vrijednosti**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Codice**: informazione di sola lettura, è il codice del *Tipo valore*.   
-> **Tipo valore**: informazione di sola lettura, è la descrizione del *Tipo valore*.   
-> **Note**: annotazioni libere.
+> **Šifra**: informacija samo za čitanje; šifra *Tipa vrijednosti*.   
+> **Tip vrijednosti**: informacija samo za čitanje; opis *Tipa vrijednosti*.   
+> **Napomene**: slobodne bilješke.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

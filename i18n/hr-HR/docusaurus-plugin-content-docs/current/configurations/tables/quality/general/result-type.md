@@ -1,36 +1,36 @@
 ---
-title: Tipi esito
+title: Vrste Ishoda
 sidebar_position: 5
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Generale > Tipi esito**.
+Tablica se nalazi na putu **Tablice > Kvaliteta > Općenito > Vrste ishoda**.
 
 In questa tabella è possibile codificare i *Tipi esito* ottenuti successivamente a rilevazioni o ad attività.   
-Alcuni esempi di utilizzo dei *Tipi esito* li troviamo nelle gestioni:
-> **Tipi prova** - nel tabulatore *Esiti possibili*;   
-> **Controllo articoli** - nel tabulatore *Prove*;   
-> **Certificati di analisi** - nel tabulatore *Controlli e valori rilevati > Valori rilevati*;   
-> **M.E.S.** - nel tabulatore *Controlli qualità > Prove*;   
-> **Taratura strumento** - nei *dati di testata* e nel tabulatore *Valori rilevati*;   
-> **Azioni correttive** - nei tabulatori *Verifiche prossimo audit* e *Programmi azione correttiva*.   
+Neki primjeri primjene *Vrsta ishoda* nalaze se u sljedećim upravljanjima:
+> **Vrste ispitivanja** - u kartici *Mogući ishodi*;   
+> **Kontrola artikala** - u kartici *Ispitivanja*;   
+> **Certifikati analize** - u kartici *Kontrole i zabilježene vrijednosti > Zabilježene vrijednosti*;   
+> **M.E.S.** - u kartici *Kontrole kvalitete > Ispitivanja*;   
+> **Umjeravanje instrumenta** - u *podacima zaglavlja* i u kartici *Zabilježene vrijednosti*;   
+> **Korektivne radnje** - u karticama *Provjere sljedećeg audita* i *Programi korektivnih radnji*.     
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.  
 
-**Ricerca Tipi esito**
+**Pretraživanje Vrsta ishoda**
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja filtra i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži s rezultatima.  
 
-**Inserimento Tipi esito**
+**Unos Vrsta ishoda**
 
-Per poter inserire nuovi *Tipi esito* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Vrsta ishoda* potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novi**.   
+Za novi zapis potrebno je unijeti barem obvezna polja koja program zahtijeva: **Šifru** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*: 
 
-> **Esito**: è il codice del *Tipo esito*.   
-> **Descrizione esito**: è la descrizione del *Tipo esito*.   
-> **Esito positivo**: indica se l'esito deve essere riconosciuto come *positivo* o *negativo* dal sistema.   
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Tipi esito*.   
-> **Note**: annotazioni libere.
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+> **Ishod**: šifra *Vrste ishoda*.   
+> **Opis ishoda**: opis *Vrste ishoda*.   
+> **Pozitivan ishod**: označuje treba li sustav prepoznati ishod kao *pozitivan* ili *negativan*.  
+> **Sekvenca**: redoslijed prikaza u popisima *Vrsta ishoda*.   
+> **Napomene**: slobodne bilješke.
+  
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

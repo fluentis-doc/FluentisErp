@@ -43,10 +43,10 @@ Nakon što se postave svi željeni filtri, dovoljno je kliknuti tipku **Traži**
 
 > **Vrsta limita**: samo za čitanje, šifra *Vrste limita*.   
 > **Opis vrste**: samo za čitanje, opis *Vrste limita*.   
-> **Zahtijeva donju granicu**: informazione di sola lettura, indica se è richiesto un limite minimo o inferiore e abilita la colonna *Carattere limite minimo*.   
-> **Richiede limite massimo**: informazione di sola lettura, indica se è richiesto un limite massimo o superiore e abilita la colonna *Carattere limite massimo*.   
-> **Carattere limite minimo**: è possibile indicare un testo per identificare un intervallo tra limite minimo e valore nominale; esempio: *< ≤ > ≥ ≠ =*.   
-> **Carattere limite massimo**: è possibile indicare un testo per identificare un intervallo tra valore nominale e limite massimo; esempio: *< ≤ > ≥ ≠ =*.   
-> **Note**: annotazioni libere.
+> **Zahtijeva donju granicu**: informacija samo za čitanje; označuje je li potreban donji (minimalni) limit i omogućuje stupac *Znak donje granice*.   
+> **Zahtijeva gornju granicu**: informacija samo za čitanje; označuje je li potreban gornji (maksimalni) limit i omogućuje stupac *Znak gornje granice*.   
+> **Znak donje granice**: moguće je unijeti tekst koji označuje raspon između donje granice i nazivnog (nominalnog) iznosa; primjer: *< ≤ > ≥ ≠ =*.   
+> **Znak gornje granice**: moguće je unijeti tekst koji označuje raspon između nazivnog (nominalnog) iznosa i gornje granice; primjer: *< ≤ > ≥ ≠ =*.   
+> **Napomene**: slobodne bilješke. 
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
