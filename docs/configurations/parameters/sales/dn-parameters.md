@@ -67,7 +67,8 @@ In questo tab sono presenti i seguenti campi:
 
 ### Scarico
 
-**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene fatta con la stessa data del DDT, e non sarà necessario specificare la data registrazione nella form di scarico. Se non attivo, sarà necessario specificare la data nella form di scarico DDT
+**Crea registrazione con la data del documento**: se attivo, la registrazione di magazzino viene generata utilizzando la *Data trasporto* indicata nel tab *Trasporto* del DDT, se presente; in caso contrario, viene utilizzata la data del DDT. 
+Se il flag non è attiva, la registrazione di magazzino verrà sempre creata utilizzando la data corrente.   
 
 **Priorità magazzino e causale di scarico alle righe articoli dei DDT**: se attivo il magazzino e la causale di scarico vengono letti dalle righe del DDT mentre se non viene attivato, verranno utilizzati il magazzino e la causale inseriti nei campi successivi (**Magazzino** e **Causale di magazzino**);
 

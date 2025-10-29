@@ -163,6 +163,11 @@ Ricordiamo che se nei [Parametri DDT](/docs/configurations/parameters/sales/dn-p
 Una volta avviata la procedura, Fluentis controlla la presenza di magazzino e causale nelle righe DDT e l'eventuale presenza di lotti e serial number se richiesti; nel caso la procedura non vada a buon fine viene avvisato l'utente con un errore.      
 Se la procedura va a buon fine, viene creata la [Registrazione di magazzino](/docs/logistics/warehouse/stock-records/record) che movimenta gli articoli del documento e viene inserito il flag **Scaricato** nella testata DDT.      
 
+:::important Ricorda
+Se nei *[Parametri DDT](/docs/configurations/parameters/sales/dn-parameters#scarico) > tab Scarico* il flag **Crea registrazione con la data del documento** non è attivo, la registrazione di magazzino sarà sempre eseguita con la data corrente.     
+Se il flag nei parametri è attivo, la registrazione sarà creata utilizzando la *Data trasporto* indicata nel tab *Trasporto* del DDT, se valorizzata, altrimenti sarà utilizzata la data del DDT.    
+:::
+
 ## **3. Articoli**
 
 In questo tab vengono inseriti tutti gli articoli con i relativi dati.
