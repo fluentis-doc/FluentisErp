@@ -1,11 +1,10 @@
 ---
-title: Configurazione ERP
+title: Configurazione di Fluentis ERP
 description: Guida completa alla configurazione di Fluentis ERP
 keywords: ["ERP", "parametri ERP", "tabelle ERP", "Fast Start"]
 tags: [ERP, Configurazione, Fluentis]
 schema: TechArticle
 sidebar_position: 1
-lang: it
 ---
 
 # Configurazione di Fluentis ERP
@@ -36,16 +35,16 @@ La loro assenza o una configurazione errata può compromettere il funzionamento 
 In particolare, il mancato salvataggio di un parametro di default può bloccare l’esecuzione della procedura associata.
 
 :::important[Fast Start]
-Dopo l’installazione di **Fluentis ERP**, è possibile inizializzare un [**ambiente *Fast Start* pronto all’uso**](/docs/guide/fast-start).  
+Dopo l’installazione di **Fluentis ERP**, è possibile inizializzare un ambiente [**Fast Start**](/docs/guide/fast-start), pronto all’uso.  
 
 Questo ambiente preconfigura automaticamente molte **tabelle** e **parametri**, permettendo un avvio rapido e sicuro del sistema.
 
-Un elemento chiave per il Fast Start è il [**Piano dei Conti**](/docs/erp-home/registers/accounting/analytic-chart-of-accounts), parte dell’area amministrativa.
+Un elemento chiave per il *Fast Start* è il [**Piano dei Conti**](/docs/erp-home/registers/accounting/analytic-chart-of-accounts), parte dell’area Amministrativa.
 
-La procedura di Fast Start genera un **piano dei conti standard**:  
+La procedura di *Fast Start* genera un **piano dei conti standard**:  
 è possibile modificarne le descrizioni, aggiungere o eliminare conti (purché non già utilizzati da altri dati generati, come causali contabili o modelli di bilancio).
 
-Se il piano dei conti proposto non rispecchia la realtà aziendale, si consiglia di procedere con una **configurazione manuale** delle tabelle e dei parametri relativi alle aree funzionali desiderate, oltre all’**importazione del piano dei conti personalizzato**.
+*Se il piano dei conti proposto non rispecchia la realtà aziendale*, si consiglia di procedere con una **configurazione manuale** delle tabelle e dei parametri relativi alle aree funzionali desiderate, oltre all’**importazione del piano dei conti personalizzato**.
 
 Consulta la **checklist di verifica dettagliata** disponibile nel link sopra per controllare le tabelle più importanti.
 :::
