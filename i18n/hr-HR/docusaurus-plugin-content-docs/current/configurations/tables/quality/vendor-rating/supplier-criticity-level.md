@@ -1,37 +1,37 @@
 ---
-title: Livelli di criticità del fornitore
+title: Kritične razine dobavljača
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Livelli di criticità del fornitore**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kvalifikacija dobavljača > Kritične razine dobavljača**.
 
-I dati presenti in questa tabella sono utilizzati per attribuire una valutazione ai fornitori.   
-Un esempio di utilizzo dei *Livelli di criticità del fornitore* la troviamo nella gestione **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
+Podaci u ovoj tablici koriste se za dodjeljivanje ocjene dobavljačima.  
+Primjer upotrebe *Kritičnih razina dobavljača* može se pronaći u modulu **Kartice kontakata** – u kartici *Računovodajni podaci > Podaci o kvaliteti*.    
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
 
-**Ricerca Livelli di criticità del fornitore**
+**Pretraživanje Kritičnih razina dobavljača**  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja filtra i područja rezultata. Kada se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-**Inserimento Livelli di criticità del fornitore**
+**Unos Kritičnih razina dobavljača**  
 
-Per poter inserire nuovi *Livelli di criticità del fornitore* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos nove *Kritične razine dobavljača* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.  
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*:   
 
-> **Livello di criticità del fornitore**   
->> **Codice**: è il codice della *Valutazione fornitore*.   
->> **Descrizione**: è la descrizione della *Valutazione fornitore*.   
->> **Sequenza**: è la sequenza di visualizzazione negli elenchi dei *Livelli di criticità*.   
+> **Kritična razina dobavljača**     
+>> **Šifra**: šifra *Procjene dobavljača*.       
+>> **Opis**: opis *Procjene dobavljača*.       
+>> **Redoslijed**: redoslijed prikaza u popisima *Kritičnih razina*.      
 >
-> **Tipo controllo**   
->> **Codice**: è il codice della *Tipo controllo* da effettuare per il *Livello di criticità*.   
->> **Descrizione**: è la descrizione della *Tipo controllo* da effettuare per il *Livello di criticità*.   
->> **Da controllare**: è il numero di articoli da controllare sul totale specificato in *Sul totale*.   
->> **Sul totale**: è il numero totale degli articoli sul quale basare quanti articoli devono essere controllati e specificato in *Da controllare*.   
+> **Vrsta kontrole**      
+>> **Šifra**: šifra *Vrste kontrole* koja se provodi za *Kritičnu razinu*.      
+>> **Opis**: opis *Vrste kontrole* koja se provodi za *Kritičnu razinu*.       
+>> **Za kontrolu**: broj artikala koji se trebaju kontrolirati u odnosu na ukupan broj naveden u *Od ukupno*.     
+>> **Od ukupno**: ukupan broj artikala na temelju kojeg se određuje koliko artikala treba kontrolirati, navedenih u *Za kontrolu*.       
 >
-> **Note**: annotazioni libere.
+> **Napomene**: slobodne bilješke.  
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

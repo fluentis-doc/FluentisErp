@@ -1,37 +1,37 @@
 ---
-title: Valutazioni fornitore
+title: Procjene dobavljača
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Valutazioni fornitore**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kvalifikacija dobavljača > Procjene dobavljača**.  
 
-I dati presenti in questa tabella sono utilizzati per attribuire una valutazione ai fornitori.   
-Alcuni esempi di utilizzo delle *Valutazioni fornitore* li troviamo nelle gestioni:
-> **Valutazioni iniziali e periodiche** - nell'elenco dei *dati di testata*;   
-> **Valutazioni periodiche su Non conformità** - nell'elenco dei *dati di testata*;   
-> **Parametri qualificazione fornitore**;   
-> **Anagrafiche contatti** - nel tabulatore *Dati contabili > Dati qualità*.   
+Podaci u ovoj tablici koriste se za dodjeljivanje procjene dobavljačima.  
+Neki primjeri upotrebe *Procjena dobavljača* mogu se pronaći u sljedećim modulima:    
+> **Početne i periodične procjene** – u popisu *zaglavnih podataka*;       
+> **Periodične procjene prema Nesukladnostima** – u popisu *zaglavnih podataka*;      
+> **Parametri kvalifikacije dobavljača**;      
+> **Kartice kontakata** – u kartici *Računovodajni podaci > Podaci o kvaliteti*.      
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
 
-**Ricerca Valutazioni fornitore**
+**Pretraživanje Procjena dobavljača**  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-**Inserimento Valutazioni fornitore**
+**Unos Procjena dobavljača**
 
-Per poter inserire nuovi *Valutazioni fornitore* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novih *Procjena dobavljača* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.  
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*:    
 
-> **Sequenza**: è la sequenza di visualizzazione negli elenchi delle *Valutazioni fornitore*.   
-> **Codice**: è il codice della *Valutazione fornitore*.   
-> **Descrizione**: è la descrizione della *Valutazione fornitore*.   
-> **Punteggio calcolo indice qualificazione fornitore**: valore decimale che verrà utilizzato per la valutazione dei fornitori.   
-> **Sospensione automatica**: indica se si desidera attivare la sospensione automatica del fornitore, se prevista anche nei *Parametri qualificazione fornitore*, all'attribuzione di questo tipo di valutazione.   
-> **Sfondo**: abilitato se la sospensione è automatica, è il colore che verrà applicato allo sfondo della cella se verrà attribuito questo tipo di valutazione per evidenziarne il valore negativo.   
-> **Testo**: abilitato se la sospensione è automatica, è il colore che verrà applicato al testo della cella se verrà attribuito questo tipo di valutazione per evidenziarne il valore negativo.   
-> **Note**: annotazioni libere.
+> **Redoslijed**: redoslijed prikaza u popisima *Procjena dobavljača*.       
+> **Šifra**: šifra *Procjene dobavljača*.      
+> **Opis**: opis *Procjene dobavljača*.     
+> **Bodovi za izračun indeksa kvalifikacije dobavljača**: decimalna vrijednost koja će se koristiti za ocjenjivanje dobavljača.     
+> **Automatska suspenzija**: označava želi li se omogućiti automatska suspenzija dobavljača (ako je predviđena u *Parametrima kvalifikacije dobavljača*) pri dodjeli ove vrste procjene.     
+> **Pozadina**: omogućeno ako je automatska suspenzija aktivna; boja koja će se primijeniti na pozadinu ćelije kada se dodijeli ova vrsta procjene, radi vizualnog označavanja negativne vrijednosti.       
+> **Tekst**: omogućeno ako je automatska suspenzija aktivna; boja koja će se primijeniti na tekst ćelije kada se dodijeli ova vrsta procjene, radi vizualnog označavanja negativne vrijednosti.       
+> **Napomene**: slobodne bilješke.
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

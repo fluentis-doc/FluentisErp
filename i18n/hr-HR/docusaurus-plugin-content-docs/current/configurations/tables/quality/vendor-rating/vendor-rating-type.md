@@ -1,31 +1,31 @@
 ---
-title: Tipi valutazione fornitore
+title: Tipovi procjene dobavljača
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Qualità > Qualificazione fornitore > Tipi valutazione fornitore**.
+Tablica se nalazi na putanji **Tablice > Kvaliteta > Kvalifikacija dobavljača > Tipovi procjene dobavljača**.  
 
-I dati presenti in questa tabella sono utilizzati per categorizzare i tipi di valutazione fornitore.   
-Alcuni esempi di utilizzo dei *Tipi valutazione fornitore* li troviamo nelle gestioni:
-> **Valutazioni iniziali e periodiche** - nell'elenco dei *dati di testata*;   
-> **Valutazioni periodiche su Non conformità** - nell'elenco dei *dati di testata*;   
-> **Parametri qualificazione fornitore**.   
+Podaci u ovoj tablici koriste se za kategorizaciju različitih *Tipova procjene dobavljača*.  
+Neki primjeri upotrebe *Tipova procjene dobavljača* mogu se pronaći u sljedećim modulima:  
+> **Početne i periodične procjene** – u popisu *zaglavnih podataka*;     
+> **Periodične procjene prema Nesukladnostima** – u popisu *zaglavnih podataka*;      
+> **Parametri kvalifikacije dobavljača**.       
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili izbrisati.  
 
-**Ricerca Tipi valutazione fornitore**
+**Pretraživanje Tipova procjene dobavljača**  
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+Forma se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
-**Inserimento Tipi valutazione fornitore**
+**Unos Tipova procjene dobavljača** 
 
-Per poter inserire nuovi *Tipi valutazione fornitore* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+Za unos novog *Tipa procjene dobavljača* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.  
+Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
 
-*Campi specifici*: 
+*Specifična polja*:   
 
-> **Tipo**: è il codice del *Tipo valutazione fornitore*.   
-> **Descrizione tipo**: è la descrizione del *Tipo valutazione fornitore*.   
-> **Note**: annotazioni libere.
+> **Tip**: šifra *Tipa procjene dobavljača*.       
+> **Opis tipa**: opis *Tipa procjene dobavljača*.    
+> **Napomene**: slobodne bilješke.
 
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
