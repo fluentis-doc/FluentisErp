@@ -1,61 +1,62 @@
 ---
-title: Nuova Liquidazione agenti
+title: Nova likvidacija agenata
 sidebar_position: 3
 ---
-La form si apre tramite il percorso *Vendite > Agenti > Liquidazioni agenti > Ricerca liquidazioni agenti* con click sul pulsante **Nuovo**.
+Forma se otvara putem putanje *Prodaja > Agenti > Likvidacije agenata > Pretraga likvidacija agenata* klikom na tipku **Novo**.
 
-:::tip[Consiglio]
-Sebbene sia possibile creare *manualmente* una liquidazione, come spigato qui di seguito,
+:::tip[Savjet]
+Iako je moguće *ručno* kreirati likvidaciju, kao što je objašnjeno u nastavku,    
 
-consigliamo di utilizzare la **procedura guidata (wizard)** di [**Creazione automatica liquidazione agenti**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement).
+preporučujemo korištenje **vođenog postupka (wizard)** za [**Automatsko kreiranje likvidacije agenata**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement).  
 :::
 
-:::note[Nota]
-Uno scenario con **esempi** di gestione agenti e calcoli provvigioni è presente [**qui**](/docs/sales/agents/agent-scenario)
+:::note[Napomena]
+Scenarij s **primjerima** upravljanja agentima i izračuna provizija dostupan je [**ovdje**](/docs/sales/agents/agent-scenario)
 :::
 
-## **1. Liquidazioni**
+## **1. Likvidacije**
 
-L'inserimento di una liquidazione richiede: 
-- l'agente intestatario della liquidazione (che deve avere il tipo e soluzione di pagamento di default nella sua anagrafica), 
-- il numero e l'anno vengono compilati in automatico,
-- la data della liquidazione (viene proposta la data corrente), 
-- la descrizione della liquidazione (ad es.: liquidazione primo trimestre 2012), 
-- il mese/anno di riferimento per il calcolo Enasarco.
+Unos likvidacije zahtijeva:    
+- agenta na čije se ime likvidacija vodi (koji mora imati definiran tip i rješenje plaćanja u svojoj kartici),    
+- broj i godinu koji se automatski popunjavaju,         
+- datum likvidacije (predlaže se trenutni datum),   
+- opis likvidacije (npr.: likvidacija za prvo tromjesečje 2012),     
+- mjesec/godinu na koju se odnosi obračun Enasarco doprinosa.  
 
-### 1.1 Riepilogativa
+### 1.1 Sažetak
 
-Questo tab presenta tutti gli elementi di calcolo della provvigione.  
+Ova kartica prikazuje sve elemente izračuna provizije.    
 
-**Riepilogo provvigioni**: in questa griglia sono presenti, divisa per divisa, i totali delle provvigioni liquidate. Al di sotto di questa, sono presenti i campi con la *Divisa* di riferimento della liquidazione (proposta dalla divisa inserita in anagrafica dell'agente), il *Cambio* e la *Data valuta* per il cambio; più in basso l'*IVA* da applicare all'imponibile provvigionale (anche questa proposta di default dall'anagrafica agente) e il *Totale documento*.
+**Sažetak provizija**: u ovoj su tablici prikazani, po valutama, ukupni iznosi isplaćenih provizija.  
+Ispod se nalaze polja s *valutom* likvidacije (preuzeta iz kartice agenta), *tečajem* i *datumom valute* za taj tečaj; niže se nalazi *PDV* koji se primjenjuje na provizijsku osnovicu (također preuzet iz kartice agenta) i *ukupni iznos dokumenta*.
 
-**Riepilogo calcolo ritenuta**: la griglia consente di visualizzare i compensi percipienti da considerare acconti sulla liquidazione in uso, il *Tipo di ritenuta* da applicare (anche questa ripresa prioritariamente dall'anagrafica agente o dalla categoria agente), le relative percentuali e gli importi per la ritenuta.
+**Sažetak izračuna poreza po odbitku**: tablica prikazuje primljene honorare koji se uzimaju u obzir kao predujmovi u tekućoj likvidaciji, *tip poreza po odbitku* (preuzet prvenstveno iz kartice agenta ili kategorije agenta), odgovarajuće postotke i iznose.
 
-Nel caso in cui sia impostato il *Calcolo manuale*, sarà possibile forzare i dati relativi alla sezione di gestione delle ritenute.
+Ako je postavljeno *ručno računanje*, moguće je ručno unijeti podatke u odjeljak za upravljanje porezima po odbitku.
 
-### 1.2 Pagamenti
+### 1.2 Plaćanja
 
-In questa tab il gestionale riporta in **Lista pagamenti** le impostazioni di pagamento di default inserite in anagrafica dell'agente, che sono comunque modificabili.
+U ovoj kartici program prikazuje u **Listi plaćanja** zadane postavke plaćanja preuzete iz kartice agenta, koje je moguće mijenjati.
 
-Nella griglia **Lista scadenze** sono calcolate le scadenze relative: si ricorda che l'importo delle scadenze andrà allineato manualmente alle modifiche apportate alla liquidazione, facendo corrispondere queste al dato dell'importo a pagare.
+U tablici **Lista dospijeća** izračunavaju se pripadajući rokovi dospijeća; potrebno je napomenuti da se iznos dospijeća mora ručno uskladiti s eventualnim promjenama u likvidaciji, tako da odgovara stvarnom iznosu za isplatu.
 
-#### Pulsanti specifici 
+#### Specifične tipke
 
-> **Inserisci pagamenti**: imposta il cursore all'inserimento di una nuova riga all'interno delle tipologie di pagamento.  
-> **Cancella pagamenti**: esegue la cancellazione delle impostazioni di pagamento selezionate.  
-> **Inserisci scadenze**: imposta il cursore all'inserimento di una nuova riga all'interno delle scadenze della liquidazione.  
-> **Cancella scadenze**: esegue la cancellazione delle scadenze selezionate.
+> **Umetni plaćanja**: postavlja kursor na unos novog retka unutar tipova plaćanja.    
+> **Obriši plaćanja**: briše odabrane postavke plaćanja.     
+> **Umetni dospijeća**: postavlja kursor na unos novog retka unutar dospijeća likvidacije.      
+> **Obriši dospijeća**: briše odabrana dospijeća.    
 
-## **2. Fatture/DDT/Ordini**
+## **2. Računi/OTP/Narudžbe**
 
-In base al *Tipo di documento considerato per l'imponibile provvigionale* inserito nell'*Anagrafica dell'agente* viene visualizzato il secondo tab con i documenti: Fatture oppure DDT oppure ordini.
+Ovisno o *tipu dokumenta uzetom u obzir za provizijsku osnovicu* definiranom u *Kartici agenta*, prikazuje se druga kartica s dokumentima: Računi ili OTP (otpremnice) ili Narudžbe.  
 
-All'interno della griglia superiore, una volta eseguita la ricerca, sono visualizzati i documenti conteggiati per il calcolo della liquidazione agente in uso.
+U gornjoj tablici, nakon pokretanja pretrage, prikazuju se dokumenti koji su uključeni u izračun tekuće likvidacije agenta.  
 
-Attraverso i due pulsanti di gestione: **Collegamento documenti con la liquidazione** e **Cancella collegamenti con la liquidazione** è possibile aggiungere manualmente nuovi documenti nella liquidazione oppure cancellarli per inserirli in una successiva.
+Pomoću dviju tipki za upravljanje — **Povezivanje dokumenata s likvidacijom** i **Brisanje povezanih dokumenata** — moguće je ručno dodavati nove dokumente u likvidaciju ili ih uklanjati radi uključivanja u neku drugu.  
 
-#### Pulsanti specifici 
+#### Specifične tipke  
 
-> **Ricerca**: esegue la ricerca dei documenti inseriti nella liquidazione in uso.  
-> **Collegamento documenti con la liquidazione**: apre una maschera di ricerca e inserimento manuale di documenti nella liquidazione in uso.  
-> **Cancella collegamenti con la liquidazione**: toglie il documento selezionato dalla liquidazione in uso.  
+> **Pretraga**: pokreće pretragu dokumenata uključenih u tekuću likvidaciju.     
+> **Povezivanje dokumenata s likvidacijom**: otvara masku za pretragu i ručni unos dokumenata u likvidaciju.    
+> **Brisanje povezanih dokumenata**: uklanja odabrani dokument iz tekuće likvidacije.   

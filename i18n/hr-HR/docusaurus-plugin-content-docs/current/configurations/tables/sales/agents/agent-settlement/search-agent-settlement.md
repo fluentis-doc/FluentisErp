@@ -1,21 +1,20 @@
 ---
-title: Ricerca Liquidazioni agenti
+title: Pretraga likvidacija agenata
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Vendite > Liquidazioni agenti > Liquidazioni agenti**.
+Forma se otvara putem putanje **Prodaja > Likvidacije agenata > Likvidacije agenata**.
 
-Da questa form è possibile ricercare, visualizzare ed entrare in modifica delle liquidazioni già create.
+Iz ove forme moguće je pretraživati, pregledavati i uređivati već kreirane likvidacije.
 
-### Come creare una nuova liquidazione agente
+### Kako kreirati novu likvidaciju agenta
 
-Sebbene sia possibile creare *manualmente* una liquidazione, come spigato [**qui**](/docs/sales/agents/agent-settlement/insert-settlement)
+Iako je moguće *ručno* kreirati likvidaciju, kao što je objašnjeno [**ovdje**](/docs/sales/agents/agent-settlement/insert-settlement)
 
-Consigliamo di utilizzare la procedura guidata (wizard) di [**Creazione automatica liquidazione agenti**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement).
+Preporučujemo korištenje vođenog postupka (wizard) za [**Automatsko kreiranje likvidacije agenata**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement).
 
-:::tip[Consiglio]
-Uno scenario con **esempi** di gestione agenti e calcoli provvigioni è presente [**qui**](/docs/sales/agents/agent-scenario)
+:::tip[Savjet]
+Scenarij s **primjerima** upravljanja agentima i izračuna provizija dostupan je [**ovdje**](/docs/sales/agents/agent-scenario)
 :::
 
-
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Za objašnjenje zajedničkih funkcionalnosti dokumenata prodaje pogledajte odjeljak [Prodaja](/docs/sales/sales-intro).

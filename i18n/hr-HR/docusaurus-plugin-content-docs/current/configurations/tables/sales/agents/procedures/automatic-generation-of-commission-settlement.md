@@ -1,80 +1,83 @@
 ---
-title: Creazione automatica liquidazione provvigioni
+title: Automatsko kreiranje likvidacije provizija
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso *Vendite > Agenti > Procedure > Creazione automatica liquidazione provvigioni*.
+Forma se otvara putem putanje *Prodaja > Agenti > Procedure > Automatsko kreiranje likvidacije provizija*.
 
-La procedura di creazione automatica liquidazione provvigioni esegue il calcolo definitivo delle liquidazioni agente, secondo i parametri impostati. 
-
-
-## Calcolo liquidazioni
-
-Una volta eseguita la ricerca, nella sezione **Lista agenti** saranno visualizzati tutti gli agenti definiti nel sistema: in questa sezione è necessario selezionare (anche utilizzando i comandi *Ctrl* o *Shift* della tastiera per richiamare più righe) la lista dei soggetti per i quali eseguire il calcolo. 
-
-E' visibile il **tipo di maturazione** della provvigione agente, in modo da poter **impostare i filtri di destra in modo idoneo alle impostazioni dell'agente**.
-
-Sulla destra si presentano i seguenti filtri:
-
-- un filtro per divisa del documento, in modo da creare una liquidazione agente differenziata per divisa;
-
-- tre sezioni di filtro a seconda del documento di riferimento (ordine/bolla/fatture, per agenti con ordine confermato, consegna effettuata, fattura emessa);
-
-- una sezione di filtro sulle **partite**, per gli agenti con scadenza maturata o **pagamento avvenuto**: sulla base della data impostata saranno quindi maturate le partite con scadenza antecedente nel primo caso, nel secondo caso la quota parte in relazione agli **incassi registrati** in contabilità **con data antecedente**. 
-
-Nel caso di **effetti**, questi non saranno considerati maturati fino alla **data di maturazione** (cioè data scadenza **più i giorni di rischio cliente** impostati nei parametri dell'omonimo modulo).
-
-:::note[Nota]
-Con il metodo del *pagamento avvenuto* la selezione delle provvigioni da liquidare sarà sempre "tutto" *fino alla data*, non è possibile selezionare quello che è maturato in uno specifico range di date e non è previsto un collegamento con il campo della periodicità dell liquidazione presente in [anagrafica agente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/settlement).
+Postupak automatskog kreiranja likvidacije provizija izvršava konačni izračun likvidacija agenata prema postavljenim parametrima. 
 
 
-Ciò è necessario perchè mentre per i documenti non c'è modo di aggiungerne di nuovi / modificare in periodi già liquidati, il discorso è diverso per i pagamenti: niente vieta di creare un pagamento con data registrazione in un periodo già chiuso in un calcolo liquidazione agenti (magari perché non non sono state riconciliate le banche o si è commesso un errore in una vecchia registrazione), dunque il dato verrebbe "perso" nei calcoli successivi.
+## Izračun likvidacija
+
+Nakon pokretanja pretrage, u sekciji **Lista agenata** prikazat će se svi agenti definirani u sustavu. U ovom dijelu potrebno je odabrati (uz pomoć tipki *Ctrl* ili *Shift* za višestruki odabir) agente za koje se želi izvršiti izračun.  
+
+Vidljiv je **tip stjecanja prava** na proviziju agenta, kako bi se mogli **ispravno postaviti filtri s desne strane** u skladu s postavkama agenta.  
+
+S desne strane nalaze se sljedeći filtri:  
+
+- filter po valuti dokumenta, za kreiranje zasebnih likvidacija po valuti;  
+
+- tri sekcije filtera ovisno o referentnom dokumentu (narudžba / otpremnica / račun — za agente kojima se provizija priznaje po potvrdi narudžbe, izvršenoj isporuci ili izdanom računu);  
+
+- sekcija filtra po **stavkama (partite)**, za agente kojima se provizija priznaje po **dospijeću** ili po **naplati**: na temelju postavljenog datuma bit će uzete u obzir stavke s ranijim dospijećem (u prvom slučaju) ili iznosi povezani s **naplatama evidentiranim** u računovodstvu **s ranijim datumom** (u drugom slučaju).  
+
+U slučaju **efekata**, oni se neće smatrati dospjelima sve do **datuma dospijeća**, tj. datuma dospijeća **uvećanog za broj dana rizika kupca**, definiranog u parametrima istoimenog modula.  
+
+:::note[Napomena]
+Kod metode *po naplati*, odabir provizija za likvidaciju uvijek se odnosi na “sve do zadanog datuma”; nije moguće odabrati samo ono što je dospjelo unutar određenog vremenskog raspona, niti postoji poveznica s poljem periodičnosti likvidacije u [kartici agenta](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/settlement).
+
+
+To je nužno jer, za razliku od dokumenata (koji se više ne mijenjaju u već likvidiranim razdobljima), kod plaćanja je moguće unijeti uplatu s datumom unutar već zatvorenog razdoblja (npr. ako banke nisu bile usklađene ili je postojala pogreška u staroj evidenciji). Takvi bi podaci inače bili izgubljeni u budućim izračunima.  
 :::
 
-Il flag **Conversione provvigioni usando il cambio alla data documento** prevede che l'importo delle provvigioni sia effettuato secondo il cambio della data del documento, altrimenti  sarà utilizzato di default il cambio della data della liquidazione agente così come impostato nei campi alla base della maschera.
+Flag **Pretvori provizije koristeći tečaj na datum dokumenta** znači da se iznos provizije računa prema tečaju iz datuma dokumenta; u suprotnom, koristi se **tečaj iz datuma likvidacije agenta**, kako je postavljeno u osnovnim poljima forme.  
 
-:::note **Più in dettaglio:**
-- se non si imposta il flag, Fluentis totalizzerà le provvigioni maturate per divisa del documento e poi convertirà questi totali in divisa nella divisa dell’agente al cambio della data liquidazione (in un caso complesso, ad esempio fattura in GPB e agente in USD quindi, cercherà se trova in tabella cambi un cambio esplicito gbp-usd o usd-gbp e lo applicherà, se non lo trova userà i cambi rispetto all’euro con tutti i decimali che trova).
-- se si imposta il flag, invece, Fluentis applicherà ad ogni documento il cambio memorizzato nel documento stesso per ottenere le provvigioni in divisa società (arrotondandole ai decimali divisa società per ogni documento), prende poi questo totale in divisa società e lo converte nella divisa agente.
+:::note **Detaljnije objašnjenje:**  
+- Ako **flag nije postavljen**, Fluentis će zbrojiti provizije po valuti dokumenta, a zatim taj ukupan iznos pretvoriti u valutu agenta prema tečaju datuma likvidacije (npr. ako je račun u GBP, a agent u USD, sustav će pokušati pronaći izravan tečaj GBP–USD ili USD–GBP; ako ga ne nađe, koristit će tečajeve u odnosu na euro).  
+- Ako je **flag postavljen**, Fluentis će svakom dokumentu primijeniti tečaj zabilježen u samom dokumentu za pretvorbu u valutu društva (uz zaokruživanje na broj decimala te valute), a zatim ukupan iznos pretvoriti u valutu agenta.  
 
-Se ad esempio ci fossero solo 2 documenti da considerare e i cambi fossero uguali perché tutto è nella stessa data, allora si potrebbero avere differenze di centesimi sul totale che si ottiene, dovute all’arrotondamento intermedio sulla divisa società che si fa impostando il flag.
-La situazione è chiaramente improbabile e "teorica" per far meglio capire l'esatta logica di calcolo a seconda del flag.
+Ako bi, primjerice, postojala samo dva dokumenta s istim tečajem jer su izdani istog datuma, mogli bi se pojaviti sitni razliki od nekoliko centi zbog međuzbroja i zaokruživanja po dokumentima — što je teoretski slučaj, ali objašnjava točnu logiku izračuna ovisno o flagu.  
 
 :::
 
-Nella **sezione inferiore**, *Estremi per la creazione della liquidazione delle provvigioni*, va indicata la data della liquidazione, una sua descrizione e il mese/anno di riferimento per il calcolo dell'Enasarco.
+U **donjoj sekciji**, *Podaci za kreiranje likvidacije provizija*, unosi se datum likvidacije, njen opis i mjesec/godina na koju se odnosi obračun Enasarco doprinosa.  
 
-:::important[Importante]
-I campi del mese / anno per l'Enasaco devono essere compilati con attenzione perchè da essi dipende il calcolo del minimale e massimale enasarco. Dunque al calcolo che si sta per eseguire viene attribuita una "competenza" ai fini del calcolo di eventuale minimale, se per il trimestre in questione non si raggiunge il minimo, o massimale, adeguando i contributi a carico agente e/o ditta mandante.
+:::important[Važno]
+Polja za mjesec/godinu Enasarco treba pažljivo popuniti jer od njih ovisi izračun minimalnog i maksimalnog iznosa doprinosa. Time se izračunu koji se pokreće dodjeljuje “obračunsko razdoblje” radi provjere ispunjenja minimalnog ili maksimalnog iznosa doprinosa — prilagođavajući iznose koje snosi agent i/ili nalogodavac.  
 
-Gli scaglioni per i contributi enasarco sono definiti nella tabella [Categorie agenti](/docs/configurations/tables/sales/agent-category)
+Skale doprinosa Enasarco definirane su u tablici [Kategorije agenata](/docs/configurations/tables/sales/agent-category)  
 :::
 
-:::tip PROVVIGIONI SULL'INCASSATO E SCRITTURE CONTABILI PROVVISORIE
-Per il calcolo delle provvigioni maturate vengono considerate SOLO le registrazioni nello stato **definitivo**, quindi eventuali incassi (anche anticipati) registrati in modalità provvisoria verranno ignorati
+:::tip PROVIZIJE NA NAPLAĆENO I PRIVREMENE KNJIGE  
+Za izračun provizija koje su dospjele uzimaju se u obzir samo knjiženja sa statusom **definitivno**. Sva knjiženja u statusu *privremeno* (uključujući i predujmove) se zanemaruju.  
 :::
 
-:::tip PROVVIGIONI SULL'INCASSATO E RICEVUTE BANCARIE
-La maturazione delle provvigioni tiene conto in ogni caso della data scadenza effetto, anche se la partita cliente viene chiusa per effetto della contabilizzazione dell'emissione Ri.Ba. e l'effetto è presentato al salvo buon fine o accreditato.
+:::tip PROVIZIJE NA NAPLAĆENO I BANKOVNE PRIMKE  
+Kod izračuna provizija uzima se u obzir **datum dospijeća efekta**, čak i ako je stavka kupca zatvorena knjiženjem izdavanja Ri.Ba. dokumenta, neovisno o tome je li efekt prezentiran *na inkaso* ili *na dobro plaćanje*.  
 :::
 
-:::danger ATTENZIONE
-Prestare particolare attenzione nel caso di Ricevute bancarie anche alla gestione dei **PARAMETRI RISCHIO CLIENTE**
+:::danger UPOZORENJE
+Obratite posebnu pažnju na postavke **PARAMETARA RIZIKA KUPCA**, gdje se nalaze polja:    
 
-dove sono presenti due campi **N. giorni oltre la scadenza per effetti presentati al salvo buon fine** / **N. giorni oltre la scadenza per effetti presentati al dopo incasso** i quali, se valorizzati aggiungono un ritardo anche nella maturazione delle provvigioni.
+**Broj dana nakon dospijeća za efekte prezentirane na dobro plaćanje** i  
+**Broj dana nakon dospijeća za efekte prezentirane na inkaso**.  
+Ako su ta polja popunjena, dodaju dodatno kašnjenje u priznavanju provizija.
 
-Inoltre porre attenzione in fase di inizializzazione di un nuovo ambiente che sia stato salvato almeno una volta all'interno della form Parametro rischio cliente in modo che siano presenti i parametri di default (in particolare riferiti ai campi di cui sopra) altrimenti la data scadenza effetto non sarà letta e la provvigione sarà sempre maturata alla chiusura della partita per emissione Ri.Ba.
+Također, pri inicijalizaciji novog okruženja potrebno je **barem jednom spremiti formu Parametar rizika kupca** kako bi se učitali zadani parametri (posebno gore navedena polja); u suprotnom, datum dospijeća efekta neće biti ispravno pročitan te će se provizija smatrati dospjelom tek pri zatvaranju stavke za izdavanje Ri.Ba. dokumenta.  
 :::
 
 
-*Pulsanti*:
-> **Ricerca**: esegue la ricerca degli agenti presenti nella società attiva.  
-> **Calcolo liquidazioni**: esegue il calcolo delle liquidazioni per gli agenti selezionati, secondo le impostazioni di filtro impostate.  
+*Tipke*:
+> **Pretraga**: pokreće pretragu agenata unutar aktivnog društva.  
+> **Izračun likvidacija**: izvršava izračun likvidacija za odabrane agente prema postavljenim filtrima.  
 
-## Ripristina
+## Povrati 
 
-La scheda di ripristino consente di individuare in quale liquidazione agente sono state valorizzate le provvigioni dei documenti filtrati, oppure di individuare una o più liquidazioni secondo i filtri presenti nella maschera. Attraverso l'apposito pulsante di ripristino è possibile annullare la creazione della liquidazione agente. Non è consentito il ripristino di liquidazioni già passate al modulo percipienti.
+Kartica *Povrati* omogućuje pronalaženje u kojoj je likvidaciji evidentirana provizija za određene dokumente, ili pronalazak jedne ili više likvidacija prema filtrima u formi.  
+Pomoću odgovarajuće tipke moguće je **poništiti kreiranu likvidaciju agenta**. Nije dopušteno poništavanje likvidacija koje su već prenesene u modul za isplatne liste primatelja.
 
-*Pulsanti*:
-> **Ricerca**: esegue la ricerca delle liquidazioni automatiche già calcolate.  
-> **Ripristino**: annulla la creazione delle liquidazioni selezionate.
+
+*Tipke*:
+> **Pretraga**: pokreće pretragu već izračunatih automatskih likvidacija.  
+> **Vraćanje**: poništava kreiranje odabranih likvidacija.
