@@ -1,117 +1,124 @@
 ---
-title: Scenario gestione agente - esempi
+title: Scenarij upravljanja agentom – primjeri
 sidebar_position: 5
 ---
 
-In questa pagina illustriamo alcuni esempi per comporre un possibile scenario di gestione agente.
+Na ovoj stranici prikazani su neki primjeri koji mogu poslužiti kao vodič za definiranje mogućeg scenarija upravljanja agentom.
 
-Questo tipo di percorso è utile per capire i collegamenti tra le varie funzionalità e fare alcuni esempi di criteri di calcolo.
+Ovakav pristup koristan je za razumijevanje povezanosti između različitih funkcionalnosti i za ilustraciju primjera kriterija izračuna provizije.
 
-Seguiremo questa sequenza:
+Slijedit ćemo ovaj redoslijed:
 
-- Definizione delle fasce provvigionali
-- Creazione anagrafica agente e relativa configurazione
-- Abbinamento con i clienti
-- Creazione dei documenti di vendita
-- Incasso delle fatture
-- Controllo maturazione delle provvigioni
-- Liquidazione agenti
-- Gestione dei compensi agenti
-- Versamenti Enasarco e ritenute d'acconto (cenni)
-- Elaborazione della certificazione delle ritenute d'acconto (cenni)
+- Definiranje razreda (raspona) provizija  
+- Kreiranje šifre agenta i odgovarajuće konfiguracije  
+- Povezivanje s kupcima  
+- Kreiranje prodajnih dokumenata  
+- Naplata računa  
+- Provjera obračuna provizija  
+- Likvidacija agenata  
+- Upravljanje naknadama agenata  
+- Uplate doprinosa Enasarco i poreza po odbitku (kratki osvrt)  
+- Izrada potvrde o porezu po odbitku (kratki osvrt)
 
-## Definizione delle fasce provvigionali
+## Definiranje razreda provizija
 
-Uno dei criteri di calcolo delle provvigioni più utilizzati, e dal punto di vista didattico più interessante dei classici come una percentuale fissa o una percentuale a seconda del cliente, è rappresentato dalle *Fasce di sconto*.
+Jedan od najčešće korištenih kriterija za izračun provizija — i s didaktičkog stajališta zanimljiviji od klasičnih pristupa poput fiksnog postotka ili postotka ovisnog o kupcu — temelji se na *rasponima popusta*.  
 
-Si vuole in pratica definire delle provvigioni decrescenti al crescere dello sconto che l'agente concede al cliente.
+Cilj je definirati provizije koje se smanjuju s povećanjem popusta koji agent odobrava kupcu.
 
-La particolarità nella configurazione di questo criterio, rispetto a quelli più semplici, risiede nella necessità di definire preventivamente delle fasce di sconto connesse con le relative percentuali provvigionali.
+Posebnost konfiguracije ovog kriterija, u odnosu na jednostavnije, leži u potrebi prethodnog definiranja tablice raspona popusta koji su povezani s odgovarajućim postocima provizija.
 
-Per prima cosa dunque gestiamo la tabella **Definizione fasce provvigionali** (mettere link).
+Prvi korak je upravljanje tablicom **Definicija raspona provizija** (potrebno umetnuti poveznicu).
 
-:::important[Importante]
-**Prestare attenzione alla testata della maschera**: si consiglia di impostarla sempre visibile con il bottoncino pin in alto a destra. La testata infatti contiene un filtro fondamentale perla gestione della tabella: [***range sconto***](/docs/configurations/tables/sales/discount-range).
+:::important[Važno]
+**Obratite pozornost na zaglavlje maske** – preporučuje se da ga uvijek držite vidljivim pomoću ikone *pin* u gornjem desnom kutu. Zaglavlje sadrži ključni filter za upravljanje tablicom: [***raspon popusta***](/docs/configurations/tables/sales/discount-range).
 
-La tabella collegata di per se consente semplicemente la definizione delle tipologie abilitate, definendo il codice e descrizione e riconducendo ad un criterio predefinito tra quelli presenti, ma **nella testata della maschera in commento è necessario selezionare un range di sconto** per poter vedere o gestire il dettaglio relativo al range prescelto.
+Povezana tablica omogućuje definiranje tipova raspona (kod, opis i povezivanje s unaprijed definiranim kriterijem), ali **u zaglavlju maske potrebno je odabrati raspon popusta** kako bi bilo moguće vidjeti ili uređivati podatke tog raspona.
 :::
 
-Relativamente al range di sconto scelto, che può essere di tipo *Unico* (semplice), oppure in base alle *classi* articolo, alla *tipologia* dell'articolo o ad una sua *caratteristica* (tutti campi presenti nella base dati e legati all'articolo e quindi valorizzabili), oppure ancora ad una categoria merceologica a cui l'articolo appartiene, oppure ad un listino di vendita in cui l'articolo è inserito, possiamo definire i dettagli.
+Odabrani raspon popusta može biti tipa *Jedinstven* (jednostavan) ili se temeljiti na *klasi* artikla, *tipu artikla*, *karakteristici*, *kategoriji robe* kojoj artikl pripada, ili *prodajnom cjeniku* u kojem je artikl definiran. Za svaki od tih kriterija moguće je definirati odgovarajuće detalje.    
 
-Se non selezioneremo alcun range di sconto la ricerca produrrà dei dati in sola lettura (non modificabili, in grigio).
+Ako ne odaberemo raspon popusta, prikazani podaci bit će dostupni samo za čitanje (sivi, neaktivni).  
 
-In base al range di sconto comparirà un ulteriore filtro (a tendina) specifico, sempre nella testata.
+U skladu s odabranim rasponom popusta, u zaglavlju će se pojaviti i dodatni (padajući) filter.  
 
-A questo punto se ad esempio avessimo impostato un range di sconto sulla categoria merceologica ed ovviamente avessimo a sistema le nostre categorie (es. viteria, utensili ecc... ) per ognuna di queste categorie visualizzate sulla griglia di sinistra della nostra maschera, potremmo definire, sul pannello di destra, le fasce provvigionali.
+Ako smo, primjerice, definirali raspon popusta prema kategoriji robe te imamo unaprijed definirane kategorije (npr. vijčana roba, alati itd.), tada bismo za svaku kategoriju prikazanu u lijevoj tablici mogli, u desnom panelu, definirati pripadajuće razrede provizija.  
 
-Si procede inserendo un codice e descrizione, ad esempio la fascia da nessuno sconto al 10% possiamo codificarla 010 e nella descrizione, liberamente definirla "da 0 a 10%", a questo punto nei due campi seguenti definire le due percentuali del range, nel primo 0 e nel secondo 10.
+Unosi se šifra i opis, primjerice raspon od nema popusta do 10% možemo označiti šifrom 010, a u opisu ga slobodno definirati kao "od 0 do 10%".
+Zatim je potrebno u sljedeća dva polja unijeti postotke koji određuju raspon — u prvo polje unosimo vrijednost 0, a u drugo vrijednost 10.  
 
 
-:::important[Importante]
-Prestare particolare attenzione a come si definiscono gli scaglioni, senza lasciare scoperture, tenendo presente , come si vede dalle label, che il range va da un valore **maggiore o uguale** a ... ad un valore **minore** di...
+:::important[Važno]
+Prilikom definiranja raspona potrebno je paziti da **nema preklapanja ni praznina** među vrijednostima.  
+Kao što je naznačeno na oznakama polja, raspon vrijedi od vrijednosti **veće ili jednake** određenoj vrijednosti **do** vrijednosti **manje od** sljedeće.
 :::
 
-Nel successivo campo **Valore** definiamo la **provvigione** dell'agente relativa alla fascia / range impostato e nell'ultima colonna selezioneremo la voce **Percentuale**, inquanto intendiamo percentuali provvigionali, ma potremmo anche commutare sulla voce *Valore* ed utilizzare il campo del Valore della provvigione in senso assoluto.
+U polje **Vrijednost** unosimo **postotak provizije** koji vrijedi za taj raspon popusta, a u posljednjem stupcu biramo opciju **Postotak**.  
+Ako želimo, možemo umjesto toga odabrati *Vrijednost* i unijeti iznos provizije u apsolutnom iznosu.
 
-Se avessimo scelto un criterio di sconto Unico, non avremmo sulla sinistra alcun dettaglio ed andremmo direttamente a definire le fasce con i range percentuali validi sempre.
+Ako smo odabrali kriterij „Jedinstven popust“, tada u lijevoj tablici neće biti detalja — definiramo samo globalne raspona s pripadajućim postocima.
 
 ![](/img/it-it/sales/agents/definizione-fasce-provvigionali.png)
 
-Nell'immagine il 35% di sconto corrisponde ad una provvigione del 3%
+U prikazanom primjeru, popust od 35% odgovara proviziji od 3%.  
 
-## Creazione anagrafica agente e relativa configurazione
+## Kreiranje šifre agenta i konfiguracija  
 
-Nella creazione dell'anagrafica dell'agente, di cui riprendiamo solo i campi più importanti ai fini dell'esempio, rinviando alle [**pagine relative**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail) per le fasi di base della creazione anagrafica, dopo aver impostato il [**criterio di maturazione delle provvigioni**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/settlement), come ad esempio ad ordine confermato, oppure a fattura emessa, oppure ancora a pagamento avvenuto (decisamente il più utilizzato che riconosce la provvigione in proporzione all'incassato) e gli ltri campi di interesse fiscale e previdenziale quali la **categoria agente e la ritenuta d'acconto** (o regime di esenzione) ci occupiamo del calcolo della provvigione (il valore della provvigione) ed abbiniamo dunque al criterio di cui abbiamo detto.
+Pri kreiranju šifre agenta — ovdje izdvajamo samo najvažnija polja — nakon što se definira [**kriterij obračuna provizija**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail) za osnovne faze izrade šifre agenta, nakon što se postavi[**kriterij dospijeća provizija**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/settlement), primjerice po potvrđenoj narudžbi, po izdanom računu ili po izvršenom plaćanju (posljednja je opcija u praksi najčešća jer priznaje proviziju u omjeru s naplaćenim iznosom) — te nakon što se popune ostala polja od fiskalnog i doprinosa značaja, kao što su **kategorija agenta i predujam poreza na dohodak** (ili režim izuzeća), prelazimo na izračun same provizije (vrijednosti provizije) te je povezujemo s prethodno odabranim kriterijem.  
 
-Nel tab [**Provvigioni dirette**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/direct-commissions) oltre ai campi per un fisso retribuito ed una percentuale generale di provvigione per l'agente in questione, abbiamo la griglia di destra, dove andremo a selezionare il criterio delle **Fasce di sconto**.
+U kartici [**Izravne provizije**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/direct-commissions) nalazi se mreža u kojoj odabiremo kriterij **Raspon popusta**.  
 
-**Prestare attenzione al campo della Priorità** anche per il fatto che di default l'anagrafica viene inizializzata con il criterio Anagrafica agente e priorità 1. Dobbiamo cancellare questo criterio, o meglio ancora porlo con una priorità più bassa, ad esempio 2, e con priorità 1 il nostro *Fasce di sconto*. In questo modo se il criterio specifico che ci interessa non dovesse trovare applicazione nel caso specifico avremo un criterio residuale che attribuirà la percentuale scritta in anagrafica agente nel campo adiacente di cui abbiamo detto.
+**Obratite pozornost na polje Prioritet** – po zadanim postavkama u šifri agenta postoji kriterij “Anagrafika agenta” s prioritetom 1. Taj kriterij treba ili ukloniti ili mu smanjiti prioritet (npr. na 2), a kriteriju *Raspon popusta* postaviti prioritet 1.  
+Na taj način, ako kriterij s rasponom ne pronađe primjenu, koristi se rezervni (osnovni) kriterij iz šifre agenta.
 
-:::danger[Attenzione]
-Con un criterio "articolato" come *Fasce di sconto* e diversi altri, **è necessario definire il dettaglio premendo il pulsante sulla ribbon bar *Dettaglio percentuali selezionate***.
+:::danger[Upozorenje]
+Za složene kriterije poput *Raspon popusta* potrebno je definirati detalje klikom na **tipku Detalj odabranih postotaka** u traci izbornika.
 :::
 
 ![](/img/it-it/sales/agents/provvigioni-dirette.png)
 
-**Nella maschera che si apre occorre selezionare nuovamente il range di sconto di riferimento per ottenere la comparsa delle fasce provvigionali.**
+**U novootvorenoj maski potrebno je ponovno odabrati odgovarajući raspon popusta kako bi se prikazale pripadajuće provizijske razrede.**
 
-Il senso di aver premuto il bottone ed aperto questa maschera è che vedremo caricate le fasce che abbiamo già definito. Queste fasce sono dunque da intendersi come standard.
+Nakon što se pritisne tipka i otvori odgovarajući prozor, prikazat će se rasponi koje su već definirane. Ti se rasponi smatraju standardnima.
 
-Possiamo pertanto accettare lo standard per questo agente, e dunque non fare alcuna modifica, oppure, tramite l'apposito radio button ***Provvigioni***, commutare la lettura su **Personalizzate**. Ecco allora che la colonna **Valore** diventa **modificabile** e possiamo definire valori validi solo per quell'agente.
+Možemo prihvatiti standardne vrijednosti za ovog agenta, bez ikakvih izmjena, ili putem radio gumba ***Provizije*** prebaciti prikaz na **Prilagođene**.  
+U tom slučaju stupac **Vrijednost** postaje **izmjenjiv**, te je moguće definirati vrijednosti koje vrijede isključivo za tog agenta.
 
-Abbiamo inoltre il radio button ***Prezzo di riferimento*** con il quale definire se il prezzo di riferimento per il calcolo deve essere quello dell'anagrafica articolo, oppure quello specifico definito nella riga del documento di vendita.
+Također je dostupan radio gumb ***Referentna cijena*** pomoću kojeg se određuje treba li za izračun koristiti cijenu iz šifrarnika artikla ili onu definiranu u retku prodajnog dokumenta.
 
-:::danger[Attenzione]
-Ricordiamoci di definire anche il range di **Date di validità**, quantomeno il campo Da data validità
+:::danger[Upozorenje]
+Potrebno je definirati i raspon **Datuma valjanosti**, barem polje *Od datuma valjanosti*.
 :::
 
 ![](/img/it-it/sales/agents/definizione-provvigioni.png)
 
-## Abbinamento con i clienti
+## Povezivanje s kupcima
 
-:::tip[Attenzione]
-**In qualsiasi caso**, qualunque criterio di calcolo scegliamo, **l'agente va collegato con i clienti** sui quali dovrà maturare provvigione. 
+:::tip[Upozorenje]
+**U svakom slučaju**, bez obzira na odabrani kriterij izračuna, **agenta je potrebno povezati s kupcima** za koje će ostvarivati provizije.
 
-Su ogni cliente può essere collegato più di un agente.
+Jednom kupcu može biti dodijeljeno više agenata.
 :::
 
-Per il collegamento, in alternativa all'apertura delle varie anagrafiche cliente ed inserimento dell'agente nel tab [**Agenti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/agents) ci viene in aiuto il tool presente nella maschera **Assegnazione Agenti** (Home>Contatti>Assegnazione agenti).
+Za povezivanje, umjesto otvaranja pojedinačnih kartica kupaca i ručnog unosa agenta u tab [**Agenti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/agents) može se koristiti alat **Dodjela agenata** (*Početna > Kontakti > Dodjela agenata*).
 
-Qui è possibile avviare la ricerca (dotata di vari filtri nella testata) che visualizza tutti i clienti ed al passaggio da una riga all'altra visualizzare, per ogni cliente, gli agenti eventualmente già associati.
+Ovdje je moguće pokrenuti pretragu (s raznim filtrima u zaglavlju) koja prikazuje sve kupce te, prelaskom s retka na redak, vidjeti agente koji su već povezani s pojedinim kupcem.
 
-Pertanto la procedura risulta utile anche e soprattutto per la manutenzione, ad esempio i casi di cessazione di un agente e subentro di un'altro.
+Ova je procedura vrlo korisna i za održavanje — primjerice, u slučaju prestanka rada jednog agenta i preuzimanja kupaca od strane drugog.
 
-Il pulsante di **aggiunta**, nella ribbon bar, ci permette di inserire il nostro nuovo agente su tutti i clienti desiderati. 
+Tipka **Dodaj** u alatnoj traci omogućuje dodavanje novog agenta svim odabranim kupcima.  
 
-Gli altri pulsanti ci permettono, intuitivamente, le altre manovre quali sostituzione, cancellazione, aggiornamento date validità ecc... nei casi predetti di subentri e cessazioni ecc...
+Ostale tipke omogućuju uobičajene radnje poput zamjene, brisanja i ažuriranja datuma valjanosti, u slučajevima prijenosa ili prestanka suradnje.
 
-E' possibile anche inserire, in questo modo massivo, la percentuale di provvigione riferita al singolo cliente, ma non è il caso del nostro esempio dove ragioniamo in base alla scontistica.
+Na ovaj se način može masovno unijeti i postotak provizije za pojedinog kupca, no u našem primjeru koristimo izračun temeljen na *sustavu popusta*.
 
-## Creazione dei documenti di vendita
 
-Il calcolo della provvigione nei documenti quali ordine, bolla e fattura (viene riportato nei passaggi di creazione del documento successivo dal precedente) avviene in automatico in base alle impostazioni definite sopra, il valore dello sconto che determina il valore della provvigione potrà avvenire in vari modi senza rappresentare un problema per il calcolo della provvigione.
+## Izrada prodajnih dokumenata
 
-Si rinvia alle procedure della [**definizione degli sconti**](/docs/sales/price-control/definition/) dell'area Vendite.
+Izračun provizije u dokumentima kao što su narudžba, otpremnica i račun odvija se automatski prema ranije definiranim postavkama.  
+Vrijednost popusta, koja određuje iznos provizije, može se unositi na različite načine bez utjecaja na točnost izračuna.
+
+Za detalje pogledajte postupak [**definicije popusta**](/docs/sales/price-control/definition/) u području *Prodaje*.
 
 Nota: nella testata dei documenti di vendita viene evidenziato l'agente o gli agenti agganciati, ma per controllare il valore della provvigione calcolata (già a partire dal documento in questione) occorre spostarsi nel tab [**Articoli**](/docs/sales/sales-invoices/invoicing/sales-invoice) 
 

@@ -1,40 +1,41 @@
 ---
-title: Provvigioni maturate
+title: Obračunate provizije
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso *Vendite > Agenti > Liquidazioni agenti > Stampe*.
+Obrazac se otvara putem izbornika *Prodaja > Agenti > Likvidacije agenata > Ispisi*.  
 
-La stampa delle è una simulazione del calcolo della provvigione maturata dall'agente, secondo l'impostazione della sua anagrafica e i filtri applicati al report. 
+Ispis predstavlja simulaciju izračuna provizije koju je agent ostvario, prema postavkama u njegovoj šifri i filtrima primijenjenima na izvještaj.  
 
-**In modo particolare, nel caso di provvigioni sull'incassato, questo report visualizzerà i dati maturati escludendo i valori delle liquidazioni automatiche create nel gestionale, che diventano quindi obbligatorie al fine di ottenere un report allineato;** nel caso di provvigioni sul fatturato/consegnato/ordinato, invece, di per se già l'uso corretto del range di filtro per date consente di ottenere un risultato corretto indipendentemente dall'uso della procedura automatica di liquidazione provvigioni.
+**Posebno, u slučaju provizija na naplaćeni iznos, ovaj izvještaj prikazat će ostvarene podatke isključujući vrijednosti automatskih likvidacija kreiranih u sustavu** — stoga je njihovo kreiranje obavezno kako bi se dobio ispravno usklađen izvještaj.  
+U slučaju provizija na fakturirani / isporučeni / naručeni iznos, pravilna primjena raspona datuma u filterima već sama po sebi omogućuje točan rezultat, neovisno o korištenju automatske procedure likvidacije provizija.  
 
+**Ispis provizija obračunatih na dan** označava referentni datum za izračun provizija na *naplaćeni iznos*.  
 
+Flag **Ispiši dug prema agentu na dan** aktivira unos datuma: ovom opcijom moguće je simulirati ispis provizija obračunatih na određeni dan, uključujući i one koje su likvidirane nakon tog datuma (koje bi inače bile isključene).  
 
-**Stampa provvigioni maturate al** indica la data di riferimento per il calcolo delle provvigioni sull'*incassato* 
+Flag **Uključi provizije s nulom u osnovicu za provizije** omogućuje uključivanje stavki s iznosom provizije jednakim nuli u osnovicu za obračun provizija.  
 
-flag **Stampa debito vs/agente alla data** con il quale si attiva la data relativa: con questa opzione è possibile simulare la stampa delle provvigioni maturate a quella data, includendo anche quelle liquidate in data successiva (che normalmente sono escluse). 
+:::tip PROVIZIJE NA NAPLAĆENI IZNOS I KOMPENZACIJE STAVKI  
+Ako se provizije obračunavaju na temelju naplaćenog iznosa, a dolazi do kompenzacije stavki (npr. zbog ranije primljenih predujmova), treba obratiti pozornost na to da kompenzacija pridružuje redove zatvaranja stavki u svrhu obračuna provizija prema **datumu knjiženja** koji je najnoviji između dviju stavki koje se međusobno kompenziraju. 
 
-flag **Considera provvigioni zero in imponibile provvigionale** consente di considerare tra gli imponibili provvigionali anche quelli che hanno un valore di provvigione uguale a zero.
-
-:::tip PROVVIGIONI SULL'INCASSATO E COMPENSAZIONE PARTITE
-Nel caso in cui le provvigioni siano calcolate sull'incassato ed avvenga una compensazione di partite (ad esempio per acconti pregressi ricevuti) occorre prestare attenzione al fatto che la compensazione assegna le righe di chiusura partite ai fini del calcolo provvigioni maturate in base alla **data registrazione** più recente tra le due che hanno creato le partite che vengono compensate tra loro.
-
-In una situazione di acconti e storni frequente dove magari sono presenti importi uguali occorre pertanto fare particolare attenzione di compensare tra loro gli acconti e gli storni riferiti al medesimo periodo, altrimenti la provvigione risulterà maturata in data errata.
+U situacijama s učestalim predujmovima i storno knjiženjima, gdje se mogu pojaviti isti iznosi, posebno je važno kompenzirati predujmove i storna koja se odnose na isto razdoblje — inače bi provizija mogla biti obračunata s pogrešnim datumom.  
 :::
 
-:::tip PROVVIGIONI SULL'INCASSATO E SCRITTURE CONTABILI PROVVISORIE
-Per il calcolo delle provvigioni maturate vengono considerate SOLO le registrazioni nello stato **definitivo**, quindi eventuali incassi (anche anticipati) registrati in modalità provvisoria verranno ignorati
+:::tip PROVIZIJE NA NAPLAĆENI IZNOS I PRIVREMENA KNJIŽENJA
+Za izračun obračunatih provizija uzimaju se u obzir **samo knjiženja u statusu “definitivno”**, stoga će svi naplati (čak i avansni) koji su evidentirani kao privremeni biti zanemareni.  
 :::
 
-:::tip PROVVIGIONI SULL'INCASSATO E RICEVUTE BANCARIE
-La maturazione delle provvigioni tiene conto in ogni caso della data scadenza effetto, anche se la partita cliente viene chiusa per effetto della contabilizzazione dell'emissione Ri.Ba. e l'effetto è presentato al salvo buon fine o accreditato.
+:::tip PROVIZIJE NA NAPLAĆENI IZNOS I BANKARSKI EFEKTI 
+Obračun provizija uvijek uzima u obzir **datum dospijeća efekta**, čak i ako je stavka kupca zatvorena zbog knjiženja izdanog bankarskog efekta (Ri.Ba.) te je efekt predan “uz dobar ishod” ili već knjižen kao odobren
 :::
 
-:::danger ATTENZIONE
-Prestare particolare attenzione nel caso di Ricevute bancarie anche alla gestione dei **PARAMETRI RISCHIO CLIENTE**
+:::danger PAŽNJA
+Posebnu pozornost potrebno je obratiti kod bankarskih efekata i upravljanja **PARAMETRIMA RIZIKA KUPCA**.
 
-dove sono presenti due campi **N. giorni oltre la scadenza per effetti presentati al salvo buon fine** / **N. giorni oltre la scadenza per effetti presentati al dopo incasso** i quali, se valorizzati aggiungono un ritardo anche nella maturazione delle provvigioni.
+U formi Parametar rizika kupca nalaze se dva polja: **Broj dana nakon dospijeća za efekte predane uz dobar ishod** i **Broj dana nakon dospijeća za efekte predane nakon naplate**.    
+Ako su ta polja popunjena, ona dodaju dodatno kašnjenje i u obračunu provizija.
 
-Inoltre porre attenzione in fase di inizializzazione di un nuovo ambiente che sia stato salvato almeno una volta all'interno della form Parametro rischio cliente in modo che siano presenti i parametri di default (in particolare riferiti ai campi di cui sopra) altrimenti la data scadenza effetto non sarà letta e la provvigione sarà sempre maturata alla chiusura della partita per emissione Ri.Ba.
+Također, pri inicijalizaciji novog okruženja potrebno je osigurati da je obrazac *Parametar rizika kupca* barem jednom spremljen, kako bi se učitali zadani parametri (posebno oni koji se odnose na gore navedena polja).  
+U suprotnom, datum dospijeća efekta neće biti prepoznat, pa će se provizija uvijek smatrati obračunatom tek pri zatvaranju stavke izdavanjem bankarskog efekta (Ri.Ba.).
 :::

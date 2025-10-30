@@ -1,14 +1,15 @@
 ---
-title: Cedolini agenti
+title: Obračunski listići agenata  
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso *Vendite > Agenti > Liquidazioni agenti > Stampe*.
+Obrazac se otvara putem izbornika *Prodaja > Agenti > Likvidacije agenata > Ispisi*.  
 
-La stampa consente di estrarre dai documenti di vendita le provvigioni inserite sui vari agenti, indipendentemente dal criterio di maturazione della provvigione dell'agente.
+Ovaj ispis omogućuje dohvaćanje provizija evidentiranih na prodajnim dokumentima za pojedine agente, neovisno o kriteriju po kojem agentu dospijeva provizija.  
 
-Nella sezione **Stampa le provvigioni del** si effettua la selezione del tipo di documento da considerare: l'ordine cliente (ordinato), il DDT di consegna (consegnato) o la fattura (venduto). A seconda di questa opzione cambierà il filtro del **Tipo documento**.
+U odjeljku **Ispiši provizije iz** odabire se vrsta dokumenta koji će biti uzet u obzir: narudžba kupca (naručeno), otpremnica (isporučeno) ili račun (prodano).  
+Ovisno o ovom odabiru mijenja se i filter **Vrsta dokumenta**.
 
-Da segnalare l'opzione di stampa con il dettaglio per articolo: questa versione del report può essere utile per controllare la correttezza delle provvigioni inserite dal sistema e poter individuare errori di impostazioni dell'anagrafica agente.
+Posebno se ističe mogućnost ispisa s detaljima po artiklu: ova verzija izvještaja korisna je za provjeru točnosti provizija koje je sustav dodijelio agentima te za lakše otkrivanje mogućih pogrešaka u postavkama šifre agenta.
 
-Più dettagli su questo argomento negli articoli: [Ricerca dati nelle form di sola lettura ](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) e [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 
+Više detalja o ovoj temi dostupno je u člancima: [Pretraživanje podataka u formama samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis izvještaja](/docs/guide/common/operations-with-data/reports) 

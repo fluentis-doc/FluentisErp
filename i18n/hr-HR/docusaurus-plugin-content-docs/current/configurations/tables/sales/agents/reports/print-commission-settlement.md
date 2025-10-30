@@ -1,10 +1,11 @@
 ---
-title: Stampa liquidazioni provvigioni
+title: Ispis likvidacija provizija  
 sidebar_position: 3
 ---
 
-La form si apre tramite il percorso *Vendite > Agenti > Liquidazioni agenti > Stampe*.
+Obrazac se otvara putem izbornika *Prodaja > Agenti > Likvidacije agenata > Ispisi*.  
 
-La stampa consente di ottenere un report da inviare all'agente con il dettaglio dei documenti che sono andati in maturazione nella liquidazione stampata. È possibile visualizzare anche il dettaglio maturato sul singolo articolo dei documenti presenti in liquidazione.
+Ovaj ispis omogućuje generiranje izvještaja namijenjenog slanju agentu, s detaljima dokumenata koji su ušli u obračun u likvidaciji koja se ispisuje.  
+Također je moguće prikazati i detalje obračunatih provizija za svaki pojedini artikl iz dokumenata uključenih u likvidaciju.
 
-Più dettagli su questo argomento negli articoli: [Ricerca dati nelle form di sola lettura ](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) e [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).
+Više informacija o ovoj temi dostupno je u člancima: [Pretraživanje podataka u formama samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis izvještaja](/docs/guide/common/operations-with-data/reports).

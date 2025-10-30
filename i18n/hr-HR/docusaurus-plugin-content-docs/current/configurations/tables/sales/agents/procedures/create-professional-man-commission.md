@@ -1,41 +1,42 @@
 ---
-title: Crea compenso percipiente
+title: Kreiraj naknadu primatelja
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso *Vendite > Agenti > Procedure > Crea compenso percipiente*.
+Obrazac se otvara putem izbornika *Prodaja > Agenti > Postupci > Kreiraj naknadu primatelja*.
 
-Questa procedura permette di eseguire/ripristinare la creazione del compenso percipiente all'interno della contabilità generale.
+Ovim se postupkom omogućuje izvršavanje ili vraćanje (ponovno pokretanje) kreiranja naknade primatelja unutar glavne knjige.
 
-## Liquidazioni provvigioni
+## Likvidacije provizija
 
-In questo tab, l'utente ha la possibilità di cercare le liquidazioni non ancora valorizzate in un compenso percipiente. 
+U ovoj kartici korisnik ima mogućnost pretraživanja likvidacija koje još nisu uključene u naknadu primatelja.
 
-I filtri disponibili per agevolare la ricerca sono:
-- Sottoconto agente
-- Anno / Numero / Data della liquidazione (da - a)
-- Descrizione attribuita in fase di creazione della liquidazione agente
+Dostupni filtri za olakšavanje pretrage su:
+- Podkonto agenta  
+- Godina / Broj / Datum likvidacije (od – do)  
+- Opis dodijeljen prilikom kreiranja likvidacije agenta  
 
-:::note[Flag Ricalcola Enasarco]
-Con il flag attivo verrà sempre eseguito un ricalcolo dei valori relativi ai contributi Enasarco, pertanto, se all'interno della liquidazione provvigioni (entrando in modifica dopo la creazione) è stato impostato il radio button *Calcolo Manuale* (al fine di poter forzare manualmente i dati calcolati da sistema), se non si desidera che i dati enasarco vengano **comunque** ricalcolati e resettati nel compenso, occorre disattivare il flag prima di eseguire la creazione del compenso.
+:::note[Flag Ponovno izračunaj Enasarco]
+Ako je ovaj flag aktivan, uvijek će se ponovno izračunavati vrijednosti koje se odnose na doprinose Enasarco.  
+Stoga, ako je unutar likvidacije provizija (naknadno, nakon kreiranja) postavljena opcija *Ručno izračunavanje* kako bi se omogućilo ručno podešavanje podataka koje sustav izračunava automatski, a **ne želite** da se podaci Enasarco svejedno ponovno izračunaju i ponište prilikom kreiranja naknade, potrebno je **deaktivirati flag** prije pokretanja postupka kreiranja naknade.
 
-Il flag **NON** influisce sul ricalcolo dei dati relativi alla ritenuta d'acconto (eventualmente presente nella liquidazione provvigionale).
+Ovaj flag **ne utječe** na ponovni izračun podataka koji se odnose na predujam poreza (ako je prisutan u likvidaciji provizije).
 :::
 
 
-Dopo aver selezionato le varie righe, premendo il pulsante *Calcolo liquidazioni* si crea il compenso percipiente.
+Nakon odabira željenih redaka, pritiskom na tipku *Izračun likvidacija* kreira se naknada primatelja.
 
 
-#### Pulsanti specifici
+#### Posebne tipke
 
-> **Ricerca**: esegue la ricerca delle liquidazioni da valorizzare.  
-> **Calcolo liquidazioni**: esegue la valorizzazione delle liquidazioni selezionate.  
+> **Pretraži** – pokreće pretraživanje likvidacija koje treba uključiti u naknadu.    
+> **Izračun likvidacija** – pokreće vrednovanje odabranih likvidacija.     
 
-## Ripristino
+## Povrati 
 
-In questo tab, l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di creazione effettuate.
+U ovoj kartici korisnik može pretraživati, pregledavati i poništavati već izvršene postupke kreiranja. 
 
-#### Pulsanti specifici
+#### Posebne tipke  
 
-> **Ricerca**: esegue la ricerca delle liquidazioni secondo il filtro impostato.  
-> **Ripristino**: annulla le creazioni compensi selezionate.  
+> **Pretraži** – pokreće pretraživanje likvidacija prema zadanim filtrima.    
+> **Vrati** – poništava odabrane postupke kreiranja naknada.          
