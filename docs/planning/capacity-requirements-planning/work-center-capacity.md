@@ -10,6 +10,7 @@ La visualizzazione grafica illustra la capacità massima e l'impegno giornaliero
 
 L’operatore può ottenere una visualizzazione immediata dei carichi di ciascun centro di lavoro attivo nell’ambito dei singoli reparti per un determinato periodo temporale, permettendogli di conoscere in modo immediato gli eventuali picchi di sovraccarico o di inefficienza produttiva. 
 Con un semplice *drag & drop* l’operatore può anticipare, posticipare o cambiare centro di lavoro ad una lavorazione, e con un doppio click nell’ambito della singola barra di capacità, è possibile conoscere nel dettaglio le informazioni relative a quali ordini di lavoro impegnano il centro nella specifica data selezionata.
+Nel caso in cui avvenga uno spostamento di fase in una giornata in cui il centro di lavoro è già completamente occupato, viene visualizzato un messaggio di errore. Altrimenti, viene saturata la giornata del centro di lavoro senza sovra-allocarla e il residuo del tempo (della fase spostata) viene ripartito nelle successive giornate lavorative per una capacità pari alla massima di quel centro di lavoro, indipendentemente dal carico di lavoro già presente. 
 
 Questa form, è costituita da 4 sezioni: 
 
