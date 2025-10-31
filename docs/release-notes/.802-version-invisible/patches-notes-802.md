@@ -3,6 +3,30 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 802.0009 - 28/10/2025
+
+> -	CO - Scritture di Rettifica: abilitata la possibilità di esportare i dati della griglia. Modifications in Scritture di Rettifica form can have an impact on profiles (Rif. Ticket TT04136/25). 
+> -	FI - Comunicazione liquidazioni periodiche iva: Risolto problema in fase di creazione LIPE (Rif. Ticket TT04659/25). 
+> -	FI - revisione contabilizzazione documenti per errore in raggruppamento centri di costo. (#TT04658/25) 
+> -	FI, PR - abilitata la multi-selezione nei campi combo per le form Pagamenti fornitori, Creazione automatica pagamenti fornitori e Gestione appoggio pagamenti. Modifications in these forms can have an impact on profiles ( TT03917/25) 
+> -	MS - Corretto bug nella procedura MRP che, in alcuni casi, calcolava in maniera errata la data di fine degli ordini pianificati di acquisto. (#TT04624/25) 
+> -	SD - Nella conversione da Contatto CRM ad Anagrafica cliente, vengono riportati gli Extra Data, se attivati (#TT04525/25) 
+> -	Solved bug to map null field with Json files 
+
+
+### Patch 802.0008 - 27/10/2025
+
+> -	CRM - corretto caso che non permetteva di effettuare inserimenti continuativi di attività nei workflow dei contatti presenti nelle campagne marketing (#TT04302/25) 
+> -	CRM - risolto caso per cui cliccando sulla email di un riferimento di un contatto CRM, si verificava una anomalia. Reso possibile apertura diretta gestore di posta installato su pc. (#TT04550/25) 
+> -	FI - contabilizzazione compensi su compenso creato da liquidazione agenti, blocco del ricalcolo enasarco. (#TT04577/25) 
+> -	MS - Corretto bug in pianificazione generale che generava in alcuni casi ordini pianificati con quantità doppia. (#TT04502/25) 
+> -	MS - Corretto bug nell’esecuzione della procedura MRP (#TT04604/25) 
+> -	MS - Corretto il calcolo del tempo di inizio e fine in Sequenza fasi. (#TT03529/25) 
+> -	PR - distinte di anticipo, revisione gestione del tipo importo ‘imponibile’. Modifications in SalesInvoiceHelpFilterWidget and SalesInvoiceMaturityHelpAdvanceFilterWidget can have an impact on profile (#TT04280/25) 
+> -	PR - stampa lista fatture anticipate/incassate, revisione del repository method per gestione filtro incassate. Modifications in stampa lista fatture anticipate/incassate can have an impact on profile (#TT04572/25) 
+> -	WM - Duplica articoli- creare la possibilità di estendere in modo personalizzato per altre proprietà da duplicare (#TT04607/25) 
+> -	WM - Tracciabilità lotti: corretto controllo validità componenti in distinta base. (TT04524/25) 
+
 ### Patch 802.0007 - 22/10/2025
 
 > -	ARM - Simply default template for workflow script 
