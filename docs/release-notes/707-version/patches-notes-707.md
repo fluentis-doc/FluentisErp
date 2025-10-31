@@ -3,6 +3,22 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0053 - 30/10/2025
+
+> -	CO - Scritture di Rettifica: abilitata la possibilità di esportare i dati della griglia. Modifications in Scritture di Rettifica form can have an impact on profiles (Rif. Ticket TT04136/25). 
+> -	FI - Comunicazione liquidazioni periodiche iva: Risolto problema in fase di creazione LIPE (Rif. Ticket TT04659/25). 
+> -	FI - contabilizzazione compensi su compenso creato da liquidazione agenti, blocco del ricalcolo enasarco. (#TT04577/25) 
+> -	FI, PR - abilitata la multi-selezione nei campi combo per le form Pagamenti fornitori, Creazione automatica pagamenti fornitori e Gestione appoggio pagamenti. Modifications in these forms can have an impact on profiles ( TT03917/25) 
+> -	MS - Corretto bug nella procedura MRP che, in alcuni casi, calcolava in maniera errata la data di fine degli ordini pianificati di acquisto. (#TT04624/25) 
+> -	SCM: Nir - correzione delle fonti dei lotti e delle quantità residue per più lotti, corretto anche il carico del magazzino per Nir #TT04615/25 
+> -	SCS - Ordine di conto lavoro, corretta anomalia che causava la ripetizione di messaggi di errore in fase di sostituzione articolo, da non fittizio a fittizio, nelle righe ordine (#TT03838/25) 
+> -	SCS - Ordine di conto lavoro, corretta anomalia che causava la ripetizione di messaggi di errore in fase di sostituzione articolo, da non fittizio a fittizio, nelle righe ordine (#TT03838/25) 
+> -	SD - Nella conversione da Contatto CRM ad Anagrafica cliente, vengono riportati gli Extra Data, se attivati (#TT04525/25) 
+> -	SD - Revisione valorizzazione centri di costo quando la priorità è sull’anagrafica articolo e ci sono più centri (#TT04670/25) 
+> -	SD - Abilitata la possibilità di filtrare sul campo Tipo documento della griglia Lista Agenti nelle form Amministrazione > Percipienti > Procedure > Calcolo provvigioni e Vendita > Agenti > Procedure > Creazione automatica Liquidazioni provvigioni. Modifications in these forms can have an impact on profiles. (#TT04343/25) 
+> -	WM - Analisi disponibilità, al cambio dell’articolo nel filtro e successivo rilancio della ricerca, la griglia di dettaglio viene aggiornata in base al nuovo articolo (#TT03562/25) 
+> -	WM-Aggiornamento del costo effettivo per i lotti sui movimenti di carico a magazzino, provenienti da diverse aree (vendite, acquisti, produzione, terzista) (TT04267/25). 
+
 ### Patch 707.1-0052 - 23/10/2025
 
 > -	ARM - Simply default template for workflow script.  
