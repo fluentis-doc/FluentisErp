@@ -1,13 +1,13 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il modulo si trova nell'area *Vendite > Agenti*.
+Modul se nalazi u području *Prodaja > Agenti*.
 
-Il modulo offre una soluzione completa per la gestione, il controllo e l'elaborazione delle provvigioni degli agenti di vendita. Questa funzionalità consente alle aziende di calcolare le provvigioni maturate, generare liquidazioni dettagliate e gestire compensi per professionisti.
+Ovaj modul nudi cjelovito rješenje za upravljanje, kontrolu i obradu provizija prodajnih agenata. Ova funkcionalnost omogućuje tvrtkama izračun zarađenih provizija, generiranje detaljnih obračuna i upravljanje naknadama za profesionalce.  
 
-**Funzionalità Principali**:
+**Glavne funkcionalnosti**:
 - Gestione e controllo delle provvigioni: Il sistema permette di gestire, controllare ed elaborare il calcolo delle provvigioni dovute agli agenti, tenendo conto delle vendite effettuate e delle condizioni contrattuali specifiche.
 - Generazione delle liquidazioni: È possibile generare liquidazioni periodiche per gli agenti, aggregando le provvigioni maturate e presentando un quadro chiaro delle somme dovute.
 - Creazione di compensi per professionisti: Fluentis offre la possibilità di creare compensi specifici per professionisti esterni, garantendo una gestione flessibile e dettagliata dei pagamenti.

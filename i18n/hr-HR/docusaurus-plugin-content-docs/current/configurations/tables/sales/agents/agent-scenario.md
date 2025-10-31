@@ -120,78 +120,86 @@ Vrijednost popusta, koja određuje iznos provizije, može se unositi na različi
 
 Za detalje pogledajte postupak [**definicije popusta**](/docs/sales/price-control/definition/) u području *Prodaje*.
 
-Nota: nella testata dei documenti di vendita viene evidenziato l'agente o gli agenti agganciati, ma per controllare il valore della provvigione calcolata (già a partire dal documento in questione) occorre spostarsi nel tab [**Articoli**](/docs/sales/sales-invoices/invoicing/sales-invoice) 
+**Napomena:** U zaglavlju prodajnih dokumenata prikazuje se agent ili agenti koji su pridruženi, ali za provjeru iznosa izračunate provizije (već od samog dokumenta) potrebno je prijeći na karticu [**Artikli**](/docs/sales/sales-invoices/invoicing/sales-invoice) 
 
-## Incasso delle fatture
+## Naplata računa
 
-Nel nostro esempio abbiamo impostato una maturazione a **pagamento avvenuto**, pertanto ai fini della possibilità di procedere alla liquidazione della provvigione, previa verifica della sua maturazione, **rileva la registrazione contabile di chiusura della** (o delle) **partita aperta** che si è generata con la [contabilizzazione](/docs/sales/sales-invoices/accounting/sales-invoices-accounting) della fattura di vendita.
+U našem primjeru postavili smo da se provizija stječe **nakon izvršene uplate**, stoga se, kako bi bilo moguće izvršiti isplatu provizije (nakon provjere njenog dospijeća), uzima u obzir **knjiženje zatvaranja otvorene stavke** koja je nastala [knjiženjem](/docs/sales/sales-invoices/accounting/sales-invoices-accounting) prodajnog računa.    
 
-Nota: si ricorda che in caso di incasso tramite ricevuta bancaria rileva l'effettiva data di **maturazione** dell' effetto, data che potrebbe essere incrementata secondo un parametro presente nel modulo [Rischio Cliente](/docs/configurations/parameters/treasury/customer-risk-parameters).
-(N. giorni oltre la scadenza per effetti presentati al salvo buon fine - N. giorni oltre la scadenza per effetti presentati al dopo incasso)
+**Napomena:** Podsjećamo da se u slučaju naplate putem bankovne priznanice uzima stvarni datum **dospijeća efekta**, datum koji se može uvećati prema parametru prisutnom u modulu [Rizik kupca](/docs/configurations/parameters/treasury/customer-risk-parameters).
+(Broj dana nakon dospijeća za efekte predane na inkaso uz zadržavanje prava – Broj dana nakon dospijeća za efekte predane na inkaso nakon naplate)  
 
-## Controllo maturazione delle provvigioni
+## Provjera dospijeća provizija  
 
-Per la verifica della maturazione delle provvigioni e dunque la possibilità di liquidarle ed i risultati attesi, sempre considerando il criterio scelto sull'avvenuto pagamento (che rende questa verifica importante) possiamo utilizzare la stampa di riferimento, [**Provvigioni maturate**](/docs/sales/agents/reports/accrued-commissions).
+Za provjeru dospijeća provizija, a time i mogućnosti njihove isplate te očekivanih rezultata — uzimajući u obzir kriterij prema kojem se provizija stječe tek nakon uplate (što ovu provjeru čini važnom) — možemo koristiti izvještaj [**Dospjele provizije**](/docs/sales/agents/reports/accrued-commissions).
 
-Infatti la stampa è in grado di rappresentare in anteprima quanto è maturato d il valore della liquidazione che andremo a generare e poi liquidare attraverso la conversione in un compenso percipiente (l'agente è di per se un percipiente a fronte delle ritenute d'acconto).
+Ovaj izvještaj omogućuje prikaz preliminarnog pregleda iznosa koji je dospio te vrijednosti isplate koju ćemo generirati i zatim isplatiti kroz pretvaranje u naknadu primatelju (agent je u ovom kontekstu primatelj s obzirom na obračun predujma poreza).    
 
-Altre stampe del modulo invece sono utili per verificare più in dettaglio gli importi astrattamente dovuti ma non necessariamente maturati, quali [**Cedolini agenti**](//docs/sales/agents/reports/agents-payslip).
+Ostali izvještaji iz modula korisni su za detaljniji uvid u iznose koji su teoretski dugovani, ali još nisu dospjeli, kao što je izvještaj [**Platne liste agenata**](//docs/sales/agents/reports/agents-payslip).
 
-## Liquidazione agenti
+## Likvidacija agenata
 
-La procedura di [**Creazione automatica liquidazione provvigioni**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement) permette di elaborare il calcolo e di considerare liquidate le provvigioni che verranno incluse.
+Postupak [**Automatskog kreiranja likvidacije provizija**](/docs/sales/agents/procedures/automatic-generation-of-commission-settlement) omogućuje izračun i označavanje kao likvidiranih svih provizija koje će biti uključene.  
 
-Da quel momento queste provvigioni non saranno più visibili eseguendo la stampa [**Provvigioni maturate**](/docs/sales/agents/reports/accrued-commissions) la quale continuerà a mostrare eventuali residui nel caso, ad esempio, di pagamenti parziali delle partite aperte o comunque di pagamenti parziali delle fatture interessate.
-Questi residui saranno chiaramente liquidabili e confluiranno in un liquidazione successiva nel momento in cui le rispettive partite saranno chiuse mediante una registrazione contabile di incasso. Ricordiamo infatti che il nostro esempio prevede il criterio del pagamento avvenuto (pro quota rispetto agli incassi) e che sono possibili criteri diversi quali la semplice emissione della fattura, che renderebbe le provvigioni subito maturate, oppure criteri ancora più restrittivi quali il **pagamento totale** (disponibile solo se le provvigioni vengono gestite con il [**modulo amministrativo**](/docs/finance-area/maturity-values/maturity-values/commissions)).
+Od tog trenutka te provizije više neće biti vidljive u ispisa [**Dospjele provizije**](/docs/sales/agents/reports/accrued-commissions), koji će i dalje prikazivati eventualne ostatke — primjerice, u slučaju djelomičnih uplata otvorenih stavki ili djelomičnih uplata povezanih računa.      
+Ti se ostaci mogu kasnije likvidirati i uključiti u sljedeću likvidaciju, kada se odgovarajuće stavke zatvore putem knjiženja naplate.  
+Podsjetimo da naš primjer koristi kriterij „plaćanja izvršenog“ (proporcionalno prema naplati), ali moguće su i druge metode, poput jednostavnog izdavanja računa (koje bi odmah činilo provizije dospjelima) ili strožih kriterija poput **potpune uplate** (dostupno samo ako se provizije vode putem [**administrativnog modula**](/docs/finance-area/maturity-values/maturity-values/commissions)).
 
-:::note[Nota]
-Con il metodo del *pagamento avvenuto* la selezione delle provvigioni da liquidare sarà sempre "tutto" *fino alla data*, non è possibile selezionare quello che è maturato in uno specifico range di date e non è previsto un collegamento con il campo della periodicità di liquidazione presente in anagrafica agente.
+:::note[Napomena]
+Kod metode *plaćanja izvršenog* odabir provizija za likvidaciju uvijek se odnosi na „sve do određenog datuma“.  
+Nije moguće selektirati samo provizije dospjele u određenom vremenskom rasponu, niti postoji poveznica s poljem „učestalost likvidacije“ u kartici agenta.
 
-I range di filtro presenti nella procedura infatti sono riferiti alle date di ordini/bolle/fatture, non a livello di date di **pagamento**. 
+Rasponi filtera u postupku odnose se na datume narudžbi / otpremnica / računa, a ne na **datume plaćanja**.  
 
-Ciò è necessario perchè mentre per i documenti non c'è modo di aggiungerne di nuovi / modificare in periodi già liquidati, il discorso è diverso per i pagamenti: niente vieta di creare un pagamento con data registrazione in un periodo già chiuso in un calcolo liquidazione agenti (magari perché non non sono state riconciliate le banche o si è commesso un errore in una vecchia registrazione), dunque il dato verrebbe "perso" nei calcoli successivi.
+To je potrebno jer, dok za dokumente nije moguće naknadno dodavati ili mijenjati stavke u već likvidiranim razdobljima, kod plaćanja je to drukčije: moguće je unijeti plaćanje s datumom unosa u već zatvorenom razdoblju (npr. zbog neusklađenih banaka ili pogreške u starom knjiženju).  
+U suprotnom bi se ti podaci 
 :::
 
-Poichè nella griglia di selezione degli agenti sulla sinistra risulta visibile il criterio di maturazione (pro memoria) nel caso in cui si necessiti di lavorare liquidando le provvigioni in relazione ad un determinato periodo di riferimento dei documenti emessi, con criteri diversi dal pagamento avvenuto (vedi nota sopra) è possibile utilizzare i filtri sulle date dei documenti presenti nell'area di destra nella form.
+Budući da se u lijevoj tablici za odabir agenata vidi kriterij dospijeća (kao podsjetnik), ako se želi raditi likvidacija provizija u odnosu na određeno razdoblje izdavanja dokumenata, uz drugačije kriterije od onog „plaćanja izvršenog“ (vidi napomenu gore), mogu se koristiti filteri po datumima dokumenata s desne strane obrasca.  
 
-Dopo aver selezionato gli agenti, anche per gruppi in relazione a possibili diversi criteri di maturazione e dunque esigenze di filtraggio documenti, è richiesto , in basso a destra, di impostare una descrizione della liquidazione, la data è proposta come data odierna e non ha influenza sul filtraggio dati, contraddistingue unicamente la data di elaborazione della liquidazione, è necessario infine compilare il mese e l'anno di competenza della liquidazione ai fini del calcolo del minimale e massimale per il contributo Enasarco.
+Nakon što se odaberu agenti (pojedinačno ili grupno, ovisno o kriterijima dospijeća i potrebama filtriranja), potrebno je u donjem desnom dijelu unijeti opis likvidacije.  
+Datum se automatski predlaže kao današnji i nema utjecaj na filtriranje podataka — on samo označava datum izrade likvidacije.  
+Obavezno je, međutim, unijeti mjesec i godinu likvidacije, jer su ti podaci potrebni za izračun minimalnog i maksimalnog doprinosa Enasarco fonda.
 
-E' bene prestare attenzione alla compilazione del periodo inquanto, ad esempio (in caso di errata imputazione) se in un determinato trimestre non verranno reperite provvigioni liquidate all'agente (ad esempio perchè erroneamente imputate al periodo successivo), il software stanzierà comunque una liquidazione di soli contributi a carico ditta che devono essere versati.
+Važno je paziti na ispravno upisivanje razdoblja jer, primjerice, ako se u određenom tromjesečju agentu ne pronađu likvidirane provizije (zbog pogrešno unesenog razdoblja), softver će svejedno evidentirati likvidaciju koja sadrži samo doprinose na teret poduzeća — koje je i dalje potrebno uplatiti.
 
-Eseguendo il calcolo il software ritorna un messaggio di conferma oppure un avviso riferito agli agenti per i quali non dovessero essere state trovate provvigioni da liquidare.
+Nakon pokretanja izračuna, sustav prikazuje poruku potvrde ili upozorenje za agente za koje nisu pronađene provizije za likvidaciju.  
 
-Al termine, nel caso si voglia effettuare dei controlli, è possibile [**aprire la liquidazione**](/docs/sales/agents/agent-settlement/insert-settlement) con doppio click dopo averla [**ricercata**](/docs/sales/agents/agent-settlement/search-agent-settlement).
+Na kraju, ako se žele provesti dodatne provjere, moguće je [**otvoriti likvidaciju**](/docs/sales/agents/agent-settlement/insert-settlement) dvostrukim klikom nakon što je [**pretražite**](/docs/sales/agents/agent-settlement/search-agent-settlement).
 
-All'interno è possibile ottenere la lista elle fatture considerate per la liquidazione, per fare questo spostarsi sul tab **Fatture** e premere il bottone nella ribbon bar **Ricerca**.
+Unutar likvidacije moguće je dobiti popis računa uključenih u obračun — to se radi prelaskom na karticu **Računi** i klikom na tipku **Pretraga** u traci izbornika.  
 
-Il risultato è rappresentato nelle due griglie inferiori di cui la prima mostra le fatture considerate (a livello di dati di testata) e la seconda il dettaglio delle righe fattura con le relative provvigioni.
+Rezultati se prikazuju u dvije donje tabele: prva prikazuje račune (na razini zaglavlja), a druga detalje stavki računa s pripadajućim provizijama.
 
-:::danger[Attenzione]
-si tratta del valore delle provvigioni **astrattamente calcolate** sulle singole righe della fattura, non necessariamente maturate nella liquidazione di cui il valore totale potrebbe differire inquanto parzialmente incassate.
+:::danger[Upozorenje]
+Prikazani iznosi predstavljaju **teoretski izračunate provizije** na pojedinim stavkama računa, ali nisu nužno dospjele u likvidaciji, ukupni iznos može se razlikovati jer su pojedine stavke samo djelomično naplaćene.
 
-Nel caso di pagamenti parziali di una partita, dove il residuo, ad esempio viene saldato in un periodo successivo, la prima liquidazione che include la prima quota del pagamento verrà visualizzata nel dettaglio con il valore dell'intera provvigione, mentre la liquidazione che include la quota residua avrà sempre visibile il riferimento fattura nella griglia superiore, ma sarà vuota nella griglia inferiore.
+U slučaju djelomične uplate računa, gdje se ostatak podmiruje kasnije, prva likvidacija (koja uključuje prvu uplatu) prikazat će u detalju cjelokupni iznos provizije, dok će likvidacija koja uključuje preostali dio imati vidljiv račun u gornjoj tablici, ali će donja tablica ostati prazna.
 
-E' in programma il rilascio di un ulteriore campo che indichi il di cui effettivamente confluito nella liquidazione.
+Planirano je dodavanje dodatnog polja koje će pokazivati iznos stvarno uključen u likvidaciju.
 :::
 
 
 
-## Gestione dei compensi agenti
+## Upravljanje isplatama agenata
 
-All'interno della liquidazione sono già inseriti i dati relativi alla ritenuta d'acconto ed alle quote a carico dell'agente (da trattenere e versare per suo conto) ed a carico ditta mandante del contributo Enasarco.
+Unutar likvidacije već su uneseni podaci o porezu po odbitku te doprinosima koji su na teret agenta (koje treba zadržati i uplatiti u njegovo ime) i na teret poduzeća (Enasarco doprinos).
 
-A questo punto utilizzando l'apposita procedura, dalla liquidazione [**creiamo il compenso**](/docs/sales/agents/procedures/create-professional-man-commission).
+U ovoj fazi, koristeći odgovarajući postupak, iz likvidacije se [**kreira naknada**](/docs/sales/agents/procedures/create-professional-man-commission).
 
-Il compenso creato automaticamente sarà ricercabile nel modulo amministrazione dei [**Compensi percipienti**](/docs/finance-area/professional-men/search-compensations/search-compensations-intro).
+Tako kreirana naknada automatski će biti dostupna u administrativnom modulu [**Naknade primatelja**](/docs/finance-area/professional-men/search-compensations/search-compensations-intro).
 
-## Versamenti Enasarco e ritenute d'acconto 
+## Uplate Enasarco i porez po odbitku
 
-L'inserimento automatico nel modulo percipienti attraverso il compenso consente anche la [**gestione del pagamento**](/docs/finance-area/professional-men/accounting/payments-accounting/payments-accounting-intro), sia che l'agente abbia emesso una fattura sia che la stessa sia una proforma, e gestisce automaticamente il debito verso l'erario per il [**versamento della ritenuta d'acconto**](/docs/finance-area/professional-men/procedures/model-f24/f24-management).
+Automatskim unosom u modul primatelja putem kreirane naknade omogućuje se i [**upravljanje plaćanjima**](/docs/finance-area/professional-men/accounting/payments-accounting/payments-accounting-intro), bez obzira na to je li agent izdao račun ili se radi o profakturi.  
+Sustav automatski vodi obvezu prema državi za [**uplatu poreza po odbitku**](/docs/finance-area/professional-men/procedures/model-f24/f24-management).
 
-L'apposita procedura per la [**contabilizzazione del contributo enasarco**](/docs/finance-area/professional-men/accounting/enasarco-accounting/enasarco-accounting-intro) da versare (sia a carico ditta sia trattenuta quota a carico agente) esegue la scrittura contabile che rileva il costo e il debito, il versamento fisico e la relativa scrittura contabile vanno eseguite manualmente.
+Poseban postupak za [**knjiženje Enasarco doprinosa**](/docs/finance-area/professional-men/accounting/enasarco-accounting/enasarco-accounting-intro) (bilo na teret poduzeća, bilo na teret agenta) automatski stvara knjiženje troška i obveze.  
+Fizičko plaćanje i njegovo knjiženje potrebno je izvršiti ručno.
 
-## Elaborazione della certificazione delle ritenute d'acconto
+## Obrada potvrda o porezu po odbitku
 
-Il percorso si conclude con [**l'elaborazione della certificazione per le ritenute d'acconto**](/docs/finance-area/declarations/declarations/withholding-tax-certification) operate nei confronti dell'agente.
+Postupak završava [**obradom potvrde o porezu po odbitku**](/docs/finance-area/declarations/declarations/withholding-tax-certification) obračunatom agentu.
 
-Siamo ormai nel modulo amministrativo e si tratta di gestire un adempimento di tipo fiscale, quindi rinviamo i dettagli. Il cenno è utile per far capire come l'area vendite ed amministrativa siano collegati in questo caso a fronte delle caratteristiche dell'agente il quale, oltre alle necessità di calcolo delle provvigioni, subisce delle ritenute d'acconto e viene dunque fatto confluire nella gestione dei professionisti percipienti.
+U ovoj fazi nalazimo se u administrativnom modulu — radi se o poreznoj obvezi, pa ovdje navodimo samo kratak pregled.  
+Ovaj korak ilustrira kako su prodajno područje i administracija povezani: agent, osim obračuna provizija, podliježe i obračunu poreza po odbitku te se zbog toga uključuje u sustav upravljanja profesionalnim primateljima.
