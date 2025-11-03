@@ -76,7 +76,12 @@ If the **Payment type** is associated with a financial discount, the amount of t
 
 ### 2.2 Discounts
 
-Only the pre-defined discounts taken from the *Customer Registry > Discounts tab (Anagrafica cliente > tab Sconti)* are proposed and can be modified/deleted by the user.
+Only the pre-defined discounts taken from the *Customer Contact > Discounts tab* are proposed and can be modified/deleted by the user.
+
+:::important Remember 
+To manage discounts on taxable amounts, it is necessary to activate the general parameter GEN-GlobalSettings_CalculateDiscountOnAmount from the database for the company of interest.     
+If this parameter is not active, discounts on taxable amounts will be converted into cascading discounts.
+:::
 
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
@@ -113,6 +118,10 @@ For this procedure to be usable, there are initial conditions that must be met:
  - Only if the procedure is executed from the Order Search, the document types must be compatible: in the [Order Types](/docs/configurations/tables/sales/sales-order-types) table, the order type you wish to fulfill must have the corresponding DN type set.        
 
 You must then set in the header of the new DN, the *Delivery note type* you wish to create (which must correspond to what is set in the order types table) and the *Client*. Once these data are entered, you need to click on the *Orders Processing* button to open the fulfillment form.
+
+:::tip Remember   
+Any notes entered in the header of the order (such as *Our/Your reference*, *Customer Order Number Reference*, *Initial Notes*) will be displayed in the header of the DN only if the data is retrieved from a single order.  
+:::
 
 #### Procedure:
 

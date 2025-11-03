@@ -8,6 +8,12 @@ The mass procedure is opened through the path **Sales > DN > Procedures > DN Shi
 This procedure allows you to execute/restore automatic shipment operations from the warehouse of the items present in the DN.    
 Please note that this procedure can also be executed within the [Header](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) of the single DN using the button [Automatic Shipment](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). 
 
+:::tip Remember  
+If the document contains **Warning phantom items**, the procedure will take into account the *Supply Type* defined in the item's MRP Parameters:  
+- Items of type *Purchase* will not be included in the warehouse registration.  
+- Items of type *Production* or *Subcontractor* will be registered in the warehouse with the first level of the bill of materials.
+:::
+
 The mass procedure consists of three tabs, which we will analyze below.
 
 ### Filter

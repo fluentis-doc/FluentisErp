@@ -11,4 +11,4 @@ In the filter section, you can filter by supplier, validity dates, currency, pro
 
 *Specific button*:   
 
-> **Closed**: this button allows you to mass modify the *Expiration Date* of the price lists present in the system. Clicking it will open a pop-up where you can enter the new *Expiration Date* that will be applied to all selected price lists in the grid.
+> **Closed**: this button allows you to mass modify the *Expiration Date* of the price lists present in the system. Clicking it will open a pop-up where you can enter the new *Expiration Date* that will be applied to all selected price lists in the grid.In the event that the price list is used in DDT or Invoices with a later date, a summary pop-up will be displayed with all documents having a date later than the *End validity date* set.

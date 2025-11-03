@@ -7,9 +7,9 @@ The parameters of purchase orders allow for basic settings to manage correctly a
 
 #### Specific Fields 
 
-- **Mandatory evasion**: when set, and the user is on the header of the supplier order and switches to the *Items* tab, the *Fulfillment from order* form automatically opens, thus the user is required to fulfill the open orders for the specified supplier in the order.
+- **Mandatory evasion**: if active, when entering a new supplier order, the Fulfillment form will open, and it will not be possible to manually add items to the order without having first fulfilled at least one line of a Purchase Job Order.
 
-- **Escaping of obligatory orders**: when set, and items are entered in the *Items* tab, it checks that the item is present in an order from the selected supplier.
+- **Escaping of obligatory orders**: if active, the insertion of items in Supplier Orders can only be done through Fulfillment from the job order; it will not be possible to add other items to the order, in addition to those entered through fulfillment.
 
 - **Fixed quantity**: when set, the order cannot be fulfilled for a quantity greater than that entered in the order.
 

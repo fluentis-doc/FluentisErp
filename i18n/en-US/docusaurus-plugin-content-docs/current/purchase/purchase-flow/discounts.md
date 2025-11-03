@@ -25,6 +25,11 @@ Within each price list, item prices can be specified for the management unit of 
 - **Item Price List**: Discounts can be specified for each item line in the price list, even at the level of range (quantity or value discounts).
 - **Definition of Discount Policies**: Discounts can be configured for suppliers, item classes, discount categories, and discount category details.
 
+:::important Remember   
+To manage **Discount on AmountOrigin**, it is necessary to activate the general parameter GEN-GlobalSettings_CalculateDiscountOnAmount from the database for the company of interest.  
+If this parameter is not active, discounts on taxable amounts will be transformed into cascading discounts.  
+:::
+
 ## Price and Discount Recovery Procedure 
 
 When an item is entered into a purchase document, the **price and discount recovery** procedure is activated. The system looks for a valid price list among those associated with the supplier, starting from the type with the "default" flag or following the established search priority.

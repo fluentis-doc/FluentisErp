@@ -65,6 +65,11 @@ In the absence of a price list, the proposed data can be taken from the *Latest 
 
 - **Estimated arrival date**: if the RA was released from planning and the *ETA date* of the planned order is valued, it will be reported in this field; it can also be inserted or modified manually. 
 
+:::tip Remember
+In the Purchase Requests generated from the release of Planned Orders, the *Quantity of use* of the planned order is always reported, along with the corresponding unit of measure.   
+If the unit of measure does not match the management unit of the item, at the time of creating the Supplier Order, it will be entered in the *Alternative unit of measure* field along with the quantity indicated in the order. In the item grid, however, the management unit of measure will be displayed, and the quantity will be recalculated based on the conversion factor defined in the item registry.
+:::
+
 In the section below the grid, the document totals are reported:   
 
 - **Origin amount**: reports the total taxable amount of the purchase request.    

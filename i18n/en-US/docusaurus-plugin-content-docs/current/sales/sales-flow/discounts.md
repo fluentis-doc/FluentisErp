@@ -15,7 +15,7 @@ Each price list is identified by three key elements:
 - Validity dates (from/to).     
 Within each price list, the prices of items can be specified for the management unit of measure (mandatory and defined in the item registry) or for one of the alternative units of measure. Prices can also be associated with quantity ranges (tab "Price per Quantity") or specific goods destinations (tab "Destinations").
 
-**Discount Management**      
+### **Discount Management**      
 Discounts can be configured in various ways:
 
 - Customer Registry: Discounts defined in the "Expenses/Discounts" tab are automatically applied to the sales document when a customer is selected. Multiple discounts can be associated.
@@ -28,7 +28,13 @@ Discounts can be configured in various ways:
 
 - Discount Policy Definition: Discounts can be configured for items, customers, item classes, commercial categories, discount categories, and discount category details.
 
-**Price and Discount Retrieval Procedure**      
+:::important Remember 
+To manage discounts on taxable amounts, it is necessary to activate the general parameter GEN-GlobalSettings_CalculateDiscountOnAmount from the database for the company of interest.     
+If this parameter is not active, discounts on taxable amounts will be converted into cascading discounts.
+:::
+
+
+### **Price and Discount Retrieval Procedure**      
 When an item is entered into a sales document, the price and discount retrieval procedure is activated. The system searches for a valid price list among those associated with the customer, starting with the type marked with the "default" flag or following the set search priority.
 
 The search for a valid price list is based on the following criteria:
@@ -41,7 +47,7 @@ Searching for the item within the price list takes into account not only the ite
 
 After identifying the price, discounts and tiered prices are also searched for. If the "Price Management" flag is active in the customer registry's "Price Lists" tab, the system searches for any additional discounts in the "Discount Policy Definition" configuration. All discounts found are returned in the discount collection, indicating their origin.
 
-**Final Considerations**     
+### **Final Considerations**     
 The same search logic applies to documents with both "taxed" and "untaxed" prices. However, if a document requires "untaxed" prices, the search is limited to price lists with this type of price, and vice versa for "taxed" prices.
 
 Attention: If there is no valid price list and the item registry has a defined sales price, this will be proposed as the price for the document line, regardless of the type of price requested (taxed or untaxed).

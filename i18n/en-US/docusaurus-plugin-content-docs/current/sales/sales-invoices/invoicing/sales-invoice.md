@@ -43,7 +43,7 @@ Entering the **Client** will automatically propose all specific data in the **He
 - **Unloaded**: this flag is activated automatically when the document is moved to the warehouse, with the *Automatic unload* button on the toolbar or with the available procedures.  
 
 :::note Note
-In the case of an invoice created from a transport document that has already been posted, the general parameter VE-PurchaseInvoices_VerifyLoadStatusDDT will block the *Unloaded* flag in the invoice as well. 
+In the case of an invoice created from a transport document that has already been posted, the general parameter VE-PurchaseInvoices_VerifyLoadStatusDN will block the *Unloaded* flag in the invoice as well. 
 :::  
 
 - **Cancelled**: the active flag allows the document to be canceled; the *Unloaded* and *Valorized* flags will be automatically set to prevent the document from being visible in the procedures.      
@@ -53,12 +53,12 @@ In the case of an invoice created from a transport document that has already bee
 Flags can be removed with restoration operation procedures.
 :::
 
-- **Customer note**: the information entered in the customer registry will be proposed, while in the case of automatic creation from an order/DDT, the same data contained in the corresponding field of the source document will be retrieved; it can also be entered manually. With the right mouse button, a form can be opened to specify very long note text; if the field contains a value, the background color of the field will change.      
+- **Customer note**: the information entered in the customer registry will be proposed, while in the case of automatic creation from an order/DN, the same data contained in the corresponding field of the source document will be retrieved; it can also be entered manually. With the right mouse button, a form can be opened to specify very long note text; if the field contains a value, the background color of the field will change.      
 - **Our Reference/Your Reference**: these fields usually indicate an internal reference and a customer reference for the specific invoice.   
 - **Reference to Customer Order Number**: in this field, the order from which the invoice derives is automatically entered.     
 - **Reference to Customer Order Date**: in this field, the date of the order from which the invoice derives is automatically entered; together with the previous field, this creates the necessary data for tag 2.1.2 of the XML file of the electronic invoice when it is created; if not filled, the Your Reference field will be used instead. If the invoice is generated through the procedure of:  
 > *Creation from customer order*, these last four fields will be populated with the indications present in the customer order. This transfer is valid only in the case of the invoice created by retrieving data from only one order;  
-> *Fulfillment DDT*, these fields will be populated with the indications present in the DDT. This transfer is valid only in the case of the invoice created by retrieving data from only one DDT.          
+> *Fulfillment DN*, these fields will be populated with the indications present in the DN. This transfer is valid only in the case of the invoice created by retrieving data from only one DN.          
 
 import InitialNote from './../../../import/fields/initial-note.md'
 
@@ -83,7 +83,7 @@ This association works only at the article header level.
 #### Specific Buttons
 
 > **[Fulfillment from customer order](/docs/sales/sales-invoices/invoicing/sales-invoice)**: calls the procedure to create an invoice from a customer order. It is activated by entering the customer and the invoice type.      
-> **Fulfillment from DDT**: calls the procedure to create an invoice from a transport document. It is activated by entering the customer and the invoice type;      
+> **Fulfillment from DN**: calls the procedure to create an invoice from a transport document. It is activated by entering the customer and the invoice type;      
 > **[Automatic Posting](/docs/sales/sales-invoices/invoicing/sales-invoice)**: this procedure allows for the warehouse posting of the document, if *Printed*.      
 > **Recipient/Destination Help**: allows you to view and enter recipients/destinations from the customer registry.     
 > **Insert AgentAccount in the Items rows**: distributes the agent entered in the header to the article lines in the *Agents* tab.     
@@ -101,12 +101,17 @@ If the document originates from a:
 
 - *Sales Order* the payment types can be retrieved from the first document, from the customer registry, or all the payments of the documents to be fulfilled are displayed in a form, and the user selects the concerned payment type.
 
-- *DDT*, the payment entries from the customer registry can be maintained or the individual payments present in each DDT can be retained; in this case, the payment type with the taxable amount and VAT equal to that of the DDT is reported in the invoice, and a new line is added for any article lines added to the invoice not coming from the DDT.
+- *DN*, the payment entries from the customer registry can be maintained or the individual payments present in each DN can be retained; in this case, the payment type with the taxable amount and VAT equal to that of the DN is reported in the invoice, and a new line is added for any article lines added to the invoice not coming from the DN.
 
 ### 2.2 Discounts 
 
 Only the predefined discounts retrieved from *Customer Registry > Discounts tab* are proposed and can be modified/deleted by the user.
-  
+
+:::important Remember   
+To manage discounts on taxable amounts, it is necessary to activate the general parameter GEN-GlobalSettings_CalculateDiscountOnAmount from the database for the company of interest.  
+If this parameter is not active, discounts on taxable amounts will be transformed into cascading discounts.  
+:::
+
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
@@ -140,24 +145,28 @@ From this section present in the invoice toolbar, it is possible to manage the c
 - *Cancelled*: the document should not be sent to the final customer but remains valid for VAT purposes;       
 - *Excluded*: the document has been created but is not among those to be sent to the SDI (e.g., internal credit note or customers not residing in Italy and not subject to electronic invoicing with SDI delivery).
 
-### *Fulfillment from DDT*
+### *Fulfillment from DN*
 
-In the header of the invoice, by pressing the **Fulfillment from DDT** button, a form will open where it is possible to filter the DDTs related to the document's customer.
+In the header of the invoice, by pressing the **Fulfillment from DN** button, a form will open where it is possible to filter the DNs related to the document's customer.
 
-Through this procedure, it is possible to create a sales invoice from the fulfillment of the corresponding DDT. It is therefore possible to insert items into the invoice, fully or partially fulfilling an entire order or a line.
+Through this procedure, it is possible to create a sales invoice from the fulfillment of the corresponding DN. It is therefore possible to insert items into the invoice, fully or partially fulfilling an entire order or a line.
 
 To use this procedure, some initial conditions must be met:
  -  the customer must be the same as the invoice;
- -  the DDT that you want to fulfill must have the *Printed* flag set;
+ -  the DN that you want to fulfill must have the *Printed* flag set;
+
+:::tip Remember   
+Any notes entered in the header of the DN (such as *Our/Your reference*, *Reference to Customer Order Number*, *Initial notes*) are reported in the header of the Invoice only if the data is retrieved from a single DN.  
+:::
 
 #### Procedure 
 
 The filters for customer and currency will be automatically set based on the customer selected in the invoice.
 
-Once all desired *Filters* are set, clicking on the *Search* button will display one row in the grid for each printed, confirmed, and not fulfilled or partially fulfilled DDT.
+Once all desired *Filters* are set, clicking on the *Search* button will display one row in the grid for each printed, confirmed, and not fulfilled or partially fulfilled DN.
 
 :::note Note
-The procedure takes all the data present in the DDT and consequently the purchasing conditions will be applied, even if these have currently changed (e.g., price list updates).
+The procedure takes all the data present in the DN and consequently the purchasing conditions will be applied, even if these have currently changed (e.g., price list updates).
 :::
 
 :::note Note
@@ -166,20 +175,20 @@ Lines of type Note will always be visible, even if already fulfilled, until all 
 
 In the results grid, the user then has the option to:
 
- 1. select the *DDT in full*. To do this, simply check the flag at the beginning of the line.
+ 1. select the *DN in full*. To do this, simply check the flag at the beginning of the line.
  2. select only *some* of the *proposed items*. To do this, simply check the flag at the beginning of the item line.
  3. select only *some items* but only for a *specific quantity*. In this case, they must modify the quantity to be fulfilled.
 
-To complete the procedure, click the *Transfer* button, which will retrieve all the data present in the DDT and bring it back to the invoice.
+To complete the procedure, click the *Transfer* button, which will retrieve all the data present in the DN and bring it back to the invoice.
 
 #### Specific Buttons 
 
 > **Search**: allows searching for documents.  
 > **Transfer**: allows transferring the data of the selected document into the new invoice.  
-> **Forced Oreder Execution**: allows forced fulfillment of the DDT.  
-> **Orders Processing**: allows fulfillment of the DDT.  
-> **Expand**: allows expanding the entire DDT tree in the grid below, to view the contained items.  
-> **Collapse**: allows compressing the view of the item lines and only displaying the DDT lines.  
+> **Forced Oreder Execution**: allows forced fulfillment of the DN.  
+> **Orders Processing**: allows fulfillment of the DN.  
+> **Expand**: allows expanding the entire DN tree in the grid below, to view the contained items.  
+> **Collapse**: allows compressing the view of the item lines and only displaying the DN lines.  
 > **Select all**: allows selecting all items from the list.  
 > **Deselect all**: allows deselecting all items from the list. 
 
@@ -194,7 +203,11 @@ To use this procedure, some initial conditions must be met:
  -  the order that you want to fulfill must have the *Printed* flag set and the *Order confirmation date*;
  -  the document types must be compatible: in the *Order Types* table, the order type to be fulfilled must have the corresponding invoice type set, while the *Invoices types* table must have the flag set on *Order* (which indicates that the invoice derives from an order);
 
-Then you will need to set the *Delivery note type* that you want to create (which must correspond to what is set in the *Order Types* table) and the *Client* in the header of the new DDT. Once these data are entered, you must click the *Orders Processing* button to open the fulfillment form.
+Then you will need to set the *Delivery note type* that you want to create (which must correspond to what is set in the *Order Types* table) and the *Client* in the header of the new DN. Once these data are entered, you must click the *Orders Processing* button to open the fulfillment form.
+
+:::tip Remember   
+Any notes entered in the header of the order (such as *Our/Your reference*, *Customer Order Number Reference*, *Initial Notes*) are included in the header of the Invoice only in the case of data retrieval from a single order.  
+:::
 
 #### Procedure 
 
@@ -231,7 +244,7 @@ To complete the procedure, click the *Transfer* button, which will retrieve all 
 
 ### *Automatic unload*
 
-Another procedure present in the header is the automatic posting from the warehouse. The button is enabled if the document is Printed and if the invoice is not linked to a DDT that has already been posted.      
+Another procedure present in the header is the automatic posting from the warehouse. The button is enabled if the document is Printed and if the invoice is not linked to a DN that has already been posted.      
 We remind you that if the [Invoice Parameters](/docs/configurations/parameters/sales/sales-invoices-parameters) have automatic posting enabled, this procedure will be initiated automatically once the document is Printed.      
 Once the procedure is started, Fluentis checks for the presence of warehouses and causes in the invoice lines and any presence of lots and serial numbers if required; if the procedure does not go well, the user will be notified with an error.      
 If the procedure is successful, a [Warehouse Registration](/docs/logistics/warehouse/stock-records/record) is created that moves the items of the document, and the **Load** flag is set in the header.      

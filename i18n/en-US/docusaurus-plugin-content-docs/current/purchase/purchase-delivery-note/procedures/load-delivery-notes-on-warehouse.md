@@ -12,9 +12,15 @@ The procedure is accessed via the path **Purchases > Purchase DN > Procedures > 
 The Purchase DN can also be registered in the warehouse using the button [*Automatic loading in warehouse*](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) found within the document.
 :::
 
+:::tip Remember 
+If the document contains **Warning phantom items**, the procedure will take into account the *Supply Type* defined in the item's MRP Parameters:
+- Items of type *Purchase* will not be included in the warehouse registration.
+- Items of type *Production* or *Subcontractor* will be registered in the warehouse with the first level of the bill of materials.
+:::
+
 ### Filter
 
-It offers the possibility to enter filters to search for purchase DDTs, to select them, and then register them in the warehouse.
+It offers the possibility to enter filters to search for purchase DNs, to select them, and then register them in the warehouse.
 
 - **Warehouse posting date**: allows specifying the date related to the warehouse registration.
 

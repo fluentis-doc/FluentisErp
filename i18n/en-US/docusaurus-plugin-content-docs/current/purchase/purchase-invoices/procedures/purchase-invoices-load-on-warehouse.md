@@ -10,6 +10,16 @@ The procedure opens via the path **Purchases > Purchase Invoices > Procedures > 
 
 It allows for performing/restoring the operations of automatic registration into the warehouse of the items present in the invoice.
 
+:::important Remember 
+Invoices can only be moved to the warehouse if they are of type *Immediate*.
+:::
+
+:::tip NOTE 
+If the document contains **Warning phantom items**, the procedure will take into account the *Supply Type* defined in the item's MRP Parameters:
+- Items of type *Purchase* will not be included in the warehouse registration.   
+- Items of type *Production* or *Subcontractor* will be recorded in the warehouse with the first level of the bill of materials.
+:::
+
 ### Filter
 
 In this tab, the user has the option to enter filters to search for purchase invoices, to select them, and then register them in the warehouse.   

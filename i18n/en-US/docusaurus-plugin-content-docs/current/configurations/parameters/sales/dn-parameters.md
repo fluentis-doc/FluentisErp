@@ -75,6 +75,12 @@ In this tab, the following fields are present:
 
 **Warning phantom items**: if active, during the unloading of the DDT the system will check if there are any fictitious items and if there are, a message will appear allowing the user to choose whether to complete the process or not; if the answer is affirmative, the entire DDT will be unloaded (except for fictitious items), while if the answer is negative, the DDT will NOT be unloaded.
 
+:::tip Remember 
+If the document contains **Warning phantom items**, the procedure will take into account the *Supply Type* defined in the item's MRP Parameters:
+- Items of type *Purchase* will not be included in the warehouse registration.   
+- Items of type *Production* or *Subcontractor* will be registered in the warehouse with the first level of the bill of materials.
+:::
+
 ### Analytical
 
 This TAB specifies the priority for retrieving the Cost Center (CDC) or Profit Center (CDP) in the DDT line.      

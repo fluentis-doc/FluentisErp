@@ -131,6 +131,11 @@ The procedure for retrieving articles from the project allows partially fulfilli
 
 Before proceeding with the fulfillment, the *Order Type* to be created and the *Supplier* must be entered in the document header. After that, pressing the **Get from project** button will open the form where it is possible to filter the jobs related to the document's supplier.
 
+:::tip Remember  
+If in the Purchase Order Parameters the flag **Mandatory Evasion** is active, when entering a new supplier order, the Fulfillment from Project form will open, and it will not be possible to manually add items to the order without having first fulfilled at least one line of a Purchase Job Order.  
+The flag **Escaping of obligatory orders**, on the other hand, does not allow the addition of other items to the order, beyond those entered through fulfillment from the order.
+:::
+
 In the filter area, it is possible to choose whether to display the data in a Grid, a Hierarchical Structure, or both.
 
 > - The **Hierarchical structure** allows for a clearer division of the various orders and the items contained in each, also facilitating the mass selection of items within a job.
@@ -215,6 +220,12 @@ import Vat from './../../../import/fields/item-vat.md'
 
 - **Requested delivery date** and **Delivery date**: indicate the requested and expected delivery dates. They can propose the dates entered in the header tab or can be modified manually.
 
+:::tip Remember 
+For Supplier Orders generated from Purchase Requests, the Delivery Date is determined as follows:   
+- if the *Estimated Arrival Date* is present in the RDA, it is reported in the order;   
+- in the absence of this, the *Requested Date* of the RDA is used.
+:::
+
 #### Specific Buttons 
 
 > **Split Quantity in More Delivery Dates**: used to split the order line into multiple lines depending on the requested delivery. This procedure will open a new form in which the new *Requested delivery date* and the expected quantities for each date must be entered.
@@ -235,6 +246,11 @@ When creating/updating a price list using this procedure, only the discounts man
 - **Price lists to update**: if this flag is active, the price of the article is automatically updated in the corresponding purchase price list during saving.
 
 - **Discounts**: all discounts associated with the article are proposed, each with its own calculation and assignment base.
+
+:::important Remember   
+To manage discounts on taxable amounts, it is necessary to activate the general parameter GEN-GlobalSettings_CalculateDiscountOnAmount from the database for the company of interest.  
+If this parameter is not active, discounts on taxable amounts will be transformed into cascading discounts.  
+:::
 
 #### Specific Button 
 

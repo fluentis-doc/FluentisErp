@@ -15,6 +15,21 @@ In the first grid, the following columns are present:
 
 In the second grid, the **Discounts** to be proposed for the combinations from the first grid are defined. The discounts will be proposed in the documents addressed to the registry for that specific item class. 
 
+The discounts entered in the Discount Policy Definition are retrieved with the following order of priority:
+1) Supplier + Item Class + Item Discount Category + Item Discount Subcategory  
+2) Supplier + Item Class + Item Discount Category  
+3) Supplier + Item Discount Category + Item Discount Subcategory  
+4) Supplier + Item Discount Category  
+5) Supplier + Item Class  
+6) Supplier
+
+In the case where multiple discount conditions are valid for a specific item, the document will report the first discount identified.
+
+For example, if a condition associated exclusively with the supplier and another associated with the supplier and a specific item class has been defined in the discount policies:   
+- for items belonging to the indicated class, the discount defined in the second condition will be applied;  
+- in the absence of a match with the item class, the discount defined exclusively for the supplier will be applied.
+
+
 ### Management of Discount Categories in Documents
 
 It is possible to assign discounts for item categories that can then be reused within purchase documents. To do this, several steps are required.

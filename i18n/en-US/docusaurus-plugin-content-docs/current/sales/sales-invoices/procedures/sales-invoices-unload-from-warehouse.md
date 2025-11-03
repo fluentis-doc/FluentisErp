@@ -7,6 +7,12 @@ The procedure opens through the path **Sales > DN > Procedures > Shipping invoic
 
 This procedure allows you to execute/restore the automatic shipping operations from the warehouse of the items present in the invoice. 
 
+:::tip Remember
+If the document contains **Warning phantom items**, the procedure will take into account the *Supply Type* defined in the item's MRP Parameters:
+- Items of type *Purchase* will not be included in the warehouse registration.   
+- Items of type *Production* or *Subcontractor* will be registered in the warehouse with the first level of the bill of materials.
+:::
+
 ### Filter 
 
 In this tab, the user has the option to search for and transfer invoices that have set the *Printed* flag within them.

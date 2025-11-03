@@ -194,6 +194,10 @@ In the result grid, the user then has the option to:
 
 To complete the procedure, you must then click the *Execution* button, which will retrieve all the data present in the order and bring it back to the invoice.
 
+:::tip Remember   
+Any notes entered in the header of the DN (such as *Our/Your reference*, *Initial notes*) will be carried over to the header of the Invoice only if the data is retrieved from a single DN.  
+:::
+
 #### Specific Buttons 
 
 > **Search**: allows searching for supplier orders.  

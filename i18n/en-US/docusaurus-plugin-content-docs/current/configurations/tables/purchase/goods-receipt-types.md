@@ -22,3 +22,7 @@ The fields present are:
 **Quality Control**: the *Goods Receipt Types* that have this flag active are visible in the [Import Items To Check](/docs/quality/item-control/items-control/item-control-import/) form located in the *Quality* area.
 
 **Fixed Assets Management**: this flag enables the [Fixed Assets Management](/docs/finance-area/fixed-assets/general-overview) for that type of receipt and allows selecting the **Operation Type** that one wants to perform, which in the case of purchases will be an *Original Cost*.
+
+:::tip NOTE 
+The Warehouse and the Template to be used for the Goods Receipt Loading must be defined in the Supplier Order Parameters, tab [Loading](/docs/configurations/parameters/purchase/purchase-orders-parameters).
+:::

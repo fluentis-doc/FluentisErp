@@ -163,6 +163,10 @@ In the results grid, the user then has the option to:
 
 To complete the procedure, click the *Execution* button, which will pull all the data present in the order and transpose them into the delivery note.
 
+:::tip Remember   
+Any notes entered in the header of the order (such as *Our/Your reference*, *Initial notes*) will be displayed in the header of the DDT only if the data is retrieved from a single order.  
+:::
+
 #### Specific Buttons
 
 > **Search**: allows you to search for supplier orders.  
@@ -258,7 +262,12 @@ When creating/updating a price list using this procedure, only those discounts t
 
 - **Manual price**: is activated automatically when the item's price has been entered or modified manually.
 
-- **Discounts**: all discounts associated with the item are proposed, each with its own calculation and assignment basis.        
+- **Discounts**: all discounts associated with the item are proposed, each with its own calculation and assignment basis. 
+
+:::important Remember 
+To manage discounts on taxable amounts, it is necessary to activate the general parameter GEN-GlobalSettings_CalculateDiscountOnAmount from the database for the company of interest.     
+If this parameter is not active, discounts on taxable amounts will be converted into cascading discounts. 
+:::
 
 #### Specific Button
 
@@ -428,7 +437,14 @@ The present data are:
 - **Destination**: the default destination of the recipient is proposed, if entered in the customer registry.        
 - **Volume**: the cumulative volume is proposed, resulting from the sum of the volumes of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item)), when the volume unit of measure of the items corresponds to that entered in the delivery note parameters. 
 - **Net weight**: the cumulative net weight is proposed, resulting from the sum of the weights of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item)), when the weight unit of measure of the items corresponds to that entered in the delivery note parameters. 
-- **Gross Weight**: the cumulative gross weight is proposed, resulting from the sum of the weights of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item)), when the weight unit of measure of the items corresponds to that entered in the delivery note parameters.     
+- **Gross Weight**: the cumulative gross weight is proposed, resulting from the sum of the weights of the items (the value is taken from the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item)), when the weight unit of measure of the items corresponds to that entered in the delivery note parameters. 
+
+:::tip Remember 
+The conditions for the automatic calculation of weights and volumes in the document summary are: 
+- the activation of the flag *Recalculate transport* in the [parameters](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) of the document;
+- the insertion of a *Default Service Unit Measure* for weights and volumes in the purchase DN parameters. 
+:::
+
 - **External Appearance of Goods**: a combo box that refers to the corresponding table where the data can be coded.     
 - **Packages**: the number of packages is proposed, based on the data entered in the *Item Registry > tab* [*Weights/Dimensions*](/docs/erp-home/registers/items/create-new-item), in the fields *Items present in one package* or *Packages for item*. Only items with this field filled in are taken into consideration.     
 - **Values manually modified**: with this flag, we enable the modification of the Volume, Net Weight, Gross Weight, and Packages fields, which otherwise report the data from the item registry without the possibility of modification.     

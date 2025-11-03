@@ -82,6 +82,11 @@ The discounts proposed in the header of the document are carried over to every n
 
 If after entering the item lines a new discount is entered in the header, this will not be replicated in the already entered item lines.
 
+:::important Remember   
+To manage discounts on taxable amounts, it is necessary to activate the general parameter GEN-GlobalSettings_CalculateDiscountOnAmount from the database for the company of interest.  
+If this parameter is not active, discounts on taxable amounts will be transformed into cascading discounts.  
+:::
+
 The specific button of this tab is **Delete discounts**, used to delete the selected discount lines.
 
 ### 2.5 Agents
