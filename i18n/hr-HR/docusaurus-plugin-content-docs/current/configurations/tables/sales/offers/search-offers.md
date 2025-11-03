@@ -1,18 +1,20 @@
 ---
-title: Ricerca Offerte
+title: Pretraga Ponuda  
 sidebar_position: 2
 ---
 
-La form si apre tramite il percorso **Vendite > Offerte > Ricerca offerte**.
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Forma se otvara putem puta **Prodaja > Ponude > Pretraga ponuda**.   
+Za objašnjenje funkcionalnosti zajedničkih za sve prodajne dokumente pogledajte sekciju [Prodaja](/docs/sales/sales-intro).
 
-Il primo pulsante della barra degli strumenti specifico di questa maschera è **Nuova versione**: permette la creazione di una nuova versione dell'offerta selezionata; questa funzionalità permette di mantenere lo storico delle offerte precedenti.         
+Prva tipka na alatnoj traci specifična za ovu formu je **Nova verzija**: omogućuje kreiranje nove verzije odabrane ponude; ova funkcionalnost omogućuje očuvanje povijesti prethodnih ponuda.      
 
-Il secondo bottone è **Conversione**: permette di trasformare un'offerta di vendita in un ordine di vendita effettivo. Affinché il processo avvenga correttamente, è essenziale configurare il Tipo di ordine desiderato nella tabella dei [Tipi offerta](/docs/configurations/tables/sales/sales-offer-type). Inoltre, affinché l'offerta possa essere convertita con successo, è necessario che abbia una Data conferma in testata, altrimenti il sistema avviserà l'utente tramite un messaggio pop-up della necessità di confermare l'offerta prima di procedere. Una volta che tutti i dati richiesti sono stati inseriti, avviando la procedura uscirà un pop-up con i seguenti campi:     
-- se almeno alcune righe dell'offerta sono già state convertite in ordine, verrà chiesto all'utente se vuole creare un nuovo ordine utilizzando tutte le righe offerta oppure solo le righe non ancora referenziate.             
-- **Crea/Aggiorna progetto**: con questo flag indichiamo al sistema che oltre alla creazione dell'ordine deve procedere anche con la creazione o l'aggiornamento del progetto. Se il progetto deve essere creato, è necessario flaggare il comando *Crea Nuovo progetto vuoto*, *Crea Nuovo progetto da Offerta* oppure **Crea Nuovo progetto da Offerta e Template progetto**; in tutti i casi sarà necessario inserire il **[Tipo progetto](/docs/configurations/tables/project-management/project-type)** da creare nell'apposito campo, nell'ultimo caso verrà richiesto l'inserimento anche del  progetto **Template**. Se il progetto esiste già e deve essere aggiornato con i dati inseriti nell'offerta, invece, sarà necessario compilare il campo **Progetto**  con il progetto da aggiornare.     
-- **Riporta Materiali/Risorse da righe Offerta come righe Ordine**: con questi flag vengono inserite nell'ordine delle righe articolo con le risorse e i materiali dell'offerta, se gerarchica.
 
-Una volta confermato il pop-up, il sistema genererà quindi un nuovo Ordine cliente utilizzando i dati dell'offerta. Questo ordine può essere visualizzato e modificato nella sezione [Ricerca ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders). Inoltre, l'utente verrà informato tramite un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita e la versione, insieme a un messaggio contenente il numero dell'ordine cliente generato dalla conversione.     
-Se nell'Offerta vengono modificati i dati proposti dall'anagrafica, essi vengono riportati nell'Ordine generato dalla conversione: Annotazioni cliente, Spedizione, Pagamenti, Sconti, Agenti, Destinazioni, Vettori.      
-Nel caso in cui si effettui una conversione di più offerte in ordine/i, il raggruppamento deve essere impostato nei [Parametri raggruppamento ordini](/docs/configurations/parameters/sales/orders-grouping).
+Druga tipka je **Konverzija**: omogućuje pretvaranje prodajne ponude u stvarni narudžbeni dokument. Da bi proces tekao ispravno, potrebno je konfigurirati željeni Tip narudžbe u tablici[Tipovi ponuda](/docs/configurations/tables/sales/sales-offer-type). Također, da bi ponuda mogla biti uspješno konvertirana, mora imati uneseni **Datum potvrde** u zaglavlju; u suprotnom, sustav će korisniku prikazati pop-up poruku o potrebi potvrde ponude prije nastavka.  
+Kada su svi potrebni podaci uneseni, pokretanjem procedure pojavljuje se pop-up s sljedećim opcijama:  
+- Ako su barem neki redovi ponude već konvertirani u narudžbu, sustav će pitati korisnika želi li kreirati novu narudžbu koristeći sve redove ponude ili samo one koji još nisu referencirani.              
+- **Kreiraj/Ažuriraj projekt**: ovim flagom se sustavu kaže da uz kreiranje narudžbe treba kreirati ili ažurirati projekt. Ako projekt treba biti kreiran, potrebno je označiti opciju *Kreiraj Novi prazan projekt*, *Kreiraj Novi projekt iz Ponude* ili **Kreiraj Novi projekt iz Ponude i Projektnog Templatea**;  u svim slučajevima potrebno je unijeti **[Tip projekta](/docs/configurations/tables/project-management/project-type)** u predviđeno polje, a u zadnjem slučaju sustav će zatražiti i unos projekta **Template**. Ako projekt već postoji i treba ga ažurirati podacima iz ponude, potrebno je popuniti polje **Projekt** s projektom koji se ažurira.  
+- **Prenesi Materijale/Resurse iz redova Ponude kao redove Narudžbe**: ovim flagovima u narudžbu se prenose redovi artikala s resursima i materijalima iz ponude, ako je ponuda hijerarhijska.  
+
+Nakon potvrde pop-upa, sustav će generirati novu Narudžbu kupca koristeći podatke iz ponude. Ovu narudžbu je moguće pregledavati i uređivati u sekciji [Pretraga narudžbi kupaca](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders). Korisnik će također dobiti pop-up poruku o uspješnosti konverzije, broju konvertirane ponude i verziji, te poruku s brojem narudžbe generirane konverzijom.    
+Ako se u Ponudi izmijene podaci predloženi iz kartice kupca, oni će se prenijeti u Narudžbu generiranu konverzijom, uključujući: Napomene kupca, Dostavu, Plaćanja, Popuste, Agente, Odredišta i Prijevoznike.        
+U slučaju konverzije više ponuda u jednu ili više narudžbi, grupiranje mora biti podešeno u [Parametri grupiranja narudžbi](/docs/configurations/parameters/sales/orders-grouping).

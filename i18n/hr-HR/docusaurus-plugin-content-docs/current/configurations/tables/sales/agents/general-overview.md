@@ -8,25 +8,24 @@ Modul se nalazi u području *Prodaja > Agenti*.
 Ovaj modul nudi cjelovito rješenje za upravljanje, kontrolu i obradu provizija prodajnih agenata. Ova funkcionalnost omogućuje tvrtkama izračun zarađenih provizija, generiranje detaljnih obračuna i upravljanje naknadama za profesionalce.  
 
 **Glavne funkcionalnosti**:
-- Gestione e controllo delle provvigioni: Il sistema permette di gestire, controllare ed elaborare il calcolo delle provvigioni dovute agli agenti, tenendo conto delle vendite effettuate e delle condizioni contrattuali specifiche.
-- Generazione delle liquidazioni: È possibile generare liquidazioni periodiche per gli agenti, aggregando le provvigioni maturate e presentando un quadro chiaro delle somme dovute.
-- Creazione di compensi per professionisti: Fluentis offre la possibilità di creare compensi specifici per professionisti esterni, garantendo una gestione flessibile e dettagliata dei pagamenti.
-- Stampa di cedolini e documentazione: Il modulo consente la stampa dei cedolini per gli agenti, dettagliando le provvigioni maturate e le liquidazioni effettuate, fornendo così una documentazione chiara e trasparente.
-- Reportistica e analisi: È possibile generare report sulle provvigioni e le liquidazioni, facilitando il monitoraggio delle performance degli agenti e consentendo un'analisi dettagliata delle vendite.
+- Upravljanje i kontrola provizija: Sustav omogućuje upravljanje, praćenje i izračun provizija koje pripadaju agentima, uzimajući u obzir ostvarenu prodaju i specifične ugovorne uvjete.  
+- Generiranje obračuna: Moguće je periodično generirati obračune za agente, zbrajajući ostvarene provizije i prikazujući jasan pregled iznosa koji im pripadaju.
+- Kreiranje naknada za vanjske suradnike: Fluentis omogućuje izradu posebnih naknada za vanjske profesionalce, čime se osigurava fleksibilno i detaljno upravljanje isplatama.  
+- Ispis obračunskih listića i dokumentacije: Modul omogućuje ispis obračunskih listića za agente, s detaljima o ostvarenim provizijama i izvršenim obračunima, čime se osigurava jasna i transparentna dokumentacija.  
+- Izvještavanje i analitika: Moguće je generirati izvještaje o provizijama i obračunima, što olakšava praćenje učinka agenata te omogućuje detaljnu analizu prodajnih rezultata.  
 
-**Automazione e Integrazione**:        
-Il modulo di Liquidazione Agenti è integrato con il resto del sistema gestionale di Fluentis, consentendo il recupero automatico dei dati di vendita e delle provvigioni dai moduli di vendita e fatturazione. Questa integrazione riduce il rischio di errori e garantisce una coerenza dei dati, facilitando la riconciliazione tra vendite, fatture e liquidazioni.
+**Automatizacija i integracija**:        
+Modul za obračun provizija agenata u potpunosti je integriran s ostatkom Fluentis ERP sustava, omogućujući automatsko preuzimanje podataka o prodaji i provizijama iz modula prodaje i fakturiranja. Ova integracija smanjuje mogućnost pogrešaka, osigurava dosljednost podataka te olakšava usklađivanje između prodaje, računa i obračuna.  
 
-E' collegato a sua volta con il modulo Amministrazione permettendo di convertire la liquidazione provvigioni in compenso percipiente al fine di poter eseguire automaticamente le relative scritture contabili ed il versamento della ritenuta d'acconto oltre ai contributi ENASARCO.
-Infine il compenso degli agenti rientrerà anch'esso nell'elaborazione fiscale della certificazione unica delle ritenute.
+Također je povezan s modulom Administracija, što omogućuje pretvaranje obračuna provizija u naknadu primatelju, kako bi se automatski provela pripadajuća knjiženja te obračun i uplata predujma poreza i doprinosa ENASARCO.
+Naknade agenata zatim se uključuju i u poreznu obradu Godišnje potvrde o zadržanim porezima.   
 
-Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle:
-> - [**Anagrafica agente**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail)
-> - [**Categorie agenti**](/docs/configurations/tables/sales/agent-category)
-> - [Range sconto](/docs/configurations/tables/sales/discount-range)
-> - [Definizione fasce provvigionali](/docs/configurations/tables/sales/discount-range)
-> - [Caratteristiche agente](/docs/configurations/tables/sales/agent-characteristics)
+Prije korištenja modula potrebno je popuniti sljedeće tablice:  
+> - [**Registar agenata**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail)
+> - [**Kategorije agenata**](/docs/configurations/tables/sales/agent-category)
+> - [Raspon popusta](/docs/configurations/tables/sales/discount-range)
+> - [Definicija provizijskih razreda](/docs/configurations/tables/sales/discount-range)
+> - [Karakteristike agenata](/docs/configurations/tables/sales/agent-characteristics)
 
-:::danger[Attenzione]
-Si ricorda che oltre alla configurazione dei dettagli dell'anagrafica agente, è necessario [**abbinare gli agenti ai rispettivi clienti**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/agents) per poter avere il calcolo delle provvigioni nei documenti ed alimentare quindi le liquidazioni
-:::
+:::danger[Upozorenje]
+Podsjećamo da je, osim konfiguriranja detalja u registru agenata, nužno [**povezati agente s pripadajućim klijentima**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/agents) kako bi se omogućio izračun provizija u dokumentima i time osigurala pravilna izrada obračuna.  
