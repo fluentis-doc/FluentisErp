@@ -160,45 +160,52 @@ Nakon unosa artikla, njegov *Opis* bit će automatski preuzet iz šifarnika. Ako
 
 #### Pulsanti specifici
 
-import PackagesManagement from './../../../import/procedure/packages-management.md'
-import UpdatePriceLists from './../../../import/buttons/update-price-lists.md'
+**Upravljanje pakiranjem**: Omogućuje otvaranje upravljanja povratnom ambalažom korištenom u dokumentu nabave.<br />
+Tipka postaje aktivna ako je dokument spremljen, ali nije utovaren.<br />
+Klikom na ovu tipku otvara se odgovarajući obrazac gdje se: unese količina, odabere redak i izvrši prijenos odabrane ambalaže u retke artikala klikom na tipku **Izvrši**. U ovom obrascu prikazani su artikli koji su uneseni s vrstom Pakiranje i koji su u tablici. [Povratna ambalaža](/docs/configurations/tables/logistics/package-to-be-returned).  
 
-> <PackagesManagement />
-> <UpdatePriceLists />
+**Ažuriranje cjenika**: omogućuje ažuriranje cijene artikla na temelju novog cjenika (u slučaju da je unesen ažurirani cjenik).<br />
+Klikom na padajući izbornik pored gumba ![](/img/neutral/common/down-arrow.png), biti će moguće kreirati novi cjenik ukoliko još nije stvoren?.
 
-### 3.2 Sconti/Listini
 
-import SalesTabDiscount from './../../../import/sections/sales-tab-discount.md'
+### 3.2 Popusti / Cjenici
 
-<SalesTabDiscount />
+**Popusti**: prikazuju se svi popusti povezani s artiklom, svaki s vlastitom osnovom za izračun i dodjelu. Popusti se mogu preuzeti: iz šifarnika kupca, iz uvjeta plaćanja dodijeljenog dokumentu, iz cjenika kupca. Svi predloženi podaci su promjenjivi.
 
-### 3.3 Dettaglio articolo
+**Cjenik**: prikazuje se cjenik iz kojeg je artikl preuzet, s datumom početka/kraja valjanosti, s posebnim uvjetima prodaje (npr. razred popusta) dodijeljenim artiklu u cjeniku.
 
-All'interno di questo tab vengono riportarte/inserite ulteriori informazioni relative all'articolo.
+*Puosebna tipka*
 
-- **Articolo**: riprende le informazioni dell'articolo selezionato nella griglia degli articoli.
+> **Izbriši rabate**: omogućuje brisanje popusta povezanog s odabranim artiklom u gornjoj mreži.
 
-import Vat from './../../../import/fields/item-vat.md'
 
-<Vat />
+### 3.3 Detalji artikla 
 
-- **Progetto**: è il progetto associato al documento oppure può essere assegnato con l'ausilio del help di campo.
+U ovoj kartici prikazuju se i unose dodatne informacije o artiklu.
 
-- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo;
+- **Artikl**: prikazuje informacije o artiklu odabranom u mreži artikala.  
 
-- **Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*.
+**PDV**: *prioritetan* je podatak unesen u polje Šifra PDV-a u *Šifarniku kontakta*. Ako ne postoji, predlaže se vrijednost koja je se nalazi u'*Šifarniku artikla*, no korisnik ima mogućnost unijeti i neki drugi podatak. Ovo polje je obavezno.
 
-Se questo non è presente, non viene proposto nessun dato ma al momento della contabilizzazione, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'*Anagrafica cliente > Dati contabili > tab Amministrativa* 
+- **Projekt**: projekt povezan s dokumentom, može se dodijeliti putem pomoći polja.    
 
-- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che compariranno in automatico al momento dello scarico degli articoli relativi dal magazzino. I dati sono ripresi dalla tabella *Tipi POS*.
+- **Marka**: predstavlja marku artikla, preuzetu iz šifrarnika ili cjenika.    
 
-- **Note**: offre la possibilità di inserire note per ogni articolo.
+- **Prihod od prodaje**: predlaže se podatak iz *Kartice artikla > kartica Općenito*.  
+
+Ako podatak nije unesen, neće biti prikazan, no pri knjiženju će se koristiti vrijednost iz polja *Zadani trošak/prihod konta* u *Kartici kupca > Računovodstveni podaci > tab Administracija*.
+
+- **Skladište i uzrok**: predlažu se podaci koji će se automatski koristiti prilikom otpreme artikala iz skladišta, prema tablici *Vrste POS-a*.    
+
+- **Napomene**: omogućuju unos bilješki za svaki artikl.  
 
 ### 3.4 Agenti
 
-import SalesTabAgent from './../../../import/sections/sales-tab-agent.md'
+**Trgovački predstavnik**: trgovački predstavnik povezan s odgovarajućom provizijom za odabrani artikal; podatak odgovara onome što je prisutno u *Zaglavlje> kartica Trgovački predstavnik*. Postotak se može promijeniti.
 
-<SalesTabAgent />
+*Posebna tipka*
+
+> **Izbriši Trgovačkog predstavnika**: omogućuje brisanje trgovačkog predstavnika povezanog s artiklom.
 
 ### 3.5 Analitica
 
