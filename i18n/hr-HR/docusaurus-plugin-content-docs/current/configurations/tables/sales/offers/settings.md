@@ -1,28 +1,28 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Nel modulo Vendite e CRM di Fluentis, la gestione delle offerte consente di creare, monitorare e aggiornare le proposte commerciali, integrandole direttamente con i processi aziendali. Le offerte possono essere associate sia a [contatti CRM](/docs/crm/home-crm/contacts/search-contacts) che a [clienti registrati](/docs/erp-home/registers/contacts/create-new-contact/general), permettendo un controllo granulare sull'intero ciclo di vendita.
+U modulu Prodaja i CRM sustava Fluentis, upravljanje ponudama omogućuje izradu, praćenje i ažuriranje komercijalnih prijedloga, uz izravnu integraciju s poslovnim procesima.Ponude se mogu povezati s [CRM kontaktima](/docs/crm/home-crm/contacts/search-contacts) ili s [registriranim kupcima](/docs/erp-home/registers/contacts/create-new-contact/general), čime se omogućuje detaljna kontrola nad cijelim prodajnim ciklusom.
 
-## Configurazione preliminare del modulo
+## Prethodna konfiguracija modula
 
-> - [Numerazioni](/docs/configurations/tables/fluentis-numerations): definizione delle numerazioni per le offerte.
-> - [Parametri offerte](/docs/configurations/parameters/sales/offer-parameters): impostazioni specifiche per la gestione delle offerte.   
-> - [Tipi offerte](/docs/configurations/tables/sales/sales-offer-type): creazione e classificazione delle tipologie di offerte.
+> - [Numeracije](/docs/configurations/tables/fluentis-numerations): definicija numeracija za ponude.    
+> - [Parametri ponuda](/docs/configurations/parameters/sales/offer-parameters): specifične postavke za upravljanje ponudama.    
+> - [Vrste ponuda](/docs/configurations/tables/sales/sales-offer-type):izrada i klasifikacija tipova ponuda.  
 
-In alternativa è disponibile la procedura di [**Fast Start**](/docs/guide/fast-start).
+Alternativno, dostupna je i procedura [**Fast Start**](/docs/guide/fast-start).
 
-## Documenti gestiti
+## Upravljani dokumenti  
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-### Offerte di vendita
-Permette la creazione dell'offerta *manuale* con l'inserimento diretto di dati.  
-### Stampe  
-Layout personalizzabili per ciascun cliente.  
-Inclusione di tutti i dettagli commerciali richiesti.  
+### Prodajne ponude    
+Omogućuje izradu *ručne* ponude uz izravan unos podataka.     
+### Ispisi    
+Prilagodljivi izgledi za svakog kupca.  
+Uključuju sve potrebne komercijalne detalje.  
     </div>
 </div>

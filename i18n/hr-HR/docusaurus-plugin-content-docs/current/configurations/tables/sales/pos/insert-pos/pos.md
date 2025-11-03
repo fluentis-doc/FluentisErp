@@ -1,145 +1,162 @@
 ---
-title: Nuovo POS
+title: Novi POS  
 sidebar_position: 2
 ---
 
-La form **Crea POS** si apre tramite il percorso **Vendite > POS > Crea POS** oppure tramite il pulsante **Nuovo** che si trova nella form di ricerca *POS*.
+Forma **Kreiraj POS** otvara se putem putanje **Prodaja > POS > Kreiraj POS** ili pomoću tipke **Novo** koja se nalazi u formi za pretragu *POS*-a.  
 
-## **1. Dati obbligatori**
-Nella form di inserimento vengono proposti automaticamente la **Data** e **Anno** corrente, ma possono essere modificati.
+## **1. Obavezni podaci**
+U formi za unos automatski se predlažu **Datum** i **Godina** trenutni, ali se mogu promijeniti.  
 
-Per continuare la creazione della fattura di vendita, l'utente deve inserire i campi obbligatori:
+Za nastavak kreiranja prodajne fakture korisnik mora unijeti sljedeća obavezna polja:  
 
-- **Tipo POS** predefinito in *Configurazione > Tabelle > Vendite > Tipi POS*.
+- **Vrsta POS-a**, unaprijed definirana u *Konfiguracija > Tablice > Prodaja > Vrste POS-a*.  
 
-- **Numero** ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione POS](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione.
+- **Broj** — svakom se dokumentu automatski dodjeljuje broj prema numeraciji definiranoj u tablici [Numeracija POS-a](/docs/configurations/tables/fluentis-numerations)  i tipu dokumenta povezanom s njom.  
 
-- **Conto**, usando l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure digitando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i dati.- 
+- **Konto**, koristeći [pomoć polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  ili unosom [izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) podataka.- 
 
-:::danger[Attenzione]
-Questo campo non è rilevante per la gestione della [**Contabilizzazione POS**](/docs/sales/pos/pos-accounting). La causale contabile associata alla contabilizzazione POS dovrà avere al suo interno la definizione di un conto Cliente **FISSO** e dettagliato con codice di **sottoconto** (ad esempio un conto "Cliente corrispettivi"). Il tipo importo sulla riga causale per il sottoconto clienti sarà impostato come *Totale Documento / registrazione*.
+:::danger[Pažnja]
+Ovo polje nije relevantno za upravljanje [**Kontabilizacijom POS-a**](/docs/sales/pos/pos-accounting). Računovodstvena stavka povezana s kontabilizacijom POS-a mora imati definiran **FIKSNI** račun kupca s detaljnim **subkontom** (npr. račun “Kupac gotovinski promet”). Tip iznosa u računovodstvenoj stavci za subkonto kupaca bit će postavljen kao *Ukupan dokument / knjiženje*.
 :::
 
-- **Anagrafica**: si tratta di un campo alternativo al precedente *Conto* che può essere utilizzato per inserire un *Contatto* che non è abbinato ad alcun sottoconto
+- **Kartica subjekta**: alternativno polje prethodnom *Kontu* koje se koristi za unos *kontakta* koji nije povezan ni s jednim subkontom.
 
-### 1.1 Totali documento
+### 1.1 Ukupni iznosi dokumenta
 
 Nella parte destra della form sono presenti i totali del documento.
 
-import SummariesDocumentTotal from './../../../import/sections/summaries-document-total.md'
+**Bruto iznos artikala**: predstavlja zbroj vrijednosti svih artikala;
+
+**Predujam**: predstavlja vrijednost eventualnog primljenog predujma;
+
+**Iznos poklona**: predstavlja iznos artikala tipa poklon unesenih u karticu *Articoli*.
+
+**Ukupni primjenjeni rabati**: predstavlja ukupnu vrijednost popusta primijenjenih na artikle, ali bez konačnih popusta. 
+
+**Neto iznos artikala**: *Bruto iznos artikala* – *Ukupni primijenjeni popusti*; 
+
+**Ukupni konačni rabati**: predstavlja vrijednost konačnih popusta izraženih u postotku na bruto iznos artikala; 
+
+**Ukupno s neto finalnim rabatima**: *Neto iznos artikala* - *Ukupni konačni rabati*;
+
+**Nedokumentirani troškovi**: predstavlja vrijednost troškova unesenih u prethodnoj kartici kao artikle *Tip trošak*; 
+
+**Troškovi naplate**: predstavlja zbroj troškova naplate unesenih u mreži *Naknade*; 
+
+**Troškovi ovjere**: predstavlja zbroj troškova ovjere unesenih u mreži *Naknade*;
+
+**Dokumentirani troškovi**: predstavlja vrijednost troškova unesenih u mreži *Naknade*; 
+
+**Osnovica**: *Neto iznos artikala* – *Konačni rabati* + *Ukupno nedokumentirani troškovi* + *Ukupno dokumentirani troškovi*;
+
+**Porez**: predstavlja zbroj vrijednosti sadržanih u sažecima PDV-a;
+
+**Ukupno**: *Osnovica* + *PDV*.
 
 <SummariesDocumentTotal />
 
-#### Pulsanti specifici  
-> **Fiscale**: permette di lanciare la generazione dello scontrino fiscale interfacciandosi con un registratore di cassa (previa configurazione del collegamento mediante  campi appositi)  
-> **Scarico POS**: permette lo scarico POS, se per ogni articolo sono state inserite il magazzino e la causale.
+#### Posebne tipke   
+>  **Fiskalno**: omogućuje generiranje fiskalnog računa u komunikaciji s blagajnom (nakon prethodne konfiguracije veze kroz odgovarajuća polja).  
+> **Otpremi POS**: omogućuje otpremu POS-a ako su za svaki artikl navedeni skladište i uzrok.
 
 
-## **2. Testata**
+## **2. Zaglavlje**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+Nakon unosa obaveznih podataka u gornjem dijelu, korisnik može nastaviti unos ostalih podataka[ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  ili putem [pomoći polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-Inserendo il **Conto** vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica contatto](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
+Unosom **Konta** automatski se predlažu svi podaci zaglavlja prema postavkama u [kartici kontakta](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), poljima adrese i *sekcijama*:  
 
-- **Divisa**: [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Spedizione**: [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
+- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
+- **Otprema**: [Otprema](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [period valjanosti](/docs/guide/common/glossary/glossary-intro#validity-date)
 
-#### Altri campi 
+#### Ostala polja
 
-- **Stato POS**: in fase di creazione, il POS non presenta nessun flag attivo. La sezione comprende i campi:
-> - **Stampato** si attiva quando viene lanciata la stampa dello scontrino.  
-> - **Scaricato** indica che il POS è stato scaricato dal magazzino manualmente oppure tramite la procedura di scarico automatico.  
-> - **Contabilizzato**: viene automaticamente selezionato quando il POS viene contabilizzato.  
-> - **Annullato**: il flag attivo permette di annullare il POS.
+- **Status POS-a**: prilikom kreiranja POS-a nijedna opcija nije aktivna. Ova sekcija sadrži:  
+> - **Status POS-a**: prilikom kreiranja POS-a nijedna opcija nije aktivna. Ova sekcija sadrži:    
+> - **Otpremljeno**: označava da je POS otpremljen iz skladišta ručno ili automatskom procedurom.    
+> - **Knjiženo**: automatski se aktivira kada se POS knjiži.     
+> - **Poništeno**: aktivni pokazatelj omogućuje poništavanje POS-a.  
 
 :::note
-I flag possono essere tolti con la procedura di ripristino operazione.
+Ovi se pokazatelji mogu poništiti postupkom vraćanja operacije.
 :::
 
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per il POS in oggetto.  
+- **Naša referenca / Vaša referenca**: polja u koja se obično unose interne i kupčeve reference vezane uz POS.  
 
-import InitialNote from './../../../import/fields/initial-note.md'
+**Početne bilješke**: mogu se odabrati bilješke prethodno unesene u istoimenu tablicu koja se nalazi u *Konfiguracija > Korisnost > Upravljanje šifriranim bilješkama*. Za to korisnik treba napraviti dvoklik na polje **Početna bilješka** kako bi otvorio *Pomoć šifriranih bilješki* i odabrao podatke, ili desnim klikom miša može otvoriti prozor u kojem je moguće upisati vrlo dugačak tekst bilješke. Ako polje sadrži neku vrijednost, boja pozadine polja se mijenja.
 
-<InitialNote />
+- **Operater**: omogućuje unos korisnika koji kreira dokument. Zaposlenici su prethodno uneseni u tablicu *Zaposlenici* putem putanje *Početna > Zaposlenici*.  
 
-- **Operatore**: permette di inserire l'utente che crea il documento. I dipendenti sono stati inseriti in precedenza nella tabella *Dipendenti* che si trova nel percorso *Home > Dipendenti*. 
+- **Projekt**: putem [pomoći polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) moguće je povezati dokument s projektom.  
 
-- **Progetto**: usando il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) si può collegare il documento a un progetto.  
-Questa associazione funziona solo al livello della testata dell'articolo.
+### 2.1 Plaćanja
 
-### 2.1 Pagamenti
+**Rješenja plaćanja** automatski se preuzimaju iz *Kartice kupca > tab Plaćanja* te ih korisnik može izmijeniti ili obrisati.
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica cliente > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+#### Posebna tipka
 
-#### Pulsante specifico
+> **Izbriši plaćanja**: koristi se za brisanje odabranih redaka plaćanja.
 
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+### 2.2  Popusti
 
-### 2.2  Sconti
-
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Predlažu se samo unaprijed definirani popusti iz *Kartice kupca > kartica Popusti*, a korisnik ih može mijenjati ili brisati.
   
-import TabDiscount from './../../../import/sections/tab-discount.md'
+Predloženi popusti u zaglavlju dokumenta prenose se na svaki novi redak artikla unesen u dokument.
 
-<TabDiscount />
+Ako nakon unosa redaka artikla bude unesen novi popust u zaglavlju, taj popust se neće replicirati u već unesenim redovima artikla.
+
+*Posebna tipka*
+
+> **Izbriši rabate**: koristi se za brisanje odabranih redaka popusta.
 
 ### 2.3 Agenti
 
-Indica il codice agente e la sua provvigione per ogni riga articolo. Viene proposto il codice e la percentuale definiti nell'*Anagrafica cliente > tab Agenti*.
+Navodi kod agenta i njegovu proviziju za svaki redak artikla. Predlažu se podaci definirani u *Kartici kupca > tab Agenti*.
 
-Se la provvigione non è collegata al cliente nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è associato, ma non percepisce provvigione.
+Ako provizija nije povezana s kupcem, agent se svejedno mora unijeti, ali s provizijom NULL — jer bi 0 značilo da je povezan, ali bez naknade.
 
-La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab *Agenti*.
+Ista će se sekcija pojaviti za svaki redak artikla u odgovarajućem tabu *Agenti*.
 
-#### Pulsante specifico
+#### Posebna tipka
 
-> **Cancella agenti**: permette di cancellare gli agenti selezionati.
+> **Izbriši agente**: omogućuje brisanje odabranih agenata.
 
-## **3. Articoli**
+## **3. Artikli**
 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
+U ovoj kartici unose se svi artikli s pripadajućim podacima.
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za opći opis zajedničkih funkcionalnosti formi pogledaj [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
 
-import InsertMode from './../../../import/sections/insert-mode.md'
+Podaci se unose [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), uz upotrebu [helpa na polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili mogu biti predloženi iz povezanih procedura.
 
-<InsertMode />
-
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar.
+Za unos **novog artikla** potrebno je pozicionirati se na redak i unijeti podatke ili koristiti tipku **Novo** u traci izbornika.
 
 
-### 3.1 Dati obbligatori
+### 3.1 Obavezni podaci
 
-import RowNumber from './../../../import/fields/row-number.md'
+**Broj retka**: ovo polje će se automatski i progresivno popunjavati prilikom unosa podataka u retku.
 
-<RowNumber />
+- **Vrsta retka** omogućuje odabir artikala različitih karakteristika:
 
-- **Tipo riga** offre la possibilità di selezionare gli articoli con caratteristiche diverse:
+> - **Kodirani artikl**: artikli koji su kodirani u šifrarniku i mogu se knjižiti u analitičkom računovodstvu te evidentirati u skladištu.  
+> - **Artikl – bilješka**: obična napomena, ne utječe na računovodstvo ni skladište.
+> - **Artikl – poklon**: označava da je artikl u tom retku poklon i nema trošak za kupca.
 
-> - **Articolo codificato**: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino; 
-> - **Articolo note**: è una semplice nota, non incide sulla contabilità e sul magazzino.
-> - **Articolo omaggio**: questo tipo di riga sta ad indicare che l'articolo inserito in quella riga sarà un articolo omaggio, e quindi non avrà un costo per il cliente;
+**Klasa/Šifra/Opis artikla**: se ogu unijeti  [ručno ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz upotrebu  [helpa u polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koji će prikazati sve unesene podatke u *Šifarniku artikla*.
 
-import ItemClassDescription from './../../../import/sections/item-class-description.md'
+Nakon unosa artikla, njegov *Opis* bit će automatski preuzet iz šifarnika. Ako artikl ima *Varijante*, bit će potrebno odabrati željenu varijantu iz padajućeg izbornika *Varijante*.
 
-<ItemClassDescription />
+**Jedinica mjere**: predlaže se glavna mjerna jedinica artikla, ali korisnik ima mogućnost odabrati drugu mjernu jedinicu.
 
-import UM from './../../../import/fields/item-um.md'
+**Varijante**: Ako odabrani artikal ima varijante, bit će potrebno odabrati željenu varijantu iz ovog padajućeg izbornika. Odabir varijante je koristan za artikle s ovom posebnom konfiguracijom koji mogu imati cijenu različitu od standardno postavljene. Kao rezultat, cijena artikla s varijantama može biti drugačija od cijene artikla bez varijanti. To može eventualno zahtijevati upravljanje varijantama artikla u referentnom cjeniku.
 
-<UM />
+**Količina**: predstavlja količinu glavne mjerne jedinice i kao zadanu vrijednost ima 1; može se unijeti ručno ili se može preuzeti iz dokumenta koji se razmatra za izuzimanje (na primjer iz narudžbe dobavljača).
 
-import Variant from './../../../import/fields/item-variant.md'
+- **Cijena s PDV-om**: predstavlja cijenu s uključenim PDV-om, prethodno unesenu u *Karticu artikla > kartica Troškovi* i može se razlikovati po skladištima.
 
-<Variant />
-
-import Quantity from './../../../import/fields/item-quantity.md'
-
-<Quantity />
-
-- **Prezzo ivato**: rappresenta il prezzo con IVA e deve essere inserito in precedenza in *Anagrafica articoli > tab Costi* è può essere diverso per magazzini;
-
-- **IVA** e **Imponibile** vengono calcolati in automatico, prelevando i valori dal prezzo ivato.
+- **PDV** i **Osnovica** automatski se izračunavaju na temelju cijene s PDV-om.
 
 #### Pulsanti specifici
 
