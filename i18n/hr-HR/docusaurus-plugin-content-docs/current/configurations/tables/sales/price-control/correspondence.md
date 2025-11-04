@@ -1,15 +1,17 @@
 ---
-title: Corrispondenza categorie sconto acq/ven
+title: Usklađivanje kategorija popusta kupnja/prodaja  
 sidebar_position: 5
 ---
 
-In questa maschera è possibile consultare e inserire nuove corrispondenze per categorie di sconto. La categoria di sconto generica (per es. quella della casa madre) viene associata ad una categoria di sconto per la vendita e ad una categoria di sconto per l'acquisto. 
-I rivenditori possono infatti ricevere il catalogo (Importato con la procedura [Prezzi fornitore](/docs/purchase/purchase-price-lists/procedures/supplier-price) dalla casa madre a cui è applicato un prezzo con una categoria di sconto; i rivenditori venderanno a loro volta il prodotto applicando una categoria di sconto diversa. Diversi fornitori possono avere uguale Categoria sconto ma diversa Categoria sconto vendita e acquisti, in quanto hanno la stessa casa madre, ma applicano condizioni di sconto differenti.     
-La prima parte della maschera permette di filtrare i risultati; le colonne di risultato sono le seguenti:           
-**Classe articolo**: contiene la classe articolo al quale corrisponde una determinata categoria di sconto;         
-**Conto/Sottoconto/Descrizione**: contiene l'anagrafica a cui è associata la categoria di sconto;        
-**Cat. sconto vend.**: contiene la categoria di sconto con la quale l'anagrafica vende l'articolo;      
-**Cat. sconto acq.**: contiene la categoria di sconto con la quale l'anagrafica compra l'articolo;        
-**Formule di aggiornamento**: contiene le eventuali formule da utilizzare nelle procedure di aggiornamento dei prezzi;      
-**Da data validità**: contiene la data dalla quale considerare per la classe articolo, la categoria di sconto; in questo modo è possibile associare diverse categorie in periodi diversi dell'anno;         
-**Categoria sconti**: contiene la categoria sconti applicata dalla casa madre; questo è il campo che lega il modulo acquisti con il modulo vendite.
+U ovom obrascu moguće je pregledavati i unositi nove odgovarajuće kategorije popusta.  
+Opća kategorija popusta (npr. kategorija matične tvrtke) povezuje se s kategorijom popusta za prodaju i kategorijom popusta za kupnju.    
+Naime, trgovci mogu primiti katalog (uvođen postupkom [Cijene dobavljača](/docs/purchase/purchase-price-lists/procedures/supplier-price) od matične tvrtke) kojem je dodijeljena cijena s određenom kategorijom popusta; trgovci će potom prodavati proizvod primjenjujući drugu kategoriju popusta.  
+Različiti dobavljači mogu imati istu kategoriju popusta, ali različite kategorije popusta za prodaju i kupnju, jer imaju istu matičnu tvrtku, ali primjenjuju različite uvjete popusta.      
+Prvi dio obrasca omogućuje filtriranje rezultata; stupci rezultata su sljedeći:               
+**Klasa artikla**: sadrži klasu artikla kojoj odgovara određena kategorija popusta;           
+**Konto/Subkonto/Opis**: sadrži poslovni subjekt kojem je pridružena kategorija popusta;         
+**Kat. popusta prod.**: sadrži kategoriju popusta kojom subjekt prodaje artikl;        
+**Kat. popusta kup.**: sadrži kategoriju popusta kojom subjekt kupuje artikl;          
+**Formule ažuriranja**: sadrži eventualne formule koje se koriste u procedurama ažuriranja cijena;        
+**Od datuma važenja**: sadrži datum od kojeg se za klasu artikla smatra važećom određena kategorija popusta; na taj način moguće je povezati različite kategorije u različitim periodima godine;           
+**Kategorija popusta**: sadrži kategoriju popusta koju primjenjuje matična tvrtka; ovo je polje koje povezuje modul kupnje s modulom prodaje.

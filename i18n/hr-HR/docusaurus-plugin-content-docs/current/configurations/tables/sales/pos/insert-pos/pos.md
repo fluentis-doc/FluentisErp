@@ -207,39 +207,48 @@ Ako podatak nije unesen, neće biti prikazan, no pri knjiženju će se koristiti
 
 > **Izbriši Trgovačkog predstavnika**: omogućuje brisanje trgovačkog predstavnika povezanog s artiklom.
 
-### 3.5 Analitica
+### 3.5 Analitika
 
-import TabAnalytic from './../../../import/sections/tab-analytic.md'
+Može sadržavati informacije o troškovnim/profitnim centrima na kojima su distribuirane vrijednosti artikala.
 
-<TabAnalytic />
+Ovi podaci mogu se unijeti ručno ili *automatski* (u slučaju da su centri troškova/profita prethodno uneseni u *šifarnik kontakta*, *šifarnik artikla* ili u *kontni plan*).
 
-## **4. Riepiloghi**
+## **4. Sažeci**
 
-### 4.1 Sconti finali articoli
+### 4.1 Konačni popusti artikala 
 
-import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
+Mogu se unijeti samo popusti, izraženi u postotku, koji će se primijeniti na ukupni iznos dokumenta.
 
-<SummariesFinalDiscount />
+Popusti uneseni u ovom odjeljku izračunavaju se i prikazuju na svakom artiklu dokumenta, u *kartica Artikli > kartica Popusti/Cjenici*.
 
-### 4.2 Spese/Sconti/Maggiorazioni finali
+**Tip/Opis popusta**: omogućava odabir tipologije popusta (predefinirane u [Tipovima popusta](/docs/configurations/tables/general-settings/discount-types)), dodijeljujući tipologiji prioritet primjene popusta i hoće li se popust obračunavati na osnovicu ili kaskadno u odnosu na već prethodno primijenjene popuste.
+**Prioritet**: predstavlja prioritet primjene popusta; redoslijed koji se primjenjuje odvija se na rastući način. 
+**Kaskadni/Osnovni**: za definirati da li izračun popusta koristi kao osnovu (cijena * količina) - (već obračunati popusti) ili (cijena * količina).  
+**Vrijednost**: numerička vrijednost popusta koji treba primijeniti.  
 
-import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
+### 4.2 Završni troškovi / Popusti / Uvećanja
 
-<SummariesExpenses />
+Ovdje su troškovi uneseni u šifarniku kontakta, na kartici *Troškovi/Popusti*.
 
-### 4.3 Riepiloghi IVA
+Također postoji mogućnost unosa troškova koji se odnose samo na korišteni dokument.
 
-Viene proposto il riepilogo IVA del documento, per ogni codice IVA.
+**Tip/Opis**: omogućuje odabir tipa troškova (predefiniranih u *Tipovima troška*), dodjeljujući tipu postotak troška koji se treba primijeniti. 
+**Postotak/Vrijednost**: polje koje identificira hoće li se troškovi izračunati s postotkom ili s unaprijed definiranim novčanim iznosom.  
+**Postotak**: numerička vrijednost postotka troškova. 
 
-### 4.4 Riepilogo scadenze
+### 4.3 Sažetak PDV-a
 
-Rappresenta il riepilogo delle scadenze del documento, per ogni *tipo* e *soluzione* di pagamento. 
+Prikazuje se sažetak PDV-a dokumenta, za svaki PDV kod.
+
+### 4.4 Sažetak dospijeća
+
+Ovaj odjeljak prikazuje sažetak dospijeća dokumenta, za svaku *vrstu* i *rješenje* plaćanja.
  
-- **Numero**: valore progressivo della riga.  
-- **Pagamento**: rappresenta il codice alfanumerico del *Tipo pagamento* ripreso dalla *Testata del documento > tab Pagamenti*.  
-- **Importo**: Importo della scadenza calcolato. Può essere forzato manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*. (Scattano in automatico dei controlli e avvisi sulla quadratura tra i valori delle scadenze e il totale fattura)
-- **Data scadenza**: Data della scadenza calcolata. Può essere forzata manualmente, nel qual caso si attiva automaticamente il successivo flag *Modifica manuale*.
-- **Spese di incasso**: Campo in cui riportate le spese di incasso calcolate.
-- **IVA**: da applicare alle spese di incasso (può essere impostata anche manualmente)
-- **Causale pagamento**: è possibile inserire direttamente in fattura una causale contabile che da luogo ad una scrittura automatica di incasso / pagamento. NB prestare attenzione al template della causale perchè utilizzerà i conti presenti anche senza sottoconto, motivo per il quale è presente il campo seguente.
-- **Conto/sottoconto cliente**: conto che usa per incassare/pagare (cassa o banca ad esempio) la scadenza andando a sovrascrivere il conto presente nella causale contabile di pagamento (o incasso)
+- **Broj**: redni broj retka.  
+- **Plaćanje**: alfanumerički kod *Vrste plaćanja* preuzet iz *Zaglavlja dokumenta > kartica Plaćanja*.      
+- **Iznos**: izračunati iznos dospijeća. Može se ručno izmijeniti, a u tom se slučaju automatski aktivira oznaka *Ručno uređeno*.(Automatski se pokreću kontrole i upozorenja o usklađenosti između iznosa dospijeća i ukupnog iznosa računa.)  
+- **Datum dospijeća**: izračunati datum dospijeća. Može se ručno promijeniti, pri čemu se također automatski aktivira oznaka *Ručno uređeno*. 
+- **Troškovi naplate**: polje u kojem se prikazuju izračunati troškovi naplate.   
+- **PDV**: porez koji se primjenjuje na troškove naplate (može se postaviti i ručno).  
+- **Predložak plaćanja**: omogućuje unos predloška izravno u račun, čime se automatski generira knjiženje naplate ili plaćanja. *Napomena:* potrebno je obratiti pažnju na predložak jer koristi konta definirana i bez podkonta; upravo je zbog toga predviđeno sljedeće polje.    
+- **Konto/podkonto kupca**: konto koji se koristi za naplatu ili plaćanje (npr. blagajna ili banka) te zamjenjuje konto naveden u predlošku plaćanja (ili naplate).  

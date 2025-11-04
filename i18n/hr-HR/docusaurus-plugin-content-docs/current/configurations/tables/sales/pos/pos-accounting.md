@@ -1,40 +1,45 @@
 ---
-title: Contabilizzazione POS
+title: Knjiženje POS-a
 sidebar_position: 4
 ---
 
-La procedura si apre tramite il percorso **Vendite > POS > Contabilizzazione > Contabilizzazione POS**. 
+Postupak se otvara putem izbornika **Prodaja > POS > Knjiženje > Knjiženje POS-a**.
 
-Un POS, per essere contabilizzato, deve soddisfare una serie di condizioni: nella sua testata deve aver impostato il flag *Stampata* e il tipo POS deve contenere la causale generale per la contabilizzazione.
+Da bi se POS mogao knjižiti, mora ispunjavati određene uvjete: u zaglavlju dokumenta mora biti označen parametar *Ispisano*, a vrsta POS-a mora sadržavati opći predložak za knjiženje.
 
-:::danger[Attenzione]
-Il campo **Conto** definito nella testata del POS non è rilevante per la gestione della **Contabilizzazione**. La causale contabile associata dovrà avere al suo interno la definizione di un conto Cliente **FISSO** e dettagliato con codice di **sottoconto** (ad esempio un conto "Cliente corrispettivi"). Il tipo importo sulla riga causale per il sottoconto clienti sarà impostato come *Totale Documento / registrazione*.
+:::danger[Pažnja]
+Polje **Konto** definirano u zaglavlju POS-a nije relevantno za proces **knjiženja**.  
+Predložak knjiženja povezan s dokumentom mora sadržavati definiran **fiksni konto kupca**, detaljno specificiran s kodom **podkonta** (na primjer konto "Kupci – gotovinska prodaja").  
+Vrsta iznosa na retku predloška za podkonto kupca mora biti postavljena na *Ukupni iznos dokumenta / registracije*.
 :::
 
-## Contabilizzazione
+## Knjiženje
 
-La form presenta nella parte superiore i filtri di ricerca per individuare e visualizzare, nella griglia, la lista dei POS da contabilizzare presenti nel sistema.
+Forma u gornjem dijelu sadrži filtre pretraživanja za pronalaženje i prikaz na popisu POS dokumenata koji čekaju knjiženje.
 
-Alla base della form sono presenti alcuni parametri di gestione della contabilizzazione:
+U donjem dijelu forme nalaze se parametri za upravljanje procesom knjiženja:
 
-**Data registrazione uguale alla data documento**: questo flag impone la contabilizzazione di ogni singola fattura allo loro data di emissione.
+**Datum knjiženja jednak datumu dokumenta**: ova oznaka nalaže da se svaka pojedina faktura knjiži na datum njenog izdavanja. 
 
-Se il flag viene disabilitato, si attiva il campo successivo, **Data registrazione**, all'interno del quale è possibile impostare una data fissa di registrazione;
+Ako se oznaka deaktivira, aktivira se sljedeće polje, **Datum knjiženja**, u kojem se može postaviti fiksni datum za knjiženje.  
 
-#### Pulsanti specifici   
-> **Ricerca**: per cercare i POS; vengono proposte tutte i POS stampati e non contabilizzati.  
-> **Contabilizzazione**: esegue la contabilizzazione dei POS selezionati, secondo le impostazioni definite.  
+#### Specifične tipke    
+> **Pretraga**: pretražuje POS dokumente; prikazuju se svi POS-ovi koji su ispisani, a još nisu knjiženi.   
+> **Knjiženje**: izvršava knjiženje odabranih POS dokumenata, prema definiranim postavkama.  
 
-## Precedenti
+## Povijest knjiženja  
 
-La form presenta la lista delle operazioni di contabilizzazione eseguite, al fine di visualizzarle ed eventualmente annullarle attraverso gli appositi pulsanti.
+## Prethodno
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile.
+Forma prikazuje popis već izvršenih knjiženja, omogućujući pregled i eventualno poništavanje istih putem namjenskih tipki.
 
-**Contabilizzazione POS**: griglia con i dettagli delle operazioni eseguite. Viene popolata dopo la procedura di ricerca e possono essere selezionate le operazioni sulle quale applicare le funzioni del ribbon.
+Poništavanje knjiženja moguće je samo ako je razdoblje još uvijek otvoreno za izmjene.  
 
-I dati nelle griglie in basso, **Punto di vendita** e **Registrazione contabile** corrispondono all'operazione selezionata nella griglia superiore. Un doppio click nella sezione dei punti vendita/registrazioni consentirà di visualizzare il punto vendita/la registrazione contabile relativa.
+**Knjiženje POS-a**: prikazuje mrežu s detaljima provedenih knjiženja. Popunjava se nakon pokretanja postupka pretrage, a korisnik može označiti knjiženja na koja želi primijeniti funkcije dostupne na traci izbornika.  
 
-#### Pulsanti specifici  
-> **Ricerca**: ricerca la lista delle contabilizzazioni eseguite.  
-> **Ripristina contabilizzazione**: con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutti i POS associati.  
+Podaci u donjim mrežama, **Prodajno mjesto** i **Knjigovodstvena registracija**, odnose se na odabranu stavku u gornjoj mreži.  
+Dvostrukim klikom na unos u sekciji prodajnih mjesta ili knjiženja moguće je otvoriti odgovarajući zapis prodajnog mjesta ili knjiženja.  
+
+#### Specifične tipke   
+> **Pretraga**: prikazuje popis izvršenih knjiženja.     
+> **Poništi knjiženje**: ovim se gumbom briše cijelo provedeno knjiženje, zajedno sa svim pridruženim POS dokumentima.  

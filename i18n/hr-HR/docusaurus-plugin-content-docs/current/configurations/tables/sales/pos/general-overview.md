@@ -1,26 +1,26 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Il POS permette di gestire le vendite direttamente nel punto cassa, con strumenti avanzati per la creazione e gestione di fatture, emissione di ricevute e aggiornamento automatico delle giacenze di magazzino.
+POS modul omogućuje upravljanje prodajom izravno na prodajnom mjestu (blagajni), uz napredne alate za izradu i upravljanje računima, izdavanje potvrda o prodaji te automatsko ažuriranje zaliha u skladištu.
 
-## Configurazione preliminare del modulo
+## Početna konfiguracija modula
 
-> - [Numerazioni](/docs/configurations/tables/fluentis-numerations): definizione delle numerazioni per POS.    
-> - [Tipo POS](/docs/configurations/tables/sales/pos-types): creazione e classificazione delle tipologie di POS.
+> - [Numeracije](/docs/configurations/tables/fluentis-numerations): definiranje numeracija za POS.    
+> - [Vrsta POS-a](/docs/configurations/tables/sales/pos-types): izrada i klasifikacija vrsta POS sustava.
 
-## Documenti gestiti
+## Upravljani dokumenti
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
 ### POS
-Permette la creazione del POS *manuale* con l'inserimento diretto di dati.
+Omogućuje *ručno* kreiranje POS dokumenta s izravnim unosom podataka.
 ### Procedure
-**Scarico POS**: gli articoli sono scalati automaticamente dal magazzino in base alle spedizioni registrate.
-### Contabilizzazione  
-I POS emessi sono contabilizzate automaticamente, aggiornando i registri finanziari e mantenendo la coerenza con il bilancio aziendale.  
+**Otpremanje POS-a**: artikli se automatski skidaju sa zaliha prema evidentiranim otpremama.  
+### Knjiženje    
+Izdani POS dokumenti automatski se knjiže, ažurirajući financijske registre i osiguravajući usklađenost s poslovnim knjigama poduzeća.     
     </div>
 </div>

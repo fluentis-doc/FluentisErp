@@ -1,32 +1,33 @@
 ---
-title: Scarico POS
+title: Otpremanje POS-a  
 sidebar_position: 5
 ---
 
-La procedura si apre tramite il percorso **Vendite > POS > Procedure > Scarico POS**.
+Postupak se otvara putem izbornika **Prodaja > POS > Procedure > Otpremanje POS-a**.
 
-Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nel POS. 
+Ova procedura omogućuje izvođenje ili vraćanje (poništavanje) operacija automatskog otpisa artikala iz skladišta koji su evidentirani u POS-u.
 
-## Filtro
+## Filter
 
-In questo tab, l'utente ha la possibilità di cercare e trasferire in magazzino i POS, secondo i criteri di filtro disponibili. 
+Na ovoj kartici korisnik ima mogućnost pretraživanja i prijenosa POS dokumenata u skladište, prema dostupnim kriterijima filtriranja.  
 
-**Data registrazione**: permette di specificare la data relativa allo scarico dal magazzino.
+**Datum knjiženja**: omogućuje određivanje datuma koji će se koristiti za otpis robe iz skladišta.  
 
-#### Pulsanti specifici  
-> **Ricerca**: permette di cercare i POS da scaricare.  
-> **Scarico**: permette di eseguire lo scarico dei POS selezionati dal magazzino, in base agli algoritmi di scarico.
+#### Specifične tipke     
+> **Pretraga**: omogućuje pretraživanje POS dokumenata koji trebaju biti otpremljeni.     
+> **Otpremanje**: izvršava otpis (otpremu) odabranih POS dokumenata iz skladišta, prema definiranim algoritmima otpisa.  
 
 
-## Riepiloghi
+## Sažeci  
 
-In questo tab, l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di scarico eseguite, che soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.
+Na ovoj kartici korisnik može pretraživati, pregledavati i poništavati provedene operacije otpisa koje ispunjavaju specifične uvjete za brisanje skladišnih knjiženja.  
 
-I dati nelle griglie in basso, **POS** e **Registrazione**, corrispondono alla registrazione di scarico selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare il POS e la sua registrazione di magazzino (doppio click sulla riga).
+Podaci u donjim tablicama, **POS** i **Knjiženje**, odnose se na zapis otpisa odabran u gornjoj tablici (nakon što su podaci filtrirani).  
+Osim toga, u tim se tablicama može dvostrukim klikom otvoriti POS dokument ili njegovo pripadajuće skladišno knjiženje.  
 
-#### Pulsanti specifici  
-> **Ricerca POS scaricati**: per cercare i POS scaricati. Il risultato di questa procedura viene visualizzata nella griglia di risultato.  
-> **Cancella scarico**: per cancellare per intero le operazioni di scarico selezionate nella griglia di risultato, se soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.   
-> **Ripristina POS**: per cancellare le operazioni di scarico selezionate nella griglia di risultato, per il POS in uso nella griglia dei dettagli.  
-> **Ripristina POS e registrazione**: per cancellare la registrazione di magazzino del documento selezionato nell'operazione di scarico in uso, se soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.  
-> **Proprietà**: permette di visualizzare il modo in cui è stata eseguita l'operazione di scarico selezionata. 
+#### Specifične tipke    
+> **Pretraga otpremljenih POS-ova**: pretražuje POS dokumente koji su već otpremljeni. Rezultati postupka prikazuju se u tablici rezultata.      
+> **Brisanje otpisa**: briše u cijelosti odabrane operacije otpisa u tablici rezultata, pod uvjetom da zadovoljavaju kriterije za brisanje skladišnih knjiženja.     
+> **Vraćanje POS-a**: briše odabrane operacije otpisa za POS dokument prikazan u tablici detalja.    
+> **Vraćanje POS-a i knjiženja**: briše skladišno knjiženje dokumenta odabranog u aktivnoj operaciji otpisa, ako zadovoljava uvjete za brisanje skladišnih knjiženja.  
+> **Svojstva**: omogućuje pregled načina na koji je izvršena odabrana operacija otpisa.  

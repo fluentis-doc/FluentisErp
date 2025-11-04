@@ -1,13 +1,14 @@
 ---
-title: Ricerca POS
+title: Pretraga POS-a
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Vendite > POS > Ricerca POS**.
+Forma se otvara putem izbornika **Prodaja > POS > Pretraga POS-a**.
 
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
 
-### Pulsanti specifici  
+Za objašnjenje zajedničkih funkcionalnosti prodajnih dokumenata pogledajte odjeljak [Prodaja](/docs/sales/sales-intro).
 
-> - **Creazione DDT**: la procedura permette di creare un DDT direttamente da uno o più POS; uscirà un pop up nel quale inserire il Tipo DDT da creare e il cliente al quale intestare il documento.     
-> - **Creazione fatture**: la procedura permette di creare una fattura direttamente da uno o più POS; uscirà un pop up nel quale inserire il Tipo fattura da creare e il cliente al quale intestare il documento.     
+### Specifične tipke 
+
+> - **Kreiranje otpremnice**: postupak omogućuje izradu otpremnice izravno iz jednog ili više POS dokumenata. Pojavit će se skočni prozor (pop-up) u kojem je potrebno unijeti vrstu DDT dokumenta koji se kreira te kupca na kojeg će dokument biti naslovljen.   
+> - **Kreiranje računa**: postupak omogućuje izradu računa izravno iz jednog ili više POS dokumenata. Pojavit će se skočni prozor (pop-up) u kojem je potrebno unijeti vrstu računa koji se kreira te kupca na kojeg će dokument biti naslovljen.
