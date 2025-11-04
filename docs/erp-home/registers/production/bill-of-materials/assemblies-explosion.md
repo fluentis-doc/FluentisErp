@@ -21,4 +21,8 @@ E' composta da 5 sezioni:
 
 Per lanciare il report basterà cliccare su **Anteprima** (in questo caso si vedrà un'anteprima del report e si potrà decidere se stampare, quante pagine e copie stampare o se esportare il file) oppure cliccare su **Stampa** (in questo caso verrà lanciata direttamente la stampa del report).
 
+Nella sezione **Tipo stampa** è possibile selezionare se visualizzare l'esplosione delle distinta in modalità:      
+- **Analitica**: il report riporterà tutti gli articoli presenti in distinta nei relativi livelli (senza raggrupparli)
+- **Riepilogata**: permette di visualizzare gli articoli raggruppati per codice a parità di livello (selezionando il flag *Multi livello*) oppure per tutta la distinta base (con il flag *Mono livello*). 
+
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
