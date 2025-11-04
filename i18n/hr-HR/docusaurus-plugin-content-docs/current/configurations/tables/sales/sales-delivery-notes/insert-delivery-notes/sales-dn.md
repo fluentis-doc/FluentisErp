@@ -1,34 +1,34 @@
 ---
-title: Nuovo DDT di vendita
+title: Nova otpremnica 
 sidebar_position: 2
 ---
 
-La form **Crea DDT di vendita** si apre tramite il percorso **Vendite > DDT > Crea DDT di vendita** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca DDT di vendita](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn).
+Forma **Kreiraj otpremnicu prodaje** otvara se putem **Prodaja > Otpremnice > Kreiraj otpremnicu prodaje** ili putem **tipka Novo** koji se nalazi u formi [Pretraživanje otpremnica prodaje](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn).
 
-## *Come creare un DDT di vendita*
+## *Kako kreirati otpremnicu prodaje*
 
-## **1. Dati obbligatori**
+##  **1. Obavezni podaci**
 
-Per continuare la creazione del DDT di vendita, l'utente deve inserire i campi obbligatori:
-- **Tipo DDT**: predefinito in  *Configurazione > Tabelle > Vendite> [Tipi DDT](/docs/configurations/tables/sales/delivery-notes-type)*.
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente e al tipo di documento che contiene la numerazione. La numerazione associata alla tipologia di DDT prevede generalmente una progressione automatica basata su data e numero, con una funzione di recupero che copre eventuali buchi nella sequenza (ad esempio, causati dalla cancellazione di documenti). Questo comportamento è regolato da due flag specifici nella tabella della numerazione. Se l'utente desidera inserire manualmente il numero, può disabilitare il flag di progressione data-numero (che garantisce l'incremento della numerazione nelle date future) e il flag di recupero numeri. Inoltre, dovrà abilitare il flag della numerazione esterna, segnalando così al sistema che la numerazione sarà gestita manualmente.    
-- **Cliente**: digitabile usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), tastando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i dati oppure usando la procedura automatica, se si sceglie di creare i documenti tramite l'[Evasione DDT da ordine cliente](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn).  Inserendo il cliente, vengono automaticamente popolati, se presenti in anagrafia, i seguenti campi, che spiegheremo nelle sezioni successive: divisa, nazione, lingua, zona, spedizione, listino ed eventuali sconti, pagamenti, sconti, spese, agenti, destinazione, vettori, extra data.               
-- **Data**: indica la data di creazione del DDT. Questa data è fondamentale per il calcolo delle scadenze e delle eventuali condizioni di pagamento. Viene proposta la data odierna, modificabile; nel caso in cui la numerazione preveda una progressione di data e numero, e io inserisca una data nel passato, Fluentis controllerà la disponibilità di numeri in quella data per garantire la progressione, e se non presente segnalerà l’utente che non ci sono numeri disponibili in quella data. 
+Za nastavak kreiranja otpremnice prodaje, korisnik mora unijeti obavezna polja:  
+- **Tip otpremnice**: unaprijed definiran u *Konfiguracija > Tablice > Prodaja > [Tipovi otpremnica](/docs/configurations/tables/sales/delivery-notes-type)*.
+- **Broj**: svakom dokumentu dodjeljuje se broj prema numeraciji koju je korisnik definirao i prema tipu dokumenta koji sadrži numeraciju. Numeracija pridružena tipu otpremnice obično predviđa automatski napredak temeljen na datumu i broju, s funkcijom nadoknade koja pokriva eventualne praznine u nizu (npr. uzrokovane brisanjem dokumenata). Ovo ponašanje kontroliraju dva specifična zastavica u tablici numeracije. Ako korisnik želi unijeti broj ručno, može onemogućiti zastavicu napredovanja datum-broj (koja osigurava povećanje numeracije u budućim datumima) i zastavicu za nadoknadu brojeva. Nadalje, mora omogućiti zastavicu vanjske numeracije, čime sustavu signalizira da će numeraciju upravljati ručno.      
+- **Kupac**: može se unijeti pomoću [pomoći za polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), upisom [direktno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  ili korištenjem automatske procedure, ako se odluči kreirati dokumente putem [Izdavanje otpremnice iz narudžbe kupca](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn).  Nakon unosa kupca, automatski se popunjavaju, ako postoje u kartici kupca, sljedeća polja koja ćemo objasniti u kasnijim sekcijama: valuta, država, jezik, zona, dostava, cjenik i eventualni popusti, plaćanja, troškovi, agenti, destinacija, prijevoznici, dodatni datum.                 
+- **Datum**: označava datum kreiranja otpremnice. Ovaj datum je ključan za izračun rokova i eventualnih uvjeta plaćanja. Predlaže se današnji datum, koji se može mijenjati; u slučaju da numeracija predviđa napredak po datumu i broju, ako unesem datum iz prošlosti, Fluentis će provjeriti dostupnost brojeva za taj datum kako bi osigurao napredak, a ako nisu dostupni, obavijestit će korisnika da za taj datum nema slobodnih brojeva.  
 
-La form contiene una serie di tab.
+Forma sadrži niz kartica.
 
-## **2. Testata**
+## **2. Kartica zaglavlje**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base alle procedure che sceglie, l'applicazione compila i campi *automaticamente*.
+Nakon što su odabrani obavezni podaci u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili putem [pomoći za polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili, ovisno o odabranoj proceduri, aplikacija popunjava polja *automatski*.  
 
 :::note Ricorda
 Se il documento viene *creato automaticamente*, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
 :::
 
-Inserendo il **Cliente**, vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica cliente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
-- **Divisa**: sezione contenente i dati [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: sezione contenente i dati [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
-- **Spedizione**: sezione contenente i dati [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) (in testata documento viene inserito il listino inserito in anagrafica cliente con il flag Default) con il tipo scaglione di sconto e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
+Nakon unosa **Kupca**, automatski se *predlažu* svi podaci specifični za karticu **Zaglavlje**, prema podacima prethodno unesenim u [kartici kupca](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), u poljima koja odgovaraju njegovoj adresi i u *sekcijama*:  
+- **Valuta**: sekcija koja sadrži podatke [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Država**: sekcija koja sadrži podatke [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
+- **Dostava**: sekcija koja sadrži podatke [Dostava](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) (in testata documento viene inserito il listino inserito in anagrafica cliente con il flag Default) con il tipo scaglione di sconto e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
 
 ####  Altri campi testata
 
