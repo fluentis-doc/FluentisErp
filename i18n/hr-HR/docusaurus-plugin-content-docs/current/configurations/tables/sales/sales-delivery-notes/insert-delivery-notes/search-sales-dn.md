@@ -1,12 +1,12 @@
 ---
-title: Ricerca DDT
+title: Pretraga otpremnica  
 sidebar_position: 1
 ---
 
-La form si apre tramite il percorso **Vendite > DDT > Ricerca DDT**.
+Formular se otvara putem **Prodaja > Otpremnice > Pretraga otpremnica**.
 
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Za objašnjenje funkcionalnosti zajedničkih za prodajne dokumente, pogledajte sekciju [Prodaja](/docs/sales/sales-intro).
 
-#### Pulsanti specifici   
-> **Storno**: con questa procedura è possibile stornare parzialmente o totalmente i DDT. Una volta cliccato il pulsante, si aprirà un pop up dove  selezionare le righe articolo da stornare con le relative quantità, inserire il Tipo documento da creare (sarà possibile selezionare solo tipologie di DDT con natura *Reso*) e inserire la Causale di storno del magazzino (generalmente un carico).      
-Il collegamento tra il documento di storno e quello di origine deve essere inserito manualmente nella *Testata* del nuovo documento.
+####  Specifične tipke        
+> **Storno**: ovom procedurom moguće je djelomično ili potpuno stornirati otpremnice. Nakon klika na tipku, otvorit će se pop-up gdje se odabiru stavke artikala za storno s pripadajućim količinama, unosi Tip dokumenta koji se kreira (bit će moguće odabrati samo tipove otpremnica s prirodom *Povrat*) te unosi Predložak storna skladišta (obično prijem).  
+Povezivanje između storno dokumenta i izvornog dokumenta mora se ručno unijeti u *Zaglavlje* novog dokumenta.
