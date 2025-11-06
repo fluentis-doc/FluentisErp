@@ -7,6 +7,25 @@ The form opens via the path **Purchases > Purchase Invoices > New Invoice** or t
 
 ## *How to create a purchase invoice*
 
+<details>
+
+<summary>Click to see the essential steps</summary>
+
+1. **Enter the mandatory data**: *Type* and *Supplier*. *Year*, *Number*, and *Insert Date* will be proposed automatically.  
+
+2. **Enter or modify the optional header data**: such as arrival dates, any *discounts*, the *destination*, etc.  
+
+3. **Enter the Items**: by double-clicking in the *Item Code* field, the item help opens, allowing you to search for and select an existing item. All other row data, such as *unit of measure*, *quantity*, and *price*, will be proposed automatically but can be modified. 
+Alternatively, you can select *Not-Codified Item* as the *Row Type* and manually enter the subsequent data.
+
+4. **Enter any discounts or additional information** in the *Discounts/Price Lists* and *Item Data* tabs.
+
+5. **Check the Summary section** and enter any final expenses or discounts.  
+
+6. Once the invoice has been checked, **activate the *Checked* flag in the header** to make the document available for subsequent procedures.
+
+</details>
+
 ## **1. Mandatory Data**
 
 - **Purchase invoice type** in *Tables > Purchases > [Purchase Invoice Type](/docs/configurations/tables/purchase/purchase-invoices-type)*;   
@@ -18,12 +37,12 @@ This field determines the numbering range of the document being entered and auto
 
 The form contains a series of tabs.
 
-## **Header**
+## **2. Header**
 
 After selecting the mandatory data in the upper section, the user can continue entering the following data manually or with the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), or, based on the procedures chosen, the application fills in the fields *automatically*.
 
 :::note Remember
-If the document is *created automatically*, for example through **Fulfillment from Supplier Order** or **Fulfillment from DDT**, these data are taken from the *originating document* from which the invoice was generated.
+If the document is *created automatically*, for example through **Fulfillment from Supplier Order** or **Fulfillment from DN**, these data are taken from the *originating document* from which the invoice was generated.
 :::
 
 ### 2.1 Supplier Data 
@@ -42,7 +61,7 @@ All these fields can be deleted or manually modified by the user.
 
     > **Controlled**: the active flag allows the invoicing of the invoice;  
     > **Accounted**: the flag is activated automatically when the invoice supports the [Accounting](/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting) procedure;  
-    > **Loaded**: the flag becomes active when the invoice supports the [Warehouse Loading](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) procedure. In the case of an invoice created from a transport document already loaded, the general parameter VE-PurchaseInvoices_VerifyLoadStatusDDT will block the Loaded flag even in the invoice.
+    > **Loaded**: the flag becomes active when the invoice supports the [Warehouse Loading](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) procedure. In the case of an invoice created from a transport document already loaded, the general parameter VE-PurchaseInvoices_VerifyLoadStatusDN will block the Loaded flag even in the invoice.
     > **Historicized**: activating this flag will make the document no longer visible for subsequent procedures.   
     > **Cancelled**: the active flag allows the invoice to be canceled.
 
@@ -54,14 +73,15 @@ The flags can be removed through restoration operation procedures.
 
 - **Load date**: this field is automatically filled with the current date at the time of loading or with the date used for warehouse registration, depending on the procedure used.   
 
-- **Supplier Annotations**: this field is retrieved from the supplier registry, while in the case of creation from a single order/DDT, the same data contained in the corresponding field of the originating document will be retrieved. It can also be entered manually.
+- **Supplier Annotations**: this field is retrieved from the supplier registry, while in the case of creation from a single order/DN, the same data contained in the corresponding field of the originating document will be retrieved. It can also be entered manually.
 
 - **Our/Your reference**: in these fields, an internal reference and a supplier reference for the document are usually indicated.    
-If present, it is retrieved from the supplier registry; otherwise, it can be entered manually. If the order is completed using the [Fulfillment from Order](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) procedure or through [Purchase DDT Valuation](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization), the fields *Supplier Annotations* and *Our/Your reference* will propose the information present in the corresponding fields of the originating document (this transfer is valid only in the case of invoices created by retrieving data from a single originating document).
+If present, it is retrieved from the supplier registry; otherwise, it can be entered manually. 
+If the order is completed using the [Fulfillment from Order](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) procedure or through [Purchase DN Valuation](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization), the fields *Supplier Annotations* and *Our/Your reference* will propose the information present in the corresponding fields of the originating document (this transfer is valid only in the case of invoices created by retrieving data from a single originating document).
 
 - **Initial note**: in the case of fulfillment, the information present in the order will be re-proposed. Alternatively, notes previously entered in the corresponding table located in the path *Configuration > Tools > Management of Coded Notes* can be selected; for this, the user must double-click on the field to open the Help and select the data; otherwise, they can be entered manually.
 
-- **Project**: using the field help, the document can be linked to a project. This association only works at the item header level. The project is automatically entered if the DDT is created through the fulfillment of an order that contains it.
+- **Project**: using the field help, the document can be linked to a project. This association only works at the item header level. The project is automatically entered if the DN is created through the fulfillment of an order that contains it.
 
 - **CUP/CIG**: if in the tax information of the [supplier registry](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) it is enabled for the management of CIG and CUP, it will be possible to fill in this data in the document. The fields are located under the *Supplier Annotations* section.
 
@@ -102,6 +122,7 @@ In this field, it is possible to enter the Carrier that will carry out the shipm
 Optionally, details of the *Number plate* and *Transportation Date/Time* can be added.
 
 ### 2.7 Extra Data 
+
 import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 <TabExtraData />
@@ -120,14 +141,14 @@ If in the *Purchase Invoice Parameters* the flag **Automatic load/unload** is ac
 
 ### *D.N. execution*
 
-This procedure allows the creation of a purchase invoice by fulfilling one or more purchase DDTs.
+This procedure allows the creation of a purchase invoice by fulfilling one or more purchase DNs.
 
-In the document header, by pressing the **D.N. execution** button, the form will open where it is possible to filter the DDTs addressed to the supplier of the document. It is then possible to insert items into the invoice, fully or partially fulfilling the DDTs.
+In the document header, by pressing the **D.N. execution** button, the form will open where it is possible to filter the DNs addressed to the supplier of the document. It is then possible to insert items into the invoice, fully or partially fulfilling the DNs.
 
 To use this procedure, certain initial conditions must be met:
 
-- the supplier of the DDTs must be the same as that of the invoice;
-- the DDT you want to fulfill must have the *Controled* flag active and must not already be *Valorized*.
+- the supplier of the DNs must be the same as that of the invoice;
+- the DN you want to fulfill must have the *Controled* flag active and must not already be *Valorized*.
 
 #### Procedure
 
@@ -137,21 +158,25 @@ The filters for supplier and currency will be automatically carried over based o
 
 In the filter area, you can choose whether to view the data in a *Grid*, a *Hierarchical structure* or both solutions.
 
-> The **Hierarchical structure** allows for a clearer division of the DDTs available for fulfillment and the items contained in each. It also allows for mass selection of all items contained within a DDT simply by activating the flag on the DDT line.   
+> The **Hierarchical structure** allows for a clearer division of the DNs available for fulfillment and the items contained in each. It also allows for mass selection of all items contained within a DN simply by activating the flag on the DN line.   
 > The **Grid** allows for greater customization of the form by adding fields from the *Object navigator*. In this case, mass selection must be done using the keyboard keys and clicking the *Select/Deselect* button in the ribbon bar.
 
-Once all desired filters are set, clicking the *Search* button will display all checked DDTs that have not yet been valued or are partially valued in the lower part.
+Once all desired filters are set, clicking the *Search* button will display all checked DNs that have not yet been valued or are partially valued in the lower part.
 
 In the result grid, the user then has the option to:
 
  - Select all or some of the proposed items: to do this, simply select the flag present at the start of the item line. The *Quantity to Fulfill* will automatically be set equal to the *Residual quantity*.
  - Select some items for a *partial quantity*. In this case, the *Quantity to Fulfill* must be modified accordingly.
 
-To complete the procedure, you will then need to click the *Transfer* button, which will retrieve all the data present in the selected DDTs and bring it back to the invoice.
+To complete the procedure, you will then need to click the *Transfer* button, which will retrieve all the data present in the selected DNs and bring it back to the invoice.
+
+:::tip Remember  
+Any notes entered in the header of the DN (such as *Our/Your reference*, *Initial notes*) will be carried over to the header of the Invoice only if the data is retrieved from a single DN.  
+:::
 
 #### Specific Buttons
 
-> **Search**: allows searching for available DDTs for transfer.  
+> **Search**: allows searching for available DNs for transfer.  
 > **Transfer**: allows transferring the selected items/orders.  
 > **Select all**: allows selecting all items from the list.  
 > **Deselect all**: allows deselecting all items from the list.  
@@ -214,10 +239,10 @@ In the case of multiple partial fulfillments for a given item line within the sa
 
 ### *Sdi - Document Closure*
 
-With the **Sdi - Document Closure** button, the module is opened for manually linking any orders and purchase DDTs to the invoices generated from the received XMLs. This procedure is also automatically initiated when this linking is performed from the [Incoming Purchase Documents](/docs/finance-area/sdi-documents/incoming-purchase-documents) screen.          
-The module is divided into two main sections: one on the left, dedicated to displaying DDTs and Orders, and one on the right, showing the items of the invoice.
+With the **Sdi - Document Closure** button, the module is opened for manually linking any orders and purchase DNs to the invoices generated from the received XMLs. This procedure is also automatically initiated when this linking is performed from the [Incoming Purchase Documents](/docs/finance-area/sdi-documents/incoming-purchase-documents) screen.          
+The module is divided into two main sections: one on the left, dedicated to displaying DNs and Orders, and one on the right, showing the items of the invoice.
 
-The grid of orders and DDTs contains the following columns:        
+The grid of orders and DNs contains the following columns:        
 - Invoice Linked Line Number 
 - Document Type 
 - Number 
@@ -245,27 +270,27 @@ The invoice grid contains the following columns:
 - Net Amount 
 - Net Unit Price      
 
-The lines already linked to DDT or Orders items will be highlighted to facilitate verification.
+The lines already linked to DN or Orders items will be highlighted to facilitate verification.
 
-In these grids, only the lines of DDTs or Orders that have not been executed or forced previously are displayed. 
+In these grids, only the lines of DNs or Orders that have not been executed or forced previously are displayed. 
 To execute the linking, it is necessary to enter the invoice line number in the *Linked Invoice Line Number* column and click the **Associate** button. 
 
 :::note
-The same invoice number cannot be simultaneously linked to a DDT and an Order. 
+The same invoice number cannot be simultaneously linked to a DN and an Order. 
 :::
 
-With the **Associate** button, the lines with the "Linked Invoice Line Number" will be executed in the corresponding DDTs or Orders.        
-The **Rollback Link** button allows for the cancellation of the linking, restoring the correct execution status for the DDTs or Orders.
+With the **Associate** button, the lines with the "Linked Invoice Line Number" will be executed in the corresponding DNs or Orders.        
+The **Rollback Link** button allows for the cancellation of the linking, restoring the correct execution status for the DNs or Orders.
 
 During the linking phase, the system performs several checks to ensure data consistency:       
-- Prices: Differences between the prices reported in the orders/DDTs and those of the automatically generated invoice.
+- Prices: Differences between the prices reported in the orders/DNs and those of the automatically generated invoice.
 - Discounts: Discrepancies between the total discount values.
-- Net Unit Price: Differences between the net unit price indicated in the invoice and that reported in DDTs/Orders.
-- Total Amount: Differences between the total amount of the invoice and the sum of the total amounts of the lines executed in DDTs/Orders.
+- Net Unit Price: Differences between the net unit price indicated in the invoice and that reported in DNs/Orders.
+- Total Amount: Differences between the total amount of the invoice and the sum of the total amounts of the lines executed in DNs/Orders.
 
 If one or more of these checks fail, the linking is not performed automatically, and the error is reported in the error grid, indicating the invoice line number and the description of the error.
 
-## **Items**
+## **3. Items**
 
 In this tab, all the articles with their related data are entered.
 
@@ -276,7 +301,7 @@ import InsertMode from './../../../import/sections/insert-mode.md'
 To insert a new article into the grid, simply position yourself on the row to fill in the various data or use the *New Item* button present in the ribbon bar.
 
 :::note Note 
-If the invoice was created through the fulfillment of a supplier order or a purchase DDT, the following data will be retrieved from the originating document.
+If the invoice was created through the fulfillment of a supplier order or a purchase DN, the following data will be retrieved from the originating document.
 :::
 
 ### 3.1 Mandatory Data (Dati obbligatori)
@@ -316,9 +341,9 @@ If there is no price list, the proposed data can be retrieved from the *last cos
 
 - **VAT**: is primarily the data entered in the VAT field of the *Contact Registry*. If this is not present, the value in the *Item registry* will be proposed, but the user has the option to enter a different value.
 
-### 3.2 Optional Article Data 
+### 3.2 Optional Item Data 
 
-- **Supplier Article Code/Description**: in this section, you can add the code and description that the supplier uses to identify the item; this data is proposed automatically if in the item registry, tab [Preferred Suppliers](/docs/erp-home/registers/items/create-new-item) an item supplier has been associated. 
+- **Supplier Item Code/Description**: in this section, you can add the code and description that the supplier uses to identify the item; this data is proposed automatically if in the item registry, tab [Preferred Suppliers](/docs/erp-home/registers/items/create-new-item) an item supplier has been associated. 
 
 - **Purchase turnover type**: the data entered in the tab [Generalities](/docs/erp-home/registers/items/create-new-item) of the item registry is proposed. If this is not present, no data is proposed, and at the time of accounting for the invoice, the value entered in the *Default Counterpart Cost/Revenue (Costo/Ricavo di contropartita predefinito)* field of the contact registry will be considered.
 
@@ -334,6 +359,7 @@ This button becomes active if the document is saved but not loaded. Clicking thi
 > **Update price lists**: the **Update Current Price List** button allows updating prices in the current price list for each selected item row.    
 The button **Create new price list with new validity**, on the other hand, will open a pop-up to enter the validity dates of the new price list, which will contain only the selected rows and will be addressed to the supplier entered in the invoice.   
 
+
 :::important Remember 
 When creating/updating a price list through this procedure, only discounts that have been manually entered into the invoice are reported in the price list. 
 :::
@@ -346,19 +372,25 @@ When creating/updating a price list through this procedure, only discounts that 
 
 - **Discounts**: all discounts associated with the item are proposed, each with its own calculation base and assignment.        
 
-### 3.4 Article Data
+:::important Remember   
+To manage discounts on taxable amounts, it is necessary to activate the general parameter GEN-GlobalSettings_CalculateDiscountOnAmount from the database for the company of interest.  
+If this parameter is not active, discounts on taxable amounts will be converted into cascading discounts.  
+:::
 
-In this tab, further information related to the article is reported/entered.
+### 3.4 Item Data
+
+In this tab, further information related to the item is reported/entered.
 
 - **ITEM**: shows the class, code, and description of the selected item in the grid.   
-- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the tab [Variants](/docs/erp-home/registers/items/create-new-item) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the article is selected.     
+- **Variant**: in this field, it is possible to select a variant of the item among those previously coded in the tab [Variants](/docs/erp-home/registers/items/create-new-item) of the item registry. If different prices and/or discounts have been entered for each variant in the price list, they will be updated when a different variant of the item is selected.     
 - **Notes**: these are the notes related to the item row, which can also be entered through the coded notes help. They will be reported in all documents generated from this.   
-- **Warehouse and Reason**: the warehouse and the reference reason that will automatically appear at the time of loading the related items into the warehouse are proposed. The data are retrieved from the [Purchase Invoice Types](/docs/configurations/tables/purchase/purchase-invoices-type) or from the supplier order or the DDT, if the invoice derives from the fulfillment of an order or from DDT valuation. They can be modified manually for each item row.   
+- **Warehouse and Template**: the warehouse and the reference reason that will automatically appear at the time of loading the related items into the warehouse are proposed. The data are retrieved from the [Purchase Invoice Types](/docs/configurations/tables/purchase/purchase-invoices-type) or from the supplier order or the DN, if the invoice derives from the fulfillment of an order or from DN valuation. They can be modified manually for each item row.   
 - **Location**: is proposed automatically if the reason used has been associated with a location in the table of [Warehouse Templates](/docs/configurations/tables/logistics/warehouse-templates) or if the item has been entered in the [Item Location Map](/docs/logistics/warehouse/location/item-location-map/). It can be entered or modified manually.  
 - **Unit of Measure/Alternative Quantity**: if an alternative unit of measure has been coded in the [item registry](/docs/erp-home/registers/items/create-new-item) with the *Default* flag, and the *Automatic proposal of alternative U.M.* flag has been activated in the Supplier Order Parameters, these values will be automatically proposed upon entering the article; otherwise, it is possible to select one among the alternative units of measure coded for the article.   
 - **Alternative Unit Price**: if activated, indicates that the price entered on the item row refers to the alternative unit of measure and not to the main one.    
 This flag, along with the *Alternative Measurement Unit* and *Alternative quantity* fields, is visible only if the flag *Management of double UM* has been activated in the [Purchase Invoice Parameters](/docs/configurations/parameters/purchase/purchase-invoices-parameters).
 - **Project**: represents the project to associate with the document. If a project has been entered in the header of the document, it will be reported on all item rows; alternatively, it can be selected through the appropriate project help.   
+- **From/To competence date**: allow defining the competence dates of the document. If in the *Company table* the *Controlling Management* is active, the creation of an invoice from DN or from work order returns will report the competence dates as those of the document loading. In the case of documents not registered in the warehouse or items manually entered in the invoice, the competence dates coincide instead with the invoice date.
 - **VAT recourse**: if set, the VAT of the gift is considered for the invoice total.
 - **Brand**: represents the brand of the item, retrieved from its registry or the price list of the item.
 - **Order reference**: in the case that the invoice is generated from an order, the reference to the order will automatically be reported in this field.
@@ -379,6 +411,7 @@ At the time of warehouse loading of the DN, the batches will be proposed automat
 import TabAnalytic from './../../../import/sections/tab-analytic.md'
 
 <TabAnalytic />
+
 
 ### 3.7 Extra Data
 
@@ -417,7 +450,7 @@ The section at the bottom right presents a summary of the costs contributing to 
 - **VAT**: Amount * VAT rate of the item; 
 - **Total**: Amount + Tax.
 
-## **Summaries**
+## **4. Summaries**
 
 In the various sections of this tab, the main information of the entire document and some specific buttons are presented.
 
@@ -439,7 +472,7 @@ These elements are applied to the totality of the document and are not distribut
 - **Percentage/Value**: indicates whether to calculate the expenses with a percentage or with a predefined monetary value. Selecting *value*, the expense amount must be entered under the corresponding heading.      
 - **Percent Completed**: numerical value of the expense percentage.  
 
-:::note Note (Nota)
+:::note Note 
 If the *Charge type* entered has the [split flag](/docs/configurations/tables/general-settings/expenses-types) active, during the invoice loading into the warehouse, the expense will be divided among all items based on the total amounts of each item row. The result of the expense allocation is visible in the [warehouse registration](/docs/logistics/warehouse/stock-records/record).    
 1. If the items have a price: the total expense will be proportionally divided among the net amounts of each item; the result will be added to the initial price of the item in the *Total amount* field of the registration. If for some rows the amount is 0, it will be considered as 1 to allow an expense allocation over all items.   
 2. If all items have a price equal to 0: the expense will be evenly distributed among all item rows, and based on this distribution, the *movement amount/management amount* will be calculated in the registration, taking into account the quantities of each item.   
@@ -458,8 +491,8 @@ Represents the summary of the document's due dates for each *type* and *payment 
 - **Expiry date**: Date of the calculated due date. Can be manually forced, in which case the subsequent *Manually edit* flag is automatically activated.
 - **Collection charges**: Field in which the calculated collection charges are reported.
 - **VAT**: to be applied to collection charges (can also be set manually)
-- **Accounting Reason**: it is possible to directly enter an accounting reason in the invoice that triggers an automatic accounting entry for collection/payment. NB pay attention to the template of the reason because it will use the accounts present even without a sub-account, which is why the following field is present.
-- **Client/Supplier Sub-account**: account used to collect/pay (cash or bank, for example) the due date, overwriting the account present in the accounting reason of payment (or collection).
+- **Accounting Reason**: it is possible to directly enter an accounting reason in the invoice that triggers an automatic accounting entry for collection/payment. NB pay attention to the template of the reason because it will use the accounts present even without a detail account, which is why the following field is present.
+- **Client/Supplier detail account**: account used to collect/pay (cash or bank, for example) the due date, overwriting the account present in the accounting reason of payment (or collection).
 - **Sign**: only due dates that have this flag are then managed in payment with the reason and account set.
 - **Payment Reference Models**: Model for creating the payment code. In some foreign locations, each due date in the invoice requires a code assigned by the issuer: this code is structured according to specific models (table MB_PaymentReferenceModels), allowing you to create the code with an algorithm.
 - **Payment Reference Model Codes**: This is the code (structured as per the previous model) to be reported in the entry and therefore later in the payments sent to the bank, so that it communicates to the beneficiary which due date has been paid (and thus automate the import from bank transactions with batch closure). This is compiled inside the entry and in the Sepa file.
