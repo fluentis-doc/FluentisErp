@@ -80,6 +80,14 @@ Within the **Component data** box, it is possible to specify:
 > **Component cost**: indicates the total cost of the component given by the sum of material and processing costs;             
 > **Notes**: allows for inserting a free note related to the component.      
 
+:::note NOTE
+In the calculation of the material cost, any *price per quantity* defined in the preferred supplier's price list are also considered.    
+The application of quantity prices is subject to the following conditions:   
+- the item must have a procurement type of *Purchase*;   
+- the *Material cost type* used must be *From net preferential supplier price list*;   
+- in the preferred supplier registry, List prices tab, it is necessary to indicate *Price per quantity* as the tier. 
+:::
+
 If the selected element in the tree is a semi-finished product, in the **Components** tab, it is possible to view the first-level components it is made up of.
 
 In the **Extra data - model** and **Extra data - component** tabs, it is possible to enter the respective extra data related to the parent article and the component; for an in-depth description of the extra data, reference is made to the article [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).     
