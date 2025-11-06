@@ -67,7 +67,7 @@ To insert new records, you need to click on the first empty row in the grid or p
 
 **Calculate Commissions**: if active, invoices belonging to this type will be counted in the calculation of agent commissions;
 
-**Disconnect D.N.**: if active, it is also possible to download deferred invoices from the warehouse (Normally, warehouse download occurs via D.N.);
+**Disconnect D.N.**: if active, and in the presence of an Immediate type invoice, it allows for the unloading of both the DN and the invoice that values it. This option is generally used when it is necessary to move the goods before the actual unloading of the document. In such cases, the DN indicates a unloading reason with a loading counterpart (to move the goods to another warehouse) and subsequently the invoice is used to definitively unload the goods from the second warehouse;
 
 **Not execute Picking**: if active, will not execute the picking if an invoice is generated;
 
