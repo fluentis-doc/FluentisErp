@@ -7,7 +7,7 @@ The management can be found at the path **Quality > Item Controls > Control Plan
 
 
 :::important Purpose
-This procedure allows for the bulk assignment of *Requests* to already existing *Control Plans* or to create new ones.   
+This procedure allows for assigning the Requests generated during the association of Control Plans to the Item Controls where such association was not possible. Once the Control is associated with the Plan, the tests of the Control Plan will be automatically proposed to the Item Control.
 To utilize the *Association*/*Insertion* function, it is necessary:   
 - from the **Requests** tab, choose the lines of *Item Controls*;  
 - from the **Control Plans** tab, choose the *Control Plans*;      
@@ -35,7 +35,7 @@ Pressing the button executes the management of the selected *Control Plans*.
 ### ![](/img/neutral/common/new.png) New Control Plan   
 Enabled if at least one row is selected from the results grid of the *Requests* tab.   
 Pressing the button creates a new *Control Plan* containing the *Items* of the selected *Item Controls*.   
-The selected **Item Control** rows are associated with the newly created *Control Plan*, and the rows are hidden.   
+To the selected *Requests* lines, the newly created *Control Plan* is associated, and the *Requests* lines are hidden.
 To view them again, it is necessary to act in the filter area indicating the *Already Associated* filter and press the **Search Requests** button.
 
 ### ![](/img/neutral/common/duplicate.png) Choose Control Plans   
@@ -69,10 +69,10 @@ Pressing the button associates the *Items* from the selected *Item Controls* in 
 Pressing the button automatically positions you in the **Requests** tab.   
 
 
-## Parameters   
+## Property   
 
 In this tab, it is possible to indicate the criteria for creating/associating *Items* to *Control Plans*.   
-The two possible criteria are - *Creation/association to a Control Plan*:   
+The two possible criteria are:
 > **Standard**: allows the creation/association of rows of *Item Controls* without references to *Customer/Supplier* accounts to *Control Plans* without references to *Customer/Supplier* accounts.   
 > **Customer/Supplier**: allows the creation/association of rows of *Item Controls* with references to *Customer/Supplier* accounts to *Control Plans* with the same *Customer/Supplier* account.   
 

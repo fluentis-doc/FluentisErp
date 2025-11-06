@@ -53,7 +53,7 @@ Button enabled only if a **Search for returns** has been previously performed.
 Proposes the *Quantity returned* as 0 (zero) in all rows displayed in the *Results Area*.   
 
 
-### ![](/img/neutral/common/save.png) Save    
+### ![](/img/neutral/common/save.png) Record    
 All rows present in the *Results Area* with *Quantity delivered* or *Quantity returned* greater than *zero* will be inserted into the *P.P.E. delivery/return history*, as of the *Delivered/Returned on date* present in the *Data proposed for deliveries/returns* area.   
 
 
@@ -71,6 +71,7 @@ The information contained in this expander is mandatory for registering the *del
 The expander consists of the following information:   
 > **Delivered by/Returned to**: this is the *person* who delivers the *P.P.E.* to the *Employees* / receives the *P.P.E.* from the *Employees*.   
 > **Delivered/Returned on date**: this is the delivery/return date of the *P.P.E..* to the *Employees*.   
+> **Signed**: indicates that the deliveries or returns that will be made will have the indication of signed or not for acceptance.  
 
 
 ### Result   
@@ -89,8 +90,7 @@ The list consists of the following information:
 > **Quantity**
 >> **Delivered**: this is the *Quantity delivered* of the *P.P.E.* to the *Employee*.   
 >> **Yield**: this is the *Quantity returned* of the *P.P.E.* from the *Employee*.   
->
-> **Signed**: indicates whether the *Employee* has signed the *Delivery/Return Form* for acceptance.   
+>   
 > **Use**: free notes on the subject; proposed from the list of *P.P.E.* required for the *Task* held by the *Employee*.   
 > **Prescriptions**: free notes on the subject; proposed from the list of *P.P.E.* required for the *Task* held by the *Employee*.   
 > **Notes**: free notes.   

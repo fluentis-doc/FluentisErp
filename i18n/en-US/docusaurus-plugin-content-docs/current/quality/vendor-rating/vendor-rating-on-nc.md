@@ -24,7 +24,13 @@ The form consists of a filter area and a result area. Once all desired filters a
 
 ### ![](/img/neutral/common/accountant-search.png) Periodic Qualification
 
-To enter new *Initial and Periodic Ratings*, it is necessary to click on the first empty row in the grid or press the **Periodic Qualification** button.   
+To perform the evaluation, it is necessary to press the **Periodic Qualification** button.  
+A request is displayed for:  
+> **Rating end date**: proposed as today's date, it is the date from which to evaluate each individual *Supplier*, going back in time, for the period assigned to them.  
+> **Rating type**: it is the type assigned to the evaluation of each individual *Supplier*.  
+> The *Rating type* indicated in the *Supplier Qualification Parameters* is proposed.  
+Both pieces of information are mandatory.
+
 
 
 ## Data Management
@@ -34,17 +40,18 @@ To enter new *Initial and Periodic Ratings*, it is necessary to click on the fir
 
 This is the list where the main information of *Periodic Ratings on Non-Compliance* is displayed.   
 The list consists of the following information:   
-> **From valuation date**: this is the start date of the rating period. The information is read-only.   
-> **To valuation date**: this is the end date of the rating period. The information is read-only.   
-> **Supplier**: this is the name of the evaluated *Supplier*. The information is read-only.   
-> **Bonus**: this is the starting value of the *Bonus* associated with the *Supplier*. The information is read-only.   
-> **Residual Bonus**: this is the final value of the *Bonus* after the assessment. The information is read-only.   
-> **Score %**: this is the percentage value between *Residual Bonus* and *Initial Bonus*. The information is read-only.   
-> **Valuation**: this is the *Valuation* given to the *Supplier* based on the *Score %* obtained. The information is read-only.   
+> **From valuation date**: this is the start date of the rating period.   
+> **To valuation date**: this is the end date of the rating period.   
+> **Supplier**: this is the name of the evaluated *Supplier*.   
+> **Bonus**: this is the starting value of the *Bonus* associated with the *Supplier*.   
+> **Residual Bonus**: this is the final value of the *Bonus* after the assessment.   
+> **Score %**: this is the percentage value between *Residual Bonus* and *Initial Bonus*.   
+> **Valuation**: this is the *Valuation* given to the *Supplier* based on the *Score %* obtained.   
 > The cell is colored with the *background* and *text* colors specified in the *vendor ratings* table.   
 > If the *valuation* attributed is associated with a *Vendor Rating* with *Automatic Suspension*, the evaluated *Supplier* will be *Suspended* from the *Rating Date*.
 > The restoration of the suspension must be done manually by the designated *Company Function*.   
 > **Notes**: free annotations.   
+All information is read-only except for the Notes. 
 
 
 ### Non-Compliance Values in the Period
@@ -56,6 +63,11 @@ The list consists of the following information:
 > **Count**: this is the number of counted *Severities*.   
 > **Severity score**: this is the *Score for supplier qualification index calculation* associated with the *Severity*.   
 > **Total computed score**: this is the sum of all *Score for supplier qualification index calculation (**IQF Score**)* multiplied together.   
+
+
+### Extra data
+
+It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Periodic ratings on non-compliance*. 
 
 
 :::tip Method used for calculation   
@@ -74,11 +86,6 @@ Method used for the calculation of: **Total computed score**, **Residual Bonus**
     - **Remaining Bonus** / **Bonus** * 100 = **464.1215 / 500 * 100 = 92.8243%**.   
 - The **Valuation** is attributed based on the *Score from* values indicated in the *Score Ranges for Rating* list available in the *Vendor Qualification Parameters*. The *Valuation* with *Score from* immediately below the **Score %** is considered.
 :::
-
-
-### Extra Data
-
-It is possible to enter general [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) for the *Periodic Ratings on Non-Compliance*.   
 
 
 For everything that is not detailed in this document regarding the common functionality of forms, please refer to the following link [Custom features, Buttons, and Fields](/docs/guide/common).

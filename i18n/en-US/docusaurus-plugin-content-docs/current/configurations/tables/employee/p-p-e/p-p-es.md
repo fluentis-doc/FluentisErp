@@ -5,7 +5,7 @@ sidebar_position: 1
 
 The table is located at **P.P.E.**.
 
-In this table, it is possible to code the *P.P.E.* (Personal Protective Equipment) items that are used to categorize the *P.P.E.*.   
+In this table, it is possible to code the P.P.E., acronym for Personal Protective Equipment, which operators need to possess to perform certain tasks.
 Some examples of *P.P.E.* usage can be found in the management sections:
 > **Tasks** - in the *P.P.E. to be delivered* tab;   
 > **P.P.E. deliveries/returns**;   

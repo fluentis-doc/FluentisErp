@@ -6,9 +6,7 @@ sidebar_position: 2
 The table is located on the path **Tables > Quality > Vendor Qualification > Supplier Critical Levels**.
 
 The data present in this table is used to assign an evaluation to suppliers.   
-Some examples of using the *Supplier Critical Levels* can be found in the management sections:
-> **Supplying Classes** - in the *Accounting Data > Quality Data* tab.   
-> **Contacts Register** - in the *Accounting Data > Quality Data* tab.   
+An example of using *Supplier Criticality Levels* can be found in the management of **Contact Registries** - in the *Accounting Data > Quality Data* tab.
 
 The table allows for the entry of new records or the search for existing ones to view, modify, or delete them.
 
