@@ -1,84 +1,96 @@
 ---
-title: Gestione resi e note di credito
+title: Upravljanje povratima i odobrenjima
 sidebar_position: 3
 ---
 
-Nel modulo Vendite di Fluentis, la gestione dei resi e delle note di credito consente di registrare e monitorare le restituzioni di beni o servizi da parte dei clienti, generando i documenti contabili e logistici necessari. Questo processo garantisce una corretta tracciabilità delle operazioni e un aggiornamento in tempo reale delle giacenze di magazzino e delle posizioni contabili dei clienti.
+U modulu Prodaja sustava Fluentis, upravljanje povratima i odobrenjima omogućuje evidentiranje i praćenje vraćene robe ili usluga od strane kupaca, uz automatsko generiranje potrebnih računovodstvenih i logističkih dokumenata.  
+Ovaj proces osigurava pravilno praćenje transakcija te trenutno ažuriranje zaliha u skladištu i stanja kupaca u glavnoj knjizi.
 
-Fluentis supporta diverse tipologie di reso:
+Fluentis podržava različite vrste povrata:
 
-- Reso con Nota di Credito: restituzione di beni con emissione di una nota di credito per stornare l'importo fatturato. La merce potrà essere resa attraverso un documento di trasporto oppure direttamente all'emissione della nota di credito, in base alle impostazioni del magazzino.
+- Povrat s odobrenjem (Nota odobrenja): vraćanje robe uz izdavanje odobrenja radi storniranja iznosa prethodno fakturiranog. Roba se može vratiti putem otpremnice (OTP) ili izravno prilikom izdavanja note odobrenja, ovisno o postavkama skladišta.
 
-- Reso senza Nota di Credito: restituzione di beni senza emissione di nota di credito, ad esempio per sostituzione merce. In questo caso verranno tipicamente utilizzati i documenti di trasporto per movimentare il magazzino.
+- Povrat bez odobrenja: vraćanje robe bez izdavanja note odobrenja, primjerice u slučaju zamjene artikala.  
+U ovom se slučaju tipično koriste dokumenti otpreme radi zaduženja skladišta.
 
-Il reso inoltre può essere: 
+Povrat može biti:  
 
-- Reso Parziale: restituzione di una parte della merce consegnata.
+- Djelomični povrat: vraća se samo dio isporučene robe.  
 
-- Reso Totale: restituzione dell'intera fornitura.
+- Potpuni povrat: vraća se cijela isporuka.
 
-##  Processo Operativo
+##  Operativni proces
 
-I documenti di **Reso** possono essere generati in due modi:
+Dokumenti **Povrata** mogu se generirati na dva načina:
 
-1) *attraverso la procedura di **Storno** presente nella barra degli strumenti della ricerca DDT o fatture.* Con questa procedura è possibile stornare parzialmente o totalmente i documenti selezionati nella griglia di ricerca. Una volta cliccato il pulsante *Storno*, si aprirà un pop up dove: selezionare le righe articolo da stornare con le relative quantità, inserire il Tipo documento da creare (**sarà possibile selezionare solo tipologie di documento con natura Reso**) e inserire la Causale di storno del magazzino. 
+1) *putem postupka **Storno** koji se nalazi na traci izbornika pretrage otpremnica ili računa.*  
+   Ovim postupkom moguće je djelomično ili potpuno stornirati dokumente odabrane u mreži rezultata.  
+   Nakon što se klikne tipka *Storno*, otvara se skočni prozor u kojem je potrebno:  
+   - odabrati stavke artikala koje se storniraju zajedno s pripadajućim količinama,  
+   - unijeti tip dokumenta koji se kreira (**bit će moguće odabrati samo vrste dokumenata s prirodom „Povrat”**),  
+   - unijeti **predložak storna skladišta**.
 
-2) *manualmente con la creazione di un nuovo DDT o fattura.* 
-In questo caso, è importante inserire un Tipo documento con Natura *Reso*, il cliente e gli articoli da stornare. Creando manualmente il reso, tuttavia, non ci sarà il link con il documento di origine, che dovrà essere inserito manualmente dall'utente.
+2) *ručno, kreiranjem nove otpremnice ili računa.*  
+   U tom slučaju važno je postaviti tip dokumenta s prirodom *Povrat*, unijeti kupca i artikle koje treba stornirati.  
+   Kod ručno kreiranog povrata neće postojati automatska poveznica s izvornim dokumentom — korisnik ju mora dodati ručno.
 
-Se è stato generato un DDT, si potrà generare da esso la fattura, con la procedura o con l'evasione manuale. Al salvataggio di una nota di credito inserita manualmente, verrà avvisato l'utente di dover inserire una quantità negativa nelle note di credito. Questa funzionalità permette di avere un fatturato aggiornato, che consideri in negativo le note di credito. 
 
-:::note Attenzione
-Nella tabella [Tipi DDT](/docs/configurations/tables/sales/delivery-notes-type), al Tipo DDT *Reso* deve essere associato un [Tipo fattura](/docs/configurations/tables/sales/invoices-type) *Nota di credito*.
+Ako je izrađena otpremnica, iz nje se može generirati račun, bilo automatskim postupkom ili ručno.  
+Prilikom spremanja ručno unesene note odobrenja, korisnik će biti upozoren da je potrebno unijeti negativnu količinu.  
+Ova funkcionalnost osigurava ažuran prikaz prometa, uključujući negativne vrijednosti nota odobrenja.
+
+:::note Pažnja  
+U tablici [Vrste otpremnica](/docs/configurations/tables/sales/delivery-notes-type), Tipu otpremnice *Povrat* mora biti pridružen [Tip računa](/docs/configurations/tables/sales/invoices-type) *Nota odobrenja*.  
 :::
 
-Per la valorizzazione dei DDT di reso in nota di credito, ci possono essere diverse casistiche a seconda dei segni di quantità e prezzo, nel DDT di origine:
-1)	DDT Reso       Qta   10, Prezzo  10 -> riga fattura (normale o nota di credito NC) Qta  -10, Prezzo  10
-2)	DDT Reso       Qta  -10, Prezzo  10 -> riga fattura normale            Qta  10, Prezzo  10 
-3)	DDT Reso       Qta  -10, Prezzo  10 -> riga fattura NC                       Qta -10, Prezzo  10 
-4)	DDT Reso       Qta   10, Prezzo -10 -> riga fattura normale             Qta -10, Prezzo -10 
-5)	DDT Reso       Qta   10, Prezzo -10 -> riga fattura NC                       Qta -10, Prezzo  10 
-6)	DDT Reso       Qta  -10, Prezzo -10 -> riga fattura normale             Qta  10, Prezzo -10 
-7)	DDT Reso       Qta  -10, Prezzo -10 -> riga fattura NC                       Qta -10, Prezzo  10 
-8)	DDT Normale Qta  10, Prezzo  10 -> riga fattura NC                        Qta -10, Prezzo  10
-9)	DDT Normale Qta  -10,Prezzo  10 -> riga fattura NC                        Qta -10, Prezzo  10
-10)	DDT Normale Qta   10,Prezzo -10 -> riga fattura NC                        Qta -10, Prezzo  10 
-11)	DDT Normale Qta  -10,Prezzo -10 -> riga fattura NC                        Qta -10, Prezzo  10 
+Kod pretvaranja otpremnica povrata u note odobrenja mogu se pojaviti različiti slučajevi, ovisno o znakovima količine i cijene u izvornom dokumentu:
+1)	Otpremnica Povrat      Kol.   10, Cijena  10 ->redak računa (običan ili kreditna nota) Kol.  -10, Cijena  10
+2)	Otpremnica Povrat      Kol.  -10, Cijena  10 -> redak računa običan            Kol.  10, Cijena  10 
+3)	Otpremnica Povrat      Kol.  -10, Cijena  10 -> redak računa KN                       Kol. -10, Cijena  10 
+4)	Otpremnica Povrat      Kol.   10, Cijena -10 -> redak računa običan             Kol. -10, Cijena -10 
+5)	Otpremnica Povrat       Kol.   10, Cijena -10 -> redak računa KN                       Kol. -10, Cijena  10 
+6)	Otpremnica Povrat      Kol.  -10, Cijena -10 -> redak računa običan             Kol.  10, Cijena -10 
+7)	Otpremnica Povrat      Kol.  -10, Cijena -10 -> redak računa KN                       Kol. -10, Cijena  10 
+8)	Otpremnica Obična Kol.  10, Cijena  10 -> redak računa KN                        Kol. -10, Cijena  10
+9)	Otpremnica Obična Kol.  -10,Cijena  10 -> redak računa KN                        Kol. -10, Cijena  10
+10)	Otpremnica Obična Kol.   10,Cijena -10 -> redak računa KN                        Kol. -10, Cijena  10 
+11)	Otpremnica Obična Kol.  -10,Cijena -10 -> redak računa KN                        Kol. -10, Cijena  10 
 
-## Configurazioni e Parametri
+## Konfiguracije i parametri
 
-Per una corretta gestione dei resi e delle note di credito, assicurarsi che siano configurati i seguenti elementi:
+Za ispravnu obradu povrata i nota odobrenja potrebno je provjeriti sljedeće postavke:  
 
-- **Tipi Documento**: definire i tipi documento per resi e note di credito.
+- **Vrste dokumenata** – definirati vrste dokumenata za povrate i note odobrenja.    
 
-- **Magazzino e Causale di Magazzino**: ogni tipologia di documento che movimenta il magazzino deve avere associato il [Magazzino](/docs/configurations/tables/logistics/warehouses) e la relativa [causale](/docs/configurations/tables/logistics/warehouse-templates); generalmente, nei resi e nelle note di credito la movimentazione sarà un carico, in quanto la merce viene riconsegnata dal cliente. 
+- **Skladište i predložak skladišta** – svaki dokument koji utječe na stanje skladišta mora imati povezano  
+[Skladište](/docs/configurations/tables/logistics/warehouses) i odgovarajući [predložak](/docs/configurations/tables/logistics/warehouse-templates). U povratima i notama odobrenja kretanje robe obično predstavlja **primitak**, jer se roba vraća od kupca.. 
 
-## Gestione segni misti - NOTA PER PARTNER E PROJECT MANAGER
+## Upravljanje mješovitim znakovima  - NAPOMENA ZA PARTNERE I VODITELJE PROJEKATA 
 
-La possibilità di contabilizzare il documento con segni misti va abilitata appositamente mediante uno script SQL.
+Mogućnost knjiženja dokumenata s mješovitim znakovima mora se posebno omogućiti putem SQL skripte.  
 
-:::note Nota tecnica per attivazione
-Di seguito lo script da eseguire:
+:::note Tehnička napomena za aktivaciju   
+Sljedeća SQL naredba omogućuje pronalazak odgovarajućeg parametra:  
 
-ATTENZIONE: Il parametro di seguito che controlla la modalità di gestione dei segni va ora posto a +1 differentemente dal passato a fronte del cambio di politica dei gestione segni di cui sopra.
+PAŽNJA: Parametar u nastavku koji kontrolira način upravljanja znakovima sada treba biti postavljen na +1, za razliku od ranijih postavki, zbog promjene politike upravljanja znakovima.
 
     select * from [Fluentis].[SH_LocalizationParameters] where [SH_LocalizationParameters].[SHLP_Code] like 'VE-SalesInvoice_CreditNotesPostingSigns'
 
-individuare l'Id del parametro in questione
+Potrebno je pronaći ID parametra u pitanju.
 
-Nella ricerca 
+Zatim u pretraživanju:
 
-    select * from [Fluentis].[SH_CompanyParameters] where [SH_CompanyParameters].[SHCP_Parameter_SHLP_Id] = ..... individuare la riga per la società in uso attraverso il campo SHCP_Company_SHC_Id
+    select * from [Fluentis].[SH_CompanyParameters] where [SH_CompanyParameters].[SHCP_Parameter_SHLP_Id] = ..... pronaći red za trenutnu tvrtku koristeći polje SHCP_Company_SHC_Id
 
-ed eseguire un update al campo SHCP_Value
+i izvršiti update polja SHCP_Value
 
-VALORI DEL PARAMETRO:
+VRIJEDNOSTI PARAMETRA:
 
-0 = così com'è, non permette i segni misti (le NC sono forzate sempre negative)
+0 = trenutna postavka, ne dopušta miješane znakove (NC su uvijek negativne)
 
--1 = NC sempre invertite (il + diventa meno e il - diventa +)
+-1 = NC su uvijek invertirane (+ postaje -, a - postaje +)
 
-+1 = Tipologia attualmente richiesta per il segno misto, sia FT che NC vengono contabilizzate con i segni esistenti , il + resta + e il - resta -.
++1 = Trenutno tražena postavka za miješane znakove; i FT i NC se knjiže s postojećim znakovima, + ostaje +, a - ostaje -
 :::
 
 

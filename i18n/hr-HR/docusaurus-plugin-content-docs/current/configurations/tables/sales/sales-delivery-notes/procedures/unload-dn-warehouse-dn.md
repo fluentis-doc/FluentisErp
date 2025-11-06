@@ -1,54 +1,54 @@
 ---
-title: Scarico DDT da magazzino
+title: Skidanje otpremnica sa skladišta
 sidebar_position: 1
 ---
 
-La procedura massiva si apre tramite il percorso **Vendite > DDT > Procedure > Scarico DDT da magazzino**. 
+Masovna procedura pokreće se putem izbornika **Prodaja > Otpremnice > Procedure > Skidanje otpremnica sa skladišta**.  
 
-Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nel DDT.    
-Ricordiamo che la procedura può essere eseguita anche all'interno della [Testata](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del singolo DDT con il pulsante [Scarico automatico](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). 
+Ova procedura omogućuje izvođenje ili poništavanje automatskih operacija skidanja sa skladišta za artikle koji se nalaze u otpremnici.       
+Podsjećamo da se ista operacija može izvršiti i unutar [Zaglavlja](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) pojedine otpremnice pomoću tipke [Automatsko skidanje](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn). 
 
-:::tip Ricorda
-Se il documento contiene **articoli fittizi**, la procedura terrà conto della *Tipologia di approvvigionamento* definita nei Parametri MRP dell’articolo:
-- Gli articoli di tipo *Acquisto* non verranno inseriti nella registrazione di magazzino.   
-- Gli articoli di tipo *Produzione* o *Conto Lavoro* verranno registrati in magazzino con il primo livello della distinta base.
+:::tip Zapamti
+Ako dokument sadrži **fiktivne artikle**, procedura će uzeti u obzir *Vrstu nabave* definiranu u MRP parametrima artikla:  
+- Artikli tipa *Nabava* neće biti uključeni u skladišnu evidenciju.     
+- Artikli tipa *Proizvodnja* ili *Kooperacija* bit će evidentirani u skladištu prema prvoj razini sastavnice (BOM-a).  
 :::
 
-La procedura massiva è composta da tre tab che analizziamo di seguito. 
+Masovna procedura sastoji se od tri kartice koje su opisane u nastavku.
 
-### Filtro
+### Filter
 
-In questo tab, l'utente ha la possibilità di cercare e trasferire i DDT che hanno impostato al loro interno il flag *Stampata* e quindi sono pronti per lo scarico.     
+Na ovoj kartici korisnik može pretražiti i prenijeti otpremnice koje imaju označenu opciju *Ispisano* te su time spremne za skidanje sa skladišta.      
 
-*Pulsanti specifici*:
+*Posebne tipke*:
 
-> **Ricerca**: permette di cercare i DDT da scaricare.  
-> **Scarico**: permette di eseguire lo scarico dei DDT selezionati dal magazzino, in base agli algoritmi di scarico e ai parametri inseriti nel successivo tab *Parametri*.
+> **Pretraga** – omogućuje pretraživanje otpremnica spremnih za skidanje.    
+> **Skidanje** – omogućuje izvođenje skidanja odabranih otpremnica sa skladišta, prema algoritmima i parametrima definiranima u sljedećoj kartici *Parametri*.
 
 
 ### Parametri
 
-In questa maschera, l'utente ha la possibilità di specificare, per le righe articolo, il modo di trattare le eccezioni.
+U ovom dijelu korisnik može odrediti način postupanja s iznimkama na stavkama artikala.  
 
-In questo caso se le righe del DDT non hanno specificato il magazzino e la causale per lo scarico, le opzioni disponibili sono:
+Ako stavke otpremnice nemaju definirano skladište i uzrok (tj. tip) za skidanje, dostupne su sljedeće opcije:
 
-- **Non effettuare lo scarico del DDT per intero**: non permette lo scarico parziale del DDT.     
-- **Tralasciare l'articolo senza magazzino e causale**: permette lo scarico parziale del documento.       
-- **Accettare come magazzino e causale i seguenti dati**: per tutti gli articoli trovati senza magazzino e causale nei DDT selezionati nella parte dei filtri, imposta i dati inseriti subito dopo, nei campi: *Magazzino* e *Causale* (assicura lo scarico completo del documento).
+- **Ne skidaj cijelu otpremnicu** – ne dopušta djelomično skidanje otpremnice.    
+- **Preskoči artikl bez skladišta i uzroka** – omogućuje djelomično skidanje dokumenta.         
+- **Koristi sljedeće podatke kao skladište i uzrok** – za sve artikle bez definirane lokacije i uzroka u odabranim otpremnicama, program će primijeniti vrijednosti navedene u poljima *Skladište* i *Uzrok* (osigurava potpuno skidanje dokumenta).  
 
-*Pulsante specifico*
+*Posebna tipka*
 
-> **Salva parametri**: permette di salvare i parametri impostati per la registrazione.
+> **Spremi parametre** – omogućuje spremanje zadanih parametara za evidenciju.  
 
-Dopo aver selezionato i DDT (dal tab *Filtro*) e impostato i parametri, i DDT possono essere scaricati con l'aiuto del pulsante *Scarico*.
+Nakon što se odaberu otpremnice (u kartici *Filtar*) i postave parametri, skidanje se pokreće pomoću tipke *Skidanje*.
 
-### Riepilogativo
+### Sažetak
 
-In questo tab, l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di scarico eseguite, che soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.
+Na ovoj kartici korisnik može pretraživati, pregledavati i poništavati izvršene operacije skidanja, pod uvjetom da zadovoljavaju specifične uvjete za brisanje skladišnih evidencija.  
 
-I dati nelle griglie in basso, **DDT** e **Registrazione**, corrispondono alla registrazione di scarico selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare il DDT e la sua registrazione di magazzino (doppio click sulla riga).
+Podaci u donjim tablicama, **Otpremnica** i **Evidencija**, odnose se na zapis skidanja odabran u gornjoj tablici (nakon filtriranja). U tim se tablicama također može pregledati otpremnica i njezina skladišna evidencija (dvostrukim klikom na redak).
 
-*Pulsanti specifici*:
-> **Ricerca**: per cercare i DDT scaricate. Il risultato di questa procedura viene visualizzata nella griglia di risultato.  
-> **Cancella**: per cancellare per intero le operazioni di scarico selezionate nella griglia di risultato, se soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.  
-> **Ripristina DDT**: per cancellare le operazioni di scarico selezionate nella griglia di risultato, per la DDT in uso nella griglia dei dettagli.
+*Posebne tipke*:
+> **Pretraga** – pretražuje otpremnice koje su skinute; rezultati se prikazuju u tablici rezultata.    
+> **Brisanje** – briše u potpunosti odabrane operacije skidanja, ako zadovoljavaju uvjete za brisanje skladišnih evidencija.     
+> **Povrati otpremnicu** – poništava odabrane operacije skidanja za otpremnicu prikazanu u tablici s detaljima.
