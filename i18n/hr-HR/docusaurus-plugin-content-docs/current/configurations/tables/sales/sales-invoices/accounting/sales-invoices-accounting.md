@@ -1,47 +1,48 @@
 ---
-title: Contabilizzazione fatture di vendita
+title: Knjiženje izlaznih računa
 sidebar_position: 1
 ---
 
-La procedura si apre tramite il percorso **Vendite > Fatture di vendita > Contabilizzazione > Contabilizzazione fatture di vendita**. 
+Postupak se otvara putem izbornika **Prodaja > Izlazni računi > Knjiženje > Knjiženje izlaznih računa**. 
 
-Una fattura, per essere contabilizzata, deve soddisfare una serie di condizioni: nella sua testata deve aver impostato il flag *Stampata*, non di tipo *pro-forma* e il tipo fattura deve contenere la causale generale per la contabilizzazione.
+Račun, da bi bio knjižen, mora ispunjavati niz uvjeta: u svom zaglavlju mora imati postavljen flag *Ispisano*, ne smije biti tipa *pro-forma* i tip računa mora sadržavati opći razlog za knjiženje.
 
-### Contabilizzazione
+### Knjiženje
 
-La form presenta nella parte superiore i filtri di ricerca per individuare e visualizzare, nella griglia, la lista delle fatture da contabilizzare presenti nel sistema.
+U gornjem dijelu forme nalaze se filteri pretrage za pronalazak i prikaz računa koji su spremni za knjiženje. 
 
-Alla base della form sono presenti alcuni parametri di gestione della contabilizzazione:
+U donjem dijelu nalaze se parametri upravljanja knjiženjem:  
 
-**Data registrazione uguale alla data documento**: questo flag impone la contabilizzazione di ogni singola fattura allo loro data di emissione.
+**Datum knjiženja jednak datumu dokumenta**: ova oznaka nalaže sustavu da svaki račun knjiži s datumom izdavanja.
 
-Se il flag viene disabilitato, si attiva il campo successivo, **Data registrazione**, all'interno del quale è possibile impostare una data fissa di registrazione;
+Ako se oznaka deaktivira, aktivira se polje **Datum knjiženja**, u kojem se može unijeti fiksni datum knjiženja;
 
-**Usa il cambio della tabella cambi**: con questo flag si impone al sistema di verificare la tabella cambi per utilizzare quello presente alla data registrazione/fattura (o l'ultimo inserito in precedenza).
+**Koristi tečaj iz tablice tečajeva**: ako je uključeno, sustav koristi tečaj iz tablice koji vrijedi na datum knjiženja (ili posljednji prethodni).
 
-Se il flag non è impostato sarà invece utilizzato il *cambio presente in testata della fattura*;
+Ako oznaka nije aktivna, koristi se *tečaj iz zaglavlja računa.*;
 
-**Aggiorna cambio in documento**: il campo è attivo *solo* se il precedente flag è impostato. Il significato è quello di andare ad aggiornare anche il cambio presente in testata della fattura, sovrascrivendo quello presente;
+**Ažuriraj tečaj u dokumentu**: dostupno samo ako je prethodna oznaka aktivna; omogućuje ažuriranje tečaja i u samom računu, zamjenjujući postojeći;  
 
-**Comp. IVA = data documento**: il flag impone che la competenza iva dei movimenti sia uguale alla data fattura. Nel caso in cui si voglia sfruttare la possibilità di fatturare fino al 15 del mese successivo alla data spedizione (fatturazione differita), il flag va tolto per far si che la competenza iva sia ripresa dalla data inizio trasposto nel documento d'origine, così come previsto dalla normativa IVA;
+**Razdoblje PDV-a = datum dokumenta**: ako je oznaka uključena, razdoblje PDV-a se izjednačava s datumom računa. Ako se želi koristiti mogućnost odgođenog fakturiranja (do 15. u mjesecu nakon datuma isporuke), oznaka se mora isključiti, kako bi se datum PDV-a preuzeo iz izvornog dokumenta – u skladu s propisima o PDV-u.  
 
-**Utilizzare la filiale aziendale per assegnare la divisione**: flag connesso al campo *Filiale aziendale di riferimento* presente nelle anagrafiche clienti e fornitori, dove è possibile associare il cliente/fornitore ad una filiale e, tramite questa, ad una *divisione* aziendale differente da quella in uso. Il presente flag fa scattare la verifica se nel cliente c’è una filiale di riferimento e, da questo link, verifica se c’è una divisione associata alla filiale in questione. In caso positivo registra la fattura attribuendola a quella divisione (anche se la fattura è attribuita alla divisione X la registrazione contabile sarà nella Y). Questa opzione agevola la redazione di bilanci per divisione in situazione dove la fatturazione avviene separatamente ma i risultati dal punto di vista di bilancio si vogliono aggregare presso una divisione principale.
+**Koristiti poslovnicu poduzeća za dodjelu odjela**: omogućuje da se, ako je u šifrarniku kupca navedena poslovnica i pridruženi odjel, knjiženje obavi na taj odjel.
+Time se olakšava vođenje bilanci po odjelima u situacijama gdje se fakturiranje odvija odvojeno, ali se financijski rezultati konsolidiraju na glavnu poslovnu jedinicu.  
 
-#### Pulsanti specifici  
-> **Ricerca fattura**: per cercare le fatture; vengono proposte tutte le fatture stampate e non contabilizzate.  
-> **Contabilizzazione fatture**: esegue la contabilizzazione delle fatture selezionate, secondo le impostazioni definite.  
+#### Posebne tipke    
+> **Pretraži račune**: prikazuje sve ispisane, a još neproknjižene račune.  
+> **Proknjiži račune**: pokreće knjiženje odabranih računa prema postavljenim parametrima.   
 
 ### Parametri
 
-In questa form si impostano alcuni elementi generali della contabilizzazione fatture.
+Ovdje se definiraju opće postavke knjiženja računa.
 
-**Contabilizzazione omaggi**: con questo flag si attiva la gestione della contabilizzazione omaggi, attivando i campi successivi collegati.  
+**Knjiženje poklona**: aktiviranjem ove oznake omogućuje se knjiženje poklon-artikala, otvarajući dodatna povezana polja:
 
-1. Se la fattura che si sta contabilizzando presenta un omaggio e il parametro di gestione non è stato impostato, il sistema chiederà conferma all'utente con un avviso della mancata impostazione. In questa situazione sarà registrata la fattura normalmente senza alcuna gestione della riga omaggio, che andrà quindi gestita manualmente in contabilità.
+1. Ako račun sadrži poklon, a upravljanje poklonima nije uključeno, sustav će upozoriti korisnika i račun će biti proknjižen bez posebnog knjiženja za poklon-redak (potrebna ručna intervencija).
 
-2. Nel caso si sia attivata la gestione omaggi ma senza inserire alcun sottoconto nei campi successivi, il sistema andrà ad aggiungere in coda ai normali movimenti di contabilizzazione le necessarie righe di storno del ricavo, utilizzando lo stesso sottoconto impostato per l'articolo vendite.
+2. Ako je opcija aktivna, ali nisu navedeni konti, sustav će automatski dodati redak storniranja prihoda koristeći isti konto prodaje kao i za artikl.
 
-3. Se invece è stato impostato il flag **Sostituisci il conto dell'articolo** si attiverà il campo dove impostare il sottoconto di storno acconti, che sarà utilizzato al posto del sottoconto dell'articolo in queste righe aggiuntive.
+3. Ako je uključena oznaka **Zamijeni konto artikla**, koristi se poseban konto za storniranje unaprijed definiran u dodatnom polju.
 
 **Codice IVA per omaggi in registro iva**: compilando questo campo (generalmente con un codice iva corrispondente alla casistica del "fuori campo iva" o "escluso..." verrà eseguita automaticamente una riga di storno del valore dell'omaggio sul registro iva, laddove non venga esercitata la rivalsa iva nei confronti del cliente)
 
