@@ -24,6 +24,16 @@ In this tab, the user has the option to search for and transfer invoices that ha
 > **Search**: allows searching for invoices to be shipped.  
 > **Unload**: allows executing the shipping of the selected invoices from the warehouse, based on the shipping algorithms and the parameters entered in the subsequent *Parameters tab*. 
 
+:::note NOTE
+Only immediate invoices that do not derive from DN can be moved in the warehouse.
+
+When the invoice is generated from DN, it is necessary to proceed with the unloading of the transport documents. Once all the DN valued in the invoice are unloaded, activating the *Printed* flag in the invoice will also automatically activate the *Unloaded* flag.
+
+Exception: if the *Disconnect DN* flag is active in the invoice type, it will also be possible to move the sales invoice in the warehouse.
+
+Non-immediate invoices, on the other hand, can never be moved in the warehouse: consequently, the Unloaded flag will not be activated even after unloading all the DN contained in them.
+:::
+
 ### Parameters 
 
 In this screen, the user has the opportunity to specify, for item lines, how to handle exceptions.
