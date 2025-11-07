@@ -119,6 +119,7 @@ If you start directly with inserting the item, its class, code, and row type (*C
 - **Quantity**: represents the quantity of the main U.M. and is set to 1 by default; it can be modified manually or may be retrieved from the document considered for fulfillment.
 
 - **Price**: the price is proposed from the price list inserted in the contact registry; the reference price list for the item itself is displayed in the *Item data* tab; the same document could contain items with prices taken from different price lists if multiple cascading price lists are associated with the subject in the registry. Through double-clicking in the Price Lists field, the user can select a price list different from the default one, from which the price of the inserted item will be taken.
+In the absence of the price list, the proposed data will be taken from the last cost of the item registry.
 
 - **VAT**: the data inserted in the VAT field of the contact registry takes priority. If this is not present, the value in the item registry is proposed, but the user has the option to insert another data.
 
