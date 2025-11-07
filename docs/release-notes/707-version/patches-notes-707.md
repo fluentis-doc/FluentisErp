@@ -3,6 +3,25 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0054 - 07/11/2025
+
+> -	Arm - Added Purchase Recycle Reports (Stampe Conai) in Standard Menu(TT04523/25) 
+> -	CO - elaborazione del consuntivo di progetto, si ricercano i dati delle dimensioni di tipo progetto o anche progetto abilitato (#TT04783/25) 
+> -	Disponibilità: migliora tempi di esecuzione ( #TT04568/25) 
+> -	FI - la contabilizzazione compensi ora assegna la data competenza iva in base alle impostazioni della causale (data reg o data doc.). (#TT04422/25) 
+> -	FI - Risolvere anomalia su contabilizzazione fattura di acquisto con valori negativi per l'importo in valuta conto iva ( TT04827/25) 
+> -	FI - revisione contabilizzazione dei dati iva in caso di importi iva portati a zero nel riepilogo della fattura di acquisto. (#TT01757/25) 
+> -	MS - Corretto bug che nel caso in cui fosse lanciata la pianificazione generale con esecuzione mrp e con la form MRP aperta, per visualizzare i dati dell’elaborazione della form MRP era necessario chiuderla e riaprirla. (#TT00943/25) 
+> -	MS - Corretto bug in Capacità centri di lavoro inerente ad una errata visualizzazione dei tempi di attesa coda presenti nelle fasi dei cicli di lavoro. (#TT04629/25) 
+> -	MS - Corretto bug in fase di rilascio degli ordini pianificati di produzione che generava ordini di conto lavoro con una quantità errata nel caso in cui in distinta fosse usata una UM alternativa. (#TT04708/25) 
+> -	MS - In capacità centri di lavoro nel caso in cui avvenga uno spostamento di fase in una giornata in cui il centro di lavoro è già completamente occupato, viene visualizzato un messaggio di errore. Altrimenti, viene saturata la giornata del centro di lavoro senza sovra-allocarla e il residuo del tempo (della fase spostata) viene ripartito nelle successive giornate lavorative per una capacità pari alla massima di quel centro di lavoro, indipendentemente dal carico di lavoro già presente. (#TT03527/25) 
+> -	SCS - Nell’importazione Web API del Ricevimento merci, viene considerata la quantità inserita (#TT04163/25) 
+> -	SH - Chiusura tabella Aree. Modifications in Area object form can have an impact on profiles ( TT03006/24) 
+> -	SH - webapi di import FSLedgerAccount, revisione gestione destinatari/destinazioni, valorizzazione campo di gestione fatture elettroniche (#TT04641/25) 
+> -	Sulla piattaforma Web non venivano caricati gli script ViewModel custom (#TT04847/25) 
+> -	WM - Migliorato ed ottimizzato il report Esplosione distinta base. Selezionando il flag Riepilogata è possibile anche visualizzare gli articoli raggruppati per codice a parità di livello (flag multi livello) oppure per tutta la distinta base (flag mono livello). (#TT04557/25) 
+> -	WM - Risolto problema su registrazione di magazzino - non proponeva il costo quando si selezionava piu lotti da help lotti (#TT04898/25) 
+
 ### Patch 707.1-0053 - 30/10/2025
 
 > -	CO - Scritture di Rettifica: abilitata la possibilità di esportare i dati della griglia. Modifications in Scritture di Rettifica form can have an impact on profiles (Rif. Ticket TT04136/25). 

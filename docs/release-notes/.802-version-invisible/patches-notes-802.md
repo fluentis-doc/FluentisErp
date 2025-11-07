@@ -3,7 +3,7 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
-### Patch 802.0010 - 06/11/2025
+### Patch 802.0011 - 06/11/2025
 
 > -	BI - Call scripts from Cruscotti 
 > -	CO - elaborazione del consuntivo di progetto, si ricercano i dati delle dimensioni di tipo progetto o anche progetto abilitato (#TT04783/25) 
@@ -33,6 +33,42 @@ sidebar_position: 1
 > -	WM - Risolto problema su registrazione di magazzino - non proponeva il costo quando si selezionava piu lotti da help lotti (#TT04898/25) 
 > -	WMS - Gestione Spunta - Errore non gestito in chiusura spunta. (#TT04750/25) 
 > -	WMS-Fix Maui CheckRowManagement Filter expand problem. Modifications in CheckRowManagement filter form can have an impact on profiles. (#TT01258/21) 
+
+### Patch 802.0010 - 28/10/2025
+
+> -	ARM - Fix in compact grid templates for properties with stereotype 
+> -	CO - Revisione Elaborazione consuntivo di progetto nell'elaborazione periodi del controlling (#TT04783/25) 
+> -	CO - revisione visualizzazione tab scostamenti in comparazione riclassificazioni (#TT04759/25) 
+> -	Framework - Disable compact grids in help 
+> -	MS - Corretto bug nella procedura MRP che in alcuni casi visualizzava dei risultati contrastanti con quanto presente in analisi disponibilità. (#TT04605/25) 
+> -	Revisione Valorizzazione interventi per Tax engine (#TT04721/25) 
+> -	SCM: Nir - correzione delle fonti dei lotti e delle quantità residue per più lotti, corretto anche il carico del magazzino per Nir #TT04615/25 
+> -	SCS - Ordine di conto lavoro, corretta anomalia che causava la ripetizione di messaggi di errore in fase di sostituzione articolo, da non fittizio a fittizio, nelle righe ordine (#TT03838/25) 3
+> -	SD - Ordini Clienti: Implementazione Costi Articolo in Articoli Ordini Clienti  
+    È stata introdotta una nuova tab  “Costi Articolo” all’interno della sezione Articoli degli Ordini Clienti, con lo scopo di associare ad ogni riga d’ordine il fornitore preferenziale e il relativo costo di acquisto dell’articolo venduto. Il tab Costi Articolo non contiene il riferimento diretto all’articolo, poiché il costo è associato all’articolo venduto nella riga d’ordine. Sono gestite le tipologie di origine del costo e nei Parametri degli Ordini Clienti è possibile definire quale è l’origine del costo gestito di default nell’inserimento Ordini Clienti. 
+    Le proprietà dei Costi Materiali sono: 
+    Costo unitario e totale 
+    Percentuale e valore del ricarico 
+    Valore del profitto 
+    Origine del costo (magazzino, listino, ordine, fattura) 
+    Riferimenti a documenti di acquisto (listino, ordine, fattura) 
+    Alla creazione di una riga d’ordine cliente (non derivata da offerta), i dati vengono automaticamente inseriti nel tab Costi Articolo, in base al fornitore preferenziale dell’articolo e al tipo di origine del costo definito nei parametri dell’ordine cliente. 
+    Se l’ordine cliente deriva da un’offerta CRM, i dati vengono copiati dal tab Materiali, per il materiale con lo stesso codice della riga articolo dell’offerta mantenendo la stessa logica di origine del costo. 
+    Impatto sui processi 
+    La procedura di generazione dell’Ordine di Acquisto da Ordine Cliente è stata aggiornata: se presenti, verranno utilizzati fornitore, listino e costo del tab  Costi Articolo della riga ordine; in caso contrario, verrà mantenuta la logica attuale. 
+    Modifications in SalesOrder object form can have an impact on profiles 
+    Rif ticket (4597/25) 
+> -	SD - Fix Sales Tiles problem(#TT01258/21) 
+> -	SD - Revisione valorizzazione centri di costo quando la priorità è sull’anagrafica articolo e ci sono più centri (#TT04670/25) 
+> -	SH - Nelle società con Tax engine attiva, la modifica del sottoconto di testata del documento fa ricalcolare le tasse applicate nel documento (#TT04699/25) 
+> -	SH - add new parameter for import web api of FSLedgerAccount 
+> -	Solved bug to edit webapi configuration for json format 
+> -	Solved bug to enable additional fields on supervisor activity widget activity 
+> -	WM - Aggiornamento del costo effettivo per i lotti sui movimenti di carico a magazzino, provenienti da diverse aree (vendite, acquisti, produzione, terzista) (TT04267/25). 
+> -	WM - Analisi disponibilità, al cambio dell’articolo nel filtro e successivo rilancio della ricerca, la griglia di dettaglio viene aggiornata in base al nuovo articolo (#TT03562/25) 
+> -	WM - Piani di Carico - Ripristino quantità residua ordine cliente in cancellazione Piano di Carico con Picking(TT04272/25). 
+> -	WM - Packing List - Corretto cambio stato a “Fatturato” aggiungendo UDC. (#TT04626/25) 
+
 
 ### Patch 802.0009 - 28/10/2025
 
