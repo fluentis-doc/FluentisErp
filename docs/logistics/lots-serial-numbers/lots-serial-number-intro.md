@@ -1,14 +1,16 @@
 ---
-title: "Introduzione alla gestione Lotti e Serial Number"
+title: Introduzione alla gestione Lotti e Serial Number
 sidebar_position: 0
-sidebar_label: "Introduzione"
-description: "Panoramica sulla gestione di Lotti e Serial Number in Fluentis ERP, con indicazioni su configurazione, tracciabilità e collegamenti ai moduli di magazzino."
-schema: "TechArticle"
-tags: ["ERP", "Fluentis", "lotti", "serial number", "magazzino", "tracciabilità"]
-last_update: "07-11-2025"
-author: "Fluentis Documentation Team"
-keywords: ["Fluentis ERP", "lotti", "serial number", "tracciabilità", "magazzino", "anagrafica lotti", "anagrafica serial number"]
-related: ["/docs/logistics/lots-serial-numbers/lots-register", "/docs/logistics/lots-serial-numbers/serial-number-register"]
+sidebar_label: Introduzione
+description: Panoramica sulla gestione di Lotti e Serial Number in Fluentis ERP, con indicazioni su configurazione, tracciabilità e collegamenti ai moduli di magazzino.
+schema: TechArticle
+tags: [Fluentis ERP, lotti, serial number, magazzino, tracciabilità]
+last_update:
+  author: Fluentis Documentation Team
+  date: 2025-11-07
+author: Fluentis Documentation Team
+keywords: [Fluentis ERP, lotti, serial number, magazzino, tracciabilità, anagrafica lotti]
+related: [/docs/logistics/lots-serial-numbers/lots-register, /docs/logistics/lots-serial-numbers/serial-number-register]
 ---
 
 # Introduzione alla gestione Lotti e Serial Number
