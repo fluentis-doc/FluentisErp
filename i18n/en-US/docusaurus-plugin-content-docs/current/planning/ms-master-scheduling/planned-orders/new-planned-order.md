@@ -153,10 +153,14 @@ In this tab, mainly consisting of a grid, it is possible to define which and how
 *Specific fields*:
 
 **Sequence**: in this field, it is possible to indicate the sequence in which the equipment should be used;      
-**Equipments**: with this combo box, it is possible to call the equipment code, retrieved from the appropriate [Equipment](/docs/configurations/tables/production/equipments) table;  
-**Item class/code**: in these fields, it is possible to indicate the class and the code of the item (the help automatically filters only the items identified as *Equipment* in the *Article Nature* field of the warehouse registry);  
-**Variant**: represents the variant of the item;  
-**Quantity**: represents the quantity of the item.
+**Equipments**: with this combo box, it is possible to call the equipment code, retrieved from the appropriate [Equipment](/docs/configurations/tables/production/equipments) table;
+**Scheduled**: If active, indicates that the equipment will be engaged during production; with this flag, the [F.C.S. Scheduling](https://docs.fluentis.com/FluentisErp/docs/planning/ms-master-scheduling/fcs-scheduling) will consider not the item entered through the equipment combo, but the item entered in the class and code fields, which must have as *Item Nature* the type *Equipment* or *Tool*;          
+**To reorder**: if active, it will cause the [F.C.S. Scheduling](https://docs.fluentis.com/FluentisErp/docs/planning/ms-master-scheduling/fcs-scheduling) procedure to create a planned order for the procurement of the equipment itself if it is not available; if not active, it means that the equipment does not need to be reordered but can be used repeatedly based on its availability (for example, a mold);   
+**Class / Item code**: in these fields, it is possible to indicate the class and the code of the item (the help automatically filters only the items identified as *Equipment* in the *Article Nature* field of the warehouse registry);  
+**Variant**: indicates the variant of the item; 
+**Lot**: indicates the lot of the item;  
+**Serial number**: indicates the serial number of the item;
+**Quantity**: indicates the quantity of the item.
 
 ## Quality Control
 

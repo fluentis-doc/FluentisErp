@@ -143,10 +143,14 @@ In this tab, mainly consisting of a grid, it is possible to define which and how
 
 **Sequence**: in this field, it is possible to indicate the sequence in which the equipment must be used;  
 
-**Equipments**: with this combo box, it is possible to call the equipment code, retrieved from the appropriate table [Equipment](/docs/configurations/tables/production/equipments);  
-**Item class/code**: in these fields, it is possible to indicate the class and code of the article (the help automatically filters only the articles identified as *Equipment* in the *Item nature* field of the warehouse registry);  
-**Variant**: represents the variant of the article;  
-**Quantity**: represents the quantity of the article.
+**Equipments**: with this combo box, it is possible to call the equipment code, retrieved from the appropriate table [Equipment](/docs/configurations/tables/production/equipments); 
+**Scheduled**: If active, it indicates that the equipment will be engaged during production; with this flag, the [F.C.S. Scheduling](https://docs.fluentis.com/FluentisErp/docs/planning/ms-master-scheduling/fcs-scheduling) will consider not the item entered through the equipment combo, but the item entered in the class and code fields, which must have *Item Nature* as the type *Equipment* or *Tool*;          
+**To reorder**: if active, it will cause the [F.C.S. Scheduling](https://docs.fluentis.com/FluentisErp/docs/planning/ms-master-scheduling/fcs-scheduling) procedure to create a planned order for the procurement of the equipment itself in case it is not available; if not active, it means that the equipment does not need to be reordered but can be used repeatedly based on its availability (for example, a mold); 
+**Class / Item code**: in these fields, it is possible to indicate the class and code of the article (the help automatically filters only the articles identified as *Equipment* in the *Item nature* field of the warehouse registry);  
+**Variant**: indicates the variant of the article; 
+**Batch**: indicates the batch of the item;  
+**Serial number**: indicates the serial number of the item;
+**Quantity**: indicates the quantity of the article.
 
 ## Quality Control 
 
