@@ -15,6 +15,15 @@ Each grouping rule is defined through a single record in this table.
 > **Minimum value**: minimum filling value for the machine to start.      
 > **Maximum value**: maximum filling value for the machine. If the operations with the same grouping code exceed this limit, the scheduler will manage multiple work sessions of the machine, creating a task for each of them.     
 > **Independent quantity**: if this flag is selected, the dimensional value of the item to which the rule refers will not be multiplied by the quantity of the production order.
+> **Merge only orders with the same quantity**: if this flag is selected, phases with the same grouping code and the same quantity to be produced will be merged.  
+The scheduler will create a fictitious grouping code for these phases as a string that concatenates the grouping code and the quantity to be produced.  
+> **Note**: allows you to enter a free note.  
+
+:::note Note
+Note that if the fixed processing time flag was not enabled for the work center, we could have phases to work on with the same grouping code and different processing times (unit processing time x quantity to be produced).  
+In this case, the greater processing time among the phases to be merged will be considered (pessimistic and cautious assumption).  
+During the data import phase that precedes the start of scheduling, the system would list warnings in the import error list, reminding us that the greater processing time will be considered.
+:::
 
 **Search Batch Rules**
 
