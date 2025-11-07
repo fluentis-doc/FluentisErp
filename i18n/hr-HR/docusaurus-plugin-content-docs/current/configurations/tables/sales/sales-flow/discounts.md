@@ -1,54 +1,62 @@
 ---
-title: Ripresa prezzi e sconti
+title: Preuzimanje cijena i popusta  
 sidebar_position: 1
 ---
 
-I prezzi dei prodotti possono essere definiti nei listini di vendita o direttamente nell’anagrafica articoli. Nei listini, i prezzi possono essere "ivati" o "non ivati", una differenza determinata dall’attivazione del flag "Prezzo Ivato" nella testata del listino.
+Cijene proizvoda mogu se definirati u prodajnim cjenicima ili izravno u šifrarniku artikala. U cjenicima cijene mogu biti s PDV-om ili bez PDV-a, što ovisi o aktiviranju oznake "Cijena s PDV-om" u zaglavlju cjenika.  
 
-**Tipologie di Listino**      
-I listini si dividono in due categorie principali: generale e per cliente. I listini generali devono essere configurati nell’apposita tabella, dove è anche possibile specificare se il listino è "ivato" o "non ivato" tramite un flag. I listini per cliente utilizzano come codice il conto e sottoconto del cliente, rendendoli univoci e personalizzati.
+**Vrste cjenika**      
+Cjenici se dijele u dvije glavne kategorije: opći i po kupcu.
+Opći cjenici konfiguriraju se u posebnoj tablici, gdje se može naznačiti i radi li se o cjeniku s PDV-om ili bez PDV-a putem odgovarajuće oznake.
+Cjenici po kupcu koriste šifru računa i podračuna kupca, čime postaju jedinstveni i prilagođeni svakom kupcu.
 
-Ogni listino è identificato da tre elementi chiave:
+Svaki cjenik definiran je pomoću tri ključna elementa:
 
-- Tipologia (generale o per cliente),
-- Divisa,
-- Date di validità (da/a).     
-All'interno di ogni listino, i prezzi degli articoli possono essere specificati per l'unità di misura gestionale (obbligatoria e definita nell'anagrafica articolo) oppure per una delle unità di misura alternative. I prezzi possono essere anche associati a scaglioni di quantità (tab "Prezzo per Quantità") o a destinazioni di merce specifiche (tab "Destinazioni").
+- Vrsta (opći ili po kupcu),
+- Valuta,
+- Datumi važenja (od / do).     
+Unutar svakog cjenika, cijene artikala mogu biti definirane za osnovnu jedinicu mjere (obvezno određenu u šifrarniku artikla) ili za alternativne jedinice mjere.
+Cijene se mogu povezati i s količinskim razredima (kartica "Cijena po količini") ili sa specifičnim odredištima robe (kartica "Odredišta").   
 
-### **Gestione degli Sconti**      
-Gli sconti possono essere configurati in vari modi:
+### **Upravljanje popustima**      
+Popusti se mogu definirati na više načina:  
 
-- Anagrafica Cliente: Gli sconti definiti nella tab "Spese/Sconti" vengono applicati automaticamente al documento di vendita quando si seleziona un cliente. È possibile associare più sconti.
+- Šifrarnik kupca – Popusti definirani u kartici "Troškovi/Popusti" automatski se primjenjuju u prodajnim dokumentima prilikom odabira kupca. Moguće je dodijeliti više popusta.  
 
-- Tipo di Pagamento: Gli sconti legati al tipo di pagamento vengono recuperati automaticamente quando si seleziona o si propone un tipo di pagamento nel documento.
+- Vrsta plaćanja – Popusti vezani uz vrstu plaćanja automatski se preuzimaju kada se u dokumentu odabere određeni način plaćanja.  
 
-- Tipologia di Listino: Gli sconti possono essere associati a ogni riga della griglia listini nell’anagrafica cliente.
+- Vrsta cjenika – Popusti se mogu povezati sa svakim redom tablice cjenika u šifrarniku kupca.
 
-- Listino Articoli: Gli sconti possono essere specificati per ogni riga articolo nel listino, anche a livello di scaglione (sconti a quantità o a valore).
+- Cjenik artikala – Popusti se mogu definirati za svaki redak artikla u cjeniku, čak i po količinskom razredu (popust po količini ili po vrijednosti).
 
-- Definizione Politiche di Sconto: Gli sconti possono essere configurati per articoli, clienti, classi di articoli, categorie commerciali, categorie di sconto e dettagli di categoria sconto.
+- Definiranje politika popusta – Popusti se mogu konfigurirati za artikle, kupce, klase artikala, komercijalne kategorije, kategorije popusta te detalje kategorije popusta.
 
-:::important Ricorda
-Per poter gestire gli sconti su imponibile è necessario attivare da database il parametro generale GEN-GlobalSettings_CalculateDiscountOnAmount per la società di interesse.     
-Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in sconti a cascata. 
+:::important Napomena
+Da bi bilo moguće primjenjivati popuste na osnovicu, potrebno je u bazi podataka aktivirati opći parametar GEN-GlobalSettings_CalculateDiscountOnAmount za odgovarajuće poduzeće.
+Ako taj parametar nije aktivan, popusti na osnovicu automatski će se pretvarati u kaskadne popuste.  
 :::
 
 
-### **Procedura di Ripresa Prezzi e Sconti**      
-Quando si inserisce un articolo in un documento di vendita, viene attivata la procedura di ripresa dei prezzi e degli sconti. Il sistema cerca un listino valido tra quelli associati al cliente, partendo dalla tipologia con il flag "default" o seguendo la priorità di ricerca impostata.
+### **Postupak preuzimanja cijena i popusta**      
+Kada se u prodajni dokument unese artikl, aktivira se postupak preuzimanja cijena i popusta.
+Sustav traži važeći cjenik među onima pridruženima kupcu, počevši od onoga označenog kao zadani ili prema definiranoj prioritetnoj logici pretraživanja.  
 
-La ricerca di un listino valido si basa sui seguenti criteri:
+Pretraga važećeg cjenika temelji se na sljedećim kriterijima:  
 
-- Il listino deve includere l'articolo con la stessa divisa del cliente.
-- La data di validità del listino deve essere compresa tra la data di inizio validità della riga nel tab "Listini" e la data del documento.
-Se non viene trovato un listino valido, e non è attivo il flag "Ricerca in tutti i listini predefiniti", il sistema utilizza il prezzo di vendita dell’anagrafica articoli. Se invece il flag è attivato, la ricerca continua tra le altre tipologie di listini presenti nell’anagrafica cliente, secondo l’ordine di priorità.
+- Cjenik mora sadržavati traženi artikl u istoj valuti kao i kupac.  
+- Datum važenja cjenika mora obuhvaćati datum dokumenta, odnosno mora biti između datuma početka važenja u kartici "Cjenici" i datuma dokumenta.  
+Ako se ne pronađe važeći cjenik i nije aktivirana opcija "Pretraži sve zadane cjenike", sustav koristi prodajnu cijenu iz šifrarnika artikala.
+Ako je opcija aktivna, pretraga se nastavlja među ostalim vrstama cjenika navedenima u šifrarniku kupca, prema redoslijedu prioriteta.
 
-La ricerca dell'articolo all'interno del listino tiene conto non solo del codice articolo, ma anche della variante e dell'unità di misura. Se il prezzo è definito per un'unità di misura alternativa, il sistema lo inserisce nel documento, attivando il flag "Prezzo Unità di Misura Alternativa", e calcola i totali in base alla quantità alternativa.
+Pretraga artikla unutar cjenika uzima u obzir šifru artikla, varijantu i jedinicu mjere.
+Ako je cijena definirana za alternativnu jedinicu mjere, sustav je unosi u dokument, aktivira oznaku "Cijena alternativne jedinice mjere" te preračunava ukupne iznose prema alternativnoj količini.  
 
-Dopo aver individuato il prezzo, vengono cercati anche gli sconti e i prezzi a scaglione. Se nel tab "Listini" dell’anagrafica cliente è attivo il flag "Gestione Prezzi", il sistema ricerca eventuali sconti aggiuntivi nella configurazione "Definizione Politiche di Sconto". Tutti gli sconti trovati vengono riportati nella collezione degli sconti, con l’indicazione della loro origine.
+Nakon pronalaska cijene, sustav traži i eventualne popuste te cijene po količinskim razredima.
+Ako je u kartici "Cjenici" u šifrarniku kupca aktivirana oznaka "Upravljanje cijenama", sustav dodatno provjerava postavke u "Definiciji politika popusta".
+Svi pronađeni popusti prikazuju se u zbirci popusta, s naznakom njihova izvora.    
 
-### **Considerazioni Finali**     
-La stessa logica di ricerca si applica sia per documenti con prezzi "ivati" che "non ivati". Tuttavia, se un documento richiede prezzi "non ivati", la ricerca si limita ai listini con questo tipo di prezzo, e viceversa per i prezzi "ivati".
+### **Završne napomene**     
+Ista logika pretraživanja primjenjuje se i na dokumente s cijenama s PDV-om i bez PDV-a.
+Međutim, ako dokument zahtijeva cijene bez PDV-a, pretraga se ograničava samo na takve cjenike, i obrnuto.  
 
-Attenzione: Se non esiste un listino valido e l’anagrafica articoli ha un prezzo di vendita definito, questo viene proposto come prezzo della riga del documento, indipendentemente dal tipo di prezzo richiesto (ivato o non ivato).
-
+Pažnja: Ako ne postoji važeći cjenik, a u šifrarniku artikala postoji definirana prodajna cijena, ona se koristi kao cijena stavke dokumenta — bez obzira na to je li riječ o cijeni s PDV-om ili bez PDV-a.  

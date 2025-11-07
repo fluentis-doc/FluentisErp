@@ -1,58 +1,60 @@
 ---
-title: Evasioni
+title: Evidencije
 sidebar_position: 7
 ---
 
-Il ciclo di evasione in Fluentis serve a gestire in modo strutturato e integrato l'intero flusso operativo di vendita, dalla fase iniziale di offerta fino alla fase finale di fatturazione. Ogni fase è caratterizzata da procedure specifiche e configurazioni che garantiscono una gestione fluida e integrata del flusso di lavoro.
+Ciklus evidencija u Fluentisu služi za strukturirano i integrirano upravljanje cijelim prodajnim procesom — od početne faze ponude pa sve do završne faze fakturiranja.
+Svaka faza obuhvaća specifične postupke i postavke koje omogućuju učinkovit, povezan i transparentan tijek rada.
 
-## Conversione da Offerta a Ordine
+## Pretvorba ponude u prodajni nalog
 
-La procedura di conversione da offerta a ordine di vendita può essere avviata in due modalità:
+Postupak pretvorbe ponude u prodajni nalog može se pokrenuti na dva načina:  
 
-- Dalla [Ricerca Offerte](/docs/sales/offers/search-offers): Selezionando una o più offerte e cliccando sul pulsante *Conversione* presente nella barra degli strumenti, è possibile eseguire una conversione massiva.
-- Dalla [Testata](/docs/sales/offers/insert-offer) dell'Offerta: All'interno della singola offerta, il pulsante di *Conversione* nella testata consente di convertire l'offerta selezionata in un ordine di vendita.
+- Iz [Pretrage ponuda](/docs/sales/offers/search-offers): Odabirom jedne ili više ponuda i klikom na gumb *Pretvorba* u alatnoj traci moguće je izvršiti grupnu (masovnu) pretvorbu.  
+- Iz [Zaglavlja ponude](/docs/sales/offers/insert-offer): U okviru pojedinačne ponude klikom na gumb *Pretvorba* moguće je izravno pretvoriti tu ponudu u prodajni nalog. 
 
-Questa procedura permette di trasformare un'offerta di vendita in un ordine di vendita effettivo. Per eseguire correttamente la conversione, è necessario configurare il [Tipo di ordine](/docs/configurations/tables/sales/sales-order-types) desiderato nella tabella [Tipo di offerta](/docs/configurations/tables/sales/sales-offer-type). Inoltre, l'offerta deve avere una *Data di Conferma* inserita nella testata; in caso contrario, il sistema visualizzerà un messaggio pop-up per richiedere la conferma dell'offerta prima di procedere.
+Ovaj postupak omogućuje pretvaranje prodajne ponude u stvarni prodajni nalog. Kako bi se pretvorba uspješno izvršila, potrebno je konfigurirati željeni [Tip nalog](/docs/configurations/tables/sales/sales-order-types) u tablici [Tip ponude](/docs/configurations/tables/sales/sales-offer-type). Također, ponuda mora sadržavati *Datum potvrde* u zaglavlju; ako ga nema, sustav će prikazati poruku kojom traži potvrdu ponude prije nastavka postupka.  
 
-Durante la procedura di conversione, appare un pop-up con diverse opzioni:
+Tijekom pretvorbe pojavljuje se dijalog s više opcija:
 
-- Gestione delle Righe Offerta: Se alcune righe dell'offerta sono già state convertite in ordine, il sistema chiede all'utente se vuole creare un nuovo ordine utilizzando tutte le righe dell'offerta o solo quelle non ancora referenziate.
-- Crea/Aggiorna Progetto: Questa opzione consente di creare o aggiornare un progetto. Sono disponibili le opzioni: *Crea Nuovo Progetto Vuoto*, *Crea Nuovo Progetto da Offerta*, o *Crea Nuovo Progetto da Offerta e Template Progetto*. È necessario specificare il [Tipo Progetto](/docs/configurations/tables/project-management/project-type) da creare. Se il progetto esiste già, bisogna inserire il nome del progetto da aggiornare.
-- Trasferimento Materiali/Risorse: Questa opzione consente di trasferire le risorse e i materiali dell'offerta, se [gerarchica](/docs/sales/offers/insert-offer), come righe articolo nell'ordine.
+- Upravljanje stavkama ponude: Ako su neke stavke ponude već prenesene u nalog, sustav pita želi li korisnik stvoriti novi nalog koristeći sve stavke ponude ili samo one koje još nisu prenesene.    
+- **Kreiraj / Ažuriraj projekt:** Ova opcija omogućuje kreiranje ili ažuriranje projekta. Dostupne su mogućnosti: *Stvori novi prazan projekt*, *Stvori projekt iz ponude* ili *Stvori projekt iz ponude i predloška projekta*. Potrebno je odabrati [Vrstu projekta](/docs/configurations/tables/project-management/project-type) Ako projekt već postoji, unosi se naziv projekta koji se ažurira.  
+- **Prijenos materijala / resursa:** Ako je ponuda [hijerarhijska](/docs/sales/offers/insert-offer), moguće je prenijeti materijale i resurse iz ponude kao stavke artikala u nalog.    
 
-Una volta confermata la conversione, il sistema genera un nuovo ordine cliente utilizzando i dati dell'offerta e avvisa l'utente con un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita, la versione e il numero dell'ordine cliente generato. Le informazioni modificate in anagrafica durante la creazione dell'offerta (ad es. Annotazioni Cliente, Spedizione, Pagamenti) saranno riportate anche nell'ordine generato.
+Nakon potvrde postupka, sustav automatski kreira novi prodajni nalog koristeći podatke iz ponude i prikazuje poruku o uspješnoj pretvorbi s podacima o broju ponude, verziji i broju generiranog naloga.  
+Sve informacije koje su izmijenjene u šifrarniku tijekom izrade ponude (npr. napomene o kupcu, način isporuke, uvjeti plaćanja) prenose se i u novi nalog.  
 
-## Evasione da Ordini a DDT
+## Isporuka iz Narudžbi u Otpremnice
 
-La procedura di evasione da ordine a Documento di Trasporto è disponibile in due modalità:
+Postupak isporuke iz narudžbe u otpremnicu dostupan je na dva načina:
 
-- Evasione Massiva dalla [Ricerca Ordini](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders): Nella Ricerca Ordini, selezionare uno o più ordini da evadere e cliccare su Evasione DDT nella barra degli strumenti.
-- Evasione dalla [Testata](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) del DDT: Nella Testata del DDT, utilizzare il pulsante Evasione da Ordine per aprire una finestra di selezione degli ordini confermati del cliente da trasferire nel DDT.
+- Masovna isporuka iz [Pretraživanja narudžb](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders): U pretraživanju narudžbi potrebno je odabrati jednu ili više narudžbi koje želite isporučiti te kliknuti na Isporuka otpremnice u traci izbornika.
+- Isporuka iz [Zaglavlja](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) otpremnice: U zaglavlju otpremnice koristi se tipka Isporuka iz narudžbe, kojom se otvara prozor za odabir potvrđenih narudžbi kupca koje će se prenijeti u otpremnicu.
 
-Questa procedura permette di trasformare uno o più ordini di vendita in uno o più DDT. Prima di avviare la procedura, è necessario configurare il tipo di DDT desiderato nella tabella [Tipo di ordine](/docs/configurations/tables/sales/sales-order-types). La procedura automatica consente la creazione di DDT solo se l'ordine è stampato e confermato.
+Ovaj postupak omogućuje pretvaranje jedne ili više prodajnih narudžbi u jednu ili više otpremnica. Prije pokretanja postupka potrebno je u tablici [Vrsta narudžbe](/docs/configurations/tables/sales/sales-order-types) postaviti željenu vrstu otpremnice. Automatski postupak omogućuje kreiranje otpremnice samo ako je narudžba ispisana i potvrđena.
 
-Le condizioni per l'evasione sono:
+Uvjeti za isporuku su sljedeći:
 
-- Il cliente degli ordini deve coincidere con il cliente del DDT.
-- L'ordine da evadere deve avere il flag "Stampato" e una Data di Conferma Ordine.
-- La tabella "Tipi DDT" deve avere il flag "Ordine", che indica che il DDT può essere generato a partire da un ordine.
-- Se la procedura è avviata dalla Ricerca Ordini, i tipi di documento devono essere compatibili: nella tabella "Tipi Ordine", il tipo ordine da evadere deve avere impostato il tipo DDT corrispondente.
+- Kupac u narudžbi mora biti isti kao kupac u otpremnici.
+- Narudžba koja se isporučuje mora imati označenu opciju Ispisano i upisan Datum potvrde narudžbe.
+- U tablici Vrste otpremnica mora biti označen parametar Narudžba, koji označava da se otpremnica može generirati iz narudžbe.  
+- Ako se postupak pokreće iz Pretraživanja narudžbi, vrste dokumenata moraju biti kompatibilne: u tablici Vrste narudžbi, vrsta narudžbe koja se isporučuje mora imati postavljenu odgovarajuću vrstu otpremnice.  
 
-Dopo aver selezionato gli ordini e impostato i filtri, cliccando su *Trasferimento* si genererà il DDT con i dati dell'ordine. Se eseguita correttamente, l'ordine cambierà automaticamente stato in "Evaso" o "Parzialmente Evaso".
+Nakon odabira narudžbi i postavljanja filtara, klikom na Prijenos generira se otpremnica s podacima iz narudžbe. Ako je postupak uspješno izvršen, narudžba automatski mijenja status u Isporučeno ili Djelomično isporučeno.
 
-## Evasione da DDT a Fatture
+## Isporuka iz Otpremnice u Račune
 
-La procedura di evasione da DDT a fattura può essere avviata in due modalità:
+Postupak isporuke iz otpremnice u račun može se pokrenuti na dva načina:
 
-- Dal Menu [Procedure](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes): Andando su *Vendite > Fatture di Vendita > Procedure > Creazione da DDT*.
-- Dalla [Testata](/docs/sales/sales-invoices/invoicing/sales-invoice) della Fattura di Vendita: Utilizzando il pulsante *Evasione DDT* nella testata della fattura.
+- Iz izbornika [Postupci](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes): putem *Prodaja > Računi prodaje > Postupci > Kreiranje iz otpremnica*.
+- Iz [Zaglavlja](/docs/sales/sales-invoices/invoicing/sales-invoice) računa prodaje: korištenjem tipke *Isporuka otpremnice* u zaglavlju računa.
 
-Questa procedura permette di creare una o più fatture a partire da uno o più DDT. La procedura si compone di tre tab principali:
+Ovaj postupak omogućuje kreiranje jednog ili više računa iz jedne ili više otpremnica. Postupak se sastoji od tri glavne kartice:
 
-- Valorizzazione: Consente di inserire filtri per selezionare i DDT da fatturare (con stato "Stampato") e specificare la data di creazione della fattura.
-- Parametri: Configura le opzioni di raggruppamento per la creazione di una fattura da più DDT, come l'inclusione di DDT di anni e periodi IVA diversi, tipi di DDT diversi o con tassi di cambio diversi. È possibile anche definire il trattamento dei pagamenti, ripristinando quelli dell'anagrafica o mantenendo quelli specificati nei DDT.
-- Precedenti: Permette di visualizzare, filtrare e annullare le operazioni di fatturazione precedenti.
+- Vrednovanje: Omogućuje postavljanje filtara za odabir otpremnica koje će se fakturirati (s oznakom Ispisano) te definiranje datuma izrade računa.  
+- Parametri: Služi za konfiguriranje opcija grupiranja prilikom kreiranja jednog računa iz više otpremnica, kao što su uključivanje otpremnica iz različitih godina i razdoblja PDV-a, različitih vrsta otpremnica ili s različitim tečajevima. Također je moguće definirati način obrade uvjeta plaćanja – zadržati ih iz otpremnice ili preuzeti iz podataka o kupcu.  
+- Prethodne obrade: Omogućuje pregled, filtriranje i poništavanje prethodno izvršenih fakturiranja.  
 
-Dopo aver selezionato i DDT e impostato i parametri, è possibile procedere con la creazione della fattura cliccando su *Creazione Fattura da DDT*.
+Nakon što se odaberu otpremnice i postave parametri, klikom na *Kreiraj račun iz otpremnice* pokreće se izrada računa.
 
-L'evasione da DDT a fattura è completabile anche dalla testata della fattura stessa tramite il pulsante Evasione DDT.
+Isporuka iz otpremnice u račun može se dovršiti i iz samog zaglavlja računa pomoću tipke Isporuka otpremnice.
