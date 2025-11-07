@@ -29,7 +29,8 @@ The parameters of customer orders allow for basic settings to manage correctly a
  
 **Compulsory ratio between boxes and qty:** if set, the flag forces the user to enter a quantity corresponding to or a multiple of the number of packs defined in the *Weights/Dimensions* tab of the item registry; if the quantity is not the pack count or a multiple, the message will appear: “Item not sellable in quantity less than or not a multiple of."      
 
-**Propose economic lot:** if the flag is set, the economic batch is proposed as the quantity, and if the quantity is less than the economic batch, the message “The quantity cannot be less than...” is displayed.       
+**Propose economic lot:** if the flag is active and an economic lot has been defined for the customer of the document in the item registry, during the order line entry, the quantity will be automatically proposed equal to the economic lot.  
+If the flag is not active, the verification is performed at the time of confirming the line: if the entered quantity is less than the economic lot, the message “The quantity cannot be less than …” will be returned.        
 
 **Check items in exhaustion:** if set, this flag will show a warning pop-up if items that have the flag in Registry set to Running Out and the date when the item is running out are entered in the order; this check prevents selling items that will no longer be produced or restocked.      
 
