@@ -4,8 +4,9 @@ sidebar_position: 2
 description: Guida alla funzione di ricerca e gestione dei lotti all’interno del modulo Logistica di Fluentis ERP.
 schema: HowTo
 tags: [Fluentis ERP, Logistica, Lotti, Gestione magazzino]
-last_update: "07-11-2025"
-author: "Fluentis Documentation Team"
+last_update:
+  author: Fluentis Documentation Team
+  date: 2025-11-07
 keywords: [ricerca lotti, Logistica, Lotti, Gestione magazzino]
 ---
 
