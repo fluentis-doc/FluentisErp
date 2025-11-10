@@ -1,32 +1,61 @@
 ---
 title: Consumo materiali (Filtro)
+description: Gestione e ricerca dei movimenti di consumo materiali associati agli automezzi nel modulo Logistica.
+keywords:
+  - consumo materiali
+  - automezzi
+  - logistica
+  - magazzino
+  - Fluentis ERP
 sidebar_position: 1
+schema: HowTo
+sidebar_label: Consumo materiali (Filtro)
+tags:
+  - logistica
+  - automezzi
+  - magazzino
+last_update:
+  author: Fluentis Documentation Team
+  date: 10-11-2025
 ---
+
+# Consumo materiali (Filtro)
+
+Questa sezione descrive come utilizzare la form di **consumo materiali (filtro)** per ricercare, visualizzare e gestire i movimenti relativi al consumo dei materiali associati agli automezzi definiti nella tabella [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management).
 
 La form si apre tramite il percorso **Logistica > Automezzi > Consumo materiali**.
 
-Questa form permette di gestire i movimenti realizzati per il consumo dei materiali legati agli automezzi creati nella tabella [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management).
+## Ricerca Gestione automezzo
 
-**Ricerca Gestione automezzo**
+La form è composta da un’area di **filtro** e da un’area di **risultato**.  
+Dopo aver impostato i filtri desiderati, premere il pulsante **Ricerca** per visualizzare i risultati nella griglia dei risultati.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+### Campi specifici
 
-*Campi specifici*: 
+- **Numero materiali**: indica il numero del documento di consumo materiali.  
+- **Data materiali**: indica la data del documento di consumo materiali.  
+- **Utente**: specifica l’utente che ha creato il documento.  
+- **Codice automezzo**: identifica il codice dell’automezzo presente nel documento di consumo materiali.  
+- **Descrizione automezzo**: riporta la descrizione dell’automezzo presente nel documento di consumo materiali.  
 
-> **Numero materiali**: indica la data del documento di consumo materiale;          
-> **Data materiali**: indica la data del documento di consumo materiale;         
-> **Utente**: indica l'utente che ha creato il documento di consumo materiale;      
-> **Codice automezzo**: indica il codice dell'automezzo presente nel documento di consumo materiale;               
-> **Descrizione automezzo**: indica la descrizione dell'automezzo presente nel documento di consumo materiale.             
+L’uso dei filtri consente di individuare rapidamente i documenti di consumo materiali e di monitorare in modo efficiente i movimenti collegati a ciascun automezzo.
 
-**Inserimento Gestione automezzo**
+## Inserimento Gestione automezzo
 
-Per poter inserire nuovi *movimenti di consumo materiali* è necessario premere il pulsante **Nuovo**.    
-Per il nuovo record vedasi la documentazione relativa a [Nuovo consumo materiali](/docs/logistics/motorvehicles/material-consumption/new-material-consumption).
+Per inserire nuovi **movimenti di consumo materiali**, premere il pulsante **Nuovo**.  
+La creazione di un nuovo record segue la procedura descritta nella documentazione dedicata:  
+[Nuovo consumo materiali](/docs/logistics/motorvehicles/material-consumption/new-material-consumption).
 
-*Pulsanti specifici*: 
+### Pulsanti specifici
 
-> **Crea registrazione**: permette di registrare il consumo di materiale creando il relativo movimento di magazzino;        
-> **Ripristina**: permette di ripristinare il consumo di materiale annullando il relativo movimento di magazzino.
+- **Crea registrazione**: consente di registrare il consumo di materiale creando il relativo movimento di magazzino.  
+- **Ripristina**: permette di annullare un consumo di materiale, ripristinando il relativo movimento di magazzino.  
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+## Riepilogo e approfondimenti
+
+La form di **consumo materiali (filtro)** consente di ricercare e gestire i documenti di consumo materiali associati agli automezzi, fornendo strumenti per la creazione, visualizzazione e annullamento dei movimenti.
+
+Per approfondire:
+- [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management)
+- [Nuovo consumo materiali](/docs/logistics/motorvehicles/material-consumption/new-material-consumption)
+- [Funzionalità, pulsanti e campi comuni](/docs/guide/common)
