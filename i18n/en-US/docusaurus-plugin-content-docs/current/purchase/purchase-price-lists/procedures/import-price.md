@@ -3,7 +3,7 @@ title: Import from Supplier Prices
 sidebar_position: 2
 ---
 
-The form opens via the path **Purchases Supplier Price Lists Procedures Import Supplier Prices** and allows you to select items for import that were previously entered via the [Import Supplier Prices and Items](/docs/applications/bizlink/template-example/price-item-supplier). 
+The form opens via the path **Purchases > Supplier Price Lists > Procedures > Import Supplier Prices** and allows you to select items for import that were previously entered via the [Import Supplier Prices and Items](/docs/applications/bizlink/template-example/price-item-supplier), available in the *on-demand import* options of Bizlink.
 
 Through this procedure, it is possible to create or update the registries of the selected items and create a new supplier price list with the updated prices.
 
