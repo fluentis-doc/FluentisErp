@@ -1,75 +1,87 @@
 ---
-title: Vizualizare stocuri
+title: "Vizualizare stocuri"
+sidebar_position: 2
+description: "Ghid pentru vizualizarea stocurilor de gestiune în Fluentis ERP pentru o gestionare eficientă a resurselor logistice."
+schema: "TechArticle"
+tags: ["gestiune", "stocuri", "Fluentis"]
+keywords: ["Fluentis ERP", "stocuri", "gestiune", "resurse logistice"]
 ---
 
-:::important Utilizare
-Introducerea în vizualizarea stocurilor din Fluentis constituie un element fundamental pentru o gestionare eficientă a gestiunii. Această funcționalitate permite operatorilor să obțină în mod simplu și practic stocurile de gestiune, permițându-le să monitorizeze și să compare stocul fizic cu cel logic.
+# Vizualizare stocuri
 
-Vizualizarea stocurilor oferă posibilitatea de a grupa datele după articol, oferind și un detaliu pe gestiune. Aceasta înseamnă că este posibil să vizualizați mai multe rânduri ale aceluiași articol, în cazul în care acesta este prezent în gestiuni diferite. În plus, operatorul are posibilitatea de a filtra datele după locație, proiect, client/furnizor sau lot, oferind astfel o panoramă completă și detaliată a stocurilor în relație cu diferitele contexte de utilizare.
+:::important
+La ce servește  
+Introducerea în vizualizarea stocurilor în Fluentis reprezintă un element esențial pentru gestionarea eficientă a **gestiunii**. Această funcționalitate permite operatorilor să extragă în mod simplu și practic stocurile de gestiune, permițând monitorizarea și compararea stocului fizic cu cel scriptic.
 
-În tab  *Detaliu*, sunt accesibile informații suplimentare despre mișcările de gestiune sunt accesibile, iar din acest tab este posibil să generați înregistrări de gestiune pentru unul sau mai multe articole, când acestea aparțin aceeași gestiune. Această flexibilitate permite o operativitate eficientă, făcând din Fluentis un instrument puternic pentru gestionarea resurselor logistice.
+Vizualizarea stocurilor oferă posibilitatea de a grupa datele pe articol, furnizând și un detaliu pentru fiecare **gestiune**. Aceasta înseamnă că este posibilă vizualizarea mai multor rânduri ale aceluiași articol, în cazul în care acesta se află în gestiuni diferite. În plus, operatorul are posibilitatea de a filtra datele în funcție de locație, proiect, client/furnizor sau lot, oferind astfel o imagine completă și detaliată a stocurilor în raport cu diferitele contexte de utilizare.
+
+În tab *Detaliu*, sunt accesibile informații suplimentare despre *mișcările de gestiune*, iar din aceeași filă se pot genera *înregistrări de gestiune* pentru unul sau mai multe articole, atunci când acestea aparțin aceleași gestiuni. Această flexibilitate permite o operativitate eficientă, făcând din Fluentis ERP un instrument puternic pentru gestionarea resurselor logistice.
 :::
 
-Form-ul permite operatorului să obțină cu ușurință stocurile din gestiune pentru a verifica depozitul și corespondența între stocul fizic și cel logic.
+Form-ul permite operatorului să extragă cu ușurință *stocurile de gestiune* pentru a controla gestiunea și corespondența dintre stocul fizic și cel scriptic.
 
-Prin intermediul filtrelor, este posibil să efectuați o căutare specifică, conform parametrilor și să vizualizați rezultatul interogării în tabelele de rezultate. Aceste rezultate pot fi grupate după diferiți parametri pentru a facilita citirea datelor. Din fereastră este de asemenea posibil să se introducă rapid unele înregistrări de gestiune.
+Prin intermediul filtrelor, este posibilă efectuarea unei căutări specifice, conform parametrilor și vizualizarea rezultatului interogării în tabelele de rezultate. Aceste rezultate pot fi grupate după diferiți parametri pentru a facilita citirea datelor. Din fereastră este de asemenea posibilă inserarea rapidă a unor *înregistrări de gestiune*.
 
-Rezultatele căutării sunt împărțite în diferite tab-uri:
+Rezultatele căutării sunt împărțite în mai multe file:
 
 ## Articol
 
-Rezultatele sunt grupate după articol și sunt specificate valorile clasei, codului articolului, descrierii, descrierii secundare, variantei (dacă este cazul), descrierii variantei (dacă este cazul), cantității și unității de măsură.
+- Rezultatele sunt grupate după articol și sunt specificate datele: clasă, cod articol, descriere, a doua descriere, variantă (dacă există), descriere variantă (dacă există), cantitate și unitate de măsură.
 
 ## Gestiune
 
-Rezultatele sunt grupate după gestiune și, pe lângă valorile din tab-ul articolului, sunt specificate de asemenea valorile gestiunii și descrierea gestiunii.
+- Rezultatele sunt grupate după gestiune și sunt specificate, pe lângă datele din fila articol, și gestiunea și descrierea sa.
 
 ## Locație
 
-Rezultatele sunt grupate după locație și, pe lângă valorile din tab-ul articolului, sunt specificate valorile locației, descrierea locației și starea locației.
+- Rezultatele sunt grupate după locație și sunt specificate, pe lângă valorile din fila articol, și locația, descrierea și starea ei.
 
 ## Proiecte
 
-Rezultatele sunt grupate după proiect și, pe lângă valorile din tab-ul articolului, sunt specificate valorile numărului, anului și descrierii articolului proiectului.
+- Rezultatele sunt grupate după proiect și sunt specificate, pe lângă valorile din fila articol, și numărul, anul și descrierea articolului proiectului.
 
 ## Client/Furnizor
 
-Rezultatele sunt grupate după client/furnizor (prezente în înregistrările de gestiune) și sunt specificate, pe lângă valorile din tab-ul articolului, și valorile clientului/furnizorului.
+- Rezultatele sunt grupate după client/furnizor (prezenți în *înregistrările de gestiune*) și sunt specificate, pe lângă valorile din fila articol, și datele clientului/furnizorului.
 
 ## Lot
 
-Dacă există articole gestionate pe loturi, rezultatele sunt grupate după lot și sunt specificate, pe lângă valorile din tab-ul articolului, și valorile gestiunii, lotului și cantității disponibile.
+- Dacă există articole gestionate pe loturi, rezultatele sunt grupate după lot și sunt specificate, pe lângă valorile din fila articol, și valorile gestiunii, lotului și cantitatea disponibilă.
 
 ## Comandă de producție
 
-Rezultatele sunt grupate după comanda de producție și sunt specificate, pe lângă valorile din tab-ul articolului, și valorile gestiunii, descrierii gestiunii, locației, numărului comenzii de producție și anului comenzii de producție.
+- Rezultatele sunt grupate după *comandă de producție* și sunt specificate, pe lângă valorile din fila articol, și valorile gestiunii, locației, numărul și anul comenzii de producție.
 
 ## Detaliu
 
-Este detaliul maxim al rezultatelor grupate pe toate tab-urile anterioare. Sunt specificate valorile clasei, codului articolului, descrierii articolului, descrierii secundare a articolului, variantei, descrierii variantei, opțiunii, descrierii opțiunii, gestiunii, locației, numărului comenzii, anului comenzii, descrierii clientului/furnizorului, lotului, cantității disponibile, cantității de stoc, unității de măsură și stării locației.
+- Este detaliul maxim al rezultatelor, grupat după toate filele anterioare. Sunt specificate datele: clasă, cod articol, descriere articol, a doua descriere articol, variantă, descriere variantă, opțiune, descriere opțiune, gestiune, locație, număr comandă, an comandă, descriere client/furnizor, lot, cantitate disponibilă, cantitate stoc, unitate de măsură și starea locației.
 
 ### Generare înregistrări
 
-În tab **Detaliu** pentru stocului articolului, se poate utiliza butonul **Generare înregistrări** pentru a insera înregistrări de gestiune.
+În tab **Detaliu** stocului articol este posibilă utilizarea butonului **Generare înregistrări** pentru a introduce *înregistrări de gestiune*.
 
-#### Procedură
+**Procedură**:
+1. Selectați un *Articol* din tabelul de rezultate.
+2. Alegeți o *gestiune* din filtre.
+3. Setați vizualizarea stocurilor cu bifă pe **Vizualizare stoc** *Pozitiv* sau *Negativ* în funcție de dorința de a crea o înregistrare de *descărcare* sau *încărcare*.
+4. Apăsați butonul *Generare înregistrări*, care va deschide formularul *Mișcare*, unde este necesar să introduceți valorile pentru *Șablon*, *Cantitate*, *Data înregistrării* și, eventual, *Locația*. **Șabloanele de gestiune** prezente în listă sunt de tip *Încărcare* dacă este activă vizualizarea stocurilor *Negative* și de tip *Descărcare* dacă este activă vizualizarea stocurilor *Pozitive*.
+5. După completarea câmpurilor în formularul *Mișcare*, apăsând butonul *OK* se va deschide **Înregistrarea** tocmai creată pentru eventuale modificări, iar fereastra de *Vizualizare stocuri* va fi deja actualizată conform înregistrării inserate.
 
-- selectați un *Articol* din tabelul de rezultate,
-- alegeți o *gestiune* din filtre,
-- setați vizualizarea stocurilor pe **Vizualizare atoc** *Pozitivă* sau *Negativă* în funcție de dorința de a crea o înregistrare de *descărcare* sau de *încărcare*,
-- apăsați butonul *Generare înregistrări*, care va deschide form-ul *Mișcare*, unde trebuie să introduceți valorile pentru *Șablon*, *Cantitate*, *Dată înregistrare* și, eventual, *Locația*. Șabloanele de gestiune prezente în combo sunt de tip: *Încărcare* dacă opțiunea de vizualizare a stocurilor *Negative* este activ și de *Descărcare* dacă opțiunea de vizualizare a stocurilor *Pozitive* este activ.
-- odată finalizată introducerea câmpurilor în form *Mișcare*, apăsând butonul *OK* va fi deschisă *Înregistrarea* recent creată pentru a putea efectua modificări, iar fereastra de *Vizualizare stocuri* va fi actualizată conform înregistrării inserate.
+Când se introduce în formularul *Mișcare* un **Șablon** cu contrapartidă, acesta va fi propus în câmpul **Șablon CPT** împreună cu **Locația** sa, dacă este codificată în tabelul șabloanelor.  
+Dacă *Locația* este ștearsă, în înregistrare va fi inserată cea codificată în [Harta locațiilor pe articol](/docs/logistics/warehouse/location/item-location-map), dacă există, altfel câmpul va rămâne gol.
 
-Când se introduce în form *Mișcare* un șablon cu contrapartidă, acesta va fi propus în câmpul **Șablon CPT** cu **Locația** sa, dacă este codificată în tabelul cauzelor.    
-Dacă *Locația* este ștearsă, va fi inserată în înregistrare cea codificată în [Harta locațiilor pe articol](/docs/logistics/warehouse/location/item-location-map), dacă este prezentă, altfel câmpul va rămâne gol.
+### Resetarea stocurilor
 
-### Ștergere stocuri
+În fila **Detaliu** este posibilă resetarea în masă a stocurilor de gestiune. De obicei, această funcție este utilizată atunci când în sistem există date incoerente despre stocuri negative care trebuie resetate.
 
-În tab-ul **Detaliu** este posibil să se șterge în mod masiv stocurile de gestiune. De obicei, această funcție este utilizată în cazul în care există date incoerente de stocuri negative în sistem care se doresc a fi anulate.
+**Procedură**:
+1. Alegeți o *gestiune* din filtre.
+2. Setați vizualizarea stocurilor cu bifă pe **Vizualizare stoc** *Pozitiv* sau *Negativ*.
+3. În fila *Detaliu* a stocului articolului, selectați toate articolele care trebuie resetate.
+4. Apăsați butonul *Generare înregistrări*, care va deschide formularul *Mișcări*, din care alegeți **șablonul** și, fără a specifica cantitatea, apăsați *OK*. În acest mod, se va observa resetarea stocurilor articolelor dorite.
 
-#### Procedură
-- alegeți o *gestiune* din filtre,
-- setați vizualizarea stocurilor pe **Vizualizare stoc** *Pozitivă* sau *Negativă*.
-- în tab *Detaliu* stoc articol, selectați toate articolele pe care doriți să le ștergeți,
-- apăsați butonul *Generare înregistrări*, care va deschide form-ul *Mișcări* din care să alegeți șablonul și, fără a specifica cantitatea, apăsați butonul *OK*.  
-În acest fel, stocurile articolelor dorite vor fi șterse.
+## Rezumat și detalii suplimentare
+
+În acest document am explorat funcționalitatea de vizualizare a stocurilor în Fluentis ERP, evidențiind importanța gestionării eficiente a resurselor de gestiune. Au fost descrise diferitele moduri de grupare a datelor și procedurile pentru generarea **înregistrărilor de gestiune** și resetarea stocurilor.
+
+Pentru informații suplimentare, consultați secțiunile referitoare la [Harta locațiilor pe articol](/docs/logistics/warehouse/location/item-location-map) și la gestionarea **înregistrărilor de gestiune**.

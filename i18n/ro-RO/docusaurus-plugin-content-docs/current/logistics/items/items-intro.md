@@ -1,8 +1,24 @@
 ---
-title: Articole
-sidebar_position: 1
+title: "Articole"
+sidebar_position: "1"
+description: "Detalii privind gestionarea și crearea articolelor în sistemul ERP."
+schema: "TechArticle"
+keywords: ["Articole", "gestionare articole", "creare articole", "căutare articole"]
 ---
 
-Fereastra se află pe calea **Logistică > Articole > Articole**, dar și pe calea **Home > Articole > Articole**.
+# Articole
 
-Pentru o explicație detaliată desprea funcționarea acesteia, vă rugăm să consultați articolele: [Caută articole](/docs/erp-home/registers/items/search-items) și [Creează articole noi](/docs/erp-home/registers/items/create-new-item).
+## Cale de acces
+
+Formularul pentru gestionarea articolelor se află pe calea:
+
+- **Logistică> Articole > Articole**  
+sau  
+- **Home > Articole > Articole**
+
+## Resurse suplimentare
+
+Pentru mai multe detalii privind funcționarea formularului, consultați articolele:
+
+- [Caută articole](/docs/erp-home/registers/items/search-items)
+- [Creare articole noi](/docs/erp-home/registers/items/create-new-item)
