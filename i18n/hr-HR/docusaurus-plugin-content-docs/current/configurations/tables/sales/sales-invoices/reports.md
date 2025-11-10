@@ -1,65 +1,68 @@
 ---
-title: Stampe
+title: Ispisi
 sidebar_position: 5
 ---
 
-Sono disponibili diverse **Stampe** standard. Per visualizzare un'anteprima di ciascuna stampa, serve impostare i filtri desiderati e premere il pulsante *Anteprima* sulla barra degli strumenti. Questa operazione mostrerà la stampa a video senza modificare lo stato del documento. Se necessario procedere con la stampa cartacea o salvarla su file, serve invece cliccare sul pulsante *Stampa*.
+Dostupni su različiti standardni **ispisi**. Za pregled ispisa prije same štampe, potrebno je postaviti željene filtre i pritisnuti tipku *Pregled* na alatnoj traci. Ova operacija prikazuje ispis na ekranu bez mijenjanja statusa dokumenta. Ako je potrebno izvršiti papirni ispis ili spremiti datoteku, treba kliknuti tipku *Ispis*.
 
-## Stampa fatture
 
-Questa stampa serve per stampare massivamente le fatture di vendita già inserite a sistema, secondo i filtri specificati nella form iniziale. La prima scelta che viene richiesta è quella tra la stampa temporanea e quella definitiva: la differenza tra le due tipologie è che quella temporanea non ha alcun effetto sullo stato della fattura, mentre la stampa cartacea o digitale effettuata in definitiva porta il documento allo stato *Stampato*. I primi filtri che ci vengono mostrati sono quelli relativi alle informazioni di testata dei documenti, quali il tipo fattura, il numero documento ed il cliente. Nella groupbox *Ricerca avanzata* si possono spuntare gli stati della fattura su cui effettuare il filtro ed il progetto indicato nella testata del documento.
-Nella groupbox *Articolo* è invece possibile filtrare, oltre che sul codice dell’articolo, anche su altre informazioni relative alle righe del corpo del documento, quali il barcode, la descrizione articolo o se sia presente un progetto collegato alla riga articolo.       
-Vengono messi a disposizione due layout diversi per questa stampa, selezionabili dalla combo box della barra degli strumenti. Il primo si chiama *fattura accompagnatoria* e prevede l'inserimento anche dei dati relativi al trasporto insieme ai Dettagli della fattura; il secondo si chiama *fattura di vendita* e non prevede l'inserimento dei dati sul trasporto, quindi è consigliato per le fatture differite.     
-Con questa stampa, ogni fattura viene impaginata separatamente, ognuna con le seguenti sezioni:
-- Intestazione con Logo e informazioni aziendali
-- Informazioni sulla fattura (tipologia, numero, data, ecc.)
-- Informazioni sul cliente (partita iva, agente, ecc.)
-- Dettagli della fattura (codice articolo, quantità, prezzo, ecc.)
-- Riepilogo del DDT (totale merce, spese, totale imposta, ecc.)        
-In questa stampa vengono stampate, solo per le fatture EXTRA UE, le Nomenclature degli Articoli sotto il Codice articolo; inoltre, nella colonna della descrizione articolo viene riportato uno specchietto con il Riepilogo degli importi per nomenclatura.
+## Ispis računa
 
-## Bilancino di fatturazione
+Ova ispis služi za masovno ispisivanje faktura prodaje koje su već unesene u sustav, prema filtrima specificiranim u početnom obrascu. Prvi odabir koji se traži je između privremenog ispisa i konačnog ispisa: razlika između dviju vrsta je ta što privremeni ispis nema nikakav učinak na stanje fakture, dok konačni ispis na papiru ili digitalno dovodi dokument u stanje *Ispisano*. Prvi filtri koji se prikazuju su oni koji se odnose na informacije iz zaglavlja dokumenata, kao što su vrsta fakture, broj dokumenta i kupac. U grupi *Napredno pretraživanje* mogu se označiti stanja fakture prema kojima se primjenjuje filtriranje, kao i projekt naveden u zaglavlju dokumenta.  
+U grupi *Artikl* moguće je filtrirati, osim prema kodu artikla, i prema drugim informacijama vezanim uz redove tijela dokumenta, kao što su barkod, opis artikla ili ako je povezan projekt s redom artikla.  
+Na raspolaganju su dva različita izgleda za ovaj ispis, koja se mogu odabrati iz kombinirane kutije na alatnoj traci. Prvi se zove *prateća faktura* i uključuje unos podataka vezanih uz prijevoz zajedno s detaljima fakture; drugi se zove *faktura prodaje* i ne uključuje unos podataka o prijevozu, stoga se preporučuje za odgođene fakture.       
+S ovim ispisom, svaki račun se paginira zasebno i sadrži sljedeće sekcije:
+- Zaglavlje s logotipom i podacima o tvrtki
+- Podaci o računu (tip, broj, datum itd.)
+- Podaci o klijentu (OIB, agent itd.)
+- Detalji računa (šifra artikla, količina, cijena itd.)
+- Sažetak otpremnice (ukupna roba, troškovi, ukupni porez itd.)        
+Kod ovog ispisa, samo za račune izvan EU, ispisuju se nomenklature artikala ispod šifre artikla; dodatno, u stupcu s opisom artikla prikazuje se mali pregled sa sažetkom iznosa po nomenklatur
 
-La stampa bilancino di fatturazione fornisce un riepilogo dettagliato del fatturato aziendale, organizzando le fatture di vendita in modo da facilitare l'analisi e la gestione contabile.      
-Grazie ai filtri disponibili, è possibile personalizzare la stampa per includere solo le fatture che soddisfano criteri specifici, come quelle emesse a partire da una certa data, quelle relative a determinati articoli, ecc.     
-Questa stampa è suddivisa in diverse sezioni per una visione approfondita degli dati, sotto diversi aspetti.        
-Evidenziando dare, avere e totale nelle varie sezioni, consente di avere una visione chiara delle entrate e delle uscite legate alle vendite.            
-Le principali sezioni sono:
-- Clienti: Mostra il fatturato suddiviso per gruppi di clienti. Sotto ogni gruppo, vengono elencati i clienti con i relativi dare, avere e totale. Alla fine della sezione è indicato il totale per il gruppo.
-- Conti di Ricavo: Riporta le fatture suddivise per fatturato vendite. Solo le fatture con fatturato vendite specificato vengono incluse. Alla fine della sezione, è presente il totale per il fatturato vendite.
-- Pagamenti: Dettaglia il fatturato suddiviso per tipologia di pagamento (ad es. contante, bonifico, carta di credito). Ogni tipo di pagamento ha il proprio riepilogo di dare, avere e totale, con il totale della sezione riportato alla fine.
-- Agenti: Fornisce, per ciascun agente, il netto merce e la provvigione maturata. Questa sezione permette di valutare le performance degli agenti e il loro impatto sul fatturato.
-- Spese: Riporta il dare, l'avere e il totale delle spese accessorie, fornendo una visione delle spese associate alle vendite.          
+## Bilanca fakturiranja  
+
+Ispis bilance fakturiranja pruža detaljan pregled poslovnog prometa, organizirajući prodajne račune na način koji olakšava analizu i računovodstveno upravljanje.
+Zahvaljujući dostupnim filtrima, moguće je prilagoditi ispis tako da uključuje samo one račune koji zadovoljavaju određene kriterije — primjerice, one izdane od određenog datuma ili one koji se odnose na određene artikle.
+Ovaj ispis podijeljen je u nekoliko sekcija koje omogućuju detaljan pregled podataka iz različitih perspektiva.
+Isticanjem stavki duguje, potražuje i ukupno u različitim sekcijama, omogućuje se jasan uvid u prihode i rashode povezane s prodajom.         
+Glavne sekcije su:  
+- Kupci: prikazuje promet razvrstan po grupama kupaca. Ispod svake grupe navedeni su kupci s pripadajućim iznosima duguje, potražuje i ukupno. Na kraju sekcije prikazuje se ukupni iznos za grupu.  
+- Računi prihoda: prikazuje račune razvrstane po vrstama prodajnog prometa. Uključeni su samo računi koji imaju definiranu stavku Promet prodaje. Na kraju sekcije prikazuje se ukupni iznos po vrsti prometa.  
+- Plaćanja: detaljno prikazuje promet prema vrstama plaćanja (npr. gotovina, virman, kreditna kartica). Svaka vrsta plaćanja ima svoj pregled duguje, potražuje i ukupno, a na kraju sekcije prikazuje se zbroj.  
+- Agenti: za svakog agenta prikazuje neto vrijednost robe i ostvarenu proviziju. Ova sekcija omogućuje procjenu učinka agenata i njihov doprinos ukupnom prometu.  
+- Troškovi: prikazuje duguje, potražuje i ukupni iznos dodatnih troškova, pružajući pregled troškova povezanih s prodajom.            
       
-Nella parte finale è presente un Riepilogo per codice iva, dove per ogni gruppo iva viene riportata la descrizione, il totale imponibile e l'iva.      
+U završnom dijelu nalazi se Sažetak po stopi PDV-a, gdje je za svaku stopu PDV-a navedena njezina oznaka, ukupna osnovica i iznos poreza.   
 
-## Lista fatture
+## Popis računa  
 
-Con questa stampa è possibile stampare un elenco delle fatture inserite a sistema.
-I filtri presentati sono i medesimi delle stampe precedenti, ai quali si aggiunge la possibilità di selezionare un ordinamento delle fatture mostrate a scelta tra cliente, numero fattura e tipologia. C’è inoltre la possibilità di selezionare due diverse tipologie di stampa: la stampa *Sintetica* mostra un elenco delle testate delle fatture, con l’indicazione degli importi totali e la suddivisione per le scandenze; la stampa *Completa* mostra invece il dettaglio delle singole righe delle fatture, con indicazioni relative anche alle quantità ed al valore delle stesse.
+Ovim ispisom moguće je ispisati popis računa unesenih u sustav.
+Filtri su isti kao u prethodnim ispisima, uz dodatnu mogućnost odabira načina sortiranja računa — po kupcu, broju računa ili tipu računa.
+Također je moguće odabrati dvije vrste ispisa: *Sažeti* ispis prikazuje popis zaglavlja računa, s prikazom ukupnih iznosa i podjelom po dospijećima; *Detaljni ispis* prikazuje sve stavke pojedinih računa, s informacijama o količinama i vrijednostima.
 
-## Fatturato
+## Promet
 
-Il report analizza il fatturato vendite prodotto da tutti i [Tipi fattura](/docs/configurations/tables/sales/invoices-type) con il flag *In statistica* attivo, mostrando il valore del fatturato e la percentuale di incidenza sul totale di ogni singola riga articolo stampata.      
-Nella form iniziale vengono mostrati alcuni filtri relativi alla testata dei documenti da estrarre, analoghi a quelli dei report già analizzati, ma ci sono alcune possibilità proprie di questo report.
-Nel campo *Anni per il confronto* è possibile indicare gli esercizi per i quali si desidera effettuare un confronto.  Nella groupbox *Opzioni* sono presenti alcuni flag con i quali è possibile mostrare alcuni dati e includere o escludere alcune tipologie di righe articolo nel calcolo: spuntando la voce *Quantità* verranno mostrate, oltre al valore, anche le quantità delle singole righe; *Solo articoli codificati* farà in modo che la stampa prenda in considerazione solo le righe di tipo *Articolo codificato*; *Anche articoli spese* e *Anche articoli omaggio* faranno rientrare nei conteggi anche le righe di tipo spesa e/o omaggio. La combo box *Modalità ordinamento* dà la possibilità di scegliere l’ordinamento con cui verranno mostrati i dati tra: la descrizione del cliente, il codice cliente o l’importo del fatturato. Infine nella griglia *Raggruppa* è possibile impostare i raggruppamenti, a scalare, con cui dovrà essere mostrata la stampa: per popolare la tabella è sufficiente selezionare il raggruppamento desiderato nella tabella *Proprietà* e trascinarlo nella tabella dei raggruppamenti (nel caso in cui si voglia svuotare la tabella dei raggruppamenti è sufficiente premere sul pulsante della barra degli strumenti *Rimuovi raggruppamenti*).
+Ovaj izvještaj analizira promet prodaje ostvaren preko svih [Vrsta računa](/docs/configurations/tables/sales/invoices-type) koji imaju aktiviran pokazivač *U statistici*, prikazujući vrijednost prometa i postotak udjela svake pojedine stavke artikla u ukupnom prometu.
+Na početnom ekranu prikazani su filteri vezani uz zaglavlje dokumenata, slični onima iz prethodnih izvještaja, ali s dodatnim mogućnostima specifičnim za ovaj izvještaj.  
+U polju *Godine za usporedbu* mogu se definirati razdoblja za međusobnu usporedbu. Sekcija *Opcije* sadrži pokazivače za prikaz dodatnih podataka i uključivanje/isključivanje određenih vrsta stavki: *Količina* – prikazuje i količine uz vrijednosti; *Samo kodirani artikli* – uključuje samo artikle s kodom; *Uključi troškovne artikle* i *Uključi poklon artikle* – uključuje te stavke u izračun. Padajući izbornik *Način sortiranja* omogućuje prikaz po kupcu, šifri kupca ili iznosu. U mreži *Grupiraj* mogu se postaviti razine grupiranja povlačenjem željenih vrijednosti iz tablice *Svojstva* u tablicu grupiranja. Za brisanje grupiranja koristi se tipka *Ukloni grupiranja*.
 
-## Statistiche di vendita
+## Statistika prodaje
 
-Questa sezione permette di analizzare le vendite focalizzandosi sui margini di profitto calcolati sul costo dei prodotti o servizi venduti.         
-La stampa prevede due possibili visualizzazioni dei dati, selezionabili dalla combo box sulla barra degli strumenti. La prima visualizzazione, *Margini sul costo di acquisto da listino*, effettua un confronto tra il valore del venduto ed il relativo costo a livello di listino, con l’indicazione del valore del margine e la relativa percentuale. La seconda visualizzazione, *Margini sul costo di entrata merce da DDT*, mostra invece il confronto tra il valore del venduto ed il costo indicato sui movimenti di ricevimento merci registrati a magazzino.
-Nella form iniziale vengono mostrati alcuni filtri relativi alla testata dei documenti da estrarre, analoghi a quelli dei report già analizzati, ma ci sono alcune possibilità proprie di questo report.
-Nella groupbox *Opzioni* sono presenti alcuni flag con i quali è possibile mostrare alcuni dati e includere o escludere alcune tipologie di righe articolo nel calcolo: spuntando la voce *Quantità* verranno mostrate, oltre al valore, anche le quantità delle singole righe; *Solo articoli codificati* farà in modo che la stampa prenda in considerazione solo le righe di tipo *Articolo codificato*; *Anche articoli spese* e *Anche articoli omaggio* faranno rientrare nei conteggi anche le righe di tipo spesa e/o omaggio. La combo box *Modalità ordinamento* dà la possibilità di scegliere l’ordinamento con cui verranno mostrati i dati tra: la descrizione del cliente, il codice cliente o l’importo del fatturato. Infine nella griglia *Raggruppa* è possibile impostare i raggruppamenti, a scalare, con cui dovrà essere mostrata la stampa: per popolare la tabella è sufficiente selezionare il raggruppamento desiderato nella tabella *Proprietà* e trascinarlo nella tabella dei raggruppamenti.        
+Ova sekcija omogućuje analizu prodaje s fokusom na marže profita izračunate na temelju troška prodanih proizvoda ili usluga.  
+Ispis predviđa dva moguća prikaza podataka, koja se mogu odabrati iz kombinirane kutije na alatnoj traci. Prvi prikaz, *Marže na trošak nabave iz cjenika*, uspoređuje vrijednost prodaje s pripadajućim troškom na razini cjenika, s naznakom vrijednosti marže i pripadajućeg postotka. Drugi prikaz, *Marže prema trošku ulaza robe iz otpremnice*, prikazuje usporedbu između vrijednosti prodaje i troška navedenog na kretanjima prijema robe registriranim u skladištu.  
+U početnom obrascu prikazani su neki filtri koji se odnose na zaglavlje dokumenata za vađenje, slični onima u već analiziranim izvještajima, ali postoje i neke mogućnosti specifične za ovaj izvještaj.  
+U grupnom okviru *Opcije* nalaze se neki flagovi pomoću kojih je moguće prikazati određene podatke i uključiti ili isključiti neke vrste redaka artikala u izračunu: označavanjem opcije *Količina* prikazat će se, osim vrijednosti, i količine pojedinih redaka; *Samo kodirani artikli* osigurava da ispis uzima u obzir samo redove tipa *Kodirani artikal*; *Također troškovni artikli* i *Također poklon artikli* uključuju u izračune i redove tipa trošak i/ili poklon. Kombinirana kutija *Način sortiranja* omogućuje odabir načina na koji će se podaci prikazivati, između: opisa kupca, koda kupca ili iznosa fakturiranja. Na kraju, u mreži *Grupiraj* moguće je postaviti grupiranja, u opadajućem redoslijedu, prema kojima će se ispis prikazivati: za populaciju tablice dovoljno je odabrati željeno grupiranje u tablici *Svojstva* i povući ga u tablicu grupiranja.
 
-## Stampe Conai
+##  Ispisi CONAI
 
-Il documento di dichiarazione CONAI (Consorzio Nazionale Imballaggi) è un modulo che le aziende italiane devono compilare per dichiarare i dati relativi agli imballaggi che immettono sul mercato. Questo documento è fondamentale per calcolare il contributo ambientale CONAI, che è un costo che le imprese devono pagare per sostenere la raccolta differenziata e il riciclo degli imballaggi.        
-Grazie ai filtri disponibili, è possibile personalizzare la stampa per includere solo i documenti che soddisfano criteri specifici; è inoltre possibile raggruppare i risultati per Materiale, Cliente o Articolo.         
-Il documento comprende diverse sezioni:
-- Periodo di riferimento
-- Dati anagrafici
-- Peso degli imballaggi
-- Contributo ambientale
-- Esenzione
+Dokument CONAI izjave koristi se za prijavu podataka o ambalaži koju tvrtke stavljaju na tržište.  
+Ovaj dokument omogućuje izračun CONAI ekološke naknade, troška kojim poduzeća podupiru sustav recikliranja ambalaže.  
+Filtri omogućuju odabir samo dokumenata koji zadovoljavaju određene kriterije, a rezultati se mogu grupirati po Materijalu, Kupcu ili Artiklu.         
+Dokument sadrži:  
+- Referentno razdoblje  
+- Osnovne podatke   
+- Težinu ambalaže    
+- Ekološku naknadu    
+- Izuzeće  
 
-Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 
+Više informacija dostupno je u članku: [Pregled i ispis](/docs/guide/common/operations-with-data/reports) 

@@ -1,14 +1,14 @@
 ---
-title: Ricerca fatture di vendita
+title: Pretraživanje prodajnih računa  
 sidebar_position: 1
 ---
 
-La form si apre tramite tramite il percorso **Vendite > Fatture > Ricerca Fatture**.     
+Obrazac se otvara putem **Prodaja > Računi > Pretraživanje računa**.   
 
-Per la spiegazione delle funzionalità comuni ai documenti di vendita consultare la sezione [Vendite](/docs/sales/sales-intro).
+Za objašnjenje zajedničkih funkcionalnosti dokumenata prodaje, pogledajte odjeljak [Prodaja](/docs/sales/sales-intro).
 
-#### Pulsanti specifici
+#### Specifične tipke  
 
-> - **Storno fatturazione**: con questa procedura è possibile stornare parzialmente o totalmente le fatture. Una volta cliccato il pulsante, si aprirà un pop up dove  selezionare le righe articolo da stornare con le relative quantità, inserire il Tipo documento da creare (sarà possibile selezionare solo tipologie di Fatture con natura *Nota di credito*) e inserire la Causale di storno del magazzino (generalmente un carico). E' possibile stornare le righe di tipo 1, 2, 3, 4 e 5.   
-> - **Stato SDI**: in questa combo box viene riportato lo Stato SDI della fattura selezionata tra: Non Esaminata, Controllata, Da Spedire, Annullata, Esclusa, Generata. E' possibile modificare lo Stato SDI direttamente da questa maschera. Per approfondimenti consultare la [Gestione Fatturazione elettronica](/docs/finance-area/e-invoice/create-electronic-invoice).          
-> - **Fatturazione elettronica**: questa sezione contiene lo stato [Fatturazione elettronica](/docs/sales/sales-invoices/invoicing/sales-invoice) del documento selezionato, e il bottone **Registro dei documenti SDI** che si abilita se la fattura selezionata si trova dallo stato SDI *Controllata* in poi; permette di consultare lo storico dei rapporti del documento con lo SDI e la consultazione del file xml generato, senza dover passare per i [Documenti di vendita in uscita](/docs/finance-area/sdi-documents/outgoing-sales-documents)   
+> - **Storno fakturiranja**: ovom procedurom moguće je djelomično ili potpuno stornirati račune. Nakon klika na tipku otvorit će se pop-up u kojem možete odabrati stavke računa koje želite stornirati s pripadajućim količinama, unijeti Vrstu dokumenta koja se treba kreirati (mogu se odabrati samo vrste računa s prirodom *Kreditna nota*) i unijeti Razlog storna za skladište (obično ulaz robe). Moguće je stornirati stavke tipa 1, 2, 3, 4 i 5.     
+> - **SDI status**: u ovom padajućem izborniku prikazuje se SDI status odabranog računa: Ne pregledano, Provjereno, Za slanje, Poništeno, Isključeno, Generirano. SDI status se može promijeniti izravno iz ovog obrasca. Za više informacija, pogledajte [Upravljanje elektroničkim računima](/docs/finance-area/e-invoice/create-electronic-invoice).          
+> - **Elektroničko fakturiranje**: ovaj odjeljak prikazuje status [Elektroničkog fakturiranja](/docs/sales/sales-invoices/invoicing/sales-invoice) odabranog dokumenta, zajedno s tipkom **Registar SDI dokumenata**, koja se aktivira ako je odabrani račun u SDI statusu *Provjereno* ili kasnijem. Omogućuje pregled povijesti interakcija dokumenta sa SDI sustavom i pregled generiranog XML-a, bez potrebe za prolaskom kroz [Izlazne prodajne dokumente](/docs/finance-area/sdi-documents/outgoing-sales-documents).     

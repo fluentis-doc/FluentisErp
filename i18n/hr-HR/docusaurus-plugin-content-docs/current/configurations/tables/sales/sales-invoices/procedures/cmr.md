@@ -3,19 +3,16 @@ title: C.M.R.
 sidebar_position: 3
 ---
 
-La procedura del CMR permette di stampare i documenti per riassumere gli articoli e il peso e volume totale dei documenti selezionati per essere spediti. Nella parte superiore è possibile filtrare le Fatture di vendita, i DDT di vendita e i DDT di conto lavoro. Cliccando Ricerca verranno visualizzati in griglia i documenti che hanno le caratteristiche ricercate e che verranno stampati.     
+CMR procedura omogućuje ispis dokumenata za sažimanje stavki, ukupne težine i volumena odabranih dokumenata koji se šalju. U gornjem dijelu moguće je filtrirati Prodajne račune, Prodajne DDT-ove i DDT-ove za radni nalog. Klikom na Traži u mreži će se prikazati dokumenti koji zadovoljavaju kriterije pretrage i koji će biti ispisani.   
 
-:::tip Consiglio
-Se volete escludere una determinata tipologia di documento dai risultati in griglia per un cliente, inserite una data inziale e una data finale in cui non ci siano documenti. In questo modo non verrà proposta nessuna riga da stampare.
+:::tip Savjet
+Ako želite isključiti određenu vrstu dokumenta iz rezultata u mreži za određenog kupca, unesite početni i završni datum u kojima nema dokumenata. Na taj način neće biti prikazana nijedna stavka za ispis.  
 :::
 
-Per visualizzare i risultati è obbligatorio raggruppare per **Conto**, **Porto**, **Destinatario/Destinazione** oppure **Vettore**, con i relativi flag del filtro.
+Za prikaz rezultata obavezno je grupiranje po **Računu**, **Teretu**, **Primatelju/Odredištu** ili **Prijevozniku**, s pripadajućim oznakama u filtru.
 
-:::tip Consiglio
-Se si raggruppa soltanto per il Conto, non si possono valorizzare Destinatario e Destinazione perchè più righe con lo stesso cliente, ma diversi destinatari/destinazioni, creano una sola riga CMR. E' necessario quindi raggruppare sia per Destinazione che per Conto.
+:::tip Savjet
+Ako se grupira samo po Računu, nije moguće popuniti Primatelja i Odredište jer više stavki istog kupca, ali s različitim primateljima/odredištima, kreira samo jednu CMR stavku. Stoga je potrebno grupirati i po Odredištu i po Računu.  
 :::
 
-Nella griglia di risultato è possibile consultare l'elenco dei conti/porti/destinatari/vettori (in base al raggruppamento selezionato nel filtro) presenti nei documenti. Espandendo le righe, saranno visualizzati fatture, ddt di vendita e ddt di conto lavoro. Alla selezione di una riga saranno stampati tutti i documenti visualizzati espandendo quella riga.   
-Per ogni riga vengono riportati nelle colonne **Descrizione merce** e **Note** rispettivamente i campi **Aspetto esteriore dei beni** e **Annotazioni cliente** inseriti nei documenti. Se non presenti possono essere compilati manualmente.       
-Per ogni documento vengono stampate quattro copie: per il venditore, per il vettore, per il destinatario e una aggiuntiva.
-
+U mreži rezultata moguće je pregledati popis računa/tereta/primatelja/prijevoznika (ovisno o grupiranju odabranom u filtru) prisutnih u dokumentima. Proširenjem redaka prikazuju se računi, prodajne otpremnice i otpremnice za radni nalog. Odabirom reda ispisat će se svi dokumenti prikazani proširenjem tog reda. Za svaki red u stupcima **Opis robe** i **Napomene** prikazuju se polja **Vanjski izgled robe** i **Napomene kupca** unesena u dokumentima. Ako nisu prisutna, mogu se ručno unijeti. Za svaki dokument ispisuju se četiri primjerka: za prodavača, za prijevoznika, za primatelja i jedan dodatni.

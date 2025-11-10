@@ -1,67 +1,67 @@
 ---
-title: Scarico fatture di vendita dal magazzino
+title: Preuzimanje prodajnih računa sa skladišta  
 sidebar_position: 2
 ---
 
-La procedura si apre tramite il percorso **Vendite > DDT > Procedure > Scarico fatture da magazzino**. 
+Procedura se otvara putem puta **Prodaja > Otpremnice > Procedure > Preuzimanje računa sa skladišta**.    
 
-Questa procedura permette di eseguire/ripristinare le operazioni di scarico automatico dal magazzino degli articoli presenti nella fattura. 
+Ova procedura omogućuje izvršavanje/obnavljanje operacija automatskog preuzimanja artikala sa skladišta prisutnih u računu.  
 
-:::tip Ricorda
-Se il documento contiene **articoli fittizi**, la procedura terrà conto della *Tipologia di approvvigionamento* definita nei Parametri MRP dell’articolo:
-- Gli articoli di tipo *Acquisto* non verranno inseriti nella registrazione di magazzino.   
-- Gli articoli di tipo *Produzione* o *Conto Lavoro* verranno registrati in magazzino con il primo livello della distinta base.
+:::tip Zapamti
+Ako dokument sadrži **fiktivne artikle**, procedura će uzeti u obzir *Tip nabave* definiranu u MRP parametrima artikla:  
+- Artikli tipa *Kupovina* neće biti uključeni u skladišnu evidenciju.       
+- Artikli tipa *Proizvodnja* ili *Račun rada* bit će evidentirani u skladištu s prvim nivoom liste materijala.
 :::
 
-### Filtro
+### Filtriranje
 
-In questo tab, l'utente ha la possibilità di cercare e di trasferire le fatture che hanno impostato al loro interno il flag *Stampata*.
+U ovoj kartici korisnik može pretraživati i prenijeti račune koji imaju postavljen flag *Ispisan*.
 
-**Data registrazione magazzino**: permette di specificare la data relativa allo scarico dal magazzino, tranne l'impostazione del *Crea la registrazione con la data documento* nei *Parametri fatture di vendita > tab Scarico*.
+**Datum skladišne registracije**: omogućuje specificiranje datuma vezanog uz preuzimanje sa skladišta, osim ako je aktivirana opcija *Kreiraj registraciju s datumom dokumenta* u *Parametri računa prodaje > kartica Preuzimanje*.    
 
-*Pulsanti specifici*:
+*Tipke specifične*:  
 
-> **Ricerca**: permette di cercare le fatture da scaricare.  
-> **Scarico**: permette di eseguire lo scarico delle fatture selezionate dal magazzino, in base agli algoritmi di scarico e ai parametri inseriti nel successivo tab *Parametri*. 
+> **Traži**: omogućuje pretraživanje računa za preuzimanje.   
+> **Preuzmi**: omogućuje izvršenje preuzimanja odabranih računa sa skladišta, prema algoritmima preuzimanja i parametrima unesenim u sljedećoj kartici *Parametri*.   
 
 :::note NOTA
-Possono essere movimentate a magazzino solo le fatture di tipo Immediato che non derivano da DDT.
+Samo računi tipa **Neposredno** koji ne potječu iz otpremnice mogu se knjižiti na skladište.  
 
-Quando la fattura è generata a partire da DDT, è necessario procedere con lo scarico dei documenti di trasporto. Una volta che tutti i DDT valorizzati nella fattura risultano scaricati, l’attivazione del flag *Stampata* in fattura comporterà anche l’attivazione automatica del flag *Scaricata*.
+Ako je račun generiran na temelju otpremnice, potrebno je prvo izvršiti preuzimanje otpremnica. Kada su sve otpremnice u računu preuzete, aktivacija flag-a *Ispisan* na računu automatski aktivira flag *Preuzeto*.  
 
-Eccezione: se nel tipo fattura è attivo il flag [*Scollega DDT*](/docs/configurations/tables/sales/invoices-type), sarà possibile movimentare a magazzino anche la fattura di vendita.
+Izuzetak: ako je u tipu računa aktiviran flag  [*Odvoji otpremnicu*](/docs/configurations/tables/sales/invoices-type), moguće je knjižiti na skladište i prodajni račun.  
 
-Le fatture non immediate, invece, non possono mai essere movimentate a magazzino: di conseguenza, il flag Scaricata non si attiverà nemmeno dopo lo scarico di tutti i DDT in esse contenuti.
+Računi koji nisu neposredni nikada se ne mogu knjižiti na skladište; flag *Preuzeto* neće se aktivirati ni nakon preuzimanja svih otpremnica u računu.
 :::
 
 ### Parametri
 
-In questa maschera, l'utente ha la possibilità di specificare, per le righe articolo, il modo di trattare le eccezioni.
+U ovoj kartici korisnik može definirati kako se tretiraju iznimke za stavke računa.
 
-In questo caso, se le righe fattura non hanno specificato il magazzino e la causale per lo scarico le opzioni disponibile sono:
+Ako stavke računa nemaju definirano skladište i knjižnu oznaku, dostupne opcije su:  
 
-- **Non effettuare lo scarico della fattura per intero**: non permette lo scarico parziale del DDT;
+- **Ne izvršavaj preuzimanje cijelog računa**: ne dopušta djelomično preuzimanje otpremnice; 
 
-- **Tralasciare l'articolo senza magazzino e causale**: permette lo scarico parziale del documento;
+- **Preskoči artikl bez skladišta i knjižne oznake**: dopušta djelomično preuzimanje dokumenta; 
 
-- **Accettare come magazzino e causale i seguenti dati**: per tutti gli articoli trovati senza magazzino e causale nelle fatture selezionate nella sezione dei filtri, imposta i dati inseriti subito dopo, nei campi: *Magazzino* e *Causale* (assicura lo scarico completo del documento).
+- **Prihvati sljedeće podatke kao skladište i knjižnu oznaku**: za sve artikle bez skladišta i knjižne oznake u odabranim računima, koristi podatke unesene u polja *Skladište* i *Knjižna oznaka* (osigurava potpuno preuzimanje dokumenta).  
 
-*Pulsante specifico*
+*Tipka specifična*:
 
-> **Salva parametri**: permette di salvare i parametri impostati per la registrazione.
+> **Spremi parametre**: omogućuje spremanje parametara za registraciju.
 
-Dopo aver selezionato le fatture (dal tab *Filtro*) e impostato i parametri, le fatture possono essere scaricate con l'aiuto del pulsante *Scarico*.
+Nakon odabira računa (u kartici *Filtriranje*) i postavljanja parametara, računi se mogu preuzeti pomoću tipke *Preuzmi*.
 
-### Riepilogativo
+### Sažetak
 
-In questo tab, l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di scarico effettuate, che soddisfano le condizioni specifiche di cancellazione delle registrazioni di magazzino.
+U ovoj kartici korisnik može pretraživati, pregledavati i poništavati operacije preuzimanja koje zadovoljavaju uvjete brisanja skladišnih registracija.  
 
-I dati nelle griglie in basso, **Fatture** e **Registrazione**, corrispondono alla registrazione di scarico selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare la fattura e la sua registrazione di magazzino (doppio click sulla riga).
+Podaci u mrežama ispod, **Računi** i **Registracija**, odgovaraju odabranoj registraciji preuzimanja u gornjoj mreži (nakon filtriranja). Također, u ovim mrežama moguće je pregledati račun i njegovu skladišnu registraciju dvostrukim klikom na red.  
 
-*Pulsanti specifici*:
-> **Ricerca fatture scaricate**: per  cercare le fatture scaricate. Il risultato di questa procedura viene visualizzata nella griglia di risultato.  
-> **Cancella scarico**: per  cancellare per intero le operazioni di scarico selezionate nella griglia di risultato.  
-> **Ripristina fatture**: per  cancellare le operazioni di scarico selezionate nella griglia di risultato, per la fattura in uso nella griglia dei dettagli.
+*Tipke specifične*:
+> **Pretraži preuzete račune**: pretražuje već preuzete račune i prikazuje rezultate u mreži.     
+> **Poništi preuzimanje**: briše u potpunosti odabrane operacije preuzimanja u mreži rezultata.  
+> **Obnovi račune**: briše odabrane operacije preuzimanja za račun prikazan u mreži detalja.
 
 
 

@@ -44,83 +44,105 @@ Ovdje se definiraju opće postavke knjiženja računa.
 
 3. Ako je uključena oznaka **Zamijeni konto artikla**, koristi se poseban konto za storniranje unaprijed definiran u dodatnom polju.
 
-**Codice IVA per omaggi in registro iva**: compilando questo campo (generalmente con un codice iva corrispondente alla casistica del "fuori campo iva" o "escluso..." verrà eseguita automaticamente una riga di storno del valore dell'omaggio sul registro iva, laddove non venga esercitata la rivalsa iva nei confronti del cliente)
+**Šifra PDV-a za poklone u PDV registru**: popunjavanjem ovog polja (obično šifrom PDV-a koja odgovara slučaju “izvan područja PDV-a” ili “izuzeto...”) automatski će se unijeti redak za storno vrijednosti poklona u PDV registru, u slučajevima kada se ne primjenjuje prijenos PDV-a na klijenta.  
 
-**Conto storno IVA**: usato nel caso in cui l'articolo omaggio in fattura non abbia il flag **Rivalsa IVA**, con il quale si indica se l'iva applicata all'articolo omaggio è a carico (con flag) o meno (senza flag) del cliente. Questo importo sarà registrato e stornato solo nel caso in cui sia inserito il *Conto di storno iva*, senza del quale l'operazione sarà da gestire manualmente in contabilità (anche in questo campo c'è un messaggio di conferma/avviso utente della mancata impostazione).
+**Konto storna PDV-a**: Koristi se u slučaju kada stavka poklona na računu **nema flag “Naknada PDV-a”**, kojim se označava je li PDV primijenjen na poklon na teret kupca (s flagom) ili nije (bez flaga).  
+Ovaj će se iznos evidentirati i stornirati samo ako je unesen *konto storna PDV-a*; bez njega će se postupak morati ručno obraditi u knjigovodstvu.  
+U ovom polju prikazuje se i poruka upozorenja korisniku ako postavka nije definirana.
 
-**Raggruppa conti delle righe automatiche**: con il flag attivo i conti inseriti automaticamente nella sezione del libro giornale (come ad esempio nella contabilizzazione omaggi dove il cliente compare più volte, una volta per il totale fattura e poi gli vengono stornati gli omaggi) verranno raggruppati per sottoconto formando una registrazione compatta.
+**Raggruppa conti delle righe automatiche**: Kada je flag aktivan, konta automatski unesena u odjeljak glavne knjige (primjerice kod knjiženja poklona gdje se kupac pojavljuje više puta — jednom za ukupni iznos računa, a zatim za storno poklona) bit će grupirana po podkontu, čime se formira sažeta i pregledna knjižna evidencija.
 
-**Sottoconto sconto finanziario**: questo campo viene utilizzato per registrare lo sconto finanziario collegato alla scadenza fattura.
+**Podkonto financijskog popusta**: Ovo se polje koristi za evidentiranje financijskog popusta povezanog s dospijećem računa.
 
-#### Pulsante specifico
+#### Posebna tipka  
 
-> **Salva parametri**: permette di salvare i parametri impostati per la contabilizzazione omaggi.
+> **Spremi parametre**: omogućuje spremanje postavljenih parametara za knjiženje poklona.  
 
-Dopo aver selezionato le fatture (dal tab *Contabilizzazione*) e impostato i parametri, le fatture possono essere contabilizzate con l'aiuto del pulsante *Contabilizzazione fatture*.
+Nakon što su računi odabrani (na kartici *Knjiženje*) i parametri postavljeni, računi se mogu proknjižiti pomoću tipke *Knjiženje računa*.
 
-### Precedenti
+### Prethodne operacije  
 
-La form presenta la lista delle operazioni di contabilizzazione eseguite, al fine di visualizzarle ed eventualmente annullarle attraverso gli appositi pulsanti.
+Forma prikazuje popis izvršenih knjiženja kako bi ih se moglo pregledati i eventualno poništiti putem odgovarajućih tipki.
 
-L'annullamento sarà possibile solo se il periodo è ancora modificabile (stampa libro giornale, registro iva non stampato, liquidazione periodica non stampata, chiusura conti non eseguita, partite contabili chiuse in un incasso o in un effetto).
+Poništavanje je moguće samo ako je razdoblje još uvijek otvoreno za izmjene  
+(ispis glavne knjige nije izvršen, PDV registar nije ispisan, periodična likvidacija nije provedena, zatvaranje konta nije izvršeno, a knjižene stavke nisu zatvorene naplatom ili mjenicom).
 
-**Contabilizzazione fatture**: griglia con i dettagli delle operazioni eseguite. Viene popolata dopo la procedura di ricerca e possono essere selezionate le operazioni sulle quale applicare le funzioni del ribbon.
+**Knjiženje računa**: mreža s detaljima izvršenih operacija. Popunjava se nakon pretraživanja i omogućuje odabir operacija na koje se primjenjuju funkcije iz trake izbornika.
 
-I dati nelle griglie in basso, **Fatture** e **Registrazione contabile** corrispondono all'operazione selezionata nella griglia superiore. Un doppio click nella sezione delle fatture/registrazioni consentirà di visualizzare la fattura/la registrazione contabile relativa.
+Podaci u donjim mrežama, **Računi** i **Računovodstveni zapis**, odgovaraju odabranoj operaciji u gornjoj mreži.  
+Dvostruki klik u odjeljku računa ili zapisa omogućuje prikaz određenog računa ili odgovarajućeg knjiženja.
 
-#### Pulsanti specifici  
-> **Ricerca contabilizzazione**: ricerca la lista delle contabilizzazioni eseguite.  
-> **Anteprima contabilizzazione**: per visualizzare l'anteprima di stampa della contabilizzazione.  
-> **Ripristina contabilizzazione**: con questo pulsante sarà cancellata tutta la contabilizzazione effettuata, con tutte le fatture associate.  
-> **Ripristina fattura**: il pulsante esegue il ripristino della singola fattura selezionata.  
+#### Posebne tipke 
+> **Pretraži knjiženja**: pretražuje popis izvršenih knjiženja.   
+> **Pregled knjiženja**: prikazuje ispis knjiženja prije pohrane.   
+> **Vrati knjiženje**: ovom tipkom briše se cijelo knjiženje i svi povezani računi.    
+> **Vrati račun**: tipka vraća samo odabrani račun.  
 
-#### Messaggi di errore
+#### Poruke o pogreškama
 
-Questi errori possono derivare, in alcuni casi da una errata gestione dei dati da parte dell’utente, ovvero mancano delle informazioni essenziali, in altri casi possono derivare da configurazioni o settaggi errati a livello di parametri o dati di base.
+Ove pogreške mogu nastati zbog nepravilnog unosa podataka od strane korisnika, tj. zbog nedostatka obaveznih informacija,  
+ili zbog pogrešnih konfiguracija i postavki parametara ili osnovnih podataka.
 
-Gli errori di configurazione o mancanze nei dati di base si riferiscono perlopiù ad ambienti nei quali non è stata lanciata la procedura di Fast Start.
+Pogreške u konfiguraciji ili nedostaci u osnovnim podacima najčešće se odnose na okruženja u kojima nije pokrenut postupak Fast Start.
 
-:::note[Messaggio]
-La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **non esiste il conto di contropartita**.
+:::note[Poruka]
+Račun broj ... tip ... godina ... od AAA d.o.o. ne može biti proknjižen jer **ne postoji konto protustavke**.
 :::
 
-La contropartita contabile, nel contesto di una fattura di vendita o di acquisto, deve intendersi come l’indicazione del conto destinato ad accogliere il ricavo o il costo. 
-Quindi, più in generale, la registrazione contabile di una fattura poggia normalmente su tre elementi essenziali che possiamo ricontrollare aprendo la [**causale contabile**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) con la quale stiamo tentando di contabilizzare questa fattura.
-Per verificare prima di tutto quale sia questa causale, passiamo dalla tabella dei [**tipi fattura**](/docs/configurations/tables/sales/invoices-type) dove è definito il collegamento.
-Ecco dunque i tre elementi, il cliente o fornitore, l’iva ed il costo o ricavo, se manca uno di questi elementi la registrazione non sta in piedi.
+Protustavka u kontekstu prodajnog ili ulaznog računa predstavlja konto koji prima prihod ili trošak.   
+Općenito gledano, knjiženje računa u glavnoj knjizi temelji se na tri osnovna elementa,  
+koje možemo provjeriti otvaranjem [**predloška knjiženja**](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) kojim pokušavamo proknjižiti taj račun.    
+Da bismo prije svega provjerili koji je to predlozak, potrebno je otvoriti tablicu [**vrste računa**](/docs/configurations/tables/sales/invoices-type) u kojoj je degfinirana veza između vrste računa i predloška knjiženja. Tri osnovna elementa su: kupac ili dobavljač, PDV te trošak ili prihod. Ako nedostaje bilo koji od tih elemenata, knjiženje se ne može ispravno provesti.
 
-Dentro la causale contabile, creata o modificata manualmente rispetto allo standard generato dal Fast Start potrebbe trarci in inganno se in apparenza sembra che il conto di ricavo sia stato definito come un conto fisso essendoci il codice di conto e sottoconto e pertanto dovrebbe usarlo e limitarsi a sostituire il conto generico del cliente con il sottoconto di dettaglio che prende dalla testata della fattura.
+Unutar predloška knjiženja, koji je ručno kreiran ili izmijenjen u odnosu na standard generiran putem *Fast Start*-a,  
+može se steći pogrešan dojam da je konto prihoda definiran kao fiksan,  
+budući da su uneseni i konto i podkonto.  
+Na prvi pogled, čini se da bi program trebao jednostavno koristiti taj konto  
+i zamijeniti opći konto kupca s podkontom preuzetim iz zaglavlja računa.
 
-In realtà essendo impostato il criterio di lettura dell’imponibile sottoconto, il programma cerca in ogni caso il dato per la sostituzione, e lo cerca in primo luogo nella fattura, in secondo luogo nell’anagrafica cliente.
+Međutim, budući da je postavljen kriterij čitanja oporezivi podkonto, program u svakom slučaju traži podatak za zamjenu — najprije u samom računu,  
+a zatim u šifarniku kupca.
 
-**Dunque per risolvere occorre definire nella fattura il dato del fatturato vendite, dato che potrebbe essere associato direttamente all’anagrafica articolo codificato.
-In alternativa possiamo inserire in anagrafica cliente il conto di default. In questo modo la contabilizzazione automatica può funzionare.**
+Dakle, da bi se problem riješio, potrebno je u računu definirati konto prihoda od prodaje, koji može biti povezan izravno s kodiranim artiklom. Alternativno, može se unijeti zadani konto u šifarnik kupca. Na taj način automatsko knjiženje može pravilno funkcionirati.
 
-Nota: anche il criterio di lettura *Totale imponibile* nella causale contabile non può funzionare perché tenterebbe di leggere comunque la griglia iva della registrazione dove manca un dato obbligatorio che è sempre il conto di contropartita. Dunque non è prevista una modalità di contabilizzazione con sottoconto fisso, occorre gestire sempre il fatturato vendite e acquisto o le anagrafiche cliente fornitore.
+Napomena: kriterij čitanja *Ukupno oporezivo* u predlošku knjiženja neće raditi,  
+jer pokušava čitati iz PDV mreže u kojoj nedostaje obavezni podatak — konto protustavke.  
+Zbog toga knjiženje s fiksnim podkontom nije podržano;  
+uvijek je potrebno upravljati prihodima i troškovima kroz šifarnike kupaca i dobavljača.
 
-:::note[Messaggio]
-La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **la registrazione è bilanciata**.
+:::note[Poruka]
+Račun s brojem ... tip ... godina ... tvrtke AAA d.o.o. ne može biti knjižen jer je **knjiženje uravnoteženo**.
 :::
 
-Al di la del significato più ovvio del messaggio, ovvero quello che impedisce, in relazione ai settaggi dei parametri della causale contabile, di salvare una registrazione dove il totale dare non quadra con il totale avere, un possibile motivo di questa situazione potrebbe essere legato ancora ad un errato settaggio della causale stessa, ad esempio la mancanza nello schema contabile della riga relativa all'iva e dunque in presenza di una fattura che contiene iva e dello scorporo eseguito dalla prima parte della procedura, non riuscirebbe comunque a generare una scrittura contabile (nella parte relativa al libro giornale) che possa bilanciare, generando l'errore.
+Iako se na prvi pogled čini očitim da ova poruka znači zabranu spremanja knjiženja  
+u kojem ukupni dug ne odgovara ukupnom potraživanju (prema postavkama u predlošku knjiženja),  
+mogući uzrok može biti i pogrešna konfiguracija samog predloška —  
+primjerice, ako u računovodstvenoj shemi nedostaje redak koji se odnosi na PDV.  
+U tom slučaju, ako račun sadrži PDV i ako je već izvršeno razdvajanje oporezivog dijela,  
+sustav neće moći stvoriti knjiženje u glavnoj knjizi koje bi bilo uravnoteženo,  
+pa će se generirati greška.
 
-Nota: il blocco è sottoposto a parametro ma si sconsiglia vivamente di disattivarlo per accettare scritture sbilanciate, se non in casi del tutto eccezionali, oppure temporaneamente per verificare volutamente il risultato (sbagliato) della contabilizzazione.
+Napomena: ova blokada ovisi o parametru, ali se strogo ne preporučuje njezino isključivanje  
+radi prihvaćanja neuravnoteženih knjiženja, osim u iznimnim ili privremenim slučajevima  
+kada se želi testirati rezultat (koji će biti netočan).
 
-:::note[Messaggio]
-La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **nel libro giornale ci sono 1 righe con un conto senza un sottoconto**.
+:::note[Poruka]
+Račun s brojem ... tip ... godina ... tvrtke AAA d.o.o. ne može biti knjižen jer **u glavnoj knjizi postoji 1 redak s kontom bez podkonta**.  
 :::
 
-Questo messaggio (meno immediato nell'interpretazione) fa riferimento al fatto che il software non può salvare registrazioni dve non sia definito il sottoconto di dettaglio.
+Ova poruka (koja se teže tumači) znači da program ne može spremiti knjiženje  
+ako nije definiran detaljni podkonto.
 
-Tra i vari motivi per i quali questo potrebbe accedere, ovviamente legati al fatto che lo schema della causale contabile definisce i mastri (senza sottoconto di dettaglio) anche per quanto riguarda i clienti e fornitori, potrebbe trattarsi del fatto che all'interno dei [**parametri di contabilità**](/docs/configurations/parameters/finance/accounting-parameters) manca l'abbinamento tra il tipo conto (magari una nuova tipologia aggiunta) ed il mastro di riferimento. Tale parametro mancante impedisce l'esecuzione dell'automatismo che completa la scrittura contabile.
+Među raznim razlozima zbog kojih se ovo može dogoditi, a koji su povezani s tim da predložak knjiženja definira glavne kontne grupe (bez detaljnog podkonta), uključujući i kupce i dobavljače, može se raditi o tome da u [**parametrima računovodstva**](/docs/configurations/parameters/finance/accounting-parameters) nedostaje veza između tipa konta (npr. novododana kategorija) i pripadajuće glavne grupe. Odsutni parametar sprječava izvođenje automatizma koji dovršava knjiženje.
 
-:::note[Messaggio]
-La fattura con numero ... tipo ... anno ... di AAA S.p.a. non può essere contabilizzata perche **il valore delle partite non corrisponde al movimento contabile**.
+:::note[Poruka]
+Račun s brojem ... tip ... godina ... tvrtke AAA d.o.o. ne može biti knjižen jer **vrijednost otvorenih stavaka ne odgovara knjiženju**.
 :::
 
-Questo messaggio solitamente corrisponde alla mancanza dell'indicazione delle condizioni di pagamento in fattura, pertanto la partita non può aprirsi e chiaramente si cre la differenza e si viene bloccati dal software.
+Ova poruka obično ukazuje na to da u računu nedostaju definirani uvjeti plaćanja,  
+pa se stavka ne može otvoriti, što uzrokuje razliku i blokadu procesa.
 
-La scelta di essere bloccati nella contabilizzazione è settabile in un parametro della causale contabile.
+Mogućnost blokiranja knjiženja ovisi o parametru unutar predloška knjiženja.
 
 ---
 
