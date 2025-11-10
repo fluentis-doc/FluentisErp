@@ -5,19 +5,16 @@ sidebar_position: 2
 
 The main form of **Fluentis** is composed of several areas with different functionalities:
 
-## Upper Section
+## Ribbon Bar 
 
-The toolbar contains combo boxes to select **Company** and/or **Division** that are used for data entry and the editor to facilitate searching for forms within the application.
+The ribbon contains the main menus, Home, with some basic settings, and the specific menus for the various functional areas.
 
-Right below, there are various tabs:
 
-### First Tab
-
-Contains information about **Versions**, allows you to **Print**, contains detailed information about the **License**, and allows you to **Close** the program.
 
 ### Home Tab
 
 The tab contains:
+-The combo-boxes for selecting the **Company** and/or the **Division** that are used for data entry.
 
 - A combo box to select the desired **Language**,
     
@@ -43,25 +40,44 @@ For detailed information on the form in use, the user can consult the documentat
 
 ## Left Panel
 
-Contains the [Form Navigator](/docs/form-navigator/data-grid-settings) with information about the active form.
+Contains the [Form Navigator](/docs/form-navigator/data-grid-settings) with information about the active form and the possibility of managing the elements of the form itself.
 
 ## Right Panel
 
 Contains:
 
-**[Tools](/docs/applications/applications-intro)** contains various complementary applications: ARM, Audit Trail, BizLink, Business Intelligence, CRM, Document Management, Unsupported Applications.
+**[Tools](/docs/applications/applications-intro)** contains several complementary applications:
+
+- Application Resource Manager: a reduced selection of useful commands also present in the eponymous application for the "backend" management of the system.
+- Audit Trail: a component that allows for the traceability of user operations.
+- BizLink: the cross-cutting component that manages all input and output communications (data export and import).
+- Document Management: the cross-cutting component that manages document archiving related to various forms, or the automatic archiving of files exported from the ERP (such as electronic invoices, telematic tracks of tax and bank documents, etc.).
+- Supervisor: the component that allows for the automation of checks performed directly on the database.
+- Unsupported applications: present for backward compatibility and/or obsolete functionalities.
 
 **[Object Navigator](/docs/object-navigator/object-navigator-intro)** contains information about the active object, useful for customizing forms with the addition of further data or information.
 
 **[Context Panel](/docs/panels/context-panel)** based on the settings, Fluentis allows for the display of contextual information related to the selected field (e.g., if you select the item, the application shows its availability).
 
-**[Configurations](/docs/configurations/configuration)** contains information that will allow the definition of module management.
+**[Configuration](/docs/configurations/configuration)** contains information that will allow the definition of module management.
 
-**Fluentis Chat** allows you to interact with users enabled for this communication service, both internally within the company context and externally to access Fluentis support. The chat is a very useful tool for quickly sharing information with another operator, sharing digital documents, or even active documents from the management system.
 
-## Lower Section
+## Status Bar 
 
-At the bottom of the application, the status bar contains a series of information explained below:
+At the bottom of the application, there is a status bar that contains information about the database connection, which is displayed in the following order: *User*, *Server\Database*, *Company*, (*Division*).
+
+## Multifunction Bar 
+
+**Settings**: Allows access to a series of system functionalities:
+
+- Solutions: which provides information about the available software packages
+- Information: which displays a popup containing the currently used version
+- Print Report: which allows printer management
+- License: which contains information about the license and the software packages available based on your license
+- Startup Forms: a utility that allows you to configure which forms to run automatically when the application opens
+- Settings: parameters for choosing the graphical layout of the application (these are alternative layouts compared to the standard one) as well as the choice to display or not the status bar and the storage of login data.
+- Close: terminates the application
+
 
 **Task**: allows a quick link to the management of pending activities (derived from the configured Workflow procedures);
 
@@ -91,6 +107,4 @@ See also [Resource Calendar Planning](/docs/project-management/transverse-proced
 
 **Find**: allows you to view all application commands. Used together with the search field located at the top of the main menu, we can find a specific command or commands grouped together;
 
-**...**: allows the user to access, with a right-click, the **Navigation Options** window to select the maximum number of items to display (arrows up/down to increase/decrease) and to set the order in which they should be displayed (arrows up/down to change the order). Use the 'OK' button to confirm the choices and the 'Reset' button to return to the standard situation;
 
-**Database**: the displayed information refers to the connection to the database and are, in the order displayed: *User*, *Server/Database*, *Company*.
