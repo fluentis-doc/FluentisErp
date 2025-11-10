@@ -13,7 +13,14 @@ on:
 #       - 'docs/**' # Folder to watch for changes
 
 jobs:
+  check-actor:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo "Workflow triggered by ${{ github.actor }}"
+
   create-issues:
+    needs: check-actor
+    if: ${{ github.actor != 'rodica1234' }}
     runs-on: ubuntu-latest
     permissions:
         issues: write
