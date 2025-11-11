@@ -134,8 +134,6 @@ Aceste două opțiuni sunt active implicit, dar utilizatorul le poate dezactiva.
 
 După selectarea lotului dorit, faceți clic pe **Listează** sau pe **Vizualizare raport** pentru a vizualiza raportul cu rezultatele căutate.
 
-## Rezumat și detalii suplimentare
+## Concluzie
 
 **Registrul loturilor și trasabilitatea** din Fluentis ERP sunt instrumente fundamentale pentru gestionarea și controlul loturilor de produse. Ele permit monitorizarea fiecărei etape a lotului — de la crearea sa până la utilizarea finală. Datorită funcționalităților dedicate, companiile pot garanta conformitatea legislativă și o gestionare eficientă a materialelor.
-
-Pentru detalii suplimentare, se recomandă consultarea secțiunilor corelate din document.
