@@ -132,7 +132,7 @@ După configurarea filtrelor dorite, se face clic pe butonul **Căutare** pentru
 
 Aceste două opțiuni sunt active implicit, dar utilizatorul le poate dezactiva.
 
-După selectarea lotului dorit, faceți clic pe **Imprimare** sau pe **Previzualizare imprimare** pentru a vizualiza raportul cu rezultatele căutate.
+După selectarea lotului dorit, faceți clic pe **Listează** sau pe **Vizualizare raport** pentru a vizualiza raportul cu rezultatele căutate.
 
 ## Rezumat și detalii suplimentare
 
