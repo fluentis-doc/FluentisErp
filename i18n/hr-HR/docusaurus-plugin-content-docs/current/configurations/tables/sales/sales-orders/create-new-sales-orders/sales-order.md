@@ -1,199 +1,200 @@
 ---
-title: Nuovo ordine cliente
+title: Novi nalog kupca  
 sidebar_position: 2
 ---
 
-La form **Crea ordine cliente** si apre tramite il percorso **Vendite > Ordini clienti > Nuovo ordine** oppure tramite il pulsante che si trova nella form [Ricerca ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
+Forma **Kreiraj narudžbu kupca** otvara se putem puta **Prodaja > Narudžbe kupaca > Nova narudžba** ili putem tipke koja se nalazi u formi [Pretraga narudžbi kupaca](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders).
 
-## *Come creare un ordine cliente*
+## *Kako kreirati narudžbu kupca*
 
-## **1. Dati obbligatori**
+## **1. Obavezni podaci**
 
-Per continuare la creazione del ordine cliente, l'utente deve inserire i campi **obbligatori**:
+Kako bi se nastavilo s kreiranjem narudžbe kupca, korisnik mora unijeti **obavezna** polja:  
 
-- **Tipo ordine**: predefinito in  Configurazione > Tabelle > Vendite > [Tipi ordini](/docs/configurations/tables/sales/sales-order-types); rimandiamo alla documentazione relativa alla tabella per lo studio delle varie configurazioni possibili, ma per poter inserire un ordine è necessario che il tipo Ordine abbiamo definito la tipologia di numerazione, dato obbligatorio. In base alla configurazione presente nel tipo Ordine si possono aprire scenari diversi per l’inserimento dell’ordine cliente, ad esempio avere la creazione automatica di un progetto, la gestione a prezzi ivati, la gestione delle matrici, ecc.   
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione ordini clienti](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione. La numerazione associata alla tipologia di ordine prevede generalmente una progressione automatica basata su data e numero, con una funzione di recupero che copre eventuali buchi nella sequenza (ad esempio, causati dalla cancellazione di documenti). Questo comportamento è regolato da due flag specifici nella tabella della numerazione. Se l'utente desidera inserire manualmente il numero, può disabilitare il flag di progressione data-numero (che garantisce l'incremento della numerazione nelle date future) e il flag di recupero numeri. Inoltre, dovrà abilitare il flag della numerazione esterna, segnalando così al sistema che la numerazione sarà gestita manualmente. 
-- **Cliente**: usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure tastando [direttamente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  Inserendo il cliente, vengono automaticamente popolati, se presenti in anagrafia, i seguenti campi, che spiegheremo nelle sezioni successive: divisa, nazione, lingua, zona, spedizione, listino ed eventuali sconti, pagamenti, sconti, spese, agenti, destinazione, vettori, extra data.               
-- **Data ordine**: indica la data di creazione dell’ordine. Questa data è fondamentale per il calcolo delle scadenze e delle eventuali condizioni di pagamento. Viene proposta la data odierna, modificabile; nel caso in cui la numerazione preveda una progressione di data e numero, e io inserisca una data nel passato, Fluentis controllerà la disponibilità di numeri in quella data per garantire la progressione, e se non presente segnalerà l’utente che non ci sono numeri disponibili in quella data.      
-- **Tipo ritenuta**: questo campo è visibile solo se il cliente gestisce la ritenuta d’acconto, e quindi se in anagrafica presenta l’omonimo flag e il tipo di ritenuta, nel tab [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information). La ritenuta d'acconto è una trattenuta fiscale applicata su pagamenti per prestazioni lavorative o professionali, anticipata al fisco dal committente e successivamente dedotta dall'imposta sul reddito del beneficiario. Per una gestione corretta di questa funzionalità, nella tabella tipi ritenuta deve essere codificato correttamente il codice per la fatturazione elettronica. il documento reperirà in automatico l'assoggettamento alla ritenuta per le righe sulle quali è possibile fare il calcolo, e in automatico calcolerà l'importo della ritenuta. 
+- **Vrsta narudžbe**: zadano u  Konfiguracija > Tablice > Prodaja > [Vrste narudžbi](/docs/configurations/tables/sales/sales-order-types); za detaljno razumijevanje različitih mogućnosti konfiguracije pogledaj pripadajuću dokumentaciju. Za unos narudžbe potrebno je da vrsta narudžbe ima definiranu tipologiju numeracije, što je obavezan podatak. Ovisno o konfiguraciji vrste narudžbe, mogu se otvoriti različiti scenariji prilikom unosa narudžbe kupca — primjerice automatsko kreiranje projekta, upravljanje cijenama s PDV-om, upravljanje matricama itd.     
+- **Broj**: svakom se dokumentu dodjeljuje broj prema numeraciji definiranoj u tablici [Numeracija narudžbi kupaca](/docs/configurations/tables/fluentis-numerations)  i prema vrsti dokumenta koja sadrži numeraciju. Numeracija povezana s vrstom narudžbe obično ima automatsku progresiju temeljenu na datumu i broju, s funkcijom „oporavka” koja pokriva eventualne praznine u slijedu (npr. zbog brisanja dokumenata). Ovo ponašanje reguliraju dva specifična flag-a u tablici numeracije. Ako korisnik želi ručno unijeti broj, može isključiti flag progresije datum-broj i flag oporavka brojeva. Također mora uključiti flag vanjske numeracije, čime se sustavu signalizira da će se numeracija unositi ručno.  
+- **Kupac**: pomoću [pomoći polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [izravnim unosom](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).   Nakon unosa kupca, automatski se popunjavaju, ako su definirani u registru, sljedeća polja: valuta, država, jezik, zona, isporuka, cjenik i eventualni popusti, plaćanja, popusti, troškovi, agenti, odredište, prijevoznici, dodatni podaci.                 
+- **Datum narudžbe**: označava datum kreiranja narudžbe. Ovaj datum je važan za izračun rokova i eventualnih uvjeta plaćanja. Predlaže se današnji datum, ali se može izmijeniti; ako numeracija predviđa progresiju po datumu i broju, a korisnik unese datum u prošlosti, Fluentis će provjeriti dostupnost brojeva za taj datum i upozoriti ako ih nema.        
+- **Vrsta zadržavanja**: ovo se polje vidi samo ako kupac koristi zadržavanje (ritenutu), odnosno ako je u njegovoj kartici označen istoimeni flag i vrsta zadržavanja u kartici [fiskalne informacije](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information). Zadržavanje je porezno zadržavanje primjenjivo na isplate za profesionalne usluge. Za ispravno funkcioniranje, u tablici vrsta zadržavanja mora biti ispravno definiran kod za elektroničko fakturiranje. Dokument automatski primjenjuje zadržavanje na redove gdje je to moguće i automatski računa iznos zadržavanja.  
 
-La form contiene una serie di tab.
+Forma sadrži niz kartica.
 
-## **2. Testata**
+## **2. Zaglavlje**
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l' [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+Nakon što su odabrani obavezni podaci u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)  ili pomoću [pomoći polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-:::note Ricorda
-Se il documento viene *creato automaticamente*, questi dati vengono ripresi dal *documento d'origine* da cui è stata generato.
+:::note Zapamti
+Ako se dokument *kreira automatski*, ti se podaci preuzimaju iz *izvornog dokumenta* iz kojeg je generiran.
 :::
 
-### 2.1 Dati cliente
 
-Inserendo il **Cliente**, vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica cliente](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
-- **Divisa**: sezione contenente i dati [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: sezione contenente i dati [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
-- **Spedizione**: sezione contenente i dati [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
-- altri campi proposti con la scelta del cliente, ma modificabili: [Destinazione](/docs/guide/common/glossary/glossary-intro#destination), [Destinatario](/docs/guide/common/glossary/glossary-intro#recipient).
+### 2.1 Podaci o kupcu
 
-### 2.2 Dati facoltativi testata
+Unosom **Kupca**, automatski se *predlažu* svi specifični podaci u kartici **Zaglavlje**, prema podacima prethodno definiranim u [registru kupaca](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), u odgovarajućim poljima adrese i *sekcijama*:  
+- **Valuta**: sadrži [valutu](/docs/guide/common/glossary/glossary-intro#currency), [tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Država**: sadrži [državu](/docs/guide/common/glossary/glossary-intro#country), [jezik](/docs/guide/common/glossary/glossary-intro#language), [zonu](/docs/guide/common/glossary/glossary-intro#zone).
+- **Isporuka**: sadrži [način isporuke](/docs/guide/common/glossary/glossary-intro#shipment), [prijevoz](/docs/guide/common/glossary/glossary-intro#carriage), [pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [cjenik prodaje](/docs/guide/common/glossary/glossary-intro#sales-price-list) i [vrijedi do](/docs/guide/common/glossary/glossary-intro#validity-date)
+- Ostala polja koja se predlažu s izborom kupca, ali su izmjenjiva: [Odredište](/docs/guide/common/glossary/glossary-intro#destination), [Primatelj](/docs/guide/common/glossary/glossary-intro#recipient).
 
-- **Data consegna**: in questo campo è possibile inserire la data prevista di consegna della merce.
-- **Data merce pronta**: in questo campo è possibile inserire la data in cui la merce sarà pronta; questa data deve essere minore o uguale alla precedente.      
-- **Confermato**: questo flag indica che l'ordine è confermato e può essere quindi evaso; accanto è presente la **Data conferma**; questa condizione è obbligatoria se si vuole far procedere l’ordine sia per l’eventuale evasione nei documenti successivi (quali picking, ddt e fatture), sia per l’eventuale gestione della pianificazione di produzione.        
-- **Stampato**: si attiva quando viene lanciata la stampa dell'ordine ed identifica che il documento è stato stampato; questo flag è importante anche per permettere l'evasione dell'ordine in altri documenti.      
-- **Archiviato**: è necessario apporre questo flag se il documento deve essere archiviato.   
-- **Annullato**: il flag attivo permette di annullare l'ordine; lo stato di testata dell'ordine cambierà in forzatamente evaso, in quanto l'ordine non dovrà più essere trasferibile in altri documenti.    
-- **Codice Unico di Progetto/Codice Identificatico di Gara**: se nelle [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) dell'anagrafica cliente esso è abilitato alla gestione di CIG e CUP, sarà possibile compilare questi dati nel documento.    
-- **Annotazioni cliente**: questo campo viene ripreso dall'anagrafica cliente, ma può essere inserito anche manualmente.
-- **Nostro riferimento/vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento cliente per il documento; nel caso in cui l'ordine venga generato tramite una procedura di creazione automatica, questi campi verranno popolati con le indicazioni presenti nell'documento d'origine. Questo trasferimento è valido solo nel caso di ordine cliente creato tramite il prelievo dei dati da un solo documento.     
-- **Note iniziali**: si possono selezionare le note che sono state inserite in precedenza nella tabella omonima che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*; per questo l'utente deve effettuare doppio click sul campo per aprire l'Help e selezionare i dati; altrimenti può inserirle manualmente.       
-- **Operatore**: permette di inserire l'utente che crea il documento. I dipendenti sono stati inseriti in precedenza nella tabella *Home > Dipendenti*; il dato diventa obbligatorio se l'opzione è impostata nei [Parametri](/docs/configurations/parameters/sales/sales-orders-parameters) del documento stesso.     
-- **Stato evasione**: quando l'ordine è evaso tramite i documenti DDT o fatture, il suo stato evasione cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*; l'utente può forzare l'evasione di un ordine non totalmente evaso e quando questo succede, viene salvata anche la data evasione.      
+### 2.2 Neobavezni podaci zaglavlja
+
+- **Datum isporuke**: datum predviđene isporuke robe.  
+- **Datum spremnosti robe**: datum kada će roba biti spremna; mora biti manji ili jednak prethodnom datumu.      
+- **Potvrđeno**: ovaj flag označava da je narudžba potvrđena i može se izvršiti; pored njega se nalazi **Datum potvrde**. Ovaj je uvjet obavezan ako se narudžba treba obraditi u kasnijim dokumentima (poput otpremnice ili računa), kao i za planiranje proizvodnje.        
+- **Ispisano**: aktivira se kada se narudžba ispiše i označava da je dokument ispisan; flag je važan i za omogućavanje prijenosa narudžbe u druge dokumente.       
+- **Arhivirano**: označava da se dokument treba arhivirati.     
+- **Otkazano**: aktivni flag otkazuje narudžbu; status narudžbe prelazi u „prisilno izvršeno“, jer narudžba više ne smije biti prenosiva u druge dokumente.      
+- **Jedinstveni kod projekta/CIG**: ako je u [fiskalnim informacijama](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) kupca omogućeno upravljanje CIG i CUP, ovdje se mogu unijeti ti podaci.    
+- **Bilješke kupca**: preuzimaju se iz registra kupca, ali ih se može ručno unijeti.   
+- **Naša referenca/Vaša referenca**: obično se koristi za unos interne i kupčeve reference; ako je narudžba generirana automatski, ova polja se popunjavaju podacima iz izvornog dokumenta (ako postoji samo jedan).       
+- **Početne bilješke**: mogu se odabrati iz tablice *Konfiguracija > Alati > Upravljanje kodiranim bilješkama* pomoću dvostrukog klika i odabira kroz pomoć, ili se mogu unijeti ručno.         
+- **Operater**: omogućuje unos korisnika koji kreira dokument. Zaposlenici su definirani u tablici *Home > Zaposlenici*; ovo polje postaje obavezno ako je tako definirano u [Parametrima](/docs/configurations/parameters/sales/sales-orders-parameters) dokumenta.         
+- **Status izvršenja**: kada se narudžba realizira kroz dokumente poput otpremnice ili računa, status automatski prelazi iz *Neizvršeno* u *Djelomično izvršeno* ili *Izvršeno*. Korisnik može prisilno označiti narudžbu kao izvršenu; tada se bilježi i datum izvršenja.         
 
 :::note
-Se viene attivato lo stato *Evaso forzato*, viene mostrato il messaggio: “L'evasione forzata della riga comporta l'automatica eliminazione di eventuali ordini pianificati collegati a commesse in stato schedulata e l’evasione delle commesse in stato schedulata e non esaminata. Per quanto riguarda documenti generati a fronte di commesse in stato lanciato o esecutivo le commesse e documenti non verranno modificati.”
+Ako se aktivira stanje *Prisilno izvršeno*, prikazuje se poruka:  
+„Prisilno izvršenje retka uzrokuje automatsko brisanje eventualnih planiranih narudžbi povezanih s projektima u statusu ‘planirano’ te njihovo označavanje kao izvršeno. Projekti u statusu ‘pokrenuto’ ili ‘izvršno’ neće biti izmijenjeni.”
 :::
 
-- **Decorrenza** è la data di decorrenza per il calcolo delle scadenze di pagamento.
+- **Početak valjanosti**: datum od kojeg počinje izračun rokova plaćanja.   
 
-#### Pulsanti specifiche  
-> **Evasione da progetto**: richiama la procedura per creare un'ordine da un progetto.        
-> **Sostituisci data prev. consegna nelle righe**: dopo aver specificato la data richiesta consegna e/o la data prevista consegna in testata ordine, è possibile sostituire in massa tali date nelle righe articolo già inserite.           
-> **Sostituisci agente nelle righe**: questo pulsante fa aprire un pop nel quale inserire un'anagrafica agente, che verrà spalmata in tutte le righe articolo, aggiungendosi eventualmente ad Agenti già presenti.         
-> **Sostituisci CIG/CUP nelle righe**: dopo aver specificato CIG e/o CUP in testata ordine, è possibile sostituire in massa tali dati nelle righe articolo già inserite.           
-> **Help destinatari/destinazioni**: questo bottone apre l'Help per poter scegliere il destinatario/destinazione per il documento, tra quelli disponibili per il cliente e quindi codificati nella sua anagrafica. 
+#### Specifične tipke     
+> **Izvršenje iz projekta**: pokreće postupak kreiranja narudžbe iz projekta.            
+> **Zamijeni predviđeni datum isporuke u redovima**: omogućuje masovnu zamjenu datuma u redovima artikala nakon što je datum unesen u zaglavlju.             
+> **Zamijeni agenta u redovima**: otvara prozor za unos agenta koji će se primijeniti na sve redove artikala.             
+> **Zamijeni agenta u redovima**: otvara prozor za unos agenta koji će se primijeniti na sve redove artikala.               
+> **Pomoć za primatelje/odredišta**: otvara pomoć za izbor primatelja/odredišta povezanih s kupcem.    
 
-Nella testata sono poi presenti alcune tab che analizziamo di seguito.    
+U zaglavlju su zatim dostupne neke dodatne kartice koje slijede u nastavku.     
 
-### 2.3 Pagamenti
+### 2.3 Plaćanja
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica cliente > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+**Rješenja plaćanja** automatski se preuzimaju iz *Kartice kupca > kartica Plaćanja* i korisnik ih može mijenjati ili brisati.
 
-Se al **Tipo pagamento** è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale.
+Ako je **Vrsta plaćanja** povezana s financijskim popustom, taj se popust uzima u obzir samo u računovodstvenom smislu, tj. u rokovima dospijeća, ali ne u ukupnom iznosu dokumenta.
 
-Il pulsante specifico di questa tab è il **Cancella pagamenti**, utilizzato per cancellare le righe di pagamento selezionate.
+Specifična tipka u ovoj kartici je **Obriši plaćanja**, kojom se brišu označeni redovi plaćanja.
 
-### 2.4 Sconti
+### 2.4 Popusti
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica cliente > tab Sconti* e non quelli attribuiti alle condizioni di pagamento o a certi articoli. Possono essere modificate/cancellate dall'utente.
+Predlažu se samo unaprijed definirani popusti preuzeti iz *Kartice kupca > kartica Popusti*, a ne oni koji se odnose na uvjete plaćanja ili određene artikle. Korisnik ih može mijenjati ili brisati.  
   
-Gli sconti proposti in testata del documento vengono riportati in ogni nuova riga articolo inserita nel documento.
+Popusti definirani u zaglavlju dokumenta automatski se primjenjuju na svaki novi red artikla koji se doda u dokument.  
 
-Se dopo aver inserito le righe articolo viene inserito un nuovo sconto in testata questo non viene replicato nelle righe articolo già inserite.
+Ako se popust doda nakon što su redovi artikala već uneseni, neće se primijeniti retroaktivno.
 
-:::important Ricorda
-Per poter gestire gli sconti su imponibile è necessario attivare da database il parametro generale GEN-GlobalSettings_CalculateDiscountOnAmount per la società di interesse.     
-Se tale parametro non è attivo, gli sconti su imponibile saranno trasformati in sconti a cascata. 
+:::important Zapamti
+Za upravljanje popustima na iznos potrebno je aktivirati u bazi podatka parametar GEN-GlobalSettings_CalculateDiscountOnAmount za odgovarajuće društvo.  
+Ako ovaj parametar nije aktivan, popusti na iznos pretvaraju se u popuste po kaskadi.
 :::
 
-Il pulsante specifico di questa tab è il **Cancella sconti**, utilizzato per cancellare le righe di sconto selezionate.
+Specifična tipka u ovoj kartici je **Obriši popuste**, kojom se brišu označeni redovi popusta.
 
 
 ### 2.5 Agenti
 
-Indica il codice agente e la sua provvigione per ogni riga articolo. Vengono proposti il codice e la percentuale definiti nell'*Anagrafica cliente > tab Agenti*.
+Ovdje se navodi šifra agenta i njegova provizija za svaki red artikla. Predlažu se šifra i postotak definirani u *Kartici kupca > kartica Agenti*.  
 
-Se la provvigione non è collegata al cliente nella sua anagrafica, comunque deve essere inserito l'agente ma con provvigione NULL perché se fosse con provvigione 0, significherebbe che l'agente è collegato all'agente ma non percepisce provvigione.
+Ako provizija nije povezana s kupcem u njegovoj kartici, agent se ipak mora unijeti, ali s provizijom NULL, jer ako bi bila 0, to bi značilo da je agent povezan, ali ne prima proviziju.
 
-Nel caso di generazione del DDT da ordine questo dato verrà ovviamente riportato uguale a quello dell'ordine cliente.
+U slučaju generiranja otpremnice iz narudžbe, ovi će se podaci, naravno, prenijeti jednako kao i u narudžbi kupca.
 
-La stessa sezione verrà riproposta per ogni riga articolo nel relativo tab Agenti.
+Ista će se sekcija prikazati za svaki red artikla u odgovarajućoj kartici Agenti.
 
-Il Pulsante specifico di questa maschera è il **Cancella agenti**, che permette di cancellare gli agenti selezionati.
+Specifična tipka ove forme je **Obriši agente**, koja omogućuje brisanje odabranih agenata.
 
-### 2.6 Destinazione
+### 2.6 Odredište
 
-Qui viene proposta l'informazione inserita nell'*Anagrafica cliente > tab Consegne*, solo se esistono dati di default. Il combo box propone tutti i destinatari, le destinazioni e i vettori inseriti nell'anagrafica cliente.
+Ovdje se predlažu informacije unesene u *Kartici kupca > kartica Isporuke*, ali samo ako postoje zadani podaci. Padajući izbornik nudi sve primatelje, odredišta i prijevoznike definirane u registru kupca.  
 
-Gli indirizzi di spedizione (destinatario/destinazione e vettore) possono essere inseriti anche solo descrittivi senza essere precedentemente inseriti tra i contatti. 
+Adrese isporuke (primatelj/odredište i prijevoznik) mogu se unijeti i samo opisno, bez prethodnog unosa među kontakte.  
 
-Nel caso in cui in anagrafica non sia stato inserito questo dato di default, allora vengono proposti come destinatario e destinazione l’indirizzo inserito nei dati anagrafici. 
+Ako u registru nije definiran ovaj zadani podatak, kao primatelj i odredište predlaže se adresa unesena u osnovne podatke kupca.  
 
-### 2.7 Vettori
+### 2.7 Prijevoznici
 
-Nella sezione Vettori vengono proposti i dati inseriti nel tab [Consegna](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) dell’anagrafica cliente. In particolare, viene proposto il soggetto a carico del quale sarà il trasporto, tra mittente, destinatario e vettore. In base alla selezione, la sezione sottostante cambierà; se il trasporto è a carico del Mittente sarà possibile inserire Targa automezzo, Data e Ora di Inizio trasporto, e verrà proposto l’indirizzo della società; se è a carico del Destinatario sarà possibile inserire Targa automezzo, Data e Ora di Inizio trasporto, con la proposta della destinazione; se è a carico del Vettore invece i campi disponibili saranno Anagrafica contabile del Vettore, Targa, Data e Ora trasporto.
+U sekciji **Prijevoznici** predlažu se podaci uneseni u kartici [Isporuka](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) u registru kupca. Posebno se predlaže subjekt na čiji će teret biti prijevoz — pošiljatelj, primatelj ili prijevoznik.
+Ovisno o odabiru, prikazuju se različita polja:    
+- Ako je prijevoz na teret **pošiljatelja**, moguće je unijeti registarsku oznaku vozila, datum i vrijeme početka prijevoza, a automatski se predlaže adresa društva.    
+- Ako je prijevoz na teret **primatelja**, moguće je unijeti registarsku oznaku vozila, datum i vrijeme početka prijevoza, s prijedlogom adrese odredišta.    
+- Ako je prijevoz na teret **prijevoznika**, dostupna su polja: računovodstveni subjekt prijevoznika, registarska oznaka, datum i vrijeme prijevoza.  
 
-### 2.8 Extra Data
 
-import TabExtraData from './../../../import/sections/tab-extra-data.md'
+### 2.8 Dodatni podaci
 
-<TabExtraData />
+Ovdje se nudi informacija unesena u *Kartica subjekta > kartica Dodatni podaci*, samo ako postoje zadani podaci.
 
-### 2.9 Cointestatari
+### 2.9 Zajednički nositelji
 
-Questo tab è attivo solo se in anagrafica cliente, tab [informazioni fiscali](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information), sia stato inserito il flag per la gestione cointestatari. La gestione cointestatari permette a più persone di essere titolari congiunti dell’ordine. I cointestatari devono essere inseriti negli indirizzi alternativi dell’anagrafica, con un indirizzo che sia di [tipo](/docs/configurations/tables/general-settings/address-types), appunto, cointestatari. In questo modo, verranno proposti in questo tab, dove è necessario inserire a mano le percentuali di ripartizione della spesa.
+Ova je kartica aktivna samo ako je u kartici kupca, kartica [fiskalne informacije](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information).   Upravljanje suvlasnicima omogućuje da više osoba zajednički budu nositelji narudžbe.  
+Suvlasnici moraju biti uneseni u alternativne adrese u registru, s adresom koja je [tipa](/docs/configurations/tables/general-settings/address-types) *suvlasnik*. Na taj se način pojavljuju u ovoj kartici, gdje je potrebno ručno unijeti postotke raspodjele troškova.
 
-## **3.a Articoli raggruppati**
+## **3.a Grupirani artikli**
 
-Questo tab è attivo e visibile solo per i [Tipi ordine](/docs/configurations/tables/sales/sales-order-types) che abbiano impostati il flag di *Gestione matrici Extra Data* e la relativa *Configurazione*. Questo tab permette infatti di generare le varianti articolo per le varie combinazioni di attributi valide, che saranno trasferite nel successivo tab *Articoli*.      
-Per tutti i campi non spiegati in questa pagina potete fare riferimento alla documentazione del tab *Articoli*.       
-Inserendo un [articolo gestito a Matrice](/docs/erp-home/registers/items/create-new-item) nella griglia articoli, infatti, nel tab *Matrici* verrà visualizzata la matrice associata all'anagrafica articolo. Nelle celle della matrice sarà possibile imputare le quantità ordinate per ogni combinazione; sarà possibile compilare solo le celle che abbiano una combinazione valida in anagrafica.       
-Una volta inserite quantità per ogni combinazione, è necessario cliccare il pulsante della barra degli strumenti *Conferma valori matrice* per generare tante varianti quante sono le combinazioni possibili. Ogni variante popolerà una riga del successivo tab Articoli, con la relativa quantità.
+Ova je kartica aktivna i vidljiva samo za one [Vrste narudžbi](/docs/configurations/tables/sales/sales-order-types) koje imaju postavljen flag *Upravljanje matricama dodatnih podataka* i odgovarajuću *konfiguraciju*. Ova kartica omogućuje generiranje varijanti artikla za različite kombinacije valjanih atributa, koje će se zatim prenijeti u sljedeću karticu *Artikli*. Za sva polja koja nisu objašnjena na ovoj stranici, možeš se pozvati na dokumentaciju kartice *Artikli*.     
+Unosom [artikla koji se vodi kroz matricu](/docs/erp-home/registers/items/create-new-item) u mrežu artikala, u kartici *Matrice* prikazat će se matrica povezana s registracijom artikla. U ćelijama matrice moguće je unijeti naručene količine za svaku kombinaciju; moguće je popunjavati samo one ćelije koje imaju valjanu kombinaciju u registru.       
+Nakon što su unesene količine za sve kombinacije, potrebno je kliknuti tipku na alatnoj traci *Potvrdi vrijednosti matrice* kako bi se generirale varijante prema svim mogućim kombinacijama.  
+Svaka varijanta popunit će jedan red u sljedećoj kartici *Artikli*, s pripadajućom količinom.
 
-## **3.b Articoli**
+## **3.b Artikli**
 
-In questo tab vengono inseriti tutti gli articoli con i relativi dati.
+U ovoj se kartici unose svi artikli s pripadajućim podacima.
 
-import InsertMode from './../../../import/sections/insert-mode.md'
+Podaci se unose [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), uz upotrebu [helpa na polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili mogu biti predloženi iz povezanih procedura.
 
-<InsertMode />
+Za unos **novog artikla** u mrežu dovoljno je pozicionirati se na redak i popuniti različite podatke ili koristiti tipku **Novi** koja se nalazi na traci izbornika.
 
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar.
+U nastavku su objašnjena *obavezna* polja prisutna u glavnoj mreži:  
+- **Redak**: ovo polje sadrži broj retka i automatski se popunjava progresivno prilikom unosa podataka u redak.  
 
-Di seguito analizzati i campi *obbligatori* presenti nella griglia principale:
-- **Riga**: questo campo contiene il numro riga e si compilerà automaticamente e progressivamente all'inserimento dei dati nella riga.
+- **Vrsta retka**: omogućuje odabir, putem padajućeg izbornika, artikala s različitim karakteristikama:  
+>- *Kodirani artikal*: artikli koji su kodirani u registru i mogu se knjižiti u analitičkom računovodstvu te evidentirati u skladištu.   
+>- *Nekodirani artikal*: opisni artikli koji se mogu knjižiti u analitičkom računovodstvu, ali se ne mogu evidentirati u skladištu.    
+>- *Artikal troškova*: artikli (kodirani ili nekodirani) koji se zasebno prikazuju u sažecima dokumenata; ako je artikal troška kodiran i od fiskalnog značaja, bit će evidentiran u skladištu, dok ako nije kodiran ili nije fiskalno relevantan, neće se evidentirati u skladištu.    
+>- *Artikal bilješke*: opisne bilješke koje se prikazuju u ispisu dokumenta; ne utječu na računovodstvo ni na skladište.    
+>- *Artikal poklon*: poklon-artikal se tretira kao kodirani ili nekodirani artikal s računovodstvenog i skladišnog aspekta, ali se kao poklon iskazuje zasebno u sažecima dokumenta; ovisno o flagu *Rivalsa IVA*, iznos PDV-a za poklon može biti obračunat na teret subjekta ili ne.
 
-- **Tipo riga**: offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
->- *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino.
->- *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino.
->- *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino.
->- *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
->- *Articolo omaggio*: l'articolo omaggio viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
-
-:::note[NOTA]
-Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga - Articolo codificato vengono inseriti automaticamente.
+:::note[NAPOMENA]
+Ako se započne izravno unosom artikla, njegova klasa, šifra i vrsta retka — *Kodirani artikal* — unose se automatski.
 :::
 
-import ItemClassDescription from './../../../import/sections/item-class-description.md'
+**Klasa/Šifra/Opis artikla**: se ogu unijeti  [ručno ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz upotrebu  [helpa u polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koji će prikazati sve unesene podatke u *Šifarniku artikla*.
 
-<ItemClassDescription />
+Nakon unosa artikla, njegov *Opis* bit će automatski preuzet iz šifarnika. Ako artikl ima *Varijante*, bit će potrebno odabrati željenu varijantu iz padajućeg izbornika *Varijante*.
 
-import ItemUM from './../../../import/fields/item-um.md'
+**Jedinica mjere**: predlaže se glavna mjerna jedinica artikla, ali korisnik ima mogućnost odabrati drugu mjernu jedinicu.
 
-<ItemUM />
+**Količina**: predstavlja količinu glavne mjerne jedinice i kao zadanu vrijednost ima 1; može se unijeti ručno ili se može preuzeti iz dokumenta koji se razmatra za izuzimanje (na primjer iz narudžbe dobavljača)..
 
-import ItemQuantity from './../../../import/fields/item-quantity.md'
+**Cijena**: Cijena se preuzima iz cjenika unesenog u karticu kontakta; cjenik referentnog artikla prikazan je u kartici *Popusti/Cjenici*.
 
-<ItemQuantity />
+Isti dokument može sadržavati artikle s cijenama preuzetim iz različitih cjenika, ako je u kartici subjekta povezano više cjenika u nizu. (vidi [Šifarnik kontakata](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) ), isti dokument može sadržavati artikle iz različitih cjenika.
 
-import ItemPrice from './../../../import/fields/item-price.md'
-
-<ItemPrice />
+Kroz dvostruki klik u polju **Cjenici** (kartica *Popusti/Cjenici*) Korisnik ima mogućnost odabrati preuzimanje koje nije zadano, a iz kojeg se želi preuzeti cijena unesenog artikla.
 
 :::note[NOTA]
-In assenza del listino, il dato proposto è il **prezzo di vendita** ripreso dall'*Anagrafica articolo > tab [Costi](/docs/erp-home/registers/items/create-new-item)* oppure verrà recuperato in base alle impostazioni dei parametri del documento. In assenza anche di questo dato, verrà riportato il prezzo 0.
+Ako cjenik nije dostupan, predloženi podatak bit će **prodajna cijena** preuzeta iz *Kartice artikla > kartica [Troškovi](/docs/erp-home/registers/items/create-new-item)* ili će se izračunati na temelju postavki parametara dokumenta. Ako ni taj podatak nije dostupan, prikazat će se cijena 0.
 :::
 
-- **Imponibile**: questo campo contiene il Prezzo unitario moltiplicato per la quantità, al netto degli sconti.
+- **Osnovica**: ovo polje sadrži jediničnu cijenu pomnoženu s količinom, umanjenu za popuste.  
 
-- **Sconti articolo**: contiene gli sconti validi per l'articolo, provenienti dalla testata, dal listino o dall'inserimento manuale.
+- **Popusti na artikl**: sadrži popuste koji vrijede za artikl, a koji potječu iz zaglavlja, iz cjenika ili su uneseni ručno.  
 
-- **Sconti finali articolo**: contiene gli sconti finali articolo imputati nei riepiloghi del documenti, che hanno la caratteristica di venire spalmati in tutti gli articoli.   
+- **Završni popusti na artikl**: sadrži završne popuste na artikl unesene u sažecima dokumenta, a koji se raspoređuju na sve artikle.  
 
-import ItemVat from './../../../import/fields/item-vat.md'
+**PDV**: *prioritetan* je podatak unesen u polje Šifra PDV-a u *Šifarniku kontakta*. Ako ne postoji, predlaže se vrijednost koja je se nalazi u'*Šifarniku artikla*, no korisnik ima mogućnost unijeti i neki drugi podatak. Ovo polje je obavezno.
 
-<ItemVat />
+#### Neobavezna polja
 
-#### Campi non obbligatori
+- **Barkod / Artikl kupca i Opis artikla kupca**: ovi se podaci preuzimaju iz informacija unesenih u *Kartici artikla*; za upravljanje barkodovima potrebno je aktivirati njihovo korištenje u [Parametrima narudžbe kupca](/docs/configurations/parameters/sales/sales-orders-parameters). Ovaj stupac omogućuje predlaganje artikla pretragom po njegovom barkodu. Budući da je barkod jedinstven, nakon što se unese barkod definiran u kartici artikla, sustav će automatski predložiti odgovarajući artikl.
 
-- **Barcode/Articolo cliente e Descrizione articolo cliente**: questi dati verranno ripresi dalle informazioni presenti nell'*Anagrafica articoli*; per gestire i Barcode è necessario attivarne la gestione nei [Parametri ordine cliente](/docs/configurations/parameters/sales/sales-orders-parameters). Questa colonna permette la proposta dell’articolo ricercandolo per il suo barcode. Essendo il barcode univoco, una volta digitato il barcode inserito in anagrafica articolo, verrà proposto l’articolo.   
+- **Prihod od prodaje**: predlaže se podatak unesen u *Kartici artikla > kartica Opći podaci*; ako se ne može preuzeti automatski, potrebno ga je ručno odabrati između ponuđenih opcija u padajućem izborniku.  
+U protivnom, izostanak ovog podatka može uzrokovati pogreške prilikom knjiženja računa koji će se generirati iz narudžbe, ako u *Kartici kupca > Računovodstveni podaci > kartica Administrativna* nije postavljena vrijednost u polju *Zadani prihod konta suprotnosti*.  
 
-- **Fatturato vendite**: viene proposto il dato inserito nell'*Anagrafica articoli > tab Generalità*; se non viene recuperato va inserito scegliendo una voce tra quelle proposte dalla relativa combo altrimenti la mancanza di questo dato potrebbe causare degli errori nella contabilizzazione della fattura che verrà generata dall'ordine, se in *Anagrafica cliente > Dati contabili > tab Amministrativa* non è stato impostato un valore nel campo *Ricavo di contropartita predefinito*.
+- **Prisilno realizirano**: ako je aktivno, ovaj **flag** označava da je red artikla prisilno realiziran — primjerice, zato što kupac više ne želi taj artikl ili jer je proizvedena i otpremljena količina manja od naručene, a ostatak se više neće proizvoditi, pa se količina zatvara prisilnim realiziranjem.   
 
-- **Evaso forzato**: se attivo, questo flag indica che la riga articolo è stata evasa forzatamente: perchè il cliente non vuole più quell'articolo, oppure la quantità prodotta e spedita è inferiore alla quantità ordinata ma non verrà prodotto il saldo e quindi si andrà ad evadere forzatamente la quantità. 
-
-:::note[NOTA]
-Se viene gestita la produzione, quando il flag viene attivato, viene mostrato un messaggio che avvisa l'utente: “L'evasione forzata della riga comporta l'automatica eliminazione di eventuali ordini pianificati collegati a commesse in stato schedulata e l’evasione delle commesse in stato schedulata e non esaminata". Per quanto riguarda invece i documenti generati a fronte di commesse in stato lanciato o esecutivo, le commesse e documenti non verranno modificati.     
+:::note[NAPOMENA]
+Ako se koristi proizvodnja, kada se ovaj *flag* aktivira, prikazuje se poruka koja upozorava korisnika: „Prisilno realiziranje retka uzrokuje automatsko brisanje eventualnih planiranih narudžbi povezanih s nalozima u statusu *planirano* te realizaciju naloga u statusu *planirano* i *neobrađeno*.“ Dokumenti generirani na temelju naloga u statusu *pokrenuto* ili *izvršno* neće biti izmijenjeni.    
 :::
 
 - **Data Merce pronta e Data consegna**: queste date indicano la data in cui il materiale sarà pronto (quindi quando la produzione sarà terminata) e la data in cui si prevede di consegnare il materiale; la Data Merce Pronta deve essere minore o uguale alla Data consegna.
