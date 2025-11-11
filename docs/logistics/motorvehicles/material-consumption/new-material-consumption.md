@@ -74,5 +74,5 @@ Una volta completata la registrazione del **consumo materiali**, il sistema aggi
 
 Per approfondire:
 - [Gestione automezzo](/docs/logistics/motorvehicles/motorvehicle-management)
-- [Movimenti di magazzino](/docs/logistics/warehouse/movements)
+- [Registrazioni di magazzino](/docs/logistics/warehouse/stock-records/record)
 - [Funzionalità, pulsanti e campi comuni](/docs/guide/common)
