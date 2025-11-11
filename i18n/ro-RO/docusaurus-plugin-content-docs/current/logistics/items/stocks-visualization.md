@@ -9,8 +9,7 @@ keywords: ["Fluentis ERP", "stocuri", "gestiune", "resurse logistice"]
 
 # Vizualizare stocuri
 
-:::important
-La ce servește  
+:::important Utilizare
 Introducerea în vizualizarea stocurilor în Fluentis reprezintă un element esențial pentru gestionarea eficientă a **gestiunii**. Această funcționalitate permite operatorilor să extragă în mod simplu și practic stocurile de gestiune, permițând monitorizarea și compararea stocului fizic cu cel scriptic.
 
 Vizualizarea stocurilor oferă posibilitatea de a grupa datele pe articol, furnizând și un detaliu pentru fiecare **gestiune**. Aceasta înseamnă că este posibilă vizualizarea mai multor rânduri ale aceluiași articol, în cazul în care acesta se află în gestiuni diferite. În plus, operatorul are posibilitatea de a filtra datele în funcție de locație, proiect, client/furnizor sau lot, oferind astfel o imagine completă și detaliată a stocurilor în raport cu diferitele contexte de utilizare.
