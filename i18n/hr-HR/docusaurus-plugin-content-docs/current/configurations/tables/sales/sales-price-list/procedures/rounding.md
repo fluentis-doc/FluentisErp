@@ -1,53 +1,53 @@
 ---
-title: Arrotondamenti
+title: Zaokruživanja  
 sidebar_position: 5
 ---
 
-La form si apre tramite il percorso **Vendite > Listini di Vendita > Procedure > Arrotondamenti*.
+Forma se otvara putem putanje **Prodaja > Prodajni cjenici > Procedure > Zaokruživanja**.  
 
-La procedura permette di ricercare gli arrotondamenti e di definire più codici di regole di aumento/diminuzione dei prezzi, di aggiornamento degli sconti e di politiche di arrotondamento dei prezzi ottenuti.
+Ova procedura omogućuje pretraživanje zaokruživanja te definiranje više kodova pravila za povećanje/smanjenje cijena, ažuriranje popusta i politike zaokruživanja dobivenih cijena.    
 
-Questi codici di Arrotondamento vengono utilizzati nelle procedure di creazione listini vendita.
+Ovi kodovi za zaokruživanje koriste se u procedurama kreiranja prodajnih cjenika.   
 
-Nella form di *Ricerca* è possibile ricercare i dati preesistenti, di inserire nuovi codici di arrotondamenti o di modificare dei codici già presenti.
+U formi Pretraživanje moguće je pretraživati postojeće podatke, unositi nove kodove za zaokruživanje ili mijenjati već postojeće kodove.
 
-Definendo un *Nuovo* codice (click sul pulsante **Nuovo** nella form di Ricerca) o *Modificando* un codice esistente è possibile inserire la descrizione da attribuire alla regola.
+Definiranjem *Novog* koda (klik na tipku **Novo** u formi Pretraživanje) ili *Mijenjanjem* postojećeg koda moguće je unijeti opis koji se dodjeljuje pravilu.
 
 ![](/img/it-it/sales/sales-price-list/procedures/rounding/image02.png)
 
-La variazione del prezzo può avvenire in percentuale o a valore, aumentando o diminuendo con l'utilizzo del valore con segno.
+Promjena cijene može se izvršiti u postotku ili u vrijednosti, povećavajući ili smanjujući korištenjem vrijednosti sa znakom.
 
-Il metodo di arrotondamento è definito per scaglioni di prezzo unitario.
+Metoda zaokruživanja definirana je za raspone jedinične cijene.  
 
-**Limite superiore**: indica il massimo prezzo a cui verrà applicato il mask e la percentuale.
+**Gornja granica**: označava maksimalnu cijenu na koju će se primijeniti maska i postotak.  
 
-**Mask**: è un campo di testo dove l'utente definisce la regola di arrotondamento.
+**Maska**: tekstno polje u kojem korisnik definira pravilo zaokruživanja.  
 
-**Percentuale**: è la percentuale oltre la quale se il rapporto tra i prezzi calcolati, ottenuti applicando la variazione al prezzo di partenza, e il prezzo di partenza eccede il valore di questa percentuale il prezzo ottenuto e arrotondato viene segnalato in rosso in quanto è oltre il limite di arrotondamento consentito. Nel caso evidenziato sopra il “prezzo arrotondato” non deve superare del 5% il “prezzo non arr.”
+**Postotak**: postotak iznad kojeg, ako omjer između izračunate cijene (dobivene primjenom varijacije na početnu cijenu) i početne cijene premaši vrijednost ovog postotka, zaokružena cijena se označava crvenom bojom jer prelazi dopušteni limit zaokruživanja. U prethodno prikazanom primjeru, „zaokružena cijena“ ne smije premašiti „nezaokruženu cijenu“ za više od 5%.  
 
-**VALORI VALIDI PER IL MASK**
+**VALJANE VRIJEDNOSTI MASKA**
 
-Il MASK è una regola che l'utente definisce componendo un testo utilizzando il seguente linguaggio:
+Maska je pravilo koje korisnik definira sastavljanjem teksta koristeći sljedeći jezik:    
 
-=  il valore non subisce variazioni
+=  vrijednost se ne mijenja
 
-+  incrementare il valore di una unità
++  povećati vrijednost za jednu jedinicu  
 
--   decrementare il valore di una unità
+-  smanjiti vrijednost za jednu jedinicu    
 
-[    inizio regola singolo valore
+[  početak pravila za pojedinačnu vrijednost  
 
-]    fine regola singolo valore
+]  kraj pravila za pojedinačnu vrijednost   
 
-(    inizio regola che definisce a quale valore fisso deve essere portato il valore analizzato
+(  početak pravila za definiranje fiksne vrijednosti na koju se vrijednost treba postaviti
 
-)    fine regola che definisce a quale valore fisso deve essere portato il valore analizzato
+)  kraj pravila za definiranje fiksne vrijednosti   
 
-,    separatore decimale
+,  decimalni separator  
 
-Vengono riportati di seguito degli esempi che possono spiegare come realizzare una regola:
+Vode se u nastavku primjeri koji mogu objasniti kako izraditi pravilo:
 
-| Prezzo ini. | Prezzo non arr. | Mask | Prezzo arrotondato |
+| Početna cijena | Nezaokružena cijena | Maska | Zaokružena cijena |
 | --- | --- | --- | --- |
 | 16,16 | 16,968 | [=][=][=],[=][+] | 16,98 |
 | 16,16 | 16,968 | [=][=][=],[=][=] | 16,97 |
@@ -65,4 +65,6 @@ Vengono riportati di seguito degli esempi che possono spiegare come realizzare u
 | 16,16 | 16,968 | [=][=][-] | 16 |
 | 16,16 | 16,968 | [=][=][+] | 18 |
 
-Nella sezione degli sconti è possibile definire degli sconti da inserire in ogni riga di listino, scegliendo anche di cancellare gli sconti precedentemente inseriti nella stessa riga, oppure di andare in modifica degli sconti presenti nelle righe listino.
+U sekciji **Popusti** moguće je definirati popuste za svaku liniju cjenika, te:  
+- obrisati prethodno unesene popuste na istoj liniji,  
+- ili izmijeniti popuste već prisutne u linijama cjenika.

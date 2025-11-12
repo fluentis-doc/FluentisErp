@@ -1,72 +1,72 @@
 ---
-title: Stampe
+title: Ispisi
 sidebar_position: 5
 ---
 
-Sono disponibili diverse **Stampe** standard. Per visualizzare un'anteprima di ciascuna stampa, serve impostare i filtri desiderati e premere il pulsante *Anteprima* sulla barra degli strumenti. Questa operazione mostrerà la stampa a video senza modificare lo stato del documento. Se necessario procedere con la stampa cartacea o salvarla su file, serve invece cliccare sul pulsante *Stampa*.
+Dostupni su različiti standardni **Ispisi**. Za pregled prethodnog ispisa, potrebno je postaviti željene filtre i pritisnuti tipku *Pregled* na alatnoj traci. Ova operacija prikazuje ispis na ekranu bez promjene statusa dokumenta. Ako je potrebno izvršiti papirnati ispis ili spremiti dokument u datoteku, tada se koristi tipka *Ispis*.
 
-## Emissione Conferma d'ordine
+## Izdavanje potvrde narudžbe
 
-Questa stampa permette di stampare gli Ordini come Conferme d'Ordine da inviare direttamente al cliente.        
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; per esempio, posso stampare gli ordini confermati solo da una certa data, quelli non consegnati, non evasi, ecc.           
-Con questa stampa, ogni ordine viene impaginato separatamente, ognuno con le seguenti sezioni:
-- Intestazione con Logo e informazioni aziendali
-- Informazioni sull'ordine (tipologia, numero, data, ecc.)
-- Informazioni sul cliente (partita iva, agente, ecc.)
-- Dettagli dell'ordine (codice articolo, quantità, prezzo, ecc.)
-- Riepilogo dell'ordine (totale merce, spese, totale imposta, ecc.)
+Ovaj ispis omogućuje ispis narudžbi kao Potvrde narudžbe za direktno slanje kupcu.    
+Korištenjem dostupnih filtera moguće je precizno pretraživati dokumente; na primjer, mogu se ispisati samo potvrđene narudžbe od određene datume, one koje nisu isporučene, nisu obrađene itd.    
+Svaka narudžba se ispisuje zasebno, s uključenim sljedećim sekcijama:  
+- Zaglavlje s logotipom i podacima o tvrtki  
+- Podaci o narudžbi (vrsta, broj, datum itd.)  
+- Podaci o kupcu (oib, agent itd.)
+- Detalji narudžbe (šifra artikla, količina, cijena itd.)  
+- Sažetak narudžbe (ukupna vrijednost robe, troškovi, ukupni porez itd.)  
 
-## Etichette da ordine
+## Oznake po narudžbi
 
-La funzione di questa stampa è quella di generare etichette fisiche per l'identificazione e la gestione dei prodotti o degli articoli che fanno parte di un ordine.      
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; per esempio, posso stampare gli ordini confermati solo da una certa data, quelli non consegnati, non evasi, ecc.       
-La stampa crea delle etichette con le seguenti informazioni: 
-- Intestazione con Logo e informazioni aziendali
-- Etichetta dell'articolo con codice a barre, unità di misura, quantità e descrizione articolo
-- Informazioni sul cliente e sull'ordine contenente l'articolo
+Ova funkcija služi za generiranje fizičkih oznaka za identifikaciju i upravljanje proizvodima ili artiklima unutar narudžbe.  
+Filteri omogućuju precizno pretraživanje dokumenta; npr. ispis narudžbi potvrđenih od određene datume, one koje nisu isporučene ili obrađene.  
+Ispis generira oznake sa sljedećim informacijama:
+- Zaglavlje s logotipom i podacima o tvrtki
+- Oznaka artikla s barkodom, jedinicom mjere, količinom i opisom artikla
+- Podaci o kupcu i narudžbi kojoj artikl pripada
 
-## Lista di prelievo
+## Lista preuzimanja
 
-Questa stampa è un documento utilizzato nel contesto della gestione del magazzino e della logistica per aiutare gli operatori a prelevare correttamente gli articoli necessari per evadere un ordine cliente.     
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; per esempio, posso stampare gli ordini di una determinata tipologia, quelli non consegnati, non evasi, ecc.      
-Con questa stampa, ogni ordine viene impaginato separatamente, ognuno con le seguenti sezioni:
-- Intestazione con Logo e informazioni aziendali
-- Informazioni sull'ordine (numero e data) e sul cliente 
-- Informazioni sul trasporto
-- Dettagli dell'ordine (codice articolo, unità di misura, ecc.)
-- Giacenza dell'articolo a magazzino, quantità ordinata, quantità prelevata (campo da far compilare manualmente all'operatore che preleverà la quantità a magazzino)
+Ovaj ispis koristi se u kontekstu upravljanja skladištem i logistikom kako bi se olakšao pravilni odabir artikala potrebnih za obradu narudžbi.  
+Filteri omogućuju precizno pretraživanje; npr. ispis narudžbi određene vrste, one koje nisu isporučene ili obrađene.  
+Svaka narudžba se ispisuje zasebno, s uključenim sekcijama:
+- Zaglavlje s logotipom i podacima o tvrtki
+- Podaci o narudžbi (broj i datum) i kupcu
+- Podaci o transportu
+- Detalji narudžbe (šifra artikla, jedinica mjere itd.)
+- Stanje artikla u skladištu, naručena količina, preuzeta količina (polje koje operater mora ručno popuniti prilikom preuzimanja)  
 
-## Lista DDT Evasione ordini
+## Lista otpremnica po narudžbi  
 
-Questa stampa fornisce un elenco degli ordini con eventuali DDT collegati.       
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; per esempio, posso stampare gli ordini di una determinata tipologia, quelli non consegnati, non evasi, ecc.     
-Di default, gli ordini vengono raggruppati per anno e tipologia di ordine quindi per gli stessi anno e tipologia vengono elencati gli Ordini di vendita con relativo numero, data e cliente.       
-Se l'ordine è stato evaso in un DDT, quest'ultimo verrà riportato sotto l'ordine, con relativi numero, data, tipologia, articoli, unità di misura, quantità ordinata e quantità consegnata. 
+Ovaj ispis pruža popis narudžbi s eventualno povezanim otpremnicama.  
+Filteri omogućuju precizno pretraživanje; npr. narudžbe određene vrste, one koje nisu isporučene ili obrađene.  
+Po defaultu, narudžbe se grupiraju po godini i vrsti narudžbe; unutar iste godine i vrste navedene su narudžbe s brojem, datumom i kupcem.  
+Ako je narudžba obrađena otpremnicom, ona se prikazuje ispod narudžbe s brojem, datumom, vrstom, artiklima, jedinicom mjere, naručenom i isporučenom količinom.
 
-## Lista ordini
+## Lista narudžbi  
 
-Questa stampa fornisce un riepilogo dettagliato degli ordini inseriti, sottoforma di lista.
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; in questa stampa è possibile inoltre impostare un ordinamento per Cliente (default), Numero o Tipologia ordine.       
-Nella stampa, sotto lo stesso cliente/numero/tipologia ordine (in base all'ordinamento scelto) vengono elencati gli ordini con i seguenti dati: divisa, importo, articolo, iva, ecc.         
-Ogni riga dell'elenco viene occupata da un articolo dell'ordine.        
+Ovaj ispis pruža detaljan pregled unesenih narudžbi u obliku liste.  
+Filteri omogućuju precizno pretraživanje dokumenta; moguće je postaviti i sortiranje po Kupcu (default), Broju ili Vrsti narudžbe.  
+U ispisu, ispod istog kupca/broja/vrste narudžbe navedene su narudžbe s podacima: valuta, iznos, artikl, PDV itd.  
+Svaki redak liste odnosi se na jedan artikl narudžbe.
 
+## Pregled narudžbi po količini  
 
-## Portafoglio ordini a quantità 
+Ovaj ispis daje detaljan i ažuran pregled narudžbi; posebno je koristan za logističku koordinaciju jer prikazuje koje i koliko jedinica proizvoda još treba isporučiti.  
+Filteri omogućuju precizno pretraživanje dokumenta; moguće je postaviti sortiranje po Artiklu, Broju, Datumu, Kupcu, Datumu spremnosti robe, Datumu isporuke.  
+Rezultat je lista narudžbi s eventualnim dokumentima obrade ako postoje, te za svaki artikl prikazane naručene, isporučene i preostale količine.   
 
-Questa stampa serve a fornire una panoramica dettagliata e aggiornata degli ordini; è particolarmente utile per il coordinamento logistico, poiché permette di vedere in modo chiaro quali e quante unità di prodotti devono essere ancora consegnate.       
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; è inoltre possibile impostare un ordinamento per Articolo, Numero, Data, Cliente, Data merce pronta, Data consegna, Cliente.      
-Il risultato è un elenco degli ordini, con indicati eventuali documenti di evasione se esistenti, e per ogni articolo indicate le quantità ordinate, consegnate e residue.      
+## Pregled narudžbi po vrijednosti  
 
-## Portafoglio ordini a valore
+Ovaj ispis pruža pregled narudžbi koje još nisu u potpunosti obrađene, prema novčanoj vrijednosti svake narudžbe.  
+Posebno je koristan za odjele prodaje, financija i strateško upravljanje, jer daje jasnu sliku potencijalnog prihoda vezanog uz aktivne narudžbe.  
+Filteri omogućuju precizno pretraživanje; moguće je postaviti sortiranje po Artiklu, Broju, Datumu, Kupcu, Datumu spremnosti robe, Datumu isporuke.  
+Rezultat je lista narudžbi s prikazom naručenih, isporučenih i preostalih vrijednosti po artiklu.      
 
-Questa stampa fornisce un riepilogo degli ordini ricevuti ma non ancora totalmente evasi, in base al valore monetario di ciascun ordine. Questo documento è particolarmente utile per i reparti di vendite, finanza e gestione strategica, poiché offre una visione chiara del fatturato potenziale legato agli ordini in corso.      
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; è inoltre possibile impostare un ordinamento per Articolo, Numero, Data, Cliente, Data merce pronta, Data consegna, Cliente.      
-Il risultato è un elenco degli ordini con per ogni articolo indicati valori ordinati, consegnati e residui.       
+## Rokovi narudžbi
 
-## Scadenziario ordini
-
-Questa stampa fornisce una panoramica dettagliata delle date di scadenza e dei termini di consegna relativi agli ordini non totalmente evasi.      
-Con i filtri messi a disposizione è possibile filtrare i documenti per effettuare una ricerca più mirata; è inoltre possibile impostare un ordinamento per Data consegna o Cliente.      
-Nella stampa, sotto lo stesso cliente/data consegna (in base all'ordinamento scelto) vengono elencati per ogni articolo gli ordini con i seguenti dati: numero, data inserimento, stato evasione, quanaità residua, ecc.      
-
-Più dettagli su questo argomento negli articoli: [Anteprima e stampa](/docs/guide/common/operations-with-data/reports) 
+Ovaj ispis daje detaljan pregled datuma isteka i rokova isporuke za narudžbe koje nisu potpuno obrađene.  
+Filteri omogućuju precizno pretraživanje; moguće je postaviti sortiranje po Datumu isporuke ili Kupcu.  
+U ispisu, ispod istog kupca/datuma isporuke, navedene su narudžbe po artiklu s podacima: broj, datum unosa, status obrade, preostala količina itd.
+        
+Više detalja o ovom predmetu u članku: [Pregled i ispis](/docs/guide/common/operations-with-data/reports) 

@@ -1,39 +1,39 @@
 ---
-title: Duplica e manutenzione listini di vendita
+title: Dupliciranje i održavanje prodajnih cjenika  
 sidebar_position: 6
 ---
 
-Questa procedura permette di aggiornare gli articoli dei listini di vendita.       
+Ova procedura omogućuje ažuriranje artikala u prodajnim cjenicima.          
 
-### Filtri disponibili
+### Dostupni filteri  
 
-Nella parte di filtri si può scegliere di visualizzare:           
-- **Tutte** le tipologie di listino,       
-- solo i listini di tipo **Generico** o        
-- solo i listini **Personalizzati per cliente**.        
+U dijelu za filtere moguće je odabrati prikaz:  
+- **Svi** tipovi cjenika,  
+- samo cjenici tipa **Generički**, ili  
+- samo cjenici **Personalizirani za klijenta**.       
 
-In base alla scelta, nella parte destra si attiva la ricerca per **Tipo listino** oppure per **Cliente**.         
-Se il filtro per *Data inizio validità* è completato, l'applicazione visualizza gli articoli dei listini validi alla data inserita. In caso contrario, verranno visualizzati tutti gli articoli, anche quelli dei listini non più validi.         
-E' possibile filtrare anche per: Data fine validità, Divisa, Articolo, Barcode dell'articolo o solo per gli articoli che sono stati movimentati, cioè collegati a documenti da una certa data.
+Ovisno o izboru, s desne strane aktivira se pretraga po **Tipu cjenika** ili po **Klijentu**.  
+Ako je filter za *Datum početka valjanosti* popunjen, aplikacija prikazuje artikle cjenika valjanih na uneseni datum. U suprotnom, prikazuju se svi artikli, uključujući one iz nevažećih cjenika.  
+Moguće je filtrirati i po: *Datum završetka valjanosti*, *Valuta*, *Artikl*, *Barkod artikla* ili samo artikle koji su bili predmet transakcija, tj. povezani s dokumentima od određenog datuma.    
 
-### Griglia articoli
+###  Mreža artikala  
 
-Una volta selezionati i filtri desiderati, cliccando Ricerca la griglia si popolerà con tutti gli articoli che soddisfano le caratteristiche richieste. Le colonne della griglia sono:      
-- **Tipo listino**: riporta il tipo listino, se generico, con la relativa **Descrizione**.      
-- **Conto/Sottoconto/Descrizione**: contiene il titolare del listino, se personalizzato.       
-- **Classe/Codice/Descrizione articolo**: dati identificativi dell'articolo del listino.      
-- **Codice divisa**: riporta la Divisa del listino.    
-- **Codice Unità di misura**: anche questo dato viene ripreso dal listino.      
-- **Prezzo**: in questo campo viene riportato il prezzo dell'articolo presente nel listino.        
-- **Sconto**: in questo campo viene riportato l'eventuale sconto presente nel listino (solo sconto fisso).
-- **Prezzo netto**: in questa colonna viene riportato il Prezzo al netto degli Sconti.    
-- **Data validità da**: in questo campo viene riportata la data di inizio validità del listino.      
-- **Data validità a**: in questo campo viene invece riportata l'eventuale data di fine validità.      
-- **Data ultimo documento**: in questo campo viene inserita la data del più recente DDT che presenta articolo e listino.    
+Nakon odabira željenih filtera, klikom na Traži mreža će se popuniti sa svim artiklima koji zadovoljavaju tražene kriterije. Kolone mreže su:     
+- **Tip cjenika**: prikazuje tip cjenika, ako je generički, s odgovarajućom **Opisom**.  
+- **Račun/Podračun/Opis**: sadrži vlasnika cjenika, ako je personalizirani.  
+- **Klasa/Kod/Opis artikla**: identifikacijski podaci artikla u cjeniku.  
+- **Kod valute**: prikazuje valutu cjenika.  
+- **Kod jedinice mjere**: također se dohvaća iz cjenika.  
+- **Cijena**: prikazuje cijenu artikla u cjeniku.  
+- **Popust**: prikazuje eventualni popust u cjeniku (samo fiksni popust).  
+- **Neto cijena**: cijena nakon primjene popusta.  
+- **Datum valjanosti od**: datum početka valjanosti cjenika.  
+- **Datum valjanosti do**: eventualni datum završetka valjanosti.  
+- **Datum posljednjeg dokumenta**: datum najnovije otpremnice koja sadrži artikl i cjenik.    
 
-### Barra degli strumenti
+### Traka izbornika 
 
-I bottoni disponibili nella ribbon bar sono i seguenti:     
+Tipke dostupne u **traci izbornika** su:      
 - **Aggiorna**: apre un pop up per proseguire con l'aggiornamento del prezzo dell'articolo nel listino; si devono specificare:
 1. **Data inizio validità** delle righe listino da aggiornare (eventualmente anche una **Data fine validità** non obbligatoria)
 2. **Arrotondamento** contenente le politiche di variazione prezzi e sconti del listino, oppure

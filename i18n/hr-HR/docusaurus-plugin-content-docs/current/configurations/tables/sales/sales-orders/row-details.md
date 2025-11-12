@@ -1,29 +1,29 @@
 ---
-title: Dettaglio righe Ordini cliente
+title: Detalji redaka narudžbi kupaca  
 sidebar_position: 4
 ---
 
-Questa maschera è una griglia che presenta in ogni riga un articolo presente in un ordine cliente, insieme ad una serie di informazioni circa la riga articolo e l'ordine cliente di appartenenza.     
-La griglia consente di visualizzare, selezionare e modificare diverse informazioni attraverso i pulsanti nella barra degli strumenti.     
-La prima colonna della griglia è una casella di selezione. Utilizzando questa casella, l'utente può selezionare una o più righe per applicare le operazioni disponibili nella barra degli strumenti:
+Ovaj zaslon je mreža koja prikazuje u svakom retku artikl prisutan u narudžbi kupca, zajedno s nizom informacija o artiklu i pripadajućoj narudžbi.  
+Mreža omogućuje pregled, odabir i izmjenu različitih informacija pomoću tipki na alatnoj traci.  
+Prvi stupac mreže je okvir za odabir. Korištenjem ovog okvira, korisnik može odabrati jedan ili više redaka kako bi primijenio dostupne operacije s alatne trake:
 
-**Evasione Forzata**      
-Permette di forzare l'evasione delle righe selezionate; questa operazione inserirà il flag *Evaso forzato* nelle righe ordine.
+**Prisilna obrada**  
+Omogućuje prisilnu obradu odabranih redaka; ova operacija postavlja oznaku *Prisilno obrađeno* na redove narudžbe.
 
-**Modifica Prezzi**     
-Consente di modificare il prezzo unitario per le righe selezionate; viene aperto un pop-up in cui inserire il prezzo.
+**Izmjena cijena**  
+Omogućuje promjenu jedinične cijene za odabrane retke; otvara se skočni prozor u koji se unosi nova cijena.
 
-**Modifica Consegna**     
-Permette di cambiare la data di consegna per le righe selezionate.
+**Izmjena datuma isporuke**  
+Omogućuje promjenu datuma isporuke za odabrane retke.
 
-**Modifica Note**     
-Abilita l'utente a inserire nuove note relative alle righe selezionate; viene aperto un pop-up in cui inserire la nota e nel quale è presente un flag che permette di decidere se cancellare o mantenere le note preesistenti.
+**Izmjena bilješki**  
+Omogućuje korisniku unos novih bilješki za odabrane retke; otvara se skočni prozor u kojem se unosi bilješka i nalazi se opcija za brisanje ili zadržavanje prethodnih bilješki.
 
-**Modifica Quantità**      
-Consente di modificare la quantità ordinata per gli articoli selezionati.
+**Izmjena količine**  
+Omogućuje promjenu naručene količine za odabrane artikle.
 
-**Modifica Listino Prezzi**      
-Permette di cambiare il listino prezzi applicato alla riga selezionata; viene aperto un pop-up in cui ricercare il listino da assegnare all'articolo.       
+**Izmjena cjenika**  
+Omogućuje promjenu cjenika primijenjenog na odabrani redak; otvara se skočni prozor u kojem se traži cjenik koji će se dodijeliti artiklu.
 
-**Proprietà Evasione**     
-Fornisce l'accesso alla maschera *Stato evasione*, in cui consultare i dettagli di evasione dei vari articoli. 
+**Svojstva obrade**  
+Omogućuje pristup zaslonu *Status obrade*, gdje se mogu pregledati detalji obrade različitih artikala.

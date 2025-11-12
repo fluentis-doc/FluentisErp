@@ -1,33 +1,33 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Nel modulo Vendite di Fluentis, la gestione degli ordini cliente permette di controllare e ottimizzare l'intero ciclo dell'ordine.
-Gli ordini cliente in Fluentis possono essere generati attraverso diverse modalità:
+U modulu Prodaja u Fluentisu, upravljanje narudžbama kupaca omogućuje kontrolu i optimizaciju cijelog životnog ciklusa narudžbe.  
+Narudžbe kupaca u Fluentisu mogu se generirati na različite načine:
 
-- Da Offerta: Un ordine cliente può essere creato automaticamente a partire da un'offerta precedentemente accettata, mantenendo coerenza tra le condizioni commerciali proposte e quelle confermate.
-- Da Ordine Fornitore: È possibile generare un ordine cliente a partire da un ordine fornitore, utile per le aziende che operano con processi di drop-shipping o su commessa, garantendo un allineamento diretto tra i processi di approvvigionamento e la vendita.
+- Iz Ponude: Narudžba kupca može se automatski kreirati na temelju prethodno prihvaćene ponude, održavajući dosljednost između komercijalnih uvjeta predloženih i potvrđenih.  
+- Iz Narudžbe dobavljača: Moguće je generirati narudžbu kupca na temelju narudžbe dobavljača, što je korisno za tvrtke koje rade s drop-shippingom ili po narudžbi, osiguravajući izravno usklađivanje između procesa nabave i prodaje.  
 
-## Configurazione preliminare del modulo
+## Prethodna konfiguracija modula
 
-> - [Numerazioni](/docs/configurations/tables/fluentis-numerations): definizione delle numerazioni per gli ordini.    
-> - [Parametri Ordine cliente](/docs/configurations/parameters/sales/sales-orders-parameters): impostazioni specifiche per la gestione degli ordini.     
-> - [Parametri raggruppamento](/docs/configurations/parameters/sales/orders-grouping): configurazione per la gestione dei raggruppamenti per le procedure di evasione.     
-> - [Tipi Ordine cliente](/docs/configurations/tables/sales/sales-order-types): creazione e classificazione delle tipologie di ordini.   
+> - [Numeracije](/docs/configurations/tables/fluentis-numerations): definicija numeracija za narudžbe.      
+> - [Parametri narudžbi kupca](/docs/configurations/parameters/sales/sales-orders-parameters): specifične postavke za upravljanje narudžbama.         
+> - [Parametri grupiranja](/docs/configurations/parameters/sales/orders-grouping): konfiguracija za upravljanje grupiranjem u postupcima obrade.       
+> - [Tipovi narudžbi kupca](/docs/configurations/tables/sales/sales-order-types): kreiranje i klasifikacija tipova narudžbi.    
 
-In alternativa è disponibile la procedura di [**Fast Start**](/docs/guide/fast-start).
+Alternativno, dostupna je procedura [**Fast Start**](/docs/guide/fast-start).
 
-## Documenti gestiti
+## Dokumenti koji se upravljaju  
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-### Ordini di vendita
-Permette la creazione dell'ordine *manuale* con l'inserimento diretto di dati, da offerta cliente oppure da ordine fornitore.  
-### Stampe  
-Layout personalizzabili per ciascun cliente.  
-Inclusione di tutti i dettagli commerciali richiesti.  
+### Narudžbe prodaje  
+Omogućuje kreiranje *ručne* narudžbe s izravnim unosom podataka, iz ponude kupca ili iz narudžbe dobavljača.    
+### Ispisi  
+Prilagodljivi rasporedi za svakog kupca.  
+Uključivanje svih traženih komercijalnih detalja.     
     </div>
 </div>
