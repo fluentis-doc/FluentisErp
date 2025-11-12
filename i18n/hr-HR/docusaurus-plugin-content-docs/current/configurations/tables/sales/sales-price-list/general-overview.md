@@ -1,26 +1,26 @@
 ---
-title: Introduzione
+title: Uvod    
 sidebar_position: 1
 ---
 
-Il modulo si trova sul percorso **Vendite > Listini di Vendita**.
+Modul se nalazi u izborniku **Prodaja > Prodajni cjenici**.  
 
-Il modulo offre un approccio completo e flessibile alla definizione e al controllo dei prezzi dei prodotti e servizi offerti dall'azienda. Grazie a un'interfaccia intuitiva e a funzionalità avanzate, le aziende possono gestire facilmente listini multipli, applicare sconti e condizioni personalizzate per ciascun cliente, e monitorare le variazioni di prezzo nel tempo.
+Ovaj modul nudi sveobuhvatan i fleksibilan pristup definiranju i kontroli cijena proizvoda i usluga koje tvrtka nudi. Zahvaljujući intuitivnom sučelju i naprednim funkcionalnostima, poduzeća mogu jednostavno upravljati višestrukim cjenicima, primjenjivati popuste i prilagođene uvjete za svakog kupca te pratiti promjene cijena tijekom vremena.
 
-**Funzionalità Principali**:      
-- Inserimento e aggiornamento dei prezzi: Gli utenti possono inserire e aggiornare rapidamente i prezzi dei prodotti, garantendo che le informazioni siano sempre attuali e precise.
-- Gestione di listini multipli: È possibile gestire più listini contemporaneamente, permettendo di differenziare i prezzi in base a segmenti di clientela, aree geografiche o canali di vendita.
-- Validità temporale dei prezzi: Fluentis consente di impostare date di inizio e fine validità per ciascun prezzo, facilitando la gestione di promozioni temporanee e variazioni stagionali senza complicazioni.
-- Applicazione di sconti: Il sistema supporta l'applicazione di sconti automatici o manuali, migliorando la flessibilità nella strategia di pricing e incentivando le vendite.
-- Condizioni specifiche per clienti: È possibile definire condizioni di prezzo personalizzate per ciascun cliente, garantendo che le offerte siano competitive e mirate.
-- Gestione di valute multiple: Il modulo consente la gestione di listini in diverse valute, facilitando la vendita internazionale e migliorando l'accessibilità per clienti di diverse nazioni.
-- Aggiornamenti massivi: Fluentis offre la possibilità di effettuare aggiornamenti massivi ai listini, semplificando la modifica di prezzi e condizioni su larga scala.
-- Generazione di report: È possibile generare report dettagliati sui listini e sui prezzi, fornendo informazioni utili per analisi e decisioni strategiche.
-- Storico delle variazioni: Il sistema mantiene uno storico delle variazioni di prezzo, consentendo di monitorare le modifiche nel tempo e valutare l'impatto delle strategie di pricing.
+**Glavne funkcionalnosti**:     
+- Unos i ažuriranje cijena: Korisnici mogu brzo unositi i ažurirati cijene proizvoda, čime se osigurava da su podaci uvijek točni i ažurni.  
+- Upravljanje višestrukim cjenicima: Moguće je istovremeno upravljati s više cjenika, omogućujući diferencijaciju cijena prema segmentima kupaca, geografskim područjima ili prodajnim kanalima.  
+- Vremenska valjanost cijena: Fluentis omogućuje postavljanje datuma početka i završetka valjanosti za svaku cijenu, čime se olakšava upravljanje privremenim promocijama i sezonskim promjenama bez dodatnih komplikacija.  
+- Primjena popusta: Sustav podržava automatsku ili ručnu primjenu popusta, čime se povećava fleksibilnost cjenovne strategije i potiče prodaja.  
+- Posebni uvjeti za kupce: Moguće je definirati prilagođene cjenovne uvjete za svakog kupca, kako bi ponude bile konkurentne i ciljane.  
+- Upravljanje više valuta: Modul omogućuje rad s cjenicima u različitim valutama, što olakšava međunarodnu prodaju i povećava dostupnost za kupce iz različitih zemalja.  
+- Masovna ažuriranja: Fluentis nudi mogućnost masovnog ažuriranja cjenika, čime se pojednostavljuje promjena cijena i uvjeta na većem broju artikala.  
+- Generiranje izvještaja: Moguće je generirati detaljna izvješća o cjenicima i cijenama, pružajući korisne informacije za analize i strateško odlučivanje.  
+- Povijest promjena: Sustav zadržava povijest promjena cijena, omogućujući praćenje izmjena kroz vrijeme i procjenu učinka cjenovnih strategija.  
 
-**Automazione e Integrazione**:      
-Il modulo di gestione dei listini è strettamente integrato con i moduli di vendita e fatturazione di Fluentis, garantendo che i prezzi applicati siano sempre aggiornati e coerenti. Questa integrazione aiuta a prevenire errori e a garantire una gestione fluida delle vendite.
+**Automatizacija i integracija**:  
+Modul za upravljanje cjenicima usko je povezan s modulima prodaje i fakturiranja u Fluentisu, čime se osigurava da su primijenjene cijene uvijek ažurne i usklađene. Ova integracija pomaže u sprječavanju pogrešaka i osigurava neprekinuto upravljanje prodajnim procesima.
 
-Prima di utilizzare il modulo, è necessario compilare i seguenti parametri e tabelle:
+Prije korištenja modula potrebno je ispuniti sljedeće parametre i tablice:    
 > - [Parametri](/docs/configurations/parameters/sales/price-list-parameters)
-> - [Tipi listini di vendita](/docs/configurations/tables/sales/sales-price-lists)
+> - [Vrste prodajnih cjenika](/docs/configurations/tables/sales/sales-price-lists)

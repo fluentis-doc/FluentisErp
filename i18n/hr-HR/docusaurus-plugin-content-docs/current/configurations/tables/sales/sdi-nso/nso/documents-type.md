@@ -1,128 +1,63 @@
 ---
-title: Tipi documento
+title: Vrste dokumenata
 sidebar_position: 2
 ---
 
-## Ordine
+## Narudžba
 
-L’ Ordine è il Documento rappresentativo dell’ordine di acquisto di beni e servizi emesso dal 
-Cliente (Mittente) e indirizzato al Fornitore (Destinatario). Un Ordine è composto da una o più 
-linee d’ ordine, in cui sono indicati il bene o il servizio che si intende acquistare, la quantità e il 
-prezzo.        
-**L’Ordine è predisposto nel formato descritto dalla specifica PEPPOL Order transaction 3.0.**
-Un Ordine può: 
-- determinare, indipendentemente da altri Ordini precedentemente emessi, i beni e/o i servizi 
-che il Cliente intende acquistare e le relative istruzioni per eseguire la prestazione (Ordine 
-iniziale). Un Ordine iniziale non contiene riferimenti ad altri Ordini; 
-- determinare, indipendentemente da altri Ordini precedentemente emessi, i beni e/o i servizi 
-che il Cliente intende acquistare e le relative istruzioni per eseguire la fornitura e, tuttavia, 
-essere genericamente relazionato a un altro Documento (Ordine iniziale collegato). Un 
-Ordine iniziale collegato contiene il riferimento al Documento che a cui è collegato e 
-l’indicazione che si tratta di un mero “collegamento;
-- revocare un Ordine precedentemente emesso (Ordine di revoca). L’Ordine di revoca è un 
-Ordine che contiene l’indicazione che si tratta di una “Revoca” e il riferimento all’Ordine 
-che si intende revocare; 
-- sostituire un Ordine precedentemente emesso (Ordine sostitutivo). La Modifica di ordine 
-è un nuovo Ordine completo di tutte le linee di ordine, che contiene l’indicazione che si 
-tratta di una “Modifica” e il riferimento all’Ordine che si intende modificare. 
-Le Sostituzioni e le Revoche, rispettivamente, rimpiazzano e annullano sia l’Ordine ivi indicato 
-sia tutte le altre Sostituzioni e Revoche, già trasmesse, riferite al relativo Ordine iniziale. 
-L’Ordine iniziale collegato può essere utilizzato esclusivamente per tenere memoria che il nuovo 
-processo che si intende avviare è collegato ad un processo precedente e non deve mai essere usato 
-al posto degli altri strumenti (Ordine di revoca, Ordine sostitutivo e Ordine di riscontro) 
-appositamente realizzati per revocare, sostituire (o integrare), confermare o rifiutare un altro 
-Documento.
+Narudžba je dokument koji predstavlja zahtjev kupca (pošiljatelja) za nabavu robe ili usluga od dobavljača (primatelja).  
+Narudžba se sastoji od jedne ili više stavki, u kojima su navedeni artikl ili usluga, količina i cijena.          
+**Narudžba je izrađena u formatu definiranom PEPPOL specifikacijom – Order transaction 3.0.**
+Narudžba može:   
+- odrediti, neovisno od drugih prethodno izdanih narudžbi, robu i/ili usluge koje Klijent namjerava kupiti i odgovarajuće upute za izvršenje usluge (Početna narudžba). Početna narudžba ne sadrži reference na druge narudžbe;  
+- odrediti, neovisno od drugih prethodno izdanih narudžbi, robu i/ili usluge koje Klijent namjerava kupiti i odgovarajuće upute za izvršenje isporuke, i ipak biti općenito povezana s drugim Dokumentom (Povezana početna narudžba). Povezana početna narudžba sadrži referencu na Dokument na koji je povezana i oznaku da se radi o pukom "povezivanju";  
+- opozvati prethodno izdanu narudžbu (Narudžba za opoziv). Narudžba za opoziv je narudžba koja sadrži oznaku da se radi o "Opozivu" i referencu na narudžbu koju se namjerava opozvati;  
+- zamijeniti prethodno izdanu narudžbu (Zamjenska narudžba). Izmjena narudžbe je nova narudžba koja sadrži sve redove narudžbe, koja sadrži oznaku da se radi o "Izmjeni" i referencu na narudžbu koju se namjerava izmijeniti.  
+Zamjene i Opozivi, redom, zamjenjuju i poništavaju kako navedenu narudžbu tako i sve druge Zamjene i Opozive, već poslane, koje se odnose na odgovarajuću Početnu narudžbu. Povezana početna narudžba može se koristiti isključivo za zadržavanje memorije da je novi proces koji se namjerava pokrenuti povezan s prethodnim procesom i nikada se ne smije koristiti umjesto drugih alata (Narudžba za opoziv, Zamjenska narudžba i Narudžba za potvrdu) posebno izrađenih za opoziv, zamjenu (ili dopunu), potvrdu ili odbijanje drugog Dokumenta.
 
-## Risposta
+## Odgovor
 
-La Risposta è il Documento con cui il Fornitore (Mittente) accetta, declina o propone dei 
-cambiamenti a un Ordine ricevuto dal Cliente (Destinatario). 
-**La Risposta è predisposta nel formato descritto dalla specifica PEPPOL Order Response transaction 3.0.**     
-Con la Risposta il Fornitore può comunicare al Cliente che: 
-- ha ricevuto l’Ordine (Risposta di ricezione), ma non lo ha ancora processato. Si tratta, 
-evidentemente, di una comunicazione interlocutoria che non contiene alcuna indicazione 
-in merito a “se e come” il Fornitore intende dar corso all’Ordine. La Risposta di ricezione 
-è una Risposta priva di linee d’ordine, che contiene l’indicazione che si tratta di una 
-“ricezione” (“AB”) e il riferimento all’Ordine che si comunica di aver ricevuto 
-- intende dar corso all’Ordine ricevuto (Risposta di accettazione). La Risposta di 
-accettazione è una Risposta priva di linee d’ordine, che contiene l’indicazione che si 
-tratta di una “Accettazione” e il riferimento all’Ordine che si intende accettare; 
-- declina l’Ordine ricevuto (Risposta di diniego ). La Risposta di diniego è una Risposta 
-priva di linee d’ordine, che contiene l’indicazione che si tratta di un “Rifiuto” e il 
-riferimento all’Ordine che si intende rifiutare; 
-- intende dar corso all’Ordine ricevuto apportando alcune modifiche (Risposta con 
-modifiche). La Risposta con modifiche3, che contiene l’indicazione che si tratta di una 
-“Modifica” e il riferimento all’Ordine che si intende modificare, deve contenere tutte le 
-linee d’ordine, sia quelle che si intende mantenere sia quelle che si intende variare, in 
-quanto integra l’Ordine precedentemente trasmesso a cui fa riferimento. 
-Le Risposte con modifiche e le Risposte di diniego, rispettivamente, integrano e annullano sia 
-l’Ordine ivi indicato sia tutte le altre Modifiche e Revoche, già trasmesse, riferite al medesimo 
-Ordine iniziale.       
+**Odgovor** je dokument kojim dobavljač (pošiljatelj) prihvaća, odbija ili predlaže izmjene narudžbe primljene od kupca (primatelja).    
+**Odgovor je izrađen u formatu definiranom PEPPOL specifikacijom – Order Response transaction 3.0.**  
+Dobavljač putem odgovora može obavijestiti kupca da:    
+- primio je narudžbu, ali je još nije obradio. To je, očigledno, komunikacija koja ne sadrži nikakve informacije o "da li i kako" dobavljač namjerava izvršiti narudžbu. Odgovor o prijemu je odgovor bez redaka narudžbe, koji sadrži oznaku da se radi o "prijemu" ("AB") i referencu na narudžbu koja se potvrđuje da je primljena.  
+- namjerava izvršiti primljenu narudžbu. Odgovor o prihvaćanju je odgovor bez redaka narudžbe, koji sadrži oznaku da se radi o "Prihvaćanju" i referencu na narudžbu koju namjerava prihvatiti;  
+- odbija primljenu narudžbu. Odgovor o odbijanju je odgovor bez redaka narudžbe, koji sadrži oznaku da se radi o "Odbijanju" i referencu na narudžbu koju namjerava odbiti;  
+- namjerava izvršiti primljenu narudžbu uz određene izmjene. Odgovor s izmjenama, koji sadrži oznaku da se radi o "Izmjeni" i referencu na narudžbu koju namjerava izmijeniti, mora sadržavati sve redove narudžbe, kako one koje se namjeravaju zadržati, tako i one koje se namjeravaju promijeniti, budući da nadopunjuje prethodno poslanu narudžbu na koju se odnosi.  
+Odgovori s izmjenama i odgovori o odbijanju, redom, nadopunjuju i poništavaju kako navedenu narudžbu, tako i sve druge izmjene i opozive, već poslane, koje se odnose na istu početnu narudžbu.    
 
-La Risposta a un Ordine revocato non ha effetti.
+Odgovor na opozvanu narudžbu nema učinka.
 
-## Ordine di Riscontro
+## Potvrdna narudžba  
 
-L’ Ordine di riscontro è il Documento con cui il Cliente (Mittente) conferma, declina o sostituisce 
-(Ordine di riscontro sostitutivo) un Ordine pre-concordato oppure una Risposta inviati dal 
-Fornitore (Destinatario). 
-**L’Ordine di riscontro, pertanto, altro non è che un Ordine che fa riferimento a un Documento inviato dal Fornitore. Conseguentemente, è predisposto nel medesimo formato, che è descritto dalla specifica PEPPOL Order transaction 3.0.**
-Con l’Ordine di riscontro il Cliente può comunicare al Fornitore: 
-- che conferma un Ordine pre-concordato o una Risposta inviata dal Fornitore ( Ordine di 
-riscontro per conferma ). L’Ordine di riscontro per conferma è un Ordine che contiene 
-l’indicazione che si tratta di una “Conferma” e il riferimento all’Ordine pre-concordato o 
-alla Risposta che si intende confermare; 
-- che declina un Ordine pre-concordato o una Risposta inviata dal Fornitore ( Ordine di 
-riscontro per diniego ). L’Ordine di riscontro per diniego è un Ordine che contiene 
-l’indicazione che si tratta di un “Rifiuto” e il riferimento all’Ordine o alle Risposta che si 
-intende rifiutare; 
-- che intende sostituire un Ordine pre-concordato o una Risposta inviata dal Fornitore ( 
-Ordine di riscontro sostitutivo ). L’Ordine di riscontro sostitutivo è un nuovo Ordine, 
-completo di tutte le linee d’ordine, che contiene l’indicazione che si tratta di una 
-“Sostituzione” e il riferimento all’Ordine o alla Risposta che si intende sostituire.        
+Potvrdna narudžba je dokument kojim kupac (pošiljatelj) potvrđuje, odbija ili zamjenjuje  
+(zamjenska potvrdna narudžba) prethodno dogovorenu narudžbu ili odgovor koji je poslao dobavljač (primatelj).  
+**Narudžba za potvrdu, stoga, nije ništa drugo nego narudžba koja se odnosi na dokument poslan od dobavljača. Posljedično, pripremljena je u istom formatu, koji je opisan specifikacijom PEPPOL narudžbe 3.0.**
+Kupac putem potvrdne narudžbe može obavijestiti dobavljača da:   
+- potvrđuje prethodno dogovorenu narudžbu ili odgovor koji je poslao dobavljač (potvrdna narudžba za potvrdu). Potvrdna narudžba za potvrdu je dokument koji sadrži oznaku da se radi o „Potvrdi“ te referencu na prethodno dogovorenu narudžbu ili na odgovor koji se potvrđuje.
+- odbija prethodno dogovorenu narudžbu ili odgovor koji je poslao dobavljač (potvrdna narudžba za odbijanje). Potvrdna narudžba za odbijanje je dokument koji sadrži oznaku da se radi o „Odbijanju“ te referencu na narudžbu ili odgovor koji se odbija.  
+- želi zamijeniti prethodno dogovorenu narudžbu ili odgovor koji je poslao dobavljač (zamjenska potvrdna narudžba). Zamjenska potvrdna narudžba je nova narudžba, koja uključuje sve stavke narudžbe, s oznakom da se radi o „Zamjeni“, te referencom na narudžbu ili odgovor koji se zamjenjuje.          
 
-Gli Ordini di riscontro sostitutivi e gli Ordini di riscontro per diniego, rispettivamente, rimpiazzano 
-e annullano sia l’Ordine pre-concordato o la Risposta ivi indicati sia tutte le altre Sostituzioni e 
-Revoche, già trasmesse, riferite al relativo Ordine iniziale.      
-L’Ordine di riscontro riferito a un Ordine pre-concordato revocato non ha effetti.
+Zamjenske potvrdne narudžbe i potvrdne narudžbe za odbijanje, svaka u svom slučaju, zamjenjuju i poništavaju i prethodno dogovorenu narudžbu ili odgovor na koji se odnose, kao i sve druge zamjene i opozive koji su već poslani i koji se odnose na istu početnu narudžbu.  
+Potvrdna narudžba koja se odnosi na opozvanu prethodno dogovorenu narudžbu nema učinka.
 
-## Ordine PRE-Concordato
+## Prethodno dogovorena narudžba  
 
-L’ Ordine pre - concordato è il Documento rappresentativo dell’ordine di acquisto di beni e servizi, 
-emesso dal Fornitore (Mittente) invece che dal Cliente (Destinatario), in accordo con quest’ultimo. 
-Un Ordine pre-concordato è composto da una o più linee d’ordine , in cui sono indicati il bene o il 
-servizio oggetto dell’acquisto, la quantità e il prezzo. 
-**L’Ordine pre-concordato è predisposto nel formato descritto dalla specifica PEPPOL Order Agreement transaction 3.0.**
-Un Ordine pre-concordato può: 
-- determinare, indipendentemente da altri Ordini pre-concordati precedentemente emessi, i 
-beni e/o i servizi che il Cliente intende acquistare e le relative istruzioni per eseguire la 
-fornitura (Ordine pre-concordato iniziale). Un Ordine pre-concordato iniziale non 
-contiene riferimenti ad altri Ordini pre-concordati
-- determinare, indipendentemente da altri Ordini pre-concordati precedentemente emessi, i 
-beni e/o i servizi che il Cliente intende acquistare e le relative istruzioni per eseguire la 
-fornitura e, tuttavia, essere genericamente relazionato a un altro Documento (Ordine preconcordato iniziale collegato). Un Ordine pre-concordato iniziale collegato contiene il 
-riferimento al Documento che a cui è collegato e l’indicazione che si tratta di un mero 
-“collegamento”. 
-- revocare un Ordine pre-concordato precedentemente emesso (Ordine pre-concordato di 
-revoca). L’Ordine pre-concordato di revoca è un Ordine pre-concordato che contiene 
-l’indicazione che si tratta di una “revoca” (“Cancelled”) e il riferimento all’Ordine preconcordato che si intende revocare, inoltre ha una sola linea d’ordine priva di contenuto.
-- sostituire un Ordine pre-concordato precedentemente emesso (Ordine pre-concordato 
-sostitutivo). La Modifica di ordine pre-concordato è un nuovo Ordine pre-concordato, 
-completo di tutte le linee d’ordine, che contiene l’indicazione che si tratta di una 
-“sostituzione” (“Revised”) e il riferimento all’Ordine pre-concordato che si intende 
-modificare.        
+Prethodno dogovorena narudžba je dokument koji predstavlja narudžbu za kupovinu roba ili usluga, koji izdaje dobavljač (pošiljatelj), a ne kupac (primatelj), u dogovoru s kupcem.
+Prethodno dogovorena narudžba sastoji se od jedne ili više stavki narudžbe, u kojima su navedeni proizvod ili usluga koji su predmet kupovine, količina i cijena.   
+**Prethodno dogovorena narudžba izrađena je u formatu opisanom u specifikaciji PEPPOL Order Agreement transaction 3.0.**
+Prethodno dogovorena narudžba može:
+- odrediti, neovisno o drugim ranije izdatim prethodno dogovorenim narudžbama, robu i/ili usluge koje kupac namjerava kupiti te upute za izvršenje isporuke (početna prethodno dogovorena narudžba). Početna prethodno dogovorena narudžba ne sadrži reference na druge narudžbe;  
+- odrediti, neovisno o drugim ranije izdatim prethodno dogovorenim narudžbama, robu i/ili usluge koje kupac namjerava kupiti te upute za izvršenje isporuke, ali biti općenito povezano s drugim dokumentom (povezana početna prethodno dogovorena narudžba). Ova vrsta narudžbe sadrži referencu na dokument na koji se odnosi i naznaku da se radi o običnoj „poveznici“;  
+- opozvati prethodno izdanu prethodno dogovorenu narudžbu (opoziv prethodno dogovorene narudžbe). Takva narudžba sadrži naznaku da se radi o „opozivu“ („Cancelled“) i referencu na narudžbu koja se opoziva, te ima samo jednu praznu stavku narudžbe bez sadržaja;  
+- zamijeniti prethodno izdanu prethodno dogovorenu narudžbu (zamjenska prethodno dogovorena narudžba). To je nova narudžba koja sadrži sve stavke narudžbe, s naznakom da se radi o „zamjeni“ („Revised“) i s referencom na narudžbu koju zamjenjuje.        
 
-Le Sostituzioni e le Revoche, rispettivamente, rimpiazzano e annullano sia l’Ordine preconcordato ivi indicato sia tutte le altre Sostituzioni e Revoche, già trasmesse, riferite al relativo 
-Ordine pre-concordato iniziale.        
-L’Ordine pre-concordato iniziale collegato può essere utilizzato esclusivamente per tenere 
-memoria che il nuovo processo che si intende avviare è collegato ad un processo precedente e non 
-deve mai essere usato al posto degli altri strumenti (Ordine pre-concordato di revoca, Ordine preconcordato sostitutivo e Risposta) appositamente realizzati per revocare, sostituire (o integrare), 
-accettare o rifiutare un altro Documento.
+Zamjene i Opozivi, respektivno, zamjenjuju i poništavaju kako Prethodno dogovorenu narudžbu navedenu tako i sve druge Zamjene i Opozive, već poslane, vezane uz odgovarajuću inicijalnu Prethodno dogovorenu narudžbu.  
+Inicijalna Prethodno dogovorena narudžba može se koristiti isključivo za zadržavanje evidencije da je novi proces koji se namjerava pokrenuti povezan s prethodnim procesom i nikada se ne smije koristiti umjesto drugih alata (Prethodno dogovorena narudžba za opoziv, Prethodno dogovorena zamjenska narudžba i Odgovor) posebno izrađenih za opoziv, zamjenu (ili dopunu), prihvaćanje ili odbijanje drugog Dokumenta.
 
-## RELAZIONE CON LO STANDARD PEPPOL
+## POVEZANOST SA STRANDARDOM PEPPOL
 
-Con riferimento all’Ordinazione di acquisto di beni e servizi, lo standard PEPPOL BIS versione 
-3.0 definisce tre tipi di documento:        
+U vezi s naručivanjem roba i usluga, standard PEPPOL BIS verzija 3.0 definira tri vrste dokumenata:         
 − Order transaction 3.0;       
 − Order Response transaction 3.0;     
 − Order Agreement transaction 3.0;       

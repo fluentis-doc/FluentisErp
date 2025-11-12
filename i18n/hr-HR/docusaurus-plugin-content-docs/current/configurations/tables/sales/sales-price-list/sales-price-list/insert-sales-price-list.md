@@ -1,113 +1,117 @@
 ---
-title: Nuovo listino di vendita
+title: Novi prodajni cjenik
 sidebar_position: 2
 ---
 
-Per creare un Nuovo Listino di vendita è necessario cliccare *Nuovo* dalla maschera di Ricerca listini.
-La form si compone di tre parti: Sezione superiore, Articoli e Dettagli. 
+Za kreiranje novog prodajnog cjenika potrebno je kliknuti *Novi* u prozoru za pretraživanje cjenika.  
+Forma se sastoji od tri dijela: Gornji dio, Artikli i Detalji.  
 
-## **1. Dati obbligatori**
+## **1. Obavezni podaci**
 
-I campi di testata obbligatori per l'inserimento di un nuovo listino sono:
-- **Listino**: un listino può essere *Generico* (potenzialmente valido per tutti i clienti) oppure *Personalizzato* (valido per un cliente specifico); è necessario selezionare l'opzione appropriata per determinare il listino da creare.     
-- **Tipo listino**: questo campo è attivo solo se il listino è generico e contiene il [Tipo listino](/docs/configurations/tables/sales/sales-price-lists).      
-- **Cliente**: questo campo è attivo solo se il listino è personalizzato e contiene il cliente per il quale viene creato il listino. In questa modalità si attiva anche il campo Contatto, che permette di scegliere una delle persone di riferimento inserite in anagrafica cliente; sebbene questo campo non influenzi i documenti, è utile per le restrizioni di visualizzazione, permettendo di limitare l’accesso ai soli documenti personali.    
+Obavezna polja u zaglavlju za unos novog cjenika su:    
+- **Cjenik**: cjenik može biti *Generički* (potencijalno vrijedi za sve klijente) ili *Personaliziran* (vrijedi za određenog klijenta); potrebno je odabrati odgovarajuću opciju za određivanje cjenika koji se kreira.       
+- **Tip cjenika**: aktivno samo ako je cjenik generički; sadrži [Tip cjenika](/docs/configurations/tables/sales/sales-price-lists).      
+- **Klijent**: aktivno samo ako je cjenik personaliziran; sadrži klijenta za kojeg se kreira cjenik. U ovom slučaju se aktivira i polje Kontakt, kojim se može odabrati osoba iz kartice klijenta; ovo polje ne utječe na dokumente, ali pomaže kod ograničenja prikaza, dopuštajući pristup samo osobnim dokumentima.    
 
-:::important[Importante]
-Per rendere un listino valido per un cliente, è necessario inserirlo in anagrafica cliente. Consultare la [documentazione](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) dedicata. 
+:::important[Važno]
+Da bi cjenik bio valjan za klijenta, potrebno ga je unijeti u karticu klijenta. Pogledajte [dokumentaciju](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) dedicata. 
 :::
 
-- **Divisa**: contiene la divisa da utilizzare; viene proposta di default la divisa della società.      
-- **Data inizio validità**: contiene la data a partire dalla quale il listino sarà considerato valido; viene proposta la data odierna.    
+- **Valuta**: valuta za cjenik; po defaultu je valuta tvrtke.         
+- **Datum početka valjanosti**: datum od kojeg je cjenik važeći; predlaže se današnji datum.     
 
-#### Campi non obbligatori    
-- **Prezzo ivato**: se attivo, questo flag indica che il listino sarà creato con prezzo ivato, quindi nei suoi articoli non sarà presente la colonna Prezzo, ma solo la colonna Prezzo ivato che riporterà direttamente la somma tra Prezzo e Iva; questo flag viene proposto se presente nella tabella [Tipo listino](/docs/configurations/tables/sales/sales-price-lists) ma è modificabile. Per una gestione più flessibile, nei [Parametri Listini di Vendita](/docs/configurations/parameters/sales/price-list-parameters), è possibile forzare la visualizzazione sia del prezzo che del prezzo ivato tramite il flag visualizza prezzo e prezzo ivato, indipendentemente dall’impostazione del tipo listino.      
-- **Data fine validità**: se il listino non deve più essere valido dopo una certa data, la data va inserita in questo campo.       
-- **Listino minimo**: questo flag informativo indica che il listino è a prezzi minimi di tentata vendita.       
-- **Configurazione ricerche**: questa impostazione ha due possibili funzioni: mostrare alcuni Extra Data a livello di listino, oppure pilotare alcune informazioni (per esempio il tipo pagamento) per diverse tipologie di operazioni.      
-Infine è presente un **Filtro articoli** che permette di ricercare velocemente gli articoli nel listino; viene usato in caso di listini molto corposi. 
+#### Neobavezna polja     
+- **Cijena s PDV-om**:  ako je aktivno, ovaj indikator označava da će se cjenik kreirati s cijenom uključujući PDV. U artiklima neće biti vidljiva kolona "Cijena", nego samo kolona "Cijena s PDV-om", koja prikazuje izravno zbroj cijene i PDV-a. Ovaj indikator se predlaže ako je prisutan u tablici [Tip cjenika](/docs/configurations/tables/sales/sales-price-lists) , ali se može promijeniti. Za fleksibilnije upravljanje, u [Parametri prodajnih cjenika](/docs/configurations/parameters/sales/price-list-parameters), moguće je prisiliti prikaz i cijene i cijene s PDV-om putem indikatora "prikaži cijenu i cijenu s PDV-om", neovisno o postavkama tipa cjenika.    
+- **Datum završetka valjanosti**: ako cjenik ne smije biti valjan nakon određenog datuma, taj datum treba unijeti u ovo polje.     
+- **Minimalni cjenik**: ovaj informativni indikator označava da je cjenik na minimalnim cijenama za probnu prodaju.        
+-  **Konfiguracija pretraživanja**: može prikazivati dodatne podatke na razini cjenika ili upravljati informacijama (npr. tip plaćanja) za različite operacije.    
+Dostupan je i **Filter artikala** za brzu pretragu u velikim cjenicima.
 
-## **2. Articoli**
+## **2. Artikli**
 
-In questa sezione verranno indicati gli articoli ed eventuali sconti associati a questo listino. Le colonne presenti nella griglia sono:    
-- **Classe/Articolo/Descrizione**: contiene il codice dell'articolo da includere nel listino; per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.            
-- **Codice/Descrizione variante**: nelle colonne dedicate alla variante possiamo associare le varianti dell’articolo e ad ognuna il relativo prezzo di vendita, da proporre nei documenti; solo gestendo i listini è possibile gestire la proposta del prezzo per variante.      
-- **Unità di misura**: può essere quella gestionale dell'articolo o una delle sue unità di misura alternative; in sede di creazione dei documenti, in base all’unità di misura specificata, verrà proposto un listino valido per quella unità di misura.      
-- **Marca**: se specificata.      
-- **Quantità**: proposta uguale a 1, è la quantità di riferimento del prezzo; se diversa da 1, quando deve essere calcolato il prezzo viene diviso per la quantità del listino.
-- **Prezzo** riferito alla divisa del listino, questa colonna è visibile se il listino non è a Prezzo ivato.     
-- **IVA**: questo campo viene recuperato dall'anagraica cliente; qualora sul cliente non fosse impostato sarà necessario popolare questo campo con il codice IVA.  
-- **Prezzo Ivato**: il sistema calcola questo prezzo come somma tra il prezzo e l'aliquota del codice IVA inserito.     
-- **Fascia di prezzo**: questa impostazione è utilizzata per selezionare i listini cliente in base alle fasce di prezzo impostabili negli extra data relativi agli articoli; è possibile, a parità di articolo, avere delle discriminanti per le quali il prezzo di listino risulti diverso: basti pensare ai capi d'abbigliamento per i quali al cambiare della taglia varia anche il prezzo di vendita. 
+Ovdje se unose artikli i eventualni popusti vezani uz cjenik.  
+Kolone u mreži su:   
+- **Klasa/Artikl/Opis**: kod artikla koji se dodaje u cjenik; novi artikl se unosi na praznu liniju ili putem tipke *Novi artikl* u ribbon bar-u.  
+- **Kod/Opis varijante**: za povezivanje varijanti artikla i njihovih prodajnih cijena.  
+- **Jedinica mjere**: osnovna ili alternativna jedinica mjere; pri kreiranju dokumenata predlaže se odgovarajući cjenik za tu jedinicu.  
+- **Marka**: ako je specificirano.  
+- **Količina**: referentna količina za cijenu; ako nije 1, cijena se dijeli s količinom.  
+- **Cijena**: u valuti cjenika, vidljivo ako cjenik nije s PDV-om.  
+- **PDV**: preuzeto iz kartice klijenta; ako nije postavljeno, potrebno ga je unijeti.  
+- **Cijena s PDV-om**: sustav izračunava kao zbroj cijene i PDV-a.  
+- **Cjenovna kategorija**: koristi se za selekciju cjenika prema kategorijama artikala i raznim parametrima (npr. veličina odjeće).
 
-### 2.1 Dettagli
 
-In questa sezione, per ogni articolo del listino, è possibile inserire diverse tipologie di sconto.
-Nel **Tipo scaglione** è possibile inserire la tipologia di sconto di default da applicare al listino. Al tipo scaglione inserito qui ha precedenza quello eventualmente inserito in anagrafica.        
-Nelle tab sottostanti è possibile inserire i vari sconti per il listino; infatti, è possibile che uno stesso articolo di listino abbia diversi sconti associati, ma sarà possibile scegliere lo scaglione da utilizzare direttamente nel documento.       
+### 2.1 Detalji
 
-Di seguito vengono spiegati i tipi sconto che si possono inserire.      
+U ovom odjeljku, za svaki artikl u cjeniku, moguće je unijeti različite tipove popusta.  
+U **Tip skale** moguće je unijeti zadani tip popusta koji će se primijeniti na cjenik. Tip skale unesen ovdje ima prednost nad onim eventualno unesenim u kartici artikla.  
+U karticama ispod moguće je unijeti različite popuste za cjenik; moguće je da isti artikl ima više povezanih popusta, ali će se skala koristiti izravno u dokumentu.   
 
-#### 2.1.1 Sconti
+U nastavku su objašnjeni tipovi popusta koji se mogu unijeti.   
 
-Questi sconti sono fissi e vengono riportati sui documenti indipendentemente dalla quantità o da altre variabili esplicitate nell'ordine: il tipico esempio sono gli sconti commerciali.       
-I campi presenti in questa griglia sono:
-- **Priorità**: questo valore viene preso dalle impostazioni inserite nella tabella [Tipi sconto](/docs/configurations/tables/general-settings/discount-types) e indica la priorità per il reperimento dello sconto.       
-- **Tipo sconto/Descrizione**: in questo campo serve selezionare il tipo sconto tra quelli codificati.        
-- **Valore**: impostare la percentuale di sconto da applicare.       
-- **Cascata/Imponibile**: anche questo dato viene ripreso dalle impostazioni inserite nella tabella [Tipi sconto](/docs/configurations/tables/general-settings/discount-types); se lo sconto è a Cascata, viene calcolato sull'imponibile decurtato degli sconti già calcolati, se invece è a Imponibile viene calcolato sull'imponibile.         
+#### 2.1.1 Popusti
 
-#### 2.1.2 Sconti a quantità
+Ovi popusti su fiksni i prikazuju se u dokumentima bez obzira na količinu ili druge varijable navedene u narudžbi; tipičan primjer su komercijalni popusti.  
+Polja u ovoj tablici su:
+- **Prioritet**: iz [Tipovi popusta](/docs/configurations/tables/general-settings/discount-types), određuje redoslijed primjene.          
+- **Tip popusta/Opis**: odabir tipa popusta.         
+- **Vrijednost**: postotak popusta.          
+- **Kaskadno/Osnovica**: ovaj se podatak također preuzima iz postavki unesenih u tablici [Tipovi popusta](/docs/configurations/tables/general-settings/discount-types);  ako je popust *kaskadni*, izračunava se na osnovicu umanjenu za već primijenjene popuste, dok se kod opcije *osnovica* popust računa na punu osnovicu.       
 
-Questa tipologia di sconto permette di avere diverse percentuali di sconto a seconda della quantità venduta. Le colonne presenti sono:      
-- **Tipo**: in questo campo serve selezionare il tipo sconto tra quelli codificati.         
-- **Quantità**: impostare la quantità per la quale verrà attivato lo sconto.          
-- **Percentuale**: inserire la percentuale di sconto al raggiungimento della quantità indicata.      
+#### 2.1.2 Popusti po količini  
+
+Ova vrsta popusta omogućuje primjenu različitih postotaka popusta ovisno o prodanoj količini. Stupci koji su prisutni u tablici su:  
+- **Vrsta**: u ovom se polju odabire vrsta popusta među onima koji su definirani.  
+- **Količina**: postavlja se količina pri kojoj će se popust aktivirati.  
+- **Postotak**: unosi se postotak popusta koji će se primijeniti nakon dostizanja navedene količine.  
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image07.png)
 
-Nell'esempio riportato se verranno vendute 2 unità,avremo uno sconto del 7%, 3 unità sconto del 10% e così via.
+U prikazanom primjeru, ako se prodaju 2 jedinice, ostvaruje se popust od 7%, za 3 jedinice popust od 10% i tako dalje.
 
-#### 2.1.3 Sconti a Valore
+#### 2.1.3 Popusti prema vrijednosti
 
-In questa tipologia lo sconto scatta quando si raggiunge un determinato importo per riga documento. Le colonne presenti sono:     
-- **Tipo**: in questo campo serve selezionare il tipo sconto tra quelli codificati.         
-- **Valore**: impostare un valore superato il quale scatta lo sconto.
-- **Percentuale**: inserire la percentuale di sconto da applicare al raggiungimento del valore.
+Kod ove vrste popusta, popust se aktivira kada se dostigne određeni iznos po retku dokumenta. Stupci koji su prisutni u tablici su:  
+- **Vrsta**: u ovom se polju odabire vrsta popusta među onima koji su definirani.  
+- **Vrijednost**: postavlja se iznos čijim se premašivanjem popust aktivira.  
+- **Postotak**: unosi se postotak popusta koji se primjenjuje nakon što se dostigne navedeni iznos.  
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image09.png)
 
-Nell'esempio riportato se per riga il valore è inferiore a 100 euro, non avremo sconti. Con un valore compreso tra 100 e 200 avremo il 2% di sconto. Se il valore è compreso tra 200 e 300 verrà applicato il 4%. Se il valore supera i 300 euro verrà applicato uno sconto del 6%.
+U prikazanom primjeru, ako je vrijednost po retku manja od 100 eura, popusta nema.  
+Za vrijednost između 100 i 200 eura primjenjuje se popust od 2%.  
+Ako je vrijednost između 200 i 300 eura, popust je 4%, a ako iznos premašuje 300 eura, primjenjuje se popust od 6%.
 
-#### 2.1.4 Prezzo per quantità
+#### 2.1.4 Cijena prema količini
 
-In questa caso, al raggiungimento di una certa quantità, il prezzo unitario cambia. Le colonne presenti sono:      
-- **Quantità**: impostare un valore superato il quale scatta il prezzo "personalizzato".      
-- **Prezzo unitario**: inserire il prezzo unitario per la quantità ordinata.
+U ovom slučaju, nakon što se postigne određena količina, jedinična se cijena mijenja. Stupci koji su prisutni u tablici su:  
+- **Količina**: postavlja se vrijednost nakon čijeg se premašivanja aktivira "prilagođena" cijena.  
+- **Jedinična cijena**: unosi se jedinična cijena za naručenu količinu.  
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image11.png)
 
-Nell'esempio riportato se per riga la quantità è i inferiore a 100 euro,il prezzo sarà quello del listino. Con una quantità compresa tra 100 e 120 avremo un prezzo unitario di 10. Con una quantità compresa tra 100 e 120 avremo un prezzo unitario di 9 e così via.
+U prikazanom primjeru, ako je količina po retku manja od 100 eura, cijena će biti ona iz cjenika.  
+Za količinu između 100 i 120, jedinična cijena bit će 10.  
+Za količinu između 120 i 140, jedinična cijena bit će 9, i tako dalje.
 
-#### 2.1.5 Note
+#### 2.1.5 Napomene
 
-A livello informativo è possibile inserire delle note legate ad un particolare tipo di scontistica.
+Na informativnoj razini moguće je unijeti napomene povezane s određenom vrstom popusta.
 
-#### 2.1.6 Destinazioni
+#### 2.1.6 Odredišta
 
-Con questo parametro è possibile decidere se per una destinazione del cliente, il prezzo unitario debba essere diverso. Inoltre è possibile gestire questo particolare tipo di promo per una data specifica. Le colonne presenti sono:    
-- **Destinazione**: deve essere un indirizzo dell'anagrafica contatti legato al cliente di fatturazione.   
-- **Data DA/A**: inserire un range di date per le quali proporre un prezzo diverso dal listino solo per la destinazione indicata.   
-- **Prezzo**: inserire il prezzo per la destinazione.
+Pomoću ovog parametra moguće je odrediti treba li jedinična cijena biti različita za određeno odredište kupca.  
+Također je moguće upravljati ovom posebnom vrstom promocije za točno određeni vremenski period.  
+Stupci koji su prisutni u tablici su:   
+- **Odredište**: mora biti adresa iz evidencije kontakata povezana s kupcem koji je obveznik fakturiranja.  
+- **Datum OD/DO**: unosi se raspon datuma tijekom kojih se nudi cijena različita od one u standardnom cjeniku, ali samo za navedeno odredište.  
+- **Cijena**: unosi se cijena za navedeno odredište.
 
-## **3. Extra data**
+## **3. Dodatni podaci**
 
-import DocItemExtraData from './../../../import/sections/doc-item-extradata.md'
+Donosi se popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću unosa novih dodatnih podataka koji su korisni samo za predmetni dokument, uz mogućnost putem odgovarajuće oznake odabrati koje dodatne podatke ispisati.
 
-<DocItemExtraData />
+## **4. Dokumenti u privitku**
 
-## **4. Documenti allegati**
-
-import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
-
-<DocAttachDocument />
+Prikazuje se detalj eventualnog **Priloženog dokumenta** (naziv, tip dokumenta, eventualne napomene, naš/vaša referenca). Za upute o tome kako priložiti dokument, upućujemo na članak [Priloži dokumente](/docs/guide/common/operations-with-data/attach-documents).

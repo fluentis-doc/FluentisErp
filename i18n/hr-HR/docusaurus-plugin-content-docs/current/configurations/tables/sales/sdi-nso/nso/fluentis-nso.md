@@ -3,28 +3,25 @@ title: Fluentis NSO
 sidebar_position: 5
 ---
 
-## Configurazione
+## Konfiguracija
 
-La prima configurazione da fare è inserire il flag Trasmissione Ordini Elettronici in *Home > Tabelle > Impostazioni generali > Configurazione documenti elettronici*.        
-Nella tabella Configurazione documenti elettronici è possibile definire per ogni società l’utilizzo 
-del ricevimento e della trasmissione degli ordini elettronici con la pubblica amministrazione, 
-nella stessa tabella è possibile identificare come devono essere eseguite certe transazioni.        
-Tra le tabelle delle impostazioni generali c’è la sezione PEPPOL dove ci sono:
-Le tabelle precodificate:
-- Tipi ordine cliente standard PEPPOL, contiene i codici dei tipi ordine Ordine e sotto-Ordine definiti nella code list dello Standard PEPPOL
-- Codici Unità di misura standard PEPPOL, contiene le Unità di misura definiti nella code 
-list dello Standard PEPPOL
-- Codici IVA standard PEPPOL, contiene i codici IVA definiti nella code list dello 
-Standard PEPPOL
-- Codici sconto standard PEPPOL
-- Codici spese standard PEPPOL
-- Classificazione Articoli standard PEPPOL
-- Natura Processi 
-- Natura Documenti
+Prva konfiguracija koju je potrebno izvršiti je uključivanje oznake Prijenos elektroničkih narudžbi u *Početna stranica > Tablice > Opće postavke > Konfiguracija elektroničkih dokumenata*.        
+U tablici Konfiguracija elektroničkih dokumenata moguće je definirati za svako poduzeće način korištenja prijema i slanja elektroničkih narudžbi prema javnoj upravi.  
+U istoj tablici moguće je i odrediti kako se određene transakcije trebaju izvršavati.        
+Između tablica općih postavki nalazi se odjeljak PEPPOL gdje se nalaze:  
+Prekodirane tablice:  
+- Standardni tipovi narudžbi kupca PEPPOL – sadrži kodove tipova narudžbi i pod-narudžbi definirane u PEPPOL standardnoj code listi
+- Standardni PEPPOL kodovi mjernih jedinica – sadrži mjerne jedinice definirane u PEPPOL standardnoj code listi
+- Standardni PEPPOL kodovi PDV-a – sadrži PDV kodove definirane u PEPPOL standardnoj code listi
+- Standardni PEPPOL kodovi popusta
+- Standardni PEPPOL kodovi troškova
+- Standardna PEPPOL klasifikacija artikala
+- Priroda procesa
+- Priroda dokumenata
 
-## Tabelle da configurare
+## Tablice za konfiguraciju
 
-Le tabelle da configurare sono le seguenti:     
+Tablice koje je potrebno konfigurirati su sljedeće:    
 
 - I tipi ordine Fluentis che corrispondono ai tipi ordine PEPPOL (configurazione tipi 
 ordine cliente)

@@ -1,17 +1,15 @@
 ---
-title: Associazione tipi listini di vendita
+title: Povezivanje tipova prodajnih cjenika  
 sidebar_position: 1
 ---
 
-In questa procedura sono visualizzate le associazioni dei listini di vendita collegate alle categorie commerciali.     
-Nella prima griglia sono presenti i riferimenti dell'associazione e la categoria commerciale collegata. Questo legame indica che il gruppo di tipologie di listini facente parte dell'[Associazione](/docs/sales/sales-price-list/procedures/category-association) è valido per la categoria commerciale scelta.      
-Nella seconda griglia, invece, è possibile inserire degli **Sconti** validi per l'associazione selezionata nella prima griglia.         
+U ovoj proceduri prikazuju se veze prodajnih cjenika povezane s komercijalnim kategorijama.       
+U prvoj mreži nalaze se podaci o vezi i pripadajuća komercijalna kategorija. Ova veza označava da je grupa tipova cjenika koja je dio [Udruge](/docs/sales/sales-price-list/procedures/category-association) važeća za odabranu komercijalnu kategoriju.        
+U drugoj mreži moguće je unijeti **Popuste** koji vrijede za odabranu udrugu iz prve mreže.          
 
-Facendo doppio click su una riga della prima griglia, è possibile aprire in modifica l'**Associazione**.      
-Nella maschera che si apre è possibile inserire nella parte superiore il **Tipo associazione**, formato da un codice e una descrizione, e una **Data inizio validità** da proporre nei listini. Sono presenti poi dei bottoni per proporre priorità e sconto nelle righe listino.       
-Nella griglia si inseriscono le tipologie di listino da considerare in questa associazione. E' possibile inserire manualmente le tipologie oppure proporre i listini generali con il bottone della ribbon bar **Proponi i listini generali**.      
-Il flag **Predefinito** indica che tra tutte questa tipologia è di default.     
-Il flag **Se stesso** permette di considerare un listino personalizzato in anagrafica cliente, quando avverrà l'associazione.     
+U otvorenom prozoru moguće je unijeti u gornjem dijelu:**Tip udruge**, sastavljen od koda i opisa, **Datum početka valjanosti** koji će se predložiti u cjenicima.  
+Dostupne su tipke za postavljanje prioritet i popusta u redovima cjenika.       
+U mreži se unose tipovi cjenika koje treba razmotriti u ovoj udruzi.  
+Moguće ih je unijeti ručno ili predložiti generičke cjenike pomoću tipke u **traci izbornika** u **Predloži generičke cjenike** i **Sebe**: omogućuje razmatranje personaliziranog cjenika iz kartice klijenta prilikom stvaranja veze.       
 
-A questo punto il gruppo di tipologie di listino presenti nell'associazione risulta valido per la categoria commerciale inserita.
-Se necessario associare massivamente queste tipologie di listino nell'anagrafica cliente, si utilizza la procedura [Associazione listini clienti per categoria commerciale](/docs/sales/sales-price-list/procedures/category-association).
+Na taj način, grupa tipova cjenika prisutnih u udruzi vrijedi za odabranu komercijalnu kategoriju. Ako je potrebno masovno povezati ove tipove cjenika u kartici klijenta, koristi se procedura [Povezivanje cjenika klijenata po komercijalnoj kategoriji](/docs/sales/sales-price-list/procedures/category-association).

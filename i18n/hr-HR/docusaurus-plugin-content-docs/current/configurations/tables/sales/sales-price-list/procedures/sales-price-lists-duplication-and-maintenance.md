@@ -34,17 +34,17 @@ Nakon odabira željenih filtera, klikom na Traži mreža će se popuniti sa svim
 ### Traka izbornika 
 
 Tipke dostupne u **traci izbornika** su:      
-- **Aggiorna**: apre un pop up per proseguire con l'aggiornamento del prezzo dell'articolo nel listino; si devono specificare:
-1. **Data inizio validità** delle righe listino da aggiornare (eventualmente anche una **Data fine validità** non obbligatoria)
-2. **Arrotondamento** contenente le politiche di variazione prezzi e sconti del listino, oppure
-3. **Percentuale di incremento**, togliendo il codice dell'arrotondamento e inserendo manualmente la percentuale.
-4. **OK** per eseguire l'aggiornamento.
+- **Ažuriraj**: otvara pop-up za nastavak ažuriranja cijene artikla u cjeniku; potrebno je specificirati:    
+1. **Datum početka valjanosti** redaka cjenika koji se ažuriraju (eventualno i **Datum završetka valjanosti**, nije obavezno)  
+2. **Zaokruživanje** koje sadrži pravila promjene cijena i popusta cjenika, ili    
+3. **Postotak povećanja**, uklanjanjem koda za zaokruživanje i ručnim unosom postotka.    
+4. **OK** za izvršenje ažuriranja.    
 
-:::note Nota
-Se non si specifica la Data inizio validità, l'aggiornamento non da nessun esito e non viene eseguito.
+:::note Napomena
+Ako se ne specificira Datum početka valjanosti, ažuriranje neće dati rezultat i neće se izvršiti.  
 :::  
 
-- **Chiudi Listini**: apre una nuova form per forzare la *Data fine validità* per le righe listino selezionate; la *Data di fine validità* deve essere maggiore alla maggior data dell'ultimo documento riferito alle righe listino da chiudere (far scadere).      
-- **Duplica listini**: apre un pop up e, per le righe listini selezionate, crea o aggiunge le nuove righe ad un nuovo listino o ad un listino già esistente; è possibile, per le righe selezionate, creare un nuovo listino andando a specificare: se si vuole creare un listino *Generale* o *Personalizzato*, il *Tipo listino*, la *Data validità da* e la *Divisa*; con il flag *Mantieni le stesse date del listino di origine* si crea un listino con tipologia diversa ma con stesse date validità.
-- **Sconti**: apre un pop up per assegnare alle righe selezionate degli *Sconti* di riga, aggiungendoli a quelli presenti o sostituendoli utilizzando il check button *Cancella Sconti precedenti*.
-- **Riapertura listini**: se viene usato, in caso di righe listino con *Data fine validità*, tali righe vengono riportate nel listino *senza* data fine validità.
+- **Zatvori cjenike**: otvara novu formu za prisilno postavljanje *Datuma završetka valjanosti* za odabrane redove cjenika; *Datum završetka valjanosti* mora biti veći od najvećeg datuma posljednjeg dokumenta vezanog uz odabrane redove cjenika.         
+- **Dupliciraj cjenike**: otvara pop-up i za odabrane redove cjenika stvara ili dodaje nove retke u novi ili postojeći cjenik; moguće je za odabrane redove stvoriti novi cjenik, specificirajući: hoće li biti *Generički* ili *Personalizirani*, *Tip cjenika*, *Datum valjanosti od* i *Valutu*; s opcijom *Zadrži iste datume kao u izvornom cjeniku* stvara se cjenik različite tipologije, ali sa istim datumima valjanosti.    
+- **Popusti**: otvara pop-up za dodjeljivanje *Popusta* odabranim redovima, dodajući ih postojećima ili ih zamjenjujući pomoću check tipke *Obriši prethodne popuste*.    
+- **Popusti**: otvara pop-up za dodjeljivanje *Popusta* odabranim redovima, dodajući ih postojećima ili ih zamjenjujući pomoću check tipke *Obriši prethodne popuste*.    
