@@ -39,7 +39,7 @@ The upper grid shows the details of the Purchase Orders being created. These inc
 
 The lower grid shows the details of the items contained in each order. The editable data in this grid are: *Confirmed Quantity*, *VAT*, and *Purchase Turnover Type*.
 
-> **Original Quantity**: quantity entered in the source document (RDA or Sales Order).  
+> **Original Quantity**: quantity entered in the source document (PD or Sales Order).  
 > **Available Quantity**: availability of the item across all warehouses considered in the *Availability Calculation* as of today.  
 > **Confirmed Quantity**: if the *Available Quantity* is less than the *Original Quantity*, the latter is automatically proposed. Alternatively, a null quantity will be proposed, and the field must be populated to proceed.
 
@@ -49,7 +49,7 @@ The lower grid shows the details of the items contained in each order. The edita
 
 #### 4.1 Choose the supplier to order based on:
 
-- **Supplier and price list from purchase request**: proposes the supplier and purchase list present in the RDA.  
+- **Supplier and price list from purchase request**: proposes the supplier and purchase list present in the PD.  
 - **Supplier and price list from default preferred supplier**: proposes the default preferred supplier of the item.  
 - **Supplier and prices from last invoiced/received/ordered purchase**: searches for the supplier and prices of the item in the last received purchase invoice; if invoices are not managed, it searches in shipping documents or orders.  
 - **Supplier with the best purchase price**: selects the supplier with the lowest purchase price.  
@@ -58,9 +58,9 @@ The lower grid shows the details of the items contained in each order. The edita
 
 #### 4.2 Creation Parameters
 
-- **Purchase Order type from purchase requests**: indicates the type of Purchase Order to be created from the RDAs. It can be modified in the *Order Prototypes*.  
+- **Purchase Order type from purchase requests**: indicates the type of Purchase Order to be created from the PDs. It can be modified in the *Order Prototypes*.  
 - **Purchase Order type from Sales Orders**: indicates the type of Purchase Order to be created from Sales Orders. It can be modified in the *Order Prototypes*.  
-- **Group by item**: if the RDA or the sales order contains multiple lines with the same item, the procedure creates a single line with the sum of the quantities of the item. The grouping is performed only for the items contained in the same source document.
+- **Group by item**: if the PD or the sales order contains multiple lines with the same item, the procedure creates a single line with the sum of the quantities of the item. The grouping is performed only for the items contained in the same source document.
 
 #### 4.3 Data to be used if not coded for each item
 
