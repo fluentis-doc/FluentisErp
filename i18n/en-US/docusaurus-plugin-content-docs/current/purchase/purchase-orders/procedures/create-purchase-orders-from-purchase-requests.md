@@ -60,7 +60,7 @@ The lower grid shows the details of the items contained in each order. The edita
 
 - **Purchase Order type from purchase requests**: indicates the type of Purchase Order to be created from the RDAs. It can be modified in the *Order Prototypes*.  
 - **Purchase Order type from Sales Orders**: indicates the type of Purchase Order to be created from Sales Orders. It can be modified in the *Order Prototypes*.  
-- **Group by item**: groups orders by item.
+- **Group by item**: if the RDA or the sales order contains multiple lines with the same item, the procedure creates a single line with the sum of the quantities of the item. The grouping is performed only for the items contained in the same source document.
 
 #### 4.3 Data to be used if not coded for each item
 
