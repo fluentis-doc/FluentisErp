@@ -1,75 +1,33 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Dal 15 maggio 2019 il Nodo di Smistamento degli Ordini di acquisto (NSO) è disponibile per 
-l'utilizzo sperimentale ai sensi dell'art. 5 del d.m. 7/12/2018 e dal 16 luglio 2019 il sistema è in 
-grado di elaborare, oltre ai Documenti previsti dal processo di Ordinazione semplice, anche tutti i 
-Documenti previsti dai processi di Ordinazione completa e di Ordinazione pre-concordata. 
-Come previsto dalla norma citata, i documenti scambiati non producono effetti giuridici tra le parti.
-Con riferimento ai documenti informatici attestanti l’ordinazione di acquisto, il Decreto del 
-Ministro dell’Economia e delle Finanze 7 dicembre 2018 stabilisce che essi devono essere 
-obbligatoriamente emessi in formato elettronico e trasmessi per il tramite di NSO, con decorrenza 
-dal 1 ottobre 2019.           
-Tutti gli ordini di acquisto della pubblica amministrazione dovranno essere effettuati 
-esclusivamente in formato elettronico e trasmessi per il tramite del Nodo di Smistamento degli 
-Ordini di acquisto (NSO).         
-NSO utilizza l’infrastruttura, già esistente, del Sistema di Interscambio delle fatture elettroniche 
-(SdI) e dialogherà con la Banca Dati Nazionale dei Contratti Pubblici (BDNCP), gestita 
-dall’Autorità Nazionale Anticorruzione (ANAC), affinché sia assicurato che tutti gli ordini di 
-acquisto siano riferiti a contratti a cui risulti regolarmente assegnato il codice identificativo di gara 
-(CIG).
-Le informazioni tratte dai predetti sistemi sono gestite e rese disponibili dalla Piattaforma dei 
-Crediti Commerciali (PCC). 
-Questa soluzione permetterà di utilizzare tutti i canali di trasmissione già in uso per la fatturazione 
-elettronica, a cui è aggiunta la possibilità di usare l’infrastruttura di trasporto definita dalle 
-specifiche PEPPOL (Pan-European Public Procurement Online).
-I documenti trasmessi per il tramite di NSO (ordini, risposte, conferme, revoche) dovranno essere 
-formati rispettando gli standard previsti dalle Business Interoperability Specifications (BIS) di 
-PEPPOL o le loro estensioni nazionali.         
-Attualmente, NSO non gestisce i documenti attestanti l’esecuzione degli acquisti, con l’eccezione 
-della Risposta all’ordine, che si colloca a cavallo tra la fase di Ordinazione e quella di esecuzione. 
-Per tale motivo ogni altro documento attestante l’esecuzione degli acquisti è escluso dall’obbligo 
-di emissione e trasmissione in formato elettronico.
-NSO è una sorta di postino intelligente che gestisce lo scambio, tra clienti e fornitori, degli ordini 
-di acquisto (e gli altri documenti eventualmente occorrenti). Oltre a provvedere al loro recapito, 
-NSO verifica che i documenti trasmessi siano stati correttamente formati e contengano tutte le 
-informazioni necessarie al loro successivo utilizzo per le fasi di fatturazione e pagamento.          
-NSO riceve i Messaggi e controlla che siano correttamente formati. Se tale verifica va a buon fine, 
-li inoltra ai rispettivi Destinatari e, con apposite Notifiche di sistema, informa i Mittenti sull’esito 
-della verifica e del recapito.
-Se il Cliente o il Fornitore interagiscono con NSO per il tramite di un Intermediario, i primi 
-assumono il ruolo di Mittente o di Destinatario, mentre l’Intermediario assume il ruolo di 
-Trasmittente e/o di Ricevente.
+Od 15. svibnja 2019. godine, Čvor za razmjenu narudžbi (NSO) dostupan je za eksperimentalnu upotrebu prema članku 5. d.m. 7/12/2018, a od 16. srpnja 2019. sustav je sposoban obraditi, osim dokumenata predviđenih procesom jednostavne narudžbe, i sve dokumente predviđene procesima potpune narudžbe i unaprijed dogovorene narudžbe. Kao što je predviđeno navedenom normom, razmijenjeni dokumenti nemaju pravne učinke između strana. 
+U vezi s elektroničkim dokumentima koji potvrđuju narudžbu, Dekret ministra gospodarstva i financija od 7. prosinca 2018. utvrđuje da se oni moraju obavezno izdavati u elektroničkom formatu i slati putem NSO-a, počevši od 1. listopada 2019. godine.  
+Sve narudžbe javne uprave moraju se obavljati isključivo u elektroničkom formatu i slati putem Čvora za razmjenu narudžbi (NSO).  
+NSO koristi već postojeću infrastrukturu Sustava razmjene elektroničkih računa (SdI) i komunicirat će s Nacionalnom bazom podataka javnih ugovora (BDNCP), kojom upravlja Nacionalna agencija za borbu protiv korupcije (ANAC), kako bi se osiguralo da sve narudžbe budu vezane uz ugovore kojima je redovito dodijeljen identifikacijski kod natječaja (CIG).  
+Informacije iz navedenih sustava upravljaju se i dostupne su putem Platforme komercijalnih potraživanja (PCC).  
+Ovo rješenje omogućit će korištenje svih kanala prijenosa koji se već koriste za elektroničko fakturiranje, uz dodatnu mogućnost korištenja transportne infrastrukture definirane PEPPOL specifikacijama (Pan-European Public Procurement Online).  
+Dokumenti poslani putem NSO-a (narudžbe, odgovori, potvrde, opozivi) moraju biti oblikovani u skladu sa standardima predviđenim Business Interoperability Specifications (BIS) PEPPOL-a ili njihovim nacionalnim proširenjima.  
+Trenutno, NSO ne upravlja dokumentima koji potvrđuju izvršenje nabava, osim odgovora na narudžbu, koji se nalazi između faze narudžbe i faze izvršenja. Iz tog razloga, svaki drugi dokument koji potvrđuje izvršenje nabava izuzet je od obveze izdavanja i slanja u elektroničkom formatu.  
+NSO je svojevrsni pametni poštar koji upravlja razmjenom narudžbi (i drugih potrebnih dokumenata) između kupaca i dobavljača. Osim što osigurava njihovu dostavu, NSO provjerava jesu li poslani dokumenti ispravno oblikovani i sadrže sve potrebne informacije za njihovu daljnju upotrebu u fazama fakturiranja i plaćanja.  
+NSO prima poruke i provjerava jesu li ispravno oblikovane. Ako ta provjera prođe uspješno, proslijedi ih odgovarajućim primateljima i, putem odgovarajućih sustavnih obavijesti, obavještava pošiljatelje o ishodu provjere i dostave.  
+Ako kupac ili dobavljač komuniciraju s NSO-om putem posrednika, prvi preuzimaju ulogu pošiljatelja ili primatelja, dok posrednik preuzima ulogu pošiljatelja i/ili primatelja.
 
-## Messaggi NSO
+## NSO Poruke
 
-Nel sistema NSO transiteranno “Messaggi”, cioè file, composti da:
-- Busta di trasmissione, la parte del Messaggio che contiene i dati necessari per il corretto 
-indirizzamento; 
-- Documento, la parte del Messaggio, contenente i dati di business (es. Ordine, Risposta, 
-Riscontro), che costituisce il Corpo del messaggio ; 
-Il Documento può essere:
-- Ordine, il Documento con cui il Cliente comunica al Fornitore i beni e/o i servizi che intende 
-acquistare e le relative istruzioni. Un Ordine può essere originario (ordine iniziale) oppure 
-sostituire un Ordine precedente (Ordine sostitutivo) oppure annullare un Ordine precedente 
-(Ordine di revoca) oppure essere collegato da un altro ordine; 
-- Ordine pre - concordato, il Documento, equivalente all’Ordine, ma emesso dal Fornitore in
-accordo con il Cliente. Un Ordine pre-concordato può essere originario (Ordine iniziale) oppure 
-sostituire un Ordine pre-concordato precedente (Ordine sostitutivo) oppure annullare un Ordine 
-pre-concordato precedente (Ordine di revoca); 
-- Risposta, il Documento con cui il Fornitore riceve, accetta, declina o apporta dei cambiamenti 
-(Risposta con modifiche) all’Ordine ricevuto dal Cliente; 
-- Ordine di riscontro, il Documento con cui il Cliente conferma, declina o sostituisce una Risposta 
-o un Ordine pre-concordato del Fornitore;
-I tipi di flusso previsti sono:
-- Ordinazione semplice, il processo di ordinazione, avviato dal Cliente, in cui l’Ordine è emesso e 
-trasmesso in formato elettronico, mentre eventuali altri documenti devono essere prodotti e 
-scambiati nei modi tradizionali (telefono, fax, e-mail, ecc.); 
-- Ordinazione completa, il processo di ordinazione, avviato dal Cliente, in cui l’Ordine è emesso 
-e trasmesso in formato elettronico ed è possibile produrre e scambiare in modalità telematica anche 
-la Risposta e l’Ordine di riscontro; 
-- Ordinazione pre - concordata, il processo di ordinazione, avviato dal Fornitore, in cui l’Ordine 
-pre-concordato è emesso e trasmesso in formato elettronico ed è possibile produrre e scambiare in 
-modalità telematica anche l’Ordine di riscontro.
+U sustavu NSO tranzitirat će “Poruke”, odnosno datoteke, sastavljene od:  
+- Omotača za prijenos, dijela Poruke koji sadrži podatke potrebne za ispravno usmjeravanje;  
+- Dokumenta, dijela Poruke koji sadrži poslovne podatke (npr. Narudžba, Odgovor, Potvrda), koji čini Tijelo poruke;  
+
+Dokument može biti:  
+- Narudžba, Dokument s kojim Kupac komunicira s Dobavljačem o robama i/ili uslugama koje namjerava kupiti i pripadajućim uputama. Narudžba može biti izvorna (početna narudžba) ili zamijeniti prethodnu Narudžbu (zamjenska narudžba) ili otkazati prethodnu Narudžbu (narudžba za opoziv) ili biti povezana s drugom narudžbom;  
+- Prethodno dogovorena narudžba, Dokument, ekvivalent Narudžbi, ali izdan od strane Dobavljača u dogovoru s Kupcem. Prethodno dogovorena narudžba može biti izvorna (početna narudžba) ili zamijeniti prethodnu prethodno dogovorenu narudžbu (zamjenska narudžba) ili otkazati prethodnu prethodno dogovorenu narudžbu (narudžba za opoziv);  
+- Odgovor, Dokument s kojim Dobavljač prima, prihvaća, odbija ili unosi promjene (Odgovor s promjenama) u Narudžbu primljenu od Kupca;  
+- Narudžba potvrde, Dokument s kojim Kupac potvrđuje, odbija ili zamjenjuje Odgovor ili prethodno dogovorenu Narudžbu Dobavljača;  
+
+Predviđeni tipovi tijeka su:  
+- Jednostavna narudžba, proces naručivanja koji pokreće Kupac, u kojem se Narudžba izdaje i prenosi u elektroničkom formatu, dok se eventualni drugi dokumenti moraju proizvoditi i razmjenjivati na tradicionalne načine (telefon, faks, e-mail itd.);  
+- Potpuna narudžba, proces naručivanja koji pokreće Kupac, u kojem se Narudžba izdaje i prenosi u elektroničkom formatu i moguće je proizvoditi i razmjenjivati u telematičkom načinu i Odgovor i Narudžbu potvrde;  
+- Prethodno dogovorena narudžba, proces naručivanja koji pokreće Dobavljač, u kojem se prethodno dogovorena Narudžba izdaje i prenosi u elektroničkom formatu i moguće je proizvoditi i razmjenjivati u telematičkom načinu i Narudžbu potvrde.

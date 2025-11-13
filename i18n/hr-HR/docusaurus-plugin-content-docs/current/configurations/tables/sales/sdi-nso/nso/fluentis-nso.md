@@ -23,83 +23,68 @@ Prekodirane tablice:
 
 Tablice koje je potrebno konfigurirati su sljedeće:    
 
-- I tipi ordine Fluentis che corrispondono ai tipi ordine PEPPOL (configurazione tipi 
-ordine cliente)
-- I codici iva Fluentis che corrispondono ai codici IVA di PEPPOL (configurazione iva) 
-- Le unità di misura di Fluentis che corrispondono ai codici unità di misura di PEPPOL 
-(configurazione unità di misura) 
-- Nella tipi barcode c’è da definire quale tipo barcode identifica l’AIC code, la codifica 
-standard o la classificazione articoli 
-- Configurazione tipi abbuoni, dove si associano i tipi sconto Fluentis con i codici abbuono 
-PEPPOL
-- Configurazione tipi spese, dove si associano i tipi spese Fluentis con i codici spesa 
-PEPPOL
+- Vrste narudžbi u Fluentisu koje odgovaraju vrstama narudžbi u PEPPOL-u (konfiguracija vrsta narudžbi kupaca)
+- Šifre PDV-a u Fluentisu koje odgovaraju PEPPOL PDV šiframa (konfiguracija PDV-a)
+- Jedinice mjere u Fluentisu koje odgovaraju PEPPOL šiframa jedinica mjere (konfiguracija jedinica mjere)
+- U vrstama barkoda potrebno je definirati koji tip barkoda identificira AIC kod, standardnu šifru ili klasifikaciju artikala
+- Konfiguracija vrsta rabata, gdje se povezuju vrste popusta u Fluentisu s PEPPOL šiframa rabata
+- Konfiguracija vrsta troškova, gdje se povezuju vrste troškova u Fluentisu s PEPPOL šiframa troškova
 
-## Dati delle tabelle Precodificate 
+## Podaci iz unaprijed definiranih tablica  
 
-E’ necessario identificare il tipo di ordine, utilizzando i valori della relativa code list prevista 
-dallo standard PEPPOL, che include i seguenti due codici: 
-- “220”, per gli ordini di acquisto in senso stretto; 
-- “227”, per gli ordini di consegna.       
+Potrebno je identificirati vrstu narudžbe koristeći vrijednosti iz pripadajuće PEPPOL code list tablice, koja uključuje sljedeće kodove:   
+- “220” – narudžba kupnje u užem smislu; 
+- “227” – narudžba isporuke.       
 
-Nei Documenti di tipo: 
-- Ordine iniziale e sostitutivo; 
-- Ordine di riscontro sostitutivo;        
+U dokumentima tipa:  
+- početna i zamjenska narudžba  
+- zamjenska potvrdna narudžba;          
 
-il codice del tipo di ordine viene indicato nell’elemento “OrderTypeCode”, come mostrato nel 
-seguente esempio: 
+šifra vrste narudžbe navodi se u elementu “OrderTypeCode”, primjerice:  
 
 < cbc:OrderTypeCode>220< /cbc:OrderTypeCode>             
 
-Nei Documenti di tipo:       
+U dokumentima tipa:         
 
-- Ordine pre-concordato iniziale e sostitutivo;       
+- početna i zamjenska prethodno dogovorena narudžba;       
 
-il codice del tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
-“DeliveryTerms”, come mostrato nel seguente esempio:        
+šifra vrste narudžbe navodi se u polju “SpecialTerms” elementa “DeliveryTerms”, primjerice:          
 
 < cac:DeliveryTerms> < cbc:SpecialTerms>220< /cbc:SpecialTerms> < /cac:DeliveryTerms>
          
-Esiste un’ulteriore classificazione dei tipi ordine, non obbligatoria.       
-Per il tipo ordine 220 Ordine di acquisto:      
-- OF, Ordine di fatturazione per prodotti già consumati 
-- OFR, Ordine di fatturazione e reintegro 
-Per il tipo ordine 227 Ordine di consegna:      
-- CD Conto deposito 
-- CV Conto visione 
-- CG Comodato gratuito       
+Postoji i dodatna, neobavezna, klasifikacija vrsta narudžbi.  
+Za vrstu 220 – Narudžba kupnje:       
+- OF, narudžba za fakturiranje već potrošenih proizvoda  
+- OFR, narudžba za fakturiranje i nadopunu zaliha  
+Za vrstu 227 – Narudžba isporuke:      
+- CD skladište na povjerenje  
+- CV roba na pregled 
+- CG besplatna posudba        
 
-Nei Documenti di tipo: 
-- Ordine iniziale e sostitutivo; 
-- Ordine di riscontro sostitutivo;        
+U dokumentima tipa:  
+- početna i zamjenska narudžba;    
+- zamjenska potvrdna narudžba;          
 
-il codice del sotto-tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
-“DeliveryTerms”, come mostrato nel seguente esempio:        
+šifra podvrste narudžbe navodi se u polju “SpecialTerms” elementa “DeliveryTerms”, primjerice:       
 
 < cac:DeliveryTerms> < cbc:SpecialTerms>OFR< /SpecialTerms> < /cac:DeliveryTerms>
      
-Nei Documenti di tipo: 
-- Ordine pre-concordato iniziale e sostitutivo;         
+U dokumentima tipa:
+- očetna i zamjenska prethodno dogovorena narudžba        
 
-il codice del sotto-tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
-“DeliveryTerms”, dopo il codice del tipo di ordine, utilizzando il formato dei campi strutturati, 
-come mostrato nel seguente esempio:         
+šifra podvrste narudžbe navodi se u polju “SpecialTerms” elementa “DeliveryTerms”, iza šifre vrste narudžbe, koristeći strukturirani format polja, primjerice:         
 
 < cac:DeliveryTerms> < cbc:SpecialTerms>220#OFR< /SpecialTerms> < /cac:DeliveryTerms>
 
-## Codice Articolo
+## Šifra artikla  
 
-L’individuazione del prodotto (bene o servizio) all’interno di ciascuna linea d’ordine avviene, oltre 
-che attraverso il nome (elemento “Name, che è obbligatorio) e la descrizione (elemento 
-“Description”), anche per mezzo dell’utilizzo di codici identificativi. 
-In particolare, i tracciati dei predetti Documenti prevedono, primariamente, due tipi di codice: 
-- il codice attribuito dal Fornitore (elemento “SellersItemIdentification/ID”); 
-- il codice standard, corrispondente all’identificativo assegnato al prodotto da un sistema di 
-identificazione univoca (elemento “StandardItemIdentification/ID”) selezionato tra quelli presenti 
-nell’apposita code list prevista dallo standard PEPPOL.         
+Identifikacija proizvoda (dobara ili usluga) unutar svake linije narudžbe odvija se, osim putem imena (element "Name", koji je obavezan) i opisa (element "Description"), i korištenjem identifikacijskih kodova.  
+Specifično, obrasci navedenih dokumenata primarno predviđaju dva tipa koda:  
+- kod koji dodjeljuje dobavljač (element "SellersItemIdentification/ID");  
+- standardni kod, koji odgovara identifikatoru dodijeljenom proizvodu od strane sustava jedinstvene identifikacije (element "StandardItemIdentification/ID") odabranom iz odgovarajuće liste kodova predviđene standardom PEPPOL.  
 
-Gli elementi su menzionati non sono obbligatori, tuttavia se ne raccomanda vivamente l’utilizzo.      
-Esempio:     
+Elementi navedeni nisu obavezni, međutim njihova upotreba se toplo preporučuje.  
+Primjer:  
 
 < cac:OrderLine>          
         < cac:LineItem>        
@@ -116,21 +101,12 @@ Esempio:
         < /cac:LineItem>      
 < /cac:OrderLine>          
 
-Per i beni di largo consumo, si suggerisce di valorizzare l’elemento 
-“StandardItemIdentification/ID” con il relativo codice GTIN (corrispondente allo 
-“schemeID=”0160” della code list PEPPOL), come mostrato nel precedente esempio.         
-Per i prodotti farmaceutici provvisti del codice di Autorizzazione all’Immissione in Commercio 
-(AIC) rilasciato dell’Agenzia Italiana del Farmaco (AIFA), l’elemento 
-“SellersItemIdentification/ID” deve essere valorizzato sempre con il relativo codice AIC.
+Za robu široke potrošnje, preporučuje se da se element “StandardItemIdentification/ID” vrednuje s odgovarajućim GTIN kodom (koji odgovara “schemeID=”0160” iz popisa kodova PEPPOL), kao što je prikazano u prethodnom primjeru.  
+Za farmaceutske proizvode koji imaju kod za odobrenje stavljanja u promet (AIC) izdan od Italijanske agencije za lijekove (AIFA), element “SellersItemIdentification/ID” uvijek treba biti vrednovan s odgovarajućim AIC kodom.
 
-## Gruppo Merceologico
+## Grupacija artikala  
 
-Per ciascun prodotto, all’interno della relativa linea d’ordine è possibile specificare uno o più 
-codici di classificazione, valorizzando il campo “ItemClassificationCode/ID” dell’elemento 
-“CommodityClassification”. 
-Il valore da indicare deve essere tratto da un sistema di classificazione univoca selezionato tra 
-quelli presenti nell’apposita code list prevista dallo standard PEPPOL, come mostrato 
-nell’esempio seguente:       
+Za svaki proizvod, unutar odgovarajuće linije narudžbe moguće je specificirati jedan ili više kodova klasifikacije, popunjavanjem polja “ItemClassificationCode/ID” elementa “CommodityClassification”. Vrijednost koja se treba navesti mora biti preuzeta iz jedinstvenog sustava klasifikacije odabranog među onima prisutnim u odgovarajućoj kodnoj listi predviđenoj standardom PEPPOL, kao što je prikazano u sljedećem primjeru:
 
 < cac:OrderLine>        
 < cac:LineItem>       
@@ -142,25 +118,22 @@ nell’esempio seguente:
 < /cac:LineItem>      
 < /cac:OrderLine>      
 
-Si raccomanda di utilizzare almeno uno dei sistemi di classificazione riportati nella tabella che 
-segue, ove applicabili.       
+Preporučuje se koristiti barem jedan od sustava klasifikacije navedenih u tablici koja slijedi, gdje je to primjenjivo.     
 
-| Codice | Descrizione dello standard di classificazione | Ambito di utilizzo |
+| Kod | Opis standarda klasifikacije | Područje primjene |
 | :-- | :-- | :-- |
-| STI | Sistema ufficiale europeo di classificazione unico per gli appalti pubblici (CPV - Common Procurement Vocabulaty) | Prodotti e servizi oggetto di appalti pubblici |
-| STL | Sistema di classificazione anatomico, terapeutico e chimico (ATC - Anatomical Therapeutic Chemical classification system) | Farmaci |
-| STO | Classificazione Nazionale Italiana dei Dispositivi medici (CND) | Dispositivi medici |
-| STH | Classificazione commerciale dei prodotti (GPC - Global Product Classification) | Beni di largo consumo |
-| IB | Sistema di identificazione internazionale dei libri (ISBN - International Standard Book Number) | Libri |
-| ZZZ | Sistema definito manualmente tra le parti | Per i dispositivi medici permette di specificare i valori 'DM1', 'DM2' o 'DM0' (quando non applicabili i primi due) |
+| STI | Službeni europski sustav jedinstvene klasifikacije za javne nabave (CPV – Common Procurement Vocabulary) | Proizvodi i usluge koji su predmet javnih nabava |
+| STL | Anatomskoterapijsko-kemijski sustav klasifikacije (ATC – Anatomical Therapeutic Chemical classification system) | Lijekovi |
+| STO | Talijanska nacionalna klasifikacija medicinskih uređaja (CND – Classificazione Nazionale Dispositivi medici) | Medicinski uređaji |
+| STH | Komercijalna klasifikacija proizvoda (GPC – Global Product Classification) | Proizvodi široke potrošnje |
+| IB | Međunarodni sustav identifikacije knjiga (ISBN – International Standard Book Number) | Knjige |
+| ZZZ | Sustav definiran ručno između ugovornih strana | Za medicinske uređaje omogućuje navođenje vrijednosti „DM1“, „DM2“ ili „DM0“ (kada prva dva nisu primjenjiva) |
 
-In Fluentis questi codici sono da attribuire alla tabella codici Barcode da associare all’articolo.     
+U sustavu Fluentis, ovi se kodovi dodjeljuju tablici šifri barkodova, koja se zatim povezuje s artiklom.
 
-## Unità di misura
+## Jedinica mjere
 
-Nelle linee d’ordine, è necessario indicare la quantità del prodotto specificando un’unità di misura 
-tra quelle indicate nell’apposita Code List prevista dallo standard PEPPOL, come mostrato nel 
-seguente esempio:     
+U redovima narudžbi potrebno je navesti količinu proizvoda uz specificiranje jedinice mjere iz odgovarajuće Liste kodova (Code List) predviđene standardom PEPPOL, kao što je prikazano u sljedećem primjeru:
 
 < cac:OrderLine> 
 < cac:LineItem> 
@@ -168,124 +141,85 @@ seguente esempio:
 < /cac:LineItem> 
 < /cac:OrderLine>          
 
-Nella tabella che segue, si riportano i codici delle unità di misura che si raccomanda di utilizzare, 
-ove applicabili (per maggiori dettagli si rinvia alle Linee guida).         
+U sljedećoj tablici navedeni su kodovi jedinica mjere koje se preporučuje koristiti, gdje je primjenjivo (za više detalja upućujemo na Smjernice).  
 
-| Codice | Unità di misura | Ambito di utilizzo |
+| Kod | Jedinica mjere | Područje primjene |
 | :-: | :-- | :-: |
-| C62 | Unità di prodotto (bene o servizio) | Quantità |
-| PR | Paio | Quantità |
-| XBK | Pacchetto, scatola: confezionamento primario che contiene più unità del medesimo articolo | Confezionamento |
-| DZP | Confezionamento standard contenente dodici pezzi di un medesimo articolo | Confezionamento |
-| KT | Equipaggiamento (kit): confezionamento primario che contiene più unità di articoli diversi ma utilizzabili congiuntamente | Confezionamento |
-| XBX | Pacco, imballaggio (box): confezionamento secondario che contiene più confezioni primarie | Confezionamento |
-| XOB | Bancale (pallet): piattaforma o scatola aperta, solitamente in legno, su cui vengono trattenute le merci per facilità di movimentazione meccanica durante il trasporto e lo stoccaggio | Confezionamento |
-| MTR | Metro | Lunghezza |
-| CMT | Centimetro | Lunghezza |
-| MMT | Millimetro | Lunghezza |
-| MTK | Metro quadrato | Superficie |
-| CMK | Centrimetro quadrato | Superficie |
-| MTQ | Metro cubo | Volume |
-| CMQ | Centimetro cubo | Volume |
-| MMQ | Millimetro cubo | Volume |
-| LTR | Litro | Capacità |
-| MLT | Millilitro | Capacità |
-| GRM | Grammo | Peso |
-| HGM | Ettogrammo | Peso |
-| KGM | Chilogrammo | Peso |
-| MGM | Milligrammo | Peso |
-| MC | Microgrammo | Peso |
-| HUR | Ora | Tempo |
-| DAY | Giorno | Tempo |
-| MON | Mese | Tempo |
-| ANN | Anno | Tempo |
-| E40 | Giorno di lavoro | Lavoro |
-| KWH | Kilowattora | Elettricità |
-| BQL | Becquerei | Radioattività |
-| 4N | Mega-Becquerei | Radioattività |
-| GBQ | Giga-Becquerei | Radioattività |
-| CUR | Curie | Radioattività |
-| MCU | Millicurie | Radioattività |
+| C62 | Jedinica proizvoda (roba ili usluga) | Količina |
+| PR | Par | Količina |
+| XBK | Pakiranje, kutija: primarno pakiranje koje sadrži više jedinica istog artikla | Pakiranje |
+| DZP | Standardno pakiranje koje sadrži dvanaest komada istog artikla | Pakiranje |
+| KT | Set (kit): primarno pakiranje koje sadrži više različitih artikala koji se koriste zajedno | Pakiranje |
+| XBX | Paket, kutija (box):  sekundarno pakiranje koje sadrži više primarnih pakiranja | Pakiranje |
+| XOB | Paleta: platforma ili otvorena kutija, najčešće drvena, na kojoj se roba drži radi lakše mehaničke manipulacije tijekom transporta i skladištenja | Pakiranje |
+| MTR | Metar | Duljina |
+| CMT | Centimetar	 | Duljina |
+| MMT | Millimetro | Duljina |
+| MTK | Kvadratni metar | Površina |
+| CMK | Kvadratni centimetar | Površina |
+| MTQ | Kubni metar | Volumen |
+| CMQ | Kubni metar | Volumen |
+| MMQ | Kubni milimetar | Volumen |
+| LTR | Litar | Kapacitet |
+| MLT | Mililitar | Kapacitet |
+| GRM | Gram | Masa |
+| HGM | Dekagram | Masa |
+| KGM | Kilogram | Masa |
+| MGM | Miligram | Masa |
+| MC | Mikrogram | Masa |
+| HUR | Sat | Vrijeme |
+| DAY | Dan	 | Vrijeme |
+| MON | Mjesec | Vrijeme |
+| ANN | Godina | Vrijeme |
+| E40 | Radni dan | Radno vrijeme |
+| KWH | Kilovatsat | Električna energija |
+| BQL | Bekerel	 | Radioaktivnost |
+| 4N | Megabekerel | Radioaktivnost |
+| GBQ | Gigabekere | Radioaktivnost |
+| CUR | Kurije | Radioaktivnost |
+| MCU | Milikurije | Radioaktivnost |
 
-## Destinazione merce
+## Odredište robe  
 
-L'ID indica il codice attribuito al luogo in cui deve essere eseguita la fornitura. Questo codice va 
-sempre riportato se il luogo di consegna è un indirizzo istituzionale del Cliente a cui è stato 
-associato un identificativo univoco reso disponibile al Fornitore.          
+ID označava šifru mjesta na kojem se mora izvršiti isporuka.  
+Ova se šifra uvijek mora navesti ako je mjesto isporuke institucionalna adresa kupca, kojoj je dodijeljen jedinstveni identifikator dostupan dobavljaču.           
 
-Sono da valorizzare in modo appropriato i diversi campi dell’elemento “DeliveryLocation” 
-(inclusi quelli non obbligatori, ove ciò contribuisca a specificarne l’esatta individuazione), come 
-mostrato nel seguente esempio, riferito a un Documento di tipo Ordine o Ordine di riscontro. 
-L’indicazione del luogo di consegna è previsto solo con riferimento all’intero Documento.        
+Potrebno je na odgovarajući način popuniti sva polja elementa “DeliveryLocation” (uključujući i neobavezna, ako doprinose preciznijem određivanju lokacije), kao što je prikazano u primjeru koji se odnosi na dokument tipa Narudžba ili Potvrda narudžbe.
+Napomena: mjesto isporuke definira se za cijeli dokument, a ne za pojedine stavke.         
 
-Allo scopo di agevolare la fornitura dei beni presso le sedi istituzionali delle amministrazioni 
-pubbliche, è opportuno che i rispettivi punti di consegna sia codificato in maniera univoca. Con 
-specifico riguardo agli enti del SSN, si segnala che da settembre 2019 sarà disponibile il sito web 
-(http://www.puntidiconsegna-nso.it/) in cui sarà possibile pubblicare l’elenco dei propri codici 
-identificativi dei punti di consegna istituzionali. Nello specifico, si raccomanda agli Enti di creare 
-i codici dei punti di consegna istituzionali anteponendo il proprio codice fiscale al codice interno 
-del punto di consegna, definito liberamente, separati dal carattere “-“ (trattino d’unione o segno 
-meno), senza interposizione di spazi. Il formato del codice sarà quindi: Codice Fiscale-ID interno 
-punto di consegna Per esempio, nel caso di Ente con Codice Fiscale “123456788901” e magazzino 
-“acdg45”, il Codice Ship-To da inserire nell'ordine sarà "123456788901-acdg45” (v. Paragrafo 
-3.3.3.6). Si suggerisce di contenere la lunghezza di questo codice entro i 20 caratteri complessivi 
-(“-“ incluso).         
+Kako bi se olakšala isporuka robe u institucionalne lokacije javnih uprava, preporučuje se da se točke isporuke kodiraju na jedinstven način.
+Posebno za ustanove nacionalnog zdravstvenog sustava (SSN), od rujna 2019. dostupan je web portal  
+(http://www.puntidiconsegna-nso.it/) na kojem se može objaviti popis identifikacijskih kodova vlastitih institucionalnih točaka isporuke. Specifično, preporučuje se institucijama da kreiraju kodove za institucijske točke isporuke tako da ispred vlastitog poreznog broja dodaju unutarnji kod točke isporuke, koji se slobodno definira, odvojen znakom “-“ (crtica ili minus), bez umetanja razmaka. Format koda će stoga biti: Porezni broj - ID unutarnje točke isporuke. Na primjer, u slučaju institucije s poreznim brojem “123456788901” i skladištem “acdg45”, kod za isporuku (Ship-To) koji treba unijeti u narudžbu bit će "123456788901-acdg45” (v. Paragraf 3.3.3.6). Preporučuje se da duljina ovog koda bude unutar 20 ukupnih znakova (“-” uključen).
 
-In Fluentis la Destinazione Merce viene riconosciuta tramite il questo codice ID e viene ricercata 
-come destinazione codificata nel cliente attribuendo al nomignolo del contatto in Fluentis gli ultimi 
-7 caratteri del codice che segue il – del punto di consegna NSO.
+U Fluentisu, odredište robe prepoznaje se putem ovog ID koda i traži se kao kodirano odredište kod kupca, dodjeljujući nadimak kontakta u Fluentisu posljednjih 7 znakova koda koji slijedi nakon – od točke isporuke NSO.
 
-## PEPPOL Ordini clienti
+## PEPPOL Narudžbe kupaca 
 
-In applicazioni Bizlink c’è la form PEPPOL Ordini Clienti per visualizzare tutti i messaggi in 
-entrata da NSO e in uscita per NSO.         
-Dopo aver selezionato la riga di un ordine, premendo il tasto “Visualizza” sulla ribbon bar viene 
-aperta un’ulteriore form **Registro dei documenti SDI**.       
-All’interno di questa form vengono mostrati alcuni dati riferiti al file NSO dell’ordine, quali lo 
-stato del documento, i file collegati e il contenuto del file.
-È possibile visualizzare il contenuto dell’ordine. È possibile inoltre visualizzare le eventuali notifiche dello SDI.           
-Premendo sul pulsante **Scarica allegato** è possibile scaricare l’allegato selezionato nella 
-griglia “Allegati”, mentre premendo “Scarica il contenuto del registro” è possibile scaricare il 
-file selezionato nella griglia **Registro dei documenti SDI**, la quale contiene il file xml 
-dell’ordine e tutti i file ad esso collegati, come quello delle notifiche.       
-Premendo il pulsante della ribbon bar **Apri documento** è possibile visualizzare il contenuto 
-dell’ordine Peppol, nel caso in cui sia almeno nello stato “Inserito”, direttamente in Fluentis, 
-mediante l’apertura della form “Ordini cliente”.         
-Premendo il pulsante **Registro del documenti SDI** nella form “Ordini Cliente” verrà aperta la 
-form “Registro dei documenti SDI”, analogamente a quanto accade premendo il pulsante 
-“Visualizza” nella ribbon bar della form *PEPPOL ordini clienti*.       
-Premendo sul pulsante **Scarica allegato** nella ribbon bar della form *PEPPOL Ordini Clienti* 
-verrà scaricato, in una cartella indicata dall’utente, il file Xml dell’ordine selezionato.        
-Premendo sul pulsante **Modifica dati XML** dopo aver selezionato un ordine con stato SDI “In 
-errore”, viene aperta la form di modifica dei dati del file importato.           
-In questa form sarà possibile correggere eventuali dati errati sull’ordine ricevuto, quali righe con 
-prezzo a 0, codici articoli non interpretabili automaticamente, unità di misura, in modo di 
-indicare dati obbligatori mancanti.         
-Nella griglia **Registro Ordini NSO** vengono visualizzate diverse informazioni. Vediamo le 
-principali:          
-- Stato SDI: è lo stato di avanzamento in cui si trova l’ordine PEPPOL (vedi la parte 
-relativa agli stati dell’ordine)
-- Tipo: è la tipologia dell’ordine PEPPOL e può assumere i seguenti valori
-> - 220 = Ordine di acquisto (ordine ricevuto dal fornitore)
-> - 227 = Ordine di consegna
-> - PRE = Ordine Pre-concordato
-- Numero(Id): è il numero dell’ordine, che con data cliente e endpointCliente identifica 
-univocamente l’ordine
-- Data Cliente: è la data dell’ordine, che con numero(I) e EndpointCliente identifica 
-univocamente l’ordine
-- Endpointcliente: può indicare o il codice ufficio del cliente o la partita IVA del 
-fornitore che ha inviato l’ordine, e con Numero(Id) e Data Cliente identifica 
-univocamente l’ordine
-- Tipo processo: indica la tipologia di processo di cui fa parte l’ordine e può assumere 3 
-valori:
-> - Ordinazione semplice
-> - Ordinazione completa
-> - Ordinazione pre-concordata
-- Tipo documento: indica l’ultima tipologia di documento o notifica legata all’ordine
-- Tripletta: è il riferimento all’ordine a cui fa riferimento l’ordine corrente, la tripleta è 
-composta da : Identificativo del documento, data di emissione del documento e 
-identificativo del soggetto emittente
-- Nome file NSO: indica il nome del file Xml dell’ordine PEPPOL
-- NSO data ricev.: indica al data di ricevimento dell’ordine da parte del cliente o 
-dell’invio dell’ordine pre-concordato
-- NSO ultimo evento: indica la data dell’ultima modifica di stato subita dall’ordine
+U aplikacijama Bizlink postoji obrazac PEPPOL Narudžbe Kupaca za pregled svih poruka koje dolaze iz NSO i odlaze prema NSO.  
+Nakon što odaberete redak narudžbe, pritiskom na tipku “Prikaži” na traci s alatima otvara se dodatni obrazac **Registar dokumenata SDI**.  
+Unutar ovog obrasca prikazani su neki podaci vezani uz NSO datoteku narudžbe, kao što su stanje dokumenta, povezane datoteke i sadržaj datoteke.  
+Moguće je pregledati sadržaj narudžbe. Također je moguće pregledati eventualne obavijesti SDI.  
+Pritiskom na tipku **Preuzmi privitak** moguće je preuzeti odabrani privitak u mreži “Privitci (Allegati)”, dok pritiskom na “Preuzmi sadržaj registra” moguće je preuzeti odabranu datoteku u obrascu **Registar dokumenata SDI**, koja sadrži xml datoteku narudžbe i sve povezane datoteke, kao što su one s obavijestima.  
+Pritiskom na tipku **Otvorite dokument** na traci s alatima moguće je pregledati sadržaj Peppol narudžbe, ako je barem u stanju “Uneseno”, izravno u Fluentisu, otvaranjem obrasca “Narudžbe kupaca”.  
+Pritiskom na tipku **Registar dokumenata SDI** u obrascu “Narudžbe kupaca” otvorit će se obrazac “Registar dokumenata SDI”, slično kao kada se pritisne tipku “Prikaži” na traci s alatima obrasca *PEPPOL narudžbe kupaca*.  
+Pritiskom na tipku **Preuzmi privitak** na traci s alatima obrasca *PEPPOL Narudžbe kupaca* preuzeti će se, u mapu koju odabere korisnik, xml datoteka odabrane narudžbe.  
+Pritiskom na tipku **Izmijeni XML podatke** nakon odabira narudžbe sa stanjem SDI “U pogrešci (In errore)”, otvara se obrazac za izmjenu podataka u uvezenoj datoteci.  
+U ovom obrascu moguće je ispraviti eventualne netočne podatke o primljenoj narudžbi, kao što su redovi s cijenom 0, kodovi artikala koji se ne mogu automatski interpretirati, jedinice mjere, kako bi se naznačili nedostajući obavezni podaci.  
+U mreži **Registar Narudžbi NSO ** prikazuju se različite informacije. Pogledajmo glavne:  
+- **Stanje SDI**: stanje napretka u kojem se nalazi PEPPOL narudžba (vidi dio o stanjima narudžbe)  
+- **Tip**: tipologija PEPPOL narudžbe i može imati sljedeće vrijednosti:  
+> - 220 = Narudžba za kupnju (narudžba primljena od dobavljača)  
+> - 227 = Narudžba za isporuku  
+> - PRE = Pre-dogovorena narudžba  
+- **Broj (Id)**: broj narudžbe, koji s datumom kupca i endpointKlijentom jedinstveno identificira narudžbu  
+- **Datum kupca**: datum narudžbe, koji s brojem (Id) i endpointKlijentom jedinstveno identificira narudžbu  
+- **EndpointKlijent**: može označavati ili kod ureda kupca ili OIB dobavljača koji je poslao narudžbu, i s brojem (Id) i datumom kupca jedinstveno identificira narudžbu  
+- **Tip procesa**: označava tipologiju procesa kojoj pripada narudžba i može imati 3 vrijednosti:  
+> - Jednostavna narudžba  
+> - Potpuna narudžba  
+> - Pre-dogovorena narudžba  
+- **Tip dokumenta**: označava posljednju tipologiju dokumenta ili obavijesti vezane uz narudžbu  
+- **Tripleta**: referenca na narudžbu na koju se odnosi trenutna narudžba, tripleta se sastoji od: Identifikatora dokumenta, datuma izdavanja dokumenta i identifikatora subjekta koji je izdao dokument  
+- **Naziv datoteke NSO**: označava naziv xml datoteke PEPPOL narudžbe  
+- **NSO datum primitka**: označava datum primitka narudžbe od strane kupca ili slanja pre-dogovorene narudžbe  
+- **NSO posljednji događaj**: označava datum posljednje promjene stanja narudžbe

@@ -1,5 +1,5 @@
 ---
-title: Tipi ordinazione e cambio stati
+title: Tipovi narudžbi i promjena statusa  
 sidebar_position: 6
 ---
 

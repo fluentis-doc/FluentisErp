@@ -1,151 +1,102 @@
 ---
-title: Tipi processi
+title: Tipovi procesa  
 sidebar_position: 3
 ---
 
 ## Ordinazione semplice
 
-Il processo di Ordinazione semplice prevede che ogni eventuale comunicazione di accettazione, 
-diniego o modifica dell’Ordine da parte del Fornitore potrà pervenire al Cliente esclusivamente 
-nelle forme tradizionali (telefono, fax, e-mail, ecc.), implicitamente informa il Fornitore di non 
-essere disponibile a ricevere l’eventuale Risposta in modalità telematica. 
-Il Cliente può comunque revocare o modificare un Ordine precedentemente emesso mediante 
-l’emissione di un nuovo Ordine, che deve contenere l’indicazione dell’Ordine che si intende 
-revocare o modificare.
-Ne consegue che un Ordine può assumere le seguenti forme:
-- Ordine iniziale
-- Ordine iniziale collegato
-- Ordine di revoca 
-- Ordine sostitutivo       
+Proces Jednostavne narudžbe predviđa da svaka eventualna komunikacija o prihvaćanju, odbijanju ili izmjeni Narudžbe od strane Dobavljača može doći Klijentu isključivo tradicionalnim putem (telefon, fax, e-mail, itd.), čime se implicitno obavještava Dobavljač da nije dostupan za primanje eventualnog odgovora elektroničkim putem.
+Klijent može ipak opozvati ili izmijeniti prethodno izdanu Narudžbu putem izdavanja nove Narudžbe, koja mora sadržavati naznaku Narudžbe koju se želi opozvati ili izmijeniti.
+Posljedično, Narudžba može imati sljedeće oblike:  
+- Početna narudžba  
+- Povezana početna narudžba  
+- Narudžba za opoziv  
+- Zamjenska narudžba        
 
-Al riguardo, se nell’Ordine è indicata la data di esecuzione della fornitura, il limite temporale entro 
-il quale è possibile sostituire o revocare l’Ordine è determinato da tale data dedotto il tempo 
-necessario per predisporre la fornitura ed eseguirla nel luogo prestabilito.
-Il Fornitore è tenuto a considerare efficaci solo le Revoche e le Sostituzioni di ordine pervenute 
-prima che abbia dato luogo all’esecuzione dell’Ordine revocato o sostituito (cioè prima che 
-l’ordine venga evaso).
-Nell’Ordine può essere indicata la data entro la quale il Fornitore è tenuto a rispondere.
+Ako je u Narudžbi naznačen datum izvršenja isporuke, vremensko ograničenje do kojeg je moguće zamijeniti ili opozvati Narudžbu određuje se tim datumom umanjenim za vrijeme potrebno za pripremu i izvršenje isporuke na unaprijed dogovorenom mjestu.
+Dobavljač treba smatrati važećim samo opozive i zamjene Narudžbi koje su stigle prije nego što je izvršio Narudžbu koja se opoziva ili zamjenjuje (tj. prije nego što je narudžba realizirana).
+U Narudžbi može biti naznačen datum do kojeg je Dobavljač dužan odgovoriti.  
 
-## Ordinazione Completa
+## Kompletna narudžba  
 
-Questo processo, prevede l’uso di tre Documenti: 
-- l’Ordine, emesso dal Cliente; 
-- la Risposta, eventualmente emessa dal Fornitore; 
-- l’Ordine di riscontro, eventualmente emesso dal Cliente.      
+Ovaj proces predviđa korištenje tri Dokumenta:
+- Narudžba, izdana od strane Klijenta;
+- Odgovor, eventualno izdano od Dobavljača;
+- Potvrđena narudžba, eventualno izdana od Klijenta.   
 
-Il processo inizia con l’invio dell’Ordine da parte del Cliente e può terminare, alternativamente: 
-- con la ricezione da parte del Fornitore dell’Ordine inviato dal Cliente; 
-- con la ricezione da parte del Cliente della Risposta inviata dal Fornitore; 
-- con la ricezione da parte del fornitore dell’Ordine di riscontro inviato dal Cliente. 
+Proces započinje slanjem Narudžbe od strane Klijenta i može završiti alternativno:   
+- primitkom Narudžbe od strane Dobavljača;
+- primitkom Odgovora od strane Klijenta;
+- primitkom potvrđene Narudžbe od strane Dobavljača.
 
-## Emissione dell’ordine 
+## Izdavanje narudžbe  
 
-L’ Ordine può assumere le seguenti quattro forme:
-- Ordine iniziale,
-- Ordine iniziale collegato, 
-- Ordine di revoca, 
-- Ordine sostitutivo.      
+Narudžba može imati četiri oblika:
+- Početna narudžba
+- Povezana početna narudžba
+- Narudžba za opoziv
+- Zamjenska narudžba      
 
-L’Ordine di revoca deve contenere una sola linea d’ordine priva di contenuto, in quanto costituisce 
-il mero annullamento dell’Ordine precedentemente trasmesso a cui fa riferimento; 
-Il Fornitore è tenuto a considerare efficaci solo le Revoche e le Sostituzioni di ordine pervenute 
-prima che abbia dato luogo all’esecuzione dell’Ordine revocato o sostituito. Se nell’Ordine è 
-indicata la data di esecuzione della fornitura (Delivery/RequestedDeliveryPeriod/StartDate = 
-EndDate), rappresenta il limite temporale entro il quale è possibile sostituire o revocare l’Ordine 
-dedotto il tempo necessario per predisporre la fornitura ed eseguirla nel luogo prestabilito. 
-Le Sostituzioni e le Revoche, rispettivamente, rimpiazzano e annullano sia l’Ordine ivi indicato 
-sia tutte le altre Sostituzioni e Revoche, già trasmesse, riferite al medesimo Ordine iniziale. 
-L’Ordine sostitutivo dà formalmente avvio a un nuovo processo di Ordinazione, che può essere 
-semplice o completa in base a quanto indicato nell’Ordine sostitutivo stesso.
-Nell’Ordine può essere indicata la data entro la quale il Fornitore è tenuto a rispondere
-(ValidityPeriod/enddate).
+Narudžba za opoziv mora sadržavati samo jednu liniju narudžbe bez sadržaja, jer predstavlja samo poništenje prethodno poslane Narudžbe na koju se odnosi.
+Dobavljač treba smatrati važećim samo opozive i zamjene Narudžbi koje su stigle prije nego što je izvršio Narudžbu koja se opoziva ili zamjenjuje. Ako je u Narudžbi naznačen datum izvršenja isporuke (Delivery/RequestedDeliveryPeriod/StartDate = EndDate), on predstavlja vremensko ograničenje do kojeg je moguće zamijeniti ili opozvati Narudžbu, umanjeno za vrijeme potrebno za pripremu i izvršenje isporuke.
+Zamjene i opozivi Narudžbi zamjenjuju i poništavaju kako navedenu Narudžbu, tako i sve prethodne zamjene i opozive vezane uz istu početnu Narudžbu.
+Zamjenska Narudžba formalno pokreće novi proces Narudžbe, koji može biti jednostavan ili kompletan ovisno o navodima u samoj zamjenskoj Narudžbi.
+U Narudžbi može biti naznačen datum do kojeg je Dobavljač dužan odgovoriti (ValidityPeriod/enddate).
 
-## Risposta all’ordine
+## Odgovor na narudžbu  
 
-A fronte della ricezione dell’Ordine, il Fornitore può: 
-- terminare il processo senza trasmettere alcuna Risposta;
-- trasmettere una Risposta (flusso rosso nella figura), che deve contenere l’indicazione 
-dell’Ordine precedentemente inviato a cui si risponde, con la quale comunica al Cliente, 
-alternativamente, che intende: 
-> - comunicare di aver ricevuto l’Ordine (Risposta di ricezione); 
-> - accettare l’Ordine ricevuto (Risposta di accettazione); 
-> - declinare l’Ordine ricevuto (Risposta di diniego); 
-> - apportare modifiche all’Ordine ricevuto (Risposta con modifiche).        
+Na primitak Narudžbe, Dobavljač može:
+- završiti proces bez slanja odgovora;
+- poslati Odgovor (crveni tok na slici), koji mora sadržavati naznaku prethodno poslane Narudžbe, pri čemu obavještava Klijenta alternativno da namjerava:  
+> - potvrditi primitak Narudžbe (Odgovor primitka); 
+> - prihvatiti primljenu Narudžbu (Odgovor prihvaćanja); 
+> - odbiti primljenu Narudžbu (Odgovor odbijanja); 
+> - zvršiti izmjene primljene Narudžbe (Odgovor s izmjenama).        
 
-La Risposta con modifiche deve contenere tutte le linee d’ordine, sia quelle che si intente 
-mantenere sia quelle che si intende modificare, in quanto integra l’Ordine precedentemente 
-trasmesso a cui fa riferimento. 
-La Risposta a un Ordine revocato non ha effetti per il Cliente. 
+Odgovor s izmjenama mora sadržavati sve linije narudžbe, kako one koje se zadržavaju, tako i one koje se mijenjaju, jer nadopunjuje prethodno poslane Narudžbe na koje se odnosi.
+Odgovor na opozvanu Narudžbu nema učinka za Klijenta.  
 
-## Riscontro alla risposta 
+## Potvrda odgovora  
 
-A fronte della ricezione della Risposta, il Cliente può: 
-- terminare il processo senza trasmettere un Ordine di riscontro (flusso blu nella figura); 
-- trasmettere un Ordine di riscontro (flusso rosso nella figura), che deve contenere 
-l’indicazione della Risposta a cui fa riferimento, con il quale comunica al Fornitore,
-alternativamente, che intende:
-> - accettare la Risposta ricevuta (Ordine di riscontro per conferma); 
-> - declinare la Risposta ricevuta (Ordine di riscontro per diniego); 
-> - sostituire le modifiche all’Ordine contenute nella Risposta ricevuta (Ordine di 
-riscontro sostitutivo).      
+Na primitak Odgovora, Klijent može:  
+- završiti proces bez slanja potvrđene Narudžbe (plavi tok na slici);
+- poslati potvrđenu Narudžbu (crveni tok na slici), koja mora sadržavati naznaku Odgovora na koji se odnosi, pri čemu obavještava Dobavljača alternativno da namjerava: 
+> - prihvatiti primljeni Odgovor (Potvrđena narudžba za potvrdu); 
+> - odbiti primljeni Odgovor (Potvrđena narudžba za odbijanje); 
+> - zamijeniti izmjene u Narudžbi sadržane u primljenom Odgovoru (Zamjenska potvrđena narudžba).      
 
-Se il Cliente comunica che intende sostituire le modifiche all’Ordine contenute nella Risposta del 
-fornitore, l’Ordine di riscontro annulla tutti i Documenti precedenti del processo corrente e dà 
-avvio a un nuovo processo di Ordinazione.
-Il Fornitore è tenuto a considerare efficaci solo gli Ordini di riscontro pervenuti prima che abbia 
-dato luogo all’esecuzione dell’Ordine.      
+Ako Klijent namjerava zamijeniti izmjene u Narudžbi sadržane u Odgovoru Dobavljača, potvrđena Narudžba poništava sve prethodne Dokumente trenutnog procesa i pokreće novi proces Narudžbe.
+Dobavljač treba smatrati važećim samo potvrđene Narudžbe koje su stigle prije nego što je izvršio Narudžbu.       
 
-Se il Cliente manda, nella Risposta del fornitore, un ordine di riscontro sostitutivo, l’Ordine di 
-riscontro annulla tutti i Documenti precedenti (Ordine e Risposta) del processo corrente e dà avvio 
-a un nuovo processo di Ordinazione completa.        
-L’assenza di Ordine di riscontro equivale a conferma della Risposta.
-Sono efficaci solo gli Ordini di riscontro pervenuti prima che l’evasione dell’ordine.
+Ako Klijent pošalje zamjensku potvrđenu Narudžbu u odgovoru Dobavljača, potvrđena Narudžba poništava sve prethodne Dokumente (Narudžbu i Odgovor) trenutnog procesa i pokreće novi proces kompletne Narudžbe.
+Izostanak potvrđene Narudžbe ekvivalentan je potvrdi Odgovora.
+Važeće su samo potvrđene Narudžbe koje stignu prije izvršenja narudžbe.  
 
-## Ordinazione PRE-Concordata
+## Prethodno dogovorena narudžba 
 
-La pre-autorizzazione ad emettere l’ordine da parte del Fornitore, invece del Cliente, può 
-derivare dal contratto o da altro documento (ad esempio un ordine inviato via fax o via e-mail a 
-causa dell’indisponibilità del sistema informatico che emette gli Ordini elettronici, oppure un 
-ordine perfezionato attraverso una piattaforma di comunicazione telematica) con cui il Cliente 
-conferisce tale facoltà al Fornitore, predeterminando l’ambito e le limitazioni entro cui può 
-essere esercitata.
-Questo processo prevede l’uso di due Documenti: 
-- l’Ordine pre-concordato, emesso dal Fornitore; 
-- l’Ordine di riscontro, eventualmente emesso dal Cliente.        
+Prethodna autorizacija Dobavljača za izdavanje Narudžbe umjesto Klijenta može proizaći iz ugovora ili drugog dokumenta (npr. narudžbe poslane faxom ili e-mailom zbog nedostupnosti sustava za elektroničko izdavanje Narudžbi, ili narudžbe realizirane putem platforme za telekomunikacijsku komunikaciju), kojim Klijent daje Dobavljaču tu ovlast, prethodno određujući područje i ograničenja u kojima se može koristiti.
+Ovaj proces predviđa korištenje dva Dokumenta:   
+- Prethodno dogovorena Narudžba, izdana od strane Dobavljača;  
+- Potvrđena Narudžba, eventualno izdana od Klijenta.         
 
-Il processo inizia con l’invio dell’Ordine pre-concordato da parte del Fornitore, che lo emette in 
-quanto pre-autorizzato dal Cliente, e può terminare, alternativamente:
-- con la ricezione da parte del Cliente dell’Ordine pre-concordato inviato dal Fornitore; 
-- con la ricezione da parte del fornitore dell’Ordine di riscontro inviato dal Cliente.      
+Proces započinje slanjem Prethodno dogovorene Narudžbe od strane Dobavljača, koji je ovlašten Klijentom, i može završiti alternativno:  
+- primitkom Prethodno dogovorene Narudžbe od strane Klijenta;  
+- primitkom potvrđene Narudžbe od strane Dobavljača.       
 
-Ogni eventuale comunicazione di conferma, diniego o sostituzione dell’Ordine preconcordato da 
-parte del Cliente dovrà pervenire al Fornitore, di norma, per il tramite di NSO.
-Il Fornitore può comunque revocare o modificare un Ordine pre-concordato precedentemente 
-emesso mediante l’emissione di un nuovo Ordine pre-concordato, che deve contenere 
-l’indicazione dell’Ordine pre-concordato che si intende revocare o modificare.
+Svaka eventualna komunikacija o potvrdi, odbijanju ili zamjeni Prethodno dogovorene Narudžbe od strane Klijenta obično dolazi Dobavljaču putem NSO-a.
+Dobavljač može opozvati ili izmijeniti prethodno izdanu Prethodno dogovorenu Narudžbu putem nove Prethodno dogovorene Narudžbe, koja mora sadržavati naznaku Prethodno dogovorene Narudžbe koju se želi opozvati ili izmijeniti.  
 
-Ne consegue che un Ordine pre-concordato può assumere le seguenti forme :
-- Ordine iniziale 
-- Ordine Iniziale collegato
-- Ordine di revoca , che deve contenere l’indicazione dell’Ordine precedentemente inviato 
-che si intende revocare, deve contenere una sola linea d’ordine, in quanto costituisce il 
-mero annullamento dell’Ordine precedentemente trasmesso a cui fa riferimento
-- Ordine sostitutivo , che deve contenere l’indicazione dell’Ordine precedentemente inviato 
-che si intende modificare, costituisce un nuovo Ordine che annulla tutti i Documenti 
-precedenti (Ordini e Ordini di riscontro) del processo corrente e dà avvio a un nuovo 
-processo di Ordinazione pre-concordata, pertanto deve contenere tutte le linee d’ordine 
-(come un Ordine iniziale). 
-A fronte della ricezione dell’Ordine pre-concordato, il Cliente può: 
-- terminare il processo senza trasmettere un Ordine di riscontro
-- trasmettere un Ordine di riscontro , che deve contenere l’indicazione dell’Ordine preconcordato a cui fa riferimento, con il quale comunica al Fornitore, alternativamente, che 
-intende: 
-> - confermare l’Ordine pre-concordato ricevuto ( Ordine di riscontro per conferma );
-> - declinare l’Ordine pre-concordato ricevuto ( Ordine di riscontro per diniego );
-> - sostituire l’Ordine pre-concordato ricevuto ( Ordine di riscontro sostitutivo ).     
+Posljedično, Prethodno dogovorena Narudžba može imati sljedeće oblike:  
+- Početna Narudžba 
+- Povezana početna Narudžba  
+- Narudžba za opoziv, koja mora sadržavati naznaku prethodno poslane Narudžbe koju se želi opozvati, te samo jednu liniju narudžbe, jer predstavlja samo poništenje prethodne Narudžbe; 
+- Zamjenska Narudžba, koja mora sadržavati naznaku prethodno poslane Narudžbe koju se želi izmijeniti, predstavlja novu Narudžbu koja poništava sve prethodne Dokumente (Narudžbe i potvrđene Narudžbe) trenutnog procesa i pokreće novi proces Prethodno dogovorene Narudžbe, stoga mora sadržavati sve linije narudžbe (kao početna Narudžba).  
+Na primitak Prethodno dogovorene Narudžbe, Klijent može:   
+- završiti proces bez slanja potvrđene Narudžbe;  
+- poslati potvrđenu Narudžbu, koja mora sadržavati naznaku Prethodno dogovorene Narudžbe na koju se odnosi, pri čemu obavještava Dobavljača alternativno da namjerava:   
+> - potvrditi primljenu Prethodno dogovorenu Narudžbu (Potvrđena narudžba za potvrdu);
+> - odbiti primljenu Prethodno dogovorenu Narudžbu (Potvrđena narudžba za odbijanje);
+> - zamijeniti primljenu Prethodno dogovorenu Narudžbu (Zamjenska potvrđena Narudžba).  
 
-Se il Cliente comunica che intende sostituire l’Ordine pre-concordato del Fornitore, l’Ordine di 
-riscontro annulla tutti i Documenti precedenti del processo corrente e dà avvio a un nuovo processo 
-che, in base a quanto indicato nell’Ordine di riscontro, può essere di Ordinazione semplice o di 
-Ordinazione completa. 
-Sono efficaci solo gli Ordini di riscontro pervenuti prima che l’Ordine pre-concordato sia stato 
-evaso con documenti di consegna. 
+Ako Klijent namjerava zamijeniti Prethodno dogovorenu Narudžbu Dobavljača, potvrđena Narudžba poništava sve prethodne Dokumente trenutnog procesa i pokreće novi proces koji, prema naznakama u potvrđenoj Narudžbi, može biti Jednostavna ili Kompletna narudžba.
+Važeće su samo potvrđene Narudžbe koje stignu prije nego što je Prethodno dogovorena Narudžba realizirana s dokumentima o isporuci.
