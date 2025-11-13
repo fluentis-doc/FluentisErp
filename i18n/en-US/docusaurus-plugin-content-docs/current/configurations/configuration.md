@@ -1,5 +1,5 @@
 ---
-title: Configuration of Fluentis ERP 
+title: ERP Configuration 
 description: Complete guide to configuring Fluentis ERP 
 keywords: ["ERP", "ERP parameters", "ERP tables", "Fast Start"]
 tags: [ERP, Configuration, Fluentis]
