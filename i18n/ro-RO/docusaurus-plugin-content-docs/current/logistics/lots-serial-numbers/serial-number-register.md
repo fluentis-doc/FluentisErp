@@ -1,105 +1,116 @@
 ---
 title: Registru număr serial
 sidebar_position: 8
+description: Ghid pentru gestionarea Registruluinumărului serial, o funcționalitate esențială a aplicației Fluentis ERP pentru trasabilitatea articolelor. 
+schema: TechArticle
+tags:
+    - numere seriale
+    - gestiuni
+keywords:
+    - numere seriale
+    - gestiuni
+    - gestionare articole
+    - trasabilitate
+    - Fluentis ERP
 ---
 
-:::important Utilizare
-Registrul numerelor de serie din Fluentis este un instrument esențial pentru companiile care doresc să gestioneze și să urmărească fiecare articol individual printr-un cod unic de identificare.
+# Registru număr serial 
 
-Această funcționalitate este deosebit de utilă în industrii în care trasabilitatea și siguranța sunt critice – cum ar fi: electronice, echipamente medicale, piese auto sau produse cu valoare ridicată.
+:::important
+Registrul numărului serial din Fluentis ERP este esențial pentru gestionarea detaliată a numerelor de serie, permițând companiilor să urmărească articolele individuale, cu ajutorul unui cod unic de identificare.  
+Această funcționalitate răspunde cerințelor specifice de trasabilitate și siguranță, fiind deosebit de importantă pentru articole critice sau de mare valoare, unde este esențial să fie monitorizat fiecare element individual și nu doar o cantitate totală.
+
+Utilizatorul are posibilitatea de a căuta un **număr serial** specific și de a-i vizualiza detaliile cu un simplu dublu clic.  
+În această secțiune, pot fi modificate **codul clientului**, **codul furnizorului**, și **starea numărului serial**, care poate fi **anulat**, **închis forțat** sau **rezervat**.
+
+De asemenea, registrul oferă detalii despre documentele de **încărcare și descărcare** asociate cu **numărul serial**, permițând o analiză completă a utilizării sale în timp.  
+Abordarea sistematică a gestionării numerelor de serie nu doar optimizează procesele interne, ci asigură și conformitatea cu reglementările în vigoare, făcând din acest registru un instrument indispensabil pentru companiile moderne care doresc să maximizeze eficiența operațională și calitatea serviciului.
 :::
 
-Această fereastră afișează detaliile lotului și este compusă din 4 secțiuni diferite:
+## Antet registru număr serial
 
-### Antet număr serial
+În această secțiune sunt afișate, cu posibilitatea de modificare a unora dintre ele, datele principale referitoare la lot, în special:
 
-**Articol**: sunt afișate clasa, codul și descrierea articolului la care se referă numărul serial. Articolul are opțiunea *Gestionare SN* activată în *Registru articol* > tab *Loturi/SN* pentru a face posibilă încărcarea lotului articolului;  
+- **Articol**: în cele 3 câmpuri corespunzătoare sunt afișate clasa, codul și descrierea articolului la care se referă **numărul serial**. Este vorba despre un articol cu opțiunea *Gestionare SN* activată în *registrul articol* > tab *Loturi/SN*, altfel nu ar fi fost posibilă încărcarea lotului pentru acel articol;
 
-**Variantă**: sunt afișate codul și descrierea variantei articolului la care se referă numărul serial, dacă este prezent;  
+- **Variantă**: în cele 2 câmpuri sunt afișate codul și descrierea variantei articolului la care se referă **numărul serial**, dacă există;
 
-**Cod lot**: reprezintă codul lotului din care face parte numărul serial.  
-Articolul la care se referă numărul serial ar putea fi gestionat și pe loturi. De exemplu, un lot de 100 de bucăți ar putea fi compus din 100 de număre seriale diferite.  
-Același număr serial ar putea să aparțină unor loturi diferite ale aceluiași articol sau unor loturi ale unor articole diferite;  
+- **Cod lot**: reprezintă codul lotului din care face parte **numărul serial**. Articolul la care se referă **numărul serial** poate fi gestionat și pe loturi; astfel, de exemplu, un lot de 100 de bucăți ar putea fi compus din 100 de **număre seriale** diferite. Același **număr serial** ar putea, de asemenea, aparține unor loturi diferite ale aceluiași articol sau ale unor articole diferite;
 
-**Tip lot**: indică tipul lotului utilizat;  
+- **Tip lot**: indică tipul de lot utilizat;
 
-**Tip cod lot**: indică tipul codului de lot cu care a fost generat lotul;  
+- **Tip cod lot**: indică tipul de cod de lot cu care a fost generat lotul;
 
-**Cod număr serial**: este un câmp editabil, deși în timpul operațiunilor de încărcare poate fi generat automat pe baza unor reguli stabilite în *Tip număr serial* asociat articolului.  
-Se introduce mai întâi un cod și o descriere a *Tipului de cod număr serial*, se salvează linia și apoi se decid parametrii care vor fi utilizați pentru compunerea tipului de cod lot recent creat.  
-Pentru fiecare parametru utilizat se poate decide din câte caractere trebuie să fie format și eventualul caracterul de umplere de utilizat. De exemplu, cu parametrul *Număr progresiv* setând caracterul de umplere '0' și Lungimea '5', se vor crea număre seriale cu primele numere 00000, apoi 00001, apoi 00002 și așa mai departe.  
-*Tipul codului număr serial* trebuie apoi asociat în registrul articolului în câmpul corespunzător situat în tab *Loturi/Număr serial*, pentru ca, în procedurile care generează automat codul *număr serial* pentru articolul respectiv, numărul serial să fie generat conform regulilor stabilite în *tip cod număr serial* asociat articolului.  
-Câmpul este alfanumeric și poate conține maxim 50 de caractere;  
+- **Cod număr serial**: reprezintă codul **numărului serial**. Este un câmp editabil, deși în timpul operațiunilor de **încărcare** poate fi generat automat în baza anumitor reguli setate în *Tip numere seriale* asociat articolului.  
 
-**Tip număr serial**: indică tipul codului număr serial cu care a fost generat numărul serial;  
+*Procedura*
+Se introduce mai întâi un *cod* și o *descriere* pentru *Tipul codului numărului serial*, se *salvează* linia și apoi se decide ce *parametri* vor fi utilizați pentru compunerea tipului de cod de lot creat.  
 
-**Dată început**: reprezintă de obicei data la care a fost încărcat numărul serial și este un câmp editabil.  
-- dacă numărul serial a fost încărcat prin înregistrarea de gestiune, această dată este identică cu data la care a fost creată înregistrarea;  
--dacă numărul serial a fost încărcat prin încărcarea unei aviz de achiziție sau prin înregistrarea reintrării în sistem lohn, această dată este setată egală cu data avizului de achiziție sau sistem lohn (decât dacă utilizatorul nu a modificat-o manual în aviz);  
-- dacă numărul serial a fost încărcat prin înregistrarea unei semnalări de producție, această dată este propusă ca fiind identică cu data semnalării de producție;  
+Pentru fiecare parametru se poate decide din câte caractere trebuie format și, eventual, ce caracter de completare să fie utilizat.  
+De exemplu, cu parametrul **Număr progresiv**, setând caracterul de completare '0' și lungimea '5', se vor crea **număre seriale** astfel: primul 00000, apoi 00001, 00002 și așa mai departe.  
 
-**Dată scadenţă**: reprezintă data de expirare a numărului serial, editabilă, care este calculată la crearea lotului și deci la încărcarea mișcării de gestiune corespunzătoare, pornind de la data de început și adunând zilele de valabilitate ale numărului serial introduse în tab *Loturi/SN* din registrul articolului;  
+*Tipul codului numărului serial* trebuie apoi asociat în **registrul articol** în câmpul corespunzător din tab-ul *Loturi/SerialNumber*, astfel încât în procedurile care generează automat codul **numărului serial** pentru articolul respectiv, numărul de serie să fie creat conform regulilor setate.  
 
-**Cod client**: reprezintă codul *Lotului client*, deci numele pe care clientul îl atribuie lotului. Este un câmp editabil, care nu poate fi generat automat în timpul operațiunilor de încărcare. Poate avea maxim 50 de caractere și poate fi identic pentru loturi diferite ale unor articole diferite;  
+Câmpul este alfanumeric și poate avea o lungime maximă de 50 de caractere;  
 
-**Cod furnizor**: reprezintă codul *Lotului furnizor*, deci numele pe care furnizorul îl atribuie lotului. Este un câmp editabil, care nu poate fi generat automat în timpul operațiunilor de încărcare. Poate avea maxim 50 de caractere și poate fi identic pentru loturi diferite ale unor articole diferite;  
+- **Tip numere seriale**: indică tipul codului **numărului serial** cu care a fost generat numărul de serie;  
 
-**Furnizor**: reprezintă contul sintetic/analitic/descrierea furnizorului;  
+- **Data început**: reprezintă, de obicei, data la care a fost încărcat **numărul serial**, editabilă. Dacă **numărul serial** a fost încărcat printr-o **înregistrare de gestiune**, data propusă este aceeași cu data înregistrării; dacă a fost încărcat printr-un **Aviz de achiziție** sau un **reintrare în sistem lohn**, data este setată ca fiind egală cu cea a avizului respectiv (cu excepția cazului în care utilizatorul a modificat-o manual); dacă a fost încărcat printr-o **înregistrare de producție**, data propusă este aceeași cu data înregistrării de producție;
 
-**Anulat**: dacă este activ, înseamnă că numărul serial a fost anulat;  
+- **Data scadență**: reprezintă data de expirare a **numărului serial**, editabilă de către utilizator, calculată la crearea lotului prin adunarea zilelor de valabilitate setate în tab-ul *Loturi/SN* a  **Registrul articol**;
 
-**Închis forțat**: dacă este activ, înseamnă că numărul serial a fost închis forțat;  
+- **Cod client**: reprezintă codul *Lotului client*, deci numele pe care clientul îl atribuie lotului. Este un câmp editabil, care nu poate fi generat automat în timpul operațiunilor de încărcare. Poate avea maxim 50 de caractere și poate fi identic pentru loturi diferite ale unor articole diferite;
 
-**Rezervat**: dacă este activ, înseamnă că  numărul serial a fost rezervat.
+- **Cod furnizor**: reprezintă codul *Lotului furnizor*, deci numele pe care furnizorul îl atribuie lotului. Este un câmp editabil, care nu poate fi generat automat în timpul operațiunilor de încărcare. Poate avea maxim 50 de caractere și poate fi identic pentru loturi diferite ale unor articole diferite;
 
-### Încărcare
+- **Furnizor**: reprezintă contul sintetic/analitic/descrierea furnizorului;
 
-În această secțiune sunt vizualizate datele fundamentale ale documentelor care au contribuit la efectuarea încărcării numărului serial. De obicei este afișat detaliul *Înregistrării de gestiune* care a încărcat numărul serial.  
+- **Anulat**: dacă este activ, înseamnă că numărul serial a fost anulat;
 
-*Cu dublu clic pe linia documentului, în funcție de drepturile utilizatorului, se poate deschide documentul corespunzător.*
+- **Închis forțat**: dacă este activ, înseamnă că numărul serial a fost închis forțat;
 
-**Cantitate**: reprezintă cantitatea lotului care a fost rezervată în document;  
+- **Rezervat**: dacă este activ, înseamnă că  numărul serial a fost rezervatt.
+### încărcare
 
-**Unitate de măsură**: indică unitatea de măsură care a fost utilizată în document;  
+În această secțiune sunt afișate datele fundamentale ale documentelor care au contribuit la efectuarea **încărcării numărului serial**:
 
-**Număr colete**: indică numărul de colete;  
+- **Cantitate**: cantitatea lotului implicată în document.  
+- **Unitate de măsură**: unitatea de măsură utilizată în document.  
+- **Număr colete**: indică numărul de colete.  
+- **Data inserăre**: indică data inserării.  
+- **Închis forțat**: indică dacă **numărul serial** a fost închis forțat, dacă este activ.  
+- **Document de referință**: reprezintă tipul documentului care a generat încărcarea numărului serial. Acesta poate fi o înregistrare de gestiune, un aviz de achiziție sau o Reintrare în sistem lohn.  
 
-**Data inserăre**: indică data inserării;  
+- **Înregistrare**: reprezintă numărul și data documentului;  
 
-**Închis forțat**: dacă este activ, înseamnă că  numărul serial a fost închis forțat;  
+- **Gestiune**: reprezintă codul și descrierea gestiunii în care a fost încărcat numărul serial;  
 
-**Document de referință**: reprezintă tipul documentului care a generat încărcarea numărului serial. Acesta poate fi o înregistrare de gestiune, un aviz de achiziție sau o Reintrare în sistem lohn;  
+- **Locație**: reprezintă codul și descrierea locației;  
 
-**Înregistrare**: reprezintă numărul și data documentului;  
+- **Șablon**: reprezintă codul și descrierea șablonului utilizate pentru crearea acelei mișcări de încărcare;  
 
-**Gestiune**: reprezintă codul și descrierea gestiunii în care a fost încărcat numărul serial;  
+- **Client/Furnizor**: reprezintă contul, analiticul și descrierea referitoare la client sau furnizor.
 
-**Locație**: reprezintă codul și descrierea locației;  
+### Descărcare
 
-**Șablon**: reprezintă codul și descrierea șablonului utilizate pentru crearea acelei mișcări de încărcare;  
+În această secțiune sunt afișate datele fundamentale ale primului document, în ordine cronologică, care a implicat **numărul serial**. Datele apar într-un tabel cu următoarele coloane:
 
-**Client/Furnizor**: reprezintă contul, analiticul și descrierea referitoare la client sau furnizor.
+- **Cantitate**: cantitatea lotului implicată în document.  
+- **Unitate de măsură**: unitatea de măsură utilizată în document.  
+- **Document de referință**: reprezintă tipul documentului care a rezervat pentru prima dată numărul serial. Poate fi un ordin de producție, un ordin de client, un aviz de vânzare, o factură de vânzare, o listă de preluare, un aviz de livrare sistem lohn sau o reintrare sistem lohn.
+- **Înregistrare**: reprezintă numărul și data documentului;  
 
-### Descărcare 
+- **Gestiune**: reprezintă codul și descrierea gestiunii în care a fost încărcat numărul serial;  
 
-În această secțiune sunt afișate datele fundamentale ale primului document, în ordine cronologică, care a rezervat numărul serial.  
+- **Locație**: reprezintă codul și descrierea locației;  
 
-**Cantitate**: reprezintă cantitatea lotului care a fost rezervată în document;  
+- **Șablon**: reprezintă codul și descrierea șablonului utilizate pentru crearea acelei mișcări de dezcărcare;  
 
-**Unitate de măsură**: indică unitatea de măsură care a fost utilizată în document;  
+- **Client/Furnizor**: reprezintă contul, analiticul și descrierea referitoare la client sau furnizor.
 
-**Dată inserăre**: indică data inserării;  
+## Rezumat și detalii suplimentare
 
-**Document de referință**: reprezintă tipul documentului care a rezervat pentru prima dată numărul serial. Poate fi un ordin de producție, un ordin de client, un aviz de vânzare, o factură de vânzare, o listă de preluare, un aviz de livrare sistem lohn sau o reintrare sistem lohn;  
-
-**Înregistrare**: reprezintă numărul și data documentului;  
-
-**Gestiune**: reprezintă codul și descrierea gestiunii în care a fost încărcat numărul serial;  
-
-**Locație**: reprezintă codul și descrierea locației;  
-
-**Șablon**: reprezintă codul și descrierea șablonului utilizate pentru crearea acelei mișcări de dezcărcare;  
-
-**Client/Furnizor**: reprezintă contul, analiticul și descrierea referitoare la client sau furnizor.  
-
-*Cu dublu clic pe linia documentului, în funcție de drepturile utilizatorului, se poate deschide documentul corespunzător.*
+*Registrul numărului serial* din Fluentis ERP este un instrument pentru gestionarea trasabilității și siguranței articolelor.  
+Pentru informații suplimentare, consultă:  
+- [Registru articol](/docs/erp-home/registers/items/create-new-item)  
+- [Gestiune](/docs/logistics/warehouse/warehouse-intro)

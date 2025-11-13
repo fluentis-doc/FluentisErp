@@ -1,30 +1,71 @@
 ---
-title: Șoferi autovehicule
+title: Șoferi vehicule
+description: Gestionarea și codificarea șoferilor asociați vehiculelor în modulul logistică. 
+keywords:
+  - vehicule
+  - logistică
+  - expediți
+  - Fluentis ERP
 sidebar_position: 3
+schema: HowTo
+tags:
+  - logistică
+  - vehicule
+  - expediți
+last_update:
+  author: Fluentis Documentation Team
+  date: 12-11-2025
 ---
 
-Tabelul se află la calea **Logistică > Autovehicule > Șoferi autovehicule** și permite codificarea *Șoferilor* care pot fi selectați în [Expediții](/docs/logistics/shipping/shippings).
+# Șoferi vehicule
 
-Tabelul permite adăugarea de noi înregistrări sau căutarea celor existente pentru a le vizualiza, modifica sau șterge.
+Această secțiune descrie cum să gestionați și să codificați **șoferii asociați vehiculelor**, cu detalii despre căutarea, introducerea și gestionarea perioadelor de inactivitate.
 
-### Căutare Șoferi autovehicule
+Tabelul se află pe calea **Logistică > Autovehicule > Șoferi vehicule**.
 
-Formularul este compus dintr-o zonă de filtrare și una de rezultate. Dupè ce toate filtrele dorite sunt setate, este suficient să faceți clic pe butonul **Caută** pentru a vizualiza rezultatele în cadrul grilei de rezultate.
+Șoferii codificați în acest tabel vor putea fi selectați în [Expediți](/docs/logistics/shipping/shippings).  
+Tabelul permite inserarea înregistrărilor noi sau căutarea celor existente pentru a le vizualiza, modifica sau șterge.
 
-### Inserare Șoferi autovehicule 
+## Caută șoferi vehicule
 
-Pentru a putea adăuga noi șoferi, este necesar să faceți clic pe prima linie goală din tabel sau să apăsați butonul **Nou**.  
-Pentru noua înregistrare trebuie completate cel puțin câmpurile obligatorii solicitate de program: **Nume** și **Prenume**.  
-De asemenea, se pot insera următoarele valori:
-- **Permis de conducere**: permite introducerea permisului de conducere al șoferului dintre cele inserate în [*Permise de conducere autovehicul*](/docs/configurations/tables/logistics/motorvehicle-driving-licences);  
-- **Resursă atribuită**: permite indicarea [Resursei din proiecte](/docs/configurations/tables/project-management/project-resources/) alocate vehiculului;  
-- **Angajat**: permite indicarea angajatului intern asociat;  
-- **Angajat extern desemnat**: permite indicarea manuală a angajatului extern asociat resursei.
+Formularul este compus dintr-o zonă de filtre și una de rezultate.  
+După ce setați toate filtrele dorite, apăsați butonul **Caută** pentru a afișa rezultatele în tabel.
 
-#### Perioade de inactivitate șofer
+## Inserare șoferi vehicule
 
-Permite inserarea perioadelor de inactivitate ale șoferului, care vor fi raportate în [Planificare](/docs/logistics/shipping/calendar).  
+Pentru a introduce un șofer nou, puteți face clic pe primul rând gol din tabel sau puteți apăsa butonul **Nou**.
+
+Câmpurile obligatorii de completat sunt:
+- **Nume**  
+- **Prenume**
+
+### Câmpuri opționale
+
+- **Permise de conducere vehicule**: permite selectarea permisului șoferului dintre cele existente în [Permise de conducere vehicule](/docs/configurations/tables/logistics/motorvehicle-driving-licences).  
+- **Resursă atribuită**: permite inserarea [resursei din proiecte](/docs/configurations/tables/project-management/project-resources/) atribuită vehiculului.  
+- **Angajat**: permite asocierea unui angajat intern.  
+- **Angajat extern atribuit**: permite să introduceți manual un angajat extern asociat resursei.
+
+### Buton disponibilî
+
+- **Șterge**: permite eliminarea înregistrării selectate.
+
+## Perioadă de inactivitate șofer
+
+În tabelul *Perioadă de inactivitate șofer* se pot insera perioadele de inactivitate, care vor fi raportate în [Planificare](/docs/logistics/shipping/calendar).
+
+### Câmpuri disponibile 
+
 - **Descriere**: permite indicarea descrierii perioadei de inactivitate a șoferului;  
 - **De la data**: permite indicarea datei de început a perioadei de inactivitate a șoferului;  
-- **La data**: permite indicarea datei de sfârșit a perioadei de inactivitate a șoferului;  
-- **Motiv**: permite introducerea motivului codificat în [Motivele absență șofer](/docs/configurations/tables/logistics/driver-off-time-reasons/).
+- **La data**: permite indicarea datei de sfârșit a perioadei de inactivitate a șoferului  
+- **Motiv**: reprezintă motivul codificat în [Motive absență șofer](/docs/configurations/tables/logistics/driver-off-time-reasons/).
+
+## Rezumat și detalii
+
+Acest ghid explică modalitățile de introducere, căutare și gestionare a **șoferilor vehicule**, incluzând perioadele de inactivitate și referințele la expediții și resurse asociate.
+
+Pentru informații suplimentare:
+- [Expediții](/docs/logistics/shipping/shippings)
+- [Permise de conducere vehicule](/docs/configurations/tables/logistics/motorvehicle-driving-licences) 
+- [Motive absență șofer](/docs/configurations/tables/logistics/driver-off-time-reasons/)

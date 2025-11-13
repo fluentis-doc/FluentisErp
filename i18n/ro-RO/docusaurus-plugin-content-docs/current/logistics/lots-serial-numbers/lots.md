@@ -1,32 +1,59 @@
 ---
 title: Caută loturi
 sidebar_position: 2
+schema: HowTo
+tags:
+  - logistică
+  - loturi
+  - gestiuni
+last_update:
+  author: Fluentis Documentation Team
+  date: 2025-11-07
+keywords:
+  - logistică
+  - loturi
+  - gestiuni
 ---
 
-Form-ul se află pe calea **Logistică > Registru loturi** și permite căutarea tuturor loturilor cu scopul de a le vizualiza și modifica.
+# Caută loturi
 
-Odată setate toate filtrele dorite, este suficient să faceți clic pe butonul **Caută** prezent în *Ribbon bar* pentru a vizualiza rezultatele în grila de rezultate.
+Fereastra se află pe calea **Logistică > Registru loturi** și permite să căutarea tuturor loturilor cu scopul de a le vizualiza și modifica.
 
-Pentru a deschide detaliile unui document, este suficient să-l selectați și să faceți dublu clic cu mouse-ul, sau să faceți clic pe butonul **Modifică**.
+## Cum se efectuează o căutare 
 
-#### Butoane specifice
+1. Setați filtrele dorite în zona de căutare.  
+2. Faceți clic pe butonul **Caută** prezent în ribbon bar pentru a afișa rezultatele în tabel.  
+3. Pentru a deschide detaliile unui lot, selectați-l și faceți dublu clic cu mouse-ul sau faceți clic pe butonul **Modifică**.
 
-> **Modificare**: butonul permite să [Modificați un lot inserat](/docs/logistics/lots-serial-numbers/lots-register);  
-> **Șterge**: permite ștergerea lotului dacă acesta nu este prezent în niciun document.
+:::important
+Este posibil să modificați sau să eliminați doar loturile care nu sunt referențiate în alte documente.
+:::
 
-#### Filtre specifice  
+## Butoane specifice
 
-**Toate**: activând acest flag, utilizatorul poate filtra toate loturile din baza de date;  
-**Neînchise**: activând acest flag, utilizatorul poate filtra doar loturile deschise, adică doar loturile pentru care există încă un stoc în gestiune;  
-**Închise**: activând acest flag, utilizatorul poate filtra doar loturile închise, adică doar loturile cu stoc egal cu zero.
+> **Modifică**: permite modificare unui [lot](/docs/logistics/lots-serial-numbers/lots-register) inserat.  
+> **Șterge**: permite ștergerea lotului dacă acesta nu este referențiat în niciun document.
 
-#### Câmpuri specifice  
-*Notă*: Faceți clic pe semnul **+** pentru a deschide detaliile rândului.
+## Filtre specifice 
 
-**Închis**: dacă este activ, evidențiază că stocul este egal cu zero;  
-**Cantitate**: coloana afișează cantitatea inițială a lotului pentru fiecare gestiune;  
-**Cantitate disponibilă**: coloana afișează cantitatea disponibilă pentru fiecare gestiune a lotului, adică cantitatea în stoc minus cantitatea rezervată în diverse documente. Cantitatea disponibilă poate fi de asemenea afișată ca egală cu zero în cazul în care lotul se află în starea 'nedisponibil pentru preluări automate';  
-**Stare lot**: coloana afișează starea lotului. Este o informație care poate să nu fie gestionată;  
-**Gestiune**: coloana afișează codul gestiunii în care se află lotul.
+- **Toate**: activând acest flag, utilizatorul poate filtra toate loturile prezente în baza de date;  
+- **Neînchise**: activând acest flag, utilizatorul poate filtra doar loturile deschise, adică acele loturi pentru care există încă un stoc în gestiune;  
+- **Închise**: activând acest flag, utilizatorul poate filtra doar loturile închise, adică acele loturi a căror stoc este egal cu zero.
 
-Pentru detalii despre funcționarea comună a form-urilor, consultați linkul [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
+## Câmpuri specifice 
+
+> *Notă*: faceți clic pe semnul **+** pentru a deschide detaliul liniei.
+
+- **Închis**: dacă este activ, evidențiază că stocul este egal cu zero;  
+- **Cantitate**: afișează cantitatea inițială a lotului pentru fiecare gestiune;  
+- **Cantitate disponibilă**: afișează cantitatea disponibilă pentru fiecare gestiune a lotului, adică stocul minus cantitatea angajată în diferite documente. Cantitatea disponibilă poate fi afișată și ca fiind egală cu zero în cazul în care lotul se află în starea *nedisponibil pentru preluări automate*;  
+- **Stare lot**: afișează starea lotului. Este un câmp care poate să nu fie gestionat;  
+- **Gestiune**: afișează codul gestiunii în care se află lotul.
+
+## Sumar și detalii 
+
+Funcționalitatea **Caută loturi** permite identificarea rapidă a loturilor înregistrate, filtrându-le în funcție de stare și disponibilitate.  
+
+Pentru detalii suplimentare:  
+- [Înregistrarea și modificarea loturilor](/docs/logistics/lots-serial-numbers/lots-register)  
+- [Funcționalități comune ale form-urilor](/docs/guide/common)
