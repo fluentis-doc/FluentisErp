@@ -1,28 +1,57 @@
 ---
 title: Gestione automezzo
+description: Gestione e codifica degli automezzi nel modulo Logistica di Fluentis ERP.
+keywords:
+  - automezzo
+  - gestione automezzi
+  - logistica
+  - tipi automezzo
+  - Fluentis ERP
 sidebar_position: 1
+schema: TechArticle
+tags:
+  - logistica
+  - automezzi
+  - configurazione
+last_update:
+  author: Fluentis Documentation Team
+  date: 14-11-2025
 ---
 
-La tabella si trova sul percorso **Logistica > Automezzi > Gestione automezzo**.
+# Gestione automezzo
 
-I dati presenti in questa tabella sono utilizzati per indicare il tipo di automezzo creato.   
+Questa sezione descrive la procedura per gestire e codificare gli **automezzi** nel modulo **Logistica**, con indicazioni su ricerca, inserimento e campi specifici.
 
-La tabella consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli.
+La tabella si trova nel percorso **Logistica > Automezzi > Gestione automezzo**.
 
-**Ricerca Gestione automezzo**
+I dati presenti in questa tabella vengono utilizzati per definire e classificare i diversi tipi di automezzo creati nel sistema.  
+È possibile inserire nuovi record oppure ricercare quelli già esistenti per visualizzarli, modificarli o cancellarli.
 
-La form si compone di un'area di filtro e da una di risultato. Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato.
+## Ricerca Gestione automezzo
 
-**Inserimento Gestione automezzo**
+La form è composta da un’area di *filtro* e da una di *risultato*.  
+Dopo aver impostato i filtri desiderati, premere il pulsante **Ricerca** per visualizzare i risultati nella griglia di risultato.
 
-Per poter inserire nuovi *Automezzi* è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**.   
-Per il nuovo record si devono inserire almeno i campi obbligatori richiesti dal programma: il **Codice** e la **Descrizione**.
+## Inserimento Gestione automezzo
 
-*Campi specifici*: 
+Per inserire un nuovo **automezzo**, cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.  
 
-> **Tipo automezzo**: indica il tipo di automezzo, che può essere codificato nella tabella [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-types/);            
-> **Codice**: indica il codice dell'automezzo;               
-> **Descrizione**: indica la descrizione dell'automezzo;         
-> **Classe/Codice/Descrizione**: permette di collegare l'automezzo ad un articolo presente in anagrafica inserendo classe, codice e descrizione.   
+I campi obbligatori da compilare sono:
+- **Codice**
+- **Descrizione**
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+### Campi specifici
+
+> **Tipo automezzo**: definisce il tipo di automezzo e può essere codificato nella tabella [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-types/).  
+> **Codice**: codice identificativo univoco dell’automezzo.  
+> **Descrizione**: descrizione testuale dell’automezzo.  
+> **Classe / Codice / Descrizione**: consente di collegare l’automezzo a un articolo presente in anagrafica, inserendo classe, codice e descrizione.
+
+## Riepilogo e approfondimenti
+
+Questa guida spiega come configurare e gestire gli **automezzi** nel sistema Fluentis ERP, specificando i campi obbligatori e le relazioni con le tabelle tipo automezzo e articoli.
+
+Per approfondire:
+- [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-types/)
+- [Consumo materiali](/docs/logistics/motorvehicles/material-consumption/)
+- [Funzionalità, pulsanti e campi comuni](/docs/guide/common)
