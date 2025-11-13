@@ -18,6 +18,7 @@ Depending on whether the *Deregulation from nomenclature/payment types* flag is 
 :::note[Note]
 For Cash flow settings, only two types of financial flows are needed, such as
 
+
 | Code | Description | DocFinance Code |
 | :-- | :-: | --: |
 | 1 | Items | CO |
@@ -60,6 +61,7 @@ Refer to the Bizlink documentation for specific service configurations (“Ident
 
 ![](/img/it-it/treasury/docfinance/docconn4.png)
 
+
 **WARNING:**
 
 In the import connector visible in the previous image, the tag ***filemask*** has been set as it is usually set by default in DocFinance: “ritcoge.txt”. 
@@ -77,3 +79,13 @@ Another example: if in export from DocFinance the configurations require adding 
 
 For example, it could be configured with "everyone" rights.
 :::
+
+
+## CONNECTOR CREATION SCRIPTS
+WARNING: after launching the scripts, it is necessary to modify the connectors specifically to the client in use, for example, check the name of the output folder, the identifier, etc...
+
+[**Download SQL script 1**](/sql/it-IT/DocFinance_Setup_Connector1.sql)
+
+[**Download SQL script 2**](/sql/it-IT/DocFinance_Setup_Connector2.sql)
+
+[**Download SQL script 3**](/sql/it-IT/DocFinance_Setup_Connector3.sql)
