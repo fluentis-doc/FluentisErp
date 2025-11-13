@@ -1,12 +1,11 @@
 ---
-title: Gestione del ciclo attivo
+title: Upravljanje aktivnim ciklusom
 sidebar_position: 6
 ---
 
-La gestione di un documento di fatturazione elettronica per il cliclo attivo secondo le normative vigenti 
-prevede le seguenti fasi.      
+Upravljanje dokumentom elektroničkog fakturiranja za aktivni ciklus prema važećim propisima uključuje sljedeće faze.
 
-*FATTURAZIONE PUBBLICA AMMINISTRAZIONE*            
+*ELEKTRONIČKO FAKTURIRANJE PREMA JAVNOJ UPRAVI*            
 
 - generazione del documento di vendita
 - invio a SdI (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)

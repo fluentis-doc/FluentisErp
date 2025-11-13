@@ -1,97 +1,50 @@
 ---
-title: Impostazione anagrafiche contatti
+title: Postavljanje kontaktnih kartica  
 sidebar_position: 3
 ---
 
-Nelle anagrafiche dei contatti clienti sarà necessario impostare la gestione della fatturazione elettronica al 
-fine di censire correttamente in Fluentis il Codice destinatario o l’indirizzo PEC dei clienti destinatari del file 
-fattura B2B oppure, in caso di censimento di una Pubblica Amministrazione, il codice Ufficio relativo. 
+U karticama kontakata kupaca potrebno je postaviti upravljanje elektroničkom fakturacijom kako bi se u Fluentisu pravilno evidentirao Primateljski kod ili PEC adresa kupaca koji primaju B2B fakturu ili, u slučaju evidentiranja javne uprave, odgovarajući kod ureda.  
 
-## Fatturazione B2B
+## B2B Fakturiranje
 
-Per configurare i contatti, è necessario accedere a *Home > Anagrafiche contatti*, ricercare e richiamare 
-l’anagrafica contatto per il quale si intende impostare la gestione della fatturazione elettronica e, nel 
-pannello *Dati contabili > Informazioni fiscali*, impostare il check **Fatturazione elettronica** e i campi ad esso 
-correlati:     
-- **Ragione sociale**: questo campo deve rimanere vuoto
-- **Descrizione**: questo campo deve rimanere vuoto
-- **Fatturazione elettronica firmata**: questo check si riferisce alla possibilità di gestire fatture 
-elettroniche firmate PER IL CONTATTO SELEZIONATO. Viene riportato il valore dell’impostazione 
-fatta a livello di Società emittente nella sezione Configurazione Fatturazione Elettronica per Società
-e può essere variato rispetto all’impostazione generale inserita, creando l’eccezione per il soggetto 
-in gestione. Se impostato il check, al momento dell’emissione della fattura elettronica sarà possibile 
-esportare il file XML, firmarlo con appositi supporti esterni e importarlo formato in Fluentis, 
-proseguendo poi con le fasi di emissione. Tale facoltà è discrezionale per i documenti fattura emessi 
-verso clienti residenti sul terriorio Italiano mentre è OBBLIGATORIA per i documenti emessi nei 
-confronti di soggetti non residenti, non stabiliti, non identificati in Italia e per i quali si intende inviare 
-i documenti tramite il SdI.
-- **Fatturazione elettronica con PDF allegato**: questo check si riferisce alla possibilità di inviare i file di 
-fatture elettroniche con allegato il PSF della fattura. Viene riportato il valore dell’impostazione fatta 
-a livello di Società emittente nella sezione Configurazione Fatturazione Elettronica per Società e può 
-essere variato rispetto all’impostazione generale inserita, creando l’eccezione per il soggetto in 
-gestione. Se impostato il check, al momento dell’emissione della fattura elettronica verrà generato il 
-file XML al quale verrà allegato il file PDF realtivo. 
-- **Trasformazione ARM per creazione PDF fattura**: in questo campo può essere indicato il riferimento 
-della trasformazione ARM relativa alla creazione del file PDF di fattura, ad esempio lo stesso processo 
-che potrebbe essere invocato per l’invio via mail della fattura al cliente. Se non indicato e se 
-impostato il check “Fatturazione elettronica con PDF allegato”, per la creazione del PDF viene utilizzata la trasformazione indicata nella sezione Configurazione Fatturazione Elettronica per Società. 
-- **Tipo codice**: il campo identifica il canale da utilizzare per l’invio dei documenti elettronici; la 
-compilazione di questo campo richiede anche la definizione corretta dei campi CODICE 
-DESTINATARIO e EMAIL, al fine di creare il file fattura con l’indirizzamento corretto. Sulla base dela 
-scelta di tale campo, la grigia della sezione FATTURAZIONE ELETTRONICA dovrà essere compilata 
-secondo alcune regole specifiche. I valori che può assumere sono:
-> - **Canale SDI**: la scelta di questo valore indica che si intende utilizzare come modalità di invio il 
-codice destinatario conosciuto oppure un indirizzo mail oppure demandare al SdI la 
-determinazione del canale registrato dal cliente. Nello specifico, l’attribuzione di questo 
-valore in anagrafica richiede la compilazione del campo CODICE DESTINATARIO e EMAIL 
-secondo le regole di seguito indicate:
+Za konfiguraciju kontakata potrebno je otići na *Poćčetna stranica > Šifarnik kontakata*, pronaći i otvoriti karticu kontakta za kojeg želite postaviti elektroničku fakturaciju i u panelu *Računovodstveni podaci > Porezne informacije*, označiti **Elektronička fakturacija** te popuniti povezane podatke:      
+- **Naziv tvrtke**: ovo polje mora ostati prazno  
+- **Opis**: ovo polje mora ostati prazno  
+- **Potpisana elektronička fakturacija**: Ova provjera odnosi se na mogućnost upravljanja elektroničkim fakturama potpisanim ZA ODABRANI KONTAKT. Prikazuje se vrijednost postavke napravljene na razini izdavateljske tvrtke u odjeljku Konfiguracija Elektroničkog Fakturiranja za Tvrtku i može se promijeniti u odnosu na opću postavku, stvarajući iznimku za subjekt u upravljanju. Ako je provjera postavljena, prilikom izdavanja elektroničke fakture bit će moguće izvesti XML datoteku, potpisati je s odgovarajućim vanjskim potporama i uvesti je u format u Fluentis, a zatim nastaviti s fazama izdavanja. Ova mogućnost je diskrecijska za dokumente faktura izdane prema kupcima koji su rezidenti na talijanskom teritoriju, dok je OBAVEZNA za dokumente izdane prema subjektima koji nisu rezidenti, nisu uspostavljeni, nisu identificirani u Italiji i za koje se namjerava poslati dokumente putem SdI.  
+- **Prilog u elektroničkoj fakturi**: Ova provjera odnosi se na mogućnost slanja datoteka elektroničkih računa s priloženim PSF-om računa. Prikazuje se vrijednost postavke napravljene na razini izdavatelja tvrtke u odjeljku Konfiguracija Elektroničkog Fakturiranja za Tvrtku i može se promijeniti u odnosu na opću postavku, stvarajući iznimku za subjekt u upravljanju. Ako je provjera postavljena, prilikom izdavanja elektroničkog računa generirat će se XML datoteka kojoj će biti priložena odgovarajuća PDF datoteka.
+- **ARM transformacija za izradu PDF‑fakture**: u ovom polju može se unijeti referenca na ARM transformaciju koja je vezana uz izradu PDF‑datoteke fakture, npr. isti proces koji se može koristiti za slanje fakture putem e‑maila kupcu. Ako transformacija nije navedena, a označen je check „Elektronička fakturacija s priloženim PDF‑om“, za izradu PDF‑a koristit će se transformacija definirana u sekciji „Konfiguracija elektroničke fakturacije za tvrtku“.  
+- **Vrsta koda**: ovo polje identificira kanal koji će se koristiti za slanje elektroničkih dokumenata; popunjavanje zahtijeva i točno definiranje polja KOD PRIMATELJA i EMAIL, kako bi se faktura pravilno usmjerila. Na temelju odabrane vrijednosti polja, sekcija „Elektronička fakturacija“ mora se popuniti prema određenim pravilima. Moguće vrijednosti su:  
+> - **Kanal SDI**: odabir ove vrijednosti znači da se kao način slanja koristi poznati kod primatelja ili adresa e‑maila ili da se o kanalu odluči prema podacima registriranim kod SDI‑ja. Konkretno, za odabir ove vrijednosti u anagrafi potrebno je popuniti polja KOD PRIMATELJA i EMAIL prema sljedećim pravilima:
 
-| Modalità di invio | Codice destinatario | Email | Descrizione destinatario | Data inizio | Data fine |
+| Način slanja | Kod primatelja | Email | Opis primatelja | Datum početka |	Datum završetka |
 | :-- | :-- | :-- | :-- | :-- | :--|
-| Codice destinatario del cliente rilasciato dall’AdE a seguito del suo accreditamento | Codice destinatario del cliente | Vuoto | Ragione sociale del cliente | Data inizio rapporto | Data fine validità del canale utilizzato |
-| Mail PEC | 0000000 (7 zeri) | Email PEC del cliente | Ragione sociale del cliente | Data inizio rapporto | Data fine validità del canale utilizzato |
-| Non si conosce nè codice destinatario nè mail PEC OPPURE Cliente privato OPPURE Cliente in regime di vantaggio o Forfettario | 0000000 (7 zeri) | Vuoto | Ragione sociale del cliente | Data inizio rapporto | Data fine validità del canale utilizzato |
-| Cliente non residente, non stabilito, non identificato in Italia | XXXXXXX (7 "X") | Vuoto | Ragione sociale del cliente | Data inizio rapporto | Data fine validità del canale utilizzato |
+| Kod primatelja kupca dodijeljen od strane AdE nakon akreditacije | Kod primatelja kupca | Prazno | Naziv tvrtke kupca | Datum početka odnosa | Datum završetka valjanosti kanala |
+| PEC mail | 0000000 (7 nula) | PEC e‑mail kupca | Naziv tvrtke kupca | Datum početka odnosa | Datum završetka valjanosti kanala |
+| Ne zna se ni kod primatelja ni PEC mail ILI Privatni kupac ILI Kupac u režimu prednosti ili forfetarni | 0000000 (7 nula) | Prazno | Naziv tvrtke kupca | Datum početka odnosa | Datum završetka valjanosti kanala |
+| Kupac nije rezident, nije ustrojen, nije identificiran u Italiji | XXXXXXX (7 "X") | Prazno | Naziv tvrtke kupca | Datum početka odnosa | Datum završetka valjanosti kanala |
       
 
-> - **Pec Destinatario**: la scelta di questo valore indica che si intende utilizzare la mail PEC come 
-canale di invio e tale impostazione richiede la compilazione CODICE DESTINATARIO e EMAIL 
-secondo le regole di seguito indicate:
+> - **PEC Primatelja**: odabirom ove vrijednosti označava se da se kao kanal slanja želi koristiti PEC e‑mail. Ova postavka zahtijeva popunjavanje polja KOD PRIMATELJA i EMAIL prema pravilima prikazanim u tablici:
 
-| Modalità di invio | Codice destinatario | Email | Descrizione destinatario | Data inizio | Data fine |
+| Način slanja | Kod primatelja | Email | Naziv primatelja | Datum početka odnosa | Datum završetka valjanosti kanala |
 | :-- | :-- | :-- | :-- | :-- | :--|
-| Mail PEC | 0000000 (7 zeri) | Email PEC del cliente | Ragione sociale del cliente | Data inizio rapporto | Data fine validità del canale utilizzato |
+| PEC mail | 0000000 (7 nula) | PEC e‑mail kupca | Naziv tvrtke kupca | Datum početka odnosa | Datum završetka valjanosti kanala |
       
 
-> - **Soggetto non residente/stabilito/identificato in Italia**: la scelta di questo valore identifica 
-come canale possibile il SdI al quale i documenti fattura devono essere inviati riportando 
-come codice destinatario la specifica codifica “XXXXXXX” e quindi i campi CODICE 
-DESTINATARIO ed EMAIL devono essere compilati come segue:
+> - **Nerezidentna / osnovana / identificirana osoba u Italiji**: Odabirom ove vrijednosti identificira se SdI kao mogući kanal za slanje računa. Kod primatelja treba koristiti specifičnu oznaku “XXXXXXX”, a polja KOD PRIMATELJA i EMAIL popunjavaju se kako slijedi: 
 
-| Modalità di invio | Codice destinatario | Email | Descrizione destinatario | Data inizio | Data fine |
+| Način slanja | Kod primatelja | Email | Naziv primatelja | Datum početka odnosa | Datum završetka valjanosti kanala |
 | :-- | :-- | :-- | :-- | :-- | :--|
-| Cliente non residente, non stabilito, non identificato in Italia | XXXXXXX (7 "X") | Vuoto | Ragione sociale del cliente | Data inizio rapporto | Data fine validità del canale utilizzato | 
+| Kupac nije rezident, nije utvrđen ili nije identificiran u Italiji | XXXXXXX (7 "X") | Prazno | Naziv tvrtke kupca | Datum početka odnosa | Datum završetka valjanosti kanala | 
         
 
-## Fatturazione pubblica amministrazione
+## Elektroničko fakturiranje za javnu upravu  
 
-In caso di censimento nell’anagrafica di una Pubblica Amministrazione, è necessario accedere a *Home > 
-Anagrafiche contatti*, ricercare e richiamare l’anagrafica contatto per il quale si intende impostare la 
-gestione della fatturazione elettronica e, nel pannello *Dati contabili > Informazioni fiscali*, impostare il flag 
-**Pubblica Amministrazione**. Contestualmente allla selezione del check, viene richiesta la compilazione della 
-Griglia **Pubblica Amministrazione**.
-I campi della griglia devono essere così compilati:         
-- **Codice Ufficio**: Codice dell'ufficio pubblico destinatario della fattura
-- **Nome ufficio**: Descrizione del campo codice ufficio da compilare con il nome dell'ufficio pubblico
-- **Ragione sociale**: in questo campo è possibile collegare un'anagrafica già codificata in Fluentis e riferita, ad 
-esempio, all'uffico pubblico che dipende dall'anagrafica principale che stiamo utilizzando (esempio: ufficio 
-lavori pubblici del comune di ..., oppure Azienda sanitaria ....... che dipende dall'anagrafica principale "Comune di ....") Tale anagrafica collegata dovrà essere impostata come destinazione per l'anagrafica 
-principale nel tab “consegna”, in questo modo la destinazione (esempio ufficio lavori pubblici ....) sarà 
-riportata nel tracciato del file .xml completa di codice ufficio e degli altri dati quale indirizzo ecc...
-Per la corretta gestione di più codici ufficio (e quindi più soggetti) riferiti alla stessa anagrafica principale si 
-raccomanda quindi di gestire e compilare anche questo campo (comunque non obbligatorio e non 
-necessario in caso di singolo codice ufficio direttamente legato all'anagrafica in questione).
-- **Data inizio servizio**: definisce la data di inserimento della riga o comunque la data dalla quale è attivo il 
-rapporto di fornitura con la pubblica amministrazione in questione.
-- **Data fine servizio**: definisce la data di fine del rapporto di fornitura con la pubblica amministrazione e 
-rende non più utilizzabile questa posizione per la generazione del file telematico per la fattura elettronica.
+U slučaju evidentiranja u registru javne uprave, potrebno je pristupiti *Početna stranica > 
+Evidencija kontakata* pronaći i otvoriti kontakt za kojeg se želi postaviti upravljanje elektroničkim fakturama. U panelu *Financijski podaci > Porezne informacije*, potrebno je označiti opciju **Javna uprava**. Odmah nakon označavanja ove opcije, potrebno je popuniti tablicu **Javna uprava**. Polja u tablici treba popuniti na sljedeći način:    
+- **Kod ureda**: Šifra javnog ureda koji prima računa
+- **Naziv ureda**: Opis polja „Kod ureda“, tj. naziv javnog ureda
+- **Naziv tvrtke / institucije**: Ovdje se može povezati već registrirani kontakt u sustavu Fluentis koji se odnosi, primjerice, na podređeni ured glavne evidencije koju koristimo (npr. ured za javne radove u općini … ili zdravstvena ustanova … koja ovisi o glavnoj evidenciji „Općina …“). Taj povezani kontakt treba postaviti kao destinaciju za glavnu evidenciju u tabu “consegna” (dostava), tako da destinacija (npr. ured za javne radove …) bude uključena u XML datoteku s kompletnim kodom ureda i ostalim podacima poput adrese.
+Za ispravno upravljanje višestrukim kodovima ureda (tj. više subjekata) vezanim za istu glavnu evidenciju preporuča se popuniti ovo polje. Ovo polje nije obavezno ako postoji samo jedan kod ureda izravno vezan uz glavnu evidenciju.  
+- **Datum početka usluge**: Određuje datum unosa reda ili datum od kojeg je aktivan odnos pružanja usluge s javnom upravom.
+- **Datum završetka usluge**: Određuje datum završetka odnosa pružanja usluge s javnom upravom i onemogućava korištenje ovog unosa za generiranje elektroničkog računa.

@@ -1,188 +1,157 @@
 ---
-title: Gestione del ciclo passivo
+title: Upravljanje pasivnim ciklusom
 sidebar_position: 7
 ---
 
-NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS         
+NIJE DOSTUPNO ZA KORISNIKE KOJI NISU POTPISALI UGOVOR ZA FE S FLUENTISOM     
 
-In Fluentis è possibile, una volta configurato il servizio Fluentis Business Hub, importare le fatture passive provenienti dai fornitori e che transitano dal Sistema di Interscambio. Al momento la modalità di acquisizione 
-di seguito descritta è riferita a fatture di fornitori soggetti identificati/residenti nel territorio dello stato per i quali le fatture transitano dal Sistema di Interscambio. Per la comunicazione al SdI delle fatture di acquisto 
-di fornitori esteri, si rimanda al paragrafo Invio al SdI fatture di acquisto/vendita fornitori/clienti esteri (soggetti NON identificati/residenti nel territorio dello stato).           
+U Fluentisu je moguće, nakon konfiguracije usluge Fluentis Business Hub, uvesti pasivne račune koji dolaze od dobavljača i prolaze kroz Sustav razmjene. Trenutno opisani način preuzimanja odnosi se na račune dobavljača koji su identificirani/rezidentni na teritoriju države za koje računi prolaze kroz Sustav razmjene. Za komunikaciju sa SdI o računima nabave od stranih dobavljača, upućujemo na odlomak Slanje SdI računa nabave/prodaje stranih dobavljača/klijenata (subjekti koji NISU identificirani/rezidentni na teritoriju države).
 
-Per ricevere le fatture, è necessario comunicare il proprio codice destinatario ai fornitori, codice fornito da 
-Fluentis successivamente all’attivazione del servizio Fluentis Business Hub, al fine di consentire al cedente di compilare correttamente i file XML dei documenti.          
+Kako biste primili račune, potrebno je dostaviti svoj kod primatelja dobavljačima, kod koji Fluentis pruža nakon aktivacije usluge Fluentis Business Hub, kako bi se omogućilo izdavatelju da ispravno popuni XML datoteke dokumenata.
 
-La configurazione di Fluentis prevede l’impostazione delle medesime informazioni richieste per la gestione del ciclo attivo, come dettagliate nel capitolo Configurazione connessione a Fluentis Business Hub.Una volta impostata la comunicazione con il servizio Fluentis Business Hub, le fatture del ciclo passivo 
-verranno inviate al servizio sottoscritto e, tramite BizLink, i file XML di fattura e i relativi allegati verranno acquisiti in Fluentis. La registrazione contabile o la registrazione del documento di acquisto nel flusso passivo è a carico dell’utente che, una volta individuato il file elettronico XML corrispondente, lo potrà abbinare alla registrazione o al documento generato.           
+Konfiguracija Fluentisa predviđa postavljanje istih informacija koje su potrebne za upravljanje aktivnim ciklusom, kako je detaljno opisano u poglavlju Konfiguracija veze s Fluentis Business Hub. Nakon što se postavi komunikacija s uslugom Fluentis Business Hub, računi pasivnog ciklusa bit će poslani na ugovorenu uslugu, a putem BizLink-a, XML datoteke računa i pripadajući dodaci bit će preuzeti u Fluentis. Knjigovodstveno evidentiranje ili evidentiranje dokumenta nabave u pasivnom toku odgovornost je korisnika koji, nakon što pronađe odgovarajuću elektroničku XML datoteku, može je povezati s evidencijom ili generiranim dokumentom.
 
-L’utente, una volta ricercati e visionati i documenti importati dal processo di BizLink, può selezionare un documento alla volta e abbinarlo alla registrazione contabile/documento di acquisto/documento compenso presenti in Fluentis.              
+Korisnik, nakon što pretraži i pregleda dokumente uvezene iz BizLink procesa, može odabrati jedan dokument odjednom i povezati ga s knjigovodstvenom evidencijom/dokumentom nabave/dokumentom kompenzacije prisutnim u Fluentisu.
 
-## Flusso operativo dei documenti di acquisto
+## Operativni tok dokumenata kupnje
 
-Il documento di acquisto in formato elettronico, una volta importato in Fluentis assume lo stato di NON ASSEGNATO e può solo subire il passaggio allo stato RICEVUTO, coneguentemente all’abbinamento all’elemento contabile corrispondente, oppure tornare allo stato NON ASSEGNATO:
-Per approfondimenti in merito al significato di ogni singolo stato, si rimanda ai paragrafi relativi alla gestione dei vari STATI DEI DOCUMENTI.
+Dokument kupnje u elektroničkom formatu, nakon što se uveze u Fluentis, dobiva status NE DODIJELJENO i može promijeniti status u PRIMLJENO nakon što se poveže s odgovarajućim knjigovodstvenim elementom, ili se može vratiti na status NE DODIJELJENO.
+Za detaljno objašnjenje svakog statusa, vidi poglavlja o upravljanju statusima dokumenata.
 
-## Modificare e gestire gli stati dei documenti
+## Izmjena i upravljanje statusima dokumenata
 
-Per modificare e gestire il documento di acquisto è necessario utilizzare la funzione Documenti acquisto in entrata dell’application Bizlink – Documenti SdI.       
+Za izmjenu i upravljanje dokumentom kupnje koristi se funkcija Dokumenti kupnje u ulazu u aplikaciji BizLink – Documenti SdI.       
 
-Al momento dell’accesso alla funzione si apre la videata *Documenti Acquisto in entrata* suddivisa in una sezione di testata con i campi di filtro per la ricerca dei documenti e una griglia di risultato. Nel ribbon menu:
-- il pulsante *Apri documento* è abilitato solo se il documento selezionato è nello stato RICEVUTA e apre la registrazione contabile/documento di acquisto/fattura compenso a cui il file XML risulta abbinato
-- il pulsante *Visualizza* consente di visionare il file XML selezionato con l’apertura del Registro documenti SdI
-- il pulsante *Scarica allegato* esegue il download del file selezionato nel pannello Allegati su una cartella di filesystem prescelta.         
+Prilikom pristupa funkciji otvara se ekran *Dokumenti nabave* podijeljen u sekciju zaglavlja s filtriranim poljima za pretraživanje dokumenata i mrežu rezultata. U traci izbornika:  
+- tipka *Otvorite dokument* je omogućen samo ako je odabrani dokument u stanju PRIMLJENO i otvara računovodstvenu registraciju/dokument nabave/fakturu naknade kojoj je XML datoteka povezana;  
+- tipka *Prikaži* omogućuje pregled odabrane XML datoteke otvaranjem Registra dokumenata SdI;  
+- tipka *Preuzmi privitak* izvršava preuzimanje odabrane datoteke u panelu Privici u odabranu mapu datotečnog sustava.
 
-Nella sezione superiore della videata sono presenti i campi di filtro che permettono di filtrare la griglia dei risultati visualizzati nella griglia sottostante con alcune informazioni di dettaglio:
-- *Stato Sdi*: lo stato del documento una volta acquisito in Fluentis:
-> - *Non assegnato*: la fattura non è stata ancora abbinata ad una registrazione contabile o ad una fattura emessa dal ciclo passivo o documento emesso nei confronti di un percipiente
-> - *Ricevuta*: la fattura è stata abbinata
-- *Tipo*: il codice di riferimento del tipo documento di vendita
-- *Data doc. def.*, Numero doc. def: data e numero del documento acquisito
-- *Fornitore*: l’emittente del documento
-- *Nome file SdI*: il nome del file il nome del file XML che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all’apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI (per dettagli sulla compilazione del nome del file v. Paragrafo Nome del file).
-- *Data ultimo evento*: si riferisce all’ultima azione compiuta dall’operatore o all’ultima notifica ricevuta dal SdI durante il processo di gestione del documento.         
+U gornjem dijelu prikaza nalaze se polja za filtriranje koja omogućuju filtriranje mreže rezultata prikazanih u donjoj mreži s nekim detaljnim informacijama:  
+- *Stanje Sdi*: stanje dokumenta nakon što je preuzeto u Fluentis:  
+> - *Nije dodijeljeno*: račun još nije povezan s računovodstvenom evidencijom ili s računom iz pasivnog ciklusa ili dokumentom izdanom prema korisniku;  
+> - *Primljeno*: račun je povezan;  
+- *Tip*: referentni kod tipa dokumenta prodaje;  
+- *Datum doc. def.*, *Broj doc. def.*: datum i broj preuzetog dokumenta;  
+- *Dobavljač*: izdavatelj dokumenta;  
+- *Naziv datoteke SdI*: naziv XML datoteke koja se stvara u trenutku kada se dokument pomakne u stanje GENERIRANO; u izvornom formatu ili nakon stavljanja digitalnog potpisa, predstavlja datoteku računa koja se šalje SdI (za detalje o sastavljanju naziva datoteke vidi odjeljak *Naziv datoteke*).  
+- *Datum posljednjeg događaja*: odnosi se na posljednju radnju koju je izvršio operater ili na posljednju obavijest primljenu od SdI tijekom procesa upravljanja dokumentom.
 
-I documenti importati possono essere abbinati ad elementi contabili presenti in Fluentis operando dalle funzioni:
-1) Documenti acquisto in entrata dell’ application Bizlink – Documenti SdI
-2) dalla registrazione contabile del documento di acquisto
-3) dalla form di gestione del documento di acquisto
-4) dalla form di gestione del compenso         
+Uvezeni dokumenti mogu se povezati s računovodstvenim stavkama prisutnim u Fluentis putem sljedećih funkcija:  
+1) Dokumenti nabave u aplikaciji Bizlink – Dokumenti SdI  
+2) putem računovodstvene registracije dokumenta nabave  
+3) putem obrasca za upravljanje dokumentom nabave  
+4) putem obrasca za upravljanje naknadom  
 
-Analizziamo di seguito queste quattro modalità.           
+Analizirajmo u nastavku ova četiri načina.         
 
-1) **Abbinare il documento XML dalla funzione di importazione**        
+1) **Povezivanje XML dokumenta putem funkcije uvoza**        
 
-Con la funzione *Documenti acquisto in entrata* dell’applicazione Bizlink – Documenti SdI è possibile abbinare il documento XML ad una registrazione contabile/documento di acquisto/ compenso 
-partendo dal documento importato in Fluentis.              
-Dopo aver eseguito la ricerca ed aver individuato il file da abbinare, è possibile selezionare il file dalla griglia del Registro documenti SdI con l’azione doppio click sulla riga del documento oppure con il pulsante VISUALIZZA nel ribbon menu. Si apre il Registro documenti SdI con il dettaglio del file 
-acquisito e da questa videata è possibile:
-- *Abbinare il file a un documento di acquisto* registrato nella sezione Acquisti di Fluentis, 
-con la funzione *Collega agli acquisti*.            
-- *Abbinare il documento a una registrazione contabile esistente*; tramite la funzione *Collega alle *registrazioni* è possibile selezionare la registrazione contabile corrispondente al documento, selezionandola nell’elenco delle 
-registrazioni contabili.
-- *Abbinare il documento a un compenso prefessionale*; selezionando l’azione *Collega ai percipienti* del ribbon menu è possibile selezionare il documento relativo al compenso corrispondente al file XML imporato, selezionandolo nell’elenco dei compensi presenti in Fluentis.           
+S funkcijom *Dokumenti nabave u dolasku* aplikacije Bizlink – Dokumenti SdI moguće je povezati XML dokument s računovodstvenim zapisom/dokumentom nabave/ naknadom počevši od dokumenta uvezenog u Fluentis.  
+Nakon što se izvrši pretraživanje i identificira datoteka koju treba povezati, moguće je odabrati datoteku iz mreže Registra dokumenata SdI dvostrukim klikom na redak dokumenta ili pomoću gumba **PRIKAŽI** u izborniku trake. Otvara se Registar dokumenata SdI s detaljima o preuzetoj datoteci i iz ovog prikaza moguće je:  
+- *Povezati datoteku s dokumentom nabave* registriranim u odjeljku Nabave u Fluentisu, koristeći funkciju *Poveži s nabavom*.  
+- *Povezati dokument s postojećim računovodstvenim zapisom*; putem funkcije *Poveži s *zapisima* moguće je odabrati odgovarajući računovodstveni zapis za dokument, odabirući ga s popisa računovodstvenih zapisa.  
+- *Povezati dokument s profesionalnom naknadom*; odabirom radnje *Poveži s primateljima* u izborniku trake moguće je odabrati dokument koji se odnosi na naknadu povezanu s uvezenom XML datotekom, odabirući ga s popisa naknada prisutnih u Fluentisu.  
 
-Al termine dell’abbinamento eseguito da una delle funzioni sopra descritte, il documento viene contrassegnato con lo stato Ricevuta, in corrispondenza della Transizione Documento ricevuto viene indicata data e ora dell’abbinamento. Il documento potrà anche essere modificato nuovamente nello stato Non assegnato nel caso si renda necessario tornare nello stato precedente.
+Na kraju povezivanja izvršenog jednom od gore opisanih funkcija, dokument se označava statusom **Primljeno**, a uz **Transiciju Primljeni dokument** označava se datum i vrijeme povezivanja. Dokument se također može ponovno izmijeniti u status **Nepovezano** u slučaju da je potrebno vratiti se u prethodno stanje.
 
-2) **Abbinare il documento XML dalla registrazione contabile di acquisto**
+2) **Povezivanje XML dokumenta iz knjigovodstvene registracije kupnje**
 
-Per abbinare una registrazione contabile ad un file XML acquisito in Fluentis, è necessario accedere alla registrazione contabile dal menu Amministrazione – Registrazioni – Registrazione e ricercare la registrazione contabile da gestire. Nella form Ricerca registrazioni contabili sono state aggiunte alcune 
-colonne di gestione dell’informazione relativa al file:
-- *Stato SdI*: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI ( vedi paragrarafo STATI DEI DOCUMENTI).
-- *Nome file SdI*: il nome del file che viene creato nel momento in cui il documento viene avanzato nello 
-stato GENERATA; nel formato originale o successivamente all’apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI (Nome del file). 
-- *Sdi Id*: l’identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
-- *Data ricezione Sdi*: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file 
-- *Data chiusura*: la data di chiusura del flusso di gestione (es. documento Cosegnato)
-- *Data ultimo evento*: la data dell’ultimo cambio stato avvenuto sul file o manualmente o per effetto dell’avanzamento dell’elaborazione sul SdI       
+Da bi se povezao računovodstveni zapis s XML datotekom preuzetom u Fluentisu, potrebno je pristupiti računovodstvenom zapisu iz izbornika **Administracija** – **Zapisnici** – **Računovodstveni zapis** i potražiti računovodstveni zapis koji se želi upravljati. U obrascu **Pretraživanje računovodstvenih zapisa** dodane su neke kolone za upravljanje informacijama vezanim uz datoteku:  
+- *Stanje SdI*: sadrži opis stanja dokumenta, prikazujući kako interno stanje upravljanja u Fluentisu, tako i stanje prikazano od Fluentis Business Huba i izravno preuzeto iz SdI (vidi odjeljak **STANJA DOKUMENATA**).  
+- *Naziv datoteke SdI*: naziv datoteke koja se stvara u trenutku kada dokument pređe u stanje **GENERIRANA**; u originalnom formatu ili nakon stavljanja digitalnog potpisa, predstavlja datoteku računa koja se šalje SdI (Naziv datoteke).  
+- *Sdi Id*: jedinstveni identifikator koji SdI dodjeljuje dokumentu u trenutku prijema.  
+- *Datum prijema Sdi*: datum kada je sustav razmjene preuzeo dokument koji mu je poslan. Ova informacija se dobiva iz obavijesti o prijemu koju SdI izdaje nakon primanja pošiljke i prije nego što se nastavi s formalnim provjerama datoteke.  
+- *Datum zatvaranja*: datum zatvaranja toka upravljanja (npr. dokument **Isporčen**).  
+- *Datum posljednjeg događaja*: datum posljednje promjene stanja koja se dogodila na datoteci, bilo ručno ili kao rezultat napredovanja obrade na SdI.  
 
-Selezionando la registrazione contabile da abbinare e modificando lo stato della fatturazione elettronica in RICEVUTA, si apre l’elenco dei file acquisiti da SDI ancora da abbinare e sarà sufficiente selezionare uno dei file proposti per creare il corretto abbinamento. Dalla medesima videata, accedendo al “Registro documenti Sdi” è possibile prendere visione delle 
-azioni svolte sul documento, con la funzione ”Stampa” stampare il documento XML abbinato, con le funzioni ”Scarica allegato” o “Scarica il contenuto del registro” eseguire il download del file XML selezionato nel pannello “Allegati” o nel pannello “Registro dei documenti SdI”.      
+Odabirom računovodstvenog zapisa koji se želi povezati i mijenjanjem stanja elektroničkog računa u **PRIMLJENO**, otvara se popis datoteka preuzetih iz SDI koje još nisu povezane, a dovoljno je odabrati jednu od predloženih datoteka kako bi se stvorila ispravna povezanost. Iz istog prozora, pristupom **Registaru dokumenata Sdi**, moguće je pregledati radnje izvršene na dokumentu, s funkcijom **"Ispis"** za ispis povezane XML datoteke, te s funkcijama **"Preuzmi prilog"** ili **"Preuzmi sadržaj registra"** izvršiti preuzimanje odabrane XML datoteke u panelu **"Prilozi"** ili u panelu **"Registar dokumenata SdI"**.   
 
-3) **Abbinare il file XML dalla gestione documenti di acquisto Acquisti – Fatture di acquisto – Fatture di acquisto**        
+3) **Povezati XML datoteku iz upravljanja dokumentima nabave Nabave – Računi za nabavu – Računi za nabavu**        
 
-Per abbinare il file XML ad un documento di acquisto è necessario accedere alla funzione Acquisti – Fatture di acquisto, ricercare i file da abbinare nella griglia di gestione utilizzando eventualmente anche i nuovi filtri relativi alla Fatturazione elettronica e prendere visione dello stato del documento nelle colonne predisposte 
-alla gestione dei file nel SdI. Selezionando un documento nello stato NON ASSEGNATO da abbinare al file XML e modificando dal ribbon 
-menu lo stato in RICEVUTA, si apre il dialogo di selezione dei file di acquisto importati e tra i quali è necessario selezionare il file da abbinare.
-Lo stato del documento viene così modificato in RICEVUTA, con la possibilità comunque di ripristinare lo stato precedente, agendo sempre dal ribbon menu. Dalla medesima videata, accedendo 
-al Registro documenti Sdi è possibile prendere visione delle azioni svolte sul documento, con la funzione Stampa stampare il documento XML abbinato, con le funzioni Scarica allegato o 
-Scarica il contenuto del registro eseguire il download del file XML selezionato rispettivamente nel pannello “Allegati” o nel pannello “Registro dei documenti SdI”.          
-L’abbinamento del file XML ricevuto alla fattura di acquisto è possibile anche accedendo direttamente al 
-documento di acquisto e selezionando il file XML da abbinare tra quelli proposti dalla funzione di cambio stato Ricevuta del ribbon menu.          
+Da biste povezali XML datoteku s dokumentom o kupnji, potrebno je pristupiti funkciji Nabava – Računi dobavljača, pretražiti datoteke koje treba povezati u mreži za upravljanje koristeći po potrebi i nove filtre povezane s Elektroničkim fakturiranjem te pregledati status dokumenta u stupcima predviđenima za upravljanje datotekama u SdI sustavu. Odabirom dokumenta u statusu NIJE DODIJELJEN za povezivanje s XML datotekom i promjenom statusa u PRIMLJENO putem izbornika vrpce, otvara se dijalog za odabir uvezenih datoteka o kupnji među kojima je potrebno odabrati datoteku za povezivanje. Status dokumenta se tako mijenja u PRIMLJENO, uz mogućnost vraćanja na prethodni status, također putem izbornika vrpce. Na istom zaslonu, pristupom Registru SdI dokumenata moguće je pregledati radnje provedene na dokumentu, funkcijom Ispis ispisati povezanu XML datoteku, a funkcijama Preuzmi privitak ili Preuzmi sadržaj registra preuzeti odabranu XML datoteku, odnosno iz panela “Privitci” ili “Registar SdI dokumenata”. Povezivanje primljene XML datoteke s računom o kupnji moguće je također izravnim pristupom dokumentu o kupnji i odabirom XML datoteke za povezivanje među onima koje nudi funkcija promjene statusa Primljeno u traci izbornika. 
 
-4) **Abbinare il documento XML dalla funzione di gestione compensi Amministrazione – Compensi – Compensi**        
+4) **Uparite XML dokument iz funkcije upravljanja naknadama Administracija – Naknade – Naknade**
 
-Il file XML di acquisto importato potrebbe riferirsi a documenti emessi da professionisti e registrati in Fluentis nella gestione compensi. Per abbinare il file alla registrazione esistente è necessario accedere al menu Amministrazione – Compensi – Compensi, ricercare il documento da abbinare nella griglia di gestione 
-utilizzando eventualmente anche i nuovi filtri relativi alla Fatturazione elettronica e prendere visione dello stato del documento nelle colonne predisposte alla gestione dei file nel SdI. 
+Uvezeni XML datoteka o kupnji može se odnositi na dokumente koje su izdali profesionalci i registrirani u Fluentis-u u upravljanju naknadama. Da biste uparili datoteku s postojećom registracijom, potrebno je pristupiti izborniku Administracija – Naknade – Naknade, potražiti dokument koji treba upariti u mreži upravljanja koristeći eventualno i nove filtre vezane uz elektroničko fakturiranje i pregledati stanje dokumenta u stupcima predviđenim za upravljanje datotekama u SdI.
 
-## Invio al SdI fatture di acquisto/vendita fornitori/clienti esteri (soggetti non identificati/residenti nel territorio dello stato)
+## Slanje faktura o kupnji/prodaji stranih dobavljača/klijenata (subjekti koji nisu identificirani/rezidenti na teritoriju države)
 
-La normativa attuale relativa alle comunicazioni da inviare all’Agenzia delle Entrate prevede che i soggetti passivi ai fini IVA comunichino anche i dati relativi alle operazioni di cessione beni/prestazioni servizi EFFETTUATE e RICEVUTE da soggetti NON identificati/non residenti nel territorio dello Stato. Se per i 
-documenti EMESSI è possibile utilizzare il medesimo tracciato previsto per le fatture elettroniche italiane, per l’invio al Sdi dei documenti di acquisto di fornitori esteri è previsto un tracciato apposito. La firma per entrambe le tipologie di file è obbligatoria.        
+Trenutna regulativa vezana uz komunikacije koje treba poslati Poreznoj upravi predviđa da obveznici PDV-a također moraju prijaviti podatke o operacijama prodaje dobara/usluga koje su OBAVLJENE i PRIMLJENE od subjekata koji nisu identificirani/nisu rezidenti na teritoriju države. Ako za EMITIRANE dokumente možete koristiti istu strukturu predviđenu za talijanske elektroničke fakture, za slanje dokumenata o kupnji stranih dobavljača predviđena je posebna struktura. Potpis za obje vrste datoteka je obavezan.
 
-L’invio al SdI di questi file viene gestito in Fluentis attraverso le operazioni di cambio stato dei documenti registrati; il file XML generato a fronte della registrazione dell’operazione di acquisto o di vendita, assume lo stato di NON ESAMINATA e successivamente può subire le medesime trasformazioni di stato previste per i file XML trasmessi al SdI per i documenti di vendita (vedi paragrafo STATI DEI DOCUMENTI). Il documento XML viene quindi trasmesso al SdI che lo controlla e lo acquisice e restituisce le notifiche relative all’eventuale scarto dovuto alla mancata conformità del file oppure dell’avvenuta consegna.            
+Slanje ovih datoteka u SdI upravlja se u Fluentis-u putem operacija promjene stanja registriranih dokumenata; generirana XML datoteka kao rezultat registracije operacije kupnje ili prodaje, dobiva status NEISPITANO i kasnije može proći iste promjene stanja predviđene za XML datoteke poslane u SdI za dokumente prodaje (vidi odlomak STANJA DOKUMENATA). XML dokument se zatim šalje u SdI koji ga provjerava i preuzima te vraća obavijesti o eventualnom odbijanju zbog neusklađenosti datoteke ili o uspješnom isporuci.
 
-Per i documenti di vendita destinati a clienti non residenti/non stabiliti, il flusso elettronico di invio al SdI non potrà mai generare la mancata consegna per errata identificazione del destinatario perchè lo scopo di tale invio è unicamente la comunicazione all’Agenzia delle Entrate del rapporto intercorso con il cliente 
-estero e non è compito dello SdI il recapito al destinatario: i documenti emessi e destinati a clienti esteri dovranno essere recapitati nella consueta modalità l’invio. L’invio di tali documenti al SdI deve essere effettuato entro l’ultimo giorno del mese successivo alla data di emissione del documento.Per questo motivo, il flusso degli stati relativi a questi file sarà il medesimo, sia che si tratti di XMl di fatture di vendita che di fatture di acquisto.                
+Za dokumente prodaje namijenjene klijentima koji nisu rezidenti/nisu uspostavljeni, elektronički tok slanja u SdI nikada ne može generirati neuspješnu isporuku zbog pogrešne identifikacije primatelja jer je svrha tog slanja isključivo obavijestiti Poreznu upravu o odnosu s inozemnim klijentom i nije zadatak SdI dostaviti primatelju: dokumenti izdani i namijenjeni stranim klijentima moraju se dostaviti na uobičajen način. Slanje takvih dokumenata u SdI mora se izvršiti do posljednjeg dana sljedećeg mjeseca nakon datuma izdavanja dokumenta. Iz tog razloga, tok stanja vezanih uz ove datoteke bit će isti, bilo da se radi o XML-u faktura prodaje ili faktura kupnje.
 
-Per il dettaglio relativo ai singoli stati, si rimanda al paragrafo STATI DEI DOCUMENTI IN FLUENTIS. In Fluentis è possibile generare il file relativo alle fatture di vendita destinate a clienti UE o extra UE:        
-- dalla gestione del ciclo attivo come descritto nel paragrafo Gestione del ciclo attivo (soggetti identificati/residenti nel territorio dello stato e Pubblica Amministrazione), demandando la creazione del file XML alle impostazioni anagrafiche relative alla fatturazione elettronica e gestendo la creazione e l’invio del file XML come una fattura di vendita destinata ad un cliente italiano. Il flusso di invio, gestito dalla sezione Fatturazione elettronica, riconoscerà in automatico il documento di vendita destinato ad un soggetto estero e richiederà pertanto l’apposizione obbligatoria della firma
-- dalla funzione Fatturazione elettronica con soggetti non residenti di seguito descritta, che reperisce le fatture attive dalle registrazioni contabili inserite e non riferite a fatture elettroniche già inviate al SdI dalla gestione del ciclo attivo.          
+Za detalje vezane uz pojedinačna stanja, upućujemo na odlomak STANJA DOKUMENATA U FLUENTIS-u. U Fluentis-u je moguće generirati datoteku vezanu uz fakture prodaje namijenjene klijentima iz EU ili izvan EU:  
+- iz upravljanja aktivnim ciklusom kao što je opisano u odlomku Upravljanje aktivnim ciklusom (sukobi identificirani/rezidenti na teritoriju države i javna uprava), prepuštajući kreiranje XML datoteke postavkama anagrafske evidencije vezanim uz elektroničko fakturiranje i upravljajući kreiranjem i slanjem XML datoteke kao fakture prodaje namijenjene talijanskom klijentu. Tok slanja, upravljan odjeljkom Elektroničko fakturiranje, automatski će prepoznati dokument prodaje namijenjen inozemnom subjektu i stoga će zahtijevati obavezno stavljanje potpisa.  
+- iz funkcije Elektroničko fakturiranje s subjektima koji nisu rezidenti, koja preuzima aktivne fakture iz unesenih računovodstvenih registracija i koje se ne odnose na elektroničke fakture već poslane u SdI iz upravljanja aktivnim ciklusom.
 
-Per la corretta gestione dei documenti di vendita, in entrambi i casi la dovrà essere configurata l’anagrafica
-cliente impostando il campo TIPO CODICE con la scelta “Canale Sdi” e nel campo CODICE DESTINATARIO la sequenza di 7 volte il carattere “X” (“XXXXXXX”).             
-Per i dettagli della specifica anagrafica, riferirsi al paragrafo Impostazione Anagrafiche contatti.              
-I file relativo alle fatture di acquisto da soggetti esteri è possibile funzione Fatturazione elettronica con 
-soggetti non residenti di seguito descritta.
+Za pravilno upravljanje dokumentima prodaje, u oba slučaja potrebno je konfigurirati anagrafske podatke klijenta postavljanjem polja TIP KODA na izbor "Kanala Sdi" i u polju KOD DESTINATARA sekvencu od 7 puta znak "X" ("XXXXXXX").  
+Za detalje specifične anagrafske evidencije, pogledajte odlomak Postavke Anagrafske evidencije kontakata.  
+Datoteke vezane uz fakture o kupnji od stranih subjekata moguće je koristiti funkciju Elektroničko fakturiranje s subjektima koji nisu rezidenti koja je opisano u nastavku.
 
-## Fatturazione elettronica con soggetti non residenti
+## Elektroničko fakturiranje s neevidentiranim subjektima
 
-La funzione Amministrazione > Dichiarazioni > Fatturazione elettronica con soggetti non residenti genera i file XML relativi ai documenti di acquisto e di vendita che possono essere inoltrati all’Agenzia delle Entrate singolarmente, in sostituzione dell’adempimento dello spesometro. L’accesso alla funzione visualizza una maschera suddivisa in una sezione superiore di testata, nella quale è possibile impostare una serie di filtri da utilizzare per la visualizzazione e la gestione dei file XML da inviare.           
-La funzione, attraverso il filtro TIPO, e il filtro STATO DELLA FATTURA ELETTRONICA, ricerca gli elementi relativi agli acquisti o alle vendite per cui è possibile, dalla griglia dei risultati, gestire l’avanzamento degli stati singolarmente o massivamente per documenti a pari Stato SdI. 
-La griglia dei risultati visualizza una serie di colonne destinate al monitoriaggio e alla gestione dei file rispetto all’invio al SdI e nel dettaglio:
-- *Stato SdI*: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI (vedi paragrarafo STATI DEI DOCUMENTI).
-- *Nome file SdI*: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all’apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI (Nome del file). 
-- *Sdi Id*: l’identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
-- *Data ricezione Sdi*: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file 
-- *Data chiusura*: la data di chiusura del flusso di gestione (es. documento Cosegnato)
-- *Data ultimo evento*: la data dell’ultimo cambio stato avvenuto sul file o manualmente o per effetto dell’avanzamento dell’elaborazione sul SdI              
+Funkcija Administracija > Izjave > Elektroničko fakturiranje s neevidentiranim subjektima generira XML datoteke koje se odnose na dokumente o kupnji i prodaji, a koje se mogu pojedinačno poslati Poreznoj upravi kao zamjena za obvezu tzv. spesometra.
+Pristup funkciji prikazuje obrazac podijeljen u gornji dio zaglavlja, u kojem je moguće postaviti niz filtara za prikaz i upravljanje XML datotekama koje treba poslati.
+Funkcija, putem filtra TIP i filtra STATUS ELEKTRONIČKOG RAČUNA, pretražuje stavke koje se odnose na kupnje ili prodaje, omogućujući iz mreže rezultata upravljanje napredovanjem statusa pojedinačno ili skupno za dokumente istog SdI statusa.
+Mreža rezultata prikazuje niz stupaca namijenjenih nadzoru i upravljanju datotekama u vezi sa slanjem prema SdI sustavu, i to detaljno:
+- *Stanje SdI*: prihvaća opis stanja dokumenta, navodeći kako interno stanje upravljanja u Fluentisu, tako i stanje prikazano od Fluentis Business Huba i izravno preuzeto od SdI (vidi odlomak STANJA DOKUMENATA).  
+- *Naziv datoteke SdI*: naziv datoteke koja se stvara u trenutku kada dokument pređe u stanje GENERIRANO; u izvornom formatu ili nakon stavljanja digitalnog potpisa, predstavlja datoteku računa koja se šalje SdI (Naziv datoteke).  
+- *Sdi Id*: jedinstveni identifikator koji SdI dodjeljuje dokumentu u trenutku prijema.  
+- *Datum prijema Sdi*: datum kada je sustav razmjene primio dokument koji mu je poslan. Ova informacija se dobiva iz obavijesti o prijemu koju SdI izdaje nakon primitka pošiljke i prije nego što započne formalne provjere datoteke.  
+- *Datum zatvaranja*: datum zatvaranja tijeka upravljanja (npr. dokument Isporučeno).  
+- *Datum posljednjeg događaja*: datum posljednje promjene stanja koja se dogodila na datoteci, bilo ručno ili kao rezultat napredovanja obrade na SdI.        
 
-Nel ribbon Menu, nella sezione dedicata alla fatturazione elettronica, utilizzando la funzione *Registro documenti Sdi* è possibile prendere visione delle azioni svolte sul documento selezionato, con la funzione *Stampa* stampare il documento XML abbinato, con le funzioni *Scarica allegato* o *Scarica il contenuto del registro* eseguire il download del file XML.
+U traci izbornika, u sekciji posvećenoj elektroničkom fakturiranju, koristeći funkciju *Registar dokumenata Sdi* moguće je pregledati radnje izvršene na odabranom dokumentu, s funkcijom *Ispis* ispisati povezani XML dokument, a s funkcijama *Preuzmi privitak* ili *Preuzmi sadržaj registra* izvršiti preuzimanje XML datoteke.
 
-Con l’azione doppio click in corrispondenza di una riga di risultato della griglia, si accede al dettaglio della registrazione contabile selezionata. Anche nella registrazione contabile è possibile visionare lo stato dell’elaborazione del file rispetto all’invio al SdI.           
+Dvostrukim klikom na redak rezultata u mreži, pristupa se detaljima odabrane računovodstvene registracije. Također, u računovodstvenoj registraciji moguće je pregledati stanje obrade datoteke u odnosu na slanje SdI-u.
 
-I documenti di vendita gestiti dalla funzione Fatturazione elettronica soggettti non residenti possono essere ricercati impostando nel pannello dei filtri il check Vendite nella sezione Tipo:
-e con il pulsante Ricerca del Ribbon Menu avviare la ricerca di tutte le registrazioni contabili relative a causali di vendita legate a tipo movimento Iva vendite intra cee oppure Iva vendite extra cee o che abbiano valorizzato il campo “Conto Partner” nel pannello Parametri.             
+Dokumenti prodaje kojima upravlja funkcija Elektroničko fakturiranje za nerezidente mogu se pretraživati postavljanjem u panelu filtara oznake *Prodaje* u sekciji Tip: i s tipkom *Pretraživanje* u traci izbornika pokrenuti pretraživanje svih računovodstvenih registracija vezanih uz uzroke prodaje povezane s tipom kretanja PDV-a prodaje unutar EU ili PDV-a prodaje izvan EU ili koje su popunile polje “Račun partner” u panelu Parametri.
 
-I documenti di acquisto gestiti dalla funzione Fatturazione elettronica soggettti non residenti possono essere ricercati impostando nel pannello dei filtri il check Acquisti nella sezione Tipo:
-e con il pulsante Ricerca del Ribbon Menu avviare la ricerca di tutte le registrazioni contabili relative a causali di vendita.            
-Il documento di acquisto di un fornitore estero deve essere acquisito e registrato in contabilità utilizzando le causali contabili che:
-- sono collegate al Tipo Movimento IVA ACQUISTI INTRA CEE oppure 
-- sono collegate al Tipo Movimento Iva Acquisti Extra cee oppure
-- hanno valorizzato nel pannello Parametri il campo Conto Partner               
+Dokumenti nabave upravljani funkcijom Elektroničko fakturiranje za nerezidente mogu se pretraživati postavljanjem u panelu filtara oznake za Nabave u odjeljku Tip: i s tipkom Pretraživanje u traci izbornika započeti pretraživanje svih računovodstvenih evidencija vezanih uz uzroke prodaje.  
+Dokument nabave od stranog dobavljača mora se prikupiti i registrirati u računovodstvu koristeći računovodstvene uzroke koji:  
+- su povezani s Tipom Kretanja PDV-a NABAVE UNUTAR EU ili  
+- su povezani s Tipom Kretanja PDV-a NABAVE IZVAN EU ili  
+- su označili u panelu Parametri polje Račun Partner.   
 
-Al termine della ricerca, si popola la grigia dei risultati dalla quale è possibile, utilizzando la funzione di cambio stato nella sezione della fatturazione elettronica, procedere con l’avanzamento MANUALE degli stati fino allo stato previsto “Da spedire” che prevede l’inserimento del file nella coda di spedizione al servizio Fluentis Business Hub.
+Na kraju pretrage, populira se mreža rezultata iz koje je moguće, koristeći funkciju promjene stanja u sekciji elektroničkog fakturiranja, nastaviti s RUČNIM napredovanjem stanja do predviđenog stanja “Za otpremu” koje podrazumijeva unos datoteke u red za otpremu na uslugu Fluentis Business Hub.
 
-Qualora non sia configurato nell’impianto il servizio Fluentis Business Hub, sarà possibile accedere alla 
-funzione funzione *Registro documenti Sdi* e scaricare il file XML generato da utilizzare esternamente a Fluentis.               
+Ako usluga Fluentis Business Hub nije konfigurirana u sustavu, bit će moguće pristupiti funkciji *Registar dokumenata Sdi* i preuzeti generiranu XML datoteku koja se koristi izvan Fluentis-a.
 
-Il file XML creato durante la gestione degli stati da parte dell’operatore dovrà essere firmato, pertanto, se attivo il servizio Fluentis Business Hub, una copia del file sarà creata nella cartella indicata nelle impostazioni relative alla Configurazione connessione a Fluentis Business Hub, dove è necessario indicare 
-una cartella di appoggio per depositare i file XML da firmare e recuperare successivamente i file firmati.                
+XML datoteka koja se kreira tijekom upravljanja stanjima od strane operatera mora biti potpisana, stoga, ako je usluga Fluentis Business Hub aktivna, kopija datoteke bit će stvorena u mapi navedeno u postavkama vezanim uz Konfiguraciju veze s Fluentis Business Hub, gdje je potrebno navesti mapu za pohranu za spremanje XML datoteka koje treba potpisati i kasnije preuzeti potpisane datoteke.         
 
-Al terminine dell’invio al SdI, il file potrà assumere due stati:
-- *Non conforme*: il file contiene segnalazioni per cui non può essere accettato dal SdI. In questi casi è necessario accedere al Registro documenti Sdi, nel pannello Registro documenti SdI 
-visualizzare la motivazione di non conformità, correggere l’eventuale anomalia e inviare nuovamente il file rigenerato.
-- *Consegnata*: il file è stato correttamente inviato ed acquisito dal SdI. In questo caso sarà possibile prendere visione dell’esito della consegna accedendo al pannello pannello Registro 
-documenti SdI della funzione Registro documenti Sdi per il file selezionato.               
+Na kraju slanja datoteke SdI, datoteka može imati dva stanja:  
+- *Neusklađena*: datoteka sadrži obavijesti zbog kojih je ne može prihvatiti SdI. U tim slučajevima potrebno je pristupiti Registru dokumenata SdI, u panelu Registri dokumenata SdI, pregledati razlog neusklađenosti, ispraviti eventualnu anomaliju i ponovno poslati regeneriranu datoteku.  
+- *Isporučeno*: datoteka je ispravno poslana i preuzeta od strane SdI. U ovom slučaju bit će moguće pregledati ishod isporuke pristupom panelu Registri dokumenata SdI za odabranu datoteku.  
 
-I documenti in uscita possono essere gestiti anche dalla Documenti esteri in uscita accessibile dalle Applications > BizLink >Documenti SdI. In questa funzione e’ possibile monitorare e modificare lo stato relativo alle registrazioni contabili di acquisto/vendita per i soggetti esteri.           
+Izlazni dokumenti mogu se upravljati i putem *Dokumenata stranih izlaza* dostupnih u *Aplikacije > BizLink > Dokumenti SdI*. U ovoj funkciji moguće je pratiti i mijenjati stanje vezano uz računovodstvene evidencije kupnje/prodaje za strane subjekte.  
 
-Nella Form Documenti acquisti esteri in uscita vengono visualizzati tutti i file prodotti dalle Registrazioni contabili e relativi a questa tipologia di accadimento. La form è suddivisa in una 
-sezione superiore nella quale vengono esposti i filtri di selezione dei file gestiti, tra i quali:
-- Da data/ A data di ricevimento
-- Da data/A data di ricezione cliente           
+U obrascu *Dokumenti kupnje stranih izlaza* prikazuju se sve datoteke proizvedene iz računovodstvenih evidencija i vezane uz ovu vrstu događaja. Obrazac je podijeljen u gornji dio u kojem su prikazani filtri za odabir upravljanih datoteka, među kojima:  
+- Od datuma/ Do datuma primitka  
+- Od datuma/ Do datuma primitka kupca  
 
-Nella griglia dei risultati vengono visualizzati i dati relativi ai file gestiti o da gestire:           
-- *Stato SdI*: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI (vedi paragrarafo STATI DEI DOCUMENTI).
-- *Nome file SdI*: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all’apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI (Nome del file). 
-- *Sdi Id*: l’identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
-- *Data ultimo evento*: la data dell’ultimo cambio stato avvenuto sul file o manualmente o per effetto dell’avanzamento dell’elaborazione sul SdI             
+U mreži rezultata prikazuju se podaci vezani uz upravljane ili za upravljanje datoteke:  
+- *Stanje SdI*: sadrži opis stanja dokumenta, prikazujući kako interno stanje upravljanja u Fluentisu, tako i stanje prikazano od Fluentis Business Huba i preuzeto izravno od SdI (vidi odlomak *STANJA DOKUMENATA*).  
+- *Ime datoteke SdI*: ime datoteke koja se stvara u trenutku kada se dokument pomiče u stanje GENERIRANO; u izvornom formatu ili nakon stavljanja digitalnog potpisa, predstavlja datoteku računa koja se šalje SdI (Ime datoteke).  
+- *Sdi Id*: jedinstveni identifikator koji SdI dodjeljuje dokumentu u trenutku prijema  
+- *Datum posljednjeg događaja*: datum posljednje promjene stanja koja se dogodila na datoteci, bilo ručno ili kao rezultat napredovanja obrade na SdI  
 
-Nel ribbon menu sono presentate le funzioni di gestione del documento o dei documenti selezionati:
-- il pulsante Visualizza consente di visionare il Registro documenti SdI dove è possibile prendere visione degli eventi collegati al file XML generato, eseguirne lo scarico o modificarne lo stato
-- il pulsante Scarica allegato esegue il download del file selezionato su una cartella di filesystem prescelta
-- Il pulsante Apri documento apre la registrazione contabile relativa al file selezionato                
+U izborniku trake prikazane su funkcije upravljanja odabranim dokumentom ili dokumentima:  
+- tipka *Prikaži* omogućuje pregled Registru dokumenata SdI gdje je moguće pregledati događaje povezane s generiranom XML datotekom, izvršiti preuzimanje ili promijeniti stanje  
+- tipka *Preuzmi privitak* preuzima odabranu datoteku u odabranu mapu datotečnog sustava  
+- tipka *Otvorite dokument* otvara računovodstvenu evidenciju vezanu uz odabranu datoteku           
 
-## Registrazioni contabili
+## Knjigovodstveni zapisi
 
-Accedendo al punto di menu Amministrazione > Registrazioni > Registrazione, la form Ricerca registrazioni contabili visualizza, nella sezione dei filtri, un expander relativo alle possibili informazioni legate allo Stato della fattura elettronica, riferito ai documenti che hanno un’interazione con il Sistema 
-di Interscambio.              
+Pristupanjem izborniku Administracija > Registracije > Registracija, obrazac Pretraživanje računovodstvenih registracija prikazuje, u odjeljku filtara, jedan expander vezan za moguće informacije povezane sa Statusom elektroničkog računa, koji se odnosi na dokumente koji imaju interakciju sa Sustavom razmjene.            
 
-Nel ribbon Menu, nella sezione dedicata alla fatturazione elettronica, utilizzando la funzione *Registro documenti Sdi* è possibile prendere visione delle azioni svolte sul documento selezionato, con la funzione *Stampa* stampare il documento XML abbinato, con le funzioni *Scarica allegato*
-o *Scarica il contenuto del registro* eseguire il download del file XML.                
-La griglia di riepilogo risultati visualizza alcune colonne nelle quali viene riportato lo stato e l’esito dei documenti in riferimento alla trasmissione degli stessi al SdI:
-- *Stato SdI*: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI (vediparagrarafo STATI DEI DOCUMENTI).
-- *Nome file SdI*: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all’apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI (Nome del file). 
-- *Sdi Id*: l’identificativo univoco che il SdI attribuisce al documento nel momento della ricezione (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- *Data ricezione Sdi*: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- *Data chiusura*: la data di chiusura del flusso di gestione (es. documento Cosegnato) (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- *Data ultimo evento*: la data dell’ultimo cambio stato avvenuto sul file o manualmente o per effetto dell’avanzamento dell’elaborazione sul SdI
+U traci izbornika, u sekciji posvećenoj elektroničkom fakturiranju, koristeći funkciju *Registar dokumenata Sdi* moguće je pregledati radnje izvršene na odabranom dokumentu, s funkcijom *Ispis* ispisati povezani XML dokument, a s funkcijama *Preuzmi privitak* ili *Preuzmi sadržaj registra* izvršiti preuzimanje XML datoteke.  
+Mreža sažetka rezultata prikazuje nekoliko kolona u kojima se navodi stanje i ishod dokumenata u vezi s njihovim slanjem na SdI:  
+- *Stanje SdI*: sadrži opis stanja dokumenta, navodeći kako interno stanje upravljanja u Fluentisu, tako i stanje koje navodi Fluentis Business Hub i koje se izravno preuzima iz SdI (vidi odlomak *STANJA DOKUMENATA*).  
+- *Naziv datoteke SdI*: naziv datoteke koja se stvara u trenutku kada dokument pređe u stanje GENERIRANA; u izvornom formatu ili nakon stavljanja digitalnog potpisa, predstavlja datoteku računa koja se šalje na SdI (Naziv datoteke).  
+- *Sdi Id*: jedinstveni identifikator koji SdI dodjeljuje dokumentu u trenutku prijema (NISU UPRAVLJANI ZA ONE KOJI NISU POTPISALI UGOVOR O FE S FLUENTISOM).  
+- *Datum prijema Sdi*: datum kada je sustav razmjene primio dokument koji mu je poslan. Ova informacija se dobiva iz obavijesti o prijemu koju SdI izdaje nakon prijema pošiljke i prije nego što započne formalne provjere datoteke (NISU UPRAVLJANI ZA ONE KOJI NISU POTPISALI UGOVOR O FE S FLUENTISOM).  
+- *Datum zatvaranja*: datum zatvaranja toka upravljanja (npr. dokument isporučen) (NISU UPRAVLJANI ZA ONE KOJI NISU POTPISALI UGOVOR O FE S FLUENTISOM).  
+- *Datum posljednjeg događaja*: datum posljednje promjene stanja koja se dogodila na datoteci, bilo ručno ili kao rezultat napredovanja obrade na SdI.

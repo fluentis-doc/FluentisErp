@@ -1,49 +1,32 @@
 ---
-title: Cos'è la fatturazione elettronica
+title: Što je elektroničko fakturiranje
 sidebar_position: 1
 ---
 
-La fatturazione elettronica è un sistema digitale di emissione e trasmissione delle fatture che sostituisce il 
-supporto cartaceo a favore di nuove modalità digitali di comunicazione.
-Con la fatturazione elettronica le fatture e le note di variazione emesse dovranno essere essere prodotte in 
-nuovo formato digitale “XML eXtensible Markup Language”, un linguaggio che consente ai supporti 
-informatici di definire e controllare con procedure standardizzate il significato degli elementi contenuti, 
-verificando così le informazioni ai fini dei controlli previsti per legge.
-L’ordinamento italiano ha introdotto, con la legge finanziaria del 2008 la gestione della fatturazione 
-elettronica nel rispetto della normativa comunitaria e dal 6/06/2014 ha reso obbligatoria la fattura in 
-formato elettronico per l’emissione dei documenti alla Pubblica Amministrazione.
-La “fattura elettronica” prevista dalla normativa italiana è un file in formato XML (eXtensible Markup 
-Language) conforme alle specifiche tecniche, di cui all’allegato A del provvedimento del Direttore 
-dell’Agenzia delle Entrate, protocollo n. 89757/2018 del 30/04/2018. Il contenuto di qualsiasi fattura è 
-regolato, in generale, dagli articoli 21 e 21-bis del D.P.R. n. 633/1972.
-Il file fattura generato con il nuovo standard XML, contiene una diversa rappresentazione dei dati obbligatori 
-richiesti dalla normativa IVA, integrati eventualmente con ulteriori informazioni o elementi che possano 
-facilitare la gestione e contabilizzazione delle stesse.
-L’art. 1, c. 917, lett. a e b della Legge n. 205 del 27 dicembre 2017 (Legge di Bilancio 2018) ha introdotto, a 
-partire dal 1° gennaio 2019, l’obbligo di fatturazione elettronica per le cessioni di beni e le prestazioni di 
-servizi effettuate tra soggetti residenti, stabiliti o identificati nel territorio dello Stato utilizzando, le 
-medesime soluzioni informatiche già adottate per l’emissione della fattura elettronica verso la PA
-Le fatture elettroniche fin d’ora emesse a favore della PA e successivamente anche quelle emesse per il B2B 
-e B2C, sono veicolate e inviate al “Sistema di Interscambio”, ovvero un sistema informatico gestito 
-dall'Agenzia delle Entrate in grado di ricevere le fatture elettroniche, effettuare controlli sui file ricevuti e 
-provvedere al corretto scambio di informazioni con il soggetto trasmittente nonchè inoltrare le fatture ai 
-soggetti destinatari.
-Le imprese coinvolte nel proceddo di fatturazione elettronica saranno interessati sia per quanto riguarda la 
-gestione del ciclo ATTIVO ossia nel momento in cui viene emessa la fattura relativa a prodotti venduti o 
-servizi resi, sia per quanto riguarda il ciclo PASSIVO ossia la ricezione dei documenti emessi dai propri 
-fornitori.
+Elektroničko fakturiranje je digitalni sustav izdavanja i prijenosa faktura koji zamjenjuje papirnati oblik i uvodi nove digitalne načine komunikacije.
+Fakture i ispravci faktura izdani putem elektroničkog fakturiranja moraju se proizvoditi u novom digitalnom formatu XML (eXtensible Markup Language), jeziku koji omogućuje računalnim sustavima definiranje i kontrolu značenja sadržanih elemenata prema standardiziranim procedurama, čime se provjeravaju informacije za zakonski predviđene kontrole.
 
-## Flusso operativo in Fluentis
+Talijanski zakon je uveo elektroničko fakturiranje Zakonom o proračunu 2008., u skladu s europskom regulativom, a od 6. lipnja 2014. elektronička faktura postaje obvezna za izdavanje dokumenata prema javnoj upravi.
 
-In merito alla gestione della Fatturazione elettronica e degli adempimenti ad essa connessi, in Fluentis è 
-possibile gestire:
-- emissione dei documenti di vendita verso soggetti residenti/stabiliti/identificati nel territorio dello 
-stato Italiano
-- emissione dei documenti di vendita verso la Pubblica Amministrazione
-- acquisizione dei documenti elettronici di acquisto emessi da fornitori italiani (NON GESTITO PER CHI 
-NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- Comunicazione al SdI dei documenti di acquisto e vendita emessi da fornitori esteri o rivolti a clienti 
-esteri (soggetti NON residenti/stabiliti/identificati nel territorio italiano) (ex spesometro)             
+Elektronička faktura prema talijanskoj regulativi je XML datoteka u skladu s tehničkim specifikacijama iz Priloga A rješenja Direktorata Porezne uprave, protokol br. 89757/2018 od 30.04.2018. Sadržaj bilo koje fakture općenito je reguliran člancima 21 i 21-bis D.P.R. br. 633/1972.
+
+Datoteka fakture generirana u XML formatu sadrži obavezne podatke prema poreznim pravilima, integrirane eventualno s dodatnim informacijama koje olakšavaju upravljanje i knjiženje.
+
+Članak 1, stavak 917, točke a i b Zakona br. 205 od 27. prosinca 2017. (Zakon o proračunu 2018.) uveo je od 1. siječnja 2019. obvezu elektroničkog fakturiranja za prodaju roba i usluga između subjekata koji su rezidenti, sa sjedištem ili identificirani u talijanskom teritoriju, koristeći iste IT rješenja koja su se već primjenjivala za elektroničke fakture prema javnoj upravi.
+
+Elektroničke fakture, izdane prema javnoj upravi i kasnije prema B2B i B2C subjektima, šalju se i razmjenjuju putem Sustava za razmjenu (Sistema di Interscambio, SdI), računalnog sustava kojim upravlja Porezna uprava, koji prima elektroničke fakture, provjerava ih i osigurava ispravnu razmjenu informacija između pošiljatelja i primatelja.
+
+Subjekti uključeni u elektroničko fakturiranje sudjeluju u:
+- aktivnom ciklusu – kada izdaju fakture za prodane proizvode ili pružene usluge
+- pasivnom ciklusu – kada primaju dokumente od svojih dobavljača
+
+## Operativni tijek u Fluentisu
+
+U vezi s upravljanjem elektroničkim fakturiranjem i povezanim obvezama, u Fluentisu je moguće:  
+- izdavanje prodajnih dokumenata prema subjektima koji su rezidentni/ustanovljeni/identificirani na teritoriju Italije  
+- izdavanje prodajnih dokumenata prema javnoj upravi   
+- stjecanje elektroničkih dokumenata o kupnji koje izdaju talijanski dobavljači (NIJE DOSTUPNO ZA KORISNIKE BEZ UGOVORA ZA FE U FLUENTISU)   
+- omunikacija s SdI za dokumente nabave i prodaje od strane stranih dobavljača ili prema stranim klijentima (ne rezidenti/stabilizirani/identificirani u Italiji)      
 
 La gestione dei flussi prevede la configurazione di una connessione in BizLink, dedicata alla comunicazione 
 con il servizio Fluentis Business Hub. Il servizio ha lo scopo e l’obiettivo di inviare i documenti al SdI, acquisire 
@@ -51,50 +34,24 @@ da SdI i documenti di fatturazione relativi al ciclo passivo (NON GESTITO PER CH
 CONTRATTO FE CON FLUENTIS), acquisire le notifiche e i messaggi relativi alle varie fasi di invio delle fatture 
 attive.         
 
-Il protocollo di comunicazione tra Fluentis Business HUB e il SdI (NON GESTITO PER CHI NON HA 
-SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS) è il sistema di cooperazione applicativa basato sul servizio 
-Web Service: 
-- la fattura, emessa da Fluentis, transita tramite la connessione di BizLink al Fluentis Business Hub 
-- Il servizio Fluentis Business Hub invia i documenti al SdI 
-- Fluentis Digital Hub acquisisce da SdI le notifiche relative allo stato dei documenti e le trasferisce al 
-gestionale
-- Fluentis Digital Hub riceve le fatture passive trasferite dai fornitori dei clienti Fluentis
-- Smista le fatture sulle singole configurazioni dei clienti        
+Protokol komunikacije između Fluentis Business HUB-a i SdI (NISU UPRAVLJENI ZA ONE KOJI NISU POTPISALI UGOVOR O FE S FLUENTIS) je sustav aplikativne suradnje temeljen na usluzi Web Service:  
+- faktura, koju izdaje Fluentis, prolazi putem BizLink veze do Fluentis Business Hub-a    
+- Usluga Fluentis Business Hub šalje dokumente SdI-ju    
+- Fluentis Digital Hub preuzima obavijesti od SdI-a o statusu dokumenata i prenosi ih u upravljački sustav    
+- Fluentis Digital Hub prima pasivne fakture koje šalju dobavljači kupaca Fluentis    
+- Razvrstava fakture prema pojedinačnim konfiguracijama kupaca     
 
-In Fluentis, sarà possibile quindi:
-- generare fatture di vendita in formato elettronico secondo il tracciato previsto per la fatturazione 
-B2B/B2C/PA
-- qualora si decida di firmare digitalmente i file fattura o qualora tale passaggio sia obbligatorio per la 
-natura stessa dei documenti, gestire l’esportazione dei documenti XML in una cartella di file system 
-esterna per firmare digitalmente i documenti utilizzando un software di firma fornito da terze parti 
-e successivamente reimportare il file firmato (.xml è .p7m)
-- visualizzare il contenuto del file XML ed eventualmente allegare al file XML anche il file PDF (formato 
-standard) del documento di fattura
-- inviare i documenti al SdI (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON 
-FLUENTIS)
-- monitorare lo stato dei documenti inviati attraverso griglie di ricerca massive, campi di 
-visualizzazione dello stato dei documenti nei singoli documenti e cruscotti per la visualizzazione dei 
-log trasmessi dal SdI
-- acquisire fatture passive inviate dai fornitori (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL 
-CONTRATTO FE CON FLUENTIS)          
+U Fluentisu će biti moguće stoga:  
+- generirati prodajne račune u elektroničkom formatu prema predviđenom obrascu za fakturiranje B2B/B2C/PA;    
+- ukoliko se odluči digitalno potpisati datoteke računa ili ako je taj korak obavezan zbog same prirode dokumenata, upravljati izvozom XML dokumenata u vanjski direktorij datotečnog sustava radi digitalnog potpisivanja dokumenata koristeći softver za potpisivanje koji pružaju treće strane, a zatim ponovno uvesti potpisanu datoteku (.xml i .p7m);    
+- pregledati sadržaj XML datoteke i eventualno priložiti PDF datoteku (standardni format) računa uz XML datoteku;    
+- slati dokumente u SdI (NE UPRAVLJA SE ZA ONE KOJI NISU POTPISALI UGOVOR FE S FLUENTISOM);  
+- pratiti status poslanih dokumenata putem masovnih pretraživačkih mreža, polja za prikaz statusa dokumenata u pojedinačnim dokumentima i nadzorne ploče za prikaz logova koje je poslao SdI;  
+- preuzeti pasivne račune koje su poslali dobavljači (NE UPRAVLJA SE ZA ONE KOJI NISU POTPISALI UGOVOR FE S FLUENTISOM).  
 
-La gestione della trasmissione e acquisizione dei documenti elettronici avviene tramite la procedura di 
-CAMBIO STATO dei documenti.
+Upravljanje prijenosom i preuzimanjem elektroničkih dokumenata odvija se putem postupka **PROMJENA STANJA** dokumenata.  
 
-Fluentis consente, attraverso Fluentis Business Hub, il trasferimento al SdI sia di file di fattura firmati, sia di 
-file senza la firma digitale. Per apporre la firma digitale sui documenti generati, sarà necessario eseguire lo 
-scarico dei documenti su una cartella di filesystem, applicare la firma digitale con un software di firma 
-esterno (es. DIKE) e reimportare il file così firmato (xml o p7m) che sarà poi inviato al SdI nel nuovo formato. 
-Una volta inviato al SdI, fluentis acquisice le notifiche prodotte dal Sistema di Interscambio e le abbina ai 
-documenti relativi, gestendo l’evoluzione degli stati del documento.
-Qualora non si disponga di una connessione attiva al Fluentis Business Hub, sarà comunque possibile 
-generare i file XML del ciclo attivo per i contatti selezionati, scaricare i file prodotti e procedere con l’invio 
-degli stessi tramite canali esterni a Fluentis. 
-I file XML generati da Fluentis e acquisiti dal SdI relativi al ciclo passivo, sono conservati nella Gestione 
-documentale di Fluentis, oltre ad essere resi sempre disponibili nelle varie fasi di gestione del documento di 
-vendita attraverso l’apposita funzionalità **Registro dei documenti SDI** nella quale è possibile 
-visualizzare lo storico temporale della trasmissione del documento e scaricare e visionare i file prodotti 
-da Fluentis (XML e PDF) e recepiti da SdI. 
-Il cliclo passivo di fatturazione elettronica verso privati non ammette il possibile rifiuto da parte del 
-destintario del documento di fatturazione che dovrà pertanto essere gestito come adempimento contabile 
-secondo la normativa vigente.
+Fluentis omogućuje, putem Fluentis Business Huba, prijenos prema SdI-u kako potpisanih datoteka računa, tako i datoteka bez digitalnog potpisa. Za dodavanje digitalnog potpisa na generirane dokumente, bit će potrebno preuzeti dokumente u mapu datotečnog sustava, primijeniti digitalni potpis s vanjskim softverom za potpisivanje (npr. DIKE) i ponovno uvesti tako potpisanu datoteku (xml ili p7m) koja će zatim biti poslana SdI-u u novom formatu. Nakon slanja SdI-u, Fluentis preuzima obavijesti koje proizvodi Sustav razmjene i povezuje ih s pripadajućim dokumentima, upravljajući razvojem stanja dokumenta.  
+U slučaju da nemate aktivnu vezu s Fluentis Business Hubom, bit će moguće generirati XML datoteke aktivnog ciklusa za odabrane kontakte, preuzeti proizvedene datoteke i nastaviti s njihovim slanjem putem vanjskih kanala.  
+XML datoteke koje generira Fluentis i koje preuzima SdI u vezi s pasivnim ciklusom, pohranjuju se u Upravljanju dokumentima Fluentis, osim što su uvijek dostupne u raznim fazama upravljanja dokumentom prodaje putem posebne funkcionalnosti **Registar dokumenata SDI** u kojoj je moguće pregledati vremensku povijest prijenosa dokumenta i preuzeti i pregledati datoteke koje je proizveo Fluentis (XML i PDF) i koje je primio SdI.  
+Pasivni ciklus elektroničkog fakturiranja prema privatnim osobama ne dopušta mogući odbijanje od strane primatelja dokumenta fakturiranja, koji se stoga mora upravljati kao računovodstvena obveza prema važećim propisima.

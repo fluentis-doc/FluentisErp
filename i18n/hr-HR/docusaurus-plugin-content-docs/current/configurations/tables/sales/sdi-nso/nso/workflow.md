@@ -3,70 +3,41 @@ title: Tipovi narudžbi i promjena statusa
 sidebar_position: 6
 ---
 
-Lo stato **Ricevuto** è lo stato in cui si trova un ordine che è stato ricevuto da Fluentis senza errori ma 
-non è stato ancora inserito come ordine cliente.
-L’ordine può essere ricevuto con lo stato “In errore”, ossia l’ordine è stato ricevuto e inserito ma 
-presenta dei dati errati, quali il prezzo di una riga a 0, o mancanti, quali il codice NSO del cliente. Dovrà 
-quindi essere corretto dall’utente prima di poter effettuare ulteriori passaggi di stato.
-Dallo stato Ricevuto si possono eseguire 2 diversi comandi:        
-- **Importa ordine** porta l’ordine allo stato *Inserito*, ossia l’ordine viene generato nei documenti di 
-Fluentis;
-- **Annulla documento**, che fa in modo che l’ordine non venga creato in Fluentis e passo allo stato 
-*Annullata*, in quanto rifiutato dal fornitore.
+Stanje **Primljeno** označava narudžbu koja je primljena u Fluentis bez pogrešaka, ali još nije unesena kao narudžba kupca.  
+Narudžba može biti primljena i sa statusom “U pogrešci”, što znači da je narudžba primljena i unesena, ali sadrži netočne podatke (npr. cijena stavke 0) ili nedostajuće podatke (npr. NSO kod kupca). Takvu narudžbu korisnik mora ispraviti prije daljnjih promjena statusa.  
+Iz stanja Primljeno moguće su dvije akcije:        
+- **Uvezi narudžbu** narudžba prelazi u stanje *Uneseno*, tj. kreira se u dokumentima Fluentis-a;  
+- **Poništi dokument**, narudžba se ne kreira u Fluentis-u i prelazi u stanje *Poništeno*, jer je odbijena od strane dobavljača.
 
-## Ordinazione semplice
+## Jednostavna narudžba
 
-Nel processo di ordinazioNe semplice, dove è solo il cliente ad inviare gli ordini e il fornitore non può 
-rispondere nel flusso ma lo deve fare tramite altri canali alternativi (email, fax, ..) dallo stato “Inserito” 
-si può passare ai seguenti stati:
-- *Attendere annullamento dal cliente*, ossia l’ordine viene messo in uno stato di sospensione in 
-attesa di un annullamento da parte del cliente che probabilmente ha comunicato 
-l’annullamento in precedenza mediante altri canali (mail, telefono, ecc…)
-- *Attendere sostituzione dal cliente*, ossia l’ordine viene messo in uno stato di sospensione in 
-attesa della ricezione di un ordine sostitutivo da parte del cliente che probabilmente ha 
-comunicato la sostituzione in precedenza mediante altri canali (mail, telefono, ecc…)        
+U jednostavnom procesu narudžbe, gdje samo kupac šalje narudžbe, a dobavljač ne odgovara putem sustava nego drugim kanalima (email, fax itd.), iz stanja Uneseno moguće je preći u:  
+- *Čekanje otkazivanja od kupca*, narudžba je u stanju čekanja dok kupac ne pošalje otkaz putem drugih kanala (email, telefon itd.).  
+- *Čekanje zamjene od kupca*, narudžba je u stanju čekanja dok se ne primi zamjenska narudžba od kupca.         
 
-Il cliente può effettuare una richiesta di sostituzione dell’ordine.
-In questo caso l’ordine originale passerà nello stato “In richiesta di sostituzione”. Da qui si potranno 
-selezionare 2 cambi di stato:
-- *Riporta in inserito* nel caso in cui non si accetti la sostituzione e si voglia riportare l’ordine 
-nello stato “Inserito” in modo tale da poterlo evadere con i valori originali;
-- *Sostituzione da cliente* nel caso in cui si voglia accettare la sostituzione dell’ordine.       
+Kupac može podnijeti zahtjev za zamjenu narudžbe.
+U tom slučaju, originalna narudžba prelazi u stanje “U zahtjevu za zamjenu”. Ovdje se mogu odabrati dva moguća stanja:  
+- *Vrati u uneseno* slučaju da se zamjena ne prihvati i želi vratiti narudžbu u stanje “Uneseno”, kako bi se mogla izvršiti s originalnim vrijednostima.  
+- *Zamjena od strane kupca* u slučaju da se želi prihvatiti zamjena narudžbe.        
 
-Al momento della ricezione dell’ordine sostitutivo verrà generata un’ulteriore riga con stato *In attesa di 
-accettazione*, la quale fa riferimento al nuovo ordine.
-Nel caso di accettazione della sostituzione del nuovo ordine all’ordine iniziale, la riga *In attesa di 
-accettazione*, passerà in stato *Inserito*, mentre la riga dell’ordine originale *In richiesta di 
-sostituzione* passerà allo stato *Sostituito da cliente*.
+Prilikom primitka zamjenske narudžbe bit će generiran dodatni redak sa statusom *Na čekanju prihvaćanja*, koji se odnosi na novu narudžbu.  
+U slučaju prihvaćanja zamjene nove narudžbe za inicijalnu narudžbu, redak *Na čekanju prihvaćanja* prelazi u status *Uneseno*, dok redak iz izvorne narudžbe *Na zahtjevu za zamjenu* prelazi u status *Zamijenjeno od strane kupca*.
 
-## Ordinazione completa
+## Potpuna narudžba
 
-Nel processo di ordinazione completa, dove il cliente e il fornitore si possono inviare gli ordini tramite 
-NSO, dallo stato “Inserito” si può passare ai seguenti stati:
-- *Spedizione risposta di conferma* effettua l’invio di una notifica al cliente che conferma 
-l’accettazione dell’ordine da parte del fornitore (IBSA). L’ordine passa nello stato “Confermato da fornitore” e verrà creata un’ulteriore riga per il file di 
-risposta della conferma.
-- *Spedizione risposta di diniego* invia una notifica di non accettazione dell’ordine al cliente, con 
-l’ordine che passa nello stato *Annullato da Fornitore*.
-- *Creazione risposta di modifica* permette di effettuare la modifica del documento per quanto 
-riguarda codice articolo, quantità e prezzo delle singole righe e di inviarlo al cliente, che potrà a 
-sua volta accettare o meno tale ordine modificato. Verrà mostrato un messaggio d’avviso di chiusura dell’ordine originale e di creazione di un nuovo ordine, sul quale si andranno ad operare le modifiche.
-Una volta effettuate le modifiche sull’ordine, questo potrà essere inviato mediante il cambio stato *In 
-risposta di modifica*. Il nuovo ordine di modifica passerà allo stato “In attesa di riscontro”. Verrà inoltre creata una nuova riga di notifica.
-- *Spedizione risposta di ricevimento* invece invia una semplice notifica di ricevimento 
-dell’ordine al cliente l’ordine passa nello stato *Ricevuto da fornitore*.  
+U procesu potpune narudžbe, gdje kupac i dobavljač mogu slati narudžbe putem NSO-a, iz stanja “Uneseno” moguće je prijeći u sljedeća stanja:  
+- *Slanje potvrde prihvaćanja* šalje se obavijest kupcu koja potvrđuje prihvaćanje narudžbe od strane dobavljača (IBSA). Narudžba prelazi u stanje “Potvrđeno od dobavljača”, a generirat će se dodatni red za datoteku odgovora potvrde.  
+- *Slanje odbijenice* šalje se obavijest kupcu o neprihvaćanju narudžbe, a narudžba prelazi u stanje *Otkazano od dobavljača*.  
+- *Kreiranje odgovora s izmjenama* omogućuje izmjenu dokumenta u dijelovima koji se tiču šifre artikla, količine i cijene pojedinih redova te njegovo slanje kupcu, koji može prihvatiti ili odbiti izmijenjenu narudžbu. Pojavit će se poruka upozorenja o zatvaranju originalne narudžbe i kreiranju nove narudžbe na kojoj će se izvršiti izmjene.  
+Nakon što se izmjene provedu, narudžba se može poslati korištenjem stanja *U odgovoru s izmjenom*. Nova izmijenjena narudžba prelazi u stanje “Čeka na odgovor”, a generirat će se i nova obavijest.
+- *Slanje potvrde primitka* šalje se jednostavna obavijest kupcu o primitku narudžbe, a narudžba prelazi u stanje *Primljeno od dobavljača*.    
 
-## Ordinazione pre-concordata
+## Prethodno dogovorena narudžba  
 
-Nell’ordinazione pre-concordata il flusso ha inizio dal fornitore che, come concordato in precedenza con 
-il cliente tramite altri canali (email, fax, …), emette l’ordine NSO.         
+U prethodno dogovorenoj narudžbi, proces počinje od dobavljača koji, kao što je prethodno dogovoreno s kupcem putem drugih kanala (e-mail, fax…), šalje NSO narudžbu.    
 
-Lo stato iniziale assunto da un ordine pre-concordato è lo stato *Creato Pre-Concordato*, dal quale si 
-può effettuare il passaggio di stato *Controllo Pre-Concordato*, che porta l’ordine allo stato 
-*Controllato*. Dallo stato *Controllato* è possibile effettuare 2 passaggi di stato:       
-- *Riporta in stato Pre-Concordato* riporta l’ordine allo stato *Creato Pre-Concordato*       
-- *Generazione Pre-Concordato* effettua la generazione del file dell’ordine pre-concordato 
-passando il suo stato a *Generata*, che può a sua volta subire 2 cambi di stato:       
-> - *Spedizione Pre-Concordato*, che porta l’ordine in stato *Da spedire*, ossia l’ordine
-viene inviato al cliente è pronto per essere fisicamente evaso;
-> - *Riporta in controllato* che riporta l’ordine in stato *Controllato*.
+Početno stanje koje preuzima narudžba unaprijed dogovorena je stanje *Kreirano unaprijed dogovoreno*, od kojeg se može izvršiti prijelaz u stanje *Kontrola unaprijed dogovorena*, što dovodi narudžbu u stanje *Kontrolirano*. Iz stanja *Kontrolirano* moguće je izvršiti 2 prijelaza stanja:  
+- *Vraćanje u stanje unaprijed dogovoreno* vraća narudžbu u stanje *Kreirano unaprijed dogovoreno*  
+- *Generacija unaprijed dogovorena* izvršava generaciju datoteke narudžbe unaprijed dogovorene, prelazeći njeno stanje u *Generirano*, koje može također pretrpjeti 2 promjene stanja:  
+> - *Otprema unaprijed dogovorena*, koja dovodi narudžbu u stanje *Za otpremu*, tj. narudžba se šalje kupcu i spremna je za fizičko ispunjenje;  
+> - *Vraćanje u kontrolirano*, što vraća narudžbu u stanje *Kontrolirano*.
