@@ -17,6 +17,13 @@ The form allows the creation of:
 
 The release of orders means that they are no longer visible among the [Planned Orders](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) and, consequently, a new [Scheduling](/docs/planning/ms-master-scheduling/general-schedule) of the production job from which the planned orders were possibly generated through general scheduling cannot be generated. Planned orders present in the grid generated manually or through MPR processing have no connection to production jobs.
 
+Activated in the Planned Orders and Subcontractor grid, with the display of a new column.  
+The new column contains a visual indication (through colors) of whether the Order is feasible based on the availability of Materials.  
+To obtain the result, it is necessary to select the desired orders from the grid and press the button [Recalculate Feasibility].  
+With the button [Feasibility Details], a detailed analysis for each individual necessary material is obtained.  
+The colors to be displayed and the activation of the functionality can be configured in the "Material Requirements Parameters".
+
+
 ## Filter
 
 In this tab, it is possible to view the list of planned orders that still need to be released and filter them through a series of selection criteria.
