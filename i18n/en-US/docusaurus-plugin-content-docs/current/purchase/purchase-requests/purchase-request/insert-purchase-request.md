@@ -138,7 +138,7 @@ The other fields present in the grid are:
 - **Code/Description/Supplier Item Barcode**: report the code and the description with which the supplier identifies the requested item; these are optional fields.     
 - **Units of Measure**: the unit of measure associated with the supplier in the [item registry](/docs/erp-home/registers/items/create-new-item) is proposed, or the primary unit of measure if this field is not valued.   
 - **Quantity**: is proposed based on the supplier’s economic lot if specified in the [preferred suppliers](/docs/erp-home/registers/items/create-new-item) tab of the item; alternatively, the quantity present in the item line of the PD is proposed.
-- **Price**: is proposed based on the price list associated with the preferred supplier. 
+- **Price**: is proposed based on the price list associated with the preferred supplier. If the price of the item in the PD has been modified manually, the modification of the price in the RDO Generator will also be allowed. In this case, the price set manually in the RDO Generator tab will be reported in the generated Request for Quotation, and the flag *Manual Price* will be active.  
 - **Estimated Delivery Date**: allows you to enter the expected delivery date. 
 - **VAT**: the VAT rate present in the *Item data* tab is proposed but can be manually modified.  
 - **Unit of Measure / Alternative Quantity**: allows you to select a unit of measure and an alternative quantity that will be reported in the documents generated from the RDO. 
