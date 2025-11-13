@@ -1,8 +1,7 @@
 ---
-title: BizLink
+title: Introduction
 sidebar_position: 1
 ---
-
 
 **BizLink** allows the operator to configure and monitor data import and export flows to and from other external systems to the management software.
 

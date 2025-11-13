@@ -1,6 +1,6 @@
 ---
-title: Tools
-sidebar_position: 1
+title: TOOLS
+sidebar_position: 0
 ---
 
 The **Tools** panel contains the list of applications that can be configured and managed within **Fluentis ERP**.
