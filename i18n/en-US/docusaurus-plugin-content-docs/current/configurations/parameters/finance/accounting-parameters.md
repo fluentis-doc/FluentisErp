@@ -156,7 +156,32 @@ In this tab you set in detail the accounts of the chart of accounts that will be
 **Selfbilling account:** Allows you to set the sub-account for creating the self-invoice from accounting records for the communication of purchase data to the SDI. [**See Specific Parameters**](/docs/finance-area/e-invoice/auto-invoice/parameters).
 **Counterparty of quarterly interest liquidation VAT:** Allows you to automate the accounting of interest expenses arising from quarterly VAT liquidation by inserting the desired counterpart account (cost).
 
-## 3. Video Tutorials on Parameters
+## **3. **Accrual Period Block**
+
+In this tab, it is possible to manage the blocking (and eventual unblocking) of accounting periods (even partially) to prevent unwanted changes to the data.
+
+:::tip[**Accrual Period Closure Button**]
+With the *Accrual Period Closure* button, a popup opens with two filter fields to block a certain range of dates. The filter operates on the competence date located **in the header** of the record.
+
+There is an option to also block the economic competences of the line.
+:::
+
+Confirming the selection will display the blocked range in the grid.
+
+It is possible to proceed with the *rollback* (button **Restore Closed Period**) to reopen the period, or create a new block (which can start the day after the previous block).
+
+:::note[Info]
+What happens when a period is blocked: an *update* is executed on all records, storing that it has been blocked and by which user. 
+It will not be possible to intervene on the records (neither modification nor deletion or rollback) nor to insert new records with a competence date in the blocked range.
+
+The **economic accrual block** flag, optional, does something extra: it blocks the saving of any subsequent records that have, in the journal lines, an **economic** competence date that falls within this closed range. This is to ensure that no integrations or adjustments of any kind can appear with an adjusting entry.
+:::
+
+**In the image**: In green, the **accounting** competence in the header of the record on which the block acts based on the filter dates; in red, the **economic** competence that can be optionally blocked.
+
+![](/img/it-it/configurations/parameters/finance/accounting-parameters/comp_cont_eco.png)
+
+## 4. Video Tutorials on Parameters
 
 :::important See Also
 [**VIDEO TUTORIALS ON PARAMETERS**](/docs/video/finance/intro)
