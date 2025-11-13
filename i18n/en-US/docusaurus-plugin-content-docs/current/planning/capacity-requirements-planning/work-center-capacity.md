@@ -10,6 +10,7 @@ The graphical display illustrates the maximum capacity and daily commitment of t
 
 The operator can obtain an immediate view of the loads of each active work center within the individual departments for a specific time period, allowing them to quickly identify any peaks of overload or production inefficiency. 
 With a simple *drag & drop*, the operator can bring forward, postpone, or change the work center of an operation, and with a double click within the single capacity bar, it is possible to know in detail the information related to which work orders are occupying the center on the selected date.
+In the event that a phase shift occurs on a day when the work center is already fully occupied, an error message is displayed. Otherwise, the day of the work center is filled without over-allocating it, and the remaining time (of the shifted phase) is distributed over the subsequent working days for a capacity equal to the maximum of that work center, regardless of the existing workload.
 
 This form consists of 4 sections:
 
