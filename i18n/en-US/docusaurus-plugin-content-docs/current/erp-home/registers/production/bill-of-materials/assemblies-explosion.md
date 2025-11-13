@@ -21,4 +21,8 @@ It consists of 5 sections:
 
 To launch the report, simply click on **Preview** (in this case, a preview of the report will be shown, and you can decide whether to print, how many pages and copies to print, or whether to export the file) or click on **Print Report** (in this case, the report will be printed directly).
 
+In the **Report type** section, it is possible to select whether to display the explosion of the bill of materials in the following modes:      
+- **Analytic**: the report will list all items present in the bill at their respective levels (without grouping them).
+- **Synthetic**: allows viewing items grouped by code at the same level (by selecting the *Multi-level* flag) or for the entire bill of materials (with the *Single-levelflag). 
+
 For anything not detailed in this document regarding the common functionality of the forms, please refer to the following link [Common functionality, buttons, and fields](/docs/guide/common).
