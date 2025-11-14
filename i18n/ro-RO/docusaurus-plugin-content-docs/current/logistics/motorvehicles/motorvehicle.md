@@ -1,5 +1,5 @@
 ---
-title: Autovehicul nou>
+title: Autovehicul nou
 sidebar_position: 2
 description: Ghid pentru gestionarea și codificarea autovehiculelor în Fluentis ERP în modulul Logistică.
 schema: HowTo

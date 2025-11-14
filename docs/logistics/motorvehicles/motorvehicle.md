@@ -24,7 +24,7 @@ In questa tabella è possibile codificare i diversi *Automezzi* utilizzati e def
 Un esempio di utilizzo degli automezzi codificati è presente nei [Piani di Carico](/docs/logistics/load-plans/create-plan/), nel tabulatore *Preparazione piano di carico*.  
 La tabella consente di inserire nuovi record, cercare, visualizzare, modificare o cancellare quelli esistenti.
 
-## Ricerca Automezzi
+## Ricerca automezzi
 
 La form è composta da un'area di filtro e una di risultato.  ato. 
 Dopo aver impostato i filtri desiderati, cliccare sul pulsante **Ricerca** per visualizzare i risultati nella griglia di risultato.

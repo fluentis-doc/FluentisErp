@@ -27,7 +27,7 @@ La tabella si trova nel percorso **Logistica > Automezzi > Gestione automezzo**.
 I dati presenti in questa tabella vengono utilizzati per definire e classificare i diversi tipi di automezzo creati nel sistema.  
 È possibile inserire nuovi record oppure ricercare quelli già esistenti per visualizzarli, modificarli o cancellarli.
 
-## Ricerca Gestione automezzo
+## Ricerca gestione automezzo
 
 La form è composta da un’area di *filtro* e da una di *risultato*.  
 Dopo aver impostato i filtri desiderati, premere il pulsante **Ricerca** per visualizzare i risultati nella griglia di risultato.

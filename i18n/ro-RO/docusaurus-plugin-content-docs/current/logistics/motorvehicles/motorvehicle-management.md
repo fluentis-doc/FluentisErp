@@ -1,6 +1,6 @@
 ---
 title: Gestionare autovehicul
-description: Gestionarea și codificarea autovehiculelor în modulul **Logistică** al aplicației Fluentis ERP.
+description: Gestionarea și codificarea autovehiculelor în modulul Logistică al aplicației Fluentis ERP.
 keywords:
   - autovehicul
   - gestionare autovehicule
