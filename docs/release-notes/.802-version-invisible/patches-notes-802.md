@@ -3,6 +3,26 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 802.0012 - 13/11/2025
+
+> -	Add Implementation to create Payment Link with a external provider 
+> -	Allineamento dei report del Consolidato di progetto per passaggio di un nuovo parametro con la lista degli Id selezionati nella form di lancio (#TT04894/25) 
+> -	CO - consolidato di progetto, revisione filtro per progetto e modifica alla gestione del filtro per Codice del consolidato (abilitata la selezione multipla, passaggio al report di un nuovo parametro con la lista degli Id selezionati). ( TT04894/25) 
+> -	CO - nella maschera della ”Associazione centri progetti”, per il tipo progetto è stato aggiunta la tipologia di ‘Centro del progetto/wbs’ che fa leggere il centro associato in testata/wbs del progetto stesso. ( TT03580/25) 
+> -	CPQ - fix inserimento allowed values durante salvataggio (errore violazione PK) 
+> -	Fi - crash at closing forms because combo ( TT04941/25) 
+> -	FI - fix missing automat payment registration at invoice accounting. ( TT02936/25) 
+> -	FI - Risolvere anomalia su contabilizzazione fattura di acquisto con valori negativi per l'importo in valuta conto iva ( TT04827/25) 
+> -	MES - Corretto bug in MES che generava un consumo doppio dei materiali in Analisi disponibilità. (#TT04885/25) 
+> -	PM - Risolto caso per cui la configurazione non corretta di conti analitici, mandavano in loop la fatturazione da progetto (#TT04788/25) 
+> -	Risolto bug importazioni excel della colorazione del background  
+> -	SD - Ordini Clienti Diagramma Evasione: Corretto diagramma nel caso ci siano delle note di accredito collegate alla fattura che è nata dal ddt che ha evaso un ordine cliente collegato ad una offerta (Rif.ticket 1207/25) 
+> -	SD - Ottimizzazione dell'importazione WebApi - vendite(#TT04576/25) 
+> -	SH - fix grid column visibility handling to/from profiles(TT03851/25) 
+> -	SH - webapi di import FSLedgerAccount, valorizzazione campo di gestione fatture elettroniche (#TT04641/25) 
+> -	WM - Analisi disponibilità risolto errore profilo contenente filtro tipo documento e calcoli per colonna (#TT03363/25) 
+> -	WM - WebAPI di import degli articoli - In fase di import di un articolo, se vengono importate anche le dimensioni e i pesi, nel tab pesi e dimensioni verranno agganciate di default le UM di riferimento rispettivamente per dimensioni, volume e pesi. (#TT04668/25) 
+
 ### Patch 802.0011 - 06/11/2025
 
 > -	BI - Call scripts from Cruscotti 
