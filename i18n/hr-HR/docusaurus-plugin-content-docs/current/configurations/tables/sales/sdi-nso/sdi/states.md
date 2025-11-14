@@ -27,142 +27,117 @@ Ako se slanje vrši putem Fluentis Business Huba, nakon što se označi stvoreni
 OVI STANJE NISU UPRAVLJANA ZA ONE KOJI NISU POTPISALI FBH UGOVOR S FLUENTIS 
 
 
-| Stato documento | Descrizione | Azioni possibili | Notifica XML da SDI |
+| Status dokumenta | Opis | Moguće akcije | XML obavijest od SDI |
 | :-- | :-- | :-- | :-- |
-| In Fluentis Business Hub | Il documento è stato recepito in Fluentis Business Hub e in attesa del prelevo da parte del SdI | E’ necessario attendere un riscontro dal SdI che verificherà ed eventualmente preleverà il file | NO |
-| In SDI | Il documento è stato recepito dal SdI | *Successive*: Non conforme, Emessa | NO |
-| Non conforme | Il documento NON ha passato i controlli formali previsti da SdI e dovrà essere riemesso. I cambi di stato successivi sono MANUALI e a cura dell’utente | *Precedenti*: Non esaminata, Annullata, Esclusa | SI |
-| Consegnata | Il documento è stato consegnato al destinatario | Il ciclo di invio è concluso | SI |
-| Mancata consegna | Il SdI non è riuscito a consegnare il documento al destinatario e lo metterà a disposizione nella sua area riservata (es. per indisponibilità dell'indirizzo telematico di ricezione o perché tale indirizzo non è stato indicato in fattura) | *Successive*: Notifica cliente | SI |
-| Notifica cliente |  A fronte della mancata consegna da parte del SdI, viene fatta una notifica manuale al cliente della fattura. Questo stato è MANUALE e a cura dell’utente | Il ciclo di invio è concluso | NO | 
-| Documento emesso (Solo PA) | Il documento è stato considerato valido da SdI che procede con i tentativi di consegna verso la PA | *Successive*: Consegnata, Mancata consegna | NO | 
-| Respinta (solo PA) |  Il documento rivolto alla PA è stato Rifiutato dall’Amministrazione Pubblica | *Precedenti*: Da esaminare | SI |
-| Approvata | Il documento rivolto alla PA è stato Accettao dall’Amministrazione Pubblica | Il ciclo di invio è concluso | SI |
-| Accettata per decorrenza | Se entro il termine dei 15 giorni dal ricevimento della fattura il SdI non riceve alcuna comunicazione, il SdI inoltra notifica di DECORRENZA DEI TERMINI sia al soggetto trasmittente sia al soggetto ricevente | | SI |
+| U Fluentis Business Hub | Dokument je primljen u Fluentis Business Hub i čeka preuzimanje od strane SdI | Potrebno je čekati odgovor od SdI koji će provjeriti i eventualno preuzeti datoteku | NE |
+| U SDI | Dokument je primljen od SdI | *Sljedeće*: Neispravno, Izdano | NE |
+| Neispravno | Dokument NIJE prošao formalne provjere predviđene od strane SdI i mora biti ponovno izdan. Sljedeće promjene statusa su MANUALNE i na teret korisnika | *Prethodni*: Neispitano, Otkazano, Isključeno | DA |
+| Isporučeno | Dokument je isporučen primatelju | Ciklus slanja je završen | DA |
+| Neuspjela isporuka | SdI nije uspio isporučiti dokument primatelju i stavit će ga na raspolaganje u svom rezerviranom području (npr. zbog nedostupnosti telematičke adrese za primanje ili zato što ta adresa nije navedena na računu) | *Sljedeće*: Obavijest klijentu | DA |
+| Obavijest klijentu | Zbog neuspjele isporuke od strane SdI, korisniku računa se šalje ručna obavijest. Ovaj status je MANUALAN i na teret korisnika | Ciklus slanja je završen | NE | 
+| Izdani dokument (Samo PA) | Dokument je od strane SdI smatran valjanim i nastavlja s pokušajima isporuke prema PA | *Sljedeće*: Isporučeno, Neuspjela isporuka | NE | 
+| Odbijen (samo PA) | Dokument upućen PA je odbijen od strane Javne uprave | *Prethodni*: Na ispitivanju | DA |
+| Prihvaćeno | Dokument upućen PA je prihvaćen od strane Javne uprave | Ciklus slanja je završen | DA |
+| Prihvaćeno zbog isteka | Ako u roku od 15 dana od primitka računa SdI ne primi nikakvu komunikaciju, SdI šalje obavijest o ISTEKU ROKA i pošiljatelju i primatelju | | DA |
 
-Lo stato dei documenti inviati a Fluentis Business Hub viene aggiornato in modalità silente da alcune procedure automatiche previste in BizLink. 
-Nei paragrafi successivi è descritto il dettaglio di ogni stato gestito.
+Stanje dokumenata poslanih u Fluentis Business Hub ažurira se tiho putem nekih automatskih procedura predviđenih u BizLink. U sljedećim odlomcima opisuje se detalj svake upravljane države.
 
-## Stato documento NON ESAMINATA
+## Status dokumenta NIJE PREGLEDANO
 
-Contestualmente al momento della creazione del nuovo documento di vendita o di una registrazione contabile di acquisto per soggetti non residenti, nel ribbon menu, nella sezione Fatturazione elettronica, lo 
-stato proposto è “Non esaminata”, cioè ancora non valutata dall’operatore per l’invio a SdI.
-Una volta inserito e salvato il documento con le relative informazioni, è possibile procedere modificando lo stato del documento in uno tra quelli previsti per lo stato NON ESAMINATA, ovvero:
-- *Controllata*: verificata e pronta per essere gestita in formato elettronico
-- *Annullata*: la fattura non deve essere inviata a SdI ma deve essere mantenuta come valida per le registrazioni ai fini contabili e IVA
-- *Esclusa*: il documento inserito non deve essere inviato a SdI 
+U trenutku kreiranja novog dokumenta prodaje ili knjiženja računovodstvenog troška za nerezidente, u ribbon izborniku, u odjeljku Elektroničko fakturiranje, predloženo stanje je “Nije pregledano”, što znači da još nije ocijenjeno od strane operatera za slanje u SdI.  
+Nakon što se dokument unese i spremi s pripadajućim informacijama, moguće je nastaviti mijenjajući stanje dokumenta u jedno od onih predviđenih za stanje NISU PREGLEDANO, odnosno:  
+- *Provjereno*: verificirano i spremno za upravljanje u elektroničkom formatu  
+- *Otkazano*: račun se ne smije slati u SdI, ali se mora zadržati kao važeći za knjiženje u računovodstvu i PDV-u  
+- *Isključeno*: uneseni dokument se ne smije slati u SdI
 
-## Stato doumento CONTROLLATA 
+## Status dokumenta PROVJERENO
 
-Il documento/la registrazione nello stato CONTROLLATA è stato validato dall’operatore e può essere elaborato per le fasi successive per l’elaborazione dello stesso e l’invio a SdI, oppure può essere riportato allo stato DA ESAMINARE per eventuali modifiche o integrazioni. 
-Gli stati successivi di elaborazione del documento per l’invio a SdI o per l’esclusione all’invio possono 
-essere:
-- *Generata*: viene creato il file XML relativo al documento inserito e preparato per la spedizione 
-- *Annullata*: la fattura non deve essere inviata a SdI ma deve essere mantenuta come valida per le registrazioni ai fini contabili e IVA
-- *Esclusa*: il documento inserito non deve essere inviato a SdI 
+Dokument/registracija u stanju PROVJERENO je validirana od strane operatera i može se obraditi za sljedeće faze obrade i slanje u SdI, ili se može vratiti u stanje ZA PREGLED za eventualne izmjene ili dopune.  
+Sljedeća stanja obrade dokumenta za slanje u SdI ili za isključenje od slanja mogu biti:  
+- *Generirana*: stvara se XML datoteka vezana uz uneseni dokument i priprema se za slanje  
+- *Poništena*: račun se ne smije slati u SdI, ali se mora zadržati kao valjan za evidenciju u svrhu računovodstva i PDV-a  
+- *Isključena*: uneseni dokument se ne smije slati u SdI
 
-## Stato documento GENERATA 
+## Status dokumenta GENERIRANO
 
-Il passaggio dei documenti fattura o delle registrazioni contabili allo stato GENERATA prevede la contestuale 
-creazione del documento XML secondo le specifiche tecniche previste dall’Agenzia delle Entrate per la 
-tipologia di documento in gestione. Durante questa fase, vengono eseguiti alcuni controlli relativi alla 
-presenza delle informazioni obbligatorie per la compilazione e qualora nella sezione anagrafica tali 
-informazioni non siano state censite correttamente, verrà emessa una segnalazione di errore relativa al dato 
-mancante. 
-Il documento fattura/nota di accredito... nello stato GENERATA acquisisce anche lo stato interno di gestione 
-STAMPATA e quindi è possibile da questo momento procedere con la contabilizzazione del documento. La 
-registrazione contabile nello stato GENERATA crea il file XMl corrispondente.
-Il file XML generato viene salvato nella gestione documentale di Fluentis e quindi sempre reperibile dalle 
-varie funzionalità che ne consentono l’accesso e dalla funzione **Registro dei Documenti Sdi** previsto nel 
-Ribbon Menu delle varie funzionalità.
-Il file XML nello stato Generata può essere scaricato e gestito per l’invio con strumenti esterni a Fluentis 
-oppure può essere inviato a Fluentis Business Hub attraverso la gestione di uno degli stati operativi previsti. 
-Qualora per il contatto o per la società sia stata impostata la gestione della Firma sui documenti di 
-fatturazione elettronica, negli gli stati in gestione è previsto anche FIRMATA:
-Qualora invece non sia prevista la gestione della firma, gli stati in gestione sono:
-- *Controllata*: modifico lo stato del documento per tornare allo stato PRECEDENTE di controllata
-- *Annullata*: il documento inserito o registrato non deve essere inviato a SdI ma deve essere mantenuta come valida per le registrazioni ai fini contabili e IVA
-- *Esclusa*: il documento inserito non deve essere inviato a SdI 
-- *Da spedire*: il documento viene inserito nell’elenco dei documenti da inviare a Fluentis Business Hub
-- *Firmata*: il flusso di attribuzione di questo stato ricerca, in un percorso precedentemente configurato, il file firmato corrispondente al file XML generato dalla procedura. Questo stato è visibile SOLO se selezionato il check “Fatturazione elettronica firmata” nell’anagrafica contatto (Impostazione Anagrafiche contatti) o nelle Configurazioni Fatturazione Elettronica della società (Configurazione 
-connessione a Fluentis Business Hub) ed è, secondo le normative vigenti, uno stato FACOLTATIVO per i documenti di vendita emessi nei confronti di soggetti residenti in Italia mentre è OBBLIGATORIA per i documenti emessi nei confronti di soggetti non residenti, non stabiliti, non identificati in Italia. 
-Prima di procedere con la modifica dello stato in FIRMATA, è necessario procedere con la firma dei documenti nello stato GENERATA:
-> - se correttamente impostato il campo *Cartella di creazione file da firmare* nella *Configurazione fatturazione elettronica della società* (Configurazione connessione a Fluentis Business Hub), ogni volta che viene generato il file XML, Fluentis salva una copia nel percorso indicato Qualora il campo non sia stato correttamente configurato, sarà possibile scaricare il file XML dalla 
-funzione *Registro documenti SdI* tramite l’azione Scarica Allegato del ribbon menu e salvare il file in una cartella di comodo su FileSystem
-> - procedere con la firma del file utilizzando un qualsiasi software di firma in dotazione, che permetta l’apposizione della firma digitale in formato Cades o Xades (come disposto dalla 
-specifiche tecniche normative) e avendo cura di salvare il file firmato nella cartella indicata nelle Configurazioni di fatturazione elettronica nel campo Cartella file firmati
-> - Modificare lo stato del documento in FIRMATA: automaticamente la procedura andrà a reperire 
-il file firmato nella cartella indicata al punto precedente e lo acquisisce nel flusso procedurale di Fluentis. In caso di invio a Fluentis Business Hub, sarà QUESTO file acquisito il file oggetto della trasmissione a SdI
+Prebacivanje dokumenata faktura ili računovodstvenih evidencija u stanje GENERIRANO podrazumijeva istovremeno stvaranje XML dokumenta prema tehničkim specifikacijama koje je postavila Porezna uprava za tip dokumenta koji se obrađuje. Tijekom ove faze provode se neki kontrolni postupci vezani uz prisutnost obaveznih informacija za ispunjavanje, a ako u anagrafskoj sekciji te informacije nisu ispravno unesene, bit će izdana obavijest o grešci vezana uz nedostajući podatak.  
+Dokument faktura/nota o kreditu... u stanju GENERIRANO također stječe interno stanje upravljanja ISPISANO i stoga je od ovog trenutka moguće nastaviti s knjiženjem dokumenta. Računovodstveni zapis u stanju GENERIRANO stvara odgovarajući XML datoteku.  
+Generirana XML datoteka se sprema u dokumentacijski sustav Fluentis i stoga je uvijek dostupna putem raznih funkcionalnosti koje omogućuju pristup i putem funkcije **Registar dokumenata Sdi** koja je predviđena u Ribbon izborniku raznih funkcionalnosti.  
+XML datoteka u stanju Generirano može se preuzeti i upravljati za slanje s vanjskim alatima izvan Fluentis-a ili se može poslati u Fluentis Business Hub putem upravljanja jednim od predviđenih operativnih stanja.  
+Ako je za kontakt ili tvrtku postavljena uprava potpisa na dokumentima elektroničkog fakturiranja, u upravljanim stanjima predviđeno je i stanje POTPISANO:  
+Ako, s druge strane, nije predviđena uprava potpisa, upravljana stanja su:  
+- *Kontrolirano*: mijenjam stanje dokumenta kako bih se vratio u PRETHODNO stanje kontrolirano  
+- *Otkazano*: dokument unesen ili registriran ne treba se slati Sdi-ju, ali ga treba zadržati kao valjanog za računovodstvene i PDV evidencije  
+- *Isključeno*: uneseni dokument ne treba se slati Sdi-ju  
+- *Za slanje*: dokument se unosi u popis dokumenata koji se šalju u Fluentis Business Hub  
+- *Potpisano*: tijek dodjele ovog stanja traži, u prethodno konfiguriranoj stazi, odgovarajuću potpisanu datoteku koja odgovara generiranoj XML datoteci. Ovo stanje je vidljivo SAMO ako je odabran checkbox “Potpisana elektronička faktura” u anagrafskoj kartici kontakta ili u Konfiguracijama Elektroničkog fakturiranja tvrtke (Konfiguracija veze s Fluentis Business Hub) i predstavlja, prema važećim propisima, OBAVEZNO stanje za dokumente prodaje izdane prema subjektima koji su rezidenti u Italiji, dok je OBAVEZNO za dokumente izdane prema subjektima koji nisu rezidenti, nisu uspostavljeni, ili nisu identificirani u Italiji.  
+Prije nego što nastavite s promjenom stanja u POTPISANO, potrebno je provesti potpisivanje dokumenata u stanju GENERIRANO:  
+> - ako je ispravno postavljeno polje *Mapa za kreiranje datoteka za potpisivanje* u *Konfiguraciji elektroničkog fakturiranja tvrtke* (Konfiguracija veze s Fluentis Business Hub), svaki put kada se generira XML datoteka, Fluentis sprema kopiju na označenoj stazi. Ako polje nije ispravno konfigurirano, moguće je preuzeti XML datoteku putem funkcije *Registar dokumenata SdI* putem akcije Preuzmi privitak iz trake izbornika i spremiti datoteku u prikladnu mapu na datotečnom sustavu.  
+> - nastaviti s potpisivanjem datoteke koristeći bilo koji softver za potpisivanje koji omogućuje postavljanje digitalnog potpisa u Cades ili Xades formatu (kako je propisano tehničkim specifikacijama) i paziti da se potpisana datoteka sprema u mapu navedenu u Konfiguracijama elektroničkog fakturiranja u polju Mapa potpisanih datoteka.  
+> - Promijeniti stanje dokumenta u POTPISANO: automatski će postupak potražiti potpisanu datoteku u mapi navedeno u prethodnoj točki i uključiti je u proceduralni tijek Fluentis-a. U slučaju slanja u Fluentis Business Hub, BIT će OVA datoteka koja je uključena predmet prijenosa Sdi-ju.
 
-## Stato documento FIRMATA
+## Status dokumenta POTPISANO
 
-Il documento nello stato FIRMATA, può essere scaricato e gestito esternamente da Fluentis, oppure inviato a Fluentis Business Hub per l’invio a SdI. 
-Per scaricare il documento firmato è possibile accedere alla funzione “Registro documenti SdI” ed eseguire il download nel pannello Allegati tramite l’azione “Scarica Allegato” del ribbon menu oppure dal pannello Registro documenti SdI tramite l’azione “Scarica il contenuto del registro” .
-Per procedere con la gestione del documento è possibile selezionare uno degli stati proposti:
-- *Generata*: annulla l’operazione di firma del file e torna allo stato GENERATO del file XML
-- *Da spedire*: il documento viene inserito nell’elenco dei documenti da inviare a Fluentis Business Hub
-- *Annullata*: il documento o la registrazione contabile non si riferiscono ad accadimenti da inviare a SdI ma deve essere mantenuti validi per le registrazioni ai fini contabili e IVA
-- *Esclusa*: il documento/la registrazione contabile inserita non deve essere inviato a SdI 
+Dokument u stanju POTVRĐENO može se preuzeti i upravljati izvan Fluentis-a, ili poslati na Fluentis Business Hub za slanje u SdI.  
+Za preuzimanje potpisanog dokumenta moguće je pristupiti funkciji “Registar dokumenata SdI” i izvršiti preuzimanje u panelu Prilozi putem akcije “Preuzmi prilog” iz izbornika trake ili iz panela Registar dokumenata SdI putem akcije “Preuzmi sadržaj registra”. 
+Za nastavak upravljanja dokumentom moguće je odabrati jedno od predloženih stanja:  
+- *Generirano*: poništava operaciju potpisivanja datoteke i vraća se u stanje GENERIRANO datoteke XML  
+- *Za slanje*: dokument se dodaje na popis dokumenata koji se šalju na Fluentis Business Hub  
+- *Poništeno*: dokument ili računovodstveni zapis ne odnose se na događaje koji se šalju u SdI, ali moraju ostati važeći za računovodstvene i PDV evidencije  
+- *Isključeno*: dokument/računovodstveni zapis ne smije biti poslan u SdI
 
-## Stato documento ANNULLATA
+## Status dokumenta OTKAZANO
 
-Il documento/la registrazione contabile nello stato ANNULLATO viene impostato manualmente dall’utente qualora il documento sia rilevante ai fini IVA e ai fini contabili ma non debba rientrare nel ciclo di gestione del Sistema di Interscambio: un esempio potrebbe essere la fattura emessa dal ciclo attivo di Fluentis che 
-riceve dal Sistema di Interscambio una notifica di Scarto e quindi, qualora il documento risulti già acquisito 
-in contabilità, si rende necessario procedere con:
-- l’annullamento della fattura inviata, al fine di non far più confluire il documento in alcun ciclo di spedizione
-- la registrazione di un documento di storno valido ai soli fini contabili, che non dovrà essere trasmesso al SdI e che quindi avrà lo stato di ESCLUSA
-- l’emissione di un nuovo documento con una numerazione che faccia riferimento a quella iniziale, da inviare nuovamente al SdI           
+Dokument/račun u stanju OTKAZANO postavlja se ručno od strane korisnika kada je dokument relevantan za PDV i računovodstvo, ali ne treba biti uključen u ciklus upravljanja Sustavom razmjene: primjer bi mogla biti faktura izdana iz aktivnog ciklusa Fluentis koja prima obavijest o Odbijanju od Sustava razmjene, te ako je dokument već unesen u računovodstvo, potrebno je postupiti s:  
+- otkazivanjem poslane fakture, kako bi se dokument više ne uključivao u bilo koji ciklus slanja  
+- registracijom važećeg dokumenta za povrat koji će se koristiti isključivo u računovodstvene svrhe, koji se ne smije slati SdI i koji će stoga imati status ISKLJUČEN  
+- izdavanjem novog dokumenta s brojem koji se odnosi na izvorni, koji će se ponovno poslati SdI  
 
-Qualora il documento si trovi nello stato Annullata ma si renda necessario poter gestire nuovamente il documento ritornando allo stato iniziale, è possibile modificarne lo stato in NON ESAMINATA e procedere con le modifiche sul documento originale.
+Ako se dokument nalazi u stanju OTKAZANO, ali je potrebno ponovno upravljati dokumentom vraćajući ga u izvorno stanje, moguće je promijeniti njegov status u NEISPITANO i nastaviti s izmjenama na izvornom dokumentu.
 
-## Stato documento ESCLUSA
+## Status dokumenta ISKLJUČENO
 
-Lo Stato del documento “Esclusa” viene impostato manualmente dall’utente e riguarda i documenti che, 
-per loro natura, non devono rientrare nel flusso di gestione della fatturazione elettronica per il Sistema di 
-Interscambio. Alcuni esempi dei documenti in questo stato:
-- Note di storno interne relative a documenti fattura che sono stati scartati dal SdI e che devono essere riemessi
-- Documenti emessi nei confronti di soggetti esteri/non residenti per i quali non si intende gestire l’invio tramite gli stati di elaborazione previsti per la fatturazione elettronica a SdI           
+Stanje dokumenta “Isključeno” postavlja se ručno od strane korisnika i odnosi se na dokumente koji, zbog svoje prirode, ne trebaju ulaziti u tok upravljanja elektroničkim fakturiranjem za Sustav razmjene. Neki primjeri dokumenata u ovom stanju su:  
+- Unutarnje ispravne napomene vezane uz dokumente faktura koji su odbijeni od strane SdI i koji se moraju ponovno izdati.  
+- Dokumenti izdani prema stranim/neporeznim subjektima za koje se ne planira upravljati slanjem putem predviđenih stanja obrade za elektroničko fakturiranje prema SdI.  
 
-Qualora il documento si trovi nello stato Annullata ma si renda necessario poter gestire nuovamente il documento ritornando allo stato iniziale della fattura, è possibile modificarne lo stato in NON ESAMINATA e procedere con le modifiche sul documento originale.
+Ako se dokument nalazi u stanju Otkazano, ali je potrebno ponovno upravljati dokumentom vraćanjem na početno stanje fakture, moguće je promijeniti njegovo stanje u NISU PREGLEDANI i nastaviti s izmjenama na originalnom dokumentu.
 
-## Stato documento DA SPEDIRE e IN FLUENTIS BUSINESS HUB 
+## Status dokumenta ZA SLANJE i U FLUENTIS BUSINESS HUB-U
 
-I documenti generati dal ciclo attivo di Fluentis e pronti per essere inviati al SdI, devono essere contrassegnati dallo stato DA SPEDIRE: questo stato, da utilizzare nel caso in cui sia correttamente configurato il canale Fluentis Business Hub, accoda il documento alla lista documenti che BizLink dovrà processare per l’invio a Sdi.
-Non sono previste modifiche di stato in questa condizione perchè il documento, inserito in una “coda di spedizione” di BizLink, verrà inviato al Fluentis Business Hub per la trasmissione al SdI, attraverso processi automatici che vengono eseguiti a regolari intervalli temporali. 
-Una volta che il documento viene inviato al servizio Fluentis Business Hub, lo stato si modifica automaticamente in IN FLUENTIS BUSINESS HUB e vengono compilate automaticamente le colonne relative all’informazione dell’avvenuto trasferimento:
-- *Stato SdI*:* accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI (vediparagrarafo STATI DEI DOCUMENTI).
-- *Nome file SdI*: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all’apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI (Nome del file). 
-- *Sdi Id*: l’identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
-- *Data ricezione Sdi*: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file 
-- *Data chiusura*: la data di chiusura del flusso di gestione (es. documento Cosegnato)
-- *Data ultimo evento*: la data dell’ultimo cambio stato avvenuto sul file o manualmente o per effetto dell’avanzamento dell’elaborazione sul SdI
+Dokumenti generirani iz aktivnog ciklusa Fluentis i spremni za slanje SdI-u moraju biti označeni statusom ZA SLANJE: ovaj status, koji se koristi u slučaju da je kanal Fluentis Business Hub ispravno konfiguriran, dodaje dokument na popis dokumenata koje BizLink treba obraditi za slanje SdI-u.  
+Nema predviđenih promjena statusa u ovom stanju jer će dokument, smješten u "red za slanje" BizLink-a, biti poslan Fluentis Business Hub-u za prijenos SdI-u, putem automatskih procesa koji se izvršavaju u redovitim vremenskim intervalima.  
+Jednom kada se dokument pošalje usluzi Fluentis Business Hub, status se automatski mijenja u*U FLUENTIS BUSINESS HUB i automatski se popunjavaju kolone vezane uz informacije o izvršenom prijenosu:  
+- *Status SdI*: sadrži opis statusa dokumenta, prikazujući kako unutarnji status upravljanja Fluentis-a, tako i status koji je prijavio Fluentis Business Hub i koji je izravno preuzet od SdI-a (vidi paragraf STATUS DOKUMENATA).  
+- *Naziv datoteke SdI*: naziv datoteke koja se stvara u trenutku kada dokument pređe u status GENERIRANO; u izvornom formatu ili nakon stavljanja digitalnog potpisa, predstavlja datoteku računa koja se šalje SdI-u (Naziv datoteke).  
+- *Sdi Id*: jedinstveni identifikator koji SdI dodjeljuje dokumentu u trenutku prijema.  
+- *Datum prijema Sdi*: datum kada je sustav razmjene primio dokument koji mu je poslan. Ova informacija se dobiva iz obavijesti o prijemu koju SdI izda nakon prijema pošiljke i prije nego što se nastavi s formalnim provjerama datoteke.  
+- *Datum zatvaranja*: datum zatvaranja toka upravljanja (npr. dokument *Isporučeno*).  
+- *Datum posljednjeg događaja*: datum posljednje promjene statusa koja se dogodila na datoteci, bilo ručno ili kao rezultat napredovanja obrade na SdI-u.
 
-## Stato documento IN SDI 
+## Status dokumenta U SDI
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS         
+OVO STANJE NIJE DOSTUPNO KORISNICIMA KOJI NISU POTPISALI FE UGOVOR S FLUENTIS-OM     
 
-Il documento viene contrassegnato automaticamente dai processi di BizLink con lo stato “IN SDI” nel momento in cui è avvenuta la spedizione nel SdI appunto ed è prevenuta a Fluentis Business Hub la notifica di ricezione, come nell’esempio che segue:
-Contestualmente alla registrazione della notifica del SdI, si compilano le colonne della form Fatture di Vendita con i campi:
-- *Sdi Id*: l’identificativo univoco che il SdI attribuisce al documento nel momento della ricezione
-- *Data ricezione Sdi*: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file          
+Dokument se automatski označava od strane BizLink procesa sa statusom “U SDI” u trenutku kada je došlo do otpreme u SdI, a obavijest o prijemu je stigla u Fluentis Business Hub, kao u sljedećem primjeru:  
+Istovremeno s registracijom obavijesti iz SdI, popunjavaju se kolone obrasca *Fakture prodaje* s poljima:  
+- *Sdi Id*: jedinstveni identifikator koji SdI dodjeljuje dokumentu u trenutku prijema  
+- *Datum prijema Sdi*: datum kada je sustav razmjene primio dokument koji mu je poslan. Ova informacija se dobiva iz obavijesti o prijemu koju SdI izdaje nakon prijema otpreme i prije nego što se pristupi formalnim provjerama datoteke.  
 
-Accedendo al Registro documenti SdI corrispondente al documento, nel pannello “Registro dei documenti Sdi” in corrispondenza della Transizione Sistema di Interscambio è possibile prendere visione 
-della notifica di ricezione.         
-In questo stato non è possibile intervenire con una modifica manuale del file ma sarà necessario attendere la notifica di esito dal SdI che potrà essere Non conforme nel caso in cui non siano stati superati i controlli 
-formali oppure Emessa nel caso in cui i controlli previsti siano stati superati e quindi il SdI inizia le procedure di consegna.
+Pristupom Registru dokumenata SdI koji odgovara dokumentu, u panelu “Registar dokumenata Sdi” u vezi s *Transakcijom Sustava razmjene* moguće je pregledati obavijest o prijemu.  
+U ovom statusu nije moguće izvršiti ručnu izmjenu datoteke, već će biti potrebno pričekati obavijest o ishodu od SdI koja može biti *Neusklađena* u slučaju da formalne provjere nisu prošle, ili *Izdana* u slučaju da su predviđene provjere prošle, te SdI započinje postupke isporuke.
 
-## Stato documento NON CONFORME 
+## Status dokumenta NEUSKLAĐENO
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS        
+OVO STANJE NIJE DOSTUPNO KORISNICIMA KOJI NISU POTPISALI FE UGOVOR S FLUENTIS-OM     
 
-I documenti contrassegnati dallo stato NON CONFORME sono stati scartati dal sistema di Interscambio a seguito dei controlli formali eseguiti nel momento della ricezione. In questo caso la notifica di scarto riporta anche la motivazione del rifiuto e il documento, se ancora non contabilizzato, dovrà essere riemesso con lo stesso numero e stessa data con la correzione opportuna dell’informazione entro 5 giorni EFFETTIVI dalla
-data di scarto. 
-Nella griglia della form Fattura di vendita, in corrispondenza del documento non conforme, viene aggiornata la colonna Data ultimo evento con la data e l’ora della Notifica di scarto ricevuta dal SdI.           
+Dokumenti označeni statusom NEKONFORMAN su odbačeni iz sustava razmjene nakon formalnih provjera izvršenih prilikom prijema. U ovom slučaju, obavijest o odbijanju također sadrži razlog odbijanja, a dokument, ako još nije knjižen, mora biti ponovo izdan s istim brojem i istim datumom uz odgovarajuću ispravku informacija unutar 5 RADA dana od datuma odbijanja.  
+U mreži obrasca Faktura prodaje, u odnosu na nekonformni dokument, ažurira se kolona Datum posljednjeg događaja s datumom i vremenom obavijesti o odbijanju primljenom od SdI.
 
-Accedendo al Registro dei documenti SdI del documento selezionato, nel pannello Registro dei documenti SdI è riportata, nella riga corrispondente alla Transizione Documento non conforme, la data e l’ora dell’evento e viene visualizzata la notifica di scarto con la motivazione.         
-E’ possibile modificare manualmente lo stato del documento a seconda delle azioni che si intende intraprendere successivamente allo scarto:
-- NON ESAMINATA: contrassegnando il documento con questo stato, si intende riportare il documento nello stato iniziale pre-elaborazione. Di fatto questo stato permette le modifiche necessarie al documento al fine di correggere le segnalazioni indicate dal SdI. In questo caso il documento dovrà essere riemesso con pari numero e data. *N.B. qualora il documento sia già stato contabilizzato, il check STAMPATO sul documento NON viene automaticamente rimosso ma è necessario eliminare la registrazione contabile abbinata prima di poter apportare qualsiasi modifica alla testata o al corpo del documento. Qualora la modifica da apportare riguardi l’anagrafica cliente (es. codice destinatario errato), non sarà necessario eliminare la registrazione contabile ma sarà sufficiente intervenire sulle informazioni anagrafiche e rigenerare il file XML.*
-- ANNULLATA/ESCLUSA: il documento viene annullato e quindi verrà emessa nota di variazione interna per adeguare la situazione contabile e successivamente marcato come ESCLUSO.       
+Pristupanjem Registru dokumenata SdI odabranog dokumenta, u panelu Registar dokumenata SdI prikazana je, u retku koji odgovara Transiciji nekonformnog dokumenta, datum i vrijeme događaja, a obavijest o odbijanju s razlogom se također prikazuje.  
+Moguće je ručno promijeniti status dokumenta ovisno o radnjama koje se planiraju poduzeti nakon odbijanja:  
+- NEISPITANO: označavanjem dokumenta s ovim statusom, namjera je vratiti dokument u prvotno stanje prije obrade. U stvari, ovaj status omogućuje potrebne izmjene dokumenta kako bi se ispravile oznake koje je naveo SdI. U ovom slučaju, dokument mora biti ponovo izdan s istim brojem i datumom. *N.B. ako je dokument već knjižen, oznaka OTISNUTO  na dokumentu NEĆE se automatski ukloniti, ali je potrebno ukloniti povezanu računovodstvenu evidenciju prije nego što se mogu izvršiti bilo kakve izmjene u zaglavlju ili tijelu dokumenta. Ako se izmjena odnosi na karton kupca (npr. pogrešan kod primatelja), neće biti potrebno uklanjati računovodstvenu evidenciju, već će biti dovoljno intervenirati na informacijama iz kartona i regenerirati XML datoteku.*  
+- OTKAZANO/ISKLJUČENO: dokument se otkazuje i stoga će biti izdana interna ispravna nota kako bi se prilagodila računovodstvena situacija, a zatim će biti označen kao ISKLJUČEN.   
 
 ## Stato documento CONSEGNATA 
 
