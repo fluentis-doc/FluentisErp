@@ -83,16 +83,18 @@ Viene visualizzata una richiesta/conferma dati per:
 Le informazioni gestite sono:   
 > **Tipo non conformità**: è il *Tipo* del documento (dato obbligatorio).   
 > All'inserimento di una nuova *Non conformità* viene proposto il *Tipo reclamo* indicato nei *Parametri Reclami e Non conformità*, sessione *Reclami*.   
-> Sulla base del *Modello* specificato nel *Tipo reclamo*, verrà abilitata la gestione del *Reclamo* in modalità *Gestione difetti* oppure *8D - problem solving*.   
+> Sulla base del *Modello reclamo* specificato nel *Tipo reclamo*, verrà abilitata la gestione del *Reclamo* in modalità *Gestione difetti* oppure *8D - problem solving*.   
+> Sulla base dell'indicazione di *Utilizzo in* specificato nel *Tipo reclamo*, verrà abilitata la possibilità di inserire un *Reclamo da cliente* oppure un *Reclamo da fornitore*.   
 >
 > **Anno/Numero/Data**: sono l'*Anno*, *Numero* e *Data* del *Reclamo* (dati obbligatori).   
 > All'inserimento di un nuovo *Reclamo*:   
 > - la *Data* viene proposta pari alla data odierna;   
 > - l'*Anno* e il *Numero* vengono proposti in base alla *Data* e alla *Numerazione* associata al *Tipo reclamo*.   
 >
-> **Cliente**, **Cliente contatto** o **Rivenditore**: sono i riferimenti dei mittenti (almeno uno dei tre è un dato obbligatorio).   
-> Il *Cliente contatto* è un cliente non diretto, codificato nell'anagrafica dei *Contatti*, il cui bene o servizio è stato venduto da un soggetto terzo.   
-> Il *Rivenditore* è posizionato tra le informazioni dell tabulatore *Testata*.   
+> **Cliente**, **Cliente contatto** o **Rivenditore**: sono i riferimenti dei mittenti (almeno uno dei tre è un dato obbligatorio).
+> Il *Cliente* viene rinominato in *Fornitore* se il documento è un *Reclamo da fornitore*.    
+> Il *Cliente contatto* è un cliente non diretto, codificato nell'anagrafica dei *Contatti*, il cui bene o servizio è stato venduto da un soggetto terzo; disabilitato se il documento  è un *Reclamo da fornitore*.   
+> Il *Rivenditore* è posizionato tra le informazioni dell tabulatore *Testata*; disabilitato se il documento  è un *Reclamo da fornitore*.   
 > 
 
 
@@ -130,7 +132,7 @@ Le informazioni gestite sono:
 >  
 > **Rivenditore**: informazione già descritta precedentemente tra i mittenti del *Reclamo*.   
 >
-> **Riferimento sito del cliente**: annotazioni libere sull'argomento.   
+> **Riferimento sito del cliente**: annotazioni libere sull'argomento; viene rinominato in *Riferimento sito del fornitore* se il documento è un *Reclamo da fornitore*.   
 >
 > **Referente esterno**: annotazioni libere sulla persona di riferimento del mittente del *Reclamo*.   
 >
