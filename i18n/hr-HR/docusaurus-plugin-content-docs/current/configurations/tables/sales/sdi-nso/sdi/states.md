@@ -1,46 +1,30 @@
 ---
-title: Stati dei documenti in Fluentis
+title: Stanja dokumenata u Fluentisu  
 sidebar_position: 5
 ---
 
-L’invio e la ricezione dei documenti elettronici del ciclo attivo e passivo prevede la gestione, da parte 
-dell’utente, di una serie di STATI operativi che definiscono il flusso di gestione del documento di fattura, dalla 
-sua generazione fino all’invio a Fluentis Business Hub per l’effettivo trasferimento al SdI.
-Gli stati potranno essere gestiti singolarmente, quindi all’interno della gestione di unico documento, oppure 
-in modalità massive; ogni stato può prevedere il passaggio ad uno stato PRECEDENTE di gestione oppure ad 
-uno SUCCESSIVO. Le azioni e la gestione dei documenti elettronici può essere subordinata a restrizioni 
-operative che possono riservare la gestione degli stati dei documenti solo a ruoli e/o utenti predefinito, 
-configurando opportunamente la ribbon menu delle azioni relative.
-La normativa attuale relativa alle comunicazioni da inviare all’Agenzia delle Entrate prevede che i soggetti 
-passivi ai fini IVA comunichino i dati relativi alle operazioni di cessione beni/prestazioni servizi effettuate 
-(Gestione del ciclo attivo) e RICEVUTE anche da soggetti NON identificati/non residenti nel territorio dello 
-Stato utilizzando lo stesso tracciato previsto per le fatture elettroniche italiane. Se per i documenti EMESSI 
-è possibile utilizzare il medesimo tracciato previsto per le fatture elettroniche italiane, per l’invio al Sdi dei 
-documenti di acquisto di fornitori esteri è previsto un tracciato apposito e la firma per questi file è 
-obbligatoria.
-In Fluentis la generazione del file XML di questa tipologia è possibile a fronte della registrazione contabile 
-del documento ricevuto e la successiva gestione, all’interno della registrazione contabile, della generazione 
-del file XML e suo invio al SdI con le medesime operazioni di cambio stato previste per il ciclo attivo, oppure 
-attraverso la gestione dei file dalla funzione Fatturazione elettronica con soggetti non residenti.
+Slanje i primanje elektroničkih dokumenata aktivnog i pasivnog ciklusa podrazumijeva upravljanje od strane korisnika nizom OPERATIVNIH STANJA koja definiraju tijek upravljanja dokumentom računa, od njegove generacije do slanja u Fluentis Business Hub za stvarni prijenos u SdI.  
+Stanja se mogu upravljati pojedinačno, unutar upravljanja jednim dokumentom, ili u masovnom načinu; svako stanje može predvidjeti prijelaz na PRETHODNO stanje upravljanja ili na SLJEDEĆE. Akcije i upravljanje elektroničkim dokumentima mogu biti podložni operativnim ograničenjima koja mogu rezervirati upravljanje stanjima dokumenata samo za unaprijed definirane uloge i/ili korisnike, pravilno konfigurirajući izbornik trake akcija.  
+Trenutna regulativa vezana uz komunikacije koje treba poslati Poreznoj upravi predviđa da obveznici za potrebe PDV-a komuniciraju podatke vezane uz operacije prijenosa dobara/usluga koje su izvršene (Upravljanje aktivnim ciklusom) i PRIMLJENE čak i od neidentificiranih/neporeznih subjekata na teritoriju države koristeći isti obrazac predviđen za talijanske elektroničke račune. Ako je za EMITIRANE dokumente moguće koristiti isti obrazac predviđen za talijanske elektroničke račune, za slanje dokumenata o nabavi od stranih dobavljača u SdI predviđen je poseban obrazac, a potpis za te datoteke je obavezan.  
+U Fluentisu je generacija XML datoteke ove vrste moguća nakon knjiženja računovodstvenog dokumenta koji je primljen i naknadnog upravljanja, unutar računovodstvene evidencije, generacijom XML datoteke i njenim slanjem u SdI s istim operacijama promjene stanja predviđenim za aktivni ciklus, ili putem upravljanja datotekama iz funkcije Elektroničko fakturiranje s ne-rezidentnim subjektima.
        
-Il significato dei vari stati nel dettaglio:
+Značenje različitih stanja u detaljima:
 
-| Stato documento | Descrizione | Azioni possibili |
+| Status dokumenta | Opis | Moguće radnje |
 | :-- | :-- | :-- | 
-| Non esaminata | Il documento è stato generato e ancora non sono state fatte azioni relative alla gestione del documento elettronico | *Successive*: Controllato, Annullata, Esclusa. *Precedenti*: Eliminazione manuale del documento dalla gestione | 
-| Controllato | Il documento è stato sottoposto ai controlli preliminari da parte dell’operatore | *Successive*: Generata, Annullata, Esclusa. *Precedenti*: Non esaminata (torno allo stato iniziale del documento) | 
-| Generata | E' stato creato il file XML relativo al documento elettronico. Da questo momento è possibile procedere con gli stati successivi per inviare il file al Fluentis Business Hub oppure scaricare il file XML per gestioni esterne. Il documento in questo stato può essere contabilizzato | *Successive*: Firmata, Da spedire, Annullata, Esclusa. *Precedenti*: Controllata | 
-| Firmata | Il documento è stato firmato esternamente con certificato di firma Cadeso Xades e reimportato in Fluentis nel nuovo formato | *Successive*: Da spedire, Annullata, Esclusa. *Precedenti*: Generata | 
-| Da spedire | Questo stato, da utilizzare nel caso in cui sia correttamente configurato il canale Fluentis Business Hub, accoda il documento alla lista documenti che BizLink dovrà processare per l’invio a Sdi. PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS QUESTO CAMBIO STATO BLOCCA LA FATTURA A QUALSIASI ALTRA AZIONE | *Successive*: NESSUNA AZIONE MANUALE. Lo stato viene aggiornato da Fluentis Business HubNON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS | 
-| Annullata | Il documento non deve essere inviato al cliente finale ma resta comunque valido ai fini IVA | *Successive*: NESSUNA AZIONE MANUALE. *Precedenti*: Non esaminata | 
-| Esclusa | Il documento è stato creato ma non rientra tra quelli da inviare al SdI (es. nota di storno interna o cliente non residente in italia e non soggetto a fatturazione elettronica con invio a SdI) | *Successive*: NESSUNA AZIONE MANUALE. *Precedenti*: Non esaminata | 
-| Non abbinata (ciclo passivo) | Il documento è stato ricevuto dal servizio Fluentis Business Hub e non è stato abbinato ad alcun elemento contabile (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS) | *Successive*: Ricevuta | 
-| Ricevuta (ciclo passivo) | Il documento è stato abbinato alla registrazione contabile/documento di acquisto/documento compenso (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS) | *Precedenti*: Non abbinata | 
+| Ne pregledano | Dokument je generiran i još nisu poduzete radnje vezane uz upravljanje elektroničkim dokumentom | *Sljedeće*: Pregledano, Poništeno, Isključeno. *Prethodno*: Ručno brisanje dokumenta iz sustava | 
+| Kontrolirano | Dokument je podvrgnut preliminarnim kontrolama od strane operatera | *Sljedeće*: Generirano, Otkazano, Isključeno. *Prethodne*: Nije pregledano (vraća se na početno stanje dokumenta) | 
+| Generirano | Stvoren je XML datoteka vezana uz elektronički dokument. Od ovog trenutka moguće je nastaviti s sljedećim stanjima za slanje datoteke na Fluentis Business Hub ili preuzeti XML datoteku za vanjske uprave. Dokument u ovom stanju može se knjižiti | *Sljedeće*: Potpisano, Za slanje, Otkazano, Isključeno. *Prethodne*: Kontrolirano | 
+| Potpisano | Dokument je vanjski potpisan s Cadeso Xades potpisnim certifikatom i ponovno uvezen u Fluentis u novom formatu | *Sljedeće*: Za slanje, Otkazano, Isključeno. *Prethodne*: Generirano | 
+| Za slanje | Ovo stanje, koje se koristi kada je kanal Fluentis Business Hub ispravno konfiguriran, dodaje dokument na popis dokumenata koje BizLink treba obraditi za slanje Sdi-u. ZA ONE KOJI NISU POTPISALI UGOVOR FE S FLUENTIS OVA PROMJENA STANJA BLOKIRA RAČUN NA BILO KOJU DRUGU AKCIJU | *Sljedeće*: NEMA RUČNE AKCIJE. Stanje se ažurira od Fluentis Business Hub. NIJE UPRAVLJANO ZA ONE KOJI NISU POTPISALI UGOVOR FE S FLUENTIS | 
+| Otkazano | Dokument se ne smije slati krajnjem kupcu, ali ostaje valjan za potrebe PDV-a | *Sljedeće*: NEMA RUČNE AKCIJE. *Prethodne*: Nije pregledano | 
+| Isključeno | Dokument je stvoren, ali ne spada među one koji se šalju Sdi-u (npr. interna nota o povratu ili kupac koji nije rezident u Italiji i nije podložan elektroničkom fakturiranju s slanjem Sdi-u) | *Sljedeće*: NEMA RUČNE AKCIJE. *Prethodne*: Nije pregledano | 
+| Neusklađeno (pasivni ciklus) | Dokument je primljen od usluge Fluentis Business Hub i nije usklađen s nijednim računovodstvenim elementom (NIJE UPRAVLJANO ZA ONE KOJI NISU POTPISALI UGOVOR FE S FLUENTIS) | *Sljedeće*: Primljeno | 
+| Primljeno (pasivni ciklus) | Dokument je usklađen s računovodstvenim zapisom/dokumentom o kupnji/dokumentom o naknadi (NIJE UPRAVLJANO ZA ONE KOJI NISU POTPISALI UGOVOR FE S FLUENTIS) | *Prethodne*: Neusklađeno |
 
-Se l'invio viene fatto tramite Fluentis Business Hub, dopo aver contrassegnato il documento creato con lo 
-stato “Da spedire”, gli stati successivi acquisiti direttamente dal Fluentis Business Hub possono essere:          
+Ako se slanje vrši putem Fluentis Business Huba, nakon što se označi stvoreni dokument sa stanjem “Za slanje”, sljedeća stanja koja se izravno preuzimaju iz Fluentis Business Huba mogu biti:          
 
-QUESTI STATI NON SONO GESTITI PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FBH CON FLUENTIS           
+OVI STANJE NISU UPRAVLJANA ZA ONE KOJI NISU POTPISALI FBH UGOVOR S FLUENTIS 
 
 
 | Stato documento | Descrizione | Azioni possibili | Notifica XML da SDI |

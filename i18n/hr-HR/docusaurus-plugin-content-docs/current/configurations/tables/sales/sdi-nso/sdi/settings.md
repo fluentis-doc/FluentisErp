@@ -1,48 +1,42 @@
 ---
-title: Impostazioni tecniche
+title: Tehničke postavke  
 sidebar_position: 9
 ---
 
-Al fine di configurare correttamente la connessione tra il gestionale Fluentis e servizio Fluentis Business Hub, è necessario:
-1) configurare in Arm il servizo Fluentis BizLink Tools Service                
-2) aver comunicato il nome dell’istanza del Server SQL e il nome del Database da abilitare per la connessione al servizio Fluentis Business Hub (se non è stato fatto alla sottoscrizione del 
-contratto, o se tali informazioni sono variate, è possibile farlo inviando una mail all’indirizzo fatturazione.elettronica@fluentis.com).
+Kako bi se ispravno konfigurirala veza između poslovnog sustava Fluentis i servisa Fluentis Business Hub, potrebno je:  
+1) konfigurirati u ARM-u servis Fluentis BizLink Tools Service                 
+2) dostaviti naziv SQL Server instance i naziv baze podataka koja treba biti omogućena za povezivanje sa servisom Fluentis Business Hub (ako to nije učinjeno prilikom potpisivanja ugovora ili su se podaci promijenili, informacije je moguće poslati na e-mail: fatturazione.elettronica@fluentis.com
+).  
 
-**CONFIGURARE IL SERVIZIO FLUENTIS BIZLINK TOOLS SERVICE**            
+**KONFIGURACIJA SERVISA FLUENTIS BIZLINK TOOLS SERVICE**            
 
-Per attivare correttamente il colloquio tra il gestionale Fluentis e il servizio Fluentis Business Hub, è necessario configurare il servizio Fluentis BizLink Tool Service, un servizio installato automaticamente con la 
-versione applicativa 538 (e successive) e che permette di gestire la connessione a più database con un unico utente Bizlink.                  
+Za pravilnu komunikaciju između Fluentisa i servisa Fluentis Business Hub potrebno je konfigurirati servis Fluentis BizLink Tool Service, koji se automatski instalira s verzijom aplikacije 538 (i novijim) te omogućuje upravljanje povezivanjem više baza podataka putem jednog BizLink korisnika.             
 
 :::tip[N.B.]
-Per la corretta gestione delle impostazioni tecniche si raccomanda di aggiornare sempre Fluentis installando tutte le patch rilasciate per la versione di competenza.
+Za pravilno funkcioniranje tehničkih postavki preporučljivo je uvijek ažurirati Fluentis instaliranjem svih zakrpa dostupnih za vašu verziju.  
 :::
 
-Per la configurazione del servizio Fluentis Bizlink Tools Service:
-1) interrompere l’esecuzione del servizio Fluentis BizLink Tool Service (se attivo)
-2) dal modulo ARM accedere alla voce di menu Connessioni > Utenti bizlink per creare l’ utente al quale associare le singole connessioni:
-3) nella griglia Utenti Bizlink verificare la presenza del nuovo utente (configurato con la versione 538) FlConServiceUser (Effe elle Con Service User), impostato con password FlConServiceUserPwd (Effe elle Con Service User Pwd).                 
-In corrispondenza dell’utente FlConServiceUser dovranno essere selezionate, nella griglia sulla parte destra della videata, le Connessioni ai database per i quali il servizio Fluentis BizLink Tool Service dovrà essere attivo (quindi i database sui quali si intende rendere operativa la fatturazione elettronica).
-4) Riavviare il servizio Fluentis BizLink Tool Service                
+Postupak konfiguracije servisa Fluentis BizLink Tools Service
+1) Zaustaviti rad servisa Fluentis BizLink Tool Service (ako je aktivan)  
+2) U modulu ARM otvoriti izbornik Konekcije > Bizlink korisnici i kreirati korisnika kojem će se pridružiti pojedine konekcije  
+3) U kartici Bizlink korisnici provjeriti da postoji novi korisnik (dodan s verzijom 538):
+FlConServiceUser (Effe Elle Con Service User), s lozinkom FlConServiceUserPwd
+U desnoj gridi potrebno je označiti sve konekcije prema bazama podataka za koje će servis Fluentis BizLink Tool Service biti aktivan (tj. baze za koje će elektroničko fakturiranje biti omogućeno)  
+4) Ponovno pokrenuti servis Fluentis BizLink Tool Service               
 
-Per verificare che il servizio abbia recepito le impostazioni dell’utente inserito, è possibile monitorare il file di log Fluentis.Bizlink.Tools.Service.Exe.txt, presente nella cartella di installazione del server Fluentis sottocartella “\Bin\Logs” (nel dubbio su quale sia la cartella di installazione di Fluentis verificare nella 
-finestra proprietà del punto 1 il “percorso file eseguibile” del servizio). Il log deve presentare una tracciatura per l’avvio del servizio (“Starting service”) e tracciature di tipo INFO di 
-agganci dei connettori (tra cui “INFO Fluentis.BizLink.Tools.Service.FluentisBusinessHubInputConnector” che sono quelli della fatturazione elettronica). Nel caso sia presente solo la riga di avvio del servizio significa che non sono stati trovati i connettori Bizlink,oppure che non è stato configurato correttamente l’utente di connessione in Arm.
-Nel caso compaia una tracciatura di tipo ERROR, andrà gestito lo specifico errore segnalato dopo aver aggiornato Fluentis all’ultima patch disponibile.               
+Da biste provjerili je li usluga primila postavke unosa korisnika, možete pratiti datoteku dnevnika Fluentis.Bizlink.Tools.Service.Exe.txt, koja se nalazi u mapi instalacije servera Fluentis, podmapa “\Bin\Logs” (ako niste sigurni koja je mapa instalacije Fluentisa, provjerite u prozoru svojstava točke 1 “putanju izvršne datoteke” usluge). Dnevnik bi trebao sadržavati tragove za pokretanje usluge (“Starting service”) i tragove tipa INFO o povezivanju konektora (među kojima je “INFO Fluentis.BizLink.Tools.Service.FluentisBusinessHubInputConnector”, koji se odnose na elektroničko fakturiranje). Ako se pojavi samo redak za pokretanje usluge, to znači da konektori Bizlink nisu pronađeni ili da korisnik za povezivanje u Arm nije ispravno konfiguriran. Ako se pojavi trag tipa ERROR, potrebno je obraditi specifičnu grešku koja je prijavljena nakon ažuriranja Fluentisa na najnoviju dostupnu zakrpu.         
 
-Ad esempio nel caso il messaggio di errore sia “Il computer deve essere trusted per la delega e l’account utente corrente deve essere configurato per consentire la delega” si tratta di un problema relativo a come windows gestisce i certificati di sicurezza che può essere corretto modificando una chiave nel registro di configurazione:
+Na primjer, u slučaju da je poruka o pogrešci “Računalo mora biti pouzdano za delegiranje i trenutni korisnički račun mora biti konfiguriran za omogućavanje delegiranja”, radi se o problemu vezanom uz to kako Windows upravlja sigurnosnim certifikatima, što se može ispraviti izmjenom jednog ključa u registru:
 1. Premere Windows + R
-2. Scrivere “regedit” e premere enter
-3. Navigare su HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Protect\Providers\df9d8cd0-1501-11d1-8c7a-00c04fc297eb
-4. Nella cartella, cliccare con il pulsante destro del mouse e selezionare Nuovo > Valore DWORD (32 Bit)
-5. Rinominarlo ‘ProtectionPolicy’
-6. Click destro su ‘Protection Policy’
-7. Cliccare Modifica e cambiare la casella “Dati valore” a 1 e selezionare Base: Esadecimale
+2. Upišite “regedit” i potvrditi  
+3. Navigirati na: HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Protect\Providers\df9d8cd0-1501-11d1-8c7a-00c04fc297eb
+4. U mapi kliknuti desnom tipkom miša i odabrati Novo > DWORD vrijednost (32 Bit)
+5. Preimenovati je u ‘ProtectionPolicy’
+6. Desni klik na ‘Protection Policy’
+7. Kliknuti Uredi i postaviti polje “Vrijednost podatka” na 1, te odabrati bazu heksadecimalno.  
 
-**COMUNICARE IL NOME DELL’ISTANZA SQL E IL NOME DEL DATABASE**           
+**KOMUNICIRATI IME INSTANCI SQL I IME BAZE PODATAKA**         
 
-Al fine di identificare univocamente il database per il colloquio con il servizio Fluentis Business Hub, è necessario reperire, dai server di installazione dei gestionali Fluentis, il nome dell’istanza SQL e il nome del database sul quale si intende attivare la Fatturazione Elettronica. Tali informazioni possono essere 
-reperiti direttamente dalla connessione visualizzata in SQL Server Management Studio.         
-Oppure, eseguendo l’istruzione SQL “select @@servername” sulla connessione attiva. In particolare questo metodo è necessario qualora sia stato rinominato il server dopo l’installazione di 
-Fluentis: in questo caso, malgrado venga visualizzato il nuovo nome, Sql Server mantiene registrato il vecchio.
-Tali informazioni vanno comunicate a Fluentis con una mail all’indirizzo di posta elettronica fatturazione.elettronica@fluentis.com, diversamente nel momento in cui viene eseguita la Verifica 
-Connessione con il servizio FBH nella voce di menu Configurazione Fatturazione Elettronica, verrebbe restituito l’errore “Le credenziali sono valide ma l'esecuzione in questo contesto non è consentita”.
+Kako bi se jedinstveno identificirala baza podataka za komunikaciju sa servisom Fluentis Business Hub, potrebno je pribaviti, s poslužitelja instalacije Fluentis poslovnih sustava, naziv SQL instance i naziv baze podataka na kojoj se planira aktivirati Elektroničko fakturiranje. Te informacije mogu se dobiti izravno iz veze prikazane u SQL Server Management Studiu.  
+Ili, izvršavanjem SQL naredbe “select @@servername” na aktivnoj vezi. Ova metoda je posebno potrebna ako je poslužitelj preimenovan nakon instalacije Fluentis: u tom slučaju, iako se prikazuje novo ime, SQL Server zadržava registrirano staro ime.  
+Te informacije treba poslati Fluentisu putem e-maila na adresu fatturazione.elettronica@fluentis.com, inače, kada se izvrši Provjera veze sa servisom FBH u izborniku Konfiguracija Elektroničkog fakturiranja, bit će vraćena greška “Kredencijali su valjani, ali izvršenje u ovom kontekstu nije dopušteno.”

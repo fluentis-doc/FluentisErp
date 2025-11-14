@@ -7,195 +7,158 @@ Upravljanje dokumentom elektroničkog fakturiranja za aktivni ciklus prema važe
 
 *ELEKTRONIČKO FAKTURIRANJE PREMA JAVNOJ UPRAVI*            
 
-- generazione del documento di vendita
-- invio a SdI (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- validazione fattura da parte di SdI (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-> - la fattura è corretta; inizia la procedura di consegna; la Pubblica Amministrazione viene individuata correttamente e il SdI inizia le procedure di consegna:
-> > - nel caso di buon esito della trasmissione, il SdI invia al soggetto trasmittente 
-una ricevuta di consegna della fattura elettronica;
-> > - nel caso in cui, per cause tecniche non imputabili al SdI, la trasmissione al 
-soggetto ricevente non fosse possibile 5 giorni, il SdI invia al soggetto 
-trasmittente una notifica di mancata consegna; resta a carico del SdI l’onere di 
-contattare il destinatario affinché provveda tempestivamente alla risoluzione 
-del problema ostativo alla trasmissione, e, a problema risolto, di procedere con 
-l’invio; se, trascorsi 10 giorni dalla data di trasmissione della notifica di 
-mancata consegna, il SdI non è riuscito a recapitare la fattura elettronica al 
-soggetto ricevente , inoltra al soggetto trasmittente una definitiva attestazione 
-di avvenuta trasmissione della fattura con impossibilità di recapito
-> > - il soggetto ricevente entro il termine di 15 giorni dalla prima comunicazione 
-inviata al soggetto trasmittente, più precisamente dalla data riportata nella 
-ricevuta di consegna o dalla data di trasmissione della notifica di mancata 
-consegna, può inviare una notifica di accettazione/rifiuto (notifica di esito 
-committente) della fattura
-> > - se entro il termine dei 15 giorni suddetto il SdI non riceve alcuna 
-comunicazione, il SdI inoltra notifica di decorrenza dei termini sia al soggetto 
-trasmittente sia al soggetto ricevente . Tale notifica ha la sola funzione di 
-comunicare alle due parti che il SdI considera chiuso il processo relativo a 
-quella fattura. La notifica di decorrenza termini segnala che il Sistema di 
-Interscambio ha regolarmente concluso la gestione (ricezione e consegna ) 
-della fattura oggetto della notifica. Pertanto dopo tale notifica il SdI scarterà la 
-fattura, se reinviata, e qualsiasi comunicazione ad essa relativa. 
-> - la fattura non è corretta e quindi viene inviato all’emittente una notifica di scarto e la fattura 
-dovrà essere riemessa
+- generiranje prodajnog dokumenta
+- slanje u SdI (NIJE OBUHVAĆENO ZA ONE KOJI NEMAJU POTPISAN FE UGOVOR S FLUENTISOM)
+- validacija računa od strane SdI (NIJE OBUHVAĆENO ZA ONE KOJI NEMAJU POTPISAN FE UGOVOR S FLUENTISOM)  
+> - račun je ispravan; započinje postupak dostave; javna uprava je ispravno identificirana i SdI pokreće postupke dostave:
+> > - ako je prijenos uspješan, SdI šalje pošiljatelju potvrdu o dostavi elektroničkog računa;
+> > - ako zbog tehničkih razloga koji nisu u nadležnosti SdI-a dostava primatelju nije moguća u roku od 5 dana, SdI šalje pošiljatelju obavijest o neuspješnoj dostavi; SdI i dalje ima obvezu kontaktirati primatelja kako bi on što prije otklonio prepreku koja sprječava dostavu te, nakon rješavanja problema, izvršiti ponovni pokušaj slanja; ako SdI u roku od 10 dana od datuma slanja obavijesti o neuspješnoj dostavi ne uspije dostaviti račun primatelju, pošiljatelju šalje konačnu potvrdu o izvršenom prijenosu s nemogućnošću dostave  
+> > - primatelj u roku od 15 dana od prve obavijesti upućene pošiljatelju – odnosno od datuma navedenog u potvrdi o dostavi ili od datuma slanja obavijesti o neuspješnoj dostavi – može poslati obavijest o prihvaćanju/odbijanju (obavijest o ishodu) računa  
+> > - ako u roku od 15 dana SdI ne zaprimi nikakvu obavijest, SdI pošiljatelju i primatelju šalje obavijest o isteku roka. Ova obavijest služi samo kao potvrda da SdI smatra postupak za taj račun završenim. Nakon te obavijesti SdI odbacuje svaki ponovni pokušaj slanja istog računa te svaku komunikaciju vezanu uz njega.  
+> - račun nije ispravan te se pošiljatelju šalje obavijest o odbacivanju; račun je potrebno ponovno izdati.   
 
-*FATTURAZIONE B2B/B2C*
+*FAKTURIRANJE B2B/B2C*
 
-- generazione del documento di vendita
-- invio a SdI (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- validazione fattura da parte di SdI (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-> - la fattura è corretta: inizia la procedura di consegna e si possono aprire due scenari:
-> > - il canale di invio per il destinatario viene riconosciuto e la fattura viene consegnata
-> > - il canale di invio per il destinatario non viene riconosciuto e quindi copia della fattura viene salvata sull’area riservata del destinatario che verrà avvisato dall’emittente dell’emissione della fattura
-> > - il destinatario è un soggetto privato quindi copia della fattura viene salvata sull’area 
-riservata del destinatario che verrà avvisato dall’emittente dell’emissione della fattura
-> - la fattura non è corretta e quindi viene inviato all’emittente una notifica di scarto e la fattura dovrà essere riemessa
-> > - il canale di invio per il destinatario non viene riconosciuto e quindi copia della fattura viene salvata sull’area riservata del destinatario che verrà avvisato dall’emittentedell’emissione della fattura
-> > - il destinatario è un soggetto privato quindi copia della fattura viene salvata sull’area riservata del destinatario che verrà avvisato dall’emittente dell’emissione della fattura
-> - la fattura non è corretta e quindi viene inviato all’emittente una notifica di scarto e la fattura dovrà essere riemessa
+- generiranje prodajnog dokumenta  
+- slanje u SdI (NIJE OBUHVAĆENO ZA ONE KOJI NEMAJU POTPISAN FE UGOVOR S FLUENTISOM)  
+- validacija računa od strane SdI (NIJE OBUHVAĆENO ZA ONE KOJI NEMAJU POTPISAN FE UGOVOR S FLUENTISOM)  
+> - račun je ispravan: pokreće se postupak dostave i mogu nastati dva scenarija:  
+> > - kanal za slanje primatelju je prepoznat i račun se dostavlja  
+> > - kanal za slanje primatelju nije prepoznat te se kopija računa sprema u njegovu zaštićenu zonu, a primatelja o izdavanju računa obavještava izdavatelj
+> > - primatelj je privatna osoba te se kopija računa sprema u njegovu zaštićenu zonu, a primatelja o izdavanju računa obavještava izdavatelj  
+> - račun nije ispravan te se pošiljatelju šalje obavijest o odbacivanju i račun mora biti ponovno izdan  
+> > - kanal za slanje primatelju nije prepoznat te se kopija računa sprema u njegovu zaštićenu zonu, a primatelja o izdavanju računa obavještava izdavatelj  
+> > - primatelj je privatna osoba te se kopija računa sprema u njegovu zaštićenu zonu, a primatelja o izdavanju računa obavještava izdavatelj  
+> - račun nije ispravan te se pošiljatelju šalje obavijest o odbacivanju i račun mora biti ponovno izdan  
 
-In Fluentis è possibile generare documenti del ciclo attivo di vendita e, per i clienti per i quali è stata correttamente impostata la fatturazione elettronica nei parametri anagrafici, prepare il il file XML da inviare al SdI. Ad ogni fase prevista a livello normativo CORRISPONDE uno STATO del documento in Fluentis.         
-Qualora in Fluentis risulti correttamente configurata la comunicazione con Fluentis Business Hub (nellasezione Configurazione Fatturazione Elettronica per Società), sarà possibile inoltre inviare direttamente il file al SdI e ricevere le relative notifiche, diversamente, una volta generato il file XML relativo alla fattura, sarà possibile scaricare il file e procedere al suo invio tramite altri canali esterni a Fluentis.            
-Le tipologie di documento che per le quali è possibile in Fluentis gestire la generazione del file XML e l’invio a SdI (previste anche dalle vigenti normative), sono:
-- Fattura di vendita
-- acconto/anticipo su fattura
-- acconto/anticipo su parcella
-- nota di credito
-- nota di debito
-- Parcella         
+U Fluentisu je moguće generirati dokumente iz aktivnog prodajnog ciklusa te, za kupce kod kojih je u šifrarniku ispravno podešena elektronička fakturacija, pripremiti XML datoteku za slanje u SdI.
+Svakoj fazi predviđenoj propisima odgovara određeni status dokumenta u Fluentisu.  
+Ako je u Fluentisu ispravno konfigurirana komunikacija s Fluentis Business Hubom (u odjeljku Konfiguracija elektroničke fakturacije za društvo), moguće je XML datoteku izravno poslati u SdI i primati pripadajuće obavijesti.  
+U suprotnom, nakon generiranja XML datoteke računa, moguće ju je preuzeti i poslati preko drugih vanjskih kanala.  
+Tipovi dokumenata za koje je u Fluentisu moguće generirati XML datoteku i izvršiti slanje u SdI (kako propisuju važeći propisi) uključuju:  
+- prodajni račun  
+- akontacija/avans na račun  
+- akontacija/avans na obračun  
+- storno  
+- zaduženje  
+- obračun          
 
-Il file XML generato riporterà al suo interno la codifica relativa al tipo documento e, indipendentemente dalla 
-tipologia, le modalità operative di generazione del file XML ed eventuale invio a SdI sono le medesime per 
-tutte le tipologie di file. All’interno del file XMl generato:
-- per i soggetti identificati/residenti nel territorio dello stato, il soggetto destinatario del documentoviene identificato tramite il codice destinatario o PEC o indirizzo telematico 
-- per le Pubbliche Amministrazioni, il codice destinatario è rappresentato dal codice IPA identificativo dell’Ufficio preposto al ricevimento della fattura.            
+Generirani XML datoteka sadržavat će kodiranje vezano uz vrstu dokumenta i, neovisno o vrsti, operativni postupci za generiranje XML datoteke i eventualno slanje SdI su isti za sve vrste datoteka. Unutar generirane XML datoteke:  
+- za subjekte identificirane/rezidente na području države, subjekt primatelj dokumenta identificira se putem koda primatelja ili PEC-a ili elektroničke adrese;  
+- za Javne uprave, kod primatelja predstavlja identifikacijski IPA kod Ureda zaduženog za prijem računa.  
 
-Tali impostazioni sono inserite nell’anagrafica CLIENTE di ogni soggetto censito in Fluentis.
+Ove postavke unesene su u karticu KLIJENTA svakog subjekta evidentiranog u Fluentis.
 
-## Numerazione univoca dei documenti
+## Jedinstvena numeracija dokumenata  
 
-Ai fini della corretta e univoca numerazione dei documenti di vendita necessaria per evitare lo scarto di documenti riconosciuti dal SDI come già presentati, si consiglia di definire per ogni Tipo documento Fattura di vendita una numerazione univoca che permetta di identificare correttamente il documento, a titolo di esempio, impostando un suffisso “/B” dopo la numerazione. Si ricorda che, per gestire i numeratori dei documenti di vendita, è necessario accedere alla funzione Tabelle > Vendita > Numerazione fatture.           
-Per impostare il numero fattura (o bolla) con il barrato (esempio 1/A, 2/A.... 1/B, 2/B), impostare nella tabella Numeratori, la formula 
-**number.ToString()+"/B"**            
+Radi ispravne i jedinstvene numeracije prodajnih dokumenata — nužne kako bi se izbjeglo odbacivanje dokumenata koje SdI prepoznaje kao već ranije poslane — preporučuje se da se za svaki tip dokumenta Prodajni račun definira jedinstvena numeracija koja jasno identificira dokument.  
+Primjerice, može se postaviti sufiks "/B" nakon broja dokumenta.  
+Podsjećamo da se numeratori prodajnih dokumenata podešavaju putem funkcije: Tabele > Prodaja > Numeracija računa. Za postavljanje broja računa (ili otpremnice / bolle) s kosom crtom (npr. 1/A, 2/A… 1/B, 2/B), potrebno je u tablici Numeratori postaviti formulu: **number.ToString()+"/B"**            
 
-Poi nel report sostituire il campo standard (es. Number) con un campo calcolato (es. CalcNumber) dove all’interno ci sia questa expression:         
+Zatim je u izvještaju potrebno zamijeniti standardno polje (npr. Number) s izračunatim poljem (npr. CalcNumber) koje sadrži sljedeću formulu:      
 **Iif(IsNullOrEmpty([FormattedNumber]), [Number], [FormattedNumber])**          
 
-ATTENZIONE funziona solo nel report, nelle form si continuerà a visualizzare il numero normale senza il 
-barrato ma nel file XML verrà riportato correttamente il numero univoco.            
-In sintesi per gestire l’emissione e la trasmissione delle fatture elettroniche in Fluentis i passi da seguire sono:
-- Impostazione Anagrafiche contatti
-- Impostazione Tabelle di gestione
-- EMISSIONE E TRASMISSIONE DOCUMENTI DI VENDITA con le funzioni predisposte e descritte nel paragrafo MODIFICARE E GESTIRE GLI STATI DEI DOCUMENTI
+**PAŽNJA (ATTENZIONE)**: funkcionira samo u izvještaju, u obrascima će se i dalje prikazivati normalni broj bez precrtavanja, ali u XML datoteci bit će ispravno prikazan jedinstveni broj.  
+Ukratko, za upravljanje izdavanjem i prijenosom elektroničkih računa u Fluentisu, koraci koje treba slijediti su:  
+- Postavljanje kartica kontakata
+- Postavljanje tablica za upravljanje
+- IZDAVANJE I PRIJENOS DOKUMENATA PRODAJE s funkcijama pripremljenim i opisanim u odlomku IZMJENITI I UPRAVLJATI STANJIMA DOKUMENATA.
 
-## Emissione e trasmissione documenti di vendita
+## Izdavanje i slanje prodajnih dokumenata
 
-La gestione dei documenti di vendita da trasmettere in formato elettronico al Sistema di Interscambio inizia 
-con la creazione del documento dal ciclo attivo di Fluentis nello stato di NON ESAMINATA: menu Home > 
-Vendite >Fatture > Nuovo.
-Una volta creato il documento, la generazione del documento XML corrispondente e la trasmissione dei 
-documenti al SdI (tramite Fluentis Business Hub), avvengono attraverso la gestione manuale dello stato del 
-documento relativamente alla Fatturazione elettronica da parte dell’operatore nella sezione predisposta: 
-fino ad arrivare allo stato “Da spedire”, con il quale viene inserito il documento in una “coda di spedizione” 
-e, attraverso un processo schedulato di BizLink, inviati a Fluentis Business Hub per la gestione. Da questo 
-momento, lo stato dei documenti verrà aggiornato automaticamente da processi silenti automatici e non 
-sarà possibile alcun intervento manuale da parte dell’operatore, fino alla ricezione della notifica di scarto, di 
-consegna o di mancata consegna. Gli stati dei documenti e notifiche di consegna saranno sempre visibili nella 
-form RICERCA FATTURE DI VENDITA e nella funzione REGISTRO DEI DOCUMENTI SdI.
+Upravljanje dokumentima prodaje koji se šalju u elektroničkom formatu Sustavu za razmjenu započinje kreiranjem dokumenta iz aktivnog ciklusa Fluentis u stanju NEISPITANO: Početna stranica > Prodaja > Računi > Novi.  
+Jednom kada je dokument kreiran, generiranje odgovarajućeg XML dokumenta i prijenos dokumenata u SdI (putem Fluentis Business Hub) odvijaju se kroz ručno upravljanje stanjem dokumenta u vezi s Elektroničkom fakturacijom od strane operatera u predviđenom odjeljku: do stanja "Za slanje", kada se dokument stavlja u "red za slanje" i, putem zakazanog procesa BizLink, šalje se Fluentis Business Hub-u na upravljanje. Od ovog trenutka, stanje dokumenata bit će automatski ažurirano putem tihih automatskih procesa i neće biti moguće nikakvo ručno interveniranje od strane operatera, sve do primitka obavijesti o odbijanju, isporuci ili neisporuci. Stanja dokumenata i obavijesti o isporuci uvijek će biti vidljiva u obrascu PRETRAŽIVANJE RAČUNA PRODAJE i u funkciji REGISTAR DOKUMENATA SdI.
 
-## Come modificare e gestire gli stati dei documenti
+## Kako mijenjati i upravljati stanjima dokumenata  
 
-Dopo aver generato il documento di vendita, la modifica degli stati dei documenti può essere gestita singolarmente per documento oppure massivamente attraverso la procedura di CAMBIO STATO, all’interno di 4 funzionalità:
-1) singolarmente dalla form di gestione della singola fattura ( form Fattura) con la funzione prevista nel Ribbon menu nella sezione Fatturazione elettronica
-2) massivamente dalla form RICERCA FATTURE DI VENDITA con la funzione prevista nel Ribbon menu nella sezione Fatturazione elettronica dopo aver selezionato i documenti da gestire
-3) singolarmente dalla funzione REGISTRO DEI DOCUMENTI SdI con la funzione prevista nel Ribbon menu 
-4) massivamente dalla funzione di gestione dello Stato prevista nel Ribbon menu dell’Application BizLink – Documenti SDI – DOCUMENTI DI VENDITA IN USCITA da Bizlink, dopo aver selezionato i documenti da gestire        
-Il monitoraggio dei vari stati dei documenti e la loro gestione è possibile in qualsiasi momento accedendo alla videata di RICERCA, accessibile dalla voce di menu Vendita> Fatture> Fatture;
-oppure. dall’Application BizLink, accedendo alla voce Documenti SDI > DOCUMENTI DI VENDITA IN USCITA.
+Nakon generiranja dokumenta prodaje, promjena stanja dokumenata može se upravljati pojedinačno za svaki dokument ili masovno putem procedure PROMJENA STANJA, unutar 4 funkcionalnosti:  
+1) pojedinačno iz obrasca za upravljanje pojedinačnom fakturom s funkcijom predviđenom u Ribbon izborniku u odjeljku Elektroničko fakturiranje
+2) masovno iz obrasca PRETRAŽIVANJE FAKTURA PRODAJE s funkcijom predviđenom u Ribbon izborniku u odjeljku Elektroničko fakturiranje nakon odabira dokumenata za upravljanje  
+3) pojedinačno iz funkcije REGISTAR DOKUMENATA SdI s funkcijom predviđenom u Ribbon izborniku  
+4) masovno iz funkcije upravljanja Stanjem predviđenom u Ribbon izborniku aplikacije BizLink – Dokumenti SDI – DOKUMENTI PRODAJE U ODLASKU iz Bizlinka, nakon odabira dokumenata za upravljanje  
 
-## Ricerca fatture di vendita
+Praćenje raznih stanja dokumenata i njihovo upravljanje moguće je u bilo kojem trenutku pristupanjem prikazu PRETRAŽIVANJA, dostupnom iz izbornika Prodaja > Fakture > Fakture;  
+ili iz aplikacije BizLink, pristupanjem stavci Dokumenti SDI > DOKUMENTI PRODAJE U ODLASKU.
 
-La videata di ricerca “Fatture di vendita” accessibile dal punto di menu Home > Vendita > Fatture >Fatture, 
-accoglie le informazioni relative agli stati e alla gestione dei documenti inviati tramite Fluentis al Fluentis Business Hub e le relative notifiche di stato.           
-Le colonne dalle quali è possibile monitorare lo stato del documento, sia quando risulta ancora in gestione all’operatore sia quando inviato e quindi gestito da Fluentis Business Hub sono:
-- *Stato SdI*: accoglie la descrizione dello stato del documento, riportando sia lo stato di gestione interno di Fluentis sia lo stato riportato da Fluentis Business Hub e acquisito direttamente da SdI (vediparagrarafo STATI DEI DOCUMENTI).
-- *Nome file SdI*: il nome del file che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all’apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI (Nome del file). 
-- *Sdi Id*: l’identificativo univoco che il SdI attribuisce al documento nel momento della ricezione (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- *Data ricezione Sdi*: la data in cui il sistema di interscambio ha acquisto il documento inviatogli. Tale 
-informazione viene reperita dalla notifica di ricezione che il SdI rilascia a fronte del recepimento della spedizione e prima di procedere con i controlli formali del file (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- *Data chiusura*: la data di chiusura del flusso di gestione (es. documento Cosegnato) (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- *Data ultimo evento*: la data dell’ultimo cambio stato avvenuto sul file o manualmente o per effetto dell’avanzamento dell’elaborazione sul SdI            
+## Pretraživanje prodajnih faktura
 
-I campi relativi alla gestione del documento elettronico sono anche utilizzabili come filtri di ricerca 
-documenti dall’expander Stato della Fattura Elettronica nel pannello di filtro.
-Dalla videata di ricerca Fatture di vendita è possibile, selezionando una sola fattura oppure fatture con il medesimo Stato SdI, modificarne lo stato di elaborazione utilizzando la funzione Stato della sezione Fatturazione elettronica del ribbon menu.
-In caso di selezione di un unico documento fattura e cliccando con il tasto destro del mouse sulla colonna in corrispondenza del nome del file XML e selezionando l’azione Apri Form oppure  selezionando l’azione Registro dei documenti SdI nella sezione Fatturazione elettronica del 
-ribbon menu si accede al Registro documenti SdI nel quale è possibile prendere visione del documento XML generato e della storia di gestione del documento di vendita.
+Videopanel za pretraživanje “Fakture prodaje” dostupan je putem izbornika Početna stranica > Prodaja > Fakture > Fakture, sadrži informacije o statusima i upravljanju dokumentima poslanim putem Fluentis na Fluentis Business Hub i pripadajuće obavijesti o statusu.  
+Stupci iz kojih je moguće pratiti status dokumenta, bilo kada je još u upravljanju operatera, bilo kada je poslan i stoga upravljan od strane Fluentis Business Huba, su:  
+- *Status SdI*: sadrži opis statusa dokumenta, prikazujući i unutarnji status upravljanja Fluentisa i status koji daje Fluentis Business Hub, a koji se izravno preuzima iz SdI (vidi odlomak STANJA DOKUMENATA).  
+- *Naziv datoteke SdI*: naziv datoteke koja se stvara u trenutku kada dokument pređe u stanje GENERIRANO; u izvornom formatu ili nakon stavljanja digitalnog potpisa, predstavlja datoteku računa koja se šalje SdI.  
+- *Sdi Id*: jedinstveni identifikator koji SdI dodjeljuje dokumentu u trenutku prijema (NIJE UPRAVLJAN ZA ONE KOJI NISU POTPISALI UGOVOR FE S FLUENTISOM)  
+- *Datum prijema Sdi*: datum kada je sustav razmjene primio dokument koji mu je poslan. Ova informacija se dobiva iz obavijesti o prijemu koju SdI izdaje nakon prijema pošiljke i prije nego što započne formalne provjere datoteke (NIJE UPRAVLJAN ZA ONE KOJI NISU POTPISALI UGOVOR FE S FLUENTISOM)  
+- *Datum zatvaranja*: datum zatvaranja toka upravljanja (npr. dokument isporučen) (NIJE UPRAVLJAN ZA ONE KOJI NISU POTPISALI UGOVOR FE S FLUENTISOM)  
+- *Datum posljednjeg događaja*: datum posljednje promjene statusa koja se dogodila na datoteci, bilo ručno ili kao rezultat napredovanja obrade na SdI.  
 
-## Registro dei documenti SDI
+Polja vezana uz upravljanje elektroničkim dokumentom također se mogu koristiti kao filtri za pretraživanje dokumenata iz proširenja Status elektroničkog računa u panelu filtra.  
+Iz videopanel za pretraživanje Fakture prodaje moguće je, odabirom jedne fakture ili faktura s istim Statusom SdI, promijeniti njihov status obrade koristeći funkciju Status iz odjeljka Elektroničko fakturiranje u izborniku trake.  
+U slučaju odabira jednog dokumenta računa i desnim klikom na stupac u skladu s nazivom XML datoteke te odabirom radnje Otvori obrazac ili odabirom radnje Registar dokumenata SdI u odjeljku Elektroničko fakturiranje u izborniku trake, pristupa se Registru dokumenata SdI u kojem je moguće pregledati generiranu XML datoteku i povijest upravljanja dokumentom prodaje.
 
-La funzione Registro dei documenti SdI consente di visualizzare per i documenti fatture di vendita gestiti lo stato di elaborazione del documento e di visionare 
-- il file XML generato
-- il file PDF allegato (se richiesto come allegato al documento XML)
-- le notifiche inviate da Fluentis Business Hub e acquisite direttamente dal SdI (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)        
+## Registar SdI dokumenata
 
-Nella gestione è possibile inoltre monitorare gli ultimi eventi relativi alla gestione del file e lo storico delle azioni eseguite. 
-Il Registro dei documenti SdI è accessibile:
-- dalla videata di Ricerca fatture di vendita selezionando un file fattura
-- dalla videata di gestione del singolo documento Fattura 
-- dalla funzione voce Documenti SDI > Documenti vendita in uscita           
+Funkcija Registar SdI dokumenata omogućuje pregled stanja obrade prodajnih računa te uvid u:  
+- generiranu XML datoteku
+- PDF prilog (ako je predviđen kao prilog XML dokumentu)  
+- obavijesti koje šalje Fluentis Business Hub i koje se zaprimaju izravno od SdI (NIJE OBUHVAĆENO ZA KORISNIKE KOJI NEMAJU POTPISAN FE UGOVOR S FLUENTISOM)    
 
-La videata Registro dei documenti SdI si compone di una sezione di testata riepilogativa e due pannelli:
-- Allegati
-- Registro dei documenti SdI             
+Unutar ove funkcije moguće je pratiti posljednje događaje vezane uz upravljanje datotekom te povijest svih izvršenih radnji.  
+Registar SdI dokumenata dostupan je:  
+- iz ekrana Pretraživanje prodajnih računa, odabirom pojedinog računa  
+- iz ekrana za upravljanje pojedinim dokumentom (forma Račun)
+- iz funkcije Documenti SDI > Izlazni prodajni dokumenti           
 
-Nella sezione di Testata vengono riepilogati i dati del documento di fattura:
-- Stato della fattura elettronica: lo stato del documento relativo al suo invio al SdI tramite Fluentis Business Hub (per dettagli sui tipi stati documenti vedi paragrafo STATI DEI DOCUMENTI)
-- Tipo fattura: il tipo di documento inviato – il codice Fluentis 
-- Data, Numero, Cliente: la data, il numero del documento e il cliente intestatario
-- Nome file SdI: il nome del file il nome del file XML che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all’apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI (per dettagli sulla compilazione del nome del file v. Paragrafo Nome del file).
-- SdI Id: l’identificativo univoco attribuito dal SdI al file fattura nel momento in cui il file viene ricevuto. Questo identificativo sarà utilizzato dal SdI per tutte le successive notifiche inviate al trasmittente(NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- Data ricezione SdI: la data in cui il SdI riceve il file fattura e invia la Notifica di ricezione al trasmittente(NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- Data ricevimento del cliente: coincide con la data consegna del documento al cliente oppure la datadi “messa a disposizione” del documento sull’area riservata del cliente. Quest’ultima casistica si riferisce agli invii per cui il SdI non riesce ad individuare correttamente il committente/cessionario(NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- Data ultimo evento:si riferisce all’ultima azione compiuta dall’operatore o all’ultima notifica ricevuta dal SdI durante il processo di gestione del documento
+Ekran Registar dokumenata SdI sastoji se od sažetka zaglavlja i dva panela:  
+- Prilozi 
+- Registar dokumenata SdI        
 
-## Pannello ALLEGATI 
+U zaglavlju prikazuju se sažeti podaci o računu
+- Status elektroničkog računa: stanje dokumenta vezano uz slanje u SdI putem Fluentis Business Hub-a
+(za detalje o vrstama statusa vidi poglavlje Stanja dokumenata)  
+- Vrsta računa: tip dokumenta koji je poslan – Fluentis šifra
+- Datum, Broj, Klijent: datum dokumenta, broj dokumenta i klijent (primatelj)
+- Naziv SdI datoteke: naziv XML datoteke koja se kreira kada dokument prijeđe u stanje GENERIRANA; u izvornom obliku ili nakon primjene digitalnog potpisa predstavlja XML dokument koji se šalje u SdI
+(za više detalja vidi poglavlje Naziv datoteke)
+- SdI ID: jedinstveni identifikator koji SdI dodjeljuje XML datoteci pri zaprimanja. Ovaj identifikator koristi se u svim naknadnim obavijestima upućenima pošiljatelju
+(NIJE OBUHVAĆENO ZA KORISNIKE BEZ FE UGOVORA S FLUENTISOM)
+- Datum primitka od SdI: datum kada SdI zaprimi XML datoteku i pošiljatelju pošalje Obavijest o primitku
+(NIJE OBUHVAĆENO ZA KORISNIKE BEZ FE UGOVORA S FLUENTISOM)
+- Datum primitka od klijenta: datum dostave dokumenta klijentu ili datum stavljanja na raspolaganje u zaštićenoj zoni klijenta. Ovo se odnosi na slučajeve u kojima SdI ne uspije identificirati primatelja
+(NIJE OBUHVAĆENO ZA KORISNIKE BEZ FE UGOVORA S FLUENTISOM)
+- Datum posljednjeg događaja: datum posljednje radnje operatora ili posljednje obavijesti dobivene od SdI tijekom upravljanja dokumentom
 
-Nel pannello ALLEGATI vengono presentati tutti i documenti relativi alla gestione elettronica della fattura, a partire dal file XML del documento fino all’ultima notifica ricevuta dal SdI. Cliccando nella in corrispondenza del documento nella griglia dei documenti, il documento viene visualizzato nella parte destra della videata 
-con un foglio di stile che interpreta il file XML di fattura o di notifica e lo visualizza con un formato utente semplificato, ad esempio per il file xml:
-La griglia dei documenti sulla sezione sinistra della videata presenta per ogni file le seguenti informazioni:
-- *Data*: la data di acquisizione dell’allegato
-- *Tipo del contenuto del file*: un identificativo tecnico relativo al foglio di stile adottato per visualizzare il file xml 
-- *Nome e Descrizione*: la descrizione il file xml visualizzato        
+## Panel PRILOZI
 
-Se nel file XML generato sono stati previsti allegati, nella parte inferiore del file xml visualizzato, si presenta una griglia con l’elenco degli allegati al documento. Cliccando in corrispondenza del nome del file allegato, è possibile scaricare il file e salvarlo per utilizzi esterni alla gestioneI file allegati agli stati del documento possono essere scaricati dalla funzione Scarica Allegato presente nel ribbon menu.
+U panelu Prilozi prikazani su svi dokumenti koji se odnose na elektroničko upravljanje računom — od XML datoteke dokumenta do posljednje obavijesti primljene od SdI.
+Klikom na dokument u lijevoj rešetci dokument se prikazuje u desnom dijelu ekrana, gdje se koristi odgovarajući stylesheet koji XML pretvara u pojednostavljen i čitljiv korisnički prikaz. Primjerice, za XML datoteku računa ili notifikacije.
+Rešetka dokumenata s lijeve strane prikazuje za svaki dokument:  
+- *Datum*: datum kada je prilog zaprimljen  
+- *Vrsta sadržaja*: tehnička oznaka stylesheet-a koji se koristi za prikaz XML-a  
+- *Naziv i opis*: opis prikazane XML datoteke         
 
-## Pannello REGISTRO DEI DOCUMENTI SDI 
+Ako su u generiranom XML datoteci predviđeni privici, u donjem dijelu prikazane XML datoteke prikazuje se mreža s popisom privitaka dokumenta. Klikom na naziv privitka moguće je preuzeti datoteku i spremiti je za vanjsku upotrebu. Privici povezani s statusima dokumenta mogu se preuzeti putem funkcije Preuzmi privitak koja se nalazi u traci izbornika.
 
-Il pannello Registro dei documenti SdI rappresenta lo storico di tutte le fasi di gestione del socumento elettronico, dal momento della sua generazione in formato XML al momento della consegna o dell’eventuale scarto.
-Nella griglia degli eventi, per ogni evento viene rappresentata la “Transizione” relativa ossia il cambio stato intervenuto sul documento e, dove previsto l’intervento manuale, il nome e la data dell’operatore che ha eseguito la transizione. Lo stato del documento collegato alla generazione del file XML e gli stati acquisiti da 
-SdI per i quali è prevista una notifica, hanno collegato anche il file XML corrispondente.         
-Cliccando in corrispondenza dell’evento collegato ad un file XML, si attiva la visualizzazione del file, utilizzando un foglio di stile che consente la visualizzazione del file XML in un formato utente semplificato, come ad esempio per un file di notifica di ricezione. La funzione Scarica contenuto del Registro permette il download del file selezionato e visualizzato. 
+## Panel REGISTAR SDI DOKUMENATA
 
-## Documenti di vendita in uscita
+Panel Registar dokumenata SdI predstavlja povijest svih faza upravljanja elektroničkim dokumentom, od trenutka njegove generacije u XML formatu do trenutka isporuke ili eventualnog odbacivanja.  
+U mreži događaja, za svaki događaj prikazana je "Transicija" koja se odnosi na promjenu stanja koja je nastupila na dokumentu, a gdje je predviđena ručna intervencija, ime i datum operatera koji je izvršio tranziciju. Stanje dokumenta povezano s generacijom XML datoteke i stanja koja je preuzela SdI za koja je predviđena obavijest, također su povezana s odgovarajućom XML datotekom.  
+Klikom na događaj povezan s XML datotekom, aktivira se prikaz datoteke, koristeći stilsku datoteku koja omogućuje prikaz XML datoteke u pojednostavljenom korisničkom formatu, kao što je na primjer za datoteku obavijesti o prijemu. Funkcija Preuzmi sadržaj registra omogućuje preuzimanje odabrane i prikazane datoteke.
 
-Nell’ application BizLink è possibile accedere alla voce di menu Documenti SDI – Documenti vendita in 
-uscita e visionare lo stato generale di tutti i documenti di vendita preparati dal flusso attivo, gestire lo 
-stato, visionare lo storico degli avanzamenti degli stati. Il dialogo *Documenti vendita in uscita* è diviso in due sezioni, una di testata che contiene i campi di filtro 
-utilizzabili per filtrare i documenti e una griglia di risultato della ricerca effettuata.         
+## Izlazni prodajni dokument
 
-I valori presentati nella griglia sono:
-- *Stato SdI*: lo stato del documento relativo al suo invio al SdI tramite Fluentis Business Hub (perdettagli sui tipi stati documenti vedi paragrafo STATI DEI DOCUMENTI)
-- *Tipo*: il codice di riferimento del tipo documento di vendita
-- *Data, Numero, Cliente*: la data, il numero del documento e il cliente intestatario
-- *Data di ricevimento del cliente*: la data consegna del documento al cliente oppure la data di “messa a disposizione” del documento sull’area riservata del cliente. Quest’ultima casistica si riferisce agli invii per cui il SdI non riesce ad individuare correttamente il committente/cessionario (NON GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS)
-- *Nome file SdI*: il nome del file il nome del file XML che viene creato nel momento in cui il documento viene avanzato nello stato GENERATA; nel formato originale o successivamente all’apposizione della firma digitale, rappresenta il file di fattura da inviare a SdI (per dettagli sulla compilazione del nome del file v. Paragrafo Nome del file).
-- *Data ultimo evento*: si riferisce all’ultima azione compiuta dall’operatore o all’ultima notifica ricevuta dal SdI durante il processo di gestione del documento.           
+U aplikaciji BizLink moguće je pristupiti stavci izbornika Dokumenti SDI – Dokumenti prodaje i pregledati opće stanje svih dokumenata prodaje pripremljenih iz aktivnog toka, upravljati stanjem, pregledati povijest napredovanja stanja. Dijalog *Dokumenti prodaje u izlazu* podijeljen je u dva dijela, jedan s naslovom koji sadrži polja za filtriranje koja se mogu koristiti za filtriranje dokumenata i jedan rezultat pretraživanja.
 
-Cliccando in corrispondenza dell’expander di una fattura si apre il dettaglio delle transizioni relative agli stati del documento e vengono visualizzate le singole transizioni intervenute nella gestione del documento con la relativa data di esecuzione e il nome dell’eventuale file generato dal cambio stato.
+Vrijednosti prikazane u mreži su:
+- *Stanje SdI*: stanje dokumenta u vezi s njegovim slanjem u SdI putem Fluentis Business Huba (za detalje o vrstama stanja dokumenata vidi odlomak STANJA DOKUMENATA)
+- *Tip*: referentni kod tipa dokumenta prodaje
+- *Datum, Broj, Klijent*: datum, broj dokumenta i klijent na čije ime je dokument
+- *Datum primitka klijenta*: datum isporuke dokumenta klijentu ili datum "stavljanja na raspolaganje" dokumenta u rezerviranom području klijenta. Ova posljednja situacija odnosi se na pošiljke za koje SdI ne može ispravno identificirati naručitelja/primatelja (NISU UPRAVLJENE ZA ONE KOJI NISU POTPISALI UGOVOR FE S FLUENTISOM)
+- *Naziv datoteke SdI*: naziv XML datoteke koja se stvara u trenutku kada dokument napreduje u stanje GENERIRANO; u izvornom formatu ili nakon stavljanja digitalnog potpisa, predstavlja datoteku računa koja se šalje SdI (za detalje o popunjavanju naziva datoteke vidi odlomak Naziv datoteke).
+- *Datum posljednjeg događaja*: odnosi se na posljednju akciju koju je izvršio operater ili na posljednju obavijest primljenu od SdI tijekom procesa upravljanja dokumentom.
 
-I documenti presentati nella griglia Registro dei documenti SdI sono tutti quelli creati dal flusso attivo di gestione dei documenti Fattura, indipendentemente dallo stato; l’azione doppio click in corrispondenza di una riga di fattura apre il pannello Registro documenti SdI nel quale è possibile visionare i documenti creati 
-durante la gestione del file fattura e lo storico degle transizioni.         
+Klikom na ekspanzivnom tipkom uz račun otvara se detalj tranzicija vezanih uz stanja dokumenta i prikazuju se pojedinačne tranzicije koje su se dogodile u upravljanju dokumentom s pripadajućim datumom izvršenja i nazivom eventualne datoteke generirane promjenom stanja.
 
-Nella griglia Registro documenti SdI, selezionando un documento fattura o più documenti fattura nel medesimo stato, è possibile gestire lo stato di lavorazione del documento utilizzando la combo Stato nellaribbon menu e selezionando il nuovo stato del documento.
-Selezionando una fattura dalla griglia, con la funzione Apri documento dal ribbon menu, viene aperto il documento fattura.
+Dokumenti prikazani u mreži Registar dokumenata SdI su svi oni stvoreni iz aktivnog toka upravljanja dokumentima Račun, neovisno o stanju; dvostruki klik na redak računa otvara panel Registar dokumenata SdI u kojem je moguće pregledati dokumente stvorene tijekom upravljanja datotekom računa i povijest tranzicija.
 
+U mreži Registar dokumenata SdI, odabirom dokumenta računa ili više dokumenata računa u istom stanju, moguće je upravljati stanjem obrade dokumenta koristeći kombinirani izbornik Stanje u izborniku trake i odabirom novog stanja dokumenta.  
+Odabirom računa iz mreže, funkcijom Otvorite dokument iz izbornika trake, otvara se dokument računa.
