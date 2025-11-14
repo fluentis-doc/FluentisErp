@@ -3,6 +3,15 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0055 - 14/11/2025
+
+> -	FI - fix missing automat payment registration at invoice accounting. ( TT02936/25) 
+> -	PM - Risolto caso per cui la configurazione non corretta di conti analitici, mandavano in loop la fatturazione da progetto (#TT04788/25) 
+> -	SD - Ordini Clienti Diagramma Evasione: Corretto diagramma nel caso ci siano delle note di accredito collegate alla fattura che è nata dal ddt che ha evaso un ordine cliente collegato ad una offerta (Rif.ticket 1207/25) 
+> -	SD - Ottimizzazione dell'importazione WebApi - vendite(#TT04576/25) 
+> -	WM - Analisi disponibilità risolto errore profilo contenente filtro tipo documento e calcoli per colonna (#TT03363/25) 
+
+
 ### Patch 707.1-0054 - 07/11/2025
 
 > -	Arm - Added Purchase Recycle Reports (Stampe Conai) in Standard Menu(TT04523/25) 
