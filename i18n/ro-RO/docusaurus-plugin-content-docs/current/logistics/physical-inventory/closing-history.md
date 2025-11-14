@@ -1,5 +1,5 @@
 ---
-title: Istoric închideri<!-- Storico chiusura -->
+title: Istoric închideri
 sidebar_position: 4
 ---
 
