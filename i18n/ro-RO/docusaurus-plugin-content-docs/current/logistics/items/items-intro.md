@@ -12,7 +12,7 @@ keywords: ["Articole", "gestionare articole", "creare articole", "căutare artic
 
 Formularul pentru gestionarea articolelor se află pe calea:
 
-- **Logistică> Articole > Articole**  
+- **Logistică > Articole > Articole**  
 sau  
 - **Home > Articole > Articole**
 
