@@ -108,7 +108,7 @@ L'elenco si compone delle seguenti informazioni:
 >> **Ore teoria**: sono le ore di teoria previste nell'orario previsto e alla data prevista (nel formato hh:mm).   
 >> **Ore pratica**: sono le ore di pratica previste nell'orario previsto e alla data prevista (nel formato hh:mm).   
 >> **Argomenti da trattare**: annotazioni libere sull'argomento.   
->La somma delle ore di teoria e di pratica da svlogere devono essere pari alla differenza degli orari previsti di fine e inizio.   
+>La somma delle ore di teoria e di pratica da svolgere devono essere pari alla differenza degli orari previsti di fine e inizio.   
 >
 > Dati effettivi
 >> **Data**: è la data effettiva del corso.   
@@ -127,7 +127,7 @@ La somma delle ore di teoria e di pratica svolte devono essere pari alla differe
 ### Mansioni interessate
 
 Sono le *Mansioni* interessate alla partecipazione al *Corso*.   
-Sulla base delle *Mansioni* elencate, tramite la pressione del pulsante **Aggiorna dipendenti**, vengonmo proposti i *Dipendenti* che le ricoprono.   
+Sulla base delle *Mansioni* elencate, tramite la pressione del pulsante **Aggiorna dipendenti**, vengono proposti i *Dipendenti* che le ricoprono.   
 L'elenco si compone delle seguenti informazioni:   
 > **Mansione**: è il codice della *Mansione*.   
 > **Descrizione mansione**: è la descrizione della *Mansione*.   
