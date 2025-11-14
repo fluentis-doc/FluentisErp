@@ -9,7 +9,7 @@ tags:
   - codifica
 last_update:
   author: Fluentis Documentation Team
-  date: 13-11-2025
+  date: 12-11-2025
 keywords:
   - automezzi
   - logistica
