@@ -3,6 +3,8 @@ title: Istoric închideri<!-- Storico chiusura -->
 sidebar_position: 4
 ---
 
+# Istoric închideri<!-- Storico chiusura -->
+
 :::important La ce folosește<!-- A cosa serve -->
 Introducerea la istoricul închiderilor din Fluentis oferă un acces esențial la datele istorice referitoare la închiderile de depozit<!-- chiusure di magazzino -->, permițând operatorilor să monitorizeze și să analizeze variațiile stocurilor<!-- giacenze --> în timp. Această funcționalitate permite consultarea unor informații detaliate precum costul ultim<!-- costo ultimo -->, costul mediu<!-- costo medio --> și stocurile depozitului<!-- giacenze di magazzino -->, toate realizate prin procedura de valorizare<!-- valorizzazione -->.
 
