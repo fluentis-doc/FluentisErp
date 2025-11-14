@@ -15,7 +15,7 @@ tags:
   - configurazione
 last_update:
   author: Fluentis Documentation Team
-  date: 14-11-2025
+  date: 13-11-2025
 ---
 
 # Gestione automezzo
