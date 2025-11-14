@@ -53,5 +53,5 @@ Questa guida spiega come configurare e gestire gli **automezzi** nel sistema Flu
 
 Per approfondire:
 - [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-types/)
-- [Consumo materiali](/docs/logistics/motorvehicles/material-consumption/)
+- [Consumo materiali](/docs/logistics/motorvehicles/material-consumption/material-consumption-filter/)
 - [Funzionalità, pulsanti e campi comuni](/docs/guide/common)

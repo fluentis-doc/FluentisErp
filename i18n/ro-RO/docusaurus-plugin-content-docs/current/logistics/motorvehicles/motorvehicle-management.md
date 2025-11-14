@@ -53,5 +53,5 @@ Acest ghid explică modul de configurare și gestionare a **autovehiculelor** î
 
 Pentru detalii suplimentare:
 - [Tip autovehicul](/docs/configurations/tables/logistics/motorvehicle-types/)
-- [Consum materiale](/docs/logistics/motorvehicles/material-consumption/)
+- [Consum materiale](/docs/logistics/motorvehicles/material-consumption/material-consumption-filter/)
 - [Funcționalități, butoane și câmpuri comune](/docs/guide/common)
