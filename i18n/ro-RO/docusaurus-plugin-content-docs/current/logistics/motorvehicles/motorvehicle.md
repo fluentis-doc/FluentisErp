@@ -36,7 +36,7 @@ Pentru a introduce un autovehicul nou:
 1. Faceți clic pe primul rând gol din tabel sau apăsați butonul **Nou**.
 2. Introduceți cel puțin câmpurile obligatorii cerute:
 
-   - **Tip autovehicul**: tipul vehiculului selectat din tabelul [Tip autovehicul](/docs/configurations/tables/logistics/motorvehicle-Type);
+   - **Tip autovehicul**: tipul vehiculului selectat din tabelul [Tip autovehicul](/docs/configurations/tables/logistics/motorvehicle-type);
   - **Cod**: reprezintă codul vehiculului;       
 - **Număr înmatriculare**: indică numărul de înmatriculare al vehiculului;      
 - **Dată înregistrare**: indică data înregistrării vehiculului;          

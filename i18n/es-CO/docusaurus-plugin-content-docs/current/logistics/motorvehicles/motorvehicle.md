@@ -20,7 +20,7 @@ El formulario se compone de un área de filtro y de una de resultados. Una vez c
 Para poder insertar nuevos *Vehículos*, es necesario hacer clic en la primera línea vacía de la cuadrícula o presionar el botón **nuovo**. 
 Para el nuevo registro se deben ingresar al menos los campos obligatorios solicitados por el programa: 
 
-- **tipo automezzo**: indica la tipología del medio ingresada en la tabla [Tipo de vehículo](/docs/configurations/tables/logistics/motorvehicle-Type);          
+- **tipo automezzo**: indica la tipología del medio ingresada en la tabla [Tipo de vehículo](/docs/configurations/tables/logistics/motorvehicle-type);          
 - **codice**: indica el código del vehículo;       
 - **targa**: indica el número de matrícula del vehículo;      
 - **data registrazione**: indica la fecha de registro del vehículo;          

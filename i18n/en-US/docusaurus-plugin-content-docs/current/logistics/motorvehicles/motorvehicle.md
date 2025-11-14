@@ -19,7 +19,7 @@ The form consists of a filter area and a results area. Once all desired filters 
 
 To insert new *Motorvehicles*, you must click on the first empty row in the grid or press the **New** button. For the new record, at least the mandatory fields required by the program must be entered:
 
-- **Motorvehicle type**: indicates the type of motorvehicle entered in the table [Motorvehicle Type](/docs/configurations/tables/logistics/motorvehicle-Type);          
+- **Motorvehicle type**: indicates the type of motorvehicle entered in the table [Motorvehicle Type](/docs/configurations/tables/logistics/motorvehicle-type);          
 - **Code**: indicates the motorvehicle code;       
 - **Number plate**: indicates the motorvehicle's license plate number;      
 - **Posting date**: indicates the motorvehicle registration date;          

@@ -36,7 +36,7 @@ le **Spedizioni**:
 - definire il tipo [*Proprietà automezzi*](/docs/configurations/tables/logistics/motorvehicle-ownership)   
 - definire i [*Marchi automezzi*](/docs/configurations/tables/logistics/motorvehicle-brands)   
 - definire i [*Tipo carburante automezzo*](/docs/configurations/tables/logistics/motorvehicle-gas-type)  
-- definire i [*Tipi automezzi*](/docs/configurations/tables/logistics/motorvehicle-Type)  
+- definire i [*Tipi automezzi*](/docs/configurations/tables/logistics/motorvehicle-type)  
 
 ## Collegamenti con altri moduli
 Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) e agli [*Ordini clienti*](/docs/sales/sales-orders/settings) dato che è possibile aggiungere gli articoli direttamente da un ordine.           
