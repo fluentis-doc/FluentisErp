@@ -28,12 +28,12 @@ Sulla base del filtro impostato si visualizzano i risultati all'interno della gr
 
 ### Proponi consegne   
 Pulsante abilitato solamente se precedentemente si è effettuata la **Ricerca consegne**.   
-Propone la *Quantità consegnata* a 1 (uno) in tutte le righe visualizzate nell'*Area risultato*.   
+Propone la *Quantità consegnata* a 1 (uno) in tutte le righe selezionate nell'*Area risultato* oppure in tutte se nessuna riga è stata selezionata.   
 
 
 ### Elimina consegne   
 Pulsante abilitato solamente se precedentemente si è effettuata la **Ricerca consegne**.   
-Propone la *Quantità consegnata* a 0 (zero) in tutte le righe visualizzate nell'*Area risultato*.   
+Propone la *Quantità consegnata* a 0 (zero) in tutte le righe selezionate nell'*Area risultato* oppure in tutte se nessuna riga è stata selezionata.   
 
 
 ### Ricerca resi   
@@ -45,16 +45,16 @@ Non vengono effettuati controlli che la *Quantità resa** sia coerente con le *Q
 
 ### Proponi resi   
 Pulsante abilitato solamente se precedentemente si è effettuata la **Ricerca resi**.   
-Propone la *Quantità resa* a 1 (uno) in tutte le righe visualizzate nell'*Area risultato*.   
+Propone la *Quantità resa* a 1 (uno) in tutte le righe selezionate nell'*Area risultato* oppure in tutte se nessuna riga è stata selezionata.   
 
 
 ### Elimina resi   
 Pulsante abilitato solamente se precedentemente si è effettuata la **Ricerca resi**.   
-Propone la *Quantità resa* a 0 (zero) in tutte le righe visualizzate nell'*Area risultato*.   
+Propone la *Quantità resa* a 0 (zero) in tutte le righe selezionate nell'*Area risultato* oppure in tutte se nessuna riga è stata selezionata.   
 
 
 ### ![](/img/neutral/common/save.png) Registra   
-Tutte le righe presenti nell'*Area risultato* con *Quantità consegnata* o *Quantità resa* maggiore di *zero* verranno inserite nello *Storico consegne/resi D.P.I.*, alla data *Consegnato/Reso in data* presenti nell'area *Dati proposti per le consegne/resi*.   
+Tutte le righe presenti nell'*Area risultato* con *Quantità consegnata* o *Quantità resa* maggiore di *zero* verranno inserite nello *Storico consegne/resi D.P.I.*, alla data *Consegnato/Reso in data* present nell'area *Dati proposti per le consegne/resi*.   
 
 
 ## Aree di gestione
