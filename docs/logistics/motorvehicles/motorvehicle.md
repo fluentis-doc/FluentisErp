@@ -36,7 +36,7 @@ Per inserire un nuovo automezzo:
 1. Cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
 2. Inserire almeno i campi obbligatori richiesti:
 
-   - **Tipo automezzo**: tipologia del mezzo selezionata dalla tabella [Tipo automezzo](/docs/configurations/tables/logistics/motorvehicle-type);
+   - **Tipo automezzo**: tipologia del mezzo selezionata dalla tabella [Tipo automezzo](../configurations/tables/logistics/motorvehicle-type);
    - **Codice**: codice identificativo del mezzo;
    - **Targa**: numero di targa del mezzo;
    - **Data registrazione**: data di registrazione del mezzo;
