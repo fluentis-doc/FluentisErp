@@ -36,7 +36,7 @@ las **spedizioni**:
 - definir el tipo [*Propiedad de vehículos (Proprietà automezzi)*](/docs/configurations/tables/logistics/motorvehicle-ownership)  
 - definir las [*Marcas de vehículos (Marchi automezzi)*](/docs/configurations/tables/logistics/motorvehicle-brands)  
 - definir el [*Tipo de combustible de vehículos (Tipo carburante automezzo)*](/docs/configurations/tables/logistics/motorvehicle-gas-type)  
-- definir los *Tipos de vehículos (Tipi automezzi)*  
+- definir los [*Tipos de vehículos (Tipi automezzi)*](/docs/configurations/tables/logistics/motorvehicle-type)  
 
 ## Conexiones con otros módulos (Collegamenti con altri moduli)  
 Estos están estrechamente relacionados con el [*anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) y con los [*ordini clienti*](/docs/sales/sales-orders/settings) dado que es posible agregar artículos directamente desde un pedido.  
