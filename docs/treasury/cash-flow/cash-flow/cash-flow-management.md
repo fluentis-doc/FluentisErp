@@ -28,8 +28,29 @@ Da questa maschera è anche possibile visualizzare il documento d'origine per va
  2. Contabilità: la maschera consente di riprendere i saldi dei tipi conto finanziari;
  3. Extra contabile: la maschera consente di riprendere i dati delle scadenze extracontabili di cash flow;
  4. Fatture (acquisto/vendita): da queste maschere si selezionano i dati delle scadenze fatture di acquisto/vendita ;
- 5. Ordini (clienti/fornitori): da queste maschere si selezionano le simulazioni dei dati residui degli ordini clienti/fornitori (stampati e confermati). Si consiglia di lasciare l'impostazione di default della maschera;
- 6. Percipienti non contabilizzati: la maschera consente di inserire nel cash flow i dati dei compensi percipienti non contabilizzati;
+ 5. Ordini (clienti/fornitori): da queste maschere si selezionano le simulazioni dei dati residui degli ordini clienti/fornitori (stampati e confermati). Nel caso in cui si desideri confrontare la ricerca, ad esempio, con la form generale di ricerca degli ordini (clienti o fornitori), tenere presente che: 
+     - nel cashflow sono selezionati (di default) solo gli ordini non evasi (con possibilità di attivare l'apposito flag per la ricerca di quelli parzialmente evasi, soltanto, oppure in aggiunta ai non evasi, di cui è comunque visibile in griglia il flag identificativo) 
+     - vengono esclusi ordini senza dettaglio di righe con valore diverso da zero (altrimenti non generano scadenze) 
+     - sono esclusi quelli forzatamente evasi
+     - la divisa deve essere non vuota
+     - il conto di testata deve essere valorizzato
+     - il numero dell'ordine eve essere maggiore di zero
+     - il tipo ordine deve avere il flag cashflow (come per la creazione automatica del cashflow)
+     - la data conferma ordine deve essere valorizzata
+     - l'ordine non deve essere già stato incluso in un'altro cashflow calcolato
+     
+L'help consente due modalità di ricerca: ***Visualizza ordini*** che espone nelle righe i dati di testata degli ordini e ***Visualizza articoli*** che espone i dati delle righe ordine (quindi in caso di più righe sarà riportato più volte il numero ordine ed i dati di testata).
+
+Il flag ***Escludi articoli in fattura*** verifica se le righe dell'ordine sono già state evase in fattura o in un DDT.
+
+Esempio: un ordine con 3 articoli, il primo non evaso, il secondo parzialmente evaso ed il terzo totalmente evaso.
+
+Con il flag attivo:
+- nella modalità *Visualizza ordini* sarà estratto quell'ordine perchè la riga 1 e 2 non sono totalmente evase ed il valore per il cashflow sarà la somma della riga 1 ed il residuo ella riga 2
+- nella modalità *Visualizza articoli* sarà estratta solo la riga 1 perchè non evasa.
+
+ 
+6. Percipienti non contabilizzati: la maschera consente di inserire nel cash flow i dati dei compensi percipienti non contabilizzati;
  7. DDT (vendita/acquisto): le maschere consentono di riprendere i dati dei  DDT non valorizzate in fattura;
  8. Conto lavoro (ordini/rientri): le maschere consentono di riprendere i dati dagli ordini di conto lavoro e dai relativi rientri non fatturati (lasciare le impostazioni di default di entrambe la maschere).
 
