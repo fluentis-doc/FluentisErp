@@ -35,7 +35,7 @@ import Link from '@docusaurus/Link';
 - definiți tipul [*Proprietăți autovehicul*](/docs/configurations/tables/logistics/motorvehicle-ownership)   
 - definiți [*Mărci autovehicul*](/docs/configurations/tables/logistics/motorvehicle-brands)   
 - definiți [*Tip carburant autovehicul*](/docs/configurations/tables/logistics/motorvehicle-gas-type)  
-- definiți [*Tipuri de autovehicul*](/docs/configurations/tables/logistics/motorvehicle-type)  
+- definiți *Tipuri de autovehicul*
 
 ## Conexiuni cu alte module
 

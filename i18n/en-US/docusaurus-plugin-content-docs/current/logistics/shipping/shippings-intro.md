@@ -34,8 +34,7 @@ import Link from '@docusaurus/Link';
 - define [*Vehicle Driving Licenses*](/docs/configurations/tables/logistics/motorvehicle-driving-licences)     
 - define the type of [*Vehicle Ownership*](/docs/configurations/tables/logistics/motorvehicle-ownership)   
 - define [*Vehicle Brands*](/docs/configurations/tables/logistics/motorvehicle-brands)   
-- define [*Vehicle Fuel Types*](/docs/configurations/tables/logistics/motorvehicle-gas-type)  
-- define [*Vehicle Types*](/docs/configurations/tables/logistics/motorvehicle-type)  
+- define [*Vehicle Fuel Types*](/docs/configurations/tables/logistics/*Vehicle Types*
 
 ## Links to Other Modules 
 These are closely related to the [*Items register*](/docs/erp-home/registers/items/create-new-item) and [*Sales Orders*](/docs/sales/sales-orders/settings) since it is possible to add items directly from an order.           
