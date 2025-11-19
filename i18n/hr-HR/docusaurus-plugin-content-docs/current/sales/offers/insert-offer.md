@@ -1,99 +1,101 @@
 ---
-title: Nuova offerta cliente
+title: Nova ponuda kupcu
 sidebar_position: 3
 ---
 
-La form **Nuova Offerta** si apre tramite il percorso **Vendite > Nuova Offerta** oppure tramite il pulsante **Nuovo** che si trova nella form di [Ricerca Offerte](/docs/sales/offers/search-offers).
+Forma **Nova ponuda** otvara se putem izbornika **Prodaja > Nova ponuda** ili putem tipke **Novo** koja se nalazi u formi [Pretraživanje ponuda](/docs/sales/offers/search-offers).
 
-## **1. Dati obbligatori**     
+## **1. Obvezni podaci**     
 
-- **Tipo offerta di vendita**: contiene la tipologia di offerta, tra quelle inserite nei [Tipi Offerte](/docs/configurations/tables/sales/sales-offer-type).
+- **Vrsta ponude za prodaju**: sadrži tip ponude, između onih unesenih u [Vrste ponuda](/docs/configurations/tables/sales/sales-offer-type).
 
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione Offerte](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione.     
+- **Broj**: svakom dokumentu dodjeljuje se broj prema numeraciji koju je korisnik odredio u tablici [Numeracija ponuda](/docs/configurations/tables/fluentis-numerations) i prema vrsti dokumenta koja sadrži numeraciju.     
 
-- **Cliente**: l'inserimento del cliente è possibile usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure inserendo [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i caratteri.
+- **Klijent**: unos kupca je moguć korištenjem [pomoći za polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [ručnim](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unosom znakova.  
 
-- **Contatto CRM**: se l'Offerta è per una lead non ancora cliente, sarà possibile inserire un Contatto CRM invece di un cliente.    
+- **CRM kontakt**: ako je ponuda namijenjena leadu koji još nije kupac, moguće je unijeti CRM kontakt umjesto kupca.    
 
-- **Anno**: viene proposto l'anno corrente.  
+- **Godina**: predlaže se tekuća godina.   
 
-- **Data**: viene proposta la data odierna.     
+- **Datum**: predlaže se današnji datum.    
 
-- **Versione**: in questo campo viene riportato il numero di Versione dell'offerta; se nuova, la Versione proposta sarà la prima.    
+- **Verzija**: u ovom polju unosi se broj verzije ponude; ako je nova ponuda, predložena verzija bit će prva.     
 
-#### Dati non obbligatori:
+#### Neobvezni podaci:
 
-- **Opportunità contatto**: se il Tipo offerta creato ha una Tipo Opportunità associato nella tabella dei [Tipi Offerta](/docs/configurations/tables/sales/sales-offer-type), al salvataggio dell'Offerta verrà automaticamente creata una Opportunità per il cliente/contatto, che sarà riportata in questo campo e diventerà modificabile dall'utente. Se in questo campo viene inserita manualmente un'Opportunità preesistente, essa viene aggiornata.           
+- **Kontaktna prilika**: ako kreirani [Tip ponude](/docs/configurations/tables/sales/sales-offer-type), a povezan tip prilike u tablici Vrste ponuda
+, prilikom spremanja ponude automatski će se kreirati prilika za kupca/kontakt. Ta će prilika biti prikazana u ovom polju i korisnik je može uređivati. Ako se u ovo polje ručno unese već postojeća prilika, ona će se ažurirati.         
 
-## **2. Testata**
+## **2. Zaglavlje**
 
-Dopo aver inserito i dati nella sezione superiore, è possibile procedere con i dati di testata:      
+Nakon što su uneseni podaci u gornjem dijelu, moguće je nastaviti s unosom podataka zaglavlja:       
 
-- **Divisa**: viene proposta la Divisa del cliente.
+- **Valuta**: predlaže se valuta kupca.  
 
-- **Spedizione**: viene proposta la modalità di [Spedizione](/docs/configurations/tables/general-settings/shipments) dall'anagrafica cliente.      
+- **Dostava**: predlaže se način [Dostave](/docs/configurations/tables/general-settings/shipments) prema podacima u kartici kupca.       
 
-- **Listino di vendita**: viene proposto il listino di default presente in anagrafica cliente, con il relativo Tipo scaglione previsto per il cliente.     
+- **Prodajni cjenik**: predlaže se zadani cjenik iz kartice kupca, zajedno s pripadajućim tipom raspona predviđenim za kupca.  
 
-- **Annotazioni clienti**: in questa sezione è possibile inserire i Riferimenti del cliente, eventuali Note iniziali/finali; il campo *Annotazioni cliente* riporta le Note inserite nei [Dati anagrafici del cliente](/docs/erp-home/registers/contacts/create-new-contact/general).     
+- **Napomene kupca**: u ovoj sekciji moguće je unijeti Reference kupca, eventualne Početne/Završne napomene; polje *Napomene kupca* prikazuje napomene unesene u [Podatke kartice kupca](/docs/erp-home/registers/contacts/create-new-contact/general).     
 
-- **Data conferma offerta**: indica la data nella quale l'offerta è stata confermata e quindi potrà essere convertita in ordine.     
+- **Datum potvrde ponude**: označava datum kada je ponuda potvrđena i kada je moguće da bude pretvorena u narudžbu.  
 
-- **Data prevista consegna**: è la data nella quale è previsto che la merce verrà consegnata; questo dato viene riportato nell'ordine creato da offerta.     
+- **Očekivani datum isporuke**: datum kada se očekuje da roba bude isporučena; ovaj podatak prenosi se u narudžbu kreiranu iz ponude.     
 
-- **Data chiusura**: indica la data in cui l'offerta è stata chiusa.
+- **Datum zatvaranja**: označava datum kada je ponuda zatvorena.
 
-- **Data annullamento**: la data nella quale l'Offerta verrà considerata nulla se non è diventata Ordine.
+- **Datum poništenja**: datum kada će ponuda biti smatrana nevažećom ako nije postala narudžba.
 
-- **Validità Offerta**: data limite di validità dell'offerta; è un campo informativo.
+- **Valjanost ponude**: krajnji datum valjanosti ponude; ovo je informativno polje.
 
-#### Pulsanti specifici    
+#### Specifične tipke   
 
-> **Nuova versione**: genera una nuova versione dell'offerta, incrementando il campo *Versione*. Le versioni successive di un’Offerta ereditano i Documenti allegati.       
+> **Nova verzija**: generira novu verziju ponude, povećavajući polje *Verzija*. Sljedeće verzije ponude nasljeđuju priložene dokumente.     
 
-> **Sostituisci data prevista consegna nelle righe**: sostituisce in tutte le righe articolo la Data prevista consegna inserita in testata.       
+> **Zamijeni očekivani datum isporuke u stavkama**: zamjenjuje u svim stavkama artikala očekivani datum isporuke unesen u zaglavlju.        
 
-> **Conversione**:  permette di trasformare un'offerta di vendita in un ordine di vendita effettivo. Affinché il processo avvenga correttamente, è essenziale configurare il Tipo di ordine desiderato nella tabella dei [Tipi offerta](/docs/configurations/tables/sales/sales-offer-type). Inoltre, affinché l'offerta possa essere convertita con successo, è necessario che abbia una Data conferma in testata, altrimenti il sistema avviserà l'utente tramite un messaggio pop-up della necessità di confermare l'offerta prima di procedere. Una volta che tutti i dati richiesti sono stati inseriti, avviando la procedura uscirà un pop-up con i seguenti campi:     
-> - se almeno alcune righe dell'offerta sono già state convertite in ordine, verrà chiesto all'utente se vuole creare un nuovo ordine utilizzando tutte le righe offerta oppure solo le righe non ancora referenziate.             
-> - **Crea/Aggiorna progetto**: con questo flag indichiamo al sistema che oltre alla creazione dell'ordine deve procedere anche con la creazione o l'aggiornamento del progetto. Se il progetto deve essere creato, è necessario flaggare il comando *Crea Nuovo progetto vuoto*, *Crea Nuovo progetto da Offerta* oppure **Crea Nuovo progetto da Offerta e Template progetto**; in tutti i casi sarà necessario inserire il **[Tipo progetto](/docs/configurations/tables/project-management/project-type)** da creare nell'apposito campo, nell'ultimo caso verrà richiesto l'inserimento anche del  progetto **Template**. Se il progetto esiste già e deve essere aggiornato con i dati inseriti nell'offerta, invece, sarà necessario compilare il campo **Progetto**  con il progetto da aggiornare.     
-> - **Riporta Materiali/Risorse da righe Offerta come righe Ordine**: con questi flag vengono inserite nell'ordine delle righe articolo con le risorse e i materiali dell'offerta, se gerarchica.              
-Una volta confermato il pop-up, il sistema genererà quindi un nuovo Ordine cliente utilizzando i dati dell'offerta. Questo ordine può essere visualizzato e modificato nella sezione [Ricerca ordini clienti](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders). Inoltre, l'utente verrà informato tramite un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita e la versione, insieme a un messaggio contenente il numero dell'ordine cliente generato dalla conversione.        
-Se nell'Offerta vengono modificati i dati proposti dall'anagrafica, essi vengono riportati nell'Ordine generato dalla conversione: Annotazioni cliente, Spedizione, Pagamenti, Sconti, Agenti, Destinazioni, Vettori.      
+> **Konverzija**: Omogućuje pretvaranje ponude za prodaju u stvarnu narudžbu.
+Da bi proces prošao ispravno, potrebno je konfigurirati željeni tip narudžbe u tablici [Vrste ponuda](/docs/configurations/tables/sales/sales-offer-type). Također, da bi ponuda mogla biti uspješno konvertirana, mora imati Datum potvrde u zaglavlju; u suprotnom, sustav će korisnika upozoriti putem pop-up poruke da je potrebno potvrditi ponudu prije nastavka.  
+Kada su svi potrebni podaci uneseni, pokretanjem procedure pojavit će se pop-up prozor s sljedećim poljima:       
+> - Ako su barem neke stavke ponude već pretvorene u narudžbu, sustav će korisnika pitati želi li stvoriti novu narudžbu koristeći sve stavke ponude ili samo stavke koje još nisu referencirane.             
+> - **Stvori/Ažuriraj projekt**: označavanjem ovog polja sustavu se signalizira da osim kreiranja narudžbe treba i stvoriti ili ažurirati projekt. Ako projekt treba biti stvoren, potrebno je označiti opciju *Stvori novi prazan projekt*, *Stvori novi projekt iz ponude* ili **Stvori novi projekt iz ponude i predloška projekta**; u svim slučajevima potrebno je unijeti **[Tip projekta](/docs/configurations/tables/project-management/project-type)** u predviđeno polje. U posljednjem slučaju sustav će tražiti i odabir projekta **Predložak**. Ako projekt već postoji i treba ga ažurirati podacima iz ponude, potrebno je ispuniti polje **Projekt** s projektom koji se ažurira.     
+> - **Prenesi materijale/Resurse iz stavki ponude kao stavke narudžbe**: označavanjem ovog polja u narudžbu se unose stavke artikala s resursima i materijalima iz ponude, ako je struktura hijerarhijska.             
+Nakon potvrde pop-up prozora, sustav će generirati novu narudžbu kupca koristeći podatke iz ponude. Narudžbu je moguće pregledati i uređivati u odjeljku [Pretraživanje narudžbi kupaca](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders). Korisnik će također dobiti pop-up poruku o uspješnoj konverziji, uključujući broj konvertirane ponude i verziju, kao i broj narudžbe kupca generirane konverzijom.
+Ako se u ponudi promijene podaci predloženi iz kartice kupca, oni se prenose u narudžbu nastalu konverzijom: Napomene kupca, Dostava, Plaćanja, Popusti, Agent, Odredišta, Prijevoznici.
 
-Le tab sottostanti vengono popolate con i campi presi dall'anagrafica cliente/contatto, modificabili:  
-- **Pagamenti**
-- **Sconti**
-- **Destinatari**
-- **Vettori**
+- **Plaćanja**
+- **Popusti**
+- **Primatelji**
+- **Prijevoznici**
 - **Agenti**
-- **Extra Data**
-- **Informazioni email**
+- **Dodatni podaci**
+- **Informacije o e-mailu**
 
-## **3.a Articoli offerta**
+## **3.a Stavke ponude**
 
-Nella griglia principale vengono inseriti gli articoli.    
+U glavnoj mreži unose se artikli.   
 
-Sono poi presenti le seguenti tab:       
-- **Sconti**: questa tab riporta il Listino, se presente, da cui prendere il prezzo per l'articolo selezionato; riporta inoltre gli sconti, da listino o da anagrafica, e permette l'inserimento di nuovi sconti; infine, è presente il flag *Prezzo manuale*, che indica di mantenere i prezzi inseriti manualmente (questo flag viene riportato nella conversione dell'offerta in ordine).     
-- **Agenti**: in questa tab vengono riportati gli Agenti del cliente con le relative provvigioni.      
-- **Dati articolo**: sono presenti diversi dati riguardanti l'articolo, come eventuali Varianti, Magazzino, Unità di misura alternativa.    
-- **Extra Data**
-- **Documenti allegati**        
+Dostupne su sljedeće kartice:       
+- **Popusti**: ova kartica prikazuje cjenik, ako je prisutan, iz kojeg se uzima cijena za odabrani artikl; prikazuje također popuste, bilo iz cjenika ili iz kartice kupca, i omogućuje unos novih popusta. Na kraju, tu je opcija *Ručna cijena*, koja označava da se zadrže ručno unesene cijene (ova opcija se prenosi prilikom konverzije ponude u narudžbu).
+- **Agenti**: na ovoj kartici prikazani su agenti kupca s pripadajućim provizijama.     
+- **Podaci o artiklu**: sadrži različite informacije o artiklu, poput eventualnih varijanti, skladišta, alternativne jedinice mjere.   
+- **Dodatni podaci**
+- **Priloženi dokumenti**        
 
-#### Pulsanti specifici
+#### Specifične tipke
 
-- **Crea nuovo prototipo**: questo bottone crea un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) per la riga articolo selezionata; il riferimento al preventivo generato viene riportato nel tab Dati articolo, campo Preventivo. Sarà possibile modificare il prototipo generato dal relativo modulo.
-- **Associa prototipo**: con questo bottone è possibile associare l'offerta a un [Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) già esistente; viene aperto un help nel quale poter scegliere tra i prototipi disponibili per quell'articolo.
-- **Apri prototipo**: questo bottone è abilitato se la riga articolo selezionata ha un Prototipo associato, e permette di aprirlo.     
-- **Import da progetto**: questa funzione apre l'help *Articolo progetto*, nel quale è possibile selezionare gli articoli provenienti da un progetto che vogliamo inserire nell'offerta di vendita. Il pop up si apre direttamente con il filtro sul cliente intestatario dell'offerta, per permettere di visualizzarne i relativi progetti.    
+- **Stvori novi prototip**: ova tipka stvara [Prototip](/docs/erp-home/registers/production/standardization/new-prototype) za odabranu stavku artikla; referenca na generiranu ponudu se prikazuje u kartici Podaci o artiklu, polje Ponuda. Prototip je moguće urediti u odgovarajućem modulu.  
+- **Poveži prototip**: ovom tipkom moguće je povezati ponudu s već postojećim[Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) otvara se pomoćni prozor (help) u kojem se može odabrati prototip dostupan za taj artikl.  
+- **Otvori prototip**: tipka je aktivna ako odabrana stavka artikla ima povezani prototip i omogućuje njegovo otvaranje.     
+- **Uvezi iz projekta**: ova funkcija otvara help *Artikli projekta*, u kojem je moguće odabrati artikle iz projekta koje želimo unijeti u ponudu za prodaju. Pop-up se otvara izravno s filtriranjem prema kupcu kojem je ponuda namijenjena, kako bi se prikazali relevantni projekti.   
 
-## **3.b Articoli offerta gerarchica**
+## **3.b Stavke hijerarhijske ponude**
 
-Nel caso in cui l'Offerta sia di *tipo gerarchico*, la tab degli Articoli sarà diversa.      
+U slučaju da je Ponuda *hijerarhijskog tipa*, tab Artikli bit će drugačiji.  
 
-Nella griglia principale vengono inseriti gli articoli servendosi dei pulsanti della barra degli strumenti, che permettono di creare una struttura ad albero. Le caratteristiche degli articoli devono essere specificate nella tab *Attività*.    
+U glavnoj mreži unose se artikli koristeći gumbe na alatnoj traci, koji omogućuju stvaranje strukture stabla. Karakteristike artikala moraju biti specificirane u tabu *Aktivnosti*.  
 
-Elenchiamo ora le tab particolari di un'offerta gerarchica.        
+Sada navodimo posebne tabove hijerarhijske ponude.
 
 ### 3.b.1 Attività 
 
