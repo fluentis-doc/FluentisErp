@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: 18
           cache: npm
+          cache-dependency-path: ./package.json 
 
       - name: Install Docusaurus
         run: npm install
@@ -53,4 +54,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
