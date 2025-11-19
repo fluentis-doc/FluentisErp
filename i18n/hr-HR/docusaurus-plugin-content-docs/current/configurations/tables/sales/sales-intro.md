@@ -1,59 +1,59 @@
 ---
-title: VENDITE
+title: PRODAJA
 sidebar_position: 1
 ---
 
-L’area **Vendite** di **Fluentis ERP** è progettata per garantire una gestione completa e ottimizzata delle attività commerciali, offrendo una struttura modulare e interconnessa che supporta l’intero processo di vendita, dalla creazione di offerte fino all’analisi dei margini. 
+Područje **Prodaje** u **Fluentis ERP** dizajnirano je za osiguranje potpune i optimizirane uprave poslovnim aktivnostima, nudeći modularnu i međusobno povezanu strukturu koja podržava cijeli proces prodaje, od kreiranja ponuda do analize marži. 
 
-## Configurazione preliminare dell'area
+## Prethidna komfiguracija područja 
 
-Prima di utilizzare le funzionalità disponibili occorre gestire una serie di dati di base: essi sono suddivisi in due macro gruppi, [**Tabelle**](/docs/configurations/tables/sales/agent-category) e [**Parametri**](/docs/configurations/parameters/sales/general-overview).
+Prije korištenja dostupnih funkcionalnosti potrebno je upravljati nizom osnovnih podataka: oni su podijeljeni u dvije glavne grupe, [**Tablice**](/docs/configurations/tables/sales/agent-category)  [**Parametri**](/docs/configurations/parameters/sales/general-overview).
 
-In alternativa è disponibile la procedura di [**Fast Start**](/docs/guide/fast-start) per la quale sarà necessario unicamente gestire un set minimo di dati quali le [**Anagrafiche**](/docs/erp-home/registers/registers-intro).
+Alternativno, dostupan je postupak [**Fast Start**](/docs/guide/fast-start) za koji je potrebno upravljati samo minimalnim skupom podataka poput [**Šifrarnici**](/docs/erp-home/registers/registers-intro).
 
 
-## Moduli Vendite
+## Moduli prodaje
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/sales/offers/settings">Offerte</Link>
-        <p>Creazione, monitoraggio e aggiornamento delle proposte commerciali, integrandole direttamente con i processi aziendali.</p>
+###     <Link to="/docs/sales/offers/settings">Ponude</Link>
+        <p>Kreiranje, praćenje i ažuriranje komercijalnih ponuda, integrirajući ih izravno s poslovnim procesima.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/sales-orders/settings">Ordini</Link>
-        <p>Gestione e organizzazione del processo di acquisto di beni e servizi da parte dei clienti.</p>
+###     <Link to="/docs/sales/sales-orders/settings">Narudžbe</Link>
+        <p>Upravljanje i organizacija procesa nabave dobara i usluga od strane kupaca.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/sales/sales-delivery-notes/general-overview">DDT</Link>
-        <p>Tracciamento e documentazione della movimentazione delle merci in uscita.</p>
+        <p>Traganje i dokumentacija kretanja robe u izlazu.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/sales-invoices/general-overview">Fatture</Link>
-        <p>Attestazione della transazione di vendita, specificando i beni o servizi forniti, i costi, l'IVA e le condizioni di pagamento.</p>
+###     <Link to="/docs/sales/sales-invoices/general-overview">Računi</Link>
+        <p>Potvrda o prodajnoj transakciji, s naznakom dobara ili usluga koje su pružene, troškova, PDV-a i uvjeta plaćanja.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/sales/pos/general-overview">POS</Link>
-        <p>Gestione delle vendite direttamente nel punto cassa, con strumenti per la creazione e gestione di fatture, emissione di ricevute e aggiornamento automatico delle giacenze di magazzino.</p>
+        <p>Upravljanje prodajom izravno na blagajni, s alatima za izradu i upravljanje računima, izdavanje potvrda i automatsko ažuriranje zaliha u skladištu.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/agents/general-overview">Liquidazione agenti</Link>
-        <p>Gestione delle vendite direttamente nel punto cassa, con strumenti avanzati per la creazione e gestione di fatture, emissione di ricevute e aggiornamento automatico delle giacenze di magazzino..</p>
+###     <Link to="/docs/sales/agents/general-overview">Obračun trgovačkih predstavnika</Link>
+        <p>Upravljanje prodajom izravno na blagajni, s naprednim alatima za izradu i upravljanje računima, izdavanje potvrda i automatsko ažuriranje zaliha u skladištu.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/sales/sales-price-list/general-overview">Listini di vendita</Link>
-        <p>Elenco dei prezzi dei prodotti o servizi offerti per facilitare il processo di vendita e includere eventuali sconti applicabili.</p>
+###     <Link to="/docs/sales/sales-price-list/general-overview">Prodajni cjenici</Link>
+        <p>Lista cijena proizvoda ili usluga koje se nude kako bi se olakšao proces prodaje i uključili eventualni primjenjivi popusti.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/price-control/definition">Gestione prezzi</Link>
-        <p>Gestione di sconti aggiuntivi basati sulla categoria commerciale di appartenenza del cliente o altre politiche di definizione sconti.</p>
+###     <Link to="/docs/sales/price-control/definition">Upravljanje cijenama</Link>
+        <p>Upravljanje dodatnim popustima temeljenim na komercijalnoj kategoriji kojoj kupac pripada ili drugim politikama definiranja popusta.</p>
     </div>
 </div>
 
@@ -62,32 +62,32 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/sales/pos/general-overview">Logistica</Link>
-        <p>Aggiornamento automatico delle **giacenze** in tempo reale durante la registrazione dei documenti di vendita.</p>
-        <p>Possibilità di generare **Picking** e **Piani di Carico** direttamente dagli ordini clienti, con ulteriore trasformazione in **DDT** e **Fatture** per una gestione ottimizzata delle spedizioni.</p>
+        <p>Ažuriranje automatskih **zaliha** u stvarnom vremenu tijekom registracije prodajnih dokumenata.</p>
+        <p>Mogućnost generiranja **Pripreme** i **Planova utovara** izravno iz narudžbi kupaca, s daljnjom transformacijom u **OTD** i **Fakture** za optimizirano upravljanje isporukama.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/agents/general-overview">Pianificazione e Produzione</Link>
-        <p>Supporto al **Demand Planning** tramite l’integrazione con i processi di vendita, particolarmente utile per modelli produttivi come: **Make to Order (MTO)**, **Engineering to Order (ETO)**, **Assembly to Order (ATO)**.</p> 
-        <p>Questa connessione garantisce un allineamento tra gli ordini di vendita e le attività produttive, migliorando la pianificazione delle risorse e l’efficienza operativa.</p>
+###     <Link to="/docs/sales/agents/general-overview">Planiranje i proizvodnja</Link>
+        <p>Podrška **Demand Planningu** putem integracije s prodajnim procesima, osobito korisno za proizvodne modele poput: **Make to Order (MTO)**, **Engineering to Order (ETO)**, **Assembly to Order (ATO)**.</p> 
+        <p>Ova povezanost osigurava usklađenost između prodajnih naloga i proizvodnih aktivnosti, poboljšavajući planiranje resursa i operativnu učinkovitost.</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/sales/sales-price-list/general-overview">Contabilità</Link>
-        <p>L’integrazione garantisce una gestione fluida e accurata delle transazioni amministrative derivanti dai documenti di vendita, riducendo errori e automatizzando la registrazione contabile.</p>
+###     <Link to="/docs/sales/sales-price-list/general-overview">Knjigovodstvo</Link>
+        <p>Integracija osigurava glatko i precizno upravljanje administrativnim transakcijama proizašlim iz prodajnih dokumenata, smanjujući pogreške i automatizirajući računovodstveno bilježenje.</p>
     </div>
     <div className="card">
-###     <Link to="/docs/sales/price-control/definition">Controllo di Gestione</Link>
-        <p>Fornisce strumenti di analisi avanzata per monitorare i **margini di profitto** relativi a ciascun processo di vendita.</p>
-        <p>Consente un’analisi dettagliata delle performance commerciali, favorendo l’ottimizzazione delle strategie di vendita e il miglioramento della redditività aziendale.</p>
+###     <Link to="/docs/sales/price-control/definition">Kontrola poslovanja</Link>
+        <p>Omogućuje napredne alate za analizu praćenja **profitnih marži** u svakom prodajnom procesu.</p>
+        <p>Omogućuje detaljnu analizu komercijalnih performansi, podržavajući optimizaciju prodajnih strategija i poboljšanje profitabilnosti tvrtke.</p>
     </div>
 </div>
 
-## Flusso operativo tipico dell'area
+## Tipični operativni tok područja  
 
-1. **Acquisizione opportunità**: le offerte vengono gestite tramite il modulo CRM, raccogliendo informazioni su clienti esistenti e potenziali.  
-2. **Conversione offerte in ordini**: le offerte accettate vengono trasformate in ordini, centralizzando le informazioni per proseguire con il processo.  
-3. **Creazione automatica dei documenti**: a partire dagli ordini, vengono generati automaticamente i DDT e le Fatture di vendita.  
-4. **Vendite al dettaglio (POS)**: le operazioni al punto cassa sono gestite tramite il modulo POS, che registra le vendite e aggiorna la contabilità in tempo reale.  
-5. **Gestione prezzi**: aggiornamento e storicizzazione dei prezzi e sconti associati agli articoli codificati.  
-6. **Liquidazione provvigioni**: le provvigioni per gli agenti vengono calcolate e liquidate automaticamente, semplificando la gestione delle commissioni.
+1. **Prikupljanje prilika**: ponude se upravljaju putem CRM modula, prikupljajući informacije o postojećim i potencijalnim kupcima.    
+2. **Pretvorba ponuda u naloge**: prihvaćene ponude se pretvaraju u naloge, centralizirajući informacije za nastavak procesa.   
+3. **Automatsko kreiranje dokumenata**: iz naloga se automatski generiraju Otpremnice i Računi prodaje.    
+4. **Maloprodaja (POS)**: operacije na prodajnom mjestu upravljaju se putem POS modula, koji evidentira prodaju i ažurira računovodstvo u stvarnom vremenu.   
+5. **Upravljanje cijenama**: ažuriranje i evidentiranje cijena i popusta vezanih za kodirane artikle.    
+6. **Likvidacija provizija**: provizije za agente se automatski izračunavaju i likvidiraju, pojednostavljujući upravljanje komisijama.  

@@ -139,75 +139,76 @@ Moguće je ručno promijeniti status dokumenta ovisno o radnjama koje se planira
 - NEISPITANO: označavanjem dokumenta s ovim statusom, namjera je vratiti dokument u prvotno stanje prije obrade. U stvari, ovaj status omogućuje potrebne izmjene dokumenta kako bi se ispravile oznake koje je naveo SdI. U ovom slučaju, dokument mora biti ponovo izdan s istim brojem i datumom. *N.B. ako je dokument već knjižen, oznaka OTISNUTO  na dokumentu NEĆE se automatski ukloniti, ali je potrebno ukloniti povezanu računovodstvenu evidenciju prije nego što se mogu izvršiti bilo kakve izmjene u zaglavlju ili tijelu dokumenta. Ako se izmjena odnosi na karton kupca (npr. pogrešan kod primatelja), neće biti potrebno uklanjati računovodstvenu evidenciju, već će biti dovoljno intervenirati na informacijama iz kartona i regenerirati XML datoteku.*  
 - OTKAZANO/ISKLJUČENO: dokument se otkazuje i stoga će biti izdana interna ispravna nota kako bi se prilagodila računovodstvena situacija, a zatim će biti označen kao ISKLJUČEN.   
 
-## Stato documento CONSEGNATA 
+## Status dokumenta ISPORUČENO
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS           
+OVO STANJE NIJE UPRAVLJENO ZA ONE KOJI NISU POTPISALI FE UGOVOR S FLUENTISOM   
 
-Quando il SdI riesce a portare a termine la consegna del documento al cessionario/committente, rilascia al cessionario/emittente una ricevuta di consegna, che riporta data e ora di consegna al destinatario finale. 
-Nella form di riepilofo Fatture di vendita, il campo Data ultimo evento riporta data e ora della ricevuta di consegna acquisita dal SdI.    
-Accedendo al Registro documenti SdI corrispondente al documento, nel pannello “Registro dei documenti SdI”, in corrispondenza della Transizione Documento consegnato, è possibile prendere visione della notifica di consegna.               
-Da questo stato non è possibile fare alcun intervento sul documento e il flusso di gestione si considera terminato. NON SI COMPILA LA DATA DI CHIUSURA.
+Kada SdI uspješno izvrši dostavu dokumenta primatelju (kupcu/naručitelju), izdavatelju dostavlja potvrdu o isporuci koja sadržava datum i vrijeme isporuke krajnjem primatelju.
+U formi Pregled izlaznih računa, polje Datum posljednjeg događaja prikazuje datum i vrijeme potvrde o isporuci koju je SdI zaprimio.    
+Pristupom Registru SdI dokumenata koji se odnosi na taj dokument, u panelu „Registar SdI dokumenata”, uz stavku Prijelaz – Dokument isporučen, moguće je pregledati obavijest o isporuci.
+U ovom statusu nije moguće izvršiti nikakvu radnju na dokumentu i smatra se da je tijek obrade dovršen. DATUM ZATVARANJA SE NE PŠOPUNJAVA. 
 
-## Stato documento MANCATA CONSEGNA 
+## Status dokumenta NEUSPJELA ISPORUKA
+ 
+OVAJ STATUS NIJE DOSTUPAN KORISNICIMA KOJI NISU POTPISALI FE UGOVOR S FLUENTISOM.             
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS             
+Ako SdI ne uspije isporučiti dokument, primjerice zbog nedostupnosti telematske adrese za primanje ili zato što adresa nije navedena na računu (kod primatelja 0000000), SdI:  
+- šalje dobavljaču/izdavatelju obavijest o neuspjeloj isporuci s navedenim razlogom  
+- stavlja račun na raspolaganje primatelju u njegovoj osobnoj zoni, odnosno — ako je riječ o privatnoj osobi — u posebnoj zaštićenoj zoni na web-stranici Porezne uprave (Agenzia delle Entrate)
 
-Nel caso in cui il SdI non riesca a consegnare il documento, ad esempio per indisponibilità dell'indirizzo telematico di ricezione o perché l’indirizzo non è stato indicato in fattura (codice destinatario 0000000), il SdI:
-- invia al cedente/prestatore una notifica di mancata consegna che ne riporta la motivazione 
-- mette a disposizione del cessionario/committente la fattura sulla sua area riservata oppure, in caso di soggetto privato, in un’apposita area riservata del sito Web dell’Agenzia delle Entrate
+U takvim slučajevima dobavljač/izdavatelj mora obavijestiti kupca o neuspjeloj isporuci i o tome da je račun dostupan u njegovoj osobnoj zoni, počevši od datuma „stavljanja na raspolaganje” koji definira SdI.
+Na kartici Pregled izlaznih računa, polje Datum posljednjeg događaja prikazuje datum i vrijeme zaprimljene obavijesti.         
 
+Pristupom Registru SdI dokumenata povezanom s dokumentom, u panelu „Registar SdI dokumenata“, uz stavku Prijelaz – Neuspjela isporuka, moguće je vidjeti potvrdu o neuspjeloj isporuci i datum/vrijeme obavijesti.           
+Kada je dokument u statusu NEUSPJELA ISPORUKA, moguće je promijeniti status u OBAVIJEST KLIJENTU, čime se evidentira trenutak kada je operater obavijestio klijenta o izdavanju dokumenta i nemogućnosti automatske dostave putem SdI-a.  
 
-Il cedente/prestatore in questi casi deve dare notifica al cliente della mancata consegna e della disponibilità della fattura nella sua area riservata, a partire dalla data di “messa a disposizione” identificata dal SdI. Nella 
-form di riepilogo Fatture di vendita, il campo Data ultimo evento riporta data e ora della ricevuta.          
+## Status dokumenta OBAVIJEST KLIJENTU  
 
-Accedendo al Registro documenti SdI corrispondente al documento, nel pannello “Registro dei documenti SdI” in corrispondenza della Transizione Mancata consegna, è possibile prendere visione della 
-ricevuta di mancata consegna e della data/ora della notifica.           
-Quando il documento è nello stato MANCATA CONSEGNA, è possibile modificarne lo stato in NOTIFICA CLIENTE, registrando quindi il momento in cui l’operatore ha notificato al cliente destinatario l’emissione del documento con l’impossibilità di notifica automatica da parte del SdI. 
+OVAJ STATUS NIJE DOSTUPAN KORISNICIMA KOJI NISU POTPISALI FE UGOVOR S FLUENTISOM.         
 
-## Stato documento NOTIFICA CLIENTE 
+Slanje nekih dokumenata prema SdI-ju može završiti neuspješno jer SdI ne uspije identificirati primatelja dokumenta ili je dokument namijenjen krajnjem potrošaču.
+U tim slučajevima SdI izdaje obavijest o neuspjeloj isporuci, a kupac/naručitelj mora dokument dostaviti krajnjem primatelju drugim kanalima, izvan sustava SdI.
+Kada se dokumenti u Fluentisu nalaze u statusu Neuspjela isporuka, operater može odlučiti poslati dokument krajnjem primatelju drugim načinom te potom označiti dokument statusom OBAVIJEST KLIJENTU.
+Dokumenti u ovom statusu više se ne mogu mijenjati, a u stupcu Datum posljednjeg događaja prikazuje se datum kada je obavljena radnja obavještavanja.
+Pristupom Registru SdI dokumenata povezanom s dokumentom, u panelu „Registar SdI dokumenata“, uz stavku Prijelaz – Ručna obavijest klijentu, moguće je vidjeti koji je korisnik izvršio operaciju te datum i vrijeme njezina izvođenja.
+Tijek obrade dokumenta ovim statusom smatra se završenim.
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS         
+## Status dokumenta NEPOVEZANO i ZAPRIMLJENO
 
-L’invio di alcuni documenti al SdI potrebbe non terminare correttamente perchè il SdI stesso non riesce ad identificare il destintario del documento, oppure il documento è destinato ad un consumatore finale. 
-In questi casi il SdI notifica la mancata consegna e il cessionari/committente deve trasmettere il documento al destinatario finale, con modalità diverse dallo SdI. 
-Quando i documenti di Fluentis sono quindi nello stato “Mancata consegna”, l’operatore può agire e decidere di inviare il documento il destinatario finale con altre modalità e marcare poi il documento con lo stato NOTIFICA CLIENTE.            
-I documenti in questo stato non sono più modificabili e nella colonna Data ultimo evento viene resa disponibile la data in cui è stata eseguita l’azione di notifica.               
-Accedendo al Registro documenti SdI corrispondente al documento, nel pannello Registro dei documenti SdI in corrispondenza della Transizione Notifica manuale al cliente è possibile prendere visionedell’utente che ha eseguito l’operazione e della data e ora della stessa.         
-Il ciclo di gestione del documento è concluso.
+OVAJ STATUS NIJE DOSTUPAN KORISNICIMA KOJI NISU POTPISALI FE UGOVOR S FLUENTISOM.          
 
-## Stato documento NON ABBINATA e RICEVUTA 
+Statusi NEPOVEZANO i ZAPRIMLJENO koriste se isključivo za ulazne dokumente – račune dobavljača – koje izdaju subjekti sa sjedištem ili identifikacijom na teritoriju Republike Italije.  
+Status označava dokumente koje je preuzeo servis Fluentis Business Hub, ali još nisu povezani (NEPOVEZANO) s računovodstvenim knjiženjem, niti s dokumentom nabave evidentiranim u sekciji Nabava u Fluentisu, niti s obračunom naknade.  
+U drugim slučajevima riječ je o XML datotekama nabave koje su već povezane s računovodstvenim događajem ili dokumentom.  
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS          
+## Status dokumenta ODBIJENO (samo za PA fakturiranje)
 
-Gli stati del documento ABBINATA e RICEVUTA sono gestiti solo per il ciclo passivo di documenti di acquisto da soggetti residenti/identificati nel territorio dello Stato italiano.          
-Lo stato identifica i documenti acquisiti dal servizio Fluentis Business Hub e non ancora abbinati (NON ABBINATA) ad una registrazione contabile o ad un documento di acquisto registrato nella sezione Acquisti di Fluentis oppure ancora ad un compenso.            
-Oppure, file XML acquisti e abbinati ad un evento contabile o a un documento.
+OVAJ STATUS NIJE DOSTUPAN KORISNICIMA KOJI NISU POTPISALI FE UGOVOR S FLUENTISOM.      
 
-## Stato documento RESPINTA (solo per fatturazione PA)
+Status ODBIJENO odnosi se na dokument namijenjen javnoj upravi (PA) koji ta uprava nije prihvatila.
+Status se preuzima izravno u Fluentis Business Hubu kada primajuća ustanova odluči priopćiti odbijanje računa putem SdI kanala.
+Budući da javne ustanove imaju mogućnost korištenja i drugih kanala dostave osim SdI-ja, u takvim slučajevima račun u statusu ODBIJENO može biti označen kao PONIŠTENO, ISKLJUČENO ili ZA PREGLED.
 
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS         
+U tim slučajevima, u slučaju odbijanja računa, javna uprava koja je primatelj može neovisno:
+- zatražiti od pošiljatelja ponovno izdavanje istog računa, ispravljenog, s istim brojem i istim datumom, pri čemu se odbijeni račun ne knjiži, ILI  
+- zatražiti izdavanje storno-dokumenta i izdavanje novog računa, ako je prethodni već knjižen.          
 
-Lo stato del documento RESPINTA si riferisce al documento destinato alla Pubblica Amministrazione non accettato da quest’ultima. Lo stato viene acquisito direttamente dal Fluentis Business Hub qualora
-l’Amministrazione ricevente abbia deciso di comunicare il rifiuto della fattura tramite il canale SdI: è facoltà alle Amministrazioni determinare canali di trasmissione differenti da quello del SdI.In questi casi la fattura nello stato RESPINTA potrà essere ANNULATA o ESCLUSA o Da ESAMINARE.            
+Treba naglasiti da je slanje obavijesti o odbijanju putem Sistema di Interscambio (SdI) mogućnost, a ne obveza javnih tijela.  
 
-In questi casi In casi di rifiuto della fattura, la Pubblica Amministrazione destinataria può indifferentemente:
-- richiedere al soggetto trasmittente di riemettere la medesima fattura corretta con stesso numero stessa data e la fattura rifiutata non viene contabilizzata, OPPURE
-- richiedere una nota di credito e una nuova fattura se la fattura precedente è già stata contabilizzata.        
-
-Si precisa che la trasmissione del rifiuto da parte della PA attraverso il Sistema di Interscambio è una facoltà.
-
-## Stato del documento APPROVATA (solo per fatturazione PA)
+## Status dokumenta ODOBRENO (samo za PA fakturiranje)
   
-QUESTO STATO NON E’ GESTITO PER CHI NON HA SOTTOSCRITTO IL CONTRATTO FE CON FLUENTIS           
+OVAJ STATUS NIJE DOSTUPAN KORISNICIMA KOJI NISU POTPISALI FE UGOVOR S FLUENTISOM.               
 
-Lo stato del documento APPROVATA si riferisce al documento destinato alla Pubblica Amministrazione accettato da quest’ultima. Lo stato viene acquisito direttamente dal Fluentis Business Hub qualoral’Amministrazione ricevente abbia accettato il file XML inviato.
-In questi casi il flusso si considera concluso e viene compilata la data di chiusura nelle proprietà del documento.
+Status ODOBRENO odnosi se na dokument namijenjen javnoj upravi (PA) koji je ta uprava prihvatila.
+Status se automatski preuzima u Fluentis Business Hubu kada primajuća ustanova potvrdi prihvat poslanog XML dokumenta.
+U tim slučajevima tijek obrade smatra se završenim i u svojstvima dokumenta popunjava se datum zatvaranja.
 
-## Stato del documento ACCETTATA PER DECORRENZA (solo per fatturazione PA)
+## Status dokumenta PRIHVAĆENO PROTEKOM ROKA (samo za PA fakturiranje)
 
-I documenti di fatturazione elettronica inviati al SdI e rivolti alla Pubblica Amministrazione possono acquisire dal SdI lo stato di ACCETTATA PER DECORRENZA: questo stato si riferisce alla condizione per cui il SdI ha 
-consegnato la fattura lla PA destinataria la quale, entro il termine dei 15 giorni dal ricevimento, non invia alcuna comunicazione al SdI, nè in merito all’accettazione nè in merito al rifiuto.
-In questi caso quindi il SdI inoltra notifica di DECORRENZA DEI TERMINI sia al soggetto trasmittente sia al soggetto ricevente. Tale notifica ha la sola funzione di comunicare alle due parti che il SdI considera chiuso il processo relativo a quella fattura. La notifica di decorrenza termini segnala che il Sistema di Interscambio 
-ha regolarmente concluso la gestione (ricezione e consegna) della fattura oggetto della notifica. Pertanto dopo tale notifica il SdI scarterà la fattura, se reinviata, e qualsiasi comunicazione ad essa relativa. La notifica 
-di decorrenza termini non ha alcuna implicazione sulla verifica della correttezza e sulla successiva gestione della fattura da parte degli interessati, cioè la Pubblica Amministrazione può ancora decidere di rifiutare la fattura consegnata.              
-Lo stato viene acquisito direttamente da Fluentis Business Hub e in questi casi il ciclo di gestione del documento si considera concluso.
+Elektronički računi poslani SdI-ju i namijenjeni javnoj upravi mogu od SdI-ja dobiti status PRIHVAĆENO PROTEKOM ROKA.
+Ovaj status označuje situaciju u kojoj je SdI isporučio račun nadležnoj PA, ali ona u roku od 15 dana od zaprimanja nije poslala nikakvu obavijest SdI-ju — ni o prihvaćanju ni o odbijanju.
+U tom slučaju SdI šalje obavijest o proteku rok i pošiljatelju i primatelju.  
+Svrha ove obavijesti jest samo informirati obje strane da SdI smatra postupak vezan uz tu fakturu zaključenim. Obavijest potvrđuje da je SdI uredno završio proces zaprimanja i dostave računa.
+Nakon slanja obavijesti o proteku roka, SdI će odbaciti svaki eventualni novi ponovni pokušaj slanja te fakture te bilo kakvu naknadnu komunikaciju povezanu s njom.  
+Ipak, ova obavijest nema utjecaja na kasniju provjeru ili upravljanje računom: javna uprava i dalje može odlučiti odbiti već dostavljeni račun.  
+Status se preuzima automatski iz Fluentis Business Hub-a i u tim se slučajevima tijek obrade dokumenta smatra dovršenim.  
