@@ -97,10 +97,10 @@ U glavnoj mreži unose se artikli koristeći gumbe na alatnoj traci, koji omogu�
 
 Sada navodimo posebne tabove hijerarhijske ponude.
 
-### 3.b.1 Attività 
+### 3.b.1 Aktivnosti 
 
-In questa tab è necessario inserire le caratteristiche degli articoli della griglia articoli. I campi presenti sono:     
-- **Numero riga/Livello**: contiene i numeri della riga e della WBS e viene impostato automaticamente, anche se è liberamente modificabile.          
+U ovoj kartici potrebno je unijeti karakteristike artikala u mreži artikala. Polja koja su prisutna su:
+- **Broj stavke/Nivo**: sadrži broj stavke i WBS te se postavlja automatski, iako ga je moguće slobodno mijenjati.   
 - **Tipo Nodo**: indica se la riga è un **Root Node** (nodo principale), un **Activity Node** (relativo alle attività) o un **Work Package Node** (nodo finale di progetto, l’unico che può contenere dei codici articolo codificati).       
 - **Tipo riga**: indica la tipologia di articolo tra Codificato, Non codificato, Spese o Note (quest’ultimo di default).            
 - **Codice Articolo**: questa sezione riporta Classe, Codice e Descrizione dell’articolo codificato eventualmente selezionato.             
