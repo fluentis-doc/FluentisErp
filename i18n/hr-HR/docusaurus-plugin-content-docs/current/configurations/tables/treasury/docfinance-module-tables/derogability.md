@@ -1,43 +1,43 @@
 ---
-title: Derogabilità
+title: Odstupanje
 sidebar_position: 2
 ---
 
-Consente di definire i codici di derogabilità dei flussi finanziari, cioè sostanzialmente il grado di priorità/importanza dei debiti, così come gestiti in DocFinance (il codice del gestionale deve essere lo stesso di DocFinance).
+Omogućuje definiranje šifri derogabilnosti financijskih tokova, odnosno zapravo stupnja prioriteta/važnosti dugova, kako se upravlja u DocFinanceu (šifra u softveru mora biti ista kao u DocFinanceu).  
 
-Va inteso pertanto come un dato necessario e specifico del software DocFinance.
+Ovo se stoga smatra potrebnim i specifičnim podatkom softvera DocFinance.
 
-:::note[Dettagli]
-**se il parametro per l'esportazione è 0**; viene considerata per default la derogabilità dal piano dei conti:
+:::note[Detalji]
+**Ako je parametar za izvoz 0**; uzima se u obzir derogabilnost prema planu konta po defaultu:  
 
-	se è null nel piano dei conti, invece:
+	Ako je null u planu konta:
 
-viene settato 01 se diverso da BO e RD (bonifico e rimessa diretta, stringhe fisse)
+postavlja se na 01 ako nije BO ili RD (bonifico i rimessa diretta – fiksne oznake)
 
-altrimenti viene letta la differenza in giorni tra scadenza e data odierna: se maggiore di 90 allora viene impostato 04, se compresa tra 30 e 90 giorni allora viene impostato 03, e se compresa tra 0 e 30 allora viene impostato 02, diversamente viene impostato 01.
+inače se čita razlika u danima između isteka i današnjeg datuma: ako je veća od 90, tada se postavlja 04, ako je između 30 i 90 dana, tada se postavlja 03, a ako je između 0 i 30, tada se postavlja 02, inače se postavlja 01.
 
-**se parametro è 1 allora viene letta**:
+**ako je parametar 1, tada se čita**:
 
-	per i fornitori dalla derogabilità del tipo pagamento
-	se la derogabilità è vuota (quindi quando non è definita nel fornitore oppure non è un fornitore) allora dalla derogabilità del piano dei conti
+	Za dobavljače se čita derogabilnost iz vrste plaćanja.
+ Ako derogabilnost nije definirana (npr. nije postavljena za dobavljača ili se ne radi o dobavljaču), tada se koristi derogabilnost iz plana konta.
 
 :::
 
-E' possibile gestire nel piano dei conti e passare a DocFinance come dato statistico anche il campo **Voci di spesa**.
+Moguće je upravljati u planu računa i prenijeti u DocFinance kao statistički podatak i polje **stavke troškova**.
 
-caratteri disponibili: 6, così compilati 
+dostupni znakovi: 6, tako ispunjeni
 
-I primi 4 caratteri dal codice della voce spesa del conto del flusso di cash flow, se questo è null allora dai primi 4 caratteri del conto (FSLedgerAccount.Code)
+Prva 4 znaka dolaze iz koda stavke troška računa novčanog toka, ako je to null, tada se uzimaju prva 4 znaka iz računa (FSLedgerAccount.Code).
 
-I secondi 2 caratteri sono presi dalla voce spesa del conto con imponibile iva più alto nella registrazione contabile che ha creato la partita (quindi si gestisce solo per flusso di partite, dal conto della griglia iva che ha imponibile più alto)
+Druga 2 znaka uzimaju se iz stavke troška računa s najvišim osnovicom PDV-a u računovodstvenom zapisniku koji je stvorio stavku (tako se upravlja samo za tok stavki, iz računa u mreži PDV-a koji ima najvišu osnovicu).
 
-esempio di impostazione tipica:
+Primjer tipične postavke:
 
-0101      Clienti Italia
+0101      Kupci Italija
 
-0102      Clienti Estero
+0102      Kupci Strani
 
-0201      Fornitori Italia
+0201      Dobavljači Italija
 
-0202      Fornitori Estero
+0202      Dobavljači Strani
 
