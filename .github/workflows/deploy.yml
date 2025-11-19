@@ -25,8 +25,8 @@ jobs:
 
       - name: Install Docusaurus
         run: npm install
-      - name: Install dependencies
-        run: npm ci
+      #- name: Install dependencies
+       # run: npm ci
       - name: Build website
         run: npm run build
 
@@ -54,6 +54,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
 
 
