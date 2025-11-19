@@ -1,34 +1,28 @@
 ---
-title: Tabelle modulo Rischio cliente
+title: Tablice modula Rizik kupca  
 sidebar_position: 7
 ---
 
-Non sono presenti tabelle specifiche del modulo in oggetto, ma va segnalato che vari tipi documento in acquisto e vendita presentano impostazioni collegate al rischio cliente.
+U okviru ovog modula ne postoje posebne tablice, ali je važno naglasiti da različiti tipovi dokumenata u nabavi i prodaji sadrže postavke povezane s rizikom kupca.  
 
-Il fido cliente preleva i dati dai seguenti documenti dell'area vendita:
+Kreditni limit kupca (fido) prikuplja podatke iz sljedećih dokumenata u prodajnom području:   
 
-**[Tipo ordine cliente](/docs/configurations/tables/sales/sales-order-types)**: il ‘flag fido' indica che se il documento (stampato e confermato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
+**[Tip narudžbe kupca](/docs/configurations/tables/sales/sales-order-types)**: 'flag Kredit' označava da li se dokument (isprintan i potvrđen) uzima u obzir u izračunu klijentovog limita ili ne. 'Isključi blokadu' isključuje ovu vrstu dokumenta iz blokade klijenta.;
 
-**Tipi DDT**: il ‘flag fido' indica che se il documento (stampato, non valorizzato in fattura) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente;
+**Tipovi otpremnica**: 'flag Kredit' označava da li se dokument (ispisan, ne valoriziran u fakturi) uzima u obzir u izračunu klijentovog limita ili ne. 'Isključi blokadu' isključuje ovu vrstu dokumenta iz blokade klijenta.;
 
-**[Tipi fattura](/docs/configurations/tables/purchase/purchase-invoices-type)**: il ‘flag fido' indica che se il documento (stampato, non contabilizzato) viene considerato nel calcolo del fido cliente o meno. Il flag ‘Escludi blocco' esclude questo tipo documento dal blocco cliente.
+**[Vrsta računa](/docs/configurations/tables/purchase/purchase-invoices-type)**: ‘Flag Kredit’ označava da li se dokument (isprintan, ne knjižen) uzima u obzir pri izračunu klijentovog limita ili ne. ‘Flag Isključi blokadu’ isključuje ovu vrstu dokumenta iz blokade klijenta.
 
-Infine, ogni anagrafica cliente presenta due impostazioni collegate al modulo in oggetto:
+Na kraju, svaki Šifarnik  kupca ima dvije postavke povezane s predmetnim modulom:
 
-**Il tipo controllo fido:** 
+**Tip kontrole kreditnog limita:** 
 
-**Blocco doc. e monitor fido**: il documento dell'area vendita che va a sforare il fido sarà bloccato e quindi ci sarà la necessità di autorizzarlo per procedere alle fasi successivo del flusso documentale;
+**Blokada dokumenata i nadzor limita**: dokument u prodajnom području koji premašuje odobreni limit bit će blokiran, te će stoga biti potrebno odobriti ga kako bi se nastavilo s daljnjim fazama dokumentarnog toka.
 
-**Monitor fido**: sarà semplicemente effettuato un controllo del fido con eventuale messaggio all'utente dell'avvenuto sforamento;
+**Nadzor limita**: bit će jednostavno izvršena provjera limita s eventualnom porukom korisniku o prekoračenju;
 
-**Blocco di gruppo**: come per il primo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente;
+**Grupna blokad**: kao za prvo, ali izračun je kumulativan za sve tvrtke u bazi podataka koje se odnose na istu karticu kupca;
 
-**Monitor di gruppo**: come per il secondo, ma il calcolo è cumulativo per tutte le società del database facenti capo alla stessa anagrafica cliente.
+**Grupni nadzor**: come per il secondo, ali je izračun kumulativan za sve tvrtke u bazi podataka koje pripadaju istoj kartici kupca.
 
-La seconda impostazione è il check ‘controllo esposizione', che rende visibile il cliente nella maschera dell'esposizione clienti.
-
-
-
-
-
-
+Druga postavka je provjera 'kontrola izloženosti', koja čini kupca vidljivim u obrascu izloženosti kupaca.

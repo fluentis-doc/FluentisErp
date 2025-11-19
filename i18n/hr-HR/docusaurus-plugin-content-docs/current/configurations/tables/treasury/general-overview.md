@@ -1,28 +1,27 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Le Tabelle dell'Area Tesoreria concernono i diversi moduli della suddetta Area. 
+Tablice unutar područja Riznice odnose se na različite module koji pripadaju tom području.
 
-**Esse accolgono i dati di base e le configurazioni che saranno richiamate in tutte le procedure operative**. 
+**One sadrže osnovne podatke i konfiguracije koje se koriste u svim operativnim procedurama**. 
 
 
-:::danger[Attenzione]
-Una mancata gestione di questi dati di base potrebbe impedire l'utilizzo concreto dell'ERP nell'area interessata.
+:::danger[Pažnja]
+Ako se ovi osnovni podaci ne postave, korištenje ERP-a u pripadajućem području može biti onemogućeno.
 :::
 
-:::note[Esempio]
-Un esempio di dati di base è rappresentato dai Tipi Effetti e degli stati effetti, necessari per l'emissione degli effetti e tutte le operazioni a valle.
+:::note[Primjer]
+Primjer osnovnih podataka su Tipovi efekata i statusi efekata, koji su nužni za izdavanje efekata i sve operacije koje slijede nakon toga.  
 :::
 
+Pravilno i pravovremeno podešavanje parametara omogućuje definiranje načina rada pripadajućeg modula, kao i korištenje brojnih korisnih automatizama.
 
-Una opportuna e necessaria parametrizzazione consentirà sia la definizione della gestione del modulo relativo sia l'opportunità di poter usufruire di determinati automatismi.
+Tablice Riznice nalaze se u **Konfiguracija > Tablice > Riznica**.
 
-Le tabelle di Tesoreria si trovano in **Configurazione > Tabelle > Tesoreria**.
+Područje Riznice uvelike koristi pogodnosti koje proizlaze iz aktivacije procedure [**Fast Start**](/docs/guide/fast-start).
 
-L'area tesoreria è fortemente interessata dai benefici derivanti dall'attivazione della procedura di [**Fast Start**](/docs/guide/fast-start).
+Preporučujemo da pogledate navedenu poveznicu za dodatne detalje.
 
-Si invita a fare riferimento al link sopra per ulteriori dettagli.
-
-In particolare la pagina linkata fa riferimento al dettaglio delle tabelle interessate e nel caso in cui si intenda procedere con una configurazione manuale offre una check list per la configurazione.
+Navedena stranica sadrži pregled svih uključenih tablica, a u slučaju ručne konfiguracije nudi i kontrolnu listu potrebnu za pravilno podešavanje.

@@ -1,31 +1,31 @@
 ---
-title: Tipi anticipo
+title: Tipovi avansa
 sidebar_position: 4
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je uključena u proceduru [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako se želi konfigurirati ručno, potrebno je slijediti kontrolnu listu na poveznici iznad.
 :::
 
-In questa tabella sono definite le possibili tipologie di [**distinta di anticipo**](/docs/treasury/advance/advances-collections) fatture ed i relativi parametri.
+U ovoj tablici definiraju se moguće vrste [**avansnih naloga**](/docs/treasury/advance/advances-collections) za fakture i pripadajući parametri.
 
 
-**Codice / Descrizione:** Liberamente assegnabili dall'utente per qualificare la tipologia.
+**Šifra / Opis:** Slobodno dodijeljeno od strane korisnika za kvalifikaciju tipa.
 
-**Tipo calcolo (codice / descrizione):** le opzioni possibili sono Imponibile / Tot: Documento. Indica se la percentuale anticipata dalla banca debba essere calcolata con riferimento al totale fattura oppure al solo imponibile.
+**Tip izračuna (šifra / opis):** moguće opcije su Oporezivi iznos / Ukupno: Dokument. Označava hoće li banka obračunati postotak avansa na ukupnu fakturu ili samo na oporezivi iznos.
 
-**Percentuale fatture anticipata:** inserire qui il valore della percentuale della fattura che sarà anticipata dalla banca.
+**Postotak faktura za avans:** unesite vrijednost postotka fakture koji će banka avansirati.
 
-**Tipo Acquisizione:** le possibili operazioni sono Scadenze / Fatture. Questa opzione controlla soltanto il modo in cui sono visualizzati i dati nella maschera di ricerca per la creazione della nuova distinta, ovvero se sarà selezionabile l'intera fattura oppure le singole scadenze della fattura. In ogni caso dal punto di vista della base dati sono comunque gestite le scadenze (tutte) anche nel caso della modalità Fatture.
+**Vrsta akvizicije:** moguće opcije su Rokovi / Fakture. Ova opcija kontrolira samo način prikaza podataka u sučelju pretrage pri kreiranju novog avansnog naloga, tj. hoće li se moći odabrati cijela faktura ili pojedini rokovi fakture. Ipak, u bazi podataka se u svakom slučaju upravlja svim rokovima, čak i u opciji Fakture.
 
-**Numerazione:** è necessario impostare una numerazione dalla relativa tabella dei numeratori per questo tipo di documento.
+**Numeracija:** potrebno je postaviti numeraciju iz odgovarajuće tablice numeratora za ovu vrstu dokumenta.
 
-**Banca C/C:** (conto / sottoconto descrizione): inserire qui il sottoconto che sarà utilizzato nelle registrazioni contabili relativo al conto corrente bancario.
+**Banka T/R:** (račun / podračun opis): ovdje se unosi podračun koji će se koristiti u knjiženjima vezanim za bankovni račun.
 
-**Conto bancario anticipi:** inserire il conto d'appoggio utilizzato per contabilizzare l'anticipo bancario.
+**Račun bankovnih avansa:** unesite pomoćni račun koji se koristi za knjiženje bankovnog avansa.
 
-**Conto interessi passivi:** inserire il conto da utilizzare per la contabilizzazione interessi
+**Račun kamate pasive:** unesite račun koji se koristi za knjiženje kamata.
 
-**Conto commissioni:** inserire il conto da utilizzare per la contabilizzazione commissioni bancarie.
+**Račun provizija:** unesite račun koji se koristi za knjiženje bankovnih provizija.

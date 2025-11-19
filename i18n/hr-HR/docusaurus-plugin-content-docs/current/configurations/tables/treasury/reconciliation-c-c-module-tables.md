@@ -1,12 +1,6 @@
 ---
-title: Tabelle modulo Riconciliazione C/C
+title: Tablice modula Usklađivanje tekućih računa
 sidebar_position: 6
 ---
 
-Non sono presenti tabelle specifiche del modulo in oggetto.
-
-
-
-
-
-
+Nema posebnih tablica za predmetni modul.

@@ -1,10 +1,10 @@
 ---
-title: Tabelle modulo Pagamenti fornitori
+title: Tablice modula Plaćanja dobavljačima  
 sidebar_position: 5
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako se želi izvršiti ručna konfiguracija, potrebno je slijediti check list dostupnu na poveznici.   
 :::
