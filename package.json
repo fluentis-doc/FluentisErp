@@ -14,7 +14,7 @@
     "write-heading-ids": "set NODE_OPTIONS=--openssl-legacy-provider --max-old-space-size=8192&& docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@cmfcmf/docusaurus-search-local": "1.2.0",
+    "@cmfcmf/docusaurus-search-local": "2.0.1",
     "@docusaurus/core": "3.7.0",
     "@docusaurus/plugin-client-redirects": "3.7.0",
     "@docusaurus/preset-classic": "3.7.0",
@@ -30,9 +30,7 @@
     "@docusaurus/types": "3.7.0"
   },
   "overrides": {
-    "@cmfcmf/docusaurus-search-local": {
-      "@docusaurus/core": "3.7.0"
-    }
+    "cheerio": "1.0.0-rc.12"
   },
   "browserslist": {
     "production": [
