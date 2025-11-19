@@ -1,26 +1,26 @@
 ---
-title: Tipi conto finanziario
+title: Vrste financijskog računa  
 sidebar_position: 1
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Ova tablica uključena je u postupak [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako se planira ručna konfiguracija, pogledajte check listu na poveznici stranice.
 :::
 
-In questa tabella si andrà a definire la lista dei sottoconti contabili dai quali calcolare il saldo contabile che sarà considerato disponibilità iniziale di cash flow.
+U ovoj se tablici definira popis podračuna iz kojih se izračunava knjigovodstveni saldo, koji će se smatrati početnom raspoloživosti u cash flowu.  
 
-*Campi specifici*  
-**Tipo conto finanziario**: indica il tipo del conto finanziario. Può essere selezionato tra due tipologie: Cassa e Banca, inquanto la consistenza iniziale di risorse finanziarie verrà calcolata su queste tipologie di conti contabili. Si tratta poi, nei campi seguenti, di indicare in dettaglio quali conti / sottoconti andare a leggere.
+*Specifična polja*  
+**Vrsta financijskog računa**: označava vrstu financijskog računa. Može se odabrati između dvije vrste: Blagajna i Banka, budući da će početno stanje financijskih sredstava biti izračunato na temelju ovih vrsta računa. U sljedećim poljima potrebno je detaljno navesti koje račune/podračune treba uzeti u obzir.  
 
-**Descrizione conto finanziario**: rappresenta la descrizione del tipo conto.
+**Opis financijskog računa**: opis vrste računa.
 
-**Conto**: è il codice del conto.
+**Račun**: šifra računa.  
 
-**Sottoconto**: è il codice del sottoconto.
+**Podračun**: šifra podračuna.  
 
-**Descrizione sottoconto**: rappresenta la descrizione del sottoconto.
+**Opis podračuna**: opis podračuna.  
 
 
 

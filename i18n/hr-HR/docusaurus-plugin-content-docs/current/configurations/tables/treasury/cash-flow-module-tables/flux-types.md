@@ -1,48 +1,46 @@
 ---
-title: Tipi flusso
+title: Vrste toka  
 sidebar_position: 2
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Ova tablica uključena je u postupak [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako se planira ručna konfiguracija, pogledajte check listu na poveznici stranice.  
 :::
 
-La tabella, propedeutica all'utilizzo del modulo, prevede la codifica delle tipologie di flusso di cash flow che l'azienda intende abilitare per le simulazioni. 
+Tablica, pripremna za korištenje modula, služi za kodiranje vrsta tokova cash flowa koje tvrtka želi omogućiti za simulacije.  
 
-Si consiglia di codificate comunque tutte le tipologie previste: la procedura di *generazione automatica cashflow* consente di definire, volta per volta, quali di queste considerare e quali no.
+Preporučuje se kodirati sve predviđene vrste: postupak *automatskog generiranja cash flowa* omogućuje definiranje, svaki put, koje od njih uključiti, a koje ne.
 
-La codifica del tipo flusso è libera nel codice e descrizione, a piacere, e va poi ricondotta tramite i flag corrispondenti, ai dati che possono essere gestiti.
+Kodiranje vrste toka je slobodno u šifri i opisu, a kasnije se povezuje pomoću odgovarajućih flagova s podacima kojima se može upravljati.
 
+Predviđene su sljedeće izvori podataka:  
 
+**Šifra**: šifra vrste toka;  
 
-Sono previste le seguenti origini dati:
+**Opis**: opis vrste toka;  
 
-**Codice**: codice del tipi flusso;
+**Stavke**: izvor podataka su otvorene stavke glavne knjige;  
 
-**Descrizione**: descrizione del tipi flusso;
+**Knjigovodstveni saldo**: iz ove vrste toka dobivaju se početne financijske raspoloživosti, u odnosu na *vrste financijskih računa* koje su kodificirane;
 
-**Partite**: l'origine dati sono le partite aperte di contabilità generale;
+**Nalozi kupaca/nalozi dobavljača**: nalozi kupaca, vrste s flagom *cash flow*, ispisani i potvrđeni, a nisu još izvršeni;
 
-**Saldo contabile**: da questo tipo flusso si ottengono le disponibilità finanziarie iniziali, rispetto ai *tipi conti finanziari* codificati;
+**Računi kupnje/prodaje**: računi ispisani/kontrolirani, ali još ne knjiženi (ne uključuju pro-forma račune);  
 
-**Ordini clienti/ordini fornitori**: ordini clienti, delle tipologie con flag *cash flow*, stampati e confermati, non evasi;
+**Izvanbilančno**: ručno definirane izvanbilančne dospijeće u modulu cash flowa putem forme *Izvanbilančna dospijeća*;
 
-**Fatture di acquisto/vendita**: fatture stampate/controllate ma non ancora contabilizzate (non di tipo pro-forma);
+**Primatelji**: naknade profesionalcima još neknjižene (ako su knjižene, spadaju u otvorene stavke);  
 
-**Extracontabile**: scadenze manuali extracontabili definite nel modulo cash flow stesso tramite la form *Scadenze extracontabili*;
+**Otpremnice kupnje/prodaje**: otpremnice vrsta s flagom *cash flow*, ispisane i potvrđene, neprocijenjene (ako su procijenjene, spadaju u račune);
 
-**Percipienti**: compensi professionisti non ancora contabilizzati (se contabilizzati rientrano nelle partite aperte);
+**Nalozi i povrati po ugovoru o radu**: nalozi po ugovoru o radu za izvršenje i povrati koji još nisu fakturirani;  
 
-**DDT di acquisto/vendita**: DDT delle tipologie con flag *cash flow*, stampati e confermati, non valorizzate (se valorizzate rientrano nelle fatture);
+**Zahtjevi za kupnju (RDA)**: zahtjevi za kupnju;  
 
-**Ordini e rientri di conto lavoro**: ordini di conto lavoro da evadere e rientri di conto lavoro non ancora fatturati;
+**Planirani nalozi**: proizvodni nalozi s planiranim vanjskim fazama ili proizvodni nalozi koji zahtijevaju zahtjev za kupnju;  
 
-**RDA**: richieste di acquisto;
+**Portfelj mjenica**: izdane mjenice (i prezentirane, ovisno o postavci flag *Koristi dospijeće* u formi *Automatsko generiranje cash flowa*);
 
-**Ordine pianificato**: ordini di produzione con fasi esterne pianificati o ordini di produzione che prevedono una richiesta d'acquisto.
-
-**Portafoglio effetti**: Effetti emessi (e presentati, a seconda dell'impostazione del flag *Usa in scad. nel castelletto* presente nella maschera di *Generazione automatica cashflow*)
-
-**Anticipi**: Distinte di anticipo fattura create. L'elaborazione del cash flow, se per questo tipo è impostato il flag 'Usa in scad. nel castelletto' (nella maschera *Generazione automatica Cashflow*) va a rilevare gli importi delle distinte contabilizzate per l'importo anticipato sul conto bancario, e nei flussi alle date scadenza. Quando el fatture vengono incassate (elaborando un nuovo cashflow) i flussi in scadenza vengono eliminati e l'importo del conto bancario viene aggiornato con la quota residua non già anticipata al netto di eventuali commissioni e interessi.
+**Avans**: stvorene odvojene liste avansa računa. Prilikom obrade cash flowa, ako je za ovu vrstu postavljen flag *Koristi u dospijeću* (u formi *Automatsko generiranje Cashflowa*), uzimaju se u obzir iznosi knjiženih avansnih lista kao avansirani iznos na bankovnom računu, te u tokovima po datumima dospijeća. Kada se računi naplate (prilikom obrade novog cash flowa), tokovi po dospijeću se uklanjaju, a iznos na bankovnom računu se ažurira preostalim iznosom koji još nije unaprijed isplaćen, umanjen za eventualne provizije i kamate.

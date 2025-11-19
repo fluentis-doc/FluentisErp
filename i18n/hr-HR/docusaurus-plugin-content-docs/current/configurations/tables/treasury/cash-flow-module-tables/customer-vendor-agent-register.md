@@ -1,11 +1,11 @@
 ---
-title: Anagrafica cliente/fornitore/agente
+title: Kartica kupca/dobavljača/agenta  
 sidebar_position: 5
 ---
 
-In testata delle anagrafiche è possibile impostare il sottoconto di pagamento: questo conto sarà associato alle partite contabili intestate all'anagrafica e da qui utilizzate nel cash flow per gestire la canalizzazione dei flussi.
+U zaglavlju kartica moguće je postaviti podračun plaćanja: ovaj račun bit će povezan s računovodstvenim stavkama vezanim uz karticu i korišten odavde u cash flowu za upravljanje kanalizacijom tokova.
 
-Inoltre, il campo ‘Giorni ritardo' viene utilizzato per calcolare, a partire dalla data scadenza, la data d'incasso/pagamento prevista con questo numero di giorni di ritardo standard dell'anagrafica.
+Osim toga, polje ‘Dani kašnjenja’ koristi se za izračun, počevši od datuma dospijeća, predviđenog datuma primitka/plaćanja uzimajući u obzir standardni broj dana kašnjenja definiran za karticu.  
 
 
 

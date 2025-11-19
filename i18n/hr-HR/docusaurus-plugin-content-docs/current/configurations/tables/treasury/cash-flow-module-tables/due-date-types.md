@@ -1,17 +1,17 @@
 ---
-title: Tipi scadenza
+title: Vrste dospijeća  
 sidebar_position: 3
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Ova tablica uključena je u postupak [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako se planira ručna konfiguracija, pogledajte check listu na poveznici stranice.  
 :::
 
-In questa tabella si definiscono le tipologie di scadenze extacontabili che saranno gestite manualmente all'interno del cash flow. Ad ogni tipologia può essere associato un sottoconto bancario di canalizzazione del flusso.
+U ovoj se tablici definiraju vrste izvanbilančnih dospijeća koja će se upravljati ručno unutar cash flowa. Svakoj vrsti može se pridružiti podračun banke za kanalizaciju toka sredstava.  
 
-Le tipologie qui codificate rappresentano, più che altro, un raggruppamento o un'etichetta per l'inserimento effettivo del dettaglio che viene fatto attraverso la form [**Scadenze Extracontabili**](/docs/treasury/cash-flow/off-balance-due-dates).
+Vrste ovdje kodificirane predstavljaju, prije svega, grupiranje ili oznaku za stvarni unos detalja, koji se vrši kroz formu [**Izvanbilančna dospijeća**](/docs/treasury/cash-flow/off-balance-due-dates).  
 
 
 
