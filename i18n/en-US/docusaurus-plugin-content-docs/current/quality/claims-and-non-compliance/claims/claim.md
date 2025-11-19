@@ -3,7 +3,9 @@ title: Complaints
 sidebar_position: 2
 ---
 
+
 The management can be found at the path **Quality > Complaints > New Complaint** or it can be executed from the **Complaint Search**.
+
 
 :::important What it is for
 Complaints serve to register dissatisfaction regarding a service or product, allowing the company to recognize and correct any issues. They are a tool to improve quality and maintain a good relationship with customers and must:      
@@ -20,11 +22,14 @@ Standard reports available include:
 > **List of Complaints by Type**: list of complaints selected from the complaint search grouped by complaint type.   
 :::
 
+
 ## Command Buttons 
+
 
 ### ![](/img/neutral/common/save.png) Save 
 
 Pressing this button saves all modified information of the displayed complaint.
+
 
 ### ![](/img/neutral/common/execute.png) Complaint Valorization
 
@@ -43,6 +48,7 @@ A data request/confirmation is displayed for:
 > Then press the **OK** button or the **Cancel** button if you wish to continue with the creation activity or not.  
 > At the end of the processing, the newly created *Credit Note* is displayed.
 
+
 ### ![](/img/neutral/common/corrective.png) Create Corrective Action 
 
 Button contextual to the display of the tab:   
@@ -54,6 +60,7 @@ The button is enabled only if the complaint has been saved, approved, and a vali
 import CorrectiveActionPopupInsertion from './../../../import/sections/corrective-action-popup-insertion.md'
 
 <CorrectiveActionPopupInsertion />
+
 
 ### Create non-compliance 
 
@@ -68,6 +75,7 @@ A data request/confirmation is displayed for:
 > Then press the **OK** button or the **Cancel** button if you wish to continue with the creation activity or not.   
 > At the end of the processing, the newly created non-compliance is displayed to allow for the completion of missing information.
 
+
 ## Data Management 
 
 ## Document Header Data 
@@ -75,7 +83,8 @@ A data request/confirmation is displayed for:
 The managed information includes:   
 > **Non-compliance Type**: it is the type of document (mandatory data).   
 > When entering a new non-compliance, the complaint type indicated in the *Complaint and non-compliance Parameters*, section *Complaints* is proposed.   
-> Based on the model specified in the complaint type, the management of the complaint will be enabled in *Defect Management* mode or *8D - problem solving* mode.   
+> Based on the *complint model* specified in the complaint type, the management of the complaint will be enabled in *Defect Management* mode or *8D - problem solving* mode.
+> Based on the indication of *Usage in* specified in the *Complaint Type*, the possibility to enter a *Customer Compleint* or a *Supplier Complaint* will be enabled. 
 >
 > **Year/Number/Date**: these are the year, number, and date of the complaint (mandatory data).   
 > When entering a new complaint:   
@@ -83,8 +92,11 @@ The managed information includes:
 > - the year and number are proposed based on the date and the numbering associated with the complaint type.   
 >
 > **Customer**, **Contact Customer**, or **Dealer**: these are the references of the senders (at least one of the three is mandatory data).   
-> The contact customer is a non-direct customer, coded in the contacts registry, whose good or service was sold by a third party.   
-> The Dealer is positioned among the information in the *Header* tab.   
+>The *Customer* is renamed to *Supplier* if the document is a *Supplier Complaint*.
+> The *contact customer* is a non-direct customer, coded in the contacts registry, whose good or service was sold by a third party; disabled if the document is a *Supplier Complaint*. 
+> The Dealer is positioned among the information in the *Header* tab; disabled if the document is a *Supplier Complaint*.    
+> 
+
 
 ## Header 
 
@@ -120,7 +132,7 @@ The managed information includes:
 >  
 > **Dealer**: information already described previously among the senders of the complaint.   
 >
-> **Customer Site Reference**: free notes on the subject.   
+> **Customer Site Reference**: free notes on the subject; is renamed to *Supplier Site Reference* if the document is a *Supplier Complaint*.   
 >
 > **External Contact**: free notes on the contact person of the sender of the complaint.   
 >
