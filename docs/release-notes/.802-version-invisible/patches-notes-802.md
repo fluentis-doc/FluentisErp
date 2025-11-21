@@ -3,6 +3,31 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 802.0013 - 21/11/2025
+
+> -	BI - fix algorithm call from Cruscotti 
+> -	CRM - corretto caso di messaggio “unauthorized” in fase di invio email da campagna e ricerca contatti. (#TT05076/25) 
+> -	CRM - risolto caso per cui le note del workflow log di un contatto non venivano salvate, in seguito ad invio email da campagna (#TT05123/25) 
+> -	CRM - WEB - risolto caso per cui i dati dei contatti CRM non venivano più proposti dal bottone "Proponi dati" (TT04726/25) 
+> -	FI - auto payment record miss on supplier invoice accounting (TT02936/25) 
+> -	FI - contabilizzazione fatture di acquisto intra e creazione intra2 da acquisti, se presente si imposta la nazione di origine merce dalla nazione della riga articolo in fattura. (#TT04862/25) 
+> -	FI - Creazione registrazione contabile cespiti: risolto problema nella registrazione dei cespiti utilizzando la funzionalità “Suddividi cespite” (Rif. Ticket TT04778/25) 
+> -	FI - fixed case for managing direct exchange rate in documents and solved excaption caused by division to 0( TT04986/25) 
+> -	MS - Ora nel tab sotto scorta in the Generazione commesse di produzione gli articoli archiviati non sono più considerati. (#TT05135/25) 
+> -	MS - Rimossa popup da dettagli DDT in Ricevimento merce (#TT04318/25) 
+> -	PM: WEB - dichiarazione attività da progetto, ridimensionato campo descrizione (#TT05110/25) 
+> -	PR - Corretto il comportamento degli help di ricerca manuale degli ordini clienti e fornitori nel cashflow per errori nel filtraggio dei dati. Rif TT04002/25 
+> -	QY - Controllo articoli - Piani di controllo - Corretta l'anomalia che visualizzava, nel tabulatore "Revisioni", riferimenti a Piani di controllo non correlati a quello visualizzato. (Rif.Ticket #TT05141/25) 
+> -	Risoluzione errore che impediva l’importazione Web API del ‘Tipo codice lotto’ degli articoli (#TT04840/25) 
+> -	SCM - fixed after the rollback the delete of the extension in document (TT04933/25) 
+> -	SD - calendario spedizioni - corretto caso per cui le spedizioni relative a diversi vettori, non erano ordinate correttamente nella stessa giornata (#TT04912/25) 
+> -	SD - Creazione Ordine Fornitore da ricerca Ordini Clienti: Le righe di tipo omaggio presenti nell’Ordine cliente vengono ora riportate nell’Ordine fornitore come righe di tipo 1 - articolo codificato. (#TT04934/25) 
+> -	SD - Importazione documenti area Vendita tramite webapi - gestita importazione righe con riferimento a progetto (#TT05050/25) 
+> -	WM - Corretti errori in Inserimento ordini in UDC da Gestione UDC (#TT04935/25) 
+> -	WMS - Corretto flickering dei tasti nell’interfaccia Maui (#TT05055/25) 
+> -	WMS - Inibita doppia esecuzione dei comandi Conferma e Chiudi in Ricevimento merce.(#TT04487/25) 
+
+
 ### Patch 802.0012 - 13/11/2025
 
 > -	Add Implementation to create Payment Link with a external provider 
