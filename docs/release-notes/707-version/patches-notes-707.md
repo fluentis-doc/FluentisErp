@@ -3,6 +3,25 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0056 - 21/11/2025
+
+> -	Disponibilità - migliora tempi di esecuzione (#TT04568/25) 
+> -	FI - auto payment record miss on supplier invoice accounting (TT02936/25) 
+> -	FI - Calcolo provvigioni: risolto problema nella visualizzazione degli agenti nella maschera di calcolo provvigioni con tipo documento considerato per l’imponibile provvigionale su pagamento totale.Modifications Amministrazione > Percipienti > Procedure > Calcolo provvigioni forms can have an impact on profiles. (Rif. Ticket TT04896/25). 
+> -	FI - contabilizzazione fatture di acquisto intra e creazione intra2 da acquisti, se presente si imposta la nazione di origine merce dalla nazione della riga articolo in fattura. (#TT04862/25) 
+> -	FI - Creazione registrazione contabile cespiti: risolto problema nella registrazione dei cespiti utilizzando la funzionalità “Suddividi cespite” (Rif. Ticket TT04778/25) 
+> -	FI - fixed case for managing direct exchange rate in documents and solved excaption caused by division to 0( TT04986/25) 
+> -	MS - Ora nel tab sotto scorta in the Generazione commesse di produzione gli articoli archiviati non sono più considerati. (#TT05135/25) 
+> -	PM - corretto funzionamento profili all'interno dei SAL di progetto (#TT05045/25) 
+> -	PR - Corretto il comportamento degli help di ricerca manuale degli ordini clienti e fornitori nel cashflow per errori nel filtraggio dei dati. Rif TT04002/25 
+> -	Risoluzione errore che impediva l’importazione Web API del ‘Tipo codice lotto’ degli articoli (#TT04840/25) 
+> -	SCM - fixed after the rollback the delete of the extension in document (TT04933/25) 
+> -	SD - Associazione Tipi Listini di Vendita: premendo Nuovo si aprirà la form di inserimento di una nuova associazione. Modifications in both Filter and Object forms can have an impact on profiles (rif.ticket 3101/25)    
+> -	SD - calendario spedizioni - corretto caso per cui le spedizioni relative a diversi vettori, non erano ordinate correttamente nella stessa giornata (#TT04912/25) 
+> -	SD - Ottimizzazione dell'importazione WebApi - vendite(#TT04576/25)  
+> -	SD - Importazione documenti area Vendita tramite webapi - gestita importazione righe con riferimento a progetto (#TT05050/25) 
+> -	WM - Corretti errori in Inserimento ordini in UDC da Gestione UDC (#TT04935/25) 
+
 ### Patch 707.1-0055 - 14/11/2025
 
 > -	FI - fix missing automat payment registration at invoice accounting. ( TT02936/25) 
