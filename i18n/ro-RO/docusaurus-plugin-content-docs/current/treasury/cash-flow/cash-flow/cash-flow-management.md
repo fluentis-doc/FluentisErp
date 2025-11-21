@@ -1,42 +1,75 @@
 ---
-title: Gestione Cash flow
+title: Gestionare cash flow
+description: Încărcarea, modificarea și gestionarea fluxurilor de numerar în Fluentis ERP cu instrumente de simulare și preluare date.
+keywords:
+  - cash flow
+  - gestionare fluxuri financiare
+  - simulare cash flow
+  - contabilitate
 sidebar_position: 2
+schema: TechArticle
+tags:
+  - finanțe
+  - contabilitate
+  - cash flow
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Da questa maschera si procede al caricamento/modifica del cash flow.
+# Gestionare cash flow
 
-Da queste voci di menù è possibile creare/modificare i calcoli di simulazione del cash flow. Con la gestione manuale è possibile inserire righe manualmente oppure richiamare i dati attraverso il pulsante di acquisizione presente in testata, selezionando il tipo di flusso d'interesse che aprirà la maschera di ricerca e selezione relativa.
+## Introducere
 
-Da questa maschera è anche possibile visualizzare il documento d'origine per valutarne i dati.
+Din această fereastră este posibilă încărcarea și modificarea datelor de cash flow.  
+Elementele de meniu permit crearea sau actualizarea calculelor de simulare a cash flow-ului. Prin gestionarea manuală, utilizatorul poate introduce linii direct sau poate prelua datele prin butonul **Achiziție**, selectând tipul de flux de interes, care va deschide fereastra de căutare și selecție aferentă.
 
+Este posibilă și vizualizarea documentului de origine pentru a evalua datele acestuia.
 
+#### Butoane specifice
 
-| Funzione | Significato |
-| --- | --- |
-| Salva | Salva il cash flow in gestione. |
-| Ricerca tutti | Esegue la ricerca dei flussi per i conti finanziari. |
-| Ricerca movimenti cash flow | Esegue la ricerca dei movimenti per i tipi di flusso previsionale. |
-| Acquisizione | Da questo pulsante l'utente può selezionare il tipo di flusso dal quale riprendere i dati previsionali da inserire nel cash flow in uso. Ogni dettaglio di questo pulsante aprirà un help contestuale specifico per il tipo di flusso, vedi applicazione a. |
-| Nuovo mov. cont. | Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti dei conti finanziari. |
-| Nuovo mov. flow | Attiva il cursore nell'inserimento di una nuova riga di dettaglio nei movimenti previsionali. |
-| Ripristino tutti | Cancella tutti i movimenti inseriti. |
-| Ripristino contabilità | Cancella i movimenti dei conti finanziari. |
-| Ripristino cash flow | Cancella i movimenti previsionali. |
-| Visualizza doc. orig. | Visualizza il documento d'origine del flusso previsionale selezionata. |
+- **Salvează**: Salvează cash flow-ul.  
+- **Caută toate**: Efectuează căutarea fluxurilor pentru conturile financiare.  
+- **Caută mișcări cash flow**: Efectuează căutarea mișcărilor pentru tipurile de flux previzional.  
+- **Achiziție**: cu acest buton, utilizatorul poate selecta tipul de flux din care să preia datele previzionale de introdus în cash flow-ul în uz. Fiecare detaliu al acestui buton va deschide un help contextual specific pentru tipul de flux/.  
+- **Nouă mișcare cont**: activează cursorul pentru introducerea unei noi linii de detaliu în mișcările conturilor financiare.  
+- **Nouă mișcare flow**: activează cursorul pentru introducerea unei noi linii de detaliu în mișcările previzionale.  
+- **Restaurează tot**: șterge toate mișcările introduse.  
+- **Restabilire contabilitate<!-- Ripristino contabilità -->**: Șterge mișcările conturilor financiare.  
+- **Restabilire cash flow<!-- Ripristino cash flow -->**: Șterge mișcările previzionale.  
+- **Vizualizează doc. orig.<!-- Visualizza doc. orig. -->**: Vizualizează documentul de origine al fluxului previzional selectat.
 
-**PULSANTE (lista) *ACQUISIZIONE*:**
+#### Buton (listă) *Preluare*<!-- Pulsante (lista) *Acquisizione* -->
 
- 1. Partite: la maschera consente di riprendere la partite contabili dalla contabilità;
- 2. Contabilità: la maschera consente di riprendere i saldi dei tipi conto finanziari;
- 3. Extra contabile: la maschera consente di riprendere i dati delle scadenze extracontabili di cash flow;
- 4. Fatture (acquisto/vendita): da queste maschere si selezionano i dati delle scadenze fatture di acquisto/vendita ;
- 5. Ordini (clienti/fornitori): da queste maschere si selezionano le simulazioni dei dati residui degli ordini clienti/fornitori (stampati e confermati). Si consiglia di lasciare l'impostazione di default della maschera;
- 6. Percipienti non contabilizzati: la maschera consente di inserire nel cash flow i dati dei compensi percipienti non contabilizzati;
- 7. DDT (vendita/acquisto): le maschere consentono di riprendere i dati dei  DDT non valorizzate in fattura;
- 8. Conto lavoro (ordini/rientri): le maschere consentono di riprendere i dati dagli ordini di conto lavoro e dai relativi rientri non fatturati (lasciare le impostazioni di default di entrambe la maschere).
+Tipurile de preluare disponibile:
 
+1. **Partide<!-- Partite -->**: preia partidele contabile din contabilitate.  
+2. **Contabilitate<!-- Contabilità -->**: preia soldurile tipurilor de conturi financiare.  
+3. **Extra contabil<!-- Extra contabile -->**: importă scadențele extracontabile ale cash flow-ului.  
+4. **Facturi (achiziție/vânzare)<!-- Fatture (acquisto/vendita) -->**: selectează datele scadențelor facturilor de achiziție/vânzare.  
+5. **Comenzi (clienți/furnizori)<!-- Ordini (clienti/fornitori) -->**: selectează simulările datelor rămase ale comenzilor confirmate.  
+Din aceste ferestre se selectează simulările datelor rămase ale comenzilor clienților/furnizorilor (tipărite și confirmate). În cazul în care se dorește compararea căutării, de exemplu, cu formularul general de căutare a comenzilor (clienți sau furnizori), trebuie avut în vedere că: 
+     - în cash flow sunt selectate (implicit) doar comenzile neexecutate (cu posibilitatea de a activa flag-ul corespunzător pentru căutarea celor parțial executate, doar, sau în plus față de cele neexecutate, pentru care este vizibil în grilă flag-ul de identificare) 
+     - sunt excluse comenzile fără detaliu de linii cu valoare diferită de zero (altfel nu generează scadențe) 
+     - sunt excluse cele executate forțat
+     - moneda trebuie să nu fie goală
+     - contul principal trebuie să fie completat
+     - numărul comenzii trebuie să fie mai mare decât zero
+     - tipul comenzii trebuie să aibă flag-ul cashflow (ca pentru crearea automată a cashflow-ului)
+     - data confirmării comenzii trebuie să fie completată
+     - comanda nu trebuie să fi fost deja inclusă într-un alt cashflow calculat.  
 
+Help-ul permite două moduri:
 
+- **Vizualizează comenzi<!-- Visualizza ordini -->**: afișează datele principale ale comenzilor.  
+- **Vizualizează articole<!-- Visualizza articoli -->**: afișează datele liniilor de comandă (deci, în cazul mai multor linii, va fi afișat de mai multe ori numărul comenzii și datele principale).
 
+Flag-ul **Exclude articolele facturate<!-- Escludi articoli in fattura -->** verifică dacă liniile comenzii au fost deja executate în factură sau aviz de expediție (DDT).
 
+*Exemplu*: comandă cu 3 articole (primul neexecutat, al doilea parțial executat și al treilea total executat).  
+- Cu flag-ul activ:
+  - în modul *Vizualizează comenzi<!-- Visualizza ordini -->* va fi extrasă acea comandă deoarece linia 1 și 2 nu sunt total executate, iar valoarea pentru cash flow va fi suma liniei 1 și restul liniei 2.  
+  - în modul *Vizualizează articole<!-- Visualizza articoli -->* va fi extrasă doar linia 1 deoarece nu este executată.
 
+6. **Beneficiari necontabilizați<!-- Percipienti non contabilizzati -->**: permite introducerea în cash flow a datelor privind remunerațiile beneficiarilor necontabilizați.  
+7. **Avize de expediție (vânzare/achiziție)<!-- DDT (vendita/acquisto) -->**: permit preluarea datelor din avizele de expediție (DDT) nevalorificate în factură.  
+8. **Cont la terți (comenzi/retururi)<!-- Conto lavoro (ordini/rientri) -->**: permit preluarea datelor din comenzile de conto lavoro<!-- conto lavoro --> și din retururile aferente nefacturate (lăsați setările implicite ale ambelor ferestre).
