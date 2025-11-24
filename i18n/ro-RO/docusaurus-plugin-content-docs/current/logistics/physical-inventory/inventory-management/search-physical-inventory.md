@@ -1,22 +1,50 @@
 ---
 title: Inventare faptice
+description: Gestionarea, căutarea și modificarea inventarelor fizice în Fluentis ERP.
+keywords:
+  - inventare faptice
+  - gestiune
+  - stocuri
+  - logistic
+  - Fluentis
 sidebar_position: 3
+schema: HowTo
+tags:
+  - logistică
+  - gestiune
+  - inventare
+last_update:
+  author: Fluentis Documentation Team
+ai_generated: true
 ---
 
-:::important Utilizare  
-Această funcționalitate permite operatorilor să creeze liste inventariale, să efectueze măsurători ale stocurilor faptice și să compare datele obținute cu stocurile scriptice prezente în sistem. Printr-un proces automatizat, Fluentis facilitează alinierea între stocurile faptice și cele scriptice, garantând astfel o optimizare precisă a gestionării resurselor.
+# Inventare faptice
 
-Form-ul dedicat inventarelor faptice permite selectarea inventarelor existente, compuse din una sau mai multe liste inventariale, pentru a le modifica sau a crea altele noi. Operatorii pot introduce ușor informații relevante, precum numărul, data și notele referitoare la inventar și pot marca inventarul ca fiind "închis" după ce operațiunile necesare sunt completate. Aceste funcționalități garantează că inventarele sunt gestionate eficient și că orice discrepanță poate fi abordată prompt.
+:::important Utilizare
+**Inventarele faptice** din Fluentis permit crearea și gestionarea listelor de inventar, înregistrarea stocurilor faptice și compararea acestora cu stocurile scriptice existente în sistem.  
+Prin procese automatizate, Fluentis permite alinierea stocurilor, susținând gestionarea eficientă a resurselor și facilitând identificarea și corectarea discrepanțelor.
 
-În plus, articolele inventariate pot fi introduse manual sau prin intermediul sistemelor de asistență, cum ar fi WMS, facilitând astfel inserarea și înregistrarea stocurilor. După finalizarea *listelor de ieșiri*, se pot calcula diferențele inventariale, făcând procesul de gestionare a stocurilor și mai precis și eficient.
+Formul dedicat permite selectarea inventarelor existente (compuse din una sau mai multe liste de inventar), modificarea acestora sau crearea unora noi. Se pot introduce informații precum număr, dată, note și se poate marca inventarul ca *închis* la finalizarea operațiunilor. Aceste funcționalități asigură că inventarele sunt gestionate eficient și că orice discrepanță poate fi abordată prompt.
+
+Articolele inventariate pot fi introduse manual sau prin sisteme de asistență precum WMS, facilitând astfel introducerea și înregistrarea stocurilor. După finalizarea listelor de ieșire, se poate continua cu calculul diferențelor de inventar, făcând procesul de gestionare și mai eficient.
 :::
 
-Form-ul se află pe calea **Logistică > Inventare faptice** și permite selectarea inventarelor prezente în baza de date. Inventarele grupează una sau mai multe liste inventariale.
+Formul se află pe calea **Logistică > Inventare faptice** și permite selectarea inventarelor existente în baza de date.  
+Inventarele reprezintă entitatea care grupează una sau mai multe liste de inventar.
 
-Permite căutarea inventarelor care corespund datelor de filtrare specificate pentru a le vizualiza, modifica, șterge sau pentru a insera o nouă listă. Fereastra este compusă dintr-o zonă de filtrare și un tabel de rezultate.
+Fereastra este compusă din:
 
-După ce toate filtrele dorite sunt setate, este suficient să faceți clic pe butonul **Caută** pentru a vizualiza rezultatele în tabelul de rezultate.
+- o **zonă de filtrare**, pentru căutarea inventarelor după criteriile setate  
+- o **grilă de rezultate**, care afișează inventarele găsite
 
-Pentru a deschide detaliile unei liste, este suficient să o selectați și să faceți dublu clic sau să faceți clic pe butonul **Modifică** (permite accesarea detaliilor și modificarea acestora) sau pe butonul **Vizualizare** (permite accesarea detaliilor și vizualizarea acestora, fără a le putea modifica).
+După ce ați setat filtrele dorite, faceți clic pe **Caută** pentru a popula tabelul.
 
-De asemenea, din acest formular se poate introduce o listă nouă folosind butonul **Nou**.
+Pentru a deschide detaliile unei liste, este suficient să:
+
+- o selectați și să faceți dublu clic cu mouse-ul  
+- să faceți clic pe butonul **Modifică** pentru a-i modifica detaliile  
+- să faceți clic pe butonul **Vizualizează** pentru a o consulta fără posibilitatea de a o modifica
+
+De asemenea, este posibilă crearea unei liste noi prin butonul **Nou**.
+
+Pentru informații generale despre utilizarea formularelor, consultați [Funcționalități, butoane și câmpuri comune](/docs/guide/common).
