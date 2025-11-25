@@ -1,18 +1,38 @@
 ---
-title: Liste de inventariere
+title: Liste de inventar
+description: Raport pentru generarea și gestionarea listelor de inventariere în Fluentis ERP.
+keywords:
+  - inventare fizice
+  - liste de inventar
+  - gestiune
+  - stocuri
+  - ERP
 sidebar_position: 2
+schema: HowTo
+tags:
+  - logistică
+  - inventar
+  - gestiune
+last_update:
+  author: Fluentis Documentation Team
+ai_generated: true
 ---
 
+# Liste de inventar
+
 :::important Utilizare
-Cu acest raport utilizatorii pot genera și vizualiza listele detaliate ale stocurilor de articole, permițând o verificare precisă a cantităților faptice.  
-Această abordare simplifică semnificativ activitățile de control, sprijinind identificarea rapidă a variațiilor de stoc.  
-Listele de inventariere pot fi utilizate nu doar pentru operațiunile de inventar periodic, ci și pentru monitorizarea rotației stocurilor și optimizarea strategiilor de aprovizionare.  
-În plus, integrarea cu alte rapoarte de gestionare a stocului garantează o imagine de ansamblu a gestionării stocurilor, favorizând o eficiență operațională sporită.
+Acest raport permite utilizatorilor să genereze și să vizualizeze liste detaliate cu stocurile articolelor aflate în gestiune, susținând o verificare precisă a cantităților fizice.  
+Această abordare simplifică considerabil activitățile de control și reconciliere, facilitând identificarea rapidă a variațiilor de stoc.  
+Listele de inventar pot fi utilizate nu doar pentru operațiunile de inventariere periodică, ci și pentru monitorizarea rotației stocurilor și optimizarea strategiilor de aprovizionare.  
+Integrarea cu celelalte rapoarte de gestiune oferă, în final, o viziune completă asupra gestionării stocurilor, îmbunătățind eficiența operațională.
 :::
 
-Form-ul permite utilizatorului să vizualizeze un raport care conține informațiile referitoare la listele de inventariere filtrate.  
-Pe lângă datele de gestiune, codul articolului/variantă, lotul, locația și unitatea de măsură, sunt incluse și valorile stocului faptic și scriptic al fiecărui articol. Câmpul *Cantitate numărată* care permite utilizatorului să insereze cantitatea observată în timpul inventarului.
+Tipărirea permite vizualizarea unui raport care conține informațiile referitoare la listele de inventar filtrate.  
+Pe lângă datele principale — gestiune, cod articol/variantă, lot, locație și unitate de măsură — sunt prezente:  
+- **Stoc faptic și scriptic** al fiecărui articol  
+- **Cantitate inventariată** care permite utilizatorului să introducă cantitatea identificată în timpul inventarierii.
 
-După introducerea filtrului dorit, se pot tipări rapoarte standard sau personalizate (în baza setărilor efectuate). În cazul în care se dorește tipărirea unui raport personalizat, este necesar să fie ales din lista care se află în  *parametrii raport*.
+După setarea filtrelor, este posibilă tipărirea de rapoarte *standard* sau *personalizate* (cu condiția mapării în gestionarea tipăririlor).  
+Pentru a utiliza un raport personalizat, selectați-l din tabelul din *parametrii de tipărire*.
 
-Pentru toate celelalte informații care nu sunt detaliate în acest document referitor la funcționarea comună a rapoartelor, vă rugăm să consultați link-ul: [Vizualizare și imprimare](/docs/guide/common/operations-with-data/reports).
+Pentru tot ceea ce nu este specificat în acest document privind funcționarea comună a formularelor de tipărire, consultați [Previzualizare și tipărire](/docs/guide/common/operations-with-data/reports).
