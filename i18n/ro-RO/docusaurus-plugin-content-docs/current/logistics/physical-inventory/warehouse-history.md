@@ -1,46 +1,44 @@
 ---
-title: Istoric depozit
-description: Consultarea și analiza datelor istorice privind valorificările depozitului<!-- magazzino --> în Fluentis ERP.
+title: Istoric gestiune
+description: Consultarea și analiza datelor istorice privind valorificările de magazin în Fluentis ERP.
 keywords:
-  - istoric depozit<!-- storico magazzino -->
-  - valorificare inventar<!-- valorizzazione inventario -->
-  - stocuri<!-- giacenze -->
-  - cost ultim<!-- costo ultimo -->
-  - cost mediu<!-- costo medio -->
+  - istoric gestiune
+  - valorizare inventar
+  - stocuri
+  - cost ultim
+  - cost mediu
 sidebar_position: 5
 schema: TechArticle
-sidebar_label: Istoric depozit
 tags:
-  - depozit<!-- magazzino -->
-  - inventar<!-- inventario -->
-  - valorificări<!-- valorizzazioni -->
-  - logistică<!-- logistica -->
+  - gestiune
+  - inventar
+  - logistică
 last_update:
   author: Fluentis Documentation Team
 ---
 
-# Istoric depozit<!-- Storico magazzino -->
+# Istoric gestiune
 
-## Introducere<!-- Introduzione -->
+## Introducere
 
 :::important
-Introducerea la istoricul depozitului<!-- storico magazzino --> din Fluentis oferă acces esențial la datele istorice referitoare la operațiunile depozitului<!-- magazzino -->. Această funcționalitate permite vizualizarea unui arhivă a închiderilor și valorificărilor efectuate de-a lungul timpului, cu informații precum costul ultim<!-- costo ultimo -->, costul mediu<!-- costo medio --> și stocurile<!-- giacenze --> asociate fiecărei închideri.
+Istoricul gestiunii din Fluentis oferă acces esențial la datele istorice referitoare la operațiunile de gestiune. Această funcționalitate permite vizualizarea unui arhive a închiderilor și valorizărilor efectuate de-a lungul timpului, cu informații precum costul ultim, costul mediu și stocuri asociate fiecărei închideri.
 
-Datorită formularului dedicat, operatorii pot consulta date referitoare la inventarele valorificate<!-- inventari valorizzati --> și la alte operațiuni logistice<!-- logistiche -->, asigurând o trasabilitate completă și imediată. Pentru a garanta înregistrarea corectă a informațiilor, este necesară activarea bifei **Istoricizare inventar**<!-- Storicizzazione inventario --> în timpul procedurilor de valorificare.
+Datorită acestui form, operatorii pot consulta date referitoare la inventarele valorizate și la alte operațiuni logistice, asigurând trasabilitatea completă și imediată. Pentru a garanta înregistrarea corectă a informațiilor, este necesară activarea bifei **Arhivare inventar** în timpul procedurilor de valorizare.
 
-Gestionarea istoricului depozitului<!-- storico magazzino --> susține trasabilitatea, facilitând și analiza performanțelor companiei în timp și contribuind la planificarea strategică a resurselor și costurilor asociate.
+Gestionarea istoricului de gestiune susține trasabilitatea, facilitând și analiza performanțelor companiei în timp și contribuind la planificarea strategică a resurselor și costurilor asociate.
 :::
 
-Acest formular permite consultarea datelor istorice referitoare la inventarele depozitului<!-- magazzino --> valorificate (zonă de gestiune<!-- area gestionale -->, categorie fiscală<!-- categoria fiscale -->, cost ultim<!-- costo ultimo -->, cost mediu<!-- costo medio -->, …) generate prin procedura de [Inventar cantitativ valorificat](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity).
+Acest form permite consultarea datelor istorice referitoare la inventarele de gestiune valorizate (arie gestională, categorie fiscală, cost ultim, cost mediu, …) generate prin procedura [Inventar cantitativ valoric](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity).
 
-:::important Notă<!-- Nota -->
-Pentru ca datele să fie salvate în cadrul **Istoricului depozitului**<!-- Storico di magazzino -->, în timpul executării procedurii de **Inventar cantitativ valorificat**<!-- Inventario quantità valorizzato -->, bifa **Istoricizare inventar**<!-- Storicizzazione inventario --> trebuie să fie activă.
+:::important Notă
+Pentru ca datele să fie salvate în **Istoric gestiune**, în timpul executării procedurii de **Inventar cantitativ valoric** opțiunea **Istoricizare inventar** trebuie să fie activă.
 :::
 
-## Rezumat și detalii suplimentare<!-- Riepilogo e approfondimenti -->
+## Rezumat și detalii suplimentare 
 
-Istoricul depozitului<!-- storico magazzino --> permite analiza precisă a datelor istorice privind valorificările inventarului<!-- valorizzazioni di inventario -->, susținând controlul, trasabilitatea și evaluările de gestiune<!-- valutazioni gestionali -->.  
-Pentru detalii suplimentare despre funcționalități conexe, consultă următoarele linkuri:
+Istoricul gestiunii permite analiza precisă a datelor arhivate referitoare la valorizările inventarului, susținând controlul, trasabilitatea și vaorizarea.  
+Pentru detalii suplimentare despre funcționalități conexe, consultați:
 
-- [Inventar cantitativ valorificat](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity)<!-- Inventario quantità valorizzato -->
-- [Funcționalități, butoane și câmpuri comune](/docs/guide/common)<!-- Funzionalità, pulsanti e campi comuni -->
+- [Inventar cantitativ valoric](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity)
+- [Funcționalități, butoane și câmpuri comune<!-- Funzionalità, pulsanti e campi comuni-->](/docs/guide/common)
