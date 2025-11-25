@@ -4,10 +4,7 @@ sidebar_position: 1
 ---
 
 Nel modulo Vendite di Fluentis, la gestione degli ordini cliente permette di controllare e ottimizzare l'intero ciclo dell'ordine.
-Gli ordini cliente in Fluentis possono essere generati attraverso diverse modalità:
-
-- Da Offerta: Un ordine cliente può essere creato automaticamente a partire da un'offerta precedentemente accettata, mantenendo coerenza tra le condizioni commerciali proposte e quelle confermate.
-- Da Ordine Fornitore: È possibile generare un ordine cliente a partire da un ordine fornitore, utile per le aziende che operano con processi di drop-shipping o su commessa, garantendo un allineamento diretto tra i processi di approvvigionamento e la vendita.
+Gli ordini cliente in Fluentis possono essere generati manualmente oppure da Offerta: un ordine cliente può essere creato automaticamente a partire da un'offerta precedentemente accettata, mantenendo coerenza tra le condizioni commerciali proposte e quelle confermate.
 
 ## Configurazione preliminare del modulo
 

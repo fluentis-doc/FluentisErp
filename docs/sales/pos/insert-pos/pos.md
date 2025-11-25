@@ -22,6 +22,8 @@ Questo campo non è rilevante per la gestione della [**Contabilizzazione POS**](
 
 - **Anagrafica**: si tratta di un campo alternativo al precedente *Conto* che può essere utilizzato per inserire un *Contatto* che non è abbinato ad alcun sottoconto
 
+- **Barcode**: permette un inserimento facilitato degli articoli. Infatti, inserendo in questo campo il Barcode dell’articolo verrà creata una nuova riga articolo con quantità 1, nel relativo tab. 
+
 ### 1.1 Totali documento
 
 Nella parte destra della form sono presenti i totali del documento.
