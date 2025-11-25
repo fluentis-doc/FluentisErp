@@ -1,18 +1,39 @@
 ---
-title: liste inventariali
+title: Listas de inventario
+description: Informe para la generación y gestión de listas de inventario en Fluentis ERP.
+keywords:
+  - inventarios físicos
+  - listas de inventario
+  - almacén
+  - existencias
+  - ERP
 sidebar_position: 2
+schema: HowTo
+sidebar_label: Listas de inventario
+tags:
+  - logística
+  - inventarios
+  - almacén
+last_update:
+  author: Fluentis Documentation Team
+ai_generated: true
 ---
 
-:::important ¿Para qué sirve? (A cosa serve)
-A través de este informe, los usuarios pueden generar y visualizar listas detalladas de las existencias de artículos presentes, permitiendo una verificación precisa de las cantidades físicas.  
-Este enfoque simplifica enormemente las actividades de control y reconciliación, apoyando la identificación oportuna de las variaciones de inventario.  
-Las listas de inventario pueden ser utilizadas no solo para las operaciones de inventario periódico, sino también para monitorear la rotación de las existencias y optimizar las estrategias de aprovisionamiento.  
-Además, la integración con otros informes de almacén garantiza una visión general de la gestión de existencias, favoreciendo una mayor eficiencia operativa.
+# Listas de inventario<!-- Liste inventariali -->
+
+:::important Para qué sirve<!-- A cosa serve -->
+Este informe permite a los usuarios generar y visualizar listas detalladas de las existencias<!-- giacenze --> de los artículos presentes en el almacén<!-- magazzino -->, facilitando una verificación precisa de las cantidades físicas.  
+Este enfoque simplifica considerablemente las actividades de control y conciliación, ayudando a la identificación oportuna de las variaciones de stock.  
+Las listas de inventario<!-- liste inventariali --> pueden utilizarse no solo para operaciones de inventario periódico, sino también para monitorear la rotación de existencias y optimizar las estrategias de abastecimiento.  
+La integración con otros informes de almacén<!-- magazzino --> brinda finalmente una visión completa de la gestión de existencias, mejorando la eficiencia operativa.
 :::
 
-La impresión permite al usuario visualizar un informe que contiene la información relativa a las listas de inventario filtradas.  
-Además de los datos del almacén, código de artículo / variante, lote, ubicación y unidad de medida, también se indican los valores de existencia física y lógica de los artículos individuales; además, hay una columna vacía llamada *Cantidad contada (Quantità conteggiata)* que permite al usuario ingresar la cantidad registrada durante el inventario.
+La impresión permite visualizar un informe que contiene la información relativa a las listas de inventario<!-- liste inventariali --> filtradas.  
+Además de los datos principales — almacén<!-- magazzino -->, código de artículo/variante, lote, ubicación y unidad de medida — se incluyen:  
+- **Existencia física y lógica<!-- Giacenza fisica e logica -->**  de los artículos individuales  
+- **Cantidad contada<!-- Quantità conteggiata -->** que permite al usuario ingresar la cantidad detectada en la fase de inventario.
 
-Después de ingresar los filtros deseados, es posible imprimir informes estándar o personalizados (previa mapeo en la gestión de impresiones). En caso de que se desee imprimir un informe personalizado, es necesario seleccionarlo desde el listado en los parámetros de impresión.
+Una vez configurados los filtros, es posible imprimir informes **estándar** o **personalizados** (previa configuración en la gestión de impresiones).  
+Para utilizar un informe personalizado, selecciónelo desde la tabla de los **parámetros de impresión<!-- parametri di stampa -->**.
 
-Para todo lo que no se detalle en este documento sobre el funcionamiento común de los formularios de impresión, consulte el siguiente enlace [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).
+Para todo lo que no esté especificado en este documento respecto al funcionamiento común de los formularios de impresión, consulte [Vista previa e impresión<!-- Anteprima e stampa -->](/docs/guide/common/operations-with-data/reports).

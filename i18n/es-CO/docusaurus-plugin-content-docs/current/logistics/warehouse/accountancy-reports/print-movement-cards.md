@@ -1,12 +1,13 @@
 ---
-title: schede di movimentazione
+title: Fichas de movimientos
 sidebar_position: 4
+ai_generated: true
 ---
 
-La impresión se encuentra en la ruta **schede di movimentazione** y permite al usuario extraer un informe que contiene información relativa a los movimientos de almacén. Hay una serie de filtros y parámetros disponibles para obtener la impresión deseada.
+La impresión se encuentra en la ruta **Logística > Almacén<!-- Magazzino --> > Impresiones contables > Fichas de movimientos<!-- Schede di movimentazione -->** y permite al usuario extraer un informe con información relativa a los movimientos de almacén<!-- magazzino -->. Existen una serie de filtros y parámetros para obtener la impresión deseada.
 
-En este formulario es posible filtrar por almacén, motivo, artículo, posible variante, etc. Por defecto, la impresión no extrae los movimientos que no son de interés fiscal. Sin embargo, es posible extraerlos activando el indicador correspondiente.
+En este formulario es posible filtrar por almacén<!-- magazzino -->, causa<!-- causale -->, artículo, eventual variante, etc. Por defecto, la impresión no extrae los movimientos que no tengan relevancia fiscal. No obstante, es posible extraerlos activando la casilla correspondiente.
 
-Después de ingresar los filtros deseados, es posible imprimir informes estándar o personalizados (previa mapeo en la gestión de impresiones). En caso de desear imprimir un informe personalizado, es necesario seleccionarlo desde el listado en los parámetros de impresión.
+Después de configurar los filtros deseados es posible imprimir informes estándar o personalizados (previa configuración en la gestión de impresiones). En caso de querer imprimir un informe personalizado, es necesario seleccionarlo desde la lista en los parámetros de impresión.
 
-Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios de impresión, puede consultar el siguiente enlace [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios de impresión, consulte el siguiente enlace [Vista previa e impresión<!-- Anteprima e stampa -->](/docs/guide/common/operations-with-data/reports).

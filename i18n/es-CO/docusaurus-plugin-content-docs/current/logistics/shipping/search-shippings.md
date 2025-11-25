@@ -1,16 +1,17 @@
 ---
-title: Búsqueda de envíos (Ricerca spedizioni)
+title: Búsqueda de envíos
 sidebar_position: 2
+ai_generated: true
 ---
 
-El filtro se encuentra en la ruta Logística > Envíos > Envíos (Logistica > Spedizioni > Spedizioni).
+El filtro se encuentra en la ruta Logística<!-- Logistica --> > Envíos<!-- Spedizioni --> > Envíos<!-- Spedizioni -->.
 
-La gestión de los **spedizioni** en Fluentis permite manejar y organizar de manera efectiva los envíos de clientes, consolidándolos en un único proceso para maximizar la eficiencia. A través del agrupamiento de envíos, el sistema optimiza las operaciones logísticas, reduciendo costos y mejorando los tiempos de entrega.
+La gestión de las **Envíos<!-- Spedizioni -->** en Fluentis permite administrar y organizar de manera eficaz los envíos<!-- spedizioni --> a clientes, consolidándolos en un único proceso para maximizar la eficiencia. A través del agrupamiento de los envíos<!-- spedizioni -->, el sistema optimiza las operaciones logísticas, reduciendo los costos y mejorando los tiempos de entrega.
 
-El módulo **spedizioni** permite gestionar los envíos creados.
+El módulo **Envíos<!-- Spedizioni -->** permite gestionar los envíos<!-- spedizioni --> creados.
 
 import SearchForm from './../../import/sections/search-form.md'
 
 <SearchForm />
 
-Para poder ingresar un nuevo [Envío (Spedizione)](/docs/logistics/shipping/shippings), es necesario presionar el botón **nuovo**.
+Para poder insertar un nuevo [Envío<!-- Spedizione -->](/docs/logistics/shipping/shippings) es necesario presionar el botón **Nuevo<!-- Nuovo -->**.

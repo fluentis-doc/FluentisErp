@@ -1,88 +1,89 @@
 ---
-title: ubicazioni
+title: Ubicaciones
 sidebar_position: 1
+ai_generated: true
 ---
 
-:::important ¿Para qué sirve? (A cosa serve)
-La gestión de las ubicaciones en Fluentis es un elemento crucial para la optimización de las operaciones de almacén. Este módulo permite a los usuarios estructurar las ubicaciones de almacenamiento dentro de los almacenes según un esquema jerárquico, fácilmente modificable para adaptarse a las necesidades empresariales. Cada ubicación puede definirse en función de varios parámetros, incluidos el tipo de ubicación (por ejemplo, área, estante, estantería, sección) y sus características físicas, como ancho, altura y capacidad de carga.
+:::important Para qué sirve<!-- A cosa serve -->
+La gestión de ubicaciones<!-- ubicazioni --> en Fluentis es un elemento crucial para la optimización de las operaciones de almacén<!-- magazzino -->. Este módulo permite a los usuarios estructurar las ubicaciones de almacenamiento dentro de los almacenes<!-- magazzini --> según un esquema jerárquico, fácilmente modificable para adaptarse a las necesidades de la empresa. Cada ubicación<!-- ubicazione --> puede definirse en base a varios parámetros, incluyendo el tipo de ubicación<!-- tipo di ubicazione --> (por ejemplo, área, estante, anaquel, sección) y sus características físicas como ancho, alto y capacidad de carga.
 
-Gracias a la creación de un árbol de ubicaciones, los operadores pueden insertar nuevas ramificaciones y visualizar el contenido de cada ubicación, con detalles sobre los artículos y las cantidades en existencia. La sección de atributos de la ubicación permite además una personalización, permitiendo definir requisitos específicos para las ubicaciones individuales.
+Gracias a la creación de un árbol de ubicaciones<!-- ubicazioni -->, los operarios pueden agregar nuevas ramas y visualizar el contenido de cada ubicación<!-- ubicazione -->, con detalles sobre los artículos y las cantidades en stock<!-- giacenza -->. La sección de atributos de la ubicación<!-- ubicazione --> permite una mayor personalización, posibilitando definir requisitos específicos para ubicaciones<!-- ubicazioni --> individuales.
 
-Esta gestión eficiente de las ubicaciones no solo mejora el control de existencias, sino que también apoya la logística operativa, contribuyendo a una gestión más ágil y efectiva de los inventarios dentro de la empresa.
+Esta gestión eficiente de las ubicaciones<!-- ubicazioni --> no solo mejora el control de inventario<!-- giacenze -->, sino que también respalda la logística operativa, contribuyendo a una administración más ágil y eficaz de los inventarios dentro de la empresa.
 :::
 
-El formulario permite al operador crear y gestionar el árbol de ubicaciones de almacén.
+El formulario permite al operador crear y gestionar el árbol de ubicaciones de almacén<!-- magazzino -->.
 
-A través de los filtros, es posible realizar una búsqueda específica según los parámetros e visualizar el resultado de la consulta en las cuadrículas de resultados. Dichos resultados pueden agruparse por varios parámetros para facilitar la lectura de los datos. El único parámetro de filtro obligatorio es el del almacén.
+Mediante los filtros es posible efectuar una búsqueda dirigida según los parámetros y visualizar el resultado de la consulta en las tablas de resultados. Estos resultados pueden agruparse por varios parámetros para facilitar la lectura de los datos. El único parámetro de filtro obligatorio es el del almacén<!-- magazzino -->.
 
-Los resultados de la búsqueda se dividen en dos secciones: una primera sección que incluye la información relacionada con las ubicaciones del almacén, mientras que en la segunda se encuentra el detalle de los artículos y atributos relacionados con la ubicación seleccionada.
+Los resultados de la búsqueda se dividen en dos secciones: una primera sección en la que se insertan las informaciones relativas a las ubicaciones<!-- ubicazioni --> del almacén<!-- magazzino -->, mientras que en la segunda está el detalle de los artículos y atributos relacionados con la ubicación<!-- ubicazione --> seleccionada.
 
-*Las informaciones relacionadas con la primera sección de la ventana son, en detalle:*
+*La información relativa a la primera sección de la ventana, en detalle, es:*<!-- Le informazioni relative alla prima sezione della finestra, nel dettaglio sono:-->
 
-**Ubicación**: Indica la ubicación del almacén;  
+**Ubicación<!-- Ubicazione -->**: Indica la ubicación de almacén<!-- ubicazione di magazzino -->;
 
-**Código**: Indica el código de la ubicación del almacén;  
+**Código**: indica el código de la ubicación de almacén<!-- ubicazione di magazzino -->;
 
-**Descripción**: Indica la descripción de la ubicación del almacén;  
+**Descripción**: indica la descripción de la ubicación de almacén<!-- ubicazione di magazzino -->;
 
-**Tipo de ubicación**: Indica el código del tipo de la ubicación del almacén;  
+**Tipo de ubicación<!-- Tipo ubicazione -->**: indica el código del tipo de ubicación de almacén<!-- ubicazione di magazzino -->;
 
-**Descripción tipo de ubicación**: Indica la descripción del tipo de la ubicación del almacén;  
+**Descripción del tipo de ubicación<!-- Descrizione tipo ubicazione -->**: indica la descripción del tipo de ubicación de almacén<!-- ubicazione di magazzino -->;
 
-**Estado de ubicación**: Indica el código del estado de la ubicación del almacén;  
+**Estado de la ubicación<!-- Stato ubicazione -->**: indica el código del estado de la ubicación de almacén<!-- ubicazione di magazzino -->;
 
-**Descripción estado de ubicación**: Indica la descripción del estado de la ubicación del almacén;  
+**Descripción del estado de ubicación<!-- Descrizione stato ubicazione -->**: indica la descripción del estado de la ubicación de almacén<!-- ubicazione di magazzino -->;
 
-**Grupo de ubicación**: Indica que se trata de una ubicación de grupo.
+**Ubicación de grupo<!-- Ubicazione gruppo -->**: indica que se trata de una ubicación de grupo.
 
-En la segunda parte de la ventana, en la pestaña *Atributos de la ubicación*, es posible ingresar una serie de datos relacionados con la ubicación.
+En la segunda parte de la ventana, en la pestaña *Atributos de la ubicación<!-- Attributi dell’ubicazione -->*, es posible ingresar una serie de datos relativos a la ubicación<!-- ubicazione -->.
 
-**Ancho**: Indica el ancho de la ubicación;  
+**Ancho<!-- Larghezza -->**: indica el ancho de la ubicación<!-- ubicazione -->; 
 
-**Altura**: Indica la altura de la ubicación;  
+**Alto<!-- Altezza -->**: indica el alto de la ubicación<!-- ubicazione -->; 
 
-**Profundidad**: Indica la profundidad de la ubicación;  
+**Profundidad**: indica la profundidad de la ubicación<!-- ubicazione -->; 
 
-**Capacidad**: Indica la capacidad de la ubicación;  
+**Capacidad de carga<!-- Portata -->**: indica la capacidad de carga de la ubicación<!-- ubicazione -->; 
 
-**Prioridad**: Indica la prioridad de la ubicación;  
+**Prioridad**: indica la prioridad de la ubicación<!-- ubicazione -->; 
 
-**Número de capas**: Indica el número máximo de capas que se pueden cargar en la ubicación;  
+**Número de niveles<!-- Numero strati -->**: indica el número máximo de niveles que es posible cargar en la ubicación<!-- ubicazione -->; 
 
-**Tipo de unidad de carga**: Indica el tipo de unidad de carga que se puede cargar en la ubicación;  
+**Tipo de unidad de carga<!-- Tipo unità di carico -->**: indica el tipo de unidad de carga que es posible cargar en la ubicación<!-- ubicazione -->;
 
-**Número de unidades de carga**: Indica el número de unidades de carga que se pueden cargar en la ubicación;  
+**Número de unidades de carga<!-- Numero unità di carico -->**: indica el número de unidades de carga que es posible cargar en la ubicación<!-- ubicazione -->;
 
-**Stock mínimo**: Indica el stock mínimo para esa ubicación;  
+**Stock mínimo<!-- Scorta minima -->**: indica el stock mínimo para esa ubicación<!-- ubicazione -->;
 
-**Stock máximo**: Indica el stock máximo para esa ubicación.
+**Stock máximo<!-- Scorta massima -->**: indica el stock máximo para esa ubicación<!-- ubicazione -->.
+  
+Además, en el expander *Parámetros<!-- Parametri -->* también pueden activarse las siguientes banderas relativas a la ubicación<!-- ubicazione --> individual:
 
-Además, en el expander *Parámetros*, también se pueden activar los siguientes indicadores relacionados con la ubicación individual:
+**Mono artículo<!-- Mono articolo -->**: si está activo indica que la ubicación<!-- ubicazione --> es mono artículo; por lo tanto, no será posible mover un artículo diferente al ya presente a esa ubicación<!-- ubicazione -->;
 
-**Mono artículo**: si está activo, indica que la ubicación es mono artículo; por lo tanto, no será posible mover un artículo diferente a aquel que ya está presente en esa ubicación;  
+**Mono lote<!-- Mono lotto -->**: si está activo indica que la ubicación<!-- ubicazione --> es mono lote; por lo tanto, no será posible mover en esa ubicación<!-- ubicazione --> un mismo artículo con lote diferente al ya presente;
 
-**Mono lote**: si está activo, indica que la ubicación es mono lote; por lo tanto, no será posible mover un mismo artículo con un lote diferente al que ya está presente en esa ubicación;  
+**Activa<!-- Attiva -->**: si está activo, indica que la ubicación<!-- ubicazione --> está activa;
 
-**Activo**: si está activo, indica que la ubicación está activa;  
+**Bloqueada<!-- Bloccata -->**: si está activo, indica que la ubicación<!-- ubicazione --> está bloqueada (por lo tanto, es una cantidad no disponible<!-- giacenza non disponibile -->);
 
-**Bloqueada**: si está activo, indica que la ubicación está bloqueada (por lo tanto, es una existencia no disponible);  
+**Reservada<!-- Prenotata -->**: si está activo, indica que la ubicación<!-- ubicazione --> está reservada;
 
-**Reservada**: si está activo, indica que la ubicación está reservada;  
+**De stock<!-- Di stock -->**: si está activo, indica que la ubicación<!-- ubicazione --> es de tipo stock (utilizado en personalizaciones);
 
-**De stock**: si está activo, indica que la ubicación es de tipo stock (utilizado en personalizaciones);  
+**De picking<!-- Di pick -->**: si está activo, indica que la ubicación<!-- ubicazione --> es de tipo picking (utilizado en personalizaciones);
 
-**De picking**: si está activo, indica que la ubicación es de tipo picking (utilizado en personalizaciones);  
+**Obsoleta<!-- Obsoleta -->**: si está activo, indica que la ubicación<!-- ubicazione --> es obsoleta.
 
-**Obsoleta**: si está activo, indica que la ubicación está obsoleta.
-
-En la pestaña **Artículos**, es posible ver cuáles son los artículos cargados en esa ubicación.
+En la pestaña **Artículos** es posible ver qué artículos están almacenados en esa ubicación<!-- ubicazione -->.
 
 *Botones específicos*:
 
-> **ricerca**: permite buscar los datos;   
-> **cancella ubicazione**: permite eliminar una línea de las ubicaciones;   
-> **inserisci ubicazione figlia**: este botón aparece en la barra de Ribbon después de realizar la búsqueda; permite ingresar una nueva ubicación hija respecto a la línea seleccionada;   
-> **inserisci ubicazione padre**: este botón aparece en la barra de Ribbon después de realizar la búsqueda; permite ingresar una nueva ubicación padre respecto a la línea seleccionada;   
-> **replica attributi**: este botón aparece en la barra de Ribbon después de realizar la búsqueda; permite replicar los atributos.
+> **Buscar<!-- Ricerca -->**: permite buscar los datos;   
+> **Eliminar ubicación<!-- Cancella ubicazione -->**: permite eliminar una fila de ubicaciones<!-- ubicazioni -->;   
+> **Insertar ubicación hija<!-- Inserisci ubicazione figlia -->**: este botón aparece en la Ribbon bar después de realizar la búsqueda; permite ingresar una nueva ubicación hija en relación con la fila seleccionada;   
+> **Insertar ubicación padre<!-- Inserisci ubicazione padre -->**: este botón aparece en la Ribbon bar después de realizar la búsqueda; permite ingresar una nueva ubicación padre en relación con la fila seleccionada;   
+> **Replicar atributos<!-- Replica attributi -->**: este botón aparece en la Ribbon bar después de realizar la búsqueda; permite replicar los atributos.   
 
-Para todo lo que no está detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

@@ -1,37 +1,56 @@
 ---
-title: Búsqueda de lotes (Ricerca lotti)
+title: Búsqueda de lotes
 sidebar_position: 2
+description: Guía sobre la función de búsqueda y gestión de lotes dentro del módulo de Logística de Fluentis ERP.
+schema: HowTo
+tags: [Fluentis ERP, Logística, Lotes, Gestión de almacén]
+last_update:
+  author: Fluentis Documentation Team
+  date: 2025-11-07
+keywords: [búsqueda de lotes, Logística, Lotes, Gestión de almacén]
+ai_generated: true
 ---
 
-El formulario se abre a través de la ruta **anagrafica lotti** y permite buscar todos los lotes con el fin de visualizarlos y modificarlos.
+# Búsqueda de lotes<!-- Ricerca lotti -->
 
-Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **ricerca** presente en la *Ribbon bar* para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario se abre a través del recorrido **Logística > Anagrafica lotes<!-- Anagrafica lotti -->** y permite buscar, visualizar y modificar los lotes<!-- lotti --> presentes en el sistema.
 
-Para abrir los detalles de un documento, solo es necesario seleccionarlo y hacer doble clic con el ratón, o hacer clic en el botón **modifica**.
+## Cómo realizar una búsqueda<!-- Come effettuare una ricerca -->
 
-*Botones específicos*:
+1. Configure los filtros deseados en la pantalla de búsqueda.  
+2. Haga clic en el botón **Buscar<!-- Ricerca -->** presente en la *Ribbon bar* para visualizar los resultados en la cuadrícula.  
+3. Para abrir los detalles de un lote<!-- lotto -->, selecciónelo y haga doble clic con el ratón o haga clic en el botón **Modificar<!-- Modifica -->**.
 
-> **modifica**: el botón permite [Modificar un lote ingresado (Modificare un lotto inserito)](/docs/logistics/lots-serial-numbers/lots-register);    
-> **cancella**: permite la eliminación del lote si este no está referenciado en ningún documento. 
+:::important
+Solo es posible modificar o eliminar los lotes<!-- lotti --> que no están referenciados en otros documentos.
+:::
 
-*Filtros específicos*:
+## Botones específicos<!-- Pulsanti specifici -->
 
-**Todos**: activando este indicador, el usuario puede filtrar todos los lotes presentes en la base de datos;
+> **Modificar<!-- Modifica -->**: el botón permite [Modificar un lote ingresado<!-- Modificare un lotto inserito -->](/docs/logistics/lots-serial-numbers/lots-register);    
+> **Eliminar<!-- Cancella -->**: permite la eliminación del lote<!-- lotto --> si este no está referenciado en ningún documento.
 
-**non chiusi**: activando este indicador, el usuario puede filtrar solo los lotes abiertos, es decir, solo los lotes de los cuales aún existe un inventario en el almacén;
+## Filtros específicos<!-- Filtri specifici -->
 
-**chiusi**: activando este indicador, el usuario puede filtrar solo los lotes cerrados, es decir, solo los lotes cuyo inventario es igual a cero.  
+- **Todos<!-- Tutti -->**: al activar esta opción, el usuario puede filtrar todos los lotes<!-- lotti --> presentes en la base de datos;  
+- **No cerrados<!-- Non chiusi -->**: al activar esta opción, el usuario puede filtrar solo los lotes<!-- lotti --> abiertos, es decir, aquellos que todavía tienen existencia en el almacén<!-- magazzino -->;  
+- **Cerrados<!-- Chiusi -->**: al activar esta opción, el usuario puede filtrar solo los lotes<!-- lotti --> cerrados, es decir, aquellos cuya existencia es igual a cero.
 
-*Campos específicos* en la cuadrícula de resultados (haga clic en el signo **+** para abrir el detalle de la línea)
+## Campos específicos<!-- Campi specifici -->
 
-**chiuso**: el indicador, si está activo, destaca que el inventario es igual a cero;
+> *Nota*: haga clic en el signo **+** para abrir el detalle de la fila.
 
-**quantità**: la columna muestra la cantidad inicial del lote para cada almacén;
+- **Cerrado<!-- Chiuso -->**: el indicador, si está activo, resalta que la existencia es igual a cero;  
+-**Cantidad<!-- Quantità -->**: muestra la cantidad inicial del lote<!-- lotto --> para cada almacén<!-- magazzino -->;  
+-**Cantidad disponible<!-- Quantità disponibile -->**: muestra la cantidad disponible para cada almacén<!-- magazzino --> del lote<!-- lotto -->, es decir, la cantidad en existencia menos la cantidad comprometida en los distintos documentos. La cantidad disponible también puede visualizarse como igual a cero en caso de que el lote<!-- lotto --> se encuentre en un estado 'no disponible para retiros automáticos';  
+- **Estado del lote<!-- Stato lotto -->**: muestra el estado del lote<!-- lotto -->. Es un dato que podría no ser gestionado;  
+- **Almacén<!-- Magazzino -->**: muestra el código del almacén<!-- magazzino --> en el que se encuentra el lote<!-- lotto -->.
 
-**quantità disponibile**: la columna muestra la cantidad disponible para cada almacén del lote, es decir, la cantidad en inventario menos la cantidad comprometida en los diferentes documentos. La cantidad disponible también puede mostrarse como igual a cero si el lote se encuentra en un estado 'no disponible para retiros automáticos';
+## Resumen y ampliación<!-- Riepilogo e approfondimenti -->
 
-**stato lotto**: la columna muestra el estado del lote. Es un dato que podría no estar gestionado;
+La función **Búsqueda de lotes<!-- Ricerca lotti -->** permite encontrar rápidamente los lotes<!-- lotti --> registrados, filtrándolos según su estado y disponibilidad.  
+Se puede acceder a los detalles de cada lote<!-- lotto -->, modificar su información o eliminarlo, respetando las condiciones de referenciación.
 
-**magazzino**: la columna muestra el código del almacén donde se encuentra el lote.
-
-Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funciones, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para ampliar información:
+- [Registro y modificación de lotes<!-- Registrazione e modifica dei lotti -->](/docs/logistics/lots-serial-numbers/lots-register)  
+- [Funcionalidades comunes de los formularios<!-- Funzionalità comuni delle form -->](/docs/guide/common)

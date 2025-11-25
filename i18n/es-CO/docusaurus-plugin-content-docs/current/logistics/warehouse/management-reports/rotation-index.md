@@ -1,24 +1,25 @@
 ---
-title: indice di rotazione
+title: Índice de rotación
 sidebar_position: 4
+ai_generated: true
 ---
 
-La impresión se encuentra en la ruta **Logística > Almacén > Impresiones de gestión > indice di rotazione** y permite al usuario consultar la base de datos para extraer una impresión resumida de los artículos y su índice de rotación.
+La impresión<!-- stampa --> se encuentra en la ruta **Logística > Almacén<!-- Magazzino --> > Informes de gestión<!-- Stampe gestionali --> > Índice de rotación<!-- Indice di rotazione -->** y permite al usuario consultar la base de datos para extraer un informe resumen de los artículos y su índice de rotación<!-- indice di rotazione -->.
 
-Se llama índice de rotación del almacén o tasa de rotación del almacén la relación entre la cantidad existente en promedio en el almacén (la llamada stock promedio) en un cierto período de tiempo y la cantidad vendida durante el mismo período de tiempo.
+Se llama índice de rotación de almacén<!-- indice di rotazione del magazzino --> o tasa de rotación de almacén<!-- tasso di rotazione del magazzino --> a la relación entre la cantidad existente promedio en almacén<!-- magazzino --> (el llamado stock medio<!-- scorta media -->) en un cierto periodo de tiempo y la cantidad vendida durante el mismo periodo.
 
-INDICE DE ROTACIÓN DEL ALMACÉN = STOCK PROMEDIO / DESCARGA DE ALMACÉN
+ÍNDICE DE ROTACIÓN DE ALMACÉN<!-- INDICE DI ROTAZIONE DEL MAGAZZINO --> = STOCK MEDIO<!-- SCORTA MEDIA --> / SALIDA DE ALMACÉN<!-- SCARICO DI MAGAZZINO -->
 
-Este índice expresa el número de veces que las existencias de mercancías se renuevan completamente en el período de tiempo considerado.
+Este índice expresa el número de veces que las existencias de mercancías se renuevan completamente durante el período de tiempo considerado.
 
-El período de tiempo considerado puede ser el año, pero también un período inferior (un mes, un trimestre, un semestre, etc.).
+El periodo de tiempo considerado puede ser el año, pero también un periodo menor (un mes, un trimestre, un semestre, etc.)
 
-El cálculo del índice de rotación del almacén es importante para comprender cuál es el tiempo necesario para que los medios financieros invertidos en las mercancías sean recuperados.
+El cálculo del índice de rotación de almacén<!-- indice di rotazione del magazzino --> es importante para comprender cuánto tiempo es necesario para que los recursos financieros invertidos en las mercancías sean recuperados.
 
-:::note Nota
-Para visualizar los resultados relacionados con el índice de rotación es necesario activar el indicador **indice di rotazione** en las *Causales de almacén* relacionadas con los movimientos de los artículos y, al mismo tiempo, el indicador “Existencias” debe estar desactivado.
+:::note Nota<!-- Nota -->
+Para visualizar los resultados relativos al índice de rotación<!-- indice di rotazione --> es necesario activar el flag **Índice de rotación<!-- Indice di rotazione -->** en las *Causales de almacén<!-- Causali di magazzino -->* asociadas a los movimientos<!-- movimentazioni --> de los artículos y, al mismo tiempo, el flag “Existencias<!-- Rimanenze -->” debe estar desactivado.
 :::
 
-Después de ingresar los parámetros deseados, es posible imprimir el reporte estándar o personalizado (previa mapeo en la gestión de impresiones). En caso de que se quiera imprimir un reporte personalizado, es necesario elegirlo en el listado en los parámetros de impresión.
+Tras ingresar los parámetros deseados, es posible imprimir el informe<!-- report --> estándar o personalizado (previa configuración en la gestión de impresiones<!-- gestione stampe -->). En caso de que se desee imprimir un informe<!-- report --> personalizado, es necesario seleccionarlo de la lista en los parámetros de impresión.
 
-Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios de impresión, consulte el siguiente enlace [Vista previa e impresión (Anteprima e stampa)](/docs/guide/common/operations-with-data/reports).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios de impresión<!-- form di stampa -->, consulte el siguiente enlace [Vista previa e impresión<!-- Anteprima e stampa -->](/docs/guide/common/operations-with-data/reports).

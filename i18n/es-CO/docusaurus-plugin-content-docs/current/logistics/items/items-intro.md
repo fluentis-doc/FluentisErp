@@ -1,8 +1,25 @@
 ---
-title: articoli
-sidebar_position: 1
+title: "Artículos"
+sidebar_position: "1"
+description: "Detalles sobre la gestión y creación de artículos en el sistema ERP."
+schema: "TechArticle"
+keywords: ["artículos", "gestión artículos", "crear artículos", "búsqueda artículos"]
+ai_generated: true
 ---
 
-El formulario se encuentra en la ruta **Logística > articoli > articoli (Logistica > Articoli > Articoli)**, pero también en la ruta **Inicio > articoli > articoli (Home > Articoli > Articoli)**.  
+# Artículos<!-- Articoli -->
 
-Para una explicación detallada sobre el funcionamiento de este formulario, se remite a los artículos: [Búsqueda de artículos (Ricerca articoli)](/docs/erp-home/registers/items/search-items) y [Crear nuevos artículos (Crea nuovi articoli)](/docs/erp-home/registers/items/create-new-item).
+## Ruta de acceso<!-- Percorso di accesso -->
+
+El formulario para la gestión de artículos<!-- articoli --> se encuentra en las siguientes rutas:
+
+- **Logística > Artículos > Artículos<!-- Logistica > Articoli > Articoli -->**  
+o bien
+- **Inicio > Artículos > Artículos<!-- Home > Articoli > Articoli -->**
+
+## Recursos adicionales<!-- Risorse aggiuntive -->
+
+Para más detalles sobre el funcionamiento del formulario, consulte los siguientes artículos:
+
+- [Búsqueda de artículos<!-- Ricerca articoli -->](/docs/erp-home/registers/items/search-items)
+- [Crear nuevos artículos<!-- Crea nuovi articoli -->](/docs/erp-home/registers/items/create-new-item)

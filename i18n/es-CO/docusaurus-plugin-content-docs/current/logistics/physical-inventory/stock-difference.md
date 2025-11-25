@@ -1,17 +1,18 @@
 ---
-title: differenze inventariali
+title: Diferencias de inventario
 sidebar_position: 3
+ai_generated: true
 ---
 
-El formulario se abre a través de la ruta **Logística > Inventarios físicos > differenze inventariali**.
+El formulario se abre mediante la ruta **Logística > Inventarios físicos > Diferencias de inventario<!-- Differenze inventariali -->**.
 
-El procedimiento permite elegir la **data elaborazione** mientras busca automáticamente el último inventario no cerrado. Es posible realizar la alineación de los saldos a una fecha específica marcando la opción **Calcular diferencias inventariales a la fecha (Calcola differenze inventariali alla data)** y ingresando en el campo **data calcolo giacenza** la fecha deseada. También se puede establecer la fecha de registro de almacén.
+El procedimiento permite elegir la **Fecha de procesamiento<!-- Data elaborazione -->** y el inventario<!-- inventario --> a considerar entre los que aún no han sido *cerrados*. Es posible alinear las existencias<!-- giacenze --> a una fecha determinada marcando la opción **Calcular diferencias de inventario a la fecha<!-- Calcola differenze inventariali alla data -->** de existencias<!-- giacenza --> e ingresando en el campo **Fecha de cálculo de existencias<!-- Data calcolo giacenza -->** la fecha deseada. También es posible establecer la fecha del registro de almacén<!-- registrazione di magazzino -->.
 
 *Botón específico*  
-> **creazione registrazione**: llama al procedimiento para la alineación de los saldos.
+> **Crear registro<!-- Creazione registrazione -->**: llama al procedimiento para alinear las existencias<!-- giacenze -->.
 
-Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar la lista de los artículos inventariados dentro de la cuadrícula **differenze inventariali**.
+Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **Buscar<!-- Ricerca -->** para visualizar la lista de los artículos inventariados dentro de la cuadrícula **Diferencias de inventario<!-- Differenze inventariali -->**.
 
-*Nota*: para obtener información detallada sobre los motivos utilizados por el procedimiento, consulte las [Causas de almacén (Causali di magazzino)](/docs/configurations/tables/logistics/warehouse-templates) con el indicador *Gestión de inventario físico (Gestione inventario fisico)* activo.
+*Nota*: para información detallada sobre las causales<!-- causali --> utilizadas por el procedimiento, consulte las [Causales de almacén<!-- Causali di magazzino -->](/docs/configurations/tables/logistics/warehouse-templates) con la opción *Gestión de inventario físico<!-- Gestione inventario fisico -->* activa.
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

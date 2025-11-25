@@ -1,16 +1,47 @@
 ---
-title: serial numbers
+title: Números de serie
+description: Guía para la gestión y modificación de los números de serie en el módulo de Logística de Fluentis ERP.
+keywords:
+  - números de serie
+  - Fluentis ERP
+  - logística
+  - números de serie
 sidebar_position: 7
+schema: HowTo
+sidebar_label: Números de serie
+tags:
+  - ERP
+  - Logística
+  - Números de serie
+last_update:
+  author: Fluentis Documentation Team
+  date: 2025-11-07
+ai_generated: true
 ---
 
-El formulario se abre a través de la ruta **Logística > Registro de lotes > Registro de números de serie (Logistica > Anagrafica lotti > Anagrafica serial numbers)**, y presenta la lista de todos los Números de Serie presentes en la base de datos, permitiendo modificarlos y visualizar un detalle.
+# Números de serie<!-- Serial Numbers -->
 
-Una vez que se han establecido todos los filtros deseados, basta con hacer clic en el botón **ricerca** presente en la barra de menú (*Ribbon bar*) para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario se abre a través de la ruta **Logística > Anagrafica lotes<!-- lotti --> > Anagrafica números de serie<!-- serial numbers -->** y muestra la lista completa de los números de serie<!-- Serial Numbers --> presentes en la base de datos, permitiendo visualizarlos y modificarlos.
 
-Para abrir los detalles de un documento, solo es necesario seleccionarlo y hacer doble clic con el ratón, o hacer clic en el botón **modifica**.
+## Cómo realizar una búsqueda<!-- Come effettuare una ricerca -->
 
-*Botones específicos (Pulsanti specifici)*:
+1. Configura los filtros deseados en la pantalla de búsqueda.
+2. Haz clic en el botón **Buscar<!-- Ricerca -->** presente en la *Ribbon bar* para visualizar los resultados dentro de la cuadrícula.
+3. Para abrir los detalles de un número de serie<!-- Serial Number -->, selecciónalo y haz doble clic con el ratón o haz clic en el botón **Modificar<!-- Modifica -->**.
 
-> **modifica**: el botón permite [Modificar un número de serie ingresado (Modificare un serial number inserito)](/docs/logistics/lots-serial-numbers/serial-numbers).
+:::important
+Solo es posible modificar números de serie<!-- Serial Numbers --> que ya estén presentes y no estén referenciados por otros documentos.
+:::
 
-Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+**Botones específicos<!-- Pulsanti specifici -->**
+
+- **Modificar<!-- Modifica -->**: permite [modificar un número de serie<!-- Serial Number --> ingresado](/docs/logistics/lots-serial-numbers/serial-numbers).
+
+## Resumen y ampliación<!-- Riepilogo e approfondimenti -->
+
+La función **Números de serie<!-- Serial Numbers -->** permite consultar, buscar y modificar los números de serie asociados a los productos gestionados en el sistema ERP<!-- ERP -->.
+Mediante los filtros de búsqueda, es posible encontrar rápidamente los números de serie<!-- Serial Numbers --> de interés y acceder a sus detalles para modificaciones o verificaciones.
+
+*Para ampliar información<!-- Per approfondire -->*:
+- [Gestión de lotes<!-- Gestione lotti --> y números de serie<!-- serial numbers -->](/docs/logistics/lots-serial-numbers/lots-register)
+- [Funcionalidades comunes de los formularios<!-- Funzionalità comuni delle form -->](/docs/guide/common)

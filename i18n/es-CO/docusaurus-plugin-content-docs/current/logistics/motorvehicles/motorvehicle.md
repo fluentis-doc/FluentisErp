@@ -1,70 +1,104 @@
 ---
-title: Nuevo vehículo (Nuovo automezzo)
+title: Nuevo vehículo
 sidebar_position: 2
+description: Guía para la gestión y codificación de vehículos en Fluentis ERP dentro del módulo de Logística.
+schema: HowTo
+tags:
+  - logística
+  - vehículos
+  - codificación
+last_update:
+  author: Fluentis Documentation Team
+  date: 12-11-2025
+keywords:
+  - vehículos
+  - logística
+  - dimensiones
+  - plan de carga
+ai_generated: true
 ---
 
-La tabla se encuentra en la ruta **Logística > Vehículos > Nuevo vehículo** (Logistica > Automezzi > Nuovo automezzo).
+# Nuevo vehículo<!-- Nuovo automezzo -->
 
-En esta tabla es posible codificar los diferentes *Vehículos* utilizados y las dimensiones de cada uno de ellos.
+La tabla para la gestión de vehículos<!-- automezzi --> se encuentra en la ruta **Logística > Vehículos > Nuevo vehículo<!-- Logistica > Automezzi > Nuovo automezzo -->**.  
+En esta tabla es posible codificar los diferentes *Vehículos<!-- Automezzi -->* utilizados y definir sus dimensiones<!-- dimensioni -->.  
+Un ejemplo de uso de los vehículos<!-- automezzi --> codificados está presente en los [Planes de Carga<!-- Piani di Carico -->](/docs/logistics/load-plans/create-plan/), en la pestaña *Preparación del plan de carga<!-- Preparazione piano di carico -->*.  
+La tabla permite ingresar nuevos registros, buscar, visualizar, modificar o eliminar los ya existentes.
 
-Un ejemplo de uso de los vehículos codificados en esta tabla se encuentra en los [Planes de Carga](/docs/logistics/load-plans/create-plan/), en la pestaña *Preparación del plan de carga* (Preparazione piano di carico).
+## Búsqueda de vehículos<!-- Ricerca automezzi -->
 
-La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
+El formulario está compuesto por un área de filtro y una de resultados.  
+Luego de establecer los filtros deseados, haga clic en el botón **Buscar<!-- Ricerca -->** para visualizar los resultados en la cuadrícula de resultados.
 
-**Búsqueda de Vehículos (Ricerca Automezzi)**
+## Inserción de vehículos<!-- Inserimento Automezzi -->
 
-El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+Para ingresar un nuevo vehículo<!-- automezzo -->:
 
-**Inserción de Vehículos (Inserimento Automezzi)**
+1. Haga clic en la primera fila vacía de la cuadrícula o presione el botón **Nuevo<!-- Nuovo -->**.
+2. Ingrese al menos los campos obligatorios requeridos:
 
-Para poder insertar nuevos *Vehículos*, es necesario hacer clic en la primera línea vacía de la cuadrícula o presionar el botón **nuovo**. 
-Para el nuevo registro se deben ingresar al menos los campos obligatorios solicitados por el programa: 
+   - **Tipo de vehículo<!-- Tipo automezzo -->**: tipo del vehículo<!-- mezzo --> seleccionado de la tabla *Tipo de vehículo<!-- Tipo automezzo -->*;
+   - **Código<!-- Codice -->**: código identificativo del vehículo<!-- mezzo -->;
+   - **Placa<!-- Targa -->**: número de placa del vehículo<!-- mezzo -->;
+   - **Fecha de registro<!-- Data registrazione -->**: fecha de registro del vehículo<!-- mezzo -->;
+   - **Tipo de combustible del vehículo<!-- Tipo carburanti autoveicolo -->**: tipo de combustible utilizado, definido en la tabla [Tipo de combustible<!-- Tipo di carburante -->](/docs/configurations/tables/logistics/motorvehicle-gas-type).
 
-- **tipo automezzo**: indica la tipología del medio ingresada en la tabla *Tipo de vehículo*;          
-- **codice**: indica el código del vehículo;       
-- **targa**: indica el número de matrícula del vehículo;      
-- **data registrazione**: indica la fecha de registro del vehículo;          
-- **Tipo de combustible del vehículo (Tipo carburanti autoveicolo)**: indica el [Tipo de combustible](/docs/configurations/tables/logistics/motorvehicle-gas-type) utilizado por el vehículo.
+3. También es posible ingresar campos opcionales como:
 
-Además, se pueden ingresar otros campos no obligatorios, entre los que se incluyen:
+   - **Marca**: marca del vehículo<!-- mezzo --> presente en la tabla [Marcas de vehículos<!-- Marchi automezzi -->](/docs/configurations/tables/logistics/motorvehicle-brands);
+- **Modelo**: indica el modelo del vehículo<!-- mezzo --> presente en la tabla [Marcas de vehículos<!-- Marchi automezzi -->](/docs/configurations/tables/logistics/motorvehicle-brands);        
+- **Fecha de inicio<!-- Data inizio -->**: indica la fecha de inicio de uso del vehículo<!-- automezzo -->;     
+- **Fecha de vencimiento de contrato<!-- Data scadenza contratto -->**: indica la fecha de vencimiento del contrato del vehículo<!-- automezzo -->;  
+- **Fecha de cierre<!-- Data chiusura -->**: indica la fecha desde la cual ya no es posible utilizar el vehículo<!-- automezzo -->;  
+- **Descripción<!-- Descrizione -->**: permite ingresar una descripción libre del vehículo<!-- automezzo -->;  
+- **Cuenta<!-- Conto -->**: permite ingresar la cuenta<!-- conto --> del cliente del vehículo<!-- automezzo -->;   
+- **Propiedad del vehículo<!-- Proprietà autoveicolo -->**: permite indicar el tipo de [Propiedad del vehículo<!-- Proprietà dell'autoveicolo -->](/docs/configurations/tables/logistics/motorvehicle-ownership); 
+- **Conductor asignado<!-- Autista assegnato -->**: permite indicar el [Conductor asignado<!-- Autista assegnato -->](/docs/logistics/motorvehicles/motorvehicle-drivers) al vehículo<!-- automezzo -->; 
+- **Sucursal de la empresa<!-- Filiale aziendale -->**: permite indicar la sucursal de la empresa;        
+- **Proyecto<!-- Progetto -->**: permite indicar el proyecto asignado al vehículo<!-- automezzo -->.
 
-- **marca**: indica la marca del vehículo presente en la tabla [Marcas de vehículos](/docs/configurations/tables/logistics/motorvehicle-brands);             
-- **modello**: indica el modelo del vehículo presente en la tabla [Marcas de vehículos](/docs/configurations/tables/logistics/motorvehicle-brands);        
-- **data inizio**: indica la fecha de inicio de uso del vehículo;     
-- **Fecha de vencimiento del contrato (Data scadenza contratto)**: indica la fecha de vencimiento del contrato del vehículo;     
-- **data chiusura**: indica la fecha a partir de la cual no es posible utilizar el vehículo;     
-- **descrizione**: permite ingresar una descripción libre del vehículo;       
-- **conto**: permite ingresar la cuenta del cliente del vehículo;        
-- **Propiedad del vehículo (Proprietà autoveicolo)**: permite indicar la tipología [Propiedad del vehículo](/docs/configurations/tables/logistics/motorvehicle-ownership);        
-- **Conductor asignado (Autista assegnato)**: permite indicar el [Conductor asignado](/docs/logistics/motorvehicles/motorvehicle-drivers) al vehículo;        
-- **filiale aziendale**: permite indicar la sucursal empresarial;        
-- **progetto**: permite indicar el proyecto asignado al vehículo.        
+## Detalles del vehículo<!-- Dettagli Automezzo -->
 
-Una vez terminado el ingreso de los valores de encabezado, en la parte inferior del formulario están presentes las siguientes pestañas:
+En la parte inferior del formulario están disponibles las siguientes pestañas:
 
-**dettagli** del vehículo, que contiene los siguientes valores:
+### Detalles<!-- Dettagli -->
 
-- **vano**: indica el uso del vehículo;                  
-- **targa**: indica la matrícula del vehículo;             
-- **Unidad de medida de capacidad (Unità di misura portata)**: indica la capacidad máxima del vehículo expresada en **Unidad de medida de capacidad**;         
-- **portata massima**: indica la capacidad máxima del vehículo expresada en **Unidad de medida de capacidad**;                  
-- **Unidad de medida de dimensiones (Unità di misura dimensioni)**: indica la unidad de medida con la que se expresan **Altura**, **Anchura**, **Profundidad** y las respectivas tolerancias;      
-- **altezza**: indica la altura del vehículo expresada en **Unidad de medida de dimensiones**;         
-- **larghezza**: indica la anchura del vehículo expresada en **Unidad de medida de dimensiones**;                 
-- **profondità**: indica la profundidad del vehículo expresada en **Unidad de medida de dimensiones**;                 
-- **tolleranza in altezza**: indica la tolerancia en altura del vehículo expresada en **Unidad de medida de dimensiones**;           
-- **tolleranza in larghezza**: indica la tolerancia en anchura del vehículo expresada en **Unidad de medida de dimensiones**;       
-- **um volume**: indica la unidad de medida con la que se expresa el **Volumen**;                    
-- **volume**: indica el volumen del vehículo expresado en **Unidad de medida de volumen**;                 
-- **Número de unidades de carga contenibles (Numero unità di carico contenibili)**: indica el número máximo de unidades de carga que pueden ser contenidas en el vehículo; 
-- **numero strati**: indica el número de capas que pueden ser cargadas en el vehículo.
+Campos relativos a las características físicas y capacidad del vehículo<!-- automezzo -->:
 
-**Periodo de inactividad del vehículo (Periodo inattività automezzo)** que permite ingresar los períodos de inactividad del medio, los cuales se informarán en el [Planificación](/docs/logistics/shipping/calendar). 
-Por lo tanto, se pueden ingresar los siguientes valores:
+- **Compartimiento<!-- Vano -->**: compartimiento del vehículo<!-- automezzo -->;
+- **Placa<!-- Targa -->**: placa identificativa;
+- **Unidad de medida de capacidad<!-- Unità di misura portata -->**: unidad de medida para la capacidad de carga;
+- **Capacidad máxima<!-- Portata massima -->**: capacidad máxima según la unidad de medida definida;
+- **Unidad de medida de dimensiones<!-- Unità di misura dimensioni -->**: unidad utilizada para las dimensiones (altura, anchura, profundidad) y tolerancias respectivas;
+- **Altura<!-- Altezza -->**: altura expresada en la unidad de medida de dimensiones;
+- **Anchura<!-- Larghezza -->**: anchura expresada en la unidad de medida de dimensiones;
+- **Profundidad<!-- Profondità -->**: profundidad expresada en la unidad de medida de dimensiones;
+- **Tolerancia en altura<!-- Tolleranza in altezza -->**: tolerancia de altura;
+- **Tolerancia en anchura<!-- Tolleranza in larghezza -->**: tolerancia de anchura;
+- **UM volumen<!-- UM volume -->**: unidad de medida para el volumen;
+- **Volumen<!-- Volume -->**: volumen expresado en la unidad de medida de volumen;
+- **Cantidad máxima de unidades de carga transportables<!-- Numero unità di carico contenibili -->**: número máximo de unidades de carga transportables;
+- **Número de capas<!-- Numero strati -->**: número de capas posibles de carga.
 
-- **descrizione**: permite indicar la descripción del período de inactividad del vehículo;          
-- **da data**: permite indicar la fecha de inicio del período de inactividad del vehículo;          
-- **a data**: permite indicar la fecha de fin del período de inactividad del vehículo;          
-- **motivo**: permite ingresar la motivación codificada en [Motivos de ausencia del conductor](/docs/configurations/tables/logistics/driver-off-time-reasons/)
+### Periodo de inactividad del vehículo<!-- Periodo inattività automezzo -->
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
+Permite ingresar los períodos durante los cuales el vehículo<!-- automezzo --> no es utilizable.  
+Estos datos se reflejan en el [Planificador<!-- Planning -->](/docs/logistics/shipping/calendar).
+
+Los campos incluyen:
+
+- **Descripción<!-- Descrizione -->**: permite indicar la descripción del período de inactividad del vehículo<!-- automezzo -->;          
+- **Desde la fecha<!-- Da data -->**: permite indicar la fecha de inicio del período de inactividad del vehículo<!-- automezzo -->;          
+- **Hasta la fecha<!-- A data -->**: permite indicar la fecha de fin del período de inactividad del vehículo<!-- automezzo -->;          
+- **Motivo**: permite ingresar el motivo codificado en [Motivos de ausencia del conductor<!-- Motivi di assenza del conducente -->](/docs/configurations/tables/logistics/driver-off-time-reasons/).
+
+## Resumen y ampliación<!-- Riepilogo e approfondimenti -->
+
+En este documento se ha descrito el procedimiento completo para la codificación y gestión de nuevos vehículos<!-- automezzi --> en el módulo de Logística<!-- Logistica --> del sistema ERP<!-- ERP -->.
+
+Para ampliar información:
+
+- [Planes de Carga<!-- Piani di Carico -->](/docs/logistics/load-plans/create-plan/)
+- [Conductor asignado<!-- Autista assegnato -->](/docs/logistics/motorvehicles/motorvehicle-drivers)
+- [Planificador de envíos y calendario<!-- Planning spedizioni e calendar -->](/docs/logistics/shipping/calendar)
+- [Guía general sobre funcionalidades, botones y campos comunes<!-- Guida generale su funzionalità, pulsanti e campi comuni -->](/docs/guide/common)

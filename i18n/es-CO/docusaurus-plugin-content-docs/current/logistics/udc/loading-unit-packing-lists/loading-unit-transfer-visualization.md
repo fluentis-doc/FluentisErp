@@ -1,6 +1,7 @@
 ---
-title: visualizzazione trasferimenti udc
+title: Visualización de transferencias UDC
 sidebar_position: 3
+ai_generated: true
 ---
 
-Consulte la documentación en el siguiente enlace: [visualizzazione trasferimenti udc (Visualizzazione trasferimenti UDC)](/docs/logistics/udc/loading-unit-management/search-pallet)
+Consulte la documentación en el siguiente enlace: [Visualización de transferencias UDC<!-- Visualizzazione trasferimenti UDC -->](/docs/logistics/udc/loading-unit-management/search-pallet)
