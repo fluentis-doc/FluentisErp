@@ -20,6 +20,4 @@ La funcionalidad de Supervisor referente a las **Listas de Distribución<!-- Lis
 Estas listas resultan muy útiles para el envío masivo de correos electrónicos desde **Supervisor**, permitiendo realizar envíos múltiples a cada destinatario incluido en la lista.  
 El formulario de Listas de Distribución<!-- Liste di Distribuzione --> se abre desde el menú complementario **Herramientas<!-- Strumenti -->** > **Fluentis Supervisor** > **Listas de Distribución<!-- Liste di Distribuzione -->**.
 
-![alt text](/img/it-it/applications/supervisor/supervisor16.png)
-
 Algunas de las funcionalidades dentro del formulario se refieren a un uso estándar. Para cualquier detalle sobre el uso de este formulario no mencionado aquí, consulte este [artículo](/docs/guide/common).
