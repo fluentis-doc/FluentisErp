@@ -1,5 +1,5 @@
 ---
-title: filtro
+title: Consumo de materiales
 description: Gestión y búsqueda de los movimientos de consumo de materiales asociados a los vehículos en el módulo de Logística.
 keywords:
   - consumo de materiales
@@ -9,18 +9,16 @@ keywords:
   - Fluentis ERP
 sidebar_position: 1
 schema: HowTo
-sidebar_label: filtro (Filtro)
 tags:
   - logística
   - vehículos
   - almacén
 last_update:
   author: Fluentis Documentation Team
-  date: 10-11-2025
 ai_generated: true
 ---
 
-# filtro (Filtro)<!-- Consumo materiali (Filtro) -->
+# Consumo de materiales (Filtro)<!-- Consumo materiali (Filtro) -->
 
 Esta sección describe cómo utilizar el formulario de **consumo de materiales (filtro)<!-- consumo materiali (filtro) -->** para buscar, visualizar y gestionar los movimientos relacionados con el consumo de materiales<!-- consumo materiali --> asociados a los vehículos<!-- automezzi --> definidos en la tabla [Gestión de vehículos<!-- Gestione automezzo -->](/docs/logistics/motorvehicles/motorvehicle-management).
 
