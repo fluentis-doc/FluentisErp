@@ -189,3 +189,11 @@ Il rollback dovrà seguire questo ordine
 Ricordiamo che le procedure di ripristino sono accessibili dalle stesse form dove è avvenuta la creazione, nell'apposito tab successivo, sempre presente.
 
 </details>
+
+<details>
+
+  <summary> 16. Come mai in un compenso Agente la quota Enasarco a carico ditta non corrisponde alla percentuale impostata per la tipologia di agente (esempio 8,5%)? </summary>
+
+In alcune situazioni, quali ad esempio l'inserimento del primo compenso per il percipiente Agente con impostazione del mese di competenza Enasarco NON nel primo trimestre, potrebbe essere proposto un valore del contributo a carico ditta più alto della semplice applicazione della percentuale spettante a carico della ditta mandante. Questo è dovuto al fatto che nelle impostazioni di dettaglio della categoria agente è presente anche il parametro del minimale contributivo e pertanto non trovando compensi precedenti che abbiano già coperto tale valore minimo, Fluentis lo propone a copertura con il primo compenso utile.
+
+</details>
