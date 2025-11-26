@@ -12,23 +12,23 @@
     "description": "Navbar item with label Release Notes"
   },
   "item.label.Formazione": {
-    "message": "Formazione",
+    "message": "Cursos",
     "description": "Navbar item with label Formazione"
   },
   "item.label.Introduzione": {
-    "message": "Introduzione",
+    "message": "Introducción",
     "description": "Navbar item with label Introduzione"
   },
   "item.label.Impostazioni": {
-    "message": "Impostazioni",
+    "message": "Configuración",
     "description": "Navbar item with label Impostazioni"
   },
   "item.label.Anagrafiche": {
-    "message": "Anagrafiche",
+    "message": "Registros",
     "description": "Navbar item with label Anagrafiche"
   },
   "item.label.Aree": {
-    "message": "Aree",
+    "message": "Áreas",
     "description": "Navbar item with label Aree"
   },
   "item.label.FAQ": {
@@ -44,19 +44,19 @@
     "description": "Navbar item with label Fluentis Fast Start"
   },
   "item.label.Avviamento Fluentis ERP": {
-    "message": "Avviamento Fluentis ERP",
+    "message": "Iniciar Fluentis ERP",
     "description": "Navbar item with label Avviamento Fluentis ERP"
   },
   "item.label.Campi, funzionalità e pulsanti comuni": {
-    "message": "Campi, funzionalità e pulsanti comuni",
+    "message": "Campos comunes, funciones y botones",
     "description": "Navbar item with label Campi, funzionalità e pulsanti comuni"
   },
   "item.label.Configurazioni (Tabelle, Parametri...)": {
-    "message": "Configurazioni (Tabelle, Parametri...)",
+    "message": "Configuración (Tablas, Parámetros...)",
     "description": "Navbar item with label Configurazioni (Tabelle, Parametri...)"
   },
   "item.label.Context Panel": {
-    "message": "Context Panel",
+    "message": "Panel de contexto",
     "description": "Navbar item with label Context Panel"
   },
   "item.label.Form navigator": {
@@ -68,39 +68,39 @@
     "description": "Navbar item with label Object Navigator"
   },
   "item.label.Strumenti": {
-    "message": "Strumenti",
+    "message": "Instrumentos",
     "description": "Navbar item with label Strumenti"
   },
   "item.label.Contatti": {
-    "message": "Contatti",
+    "message": "Contactos",
     "description": "Navbar item with label Contatti"
   },
   "item.label.Piano dei conti": {
-    "message": "Piano dei conti",
+    "message": "Plan de cuentas",
     "description": "Navbar item with label Piano dei conti"
   },
   "item.label.Articoli": {
-    "message": "Articoli",
+    "message": "Artículos",
     "description": "Navbar item with label Articoli"
   },
   "item.label.Produzione": {
-    "message": "Produzione",
+    "message": "Producción",
     "description": "Navbar item with label Produzione"
   },
   "item.label.Dipendenti": {
-    "message": "Dipendenti",
+    "message": "Empleados",
     "description": "Navbar item with label Dipendenti"
   },
   "item.label.Amministrativa": {
-    "message": "Amministrativa",
+    "message": "Finanzas",
     "description": "Navbar item with label Amministrativa"
   },
   "item.label.Tesoreria": {
-    "message": "Tesoreria",
+    "message": "Tesorería",
     "description": "Navbar item with label Tesoreria"
   },
   "item.label.Controlling": {
-    "message": "Controlling",
+    "message": "Control de Gestión",
     "description": "Navbar item with label Controlling"
   },
   "item.label.DDMRP": {
@@ -112,31 +112,31 @@
     "description": "Navbar item with label CRM"
   },
   "item.label.Acquisti": {
-    "message": "Acquisti",
+    "message": "Compras",
     "description": "Navbar item with label Acquisti"
   },
   "item.label.Vendite": {
-    "message": "Vendite",
+    "message": "Ventas",
     "description": "Navbar item with label Vendite"
   },
   "item.label.Logistica": {
-    "message": "Logistica",
+    "message": "Logística",
     "description": "Navbar item with label Logistica"
   },
   "item.label.Pianificazione": {
-    "message": "Pianificazione",
+    "message": "Planificación",
     "description": "Navbar item with label Pianificazione"
   },
   "item.label.Conto Lavoro": {
-    "message": "Conto Lavoro",
+    "message": "Subcontratación",
     "description": "Navbar item with label Conto Lavoro"
   },
   "item.label.Gestione progetti": {
-    "message": "Gestione progetti",
+    "message": "Gestión de Proyectos",
     "description": "Navbar item with label Gestione progetti"
   },
   "item.label.Qualità": {
-    "message": "Qualità",
+    "message": "Calidad",
     "description": "Navbar item with label Qualità"
   }
 }

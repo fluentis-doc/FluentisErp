@@ -159,19 +159,19 @@
     "message": "Fluentis ERP Documentation"
   },
   "siteConfig.tagline": {
-    "message": "The guide designed to provide continuous support for the daily use of Fluentis ERP"
+    "message": "La guía diseñada para brindar apoyo continuo en el uso diario de Fluentis ERP"
   },
   "siteConfig.introductionButton": {
     "message": "Overview"
   },
   "Cespiti": {
-    "message": "Fixed Assets"
+    "message": "Activos Fijos"
   },
   "Anagrafiche": {
-    "message": "Registers"
+    "message": "Registros"
   },
   "Strumenti": {
-    "message": "Tools"
+    "message": "Instrumentos"
   },
   "Object navigator": {
     "message": "Object navigator"
@@ -180,226 +180,226 @@
     "message": "Form navigator"
   },
   "Context panel": {
-    "message": "Context panel"
+    "message": "Panel de contexto"
   },
   "Dichiarazioni & Intrastat": {
-    "message": "Declarations & Intrastat"
+    "message": "Declaraciones & Intrastat"
   },
   "Registrazioni contabili": {
-    "message": "Ledger Records"
+    "message": "Registros contables"
   },
   "Partite": {
-    "message": "Maturity values"
+    "message": "Partidas"
   },
   "Percipienti": {
-    "message": "Professional Men"
+    "message": "Perceptores"
   },
   "Fatturazione Elettronica": {
-    "message": "Electronic invoicing"
+    "message": "Factura Electrónica"
   },
   "Leasing": {
-    "message": "Leasing"
+    "message": "Arrendamiento"
   },
   "Documenti SDI": {
-    "message": "ES Documents"
+    "message": "Documentos ES"
   },
   "Conti correnti": {
-    "message": "Bank account"
+    "message": "Cuentas corrientes"
   },
   "DocFinance": {
-    "message": "DocFinance"
+    "message": "DocFinanzas"
   },
   "Pagamenti fornitori": {
-    "message": "Vendors Payments"
+    "message": "Pagos a proveedores"
   },
   "Rischio cliente": {
-    "message": "Customer Risk"
+    "message": "Riesgo de Cliente"
   },
   "Cash flow": {
-    "message": "Cash flow"
+    "message": "Flujo de Caja"
   },
   "Portafoglio effetti": {
-    "message": "Bills portfolio"
+    "message": "Cartera de facturas"
   },
   "Anticipi & Incassi": {
-    "message": "Advances&Collections"
+    "message": "Anticipos y Recaudos"
   },
   "Chiusure infrannuali": {
-    "message": "Mid-Year Closures"
+    "message": "Cierres de mitad de año"
   },
   "Riclassificazioni": {
-    "message": "Reclassifications"
+    "message": "Reclasificaciones"
   },
   "Budgeting": {
-    "message": "Budgeting"
+    "message": "Presupuestación"
   },
   "Contabilità gestionale": {
-    "message": "Managerial accounting"
+    "message": "Contabilidad gerencial"
   },
   "Calcolo costo": {
-    "message": "Cost Calculation"
+    "message": "Cálculo de costos"
   },
   "Acquisti": {
-    "message": "Purchases"
+    "message": "Compras"
   },
   "Richieste di acquisto": {
-    "message": "Purchase Requests"
+    "message": "Solicitudes de compra"
   },
   "Richieste di offerta": {
-    "message": "Offer Requests"
+    "message": "Solicitudes de oferta"
   },
   "Ordini fornitori": {
-    "message": "Purchase Orders"
+    "message": "Órdenes de compra"
   },
   "Ricevimento merci": {
-    "message": "Goods Receipt"
+    "message": "Recepción de mercancías"
   },
   "DDT di acquisto": {
-    "message": "Purchase Delivery Note"
+    "message": "Nota de entrega de compra"
   },
   "Fatture di acquisto": {
-    "message": "Purchase Invoices"
+    "message": "Facturas de compra"
   },
   "Listini fornitori": {
-    "message": "Purchase Price Lists"
+    "message": "Listas de precios de proveedores"
   },
   "Gestione prezzi": {
-    "message": "Price Management"
+    "message": "Gestión de precios"
   },
   "Ordini cliente": {
-    "message": "Sales Orders"
+    "message": "Órdenes de venta"
   },
   "DDT di vendita": {
-    "message": "Sales Delivery Note"
+    "message": "Nota de entrega de ventas"
   },
   "Fatture di vendita": {
-    "message": "Sales Invoices"
+    "message": "Facturas de venta"
   },
   "POS": {
     "message": "POS"
   },
   "Liquidazione agenti": {
-    "message": "Agent Settlement"
+    "message": "Liquidación de agentes"
   },
   "Listini di vendita": {
-    "message": "Sales Price List"
+    "message": "Lista de precios de ventas"
   },
   "Articoli": {
-    "message": "Items"
+    "message": "Artículos"
   },
   "Magazzino": {
-    "message": "Warehouse"
+    "message": "Almacén"
   },
   "Lotti & Numeri di serie": {
-    "message": "Lots & Serial Numbers"
+    "message": "Lotes & Números de serie"
   },
   "Picking": {
     "message": "Picking"
   },
   "Inventari fisici": {
-    "message": "Physical Inventory"
+    "message": "Inventarios físicos"
   },
   "UDC": {
-    "message": "Loading Unit"
+    "message": "Unidad de carga"
   },
   "Piani di carico": {
-    "message": "Load Plans"
+    "message": "Planes de carga"
   },
   "MS - Master scheduling": {
     "message": "MS - Master scheduling"
   },
   "Capacity requirements": {
-    "message": "Capacity requirements"
+    "message": "CR - Requisitos de capacidad"
   },
   "MRP": {
-    "message": "MRP"
+    "message": "MRP - Planificación de Requerimientos de Materiales"
   },
   "PP - Production in progress": {
-    "message": "PP - Production in progress"
+    "message": "PP - Producción en proceso"
   },
   "Gestione ore produzione": {
-    "message": "Production hours management"
+    "message": "Gestión de horas de producción"
   },
   "Controllo produzione": {
     "message": "Production Control"
   },
   "Ordini di conto lavoro": {
-    "message": "Subcontractor orders"
+    "message": "Órdenes de subcontratistas"
   },
   "DDT di consegna": {
-    "message": "Delivery note"
+    "message": "Nota de entrega de subcontratistas"
   },
   "Rientri": {
-    "message": "Returns"
+    "message": "Devoluciones"
   },
   "Listini di conto lavoro": {
-    "message": "Subcontractor price lists"
+    "message": "Lista de precios de subcontratistas"
   },
   "Progetti": {
-    "message": "Projects"
+    "message": "Proyectos"
   },
   "Richieste di intervento": {
     "message": "Interventions Request"
   },
   "Interventi pianificati": {
-    "message": "Planned Interventions"
+    "message": "Intervenciones planificadas"
   },
   "Interventi": {
-    "message": "Interventions"
+    "message": "Intervenciones"
   },
   "Attività": {
-    "message": "Activities"
+    "message": "Actividades"
   },
   "Stato avanzamento lavori": {
     "message": "Work project status"
   },
   "Pianificazione a calendario delle risorse": {
-    "message": "Calendar Planning of Resources"
+    "message": "Planificación en calendario recursos"
   },
   "Documenti di origine esterna": {
-    "message": "External origin documents"
+    "message": "Documentos de origen externo"
   },
   "Documenti di origine interna": {
-    "message": "Internal origin documents"
+    "message": "Documentos de origen interno"
   },
   "Reclami e non conformità": {
-    "message": "Complaints and Non-compliance"
+    "message": "Quejas y No conformidades"
   },
   "Taratura strumenti": {
     "message": "Calibration Tools"
   },
   "Impostazioni": {
-    "message": "Settings"
+    "message": "Configuración"
   },
   "Amministrativa": {
-    "message": "Finance"
+    "message": "Finanzas"
   },
   "Tesoreria": {
-    "message": "Treasury"
+    "message": "Tesorería"
   },
   "Controlling": {
     "message": "Controlling"
   },
   "Vendite": {
-    "message": "Sales"
+    "message": "Ventas"
   },
   "Logistica": {
-    "message": "Logistics"
+    "message": "Logística"
   },
   "Pianificazione": {
-    "message": "Planning"
+    "message": "Planificación"
   },
   "Produzione": {
-    "message": "Production"
+    "message": "Producción"
   },
   "Conto lavoro": {
-    "message": "Subcontractor"
+    "message": "Subcontratación"
   },
   "Gestione progetti": {
-    "message": "Project Management"
+    "message": "Gestión de Proyectos"
   },
   "Qualità": {
-    "message": "Quality"
+    "message": "Calidad"
   },
   "CRM": {
     "message": "CRM"
@@ -408,19 +408,19 @@
     "message": "Budget and Marketing Automation"
   },
   "Contatti CRM": {
-    "message": "CRM Contacts"
+    "message": "Contactos CRM"
   },
   "Opportunità": {
-    "message": "Opportunity"
+    "message": "Oportunidad"
   },
   "Tickets Management": {
-    "message": "Tickets Management"
+    "message": "Gestión de tickets"
   },
   "WMS": {
     "message": "WMS"
   },
   "Commesse di produzione": {
-    "message": "Production Job Order"
+    "message": "Órdenes de trabajo"
   },
   "Fluentis MES": {
     "message": "Fluentis MES"
@@ -429,10 +429,10 @@
     "message": "DDMRP"
   },
   "Procedure": {
-    "message": "Procedures"
+    "message": "Procedimientos"
   },
   "Forms e report": {
-    "message": "Forms and report"
+    "message": "Formularios y Reportes"
   },
   "theme.NavBar.navAriaLabel": {
     "message": "Main",
@@ -463,16 +463,16 @@
     "description": "message shown if no results are found"
   },
   "Automezzi": {
-    "message": "Vehicle"
+    "message": "Vehículos"
   },
   "Controlli articolo": {
-    "message": "Item control"
+    "message": "Controles de artículo"
   },
   "Azioni correttive": {
-    "message": "Corrective Actions"
+    "message": "Acciones correctivas"
   },
   "Qualificazione fornitore": {
-    "message": "Vendor qualification"
+    "message": "Calificación de proveedores"
   },
   "theme.admonition.warning": {
     "message": "warning",
@@ -495,7 +495,7 @@
     "description": "The unlisted content banner message"
   },
   "Anagrafiche/Impostazioni": {
-    "message": "Registers/Settings"
+    "message": "Registros/Configuración"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
     "message": "1 item|{count} items",
@@ -533,22 +533,25 @@
     "message": "CRP-Capacity requirements"
   },
   "Newsletter": {
-    "message": "Newsletter"
+    "message": "Boletín informativo"
   },
   "Campagne marketing": {
-    "message": "Marketing Campaigns"
+    "message": "Campañas"
   },
   "Previsioni di vendita": {
-    "message": "Sales Forecast"
+    "message": "Pronóstico de ventas"
   },
   "Helpdesk": {
-    "message": "Helpdesk"
+    "message": "Gestión de tickets"
   },
   "Offerte": {
-    "message": "Sales Offers"
+    "message": "Ofertas de ventas"
   },
   "Spedizioni": {
-    "message": "Shippings"
+    "message": "Envíos"
+  },
+    "Budget": {
+    "message": "Presupuesto"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
