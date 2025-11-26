@@ -21,7 +21,7 @@ El formulario puede utilizarse de dos maneras diferentes para fines específicos
 
 1) Leyendo y comparando las reclasificaciones de los **cierres interanuales<!-- chiusure infrannuali -->**. En este caso **NO se realiza ninguna lectura de los procesos de la contabilidad de gestión<!-- contabilità gestionale -->**, tales como cost drivers o escrituras de gestión directas, sino solo los datos de los cierres interanuales<!-- chiusure infrannuali --> (reclasificados).
 
-2) Leyendo los datos de la **contabilidad de gestión<!-- contabilità gestionale -->** (como procesados por los procedimientos específicos) y, por tanto, con los resultados de la recuperación de datos de producción, cost drivers, etc...
+2) Leyendo los datos de la **contabilidad de gestión<!-- contabilità gestionale -->** (como procesados por los procedimientos específicos) y, por tanto, con los resultados de la recuperación de datos de producción, cost drivers, etc.
 :::
 
 ## COMPARACIONES SOBRE DATOS DE RECLASIFICADOS DE CIERRES INTERANUALES<!-- COMPARAZIONI SU DATI DEI RICLASSIFICATI DI CHIUSURE INFRANNUALI -->
