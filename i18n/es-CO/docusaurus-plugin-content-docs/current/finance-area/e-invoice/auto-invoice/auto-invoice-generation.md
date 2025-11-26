@@ -1,52 +1,55 @@
 ---
-title: Generación automática de autofactura (Generazione automatica autofattura)
+title: Generación automática de autofactura
 sidebar_position: 4
+ai_generated: true
 ---
 :::note NOTA:
-Las siguientes instrucciones se refieren al procedimiento de generación automatizada de las autofacturas de venta creadas con el fin de comunicar al SDI, a través del circuito de la facturación electrónica, los datos sobre las compras previamente comunicadas mediante el derogado cumplimiento conocido como "Esterometro".
+Las siguientes instrucciones se refieren al procedimiento para la generación automatizada de autofacturas de venta creadas con el fin de comunicar al SDI, mediante el circuito de facturación electrónica, los datos de las compras previamente comunicadas a través del derogado procedimiento conocido como "Esterometro".
 :::
 
-Al momento de guardar el registro contable, Fluentis creará los documentos automáticos establecidos en el motivo: tanto el asiento contable para neutralizar el IVA como la autofactura en la venta. Al cerrar la máscara, se devolverán entonces dos mensajes: el de apertura del registro automático de asiento contable y el nuevo mensaje de visualización de la autofactura.
+En el momento de guardar la registración contable<!-- registrazione contabile -->, Fluentis generará los documentos automáticos configurados en la causale<!-- causale -->: es decir, tanto el asiento contable<!-- giroconto contabile --> para neutralizar el IVA como la autofactura en las ventas. Al cerrar la ventana se mostrarán dos mensajes, el de apertura de la registración automática de giroconto<!-- registrazione automatica di giroconto --> y el nuevo mensaje de visualización de la autofactura.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation1.png)
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation2.png)
 
-En la autofactura generada automáticamente: en el campo del cedente tenemos al proveedor extranjero, en los referencias el número y la fecha de la factura del proveedor.
+En la autofactura generada automáticamente: en el campo del cedente se encuentra el proveedor extranjero y, en las referencias, el número y la fecha de la factura del proveedor
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation3.png)
 
-La factura ya está impresa y contabilizada (ya que hay un asiento contable automático que la registra). En las líneas tenemos un artículo no codificado, con la descripción tomada de la descripción del movimiento del registro contable original, para la base imponible del IVA del registro y la alícuota de la línea.
+La factura ya está impresa y contabilizada (ya que ya existe el asiento contable automático<!-- giroconto contabile automatico --> para registrarla).  
+En las líneas hay un artículo no codificado, con la descripción tomada de la descripción del movimiento<!-- descrizione movimento --> de la registración contable<!-- registrazione contabile --> de origen, por el imponible IVA<!-- imponibile iva --> de la registración y la tasa de la línea.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation4.png)
 
-Por lo tanto, ya estamos listos dentro del documento para realizar el cambio de estado de envío al Sdi de la autofactura. Cualquier modificación en el registro original recalculará, si la factura de venta no ha sido objeto de creación del archivo Sdi, tanto el asiento contable como la autofactura en las ventas. La operación de actualización automática no se ejecutará incluso si en el motivo contable se ha establecido el indicador 'No recalcular el registro automático'.
+De este modo, ya estamos listos dentro del documento para ejecutar el cambio de estado de envío al SDI de la autofactura.  
+Cualquier modificación en la registración de origen recalculará, si la factura de venta aún no ha sido objeto de creación de archivo SDI, tanto el asiento contable<!-- giroconto contabile --> como la autofactura en las ventas. La operación de actualización automática no se ejecuta tampoco en caso de que, en la causale<!-- causale contabile -->, se haya marcado la opción 'No recalcular la registración automática'<!-- Non ricalcolare la registrazione automatica -->.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation5.png)
 
-La cancelación del registro original (también el retroceso de la contabilización que lo creó) eliminará la autofactura en las ventas, si esta no ha sido objeto de creación del archivo Sdi.
+La eliminación de la registración original (también el rollback<!-- rollback --> de la contabilización que la creó) eliminará la autofactura en las ventas, si ésta no ha sido objeto de creación de archivo SDI.
 
-### **casi particolari**
+### **CASOS PARTICULARES**<!-- CASI PARTICOLARI -->
 
-A) En el caso de factura de compra mixta, con parte de inversión del cargo interno y parte no, el registro contable tendrá una o más líneas de IVA con el indicador ‘Excluir de motivos automáticos’ y estas no se incluirán en el asiento automático ni en la autofactura.
+A) En caso de factura de compra mixta, con parte de reverse charge interno y parte no, la registración contable<!-- registrazione contabile --> tendrá una o más líneas de IVA con la opción 'Excluir de causales automáticas'<!-- Escludi da causali automatiche --> y estas no serán incluidas ni en el giro automático<!-- giro automatico --> ni en la autofactura
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation6.png)
 
-B) En el caso de compras intra con deducibilidad parcial, es posible indicar en el campo ‘IVA para motivos automáticos’ cuál será la alícuota a utilizar en el registro automático del asiento. Esta alícuota también se utilizará en la autofactura de venta.
+B) En caso de compra intracomunitaria con deducibilidad parcial, es posible indicar en el campo 'IVA para causales automáticas'<!-- Iva per causali automatiche --> qué tasa se utilizará en la registración automática de giro<!-- registrazione automatica di giro -->. Esta tasa también se utilizará en la autofactura de venta
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation7.png)
 
-C) Compra de servicios extranjeros.  
-En este caso, la compra se registrará con un motivo no IVA. En este caso, se puede configurar de la siguiente manera: en el motivo no IVA que registra estos servicios, es posible indicar la autofactura TD17 a crear en las ventas, sin un motivo automático.
+C) Compra de servicios extranjeros  
+En este caso, la compra será registrada con causale<!-- causale --> sin IVA. Aquí se puede configurar así: en la causale<!-- causale --> sin IVA que registra estos servicios es posible indicar la autofactura TD17 que se creará en las ventas, sin una causale<!-- causale automatica --> automática
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation8.png)
 
-Es necesario indicar en el proveedor la alícuota de IVA a utilizar en la autofactura de venta, luego, en el registro contable, debe tener en la cabecera al proveedor y en el total de cabecera el valor del servicio facturado:
+Será necesario indicar en el proveedor la tasa de IVA que se debe emplear en la autofactura de venta, luego en la registración contable<!-- registrazione contabile --> deberá estar el proveedor en el encabezado (testata<!-- testata -->) y en el total de encabezado el valor del servicio facturado:
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation9.png)
 
-Dado que el motivo del proveedor no tiene un motivo automático, sino solo el tipo de factura a crear, la autofactura creada no tendrá el indicador ‘Contabilizada’ para permitir al usuario contabilizarla desde las ventas.
+Dado que la causale<!-- causale fornitore --> del proveedor no tiene una causale<!-- causale automatica --> automática sino solo el tipo de factura a crear, la autofactura creada no tendrá activado el flag ‘Contabilizada’<!-- Contabilizzata --> para que el usuario pueda contabilizarla desde las ventas.
 
-### OTRAS CONTABILIZACIONES (ALTRE CONTABILIZZAZIONI)
-Los procedimientos de contabilización de facturas de compra, la contabilización de compensaciones y el registro desde archivos de compras de Sdi verifican todas esta nueva configuración del motivo contable para realizar automáticamente la creación de los documentos de venta, tal como se mostró en el caso de registros manuales.  
-En el caso de contabilización desde archivos de compras de Sdi, el registro contable estará vinculado al archivo de Sdi: en este caso, la autofactura tendrá automáticamente valorados, además de las referencias al número / fecha de la factura, también el protocolo original de Sdi.
+### OTRAS CONTABILIZACIONES<!-- ALTRE CONTABILIZZAZIONI -->
+Los procedimientos de contabilización de facturas de compra, la contabilización de honorarios y la registración desde archivo de compra SDI comprueban todas esta nueva configuración de la causale contabile<!-- causale contabile --> para ejecutar automáticamente la creación de los documentos de venta tal como se mostró en el caso de registraciones manuales.
+En el caso de contabilización desde archivo de compra SDI, la registración contable<!-- registrazione contabile --> estará ligada al archivo SDI: en este caso la autofactura tendrá completados automáticamente, además de las referencias al número/fecha de factura, también el protocolo SDI original.

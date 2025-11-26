@@ -1,60 +1,71 @@
 ---
-title: check-list
+title: Lista de verificación
 sidebar_position: 3
+ai_generated: true
 ---
 
-La gestión se encuentra en la ruta **check-list**
+La gestión se encuentra en la ruta **Calidad<!-- Qualità --> > Documentos de origen interno<!-- Documenti di origine interna --> > Lista de verificación<!-- Check-list -->**
 
-:::important ¿Para qué sirve? (A cosa serve)
-Las *check-list* son un agrupamiento de preguntas/actividades utilizadas para realizar evaluaciones a proveedores o auditorías internas.   
+:::important ¿Para qué sirve?<!-- A cosa serve -->
+Las *Listas de verificación<!-- Check-list -->* son un conjunto de preguntas/actividades utilizadas para realizar evaluaciones a proveedores o auditorías internas.   
 :::
 
-La gestión permite insertar nuevas *check-list* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.
+La gestión permite ingresar nuevas *Listas de verificación<!-- Check-list -->* o buscar las ya existentes para visualizarlas, modificarlas o eliminarlas.   
 
-## Botones de comando
+## Botones de comando<!-- Pulsanti di comando -->
 
-### ![](/img/neutral/common/search.png) Búsqueda de check-list (Ricerca Check-list)
+### ![](/img/neutral/common/search.png) Buscar lista de verificación<!-- Ricerca Check-list -->
 
-El formulario consta de un área de filtrado y una de resultados. Una vez establecidos todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario se compone de una área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **Buscar<!-- Ricerca -->** para visualizar los resultados en la cuadrícula de resultados.   
 
-### ![](/img/neutral/common/new.png) Inserción de check-list (Inserimento Check-list)
+### ![](/img/neutral/common/new.png) Insertar lista de verificación<!-- Inserimento Check-list -->
 
-Para poder insertar nuevas *check-list*, es necesario presionar el botón **nuovo**.
+Para ingresar nuevas *Listas de verificación<!-- Check-list -->* es necesario presionar el botón **Nuevo<!-- Nuovo -->**.   
 
-### ![](/img/neutral/common/edit.png) Modificación o ![](/img/neutral/common/view.png) Visualización de check-list (Modifica o Visualizzazione Check-list)
+### ![](/img/neutral/common/edit.png) Modificar o ![](/img/neutral/common/view.png) Visualizar lista de verificación<!-- Modifica o Visualizzazione Check-list -->
 
-Para abrir la gestión en la cuadrícula de resultados, es necesario hacer doble clic en la fila de interés o, seleccionando una o más filas, presionar los botones **modifica** o **visualizza**.
+Para abrir la gestión, desde la cuadrícula de resultados, es necesario hacer doble clic en la fila de interés o, seleccionando una o más filas, presionar los botones **Modificar<!-- Modifica -->** o **Visualizar<!-- Visualizza -->**.   
 
-## Gestión de datos
+### ![](/img/neutral/common/execute.png) Comprobar pesos %
 
-### check-list (Check-list)
+Este botón verifica la suma de los Pesos para cada categoría de preguntas de la *Lista de verificación<!-- Check-list -->* seleccionada.  
+La suma de los pesos, para cada *Categoría<!-- Categoria -->*, debe ser el 100%. La ausencia de *Categoría<!-- Categoria -->* se considera como una *Categoría<!-- Categoria -->* independiente.   
 
-Es el listado donde se ingresan las informaciones principales de la *check-list*.   
+## Gestión de datos<!-- Gestione dati -->
+
+### Lista de verificación<!-- Check-list -->
+
+Es el listado donde se ingresan las informaciones principales de la *Lista de verificación<!-- Check-list -->*.  
 El listado se compone de la siguiente información:   
-> **codice**: es el código de la *check-list*.   
-> **descrizione**: es la descripción de la *check-list*.   
-> **area**: es el *Área* de interés de la *check-list*.   
-> **settore**: es el *Sector* de interés de la *check-list*.   
-> **attiva**: indica si la *check-list* sigue siendo válida y utilizable.   
-> **normative di riferimento**: anotaciones libres sobre el tema.   
-> **documenti da consultare**: anotaciones libres sobre el tema.   
-> **funzioni da coinvolgere**: anotaciones libres sobre el tema.   
-> **note**: anotaciones libres.
+> **Código<!-- Codice -->**: es el código de la *Lista de verificación<!-- Check-list -->*.   
+> **Descripción<!-- Descrizione -->**: es la descripción de la *Lista de verificación<!-- Check-list -->*.   
+> **Área<!-- Area -->**: es el *Área* de interés de la *Lista de verificación<!-- Check-list -->*.   
+> **Sector<!-- Settore -->**: es el *Sector* de interés de la *Lista de verificación<!-- Check-list -->*.   
+> **Activa<!-- Attiva -->**: indica si la *Lista de verificación<!-- Check-list -->* sigue siendo válida y utilizable.   
+> **Normativas de referencia<!-- Normative di riferimento -->**: anotaciones libres sobre el tema.   
+> **Documentos para consultar<!-- Documenti da consultare -->**: anotaciones libres sobre el tema.   
+> **Funciones a involucrar<!-- Funzioni da coinvolgere -->**: anotaciones libres sobre el tema.   
+> **Notas<!-- Note -->**: anotaciones libres.
 
-### Preguntas (Domande)
+### Preguntas<!-- Domande -->
 
-Es el listado de las preguntas/actividades a utilizar/realizar para las evaluaciones a proveedores o auditorías internas.   
+Es el listado de preguntas/actividades a utilizar/realizar para las evaluaciones a proveedores o auditorías internas.  
 El listado se compone de la siguiente información:   
-> **sequenza**: es la secuencia de implementación de las *preguntas/actividades*.   
-> **domanda**: anotaciones libres sobre el tema.   
-> **livello di valutazione**: es el *Nivel de evaluación de competencia* requerido para la evaluación.   
-> **attiva**: indica si la *pregunta/actividad* sigue siendo válida y utilizable.   
-> **data inizio**: es la fecha a partir de la cual la *pregunta/actividad* es válida y utilizable.   
-> **data fine**: es la fecha a partir de la cual la *pregunta/actividad* deja de ser válida y utilizable.   
-> **note**: anotaciones libres.
+> **Secuencia<!-- Sequenza -->**: es la secuencia de ejecución de las *preguntas/actividades*.   
+> **Pregunta<!-- Domanda -->**: anotaciones libres sobre el tema.   
+> **Categoría<!-- Categoria -->**: a la *Pregunta<!-- Domanda -->* se le puede asociar una *Categoría<!-- Categoria -->*.   
+> **Nivel de evaluación<!-- Livello di valutazione -->**: es el *Nivel de evaluación de competencia<!-- Livello di valutazione competenza -->* requerido;   
+> esto es considerado en la gestión de las [*Evaluaciones iniciales y periódicas*<!-- Valutazioni iniziali e periodiche -->](/docs/quality/vendor-rating/initial-vendor-rating) y [*Evaluaciones periódicas sobre No conformidades*<!-- Valutazioni periodiche su Non conformità -->](/docs/quality/vendor-rating/vendor-rating-on-nc).   
+> **Activa<!-- Attiva -->**: indica si la *pregunta/actividad* sigue siendo válida y utilizable.   
+> **Peso (%)<!-- Peso (%) -->**: indica el *peso* (importancia), expresado en porcentaje, dado a la pregunta; el porcentaje debe entenderse por *Categoría<!-- Categoria -->*;   
+> el control del 100% dado a la Categoría<!-- Categoria -->* se puede realizar presionando el botón *Comprobar pesos %<!-- Controlla pesi % -->*;   
+> este valor puede ser considerado en la gestión de las [*Evaluaciones iniciales y periódicas*<!-- Valutazioni iniziali e periodiche -->](/docs/quality/vendor-rating/initial-vendor-rating).   
+> **Fecha de inicio<!-- Data inizio -->**: es la fecha a partir de la cual la *pregunta/actividad* es válida y utilizable.   
+> **Fecha de fin<!-- Data fine -->**: es la fecha a partir de la cual la *pregunta/actividad* deja de ser válida y utilizable.   
+> **Notas<!-- Note -->**: anotaciones libres.
 
-### Datos adicionales (Extra data)
+### Datos extra<!-- Extra data -->
 
-Es posible ingresar datos [Adicionales (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para la *check-list*.   
+Es posible ingresar [Datos Extra<!-- Extra Data -->](/docs/configurations/utility/extra-data/extradata/search-extradata) generales para la *Lista de verificación<!-- Check-list -->*.   
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes<!-- Funzionalità, pulsanti e campi comuni -->](/docs/guide/common).

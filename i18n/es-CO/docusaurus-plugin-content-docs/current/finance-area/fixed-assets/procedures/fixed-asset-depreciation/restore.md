@@ -1,11 +1,12 @@
 ---
-title: ripristino
+title: Reversión
 sidebar_position: 3
+ai_generated: true
 ---
 
-Realizado el cálculo, las líneas desaparecerán de la cuadrícula de búsqueda de la pestaña Amortización y el resultado será visible en la ficha ripristino (Ripristino), dentro de la cual es posible anular la operación: esta posibilidad está permitida hasta que los amortizaciones hayan sido contabilizados.
+Una vez realizado el cálculo, las filas desaparecerán de la cuadrícula de búsqueda de la pestaña Amortización<!-- Ammortamento --> y el resultado será visible en la pestaña Reversión<!-- Ripristino --> en la cual es posible anular la operación: esta posibilidad se permite mientras las amortizaciones<!-- ammortamenti --> no hayan sido contabilizadas.
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Buscar (Ricerca) | Busca la lista de los cálculos de amortización realizados. |
-| ripristino (Ripristina) | Ejecuta la restauración del cálculo para las líneas seleccionadas. |
+| Buscar<!-- Ricerca --> | Busca la lista de cálculos de amortización<!-- ammortamento --> realizados. |
+| Revertir<!-- Ripristina --> | Realiza la reversión<!-- ripristino --> del cálculo para las filas seleccionadas. |

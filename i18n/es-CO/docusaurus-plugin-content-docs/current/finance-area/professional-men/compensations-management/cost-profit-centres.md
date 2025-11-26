@@ -1,11 +1,12 @@
 ---
-title: centri di costo/profitto
+title: Centros de costo/beneficio
 sidebar_position: 6
+ai_generated: true
 ---
 
-Las fichas de centros de costo/beneficio permiten valorar el centro de costo (y/o beneficio - no utilizar si está activa la gestión de control avanzado) con los costos ingresados.
+Las fichas de centros de costo/beneficio<!-- centri di costo/profitto --> permiten valorizar el centro de costo (y/o de beneficio<!-- profitto --> – no utilizar si está activa la gestión de controlling avanzada) con los costos ingresados.
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Nuevo cdc (Nuovo cdc) | Inserta el cursor en la creación de una nueva línea en la sección Centros de costo. |
-| Eliminar cdc (Cancella cdc) | Elimina los movimientos seleccionados en la cuadrícula de centros de costo. |
+| Nuevo cdc | Inserta el cursor para añadir una nueva fila en la sección Centros de costo<!-- Centri di costo -->. |
+| Eliminar cdc<!-- Cancella cdc --> | Elimina los movimientos seleccionados en la cuadrícula de centros de costo<!-- centri di costo -->. |

@@ -1,40 +1,41 @@
 ---
-title: distinta base ddmrp
+title: Lista de materiales Ddmrp
 sidebar_position: 8
+ai_generated: true
 ---
 
-Este formulario muestra la lista de materiales de un producto y difiere del formulario de gestión de listas de Fluentis, ya que presenta información que solo tiene sentido en un entorno Ddmrp (a través de este formulario no es posible modificar una lista de materiales).
+Este formulario muestra la lista de materiales<!-- distinta base --> de un producto y difiere del formulario de gestión de listas de materiales<!-- form gestione distinte --> de Fluentis, ya que incluye información que solo tiene sentido en un entorno Ddmrp (a través de este formulario no es posible modificar una lista de materiales<!-- distinta base -->).
 
-Los artículos que se gestionan con stock Ddmrp están destacados con el símbolo del bote de basura de tres colores y para ellos se visualizan información específica como ADU, DLT, Zona roja, Zona amarilla, Zona verde, Capital circulante.
+Los artículos gestionados como inventario Ddmrp<!-- scorta Ddmrp --> se destacan mediante el símbolo de un contenedor en tres colores y para ellos se visualizan informaciones específicas como ADU, DLT, Zona roja, Zona amarilla, Zona verde, Capital de trabajo<!-- capitale circolante -->.
 
-Estos valores son los válidos hoy tal como se pueden encontrar en el formulario de **parametri ddmrp**, mientras que para el capital circulante aquí solo se quiere resaltar que el valor se refiere al artículo y no al stock necesario para fabricar el producto cuya lista de materiales se está visualizando, por lo tanto, el valor está determinado por la necesidad de todos los artículos que requieren el producto en stock. El valor del capital circulante mostrado es relativo al último cálculo realizado, por lo que si se desea asegurar que está actualizado, basta con ejecutar el procedimiento de cálculo correspondiente.
+Estos valores corresponden a los válidos hoy y pueden comprobarse en el formulario de **Parámetros Ddmrp<!-- Parametri Ddmrp -->**, mientras que para el capital de trabajo<!-- capitale circolante --> aquí solo se quiere resaltar que el valor se refiere al artículo y no al inventario<!-- scorta --> necesario para producir el producto cuya lista de materiales<!-- distinta base --> está visualizando; por lo tanto, el valor está determinado por la demanda de todos los artículos que requieren el producto en inventario<!-- prodotto a scorta -->. El valor del capital de trabajo<!-- capitale circolante --> mostrado corresponde al último cálculo realizado, por lo tanto si se quiere asegurar que esté actualizado basta con ejecutar el correspondiente procedimiento de cálculo.
 
-Desde este formulario es posible lanzar el procedimiento [**Cálculo DLT (lead time disacoplado)**](/docs/ddmrp/procedures/dlt-calculation), el procedimiento [**Cálculo de zonas**](/docs/ddmrp/procedures/zones-calculation), el procedimiento [**Actualización del consumo medio diario (ADU)**](/docs/ddmrp/procedures/adu-update), y el procedimiento [**Cálculo de valores de stock**](/docs/ddmrp/procedures/inventory-value).
+Desde este formulario es posible ejecutar el procedimiento [**Cálculo de DLT (lead time desacoplado)**](/docs/ddmrp/procedures/dlt-calculation), el procedimiento [**Cálculo de zonas**](/docs/ddmrp/procedures/zones-calculation), el procedimiento [**Actualización de consumo medio diario (ADU)**](/docs/ddmrp/procedures/adu-update), y el procedimiento [**Cálculo de valores de inventario<!-- valori scorte -->**](/docs/ddmrp/procedures/inventory-value). 
 
-La visualización DDMRP de la lista es útil cuando se realizan simulaciones para verificar las variaciones de DLT y de capital circulante (utilizar la impresión del capital circulante para un análisis más significativo).
+La visualización DDMRP de la lista<!-- distinta --> resulta útil cuando se hacen simulaciones para verificar variaciones de DLT y de capital de trabajo<!-- capitale circolante --> (utilizar el informe de capital de trabajo<!-- stampa capitale circolante --> para un análisis más significativo).
 
-Cabe señalar que para algunos artículos que no son stock Ddmrp, aún se muestra el respectivo DLT; esto ocurre para aquellos artículos que están destacados en rojo, es decir, aquellos que se encuentran en la ruta crítica de algún producto terminado.
+Tenga en cuenta que para algunos artículos que no son inventario Ddmrp<!-- scorte Ddmrp --> igualmente se muestra el correspondiente DLT; esto ocurre para aquellos artículos que están destacados en rojo, es decir, los que se encuentran en el camino crítico de algún producto terminado.
 
-La razón es que algunos de ellos están almacenados en los centros de distribución; por lo tanto, para calcular el DLT en los centros de distribución, se debe sumar al tiempo de transporte desde la fábrica el tiempo necesario para la realización de los productos.
+La razón es que algunos de ellos están almacenados en los centros de distribución, por lo tanto, para calcular el DLT en los centros de distribución se debe sumar al tiempo de transporte desde la fábrica el tiempo necesario para la producción de los productos.
 
-Para algunos artículos que no son productos terminados, esto se debe a que para calcular el DLT de un buffer Ddmrp, el procedimiento debe necesariamente calcular este valor también para los artículos que se encuentran en el "camino crítico" del buffer.
+Para algunos artículos que no son productos terminados esto se debe a que, para calcular el DLT de un buffer Ddmrp, el procedimiento debe necesariamente calcular dicho valor también para los artículos que se encuentran en el "camino crítico" del buffer.
 
-El procedimiento de cálculo DLT identifica todos los artículos que están en los caminos críticos de todas las listas de materiales presentes en el sistema (por lo tanto, no solo aquellas de artículos con buffer Ddmrp).
+El procedimiento de cálculo de DLT identifica todos los artículos que se encuentran en los caminos críticos<!-- perorsi critici --> de todas las listas de materiales<!-- distinte base --> presentes en el sistema (por lo tanto, no solo aquellas de artículos en buffer Ddmrp).
 
-En la visualización de listas de materiales Ddmrp, los artículos presentes en cualquier camino crítico se destacan en rojo, por lo tanto, en la visualización de una lista de materiales puede haber múltiples ramas de lista destacadas en rojo, ya sea porque el producto cuya lista se visualiza puede tener múltiples caminos críticos (cuyos valores DLT son así iguales), o porque algunas ramas son partes de caminos críticos de otros productos.
+En la visualización de listas de materiales Ddmrp<!-- distinte base Ddmrp -->, los artículos presentes en cualquier camino crítico<!-- percorso critico --> se destacan en rojo; por lo tanto, en la visualización de una lista de materiales<!-- distinta base -->, puede haber varias ramas de la lista destacadas en rojo, ya sea porque el producto cuya lista se visualiza puede tener múltiples caminos críticos<!-- percorsi critici --> (cuyos valores DLT serían por tanto iguales), o porque algunas ramas forman parte de caminos críticos de otros productos.
 
-La disminución del tiempo de entrega disacoplado (DLT) del producto cuya lista de materiales se está visualizando solo puede lograrse creando un stock Ddmrp para uno de los artículos destacados en rojo que se encuentra en la ruta crítica del mismo (esta precisión es necesaria ya que en algunos casos puede haber múltiples ramas de lista rojas, algunas de las cuales destacan caminos críticos de otros productos); por lo tanto, este tipo de visualización facilita entender qué artículos en stock pueden llevar a una disminución del tiempo de entrega del producto terminado.
+La reducción del tiempo de entrega desacoplado (DLT) del producto cuya lista de materiales<!-- distinta base --> se está visualizando sólo se puede obtener creando un inventario Ddmrp<!-- scorta Ddmrp --> para uno de los artículos destacados en rojo que se encuentra en el camino crítico<!-- percorso critico --> del mismo (esta precisión es necesaria porque en algunos casos puede haber varias ramas de la lista en rojo, algunas de las cuales corresponden a caminos críticos de otros productos); por lo tanto, este tipo de visualización hace sencillo entender qué artículos posicionados en inventario<!-- scorta --> pueden llevar a una disminución del tiempo de entrega<!-- tempo di consegna --> del producto terminado.
 
-La visualización del capital circulante permite comprender qué decisiones de posicionamiento de stocks permiten simultáneamente reducir el tiempo de entrega y minimizar el capital circulante invertido para lograr ese resultado (ver impresión del capital circulante).
+La visualización del capital de trabajo<!-- capitale circolante --> permite, además, entender qué elecciones sobre la colocación de inventario<!-- scorte --> permiten simultáneamente reducir el tiempo de entrega<!-- tempo di consegna --> y minimizar el capital de trabajo<!-- capitale circolante --> comprometido para alcanzar tal resultado (consulte el informe de capital de trabajo<!-- stampa del capitale circolante -->).
 
-El costo unitario mostrado para todos los artículos es el utilizado en el último cálculo del Capital circulante promedio invertido en stocks Ddmrp (promedio, último, estándar) y solo tiene en cuenta los costos de materiales y de trabajos externos para el trabajo por encargo, es decir, costos atribuibles solo a proveedores externos (ver la sección relacionada con este cálculo).
+El costo unitario mostrado para todos los artículos es el utilizado en el último cálculo del Capital de trabajo<!-- Capitale circolante --> invertido en promedio en las existencias Ddmrp (medios, último, estándar), y solo tiene en cuenta los costos de materiales y de trabajos externos para el trabajo subcontratado<!-- conto lavoro -->, es decir, costos atribuibles solamente a proveedores externos (ver la sección correspondiente a dicho cálculo).
 
-Cabe señalar que para los artículos de trabajo por encargo, el costo unitario del trabajo se deduce sustrayendo al costo del artículo el de sus hijos de la lista de materiales.
+Tenga en cuenta que para los artículos de trabajo subcontratado<!-- conto lavoro --> el costo unitario de la operación se deduce restando al costo del artículo el de sus componentes en la lista de materiales<!-- figli di distinta base -->.
 
-Multiplicando esto por el stock promedio (zona roja + zona verde/2) se obtiene el valor del capital circulante promedio invertido en el stock.
+Multiplicando esto por la existencia media (zona roja + zona verde/2) se obtiene el valor del capital de trabajo<!-- capitale circolante --> invertido en promedio en el inventario<!-- scorta -->.
 
-Se ruega tener en cuenta que el valor del capital circulante mostrado en la lista podría no ser correcto, ya que se refiere a los últimos valores encontrados.
+Por favor tenga en cuenta que el valor del capital de trabajo<!-- capitale circolante --> mostrado en la lista<!-- distinta --> podría no ser correcto ya que se refiere a los últimos valores encontrados.
 
-Si después de este cálculo se han modificado los valores de las zonas de los buffers, o ha cambiado el valor del costo unitario, lo que se visualiza no está actualizado.
+De hecho, si después de ese cálculo han cambiado los valores de las zonas de los buffers, o el valor del costo unitario, lo que se visualiza no está actualizado.
 
-Para asegurarse de visualizar el valor correcto y actualizado, ejecute el procedimiento de cálculo de costo de capital circulante (cálculo de valores de stock).
+Para asegurarse de visualizar el valor correcto y actualizado, ejecute el procedimiento de cálculo del costo del capital de trabajo<!-- calcolo costo capitale circolante --> (cálculo de valores de inventario<!-- calcolo valori scorte -->).

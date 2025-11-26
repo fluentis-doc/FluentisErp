@@ -1,88 +1,90 @@
 ---
-title: nuova opportunità
+title: Nueva Oportunidad
 sidebar_position: 3
+ai_generated: true
 ---
 
-En este formulario se ingresarán toda la información general relacionada con la **Oportunidad** que se desea insertar. La pantalla de la Oportunidad se compone de tres partes:
+En este formulario se ingresarán todas las informaciones generales relacionadas con la **Oportunidad<!-- Opportunità -->** que se desea crear. La pantalla de la Oportunidad consta de tres partes:
 
-- la primera parte en la parte superior presenta posibles flujos de trabajo asociados; cada uno puede crear su propio flujo de trabajo según las necesidades del CRM empresarial; se remite a la guía correspondiente sobre Flujos de Trabajo para más detalles;  
-- la parte central presenta el Encabezado de la Oportunidad, con la información general y de registro, algunas obligatorias y otras no;  
-- debajo se encuentran varias pestañas, que registran las diferentes operaciones realizadas y que se tratarán posteriormente en esta guía.
+- la primera parte superior muestra eventuales flujos de trabajo (workflows) asociados; cada usuario puede crear su propio workflow según las necesidades CRM de la empresa. Para más detalles, consulte la guía específica sobre Workflows;
+- la parte central presenta el Encabezado<!-- Testata --> de la Oportunidad<!-- Opportunità -->, con información general y datos maestros, algunos obligatorios y otros no;
+- abajo se encuentran varias pestañas<!-- tab -->, donde se registran las distintas operaciones realizadas y que serán tratadas más adelante en esta guía.
 
+## Gestión de oportunidades<!-- Gestione opportunità -->
 
-## Gestión de oportunidades (Gestione opportunità)
+*Botones específicos* en la barra ribbon:  
+> **Guardar<!-- Salva -->**: botón para guardar la Oportunidad<!-- Opportunità --> y las modificaciones realizadas;  
+> **Calcular valores<!-- Calcola valori -->**: botón para recalcular los valores de la oportunidad<!-- opportunità --> en base a la oferta a la que está vinculada.
 
-*Botones específicos* en la barra de herramientas:  
-> **salva**: botón para guardar la Oportunidad y sus modificaciones;  
-> **calcola valori**: botón para recalcular los valores de la oportunidad en función de la oferta a la que está vinculada la oportunidad.  
+### Encabezado<!-- Testata -->
 
-### Encabezado (Testata)    
+**Tipo de oportunidad<!-- Tipo opportunità -->**: sirve para definir el [tipo de Oportunidad<!-- tipologia di Opportunità -->](/docs/configurations/tables/crm/opportunities/opportunity-type) que se está insertando. En el tipo de oportunidad<!-- tipo opportunità --> también se puede indicar un pipeline flow por defecto;
 
-**tipo opportunità**: se utiliza para definir la [tipología de Oportunidad](/docs/configurations/tables/crm/opportunities/opportunity-type) que se está ingresando. En el tipo de oportunidad también se puede indicar un flujo de trabajo predeterminado;
+**Número<!-- Numero -->**: es un valor asignado automáticamente por Fluentis que permite identificar de manera única la oportunidad<!-- opportunità -->;
 
-**numero**: es un valor asignado automáticamente por Fluentis que permite identificar de manera única la oportunidad;
+**Título<!-- Titolo -->**: este campo, de llenado obligatorio, permite definir un título para la oportunidad<!-- opportunità --> para identificarla más fácilmente;
 
-**titolo**: este campo, de obligatoriedad, permite definir un título para la oportunidad para reconocerla más fácilmente;
+**Fecha de creación<!-- Data Creazione -->**: indica la fecha en que se ha insertado la oportunidad<!-- opportunità --> en Fluentis;
 
-**data creazione**: esta fecha indica la fecha de ingreso de la oportunidad en Fluentis;
+**Fecha de cierre<!-- Data di Chiusura -->**: permite indicar una fecha de cierre de la oportunidad<!-- opportunità --> y puede ser utilizada como filtro en la búsqueda de oportunidades<!-- opportunità -->;
 
-**data di chiusura**: este campo permite indicar una fecha de cierre de la oportunidad y puede funcionar como un filtro en la máscara de búsqueda de oportunidades;
+**Contacto<!-- Contatto -->**: este campo permite indicar el Contacto al que está asignada la oportunidad<!-- opportunità -->. Hace referencia al registro maestro de [contactos<!-- contatti -->](/docs/crm/home-crm/contacts/new-contact) en el CRM;
 
-**contatto**: este campo se utiliza para indicar el Contacto a nombre del cual está la oportunidad. Hace referencia al registro de [contactos](/docs/crm/home-crm/contacts/new-contact) del CRM;
+**Agente principal<!-- Agente Principale -->**: este dato se recopila automáticamente según lo indicado en el registro maestro del contacto CRM titular de la oportunidad<!-- opportunità -->;
 
-**agente principale**: este dato se obtiene automáticamente según lo indicado en el registro del contacto del CRM titular de la oportunidad;  
+**Moneda<!-- Divisa -->**: indica la moneda en la que deben expresarse los valores de la oportunidad<!-- opportunità -->;
 
-**divisa**: indica la moneda en la que deberán expresarse los valores de la oportunidad;
+**Tiempo transcurrido desde la última actividad<!-- Tempo Trascorso dall’ultima attività -->**: indica el tiempo transcurrido desde la última actividad ingresada para la oportunidad<!-- opportunità --> en cuestión;
 
-**Tiempo Transcurrido desde la última actividad (Tempo Trascorso dall’ultima attività)**: indica el tiempo que ha pasado desde la última actividad registrada para la oportunidad en cuestión;
+**Probabilidad de éxito<!-- Probabilità Successo -->**: sirve para indicar un % de [probabilidad<!-- probabilità -->](/docs/configurations/tables/crm/opportunities/probability-progress) de éxito vinculada a la oportunidad<!-- opportunità -->;
 
-**probabilità successo**: se utiliza para indicar un % de [probabilidad](/docs/configurations/tables/crm/opportunities/probability-progress) de éxito relacionado con la oportunidad;
+**Calidad del contacto<!-- Qualità Contatto -->**: sirve para indicar la [calidad<!-- qualità -->](/docs/configurations/tables/crm/contacts/contact-quality) del contacto titular de la oportunidad<!-- opportunità -->;
 
-**qualità contatto**: se utiliza para indicar la [calidad](/docs/configurations/tables/crm/contacts/contact-quality) del contacto titular de la oportunidad;
+**Ganada/Perdida<!-- Vinto/Perso -->**: sirve para indicar si la oportunidad<!-- opportunità --> se ha ganado o perdido;
 
-**Ganado/Perdido (Vinto/Perso)**: se utiliza para indicar si la oportunidad ha sido ganada o perdida;
+**Motivos<!-- Motivazioni -->**: en este campo es posible seleccionar los [motivos<!-- motivazioni -->](/docs/configurations/tables/crm/opportunities/closing-reason) de la obtención o pérdida de la oportunidad<!-- opportunità -->;
 
-**Motivaciones (Motivazioni)**: en este campo es posible seleccionar las [motivaciones](/docs/configurations/tables/crm/opportunities/closing-reason) de la victoria o pérdida de la oportunidad;
+**Descripción<!-- Descrizione -->**: sirve para detallar aún más las razones que llevaron al éxito o la pérdida de la oportunidad<!-- opportunità -->;
 
-**descrizione**: se utiliza para detallar más las motivaciones que llevaron a la ganancia o pérdida de la oportunidad;
+**Valor neto<!-- Valore Netto -->**: en este campo se reporta el total del valor de la oportunidad<!-- opportunità --> neto de descuentos; este campo se completa automáticamente al llenar la pestaña<!-- tab --> inferior *Detalle<!-- Dettaglio -->*;
 
-**valore netto**: en este campo se reporta el total del valor de la oportunidad neto de descuentos; este campo se completa automáticamente llenando la pestaña inferior *Detalle*;  
+**Importe bruto<!-- Importo Lordo -->**: en este campo se reporta el valor total de la oportunidad<!-- opportunità --> incluyendo los descuentos; este campo se completa automáticamente al llenar la pestaña<!-- tab --> inferior *Detalle<!-- Dettaglio -->*;
 
-**importo lordo**: en este campo se reporta el total del valor de la oportunidad incluyendo los descuentos; este campo se completa automáticamente llenando la pestaña inferior *Detalle*;  
+**Descuentos<!-- Sconti -->**: en este campo se indica el total de descuentos de la oportunidad<!-- opportunità -->; se completa automáticamente al llenar la pestaña<!-- tab --> inferior *Detalle<!-- Dettaglio -->*;
 
-**sconti**: en este campo se reporta el total de descuentos de la oportunidad; este campo se completa automáticamente llenando la pestaña inferior *Detalle*;  
+**Margen bruto previsto<!-- Margine Lordo Previsto -->**: en este campo, de llenado manual, el usuario debe indicar el margen bruto previsto para la oportunidad<!-- opportunità -->;
 
-**margine lordo previsto**: en este campo, de llenado manual, debe indicarse por parte del usuario el margen bruto previsto para la oportunidad;
+**Fecha prevista del pedido del cliente<!-- Data prevista dell’ordine cliente -->**: en este campo puede indicar una fecha prevista para la emisión del primer pedido vinculado a la oportunidad<!-- opportunità -->;
 
-**Fecha prevista del pedido del cliente (Data prevista dell’ordine cliente)**: en este campo es posible indicar una fecha prevista para la emisión del primer pedido relacionado con la oportunidad;
+**Fecha prevista de albaranes de venta<!-- Data prevista bolle di vendita -->**: en este campo puede indicar una fecha prevista para la emisión del primer albarán relacionado con la oportunidad<!-- opportunità -->;
 
-**Fecha prevista de facturas de venta (Data prevista fatture di vendita)**: en este campo es posible indicar una fecha prevista para la emisión de la primera factura relacionada con la oportunidad.
+**Fecha prevista de facturas de venta<!-- Data prevista fatture di vendita -->**: en este campo puede indicar una fecha prevista para la emisión de la primera factura vinculada a la oportunidad<!-- opportunità -->.
 
-En la tercera y última sección de la Gestión de Oportunidades hay 4 pestañas:
+En la tercera y última sección de la Gestión de Oportunidades<!-- Gestione Opportunità --> se encuentran 4 pestañas<!-- tab -->:
 
-### Registros de flujo de trabajo (Workflow logs)
+### Registros de workflow<!-- Workflow logs -->
 
-En esta pestaña se visualizan las actividades relacionadas con el flujo de trabajo asociado a esta Oportunidad. Esta pestaña aparece si para este objeto se prevé un flujo de trabajo asociado.        
+En esta pestaña<!-- tab --> se visualizan las actividades relacionadas con el flujo de trabajo (workflow) asociado a esta Oportunidad<!-- Opportunità -->. Esta pestaña<!-- tab --> aparece si existe un flujo de trabajo asociado para este elemento.
 
-### Detalle (Dettaglio)
+### Detalle<!-- Dettaglio -->
 
-En esta pestaña se muestra el detalle económico de la oferta. Para cada línea de detalle es posible indicar:  
-**famiglia prodotti**: hace referencia a la tabla de Familia de productos;  
-**descrizione**: es la descripción de la Familia de Productos seleccionada anteriormente;  
-**importo lordo**: permite indicar el importe de la oportunidad, para la familia de productos indicada anteriormente, neto de descuentos;  
-**sconto**: permite indicar el importe del descuento aplicado para la familia de productos indicada anteriormente;  
-**valore netto**: se calcula como la diferencia entre los campos **importo lordo** y **sconto**;  
-**entrate previste**: permite indicar cuál será el valor efectivo previsto de la línea de la oportunidad;  
-**data prevista fattura di vendita**: corresponde a la fecha en que se espera facturar la oportunidad en cuestión;  
-**data prevista bolle di vendita**: corresponde a la fecha en que se espera generar el documento de la oportunidad en cuestión;  
-**Fecha prevista del pedido de venta (Data prevista ordine di vendita)**: corresponde a la fecha en que se espera emitir el pedido para la oportunidad en cuestión;  
-**data di chiusura**: es la fecha en que la línea en cuestión se cerró;  
-**nota**: en este campo es posible indicar notas eventuales de la línea en cuestión.
+En esta pestaña<!-- tab --> se muestra el detalle económico de la oferta. Para cada línea de detalle es posible indicar:  
+**Familia de Productos<!-- Famiglia Prodotti -->**: hace referencia a la tabla de Familia de productos<!-- Famiglia prodotti -->;  
+**Descripción<!-- Descrizione -->**: es la descripción de la Familia de productos<!-- Famiglia Prodotti --> seleccionada anteriormente;  
+**Importe bruto<!-- Importo lordo -->**: permite indicar el importe de la oportunidad<!-- opportunità -->, para la familia de productos<!-- famiglia prodotti --> indicada previamente, neto de descuentos;  
+**Descuento<!-- Sconto -->**: permite indicar el importe del descuento aplicado para la familia de productos<!-- famiglia prodotti --> indicada previamente;  
+**Valor neto<!-- Valore netto -->**: se calcula como diferencia entre los campos **Importe bruto<!-- Importo Lordo -->** y **Descuento<!-- Sconto -->**;  
+**Ingresos previstos<!-- Entrate previste -->**: permite indicar el valor estimado real de la línea de la oportunidad<!-- opportunità -->;  
+**Fecha prevista de factura de venta<!-- Data prevista fattura di vendita -->**: corresponde a la fecha en la que se prevé facturar la oportunidad<!-- opportunità --> en cuestión;  
+**Fecha prevista de albaranes de venta<!-- Data prevista bolle di vendita -->**: corresponde a la fecha en la que se prevé albaranar la oportunidad<!-- opportunità --> en cuestión;  
+**Fecha prevista del pedido de venta<!-- Data prevista ordine di vendita -->**: corresponde a la fecha en la que se prevé emitir el pedido para la oportunidad<!-- opportunità --> en cuestión;  
+**Fecha de cierre<!-- Data di chiusura -->**: es la fecha en la que la línea en cuestión fue cerrada;  
+**Nota<!-- Nota -->**: en este campo es posible indicar eventuales notas de la línea en cuestión.
 
-### Ofertas (Offerte)
+### Ofertas<!-- Offerte -->
 
-En esta pestaña se muestran las ofertas vinculadas a la oportunidad. Al hacer doble clic en la línea de la oferta, se accede al modo de visualización/modificación de la oferta misma.  
-**nota**: en este campo es posible indicar notas adicionales.
+En esta pestaña<!-- tab --> se muestran las ofertas vinculadas a la oportunidad<!-- opportunità -->. Haciendo doble clic en la línea de la oferta se accede al modo de visualización/edición de la propia oferta.  
+**Nota<!-- Nota -->**: en este campo es posible indicar notas adicionales.
 
-### Documentos Relativos (Documenti relativi)  
-En esta pestaña es posible visualizar los archivos adjuntos a la oportunidad o proceder a adjuntar nuevos archivos utilizando el procedimiento de arrastrar y soltar (drag and drop).
+### Documentos relacionados<!-- Documenti relativi -->
+En esta pestaña<!-- tab --> es posible visualizar los archivos adjuntos a la oportunidad<!-- opportunità --> o adjuntar nuevos archivos mediante el procedimiento de arrastrar y soltar (drag and drop).

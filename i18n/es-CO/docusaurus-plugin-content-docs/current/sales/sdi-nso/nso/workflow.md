@@ -1,40 +1,46 @@
 ---
-title: Tipos de orden y cambio de estados (Tipi ordinazione e cambio stati)
+title: Tipos de solicitud y cambio de estados
 sidebar_position: 6
+ai_generated: true
 ---
 
-El estado **ricevuto** es aquel en el que se encuentra una orden que ha sido recibida por Fluentis sin errores, pero que aún no ha sido ingresada como pedido del cliente.  
-La orden puede ser recibida con el estado “En error (In errore)”, lo que significa que la orden ha sido recibida e ingresada, pero tiene datos incorrectos, como un precio de línea a 0, o datos faltantes, como el código NSO del cliente. Por lo tanto, deberá ser corregida por el usuario antes de poder realizar más cambios de estado.  
-Desde el estado Recibido se pueden ejecutar 2 comandos diferentes:       
-- **importa ordine** lleva la orden al estado *inserito*, es decir, la orden se genera en los documentos de Fluentis;  
-- **annulla documento**, que asegura que la orden no se cree en Fluentis y pasa al estado *annullata*, ya que fue rechazado por el proveedor.
+El estado **Recibido<!-- Ricevuto -->** es el estado en el que se encuentra una solicitud<!-- ordine --> que ha sido recibida por Fluentis sin errores, pero aún no ha sido ingresada como pedido de cliente<!-- ordine cliente -->.
+La solicitud<!-- ordine --> puede ser recibida con el estado “Con error”, es decir, la solicitud<!-- ordine --> ha sido recibida e ingresada pero presenta datos incorrectos, como el precio de una línea en 0, o ausentes, como el código NSO del cliente. Por lo tanto, deberá ser corregido por el usuario antes de poder realizar otros cambios de estado.
+Desde el estado Recibido<!-- Ricevuto --> se pueden ejecutar 2 comandos diferentes:        
+- **Importar pedido<!-- Importa ordine -->** lleva la solicitud<!-- ordine --> al estado *Ingresado<!-- Inserito -->*, es decir, la solicitud<!-- ordine --> se genera en los documentos de Fluentis;
+- **Anular documento<!-- Annulla documento -->**, que impide que la solicitud<!-- ordine --> sea creada en Fluentis y la pasa al estado *Anulada<!-- Annullata -->*, por haber sido rechazada por el proveedor.
 
-## Orden simple (Ordinazione semplice)
+## Solicitud simple<!-- Ordinazione semplice -->
 
-En el proceso de orden simple, donde solo el cliente envía los pedidos y el proveedor no puede responder en el flujo, sino que debe hacerlo a través de otros canales alternativos (correo electrónico, fax, etc.), desde el estado “Insertado (Inserito)” se puede pasar a los siguientes estados:  
-- *attendere annullamento dal cliente*, lo que significa que la orden se coloca en un estado de suspensión a la espera de una anulación por parte del cliente que probablemente ya comunicó la anulación a través de otros canales (correo, teléfono, etc.);  
-- *attendere sostituzione dal cliente*, lo que significa que la orden se coloca en un estado de suspensión a la espera de recibir un pedido sustituto por parte del cliente que probablemente ya comunicó la sustitución a través de otros canales (correo, teléfono, etc.).        
+En el proceso de solicitud<!-- ordinazione --> simple, donde solo el cliente envía las solicitudes<!-- ordini --> y el proveedor no puede responder en el flujo sino que debe hacerlo por otros canales alternativos (correo electrónico, fax, etc.), desde el estado “Ingresado<!-- Inserito -->”
+se puede pasar a los siguientes estados:
+- *Esperando anulación por parte del cliente<!-- Attendere annullamento dal cliente -->*, es decir, la solicitud<!-- ordine --> se pone en estado de suspensión a la espera de una anulación por parte del cliente, que probablemente ha comunicado la anulación previamente por otros canales (correo electrónico, teléfono, etc.)
+- *Esperando sustitución por parte del cliente<!-- Attendere sostituzione dal cliente -->*, es decir, la solicitud<!-- ordine --> se pone en estado de suspensión a la espera de la recepción de una orden<!-- ordine --> sustitutiva por parte del cliente, quien probablemente ha comunicado la sustitución previamente por otros canales (correo electrónico, teléfono, etc.)        
 
-El cliente puede solicitar la sustitución de la orden. En este caso, la orden original pasará al estado “En solicitud de sustitución (In richiesta di sostituzione)”. Desde aquí se podrán seleccionar 2 cambios de estado:  
-- *riporta in inserito* en caso de que no se acepte la sustitución y se quiera devolver la orden al estado “Insertado” para poder despacharla con los valores originales;  
-- *sostituzione da cliente* en caso de que se quiera aceptar la sustitución de la orden.
+El cliente puede realizar una solicitud de sustitución de la solicitud<!-- ordine -->.
+En este caso la solicitud<!-- ordine --> original pasará al estado “En solicitud de sustitución<!-- In richiesta di sostituzione -->”. Desde aquí se pueden
+seleccionar 2 cambios de estado:
+- *Volver a ingresado<!-- Riporta in inserito -->* en caso de no aceptar la sustitución y se quiera devolver la solicitud<!-- ordine --> al estado “Ingresado<!-- Inserito -->” para poder gestionarla con los valores originales;
+- *Sustitución por parte del cliente<!-- Sostituzione da cliente -->* en caso de querer aceptar la sustitución de la solicitud<!-- ordine -->.       
 
-Al recibir el pedido sustituto, se generará una fila adicional con el estado *in attesa di accettazione*, la cual se refiere al nuevo pedido. En caso de aceptar la sustitución del nuevo pedido al pedido inicial, la fila *En espera de aceptación* pasará al estado *inserito*, mientras que la fila de la orden original *in richiesta di sostituzione* pasará al estado *sostituito da cliente*.
+En el momento de la recepción de la solicitud sustitutiva<!-- ordine sostitutivo --> se generará una nueva línea con estado *En espera de aceptación<!-- In attesa di accettazione -->*, la cual hace referencia a la nueva solicitud<!-- ordine -->.
+En caso de aceptación de la sustitución de la nueva solicitud<!-- ordine --> a la solicitud inicial, la línea *En espera de aceptación<!-- In attesa di accettazione -->* pasará al estado *Ingresado<!-- Inserito -->*, mientras que la línea de la solicitud original *En solicitud de sustitución<!-- In richiesta di sostituzione -->* pasará al estado *Sustituida por cliente<!-- Sostituito da cliente -->*.
 
-## Orden completa (Ordinazione completa)
+## Solicitud completa<!-- Ordinazione completa -->
 
-En el proceso de orden completa, donde el cliente y el proveedor pueden enviar pedidos a través de NSO, desde el estado “Insertado (Inserito)” se puede pasar a los siguientes estados:  
-- *spedizione risposta di conferma* envía una notificación al cliente que confirma la aceptación del pedido por parte del proveedor (IBSA). La orden pasa al estado “Confirmado por el proveedor (Confermato da fornitore)” y se creará una fila adicional para el archivo de respuesta de la confirmación.  
-- *spedizione risposta di diniego* envía una notificación de no aceptación del pedido al cliente, con la orden pasando al estado *annullato da fornitore*.  
-- *creazione risposta di modifica* permite modificar el documento respecto al código del artículo, cantidad y precio de las líneas individuales y enviarlo al cliente, quien podrá aceptar o no este pedido modificado. Se mostrará un mensaje de advertencia de cierre de la orden original y de creación de un nuevo pedido, sobre el cual se realizarán las modificaciones. Una vez realizadas las modificaciones en el pedido, este podrá ser enviado mediante el cambio de estado *in risposta di modifica*. El nuevo pedido de modificación pasará al estado “En espera de respuesta (In attesa di riscontro)”. También se creará una nueva fila de notificación.  
-- *spedizione risposta di ricevimento*, en cambio, envía una simple notificación de recibo del pedido al cliente, pasando la orden al estado *ricevuto da fornitore*.
+En el proceso de solicitud<!-- ordinazione --> completa, donde el cliente y el proveedor pueden enviarse solicitudes<!-- ordini --> mediante NSO, desde el estado “Ingresado<!-- Inserito -->” se puede pasar a los siguientes estados:
+- *Envío respuesta de confirmación<!-- Spedizione risposta di conferma -->* realiza el envío de una notificación al cliente que confirma la aceptación de la solicitud<!-- ordine --> por parte del proveedor (IBSA). La solicitud<!-- ordine --> pasa al estado “Confirmado por proveedor<!-- Confermato da fornitore -->” y se creará una línea adicional para el archivo de respuesta de la confirmación.
+- *Envío de respuesta de denegación<!-- Spedizione risposta di diniego -->* envía una notificación de no aceptación de la solicitud<!-- ordine --> al cliente, pasando la solicitud<!-- ordine --> al estado *Anulado por proveedor<!-- Annullato da Fornitore -->*.
+- *Creación de respuesta de modificación<!-- Creazione risposta di modifica -->* permite modificar el documento respecto al código de artículo, cantidad y precio de las líneas individuales y enviarlo al cliente, quien podrá aceptar o rechazar la solicitud modificada. Se mostrará un mensaje de aviso de cierre de la solicitud original y de creación de una nueva solicitud, sobre la cual se realizarán las modificaciones.
+Una vez realizadas las modificaciones sobre la solicitud<!-- ordine -->, podrá ser enviada mediante el cambio de estado *En respuesta de modificación<!-- In risposta di modifica -->*. La nueva solicitud<!-- ordine --> de modificación pasará al estado “En espera de respuesta<!-- In attesa di riscontro -->”. Además, se creará una nueva línea de notificación.
+- *Envío de respuesta de recepción<!-- Spedizione risposta di ricevimento -->* simplemente envía una notificación de recepción de la solicitud<!-- ordine --> al cliente y la solicitud pasa al estado *Recibido por proveedor<!-- Ricevuto da fornitore -->*.  
 
-## Orden preacordada (Ordinazione pre-concordata)
+## Solicitud pre-acordada<!-- Ordinazione pre-concordata -->
 
-En la orden preacordada, el flujo comienza por parte del proveedor que, como se acordó previamente con el cliente a través de otros canales (correo electrónico, fax, etc.), emite el pedido NSO.
+En la solicitud pre-acordada<!-- ordinazione pre-concordata -->, el flujo inicia desde el proveedor quien, como se acordó anteriormente con el cliente por otros canales (correo electrónico, fax, ...), emite la solicitud NSO<!-- ordine NSO -->.         
 
-El estado inicial que asume un pedido preacordado es el estado *creato pre-concordato*, desde donde se puede realizar el cambio de estado *controllo pre-concordato*, que lleva la orden al estado *controllato*. Desde el estado *controllato* se pueden realizar 2 cambios de estado:  
-- *Regresar a estado Pre-Acordado (Riporta in stato Pre-Concordato)*, regresa la orden al estado *creato pre-concordato*;  
-- *generazione pre-concordato* realiza la generación del archivo del pedido preacordado, cambiando su estado a *generata*, que a su vez puede sufrir 2 cambios de estado:  
-> - *spedizione pre-concordato*, que lleva el pedido al estado *da spedire*, es decir, el pedido es enviado al cliente y está listo para ser despachado físicamente;  
-> - *riporta in controllato*, que regresa la orden al estado *controllato*.
+El estado inicial que asume una solicitud<!-- ordine --> pre-acordada es *Creada Pre-Acordada<!-- Creato Pre-Concordato -->*, desde donde se puede realizar el cambio de estado *Control Pre-Acordado<!-- Controllo Pre-Concordato -->*, que lleva la solicitud<!-- ordine --> al estado *Controlada<!-- Controllato -->*. Desde el estado *Controlada<!-- Controllato -->* es posible realizar 2 cambios de estado:       
+- *Volver a estado Pre-Acordado<!-- Riporta in stato Pre-Concordato -->* lleva la solicitud<!-- ordine --> al estado *Creada Pre-Acordada<!-- Creato Pre-Concordato -->*       
+- *Generación Pre-Acordada<!-- Generazione Pre-Concordato -->* realiza la generación del archivo de la solicitud<!-- ordine --> pre-acordada pasando su estado a *Generada<!-- Generata -->*, que a su vez puede sufrir 2 cambios de estado:       
+> - *Envío Pre-Acordado<!-- Spedizione Pre-Concordato -->*, que lleva la solicitud<!-- ordine --> al estado *Para enviar<!-- Da spedire -->*, es decir, la solicitud<!-- ordine --> es enviada al cliente y está lista para ser físicamente gestionada;
+> - *Volver a Controlada<!-- Riporta in controllato -->*, que lleva la solicitud<!-- ordine --> al estado *Controlada<!-- Controllato -->*.

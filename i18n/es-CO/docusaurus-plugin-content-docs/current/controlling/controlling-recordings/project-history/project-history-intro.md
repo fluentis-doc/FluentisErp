@@ -1,16 +1,17 @@
 ---
-title: Introducción (Introduzione)
+title: Introducción
 sidebar_position: 1
+ai_generated: true
 ---
 
-En esta sección de la **contabilità gestionale*** tenemos las diversas opciones de visualización de los datos elaborados en la dimensión *Proyectos/contratos (Progetti/commesse)*.  
+En esta sección de la ***Contabilidad de gestión***<!-- Contabilità gestionale --> disponemos de las diferentes opciones de visualización de los datos procesados sobre la dimensión *Proyectos/órdenes de trabajo<!-- Progetti/commesse -->*.
 
-Disponemos de las siguientes opciones:  
+Tenemos disponibles las siguientes opciones:
 
-- **storico movimenti fisici di commessa**, para ver el detalle de los tiempos (máquina/hombre/ajuste) relacionados con los proyectos  
+- ***Histórico de movimientos físicos de orden de trabajo<!-- Storico movimenti fisici di commessa -->***, para ver el detalle de los tiempos (máquina/hombre/preparación<!-- macchina/uomo/attrezzaggio -->) relacionados con los proyectos<!-- progetti -->.
 
-- **registrazioni gestionali***, para ver costos e ingresos directamente imputados a proyecto/contrato por la Cierre interanual  
+- ***Registros de gestión<!-- Registrazioni gestionali -->***, para ver los costos y los ingresos imputados directamente al proyecto/orden de trabajo<!-- progetto/commessa --> desde el cierre interanual<!-- Chiusura infrannuale -->.
 
-- **valori da produzione***, para ver los costos de materiales y procesos imputados a proyecto/contrato  
+- ***Valores desde producción<!-- Valori da produzione -->***, para ver los costos de materiales y procesos imputados al proyecto/orden de trabajo<!-- progetto/commessa -->.
 
-- **consolidato di progetto***, para ver el resultado de la elaboración del presupuesto del proyecto, que incluirá costos directos e indirectos atribuibles a través de los Cost driver de la dimensión proyectos.
+- ***Consolidado de proyecto<!-- Consolidato di progetto -->***, para ver el resultado del procesamiento del resultado final del proyecto<!-- consuntivo di progetto -->, que incluirá los costos directos e indirectos atribuidos mediante el cost driver<!-- Cost driver --> de la dimensión proyectos<!-- progetti -->.

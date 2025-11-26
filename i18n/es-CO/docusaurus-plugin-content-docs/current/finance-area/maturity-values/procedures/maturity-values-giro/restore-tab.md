@@ -1,13 +1,12 @@
 ---
-title: Pestaña de Restablecimiento (Tab Ripristino)
+title: Pestaña Restaurar
 sidebar_position: 2
+ai_generated: true
 ---
 
-Está presente como de costumbre una pestaña final ‘Restablecimiento (Ripristino)’ para visualizar en vista previa el registro realizado o también para anularlo a través del botón correspondiente.
+Como es habitual, está presente una pestaña final 'Restaurar<!-- Ripristino -->' para previsualizar el registro<!-- registrazione --> realizado o también para anularlo a través del botón correspondiente.
 
-
-
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Búsqueda (Ricerca) | Botón para buscar el asiento de partidas realizado previamente. |
-| Restablecer asiento de partidas (Ripristina giroconto partite) | Botón para visualizar y/o restablecer el asiento de partidas. |
+| Buscar<!-- Ricerca --> | Botón para buscar el giro de cuentas<!-- giroconto partite --> realizado anteriormente. |
+| Restaurar giro de cuentas<!-- Ripristina giroconto partite --> | Botón para visualizar y/o restaurar el giro de cuentas<!-- giroconto partite -->. |

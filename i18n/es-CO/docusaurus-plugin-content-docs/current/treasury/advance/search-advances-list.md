@@ -1,25 +1,26 @@
 ---
-title: Búsqueda de Anticipos (Ricerca Distinta Anticipo)
+title: Búsqueda de Remesa de Anticipo
 sidebar_position: 2
+ai_generated: true
 ---
 
-Desde esta posición se buscan las listas de anticipos ya presentes en el sistema, las cuales pueden abrirse para visualización o modificación con un doble clic.
+Desde esta sección se pueden buscar las remesas de anticipo<!-- distinte di anticipo --> ya presentes en el sistema, las cuales pueden ser abiertas para visualización o modificación con doble clic.
 
-También es posible proceder a la inserción de una nueva lista con el botón **nuovo***.
+También es posible proceder al ingreso de una nueva remesa<!-- distinta --> con el botón ***Nuevo<!-- Nuovo -->***.<!-- distinta -->
 
-En el encabezado del formulario se encuentran los **filtros** para la búsqueda relacionados con:
+En el encabezado del formulario se encuentran los **filtros** de búsqueda relativos a: 
 
-- cuentas corrientes (ordinarias)  
-- cuentas de apoyo para el anticipo por parte del banco  
-- número de la lista  
-- fecha de presentación  
-- tipo de cálculo  
-- estado de la lista.  
+- cuentas corrientes<!-- conti correnti --> (ordinarias) 
+- cuentas de apoyo<!-- conti d'appoggio --> para el anticipo por parte del banco 
+- número de remesa<!-- numero distinta --> 
+- fecha de presentación<!-- data presentazione --> 
+- tipo de cálculo<!-- tipo di calcolo --> 
+- estado de la remesa<!-- stato della distinta -->.
 
-El indicador **contabilizzata** marca y filtra listas para las cuales ya se ha lanzado el proceso de [**contabilizzazione**](/docs/treasury/advance/accounting/advances-list-accounting) o no.
+El indicador **Contabilizada<!-- Contabilizzata -->** señala y filtra las remesas<!-- distinte --> para las cuales ya se ha ejecutado el procedimiento de [**contabilización**](/docs/treasury/advance/accounting/advances-list-accounting) o no.
 
 En el formulario también son visibles:
 
-**Total de la lista (Totale Distinta):** Campo calculado que representa la suma total de las facturas anticipadas.
+**Total de la Remesa<!-- Totale Distinta -->:** Campo calculado que representa la suma del total de las facturas anticipadas
 
-**Total anticipado (Totale Anticipato):** Campo calculado que representa la suma de la porción anticipada por el banco para cada factura.
+**Total Anticipado<!-- Totale Anticipato -->:** Campo calculado que representa la suma de la cuota anticipada por el banco para cada factura

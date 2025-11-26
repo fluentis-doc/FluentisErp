@@ -1,31 +1,32 @@
 ---
-title: consolidamento
+title: Consolidación
 sidebar_position: 1
+ai_generated: true
 ---
 
-El procedimiento permite, ante todo, vincular los cierres interanuales de las diversas empresas presentes en la base de datos, con el fin de crear un **balance consolidado de grupo (bilancio consolidato di gruppo)** que se puede imprimir o valorar en un balance reclasificado, pero también generará un registro de consolidación en el que **se eliminarán los movimientos** económicos **intercompany** y los créditos y deudas intercompañía.
+El procedimiento permite, en primer lugar, vincular los cierres intra-anuales de las distintas sociedades presentes en la base de datos, con el objetivo de crear un **balance consolidado de grupo<!-- bilancio consolidato di gruppo -->** para imprimir o valorizar en una re-clasificación de balance. Además, también creará un asiento de consolidación<!-- registrazione di consolidamento --> en el que **se eliminarán los movimientos<!-- movimenti -->** económicos **intercompany** y los créditos y deudas intercompany.
 
-En la cabecera del formulario, es posible filtrar el rango de fechas de los cierres a considerar, pero también establecer, de manera opcional, la empresa matriz de interés: de este modo, en la cuadrícula del formulario se visualizarán las empresas que no han configurado una empresa matriz o aquellas que pertenecen a la matriz seleccionada; para cada empresa, además, se mostrará el último cierre de cuentas creado dentro del rango de filtro establecido (Es posible seleccionar un cierre interanual diferente al último propuesto). La marca ‘Sel.' servirá para identificar sobre cuáles ejecutar la operación de consolidación, mientras que en la columna 'Cambio' es posible establecer un tipo de cambio específico a utilizar para la conversión de los saldos provenientes de empresas con moneda diferente a la de la matriz.
+En el encabezado de la pantalla es posible filtrar el rango de fechas de los cierres a considerar, pero también configurar, opcionalmente, la sociedad matriz de interés: de este modo, en la cuadrícula de la pantalla se visualizarán las sociedades que no tienen establecida una sociedad matriz o las que dependen de la matriz seleccionada. Para cada sociedad, se mostrará el último cierre de cuentas creado dentro del rango de filtro configurado (es posible seleccionar un cierre intra-anual diferente al último propuesto). La casilla ‘Sel.' identificará sobre cuáles ejecutar la operación de consolidación<!-- consolidamento -->, mientras que en la columna 'Cambio' es posible establecer un tipo de cambio específico a utilizar para la conversión de los saldos procedentes de sociedades con moneda diferente a la de la matriz.
 
-Debajo de la cuadrícula se deben insertar algunos parámetros a utilizar: la descripción a atribuir a la consolidación, un motivo de registro, el usuario de la operación (propuesto ya como el usuario activo) y, finalmente, un indicador de conversión de los códigos de subcuenta a los de la empresa matriz.
+Debajo de la cuadrícula, se deben ingresar algunos parámetros a utilizar: la descripción que se asignará a la consolidación<!-- consolidamento -->, una causal de registro<!-- causale di registrazione -->, el usuario de la operación (propuesto ya como el usuario activo) y, finalmente, una casilla de conversión de los códigos de subcuenta<!-- sottoconto --> a los de la sociedad matriz<!-- capogruppo -->.
 
-Dentro de la tabla de empresas, fila por fila, es posible asociar un registro: de este registro se identificarán las subcuentas de clientes/proveedores del grupo (por ejemplo, en la empresa X se verificará si el registro vinculado a la empresa Y está codificado como cliente y/o proveedor). De los registros a nombre de estas subcuentas que se valorizan en los cierres seleccionados, se ingresarán con signo inverso los costos/ingresos en el nuevo registro; para las mismas subcuentas se verificarán las partidas abiertas en el momento de la consolidación, y se anularán también los saldos de estas.
+Dentro de la tabla de sociedades, fila por fila, es posible asociar un registro maestro (anagráfico): a partir de este registro, se identificarán las subcuentas<!-- sottoconti --> clientes/proveedores del grupo (por ejemplo, en la sociedad X se verá si el registro relacionado con la sociedad Y está codificado como cliente y/o proveedor). De los asientos asignados a estas subcuentas<!-- sottoconti --> valorizados en los cierres seleccionados, se ingresarán con signo contrario los costos/ingresos en el nuevo asiento; para las mismas subcuentas<!-- sottoconti --> se verificarán las partidas abiertas al momento de la consolidación y también se eliminarán los saldos correspondientes.
 
-:::tip Nota
-En el plan de cuentas de las empresas que tienen una empresa matriz en la tabla, son visibles los campos para asignar los códigos de cuenta/subcuenta de la matriz.
+:::tip Nota<!-- Nota -->
+En el plan de cuentas de las sociedades que tienen configurada una sociedad matriz en la tabla, son visibles los campos para asignar los códigos de cuenta/subcuenta<!-- conto/sottoconto --> de la sociedad matriz<!-- capogruppo -->.
 :::
 
-## Procedimiento
+## Procedimiento<!-- Procedura -->
 
 :::important[]
-Procedimiento paso a paso de activación y ejecución (supongamos dos empresas)
+Procedimiento paso a paso para la activación y ejecución (supongamos dos empresas)
 
-- En la tabla [**società**](/docs/configurations/tables/general-settings/company) de cada una de las empresas en cuestión, completar el campo ***Registro asociado (Anagrafica associata)*** para vincular un Contacto que identifique la empresa misma en la consolidación, por ejemplo, si la empresa se llama Alfa, en su tabla de empresas vinculamos un contacto (previamente creado) que se llama, por ejemplo, "Alfa Spa".  
-- En el plan de cuentas de cada una de las empresas se habrá creado la subcuenta (a través de la gestión **dati contabili** del registro) de tipo cliente o proveedor de la otra empresa del grupo y se habrán registrado intercambios cruzados, por ejemplo, compra por parte de la empresa 1 y venta por parte de la empresa 2 (cada uno desde su perspectiva).  
-- Cada una de las empresas lanza un cierre de cuentas interanual para el mismo período.  
-- En el procedimiento *consolidamento* seleccionaré los dos cierres de las dos empresas para generar los asientos de ajuste para la consolidación que van a neutralizar costos e ingresos y créditos y deudas recíprocas, agregando en cambio los movimientos hacia el exterior.
+- En la tabla [**sociedades<!-- società -->**](/docs/configurations/tables/general-settings/company) de cada una de las empresas en cuestión, complete el campo ***Registro maestro asociado<!-- Anagrafica associata -->*** para vincular un Contacto que identifique la propia empresa en la consolidación, por ejemplo, si la empresa se llama Alfa, en su tabla de sociedades vinculamos un contacto (creado previamente) que se llama, por ejemplo, "Alfa Spa".
+- En el plan de cuentas de cada una de las sociedades<!-- società --> se habrá creado la subcuenta<!-- sottoconto --> (a través de la gestión de **datos contables<!-- dati contabili -->** del registro maestro) de tipo cliente o proveedor de la otra empresa del grupo y se habrán registrado intercambios cruzados, por ejemplo, compra por parte de la empresa 1 y venta por parte de la empresa 2 (cada una desde su perspectiva).
+- Cada una de las empresas ejecuta un cierre de cuentas intra-anual para el mismo periodo.
+- En el procedimiento *Consolidación<!-- Consolidamento -->* se seleccionarán los dos cierres de las dos sociedades<!-- società --> de las cuales generar los asientos de ajuste por consolidación<!-- scritture di rettifica per consolidamento --> que neutralizarán costos e ingresos y créditos y deudas recíprocas, agregando en cambio los movimientos<!-- movimenti --> hacia el exterior.
 :::
 
-## Procedimientos anteriores (Precedenti)
+## Anteriores<!-- Precedenti -->
 
-Desde la pestaña de procedimientos anteriores es posible proceder a la cancelación de los procedimientos de consolidación ejecutados.
+Desde la ficha de procedimientos anteriores es posible proceder a la eliminación de los procedimientos de consolidación<!-- consolidamento --> ejecutados.

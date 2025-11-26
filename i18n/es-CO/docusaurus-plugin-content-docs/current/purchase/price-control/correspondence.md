@@ -1,26 +1,26 @@
 ---
-title: Correspondencia de categorías de descuento de ventas y compras
+title: Corrispondenza categorie sconto acq/ven
 sidebar_position: 3
 ---
 
-En esta pantalla es posible consultar e ingresar nuevas correspondencias para categorías de descuento. Se utiliza para el procedimiento de [Importación de Precios de proveedor](/docs/purchase/purchase-price-lists/procedures/import-price) y permite relacionar la *Categoría de descuento* del proveedor con las *Categoría de descuento de ventas* y *Categorías de descuento de compras* codificadas y utilizadas en Fluentis según las condiciones de descuento a aplicar a sus clientes/proveedores.
+In questa maschera è possibile consultare e inserire nuove corrispondenze per categorie di sconto. Viene utilizzata per la procedura di [Importazione da Prezzi fornitore](/docs/purchase/purchase-price-lists/procedures/import-price) e consente di abbinare la *Categoria sconto* del fornitore alle *Categoria sconto vendite* e *Categorie sconto acquisti* codificate ed utilizzate in Fluentis in base alle condizioni di sconto da applicare ai propri clienti/fornitori.    
 
-La categoría de descuento genérica (por ejemplo, la de la casa matriz) se asocia a una categoría de descuento para la venta y a una categoría de descuento para la compra.  
-Los revendedores pueden recibir de la casa matriz el catálogo (Importado con el procedimiento [Precios de proveedor](/docs/purchase/purchase-price-lists/procedures/supplier-price)), al cual se aplica un precio con una categoría de descuento; los revendedores a su vez venderán el producto aplicando una categoría de descuento diferente. Varios proveedores pueden tener la misma *Categoría de descuento* pero diferentes *Categoría de descuento de ventas y compras*, ya que comparten la misma casa matriz, pero aplican condiciones de descuento diferentes.
+La categoria di sconto generica (per es. quella della casa madre) viene associata ad una categoria di sconto per la vendita e ad una categoria di sconto per l'acquisto.    
+I rivenditori possono infatti ricevere dalla casa madre il catalogo (Importato con la procedura [Prezzi fornitore](/docs/purchase/purchase-price-lists/procedures/supplier-price)), a cui è applicato un prezzo con una categoria di sconto; i rivenditori venderanno a loro volta il prodotto applicando una categoria di sconto diversa. Diversi fornitori possono avere uguale *Categoria sconto* ma diversa *Categoria sconto vendita e acquisti*, in quanto hanno la stessa casa madre, ma applicano condizioni di sconto differenti.   
+ 
+Le informazioni contenute nella griglia sono:           
 
-Las informaciones contenidas en la cuadrícula son:           
+>- **Classe articolo**: contiene la classe articolo alla quale viene associata una determinata categoria di sconto.  
+>- **Conto/Sottoconto/Descrizione**: contiene l'anagrafica a cui è associata la categoria di sconto.        
+>- **Cat. sconto vend.**: contiene la categoria di sconto con la quale l'anagrafica vende l'articolo; permette di scegliere un valore tra quelli precedentemente codificati nella tabella [Categorie sconti gestione prezzi](/docs/configurations/tables/sales/category-discounts-price-management/).     
+>- **Cat. sconto acq.**: contiene la categoria di sconto con la quale l'anagrafica compra l'articolo; permette di scegliere un valore tra quelli precedentemente codificati nella tabella [Categoria sconto acquisti](/docs/configurations/tables/purchase/category-discounts-price-management/).        
+>- **Formule di aggiornamento**: permette di associare una eventuale [formula di aggiornamento politiche prezzi/sconti](/docs/purchase/price-control/formulas) da utilizzare nelle procedure di aggiornamento dei prezzi.
+>- **Da data validità**: contiene la data dalla quale considerare la categoria di sconto per la classe articolo; in questo modo è possibile associare diverse categorie in periodi diversi dell'anno.         
+>- **Categoria sconti**: questo è il campo che lega il modulo acquisti con il modulo vendite e contiene la categoria sconti applicata dalla casa madre. Deve riportare la stessa *Categoria sconto* della casa madre che si trova anche nella form dei [Prezzi fornitore](/docs/purchase/purchase-price-lists/procedures/supplier-price).
 
->- **Clase de ítem**: contiene la clase de artículo a la cual se asocia una determinada categoría de descuento.  
->- **Cuenta/Subcuenta/Descripción**: contiene el registro asociado a la categoría de descuento.        
->- **Categoría de descuento de venta**: contiene la categoría de descuento con la cual el registro vende el artículo; permite elegir un valor entre aquellos previamente codificados en la tabla [Categorías de descuentos gestión de precios](/docs/configurations/tables/sales/category-discounts-price-management/).     
->- **Categoría de descuento de compra**: contiene la categoría de descuento con la cual el registro compra el artículo; permite elegir un valor entre aquellos previamente codificados en la tabla [Categoría de descuento de compras](/docs/configurations/tables/purchase/category-discounts-price-management/).        
->- **Fórmulas de actualización**: permite asociar una eventual [fórmula de actualización de políticas de precios/descuentos](/docs/purchase/price-control/formulas) a utilizar en los procedimientos de actualización de precios.  
->- **Desde la fecha de validez**: contiene la fecha desde la cual considerar la categoría de descuento para la clase de artículo; de esta manera es posible asociar diferentes categorías en distintos periodos del año.         
->- **Categoría de descuento**: este es el campo que une el módulo de compras con el módulo de ventas y contiene la categoría de descuentos aplicada por la casa matriz. Debe reflejar la misma *Categoría de descuento* de la casa matriz que se encuentra también en el formulario de [Precios de proveedor](/docs/purchase/purchase-price-lists/procedures/supplier-price).
-
-Para poder realizar la [Importación de Precios de Proveedor](/docs/purchase/purchase-price-lists/procedures/import-price), es necesario ingresar una nueva fila en la tabla indicando:  
-- la *clase* de los artículos de los cuales se desea realizar la importación,  
-- el *registro* del *contacto* al que se asocia,  
-- las *categorías de descuento de ventas y compras* elegidas entre las codificadas en el sistema,  
-- la *categoría de descuentos* del productor, igual a la presente en la cuadrícula de artículos,  
-- eventualmente, una *fecha de validez* y una *fórmula*.
+Per poter effettuare l'[Importazione da Prezzi Fornitore](/docs/purchase/purchase-price-lists/procedures/import-price) è necessario inserire una nuova riga nella tabella indicando:
+- la *classe* degli articoli di cui si vuole effettuare l'importazione,
+- l'*anagrafica* del *contatto* a cui viene associata, 
+- le *categorie sconto vendite e acquisti* scelte tra quelle codificate a sistema,
+- la *categoria sconti* del produttore, uguale a quella presente nella griglia degli articoli, 
+- eventualmente, una *data validità* e una *formula*. 

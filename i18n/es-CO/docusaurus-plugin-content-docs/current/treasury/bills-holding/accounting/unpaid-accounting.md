@@ -1,63 +1,63 @@
 ---
-title: contabilizzazione insoluti
+title: Contabilización de Incobrables
 sidebar_position: 4
+ai_generated: true
 ---
+El formulario se encuentra en Tesorería<!-- Tesoreria --> > Cartera de efectos<!-- Portafoglio Effetti --> > Contabilización<!-- Contabilizzazione --> > Contabilización de incobrables<!-- Contabilizzazione Insoluti -->.
 
-El formulario se encuentra en Tesorería > Cartera de Efectos > Contabilización > contabilizzazione insoluti (Contabilizzazione Insoluti).
+Desde esta pantalla se procede a la contabilización de incobrables<!-- insoluti -->: el procedimiento reabre las partidas de clientes<!-- partite clienti --> asociadas a los efectos incobrables<!-- effetti insoluti --> y eventualmente genera una factura de cargo por gastos<!-- fattura di addebito spese -->.
 
-Desde esta máscara se procede a la contabilización de insolutos: el procedimiento reabre las cuentas de los clientes asociadas a los efectos insolutos y eventualmente genera una factura de cargo por gastos.
+**Botones específicos<!-- Pulsanti specifici -->**
 
-**Botones específicos**
+**Buscar<!-- Ricerca -->**: Busca la lista de incobrables<!-- insoluti --> a contabilizar.
 
-**ricerca**: Busca la lista de los insolutos a contabilizar.
+**Contabilizar<!-- Contabilizza -->**: Efectúa la contabilización para las filas seleccionadas.
 
-**contabilizza**: Realiza la contabilización para las líneas seleccionadas.
+## Cómo contabilizar un incobrable<!-- Come contabilizzare un insoluto -->
 
-## Cómo contabilizar un insoluto
+1. Utiliza la parte superior de la pantalla para filtrar la búsqueda de incobrables<!-- insoluti --> a contabilizar. ATENCIÓN: Primero es necesario proceder a su creación.
 
-1. Utiliza la parte superior de la máscara para filtrar la búsqueda de los insolutos a contabilizar. ATENCIÓN: es necesario proceder primero con su creación.
+2. Selecciona desde la cuadrícula central los efectos<!-- effetti --> que deseas contabilizar.
 
-2. Selecciona de la cuadrícula central los efectos que deseas contabilizar. 
+3. Completa los parámetros para la contabilización tales como la **Causal contable<!-- Causale di contabilità -->** y la **fecha de registro<!-- data registrazione -->**.
 
-3. Completa los parámetros para la contabilización, como la **causale di contabilità** y la **data registrazione**.
-
-:::note[Nota]
-Esta sección puede estar predefinida dentro de los [**parámetros**](/docs/configurations/parameters/treasury/unpaids-parameters) del módulo de Insolutos.
+:::note[Nota<!-- Nota -->]
+Esta sección puede ser predefinida dentro de los [**parámetros**](/docs/configurations/parameters/treasury/unpaids-parameters) del módulo de Incobrables<!-- Insoluti -->. 
 
 En particular:
 
-- la causa contable se propone según los parámetros del módulo, 
-- las fechas de registro se proponen como la fecha actual; 
-- los subcuentas para los **spese di protesto** y la cuenta **Transitoria (Transitorio)** se toman de los parámetros del módulo, pero pueden ser modificadas o ingresadas en cada ocasión.
+- La causal contable<!-- causale contabile --> se propone con base en los parámetros del módulo,
+- Las fechas de registro<!-- date di registrazione --> se proponen como la fecha actual;
+- Los subcuentas<!-- sottoconti --> para los **Gastos de protesto<!-- Spese di protesto -->** y la cuenta **Transitoria<!-- Transitorio -->** se retoman desde los parámetros del módulo, pero pueden ser modificados o ingresados caso a caso.
 
-El indicador **contabilizzazione riepilogativa** registra en una única anotación todos los insolutos presentados en el mismo banco: normalmente esta opción no se utiliza, particularmente si se ha establecido la obligatoriedad de la fecha y número de factura en la causa contable por utilizar.
+El flag **Contabilización consolidada<!-- Contabilizzazione riepilogativa -->** detecta en un solo registro contable todos los incobrables<!-- insoluti --> presentados en el mismo banco<!-- istituto di credito (banca) -->: normalmente esta opción no se utiliza, en especial si se ha establecido la obligatoriedad de la fecha y número de factura en la causal contable a utilizar.
 
-El indicador **spese di rivalsa** impone el registro del recargo de gastos al cliente: con esta opción se activará (en la parte inferior) la sección de gestión de la factura para estos gastos, en lugar de registrarlos directamente en contabilización. En esta sección, todos los campos deben ser ajustados para poder crear la factura de venta.
+El flag **Gastos de recargo<!-- Spese di rivalsa -->** impone el registro del recargo de gastos al cliente: con esta opción se activará (en la parte inferior) la sección de gestión de la factura para estos gastos, en lugar de registrarlos directamente en contabilidad. En esta sección, todos los campos deberán ser configurados para poder crear la factura de venta.
 
-Finalmente, queda por insertar: 
-- el **tipo de pago (tipo di pagamento)** y 
-- la **data scadenza** que se asignará para la reapertura de la cuenta. Alternativamente, el indicador **Fecha de vencimiento igual a la fecha de vencimiento del efecto (Data scadenza uguale alla data scadenza effetto)** (que ha quedado insoluto).
+Finalmente, queda por ingresar:
+- el **tipo de pago<!-- tipo di pagamento -->** y
+- la **fecha de vencimiento<!-- data scadenza -->** a asignar para la reapertura de la partida<!-- partita -->. Alternativamente, el flag **Fecha de vencimiento igual a la fecha de vencimiento del efecto<!-- Data scadenza uguale alla data scadenza effetto -->** (que ha resultado incobrable<!-- andato insoluto -->).
 
-También en este caso se leen los parámetros del módulo para proponer estos dos datos.
+También en este caso se leen los parámetros del módulo para la propuesta de estos dos datos.
+ 
+4. Pulsa el botón en la ribbon bar **Contabilización<!-- Contabilizzazione -->**
 
-4. Presiona el botón en la barra de herramientas **contabilizzazione**.
+### Pestaña Anteriores<!-- Tab Precedenti -->
 
-### Pestaña Anteriores
+Desde la pestaña Anteriores<!-- scheda precedenti --> es posible proceder a la anulación de las contabilizaciones realizadas. 
 
-Desde la pestaña anterior es posible proceder a la anulación de las contabilizaciones realizadas. 
+La anulación sólo será posible si el periodo aún es modificable (impresión del libro diario y cierre de cuentas no ejecutados).
 
-La anulación será posible solo si el período aún es modificable (impresión del libro diario y cierre de cuentas no realizados). 
+Un doble clic en la sección de los registros permitirá visualizar el registro contable relacionado. 
 
-Un doble clic en la sección de registros permitirá visualizar la anotación contable relacionada. 
+Está disponible un informe de visualización de los errores detectados durante la contabilización.
 
-Está disponible un informe para visualizar los errores detectados durante la contabilización.
+**Botones específicos<!-- Pulsanti specifici -->**
 
-**Botones específicos**
+**Buscar<!-- Ricerca -->**: Busca la lista de contabilizaciones realizadas.
 
-**ricerca**: Busca la lista de las contabilizaciones realizadas.
+**Reversión contabilización<!-- Rollback contabilizzazione -->**: Realiza la restauración de las contabilizaciones seleccionadas.
 
-**rollback contabilizzazione**: Realiza la restauración de las contabilizaciones seleccionadas.
+**Reversión incobrables<!-- Rollback insoluti -->**: Realiza la restauración del registro contable seleccionado.
 
-**Revertir insolutos (Rollback insoluti)**: Realiza la restauración de la anotación contable seleccionada.
-
-Hay una pestaña para visualizar los errores almacenados durante el proceso de contabilización.
+Está disponible una pestaña para visualizar los errores almacenados en la fase de contabilización.

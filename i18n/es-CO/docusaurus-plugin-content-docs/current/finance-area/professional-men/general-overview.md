@@ -1,52 +1,63 @@
 ---
-title: Introducción (Introduzione)
+title: Introducción
 sidebar_position: 1
+ai_generated: true
 ---
 
-El módulo **percipienti** de Fluentis ERP gestiona las actividades relacionadas con los pagos a profesionales externos y agentes, garantizando el control sobre las retenciones y las obligaciones fiscales asociadas, como la compilación del modelo F24. Este módulo permite registrar compensaciones, contabilizar pagos y generar certificaciones fiscales. El módulo puede recibir los datos de los agentes del módulo homónimo del área **vendite**.  
-Desde este módulo se lleva a cabo la detección de deudas por los diversos tributos a pagar (retención, Enasarco, INPS).
+El módulo Percipienti de Fluentis ERP<!-- Percipienti di Fluentis ERP --> gestiona las actividades relacionadas con los pagos<!-- compensi --> a profesionales externos y agentes, garantizando el control sobre las retenciones de impuestos<!-- ritenute d’acconto --> y sobre las obligaciones fiscales asociadas, como la cumplimentación del modelo F24. Este módulo permite registrar pagos<!-- compensi -->, contabilizar pagos//abonos<!-- pagamenti --> y generar certificaciones fiscales. El módulo puede recibir los datos de los agentes desde el módulo homónimo del área de **Ventas<!-- Vendite -->**.  
+Desde este módulo se realiza el registro de las deudas por los diferentes tributos a abonar (retención<!-- ritenuta -->, Enasarco, INPS).
 
-**Funcionalidades Principales (Funzionalità Principali)**
+**Funcionalidades principales<!-- Funzionalità Principali -->**
 
-- **Búsqueda y gestión de compensaciones (Ricerca e gestione dei compensi)**: Permite ingresar, modificar y visualizar las compensaciones, con la posibilidad de eliminar las incorrectas y gestionar los pagos de las retenciones de manera masiva, evitando modificaciones manuales en las compensaciones individuales.  
+- Búsqueda y gestión de pagos<!-- compensi -->: Permite ingresar, modificar y visualizar los pagos<!-- compensi -->, con la posibilidad de eliminar los incorrectos y gestionar los abonos de las retenciones de manera masiva, evitando modificaciones manuales en cada pago<!-- compenso --> individual​
 
-- **contabilizzazione compensi**: Las compensaciones pueden ser contabilizadas directamente, tanto para la parte fiscal (retenciones, INPS, ENASARCO) como para la gestión de los centros de costo y de lucro de la empresa. Las compensaciones definitivas se ingresan luego en contabilidad.  
+- Contabilización de pagos<!-- compensi -->: Los pagos<!-- compensi --> pueden ser contabilizados directamente, tanto para la parte fiscal (retenciones<!-- ritenute -->, INPS, ENASARCO), como para la gestión de los centros de costo y beneficio de la empresa. Los pagos<!-- compensi --> finales luego se ingresan en la contabilidad​
 
-- **modello f24**: El módulo gestiona el cálculo y la compilación del modelo F24 para el pago de las retenciones y otros tributos, con la posibilidad de proponer automáticamente los datos necesarios gracias a la información ingresada en las compensaciones.
+- Modelo F24: El módulo gestiona el cálculo y la cumplimentación del modelo F24 para el pago de las retenciones<!-- ritenute --> y otros tributos, con la posibilidad de proponer automáticamente los datos necesarios gracias a la información ingresada en los pagos<!-- compensi -->​
 
-**Impresiones Disponibles (Stampe Disponibili)**
 
-- **Impresión de certificación de retenciones (Stampa certificazione ritenute)**: Genera la certificación de las retenciones periódicas a título de anticipo.  
 
-- **situazione ritenute**: Proporciona un resumen de las retenciones pagadas o por pagar, útil para el control interno y la compilación de la Certificación Única.  
+**Impresiones disponibles<!-- Stampe Disponibili -->**
 
-- **Impresión de comisiones (Stampa provvigioni)**: Soporta la gestión de las comisiones acumuladas por los agentes, con filtros por fecha y agente, permitiendo elaborar listas completas.
+- Impresión de certificación de retenciones<!-- Stampa certificazione ritenute -->: Genera la certificación de retenciones<!-- ritenute --> periódicas a cuenta (acumuladas)​
 
-**Procedimientos Principales (Procedure Principali)**
+- Estado de las retenciones<!-- Situazione ritenute -->: Proporciona un resumen de las retenciones<!-- ritenute --> pagadas o a pagar, útil para el control interno y la cumplimentación de la Certificación Única​
 
-- **Gestión de compensaciones y pagos de retenciones (Gestione compensi e versamenti ritenute)**: Permite cargar, modificar y vincular documentos fiscales relacionados con las compensaciones, y gestionar manualmente o de forma masiva los datos del pago.  
+- Impresión de comisiones<!-- Stampa provvigioni -->: Apoya la gestión de las comisiones ganadas por los agentes, con filtros por fecha y agente, permitiendo elaborar listas completas​
 
-- **calcolo provvigioni**: Automatiza el cálculo de las comisiones para los agentes, con la posibilidad de vincular las compensaciones a proyectos o contratos específicos.
 
-**Ventajas del uso del módulo (Vantaggi nell'utilizzo del modulo)**: Este módulo interactúa tanto con el módulo **vendite** para la lectura de las comisiones calculadas de los agentes y la transformación en la Factura del agente, garantizando el cálculo tanto de las retenciones de impuestos como de las contribuciones a la pensión Enasarco, y también con el módulo de Declaraciones fiscales, permitiendo gestionar toda la fiscalidad, hasta la CU (certificación única de las retenciones de impuestos) de manera independiente sin necesidad de recurrir a consultorías externas. El procesamiento de la CU también permite exportar la pista telemática para el envío a la Agencia de Ingresos. Se ha prestado especial atención a la lógica de gestión de las compensaciones y a la realidad italiana, con la posibilidad de ingresar el aviso de factura (de hecho una factura proforma) y proceder al pago, generando la deuda por los pagos fiscales, antes de la contabilización de la factura recibida.
 
-**Tablas y parámetros necesarios para utilizar el módulo (Tabelle e parametri necessari per utilizzare il modulo)**
+**Procedimientos principales<!-- Procedure Principali -->**
 
-Para utilizar el módulo **percipienti** de Fluentis ERP, es necesario gestionar algunas tablas clave para asegurar el correcto funcionamiento del sistema y la alineación de las operaciones contables y fiscales. Entre las principales tablas a configurar se encuentran:
+- Gestión de pagos<!-- compensi --> y abonos de retenciones<!-- versamenti ritenute -->: Permite cargar, modificar y vincular documentos fiscales relativos a los pagos<!-- compensi -->, y gestionar manual o masivamente los datos de los abonos<!-- versamento -->​
 
-- **tipi conto** y **tipi ritenuta**: Esenciales para definir el tipo de retención a aplicar a los diferentes perceptores.  
-- **categorie agenti**: Tabla fundamental para los agentes donde se define la contribución a la pensión y otros contribuciones a las que están sujetos.  
-- **codice tributo**: Necesario para la gestión de las retenciones y los tributos relacionados con las compensaciones.  
-- **modalità di versamento**: Para definir las modalidades de pago de los tributos.  
-- **piano dei conti**: Necesario para asociar los registros contables a las cuentas correctas.  
-- **Tipos de IVA (Aliquote IVA)**: Para la correcta aplicación de los impuestos sobre las compensaciones.  
-- **Causales de contabilidad general y causales de contribución (Causali contabilità generale e causali contributo)**: Utilizadas para clasificar correctamente las operaciones contables relacionadas con las compensaciones de los perceptores.  
-- **Centros de costo/lucro/responsabilidad (Centri di costo/profitto/responsabilità)**: Para asignar los costos y los ingresos a los diferentes centros empresariales.  
-- **Tipos de cambio fijos en euros y tipos de cambio de divisas (Cambi fissi euro e cambi valute)**: Importantes para la gestión de transacciones en diferentes divisas.
+- Cálculo de comisiones<!-- Calcolo provvigioni -->: Automatiza el cálculo de comisiones para los agentes, con la posibilidad de vincular los pagos<!-- compensi --> a proyectos o trabajos<!-- commesse --> específicos​
 
-**Conclusiones (Conclusioni)**
 
-El módulo **percipienti** de Fluentis ERP es una herramienta avanzada para la gestión de los pagos a profesionales y agentes, asegurando la corrección de los pagos fiscales y facilitando la elaboración de documentos oficiales como el modelo F24 y las certificaciones de las retenciones.
+**Ventajas en el uso del módulo**: Este módulo se integra con el módulo de **Ventas<!-- Vendite -->** para la lectura de las comisiones de agentes calculadas y su conversión en factura de agente<!-- Parcella dell'agente -->, garantizando el cálculo tanto de las retenciones de impuestos<!-- ritenute d'acconto -->, como de los aportes a la seguridad social (Enasarco), y también con el módulo de Declaraciones Fiscales permitiendo gestionar toda la fiscalidad, hasta la CU (certificación única de las retenciones de impuestos<!-- certificazione unica delle ritenute d'acconto -->) de forma autónoma sin necesidad de recurrir necesariamente a asesores externos. El procesamiento de la CU también permite exportar el archivo telemático para el envío a la Agencia Tributaria. Se ha prestado especial atención a la lógica de gestión de los pagos<!-- compensi --> y a la realidad italiana, con la posibilidad de introducir el aviso previo de factura<!-- preavviso di parcella --> (de hecho, una factura proforma) y realizar el pago, originando la deuda por las obligaciones fiscales, antes de la contabilización de la factura recibida.
+
+**Tablas y parámetros necesarios para utilizar el módulo**
+
+Para utilizar el módulo Percipienti de Fluentis ERP<!-- Percipienti di Fluentis ERP -->, es necesario gestionar algunas tablas clave para asegurar el correcto funcionamiento del sistema y la alineación de las operaciones contables y fiscales. Entre las principales tablas a configurar se encuentran:
+
+- Tipos de cuenta y **Tipos de retención<!-- Tipi ritenuta -->**: Esenciales para definir la tipología de retención<!-- ritenuta --> a aplicar a los diferentes perceptores.
+- **Categorías de agentes<!-- Categorie Agenti -->**: Tabla fundamental para los agentes donde definir la contribución a la seguridad social y otros aportes a los que están sujetos.
+- Código de tributo: Necesario para la gestión de las retenciones<!-- ritenute --> y tributos vinculados a los pagos<!-- compensi -->.
+- Modalidad de abono<!-- versamento -->: Para definir la forma de pago de los tributos.
+- Plan de cuentas: Necesario para asociar los registros contables a las cuentas correctas.
+- Tipos impositivos de IVA<!-- Aliquote IVA -->: Para la correcta aplicación de impuestos sobre los pagos<!-- compensi -->.
+- Causales de contabilidad general y causales de contribución: Utilizadas para clasificar correctamente las operaciones contables relacionadas con los pagos<!-- compensi --> de los perceptores.
+- Centros de costo/beneficio/responsabilidad: Para asignar los costos e ingresos a los diferentes centros empresariales.
+- Cambios fijos euro y cambios de divisa: Importantes para la gestión de transacciones en diferentes monedas.
+
+
+
+**Conclusiones**
+
+El módulo Percipienti de Fluentis ERP<!-- Percipienti di Fluentis ERP --> es una herramienta avanzada para la gestión de pagos<!-- compensi --> a profesionales y agentes, asegurando la corrección de los abonos fiscales y facilitando la elaboración de documentos oficiales como el modelo F24 y las certificaciones de retenciones<!-- ritenute -->.
+
+
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

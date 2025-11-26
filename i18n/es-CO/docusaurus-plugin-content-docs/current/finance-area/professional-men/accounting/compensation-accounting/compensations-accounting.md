@@ -1,18 +1,21 @@
 ---
-title: contabilizzazione compensi
+title: Contabilización de compensaciones
 sidebar_position: 1
+ai_generated: true
 ---
 
-ENLACE:
+ENLACES:<!-- LINK: -->
 
-** [Filtro (Filtro)](/docs/finance-area/professional-men/accounting/compensation-accounting/filter) **
+** [Filtro](/docs/finance-area/professional-men/accounting/compensation-accounting/filter) **
 
-** [Rollback (Rollback)](/docs/finance-area/professional-men/accounting/compensation-accounting/rollback) **
+** [Reversión](/docs/finance-area/professional-men/accounting/compensation-accounting/rollback) **<!-- Rollback -->
 
  
 
-Con este procedimiento, las compensaciones que se han vuelto definitivas se registran en contabilidad general y en el registro de IVA.  
+ 
 
-Para proceder con la operación, es **obligatorio que la compensación tenga el número y la fecha del documento definitivo** (incluso si la causal vinculada al tipo de retención es una causal no IVA) así como **al menos una fecha de vencimiento** que se deba registrar.  
+Con este procedimiento, las compensaciones<!-- compensi --> que se convierten en definitivas se registran en la contabilidad general<!-- contabilità generale --> y en el registro IVA<!-- registro IVA -->.
 
-En caso de que falten los referencias definitivos, es posible abrir para modificar la compensación directamente desde este formulario, a través del botón correspondiente ![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting/image01.png).
+Para proceder con la operación es **obligatorio que la compensación<!-- compenso --> tenga el número y la fecha de documento definitivo<!-- numero e la data documento definitivo -->** (aunque la causale<!-- causale --> asociada al tipo de retención<!-- tipo ritenuta --> sea una causale<!-- causale --> no IVA) así como **al menos un vencimiento<!-- scadenza -->** que registrar.
+
+En el caso de que falten los datos definitivos, es posible abrir y modificar la compensación<!-- compenso --> directamente desde esta pantalla, a través del botón correspondiente ![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting/image01.png).

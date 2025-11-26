@@ -1,40 +1,41 @@
 ---
-title: verifica avanzamento commesse
+title: Verificación de avance de órdenes de trabajo
 sidebar_position: 6
+ai_generated: true
 ---
 
-Este formulario permite generar el informe que permite visualizar un resumen de todos los documentos relacionados con una misma orden.
+Este formulario permite ejecutar el informe que permite visualizar un resumen de todos los documentos vinculados a una misma orden de trabajo<!-- commessa -->.
 
-Para cada documento también se indica su estado de avance, mediante un cuadrado de color que tiene el siguiente significado:
+Para cada documento también se indica el estado de avance del mismo, mediante un recuadro de color con el siguiente significado:
 
-- **Negro (Nero)** si la orden está en estado *evasa*;  
-- **giallo** si la orden está en estado *esecutiva*;  
-- **verde** si la orden está en estado *lanciata*;  
-- **Verde claro (Verde chiaro)** si la orden está en estado *schedulata*;  
-- **Blanco (Bianco)** en todos los demás casos.
+- **Negro** si la orden de trabajo<!-- commessa --> está en estado *Completada<!-- Evasa -->*;
+- **Amarillo** si la orden de trabajo<!-- commessa --> está en estado *En progreso<!-- Esecutiva -->*;
+- **Verde** si la orden de trabajo<!-- commessa --> está en estado *Lanzada<!-- Lanciata -->*;
+- **Verde claro** si la orden de trabajo<!-- commessa --> está en estado *Planificada<!-- Schedulata -->*;
+- **Blanco** en todos los demás casos.
 
-**filtri**
+**Filtros**
 
-En esta sección es posible filtrar por: tipo de orden de producción, prioridad de aprovisionamiento, fecha de inicio y/o fin de la orden, etc.
+En esta sección es posible filtrar por: tipo de orden de trabajo de producción<!-- tipo di commessa di produzione -->, prioridad de aprovisionamiento, fecha de inicio y/o finalización de la orden de trabajo<!-- commessa -->, etc.
 
-**tipo di stampa**
+**Tipo de impresión**
 
-En esta sección es posible filtrar dependiendo de si la orden está retrasada o vencida, y se puede decidir el nivel de detalle para la impresión (Analítico o Sintético).
+En esta sección es posible filtrar según si la orden de trabajo<!-- commessa --> está retrasada o vencida, y es posible decidir el nivel de detalle a mostrar en la impresión (Analítica o Sintética).
 
-**dettagli**
+**Detalles**
 
-En esta sección se puede decidir si visualizar o no los detalles relacionados con el área de compras, producción y trabajo por encargo, así como decidir si mostrar o no las órdenes de venta y los pedidos planificados.
+En esta sección es posible decidir si mostrar o no los detalles relativos al área de compras, producción y subcontratación<!-- conto lavoro -->, además de decidir si mostrar o no las órdenes de venta<!-- commesse di vendita --> y los pedidos planificados.
 
-**tipo approvvigionamento**
+**Tipo de aprovisionamiento**
 
-En esta sección se puede filtrar en función del tipo de aprovisionamiento del artículo relacionado con la orden presente en los parámetros MRP (Compra, Producción, Trabajo por encargo).
+En esta sección es posible filtrar según el tipo de aprovisionamiento del artículo objeto de la orden de trabajo<!-- commessa --> presente en los parámetros MRP (Compra, Producción, Subcontratación<!-- Conto lavoro -->).
 
-**stato commessa**
+**Estado de la orden de trabajo<!-- Stato commessa -->**
 
-En esta sección se puede filtrar según el estado de la orden de producción (no examinada, programada, lanzada, ejecutiva, cumplida, cerrada, anulada);
+En esta sección es posible filtrar según el estado de la orden de trabajo de producción<!-- commessa di produzione --> (no examinada, planificada, lanzada, en progreso<!-- esecutiva -->, completada<!-- evasa -->, cerrada, anulada);
 
-**ordine**
+**Orden**
 
-En esta sección se puede establecer el orden de agrupamiento de la información que se visualizará en la impresión, eligiendo entre el orden por la orden, el proyecto, la cuenta, el artículo, la fecha de inicio de la orden.
+En esta sección se puede definir el orden de agrupación de la información a mostrar en el informe, eligiendo entre el orden según la orden de trabajo<!-- commessa -->, el proyecto, la cuenta<!-- conto -->, el artículo, la fecha de inicio de la orden de trabajo<!-- commessa -->.
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para cualquier aspecto no detallado en este documento relacionado con el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

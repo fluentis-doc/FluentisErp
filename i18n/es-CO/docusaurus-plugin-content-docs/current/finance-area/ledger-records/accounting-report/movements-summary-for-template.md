@@ -1,30 +1,32 @@
 ---
-title: riepilogo movimenti per causale
+title: Resumen de movimientos por causal
 sidebar_position: 4
+ai_generated: true
 ---
 
-La impresión permite visualizar los movimientos contables filtrando por causa contable.
+La impresión<!-- stampa --> permite visualizar los movimientos contables<!-- movimenti contabili --> filtrando por causal<!-- causale --> de contabilidad<!-- contabilità -->.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image01.png)
 
-También están presentes los filtros habituales sobre los datos principales de los registros contables y, en particular, un widget para buscar los registros que contienen la subcuenta deseada.
+También están disponibles los filtros habituales sobre los datos principales de los asientos contables<!-- registrazioni contabili --> y, en particular, un widget para buscar los asientos<!-- registrazioni --> que contienen el subcuenta<!-- sottoconto --> deseado.
 
-En la parte inferior del formulario hay dos cuadrículas que permiten gestionar un posible agrupamiento de datos dentro de la impresión.
+En la parte inferior del formulario<!-- form --> hay dos cuadrículas que permiten gestionar un eventual agrupamiento de los datos dentro del informe<!-- stampa -->.
 
-A la derecha se proponen los criterios de agrupamiento disponibles, mientras que a la izquierda los activos. Para insertar un agrupamiento, basta con arrastrar de derecha a izquierda el criterio deseado. En caso de que se arrastren más de un criterio, la prioridad de agrupamiento se leerá de arriba hacia abajo.
+A la derecha se muestran los criterios de agrupamiento disponibles, mientras que a la izquierda se encuentran los criterios activos. Para insertar un agrupamiento, simplemente arrastre el criterio deseado de la derecha a la izquierda. Si se arrastran varios criterios, la prioridad de agrupamiento se establece de arriba hacia abajo.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image02.png)
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image03.png)
 
-En la barra de herramientas (ribbon bar) hay algunos comandos para la gestión de agrupamientos:
+En la cinta de opciones<!-- ribbon bar --> hay algunos comandos para la gestión de los agrupamientos:
 
-**cancella**: elimina el agrupamiento seleccionado.
+**Eliminar<!-- Cancella -->**: elimina el agrupamiento seleccionado
 
-**rimuovi raggruppamenti**: elimina todos los agrupamientos presentes (si hay más de uno activo).
+**Quitar agrupamientos<!-- Rimuovi raggruppamenti -->**: elimina todos los agrupamientos presentes (en caso de que haya más de uno activo)
 
-**Mover arriba/abajo (Sposta su /giù)**: mueve el agrupamiento seleccionado hacia arriba o hacia abajo para variar la prioridad de agrupamiento.
+**Mover arriba/abajo<!-- Sposta su /giù -->**: mueve el agrupamiento seleccionado hacia arriba o hacia abajo para cambiar la prioridad de agrupamiento.
 
-:::important Ver También (Vedi Anche)
-[**VIDEO TUTORIALES SOBRE IMPRESIONES CONTABLES (VIDEO TUTORIALS SULLE STAMPE CONTABILI)**](/docs/video/finance/intro)
+
+:::important También ver<!-- Vedi Anche -->
+[**VIDEO TUTORIALES SOBRE LOS INFORMES CONTABLES**](/docs/video/finance/intro)
 :::

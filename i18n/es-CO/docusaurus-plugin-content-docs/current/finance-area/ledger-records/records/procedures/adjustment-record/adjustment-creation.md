@@ -1,98 +1,99 @@
 ---
-title: creazione assestamento
+title: Creación de ajustes
 sidebar_position: 2
+ai_generated: true
 ---
 
-Con este procedimiento se podrán calcular y contabilizar los datos de **provisiones y ajustes (ratei e risconti)** relacionados con los registros contables presentes en la base de datos:
+Con este procedimiento es posible calcular y contabilizar los datos de **acumulaciones y diferimientos<!-- ratei e risconti -->** relativos a las registraciones contables<!-- registrazioni contabili --> presentes en la base de datos:
 
-se trata, por ejemplo, de las correcciones/integraciones (respectivamente ajustes y provisiones) relacionadas con seguros, alquileres, cánones de leasing o asistencia, que tienen la característica de estar relacionadas con un período que cruza el año. Por lo tanto, de acuerdo con la regla contable de la competencia económica, están sujetos a correcciones.
+Se trata, por ejemplo, de las rectificaciones/integraciones (respectivamente diferimientos y acumulaciones<!-- risconti e ratei -->) relativas a seguros, alquileres, cánones de leasing o asistencia, que se caracterizan por corresponder a un periodo que abarca dos ejercicios. Por lo tanto, según la regla contable de competencia económica, están sujetos a rectificaciones.
 
-## Requisitos para utilizar el procedimiento
+## Requisitos para el uso del procedimiento<!-- Requisiti per l'utilizzo della procedura -->
 
-1) Se hayan definido, en la tabla **[Tipos de cuenta](/docs/configurations/tables/finance/account-types)**, tipos de cuenta económicas (llamados, por ejemplo, 'a corregir') que tengan activada la opción ‘**Servicio**'.
+1) Se hayan definido, en la tabla **[Tipos de cuenta](/docs/configurations/tables/finance/account-types)<!-- Tipi conto -->**, tipos de cuentas de resultados (llamados, por ejemplo, ‘a rectificar') que tengan activado el flag ‘**Servicio<!-- Servizio -->**'.
 
-![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/adjustment-creation/image01.png)
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/adjustment-creation/image01.png) 
 
-El cálculo se realiza (así como en los balances intermedios) SOLAMENTE para los subcuentas para las cuales se ha asignado estos tipos de cuenta particulares en el plan de cuentas.
+El cálculo se realiza (así como en los balances intermedios) SOLO para los subcuentas<!-- sottoconti --> para los cuales, en el plan de cuentas<!-- piano dei conti -->, se haya asignado estos tipos de cuenta particulares.
 
-2) Se hayan definido en los **[parámetros de contabilidad](/docs/configurations/parameters/finance/accounting-parameters)** las subcuentas estándar para el registro de los movimientos de provisión/ajuste activos/pasivos.
+2) Se hayan definido en los **[parámetros de contabilidad](/docs/configurations/parameters/finance/accounting-parameters)<!-- parametri di contabilità -->** los subcuentas<!-- sottoconti --> estándar para la contabilización de los movimientos<!-- movimenti --> de acumulación/diferimiento<!-- rateo/risconto -->, activos o pasivos.
 
-:::note
-Se recuerda que a nivel del plan de cuentas, en cada subcuenta de costo/ingreso se pueden especificar subcuentas de provisión/ajuste que serán utilizadas prioritariamente para el registro de la integración o corrección.
+:::note Nota
+Se recuerda que a nivel del plan de cuentas<!-- piano dei conti -->, sobre cada subcuenta<!-- sottoconto --> de coste/ingreso, se pueden indicar subcuentas<!-- sottoconti --> de acumulación/diferimiento<!-- rateo/risconto --> que serán utilizados con prioridad para la contabilización<!-- rilevazione --> de la integración o rectificación.
 :::
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/adjustment-creation/image02.png)
 
-3) Se hayan utilizado correctamente los rangos de fechas para la competencia económica en los movimientos contables.
+3) Se hayan utilizado correctamente los rangos de fechas para la competencia económica en los movimientos<!-- movimenti --> de contabilidad<!-- contabilità -->.
 
-:::note
-Se recomienda configurar los **[parámetros de ingreso](/docs/finance-area/ledger-records/records/ledger-record)** del usuario con la opción ‘Sin fecha para tipo de cuenta de servicio’ con el fin de obligar al usuario a ingresar, cada vez, el rango de fechas económicas válidas para cada movimiento.
+:::note Nota
+Se recomienda configurar los **[parámetros de registro](/docs/finance-area/ledger-records/records/ledger-record)<!-- parametri di inserimento -->** del usuario con la opción ‘Sin fecha para tipo de cuenta de servicio' para obligar al usuario a introducir, cada vez, el rango de fechas económicas<!-- range di date economiche --> válidas para cada movimiento<!-- movimento -->.
 :::
 
-## Gestión
+## Gestión<!-- Gestione -->
 
-### Procedimiento
+### Procedimiento<!-- Procedura -->
 
-- indicar para qué ejercicio contable se desea proceder con el cálculo y la fecha de cálculo (por defecto se propone la fecha actual);  
+- Indicar para qué ejercicio contable<!-- esercizio contabile --> se desea proceder con el cálculo y la fecha de cálculo (por defecto se propone la fecha actual);
 
-- indicar la fecha de registro/competencia que se asignará a los registros contables a crear;  
+- Indicar la fecha de registro/competencia<!-- data registrazione/competenza --> a asignar a las registraciones contables<!-- registrazioni contabili --> que se van a crear;
 
-- indicar las causales contables que se utilizarán para la corrección y la integración.  
+- Indicar las causales contables<!-- causali contabili --> a utilizar para la rectificación y la integración.
 
-La opción de registro único acumulará o no en un único registro todas las correcciones y en otro todas las integraciones.
+La opción de registro único acumulará o no en un solo asiento todas las rectificaciones y en otro todas las integraciones.
 
-![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image01.png)
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image01.png) 
 
-Una vez guardadas estas configuraciones, se activará el botón **Calcular** 
+Una vez guardados estos parámetros, se activará el botón **Calcular<!-- Calcola -->**
 
-que llenará la sección inferior con la lista de ajustes propuestos: dentro de estos se indicará el tipo de operación, las referencias al registro original, el número de días de la corrección y, luego, editables, el monto y la subcuenta de registro.
+que rellenará la sección inferior con la lista de los ajustes propuestos: dentro de estos estará indicada la tipología de operación, las referencias a la registración de origen, el número de días de la rectificación y luego, editables, el importe y la subcuenta<!-- sottoconto --> de contabilización<!-- rilevazione -->.
 
-En el caso de que las causales establecidas prevean la gestión de CDC/CDP y el movimiento de origen tenga los datos correspondientes a corregir/integrar, en la sección inferior también estarán presentes los detalles de los cálculos relacionados.
+En caso de que las causales configuradas contemplen la gestión de cdc/cdp y el movimiento<!-- movimento --> de origen tenga los datos relativos a rectificar/integrar, en la sección inferior también estarán presentes los detalles de los cálculos relacionados.
 
-La fase siguiente será confirmar, fila por fila, que el monto calculado es correcto y completo mediante la imposición del indicador **Controlado**, operación que a su vez activará la modificabilidad y los indicadores de control relativos también de la sección inferior relacionada con los CDC/CDP.
+La siguiente fase será confirmar, línea por línea, que el importe calculado es correcto y completo, activando el flag **Controlado<!-- Controllato -->**, lo que permitirá modificar y revisar los flags de control relacionados con la sección inferior de los cdc/cdp.
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image04.png)
 
-Todas las filas con estado *controlado* serán objeto de la contabilización que se ejecutará al presionar el botón **Contabilizar**.
+Todas las líneas con estado *controlado<!-- controllato -->* serán objeto de contabilización<!-- rilevazione in contabilità --> que se realizará pulsando el botón **Contabilizar<!-- Contabilizza -->**.
 
-El usuario puede proceder a crear múltiples contabilizaciones a medida que se definen los detalles, así como volver a calcular la lista para verificar que no se hayan agregado otras operaciones (típicamente de integración de registros del nuevo ejercicio con competencia anterior) o crear nuevos ajustes para estos. Sin embargo, está presente la **[pestaña de restauración](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)** de la situación anterior.
+El usuario puede proceder a crear varias contabilizaciones a medida que se definen los detalles, así como recalcular la lista para verificar que no se hayan agregado otras operaciones (típicamente integraciones de registros del nuevo ejercicio con competencia anterior), o crear nuevos ajustes<!-- assestamenti --> para estas. En todo caso, existe la **[ficha de restauración](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)<!-- scheda di ripristino -->** de la situación anterior.
 
-:::note
-Se contabilizarán todas las filas con el indicador **Controlado** activado.
+:::note Nota
+Serán contabilizadas todas las filas con el flag **Controlado<!-- Controllato -->** activo.
 :::
 
-En el caso de que se hayan realizado modificaciones en los registros contables después de iniciar el cálculo, podría ser útil utilizar el botón **Verificar cálculo de ajuste**:  
-este botón realizará un nuevo cálculo fila por fila, mostrando cualquier diferencia con respecto a lo que ya se propuso en la cuadrícula (en particular los campos **Ajuste Debe / Haber** y **Nuevo ajuste Debe / Haber**), con un botón para alinear las diferencias o no, que también eliminará filas de corrección/integración vinculadas a movimientos contables que ya no existen (no será posible contabilizar si hay filas con referencias a movimientos que no existen y en tal caso será necesario pasar por esta máscara y eliminarlos).
+En caso de que se hayan realizado modificaciones a las registraciones<!-- registrazioni --> en contabilidad<!-- contabilità --> después de ejecutar el cálculo, puede ser útil utilizar el botón **Verificar cálculo de ajustes<!-- Verifica calcolo assestamento -->**:  
+este botón volverá a calcular línea por línea, mostrando las posibles diferencias respecto a lo ya propuesto en la cuadrícula (en particular los campos **Ajuste Debe/Haber<!-- Assestamento Dare / Avere -->** y **Nuevo ajuste Debe/Haber<!-- Nuovo assestamento Dare / avere -->**), con un botón para alinear o no las diferencias, que también eliminará filas de rectificación/integración vinculadas a movimientos<!-- movimenti --> contables ya inexistentes (no será posible contabilizar si existen registros con referencias a movimientos<!-- movimenti --> inexistentes y en ese caso será necesario pasar por esta máscara y eliminarlos).
 
-:::danger Advertencia
-En el caso de que los ajustes ya se hayan contabilizado, no existe ningún bloqueo para la modificación del movimiento de origen que dio lugar a la corrección; el único bloqueo es la eliminación del registro, lo cual no está permitido. Por lo tanto, se recomienda tener la máxima precaución al modificar registros que estén involucrados en las operaciones de ajuste de fin de año.
+:::danger Atención<!-- Attenzione -->
+En caso de que los ajustes<!-- assestamenti --> ya hayan sido contabilizados, no hay ningún bloqueo para la modificación del movimiento<!-- movimento --> de origen que llevó a la rectificación, el único bloqueo se refiere a la eliminación de la registración<!-- registrazione -->, la cual no está permitida. Por ello, se recomienda la máxima atención al modificar registros involucrados en operaciones de ajuste<!-- assestamento --> de fin de año.
 :::
 
-:::note Nota sobre el procedimiento de **[Cierre automático de cuentas](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**: hay una opción de traspaso automático de las operaciones de ajuste al final de los registros de reapertura de cuentas. Con esta opción, la aplicación procederá a registrar, en la fecha de reapertura, el revocación de los ajustes mientras operará el traspaso de las integraciones a la fecha del registro original del ajuste mismo.
+:::note Nota relativa al procedimiento de **[Cierre automático de cuentas](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)<!-- Chiusura automatica conti -->**: existe una opción de traspaso automático de las operaciones de ajustes<!-- assestamento --> al final de los asientos de reapertura de cuentas<!-- riapertura conti -->. Con esta opción, la aplicación procederá a registrar, en la fecha de reapertura, el extorno de las rectificaciones mientras realizará el traspaso de las integraciones en la fecha de la registración<!-- registrazione --> de origen del propio ajuste<!-- assestamento -->.
 :::
 
-**INDICADOR Registro único (FLAG Singola registrazione)**: con este indicador activado, la contabilización de los ajustes se realiza con un único registro contable (un único número) en lugar de con tantos registros como correcciones deban realizarse.  
-En la fase de reapertura de cuentas, el traspaso para la reapertura de las provisiones y ajustes seguirá la misma configuración.
+**FLAG Registro único<!-- Singola registrazione -->:** con este flag activo, la contabilización<!-- contabilizzazione --> de los ajustes<!-- assestamenti --> se realiza con un único registro contable (un solo número) en lugar de tantos asientos como rectificaciones se deben ejecutar.
+En la reapertura de cuentas<!-- riapertura conti -->, el traspaso de acumulaciones y diferimientos<!-- ratei e risconti --> también seguirá esta configuración.
 
-### GESTIÓN DE FACTURAS POR RECIBIR (GESTIONE FATTURE DA RICEVERE)
+### GESTIÓN DE FACTURAS POR RECIBIR<!-- GESTIONE FATTURE DA RICEVERE -->
 
-En esta sección ilustramos cómo gestionar de manera automatizada la particular situación de las *fatture da ricevere*, es decir, la provisión que debe realizarse al final del año cuando el registro de un costo o de un ingreso de competencia se hará solo en el ejercicio siguiente.
+En esta sección se explica cómo gestionar automáticamente la situación particular de las *Facturas por recibir<!-- Fatture da ricevere -->*, es decir, el reconocimiento a realizar al cierre del ejercicio cuando la registración<!-- registrazione --> de un gasto o ingreso de competencia solo se producirá en el ejercicio siguiente.
 
-En resumen, podemos ver, en las siguientes imágenes, cómo el reconocimiento de esta situación ocurre automáticamente por parte del software y se utiliza la cuenta correspondiente prevista en los parámetros generales de contabilidad.
+En resumen, podemos ver, en las siguientes imágenes, cómo el reconocimiento de esta situación es realizado automáticamente por el software y se utiliza la cuenta<!-- conto --> prevista en los parámetros generales de contabilidad.
 
-Además, es posible personalizar la cuenta a utilizar en relación a cada proveedor o cliente individual.
+También es posible personalizar la cuenta<!-- conto --> a utilizar en relación con cada proveedor o cliente.
 
-De la misma manera, es posible personalizar la cuenta a utilizar para las demás provisiones y ajustes activos y pasivos configurando la cuenta correspondiente en el plan de cuentas junto al costo o ingreso.
+De la misma manera, es posible personalizar la cuenta<!-- conto --> a utilizar para las demás acumulaciones y diferimientos<!-- ratei e risconti --> activos y pasivos, estableciendo la cuenta particular para el coste o ingreso directamente en el plan de cuentas<!-- piano dei conti -->.
 
-#### Situación estándar SIN CONFIGURACIONES ESPECÍFICAS EN EL PROVEEDOR
+#### Situación estándar SIN CONFIGURACIONES ESPECÍFICAS EN EL PROVEEDOR<!-- Situazione standard SENZA IMPOSTAZIONI SPECIFICHE NEL FORNITORE -->
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image08.png)
 
-Y TAMPOCO EN LA CUENTA DE COSTO
+NI TAMPOCO EN LA CUENTA DE COSTO<!-- E NEMMENO NEL CONTO DI COSTO -->
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image09.png)
 
-LAS CONFIGURACIONES SON SOLO A NIVEL DE PARÁMETROS DE CONTABILIDAD
+LAS CONFIGURACIONES SON SOLO A NIVEL DE PARÁMETROS DE CONTABILIDAD<!-- LE IMPOSTAZIONI SONO SOLO A LIVELLO DI PARAMETRI DI CONTABILITA’ -->
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image10.png)
 
@@ -100,7 +101,7 @@ LAS CONFIGURACIONES SON SOLO A NIVEL DE PARÁMETROS DE CONTABILIDAD
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image11.png)
 
-**CASO 2: registro en el año y y competencia toda en el año y-1**
+**CASO 2: registro en el año y y competencia completamente en el año y-1**
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image12.png)
 
@@ -108,38 +109,40 @@ LAS CONFIGURACIONES SON SOLO A NIVEL DE PARÁMETROS DE CONTABILIDAD
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image13.png)
 
-**CASO 4: registros año y con competencia a caballo entre y y-1**
+**CASO 4: registros año y con competencia a caballo entre y y y-1**
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image13.png)
 
-**RESULTADOS**
+**RESULTADOS<!-- RISULTATI -->**
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image15.png)
 
-La fila 1 es la corrección del caso 1, donde todo el costo registrado en el año X es de competencia del ejercicio siguiente X+1: Fluentis utiliza la cuenta de Ajustes activos definida en los parámetros de contabilidad general.  
 
-La fila 2 es la integración del caso 2, donde todo el costo registrado en el año Y es de competencia del ejercicio anterior Y-1: Fluentis utiliza la cuenta de ‘Facturas por recibir’ definida en los parámetros de contabilidad general.  
+Fila 1 es la rectificación del caso 1, donde todo el gasto registrado en el año X corresponde al ejercicio siguiente X+1: Fluentis utiliza la cuenta de Diferimientos Activos<!-- Risconti attivi --> definida en los parámetros de contabilidad general.
 
-La fila 3 es la corrección del caso 3, donde el costo registrado en el año X es solo en parte de competencia del ejercicio siguiente X+1: Fluentis utiliza la cuenta de Ajustes activos definida en los parámetros de contabilidad general.  
+Fila 2 es la integración del caso 2, donde todo el gasto registrado en el año Y corresponde al ejercicio anterior Y-1: Fluentis utiliza la cuenta de *Facturas por recibir<!-- Fatture da ricevere -->* definida en los parámetros de contabilidad general.
 
-La fila 4 es la integración del caso 4, donde el costo registrado en el año Y es solo en parte de competencia del ejercicio anterior Y-1: Fluentis utiliza la cuenta de Provisiones pasivas definida en los parámetros de contabilidad general.  
+Fila 3 es la rectificación del caso 3, donde el coste registrado en el año X solo en parte corresponde al ejercicio siguiente X+1: Fluentis utiliza la cuenta de Diferimientos Activos<!-- Risconti attivi --> definida en los parámetros de contabilidad general.
 
-**CON CONFIGURACIONES ESPECÍFICAS PARA PROVEEDOR/CONTA CONTABLE**
+Fila 4 es la integración del caso 4, donde el coste registrado en el año Y solo en parte pertenece al ejercicio anterior Y-1: Fluentis utiliza la cuenta de Acumulaciones Pasivas<!-- Ratei passivi --> definida en los parámetros de contabilidad general.
+
+**CON CONFIGURACIONES ESPECÍFICAS POR PROVEEDOR/CUENTA CONTABLE<!-- CON IMPOSTAZIONI SPECIFICHE PER FORNITORE/CONTO CONTABILE -->**
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image16.png)
 
+
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image17.png)
 
-**RESULTADO**
+**RESULTADO<!-- RISULTATO -->**
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image18.png)
 
-En lugar de las subcuentas predeterminadas se utilizan las subcuentas personalizadas tomadas de la fila de costo o del proveedor.
+En lugar de los subcuentas<!-- sottoconti --> predeterminados, se utilizan los subcuentas<!-- sottoconti --> personalizados tomados de la fila de costo o del proveedor.
 
-## Restauración (Ripristino)
+## Restauración<!-- Ripristino -->
 
-Hay una pestaña final ‘**Restauración**' para visualizar en vista previa los registros realizados y para anularlos a través del botón correspondiente.
+Existe una ficha final '**Restauración<!-- Ripristino -->**' para previsualizar las registraciones realizadas y para anularlas a través del botón correspondiente.
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/restore-tab/image01.png)
 
-Es posible utilizar los campos de filtro por cuenta / subcuenta y los indicadores adyacentes para seleccionar solo los asientos de integración o solo los asientos de corrección antes de proceder a la restauración.
+Es posible utilizar los campos de filtro por cuenta<!-- conto --> / subcuenta<!-- sottoconto --> y los flags adyacentes para seleccionar solo asientos de integración o solo asientos de rectificación antes de proceder a la restauración.

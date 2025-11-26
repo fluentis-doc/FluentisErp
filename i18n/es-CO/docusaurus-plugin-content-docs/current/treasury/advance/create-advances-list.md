@@ -1,26 +1,27 @@
 ---
-title: crea distinta di anticipo
+title: Crear Lista de Anticipo
 sidebar_position: 3
+ai_generated: true
 ---
 
-Al acceder al formulario para ingresar la nueva lista, es necesario primero insertar el Tipo de lista a través del cuadro combinado correspondiente.
+Al acceder al formulario de inserción de una nueva lista<!-- distinta -->, es necesario primero ingresar el Tipo de lista<!-- Tipo distinta --> mediante la correspondiente lista desplegable.
 
-Todos los datos relacionados con el tipo de lista se cargarán en consecuencia.
+Todos los datos vinculados al tipo de lista<!-- tipo distinta --> se cargarán en consecuencia.
 
-El año se sugiere igual al año en curso, el número se incrementa automáticamente por el sistema a través del numerador.
+El año se propone igual al año en curso, el número se incrementa automáticamente por el sistema a través del numerador.
 
-Es posible ingresar nuevas facturas o nuevas fechas de vencimiento (dependiendo del modo relacionado con el tipo de lista) con los botones ubicados en la barra de herramientas.
+Es posible ingresar nuevas facturas o nuevos vencimientos (dependiendo del modo vinculado al tipo de lista<!-- distinta -->) con los botones situados en la barra de herramientas.
 
 ![](/img/it-it/treasury/advance/create-advances-list/image01.png)
 
-Se abrirá una ayuda que permite filtrar las facturas o fechas de vencimiento a adquirir.
+Se abrirá una ayuda que permite filtrar las facturas o vencimientos a adquirir
 
 ![](/img/it-it/treasury/advance/create-advances-list/image02.png)
 
-Después de la adquisición de la factura o fecha de vencimiento, es posible ingresar manualmente en la línea el monto de las comisiones bancarias.
+Después de la adquisición de la factura o vencimiento, es posible ingresar manualmente en la línea el importe de las comisiones bancarias.
 
-Este dato puede ser automatizado ingresándolo en el registro del banco utilizado para la operación.
+Este dato se puede automatizar ingresándolo en la ficha de la entidad bancaria utilizada para la operación.
 
 ![](/img/it-it/treasury/advance/create-advances-list/image03.png)
 
-Para proceder a contabilizar el anticipo, utilizar el procedimiento correspondiente de Contabilización de la Lista de Anticipos (Contabilizzazione Distinta anticipi).
+Para proceder a contabilizar el anticipo utilize el procedimiento especial de Contabilización de Lista de Anticipos<!-- Contabilizzazione Distinta anticipi -->.

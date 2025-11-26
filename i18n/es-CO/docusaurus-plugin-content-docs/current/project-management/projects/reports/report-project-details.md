@@ -1,28 +1,29 @@
 ---
-title: Impresión de detalles de Proyectos (Stampa dettaglio Progetti)
+title: Impresión detalle Proyectos
 sidebar_position: 2
+ai_generated: true
 ---
 
-En este informe se visualizan todos los documentos vinculados a una línea de proyecto, aunque sean relativos a otras áreas del ERP.  
-Se muestran únicamente los documentos de "último nivel": si el proyecto está incluido en la oferta del proveedor, que ha sido cumplida en un pedido de proveedor, que ha sido cumplido en un DDT de compra, en la impresión solo se mostrará el DDT de compra.  
-Los documentos que se pueden imprimir son: pedidos, DDT, facturas (lado compras y ventas), intervenciones, registros contables. Para que se muestren, es necesario que el proyecto esté indicado también en la cabecera y no solo en las líneas, y que los documentos estén controlados.
+En este informe<!-- report --> se visualizan todos los documentos enlazados a una línea de proyecto<!-- progetto -->, incluso si pertenecen a otras áreas del ERP<!-- ERP -->.  
+Solo se muestran los documentos de "último nivel": si el proyecto<!-- progetto --> está incluido en la oferta del proveedor, que fue completada en un pedido de proveedor, el cual luego fue recibido en una nota de entrega (ddt) de compra, en la impresión solo se mostrará el ddt de compra.  
+Los documentos que pueden imprimirse son: pedidos<!-- ordini -->, ddt, facturas (de compras y ventas), intervenciones, registros contables<!-- registrazioni contabili -->. Para que aparezcan deben tener indicado el proyecto<!-- progetto --> tanto en el encabezado como en las líneas, y los documentos deben estar controlados.
 
-**tipo progetto**: filtro por tipo de proyecto
+**Tipo de Proyecto<!-- Tipo Progetto -->**: filtro por tipo de proyecto<!-- progetto -->
 
-**da data inserimento**: filtro por fecha de ingreso del proyecto
+**Desde Fecha de Inserción<!-- Da Data Inserimento -->**: filtro por fecha de inserción del proyecto<!-- progetto -->
 
-**da data inserimento**: filtro por fecha de ingreso del proyecto
+**Desde Fecha de Inserción<!-- Da Data Inserimento -->**: filtro por fecha de inserción del proyecto<!-- progetto -->
 
-**Desde Fecha de entrega prevista (Da Data prev.consegna)** - **Hasta Fecha de entrega prevista (A Data prev.consegna)**: en el caso de procesamiento con filtro de documentos por "Pedido", se considera la fecha de entrega prevista ingresada en el pedido.
+**Desde Fecha entrega prev.<!-- Da Data prev.consegna -->** - **Hasta Fecha entrega prev.<!-- A Data prev.consegna -->**: en caso de procesar con filtro de documentos por "Pedido<!-- Ordinato -->", se considera la fecha prevista de entrega ingresada en el pedido<!-- ordine -->.
 
-**cliente**: filtro por cliente
+**Cliente**: filtro por cliente
 
-**Impresión de detalles - Artículos (Stampa dettaglio - Articoli)**: es posible elegir si imprimir las líneas individuales del proyecto o solo la **testata**
+**Impresión de detalle<!-- Stampa dettaglio -->** - **Artículos<!-- Articoli -->** es posible elegir si imprimir las líneas individuales del proyecto<!-- progetto --> o solo el **Encabezado<!-- Testata -->**.
 
-**numero**: filtro por proyecto específico
+**Número**: filtro por proyecto<!-- progetto --> específico
 
-**da data conferma** - **a data conferma**: filtro por fecha de confirmación del proyecto.
+**Desde fecha de confirmación<!-- Da data conferma -->** - **Hasta fecha de confirmación<!-- A data conferma -->**: filtro por fecha de confirmación del proyecto<!-- progetto -->.
 
-**articolo**: filtro por artículo específico.
+**Artículo<!-- Articolo -->**: filtro por artículo específico
 
-**filtra documenti per data**: **ordinato** filtra por los pedidos, **fatturato** filtra por las facturas **da data** - **a data**.
+**Filtrar documentos por fecha<!-- Filtra documenti per data -->**: **Pedido<!-- Ordinato -->** filtra por los pedidos<!-- ordini -->, **Facturado<!-- Fatturato -->** filtra por las facturas **Desde fecha<!-- Da data -->** - **Hasta fecha<!-- A data -->**

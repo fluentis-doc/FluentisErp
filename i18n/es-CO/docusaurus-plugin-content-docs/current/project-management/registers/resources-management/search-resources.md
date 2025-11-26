@@ -1,10 +1,11 @@
 ---
-title: Búsqueda de Recursos (Ricerca Risorse)
+title: Búsqueda de Recursos
 sidebar_position: 1
+ai_generated: true
 ---
 
-La búsqueda de **risorse** permite buscar los recursos que ya han sido ingresados.  
-La barra de herramientas (ribbon bar) del formulario de búsqueda representa el menú del formulario en cuestión, es decir, el área donde se pueden realizar acciones. La lista de funcionalidades posibles se presenta a continuación:
+La búsqueda de **Recursos**<!-- Risorse --> permite buscar los recursos<!-- risorse --> ya ingresados.
+La barra ribbon de la ventana de búsqueda representa el menú del formulario en cuestión, es decir, el área en la que es posible ejecutar acciones. La lista de funcionalidades disponibles se presenta a continuación:
 
 import SearchForm from './../../../import/sections/search-form.md'
 

@@ -1,28 +1,29 @@
 ---
-title: tipi effetti
+title: Tipos de efectos
 sidebar_position: 3
+ai_generated: true
 ---
 
-:::tip[Inicio Rápido (FAst Start)]
-La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
+:::tip[FAst Start]
+La tabla está involucrada en el procedimiento de [**Fast Start**](/docs/guide/fast-start)<!-- Fast Start -->
 
-En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
+En caso de que se desee configurar manualmente, consulte la lista de verificación en la página enlazada<!-- check list della pagina linkata -->
 :::
 
-La tabla se completa mediante la imposición de un código y una descripción del usuario, a los cuales se les asignará luego un numerador de referencia, un tipo de efecto entre los predefinidos y, finalmente, una subcuenta de movimiento: esta subcuenta se utilizará en contrapartida al cierre del cliente dentro del procedimiento de contabilización de efectos.
+La tabla se completa asignando un código y una descripción de usuario<!-- utente -->, a los cuales luego debe asignarse un numerador de referencia, un tipo de efecto entre los predefinidos y finalmente un subcuenta<!-- sottoconto --> de movimientos<!-- movimentazione -->: esta subcuenta<!-- sottoconto --> se utilizará como contrapartida para el cierre de cliente dentro del procedimiento de contabilización de efectos<!-- procedura di contabilizzazione effetti -->.
 
-El tipo de efecto puede luego asociarse al tipo de pago en la tabla homónima.
+El tipo de efecto<!-- tipo effetto --> puede luego asociarse al tipo de pago en la tabla homónima.
 
-Cabe señalar, finalmente, que solo los efectos de tipo cambiario podrán ser gestionados en el procedimiento de contabilización de morosidad por cesión del módulo de Morosidad.
+Cabe señalar que solo los efectos de tipo cambiario podrán ser gestionados en los procedimientos de contabilización de impagos<!-- contabilizzazione insoluti --> por cesión del módulo de Impagos<!-- modulo Insoluti -->.
 
-El indicador **gestione importo parziale** permite crear efectos que consumen *parcialmente (parzialmente)* las partidas, indicando el importe. Requiere una gestión manual dentro del efecto.
+El flag **Gestión de importe parcial<!-- Gestione importo parziale -->** permite crear efectos que consumen *parcialmente<!-- parzialmente -->* los documentos pendientes<!-- partite -->, indicando su importe. Prevista una gestión manual dentro del efecto<!-- effetto -->.
 
-:::danger[Atención (Attenzione)]
-Al activar este indicador, el procedimiento de generación automática de efectos desde las partidas (/ facturas) no insertará en el efecto la referencia a la partida; en consecuencia, en la fase de contabilización del efecto no se realizará el cierre de la partida, la cual permanecerá abierta.
+:::danger[Atención]<!-- Attenzione -->
+Al activar este flag, el procedimiento de generación automática del efecto<!-- generazione automatica effetto --> desde los documentos pendientes<!-- partite --> (/ facturas) no incluirá en el efecto<!-- effetto --> la referencia al documento pendiente<!-- partita -->, en consecuencia, en la fase de contabilización del efecto<!-- contabilizzazione effetto --> no se cerrará el documento pendiente<!-- partita --> el cual se mantendrá abierto.
 
-De hecho, la activación del indicador implica (está pensada para) una gestión manual.
+De hecho, la activación del flag supone (está pensada para) una gestión manual
 :::
 
-El enlace **cassa** no está en uso para la localización italiana; sirve para registrar efectos desde los registros de caja.
+El enlace **Caja<!-- Cassa -->** no está en uso para la localización italiana, sirve para registrar en los efectos desde los registradores de caja<!-- registratori di cassa -->.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>

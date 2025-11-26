@@ -1,168 +1,174 @@
 ---
-title: risorse di produzione
+title: Recursos de producción
 sidebar_position: 4
+ai_generated: true
 ---
 
-:::important ¿Para qué sirve? (A cosa serve)
-Los recursos productivos en el sistema MES de Fluentis permiten gestionar todos los parámetros necesarios para la planificación y optimización de las operaciones de producción. A través de una interfaz intuitiva, los usuarios pueden importar diversos tipos de recursos, incluyendo artículos, máquinas, empleados, centros de trabajo y herramientas de medición.
+:::important Para qué sirve<!-- A cosa serve -->
+Los recursos productivos en el sistema MES de Fluentis permiten gestionar todos los parámetros necesarios para la planificación y optimización de las operaciones de producción<!-- operazioni produttive -->. A través de una interfaz intuitiva, los usuarios pueden importar diferentes tipos de recursos<!-- risorse -->, entre los que se encuentran artículos<!-- articoli -->, máquinas, empleados, centros de trabajo y herramientas de medición<!-- strumenti di misura -->.
 
-Además, es posible personalizar el diseño y el comportamiento del centro de trabajo, adaptando el sistema a las necesidades específicas de la empresa, de manera sencilla, rápida y completamente autónoma.
+Además, es posible personalizar el layout y el comportamiento del centro de trabajo<!-- centro di lavoro -->, adaptando el sistema a las necesidades empresariales específicas de manera sencilla, rápida y completamente autónoma.
 
-Esta funcionalidad no solo simplifica la gestión de los recursos de producción, sino que también permite copiar fácilmente configuraciones predeterminadas de recursos existentes, garantizando que los datos estén siempre actualizados y consistentes.
+Esta funcionalidad no solo simplifica la gestión de los recursos de producción, sino que también permite copiar fácilmente configuraciones predeterminadas desde recursos existentes, garantizando que los datos estén siempre actualizados y coherentes.
 :::
 
-A través de esta ventana se configuran todos los parámetros relacionados con la gestión de los recursos de producción dentro del MES.
+A través de esta ventana se configuran todos los parámetros relativos a la gestión de los recursos de producción<!-- risorse di produzione --> dentro del MES.
 
-*Botón específico*:
+*Botón específico*:  
 
-> **importa**: permite importar en la tabla **risorse di produzione** los siguientes tipos de recursos: *articolo*, *macchina*, *dipendente*, *centro di lavoro* y *strumento di misura*; también es posible importar más de uno a la vez simplemente seleccionándolos a través del pop-up *importa*. 
-En caso de que ya haya registros en la tabla y el operador seleccione uno con un cierto tipo de recurso, al presionar el botón *importa*, el procedimiento filtrará por ese mismo tipo de recurso y, además, copiará todas las configuraciones ingresadas en el recurso seleccionado (es decir, el que ya está presente en la cuadrícula de recursos) a los nuevos registros de los recursos insertados con el procedimiento de importación.
+> **Importar<!-- Importa -->**: permite importar dentro de la tabla **Recursos de producción<!-- Risorse di produzione -->** los siguientes tipos de recursos<!-- risorse -->: *Artículo<!-- Articolo -->*, *Máquina<!-- Macchina -->*, *Empleado<!-- Dipendente -->*, *Centro de trabajo<!-- Centro di lavoro -->* y *Herramienta de medición<!-- Strumento di misura -->*; es posible importar más de uno a la vez simplemente seleccionándolos a través del pop-up *Importar<!-- Importa -->*.
+En el caso de que ya existan registros en la tabla y el usuario seleccione uno de cierto tipo de recurso<!-- risorsa -->, al pulsar el botón *Importar<!-- Importa -->* el procedimiento filtrará ya por ese mismo tipo de recurso<!-- risorsa -->, además copiará todas las configuraciones introducidas en el recurso<!-- risorsa --> seleccionado (es decir, el que ya está presente en la cuadrícula de recursos<!-- risorse -->) en los nuevos registros de recursos<!-- risorse --> añadidos con el procedimiento de importación.
 
-### risorse di produzione (Risorse di produzione)
+### Recursos de producción<!-- Risorse di produzione -->
 
-El formulario se compone de una primera cuadrícula que contiene los datos relacionados con los recursos ingresados, entre los cuales: 
-**codice**: indica el código del recurso de producción; 
-**descrizione**: indica la descripción del código del recurso de producción; 
-**tipo di risorsa**: indica el tipo de recurso entre: *dipendente*, *articolo*, *macchina*, *strumento di misura* y *centro di lavoro*; 
-**macchina**: indica el código de la máquina asociada al recurso; está habilitado solo si el *tipo di risorsa* es *macchina*; 
-**descrizione macchina**: indica la descripción de la máquina asociada al recurso; está habilitado solo si el *tipo di risorsa* es *macchina*; 
-**centro di lavoro**: indica el código del centro de trabajo asociado al recurso; está habilitado solo si el *tipo di risorsa* es *centro di lavoro*; 
-**descrizione centro di lavoro**: indica la descripción del centro de trabajo asociado al recurso; está habilitado solo si el *tipo di risorsa* es *centro di lavoro*; 
-**dipendente**: indica el código del empleado asociado al recurso; está habilitado solo si el *tipo di risorsa* es *dipendente*; 
-**cognome**: indica el apellido del empleado asociado al recurso; está habilitado solo si el *tipo di risorsa* es *dipendente*; 
-**nome**: indica el nombre del empleado asociado al recurso; está habilitado solo si el *tipo di risorsa* es *dipendente*; 
-**classe**: indica la clase del artículo asociado al recurso; está habilitado solo si el *tipo di risorsa* es *strumento di misura*; 
-**codice articolo**: indica el código del artículo asociado al recurso; está habilitado solo si el *tipo di risorsa* es *strumento di misura*; 
-**descrizione articolo**: indica la descripción del artículo asociado al recurso; está habilitado solo si el *tipo di risorsa* es *strumento di misura*; 
-**strumento di misura**: indica el código de la herramienta asociada al recurso; está habilitado solo si el *tipo di risorsa* es *strumento di misura*; 
-**secondi di refresh**: indica el número de segundos de refresco de los formularios del MES, por ejemplo: para el refresco de los datos en la pestaña *analisi* o el refresco del tiempo de trabajo automático.
+El formulario se compone de una primera cuadrícula que contiene los datos relativos a los recursos<!-- risorse --> añadidos, entre los que se encuentran:       
+**Código**: indica el código de recurso de producción<!-- codice risorsa di produzione -->;       
+**Descripción**: indica la descripción del código de recurso de producción<!-- descrizione del codice risorsa di produzione -->;      
+**Tipo de recurso**: indica el tipo de recurso<!-- risorsa --> entre: *Empleado<!-- Dipendente -->*, *Artículo<!-- Articolo -->*, *Máquina<!-- Macchina -->*, *Herramienta de medición<!-- Strumento di misura -->* y *Centro de trabajo<!-- Centro di lavoro -->*;         
+**Máquina**: indica el código de la máquina asociada al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Máquina<!-- Macchina -->*;       
+**Descripción de la máquina**: indica la descripción de la máquina asociada al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Máquina<!-- Macchina -->*;     
+**Centro de trabajo**: indica el código del centro de trabajo<!-- centro di lavoro --> asociado al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Centro de trabajo<!-- Centro di lavoro -->*;      
+**Descripción del centro de trabajo**: indica la descripción del centro de trabajo<!-- centro di lavoro --> asociado al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Centro de trabajo<!-- Centro di lavoro -->*;     
+**Empleado**: indica el código del empleado asociado al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Empleado<!-- Dipendente -->*;     
+**Apellido**: indica el apellido del empleado asociado al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Empleado<!-- Dipendente -->*;     
+**Nombre**: indica el nombre del empleado asociado al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Empleado<!-- Dipendente -->*;     
+**Clase**: indica la clase del artículo<!-- articolo --> asociado al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Herramienta de medición<!-- Strumento di misura -->*;       
+**Código de artículo**: indica el código del artículo<!-- articolo --> asociado al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Herramienta de medición<!-- Strumento di misura -->*;       
+**Descripción del artículo**: indica la descripción del artículo<!-- articolo --> asociado al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Herramienta de medición<!-- Strumento di misura -->*;       
+**Herramienta de medición**: indica el código del artículo de equipamiento<!-- articolo attrezzatura --> asociado al recurso<!-- risorsa -->; está habilitado solo si el *Tipo de recurso<!-- Tipo di risorsa -->* es *Herramienta de medición<!-- Strumento di misura -->*;        
+**Segundos de refresco**: indica el número de segundos de refresco de los formularios del MES, por ejemplo: para el refresco de datos en la pestaña *Análisis<!-- Analisi -->* o el refresco del tiempo de trabajo automático.     
 
-A cada recurso ingresado en la cuadrícula superior se le asocian todas las informaciones presentes en las pestañas inferiores.
+A cada recurso<!-- risorsa --> añadido en la cuadrícula superior se asocian todas las informaciones presentes en las pestañas inferiores.
 
-## Generales (Generali)
+## Generales<!-- Generali -->
 
-En esta pestaña hay una serie de informaciones que influyen en el comportamiento del recurso de producción durante las Declaraciones de producción.
+En esta pestaña se encuentran una serie de informaciones que afectan el comportamiento del recurso de producción<!-- risorsa di produzione --> durante las Declaraciones de producción<!-- Dichiarazioni di produzione -->.    
 
-**operatore obbligatorio**: si está activo, obliga al operador a ingresar en el campo *risorsa* del formulario principal de las Declaraciones de producción, un recurso del tipo empleado antes de poder continuar con el resto de las actividades. Este será el empleado que será indicado como operador que realiza la declaración; 
-**password obbligatoria**: si está activo, obliga al operador a ingresar una contraseña para poder continuar; las contraseñas requeridas son en el siguiente orden: la contraseña presente en el formulario del [Empleado (Dipendente)](/docs/project-management/registers/employee/new-employee/) y si no está presente, se solicitará la contraseña del sistema. Si ambas no están presentes, se solicitará ingresar una. 
+**Operador obligatorio**: si está activo, obliga al operador a introducir en el campo *Recurso<!-- Risorsa -->* del formulario principal de las Declaraciones de producción<!-- Dichiarazioni di produzione -->, un recurso de tipo empleado<!-- dipendente --> antes de poder continuar con el resto de actividades. Este será el empleado<!-- dipendente --> que se indicará como operador que realiza la declaración;         
+**Contraseña obligatoria**: si está activo, obliga al operador a introducir una contraseña para poder continuar; las contraseñas solicitadas son en el siguiente orden: la contraseña presente en el formulario del [Empleado<!-- Dipendente -->](/docs/project-management/registers/employee/new-employee/) y, si no existe, se solicita la contraseña del sistema. Si ninguna está presente, se solicita introducir una nueva.
 :::note Nota
-En caso de que ambos indicadores **operatore obbligatorio** y **password obbligatoria** estén habilitados, el operador deberá ingresar primero al empleado y luego, a solicitud del procedimiento, la contraseña.
-::: 
-**squadra obbligatoria**: si está activo, habilita un control que obliga al operador a ingresar al menos un miembro del equipo antes de continuar con la actividad de declaración; 
-**Permitir señalización superpuesta (Consenti segnalazione sovrapposta)**: si está activo, es posible declarar las fases de un pedido de producción sin seguir la secuencia prevista indicada en el ciclo; si no se activa, no se podrá realizar ninguna superposición de fases o declarar fases sin seguir la secuencia del ciclo; 
-**abilita multi-fase**: si está activo, permite habilitar la posibilidad de realizar declaraciones de más fases simultáneamente; 
-**numero massimo di fasi**: permite indicar el número máximo de fases que se pueden declarar simultáneamente; 
-**inserimento tempo manuale**: si está activo, habilita la entrada del tiempo de trabajo por parte del operador; 
-**tempo proposto**: si está activo, habilita que la entrada del tiempo de trabajo se proponga automáticamente; 
-**Método de distribución de tiempo (Metodo di ripartizione tempo)**: indica la forma en que se distribuye el tiempo en caso de declaración simultánea de más fases de trabajo. Los métodos activos son: *sequenza*: el tiempo se distribuye entre las fases en trabajo según la secuencia planificada o de ingreso, *proporzionale*: el tiempo se distribuye proporcionalmente según la cantidad producida de la declaración y las cantidades a producir de cada fase; 
-**metodo di ripartizione quantità**: indica la forma en que se distribuye la cantidad en caso de declaración simultánea de más fases de trabajo. Los métodos activos son: *sequenza*: la cantidad se distribuye entre las fases en trabajo según la secuencia planificada o de ingreso, *proporzionale*: la cantidad se distribuye proporcionalmente según la cantidad producida de la declaración y las cantidades a producir de cada fase; *manuale* permite indicar las cantidades producidas manualmente en cada fase; 
-**dichiarazione quantità materiale obbligatoria**: si está activo, junto con el indicador **obbligo dichiarazione materiale manuale** presente en los [Parámetros MRP (Parametri MRP)](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del artículo, asegura que en la pestaña *materiali* de las Declaraciones de producción el artículo se proponga con cantidad cero y por lo tanto, el usuario estará obligado a ingresar manualmente un valor antes de poder continuar; 
-**foglio di lavoro obbligatorio**: si está activo, habilita un control que impide al operador agregar una fase que aún no tenga habilitado el indicador "Impresión definitiva". Este indicador de "Impresión definitiva" puede ser habilitado por el procedimiento de impresión del [Hoja de trabajo (Foglio di lavoro)](/docs/production/pp-production-in-progress/reports/worksheet); 
-**stampa etichette obbligatoria**: si está activo, habilita un control que obliga al operador a imprimir todas las etiquetas antes de continuar con la actividad de declaración; 
-**difetto obbligatorio se dichiarato scarto**: si está activo, habilita un control que obliga al operador a ingresar el tipo de defecto en caso de que ingrese una cantidad desechada; 
-**registrazione automatica**: si está activo, permite crear el registro de almacén automáticamente al confirmar la declaración. 
+En el caso de que ambos flags **Operador obligatorio** y **Contraseña obligatoria** estén habilitados, el operador deberá introducir primero el empleado<!-- dipendente --> y después, cuando el procedimiento lo solicite, la contraseña.
+:::
+**Equipo obligatorio**: si está activo, activa un control que obliga al operador a introducir al menos un miembro del equipo antes de continuar con la actividad de declaración;     
+**Permitir reporte superpuesto**: si está activo, es posible declarar las fases de una orden de producción<!-- ordine di produzione --> sin seguir la secuencia prevista indicada en el ciclo; si no está activo, no es posible realizar ninguna superposición de fases ni declarar fases sin seguir la secuencia del ciclo;    
+**Habilitar multi-fase**: si está activo, permite habilitar la posibilidad de declarar varias fases simultáneamente.         
+En este caso el tiempo se divide entre las distintas fases de la siguiente manera: si se declara una cantidad (producida o descartada), entonces el tiempo de cada fase se calcula con la siguiente fórmula:             
+"**(Tiempo declarado / cantidad total (producida + descartada)) x cantidad declarada (producida + descartada) de cada fase = Tiempo de la fase**"           
+si por el contrario no se declara ninguna cantidad, solo el tiempo, entonces se calcula con la fórmula:              
+"**Tiempo declarado / número de fases = Tiempo de la fase**"       
+**Número máximo de fases**: permite indicar el número máximo de fases que se pueden declarar simultáneamente;    
+**Entrada de tiempo manual**: si está activo, habilita la entrada manual del tiempo de trabajo por parte del operador;     
+**Tiempo propuesto**: si está activo, la entrada del tiempo de trabajo se sugiere automáticamente;         
+**Método de reparto de cantidad**: indica la modalidad en la que se reparte la cantidad en caso de declaración simultánea de varias fases de trabajo. Las modalidades disponibles son: *Secuencia*: la cantidad se reparte sobre las fases en trabajo según la secuencia planificada o de inserción, *Proporcional*: la cantidad se reparte de forma proporcional según la cantidad producida de la declaración y las cantidades a producir de cada fase; *Manual* permite indicar las cantidades producidas manualmente en cada fase;     
+**Segundos de refresco**: indica el tiempo de refresco del formulario, si no se indica, el formulario se actualizará solo manualmente por el operador.             
+**Declaración de cantidad de material obligatoria**: si está activo, junto con el flag **Obligación de declaración manual de material** presente en los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del artículo<!-- articolo -->, hace que en la pestaña *Materiales* de las Declaraciones de producción<!-- Dichiarazioni di produzione --> el artículo<!-- articolo --> aparezca con cantidad cero y por lo tanto el usuario estará obligado a introducir manualmente un valor antes de continuar;    
+**Hoja de trabajo obligatoria**: si está activo, activa un control que impide al operador añadir una fase que todavía no tenga habilitado el flag de "Impresión definitiva". Este flag de "Impresión definitiva" puede habilitarse desde el procedimiento de impresión de la [Hoja de trabajo<!-- Foglio di lavoro -->](/docs/production/pp-production-in-progress/reports/worksheet);    
+**Impresión de etiquetas obligatoria**: si está activo, se habilita un control que obliga al operador a imprimir todas las etiquetas antes de proceder con la actividad de declaración;    
+**Defecto obligatorio si se declara descarte**: si está activo, se habilita un control que obliga al operador a introducir el tipo de defecto en caso de que se introduzca una cantidad descartada;    
+**Registro automático**: si está activo, permite crear la registración de inventario<!-- registrazione di magazzino --> de forma automática al confirmar la declaración;    
+**Importar todas las fases del grupo**: si está activo, también el flag homónimo presente en la *ayuda de fases* de la pestaña *producción* del MES queda activo por defecto. Así, si el usuario selecciona una fase perteneciente a un grupo y la añade, también se añadirán todas las demás fases pertenecientes al grupo.      
 
-### *Gestión documental* (Gestione documentale)
-**Tipo de origen de documento a excluir (Tipo origine documento da escludere)**: esta tabla está relacionada con la pestaña *documenti e istruzioni operative* de Fluentis MES y permite definir qué tipos de documentos deben ser excluidos; de esta manera, los archivos adjuntos a estos tipos de documentos no se visualizarán en la pestaña *documenti e istruzioni operative*. 
-Los tipos de documentos que se pueden excluir son: 
-> *nessuna*: ninguno de los tipos de documentos está excluido; 
-> *articolo*: todos los documentos (archivos, imágenes,...) relacionados con el artículo no se visualizarán en la pestaña *documenti e istruzioni operative*; 
-> *ordine cliente*: todos los documentos (archivos, imágenes,...) relacionados con el pedido del cliente no se visualizarán en la pestaña *documenti e istruzioni operative*; 
-> *commessa*: todos los documentos (archivos, imágenes,...) relacionados con el trabajo no se visualizarán en la pestaña *documenti e istruzioni operative*; 
-> *ordine di produzione*: todos los documentos (archivos, imágenes,...) relacionados con la orden de producción no se visualizarán en la pestaña *documenti e istruzioni operative*; 
-> *fase ordine di produzione*: todos los documentos (archivos, imágenes,...) relacionados con una fase específica de una orden de producción (dentro de la pestaña *documenti allegati* relacionada con la fase) no se visualizarán en la pestaña *documenti e istruzioni operative*. 
+### *Gestión documental*<!-- Gestione documentale -->
+**Tipo de origen de documento a excluir**: esta tabla está vinculada a la pestaña *Documentos e Instrucciones operativas* de Fluentis MES y permite definir qué tipos de documentos deben excluirse; de este modo, los archivos adjuntos a este tipo de documentos no aparecerán en la pestaña *Documentos e Instrucciones operativas*.     
+Los tipos de documento que se pueden excluir son: 
+> *Ninguno*: ninguno de los tipos de documento es excluido;   
+> *Artículo<!-- Articolo -->*: todos los documentos (archivos, imágenes,...) relacionados con el artículo<!-- articolo --> no aparecerán en la pestaña *Documentos e Instrucciones operativas*;     
+> *Orden de cliente*: todos los documentos (archivos, imágenes,...) relacionados con la orden de cliente no aparecerán en la pestaña *Documentos e Instrucciones operativas*;      
+> *Orden de trabajo<!-- Commessa -->*: todos los documentos (archivos, imágenes,...) relacionados con la orden de trabajo<!-- commessa --> no aparecerán en la pestaña *Documentos e Instrucciones operativas*;   
+> *Orden de producción*: todos los documentos (archivos, imágenes,...) relacionados con la orden de producción no aparecerán en la pestaña *Documentos e Instrucciones operativas*;
+> *Fase de orden de producción*: todos los documentos (archivos, imágenes,...) relacionados con cada fase de una orden de producción (dentro de la pestaña *Documentos adjuntos* relativa a la fase) no aparecerán en la pestaña *Documentos e Instrucciones operativas*.          
 
-### *Controles de calidad* (Controlli Qualità)
-Contiene una serie de controles relacionados con la pestaña *Control de calidad (Controllo qualità)* de Fluentis MES. 
-**tipo controllo da considerare**: es el documento de tipo de control de artículos donde se almacenarán los valores registrados; 
-**dettaglio articolo da considerare**: es el máximo detalle del artículo que se considerará para realizar las pruebas (Ninguno, Lote, S.N., U.D.C.); 
-**la fase è bloccabile**: al primer valor no conforme o a la media de los valores registrados no conformes, la fase misma y las fases siguientes se bloquean hasta que sean desbloqueadas por un operador habilitado. En este caso se utilizará la **causale di sospensione blocco fase** indicada en la sección dedicada a las causas de suspensión. 
+### *Controles de Calidad*<!-- Controlli Qualità -->
+Contiene una serie de controles vinculados a la pestaña *Control de calidad* de Fluentis MES.     
+**Tipo de control a considerar**: es el tipo de documento para el control de artículos<!-- articoli --> en el que se guardarán los valores registrados;      
+**Detalle de artículo a considerar**: es el máximo nivel de detalle del artículo<!-- articolo --> a considerar para los test (Ninguno, Lote, Nº de serie, UDC);     
+**La fase es bloqueable**: ante el primer valor no conforme o al promedio de los valores detectados no conformes, la propia fase y las posteriores quedan bloqueadas hasta que un operador habilitado las desbloquee. En este caso se utilizará la **Causal de suspensión de bloqueo de fase** indicada en la sección dedicada a las causales de suspensión.        
 
-### *Causas de suspensión* (Causali di sospensione)
-**causali di sospensione da escludere**: en esta tabla se pueden indicar todas las causas de suspensión que se desean excluir dentro de Fluentis MES.
+### *Causas de suspensión*<!-- Causali di sospensione -->       
+**Causas de suspensión<!-- causali di sospensione --> a excluir**: en esta tabla es posible indicar todas las causales de suspensión<!-- causali di sospensione --> que se quieran excluir dentro de Fluentis MES.
 
-**causale di sospensione proposta**: indica la causa de suspensión que se utiliza por defecto en caso de que un operador cree una suspensión sin indicar una causa de suspensión en el campo correspondiente en la pestaña *produzione* de Fluentis MES.
+**Causal de suspensión sugerida**: indica la causal de suspensión<!-- causale di sospensione --> que se utiliza por defecto en caso de que un operador cree una suspensión sin indicar una causal de suspensión<!-- causale di sospensione --> en el campo correspondiente de la pestaña *Producción* de Fluentis MES.
 
-**interruzione automatica**: si está habilitado, permite activar las interrupciones automáticas de las declaraciones según los horarios indicados en el centro de trabajo; 
-**causale di sospensione pausa notturna**: indica la causa de suspensión que se utiliza para crear la suspensión por la pausa nocturna; 
-**causale di sospensione pausa pranzo**: indica la causa de suspensión que se utiliza para crear la suspensión por la pausa de almuerzo; 
-**causale di sospensione blocco fase**: indica la causa de suspensión que se utiliza para bloquear las fases en caso de no conformidad en los controles de calidad. 
+**Interrupción automática**: si está habilitada, permite activar las interrupciones automáticas de las declaraciones según los horarios indicados en el centro de trabajo<!-- centro di lavoro -->;        
+**Causal de suspensión por pausa nocturna**: indica la causal de suspensión<!-- causale di sospensione --> que se utiliza para generar la suspensión por pausa nocturna;      
+**Causal de suspensión por pausa de almuerzo**: indica la causal de suspensión<!-- causale di sospensione --> para registrar la suspensión por pausa de almuerzo;      
+**Causal de suspensión de bloqueo de fase**: indica la causal de suspensión<!-- causale di sospensione --> que se utiliza para bloquear las fases en caso de no conformidad en los controles de calidad.      
 
-## Diseño (Layout)
+## Layout
 
-*Botones específicos*:
+*Botones específicos*:  
 
-> **layout completo**: permite activar el diseño completo de la interfaz MES con un solo clic; 
-> **layout minimo**: permite activar el diseño mínimo de la interfaz MES con un solo clic; 
+> **Layout completo**: permite activar el layout completo de la interfaz MES con un solo clic;           
+> **Layout mínimo**: permite activar el layout mínimo de la interfaz MES con un solo clic;               
 
-En esta pestaña hay una serie de informaciones que influyen en el diseño del recurso de producción durante las Declaraciones de producción.
+En esta pestaña se encuentran una serie de informaciones que afectan el layout del recurso de producción<!-- risorsa di produzione --> durante las Declaraciones de producción<!-- Dichiarazioni di produzione -->.      
 
-**sequenza tabulatori** 
-Esta sección permite definir si una pestaña es visible o no, además, también se puede variar su secuencia; 
+**Secuencia de pestañas**       
+Esta sección permite definir si una pestaña será visible o no, también es posible modificar su secuencia;    
 
-**non visualizzare**
-Esta sección permite ocultar varias informaciones no necesarias dentro de Fluentis MES.
+**No mostrar**        
+Esta sección permite ocultar varias informaciones innecesarias dentro de Fluentis MES.
 
-### **Generale (General)**
-> *gruppo*: si está activo, oculta la información relacionada con el grupo; 
-> *sequenza*: si está activo, oculta la información relacionada con la secuencia; 
-> *sottofase*: si está activo, oculta la información relacionada con la subfase; 
-> *centro di lavoro*: si está activo, oculta la información relacionada con el centro de trabajo; 
-> *macchina*: si está activo, oculta la información relacionada con la máquina; 
-> *gruppo manodopera*: si está activo, oculta la información relacionada con el grupo de mano de obra; 
-> *date previste*: si está activo, oculta la información relacionada con las fechas previstas; 
-> *variante*: si está activo, oculta la información relacionada con la variante; 
-> *ordine di produzione*: si está activo, oculta la información relacionada con la orden de producción; 
-> *commessa*: si está activo, oculta la información relacionada con el trabajo; 
-> *progetto*: si está activo, oculta la información relacionada con el proyecto; 
-> *lotti*: si está activo, oculta la información relacionada con la gestión de lotes; 
-> *serial number*: si está activo, oculta la información relacionada con la gestión de números de serie; 
-> *UDC*: si está activo, oculta la información relacionada con la gestión de UDC; 
+### **General**
+> *Grupo*: si está activo, oculta la información relativa al grupo;     
+> *Secuencia*: si está activo, oculta la información relativa a la secuencia;     
+> *Subfase*: si está activo, oculta la información relativa a la subfase;     
+> *Centro de trabajo*: si está activo, oculta la información relativa al centro de trabajo<!-- centro di lavoro -->;     
+> *Máquina*: si está activo, oculta la información relativa a la máquina;     
+> *Grupo de mano de obra*: si está activo, oculta la información relativa al grupo de mano de obra;     
+> *Fechas previstas*: si está activo, oculta la información relativa a las fechas previstas;     
+> *Variante*: si está activo, oculta la información relativa a la variante;     
+> *Orden de producción*: si está activo, oculta la información relativa a la orden de producción;    
+> *Orden de trabajo<!-- Commessa -->*: si está activo, oculta la información relativa a la orden de trabajo<!-- commessa -->;    
+> *Proyecto*: si está activo, oculta la información relativa al proyecto;    
+> *Lotes*: si está activo, oculta la gestión de lotes;    
+> *Serial number*: si está activo, oculta la gestión de números de serie;    
+> *UDC*: si está activo, oculta la gestión de UDC;    
+  
+### **Artículos producidos**
+> *Almacén de depósito*: si está activo, oculta la información relativa al almacén<!-- magazzino --> de depósito de los artículos<!-- articoli --> producidos en la pestaña *Producción*;    
+> *Causal de depósito*: si está activo, oculta la información relativa a la causal<!-- causale --> de depósito de los artículos<!-- articoli --> producidos en la pestaña *Producción*;    
+> *Ubicación de depósito*: si está activo, oculta la información relativa a la ubicación de depósito de los artículos<!-- articoli --> producidos en la pestaña *Producción*;    
+> *Almacén de depósito de descarte*: si está activo, oculta la información relativa al almacén<!-- magazzino --> de depósito de descartes de los artículos<!-- articoli --> producidos en la pestaña *Producción*;     
+> *Causal de depósito de descarte*: si está activo, oculta la información relativa a la causal<!-- causale --> de depósito de descartes de los artículos<!-- articoli --> producidos en la pestaña *Producción*;     
+> *Ubicación de depósito de descarte*: si está activo, oculta la información relativa a la ubicación de depósito de descartes de los artículos<!-- articoli --> producidos en la pestaña *Producción*;     
+> *Cantidad alternativa*: si está activo, oculta la gestión de la cantidad alternativa;  
 
-### **articoli prodotti**
-> *magazzino versamento*: si está activo, oculta la información relacionada con el almacén de ingreso de los artículos producidos en la pestaña *produzione*; 
-> *causale versamento*: si está activo, oculta la información relacionada con la causa de ingreso de los artículos producidos en la pestaña *produzione*; 
-> *ubicazione versamento*: si está activo, oculta la información relacionada con la ubicación de ingreso de los artículos producidos en la pestaña *produzione*; 
-> *magazzino versamento scarto*: si está activo, oculta la información relacionada con el almacén de ingreso de desecho de los artículos producidos en la pestaña *produzione*; 
-> *causale versamento scarto*: si está activo, oculta la información relacionada con la causa de ingreso de desecho de los artículos producidos en la pestaña *produzione*; 
-> *ubicazione versamento scarto*: si está activo, oculta la información relacionada con la ubicación de ingreso de desecho de los artículos producidos en la pestaña *produzione*; 
-> *quantità alternativa*: si está activo, oculta la información relacionada con la gestión de la cantidad alternativa; 
+### **Materiales**
+> *Almacén de extracción*: si está activo, oculta la información relativa al almacén<!-- magazzino --> de descarga de materiales en la pestaña *Materiales*;    
+> *Causal de extracción*: si está activo, oculta la información relativa a la causal<!-- causale --> de descarga de materiales en la pestaña *Materiales*;    
+> *Almacén de descarga de descartes*: si está activo, oculta la información relativa al almacén<!-- magazzino --> de descarga de descartes de los materiales en la pestaña *Materiales*;    
+> *Causal de descarga de descartes*: si está activo, oculta la información relativa a la causal<!-- causale --> de descarga de descartes de los materiales en la pestaña *Materiales*;    
 
-### **materiali**
-> *magazzino prelievo*: si está activo, oculta la información relacionada con el almacén de extracción de materiales en la pestaña *materiali*; 
-> *causale prelievo*: si está activo, oculta la información relacionada con la causa de extracción de materiales en la pestaña *materiali*; 
-> *magazzino versamento scarto*: si está activo, oculta la información relacionada con el almacén de ingreso de desecho de los materiales en la pestaña *materiali*; 
-> *causale versamento scarto*: si está activo, oculta la información relacionada con la causa de ingreso de desecho de los materiales en la pestaña *materiali*; 
+### **Controles de calidad**
 
-### **controlli qualità**
+> **Secuencia**: si está activo, oculta la información relativa a la secuencia en la pestaña *Controles de calidad*;     
+> **Tipo de prueba**: si está activo, oculta la información relativa al tipo de prueba en la pestaña *Controles de calidad*;     
+> **Instrumentos de medición**: si está activo, oculta la información relativa a la categoría de instrumento de medición y a los instrumentos de medición<!-- strumenti di misura --> en la pestaña *Controles de calidad*;      
+> **Límites de tolerancia**: si está activo, oculta la información relativa a los límites de tolerancia (L.min.(toll-), L.min.(toll+), L.max.(toll-) y L.max.(toll+)) en la pestaña *Controles de calidad*;     
+> **Tipo de control y Frecuencia**: si está activo, oculta la información relativa al tipo de control de prueba y frecuencia en la pestaña *Controles de calidad*;        
+> **Almacén**: si está activo, oculta la información relativa al almacén<!-- magazzino --> en la pestaña *Controles de calidad*;         
+> **Causal**: si está activo, oculta la información relativa a la causal<!-- causale --> de inventario para artículos<!-- articoli --> no conformes en la pestaña *Controles de calidad*;       
 
-> **sequenza**: si está activo, oculta la información relacionada con la secuencia en la pestaña *controlli qualità*; 
-> **tipo di prova**: si está activo, oculta la información relacionada con el tipo de prueba en la pestaña *controlli qualità*; 
-> **strumenti di misura**: si está activo, oculta la información relacionada con la categoría de herramienta de medición y las herramientas de medición en la pestaña *controlli qualità*; 
-> **limiti tolleranze**: si está activo, oculta la información relacionada con los límites de tolerancia (L.min.(toll-), L.min.(toll+), L.max.(toll-) y L.max.(toll+)) en la pestaña *controlli qualità*; 
-> **tipo controllo e frequenza**: si está activo, oculta la información relacionada con el tipo de control de prueba y la frecuencia en la pestaña *controlli qualità*; 
-> **magazzino**: si está activo, oculta la información relacionada con el almacén en la pestaña *controlli qualità*; 
-> **causale**: si está activo, oculta la información relacionada con la causa de almacén para artículos no conformes en la pestaña *controlli qualità*; 
+### **Otro**
 
-### **altro**
+*Producción*
+> *Widget de máquina*: si está activo, oculta la información relativa a la máquina en la pestaña *Producción*;    
+> *Defecto*: si está activo, oculta la información relativa al defecto en la pestaña *Producción*;    
+> *Causal de suspensión*: si está activo, oculta la información relativa a la causal de suspensión en la pestaña *Producción*;       
 
-*produzione*
-> *widget macchina*: si está activo, oculta la información relacionada con la máquina en la pestaña *produzione*; 
-> *difetto*: si está activo, oculta la información relacionada con el defecto en la pestaña *produzione*; 
-> *causale sospensione*: si está activo, oculta la información relacionada con la causa de suspensión en la pestaña *produzione*; 
+*Equipo*
+> *Operadores ya no activos*: si está activo, oculta la cuadrícula relativa al *Listado de operadores ya no activos* en la pestaña *Equipo*;    
 
-*squadra*
-> *operatori non più attivi*: si está activo, oculta la cuadrícula relativa a la *elenco operatori non più attivi* en la pestaña *squadra*; 
+*Notas*
+> *Listado de notas*: si está activo, oculta la cuadrícula relativa a los *Documentos adjuntos a la señalización de la fase seleccionada* en la pestaña *Documentos e Instrucciones operativas* dentro de la pestaña *Notas*;    
 
-*note*
-> *elenco note*: si está activo, oculta la cuadrícula relativa a los *Documentos adjuntos a la señalización de la fase seleccionada* en la pestaña *documenti e istruzioni operative* en la pestaña *note*; 
+*Análisis*      
+> *OEE*: si está activo, oculta los gráficos OEE en la pestaña *Análisis*;    
+> *Gráficos*: si está activo, oculta los gráficos de barras (*Análisis de cantidad*, *Análisis de tiempo*) en la pestaña *Análisis*;    
+> *Cuadrículas*: si está activo, oculta las tablas (*Valores de cantidad*, *Valores de tiempo*) en la pestaña *Análisis*.      
 
-*analisi* 
-> *oee*: si está activo, oculta los gráficos OEE en la pestaña *analisi*; 
-> *grafici*: si está activo, oculta los gráficos de barras (*analisi quantità*, *analisi tempo*) en la pestaña *analisi*; 
-> *griglie*: si está activo, oculta las tablas (*valori quantità*, *Valores de tiempo (Valori tempo)*) en la pestaña *analisi*. 
+*Extra Data*
+> *Listado extra data*: si está activo, oculta la cuadrícula relativa al *Listado extra data (seleccione una fase)* en la pestaña *Extra data*;     
 
-*extra data*
-> *elenco extra data*: si está activo, oculta la cuadrícula relativa a la *Lista de datos adicionales (selecione una fase)* en la pestaña *extra data*; 
-
-Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

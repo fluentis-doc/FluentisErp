@@ -1,34 +1,34 @@
 ---
-title: registrazione dichiarazioni
+title: Registro de declaraciones
 sidebar_position: 1
+ai_generated: true
 ---
 
-:::important ¿Para qué sirve? (A cosa serve)
-El procedimiento de registro de declaraciones de producción en Fluentis permite registrar múltiples declaraciones simultáneamente.
+:::important Para qué sirve<!-- A cosa serve -->
+El procedimiento de registro de declaraciones de producción en Fluentis permite registrar varias declaraciones simultáneamente.
 :::
 
 ## Filtro
 
-En esta pestaña es posible visualizar la lista de las declaraciones de producción que aún no han sido registradas y se pueden filtrar a través de una serie de criterios de selección.
+En esta pestaña es posible visualizar la lista de reportes de producción aún no registrados, y se pueden filtrar mediante una serie de criterios de selección.
 
-Una vez establecidos todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** presente en la *barra de herramientas (ribbon bar)* para visualizar los resultados dentro de la cuadrícula de resultados.
+Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **Buscar<!-- Ricerca -->** ubicado en la *ribbon bar* para visualizar los resultados dentro de la cuadrícula de resultados.
 
-*Botones específicos*: 
+*Botones específicos*:
 
-> **registrazione dichiarazioni**: este botón permite registrar todas las declaraciones seleccionadas por el usuario en la cuadrícula inferior.
+> **Registro de declaraciones<!-- Registrazione dichiarazioni -->**: este botón permite registrar todas las declaraciones seleccionadas por el usuario en la cuadrícula inferior.
 
+## Resumen<!-- Riepilogativa -->
 
-## Resumen (Riepilogativa)
+En esta pestaña es posible restaurar los registros efectuados y se pueden filtrar mediante una serie de criterios de selección.
 
-En esta pestaña es posible restaurar las registraciones realizadas y se pueden filtrar a través de una serie de criterios de selección.
+Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **Buscar<!-- Ricerca -->** ubicado en la *ribbon bar* para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Una vez establecidos todos los filtros deseados, solo es necesario hacer clic en el botón **ricerca** presente en la *barra de herramientas (ribbon bar)* para visualizar los resultados dentro de la cuadrícula de resultados.
+Al seleccionar un registro, en la pestaña inferior **declaraciones<!-- dichiarazioni -->** se pueden visualizar las declaraciones registradas asociadas y, para cada una de ellas, en la pestaña **Registro de almacén<!-- Registrazione di magazzino -->**, los correspondientes movimientos de almacén<!-- movimenti di magazzino -->.
 
-Al seleccionar un registro, en la pestaña inferior **dichiarazioni** es posible visualizar las declaraciones registradas correspondientes y para cada una de ellas, en la pestaña **registrazione di magazzino**, los movimientos de almacén correspondientes.
+*Botones específicos*:
 
-*Botones específicos*: 
+> **Eliminación de registro de declaraciones<!-- Cancellazione registrazione dichiarazioni -->**: este botón permite restaurar todas las declaraciones registradas en ese registro;
+> **Restaurar declaración<!-- Ripristino dichiarazione -->**: este botón permite restaurar el registro individual seleccionado por el usuario en la cuadrícula inferior, dejando las demás registradas.
 
-> **cancellazione registrazione dichiarazioni**: este botón permite restaurar todas las declaraciones registradas en ese registro;  
-> **Restaurar declaración (Ripristino dichiarazione)**: este botón permite restaurar la única registración seleccionada por el usuario en la cuadrícula inferior, dejando las demás registradas.
-
-Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

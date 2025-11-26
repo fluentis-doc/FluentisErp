@@ -1,51 +1,52 @@
 ---
-title: ricerca registrazioni contabili
+title: Búsqueda de registros contables
 sidebar_position: 7
+ai_generated: true
 ---
 
-Este formulario permite buscar los registros contables ingresados anteriormente y eventualmente entrar en modificación (o en visualización) de los mismos seleccionando la línea correspondiente y realizando un doble clic.
+El presente formulario permite buscar los registros contables<!-- registrazioni contabili --> previamente ingresados y, eventualmente, entrar en modo edición (o visualización) de los mismos seleccionando la fila correspondiente y haciendo doble clic.
 
 #### Botones específicos en la Ribbon Bar
 
-> **ricerca**: permite iniciar la búsqueda de los registros contables ingresados según los filtros establecidos.  
-> **nuovo**: permite ingresar un nuevo registro contable.  
-> **modifica**: permite modificar un registro contable previamente ingresado.  
-> **visualizzazione**: permite visualizar un registro contable previamente ingresado. En esta situación, los datos NO son modificables.  
+> **Buscar<!-- Ricerca -->**: permite iniciar la búsqueda de los registros contables<!-- registrazioni contabili --> ingresados según los filtros establecidos.  
+> **Nuevo<!-- Nuovo -->**: permite ingresar un nuevo registro contable<!-- registrazione contabile -->.  
+> **Modificar<!-- Modifica -->**: permite modificar un registro contable<!-- registrazione contabile --> previamente ingresado.  
+> **Visualizar<!-- Visualizzazione -->**: permite visualizar un registro contable<!-- registrazione contabile --> previamente ingresado. En esta situación los datos NO son editables. 
 
-> **elimina**: permite cancelar un registro contable previamente ingresado. En algunos casos, la operación será impedida (por ejemplo, si una factura ha sido contabilizada automáticamente) solicitando realizar la operación de Rollback (Restauración) relacionada con el procedimiento mediante el cual se creó el registro.
+> **Eliminar<!-- Elimina -->**: permite borrar un registro contable<!-- registrazione contabile --> previamente ingresado. En algunos casos, la operación será impedida (por ejemplo, si una factura fue contabilizada automáticamente), solicitando realizar la operación de Rollback (Restauración), conectada al procedimiento con el que fue creado el registro<!-- registrazione -->.
 
-> **Documento origen (Documento origine)**: permite recuperar el documento de origen del cual se originó el registro contable.  
-> **duplica**: permite crear un duplicado del registro contable con el fin de crear uno similar, modificando los elementos pertinentes, sin tener que ingresarlo desde cero.  
+> **Documento origen<!-- Documento origine -->**: permite llamar el documento de origen del que se generó el registro contable<!-- registrazione contabile -->.  
+> **Duplicar<!-- Duplica -->**: permite crear un duplicado del registro contable<!-- registrazione contabile --> para poder crear uno similar, modificando los elementos oportunos, sin necesidad de ingresarlo desde cero.  
 
 ### Filtros específicos
 
-**causale contabile**: el cuadro combinado (como es habitual en Fluentis) permite seleccionar más de una causa a la vez manteniendo presionada la tecla Ctrl.
+**Causal contable<!-- Causale contabile -->**: el combo box (como es habitual en Fluentis) permite seleccionar más de una causal a la vez manteniendo presionada la tecla Ctrl.
 
-**Desde / Hasta fecha de registro + Desde / Hasta fecha de competencia (Da / A data registrazione + Da / A data competenza)**: son las fechas de referencia de los registros contables; atención, los filtros operan con una condición AND y, por lo tanto, el refinamiento de la búsqueda se acumula. En caso de desalineamiento involuntario de la fecha de registro y la fecha de competencia (contable), para encontrar el registro deseado, es recomendable quitar alternativamente el filtro de competencia o el de fecha de registro.
+**Desde / Hasta fecha registro<!-- Da / A data registrazione --> + Desde / Hasta fecha de competencia<!-- Da / A data competenza -->**: son las fechas de referencia de los registros contables<!-- registrazioni contabili -->; atención, los filtros funcionan con una condición AND, por lo tanto, el refinamiento de la búsqueda se suma. En caso de desalineación involuntaria entre la fecha de registro<!-- data di registrazione --> y la fecha de competencia<!-- data di competenza --> (contable), para encontrar el registro<!-- registrazione --> deseado es conveniente quitar alternativamente el filtro de competencia o el de fecha de registro<!-- registrazione -->.
 
-**numero registrazione**: se trata del número presente en el encabezado y referido al libro diario (normalmente la numeración es anual o diaria).
+**Número de registro<!-- Numero registrazione -->**: es el número que aparece en el encabezado y se refiere al libro diario (generalmente la numeración es anual o diaria).
 
-**Fecha / Número de documento (Data / Numero documento)**: referido al encabezado del registro, campo que alberga el número y la fecha de la factura, generalmente.
+**Fecha / Número de documento<!-- Data / Numero documento -->**: se refiere al encabezado del registro<!-- registrazione -->, campo que contiene el número y la fecha de la factura, generalmente.
 
-**tipo documento**: campo presente en el encabezado del registro y referido, por ejemplo, a Factura, Nota de crédito, o Genérico para registros de primera entrada.
+**Tipo de documento<!-- Tipo Documento -->**: campo presente en el encabezado del registro<!-- registrazione --> y que se refiere, por ejemplo, a Factura, Nota de crédito, o bien Genérico para registros en el libro diario<!-- registrazioni di prima nota -->.
 
-**conto registrazione**: se trata del subcuenta ingresada en el encabezado del registro (Cliente o proveedor).
+**Cuenta del registro<!-- Conto Registrazione -->**: se trata del subcuenta<!-- sottoconto --> incluido en el encabezado del registro<!-- registrazione --> (Cliente o proveedor).
 
-**conto dettaglio**: se trata de los subcuentas ingresadas en la sección del libro diario (movimientos contables). Normalmente se utiliza en combinación con el filtro anterior para buscar, por ejemplo, en relación con un subcuenta de cliente o proveedor particular, los registros que contienen un subcuenta de costo o ingreso particular.
+**Cuenta de detalle<!-- Conto Dettaglio -->**: se trata de los subcuentas<!-- sottoconti --> incluidos en la sección del libro diario<!-- libro giornale --> (movimientos contables<!-- movimenti contabili -->). Normalmente se utiliza en combinación con el filtro anterior para buscar, por ejemplo, respecto a un subcuenta<!-- sottoconto --> específico de cliente o proveedor, los registros<!-- registrazioni --> que contienen un subcuenta<!-- sottoconto --> específico de costo o ingreso.
 
-**tipo conto**: permite seleccionar uno (o más de uno manteniendo presionada la tecla Ctrl) de los tipos de cuenta (Costos / Ingresos / activo / pasivo o cuentas de registro como Clientes, Proveedores, Bancos y Agentes). Además, al abrir el **expansor**, es posible **excluir tipos** de cuentas de registro.
+**Tipo de cuenta<!-- Tipo conto -->**: permite seleccionar uno (o varios, manteniendo presionada la tecla Ctrl) de los tipos de cuenta<!-- tipi conto --> (Costos / Ingresos / activo / pasivo o cuentas maestras como Clientes, Proveedores, Bancos y Agentes). Además, abriendo **el expander** es posible **excluir las tipologías** de cuentas maestras.
 
-**registro iva**: en esta sección (abriendo el expansor) es posible filtrar los registros referidos a un registro de IVA específico y a un intervalo de protocolos de IVA.
+**Registro IVA**: en esta sección (abriendo el expander) es posible filtrar los registros<!-- registrazioni --> referentes a un registro IVA específico y a un intervalo de protocolos de IVA.
 
-### Sección expansible (expander) *Búsqueda avanzada*
+### Sección expandible (expander) *Búsqueda Avanzada*
 
-En esta sección es posible buscar también:
+En esta sección también es posible buscar:
 
-- los [registros en estado provisional](/docs/finance-area/ledger-records/records/procedures/bridged-recording) (además de definitivo)  
-- por descripción del registro (en el diario) y del movimiento de detalle individual (descripción de contrapartida)  
-- en un intervalo numérico de valores referidos a la sección de Debe / Haber  
-- registros automáticos de cierre / apertura de cuentas  
+- los [registros en estado provisional<!-- registrazioni in stato provvisorio -->](/docs/finance-area/ledger-records/records/procedures/bridged-recording) (además de definitivos)
+- por descripción del registro<!-- registrazione --> (en el libro diario<!-- giornale -->) y de cada movimiento de detalle<!-- movimento di dettaglio --> (descripción de la contrapartida)
+- en un intervalo numérico de valores relativos a la sección Debe / Haber<!-- Dare / Avere -->
+- registros automáticos de cierre / apertura de cuentas<!-- registrazioni automatiche di chiusura / apertura conti -->
 
 ### Campos específicos en la cuadrícula de resultados
 
-**stato sdi**: alberga la descripción del estado del documento, reportando tanto el estado de gestión interno de Fluentis como el estado reportado por Fluentis Business Hub y adquirido directamente de SdI.
+**Estado SdI**: recoge la descripción del estado del documento, mostrando tanto el estado de gestión interna de Fluentis como el estado reportado por Fluentis Business Hub y adquirido directamente por SdI.

@@ -1,26 +1,27 @@
 ---
-title: gestione registrazioni provvisorie
+title: Gestión de registros provisionales
 sidebar_position: 1
+ai_generated: true
 ---
 
-Con este procedimiento es posible modificar los registros provisionales presentes en la contabilidad general, para asignar el estado definitivo sin necesidad de entrar en cada uno de ellos para modificar manualmente su estado.
+Con este procedimiento es posible modificar los asientos provisionales<!-- registrazioni provvisorie --> presentes en la contabilidad general, para asignar el estado definitivo sin tener que entrar en cada uno de estos y cambiar manualmente su estado.
 
-## Registros (Registrazioni)
+## Registros<!-- Registrazioni -->
 
-Al realizar la búsqueda según los datos establecidos en los campos de filtro, se visualizan las escrituras contables en estado Provisional (Provvisorio).
+Al ejecutar la búsqueda según los datos configurados en los campos de filtro, se visualizan los asientos contables en estado Provisional<!-- Provvisorio -->.
 
-Por lo tanto, es posible seleccionar las escrituras que se desean poner en estado definitivo y proceder alternativamente a:
+Por lo tanto, es posible seleccionar los asientos que se desean poner en estado definitivo y proceder alternativamente a:
 
-- entrar en visualización del registro (no se podrán guardar modificaciones)  
-- entrar en modificación del registro  
-- generar las escrituras definitivas a partir de las provisionales seleccionadas  
+- ingresar en visualización del asiento<!-- registrazione --> (no se podrán guardar modificaciones)  
+- ingresar en modificación del asiento<!-- registrazione -->  
+- generar los asientos definitivos a partir de los provisionales<!-- provvisorie --> seleccionados  
 
-La transformación en escritura definitiva se llevará a cabo con la fecha definida en la parte inferior del formulario (es posible alinear la fecha de competencia contable o variar esta última) y establecer automáticamente la fecha igual a la última fecha de registro en el registro del IVA.
+La transformación en asiento definitivo<!-- scrittura definitiva --> se realizará con la fecha definida en la parte inferior del formulario (es posible alinear la fecha de competencia contable o modificar esta última) y establecer automáticamente la fecha igual a la última fecha de registro en el libro IVA.
 
-La gestión del protocolo de IVA se llevará a cabo de manera coherente con las configuraciones de la fecha de registro y los parámetros que definen la coherencia entre fecha / número de protocolo.
+La gestión del protocolo IVA se realizará de acuerdo a los ajustes de la fecha de registro y a los parámetros que definen la coherencia entre fecha/número de protocolo.
 
-También el número de registro seguirá los parámetros de coherencia y recuperación de números según la fecha.
+También el número de registro<!-- numero di registrazione --> seguirá los parámetros de coherencia y recuperación de números según la fecha.
 
-## Anteriores (Precedenti)
+## Anteriores<!-- Precedenti -->
 
-Como de costumbre, es posible restaurar el registro individual contenido en la operación de modificación, o bien la operación completa realizada por el usuario en una fecha determinada.
+Como es habitual, es posible restaurar el asiento individual<!-- registrazione --> contenida en la operación de modificación, o bien toda la operación realizada por el usuario en una fecha determinada.

@@ -1,136 +1,136 @@
 ---
-title: Nueva orden de compra
+title: Nuova commessa di acquisto
 sidebar_position: 1
 ---
 
-El formulario se abre a través de la ruta **Compras > Órdenes de compra > Nueva orden de compra** o desde el filtro de búsqueda de órdenes de compra, mediante el botón *Nuevo pedido de trabajo*.
+La form si apre tramite il percorso **Acquisti > Commesse Acquisto > Nuova Commessa di Acquisto** oppure dal filtro di ricerca delle commesse di acquisto, mediante il pulsante *Nuova commessa*.
 
-## *Cómo crear una orden de compra*
+## *Come creare una commessa di acquisto*
 
 <details>
-
-<summary>Clic para ver los pasos fundamentales</summary>
-
-1. **Ingresa los datos obligatorios**: *Tipo* y *proveedor* *año*, *número* y *Inserte la fecha* se propondrán automáticamente.  
-
-2. **Ingresa o modifica los datos opcionales** de la cabecera: como *descuentos*, *destino*, etc.  
-
-3. **Ingresa los artículos**: mediante doble clic en el campo *código de artículo* se abre la ayuda de artículos que permite buscar y seleccionar un artículo existente. Todos los demás datos de la línea, como *Unidad de medida*, *cantidad*, *precio*, se propondrán automáticamente, pero pueden ser modificados.  
-En alternativa, es posible seleccionar como *Tipo de fila* un *Elemento no codificado* e ingresar manualmente los datos siguientes.
-
-4. **Ingresa eventuales descuentos o otra información adicional** en la pestaña *datos*.  
-
-5. **Revisa la sección de Resúmenes** e ingresa eventuales gastos o descuentos finales.  
-
-6. Una vez revisada la orden, **ingresa una *fecha de confirmación* y activa el indicador *stampato* en la cabecera** para hacer el documento disponible para los procedimientos de cumplimiento.
-
+ 
+<summary>Clicca per vedere i passaggi fondamentali</summary>
+ 
+1. **Inserisci i dati obbligatori**: *Tipo* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci o modifica i dati facoltativi** della testata: come *sconti*, *destinazione*, ecc.  
+ 
+3. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+4. **Inserisci eventuali sconti o altre informazioni aggiuntive** nel tab *Dati*.
+ 
+5. **Controlla la sezione dei Riepiloghi** ed inserisci eventuali spese o sconti finali.  
+ 
+6. Una volta controllata la commessa, **inserisci una *Data conferma* e attiva il flag *Stampato* in testata** in modo da rendere il documento disponibile per le procedure di evasione.
+ 
 </details>
 
-## **1. Datos obligatorios**
+## **1. Dati obbligatori**
 
-Para crear una nueva orden de compra, el usuario debe ingresar los siguientes datos:
+Per creare una nuova commessa di acquisto l'utente deve inserire i seguenti dati:
 
-- **Proveedor**: puede ser ingresado usando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  
-- **Tipo de orden de trabajo**: predeterminado en la tabla [Tipos de orden de compra](/docs/configurations/tables/purchase/purchase-job-order-types). Este campo determina el rango de numeración del documento que se está ingresando y propone automáticamente el *Número* según la fecha de ingreso y el último número ingresado.  
-- **Año/fecha ingresada**: se propone automáticamente la fecha corriente, pero puede ser modificada manualmente.  
-- **Número**: a cada documento se le asigna un número según la numeración especificada por el usuario en la tabla [Numeración](/docs/configurations/tables/fluentis-numerations). 
-- **Número interno**: dato opcional; se propone igual al campo anterior, pero puede ser modificado manualmente ingresando un código alfanumérico diferente.
+- **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  
+- **Tipo Commessa**: predefinito nella tabella [Tipi commessa di acquisto](/docs/configurations/tables/purchase/purchase-job-order-types). Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il *Numero* in base alla data inserimento e all'ultimo numero inserito.   
+- **Anno/data inserita**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente.   
+- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione](/docs/configurations/tables/fluentis-numerations). 
+- **Numero interno**: dato facoltativo; viene proposto uguale al campo precedente, ma può essere modificato manualmente inserendo una codice alfanumerico diverso.
 
-El formulario contiene una serie de pestañas.
+La form contiene una serie di tab.
 
-## **Encabezado**
+## **2. Testata**
 
-Después de seleccionar los datos obligatorios en la sección superior, el usuario puede continuar ingresando los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o con la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
 
-Al ingresar el **proveedor**, se proponen automáticamente todos los datos específicos de la pestaña **encabezado**, según los datos establecidos previamente en la [anagrafía del proveedor](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) en los campos correspondientes a su dirección y en las secciones:
+Inserendo il **Fornitore** vengono proposti in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle sezioni: 
 
-- **Divisa**: sección que contiene los datos [Divisa](/docs/configurations/tables/general-settings/currencies), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Fecha de moneda](/docs/guide/common/glossary/glossary-intro#currency-date).  
-- **País**: sección que contiene los datos [*País*](/docs/guide/common/glossary/glossary-intro#country), [Idioma](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).  
-- **Envío**: sección que contiene los datos [*Envíos*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Flete](/docs/guide/common/glossary/glossary-intro#carriage), [Embalaje](/docs/guide/common/glossary/glossary-intro#packing), [Lista de precios](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) predeterminado y su [intervalo de validez](/docs/guide/common/glossary/glossary-intro#validity-date).
-- **Pagos**: sección que contiene los datos [*Pagos*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Descuentos*, *Destino* y *Transportador*.    
+- **Divisa**: sezione contenente i dati [Divisa](/docs/configurations/tables/general-settings/currencies), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).   
+- **Nazione**: sezione contenente i dati [*Nazione*](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).   
+- **Spedizione**: sezione contenente i dati [*Spedizioni*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list) predefinito e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date).
+- **Pagamenti**: sezione contenente i dati [*Pagamenti*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments), *Sconti*, *Destinazione* e *Vettore*.    
 
-Todos estos campos pueden ser eliminados o modificados manualmente por el usuario.
+Tutti questi campi possono essere cancellati oppure modificati manualmente dall'utente.
 
-#### Campos opcionales
+#### Campi facoltativi
 
-> **Envío**, *porto* y *imballo* son extraídos de la anagrafía del proveedor, si están presentes; de lo contrario, pueden ser ingresados manualmente.  
-> **Lista de precios**: si en la anagrafía del proveedor hay una lista con el indicador *predeterminado*, esta será propuesta en este campo junto con sus fechas de validez.   
+> **Spedizione**, *Porto* e *Imballo* sono ripresi dall'anagrafica del fornitore, se presenti, altrimenti possono essere inseriti manualmente.   
+> **Listino**: se nell'anagrafica del fornitore c'è un listino con flag *Predefinito* esso sarà proposto in questo campo congiuntamente alle sue date di validità.   
 
-> **Fecha estimada de entrega.**: indica la fecha estimada para la entrega de la mercancía.      
-> **Fecha de inicio/Fecha de finalización**: permite ingresar una fecha de inicio y una fecha de finalización para la orden.   
+> **Data prevista consegna**: indica la data prevista per la consegna della merce.      
+> **Data inizio/fine**: permette di inserire una data inizio e fine per la commessa.   
 
-> **Notas del proveedor**: este campo se extrae de la [anagrafía del proveedor](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), pero también se puede ingresar manualmente.   
-> **Nuestra/Su referencia**: en estos campos, normalmente se indica una referencia interna y una referencia del proveedor para el documento. Si está presente, se extrae de la anagrafía del proveedor; de lo contrario, puede ser ingresada manualmente. Estos datos serán luego reportados en la orden de proveedor creada mediante [Cumplimiento desde proyecto].   
-> **Nota inicial**: se pueden seleccionar las notas que han sido ingresadas previamente en la tabla que se encuentra en la ruta *Configuración > Utilidades > Gestión de notas codificadas*. Para esto, el usuario debe hacer doble clic en el campo *Nota inicial* para abrir la ayuda de notas codificadas y seleccionar los datos.   
-> **Proyecto:** usando la ayuda de campo, se puede vincular el documento a un [proyecto](/docs/project-management/projects/search-projects-intro). Esta asociación funciona solo a nivel de la cabecera del artículo.   
+> **Annotazioni fornitore**: questo campo viene ripreso dall'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), ma può essere inserito anche manualmente.   
+> **Nostro/Vostro riferimento**: in questi campi solitamente viene indicato un riferimento interno ed un riferimento fornitore per il documento. Se presente, viene ripreso dall'anagrafica fornitore alrimenti può essere inserito manualmente. Questi dati sranno poi riportati nell'ordine fornitore creato mediante [Evasione da progetto*.   
+> **Note iniziali**: si possono selezionare le note che sono state inserite in precedenza nella tabella che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*. Per questo l'utente deve effettuare doppio click sul campo *Note iniziale* per aprire Help note codificate e selezionare i dati.   
+> **Progetto:** usando l'help di campo si può collegare il documento a un [progetto](/docs/project-management/projects/search-projects-intro). Questa associazione funziona solo al livello della testata dell'articolo.   
 
-> **Estado de ejecución**: cuando la orden es cumplida a través de un pedido de compra, su *Estado de cumplimiento* cambia automáticamente de *No ejecutado* a *Ejecutado parcialmente* o *Ejecutado*. El usuario puede forzar el cumplimiento de una orden no completamente cumplida y cuando esto sucede, también se guarda la **Fecha de ejecución** en el campo homónimo.   
-> **Fecha de la conferencia**: permite ingresar la fecha en que la orden fue confirmada.     
-> **Impreso**: este indicador se activa automáticamente en el momento del lanzamiento de la impresión definitiva mediante el botón situado en la barra de herramientas. Alternativamente, puede ser activado manualmente para poder realizar el cumplimiento.    
-
+> **Stato evasione**: quando la commessa viene evasa tramite un ordine di acquisto il suo *Stato evasione* cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*. L'utente può forzare l'evasione di un ordine non totalmente evaso e quando questo succede, viene salvata anche la **Data evasione** nel campo omonimo.   
+> **Data conferma**: permette di inserire la data in cui la commessa è stata confermata.     
+> **Stampato**: questo flag viene attivato in automatico al momento di lancio della Stampa definitiva mediante il pulsante posto nella ribbon bar. In alternativa può essere attivato manualmente per poter effettuare l'evasione.    
+    
 :::important Nota
-Para poder realizar el cumplimiento de una orden de compra dentro de un Pedido de proveedor, es necesario que la orden tenga una *Fecha de confirmación* ingresada y que el indicador *Impreso* esté activo.
+Per poter effettuare l'evasione di una commessa di acquisto all'interno di un Ordine fornitore è enecssario che la commessa abbia una *Data conferma* inserita e che il flag *Stampato* sia attivo.
 :::
 
-### 2.1 Pagos
+### 2.1 Pagamenti
 
-Las [Soluciones de pago](/docs/configurations/tables/general-settings/payment-terms) son extraídas automáticamente de la *Anagrafía del proveedor > pestaña Pagos (Anagrafica fornitore > tab Pagamenti)* y pueden ser modificadas/eliminadas por el usuario.
+Le [Soluzioni di pagamento](/docs/configurations/tables/general-settings/payment-terms) sono riportate in automatico dall'*Anagrafica fornitore > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
 
-Si al [Tipo de pago](/docs/configurations/tables/general-settings/payment-types) está asociado un descuento financiero, el monto del descuento se considera solo a efectos contables, es decir, en los vencimientos del documento y no en el total del DDT.
+Se al [Tipo pagamento](/docs/configurations/tables/general-settings/payment-types) è associato uno sconto finanziario, l'importo dello sconto viene considerato solo ai fini contabili cioè nelle scadenze del documento e non nel totale DDT.
 
-#### Botón específico
+#### Pulsante specifico  
 
-> **Eliminar pago**: utilizado para eliminar las filas de pago seleccionadas.
+> **Cancella pagamento**: utilizzato per cancellare le righe di pagamento selezionate.
 
 
-### 2.2 Descuentos 
+### 2.2 Sconti 
 
-Se proponen solo los descuentos predefinidos extraídos de la *Anagrafía del proveedor > pestaña Descuentos*. Pueden ser modificados/eliminados por el usuario.
+Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica fornitore > tab Sconti*. Possono essere modificati/cancellati dall'utente.
 
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-### 2.3 Destino 
+### 2.3 Destinazione
 
-Aquí se propone la información ingresada en la *Anagrafía del proveedor > pestaña Entregas*, solo si existen datos por defecto. El combo box propone todos los destinatarios, los destinos y los transportistas ingresados en la anagrafía del proveedor.
+Qui viene proposta l'informazione inserita nell'*Anagrafica fornitore > tab Consegne*, solo se esistono dati di default. Il combo box propone tutti i destinatari, le destinazioni e i vettori inseriti nell'anagrafica fornitore.
 
-Las direcciones de envío (destinatario/destino y transportista) pueden ser ingresadas también solo descriptivamente sin haber sido previamente ingresadas entre los contactos. 
+Gli indirizzi di spedizione (destinatario/destinazione e vettore) possono essere inseriti anche solo descrittivi senza essere precedentemente inseriti tra i contatti. 
 
-### 2.4 Transportista
+### 2.4 Vettore
 
-En este campo se puede ingresar el *Transportista* que realizará el envío del pedido. Si este ha sido ingresado en la *Anagrafía del proveedor > pestaña Entregas*, será posible seleccionarlo del menú desplegable de la segunda columna; de lo contrario, basta con hacer doble clic en la tercera columna (*Transportista*) para seleccionar uno de los contactos de la empresa. 
+In questo campo è possibile inserire il *Vettore* che effettuerà la spedizione dell'ordine. Se questo è stato inserito nell'*Anagrafica fornitore > tab Consegne* sarà possibile selezionarlo dal menù a tendina della seconda colonna, in alternativa sarà sufficiente fare doppio click sulla terza colonna (*Vettore*) per selezionare uno dei contatti della società. 
 
-Opcionalmente, se pueden agregar los detalles de la *Placa* del transportista y la *Fecha/Hora de transporte*. 
+Opzionalmente si possono aggiungere i dettagli della *Targa* del vettore e la *Data/Ora trasporto*.
 
-### 2.5 Datos adicionales
+### 2.5 Extra Data
 
 import TabExtraData from './../../../import/sections/tab-extra-data.md'
 
 <TabExtraData />
 
-## **Artículos**
+## **3. Articoli**
 
-Para ingresar un nuevo artículo en la cuadrícula, basta con colocarse en la fila para completar los diversos datos o utilizar el botón *nuovo articolo* que se encuentra en la barra de herramientas.
+Per inserire un nuovo articolo nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante *Nuovo articolo* presente nella ribbon bar.
 
 import InsertMode from './../../../import/sections/insert-mode.md'
 
 <InsertMode />
 
-### 3.1 Datos obligatorios
+### 3.1 Dati obbligatori
 
 import RowNumber from './../../../import/fields/row-number.md'
 
 <RowNumber />
 
-- **Tipo de fila** ofrece la posibilidad de seleccionar, desde el combo box, artículos con diferentes características:
-> - *Artículo codificado*: son los artículos codificados en la anagrafía y pueden ser contabilizados en contabilidad analítica y registrados en almacén. <br />
-> - *Artículo no codificado*: son artículos descriptivos que pueden ser contabilizados en contabilidad analítica pero no pueden ser movidos a almacén. <br />
-> - *Artículo de cargo*: son artículos codificados o no codificados y se resumen de manera distinta en los resúmenes de los documentos; si el artículo de gasto es codificado y de interés fiscal, se moverá a almacén; si es no codificado o no de interés fiscal, no se moverá a almacén. <br />
-> - *Artículo de nota*: son notas descriptivas reportadas en la impresión del documento; no afectan la contabilidad y el almacén.
+- **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
+> - *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino. <br />
+> - *Articolo non-codificato*: sono articoli descrittivi che possono essere contabilizzati in contabilità analitica ma non possono essere movimentati a magazzino. <br />
+> - *Articolo spese*: sono articoli codificati o non-codificati e vengono riassunti in modo distinto nei riepiloghi dei documenti, se l'articolo spesa è codificato e di interesse fiscale verrà movimentato in magazzino, se è non codificato oppure non di interesse fiscale non verranno movimentati a magazzino. <br />
+> - *Articolo note*: sono note descrittive riportate nella stampa del documento; non incidono sulla contabilità e sul magazzino.
 
 :::note Nota
-Si se comienza directamente con la inserción del código de artículo, su clase, la descripción y el tipo de línea (*Elemento codificado*) se ingresan automáticamente.
+Se si parte direttamente con l'inserimento del codice articolo, la sua classe, la descrizione e il tipo riga (*Articolo codificato*) vengono inseriti automaticamente.
 :::
 
 import ItemClassDescription from './../../../import/sections/item-class-description.md'
@@ -141,95 +141,95 @@ import UM from './../../../import/fields/item-um.md'
 
 <UM />
 
-### 3.2 Datos no obligatorios
+### 3.2 Dati non obbligatori
 
 import Quantity from './../../../import/fields/item-quantity.md'
 
 <Quantity />
 
-- **Precio**: el precio se propone según la lista de precios ingresada en la anagrafía del contacto; la lista de precios de referencia para el artículo en sí se visualiza en la pestaña Datos. El mismo documento podría contener artículos con precios extraídos de listas diferentes si en la anagrafía del sujeto están asociadas varias listas de precios en cascada (ver [Anagrafía de contactos](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list)). A través de un doble clic en el campo *Lista de precios* (situado debajo de la etiqueta *Proyectos*), el usuario tiene la posibilidad de seleccionar una lista diferente de la predeterminada, de la cual se tomará el precio del artículo ingresado. En ausencia de lista de precios, el dato propuesto puede ser extraído del *costo último* de la anagrafía del artículo.   
+- **Prezzo**:  il prezzo viene proposto dal listino inserito nell'anagrafica contatto; il listino di riferimento per l'articolo stesso è visualizzato nel tab Dati; lo stesso documento potrebbe contenere articoli con prezzi presi da listini diversi, se nell'anagrafica soggetto sono associati più listini in cascata (vedi [Anagrafica contatti](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/price-list)). Attraverso il doppio click nel campo *Listini* (posto sotto la voce *Progetti*) l'utente ha la possibilità di selezionare un listino diverso da quello di default, dal quale sarà ripreso il prezzo dell'articolo inserito. In assenza del listino, il dato proposto può essere ripreso dal *costo ultimo* di anagrafica articolo.   
 
 import Vat from './../../../import/fields/item-vat.md'
 
 <Vat />
 
-- **Tipo de volumen de compras**: se propone el dato ingresado en la pestaña [Generalidades](/docs/erp-home/registers/items/create-new-item) de la anagrafía de artículos. Si este no está presente, no se propone ningún dato y en el momento de contabilización de la factura, se considerará el valor ingresado en el campo *Costo/Ingreso de contrapartida predeterminado* de la anagrafía del contacto.
+- **Tipo fatturato acquisti**: viene proposto il dato inserito nel tab [Generalità](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articoli. Se questo non è presente, non viene proposto nessun dato e al momento della contabilizzazione della fattura, sarà considerato il valore inserito nel campo *Costo/Ricavo di contropartita predefinito* dell'anagrafica contatto.
 
-- **Ejecución forzada**: al activar el indicador, la línea del artículo se marcará como *Cumplida forzosamente (Evasa forzatamente)* y no estará disponible para más cumplimientos.   
+- **Evase forzatamente**: attivando il flag la riga articolo sarà contrassegnata come *Evasa forzatamente* e non sarà più disponibile per ulteriori evasioni.   
 
 
-### 3.3 Totales
+### 3.3 Totali
 
-- **Descuentos**: se proponen todos los descuentos asociados al artículo, cada uno con su propia base de cálculo y asignación.         
+- **Sconti**: vengono proposti tutti gli sconti associati all'articolo, ognuno con la propria base di calcolo e di assegnazione.        
 
-*Botón específico*
+*Pulsante specifico*
 
-> **Eliminar descuentos**: permite eliminar el descuento seleccionado de la cuadrícula correspondiente. 
+> **Cancella sconti**: permette di cancellare lo sconto selezionato dalla griglia corrispondente. 
 
-### 3.4 Datos
+### 3.4 Dati
 
-Dentro de esta pestaña se reportan/inserta información adicional relacionada con el artículo. 
+All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo. 
 
-- **Artículo**: reporta el artículo seleccionado en la cuadrícula superior.
+- **Articolo**: riporta  l'articolo selezionato nella griglia superiore.
 
-- **Variante**: en este campo es posible seleccionar una variante del artículo entre las que han sido codificadas previamente en la pestaña [Variantes](/docs/erp-home/registers/items/create-new-item) de la anagrafía del artículo. Si en la lista de precios se han ingresado precios y/o descuentos diferentes para cada variante, estos se actualizarán al seleccionar una variante diferente del artículo.   
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
 
-- **Nota**: son las notas relacionadas con la línea del artículo, que también pueden ser ingresadas a través de la ayuda de notas codificadas. Se reportarán en todos los documentos generados a partir de esto.
+- **Nota**: sono le note relative alla riga articolo, possono essere inserite anche tramite l'help note codificate. Saranno riportate in tutti i documenti generati da questo.
 
-- **Almacén y causa**: se proponen el almacén y la causa de referencia que también se reportarán en la orden de proveedor generada mediante *Cumplimiento de proyecto*. 
+- **Magazzino e causale**: vengono proposti il magazzino e la causale di riferimento che saranno riportati anche nell'ordin fornitore generato mediante *Evasione progetto*. 
 
-- **Proyecto**: representa el proyecto a asociar al documento. Si en la cabecera del documento se ha ingresado un proyecto, este se reportará en todas las líneas del artículo; alternativamente, puede ser seleccionado a través de la ayuda de proyectos correspondiente.
+- **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.
 
-- **Lista de precios**: se propone la lista de precios de la cual se ha extraído el precio del artículo, con la fecha de inicio/final de validez y con las condiciones particulares (por ejemplo, **Tipo de soporte** de descuento) asignadas al artículo en la lista de precios.
+- **Listino**: viene proposto il listino dal quale è stato ripreso il prezzo dell'articolo, con la data inizio/fine validità e con le condizioni particolari (ad es. **Tipo scaglione** di sconto) assegnate all'articolo nel listino.
 
-- **Precio manual**: se activa automáticamente cuando el precio del artículo ha sido ingresado o modificado manualmente.
+- **Prezzo manuale**: si attiva automaticamente quando il prezzo dell'articolo è stato inserito o modificato manualmente.
 
-- **Fecha estmada de entrega.**: permite indicar la fecha en la que se espera la entrega del artículo.   
+- **Data prevista consegna**: permette di indicare la data in cui è prevista la consegna dell'articolo.   
 
-- **Marca**: representa la marca del artículo, extraída de su anagrafía o de la lista de precios del artículo.
+- **Marca**: rappresenta la marca dell'articolo, ripresa dalla sua anagrafica oppure dal listino dell'articolo.
 
-### 3.5 Sección de valores
+### 3.5 Sezione valori
 
-La sección en la parte inferior derecha presenta un resumen de los costos que contribuyen a la formación del precio final de cada artículo seleccionado en la cuadrícula de artículos. Los campos presentes son:
+La sezione in basso, a destra, presenta il riassunto dei costi che concorrono alla formazione del prezzo finale di ciascun articolo selezionato nella griglia degli articoli. I campi presenti sono:
 
-- **Precio**: el valor del campo Precio; 
-- **Cantidad**: el valor del campo Cantidad o Cantidad alternativa, dependiendo del indicador Precio unidad de medida alternativa; 
-- **Cantidad de línea**: Precio del artículo * Cantidad del artículo; 
-- **Descuentos totales**: la suma de los descuentos del artículo, incluidos también los descuentos finales; 
-- **Valor**: Importe bruto - Descuentos; 
-- **IVA**: Imponible * tasa de IVA del artículo; 
-- **Total**: Imponible + Impuesto.
+-    **Prezzo**: il valore del campo Prezzo;
+-    **Quantità**: il valore del campo Quantità o Quantità alternativa, a seconda del flag Prezzo unità di misura alternativa;
+-    **Importo di riga**: Prezzo articolo * Quantità articolo;
+-    **Totale sconti**: la somma degli sconti dell'articolo, inclusi anche gli sconti finali;
+-    **Importo**: Importo lordo - Sconti;
+-    **IVA**: Imponibile * aliquota IVA dell'articolo;
+-    **Totale**: Imponibile + Imposta.
 
-## **Resúmenes**
+## **4. Riepiloghi**
 
-En las diferentes secciones de esta pestaña se presentan las principales informaciones del documento completo y algunos botones específicos.
+Nelle diverse sezioni di questo tab sono presentate le informazioni principali dell'intero documento e alcuni pulsanti specifici.
 
-### 4.1 Descuentos finales
+### 4.1 Sconti finali
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 4.2 Gastos
+### 4.2 Spese
 
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
 <SummariesExpenses />
 
-### 4.3 Totales del documento
+### 4.3 Totali documento
 
-- **Nota final orden de trabajo**: es un campo descriptivo que puede ser completado por el usuario, incluso con la ayuda de la *Ayuda de notas codificadas*. 
-- **Monto bruto de los artículos**: representa la suma de los valores de todos los artículos. 
-- **A cuenta**: representa el valor del eventual anticipo recibido por el documento. 
-- **Cantidad de regalo**: representa el importe de los artículos de tipo obsequio ingresados en la pestaña *artículos*. 
-- **Descuentos totales aplicados**: representa el valor total de los descuentos aplicados a los artículos, excluyendo los descuentos finales. 
-- **Monto neto de los artículos**: *Monto bruto de los artículos* – *Descuentos totales aplicados*. 
-- **Descuentos en artículos finales**: representa el valor de los descuentos finales expresados en porcentaje sobre el importe bruto de los artículos. 
-- **Importe neto de descuentos finales**: *Monto neto de los artículos* - *Descuentos finales totales*. 
-- **Total de cargos por artículos**: representa el valor de los gastos ingresados en la pestaña anterior como artículos de *Tipo de cargo*. 
-- **Cargos por cobranza**: representa la suma de los gastos de cobro ingresados en la cuadrícula de *gastos*. 
-- **Cargos por estampilla**: representa la suma de los gastos de timbre ingresados en la cuadrícula de *gastos*. 
-- **Total de gastos/descuentos/recargos**: representa el valor total de los gastos ingresados en la cuadrícula *gastos*. 
-- **Imponible**: *Monto neto de los artículos* – *Descuento final* + *Total de cargos por artículos* + *Total de gastos/descuentos/recargos*. 
-- **Iva**: representa la suma de los valores contenidos en los resúmenes de IVA. 
-- **Total**: *imponibile* + *iva*.
+- **Note finali commessa**: è un campo descrittivo che può essere compilato dall'utente anche con l'ausilio dell'*Help note codificate*.
+- **Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli.
+- **Acconto**: rappresenta il valore dell'eventuale acconto ricevuto per il documento.
+- **Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*.
+- **Totale sconti applicati**: rappresenta il valore totale degli sconti applicati sugli articoli, escludendo gli sconti finali.
+- **Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*.
+- **Sconti finali articoli**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli.
+- **Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*.
+- **Totale articoli spese**: rappresenta il valore delle spese inserite nel tab precedente come articoli di *Tipo spese*.
+- **Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*.
+- **Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*.
+- **Totale spese/sconti/maggiorazioni**: rappresenta il valore totale delle spese inserite nella griglia *Spese*.
+- **Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale articoli spese* + *Totale spese/sconti/maggiorazioni*.
+- **IVA**: rappresenta la somma dei valori contenuti nei riepiloghi IVA.
+- **Totale**: *Imponibile* + *IVA*.

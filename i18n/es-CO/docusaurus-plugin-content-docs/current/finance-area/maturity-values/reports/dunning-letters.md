@@ -1,13 +1,14 @@
 ---
-title: lettere di sollecito
+title: Cartas de recordatorio
 sidebar_position: 6
+ai_generated: true
 ---
 
-Desde esta máscara es posible proceder a la impresión de los recordatorios.
+Desde esta pantalla es posible proceder a la impresión de los recordatorios<!-- solleciti -->.
 
-Antes de realizar la impresión, es posible, en lugar de imprimir todos los recordatorios generados, filtrar por número del recordatorio, por fecha, por tipo y por cliente.
+Antes de ejecutar la impresión, es posible, en lugar de imprimir todos los recordatorios<!-- solleciti --> generados, filtrar por número de recordatorio<!-- sollecito -->, por fecha, por tipo y por cliente.
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Vista previa (Anteprima) | Realiza la vista previa de las cartas de recordatorio, con la posibilidad de seleccionar solo los movimientos con máxima prioridad o todos los movimientos. |
-| Impresión (Stampa) | Realiza la impresión de las cartas de recordatorio, con la posibilidad de seleccionar solo los movimientos con máxima prioridad o todos los movimientos. |
+| Vista previa<!-- Anteprima --> | Ejecuta la vista previa de las cartas de recordatorio<!-- lettere di sollecito -->, con la posibilidad de seleccionar solo los movimientos<!-- movimenti --> con máxima prioridad o todos los movimientos<!-- movimenti -->. |
+| Imprimir<!-- Stampa --> | Ejecuta la impresión de las cartas de recordatorio<!-- lettere di sollecito -->, con la posibilidad de seleccionar solo los movimientos<!-- movimenti --> con máxima prioridad o todos los movimientos<!-- movimenti -->. |

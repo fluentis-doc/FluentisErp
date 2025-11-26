@@ -1,29 +1,30 @@
 ---
-title: Detalle de líneas de pedidos de clientes (Dettaglio righe Ordini cliente)
+title: Detalle de líneas de Pedidos de cliente
 sidebar_position: 4
+ai_generated: true
 ---
 
-Esta máscara es una cuadrícula que presenta en cada línea un artículo presente en un pedido de cliente, junto con una serie de informaciones sobre la línea del artículo y el pedido de cliente al que pertenece.  
-La cuadrícula permite visualizar, seleccionar y modificar diversas informaciones a través de los botones en la barra de herramientas.  
-La primera columna de la cuadrícula es una casilla de selección. Usando esta casilla, el usuario puede seleccionar una o más líneas para aplicar las operaciones disponibles en la barra de herramientas:
+Esta pantalla es una cuadrícula que muestra en cada fila un artículo presente en un pedido de cliente<!-- ordine cliente -->, junto con una serie de informaciones sobre la línea del artículo<!-- riga articolo --> y el pedido de cliente<!-- ordine cliente --> al que pertenece.     
+La cuadrícula permite visualizar, seleccionar y modificar diferentes informaciones a través de los botones en la barra de herramientas.     
+La primera columna de la cuadrícula es una casilla de selección. Utilizando esta casilla, el usuario puede seleccionar una o más filas para aplicar las operaciones disponibles en la barra de herramientas:
 
-**Cumplimiento Forzado (Evasione Forzata)**  
-Permite forzar el cumplimiento de las líneas seleccionadas; esta operación insertará el indicador *Cumplido Forzado (Evaso forzato)* en las líneas del pedido.
+**Ejecución Forzada<!-- Evasione Forzata -->**      
+Permite forzar la ejecución<!-- evasione --> de las líneas seleccionadas; esta operación insertará la marca *Ejecución forzada<!-- Evaso forzato -->* en las líneas del pedido<!-- righe ordine -->.
 
-**modifica prezzi**  
-Permite modificar el precio unitario para las líneas seleccionadas; se abre un pop-up en el que se puede ingresar el precio.
+**Modificar Precios<!-- Modifica Prezzi -->**     
+Permite modificar el precio unitario de las líneas seleccionadas; se abre una ventana emergente para ingresar el precio.
 
-**modifica consegna**  
-Permite cambiar la fecha de entrega para las líneas seleccionadas.
+**Modificar Entrega<!-- Modifica Consegna -->**     
+Permite cambiar la fecha de entrega de las líneas seleccionadas.
 
-**modifica note**  
-Habilita al usuario a ingresar nuevas notas relacionadas con las líneas seleccionadas; se abre un pop-up en el que se puede ingresar la nota y en el que hay un indicador que permite decidir si eliminar o mantener las notas preexistentes.
+**Modificar Notas<!-- Modifica Note -->**     
+Permite al usuario ingresar nuevas notas relativas a las líneas seleccionadas; se abre una ventana emergente en la que ingresar la nota y en la que hay un selector para decidir si borrar o mantener las notas preexistentes.
 
-**modifica quantità**  
-Permite modificar la cantidad ordenada para los artículos seleccionados.
+**Modificar Cantidad<!-- Modifica Quantità -->**      
+Permite modificar la cantidad solicitada para los artículos seleccionados.
 
-**modifica listino prezzi**  
-Permite cambiar la lista de precios aplicada a la línea seleccionada; se abre un pop-up en el que se busca la lista a asignar al artículo.  
+**Modificar Lista de Precios<!-- Modifica Listino Prezzi -->**      
+Permite cambiar la lista de precios<!-- listino prezzi --> aplicada a la línea seleccionada; se abre una ventana emergente para buscar la lista de precios<!-- listino --> a asignar al artículo.
 
-**proprietà evasione**  
-Proporciona acceso a la máscara *stato evasione*, donde se pueden consultar los detalles de cumplimiento de los diversos artículos.
+**Propiedades de Ejecución<!-- Proprietà Evasione -->**     
+Permite acceder a la pantalla *Estado de ejecución<!-- Stato evasione -->*, donde consultar los detalles de ejecución<!-- evasione --> de los distintos artículos.

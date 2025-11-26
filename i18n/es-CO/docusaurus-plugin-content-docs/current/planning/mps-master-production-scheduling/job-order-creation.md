@@ -1,203 +1,204 @@
 ---
-title: generazione commesse di produzione
+title: Generación de órdenes de producción
 sidebar_position: 2
+ai_generated: true
 ---
 
-El procedimiento **generazione commesse di produzione** permite generar órdenes de producción a partir de pedidos de clientes, pronósticos y/o de Surtido bajo (Sottoscorta).
+El procedimiento **Generación de órdenes de producción<!-- Generazione commesse di produzione -->** permite generar órdenes de producción<!-- commesse di produzione --> a partir de pedidos de cliente<!-- ordini clienti -->, del previsional y/o de la función de stock mínimo<!-- Sottoscorta -->.
 
-### Pedidos de Clientes (Ordini Clienti) {#sales-orders}
+### Pedidos de Cliente<!-- Ordini Clienti --> {#sales-orders}
 
-En esta pestaña se pueden filtrar las líneas de pedidos de clientes que se quieran analizar mediante el procedimiento **generazione commesse di produzione**.
+En esta pestaña se pueden filtrar las líneas de pedido de cliente<!-- ordine cliente --> que se desean analizar mediante el procedimiento **Generación de órdenes de producción<!-- Generazione commesse di produzione -->**.
 
-Para poder visualizarse dentro de esta pestaña, las líneas de pedidos deben cumplir con los siguientes **requisitos**:
+Para poder visualizarse dentro de esta pestaña, las líneas de pedido deben cumplir con los siguientes **requisitos**:
 
-- el artículo objeto de la línea del pedido del cliente debe tener el indicador *generazione commesse di produzione* habilitado en sus [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters);  
-- la línea no debe haber sido completada a través de *Lista de Picking (Picking list)*, o *DDT de venta*, o *Factura de venta*;  
-- la línea no debe haber sido marcada como *forzatamente evasa* y, por lo tanto, debe estar en estado *No Completada (Non Evasa)* o *parzialmente evasa*;  
-- no debe haberse generado aún *Órdenes de producción* desde la línea;  
-- la línea debe tener la *Fecha de mercancía lista* y *Fecha de entrega* ingresadas en el *Pedido del cliente* dentro de la pestaña *Artículos* de donde proviene;  
-- el pedido del cliente del que proviene la línea debe estar *Impreso* y *Confirmado*.
+- El artículo de la línea de pedido de cliente debe tener activada la opción *Generación de órdenes de producción<!-- Generazione commesse di produzione -->* en sus [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters);
+- La línea no debe haber sido despachada por medio de *Picking list*, *Remisión de venta<!-- DDT di vendita -->* o *Factura de venta<!-- Fattura di vendita -->*;
+- La línea no debe haber sido marcada como *Despachada forzadamente<!-- Forzatamente evasa -->*, por lo tanto debe estar en estado *No Despachada<!-- Non Evasa -->* o *Parcialmente despachada<!-- Parzialmente evasa -->*;
+- Desde la línea aún no deben haberse generado *Órdenes de producción<!-- Commesse di produzione -->*;
+- La línea debe tener la *Fecha de mercancía lista<!-- Data merce pronta -->* y *Fecha de entrega<!-- Data consegna -->* ingresadas en el *Pedido de cliente<!-- Ordine cliente -->* dentro de la pestaña *Artículos<!-- Articoli -->* de donde proviene;
+- El pedido de cliente desde donde proviene la línea debe estar *Impreso<!-- Stampato -->* y *Confirmado<!-- Confermato -->*.
 
 :::note Nota
-La falta de UN SOLO requisito provoca la imposibilidad de visualizar la línea del pedido del cliente en la cuadrícula.
+La ausencia de UNA SOLA de estas condiciones provoca la imposibilidad de visualizar la línea del pedido de cliente en la cuadrícula.
 :::
 
-En el área de filtro se pueden filtrar solamente las líneas de pedidos que se quieren visualizar en base a los filtros presentes. Una vez establecidos los filtros necesarios, al hacer clic en el botón **Buscar** se mostrarán en la cuadrícula de resultados todas las líneas de pedidos correspondientes a los filtros indicados.
+En el área de filtro es posible filtrar solamente las líneas de pedido que se quieren visualizar según los filtros presentes. Una vez establecidos los filtros necesarios, al hacer clic en el botón **Buscar<!-- Ricerca -->** se mostrarán en la cuadrícula de resultados todas las líneas de pedido correspondientes a los filtros indicados.
 
-*Campos*  
+*Campos*
 
-**tipo**: representa el tipo de pedido del cliente;  
-**numero**: representa el número del pedido del cliente;  
-**anno**: representa el año del pedido del cliente;  
-**Fecha del pedido del cliente (Data ordine cliente)**: representa la fecha del pedido del cliente;  
-**numero riga**: representa el número de línea del pedido del cliente;  
-**cliente**: representa la cuenta y subcuenta del cliente del pedido del cliente;  
-**classe** y **codice articolo**: representan la clase y el código del artículo;  
-**variante**: representa la variante del artículo;  
-**quantità**: representa la cantidad aún pendiente de completar de la línea de pedido;  
-**disponibilità**: representa la cantidad disponible del artículo en la fecha de mercancía lista de la línea de pedido;  
-**unità di misura**: representa la unidad de medida;  
-**consegna**: representa la fecha de mercancía lista de la línea de pedido;  
-**tipo commessa** y **descrizione commessa**: representan el código y la descripción del tipo de orden asociado al *tipo de pedido de cliente*;  
-**descrizione articolo**: representa la descripción del artículo;  
-**descrizione conto**: representa la razón social del cliente.  
+**Tipo**: representa el tipo de pedido de cliente;
+**Número**: representa el número de pedido de cliente;
+**Año**: representa el año del pedido de cliente;
+**Fecha de pedido de cliente<!-- Data ordine cliente -->**: representa la fecha del pedido de cliente;
+**Número de línea**: representa el número de línea del pedido de cliente;
+**Cliente**: representa la cuenta<!-- conto --> y subcuenta<!-- sottoconto --> del cliente del pedido de cliente;
+**Clase** y **Código de artículo**: representan la clase y el código del artículo;
+**Variante**: representa la variante del artículo;
+**Cantidad**: representa la cantidad aún por despachar de la línea de pedido;
+**Disponibilidad**: representa la cantidad disponible del artículo en la fecha de mercancía lista de la línea de pedido;
+**Unidad de medida**: representa la unidad de medida;
+**Entrega**: representa la fecha de mercancía lista de la línea de pedido;
+**Tipo de orden<!-- Tipo commessa -->** y **Descripción de la orden<!-- Descrizione commessa -->**: representan el código y la descripción del tipo de orden<!-- commessa --> asociada al *tipo de pedido cliente<!-- tipo ordine cliente -->*;
+**Descripción del artículo**: representa la descripción del artículo;
+**Descripción de la cuenta<!-- conto -->**: representa la razón social del cliente.
 
 :::note Nota
-La columna **Disponibilidad** resulta igual a cero para todas las líneas en caso de que el indicador *considera la disponibilità dell'articolo* presente en la pestaña **Parámetros** esté desactivado.
+La columna **Disponibilidad** es igual a cero para todas las líneas si la bandera *Considerar la disponibilidad del artículo* presente en la pestaña **Parámetros** está desactivada.
 :::
 
-*Botones específicos*  
+*Botones específicos*
 
-> **considera per commesse**: permite mover las líneas de pedido seleccionadas a la pestaña **riepilogo prototipi commesse** donde podrán ser consideradas por el procedimiento de generación de la orden de producción.  
+> **Considerar para órdenes<!-- Considera per commesse -->**: permite mover las líneas de pedido seleccionadas a la pestaña **Resumen de prototipos de órdenes<!-- Riepilogo prototipi commesse -->** donde podrán ser consideradas por el procedimiento de generación de la orden de producción.
 
-> **generazione flusso**: el botón se habilita solo si en los [Parámetros MS](/docs/configurations/parameters/production/mps-parameters/) se ha habilitado el indicador *generazione automatica flusso di produzione*. Con este botón es posible lanzar directamente la ejecución del flujo de producción completo y, por lo tanto, la *creación* de las *Órdenes de producción* que serían programadas directamente y, dependiendo de los indicadores posteriores establecidos también en los [Parámetros MS](/docs/configurations/parameters/production/mps-parameters/), eventualmente también se generarían las *Órdenes planificadas de compra, trabajo y producción*, con la posibilidad de definir cuáles se liberen automáticamente.  
-Por lo tanto, mediante el uso de este botón, podríamos encontrarnos ya con todas las órdenes planificadas liberadas y las órdenes de producción en estado ejecutivo, omitiendo así todas las fases intermedias.
+> **Generar flujo<!-- Generazione flusso -->**: el botón se habilita solo en caso de que, en los [Parámetros MS](/docs/configurations/parameters/production/mps-parameters/), se haya activado la opción *Generación automática de flujo de producción<!-- Generazione automatica flusso di produzione -->*. Con este botón es posible lanzar directamente la ejecución del flujo de producción completo, así como la *creación* de las *órdenes de producción<!-- Commesse di produzione -->* que se programarían directamente y, según las banderas posteriores establecidas también en los [Parámetros MS](/docs/configurations/parameters/production/mps-parameters/), se podrían generar también los *Pedidos planificados de compra, subcontratación<!-- conto lavoro --> y producción*, con la posibilidad de definir cuáles liberar automáticamente.
+Por lo tanto, a través de este botón se podría encontrar que todos los pedidos planificados ya están liberados y las órdenes de producción en estado ejecutivo, saltando así todas las fases intermedias.
 
-### Surtido bajo (Sottoscorta) {#safety-stock}
+### Stock mínimo<!-- Sottoscorta --> {#safety-stock}
 
-A través de esta pestaña se pueden filtrar las líneas de artículos gestionados a Stock que se quieran analizar mediante el procedimiento de *generazione commesse di produzione*.  
-El único **requisito** que permite visualizar el artículo en esta cuadrícula es que tenga, en sus [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), el *Tipo de gestión* en *Stock*.
+A través de esta pestaña se pueden filtrar las líneas de artículos gestionados con Stock<!-- Scorta --> que se desean analizar mediante el procedimiento *Generación de órdenes de producción<!-- Generazione commesse di produzione -->*.
+El único **requisito** que permite que el artículo sea visualizable en esta cuadrícula es que tenga, en sus [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), el *Tipo de gestión* como *Stock<!-- Scorta -->*.
 
-En el área de filtro se pueden filtrar solamente las líneas de pedidos que se quieran visualizar en base a los *filtros* ingresados.  
-**vedi variante**: el indicador activo permite visualizar la variante;  
-**Tipo de orden de producción (Tipo commessa di produzione)**: permite decidir el tipo de orden de producción a generar;  
-**Bajo punto de reorden hasta (Sotto punto di riordino al)**: representa la fecha hasta la cual no se quiere que los artículos de la cuadrícula queden en situación de surtido bajo.  
+En el área de filtro es posible filtrar solamente las líneas de pedido que se desean visualizar según los *filtros* aplicados.
+**Ver variante**: la bandera activa permite visualizar la variante;
+**Tipo de orden de producción<!-- Tipo commessa di produzione -->**: permite decidir el tipo de orden de producción<!-- commessa di produzione --> a generar;
+**Por debajo del punto de reposición hasta el**: representa la fecha hasta la cual no se quiere que los artículos de la cuadrícula entren en stock mínimo<!-- sottoscorta -->.
 
-Una vez establecidos los filtros necesarios, al hacer clic en el botón **Buscar** se mostrarán en la cuadrícula de resultados todas las líneas de artículos correspondientes a los filtros indicados.
+Una vez definidos los filtros necesarios, haciendo clic en el botón **Buscar<!-- Ricerca -->** se mostrarán en la cuadrícula de resultados todas las líneas de artículos correspondientes a los filtros indicados.
 
-Los datos que se pueden visualizar en la cuadrícula son:  
-**classe**, **codice** y **descrizione articolo**;  
-**variante**: se visualiza si el indicador homónimo ha sido seleccionado; si se ha decidido en el área de filtro que se muestre;  
-**punto di riordino**, **scorta minima** y **giorni di riordino**: se toman del *anagrafica articolo* > pestaña *approvvigionamento*;  
-**Consumo medio diario (Consumo medio giornaliero)**: se calcula restando el stock mínimo del punto de reorden y dividiendo el resultado obtenido por los días de reorden;  
-**Lote económico de producción (Lotto economico di produzione)** y sus **multipli**: se toman de la pestaña de producción de los [parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del artículo si es de *tipo abastecimiento de producción*, mientras que se obtienen del *proveedor predeterminado* de la pestaña *proveedores preferenciales* del *registro del artículo* en caso de que sea *tipo abastecimiento de compra*;  
-**giacenza**: representa el inventario del artículo a la fecha actual;  
-**disponibilità iniziale**: representa la disponibilidad del artículo el día en que se lanza el procesamiento;  
-**disponibilità finale**: representa la disponibilidad del artículo el día indicado en la casilla **sotto punto di riordino alla data** presente en el área de filtro;  
-**disponibilità minima**: representa la disponibilidad mínima que el artículo presenta en el intervalo de tiempo que transcurre entre la fecha de disponibilidad inicial y la fecha de disponibilidad final.  
+Los datos que se pueden visualizar dentro de la cuadrícula son:
+**Clase**, **Código** y **Descripción del artículo**;
+**Variante**: se visualiza si se ha activado la bandera homónima; si se ha decidido en el área de filtro que se visualice;
+**Punto de reposición**, **Stock mínimo<!-- Scorta minima -->** y **Días de reposición**: se toman de la *Ficha de artículo<!-- Anagrafica articolo -->* > pestaña *Abastecimiento<!-- Approvvigionamento -->*;
+**Consumo medio diario**: se calcula restando el stock mínimo al punto de reposición y dividiendo el resultado por los días de reposición;
+**Lote económico de producción** y sus **Múltiplos**: se toman de la pestaña de producción de los [parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) del artículo si es de *tipo abastecimiento de producción*, mientras que provienen del *proveedor predefinido* de la pestaña *proveedores preferenciales* de la *ficha de artículo<!-- anagrafica articolo -->* en caso de ser de *tipo abastecimiento de compra*;
+**Existencia<!-- Giacenza -->**: muestra la existencia del artículo a la fecha actual;
+**Disponibilidad inicial**: representa la disponibilidad del artículo al día en que se lanza el procesamiento;
+**Disponibilidad final**: representa la disponibilidad del artículo al día indicado en la casilla **Por debajo del punto de reposición hasta la fecha** presente en el área de filtro;
+**Disponibilidad mínima**: representa la disponibilidad mínima que el artículo presenta en el periodo que va desde la fecha de disponibilidad inicial hasta la fecha de disponibilidad final.
 
 :::note Nota
-Para los documentos sin la Fecha de Entrega, se considera el parámetro *Si no se especifica la fecha de entrega* presente en la pestaña Parámetros.
+Para los documentos sin Fecha de Entrega se considera el parámetro *Si no se especifica la fecha de entrega* presente en la pestaña Parámetros.
 :::
 
 La *cuadrícula inferior* muestra el detalle de la disponibilidad del artículo seleccionado en la cuadrícula principal.
 
 :::note Nota
-En la primera línea de la cuadrícula, la disponibilidad se da por la suma del inventario y de todos los documentos vencidos (con fecha anterior a hoy).
+En la primera fila de la cuadrícula, la disponibilidad se calcula sumando la existencia<!-- giacenza --> y todos los documentos vencidos (con fecha anterior a hoy).
 :::
 
-*Botón específico*  
+*Botón específico*
 
-> **considera per commesse**: permite mover las líneas seleccionadas a la pestaña **riepilogo prototipi commesse** donde podrán ser examinadas por el procedimiento de generación de la orden de producción.
+> **Considerar para órdenes<!-- Considera per commesse -->**: permite mover las líneas seleccionadas a la pestaña **Resumen de prototipos de órdenes<!-- Riepilogo prototipi commesse -->** donde podrán ser tomadas en cuenta por el procedimiento de generación de la orden de producción.
 
-Solo las líneas para las cuales el procedimiento considera que se puede crear una orden de producción se transferirán a la pestaña *Resumen de prototipos de órdenes*. El procedimiento propone para cada artículo una orden de producción y trata de asegurar que en el día en que el artículo corra el riesgo de caer por debajo del nivel de stock mínimo, se reponga mediante una orden de producción con la misma fecha que la fecha de surtido bajo. La cantidad de esta orden deberá permitir sobrevivir hasta la fecha de **Bajo punto de reorden** indicada en el área de filtro: obviamente, si el artículo presenta lotes económicos de producción o de compra y múltiplos, estos serán respetados.
+Solo las líneas para las cuales el procedimiento determine que se puede generar una orden de producción serán transferidas a la pestaña *Resumen de prototipos de órdenes<!-- Riepilogo prototipi commesse -->*. El procedimiento propone para cada artículo una orden de producción y trata de que en el día en que el artículo corre el riesgo de caer por debajo del nivel de stock mínimo, sea repuesto mediante una orden de producción con fecha idéntica a la fecha de stock mínimo<!-- sottoscorta -->. La cantidad de esta orden debe permitir cubrir hasta la fecha de **Por debajo del punto de reposición** indicada en el área de filtro: obviamente, si el artículo tiene lotes económicos de producción o de compra y múltiplos, estos se respetan.
 
-### Pronóstico (Previsionale) {#forecast}
+### Previsional<!-- Previsionale --> {#forecast}
 
-En esta pestaña se pueden filtrar las líneas de *Pronósticos de ventas* o del *Plan maestro de producción* que se quieran analizar mediante el procedimiento **generazione commesse di produzione**, utilizando los filtros por artículo y variante.
+En esta pestaña se pueden filtrar las líneas de *Previsiones de venta* o del *Plan maestro de producción* que se desean analizar mediante el procedimiento **Generación de órdenes de producción<!-- Generazione commesse di produzione -->**, utilizando los filtros por artículo y por variante.
 
-Las líneas de los *Pronósticos de ventas* que pueden visualizarse en esta pestaña deben cumplir con los siguientes **requisitos**:
+Las líneas de *Previsiones de venta* que pueden visualizarse en esta pestaña deben cumplir con los siguientes **requisitos**:
 
-- el pronóstico de ventas anual debe estar en estado de *Consolidado*;  
-- el pronóstico de ventas anual debe haber sido generado con una *Versión* válida;  
-- desde la línea de pronóstico no deben haberse generado aún *Órdenes de producción*;  
-- las líneas del *Plan maestro de producción* que pueden visualizarse en esta pestaña no deben haber generado aún *Órdenes de producción*.  
+- La previsión de venta anual debe estar en estado *Consolidada*;
+- La previsión de venta anual debe haberse generado con una *Versión* válida;
+- Desde la línea de previsión no deben haberse generado aún *Órdenes de producción<!-- Commesse di produzione -->*;
+- De las líneas del *Plan maestro de producción* que pueden visualizarse en esta pestaña no deben haberse generado aún *Órdenes de producción<!-- Commesse di produzione -->*.
 
-En el área de filtro se pueden filtrar solamente las líneas de pedidos que se quieran visualizar en base a los *filtros* ingresados.  
-**vedi variante**: el indicador activo permite visualizar la variante;  
-**Mes de finalización de la programación (Mese di fine schedulazione)**: sirve para visualizar en la cuadrícula solo los pronósticos de ventas que lleguen hasta la fecha indicada;  
-**tipo commessa**: representa el tipo de orden de producción a generar;  
-**tipi ordine**: la cuadrícula permite establecer los *Tipos de pedidos de cliente* que deben ser considerados simultáneamente con las cantidades presentes en los pronósticos de venta, de modo que el procedimiento de creación de la orden genere la orden de producción con una cantidad igual a la mayor, la menor o la suma de las cantidades presentes, para el mismo artículo, en línea de pedido de cliente y/o en pronóstico de producción o plan maestro.
+En el área de filtro es posible filtrar solo las líneas de pedido que se quieran visualizar según los *filtros* aplicados.
+**Ver variante**: la bandera activa permite visualizar la variante;
+**Mes de fin de programación**: sirve para visualizar en la cuadrícula solo las previsiones de venta que lleguen hasta la fecha indicada;
+**Tipo de orden<!-- Tipo commessa -->**: representa el tipo de orden de producción<!-- commessa di produzione --> a generar;
+**Tipos de pedido<!-- Tipi ordine -->**: la cuadrícula permite establecer los *Tipos de pedido cliente<!-- Tipi ordini cliente -->* que deben considerarse junto con las cantidades presentes en las previsiones de venta, de modo que el procedimiento de creación de órdenes genere la orden de producción con la cantidad correspondiente al mayor, menor o suma de las cantidades presentes, para el mismo artículo, en la línea de pedido cliente y/o en previsión de producción o plan maestro.
 
-Una vez establecidos los filtros necesarios, al hacer clic en el botón **Buscar** se mostrarán en la cuadrícula de resultados todas las líneas de pronóstico correspondientes a los filtros indicados.
+Una vez configurados los filtros necesarios, haciendo clic en el botón **Buscar<!-- Ricerca -->** se mostrarán en la cuadrícula de resultados todas las líneas de previsión correspondientes a los filtros indicados.
 
-*Campos*  
+*Campos*
 
-**classe**, **codice** y **descrizione articolo**;  
-**variante**: se visualiza si el indicador homónimo ha sido seleccionado; si se ha decidido en el área de filtro que se muestre;  
-**anno**: representa el año del pronóstico de ventas;  
-**mese/sett**: representa el número del mes o semana del pronóstico de ventas;  
-**Fecha de generación de orden (Data gen. commessa)**: representa la fecha de generación de la orden de producción;  
-**Fechas de inicio / fin del pronóstico (Date inizio / fine previsione)**: por ejemplo, si el pronóstico se ha establecido para el mes de mayo, la fecha de inicio será el 01/05 y la fecha de fin será el 31/05;  
-**quantità**: representa la cantidad relativa a la línea de pronóstico individual;  
-**Cuenta/Subcuenta/Descripción de cuenta (Conto/Sottoconto/Descrizione conto)**: representa la cuenta del cliente relacionada con la línea de pronóstico de ventas (cuando esté presente).  
+**Clase**, **Código** y **Descripción del artículo**;
+**Variante**: se visualiza si se ha activado la bandera homónima; si se ha decidido en el área de filtro que se visualice;
+**Año**: representa el año de la previsión de venta;
+**Mes/Sem**: representa el número de mes o de semana de la previsión de venta;
+**Fecha de generación de la orden<!-- Data gen. commessa -->**: representa la fecha de generación de la orden de producción;
+**Fechas inicio / fin de previsión**: por ejemplo, si la previsión se programó para el mes de mayo, la fecha de inicio será el 01/05 y la de fin el 31/05;
+**Cantidad**: representa la cantidad de la línea de previsión;
+**Cuenta/Subcuenta/Descripción de la cuenta<!-- Conto/Sottoconto/Descrizione conto -->**: representa la cuenta<!-- conto --> del cliente relativa a la línea de previsión de venta (donde aplique).
 
-*Botón específico*  
+*Botón específico*
 
-> **considera per commesse**: permite mover las líneas seleccionadas a la pestaña **riepilogo prototipi commesse** donde podrán ser consideradas por el procedimiento de generación de la orden de producción.
+> **Considerar para órdenes<!-- Considera per commesse -->**: permite mover las líneas seleccionadas a la pestaña **Resumen de prototipos de órdenes<!-- Riepilogo prototipi commesse -->** donde podrán ser tomadas en cuenta por el procedimiento de generación de la orden de producción.
 
-### Resumen de prototipos de órdenes (Riepilogo prototipi commesse)
+### Resumen de prototipos de órdenes<!-- Riepilogo prototipi commesse -->
 
-Esta pestaña presenta las líneas que han sido trasladadas desde las pestañas anteriores y que deben transformarse en órdenes de producción.
+Esta pestaña presenta las líneas que se han movido desde las pestañas anteriores y que deben ser transformadas en órdenes de producción.
 
-La pestaña contiene:  
-- la sección **Orden de producción propuesta (Commessa di produzione proposta)** en la que el usuario puede establecer el **Tipo**, el **Año** y el **Número** de la orden de producción a la que se deben agregar las líneas seleccionadas en la misma pestaña **Resumen de prototipos de órdenes**.  
-- la cuadrícula de resultados donde se visualizarán las líneas del artículo que han sido trasladadas desde las otras pestañas.
+La pestaña contiene:
+- la sección **Orden de producción propuesta<!-- Commessa di produzione proposta -->** donde el usuario puede establecer el **Tipo**, el **Año** y el **Número** de la orden de producción<!-- commessa di produzione --> a la que deben añadirse las líneas seleccionadas en la misma pestaña **Resumen de prototipos de órdenes<!-- Riepilogo prototipi commesse -->**.
+- la cuadrícula de resultado donde se visualizarán las líneas de artículo que se han trasladado desde otras pestañas.
 
-*Campos de la cuadrícula*:  
+*Campos de cuadrícula*:
 
-**dati da**: representa la pestaña de origen de la línea;  
-**classe**, **codice articolo** y **descrizione**: representan la clase, el código y la descripción del artículo;  
-**variante**: representa la variante del artículo;  
-**quantità**: representa la cantidad de la orden que es propuesta por el procedimiento;  
-**disponibilità**: representa la cantidad disponible del artículo a la *Fecha de entrega*;  
-**Fecha de entrega (Data di consegna)**: representa la fecha de finalización de la orden de producción propuesta (que puede ser modificada manualmente por el usuario);  
-**Fecha de inicio del pronóstico (Data inizio previsione)**: representa la fecha de inicio del pronóstico;  
-**codice tipo**: representa el código del pedido del cliente;  
-**numero ordine cliente**: representa el número del pedido del cliente;  
-**Cuenta / Subcuenta / Descripción de cuenta (Conto / Sottoconto / Descrizione conto)**: representan la cuenta del cliente relacionada con la línea de pronóstico de ventas (cuando esté presente);  
-**tipo commessa** y **descrizione commessa**: representan el código y la descripción del tipo de orden.  
+**Datos desde**: representa la pestaña de origen de la línea;
+**Clase**, **Código de artículo** y **Descripción**: representan la clase, el código y la descripción del artículo;
+**Variante**: representa la variante del artículo;
+**Cantidad**: representa la cantidad de la orden<!-- commessa --> que propone el procedimiento;
+**Disponibilidad**: representa la cantidad disponible del artículo en la *Fecha de entrega<!-- Data consegna -->*;
+**Fecha de entrega**: representa la fecha de fin de la orden de producción<!-- commessa di produzione --> propuesta (que puede modificarse manualmente por el usuario);
+**Fecha de inicio de previsión**: representa la fecha de inicio de previsión;
+**Código de tipo**: representa el código del pedido de cliente<!-- ordine cliente -->;
+**Número de pedido de cliente<!-- Numero ordine cliente -->**: representa el número del pedido de cliente<!-- ordine cliente -->;
+**Cuenta / Subcuenta / Descripción de la cuenta<!-- Conto / Sottoconto / Descrizione conto -->**: representan la cuenta<!-- conto --> del cliente relativa a la línea de previsión de venta (donde aplique);
+**Tipo de orden<!-- Tipo commessa -->** y **Descripción de la orden<!-- Descrizione commessa -->**: representan el código y la descripción del tipo de orden<!-- commessa -->.
 
-Después de haber seleccionado las líneas deseadas, el usuario tiene la posibilidad de crear las órdenes de producción según los criterios establecidos en la pestaña **Parámetros**, utilizando el botón **formazione automatica commesse**. El procedimiento presenta, al final del procesamiento, una ventana en la que se especifican los números de las órdenes generadas, ventana en la que el usuario solo debe hacer clic en OK y cerrar.
+Luego de seleccionar las líneas deseadas, el usuario tiene la posibilidad de crear las órdenes de producción<!-- commesse di produzione --> de acuerdo a los criterios configurados en la pestaña **Parámetros**, utilizando el botón **Creación automática de órdenes<!-- Formazione automatica commesse -->**. El procedimiento mostrará, al final del procesamiento, una ventana con los números de las órdenes generadas. El usuario solo debe hacer clic en Aceptar y cerrar.
 
-*Botón específico*  
-> **formazione automatica commesse**: llama al procedimiento que genera las órdenes de producción a partir de las líneas seleccionadas.  
+*Botón específico*
+> **Creación automática de órdenes<!-- Formazione automatica commesse -->**: llama al procedimiento que genera las órdenes de producción<!-- commesse di produzione --> de las líneas seleccionadas.
 
 ### Parámetros
 
-A través de esta pestaña se configuran todos los parámetros relacionados con la gestión de la creación de órdenes de producción y la manera en que deben gestionarse las fases posteriores a la generación de las órdenes mismas. Algunas configuraciones presentes en esta pestaña se toman de la ventana [Parámetros MPS](/docs/configurations/parameters/production/mps-parameters).
+En esta pestaña se configuran todos los parámetros que afectan la gestión de la creación de órdenes de producción<!-- commesse di produzione --> y la manera en que deben ser gestionadas las fases posteriores a la generación de las órdenes. Algunas configuraciones presentes en esta pestaña se retoman de la ventana [Parámetros MPS](/docs/configurations/parameters/production/mps-parameters).
 
-**metodo generazione commessa**:  
-- **tipo commessa** (Monoproduto / Multiprodotto): se repite el dato que fue establecido en la pestaña [Parámetros MPS](/docs/configurations/parameters/production/mps-parameters). En el momento de la generación de la orden desde la *generazione commesse di produzione*, es posible modificar esta configuración dentro de esta ventana, así como la relacionada con el combo siguiente;  
-- **raggruppamento prodotti per**: combo mediante el cual se puede indicar cómo deben agruparse eventualmente los artículos dentro de la misma orden *Monoprodotto* o *Multiprodotto*.  
+**Método de generación de orden<!-- Metodo generazione commessa -->**:
+- **Tipo de orden<!-- Tipo commessa -->** (Mono-producto/Multiproducto): se retoma el dato configurado en la pestaña [Parámetros MPS](/docs/configurations/parameters/production/mps-parameters). En el momento de la generación de la orden desde la *Generación de órdenes de producción<!-- Generazione commesse di produzione -->* es posible modificar esta configuración en esta ventana, al igual que la relativa al selector siguiente;
+- **Agrupación de productos por**: selector mediante el cual es posible indicar cómo deben agruparse eventualmente los artículos dentro de la misma orden *Mono-producto* o *Multiproducto*.
 
-> Si el tipo de orden es *Monoprodotto*, la única agrupación permitida es la por *Artículo*; este tipo de gestión permite al usuario hacer que el sistema genere automáticamente una serie de órdenes *Monoprodotto*, seleccionando una lista de líneas de *Pedidos de clientes*, líneas provenientes de *Pronósticos de ventas* o del *Plan maestro de producción* o provenientes del *Surtido bajo*, haciendo que cada orden que se generará presente la suma de las cantidades requeridas para el mismo artículo. La fecha de finalización de una orden agrupada es siempre igual a la del requerimiento más cercano a la fecha en que se lanza el procesamiento.  
-> Si el tipo de orden es *Multiprodotto*, las agrupaciones pueden realizarse por cliente o proyecto y permiten al usuario incluir en la misma orden *Multiprodotto* múltiples artículos provenientes de líneas de pedido del cliente relacionadas con el mismo cliente, la misma orden de venta o la misma orden de venta del mismo cliente.
+> Si el tipo de orden<!-- commessa --> es *Mono-producto*, la única agrupación permitida es por *Artículo*; este tipo de gestión permite al usuario hacer que el sistema genere automáticamente una serie de órdenes *Mono-producto*, seleccionando una lista de líneas de *Pedidos de cliente<!-- Ordini clienti -->*, líneas provenientes de *Previsiones de venta* o del *Plan maestro de producción* o provenientes de *Stock mínimo<!-- Sottoscorta -->* de forma que cada orden generada presenta la suma de las cantidades requeridas para el mismo artículo. La fecha de finalización de una orden agrupada es siempre la del requerimiento más cercano a la fecha en que se lanza el procesamiento.
+> Si el tipo de orden es *Multiproducto*, los agrupamientos pueden realizarse por cliente o proyecto y permiten al usuario incluir dentro de la misma orden *Multiproducto* varios artículos provenientes de líneas de pedido de cliente relacionadas al mismo cliente, a la misma orden de venta o a la misma orden de venta del mismo cliente.
 
-**priorità approvvigionamento**: el combo muestra la prioridad de abastecimiento que se había establecido en los [Parámetros MPS](/docs/configurations/parameters/production/mps-parameters) al seleccionar una prioridad entre las codificadas en la tabla *Prioridad de abastecimiento* que se encuentra entre las tablas de la sección *Configuraciones Generales*.
+**Prioridad de suministro<!-- Priorità approvvigionamento -->**: el selector presenta la prioridad de suministro configurada en los [Parámetros MPS](/docs/configurations/parameters/production/mps-parameters) seleccionando una prioridad entre las codificadas en la tabla *Prioridad de suministro* que se encuentra en la sección de *Ajustes Generales*.
 
-**aggiornamento commesse già esistenti**: las órdenes seleccionadas en la pestaña resumen se añaden a una orden ya existente (indicada en el cuadro *Orden de producción propuesta (Commessa di produzione propost)* de la pestaña **Resumen**), si y solo si está habilitado el indicador **Actualización de órdenes ya existentes** en la pestaña de parámetros. Automáticamente se propondrá una orden ya guardada donde añadir las líneas, si ya existe una con ese tipo y fecha.
+**Actualización de órdenes existentes<!-- Aggiornamento commesse già esistenti -->**: las órdenes seleccionadas en la pestaña de resumen se agregan a una orden ya existente (indicada en el cuadro '*Orden de producción propuesta<!-- Commessa di produzione propost -->*' de la pestaña **Resumen<!-- Riepilogativo -->**), si y solo si está activada la bandera **Actualización de órdenes existentes<!-- Aggiornamento commesse già esistenti -->** en la pestaña de parámetros. Automáticamente se propondrá una orden ya guardada donde agregar las líneas, si ya existe una con ese tipo y fecha.
 
-A continuación, a través de indicadores específicos, se puede decidir si la orden debe generarse a partir de **Pedidos de clientes** o de un **Pronóstico** (y en el caso del pronóstico si de **Pronósticos de ventas** o del **Plan maestro de producción**), o bien, en última instancia, del **Surtido bajo**. En este último caso se utiliza un algoritmo particular explicado en el párrafo dedicado a la pestaña [Surtido bajo](#safety-stock).
+A continuación, mediante banderas específicas, se puede indicar si la orden debe generarse a partir de **Pedidos de cliente<!-- Ordini clienti -->** o de un **Previsional<!-- Previsionale -->** (y en el caso del previsional si desde **Previsiones de venta<!-- Previsioni di vendita -->** o del **Plan maestro de producción<!-- Piano principale di produzione -->**), o bien, como última instancia, desde **Stock mínimo<!-- Sottoscorta -->**. En este último caso se utiliza un algoritmo particular explicado en el párrafo dedicado a la pestaña [Stock mínimo](#safety-stock).
 
-**previsionale**: si el indicador está activo, luego se puede decidir con qué modalidad temporal deben generarse las órdenes de producción, entre las siguientes opciones:  
-> **mensile**: en este caso, la orden de producción se generará en el mes en que caiga la fecha de finalización del Pronóstico de Ventas o en el mes en que se haya ingresado la cantidad en el Plan Maestro de Producción. El usuario también puede establecer el día del mes en que la fecha prevista de finalización de la orden debe ser establecida por el procedimiento automático de creación de la orden;  
-> **settimanale**: en este caso, se generará una orden de producción para cada semana del mes en que caiga la fecha de finalización del Pronóstico de Ventas o del mes en que se haya ingresado la cantidad en el Plan Maestro de Producción. El usuario también puede establecer el día de la semana en que debe ser establecida la fecha prevista de finalización de la orden por el procedimiento automático de creación de la orden;  
-> **reali**: en este caso se generará una orden de producción para cada semana del mes en que cae la fecha de finalización de la *Previsión de Ventas* o del mes en que se ha ingresado la cantidad en el *Plan Maestro de Producción*, pero considerando exactamente la fecha de finalización de cada línea de la *Previsión de Ventas*;  
-> **Semanal considerando días de producción de la zona de entrega (Settimanale considerando gg di produzione della zona di consegna)**: en este caso, se generará una orden de producción teniendo en cuenta los días de producción de la zona de entrega asociada al cliente para el cual se ha creado la *Previsión de Ventas*;  
-> **raggruppamento previsioni per clienti**: el indicador sirve para garantizar que las órdenes de producción se generen agrupando las líneas de pronóstico de los mismos clientes.
+**Previsional**: si la bandera está activada, luego se puede decidir en qué modalidad temporal deben generarse las órdenes de producción, entre las siguientes opciones:
+> **Mensual**: en este caso, la orden de producción se generará en el mes en el que caiga la fecha de finalización de la Previsión de Venta o en el mes en que se haya ingresado la cantidad en el Plan Maestro de Producción. El usuario también puede establecer el día del mes en que la fecha prevista de finalización de la orden debe establecerse mediante el procedimiento automático de creación de órdenes;
+> **Semanal**: en este caso se generará una orden de producción por cada semana del mes en que caiga la fecha de finalización de la Previsión de Venta o del mes en que se ingresó la cantidad en el Plan Maestro de Producción. El usuario también puede establecer el día de la semana en que la fecha prevista de finalización de la orden debe establecerse mediante el procedimiento automático de creación de órdenes;
+> **Reales**: en este caso se generará una orden de producción para cada semana del mes en que caiga la fecha de finalización de la *Previsión de Venta* o del mes en que se ingresó la cantidad en el *Plan Maestro de Producción*, pero considerando exactamente la fecha de finalización de la línea individual de la *Previsión de Venta*;
+> **Semanal considerando días de producción de la zona de entrega**: en este caso se generará una orden de producción considerando los días de producción de la zona de entrega vinculada al cliente para el que se creó la *Previsión de Venta*;
+> **Agrupamiento de previsiones por cliente**: la bandera sirve para que las órdenes de producción se generen agrupando las líneas de previsión de los mismos clientes.
 
-**Si no se especifica la fecha de entrega** la sección tiene que ver exclusivamente con la pestaña *ordini clienti* y la pestaña *sottoscorta* de la *generazione commesse di produzione*. Aquí el usuario puede decidir si, en caso de que falte la *Fecha de mercancía lista* en la línea del pedido del cliente que debe ser analizada por el procedimiento, se debe ignorar la línea sin fecha, o si debe aceptarse cierta fecha como fecha prevista de finalización de la orden que se generará, o si debe aceptarse cierta fecha como fecha prevista de inicio de la orden que se generará (en estos dos últimos casos las fechas deben seleccionarse en los dos combos dedicados).
+**Si no se especifica la fecha de entrega** la sección se refiere exclusivamente a la pestaña *Pedidos de Cliente<!-- Ordini Clienti -->* y a la pestaña *Stock mínimo<!-- Sottoscorta -->* de la *Generación de órdenes de producción<!-- Generazione commesse di produzione -->*. Aquí, el usuario puede decidir si, en caso de que falte la *Fecha de mercancía lista<!-- Data merce pronta -->* en la línea del pedido de cliente que debe analizarse mediante el procedimiento, debe ignorarse la línea sin fecha, o bien debe aceptarse una determinada fecha como prevista de finalización de la orden que se generará, o debe aceptarse determinada fecha como prevista de inicio de la orden que se generará (en estos dos últimos casos las fechas se seleccionan en los dos selectores dedicados).
 
-**considera la disponibilità dell'articolo**: el indicador permite, si se activa, que en todas las pestañas de la *generazione commesse di produzione* se muestre la disponibilidad del artículo a la *Fecha prevista de finalización* de la orden de producción que debe ser creada. Lo mismo sucede también en la pestaña *Resumen de prototipos de órdenes*. La disponibilidad se considera en función de los indicadores activados en los *Parámetros MPS* (Trabajo, Compras, Ventas, Producción, Almacén). En este caso, cuando se va a crear la orden, el procedimiento tendrá en cuenta la disponibilidad creando la orden para la diferencia entre la demanda y la disponibilidad de ese artículo.
+**Considerar la disponibilidad del artículo**: la bandera permite, si está activa, que en todas las pestañas de *Generación de órdenes de producción<!-- Generazione commesse di produzione -->* se muestre la disponibilidad del artículo a la *Fecha prevista de finalización* de la orden de producción a crear. Lo mismo sucede también en la pestaña *Resumen de prototipos de órdenes<!-- Riepilogo prototipi commesse -->*. La disponibilidad se considera en base a las banderas activadas en los *Parámetros MPS* (Subcontratación<!-- Conto Lavoro -->, Compras, Ventas, Producción, Almacén<!-- Magazzino -->). En este caso, al crear la orden, el procedimiento considerará la disponibilidad, generando la orden por la diferencia entre la demanda y la disponibilidad de ese artículo.
 
-**magazzini di pianificazione commesse**: en la cuadrícula aparecen los almacenes que se han ingresado en la ventana del [Cálculo de Disponibilidad](/docs/erp-home/registers/items/calculate-availability). Desde esta pestaña **Parámetros** solo se pueden visualizar y no modificar.
+**Almacenes de planificación de órdenes<!-- Magazzini di pianificazione  commesse -->**: en la cuadrícula aparecen los almacenes<!-- magazzino --> que se han incluido en la ventana de [Cálculo de Disponibilidad](/docs/erp-home/registers/items/calculate-availability). Desde esta pestaña *Parámetros* solo se pueden visualizar y no modificar.
 
-**sito produttivo**: esta información, si se indica, se utiliza para que el procedimiento de generación de órdenes a partir del pedido del cliente considere únicamente las líneas de pedido de cliente confirmadas, donde el almacén de extracción previsto está asociado a ese sitio productivo.
+**Sitio productivo:** esta información, si se indica, se utiliza para que el procedimiento de generación de órdenes desde pedido de cliente tenga en cuenta solo las líneas de pedidos de cliente confirmadas cuyo almacén de retiro previsto está asociado a ese sitio productivo.
 
-**Cálculo de cantidad en base al lote económico (Calcolo quantità in base al lotto economico)**: si se activa, este indicador garantiza que el procedimiento genere la orden de producción considerando el lote económico de compra ingresado en la pestaña [Proveedores preferenciales](/docs/erp-home/registers/items/create-new-item) en el proveedor designado como predeterminado si el artículo analizado en *generazione commesse di produzione* tiene como *Tipo de abastecimiento*: *Compra* o *Trabajo*, y el lote económico de producción ingresado en los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) si el artículo objeto de la orden tiene como *Tipo de abastecimiento*: *Producción*.  
+**Cálculo de cantidad según lote económico**: si está activo, esta bandera hace que el procedimiento genere la orden de producción considerando el lote económico de compra ingresado en la pestaña [Proveedores preferenciales](/docs/erp-home/registers/items/create-new-item) sobre el proveedor designado como predeterminado si el artículo analizado en *Generación de órdenes de producción<!-- Generazione commesse di produzione -->* tiene como *Tipo de abastecimiento*: *Compra* o *Subcontratación<!-- Conto Lavoro -->*, y el lote económico de producción ingresado en los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) si el artículo objeto de la orden tiene como *Tipo de abastecimiento* *Producción*.
 
-**Cálculo de cantidad en función de los múltiplos del artículo (Calcolo quantità in base ai multipli dell'articolo)**: si se activa, este indicador asegura que el procedimiento genere la orden de producción considerando también los múltiplos del lote económico de compra ingresado en la pestaña de proveedores preferenciales sobre el proveedor designado como predeterminado de los artículos si el artículo objeto de la orden tiene como *Tipo de abastecimiento*: *Compra* o *Trabajo*, y los múltiplos del lote económico de producción ingresados en los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) si el artículo analizado en *generazione commesse di produzione* tiene como *Tipo de abastecimiento*: *Producción*. Obviamente, este indicador solo puede activarse si está activo el indicador mencionado en el párrafo anterior.
+**Cálculo de cantidad según los múltiplos del artículo**: si está activo, esta bandera hace que el procedimiento genere la orden de producción considerando también los múltiplos del lote económico de compra ingresado en la pestaña de proveedores preferenciales para el proveedor designado como predeterminado de los artículos si el artículo objeto de la orden tiene como *Tipo de abastecimiento* *Compra* o *Subcontratación<!-- Conto Lavoro -->*, y los múltiplos del lote económico de producción ingresado en los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) si el artículo analizado en *Generación de órdenes de producción<!-- Generazione commesse di produzione -->* tiene como *Tipo de abastecimiento*: *Producción*. Obviamente, esta bandera solo puede activarse si está activa la bandera del párrafo anterior.
 
-**reintegro scorta minima dell'articolo**: si se activa, este indicador permite al usuario hacer que para el artículo analizado en *generazione commesse di produzione* se reponga el stock mínimo ingresado en la *Registro del artículo > pestaña Abastecimiento*.  
+**Reintegro del stock mínimo del artículo**: si está activo, esta bandera permite que para el artículo analizado en *Generación de órdenes de producción<!-- Generazione commesse di produzione -->* se reponga el stock mínimo<!-- scorta minima --> ingresado en la *Ficha de artículo > pestaña Abastecimiento*.
 
-**reintegro punto di riordino dell'articolo**: si se activa, este indicador permite al usuario hacer que para el artículo analizado en *generazione commesse di produzione* se reponga el punto de reorden ingresado en la *Registro del artículo > pestaña Abastecimiento*.  
+**Reintegro del punto de reposición del artículo**: si está activo, esta bandera permite que para el artículo analizado en *Generación de órdenes de producción<!-- Generazione commesse di produzione -->* se reponga el punto de reposición ingresado en la *Ficha de artículo > pestaña Abastecimiento*.
 
-**escludi ordini in ritardo**: si se activa, este indicador permite al usuario hacer que el procedimiento de generación de órdenes de producción excluya del cálculo de la disponibilidad del artículo analizado las cantidades provenientes de las líneas de pedidos de cliente cuya *Fecha de mercancía lista* es anterior a la fecha actual.
+**Excluir pedidos atrasados**: si está activo, esta bandera permite que el procedimiento de generación de la orden de producción excluya del cálculo de la disponibilidad del artículo analizado las cantidades provenientes de líneas de pedido de cliente cuya *Fecha de mercancía lista<!-- Data merce pronta -->* sea anterior a la fecha actual.
 
-Una vez establecidos los parámetros, se podrá proceder con la creación de etiquetas, en las respectivas pestañas de los [Pedidos de clientes](#sales-orders), del [Pronóstico](#forecast) y del [Surtido bajo](#safety-stock).
+Una vez configurados los parámetros, se podrá proceder con la creación de las órdenes en las respectivas pestañas de los [Pedidos de cliente](#sales-orders), el [Previsional](#forecast) y el [Stock mínimo<!-- Sottoscorta -->](#safety-stock).
 
-*Botón específico*  
-> **formazione automatica commesse**: llama al procedimiento que genera las órdenes de producción a partir de las líneas seleccionadas.  
+*Botón específico*
+> **Creación automática de órdenes<!-- Formazione automatica commesse -->**: llama al procedimiento que genera las órdenes de producción<!-- commesse di produzione --> de las líneas seleccionadas.
 
-Para detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
+Para más detalles sobre el funcionamiento común de los formularios, consulte el enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

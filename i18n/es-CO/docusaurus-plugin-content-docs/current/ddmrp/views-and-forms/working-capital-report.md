@@ -1,13 +1,14 @@
 ---
-title: Informe de capital de trabajo (Working capital report)
+title: Informe de capital de trabajo
 sidebar_position: 2
+ai_generated: true
 ---
-Este informe muestra el capital circulante generalmente invertido en las existencias de los artículos gestionados según la lógica Ddmrp.
 
-La valorización de tales existencias se realiza mediante el procedimiento [**valori inventario degli articoli**](/docs/ddmrp/procedures/inventory-value).
+Este informe muestra el capital de trabajo<!-- capitale circolante --> promedio invertido en las existencias de inventario<!-- scorte a magazzino --> de los artículos gestionados según la lógica Ddmrp.
 
-Hay dos tipos de informes:
+La valorización de dichas existencias<!-- scorte --> se realiza mediante el procedimiento [**valores de inventario de los artículos**](/docs/ddmrp/procedures/inventory-value)<!-- valori inventario degli articoli -->.
 
-- por artículo, con un desglose por artículo y, eventualmente, por almacén si se elige el informe para todos los almacenes, lo que permite comparar el capital invertido por cada artículo en los diferentes almacenes.
+Existen dos tipos de informes<!-- report -->:
 
-- por almacén, se muestra el total del capital circulante para cada almacén durante un período de tiempo seleccionado, lo que permite verificar la evolución del capital inmovilizado en cada almacén.
+- por artículo, con detalle por artículo y eventualmente por almacén<!-- magazzino --> si se elige el informe para todos los almacenes<!-- magazzini -->, permitiendo comparar el capital invertido por cada artículo en los diferentes almacenes<!-- magazzini -->
+- por almacén<!-- magazzino -->, se muestra el total del capital de trabajo<!-- capitale circolante --> para cada almacén<!-- magazzino --> durante el periodo de tiempo seleccionado, permitiendo verificar la evolución a lo largo del tiempo del capital inmovilizado en cada almacén<!-- magazzino -->

@@ -1,21 +1,20 @@
 ---
-title: analisi centri di costo
+title: Análisis de Centros de Costo
 sidebar_position: 1
+ai_generated: true
 ---
 
-El reporte del análisis de centros de costo permite imprimir el detalle de los movimientos contables que han valorizado cada centro de costo individual, totalizando los importes en el propio centro de costo.
+El informe de análisis de centros de costo<!-- centri di costo --> permite imprimir el detalle de los movimientos contables<!-- movimenti contabili --> que han valorizado cada uno de los centros de costo<!-- centro di costo -->, totalizando los importes en el propio centro de costo<!-- centro di costo -->. 
 
-Hay un área de filtro en el formulario con varios campos, entre los cuales los principales son el centro empresarial y la cuenta contable.
+En el formulario<!-- form --> hay un área de filtro con diferentes campos, entre los cuales los principales son el centro empresarial<!-- centro aziendale --> y la cuenta contable<!-- conto contabile -->.
 
 En la parte inferior se encuentran los criterios de agrupamiento.
 
-Un criterio típico de agrupamiento útil es el centro empresarial para observar los movimientos de las distintas cuentas para cada centro.
+Un criterio de agrupamiento típico y útil es el centro empresarial<!-- centro aziendale --> para observar los movimientos<!-- movimenti --> de las distintas cuentas<!-- conti --> separadas por cada centro.
 
-En relación con el uso de los criterios de agrupamiento, consulte **[Resumen de movimientos por motivo (Riepilogo movimenti per causale)](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template)**.
+Para el uso de los criterios de agrupamiento, consulte **[Resumen de movimientos por causa<!-- Riepilogo movimenti per causale -->](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template)**.
 
-
-
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión del análisis de centros de costo. |
-| Imprimir (Stampa) | Botón para ejecutar la impresión física del análisis de centros de costo. |
+| Vista previa<!-- Anteprima --> | Botón para obtener una vista previa de la impresión del análisis de centros de costo<!-- analisi centri di costo -->. |
+| Imprimir<!-- Stampa --> | Botón para realizar la impresión física del análisis de centros de costo<!-- analisi centri di costo -->. |

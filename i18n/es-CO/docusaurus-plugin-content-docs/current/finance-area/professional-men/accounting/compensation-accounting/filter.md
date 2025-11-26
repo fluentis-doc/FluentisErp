@@ -1,14 +1,15 @@
 ---
-title: filtro
+title: Filtro
 sidebar_position: 2
+ai_generated: true
 ---
 
-La parte superior del formulario está dedicada a la configuración de los filtros de búsqueda. Una vez que se establezcan en la parte inferior del formulario las fechas de registro correspondiente y el posible registro con estado provisional, solo es necesario presionar el botón de contabilización: si todo sale bien, las líneas seleccionadas desaparecerán de la cuadrícula y desde el formulario de reversión será posible previsualizar el resultado.
+La parte superior del formulario está dedicada a la configuración de los filtros de búsqueda. Una vez configuradas en la parte inferior del formulario las fechas de registro de competencia<!-- registrazione competenza --> y la eventual registración<!-- registrazione --> con estado provisional, basta con presionar el botón de contabilización: si todo sale correctamente, las filas seleccionadas desaparecerán de la cuadrícula y desde el formulario de reversión<!-- rollback --> será posible visualizar una vista previa del resultado.
 
 ![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/filter/image01.png)
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Buscar contabilizaciones (Ricerca contabilizzazioni) | Busca la lista de los compensos por contabilizar. |
-| Contabilización de compensos (Contabilizzazione compensi) | Ejecuta la contabilización de compensos para las líneas seleccionadas. |
-| Modificar compenso (Modifica compenso) | Abre para modificar el compenso seleccionado. |
+| Buscar contabilizaciones<!-- Ricerca contabilizzazioni --> | Busca la lista de compensaciones<!-- compensi --> para contabilizar. |
+| Contabilización de compensaciones<!-- Contabilizzazione compensi --> | Realiza la contabilización de compensaciones<!-- compensi --> para las filas seleccionadas. |
+| Modificar compensación<!-- Modifica compenso --> | Abre para editar la compensación<!-- compenso --> seleccionada. |

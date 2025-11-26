@@ -1,18 +1,19 @@
 ---
-title: modello f24
+title: Modelo F24
 sidebar_position: 1
+ai_generated: true
 ---
 
-El procedimiento está dedicado a la creación del modelo F24. Este modelo es utilizado para el pago de los diversos tributos que la empresa paga mensualmente.
+El procedimiento está dedicado a la creación del modelo F24. Este modelo se utiliza para el pago de los distintos tributos abonados mensualmente por la empresa.
 
-Para ingresar un nuevo modelo F24, presione el botón **nuovo** en la barra de herramientas.
+Para insertar un nuevo modelo F24, presione el botón **Nuevo<!-- Nuovo -->** en la barra de opciones (ribbon bar).
 
-Para detalles en el nuevo modelo durante la fase de inserción, vea [**Gestión del modelo F24 (Gestione modello F24)**](/docs/finance-area/professional-men/procedures/model-f24/f24-management).
+Para ver los detalles del nuevo modelo durante la fase de inserción, consulte [**Gestión modelo F24**](/docs/finance-area/professional-men/procedures/model-f24/f24-management).
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Búsqueda (Ricerca) | Botón para aplicar los filtros de búsqueda a toda la base de datos de modelos ingresados. |
-| Nuevo (Nuovo) | Llama al procedimiento para ingresar un nuevo modelo. |
-| Modificar (Modifica) | Llama al procedimiento para modificar un modelo previamente ingresado. |
-| Visualización (Visualizzazione) | Llama al procedimiento para visualizar un modelo previamente ingresado. |
-| Eliminar (Cancella) | Ejecuta el procedimiento para eliminar un modelo previamente ingresado. |
+| Buscar<!-- Ricerca --> | Botón para aplicar los filtros de búsqueda sobre toda la base de datos de modelos ingresados. |
+| Nuevo | Inicia el procedimiento para insertar un nuevo modelo. |
+| Modificar<!-- Modifica --> | Inicia el procedimiento para modificar un modelo previamente ingresado. |
+| Visualización | Inicia el procedimiento para visualizar un modelo previamente ingresado. |
+| Eliminar<!-- Cancella --> | Ejecuta el procedimiento para eliminar un modelo previamente ingresado. |

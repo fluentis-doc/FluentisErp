@@ -1,20 +1,21 @@
 ---
-title: bilancio infrannuale
+title: Balance intermedio
 sidebar_position: 1
+ai_generated: true
 ---
 
-La impresión permite realizar una impresión sintética de las secciones de balance básico sobre los datos del cierre interanual (o de *consolidación*) seleccionada.
+La impresión<!-- stampa --> permite realizar una impresión sintética de las secciones de balance<!-- bilancio --> en base a los datos del cierre intermedio<!-- chiusura infrannuale --> (o *consolidación<!-- consolidamento -->*) seleccionada.
 
-**consolidato**: al activar el indicador, la caja combinada permitirá seleccionar cierres consolidados a través del procedimiento de [**consolidamento**](/docs/controlling/mid-year-closures/consolidation-entry) en lugar de cierres ordinarios (de la única empresa).  
+**Consolidado<!-- Consolidato -->**: al activar la casilla, el cuadro combinado permitirá seleccionar cierres consolidados a través del procedimiento de [**consolidación<!-- consolidamento -->**](/docs/controlling/mid-year-closures/consolidation-entry) en lugar de cierres ordinarios (de la empresa individual).
 
-**Visualizar importes con signo negativo (Visualizza importi con segno negativo)**: opción similar a la que se encuentra en las impresiones del [balance de ejercicio (bilancio di esercizio)](/docs/finance-area/ledger-records/fiscal-report/period-balance-sheet) del área de administración.
+**Mostrar importes con signo negativo<!-- Visualizza importi con segno negativo -->**: opción análoga a la presente en los reportes del [balance de ejercicio<!-- bilancio di esercizio -->](/docs/finance-area/ledger-records/fiscal-report/period-balance-sheet) del área administrativa.
 
-**visualizza anagrafiche**: hace visible en el balance el detalle de los saldos para las anagrafías de clientes/proveedores.  
+**Mostrar Anagráficos<!-- Visualizza Anagrafiche -->**: hace visible en el balance<!-- bilancio --> el detalle de los saldos por cliente/proveedor<!-- anagrafiche clienti/fornitori -->.
 
-**visualizza saldo in valuta**: hace visible el detalle del saldo en moneda para las cuentas que en el plan de cuentas tienen la gestión cambiaria activa.  
+**Mostrar saldo en moneda<!-- Visualizza saldo in valuta -->**: permite ver el detalle del saldo en moneda<!-- saldo in valuta --> para las cuentas que en el plan de cuentas<!-- piano dei conti --> tienen activada la gestión de moneda<!-- gestione valutaria -->.
 
-**confrontare**: realizar una comparación entre dos cierres interanuales específicos. Al activar el indicador, se activa la segunda caja combinada para seleccionar el cierre a comparar con el principal.  
+**Comparar<!-- Confrontare -->**: permite comparar dos cierres intermedios<!-- chiusure infrannuali --> específicos. Al activar la casilla, se activa el segundo cuadro combinado para seleccionar el cierre a comparar con el principal.
 
-**Visualizar datos por centro de costo (Visualizza dati per centro di costo)**: Con este indicador, se incluirán en la impresión los datos presentes en la sección *analítica* del cierre (por lo tanto, normalmente solo los económicos), con los datos totalizados por centro de costo y, a continuación, por cuenta/subcuenta.  
+**Mostrar datos por centro de costos<!-- Visualizza dati per centro di costo -->**: Con esta opción se mostrarán en la impresión los datos presentes en la sección *analítica<!-- analitica -->* del cierre<!-- chiusura --> (normalmente solo la económica), con los datos totalizados por centro de costos<!-- centro di costo --> y, enseguida, por cuenta/subcuenta<!-- conto/sottoconto -->.
 
-**ATENCIÓN (ATTENZIONE)**: al activar este indicador, utilice el segundo informe de impresión seleccionable desde el menú desplegable en la barra de herramientas denominado **bilancio per centri aziendali***.
+**ATENCIÓN<!-- ATTENZIONE -->**: al activar esta opción, utilice el segundo reporte seleccionable desde el menú desplegable en la cinta de opciones denominado ***Balance por centros empresariales<!-- Bilancio per centri aziendali -->***

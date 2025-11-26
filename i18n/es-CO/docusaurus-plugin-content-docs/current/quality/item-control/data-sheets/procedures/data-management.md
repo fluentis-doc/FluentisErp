@@ -1,59 +1,60 @@
 ---
-title: gestione massiva dei dati
+title: Gestión masiva de datos
 sidebar_position: 2
+ai_generated: true
 ---
 
-La gestión se encuentra en la ruta **Calidad > Controles de artículo > Fichas técnicas > Procedimientos > gestione massiva dei dati**.
+La gestión se encuentra en la ruta **Calidad > Controles de artículo > Fichas técnicas<!-- Schede tecniche --> > Procedimientos > Gestión masiva de datos<!-- Gestione massiva dei dati -->**.
 
-:::important ¿Para qué sirve? (A cosa serve)
-Esta gestión permite manejar muchas de las informaciones de las *Fichas técnicas* de manera masiva, sin necesidad de entrar manualmente en cada *Ficha técnica*.   
+:::important ¿Para qué sirve<!-- A cosa serve -->
+Este procedimiento permite la gestión masiva de determinada información presente en las *Fichas técnicas<!-- Schede tecniche -->*, sin la obligación de ingresar a cada documento, realizar las modificaciones deseadas y guardarlas.
 :::
 
-El formulario está dividido en: 
-- un área de filtro, contextual a las sesiones de información que se desea modificar;   
-- un área compuesta por diferentes pestañas, cada una de las cuales contiene las cuadrículas dedicadas a la modificación y resultado del filtro;   
-- la última pestaña contiene el *Historial de errores* encontrados durante las actividades de *Modificación*.   
+El formulario se divide en:
+- Un área de filtro relativa a la búsqueda de la información principal de las *Fichas técnicas<!-- Schede tecniche -->*;
+- Un área de filtro contextual a las secciones de la información que se desea modificar;
+- Un área compuesta por varias pestañas, cada una de las cuales contiene las rejillas dedicadas a la modificación y resultado del filtro;
+- La última pestaña contiene el *Histórico de errores<!-- Storico errori -->* encontrados durante las actividades de modificación.
 
-Las pestañas son:   
-> **schede tecniche**;   
-> **proprietà**;   
-> **norme e leggi**;   
-> **articoli associati**.
+Las pestañas son:  
+> **Fichas técnicas<!-- Schede tecniche -->**;  
+> **Propiedades<!-- Proprietà -->**;  
+> **Normas y leyes<!-- Norme e leggi -->**;  
+> **Artículos asociados<!-- Articoli associati -->**.
 
-### Botones específicos
+### Botones específicos<!-- Pulsanti specifici -->
 
-#### ![](/img/neutral/common/search.png) Búsqueda (Ricerca)
+#### ![](/img/neutral/common/search.png) Búsqueda<!-- Ricerca -->
 
-El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados. El área de filtro es variable y es contextual a la pestaña seleccionada. El resultado de la aplicación del filtro mostrará los datos en la cuadrícula de resultados de la pestaña previamente seleccionada.   
+El formulario se compone de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **Búsqueda<!-- Ricerca -->** para visualizar los resultados dentro de la rejilla de resultados. El área de filtro es variable y contextual según la pestaña seleccionada. El resultado de la aplicación del filtro mostrará los datos en la rejilla de resultados de la pestaña previamente seleccionada.
 
-#### ![](/img/neutral/common/delete.png) Eliminar (Cancella)
+#### ![](/img/neutral/common/delete.png) Eliminar<!-- Cancella -->
 
-Habilitado si se selecciona al menos una fila de la cuadrícula de resultados.  
-Una vez seleccionadas las filas deseadas, es necesario hacer clic en el botón **cancella** para borrarlas, previo confirmación.   
+Habilitado si se selecciona al menos una fila de la rejilla de resultados.
+Después de seleccionar las filas deseadas, es necesario hacer clic en el botón **Eliminar<!-- Cancella -->** para borrarlas, previa confirmación.
 
-#### ![](/img/neutral/common/execute.png) Modificación masiva de datos (Modifica massiva dei dati)
+#### ![](/img/neutral/common/execute.png) Modificación masiva de datos<!-- Modifica massiva dei dati -->
 
-Habilitado si se selecciona al menos una fila de la cuadrícula de resultados.  
-Una vez seleccionadas las filas deseadas e indicadas las modificaciones a realizar en la cuadrícula de resultados, es necesario hacer clic en el botón **modifica** para aplicar los cambios.  
-En caso de anomalías detectadas durante la *Modificación*, las alertas están disponibles en la pestaña *storico errori*.   
+Habilitado si se selecciona al menos una fila de la rejilla de resultados.
+Después de seleccionar las filas deseadas e indicar las modificaciones a realizar en la rejilla de resultados, es necesario hacer clic en el botón **Modificar<!-- Modifica -->** para aplicar los cambios.
+En caso de anomalías detectadas durante la *Modificación<!-- Modifica -->*, las notificaciones estarán disponibles en la pestaña *Histórico de errores<!-- Storico errori -->*.
 
-### gestione massiva dei dati
+### Gestión masiva de datos<!-- Gestione massiva dei dati -->
 
-#### Área de filtro
+#### Área de filtro<!-- Area di filtro -->
 
-El área está compuesta por una parte fija donde se presentan los filtros de búsqueda relacionados con la información de encabezado de la *Ficha técnica* y por una parte variable contextual a la pestaña seleccionada; la parte variable está contenida en un expander que lleva el mismo título de la pestaña seleccionada; esta parte variable no se visualiza para la pestaña *schede tecniche*.  
-Al presionar el botón **ricerca**, se visualizan los resultados dentro de la cuadrícula de resultados de la pestaña seleccionada.  
+El área está compuesta por una parte fija donde se muestran los filtros de búsqueda relativos a la información principal de la *Ficha técnica<!-- Scheda tecnica -->* y por una parte variable y contextual según la pestaña seleccionada; la parte variable está contenida en un "expander" que muestra el mismo título que la pestaña seleccionada; esta parte variable no se visualiza para la pestaña *Fichas técnicas<!-- Schede tecniche -->*.
+Al presionar el botón **Búsqueda<!-- Ricerca -->**, se visualizan los resultados dentro de la rejilla de resultados de la pestaña seleccionada.
 
-#### Área de modificación
+#### Área de modificación<!-- Area di modifica -->
 
-Contenida en cada pestaña (excepto en la pestaña *Historial de errores*), es la "cuadrícula" superior compuesta por una sola fila.  
-En esta cuadrícula, que presenta las mismas columnas que la cuadrícula de resultados (la inferior), es posible ingresar toda la información que se desea mostrar en las filas de la cuadrícula de resultados al presionar el botón *Modificar (Modifica)*.  
-Una vez terminada la sustitución de los valores, los valores presentes en la cuadrícula superior serán eliminados.  
+Incluida en cada pestaña (excepto en la pestaña *Histórico de errores<!-- Storico errori -->*), es la "rejilla" superior compuesta por una sola fila.
+En esta rejilla, que contiene las mismas columnas que la rejilla de resultados (la inferior), es posible ingresar toda la información que se desea copiar a las filas de la rejilla de resultados al pulsar el botón *Modificar<!-- Modifica -->*.
+Una vez finalizada la sustitución de los valores, los valores preexistentes en la rejilla superior serán eliminados.
 
-#### Área de resultados
-
-Contenida en cada pestaña, es la "cuadrícula" inferior que contiene el resultado de la *ricerca* aplicada al área de filtro.  
-En esta cuadrícula, que presenta las mismas columnas que la cuadrícula de modificación (la superior), es posible modificar manualmente toda la información sin tener que entrar en cada gestión de la *Ficha técnica*. Las columnas varían según la pestaña seleccionada.  
-Las columnas donde no es posible modificar la información están deshabilitadas y resaltadas con un color diferente.
+#### Área de resultados<!-- Area di risultato -->
+Incluida en cada pestaña, es la "rejilla" inferior que contiene el resultado de la *Búsqueda<!-- Ricerca -->* aplicada al área de filtro.
+En esta rejilla, que tiene las mismas columnas que la rejilla de modificación (la superior), es posible modificar manualmente toda la información sin tener que ingresar en cada gestión de la *Ficha técnica<!-- Scheda tecnica -->*. Las columnas varían según la pestaña seleccionada.
+Las columnas en las que no es posible modificar la información están deshabilitadas y resaltadas con un color diferente.
 
 Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

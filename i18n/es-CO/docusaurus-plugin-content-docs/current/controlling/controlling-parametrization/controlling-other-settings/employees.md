@@ -1,12 +1,13 @@
 ---
-title: Empleados y Categorías de actividad (Dipendenti e Categorie attività)
+title: Empleados y Categorías de actividad
 sidebar_position: 10
+ai_generated: true
 ---
 
-Dentro de cada **dipendente*** se puede asociar el [**centro di costo***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de referencia, que se utilizará para las importaciones de los movimientos de las nóminas, pero también dentro de la ***Declaración de actividades (Dichiarazione attività)*** del área de proyectos, en combinación con la ***Categoría de actividad (Categoria attività)***.
+Dentro de cada ***Empleado<!-- Dipendente -->*** es posible asociar el [***CENTRO DE COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de referencia<!-- riferimento -->, que será utilizado para las importaciones de movimientos de nómina<!-- movimenti delle paghe --> pero también dentro de la ***Declaración de actividad<!-- Dichiarazione attività -->*** del área de proyectos, en combinación con la ***Categoría de actividad<!-- Categoria attività -->***.
 
-:::tip Nota
-Dentro de la *Declaración de actividades (Dichiarazione attività)*, en particular, el centro de origen se establecerá según el centro del empleado/recurso, mientras que el centro de destino será determinado por la categoría de actividad.
+:::tip Nota<!-- Nota -->
+Dentro de la *Declaración de actividad<!-- Dichiarazione attività -->*, en particular, el centro de origen se establecerá por el centro del empleado<!-- dipendente -->/recurso mientras que el centro de destino por la categoría de actividad<!-- categoria attività -->.
 
-De esta manera, se pueden gestionar casos en los cuales, por ejemplo, el personal del departamento técnico trabaja para comercial, trasladando así los costos del centro de pertenencia al centro de destino de las actividades.
+De esta manera se pueden gestionar casos en los cuales, por ejemplo, el personal de la oficina técnica trabaja para el área comercial, trasladando así los costos desde el centro de pertenencia al centro de destino de las actividades
 :::

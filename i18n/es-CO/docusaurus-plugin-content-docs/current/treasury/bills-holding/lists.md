@@ -1,43 +1,42 @@
 ---
-title: distinte
+title: Listas de presentación
 sidebar_position: 3
+ai_generated: true
 ---
 
-El formulario de búsqueda de listas 
-- se encuentra en Tesorería > Cartera de Efectos > Efectos > distinte
+El formulario de búsqueda de listas de presentación<!-- form della ricerca distinte -->  
+- se encuentra en Tesorería<!-- Tesoreria --> > Cartera de Efectos<!-- Portafoglio Effetti --> > Efectos<!-- Effetti --> > Listas de presentación<!-- Distinte -->
 
-- permite al usuario buscar las listas de presentación emitidas previamente con el fin de visualizarlas, modificarlas y, eventualmente, cancelarlas.
+- permite al usuario buscar las listas de presentación<!-- distinte di presentazione --> emitidas anteriormente con el fin de visualizarlas, modificarlas y, eventualmente, eliminarlas.
 
+## Botones de la Ribbon Bar<!-- Pulsanti della Ribbon Bar -->
 
-## Botones de la Barra de Ribbon
+> - **Buscar listas<!-- Ricerca distinte -->:** Botón para buscar las listas<!-- distinte --> según los filtros de búsqueda configurados en el encabezado del formulario.
+> - **Nueva lista<!-- Nuovo distinte -->:** Abre el formulario para insertar una nueva lista<!-- distinta -->.
+> - **Modificar lista<!-- Modifica distinte -->:** Permite modificar una lista<!-- distinta --> previamente insertada.
+> - **Visualizar lista<!-- Visualizzazione distinte -->:** Muestra una lista<!-- distinta --> previamente insertada.
+> - **Eliminar lista<!-- Cancella distinte -->:** Elimina una lista<!-- distinta --> previamente insertada.
 
-> - **Buscar listas (Ricerca distinte):** Botón para buscar las listas según los filtros de búsqueda establecidos en la cabecera del formulario.  
-> - **Nueva lista (Nuovo distinte):** Llama al formulario para ingresar una nueva lista.  
-> - **Modificar lista (Modifica distinte):** Permite modificar una lista previamente ingresada.  
-> - **Visualización de lista (Visualizzazione distinte):** Muestra una lista previamente ingresada.  
-> - **Eliminar lista (Cancella distinte):** Elimina una lista previamente ingresada.  
+> Ejecución de la **impresión** (*Vista previa* o *Imprimir*) *Lista de presentación<!-- Distinta di presentazione -->*: ejecuta, para las listas<!-- distinte --> seleccionadas con el ratón (manteniendo presionada la tecla Ctrl puede seleccionar varias listas<!-- distinte --> al mismo tiempo), la correspondiente impresión presente en el [**menú de impresiones<!-- menu stampe -->**](/docs/treasury/bills-holding/reports/print-presentation-lists) del módulo.
 
-> Ejecución de la **impresión** (*anteprima* o *stampa*) *Lista de presentación*: lanza, en relación con las listas seleccionadas con el mouse, (manteniendo presionada la tecla Ctrl se pueden seleccionar múltiples listas simultáneamente) la impresión homónima presente en el [**menú de impresiones**](/docs/treasury/bills-holding/reports/print-presentation-lists) del módulo.
+## Filtros en el encabezado del formulario<!-- Filtri nella testata della form -->
 
-## Filtros en la cabecera del formulario
+- **Tipo:** filtra por tipo de lista<!-- distinta -->, dato que a su vez se define en la tabla [***Tipos de presentación de listas de efectos<!-- Tipi presentazione distinte effetti -->***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
 
-- **Tipo (Tipo):** filtra por tipo de lista, definido en la tabla [***Tipos de presentación de listas de efectos***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+- **Banco:** filtra por la cuenta **Banco Cuenta Corriente<!-- Banca Conto Corrente -->** configurada en el encabezado de la lista<!-- distinta -->
 
-- **Banco (Banca):** filtra por cuenta **banca conto corrente** configurada en la cabecera de la lista
+- **De - A Número de lista<!-- DA - A Numero distinta -->:** filtra por el número de lista<!-- distinta -->, dato asignado por el numerador automático al momento de la creación de la lista<!-- distinta -->
 
-- **DE - A Número de lista (DA - A Numero distinta):** filtra por número de lista, dato establecido por el numerador automático en la fase de creación de la lista
+- **De / A fecha de presentación<!-- DA / A data presentazione -->:** filtra por fecha de presentación, campo del encabezado de la lista<!-- testata distinta --> que por defecto suele ser "*hoy*", pero el usuario puede modificarlo
 
-- **DE / A fecha de presentación (DA / A data presentazione):** filtra por fecha de presentación, campo en la cabecera de la lista que generalmente se propone como "*oggi*" pero puede ser modificado por el usuario
+- **Monedas<!-- Divise -->:** filtra por la moneda, dato del encabezado relacionado con la moneda de los efectos incluidos en la lista<!-- distinta -->, por ejemplo, para extraer solo aquellas denominadas en dólares.
 
-- **Monedas (Divise):** filtra por moneda, dato de cabecera que se refiere a la moneda de los efectos contenidos en la lista, por ejemplo, para extraer solo las monedas denominadas en dólares.
+- **Impresa<!-- Stampato -->:** Si está activada, esta opción extrae solo las listas<!-- distinte --> impresas (o aquellas con el indicador *impreso* "true")
 
-- **Impreso (Stampato):** si está activado, este indicador extrae solo listas impresas (o con el indicador *impreso* "true") 
+- **Contabilizada:** Si está activada, esta opción extrae solo las listas<!-- distinte --> contabilizadas mediante [el procedimiento correspondiente](/docs/treasury/bills-holding/accounting/lists-accounting) (o aquellas con el indicador *contabilizada* "true")
 
-- **Contabilizado (Contabilizzata):** si está activado, este indicador extrae solo listas contabilizadas a través de [el procedimiento correspondiente](/docs/treasury/bills-holding/accounting/lists-accounting) (o con el indicador *contabilizzata* "true")
+## Cuadrícula de resultados<!-- Griglia dei risultati -->
 
+En este formulario se presentan los mismos campos incluidos en los filtros descritos anteriormente.
 
-## Cuadrícula de resultados
-
-En este formulario presenta los mismos campos que los filtros ya detallados anteriormente.
-
-Asimismo, presenta el **totale** de la lista (suma los importes de los efectos en la lista).
+También muestra el **Total** de la lista<!-- distinta --> (suma de los importes de los efectos en la lista<!-- distinta -->).

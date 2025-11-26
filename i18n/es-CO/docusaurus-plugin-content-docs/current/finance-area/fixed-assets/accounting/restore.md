@@ -1,11 +1,12 @@
 ---
-title: ripristino
+title: Restaurar
 sidebar_position: 3
+ai_generated: true
 ---
 
-La pestaña de ripristino (Ripristino) permite visualizar el registro contable a través de un doble clic en la sección correspondiente a los registros, así como la anulación parcial/total de las operaciones seleccionadas. La anulación será posible solo si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutadas).
+La pestaña de Restaurar<!-- Ripristino --> permite visualizar el asiento contable<!-- registrazione contabile --> haciendo doble clic en la sección relacionada con los asientos<!-- registrazioni -->, así como la anulación parcial o total de las operaciones seleccionadas. La anulación solo será posible si el periodo aún es modificable (libro diario impreso y cierre de cuentas<!-- chiusura conti --> no realizados).
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Búsqueda (Ricerca) | Busca la lista de las contabilizaciones realizadas. |
-| Restaurar contabilización (Ripristina contabilizzazione) | Realiza la restauración de los registros contables seleccionados. |
+| Buscar<!-- Ricerca --> | Busca la lista de contabilizaciones realizadas. |
+| Restaurar contabilización<!-- Ripristina contabilizzazione --> | Realiza la restauración de los asientos contables<!-- registrazioni contabili --> seleccionados. |

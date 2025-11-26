@@ -1,62 +1,61 @@
 ---
-title: categorie agenti
+title: Categorías de agentes
 sidebar_position: 2
+ai_generated: true
 ---
 
-La tabla se abre a través de la ruta **Tablas > Ventas > categorie agenti (Tabelle > Vendite > Categorie agenti)**.
+La tabla<!-- tabella --> se abre a través de la ruta **Tablas > Ventas > Categorías de agentes<!-- Tabelle > Vendite > Categorie agenti -->**.
 
-Permite ingresar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
+La tabla<!-- tabella --> es única para todas las empresas presentes en la base de datos y es la base para los cálculos enasarco/firr de los agentes<!-- agenti -->.
 
-El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+### Categorías de agentes<!-- Categorie agente -->
 
-Para poder ingresar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
+Es la cuadrícula principal del formulario y contiene las categorías de agentes<!-- agenti -->. Para cada fila de esta cuadrícula se definen los datos detallados en las dos cuadrículas siguientes para la especificación de Enasarco y FIRR.
 
-La tabla **categorie agenti**, única para las empresas presentes en la base de datos, es la tabla base para los cálculos enasarco/firr de los agentes.
+:::tip[Enlace<!-- Collegamento -->]
+Las entradas de la cuadrícula principal (que se enlazan con los detalles de cálculo) pueden ser asociadas en la [**ficha de agente<!-- anagrafica agente -->**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/detail) o (como valor predeterminado) dentro de los detalles de la tabla [**Tipos de retención<!-- Tipi ritenuta -->**](/docs/configurations/tables/finance/withholding-tax-types). El tipo de retención<!-- tipo ritenuta --> a su vez puede ser asociado a la ficha del agente<!-- anagrafica agente --> (y en este caso, si tiene la categoría de agente<!-- categoria agente --> predeterminada, permite no tener que asociarla cada vez al agente)
+:::
 
-### Categorías de agente (Categorie agente)
+**Código/Descripción:** código y descripción que indica el tipo de agente<!-- tipologia di agente -->. El código debe ser único;
 
-La cuadrícula contiene las categorías para la especificación del Enasarco, tales como:
+**Monomandatario:** Indicador que identifica la categoría de monomandatarios (mandato exclusivo con una sola empresa mandante);
 
-**codice/descrizione**: código y descripción que indican el código de referencia del agente. El código debe ser único;  
+**Plurimandatario:** Indicador que identifica la categoría de plurimandatarios (por ejemplo, agente<!-- agente --> que colabora con varias empresas mandantes);
 
-**Mínimo Enasarco (Min Enasarco)**: valor en base trimestral. Es el monto mínimo del aporte enasarco (ejemplo 250,50 para monomandatario);  
+**Genérico:** Indicador que identifica las categorías genéricas (por ejemplo, agencias constituidas en forma de sociedad);
 
-**Máximo Enasarco (Max Enasarco)**: valor en base anual. Es el monto máximo del imponible de comisiones a efectos del aporte enasarco (máximo) y una vez alcanzado, no es posible hacer aportes previsionales a favor del agente (ejemplo 44.727,00 para monomandatario);  
+### Enasarco
 
-**tipo ritenuta**: es el tipo de retención que se aplicará al agente. Para más detalles, consulte la sección de la parte administrativa [Tipos de Retención (Tipi Ritenuta)](/docs/configurations/tables/finance/withholding-tax-types). Se recomienda establecer este código en el registro del agente.
+**Fecha de inicio de validez:** la fecha de inicio de validez del detalle, el cual continuará activo hasta que se registre un nuevo detalle con una fecha de inicio de validez posterior
 
-**Porcentaje Enasarco (Perc Enasarco)**: porcentaje del Enasarco a cargo del agente;  
+**Min Enasarco:** ***valor en base trimestral***. Es el importe mínimo de la contribución enasarco (por ejemplo, 250,50 para un monomandatario);
 
-**Porcentaje Enasarco Empresa (Perc Enasarco Ditta)**: porcentaje del Enasarco a cargo de la empresa;  
+**Max Enasarco:** ***valor en base anual***. Es el importe máximo imponible para el cálculo de la contribución enasarco (tope); una vez alcanzado, no es posible realizar más aportes previsionales para el agente<!-- agente --> (por ejemplo, 44.727,00 para un monomandatario);
 
-**Importe Enasarco (Imp Enasarco)**: el porcentaje (100%) de aplicación de los porcentajes Enasarco sobre el total de comisiones;  
+**Porc Enasarco:** porcentaje del Enasarco a cargo del agente<!-- agente -->;
 
-**monomandatario**: indicador que identifica las categorías monomandatarias;  
+**Porc Enasarco Empresa:** porcentaje del Enasarco a cargo de la empresa;
 
-**plurimandatario**: indicador que identifica las categorías plurimandatarias;  
-
-**generico**: indicador que identifica las categorías genéricas;  
+**Imp Enasarco:** el porcentaje (100%) de aplicación de los porcentajes Enasarco sobre el total de comisiones;
 
 ### Firr
 
-La cuadrícula se utiliza para el cálculo del FIRR (Fondo de indemnización por resolución del contrato):
+La cuadrícula se utiliza para el cálculo del FIRR (Fondo de indemnización por terminación de relación):
 
 ![](/img/it-it/configurations/tables/sales/agent-category/image03.png)
 
-**riga**: identifica el número de fila. Debe ser único en todas las categorías de agentes;  
+**Fila:** identifica el número de la fila. Debe ser único para todas las categorías de agentes<!-- categorie agenti -->;
 
-**percentuale**: porcentaje del tributo;  
+**Porcentaje:** porcentaje del tributo;
 
-**De comisiones/A comisiones (DA provvigioni/A provvigioni)**: límite inferior y límite superior de este tributo;  
+**De comisiones/A comisiones:** límite inferior y límite superior de este tributo;
 
-Esta cuadrícula deberá ser completada siguiendo las indicaciones establecidas para este tratamiento.
+Esta cuadrícula se debe llenar siguiendo las indicaciones previstas para este procedimiento
 
-Alícuotas para agentes monomandatarios:
+Tasas para agentes monomandatarios
 
-![](/img/it-it/configurations/tables/sales/agent-category/image04.png)
+![](/img/it-it/configurations/tables/sales/agent-category/image04.png) 
 
-Alícuotas para agentes plurimandatarios:
+Tasas para agentes plurimandatarios
 
-![](/img/it-it/configurations/tables/sales/agent-category/image05.png)
-
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+ ![](/img/it-it/configurations/tables/sales/agent-category/image05.png)

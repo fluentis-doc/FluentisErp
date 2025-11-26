@@ -1,118 +1,119 @@
 ---
-title: struttura logistica
+title: Estructura logística (Supply Chain)
 sidebar_position: 1
+ai_generated: true
 ---
 
-Fluentis DDMRP es capaz de gestionar no solo una fábrica, sino toda una cadena de suministro compuesta por fábricas y varios centros de distribución y hubs.
+Fluentis DDMRP es capaz de gestionar no solo una fábrica sino toda una cadena de suministro compuesta por una fábrica y varios hubs y centros de distribución<!-- distribuzione -->.
 
-Esta tabla representa la estructura logística, es decir, la cadena de suministro, sobre la que debe actuar Fluentis DDMRP.
+Esta tabla representa la estructura logística<!-- struttura logistica -->, es decir, la supply chain<!-- supply chain -->, sobre la cual debe operar Fluentis DDMRP.
 
-En Fluentis, denominamos cada nodo de la cadena de suministro "Facility" y esta es la tabla de las Facilities.
+En Fluentis denominamos cada nodo de la supply chain una "Facility" y esta es la tabla de Facilities<!-- Facilities -->.
 
-Se considera una estructura en niveles como se describe a continuación.
+Se considera una estructura por niveles como la descrita a continuación.
 
-**Centros de distribución (Centri di distribuzione)**
+**Centros de distribución<!-- Centri di distribuzione -->**
 
-Son las unidades logísticas que sirven directamente a los clientes finales a través de los inventarios que contienen.
+Son las unidades logísticas que atienden directamente a los clientes finales mediante el stock<!-- scorte --> presente en ellas.
 
-Estas se ubican geográficamente en posiciones adecuadas para reducir el tiempo de transporte a los clientes finales.
+Estos centros se ubican geográficamente en posiciones estratégicas para reducir el tiempo de transporte a los clientes finales.
 
-Cada centro de distribución se abastece de un hub intermedio o directamente de la fábrica.
+Cada centro de distribución<!-- centro di distribuzione --> se abastece de un hub intermedio o directamente de la fábrica<!-- fabbrica -->.
 
-**Hub (Hub)**
+**Hub**
 
-Son unidades logísticas que abastecen a los centros de distribución.
+Son unidades logísticas que abastecen a los centros de distribución<!-- centri di distribuzione -->.
 
-Se ubican geográficamente en posiciones adecuadas para reducir el tiempo de transporte a los centros de distribución.
+Se ubican geográficamente en lugares apropiados para reducir el tiempo de transporte a los centros de distribución<!-- distribuzione -->.
 
-Los hubs permiten mantener un alto nivel de servicio a los clientes finales, reduciendo el nivel global de inventarios en la red de distribución.
+Los hubs permiten mantener un alto nivel de servicio a los clientes finales reduciendo el nivel total de inventario en la red de distribución.
 
-Los hubs se abastecen de la fábrica o, en redes muy extensas, de otros hubs.
+Los hubs se abastecen de la fábrica o, en redes muy grandes, de otros hubs.
 
-**fabbrica**
+**Fábrica<!-- Fabbrica -->**
 
-Se considera una sola fábrica en la estructura logística.
+Se considera solo una fábrica<!-- fabbrica --> en la estructura logística<!-- logistica -->.
 
-Esta abastece a los hubs y/o a los centros de distribución.
+Esta abastece a los hubs y/o a los centros de distribución<!-- centri di distribuzione -->.
 
-Por lo tanto, existe una relación cliente-proveedor entre las unidades de la estructura logística (cada unidad logística debe ser codificada tanto como cliente como proveedor).
+Por lo tanto, existe una relación cliente-proveedor entre las unidades de la estructura logística<!-- struttura logistica --> (cada unidad logística debe ser codificada tanto como cliente como proveedor).
 
-Los centros de distribución son clientes y no proveedores en la estructura logística, los hubs son tanto clientes (de la fábrica o de otros hubs) como proveedores (de los centros de distribución o de otros hubs), la fábrica tiene como clientes a los centros de distribución o a los hubs y no tiene ninguna unidad logística proveedora.
+Los centros de distribución<!-- centri di distribuzione --> son clientes y no proveedores en la estructura logística<!-- logistica -->, los hubs son tanto clientes (de la fábrica o de otros hubs) como proveedores (de los centros de distribución o de otros hubs), la fábrica tiene como clientes a los centros de distribución o los hubs y no tiene ninguna unidad logística proveedora.
 
 Los campos que definen una unidad logística son los siguientes:
 
-**magazzino**
+**Almacén<!-- Magazzino -->**
 
 Es el código de almacén asociado a la unidad logística.
 
-Salvo la fábrica, cada unidad logística está identificada de manera única por el almacén asociado a ella (elección realizada para aumentar el grado de compatibilidad con aplicaciones externas).
+A excepción de la fábrica, cada unidad logística se identifica de forma única por el almacén asociado (elección realizada para aumentar el grado de compatibilidad con aplicaciones externas).
 
-A la fábrica, sin embargo, se le pueden asociar varios almacenes y estos son los únicos que serán considerados por el sistema DDMRP para los artículos de buffer de fábrica; por lo tanto, otros almacenes utilizados en la fábrica que no están presentes en esta tabla no deben contener buffers DDMRP ya que serían ignorados en el cálculo NFP.
+A la fábrica pueden asociarse varios almacenes y estos son los únicos que serán tenidos en cuenta por el sistema DDMRP para los artículos buffer<!-- buffer di fabbrica, articoli buffer --> de fábrica; por lo tanto, otros almacenes usados en la fábrica que no estén presentes en esta tabla no deben contener buffers DDMRP ya que serían ignorados por el cálculo NFP.
 
-Los almacenes de esta tabla que no están marcados como fábrica serán ignorados por el procedimiento MRP, ya que son almacenes de distribución de mercancías y no de producción, y deben ser planificados individualmente a través del cálculo de la posición de flujo neto (NFP), siempre desde el menú de ejecución del MRP.
+Los almacenes de esta tabla que no estén marcados como de fábrica serán ignorados por el procedimiento MRP, ya que son almacenes de distribución de mercancía y no de producción, y ​​deben ser planificados individualmente mediante el cálculo de la posición de flujo neta (NFP), siempre desde el menú de ejecución del MRP.
 
-En Fluentis DDMRP, se hará referencia a la unidad logística Fábrica a través de un código de almacén vacío, precisamente porque es la única unidad logística a la que se pueden asociar más de un almacén y por lo tanto se pierde la relación de biunivocidad entre almacén y unidad logística.
+En Fluentis DDMRP, el término unidad logística Fábrica se referirá mediante un código de almacén vacío, porque es la única unidad logística a la que se pueden asociar varios almacenes y por lo tanto se pierde la relación unívoca entre almacén y unidad logística.
 
-**cliente**
+**Cliente**
 
-Identifica la unidad logística de manera única al igual que el código de almacén, por lo tanto, cada unidad logística debe tener una cuenta de cliente asociada a ella.
+Identifica la unidad logística de forma única, al igual que el código de almacén, por lo tanto, cada unidad logística debe tener una cuenta de cliente asociada.
 
-Si resulta ser proveedora de alguna otra unidad logística, entonces también debe tener una cuenta de proveedor asociada.
+Si la misma resulta ser proveedora de alguna otra unidad logística, también deberá tener una cuenta de proveedor asociada.
 
-El mismo código de cliente no puede ser asociado a más de un almacén (salvo la fábrica), así como el mismo código de almacén no puede ser asociado a más de un código de cliente.
+El mismo código de cliente no puede, por tanto, estar asociado a varios almacenes<!-- magazzini --> (excepto la fábrica), así como el mismo código de almacén no puede estar asociado a varios códigos de cliente.
 
-**fornitore**
+**Proveedor<!-- Fornitore -->**
 
-Su valor identifica la unidad logística que proporcionará la mercancía a aquella identificada por el código de almacén y/o código de cliente del registro.
+Su valor identifica la unidad logística que suministrará la mercancía a la unidad identificada por el código de almacén y/o código de cliente del registro.
 
-Solo para los registros asociados a la fábrica (indicador Fabbrica seleccionado), este campo no es editable y permanece vacío, puesto que la fábrica no puede ser abastecida por otra unidad logística.
+Solo para los registros asociados a la fábrica (flag de Fábrica<!-- Fabbrica --> seleccionado), este campo no es editable y queda vacío, ya que la fábrica no puede ser abastecida por otra unidad logística.
 
-Solo se puede seleccionar como proveedor una unidad logística ya registrada en esta tabla (no es posible seleccionar genéricamente un proveedor de la lista de proveedores).
+Solo se puede seleccionar como proveedor una unidad logística ya insertada en esta tabla (no es posible seleccionar genéricamente un proveedor de la lista de proveedores).
 
-El sistema verifica el código de cliente asociado al código de proveedor y, por lo tanto, busca dicho código de cliente en el campo cliente de los varios registros de la tabla Facilities; por lo tanto, una unidad logística proveedora debe tener asociados tanto un código de cliente como un código de proveedor.
+El sistema verifica el código de cliente asociado al código de proveedor y luego busca ese código de cliente en el campo cliente de los diferentes registros de la tabla Facilities<!-- Facilities -->, por lo cual una unidad logística proveedora debe tener asociados tanto un código de cliente como un código de proveedor.
 
-Esto implica que la inserción en esta tabla debe comenzar desde el nivel más bajo, es decir, desde la fábrica, para luego ascender a los posibles hubs y, finalmente, a los centros de distribución; por lo tanto, la inserción se realiza por niveles de prioridad decreciente.
+Esto implica que la inserción en esta tabla debe partir del nivel más bajo, es decir, la fábrica, para después continuar con los posibles hubs y finalmente los centros de distribución, por lo tanto la inserción se realiza en niveles de prioridad decrecientes.
 
 No es obligatorio que todos los artículos presentes en una unidad logística sean abastecidos por la unidad indicada como proveedora.
 
-Esta permanece como el proveedor predeterminado que será utilizado en la creación de los **pedidos internos planificados (ordini interni pianificati)** generados por el sistema de planificación y para el cálculo del tiempo de entrega desacoplado (DLT).
+Esta sigue siendo el proveedor por defecto que será utilizado en la creación de los **pedidos internos planificados<!-- ordini interni pianificati -->** generados por el sistema de planificación y para el cálculo del lead time desacoplado (DLT<!-- DLT -->).
 
-En la tabla de parámetros DDMRP de los artículos se pueden definir excepciones, indicando otra unidad logística o un proveedor genérico externo a la estructura logística y el tiempo de transporte correspondiente.
+En la tabla de parámetros DDMRP de los artículos se pueden definir excepciones, indicando otra unidad logística o bien un proveedor externo a la estructura logística y su respectivo tiempo de transporte.
 
-**magazzino fornitore**
+**Almacén del proveedor<!-- Magazzino fornitore -->**
 
-Es el código de almacén asociado a la unidad logística proveedora del registro seleccionado; este valor permite una búsqueda rápida en esta tabla a través del campo Almacén.
+Es el código de almacén asociado a la unidad logística proveedora del registro seleccionado; este valor permite realizar una búsqueda rápida en esta tabla mediante el campo Almacén.
 
-En caso de que el proveedor sea la fábrica, este campo resulta vacío ya que la fábrica es la única unidad logística a la que es posible asociar más de un almacén.
+En caso de que el proveedor sea la fábrica, este campo queda vacío porque la fábrica es la única unidad logística a la que se le pueden asociar más de un almacén.
 
-**fabbrica**
+**Fábrica<!-- Fabbrica -->**
 
-Es un indicador que señala que el almacén del registro se refiere a la fábrica (en este caso, el proveedor está vacío).
+Es un flag que indica que el almacén del registro se refiere a la fábrica (en este caso el proveedor está vacío).
 
 Para la fábrica son posibles varios registros, uno para cada almacén que debe considerar el sistema de planificación.
 
-Después de haber ingresado el primer almacén con el indicador Fábrica activo, para los siguientes se controlará que el código de cliente sea el mismo que en los registros con el indicador de fábrica activo, ya que, evidentemente, a la fábrica siempre se le asociará un solo código de cliente (y un solo código de proveedor).
+Después de ingresar el primer almacén con el flag Fábrica activo, para los siguientes se comprobará que el código de cliente sea el mismo que el de los registros con el flag de fábrica activo, ya que obviamente a la fábrica siempre se le asociará un solo código de cliente (y un solo código de proveedor).
 
-**priorità di pianificazione**
+**Prioridad de planificación<!-- Priorità di pianificazione -->**
 
 Es un valor mayor o igual a 0 y no superior a 100.
 
-Los registros asociados a la fábrica tienen todos un valor de 100 por convención de Fluentis, las demás unidades logísticas tienen un valor inferior.
+Los registros asociados a la fábrica tienen todos valor 100 por convención de Fluentis, las otras unidades logísticas tienen un valor inferior.
 
-Este elemento sirve para indicar al sistema de planificación qué orden seguir en el proceso de cálculo; de hecho, se planificarán primero las unidades logísticas con valores más bajos, procediendo luego a aumentar dicho valor y, por lo tanto, planificando por último la fábrica, respetando la cadena de relaciones cliente-proveedor entre las unidades logísticas, tal como se hace en el caso de una lista de materiales, comenzando desde arriba y luego procediendo a los niveles inferiores.
+Este elemento sirve para indicar al sistema de planificación en qué orden seguir el proceso de cálculo; de hecho, se planifican primero las unidades logísticas con el valor más bajo y luego se continúa aumentando dicho valor, planificando por último la fábrica, respetando la cadena de relaciones cliente-proveedor entre las unidades logísticas, así como se hace en una lista de materiales (BOM) empezando por la parte superior y luego procediendo hacia los niveles inferiores.
 
-Este orden es necesario porque para conocer las necesidades de una unidad logística, primero se deben haber planificado las de sus unidades clientes.
+Este orden es necesario porque para conocer las necesidades de una unidad logística primero hay que haber planificado las de sus unidades clientes.
 
-Cada registro cliente debe tener un nivel de prioridad inferior al de su unidad proveedora.
+Cada registro de cliente debe tener un nivel de prioridad inferior al de su unidad proveedora.
 
-**lead time**
+**Lead time**
 
 Es el tiempo necesario para transportar la mercancía desde la unidad logística proveedora y se expresa en días.
 
-**causale di prelievo da facility fornitore**
+**Causal de extracción desde facility proveedora<!-- Causale di prelievo da facility fornitore -->** 
 
-Es la causa de almacén que se utilizará para cumplir un pedido interno, es decir, para retirar la mercancía de esta unidad y enviarla a la unidad que la ha solicitado y debe estar asociada al almacén para poder ser seleccionada en la fase de inserción del registro.
+Es la causal de almacén<!-- causale di magazzino --> que se utilizará para despachar un pedido interno, es decir, para extraer la mercancía de esta facility y enviarla a la facility que la ha solicitado; debe estar asociada al almacén<!-- magazzino --> para poder ser seleccionada en la fase de inserción de registros.
 
-**causale di versamento nella facility cliente**
+**Causal de ingreso en la facility cliente<!-- Causale di versamento nella facility cliente -->**
 
-Es la causa de almacén que se utilizará para cargar mercancía como resultado de un pedido interno, es decir, para depositar la mercancía en esta unidad proveniente de la unidad que la ha proporcionado y debe estar asociada al almacén para poder ser seleccionada en la fase de inserción del registro.
+Es la causal de almacén<!-- causale di magazzino --> que se utilizará para ingresar mercancía tras un pedido interno, es decir, para cargar la mercancía en esta facility proveniente de la facility que la suministró, y debe estar asociada al almacén<!-- magazzino --> para poder ser seleccionada durante la fase de entrada de registros.

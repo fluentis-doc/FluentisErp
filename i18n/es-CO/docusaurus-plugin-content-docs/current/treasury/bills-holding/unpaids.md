@@ -1,46 +1,44 @@
 ---
-title: insoluti
+title: Insolutos
 sidebar_position: 4
+ai_generated: true
 ---
 
-El formulario de búsqueda de insolutos
+El formulario de búsqueda de insolutos<!-- ricerca insoluti --> 
 
-- se encuentra en Tesorería > Cartera de Efectos > Efectos > insoluti
+- se encuentra en Tesorería<!-- Tesoreria --> > Cartera de Efectos<!-- Portafoglio Effetti --> > Efectos<!-- Effetti --> > Insolutos<!-- Insoluti -->
+- permite al usuario buscar los insolutos<!-- insoluti --> emitidos previamente con el fin de visualizarlos, modificarlos y eventualmente eliminarlos.
 
-- permite al usuario buscar los insolutos emitidos previamente con el propósito de visualizarlos, modificarlos y, eventualmente, eliminarlos.
+Desde este formulario también es posible ingresar manualmente un nuevo insoluto<!-- insoluto --> utilizando el botón **Nuevo<!-- Nuovo -->**.
 
-Desde este formulario también es posible ingresar manualmente un nuevo insoluto a través del botón **nuovo**.
+## Botones de la Ribbon Bar<!-- Pulsanti della Ribbon Bar -->
 
+> - **Buscar<!-- Ricerca -->:** Botón para buscar los insolutos<!-- insoluti --> según los filtros de búsqueda establecidos en el encabezado del formulario.
+> - **Nuevo<!-- Nuovo -->:** Abre el formulario para agregar un nuevo insoluto<!-- insoluto -->.
+> - **Modificar<!-- Modifica -->:** Permite modificar un insoluto<!-- insoluto --> ingresado previamente.
+> - **Visualizar<!-- Visualizzazione -->:** Permite visualizar un insoluto<!-- insoluto --> previamente ingresado.
+> - **Eliminar<!-- Elimina -->:** Elimina un insoluto<!-- insoluto --> previamente ingresado.
+> - **Creación múltiple de insolutos<!-- Creazione multipla insoluti -->:** Ejecuta el comando para crear más de un insoluto<!-- insoluto --> simultáneamente.
 
-## Botones de la Barra de Ribbon
+> La ejecución de las **impresiones<!-- stampe -->** (*Vista previa<!-- Anteprima -->* o *Imprimir<!-- Stampa -->*) lanza, para los insolutos<!-- insoluti --> seleccionados con el mouse (manteniendo presionada la tecla Ctrl se pueden seleccionar varios insolutos<!-- insoluti --> a la vez), las impresiones homónimas presentes en el [**menú de impresiones<!-- menu stampe -->**](/docs/treasury/bills-holding/reports/print-unpaid-list) del módulo.
 
-> - **Buscar (Ricerca):** Botón para buscar insolutos según los filtros de búsqueda establecidos en la cabecera del formulario.  
-> - **Nuevo (Nuovo):** Llama al formulario para ingresar un nuevo insoluto.  
-> - **Modificar (Modifica):** Permite modificar un insoluto ingresado previamente.  
-> - **Visualización (Visualizzazione):** Permite visualizar un insoluto ingresado previamente.  
-> - **Eliminar (Elimina):** Elimina un insoluto ingresado previamente.  
-> - **Creación múltiple de insolutos (Creazione multipla insoluti):** ejecuta el comando para crear más de un insoluto al mismo tiempo.  
-
-> La ejecución de **stampe** (*anteprima* o *stampa*) lanza, respecto a los insolutos seleccionados con el mouse, (manteniendo presionado Ctrl se pueden seleccionar varios insolutos al mismo tiempo) las impresiones homónimas presentes en el [**menú de impresiones (menu stampe)**](/docs/treasury/bills-holding/reports/print-unpaid-list) del módulo.  
-
-> - *insoluti*: evidencia de los efectos insolutos con sus respectivos referencias y montos, incrementados con cualquier interés y gastos.  
-> - *Carta de recordatorio (Lettera di sollecito)*: Carta dirigida al deudor que destaca los efectos insolutos y solicita el pago.
-
+> - *Insolutos<!-- Insoluti -->*: da visibilidad a los efectos insolutos<!-- effetti insoluti --> con los respectivos detalles e importes, incrementados por posibles intereses y gastos.
+> - *Carta de requerimiento<!-- Lettera di sollecito -->*: Carta dirigida al deudor donde se destacan los efectos insolutos<!-- effetti insoluti --> y se solicita el pago correspondiente.
 
 ## Filtros de búsqueda
 
-- **Tipos de Efectos (Tipi Effetti):** Filtra según el tipo de efecto que se ha ingresado en el insoluto en el momento de la creación, por ejemplo, Recibo bancario, Pagaré, etc.  
-- **Deudor (Debitore):** filtro relacionado con el campo ***Deudor*** presente dentro del efecto.  
-- **DE / A / fecha de insoluto / Fecha de vencimiento / Fecha de emisión / Número (DA / A / data insoluto / Data scadenza / Data emissione / Numero):** referidos a los campos homónimos presentes dentro del insoluto y en particular relacionados con la fecha de creación del insoluto, la fecha de vencimiento de la partida que se reabre con el insoluto, la fecha de emisión del efecto que ha ido a insoluto y el número del efecto insoluto.  
-- **Estado del insoluto (Stato insoluto):** filtro relacionado con el *Estado insoluto* presente dentro del insoluto; el estado se modifica automáticamente dependiendo de los procedimientos que se han ejecutado, por ejemplo, comienza como Insoluto, luego se convierte en cobrado, o se emite una nota de débito, etc.  
-- **Indicador de filtro (Flag di filtro):** Por defecto está activo *tutti*, pero puede cambiarse seleccionando las diversas condiciones de búsqueda que, si se activan simultáneamente, ampliarán la base de búsqueda, por ejemplo, los impresos + los contabilizados + los NO impresos... También hay una sección adicional expandable para filtrar insolutos que provienen de efectos generados por partidas o facturas con sus respectivos referencias de fecha / número. Esto ayuda en la búsqueda, ya que los dos procedimientos de creación del efecto son alternativos entre sí.
+- **Tipos de efectos<!-- Tipi Effetti -->:** Filtra por el tipo de efecto que fue ingresado en el insoluto<!-- insoluto --> durante la creación, por ejemplo, Recibo bancario, Letra de cambio, etc.
+- **Deudor<!-- Debitore -->:** Filtro relativo al campo ***Deudor<!-- Debitore -->*** presente dentro del efecto<!-- effetto -->.
+- **DE / A / fecha de insoluto / Fecha de vencimiento / Fecha de emisión / Número<!-- DA / A / data insoluto / Data scadenza / Data emissione / Numero -->**: se refieren a los mismos campos presentes dentro del insoluto<!-- insoluto --> y en particular a la fecha de creación del insoluto<!-- insoluto -->, la fecha de vencimiento de la partida que se reabre con el insoluto<!-- insoluto -->, la fecha de emisión del efecto<!-- effetto --> que resultó insoluto<!-- insoluto --> y el número del efecto insoluto<!-- effetto insoluto -->.
+- **Estado de insoluto<!-- Stato insoluto -->:** filtro relativo al *Estado de insoluto<!-- Stato insoluto -->* presente dentro del insoluto<!-- insoluto -->, el estado se modifica automáticamente según los procedimientos que se hayan ejecutado, por ejemplo, inicia como Insoluto<!-- Insoluto -->, luego se vuelve cobrado/incassato, o se emite una nota de débito<!-- nota di addebito -->, etc.
+- **Flag de filtro:** Por defecto está activo *Todos*, pero puede cambiarse seleccionando las diferentes condiciones de búsqueda, que si se activan simultáneamente ampliarán la base de búsqueda, por ejemplo, los impresos + los contabilizados + los NO impresos... Además, está presente la sección adicional expandible para filtrar insolutos<!-- insoluti --> que provienen de efectos<!-- effetti --> generados por partidas<!-- partite --> o por facturas<!-- fatture --> con las fechas/números respectivos. Esto ayuda en la búsqueda, ya que los dos procedimientos de creación del efecto<!-- effetto --> son alternativos entre sí.
 
-## Cuadro de resultados
+## Cuadrícula de resultados<!-- Griglia dei risultati -->
 
-En este formulario presenta los mismos campos que los filtros detallados anteriormente.
+Este formulario muestra los mismos campos presentes en los filtros ya detallados anteriormente.
 
-Además, presenta:
-- el monto del efecto insoluto y **spese bancarie** presentes en la cabecera del insoluto que se vuelve a cargar al cliente y se contabiliza.  
-- la **fecha** y **número** de importación relacionados con el procedimiento de **importazione insoluti**.  
-- el **numero di fattura** que ha generado el efecto que ha ido a insoluto.  
-- el **Banco de presentación (Banca di presentazione)** del efecto insoluto.
+Además presenta:
+- el importe del efecto insoluto<!-- effetto insoluto --> y **Gastos bancarios<!-- Spese Bancarie -->** presentes en el encabezado del insoluto<!-- testata insoluto --> que se vuelve a cargar al cliente y se contabiliza<!-- contabilizzato -->
+- la **fecha** y **número** de Importación relacionados con el procedimiento de **Importación de insolutos<!-- Importazione insoluti -->**
+- el **Número de factura<!-- Numero di fattura -->** que generó el efecto<!-- effetto --> que resultó insoluto<!-- insoluto -->
+- el **Banco de presentación<!-- Banca di presentazione -->** del efecto insoluto<!-- effetto insoluto -->

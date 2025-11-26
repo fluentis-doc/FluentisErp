@@ -1,51 +1,51 @@
 ---
-title: Introducción
+title: Introduzione
 sidebar_position: 1
 ---
 
-El módulo se encuentra en el área **Compras > Facturas de compra**. Las facturas de compra son documentos fiscales emitidos por los proveedores a cambio del suministro de bienes o servicios a la empresa y representan la base para el registro contable y el pago a los proveedores. 
+Il modulo si trova nell'area **Acquisti > Fatture di acquisto**. Le fatture di acquisto sono documenti fiscali emessi dai fornitori a fronte della fornitura di beni o servizi all'azienda e rappresentano la base per la registrazione contabile e il pagamento dei fornitori. 
 
-## **Configuración preliminar del módulo**
+## **Configurazione preliminare del modulo**
 
-Antes de utilizar el módulo, es necesario completar las siguientes tablas y parámetros:     
-- [**Numeraciones**](/docs/configurations/tables/fluentis-numerations): inserción de las numeraciones a utilizar para las Facturas de Compra.     
-- [**Facturado de compras**](/docs/configurations/tables/purchase/purchase-turnover/): definición de las tipologías de Facturado de compras a insertar en los documentos.
-- [**Tipos de Facturas de Compra**](/docs/configurations/tables/purchase/purchase-invoices-type): creación y definición de las tipologías de Facturas a utilizar.
-- [**Parámetros de Facturas de Compra**](/docs/configurations/parameters/purchase/purchase-invoices-parameters): configuraciones específicas para la gestión de las facturas. 
-- [**Parámetros de agrupamiento de facturas de compra**](/docs/configurations/parameters/purchase/invoice-grouping/): definir las condiciones de agrupamiento de los DDT en la factura.
+Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e parametri:     
+- [**Numerazioni**](/docs/configurations/tables/fluentis-numerations): inserimento delle numerazioni da utilizzare per le Fatture di Acquisto.     
+- [**Fatturato acquisti**](/docs/configurations/tables/purchase/purchase-turnover/): definizione delle tipologie di Fatturato acquisti da inserire nei documenti.
+- [**Tipi Fatture di Acquisto**](/docs/configurations/tables/purchase/purchase-invoices-type): creazione e definizione delle tipologie di Fatture da utilizzare.
+- [**Parametri Fatture di Acquisto**](/docs/configurations/parameters/purchase/purchase-invoices-parameters): impostazioni specifiche per la gestione delle fatture. 
+- [**Parametri di raggruppamento fatture di acquisto**](/docs/configurations/parameters/purchase/invoice-grouping/): definire le condizioni di raggruppamento dei DDT in fattura.
 
 
-## **Vínculos con otros módulos**
+## **Collegamenti con altri moduli**
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-orders/general-overview">Pedidos de Proveedor</Link>
-        <p>La factura puede ser creada mediante la aplicación de uno o más Pedidos de proveedor desde el interior de la factura utilizando el botón Evasión de pedidos.  </p>
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Ordini Fornitore</Link>
+        <p>La Fattura può essere creata mediante evasione di uno o più Ordini fornitore dall'interno della fattura utilizzando il pulsante Evasione da ordini.  </p>
     </div>
-    <div className="card">
-###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">DDT de Compra</Link>
-        <p>La factura puede ser creada mediante la aplicación de uno o más DDT, tanto desde el interior de la factura utilizando el botón Evasión DDT, como mediante el procedimiento de [Valoración DDT de Compra](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization). </p>
-    </div>
-</div>
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/subcontractor/subcontractor-returns/insert-returns/search-returns"> Devolución de Trabajo Por Cuenta</Link>
-        <p>El procedimiento de *Valoración DDT de devolución* permite generar una factura de compra aplicando uno o más retornos de trabajo por cuenta.  </p>
-    </div>
-    <div className="card">
-###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Recepción de mercancías</Link>
-        <p>El procedimiento de [Creación de facturas desde Recepción de mercancías](/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt) permite la creación de la factura a partir de una recepción de mercancías ya registrada.  </p>
+        <div className="card">
+###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">DDT di Acquisto</Link>
+        <p>La Fattura può essere creata mediante evasione di uno o più DDT, sia dall'interno della fattura utilizzando il pulsante Evasione DDT, sia mediante la procedura di [Valorizzazione DDT di Acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization).  </p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/warehouse/stock-records/records">Logística</Link>
-        <p>Las facturas de compra de tipo inmediato pueden ser cargadas en el almacén para registrar la llegada de la mercancía y actualizar las existencias de material.  </p>
+###     <Link to="/docs/subcontractor/subcontractor-returns/insert-returns/search-returns"> Rientro di Conto Lavoro</Link>
+        <p>la procedura di *Valorizzazione DDT di rientro* consente di generare una fattura di acquisto evadendo uno o più rientri di conto lavoro.   </p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting">Contabilización</Link>
-        <p> La contabilización automática de las facturas permite actualizar los registros contables y financieros garantizando la coherencia con el balance de la empresa. </p>
+###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Ricevimento merci</Link>
+        <p>La procedura di [Creazione fatture da Ricevimento merci](/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt) permette la creazione della fattura a partire da un ricevimento merci già registrato.  </p>
+    </div>
+</div>
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/logistics/warehouse/stock-records/records">Logistica</Link>
+        <p>Le Fatture di acquisto di tipo immediato possono essere caricate a magazzino per registrare l'arrivo della merce e aggiornare le giacenze di materiale.  </p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting">Contabilizzazione</Link>
+        <p> La contabilizzazione automatica delle fatture permette di aggiornare i registri contabili e finanziari e garantendo la coerenza con il bilancio aziendale. </p>
     </div>
 </div>

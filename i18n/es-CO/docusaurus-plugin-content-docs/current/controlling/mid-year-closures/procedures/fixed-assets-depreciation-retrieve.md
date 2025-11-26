@@ -1,28 +1,38 @@
 ---
-title: ripresa ammortamento cespiti
+title: Reanudación del amortización de activos fijos
 sidebar_position: 3
+ai_generated: true
 ---
 
-Dentro del módulo de cierres intermedios, después de haber creado un cierre intermedio, es posible valorar automáticamente las amortizaciones correspondientes al período económico establecido en él.
+Dentro del módulo de cierres intermedios<!-- chiusure infrannuali -->, después de crear un cierre intermedio<!-- chiusura infrannuale --> es posible valorizar automáticamente las amortizaciones correspondientes al periodo económico configurado en el mismo.
 
-## Amortización (Ammortamento)
+## Amortización<!-- Ammortamento -->
 
-Al abrir la pantalla, en la parte inferior deben configurarse obligatoriamente:
+Al abrir el formulario, en la parte inferior será obligatorio configurar:
 
-- el **Cierre de referencia (Chiusura di riferimento)** (del cual se lee el rango de fechas de competencia económica);
+- el **Cierre de referencia<!-- Chiusura di riferimento -->** (desde el cual se lee el rango de fechas de competencia económica<!-- competenza economica -->);
 
-- la **data di registrazione** del movimiento en los registros extracontables;
+- la **Fecha de registro<!-- Data di registrazione -->** del movimiento<!-- movimento --> en los asientos extracontables<!-- registrazioni extracontabili -->;
 
-- la **causale** a utilizar (también aquí es necesario que la causa prevea la gestión de los cdc/job-orders para valorarlos en el registro).
+- la **Causal<!-- Causale -->** a utilizar (también aquí es necesario que la causal<!-- causale --> prevea la gestión de los cdc/job-orders para valorizarlos en el asiento<!-- registrazione -->).
 
-El indicador **singola registrazione** permite crear un único registro extracontable que incluya las diversas subcuentas de amortización/fondo.
+La casilla **Registro único<!-- Singola registrazione -->** permite crear un solo asiento extracontable<!-- registrazione extracontabile --> que contenga las diferentes subcuentas<!-- sottoconti --> de amortización/fondo.
 
-Es interesante señalar que dentro de los filtros de búsqueda superiores hay un indicador de búsqueda de los activos que pertenecen a las categorías 'incrementales' o no.
+En la sección de filtros de búsqueda se encuentra la casilla **Operaciones incrementales<!-- Operazioni incrementali -->**. La amortización<!-- ammortamento --> debe realizarse entonces en dos fases, extrayendo los activos fijos<!-- cespiti --> que pertenecen a categorías CON la casilla activa y SIN ella. Este valor se define dentro de la tabla de las [**categorías de activos fijos<!-- categorie cespiti -->**](/docs/configurations/tables/finance/fixed-asset-category)
 
-Al ejecutar la búsqueda de datos, el programa valorará la cuadrícula de la pantalla con los datos de las amortizaciones a calcular, proporcionados en función del número de días de competencia del cierre. En particular, se verificará para cada activo si la amortización del año (del año establecido como parámetro del cierre) ya está presente en su ficha y este valor será reproporcionado en base al número de días: si esto no está presente, se simulará un cálculo (basado en los parámetros de la categoría a la que pertenece y los residuos disponibles) y luego este valor se proporcionará en base al número de días de competencia.
+Al ejecutar la búsqueda de datos, el programa valoriza la cuadrícula del formulario con los datos de las amortizaciones<!-- ammortamenti --> a calcular, proporcionados según el número de días del cierre correspondiente. En particular, para cada activo fijo<!-- cespite --> se verificará si ya está presente la amortización<!-- ammortamento --> del año (del año configurado como parámetro del cierre); si existe, este valor se proporcionaliza según el número de días; si no está presente, se simulará un cálculo (con base en los parámetros de la categoría correspondiente y los remanentes disponibles) y este valor se proporcionará según el número de días correspondientes.
 
-Se recuerda seleccionar todas las filas presentes en la cuadrícula para valorarlas en el cierre.
+Se recuerda seleccionar todas las filas presentes en la cuadrícula para valorizarlas en el cierre<!-- chiusura -->.
 
-## Anteriores (Precedenti)
+### Amortización no deducible<!-- Ammortamento indeducibile -->
+En la parte inferior del formulario se encuentra la casilla **Usar cuenta no deducible<!-- Usa conto non deducibile -->**.
+El valor (ON / OFF) de la casilla puede ser predefinido en los [**parámetros de activos fijos<!-- parametri cespiti -->**](/docs/configurations/parameters/finance/fixed-assets-parameters).
 
-En este módulo es posible anular la operación realizada en la pestaña anterior, *ammortamento*.
+Si está activa, la parte no deducible fiscalmente de la amortización<!-- ammortamento --> se contabilizará automáticamente en la cuenta específica<!-- conto specifico --> que ha sido definida dentro de la tabla de [**categorías de activos fijos<!-- categorie cespite -->**](/docs/configurations/tables/finance/fixed-asset-category).
+
+El porcentaje de no deducibilidad de la amortización<!-- indeducibilità dell'ammortamento --> se define mediante el campo ***Tipo deducibilidad<!-- Tipo deducibilità -->*** también dentro de las categorías de activos fijos<!-- categorie cespiti -->.
+
+
+## Anteriores<!-- Precedenti -->
+
+En esta sección es posible anular la operación realizada en la pestaña anterior, *Amortización<!-- Ammortamento -->*.

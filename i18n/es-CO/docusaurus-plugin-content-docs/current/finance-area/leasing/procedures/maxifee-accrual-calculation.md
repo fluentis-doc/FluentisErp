@@ -1,60 +1,61 @@
 ---
-title: Cálculo de Risconto Maxicanone (Calcolo Risconto Maxicanone)
+title: Cálculo de Diferimiento Maxicanone
 sidebar_position: 1
+ai_generated: true
 ---
 
-Desde este formulario, es posible buscar los risconti ya calculados y proceder al cálculo de nuevos riscontos anuales en lo que respecta al maxicanone.
+Desde este formulario es posible buscar los diferimientos<!-- risconti --> ya calculados y proceder al cálculo de nuevos diferimientos<!-- risconti --> anuales relativos al maxicanone<!-- maxicanone -->.
 
-El procedimiento, de manera similar a los procedimientos para las asientos de ajuste del módulo de Contabilidad, requiere ejecutar **primero** el **cálculo** del risconto desde esta posición y **luego** proceder a su **contabilización** a través del procedimiento contable apropiado del módulo.
+El procedimiento, de manera similar a los procedimientos para los asientos de ajuste del módulo de Contabilidad<!-- Contabilità -->, prevé ejecutar **primero** el **cálculo** del diferimiento<!-- risconto --> desde esta posición y **luego** proceder a su **contabilización** mediante el procedimiento contable específico del módulo.
 
-Al presionar el botón nuevo, se inicializa el formulario de entrada de parámetros para el cálculo.
+Al presionar el botón "Nuevo", se inicializa el formulario de inserción de parámetros para el cálculo.
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image01.png)
 
-Es necesario especificar el **Año** contable, la **Causa** a utilizar para la escritura de ajuste, la **Fecha** de registro y de competencia contable que se insertará en la escritura.
+Es necesario especificar el **Año<!-- Anno -->** contable, la **Causal<!-- Causale -->** a utilizar para el asiento de ajuste, la **Fecha<!-- Data -->** de registro y de competencia contable que se insertará en el asiento.
 
-A pesar de la inserción de la causa, el esquema de la escritura contable será guiado por la lógica del procedimiento.
+A pesar de la inserción de la causal<!-- causale -->, el esquema del asiento contable será dirigido por la lógica del procedimiento.
 
-Después de guardar, es posible presionar Calcular para obtener la propuesta de los valores, que podrán ser confirmados mediante la marca (marcar todo para confirmar los riscontos relacionados con los diversos leasing presentes) y luego proceder a contabilizarlos.
+Después de guardar, es posible presionar "Calcular" para obtener la propuesta de valores, los cuales podrán ser confirmados mediante la selección (seleccionar todo para confirmar los diferimientos<!-- risconti --> relativos a los distintos contratos de leasing<!-- leasing --> presentes) y luego proceder a su contabilización.
 
-Los valores propuestos por el cálculo son editables y, por lo tanto, pueden ser forzados en caso de que el cálculo obtenido necesite ligeros ajustes, por ejemplo, en el número de días de competencia calculados o en los valores resultantes.
+Los valores propuestos por el cálculo son editables y por tanto pueden ser forzados en caso de que el cálculo obtenido requiera ligeros ajustes, por ejemplo en el número de días de competencia calculados o en los valores resultantes.
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image02.png)
 
-Se recuperan **Tipo de Leasing**, **Fecha de suscripción**, **Número de Leasing**, **Descripción** y **Fecha de extinción**.
+Se muestran **Tipo Leasing**, **Fecha de firma**, **Número de Leasing**, **Descripción** y **Fecha de extinción**.
 
-**Total de días**: = diferencia en días entre **fecha de suscripción** y **fecha de extinción**.
+**Total días**: = diferencia en días entre **fecha de firma<!-- data stipula -->** y **fecha de extinción<!-- data estinzione -->**
 
-**Costo diario**: = Valor total del contrato / Total de días: (donde el Valor total del contrato = Maxicanone + Gastos de instrucción y práctica + Suma de (Cuota de capital + Cuota de intereses + Gastos por cada canón)).
+**Costo diario**: = Valor total del contrato / Total días:  (donde Valor total del contrato = Maxicanone<!-- Maxicanone --> + Gastos de estudio y tramitación + Suma de (Cuota de capital + Cuota de intereses + Gastos por cada cuota individual)).
 
-**Días de competencia**: = número de días transcurridos entre (la más reciente entre la fecha de suscripción y la fecha de inicio del ejercicio) y la Fecha de registro establecida para el risconto del maxicanone.
+**Días de competencia**: = número de días comprendidos entre (la más reciente entre fecha de firma<!-- data stipula --> y fecha de inicio del ejercicio) y Fecha de registro establecida para el diferimiento<!-- risconto --> del maxicanone<!-- maxicanone -->.
 
-**Costo de competencia**: = Costo diario * Días de competencia.
+**Costo de competencia**: = Costo diario * Días de competencia
 
-**Pagado contable (Pagato contab.)**: cálculo de lo pagado en el ejercicio desde el punto de vista contable (canones contabilizados + Maxicanone si está contabilizado) 
+**Pagado contab.**: cálculo de lo pagado en el ejercicio desde el punto de vista contable (cuotas contabilizadas + Maxicanone<!-- Maxicanone --> si se ha contabilizado) 
 
-= Suma del Maxicanone contabilizado y de los canones (cuota de capital + cuota de intereses + gastos) que tienen el indicador Contabilizado activo (a raíz de la maniobra de contabilización o ajustado manualmente) y cuya fecha prevista de vencimiento para el canón, indicada en la línea de detalle del plan de amortización del leasing, es menor que la fecha de registro del risconto del maxicanone.
+= Suma del Maxicanone<!-- Maxicanone --> contabilizado y de las cuotas (cuota de capital + cuota de intereses + gastos) con el flag "Contabilizado" activo (después de contabilizar o establecido manualmente) y la fecha de vencimiento esperada para la cuota, indicada en la línea de detalle del plan de amortización del leasing<!-- leasing -->, sea anterior a la fecha de registro del diferimiento<!-- risconto --> maxicanone<!-- maxicanone -->.
 
-También se verifica que el año contenido en las fechas de los canones y en el encabezado del leasing (fecha de suscripción) sean compatibles, con respecto a la fecha de contabilización del risconto, con la presencia de los parámetros contables para el año en cuestión.
+También se verifica que el año contenido en las fechas de las cuotas y en la cabecera del contrato de leasing<!-- leasing --> (fecha de firma<!-- data stipula -->) sean compatibles, respecto a la fecha de contabilización del diferimiento<!-- risconto -->, con la presencia de los parámetros contables para el año en cuestión.
 
-**Risconto del año anterior**: en este campo se reporta el valor del campo Valor risconto correspondiente al año anterior, por lo que el primer año en el que se carga el contrato de leasing en el sistema resultará ser cero.
+**Diferimiento año anterior<!-- Risconto anno precedente -->**: en este campo se indica el valor del campo "Valor de diferimiento<!-- Valore risconto -->" relativo al año anterior, por tanto el primer año en que se carga el contrato de leasing<!-- leasing --> en el sistema será cero.
 
-**Valor risconto**: en este campo se calcula el valor del risconto a aplicar:
+**Valor de diferimiento<!-- Valore risconto -->**: en este campo se calcula el valor del diferimiento<!-- risconto --> a aplicar:
 
-= Pagado contab. + Risconto año anterior - Costo de competencia.
+= Pagado contab. + Diferimiento año anterior<!-- Risconto anno precedente --> - Costo de competencia
 
-**controllata**: marcar el indicador en la línea para habilitar la posibilidad de contabilizar el risconto ya que se aprobó el cálculo automático o después de editar manualmente los campos.
+**Controlada<!-- Controllata -->**: marcar el flag en la línea correspondiente para habilitar la posibilidad de contabilizar el diferimiento<!-- risconto --> ya sea porque se ha aprobado el cálculo automático o tras editar los campos manualmente.
 
-Es posible marcar el indicador en Marcar todo (arriba de la cuadrícula) para aprobar masivamente todos los riscontos propuestos.
+Es posible marcar el flag en "Seleccionar todo" (arriba de la cuadrícula) para aprobar masivamente todos los diferimientos<!-- risconti --> propuestos.
 
-**contabilizzata**: el indicador se activa tras el lanzamiento de la contabilización del risconto propuesto y aprobado. Se insertan las referencias a la escritura contable generada.
+**Contabilizada<!-- Contabilizzata -->**: el flag se activa después de ejecutar la contabilización del diferimiento<!-- risconto --> propuesto y aprobado. Se inserta la referencia al asiento contable generado.
 
-El procedimiento de contabilización puede ejecutarse desde este formulario a través de los botones en la barra de herramientas o, de manera indiferente, utilizando el procedimiento accesible desde el menú de procedimientos contables del módulo.
+El procedimiento de contabilización puede ejecutarse desde este formulario mediante los botones de la barra de acciones o, indistintamente, utilizando el procedimiento accesible desde el menú de procedimientos contables del módulo.
 
-Desde esta posición, también es posible ejecutar la restauración del procedimiento de contabilización.
+También desde esta posición es posible ejecutar la restauración del procedimiento de contabilización.
 
-El risconto Maxicanone calculado y contabilizado como se ha ilustrado anteriormente puede ser gestionado automáticamente también en la fase de reapertura automática de cuentas (activable desde la **[Cierre automático de cuentas](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) activando el indicador Giroconto escrituras de ajuste.
+El diferimiento<!-- risconto --> Maxicanone<!-- Maxicanone --> calculado y contabilizado como se ha ilustrado anteriormente puede gestionarse automáticamente también en la fase de reapertura automática de cuentas (activable desde el **[Cierre automático de cuentas](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)<!-- Chiusura automatica conti -->**) activando el flag "Contabilización automática de asientos de ajuste<!-- Giroconto scritture di assestamento -->".
 
-En este caso, se ejecutarán automáticamente las habituales escrituras de reapertura de los riscontos para maxicanone, acumulándolos a las demás escrituras automáticas de apertura de saldos y girocontos de los otros devengos y riscontos activos y pasivos.
+En este caso se ejecutarán automáticamente los habituales asientos de reapertura de los diferimientos<!-- risconti --> de maxicanone<!-- maxicanone -->, añadiéndolos a los demás asientos automáticos de apertura de saldos y de traspaso de los demás devengos y diferimientos<!-- ratei e risconti --> activos y pasivos.
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image03.png)

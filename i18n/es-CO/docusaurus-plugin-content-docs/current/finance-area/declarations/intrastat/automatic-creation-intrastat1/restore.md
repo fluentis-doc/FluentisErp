@@ -1,14 +1,13 @@
 ---
-title: ripristino
+title: Restaurar
 sidebar_position: 4
+ai_generated: true
 ---
 
-Utilice esta pestaña para anular las entradas en las secciones del modelo, haciendo que el documento correspondiente esté nuevamente disponible para su entrada en el modelo.
+Utilice esta pestaña para anular las inserciones en las secciones del modelo, haciendo que el documento correspondiente vuelva a estar disponible para su inserción en el modelo.
 
-
-
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Buscar (Ricerca)   | Botón para eliminar las facturas de tipo intracomunitario seleccionadas. |
-| ripristino Intrastat (Ripristina Intrastat) | Botón para restaurar toda la declaración Intrastat. |
-| ripristino factura (Ripristina fattura) | Botón para restaurar una sola factura presente en la declaración Intrastat. |
+| Buscar<!-- Ricerca -->   | Botón para eliminar las facturas de tipo intracomunitario seleccionadas. |
+| Restaurar Intrastat<!-- Ripristina Intrastat --> | Botón para restaurar la declaración Intrastat completa. |
+| Restaurar factura<!-- Ripristina fattura --> | Botón para restaurar solo una factura presente en la declaración Intrastat. |

@@ -1,50 +1,42 @@
 ---
-title: situazione contabile sottoconti
+title: Situación contable de subcuentas
 sidebar_position: 5
+ai_generated: true
 ---
 
-La impresión muestra el debe/haber/saldo de las subcuentas.
+El informe muestra el debe/haber/saldo de las subcuentas<!-- sottoconti -->.
 
+ 
 
+Es posible, en particular, filtrar las subcuentas<!-- sottoconti --> vinculadas a un proyecto específico (por ejemplo, Proyecto<!-- Commessa -->).
 
-Es posible, en particular, filtrar las subcuentas vinculadas a un proyecto específico (por ejemplo, *Comisión*).
+**OPCIONES ESPECÍFICAS DEL INFORME**:
 
-**OPCIONES ESPECÍFICAS DEL INFORME (OPZIONI SPECIFICHE DEL REPORT)**:
+**Mostrar debe / haber<!-- Visualizza dare / avere -->**: opción activada por defecto, si se desactiva no se visualizarán las columnas debe / haber, sino solo la columna saldo.
 
-**visualizza dare / avere**: opción activa por defecto; si se desactiva, no se visualizarán las columnas de debe/haber, sino solo la columna de saldo.
+**Mostrar balance<!-- Visualizza bilancio -->**: opción activada por defecto, si se desactiva ya no se visualizará la columna saldo. Atención, si se desactivan tanto esta opción como la anterior, el informe será de hecho inutilizable ya que estará vacío.
 
-**visualizza bilancio**: opción activa por defecto; si se desactiva, ya no será visible la columna de saldo. Atención, desactivando tanto esta opción como la anterior, la impresión será inusable, ya que estará vacía.
+**Mostrar importes en moneda<!-- Visualizza importi in valuta -->**: al activar esta opción, las subcuentas<!-- sottoconti --> serán agrupadas según la moneda y se visualizarán los totales por grupo tanto en la moneda como en el contravalor en Euros (o la moneda utilizada por la empresa).
 
+**Mostrar valores de apertura<!-- Visualizza valori di apertura -->**: al activar esta opción, también se mostrarán dos columnas adicionales que reportan los valores de apertura de cuentas<!-- apertura conti --> para cada subcuenta<!-- sottoconto --> individual. Los valores reportados son los relativos al procedimiento **[Apertura automática de cuentas<!-- Apertura automatica conti -->](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/search)**.
 
+**Imprimir cuentas con saldo cero<!-- Stampa conti con saldo a zero -->**: opción desactivada por defecto, por lo tanto, las subcuentas<!-- sottoconti --> con saldo cero no se visualizarán; se puede activar para incluir estas subcuentas<!-- sottoconti -->.
 
-**visualizza importi in valuta**: al activar esta opción, las subcuentas se agruparán en función de la moneda y se mostrarán los totales por grupo tanto en la moneda como en el contravalor en Euros (o en la divisa utilizada por la empresa).
+**CRITERIOS DE AGRUPAMIENTO**:
 
+**Ninguno<!-- Nessuno -->**: no se realizarán agrupamientos
 
+**Agente**: las subcuentas<!-- sottoconti --> relativas a los registros de clientes<!-- anagrafiche clienti --> serán agrupadas según el agente asignado en el respectivo registro. En caso de haber varios agentes en el registro, se considerará el último ingresado.
 
-**visualizza valori di apertura**: al activar esta opción, se mostrarán dos columnas adicionales que reportan los valores de apertura de cuentas para cada subcuenta. Los valores reportados son los relativos al proceso **[Apertura automática de cuentas (Apertura automatica conti)](/docs/finance-area/ledger-records/records/procedures/automatic-accounts-opening/search)**.
+**Zona**: las subcuentas<!-- sottoconti --> relativas a los registros de clientes<!-- anagrafiche clienti --> serán agrupadas según la Zona presente en el registro **[ficha<!-- anagrafica -->](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)**
 
+**Agente / Zona**: se activará un criterio doble de agrupamiento, por agente y luego, para cada agente, agrupados por zona.
 
-
-**stampa conti con saldo a zero**: opción desactivada por defecto; por lo tanto, las subcuentas con saldo cero no se visualizarán, se puede activar para incluir estas subcuentas.
-
-**criteri di raggruppamento**:
-
-**nessuno**: no se realizarán agrupamientos.
-
-**agente**: las subcuentas relacionadas con los registros de clientes se agruparán en función del agente vinculado en su respectivo registro. Si hay más de un agente en el registro, se considerará el último ingresado.
-
-**zona**: las subcuentas relacionadas con los registros de clientes se agruparán en función de la zona presente en la **[anagrafica](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)**.
-
-**Agente / Zona (Agente / Zona)**: se activará un doble criterio de agrupamiento, primero por agente y después, para cada agente, agrupados por zona.
-
-
-
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión. |
-| Imprimir (Stampa) | Botón para ejecutar la impresión física del documento. |
+| Vista previa | Botón para ejecutar la vista previa de impresión. |
+| Imprimir | Botón para ejecutar la impresión física del documento. |
 
-
-:::important Ver También (Vedi Anche)
-[**VIDEOS TUTORIALES SOBRE IMPRESIONES CONTABLES (VIDEO TUTORIALS SULLE STAMPE CONTABILI)**](/docs/video/finance/intro)
+:::important Ver también<!-- Vedi Anche -->
+[**VIDEO TUTORIALES SOBRE IMPRESIONES CONTABLES<!-- VIDEO TUTORIALS SULLE STAMPE CONTABILI -->**](/docs/video/finance/intro)
 :::

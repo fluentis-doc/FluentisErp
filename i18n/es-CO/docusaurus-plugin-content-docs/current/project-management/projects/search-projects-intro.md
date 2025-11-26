@@ -1,12 +1,13 @@
 ---
-title: Búsqueda de Proyectos (Ricerca Progetti)
+title: Búsqueda de Proyectos
 sidebar_position: 1
+ai_generated: true
 ---
 
-La búsqueda de **progetti** permite buscar los proyectos ya ingresados y agregar nuevos proyectos.
+La búsqueda **Proyectos<!-- Progetti -->** permite buscar los proyectos<!-- progetti --> ya ingresados y agregar nuevos proyectos<!-- progetti -->;
 
 import SearchForm from './../../import/sections/search-form.md'
 
 <SearchForm />
 
-Un botón específico de este formulario es **nuovo progetto da modello**: permite crear un nuevo proyecto a partir de un modelo preexistente. Es necesario indicar el **tipo progetto**, el nuevo **cliente** al que está destinado y la **data creazione**.
+Un botón específico de esta pantalla es **Nuevo proyecto desde modelo<!-- Nuovo progetto da modello -->**: permite crear un nuevo proyecto<!-- progetto --> a partir de un modelo preexistente. Es necesario indicar el **Tipo de proyecto<!-- Tipo progetto -->**, el nuevo **Cliente** al que está destinado y la **Fecha de creación<!-- Data creazione -->**.

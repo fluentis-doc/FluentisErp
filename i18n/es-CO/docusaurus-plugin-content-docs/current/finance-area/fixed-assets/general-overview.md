@@ -1,48 +1,52 @@
 ---
-title: Introducción (Introduzione)
+title: Introducción
 sidebar_position: 1
+ai_generated: true
 ---
 
-El módulo **cespiti** permite al operador gestionar los bienes de uso plurianual presentes en la empresa.  
-El módulo se encuentra en el *Área administrativa* y se actualiza en compra/venta a través de los registros de contabilidad general basados en causales específicas que prevean su movimiento, pero los registros de este módulo también se pueden introducir y alinear manualmente. Desde este módulo se realizan los cálculos de la depreciación contable/fiscal, así como las simulaciones plurianuales y las impresiones fiscales.  
-Antes de proceder con la introducción o la creación de un activo, es necesario asegurarse de que se han configurado correctamente todos los datos tabulares y los parámetros del módulo.
+El módulo **Activos fijos<!-- Cespiti -->** permite al operador gestionar los bienes de uso plurianual presentes en la empresa.  
+El módulo está presente en el *Área administrativa<!-- Area amministrativa -->* y se actualiza en la compra/venta a partir de las registraciones<!-- registrazioni --> de contabilidad general con causales específicas que prevén su movimiento<!-- movimentazione -->, pero los datos maestros de este módulo también se pueden introducir y alinear manualmente. Desde este módulo se realizan los cálculos de las amortizaciones legales/fiscales, así como las simulaciones a varios años y los listados fiscales.  
+Antes de proceder a la introducción o realización de un activo fijo<!-- cespite --> es necesario asegurarse de haber configurado correctamente todos los datos tabulares así como los parámetros del módulo.
 
-*Impresiones específicas (Stampe specifiche)*  
+*Listados específicos<!-- Stampe specifiche -->*  
 
-> [Impresión de compra de activos anuales (Stampa Acquisto cespiti annuali)](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase): llama al procedimiento para imprimir la lista de los activos comprados en el año.  
-> [Impresión de depreciación de activos (Stampa Ammortamento cespiti)](/docs/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-depreciation): llama al procedimiento para imprimir la lista de depreciaciones de activos.  
-> [Impresión de libro de activos depreciables (Stampa Libro Cespiti ammortizzabili)](/docs/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal): llama al procedimiento para imprimir el registro anual de los activos.  
-> [Impresión de resumen de revalorizaciones (Stampa Prospetto rivalutazioni)](/docs/finance-area/fixed-assets/revaluations-prospect): llama al procedimiento para imprimir el resumen de revalorizaciones.  
-> [Impresión de resumen por tipo de operación (Stampa Riepilogo per tipo operazione)](/docs/finance-area/fixed-assets/reports-fixed-assets/summary-per-operation-type): llama al procedimiento para imprimir un resumen por tipo de operación.  
-> [Impresión de fichas de activos (Stampa Schede cespiti)](/docs/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets): llama al procedimiento para imprimir las fichas individuales de activos.  
+> [Listado de compra anual de activos fijos<!-- Stampa Acquisto cespiti annuali -->](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase): invoca el procedimiento para imprimir la lista de los activos fijos<!-- cespiti --> comprados en el año.  
+> [Listado de amortización de activos fijos<!-- Stampa Ammortamento cespiti -->](/docs/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-depreciation): invoca el procedimiento para imprimir la lista de las amortizaciones de los activos fijos<!-- ammortamenti cespiti -->.  
+> [Libro de activos fijos amortizables<!-- Stampa Libro Cespiti ammortizzabili -->](/docs/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal): invoca el procedimiento para imprimir el registro anual de los activos fijos<!-- cespiti -->.  
+> [Listado de revalorizaciones<!-- Stampa Prospetto rivalutazioni -->](/docs/finance-area/fixed-assets/revaluations-prospect): invoca el procedimiento para imprimir el listado de las revalorizaciones.  
+> [Resumen por tipo de operación<!-- Stampa Riepilogo per tipo operazione -->](/docs/finance-area/fixed-assets/reports-fixed-assets/summary-per-operation-type): invoca el procedimiento para imprimir un resumen por tipo de operación.  
+> [Ficha de activos fijos<!-- Stampa Schede cespiti -->](/docs/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets): invoca el procedimiento para imprimir las fichas individuales de los activos fijos<!-- schede cespiti -->.  
 
-*Procedimientos específicos (Procedure specifiche)*
 
-> [Depreciación de activos (Ammortamento cespite)](/docs/finance-area/fixed-assets/procedures/fixed-asset-depreciation/fixed-assets-depreciation): llama al procedimiento para calcular automáticamente las depreciaciones de los activos.  
-> [Contabilización de depreciaciones (Contabilizzazione ammortamenti)](/docs/finance-area/fixed-assets/accounting/depreciations-accounting): llama al procedimiento para contabilizar automáticamente las depreciaciones.  
-> [Simulación de planes de depreciación (Simulazione piani di ammortamento)](/docs/finance-area/fixed-assets/depreciation-plans-simulation): llama al procedimiento para realizar la simulación de los planes de depreciación.  
+*Procedimientos específicos<!-- Procedure specifiche -->*
 
-**Tablas necesarias para gestionar el módulo (Tabelle necessarie per gestire il modulo)**:  
-[Piano de cuentas (Piano dei conti)](/docs/erp-home/registers/accounting/analytic-chart-of-accounts),  
+> [Amortización de activo fijo<!-- Ammortamento cespite -->](/docs/finance-area/fixed-assets/procedures/fixed-asset-depreciation/fixed-assets-depreciation): invoca el procedimiento para calcular automáticamente las amortizaciones de los activos fijos<!-- ammortamenti dei cespiti -->.  
+> [Contabilización de amortizaciones<!-- Contabilizzazione ammortamenti -->](/docs/finance-area/fixed-assets/accounting/depreciations-accounting): invoca el procedimiento para contabilizar automáticamente las amortizaciones.  
+> [Simulación de planes de amortización<!-- Simulazione piani di ammortamento -->](/docs/finance-area/fixed-assets/depreciation-plans-simulation): invoca el procedimiento para realizar la simulación de los planes de amortización.  
 
-[Tipos de IVA (Aliquote IVA)](/docs/configurations/tables/finance/vat-rates),  
 
-[Tasas de cambio fijas en euros (Cambi fissi euro)](/docs/configurations/tables/finance/euro-fixed-exchanges),  
+**Tablas necesarias para gestionar el módulo**: 
+[Plan de cuentas<!-- Piano dei conti -->](/docs/erp-home/registers/accounting/analytic-chart-of-accounts),  
 
-[Tasas de cambio de divisas (Cambi valute)](/docs/configurations/tables/finance/currency-exchange),  
+[Tarifas de IVA<!-- Aliquote IVA -->](/docs/configurations/tables/finance/vat-rates),  
 
-[**categoria cespite**](/docs/configurations/tables/finance/fixed-asset-category),  
+[Tipos de cambio fijo euro<!-- Cambi fissi euro -->](/docs/configurations/tables/finance/euro-fixed-exchanges),  
 
-[Planes de depreciación alternativos (Piani di ammortamento alternativi)](/docs/configurations/tables/finance/alternative-depreciation-plans),  
+[Tipos de cambio de monedas<!-- Cambi valute -->](/docs/configurations/tables/finance/currency-exchange),  
 
-[Código precursor de activos (Precodice cespite)](/docs/configurations/tables/finance/fixed-asset-precode),  
+[**Categoría de activo fijo<!-- Categoria cespite -->**](/docs/configurations/tables/finance/fixed-asset-category), 
 
-[Propiedad del activo (Proprietà cespite)](/docs/configurations/tables/finance/fixed-asset-property), Tipos de contabilización de activos,  
+[Planes de amortización alternativos<!-- Piani di ammortamento alternativi -->](/docs/configurations/tables/finance/alternative-depreciation-plans),  
 
-[Tipos de depreciación objetivas (Tipi ammortamenti oggetivi)](/docs/configurations/tables/finance/objective-amortization-types),  
+[Precódigo de activo fijo<!-- Precodice cespite -->](/docs/configurations/tables/finance/fixed-asset-precode),  
 
-[Tipos de deducción (Tipi deducibilità)](/docs/configurations/tables/finance/deductibility-types),  
+[Propiedad del activo fijo<!-- Proprietà cespite -->](/docs/configurations/tables/finance/fixed-asset-property), Tipos de contabilización de activos fijos<!-- Tipi contabilizzazione cespiti -->,  
 
-[Tipos de revalorización (Tipi rivalutazione)](/docs/configurations/tables/finance/revaluation-types).
+[Tipos de amortización objetiva<!-- Tipi ammortamenti oggetivi -->](/docs/configurations/tables/finance/objective-amortization-types),  
 
-**parametri**: [Parámetros de activos (Parametri cespiti)](/docs/configurations/parameters/finance/fixed-assets-parameters).
+[Tipos de deducibilidad<!-- Tipi deducibilità -->](/docs/configurations/tables/finance/deductibility-types),  
+
+[Tipos de revalorización<!-- Tipi rivalutazione -->](/docs/configurations/tables/finance/revaluation-types).
+
+
+**Parámetros<!-- Parametri -->**:   [Parámetros de activos fijos<!-- Parametri cespiti -->](/docs/configurations/parameters/finance/fixed-assets-parameters).

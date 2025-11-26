@@ -1,68 +1,75 @@
 ---
-title: contabilizzazione accrediti
+title: Contabilización de Acreditaciones
 sidebar_position: 3
+ai_generated: true
 ---
 
-El formulario se encuentra en Tesorería > Cartera de Efectos > Contabilización > Contabilización de acreditaciones (Contabilizzazione accrediti)
+El formulario se encuentra en Tesorería > Cartera de Efectos<!-- Portafoglio Effetti --> > Contabilización > Contabilización de acreditaciones<!-- Contabilizzazione accrediti -->.
 
-Desde esta máscara se procede a la última fase de la cartera de efectos: el procedimiento cerrará la cuenta transitoria del banco de presentación para acreditar la cuenta corriente real del registro bancario en la lista.
+Desde esta pantalla se procede a la última fase de la cartera de efectos<!-- portafoglio effetti -->: el procedimiento cerrará la cuenta transitoria del banco de presentación para acreditar la cuenta corriente real del registro del banco<!-- anagrafica banca --> en la remesa<!-- distinta -->.
 
 :::tip[Nota]
-**Es necesario acceder específicamente a este formulario para esta contabilización, ya que no se prevé ningún botón dentro del efecto o la lista**.
+**Es necesario acceder específicamente a este formulario para esta contabilización, ya que no existe ningún botón dentro del efecto<!-- effetto --> o de la remesa<!-- distinta -->.**
 :::
 
-## Cómo contabilizar un crédito (Come contabilizzare un accredito)
+## Cómo contabilizar una acreditación<!-- Come contabilizzare un accredito -->
 
-1. Utiliza la parte superior de la máscara para filtrar la búsqueda de los efectos a acreditar: la contabilización de acreditaciones solo puede llevarse a cabo para efectos contabilizados. La selección se realiza en el detalle de los efectos para poder identificar los importes acreditados por cada fecha de vencimiento.
+1. Utiliza la parte superior de la pantalla para filtrar la búsqueda de los efectos a acreditar: la contabilización de acreditaciones sólo puede realizarse para efectos ya contabilizados<!-- effetti contabilizzati -->. La selección se realiza en el detalle de los efectos para poder identificar los importes acreditados por cada fecha de vencimiento.
 
-2. Selecciona en la cuadrícula central los efectos que deseas gestionar.
+2. Selecciona desde la cuadrícula central los efectos que deseas gestionar
 
-3. Completa los parámetros para la contabilización tales como la **causale di contabilità**, la **data registrazione** y la fecha de competencia (data competenza).
+3. Completa los parámetros para la contabilización, como la **Causal contable<!-- Causale di contabilità -->**, la **fecha de registro<!-- data registrazione -->** y la fecha de competencia.
 
 :::note[Nota]
-Esta sección puede ser predefinida dentro de los [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo Cartera de Efectos.
+Esta sección puede predefinirse dentro de los [**parámetros**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo de Cartera de Efectos<!-- Portafoglio effetti -->.
 :::
 
-4. Completa también los otros campos para la gestión de la contabilización:
+4. Además, completa los demás campos para la gestión de la contabilización<!-- contabilizzazione -->:
 
-**spese commissioni**: el subcuenta donde se contabilizarán los gastos por comisiones, que se deberá indicar en el campo siguiente.
+**Gastos de comisiones**: el subcuenta<!-- sottconto --> donde serán contabilizados los gastos por comisiones, a indicar en el campo siguiente
 
-**commissioni**: valor de las comisiones sobre el crédito de los efectos que se contabilizará; puede ser propuesto, para cada efecto, en función de las *comisiones* establecidas en el [***registro bancario (anagrafica banca)***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry).  
+**Comisiones**: valor de las comisiones por la acreditación de los efectos que se contabiliza; puede proponerse, para cada efecto, sobre la base de las *comisiones* configuradas en la [***ficha de banco***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry)<!-- anagrafica banca -->.
 
-**oneri passivi**: cuenta donde se contabilizarán los intereses pasivos calculados para listas de descuentos.
+**Cargos pasivos**: cuenta donde serán contabilizados los intereses pasivos calculados para remesas en descuento<!-- distinte allo sconto -->.
 
 :::note[Nota]
-En esta sección también hay tres campos para la visualización de los totales de los efectos seleccionados en la cuadrícula central:
+En esta sección también se encuentran tres campos para visualizar los totales de los efectos seleccionados en la cuadrícula central:
 
-**totale selezione oneri passivi**: suma del valor de los Cargos pasivos para todos los efectos seleccionados;
+**Total selección cargos pasivos**: suma del valor Cargos pasivos<!-- Oneri passivi --> para todos los efectos seleccionados;
 
-**totale selezione commissioni**: suma del valor de las Comisiones para todos los efectos seleccionados;
+**Total selección comisiones**: suma del valor Comisiones para todos los efectos seleccionados;
 
-**totale effetti selezionati**: suma del valor de los efectos seleccionados;
+**Total de efectos seleccionados**: suma del valor de los efectos seleccionados;
 :::
 
-5. Presiona el botón en la barra de ribbon **contabilizzazione accrediti**.
+4. Pulsa el botón en la cinta de opciones **Contabilización de acreditaciones<!-- Contabilizzazione accrediti -->**
+
+
 
 **Botones específicos**
 
-**ricerca**: Busca la lista de los efectos de los cuales contabilizar el crédito.
+**Buscar<!-- Ricerca -->**: Busca el listado de los efectos de los que contabilizar la acreditación.
 
-**contabilizzazione**: Realiza la contabilización para las líneas seleccionadas.
+**Contabilización<!-- Contabilizzazione -->**: Ejecuta la contabilización para las filas seleccionadas.
 
-### Pestaña Anteriores (Tab Precedenti)
 
-Desde la pestaña *anteriores* es posible proceder a la anulación de las contabilizaciones realizadas.
 
-La anulación solo será posible si el periodo aún es modificable (no se han realizado la impresión del libro diario y el cierre de cuentas).
+### Pestaña Anteriores<!-- Tab Precedenti -->
 
-Un doble clic en la sección de las registraciones permitirá visualizar la registración contable relacionada.
+Desde la pestaña *anteriores<!-- precedenti -->* es posible anular las contabilizaciones realizadas.
 
-Hay una pestaña de detalle para visualizar los errores detectados durante la contabilización.
+La anulación será posible únicamente si el periodo aún es modificable (libro diario y cierre de cuentas no realizados).
+
+Un doble clic en la sección de registros permitirá ver el correspondiente asiento contable<!-- registrazione contabile -->.
+
+Hay una pestaña de detalle de visualización de los errores detectados durante la contabilización.
+
+
 
 **Botones específicos**
 
-**ricerca**: Busca la lista de las contabilizaciones realizadas.
+**Buscar<!-- Ricerca -->**: Busca el listado de las contabilizaciones realizadas.
 
-**rollback contabilizzazione**: Realiza la restauración de las contabilizaciones seleccionadas para todos los documentos que contienen.
+**Rollback contabilización<!-- Rollback contabilizzazione -->**: Restaura las contabilizaciones seleccionadas para todos los documentos que contienen.
 
-**rollback registrazioni**: Realiza la restauración de la única registración contable seleccionada.
+**Rollback registros<!-- Rollback registrazioni -->**: Restaura el único asiento contable<!-- registrazione contabile --> seleccionado.

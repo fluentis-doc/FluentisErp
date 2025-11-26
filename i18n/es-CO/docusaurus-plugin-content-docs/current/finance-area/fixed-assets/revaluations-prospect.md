@@ -1,15 +1,16 @@
 ---
-title: prospetto rivalutazioni
+title: Informe de revalorizaciones
 sidebar_position: 4
+ai_generated: true
 ---
 
-La máscara de impresión del prospetto rivalutazioni permite definir los filtros de búsqueda habituales para la extracción de datos.
+La pantalla de impresión del Informe de revalorizaciones<!-- Prospetto rivalutazioni --> permite definir los filtros de búsqueda habituales para la extracción de datos.
 
-El informe permite resumir los datos de detalle de las revalorizaciones asociadas a los diversos activos, de acuerdo con el código de agrupamiento establecido en la tabla de categorías de activos.
+El informe permite resumir los datos detallados de las revalorizaciones asociadas a los diferentes activos fijos<!-- cespiti -->, según el código de agrupación configurado en la tabla de categorías de activos fijos<!-- categorie cespiti -->.
 
 Para más información sobre los parámetros de filtro del formulario **[ver aquí](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase).**
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión. |
-| Imprimir (Stampa) | Botón para ejecutar la impresión física del documento. |
+| Vista previa<!-- Anteprima --> | Botón para ejecutar la vista previa de impresión. |
+| Imprimir<!-- Stampa --> | Botón para ejecutar la impresión física del documento. |

@@ -1,50 +1,83 @@
 ---
-title: Gestión de devoluciones y notas de crédito (Gestione resi e note di credito)
+title: Gestión de devoluciones y notas de crédito
 sidebar_position: 3
+ai_generated: true
 ---
 
-El mecanismo de gestión de devoluciones y notas de crédito permite administrar los flujos de retorno de mercancías y los ajustes financieros relacionados. Así es como típicamente funciona:
+En el módulo de Ventas de Fluentis, la gestión de devoluciones<!-- resi --> y notas de crédito permite registrar y monitorear la devolución de bienes o servicios por parte de los clientes, generando los documentos contables y logísticos necesarios. Este proceso garantiza una correcta trazabilidad de las operaciones y una actualización en tiempo real de las existencias de almacén<!-- magazzino --> y de las posiciones contables de los clientes.
 
-**Registro de la Devolución (Registrazione del Reso)**: Cuando un cliente devuelve un producto, el proceso comienza con la creación de un documento de devolución en el sistema. Este documento puede ser creado manualmente (ingresando un DDT con Naturaleza *reso* o una factura con Naturaleza *Nota de crédito (Nota di credito)*), o automáticamente con el procedimiento de **storno** presente en la [Búsqueda (Ricerca)](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn) de documentos. En caso de que se cree el DDT de devolución, de este se podrá crear automáticamente la nota de crédito con los procedimientos correspondientes. 
+Fluentis soporta diferentes tipos de devolución<!-- reso -->:
 
-**Actualización de Inventarios (Aggiornamento delle Scorte)**: una vez que se ha movido a almacén el documento de anulación, el sistema actualiza automáticamente los inventarios para reflejar el retorno de la mercancía, indicando los productos devueltos como disponibles. 
+- Devolución con Nota de Crédito: devolución de bienes con emisión de una nota de crédito para anular el importe facturado. La mercancía podrá ser devuelta a través de un documento de transporte<!-- documento di trasporto --> o directamente al emitir la nota de crédito, según la configuración del almacén<!-- magazzino -->.
 
-**Detalles de la Nota de Crédito (Dettagli della Nota di Credito)**: La nota de crédito incluye detalles como el monto acreditado y puede ser revisada antes de ser enviada al cliente. Al guardar una nota de crédito, todos los Tipos de gasto se ingresan con signo negativo, excepto los gastos de Sellos (Bollo). 
+- Devolución sin Nota de Crédito: devolución de bienes sin emisión de nota de crédito, por ejemplo para sustitución de mercancía. En este caso, típicamente se utilizarán los documentos de transporte<!-- documenti di trasporto --> para mover el almacén<!-- magazzino -->.
 
-**Actualización de la Contabilidad (Aggiornamento della Contabilità)**: Una vez contabilizada, la nota de crédito actualiza los registros contables, reduciendo el monto adeudado por el cliente; esto puede reflejarse en una disminución del saldo abierto o en un reembolso, dependiendo de los acuerdos con el cliente.
+La devolución<!-- reso --> además puede ser: 
 
-:::note Nota
-Desde la versión 607, las notas de crédito se manejan con signo negativo.  
-En el momento de guardar el documento, de hecho, Fluentis cambiará el signo de los artículos y notificará al usuario con un pop-up. También todos los gastos se convierten a signo negativo, excepto los gastos de Sellos (Bollo).    
-La gestión de la contabilización del documento no cambia con respecto al pasado, ya que el documento negativo continúa siendo descontado del registro IVA (antes se convertía en negativo al momento de la contabilización).  
-El envío del documento a la SDI mediante la generación del archivo .xml implica un nuevo cambio de signo en conformidad con las especificaciones técnicas para la facturación electrónica.  
-El cambio en el comentario ha sido necesario, sobre todo para una mejor gestión de las estadísticas de ventas y los procesos conexos.
+- Devolución Parcial: devolución de una parte de la mercancía entregada.
+
+- Devolución Total: devolución de la totalidad del suministro.
+
+##  Proceso Operativo<!-- Processo Operativo -->
+
+Los documentos de **Devolución<!-- Reso -->** pueden ser generados de dos maneras:
+
+1) *a través del procedimiento de **Estorno<!-- Storno -->** presente en la barra de herramientas de la búsqueda de albaranes<!-- DDT --> o facturas.* Con este procedimiento es posible anular parcial o totalmente los documentos seleccionados en la cuadrícula de búsqueda. Una vez pulsado el botón *Estorno*, se abrirá una ventana emergente en la que: seleccionar las líneas de los artículos a anular con las cantidades correspondientes, ingresar el Tipo de documento a crear (**solo será posible seleccionar tipos de documento con naturaleza Devolución<!-- Reso -->**) e ingresar la Causal de estorno del almacén<!-- Causale di storno del magazzino -->. 
+
+2) *manualmente con la creación de un nuevo albarán<!-- DDT --> o factura.* 
+En este caso, es importante ingresar un Tipo de documento con Naturaleza *Devolución<!-- Reso -->*, el cliente y los artículos a anular. Si se crea manualmente la devolución<!-- reso -->, sin embargo, no existirá el enlace con el documento de origen, el cual deberá ser ingresado manualmente por el usuario.
+
+Si se ha generado un albarán<!-- DDT -->, se podrá generar a partir de él la factura, mediante el procedimiento correspondiente o mediante la liquidación manual. Al guardar una nota de crédito ingresada manualmente, el sistema advertirá al usuario que debe ingresar una cantidad negativa en las notas de crédito. Esta funcionalidad permite tener una facturación actualizada, que considere en negativo las notas de crédito.
+
+:::note Atención<!-- Attenzione -->
+En la tabla [Tipos de Albarán<!-- Tipi DDT -->](/docs/configurations/tables/sales/delivery-notes-type), al Tipo de Albarán *Devolución<!-- Reso -->* debe asociarse un [Tipo de factura<!-- Tipo fattura -->](/docs/configurations/tables/sales/invoices-type) *Nota de crédito*.
 :::
 
-### Gestión de signos mixtos (Gestione segni misti)
+Para la valoración de los albaranes<!-- DDT --> de devolución en nota de crédito, pueden existir diferentes casos según los signos de cantidad y precio, en el albarán de origen:
+1)	Albarán de devolución   Cantidad  10, Precio  10 -> línea de factura (normal o nota de crédito NC) Cantidad  -10, Precio  10
+2)	Albarán de devolución   Cantidad -10, Precio  10 -> línea de factura normal                Cantidad  10, Precio  10 
+3)	Albarán de devolución   Cantidad -10, Precio  10 -> línea de factura NC                   Cantidad -10, Precio  10 
+4)	Albarán de devolución   Cantidad  10, Precio -10 -> línea de factura normal               Cantidad -10, Precio -10 
+5)	Albarán de devolución   Cantidad  10, Precio -10 -> línea de factura NC                   Cantidad -10, Precio  10 
+6)	Albarán de devolución   Cantidad -10, Precio -10 -> línea de factura normal               Cantidad  10, Precio -10 
+7)	Albarán de devolución   Cantidad -10, Precio -10 -> línea de factura NC                   Cantidad -10, Precio  10 
+8)	Albarán normal Cantidad  10, Precio  10 -> línea de factura NC                            Cantidad -10, Precio  10
+9)	Albarán normal Cantidad -10, Precio  10 -> línea de factura NC                            Cantidad -10, Precio  10
+10)	Albarán normal Cantidad  10, Precio -10 -> línea de factura NC                           Cantidad -10, Precio  10 
+11)	Albarán normal Cantidad -10, Precio -10 -> línea de factura NC                           Cantidad -10, Precio  10 
+
+## Configuraciones y Parámetros<!-- Configurazioni e Parametri -->
+
+Para una correcta gestión de las devoluciones<!-- resi --> y notas de crédito, asegúrese de que estén configurados los siguientes elementos:
+
+- **Tipos de Documento<!-- Tipi Documento -->**: definir los tipos de documento para devoluciones<!-- resi --> y notas de crédito.
+
+- **Almacén y Causal de almacén<!-- Magazzino e Causale di Magazzino -->**: cada tipo de documento que mueve el almacén<!-- magazzino --> debe tener asociado el [Almacén<!-- Magazzino -->](/docs/configurations/tables/logistics/warehouses) y la [causal<!-- causale -->](/docs/configurations/tables/logistics/warehouse-templates) relativa; generalmente, en las devoluciones<!-- resi --> y en las notas de crédito el movimiento será una entrada<!-- carico -->, ya que la mercancía es devuelta por el cliente. 
+
+## Gestión de signos mixtos - NOTA PARA PARTNER Y PROJECT MANAGER<!-- Gestione segni misti - NOTA PER PARTNER E PROJECT MANAGER -->
 
 La posibilidad de contabilizar el documento con signos mixtos debe habilitarse específicamente mediante un script SQL.
 
-:::note Nota técnica para activación
-A continuación, el script a ejecutar:
+:::note Nota técnica para activación<!-- Nota tecnica per attivazione -->
+A continuación el script a ejecutar:
 
-ATENCIÓN: El parámetro a continuación que controla la modalidad de gestión de signos ahora debe establecerse en +1, a diferencia del pasado, en consecuencia del cambio de política de gestión de signos mencionado anteriormente.
+ATENCIÓN: El parámetro a continuación que controla el modo de gestión de los signos debe ser ajustado a +1, a diferencia del pasado, debido al cambio de política en la gestión de signos anteriormente mencionada.
 
     select * from [Fluentis].[SH_LocalizationParameters] where [SH_LocalizationParameters].[SHLP_Code] like 'VE-SalesInvoice_CreditNotesPostingSigns'
 
 identificar el Id del parámetro en cuestión
 
-En la búsqueda
+En la búsqueda 
 
     select * from [Fluentis].[SH_CompanyParameters] where [SH_CompanyParameters].[SHCP_Parameter_SHLP_Id] = ..... identificar la fila para la empresa en uso a través del campo SHCP_Company_SHC_Id
 
-y ejecutar una actualización al campo SHCP_Value
+y ejecutar un update en el campo SHCP_Value
 
 VALORES DEL PARÁMETRO:
 
-0 = así como está, no permite signos mixtos (las NC siempre son forzadas a ser negativas)
+0 = como está, no permite signos mixtos (las NC siempre se fuerzan negativas)
 
--1 = NC siempre invertidas (el + se convierte en menos y el - se convierte en +)
+-1 = NC siempre invertidas (el + pasa a menos y el - pasa a +)
 
-+1 = Tipo actualmente requerido para el signo mixto, tanto las FT como las NC se contabilizan con los signos existentes, el + permanece + y el - permanece -.
++1 = Tipología actualmente requerida para el signo mixto, tanto FT como NC se contabilizan con los signos existentes, el + se mantiene + y el - se mantiene -.
 :::

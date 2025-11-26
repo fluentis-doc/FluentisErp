@@ -1,30 +1,30 @@
 ---
-title: ricerca cash flow
+title: Búsqueda de cash flow
 sidebar_position: 1
+ai_generated: true
 ---
 
-ENLACE:
+ENLACES:
 
-**[Tablas preliminares a gestionar (Tabelle preliminari da gestire)](/docs/treasury/cash-flow/general-overview)**
+** [Tablas preliminares a gestionar](/docs/treasury/cash-flow/general-overview) **<!-- Tabelle preliminari da gestire -->
 
-**[Elaboración automática (Elaborazione automatica)](/docs/treasury/cash-flow/procedures)**
+** [Elaboración automática](/docs/treasury/cash-flow/procedures) **<!-- Elaborazione automatica -->
 
-**[Impresión (Stampa)](/docs/treasury/cash-flow/reports)**
-
- 
-
-Desde este formulario, es posible buscar y modificar elaboraciones ingresadas previamente. 
-
-También es posible ingresar una nueva elaboración que sería, en este caso, completamente manual (y, por lo tanto, de escaso uso práctico).
-
-Se recomienda crear el flujo de efectivo a partir del procedimiento **[Generación automática de flujo de efectivo (Generazione automatica cash flow)](/docs/treasury/cash-flow/procedures)**.
+** [Impresión](/docs/treasury/cash-flow/reports) **<!-- Stampa -->
 
 
-#### Botones específicos
+Desde este formulario es posible buscar y modificar las elaboraciones introducidas previamente<!-- elaborazioni inserite precedentemente -->.
 
-> **ricerca**: Botón para aplicar los filtros de búsqueda a toda la base de datos de flujos de efectivo ingresados.  
-> **nuovo**: Invoca el procedimiento para ingresar un nuevo flujo de efectivo.  
-> **modifica**: Invoca el procedimiento para modificar un flujo de efectivo ingresado previamente.  
-> **visualizza**: Invoca el procedimiento para visualizar un flujo de efectivo ingresado previamente.  
-> **cancella**: Ejecuta el procedimiento para eliminar un flujo de efectivo ingresado previamente.  
-> **analisi cash flow**: Invoca el procedimiento para imprimir un flujo de efectivo.
+También es posible insertar una nueva elaboración<!-- elaborazione --> que, en este caso, sería completamente manual (y por lo tanto de poca utilidad práctica).
+
+Se recomienda crear el cash flow<!-- cash flow --> desde el procedimiento ** [Generación automática de cash flow<!-- Generazione automatica cash flow -->](/docs/treasury/cash-flow/procedures) **.
+
+
+#### Botones específicos<!-- Pulsanti specifici -->
+
+> **Buscar<!-- Ricerca -->**: Botón para aplicar los filtros de búsqueda en toda la base de datos de cash flow<!-- cash flow --> ingresados.  
+> **Nuevo<!-- Nuovo -->**: Llama al procedimiento para insertar un nuevo cash flow<!-- cash flow -->.  
+> **Modificar<!-- Modifica -->**: Llama al procedimiento para modificar un cash flow<!-- cash flow --> previamente introducido.  
+> **Visualizar<!-- Visualizza -->**: Llama al procedimiento para visualizar un cash flow<!-- cash flow --> previamente introducido.  
+> **Eliminar<!-- Cancella -->**: Ejecuta el procedimiento para eliminar un cash flow<!-- cash flow --> previamente introducido.  
+> **Análisis de cash flow<!-- Analisi cash flow -->**: Llama al procedimiento para imprimir un cash flow<!-- cash flow -->.

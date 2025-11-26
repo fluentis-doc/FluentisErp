@@ -1,275 +1,258 @@
 ---
-title: documento di origine interna
+title: Documento de origen interno
 sidebar_position: 2
+ai_generated: true
 ---
 
-La gestión se encuentra en el recorrido **Calidad > Documentos de origen interno > Nuevo documento di origine interna** o también se puede realizar desde la **Búsqueda de Documentos de origen interno**.
+La gestión se encuentra en la ruta **Calidad > Documentos de origen interno > Nuevo documento de origen interno<!-- Nuovo Documento di origine interna -->** o también se puede realizar desde la **Búsqueda de documentos de origen interno<!-- Ricerca Documenti di origine interna -->**.   
 
-:::important ¿Para qué sirve? (A cosa serve)
-La gestión de los documentos de origen interno permite: la catalogación, la gestión de ediciones/revisiones y su distribución (tanto en formato papel como electrónico) a las áreas de la empresa que están interesadas en consultar dichos documentos.
+:::important Para qué sirve<!-- A cosa serve -->
+La gestión de los documentos de origen interno permite: la catalogación, la gestión de ediciones/revisiones y su distribución (tanto en formato papel como electrónico) a las funciones empresariales<!-- funzioni aziendali --> interesadas en consultar dichos documentos.   
 
-Enumeramos algunos ejemplos de documentos de origen externo que pueden ser catalogados:  
-> *Manual de calidad (Manuale della qualità)*  
-> *Política de gestión (Politica di gestione)*  
-> *organigramma*  
-> *Esquema de proceso (Schema di processo)*  
-> *Instrucciones operativas (Istruzione operative)*  
-> *Ficha de servicio (Scheda di servizio)*  
+Enumeramos algunos ejemplos de documentos de origen interno que pueden ser catalogados:   
+> *Manual de calidad*<!-- Manuale della qualità -->   
+> *Política de gestión*<!-- Politica di gestione -->   
+> *Organigrama*<!-- Organigramma -->   
+> *Esquema de proceso*<!-- Schema di processo -->   
+> *Instrucción operativa*<!-- Istruzione operative -->   
+> *Ficha de servicio*<!-- Scheda di servizio -->   
 
-La información sobre dónde están depositados los originales y la posibilidad de adjuntarles copias electrónicas permite una inmediata localización y consulta con un simple clic del ratón.
+La información sobre dónde están archivados los originales y la posibilidad de adjuntar copias electrónicas permite su inmediata localización y consulta con un simple clic del ratón.
 
-Como estándar, están disponibles los informes de:  
-> **pagina di guardia**: es una hoja que, para *Documento*, reporta la lista de *Revisiones* realizadas y la *Lista de distribución*.  
-> **documento interno**: vista previa del documento adjunto en la pestaña *Adjunto* y creado en la pestaña *Creación documento*.  
-> **documenti allegati al documentale**: vista previa de los documentos adjuntos a la *Gestión Documental*.  
+Por estándar están disponibles los siguientes informes:   
+> **Página de guarda**<!-- Pagina di Guardia -->: es una ficha que, para cada *Documento<!-- Documento -->*, muestra la lista de *Revisiones<!-- Revisioni -->* realizadas y la *Lista de distribución<!-- Lista di distribuzione -->*.   
+> **Documento interno**: vista previa del documento adjunto en la pestaña *Adjunto<!-- Allegato -->* y creado en la pestaña *Creación de documento<!-- Creazione documento -->*.   
+> **Documentos adjuntos al documental**: vista previa de los documentos adjuntos a la *Gestión Documental<!-- Gestione Documentale -->*.   
 :::
 
+## Botones de comando<!-- Pulsanti di comando -->
 
-## Botones de comando (Pulsanti di comando)
+### ![](/img/neutral/common/save.png) Guardar<!-- Salva -->
 
+Al presionar este botón se guardan todas las informaciones modificadas del *Documento de origen interno<!-- Documento di origine interna -->* visualizado.   
 
-### ![](/img/neutral/common/save.png) Guardar (Salva)
+### ![](/img/neutral/common/duplicate.png) Duplicar<!-- Duplica -->
 
-Al presionar este botón, se almacenan todas las informaciones modificadas del *documento di origine interna* visualizado.
+El botón está habilitado solo para los miembros de las *Funciones empresariales<!-- Funzioni aziendali -->* de *verificación/aprobación* y *redacción/emisión*.
+Es posible duplicar el *Documento<!-- Documento -->* mostrado en un nuevo *Documento<!-- Documento -->*. Simplemente presione el botón **Duplicar<!-- Duplica -->**.   
+Se mostrará una solicitud de:
+> **Categoría**: es el *Código de categoría de documento de origen interno<!-- Codice categoria documento di origine interna -->* del nuevo *Documento<!-- Documento -->* (dato obligatorio).   
+> **Código**: es el *Código<!-- Codice -->* del nuevo *Documento<!-- Documento -->* (dato obligatorio).   
+> **Título**: es el *Título<!-- Titolo -->* del nuevo *Documento<!-- Documento -->* (dato obligatorio).   
 
+*Categoría<!-- Categoria -->* y *Título<!-- Titolo -->* son propuestos por el documento de origen; el *Código<!-- Codice -->* se propone si, a la *Categoría<!-- Categoria -->*, está asociada una *Codificación automática<!-- Codifica automatica -->*.   
+Presione posteriormente el botón **OK** o el botón **Cancelar<!-- Cancel -->** si desea continuar o no con la duplicación.   
+El nuevo *Documento de origen interno<!-- Documento di origine interna -->* creado tendrá *Edición<!-- Edizione -->* y *Revisión<!-- Revisione -->* igual a *Cero<!-- Zero -->* y el estado de *En creación<!-- In creazione -->*.   
+Al finalizar la operación, el nuevo *Documento de origen interno<!-- Documento di origine interna -->* será visualizado.
 
-### ![](/img/neutral/common/duplicate.png) Duplicar (Duplica)
+### Crear nueva revisión<!-- Crea nuova revisione -->
 
-El botón está habilitado solo para los componentes de las *Funciones empresariales* de *verificación/aprobación* y *redacción/emisión*.  
-Es posible duplicar el *Documento* visualizado en un nuevo *Documento*. Solo debe presionar el botón **duplica**.  
-Se mostrará una solicitud de:  
-> **categoria**: es el *Código de categoría documento de origen interno* del nuevo *Documento* (dato obligatorio).  
-> **codice**: es el *Código* del nuevo *Documento* (dato obligatorio).  
-> **titolo**: es el *Título* del nuevo *Documento* (dato obligatorio).  
+El botón está habilitado solo para los miembros de las *Funciones empresariales<!-- Funzioni aziendali -->* de *verificación/aprobación* y *redacción/emisión* y si el estado del documento de origen es *Emitido<!-- Emesso -->*. Se mostrará una solicitud de:   
+> **Motivo de la revisión<!-- Motivo della revisione -->**: una breve descripción del motivo que llevó a la revisión (dato obligatorio).   
+> **Modificación en párrafos<!-- Modifica su paragrafi -->**: un recordatorio descriptivo sobre el número de párrafos modificados.   
+> **Modificación en páginas<!-- Modifica su pagine -->**: un recordatorio descriptivo sobre el número de páginas modificadas.   
 
-*Categoría* y *Título* son propuestos por el documento de origen; el *Código* se propone si a la *Categoría* se le asocia una *Codificación automática*.  
-Después, presione el botón **OK** o el botón **Cancel** si desea continuar con la actividad de duplicado o no.  
-El nuevo *documento di origine interna* creado tendrá *Edición* y *Revisión* iguales a *Cero* y el estado de *in creazione*.  
-Al finalizar la elaboración, se visualizará el nuevo *documento di origine interna*.
+Presione posteriormente el botón **OK** o el botón **Cancelar<!-- Cancel -->** si desea proseguir con la creación o no.   
+Se crea un nuevo *Documento de origen interno<!-- Documento di origine interna -->*, con toda la información del *Documento<!-- Documento -->* original pero con el índice de *Revisión<!-- Revisione -->* incrementado y el estado de *En revisión<!-- In revisione -->*. El *Documento<!-- Documento -->* original permanece vigente con el estado de *Emitido<!-- Emesso -->*.   
+Al finalizar la operación, el nuevo *Documento de origen interno<!-- Documento di origine interna -->* será visualizado.   
 
+### Crear nueva edición<!-- Crea nuova edizione -->
 
-### Crear nueva revisión (Crea nuova revisione)
+El botón está habilitado solo para los miembros de las *Funciones empresariales<!-- Funzioni aziendali -->* de *verificación/aprobación* y *redacción/emisión* y si el estado del documento de origen es *Emitido<!-- Emesso -->*. Se mostrará una solicitud de:   
+> **Motivo de la revisión<!-- Motivo della revisione -->**: una breve descripción del motivo que llevó a la revisión (dato obligatorio).   
+> **Modificación en párrafos<!-- Modifica su paragrafi -->**: un recordatorio descriptivo sobre el número de párrafos modificados.   
+> **Modificación en páginas<!-- Modifica su pagine -->**: un recordatorio descriptivo sobre el número de páginas modificadas.   
 
-El botón está habilitado solo para los componentes de las *Funciones empresariales* de *verificación/aprobación* y *redacción/emisión* y si el estado del documento de origen es *emesso*. Se mostrará una solicitud de:  
-> **motivo della revisione**: una breve descripción del motivo que condujo a la revisión (dato obligatorio).  
-> **modifica su paragrafi**: un recordatorio descriptivo sobre la referencia al número de párrafos variaciones.  
-> **modifica su pagine**: un recordatorio descriptivo sobre la referencia al número de páginas variaciones.  
+Presione posteriormente el botón **OK** o el botón **Cancelar<!-- Cancel -->** si desea continuar con la actividad de creación o no.   
+Se crea un nuevo *Documento de origen interno<!-- Documento di origine interna -->*, con toda la información del *Documento<!-- Documento -->* original, pero con el índice de *Edición<!-- Edizione -->* incrementado y el estado de *En revisión<!-- In revisione -->*. El *Documento<!-- Documento -->* original permanece vigente con el estado de *Emitido<!-- Emesso -->*.   
+Al finalizar la operación, el nuevo *Documento de origen interno<!-- Documento di origine interna -->* será visualizado.   
 
-Presione después el botón **OK** o el botón **Cancel** si desea continuar o no con la actividad de creación.  
-Se creará un nuevo *documento di origine interna*, con toda la información del *Documento* original pero con un índice de *Revisión* incrementado y el estado de *in revisione*. El *Documento* original permanece en vigor con el estado de *emesso*.  
-Al finalizar el proceso, se visualizará el nuevo *documento di origine interna*.
+### Aprobar<!-- Approva -->
 
+El botón está habilitado solo para los miembros de las *Funciones empresariales<!-- Funzioni aziendali -->* de *verificación/aprobación* y si el estado del documento de origen es *En creación<!-- In creazione -->* o *En revisión<!-- In revisione -->*.   
+Tras la confirmación de la operación y al finalizar el proceso, el *Documento de origen interno<!-- Documento di origine interna -->* pasará al estado de *Aprobado<!-- Approvato -->*.   
 
-### Crear nueva edición (Crea nuova edizione)
+### Emitir<!-- Emetti -->
 
-El botón está habilitado solo para los componentes de las *Funciones empresariales* de *verificación/aprobación* y *redacción/emisión* y si el estado del documento de origen es *emesso*. Se mostrará una solicitud de:  
-> **motivo della revisione**: una breve descripción del motivo que condujo a la revisión (dato obligatorio).  
-> **modifica su paragrafi**: un recordatorio descriptivo sobre la referencia al número de párrafos variaciones.  
-> **modifica su pagine**: un recordatorio descriptivo sobre la referencia al número de páginas variaciones.  
+El botón está habilitado solo para los miembros de las *Funciones empresariales<!-- Funzioni aziendali -->* de *redacción/emisión* y si el estado del documento de origen es *Aprobado<!-- Approvato -->*.   
+Tras la confirmación de la operación y al finalizar el proceso, el *Documento de origen interno<!-- Documento di origine interna -->* pasará al estado de *Emitido<!-- Emesso -->* y automáticamente se mostrará la vista previa del informe *Página de guarda<!-- Pagina di Guardia -->*.   
 
-Presione después el botón **OK** o el botón **Cancel** si desea continuar o no con la actividad de creación.  
-Se creará un nuevo *documento di origine interna*, con toda la información del *Documento* original pero con un índice de *Edición* incrementado y el estado de *in revisione*. El *Documento* original permanece en vigor con el estado de *emesso*.  
-Al finalizar el proceso, se visualizará el nuevo *documento di origine interna*.
+### ![](/img/neutral/common/bill.png) Distribución<!-- Distribuzione -->
 
-
-### Aprobar (Approva)
-
-El botón está habilitado solo para los componentes de las *Funciones empresariales* de *verificación/aprobación* y si el estado del documento de origen es *in creazione* o *in revisione*.  
-Después de la solicitud de confirmación de procesamiento y al finalizar el procesamiento, el *documento di origine interna* pasará a un estado de *approvato*.
-
-
-### Emitir (Emetti)
-
-El botón está habilitado solo para los componentes de las *Funciones empresariales* de *redacción/emisión* y si el estado del documento de origen es *approvato*.  
-Después de la solicitud de confirmación de procesamiento y al finalizar el procesamiento, el *documento di origine interna* pasará a un estado de *emesso* y se visualizará automáticamente la vista previa de impresión de la *pagina di guardia*.
-
-
-### ![](/img/neutral/common/bill.png) Distribución (Distribuzione)
-
-El botón inicia el procedimiento de *Distribución* del *Documento*.  
-Se mostrará una solicitud de filtro de quién, entre los destinatarios presentes en la *Lista de distribución*, recibirá copia del *Documento*:  
-> **Tipo:**  
->> **cartacei**: distribución a quienes requieren copia en papel;  
->> **elettronici**: distribución a quienes requieren email;  
+El botón inicia el procedimiento de *Distribución<!-- Distribuzione -->* del *Documento<!-- Documento -->*.   
+Se mostrará una solicitud de filtro sobre quién, entre los destinatarios presentes en la *Lista de distribución<!-- Lista di distribuzione -->*, recibirá copia del *Documento<!-- Documento -->*:   
+> **Tipo:**   
+>> **En papel<!-- Cartacei -->**: distribución a quienes requieren copia en papel;   
+>> **Electrónica<!-- Elettronici -->**: distribución a quienes requieren correo electrónico;   
 >
-> **Estado:**  
->> **già consegnati**: distribución a quienes ya han recibido el documento;  
->> **ancora da consegnare**: distribución a quienes no han recibido aún el documento;  
+> **Estado:**   
+>> **Ya entregados<!-- Già consegnati -->**: distribución a quienes ya han recibido el documento;   
+>> **Aún por entregar<!-- Ancora da consegnare -->**: distribución a quienes no han recibido aún el documento;   
 >
-> **Destinatario:**  
->> **interni**: distribución solo al personal interno (*Funciones empresariales* y/o *Empleados*);  
->> **clienti/fornitori**: distribución a *Clientes/Fornitori*.  
+> **Destinatario:**
+>> **Internos<!-- Interni -->**: distribución solo a personal interno (*Funciones empresariales<!-- Funzioni aziendali -->* y/o *Empleados<!-- Dipendenti -->*);   
+>> **Clientes/Proveedores<!-- Clienti/Fornitori -->**: distribución a *Clientes/Proveedores<!-- Clienti/Fornitori -->*.
 
-Presione después el botón **OK** o el botón **Cancel** si desea continuar con la actividad de distribución o no.
+Presione posteriormente el botón **OK** o el botón **Cancelar<!-- Cancel -->** si desea continuar con la distribución o no.   
 
+### Anular documento<!-- Annulla documento -->
 
-### Anular documento (Annulla documento)
+El botón está habilitado solo para miembros de las *Funciones empresariales<!-- Funzioni aziendali -->* de *redacción/emisión* y si el estado del documento de origen es *Emitido<!-- Emesso -->*.   
+Tras la confirmación de la operación y al finalizar el proceso, el *Documento de origen interno<!-- Documento di origine interna -->* pasará al estado de *Anulado<!-- Annullato -->*.   
 
-El botón está habilitado solo para los componentes de las *Funciones empresariales* de *redacción/emisión* y si el estado del documento de origen es *emesso*.  
-Después de la solicitud de confirmación de procesamiento y al finalizar el procesamiento, el *documento di origine interna* pasará a un estado de *annullato*.
+### Restaurar anulación<!-- Ripristina annullamento -->
 
+El botón está habilitado solo para los miembros de las *Funciones empresariales<!-- Funzioni aziendali -->* de *redacción/emisión* y si el estado del documento de origen es *Anulado<!-- Annullato -->*.   
+Tras la confirmación de la operación y al finalizar el proceso, el *Documento de origen interno<!-- Documento di origine interna -->* pasará al estado de *Emitido<!-- Emesso -->*.   
 
-### Restaurar anulación (Ripristina annullamento)
+## Gestión de datos<!-- Gestione dati -->
 
-El botón está habilitado solo para los componentes de las *Funciones empresariales* de *redacción/emisión* y si el estado del documento de origen es *annullato*.  
-Después de la solicitud de confirmación de procesamiento y al finalizar el procesamiento, el *documento di origine interna* pasará a un estado de *emesso*.
+### Datos de cabecera<!-- Dati di testata -->
 
-
-## Gestión de datos (Gestione dati)
-
-
-### Datos de encabezado (Dati di testata)
-
-La información gestionable es:  
-> **categoria documento**: es la *Categoría documento de origen interno* del *Documento* (dato obligatorio).  
-> Al ingresar la categoría, la *Lista de distribución* y los datos de *Acceso permitido a las funciones* se heredan en el *Documento*.  
+La información que se gestiona es:   
+> **Categoría de documento<!-- Categoria documento -->**: es la *Categoría de documento de origen interno<!-- Categoria documento di origine interna -->* del *Documento<!-- Documento -->* (dato obligatorio).   
+> Al establecer la categoría, la información sobre Ubicación, Funciones de verificación/aprobación y redacción/emisión, la *Lista de distribución<!-- Lista di distribuzione -->* y los datos de *Acceso autorizado a funciones<!-- Accesso consentito alle funzioni -->*, se heredan en el *Documento<!-- Documento -->* y son posteriormente modificables.   
 >
-> **codice**: es el código del *Documento* (dato obligatorio).  
+> **Código<!-- Codice -->**: es el Código del *Documento<!-- Documento -->* (dato obligatorio); si en la Categoría correspondiente se ha establecido un método de codificación automática, el código se propone pero puede modificarse, de lo contrario, se puede ingresar manualmente solo si el documento está en estado de En creación<!-- In creazione -->, de lo contrario la información es solo de lectura.   
 >
-> **edizione/revisione**: son la Edición y la Revisión del *Documento*. La información es de solo lectura.  
-Las informaciones son modificables si el documento está en estado de *in creazione*, de lo contrario son de solo lectura; se pueden variar de manera controlada por el sistema utilizando los botones *crea nuova revisione* y *crea nuova edizione* que incrementan el valor anterior de *Revisión* y *Edición* en una unidad.  
+> **Edición/Revisión<!-- Edizione/Revisione -->**: son la Edición y la Revisión del *Documento<!-- Documento -->*. La información es solo de lectura.   
+La información es modificable si el documento está en estado *En creación<!-- In creazione -->*, de lo contrario es solo lectura; pueden variar guiadas por el sistema usando los botones *Crear nueva edición<!-- Crea nuova edizione -->* y *Crear nueva revisión<!-- Crea nuova revisione -->*, que incrementan el valor previo de *Edición<!-- Edizione -->* y *Revisión<!-- Revisione -->* en una unidad.   
 >
-> **titolo**: es el *Título* del *Documento* (dato obligatorio).  
+> **Título<!-- Titolo -->**: es el *Título* del *Documento* (dato obligatorio).   
 >
-> **stato documento**: es el *Estado* del *Documento* y reporta el estado actual del *Documento*. La información es de solo lectura.  
-> Los estados del documento son valores predefinidos por el sistema que identifican los diversos estados de gestión del *documento di origine interna*.  
-> Los valores predefinidos son:  
-> - **in creazione**: establecido al crear un nuevo documento;  
-> - **approvato**: establecido al *verificar/aprobar* un documento en estado de *in creazione* o *in revisione*;  
-> - **emesso**: establecido al *redactar/emisión* de un documento en estado de *approvato* o al *restaurar anulación* de un documento en estado de *annullato*;  
-> - **in revisione**: establecido al *crear nueva edición/revisión* de un documento en estado de *emesso*;  
-> - **obsoleto**: establecido, para un documento en estado de *emesso*, origen de una solicitud de *crear nueva edición/revisión*, al momento de su *emisión*;  
-> - **annullato**: establecido al momento de *anular* un documento en estado de *emesso*.  
+> **Estado del documento<!-- Stato documento -->**: es el *Estado<!-- Stato -->* del *Documento* e indica el estado actual del *Documento*. La información es solo lectura.   
+> Los estados del documento son valores predefinidos por el sistema que identifican los distintos estados de gestión del *Documento de origen interno<!-- Documento di origine interna -->*.   
+> Los valores predefinidos son:   
+> - **En creación<!-- In creazione -->**: asignado al crear un nuevo documento;   
+> - **Aprobado<!-- Approvato -->**: asignado tras la *verificación/aprobación<!-- verifica/approvazione -->* de un documento en estado *En creación<!-- In creazione -->* o *En revisión<!-- In revisione -->*;   
+> - **Emitido<!-- Emesso -->**: asignado al acto de *redacción/emisión<!-- redazione/emissione -->* de un documento en estado *Aprobado<!-- Approvato -->* o tras la *restauración de anulación<!-- ripristino annullamento -->* de un documento en estado *Anulado<!-- Annullato -->*;   
+> - **En revisión<!-- In revisione -->**: asignado en el acto de *crear nueva edición/revisión<!-- creazione nuova edizione/revisione -->* de un documento en estado *Emitido<!-- Emesso -->*;   
+> - **Obsoleto<!-- Obsoleto -->**: asignado a un documento en estado *Emitido<!-- Emesso -->*, origen de una solicitud de *creación de nueva edición/revisión<!-- creazione nuova edizione/revisione -->*, en el acto de su *emisión<!-- emissione -->*;   
+> - **Anulado<!-- Annullato -->**: asignado tras la *anulación<!-- annullamento -->* de un documento en estado *Emitido<!-- Emesso -->*.   
 >
-> **dalla data**: es la fecha en que el *Documento* asumió el actual *Estado*. La información es de solo lectura.  
-> **dall'utente**: es el *Usuario A.R.M.* que ha modificado el *Estado* del *Documento*. La información es de solo lectura.  
+> **Desde la fecha<!-- Dalla data -->**: es la fecha en la que el *Documento<!-- Documento -->* adoptó el actual *Estado<!-- Stato -->*. La información es solo de lectura.   
+> **Por el usuario<!-- Dall'utente' -->**: es el *Usuario A.R.M.* que ha modificado el *Estado<!-- Stato -->* del *Documento<!-- Documento -->*. La información es solo de lectura.   
 >
-> **informazioni su revisione**: expander donde es posible visualizar/inserir:  
+> **Información sobre la revisión<!-- Informazioni su revisione -->**: expander donde es posible visualizar o ingresar:   
 >
->> **Fecha de creación/Creador (Data creazione/Creato da)**: son la *Fecha de creación* y el *Usuario A.R.M.* que creó el documento. La información es de solo lectura.  
->> **data approvazione/approvato da**: son la *Fecha de aprobación* y el *Usuario A.R.M.* que ha *Aprobado* el documento. La información es de solo lectura.  
->> **data emissione/emesso da**: son la *Fecha de emisión* y el *Usuario A.R.M.* que ha *Emitido* el documento. La información es de solo lectura.  
+>> **Fecha de creación/Creado por<!-- Data creazione/Creato da -->**: son la *Fecha de creación<!-- Data di creazione -->* y el *Usuario A.R.M.* que creó el documento. La información es solo lectura.   
+>> **Fecha de aprobación/Aprobado por<!-- Data approvazione/Approvato da -->**: son la *Fecha de aprobación<!-- Data di approvazione -->* y el *Usuario A.R.M.* que aprobó el documento. La información es solo de lectura.   
+>> **Fecha de emisión/Emitido por<!-- Data emissione/Emesso da -->**: son la *Fecha de emisión<!-- Data di emissione -->* y el *Usuario A.R.M.* que emitió el documento. La información es solo de lectura.   
 >>
->> **motivo della revisione**: una breve descripción del motivo que condujo a la revisión.  
->> La información puede ser variada si el *Estado* es *in creazione* o *in revisione*.  
+>> **Motivo de la revisión<!-- Motivo della revisione -->**: una breve descripción del motivo que condujo a la revisión.   
+>> La información puede ser modificada si el *Estado<!-- Stato -->* es *En creación<!-- In creazione -->* o *En revisión<!-- In revisione -->*.   
 >>
->> **modifica su paragrafi**: un recordatorio descriptivo sobre la referencia al número de párrafos variaciones con respecto a la *revisión/edición* anterior.  
->> La información puede ser variada si el *Estado* es *in creazione* o *in revisione*.  
+>> **Modificación en párrafos<!-- Modifica su paragrafi -->**: un recordatorio descriptivo del número de párrafos modificados respecto a la *revisión/edición<!-- revisione/edizione -->* anterior.   
+>> La información puede ser modificada si el *Estado<!-- Stato -->* es *En creación<!-- In creazione -->* o *En revisión<!-- In revisione -->*.   
 >>
->> **modifica su pagine**: un recordatorio descriptivo sobre la referencia al número de páginas variaciones con respecto a la *revisión/edición* anterior.  
->> La información puede ser variada si el *Estado* es *in creazione* o *in revisione*.  
+>> **Modificación en páginas<!-- Modifica su pagine -->**: un recordatorio descriptivo sobre el número de páginas modificadas respecto a la *revisión/edición<!-- revisione/edizione -->* anterior.   
+>> La información puede ser modificada si el *Estado<!-- Stato -->* es *En creación<!-- In creazione -->* o *En revisión<!-- In revisione -->*.   
 >>
->> **data annullamento/annullato da**: son la *Fecha de anulación* y el *Usuario A.R.M.* que ha *Anulado* el documento. La información es de solo lectura.  
+>> **Fecha de anulación/Anulado por<!-- Data annullamento/Annullato da -->**: son la *Fecha de anulación<!-- Data di annullamento -->* y el *Usuario A.R.M.* que anuló el documento. La información es solo de lectura.   
 >
-> **informazioni su ubicazione**: expander donde es posible visualizar/inserir:  
+> **Información sobre ubicación<!-- Informazioni su ubicazione -->**: expander donde se puede visualizar o ingresar:   
 >
->> **archivio**: es el *Almacén* físico donde habitualmente se archiva el *Documento* (ejemplo: Oficina técnica, Dirección, ...).  
->> El dato es heredado de la *Categoría documento de origen externo* y es modificable.  
+>> **Archivo<!-- Archivio -->**: es el *magazzino* físico donde habitualmente se archiva el *Documento<!-- Documento -->* (ejemplo: Oficina técnica, Dirección, ...).   
+>> El dato se hereda de la *Categoría de documento de origen interno<!-- Categoria documento di origine interna -->* y es modificable.   
 >>
->> **ubicazione**: es la *Ubicación* física donde habitualmente se archiva el *Documento* (ejemplo: Armario, Estante, Cajón, ...).  
->> El dato es heredado de la *Categoría documento de origen externo* y es modificable.  
+>> **Ubicación<!-- Ubicazione -->**: es la *ubicazione* física donde habitualmente se archiva el *Documento<!-- Documento -->* (ejemplo: Armario, Estante, Cajón, ...).   
+>> El dato se hereda de la *Categoría de documento de origen interno<!-- Categoria documento di origine interna -->* y es modificable.   
 >>
->> **ubicazione descrittiva**: es la *Ubicación* física en caso de no codificación de *Archivo* y/o *Ubicación*.  
->> El dato es heredado de la *Categoría documento de origen externo* y es modificable.  
+>> **Ubicación descriptiva<!-- Ubicazione descrittiva -->**: es la *ubicazione* física en caso de no codificación de *Archivo<!-- Archivio -->* y/o *Ubicación<!-- Ubicazione -->*.   
+>> El dato se hereda de la *Categoría de documento de origen interno<!-- Categoria documento di origine interna -->* y es modificable.   
 >
-> **funzione di verifica/approvazione**: es la *Función empresarial* responsable de la verificación/aprobación del documento.  
->> El dato es heredado de la *Categoría documento de origen externo* y es modificable.  
+> **Función de verificación/aprobación<!-- Funzione di verifica/approvazione -->**: es la *función empresarial<!-- Funzione aziendale -->* responsable de la verificación/aprobación del documento.   
+>> El dato se hereda de la *Categoría de documento de origen interno<!-- Categoria documento di origine interna -->* y es modificable.   
 >
-> **funzione di redazione/emissione**: es la *Función empresarial* responsable de la redacción/emisión del documento.  
->> El dato es heredado de la *Categoría documento de origen externo* y es modificable.  
+> **Función de redacción/emisión<!-- Funzione di redazione/emissione -->**: es la *función empresarial<!-- Funzione aziendale -->* responsable de la redacción/emisión del documento.   
+>> El dato se hereda de la *Categoría de documento de origen interno<!-- Categoria documento di origine interna -->* y es modificable.   
 >
-> **note**: anotaciones libres.
+> **Notas**: anotaciones libres.
 
+### Adjunto<!-- Allegato -->
 
-### Adjunto (Allegato)
+Es posible adjuntar el *Documento<!-- Documento -->* que se está catalogando mediante la función de arrastrar y soltar; se muestra la vista previa.   
+Este adjunto no se incluye en el Documental de Fluentis.   
+En la información de *Nombre de adjunto* y *Tipo de adjunto*, el sistema reconoce el nombre del archivo físico y la extensión.
+Si no es reconocido, estos datos pueden ingresarse manualmente.
 
-Es posible adjuntar el *Documento* que se está catalogando mediante el uso del drag&drop; se visualizará la vista previa.  
-Este adjunto no se incluye en la gestión documental de Fluentis.  
-En la información de *nome allegato* y *tipo allegato*, el sistema reconoce el nombre del archivo físico y la extensión.  
-Si no se reconocen, estos pueden ser ingresados manualmente.
+### Creación de documento<!-- Creazione documento -->
 
+Es un sencillo *editor de texto* utilizado para crear el *Documento<!-- Documento -->* directamente en esta gestión.   
+Se pueden configurar: el tipo de letra, tamaño, estilos, colores de texto y de fondo y otras simples opciones de formato de texto.
 
-### Creación de documento (Creazione documento)
+### Lista de distribución<!-- Lista di distribuzione -->
 
-Es un simple *editor de texto* utilizado para crear el *Documento* directamente en esta gestión.  
-Se pueden establecer: el Tipo de letra, el Tamaño, Estilos, Colores de texto y de fondo, y otras simples formateaciones del texto.
-
-
-### Lista de distribución (Lista di distribuzione)
-
-En esta lista es posible asociar: *Funciones empresariales*, *Empleados*, *Clientes/Proveedores* y *Contactos* que habitualmente reciben copia del *Documento* e indicar las metodologías habituales de recepción del documento.  
-Al crear el *Documento*, la *Lista de distribución* se hereda de la *Categoría documento de origen interno* y la información es modificable.  
-La lista se compone de la siguiente información:  
-> **gruppo**  
->> **codice**: es el código del *Rol A.R.M.* destinatario.  
->> **descrizione**: es la descripción del *Rol A.R.M.* destinatario.  
+En este listado es posible asociar: *funciones empresariales<!-- Funzioni aziendali -->*, *empleados<!-- Dipendenti -->*, *clientes/proveedores<!-- Clienti/Fornitori -->* y *contactos<!-- Contatti -->* que habitualmente reciben copia del *Documento<!-- Documento -->* e indicar los métodos habituales de recepción del documento.   
+Al crear el *Documento<!-- Documento -->*, la *Lista de distribución<!-- Lista di distribuzione -->* es heredada de la *Categoría de documento de origen interno<!-- Categoria documento di origine interna -->* y la información es modificable.   
+El listado contiene la siguiente información:   
+> **Grupo**   
+>> **Código**: es el código del *Rol A.R.M.* destinatario.   
+>> **Descripción**: es la descripción del *Rol A.R.M.* destinatario.   
 >
-> **utente**  
->> **codice**: es el código del *Usuario A.R.M.* destinatario.  
->> **descrizione**: es la descripción del *Usuario A.R.M.* destinatario.  
+> **Usuario**   
+>> **Código**: es el código del *Usuario A.R.M.* destinatario.   
+>> **Descripción**: es la descripción del *Usuario A.R.M.* destinatario.   
 >
-> **funzione aziendale**  
->> **codice**: es el código de la *Función empresarial* destinataria.  
->> **descrizione**: es la descripción de la *Función empresarial* destinataria.  
+> **Función empresarial<!-- Funzione aziendale -->**   
+>> **Código**: es el código de la *función empresarial<!-- Funzione aziendale -->* destinataria.   
+>> **Descripción**: es la descripción de la *función empresarial<!-- Funzione aziendale -->* destinataria.   
 >
-> **dipendente**  
->> **codice**: es el código del *empleado* destinatario.  
->> **cognome**: es el apellido del *empleado* destinatario.  
->> **nome**: es el nombre del *empleado* destinatario.  
+> **Empleado<!-- Dipendente -->**   
+>> **Código**: es el código del *empleado<!-- dipendente -->* destinatario.   
+>> **Apellido<!-- Cognome -->**: es el apellido del *empleado<!-- dipendente -->* destinatario.   
+>> **Nombre<!-- Nome -->**: es el nombre del *empleado<!-- dipendente -->* destinatario.   
 >
-> **cliente/fornitore**  
->> **descrizione**: es la razón social del *Cliente/Proveedor* destinatario.  
+> **Cliente/Proveedor<!-- Cliente/Fornitore -->**   
+>> **Descripción**: es la razón social del *Cliente/Proveedor<!-- Cliente/Fornitore -->* destinatario.   
 >
-> **contatto**  
->> **codice**: es el código del *Contacto* destinatario.  
->> **descrizione**: es la descripción del *Contacto* destinatario.  
+> **Contacto<!-- Contatto -->**   
+>> **Código**: es el código del *Contacto<!-- Contatto -->* destinatario.   
+>> **Descripción**: es la descripción del *Contacto<!-- Contatto -->* destinatario.   
 >
-> **altro destinatario**  
->> **descrizione**: es la libre descripción de un destinatario no codificado.  
+> **Otro destinatario<!-- Altro destinatario -->**   
+>> **Descripción**: es la descripción libre de un destinatario no codificado.   
 >
-> **dati per la consegna**  
->> **cartacea**: indica que en el momento de la distribución, el sujeto desea recibir copia *cartacea* del documento o en adjunto a través de *Email*.  
->> **Método de entrega (Metodo di consegna)**: indica la metodología habitual de entrega del *Documento*.  
->> **email**: indica un email de destino, si no está codificado en la base de datos del destinatario.  
->> **numero di copie**: indica el número de copias en papel que el destinatario desea recibir.  
->> **note**: anotaciones libres.    
+> **Datos para la entrega<!-- Dati per la consegna -->**   
+>> **En papel<!-- Cartacea -->**: indica que en el momento de la distribución el sujeto desea recibir copia *en papel<!-- Cartacea -->* del documento o adjunta por *correo electrónico<!-- Email -->*.   
+>> **Método de entrega<!-- Metodo di consegna -->**: indica el método de entrega habitual del *Documento<!-- Documento -->*.   
+>> **Correo electrónico<!-- Email -->**: indica un correo electrónico de destino si no está codificado en la ficha del destinatario.   
+>> **Entrega<!-- Consegna -->**: indica que la entrega se ha realizado; se configura automáticamente en la distribución del documento y es modificable posteriormente.   
+>> **Fecha de entrega<!-- Data consegna -->**: muestra la fecha de entrega del documento; se actualiza automáticamente en la distribución y es modificable posteriormente.   
+>> **Número de copias<!-- Numero di copie -->**: indica el número de copias en papel que el destinatario desea recibir.   
+>> **Notas**: anotaciones libres.   
 
+### Acceso autorizado a funciones<!-- Accesso consentito alle funzioni -->
 
-### Acceso permitido a las funciones (Accesso consentito alle funzioni)
+En este listado es posible ingresar las *funciones empresariales<!-- Funzioni aziendali -->* a las que se otorgan derechos de acceso al *Documento<!-- Documento -->*.   
+Si no se ingresan filas en esta tabla, entonces el acceso es permitido para todos.   
+Al crear el *Documento<!-- Documento -->*, la lista de *funciones empresariales<!-- Funzioni aziendali -->* es heredada de la *Categoría de documento de origen interno<!-- Categoria documento di origine interna -->* y la información es modificable.   
+El listado contiene la siguiente información:   
+> **Función<!-- Funzione -->**: es el código de la *función empresarial<!-- Funzione aziendale -->*.   
+> **Descripción de la función<!-- Descrizione funzione -->**: es la descripción de la *función empresarial<!-- Funzione aziendale -->*.   
+> **Notas**: anotaciones libres.   
 
-En esta lista es posible ingresar las *Funciones empresariales* a las que se les otorgarán los derechos de acceso al *Documento*.  
-Si no se ingresan filas en esta tabla, entonces el acceso está permitido para todos.  
-Al crear el *Documento*, la lista de *Funciones empresariales* se hereda de la *Categoría documento de origen interno* y la información es modificable.  
-La lista se compone de la siguiente información:  
-> **funzione**: es el código de la *Función empresarial*.  
-> **descrizione funzione**: es la descripción de la *Función empresarial*.  
-> **note**: anotaciones libres.   
+### Extra Data
+Es posible ingresar [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *Documento de origen interno<!-- Documento di origine interna -->*.   
 
+### Ediciones/Revisiones anteriores<!-- Edizioni/Revisioni precedenti -->
+En este listado es posible ver el historial de *Ediciones/Revisiones anteriores<!-- Edizioni/Revisioni precedenti -->* del *Documento<!-- Documento -->* gestionado.   
+Con doble clic sobre la fila deseada se puede visualizar la gestión de la *Revisión<!-- Revisione -->* del *Documento<!-- Documento -->* seleccionado.   
+El listado contiene la siguiente información:   
+> **Categoría<!-- Categoria -->**: es la *Categoría de documento de origen interno<!-- Categoria documento di origine interna -->*.   
+> **Código<!-- Codice -->**: es el Código del *Documento<!-- Documento -->*.   
+> **Edición<!-- Edizione -->**: es la Edición del *Documento<!-- Documento -->*.   
+> **Revisión<!-- Revisione -->**: es la Revisión del *Documento<!-- Documento -->*.   
+> **Título<!-- Titolo -->**: es el *Título* del *Documento<!-- Documento -->*.   
+> **Estado<!-- Stato -->**: es el *Estado* del *Documento<!-- Documento -->*.   
+> **Desde la fecha<!-- Dalla data -->**: es la fecha en que el *Documento<!-- Documento -->* asumió el estado actual.   
+> **Referencia de párrafos<!-- Riferimento paragrafi -->**: es la referencia al número de párrafos modificados respecto a la *revisión/edición<!-- revisione/edizione -->* anterior.   
+> **Referencia en páginas<!-- Riferimento su pagine -->**: es la referencia al número de páginas modificadas respecto a la *revisión/edición<!-- revisione/edizione -->* anterior.   
+> **Función de verificación/aprobación<!-- Funzione di verifica/approvazione -->**: es la *función empresarial<!-- Funzione aziendale -->* responsable de la verificación/aprobación.   
+> **Función de redacción/emisión<!-- Funzione di redazione/emissione -->**: es la *función empresarial<!-- Funzione aziendale -->* responsable de la redacción/emisión.   
 
-### Datos extra (Extra data)
-Es posible ingresar [Datos extra](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *documento di origine interna*.   
-
-
-### Ediciones/Revisiones anteriores (Edizioni/Revisioni precedenti)
-En esta lista es posible visualizar el historial de *Ediciones/Revisiones anteriores* del *Documento* en gestión.   
-A través de un doble clic del ratón en la fila deseada es posible visualizar la gestión de la *Revisión* del *Documento* seleccionado.  
-La lista se compone de la siguiente información:  
-> **categoria**: es la *Categoría documento de origen interno*.  
-> **codice**: es el Código del *Documento*.  
-> **edizione**: es la Edición del *Documento*.  
-> **revisione**: es la Revisión del *Documento*.  
-> **titolo**: es el *Título* del *Documento*.  
-> **stato**: es lo *Estado* del *Documento*.  
-> **dalla data**: es la fecha en que el *Documento* asumió el actual *Estado*.  
-> **riferimento paragrafi**: es la referencia al número de párrafos modificados con respecto a la *revisión/edición* anterior.  
-> **Referencia en páginas (Riferimento su pagine)**: es el número de páginas modificadas con respecto a la *revisión/edición* anterior.  
-> **funzione di verifica/approvazione**: es la *Función empresarial* responsable de la verificación/aprobación.  
-> **funzione di redazione/emissione**: es la *Función empresarial* responsable de la redacción/emisión.   
-
-
-:::tip Flujo de trabajo del estado del documento (Work flow stato documento)   
+:::tip Flujo de estado de documento<!-- Work flow stato documento -->   
 ![example](/img/it-it/quality/internal-origin-document/internal-origin-document-status-work-flow.png)
 :::
 
-
-Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
+Para cualquier aspecto no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

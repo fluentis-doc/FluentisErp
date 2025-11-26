@@ -1,34 +1,35 @@
 ---
-title: norme e leggi
+title: Normas y leyes
 sidebar_position: 3
+ai_generated: true
 ---
 
-La gestión se encuentra en la ruta **Calidad > Documentos de origen externo**.
+La gestión<!-- gestione --> se encuentra en la ruta **Calidad > Documentos de origen externo<!-- Qualità > Documenti di origine esterna -->**.
 
-:::important ¿Para qué sirve? (A cosa serve)  
-En esta gestión es posible catalogar las normativas y leyes de interés empresarial.  
-Un ejemplo de uso de las *norme e leggi* lo encontramos en la gestión de las **schede tecniche** en la pestaña *norme e leggi*.  
+:::important Para qué sirve<!-- A cosa serve -->
+En esta gestión es posible catalogar las normativas y leyes de interés empresarial.   
+Un ejemplo de uso de las *Normas y leyes*<!-- Norme e leggi --> se encuentra en la gestión de las **Hojas técnicas<!-- Schede tecniche -->** en la pestaña *Normas y leyes<!-- Norme e leggi -->*.   
 :::
 
-La gestión permite insertar nuevos registros o buscar aquellos que ya existen para visualizarlos, modificarlos o eliminarlos.
+La gestión<!-- gestione --> permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-## Botones de comando
+## Botones de comando<!-- Pulsanti di comando -->
 
-### ![](/img/neutral/common/search.png) Búsqueda de norme e leggi (Ricerca Norme e leggi)
+### ![](/img/neutral/common/search.png) Búsqueda de Normas y leyes<!-- Ricerca Norme e leggi -->
 
-El formulario consta de un área de filtro y una de resultados. Una vez establecidos todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario está compuesto por un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta con hacer clic en el botón **Buscar<!-- Ricerca -->** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-### ![](/img/neutral/common/new.png) Inserción de norme e leggi (Inserimento Norme e leggi)
+### ![](/img/neutral/common/new.png) Inserción de Normas y leyes<!-- InserimentoInserimento Norme e leggi -->
 
-Para poder insertar nuevas *norme e leggi*, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.  
-Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
+Para insertar nuevas *Normas y leyes*<!-- Norme e leggi --> es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo<!-- Nuovo -->**.   
+Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **Código<!-- Codice -->** y la **Descripción<!-- Descrizione -->**.
 
-## Gestión de datos (Gestione dati)
+## Gestión de datos<!-- Gestione dati -->
 
-La información gestionable es:  
-> **tipo**: es el "Tipo de normas y leyes" de las *norme e leggi*.  
-> **codice**: es el código de las *norme e leggi*.  
-> **descrizione**: es la descripción de las *norme e leggi*.  
-> **note**: anotaciones libres.  
+La información que se puede gestionar incluye:   
+> **Tipo**: es el "Tipo normas y leyes" de las *Normas y leyes*<!-- "Tipo norme e leggi" della *Norme e leggi* -->.   
+> **Código**: es el código de las *Normas y leyes*<!-- codice della *Norme e leggi* -->.   
+> **Descripción**: es la descripción de las *Normas y leyes*<!-- descrizione della *Norme e leggi* -->.   
+> **Notas**: anotaciones libres.   
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

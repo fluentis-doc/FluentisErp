@@ -1,15 +1,16 @@
 ---
-title: consolidamento master
+title: Consolidación master
 sidebar_position: 5
+ai_generated: true
 ---
 
-El procedimiento de **consolidamento master*** está dedicado a las instalaciones multiosociativas: al configurar la empresa maestra en una compañía, podremos conectar el plan de cuentas de las compañías ‘esclavas’ a la cuenta de la maestra.
+El procedimiento de ***Consolidación master***<!-- Consolidamento master --> está dedicado a las instalaciones multiempresa: configurando la sociedad master en una empresa, será posible enlazar el plan de cuentas<!-- piano dei conti --> de las sociedades "slave" con la cuenta de la master.
 
-El procedimiento de consolidación tomará los datos de la dimensión seleccionada de las empresas esclavas para llevarlos a la maestra en la dimensión de destino.  
-En este paso, se reemplazará la subcuenta de la línea de origen con la de la empresa maestra, mientras que para el centro de costos se buscarán los centros *con el mismo código*.
+El procedimiento de consolidación tomará los datos de la dimensión seleccionada de las sociedades slave para trasladarlos a la master en la dimensión de destino.
+En este paso se reemplazará el subcuenta<!-- sottoconto --> de la línea de origen por el correspondiente de la sociedad master, mientras que para el centro de costo se buscarán los centros *con el mismo código*<!-- con lo stesso codice -->.
 
-:::tip Nota
-En el caso de subcuentas no mapeadas o centros no codificados de manera uniforme, el procedimiento informará un error.
+:::tip Nota<!-- Nota -->
+En caso de subcuentas<!-- sottoconti --> no mapeadas o centros no codificados de forma uniforme, el procedimiento reportará un error
 :::
 
-El resultado de la consolidación será que en la empresa Maestra se tendrán los datos del **storico registrazioni gestionali*** acumulados de todas las empresas hijas, con el fin de crear una reportística de grupo. Potencialmente, en esta empresa maestra también podremos aplicar una nueva serie de controladores de cálculo.
+El resultado de la consolidación será tener en la sociedad Master los datos del ***Histórico de registros de gestión***<!-- Storico registrazioni gestionali --> acumulados de todas las sociedades hijas, con el fin de crear una reportería de grupo. Potencialmente, también en esta sociedad master se podrá aplicar una nueva serie de drivers de cálculo

@@ -1,82 +1,82 @@
 ---
-title: Ejecuciónes 
+title: Evasioni
 sidebar_position: 5
 ---
 
-El ciclo de **Ejecución** en Fluentis sirve para gestionar de manera estructurada e integrada todo el flujo operativo de compra, desde la fase inicial de solicitud de compra hasta la fase final de facturación. Cada fase se caracteriza por procedimientos específicos y configuraciones que garantizan una gestión fluida e integrada del flujo de trabajo.
+Il ciclo di **evasione** in Fluentis serve a gestire in modo strutturato e integrato l'intero flusso operativo di acquisto, dalla fase iniziale di richiesta di acquisto fino alla fase finale di fatturazione. Ogni fase è caratterizzata da procedure specifiche e configurazioni che garantiscono una gestione fluida e integrata del flusso di lavoro.
 
-## Conversión de Oferta a Pedido
+## Conversione da Offerta a Ordine
 
-El procedimiento de **conversión de oferta de proveedor a orden de compra** puede ser iniciado:
+La procedura di **conversione da offerta fornitore a ordine di acquisto** può essere avviata:
 
-- Desde el Menú [Procedimientos](/docs/purchase/offer-request/procedures/order-creation): yendo a *Compras > Solicitudes de Oferta > Procedimientos > Creación de Orden de proveedor desde Oferta de proveedor*.
+- Dal Menù [Procedure](/docs/purchase/offer-request/procedures/order-creation): andando su *Acquisti > Richieste di Offerta > Procedure > Creazione Ordine fornitore da Offerta fornitore*.
 
-Este procedimiento permite transformar una solicitud de oferta en un pedido de compra efectivo.  
-Para realizar la conversión, es necesario configurar el Tipo de orden de proveedor deseado en la tabla [Tipo de solicitud de oferta](/docs/configurations/tables/purchase/purchase-offer-type).
+Questa procedura permette di trasformare una richiesta di offerta in un ordine di acquisto effettivo.  
+Per eseguire la conversione è necessario configurare il Tipo ordine fornitore desiderato nella tabella [Tipo richiesta di offerta](/docs/configurations/tables/purchase/purchase-offer-type).
 
-Durante el procedimiento de conversión, aparece un pop-up con las siguientes opciones:  
-- **Solicitud de oferta**: permite crear un pedido de compra para cada solicitud de oferta.  
-- **Cuenta**: permite agrupar las solicitudes de oferta por proveedor.  
-- **Cerrar automáticamente las ofertas conectadas**: inserta una *Fecha de cierre* para las RDO convertidas en pedidos de compra.
+Durante la procedura di conversione appare un pop-up con le seguenti opzioni:
+- **Richiesta di offerta**: permette di creare un ordine di acquisto per ciascuna richiesta di offerta.
+- **Conto**: permette di raggruppare le richieste di offerta per fornitore.
+- **Chiudi le offerte collegate**: inserisce una *Data chiusura* per le RDO convertite in ordini di acquisto.
 
-Una vez confirmada la conversión, el sistema genera un nuevo pedido de proveedor utilizando los datos de la solicitud de oferta y notifica al usuario con un mensaje pop-up sobre el éxito de la conversión.
+Una volta confermata la conversione, il sistema genera un nuovo ordine fornitore utilizzando i dati della richiesta di offerta e avvisa l'utente con un messaggio pop-up riguardante il successo della conversione.
 
-Para más detalles sobre el procedimiento, se remite a la página correspondiente de la documentación.
+Per maggiori dettagli sulla procedura si rimanda all'apposita pagina della documentazione.
 
-## Conversión de Solicitud de Compra a Pedido 
+## Conversione da Richiesta di Acquisto a Ordine
 
-El procedimiento de **Creación de Orden de proveedor desde Solicitud de Compra** puede ser iniciado:
+La procedura di **creazione Ordine fornitore da Richiesta di Acquisto** può essere avviata:
 
-- Desde el Menú [Procedimientos](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests): yendo a *Compras > Órdenes de Proveedores > Procedimientos > Creación automática de órdenes*.
+- Dal Menù [Procedure](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests): andando su *Acquisti > Ordini Fornitori > Procedure > Creazione automatica ordini*.
 
-Este procedimiento permite la creación de uno o más pedidos de compra a partir de una o más solicitudes de compra y consta de cinco pestañas:
+Questa procedura permette la creazione di uno o più ordini di acquisto a partire da una o più richieste di acquisto e si compone di cinque tab:
 
-- **Filtrar desde**: permite ingresar filtros para seleccionar las RDA (con estado "Autorizada") a convertir en pedido.  
-- **Elección de proveedor**: permite realizar la elección del proveedor al que se le asignará el pedido basándose en diferentes criterios, como: mejor precio de compra, proveedor preferente por defecto, mejor condición de pago, etc.  
-- **Pedir prototipos**: muestra el resumen del pedido a crear y permite generar un nuevo pedido o agregar las líneas de artículo a un pedido existente.  
-- **Parámetros**: configura las opciones de creación del pedido, como el tipo de pedido a crear y los datos a utilizar si no están codificados para cada artículo. También se puede optar por considerar las disponibilidades provenientes de las diversas áreas del sistema.  
-- **Operaciones**: permite visualizar, filtrar y anular las operaciones anteriores.
+- **Filtro Da**: consente di inserire filtri per selezionare le RDA (con stato "Autorizzata") da convertire in ordine.
+- **Scelta fornitore**: permette di effettuare la scelta del fornitore a cui intestare l'ordine sulla base di diversi criteri tra cui: miglior prezzo di acquisto, fornitore preferenziale di default, migliore condizione di pagamento, ecc.
+- **Prototipi ordine**: visualizza il riepilogo dell'ordine da creare e consente di generare un nuovo ordine oppure di aggiungere le righe articolo ad un ordine esistente.
+- **Parametri**: configura le opzioni di creazione dell'ordine, come il tipo ordine da creare e i dati da utilizzare se non sono codificati per ogni articolo. È possibile scegliere anche di considerare le disponibilità provenienti dalle varie aree del gestionale.
+- **Operazioni**: permette di visualizzare, filtrare e annullare le operazioni precedenti.
 
-Una vez confirmado el prototipo de pedido, al hacer clic en el botón *Generar órdenes de proveedor*, el sistema creará los pedidos de compra en base a los parámetros seleccionados.
+Una volta confermato il prototipo d'ordine, cliccando sul pulsante *Genera ordini fornitore* il sistema creerà gli ordini di acquisto sulla base dei parametri scelti.
 
-El mismo procedimiento puede ser utilizado para la creación de **Órdenes de proveedor desde Órdenes de cliente**. Para más detalles, se remite a la página correspondiente [página](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) de la documentación.
+La stessa procedura può essere utilizzata per la creazione **Ordini fornitore da Ordini cliente**. Per maggiori dettagli si rimanda all'apposita [pagina](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) della documentazione.
 
-## Evasión de Pedidos a DDT 
+## Evasione da Ordini a DDT
 
-El procedimiento de **Nota de entrega** está disponible en dos modalidades:
+La procedura di **evasione da ordine a Documento di Trasporto** è disponibile in due modalità:
 
-- Desde el Menú [Procedimientos](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): yendo a *Compras > DDT de Compra > Procedimientos > Evasión de pedidos*.  
-- Evasión desde la [Cabecera](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) del DDT: utilizando el botón *Evasión de Pedido* para abrir una ventana de selección de los pedidos confirmados del proveedor a transferir al DDT.
+- Dal Menù [Procedure](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): andando su *Acquisti > DDT di Acquisto > Procedure > Evasione da ordini*.
+- Evasione dalla [Testata](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) del DDT: utilizzando il pulsante *Evasione da Ordine* per aprire una finestra di selezione degli ordini confermati del fornitore da trasferire nel DDT.
 
-Este procedimiento permite transformar uno o más pedidos de compra en uno o más DDT. Antes de iniciar el procedimiento, es necesario configurar el tipo de DDT deseado en la tabla [Tipos de orden de proveedor](/docs/configurations/tables/purchase/purchase-orders-type/). El procedimiento automático permite la creación de DDT solo si el pedido está impreso y confirmado.
+Questa procedura permette di trasformare uno o più ordini di acquisto in uno o più DDT. Prima di avviare la procedura, è necessario configurare il tipo di DDT desiderato nella tabella [Tipi ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type/). La procedura automatica consente la creazione di DDT solo se l'ordine è stampato e confermato.
 
-Las condiciones para la evasión son:
+Le condizioni per l'evasione sono:
 
-- El proveedor de los pedidos debe coincidir con el proveedor del DDT.  
-- El pedido a evadir debe tener el indicador "Impreso" y una *Fecha de Confirmación* de pedido.  
-- Para la segunda modalidad, el *Tipo de orden* debe tener un *Tipo de bolla de entrega* asociado.
+- Il fornitore degli ordini deve coincidere con il fornitore del DDT.
+- L'ordine da evadere deve avere il flag "Stampato" e una *Data di Conferma* ordine.
+- Per la seconda procedura il *Tipo ordine* deve avere un *Tipo bolla consegna* associato.
 
-Las condiciones de agrupamiento de los pedidos en DDT pueden definirse en los [Parámetros de agrupamiento DDT de compra](/docs/configurations/parameters/purchase/dn-grouping).
+Le condizioni di raggruppamento degli ordini in DDT possono essere definite nei [Parametri raggruppamento DDT di acquisto](/docs/configurations/parameters/purchase/dn-grouping).
 
-Después de seleccionar los pedidos y establecer los filtros, al hacer clic en *Transferencia* se generará el DDT con los datos del pedido. Si la evasión se ha realizado correctamente, el pedido cambiará automáticamente su estado a *"Evasado"* o *"Parcialmente Evasado"*.
+Dopo aver selezionato gli ordini e impostato i filtri, cliccando su *Trasferimento* si genererà il DDT con i dati dell'ordine. Se l'evasione è stata eseguita correttamente, l'ordine cambierà automaticamente stato in *"Evaso"* o *"Parzialmente Evaso"*.
 
-La evasión de pedido a DDT también se puede completar desde la cabecera de la factura misma a través del botón *Evasión de pedido*.
+L'evasione da ordine a DDT è completabile anche dalla testata della fattura stessa tramite il pulsante *Evasione da ordine*.
 
-## Evasión de DDT a Facturas
+## Evasione da DDT a Fatture
 
-El procedimiento de **evasión de DDT a factura** puede ser iniciado de dos maneras:
+La procedura di **evasione da DDT a fattura** può essere avviata in due modalità:
 
-- Desde el Menú [Procedimientos](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): yendo a *Compras > Facturas de compra > Procedimientos > Valorización DDT de compra*.  
-- Desde la [Cabecera](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) de la Factura de Venta: utilizando el botón *Evasión DDT* en la cabecera de la factura.
+- Dal Menù [Procedure](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): andando su *Acquisti > Fatture di acquisto > Procedure > Valorizzazione DDT di acquisto*.
+- Dalla [Testata](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) della Fattura di Vendita: utilizzando il pulsante *Evasione DDT* nella testata della fattura.
 
-Este procedimiento permite crear una o más facturas a partir de uno o más DDT. El procedimiento se compone de tres pestañas principales:
+Questa procedura permette di creare una o più fatture a partire da uno o più DDT. La procedura si compone di tre tab principali:
 
-- **Valorización**: permite ingresar filtros para seleccionar los DDT a facturar (con estado "Controlado") y especificar la fecha de creación de la factura.  
-- **Parámetros**: configura el tipo de factura a crear, si no se indica en la tabla [Tipos de DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) y los referencias DDT a incluir en la factura.  
-- **Anterior**: permite visualizar, filtrar y anular las operaciones de facturación previas.
+- **Valorizzazione**: consente di inserire filtri per selezionare i DDT da fatturare (con stato "Controllato") e specificare la data di creazione della fattura.
+- **Parametri**: configura il tipo fattura da creare, se non indicata nella tabella [Tipi DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) e i riferimenti DDT da riportare nella fattura.
+- **Precedenti**: permette di visualizzare, filtrare e annullare le operazioni di fatturazione precedenti.
 
-Las condiciones de agrupamiento de los DDT en la factura pueden definirse en los [Parámetros de agrupamiento de factura de compra](/docs/configurations/parameters/purchase/invoice-grouping/).
+Le condizioni di raggruppamento dei DDT in fattura possono essere definite nei [Parametri raggruppamento fattura di acquisto](/docs/configurations/parameters/purchase/invoice-grouping/).
 
-Después de seleccionar los DDT y configurar los parámetros, se puede proceder con la creación de la factura haciendo clic en *Valorización DDT de compra*.
+Dopo aver selezionato i DDT e impostato i parametri, è possibile procedere con la creazione della fattura cliccando su *Valorizzazione DDT di acquisto*.
 
-La evasión de DDT a factura también se puede completar desde la cabecera de la factura misma a través del botón *Evasión DDT*.
+L'evasione da DDT a fattura è completabile anche dalla testata della fattura stessa tramite il pulsante *Evasione DDT*.

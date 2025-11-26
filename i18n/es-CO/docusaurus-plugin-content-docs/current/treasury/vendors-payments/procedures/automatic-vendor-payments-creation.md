@@ -1,63 +1,63 @@
----
-title: Creación automática de pagos a proveedores (Creazione automatica pagamento fornitori)
-sidebar_position: 1
----
+La pantalla se encuentra en Tesorería > Pagos a proveedores > Procedimientos > Creación automática de pagos a proveedores<!-- Creazione automatica pagamenti fornitori -->.
 
-El formulario se encuentra en Tesorería > Pagos a proveedores > Procedimientos > Creación automática de pagos a proveedores (Creazione automatica pagamenti fornitori).
+Este procedimiento es alternativo a la creación de una nueva [lista de pagos<!-- distinta di pagamento -->](/docs/treasury/vendors-payments/create-vendor-payments) y a su posterior contabilización, permitiendo ejecutar estas operaciones de manera integrada directamente desde esta pantalla<!-- form -->.
 
-Este procedimiento es alternativo a la creación de una nueva [lista de pagos (distinta di pagamento)](/docs/treasury/vendors-payments/create-vendor-payments) y su posterior contabilización, permitiendo realizar estas operaciones de manera integrada directamente desde este formulario.
+## Cómo crear automáticamente un pago a proveedores<!-- pagamento fornitori -->
 
-## Cómo crear automáticamente un pago a proveedores
 
-1. Utiliza la primera pestaña *Filtro de partidas* para localizar las partidas a pagar. (Es posible filtrar también por códigos ABI/CAB de los apoyos bancarios relacionados con la partida contable, además de por código / descripción del banco de apoyo - expandiendo la sección *Banco*).  
+1. Utiliza la primera pestaña *Filtro partidas<!-- Filtro partite -->* para localizar las partidas<!-- partite --> a pagar. (Es posible filtrar también por códigos abi/cab de las referencias bancarias vinculadas a la partida contable<!-- partita contabile -->, además de por código/descripción del banco de referencia, expandiendo la sección *Banco*).
 
-   Al expandir la sección *Tipo de partidas*, se **excluyen** por defecto los **pagos de partidas percepcionistas**, para los cuales <u>**la operación debe realizarse desde el módulo de percepcionistas**</u> si se desea poder utilizar el procedimiento de [certificación de retenciones](/docs/finance-area/declarations/declarations/withholding-tax-certification).
+Al expandir la sección *Tipo de partidas<!-- Tipo partite -->* se **excluyen** por defecto los **pagos de partidas de perceptores<!-- pagamenti delle partite percipienti -->**, para los cuales <u>**la operación debe realizarse dentro del módulo de perceptores<!-- dall'interno del modulo percipienti -->**</u> si se desea poder utilizar el procedimiento de [certificación de retenciones<!-- certificazione ritenute -->](/docs/finance-area/declarations/declarations/withholding-tax-certification).
 
-   El filtro para *subcuenta* de banco de *pago* permite gestionar la creación de la lista en base a lo que se ha canalizado a través de los distintos bancos a través de las configuraciones de registro y del procedimiento de [Gestión de Apoyo a Pagos](/docs/treasury/vendors-payments/procedures/payments-support-management) del mismo módulo.
+El filtro por *subcuenta<!-- sottoconto -->* bancaria de *pago<!-- pagamento -->* permite gestionar la creación de la lista<!-- distinta --> según lo canalizado en los distintos bancos a través de las configuraciones de la ficha maestra y del procedimiento de [Gestión de referencia de pagos<!-- Gestione Appoggio Pagamenti -->](/docs/treasury/vendors-payments/procedures/payments-support-management) del módulo.
 
-2. Revisa, en la parte inferior, los totales de las líneas seleccionadas.
+2. Controla, en la parte inferior, los totales de las filas seleccionadas.
 
-3. Pasa a la segunda pestaña **Datos de pago del proveedor** y establece los diversos elementos de gestión del procedimiento: primero debes ingresar el **banco de pago**, que será el banco titular de la lista.  
-   Este campo desbloquea el botón **Iniciar la creación del pago desde partidas**.
 
-4. Gestiona los otros parámetros:
+3. Pasa a la segunda pestaña **Datos de pago a proveedor<!-- Dati pagamento fornitore -->** e ingresa los diferentes elementos de gestión del procedimiento: primero debe ingresarse el **banco de pago<!-- banca di pagamento -->**, que será el titular de la lista<!-- distinta -->. 
+Este campo habilita el botón **Iniciar la creación del pago desde partidas<!-- Inizia la creazione del pagamento da partite -->**.
 
-- El indicador **Usar el banco de pago de la partida del proveedor, en ausencia de la anagrafica** obligará al procedimiento a crear tantas listas como bancos de pago estén asignados a las distintas partidas seleccionadas en el procedimiento de gestión de apoyo a pagos, o insertados en la anagrafica del proveedor. En ausencia de ambas, el pago se insertará en la lista para el código de banco configurado en el campo inicial.
 
-- El indicador **Usar el banco de apoyo presente en la anagrafica del proveedor** forzará la asignación de los códigos bancarios del beneficiario, leyendo desde la línea de banco por defecto incluida en la sección de bancos de apoyo de la pestaña de pagos del registro del proveedor. Este indicador puede predefinirse dentro de los parámetros del módulo.
+4. Gestiona los demás parámetros:
 
-- El **Tipo de pago** permite definir la tipología de pago a asignar a la lista: el campo se vuelve obligatorio solo cuando las partidas a pagar prevén tipologías de pago no uniforme.
+- El indicador **Utilizar el banco de pago desde la partida del proveedor, en ausencia desde la ficha** hará que el procedimiento cree tantas listas<!-- distinte --> como bancos de pago se hayan asignado a las partidas<!-- partite --> seleccionadas en el procedimiento de gestión de referencia de pagos, o bien ingresadas en la ficha del proveedor<!-- anagrafica del fornitore -->. En ausencia de ambas, el pago será insertado en la lista<!-- distinta --> para el código de banco configurado en el campo inicial.
 
-- El año y la fecha de emisión se definen por defecto en base a la fecha del sistema.
+- El indicador **Utilizar el banco de referencia presente en la ficha del proveedor** fuerza la asignación de los códigos bancarios del beneficiario leyéndolos de la fila de banco por defecto introducida en la sección de bancos de referencia<!-- banche d'appoggio --> de la pestaña de pagos de la ficha maestra del proveedor<!-- anagrafica fornitore -->. Este indicador puede predefinirse dentro de los parámetros del módulo.
 
-- El indicador **Imponer fecha de valor del beneficiario** permite asignar, dentro del trazado telemático, una fecha valor para el beneficiario del pago, que si no se establece se asigna como fecha de hoy. Si el indicador no está activado, la fecha valor será igual a la fecha de vencimiento.
+- El **Tipo de pago<!-- Tipo pagamento -->** permite definir la tipología de pago a asignar a la lista<!-- distinta -->: el campo se vuelve obligatorio solo cuando las partidas<!-- partite --> a pagar prevén tipologías de pago no uniforme.
 
-- El campo **Notas iniciales** es un campo libre de notas del pago, no utilizado en el estándar.
+- El año y la fecha de emisión se definen por defecto según la fecha del sistema.
 
-- El campo **Notas finales** se utiliza en la contabilización de pagos para detallar la descripción del movimiento contable de la subcuenta del banco.
+- El indicador **Imponer fecha valor beneficiario<!-- Imponi data valuta beneficiario -->** permite asignar, dentro del archivo telemático, una fecha valor para el beneficiario del pago, que en caso de no indicarse será la fecha actual. Si el indicador no está activo, la fecha valor será igual a la fecha de vencimiento<!-- scadenza -->.
 
-5. Si deseas contabilizar inmediatamente los pagos, activa el indicador de **Contabilización de la partida** que permite registrar directamente el cierre de las partidas y los movimientos contables de los pagos en creación: si no se utiliza, será posible usar posteriormente el *procedimiento separado de contabilización*.
+- El campo **Notas iniciales<!-- Note iniziali -->** es un campo libre de notas del pago, no utilizado por defecto.
 
-6. Completa la causa de contabilización a utilizar para el registro, las fechas de registro y competencia. Las subcuentas de registro de notas activas y pasivas se proponen en base a la subcuenta de *ingresos imprevistos* presente en los parámetros de contabilidad. La fecha y el número de documento a insertar como referencias del encabezado del registro son opcionales (podría ser el número/fecha de la lista).
+- El campo **Notas finales<!-- Note finali -->** se utiliza en la contabilización de pagos<!-- contabilizzazione pagamenti --> para valorizar la descripción detallada del movimiento contable<!-- movimento contabile --> de la subcuenta<!-- sottoconto --> bancaria.
 
-A la derecha hay un indicador por defecto de **Cierre de las partidas** (propuesto por defecto, no eliminar) y el criterio de gestión del agrupamiento en contabilidad **Agrupar por Banco** que permite registrar una entrada por cada subcuenta de banco de salida.  
+5. Si deseas contabilizar inmediatamente los pagos, activa el indicador de **Contabilización de la partida<!-- Contabilizzazione della partita -->**, que permite registrar directamente el cierre de las partidas<!-- partite --> y los movimientos de partida doble<!-- movimenti di partita doppia --> de los pagos en creación: si no se utiliza, será posible utilizar posteriormente el *procedimiento separado de contabilización*.
 
-Alternativamente, está disponible un **Agrupar por subcuenta** del proveedor y una opción de registro detallado pago por pago (**Sin agrupamiento**).
+6. Completa la causa contable<!-- causale di contabilità --> a utilizar para el registro, las fechas de registro y de competencia<!-- registrazione e competenza -->. Las subcuentas<!-- sottoconti --> para la contabilización de descuentos activos y pasivos se proponen conforme a la subcuenta<!-- sottoconto --> *ingresos extraordinarios<!-- sopravvenienze attive -->* prevista en los parámetros de contabilidad<!-- parametri di contabilità -->. La fecha y número de documento a ingresar como referencia en el encabezado del registro son opcionales (podría ser el número/fecha de la lista<!-- distinta -->).
 
-Si la causa contable requiere gestionar la fecha valor del banco y dentro de la anagrafica de bancos se ha definido un número de días para su cálculo en relación con la causa contable utilizada, el campo se gestionará automáticamente en el registro resultante.
+A la derecha está presente un indicador por defecto de **Cierre de la partida<!-- Chiusura della partite -->** (propuesto por defecto, no se debe quitar) y el criterio de gestión del agrupamiento en contabilidad **Agrupar por banco<!-- Raggruppa Banca -->** que permite registrar un asiento por cada subcuenta<!-- sottoconto --> bancaria de salida.
 
-7. Presiona el botón **Iniciar la creación del pago desde partidas**.
+De manera alternativa está disponible un **Agrupar por subcuenta<!-- Raggruppa per sottoconto -->** de proveedor<!-- fornitore --> y una opción de registro detallado pago por pago (**Sin agrupamiento<!-- Nessun raggruppamento -->**).
 
-**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Se remite al Tutorial - Enlace de YouTube (Tutorial - Link YouTube)</a>**
+Si la causa contable<!-- causale contabile --> prevé la gestión de la fecha valor bancaria y, dentro de la ficha de bancos<!-- anagrafica banche -->, se ha definido un número de días para su cálculo en relación con la causa contable utilizada, el campo será gestionado automáticamente en el registro resultante.
 
-### La pestaña de restauración 
+7. Pulsa el botón **Iniciar la creación del pago desde partidas<!-- Inizia la creazione del pagamento da partite -->**
 
-permite visualizar el registro contable a través de un doble clic en la sección relativa a los registros, así como la anulación parcial/total de las operaciones de pago seleccionadas. La anulación solo será posible si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutadas).
+
+**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=2m25s" target="_blank" rel="noopener noreferrer">Consulte el Tutorial - Enlace a YouTube</a>**
+
+### La pestaña de restauración<!-- scheda di ripristino -->
+
+permite visualizar el asiento contable<!-- registrazione contabile --> mediante doble clic en la sección relativa a los registros, así como la anulación parcial/total de las operaciones de pago seleccionadas. La anulación solo será posible si el periodo todavía es modificable (impresión del libro diario<!-- stampa libro giornale --> y cierre de cuentas<!-- chiusura conti --> no realizados).
+
 
 **Botones específicos**
 
-**Buscar anteriores**: Busca la lista de creaciones realizadas.
+**Buscar anteriores<!-- Ricerca precedenti -->**: Busca la lista de las creaciones realizadas.
 
-**Eliminar creación**: Con este botón se eliminará toda la contabilización realizada, con todos los pagos asociados.
+**Borrar creación<!-- Cancella creazione -->**: Con este botón se eliminará toda la contabilización realizada, con todos los pagos asociados.
 
-**Eliminar pagos**: El botón restaura el pago seleccionado.
+**Borrar pagos<!-- Cancella pagamenti -->**: El botón ejecuta la restauración del pago seleccionado.

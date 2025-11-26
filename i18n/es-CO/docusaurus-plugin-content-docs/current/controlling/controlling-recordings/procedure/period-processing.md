@@ -1,55 +1,57 @@
 ---
-title: elaborazione periodi
+title: Elaboración de periodos
 sidebar_position: 3
----
+ai_generated: true
+--- 
 
-El procedimiento de **elaborazione periodi*** es el principal en los procesos de controlling. Esta máscara también se divide en 4 procedimientos diferentes: la elaboración de los movimientos físicos, el cálculo de las amortizaciones, la verdadera elaboración de períodos y, por último, la elaboración del informe final del proyecto.
+El procedimiento de ***Elaboración de periodos<!-- Elaborazione periodi -->*** es el principal dentro de las elaboraciones de controlling<!-- controlling -->. Esta pantalla también se divide en 4 procedimientos diferentes: la elaboración de los movimientos físicos, el cálculo de las amortizaciones<!-- ammortamenti -->, la propia elaboración de periodos y por último la elaboración del consolidado de proyecto<!-- consuntivo di progetto -->.
 
-## ELABORACIÓN DE MOVIMIENTOS FÍSICOS (ELABORAZIONE MOVIMENTI FISICI)
-El primer procedimiento solo lee las **registrazioni movimenti fisici*** para crear la base de datos del ***Histórico de movimientos físicos (Storico movimenti fisici)***, leyendo las cantidades de las unidades de medida de estado (como, por ejemplo, los metros cuadrados de las oficinas) para replicarlas en los diversos períodos en lugar de tomar las de flujo para dividirlas según los criterios de los períodos de distribución asociados. Solo debemos establecer:
-- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) 
-- el **anno***
+## ELABORACIÓN DE MOVIMIENTOS FÍSICOS<!-- ELABORAZIONE MOVIMENTI FISICI -->
+El primer procedimiento simplemente lee las ***Registro de movimientos físicos<!-- Registrazioni movimenti fisici -->*** para crear la base de datos del ***Histórico de movimientos físicos<!-- Storico movimenti fisici -->***, leyendo las cantidades de las unidades de medida de estado (como por ejemplo los metros cuadrados de las oficinas) para replicarlas en los diferentes periodos, o tomando las de flujo para distribuirlas según los criterios de los periodos de distribución asociados. Solo tendremos que configurar
+- el/la [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- el ***Año<!-- Anno -->***
 
-## HISTÓRICO DE AMORTIZACIONES (STORICO AMMORTAMENTI)
-Desde esta sección se lleva a cabo la elaboración de las amortizaciones del controlling. Debemos configurar:  
-- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) a la cual asignar los valores  
-- el **anno*** a elaborar  
-- el campo **fino a periodo***, es decir, el periodo final del año a elaborar, que típicamente corresponderá al periodo final de nuestro informe elaborado en el cierre interanual  
-- por último, tenemos el **anno iniziale per ricalcolo storico***. Este campo es útil en caso de que se hayan modificado configuraciones del controlling en los activos ya elaborados.
+## HISTÓRICO DE AMORTIZACIONES<!-- STORICO AMMORTAMENTI -->
+Desde esta sección se lleva a cabo la elaboración de las amortizaciones<!-- ammortamenti --> del controlling<!-- controlling -->. Configuraremos 
+- el/la [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) a la que asignar los valores
+- el ***Año<!-- Anno -->*** a procesar
+- el campo ***Hasta el periodo<!-- Fino a periodo -->***, es decir, el periodo final del año a procesar, que típicamente corresponderá con el periodo final de nuestro consolidado elaborado en el cierre interanual<!-- chiusura infrannuale -->
+- por último, tenemos el ***Año inicial para recálculo histórico<!-- Anno iniziale per ricalcolo storico -->***. Este campo es útil en los casos en que se hayan modificado configuraciones de controlling<!-- controlling --> en los bienes de capital<!-- cespiti --> ya procesados
 
-:::tip Ejemplo
-Supongamos que tenemos un activo adquirido en 2015, para amortizar en el controlling a una tasa del 15%, y por lo tanto en poco más de 6 años y medio, si nuestro primer cálculo de controlling es en 2022, ***FluentisERP***, en la primera elaboración, deberá calcular las amortizaciones desde 2015 en adelante para entender si en 2022 hay un remanente por elaborar, probablemente no, dado que 2022 es 7 años después (digo probablemente porque el cálculo del controlling se gestiona mes a mes, si el activo se compró en diciembre de 2015, entonces probablemente cerraremos la amortización en los primeros meses de 2022). Si por alguna razón, después de una primera elaboración, quisiese reducir la amortización al 10%, entonces ¿qué debe hacer ***FluentisERP*** cuando calcula 2022, mantener el dato de partida al 15% ya elaborado y, por lo tanto, continuar sin calcular nada, o debe reiniciar los valores históricos para reelaborarlos con las configuraciones actuales? Si establecemos el año de inicio a reconsiderar, significa que todos los activos que tienen el indicador de actualización de valores históricos, ***FluentisERP*** recalculará los datos históricos a partir de aquello establecido.
+:::tip Ejemplo<!-- Esempio -->
+Supongamos que tenemos un bien de capital<!-- cespite --> adquirido en 2015, para amortizar en controlling<!-- controlling --> al porcentaje del 15% y, por lo tanto, en poco más de 6 años y medio. Si nuestro primer cálculo de controlling<!-- controlling --> es en 2022, ***FluentisERP***, en la primera elaboración, tendrá que calcular las amortizaciones desde 2015 en adelante para ver si en 2022 hay algún remanente por procesar. Probablemente no, porque 2022 es 7 años después (digo probablemente porque el cálculo de controlling<!-- controlling --> se gestiona mes a mes; si el bien de capital<!-- cespite --> fue adquirido en diciembre de 2015, entonces probablemente tendremos el cierre de la amortización en los primeros meses de 2022). Si por algún motivo, después de una primera elaboración, quisiera cambiar la amortización al 10%, ¿qué debe hacer ***FluentisERP*** al calcular 2022? ¿Mantener el dato inicial al 15% ya procesado y, por lo tanto, no calcular nada más, o debe reiniciar los valores históricos para re-elaborarlos con las configuraciones actuales? Si configuramos el año de inicio a reconsiderar, significa que para todos los bienes de capital<!-- cespiti --> que tengan el flag de actualización de valores históricos, ***FluentisERP*** recalculará los datos históricos a partir del valor que se defina.
 :::
 
-Una vez completada la elaboración, ***FluentisERP*** habrá valorado los datos de dos máscaras: la primera es la del **storico ammortamenti***, donde tendremos visibilidad del detalle por área, activo, año y mes de los datos elaborados sobre cada activo. Como en las otras máscaras históricas, los datos de esta tabla no son modificables por el usuario. La segunda máscara que se ha valorado será la de **registrazioni extracontabili di area***, en la que Fluentis habrá eliminado y recreado un registro por año que contiene el detalle mensual de las amortizaciones aplicadas, totalizando los valores por subcuenta y centro.
+Una vez completada la elaboración, ***FluentisERP*** habrá valorizado los datos en dos pantallas: la primera es la del ***Histórico de amortizaciones<!-- Storico ammortamenti -->***, donde visualizaremos el detalle por área, bien de capital<!-- cespite -->, año y mes de los datos elaborados sobre cada bien. Como ocurre en otras pantallas históricas, los datos en esta tabla no son modificables por parte del usuario. La segunda pantalla que ha sido actualizada será la de ***Registro extracontable de área<!-- Registrazioni extracontabili di area -->***, en la cual Fluentis habrá eliminado y recreado un registro por año que contiene el detalle mensual de las amortizaciones aplicadas, totalizando los valores por subcuenta<!-- sottoconto --> y centro.
 
-## ELABORACIÓN DE DATOS CONTABLES (ELABORAZIONE DATI CONTABILI)
-Es la elaboración que lee el informe final del **chiusura infrannuale*** que hemos preparado para mensibilizar los datos y luego aplicar los diversos drivers en el orden de ciclo. Los parámetros a ingresar son los habituales:
-- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia 
-- el ***Cierre interanual*** a utilizar 
-- los eventuales **tempi di bilanciamento*** si se quieren crear los ajustes sobre las cuentas que no se utilizarán en el controlling 
-- la **data*** 
-- el **anno*** de los datos a elaborar 
-- la **causale*** a utilizar
+## ELABORACIÓN DE DATOS CONTABLES<!-- ELABORAZIONE DATI CONTABILI -->
+Es la elaboración que lee el consolidado<!-- consuntivo --> del ***Cierre interanual<!-- Chiusura infrannuale -->*** que hemos preparado, para mensualizar los datos y luego aplicar los diferentes drivers en el orden del ciclo. Los parámetros a ingresar son los habituales:
 
-La elección del **chiusura infrannuale***, en realidad, no es obligatoria: imaginemos que hemos importado desde una hoja de cálculo que hemos preparado externamente los datos del área de presupuesto, donde, por lo tanto, tenemos las estimaciones de los saldos para subcuenta y centro del próximo año. Aún podremos calcular sobre estos registros extracontables de presupuesto nuestros drivers, que serán quizás específicos para el área de presupuesto, para mensibilizarlos adecuadamente y luego compararlos con los informes finales que nos llegan de la contabilidad: en este caso, por lo tanto, no configuraremos el cierre interanual porque serán los registros presupuestarios la fuente de datos a considerar.
+- el/la [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia
+- el ***Cierre interanual<!-- Chiusura infrannuale -->*** a utilizar
+- los eventuales ***Tiempos de balanceo<!-- Tempi di bilanciamento -->*** si se desean crear ajustes en las cuentas no utilizadas en controlling<!-- controlling -->
+- la ***Fecha<!-- Data -->*** 
+- el ***Año<!-- Anno -->*** de los datos a procesar
+- la ***Causal<!-- Causale -->*** a utilizar
 
-Si, en cambio, estamos elaborando nuestros informes finales de un cierre, se activará la posibilidad de dejar que ***FluentisERP*** valore los registros automáticos de ajuste, configurando si gestionar los de las cuentas ***Interanuales (Infrannuali)*** o tanto de estas como de las ***Anuales (Annuali)***.
+La selección del ***Cierre interanual<!-- Chiusura infrannuale -->***, en realidad, no es obligatoria: imagine que hemos importado desde una hoja de cálculo propia los datos del área presupuestaria<!-- area budget -->, donde, por tanto, tenemos las estimaciones de los saldos por subcuenta<!-- sottoconto --> y centro para el próximo año. Igualmente podremos calcular sobre estos registros extracontables de presupuesto<!-- budget --> nuestros drivers, que tal vez sean específicos para el área presupuestaria<!-- area budget -->, de modo que se mensualicen adecuadamente y luego comparar contra los resultados consolidados que provienen de contabilidad. En este caso, entonces, no se configurará el cierre interanual<!-- chiusura infrannuale --> porque serán los registros de presupuesto<!-- registrazioni di budget --> el origen de los datos a considerar.
 
-Se trata de reconducir, con registros apropiados, los datos de las subcuentas configuradas como no utilizables en el controlling, visibles en la cuadrícula en la parte inferior, en comparación con aquellos registrados anticipadamente con registros extracontables de área.
+Si, en cambio, estamos elaborando nuestros consolidados<!-- consuntivi --> de un cierre, se activará la posibilidad de que ***FluentisERP*** valore los registros automáticos de ajuste, indicando si gestionar los de las cuentas ***Interanuales<!-- Infrannuali -->*** o tanto estas como las ***Anuales<!-- Annuali -->***.
+
+Se trata de reconciliar, con registros específicos, los datos de las subcuentas<!-- sottoconti --> configuradas para no ser utilizadas en controlling<!-- controlling -->, visibles en la cuadrícula inferior, respecto a los que se relevaron previamente con registros extracontables de área<!-- registrazioni extracontabili di area -->. 
 
 :::tip Nota
-Como ya se mencionó en otro punto de la documentación, las lógicas de ajuste podrían ser solo a nivel de valores manteniendo las proporciones de los centros ya registrados, o bien eliminando el dato del controlling con registros de contrapartida para reflejar la valoración contable tanto de valor como de centro. Desde la cuadrícula en la parte inferior, será posible, eventualmente, forzar el tiempo y el tipo de compensación a ejecutar, sobrescribiendo la lógica memorizada en el momento de la creación del cierre interanual.
+Como ya se ha mencionado en otra parte de la documentación, las lógicas de ajuste pueden ser solo a nivel de valores manteniendo las proporciones de los centros ya registrados, o también la elisión del dato de controlling<!-- controlling --> con registros de anulación para llevar la valorización contable tanto de valor como de centro. Desde la cuadrícula inferior será posible, en caso necesario, forzar el tiempo y el tipo de balanceo a ejecutar, sobrescribiendo la lógica guardada al momento de la creación del cierre interanual<!-- chiusura infrannuale -->.
 :::
 
-Durante estas elaboraciones, ***FluentisERP*** también preparará una tabla mensualizada con los únicos datos de proyecto/orden, que será la base de partida para la elaboración del informe final. Si la elaboración de datos contables gestionará todos los drivers de los tipos de distribución de 01 a 12, de hecho, la elaboración del informe final del proyecto aplicará los drivers específicos de proyecto/orden.
+Durante estas elaboraciones, ***FluentisERP*** también preparará una tabla mensualizada solo con los datos por proyecto/orden<!-- progetto/commessa -->, que será la base inicial para la elaboración del consolidado<!-- consuntivo -->. Si la elaboración de los datos contables gestiona todos los drivers de los tipos de distribución de 01 a 12, la elaboración del consolidado de proyecto aplicará los drivers específicos de proyecto/orden<!-- progetto/commessa -->.
 
-## ELABORACIÓN DEL INFORME FINAL DEL PROYECTO (ELABORAZIONE CONSUNTIVO DI PROGETTO)
-Este procedimiento leerá el histórico de los registros elaborados en el procedimiento anterior que están relacionados con proyectos, leerá los datos de producción (es decir, trabajos internos y externos), en esencia, todos los costos y ingresos directos del proyecto, para luego elaborar los drivers de los tipos de distribución de 13 a 18. Consulte las explicaciones disponibles en los ***Cost driver***. Los campos a configurar son:
+## ELABORACIÓN DEL CONSOLIDADO DE PROYECTO<!-- ELABORAZIONE CONSUNTIVO DI PROGETTO -->
+Este procedimiento leerá el histórico de los registros elaborados en el procedimiento anterior que están asociados a proyectos, leerá los datos de producción (es decir, trabajos internos y externos), en resumen, todos los costes e ingresos directos del proyecto<!-- progetto -->, para luego elaborar los drivers de los tipos de distribución de 13 a 18. Véanse las explicaciones disponibles en los ***Cost driver***. Los campos a configurar son:
 
-- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) a elaborar
-- el rango **da data*** y **a data***
-- un **codice*** y una **descrizione*** de esta elaboración
-- una **data*** para asignar a los registros creados
-- el **anno*** de referencia del cálculo
-- la **causale*** a utilizar para el registro
+- el/la [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) a elaborar
+- el rango ***Desde fecha<!-- Da data -->*** y ***Hasta fecha<!-- A data -->***
+- un ***Código<!-- Codice -->*** y una ***Descripción<!-- Descrizione -->*** de esta elaboración
+- una ***Fecha<!-- Data -->*** a asignar a los registros creados
+- el ***Año<!-- Anno -->*** de referencia para el cálculo
+- la ***Causal<!-- Causale -->*** a utilizar para el registro

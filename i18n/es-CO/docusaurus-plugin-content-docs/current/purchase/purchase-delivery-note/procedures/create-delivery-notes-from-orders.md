@@ -1,30 +1,30 @@
 ---
-title: Cumplimiento de nota de entrega a partir de pedidos
+title: Evasione DDT di acquisto da ordini
 sidebar_position: 3
 keywords:
-- Nota de entrega
-- Pedidos 
+- DDT
+- Ordini
 ---
 
-El procedimiento se abre a través de la ruta **Compras > Notas de entrega de compra > Procedimientos > Cumplimiento de nota de entrega a partir de pedidos** y permite el cumplimiento de los artículos de los pedidos, con la generación automática de las notas de entrega agrupadas por proveedor.
+La procedura si apre tramite il percorso **Acquisti > DDT di acquisto > Procedure > Evasione DDT da ordini** e permette l'evasione degli articoli degli ordini, con la generazione automatica dei DDT di acquisto raggruppati per fornitore.
 
-*Botones específicos*
+*Pulsanti specifici*
 
-> **Buscar**: permite buscar los artículos según los filtros introducidos en la parte superior.  
-> **Transferir**: permite transferir los artículos seleccionados.  
-> **Seleccionar todo**: permite seleccionar todos los artículos de la cuadrícula de resultados.  
-> **Deseleccionar todo**: permite deseleccionar todos los artículos de la cuadrícula de resultados.  
+> **Ricerca**: permette di cercare gli articoli in base ai filtri inseriti nella parte superiore.    
+> **Trasferimento**: permette di trasferire gli articoli selezionati.   
+> **Seleziona tutto**: permette di selezionare tutti gli articoli dalla griglia di risultati.  
+> **Deseleziona tutti**: permette di deselezionare tutti gli articoli dalla griglia di risultati.  
 
-*Procedimiento*:  
+*Procedimento*:  
 
-- ingresar los filtros deseados en la sección *Filtro* y hacer clic en el botón **buscar**. En la cuadrícula de resultados aparecerá una fila por cada artículo de los pedidos impresos, confirmados y no cumplidos o cumplidos parcialmente;  
-- seleccionar las filas de artículos deseadas activando el indicador en la columna **seleccionar**;  
-- ingresar, para el artículo seleccionado, la **cantidad a cumplir** en la columna homónima. Si no se ingresa la cantidad, la aplicación propondrá el valor ingresado en la columna **cantidad residual**;  
-- ejecutar el cumplimiento haciendo clic en el botón **transferir**;  
-- elegir si se desea modificar los DDT creados en el mensaje lanzado por la aplicación:  
-    - seleccionando **No**, el procedimiento creará el DDT retomando todos los datos y condiciones de compra presentes en el pedido para los artículos cumplidos;  
-    - seleccionando **Sí**, el procedimiento abrirá el DDT recién creado permitiendo su modificación.
+- inserire i filtri desiderati nella sezione *Filtro* e clicare sul pulsante **Ricerca**. Nella griglia dei risultati comparirà una riga per ciascun articolo degli ordine stampati, confermati e non evasi oppure evasi parzialmente;  
+- selezionare le righe articolo desiderate attivando il flag nella colonna **Seleziona**;  
+- inserire, per l'articolo selezionato, la **Quantità da evadere** nella colonna omonima. Se la quantità non viene inserita, l'applicazione propone il valore inserito nella colonna **Quantità residua**;  
+- eseguire l'evasione cliccando sul pulsante **Trasferimento**;  
+- scegliere se si desidera modificare i DDT creati nel messaggio lanciato dall'applicazione:  
+    - scegliendo **No**, la procedura creerà il DDT riprendendo tutti i dati e le condizioni di acquisto presenti nell'ordine per gli articoli evasi;   
+    - scegliendo **Sì**, la procedura aprirà il DDT appena creato permettendone la modifica.
 
-:::note Recuerda
-El cumplimiento de los pedidos de proveedor dentro de un DDT de compra también se puede realizar mediante el botón [**Cumplimiento desde pedido**](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) desde dentro de un DDT.
+:::note Ricorda
+L'evasione di ordini fornitore all'interno di un DDT di acquisto può essere eseguita anche mediante il pulsante [**Evasione da ordine**](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) dall'interno di un DDT.
 :::

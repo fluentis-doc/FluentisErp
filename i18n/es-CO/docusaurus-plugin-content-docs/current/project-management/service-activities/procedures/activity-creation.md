@@ -1,17 +1,18 @@
 ---
-title: creazione attività da interventi
+title: Creación de Actividad desde Intervenciones
 sidebar_position: 3
+ai_generated: true
 ---
 
-Una vez establecidos los filtros, será suficiente hacer clic en **ricerca** en la barra de herramientas para que aparezcan las intervenciones en la cuadrícula. 
-En la parte inferior, es posible introducir los parámetros que serán utilizados por el procedimiento en caso de que no hayan sido configurados previamente en **parametri per operatore**, **Tipos de intervenciones (Tipi interventi)** o **parametri progetti**:
+Una vez establecidos los filtros<!-- filtri -->, basta con hacer clic en **Buscar<!-- Ricerca -->** en la barra de herramientas para hacer aparecer las intervenciones<!-- interventi --> en la cuadrícula.  
+En la parte inferior es posible ingresar los parámetros que serán utilizados por el procedimiento en caso de que no hayan sido configurados previamente en **Parámetros por operador<!-- Parametri per operatore -->**, **Tipos de intervención<!-- Tipi interventi -->** o **Parámetros de proyectos<!-- Parametri progetti -->**:
 
-**tipo attività**: indica el tipo de actividad a crear;  
+**Tipo de actividad<!-- Tipo attività -->**: indica el tipo de actividad a crear;
 
-**risorsa**: contiene el recurso para el cual crear la actividad;  
+**Recurso<!-- Risorsa -->**: contiene el recurso para el cual crear la actividad;
 
-**Forzar tipo de actividad (Forza tipo attività)**: cuando está activo, permite establecer los valores definidos anteriormente como prioritarios; los valores establecidos en tablas y parámetros no serán leídos.
+**Forzar tipo de actividad<!-- Forza tipo attività -->**: cuando está activo permite establecer los valores definidos arriba como prioritarios; los valores configurados en tablas y parámetros no serán tomados en cuenta.
 
-Para ejecutar el procedimiento, una vez configurados los parámetros, basta con seleccionar la fila de intervención en la cuadrícula y hacer clic en el botón **creazione** en la barra de herramientas.  
-Los resultados del procedimiento son visibles en la pestaña **rollback**. En esta, al presionar el botón **ricerca** en la barra de herramientas, se visualizarán las operaciones realizadas. Seleccionando la fila del usuario que llevó a cabo el procedimiento, las cuadrículas inferiores **attività risorse** e **intervento** muestran los detalles de la operación.  
-Si se desea realizar el **Rollback** del procedimiento, seleccione la fila elegida y haga clic en **Rollback** en la barra de herramientas.
+Para ejecutar el procedimiento, una vez configurados los parámetros basta seleccionar la fila de la intervención<!-- intervento --> en la cuadrícula y hacer clic en el botón **Creación<!-- Creazione -->** en la barra de herramientas.
+Los resultados del procedimiento son visibles en la pestaña **Rollback**. En ella, presionando el botón **Buscar<!-- Ricerca -->** en la barra de herramientas, se visualizan las operaciones realizadas. Al seleccionar la fila del usuario que ha realizado el procedimiento, las cuadrículas en la parte inferior **Actividades recursos<!-- Attività risorse -->** e **Intervención<!-- Intervento -->** muestran los detalles de la operación.
+Si se desea realizar el **Rollback** del procedimiento, seleccionar la fila deseada y hacer clic en **Rollback** en la barra de herramientas.

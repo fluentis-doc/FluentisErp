@@ -1,68 +1,69 @@
 ---
-title: contabilizzazione effetti
+title: Contabilización de efectos
 sidebar_position: 1
+ai_generated: true
 ---
 
-El formulario se encuentra en Tesorería > Cartera de Efectos > Contabilización > Contabilización de efectos
+El formulario<!-- form --> se encuentra en Tesorería > Cartera de efectos > Contabilización > Contabilización de efectos<!-- Tesoreria > Portafoglio Effetti > Contabilizzazione > Contabilizzazione effetti -->.
 
-Desde esta máscara se procede a la contabilización de efectos: el procedimiento, de acuerdo con la configuración de la causa contable establecida, cerrará las partidas de clientes asociadas a los efectos seleccionados.
+Desde esta pantalla, se procede a la contabilización de efectos<!-- contabilizzazione effetti -->: el procedimiento, según la configuración de la causal contable<!-- causale contabile --> definida, cerrará las partidas de clientes<!-- partite clienti --> asociadas a los efectos<!-- effetti --> seleccionados.
 
 :::tip[Nota]
-Generalmente, se puede ejecutar este procedimiento directamente realizando ***la adquisición automática de efectos desde las partidas*** donde, habilitando el indicador correspondiente, se ejecuta simultáneamente también este procedimiento.
+Generalmente, este procedimiento puede ejecutarse directamente realizando ***la adquisición automática de efectos<!-- acquisizione automatica effetti --> desde las partidas<!-- partite -->*** donde, habilitando la opción correspondiente, se ejecuta de forma simultánea el presente procedimiento.
 
-**En cambio, es necesario acceder específicamente a este formulario para restaurar la contabilización de efectos**.
+**Es necesario, en cambio, acceder específicamente a este formulario para el restablecimiento de la contabilización de efectos<!-- ripristino della contabilizzazione effetti -->**.
 :::
 
-## Cómo contabilizar un efecto
+## Cómo contabilizar un efecto<!-- Come contabilizzare un effetto -->
 
-1. Utiliza la parte superior de la máscara para filtrar la búsqueda de los efectos a contabilizar.
+1. Usa la parte superior de la pantalla para filtrar la búsqueda de los efectos<!-- effetti --> a contabilizar.
 
-2. Selecciona desde la cuadrícula central los efectos que deseas contabilizar.
+2. Selecciona en la cuadrícula central los efectos<!-- effetti --> que deseas contabilizar.
 
-3. Completa los parámetros para la contabilización, como la **causale di contabilità**, la **data registrazione** y la fecha de competencia.
+3. Completa los parámetros para la contabilización tales como la **Causal contable<!-- Causale di contabilità -->**, la **fecha de registro<!-- data registrazione -->** y la fecha de competencia.
 
 :::note[Nota]
-Esta sección puede ser predefinida dentro de los [**parámetros**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo Cartera de Efectos. 
+Esta sección puede estar predefinida en los [**parámetros**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo Cartera de efectos<!-- Portafoglio effetti -->.
 
-El indicador de **agrupamiento por cuenta efecto** significa realizar un único registro donde habrá tantas líneas como efectos a contabilizar y, en contrapartida, la cuenta asociada al tipo de efecto (en la **tipi effetti**).
+La opción de **agrupamiento por cuenta de efecto<!-- raggruppamento per conto effetto -->** significa efectuar un solo asiento donde habrá tantas líneas como efectos<!-- effetti --> a contabilizar y, en la contrapartida, la cuenta<!-- conto --> asociada con el tipo de efecto<!-- tipologia di effetto --> (en la **tabla Tipos de efectos<!-- tabella Tipi Effetti -->**).
 
-El indicador de **gestión provisional** generará registros contables de tipo provisional.
+La opción de **gestión provisional<!-- gestione provvisoria -->** generará asientos contables de tipo provisional.
 
-Si la causa contable prevé el indicador de apertura de partidas y el efecto ha sido creado manualmente sin asociar una partida (o su monto es superior al monto de las partidas vinculadas), entonces se creará una partida de cliente a favor que deberá compensarse posteriormente.
+Si la causal contable<!-- causale contabile --> prevé el flag de apertura de partidas<!-- apertura partite --> y el efecto<!-- effetto --> se ha creado manualmente sin asociar una partida<!-- partita --> (o su importe es superior al de las partidas enlazadas), entonces se creará una partida de cliente<!-- partita cliente --> a tener para compensar posteriormente.
 
-Se recuerda que no será posible contabilizar efectos creados a partir de facturas impresas cuando estas aún no han sido contabilizadas.
+Se recuerda que no será posible contabilizar efectos<!-- effetti --> creados a partir de facturas<!-- fatture --> impresas si estas aún no han sido contabilizadas.
 :::
 
-4. Presiona el botón en la barra de ribbon **contabilizzazione effetti**
+4. Pulsa el botón en la ribbon bar **Contabilización de efectos<!-- Contabilizzazione effetti -->**.
 
 **Botones específicos**
 
-**ricerca**: Busca la lista de efectos a contabilizar.
+**Búsqueda<!-- Ricerca -->**: Busca la lista de efectos<!-- effetti --> a contabilizar.
 
-**contabilizzazione effetti**: Ejecuta la contabilización para las líneas seleccionadas.
+**Contabilización de efectos<!-- Contabilizzazione effetti -->**: Ejecuta la contabilización para las filas seleccionadas.
 
-### Pestaña Anteriores (Tab Precedenti)
+### Pestaña Anteriores<!-- Tab Precedenti -->
 
-Desde la pestaña *anteriores* es posible proceder a la anulación de las contabilizaciones realizadas.
+Desde la pestaña *Anteriores<!-- precedenti -->* es posible proceder a la anulación de las contabilizaciones realizadas.
 
-La anulación será posible solo si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutadas).
+La anulación solo será posible si el periodo aún es modificable (no se ha impreso el libro diario ni realizado el cierre de cuentas).
 
-Un doble clic en la sección de los registros permitirá visualizar el registro contable relacionado.
+Un doble clic en la sección de los asientos permitirá visualizar el asiento contable relacionado<!-- registrazione contabile relativa -->.
 
-Hay una pestaña de detalle de visualización de los errores detectados durante la contabilización.
+Existe una pestaña de detalle para visualizar los errores detectados durante la contabilización.
 
 :::tip[Nota]
-La restauración de la contabilización del efecto debe **necesariamente** ser ejecutada desde este formulario.
+El restablecimiento de la contabilización del efecto<!-- ripristino della contabilizzazione dell'effetto --> debe **necesariamente** realizarse desde este formulario.
 
-En la fase de creación del efecto, es posible, de hecho, lanzar simultáneamente su contabilización, pero NO al contrario.
+De hecho, en la fase de creación del efecto<!-- effetto --> es posible lanzar al mismo tiempo su contabilización, pero NO lo contrario.
 
-Por lo tanto, se deberá proceder primero a anular su contabilización desde aquí, y luego se podrá anular el procedimiento de creación, regresando a una situación anterior (partida de cliente abierta y saldo de cliente no aún anulado).
+Por lo tanto, se debe proceder primero a anular su contabilización aquí, y luego se podrá anular el procedimiento de creación, regresando a una situación anterior (partida de cliente abierta<!-- partita cliente aperta --> y saldo de cliente no compensado<!-- saldo cliente non ancora stornato -->).
 :::
 
 **Botones específicos**
 
-**ricerca**: Busca la lista de las contabilizaciones realizadas.
+**Búsqueda<!-- Ricerca -->**: Busca la lista de contabilizaciones realizadas.
 
-**rollback contabilizzazione**: Ejecuta la restauración de las contabilizaciones seleccionadas para todos los documentos en ellas contenidas.
+**Rollback contabilización**: Ejecuta el restablecimiento de las contabilizaciones seleccionadas para todos los documentos contenidos en ellas.
 
-**rollback effetti**: Ejecuta la restauración del registro contable seleccionado referido al efecto individual. ATENCIÓN: esta modalidad es posible solo si en la fase de contabilización no se activó la opción para agrupar por tipo de efecto (lo que genera registros únicos para cada tipo de efecto).
+**Rollback efectos<!-- effetti -->**: Ejecuta el restablecimiento del asiento contable<!-- registrazione contabile --> seleccionado referido al efecto individual. ATENCIÓN: esta modalidad solo es posible si, en la fase de contabilización, no se ha activado la opción para agrupar por tipo de efecto<!-- raggruppare per tipo effetto --> (que genera asientos únicos por cada tipo de efecto<!-- tipo effetto -->).

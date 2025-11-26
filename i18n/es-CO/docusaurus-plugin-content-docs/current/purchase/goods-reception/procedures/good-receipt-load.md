@@ -1,49 +1,51 @@
 ---
-title: Carga de Recepción de Mercancías
+title: Carico Ricevimento Merci
 sidebar_position: 4
 ---
 
-El procedimiento se abre a través de la ruta **Compras > Recepción de Mercancías > Carga de Recepción de Mercancías** y permite ejecutar/restaurar las operaciones de registro en almacén de los artículos presentes en el *Recepción de Mercancías*.
+La procedura si apre tramite il percorso **Acquisti > Ricevimento merci > Carico ricevimento merci** e permette di eseguire/ripristinare le operazioni di registrazione in magazzino degli articoli presenti nel *Ricevimento merci*.
 
-La máscara se compone de tres pestañas: *Filtro*, *Parámetro* y *Rollback*.
+La maschera si compone di tre tab: *Filtro*, *Parametro* e *Rollback*.     
 
 ### 1. Filtro
 
-En esta pestaña, el usuario tiene la posibilidad de insertar filtros para buscar el recepción de mercancías a cargar en almacén.  
-Es posible filtrar por: *Proveedor*, *Número recepción*, *De/A fecha recepción*.
+In questo tab, l'utente ha la possibilità di inserire filtri per cercare il ricevimento merci da caricare in magazzino.   
+È possibile filtrare per: *Fornitore*, *Numero ricevimento*, *Da/A data ricevimento*.
 
-- **Fecha registro**: permite especificar la fecha relacionada con el registro en almacén.
+- **Data registrazione**: permette di specificare la data relativa alla registrazione in magazzino.
 
-:::important Recuerda 
-Si en [Parámetros de pedidos de proveedores](/docs/configurations/parameters/purchase/purchase-orders-parameters) > pestaña Carga el flag **Crea registro con la fecha del documento** está activo, el registro de almacén siempre se ejecutará con la *Fecha recepción* insertada en la cabecera del documento, ignorando la *Fecha registro almacén* insertada en este formulario.  
-Si la *Fecha carga* no está valorada, se creará el registro de almacén con la *Fecha registro almacén* insertada en este formulario o con la fecha actual, si el campo *Fecha registro* no está valorado.
+:::important Ricorda
+Se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters) > tab Carico il flag **Crea registrazione con la data del documento** è attivo, la registrazione di magazzino sarà sempre eseguita con la *Data ricevimento* inserita nella testata del documento, ignorando la *Data registrazione magazzino* inserita in questa form.    
+Se la *Data carico* non è valorizzata la registrazione di magazzino sarà creata con la *Data registrazione magazzino* inserita in questa form oppure con la data corrente, se il campo *Data registrazione* non è valorizzato.
 :::
 
-#### Botones específicos  
-> **Búsqueda**: permite buscar los recepciones que se registrarán en almacén.  
-> **Carga**: permite ejecutar la carga de los recepciones seleccionados, en base a los parámetros insertados en la pestaña siguiente.
+#### Pulsanti specifici  
+> **Ricerca**: permette di cercare i ricevimenti da registrare in magazzino.  
+> **Carico**: permette di eseguire il carico dei ricevimenti selezionati, in base ai parametri inseriti nel tab successivo.
 
-### 2. Parámetros
 
-En la pestaña *Parámetros* es posible elegir, con los flags correspondientes, cómo tratar los eventuales artículos no codificados o sin almacén y causal presentes dentro del documento. Las opciones disponibles son:
+### 2. Parametri
 
-- **Ignora la recepción que contenga artículos no codificados**: no permite la carga parcial del documento si éste contiene al menos un artículo no codificado.  
-- **Ignora los artículos no codificados de la recepción**: permite la carga parcial del documento omitiendo los artículos no codificados.
+Nel tab *Parametri* è possibile scegliere, con i relativi flag, come trattare eventuali articoli non codificati oppure senza magazzino e causale presenti all'interno del documento. Le opzioni disponibili sono:  
 
-- **Ignora la recepción que contenga artículos sin alm./caus.**: no permite la carga parcial del documento si éste contiene al menos un artículo sin almacén y causal.  
-- **Ignora los artículos de la recepción sin alm./caus.**: permite la carga parcial del documento omitiendo los artículos que no tengan almacén y causal.  
-- **Utiliza los siguientes valores para los artículos sin alm./caus.**: asegura la carga completa del documento. Para todos los artículos encontrados sin almacén y causal en las recepciones seleccionadas, establece los datos insertados en los campos siguientes: *Almacén* y *Causal*.
+- **Ignora il ricevimento contenente articoli non codificati**: non permette il carico parziale del documento se questo contiene almeno un articolo non codificato.       
+- **Ignora gli articoli non codificati del ricevimento**: permette il carico parziale del documento tralasciando gli articoli non codificati.  
 
-:::important Recuerda
-Si en [Parámetros de pedidos de proveedores](/docs/configurations/parameters/purchase/purchase-orders-parameters) > pestaña Carga el flag **Prioridad de almacén y causal de carga** está activo, siempre se utilizarán el *Almacén* y la *Causal* insertados en los parámetros, ignorando los presentes en el recepción de mercancías para cada línea de artículo; de lo contrario, tendrán prioridad los insertados en el documento.  
+
+- **Ignora il ricevimento contenente articoli senza mag./caus.**: non permette il carico parziale del documento se questo contiene almeno un articolo senza magazzino e causale.      
+- **Ignora gli articoli del ricevimento senza mag./caus.**: permette il carico parziale del documento tralasciando gli articoli che non hanno magazzino e causale.     
+- **Utilizza i seguenti valori per gli articoli senza mag./caus.**: assicura il carico completo del documento. Per tutti gli articoli trovati senza magazzino e causale nei ricevimenti selezionati, imposta i dati inseriti ne campi sottostanti: *Magazzino* e *Causale*.
+
+:::important Ricorda
+Se nei [Parametri ordini fornitori](/docs/configurations/parameters/purchase/purchase-orders-parameters) > tab Carico il flag **Priorità magazzino e causale di carico** è attivo, saranno sempre utilizzati il *Magazzino* e la *Causale* inseriti nei parametri, ignorando quelli presenti nel ricevimento merci per ciascuna riga articolo, altrimenti avranno priorità quelli inseriti nel documento.  
 :::
 
-### 3. Rollback 
+### 3. Rollback
 
-En esta pestaña, el usuario tiene la posibilidad de buscar, visualizar y anular las operaciones de registro ejecutadas.
+In questo tab l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di registrazione eseguite.
 
-Los datos en las cuadrículas inferiores, **Recepción de Mercancías** y **Registro**, corresponden al registro de carga seleccionado en la cuadrícula superior (después de filtrar los datos). Además, en estas dos cuadrículas, existe la posibilidad de visualizar el recepción de mercancías y su registro de almacén mediante doble clic en la fila.
+I dati nelle griglie in basso, **Ricevimento merci** e **Registrazione**, corrispondono alla registrazione di carico selezionata nella griglia superiore (dopo aver filtrato i dati). Inoltre, in queste ultime due griglie, c'è la possibilità di visualizzare il ricevimento merci e la sua registrazione di magazzino mediante doppio click sulla riga.
 
-#### Botones específicos  
-> **Búsqueda**: permite buscar las facturas cargadas. El resultado de este procedimiento se visualiza en las cuadrículas de resultado.  
-> **Rollback**: permite cancelar todo el registro de carga seleccionado.
+#### Pulsanti specifici  
+> **Ricerca**: permette di cercare le fatture caricate. Il risultato di questa procedura viene visualizzato nelle griglie di risultato.  
+> **Rollback**: permette di cancellare l'intera registrazione di carico selezionata.  

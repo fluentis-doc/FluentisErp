@@ -1,33 +1,34 @@
 ---
-title: Importación excel de las registraciones extracontables de Presupuesto (Importazione excel delle registrazioni extracontabili di Budget)
+title: Importación excel de los asientos extracontables de Presupuesto
 sidebar_position: 3
+ai_generated: true
 ---
 
-En el menú de herramientas, dentro del grupo **Bizlink**, encontramos las **importazioni on demand*** y, por lo tanto, las **importazioni excel***: entre estas, tenemos disponible la importación con código **OffBalanceRecordsForArea**, que permite importar fácilmente las registraciones Extracontables de Área, tanto las registraciones del área de gestión que se utilizarán en integración con el área de los resultados de período (por ejemplo, registraciones de compensaciones del consejo de vigilancia que se cargan al inicio del año, así como valorizaciones extracontables de los pagos del mes individual) como registraciones para utilizar en el detalle del Presupuesto de período.
+En el menú de herramientas, dentro del grupo **Bizlink**, encontramos las ***Importaciones a demanda*** y por lo tanto las ***Importaciones excel***: entre estas tenemos disponible la importación con código **OffBalanceRecordsForArea**, que permite importar fácilmente los asientos extracontables<!-- registrazioni Extracontabili --> de Área, es decir, tanto asientos del área de gestión<!-- area gestionale --> que se usarán en integración con el área de resultados del periodo (por ejemplo, asientos de los honorarios del consejo de vigilancia que se cargan al inicio del año, o valoraciones extracontables de las nóminas del mes en curso) como asientos a utilizar para procesar el detalle del Presupuesto<!-- Budget --> del periodo.
 
 Los campos disponibles son los siguientes:
-- **data registrazione***: obligatorio, es la fecha de registración a asignar.
+- ***Fecha de registro<!-- Data registrazione -->***: obligatorio, es la fecha de registro que se debe asignar
 
-- **data competenza***: obligatorio, es la fecha de competencia de la registración, que siempre será igual a la fecha anterior.
+- ***Fecha de competencia<!-- Data competenza -->***: obligatorio, es la fecha de competencia del asiento<!-- registrazione -->, será siempre igual a la fecha anterior
 
-- **numero registrazione***: obligatorio, se recomienda establecer un número de registración alto, para no arriesgarse a superponerse con eventuales registraciones ya presentes en la fecha, creadas quizás automáticamente por procedimientos de contabilización (p. ej., el procesamiento de las amortizaciones del controlling, o la Contabilización de existencias de los cierres interanuales).
+- ***Número de asiento<!-- Numero registrazione -->***: obligatorio, se recomienda asignar un número de asiento<!-- registrazione --> alto, para evitar posibles solapamientos con otros asientos ya presentes en la fecha, creados tal vez automáticamente por procedimientos de contabilización (por ejemplo, el procesamiento de las amortizaciones del controlling, o la contabilización de existencias en los cierres intermedios)
 
-- **causale***: la causa del movimiento, obligatoria, que debe gestionar los centros de costo.
+- ***Causal<!-- Causale -->***: la causal del movimiento<!-- movimento -->, obligatoria, que debe gestionar los centros de costos<!-- centri di costo -->
 
-- ***Cuenta y Subcuenta (Conto e SottoConto)***: obligatorio, la cuenta/subcuenta que se asignará al movimiento.
+- ***Cuenta<!-- Conto --> y Subcuenta<!-- SottoConto -->***: obligatorio, la cuenta/subcuenta a asignar al movimiento<!-- movimento -->
 
-- [**centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): obligatorio, el centro empresarial a asignar.
+- [***CENTRO EMPRESARIAL<!-- CENTRO AZIENDALE -->***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): obligatorio, el centro empresarial<!-- centro aziendale --> a asignar
 
-- ***Tipo-Número interno-Año-Número WBS (Tipo-Numero interno-Anno-Numero WBS)***: opcionalmente el posible vínculo a un proyecto.
+- ***Tipo-Número interno-Año-Número WBS***: opcionalmente la posible vinculación a un proyecto
 
-- **importo dare***: debe asignarse (quizás a cero) obligatoriamente.
+- ***Importe debe<!-- Importo dare -->***: obligatorio, debe valorarse (incluso en cero)
 
-- **importo avere***: debe asignarse (quizás a cero) obligatoriamente.
+- ***Importe haber<!-- Importo avere -->***: obligatorio, debe valorarse (incluso en cero)
 
-- **da data competenza***: la fecha inicial de competencia económica de la línea, no obligatoria pero siempre debe valorizarse cuando se trata de movimientos económicos.
+- ***Desde fecha de competencia<!-- Da data competenza -->***: la fecha inicial de competencia económica de la línea, no obligatoria pero siempre a valorarse cuando se trata de movimientos económicos<!-- movimenti economici -->
 
-- **a data competenza***: la fecha final de competencia económica de la línea, no obligatoria pero siempre debe valorizarse cuando se trata de movimientos económicos.
+- ***Hasta fecha de competencia<!-- A data competenza -->***: la fecha final de competencia económica de la línea, no obligatoria pero siempre a valorarse cuando se trata de movimientos económicos<!-- movimenti economici -->
 
-- **divisione***: no obligatoria, si no se indica, se utilizará la de los parámetros de importación, de forma predeterminada la activa.
+- ***División<!-- Divisione -->***: no obligatoria, si no se indica se usará la de los parámetros de importación, por defecto la activa
 
-Una vez ingresados todos los campos necesarios, se podrá validar el rango de los datos ingresados para verificar eventuales códigos faltantes o erróneos (botón **valida range di dati***), o lanzar directamente la importación con el botón **importa foglio excel***: se solicitará la valorización del **Área** a utilizar y de la divisa de referencia de la operación.
+Una vez completados todos los campos necesarios, se podrá validar el rango de datos ingresados para verificar la existencia de posibles códigos faltantes o erróneos (botón ***Validar rango de datos<!-- Valida range di dati -->***), o lanzar directamente la importación con el botón ***Importar hoja excel<!-- Importa foglio excel -->***: se solicitará la selección del **Área<!-- Area -->** a utilizar y la divisa de referencia de la operación.

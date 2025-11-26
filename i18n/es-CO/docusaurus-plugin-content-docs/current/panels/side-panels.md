@@ -1,18 +1,19 @@
 ---
-title: impostazioni
+title: Configuraciones
 sidebar_position: 1
+ai_generated: true
 ---
 
-Fluentis ofrece la posibilidad de configurar diversas funcionalidades y parámetros:
+Fluentis ofrece la posibilidad de configurar diferentes funcionalidades y parámetros:
 
-- [Herramientas (Strumenti)](/docs/applications/applications-intro): contiene las aplicaciones complementarias;
+- [Herramientas<!-- Strumenti -->](/docs/applications/applications-intro): contiene las aplicaciones complementarias;
 
-- [Navegador de Objetos (Object Navigator)](/docs/object-navigator/object-navigator-intro): contiene todas las propiedades del objeto actual útiles para personalizar los formularios con la adición de más datos o información;
+- [Object Navigator<!-- Object Navigator -->](/docs/object-navigator/object-navigator-intro): contiene todas las propiedades del objeto actual, útil para personalizar los formularios<!-- form --> con la adición de datos o información adicional;
 
-- [impostazioni (Configurazioni)](/docs/configurations/configuration): contiene las configuraciones de los parámetros, de las tablas y utilidades;
+- [Configuraciones<!-- Configurazioni -->](/docs/configurations/configuration): contiene las configuraciones de los parámetros, de las tablas<!-- tabelle --> y utilidades;
 
-- **context panel**: representa una especie de Dashboard contextualizado a la selección activa;
+- **Panel de contexto<!-- Context Panel -->**: representa una especie de panel de control adaptado al contexto de la selección activa;
 
-- **fluentis chat**: permite interactuar con los usuarios habilitados para este servicio de comunicación, tanto interno en el contexto empresarial, como externo para acceder al soporte de Fluentis;
+- **Fluentis Chat**: permite interactuar con los usuarios habilitados para este servicio de comunicación, tanto internamente en el contexto empresarial, como externamente para acceder al soporte de Fluentis;
 
-- [Navegador de Formularios (Form Navigator)](/docs/form-navigator/form-navigator-intro).
+- [Form Navigator<!-- Form Navigator -->](/docs/form-navigator/form-navigator-intro).

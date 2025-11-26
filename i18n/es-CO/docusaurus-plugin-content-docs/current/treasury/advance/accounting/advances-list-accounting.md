@@ -1,14 +1,15 @@
 ---
-title: contabilizzazione distinta anticipi
+title: Contabilización de remesa de anticipos
 sidebar_position: 1
+ai_generated: true
 ---
 
-Desde esta posición, después de presionar Buscar (Ricerca), es posible contabilizar las distintas listas ingresadas.
+Desde esta sección, después de pulsar Buscar<!-- Ricerca -->, es posible contabilizar las distintas remesas<!-- distinte --> ingresadas.
 
-Se realizará un asiento que acredita la cuenta corriente y, a su vez, registra la deuda con el banco por anticipos.
+Se generará un asiento que acredita la cuenta corriente<!-- conto corrente --> y, como contrapartida, reconoce la deuda hacia el banco por anticipos<!-- debito verso la banca per anticipi -->.
 
-Es necesario seleccionar la **causal contable (causale conatbile)** deseada (el esquema del registro es gestionado por el programa independientemente de la plantilla) y, si es necesario, cambiar la fecha de registro.
+Es necesario seleccionar la **causal contable<!-- causale conatbile -->** deseada (el esquema del registro<!-- registrazione --> se gestiona igualmente por el programa independientemente del template) y eventualmente cambiar la fecha de registro<!-- data di registrazione --> si es necesario.
 
-El procedimiento de contabilización se puede restaurar como es habitual desde la pestaña **precedente**.
+El procedimiento de contabilización puede ser restaurado como de costumbre desde la pestaña **Anterior<!-- Precedente -->**.
 
 ![](/img/it-it/treasury/advance/accounting/advances-list-accounting/image01.png)

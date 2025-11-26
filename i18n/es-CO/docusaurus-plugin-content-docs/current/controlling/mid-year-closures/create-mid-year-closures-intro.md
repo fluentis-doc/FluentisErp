@@ -1,160 +1,161 @@
 ---
-title: Crear Cierres Intermedios (Crea Chiusure infrannuali)
+title: Crear cierres interanuales
 sidebar_position: 3
+ai_generated: true
 ---
 
-El procedimiento permite crear nuevas simulaciones de balance intermedio.
+El procedimiento permite crear nuevas simulaciones de balance interanual<!-- bilancio infrannuale -->.
 
-La fuente de datos de partida es siempre la Contabilidad general en el momento de la creación del cierre: el programa toma los saldos de las diversas cuentas secundarias, según los parámetros de creación del cierre establecidos en este formulario, para permitir luego la adición extracontable de todas las operaciones de ajustes, diferimientos, amortizaciones y registros manuales para llegar a una simulación de balance que incluya los ajustes y correcciones necesarias. La operación no tiene ningún efecto sobre los datos de contabilidad general para efectos del cierre contable de fin de año: el módulo de cierres intermedios se gestiona en tablas de base de datos completamente separadas de la contabilidad general.
+El origen de los datos de partida es siempre la Contabilidad general<!-- Contabilità generale --> en el momento de la creación del cierre<!-- chiusura --> en sí: el programa toma los saldos de las distintas subcuentas<!-- sottoconti -->, según los parámetros de creación del cierre<!-- chiusura --> configurados en este formulario, para luego permitir la adición extra contable de todas las operaciones de anticipos, diferidos, amortizaciones y registros manuales con el fin de llegar a una simulación de balance incluyendo los ajustes y rectificaciones necesarios. La operación no tiene ningún efecto sobre los datos de contabilidad general de cara al cierre contable de fin de año: el módulo de cierres interanuales<!-- chiusure infrannuali --> se gestiona de hecho en tablas de base de datos totalmente separadas de la contabilidad general<!-- contabilità generale -->.
 
-## Pestaña *General*
+## Pestaña *General*<!-- Tab *Generale* -->
 
-Indicador **seleziona dati per divisione**: si está configurado, el campo anterior de la división se convierte en un filtro que permite obtener de la contabilidad solo los datos de la división establecida.
+Indicador **Seleccionar datos por división**: si está activado, el campo previo de la división se convierte en un filtro para extraer de la contabilidad solo los datos de la división especificada.
 
-**anno contabile**: el año de referencia de los datos, sirve para identificar las cuentas predeterminadas de los asientos de ajuste y los períodos contables relacionados.
+**Año contable**: el año de referencia de los datos, sirve para identificar las cuentas predeterminadas de los asientos de ajuste y los periodos contables relativos.
 
-**escludi causale**: en caso de que se estén obteniendo los datos de un año contable completo ya cerrado, permite excluir los registros de cierre de cuentas y así obtener los datos de balance del ejercicio.
+**Excluir causal<!-- causale -->**: en caso de que se estén extrayendo los datos de un año contable completo ya cerrado, permite excluir los registros de cierre de cuentas y así obtener los datos de balance del ejercicio.
 
-**area**: el campo es visible solo en empresas que gestionan Control, se seleccionará el área de los Resultados a asociar con el conjunto de datos en procesamiento.
+**Área**: el campo solo es visible en empresas que gestionan Controlling<!-- Controlling -->, se seleccionará el área de Informes de resultados a asociar al conjunto de datos en proceso.
 
-### Sección **Recuperación de valores patrimoniales (Ripresa valori patrimoniali)**
+### Sección **Reanudación de valores patrimoniales**<!-- Sezione **Ripresa valori patrimoniali** -->
 
-El indicador de **ripresa dei movimenti di natura patrimoniale**, presente por defecto, habilita la sección inferior de filtro. Con esta opción, ERP incluirá en el cierre intermedio también los saldos de las cuentas secundarias relacionadas con los tipos de cuenta que presentan el indicador **patrimoniale attivo** o **patrimoniale passivo**.
+El indicador de **Reanudación de movimientos de naturaleza patrimonial**, presente por defecto, habilita la sección de filtro inferior. Con esta opción, el ERP insertará en el cierre interanual<!-- chiusura infrannuale --> también los saldos de las subcuentas<!-- sottoconti --> vinculadas a los tipos de cuenta que tengan el indicador **Patrimonial activo** o **Patrimonial pasivo**.
 
-La sección de filtros por fecha de registro y fecha de competencia a continuación permite definir los rangos de fechas que se utilizarán para recuperar los datos patrimoniales de los registros del período establecido.
-
-:::tip NOTA
-En particular, si la cierre y reapertura de cuentas aún no se ha registrado en contabilidad, la fecha de inicio debe ser retrocedida a la fecha de la última apertura de cuentas registrada en contabilidad, para tener un dato patrimonial correcto.
-
-Es importante considerar que, en este caso, habrá una diferencia entre el saldo patrimonial y el saldo económico del ejercicio en curso, correspondiente a la ganancia/pérdida del ejercicio anterior que aún no se ha registrado en la cierre/reapertura de las cuentas de contabilidad general: al iniciar la creación, Fluentis preguntará si se desea valorar tal diferencia en las cuentas de ganancias o pérdidas predeterminadas en los parámetros contables, obteniendo un registro equilibrado; mientras que si esta opción no se utiliza habrá un desequilibrio en el registro y, por lo tanto, para el buen término de la operación de cierre misma, la causal deberá permitir el guardado de registros desequilibrados.
-:::
-
-En caso de que el cierre no prevea la recuperación patrimonial, nuevamente el registro de cierre intermedio (de solo la sección económica) desequilibrará por la ganancia/pérdida del período.
-
-### Sección **Recuperación de valores económicos (Ripresa valori economici)**
-
-El indicador de **ripresa dei movimenti di natura economica**, presente por defecto, habilita la sección inferior de filtro. Con esta opción, se insertan en el cierre intermedio los saldos de las cuentas secundarias conectadas a los tipos de cuenta que presentan el indicador **economico costi** o **economico ricavi**.
-
-La sección de filtros por fecha de registro, competencia y documento a continuación permite definir los rangos de fechas que se utilizarán para recuperar los datos de los registros del período establecido.
+La sección de filtros por fecha de registro<!-- data registrazione --> y fecha de competencia<!-- data competenza --> permite definir los rangos de fechas que se utilizarán para recuperar los datos patrimoniales de los registros del periodo definido.
 
 :::tip NOTA
-El rango de fechas del documento, no propuesto por defecto, normalmente no se establece: no todos los registros contables, de hecho, presentan las fechas del documento en el encabezado (normalmente solo los registros de facturas de compra/venta).
+En particular, en caso de que aún no se haya registrado en contabilidad el cierre y reapertura de cuentas, la fecha de inicio debe retrotraerse a la fecha de la última apertura de cuentas detectada en contabilidad, para asegurar un dato patrimonial correcto.
+
+Cabe considerar que, en este caso, habrá una diferencia entre el saldo patrimonial y el saldo económico del ejercicio en curso, correspondiente a la utilidad/pérdida del ejercicio anterior aún no reconocida en el cierre/reapertura de cuentas de la contabilidad general<!-- contabilità generale -->: al momento de la creación, Fluentis preguntará si se desea valorizar dicha diferencia en las cuentas de utilidad o pérdida predeterminadas en los parámetros de contabilidad, logrando así un registro equilibrado. Si esta opción no es utilizada, habrá un desajuste en el registro y, por tanto, para el correcto cierre, la causal deberá permitir la grabación de registros desequilibrados.
 :::
 
-En caso de que el cierre no prevea la recuperación económica, el registro de cierre intermedio (de solo la sección patrimonial) desequilibrará por la ganancia/pérdida del período.
+En caso de que el cierre<!-- chiusura --> no prevea la reanudación patrimonial, nuevamente el registro de cierre interanual<!-- registrazione di chiusura infrannuale --> (solo de la sección económica) provocará un desajuste por la utilidad/pérdida del periodo.
 
-### Sección **Datos de cierre de cuentas (Dati chiusura conti)**
+### Sección **Reanudación de valores económicos**<!-- Sezione **Ripresa valori economici** -->
 
-La sección presenta los elementos identificativos que se atribuirán a esta simulación de balance.
+El indicador de **Reanudación de movimientos de naturaleza económica**, presente por defecto, habilita la sección de filtro inferior. Con esta opción, se insertan en el cierre interanual<!-- chiusura infrannuale --> los saldos de las subcuentas<!-- sottoconti --> vinculadas a los tipos de cuenta que tengan el indicador **Económico costos** o **Económico ingresos**.
 
-**causale chiusura conti**: es la causal que se utilizará para crear el registro de recuperación de saldos. Se recuerda que dicha causal debe tener los indicadores cdc/cdp/proyectos para que estos elementos sean considerados en la cierre intermedio misma.
+La sección de filtros por fecha de registro<!-- data registrazione -->, competencia y documento permite definir los rangos de fechas que serán utilizados para recuperar los datos de los registros del periodo determinado.
 
-**data chiusura**: es la fecha de creación de esta simulación, que se utilizará como fecha del registro extracontable del cierre mismo y para los otros registros. No tiene ninguna valencia particular.
+:::tip NOTA
+El rango de fechas documento, que no se propone por defecto, normalmente no se define: no todos los asientos contables, de hecho, presentan las fechas de documento en el encabezado (normalmente solo los registros de facturas de compra/venta).
+:::
 
-**Número de cierre (Numero chiusura)**: es el número progresivo del cierre, propuesto automáticamente por el sistema.
+En caso de que el cierre<!-- chiusura --> no prevea la reanudación económica, el registro de cierre interanual<!-- registrazione di chiusura infrannuale --> (solo de la sección patrimonial) desbalanceará por la utilidad/pérdida del periodo.
 
-**descrizione chiusura**: es la descripción que aparecerá en todas las máscaras del módulo de Cierres intermedios, en el del Balance y del Presupuesto. Se aconseja describir de manera clara los rangos de fechas establecidos para entender el período simulado cuando se seleccione el cierre en los diversos procedimientos del área de Control.
+### Sección **Datos de cierre de cuentas**<!-- Sezione **Dati chiusura conti** -->
 
-**Competencia económica del/al (Competenza economica dal/al)**: este rango de fechas es obligatorio para poder proceder a la creación del cierre intermedio. Indica el período de competencia económica que interesa: será entonces tomado como referencia para el cálculo de los asientos de ajuste/integración, para el cálculo de la recuperación de amortizaciones del período y en general las diversas procedimientos posteriores. Por ejemplo, si se han recuperado los registros del primer semestre del ejercicio X y se ha ingresado el mismo semestre como rango de fechas de competencia económica, con los procedimientos de ajuste el programa verificará si hay líneas de contabilidad con rangos de competencia fuera de este semestre para identificar el diferimiento relacionado.
+La sección presenta los elementos identificativos que serán atribuidos a esta simulación de balance.
 
-### Sección **Opciones de cierre (Opzioni chiusura)**
+**Causal de cierre de cuentas<!-- Causale chiusura conti -->**: es la causal a utilizar para crear el registro de reanudación de saldos. Se recuerda que dicha causal debe tener los indicadores cdc/cdp/proyectos para que estos elementos sean considerados en el propio cierre interanual<!-- Chiusura infrannuale -->.
 
-**chiusura per commessa**: con este indicador, el programa creará un registro de cierre intermedio por cada proyecto de venta que se ha valorado en los registros contables del período de filtro establecido. Se recuerda que la causal de cierre intermedio debe prever la gestión de los proyectos para gestionar sus datos.
+**Fecha de cierre<!-- Data chiusura -->**: es la fecha de creación de esta simulación, que se utilizará como fecha del registro extracontable del propio cierre<!-- chiusura --> y para los demás registros. No tiene ninguna validez particular.
 
-**considera registrazioni provvisorie**: con este indicador, la recuperación de datos de la contabilidad también considerará los registros contables con estado 'provisionales'.
+**Número de cierre<!-- Numero chiusura -->**: es el número progresivo del cierre<!-- chiusura -->, propuesto automáticamente por el sistema.
 
-### Valores calculados (Valori calcolati)
+**Descripción del cierre<!-- Descrizione chiusura -->**: es la descripción que aparecerá en todas las pantallas del módulo de Cierres interanuales<!-- Chiusure infrannuali -->, así como en el de Balance y Presupuesto. Se recomienda describir claramente los rangos de fechas configurados para identificar el periodo simulado al seleccionar el cierre<!-- chiusura --> en los diferentes procedimientos del área de Controlling<!-- Controlling -->.
 
-Esta sección propone los totales patrimoniales/económicos calculados a partir del primer registro de cierre realizado. 
+**Competencia económica desde/hasta**: este rango de fechas es obligatorio para poder proseguir con la creación del cierre interanual<!-- chiusura infrannuale -->. Indica el periodo de competencia económica en cuestión: será tomado como referencia para el cálculo de los asientos de ajuste/integración, para el cálculo de la reanudación de amortizaciones del periodo y, en general, para los diferentes procedimientos siguientes. Por ejemplo, si se han reanudado los registros del primer semestre del ejercicio X y se ha insertado el mismo semestre como rango de fechas de competencia económica, con los procedimientos de ajuste el programa verificará si existen filas en contabilidad con rango de competencia fuera de este semestre para detectar el correspondiente diferido.
 
-(con indicador **chiusura per commessa** esta sección visualiza solamente los datos del primer proyecto identificado en el período).
+### Sección **Opciones de cierre**<!-- Sezione **Opzioni chiusura** -->
 
-### Ajustes e Integraciones (Rettifiche e integrazioni)
+**Cierre por proyecto<!-- Chiusura per commessa -->**: marcando este indicador, el programa creará un registro de cierre interanual<!-- registrazione di chiusura infrannuale --> para cada proyecto<!-- commessa --> de venta que haya sido valorado en los registros contables del periodo de filtro establecido. Se recuerda que la causal de cierre interanual<!-- causale di chiusura infrannuale --> debe prever la gestión de proyectos<!-- commesse/progetti --> para gestionar sus datos.
 
-La sección permite gestionar automáticamente, al final del registro de recuperación de datos intermedios, los registros correspondientes de ajuste e integración.
+**Considerar registros provisionales**: marcando este indicador, la reanudación de los datos desde la contabilidad considerará también los registros contables con estado 'provisionales'.
+
+### Valores calculados
+
+Esta sección muestra los totales patrimoniales/económicos calculados desde el primer registro de cierre<!-- registrazione di chiusura --> realizado.
+
+(con el indicador **Cierre por proyecto<!-- Chiusura per commessa -->** esta sección visualizará solo los datos del primer proyecto<!-- commessa --> identificado en el periodo).
+
+### Rectificaciones e integraciones
+
+La sección permite gestionar automáticamente, después del registro de reanudación de datos interanuales<!-- ripresa dati infrannuale -->, los correspondientes registros de rectificación e integración.
 
 :::note Nota
-Este tipo de registros de ajuste se realiza automáticamente solo para los movimientos de cuentas secundarias económicas vinculadas a un tipo de cuenta que presenta el indicador *Servicio* configurado.
+Este tipo de asientos de ajuste se realiza automáticamente solo para los movimientos de subcuentas<!-- sottoconti economici --> económicas vinculadas a un tipo de cuenta que tenga marcado el indicador *Servicio*.
 :::
 
-El referente de los ajustes/integraciones es al **rango de fechas de competencia** ingresados en los movimientos de primera nota (y en los centros de costo/profit para la parte analítica).
+La referencia de las rectificaciones/integraciones es el **rango de fechas de competencia** insertadas en los registros de movimientos principales (y en los centros de costos/beneficio para la parte analítica).
 
-**scritture di rettifica in automatico**: al activar el indicador se activará la sección de ajustes automáticos; es necesario establecer la causal que irá a registrar la operación. También aquí, para ajustar también los movimientos de cdc/cdp, será necesario que la causal prevea la gestión de estos.
+**Asientos de rectificación automáticos**: al marcar el indicador, se activará la sección de rectificaciones automáticas, es necesario configurar la causal<!-- causale --> que gestionará la operación. También aquí, para rectificar los movimientos de cdc/cdp, la causal debe estar configurada para gestionar estos datos.
 
-Las configuraciones recomendadas incluyen la opción **agrupar por registro (raggruppa per registrazione)** y, sobre todo, el uso del **calendario solar**.
+Los ajustes recomendados prevén la opción **agrupar por registro** y sobre todo el uso del **calendario solar**.
 
 :::tip Nota
-Las cuentas secundarias de diferimiento que se utilizarán serán aquellas ingresadas en el plan de cuentas en correspondencia con la cuenta secundaria de costos/ingresos o la cuenta secundaria genérica ingresada en los parámetros de contabilidad del año del cierre intermedio mismo.
+Las subcuentas<!-- sottoconti --> de diferidos que se utilizarán serán aquellas insertadas en el plan de cuentas junto a cada subcuenta<!-- sottoconto --> de costo/ingreso, o bien la subcuenta<!-- sottoconto --> genérica insertada en los parámetros de contabilidad del año del propio cierre interanual<!-- chiusura infrannuale -->.
 :::
 
-Este indicador crea automáticamente lo que el usuario puede gestionar por separado incluso después del procesamiento de los saldos de cierre en el procedimiento dedicado *Asientos de ajuste* siempre referido al menú de cierres intermedios (*procedures*).
+Este indicador crea automáticamente lo que el usuario puede gestionar por separado también tras la elaboración de los saldos de cierre en el procedimiento dedicado *Asientos de rectificación* siempre referido al menú de cierres interanuales<!-- chiusure infrannuali (--procedure--) -->.
 
-**scritture di integrazione in automatico**: al activar el indicador se activará la sección de integraciones automáticas; es necesario establecer la causal que irá a registrar la operación **y la fecha de inicio de competencia**.
+**Asientos de integración automáticos**: al marcar el indicador, se habilitará la sección de integraciones automáticas, es necesario configurar la causal<!-- causale --> que gestionará la operación **y la fecha de inicio de competencia**.
 
-También aquí, para integrar también los movimientos de cdc/cdp, será necesario que la causal prevea la gestión de estos.
+También aquí, para integrar los movimientos de cdc/cdp, será necesario que la causal prevea su gestión.
 
-La configuración predeterminada del calendario solar es la que se recomienda utilizar.
+La configuración por defecto del calendario solar es la aconsejada.
 
-Con este indicador, el programa verificará, **a partir de la *Fecha de inicio de competencia para los asientos de integración***, las líneas de costo/ingreso presentes en contabilidad y no incluidas en el cierre (es decir, registros fuera de los rangos de fechas de registro/competencia establecidos), para crear los ajustes de los días dentro del rango de fechas de competencia establecidos para el cierre.
+Con este indicador, el programa verificará, **a partir de la *Fecha de inicio de competencia para los asientos de integración***, las filas de costo/ingreso presentes en la contabilidad y no insertadas en el cierre (es decir, registros fuera de los rangos de fechas de registro/competencia configuradas), para crear los anticipos correspondientes a los días comprendidos en el rango de fechas de competencia configuradas para el cierre<!-- chiusura -->.
 
 :::tip Nota
-Las cuentas secundarias de ajuste que se utilizarán serán aquellas ingresadas en el plan de cuentas en correspondencia con la cuenta secundaria de costos/ingresos o la cuenta secundaria genérica ingresada en los parámetros de contabilidad del año del cierre intermedio mismo.
-Si el costo/ingreso tiene una competencia económica **totalmente ingresada en el rango de interés del cierre** y está en un registro contable con la cuenta secundaria de encabezado valorada, entonces Fluentis supone que se está en un registro de una factura (o nota de crédito) a recibir/emitar y utilizará estas cuentas secundarias tomándolas del registro del cliente/proveedor o de los parámetros de contabilidad del año seleccionado, en lugar de las cuentas secundarias de ajuste.
+Las subcuentas<!-- sottoconti --> de anticipos a usar serán las que estén insertadas en el plan de cuentas para cada subcuenta<!-- sottoconto --> de costo/ingreso o bien la subcuenta<!-- sottoconto --> genérica insertada en los parámetros contables del año del propio cierre interanual<!-- chiusura infrannuale -->.
+Si el costo/ingreso tiene una competencia económica **totalmente incluida en el rango de interés de la chiusura** y está en un registro contable con la subcuenta<!-- sottoconto --> en el encabezado valorada, entonces Fluentis presupone que se trata de un registro de factura (o nota de crédito) por recibir/emitir y usará dichas subcuentas extrayéndolas de la ficha de cliente/proveedor o de los parámetros contables del año seleccionado, en vez de las subcuentas de anticipos.
 :::
 
-Este indicador crea automáticamente lo que el usuario puede gestionar por separado incluso después del procesamiento de los saldos de cierre en el procedimiento dedicado *Asientos de integración*.
+Este indicador crea automáticamente lo que el usuario puede gestionar por separado también tras la elaboración de los saldos de cierre en el procedimiento dedicado *Asientos de integración*.
 
 :::danger IMPORTANTE
-Merece una atención especial la **fecha de inicio de competencia** que se debe establecer.
+Merece especial atención la **fecha de inicio de competencia** a configurar.
 
-Normalmente, esta fecha se establecerá igual a la fecha de la última apertura de cuentas registrada en contabilidad.
+Normalmente esta fecha será igual a la fecha de la última apertura de cuentas detectada en contabilidad.
 
-Ejemplo: si estamos creando el cierre del primer trimestre del ejercicio, el rango de fechas para la sección económica será típicamente 01/01/año X – 31/03/año X y si está presente la reapertura de cuentas del ejercicio anterior, entonces dentro de este rango habrá directamente la transferencia a costo/ingreso de los ajustes registrados en el balance 'año X-1', por lo que la fecha de inicio para las integraciones debe establecerse como 01/01/año X para que el software verifique si después del 31/03 hay líneas con competencia en el trimestre anterior.
+Ejemplo: si estamos creando el cierre del primer trimestre del ejercicio, el rango de fechas para la sección económica típicamente será 01/01/año X – 31/03/año X y si está presente la reapertura de cuentas del ejercicio anterior entonces dentro de este rango ya estará el asiento de costo/ingreso de los anticipos detectados en el balance del 'año X-1', por lo tanto la fecha de inicio para las integraciones debe ser 01/01/año X para que el software verifique si después del 31/03 hay líneas con competencia en el trimestre anterior.
 
-**Si la reapertura NO está presente**, en cambio, será necesario establecer la fecha de inicio como 01/01/**año X-1** **incluir también, por competencia, los movimientos que habrían sido objeto de reapertura (ajustes y diferimientos) del año anterior.**
+**Si la reapertura NO está presente**, en cambio, será necesario configurar la fecha de inicio como 01/01/**año X-1** **para incluir también, por competencia, los movimientos que habrían sido objeto de reapertura (anticipos y diferidos) del año anterior.**
 :::
 
 :::danger ATENCIÓN
-El módulo de control opera de forma más flexible, en algunas situaciones, en comparación con el módulo administrativo.
-De hecho, es capaz de rectificar automáticamente cualquier costo ingreso (con tipo de cuenta compatible) tanto para cuotas de competencia económica en el pasado como en el futuro, ya que procede a mensualizar los costos/ingresos de competencia y, por lo tanto, retira automáticamente los valores anteriores y posteriores al rango del cierre. Por ejemplo, si el costo registrado en el año X tiene competencia parcialmente (o totalmente) en el año X-1, al procesar los períodos con los datos devueltos del cierre del año X, igualmente considerará solo el período de competencia requerido.
+El módulo de controlling funciona de forma más flexible, en algunas situaciones, que el módulo administrativo.
+De hecho, es capaz de rectificar automáticamente cualquier costo/ingreso (con tipo de cuenta compatible) tanto por cuotas de competencia económica en el pasado como en el futuro, ya que procede a mensualizar los costos/ingresos de competencia y, por tanto, elimina automáticamente los valores anteriores y posteriores al rango del cierre<!-- chiusura -->. Por ejemplo, si el costo registrado en el año X tiene competencia parcialmente (o totalmente) en el año X-1, ejecutando la elaboración de periodos en los datos reales del cierre del año X, considerará solo el periodo de competencia indicado.
 
-Se debe prestar especial atención a la **gestión de los ajustes realizados en el módulo administrativo**.
-**Se recomienda realizar el cálculo y contabilización de ajustes y la cierre y reapertura de cuentas con reapertura de ajustes a través de los procedimientos automáticos evitando realizar registros manualmente**.
+Se debe prestar especial atención a la **gestión de los ajustes ejecutados en el módulo administrativo**.
+**Se recomienda ejecutar el cálculo y contabilización de ajustes y el cierre y reapertura de cuentas con reapertura de ajustes mediante los procedimientos automáticos, evitando realizar asientos manualmente**.
 
-La procedimiento automática impone, de hecho, a los registros de reapertura de ajustes la fecha igual a la escritura original objeto de rectificación y la competencia económica de dicha escritura igual al año X-1. De esta manera, se evita que al procesar los cierres de período del año X, el software calcule ajustes adicionales, ya que ya se tiene en el saldo del año X (o período intermedio del año X) el resultado correcto de competencia por efecto de la correcta reapertura del ajuste anterior.
+El procedimiento automático impone, de hecho, a los asientos de reapertura de ajustes, la fecha igual al registro original objeto de rectificación y la competencia económica de dicha escritura igual al año X-1. Así se evita que al elaborar los cierres de periodo del año X, el software vuelva a calcular ajustes adicionales, pues ya se tiene en el saldo del año X (o periodo interanual del año X) el resultado correcto de competencia por efecto de la correcta reapertura del ajuste previo.
 :::
 
-### Recuperación de amortización de activos
+### Reanudación de amortización de activos fijos<!-- Ripresa ammortamento cespiti -->
 
-La sección permite gestionar automáticamente, al final del registro de recuperación de datos intermedios, la detección de las amortizaciones civiles/fiscales del período de competencia: se utiliza por lo tanto la misma lógica del procedimiento *Amortización de activos* del módulo de Activos, pero solo para los días de competencia económica de interés en el cierre.
-Una vez habilitado el cálculo, se deberá establecer la causal contable a utilizar y elegir si crear un *único registro* acumulativo o detallado activo por activo.
-El indicador 'Operaciones incrementales', para el que se remite al módulo de activos, permite filtrar el tipo de categorías de activos a gestionar.
-Este indicador crea automáticamente lo que el usuario puede gestionar por separado incluso después del procesamiento de los saldos de cierre en el procedimiento dedicado *Recuperación de amortización de activos*.
+La sección permite gestionar automáticamente, después del registro de reanudación de datos interanuales<!-- registrazione di ripresa dati infrannuale -->, el cálculo de las amortizaciones civiles/fiscales del periodo de competencia: se utiliza la misma lógica del procedimiento *Amortización de activos fijos* del módulo de Activos fijos<!-- cespiti -->, pero solo para los días de competencia económica de interés en el cierre<!-- chiusura -->.
+Una vez activado el cálculo, se deberá indicar la causal contable<!-- causale contabile --> a utilizar y elegir si se creará un solo registro acumulativo o detallado por activo fijo<!-- cespite -->.
+El indicador 'Operaciones incrementales', para el que se remite al módulo de activos fijos, permite filtrar el tipo de categorías de activos fijos a gestionar.
+Este indicador crea automáticamente lo que el usuario puede gestionar por separado después de la elaboración de los saldos de cierre en el procedimiento dedicado *Reanudación de amortización de activos fijos*.
 
 :::tip Nota
-Si en la empresa existen tanto categorías de activos incrementales como no, se sugiere utilizar el procedimiento dedicado *Recuperación de amortización de activos*, para poder ejecutar ambas combinaciones en secuencia.
+Si en la empresa están presentes tanto categorías de activos fijos incrementales como no, se recomienda utilizar el procedimiento dedicado *Reanudación de amortización de activos fijos*, de forma que se puedan ejecutar ambas combinaciones en secuencia.
 :::
 
-### Contabilización de existencias
+### Contabilización de inventarios<!-- Contabilizzazione rimanenze -->
 
-La sección permite gestionar automáticamente, al final del registro de recuperación de datos intermedios, la detección de los inventarios iniciales/finales del período de competencia.
-Una vez habilitada la gestión, se gestionará el rango de fechas a utilizar, el tipo de saldo a considerar (*Positivo/Negativo*), el tipo de cálculo de costo (*Costo medio, Costo último, FIFO a pasos anuales, LIFO a pasos anuales, Área de Gestión, Por costo efectivo de lotes*) y la causal contable a utilizar para los registros que se crearán.
-La presencia o no del indicador de Control gestionará las operaciones de dos maneras diferentes: 
-- Si el indicador *no está presente*, **FluentisERP** creará los asientos de los inventarios iniciales y finales a las fechas de inicio y fin del período del Cierre intermedio, e insertará estos al final de los otros asientos de ajuste del cierre mismo.
-- Si el indicador *está presente*, **FluentisERP** creará los registros de los inventarios iniciales y finales de cada mes dentro del rango de fechas de competencia del Cierre intermedio, e insertará estos como Asientos extracontables del Área asociada al cierre mismo (por lo tanto, no serán asientos del cierre, sino asientos válidos solo para el Control).
+La sección permite gestionar automáticamente, después del registro de reanudación de datos interanuales<!-- registrazione di ripresa dati infrannuale -->, la contabilización de los inventarios iniciales/finales del periodo de competencia.
+Una vez habilitada la gestión, se gestionará el rango de fechas que se utilizará, el tipo de stock a considerar (*Positivo/Negativo*), el tipo de cálculo de coste (*Coste medio, Último coste, FIFO a pasos anuales, LIFO a pasos anuales, Área de gestión, Desde coste efectivo por lotes*) y la causal contable<!-- causale contabile --> para los registros que se vayan a crear.
+La presencia o ausencia del indicador Controlling determinará dos formas distintas de gestionar las operaciones:
+- Si el indicador *no está presente*, **FluentisERP** creará los registros de inventario inicial y final en las fechas de inicio y fin del periodo del cierre interanual<!-- Chiusura infrannuale -->, añadiéndolos al final de los demás asientos de ajuste de la propia chiusura.
+- Si el indicador *está presente*, **FluentisERP** creará los registros de inventario inicial y final de cada mes dentro del rango de fechas de competencia del cierre interanual<!-- Chiusura infrannuale -->, y los insertará como registros extracontables del Área asociada al propio cierre (por lo que no serán asientos de cierre, sino registros válidos solo para el Controlling<!-- Controlling -->)
 
 :::tip Nota
-La elaboración realiza una prueba sobre la existencia o no de este tipo de asientos y, por lo tanto, si los encuentra ya presentes, preguntará si se desea eliminarlos y recrear o si se desea añadir (como en el caso de que se deban seleccionar solo algunos almacenes y no todos, a través del menú desplegable disponible). En caso de que se quieran crear tanto los registros de Área para el control como los de ajuste en el Cierre, es necesario ejecutar la procedimiento *primero* con el indicador de Control activado y *luego* con el indicador desactivado.
+La elaboración efectúa una comprobación de la existencia de este tipo de registros y, si ya se encuentran presentes, pregunta si se quieren eliminar y recrear o solo añadir (como en el caso en que se deseen seleccionar solo algunos almacenes<!-- magazzini --> y no todos, a través de la lista desplegable disponible). En caso de querer crear tanto los registros de Área para el Controlling como los registros de ajuste en el Cierre<!-- Chiusura -->, es necesario ejecutar el procedimiento *primero* con el indicador Controlling activo y *después* con el indicador desactivado.
 :::
 
-## Pestaña *Parámetros*
+## Pestaña *Parámetros*<!-- Tab *Parametri* -->
 
-La pestaña ‘Parámetros' permite establecer, para ciertos tipos de cuentas o para una cuenta/cuenta secundaria específica, el tipo de saldo a calcular. En detalle:
+La pestaña ‘Parámetros' permite configurar, para determinados tipos de cuentas o bien para cuentas/subcuentas específicas<!-- conto/sottoconto -->, el tipo de saldo a calcular. En detalle:
 
-**General**: es la situación normal por defecto. Con esta opción, ERP calculará un saldo deudor o acreedor y un saldo general.
+**General**: es la situación normal predeterminada. Con esta opción el ERP calculará un saldo deudor o acreedor y un saldo general.
 
-**dare/avere**: con esta opción, el programa calculará tanto un total de los movimientos deudores, un total acreedor y el saldo final relativo.
+**Debe/Haber:** con esta opción, el programa calculará tanto un total de movimientos en el Debe, un total en el Haber y el saldo final correspondiente.
 
-El referente es a las varias opciones de los modelos de reclasificaciones presentes en el módulo *Reporting > Reclasificaciones*: en estos es posible establecer solo el valor ‘Deudor' o ‘Acreedor' o general.
+La referencia son las distintas opciones de los modelos de reclasificación presentes en el módulo *Reporting > Reclasificación*: en estos es posible configurar solo el valor ‘Debe' o ‘Haber' o bien el general.
 
-Por ejemplo, registrar en un reclasificado un costo (es decir, el total de los movimientos deudores de la cuenta secundaria X) y sus correcciones (es decir, el total de los movimientos acreedores de la cuenta secundaria X) en dos puntos separados del reclasificado puede proporcionar información adicional más allá del simple saldo algebraico ‘deudor' - 'acreedor' general.
+Por ejemplo, identificar en una reclasificación un coste (es decir, el total de movimientos Debe de la subcuenta<!-- sottoconto --> X) y sus rectificaciones (es decir, el total de movimientos Haber de la subcuenta X) en dos puntos distintos de la reclasificación puede brindar información adicional a la simple diferencia algebraica ‘Debe' - 'Haber' general.

@@ -1,37 +1,38 @@
 ---
-title: valutazioni fornitore
+title: Evaluaciones proveedor
 sidebar_position: 3
+ai_generated: true
 ---
 
-La tabla se encuentra en la ruta **Tablas > Calidad > Calificación de proveedores > valutazioni fornitore (Tabelle > Qualità > Qualificazione fornitore > Valutazioni fornitore)**.
+La tabla se encuentra en la ruta **Tablas > Calidad > Calificación de proveedor<!-- Qualificazione fornitore --> > Evaluaciones proveedor<!-- Valutazioni fornitore -->**.
 
-Los datos presentes en esta tabla se utilizan para atribuir una evaluación a los proveedores.  
-Algunos ejemplos de uso de las *valutazioni fornitore* se encuentran en las gestiones:
-> **valutazioni iniziali e periodiche** - en la lista de *dati di testata*;  
-> **valutazioni periodiche su non conformità** - en la lista de *dati di testata*;  
-> **parametri qualificazione fornitore**;  
-> **anagrafiche contatti** - en la pestaña *Datos contables > Datos de calidad (Dati contabili > Dati qualità)*.  
+Los datos presentes en esta tabla se utilizan para asignar una evaluación a los proveedores<!-- fornitori -->.  
+Algunos ejemplos de uso de las *Evaluaciones proveedor<!-- Valutazioni fornitore -->* se encuentran en las gestiones:
+> **Evaluaciones iniciales y periódicas** - en la lista de *datos de cabecera<!-- dati di testata -->*;  
+> **Evaluaciones periódicas sobre No conformidades** - en la lista de *datos de cabecera<!-- dati di testata -->*;  
+> **Parámetros calificación de proveedor<!-- Parametri qualificazione fornitore -->*;  
+> **Datos de contacto maestro<!-- Anagrafiche contatti -->* - en la pestaña *Datos contables > Datos de calidad<!-- Dati contabili > Dati qualità -->*.  
 
 La tabla permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-**Búsqueda de valutazioni fornitore (Ricerca Valutazioni fornitore)**
+**Búsqueda de Evaluaciones proveedor<!-- Ricerca Valutazioni fornitore -->**
 
-El formulario se compone de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario está compuesto por un área de filtro y una de resultado. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **Buscar<!-- Ricerca -->** para visualizar los resultados en la cuadrícula de resultados.
 
-**Inserción de valutazioni fornitore (Inserimento Valutazioni fornitore)**
+**Inserción de Evaluaciones proveedor<!-- Inserimento Valutazioni fornitore -->**
 
-Para poder insertar nuevas *valutazioni fornitore* es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.  
-Para el nuevo registro se deben ingresar al menos los campos obligatorios requeridos por el programa: el **codice** y la **descrizione**.
+Para poder insertar nuevas *Evaluaciones proveedor<!-- Valutazioni fornitore -->* es necesario hacer clic en la cuadrícula en la primera fila vacía o pulsar el botón **Nuevo<!-- Nuovo -->**.  
+Para el nuevo registro deben ingresarse al menos los campos obligatorios requeridos por el programa: el **Código<!-- Codice -->** y la **Descripción<!-- Descrizione -->**.
 
-*Campos específicos (Campi specifici)*:
+*Campos específicos*: 
 
-> **sequenza**: es la secuencia de visualización en las listas de *valutazioni fornitore*.  
-> **codice**: es el código de la *valutazione fornitore*.  
-> **descrizione**: es la descripción de la *valutazione fornitore*.  
-> **Puntuación de cálculo del índice de calificación de proveedores (Punteggio calcolo indice qualificazione fornitore)**: valor decimal que se utilizará para la evaluación de los proveedores.  
-> **sospensione automatica**: indica si se desea activar la suspensión automática del proveedor, si también está prevista en los *parametri qualificazione fornitore*, al otorgar este tipo de evaluación.  
-> **sfondo**: habilitado si la suspensión es automática, es el color que se aplicará al fondo de la celda si se atribuye este tipo de evaluación para resaltar su valor negativo.  
-> **testo**: habilitado si la suspensión es automática, es el color que se aplicará al texto de la celda si se atribuye este tipo de evaluación para resaltar su valor negativo.  
-> **note**: anotaciones libres.
+> **Secuencia<!-- Sequenza -->**: es el orden de visualización en las listas de *Evaluaciones proveedor<!-- Valutazioni fornitore -->*.
+> **Código<!-- Codice -->**: es el código de la *Evaluación proveedor<!-- Valutazione fornitore -->*.
+> **Descripción<!-- Descrizione -->**: es la descripción de la *Evaluación proveedor<!-- Valutazione fornitore -->*.
+> **Puntaje para cálculo del índice de calificación del proveedor<!-- Punteggio calcolo indice qualificazione fornitore -->**: valor decimal que se usará para la evaluación de los proveedores<!-- fornitori -->.
+> **Suspensión automática<!-- Sospensione automatica -->**: indica si se desea activar la suspensión automática del proveedor<!-- fornitore -->, si también está previsto en los *Parámetros calificación proveedor<!-- Parametri qualificazione fornitore -->*, al asignar este tipo de evaluación.
+> **Fondo<!-- Sfondo -->**: habilitado si la suspensión es automática, es el color que se aplicará al fondo de la celda si se asigna este tipo de evaluación para destacar su valor negativo.
+> **Texto<!-- Testo -->**: habilitado si la suspensión es automática, es el color que se aplicará al texto de la celda si se asigna este tipo de evaluación para destacar su valor negativo.
+> **Notas<!-- Note -->**: anotaciones libres.
 
-Para todo aquello no detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo que no se detalla en este documento sobre el funcionamiento general de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

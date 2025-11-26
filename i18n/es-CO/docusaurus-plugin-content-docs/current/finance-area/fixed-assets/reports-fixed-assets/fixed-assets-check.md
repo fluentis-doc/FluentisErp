@@ -1,18 +1,20 @@
 ---
-title: controllo cespiti
+title: Control de activos fijos
 sidebar_position: 4
+ai_generated: true
 ---
 
-Con este informe es posible realizar una conciliación, cuenta por cuenta, entre los registros contables relacionados con el activo seleccionado y los resultados del libro de activos.
+Con este informe es posible realizar una conciliación, cuenta por cuenta, entre los registros contables relativos al activo fijo seleccionado<!-- cespite selezionato --> y los resultados del libro de activos fijos<!-- libro cespiti -->.
 
-Se comparan los totales presentes en el módulo de activos con los totales presentes en la contabilidad general. El resultado del informe será una lista de cuentas contables (identificadas por las categorías de activos seleccionadas en el formulario y valoradas en el módulo de activos) con los valores totales correspondientes registrados en los dos módulos de Fluentis, con el fin de facilitar la verificación de la conciliación.
+Se comparan los totales presentes en el módulo de activos fijos<!-- modulo cespiti --> respecto a los totales presentes en la contabilidad general. El resultado del informe será una lista de cuentas contables (identificadas por las categorías de activos fijos<!-- categorie cespiti --> seleccionadas en el formulario y valorizadas en el módulo de activos fijos<!-- modulo cespiti -->) con los respectivos valores totales detectados en los dos módulos de Fluentis, con el objetivo de facilitar la verificación de la conciliación.
 
-El formulario de parametrización de la impresión es similar al de otros informes disponibles en el módulo de activos, por lo que destacamos 3 campos en particular:
+El formulario de parametrización de la impresión es similar al de los otros reportes disponibles en el módulo de activos fijos<!-- modulo cespiti -->; por lo tanto, destacamos 3 campos en particular:
 
-**data riferimento**: se establece por defecto con la fecha actual y es la fecha final que Fluentis utilizará para la búsqueda de datos dentro del módulo de activos: en esencia, tomaremos todos los valores patrimoniales que son menores o iguales a esta fecha (por lo tanto, todo el activo y todos los fondos hasta esta fecha), mientras que solo leeremos las amortizaciones del año hasta esta fecha.
+**Fecha de referencia<!-- Data riferimento -->:** se configura por defecto con la fecha actual y es la fecha final que Fluentis utilizará para la búsqueda de los datos dentro del módulo de activos fijos<!-- modulo cespiti -->. En resumen, tomaremos todos los valores patrimoniales que sean menores o iguales a esta fecha (es decir, todo el activo y todos los fondos hasta esta fecha), mientras que sólo se leerán las amortizaciones dentro del año, hasta esta fecha.
 
-**Desde la fecha - Hasta la fecha (Da data - a data)**: obligatorio para poder ejecutar el informe, será el período de búsqueda de datos dentro de la contabilidad general: para cada subcuenta (activo, fondo, amortización) utilizada en los activos de las categorías seleccionadas, se calculará el saldo contable dentro de este rango de fechas. En la perspectiva de control de conciliación de fin de año, por lo tanto, estableceremos la fecha de referencia en 31/12/yyyy y el rango como 01/01/yyyy – 31/12/yyyy.
+**Desde fecha - hasta fecha<!-- Da data - a data -->**: obligatorio para poder ejecutar el informe. Será el período de búsqueda de los datos dentro de la contabilidad general: para cada subcuenta<!-- sottoconto --> (activo, fondo, amortización) utilizada en los activos fijos<!-- cespiti --> de las categorías seleccionadas, se calculará el saldo contable dentro de este rango de fechas.
+Con un enfoque de control de conciliación de fin de año, entonces, configuraremos la fecha de referencia como 31/12/aaaa y el rango como 01/01/aaaa – 31/12/aaaa.
 
-**Flag Detalles de operaciones (Flag Dettagli operazioni)**: activando este indicador, se crea un detalle para cada fecha movida con el fin de entender si para cada fecha de registro existe el movimiento correspondiente en la hoja de activos.
+**Bandera Detalles de operaciones<!-- Flag Dettagli operazioni -->**: activando esta opción se crea un detalle para cada fecha con movimiento, con el fin de verificar si para cada fecha de registro existe el correspondiente movimiento en la ficha del activo fijo<!-- scheda cespite -->.
 
-El informe muestra la lista de cuentas utilizadas en los activos de las categorías seleccionadas, la columna con el valor obtenido del módulo de activos, el de la contabilidad y luego la posible diferencia entre ambos.
+El informe visualiza la lista de las cuentas utilizadas en los activos fijos<!-- cespiti --> de las categorías seleccionadas, la columna con el valor obtenido del módulo de activos fijos<!-- modulo cespiti -->, el de la contabilidad y luego la posible diferencia entre ambos.

@@ -1,31 +1,32 @@
 ---
-title: produzione
+title: Producción
 sidebar_position: 1
+ai_generated: true
 ---
 
 ### MES
 
 <details>
-<summary> Estación de trabajo (Workstation) </summary>
+<summary> Estación de trabajo<!-- Workstation --> </summary>
 
-**workstation** 
+**Estación de trabajo<!-- Workstation -->**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PNwAf7e6C0c" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 </details>
 
 <details>
-<summary> Recursos de producción (Risorse di produzione) </summary>
+<summary> Recursos de producción<!-- Risorse di produzione --> </summary>
 
-**Introducción (Introduzione)** (parte 1/3)
+**Introducción<!-- Introduzione -->** (parte 1/3)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e_InRLJAn2k" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**Pestaña General (Tab Generale)** (parte 2/3)
+**Pestaña General<!-- Tab Generale -->** (parte 2/3)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/04QnqA4qQ3U" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**Pestaña Layout (Tab Layout)** (parte 3/3)
+**Pestaña Layout<!-- Tab Layout -->** (parte 3/3)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/evp7f-bLfaI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
@@ -34,39 +35,39 @@ sidebar_position: 1
 <details>
 <summary> MES </summary>
 
-**Formulario principal (Form principale)**
+**Formulario principal<!-- Form principale -->**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1sumpmQg91k" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**produzione**
+**Producción<!-- Produzione -->**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S9lKjaOTnUg" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**qualità**
+**Calidad<!-- Qualità -->**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wf0TBhuVixo" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**lotti e serial number**
+**Lotes y número de serie<!-- Lotti e Serial Number -->**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/phz4V2OO7HA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**etichette**
+**Etiquetas<!-- Etichette -->**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qQqh-aKFzXE" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**materiali**
+**Materiales<!-- Materiali -->**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jT_F_xxEnJM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**squadra**
+**Equipo de trabajo<!-- Squadra -->**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A6KlexovxNA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**analisi**
+**Análisis<!-- Analisi -->**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZQwcG6PuBm8" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**Documentos e Instrucciones operativas - Notas - Informes anteriores - ExtraData (Documenti ed Istruzioni operative - Note - Segnalazioni precedenti - ExtraData)**
+**Documentos e instrucciones operativas - Notas - Reportes anteriores - ExtraData<!-- Documenti ed Istruzioni operative - Note - Segnalazioni precedenti - ExtraData -->**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V8pqfSrLTFs" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

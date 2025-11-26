@@ -1,60 +1,66 @@
 ---
-title: Registro de nota de entrega de compra en el almacén
+title: Registrazione DDT di acquisto in magazzino
 sidebar_position: 1
 keywords:
-- Nota de entrega 
-- Almacén 
+- DDT
+- Magazzino
 ---
 
-El procedimiento se abre a través del camino **Compras > Nota de entrega de compra > Procedimientos > Registro de Nota de entrega de compra en la bodega** y permite ejecutar/restaurar las operaciones de carga en el almacén de los artículos presentes en la Nota de entrega.
+La procedura si apre tramite il percorso **Acquisti > DDT di acquisto > Procedure > Registrazione DDT di acquisto in magazzino** e permette di eseguire/ripristinare le operazioni di carico in magazzino degli articoli presenti nel DDT.
 
 :::note NOTA
-La nota de Compra también se puede registrar en el almacén mediante el botón de [*Carga automática en el almacén*](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) presente dentro del documento.
+Il DDT di Acquisto può essere registrato a magazzino anche mediante il pulsante di [*Carico automatico nel magazzino*](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) presente all'interno del documento.
+:::
+
+:::tip Ricorda
+Se il documento contiene **articoli fittizi**, la procedura terrà conto della *Tipologia di approvvigionamento* definita nei Parametri MRP dell’articolo:
+- Gli articoli di tipo *Acquisto* non verranno inseriti nella registrazione di magazzino.   
+- Gli articoli di tipo *Produzione* o *Conto Lavoro* verranno registrati in magazzino con il primo livello della distinta base.
 :::
 
 ### Filtro
 
-Ofrece la posibilidad de insertar filtros para buscar las notas de compra, seleccionarlos y luego registrarlos en el almacén.
+Offre la possibilità di inserire i filtri per cercare i DDT di acquisto, per selezionarli e dopo registrarli in magazzino.
 
-- **Fecha de contabilización del almacén**: permite especificar la fecha relacionada con el registro en el almacén.
+- **Data registrazione magazzino**: permette di specificare la data relativa alla registrazione in magazzino.
 
-:::important Recuerda
-Si en los [Parámetros de notas de compra](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > pestaña Carga el indicador **Crear grabación con fecha del documento** está activo, el registro en el almacén se realizará siempre con la fecha del documento, ignorando la *Fecha de registro en almacén* ingresada en este formulario.  
-Si el indicador en los parámetros no está activo, se utilizará la *Fecha de carga* ingresada manualmente en el encabezado de la nota de entrega.  
-Si la *Fecha de carga* no está valorada, el registro en el almacén se creará con la *Fecha de registro en almacén* ingresada en este formulario.
+:::important Ricorda
+Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > tab Carico il flag **Crea registrazione con la data del documento** è attivo, la registrazione di magazzino sarà sempre eseguita con la data del documento, ignorando la *Data registrazione magazzino* inserita in questa form.    
+Se il flag nei parametri non è attivo, sarà utilizzata la *Data carico* inserita manualmente nella testata del DDT.   
+Se la *Data carico* non è valorizzata la registrazione di magazzino sarà creata con la *Data registrazione magazzino* inserita in questa form.
 :::
 
-*Botones específicos*:
+*Pulsanti specifici*:
 
-> **Buscar**: permite buscar las notas de entrega para registrar en el almacén.  
-> **Registro**: permite realizar la carga en el almacén de las notas de entrega seleccionados en la cuadrícula superior.
+> **Ricerca**: permette di cercare i DDT da registrare in magazzino.   
+> **Registrazione**: permette di eseguire il carico a magazzino dei DDT selezionati nella griglia superiore.
 
 
-### Parámetros
+### Parametri
 
-Si algunas líneas del artículo de las notas de entrega no tienen almacén y causa para la carga, a través de esta máscara el usuario tiene la posibilidad de elegir cómo tratar las excepciones.
+Se alcune righe rticolo del DDT non hanno il magazzino e la causale per il carico, attraverso questa maschera l'utente ha la possibilità di scegliere il modo in cui trattare le eccezioni.
 
-Las opciones disponibles son:
+Le opzioni disponibili sono:
 
-- **No realizar el registro de la Nota de entrega completa**: no permite la carga parcial del documento;  
-- **Ignorar artículo sin almacén y plantilla**: permite la carga parcial del documento;  
-- **Aceptar como almacén y causa los siguientes datos**: asegura la carga completa del documento. Para todos los artículos encontrados sin almacén y causa en las notas de entrega seleccionadas, establece los datos ingresados inmediatamente después, en los campos: *almacén* y *causal*.
+- **Non effettuare la registrazione del DDT per intero**: non permette il carico parziale del documento;   
+- **Tralasciare l'articolo senza magazzino e causale**: permette il carico parziale del documento;    
+- **Accettare come magazzino e causale i seguenti dati**: assicura il carico completo del documento. Per tutti gli articoli trovati senza magazzino e causale nei DDT selezionati, imposta i dati inseriti subito dopo, nei campi: *Magazzino* e *Causale*.
 
-:::important Recuerda
-Si en los [Parámetros de Nota de entrega de compra](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > pestaña Carga el indicador **Plantilla de carga y almacén prioritario** está activo, siempre se utilizarán el *Almacén* y la *Causa* ingresados en los parámetros, ignorando los presentes en la nota de entrega para cada línea de artículo.
+:::important Ricorda
+Se nei [Parametri DDT di acquisto](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > tab Carico il flag **Priorità magazzino e causale di carico** è attivo, saranno sempre utilizzati il *Magazzino* e la *Causale* inseriti nei parametri, ignorando quelli presenti nel DDT per ciascuna riga articolo.
 :::
 
-*Botón específico*
+*Pulsante specifico*
 
-> **Guardar Parámetros**: permite guardar los parámetros establecidos para el registro.
+> **Salva parametri**: permette di salvare i parametri impostati per la registrazione.
 
-### Resumen 
+### Riepilogativo
 
-En esta pestaña, el usuario tiene la posibilidad de buscar, visualizar y anular las operaciones de registro realizadas, tanto las efectuadas mediante esta procedimiento, como las realizadas desde el interior del documento mediante el botón de *Carga automática*.
+In questo tab l'utente ha la possibilità di cercare, visualizzare e annullare le operazioni di registrazione eseguite, sia quelle effettuate mediante l'utilizzo di questa procedura, che quelle effettuate dall'interno del documento mediante il pulsante di *Carico automatico*.
 
-Los datos en las cuadrículas inferiores, **Nota de entrega** y **Registro**, corresponden al registro de carga seleccionado en la cuadrícula superior (después de filtrar los datos). En estas dos cuadrículas se tiene la posibilidad de visualizar la nota de entrega y su registro en el almacén mediante un doble clic en la fila.
+I dati nelle griglie inferiori, **DDT** e **Registrazione**, corrispondono alla registrazione di carico selezionata nella griglia superiore (dopo aver filtrato i dati). In queste due griglie c'è la possibilità di visualizzare il DDT e la sua registrazione di magazzino mediante un doppio click sulla riga.
 
-*Botones específicos*:
-> **Buscar**: para buscar las notas de entrega cargadas. El resultado de este procedimiento se visualiza en las cuadrículas de resultados.  
-> **Eliminar registros**: para restaurar todo el registro de carga seleccionado.  
-> **Eliminar Nota de entrega**: para cancelar la carga de un documento seleccionado en el registro de carga. Esta operación también implicará la anulación del registro en el almacén si corresponde a una sola nota de entrega o la actualización de sus datos si corresponde a más notas de entrega.
+*Pulsanti specifici*:
+> **Ricerca**: per cercare i DDT caricati. Il risultato di questa procedura viene visualizzato nelle griglie di risultato.  
+> **Cancella registrazioni**: per effettuare il ripristino dell'intera registrazione di carico selezionata.   
+> **Annulla DDT**: per cancellare il carico di un documento selezionato nella registrazione di carico. Questa operazione comporterà anche l'annullamento della registrazione di magazzino se corrisponde ad un solo DDT oppure l'aggiornamento dei suoi dati se corrisponde a più DDT.  

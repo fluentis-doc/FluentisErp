@@ -1,43 +1,44 @@
 ---
-title: Modificar - Recalcular riesgo cliente (Modifica - Ricalcola rischio cliente)
+title: Modificar - Recalcular riesgo cliente
 sidebar_position: 1
+ai_generated: true
 ---
 
-Las dos pantallas gestionan esencialmente la visualización del estado general del riesgo en relación con un cliente en particular: la ‘Recalcular riesgo cliente (Ricalcola rischio cliente)' es una simple solicitud puntual de la situación actual del cliente, mientras que la pantalla de modificación del procedimiento ‘Uso de créditos (Utilizzo fidi)' permite almacenar cada cálculo realizado y visualizar así una serie histórica.
+Las dos pantallas gestionan fundamentalmente la visualización del estado general del riesgo frente a un cliente<!-- cliente --> determinado: el 'Recalcular riesgo cliente' es una simple consulta puntual de la situación actual del cliente<!-- cliente -->, mientras que la pantalla de modificación del procedimiento 'Uso de líneas de crédito<!-- Utilizzo fidi -->' permite almacenar cada cálculo realizado y visualizar así una serie histórica.
 
-Veamos en detalle la lista de campos visualizada, que es esencialmente la misma que está presente en la pantalla de exposición de clientes.
+Veamos en detalle la lista de los campos visualizados, que es básicamente la misma presente también en la pantalla de exposición de clientes<!-- esposizione clienti -->.
 
-En la cabecera están los parámetros de cálculo: el código del cliente, la fecha de inicio del cálculo (establecida por defecto por los parámetros del módulo de riesgo cliente), la fecha final de referencia (establecida hasta hoy), el número de días de retraso para los efectos SBF y efectos al cobro (establecidos por los parámetros del módulo, a los que se remite), el indicador de consideración de las partidas relacionadas con registros provisionales. Al presionar el botón de cálculo aparecerán los siguientes valores:
+En el encabezado se encuentran los parámetros de cálculo: el código del cliente<!-- cliente -->, la fecha de inicio del cálculo (definida por defecto desde los parámetros del módulo de riesgo cliente<!-- rischio cliente -->), la fecha final de referencia (definida hasta el día de hoy), el número de días de retraso para los efectos sbf y efectos después de cobro (definidos por los parámetros del módulo, que se detallan allí), el flag para considerar partidas<!-- partite --> vinculadas a registros provisionales<!-- registrazioni provvisorie -->. Al pulsar el botón de cálculo aparecerán los siguientes valores:
 
-**Fatt. 12M (Facturación 12 meses)**: es la facturación (del área de ventas, facturas de venta) de los 12 meses anteriores a la fecha de referencia;
+**Fact. 12M**: es la facturación (del área de ventas, facturas de venta) de los 12 meses anteriores a la fecha de referencia;
 
-**Fatturato anno (Facturación del año)**: es la facturación (del área de ventas, facturas de venta) desde el inicio del año;
+**Facturación anual**: es la facturación (del área de ventas, facturas de venta) desde el inicio del año;
 
-En la sección **situazione partite aperte** serán visibles los totales deudores/acreedores y el saldo correspondiente a las partidas abiertas;
+En la sección **Situación de partidas abiertas<!-- Situazione partite aperte -->** serán visibles los totales debe/haber y el saldo relativo a las partidas abiertas<!-- partite aperte -->;
 
-En la sección **Pagos de registros provisionales (Pagam da reg. provv.)** se visualizarán los posibles importes de pago ingresados en registros provisionales;
+En la sección **Pagos desde registros provisionales<!-- Pagam da reg. provv. -->** se visualizarán los eventuales importes de pago ingresados en registros provisionales<!-- registrazioni provvisorie -->;
 
-En la sección **situazione saldo contabile** serán visibles los totales deudores/acreedores y el saldo del libro mayor de contabilidad general;
+En la sección **Situación de saldo contable<!-- Situazione saldo contabile -->** serán visibles los totales debe/haber y el saldo del libro mayor<!-- mastrino --> de contabilidad general;
 
-**saldo partite/contabile**: repite los totales deudores/acreedores calculados a partir de las partidas o del saldo tal como se visualizó en las secciones anteriores;
+**Saldo partidas/contable<!-- Saldo partite/contabile -->**: reproduce los totales debe/haber calculados a partir de las partidas<!-- partite --> o del saldo tal como se muestra en las secciones anteriores;
 
-**Fatture da contabilizzare (Facturas a contabilizar)**: son los importes de las facturas (de los Tipos de factura asociados al crédito) impresas pero no contabilizadas;
+**Facturas por contabilizar<!-- Fatture da contabilizzare -->**: son los importes de las facturas (de los tipos de factura relacionadas con la línea de crédito<!-- fido -->) impresas pero aún no contabilizadas;
 
-**Ddt da fatturare (DDT a facturar)**: son los importes de los DDT (de los Tipos de DDT asociados al crédito) impresos pero no facturados;
+**Remitos por facturar<!-- Ddt da fatturare -->**: son los importes de los remitos<!-- DDT --> (de los tipos de remitos relacionados con la línea de crédito<!-- fido -->) impresos pero aún no facturados;
 
-**Ordini da evadere (Órdenes a cumplir)**: son los importes de los pedidos (de los Tipos de orden asociados al crédito) impresos, confirmados pero no cumplidos;
+**Órdenes por despachar<!-- Ordini da evadere -->**: son los importes de las órdenes<!-- ordini --> (de los tipos de órdenes relacionadas con la línea de crédito<!-- fido -->) impresas, confirmadas pero no despachadas aún;
 
-**Effetti emessi (Efectos emitidos)**: son los importes de los efectos (del módulo de cartera de efectos) emitidos y contabilizados, pero no presentados;
+**Efectos emitidos<!-- Effetti emessi -->**: son los importes de los efectos<!-- effetti --> (del módulo de cartera<!-- portafoglio effetti -->) emitidos y contabilizados, pero aún no presentados;
 
-**Effetti presentati allo sconto-al sbf-all'incasso (Efectos presentados al descuento-al SBF-al cobro)**: son los importes de los efectos presentados pero que tienen una fecha de vencimiento (más los días de los parámetros ingresados en la cabecera del cálculo) superior a la fecha de referencia;
+**Efectos presentados a descuento/a sbf/a cobro<!-- Effetti presentati allo sconto-al sbf-all'incasso -->**: son los importes de los efectos<!-- effetti --> presentados que tienen una fecha de vencimiento (más los días de los parámetros fijados en el encabezado del cálculo) posterior a la fecha de referencia;
 
-Sección **insoluti (incobrables)**: aquí se visualizan los incobrables no contabilizados, o (si el indicador está activado) también aquellos ya contabilizados, tanto como importo como número relativo;
+Sección** impagos<!-- insoluti -->**: aquí se visualizan los impagos<!-- insoluti --> no contabilizados, o (si el flag está activado) también aquellos ya contabilizados, tanto por importe como por número correspondiente;
 
-De la suma de los valores anteriores se calcula el ‘Riesgo cliente (Rischio cliente)', que comparado con el crédito concedido, dará el exceso sobre el crédito.
+De la suma de los valores anteriores se calcula el 'Riesgo cliente<!-- Rischio cliente -->', que comparado con la línea de crédito<!-- fido --> concedida, mostrará el exceso sobre dicha línea.
 
-El campo **Scaduto (Vencido)** muestra el importe de las partidas abiertas pero ya vencidas, como un elemento adicional para analizar la situación del cliente.
+El campo **Vencido<!-- Scaduto -->** visualiza el importe de las partidas<!-- partite --> abiertas pero ya vencidas, como otro elemento de análisis de la situación del cliente<!-- cliente -->.
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Salvar (Salva) | El botón, presente en la modificación de un crédito ya calculado, permite almacenar el resultado obtenido. |
-| Calcular (Calcola) | Llama al procedimiento para calcular la situación general de riesgo para el cliente. |
+| Guardar<!-- Salva --> | El botón, presente al modificar una línea de crédito<!-- fido --> ya calculada, permite almacenar el resultado obtenido. |
+| Calcular<!-- Calcola --> | Llama al procedimiento para calcular la situación completa de riesgo para el cliente<!-- cliente -->. |

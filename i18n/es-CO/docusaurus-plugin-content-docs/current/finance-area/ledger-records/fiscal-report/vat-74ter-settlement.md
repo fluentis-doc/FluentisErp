@@ -1,22 +1,22 @@
 ---
-title: liquidazione iva 74 ter
+title: Liquidación IVA 74 ter
 sidebar_position: 6
+ai_generated: true
 ---
 
-Con este procedimiento de impresión se procede al cálculo del IVA a crédito/débito del período de referencia tanto del régimen ordinario de IVA como del régimen 74 ter.
+Con este procedimiento de impresión se realiza el cálculo del IVA a crédito/débito del periodo de referencia tanto para el régimen ordinario de IVA<!-- regime ordinario IVA --> como para el régimen 74 ter<!-- regime 74 ter -->.
 
-Una vez establecido el período y el año de referencia (donde el período será mensual o trimestral dependiendo de la periodicidad de la liquidación de IVA periódica configurada en los parámetros de contabilidad), será posible definir en qué registro debe imprimirse la liquidación: normalmente, la operación se realiza al final del registro de ventas o en un registro resumen dedicado (opción recomendada).
+Una vez establecido el periodo y el año de referencia (donde el periodo será mensual o trimestral según la periodicidad de la liquidación periódica de IVA<!-- liquidazione IVA periodica --> definida en los parámetros de contabilidad<!-- contabilità -->), será posible definir en qué libro<!-- registro --> se debe imprimir la liquidación: normalmente la operación se realiza al final del libro de ventas<!-- registro vendite --> o en un libro resumen dedicado (opción recomendada).
 
-**stampa definitiva**: modificará el período de referencia para que corresponda al siguiente del último impreso de forma definitiva y también se deshabilitará el número de copias a imprimir;  
+**Impresión definitiva<!-- Stampa definitiva -->**: modificará el periodo de referencia para hacerlo coincidir con el siguiente al último impreso de manera definitiva y, además, se deshabilitará el número de copias a imprimir;<!-- stampa definitiva -->
 
-**Ejecución de la vista previa de impresión (Esecuzione dell'anteprima di stampa)** **en definitivo**: no se bloqueará el período ni se actualizarán los contadores;  
+**Ejecución de la vista previa de impresión<!-- Esecuzione dell'anteprima di stampa -->** **en definitivo**: no se bloqueará el periodo ni se actualizarán los contadores;<!-- esecuzione dell'anteprima di stampa in definitivo -->
 
-**Ejecución del proceso de impresión (Esecuzione del processo di stampa)**: físicamente bloqueará el período en contabilidad y actualizará el contador de páginas de la tabla de Registros de IVA (y no es relevante que el proceso de impresión se complete con éxito o no, podría ser también una impresión en archivo).
+**Ejecución del proceso de impresión<!-- Esecuzione del processo di stampa -->**: la impresión física bloqueará el periodo en contabilidad<!-- contabilità --> y actualizará el contador de páginas de la tabla Libros IVA<!-- Registri IVA --> (y no es relevante si el proceso de impresión se completa correctamente o no, incluso puede ser una impresión en archivo).
 
-RIBBON BAR: representa el menú del formulario en cuestión, es decir, el área en la que se pueden realizar acciones. La lista de funcionalidades posibles, en la pestaña actual, se representa a continuación:
+RIBBON BAR: representa el menú del formulario en cuestión, es decir, el área en la que se pueden realizar acciones. La lista de funcionalidades disponibles, en la pestaña actual, se presenta a continuación:
 
-
-| Función (Funzione) | Significado |
+| Función | Significado |
 | --- | --- |
-| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión de la liquidación IVA 74 ter. |
-| Impresión (Stampa) | Botón para ejecutar la impresión física de la liquidación IVA 74 ter. |
+| Vista previa<!-- Anteprima --> | Botón para ejecutar la vista previa de impresión de la liquidación IVA 74 ter. |
+| Imprimir<!-- Stampa --> | Botón para ejecutar la impresión física de la liquidación IVA 74 ter. |

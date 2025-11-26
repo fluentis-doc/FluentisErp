@@ -1,6 +1,7 @@
 ---
-title: conti non utilizzati in controlling
+title: Cuentas no utilizadas en controlling
 sidebar_position: 1
+ai_generated: true
 ---
 
-La máscara permite visualizar la lista de cuentas no utilizadas para el controlling, así como se almacenan en cada procesamiento de un nuevo *chiusura infrannuale*. Desde esta máscara, en caso de ser necesario, será posible intervenir para alinear en tiempo real los datos de cierres ya realizados, cuando se tome conciencia de la necesidad de modificar las lógicas aplicadas previamente.
+La pantalla permite visualizar la lista de cuentas<!-- conti --> no utilizadas para controlling, según se almacenan en cada procesamiento de un nuevo *Cierre interanual<!-- Chiusura infrannuale -->*. Desde esta pantalla, si es necesario, será posible intervenir para alinear en el momento los datos de cierres ya realizados, cuando se detecte la necesidad de modificar la lógica aplicada previamente.

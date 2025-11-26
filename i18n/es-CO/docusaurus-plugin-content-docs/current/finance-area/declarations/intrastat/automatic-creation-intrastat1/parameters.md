@@ -1,44 +1,43 @@
 ---
-title: parametri
+title: Parámetros
 sidebar_position: 3
+ai_generated: true
 ---
 
-Dentro de la sección **parametri**, el procedimiento muestra todas las filas de detalle de los artículos ingresados en los documentos seleccionados, reportando de cada uno de ellos los datos extraídos del documento. En particular:
+Dentro de la sección **Parámetros<!-- Parametri -->**, el procedimiento muestra todas las filas de detalle de los artículos<!-- articoli --> incluidos en los documentos seleccionados, trayendo de cada uno de ellos los datos extraídos del documento. En particular:
 
 ![](/img/it-it/finance-area/declarations/intrastat/automatic-creation-intrastat1/parameters/image01.png)
 
  
 
-**Estado y código IVA (Stato e codice IVA)**: se obtienen de la ficha del sujeto titular;  
+**Estado y código IVA**: se toman de la ficha del sujeto titular;
 
-**Valor en moneda (Valore in divisa)**: presenta el dato del importe del artículo (precio * cantidad - descuentos) en la moneda de la factura de compra (el campo solo está presente para intracomunitarios);  
+**Valor en moneda**: muestra el importe del artículo (precio*cantidad-descuentos) en la moneda de la factura de compra (el campo solo está presente para intra2);
 
-**ammontare operazioni euro**: toma el importe del artículo al tipo de cambio ingresado en la factura;  
+**Importe de operaciones en euros**: toma el importe del artículo al tipo de cambio ingresado en la factura;
 
-**Naturaleza de la transacción (Natura della transazione)**: se extrae del tipo de documento;  
+**Naturaleza de la transacción**: se toma del tipo de documento;
 
-**nomenclatura combinata**: de la línea del artículo en la factura y, si está vacío, de la ficha de artículos;  
+**Nomenclatura combinada**: de la línea de artículo en la factura y, si está vacío, de la ficha de artículos<!-- anagrafica articoli -->;
 
-**massa netta**: calculada sobre la base del peso establecido en la ficha del artículo;  
+**Masa neta**: calculada en base al peso configurado en la ficha del artículo;
 
-**unità suppl.**: puede ser calculada automáticamente si el código de nomenclatura prevé una segunda unidad de medida, a través de la conversión entre unidad de medida de gestión y esta, de acuerdo con los factores de conversión establecidos en el artículo;  
+**Unidad adicional**: puede calcularse automáticamente si el código de nomenclatura prevé una segunda unidad de medida, mediante la conversión entre la unidad de medida de gestión y ésta, según los factores de conversión configurados en el artículo;
 
-**valore statistico** se calcula de varias maneras según las configuraciones (variación porcentual respecto a la ficha del cliente/proveedor, o incrementada por los gastos insertados de manera específica en el documento);  
+**Valor estadístico** se calcula de diferentes formas según la configuración (variación porcentual respecto a la ficha del cliente/proveedor, o incrementado por los gastos incluidos específicamente en el documento);
 
-**Código de transporte y Modalidad de transporte (Codice trasporto e Modalità trasporto)** se ingresan respecto a los códigos de puerto/envío asignados al documento;  
+**Código de transporte y Modalidad de transporte** se ingresan según los códigos de puerto/envío asignados al documento;
 
-**Datos relativos a las provincias de origen/destino (Dati relativi alle provincie di origine/destinazione)** y al **país de procedencia/destino (paese di provenienza/destinazione)** se leen de la ficha del sujeto titular del documento o de la tabla de la sociedad.
+**Datos relativos a las provincias de origen/destino** y al **país de procedencia/destino** se obtienen de la ficha del sujeto titular del documento o de la tabla de sociedades.
 
 Al final de la cuadrícula se visualizan las referencias al documento de origen de la fila.
 
-Una vez completados los datos necesarios en el modelo (y esto depende del indicador Simplificado incluido en el encabezado de la declaración, pero también del tipo de período del resumen), es posible proceder a la creación del modelo, operación que llevará los detalles a las secciones bis/ter/quater según la naturaleza de la transacción Intrastat (el tipo 2 se reporta en la sección Ter relativo a las correcciones, el tipo “S” en la sección quater). Es posible proceder, incluso antes de este movimiento, a un primer agrupamiento de los importes: esta operación se llevará a cabo documento por documento, causando un primer redondeo de los datos a la unidad.
+Una vez completados los datos necesarios en el modelo (y esto depende de la marca Simplificada en la cabecera de la declaración pero también del tipo de periodo del resumen) es posible proceder a la creación del modelo. Esta operación reportará los detalles en las secciones bis/ter/cuater según la naturaleza de la transacción Intrastat (el tipo 2 se registra en la sección Ter referente a las rectificaciones, el tipo “S” en la sección cuater). Se puede proceder, antes aún de este traslado, a un primer agrupamiento de los importes: sin embargo, esta operación se realiza documento por documento, causando un primer redondeo de los datos a la unidad.
 
-
-
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Eliminar (Cancella) | Botón para eliminar las facturas intracomunitarias seleccionadas. |
-| Creación (Creazione) | Ejecuta la creación del modelo Intrastat reportando los datos presentes en esta pestaña dentro de las secciones del modelo. |
-| Crear (Crear) | Ejecuta la eliminación de todas las filas de la cuadrícula. |
-| Agrupar (Raggruppa) | Ejecuta el agrupamiento de las filas según el sujeto destinatario de las facturas y otros datos homogéneos. |
-| Guardar (Salva) | Permite guardar los datos ingresados para, por ejemplo, continuar en un segundo momento. |
+| Eliminar | Botón para eliminar las facturas de tipo intracomunitario seleccionadas. |
+| Creación | Realiza la creación del modelo intrastat reportando los datos presentes en esta pestaña dentro de las secciones del modelo |
+| Crear | Ejecuta la eliminación de todas las filas de la cuadrícula |
+| Agrupar | Realiza el agrupamiento de las filas en función del destinatario de las facturas y de los demás datos homogéneos |
+| Guardar | Permite guardar los datos ingresados para, por ejemplo, continuar en otro momento |

@@ -1,28 +1,28 @@
 ---
-title: Informes
+title: Stampe
 sidebar_position: 6
 ---
 
-Están disponibles diversas **Informes** estándar. Para visualizar una vista previa de cada impresión, es necesario configurar los filtros deseados y presionar el botón *vista previa* en la barra de herramientas. Esta operación mostrará la impresión en pantalla sin modificar el estado del documento. Si es necesario proceder a la impresión en papel o guardar en archivo, se debe hacer clic en el botón *Informes*.
+Sono disponibili diverse **Stampe** standard. Per visualizzare un'anteprima di ciascuna stampa, serve impostare i filtri desiderati e premere il pulsante *Anteprima* sulla barra degli strumenti. Questa operazione mostrerà la stampa a video senza modificare lo stato del documento. Se necessario procedere con la stampa cartacea o salvarla su file, serve invece cliccare sul pulsante *Stampa*.
 
-### Impresión notas de compra 
+### Stampa DDT di acquisto
 
-Esta impresión sirve para imprimir las notas de compra ya ingresados en el sistema, según los filtros especificados en el formulario inicial.  
-Los primeros filtros que se muestran son los relacionados con la información de encabezado de los documentos, tales como el *tipo de documento*, el *número de documento*, el *proveedor* y el *proyecto*.  
-En el *cuadro de búsqueda avanzada* se pueden marcar los estados de la nota de entrega sobre los que realizar el filtro.  
-En el *cuadro de artículo*, además de filtrar por el código del artículo, también se pueden utilizar otras informaciones relacionadas con las líneas del cuerpo del documento, como el *barcode*, la *descrizione articolo* o si hay un proyecto asociado a la línea del artículo.  
+Questa stampa serve per stampare i DDT di acquisto già inseritI a sistema, secondo i filtri specificati nella form iniziale.   
+I primi filtri che ci vengono mostrati sono quelli relativi alle informazioni di testata dei documenti, quali il *tipo documento*, il *numero documento*, il *fornitore* e il *progeto*.    
+Nella groupbox *Ricerca avanzata* si possono spuntare gli stati del DDT su cui effettuare il filtro.    
+Nella groupbox *Articolo* è invece possibile filtrare, oltre che sul codice dell’articolo, anche su altre informazioni relative alle righe del corpo del documento, quali il *barcode*, la *descrizione articolo* o se sia presente un progetto collegato alla riga articolo.    
 
-Con esta impresión, cada nota de entrega se paginará por separado, cada uno con las siguientes secciones:
-- Encabezado con logo e información de la empresa
-- Información sobre la nota de entrega (tipo, número, fecha, etc.)
-- Información sobre el proveedor (NIT, agente, etc.)
-- Detalles de la nota de entrega (código de artículo, cantidad, precio, etc.)
-- Resumen de la nota de entrega (total mercancía, gastos, total impuesto, etc.)
+Con questa stampa, ogni DDT viene impaginato separatamente, ognuno con le seguenti sezioni:
+- Intestazione con Logo e informazioni aziendali
+- Informazioni sul DDT (tipologia, numero, data, ecc.)
+- Informazioni sul fornitore (partita iva, agente, ecc.)
+- Dettagli del DDT (codice articolo, quantità, prezzo, ecc.)
+- Riepilogo del DDT (totale merce, spese, totale imposta, ecc.)
 
 
-### Lista nota de entrega 
+### Lista DDT
 
-Con este informe es posible imprimir un listado de las notas de entrega ingresadas en el sistema. Los filtros presentados son los mismos que en la impresión anterior, a los que se añade la posibilidad de seleccionar un *ordenamiento* de las facturas mostradas a elegir entre *fornitore*, *número de factura* y *tipo de factura*.  
+Con questo report è possibile stampare un elenco dei DDT inseriti a sistema. I filtri presentati sono i medesimi della stampa precedente, ai quali si aggiunge la possibilità di selezionare un *ordinamento* delle fatture mostrate a scelta tra *fornitore*, *numero fattura* e *tipo fattura*.    
 
-En la impresión, bajo el mismo *proveedor / número / tipo de factura* (según el orden seleccionado), se enumeran las notas de entrega con los siguientes datos: divisa, monto, artículo, cantidad, precio, IVA, etc.  
-Cada línea de la lista corresponde a un artículo de la nota de entrega.
+Nella stampa, sotto lo stesso *fornitore*/*numero*/*tipologia fattura* (in base all'ordinamento scelto) vengono elencati i DDT con i seguenti dati: divisa, importo, articolo, quantità, prezzo, iva, ecc.      
+Ogni riga dell'elenco viene occupata da un articolo del DDT.

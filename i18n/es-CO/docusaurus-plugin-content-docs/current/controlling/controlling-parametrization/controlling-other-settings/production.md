@@ -1,14 +1,15 @@
 ---
-title: Configuraciones de producción (Impostazioni di produzione)
+title: Configuraciones de producción
 sidebar_position: 9
+ai_generated: true
 ---
 
-Los enlaces de los centros empresariales en las configuraciones de producción son fundamentalmente dos:
+Las vinculaciones de los centros empresariales<!-- centri aziendali --> en las configuraciones de producción son básicamente dos
 
-- en la tabla **macchine***, a cada máquina podemos asociar el [**centro di costo***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de referencia.
+- en la tabla ***Máquinas<!-- Macchine -->***, a cada máquina podemos asociar el [***CENTRO DE COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de referencia
 
-- en la tabla de **gruppi manodopera***, a cada grupo podemos asociar el [**centro di costo***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de referencia.
+- en la tabla de ***Grupos de mano de obra<!-- Gruppi manodopera -->***, a cada grupo podemos asociar el [***CENTRO DE COSTO***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de referencia
 
-:::tip Nota
-Recordamos que, para hacer visibles los centros empresariales a nivel de tablas de producción, el centro empresarial debe tener activado el indicador *visibile in produzione*.
+:::tip Nota<!-- Nota -->
+Recordamos que, para que los centros empresariales<!-- centri aziendali --> sean visibles a nivel de tablas de producción, el centro empresarial<!-- centro aziendale --> debe tener marcado el flag *Visible en producción<!-- Visibile in produzione -->*
 :::

@@ -1,85 +1,86 @@
 ---
-title: importa articoli da controllare
+title: Importar artículos a controlar
 sidebar_position: 2
+ai_generated: true
 ---
 
-El procedimiento de importación se encuentra en la ruta **Calidad > Controles de artículo > Controles de artículo > Importar artículos para controlar**.
+El procedimiento de importación se encuentra en la ruta **Calidad > Controles de artículo<!-- Controlli articolo --> > Controles de artículo<!-- Controlli articolo --> > Importar artículos a controlar<!-- Importa articoli da controllare -->**.   
 
-:::important ¿Para qué sirve? (A cosa serve)
-Esta gestión permite crear nuevos *Controles de artículo* importando los *Artículos* a controlar de los *Tipos de documento* previstos:   
-> **ricevimento merci***   
-> **ddt di acquisto***   
-> **fatture di acquisto***   
-> **dichiarazioni di produzione***   
-> ***Fases de la orden de producción (Fasi ordine di produzione)***   
-> ***Devoluciones de trabajo (Rientri di conto lavoro)***   
-> ***Movimientos de carga (Movimentazioni di carico)***   
+:::important ¿Para qué sirve?<!-- A cosa serve -->
+Esta gestión permite crear nuevos *Controles de artículo<!-- Controlli articolo -->* importando los *Artículos* a controlar desde los diferentes *Tipos de documento<!-- Tipi documento -->* previstos:   
+> ***Recepción de mercancías<!-- Ricevimento merci -->***   
+> ***Albaranes de compra<!-- DDT di acquisto -->***   
+> ***Facturas de compra<!-- Fatture di acquisto -->***   
+> ***Declaraciones de producción<!-- Dichiarazioni di produzione -->***   
+> ***Fases de orden de producción<!-- Fasi ordine di produzione -->***   
+> ***Devoluciones de cuenta trabajo<!-- Rientri di conto lavoro -->***   
+> ***Movimientos de carga<!-- Movimentazioni di carico -->***   
 
-asociarlos al *Plan de control* establecido para luego, a través de observaciones visuales o con la ayuda de *Herramientas de medición*, verificar su conformidad.   
+y asociarlos al *Plan de control<!-- Piano di controllo -->* previsto para, luego, mediante inspecciones visuales o utilizando *Instrumentos de medición<!-- Strumenti di misura -->*, verificar su conformidad.   
 :::
 
-El formulario se divide en:
-- un área de filtro, contextual al *Tipo de documento* del cual se desean importar los *Artículos* para controlar;   
-- un área compuesta por diferentes pestañas, una para cada *Tipo de documento*, cada una de las cuales contiene las cuadrículas dedicadas al resultado del filtro.   
+El formulario está dividido en:
+- un área de filtro, contextual al *Tipo de documento<!-- Tipo documento -->* desde el cual se desean importar los *Artículos* a controlar;
+- un área compuesta por varias pestañas, una por *Tipo de documento<!-- Tipo documento -->*, cada una con sus respectivas cuadrículas de resultados.
 
-## Botones específicos (Pulsanti specifici)
+## Botones específicos<!-- Pulsanti specifici -->
 
-### ![](/img/neutral/common/search.png) Buscar líneas de documento a importar (Ricerca righe documento da importare)
+### ![](/img/neutral/common/search.png) Buscar filas de documento para importar<!-- Ricerca righe documento da importare -->
 
-El área de filtro y la pestaña que contiene la cuadrícula de resultados varían una vez que se indica el *Tipo de documento*.   
-Configurados los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.   
-Del *Tipo de documento* seleccionado, solo se mostrarán las líneas del documento de artículos:   
-- codificados para *ricevimento merci*, *ddt di acquisto*, *fatture di acquisto* y *Devoluciones de trabajo (Rientri di conto lavoro)*;   
-- con cantidades producidas y/o descartadas para *dichiarazioni di produzione*;   
+El área de filtro y la pestaña que contiene la cuadrícula de resultados varían una vez que se indica el *Tipo de documento<!-- Tipo documento -->*.   
+Una vez configurados los filtros deseados, basta con hacer clic en el botón **Buscar<!-- Ricerca -->** para visualizar los resultados dentro de la cuadrícula de resultados.  
+Del *Tipo de documento<!-- Tipo documento -->* seleccionado, solo se visualizarán las filas de documento de los artículos:   
+- codificados para *Recepción de mercancías<!-- Ricevimento merci -->*, *Albaranes de compra<!-- DDT di acquisto -->*, *Facturas de compra<!-- Fatture di acquisto -->* y *Devoluciones de cuenta trabajo<!-- Rientri di conto lavoro -->*;   
+- con cantidades producidas y/o rechazadas para *Declaraciones de producción<!-- Dichiarazioni di produzione -->*;   
 
-para los demás *tipos de documento* de *Fases de orden de producción (Fasi ordine di produzione)* y *Movimientos de carga (Movimentazioni di carico)* se visualizarán todas las líneas del documento.   
+para los restantes *tipos de documento<!-- tipi documento -->* de *Fases de orden de producción<!-- Fasi ordine di produzione -->* y *Movimientos de carga<!-- Movimentazioni di carico -->*, se visualizarán todas las filas de documento.   
 
-### Confirmar líneas de documento a importar (Conferma righe documento da importare)
+### Confirmar filas de documento para importar<!-- Conferma righe documento da importare -->
 
-Habilitado si se selecciona al menos una línea de la cuadrícula de resultados y el *Tipo de control* a crear.   
-Una vez seleccionadas las líneas deseadas, es necesario hacer clic en el botón **conferma** para asociar los *Planes de control* y crear los *Controles de artículo*.   
-Al finalizar la operación, se pregunta si se quiere continuar con la actividad de importación o abrir los *Controles de artículo* recién creados.   
+Habilitado si se selecciona al menos una fila de la cuadrícula de resultados y el *Tipo de control<!-- Tipo controllo -->* a crear.   
+Una vez seleccionadas las filas deseadas, es necesario hacer clic en el botón **Confirmar<!-- Conferma -->** para asociar los *Planes de control<!-- Piani di controllo -->* y crear los *Controles de artículo<!-- Controlli articolo -->*.   
+Al finalizar la operación, se solicita si desea continuar con la actividad de importación o abrir los *Controles de artículo<!-- Controlli articolo -->* recién creados.   
 
 import ControlPlanSearchMethod from './../../../import/procedure/control-plan-search-method.md'
 
 <ControlPlanSearchMethod />
 
-## Gestión Importar artículos para controlar (Gestione Importa articoli da controllare)
+## Gestión Importar artículos a controlar<!-- Gestione Importa articoli da controllare -->
 
-### Área de filtro (Area di filtro)
+### Área de filtro<!-- Area di filtro -->
 
-El área se compone de una parte fija donde se presentan los filtros de búsqueda relacionados con la información general y de una parte variable y contextual al *Tipo de documento* seleccionado; la parte variable se visualiza debajo del expandible *articolo*.   
-Los filtros de búsqueda relacionados con la información general son:   
-> **tipo documento**: es el *Tipo de documento* en el que se busca la información.   
-> Al ejecutar la gestión, se proponen el *Tipo de documento* indicado como *default* en la lista *Tipos de documento para la importación (Tipi documento per l'importazione)* presente en la pestaña *controlli articolo* de los *Parámetros de controles de artículo (Parametri controlli articolo)*; si no se indica, se propone *ddt di acquisto*.   
-> La propuesta automática, o la posterior variación por parte del operador, harán variar la parte variable del filtro de datos y la pestaña visualizada.  
+El área está compuesta por una parte fija donde se muestran los filtros de búsqueda relativos a la información general y por una parte variable, contextual al *Tipo de documento<!-- Tipo documento -->* seleccionado; la parte variable se visualiza debajo del expander *Artículo<!-- Articolo -->*.   
+Los filtros de búsqueda relativos a la información general son:   
+> **Tipo de documento<!-- Tipo documento -->**: es el *Tipo de documento<!-- Tipo documento -->* en el cual buscar la información.  
+> Al ejecutarse la gestión, se propone automáticamente el *Tipo de documento<!-- Tipo documento -->* indicado como *Predeterminado<!-- Default -->* en la lista *Tipos de documento para la importación<!-- Tipi documento per l'importazione -->* presente en la pestaña *Controles de artículo<!-- Controlli articolo -->* de los *Parámetros de controles de artículo<!-- Parametri controlli articolo -->*; si no se ha indicado, se propone *Albaranes de compra<!-- DDT di acquisto -->*.   
+> La propuesta automática, o la posterior modificación por parte del usuario, harán variar la parte variable del filtro de datos y la pestaña visualizada.
 >   
-> **dettaglio articolo**: es el tipo de detalle a controlar del *Artículo* para la tipología de documento específica.   
-> Es una lista de valores predeterminados por el sistema:   
-> - *nessuno* - la línea de *Artículo* considerada no tomará ningún dato de detalle;   
-> - *lotto* - la línea de *Artículo* considerada tomará como máximo detalle el *Lote*;   
-> - *s.n.* - la línea de *Artículo* considerada tomará como máximo detalle el *serial number*;   
-> - *udc* - la línea de *Artículo* considerada tomará como máximo detalle la *unità di carico*.   
+> **Detalle de artículo<!-- Dettaglio articolo -->**: es el tipo de detalle a controlar del *Artículo* para la tipología de documento específica.   
+> Es una lista de valores predefinidos por el sistema:   
+> - *Ninguno<!-- Nessuno -->* - la fila de *Artículo<!-- Articolo -->* considerada no tomará ningún dato de detalle;   
+> - *Lote<!-- Lotto -->* - la fila de *Artículo<!-- Articolo -->* considerada tomará como máximo detalle el *Lote<!-- Lotto -->*;   
+> - *N.S.<!-- S.N. -->* - la fila de *Artículo<!-- Articolo -->* considerada tomará como máximo detalle el *Número de serie<!-- Serial Number -->*;   
+> - *UDC* - la fila de *Artículo<!-- Articolo -->* considerada tomará como máximo detalle la *Unidad de carga<!-- Unità di Carico -->*.   
 >   
-> Al ejecutar la gestión, se propone el *Detalle de artículo* indicado en *Detalle de artículo* en la lista *Tipos de documento para la importación (Tipi documento per l'importazione)* presente en la pestaña *controlli articolo* de los *Parámetros de controles de artículo (Parametri controlli articolo)*.   
+> Al ejecutarse la gestión, se propone el *Detalle de artículo<!-- Dettaglio articolo -->* indicado en *Detalle de artículo<!-- Dettaglio articolo -->* en la lista *Tipos de documento para la importación<!-- Tipi documento per l'importazione -->* presente en la pestaña *Controles de artículo<!-- Controlli articolo -->* de los *Parámetros de controles de artículo<!-- Parametri controlli articolo -->*.
 >
-> **tipo controllo**: el código del *Tipo de control* que se asociará al *Control de artículos* a crear.   
-> Al ejecutar la gestión, se propone el *Tipo de control* indicado en *Tipo de control* en la lista *Tipos de documento para la importación (Tipi documento per l'importazione)* presente en la pestaña *controlli articolo* de los *Parámetros de controles de artículo (Parametri controlli articolo)*.   
+> **Tipo de control<!-- Tipo controllo -->**: el código del *Tipo de control<!-- Tipo controllo -->* a asociar al *Control de artículos<!-- Controllo articoli -->* a crear.  
+> Al ejecutarse la gestión, se propone el *Tipo de control<!-- Tipo controllo -->* indicado en *Tipo de control<!-- Tipo controllo -->* en la lista *Tipos de documento para la importación<!-- Tipi documento per l'importazione -->* presente en la pestaña *Controles de artículo<!-- Controlli articolo -->* de los *Parámetros de controles de artículo<!-- Parametri controlli articolo -->*.
 >   
-> expandible **dettaglio**   
->> **non ancora considerate**: indica si buscar solo las líneas del documento que no se han considerado en importaciones anteriores.   
->> **già considerate**: indica si buscar, además de las no consideradas, también las líneas ya consideradas en importaciones anteriores (generalmente utilizada en caso de deseo de realizar más controles).   
+> expander **Detalle<!-- Dettaglio -->**   
+>> **No consideradas aún<!-- Non ancora considerate -->**: indica si buscar únicamente las filas del documento no consideradas en importaciones anteriores.   
+>> **Ya consideradas<!-- Già considerate -->**: indica si buscar, además de las no consideradas aún, también las filas ya consideradas en importaciones anteriores (usualmente empleada si se quieren efectuar controles adicionales).   
 >   
-> **bar code**: es el código habilitado para el reconocimiento de: *articolo*, *unità di carico*, *lotto* y *serial number*.   
+> **Código de barras<!-- Bar Code -->**: es el código habilitado para el reconocimiento de: *Artículo*, *Unidad de carga<!-- Unità di carico -->*, *Lote<!-- Lotto -->* y *Número de serie<!-- Serial number -->*.   
 >   
-> expandible **articolo**  
->> **unità di carico**: es el código formateado de la *unità di carico*.   
->> **lotto**: es el código del *lotto*.   
->> **serial number**: es el código del *serial number*.   
+> expander **Artículo<!-- Articolo -->**
+>> **Unidad de carga<!-- Unità di carico -->**: es el código formateado de la *Unidad de carga<!-- Unità di carico -->*.   
+>> **Lote<!-- Lotto -->**: es el código del *Lote<!-- Lotto -->*.   
+>> **Número de serie<!-- Serial number -->**: es el código del *Número de serie<!-- Serial number -->*.   
 
-### Área de resultados (Area di risultato)  
+### Área de resultado<!-- Area di risultato -->   
 
-Contenida en cada pestaña, es la "cuadrícula" que contiene el resultado de la *ricerca* aplicada al área de filtro.   
-La información contenida en la lista es contextual al *Tipo de documento* seleccionado.   
+Incluida en cada pestaña, es la "cuadrícula" que muestra el resultado de la *Búsqueda<!-- Ricerca -->* aplicada al área de filtro.   
+La información contenida en el listado es contextual al *Tipo de documento<!-- Tipo documento -->* seleccionado.   
 
-Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios, consultar el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento general de los formularios, consulte el siguiente enlace [Funcionalidad, botones y campos comunes](/docs/guide/common).

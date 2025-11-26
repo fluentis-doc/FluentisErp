@@ -1,55 +1,60 @@
 ---
-title: Otras configuraciones específicas de facturación electrónica (Altre configurazioni specifiche fatt. elett.)
+title: Otras configuraciones específicas de factura electrónica
 sidebar_position: 4
+ai_generated: true
 ---
-### Gestión de la nota de crédito (Gestione della nota di accredito)
 
-A partir de la versión 606, las notas de crédito deben ser ingresadas en Fluentis siempre con el signo negativo, en particular se ingresará un valor negativo a partir del campo Cantidad (Quantità).  
-En el documento se devuelve un mensaje de aviso en caso de que el total no sea negativo con propuesta de inversión de signos.  
+### Gestión de la nota de crédito<!-- Gestione della nota di accredito -->
 
-Con respecto a la facturación electrónica, se requiere para los controles realizados por el SDI que el signo del documento sea positivo; por lo tanto, el parser de generación del archivo XML realizará la nueva inversión del signo (cuando el tipo de documento es TD04).
+A partir de la versión 606, las notas de crédito<!-- note di accredito --> deben ser ingresadas en Fluentis siempre con el signo negativo, en particular se deberá ingresar un valor negativo a partir del campo Cantidad<!-- Quantità -->.  
+En el documento se muestra un mensaje de advertencia en caso de que el total no sea negativo, proponiendo la inversión de los signos.
+
+En lo que respecta a la facturación electrónica<!-- fatturazione elettronica -->, se requiere, para los controles realizados por el SDI, que el signo del documento sea positivo, por lo que el parser de generación del archivo xml realizará una nueva inversión del signo (cuando el tipo de documento sea TD04).
 
 :::note Nota
-A efectos de la contabilización, en caso de que dentro de la nota de crédito haya signos mixtos (líneas positivas y líneas negativas), es necesario habilitar la posibilidad de gestionar su contabilización variando un parámetro interno en la base de datos (cambiar de 0 a 1, en el pasado se configuraba -1 antes del cambio mencionado). Hacer referencia a la documentación técnica y, eventualmente, al servicio de soporte.
+A efectos de la contabilización, en caso de que dentro de la nota de crédito<!-- nota di credito --> existan signos mixtos (líneas positivas y negativas), es necesario habilitar la posibilidad de gestionarla variando un parámetro interno en la base de datos (cambiar de 0 a 1, anteriormente se configuraba en -1 antes del cambio mencionado anteriormente). Consultar la documentación técnica y, si es necesario, el servicio de soporte.
 :::
 
-### Codificación de artículo para cliente (Tag 2.2.1.3 CodiceArticolo)
+### Codificación de artículo por cliente (Tag 2.2.1.3 CodiceArticolo)<!-- Codifica articolo per cliente  (Tag 2.2.1.3 CodiceArticolo) -->
 
-El tag código de artículo puede repetirse varias veces, generando una doble codificación, cambiando el código en el tag 2.2.1.3.1 
+El tag código de artículo<!-- codice articolo --> puede repetirse varias veces, generando una doble codificación, cambiando el código en el tag 2.2.1.3.1
 
 ```xml
     <CodiceTipo> . 
 ```
-El código Tipo que se propone por defecto (en las facturas de venta) es el que se refiere al código de artículo presente en Fluentis (de los registros de artículos de la empresa en uso) que puede ser reportado con dos diferentes 
+El código Tipo que se propone por defecto (en las facturas de venta) es el relacionado al código de artículo<!-- codice articolo --> presente en Fluentis (de los datos maestros de artículos de la empresa en uso) que puede reportarse de dos formas diferentes
 
 ```xml
     <CodiceTipo> 
 ```
-**Por defecto, la codificación se realiza según este esquema**
-    
+*Por defecto la codificación se realiza siguiendo este esquema*<!-- Di default la codifica avviene secondo questo schema -->
+
 ```xml
     <CodiceArticolo> 
-    <CodiceTipo>Código Art. proveedor (Codice Art. fornitore)</CodiceTipo>    
+    <CodiceTipo>Código Art. proveedor</CodiceTipo>    
     <CodiceValore>1504X0</CodiceValore>
     </CodiceArticolo> 
-```         
+```
+<!--
+**Di default la codifica avviene secondo questo schema**
+-->
 
-O el *CódigoTipo* puede ser personalizado valorando el campo **[Código de artículo de proveedor](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)** presente en anagrafica cliente en la pestaña *información fiscal*.
+O el *CodiceTipo* puede ser personalizado indicando el campo **[Código de artículo del proveedor<!-- Codice articolo fornitore -->](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information)** presente en los datos del cliente en la pestaña *información fiscal<!-- informazioni fiscali -->*.
 
 :::note Nota
-Prestar atención, se trata de un par de campos adyacentes relativos, respectivamente, a la codificación de nuestra empresa (proveedor) para la personalización con respecto al valor por defecto, y al cliente para una doble codificación que se debe insertar en el trazado de la factura.
+Prestar atención, se trata de un par de campos adyacentes relativos, respectivamente, a la codificación de nuestra sociedad (proveedor) para la personalización respecto al valor por defecto, y al cliente para una doble codificación a insertar en el registro de la factura.
 :::
 
 Ejemplo:
 
 ```xml
     <CodiceArticolo>
-    <CodiceTipo>MIODCODICE</CodiceTipo>
+    <CodiceTipo>MIOCODICE</CodiceTipo>
     <CodiceValore>104X0</CodiceValore>
     </CodiceArticolo>
 ```
 
-Son posibles otras tipologías de codificación específicas, como por ejemplo la codificación EAN o la específica para el sector de dispositivos médicos.
+Son posibles otros tipos de codificación específicas, como por ejemplo la codificación EAN o la específica para el sector de dispositivos médicos<!-- dispositivi medici -->.
 
 Ejemplo:
 
@@ -60,17 +65,17 @@ Ejemplo:
     </CodiceArticolo>
 ```
 
-Es posible agregar la codificación a la tabla **[Tipos de Código de Barras](/docs/configurations/tables/general-settings/barcode-types)**.
+Es posible apoyar la codificación en la tabla **[Tipos de código de barras<!-- Tipi Barcode -->](/docs/configurations/tables/general-settings/barcode-types)**
 
-Ejemplo práctico de uso para los ‘Dispositivos médicos’: se codifican 3 tipos de código de barras (activando también el indicador **Exportar a la Administración Pública** para la gestión del código de barras en el trazado XML de la factura electrónica): 
+Ejemplo práctico de uso para 'Dispositivos médicos<!-- Dispositivi medici -->': se codifican 3 tipos de código de barras (activando también el flag **Exportar Administración Pública<!-- Export Pubblica amministrazione -->** para la gestión del código de barras en el registro xml de la factura electrónica<!-- fattura elettronica -->):
 
 ![](/img/it-it/finance-area/e-invoice/configuration/tipibarcode.png)
 
-Luego, **[en el registro del artículo](/docs/erp-home/registers/items/create-new-item)** se indica el valor para cada tipo de código: 
+luego, **[en la ficha de artículo<!-- nell'anagrafica articolo -->](/docs/erp-home/registers/items/create-new-item)** se indica el valor para cada tipo de código:
 
 ![](/img/it-it/finance-area/e-invoice/configuration/tipibarcode2.png)
 
-El resultado será 
+el resultado será
 
 ```xml
      <CodiceArticolo> 
@@ -79,25 +84,26 @@ El resultado será
      </CodiceArticolo> 
 ```
 
-Como se requiere por la normativa del ministerio de salud.  
+como lo exige la normativa del ministerio de salud.
 
-Con respecto a la posibilidad de una doble codificación en la factura, añadiendo la del lado del cliente que recibe el documento, el código de artículo del cliente, si se inserta en la pestaña Clientes del registro del artículo, referida al cliente de la factura, puede expresarse de 2 formas diferentes: 
+Respecto a la posibilidad de una doble codificación en factura, agregando la lado cliente titular del documento, el código de artículo cliente, si está insertado en la pestaña Clientes de la ficha de artículo, asociado al cliente de la factura, puede  
+expresarse de 2 formas diferentes:
 
-- con el tag CódigoTipo que tenga la mención “Código Art. cliente” (Codice Art. cliente)
+- con el tag CodiceTipo con la mención "Código Art. cliente"
 
-Ejemplo:
+ejemplo:
 
 ```xml
     <CodiceArticolo> 
-    <CodiceTipo>Código Art. cliente (Codice Art. cliente)</CodiceTipo>    
+    <CodiceTipo>Código Art. cliente</CodiceTipo>    
     <CodiceValore>XX4</CodiceValore>
     </CodiceArticolo> 
 ```
 
-- con el tag CódigoTipo igual al código de artículo cliente (de la pareja de campos *tipo código artículo proveedor/cliente*) presente en el registro del cliente en la pestaña 
-información fiscal.
+- con el tag CodiceTipo igual al código de artículo cliente (del par de campos *tipo código de artículo proveedor/cliente*) presente en los datos del cliente en la pestaña 
+información fiscal
 
-Ejemplo:
+ejemplo:
 
 ```xml
     <CodiceArticolo>
@@ -106,141 +112,147 @@ Ejemplo:
     </CodiceArticolo>
 ```
 
-Donde CODCLI es el valor insertado en el campo *tipo código artículo cliente* en el registro del cliente.  
+donde CODCLI es el valor introducido en el campo *tipo código de artículo cliente* en los datos del cliente.
 
-:::tip Acerca del tema
-Si se desea visualizar el código de artículo de Fluentis de forma diferente a la estándar, se debe personalizar en Arm la transformación de FSItem que se llama FullTextDescriptionXMLFE.  
-Si no se quiere insertar nada en el tag CódigoArticolo para el CódigoTipo “código art. proveedor (codice art. fornitore)”, en la transformación, en la cuadrícula, en correspondencia de la cadena “Engine Parameters”, no debe insertarse nada.  
-Para excluir el código de clase en las líneas del documento, es necesario personalizar en Arm la transformación FullTextDesctiption del objeto FSItem, modificando el texto contenido en la sección EngineParameters de la línea “Default” de “ItemClassCode +"-“+ Code” a “Code”. 
+:::tip Ampliación<!-- Approfondimento -->
+Si se desea visualizar el código de artículo de Fluentis de modo diferente al estándar, se debe personalizar en arm la 
+transformación de FSItem que se llama FullTextDescriptionXMLFE. 
+Si no se quiere incluir nada en el tag CodiceArticolo para el CodiceTipo "código art. proveedor", en la transformación, 
+en la cuadrícula, en la cadena "Engine Parameters" no debe incluirse nada. 
+Para excluir el código de clase en cada línea del documento, es necesario personalizar en Arm la transformación 
+FullTextDesctiption del objeto FSItem, modificando el texto contenido en la sección EngineParameters de la línea 
+"Default" de "ItemClassCode +"-"+ Code" a "Code"
 :::
 
-### Declaración de intención (tag 2.2.1.16 AltriDatiGestionali)
+### Declaración de intención (tag 2.2.1.16 AltriDatiGestionali)<!-- Dichiarazione di intento ( tag 2.2.1.16 AltriDatiGestionali) -->
 
-Los datos de la declaración de intención se insertan automáticamente como “otros datos de gestión”:  
+Los datos de la declaración de intención<!-- dichiarazione intento --> se insertan automáticamente como “otros datos de gestión”:
 
-2.2.1.16.1 TipoDato INTENTO  
+2.2.1.16.1 TipoDato INTENTO
 
-2.2.1.16.2 ReferenciaTexto (RiferimentoTesto) se reporta la referencia identificativa y progresiva leyéndola del **[registro de declaraciones de intención](/docs/finance-area/declarations/declarations/intent-declaration)**.  
+2.2.1.16.2 RiferimentoTesto se inserta la referencia identificativa y progresiva tomada del **[registro de las declaraciones de intención<!-- registro delle dichiarazioni di intento -->](/docs/finance-area/declarations/declarations/intent-declaration)**
 
-2.2.1.16.4 ReferenciaFecha (RiferimentoData) se reporta la fecha de protocolo leyéndola del registro de declaraciones de intención.
+2.2.1.16.4 RiferimentoData se inserta la fecha de protocolo tomada del registro de las declaraciones de intención<!-- registro delle dichiarazioni di intento -->
 
+### Anotaciones fijas en factura (tag 2.1.1.11 Causale)<!-- Annotazioni fisse in fattura ( tag 2.1.1.11 Causale) -->
 
-### Anotaciones fijas en factura (tag 2.1.1.11 Causale)
+Para gestionar las anotaciones que en las impresiones de las antiguas facturas se insertaban fijas en el informe (por ejemplo, “Contributo Conai assolto ove dovuto”), deben insertarse nuevas notas en la tabla Notas codificadas (Utilidades->Gestión de notas codificadas). Este tipo de anotaciones se reportan en el tag Causale del archivo XML.  
+Las condiciones a respetar para que se complete el tag Causale son:  
+- el tipo de nota codificada debe tener código        
 
-Para gestionar las anotaciones que en las impresiones de las antiguas facturas se insertaban fijas en el informe (ejemplo “Contribución Conai satisfecha donde debía”), deben insertarse nuevas notas en la tabla Notas codificadas (Utilidad->Gestión notas codificadas). Este tipo de anotaciones se reportan en el tag Causale del archivo XML.  
-Las condiciones a cumplir para haber completado el tag Causale son: 
-- el tipo de nota codificada debe tener el código         
-    
 ```
    FATTURAZIONEELETTRONICA_CAUSALE
 ```
-   
-- la nota debe estar ligada a la empresa en particular. 
-- Se reporta lo que está escrito en el campo Descripción, si este está vacío, se toma lo que hay en el campo ‘Título’.
 
+- la nota debe estar asociada a la sociedad adecuada 
+- se reporta lo que está escrito en el campo Descripción, si este está vacío, lo que está en el campo ‘Título’
 
-### Anotaciones fijas por cliente (tag 2.1.1.11 Causale)
+### Anotaciones fijas por cliente (tag 2.1.1.11 Causale)<!-- Annotazione fisse per cliente ( tag 2.1.1.11 Causale) -->
 
-Para gestionar anotaciones que se deben reportar basadas en el cliente, deben gestionarse las notas codificadas en la tabla correspondiente (Utilidad->Gestión notas codificadas). Este tipo de anotaciones se reportan en el tag Causale del archivo XML que puede ser replicado varias veces en el archivo. 
+Para gestionar anotaciones por cliente<!-- cliente -->, deben gestionarse notas codificadas en la tabla correspondiente 
+(Utilidades->Gestión de notas codificadas). Este tipo de anotaciones se reportan en el tag Causale del archivo XML, que puede  
+repetirse varias veces.
 
-Las condiciones que se deben cumplir para haber completado el tag Causale son: 
-- el tipo de nota codificada debe tener el código
+Las condiciones a respetar para que se complete el tag Causale son:  
+- el tipo de nota codificada debe tener código
 ```
    FATTURAZIONEELETTRONICA_CAUSALE
 ```
-- las notas deben ser insertadas en la ficha ‘Varios’ del registro del cliente, dedicada a la gestión de notas específicas a incluir en la impresión de documentos. 
-- la nota debe tener el indicador ‘Imprimir en Facturas de Venta’ o, si este está vacío, se reporta lo que está escrito en el campo ‘Notas’ de la línea.
+- las notas deben insertarse en la ficha 'Varios' de los datos del cliente, dedicada a la gestión de notas  
+específicas para mostrar en la impresión de los documentos.
+- la nota debe tener activo el flag 'Imprimir en Facturas de Venta' o, si esto está vacío, se reporta lo escrito en el campo ‘Notas’ de la línea
 
+### Gestión de datos adicionales libres (tag 2.2.1.16 AltriDatiGestionali)<!-- Gestione dati aggiuntivi liberi (tag 2.2.1.16 AltriDatiGestionali) -->
 
-### Gestión de datos adicionales libres (tag 2.2.1.16 AltriDatiGestionali)
-
-Para gestionar datos adicionales ‘libres’ de línea, en Fluentis es necesario insertar ExtraData con un código que empieza con 
+Para gestionar datos adicionales/*libres*/ por línea, en Fluentis es necesario insertar unos ExtraData con código que comience con
 
 ```
   AltriDGes_
 ```
-(p.ej. AltriDGes_AltriDati3). 
+(ej. AltriDGes_AltriDati3).
 
-Estos Extradata, de tipo simple, deben conectarse al objeto padre  
+Estos ExtraData, de tipo simple, deben asociarse al objeto padre
 
 ```
    FSSalesInvoiceItem
 ```
-en la propiedad, precisamente, ExtraData (se prevén 3 tipos: cadena, numérico, fecha). 
+en la propiedad ExtraData (hay previstos 3 tipos: cadena, numérico, fecha).
 
-En cada línea de artículo, entonces, el usuario puede agregar libremente (manualmente) estos datos adicionales; como resultado, la línea de artículo tendrá, (por ejemplo, si el extra data es de tipo cadena), esta sección adicional: 
+En cada línea de artículo, el usuario puede agregar libremente (manualmente) estos datos adicionales; como resultado la línea de artículo tendrá, (por ejemplo, si el extra data es de tipo cadena), esta sección adicional:
 
 ```xml
     <AltriDatiGestionali> 
     <TipoDato>AltriDati3</TipoDato> 
-    <RiferimentoTesto>Texto ejemplo</RiferimentoTesto> 
+    <RiferimentoTesto>Texto de ejemplo</RiferimentoTesto> 
     </AltriDatiGestionali> 
 ```
 
-Donde: 
-- el ‘TipoDato’ se toma del texto que sigue al código 
+donde:  
+- el 'TipoDato' se toma del texto que sigue al código
 ```
    AltriDGes_ 
 ```
 del extra data, 
-- cuando el tipo del extra data es numérico, lo que hay en el campo ‘Valor’ del extra data se ingresa en el tag ‘RiferimentoNumero’ y lo que hay en el campo ‘Descripción’ (si no está vacío) del mismo extra data se ingresará en ‘RiferimentoTesto’. 
+- cuando el tipo de extra data es numérico, lo que hay en el campo ‘Valor’ del extra data termina en el tag ‘RiferimentoNumero’ y lo que hay en el campo ‘Descripción’ (si no está vacío) del propio extra data terminará en ‘RiferimentoTesto’.
 
 Ejemplo
 
 ```xml
     <AltriDatiGestionali>
-    <TipoDato>Grosor</TipoDato>
+    <TipoDato>Espesor</TipoDato>
     <RiferimentoNumero>500</RiferimentoNumero>
     </AltriDatiGestionali>
 ```
 
-### Gestión del “referencia a la administración” en el encabezado del documento (tag 1.2.6 RiferimentoAmministrazione)
+### Gestión del “referente de administración” en la cabecera del documento (tag 1.2.6 RiferimentoAmministrazione)<!-- Gestione del “riferimento amministrazione” in testata documento (tag 1.2.6 RiferimentoAmministrazione) -->
 
-La “Referencia a la administración” en el encabezado de la factura se gestiona tomando del registro del cliente la ‘Persona de referencia’ insertada con la nota 
+El “RiferimentoAmministrazione” en la cabecera de la factura se gestiona recuperando de los datos del cliente la ‘Persona de  
+referencia’ ingresada con nota
 
 ```
    XMLPA
 ```
 
-En la factura se reportan los campos “Nombre” + “ “ + “Apellido” de la persona así inserta.
+En la factura se incluyen los campos “Nombre” + “ ” + “Apellido” de la persona  
+así ingresada.
 
-### Gestión del “referencia a la administración” para detalle de líneas (tag 2.2.1.15 RiferimentoAmministrazione)
+### Gestión del “referente de administración” por línea (tag 2.2.1.15 RiferimentoAmministrazione)<!-- Gestione del “riferimento amministrazione” per dettaglio linee (tag 2.2.1.15 RiferimentoAmministrazione) -->
 
-Algunos entes públicos requieren un ‘Referencia a la administración’ para cada línea de artículo (y no en el encabezado). 
+Algunas entidades públicas requieren un 'Riferimento amministrazione' para cada línea de artículo (y no solo en la cabecera).
 
-En Fluentis es posible insertar ‘ExtraData’ con el código 
+En Fluentis es posible ingresar ‘ExtraData’ con código
 
 ```
    RiferimentoAmminis
 ```
 
-Este extra data, de tipo simple, debe estar vinculado al objeto padre 
+Este extra data, de tipo simple, debe asociarse al objeto padre
 
 ```
    FSSalesInvoiceItem
 ```
 
-con propiedad ExtraData (previsto como cadena). 
+con propiedad ExtraData (previsto como cadena de texto).
 
-En cada línea de artículo, por lo tanto, el usuario puede agregar libremente (manualmente) estos datos adicionales y el resultado será que esa línea de artículo tendrá esta sección adicional: 
+En cada línea de artículo, por tanto, el usuario puede agregar libremente (manualmente) estos datos adicionales y el resultado será que esa línea de artículo tendrá esta sección adicional:
 
 ```xml
     <RiferimentoAmministrazione>RifAmm</RiferimentoAmministrazione> 
 ```
 
-Donde el valor ‘RifAmm’ se toma de la “Descripción” del extra data insertado en la línea de artículo.  
+Donde el valor ‘RifAmm’ se toma de la "Descripción" del extra data insertado en la línea de artículo.
 
-### Unidad de medida alternativa (tag 2.2.1.16 AltriDatiGestionali)
+### Unidad de medida alternativa (tag 2.2.1.16 AltriDatiGestionali)<!-- Unità di misura alternativa (tag 2.2.1.16 AltriDatiGestionali) -->
  
-La cantidad utilizada para el cálculo del precio de línea (independientemente de si es la primera o la segunda, depende del indicador UMPrecio de la línea misma) se reporta en el tag 2.2.1.5 Cantidad. 
+La cantidad utilizada para el cálculo del precio por línea (ya sea la primera o la segunda, depende de la marca UMPrecio de la propia línea) se reporta en el tag 2.2.1.5 Cantidad.
 
-La unidad de medida no referida al precio se reporta como ‘Otros datos de gestión’, 
+La unidad de medida no correspondiente al precio se reporta como ‘Otros datos de gestión’,
 
-con TipoDato = 
+con TipoDato =
 ```
    QTALTERNA
 ```
-y cantidad reportada en el tag ‘RiferimentoNumero’. 
+y la cantidad reportada en el tag ‘RiferimentoNumero’.
 
 Ejemplo
 
@@ -251,52 +263,52 @@ Ejemplo
     </AltriDatiGestionali>
 ```
 
-### Datos de Orden de Compra (tag 2.1.2 DatiOrdineAcquisto)
+### Datos Orden de Compra (tag 2.1.2 DatiOrdineAcquisto)<!-- Dati Ordine Acquisto (tag 2.1.2 DatiOrdineAcquisto) -->
 
-En el tag 
+En el tag
 
-2.1.2 Datos de Orden de Compra (DatiOrdineAcquisto) 
+2.1.2 DatiOrdineAcquisto
 
-2.1.2.1 ReferenciaNumeroLínea (RiferimentoNumeroLinea) 
+2.1.2.1 RiferimentoNumeroLinea
 
-2.1.2.2 IdDocumento 
+2.1.2.2 IdDocumento
 
-Se reporta la referencia al pedido del cliente. 
+Se indica la referencia al pedido del cliente.
 
-En el tag **IdDocumento** se reporta el texto presente en el campo **vostro riferimento** del **encabezado del pedido del cliente** vinculado a la línea de la factura y **en caso de falta de ese valor**, se reporta el *vostro riferimento* del **encabezado de la factura**.  
+En el tag **IdDocumento** se reporta el texto presente en el campo **Vuestra Referencia** de la **cabecera de pedido de cliente** vinculada a la línea de artículo de la factura y **en ausencia de ese valor** se reporta el *Vuestra referencia* de la **cabecera de la factura**.
 
-Este tag se inserta solo para las líneas de facturas que están vinculadas a líneas de pedidos de clientes.  
+Este tag se inserta solo para las líneas de factura vinculadas a líneas de pedido de cliente.
 
-En caso de que la factura no haya sido creada a partir de pedidos de clientes de Fluentis, se debe insertar un código en el campo **Ref. pedido (Rif.ordine)** presente, para cada línea de la factura, en la pestaña de detalle de línea **dati articolo**.  
+En caso de que la factura no haya sido creada a partir de pedidos de clientes de Fluentis, para tener la referencia a la orden de compra, se debe introducir un código en el campo **Ref. pedido** presente, para cada línea de la factura, en la pestaña de detalle por línea **Datos de artículo<!-- Dati articolo -->**.
 
 ![](/img/it-it/finance-area/e-invoice/configuration/datiarticolo.png)
 
-### Datos DDT (tag 2.1.8 DatiDDT)
+### Datos DDT (tag 2.1.8 DatiDDT)<!-- Dati DDT (tag 2.1.8 DatiDDT) -->
+ 
+En el tag
 
-En el tag 
+2.1.8 Dati DDT
 
-2.1.8 Datos DDT 
+2.1.8.1 NumeroDDT
 
-2.1.8.1 NúmeroDDT (NumeroDDT) 
+2.1.8.2 DataDDT
 
-2.1.8.2 FechaDDT (DataDDT) 
+2.1.8.3 RiferimentoNumeroLinea
 
-2.1.8.3 ReferenciaNumeroLínea (RiferimentoNumeroLinea) 
+Se incluye la referencia al DDT del cual fue creada la factura.  
+En “RiferimentoNumeroLinea” se reportan solo los números de línea de factura vinculados a una línea DDT.
 
-Se reporta la referencia al DDT del cual se creó la factura. 
-En “ReferenciaNumeroLínea” se reportan solo los números de línea de la factura vinculados a una línea de DDT. 
+### Gastos de timbre fiscal (Tag 2.1.1.6 DatiBollo)<!-- Spese di Bollo (Tag 2.1.1.6 DatiBollo) -->
 
-### Gastos de Timbrado (Tag 2.1.1.6 DatiBollo)
+Para la gestión de los gastos de timbre fiscal deben seguirse las siguientes reglas:
 
-Para la gestión de los gastos de timbrado se deben seguir las siguientes reglas:
-
-- En la tabla **[Tipos de gastos](/docs/configurations/tables/general-settings/expenses-types)** debe insertarse el gasto de tipo “timbrado” con el indicador en el campo *bollo* y con el *valore bollo* de 2 euros.  
-- En el registro del cliente se debe agregar un gasto de tipo “timbrado” en la sección **[Gastos descuentos](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/charges-discounts)** seleccionando el código previamente creado en la tabla *Tipos de gasto*.  
-- Para no cargarlo al cliente: en el gasto de timbrado en el registro del cliente el valor debe ser 0.  
-- En la tabla **[Empresas](/docs/configurations/tables/general-settings/company)** completar el campo *Gastos de timbrado* (2 euros) y *Techo mínimo de gastos* (77,47 euros).  
-- En las facturas de venta, los gastos de timbrado aparecen automáticamente si están presentes en el registro del cliente.  
-- En la factura de venta es posible cambiar el valor de la propuesta de gasto (Panel de resúmenes > Agentes/Descuentos/Gastos); así que para cada factura se puede tomar la decisión de cargar o no (para no cargar el timbrado pero obtener igualmente la evidencia en la factura, basta con insertar el gasto con un importe = 0).  
-- Cuando se crea el archivo XML, si hay en los resúmenes de la factura un gasto de tipo timbrado, se añade la sección del timbrado virtual. 
+- En la tabla **[Tipos de gasto<!-- Tipi spese -->](/docs/configurations/tables/general-settings/expenses-types)** debe insertarse el gasto de tipo “timbre fiscal” con flag en el campo *Bollo* y con el *Valor Bollo* 2 euros
+- En los datos del cliente se debe agregar un gasto de tipo “timbre fiscal” en la sección **[Gastos y descuentos<!-- Spese sconti -->](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/charges-discounts)** seleccionando el código previamente creado en la tabla *Tipo gasto*
+- Para no cargarlos al cliente: en el gasto de timbre fiscal en los datos del cliente el valor debe ser 0
+- En la tabla **[Sociedad<!-- Società -->](/docs/configurations/tables/general-settings/company)** completar el campo *Gastos de timbre fiscal* (2 euros) y *Techo mínimos gastos* (77,47 euros)
+- En las facturas de venta los gastos de timbre fiscal aparecen automáticamente si están presentes en los datos del cliente
+- En la factura de venta se puede modificar el valor del gasto propuesto (Panel de resúmenes > Agentes/Descuentos/Gastos), por lo tanto para cada factura se puede tomar la decisión de cargarlo o no (para no cargar el timbre fiscal pero igualmente mostrar la evidencia en la factura basta con ingresar el gasto con importe = 0)
+- Cuando se crea el archivo XML, si hay en los resúmenes de la factura un gasto de tipo timbre fiscal, se añade la sección de timbre virtual
 
 ```xml
         <DatiBollo>
@@ -305,14 +317,14 @@ Para la gestión de los gastos de timbrado se deben seguir las siguientes reglas
         </DatiBollo> 
 ```
 
-- Si en los resúmenes de la factura está presente el gasto de tipo timbrado con un valor diferente de 0 (caso de carga en factura), en el XML se añade una sección de detalle de líneas con número de línea el último de la factura + 1 y el valor del timbrado. 
+- Si en los resúmenes de la factura está presente el gasto de tipo timbre fiscal con valor distinto de 0 (caso de cargo en factura), en el XML se añade una sección de detalle de línea con número de línea el último de la factura + 1 y el valor del timbre fiscal.
 
-Esta sección se añade para el control de los totales de la factura. 
+Esta sección se agrega para el control de los totales de la factura
 
 ```xml
     <NumeroLinea>2</NumeroLinea>
     <TipoCessionePrestazione>AC</TipoCessionePrestazione>
-    <Descrizione>Gastos de timbrado (Spesebollo)</Descrizione>
+    <Descrizione>Spesebollo</Descrizione>
     <Quantita>1.00</Quantita>
     <PrezzoUnitario>2.00000000</PrezzoUnitario>
     <PrezzoTotale>2.00</PrezzoTotale>
@@ -320,9 +332,9 @@ Esta sección se añade para el control de los totales de la factura.
     <Natura>N3</Natura>
 ```
 
-### Códigos CIG y CUP (Tag 2.1.2.6 CodiceCUP y 2.1.2.7 CodiceCIG)
-
-En el tag de datos del pedido de compra están contenidos el CIG y el CUP, para poder reportar estos 2 códigos, la factura debe referirse a un pedido de cliente de Fluentis o debe especificarse el ref. Pedido en el homónimo edit presente en la pestaña de Datos del Artículo del tab Artículos de la factura.
+### Códigos Cig y Cup (Tag 2.1.2.6 CodiceCUP y 2.1.2.7 CodiceCIG)<!-- Codici Cig e Cup (Tag 2.1.2.6 CodiceCUP e 2.1.2.7 CodiceCIG) -->
+ 
+En el tag de los datos de la orden de compra están contenidos el CIG y CUP, por lo que para poder reportar estos dos códigos la factura debe referirse a un pedido de cliente de Fluentis o bien debe especificarse la ref. Orden en el campo homónimo presente en la pestaña Datos de Artículo de la pestaña Artículos de la factura.
 
     2.1.2 \<DatiOrdineAcquisto> 
     2.1.2.1 \<RiferimentoNumeroLinea> 
@@ -331,31 +343,31 @@ En el tag de datos del pedido de compra están contenidos el CIG y el CUP, para 
     2.1.2.6 \<CodiceCUP> 
     2.1.2.7 \<CodiceCIG>
 
-### Decimales a utilizar para los campos numéricos 
+### Decimales para los campos numéricos<!-- Decimali da utilizzare per i campi numerici -->
+Para saber cuántos decimales máximos se pueden especificar para cada campo numérico, consulte las especificaciones técnicas para la factura electrónica<!-- fattura elettronica --> de la Agencia Tributaria:
 
-Para saber cuántos decimales máximos se pueden especificar para cada campo numérico, hacer referencia a las especificaciones técnicas para la factura electrónica de la Agencia de Ingresos:
-
-Según las especificaciones: 
-- cantidad de artículo: decimales de 2 a 8 
-- precio unitario: decimales de 2 a 8 
+Como indican las especificaciones:
+- cantidad de artículo: decimales de 2 a 8
+- precio unitario: decimales de 2 a 8
 - porcentaje de descuento: 2 decimales
+ 
+### Retención de impuestos y Enasarco (tag 2.1.1.5 DatiRitenuta)<!-- Ritenuta d’acconto e Enasarco (tag 2.1.1.5 DatiRitenuta) -->
 
-### Retención de impuesto y Enasarco (tag 2.1.1.5 DatiRitenuta) 
+Para la gestión de la retención de impuestos<!-- ritenuta d'acconto -->:
 
-Para la gestión de la retención: 
+- en los datos del cliente activar el flag **Retención de impuestos<!-- Ritenuta d'acconto -->** en la pestaña **información fiscal<!-- informazioni fiscali -->** y especificar cuál es el tipo de retención a utilizar mediante la lista desplegable **Tipo de retención<!-- Tipo ritenuta -->**
+- en la tabla **Tipos de retención<!-- Tipi ritenute -->** codificar correctamente el código para la factura electrónica<!-- fatturazione elettronica --> (RT01, RT02)
+- completar la factura como habitualmente, el documento detecta automáticamente la sujeción a la retención para las líneas sobre las que es posible hacer el cálculo y calcula automáticamente el importe de la retención
+- crear el archivo XML que incluye la indicación de la retención y, para cada línea, el tag "Retención SI" si la línea está sujeta
 
-- en el registro del cliente, activar el indicador **ritenuta d'acconto** en la pestaña **información fiscal** y especificar cuál es el tipo de retención que se utilizará a través de la caja de combinación **Tipo de retención**. 
-- en la tabla **Tipos de retenciones (Tipi ritenute)** codificar correctamente el código para la facturación electrónica (RT01, RT02). 
-- completar la factura como se hace normalmente, el documento recupera automáticamente el sometimiento a la retención para las líneas sobre las cuales es posible hacer el cálculo y calcula automáticamente el importe de la retención. 
-- crear el archivo XML que reporta la indicación de la retención y, para cada línea, el tag "Retención SI" si la línea está sujeta.
+En cuanto a Enasarco, con la versión 1.6 del esquema de la factura electrónica (en vigor desde el 01/10/2020) se ha definido que la sección 2.1.1.5, inicialmente dedicada solo a retenciones, ahora pueda replicarse N veces para indicar también Enasarco, al que se le ha asignado el código RT04. Fluentis, si la retención  
+insertada en la cabecera tiene las opciones enasarco, valora en el documento también el cálculo de Enasarco, y valora como se pide la sección 2.1.1.5
 
-Con respecto al Enasarco, con la versión 1.6 del esquema de facturación electrónica (en vigor desde el 01/10/2020), se ha definido que la sección 2.1.1.5, dedicada inicialmente a las únicas retenciones, ahora puede ser replicada N veces para indicar también el Enasarco, al que se le ha asignado el código RT04. Fluentis, si la retención insertada en el encabezado tiene las configuraciones de enasarco, valora en el documento también el cálculo de la enasarco y valora como se requiere la sección 2.1.1.5.
-
-:::danger[Atención]
-CONTABILIZACIÓN: La factura activa vinculada a la retención de impuesto sufrida y a la contribución de enasarco será contabilizada generando automáticamente la escritura contable correcta que anula del crédito hacia el cliente la retención y la contribución.
-PRESTAR ATENCIÓN A QUE EN LA CONFIGURACIÓN DEL TIPO DE RETENCIÓN ASOCIADO EL CAMPO **Tipos de Partidas** esté configurado en *Partidas netas,* de lo contrario, la escritura contable y el cálculo de las partidas abiertas serán erróneos y faltará el giro de la retención.
+:::danger[Atención]<!-- Attenzione -->
+CONTABILIZACIÓN: la factura activa asociada a la retención de impuestos<!-- ritenuta d'acconto --> sufrida y la contribución enasarco será contabilizada generando automáticamente el asiento contable correcto que compensa de la cuenta a cobrar hacia el cliente la retención y la contribución.
+PRESTE ATENCIÓN QUE EN LA CONFIGURACIÓN DEL TIPO DE RETENCIÓN ASOCIADO, EL CAMPO **Tipo de partidas<!-- Tipi Partite -->** debe estar configurado en *Partidas netas*, de lo contrario el asiento contable y el cálculo de partidas abiertas serán incorrectos y faltará el giro de la retención.
 :::
 
-:::tip **Ver también**
-Para la gestión del traslado **contribución caja de previsión** en la factura electrónica [**ver aquí**](/docs/configurations/tables/general-settings/expenses-types). 
+:::tip **Ver también**<!-- **Vedere anche** -->
+Para la gestión del recargo **contribución caja de previsión** en la factura electrónica<!-- fattura elettronica --> [**ver aquí**](/docs/configurations/tables/general-settings/expenses-types)
 :::

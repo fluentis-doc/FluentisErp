@@ -1,26 +1,27 @@
 ---
-title: valori da produzione
+title: Valores de producción
 sidebar_position: 4
+ai_generated: true
 ---
 
-En esta ventana podemos visualizar los costos de los materiales relacionados con el proyecto/orden, tanto los trabajados internamente como externamente.
+En esta pantalla podemos visualizar los costos de los materiales asociados a un proyecto<!-- progetto -->/orden de trabajo<!-- commessa -->, tanto los trabajados internamente como externamente.
 
 Los campos disponibles son los siguientes:
 
-- el **sottoconto*** de costo, que será típicamente el Ingresos de compras (Fatturato acquisti) relacionado con el artículo en lugar de la cuenta de los trabajos externos
+- el ***Subcuenta***<!-- Sottoconto --> de costo, que típicamente será la Facturación de compras asociada al artículo o bien la cuenta de los trabajos externos
 
-- el [**centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) asociado a la línea, que típicamente proviene de la configuración en el plan de cuentas de la subcuenta anterior
+- el [***Centro empresarial***<!-- Centro aziendale -->](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) asociado a la línea, que proviene normalmente de la configuración en el plan de cuentas de la subcuenta<!-- sottoconto --> anterior
 
-- el **anno*** y el **periodo*** de referencia
+- el ***Año*** y el ***Periodo*** de referencia
 
-- **numero progetto***, **anno progetto***, **riga***, **numero wbs***: siempre serán valorados a partir de las referencias a los proyectos
+- ***Número de proyecto***, ***Año del proyecto***, ***Línea***, ***Número Wbs***: siempre estarán completados con las referencias a los proyectos<!-- progetti -->
 
-- **articolo*** y **descrizione articolo***, los datos del artículo movimentado
+- ***Artículo*** y ***Descripción del artículo***: los datos del artículo movido<!-- movimentato -->
 
-- la [**unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimiento
+- la [***Unidad de medida***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimiento<!-- movimento -->
 
-- la **quantità*** del movimiento
+- la ***Cantidad*** del movimiento<!-- movimento -->
 
-- el **costo medio***, en lugar de **costo standard*** o **costo ultimo*** para la línea
+- el ***Costo medio***, o bien ***Costo estándar*** o ***Costo último*** para la línea
 
-No se permite la eliminación ni la modificación o la inserción de datos en la cuadrícula.
+No se permite la eliminación, ni la modificación o la inserción de datos en la cuadrícula.

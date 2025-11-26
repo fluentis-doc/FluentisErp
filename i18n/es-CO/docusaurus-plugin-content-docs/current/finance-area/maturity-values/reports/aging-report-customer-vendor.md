@@ -1,25 +1,26 @@
 ---
-title: Report de envejecimiento (Report di aging)
+title: Reporte de aging
+ai_generated: true
 ---
 
-Desde este formulario es posible generar la impresión del Reporte de envejecimiento.
+Desde este formulario es posible lanzar la impresión del reporte de aging<!-- Report di aging -->.
 
-Esta impresión particular está diseñada para proporcionar, de un vistazo, una situación tanto para proveedores como para clientes, sobre la composición de las partidas vencidas y por vencer por categorías temporales.
+Esta impresión en particular está diseñada para proporcionar, de un vistazo, una visión tanto para proveedores como para clientes sobre la composición de las partidas<!-- partite --> vencidas y por vencer, distribuidas en categorías temporales.
 
-Ejemplo: se puede seleccionar primero una categoría a la vez, enfocándose por ejemplo en los clientes (y eventualmente seleccionando solo a los clientes italianos) y obtener una visión de lo vencido dividida en tramos de 0 a 30 días, de 30 a 60 días y más de 60 días. Lo mismo ocurre con las partidas por vencer, obteniendo una división en tres tramos para evaluar las cuotas con vencimiento más cercano en comparación con aquellas más distantes en el tiempo.
+Ejemplo: es posible seleccionar primero una categoría a la vez, concentrándose por ejemplo en los clientes (y eventualmente seleccionando solo los clientes italianos) y obtener una visión de los vencimientos subdivididos en tramos de 0 a 30 días, de 30 a 60 días y más de 60 días. Lo mismo aplica para las partidas<!-- partite --> por vencer, obteniendo una subdivisión en tres tramos para evaluar las cuotas con vencimiento más próximo respecto a las que tienen un vencimiento más lejano en el tiempo.
 
-La impresión presenta una leyenda en la parte superior para la comprensión de los totales vencidos y por vencer (TOT = A + B + C...)
+El reporte presenta en la parte superior una leyenda útil para la comprensión de los totales vencidos y por vencer (TOT = A + B + C...)
 
-Los tramos de división de las partidas son libremente configurables por el usuario en términos de número de días.
+Los tramos de subdivisión de las partidas<!-- partite --> pueden ser libremente configurados por el usuario en cuanto al número de días.
 
-La sección Días es, de hecho, el elemento específico del formulario para esta impresión, y permite ingresar el número de días, con signo negativo (obligatorio) para lo vencido y positivo para las partidas por vencer, con el fin de determinar la amplitud de los tramos de agrupamiento.
+La sección Días es de hecho el elemento específico del formulario para este reporte, y permite ingresar el número de días, con signo negativo (obligatorio) para lo vencido y positivo para las partidas<!-- partite --> por vencer, para determinar el tamaño de los tramos de agrupación.
 
 ![](/img/it-it/finance-area/maturity-values/reports/aging-report-customer-vendor/image01.png)
 
-La lectura en la impresión será de izquierda (vencido) a derecha (por vencer) y, por lo tanto, se recomienda respetar la lógica de los campos que están numerados del 1 (será el más a la izquierda y, por ende, el vencido más "viejo") al 6 (el por vencer más distante en el tiempo), donde el campo 1 tendrá un número negativo mayor que se irá reduciendo al pasar a 2 y 3 hasta llegar a cero y crecer en positivo.
+La lectura en la impresión será de izquierda (vencido) a derecha (por vencer), por lo que se recomienda respetar la lógica de los campos que están numerados del 1 (será el más a la izquierda y por lo tanto el vencido más "antiguo") al 6 (por vencer más distante en el tiempo), donde el campo 1 tendrá un número negativo mayor que irá disminuyendo pasando a 2 y 3 hasta llegar a cero y creciendo en positivo.
 
-Los **otros campos del formulario** son los mismos utilizados en otras impresiones del módulo. **[Ver aquí para más detalles (Vedere qui per maggiori dettagli).](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**
+Los **otros campos del formulario** son los mismos utilizados en otros reportes del módulo. ** [Ver aquí para más detalles.](/docs/finance-area/maturity-values/reports/customer-vendor-due-register) **<!-- ** [Vedere qui per maggiori dettagli.](/docs/finance-area/maturity-values/reports/customer-vendor-due-register) ** -->
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>

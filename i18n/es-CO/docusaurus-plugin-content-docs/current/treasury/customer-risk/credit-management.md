@@ -1,18 +1,19 @@
 ---
-title: gestione fidi
+title: Gestión de líneas de crédito
 sidebar_position: 2
+ai_generated: true
 ---
 
-Esta máscara permite verificar y gestionar las configuraciones de los créditos de los registros de clientes, sin la necesidad de entrar uno por uno desde la gestión de contactos de la pestaña ‘Inicio (Home)’ - ‘Registros (Anagrafici)’ - ‘Registros de contactos (Anagrafiche contatti)’.
+Esta pantalla permite verificar y gestionar los ajustes de las líneas de crédito<!-- fidi --> de los registros de clientes<!-- anagrafiche cliente -->, sin tener que ingresar uno a uno desde la gestión de contactos en la pestaña ‘Inicio’-‘Maestros’-‘Maestros de contactos<!-- Home'-‘Anagrafici'-‘Anagrafiche contatti -->’.
 
-Se prevén cuatro tipos de control de crédito:
+Se prevén cuatro tipos de control de líneas de crédito<!-- controllo fido -->:
 
-**Bloqueo de documentos y monitoreo de crédito (Blocco doc. e monitor fido)**: el documento del área de ventas que exceda el crédito será bloqueado, por lo tanto, será necesaria la autorización para proceder a las siguientes etapas del flujo documental;
+**Bloqueo de documento y monitor de línea de crédito<!-- Blocco doc. e monitor fido -->**: el documento del área de ventas<!-- area vendita --> que supere la línea de crédito<!-- fido --> será bloqueado, por lo que será necesario autorizarlo para continuar con las siguientes fases del flujo documental;
 
-**monitor fido**: se realizará simplemente un control del crédito con un posible mensaje al usuario sobre el excedente;
+**Monitor de línea de crédito<!-- Monitor fido -->**: simplemente se realizará un control de la línea de crédito<!-- fido --> con un posible mensaje al usuario sobre el exceso de la misma;
 
-**blocco di gruppo**: al igual que el primero, pero el cálculo es acumulativo para todas las empresas de la base de datos que pertenecen al mismo registro de cliente;
+**Bloqueo de grupo<!-- Blocco di gruppo -->**: igual que el primero, pero el cálculo es acumulativo para todas las empresas<!-- società --> de la base de datos que pertenecen al mismo registro de cliente<!-- anagrafica cliente -->;
 
-**monitor di gruppo**: al igual que el segundo, pero el cálculo es acumulativo para todas las empresas de la base de datos que pertenecen al mismo registro de cliente.
+**Monitor de grupo<!-- Monitor di gruppo -->**: igual que el segundo, pero el cálculo es acumulativo para todas las empresas<!-- società --> de la base de datos que pertenecen al mismo registro de cliente<!-- anagrafica cliente -->.
 
-El campo de **crédito asegurado (fido assicurato)** es solo una referencia no gestionada de manera activa por el programa, al igual que las notas de crédito.
+El campo de **línea de crédito asegurada<!-- fido assicurato -->** es solo de referencia y no es gestionado activamente por el programa, así como las notas de línea de crédito<!-- note fido -->.

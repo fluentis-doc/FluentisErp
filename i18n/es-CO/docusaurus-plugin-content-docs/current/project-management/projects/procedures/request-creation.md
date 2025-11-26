@@ -1,29 +1,30 @@
 ---
-title: creazione richieste o interventi pianificati da progetto
+title: Creación de Solicitudes o Intervenciones Planificadas desde Proyecto
 sidebar_position: 2
+ai_generated: true
 ---
 
-Este procedimiento permite crear solicitudes de intervención o intervenciones planificadas a partir de un proyecto.
+Este procedimiento permite crear solicitudes de intervención<!-- richieste di intervento --> o intervenciones planificadas<!-- interventi pianificati --> desde un proyecto<!-- progetto -->.
 
-En el área de filtro se puede indicar:
+En el área de filtro es posible indicar:
 
-**da data inizio**: indica la fecha de inicio a partir de la cual considerar los proyectos;  
+**Desde fecha de inicio<!-- Da data inizio -->**: indica la fecha de inicio desde la cual considerar los proyectos<!-- progetti -->;
 
-**a data inizio**: indica la fecha de inicio hasta la cual considerar los proyectos;  
+**Hasta fecha de inicio<!-- A data inizio -->**: indica la fecha de inicio hasta la cual considerar los proyectos<!-- progetti -->;
 
-**risorsa**: indicar el recurso encargado en los proyectos;  
+**Recurso<!-- Risorsa -->**: indicar el recurso encargado en los proyectos<!-- progetti -->;
 
-**cliente**: es posible indicar el cliente para filtrar los proyectos;  
+**Cliente**: es posible indicar el cliente por el cual filtrar los proyectos<!-- progetti -->;
 
-**progetto**: es posible indicar la rama del proyecto a partir de la cual filtrar los recursos.  
+**Proyecto<!-- Progetto -->**: es posible indicar la rama de proyecto<!-- ramo di progetto --> por la cual filtrar los recursos.
 
-Una vez ingresados los filtros, basta con hacer clic en **ricerca** en la barra de ribbon para que aparezcan los resultados en la cuadrícula inferior.  
-Las filas resultantes muestran las asignaciones del recurso, con las características relacionadas de las actividades y del proyecto.  
-En la parte inferior de la pantalla se encuentra el indicador **imposta come confermato** si el documento debe crearse ya confirmado, es decir, efectivamente para planificarse.  
-Además del indicador, es posible indicar el **Tipo de Solicitud de Intervención (Tipo Richiesta di Intervento)** y el **tipo intervento pianificato**.  
-La prioridad con la que se considera el Tipo de Solicitud de intervención o el Tipo de Intervención Planificada es la siguiente:  
-- 1 - si está presente el Tipo de Solicitud de intervención o el Tipo de Intervención Planificada en la pantalla del procedimiento, se utilizará para crear los nuevos documentos.  
-- 2 - si no hay configuraciones en la pantalla, se considerarán el Tipo de Solicitud de intervención o el Tipo de Intervención Planificada configurados en la línea del proyecto.  
-- 3 - si no hay configuraciones en el proyecto, se considerarán el Tipo de Solicitud de intervención o el Tipo de Intervención Planificada configurados en los parámetros generales del proyecto.  
+Una vez ingresados los filtros, solo hay que hacer clic en **Buscar<!-- Ricerca -->** en la barra de opciones para que los resultados aparezcan en la cuadrícula inferior.  
+Las filas resultantes muestran las asignaciones del recurso<!-- risorsa -->, con las características relativas de las actividades y del proyecto<!-- progetto -->.  
+En la parte inferior de la pantalla está la casilla **Definir como confirmado<!-- Imposta come confermato -->** si el documento debe crearse ya confirmado y, por tanto, realmente para planificar.  
+Además de la casilla, es posible indicar el **Tipo Solicitud de Intervención<!-- Tipo Richiesta di Intervento -->** y el **Tipo Intervención Planificada<!-- Tipo Intervento Pianificato -->**.  
+La prioridad con la que se considera el Tipo de Solicitud de Intervención<!-- Tipo Richiesta intervento --> o el Tipo de Intervención Planificada<!-- Tipo Intervento Pianificato --> es la siguiente: 
+- 1 - si está presente el Tipo de Solicitud de Intervención<!-- Tipo Richiesta intervento --> o el Tipo de Intervención Planificada<!-- Tipo Intervento Pianificato --> en la pantalla del procedimiento, se utilizará para crear los nuevos documentos
+- 2 - si no hay configuraciones en la pantalla, se considerarán los Tipos configurados en la fila del proyecto<!-- riga di progetto -->
+- 3 - si no existen configuraciones en el proyecto<!-- progetto -->, se considerarán los Tipos configurados en los parámetros generales del proyecto<!-- parametri generali progetto -->. 
 
-Después de seleccionar una línea, es posible utilizar los botones específicos de la barra de ribbon para ejecutar el procedimiento y crear una **Solicitud de Intervención (Richiesta di Intervento)** o una **intervento pianificato**.
+Después de seleccionar una fila, es posible utilizar los botones específicos de la barra de opciones para ejecutar el procedimiento y crear una **Solicitud de Intervención<!-- Richiesta di Intervento -->** o una **Intervención Planificada<!-- Intervento Pianificato -->**.

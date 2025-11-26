@@ -1,16 +1,17 @@
 ---
-title: categoria fatturazione
+title: Categoría de facturación
 sidebar_position: 6
+ai_generated: true
 ---
 
-La tabla se abre a través de la ruta **Tablas (Tabelle) > Ventas (Vendite) > categoria fatturazione (Categoria fatturazione)** y sirve para indicar la frecuencia de facturación para cada cliente. Este dato se inserta en el registro del cliente y se utiliza como filtro para la facturación.
+La tabla<!-- tabella --> se abre mediante la ruta **Tablas > Ventas > Categoría de facturación<!-- Tabelle > Vendite > Categoria fatturazione -->** y sirve para indicar la frecuencia de facturación para cada cliente<!-- cliente -->. Este dato se ingresa en la ficha del cliente<!-- anagrafica cliente --> y se utiliza como filtro para la facturación<!-- fatturazione -->.
 
 Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-El formulario se compone de un área de filtro y otra de resultados. Una vez que se han establecido todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario<!-- form --> se compone de un área de filtro y una de resultados. Una vez establecidos los filtros deseados, basta con hacer clic en el botón **Buscar<!-- Ricerca -->** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Para poder insertar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
+Para poder insertar nuevos registros es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **Nuevo<!-- Nuovo -->**. 
 
-Los datos que deben ser ingresados para cada categoría son el **codice** de la nueva categoría, que debe ser único, y su **descrizione**.
+Los datos que deben ser ingresados para cada categoría son el **Código<!-- Codice -->** de la nueva categoría, que debe ser único, y su **Descripción<!-- Descrizione -->**.
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, haga referencia al siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo aquello que no se detalla en este documento sobre el funcionamiento común de los formularios<!-- form -->, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common)<!-- Funzionalità, pulsanti e campi comuni -->.

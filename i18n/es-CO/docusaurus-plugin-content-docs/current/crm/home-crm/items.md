@@ -1,6 +1,7 @@
 ---
-title: articoli
+title: Artículos
 sidebar_position: 4
+ai_generated: true
 ---
 
-En esta ventana se muestran los articoli del sistema de gestión; se remite por lo tanto a la [documentación (documentazione)](/docs/erp-home/registers/items/search-items).
+En esta pantalla se muestran los Artículos<!-- Articoli --> del sistema de gestión<!-- gestionale -->; para más información, consulte la [documentación](/docs/erp-home/registers/items/search-items) correspondiente.

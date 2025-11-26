@@ -1,12 +1,13 @@
 ---
-title: liquidazione iva di gruppo
+title: Liquidación de IVA de grupo
 sidebar_position: 4
+ai_generated: true
 ---
 
-Desde este formulario es posible calcular las liquidaciones de IVA particulares y relacionadas con el estado de GRUPO IVA (tanto cuando la empresa en uso es la matriz, como cuando es parte del grupo y, por lo tanto, el saldo de su liquidación se transfiere a la matriz).
+Desde este formulario es posible calcular las liquidaciones de IVA<!-- iva --> particulares y relativas al estado de GRUPO IVA (tanto cuando la empresa utilizada es la empresa matriz, como cuando es parte del grupo y por lo tanto el saldo de su liquidación se transfiere a la matriz<!-- capogruppo -->).
 
-Al presionar el botón NUEVO (NUOVO), se inserta una nueva liquidación. En el encabezado se ingresan el año y el período de cálculo.
+Al presionar el botón NUEVO se inserta una nueva liquidación. En el encabezado se ingresa el año y el período de cálculo.
 
-El cálculo adquirirá y agregará todos los resultados de las empresas adheridas al grupo ("controladas"), que deberán ser ingresadas en la cuadrícula, y los totalizará en la matriz.
+El cálculo adquirirá y agregará todos los resultados de las empresas que forman parte del grupo ("controladas") que deberán ser ingresadas en la cuadrícula, y los totalizará en la empresa matriz<!-- capogruppo -->.
 
-En este punto, al ejecutar el LIPE con el indicador correspondiente para el grupo de IVA activado, no se mostrarán los resultados de los totales de IVA a crédito y a débito (que continúan refiriéndose a las empresas individuales), sino los totales del IVA a pagar o a crédito transferidos y agregados a la empresa matriz.
+En este punto, al ejecutar la LIPE con el flag correspondiente activado para el grupo de IVA<!-- gruppo iva -->, no se mostrarán los resultados de los totales de IVA<!-- iva --> a crédito o débito (que siguen estando referidos a las empresas individuales), sino los totales del IVA<!-- iva --> a pagar o a crédito transferidos y agregados en la empresa matriz<!-- capogruppo -->.

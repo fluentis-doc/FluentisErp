@@ -1,13 +1,14 @@
 ---
-title: analisi centri di profitto
+title: Análisis de Centros de Beneficio
 sidebar_position: 2
+ai_generated: true
 ---
 
-El informe del análisis de centros de beneficio permite imprimir el detalle de los movimientos contables que han valorizado cada centro de beneficio, totalizando los importes en el mismo centro de beneficio.
+El informe de análisis de centros de beneficio<!-- centri di profitto --> permite imprimir el detalle de los movimientos contables<!-- movimenti contabili --> que han valorizado cada centro de beneficio<!-- centro di profitto --> individualmente, totalizando los importes en el propio centro de beneficio<!-- centro di profitto -->.
 
-Ver **[Análisis de centros de costo (Analisi centri di costo)](/docs/finance-area/ledger-records/analytic-reports/cost-centres-analysis)**
+Ver **[Análisis de centros de costo](/docs/finance-area/ledger-records/analytic-reports/cost-centres-analysis)<!-- Analisi centri di costo -->**
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión del análisis de centros de beneficio. |
-| Imprimir (Stampa) | Botón para realizar la impresión física del análisis de centros de beneficio. |
+| Vista previa | Botón para ejecutar la vista previa de impresión del análisis de centros de beneficio<!-- centri di profitto -->. |
+| Imprimir | Botón para ejecutar la impresión física del análisis de centros de beneficio<!-- centri di profitto -->. |

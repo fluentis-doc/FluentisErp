@@ -1,19 +1,20 @@
 ---
-title: filtro
+title: Filtro
 sidebar_position: 2
+ai_generated: true
 ---
 
-En la primera pestaña se buscan y seleccionan los vencimientos de compensaciones a pagar: se permite la modificación manual de los importes a pagar, lo que causará un re-cálculo de la cuota correspondiente de la retención.
+En la primera pestaña se buscan y seleccionan los vencimientos<!-- scadenze --> de compensaciones<!-- compensi --> a pagar: se permite la modificación manual de los importes<!-- importi --> a pagar, lo que provocará un recálculo de la cuota relativa de la retención<!-- ritenuta -->.
 
-En la próxima apertura del formulario, se visualizará en ese caso el saldo a pagar.
+Al abrir nuevamente la ventana, en ese caso se visualizará el saldo pendiente de pago<!-- residuo da pagare -->.
 
  
 
-ATENCIÓN: antes de ejecutar el comando de contabilización, verifique los parámetros en la pestaña **[Parámetros (Parametri)](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)**.
+ATENCIÓN: antes de ejecutar el comando de contabilización<!-- contabilizzazione --> verifique los parámetros en la pestaña ** [Parámetros<!-- Parametri -->](/docs/finance-area/professional-men/accounting/payments-accounting/parameters).**<!-- [Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters). -->
 
 ![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/filter/image01.png)
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Búsqueda de pagos (Ricerca pagamenti) | Busca la lista de los pagos a realizar. |
-| Contabilización de pagos (Contabilizzazione pagamenti) | Ejecuta la contabilización de los pagos seleccionados. |
+| Buscar pagos<!-- Ricerca pagamenti --> | Busca la lista de los pagos a efectuar. |
+| Contabilización de pagos<!-- Contabilizzazione pagamenti --> | Realiza la contabilización<!-- contabilizzazione --> de los pagos seleccionados. |

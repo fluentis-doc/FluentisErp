@@ -1,82 +1,86 @@
 ---
-title: visualizzazione conti
+title: Visualización de cuentas
 sidebar_position: 2
+ai_generated: true
 ---
 
-El formulario permite visualizar los movimientos contables de cualquier cuenta o subcuenta contable, de cualquier tipo (activo, pasivo, costos, ingresos o anagráfico): todos los movimientos de todos los ejercicios contables están siempre en línea, pero claramente pueden ser modificados o no según el cierre del período tras las impresiones fiscales obligatorias realizadas de forma definitiva o por operaciones de cierre de cuentas.
+El formulario permite visualizar los movimientos contables<!-- movimenti contabili --> de cualquier cuenta<!-- conto --> o subcuenta<!-- sottoconto contabile --> contable, de cualquier tipo (activo, pasivo, costos, ingresos o anagráfico): todos los movimientos de todos los ejercicios contables<!-- esercizi contabili --> están siempre en línea, pero claramente podrán ser modificados o no según el cierre del periodo tras la realización definitiva de impresiones fiscales obligatorias o por operaciones de cierre de cuentas<!-- chiusura conti -->.
 
-## Encabezado (Testata):
+## Encabezado:<!-- Testata: -->
 
-En la parte superior es obligatorio ingresar un código de cuenta o directamente una subcuenta de detalle: los campos de filtro siguientes, en cambio, son opcionales.
+En la parte superior, es obligatorio ingresar un código de cuenta<!-- conto --> o directamente una subcuenta<!-- sottoconto --> de detalle: los campos de filtro siguientes son opcionales.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image01.png)
 
+ 
 
+## La cuadrícula de datos:<!-- La griglia dati: -->
 
-## La cuadrícula de datos (La griglia dati):
-
-Está ordenada por defecto por fecha de registro en orden descendente**, (el criterio de ordenamiento puede ser modificado) y muestra la lista de movimientos según los filtros establecidos:
+Está ordenada de forma predeterminada por **fecha de registro<!-- data registrazione --> descendente** (el criterio de orden se puede cambiar igualmente) y muestra la lista de movimientos según los filtros configurados:
 
 Con esta configuración, los datos deben leerse teniendo en cuenta que:
 
-- suponiendo que se filtre con "desde fecha de registro" 01/01/yyyy, tendremos en los campos (en la parte superior) **Saldo anterior** los totales de los registros anteriores al 01/01/yyyy,
+-  suponiendo que se filtre con 'desde fecha de registro<!-- da data registrazione -->' 01/01/yyyy, en los campos (superiores) **Saldo anterior<!-- Saldo precedente -->** se mostrarán los totales debe-haber<!-- dare avere --> de los asientos previos al 01/01/yyyy,
 
-- en la cuadrícula de movimientos, los datos se presentarán de más reciente a más antiguo (temporalmente) y se leerán de arriba hacia abajo.
+- en la cuadrícula de movimientos los datos se presentarán del más reciente al más antiguo (en orden temporal) leyendo de arriba hacia abajo
 
-- el campo **Progresivo** mostrará en la última línea el monto del campo **Saldo anterior** actualizado con el valor de la fila misma y luego se irá actualizando fila por fila de abajo hacia arriba.
+- el campo **Progresivo** mostrará en la última fila el importe del campo **Saldo anterior<!-- Saldo precedente -->** actualizado con el valor de la propia fila para luego ser actualizado fila a fila desde abajo hacia arriba.
 
 
 :::note[Nota]
-El campo **Progresivo** es visible solo si se mantiene el ordenamiento predeterminado previsto para el formulario; en otros casos, el campo desaparece y para que vuelva a aparecer será necesario cerrar y volver a abrir el formulario y así reiniciar la búsqueda. 
+El campo **Progresivo** solo es visible si se mantiene el orden predeterminado que prevé el formulario; de lo contrario, el campo desaparece y para hacerlo reaparecer será necesario cerrar y volver a abrir el formulario y ejecutar nuevamente la búsqueda.
 :::
 
 
+ 
 
-## Totales al pie del formulario (Totali alla base della maschera):
+## Totales en la parte inferior de la pantalla:<!-- Totali alla base della maschera: -->
 
-**Saldo selección**: suma de los débitos/créditos de las filas que están seleccionadas en la cuadrícula con el mouse; al seleccionar todo en la cuadrícula (con ctrl+a), este campo mostrará el mismo resultado que el campo *Saldo actual*.
+**Saldo de selección<!-- Saldo selezione -->**: suma debe/haber<!-- dare/avere --> de las filas que están seleccionadas en la cuadrícula con el mouse; al seleccionar toda la cuadrícula (con ctrl+a), este campo mostrará el mismo resultado que el campo *Saldo corriente<!-- Saldo corrente -->*
 
-**Saldo actual**: suma de los débitos/créditos de las filas que se muestran en la cuadrícula (siempre todas, independientemente de la selección realizada con el mouse);  
+**Saldo corriente<!-- Saldo corrente -->**: suma debe/haber<!-- dare/avere --> de las filas visualizadas en la cuadrícula (siempre todas, independientemente de la selección hecha con el mouse);
 
-**Total**: suma de los saldos anterior y actual;  
+**Total<!-- Totale -->**: suma debe/haber<!-- dare/avere --> del saldo anterior<!-- saldo precedente --> y del saldo corriente<!-- saldo corrente -->;
 
-**Saldo**: saldo final, ya sea en débito o en crédito (que corresponderá siempre al progresivo mostrado en la primera fila).
+**Saldo<!-- Saldo -->**: saldo final, ya sea en debe o en haber (que siempre corresponderá al progresivo mostrado en la primera fila).
 
 
-:::tip[Cómo leer e interpretar los totales]
-**Débito/Crédito anterior** (al rango filtrado y desde la última apertura de cuentas) **+ Saldo actual = Total** (ambas columnas de débito/crédito están valorizadas siempre en estos 3 bloques).
+:::tip[Cómo leer e interpretar los totales<!-- Come leggere e interpretare i totali -->]
+**Debe/Haber anterior<!-- Dare/Avere precedente -->** (al rango filtrado y desde la última apertura de cuentas<!-- apertura conti -->) **+ Saldo corriente = Total<!-- Totale -->** (ambas columnas debe / haber se completan siempre en estos 3 bloques).
 
-**Saldo anterior + Saldo actual** (como diferencia entre débito y crédito) **= Saldo** (actual)
+**Saldo anterior +  Saldo corriente<!-- Saldo precedente +  Saldo corrente -->** (como diferencia debe-haber<!-- dare-avere -->) **= Saldo<!-- Saldo -->** (actual)
 
-El *Saldo Actual* se representa en ambas secciones para resaltar analíticamente la formación del *Total* (ya que para calcularlo se suman al Saldo actual las dos secciones distintas *Débito / Crédito anterior*).
+El *Saldo corriente<!-- Saldo Corrente -->* se muestra en ambas secciones para evidenciar analíticamente la formación del *Total<!-- Totale -->* (ya que para calcularlo se suma al Saldo corriente las dos secciones separadas *Debe / Haber anterior<!-- Dare / Avere precedente -->*)
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image04.png)
 
 :::
 
 
-En la cuadrícula son visibles dos series de subcuentas, la subcuenta encabezada (que se toma de la subcuenta titular del registro del cual proviene el movimiento) y la subcuenta de detalle que es efectivamente la subcuenta de la que se están buscando los movimientos. Por ejemplo, en el caso de que se estén visualizando los movimientos de una cuenta genérica de costo, tendremos en la subcuenta encabezada los códigos de los proveedores que nos han enviado facturas registradas a esa cuenta de costos y en la subcuenta de detalle los distintos subcuentas de costo específicos registrados.
+En la cuadrícula son visibles dos series de subcuentas<!-- sottoconti --> visualizadas, la subcuenta principal<!-- sottoconto intestazione --> (que se toma de la subcuenta titular<!-- sottoconto intestatario --> del asiento del que proviene el propio movimiento<!-- movimento -->) y la subcuenta de detalle que es efectivamente la subcuenta<!-- sottoconto --> cuyos movimientos se están consultando. Por ejemplo, si se están visualizando los movimientos de una cuenta<!-- conto --> genérica de costo, se tendrá en la subcuenta principal<!-- sottoconto intestazione --> los códigos de los proveedores que enviaron facturas registradas a esa cuenta<!-- conto --> de costo y en la subcuenta de detalle las distintas subcuentas<!-- sottoconto --> de costo específicas registradas.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image02.png)
 
+ 
 
-Además, es posible "expandir" la fila mediante el comando + a la izquierda para visualizar el asiento contable completo.
+Además, es posible "expandir" la fila mediante el comando + a la izquierda para visualizar todo el asiento contable<!-- scrittura contabile -->.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image03.png)
 
+ 
 
-Otras operaciones que se pueden realizar con respecto a la cuadrícula de resultados:
+Otras operaciones que se pueden realizar en la cuadrícula de resultados:
 
-- Doble clic en la fila individual mostrada: en este caso, si el usuario tiene los derechos correspondientes, se abrirá para editar el registro de pertenencia del movimiento;
+- Doble clic sobre la fila mostrada: en este caso, si el usuario tiene los permisos requeridos, se abrirá en modo edición el asiento<!-- registrazione --> al que pertenece el movimiento<!-- movimento -->;
 
-- Presionar el botón **Modificar** situado en la barra de ribbon tendrá el mismo efecto que el doble clic descrito anteriormente;
+- Presionar el botón **Modificar<!-- Modifica -->** situado en la barra de herramientas tendrá el mismo efecto que el doble clic recién descrito;
 
-- Presionar el botón **Doc. Origen**, cuando esté activo, abrirá en visualización (si el usuario tiene el derecho) la factura de compra o venta que con la contabilización ha creado el movimiento contable seleccionado;
+- Presionar el botón **Doc. Origen<!-- Doc. Origine -->**, cuando esté activo, abrirá en vista (si el usuario tiene los permisos) la factura de compra o de venta que, mediante su contabilización, generó el movimiento<!-- movimento di contabilità --> contable seleccionado;
 
-ÁREA DE FILTRO: el área de filtro está dedicada a albergar la lista de los posibles tipos de datos mediante los cuales es posible realizar una selección. Los filtros suelen estar en condición 'AND' y es posible especificar múltiples criterios de filtro simultáneamente.
+ÁREA DE FILTRO: el área de filtro está destinada a alojar la lista de los posibles tipos de datos con los cuales se puede realizar una selección. Los filtros suelen estar siempre en condición 'AND' y es posible especificar múltiples criterios de filtro simultáneamente.
 
-CUADRÍCULA DE RESULTADO: la cuadrícula de resultado representa la lista de los registros que corresponden a los datos de filtro especificados anteriormente. El usuario, después de especificar los valores a través de los cuales desea realizar una búsqueda de registros, si presiona el botón [Buscar] presente en la barra de ribbon correspondiente, obtendrá en la cuadrícula de resultados la lista de los registros deseados.
+CUADRÍCULA DE RESULTADOS: la cuadrícula de resultados representa la lista de asientos<!-- registrazioni --> que cumplen con los datos de filtro arriba especificados. El usuario, tras especificar los valores a través de los cuales desea obtener una búsqueda de asientos<!-- registrazioni -->, al presionar el botón [Buscar<!-- Ricerca -->] presente en la barra correspondiente, obtendrá en la cuadrícula de resultados la lista de asientos<!-- registrazioni --> deseados.
 
-:::important Ver También
-[**VIDEO TUTORIALES SOBRE REGISTROS CONTABLES**](/docs/video/finance/intro)
+:::important También ver<!-- Vedi Anche -->
+[**VIDEO TUTORIALES SOBRE LOS REGISTROS CONTABLES**](/docs/video/finance/intro)
 :::

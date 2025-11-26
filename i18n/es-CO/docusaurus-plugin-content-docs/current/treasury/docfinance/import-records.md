@@ -1,25 +1,25 @@
 ---
-title: importazione registrazioni
+title: Importación de registros
 sidebar_position: 3
+ai_generated: true
 ---
 
-A través de este procedimiento se lleva a cabo la importación del archivo de registros contables creado por DocFinance.
+A través de este procedimiento se realiza la importación del archivo de registros contables<!-- registrazioni contabili --> creado por DocFinance.
 
-La importación se realiza a través de un flujo *Folder Monitor* de Bizlink.
+La importación se realiza mediante un flujo *Folder Monitor* de Bizlink.
 
-Por lo tanto, el archivo con los registros a importar será depositado en la carpeta monitoreada por el servicio, el cual se encargará de importarlos automáticamente.
+Por lo tanto, el archivo con los registros<!-- registrazioni --> a importar deberá depositarse en la carpeta monitoreada por el servicio, el cual se encargará de importarlo automáticamente.
 
-En este punto, el sistema generará los registros contables correspondientes, cerrando las partidas indicadas por DocFinance y reconociendo contablemente los movimientos en las cuentas mapeadas en el sistema (las causales contables deben tener el mismo código entre ERP y DocFinance).
+En este punto, el sistema procederá a crear los registros contables<!-- registrazioni contabili --> correspondientes, cerrando los movimientos abiertos<!-- partite --> indicados por DocFinance y contabilizando los movimientos<!-- movimenti --> en las cuentas<!-- conti --> mapeadas en el sistema (los tipos de transacción contable<!-- causali contabili --> deben tener el mismo código tanto en el ERP como en DocFinance).
 
-El resultado de la importación será visible en la cuadrícula inferior (mientras que en la superior se visualizarán las importaciones realizadas) y con los comandos de la barra de cinta, será posible eliminar la importación y visualizar el detalle de los errores encontrados durante la importación.
+El resultado de la importación será visible en la cuadrícula inferior (mientras que en la superior se visualizarán las importaciones realizadas) y con los comandos de la barra de herramientas se podrá eliminar la importación y visualizar el detalle de los errores encontrados durante la importación.
 
-:::danger ATENCIÓN
-La importación de los pagos requiere que en el trazado de DocFinance se haya pasado el id de la partida abierta por cerrar, generando así desde Fluentis un pago asociado a ella.
+:::danger ATENCIÓN<!-- ATTENZIONE -->
+La importación de pagos<!-- pagamenti --> prevé que en el archivo Docfinance se incluya el id del movimiento abierto<!-- partita aperta --> a cerrar, generando así por parte de Fluentis un pago asociado al mismo.
 
-Si por alguna razón el id de la partida no coincide con el que está presente en el trazado (modificaciones manuales de cualquier tipo realizadas después de la exportación de partidas que luego han sido gestionadas en DocFinance), se generarán pagos, pero no estarán correctamente vinculados a las partidas, que permanecerán abiertas. Se puede proceder a compensar dichas partidas o buscar los pagos importados en esta situación, eliminarlos y recrearlos manualmente vinculando correctamente la partida correspondiente. La operación se realiza, después de haber eliminado el pago, presionando el botón *Nuevo (Nuovo)* y luego *Crear desde partidas / pagos (Crea da partite / pagamenti)* y seleccionando la partida a cerrar.
+Si por cualquier motivo el id del movimiento<!-- partita --> no corresponde con el presente en el archivo (modificaciones manuales de cualquier tipo realizadas después de la exportación de movimientos que luego fueron gestionados en Docfinance), se generarán pagos<!-- pagamenti -->, pero estos no estarán correctamente asociados a los movimientos<!-- partite -->, los cuales permanecerán abiertos. Es posible proceder a compensar dichos movimientos<!-- partite --> o buscar los pagos<!-- pagamenti --> importados en esta situación, eliminarlos y recrearlos manualmente asociando correctamente el movimiento correspondiente. La operación se realiza, después de eliminar el pago<!-- pagamento -->, presionando el botón *Nuevo<!-- Nuovo -->* y luego *Crear desde movimientos / pagos<!-- Crea da partite / pagamenti -->* y seleccionando el movimiento a cerrar.
 :::
 
-
-:::note Info
-[Enlace a las especificaciones técnicas **Docfinance** (Link alle specifiche tecniche **Docfinance**)](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
+:::note Información<!-- Info -->
+[Enlace a las especificaciones técnicas de **Docfinance**](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
 :::

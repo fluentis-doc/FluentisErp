@@ -1,32 +1,36 @@
 ---
-title: ricerca plafond
+title:  Búsqueda de Plafond
 sidebar_position: 3
+ai_generated: true
 ---
 
-El formulario de búsqueda de Plafond 
+El formulario de búsqueda de Plafond
 
-- se encuentra en Administración (Amministrazione) > Declaraciones (Dichiarazioni) > Plafond
+- se encuentra en Administración > Declaraciones > Plafond<!-- Amministrazione > Dichiarazioni > Plafond -->
 
-- permite al usuario buscar los cálculos de Plafond creados anteriormente con el propósito de visualizarlos, modificarlos y, eventualmente, eliminarlos.
+- permite al usuario buscar los cálculos de Plafond creados previamente con el objetivo de visualizarlos, modificarlos y eventualmente eliminarlos.
 
-Desde este formulario también es posible ingresar manualmente un nuevo cálculo de Plafond a través del botón [**nuovo plafond**](/docs/finance-area/declarations/declarations/plafond/plafond-management).
+Desde este formulario también es posible ingresar manualmente un nuevo cálculo de Plafond mediante el botón [**Nuevo plafond**](/docs/finance-area/declarations/declarations/plafond/plafond-management).
 
-## Botones de la Ribbon Bar
 
-> - **Buscar (Ricerca):** Botón para buscar los cálculos de Plafond según los filtros de búsqueda establecidos en el encabezado del formulario.  
-> - **Nuevo (Nuovo):** Abre el formulario para ingresar un nuevo cálculo.  
-> - **Modificar (Modifica):** Permite modificar un cálculo ingresado previamente.  
-> - **Visualización (Visualizzazione):** Permite visualizar un cálculo ingresado previamente.  
-> - **Eliminar (Elimina):** Elimina un cálculo ingresado previamente.  
 
-## Tablas y parámetros preliminares para la gestión del Plafond
+## Botones de la barra Ribbon<!-- Pulsanti della Ribbon Bar -->
 
-La configuración del cálculo del plafond deriva únicamente de la tabla [**Tasas de IVA (Aliquote modalità IVA)**](/docs/configurations/tables/finance/vat-rates):  
+> - **Buscar<!-- Ricerca -->:** Botón para buscar los cálculos de Plafond según los filtros de búsqueda configurados en el encabezado del formulario.
+> - **Nuevo<!-- Nuovo -->:** Llama al formulario para ingresar un nuevo cálculo.
+> - **Modificar<!-- Modifica -->:** Permite modificar un cálculo ingresado previamente.
+> - **Visualización:** Permite visualizar un cálculo ingresado previamente.
+> - **Eliminar<!-- Elimina -->:** Elimina un cálculo ingresado previamente.
 
-Los campos de la tabla que están involucrados son:
 
-**Plafond**: el indicador define qué tasas están vinculadas a las declaraciones de intención: este indicador identifica la tasa que "**consume (consuma)**" mes a mes el plafond general disponible como exportadores habituales.  
+## Tablas y parámetros preliminares para la gestión de Plafond<!-- Tabelle e Parametri preliminari per la gestione del Plafond -->
 
-**vendita estera per plafond**: con este indicador se identifican las tasas de IVA, presentes en los registros de ventas del año yyyy, que **incrementan (incrementano)** el plafond disponible para el año yyyy+1 como exportador habitual.  
+La configuración del cálculo de plafond<!-- calcolo plafond --> deriva únicamente de la tabla [**Tipos de IVA**](/docs/configurations/tables/finance/vat-rates)<!-- Aliquote modalità IVA -->: 
 
-No tiene relevancia la causa contable y el registro titular de la anotación. Las notas de crédito, deducen de los movimientos los montos relacionados.
+Los campos relevantes de la tabla son:
+
+**Plafond**: la marca indica qué tipos de IVA<!-- aliquote --> están vinculados a las declaraciones de intención: esta opción identifica la tasa que "**consume**" mes a mes el plafond general disponible como exportador habitual.
+
+**Venta exterior para Plafond<!-- Vendita Estera per Plafond -->**: con esta marca se identifican los tipos de IVA<!-- aliquote iva -->, presentes en los registros de ventas del año yyyy, que **incrementan** el plafond disponible para el año yyyy+1 en calidad de exportador habitual.
+
+No tiene relevancia la causale<!-- causale --> contable ni el titular de la registrazione<!-- registrazione -->. Las notas de crédito revierten de los movimientos<!-- movimenti --> los importes relacionados.

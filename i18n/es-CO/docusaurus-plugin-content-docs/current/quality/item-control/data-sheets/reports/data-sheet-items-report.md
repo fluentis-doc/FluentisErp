@@ -1,20 +1,25 @@
 ---
-title: stampa scheda tecnica
+title: Impresión Ficha técnica
 sidebar_position: 1
+ai_generated: true
 ---
 
-El filtro de ejecución de reportes se encuentra en la ruta **Calidad > Controles de artículo > Fichas técnicas > Impresiones > stampa scheda tecnica**.  
+El filtro de ejecución del reporte se encuentra en la ruta **Calidad > Controles de artículo > Fichas técnicas > Impresiones > Impresión Ficha técnica<!-- Stampa Scheda tecnica -->**.
 
-El filtro de ejecución de reportes permite buscar los *Artículos* presentes en las *Fichas técnicas* para poder imprimirlos.  
-El reporte predeterminado es **scheda prodotto** - *Ficha técnica del Artículo* que muestra la lista de las *Propiedades* indicadas en la *Ficha técnica*.  
+:::important ¿Para qué sirve<!-- A cosa serve -->
+Este filtro de impresión, a diferencia de la impresión ejecutable desde el filtro y la gestión de las *Fichas técnicas<!-- Schede tecniche -->*, que permite imprimir la información general de la *Ficha<!-- Scheda -->*, permite indicar para cuál *Artículo<!-- Articolo -->* específico imprimir la información de la *Ficha técnica<!-- Scheda tecnica -->*.   
+:::
 
-### ![](/img/neutral/common/search.png) Búsqueda de Fichas Técnicas (Ricerca Schede tecniche)
-El formulario consta de un área de filtro y otra de resultados. Una vez que se han configurado todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados *Fichas técnicas* (lista de la izquierda).  
+El filtro de ejecución del reporte permite buscar los *Artículos<!-- Articoli -->* presentes en las *Fichas técnicas<!-- Schede tecniche -->* para poder imprimirlos.   
+El reporte predeterminado es **Ficha de Producto<!-- Scheda Prodotto -->** - *Ficha técnica del Artículo<!-- Scheda tecnica dell'Articolo -->*, que muestra la lista de *Propiedades<!-- Proprietà -->* indicadas en la *Ficha técnica<!-- Scheda tecnica -->*.   
 
-Desde la cuadrícula de resultados de las *Fichas técnicas*, es necesario seleccionar una única *Ficha técnica* deseada para poder visualizar, en la cuadrícula de resultados *Artículos* (lista de la derecha), la lista de los *Artículos* asociados a ella.  
+### ![](/img/neutral/common/search.png) Búsqueda de Fichas técnicas<!-- Ricerca Schede tecniche -->
+El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta hacer clic en el botón **Buscar<!-- Ricerca -->** para visualizar los resultados dentro de la cuadrícula de resultados *Fichas técnicas<!-- Schede tecniche -->* (lista de la izquierda).   
 
-Desde la cuadrícula de resultados de los *Artículos*, es necesario seleccionar los *Artículos* que se desean imprimir.  
+Desde la cuadrícula de resultados de las *Fichas técnicas<!-- Schede tecniche -->* es necesario seleccionar una única *Ficha técnica<!-- Scheda tecnica -->* deseada para poder visualizar, en la cuadrícula de resultados de *Artículos<!-- Articoli -->* (lista de la derecha), el listado de los *Artículos<!-- Articoli -->* asociados a ella.   
 
-Al final de la impresión de la **scheda prodotto** estándar, también se incluye la *Declaración de exención de responsabilidad* del *Tipo de declaración* asociada al *Artículo*. Si no está indicada, se mostrará la *Declaración de exención de responsabilidad* del *Tipo de declaración* indicada en *Tipo de declaración a imprimir en caso de que el artículo carezca de ella*.  
+Desde la cuadrícula de resultados de los *Artículos<!-- Articoli -->* se deben seleccionar los *Artículos<!-- Articoli -->* que se desean imprimir.   
+
+Al final de la impresión estándar **Ficha de Producto<!-- Scheda Prodotto -->** también se muestra la *Declaración de no responsabilidad<!-- Dichiarazione di non responsabilità -->* del *Tipo de declaración<!-- Tipo dichiarazione -->* asociada al *Artículo<!-- Articolo -->*. Si no se indica, se mostrará la *Declaración de no responsabilidad<!-- Dichiarazione di non responsabilità -->* del *Tipo de declaración<!-- Tipo dichiarazione -->* indicada en *Tipo de declaración a imprimir<!-- Tipo dichiarazione da stampare -->* en caso de que el artículo no la tenga.
 
 Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

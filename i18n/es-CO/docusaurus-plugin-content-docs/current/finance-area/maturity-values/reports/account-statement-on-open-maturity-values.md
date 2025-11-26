@@ -1,11 +1,12 @@
 ---
-title: estratto conto a partite aperte
+title: Extracto de cuenta por partidas abiertas
 sidebar_position: 4
+ai_generated: true
 ---
 
-Desde este formulario es posible lanzar el extracto de cuenta a partidas abiertas, que representa, de manera similar al extracto contable, la situación de las partidas abiertas para cada cliente o proveedor, para el cual se imprime una hoja distinta.
+Desde este formulario es posible ejecutar el extracto de cuenta por partidas abiertas<!-- estratto conto a partite aperte -->, que representa, de manera similar al extracto de cuenta contable, la situación de las partidas abiertas<!-- partite aperte --> para cada cliente o proveedor, para el cual se imprime una ficha detallada.
 
-El funcionamiento de la máscara es el mismo que se prevé para el **[cronograma al que se remite (scadenziario al quale si rinvia)](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**.
+El funcionamiento de la pantalla es el mismo previsto para el **[vencimientos al cual se remite](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**<!-- scadenziario al quale si rinvia -->.
 
 ---
 

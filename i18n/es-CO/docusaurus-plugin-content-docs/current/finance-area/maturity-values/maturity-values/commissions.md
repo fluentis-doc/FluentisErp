@@ -1,30 +1,31 @@
 ---
-title: commissioni
+title: Comisiones
 sidebar_position: 7
+ai_generated: true
 ---
 
-Este formulario permite visualizar las comisiones (proviciones de agentes) acumuladas y liquidadas.
+Este formulario permite visualizar las comisiones<!-- commissioni --> (comisiones de agentes<!-- provvigioni agenti -->) devengadas y liquidadas.
 
-Se refiere a la gestión de las comisiones de los agentes llevada a cabo por el módulo administrativo.
+Se refiere a la gestión de las comisiones de los agentes<!-- provvigioni agenti --> realizada desde el módulo administrativo.
 
-En la sección de cabecera se encuentran los filtros para Agente y algunos elementos contables, dado que las líneas relacionadas con las comisiones se ingresan ya en el momento en que la factura de venta que las determina es contabilizada.
+En la sección superior están disponibles los filtros para Agente y para algunos elementos contables, ya que las filas relativas a las comisiones<!-- provvigioni --> se insertan en el momento en que la factura de venta que las determina es contabilizada.
 
 :::note Nota
-**Se recuerda que dentro de la causal contable con la que se contabiliza la factura debe estar activo el indicador de gestión de comisiones, que asegurará que los datos sean valorados en la pestaña correspondiente dedicada a las comisiones presente en el registro contable.**
+**Se recuerda que dentro de la causa contable<!-- causale contabile --> con la que se contabiliza la factura debe estar activo el flag de gestión de comisiones<!-- provvigioni -->, el cual hará que se valoricen los datos en la pestaña dedicada a las comisiones<!-- provvigioni --> presente dentro del asiento contable<!-- registrazione contabile -->.**
 :::
 
-Otros elementos de filtrado son los cuatro indicadores que permiten buscar comisiones a liquidar, comisiones liquidadas o ambas, y comisiones no acumuladas o acumuladas.
+Otros elementos de filtro son los cuatro indicadores que permiten buscar comisiones<!-- provvigioni --> por liquidar, ya liquidadas o ambas, y comisiones<!-- provvigioni --> no devengadas o devengadas.
 
-**N.B.** más precisamente, la condición *ABIERTA (APERTA)* y *chiusa* se refiere al hecho de que aún haya un saldo por cobrar o si está todo cobrado (y, por lo tanto, la comisión *cerrada* no tendrá más movimientos).
+**N.B.** Más precisamente, la condición *ABIERTA<!-- APERTA -->* y *CERRADA<!-- CHIUSA -->* hace referencia a si aún queda algún saldo por cobrar o si ya está todo cobrado (y, por lo tanto, la comisión<!-- provvigione --> *cerrada* no tendrá otros movimientos<!-- movimenti -->).
 
-En la cuadrícula de detalle, las líneas corresponden a las comisiones calculadas en la factura ingresadas al momento de la contabilización de la factura misma.
+En la cuadrícula de detalle, las filas corresponden a las comisiones<!-- provvigioni --> calculadas en la factura, insertadas en el momento de la contabilización de la propia factura.
 
-Dependiendo del criterio de acumulación definido en el registro del agente, (por ejemplo, a pago efectuado) se crearán líneas de "anulación" (por ejemplo, en caso de pago parcial o de una de las varias partidas abiertas, se creará una línea correspondiente al valor del pago). Para verlas, es necesario expandir el detalle de la línea principal con el botón + a la izquierda de la línea.
+Según el criterio de devengo definido en la ficha del agente, (por ejemplo, al haberse realizado el pago) se crearán filas de "reverso" (por ejemplo en caso de pago parcial o de una de las varias partidas abiertas, se creará una fila correspondiente al valor del pago). Para verlas, es necesario expandir el detalle de la fila principal con el botón + presente a la izquierda de la fila.
 
-En el detalle (que luego se refleja en la línea principal) también se encuentra el indicador que se activa cuando la comisión se liquida al agente.
+En el detalle (que luego se reporta en la fila principal) también está el flag que se activa cuando la comisión<!-- provvigione --> es liquidada al agente.
 
 ![](/img/it-it/finance-area/maturity-values/commissions.png)
 
-:::tip ENLACE (LINK)
-Para el procedimiento de liquidación de comisiones específico de la gestión del módulo administrativo, ver [**aquí**](/docs/finance-area/professional-men/procedures/calculate-commissions).
+:::tip ENLACE<!-- LINK -->
+Para el procedimiento de liquidación de comisiones<!-- liquidazione provvigioni --> específico de la gestión desde el módulo administrativo, consulte [**aquí**](/docs/finance-area/professional-men/procedures/calculate-commissions)
 :::

@@ -1,13 +1,14 @@
 ---
-title: Búsqueda de Listas de Distribución (Ricerca Liste di Distribuzione)
+title: Búsqueda de Listas de Distribución
 sidebar_position: 2
+ai_generated: true
 ---
 
-La máscara de búsqueda **liste di distribuzione** permite buscar las listas ya ingresadas en Fluentis, además de permitir la inserción de nuevas.
+La pantalla de búsqueda **Listas de distribución<!-- Liste di distribuzione -->** permite buscar las listas ya ingresadas en Fluentis, además de permitir crear nuevas.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-El área de filtro está dedicada a albergar la lista de posibles tipos de datos gracias a los cuales es posible realizar una selección. Los filtros están típicamente en condición 'Y' (AND) y es posible especificar múltiples criterios de filtro simultáneamente.  
-En particular, es posible filtrar por el **nome** de la lista, y por el **nome oggetto** sobre el cual se basa la plantilla, por el **tipo contatto** y por el **operatore** de Fluentis que generó la lista.
+El área de filtro es aquella dedicada a alojar el listado de los posibles tipos de datos mediante los cuales es posible realizar una selección. Los filtros son típicamente en condición 'AND' y es posible especificar múltiples criterios de filtro de forma simultánea.
+En particular, es posible filtrar por el **Nombre<!-- Nome -->** de la lista, por el **Nombre del objeto<!-- Nome oggetto -->** sobre el que se basa la Plantilla<!-- Template -->, por el **Tipo de Contacto<!-- Tipo Contatto -->** y por el **operador<!-- operatore -->** de Fluentis que ha generado la lista.

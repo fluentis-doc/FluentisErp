@@ -1,16 +1,17 @@
 ---
-title: moduli bollati
+title: Módulos Numerados
 sidebar_position: 7
+ai_generated: true
 ---
 
-Este informe permite imprimir los módulos DDT añadiendo el encabezado de la empresa y los números de página para el año.
+Este reporte permite imprimir los módulos DDTti<!-- moduli DDTti --> colocando el encabezado de la empresa y los números de página para el año.
 
-Se recuerda que la impresión en módulos DDT ha sido abolida para varios registros fiscales. Se recomienda verificar periódicamente la normativa.
+Se recuerda que la impresión en módulos DDTti<!-- moduli DDTti --> ha sido abolida para varios registros fiscales. Se recomienda verificar periódicamente la normativa.
 
-**pagina iniziale**: el número se imprime y se refiere a la primera página a imprimir.
+**Página inicial**: el número se muestra en la impresión y se refiere a la primera página a imprimir.
 
-**Número de páginas a imprimir (Numero pagine da stampare)**: indica cuántas páginas deben imprimirse.
+**Número de páginas a imprimir**: indica cuántas páginas deben imprimirse.
 
-**anno**: se propone por defecto el año actual. El año se añadirá al número de página creando la cadena 1/2018; 2/2018, etc....
+**Año**: por defecto se propone el año actual. El año se añadirá al número de página creando la cadena 1/2018; 2/2018, etc.
 
-**titolo**: cadena libre que se imprimirá directamente en la posición del título. Puede utilizarse para titular la impresión frente a la opción que desactiva el encabezado presente en los diversos informes que se pueden imprimir utilizando los DDT.
+**Título**: cadena libre que se mostrará directamente en la impresión en la posición del título. Puede utilizarse para titular la impresión frente a la opción que desactiva el encabezado presente en los distintos reportes que se pueden imprimir utilizando los DDTti<!-- DDTti -->.

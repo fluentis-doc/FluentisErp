@@ -1,28 +1,29 @@
 ---
-title: storico ammortamenti
+title: Historial de depreciaciones
 sidebar_position: 2
+ai_generated: true
 ---
 
-La máscara del **storico ammortamenti*** permite visualizar el detalle, activo por activo, del resultado del procesamiento de las amortizaciones técnicas específicas del *Controlling*. En la máscara tenemos visibilidad de los siguientes campos:
+La interfaz del ***Historial de depreciaciones<!-- Storico ammortamenti -->*** permite visualizar el detalle, bien por bien, del resultado del procesamiento de las depreciaciones técnicas específicas de *Controlling*. En la interfaz tenemos visibilidad de los siguientes campos:
 
 - El [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia
 
-- El [***Centro empresarial***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de atribución de la amortización
+- El [***Centro empresarial***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de asignación de la depreciación<!-- Centro aziendale -->
 
-- El ***Año*** y el ***Período*** de referencia
+- El ***Año*** y el ***Periodo*** de referencia
 
-- El ***Porcentaje*** utilizado, si el cálculo es a porcentaje
+- El ***Porcentaje*** utilizado, si el cálculo es porcentual
 
-- La ***Cantidad*** del período, si el cálculo es a cantidad
+- La ***Cantidad*** del periodo, si el cálculo es por cantidad
 
-- El ***Importe*** de la amortización
+- El ***Importe*** de la depreciación<!-- Importo dell'ammortamento -->
 
-- El ***Costo unitario***, si el cálculo es a cantidad
+- El ***Costo unitario***, si el cálculo es por cantidad
 
-- El ***Subcuenta*** de costo utilizado
+- El ***Subcuenta***<!-- Sottoconto --> de costo utilizado
 
-- Las referencias al ***Número*** y ***Descripción*** del activo de línea
+- las referencias al ***Número*** y ***Descripción*** del bien de la línea<!-- cespite di riga -->
 
-A partir de este detalle calculado por el formulario de **elaborazione periodi***, ***FluentisERP*** habrá creado un ***Registro extracuontable de área*** que presentará la analítica valorizada por los totales de cuenta/centro y rango de fechas pertinentes a esta fuente de datos.
+A partir de este detalle, calculado desde la interfaz de ***Procesamiento de periodos<!-- Elaborazione periodi -->***, ***FluentisERP*** habrá creado un ***Registro extracontable de área*** que presentará la analítica valorizada por los totales de cuenta/centro y el rango de fechas correspondiente a esta fuente de datos.
 
 No está permitido eliminar, modificar ni insertar datos en la cuadrícula.

@@ -1,33 +1,33 @@
 ---
-title: FAQ Inicio (FAQ Home)
+title: FAQ Inicio
 sidebar_position: 2
+ai_generated: true
 ---
 
 <details>
 
-  <summary>1. Al ingresar el Número de Identificación Fiscal (Partita IVA) en un nuevo registro de contacto y hacer clic en Proponer datos (Proponi dati) en la barra de ribbon, se completan los campos genéricos. ¿Hay un enlace directo a las cámaras de comercio o algún otro servicio similar? (Inserendo la Partita IVA in una nuova anagrafica contatto e cliccando Proponi dati nella ribbon bar, vengono completati i campi generici. C'è un collegamento diretto alle camere di commercio o altro servizio simile?)</summary>
+  <summary>1. Al ingresar el NIT<!-- Partita IVA --> en una nueva ficha<!-- anagrafica --> de contacto y hacer clic en Proponer datos<!-- Proponi dati --> en la ribbon bar, se completan los campos genéricos. ¿Existe una conexión directa con las cámaras de comercio u otro servicio similar? </summary>
   
-Fluentis está conectado con los archivos VIES, proporcionados por la comunidad europea, por lo que se puede obtener información sobre muchas empresas italianas y europeas. Al ingresar el número de la Partita IVA, se propondrán los datos conocidos.
+Fluentis está conectado con los archivos VIES, puestos a disposición por la Comunidad Europea, por lo que se puede obtener información de muchas empresas italianas y europeas. Al ingresar el número del NIT<!-- partita iva -->, se propondrán los datos conocidos.
 
 </details>
 
 <details>
 
-  <summary>2. ¿Es posible colorear a gusto las celdas de las cuadrículas de búsqueda si contienen un determinado valor? (E' possibile colorare a piacimento le celle delle griglie di ricerca se contengono un determinato valore?) </summary>
+  <summary>2. ¿Es posible colorear a gusto las celdas de las cuadrículas de búsqueda si contienen un determinado valor? </summary>
 
-Sí, esta funcionalidad es posible utilizando el **Formato condicional (Conditional formatting)**. Para elegir el color que se otorgará a una celda que contenga un valor determinado, colóquese en el encabezado de la columna, luego clic derecho > Formato condicional (Conditional Formatting) > Administrar reglas (Manage rules). En la ventana emergente, seleccione **Nueva regla (New Rule)**, para abrir la ventana de Nueva regla de formato.  
-Aquí seleccione el tipo de regla deseada de la lista. En la sección **Editar la descripción de la regla (Edit the rule description)**, seleccione **[...]** y en la ventana emergente, ingrese el primer valor que la columna podría asumir; guarde.  
-Luego haga clic en **Formato (Format)** y en la ventana emergente, pestaña **Relleno (Fill)**, elija el color que la columna debe adoptar si el valor coincide con el que acaba de ingresar. Confirme.  
-Cree una nueva regla para cada valor que la columna puede asumir. Guarde y actualice la ventana para visualizar el resultado.
+Sí, esta funcionalidad es posible utilizando el **Formato condicional<!-- Conditional formatting -->**. Para elegir el color a asignar a una celda que contiene un valor determinado, ubíquese en el encabezado de la columna, luego clic derecho > Formato condicional<!-- Conditional Formatting --> > Administrar reglas<!-- Manage rules -->. En la ventana emergente, seleccione **Nueva regla<!-- New Rule -->** para abrir la pantalla de Nueva regla de formato<!-- New Formatting Rule -->.
+Aquí seleccione el tipo de regla deseado de la lista. En la sección **Editar la descripción de la regla<!-- Edit the rule description -->**, seleccione **[...]** y en la ventana emergente, ingrese el primer valor que la columna podría tener; guarde.
+Luego haga clic en **Formato<!-- Format -->** y en la ventana emergente, pestaña **Relleno<!-- Fill -->**, elija el color que debe tomar la columna si el valor corresponde al que acaba de ingresar. Confirme.
+Cree una nueva regla para cada valor que la columna pueda tener. Guarde y actualice la pantalla para ver el resultado.
 
 </details>
 
-
 <details>
 
-  <summary>3. ¿Es posible ocultar a un usuario un determinado tipo de factura? (E' possibile nascondere ad un utente una determinata tipologia di fattura?) </summary>
+  <summary>3. ¿Es posible ocultar a un usuario un determinado tipo de factura? </summary>
   
-Sí, mediante las <b>Restricciones (Restrizioni)</b>. Estas impiden a los usuarios crear, ver o modificar ciertos tipos de documentos. A continuación se presenta un ejemplo para impedir que un usuario utilize el Tipo de factura con código FVITDIF. Recordamos que es necesario agregar la restricción también en el perfil del usuario en la cuadrícula correspondiente.  
+Sí, con las <b>Restricciones<!-- Restrizioni --></b>. Estas impiden a los usuarios crear, visualizar o modificar determinados tipos de documentos. A continuación, se muestra el ejemplo para impedir que un usuario utilice el Tipo de factura<!-- Tipo fattura --> con código FVITDIF. Recordamos que es necesario añadir la Restricción<!-- Restrizione --> también en el perfil Arm del usuario, en la cuadrícula correspondiente.            
 
 ![](/img/it-it/sales/sales-invoices/search-sales-invoices/restriction.png)
 

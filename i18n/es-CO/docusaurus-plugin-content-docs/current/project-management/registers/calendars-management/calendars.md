@@ -1,27 +1,28 @@
 ---
-title: gestione calendari
+title: Gestión de Calendarios
 sidebar_position: 1
+ai_generated: true
 ---
 
-La **gestione calendari** permite gestionar los calendarios de los recursos. 
+La **Gestión de calendarios<!-- Gestione calendari -->** permite gestionar los calendarios<!-- calendari --> de los recursos.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-En el área de filtrado es posible establecer una serie de filtros para poder buscar de manera más precisa los calendarios presentes en el sistema.  
-Para crear un nuevo Calendario, los campos a ingresar son:
+En el área de filtro es posible establecer una serie de filtros para realizar una búsqueda más específica de los calendarios<!-- calendari --> presentes en el sistema<!-- sistema -->.  
+Para crear un nuevo Calendario<!-- Calendario -->, los campos a ingresar son:
 
-**nome**: contiene el nombre del recurso;  
+**Nombre**: contiene el nombre del recurso;
 
-**user**: es posible conectar al operador;  
+**Usuario<!-- User -->**: es posible vincular al operador<!-- operatore -->;
 
-**Fecha de inicio/Fecha de fin (Data inizio/Data fine)**: contiene las fechas de inicio y fin de la relación;  
+**Fecha de inicio/Fecha de fin<!-- Data inizio/Data fine -->**: contiene las fechas de inicio y fin de relación;
 
-En la cuadrícula inferior es posible ingresar los Operadores y sus respectivos derechos de visualización, modificación y eliminación del calendario; en particular:
+En la cuadrícula inferior es posible agregar los Operadores<!-- Operatori --> y los respectivos derechos de visualización, modificación y eliminación del calendario<!-- calendario -->; en particular:
 
-**lettura**: permite elegir entre Ninguno, Detalles completos (el operador seleccionado verá los detalles completos de este calendario), Libre/Ocupado (el operador seleccionado verá si el usuario está libre o ocupado);  
+**Lectura<!-- Lettura -->**: permite elegir entre Ninguno, Detalles completos (el operador seleccionado verá los detalles completos de este calendario<!-- calendario -->), Libre/Ocupado (el operador seleccionado verá si el usuario está libre u ocupado);
 
-**modifica**: permite elegir entre Ninguno, Crear/Cambiar todos, Crear/Cambiar los propios;  
+**Modificación<!-- Modifica -->**: permite elegir entre Ninguno, Crear/Modificar todos, Crear/Modificar los propios derechos de modificación del calendario<!-- calendario -->;
 
-**cancella**: permite elegir entre Ninguno, Anular todos, Eliminar los propios.
+**Eliminar<!-- Cancella -->**: permite elegir entre Ninguno, Cancelar todos, Eliminar los propios.

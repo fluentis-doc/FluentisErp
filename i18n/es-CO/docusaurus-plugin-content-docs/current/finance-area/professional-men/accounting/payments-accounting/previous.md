@@ -1,12 +1,13 @@
 ---
-title: precedenti
+title: Anteriores
 sidebar_position: 4
+ai_generated: true
 ---
 
-Desde la pestaña de precedentes, es posible proceder con la anulación de las contabilizaciones realizadas. La anulación será posible solo si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutados). Un doble clic en la sección de registros permitirá visualizar la contabilización correspondiente.
+Desde la pestaña de registros anteriores<!-- scheda precedenti --> es posible proceder a la anulación de las contabilizaciones<!-- contabilizzazioni --> realizadas. La anulación solo será posible si el periodo aún es modificable (no se ha realizado la impresión del libro diario<!-- stampa libro giornale --> ni el cierre de cuentas<!-- chiusura conti -->). Un doble clic en la sección de registros<!-- registrazioni --> permitirá visualizar el asiento contable<!-- registrazione contabile --> correspondiente.
 
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Búsqueda (Ricerca) | Busca la lista de las creaciones realizadas. |
-| Deshacer contabilización (Rollback contabilizzazione) | Con este botón se eliminará toda la contabilización realizada, junto con todos los compensos asociados. |
-| Deshacer registros (Rollback registrazioni) | El botón restaura la contabilización seleccionada. |
+| Buscar<!-- Ricerca --> | Busca la lista de creaciones realizadas. |
+| Reversión de contabilización<!-- Rollback contabilizzazione --> | Con este botón se eliminará toda la contabilización<!-- contabilizzazione --> efectuada, junto con todos los pagos<!-- compensi --> asociados. |
+| Reversión de registros<!-- Rollback registrazioni --> | El botón ejecuta la restauración del registro<!-- registrazione --> seleccionado. |

@@ -1,100 +1,104 @@
 ---
-title: Nueva Recepción de Mercancías
+title: Nuovo Ricevimento merci
 sidebar_position: 3
 ---
 
-El formulario se abre a través de la ruta **Compras > Recepción de Mercancías > Crear Recepción de Mercancías** o desde el filtro de búsqueda de la Recepción de Mercancías, mediante el botón *Nuevo*.
+La form si apre tramite il percorso **Acquisti > Ricevimento merci > Crea ricevimento merci** oppure dal filtro di ricerca del Ricevimento merci, mediante il pulsante *Nuovo*.
 
-## *Cómo crear una Recepción de Mercancías*
+## *Come creare un ricevimento merci*
 
 <details>
  
 <summary>Clicca per vedere i passaggi fondamentali</summary>
-
-1. **Inserta los datos obligatorios**: *Tipo* y *Proveedor*. *Año*, *Número* y *Fecha Inserción* se propondrán automáticamente.  
-
-2. **Inserta los Artículos**: mediante doble clic en el campo *Código artículo*, se abre la ayuda de artículos que permite buscar y seleccionar un artículo existente. Todos los demás datos de la fila, como *unidad de medida*, *cantidad*, *precio*, se propondrán automáticamente, pero pueden modificarse.  
-Como alternativa, es posible seleccionar como *Tipo fila* un *Artículo no codificado* e insertar manualmente los datos posteriores.
-
-3. **Inserta posibles informaciones adicionales** en las pestañas *Lotes y Números de serie* y *Datos artículo*.
-
+ 
+1. **Inserisci i dati obbligatori**: *Tipo* e *Fornitore*. *Anno*, *Numero* e *Data Inserimento* saranno proposti in automatico.  
+ 
+2. **Inserisci gli Articoli**: mediante doppio click nel campo *Codice articolo* si apre l’help articoli che permette di cercare e selezionare un articolo esistente. Tutti gli altri dati della riga, come *unità di misura*, *quantità*, *prezzo*, saranno proposti in automatico, ma possono essere modificati.
+In alternativa è possibile selezionare come *Tipo riga* un *Articolo non codificato* e inserire manualmente i dati successivi.
+ 
+3. **Inserisci eventuali informazioni aggiuntive** nei tab *Lotti e Serial Number* e *Dati articolo*.
+ 
 </details>
 
-## **1. Datos obligatorios**
+## **1. Dati obbligatori**
 
-Para crear la Recepción de Mercancías, el usuario debe insertar los siguientes datos:
+Per creare il ricevimento merci, l'utente deve inserire i seguenti dati:
 
-- **Proveedor**: puede insertarse usando la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  
-- **Tipo documento**: predefinido en la tabla [Tipos de Recepción de Mercancías](/docs/configurations/tables/purchase/goods-receipt-types). Este campo determina el rango de numeración del documento que se está insertando y propone automáticamente el *Número* en base a la fecha de inserción y al último número insertado.  
-- **Número de recibo**: se propone automáticamente basándose en el tipo, pero puede modificarse manualmente respetando siempre la regla de progresión entre fecha y número.  
-- **Fecha recepción**: se propone automáticamente la fecha actual, pero puede modificarse manualmente respetando siempre la regla de progresión entre fecha y número.  
-- **Proyecto**: ubicado en la parte inferior de la cuadrícula de artículos; representa el proyecto que se asociará al documento y puede seleccionarse mediante la ayuda de proyectos.
+- **Fornitore**: può essere inserito usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).  
+- **Tipo documento**: predefinito nella tabella [Tipi ricevimento merci](/docs/configurations/tables/purchase/goods-receipt-types). Questo campo determina il range di numerazione del documento che si sta inserendo e propone automaticamente il *Numero* in base alla data inserimento e all'ultimo numero inserito.   
+- **Numero ricevuta**: viene proposto automaticamente in base al tipo, ma può essere modificato manualmente sempre rispettando la regola di progressione tra data e numero.  
+- **Data ricevimento**: viene proposta automaticamente la data corrente, ma può essere modificata manualmente sempre rispettando la regola di progressione tra data e numero.
+- **Progetto**: posizionato nella parte inferiore alla griglia articoli; rappresenta il progetto da associare al documento e può essere selezionato tramite l'apposito help progetti.
 
-## **2. Artículos**
+## **2. Articoli**
 
-- **Tipo fila** ofrece la posibilidad de seleccionar, desde la lista desplegable, artículos con diferentes características:  
-> - *Artículo codificado*: son los artículos codificados en el registro y pueden contabilizarse en contabilidad analítica y registrarse en almacén. <br />
-> - *Artículo de obsequio*: se gestiona como un artículo codificado o no codificado para fines fiscales y de almacén, pero al ser un obsequio se contabiliza por separado en los resúmenes del documento y, en base al flag Rivalsa iva, se calcula o no el importe del IVA del obsequio a cargo de la parte correspondiente.
+- **Tipo riga** offre la possibilità di selezionare, dalla combo-box, articoli con caratteristiche diverse:
+> - *Articolo codificato*: sono gli articoli codificati in anagrafica e possono essere contabilizzati in contabilità analitica e registrati in magazzino. <br />
+> - *Articolo omaggio*: viene gestito come un articolo codificato o non codificato ai fini fiscali e di magazzino, ma essendo un omaggio viene conteggiato separatamente nei riepiloghi del documento e in base al flag Rivalsa iva viene calcolato l'importo dell'iva dell'omaggio a carico del soggetto oppure no.
 
 :::note Nota
-Si se comienza directamente con la inserción del artículo, su clase, el código y el tipo de fila (*Artículo codificado*) se insertan automáticamente.
+Se si parte direttamente con l'inserimento dell'articolo, la sua classe, il codice e il tipo riga (*Articolo codificato*) vengono inseriti automaticamente.
 :::
 
-- **Código**: hace referencia al código de artículo (barcode) insertado en la *Ficha de artículo > pestaña Código barcode*.
+- **Codice**: fa riferimento al Codice articolo barcode inserito nell'*Anagrafica articoli > tab Codice barcode*. 
 
-- **Clase/Código/Descripción de artículo**: pueden insertarse manualmente o con la ayuda de campo, la cual propondrá todos los datos relativos insertados en la Ficha de artículo. Tras la inserción del artículo, su descripción se rellenará automáticamente a partir de la ficha. Si el artículo tiene Variantes, será posible seleccionar la variante deseada desde la pestaña Datos artículo.
+- **Classe/Codice/Descrizione articolo**: si possono inserire manualmente oppure con l'ausilio dell'help di campo il quale proporrà tutti i dati relativi inseriti nell'Anagrafica articolo. Dopo l'inserimento dell'articolo, la sua Descrizione sarà ripresa automaticamente dall'anagrafica. Se l'articolo ha Varianti, sarà possibile selezionare la variante desiderata dal tab Dati articolo.
 
-- **Código/Variante de artículo de proveedor**: hace referencia al código que el proveedor utiliza para identificar el artículo y a la variante, si la hubiera; este dato se propone automáticamente si en la ficha del artículo, pestaña [Proveedores preferenciales](/docs/erp-home/registers/items/create-new-item/) se ha asociado un artículo de proveedor.
+- **Codice/Variente articolo fornitore**: fa riferimento al codice che il fornitore utilizza per identificare l'articolo e all'eventuale variante; questo dato viene proposto in automatico se nell'anagrafica dell'articolo, tab [Fornitori preferenziali](/docs/erp-home/registers/items/create-new-item/) è stato associato un articolo fornitore. 
 
-- **Unidad de medida**: se propone la unidad de medida principal del artículo, pero en caso de que en la ficha del artículo estén codificadas unidades de medida alternativas, el usuario tiene la posibilidad de elegir otra.
+- **Unità di misura**: viene proposta l'unità di misura principale dell'articolo, ma nel caso in cui nell'anagrafica articolo siano codificate unità di misura alternative l'utente ha la possibilità di sceglierne un'altra.
 
-- **Cantidad del documento**: representa la cantidad de la U.M. principal; se introduce la cantidad referida a la orden de compra cubierta, no es un dato obligatorio.  
+- **Quantità documento**: rappresenta la quantità della U.M. principale; viene inserita la quantità riferita all'ordine fornitore evaso, non è un dato obbligatorio.   
 
-- **Cantidad recibida**: representa la cantidad efectivamente recibida.
+- **Quantità ricevuta**: rappresenta la quantità effettivamente ricevuta.  
 
-- **Precio**: representa el *precio* presente en la orden de compra, si la línea de recepción ha cubierto una línea de orden de compra, o el *costo último* de la ficha de artículos.
+- **Prezzo**: rappresenta il *prezzo* presente nell'ordine fornitore, se la riga ricevimento ha evaso una riga ordine fornitore, o il *costo ultimo* di anagrafica articoli.
 
-- **Referencia de orden**: si la línea se ha creado cubriendo una línea de orden de compra, se muestra el número de orden cubierto.
+- **Riferimento ordine**: se la riga è stata creata evadendo una riga ordine fornitore viene riportato il numero ordine evaso.
 
-- **Ubicación**: si la causal tiene una ubicación predeterminada, se propone dicha ubicación; de lo contrario, puede insertarse [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) si el almacén se gestiona con ubicaciones.
+- **Ubicazione**: se la causale ha un'ubicazione di default viene proposta tale ubicazione altrimenti può essere inserita [manualmente ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) se il magazzino è gestito ad ubicazioni.  
 
-#### Botones específicos
+#### Pulsanti specifici 
 
-> **Ejecución desde orden**: permite crear una Recepción de Mercancías (ricevimento merci) cubriendo las líneas de una orden de compra (ordine fornitore) con el procedimiento [Evasión de órdenes de proveedor](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note).  
+> **Evasione da ordine**: permette di di creare un ricevimento merci evadendo le righe di un ordine fornitore con la procedura [Evasione da ordini fornitori](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note).   
 >
-> **Gestión de embalajes**: permite abrir la gestión de embalajes retornables utilizados en el documento de compra. El botón se activa si el documento está guardado, pero no cargado.  
-> Con un clic en este botón se abre el formulario correspondiente donde insertar la cantidad, seleccionar la línea y ejecutar la transferencia del embalaje seleccionado en las filas de artículo haciendo clic en el botón *Execute*. En este formulario se muestran los artículos que se han insertado con naturaleza *Embalaje* y que están presentes en la tabla de [Embalajes a retornar](/docs/configurations/tables/logistics/package-to-be-returned).
+> **Gestione imballi**: permette l'apertura della gestione degli imballi a rendere usati nel documento di acquisto. Il pulsante diventa attivo se il documento è salvato, ma non caricato.   
+> Con clic su questo pulsante si apre la form corrispondente dove inserire la quantità, selezionare la riga ed eseguire il trasferimento dell'imballo selezionato nelle righe articolo cliccando sul pulsante *Execute*. In questa form vengono riportati gli articoli che sono stati inseriti con natura *Imballo* e che sono presenti nella tabella degli [Imballi a rendere](/docs/configurations/tables/logistics/package-to-be-returned).
 
-### 2.1 Lotes 
+### 2.1 Lotti
 
-En las dos cuadrículas pueden insertarse los lotes y números de serie que deben cargarse en el almacén (magazzino).  
-Si el artículo no prevé la gestión de [Lotes y Números de serie](/docs/erp-home/registers/items/create-new-item), esta pestaña estará deshabilitada.
+Nelle due griglie possono essere inseriti i lotti e numeri seriali che devono essere caricati nel magazzino. 
+Se l'articolo non prevede la gestione dei [Lotti e Serial Number](/docs/erp-home/registers/items/create-new-item), questo tab sarà disabilitato.   
 
-#### Botón específico
+#### Pulsante specifico 
 
-> **Cancelar lote**: permite eliminar la fila de lote seleccionada
+> **Cancella lotto**: permette di cancellare la riga lotto selezionata
 
-### 2.2 Datos de artículo
+### 2.2 Dati articolo
 
-Dentro de esta pestaña se incluyen datos adicionales relativos al artículo.
+All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
 
-- **Artículo**: muestra el artículo seleccionado en la cuadrícula superior.
+- **Articolo**: visualizza l'articolo selezionato nella griglia superiore.   
 
-- **Variante**: en este campo es posible seleccionar una variante del artículo de entre las previamente codificadas en la pestaña [Variantes](/docs/erp-home/registers/items/create-new-item) de la ficha de artículo. Si en la lista de precios se insertaron precios y/o descuentos diferentes para cada variante, se actualizarán cuando se seleccione una variante diferente del artículo.
+- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
 
-- **Almacén y Causal**: permite insertar el almacén y la causal de referencia a utilizar para la carga de los artículos correspondientes en almacén. Si la línea de artículo se ha tomado de una orden de compra, se propondrán el almacén y la causal insertados en la orden; de lo contrario, pueden insertarse manualmente para cada línea de artículo. Si los campos no están valorados, en el momento de la carga de la Recepción de Mercancías se utilizarán los insertados en los parámetros de pedidos de proveedores, pestaña [Carga](/docs/configurations/parameters/purchase/purchase-orders-parameters).
+- **Magazzino e causale**: permette di inserire il magazzino e la causale di riferimento da utilizzare per il carico degli articoli relativi in magazzino. Se la riga articolo è stata ripresa a un ordine di acquisto, saranno proposti il magazzino e la causale inseriti nell'ordine, altrimenti possono essere inseriti manualmente per ciascuna riga articolo. 
 
-- **Proyecto**: representa el proyecto que se asociará al documento. Si en la cabecera del documento se ha insertado un proyecto, éste se verá reflejado en todas las líneas de artículo; alternativamente, puede seleccionarse mediante la ayuda de proyectos.
+:::tip Ricorda
+Se i campi di Magazzino e Causale non sono valorizzati, al momento del carico del ricevimento merci saranno utilizzati quelli inseriti nei parameti ordini fornitori, tab [Carico](/docs/configurations/parameters/purchase/purchase-orders-parameters).  
+:::
 
-- **Unidad de medida/Cantidad alternativa**: si en la [ficha del artículo](/docs/erp-home/registers/items/create-new-item) se ha codificado una unidad de medida alternativa con el flag *Predeterminado* y en los Parámetros de pedidos de proveedor se ha activado el flag *Propuesta automática U.M. alternativa*, estos valores se propondrán automáticamente al momento de la inserción del artículo.
+- **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.
 
-### 2.3 Analítica 
+- **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo.
 
-Puede contener información sobre los centros de costo/beneficio en los que se distribuyen los valores de los artículos.
+### 2.3 Analitica
 
-Estos datos pueden insertarse manualmente o automáticamente (en caso de que los centros de costo/beneficio se hayan añadido previamente en la *ficha de contacto*, la *ficha de artículo* o en el *plan de cuentas*).
+Può contenere informazioni sui centri di costo/profitto sui quali sono distribuiti i valori degli articoli.   
 
-#### Botones específicos
+Questi dati possono essere inseriti manualmente oppure automaticamente (nel caso in cui i centri di costo/profitto siano stati inseriti precedentemente nell'*anagrafica contatto*, *anagrafica articolo* oppure nel *piano dei conti*).   
+
+#### Pulsanti specifici
 
 import DeleteCostCenter from './../../import/buttons/delete-cc.md'
 import DeleteProfitCenter from './../../import/buttons/delete-pc.md'
@@ -102,7 +106,7 @@ import DeleteProfitCenter from './../../import/buttons/delete-pc.md'
 > <DeleteCostCenter />
 > <DeleteProfitCenter />
 
-### 2.4 Datos extra
+### 2.4 Extra data
 
 import DocItemExtraData from './../../import/sections/doc-item-extradata.md'
 

@@ -1,26 +1,27 @@
 ---
-title: Junta de Progreso de Oportunidades (Opportunity Progress KanBan Board)
+title: Opportunity Progress KanBan Board
 sidebar_position: 5
+ai_generated: true
 ---
 
-El procedimiento **opportunity progress kan ban board** tiene como objetivo mostrar gráficamente, mediante el uso de la metodología Kan Ban, las **Oportunidades** ingresadas en Fluentis, divididas por las **porcentajes de probabilidad de éxito** de las mismas.  
-Con la ayuda de los filtros, se puede visualizar: un solo tipo de oportunidad (**Tipo Oportunidad**), más oportunidades ingresadas por el mismo usuario (**Operador**), más oportunidades con la misma probabilidad de éxito (**Probabilidad Éxito**).
+El procedimiento **Opportunity Progress Kan Ban Board** tiene como objetivo mostrar gráficamente, mediante el uso de la metodología Kan Ban, las **Oportunidades<!-- Opportunità -->** registradas en Fluentis, divididas según los **porcentajes de probabilidad de éxito<!-- percentuali di probabilità di successo -->** de dichas oportunidades<!-- opportunità -->.
+Con la ayuda de los filtros es posible visualizar: un solo tipo de oportunidad (**Tipo de Oportunidad<!-- Tipo Opportunità -->**), varias oportunidades<!-- opportunità --> ingresadas por el mismo usuario (**Operador<!-- Operatore -->**), varias oportunidades<!-- opportunità --> con la misma probabilidad de éxito (**Probabilidad de Éxito<!-- Probabilità Successo -->**).
 
-El área de filtro es la dedicada a albergar la lista de los posibles tipos de datos a partir de los cuales es posible hacer una selección. Los filtros suelen estar en condición 'Y' (AND) y es posible especificar múltiples criterios de filtro al mismo tiempo.
+El área de filtro es la que se dedica a albergar la lista de los posibles tipos de datos a través de los cuales se puede realizar una selección. Los filtros típicamente funcionan en condición 'AND' y es posible especificar varios criterios de filtro simultáneamente.
 
-En el área inferior a la de filtro se encuentra la **Junta Kan Ban (Kan Ban Board)**, donde se visualizan las oportunidades divididas por porcentajes de probabilidad de éxito.  
-Cada columna de la Junta Kan Ban está compuesta por los siguientes elementos:
+En el área debajo del filtro se encuentra el **Kan Ban Board**, donde se muestran las oportunidades<!-- opportunità --> divididas por porcentajes de probabilidad de éxito<!-- percentuali di probabilità di successo -->.
+Cada columna del Kan Ban Board se compone de los siguientes elementos:
 
-Una **banda superior** donde se muestran, en orden, los siguientes datos:  
-- % de probabilidad de éxito;  
-- Contador (Count): corresponde al número de oportunidades que se encuentran en esa columna;  
-- Total Neto (Total Net Amount): corresponde al valor total de las oportunidades presentes en la columna, neto de los descuentos aplicados.  
+Una **banda superior** donde se visualizan, en orden, los siguientes datos:
+- % de probabilidad de éxito<!-- probabilità di successo -->;
+- Conteo: corresponde al número de oportunidades<!-- opportunità --> que se encuentran en esa columna;
+- Importe Neto Total: corresponde al valor total de las oportunidades<!-- opportunità --> presentes en la columna, neto de los descuentos aplicados.
 
-Una **banda inferior** donde se visualizan las oportunidades individuales. Para cada oportunidad se muestran, en orden, los siguientes datos:  
-- Nombre del contacto titular de la oportunidad;  
-- Título de la oportunidad;  
-- Usuario de Fluentis que ingresó la oportunidad;  
-- Etapa del Pipeline Flux en la que se encuentra la oportunidad;  
-- Total neto de la oportunidad.
+Una **banda inferior** donde se visualizan las oportunidades<!-- opportunità --> individuales. Para cada oportunidad se muestran, en orden, los siguientes datos:
+- Nombre del contacto titular de la oportunidad<!-- opportunità -->;
+- Título de la oportunidad<!-- opportunità -->;
+- Usuario de Fluentis que ha ingresado la oportunidad<!-- opportunità -->;
+- Etapa del Pipeline Flux en la que se encuentra la oportunidad<!-- opportunità -->;
+- Total neto de la oportunidad<!-- opportunità -->.
 
-Al hacer doble clic en una oportunidad individual, se accede a la vista/modificación de la misma.
+Haciendo doble clic sobre una oportunidad<!-- opportunità --> individual se accede a la visualización/modificación de esa misma oportunidad<!-- opportunità -->.

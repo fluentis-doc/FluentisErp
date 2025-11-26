@@ -1,34 +1,35 @@
 ---
-title: ordini interni ddmrp
+title: Órdenes internas DDMRP
 sidebar_position: 4
+ai_generated: true
 ---
 
-Los **ordini interni ddmrp** son pedidos emitidos por una instalación (cualquier instalación excluida la fábrica) hacia otra instalación (incluida la fábrica) que deberá proporcionar la mercancía solicitada.
+Las Órdenes Internas DDMRP<!-- Ordini Interni DDMRP --> son órdenes emitidas por una instalación<!-- facility --> (cualquier instalación<!-- facility --> excepto la fábrica), hacia otra instalación<!-- facility --> (incluida la fábrica) que deberá suministrar la mercancía solicitada.
 
-La instalación solicitante actuará como cliente frente a la instalación proveedora, la cual actuará como proveedor.
+La instalación<!-- facility --> solicitante actuará como cliente frente a la instalación<!-- facility --> proveedora, que actuará como proveedor.
 
-Estos pedidos tienen, por lo tanto, la doble naturaleza de pedidos de aprovisionamiento en la instalación que debe recibir la mercancía, y de pedidos que generan necesidad en la instalación que debe enviar la mercancía.
+Estas órdenes tienen por tanto la doble naturaleza de órdenes de aprovisionamiento en la instalación<!-- facility --> que debe recibir la mercancía, y de órdenes que generan necesidad<!-- fabbisogno --> en la instalación<!-- facility --> que debe enviar la mercancía.
 
-El encabezado del pedido contiene el almacén de destino, que corresponde a la instalación que debe recibir la mercancía y que, por lo tanto, la solicita, y el almacén de origen que corresponde a la instalación que debe proporcionar la mercancía.
+El encabezado de la orden contiene el almacén<!-- magazzino --> de destino, que corresponde a la instalación<!-- facility --> que debe recibir la mercancía y por lo tanto la solicita, y el almacén<!-- magazzino --> de procedencia que corresponde a la instalación<!-- facility --> que debe suministrar la mercancía.
 
-El sistema de planificación genera pedidos internos planificados como resultado del cálculo de la posición de flujo neto (NFP), que ya están completos con todos los datos necesarios y que pueden convertirse en pedidos reales a través del procedimiento correspondiente (realizando eventualmente algunas modificaciones).
+El sistema de planificación<!-- pianificazione --> genera órdenes internas planificadas<!-- ordini interni pianificati --> como resultado del cálculo de la posición de flujo neta (NFP<!-- posizione di flusso netta (NFP) -->), que ya contienen todos los datos necesarios y que pueden ser transformadas en órdenes reales mediante el procedimiento correspondiente (realizando eventualmente modificaciones).
 
-Los **pedidos internos DDMRP planificados** no generan necesidad en las instalaciones proveedoras; solo los confirmados generan necesidad.
+Las órdenes internas DDMRP<!-- ordini interni Ddmrp --> planificadas no generan necesidad<!-- fabbisogno --> en las instalaciones<!-- facilities fornitrici --> proveedoras, solo las confirmadas generan necesidad<!-- fabbisogno -->.
 
-Esta elección hace que las propuestas de pedido DDMRP no generen necesidad en las instalaciones proveedoras mientras no sean analizadas y transformadas en pedidos reales por los responsables correspondientes, de acuerdo con un proceso de planificación por niveles.
+Esta elección hace que las propuestas de orden DDMRP<!-- proposte d'ordine Ddmrp --> no generen necesidad<!-- fabbisogno --> en las instalaciones proveedoras<!-- facility fornitrici --> hasta que no son analizadas y transformadas en órdenes reales por los responsables correspondientes, según un proceso de planificación por niveles.
 
-Por esta razón, la fábrica es la unidad logística que debe ser planificada en última instancia, después de haber planificado y confirmado los pedidos de las unidades logísticas de distribución y venta de mercancías.
+Por esta razón, la fábrica es la unidad logística que debe planificarse al final, después de haber planificado y confirmado las órdenes de las unidades logísticas de distribución y venta de mercancías.
 
-Obviamente, se pueden crear pedidos internos DDMRP manualmente sin restricciones.
+Obviamente se pueden crear órdenes internas DDMRP<!-- ordini interni Ddmrp --> manualmente sin restricciones.
 
-La fecha del pedido se considera como la fecha de necesidad (equivalente a la fecha de inicio de un pedido de producción), igual para cada artículo del pedido; la fecha de entrega, en cambio, se especifica para cada artículo del pedido ya que puede diferir.
+La fecha de la orden se considera como fecha de necesidad<!-- fabbisogno --> (equivalente a la fecha de inicio de una orden de producción<!-- ordine di produzione -->), igual para cada artículo de la orden, mientras que la fecha de entrega se especifica para cada artículo de la orden ya que puede diferir.
 
-De hecho, si la instalación de destino es abastecida por una instalación que no es la fábrica, el tiempo de entrega de los artículos en el destino es el mismo para todos y es igual al **lead time** ingresado en la tabla de instalaciones para la instalación de destino (salvo excepciones establecidas en la tabla de parámetros DDMRP para algún artículo).
+De hecho, si la instalación de destino<!-- facility di destinazione --> es abastecida por una instalación que no es la fábrica, el plazo de entrega de los artículos en el destino es el mismo para todos y corresponde al lead time<!-- lead time --> introducido en la tabla de Instalaciones<!-- Facilities --> para la instalación de destino<!-- facility destinazione --> (a menos que existan excepciones establecidas en la tabla de parámetros DDMRP<!-- tabella parametri Ddmrp --> para algún artículo).
 
-Si, por otro lado, la instalación proveedora es la fábrica, normalmente el **DLT (Delivery Lead Time)** de cada artículo en la instalación de destino varía porque se debe a la suma del tiempo de transporte desde la fábrica (igual para todos los artículos a **buffer** en la unidad de destino), y del **DLT** del artículo en la fábrica que es igual al tiempo necesario para su producción, si el artículo no es un **buffer** en esta última.
+Si, en cambio, la instalación proveedora<!-- facility fornitrice --> es la fábrica, normalmente el DLT<!-- DLT --> de cada artículo en la instalación de destino<!-- facility destinazione --> varía porque es el resultado de la suma del tiempo de transporte desde la fábrica (igual para todos los artículos a buffer en la unidad de destino), y del DLT del artículo en la fábrica que corresponde al tiempo necesario para su producción, si el artículo no es un buffer en esta última.
 
-Para cada artículo en el pedido se puede ver la cantidad ordenada, enviada y recibida.
+Para cada artículo en la orden se muestra la cantidad ordenada, enviada y recibida.
 
-Cuando el tiempo de envío no es despreciable, durante el transporte se actualizará la cantidad enviada, pero no la recibida, que se actualizará únicamente al momento de la recepción de la mercancía.
+Cuando el tiempo de envío no es despreciable, durante el transporte se actualizará la cantidad enviada pero no la recibida, que se actualizará únicamente en el momento de la recepción de la mercancía.
 
-Las causales de depósito y de extracción se especifican en la tabla de instalaciones (estructura logística).
+Las causales<!-- causali --> de depósito<!-- versamento --> y retirada<!-- prelievo --> se especifican en la tabla de las instalaciones<!-- facilities (struttura logistica) -->.

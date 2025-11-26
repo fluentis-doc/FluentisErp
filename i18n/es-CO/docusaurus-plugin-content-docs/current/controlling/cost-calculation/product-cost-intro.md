@@ -1,6 +1,7 @@
 ---
-title: Introducción (Introduzione)
+title: Introducción
 sidebar_position: 1
+ai_generated: true
 ---
 
-El procedimiento de **calcolo costo** presente en el Controlling permite calcular los costos de los artículos en función de la lista de materiales y los ciclos de trabajo.
+La funcionalidad de **Cálculo de costo**<!-- Calcolo costo --> presente en el módulo de Controlling permite calcular los costos de los artículos<!-- articoli --> en base a la lista de materiales<!-- distinta base --> y a los ciclos de trabajo<!-- cicli di lavoro -->.

@@ -1,55 +1,52 @@
 ---
-title: Impresión de situación de retenciones (Stampa situazione ritenute)
+title: Impresión situación retenciones
 sidebar_position: 2
+ai_generated: true
 ---
 
-Con esta impresión es posible extraer los datos de los pagos de compensaciones realizados, con el fin de tener un resumen de los datos relacionados con las retenciones aplicadas para gestionar su pago mediante el modelo F24 o para realizar verificaciones en el ámbito de la certificación única de los perceptores y del posterior modelo 770.
+Con esta impresión es posible extraer los datos de los pagos de honorarios realizados, con el fin de obtener un resumen de los datos relativos a las retenciones de anticipo aplicadas<!-- ritenute d'acconto operate -->, para así gestionar su pago con el modelo F24<!-- modello F24 --> o para realizar verificaciones en el ámbito de la certificación única de los perceptores<!-- certificazione unica dei percipienti --> y el posterior modelo 770<!-- modello 770 -->.
 
-Existen dos diseños diferentes de impresión seleccionables a través del cuadro combinado en la parte superior izquierda: el primero "Certificación de retenciones (Certificazione ritenute)" reproduce la comunicación en forma libre que se enviaba a los perceptores hasta la reciente introducción de la Certificación Única, mientras que el segundo "Situación de retenciones (Situazione ritenute)" se presenta como una lista de verificación.
+Existen dos diferentes diseños de impresión seleccionables mediante la caja combinada en la parte superior izquierda: la primera, "Certificación de retenciones<!-- Certificazione ritenute -->", reproduce la comunicación en forma libre que se enviaba a los perceptores hasta la reciente introducción de la Certificación Única<!-- Certificazione Unica -->, mientras que la segunda, "Situación retenciones<!-- Situazione ritenute -->", se presenta como una lista de verificación.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image01.png)
 
-ELEMENTOS PRINCIPALES DE FILTRO:
+PRINCIPALES ELEMENTOS DE FILTRO:
 
-Datos del aviso de factura.
+Datos del preaviso de factura<!-- preavviso di parcella -->.
 
-- Filtro de registro de perceptores (Filtro anagrafica percipente)
-
-- Rango de fechas del aviso (Range date del preavviso)
-
-- Rango de número del aviso (Range numero del preavviso)
-
-- Moneda (Divisa)
-
-- Código de impuesto (Codice tributo)
-
-- Tipo de retención (Tipo ritenuta)
+- Filtro de datos maestros de perceptor<!-- anagrafica percipiente -->
+- Rango de fechas del preaviso
+- Rango de número del preaviso
+- Divisa
+- Código de tributo<!-- codice tributo -->
+- Tipo de retención<!-- tipo ritenuta -->
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image02.png)
 
-Datos relacionados con la factura definitiva (da utilizar si el aviso ya ha sido integrado con los datos de la factura)
+ 
 
-- Rango de fechas de la factura (Range di date fattura)
+Datos relativos a la factura definitiva (a utilizar si el preaviso ya ha sido integrado con los datos de la factura)
 
-- Número (Numero)
+- Rango de fechas de factura<!-- date fattura -->
+- Número
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image03.png)
 
 Otros datos:
 
-- Indicadores de filtro que verifican las principales condiciones del documento (contabilizado, certificado, retención pagada, pagado)
+- Bandera de filtro que verifica las principales condiciones del documento (contabilizado, certificado, retención pagada<!-- versata ritenuta -->, pagado)
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image04.png)
 
-- Año: filtra solo las compensaciones de competencia del año ingresado.
-
-- Indicador definitivo: realiza la impresión en definitivo y no permite modificar más los datos relacionados con el pago de las retenciones.
-
-- Indicador excluir ya impresas en definitivo: excluye las compensaciones ya impresas en una impresión definitiva.
+- Año: filtra solo los honorarios<!-- compensi --> correspondientes al año ingresado
+- Marcador definitiva: realiza la impresión en definitivo y no permite modificar posteriormente los datos relativos al pago de las retenciones<!-- versamento delle ritenute -->.
+- Marcador excluir ya impresas en definitiva: excluye los honorarios<!-- compensi --> ya impresos en una impresión definitiva.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image05.png)
 
-| Función (Funzione) | Significado (Significato) |
+ 
+
+| Función | Significado |
 | --- | --- |
-| Vista previa (Anteprima) | Botón para realizar la vista previa de impresión. |
-| Impresión (Stampa) | Botón para realizar la impresión física del documento. |
+| Vista previa | Botón para ejecutar la vista previa de impresión. |
+| Imprimir | Botón para ejecutar la impresión física del documento. |

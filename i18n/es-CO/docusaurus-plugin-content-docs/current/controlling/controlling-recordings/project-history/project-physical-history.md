@@ -1,32 +1,33 @@
 ---
-title: storico movimenti fisici di commessa
+title: Histórico de movimientos físicos de orden
 sidebar_position: 2
+ai_generated: true
 ---
 
-En el **storico movimenti fisici di commessa*** tenemos visibilidad de las cantidades de producción relacionadas con proyectos/pedidos. En particular, tenemos:
+En el ***Histórico de movimientos físicos de orden<!-- Storico movimenti fisici di commessa -->*** tenemos visibilidad de las cantidades de producción vinculadas a los proyectos<!-- progetti -->/órdenes<!-- commesse -->. En particular tenemos:
 
-- [**area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia
+- [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia
 
-- **anno*** y **periodo***
+- ***Año<!-- Anno -->*** y ***Período<!-- Periodo -->***
 
-- **progetto*** de referencia
+- ***Proyecto<!-- Progetto -->*** de referencia
 
-- [**centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de origen del movimiento
+- [***Centro empresarial<!-- Centro aziendale -->***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) de origen del movimiento<!-- movimento -->
 
-- **classe*** y **codice*** del artículo producido/trabajado
+- ***Clase<!-- Classe -->*** y ***Código<!-- Codice -->*** del artículo producido/trabajado
 
-- **fase*** y **sottofase*** de producción
+- ***Fase*** y ***Subfase<!-- Sottofase -->*** de producción<!-- produzione -->
 
-- [**unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimiento
+- [***Unidad de medida<!-- Unità di misura -->***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) del movimiento<!-- movimento -->
 
-- **quantità da produzione***, es decir, el informe registrado de las declaraciones de producción
+- ***Cantidad de producción<!-- Quantità da produzione -->***, es decir, el resultado medido según las declaraciones de producción<!-- produzione -->
 
-- **quantità da fase ciclo***, es decir, la cantidad respecto al teórico de ciclo
+- ***Cantidad según fase de ciclo<!-- Quantità da fase ciclo -->***, es decir, la cantidad respecto al teórico del ciclo
 
-- **quantità da fase standard***, es decir, la cantidad respecto a la fase estándar
+- ***Cantidad según fase estándar<!-- Quantità da fase standard -->***, es decir, la cantidad respecto a la fase estándar
 
-- **lista tempi*** va de la mano con el tipo de cantidad registrada en los campos anteriores
+- ***Lista de tiempos<!-- Lista tempi -->*** va de la mano con el tipo de cantidad registrada en los campos anteriores
 
-- **sorgente*** indica cuál es el origen del dato registrado, típicamente la *produzione*
+- ***Fuente<!-- Sorgente -->*** indica cuál es el origen del dato registrado, típicamente la *Producción<!-- Produzione -->*
 
-No está permitida la eliminación ni la modificación o la inserción de datos en la cuadrícula.
+No está permitida la eliminación, modificación ni inserción de datos en la cuadrícula.

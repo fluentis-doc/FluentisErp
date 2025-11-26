@@ -1,24 +1,25 @@
 ---
-title: importazione insoluti
+title: Importación de impagos
 sidebar_position: 3
+ai_generated: true
 ---
 
-Desde esta máscara se procede a la importación de la lista de insolvencias desde el archivo telemático estándar de comunicación bancaria.  
+Desde esta pantalla se procede a la importación de la lista de impagos<!-- insoluti --> desde el archivo telemático estándar de comunicación bancaria.
 
-Es posible, normalmente, activar la recepción de un trazado de esta lista, que retoma en parte el mismo archivo enviado con la presentación, dentro del cual hemos insertado el identificador del efecto: a través de la lectura de este dato, por lo tanto, podemos crear la lista de insolvencias automáticamente, con la detección directa también de los gastos bancarios en cada uno.  
+Normalmente, es posible activar la recepción de un archivo para esta lista, que en parte retoma el mismo archivo enviado con la presentación, dentro del cual hemos insertado el identificador del efecto: mediante la lectura de este dato, por lo tanto, podemos crear la lista de impagos<!-- insoluti --> automáticamente, con la detección directa también de los gastos bancarios de cada uno.
 
-El procedimiento comienza con el botón **esegui importazione**, que abrirá la máscara de apertura de archivo del sistema: una vez localizado el archivo en el directorio correcto, solo se debe abrir el archivo para proceder a la importación de la lista.  
+El procedimiento comienza con el botón **Ejecutar importación<!-- Esegui importazione -->**, que abrirá la ventana de apertura de archivos del sistema: una vez localizado el archivo en el directorio correcto, simplemente se debe abrir el archivo para proceder a la importación de la lista.
 
-La posible lista de efectos no encontrados se informará en una máscara de error: para estos, será necesario proceder a la creación manual de la insolvencia.  
+La eventual lista de efectos<!-- effetti --> no encontrados será mostrada en una ventana de error: para estos será necesario proceder con la creación manual del impago<!-- insoluto -->.
 
-Desde la máscara es posible cancelar la importación realizada: esto anulará la lista de insolvencias creadas con la propia importación.
+Desde la pantalla es posible eliminar la importación realizada: esto anulará la lista de impagos<!-- insoluti --> creados con la misma importación.
 
-**Botones específicos (Pulsanti specifici)**
+**Botones específicos<!-- Pulsanti specifici -->**
 
-**ricerca importazioni**: Busca la lista de importaciones de insolvencias ya realizadas.  
+**Buscar importaciones<!-- Ricerca importazioni -->:** Busca la lista de importaciones de impagos<!-- insoluti --> ya realizadas.
 
-**esegui import**: Con este botón se abre la máscara de selección del archivo telemático para el cual se ejecutará el procedimiento de importación.  
+**Ejecutar importación<!-- Esegui import -->**: Con este botón se abre la ventana de selección del archivo telemático para el que ejecutar el procedimiento de importación.
 
-**visualizza file insoluti**: Muestra el archivo telemático de la insolvencia importada.  
+**Visualizar archivo de impagos<!-- Visualizza file insoluti -->**: Visualiza el archivo telemático del impago<!-- insoluto --> importado.
 
-**cancella importazione**: Elimina la importación realizada.
+**Eliminar importación<!-- Cancella importazione -->**: Elimina la importación realizada.

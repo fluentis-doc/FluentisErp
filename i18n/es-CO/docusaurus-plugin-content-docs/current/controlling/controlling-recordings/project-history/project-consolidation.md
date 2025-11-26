@@ -1,54 +1,55 @@
 ---
-title: consolidato di commessa
+title: Consolidado de proyecto
 sidebar_position: 5
+ai_generated: true
 ---
 
-En cada Elaboración de un **consolidato di progetto*** creado desde la máscara de **elaborazione periodi*** encontraremos aquí el registro correspondiente que contiene el detalle de todos los costos e ingresos asignados a proyectos, sean estos directos o indirectos por transferencia de cost drivers aplicados a los datos de la dimensión direccional.
+En cada Elaboración de un ***Consolidado de proyecto<!-- Consolidato di progetto -->*** creado desde la pantalla de ***Elaboración de periodos<!-- Elaborazione periodi -->*** encontraremos aquí el respectivo registro que contiene el detalle de todos los costos y ingresos asignados a proyectos<!-- progetti -->, ya sean estos directos o indirectos por traspaso de cost driver aplicados sobre los datos de la dimensión direccional<!-- dimensione direzionale -->.
 
 Los campos visualizados son:
 
-- **sottoconto***
-- [**area***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- [**centro aziendale***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): en este caso se trata del *Centro de proyecto/commessa*, es decir, del centro que tiene el indicador 'Default para dimensión proyectos' en lugar del centro asignado al proyecto a través de la tabla de ***Asociación de centros de proyectos/commesse (Associazione centri progetti/commesse)***.
-- [**centro cedente***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), que será valorado por el centro de origen del movimiento, ya sea derivado de un cost driver o no.
-- **anno***
-- **periodo***
-- **dare***
-- **avere***
-- **valore fisso***, que sumado al siguiente valor variable dará el valor Debe o Haber anterior.
-- **valore variabile***, que sumado al anterior valor fijo dará el valor Debe o Haber anterior.
-- **divisione***
-- **divisa***, siempre igual a la moneda de la empresa.
-- **tipo riga***, que pueden ser:
-    - *0* es decir, líneas de origen: se utiliza tanto para las líneas que nacen de los cierres o de las registraciones manuales de cierre o de área, como para las líneas de los drivers de asignación.
-    - *2* líneas recibidas: para los drivers de transferencia, son las líneas que transfieren el valor del *Centro cedente* al *Centro empresarial*.
-:::tip Nota
-Las líneas de *attribuzione* son, en esencia, las líneas de transferencia de los *Cost drivers* que del centro de conveniencia *Cuentas por reasignar* valoran los *Centros empresariales* reales de la dirección. Los drivers de *transferencia (ribaltamento)* son, en esencia, todos los demás.
+- ***Subcuenta<!-- Sottoconto -->***
+- [***Área<!-- Area -->***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- [***Centro de negocio<!-- Centro aziendale -->***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): en este caso se trata del *Centro de proyecto/orden de trabajo<!-- Centro di progetto/commessa -->*, es decir, el centro que tiene el indicador ‘Predeterminado para la dimensión proyectos’ en lugar del centro asignado al proyecto<!-- progetto --> a través de la tabla de ***Asociación de centros a proyectos/órdenes de trabajo<!-- Associazione centri progetti/commesse -->***.
+- [***Centro cedente<!-- Centro cedente -->***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), que será valorizado por el centro de origen del movimiento<!-- movimento -->, provenga o no de un cost driver
+- ***Año<!-- Anno -->***
+- ***Periodo<!-- Periodo -->***
+- ***Debe<!-- Dare -->***
+- ***Haber<!-- Avere -->***
+- ***Valor fijo<!-- Valore fisso -->***, que sumado al siguiente valor variable dará el importe de Debe o Haber anterior
+- ***Valor variable<!-- Valore variabile -->***, que sumado al anterior valor fijo dará el importe de Debe o Haber anterior
+- ***División<!-- Divisione -->***
+- ***Moneda<!-- Divisa -->***, siempre igual a la moneda de la compañía
+- ***Tipo de línea<!-- Tipo riga -->***, que pueden ser
+    - *0* es decir líneas de origen: se utiliza tanto para las líneas que surgen de cierres o registros manuales de cierre o de área, como también para las líneas de los drivers de imputación
+    - *2* es decir líneas recibidas: para los drivers de traspaso, son las líneas que trasladan el valor desde el *Centro cedente* al *Centro de negocio<!-- Centro aziendale -->*
+:::tip Nota<!-- Nota -->
+Las líneas de *asignación<!-- attribuzione -->* son fundamentalmente las líneas de traspaso de los *Cost driver* que, desde el Centro temporal *Cuentas a reasignar<!-- Conti da riassegnare -->*, valorizan los *Centros de negocio<!-- Centri aziendali -->* efectivos de la dirección<!-- direzionale -->. Los drivers de *traspaso<!-- ribaltamento -->* son básicamente todos los demás.
 :::
-- **tipo distribuzione*** del driver aplicado.
-- [**cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) aplicado.
-- **sorgente***, es decir, el origen del dato, que puede ser:
-    - *Contable (1)*, es decir, proveniente directamente del *chiusura infrannuale*.
-    - *Manual (2)*, es decir, proveniente de las *registrazioni extracontabili di area*.
-    - *Fórmula (3)*, es decir, proveniente de registros creados a partir de las *Fórmulas de cálculo*.
-    - *A amortizaciones (4)*, es decir, proveniente de registros creados por el procesamiento de amortizaciones del controlling.
-    - *Ajustes (5)*, es decir, proveniente de registros de ajustes interanuales o anuales.
-    - *Drivers de tarifas (6)*, es decir, provenientes de los drivers de aplicación de tarifas.
-    - *Inventarios (7)*, es decir, provenientes de registros de inventarios en controlling.
-    - *Materiales de producción (8)*, es decir, provenientes de costos por materiales de producción.
-    - *Trabajos externos (9)*, es decir, provenientes de costos de cuentas por trabajo.
-    - *Transformaciones de producción (10)*, es decir, de los trabajos internos en producción.
-    - *Tiempo de máquina (11)*.
-    - *Tiempo hombre (12)*.
-    - *Preparación de máquina (13)*.
-    - *Preparación hombre (14)*.
-    - *Consolidación de controlling (Consolidamento controlling)* (15), es decir, de la procedencia del *consolidamento master* del controlling, en instalaciones multisocietarias.
+- ***Tipo de distribución<!-- Tipo distribuzione -->*** del driver aplicado
+- [***Cost driver***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) aplicado
+- ***Fuente<!-- Sorgente -->***, es decir, el origen del dato, que puede ser:
+    - *Contable* (1), es decir proveniente directamente del *Cierre interanual<!-- Chiusura infrannuale -->*
+    - *Manual* (2), es decir proveniente de los *Asientos extracontables de área<!-- Registrazioni extracontabili di area -->*
+    - *Fórmula* (3), es decir proveniente de asientos creados por las *Fórmulas de cálculo<!-- Formule di calcolo -->*
+    - *Amortizaciones* (4), es decir provenientes de asientos creados por el procesamiento de las amortizaciones del controlling
+    - *Ajustes* (5), es decir provenientes de asientos de ajustes interanuales o anuales
+    - *Driver de tarifas* (6), provenientes de los drivers de aplicación de tarifas
+    - *Existencias* (7), provenientes de asientos de existencias en controlling
+    - *Materiales de producción* (8), provenientes de costes por materiales de producción
+    - *Trabajos externos* (9), provenientes de costes de la cuenta de trabajo<!-- conto lavoro -->
+    - *Transformaciones de producción* (10), es decir, de los trabajos internos en producción
+    - *tiempo máquina* (11)
+    - *tiempo hombre* (12)
+    - *preparación máquina* (13)
+    - *preparación hombre* (14)
+    - *Consolidación controlling* (15), es decir desde la *Consolidación master<!-- Consolidamento master -->* del controlling, en instalaciones multiempresa
 :::
 
-- **tipo costo*** aplicado a la línea, para las líneas con origen *Materiales*.
+- ***Tipo de coste<!-- Tipo costo -->*** aplicado a la línea, para líneas con origen *Materiales*
 
-- **numero***, **anno***, **riga***, ***Wbs***: referencias a los proyectos, no valorizados.
+- ***Número<!-- Numero -->***, ***Año<!-- Anno -->***, ***Línea<!-- Riga -->***, ***Wbs***: referencias a los proyectos<!-- progetti -->, no valorizados
 
-- [**unità di misura***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), **articolo***, **descrizione articolo***, **fase***, **sottofase***, **numero***, **descrizione*** y **quantità*** del artículo producido o trabajado.
+- [***Unidad de medida<!-- Unità di misura -->***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), ***Artículo<!-- Articolo -->***, ***Descripción del artículo<!-- Descrizione articolo -->***, ***Fase***, ***Subfase<!-- Sottofase -->***, ***Número<!-- Numero -->***, ***Descripción<!-- Descrizione -->*** y ***Cantidad<!-- Quantità -->*** del artículo producido o trabajado
 
-No se permite la eliminación ni la modificación o inserción de datos en la cuadrícula.
+No se permite la eliminación, modificación o inserción de datos en la cuadrícula.

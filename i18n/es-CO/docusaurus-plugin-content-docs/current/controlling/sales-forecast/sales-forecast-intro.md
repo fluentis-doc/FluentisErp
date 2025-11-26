@@ -1,7 +1,9 @@
 ---
-title: Introducción (Introduzione)
+title: Introducción
 sidebar_position: 1
+ai_generated: true
 ---
 
-El módulo **previsioni di vendita** permite al operador gestionar el procesamiento de las previsiones de venta, tanto anuales como por período, detalladas por familia de productos, por agente y por área geográfica.  
-El módulo está presente en el área de *controlling* y lee como datos de origen los de pedidos, albaranes y facturas de venta.
+Son una herramienta fundamental para la programación y el control de la actividad de ventas<!-- vendita --> de una empresa. Permiten ayudar a determinar qué venderá la empresa en un período determinado.     
+Se gestionan las previsiones para artículos específicos o familias de productos.      
+A través de las versiones es posible analizar varias simulaciones de previsiones. Su consolidación proporciona el input para la generación de las Ordenes de producción<!-- Commesse di produzione -->.

@@ -1,16 +1,17 @@
 ---
-title: Características del agente (Caratteristiche agente)
+title: Características de agente
 sidebar_position: 7
+ai_generated: true
 ---
 
-Es una tabla descriptiva para el agente y puede ser utilizada en su registro. Es común a todas las empresas presentes en la base de datos y está compuesta por una simple tabla de código/descripción, con el fin de codificar a los agentes en informes/estadísticas personalizadas.
+Es una tabla descriptiva para el agente<!-- agente --> y puede ser utilizada en su ficha maestra<!-- anagrafica -->. Es común a todas las compañías presentes en la base de datos y está compuesta por una simple tabla de código/descripción, con el fin de codificar los agentes<!-- agenti --> en reportes/estadísticas personalizadas.
 
-La tabla se abre a través de la ruta **Tablas > Ventas > Características del agente**.
+La tabla<!-- tabella --> se abre mediante la ruta **Tablas > Ventas > Características de agente<!-- Tabelle > Vendite > Caratteristiche agente -->**.
 
-Permite introducir nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
+Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-El formulario se compone de un área de filtro y de una de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario<!-- form --> se compone de un área de filtro y una de resultados. Una vez configurados todos los filtros deseados, solo es necesario hacer clic en el botón **Buscar<!-- Ricerca -->** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Para insertar nuevos registros es necesario hacer clic en la cuadrícula en la primera fila vacía o presionar el botón **nuovo**.
+Para insertar nuevos registros es necesario hacer clic en la primera fila vacía de la cuadrícula o pulsar el botón **Nuevo<!-- Nuovo -->**.
 
-Para todo lo que no esté detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes (Funzionalità, pulsanti e campi comuni)](/docs/guide/common).
+Para todo lo no detallado en este documento sobre el funcionamiento común de los formularios<!-- form -->, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).

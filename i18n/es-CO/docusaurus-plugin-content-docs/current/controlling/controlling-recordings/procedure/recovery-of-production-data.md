@@ -1,59 +1,59 @@
 ---
-title: ripresa dati da produzione
+title: Recuperación de datos de producción
 sidebar_position: 1 
+ai_generated: true
 ---
 
-La recuperación de datos de producción lee los datos para atribuir los movimientos físicos (por lo tanto, la manipulación de materiales pero también los tiempos) a la orden y los costos de los trabajos.
+La recuperación de datos de producción<!-- ripresa dati da produzione --> lee los datos para asignar los movimientos físicos<!-- movimenti fisici --> (por lo tanto, la manipulación de materiales pero también los tiempos) a la orden de trabajo<!-- commessa --> y los costos de los procesos<!-- lavorazioni -->.
 
-La máscara se divide en 3 procedimientos diferentes.
+El formulario se divide en 3 procedimientos diferentes.
 
-## RECUPERACIÓN DE HORAS/COSTOS DE PROYECTO (RIPRESA ORE/COSTI DI PROGETTO)
-Con este procedimiento recuperamos los datos de las horas del personal de producción (en la **gestione ore dichiarate***), pero también del área de Proyectos, en particular de la ***Declaración de actividades (Dichiarazione attività)*** y las **interventi***, para insertarlos en las **registrazioni movimenti fisici*** y en las tablas de ***Movimientos de proyecto/orden (Movimenti di progetto/commessa)***. Veamos las diversas opciones disponibles:
-- Indicaremos en qué [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) registrar los movimientos.
-- En qué **data***.
-- En qué **anno*** del control.
-- A la derecha configuraremos coherentemente el rango **da data*** y **a data***.
-- Y cuál es el **tipo misurazione***, es decir, si es la primera o la segunda UM configurada en los centros.
+## RECUPERACIÓN DE HORAS / COSTOS DE PROYECTO<!-- RIPRESA ORE/COSTI DI PROGETTO -->
 
-En el lado izquierdo, luego tendremos la elección del 
-- **tipo progetto***, que permite definir cuál es el proyecto que nos interesa reflejar en los datos físicos del proyecto:
-    - **tutti i progetti in dichiarazione ore***, recuperaremos cada proyecto individual que ha sido referenciado en las declaraciones de horas.
-    - **ore ai progetti collegati***, asignaremos siempre el proyecto padre a los específicos declarados.
-    - La opción **valorizza ore da intercompany***, en cambio, permite llevar a la empresa activa las horas que los empleados pueden haber registrado en una diferente empresa de la base de datos, pero que deben considerarse en esta.
+Con este procedimiento recuperamos los datos de las horas del personal de producción (en la ***Gestión de horas declaradas<!-- Gestione ore dichiarate -->***), pero también del área de Proyectos, en particular desde la ***Declaración de actividades<!-- Dichiarazione attività -->*** y desde las ***Intervenciones<!-- Interventi -->***, para ingresarlas en las ***Registraciones de movimientos físicos<!-- Registrazioni movimenti fisici -->*** y en las tablas de ***Movimientos de proyecto/orden de trabajo<!-- Movimenti di progetto/commessa -->***. Veamos las distintas opciones disponibles:
+- Indicaremos en qué [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) registrar los movimientos<!-- movimenti -->.
+- en qué ***Fecha***,
+- en qué ***Año*** del control de gestión
+- a la derecha configuraremos coherentemente el rango ***Desde fecha<!-- Da data -->*** y ***Hasta fecha<!-- A data -->***,
+- y cuál es el ***Tipo de medición<!-- Tipo misurazione -->***, es decir, si es la primera o la segunda UM configurada en los centros.
+En el lado izquierdo luego tendremos la opción de elegir el
+- ***Tipo de proyecto<!-- Tipo progetto -->***, que permite definir cuál es el proyecto que nos interesa reportar en los datos físicos de proyecto:
+    - ***Todos los proyectos en declaración de horas<!-- Tutti i progetti in dichiarazione ore -->***: se detectará cada proyecto que haya sido referenciado en las declaraciones de horas
+    - ***Horas a los proyectos vinculados<!-- Ore ai progetti collegati -->***: siempre se atribuirá el proyecto padre de los específicos declarados
+    - La opción ***Valora horas de intercompany<!-- Valorizza ore da intercompany -->*** permite trasladar a la sociedad activa las horas que los empleados pueden haber ingresado en otra sociedad de la base de datos, pero que deben considerarse en esta.
+En el lado derecho también podemos agregar una valoración económica a nuestras consideraciones hasta ahora cuantitativas de los tiempos: 
+- podemos configurar el ***Valora gastos de viaje de la actividad/intervención<!-- Valorizza oneri viaggio dell'attività/intervento -->*** para considerar los gastos de viaje vinculados a las actividades/intervenciones 
+- el indicador ***‘***Gestión del horario de trabajo por proyecto<!-- Gestione dell’orario di lavoro per progetto -->***, hace que Fluentis solo considere las horas que han sido vinculadas a un proyecto, también para la valoración de la contabilización principal de movimientos físicos, donde normalmente, en cambio, terminan todas las horas indicadas independientemente de la vinculación a proyecto.
+- podemos configurar el ***Valora extracontablemente los costos de los recursos<!-- Valorizza extracontabilmente i costi delle risorse -->*** aplicando el costo del mismo al número de horas del período, aplicando eventualmente un correctivo de ***Eficiencia<!-- Efficienza -->*** en el campo inferior.
+- Cierra esta sección la opción ***Valora los costos/ingresos intercompany de los recursos<!-- Valorizza di costi/ricavi intercompany delle risorse -->***: significa valorar en la sociedad activa los costos o ingresos por prestaciones intercompany detectadas por los empleados en la declaración de horas.
 
-En el lado derecho, también podemos agregar una valorización económica a nuestras consideraciones hasta ahora cuantitativas de los tiempos: 
-- Podemos configurar el **valorizza oneri viaggio dell'attività/intervento*** para considerar los costos de viaje relacionados con las actividades/intervenciones. 
-- El indicador ***‘Gestión del horario de trabajo por proyecto (Gestione dell’orario di lavoro per progetto)***, en cambio, hace que Fluentis considere solo las horas que se han vinculado a un proyecto, incluso para la valorización de la primera nota de movimientos físicos, donde normalmente terminan todas las horas indicadas independientemente de su vinculación al proyecto.
-- Podemos establecer el **valorizza extracontabilmente i costi delle risorse*** aplicando el costo del mismo al número de horas del período, aplicando eventualmente un correctivo de **efficienza*** en el campo más bajo.
-- Cierra esta sección la opción ***Valorización de costos/ingresos intercompany de los recursos (Valorizza di costi/ricavi intercompany delle risorse)***: significa valorar en la empresa activa los costos o ingresos por prestaciones intercompany registradas por los empleados en la declaración de horas.
+## RECUPERACIÓN DE MOVIMIENTOS FÍSICOS<!-- RIPRESA MOVIMENTI FISICI -->
 
-## RECUPERACIÓN DE MOVIMIENTOS FÍSICOS (RIPRESA MOVIMENTI FISICI)
-La **ripresa movimenti fisici*** va a leer las señales de producción y valora los tiempos máquina, así como los tiempos de trabajo, y los tiempos de ensamblaje de hombre y máquina: los valorará tanto en la tabla de **registrazioni movimenti fisici***, como en la tabla de ***movimientos físicos de proyecto/orden (movimenti fisici di progetto/commessa)***. Estos datos se verifican en relación con el centro de costo asociado a la máquina y al grupo de mano de obra, si este centro se mide por los tiempos de máquina, hombre o ensamblaje, según se haya configurado en la tabla de ***Unidades de medida de los centros en el control (Unità di misura dei centri nel controlling)***.
-Los datos a establecer son: 
-- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia.
-- la **data*** de la medición. 
-- el **anno***. 
-- el rango de fechas de filtro **da data*** y **a data*** a la derecha.
+La ***Recuperación de movimientos físicos<!-- Ripresa movimenti fisici -->*** lee los reportes de producción y valora los tiempos de máquina, los tiempos hombre y los tiempos de preparación tanto de hombre como de máquina: los valorará tanto en la tabla de ***Registraciones de movimientos físicos<!-- Registrazioni movimenti fisici -->***, como en la tabla de ***movimientos físicos de proyecto/orden de trabajo<!-- movimenti fisici di progetto/commessa -->***. Estos datos se verifican en referencia al centro de coste asociado a la máquina y al grupo de mano de obra, si este centro es medido para los tiempos de máquina, hombre o preparación según esté configurado en la tabla de ***Unidades de medida de los centros en el control de gestión<!-- Unità di misura dei centri nel controlling -->***.
+Los datos a configurar son:
+- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) de referencia,
+- la ***Fecha*** de la detección,
+- el ***Año***,
+- el rango de fechas de filtro ***Desde fecha<!-- Da data -->*** y ***Hasta fecha<!-- A data -->*** a la derecha.
+Se prevén 3 opciones sobre los tiempos utilizados:
+- por defecto se valorarán los ***Tiempos reales<!-- Tempi consuntivi -->*** en el reporte de producción mismo,
+- en el segundo caso se leerán los ***Tiempos de ciclo<!-- Tempi ciclo -->*** vinculados al reporte para valorar el dato teórico de ciclo (es decir, proporcional la cantidad producida en el reporte respecto a la del ciclo)
+- mientras que en el último caso, ***Tiempos fase estándar<!-- Tempi fase standard -->***, se leerá la fase estándar del reporte para utilizar su valor, siempre proporcional respecto a la cantidad reportada.
+Si hay máquinas o equipos ligados a un activo fijo<!-- cespite -->, este mismo procedimiento también valorará las ***Registraciones de movimientos físicos<!-- Registrazioni movimenti fisici -->*** (y la de proyecto) de las cantidades que el activo fijo<!-- cespite --> ha producido en el período, al fin de poder calcular las depreciaciones por cantidad.
 
-Se prevén 3 opciones sobre los tiempos utilizados: 
-- Por defecto, valoraremos los **tempi consuntivi*** en la señal de producción misma.
-- En el segundo caso, leeremos los **tempi ciclo*** vinculados a la señal para valorar el dato teórico del ciclo (es decir, proporcional a la cantidad producida en la señal en relación con la del ciclo).
-- Mientras que en el último caso, **tempi fase standard***, leeremos la fase estándar de la señal para utilizar su valor, siempre proporcional a la cantidad reportada.
-Si hay máquinas o equipos vinculados a un registro de activo fijo, este mismo procedimiento también valorará los **registrazioni movimenti fisici*** (y el de proyecto) de las cantidades que el activo fijo ha producido en el período, con el fin de poder calcular las amortizaciones sobre cantidades.
+## RECUPERACIÓN DE COSTOS DE ORDEN DE TRABAJO<!-- RIPRESA COSTI DI COMMESSA -->
 
-## RECUPERACIÓN DE COSTOS DE ORDEN (RIPRESA COSTI DI COMMESSA)
-El procedimiento de **ripresa costi di commessa***, finalmente, está dedicado a la captura de costos de transformaciones internas y externas.
-Configuraremos también aquí: 
-- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas).
-- la **data*** de la medición.
-- el **anno***.
-- la **causale*** a utilizar en el registro de área.
-- el rango de fechas **da data*** y **a data*** a utilizar.
-- Finalmente, el **conto lavorazioni esterne*** a utilizar para valorar los trabajos externos que leeremos del cuenta trabajo.
+El procedimiento de ***Recuperación de costos de orden de trabajo<!-- Ripresa costi di commessa -->***, finalmente, está dedicado a la detección de los costos de las transformaciones internas y externas.
+Aquí también configuraremos:
+- el [***Área***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- la ***Fecha*** de la detección,
+- el ***Año***,
+- la ***Causal<!-- Causale -->*** a utilizar en la registración de área,
+- el rango de fechas ***Desde fecha<!-- Da data -->*** y ***Hasta fecha<!-- A data -->*** a utilizar,
+- por último, la ***Cuenta de trabajos externos<!-- Conto lavorazioni esterne -->*** a utilizar para valorar los procesos externos que leeremos de la cuenta de trabajos<!-- conto lavoro -->.
+Para los datos obtenidos de la cuenta de trabajos<!-- conto lavoro -->, usaremos la cuenta configurada en el formulario al precio registrado en la factura de compra relacionada con el reingreso, o al del propio reingreso si aún no ha sido facturado por el proveedor externo, valorando el centro de coste asociado a la cuenta de coste correspondiente.
+Para los procesos internos, sin embargo, podremos valorar al ***Costo estándar<!-- Costo standard -->***, ***Costo último<!-- Costo ultimo -->*** o ***Costo medio<!-- Costo medio -->*** las cantidades que llegan en los reportes de producción del período, así como los materiales utilizados en las intervenciones externas.
 
-Para aquellos datos recuperados del cuenta trabajo, utilizaremos la cuenta establecida en la máscara al precio registrado en la factura de compra vinculada al regreso, o al de la vuelta misma si aún no ha sido facturada por el subcontratista, valorando el centro de costo asociado con la cuenta de costo misma.
-Para los trabajos internos, en cambio, podremos valorar al **costo standard***, **costo ultimo*** o **costo medio*** las cantidades que llegan en las señales de producción del período, así como los materiales utilizados en intervenciones en terceros.
+El resultado del procesamiento se inserta en ***Valores desde producción<!-- Valori da produzione -->***, formulario de la sección de gestión de proyectos: de hecho, este procedimiento filtra los datos que están vinculados a los proyectos y gestiona **solo estos** con el fin de la contabilidad de proyecto.
 
-El resultado de la elaboración se inserta en los **valori da produzione***, máscara de la sección de gestión de proyectos: este procedimiento, de hecho, filtra los datos que están conectados a los proyectos y gestiona **solo estos** con el fin de la contabilización del proyecto.
-
-La última nota es la del segundo tab **progetti***, que está vinculado precisamente a este último procedimiento: en esta sección podemos seleccionar en qué órdenes estamos interesados en capturar los costos, si no filtramos nada, valoraremos todos los movimientos de órdenes que encontraremos en el período.
+La última nota es la correspondiente a la segunda pestaña ***Proyectos<!-- Progetti -->***, que está vinculada precisamente a este último procedimiento: en esta sección podemos seleccionar en cuáles órdenes de trabajo<!-- commesse --> nos interesa detectar los costos de orden de trabajo<!-- costi di commessa -->, si no filtramos nada, se valorarán todos los movimientos de orden de trabajo<!-- movimenti di commessa --> que encontremos en el período.

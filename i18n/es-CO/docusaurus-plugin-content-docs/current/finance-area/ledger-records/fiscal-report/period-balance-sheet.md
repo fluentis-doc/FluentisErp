@@ -1,36 +1,41 @@
 ---
-title: Balance del ejercicio (Bilancio d'esercizio)
+title: Estado financiero
 sidebar_position: 1
+ai_generated: true
 ---
 
-Este informe tiene la función de presentar un resumen básico del balance empresarial, dividiendo por defecto las cuatro secciones típicas activo/pasivo/costos/ingresos. Se destaca que el informe funciona únicamente para la fecha de competencia contable ingresada en el encabezado del registro, independientemente de la fecha de registro en el libro diario.
+Este reporte tiene la función de presentar un panorama básico del estado financiero<!-- bilancio aziendale --> de la empresa, dividiendo por defecto las cuatro secciones típicas de activo/pasivo/costos/ingresos<!-- attivo/passivo/costi/ricavi -->. Se destaca que el reporte solo funciona según la fecha de competencia contable introducida en el encabezado de la registración<!-- registrazione -->, independientemente de la fecha de registro de la misma en el libro diario<!-- libro giornale -->.
 
-Además, es importante tener en cuenta que las fechas de competencia se han diferenciado para las cuentas del estado patrimonial, en comparación con las económicas.
+Además, hay que considerar que las fechas de competencia han sido diferenciadas para las cuentas<!-- conti --> del balance<!-- stato patrimoniale --> respecto a las cuentas de resultados<!-- conti economici -->.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/period-balance-sheet/image01.png)
 
-De este modo, es posible, y se recomienda, mantener el rango de fechas económicas dentro del año en curso (por ejemplo, 01/01/2018 - 31/12/2018) y llevar la fecha de inicio de la competencia contable patrimonial hasta la última apertura de cuentas (por ejemplo, 01/01/2017) en caso de que el año anterior (2017) no haya sido cerrado aún. Esto es necesario en tal situación para obtener el saldo actual correcto de las cuentas en ausencia de los valores de apertura para el año en curso que de otro modo serían omitidos al filtrar normalmente.
+De esta forma es posible, y se recomienda, mantener el rango de fechas económicas dentro del año en curso (por ejemplo 01/01/2018 - 31/12/2018) y llevar la fecha de inicio de la competencia contable patrimonial hasta la última apertura de cuentas<!-- apertura conti --> (por ejemplo 01/01/2017) en caso de que el año anterior (2017) aún no haya sido cerrado. Esto es necesario en tal situación para obtener el correcto saldo actual de las cuentas<!-- saldo attuale dei conti --> en ausencia de los valores iniciales para el año en curso que de otra manera serían omitidos al filtrar normalmente.
 
-Los distintos diseños son posibles, entre los cuales una representación en secciones opuestas y una con agrupamiento a fin de obtener los totales por cuenta y por nivel de la estructura del plan de cuentas. La impresión deseada se puede seleccionar desde el menú desplegable en la parte superior izquierda.
+ 
 
-**visualizzazione importi segno negativo**: si se activa, la aplicación insertará cada subcuenta en la sección correspondiente (según su tipo de cuenta) con el signo negativo cuando el saldo esté en la sección opuesta. Si el indicador no está activado, como es por defecto, cada subcuenta se mostrará en la sección relacionada con su saldo;
+Son posibles varios diseños, entre ellos una representación por secciones opuestas y otra con agrupación para obtener totales por cuenta<!-- conto --> y por nivel de la estructura del plan de cuentas<!-- piano dei conti -->. El tipo de impresión deseado se puede seleccionar desde el menú desplegable en la parte superior izquierda.
 
-**Detalle de las entidades (Dettaglio della anagrafiche)**: por defecto, la aplicación excluye todo el detalle de los subcuentas vinculados a clientes/proveedores y agentes. Solo con el indicador correspondiente se visualizarán los detalles de estas subcuentas de entidades;
+ 
 
-**escludi conti d'ordine**: las cuentas de orden se visualizan al final de las secciones de activo y pasivo. Con este indicador, las cuentas de orden no se mostrarán en el informe. Se recuerda, en particular, que las cuentas de orden nunca son objeto de cierre/apertura de cuentas en el procedimiento automático de la aplicación;
+**Visualización de importes en negativo**: si se activa, la aplicación ubicará cada subcuenta<!-- sottoconto --> en la sección correspondiente (según su tipo de cuenta<!-- tipo conto -->) con signo negativo si el saldo se encuentra en la sección opuesta. Si el indicador no está activado, como predeterminado, cada subcuenta<!-- sottoconto --> será visualizada en la sección correspondiente a su saldo;
 
-**comparazione anno precedente**: con esta opción se mostrará la columna del año en curso y una por el saldo del mismo período pero del año anterior al que está configurado como filtro.
+**Detalle de las anagráficas**: por defecto la aplicación excluye todo el detalle de las subcuentas<!-- sottoconti --> asociadas a clientes/proveedores y agentes. Solo con el indicador correspondiente se visualizarán los detalles de estas subcuentas<!-- sottoconti di anagrafica -->;
 
-**escludi causale**: en caso de que se hayan registrado los cierres de cuentas, para obtener los saldos del balance será necesario excluir los movimientos basados en la causal de cierre. Ejecutar el informe sin excluir esto dará un informe con todos los saldos en cero (salvo las cuentas de orden por lo mencionado anteriormente): esto puede ser utilizado como un control de verificación del buen término de las operaciones de cierre de cuentas realizadas;
+**Excluir cuentas de orden<!-- conti d'ordine -->**: las cuentas de orden<!-- conti d'ordine --> se visualizan al final de las secciones de activos y pasivos. Con este indicador, las cuentas de orden<!-- conti d'ordine --> no serán mostradas en el reporte. Se recuerda en particular que las cuentas de orden<!-- conti d'ordine --> nunca son objeto de cierre/apertura de cuentas<!-- chiusura/apertura conti --> en el procedimiento automático de la aplicación;
 
-Es posible incluir en la impresión también los movimientos derivados de los registros provisionales.
+**Comparación con el año anterior**: con esta opción será visible la columna del año en curso y otra para el saldo del mismo periodo pero del año anterior al configurado como filtro
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
+**Excluir causal<!-- causale -->**: si se han registrado las operaciones de cierre de cuentas<!-- registrazioni di chiusura dei conti -->, para obtener los saldos del estado financiero<!-- saldi di bilancio --> será necesario excluir los movimientos<!-- movimenti --> basados en la causal<!-- causale --> de cierre. Ejecutar el informe sin excluir esto dará como resultado un informe con todos los saldos en cero (salvo las cuentas de orden<!-- conti d'ordine --> según lo mencionado antes): esto puede utilizarse como control de verificación del buen cierre de operaciones de cuentas<!-- chiusura conti --> realizados;
+
+Es posible incluir en la impresión también los movimientos<!-- movimenti --> derivados de registros provisionales<!-- registrazioni provvisorie -->.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
 ---
 
-### Reclasificación de balance para la elaboración del balance civil (schema CEE) (Riclassificazione di bilancio per elaborazione bilancio civilistico (schema CEE))
+### Reclasificación del estado financiero<!-- Riclassificazione di bilancio --> para la elaboración del balance legal<!-- bilancio civilistico --> (esquema CEE)
 
-:::important También ver
-[**TUTORIALES EN VIDEO SOBRE IMPRESIONES FISCALES (VIDEO TUTORIALS SULLE STAMPE FISCALI)**](/docs/video/finance/intro)
+:::important Vea también<!-- Vedi Anche -->
+[**VIDEO TUTORIALES SOBRE REPORTES FISCALES**](/docs/video/finance/intro)
 :::

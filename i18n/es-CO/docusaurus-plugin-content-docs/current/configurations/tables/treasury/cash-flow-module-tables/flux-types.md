@@ -1,46 +1,47 @@
 ---
-title: tipi flusso
+title: Tipos de flujo
 sidebar_position: 2
+ai_generated: true
 ---
 
-:::tip[Inicio Rápido (FAst Start)]
-La tabla está interesada por el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
+:::tip[FAst Start]
+La tabla está involucrada en el procedimiento de [**Fast Start**](/docs/guide/fast-start)
 
-En caso de que se quiera configurar manualmente, consulte la lista de verificación de la página vinculada.
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada
 :::
 
-La tabla, previa al uso del módulo, contempla la codificación de los tipos de flujo de cash flow que la empresa desea habilitar para las simulaciones.  
+La tabla, que es preparatoria para el uso del módulo, prevé la codificación de las tipologías de flujos de cash flow<!-- flusso di cash flow --> que la empresa desea habilitar para las simulaciones.
 
-Se recomienda codificar todas las tipologías previstas: el procedimiento de *generación automática de cash flow* permite definir, en cada caso, cuáles de estas considerar y cuáles no.  
+Se recomienda codificar igualmente todos los tipos previstos: el procedimiento de *generación automática de cash flow<!-- generazione automatica cashflow -->* permite definir, cada vez, cuáles de estos considerar y cuáles no.
 
-La codificación del tipo de flujo es libre en código y descripción, a elección, y debe luego asociarse a través de los indicadores correspondientes, a los datos que pueden ser gestionados.
+La codificación del tipo de flujo es libre tanto en el código como en la descripción, a elección, y luego debe vincularse mediante los indicadores correspondientes a los datos que pueden ser gestionados.
 
-Se prevén las siguientes fuentes de datos:
+Se prevén los siguientes orígenes de datos:
 
-**codice**: código de los tipos de flujo;
+**Código**: código del tipo de flujo<!-- tipi flusso -->;
 
-**descrizione**: descripción de los tipos de flujo;
+**Descripción**: descripción del tipo de flujo<!-- tipi flusso -->;
 
-**partite**: la fuente de datos son las partidas abiertas de contabilidad general;
+**Partidas<!-- Partite -->**: el origen de datos son las partidas abiertas de contabilidad general;
 
-**saldo contabile**: de este tipo de flujo se obtienen las disponibilidades financieras iniciales, respecto a los *tipos de cuentas financieras* codificados;
+**Saldo contable<!-- Saldo contabile -->**: de este tipo de flujo se obtienen las disponibilidades financieras iniciales, respecto a los *tipos de cuentas financieras<!-- tipi conti finanziari -->* codificados;
 
-**Órdenes de clientes/órdenes de proveedores (Ordini clienti/ordini fornitori)**: órdenes de clientes, de las tipologías con indicador *cash flow*, impresas y confirmadas, no evadidas;
+**Pedidos de clientes/pedidos de proveedores<!-- Ordini clienti/ordini fornitori -->**: pedidos de clientes, de las tipologías con indicador *cash flow*, impresos y confirmados, no despachados;
 
-**Facturas de compra/venta (Fatture di acquisto/vendita)**: facturas impresas/controladas pero no contabilizadas (no de tipo proforma);
+**Facturas de compra/venta<!-- Fatture di acquisto/vendita -->**: facturas impresas/controladas pero aún no contabilizadas (no de tipo proforma);
 
-**Extracontable (Extracontabile)**: vencimientos manuales extracontables definidos en el módulo de cash flow mediante el formulario *Vencimientos extracontables*;
+**Extracontable**: vencimientos manuales extracontables definidos en el módulo de cash flow<!-- cash flow --> propio mediante el formulario *Vencimientos extracontables<!-- Scadenze extracontabili -->*;
 
-**percipienti**: compensaciones de profesionales no contabilizadas (si están contabilizadas, entran en las partidas abiertas);
+**Perceptores<!-- Percipienti -->**: honorarios de profesionales aún no contabilizados (si están contabilizados, forman parte de las partidas abiertas);
 
-**DDT de compra/venta (DDT di acquisto/vendita)**: DDT de las tipologías con indicador *cash flow*, impresas y confirmadas, no valorizadas (si son valorizadas, entran en las facturas);
+**DDT de compra/venta<!-- DDT di acquisto/vendita -->**: DDT de las tipologías con indicador *cash flow*, impresos y confirmados, no valorizados (si están valorizados, forman parte de las facturas);
 
-**Órdenes y devoluciones de trabajo (Ordini e rientri di conto lavoro)**: órdenes de trabajo por evadir y devoluciones de trabajo no facturadas;
+**Pedidos y devoluciones de cuenta trabajo<!-- Ordini e rientri di conto lavoro -->**: pedidos de cuenta trabajo<!-- conto lavoro --> por despachar y devoluciones de cuenta trabajo<!-- conto lavoro --> aún no facturadas;
 
-**rda**: solicitudes de compra;
+**RDA**: solicitudes de compra;
 
-**ordine pianificato**: órdenes de producción con fases externas planificadas o órdenes de producción que prevén una solicitud de compra.
+**Pedido planificado<!-- Ordine pianificato -->**: pedidos de producción con fases externas planificadas o pedidos de producción que prevén una solicitud de compra.
 
-**portafoglio effetti**: Efectos emitidos (y presentados, según la configuración del indicador *Usar en venc. en el castelletto* presente en la máscara de *Generación automática de cash flow*).
+**Portafolio de efectos<!-- Portafoglio effetti -->**: Efectos emitidos (y presentados, según la configuración del indicador *Usar en vencimientos en la cartera* presente en la pantalla de *Generación automática de cash flow<!-- Generazione automatica cashflow -->*)
 
-**anticipi**: Listas de anticipos de factura creadas. El procesamiento del cash flow, si para este tipo está activado el indicador 'Usar en venc. en el castelletto' (en la máscara *Generación automática de Cashflow*), va a registrar los importes de las listas contabilizadas por el importe anticipado en la cuenta bancaria, y en los flujos a las fechas de vencimiento. Cuando las facturas son cobradas (procesando un nuevo cash flow), los flujos vencidos se eliminan y el importe de la cuenta bancaria se actualiza con la parte restante no ya anticipada, menos cualquier comisión e interés.
+**Anticipos**: Remesas de adelanto de factura creadas. El procesamiento de cash flow<!-- cash flow -->, si para este tipo está activado el indicador 'Usar en vencimientos en la cartera' (en la pantalla *Generación automática de cash flow<!-- Generazione automatica Cashflow -->*), detecta los importes de las remesas contabilizadas por el monto anticipado en la cuenta bancaria, y en los flujos a las fechas de vencimiento. Cuando las facturas son cobradas (procesando un nuevo cash flow<!-- cashflow -->), los flujos pendientes se eliminan y el saldo de la cuenta bancaria se actualiza con la cuota residual no ya anticipada, neto de eventuales comisiones e intereses.

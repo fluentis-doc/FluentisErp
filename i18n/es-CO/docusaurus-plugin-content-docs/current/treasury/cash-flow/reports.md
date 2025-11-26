@@ -1,23 +1,24 @@
 ---
-title: Análisis de Cashflow (Analisi Cashflow)
+title: Análisis de Cashflow
 sidebar_position: 5
+ai_generated: true
 ---
-El formulario se encuentra en Tesorería (Tesoreria) > Cash Flow > Impresión (Stampa) > Análisis de Cash Flow (Analisi Cash Flow).
+La pantalla se encuentra en Tesorería<!-- Tesoreria --> > Cash Flow > Impresión > Análisis de Cash Flow<!-- Analisi Cash Flow -->
 
-Desde esta máscara es posible obtener la impresión de las elaboraciones de cash flow calculadas y presentes en el sistema: al abrir, el sistema propone como filtro la última elaboración realizada por el usuario actual.
+Desde esta pantalla es posible obtener la impresión de las elaboraciones de cash flow<!-- cash flow --> calculadas y presentes en el sistema: al abrir la pantalla, el sistema propone como filtro la última elaboración ejecutada por el usuario actual.
 
-Es posible establecer los siguientes filtros:  
+Es posible configurar los siguientes filtros:
 
-- qué tipos de flujo incluir en la impresión, desactivando el indicador **tutti i tipi flusso** y seleccionando los tipos deseados desde la cuadrícula;  
+- qué tipos de flujo<!-- tipi flusso --> mostrar en la impresión, desactivando la opción **Todos los tipos de flujo<!-- Tutti i tipi flusso -->** y seleccionando los tipos deseados en la cuadrícula
 
-- las 6 fechas de referencia de los cálculos, modificando los campos correspondientes en la sección **riepilogo alle seguenti scadenze**;  
+- las 6 fechas de referencia de los cálculos, modificando los campos correspondientes en la sección **Resumen en los siguientes vencimientos<!-- Riepilogo alle seguenti scadenze -->**
 
-- el **tipo di stampa** a visualizar, agrupando por tipo de flujo o por tipo de pago;  
+- el **tipo de Impresión<!-- tipo di Stampa -->** a visualizar, agrupando por tipo de flujo<!-- tipo flusso --> o por tipo de pago<!-- tipo pagamento -->,
 
-- la **visualización de datos (visualizzazione del dato)** canalizada **por banco (per banca)**;  
+- la **visualización del dato** canalizado **por banco<!-- per banca -->**,
 
-- el filtro por **Proyecto (Proyecto)** (ex commessa);  
+- el filtro por **Proyecto<!-- Progetto -->** (anteriormente "orden de trabajo"<!-- commessa -->),
 
-- la visualización de los **dettagli** de cada flujo individual (por ejemplo, todos los pedidos, todos los DDT, etc.).  
+- la visualización de los **detalles<!-- dettagli -->** de cada flujo individual (ej. todas las órdenes, todos los remitos<!-- DDT -->, etc.).
 
-- El indicador **data prevista** que muestra los flujos respecto a la fecha prevista en lugar de la fecha por defecto, que es la *data scadenza* (si la fecha prevista no ha sido modificada, por defecto corresponde a la fecha de vencimiento).
+- La opción **Fecha prevista<!-- Data prevista -->** que expone los flujos respecto a la fecha prevista<!-- data prevista --> en vez del dato por defecto que es la *fecha de vencimiento<!-- data scadenza -->* (si la fecha prevista<!-- data prevista --> no ha sido modificada, por defecto corresponde a la fecha de vencimiento<!-- data scadenza -->).

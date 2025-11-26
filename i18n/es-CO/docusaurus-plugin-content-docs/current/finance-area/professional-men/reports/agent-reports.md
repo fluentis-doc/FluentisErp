@@ -1,12 +1,13 @@
 ---
-title: stampe agenti
+title: Reportes de Agentes
 sidebar_position: 1
+ai_generated: true
 ---
 
-Desde este formulario es posible generar diferentes impresiones relacionadas con la gestión de agentes.
+Desde este formulario es posible ejecutar diferentes reportes<!-- stampe --> relacionados con la gestión de agentes.
 
-Los diversos informes son seleccionables desde la combo box correspondiente.
+Los distintos reportes<!-- report --> se pueden seleccionar desde el cuadro combinado correspondiente.
 
 ![](/img/it-it/finance-area/professional-men/reports/agent-reports/image01.png)
 
-Los diversos campos de filtro reflejan aquellos previstos para la **[Situación de retenciones (Situazione ritenute)](/docs/finance-area/professional-men/reports/withholding-tax-situation)** a la cual se hace referencia.
+Los diferentes campos de filtro son similares a los previstos para la** [ Situación de retenciones<!-- Situazione ritenute -->](/docs/finance-area/professional-men/reports/withholding-tax-situation) ** a la cual se hace referencia.

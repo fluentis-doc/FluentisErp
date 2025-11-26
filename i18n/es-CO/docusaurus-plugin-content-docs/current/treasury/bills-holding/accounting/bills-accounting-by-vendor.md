@@ -1,48 +1,49 @@
 ---
-title: contabilizzazione effetti girati al fornitore
+title: Contabilización de efectos endosados al proveedor
 sidebar_position: 4
+ai_generated: true
 ---
 
-El formulario se encuentra en Tesorería > Cartera de Efectos > Contabilización > Contabilización de efectos a proveedor (Contabilizzazione effetti a fornitore)
+El formulario se encuentra en Tesorería > Portafolio de efectos > Contabilización > Contabilización de efectos a proveedor<!-- Contabilizzazione effetti a fornitore -->.
 
-Desde esta máscara se procede a la contabilización del giro de efectos a proveedor: el procedimiento cerrará la cuenta vinculada al tipo de efectos insertados en la lista y realizará el registro de los pagos a proveedor incluidos en la lista.
+Desde esta pantalla se realiza la contabilización del endoso de efectos al proveedor<!-- giro effetti a fornitore -->: el procedimiento cerrará la cuenta<!-- conto --> asociada al tipo de efectos<!-- effetti --> ingresados en la remesa<!-- distinta --> y realizará el registro<!-- rilevazione --> de los pagos al proveedor<!-- pagamenti fornitore --> ingresados en la remesa<!-- distinta -->.
 
 :::tip[Nota]
-La contabilización de listas solo puede llevarse a cabo para listas de giro impresas en las cuales la sección de efectos sea igual a la sección de pagos.
+La contabilización de remesas<!-- contabilizzazione distinte --> solo puede realizarse para remesas de endoso<!-- distinte di giro --> impresas en las que la sección de los efectos<!-- effetti --> sea igual a la sección de pagos<!-- pagamenti -->.
 :::
 
-## Cómo contabilizar un efecto a proveedor (Come contabilizzare un effetto a fornitore)
+## Cómo contabilizar un efecto a proveedor<!-- Come contabilizzare un effetto a fornitore -->
 
-1. Utiliza la parte superior de la máscara para filtrar la búsqueda de las listas a contabilizar.
-2. Selecciona desde la cuadrícula central las listas que deseas contabilizar.
-3. Completa los parámetros para la contabilización, como la **causale di contabilità**, la **data registrazione** y la **data competenza**.
+1. Utiliza la parte superior de la pantalla para filtrar la búsqueda de las remesas<!-- distinte --> a contabilizar.
+2. Selecciona desde la cuadrícula central las remesas<!-- distinte --> que deseas contabilizar.
+3. Completa los parámetros para la contabilización como la **Causal contable<!-- Causale di contabilità -->**, la **fecha de registro<!-- data registrazione -->** y la **fecha de competencia<!-- data competenza -->**.
 
 :::note[Nota]
-Esta sección puede ser predefinida dentro de los [**parametri**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo Cartera de efectos.
+Esta sección puede ser predefinida dentro de los [**parámetros**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) del módulo Portafolio de Efectos<!-- Portafoglio effetti -->.
 :::
 
-4. Presiona el botón en la barra de ribbon **contabilizzazione distinte**.
+4. Pulsa el botón en la barra de opciones **Contabilización de remesas<!-- Contabilizzazione distinte -->**.
 
-**Botones específicos**
+**Botones específicos<!-- Pulsanti specifici -->**
 
-**ricerca**: Busca la lista de los efectos a contabilizar.
+**Buscar<!-- Ricerca -->**: Busca la lista de efectos<!-- effetti --> a contabilizar.
 
-**contabilizzazione distinte**: Realiza la contabilización para las líneas seleccionadas.
+**Contabilización de remesas<!-- Contabilizzazione distinte -->**: Ejecuta la contabilización para las filas seleccionadas.
 
-### Pestaña Anteriores (Tab Precedenti)
+### Pestaña Anteriores<!-- Tab Precedenti -->
 
-Desde la pestaña *anterior* es posible proceder a la anulación de las contabilizaciones realizadas.
+Desde la pestaña *anteriores<!-- precedenti -->* es posible proceder a la anulación de las contabilizaciones realizadas. 
 
-La anulación será posible solo si el período aún es modificable (impresión del libro diario y cierre de cuentas no ejecutadas).
+La anulación será posible solo si el período aún es modificable (no se ha realizado la impresión del libro diario y el cierre de cuentas<!-- stampa libro giornale e chiusura conti -->). 
 
-Un doble clic en la sección de registros permitirá visualizar el registro contable relacionado.
+Un doble clic en la sección de registros<!-- registrazioni --> permitirá visualizar el asiento contable<!-- registrazione contabile --> correspondiente. 
 
-Hay una pestaña de detalle para visualizar los errores detectados durante la contabilización.
+Está disponible una pestaña de detalle para la visualización de los errores detectados durante el proceso de contabilización.
 
-**Botones específicos**
+**Botones específicos<!-- Pulsanti specifici -->**
 
-**ricerca**: Busca la lista de las contabilizaciones realizadas.
+**Buscar<!-- Ricerca -->**: Busca la lista de contabilizaciones realizadas.
 
-**rollback contabilizzazione**: Ejecuta la restauración de las contabilizaciones seleccionadas.
+**Reversión contabilización<!-- Rollback contabilizzazione -->**: Realiza la reversión de las contabilizaciones seleccionadas.
 
-**rollback distinte**: Realiza la restauración del registro contable seleccionado relacionado con la lista individual.
+**Reversión remesas<!-- Rollback distinte -->**: Realiza la reversión del asiento contable<!-- registrazione contabile --> seleccionado relacionado con la remesa<!-- distinta --> individual.

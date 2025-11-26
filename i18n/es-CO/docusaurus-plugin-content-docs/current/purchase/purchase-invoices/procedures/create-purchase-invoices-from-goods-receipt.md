@@ -1,36 +1,36 @@
 ---
-title: Creación de facturas de compra a partir de la recepción de mercancías
+title: Creazione fatture di acquisto da ricevimento merci
 sidebar_position: 2
 ---
 
-El procedimiento se abre a través de la ruta **Compras > Facturas de compra > Procedimientos > Creación de facturas a partir de la recepción de mercancías**
+La procedura si apre tramite il percorso **Acquisti > Fatture di acquisto > Procedure > Creazione fatture da ricevimento merci**
 
 ### Filtro
 
-Ofrece la posibilidad de ingresar filtros para buscar las recepciones, seleccionarlas y crear la factura. Es posible filtrar por: número de documento, fecha, cuenta, tipo de documento, artículo y proyecto.
+Offre la possibilità di inserire filtri per cercare i ricevimenti, selezionarli e creare la fattura. È possibile filtrare per: numero documento, data, conto, tipo documento, articolo e progetto.
 
-- **Número y fecha de factura**: permiten especificar el número interno y la fecha relacionada a la factura que se generará con el procedimiento. Si no se valoran, el campo *número interno* de la factura estará vacío y el procedimiento utilizará la fecha actual.
+- **Numero e data fattura**: permettono di specificare il numero interno e la data relativa alla fattura che verrà generata con la procedura. Se non valorizzati il campo *numero interno* della fattura sarà vuoto e la procedura utilizzerà la data corrente.
 
-*Botón específico*:
-> **Facturas de compra de la salida de recibo de mercancías**: después de haber configurado los parámetros y seleccionado las líneas a valorar, la factura puede ser creada mediante el uso de este botón.
+*Pulsante specifico*:
+> **Creazione fatture d'acquisto da ricevimento merci**: dopo aver impostato i parametri e selezionato le righe da valorizzare, la fattura può essere creata mediante l'utilizzo di questo pulsante.
 
-### Parámetros
+### Parametri
 
-En esta pestaña, el usuario tiene la opción de configurar los parámetros para la creación de la factura.
+In questo tab l'utente ha la possibilità di configurare i parametri per la creazione della fattura.
 
-*Datos obligatorios*:
+*Dati obbligatori*:
 
-- **Tipo de factura de compra**: indica el tipo de documento a utilizar para la creación de la factura.
-- **IVA**: indica la [Tasa de IVA](/docs/configurations/tables/finance/vat-rates) que se debe insertar en las líneas de artículo de la factura.
-- **Tipo de volumen de compras**: debe configurarse en las líneas de artículo de la factura.
+- **Tipo fattura acquisto**: indica il tipo documento da usare per la creazione della fattura.
+- **IVA**: indica l'[Aliquota IVA](/docs/configurations/tables/finance/vat-rates) da inserire sulle righe articolo della fattura.
+- **Tipo fatturato acquisti**: da impostare sulle righe articolo della fattura.
 
-*Datos opcionales*:
-> **Recalcular centros de costo/ingresos**: permite elegir si se desea recalcular los centros de costo/revenue al momento de la creación de la factura.
+*Dati opzionali*:
+> **Ricalcola centri di costo/ricavo**: permette di scegliere se si vuole ricalcolare i centri di costo/ricavo al momento della creazione della fattura.
 
 ### Rollback
 
-Ofrece la posibilidad de buscar, visualizar y anular las operaciones realizadas.
+Offre la possibilità di cercare, visualizzare e annullare le operazioni effettuate.
 
-Para anular una operación, es suficiente seleccionar la fila correspondiente a la factura que se desea eliminar en la cuadrícula superior y hacer clic en el botón **Rollback** ubicado en la barra de ribbon.
+Per annullare un'operazione è sufficiente selezionare la riga corrispondente alla fattura da cancellare nella griglia superiore e cliccare sul pulsante **Rollback** posto nella ribbon bar.
 
-A cada fila de la cuadrícula superior (que contiene número, fecha y usuario que creó la factura) corresponden una o más filas en las cuadrículas inferiores **facturas** y **recibos**. En estas dos cuadrículas, mediante doble clic en la fila correspondiente, el usuario puede abrir y visualizar la factura recién creada o la recepción.
+Ad ogni riga della griglia superiore (che contiene numero, data e utente che ha creato la fattura) corrispondono una o più righe nelle griglie inferiori **Fatture** e **Ricevimenti**. In queste due griglie, mediante doppio click sulla riga interessata, l'utente può apire e visualizzare la fattura appena creata oppure il ricevimento.

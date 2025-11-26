@@ -1,30 +1,31 @@
 ---
-title: Nuevo Estado de Avance de Trabajos (Nuovo Stato Avanzamento Lavori)
+title: Nuevo Estado de Avance de Trabajos
 sidebar_position: 1
+ai_generated: true
 ---
 
-En esta pantalla es posible ingresar manualmente los datos de un nuevo **stato avanzamento lavori** o, mejor aún, consultar los resultados derivados de los procedimientos de creación de los SAL. Este documento agrega ganancias y costos derivados de los proyectos. Los datos son:
+En esta pantalla es posible ingresar manualmente los datos de un nuevo **Estado de avance de trabajos<!-- Stato avanzamento lavori -->** o consultar los resultados derivados de los procedimientos de creación de los SAL<!-- SAL -->. Este documento agrega beneficios y costos derivados de los proyectos<!-- progetti -->. Los datos son:
 
-**tipo**: contiene la tipología de avance; remite a la tabla **tipo avanzamento lavori**, que los identifica con un Código, una Descripción y una Numeración;  
+**Tipo**: contiene el tipo de avance; remite a la tabla **Tipo de avance de trabajos<!-- Tipo avanzamento lavori -->**, que los identifica con un Código, una Descripción y una Numeración;
 
-**progetto**: contiene el [Proyecto (Progetto)](/docs/project-management/projects/search-projects-intro/) relacionado;  
+**Proyecto**: contiene el [Proyecto](/docs/project-management/projects/search-projects-intro/) relacionado;
 
-**comparabile**: indica si el documento podrá ser comparado en el futuro;  
+**Comparable<!-- Comparabile -->**: indica si el documento podrá ser comparado en el futuro;
 
-**visualizza in analisi**: hace que el documento sea visible en los análisis;  
+**Visualizar en análisis<!-- Visualizza in analisi -->**: permite que el documento sea visible en los análisis;
 
-**nota**: contiene notas adicionales;  
+**Nota**: contiene notas adicionales si corresponde;
 
-**numero/data**: contiene el número y la fecha del documento;  
+**Número/Fecha<!-- Numero/Data -->**: contiene el número y la fecha del documento;
 
-**data conferma**: contiene la fecha de confirmación del estado de avance de trabajos;  
+**Fecha de confirmación<!-- Data conferma -->**: contiene la fecha de confirmación del estado de avance de trabajos<!-- stato avanzamento lavori -->;
 
-**Cant. orig. Costos/UM orig. Costos (Qtà orig. Costi/UM orig. Costi)**: indica la cantidad y la unidad de medida de los costos originales del proyecto;  
+**Cant. orig. Costos/UM orig. Costos<!-- Qtà orig. Costi/UM orig. Costi -->**: indica la cantidad y la unidad de medida de los costos originales del proyecto<!-- progetto -->;
 
-**Cant. calc. Costos/UM calc. Costos (Qtà calc. Costi/UM calc. Costi)**: indica la cantidad y la unidad de medida calculadas del proyecto;  
+**Cant. calc. Costos/UM calc. Costos<!-- Qtà calc. Costi/UM calc. Costi -->**: indica la cantidad y la unidad de medida calculadas del proyecto<!-- progetto -->;
 
-**Cant. orig. Ganancia/UM orig. Ganancia (Qtà orig. Profitto/UM orig. Profitto)**: indica la cantidad y la unidad de medida de las ganancias originales del proyecto;  
+**Cant. orig. Beneficio/UM orig. Beneficio<!-- Qtà orig. Profitto/UM orig. Profitto -->**: indica la cantidad y la unidad de medida de los beneficios originales del proyecto<!-- progetto -->;
 
-**Cant. calc. Ganancia/UM calc. Ganancia (Qtà calc. Profitto/UM calc. Profitto)**: indica la cantidad y la unidad de medida calculadas del proyecto.  
+**Cant. calc. Beneficio/UM calc. Beneficio<!-- Qtà calc. Profitto/UM calc. Profitto -->**: indica la cantidad y la unidad de medida calculadas del proyecto<!-- progetto -->.
 
-Luego hay dos cuadrículas, **riepiloghi** y **dettagli**, que contienen la información detallada de las intervenciones del proyecto.
+Luego están presentes dos cuadrículas, **Resúmenes<!-- Riepiloghi -->** y **Detalles**, que contienen la información detallada de las intervenciones del proyecto<!-- progetto -->.

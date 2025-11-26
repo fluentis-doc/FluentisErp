@@ -1,37 +1,37 @@
 ---
-title: Gestión de Devoluciones y Notas de Crédito 
+title: Gestione Resi e Note di Accredito
 sidebar_position: 3
 --- 
 
-La gestión de **devoluciones a proveedores** y **notas de crédito** permite administrar los flujos de retorno de mercancías y los ajustes financieros relacionados con los proveedores.    
+La gestione dei **resi a fornitore** e delle **note di accredito** consente di amministrare i flussi di ritorno delle merci e i relativi aggiustamenti finanziari con i fornitori.    
 
-:::important Recuerda
-Las **devoluciones a proveedores** se diferencian de otros tipos de facturas porque la *Naturaleza de la factura* (presente en la tabla [Tipos de facturas de compra](/docs/configurations/tables/purchase/purchase-invoices-type)) es **Nota de crédito del proveedor**. De manera similar, el DDT de devolución tendrá [Naturaleza](/docs/configurations/tables/purchase/purchase-delivery-notes-type) **devolución**. 
+:::important Ricorda
+I **resi fornitore** si differenziano dalle altre tipologie di fatture perchè la *Natura fattura* (presente nella tabella [Tipi fatture di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type)) è **Nota accredito da Fornitore**. Analogamente, il DDT di reso avrà [Natura](/docs/configurations/tables/purchase/purchase-delivery-notes-type) **Reso**. 
 :::
 
-### Creación de la devolución a proveedor 
+### Creazione del Reso fornitore
 
-Cuando se devuelve un producto a un proveedor, el proceso comienza con la creación de un documento de devolución en el sistema. Este documento puede ser ingresado manualmente (creando un DDT de *devolución* o una *Nota de crédito* e ingresando manualmente los artículos a devolver), o automáticamente mediante el procedimiento de *storno* disponible en la búsqueda de documentos. 
+Quando viene restituito un prodotto a un fornitore, il processo inizia con la creazione di un documento di reso nel gestionale. Questo documento può essere inserito manualmente (creando un DDT di *Reso* o una *Nota di accredito* e inserendo manualmente gli articoli da stornare), oppure automaticamente tramite la procedura di *Storno* disponibile nella ricerca dei documenti. 
 
-En la barra de opciones de la [Búsqueda de facturas de compra](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) está presente el botón **rotación inversa** (de manera similar, en la [Búsqueda de DDT de compra](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/search-delivery-note) está presente el botón **reversión**). Este botón permite crear una devolución asociada a la factura de compra seleccionada.    
-Una vez seleccionada la factura a anular y presionado el botón, se abre la máscara **Documento de reverso**, donde es necesario marcar los artículos a devolver e indicar la [tipología](/docs/configurations/tables/purchase/purchase-invoices-type) de documento a crear (se proponen solo los documentos con Naturaleza *Nota de crédito del proveedor*). Una vez confirmada la operación, se creará la factura de anulación, visible en la Búsqueda de facturas. La factura se crea con la fecha actual y tendrá el importe total de los artículos a anular tomado de la factura original.    
+Nella ribbon bar della [Ricerca fatture di acquisto](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) è presente il pulsante **Storno fatturazione** (analogamente, nella [Ricerca DDT di acquisto](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/search-delivery-note) è presente il pulsante **Storno**). Questo pulsante permette di creare un reso collegato alla fattura di acquisto selezionata.    
+Una volta selezionata la fattura da stornare e premuto il bottone, si apre la maschera **Storno documento**, nella quale è necessario flaggare gli articoli da rendere e indicare la [tipologia](/docs/configurations/tables/purchase/purchase-invoices-type) di documento da creare (vengono proposti solo i documenti con Natura *Nota accredito da fornitore*). Una volta confermata la procedura, verrà creata la fattura di storno, visibile dalla Ricerca fatture. La fattura viene creata con la data odierna e avrà l'importo totale degli articoli da stornare preso dalla fattura di partenza.    
 
-Si se crea un **DDT de devolución**, por otro lado, el sistema puede generar automáticamente la nota de crédito correspondiente utilizando los procedimientos de [Valoración de DDT de Compra](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) o mediante la [Anulación de DDT](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) desde dentro de una nueva *Nota de Crédito*.
+Se viene creato un **DDT di reso**, invece, il sistema può generare automaticamente la nota di accredito corrispondente utilizzando le procedure di [Valorizzazione DDT di Acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) oppure mediante l'[Evasione DDT](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) dall'interno di una nuova *Nota di Accredito*.
 
-Antes de ser finalizada, la nota de crédito puede ser revisada y modificada, si es necesario. Al guardar una nota de crédito, se propone la modificación de los signos de todos los tipos de gasto asociados, pero se puede decidir libremente si aceptar la modificación o no.    
+Prima di essere finalizzata, la nota di accredito può essere controllata e modificata, se necessario. Al salvataggio di una nota di accredito, viene proposta la modifica dei segni di tutti i tipi di spesa associati, ma è possibile decidere liberamente se accettare la modifica o meno.    
 
-También para las **devoluciones** es posible utilizar las diferentes **Informes** previstas por el módulo, solo hay que filtrar por el tipo de documento elegido. 
+Anche per i **resi** è possibile utilizzare le diverse **Stampe** previste dal modulo, basterà filtrare per la tipologia di documento prescelto. 
 
-### Actualización de Stock 
+### Aggiornamento delle Scorte
 
-Después de haber registrado en el almacén el documento de anulación, el sistema actualiza automáticamente el stock del almacén para reflejar el retorno de la mercancía, disminuyendo el inventario y la disponibilidad de los artículos devueltos.    
+Dopo aver registrato a magazzino il documento di storno, il sistema aggiorna automaticamente le scorte del magazzino per riflettere il rientro della merce, diminuendo la giacenza e la disponibilità degli articoli resi.    
 
-### Actualización de Contabilidad 
+### Aggiornamento della Contabilità
 
-Una vez contabilizada, la **nota de crédito** actualiza los registros contables, reduciendo el monto adeudado al proveedor. Esto puede resultar en una disminución del saldo pendiente o un reembolso, según los acuerdos contractuales con el proveedor.    
+Una volta contabilizzata, la **nota di accredito** aggiorna i registri contabili, riducendo l’importo dovuto al fornitore. Questo può comportare una diminuzione del saldo aperto o un rimborso, a seconda degli accordi contrattuali con il fornitore.    
 
 :::note Nota
-A partir de la versión 607, las **Notas de Crédito** se gestionan con el signo negativo. Al momento de guardar la factura, **Fluentis** cambiará el signo de los artículos y los gastos, advirtiendo al usuario con un pop-up.    
-La gestión de la contabilización del documento no cambia respecto al pasado, ya que el documento negativo continúa siendo deducido del registro de IVA (antes se convertía en negativo al momento de la contabilización). El envío del documento al SDI mediante la generación del archivo .xml prevé un nuevo cambio de signo en conformidad con las especificaciones técnicas para la facturación electrónica.   
-La modificación en comentario se ha hecho necesaria, por tanto, especialmente para una mejor gestión de las estadísticas y las elaboraciones relacionadas.
+Dalla versione 607 le **Note di accredito** vengono gestite con il segno meno. Al momento del salvataggio della fattura **Fluentis** cambierà il segno degli articoli e delle spese avvisando l'utente con un pop up.    
+La gestione della contabilizzazione del documento non cambia rispetto al passato in quanto il documento negativo continua ad essere defalcato dal registro iva (prima veniva convertito in negativo al momento della contabilizzazione). L'invio del documento allo sdi tramite generazione del file .xml prevede un nuovo cambio di segno in conformità alle specifiche tecniche per la fatturazione elettronica.   
+La modifica in commento si è resa necessaria, pertanto, soprattutto per una migliore gestione delle statistiche e delle elaborazioni connesse.
 :::

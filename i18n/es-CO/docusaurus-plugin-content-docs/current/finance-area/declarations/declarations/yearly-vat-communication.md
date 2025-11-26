@@ -1,8 +1,9 @@
 ---
-title: comunicazione iva annuale
+title: Comunicación IVA anual
 sidebar_position: 3
+ai_generated: true
 ---
 
-Este cumplimiento fue suprimido a partir del año 2017.
+Esta obligación fue eliminada a partir del año 2017.
 
-El procedimiento permitía elaborar los valores (botón **calcola valori** en la barra de herramientas) y una impresión de soporte para la recopilación del modelo fiscal.
+El procedimiento permitía elaborar los valores (botón **Calcular valores** en la cinta de opciones<!-- ribbon bar -->) y un informe de apoyo para la compilación del modelo fiscal.

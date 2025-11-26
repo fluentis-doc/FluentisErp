@@ -1,81 +1,99 @@
 ---
-title: Creación y Gestión de la Lista de Presentación (Creazione e Gestione Distinta di Presentazione)
+title:  Creación y Gestión de Lista de Presentación
 sidebar_position: 6
+ai_generated: true
 ---
 
-El formulario se encuentra en la ruta **Tesorería > Efectos > Crear Lista** y permite la creación de una *nueva* lista o la *modificación/visualización* de una lista ya existente.
+El formulario se encuentra en la ruta **Tesorería > Efectos > Crear Lista<!-- Distinta -->** y permite la creación de una *nueva* lista<!-- distinta --> o la *modificación/visualización* de una lista<!-- distinta --> ya existente.
 
-## Cómo crear una Lista de presentación
+## Cómo crear una Lista de presentación<!-- Distinta di presentazione -->
 
 <details>
 
-  <summary>Clica para los pasos fundamentales</summary>
+  <summary>Haz clic para los pasos fundamentales<!-- Clicca per i passaggi fondamentali --></summary>
  
-  1. Llama el **Tipo** (de lista); si has asociado Subcuentas / Contrapartidas, estos campos se cargarán automáticamente; de lo contrario, ingrésalos manualmente;  
-  2. **Guarda** el encabezado recién creado;  
-  3. Usa el botón **Adquisición de efectos** (en la barra de ribbon) para insertar en la lista los efectos previamente creados;  
-  4. Usa el botón **Generación de archivo Ri.Ba.** (en la barra de ribbon) para crear el archivo telemático que se enviará al banco;  
-  5. Abre la lista con el botón **Documentos** (en la barra de ribbon) para acceder al archivo telemático adjunto;  
-  6. Después de abrir el archivo telemático, usa **Guardar adjunto** para descargar una copia en tu PC para enviar al banco;  
-  7. Imprime la lista o activa el indicador **Impreso**;  
-  8. Usa **Contabilizar y cerrar** si quieres contabilizar la lista.
+  1. Selecciona el **Tipo** (de lista<!-- distinta -->); si has asociado Subcuentas<!-- Sottoconti -->/Contrapartidas<!-- Contropartite --> estos campos se cargarán automáticamente, de lo contrario insértalos manualmente.  
+  2. **Guarda** el encabezado recién creado.  
+  3. Utiliza el botón **Adquisición de efectos<!-- Acquisizione effetti -->** (en la ribbon bar) para agregar a la lista<!-- distinta --> los efectos previamente creados.  
+  4. Utiliza el botón **Creación de archivo Ri.Ba.** (en la ribbon bar) para crear el archivo telemático para enviar al banco.  
+  5. Abre la lista con el botón **Documentos** (en la ribbon bar) para acceder al archivo telemático adjunto.  
+  6. Después de abrir el archivo telemático, utiliza **Guardar adjunto** para descargar una copia en tu PC y enviarla al banco.  
+  7. Imprime la lista<!-- distinta --> o activa la casilla **Impreso<!-- Stampato -->**.  
+  8. Utiliza **Contabilizar y cerrar<!-- Contabilizza e chiudi -->** si deseas contabilizar la lista<!-- distinta -->.
 
 </details>
 
-1. *Inserción de datos*:  
+1. *Ingreso de datos*:  
 
-> 1.1. Ingresa el *Tipo de la lista* con el cuadro combinado **Tipo**: el programa crea automáticamente el número progresivo de la lista según el **numerador** asociado al tipo para el **año** de referencia.  
-> 1.2. La **fecha de presentación** se propone como fecha *hoy* y puede cambiarse si es necesario.  
-> 1.3. La **divisa** de la lista se propone en función de la divisa de la empresa activa: en caso de que se asigne una divisa diferente al euro, esto obliga a ingresar en la lista solo efectos con la misma divisa.  
-> 1.4. La sección de **Subcuentas / Contrapartidas** se puede completar automáticamente en función de la configuración del [**tipo de lista**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types) seleccionado. Si no se han predefinido las cuentas asociadas al tipo de lista, ingrésalas manualmente en los dos campos (widget):  
->> - **Banco cuenta corriente** (se trata de la subcuenta relacionada con la base de datos del banco en la que se realizará el abono final al buen término de la operación) y  
->> - **Contrapartida presentada al cobro / descuento / después de cobro** (cuenta transitoria de presentación; en la fase de *contabilización de la lista*, se anulará la *cuenta del portafolio activo* y se abonarán las sumas a esta cuenta, posteriormente, en la fase de contabilización del abono, desde esta cuenta las sumas se transferirán a la cuenta *Banco cuenta corriente*).  
-> 1.5. Si has definido en la base de datos del banco un valor límite para el cajón, el importe concedido y el residuo utilizable se visualizarán en la sección *Situación del cajón bancario*.  
-> 
-Si has completado el valor del cajón en la sección *Diferenciado* (en lugar de *Global*), establece la tipología de lista en creación con los botones de opción en la sección **Tipo de presentación** para gestionar específicamente los valores del cajón *Concedido* y *Residuo*.
+> 1.1. Ingresa el *Tipo de lista<!-- distinta -->* con la combo box **Tipo**: el programa crea automáticamente el número progresivo de la lista<!-- distinta --> según el **numerador<!-- numeratore -->** asociado al tipo para **el año** de referencia.  
+>1.2. La **fecha de presentación<!-- data di presentazione -->** se propone como fecha de *hoy* y puede ser cambiada si es necesario.  
+>1.3. La **divisa<!-- divisa -->** de la lista<!-- distinta --> se sugiere con base en la divisa de la compañía activa: si se asigna una divisa diferente al euro, se requiere que en la lista<!-- distinta --> sólo se ingresen efectos en esa misma divisa.  
+1.4. La sección de **Subcuentas<!-- Sottoconti --> / Contrapartidas<!-- Contropartite -->** puede completarse automáticamente según la configuración del [**tipo de lista<!-- tipo distinta -->**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types) seleccionado. Si no se han predefinido las cuentas asociadas al tipo de lista<!-- distinta -->, insértalas manualmente en los dos campos (widget): 
+>> - **Banco cuenta corriente<!-- Banca conto corrente -->** (se refiere a la subcuenta<!-- sottoconto --> vinculada al registro bancario<!-- anagrafica banca --> donde se acreditará finalmente la operación) y      
+>> - **Contrapartida presentado a salvo buen fin / descuento / después de cobro<!-- Contropartita presentato al salvo buon fine / sconto / dopo incasso -->** (cuenta transitoria de presentación; en la fase de *contabilización de la lista<!-- contabilizzazione della distinta -->* se cancelará la *cuenta del portafolio activo<!-- conto del portafoglio attivo -->* y se acreditarán las sumas en esta cuenta, posteriormente, en la fase de contabilización del abono, desde esta cuenta las cantidades serán transferidas a la cuenta *Banco cuenta corriente<!-- Banca conto corrente -->*).  
+> 1.5. Si has definido en el registro bancario<!-- anagrafica banca --> un valor límite para el castelletto<!-- castelletto -->, el importe concedido y el residuo utilizable se visualizarán en la sección *Situación del castelletto bancario<!-- Situazione castelletto bancario -->*.
 
-2. **Guarda** el encabezado de la lista recién creada. Una vez guardada la lista, se activarán los diferentes botones de gestión en la barra de ribbon.
+Si has completado el valor del castelletto<!-- castelletto --> en la sección *Diferenciado* (en vez de *Global*), configura la tipología de lista<!-- distinta --> en creación con los radio buttons en la sección **Tipo de presentación<!-- Tipo presentazione -->** para gestionar específicamente los valores del castelletto<!-- castelletto --> *Concedido* y *Restante*.
 
-3. Usa el botón **Adquisición de efectos** (en la barra de ribbon) para insertar los efectos previamente creados en la lista. Este comando abre una máscara de búsqueda de efectos emitidos pero que aún no se han presentado en la lista. ATENCIÓN: Desde esta máscara, solo será posible insertar en la lista los efectos completos de los datos ABI/CAB necesarios.  
+2. **Guarda** el encabezado de la lista<!-- distinta --> que acabas de crear. Una vez guardada la lista<!-- distinta -->, de hecho, se activarán los diversos botones de gestión en la ribbon bar.
 
-La inserción de efectos en la lista actualiza el *Total de la lista* visualizado en la parte inferior del formulario: para eliminar un efecto de la lista, basta con seleccionarlo y presionar el botón *Supr* del teclado, o el botón ***Eliminar Efectos*** en la barra de ribbon.
+3. Utiliza el botón **Adquisición de efectos<!-- Acquisizione effetti -->** (en la ribbon bar) para agregar los efectos previamente creados en la lista<!-- distinta -->. En particular, este comando abre una pantalla de búsqueda de los efectos emitidos pero no presentados aún en lista<!-- distinta -->. ATENCIÓN: Desde esta máscara sólo será posible agregar a la lista<!-- distinta --> los efectos completos con las referencias ABI/CAB necesarias.
 
-4. Usa el botón **Generación de archivo Ri.Ba.** para crear el archivo telemático de la lista que se enviará al banco. Alternativamente, dependiendo del tipo de lista creada, están disponibles las exportaciones para formatos SDD (ex RID ahora a nivel Sepa Europeo) y LCR (Francés).
+El ingreso de los efectos en la lista<!-- distinta --> actualiza el *Total lista<!-- Totale distinta -->* que se visualiza en la parte inferior del formulario: para eliminar un efecto de la lista<!-- distinta --> simplemente selecciónalo y presiona la tecla *Supr* de tu teclado, o bien el botón ***Eliminar Efectos<!-- Cancella Effetti -->*** de la ribbon bar.
 
-5. Abre la documentación con el botón **Documentos** (en la barra de ribbon) para descargar en tu PC el archivo que se enviará al banco.  
+4. Utiliza el botón **Generación de archivo Ri.Ba.** para crear el archivo telemático de la lista<!-- distinta --> para enviar al banco. Alternativamente, según el tipo de lista<!-- distinta --> creada, están disponibles las exportaciones para archivos SDD (ex RID ahora a nivel Sepa Europeo) y LCR (Francés).
 
-6. Después de abrir el documento en la documentación, usa el botón **Guardar adjunto** para descargar una copia en tu PC para enviar al banco.
+5. Abre el módulo documental con el botón **Documentos** (en la ribbon bar) para descargar en tu PC el archivo para enviar al banco.
 
-7. Una vez completada la lista, será posible proceder a la **impresión** directa de la misma (o activar el indicador *Impreso*).
+6. Después de abrir el documento en el documental, usa el botón **Guardar adjunto** para descargar una copia en tu PC para enviar al banco.
+
+7. Una vez completada la lista<!-- distinta --> será posible proceder con la **impresión** directa de la misma (o activar la casilla *Impreso<!-- Stampato -->*).
 
 :::tip[Info]
-El **estado de lista impresa es necesario para poder proceder a su contabilización**, que se puede realizar directamente desde esta máscara con el botón **Contabilizar y cerrar**: será necesario haber predefinido el motivo contable dentro de los parámetros del módulo. 
+El **estado de lista impresa<!-- stato di distinta stampata --> es necesario para poder proceder a su contabilización**, lo cual puede hacerse directamente desde esta pantalla con el botón **Contabilizar y cerrar<!-- Contabilizza e chiudi -->**: será obligatorio haber predefinido la causale<!-- causale --> contable dentro de los parámetros del módulo.
 :::
 
-8. Usa el botón **Contabilizar y cerrar** si necesitas contabilizar la lista.
+8. Utiliza el botón **Contabilizar y cerrar<!-- Contabilizza e chiudi -->** si necesitas contabilizar la lista<!-- distinta -->.
 
 :::note[Nota]
-La situación del cajón bancario propone los datos del cajón SBf almacenados en la base de datos del banco *Cuenta corriente* y el saldo disponible de acuerdo con el importe de los efectos presentados pero aún no acreditados.  
+La situación del castelletto bancario<!-- castelletto bancario --> muestra los datos del castelletto sbf guardado en el registro bancario<!-- anagrafica banca --> *Cuenta corriente<!-- Conto corrente -->* y el saldo disponible en base al importe de los efectos presentados pero aún no acreditados.
 
-Una serie de indicadores almacena si la lista ha sido:  
-- impresa (esta condición es obligatoria para poder proceder a su contabilización),  
-- si se ha **creado** un **Archivo** telemático,  
-- si ha sido **Contabilizada** y  
-- si se trata de una lista **RID** relacionada con **servicios** o LCR.  
+Una serie de flags almacena si la lista<!-- distinta --> ha sido: 
+- Impresa (esta condición es obligatoria para poder proceder a su contabilización), 
+- si se ha **creado** un **Archivo** telemático,
+- si ha sido **Contabilizada**
+- si se trata de una lista<!-- distinta --> **RID** referida a **servicios públicos<!-- utenze -->** o LCR.
 :::
 
-### La pestaña **Pagos** 
+### La pestaña **Pagos<!-- Pagamenti -->**
 
-- está activa **solo en el caso de** tipo de lista con indicador ***Efectos a proveedor***
+- está activa **sólo en caso de** tipo de lista<!-- distinta --> con el flag ***Efectos a proveedor<!-- Effetti a fornitore -->***
 
-- está dedicada a la identificación de las partidas de proveedores que se cerrarán con la transferencia de los efectos presentes en la lista misma.  
+- está dedicada a la identificación de los documentos de proveedor a cerrar mediante el movimiento de los efectos presentes en la lista<!-- distinta -->.
 
-El total de la sección **Pagos** deberá ser igual al total de los efectos transferidos: para lograr esta igualdad se permite la inserción de una fila manual de diferencia, que se gestionará como apertura de partida a favor del proveedor si el motivo contable utilizado prevé la apertura de partidas misma.  
+El total de la sección **Pagos<!-- Pagamenti -->** deberá ser igual al total de los efectos girados: para obtener esta igualdad se permite el ingreso de una línea manual de diferencia, la cual será gestionada como apertura de documento a nombre del proveedor si la causale<!-- causale --> contable utilizada prevé abrir documentos relacionados.
 
-**Botones específicos**:  
+**Botones específicos**:
 
-*Nueva pago*: Activa el cursor en una nueva fila de pago.  
+*Nuevo pago*: Activa el cursor en una nueva línea de pago.
 
-*Eliminar pagos*: Elimina los pagos seleccionados en la cuadrícula.  
+*Eliminar pagos*: Elimina los pagos seleccionados en la cuadrícula.
 
-*Pagos de partidas:* Abre la máscara de ayuda sobre partidas, desde la cual seleccionar las partidas de proveedor a cerrar.
+*Pagos desde partidas*: Abre la pantalla de ayuda para partidas, desde donde se seleccionarán las partidas de proveedor a cerrar.
+
+## Listas SDD Sepa Direct Debit
+
+El Débito Directo Sepa<!-- Addebito Diretto Sepa -->, que sustituye al anterior RID nacional, es una herramienta de cobro preautorizado frente a un mandato de débito recibido del Deudor a favor de su Acreedor.
+
+Está basado en un acuerdo previo (mandato) entre Deudor y Acreedor que permite a este último solicitar la activación de un procedimiento interbancario para debitar la cuenta del Deudor de forma automática.
+
+
+:::tip[Cómo crear una lista SDD]
+Después de completar los campos necesarios [**en el registro del cliente**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information) titular del SDD y en la tabla con los datos de nuestra empresa, es necesario:
+
+- Definir un tipo específico de Efecto "*SDD*" [**aquí**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) y asociarlo al respectivo [**Tipo de pago**](/docs/configurations/tables/general-settings/payment-types)
+- Definir un tipo específico de lista<!-- distinta --> en el portafolio de efectos, ver el campo Servicios públicos<!-- Utenze --> [**aquí**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+- Utilizar los procedimientos [**Creación de efectos a partir de partidas**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) o [**Creación de efectos a partir de vencimientos**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values) para generar un efecto de tipo "*SDD*"
+- Crear una [**nueva lista de presentación**](/docs/treasury/bills-holding/lists-ceation-and-management) de tipo "*SDD*" e ingresar el efecto "*SDD*" dentro de la misma 
+- Utilizar el botón **Exportación SDD** en la ribbon bar (habilitado mediante el tipo específico de lista<!-- distinta --> configurado con el flag Servicios públicos<!-- Utenze -->) para generar el archivo bancario válido para SDD.
+:::

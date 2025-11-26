@@ -1,236 +1,220 @@
 ---
-title: controlli articolo
+title: Controles de artículo
 sidebar_position: 3
+ai_generated: true
 ---
 
-La gestión se puede realizar desde la **Búsqueda de controlli articolo (Ricerca Controlli articolo)**.
+La gestión se puede realizar desde la **Búsqueda de controles de artículo<!-- Ricerca Controlli articolo -->**.   
 
-:::important ¿Para qué sirve? (A cosa serve)
-Los controlli articolo permiten el registro de las mediciones realizadas, los valores detectados y la consiguiente indicación de conformidad o no del material, semielaborado o producto controlado.  
-Enumeramos los documentos desde los cuales se pueden realizar controles sobre los artículos: Recepciones de mercancía, D.D.T. y Facturas de compra, Declaraciones de producción, Fases de órdenes de producción, Reingresos de trabajo por cuenta y Movimientos de carga.  
+:::important Para qué sirve<!-- A cosa serve -->
+Los controles de artículo<!-- Controlli articolo --> permiten el registro de las mediciones realizadas, los valores detectados y la consiguiente indicación de la conformidad o no del material, semielaborado o producto controlado.  
+A continuación, enumeramos los documentos desde los cuales es posible efectuar controles sobre los artículos<!-- articoli -->: Recepciones de mercancía, D.D.T. y Facturas de compra, Declaraciones de producción, Fases de órdenes de producción, Reingresos de Conto lavoro<!-- Conto lavoro --> y Movimientos de entrada<!-- Movimentazioni di carico -->.  
 Los controles pueden ser específicos para: Lote de artículo, Número de serie o por Unidad de carga.  
-A través de la solución M.E.S., integrada en Fluentis, es posible ingresar la información requerida de manera directa y simplificada.
+A través de la solución M.E.S., integrada en Fluentis, es posible ingresar la información solicitada de forma directa y simplificada.  
 
-Estándar están disponibles los reportes de:  
-> **elenco controlli articolo per articolo**: lista de los *controlli articolo* agrupados por: *Artículo*.  
-> **elenco controlli articolo per cliente/fornitore**: lista de los *controlli articolo* agrupados por: *Cliente/Fornitore*.  
-> **elenco controlli articolo per tipo documento**: lista de los *controlli articolo* agrupados por: *Tipo documento*.  
-> **etichetta articolo c e nc**: etiqueta que muestra los referencias de *Artículo* y detalle de *Lote* o *Número de serie* controlado.  
+De forma estándar están disponibles los siguientes reportes:
+> **Listado de controles de artículo por artículo<!-- Elenco Controlli articolo per Articolo -->**: listado de los *Controles de artículo<!-- Controlli articolo -->* agrupados por: *Artículo<!-- Articolo -->*.  
+> **Listado de controles de artículo por Cliente/Proveedor<!-- Elenco Controlli articolo per Cliente/Fornitore -->**: listado de los *Controles de artículo<!-- Controlli articolo -->* agrupados por: *Cliente/Proveedor<!-- Cliente/Fornitore -->*.  
+> **Listado de controles de artículo por Tipo de documento<!-- Elenco Controlli articolo per Tipo documento -->**: listado de los *Controles de artículo<!-- Controlli articolo -->* agrupados por: *Tipo de documento<!-- Tipo documento -->*.  
+> **Etiqueta Artículo C y NC<!-- Etichetta Articolo C e NC -->**: etiqueta que muestra las referencias de *Artículo<!-- Articolo -->* y el detalle de *Lote* o *Número de serie<!-- Serial number -->* controlado.  
 :::
 
+## Botones de comando<!-- Pulsanti di comando -->
 
-## Botones de comando
+### ![](/img/neutral/common/save.png) Guardar<!-- Salva -->
 
+Al pulsar este botón se guardan todas las informaciones modificadas de los *Controles de artículo<!-- Controlli articolo -->* visualizados.  
 
-### ![](/img/neutral/common/save.png) Guardar (Salva)
+### ![](/img/neutral/common/tick.png) Buscar Plan de control<!-- Ricerca Piano di controllo -->
 
-Al presionar este botón se guardan toda la información modificada de los *controlli articolo* visualizados.   
-
-### ![](/img/neutral/common/tick.png) Buscar Plan de control (Ricerca Piano di controllo)
-
-Al presionar este botón se busca el *Plan de control* para asociar a los *controlli articolo* seleccionados. Si, para el *Control de artículo* examinado:
-- hay pruebas con valores ya detectados para esos controles, no se realizará ninguna búsqueda;  
-- si todas las *Pruebas* aún no se han registrado, las *Pruebas* se reemplazarán con las asociadas al *Plan de control* encontrado en la búsqueda.
+Al pulsar este botón se busca el *Plan de control<!-- Piano di controllo -->* a asociar a los *Controles de artículo<!-- Controlli articolo -->* seleccionados. Si, para el *Control de artículo<!-- Controllo articolo -->* examinado:
+- existen *Pruebas<!-- Prove -->* con valores ya detectados para esos *Controles<!-- Controlli -->*, no se realizará ninguna búsqueda;  
+- todas las *Pruebas<!-- Prove -->* aún no han sido detectadas, las *Pruebas<!-- Prove -->* serán reemplazadas por aquellas asociadas al *Plan de control<!-- Piano di controllo -->* encontrado en la búsqueda.
 
 import ControlPlanSearchMethod from './../../../import/procedure/control-plan-search-method.md'
 
 <ControlPlanSearchMethod />   
 
+### ![](/img/neutral/common/update.png) Actualizar<!-- Aggiorna -->
 
-### ![](/img/neutral/common/update.png) Actualizar (Aggiorna)
+Al pulsar este botón se actualizan todas las informaciones presentes en los *Controles de artículo<!-- Controlli articolo -->* visualizados.  
 
-Al presionar este botón se actualiza toda la información presente en los *controlli articolo* visualizados.   
+### ![](/img/neutral/common/delete.png) Eliminar<!-- Cancella -->
 
+Al pulsar este botón se eliminan todas las filas seleccionadas del listado principal de los *Controles de artículo<!-- Controlli articolo -->*.  
 
-### ![](/img/neutral/common/delete.png) Eliminar (Cancella)
+### Registrar magazzino<!-- Registra magazzino -->
 
-Al presionar este botón se eliminan todas las filas seleccionadas de la lista principal de *controlli articolo*.   
+El botón está habilitado solo si, desde el listado *Pruebas<!-- Prove -->*, se ha seleccionado al menos una *Prueba<!-- Prova -->*, aún no *Registrada<!-- Registrata -->*, con valores detectados y con al menos *Cantidad confirmada<!-- Quantità confermata -->* o *Cantidad no conforme<!-- Quantità non conforme -->* declaradas.  
+Al pulsar este botón se realizan las registraciones de magazzino<!-- registrazioni di magazzino -->, en la fecha actual, para el *Artículo<!-- Articolo -->* asociado al *Control<!-- Controllo -->* por la *Cantidad confirmada<!-- Quantità confermata -->* y/o *Cantidad no conforme<!-- Quantità non conforme -->* declarada, para el *magazzino<!-- Magazzino -->* y *causales<!-- Causali -->* especificados.  
 
+### Restaurar registro<!-- Ripristina registrazione -->
 
-### Registrar en almacén (Registra magazzino)
+El botón está habilitado solo si, desde el listado *Pruebas<!-- Prove -->*, se ha seleccionado al menos una *Prueba<!-- Prova -->* ya *Registrada<!-- Registrata -->*.  
+Al pulsar este botón se restauran las registraciones de magazzino<!-- registrazioni di magazzino --> asociadas a la fila *Prueba<!-- Prova -->*.  
 
-El botón está habilitado solamente si, de la lista de *Pruebas*, se ha seleccionado al menos una *Prueba* que no ha sido *Registrada*, con valores detectados y con al menos *Cantidad confirmada* o *Cantidad no conforme* declaradas.  
-Al presionar este botón se realizan los registros de almacén, en la fecha actual, para el *Artículo* asociado al *Control* por la *Cantidad confirmada* y/o *Cantidad no conforme* declarada, para el *Almacén* y *Causales* especificadas.   
+### ![](/img/neutral/common/duplicate.png) Duplicar prueba<!-- Duplica prova -->
 
+El botón está habilitado solo si, desde el listado *Pruebas<!-- Prove -->*, se ha seleccionado solo una fila *Prueba<!-- Prova -->*.  
+Toda la información de la *Prueba<!-- Prova -->* original se duplica en una nueva *Prueba<!-- Prova -->* colocada en *Secuencia<!-- Sequenza -->* con las *Pruebas<!-- Prove -->* ya existentes.  
 
-### Restablecer registro (Ripristina registrazione)
+## Gestión de datos<!-- Gestione dati -->
 
-El botón está habilitado solamente si, de la lista de *Pruebas*, se ha seleccionado al menos una *Prueba* ya *Registrada*.  
-Al presionar este botón se restablecen los registros de almacén asociados a la línea de la *Prueba*.   
+### Datos de cabecera<!-- Dati di testata -->
+Los datos de cabecera se dividen en dos áreas diferentes:  
+- a la izquierda el listado de *Controles de artículo<!-- Controlli articolo -->* solicitados por la *Búsqueda de controles de artículo<!-- Ricerca Controlli articolo -->*;  
+- a la derecha las referencias del documento de origen de los controles.  
 
+El listado de *Controles de artículo<!-- Controlli articolo -->*, solo lectura salvo que se especifique lo contrario, se compone de la siguiente información:
+> **Clase**: es la clase del *Artículo<!-- Articolo -->* de la fila de documento controlada.  
+> **Código de artículo<!-- Codice articolo -->**: es el código del *Artículo<!-- Articolo -->* de la fila de documento controlada.  
+> **Detalle de artículo<!-- Dettaglio articolo -->**: es el tipo de detalle a controlar del *Artículo<!-- Articolo -->* y puede asumir los siguientes valores: *Ninguno*, *Lote*, *N.S.* o *UDC*.  
+> **Referencia del detalle de artículo<!-- Riferimento dettaglio articolo -->**: es el detalle de artículo requerido: *Ninguno*, *Código de lote*, *Código de Número de serie<!-- Codice Serial Number -->* o *Código de Unidad de carga*.  
+> **Tipo de control<!-- Tipo controllo -->**: es el código del *Tipo de control de artículo<!-- Tipo controllo articolo -->*.  
+> **Número**: es el número del *Control de artículo<!-- Controllo articolo -->*.  
+> **Fecha de inserción<!-- Data inserita -->**: es la fecha en la que se ingresó el *Control de artículo<!-- Controllo articolo -->*.  
+> **Plan de control utilizado<!-- Piano di controllo utilizzato -->**: es la referencia del *Plan de control<!-- Piano di controllo -->* asociado.  
+> El dato puede ser cambiado si la búsqueda encontró más *Planes de control<!-- Piani di controllo -->* asociables.  
+> **Descripción del plan de control<!-- Descrizione piano di controllo -->**: es la descripción del *Plan de control<!-- Piano di controllo -->*.  
+> **Fecha de análisis<!-- Data analisi -->**: es la fecha en la que se realiza el análisis. El dato puede ser cambiado.  
+> **Resultado<!-- Esito -->**: es el resultado global de las pruebas. Se atribuye manualmente por el operador. El dato puede ser cambiado.  
+> **Fecha de resultado<!-- Data esito -->**: es la fecha en la que se atribuyó el *Resultado<!-- Esito -->* global de las *Pruebas<!-- Prove -->*. El dato puede ser cambiado.  
+> **Aprobado<!-- Approvato -->**: indica la *Aprobación<!-- Approvazione -->* sobre los controles realizados.  
+> Al aprobar, la *Fecha de aprobación<!-- Data approvazione -->* se propone automáticamente como la fecha actual y puede ser cambiada; toda la información de las *Pruebas<!-- Prove -->* ya no puede ser modificada.  
+> **Fecha de aprobación<!-- Data approvazione -->**: es la fecha en la que se realizó la *Aprobación<!-- Approvazione -->* global de las *Pruebas<!-- Prove -->*.  
+> Al ingresar la fecha se marca automáticamente el flag *Aprobada<!-- Approvata -->*.  
+> **Unidad de medida<!-- Unità di misura -->**: es la *Unidad de medida<!-- Unità di misura -->* de la *Cantidad de documento<!-- Quantità documento -->* de la fila de documento controlada.  
+> **Cantidad de documento<!-- Quantità documento -->**: es la *Cantidad de documento<!-- Quantità documento -->* de la fila documento controlada.  
+> **Descripción de artículo<!-- Descrizione articolo -->**: es la descripción del *Artículo<!-- Articolo -->* de la fila documento controlada.  
+> **Descripción del tipo de control<!-- Descrizione tipo controllo -->**: es la descripción del *Tipo de control de artículo<!-- Tipo controllo articolo -->*.  
+> **Notas<!-- Note -->**: anotaciones libres. El dato puede ser cambiado.  
 
-### ![](/img/neutral/common/duplicate.png) Duplicar prueba (Duplica prova)
+El área donde están presentes las referencias del documento de origen de los controles varía según el *Tipo de documento<!-- Tipo documento -->*.  
+Las referencias para cada *Tipo de documento<!-- Tipo documento -->* son:
+> **Recepción de mercancía<!-- Ricevimento merci -->**: *Proveedor*, *Tipo de recepción*, *Número de recibo*, *Fecha de recepción* y *Línea*.  
+> **DDT de compra<!-- DDT di acquisto -->**: *Proveedor*, *Tipo de nota de entrega*, *Número de documento*, *Número interno*, *Fecha* y *Línea*.  
+> **Facturas de compra<!-- Fatture di acquisto -->**: *Proveedor*, *Tipo de factura de compra*, *Número de documento*, *Número interno*, *Fecha* y *Línea*.  
+> **Declaraciones de producción<!-- Dichiarazioni di produzione -->**: *Cliente*, *Tipo de orden*, *Año/Orden/Lote*, *Fase/Subfase*, *Número* y *Fecha de reporte*.  
+> **Fases de orden de producción<!-- Fasi ordine di produzione -->**: *Cliente*, *Tipo de orden*, *Año/Orden/Lote*, *Fase/Subfase* y *Centro de trabajo*.  
+> **Reingresos de Conto lavoro<!-- Rientri di conto lavoro -->**: *Proveedor*, *Tipo de reingreso*, *Número de documento*, *Fecha* y *Línea*.  
+> **Movimientos de entrada<!-- Movimentazioni di carico -->**: *Cliente/Proveedor*, *magazzino<!-- Magazzino -->*, *causal<!-- Causale -->*, *Número*, *Fecha* y *Número de movimiento*.  
 
-El botón está habilitado solamente si, de la lista de *Pruebas*, se ha seleccionado una sola fila de *Prueba*.  
-Toda la información de la *Prueba* original se duplica en una nueva *Prueba* agregada en *Secuencia* a las *Pruebas* ya existentes.   
-
-
-## Gestión de datos
-
-
-### Datos de encabezado (Dati di testata)
-Los datos de encabezado se dividen en dos áreas diferentes:  
-- a la izquierda se encuentra la lista de los *controlli articolo* requeridos por la *Búsqueda de controlli articolo*;  
-- a la derecha se encuentran los referentes del documento de origen de los controles.
-
-La lista de *controlli articolo*, que es solo de lectura si no se especifica lo contrario, se compone de la siguiente información:  
-> **classe**: es la clase del *Artículo* de la línea del documento controlada.  
-> **codice articolo**: es el código del *Artículo* de la línea del documento controlada.  
-> **dettaglio articolo**: es el tipo de detalle a controlar del *Artículo* y puede asumir los siguientes valores: *nessuno*, *lotto*, *s.n.* o *udc*.  
-> **riferimento dettaglio articolo**: es el detalle del artículo requerido: *nessuno*, *codice lotto*, *codice serial number* o *codice unità di carico*.  
-> **tipo controllo**: es el código del *Tipo de control de artículo*.  
-> **numero**: es el número del *Control de artículo*.  
-> **data inserita**: es la fecha en que se ingresó el *Control de artículo*.  
-> **piano di controllo utilizzato**: es la referencia del *Plan de control* asociado.  
-> El dato puede ser modificado si la búsqueda ha encontrado más *Planes de control* asociables.  
-> **descrizione piano di controllo**: es la descripción del *Plan de control*.  
-> **data analisi**: es la fecha en la que se realiza el análisis. El dato puede ser modificado.  
-> **esito**: es el resultado global de las pruebas. Se asigna manualmente por el operador. El dato puede ser modificado.  
-> **data esito**: es la fecha en que se asignó el *Resultado* global de las *Pruebas*. El dato puede ser modificado.  
-> **approvato**: indica la *Aprobación* en los controles realizados.  
-> En el momento de la aprobación, la *data approvazione* se propone automáticamente igual a la fecha actual y puede ser cambiada; toda la información de las *Pruebas* no puede ser modificada.  
-> **data approvazione**: es la fecha en que se realizó la *Aprobación* global de las *Pruebas*.  
-> En el momento de ingresar la fecha, se establece automáticamente el indicador *approvata*.  
-> **unità di misura**: es la *Unidad de medida* de la *Cantidad del documento* de la línea del documento controlada.  
-> **quantità documento**: es la *Cantidad del documento* de la línea del documento controlada.  
-> **descrizione articolo**: es la descripción del *Artículo* de la línea del documento controlada.  
-> **descrizione tipo controllo**: es la descripción del *Tipo de control de artículo*.  
-> **note**: anotaciones libres. El dato puede ser modificado.
-
-El área donde están los referentes del documento de origen de los controles varía según el *Tipo de documento*.  
-Los referentes para cada *Tipo de documento* son:  
-> **ricevimento merci**: *fornitore*, *tipo ricevimento*, *numero ricevuta*, *data ricevimento* y *riga*.  
-> **ddt di acquisto**: *fornitore*, *tipo bolla consegna*, *numero documento*, *numero interno*, *data* y *riga*.  
-> **fatture di acquisto**: *fornitore*, *tipo fattura acquisto*, *numero documento*, *numero interno*, *data* y *riga*.  
-> **dichiarazioni di produzione**: *cliente*, *tipo ordine*, *anno/ordine/lotto*, *fase/sottofase*, *numero* y *Fecha de señalización (Data segnalazione)*.  
-> **Fases de orden de producción (Fasi ordine di produzione)**: *cliente*, *tipo ordine*, *anno/ordine/lotto*, *fase/sottofase* y *centro di lavoro*.  
-> **Reingresos de trabajo (Rientri di conto lavoro)**: *fornitore*, *tipo rientro*, *numero documento*, *data* y *riga*.  
-> **Movimientos de carga (Movimentazioni di carico)**: *cliente/fornitore*, *magazzino*, *causale*, *numero*, *data* y *Número de movimiento (Numero movimento)*.   
-
-
-### Pruebas (Prove)
-Contiene la lista de las *Pruebas* para el *Artículo*.  
-La lista se compone de la siguiente información:  
-> **sequenza**: es la secuencia de realización de la *Prueba*.  
-> **registrato**: indica que, para la *Prueba*, se han realizado los registros de almacén, en la fecha actual, para el *Artículo* asociado al *Control* por la *Cantidad confirmada* y/o *Cantidad no conforme* declarada, para el *Almacén* y *Causales* especificadas. La información es de sola lectura.  
-> **tipo prova**: es el código de la *Prueba*.  
-> **descrizione tipo prova**: es la descripción de la *Prueba*. La información es de sola lectura.  
-> **Prueba destructiva (Prova distruttiva)**: indica si la prueba es de tipo destructiva. La información es de sola lectura.  
-> **prova interna**: indica si la *Prueba* se realiza internamente o en un laboratorio externo.  
-> **laboratorio esterno**: es la razón social del *Proveedor* que llevará a cabo la prueba. La información es de sola lectura si se indica la *Prueba interna*.  
-> **data invio**: es la fecha en que se envió el material necesario para realizar la *Prueba* en el *Laboratorio externo*. La información es de sola lectura si se indica la *Prueba interna*.  
-> **Unidad de medida de la cantidad (Unità di misura della quantità)**: es la *Unidad de medida* de la *Cantidad del documento* de la línea del documento controlada. La información es de sola lectura.  
-> **quantità documento**: es la *Cantidad del documento* de la línea del documento controlada. La información es de sola lectura.  
-> **categoria strumento di misura**: es la *Categoría del instrumento de medida* que se utilizará para poder detectar los *Valores* expresados en la *Prueba*.  
-> **Unidad de medida de valores detectados (Unità di misura valori rilevati)**: es la *Unidad de medida* con la que se expresan el *Valor nominal*, los *Límites mínimo y máximo* si se expresan en valor y no en porcentaje y los *Valores detectados*.  
-> **tipo valore**: es el *Tipo de valor* con el que se expresa el *Valor nominal*; los *Tipos de valor* posibles son: *numerico*, *Sí/No (Si/No)* o *testo*.  
-> **tipo limite**: habilitado si el *Tipo de valor* es *Numérico*, es el *Tipo de límite* que controlará la habilitación de los *Límites* y los valores de *Tolerancia*.  
-> **valore nominale**: es el valor teórico esperado de la *Prueba*.  
-> **limite minimo**: límite mínimo permitido respecto al *Valor nominal*.  
+### Pruebas<!-- Prove -->
+Contiene el listado de *Pruebas<!-- Prove -->* para el *Artículo<!-- Articolo -->*.  
+El listado se compone de la siguiente información:
+> **Secuencia<!-- Sequenza -->**: es la secuencia de realización de la *Prueba<!-- Prova -->*.  
+> **Registrado<!-- Registrato -->**: indica que para la *Prueba<!-- Prova -->* se han realizado las registraciones de magazzino<!-- registrazioni di magazzino -->, en la fecha actual, para el *Artículo<!-- Articolo -->* asociado al *Control<!-- Controllo -->* por la *Cantidad confirmada<!-- Quantità confermata -->* y/o *Cantidad no conforme<!-- Quantità non conforme -->* declarada, para el *magazzino<!-- Magazzino -->* y *causales<!-- Causali -->* especificadas. Información solo lectura.  
+> **Tipo de prueba<!-- Tipo prova -->**: es el código de la *Prueba<!-- Prova -->*.  
+> **Descripción del tipo de prueba<!-- Descrizione tipo prova -->**: es la descripción de la *Prueba<!-- Prova -->*. Información solo lectura.  
+> **Prueba destructiva<!-- Prova distruttiva -->**: indica si la prueba es de tipo destructiva. Información solo lectura.  
+> **Prueba interna<!-- Prova interna -->**: indica si la *Prueba<!-- Prova -->* se realiza internamente o en un laboratorio externo.  
+> **Laboratorio externo<!-- Laboratorio esterno -->**: es la razón social del *Proveedor<!-- Fornitore -->* que realizará la prueba. Información solo lectura si está indicada la *Prueba interna<!-- Prova interna -->*.  
+> **Fecha de envío<!-- Data invio -->**: es la fecha en la que se envió el material necesario para efectuar la *Prueba<!-- Prova -->* en el *Laboratorio externo<!-- Laboratorio esterno -->*. Información solo lectura si está indicada la *Prueba interna<!-- Prova interna -->*.  
+> **Unidad de medida de cantidad<!-- Unità di misura della quantità -->**: es la *Unidad de medida<!-- Unità di misura -->* de la *Cantidad de documento<!-- Quantità documento -->* de la fila de documento controlada. Información solo lectura.  
+> **Cantidad de documento<!-- Quantità documento -->**: es la *Cantidad de documento<!-- Quantità documento -->* de la fila de documento controlada. Información solo lectura.  
+> **Categoría de instrumento de medición<!-- Categoria Strumento di misura -->**: es la *Categoría del instrumento de medición<!-- Categoria dello strumento di misura -->* a utilizar para poder registrar los *Valores<!-- Valori -->* expresados en la *Prueba<!-- Prova -->*.  
+> **Unidad de medida de valores detectados<!-- Unità di misura valori rilevati -->**: es la *Unidad de medida<!-- Unità di misura -->* con la que se expresan el *Valor nominal<!-- Valore nominale -->*, los *Límites mínimo y máximo* si se expresan en valor y no en porcentaje y los *Valores detectados<!-- Valori rilevati -->*.  
+> **Tipo de valor<!-- Tipo valore -->**: es el *Tipo de valor<!-- Tipo valore -->* con el cual expresar el *Valor nominal<!-- Valore nominale -->*; los *Tipos de valor<!-- Tipi valore -->* posibles son: *Numérico*, *Sí/No* o *Texto*.  
+> **Tipo de límite<!-- Tipo limite -->**: habilitado si el *Tipo de valor<!-- Tipo valore -->* es *Numérico*, es el *Tipo de límite<!-- Tipo limite -->* que controlará la habilitación de los *Límites* y valores de *Tolerancia*.  
+> **Valor nominal<!-- Valore nominale -->**: es el valor teórico esperado de la *Prueba<!-- Prova -->*.  
+> **Límite mínimo<!-- Limite minimo -->**: límite mínimo permitido respecto al *Valor nominal<!-- Valore nominale -->*.  
 > **L.min.(toll-)**: es el límite de tolerancia negativa sobre el límite mínimo.  
 > **L.min.(toll+)**: es el límite de tolerancia positiva sobre el límite mínimo.  
-> **limite massimo**: límite máximo permitido respecto al *Valor nominal*.  
+> **Límite máximo<!-- Limite massimo -->**: límite máximo permitido respecto al *Valor nominal<!-- Valore nominale -->*.  
 > **L.max.(toll-)**: es el límite de tolerancia negativa sobre el límite máximo.  
 > **L.max.(toll+)**: es el límite de tolerancia positiva sobre el límite máximo.  
-> **% (Percentage)**: indica si el *Límite mínimo* y el *Límite máximo* se expresan en porcentaje.  
-> **tipo controllo prova**: es el *Tipo de control* que se debe realizar sobre la *Prueba*.  
-> **frequenza**: anotaciones libres relacionadas con la frecuencia de muestreo.  
-> **Número de mediciones (Numero rilevazioni)**: es el número de mediciones mínimas sugeridas que se deben realizar.  
+> **%**: indica si el *Límite mínimo<!-- Limite minimo -->* y el *Límite máximo<!-- Limite massimo -->* están expresados en porcentaje.  
+> **Tipo de control de prueba<!-- Tipo controllo prova -->**: es el *Tipo de control<!-- Tipo controllo -->* a realizar sobre la *Prueba<!-- Prova -->*.  
+> **Frecuencia**: anotaciones libres relativas a la frecuencia de muestreo.  
+> **Número de relevamientos<!-- Numero rilevazioni -->**: es el número mínimo sugerido de registros de valores a realizar.  
 >
-> **data inizio**: es la fecha de inicio de la *Prueba*.  
-> **data fine**: es la fecha de finalización de la *Prueba*.  
-> **valore rilevato**: es el valor puntual detectado de la *Prueba* que determinará el *Resultado*.  
-> Al ingresar el *Valor detectado*:  
-> - en *rilevato da* se propone el *Empleado* asociado al *Usuario A.R.M.* que ha realizado el acceso;  
-> - en *rilevato da utente* se propone el *Usuario A.R.M.* que ha realizado el acceso;  
-> - en *esito* se propone el resultado de la *Prueba* y se puede modificar posteriormente.  
-> - en *data esito prova* se propone la fecha actual y se puede modificar posteriormente.  
+> **Fecha de inicio<!-- Data inizio -->**: fecha de inicio de la *Prueba<!-- Prova -->*.  
+> **Fecha de fin<!-- Data fine -->**: fecha de fin de la *Prueba<!-- Prova -->*.  
+> **Valor detectado<!-- Valore rilevato -->**: es el valor puntual detectado de la *Prueba<!-- Prova -->* que determinará su *Resultado<!-- Esito -->*.  
+> Al ingresar el *Valor detectado<!-- Valore rilevato -->*:  
+> - en *Detectado por<!-- Rilevato da -->* se propone el *Empleado<!-- Dipendente -->* asociado al *Usuario A.R.M.* que ha realizado el acceso;  
+> - en *Detectado por usuario<!-- Rilevato da utente -->* se propone el *Usuario A.R.M.* que ha realizado el acceso;  
+> - en *Resultado<!-- Esito -->* se propone el resultado de la *Prueba<!-- Prova -->* y puede ser modificado posteriormente.   
+> - en *Fecha de resultado de la prueba<!-- Data esito prova -->* se propone la fecha actual y puede ser modificada posteriormente.    
 >
-> **media valori rilevati**: es el promedio de los valores detectados en la *Detección múltiple de valores* de la *Prueba*.  
-> **strumento di misura**: es el *Instrumento de medida* utilizado para detectar el valor puntual de la *Prueba*.  
-> **rilevato da**: es el *Empleado* que ha ingresado el *Valor detectado*.  
-> Al ingresar el *Valor detectado*, esta información se propone como igual al *Empleado* asociado al *Usuario A.R.M.* que ha realizado el acceso.  
-> **rilevato da utente**: es el *Usuario A.R.M.* que ha ingresado el *Valor detectado*.  
-> Al ingresar el *Valor detectado*, esta información se propone como igual al *Usuario A.R.M.* que ha realizado el acceso.  
-> **Valor detectado manualmente (Valore rilevato manualmente)**: indica si el *Valor detectado* se ha ingresado manualmente. La información es de sola lectura.  
-> **esito**: es el resultado positivo o negativo de la *Prueba*.  
-> Al ingresar el *Resultado*, en *data esito prova* se propone la fecha actual y se puede modificar posteriormente.  
-> Al ingresar el *Valor detectado* o el *Promedio de valores detectados*, esta información se propone en base al *Tipo de valor*, *Tipo de límite*, *Valor nominal*, *Límites* y *Tolerancias* ingresados.  
-> **data esito prova**: es la fecha de atribución del *Resultado*.  
-> Al ingresar el *Resultado*, esta información se propone como igual a la fecha actual y se puede modificar posteriormente.  
-> **Descripción sobre el resultado (Descrizione sul risultato)**: anotaciones libres sobre el tema.  
-> **esito rilevato manualmente**: indica si el *Resultado* se ha ingresado manualmente. La información es de sola lectura.  
+> **Promedio de valores detectados<!-- Media valori rilevati -->**: es el promedio de los valores detectados en el *Relevamiento múltiple de valores<!-- Rilevazione multipla valori -->* de la *Prueba<!-- Prova -->*.  
+> **Instrumento de medición<!-- Strumento di misura -->**: es el *Instrumento de medición<!-- Strumento di misura -->* utilizado para registrar el valor puntual de la *Prueba<!-- Prova -->*.  
+> **Detectado por<!-- Rilevato da -->**: es el *Empleado<!-- Dipendente -->* que ingresó el *Valor detectado<!-- Valore rilevato -->*.  
+> Al ingresar el *Valor detectado<!-- Valore rilevato -->* esta información se propone igual al *Empleado<!-- Dipendente -->* asociado al *Usuario A.R.M.* que ha realizado el acceso.  
+> **Detectado por usuario<!-- Rilevato da utente -->**: es el *Usuario A.R.M.* que ingresó el *Valor detectado<!-- Valore rilevato -->*.  
+> Al ingresar el *Valor detectado<!-- Valore rilevato -->* esta información se propone igual al *Usuario A.R.M.* que ha realizado el acceso.  
+> **Valor detectado manualmente<!-- Valore rilevato manualmente -->**: indica si el *Valor detectado<!-- Valore rilevato -->* fue ingresado manualmente. Información solo lectura.  
+> **Resultado<!-- Esito -->**: es el resultado positivo o negativo de la *Prueba<!-- Prova -->*.  
+> Al ingresar el *Resultado<!-- Esito -->* en *Fecha de resultado de la prueba<!-- Data esito prova -->* se propone la fecha actual y puede ser modificada posteriormente.  
+> Al ingresar el *Valor detectado<!-- Valore rilevato -->* o el *Promedio de valores detectados<!-- Media valori rilevati -->* esta información se propone según el *Tipo de valor<!-- Tipo valore -->*, *Tipo de límite<!-- Tipo limite -->*, *Valor nominal<!-- Valore nominale -->*, *Límites* y *Tolerancias* ingresados.  
+> **Fecha de resultado de la prueba<!-- Data esito prova -->**: es la fecha de atribución del *Resultado<!-- Esito -->*.  
+> Al ingresar el *Resultado<!-- Esito -->* esta información se propone igual a la fecha actual y puede ser modificada posteriormente.  
+> **Descripción del resultado<!-- Descrizione sul risultato -->**: anotaciones libres sobre el tema.  
+> **Resultado ingresado manualmente<!-- Esito rilevato manualmente -->**: indica si el *Resultado<!-- Esito -->* fue ingresado manualmente. Información solo lectura.  
 >
-> **quantità conforme**: .  
-> **Cantidad no conforme (Quantità non conforme)**: .  
-> **magazzino**: es el *Almacén* del cual se extraen los *Artículos* controlados.  
-> **Causal de descarga de artículos conformes (Causale scarico articoli conformi)**: es la *Causal de descarga* utilizada para mover los *Artículos* controlados que resultaron *Conformes*.  
-> **Causal de descarga de artículos no conformes (Causale scarico articoli non conformi)**: es la *Causal de descarga* utilizada para mover los *Artículos* controlados que resultaron *No conformes*.  
-> **ubicazione**: es la *Ubicación* desde la que se extraen los *Artículos* controlados.  
+> **Cantidad conforme<!-- Quantità conforme -->**: .  
+> **Cantidad no conforme<!-- Quantità non conforme -->**: .  
+> **magazzino<!-- Magazzino -->**: es el *magazzino<!-- Magazzino -->* del que se toman los *Artículos<!-- Articoli -->* controlados.  
+> **Causal de salida de artículos conformes<!-- Causale scarico articoli conformi -->**: es la *Causal de salida<!-- Causale di scarico -->* utilizada para mover los *Artículos<!-- Articoli -->* controlados que resultaron *Conformes*.  
+> **Causal de salida de artículos no conformes<!-- Causale scarico articoli non conformi -->**: es la *Causal de salida<!-- Causale di scarico -->* utilizada para mover los *Artículos<!-- Articoli -->* controlados que resultaron *No conformes*.  
+> **Ubicación<!-- Ubicazione -->**: es la *Ubicación<!-- Ubicazione -->* de donde se toman los *Artículos<!-- Articoli -->* controlados.  
 >
-> **stampabile**: indica que la *Prueba* es imprimible.  
-> **approvato**: indica que los valores y el *Resultado* atribuidos a la *Prueba* han sido *Aprobados*.  
-> En el momento de la aprobación, la *Fecha de aprobación del resultado (Data approvazione esito)* se propone automáticamente igual a la fecha actual y puede ser cambiada; toda la información de la *Prueba* no puede ser modificada.  
-> **Fecha de aprobación del resultado (Data approvazione esito)**: es la fecha en que se realizó la *Aprobación* de la *Prueba*.  
-> En el momento de ingresar la fecha, se establece automáticamente el indicador *approvato*.  
-> **operatore**: es el *Usuario A.R.M.* que ha *Aprobado* la *Prueba*. La información es de sola lectura.  
-> **descrizione approvazione**: anotaciones libres sobre el tema.  
-> **note**: anotaciones libres.  
+> **Imprimible<!-- Stampabile -->**: indica que la *Prueba<!-- Prova -->* es imprimible.  
+> **Aprobado<!-- Approvato -->**: indica que los valores y el *Resultado<!-- Esito -->* atribuido a la *Prueba<!-- Prova -->* han sido *Aprobados*.  
+> Al aprobar, la *Fecha de aprobación de resultado<!-- Data approvazione esito -->* se propone automáticamente como la fecha actual y puede ser cambiada; toda la información de la *Prueba<!-- Prova -->* ya no puede ser modificada.  
+> **Fecha de aprobación de resultado<!-- Data approvazione esito -->**: es la fecha en la que se realizó la *Aprobación<!-- Approvazione -->* de la *Prueba<!-- Prova -->*.  
+> Al ingresar la fecha se marca automáticamente el flag *Aprobado<!-- Approvato -->*.  
+> **Operador<!-- Operatore -->**: es el *Usuario A.R.M.* que *Aprobó* la *Prueba<!-- Prova -->*. Información solo lectura.  
+> **Descripción de la aprobación<!-- Descrizione approvazione -->**: anotaciones libres sobre el tema.  
+> **Notas<!-- Note -->**: anotaciones libres.  
 >
-> **Descripción de categoría del instrumento de medida (Descrizione categoria Strumento di misura)**: es la descripción de la *Categoría del instrumento de medida* a utilizar. La información es de sola lectura.  
-> **descrizione strumento di misura**: es la descripción del *Instrumento de medida* utilizado. La información es de sola lectura.  
-> **descrizione magazzino**: es la descripción del *Almacén* del cual se extraen los *Artículos* controlados. La información es de sola lectura.  
-> **Descripción de la causal de descarga de artículos conformes (Descrizione causale scarico articoli conformi)**: es la descripción de la *Causal de descarga* utilizada para mover los *Artículos* controlados que resultaron *Conformes*. La información es de sola lectura.  
-> **Descripción de la causal de descarga de artículos no conformes (Descrizione causale scarico articoli non conformi)**: es la descripción de la *Causal de descarga* utilizada para mover los *Artículos* controlados que resultaron *No conformes*. La información es de sola lectura.  
+> **Descripción de la categoría del instrumento de medición<!-- Descrizione categoria Strumento di misura -->**: es la descripción de la *Categoría del instrumento de medición<!-- Categoria strumento di misura -->* a utilizar. Información solo lectura.  
+> **Descripción del instrumento de medición<!-- Descrizione Strumento di misura -->**: es la descripción del *Instrumento de medición<!-- Strumento di misura -->* utilizado. Información solo lectura.  
+> **Descripción de magazzino<!-- Descrizione Magazzino -->**: es la descripción del *magazzino<!-- Magazzino -->* del que se toman los *Artículos<!-- Articoli -->* controlados. Información solo lectura.  
+> **Descripción de la causal de salida de artículos conformes<!-- Descrizione causale scarico articoli conformi -->**: es la descripción de la *Causal de salida<!-- Causale di scarico -->* utilizada para mover los *Artículos<!-- Articoli -->* controlados y resultaron *Conformes*. Información solo lectura.  
+> **Descripción de la causal de salida de artículos no conformes<!-- Descrizione causale scarico articoli non conformi -->**: es la descripción de la *Causal de salida<!-- Causale di scarico -->* utilizada para mover los *Artículos<!-- Articoli -->* controlados resultados *No conformes*. Información solo lectura.  
 
-La información de: *Tipo de prueba*, *Prueba interna*, *Laboratorio externo*, *Categoría del instrumento de medida*, *Unidad de medida de valores detectados*, *Tipo de valor*, *Tipo de límite*, *Valor nominal*, *Límites ...*, *Tolerancias ...*, *%*, *Tipo de control de prueba*, *Frecuencia* y *Número de mediciones*, son de sola lectura si la *Prueba* proviene del *Plan de control*, de lo contrario, pueden ser modificables para dar la posibilidad de agregar manualmente más *Pruebas* no previstas en el *Plan de control*.
+La información de: *Tipo de prueba<!-- Tipo prova -->*, *Prueba interna<!-- Prova interna -->*, *Laboratorio externo<!-- Laboratorio esterno -->*, *Categoría de instrumento de medición<!-- Categoria Strumento di misura -->*, *Unidad de medida de valores detectados<!-- Unità di misura valori rilevati -->*, *Tipo de valor<!-- Tipo valore -->*, *Tipo de límite<!-- Tipo limite -->*, *Valor nominal<!-- Valore nominale -->*, *Límites ...*, *Tolerancias ...*, *%*, *Tipo de control de prueba<!-- Tipo controllo prova -->*, *Frecuencia* y *Número de relevamientos<!-- Numero rilevazioni -->*, es de solo lectura si la *Prueba<!-- Prova -->* proviene del *Plan de control<!-- Piano di controllo -->*; de lo contrario, se pueden modificar para permitir agregar manualmente más *Pruebas<!-- Prove -->* no previstas por el *Plan de control<!-- Piano di controllo -->*.
 
-
-#### Detección múltiple de valores (Rilevazione multipla valori)
-Contiene la lista de detecciones realizadas para una única *Prueba*.  
-La lista se compone de la siguiente información:  
-> **sequenza**: es la secuencia de realización de la detección.  
-> **posizione**: anotaciones libres relacionadas con la posición de la detección.  
-> **valore rilevato**: es el valor detectado por el operador.  
-> Si el *Valor detectado* es de tipo *Numérico*, el promedio de los *Valores detectados* ingresados en esta lista para la *Prueba* seleccionada se ingresará en la columna *media valori rilevati* de la *Prueba* seleccionada que determinará el *Resultado*.  
-> Al ingresar el *Valor detectado*:  
-> - en *rilevato da* se propone el *Empleado* asociado al *Usuario A.R.M.* que ha realizado el acceso;  
-> - en *rilevato da utente* se propone el *Usuario A.R.M.* que ha realizado el acceso;  
-> - en *rilevato il* se propone la fecha actual.  
+#### Relevamiento múltiple de valores<!-- Rilevazione multipla valori -->
+Contiene el listado de las mediciones realizadas para una sola *Prueba<!-- Prova -->*.  
+El listado se compone de la siguiente información:  
+> **Secuencia<!-- Sequenza -->**: es la secuencia de implementación de la medición.  
+> **Posición<!-- Posizione -->**: anotaciones libres relativas a la posición de la relevación.  
+> **Valor detectado<!-- Valore rilevato -->**: es el valor detectado por el operador.  
+> Si el *Valor detectado<!-- Valore rilevato -->* es *Numérico*, el promedio de los *Valores detectados<!-- Valori rilevati -->* ingresados en este listado para la *Prueba<!-- Prova -->* seleccionada se ingresará en la columna *Promedio de valores detectados<!-- Media valori rilevati -->* de la *Prueba<!-- Prova -->* seleccionada, que determinará el *Resultado<!-- Esito -->*.  
+> Al ingresar el *Valor detectado<!-- Valore rilevato -->*:  
+> - en *Detectado por<!-- Rilevato da -->* se propone el *Empleado<!-- Dipendente -->* asociado al *Usuario A.R.M.* que ha realizado el acceso;  
+> - en *Detectado por usuario<!-- Rilevato da utente -->* se propone el *Usuario A.R.M.* que ha realizado el acceso;  
+> - en *Detectado el<!-- Rilevato il -->* se propone la fecha actual.  
 >
-> **strumento di misura utilizzato**: es la referencia al *Instrumento de medida* utilizado por el operador para adquirir el *Valor detectado*.  
-> **rilevato da**: es el *Empleado* que ha ingresado el *Valor detectado*.  
-> Al ingresar el *Valor detectado*, esta información se propone como igual al *Empleado* asociado al *Usuario A.R.M.* que ha realizado el acceso.  
-> **rilevato da utente**: es el *Usuario A.R.M.* que ha ingresado el *Valor detectado*.  
-> Al ingresar el *Valor detectado*, esta información se propone como igual al *Usuario A.R.M.* que ha realizado el acceso.  
-> **rilevato il**: es la fecha en que el operador ha ingresado el *Valor detectado*.  
-> Al ingresar el *Valor detectado*, esta información se propone como igual a la fecha actual.  
-> **note**: anotaciones libres.  
-> **descrizione strumento di misura**: es la descripción del *Instrumento de medida* utilizado.   
+> **Instrumento de medición utilizado<!-- Strumento di misura utilizzato -->**: es la referencia al *Instrumento de medición<!-- Strumento di misura -->* utilizado por el operador para adquirir el *Valor detectado<!-- Valore rilevato -->*.  
+> **Detectado por<!-- Rilevato da -->**: es el *Empleado<!-- Dipendente -->* que ingresó el *Valor detectado<!-- Valore rilevato -->*.  
+> Al ingresar el *Valor detectado<!-- Valore rilevato -->* esta información se propone igual al *Empleado<!-- Dipendente -->* asociado al *Usuario A.R.M.* que ha realizado el acceso.  
+> **Detectado por usuario<!-- Rilevato da utente -->**: es el *Usuario A.R.M.* que ingresó el *Valor detectado<!-- Valore rilevato -->*.  
+> Al ingresar el *Valor detectado<!-- Valore rilevato -->* esta información se propone igual al *Usuario A.R.M.* que ha realizado el acceso.  
+> **Detectado el<!-- Rilevato il -->**: es la fecha en la que el operador ingresó el *Valor detectado<!-- Valore rilevato -->*.  
+> Al ingresar el *Valor detectado<!-- Valore rilevato -->* esta información se propone igual a la fecha actual.  
+> **Notas<!-- Note -->**: anotaciones libres.  
+> **Descripción del instrumento de medición<!-- Descrizione Strumento di misura -->**: es la descripción del *Instrumento de medición<!-- Strumento di misura -->* utilizado.  
 
+#### Atributos de las pruebas realizadas<!-- Attributi prove effettuate -->
+Es posible ingresar [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) para la sola *Prueba<!-- Prova -->*.  
 
-#### Atributos de pruebas realizadas (Attributi prove effettuate)
-Es posible ingresar [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata) para la única *Prueba*.   
+#### Configuración de la prueba<!-- Configurazione della prova -->
+Contiene los [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) necesarios para que los operadores preparen todos los instrumentos necesarios para poder iniciar una determinada prueba. Pueden considerarse configuraciones necesarias, informaciones operativas previas a la ejecución de la prueba.  
+Se heredan de las *Configuraciones de pruebas planificadas<!-- Configurazioni prove pianificate -->* presentes en las *Pruebas planificadas<!-- Prove pianificate -->* del *Plan de control<!-- Piano di controllo -->* o de los *Parámetros de configuración de la prueba y el instrumento de medición<!-- Parametri di configurazione prova e strumento di misura -->* presentes en los *Tipos de prueba<!-- Tipi prova -->*.  
 
+#### Documentos adjuntos<!-- Documenti allegati -->
+En este listado es posible ingresar y consultar posibles adjuntos; es posible visualizar la vista previa.  
 
-#### Configuración de la prueba (Configurazione della prova)
-Contiene [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/search-extradata) necesarios para que los operadores preparen todos los instrumentos necesarios para poder iniciar una determinada prueba. Pueden ser consideradas configuraciones necesarias, información operativa propedéutica a la ejecución de la prueba.  
-Se heredan de las *Configuraciones de pruebas planificadas* presentes en las *Pruebas planificadas* del *Plan de control* o de los *Parámetros de configuración de prueba y instrumento de medida* presentes en los *Tipos de prueba*.   
+### Atributos de controles<!-- Attributi controlli -->
+Es posible ingresar [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *Control<!-- Controllo -->*.  
+Se heredan de los *Extra data* asociados al *Tipo de control de artículos<!-- Tipo controllo articoli -->*.  
 
+### Atributos de artículo<!-- Attributi articolo -->
+Es posible ingresar [Extra Data](/docs/configurations/utility/extra-data/extradata/new-extradata) para el *Artículo<!-- Articolo -->* controlado.  
+Se heredan de los *Extra data* asociados al *Artículo<!-- Articolo -->*.  
 
-#### Documentos adjuntos (Documenti allegati)
-En esta lista es posible ingresar y consultar cualquier adjunto; se puede visualizar una vista previa.   
-
-
-### Atributos de controles (Attributi controlli)
-Es posible ingresar [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata) para cada *Control*.  
-Se heredan de los *Datos extra* asociados al *Tipo de control de artículos*.   
-
-
-### Atributos de artículo (Attributi articolo)
-Es posible ingresar [Datos Extra (Extra Data)](/docs/configurations/utility/extra-data/extradata/new-extradata) para el *Artículo* controlado.  
-Se heredan de los *Datos extra* asociados al *Artículo*.   
-
-
-### Documentos relacionados (Documenti collegati)
-En esta lista es posible ingresar y consultar cualquier adjunto; se puede visualizar una vista previa.
+### Documentos relacionados<!-- Documenti collegati -->
+En este listado es posible ingresar y consultar posibles adjuntos; es posible visualizar la vista previa.

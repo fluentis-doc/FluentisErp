@@ -1,42 +1,43 @@
 ---
-title: Tipos de ofertas de clientes (Tipi offerte cliente)
+title: Tipos de ofertas de cliente
 sidebar_position: 23
+ai_generated: true
 ---
 
-:::tip[Inicio Rápido (FAst Start)]
-La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start).
+:::tip[FAst Start]
+La tabla está involucrada en el procedimiento de [**Fast Start**](/docs/guide/fast-start)
 
-En caso de que se quiera configurar manualmente, se debe consultar la lista de verificación de la página enlazada.
+En caso de que se desee configurar manualmente, consulte la check list de la página enlazada
 :::
 
-La tabla se abre a través de la ruta **Tablas > Ventas > Tipos de ofertas de clientes (Tabelle > Vendite > Tipi offerte cliente)**.
+La tabla se abre a través de la ruta **Tablas > Ventas > Tipos de ofertas de cliente<!-- Tabelle > Vendite > Tipi offerte cliente -->**.
 
 Permite insertar nuevos registros o buscar los ya existentes para visualizarlos, modificarlos o eliminarlos.
 
-El formulario se compone de un área de filtro y otra de resultados. Una vez establecidos todos los filtros deseados, basta hacer clic en el botón **ricerca** para visualizar los resultados dentro de la cuadrícula de resultados.
+El formulario consta de un área de filtro y otra de resultados. Una vez configurados todos los filtros deseados, basta con hacer clic en el botón **Buscar<!-- Ricerca -->** para visualizar los resultados dentro de la cuadrícula de resultados.
 
-Para insertar nuevos registros, es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **nuovo**.
+Para insertar nuevos registros es necesario hacer clic en la primera fila vacía de la cuadrícula o presionar el botón **Nuevo<!-- Nuovo -->**.
 
-**codice/descrizione**: campos donde se indica el código y la descripción del tipo de documento (el código que se inserta debe ser único).
+**Código/Descripción<!-- Codice/Descrizione -->:** campos en los que se indica el código y la descripción de la tipología del documento (el código que se inserta debe ser único).
 
-**struttura gerarchica**: al activar este indicador, los artículos de la oferta seguirán una estructura jerárquica; para más detalles, consulte la [documentación correspondiente](/docs/sales/offers/insert-offer).
+**Estructura jerárquica<!-- Struttura gerarchica -->**: al marcar esta casilla, los artículos de la oferta seguirán una estructura jerárquica; para más detalles, consulte la [documentación](/docs/sales/offers/insert-offer) correspondiente.
 
-**modifica versione**: este indicador señala los tipos de oferta para los cuales se gestionarán las versiones.
+**Modificación de versión<!-- Modifica versione -->**: esta casilla indica los tipos de ofertas para los cuales se gestionarán versiones.
 
-**prezzo ivato**: permite al sistema recuperar el precio de venta de las listas de precios o del registro del artículo y lo muestra con la adición del IVA. Si no encuentra la lista de precios, en el caso, por ejemplo, de una lista de precios caducada o una lista de precios en una moneda no compatible, recupera los costos o precios del registro del artículo y los muestra con IVA incluido. Los costos y precios en el registro están en EUR, por lo que el sistema también los convertirá a la moneda del cliente.
+**Precio con IVA<!-- Prezzo Ivato -->**: permite al sistema obtener el precio de venta de las listas de precios o de la ficha del artículo y lo muestra con el IVA incluido. Si no encuentra la lista de precios, por ejemplo, en caso de lista caducada o lista en moneda no compatible, recupera los costes o los precios desde la ficha del artículo y los muestra con IVA incluido. Los costes y los precios en la ficha son en EUR, por lo que el sistema también los convertirá a la moneda del cliente<!-- cliente -->.
 
-**numerazione**: en este campo debe ingresarse el código de numeración apropiado. Para más información sobre la numeración de documentos, consulte el artículo sobre [Numeraciones Fluentis](/docs/configurations/tables/fluentis-numerations).
+**Numeración<!-- Numerazione -->**: en este campo se debe ingresar el código de numeración apropiado. Para más información sobre la numeración de documentos consulte el artículo [Numeraciones Fluentis](/docs/configurations/tables/fluentis-numerations).
 
-**tipo ordine cliente**: en este campo se indica el [tipo de Orden de venta](/docs/configurations/tables/sales/sales-order-types) que se creará al momento de la Conversión de la oferta mediante el procedimiento correspondiente.
+**Tipo de pedido de cliente<!-- Tipo ordine cliente -->**: en este campo se indica la [tipología de pedido de venta<!-- tipologia di Ordine di vendita -->](/docs/configurations/tables/sales/sales-order-types) que se debe crear en el momento de la Conversión de la oferta con el procedimiento correspondiente.
 
-**listino di vendita**: este tipo de lista, de tipo genérico, se utiliza para la búsqueda de precios en caso de que en la pestaña de listas del registro del cliente o contacto no haya ningún tipo de lista ingresada. Normalmente se utiliza para ofrecer a contactos de CRM que aún no se han adquirido como clientes y para los cuales no se han ingresado los tipos de listas en la pestaña de Listas del registro.
+**Lista de precios de venta<!-- Listino di vendita -->**: esta lista de precios, de tipo genérico, se utiliza para la búsqueda de precios en caso de que en la pestaña de listas de precios en la ficha del cliente o contacto no haya ningún tipo de lista de precios insertado. Normalmente se utiliza cuando se hacen ofertas a contactos CRM que aún no han sido reconocidos como clientes y para los cuales no se han insertado tipos de listas de precios en la pestaña Listas de Precios de la ficha.
 
-**Impresión y número de copias (Stampa e numero di copie)**: a través de estos campos se define la impresión predeterminada y el número de copias a imprimir; recordamos que para imprimir la impresión predeterminada es necesario seleccionar *Impresiones múltiples* al momento de la impresión.
+**Impresión y número de copias<!-- Stampa e numero di copie -->**: a través de estos campos se define la impresión por defecto y el número de copias a imprimir; recordamos que para imprimir la impresión por defecto es necesario seleccionar *Impresiones múltiples<!-- Stampe multiple -->* al momento de la impresión.
 
-**tipo prototipo articolo**: este campo contiene el tipo de prototipo de artículo que se creará en el procedimiento de creación de prototipo desde dentro de la oferta.
+**Tipo de prototipo de artículo<!-- Tipo prototipo articolo -->**: este campo contiene la tipología de prototipo de artículo a crear en el procedimiento de creación de prototipo desde dentro de la oferta.
 
-**tipo opportunità**: si en el Tipo de Oferta se vincula un [Tipo de oportunidad](/docs/configurations/tables/crm/opportunities/opportunity-type), al guardar la Oferta se crea una [Nueva Oportunidad](/docs/crm/chance/new-chance) si en la cabecera de la Oferta no se ha ingresado una preexistente; si se ha ingresado, se actualiza la Oportunidad preexistente.
+**Tipo de oportunidad<!-- Tipo opportunità -->**: si en el Tipo de Oferta se vincula un [Tipo de oportunidad<!-- Tipo opportunità -->](/docs/configurations/tables/crm/opportunities/opportunity-type), al guardar la Oferta se creará una [Nueva Oportunidad<!-- Nuova Opportunità -->](/docs/crm/chance/new-chance) si en el encabezado de la Oferta no hay alguna ya existente insertada; si hay una existente, la Oportunidad existente se actualizará.
 
-**Gestión de activos y Tipo de operación (Gestione cespiti e Tipo operazione)**: el indicador permite gestionar los activos para este tipo de documento. En el campo siguiente se indica el tipo de operación de los activos, que en el caso de ventas puede ser una enajenación total, parcial o una destrucción.
+**Gestión de activos fijos y Tipo de operación<!-- Gestione cespiti e Tipo operazione -->**: la casilla permite gestionar los activos fijos<!-- cespiti --> para este tipo de documento. En el campo siguiente se indica la tipología de operación de los activos fijos<!-- cespiti -->, que en el caso de las ventas podrá ser una enajenación total, parcial o una destrucción.
 
-**Tipo de descuento/Descripción (Tipo sconto/Descrizione)**: en esta columna es posible asociar el tipo de descuento a proponer cuando los descuentos se ingresan directamente en la columna *sconti articolo* de la cuadrícula de artículos de los documentos (para más detalles, consulte el artículo sobre [Gestión del widget de descuentos simplificado](/docs/sales/sales-flow/discount-widget)).
+**Tipo de descuento/Descripción<!-- Tipo sconto/Descrizione -->**: en esta columna es posible asociar el tipo de descuento que se propondrá cuando los descuentos se ingresen directamente en la columna *Descuentos de artículo<!-- Sconti articolo -->* de la cuadrícula de artículos de los documentos (para más detalles véase el artículo [Gestión Widget de Descuentos simplificado<!-- Gestione Widget sconti semplificato -->](/docs/sales/sales-flow/discount-widget)).

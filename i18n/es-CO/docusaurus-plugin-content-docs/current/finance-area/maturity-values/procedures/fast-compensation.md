@@ -1,43 +1,44 @@
 ---
-title: compensazione veloce
+title: Compensación rápida
 sidebar_position: 3
+ai_generated: true
 ---
 
-:::note Ruta (Percorso)
-**Administración>Partidas>Procedimientos>compensazione veloce (Amministrazione>Partite>Procedure>Compensazione veloce)**
+:::note Ruta<!-- Percorso -->
+**Administración>Partidas<!-- Amministrazione>Partite --> >Procedimientos<!-- Procedure --> >Compensación rápida<!-- Compensazione veloce -->**
 
-Nota (Nota):
-Para cualquier aspecto no detallado en este documento sobre el funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidades, botones y campos comunes](/docs/guide/common).
+Nota:  
+Para todo lo que no se detalla en este documento respecto al funcionamiento común de los formularios, consulte el siguiente enlace [Funcionalidad, botones y campos comunes](/docs/guide/common).
 
 :::
 
 ---
 
-Este formulario permite, de una manera ligeramente simplificada en comparación con el equivalente *Compensación de partidas*, gestionar la compensación entre partidas abiertas de signo inverso (Debe / Haber) y con el mismo subcuenta (por ejemplo, un cliente o un proveedor).
+Este formulario permite, de manera ligeramente simplificada respecto a la análoga *Compensación de partidas<!-- Compensazione partite -->*, gestionar la compensación entre partidas abiertas<!-- partite aperte --> de signo contrario (Deudor / Acreedor<!-- Dare / Avere -->) y registradas a la misma subcuenta<!-- sottoconto --> (por ejemplo, un cliente o un proveedor<!-- fornitore -->).
 
-Por lo tanto, se utiliza como alternativa a la maniobra de compensación que se ejecuta directamente en la fase de registro contable (por ejemplo, en el caso de registrar una factura emitida o recibida donde previamente ya se haya realizado un cobro o un pago anticipado) y, por ende, también en un segundo momento.
+Por lo tanto, se utiliza como alternativa a la operación de compensación a ejecutar directamente en el registro contable (por ejemplo, en el caso de registrar una factura emitida o recibida donde previamente ya se haya realizado un cobro o pago anticipado) y también puede ser utilizada en un momento posterior.
 
-**Las partidas activas se representan en la cuadrícula superior, mientras que las pasivas en la cuadrícula inferior.**
-Los botones para iniciar la búsqueda de partidas están ubicados, como es habitual, en la barra de ribbon y deben ser presionados ambos para obtener ambas tipologías de partida.
+**Las partidas activas<!-- partite attive --> se muestran en la cuadrícula superior, mientras que las partidas pasivas<!-- passive --> en la cuadrícula inferior.**
+Los botones para iniciar la búsqueda de partidas<!-- partite --> se colocan como de costumbre en la barra de opciones (ribbon bar) y deben ser pulsados ambos para obtener ambos tipos de partidas<!-- partite -->.
 
-Para gestionar la búsqueda a través de los campos de filtro habituales (por ejemplo, para buscar solo las partidas activas y pasivas a nombre de un único proveedor), es necesario visualizar los campos de filtro (ocultos) desde **las pestañas correspondientes ubicadas a la derecha** (se vuelven visibles al pasar el mouse y se pueden fijar para que permanezcan visibles).
+Para gestionar la búsqueda a través de los habituales campos de filtro (por ejemplo, para buscar solo las partidas activas y pasivas asignadas a un solo proveedor<!-- fornitore -->), es necesario visualizar los campos de filtro (ocultos/desplegables) desde las **pestañas correspondientes a la derecha** (se hacen visibles pasando el ratón por encima y se pueden fijar para que permanezcan visibles si se desea).
 
-Las partidas que deben ser compensadas entre sí deben ser seleccionadas tanto en la cuadrícula superior como en la inferior.
+Las partidas<!-- partite --> que deban ser compensadas entre sí deben ser seleccionadas tanto en la cuadrícula superior como en la inferior
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation.png)
 
-Al presionar el botón ***Compensación de partidas*** (Compensazione partite), en la barra de ribbon, las partidas seleccionadas se compensan entre sí.
+Al pulsar el botón ***Compensación de partidas<!-- Compensazione partite -->*** en la barra de opciones, las partidas<!-- partite --> seleccionadas se compensan entre sí.
 
-En caso de que los importes no coincidan, la partida de menor importe se cierra mientras que la mayor permanece abierta por el valor residual.
+En el caso de importes que no coincidan, la partida<!-- partita --> de menor valor se cierra, mientras que la de mayor valor queda abierta por el importe residual.
 
-También es posible especificar un valor parcial según el cual realizar la compensación. En este caso, amplíe la sección de Contabilización y utilice el campo **valore** (ver la última imagen a continuación).
+También es posible especificar un valor parcial según el cual ejecutar la compensación. En este caso, expanda la sección Contabilización y use el campo **Valor<!-- Valore -->** (véase la última imagen al final).
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation2.png)
 
 ---
 
-La compensación puede dar lugar, automáticamente, a un asiento contable (por ejemplo, cuando se compensan partidas de un mismo sujeto pero con subcuentas distintas, ya que es tanto cliente como proveedor y, por lo tanto, también deben compensarse los saldos contables).
+La compensación puede generar, automáticamente, también un asiento contable (por ejemplo, cuando se compensan partidas<!-- partite --> de un mismo tercero pero con subcuentas<!-- sottoconti --> distintas, dado que es tanto cliente como proveedor<!-- fornitore --> y, por tanto, deben compensarse también los saldos contables).
 
-Para activar la contabilización, marque el indicador en el campo de contabilización en la parte superior correspondiente a las pestañas del formulario y amplíe la sección para establecer los parámetros necesarios (en particular, la causa de contabilidad).
+Para activar el asiento contable, marque la opción de contabilización en la parte superior, junto a las pestañas del formulario, y expanda la sección para establecer los parámetros necesarios (en particular la causa contable<!-- causale di contabilità -->).
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation3.png)

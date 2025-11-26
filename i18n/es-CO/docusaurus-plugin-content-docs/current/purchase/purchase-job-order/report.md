@@ -1,25 +1,26 @@
 ---
-title: Informes
+title: Stampe
 sidebar_position: 3
 ---
 
-Para visualizar la vista previa de una impresión, es necesario configurar los filtros deseados y presionar el botón *Vista previa* en la barra de herramientas. Esta operación mostrará la impresión en pantalla sin modificar el estado del documento. Para proceder con la impresión en papel o el guardado en archivo, es necesario hacer clic en el botón *Informes*.
+Per visualizzare l'anteprima di una stampa, è necessario impostare i filtri desiderati e premere il pulsante *Anteprima* sulla barra degli strumenti. Questa operazione mostrerà la stampa a video senza modificare lo stato del documento. Per procedere con la stampa cartacea o con il salvataggio su file, è necessario invece cliccare sul pulsante *Stampa*.   
 
-### Confirmación de Pedidos de Compra 
+### Conferma Commesse acquisto
 
-Esta impresión permite imprimir los pedidos como confirmaciones para enviar al proveedor.  
-La primera opción que se solicita es la de imprimir *temporalmente* o *definitiva*: la diferencia entre ambas es que la temporal no tiene ningún efecto en el estado del pedido, mientras que la impresión en papel o digital realizada de manera definitiva lleva el documento al estado *Impreso*.  
-Los primeros filtros que se muestran son aquellos relacionados con la información de encabezado de los documentos, como el tipo de pedido, el número del documento, la fecha, el proveedor y el proyecto.  
-En el grupo de búsqueda avanzada (groupbox Búsqueda avanzada) se pueden seleccionar los estados del pedido sobre los cuales aplicar el filtro; por ejemplo, se pueden imprimir los pedidos cumplidos/no cumplidos, impresos, cancelados, etc.
+Questa stampa permette di stampare le commesse come conferme da inviare al fornitore.   
+La prima scelta che viene richiesta è quella tra la stampa *temporanea* e quella *definitiva*: la differenza tra le due tipologie è che quella temporanea non ha alcun effetto sullo stato della commessa, mentre la stampa cartacea o digitale effettuata in definitiva porta il documento allo stato *Stampato*.
+I primi filtri che ci vengono mostrati sono quelli relativi alle informazioni di testata dei documenti, quali il tipo commessa, il numero del documento, la data, il fornitore e il progetto.
+Nella groupbox Ricerca avanzata si possono spuntare gli stati della commessa su cui effettuare il filtro; per esempio, si possono stampare le commesse evase/non evase, stampate, annullate, ecc.
 
-Con esta impresión, cada pedido de compra se paginará por separado, cada uno con las siguientes secciones:
+Con questa stampa, ogni commessa di acquisto viene impaginata separatamente, ciascuna con le seguenti sezioni:
 
-- Encabezado con logo e información empresarial
-- Información sobre el pedido (tipo, número, fecha, etc.)
-- Información del proveedor (NIT, condiciones de pago, banco, etc.)
-- Detalles del pedido (códigos de artículos, cantidades, precios, etc.)
-- Resumen del pedido (total de mercancía, gastos, total de impuestos, etc.)
+- Intestazione con Logo e informazioni aziendali
+- Informazioni sulla commessa (tipologia, numero, data, ecc.)
+- Informazioni sul fornitore (partita iva, condizioni di pagamento, banca, ecc.)
+- Dettagli della commessa (codice articoli, quantità, prezzi, ecc.)
+- Riepilogo della commessa (totale merce, spese, totale imposta, ecc.)
 
-###
+###    
 
-Para más detalles sobre las funcionalidades comunes, consulte el artículo [Vista previa e impresión](/docs/guide/common/operations-with-data/reports).
+
+Per maggiori dettagli sulle funzionalità comuni consultare l'articolo [Anteprima e stampa](/docs/guide/common/operations-with-data/reports).

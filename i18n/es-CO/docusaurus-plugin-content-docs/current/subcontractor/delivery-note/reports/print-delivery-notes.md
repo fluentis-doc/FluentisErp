@@ -1,10 +1,11 @@
 ---
-title: Stampa DDT di consegna
+title: Impresión de DDT de entrega
 sidebar_position: 2
+ai_generated: true
 ---
 
-Questa finestra consente di stampare i DDT di consegna da inviare al terzista e si trova nel percorso *Conto Lavoro > DDT di Consegna > Stampe > DDT di consegna*. Essa è composta da 2 diverse sezioni:
+Esta ventana permite imprimir los DDT de entrega<!-- DDT di consegna --> que se enviarán al tercero<!-- terzista --> y se encuentra en la ruta *Conto Lavoro > DDT de Entrega<!-- DDT di Consegna --> > Impresiones<!-- Stampe --> > DDT de entrega<!-- DDT di consegna -->*. Está compuesta por 2 secciones diferentes:
 
-**Filtri**: in questa sezione è possibile filtrare per terzista, per tipo DDT di conto lavoro, da numero DDT a numero DDT di conto lavoro, per data inserimento DDT da…a…. Infine è possibile decidere se stampare o meno anche i DDT già stampate, utilizzando l'apposito radio button;
+**Filtros**: en esta sección es posible filtrar por tercero<!-- terzista -->, por tipo de DDT de conto lavoro<!-- tipo DDT di conto lavoro -->, desde número DDT hasta número DDT de conto lavoro<!-- numero DDT a numero DDT di conto lavoro -->, por fecha de inserción de DDT desde... hasta.... Finalmente, es posible decidir si imprimir o no también los DDT ya impresos, utilizando el botón de opción correspondiente;
 
-**Parametri di stampa**: in questa sezione si possono impostare il numero copie da stampare e il tabulato di stampa da utilizzare, e decidere se la stampa debba essere **Provvisoria** (nel qual caso il flag *Stampata* non verrebbe attivato nella testata del DDT stessa) o **Definitiva**.
+**Parámetros de impresión**: en esta sección se puede configurar el número de copias a imprimir y el listado de impresión a utilizar, y decidir si la impresión debe ser **Provisional<!-- Provvisoria -->** (en cuyo caso la marca *Impresa<!-- Stampata -->* no se activaría en la cabecera del mismo DDT) o **Definitiva<!-- Definitiva -->**.

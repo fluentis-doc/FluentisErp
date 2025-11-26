@@ -1,63 +1,63 @@
 ---
-title: gestione plafond
+title: Gestión Plafond
 sidebar_position: 5
+ai_generated: true
 ---
 
-El formulario se encuentra en la ruta **Administración > Declaraciones > Plafón > Nuevo** y permite la creación de un *nuevo* Cálculo del Plafón.
+El formulario se encuentra en la ruta **Administración > Declaraciones > Plafond > Nuevo<!-- Amministrazione > Dichiarazioni > Plafond > Nuovo -->** y permite la creación de un *nuevo* Cálculo de Plafond<!-- Calcolo del Plafond -->.
 
-## Cómo crear un Cálculo de Plafón
+## Cómo crear un Cálculo de Plafond<!-- Calcolo di Plafond -->
 
-1.  Al abrir el nuevo formulario (después de presionar el comando *Nuevo Plafón*), ingrese los siguientes valores en el encabezado:
+1.  Al abrir el nuevo formulario (tras pulsar el comando *Nuevo Plafond<!-- Nuovo Plafond -->*), ingrese los siguientes valores de cabecera: 
 
 ![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image01.png)
 
-**descrizione**: Descripción libre del cálculo que se está ingresando. Se recomienda una descripción que incluya el año de inicio y el tipo de cálculo.
+ **Descripción**: descripción libre para el cálculo que está ingresando. Se recomienda una descripción que indique el año de inicio y el tipo de cálculo.
 
-**anno**: ingrese el año de inicio del cálculo del plazón que se está ingresando.
+**Año**: ingrese el año de inicio del cálculo plafond<!-- calcolo plafond --> que se está ingresando.
 
 :::tip[Nota]
-En la gestión de los diversos cálculos, podremos bloquear el período, por ejemplo, cada año, e insertar un nuevo cálculo para el año siguiente, sin embargo, esto no es necesario. Se recomienda (también por comodidad) continuar en el mismo cálculo año tras año, continuando a presionar el comando *proponi valori*.
+En la gestión de los diferentes cálculos podemos bloquear el periodo, por ejemplo cada año, e ingresar un nuevo cálculo para el año siguiente, aunque esto no es necesario. Se recomienda (también por comodidad) continuar en el mismo cálculo año tras año, continuando con el comando *Proponer Valores<!-- Proponi Valori -->*. 
 
-La necesidad de insertar un nuevo cálculo surge, en cambio, en caso de cambio de metodología de cálculo, por ejemplo, del plazón fijo al plazón móvil.
-
+La necesidad de ingresar un nuevo cálculo surge, en cambio, en caso de cambio de metodología de cálculo, por ejemplo, de plafond fijo a plafond móvil.
 :::
 
-**tipo inizio plafond**: si se trata de un nuevo Plafón o si es una extensión de un plazón móvil; 
+**Tipo inicio Plafond**: si esto es un nuevo Plafond o si es una extensión de un plafond móvil; 
 
-**tipo plafond**: si es Solar (es decir, fijo) o Móvil (son dos opciones fiscales previstas para gestionar el plazón). 
+**Tipo plafond**: si es Solar (es decir, fijo) o Móvil (son dos opciones fiscales previstas para gestionar el plafond). 
 
-**data inizio plafond**: es necesario ingresar el mes y el año inicial del plazón, y en caso de un plazón 'extensión', también el **mes**, el **año** y el **importe** del último período calculado (sección Propiedades del plazón). 
+Fecha inicio Plafond: es necesario ingresar el mes y el año inicial<!-- mese e anno iniziale --> del plafond, y en caso de un plafond "extensión" también el **mes**, el **año** y el **importe** del último período calculado (sección Propiedades plafond). 
 
-**Valor de control (Valore di controllo)**: es posible establecer un límite de valor con el fin de alertar al usuario que está a punto de utilizar el total del plazón disponible. Por ejemplo, si el plazón disponible al inicio del año es de cien mil euros, si establecemos en el valor límite diez mil, tendremos una alerta al superar los noventa mil, ya que estamos utilizando los últimos diez mil.
+**Valor de control**: es posible establecer un umbral de valor para alertar al usuario cuando está por utilizar el total del plafond<!-- plafond --> disponible. Por ejemplo, si el plafond<!-- plafond --> disponible al inicio del año es de cien mil euros, si ajustamos el umbral de valor en diez mil, recibiremos una alerta al superar los noventa mil, ya que se están usando los últimos diez mil.
 
-**default**: indicador que marca, especialmente en presencia de varios cálculos almacenados, cuál es el cálculo "actual".
+**Por defecto**: marca que señala, en particular cuando hay varios cálculos guardados, cuál es el cálculo "actual".
 
 :::tip[Atención]
-En presencia de un cálculo de Plafón con este indicador activo, al crear la pista telemática para el envío a la agencia de ingresos de las [**declaraciones de intención**](/docs/finance-area/declarations/declarations/intent-declaration) emitidas, se valorizará el campo específico correspondiente.
+En presencia de un cálculo de Plafond con esta marca activa, al generar el archivo telemático de envío a la agencia tributaria de las [**declaraciones de intención**](/docs/finance-area/declarations/declarations/intent-declaration) emitidas, se completará el campo específico correspondiente.
 :::
 
-2. Cargue los valores históricos a utilizar: es necesario registrar en la cuadrícula de detalles los datos de los doce meses anteriores a la fecha (año) de inicio del cálculo. 
+2. Cargar los valores históricos a utilizar: es necesario consignar en la cuadrícula de detalle los datos de los doce meses anteriores respecto a la fecha (año) de inicio del cálculo. 
 
 :::tip[Atención]
-en el caso de un plazón **móvil**, será necesario ingresar precisamente **mes a mes**, ya que cada mes se deberá restar el 12° mes saliente y agregar los datos del nuevo 12°; 
+En el caso de un plafond<!-- plafond --> **móvil** será necesario ingresar precisamente **mes por mes**, ya que en cada mes se deberá eliminar el 12º mes más antiguo y añadir los datos del nuevo 12º; 
 
-en el caso de un **plazón solar**, en cambio, se pueden cargar los primeros 11 meses con **todos los valores en cero** y proporcionar directamente el total de las ventas en el plazón del año del período final de **diciembre**. 
+en el caso de **plafond<!-- plafond --> solar**, en cambio, se pueden cargar los primeros 11 meses con **todos los valores cero** y consignar directamente el total de las ventas en plafond<!-- plafond --> del año del periodo final de **diciembre**. 
 
-El programa verificará la integridad de los datos y guardará el plazón para poder utilizarlo posteriormente.
+El programa verificará la integridad de los datos y guardará el plafond<!-- plafond --> para poder utilizarlo posteriormente.
 :::
 
 ![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image02.png)
 
-3. Mes a mes será necesario ingresar en modificación en la pantalla de gestión del plazón para operar el cálculo actualizado de los datos a través del botón **proponi valori** (presente en la barra de ribbon). 
+3. Mes a mes, será necesario entrar en modo edición en el formulario de gestión del plafond<!-- plafond --> para realizar el cálculo actualizado de los datos mediante el botón **Proponer valores<!-- Proponi valori -->** (presente en la ribbon bar). 
 
-**Para anular el cálculo de un mes es necesario anular los períodos desde el último mes presente en la lista (el más reciente) hasta el que está interesado**. 
+**Para anular el cálculo de un mes es necesario anular los periodos desde el último mes presente en la lista (el más reciente) hasta el mes afectado**. 
 
 El dato del valor disponible al inicio del mes es visible en la columna correspondiente.
 
-### Barra de Ribbon
+### Barra de herramientas<!-- Ribbon Bar -->
 
 |  |  |
 | --- | --- |
-| **nuovo plafond** | Establece el cursor en una nueva fila de creación de datos. |
-| **cancella plafond** | Elimina la fila de cálculo seleccionada. No es posible eliminar datos intermedios, solo el último de la lista. |
-| **proponi valori** | Realiza el cálculo para el nuevo mes, proponiendo los valores en la cuadrícula. |
+| **Nuevo plafond** | Posiciona el cursor en una nueva fila para crear datos. |
+| **Eliminar plafond** | Elimina la fila de cálculo seleccionada. No es posible eliminar datos intermedios, sólo el último de la lista. |
+| **Proponer valores** | Realiza el cálculo para el nuevo mes, proponiendo los valores en la cuadrícula. |

@@ -1,69 +1,70 @@
 ---
-title: gestione partite
+title: Gestión de partidas
 sidebar_position: 1
+ai_generated: true
 ---
 
-Este formulario es accesible solo desde el formulario **partite** (Administración > Partite > Partite).
+Este formulario solo es accesible desde el formulario **Partidas<!-- Partite -->** (Administración<!-- Amministrazione --> > Partidas<!-- Partite --> > Partidas<!-- Partite -->).
 
 El acceso se realiza de dos maneras:
 
- 1. A través del comando *nuova partita*
- 2. Haciendo doble clic con el mouse en una partida presente en la cuadrícula principal del formulario de *ricerca partite* o seleccionando la fila y utilizando el comando Modificar partida en la barra de ribbon.
+ 1. A través del comando *Nueva partida<!-- Nuova partita -->*
+ 2. Haciendo doble clic con el mouse en una partida<!-- partita --> presente en la cuadrícula principal del formulario de *Búsqueda de partidas<!-- Ricerca partite -->* o seleccionando la fila y utilizando el comando Modificar partida<!-- Modifica partita --> en la ribbon bar.
 
 Desde esta posición es posible:
 
-- insertar una nueva partida manualmente (sin que sea generada por un asiento contable)
+- insertar manualmente una nueva partida<!-- partita --> (sin que sea generada por un asiento contable<!-- scrittura contabile -->)
 
-- modificar los datos de una partida preexistente.
+- modificar los datos de una partida<!-- partita --> preexistente.
 
-En particular, típicamente, desde esta posición se puede agregar o quitar el bloqueo de la partida para el pago actuando sobre el indicador correspondiente:
+En particular, típicamente, desde esta posición se puede agregar o quitar el bloqueo de la partida<!-- partita --> para el pago activando o desactivando el flag correspondiente:
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image01.png) 
 
-agregando el indicador para bloquear (el programa agregará automáticamente la fecha y el usuario que ha bloqueado)
+agregando el flag para bloquear (el programa agregará automáticamente la fecha y el usuario que realizó el bloqueo)
 
-o quitándolo para desbloquear (en este punto también aparecerá el usuario que ha desbloqueado). 
+o quitándolo para desbloquear (en ese momento también aparecerá el usuario que realizó el desbloqueo). 
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image02.png)
 
-**Subcuenta de pago (Sottoconto di pagam.)**: esta subcuenta se asocia a las partidas creadas, con el fin de poder verificar la canalización de los pagos/entradas en las impresiones de los vencimientos y en las simulaciones de flujo de caja; se completará ingresando la cuenta bancaria de la empresa en uso. El campo se completará automáticamente, para las partidas creadas a partir de registros contables, si en la **[anagrafía del proveedor (anagrafica del fornitore)](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)** se ha completado el campo correspondiente.
+**Subcuenta de pag.<!-- Sottoconto di pagam. -->**: esta subcuenta<!-- sottoconto --> se asocia a las partidas<!-- partite --> creadas, para poder verificar la canalización de los pagos/cobros en los listados de vencimientos<!-- scadenziari --> y en las simulaciones de cash flow; por lo tanto, se completará ingresando la cuenta bancaria<!-- conto bancario --> de la empresa en uso. El campo se completará automáticamente, para las partidas<!-- partite --> creadas desde asientos contables<!-- registrazioni contabili -->, si en la ** [ficha del proveedor](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) ** está completo el campo correspondiente.<!-- anagrafica del fornitore -->
 
-**agente**: el campo se completa automáticamente para las partidas generadas por la contabilización automática de facturas de venta, indicando al agente vinculado a la factura misma. Esta información es útil para filtrar las partidas en el formulario de búsqueda y en las impresiones donde el campo está presente.
+**Agente**: el campo se completa automáticamente para las partidas<!-- partite --> generadas por contabilización automática de facturas de venta que tengan asociado un agente a la misma. Esta información es útil para filtrar las partidas<!-- partite --> en el formulario de búsqueda y en los reportes donde dicho campo está presente.
 
-**data prevista**: este campo puede ser completado para apoyar la elaboración del **[Flujo de Caja (Cash Flow)](/docs/treasury/cash-flow/cash-flow/cash-flow-management)** (funcionalidad presente en el área de tesorería). Se puede indicar una fecha prevista de entrada o pago que difiera de la fecha de vencimiento de la partida y que se reflejará en las elaboraciones para el flujo de caja (a las cuales se remite). En particular, se recuerda que en ausencia de una indicación particular definida en el campo en comentario, la fecha prevista se valorará en la elaboración del flujo de caja, a partir de la fecha de vencimiento, sumando el dato (si está presente) contenido en el campo **giorni di ritardo** presente en la anagrafía del cliente o proveedor.
+**Fecha prevista<!-- Data Prevista -->**: este campo puede completarse para soportar el procesamiento del ** [Cash Flow](/docs/treasury/cash-flow/cash-flow/cash-flow-management) ** (funcionalidad presente en el área de tesorería<!-- area tesoreria -->). Por lo tanto, se puede indicar una fecha prevista de cobro o de pago que difiere de la fecha de vencimiento<!-- data scadenza --> de la partida<!-- partita --> y que será reportada en los procesos de cash flow (véanse los detalles allí). En particular, se recuerda que, en ausencia de una indicación particular definida en este campo, la fecha prevista se valorizará en la elaboración del cash flow sumando, a partir de la fecha de vencimiento<!-- data scadenza -->, el dato (si está presente) contenido en el campo **Días de retraso<!-- Giorni di Ritardo -->** presente en la ficha<!-- anagrafica --> del cliente o proveedor.
 
-Para otros campos, consultar el **[Glosario (Glossario)](/docs/guide/common/glossary/glossary-intro)** y hacer referencia a las instrucciones relacionadas con la **[Pestaña Partidas en el Registro Contable (Tab Partite nella Registrazione contabile)](/docs/finance-area/ledger-records/records/ledger-record)**.
+Para los demás campos ver el ** [Glosario](/docs/guide/common/glossary/glossary-intro) ** y consulte las instrucciones relativas a la ** [Pestaña Partidas<!-- Tab Partite --> en el Asiento contable<!-- Registrazione contabile -->](/docs/finance-area/ledger-records/records/ledger-record) **.
 
 **NOTA:**
 
-Generalmente, la inserción manual de partidas es una operación no ordinaria ya que las partidas surgen a través de los registros contables. Puede realizarse, por ejemplo, para introducir manualmente algunas partidas abiertas derivadas de la transferencia de datos de un sistema de gestión anterior (como alternativa a las funcionalidades de importación masiva) o por otras razones particulares.
+Generalmente la inserción manual de partidas<!-- partite --> es una operación poco común ya que las partidas<!-- partite --> se crean mediante asientos contables<!-- registrazioni contabili -->. Puede hacerse, por ejemplo, para ingresar manualmente algunas partidas abiertas<!-- partite aperte --> derivadas de la transferencia de datos desde un sistema de gestión anterior (como alternativa a las funcionalidades de importación masiva) o por otras motivaciones particulares.
 
-Si, paralelamente, por ejemplo, se introduce un asiento contable de apertura de saldo de cliente o proveedor, desde la máscara en comentario se puede vincular el asiento contable a través del comando correspondiente presente en la barra de ribbon y más abajo descrito.
+Si, en paralelo, por ejemplo, se inserta un asiento contable<!-- scrittura contabile --> de apertura de saldo de cliente o proveedor, desde el formulario en cuestión es posible vincular el asiento contable<!-- scrittura contabile --> mediante el comando correspondiente presente en la ribbon bar, descrito más abajo.
 
-## Partidas agrupadas (Partite raggruppate)
+## Partidas agrupadas<!-- Partite raggruppate -->
 
- Desde el formulario en comentario también es posible realizar una especie de "agrupamiento" de las partidas. Es decir, a la partida actualmente en modificación se le puede agrupar otras partidas (también no tituladas al mismo sujeto). El comando está ubicado en la barra de ribbon. **aggiungi partite da raggruppare**.
+Desde el formulario en comentario también es posible realizar una especie de "agrupamiento" de partidas<!-- accorpamento delle partite -->. Es decir, a la partida<!-- partita --> que se está modificando, se pueden agrupar otras partidas<!-- partite --> (incluso que no pertenezcan al mismo sujeto). El comando está en la ribbon bar. **Agregar partidas a agrupar<!-- Aggiungi partite da raggruppare -->**.
 
 El resultado será que:
 
-- las partidas agrupadas ya no serán visibles en el formulario de búsqueda de partidas
+- las partidas<!-- partite accorpate --> agrupadas ya no serán visibles en el formulario de búsqueda de partidas<!-- form di ricerca partite -->
 
-- la partida en modificación asumirá como valor el total de su valor más el de las partidas agrupadas
+- la partida<!-- partita --> en modificación asumirá como valor la suma de su valor más el de las partidas agrupadas<!-- partite accorpate -->
 
-- el detalle de las partidas que han sido agrupadas a la que se está modificando aparecerá en la cuadrícula en comentario.
+- el detalle de las partidas<!-- partie --> que han sido agrupadas a la que está en modificación aparecerá en la cuadrícula correspondiente.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image03.png)
 
-**Para realizar la adición de las partidas que serán agrupadas, utilizar el comando Agregar partidas a agrupar presente en la barra de ribbon.**
+**Para ejecutar la adición de partidas<!-- partite --> a agrupar utilice el comando Agregar partidas a agrupar<!-- Aggiungi partite da raggruppare --> presente en la ribbon bar.**
 
 *Botones específicos*
-> **aggiungi partite da raggruppare**: permite seleccionar otras partidas que serán agrupadas a la partida en modificación;  
-> **cancella partite da raggruppare**: elimina la partida seleccionada de la cuadrícula 'Partidas agrupadas' restableciendo su autonomía respecto a la partida en modificación (que es la única visible respecto a las agrupadas);  
-> **Crear desde partidas/pagos (Crea da partite / pagamenti)**: permite crear una partida a partir de un pago. Útil para operaciones de alineación de diferencias o compensaciones. El comando hace aparecer un formulario de búsqueda de los pagos desde los cuales crear la partida. Generalmente se realiza inmediatamente después de haber creado manualmente una nueva partida desde el formulario de búsqueda de partidas;  
-> **collegamento registrazioni**: permite vincular la partida en modificación a un registro contable (útil si la partida fue creada manualmente).
+> **Agregar partidas a agrupar<!-- Aggiungi partite da raggruppare -->**: permite seleccionar otras partidas<!-- partite --> que se agruparán a la partida<!-- partita --> en edición;  
+> **Eliminar partidas agrupadas<!-- Cancella partite da raggruppare -->**: elimina la partida<!-- partita --> seleccionada de la cuadrícula 'Partidas agrupadas<!-- Partite raggruppate -->' restableciendo su autonomía respecto a la partida<!-- partita --> en edición (que es la única visible a diferencia de las agrupadas);  
+> **Crear desde partidas/pagos<!-- Crea da partite / pagamenti -->**: permite crear una partida<!-- partita --> a partir de un pago<!-- pagamento -->. Útil para operaciones de ajuste o compensación. El comando hace aparecer un formulario de búsqueda de los pagos<!-- pagamenti --> a partir de los cuales crear la partida<!-- partita -->. Normalmente se utiliza justo después de haber creado manualmente una partida<!-- nuova partita --> desde el formulario de búsqueda de partidas<!-- form di ricerca partite -->;  
+> **Vincular asientos<!-- Collegamento registrazioni -->**: permite vincular la partida<!-- partita --> en edición a un asiento contable<!-- registrazione contabile --> (útil si la partida<!-- partita --> se ha creado manualmente).
 
-## Pagos vinculados (Pagamenti collegati)
+## Pagos vinculados<!-- Pagamenti collegati -->
 
-## Datos adicionales (Extra Data)
+## Datos Extra<!-- Extra Data -->
 
-Se muestra la lista de datos adicionales vinculados, con la posibilidad de agregar nuevos datos adicionales útiles solo para el documento en cuestión, con la opción a través del indicador correspondiente, de elegir qué datos adicionales imprimir.
+Se muestra la lista de datos extra<!-- Extra data --> vinculados, con la posibilidad de agregar nuevos datos extra<!-- extra data --> útiles solo para el documento en cuestión, y mediante el flag correspondiente, elegir cuáles imprimir.

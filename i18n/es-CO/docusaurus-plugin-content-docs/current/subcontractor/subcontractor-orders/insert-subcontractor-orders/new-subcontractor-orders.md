@@ -1,114 +1,115 @@
 ---
-title: Nuovo ordine di conto lavoro
+title: Nueva orden de cuenta de trabajo
 sidebar_position: 1
+ai_generated: true
 ---
 
-Tramite questa form è possibile creare manualmente un nuovo ordine di conto lavoro oppure si possono modificare quelli già esistenti.
+A través de este formulario es posible crear manualmente una nueva orden de cuenta de trabajo<!-- ordine di conto lavoro --> o bien modificar las que ya existen.
 
-La form si apre tramite il percorso **Conto Lavoro > Ordine di conto lavoro > Nuovo ordine di conto lavoro** oppure tramite il pulsante **Nuovo** che si trova nella form [Ricerca ordine di conto lavoro](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/search-subcontractor-orders).
+El formulario se abre desde la ruta **Cuenta de trabajo<!-- Conto Lavoro --> > Orden de cuenta de trabajo<!-- Ordine di conto lavoro --> > Nueva orden de cuenta de trabajo<!-- Nuovo ordine di conto lavoro -->** o mediante el botón **Nuevo<!-- Nuovo -->** que se encuentra en el formulario [Búsqueda de orden de cuenta de trabajo<!-- Ricerca ordine di conto lavoro -->](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/search-subcontractor-orders).
 
-## **1. Dati obbligatori**
+## **1. Datos obligatorios**<!-- Dati obbligatori -->
 
-L'applicazione richiede di inserire il **Fornitore** (Terzista) intestatario del ordine, utilizzando l'apposito help conti. In automatico verranno proposti: **Anno**, **Numero**, **Data** correnti e il **Tipo documento** (proposto uguale a quello inserito nei *Parametri di Conto Lavoro*), che possono essere modificati dall'utente.
+La aplicación requiere ingresar el **Proveedor** (Tercerista) titular de la orden<!-- ordine -->, utilizando la ayuda específica de cuentas. Automáticamente se propondrán: **Año**, **Número**, **Fecha** actuales y el **Tipo de documento** (propuesto igual al insertado en los *Parámetros de cuenta de trabajo<!-- Parametri di Conto Lavoro -->*), los cuales pueden ser modificados por el usuario.
 
-## **2. Testata** {#header}
+## **2. Cabecera** {#header}<!-- Testata -->
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure con il [help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure, in base ai dati inseriti nell'anagrafica del terzista', l'applicazione compila i campi *automaticamente*.
+Después de seleccionar los datos obligatorios en la sección superior, el usuario puede continuar el ingreso de los siguientes datos [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o con la [ayuda de campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) o bien, según los datos registrados en el perfil del tercerista<!-- terzista -->, la aplicación completa los campos *automáticamente*.
 
-### 2.1 Dati fornitore
+### 2.1 Datos del proveedor<!-- Dati fornitore -->
 
-Inserendo il **Fornitore** vengono *proposti* in automatico tutti i dati specifici del tab **Testata**, secondo i dati impostati in precedenza nell'[anagrafica fornitore](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) nei campi corrispondenti al suo indirizzo e nelle *sezioni*:  
+Al ingresar el **Proveedor**, se *proponen* automáticamente todos los datos específicos de la pestaña **Cabecera<!-- Testata -->**, según lo configurado previamente en la [ficha del proveedor<!-- anagrafica fornitore -->](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) en los campos correspondientes a su dirección y en las *secciones*:
 
-- **Divisa**: [Divisa](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Nazione**: [Nazione](/docs/guide/common/glossary/glossary-intro#country), [Lingua](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Consegna**: [Consegna](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Imballo](/docs/guide/common/glossary/glossary-intro#packing), [Listino](/docs/guide/common/glossary/glossary-intro#sales-price-list) e il suo [intervallo di validità](/docs/guide/common/glossary/glossary-intro#validity-date)
+- **Moneda**: [Moneda](/docs/guide/common/glossary/glossary-intro#currency), [Cambio](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Fecha valor](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Nación**: [Nación](/docs/guide/common/glossary/glossary-intro#country), [Idioma](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
+- **Entrega**: [Entrega](/docs/guide/common/glossary/glossary-intro#shipment), [Puerto](/docs/guide/common/glossary/glossary-intro#carriage), [Embalaje](/docs/guide/common/glossary/glossary-intro#packing), [Lista de precios](/docs/guide/common/glossary/glossary-intro#sales-price-list) y su [intervalo de validez](/docs/guide/common/glossary/glossary-intro#validity-date)
 
-### 2.2 Pagamenti
+### 2.2 Pagos<!-- Pagamenti -->
 
-Le **Soluzioni di pagamento** sono riportate in automatico dall'*Anagrafica terzista > tab Pagamenti* e possono essere modificate/cancellate dall'utente.
+Las **Soluciones de pago** se traen automáticamente desde la *Ficha del tercerista<!-- Anagrafica terzista --> > pestaña Pagos* y pueden ser modificadas o eliminadas por el usuario.
 
-#### Pulsante specifico
+#### Botón específico<!-- Pulsante specifico -->
 
-> **Cancella pagamenti**: utilizzato per cancellare le righe di pagamento selezionate.
+> **Eliminar pagos<!-- Cancella pagamenti -->**: utilizado para eliminar las filas de pago seleccionadas.
 
-### 2.3 Sconti
+### 2.3 Descuentos<!-- Sconti -->
 
-Vengono proposti solo gli sconti predefiniti ripresi dall'*Anagrafica terzista > tab Sconti* e possono essere modificate/cancellate dall'utente.
+Solo se proponen los descuentos predefinidos traídos desde la *Ficha del tercerista<!-- Anagrafica terzista --> > pestaña Descuentos* y pueden ser modificados o eliminados por el usuario.
 
 import TabDiscount from './../../../import/sections/tab-discount.md'
 
 <TabDiscount />
 
-## **3. Articoli** 
+## **3. Artículos**<!-- Articoli --> 
 
-La form è costituita da una griglia, all'interno della quale l'utente può inserire manualmente i prodotti che sono richiesti al terzista. 
-E' possibile inserire articoli codificati e note.
+El formulario consta de una cuadrícula en la cual el usuario puede ingresar manualmente los productos requeridos al tercerista<!-- terzista -->.  
+Es posible ingresar artículos codificados y notas.
 
-Essa risulta già compilata nel caso in cui l'ordine provenga da *Schedulazione generale* o da *Elaborazione MRP*, lasciando comunque la facoltà all'utente di modificarla e/o aggiungere ulteriori materiali alla lista componenti dell'ordine pianificato. Da notare che se l'ordine pianificato è di acquisto il tab Materiali risulta non attivo. 
+Esta ya estará completada en el caso de que la orden<!-- ordine --> provenga de *Programación general<!-- Schedulazione generale -->* o de *Procesamiento MRP<!-- Elaborazione MRP -->*, dejando la posibilidad al usuario de modificarla y/o agregar materiales adicionales a la lista de componentes de la orden<!-- ordine --> planificada. Tenga en cuenta que si la orden<!-- ordine --> planificada es de compra, la pestaña Materiales no estará activa.
 
-### 3.1 Dati articolo
+### 3.1 Datos del artículo<!-- Dati articolo -->
 
-In questo tab vengono visualizzate le informazioni relative alla riga selezionata nella griglia degli articoli, tra quali:
+En esta pestaña se visualiza la información relativa a la fila seleccionada en la cuadrícula de artículos, entre las cuales:
 
-**Corso lavorazione**: in questo campo è ripreso il flag presente nei parametri MRP dell'articolo chiamato *Corso Lavorazione*;  
-**Quantità da produrre**: quantità dell'ordine iniziale comunicata al terzista;  
-**Quantità già rientrata**: totale della quantità ricevuta e lavorata;  
-**Data previsto rientro**: data di arrivo merce lavorata;  
-**Note lavorazione**: sono gestite dall'utente. Può essere parametrizzato e possono essere riportati dei dati sensibili del sistema, ad esempio la descrizione della fase di lavoro che ha generato il fabbisogno di lavorazione;  
-**Fase**: con un doppio click si apre un help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase, e quindi assegnare il materiale selezionato ad una determinata fase di lavorazione dell'articolo;  
-**Magazzino**: magazzino di destinazione del prodotto lavorato;  
-**Pesi**: vengono riportati il Peso netto e il Peso lordo totali delle righe articolo. Vengono riportati i pesi di anagrafica articolo moltiplicati per la quantità di riga.
+**Curso de elaboración<!-- Corso lavorazione -->**: en este campo se toma el indicador presente en los parámetros MRP del artículo llamado *Curso de Elaboración<!-- Corso Lavorazione -->*;  
+**Cantidad a producir<!-- Quantità da produrre -->**: cantidad de la orden<!-- ordine --> inicial comunicada al tercerista<!-- terzista -->;  
+**Cantidad ya recibida<!-- Quantità già rientrata -->**: total de la cantidad recibida y trabajada;  
+**Fecha prevista de recepción<!-- Data previsto rientro -->**: fecha de llegada de la mercancía trabajada;  
+**Notas de elaboración<!-- Note lavorazione -->**: son gestionadas por el usuario. Puede ser parametrizado y pueden aparecer datos sensibles del sistema, por ejemplo, la descripción de la fase de trabajo que generó la necesidad de elaboración;  
+**Fase**: con doble clic se abre una ayuda de fases de elaboración desde la cual se puede seleccionar la fase y subfase correspondiente, y así asignar el material seleccionado a una determinada fase de elaboración del artículo;  
+**Almacén<!-- Magazzino -->**: almacén<!-- magazzino --> de destino del producto trabajado;  
+**Pesos<!-- Pesi -->**: se reportan el Peso neto y el Peso bruto totales de las líneas de artículo. Se reportan los pesos del perfil del artículo multiplicados por la cantidad de la línea.
 
-## **3. Materiali**
+## **3. Materiales**<!-- Materiali -->
 
-La form è costituita da due griglie che riportano i materiali da inviare al terzista per la lavorazione e i materiali che saranno impiegati al rientro del prodotto lavorato.
-E' possibile inserire articoli codificati, non codificati e note. 
+El formulario consta de dos cuadrículas que muestran los materiales a enviar al tercerista<!-- terzista --> para la elaboración y los materiales que serán empleados al retornar el producto elaborado.  
+Es posible ingresar artículos codificados, no codificados y notas.
 
-I materiali inviati e impiegati possono essere gestiti dall'operatore e in tal caso è necessario immettere la quantità, l'eventuale prezzo della lavorazione, la data di previsto rientro, la data di impiego del materiale. Questi dati sono invece già valorizzati nel caso in cui l'ordine provenga da *Schedulazione generale* o da *Elaborazione MRP*.
+Los materiales enviados y empleados pueden ser gestionados por el operador, siendo necesario ingresar la cantidad, el posible precio de la elaboración, la fecha prevista de retorno, la fecha de empleo del material. Estos datos ya estarán valorados en el caso de que la orden<!-- ordine --> provenga de *Programación general<!-- Schedulazione generale -->* o de *Procesamiento MRP<!-- Elaborazione MRP -->*.
 
-### 3.1 Materiali da consegnare
+### 3.1 Materiales a entregar<!-- Materiali da consegnare -->
 
-**Codice articolo**: indica il materiale da consegnare per la lavorazione;  
+**Código de artículo<!-- Codice articolo -->**: indica el material a entregar para la elaboración;
 
 :::note Nota
-Nel caso in cui l'ordine di conto lavoro sia generato dal rilascio di un *Ordine pianificato di conto lavoro* o di un *Ordine pianificato di produzione* con una o più fasi esterne, i materiali da consegnare non verranno visualizzati se: non esistono i [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, o il flag *Considera in conto lavoro* non è abilitato nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), o se il *tipo prelievo* nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) è *automatico*, o se [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) il *tipo prelievo* è *con lista* e il flag WIP non è abilitato.
+En el caso de que la orden de cuenta de trabajo<!-- ordine di conto lavoro --> sea generada por la emisión de una *Orden planificada de cuenta de trabajo<!-- Ordine pianificato di conto lavoro -->* o de una *Orden planificada de producción<!-- Ordine pianificato di produzione -->* con una o más fases externas, los materiales a entregar no serán visualizados si: no existen los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) del artículo, o la marca *Considerar en cuenta de trabajo<!-- Considera in conto lavoro -->* no está habilitada en los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), o si el *tipo de extracción<!-- tipo prelievo -->* en los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) es *automático*, o si los [Parámetros MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) el *tipo de extracción<!-- tipo prelievo -->* es *con lista* y la marca WIP no está habilitada.
 :::
 
-### 3.2 Materiali da impiegare
+### 3.2 Materiales a emplear<!-- Materiali da impiegare -->
 
-**Codice articolo**: indica il materiale da impiegare al rientro del lavorato;  
-**Impiego unitario**: quantità da impiegare per ogni unità del rientro del lavorato, nel caso di gestione automatica della schedulazione di distinte; questo dato è valorizzato dal sistema;  
-**Impiego totale**: quantità totale da impiegare per la completa lavorazione nel caso di gestione automatica della schedulazione di distinte; questo dato è valorizzato dal sistema;  
-**% scarto**: quantità da impiegare in più che risulta essere lo scarto;  
-**Data prev. impegno**: in base a questa data il sistema pianifica la disponibilità del fabbisogno.
+**Código de artículo<!-- Codice articolo -->**: indica el material a emplear al retorno del producido;  
+**Empleo unitario<!-- Impiego unitario -->**: cantidad a emplear por cada unidad de retorno del producto trabajado, en caso de gestión automática de la programación de listas; este dato es valorado por el sistema;  
+**Empleo total<!-- Impiego totale -->**: cantidad total a emplear para la elaboración completa en caso de gestión automática de la programación de listas; este dato es valorado por el sistema;  
+**% merma<!-- % scarto -->**: cantidad extra a emplear que corresponde a la merma;  
+**Fecha prev. de empleo<!-- Data prev. impegno -->**: en base a esta fecha el sistema planifica la disponibilidad de la necesidad.
 
-## **4. Riepiloghi**
+## **4. Resúmenes**<!-- Riepiloghi -->
 
-Nei Riepiloghi sono presentate le informazioni principali dell'intero documento.
+En los Resúmenes se muestran las informaciones principales de todo el documento.
 
-### 3.1 Sconti finali articoli
+### 3.1 Descuentos finales de artículos<!-- Sconti finali articoli -->
 
 import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
 <SummariesFinalDiscount />
 
-### 3.2 Spese
+### 3.2 Gastos<!-- Spese -->
 
 import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
 
 <SummariesExpenses />
 
-### 3.3 Totali documento
+### 3.3 Totales del documento<!-- Totali documento -->
 
-**Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli;  
-**Acconto**: rappresenta il valore dell' eventuale acconto ricevuto per il documento;  
-**Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*;  
-**Totale sconti applicati**: rappresenta il valore totale dei sconti applicati sugli articoli, ma senza i sconti finali;  
-**Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*;  
-**Totale sconti finali**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli;  
-**Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*;  
-**Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*;  
-**Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*;   
-**Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale spese non documentati* + *Totale spese documentati*;  
-**Imposta**: rappresenta la somma dei valori contenuti nei riepiloghi IVA;  
-**Totale**: *Imponibile* + *IVA*.
+**Importe bruto de artículos<!-- Importo lordo articoli -->**: representa la suma de los valores de todos los artículos;  
+**Anticipo<!-- Acconto -->**: representa el valor de cualquier anticipo recibido para el documento;  
+**Importe de regalo<!-- Importo omaggio -->**: representa el importe de los artículos de tipo regalo insertados en la pestaña *Artículos*;  
+**Total de descuentos aplicados<!-- Totale sconti applicati -->**: representa el valor total de los descuentos aplicados a los artículos, pero sin los descuentos finales;  
+**Importe neto de artículos<!-- Importo netto articoli -->**: *Importe bruto de artículos* – *Total de descuentos aplicados*;  
+**Total de descuentos finales<!-- Totale sconti finali -->**: representa el valor de los descuentos finales expresados como porcentaje sobre el importe bruto de los artículos;  
+**Importe neto de descuentos finales<!-- Importo netto sconti finali -->**: *Importe neto de artículos* - *Total de descuentos finales*;  
+**Gastos de cobro<!-- Spese di incasso -->**: representa la suma de los gastos de cobro ingresados en la cuadrícula de *Gastos*;  
+**Gastos de timbre<!-- Spese bollo -->**: representa la suma de los gastos de timbre ingresados en la cuadrícula de *Gastos*;   
+**Base imponible<!-- Imponibile -->**: *Importe neto de artículos* – *Descuentos finales* + *Total de gastos no documentados* + *Total de gastos documentados*;  
+**Impuesto<!-- Imposta -->**: representa la suma de los valores contenidos en los resúmenes de IVA;  
+**Total<!-- Totale -->**: *Base imponible* + *IVA*.

@@ -1,28 +1,29 @@
 ---
-title: Búsqueda de Resúmenes por recibos de pago (Ricerca Riepiloghi per cedolini)
+title: Búsqueda de Resúmenes por recibos de nómina
 sidebar_position: 1
+ai_generated: true
 ---
 
-En esta cuadrícula están presentes todos los procesos de los recibos de nómina, para cada empleado, mes por mes.  
-Además de las funcionalidades estándar de búsqueda, modificación y eliminación, existe la posibilidad de **exportar** los datos en los formatos gestionados por los software de los estudios de elaboración de nóminas.  
-Realizando una selección múltiple, es posible exportar en una única operación todos los recibos seleccionados.  
+En esta cuadrícula se encuentran todas las elaboraciones de los recibos de nómina<!-- cedolini paga -->, para cada empleado, mes a mes.
+Además de las funcionalidades estándar de búsqueda, modificación y eliminación, existe la posibilidad de **exportar** los datos en los formatos gestionados por los programas de los estudios de elaboración de nómina<!-- elaborazioni paghe -->.
+Realizando una selección múltiple, es posible exportar en una sola operación todos los recibos de nómina<!-- cedolini --> seleccionados.
 
-Los datos para el cálculo de nómina pueden obtenerse automáticamente a través del procedimiento [Cálculo de datos de nómina (Calcolo dati paghe)](/docs/project-management/activities-by-project/procedure/payroll_procedure).
+Los datos para el cálculo de nómina<!-- calcolo paghe --> pueden obtenerse automáticamente mediante el procedimiento [Cálculo de datos de nómina<!-- Calcolo dati paghe -->](/docs/project-management/activities-by-project/procedure/payroll_procedure)
 
-**anno** y **mese**: indican el año y el mes del procesamiento.  
+**Año** y **Mes**: indican el año y el mes de la elaboración.
 
-**società paghe**: indica el código y la respectiva descripción de la empresa a la que se refiere el procesamiento, derivado de la empresa configurada en el registro de [Recursos (Risorse)](/docs/project-management/registers/resources-management/new-resource).
+**Sociedad de nómina<!-- Società paghe -->**: indica el código y la descripción correspondiente de la sociedad a la que se refiere la elaboración; proviene de la sociedad configurada en el registro [Recursos<!-- Risorse -->](/docs/project-management/registers/resources-management/new-resource)
 
-**operatore**, **cognome**, **nome**: indica el código, nombre y apellido del empleado, obtenido de la asociación en el registro de recursos.  
+**Operador**, **Apellido**, **Nombre**: indican el código, apellido y nombre del empleado, obtenidos de la asociación en la ficha de recurso.
 
-**risorsa**: Indica la asignación para la cual se ha procesado el recibo.  
+**Recurso<!-- Risorsa -->**: Indica el recurso para el cual se ha elaborado el recibo de nómina<!-- cedolino -->.
 
-**totale tempo**: indica el conteo total de las horas presentes en el recibo.  
+**Tiempo total<!-- Totale tempo -->**: indica el conteo total de horas presentes en el recibo de nómina<!-- cedolino -->.
 
-**valore totale**: indica el conteo total de los gastos a reembolsar.  
+**Valor total<!-- Valore Totale -->**: indica el total de gastos a reembolsar.
 
-**esportata**: indica los recibos que ya han sido exportados al archivo - formato para software externos de los estudios de elaboración de nómina.  
+**Exportado<!-- Esportata -->**: indica los recibos de nómina<!-- cedolini --> que ya han sido exportados al archivo/ formato para sistemas ajenos de elaboración de nómina<!-- studi elaborazioni paghe -->.
 
-**data esportazione**, **utente esportazione**, **percorso**: fecha, usuario y ruta donde se ha exportado el archivo que contiene los recibos de nómina.  
+**Fecha de exportación<!-- Data Esportazione -->**, **Usuario de exportación<!-- Utente Esportazione -->**, **Ruta<!-- Percorso -->**: fecha, usuario y ruta donde se exportó el archivo que contiene los recibos de nómina<!-- cedolini paga -->.
 
-**note**: campo de notas presente en la visualización del recibo de nómina.
+**Notas<!-- Note -->**: campo de notas presente en la pantalla del recibo de nómina<!-- cedolino paga -->.

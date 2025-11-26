@@ -1,20 +1,21 @@
 ---
-title: Detalle de pedidos de aprovisionamiento/necesidades (Dettaglio ordini di approvvigionamento/fabbisogni)
+title: Detalle de órdenes de aprovisionamiento/necesidades
 sidebar_position: 5
+ai_generated: true
 ---
 
-El formulario de detalle de pedidos de aprovisionamiento permite filtrar y ver la lista de todos los pedidos de aprovisionamiento no cumplidos, de cualquier naturaleza, tanto planificados como confirmados; el de necesidades permite filtrar y visualizar la lista de documentos no cumplidos que generan demanda, y con un doble clic en una fila se abre el pedido correspondiente.
+El formulario de detalle de órdenes de aprovisionamiento<!-- dettaglio ordini approvvigionamento --> permite filtrar y ver la lista de todas las órdenes de aprovisionamiento<!-- ordini di approvvigionamento --> pendientes, de cualquier naturaleza, tanto planificadas como confirmadas; el formulario de necesidades<!-- fabbisogni --> permite filtrar y visualizar la lista de los documentos pendientes que generan demanda y, con doble clic en una fila, se abre la orden correspondiente.
 
-En el formulario de necesidades, el artículo visualizado es el comprometido, por lo tanto, en caso de órdenes de producción y trabajo por encargo, no es el artículo del pedido.
+En el formulario de necesidades<!-- fabbisogni -->, el artículo visualizado es el que está comprometido, por lo tanto, en el caso de órdenes de producción y cuenta de trabajo<!-- conto lavoro --> no es el artículo de la orden.
 
-La sección de filtro permite seleccionar según la naturaleza del pedido, estado del pedido, artículo, etc.
+La sección de filtro permite seleccionar según la naturaleza de la orden, el estado de la orden, el artículo, etc.
 
-Resultan particularmente importantes cuando se desea analizar en detalle la situación de los pedidos de un artículo, especialmente desde el análisis NFP.
+Resultan especialmente importantes cuando se quiere analizar en detalle la situación de las órdenes de un artículo, en particular desde el análisis NFP.
 
-Cada fila está coloreada según el estado del buffer del artículo (buffer status) referido al almacén de entrega de la línea del pedido (almacén de destino para los pedidos internos Ddmrp) en caso de pedidos de aprovisionamiento, y almacén de compromiso para los pedidos que crean necesidad.
+Cada fila está coloreada según el estado del buffer (buffer status) del artículo referido al almacén<!-- magazzino --> de depósito de la línea de la orden (almacén de destino para las órdenes internas Ddmrp) en el caso de órdenes de aprovisionamiento<!-- ordini di approvvigionamento --> y almacén de compromiso para las órdenes que generan necesidades<!-- fabbisogno -->.
 
-Los colores son: rojo oscuro para saldo negativo, rojo para saldo inferior al 50% de la zona roja, amarillo si el saldo está entre el 50% y el 100% de la zona roja, verde si el saldo es superior a la zona roja (límite mínimo normal del saldo) e inferior a la suma de la zona roja y zona verde (límite máximo normal del saldo), y azul si es superior a dicha suma (saldo excesivo).
+Los colores son: rojo oscuro para stock negativo, rojo para stock inferior al 50% de la zona roja, amarillo si el stock está entre el 50% y el 100% de la zona roja, verde si el stock está por encima de la zona roja (límite mínimo normal del stock) y por debajo de la suma de la zona roja y zona verde (límite máximo normal del stock), azul si supera dicha suma (stock excesivo).
 
-Si el artículo no es un buffer en el almacén de entrega de la línea del pedido, la columna de estado del buffer estará vacía y la fila no estará coloreada.
+Si el artículo no es un buffer en el almacén<!-- magazzino --> de depósito de la línea de la orden, la columna buffer status estará vacía y la fila no estará coloreada.
 
-Si el almacén de la línea del pedido no ha sido especificado, se considerará como almacén de fábrica.
+Si el almacén<!-- magazzino --> de la línea de la orden no se ha especificado, se considerará como almacén<!-- magazzino --> Fábrica.

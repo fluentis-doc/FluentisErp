@@ -1,39 +1,42 @@
 ---
-title: tipi presentazione distinte effetti
+title: Tipos de presentación de remesas de efectos
 sidebar_position: 4
+ai_generated: true
 ---
 
-:::tip[Inicio Rápido (FAst Start)]
-La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
+:::tip[Inicio rápido<!-- FAst Start -->]
+La tabla está incluida en el procedimiento de [**Inicio Rápido<!-- Fast Start -->**](/docs/guide/fast-start)
 
-En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
+En caso de que se desee configurar manualmente, consulte la lista de verificación en la página enlazada.
 :::
 
-La tabla está conectada al campo *Tipo* presente en el encabezado de la lista de presentación de efectos. 
+La tabla está vinculada al campo *Tipo<!-- Tipo -->* presente en el encabezado de la remesa de presentación de efectos<!-- distinta di presentazione effetti -->.
 
-Se completa mediante la imposición de un código y una descripción, a los cuales se les asignará luego un numerador de referencia.
+Se completa mediante la asignación de un código y una descripción, a los cuales luego se debe asociar un numerador de referencia.
 
-Las opciones adicionales previstas en la máscara ofrecen la posibilidad de definir:
+Las opciones adicionales disponibles en el formulario permiten definir:
 
-- **Giro a Proveedor (Giro a Fornitore):** si el tipo de lista debe gestionarse como lista de giro de efectos/títulos a proveedor;  
+- **Remesa a Proveedor<!-- Giro a Fornitore -->:** si el tipo de remesa debe gestionarse como remesa de giro de efectos/títulos a proveedor<!-- distinta di giro effetti/titoli a fornitore -->;
 
-- **Servicios (Utenze):** si el tipo de lista debe gestionarse como lista RID, actualmente reemplazada por el tipo SDD (Sepa Direct Debit - a nivel europeo) en la creación del archivo telemático en el módulo RIBA. Al activar el indicador, se habilitará el botón de exportación de la traza correspondiente en la barra de herramientas del formulario relacionado con la lista de presentación.
+- **Adeudos (Utenze):** si el tipo de remesa debe gestionarse como remesa RID que actualmente ha sido sustituida por el tipo SDD (Sepa Direct Debit - a nivel europeo) en la creación del archivo telemático en el módulo RIBA. Al activar esta casilla se habilita el botón de exportación del archivo correspondiente en la barra de acciones de la pantalla referente a la remesa de presentación.
 
-- **LCR:** el correspondiente francés de nuestras Riba. Al configurar este indicador, en la lista será activo el botón de exportación LCR y no la exportación normal.
+- **LCR:** el equivalente francés de nuestras RIBA. Al activar esta opción en la remesa estará disponible el botón de exportación LCR y no la exportación normal.
 
-- **Acreditación Inmediata (Accredito Immediato):** cuando está configurado, la contabilización de las listas registra en DARE la cuenta bancaria y en AVERE la cuenta transitoria bancaria (por ejemplo, *Banca X C/ S.B.F.*), mientras que la contabilización de los créditos tendrá en DARE la cuenta transitoria bancaria y en AVERE la cuenta del tipo de efecto (por ejemplo, la cuenta *Efectos activos en cartera*). 
+- **Abono Inmediato<!-- Accredito Immediato -->:** cuando está activado, la contabilización de remesas registra en DEBE la cuenta bancaria y en HABER la cuenta transitoria bancaria (por ejemplo *Banco X C/ S.B.F.*), mientras que 
+la contabilización de abonos tendrá en el debe la cuenta transitoria bancaria y en el haber la cuenta del tipo de efecto (por ejemplo la cuenta *Efectos activos en cartera*).
 
-Cuando el indicador está desactivado, se vuelve a la lógica estándar: en DARE la cuenta transitoria y en AVERE la cuenta tomada del tipo de efecto (por ejemplo, la cuenta *Efectos activos en cartera*), mientras que la contabilización de créditos prevé como siempre en DARE la cuenta bancaria y en AVERE la cuenta transitoria bancaria.
+Cuando la casilla está desactivada se retorna a la lógica estándar: en DEBE la cuenta transitoria y en HABER la cuenta tomada del tipo efecto (por ejemplo la cuenta *Efectos activos en cartera*), mientras que la contabilización de abonos, como siempre, prevé en debe la cuenta bancaria y en haber la cuenta transitoria bancaria.
 
-Esta configuración no es compatible con otras dos lógicas que pueden activarse desde el formulario Parámetros de cartera de efectos: el indicador de *Cierre de cliente en contabilización de lista* no debe configurarse (porque interrumpe el paso sobre la cuenta de efectos; con este indicador del tipo de lista activo, en realidad impediría el cierre del cliente). También usar las opciones de contabilización de listas a la fecha de maduración resulta poco lógico con este indicador activo.
+Esta configuración no es compatible con otras dos lógicas activables desde el formulario de Parámetros de cartera de efectos<!-- form Parametri portafoglio effetti -->: la casilla de *Cierre de cliente en contabilización de remesa<!-- Chiusura cliente in contabilizzazione distinta -->* no debe ser activada (porque elimina el paso por la cuenta de efectos; con esta opción activa, impediría de hecho el cierre del cliente). Tampoco resulta lógico utilizar las opciones de contabilización de remesas a fecha de vencimiento con esta casilla activa.
 
-- **Código externo (Codice esterno):** campo utilizado en la traza SDD para definir si la lista es de tipo *CORE* o *B2B*. Hacer referencia a la documentación técnica de las trazas SDD.
+- **Código externo:** campo utilizado en el registro SDD para definir si la remesa es de tipo *CORE* o *B2B*. Consulte la documentación técnica de los registros SDD.
 
-- **Las cuentas (I conti)**
 
-- Cuenta / Subcuenta / Descripción **banca** 
-- Cuenta / Subcuenta / Descripción **Transitorio Banco (Transitorio Banca)** 
+- **Las cuentas<!-- I conti -->**
 
-pueden ser asociados al tipo de lista para automatizar y definir la movimentación contable al crear una nueva lista: se trata de la subcuenta del registro bancario sobre la que se realizará el acreditamiento final de efectos y del transitorio de presentación para la contabilización de listas (típicamente, por ejemplo *Banca X C/ S.B.F.*).
+- Cuenta / Subcuenta / Descripción **Banco**
+- Cuenta / Subcuenta / Descripción **Transitoria Banco**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
+pueden ser asociadas al tipo de remesa para automatizar y definir el movimiento contable en el acto de la creación de una nueva remesa: se trata de la subcuenta<!-- sottoconto --> del banco registrada en la que se realizará el abono final de los efectos y de la transitoria de presentación para la contabilización de remesas (típicamente por ejemplo *Banco X C/ S.B.F.*).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>

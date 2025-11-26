@@ -1,15 +1,14 @@
 ---
-title: proprietà cespiti
+title: Propiedades del activo fijo
 sidebar_position: 5
+ai_generated: true
 ---
 
-La última pestaña estándar es la relacionada con las 'Propiedades del activo': es posible asignar una lista de propiedades diferentes al activo en uso, con una nota explicativa adicional si es necesario.
+La última pestaña estándar es la relativa a las *Propiedades del activo fijo<!-- Proprietà del cespite -->*: es posible asignar una lista de diferentes propiedades al activo fijo<!-- cespite --> en uso, con una posible nota explicativa adicional.
 
-Consulte el artículo sobre la **[registración contable (registrazione contabile)](/docs/finance-area/ledger-records/records/ledger-record)**.
+Vea el artículo sobre la **[registración contable<!-- registrazione contabile -->](/docs/finance-area/ledger-records/records/ledger-record)**.
 
-
-
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Nueva propiedad (Nuova proprietà) | Activa el cursor para la inserción de una propiedad del activo. |
-| Eliminar propiedad (Cancella proprietà) | Elimina la propiedad seleccionada en la cuadrícula. |
+| Nueva propiedad<!-- Nuova proprietà --> | Activa el cursor para insertar una propiedad del activo fijo<!-- proprietà cespite -->. |
+| Eliminar propiedad<!-- Cancella proprietà --> | Elimina la propiedad seleccionada en la cuadrícula. |

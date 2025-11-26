@@ -1,23 +1,24 @@
 ---
-title: stampa situazione portafoglio effetti
+title: Impresión Situación cartera de efectos
 sidebar_position: 2
+ai_generated: true
 ---
 
-Desde este formulario es posible imprimir, según los filtros de búsqueda establecidos:
+Desde este formulario es posible imprimir, según los filtros de búsqueda configurados:
 
-- **avviso scadenza effetti**: Carta dirigida al cliente que destaca los efectos a vencer con los respectivos detalles.
-- **lettera di cumulo**: Carta dirigida al cliente que resalta las partidas o facturas adquiridas en cada efecto.
-- **portafoglio effetti**: Imprime una lista de efectos destacando los datos principales relacionados.
-- **situazione castelletti**: Imprime para cada banco la situación del crédito concedido, utilizado y restante.
+- **Aviso de vencimiento de efectos<!-- Avviso scadenza effetti -->**: Carta dirigida al cliente que destaca los efectos próximos a vencer junto con sus respectivos referencias<!-- riferimenti -->
+- **Carta de acumulación<!-- Lettera di cumulo -->**: Carta dirigida al cliente que resalta las partidas o facturas adquiridas en cada efecto individual
+- **Cartera de efectos<!-- Portafoglio effetti -->:** Imprime una lista de efectos mostrando los principales datos relacionados<!-- relativi -->
+- **Situación de líneas de crédito bancarias<!-- Situazione castelletti -->:** Imprime para cada banco la situación de la línea de crédito otorgada, utilizada y restante<!-- castelletto concesso, utilizzato e residuo -->
 
-## Filtros de búsqueda (Filtri di ricerca)
+## Filtros de búsqueda<!-- Filtri di ricerca -->
 
-Son los mismos filtros presentes en el formulario de búsqueda [**effetti**](/docs/treasury/bills-holding/bills), 
+Son los mismos filtros presentes en el formulario de búsqueda de [**Efectos<!-- Effetti -->**](/docs/treasury/bills-holding/bills)
 
-a los cuales se añaden:
+a los que se añaden:
 
-- **Banco (código) (Banca (codice)) / Descripción del Banco (Descrizione Banca) / Código ABI (Codice ABI) / Código CAB (Codice CAB)**: campos referidos a la sección *Apoyo bancario* presente dentro del efecto (banco de apoyo del deudor).
+- **Banco (código) / Descripción del banco / Código ABI / Código CAB:** campos referidos a la sección *Soporte bancario<!-- Appoggio bancario -->* presente dentro del efecto (banco de soporte del deudor)
 
-- **banca presentazione**: campo referido a la sección *estremi presentazione*, campo *banca presentazione*, presente dentro del efecto.
-- **tipo distinta**: campo referido al campo homónimo *Tipo* presente en el encabezado del listado de presentación en el que se inserta el efecto.
-- **DE / A / fecha (DA / A / data) / Número de listado (Numero Distinta)**: referidos al listado de presentación en el que se inserta el efecto.
+- **Banco de presentación:** campo referido a la sección *Datos de presentación<!-- Estremi presentazione -->*, campo *Banco de presentación<!-- Banca presentazione -->*, presente dentro del efecto<!-- effetto -->
+- **Tipo de remesa:** campo referido al campo homónimo *Tipo* presente en la cabecera de la remesa de presentación en la que se inserta el efecto<!-- distinta di presentazione in cui è inserito l'effetto -->
+- **DE / A / fecha / Número de remesa<!-- DA / A / data / Numero Distinta -->**: referidos a la remesa de presentación en la que se inserta el efecto<!-- distinta di presentazione in cui è inserito l'effetto -->

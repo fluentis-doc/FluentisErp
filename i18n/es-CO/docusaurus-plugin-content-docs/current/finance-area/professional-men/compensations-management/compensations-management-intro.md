@@ -1,111 +1,113 @@
 ---
-title: Gestión de compensaciones (Gestione compensi)
+title: Gestión de compensaciones
 sidebar_position: 1
+ai_generated: true
 ---
 
-### **ENLACE A LAS PESTAÑAS EN LA PARTE INFERIOR DEL FORMULARIO**:
+### **ENLACES A LAS PESTAÑAS DE LA PARTE INFERIOR DEL FORMULARIO**:<!-- LINK AI TAB DELLA PARTE INFERIORE DELLA FORM -->
 
-**[Total de retenciones (Totale ritenuta)](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**
+** [Total retención](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **<!-- [Totale ritenuta](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) -->
 
-**[Lista de pagos (Lista pagamenti)](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**
+** [Lista de pagos](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) **<!-- [Lista pagamenti](/docs/finance-area/professional-men/compensations-management/total-withholding-tax) -->
 
-**[Pagos de retenciones (Versamenti ritenute)](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in)**
+** [Pagos de retenciones](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in) **<!-- [Versamenti ritenute](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in) -->
 
-**[Resúmenes de IVA (Riepiloghi IVA)](/docs/finance-area/professional-men/compensations-management/vat-summaries)**
+** [Resúmenes de IVA](/docs/finance-area/professional-men/compensations-management/vat-summaries) **<!-- [Riepiloghi IVA](/docs/finance-area/professional-men/compensations-management/vat-summaries) -->
 
-**[Centros de costos / beneficios (Centri di costo / profitto)](/docs/finance-area/professional-men/compensations-management/cost-profit-centres)**
+** [Centros de costo / beneficio](/docs/finance-area/professional-men/compensations-management/cost-profit-centres) **<!-- [Centri di costo / profitto](/docs/finance-area/professional-men/compensations-management/cost-profit-centres) -->
 
-**[INPS](/docs/finance-area/professional-men/compensations-management/national-insurance)**
-
- 
+** [INPS](/docs/finance-area/professional-men/compensations-management/national-insurance) **
 
  
 
-Desde esta máscara se procede a la carga/modificación del documento recibido del profesional o del agente, **tanto en el caso de nota provisional como de factura definitiva: la diferencia entre los dos, de hecho, afectará únicamente a la inserción inmediata o posterior (entrando así en modificación de una provisional ya contabilizada) de los campos relativos al número y la fecha del documento definitivo.**
+ 
+
+Desde esta pantalla se procede a la carga/modificación del documento recibido del profesional o del agente, **ya sea en el caso de una nota provisional o de una factura definitiva: la diferencia entre ambas se refiere únicamente a la inclusión inmediata o posterior (entrando en la modificación de una provisional ya registrada) de los campos relativos al número y fecha del documento definitivo.**<!-- sia nel caso di notula provvisoria che di fattura definitiva: la differenza tra i due, infatti, riguarderà unicamente l'inserimento immediato o successivo (entrando quindi in modifica di un provvisoria già rilevato) dei campi relativi al numero e data documento definitivo. -->
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image01.png)
 
  
 
-### **CAMPOS DE CABECERA**:
+### **CAMPOS DE CABECERA**<!-- CAMPI DI TESTATA -->
 
-**percipiente**: se refiere a la inserción del subcuenta titular de la compensación: en este campo solo se pueden insertar subcuentas con tipo de cuenta agente o proveedores que tengan el indicador de retenciones establecido en el registro.
+**Perceptor<!-- Percipiente -->**: corresponde al ingreso del subcuenta<!-- sottoconto --> titular de la compensación: sólo se pueden ingresar en este campo subcuentas<!-- sottoconti --> de tipo cuenta agente o proveedores que tengan el flag de retención de cuenta activado en el maestro.
 
-Los indicadores de estado siguientes (abrir el expander) son: 
+Las siguientes banderas de estado (al abrir el expander) son:
 
-**contabilizzato**: gestionado automáticamente por la aplicación al momento de la contabilización de las compensaciones. Una vez activado este indicador, la compensación no será más modificable. **ritenuta versata**: se aplicará a la compensación manualmente o a través del procedimiento **[Pagos de retención (Versamenti ritenuta)](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)** ejecutable desde la máscara de búsqueda de compensaciones. 
+**contabilizado<!-- contabilizzato -->**: gestionado automáticamente por la aplicación en el momento de la contabilización de compensaciones<!-- compensi -->. Una vez marcado este flag, la compensación<!-- compenso --> ya no se podrá modificar.  
+**retención pagada<!-- ritenuta versata -->**: será aplicada a la compensación<!-- compenso --> manualmente o bien a través del procedimiento **[Pagos de retención](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)<!-- Versamenti ritenuta -->** ejecutable desde la pantalla de búsqueda de compensaciones<!-- compensi -->.
 
-**certificato**: se activa automáticamente por el programa al momento de la impresión definitiva de las certificaciones de retenciones.
+**certificado<!-- certificato -->**: se establece automáticamente por el programa al momento de la impresión definitiva de las certificaciones de retenciones<!-- ritenute -->.
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image02.png)
 
  
 
-Conectado al subcuenta de agente o proveedor, se puede predefinir el **tipo de retención** a proponer en el momento de la carga de la compensación (la conexión se define en el registro del agente o del proveedor).
+Vinculado al subcuenta<!-- sottoconto --> agente o proveedor se puede predefinir el **tipo de retención<!-- tipo di ritenuta -->** a proponer en el momento de cargar la compensación<!-- compenso --> (la vinculación se define en el maestro del agente o proveedor).
 
-El campo **note** permite anotar un texto de referencia de la compensación: se trata de una nota que luego se reportará en las notas de detalle de todos los movimientos contables relacionados con esta compensación.
+El campo **notas<!-- note -->** permite anotar un texto de referencia de la compensación<!-- compenso -->: se trata de una nota que posteriormente se incluirá en las notas de detalle de todos los movimientos<!-- movimenti --> contables asociados a esta compensación<!-- compenso -->.
 
-**descrizione movimento**: se utilizará en la contabilización de compensaciones para el homónimo campo de la registración contable.
-
- 
-
-En la parte derecha: 
-
-**codice pagamento**: este campo, propuesto automáticamente (al recuperar la compensación el tipo de retención aplicable) si se ha completado el campo homónimo en el formulario **[Gestión de tipo de retención (Gestione tipo ritenuta)](/docs/configurations/tables/finance/withholding-tax-types)**, se refiere al código relativo a la causa de pago que se debe indicar en la Certificación única de los perceptores (ver instrucciones ministeriales).
-
-Ejemplo: código A = prestaciones de trabajo autónomo ejercidas habitualmente; Q = comisiones pagadas a agente o representante de comercio monomandatario; R = comisiones pagadas a agente o representante de comercio plurimandatario; U = comisiones pagadas a procurador de negocios......
+**Descripción movimiento<!-- Descrizione movimento -->**: se usará en la contabilización de compensaciones<!-- contabilizzazione compensi --> para el campo homónimo de la contabilización<!-- registrazione contabile -->.
 
  
 
-**Número y año de referencia de la compensación (Numero e anno di riferimento del compenso)**: se trata de una numeración automática interna del programa que debe ser única para la empresa. 
+En la parte derecha:
 
-**data documento**: se propone como la fecha actual pero se puede establecer como la fecha de la nota provisional recibida.
+**Código de pago<!-- Codice pagamento -->**: este campo, propuesto automáticamente (recuperando el tipo de retención<!-- tipo ritenuta --> aplicable a la compensación<!-- compenso -->) si se completó el campo homónimo en el formulario [Gestión tipo de retención](/docs/configurations/tables/finance/withholding-tax-types), se refiere al código relativo a la causale<!-- causale --> de pago que hay que indicar en la Certificación única de los perceptores (ver instrucciones ministeriales).
 
-**Fecha y número del documento definitivo (Data e numero documento definitivo)**: se refieren a los detalles de la factura definitiva: se trata de campos obligatorios para proceder a la contabilización de las compensaciones, aunque la causa de referencia no deba ser una causa de IVA. Estos dos campos serán los únicos modificables en caso de que el pago ya haya sido registrado en contabilidad.
-
-**data ricevimento**: campo para registrar la fecha de recepción de la factura definitiva (no obligatorio para la contabilización).
+Ejemplo: código A = prestaciones de trabajo autónomo ejercidas de forma habitual; Q = comisiones pagadas a agente o representante de comercio monomandatario; R = comisiones pagadas a agente o representante de comercio plurimandatario; U = comisiones pagadas a intermediario comercial...
 
  
 
-**Proyecto (ex obra)**: sirve para conectar la compensación a un proyecto (obra de venta): podría ser el caso de un peritaje en un sitio gestionado por obra. Si la **[causa contable (causale contabile)](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** utilizada en la contabilización de la compensación tiene el indicador de proyectos (ex obras) activo, entonces los costos insertados en esta compensación se asignarán al proyecto (obra) ingresado en este campo.
+**Número y año de referencia de la compensación<!-- Numero e anno di riferimento del compenso -->**: es una numeración automática interna del programa que debe ser única para la empresa.
 
-**Cambio de divisa/Fecha de divisa/Moneda**: conectados a la gestión de la divisa y los datos de cambio relacionados, recuperados de la tabla de cambios (la divisa se establece en el registro del agente/proveedor).
+**Fecha del documento<!-- Data documento -->**: se propone como la fecha actual pero puede configurarse como la fecha de la nota provisional recibida.
+
+**Fecha y número del documento definitivo<!-- Data e numero documento definitivo -->**: corresponden a los datos de la factura definitiva: son campos obligatorios para proceder a la contabilización de compensaciones<!-- contabilizzazione compensi -->, aunque la causale<!-- causale --> de referencia no sea una causale<!-- causale --> de IVA. Estos dos campos serán los únicos modificables en caso de que el pago ya haya sido registrado en contabilidad<!-- contabilità -->.
+
+**Fecha de recepción<!-- Data ricevimento -->**: campo para anotar la fecha de recepción de la factura definitiva (no obligatorio para la contabilización<!-- contabilizzazione -->).
 
  
 
-### FILAS DE DETALLE
+**Proyecto<!-- Progetto (ex commessa) -->** (antes llamado orden de venta<!-- commessa -->): sirve para vincular la compensación<!-- compenso --> a un proyecto (orden de venta<!-- commessa di vendita -->): podría ser el caso de un peritaje en una obra gestionada por orden de venta<!-- commessa -->. Si la **[causale contable](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)<!-- causale contabile -->** utilizada en la contabilización de la compensación<!-- contabilizzazione del compenso --> tiene el flag proyectos (antes órdenes de venta<!-- commesse -->) activo, entonces los costes ingresados en esta compensación<!-- compenso --> se asignarán al proyecto<!-- progetto (commessa) --> indicado en este campo.
+
+**Cambio de moneda/Fecha de moneda/Divisa<!-- Cambio valuta/Data valuta/Divisa -->**: vinculados a la gestión de la moneda<!-- divisa --> y los correspondientes datos del tipo de cambio extraídos de la tabla de cambios (la moneda<!-- divisa --> se configura desde el maestro agente/proveedor).
 
  
 
-**tipo riga**: dato fundamental que permite gestionar automáticamente la aplicación de la retención en la parte del costo del servicio y su exención en la parte relacionada con la caja previsional del perceptor. Puede ser de tres tipos:
+### LÍNEAS DE DETALLE<!-- RIGHE DI DETTAGLIO -->
+
+ 
+
+**Tipo de línea<!-- Tipo riga -->**: dato fundamental que permite gestionar automáticamente la aplicación de la retención<!-- ritenuta d'acconto --> sobre la parte del coste del servicio y su desactivación sobre la parte relativa a la caja de previsión social del perceptor<!-- percipiente -->. Puede ser de tres tipos:
 
 
-- **costo del servizio**: para ingresar la parte sujeta a retención por la cual Fluentis propondrá el porcentaje imponible y la tasa de retención leída del tipo de retención, el subcuenta de costo será reportado desde el costo contrapartida del agente/proveedor, el costo en divisa y en euros, la tasa de IVA a aplicar (propuesta también esta según el registro), la porcentaje de caja previsional a calcular en la fila (propuesta por el tipo de retención) y las fechas de competencia económica de referencia. Estas son gestionadas, para el usuario conectado, de acuerdo con los parámetros de inserción (que se pueden establecer con el botón presente en la barra de herramientas): las filas siguientes a la primera propondrán automáticamente el rango establecido en la fila anterior.
 
-- **cassa previdenza**: Fluentis propondrá Imponible retención 0% y el valor imponible de IVA calculado automáticamente según el porcentaje presente en la fila del costo del servicio previamente cargada.
+**Costo del servicio<!-- Costo del servizio -->**: para ingresar la parte sujeta a retención<!-- ritenuta --> para la cual Fluentis propondrá el porcentaje de base imponible y la tasa de retención leídos desde el tipo de retención<!-- tipo ritenuta -->, el subcuenta<!-- sottoconto --> de coste se extraerá desde el coste asignado del agente/proveedor, el coste en moneda<!-- valuta --> y en euros, la tasa de IVA a aplicar (también propuesta con base en el maestro), el porcentaje de caja de previsión a calcular en la línea (propuesto por el tipo de retención<!-- tipo ritenuta -->) y las fechas de competencia económica de referencia. Estas se gestionan, para el usuario conectado, según los parámetros de ingreso (que se pueden configurar con el botón presente en la ribbon bar): las líneas siguientes a la primera propondrán automáticamente el rango configurado en la línea anterior.
 
-- **altro**: se gestiona como importe sujeto a retención (pero el usuario puede forzar esta configuración): se trata normalmente de reembolsos de gastos por lista inseridos en la compensación, que pueden estar o no sujetos a retención y normalmente no son imponibles de IVA.
+**Caja de previsión social<!-- Cassa previdenza -->**: Fluentis propondrá base imponible de retención 0% y el valor imponible de IVA calculado automáticamente según el porcentaje presente en la línea de coste del servicio previamente cargada.
 
-Al guardar la compensación, se ejecutarán mensajes de control en caso de que el valor de la partida no sea correspondiente con el total a pagar, así como por el desbalance de los datos en centro de costo/beneficio.
+**Otros<!-- Altro -->**: se gestiona como importe sujeto a retención<!-- ritenuta --> (pero el usuario puede forzar esta configuración): normalmente se trata de los gastos reembolsados incluidos en la compensación<!-- compenso -->, que pueden o no estar sujetos a retención y normalmente no están sujetos a IVA.
 
-Una vez que se ha ejecutado la contabilización de compensaciones, no se permitirá más modificar los datos de la compensación: en caso de que se haya ejecutado la contabilización de pagos o Enasarco, sin embargo, serán modificables las referencias al número / fecha del documento definitivo, la descripción del movimiento y el subcuenta ingresado en la cuadrícula de detalles.
+Al guardar la compensación<!-- compenso --> se ejecutarán mensajes de control en caso de que el valor del importe no corresponda al total a pagar, así como ante la falta de balanceo de los datos a centro de costo/beneficio<!-- centro di costo/profitto -->.
 
-En caso de que la compensación esté guardada y tenga fecha y número del documento definitivo, será posible proceder a la contabilización a través del botón **contabilizza e chiudi** en la barra de herramientas: se abrirá una máscara en la que las fechas propuestas serán las últimas válidas para el registro de IVA asociadas a la causa conectada al tipo de retención utilizado.
+Una vez que se haya realizado la contabilización de la compensación<!-- contabilizzazione compensi -->, no será permitido modificar los datos de la compensación<!-- compenso -->: en caso de que se haya hecho la contabilización de pagos<!-- contab. pagamenti --> o Enasarco, se podrán modificar los datos relativos al número/fecha del documento definitivo, la descripción del movimiento<!-- movimento --> y el subcuenta<!-- sottoconto --> incluido en la cuadrícula de detalles.
 
-Están disponibles algunas impresiones que se pueden ejecutar con los comandos ubicados en la barra de herramientas.
+ En el caso de que la compensación<!-- compenso --> se guarde y tenga fecha y número de documento definitivo, será posible proceder a la contabilización<!-- contabilizzazione --> mediante el botón **Contabilizar y cerrar<!-- Contabilizza e chiudi -->** en la ribbon bar: se abrirá una pantalla en la que las fechas propuestas serán las últimas válidas para el registro IVA asociado a la causale<!-- causale --> vinculada al tipo de retención<!-- tipo ritenuta --> utilizado.
+
+Hay disponibles algunos reportes que pueden ejecutarse con los comandos situados en la ribbon bar.
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image03.png)
 
-
 *Botones específicos*:  
-> **parametri inserimento**: en los parámetros de usuario es posible definir si la nueva compensación debe proponer el mismo subcuenta del actual, el mismo tipo de retención, cómo gestionar la nueva fecha del documento y, por último, cómo gestionar el rango de fechas de competencia económica (fin de ejercicio – es decir, la fecha final será igual a la del fin de ejercicio, diaria – es decir, la fecha final igual a la fecha inicial, ninguna fecha para tipo de cuenta servicio – es decir, requerirá obligatoriamente la inserción de ambas fechas si el tipo de subcuenta ingresado está configurado como 'Servicio');  
-> **contabilizza e chiudi**: activo cuando se han ingresado fecha y número del documento definitivo, permite realizar la contabilización de la compensación;  
-> **nuovo dettaglio**: activa el cursor en la inserción de una nueva fila de detalle de la compensación;  
-> **cancella dettaglio**: elimina las filas de detalle seleccionadas en la compensación;  
-> **calcola valori**: realiza un recálculo de los valores relativos a las retenciones según los datos ingresados en las filas de detalle.  
+> **Parámetros de ingreso<!-- Parametri inserimento -->**: en los parámetros de usuario es posible definir si la nueva compensación<!-- compenso --> debe proponer el mismo subcuenta<!-- sottoconto --> actual, el mismo tipo de retención<!-- tipo ritenuta -->, cómo gestionar la nueva fecha del documento y finalmente cómo gestionar el rango de fechas de competencia económica (fin de ejercicio – es decir, la fecha final será igual a la del fin de ejercicio, diaria – la fecha final será igual a la inicial, ninguna fecha para tipo de cuenta de servicios – o sea, se requerirá obligatoriamente el ingreso de ambas fechas si el tipo de subcuenta<!-- sottoconto --> ingresado está configurado como 'Servicio');  
+> **Contabilizar y cerrar<!-- Contabilizza e chiudi -->**: activo cuando se han ingresado fecha y número de documento definitivo, permite ejecutar la contabilización<!-- contabilizzazione --> de la compensación<!-- compenso -->;  
+> **Nuevo detalle<!-- Nuovo dettaglio -->**: activa el cursor para ingresar una nueva línea de detalle de la compensación<!-- compenso -->;  
+> **Eliminar detalle<!-- Cancella dettaglio -->**: elimina las líneas de detalle seleccionadas dentro de la compensación<!-- compenso -->;  
+> **Calcular valores<!-- Calcola valori -->**: ejecuta un recálculo de los valores relativos a las retenciones<!-- ritenute --> según los datos ingresados en las líneas de detalle.  
 
 ---
-### **VIDEOS TUTORIALES**
+### **VIDEO TUTORIALES**<!-- VIDEO TUTORIALS -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

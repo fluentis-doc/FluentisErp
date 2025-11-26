@@ -1,70 +1,69 @@
 ---
-title: esposizione clienti
+title: Exposición de clientes
 sidebar_position: 2
+ai_generated: true
 ---
 
-El formulario se encuentra en Tesorería > Riesgo Cliente > Procedimientos > esposizione clienti (Esposizione clienti).
+El formulario se encuentra en Tesorería > Riesgo Cliente > Procedimientos > Exposición de clientes<!-- Esposizione clienti -->.
 
-Permite tener una visión general de toda la situación de riesgo con respecto a los diferentes clientes, con la posibilidad de obtener datos por agente, país, agrupando también por grupos corporativos. 
+Permite tener una visión general completa de toda la situación de riesgo frente a los distintos clientes<!-- clienti -->, con la posibilidad de obtener datos por agente, país o agrupando también por grupos societarios.
 
-## Cómo verificar la exposición de clientes (Come verificare l'esposizione clienti)
+## Cómo verificar la exposición de clientes<!-- esposizione clienti -->
 
-1. Expandir, si es necesario, la sección de filtros para ingresar el intervalo de fechas de referencia dentro del cual verificar y el criterio de agrupamiento deseado (Por país, por agente o por cliente).
+1. Expanda, si es necesario, la sección de filtros para ingresar el rango de fechas de referencia en el que verificar y el criterio de agrupación deseado (por país<!-- nazione -->, por agente o por cliente).
 
-2. Presionar el botón **ricerca**: los clientes presentados en la máscara son aquellos para los cuales en el registro se ha activado el indicador *esposizione clienti*.
+2. Presione el botón **Buscar<!-- Ricerca -->**: los clientes<!-- clienti --> presentados en la máscara son aquellos para los cuales en la anagráfica se ha insertado el flag *Exposición de clientes<!-- Esposizione clienti -->*.
 
-:::note[Nota]
-La sección inicial de los *parametri rischio cliente* repite los mismos parámetros predeterminados de cálculo configurados para el módulo, además del rango de fechas de registro utilizado para el control de remesas (para más detalles, consulte el siguiente documento).
+:::note[Nota<!-- Nota -->]
+La sección inicial de *parámetros de riesgo cliente<!-- parametri rischio cliente -->* muestra nuevamente los mismos parámetros por defecto de cálculo configurados para el módulo, con además el rango de fechas de registro utilizado para el control de remesas (para detalles, ver el documento siguiente).
 :::
 
-:::note[Filtros adicionales disponibles]
-Es posible filtrar por un responsable determinado (el empleado que ha sido asociado al registro del cliente, primera pestaña *amministrazione*), filtrar los clientes *esteri* o *Italia*, visualizar los datos agrupados por *grupo corporativo* (se mostrará un solo total para la subcuenta ingresada en el campo del *grupo corporativo* presente en la pestaña *administración* del registro del cliente en lugar de las subcuentas detalladas) y, finalmente, agrupar (y filtrar) los datos por agente o país. 
+:::note[Filtros adicionales disponibles<!-- Ulteriori filtri disponibili -->]
+Es posible filtrar por un determinado responsable (el empleado que ha sido asociado a la anagráfica de cliente, primera pestaña *Administración<!-- Amministrazione -->*), filtrar los clientes<!-- clienti --> *Extranjeros<!-- Esteri -->* o *Italia*, visualizar los datos agrupados por *grupo societario* (se visualizará un único total para la subcuenta<!-- sottoconto --> ingresada en el campo del *grupo societario* presente en la pestaña *administración* de la anagráfica de cliente en lugar de cada subcuenta<!-- sottoconto cliente --> individual de detalle) y finalmente agrupar (y filtrar) los datos por agente o país<!-- nazione -->.
 
-Está prevista la posibilidad de ordenar los datos por código de cuenta/subcuenta o por descripción (razón social) del cliente.
+Está prevista la posibilidad de ordenar los datos por código de cuenta/subcuenta<!-- conto/sottoconto --> o por descripción (razón social) del cliente.
 :::
 
-### Datos visualizados en la cuadrícula (Dati visualizzati in griglia)
+### Datos visualizados en la cuadrícula<!-- Dati visualizzati in griglia -->
 
-Se visualizarán en rojo las filas con desviaciones.
+Se mostrarán en rojo las filas con diferencia/desfase<!-- scostamento -->.
 
-**insoluti**: se muestra aquí el importe de los impagos no contabilizados, o (si el indicador en encabezado está activado) también los ya contabilizados;  
+**Impagados<!-- Insoluti -->**: aquí se muestra el importe de los impagados no contabilizados, o (si el flag en la cabecera está activado) también aquellos ya contabilizados;
 
-**Fact. últimos 12 meses (Fatt. ultimi 12 mesi)**: es el volumen de negocio (desde el área de ventas, facturas de venta) de los 12 meses anteriores a la fecha de referencia;  
+**Facturación últimos 12 meses<!-- Fatt. ultimi 12 mesi -->**: es la facturación (del área de ventas, facturas de ventas) de los 12 meses anteriores a la fecha de referencia;
 
-**Desviación de días (Scostamento giorni)**: indica el número de días de desviación entre la fecha de vencimiento media y la fecha media de cobro, según lo calculado con la lógica del formulario ‘Control de remesas' al que se remite para más detalles; La particularidad es que es un promedio ponderado sobre el importe de la partida. De hecho, el dato se expresa en números a favor (como en un extracto bancario).
+**Desfase en días<!-- Scostamento giorni -->**: indica el número de días de desfase entre el vencimiento medio y la fecha de cobro media, según lo calculado con la lógica de la máscara ‘Control de remesas<!-- Controllo rimesse -->’ al que se remite para más detalles; La particularidad es que es un promedio ponderado sobre el importe de la partida. De hecho, el dato se expresa en números acreedores (como en el extracto de cuenta bancaria escalado)
 
-**Desviación días de vencimiento (Scostamento GG scad.)**: indica los días de desviación media de la fecha de vencimiento respecto a la fecha del documento; considera solo las partidas vencidas = SUMA (residuo de la partida * días hasta hoy de retraso desde la fecha de vencimiento) / suma de los residuos de las partidas. Por lo tanto, calcula un valor medio de los retrasos.  
+**Desfase en días vencimiento<!-- Scostamento GG scad. -->**: indica los días de desfase promedio de la fecha de vencimiento con respecto a la fecha del documento; considera sólo las partidas vencidas = SUMA (residuo de partida * días hasta la fecha de retraso desde la fecha de vencimiento) / suma de los residuos de las partidas. Calcula así un valor promedio de los retrasos
 
-**fatturato**: es el volumen de negocio (desde el área de ventas, facturas de venta) desde el comienzo del año;  
+**Facturación<!-- Fatturato -->**: es la facturación (del área de ventas, facturas de ventas) desde el inicio del año;
 
-**Días medios de cobro (Giorni medi incasso)**: equivale al indicador denominado DSO (Días de Ventas Pendientes), los días de rotación del crédito. La fórmula de cálculo es 365 * (Partidas a cobrar – Partidas a pagar + Efectos vencidos + Impagos + Facturas por contabilizar) / Volumen de negocio últimos 12 meses. En caso de que el volumen de negocio de los últimos 12 meses sea 0, entonces el DSO también será 0;  
+**Días promedio de cobro<!-- Giorni medi incasso -->**: Equivale al indicador denominado DSO (Days of Sales Outstanding), los días de rotación del crédito. La fórmula de cálculo es 365 * (Partidas Deudoras – Partidas Acreedoras + Efectos por vencer + Impagados + Facturas por contabilizar) / Facturación últimos 12 meses<!-- Fatt. Ultimi 12 Mesi -->. En el caso de que la facturación de los últimos 12 meses sea 0 entonces también el DSO será 0;
 
-**Crédito (Fido) y crédito asegurado (Fido assicurato)**: importe del crédito de gestión y del crédito asegurado;  
+**Línea de crédito** y **Línea de crédito asegurada<!-- Fido e Fido assicurato -->**: importe de la línea de crédito de gestión y la línea de crédito asegurada;
 
-**Saldo por partida (Saldo partitario)**: repite los totales deudores/acreedores calculados a partir de las partidas o del saldo contable;  
+**Saldo de partidas<!-- Saldo partitario -->**: vuelve a mostrar los totales deudores/acreedores calculados por las partidas o por el saldo contable;
 
-**Pagos de registros provisionales (Pagam. da reg. provv.)**: importe de los pagos de partidas vinculados a registros provisionales;  
+**Pagos por registrar provisionalmente<!-- Pagam. da reg. provv. -->**: importe de los pagos de partidas vinculados a registros provisionales;
 
-**Efectos en vencimiento (Effetti in scadenza)**: importe de los efectos en maduración (efectos emitidos + presentados);  
+**Efectos por vencer<!-- Effetti in scadenza -->**: importe de los efectos en maduración (efectos emitidos + presentados);
 
-**da contabilizzare**: son los importes de las facturas (de los tipos de factura vinculados al crédito) generadas pero aún no contabilizadas;  
+**Por contabilizar<!-- Da contabilizzare -->**: son los importes de las facturas (de los Tipos de factura vinculados a la línea de crédito) impresas pero aún no contabilizadas;
 
-**da fatturare**: son los importes de los DDT (de los tipos de DDT vinculados al crédito) generados pero aún no facturados;  
+**Por facturar<!-- Da fatturare -->**: son los importes de los DDT (de los Tipos DDT vinculados a la línea de crédito) impresos pero aún no facturados;
 
-**Total de exposición (Tot. Esposizione)**: suma de pedidos abiertos + DDT por facturar + facturas por contabilizar + saldo de partidas/cuentas + efectos pendientes + impagos no contabilizados;  
+**Total Exposición<!-- Tot. Esposizione -->**: suma de pedidos abiertos + ddt por facturar + facturas por contabilizar + saldo de partidas/cuentas<!-- partite/cont --> + efectos por vencer + impagados no contabilizados;
 
-**scaduto**: importe de las partidas abiertas y ya vencidas;  
+**Vencido<!-- Scaduto -->**: importe de las partidas abiertas y ya vencidas;
 
-**Vencido de registros provisionales (Scaduto da reg. provv.)**: como el anterior, pero derivado de registros provisionales;  
+**Vencido por registrar provisionalmente<!-- Scaduto da reg. provv. -->**: igual que el anterior, pero derivado de registros provisionales;
 
-**ordini**: son los importes de los pedidos (de los tipos de pedidos vinculados al crédito) generados, confirmados pero aún no cumplidos.
+**Pedidos<!-- Ordini -->**: son los importes de los pedidos (de los Tipos de pedido vinculados a la línea de crédito) impresos, confirmados pero aún no despachados.
 
-Desde la máscara de la exposición de clientes es posible: realizar una impresión de los datos visualizados, o pasar a la máscara de ‘Control de remesas' en relación con la fila del cliente seleccionado, a través del correspondiente botón de gestión.
+Desde la máscara de exposición de clientes<!-- esposizione clienti --> es posible: imprimir los datos visualizados, o bien acceder a la máscara de ‘Control de remesas<!-- Controllo rimesse -->’ con respecto a la fila del cliente seleccionado, a través del botón correspondiente.
 
+**Botones específicos<!-- Pulsanti specifici -->**
 
+**Calcular<!-- Calcola -->** Botón para calcular el riesgo cliente de acuerdo a los filtros y configuraciones indicadas.
 
-**Botones específicos**
-
-**calcola**: Botón para calcular el riesgo de los clientes según los filtros y las configuraciones indicadas.  
-
-**controllo rimesse**: Invoca el procedimiento para abrir la máscara de control de remesas.
+**Control de remesas<!-- Controllo rimesse -->** Llama al procedimiento para abrir la máscara de control de remesas.

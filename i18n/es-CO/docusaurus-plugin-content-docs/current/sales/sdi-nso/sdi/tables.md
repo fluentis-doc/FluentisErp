@@ -1,44 +1,45 @@
 ---
-title: Configuración de tablas de gestión (Impostazione tabelle di gestione)
+title: Configuración de tablas de gestión
 sidebar_position: 4
+ai_generated: true
 ---
 
-Para la gestión de la facturación electrónica es necesario llevar a cabo una verificación y completado de algunas tablas de gestión, con el fin de crear los archivos XML con la codificación correcta prevista por las especificaciones técnicas emitidas por la Agencia de Impuestos (Agenzia delle Entrate). La configuración requerida implica codificar los valores comúnmente usados en las gestiones con los valores previstos para la codificación del archivo.  
-A modo de ejemplo: los tipos de documentos previstos para el flujo de facturación electrónica deberán ser registrados en Fluentis, asociando a cada tipo de documento el valor correspondiente indicado por las especificaciones técnicas de la Agencia de Impuestos.
+Para la gestión de la facturación electrónica es necesario realizar una verificación y completar algunas tablas de gestión<!-- tabelle di gestione -->, con el fin de crear los archivos XML con la codificación correcta prevista por las especificaciones técnicas emitidas por la Agencia Tributaria. La configuración prevista requiere codificar los valores normalmente utilizados en las gestiones<!-- gestioni --> con los valores indicados para la codificación del archivo.
+Por ejemplo: los tipos de documentos previstos para el flujo de facturación electrónica deben ser censados en Fluentis, asociando a cada tipo de documento el valor correspondiente indicado por las especificaciones técnicas de la Agencia Tributaria.
 
-## Tabla de Tipos de documento (Tabella Tipi documento)
+## Tabla Tipos de documento<!-- Tabella Tipi documento -->
 
-Para el documento factura, en esta tabla de Fluentis, en correspondencia a la columna **Código PA (Codice PA)** es necesario indicar el tipo de documento, en formato alfanumérico, de 4 caracteres de longitud. Los valores admitidos son:       
-TD01 Factura (Fattura)      
-TD02 Anticipo/Acconto sobre factura (Acconto/Anticipo su fattura)        
-TD03 Anticipo/Acconto sobre factura (Acconto/Anticipo su parcella)       
-TD04 Nota de crédito (Nota di Credito)      
-TD05 Nota de débito (Nota di Debito)      
-TD06 Factura pro forma (Parcella)       
-TD20 Autofactura (Autofattura)        
+Para el documento factura, en esta tabla de Fluentis, en la columna **Código PA<!-- Codice PA -->** es necesario indicar el tipo de documento, en formato alfanumérico, de longitud 4 caracteres. Los valores admitidos son:       
+TD01 Factura      
+TD02 Anticipo/Adelanto sobre factura        
+TD03 Anticipo/Adelanto sobre honorarios       
+TD04 Nota de crédito      
+TD05 Nota de débito      
+TD06 Honorarios       
+TD20 Autofactura        
          
-Los valores sobre los cuales es necesario realizar un ajuste o una verificación de la efectiva compilación son:
+Los valores sobre los que es necesario realizar una conciliación o una verificación de su correcta cumplimentación son:
 
 | Tabla | Valores obligatorios | 
 | :-- | :-- |
-| Empresa (Tabelle > Impostazioni Generali > Società) | Descripción, Número de IVA, Código fiscal (obligatorio si no se establece el PIVA), Código de país, Régimen fiscal, Teléfono/FAX, Domicilio fiscal y CP, municipio, provincia, Socios/Estado de liquidación, Oficina Rea, Número de inscripción Rea, Capital social (incluyendo también los decimales separados por el “.”) | 
-| Tipos de IVA (Tabelle > Amministrazione > Aliquote/Modalità IVA)  | Código P.A: es el código que identifica de manera única el tipo de IVA en los archivos XML; se puede obtener el código específico para cada tipo de IVA de las Especificaciones Técnicas emitidas por la Agencia de Impuestos para la facturación electrónica | 
-| Tabla Tipos de Documentos (Tabelle > Amministrazione > Tipi Documento) | Código P.A: es el código que identifica de manera única el tipo de documento al que se refiere el archivo XML (factura, nota de crédito...); se puede obtener el código específico para cada tipo de documento de las Especificaciones Técnicas emitidas por la Agencia de Impuestos para la facturación electrónica | 
-| Tabla Tipos de Pago (Tabelle > Impostazioni generali > Tipi pagamento) | Código P.A: es el código que identifica de manera única el tipo de pago en el archivo XML; se puede obtener el código específico para cada tipo de pago de las Especificaciones Técnicas emitidas por la Agencia de Impuestos para la facturación electrónica | 
-| Tipos de facturas de venta (Tabelle > Vendite > Tipi Fatture) | Excluidas de Fat.El: la verificación debe ser establecida SOLO para los documentos que se desea excluir del flujo de facturación electrónica. En virtud de esta configuración, los documentos no podrán ser procesados para el flujo de facturación electrónica | 
-| Tipos de retención (Tabelle > Amministrazione > Tipi Ritenute) | Tipos de retención de facturación electrónica: es el código que identifica de manera única el tipo de retención en el archivo XML; se puede obtener el código específico para cada tipo de retención de las Especificaciones Técnicas emitidas por la Agencia de Impuestos para la facturación electrónica | 
-| Tabla Monedas (Tabelle > Impostazioni generali > Divise) | CodIso: en correspondencia a la moneda configurada para el Euro, ingresar el código iso EUR | 
-| Tabla Tipo Documentos (Tabelle > Impostazioni generali > Tipo Documenti) | Tipo documento FattPubb: identifica el tipo de documento relativo a la facturación electrónica. Debe ser ingresado con el valor CÓDIGO: *FattPubb* y DESCRIPCIÓN: *Fatturazione Elettronica*, dejando inalterados los otros valores propuestos | 
+| Empresa (Tablas > Configuración General > Empresa) | Descripción, NIT, Código fiscal → obligatorio si no se ha configurado el NIT, Código de país, Régimen fiscal, Teléfono/FAX, Domicilio fiscal y Código postal, municipio, provincia, Socios/Estado de liquidación, Oficina Rea, Número de inscripción Rea, Capital social (incluyendo también los decimales separados por el “.”) | 
+| Tipos de IVA (Tablas > Administración > Tipos/Modalidad IVA) | Código P.A: es el código que identifica de manera única el tipo de IVA en los archivos XML; se puede encontrar el código específico para cada tipo en las Especificaciones Técnicas publicadas por la Agencia Tributaria para la facturación electrónica | 
+| Tabla Tipos de Documento (Tablas > Administración > Tipos de Documento) | Código P.A: es el código que identifica de manera única el Tipo de documento al que se refiere el archivo XML (factura, nota de crédito...); se puede encontrar el código específico para cada tipo en las Especificaciones Técnicas publicadas por la Agencia Tributaria para la facturación electrónica | 
+| Tabla Tipos de Pago (Tablas > Configuración general > Tipos de pago) | Código P.A: es el código que identifica de manera única el Tipo de pago en el archivo XML; se puede encontrar el código específico para cada tipo en las Especificaciones Técnicas publicadas por la Agencia Tributaria para la facturación electrónica | 
+| Tipos de facturas de venta (Tablas > Ventas > Tipos de Facturas) | Excluidas de Fact.El: la casilla debe marcarse SOLO para los documentos que se pretenda excluir del flujo de facturación electrónica. Por lo tanto, estos documentos no podrán ser procesados dentro del flujo de facturación electrónica | 
+| Tipos de retención (Tablas > Administración > Tipos de Retenciones) | Tipos de retención facturación electrónica: es el código que identifica de manera única el Tipo de retención en el archivo XML; se puede encontrar el código específico para cada tipo en las Especificaciones Técnicas publicadas por la Agencia Tributaria para la facturación electrónica | 
+| Tabla Divisas (Tablas > Configuración general > Divisas) | CodIso: en la moneda configurada para el Euro, insertar el código iso EUR | 
+| Tabla Tipos de Documentos (Tablas > Configuración general > Tipos de Documentos) | Tipo documento FattPubb: identifica el tipo de documento relativo a la facturación electrónica. Debe introducirse con el valor CÓDIGO: *FattPubb* y DESCRIPCIÓN: *Facturación Electrónica*, dejando inalterados los demás valores propuestos | 
 
-## Registro de artículos (Anagrafica articoli)
+## Maestra de artículos<!-- Anagrafica articoli -->
 
-Para la correcta gestión de la casuística de artículos que requieren la indicación en factura de códigos normativos o ministeriales específicos, como por ejemplo el código AIC (código ministerial del producto) para algunos medicamentos o el código DM0-DM1, es necesario registrar en la tabla **tipi barcode** un código de barras específico identificado con el indicador **export pubblica amministrazione** y registrado en el perfil del artículo en el panel **codici barcode**, campo **Tipo de código de barras** (Tipo barcode).
+Para la correcta gestión en el caso de artículos que requieran la indicación en factura de códigos normativos o ministeriales específicos, como por ejemplo el código AIC (código ministerial del producto) para ciertos medicamentos o el código DM0-DM1, es necesario registrar en la tabla **Tipos de código de barras<!-- Tipi barcode -->** un código de barras específico identificado con el flag **Exportaciones Administración Pública<!-- Export Pubblica Amministrazione -->** y reportado en la ficha del artículo en el panel **Códigos de Barra<!-- Codici BarCode -->**, campo **Tipo de código de barras<!-- Tipo barcode -->**.
 
 ## Split payment
 
-Para la correcta gestión del caso de Split Payment en los documentos dirigidos a la Administración Pública, las Especificaciones técnicas relacionadas con la compilación del archivo XML requieren la identificación de un tipo específico de exigibilidad de IVA, en formato alfanumérico de 1 carácter de longitud. Los valores aceptados son los siguientes:          
-*I* IVA a exigibilidad inmediata (IVA ad esigibilità immediata)       
-*D* IVA a exigibilidad diferida (IVA ad esigibilità differita)      
-*S* escisión de los pagos (scissione dei pagamenti)       
+Para la correcta gestión del caso de Split Payment en los documentos dirigidos a la Administración Pública, las especificaciones técnicas relativas a la compilación del archivo XML requieren la identificación de un tipo específico de exigibilidad IVA, en formato alfanumérico de 1 carácter de longitud. Los valores admitidos son los siguientes:          
+*I* IVA de exigibilidad inmediata       
+*D* IVA de exigibilidad diferida      
+*S* escisión de pagos       
 
-En Fluentis, por lo tanto, es necesario establecer, sobre las causales contables asociadas al tipo de documento de venta hacia la PA, el tipo de movimiento 29 – IVA ventas con Split Payment.
+En Fluentis, por tanto, es necesario configurar, en las causales contables asociadas al tipo de documento de venta a la Administración Pública, el tipo de movimiento<!-- movimento --> 29 – IVA ventas con Split Payment.

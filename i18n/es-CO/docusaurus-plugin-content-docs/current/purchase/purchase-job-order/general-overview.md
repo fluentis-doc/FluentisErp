@@ -1,19 +1,19 @@
 ---
-title: Introducción 
+title: Introduzione
 sidebar_position: 1
 ---
 
-El módulo se encuentra en el área **Compras > Órdenes de compra**. A través del uso de las órdenes de compra, las empresas pueden establecer contratos con sus proveedores para la adquisición de ciertos volúmenes de producto dentro de un período de tiempo acordado. Estos acuerdos no solo permiten obtener condiciones económicas favorables, sino que también garantizan la disponibilidad de la mercancía necesaria, a cambio del compromiso del comprador de respetar la cantidad contractual prometida dentro de los plazos establecidos.
+Il modulo si trova nell'area **Acquisti > Commesse di acquisto**. Attraverso l'impiego delle commesse di acquisto, le aziende possono stabilire contratti con i propri fornitori per l'acquisizione di determinati volumi di prodotto entro un lasso di tempo concordato. Tali accordi non solo permettono di ottenere condizioni economiche favorevoli, ma garantiscono anche la disponibilità della merce necessaria, in cambio dell'impegno dell'acquirente a rispettare il quantitativo contrattualmente promesso entro le scadenze prestabilite.   
 
-## **Configuración preliminar del módulo**
+## **Configurazione preliminare del modulo**
 
-Antes de utilizar el módulo, es necesario completar las siguientes tablas y parámetros:  
-- [**Numeraciones**](/docs/configurations/tables/fluentis-numerations): inserción de las numeraciones a usar para la inserción de órdenes de compra.  
-- [**Tipo de orden de compra**](/docs/configurations/tables/purchase/purchase-job-order-types)  
-- [**Parámetros de Órdenes de Trabajo de Compra**](/docs/configurations/parameters/purchase/purchase-job-orders-parameters)
+Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e parametri:     
+- [**Numerazioni**](/docs/configurations/tables/fluentis-numerations): inserimento delle numerazioni da utilizzare per l'inserimento delle commesse di acquisto.     
+- [**Tipo commessa di acquisto**](/docs/configurations/tables/purchase/purchase-job-order-types)
+- [**Parametri commesse acquisto**](/docs/configurations/parameters/purchase/purchase-job-orders-parameters)
 
-## **Conexiones con otros módulos**
+## **Collegamenti con altri moduli**
 
-Una vez que se han acordado los contratos con los proveedores y se ha creado la orden de compra, esta puede ser cumplida dentro de las **Orden de Compra** mediante el botón de *ejecución del Proyecto*.  
+Una volta concordati i contratti con i fornitori e creata la commessa di acquisto, questa può essere evasa all'interno degli **Ordini fornitore** mediante il pulsante di *Evasione da progetto*.     
 
-Utilizando los [parámetros apropiados](/docs/configurations/parameters/purchase/purchase-job-orders-parameters/), es posible hacer obligatoria la ejecución desde la orden cuando se crea un nuevo pedido y bloquear la cantidad de la orden, de manera que no se permita el cumplimiento de cantidades superiores a las predefinidas en el contrato.
+Utilizzando gli appositi [parametri](/docs/configurations/parameters/purchase/purchase-job-orders-parameters/) è possibile rendere obbligatoria l'evasione da commessa quando si crea un nuovo ordine e bloccare la quantità della commessa, in modo da non permettere l'evasione di quantità superiori a quelle predefinite nel contratto.

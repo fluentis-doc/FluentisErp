@@ -1,14 +1,15 @@
 ---
-title: tipi scadenza
+title: Tipos de vencimiento
 sidebar_position: 3
+ai_generated: true
 ---
 
-:::tip[Inicio Rápido (FAst Start)]
-La tabla está sujeta al procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
+:::tip[Fast Start]
+La tabla está involucrada en el procedimiento de [**Fast Start**](/docs/guide/fast-start)
 
-En caso de querer configurarlo manualmente, consulte la lista de verificación de la página enlazada.
+En caso de que se desee configurar manualmente, consulte la lista de verificación en la página enlazada.
 :::
 
-En esta tabla se definen los tipos de vencimientos extracontables que serán gestionados manualmente dentro del flujo de efectivo. A cada tipo se le puede asociar una subcuenta bancaria para la canalización del flujo.
+En esta tabla se definen los tipos de vencimientos fuera de balance<!-- tipologie di scadenze extacontabili --> que se gestionarán manualmente dentro del cash flow<!-- cash flow -->. A cada tipo se puede asociar una subcuenta bancaria<!-- sottoconto bancario --> para canalizar el flujo.
 
-Los tipos aquí codificados representan, más que nada, un agrupamiento o una etiqueta para la inserción efectiva del detalle que se realiza a través del formulario [**scadenze extracontabili**](/docs/treasury/cash-flow/off-balance-due-dates).
+Los tipos codificados aquí representan, más que nada, un agrupamiento o una etiqueta para el ingreso efectivo del detalle, que se realiza a través del formulario [**Vencimientos fuera de balance<!-- Scadenze Extracontabili -->**](/docs/treasury/cash-flow/off-balance-due-dates).

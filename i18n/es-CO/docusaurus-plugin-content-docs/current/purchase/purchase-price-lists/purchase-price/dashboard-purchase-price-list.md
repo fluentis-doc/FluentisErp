@@ -1,16 +1,17 @@
 ---
-title: cruscotto listini fornitori
+title: Tablero de Listas de Precios de Proveedores
 sidebar_position: 4
+ai_generated: true
 ---
 
-El formulario se abre a través de la ruta **Compras > Listados > cruscotto listini fornitori (Acquisti > Listini > Cruscotto Listini Fornitori)**.   
+El formulario se abre a través de la ruta **Compras > Listas de precios > Tablero de Listas de Precios de Proveedores<!-- Cruscotto Listini Fornitori -->**.   
 
-En la cuadrícula de resultados, se puede visualizar una fila por cada línea de artículo contenida en los diferentes listados, con la referencia al listado del que se han tomado los datos.  
+En la cuadrícula de resultados es posible visualizar una fila por cada renglón de artículo contenido en las diferentes listas de precios<!-- listini -->, con la referencia a la lista de precios<!-- listino --> de la que fueron tomados los datos.  
 
-*Campos presentes*:
+*Campos presentes<!-- Campi presenti -->*:
 
-- **Cuenta/Subcuenta/Descripción de cuenta (Conto/SottoConto/Descrizione conto)**: identifica al proveedor al que está destinado el listado.
-- **Desde/Hasta fecha de validez (Da/A data validità)**: indican las fechas de validez del listado del que se ha tomado el artículo.  
-- **Código/Descripción del artículo (Codice/Descrizione articolo)**: indica el código y la descripción del artículo presente en el listado.  
-- **unità di misura**: indica la unidad de medida en la que se expresa la **quantità** del artículo.  
-- **prezzo**: muestra el precio indicado en el listado, sin considerar posibles descuentos aplicados.
+- **Cuenta/Subcuenta/Descripción de la cuenta<!-- Conto/SottoConto/Descrizione conto -->**: identifica el proveedor al que está asignada la lista de precios<!-- listino -->.
+- **Desde/Hasta fecha de validez<!-- Da/A data validità -->**: indican las fechas de validez de la lista de precios<!-- listino --> de la que fue tomado el artículo.  
+- **Código/Descripción del artículo<!-- Codice/Descrizione articolo -->**: indica el código y la descripción del artículo presente en la lista de precios<!-- listino -->.  
+- **Unidad de medida<!-- Unità di misura -->**: indica la unidad de medida en la que se expresa la **Cantidad** del artículo.  
+- **Precio**: muestra el precio indicado en la lista de precios<!-- listino -->, sin tener en cuenta posibles descuentos ingresados.

@@ -1,14 +1,15 @@
 ---
-title: Tabla de Empresas (Tabella Società)
+title: Tabla Sociedad
 sidebar_position: 1
+ai_generated: true
 ---
 
-La primera decisión a tomar es sobre el tipo de control (controlling) que la empresa desea gestionar: si el objetivo es construir un sistema de centros empresariales, interconectados por lógicas de transferencia de valores de costo/revenue, con el fin de valorar la contabilidad analítica en todas sus características, es necesario ingresar a la ***Tabla de empresas (Tabella società)*** y activar el indicador de gestión del *Controlling*, presente en la pestaña *altre impostazioni*.
+La primera decisión que se debe tomar es sobre el tipo de controlling<!-- controlling --> que la empresa desea gestionar: si el objetivo es construir un sistema de centros empresariales conectados entre sí mediante lógicas de redistribución de valores de costo/ingreso<!-- costo/ricavo -->, con el fin de aprovechar plenamente la contabilidad analítica en todas sus características, es necesario ingresar a la ***Tabla sociedad<!-- Tabella società -->*** y activar la casilla de gestión de *Controlling*, que se encuentra en la pestaña *Otras configuraciones<!-- Altre impostazioni -->*.
 
-Continuaremos la configuración moviéndonos a la cuadrícula *divisioni* en la parte superior derecha, donde vamos a establecer la periodicidad *mensile* (que es la opción predeterminada) o *settimanale*.
+Continuaremos la configuración moviéndonos a la cuadrícula *Divisiones<!-- Divisioni -->* en la parte superior derecha, donde estableceremos la periodicidad *mensual<!-- mensile -->* (que es la opción predeterminada) o *semanal<!-- settimanale -->*.
 
-Generalmente, en el controlling valoramos solo los movimientos económicos de costos y ingresos; si deseamos incluir el patrimonio, podemos activar el indicador 'Importar patrimonio en controlling (Importa patrimoniale in controlling)'.
+Generalmente en el controlling valoramos solo los movimientos económicos de costos y ingresos<!-- movimenti economici dei costi e ricavi -->, pero si también quisiéramos incluir la parte patrimonial, podemos activar la casilla 'Importar patrimonial al controlling<!-- Importa patrimoniale in controlling -->'.
 
-:::tip Nota
-Si la empresa está interesada solo en la gestión de balances interanuales contables o en una configuración básica de los centros empresariales que no prevea controladores de transferencia entre ellos, la gestión *Controlling* en la tabla de empresas puede ser omitida.
+:::tip Nota<!-- Nota -->
+Si la empresa solo está interesada en la gestión de balances contables intermedios o en una configuración básica de los centros empresariales que no prevea drivers de redistribución entre ellos, la gestión de *Controlling* en la tabla sociedad<!-- Controlling in tabella società --> puede ser omitida.
 :::

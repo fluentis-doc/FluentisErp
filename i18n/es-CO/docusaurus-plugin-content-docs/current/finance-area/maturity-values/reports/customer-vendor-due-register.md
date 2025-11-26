@@ -1,67 +1,68 @@
 ---
-title: Cronograma de Clientes / Proveedores (Scdenziario Clienti / Fornitori)
+title: Vencimientos Clientes / Proveedores
 sidebar_position: 1
+ai_generated: true
 ---
 
-Desde este formulario es posible definir todos los parámetros preliminares y lanzar la impresión del cronograma de clientes / proveedores.
+Desde este formulario es posible definir todos los parámetros preliminares y lanzar la impresión del vencimientos clientes / proveedores<!-- scadenziario clienti / fornitori -->.
 
-El formulario es igual al que se encuentra para el lanzamiento de otras impresiones basadas en el procesamiento de las partidas abiertas, sin embargo, algunos campos pueden no ser utilizados o ser pertinentes para la impresión específica en cuestión.
+El formulario es igual al presente para el lanzamiento de otras impresiones basadas en la elaboración de partidas abiertas<!-- partite aperte -->, sin embargo algunos campos podrían no ser utilizados o pertinentes a la impresión específica en cuestión.
 
 En la parte superior del formulario hay varios filtros sobre los datos de origen:
 
 **![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image01.png)**
 
-**Cuenta (Conto):** filtro principal sobre los subcuentas de clientes / proveedores. Si no se ingresa ningún dato, el cronograma se calculará sobre todas las cuentas de los clientes y proveedores. Es posible ingresar solo la cuenta maestra (sin subcuenta) para obtener solo los clientes (o solo los clientes de Italia, por ejemplo) o solo los proveedores.
+**Cuenta<!-- Conto -->:** filtro principal sobre los subcuentas<!-- sottoconti --> de clientes / proveedores. Si no se ingresa ningún dato, el vencimientos<!-- scadenziario --> será elaborado sobre todas las cuentas de clientes<!-- clienti --> y proveedores<!-- fornitori -->. Es posible ingresar solo la cuenta principal<!-- conto mastro --> (sin subcuenta<!-- sottoconto -->) para obtener únicamente los clientes<!-- clienti --> (o solo los clientes<!-- clienti --> de Italia por ejemplo) o solo los proveedores<!-- fornitori -->.
 
-**Desde / Hasta Fecha de vencimiento (Da / A Data scadenza):** filtro sobre la fecha de vencimiento almacenada en la partida (procesada en el momento de apertura según las condiciones de pago salvo modificaciones manuales).
+**Desde / Hasta Fecha de vencimiento<!-- Da / A Data scadenza -->**: filtro sobre la fecha de vencimiento almacenada dentro de la partida<!-- partita --> (elaborada en la fase de apertura a partir de las condiciones de pago, salvo cambios realizados manualmente).
 
-**Estado de la partida (Stato Partita):** el filtro se propone por defecto con el estado Abiertas (que incluye también las Vencidas y Parcialmente Abiertas); puede ser modificado (cambiándolo a partidas cerradas o vencidas o parcial o totalmente abiertas, etc. para extraer solo un tipo específico) o dejarse vacío para proponer todas las partidas.
+**Estado de la partida<!-- Stato Partita -->**: el filtro se propone por defecto en el estado Abiertas<!-- Aperte --> (que también incluye las Vencidas<!-- Scadute --> y Parcialmente Abiertas<!-- Parzialmente Aperte -->), puede ser modificado (llevándolo a partidas cerradas<!-- partite chiuse --> o vencidas<!-- scadute --> o parcialmente abiertas<!-- parzialmente aperte -->, etc. para extraer únicamente un solo tipo) o bien dejarse vacío para proponer todas las partidas<!-- partite -->.
 
-**Posición de la partida (Posizione Partita):** la caja combinada de filtro está vinculada a la tabla Posición de Partidas (utilizada para asignar a las partidas categorías codificables libremente).
+**Posición de la partida<!-- Posizione Partita -->**: la combo box del filtro está vinculada a la tabla Posición Partidas<!-- Posizione Partite --> (utilizada para atribuir a las partidas<!-- partite --> categorías libremente codificables).
 
-**Pago (Pag.):** filtro sobre el tipo de pago almacenado en la partida (procesada en el momento de apertura según las condiciones de pago salvo modificaciones manuales).
+**Pag.**: filtro sobre el tipo de pago almacenado dentro de la partida<!-- partita --> (elaborada en fase de apertura a partir de las condiciones de pago, salvo modificaciones manuales).
 
-**Código de documento (Cod. Doc.):** filtro sobre el código del tipo de documento asociado a la partida en el momento de apertura (ej. Factura, nota de crédito, recibo fiscal, etc.).
+**Cod. Doc.**: filtro sobre el código del tipo de documento asociado a la partida<!-- partita --> en fase de apertura (ejemplo: Factura<!-- Fattura -->, nota de crédito<!-- nota di accredito -->, recibo fiscal<!-- ricevuta fiscale -->, etc.).
 
-**Divisa (Divisa):** filtro sobre la divisa en la que están denominadas las partidas (en la impresión también se mostrarán los contravalores en Euro).
+**Divisa**: filtro sobre la moneda<!-- divisa --> en la que se denominan las partidas<!-- partite --> (en la impresión también se mostrarán los importes equivalentes en Euro).
 
-**Agente (Agente):** filtro sobre el agente vinculado a la partida (solo del lado del cliente).
+**Agente**: filtro sobre el agente vinculado a la partida<!-- partita --> (solo lado cliente<!-- cliente -->).
 
-**Banco (Banca):** filtro sobre el banco de canalización vinculado a la partida en el momento de apertura (campo Subcuenta de pago dentro de la partida).
+**Banco**: filtro sobre el banco de canalización vinculado a la partida<!-- partita --> en fase de apertura (campo Subcuenta<!-- Sottoconto --> de pago dentro de la partida<!-- partita -->).
 
-**Proyecto (Proyecto):** (ex apartado): filtro sobre el proyecto (apartado) vinculado a la partida.
+**Proyecto**: (antes orden de trabajo<!-- commessa -->): filtro sobre el proyecto<!-- proetto (commessa) --> vinculado a la partida<!-- partita -->.
 
-**Desde / Hasta Año de partida; Desde / Hasta Número de partida (Da / A Anno partita; Da / A Nr. Partita):** filtro sobre el año y número de la partida (también estos, campos presentes dentro de las partidas).
+**Desde / Hasta Año de la partida<!-- Da / A Anno partita -->; Desde / Hasta Nº de partida<!-- Da / A Nr. Partita -->**: filtro sobre el año y el número de la partida<!-- partita --> (también estos, campos presentes dentro de las partidas<!-- partite -->).
 
-**Departamento (Dipartimento):** filtro sobre la división (operativo si hay más divisiones en la base de datos).
+**Departamento**: filtro sobre la división<!-- divisione --> (operativo si hay más divisiones en la base de datos).
 
-Parámetros de visualización
+Parámetros de visualización<!-- Parametri di visualizzazione -->
 
 ![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image02.png)
 
-**Partidas abiertas hasta (Partite aperte al):** este campo, propuesto por defecto al abrir la máscara igual a la fecha de hoy, puede ser modificado para obtener la situación de las partidas abiertas (o de las partidas con uno de los otros estados seleccionables en el campo Estado de Partidas) tal como se presentaban a una cierta fecha.
+**Partidas abiertas al<!-- Partite aperte al -->**: este campo, propuesto por defecto al abrir la pantalla igual a la fecha actual, puede ser modificado para obtener la situación de las partidas abiertas<!-- partite aperte --> (u otras partidas con uno de los otros estados seleccionables en el campo Estado de la Partida<!-- Stato Partite -->) tal y como se presentaban en una fecha determinada.
 
-Ejemplo: si una factura pasiva fechada el 01 de junio abrió una partida con vencimiento el 01 de julio y el día 28 de junio se registró el pago de esa partida, si procesamos el cronograma del proveedor con fecha de Partidas abiertas hasta después del 28 (por ejemplo, solicitamos el cronograma al 30 de junio) la partida no será visible, ya que estará cerrada; si solicitamos el cronograma con fecha 20 de julio, por ejemplo, la partida aparecerá visible ya que aún estará abierta en esa fecha.
+Ejemplo: si una factura<!-- fattura --> de compra fechada el 1 de junio abrió una partida<!-- partita --> con vencimiento el 1 de julio y el 28 de junio se registró el pago de esa partida<!-- partita -->, si elaboramos el vencimientos de proveedores<!-- scadenziario fornitore --> con la fecha de Partidas abiertas al<!-- partite aperte al --> después del 28 (por ejemplo, pedimos el vencimientos al 30 de junio) la partida no será visible ya que está cerrada, pero si pedimos el vencimientos con fecha 20 de julio, por ejemplo, la partida será visible ya que aún estaba abierta en esa fecha.
 
-**Partidas y pagos a fechas (Partite e pagamenti alle date):** con el indicador activo, el campo anterior Partidas abiertas hasta tendrá efecto en referencia tanto a la fecha de apertura de las partidas como a la fecha de pago; con el indicador desactivado, la fecha mencionada anteriormente tendrá efecto solo en referencia a la fecha de apertura de las partidas y se considerarán todos los pagos.
+**Partidas y pagos en las fechas<!-- Partite e pagamenti alle date -->**: si el check está activo, el campo anterior Partidas abiertas al<!-- Partite aperte al --> tendrá efecto refiriéndose tanto a la fecha de apertura de las partidas como a la fecha de pago; con el check desactivado la fecha mencionada tendrá efecto solo con referencia a la fecha de apertura de las partidas y se considerarán todos los pagos.
 
-**Sintética (Sintetica):** el indicador, si está activo, oculta en la impresión las columnas adicionales relacionadas con los detalles del pago; si está desactivado, permite mostrar todos los detalles.
+**Sintética**: si el check está activo, oculta en la impresión las columnas adicionales relativas a los detalles de pago, si está desactivado permite mostrar todos los detalles.
 
-**Con efectos a vencer (Con effetti a scadere):** dado que tras la contabilización de la emisión de los efectos activos (letras de cambio, recibos bancarios, etc.) se produce una anulación del crédito hacia el cliente y un cierre concomitante de la partida abierta, activando este indicador, el cronograma se "rectifica" para tener en cuenta también los efectos a vencer.
+**Con efectos a vencer<!-- Con effetti a scadere -->**: ya que tras la contabilización de la emisión de los efectos activos<!-- effetti attvi --> (pagarés, recibos bancarios, etc.) ocurre una compensación del crédito hacia el cliente y el cierre simultáneo de la partida abierta<!-- partita aperta -->, activando este check el vencimientos<!-- scadenziario --> se "rectifica" para tener en cuenta también los efectos a vencer<!-- effetti a scadere -->.
 
-**Conversión de divisa (Conversione Valuta):** seleccionando una divisa de la caja combinada, las partidas serán convertidas a la divisa seleccionada al tipo de cambio de referencia del día (visualizado en la columna cambio presente en la impresión).
+**Conversión de moneda<!-- Conversione Valuta -->**: al seleccionar una moneda desde la combo box, las partidas<!-- partite --> serán convertidas a la moneda seleccionada al tipo de cambio del día de referencia (mostrado en la columna de cambio presente en la impresión).
 
-CRITERIOS DE AGRUPAMIENTO POSIBLES ACTIVABLES
+POSIBLES CRITERIOS DE AGRUPACIÓN ACTIVABLES
 
 ![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image03.png)
 
-Nota: Razón social = agrupamiento basado en el registro del cliente o proveedor.
+Nota: Razón social = agrupación basada en la ficha del cliente o proveedor.
 
-Banco = agrupamiento basado en el banco de canalización (ver arriba).
+Banco = agrupación en función del banco de canalización (ver arriba)
 
-Vencimiento = el agrupamiento se realizará por vencimiento, representando en orden cronológico todas las partidas abiertas (basado, por supuesto, en los criterios del filtro establecidos arriba).
+Vencimiento = el agrupamiento se realizará por vencimiento representando en orden cronológico todas las partidas abiertas<!-- partite aperte --> (obviamente según los criterios de filtro establecidos anteriormente)
 
-ÁREA **giorni**: utilizado solo para la impresión del Reporte de Aging e irrelevante para la presente impresión.
+ÁREA **Días**: utilizado solo para la impresión del Reporte de Antigüedad (Aging) y es irrelevante para esta impresión.
 
 ![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image04.png)
 

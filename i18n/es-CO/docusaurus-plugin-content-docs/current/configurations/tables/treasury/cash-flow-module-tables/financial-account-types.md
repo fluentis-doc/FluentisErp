@@ -1,23 +1,24 @@
 ---
-title: tipi conto finanziario
+title: Tipos de cuenta financiera
 sidebar_position: 1
+ai_generated: true
 ---
 
-:::tip[Inicio Rápido (FAst Start)]
-La tabla está relacionada con el procedimiento de [**Inicio Rápido (Fast Start)**](/docs/guide/fast-start)
+:::tip[FAst Start]
+La tabla está involucrada en el procedimiento de [**Fast Start**](/docs/guide/fast-start)
 
-En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada.
+En caso de querer configurar manualmente, haga referencia a la check list de la página enlazada
 :::
 
-En esta tabla se definirá la lista de subcuentas contables desde las cuales calcular el saldo contable que se considerará como disponibilidad inicial de flujo de efectivo.
+En esta tabla se definirá la lista de subcuentas<!-- sottoconti --> contables desde las cuales calcular el saldo contable que se considerará como la disponibilidad<!-- disponibilità --> inicial de cash flow.
 
 *Campos específicos*  
-**tipo conto finanziario**: indica el tipo de cuenta financiera. Puede seleccionarse entre dos tipos: Caja (Cassa) y Banco (Banca), ya que la consistencia inicial de recursos financieros se calculará sobre estos tipos de cuentas contables. A continuación, en los campos siguientes, se debe indicar en detalle qué cuentas/sobcuentas se deben leer.  
+**Tipo de cuenta financiera<!-- Tipo conto finanziario -->**: indica el tipo de cuenta financiera<!-- conto finanziario -->. Se puede seleccionar entre dos tipos: Caja<!-- Cassa --> y Banco<!-- Banca -->, ya que la consistencia inicial de recursos financieros se calculará sobre estos tipos de cuentas contables. Luego, en los campos siguientes, se debe indicar en detalle qué cuentas / subcuentas<!-- sottoconti --> revisar.
 
-**Descripción de la cuenta financiera (Descrizione conto finanziario)**: representa la descripción del tipo de cuenta.
+**Descripción de la cuenta financiera<!-- Descrizione conto finanziario -->**: representa la descripción del tipo de cuenta<!-- conto -->.
 
-**conto**: es el código de la cuenta.
+**Cuenta<!-- Conto -->**: es el código de la cuenta<!-- conto -->.
 
-**sottoconto**: es el código de la subcuenta.
+**Subcuenta<!-- Sottoconto -->**: es el código de la subcuenta<!-- sottoconto -->.
 
-**descrizione sottoconto**: representa la descripción de la subcuenta.
+**Descripción de la subcuenta<!-- Descrizione sottoconto -->**: representa la descripción de la subcuenta<!-- sottoconto -->.

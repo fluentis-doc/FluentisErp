@@ -1,70 +1,71 @@
 ---
 sidebar_position: 4
-title: Régimen IVA del Margen (Regime iva del margine)
+title: Régimen IVA del margen
+ai_generated: true
 ---
 
-### CONFIGURACIONES (CONFIGURAZIONI)
+### CONFIGURACIONES<!-- CONFIGURAZIONI -->
 
-Es necesario codificar (al menos) dos **registros específicos de IVA (specifici registri iva)** sobre los cuales registrar las compras relacionadas con el régimen del margen y las ventas del mismo régimen, asociándolos, en el campo **tipo de registro (tipo di registro)**:
+Es necesario codificar (al menos) dos **registros de IVA específicos<!-- registri iva -->** sobre los cuales registrar las compras relacionadas con el régimen del margen y las ventas bajo el mismo régimen, asociándolos en el campo **tipo de registro<!-- tipo di registro -->**:
 
-- Compras régimen del margen (Acquisti regime del margine)
-- Ventas régimen del margen (Vendite regime del margine)
+- Compras régimen del margen
+- Ventas régimen del margen
 
-En segundo lugar, debemos crear las [**tasas de IVA (aliquote iva)**](/docs/configurations/tables/finance/vat-rates) que serán utilizadas en estos registros de IVA específicos, identificándolas con el **indicador (flag)** **iva del margine***:
+En segundo lugar, debemos crear las [**tasas de IVA<!-- aliquote iva -->**](/docs/configurations/tables/finance/vat-rates) que se utilizarán en estos registros de IVA<!-- registri iva --> específicos, identificándolas con la **marca** ***IVA del margen<!-- Iva del margine -->***:
 
 ![](/img/it-it/finance-area/other/VATMargine.png)
 
-Las tasas a utilizar en la compra tendrán la indicación de la tasa de IVA del margen de referencia, de modo que se sepa a qué tasa asignar proporcionalmente el valor del margen mismo.
+Las tasas a usar en las compras deben indicar la tasa de IVA del margen de referencia, de modo que se sepa a qué tasa asignar proporcionalmente el valor del propio margen<!-- margine -->.
 
-Luego debemos codificar las causales contables que prevén la detección en estos registros específicos: la causal de las ventas, en particular, estará vinculada a un tipo de factura de venta específico, que permitirá emitir el documento en venta y enviarlo al Sdi. 
-Puede ser útil, con el fin de evitar usos erróneos de tasas no previstas para la gestión del margen, habilitar en estas causales la sección de restricción a las tasas de IVA habilitadas (*Controllo Aliquote IVA*).
+Después, debemos codificar las causales contables que prevén la contabilización sobre estos registros<!-- registri --> específicos: la causal de ventas, en particular, estará vinculada a un tipo de factura de venta específico, que permitirá emitir el documento de venta y enviarlo al Sdi.
+Puede ser útil, para evitar el uso erróneo de tasas no previstas para la gestión del margen<!-- margine -->, habilitar en estas causales la sección de restricción a las tasas de IVA habilitadas (*Control de Tasas de IVA<!-- Controllo Aliquote IVA -->*).
 
-La causal de venta registrará la deuda por IVA del margen, con tipo de movimiento *ventas régimen normal (vendite regime normale)* y registro de ventas ordinario.
+La causal de venta contabilizará la deuda por IVA del margen<!-- iva del margine -->, con tipo de movimiento *ventas régimen normal* y registro de ventas ordinario.
 
 ![](/img/it-it/finance-area/other/VATMargine2.png)
 
-Dicha registración prevé contablemente la cuenta de la deuda de IVA y la cuenta de reversión del ingreso de venta por margen, que se establece en los parámetros de contabilidad general en esta sección:
+Dicho registro prevé contablemente la cuenta de deuda por IVA y la cuenta de reversión del ingreso de ventas por margen<!-- margine -->, que se establece en los parámetros de contabilidad general en esta sección:
 
 ![](/img/it-it/finance-area/other/VATMargine3.png)
 
-Indicaremos el ingreso de venta y la causal por defecto. La fecha de última elaboración y el valor negativo del margen, en cambio, son dos valores actualizados automáticamente por Fluentis con la impresión definitiva de la elaboración del margen de período.
+indicaremos el ingreso por venta y la causal predeterminada. La fecha de última elaboración y el valor negativo del margen<!-- margine -->, en cambio, son dos valores que se actualizan automáticamente por Fluentis con la impresión definitiva de la elaboración del margen de periodo.
 
-### ELABORACIÓN (ELABORAZIONE)
+### PROCESAMIENTO<!-- ELABORAZIONE -->
 
-Dentro del menú *dichiarazioni* del módulo *amministrazione*, seleccionar **elaborazione iva del margine**:
+Dentro del menú *Declaraciones<!-- Dichiarazioni -->* del módulo *Administración<!-- Amministrazione -->* seleccione **Procesamiento IVA del margen<!-- Elaborazione iva del margine -->**:
 
-Generando un nuevo cálculo tendremos:
+Al generar un nuevo cálculo tendremos:
 
 ![](/img/it-it/finance-area/other/VATMargine4.png)
 
-El año de los parámetros de contabilidad, el registro a utilizar para registrar la posible deuda sobre el margen positivo, la causa de detección, el cliente a asignar a la registración de la deuda y a la derecha el rango de fechas objeto de elaboración. 
-Una vez configurados estos datos, tendremos la posibilidad de ejecutar el cálculo a través del botón de la barra de herramientas, que actualizará los datos de los dos subpestañas:
+El año de los parámetros de contabilidad, el registro a utilizar para registrar la eventual deuda sobre el margen positivo, la causal de contabilización, el cliente a asignar al registro de deuda y, a la derecha, el rango de fechas objeto de la elaboración.
+Una vez configurados estos datos, tendremos la posibilidad de ejecutar el cálculo mediante el botón de la ribbon bar, el cual valorará los datos de las dos subpestañas:
 
-En la primera tendremos los totales de las tasas registradas en los registros del margen de compra y venta, donde para la compra tendremos la exposición de las porcentajes relativas de distribución:
+En la primera tendremos los totales de las tasas movidas en los registros del margen de compra y venta, donde para la compra tendremos la exposición de los porcentajes relativos de reparto:
 
 ![](/img/it-it/finance-area/other/VATMargine5.png)
 
-En la segunda pestaña, en cambio, tendremos la elaboración del cálculo del margen aplicando las porcentajes a las tasas de IVA vinculadas a las tasas de compra:
+En la segunda pestaña, en cambio, se procesará el cálculo del margen aplicando los porcentajes a las tasas de IVA vinculadas a las tasas de compra:
 
 ![](/img/it-it/finance-area/other/VATMargine6.png)
 
-Esta segunda pestaña se valorizará solo si el margen del período, considerando posibles márgenes negativos anteriores, arrojará un saldo positivo del margen mismo. 
-Tendremos luego algunos otros botones de gestión para usar: la impresión de la elaboración realizada, que si se realiza directamente requerirá establecer si se configura el indicador 'definitiva' haciendo que el cálculo no sea más modificable:
+Esta segunda pestaña solo se valorará si el margen del periodo, considerando posibles márgenes negativos previos, lleva a un saldo positivo del propio margen.
+Luego tendremos algunos otros botones de gestión que se pueden utilizar: la impresión del procesamiento realizado, que si se realiza directamente requerirá establecer el flag 'definitivo', haciendo que el cálculo no sea más modificable:
 
 ![](/img/it-it/finance-area/other/VATMargine7.png)
 
-Esta operación actualizará, en los parámetros de contabilidad, la fecha de última elaboración y el monto almacenado en el saldo negativo del margen.
+Esta operación actualizará, en los parámetros de contabilidad, la fecha de última elaboración y el importe almacenado en el saldo negativo del margen<!-- margine -->.
 
-Una vez configurado el indicador 'definitivo', se habilitará la posibilidad de contabilizar la deuda de IVA:
+Una vez establecido el flag 'definitivo' se habilitará la posibilidad de contabilizar la deuda de IVA:
 
 ![](/img/it-it/finance-area/other/VATMargine8.png)
 
 ![](/img/it-it/finance-area/other/VATMargine9.png)
 
-:::tip Particularidad (Particolarità)
-En la sección IVA tendremos solo el monto del IVA a cargo, **sin un imponible**.
+:::tip Particularidad<!-- Particolarità -->
+En la sección de IVA solo tendremos el importe del IVA a pagar, **sin base imponible**.
 :::
 
-La procedimiento se completa con los botones para realizar el rollback de la contabilización y la cancelación de la impresión definitiva:
+La operación se completa con los botones para realizar el rollback de la contabilización y cancelar la impresión definitiva:
 
 ![](/img/it-it/finance-area/other/VATMargine10.png)

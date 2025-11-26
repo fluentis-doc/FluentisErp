@@ -1,39 +1,39 @@
 ---
-title: Introducción 
+title: Introduzione
 sidebar_position: 1
 ---
 
-El módulo se encuentra en el área **Compra**. La nota de entrega se genera cuando un proveedor envía la mercancía ordenada. Este módulo permite registrar los movimientos de los bienes entrantes, facilitando el control y la trazabilidad de la mercancía recibida y permitiendo una gestión precisa del material disponible en el almacén.
+Il modulo si trova nell'area **Acquisti > DDT Acquisto**. Il DDT viene generato quando un fornitore spedisce la merce ordinata. Questo modulo consente di registrare i movimenti dei beni in entrata, facilitando il controllo e la tracciabilità della merce ricevuta e permettendo una gestione precisa del materiale disponibile a magazzino.
 
-## **Configuración preliminar del módulo**
+## **Configurazione preliminare del modulo**
 
-Antes de utilizar el módulo, es necesario completar las siguientes tablas y parámetros:  
-- [**Numeraciones**](/docs/configurations/tables/fluentis-numerations): inserción de las numeraciones a utilizar para las notas de compra.  
-- [**Volumen de compras**](/docs/configurations/tables/purchase/purchase-turnover/): definición de los tipos de Fatturato de compras que se deben insertar en los documentos.
-- [**Tipos de notas**](/docs/configurations/tables/purchase/purchase-orders-type): creación y definición de los tipos de notas a utilizar.
-- [**Parametros nota de compras**](/docs/configurations/parameters/purchase/purchase-orders-parameters): configuraciones específicas para la gestión de lad notas de entrega.
+Prima di utilizzare il modulo, è necessario compilare le seguenti tabelle e parametri:     
+- [**Numerazioni**](/docs/configurations/tables/fluentis-numerations): inserimento delle numerazioni da utilizzare per i DDT di Acquisto.     
+- [**Fatturato acquisti**](/docs/configurations/tables/purchase/purchase-turnover/): definizione delle tipologie di Fatturato acquisti da inserire nei documenti.
+- [**Tipi DDT**](/docs/configurations/tables/purchase/purchase-orders-type): creazione e definizione delle tipologie di DDT da utilizzare.
+- [**Parametri DDT acquisto**](/docs/configurations/parameters/purchase/purchase-orders-parameters): impostazioni specifiche per la gestione dei DDT. 
 
-## **Conexiones con otros módulos**
+## **Collegamenti con altri moduli**
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/purchase/purchase-orders/general-overview">Órdenes de Proveedor</Link>
-        <p>La notas de entrega puede ser creada mediante la ejecución de una o más Órdenes de proveedor, tanto desde dentro de la notas de entrega utilizando el botón Evasión por órdenes, como a través del [procedimiento]( /docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders). </p>
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Ordini Fornitore</Link>
+        <p>Il DDT può essere creato mediante evasione di uno o più Ordini fornitore, sia dall'interno del DDT utilizzando il pulsante Evasione da ordini, sia attraverso l'apposita [procedura](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders).  </p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Recepción de mercancías (Ricevimento merci)</Link>
-        <p>El procedimiento de [Creación de la notas de entrega desde la Recepción de mercancías](/docs/purchase/purchase-delivery-note/procedures/create-delivery-note-from-goods-receipt) permite la creación incluso cuando el pedido ya ha sido cumplido dentro de una *Recepción de mercancías*. </p>
+###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Ricevimento merci</Link>
+        <p>La procedura di [Creazione DDT da Ricevimento merci](/docs/purchase/purchase-delivery-note/procedures/create-delivery-note-from-goods-receipt) permette la creazione della anche quando l'ordine è già stato evaso all'interno di un *Ricevimento merci*  </p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/warehouse/stock-records/records">Logística (Logistica)</Link>
-        <p>Una vez generado y controlado, la nota de compra puede ser [cargado en almacén](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse) para registrar la llegada de la mercancía y actualizar los inventarios de material. </p>
+###     <Link to="/docs/logistics/warehouse/stock-records/records">Logistica</Link>
+        <p>Una volta generato e controllato, il DDT di acquisto può essere [caricato a magazzino](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse) per registrare l'arrivo della merce e aggiornare le giacenze di materiale.  </p>
     </div>
     <div className="card">
-###     <Link to="/docs/purchase/purchase-invoices/general-overview">Facturas de Compra (Fatture di Acquisto)</Link>
-        <p>El procedimiento de [Valoración de la nota de compra](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) permite la creación de Facturas a partir de las facturas de compra. </p>
+###     <Link to="/docs/purchase/purchase-invoices/general-overview">Fatture di Acquisto</Link>
+        <p>La procedura di [Valorizzazione DDT di acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) permette di creare la creazione delle Fatture a partire dalle bolle di acquisto.  </p>
     </div>
 </div>

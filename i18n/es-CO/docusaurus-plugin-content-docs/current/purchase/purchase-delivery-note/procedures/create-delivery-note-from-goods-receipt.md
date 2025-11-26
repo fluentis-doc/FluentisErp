@@ -1,34 +1,34 @@
 ---
-title: Creación de la lista de recepción
+title: Creazione DDT da Ricevimento merci
 sidebar_position: 2
 keywords:
-- Nota de entrega
-- Recepción de mercancías
+- DDT
+- Ricevimento merci
 ---
 
-El procedimiento se abre a través de la ruta **Creación de la lista de recepción**
+La procedura si apre tramite il percorso **Acquisti > Bolla di acquisto > Procedure > Creazione DDT da ricevimento merci**
 
 ### Filtro
 
-Ofrece la posibilidad de ingresar filtros para buscar las recepciones, seleccionarlas y crear la Nota de entrega.
- Filtro
-> **Nota de entrega no. / fecha**: permite especificar la fecha y el número de la Nota de entrega que se generará con el procedimiento.
+Offre la possibilità di inserire filtri per cercare i ricevimenti, selezionarli e creare il DDT.
 
-### Parámetros
+> **DDT di consegna n./Data**: permettono di specificare la data e il numero del DDT che verrà generato con la procedura.
 
-*Datos obligatorios*:
+### Parametri
 
-- **Tipo de Nota de entrega de compra**: indica el tipo de documento a utilizar para la creación de la Nota de entrega.  
-- **Iva**: indica la [Tasa de IVA](/docs/configurations/tables/finance/vat-rates) que se debe insertar en las líneas de artículo de la Nota de entrega 
-- **Tipo de volumen de compras**: debe configurarse en las líneas de artículo de la Nota de entrega. 
+*Dati obbligatori*:
 
-*Datos opcionales*:  
-> **Recalcular centros de costo/ingresos**: permite elegir si se desea recalcular los centros de costo/ingreso en el momento de la creación de la Nota de entrega.
+- **Tipo bolla consegna acquisto**: indica il tipo documento da usare per la creazione del DDT.
+- **IVA**: indica l'[Aliquota IVA](/docs/configurations/tables/finance/vat-rates) da inserire sulle righe articolo nel DDT.
+- **Tipo fatturato acquisti**: da impostare sulle righe articoo del DDT.
 
-### Reversión
+*Dati opzionali*:
+> **Ricalcola centri di costo/ricavo**: permette di scegliere se si vuole ricalcolare i centri di costo/ricavo al momento della creazione del DDT.
 
-Ofrece la posibilidad de buscar, visualizar y anular las operaciones realizadas.
+### Rollback
 
-Para anular una operación, basta con seleccionar la línea correspondiente a la Nota de entrega a eliminar en la cuadrícula superior y hacer clic en el botón **reversión** ubicado en la cinta de opciones.
+Offre la possibilità di cercare, visualizzare e annullare le operazioni effettuate.
 
-A cada línea de la cuadrícula superior (que contiene el número, la fecha y el usuario que creó la Nota de entrega.) le corresponden una o más líneas en las cuadrículas inferiores **Notas de entrega** y **Recepción de mercancías**. En estas dos cuadrículas, mediante un doble clic en la línea deseada, el usuario puede visualizar la Nota de entrega recién creado o la recepción de mercancías de la cual se generó.
+Per annullare un'operazione è sufficiente selezionare la riga corrispondente al DDT da cancellare nella griglia superiore e cliccare sul pulsante **Rollback** posto nella ribbon bar.
+
+Ad ogni riga della griglia superiore (che contiene numero, data e utente che ha creato il DDT) corrispondono una o più righe nelle griglie inferiori **DDT di consegna** e **Ricevimento merci**. In queste due griglie, mediante doppio click sulla riga interessata, l'utente può visualizzare il DDT di consegna appena creato oppure il ricevimento merci da cui è stato generato.

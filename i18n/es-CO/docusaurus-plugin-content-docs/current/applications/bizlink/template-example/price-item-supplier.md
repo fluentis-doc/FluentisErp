@@ -1,0 +1,15 @@
+---
+title: Importación de Precios y Artículos proveedor
+sidebar_position: 5
+ai_generated: true
+---
+
+La hoja de importación se abre desde la ruta Aplicaciones > BizLink > Importaciones On Demand > Maestros > Importación de Precios y Artículos Proveedor<!-- Importazione Prezzi e Articoli Fornitore -->.         
+En esta hoja, muy similar a Excel, hay una tabla en la que es posible ingresar los datos que se importarán.
+Las columnas en rojo son obligatorias: por lo tanto, es necesario ingresar el **Código de Artículo<!-- Codice Articolo -->**, la correspondiente **Descripción<!-- Descrizione -->**, el **Precio<!-- Prezzo -->** y la **Cantidad por Precio<!-- Quantità per Prezzo -->**. Los demás datos pueden ser completados libremente por el usuario según sus necesidades e incluyen varias características del artículo<!-- articolo -->: Unidad de medida, descuentos, etcétera.
+En la segunda página de la hoja de importación, llamada **BizLink Parameters**, es posible agregar los parámetros que el procedimiento debe utilizar. En particular, para esta importación es necesario indicar la **Razón Social<!-- Ragione Sociale -->** y el **Apodo<!-- Nomignolo -->** del proveedor<!-- fornitore --> para el cual se importan los nuevos precios<!-- prezzi -->, y una **Fecha de inicio de validez<!-- Inizio Validità -->**, que será la fecha a partir de la cual se aplicarán los cambios. También es posible especificar una fecha para el Fin de validez, no obligatoria.
+
+Desde la cinta de opciones es posible realizar varias operaciones para facilitar el uso de la hoja. Por ejemplo, se puede abrir una hoja previamente guardada con el botón **Open**, se puede guardar el documento en curso con el botón **Save**, visualizar la vista previa de impresión, etcétera. Estas operaciones forman parte de la pestaña “Archivo<!-- File -->”. De hecho, aún más arriba que la cinta de opciones, hay varias pestañas que, a su vez, permiten al usuario realizar diversas operaciones, que no serán tratadas en este video. La única pestaña que nos interesa, además de “Archivo<!-- File -->”, en este curso es “Importación<!-- Importazione -->”.
+Haciendo clic en el botón **Importación<!-- Importazione -->** de la pestaña "Importación", los datos ingresados en la hoja serán importados. Si la operación se realiza con éxito, aparecerá el mensaje “Importación completada<!-- Importazione completata -->”; de lo contrario, será posible consultar los errores en los **Documentos Entrantes de BizLink<!-- Documenti in Entrata di BizLink -->**.
+
+Podemos cerrar esta hoja, una vez importada, y luego acceder a los procedimientos de listas de precios<!-- listini -->, accesibles desde Compras > Procedimientos de Listas de Precios Proveedores<!-- Procedure Listini Fornitori --> > [Precios de Proveedor<!-- Prezzi Fornitore -->](/docs/purchase/purchase-price-lists/procedures/supplier-price).

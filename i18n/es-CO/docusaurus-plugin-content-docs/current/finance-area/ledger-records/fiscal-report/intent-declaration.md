@@ -1,27 +1,28 @@
 ---
-title: dichiarazione di intento
+title: Declaración de intención
 sidebar_position: 2
+ai_generated: true
 ---
 
-Al abrir la ventana se propone el ejercicio contable actual.
+Al abrir la ventana, se propone el ejercicio contable actual<!-- esercizio contabile attuale -->.
 
-Es posible imprimir todas las declaraciones de intención o filtrar la impresión por:
+Es posible imprimir todas las declaraciones de intención<!-- dichiarazioni di intento --> o filtrar la impresión por:
 
-**tipo dichiarazione**: Cliente o Proveedor;  
+**Tipo de Declaración<!-- Tipo Dichiarazione -->**: Cliente o Proveedor<!-- Fornitore -->;
 
-**Buscar un subcuenta de registro de cliente o proveedor (Ricercare un Sottoconto di anagrafica cliente o fornitore)**: en función de lo que se seleccione en el campo anterior;  
+**Buscar una Subcuenta<!-- Sottoconto --> de la ficha de cliente o proveedor**: según lo que se haya seleccionado en el campo anterior;
 
-**Número de nuestro protocolo de / a (Numero di ns. protocollo da / a)**.  
+**Número de nuestro protocolo desde / hasta<!-- Numero di ns. protocollo da / a -->**.
 
-Entre los elementos a imprimir, es posible variar la descripción del campo Oficina de IVA (Ufficio IVA) de - y el campo Descripción de operación (Descrizione Operazione).
+Entre los elementos a imprimir, es posible modificar la descripción del campo Oficina de IVA<!-- Ufficio IVA --> de - y el campo Descripción de la Operación<!-- Descrizione Operazione -->.
 
-La fecha de impresión propuesta es la fecha actual del sistema.
+La fecha de impresión sugerida es la fecha actual del sistema.
 
 ATENCIÓN:
 
-Hay diferentes impresiones seleccionables del menú desplegable en la esquina superior izquierda, que se pueden combinar para obtener las diferentes partes del modelo ministerial (por ejemplo, portada, detalles, límite).
+Hay varias impresiones disponibles que se pueden seleccionar desde el menú desplegable en la parte superior izquierda. Estas se pueden combinar para obtener las diferentes partes del modelo ministerial (por ejemplo: portada, detalles, plafón).
 
-| Función (Funzione) | Significado |
+| Función | Significado |
 | --- | --- |
-| Vista previa (Anteprima) | Botón para ejecutar la vista previa de impresión de las declaraciones de intención. |
-| Imprimir (Stampa) | Botón para ejecutar la impresión física de las declaraciones de intención. |
+| Vista previa<!-- Anteprima --> | Botón para realizar la vista previa de impresión de las declaraciones de intención<!-- dichiarazioni di intento -->. |
+| Imprimir<!-- Stampa --> | Botón para realizar la impresión física de las declaraciones de intención<!-- dichiarazioni di intento -->. |

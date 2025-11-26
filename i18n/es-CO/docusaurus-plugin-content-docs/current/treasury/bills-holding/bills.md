@@ -1,42 +1,43 @@
 ---
-title: effetti
+title: Efectos
 sidebar_position: 3
+ai_generated: true
 ---
 
-El formulario de búsqueda de efectos  
-- se encuentra en Tesorería > Cartera de effetti > effetti > effetti 
+El formulario de búsqueda de efectos<!-- effetti --> 
+- se encuentra en Tesorería<!-- Tesoreria --> > Cartera de Efectos<!-- Portafoglio Effetti --> > Efectos<!-- Effetti --> > Efectos<!-- Effetti -->
 
-- permite al usuario buscar los efectos emitidos anteriormente con el fin de visualizarlos, modificarlos y, eventualmente, eliminarlos. 
+- permite al usuario buscar los efectos<!-- effetti --> emitidos previamente con el fin de visualizarlos, modificarlos o eventualmente eliminarlos.
 
-Desde este formulario también es posible ingresar manualmente un nuevo efecto, pero este modo se utiliza poco en la práctica. Por lo general, se procede a través de los procedimientos de creación automática de efectos (a partir de partidas o facturas).
+Desde este formulario también es posible ingresar manualmente un nuevo efecto<!-- effetto -->, aunque este modo se utiliza poco en la práctica. Generalmente, se procede a través de los procedimientos de creación automática de efectos<!-- effetti --> (desde partidas o desde facturas).
 
-## Botones de la Ribbon Bar
+## Botones de la Ribbon Bar<!-- Pulsanti della Ribbon Bar -->
 
-> - **ricerca effetti**: Botón para buscar los efectos según los filtros de búsqueda establecidos en la cabecera del formulario.  
-> - **nuovo effetto**: Llama al formulario para ingresar un nuevo efecto.  
-> - **modifica effetto**: Permite modificar un efecto ingresado previamente.  
-> - **visualizzazione effetto**: Permite visualizar un efecto ingresado previamente.  
-> - **cancella effetto**: Elimina un efecto ingresado previamente.  
+> - **Buscar efectos<!-- Ricerca effetti -->:** Botón para buscar los efectos<!-- effetti --> según los filtros de búsqueda establecidos en el encabezado del formulario.
+> - **Nuevo efecto<!-- Nuovo effetto -->:** Llama al formulario para ingresar un nuevo efecto<!-- effetto -->.
+> - **Modificar efecto<!-- Modifica effetto -->:** Permite modificar un efecto<!-- effetto --> ingresado previamente.
+> - **Visualización de efecto<!-- Visualizzazione effetto -->:** Permite visualizar un efecto<!-- effetto --> ingresado previamente.
+> - **Eliminar efecto<!-- Cancella effetto -->:** Elimina un efecto<!-- effetto --> ingresado previamente.
 
-> La ejecución de **stampe** (*anteprima* o *stampa*) lanza, para los efectos seleccionados con el mouse (manteniendo presionada la tecla Ctrl se pueden seleccionar varios efectos al mismo tiempo), la impresión homónima presente en el [**menú de impresiones (menu stampe)**](/docs/treasury/bills-holding/reports/bill-holding-situation) del módulo.
+> La ejecución de las **impresiones<!-- stampe -->** (*Vista previa<!-- Anteprima -->* o *Imprimir<!-- Stampa -->*) lanza, con respecto a los efectos<!-- effetti --> seleccionados con el ratón (manteniendo pulsado Ctrl se pueden seleccionar varios efectos<!-- effetti --> al mismo tiempo), la impresión homónima presente en el [**menú de informes<!-- menu stampe -->**](/docs/treasury/bills-holding/reports/bill-holding-situation) del módulo
 
-> - *avviso scadenza effetti*: Carta dirigida al cliente (una página por cada efecto seleccionado) que destaca los efectos que están próximos a vencer con sus respectivos detalles.  
-> - *lettera di cumulo*: Carta dirigida al cliente que destaca las partidas o facturas incluidas en cada efecto.  
-> - *portafoglio effetti*: Imprime una lista de efectos con evidencia de los datos principales relacionados.  
-> - *situazione castelletti*: Imprime, para cada banco (relativo a los efectos seleccionados), la situación del castelletto concedido, utilizado y restante.  
+> - *Aviso de vencimiento de efectos<!-- Avviso scadenza effetti -->*: Carta dirigida al cliente (una página por cada efecto<!-- effetto --> seleccionado) que resalta los efectos<!-- effetti --> próximos a vencer junto con sus referencias
+> - *Carta de acumulación<!-- Lettera di cumulo -->*:  Carta dirigida al cliente que muestra las partidas o facturas adquiridas en cada efecto<!-- effetto --> individual
+> - *Cartera de efectos<!-- Portafoglio effetti -->:* Imprime una lista de efectos<!-- effetti --> destacando los datos principales correspondientes
+> - *Situación de los castelletti<!-- Situazione castelletti -->:* Imprime para cada banco (relacionado a los efectos<!-- effetti --> seleccionados) la situación del castelletto<!-- castelletto --> otorgado, utilizado y restante
 
-## Filtros de búsqueda
+## Filtros de búsqueda<!-- Filtri di ricerca -->
 
-- **conto**: filtro relacionado con el campo **debitore*** presente en el efecto.  
-- **Año / Tipo de efecto (Anno / Tipo effetto)**: filtros relacionados con los campos homónimos presentes en el efecto.  
-- **DE / A / fecha de vencimiento / Fecha de emisión / Número (DA / A / data scadenza / Dat emissione / Numero)**: relativos a los campos homónimos presentes en el efecto.  
-- **stati effetti**: filtro relacionado con el *stato effetto* presente dentro del efecto; este estado se modifica automáticamente según los procedimientos que se hayan ejecutado, por ejemplo, comienza como Emitido (Emesso), luego se convierte en presentado (presentato), Acreditado (Accreditato), insolvente (insoluto), etc.  
-- **divisa**: para filtrar solo efectos denominados, por ejemplo, en dólares, etc.  
-- **Plaza / ABI / CAB / Descripción del Banco (Piazza / ABI / CAB / Descrizione Banca)**: relacionados con el banco de apoyo del deudor.  
-- **Indicador de la sección Estado del Efecto (Flag della sezione Stato Effetto)**: De forma predeterminada está activo *tutti*, pero puede cambiarse seleccionando las diversas condiciones de búsqueda que, si se activan simultáneamente, ampliarán la base de búsqueda; por ejemplo, aquellos impresos + aquellos contabilizados + aquellos NO impresos... 
+- **Cuenta<!-- Conto -->:** filtro relativo al campo ***Deudor<!-- Debitore -->*** presente dentro del efecto<!-- effetto -->
+- **Año / Tipo de efecto<!-- Anno / Tipo effetto -->:** filtros relativos a los campos homónimos presentes en el efecto<!-- effetto -->
+- **DE / A / fecha de vencimiento / Fecha de emisión / Número<!-- DA / A / data scadenza / Dat emissione / Numero -->**: relativos a los campos homónimos presentes en el efecto<!-- effetto -->
+- **Estados de los efectos<!-- Stati effetti -->:** filtro relativo al *Estado del efecto<!-- Stato effetto -->* presente en el efecto<!-- effetto -->, el estado se modifica automáticamente dependiendo de los procedimientos ejecutados; por ejemplo, nace como Emitido, luego pasa a presentado, Acreditado, impagado, etc.
+- **Divisa:** para filtrar sólo efectos<!-- effetti --> denominados, por ejemplo, en dólares, etc.
+- **Plaza / ABI / CAB / Descripción del banco<!-- Piazza / ABI / CAB / Descrizione Banca -->:** relativos al banco asociado del deudor
+- **Flag de la sección Estado del Efecto<!-- Flag della sezione Stato Effetto -->:** Por defecto está activo *Todos<!-- Tutti -->*, pero puede cambiarse seleccionando varias condiciones de búsqueda que, si se activan simultáneamente, ampliarán la base de búsqueda, por ejemplo, los impresos + los contabilizados + los que NO están impresos .....
 
-## Cuadro de resultados
+## Cuadrícula de resultados<!-- Griglia dei risultati -->
 
-En este formulario, se presentan los mismos campos que se detallaron anteriormente en los filtros.
+En este formulario se presentan los mismos campos presentes en los filtros ya detallados anteriormente.
 
-También presenta los **Importes** (en divisa, por ejemplo, dólares, y en euros) del efecto (coincidentes si el efecto está denotado en euros).
+Además, muestra los **Importes** (en moneda, por ejemplo dólares, y en euros) del efecto<!-- effetto --> (coincidentes si el efecto<!-- effetto --> está denominado en euros).

@@ -1,8 +1,9 @@
 ---
-title: Registro de cliente/proveedor/agente (Anagrafica cliente/fornitore/agente)
+title: Maestra de cliente/proveedor/agente
 sidebar_position: 5
+ai_generated: true
 ---
 
-En la cabecera de los registros, es posible establecer la subcuenta de pago: esta cuenta estará asociada a las partidas contables a nombre del registro y desde aquí se utilizará en el flujo de caja para gestionar la canalización de los flujos.  
+En la cabecera de las maestras<!-- anagrafiche --> es posible configurar la subcuenta<!-- sottoconto --> de pago: esta cuenta será asociada a las partidas contables<!-- partite contabili --> destinadas a la maestra<!-- anagrafica --> y, desde aquí, utilizada en el flujo de caja<!-- cash flow --> para manejar la canalización de los flujos.
 
-Además, el campo ‘Días de retraso (Giorni ritardo)' se utiliza para calcular, a partir de la fecha de vencimiento, la fecha de cobro/pago prevista con este número de días de retraso estándar del registro.
+Además, el campo 'Días de retraso'<!-- ‘Giorni ritardo' --> se utiliza para calcular, a partir de la fecha de vencimiento<!-- data scadenza -->, la fecha prevista de cobro/pago con este número de días estándar de retraso de la maestra<!-- anagrafica -->.

@@ -1,18 +1,19 @@
 ---
-title: Impresiones de modelos Intrastat (Stampe modelli Intrastat)
+title: Impresión de modelos Intrastat
 sidebar_position: 11
+ai_generated: true
 ---
 
-Desde el formulario es posible imprimir, de acuerdo con los parámetros establecidos, los modelos intrastat creados.  
+Desde la pantalla es posible imprimir, según los parámetros configurados, los modelos Intrastat<!-- modelli intrastat --> creados.
 
-Para cada encabezado y sección **bis**/**ter**/**quater**/**quinquies**/**sexies** se creará una vista previa de impresión separada, seleccionable desde el menú desplegable antes de presionar el botón *anteprima*.  
+Para cada cabecera y sección **bis**/**ter**/**quater**/**quinquies**/**sexies** se creará una vista previa de impresión separada, seleccionable desde el menú desplegable antes de presionar el botón *Vista previa<!-- Anteprima -->*.<!-- Anteprima -->
 
-La impresión denominada **dettagli*** permite, en cambio, imprimir todas las secciones mencionadas anteriormente.  
+La impresión denominada ***Detalles<!-- Dettagli -->*** permite imprimir en cambio todas las secciones mencionadas anteriormente.<!-- Dettagli -->
 
-Paralelamente a la elección de la impresión según las secciones a imprimir, operan los filtros presentes en el formulario que hacen visibles o no visibles los modelos relacionados con las ventas o las compras y las secciones específicas.  
+En paralelo a la selección de la impresión según las secciones a imprimir, funcionan los filtros presentes en el formulario que hacen visibles o no visibles los modelos<!-- modelli --> relativos a las ventas o compras y las secciones específicas.
 
-También hay filtros por número y por fecha.  
+Además, existen filtros por número y por fecha.
 
-La combinación de todos los diversos filtros y de los diferentes informes de impresión permite procesar los datos que se desean extraer.  
+La combinación de todos los distintos filtros y de los diferentes reportes de impresión permite procesar la información que se desea extraer.
 
-La impresión no tiene ninguna influencia sobre las declaraciones intrastat (no existen bloqueos relacionados con este proceso).
+La impresión no tiene ninguna influencia sobre las declaraciones Intrastat<!-- dichiarazioni intrastat --> (no existen bloqueos vinculados a este proceso).

@@ -1,40 +1,42 @@
 ---
-title: registri iva
+title: Registros IVA
 sidebar_position: 9
+ai_generated: true
 ---
 
-La impresión de los registros IVA debe realizarse individualmente para cada registro: no se permite la impresión total de todos los registros del periodo.
+La impresión de los registros IVA<!-- registri IVA --> debe realizarse individualmente para cada registro<!-- registro -->: no se permite la impresión conjunta de todos los registros<!-- registri --> del período.
 
-**periodo iva**: Al abrir la máscara, este puede ser el mes anterior al actual en caso de un periodo mensual, o el trimestre en caso de que la periodicidad de la liquidación configurada en los parámetros de contabilidad sea trimestral;  
+**Período IVA<!-- Periodo IVA -->**: Al abrir la pantalla, este podrá ser el mes anterior al actual en caso de período mensual, o el trimestre si la periodicidad de la liquidación configurada en los parámetros de contabilidad<!-- contabilità --> es trimestral;
 
-**anno di riferimento**: por defecto se propone el año en curso;  
+**Año de referencia<!-- Anno di riferimento -->**: se propone por defecto el año en curso;
 
-**Registro IVA a imprimir (Registro IVA da stampare)**: seleccionar el registro a imprimir;  
+**Registro IVA a imprimir<!-- Registro IVA da stampare -->**: seleccione el registro<!-- registro --> a imprimir;
 
-**divisione**: generalmente no se debe utilizar, especialmente si no hay varias divisiones presentes;  
+**División<!-- Divisione -->**: normalmente no debe utilizarse, especialmente si no hay varias divisiones;
 
-**riepilogativo**: el indicador permite imprimir, en el registro seleccionado a través del campo correspondiente, un resumen de los registros y los códigos IVA relacionados movimentados en el mes o trimestre seleccionado;  
+**Resumen<!-- Riepilogativo -->**: la casilla permite imprimir, en el registro<!-- registro --> seleccionado mediante el campo correspondiente, un resumen de los registros<!-- registri --> y los códigos IVA<!-- codici iva --> correspondientes gestionados en el mes o trimestre seleccionado;
 
-Los campos siguientes muestran cuál es el último número de la página impresa para el registro establecido: estos datos se toman de la tabla de registri iva.
+Los siguientes campos muestran cuál es el último número de la página impresa para el registro<!-- registro --> configurado: este dato se toma de la tabla de registros IVA<!-- tabella Registri IVA -->.
 
-El indicador **visualizza intestazione** está configurado por defecto: se desactivaba cuando se debían validar los formularios DDT en los que se imprimen los registros, un requisito que ya no se prevé. Con este indicador se menciona el nombre del registro IVA, de la empresa y el número/año de las páginas.
+La casilla **Mostrar encabezado<!-- Visualizza intestazione -->** ya está marcada por defecto: se quitaba cuando era necesario certificar los módulos DDT en los cuales imprimir los registros<!-- registri -->, una obligación que ya no existe. Con esta casilla se muestra el nombre del registro IVA, de la empresa y el número/año de las páginas.
 
-El indicador **visualizza tipo documento** añadirá, en los referencias de los documentos, también el tipo del documento: esto puede ser útil en caso de que las facturas de venta tengan múltiples numeraciones que correspondan al mismo registro IVA.
+La casilla **Mostrar tipo de documento<!-- Visualizza tipo documento -->** añadirá, en las referencias de los documentos, también el tipo de documento: puede ser útil si las facturas de venta tienen varias numeraciones que pertenecen al mismo registro IVA.
 
-**registrazione titolo**: cuando el indicador de Resumen (Riepilogativo) no está activo, es posible imponer un título a la impresión diferente del nombre del registro IVA que aparece por defecto.
+**Título de la impresión<!-- Registrazione titolo -->**: cuando la casilla Resumen<!-- Riepilogativo --> no está activa es posible imponer un título a la impresión diferente al nombre del registro IVA que aparece por defecto.
 
-El título del registro se toma del nombre del registro IVA y será el que se muestre en la impresión con la opción 'Mostrar encabezado (Visualizza intestazione)'.
+El título del registro<!-- registro --> se toma del nombre del registro IVA y será el que se mostrará en la impresión con la opción 'Mostrar encabezado<!-- Visualizza intestazione -->'.
 
-**Mensual / Trimestral (Mensile / Trimestrale)**: los dos indicadores recuperan la configuración de la periodicidad IVA definida en los parámetros de contabilidad para memoria, pero la configuración no se puede modificar desde aquí;  
+**Mensual / Trimestral<!-- Mensile / Trimestrale -->**: las dos casillas reflejan la configuración de la periodicidad IVA definida en los parámetros de contabilidad<!-- contabilità --> como referencia, pero la configuración no puede modificarse desde aquí;
 
-Activando el indicador **definitiva**, el proceso imprimirá los registros en definitivo bloqueando el periodo seleccionado para futuras modificaciones: también se desactivará el filtro por división. La ejecución de la vista previa de impresión en definitivo no bloqueará el periodo ni actualizará los contadores: solo la ejecución del proceso de impresión física operará el bloqueo del periodo/registro en contabilidad y actualizará el contador de páginas de la tabla de registri iva (y no es relevante que el proceso de impresión tenga éxito o no, podría ser incluso una impresión en archivo). Al realizar la impresión o la vista previa, la aplicación verificará si hay huecos en la protocolización y si se ha respetado el orden cronológico, bloqueando la impresión definitiva a menos que para el registro IVA se haya desactivado el indicador de control en la tabla. La impresión definitiva NO es necesaria para proceder con la impresión de la liquidación IVA periódica.
+ 
 
-| Función (Funzione) | Significado (Significato) |
+Al activar la casilla **Definitiva**, el procedimiento imprimirá los registros<!-- registri --> de forma definitiva bloqueando el período seleccionado para posteriores modificaciones: además se deshabilitará el filtro por división<!-- divisione -->. La ejecución de la vista previa de impresión en definitiva no bloqueará el período ni actualizará los contadores: solo la ejecución del proceso de impresión física bloqueará el período/registro<!-- periodo/registro --> en la contabilidad<!-- contabilità --> y actualizará el contador de páginas de la tabla de registros IVA<!-- tabella Registri IVA --> (y no es relevante si el proceso de impresión se completa correctamente o no, podría ser incluso una impresión en archivo). Ejecutando la impresión o la vista previa, la aplicación verificará si hay vacíos en la protocolización y si se ha respetado el orden cronológico, bloqueando la impresión definitiva a menos que para el registro IVA se haya desactivado la casilla de control en la tabla<!-- tabella -->. La impresión definitiva NO es necesaria para proceder a la impresión de la liquidación IVA periódica.
+
+| Función | Significado |
 | --- | --- |
-| Vista Previa (Anteprima) | Botón para ejecutar la vista previa de impresión del registro IVA. |
-| Impresión (Stampa) | Botón para ejecutar la impresión física del registro IVA. |
+| Vista previa<!-- Anteprima --> | Botón para ejecutar la vista previa de impresión del registro IVA. |
+| Imprimir<!-- Stampa --> | Botón para ejecutar la impresión física del registro IVA. |
 
-
-:::important Vea También (Vedi Anche)
-[**TUTORIALS DE VIDEO SOBRE IMPRESIONES FISCALES (VIDEO TUTORIALS SULLE STAMPE FISCALI)**](/docs/video/finance/intro)
+:::important Ver también<!-- Vedi Anche -->
+[**VIDEO TUTORIALES SOBRE IMPRESIONES FISCALES**](/docs/video/finance/intro)
 :::

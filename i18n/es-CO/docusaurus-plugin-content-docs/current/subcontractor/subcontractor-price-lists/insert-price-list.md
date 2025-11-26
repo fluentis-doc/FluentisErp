@@ -1,101 +1,102 @@
 ---
-title: Inserción de Listas de Trabajo (Inserimento Listini di Conto lavoro)
+title: Inserción de listas de precios de cuenta de terceros
 sidebar_position: 1
+ai_generated: true
 ---
 
-Desde esta aplicación será posible ingresar las listas de trabajo. 
+Desde esta aplicación será posible ingresar las listas de precios de cuenta de terceros<!-- conto lavoro -->.
 
 ## Sección superior
 
-En la sección superior es necesario ingresar el **fornitore**.  
-En el formulario de ingreso se proponen automáticamente los valores de los campos **da data validità** (se sugiere la fecha actual para el inicio de validez) y la [Moneda (Divisa)](/docs/guide/common/glossary/glossary-intro#currency) (se sugiere la moneda de la empresa, pero puede ser modificada).  
-Se reporta un eventual **sconto listino da anagrafica** y es posible ingresar **note**.
+En la sección superior es necesario ingresar el **Proveedor**.
+En el formulario de ingreso se proponen automáticamente los valores de los campos **Desde fecha de validez** (se propone la fecha actual para el inicio de validez) y la [Divisa](/docs/guide/common/glossary/glossary-intro#currency) (se propone la divisa de la empresa, pero pueden ser modificados).
+Se muestra un eventual **Descuento de lista desde maestro de datos** y es posible ingresar **Notas**.
 
-En la sección superior también está el filtro para buscar los Artículos dentro de la lista.
+En la sección superior también está presente el filtro para buscar los Artículos dentro de la lista de precios<!-- listino -->.
 
 ## Artículos
 
-En este formulario se indicarán los artículos y eventuales descuentos asociados a esta lista.
+En este formulario se indicarán los artículos<!-- articoli --> y eventuales descuentos asociados a esta lista de precios<!-- listino -->.
 
-**Clase/Artículo/Descripción (Classe/Articolo/Descrizione)**: indicar el código del artículo a incluir en la lista. La descripción se recuperará automáticamente gracias al código del artículo. Para insertar un nuevo artículo en la cuadrícula, basta con posicionarse sobre la fila para completar los diversos datos o utilizar el botón *nuovo articolo* presente en la barra de cinta.
+**Clase/Artículo/Descripción**: indicar el código del artículo<!-- articolo --> a incluir en la lista de precios<!-- listino -->. La descripción se recuperará automáticamente gracias al código del artículo<!-- articolo -->. Para ingresar un nuevo artículo en la cuadrícula, simplemente posicionarse en la fila para completar los distintos datos o utilizar el botón *Nuevo artículo* presente en la barra de herramientas.
 
-**Código/Descripción variante (Codice/Descrizione variante)**: sirve si además del código del artículo, la variante distingue un artículo de otro.
+**Código/Descripción de variante**: se utiliza si, además del código de artículo<!-- articolo -->, la variante también distingue un artículo de otro.
 
-**codice fase**: es posible asociar al artículo una eventual [Fase externa (Fase esterna)](/docs/configurations/tables/production/standard-phases) que será realizada por el contratista. De este modo, se puede definir un precio para cada fase del mismo artículo; se completarán automáticamente los campos **fase** y **sottofase**.
+**Código de fase**: es posible asociar al artículo<!-- articolo --> una eventual [Fase externa](/docs/configurations/tables/production/standard-phases) que será realizada por el tercero. De esta forma se puede definir un precio para cada fase del mismo artículo<!-- articolo -->; los campos **Fase** y **Subfase** se completarán automáticamente;
 
-**unità di misura**: puede ser la de gestión del artículo o una de sus unidades de medida alternativas.
+**Unidad de medida**: puede ser la utilizada en la gestión del artículo<!-- articolo --> o alguna de sus unidades de medida alternativas.
 
-**quantità**: propuesta igual a 1, es la cantidad de referencia del precio; si es diferente de 1, cuando se debe calcular el precio, se divide por la cantidad de la lista.
+**Cantidad**: se propone igual a 1, es la cantidad de referencia para el precio; si es diferente de 1, al calcular el precio este se dividirá por la cantidad de la lista de precios<!-- listino -->.
 
-**prezzo**: referido a la moneda de la lista.
+**Precio** referente a la divisa de la lista de precios<!-- listino -->.
 
-**iva**: este campo se recupera. Si no está configurado en el cliente, será necesario completar este campo con el código de IVA.
+**IVA**: este campo se recupera automáticamente. Si en el cliente no está configurado, será necesario completar este campo con el código de IVA.
 
-**prezzo ivato**: el sistema calcula este precio a partir del precio y de la tasa del código de IVA ingresado.
+**Precio con IVA**: el sistema calcula este precio a partir del precio y del tipo de IVA ingresado.
 
-**Altura/Anchura/Profundidad (Altezza/Larghezza/Profondità)**: datos informativos relativos a la lista. El sistema no utiliza estos campos para eventuales elaboraciones.
+**Altura/Anchura/Profundidad**: datos informativos relativos a la lista de precios<!-- listino -->. El sistema no utiliza estos campos para eventuales procesos.
 
-Para cada artículo de la lista es posible ingresar algunas tipologías de descuento como se explica a continuación.
+Para cada artículo<!-- articolo --> de la lista de precios<!-- listino --> es posible ingresar algunos tipos de descuento, como se explica a continuación.
 
-Se indica el **tipo scaglione** en el campo homónimo, mientras que en los campos siguientes se reportarán los datos relativos a los artículos ingresados en la lista.
+Se indica el **Tipo de tramo** en el campo con el mismo nombre, mientras que en los campos siguientes se mostrarán los datos relativos a los artículos<!-- articoli --> incluidos en la lista de precios<!-- listino -->.
 
-Estos escalones están indicados en la tabla *Tipos de Descuentos (Tipi Sconti)*.
+Estos tramos se indican en la tabla *Tipos de Descuentos*.
 
-En la parte derecha del formulario encontramos una cuadrícula en la que están indicados todos los posibles descuentos para este artículo. Estas se completan solo al seleccionar un artículo presente en la lista.
+En la parte derecha del formulario encontramos una cuadrícula en la que se indican todos los posibles descuentos para este artículo<!-- articolo -->. Estos solo se completan seleccionando un artículo<!-- articolo --> presente en la lista de precios<!-- listino -->.
 
-### Descuentos
+### Descuentos<!-- Sconti -->
 
-Estos descuentos son descuentos fijos que se reportan en los documentos.
+Estos descuentos son descuentos fijos que se reflejan en los documentos.
 
-A continuación, la correcta cumplimentación de esta cuadrícula:
+A continuación, la forma correcta de completar esta cuadrícula:
 
-**N**: poblado por el sistema, indica el orden en que se consideran los descuentos.
+**N**: completado por el sistema, indica el orden en el que se consideran los descuentos.
 
-**Tipo de descuento/Descripción (Tipo sconto/Descrizione)**: seleccionar el tipo de descuento entre los presentes. Estándar se prevén 3 tipologías diferentes: *Descuento comercial (Sconto commerciale)*, *sconto a quantità* y *sconto a valore*.
+**Tipo de descuento/Descripción**: seleccionar el tipo de descuento de entre los presentes. De forma estándar se contemplan 3 tipos diferentes: *Descuento comercial*, *Descuento por cantidad* y *Descuento por valor*.
 
-**valore**: establecer el porcentaje de descuento a aplicar.
+**Valor**: establecer el porcentaje de descuento a aplicar.
 
-**priorità**: esta prioridad se reporta desde las configuraciones ejecutadas en la tabla [Tipos de descuentos (Tipi sconti)](/docs/configurations/tables/general-settings/discount-types).
+**Prioridad**: esta prioridad se toma de las configuraciones realizadas en la tabla [Tipos de descuentos](/docs/configurations/tables/general-settings/discount-types).
 
-**casc./imp.**: se poblado a partir del valor ingresado en la tabla Tipos de descuentos.
+**Casc./Imp.**: se completa a partir del valor ingresado en la tabla Tipos de descuentos.
 
-### Descuentos por cantidad
+### Descuentos por cantidad<!-- Sconti a quantità -->
 
-Esta tipología de descuento puede tener diferentes porcentajes dependiendo de la cantidad.
+Este tipo de descuento puede tener diferentes porcentajes según la cantidad.
 
-**tipo**: establecer el tipo de descuento que deberá ser *sconto a quantità*. Esta descripción se reportará luego en la impresión.
+**Tipo**: establecer el tipo de descuento que debe ser *Descuento por cantidad*. Esta denominación aparecerá posteriormente en la impresión.
 
-**quantità**: establecer la cantidad para la cual se activará el descuento.
+**Cantidad**: establecer la cantidad a partir de la cual se activará el descuento.
 
-**percentuale**: ingresar el porcentaje de descuento al alcanzar la cantidad indicada.
+**Porcentaje**: ingresar el porcentaje de descuento al alcanzar la cantidad indicada
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image07.png)
 
-### Descuentos por Valor
+### Descuentos por valor<!-- Sconti a Valore -->
 
-En esta tipología, el descuento se activa cuando se alcanza un determinado importe por línea.
+En este tipo el descuento se aplica cuando se alcanza un determinado importe por línea.
 
-**tipo**: establecer el tipo de descuento que deberá ser *sconto a valore*.
+**Tipo**: establecer el tipo de descuento que debe ser *Descuento por valor*.
 
-**valore**: establecer un valor superado el cual se activa el descuento.
+**Valor**: establecer un valor a partir del cual se aplique el descuento.
 
-**percentuale**: ingresar el porcentaje de descuento al alcanzar el valor.
+**Porcentaje**: ingresar el porcentaje de descuento al alcanzar el valor.
 
 ![](/img/it-it/sales/sales-price-list/insert-sales-price-list/image09.png)
 
 ### Precio por cantidad
 
-En este caso, al alcanzar una cierta cantidad, el precio unitario cambia.
+En este caso, al alcanzar cierta cantidad, el precio unitario cambia.
 
-**quantità**: establecer un valor superado el cual se activa el precio "personalizado".
+**Cantidad**: establecer un valor a partir del cual se aplique el precio "personalizado".
 
-**prezzo unitario**: ingresar el precio unitario para la cantidad ordenada.
+**Precio unitario**: ingresar el precio unitario para la cantidad ordenada.
 
-Estos descuentos se sumarán a otros eventuales descuentos presentes.
+Estos descuentos se sumarán a otros descuentos existentes.
 
 ### Notas
 
-A nivel informativo es posible ingresar notas relacionadas con un tipo particular de descuentos.
+A nivel informativo es posible ingresar notas vinculadas a un tipo particular de descuentos.
 
 ### Documentos adjuntos
 

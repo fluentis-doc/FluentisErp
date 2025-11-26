@@ -1,58 +1,59 @@
 ---
-title: richiesta ferie/permessi
+title: Solicitud de Vacaciones/Permisos
 sidebar_position: 4
+ai_generated: true
 ---
 
-La solicitud de Vacaciones/Permisos permite al usuario solicitar directamente desde Fluentis los días u horas de vacaciones, permisos o enfermedad.  
-La información requerida y que debe ingresar el usuario es:
+La solicitud de Vacaciones/Permisos<!-- Richiesta Ferie/Permessi --> permite al usuario solicitar directamente desde Fluentis los días u horas de vacaciones, permisos o enfermedad. 
+La información requerida e ingresada por parte del usuario es la siguiente:
 
-**Desde fecha/Hasta fecha (Da data/A data)**: se ingresa el período de tiempo, en días y horas, para el cual se desea hacer la solicitud; al dejar 00:00 como hora de inicio y fin, en la fase de generación de la declaración de actividades se utilizarán como hora de inicio y fin aquellas configuradas en el turno del recurso;  
+**Desde fecha/Hasta fecha<!-- Da data/A data -->**: se ingresa el periodo de tiempo, en días y horas, para el que se desea realizar la solicitud; dejando 00:00 como hora de inicio y fin, en la fase de generación de la declaración de actividad se utilizarán como hora de inicio y fin las que están configuradas en el turno de la recurso<!-- risorsa -->; 
 
-**risorsa**: se propone el recurso del usuario que accede a Fluentis;  
+**Recurso<!-- Risorsa -->**: se propone el recurso<!-- risorsa --> del usuario que accede a Fluentis; 
 
-**motivo**: contiene la lista de las causas de ausencia configuradas para la empresa.  
+**Motivo**: contiene la lista de causali<!-- causali --> de ausencia configuradas para la compañía. 
 
-**gestito**: indicador que muestra si la solicitud ya ha sido gestionada. Se puede habilitar manualmente o al finalizar el procedimiento realizado con el botón "Confirmar Período (Conferma Periodo)"  
+**Gestionado<!-- Gestito -->**: marca que indica si la solicitud ya fue gestionada. Se puede habilitar manualmente o al finalizar el procedimiento realizado con el botón "Confirmar periodo<!-- Conferma Periodo -->"
 
-**data creazione**: es la fecha de creación de la solicitud;  
+**Fecha de creación<!-- Data creazione -->**: es la fecha de creación de la solicitud;
 
-**Usuario de creación (Utente di creazione)**: contiene el usuario que ha creado la solicitud y se propone el mismo usuario que accede;  
+**Usuario de creación<!-- Utente di creazione -->**: contiene el usuario que creó la solicitud y se propone el mismo usuario que accede;
 
-**manager**: lista de usuarios entre los cuales seleccionar la figura del gerente para el recurso; dato no obligatorio;  
+**Manager**: lista de usuarios entre los cuales seleccionar la figura de manager para el recurso<!-- risorsa -->; dato no obligatorio;
 
-**team leader**: lista de usuarios entre los cuales seleccionar la figura del líder del equipo para el recurso; dato no obligatorio;  
+**Team Leader**: lista de usuarios entre los cuales seleccionar la figura de team leader para el recurso<!-- risorsa -->; dato no obligatorio;
 
-**email**: se propone el correo electrónico del usuario que realiza la solicitud;  
+**Correo electrónico<!-- Email -->**: se muestra el correo electrónico del usuario que realiza la solicitud;
 
-**email cc**: dirección de correo electrónico que se incluirá en CC en el correo automático de aprobación de la solicitud; si se selecciona un líder de equipo y/o gerente, sus respectivos correos electrónicos se incluirán en CC;  
+**Correo electrónico CC<!-- Email CC -->**: dirección de correo que se incluirá en copia en el correo automático de aprobación de la solicitud; si se selecciona team leader y/o manager, sus correos electrónicos respectivos se incluirán en copia;
 
-**soggetto**: descripción de la solicitud;  
+**Asunto<!-- Soggetto -->**: descripción de la solicitud;
 
-**nota**: es posible detallar eventualmente la solicitud;  
+**Nota**: es posible detallar, si se desea, la solicitud;
 
-**risultati**: posibles resultados si la solicitud se gestiona a través de un flujo de trabajo (por ejemplo, confirmada, cancelada, motivo de cancelación, etc.)  
+**Resultados<!-- Risultati -->**: eventuales resultados si la solicitud es gestionada mediante workflow (ej. confirmada, cancelada, motivo de cancelación, etc.)
 
-En la barra de ribbon están presentes los siguientes botones:  
+En la cinta de opciones se encuentran los siguientes botones:
 
-**conferma periodo**: al hacer clic en el botón se abrirá la pantalla para ingresar el proyecto de referencia, la categoría de actividad y el indicador para crear un período de vacaciones en la declaración de actividades con los datos recién ingresados.  
-A la recurso de referencia es posible enviar una notificación por correo electrónico.  
-Al finalizar el procedimiento, se habilitará el indicador "Gestionado (Gestito)"  
+**Confirmar periodo<!-- Conferma periodo -->**: al pulsar el botón se abrirá la pantalla para ingresar el proyecto de referencia, la categoría de actividad y la marca para Crear un periodo de vacaciones en la declaración de actividad con los datos recién ingresados.
+A la recurso<!-- risorsa --> de referencia se le puede enviar una notificación por correo electrónico.
+Al finalizar el procedimiento se habilitará la marca "Gestionado<!-- Gestito -->"
 
-**rollback del periodo**: permite eliminar las actividades generadas por la confirmación del período y restaurar el indicador Gestionado.  
+**Rollback del periodo**: permite eliminar las actividades generadas por la confirmación del periodo y restaurar la marca Gestionado<!-- Gestito -->.
 
-**apri il calendario delle risorse**: abre la visualización del calendario que permite seleccionar diferentes recursos y evaluar las citas presentes.  
+**Abrir el calendario de recursos<!-- Apri il calendario delle risorse -->**: Abre la visualización de calendario que permite seleccionar diferentes recursos<!-- risorse --> y evaluar los compromisos presentes.
 
-Posibles escenarios relacionados con la Confirmación del período con superposiciones:  
+Posibles escenarios relativos a la Confirmación de periodo con solapamientos: 
 
-- si la solicitud de vacaciones ya tiene el indicador "Gestionado (Gestito)" habilitado: se hará la pregunta "Solicitud ya gestionada, ¿deseas proceder nuevamente?"  
-Si se responde no, todo el proceso quedará bloqueado.  
-Si se responde sí, se volverán a ingresar las declaraciones de actividad de vacaciones y se sobrescribirán aquellas generadas anteriormente por la solicitud de vacaciones (si están presentes).  
+- la solicitud de vacaciones ya tiene la marca "Gestionado<!-- Gestito -->" habilitada: se generará la advertencia "Solicitud ya gestionada, ¿quieres proceder nuevamente?" 
+Si responde no, se detendrá todo el proceso.
+Si responde sí, se volverán a insertar las declaraciones de actividad de vacaciones y se sobrescribirán aquellas generadas anteriormente por la solicitud de vacaciones (si las hay).
 
-- si la solicitud de vacaciones tiene el indicador "Gestionado (Gestito)" deshabilitado pero existen otras declaraciones de actividad en el mismo período:  
-"Las actividades se superponen: *detalle de actividades* - *vacaciones* ¿Deseas continuar?"  
+- la solicitud de vacaciones tiene la marca "Gestionado<!-- Gestito -->" deshabilitada pero existen otras declaraciones de actividad en el mismo periodo: 
+"Las actividades se solapan: *detalle de actividades* - *vacaciones* ¿Quieres continuar?"
 
-Si se responde Sí: se generarán todas las declaraciones de actividad para el período de vacaciones solicitado.  
+Respondiendo Sí: se generarán todas las declaraciones de actividad para el periodo de vacaciones solicitado
 
-Si se responde No: solo se generarán las declaraciones de actividad para los días sin otras declaraciones de actividad presentes.  
+Respondiendo No: solo se generarán las declaraciones de actividad para los días sin otras declaraciones de actividad presentes
 
-Si en el día hubiera presente incluso solo una declaración de actividad para un horario laboral parcial, el día será omitido y no se registrarán vacaciones.
+Si en el día también existiera al menos una declaración de actividad para un horario laboral parcial, ese día igualmente será omitido y no se insertarán vacaciones.

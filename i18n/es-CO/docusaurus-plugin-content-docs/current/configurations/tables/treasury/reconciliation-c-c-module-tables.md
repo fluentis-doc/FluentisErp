@@ -1,6 +1,7 @@
 ---
-title: Tablas del módulo de Reconciliación C/C (Tabelle modulo Riconciliazione C/C)
+title: Tablas del módulo de Conciliación C/C
 sidebar_position: 6
+ai_generated: true
 ---
 
-No hay tablas específicas del módulo en cuestión.
+No existen tablas específicas para el módulo en cuestión.

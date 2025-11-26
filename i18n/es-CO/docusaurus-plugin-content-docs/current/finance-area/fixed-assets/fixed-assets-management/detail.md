@@ -1,47 +1,51 @@
 ---
-title: dettaglio
+title: Detalle
 sidebar_position: 1
+ai_generated: true
 ---
 
-**stato cespite**: se gestiona automáticamente en función de las operaciones relacionadas con el activo y no debe forzarse. En caso de un activo previo, al ingresar también el fondo de amortización, el estado pasará a Parcialmente/Totalmente amortizado. Para la correcta inserción de un activo previo, consulte [**el anexo del artículo sobre el registro contable de un activo**](/docs/finance-area/ledger-records/records/ledger-record).
+**Estado del activo fijo<!-- Stato cespite -->**: se gestiona automáticamente en base a las operaciones vinculadas al activo fijo<!-- cespite --> y no debe forzarse manualmente. En caso de un activo fijo anterior<!-- cespite pregresso -->, al ingresar también el fondo de amortización, el estado pasará a Parcialmente/Totalmente amortizado. Para la inserción correcta de un activo fijo anterior, consulte [**el anexo al artículo sobre el registro contable de un activo fijo**.](/docs/finance-area/ledger-records/records/ledger-record)<!-- l'allegato all'articolo sulla registrazione contabile di un cespite -->
 
-La **fecha de inicio de actividad (data d'inizio attività)**, propuesta como la fecha actual, es la fecha en la cual el activo ha entrado efectivamente en uso en la empresa: solo a partir de esta fecha será posible amortizar el activo. La **fecha de fin de actividad (data di fine attività)** normalmente no debe configurarse a menos que haya casos especiales para bloquear el cálculo de la amortización y ya no visualizar el activo en el libro de activos; en la gestión normal, al completar la amortización residual, el activo no será amortizado de todos modos. Las **fechas** relativas a las **garantías** tienen una función informativa no relacionada con ningún automatismo.
+La **fecha de inicio de actividad<!-- data d'inizio attività -->**, propuesta como la fecha actual, es la fecha en la que el activo fijo<!-- cespite --> entra efectivamente en uso en la empresa: solo a partir de esta fecha será posible amortizar el activo fijo<!-- cespite -->. La **fecha de fin de actividad<!-- data di fine attività -->** normalmente no debe establecerse salvo en casos particulares para bloquear el cálculo de la amortización y dejar de mostrar el activo fijo<!-- cespite --> en el libro de activos fijos; en la gestión normal, de hecho, al completarse la amortización residual, el activo fijo<!-- cespite --> ya no se amortizará. Las **fechas<!-- date -->** relativas a las **garantías<!-- garanzie -->** son solo informativas y no están vinculadas a ninguna automatización.
 
-En el campo **cespite** se reporta automáticamente la cuenta patrimonial de referencia para la categoría de activo seleccionada; el siguiente código del proveedor no es gestionado automáticamente por el programa, ya que los proveedores y clientes de referencia de las diversas operaciones se indicarán específicamente dentro de estas. La subcuenta industrial se refiere en detalle al plan de cuentas industrial, que normalmente no se utiliza.
+En el campo **Activo fijo<!-- Cespite -->** se muestra automáticamente la subcuenta patrimonial de referencia para la categoría de activo fijo<!-- categoria cespite --> seleccionada; el código del proveedor siguiente no se gestiona automáticamente por el programa, ya que los proveedores y clientes de referencia en las distintas operaciones deben indicarse específicamente dentro de ellas. La subcuenta industrial hace referencia al detalle del plan de cuentas industrial, normalmente no utilizado.
 
-El campo **ubicazione** hace referencia a la tabla homónima y sirve para guardar dónde se encuentra físicamente el activo (por ejemplo, una sede empresarial) mientras que **matricola** es un campo de texto libre, donde anotar la ubicación y la matrícula del activo; el código **dipendente** puede permitir almacenar el sujeto que utiliza el activo.
+El campo **Ubicación<!-- Ubicazione -->** hace referencia a la tabla homónima y sirve para guardar dónde se encuentra físicamente el activo fijo<!-- cespite --> (por ejemplo, una sede empresarial), mientras que **Matrícula<!-- Matricola -->** es un campo de texto libre donde anotar la ubicación y la matrícula del activo fijo<!-- cespite -->; el código **empleado<!-- dipendente -->** puede usarse para guardar la persona que usa el activo fijo<!-- cespite -->.
 
-Dependiendo de la configuración de los parámetros (Configuración > Utilidades > Parámetros de Activos), también puede ser visible un **porcentaje de amortización** civil 'personalizado' para el activo individual, que se utilizará prioritariamente en comparación con el de la categoría a la que pertenece, al igual que la unidad de medida para las cantidades valoradas en la ficha del activo.
+Según la configuración de los parámetros (Configuración > Utilidades > Parámetros Activos Fijos<!-- Configurazione > Utilità > Parametri Cespiti -->), es posible ver adicionalmente un **porcentaje de amortización<!-- percentuale di ammortamento -->** fiscal ‘personalizado’ para cada activo fijo<!-- cespite --> individual, que tendrá prioridad sobre el de la categoría a la que pertenece, así como la unidad de medida para las cantidades valoradas en la ficha del activo fijo<!-- scheda cespite -->.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image01.png)
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image02.png)
 
+ 
 
-En el campo **tipi deducibilità** se puede asociar al activo individual su tipo prioritario de deducibilidad fiscal de las amortizaciones. La combo box remite a la tabla específica donde se codifican el código y la descripción de los posibles tipos de deducibilidad, y en la cuadrícula inferior la correspondiente porcentaje de deducibilidad que se utilizará, durante el cálculo de la cuota de amortización, para calcular la cuota deducible fiscalmente. Los campos de fecha de inicio / fecha de fin permiten gestionar eventuales cambios de alícuota manteniendo un registro de los anteriores.
+En el campo **Tipos de Deducibilidad<!-- Tipi Deducibilità -->** se puede asignar al activo fijo<!-- cespite --> su tipo prioritario de deducibilidad fiscal de las amortizaciones. El desplegable enlaza con la tabla específica donde codificar el código y la descripción de los posibles tipos de deducibilidad y en la cuadrícula inferior el porcentaje de deducibilidad que se utilizará durante el cálculo de la cuota de amortización para calcular la parte fiscalmente deducible. Los campos de fecha de inicio / fecha de fin permiten gestionar posibles cambios de tasa manteniendo el historial.
 
-La sección de **centri di costo**: permite atribuir un porcentaje de valorización automática de las amortizaciones a los diversos centros de costos definidos en la empresa. Para habilitar su lectura, es necesario activar, dentro del formulario Parámetros > Administración > Parámetros de activos, el **indicador de habilitación de centro contable (flag Abilitazione centro contabilità)**.
+La sección de **Centros de costo<!-- Centri di costo -->**: permite atribuir un porcentaje de valoración automática de las amortizaciones a los diferentes centros de costo definidos en la empresa.
+Para habilitar su lectura es necesario activar, dentro del formulario Parámetros > Administración > Parámetros activos fijos<!-- Parametri > Amministrazione > Parametri cespiti -->, la **casilla de habilitación de centro contable<!-- flag Abilitazione centro contabilità -->**.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image03.png)
 
+ 
 
-Luego hay una serie de casillas de verificación visibles al abrir el Expander Datos Extra:
+Luego hay una serie de casillas de verificación visibles abriendo el Expander Extra Data:
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image04.png)
 
+ 
 
-el estado del activo **in uso** (si el indicador no está presente, el activo no podrá ser amortizado), el estado del activo **usato** (si el indicador está activado, la amortización anticipada se aplicará solo el primer año de compra y el indicador de Amortización del primer año (presente en la tabla de **[Categorías de activos (Categorie cespiti)](/docs/configurations/tables/finance/fixed-asset-category)**) no tendrá efecto, por lo que los porcentajes de aplicación de las amortizaciones del primer año no serán reducidos); 
+el valor por defecto del activo fijo<!-- cespite --> **en uso** (si la casilla no está marcada, el activo fijo<!-- cespite --> no podrá ser amortizado), el estado del activo fijo<!-- cespite --> **usado** (si la casilla está marcada, la amortización anticipada solo se aplicará el primer año de compra y la casilla Amortización primer año (presente en la tabla de ** [Categorías activos fijos](/docs/configurations/tables/finance/fixed-asset-category) **) no tendrá efecto, por lo que los porcentajes de aplicación de la amortización del primer año no se reducirán); 
 
-**in manutenzione** significa que el activo debe ser contabilizado en el informe de mantenimiento; 
+**En mantenimiento** significa que el activo fijo<!-- cespite --> debe ser incluido en el informe de mantenimientos; 
 
-**cessato** es un indicador activo solo para categorías de activos intangibles y se utiliza para excluir su impresión en el libro de activos en caso de que el valor patrimonial haya sido retirado del balance (amortización directa en cuenta y no en fondo); 
+**Dado de baja** es una casilla activa solo para categorías de activos fijos intangibles y sirve para excluirlo de la impresión en el libro de activos fijos en caso de que el valor patrimonial haya sido dado de baja del balance (amortización directa en cuenta y no en fondo); 
 
-**Amortización total (Amm. Totale)** permite atribuir al activo la amortización del 100% directamente en el primer año: al guardar el activo, el ERP realizará una verificación de la corrección de esta configuración en relación con el límite establecido en la categoría de activo; será visible el estado del activo impreso o no, lo que indicará la no modificabilidad de las referencias de cabecera del activo en caso de que ya haya sido incluido en una impresión definitiva del libro de activos amortizables;
+**Amortización total** permite asignar al activo fijo<!-- cespite --> el 100% de la amortización directamente en el primer año: al guardar el activo fijo<!-- cespite --> en el ERP se verificará la corrección de esta configuración en función del límite definido en la categoría de activo fijo<!-- categoria cespite -->; será visible el estado del activo fijo<!-- cespite --> impreso o no, lo que indicará la no modificabilidad de los datos principales en caso de que ya haya sido incluido en una impresión definitiva del libro de activos fijos amortizables;
 
-Para concluir, los indicadores **Ricavometro** y **Studi di settore** sirven para identificar los activos a considerar para estos requisitos fiscales.
+Finalmente, las casillas **Ricavómetro** y **Estudios sectoriales** sirven para identificar los activos fijos<!-- cespiti --> a considerar para estos requisitos fiscales.
 
-
-| Función (Funzione) | Significado (Significato) |
+| Función | Significado |
 | --- | --- |
-| Guardar (Salva) | Guarda el activo, obligatorio para asignar un número al activo y activar las diversas pestañas. |
-|  [Documentos (Documenti)](/docs/guide/common/operations-with-data/document-manager)  | Gestión del archivo documental asociado al formulario en uso. |
+| Guardar<!-- Salva --> | Guarda el activo fijo<!-- cespite -->, obligatorio para asignar un número al activo fijo<!-- cespite --> y activar las diversas pestañas. |
+|  [Documentos](/docs/guide/common/operations-with-data/document-manager)  | Gestión del archivado documental asociado a la ventana en uso. |

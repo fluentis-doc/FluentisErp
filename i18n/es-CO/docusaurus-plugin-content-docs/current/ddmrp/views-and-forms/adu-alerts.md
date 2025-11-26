@@ -1,16 +1,17 @@
 ---
-title: Alarmas de consumo medio diario (Allarmi consumo medio giornaliero)
+title: Alarmas de consumo medio diario
 sidebar_position: 7
+ai_generated: true
 ---
 
-Este reporte permite verificar si el consumo medio diario (ADU) de algún artículo ha variado en exceso durante un determinado periodo de tiempo.
+Este informe permite verificar si el consumo medio diario (ADU<!-- ADU -->) de algún artículo ha variado excesivamente durante un determinado periodo de tiempo.
 
-Existe un procedimiento cuya ejecución debe programarse automáticamente, que analiza todos los buffers Ddmrp en todas las unidades logísticas y almacena en una tabla específica solo aquellos cuya variación porcentual del ADU resulta ser superior al límite impuesto.
+Existe un procedimiento cuya ejecución debe ser programada automáticamente, el cual analiza todos los buffer<!-- buffer --> Ddmrp<!-- Ddmrp --> en todas las unidades logísticas<!-- unità logistiche --> y almacena en una tabla específica solo aquellos cuya variación porcentual del ADU<!-- ADU --> supera el límite establecido.
 
-En los parámetros generales de Ddmrp se establece el umbral máximo de variación porcentual que no genera alarma, y el número de días en el pasado en los que se debe realizar el análisis (que siempre se concluye el día antes del cálculo).
+En los parámetros generales de Ddmrp<!-- Ddmrp -->, se define el umbral máximo de variación porcentual que no genera alarma, y el número de días en el pasado en los que se debe ejecutar el análisis (que siempre termina el día anterior al cálculo).
 
-A través de este formulario se pueden realizar análisis con valores porcentuales diferentes y por periodos de tiempo a elección del usuario.
+A través de este formulario es posible realizar análisis con valores porcentuales distintos y por periodos de tiempo a elección del usuario.
 
-El reporte destacará solo los artículos cuyo consumo medio diario ha sufrido una variación (tanto en defecto como en exceso) porcentual superior al límite establecido para el análisis, en el periodo de tiempo indicado por el usuario.
+El informe destacará solo los artículos cuyo consumo medio diario ha tenido una variación porcentual (ya sea a la baja o al alza) superior al límite establecido para el análisis, en el periodo de tiempo indicado por el usuario.
 
-El análisis se lleva a cabo sobre los valores historizados de los parámetros Ddmrp, tanto para el procedimiento automatizado como para este formulario.
+El análisis se ejecuta sobre los valores historizados de los parámetros Ddmrp<!-- Ddmrp -->, tanto para el procedimiento automatizado como para este formulario.
