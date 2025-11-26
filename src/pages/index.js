@@ -62,7 +62,7 @@ const features = [
           <li><a href='docs/controlling/budget/general-overview'><Translate>Budget</Translate></a></li> 
           <li><a href='docs/controlling/controlling-recordings/controlling-recording-intro'><Translate>Contabilità gestionale</Translate></a></li> 
           <li><a href='docs/controlling/sales-forecast/sales-forecast-intro'><Translate>Previsioni di vendita</Translate></a></li> 
-          <li><a href='docs/controlling/controlling/cost-calculation/product-cost-intro'><Translate>Calcolo costo</Translate></a></li> 
+          <li><a href='docs/controlling/cost-calculation/product-cost-intro'><Translate>Calcolo costo</Translate></a></li> 
         </ul>
        ),    
       },
