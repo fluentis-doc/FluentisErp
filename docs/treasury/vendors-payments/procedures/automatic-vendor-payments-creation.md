@@ -2,6 +2,7 @@
 title: Creazione automatica pagamento fornitori
 sidebar_position: 1
 ---
+
 La form si trova in Tesoreria > Pagamenti fornitori > Procedure > Creazione automatica pagamenti fornitori
 
 Questa procedura è alternativa alla creazione di una nuova [distinta di pagamento](/docs/treasury/vendors-payments/create-vendor-payments) ed alla sua successiva contabilizzazione, permettendo di eseguire queste operazioni in maniera integrata direttamente da questa form.

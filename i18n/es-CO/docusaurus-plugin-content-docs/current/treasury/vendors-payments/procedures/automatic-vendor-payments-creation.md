@@ -1,3 +1,8 @@
+---
+title: Creación automática de pagos a proveedores
+sidebar_position: 1
+---
+
 La pantalla se encuentra en Tesorería > Pagos a proveedores > Procedimientos > Creación automática de pagos a proveedores<!-- Creazione automatica pagamenti fornitori -->.
 
 Este procedimiento es alternativo a la creación de una nueva [lista de pagos<!-- distinta di pagamento -->](/docs/treasury/vendors-payments/create-vendor-payments) y a su posterior contabilización, permitiendo ejecutar estas operaciones de manera integrada directamente desde esta pantalla<!-- form -->.
