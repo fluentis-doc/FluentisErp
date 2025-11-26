@@ -98,7 +98,9 @@ Il **tipo di saldo** della singola riga di conto o sottoconto prevede le seguent
 
 **Incremento** (per il sottoconto o conto sarà calcolato il valore come differenza tra la chiusura infrannuale del riclassificato e un'altra chiusura di riferimento: questa tipologia è utile in caso di analisi per flussi).
 
-L'ultimo flag presente in griglia è denominato **Inv. col.**: significa che, sul sottoconto selezionato, il segno del saldo sarà invertito.
+**Inversione colonne**: sul sottoconto selezionato il segno (Dare Avere, rappresentato nel modello con + e - essendo il modello scalare) del saldo sarà invertito.
+
+**Salva solo il valore positivo**: campo utile esclusivamente in localizzazioni non italiane (es. Romania) dove i valori dei conti rimangono sempre nella sezione nativa con utilizzo di segno + e - (un credito non va mai in avere). Abilitando questo flag, pertanto, la riga viene valorizzata solo se il segno è positivo (+).
 
 :::tip Nota
 Può tornare utile, ad esempio, per detrarre dal saldo di un conto il valore di un suo sottoconto: ad esempio, togliere un cliente intercompany che è stato codificato all'interno del mastro clienti standard, per poterlo gestire in un nodo separato senza duplicare valori

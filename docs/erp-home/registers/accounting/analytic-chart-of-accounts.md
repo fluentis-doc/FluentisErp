@@ -29,7 +29,9 @@ Nel caso in cui si intenda configurare manualmente fare riferimento alla check l
 | Cancella C.d.P. | Cancella il centro di profitto selezionato. |
 | Nuova automatica conti | Imposta il cursore all'inserimento di un nuovo sottoconto automatico per il sottoconto selezionato |
 | Cancella automatica conti | Cancella il sottoconto automatico selezionato |
+| **Controllare l'assegnazione del modello** | Attivo quando c’è un solo sottoconto selezionato, fa aprire una maschera dove è possibile vedere la lista dei **modelli di riclassificazione**, compresi quelli dove il conto selezionato è eventualmente già inserito, con un pulsante per assegnarlo al modello stesso (**Assegna al modello**): si aprirà in questo caso, selezionando il modello desiderato, un popup per selezionare più in dettaglio il nodo del modello nel quale inserire il conto in questione. Confermando compare un ulteriore popup di dettaglio necessario per specificare il Tipo saldo (Dare, Avere , Generale, Incremento ecc...), l'Inversione colonne ecc.., *presenti nel modello di riclassificazione*. Dopo la conferma nella maschera iniziale viene aggiornato l'abbinamento del conto selezionato (riportato in basso nella form) con il nodo specifico del modello rappresentato nelle prime quattro colonne.
 
+ |
 :::
 
 ---
@@ -202,6 +204,19 @@ In particolare la logica di funzionamento prevede:
 
 
 **Esempio di utilizzo può essere la registrazione di sottoconti per i quali debbano essere valorizzati in dare/avere conti d'ordine.**
+
+:::tip[Proposta di allineamento modelli di riclassificazione inserendo un nuovo conto]
+Abilitando il parametro generale “FS-CO-AskModelAssignmentOnNewAccount” dentro il gruppo del Controlling in Configurazione > Parametri > Parametri Generali > Business Layer Settings > Business Areas > Controlling
+
+quando si carica un nuovo sottoconto nel piano dei conti Fluentis apre un popup che chiede di impostare un conto / sottoconto simile da utilizzare per l'inserimento automatico del nuovo conto che si sta creando dentro i modelli di riclassificazione presenti a sistema.
+
+Esempio: se si è creato un nuovo sottoconto per un servizio, è possibile digitare il codice di un altro servizio che già presente nei modelli di riclassificazione in modo che anche quello nuovo finisca negli stessi punti, evitando l’allineamento manuale.
+
+Il pulsante **Disabilita prova** fa l’update del parametro a false e quindi non verrà più proposto questo allineamento.
+
+Il pulsante **SI** esegue l'allineamento, mentre il pulsante **NO** non esegue l'allineamento ma lascia attiva la funzionalità.
+:::
+
 
 ---
 

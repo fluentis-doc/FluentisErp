@@ -3,6 +3,8 @@ title: Utilizzo fidi
 sidebar_position: 3
 ---
 
+## Tab Principale
+
 La maschera **Utilizzo fidi** consente di creare e memorizzare un calcolo di utilizzo del fido cliente per ogni conto cliente e visualizzarne quindi una serie storica. Nella lista dei calcoli visualizzata nella maschera saranno visualizzate in rosso le righe con scostamento.
 
 Per elaborare un nuovo calcolo premere il tasto **Nuovo**.
@@ -49,3 +51,11 @@ Fatturato 12M” / 365 * “Moltiplicatore” * “Giorni dilazione medi”, dov
 **Scaduto** = quanto delle partite aperte sono scadute 
 
 
+## Dettaglio del calcolo
+
+Nella testata dell maschera è possibile attivare il Flag ***Dettagliata*** (che può anche essere proposto già attivo gestendo l'omonimo campo all'interno dei *Parametri Rischio Cliente*) al fine di far comparire un ulteriore Tab che presenta il dettaglio di tutti i documenti considerati nel calcolo (Partite, DDT, FAtture, Effetti, Insoluti).
+La griglia prevede le prime due colonne con il valore (DAre o Avere) dell'elemento considerato e nelle successive colonne il riferimento specifico incasellato nella colonna corrispondente a seconda della tipologia, ad esempio i campi Numero e Anno se si tratta di una partita nelle relative colonne, piuttosto che Tipo, nUmero e Data per una fattura o un DT ecc...
+
+:::tip[Nota]
+Se il documento inizialmente considerato viene cancellato (ad esempio viene eseguito un *rollback* di una valorizzazione ddt, o dll'evasione di un ordine) la riga resta presente, ma si perderanno i valori nelle colonne (Dare Avere e Riferimenti), resterà solo la nota testuale nell'ultima colonna di destra, tenendo traccia di cosa era stato considerato in quel momento.
+:::

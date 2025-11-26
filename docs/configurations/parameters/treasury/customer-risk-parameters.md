@@ -35,7 +35,9 @@ Nei **parametri** del modulo Rischio Clienti si possono pre-impostare gli elemen
 
 #### Base di calcolo per determinare il rischio cliente  
 > **Saldo contabile**: con tale impostazione il calcolo del fido sarà effettuato sulla base del Saldo contabile del cliente.  
-> **Partite aperte**: con tale impostazione il calcolo del fido sarà effettuato sulla base delle partite aperte del cliente.  
-> **Considera partite da registrazioni provvisorie**: se attivo il flag precedente il calcolo considera anche eventuali movimenti derivanti da registrazioni provvisorie.  
+> **Partite aperte**: con tale impostazione il calcolo del fido sarà effettuato sulla base delle partite aperte del cliente.   
 > **Blocca stampa fisica**: nel caso in cui il fido cliente preveda il blocco documento, questo flag blocca la possibilità di stampare fisicamente il documento bloccato. Se non è impostato il documento si può stampare ma il flag ‘stampato' non sarà assegnato al documento.  
-> **Considera fatture da stampare**: tiene in considerazione, nel calcolo del fido, le fatture create ma non stampate. Se non è attivato la logica di default considera le fatture solo se stampate (con il flag stampato attivo).  
+> **Considera fatture da stampare**: tiene in considerazione, nel calcolo del fido, le fatture create ma non stampate. Se non è attivato la logica di default considera le fatture solo se stampate (con il flag stampato attivo).
+> **Considera partite da registrazioni provvisorie**: tiene in considerazione, nel calcolo del fido, le partite aperte provenienti da registrazioni contabili poste nello stato provvisorio tramite il campo **Stato Registrazione** posto nel tab **Parametri** all'interno delle registrazioni stesse.
+
+**Dettagliata**: attivando il flag, all'interno della maschera di *Calcolo rischio cliente* verrà proposto il medesimo flag attivo. L'attivazione di questa opzione rende visibile nella maschera del *Calcolo rischio cliente* un ulteriore Tab che presenta il dettaglio di tutti i documenti considerati nel calcolo (Partite, DDT, FAtture, Effetti, Insoluti).

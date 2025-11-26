@@ -8,7 +8,11 @@ Da questa form è possibile inserire i registri per le dichiarazioni di intento 
 Premere il tasto **Nuovo** nella ribbon bar per inserire un nuovo registro, oppure, dopo aver premuto il tasto **Ricerca**, fare doppio click sul registro desiderato (o premere il tasto **Modifica** nella ribbon bar) per inserire nuove dichiarazioni di intento all'interno del registro selezionato.
 
  
+:::tip[Pulsante Controllo Dichiarazioni di intento]
+Premendo questo pulsante, posto nella Ribbon Bar, si apre una form che presenta la lista delle dichiarazioni di intento; espandendo il relativo dettaglio con il bottone + (tutto a sinistra sulla griglia) vengono visualizzati i  documenti collegati alla dichiarazione di intento (che ne impegnano il valore).
 
+Selezionando un documento di dettaglio in griglia (es una Fattura), il pulsante **Apertura documento** consentirà di aprire il dato d’origine, per un controllo puntuale.
+:::
  
 ### Testata Registro
 La zona superiore della form corrispondente al registro riporta i dati del registro stesso, la zona sottostante accoglie invece i dettagli di ogni dichiarazione di intento riferita al registro.
