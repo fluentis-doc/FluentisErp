@@ -41,4 +41,4 @@ Istoricul gestiunii permite analiza precisă a datelor arhivate referitoare la v
 Pentru detalii suplimentare despre funcționalități conexe, consultați:
 
 - [Inventar cantitativ valoric](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity)
-- [Funcționalități, butoane și câmpuri comune<!-- Funzionalità, pulsanti e campi comuni-->](/docs/guide/common)
+- [Funcționalități, butoane și câmpuri comune](/docs/guide/common)
