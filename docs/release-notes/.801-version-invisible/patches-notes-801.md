@@ -3,6 +3,37 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 801.0029 - 28/11/2025
+
+> -	FI - Corretto comportamento del flag Contabilizzato nel compenso percipiente, editabile se non contabilizzato con la procedura automatica e bloccato nel caso contrario. Modifications in compensi form can have an impact on profiles. ( #TT05242/25)
+> -	FI - Creazione registrazione contabile cespiti: risolto problema nella registrazione dei cespiti utilizzando la funzionalità “Suddividi cespite” (Rif. Ticket TT04778/25)
+> -	FI - Creazione registrazione contabile cespiti: risolto problema nella registrazione dei cespiti utilizzando la funzionalità “Suddividi cespite” (Rif. Ticket TT04778/25)
+> -	MS - Rimossa popup da dettagli DDT in Ricevimento merce (#TT04318/25)
+> -	QY - Controllo articoli - Piani di controllo - Corretta l'anomalia che visualizzava, nel tabulatore "Revisioni", riferimenti a Piani di controllo non correlati a quello visualizzato. (Rif.Ticket #TT05141/25)
+> -	Risoluzione errore che impediva l’importazione Web API del ‘Tipo codice lotto’ degli articoli (#TT04840/25)
+> -	SD - Creazione Ordine Fornitore da ricerca Ordini Clienti: Le righe di tipo omaggio presenti nell’Ordine cliente vengono ora riportate nell’Ordine fornitore come righe di tipo 1 - articolo codificato. (#TT04934/25)
+> -	SD - Fix TaxAmount calculation (#TT04699/25)
+> -	WM - Risolta un’anomalia che, in alcuni casi, impediva la corretta visualizzazione del contenuto della causale di magazzino all’apertura del documento. (#TT03964/25)
+> -	WMS - Inibita doppia esecuzione dei comandi Conferma e Chiudi in Ricevimento merce.(#TT04487/25)
+> -	WMS - Ricevimento merce - Corretta imprevista riconversione da quantità alternativa. (#TT04673/25)
+
+### Patch 801.0028 - 06/11/2025
+
+> -	CO - Scritture di Rettifica: abilitata la possibilità di esportare i dati della griglia. Modifications in Scritture di Rettifica form can have an impact on profiles (Rif. Ticket TT04136/25).
+> -	FI - Comunicazione liquidazioni periodiche iva: Risolto problema in fase di creazione LIPE (Rif. Ticket TT04659/25).
+> -	FI - contabilizzazione compensi su compenso creato da liquidazione agenti, blocco del ricalcolo enasarco. (#TT04577/25)
+> -	MS - Corretto bug in Capacità centri di lavoro inerente ad una errata visualizzazione dei tempi di attesa coda presenti nelle fasi dei cicli di lavoro. (#TT04629/25)
+> -	MS - Corretto bug nell’esecuzione della procedura MRP (#TT04604/25)
+> -	MS - Corretto bug nella procedura MRP che, in alcuni casi, calcolava in maniera errata la data di fine degli ordini pianificati di acquisto. (#TT04624/25)
+> -	MS - In capacità centri di lavoro nel caso in cui avvenga uno spostamento di fase in una giornata in cui il centro di lavoro è già completamente occupato, viene visualizzato un messaggio di errore. Altrimenti, viene saturata la giornata del centro di lavoro senza sovra-allocarla e il residuo del tempo (della fase spostata) viene ripartito nelle successive giornate lavorative per una capacità pari alla massima di quel centro di lavoro, indipendentemente dal carico di lavoro già presente. (#TT03527/25)
+> -	SCM - Nir - correzione delle fonti dei lotti e delle quantità residue per più lotti, corretto anche il carico del magazzino per Nir #TT04615/25
+> -	SCS - Ordine di conto lavoro, corretta anomalia che causava la ripetizione di messaggi di errore in fase di sostituzione articolo, da non fittizio a fittizio, nelle righe ordine (#TT03838/25)
+> -	SD - Creazione DDT da Lista di prelievo UDC: Durante la creazione del DDT da una lista di prelievo UDC, se l’ordine cliente di origine contiene righe di tipo Note o Spese, queste vengono ora inserite nel DDT con il flag “In fattura” attivo. (#TT04486/25)
+> -	WM - Analisi disponibilità, al cambio dell’articolo nel filtro e successivo rilancio della ricerca, la griglia di dettaglio viene aggiornata in base al nuovo articolo (#TT03562/25)
+> -	WM - Migliorato ed ottimizzato il report Esplosione distinta base. Selezionando il flag Riepilogata è possibile anche visualizzare gli articoli raggruppati per codice a parità di livello (flag multi livello) oppure per tutta la distinta base (flag mono livello). (#TT04557/25)
+> -	WM - Packing List - Corretto cambio stato a “Fatturato” aggiungendo UDC. (#TT04626/25)
+
+
 ### Patch 801.0027 - 23/10/2025
 
 > -	CO - ripresa dati da produzione del controlling, i valori di progetto ripresi dai rientri del conto lavoro ora usano il prezzo netto di riga e non il lordo (#TT04478/25) 
