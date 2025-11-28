@@ -404,7 +404,7 @@
     "description": "The label for category Tipi solleciti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Tabelle modulo cash flow": {
-    "message": "Tablice modul cash flow",
+    "message": "Tablice modula novčanog toka",
     "description": "The label for category Tabelle modulo cash flow in sidebar erpHome"
   },
   "sidebar.erpHome.category.Tabelle modulo Portafoglio effetti": {
@@ -448,7 +448,7 @@
     "description": "The label for category Budgeting in sidebar erpHome"
   },
   "sidebar.erpHome.category.Previsionale": {
-    "message": "Previsionale",
+    "message": "Predviđanje",
     "description": "The label for category Previsionale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Caratteristiche articolo": {
@@ -492,7 +492,7 @@
     "description": "The label for category Gestione progetti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Generale": {
-    "message": "Generale",
+    "message": "Općenito",
     "description": "The label for category Generale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Controllo articolo": {
@@ -500,7 +500,7 @@
     "description": "The label for category Controllo articolo in sidebar erpHome"
   },
   "sidebar.erpHome.category.Reclami e non conformità": {
-    "message": "Reclami e non conformità",
+    "message": "Reklamacije i nesukladnosti",
     "description": "The label for category Reclami e non conformità in sidebar erpHome"
   },
   "sidebar.erpHome.category.Certificati": {
@@ -1824,23 +1824,23 @@
     "description": "The label for category Reporting in sidebar configurations"
   },
   "sidebar.configurations.category.Previsionale": {
-    "message": "Previsionale",
+    "message": "Predviđanje",
     "description": "The label for category Previsionale in sidebar configurations"
   },
   "sidebar.configurations.category.Costo prodotto / commessa": {
-    "message": "Costo prodotto / commessa",
+    "message": "Trošak proizvoda / narudžbe",
     "description": "The label for category Costo prodotto / commessa in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo cash flow": {
-    "message": "Tabelle modulo cash flow",
+    "message": "Tablice modula novčanog toka",
     "description": "The label for category Tabelle modulo cash flow in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo Portafoglio effetti": {
-    "message": "Tabelle modulo Portafoglio effetti",
+    "message": "Tablice modula portfelja mjenica",
     "description": "The label for category Tabelle modulo Portafoglio effetti in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo DocFinance": {
-    "message": "Tabelle modulo DocFinance",
+    "message": "Tablice modula DocFinance",
     "description": "The label for category Tabelle modulo DocFinance in sidebar configurations"
   },
   "sidebar.configurations.category.Gestione Progetti": {
@@ -1848,7 +1848,7 @@
     "description": "The label for category Gestione Progetti in sidebar configurations"
   },
   "sidebar.configurations.category.Impostazioni generali": {
-    "message": "Impostazioni generali",
+    "message": "Opće postavke",
     "description": "The label for category Impostazioni generali in sidebar configurations"
   },
   "sidebar.configurations.category.Contatti": {
@@ -2140,7 +2140,7 @@
     "description": "The label for category D.P.I. in sidebar configurations"
   },
   "sidebar.configurations.category.Mansioni": {
-    "message": "Mansioni",
+    "message": "Zadaci",
     "description": "The label for category Mansioni in sidebar configurations"
   },
   "sidebar.configurations.category.Corsi di formazione": {
@@ -2148,7 +2148,7 @@
     "description": "The label for category Corsi di formazione in sidebar configurations"
   },
   "sidebar.configurations.category.Generale": {
-    "message": "Generale",
+    "message": "Općenito",
     "description": "The label for category Generale in sidebar configurations"
   },
   "sidebar.configurations.category.Controlli articolo": {
@@ -2156,7 +2156,7 @@
     "description": "The label for category Controlli articolo in sidebar configurations"
   },
   "sidebar.configurations.category.Documenti": {
-    "message": "Documenti",
+    "message": "Dokumenti",
     "description": "The label for category Documenti in sidebar configurations"
   },
   "sidebar.configurations.category.Qualificazione fornitori": {
@@ -2164,11 +2164,11 @@
     "description": "The label for category Qualificazione fornitori in sidebar configurations"
   },
   "sidebar.configurations.category.Reclami e Non conformità": {
-    "message": "Reclami e Non conformità",
+    "message": "Reklamacije i nesukladnosti",
     "description": "The label for category Reclami e Non conformità in sidebar configurations"
   },
   "sidebar.configurations.category.Azioni correttive": {
-    "message": "Azioni correttive",
+    "message": "Korektivne radnje",
     "description": "The label for category Azioni correttive in sidebar configurations"
   },
   "sidebar.configurations.category.Taratura strumenti": {
@@ -2300,7 +2300,7 @@
     "description": "The label for category Spedizioni in sidebar logistics"
   },
   "sidebar.configurations.category.Tabelle F.C.S.": {
-    "message": "Tabelle F.C.S.",
+    "message": "Tablice F.C.S.",
     "description": "The label for category Tabelle F.C.S. in sidebar configurations"
   },
   "sidebar.guide.category.Polja, funkcionalnosti i uobičajeni gumbi": {
