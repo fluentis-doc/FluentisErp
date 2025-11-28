@@ -3,6 +3,27 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0057 - 28/11/2025
+
+> -	FI - Corretto comportamento del flag Contabilizzato nel compenso percipiente, editabile se non contabilizzato con la procedura automatica e bloccato nel caso contrario. Modifications in compensi form can have an impact on profiles (#TT05242/25)
+> -	FI - Creazione registrazione contabile cespiti: risolto problema nella registrazione dei cespiti utilizzando la funzionalità “Suddividi cespite” (#TT04778/25)
+> -	FI - nei compensi, proposta dei centri di costo legati al costo della contribuzione inps, che vengono ora contabilizzati nella contabilizzazione pagamenti che rileva il costo. (#TT04459/25)
+> -	FI - per la localizzazione IT, nelle griglie che mostrano i saldi dei sottoconti ora si visualizza la data fine validità di ogni sottoconto. La contabilizzazione ora testa inizialmente se ci sono sottoconti con data fine validità antecedente alla data di riapertura conti e in caso blocca la contabilizzazione. Modifications in account automatic closing form can have an impact on profiles. (#TT04124/25)
+> -	MES - Corretto bug negli ordini di produzione, che in alcuni casi il ricalcolo dei costi dell'ordine di produzione rimaneva bloccato. (#TT04042/25)
+> -	MS - Corretto bug in schedulazione a capacità finita che non rimuoveva le commesse elaborate dal tab commesse e rielaborandole creava ordini pianificati doppi. (#TT04779/25)
+> -	MS - Implementato nella capacità centri di lavoro un controllo che impedisce di spostare le fasi in giorni non compresi nel range di date filtrate. (#TT05140/25)
+> -	SCM - Risolta un’anomalia che impediva il corretto aggiornamento del progetto indicato in testata del documento sulle righe di tipo spese e note. (#TT05017/25)
+> -	SD - Nei casi in cui la propagazione degli Extra Data tra documenti non è applicabile, l’Extra Data inserito nel documento di origine viene riportato nel documento generato solo se lo
+> -	SD - Risolta anomalia nella procedura di Creazione Fatture da DDT, che in alcuni casi impediva la valorizzazione del DDT a causa di un errato rilevamento del superamento dell’importo previsto per la dichiarazione di intento. (#TT04809/25)
+> -	SD - Risolvere il problema di import web api per ordini cliente - proposta di numero riga(#TT05244/25)
+> -	SD - SCM - Per i tipi documento che prevedono l’utilizzo di prezzi comprensivi di IVA, il totale viene determinato partendo dagli importi ivati. Successivamente l’imposta viene scorporata per ottenere il valore dell’imponibile. (#TT02056/25)
+> -	SH - Corretto bug nei prototipi che non permetteva di inserire le voci di costo in un prototipo appena creato senza prima uscire e rientrare. (#TT05114/25)
+> -	SH - Risolta anomalia che impediva di salvare all'interno di un profilo la rimozione di alcune colonne dalle griglie dei documenti. (#TT04837/25)
+> -	WM - Analisi Disponibilità: corretto errata disponibilità in griglia quando lanciata da menu contestuale. (#TT04843/25)
+> -	WM - Picking: Corretto errata proposta lotto in righe spunta. (#TT05129/25)
+> -	WMS - Conferma Picking: Corretta quantità disponibile errata del lotto in sovra evasione picking con spunta. (#TT04821/25)
+> -	Extra Data - stesso Extra Data è configurato anche sull’oggetto di destinazione. Ad esempio, nel flusso Ordine cliente - Picking - DDT, l’Extra Data viene trasferito al DDT solo se risulta configurato anche sull’oggetto DDT di Vendita (#TT04095/25).
+
 ### Patch 707.1-0056 - 21/11/2025
 
 > -	SH - Disponibilità - migliorati tempi di esecuzione (#TT04568/25) 
