@@ -3,6 +3,13 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0125 - 27/11/2025
+
+> - Dichiarazione D300 - allineamento alle novità legislative per la localizzazione rumena.
+> - SCM - Stato dell'Ordine di Acquisto corretto: risolto il problema di parziale evasione con tutte le righe evase(#TT04888/25).
+> - SD - Corretta anomalia nelle procedura di Scarico DDT da magazzino e Scarico Fatture immediate da magazzino che non permetteva di effettuare il rollback dello scarico dei documenti (#TT05066/25).
+
+
 ### Patch 545.1-0124 - 23/10/2025
 
 > - WM - Duplica articoli- creare la possibilità di estendere in modo personalizzato per altre proprietà da duplicare (#TT04607/25) 
