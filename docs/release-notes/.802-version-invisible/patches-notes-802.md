@@ -3,6 +3,31 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 802.0014 - 27/11/2025
+
+> -	ARM - add duplicate algorithm for business object information (compact grids) (#TT05187/25)
+> -	CO - bugs in Budget when calculating by accruals ( TT05234/25).
+> -	CRM - FL Browser: unauthorized msg in CRM campaign , on contact Reference tab (#TT05211/25)
+> -	CRM - Unauthorized msg on CRM Contact multiple Reference update (#TT05228/25)
+> -	FI - Corretto comportamento del flag Contabilizzato nel compenso percipiente, editabile se non contabilizzato con la procedura automatica e bloccato nel caso contrario. Modifications in compensi form can have an impact on profiles.( #TT05242/25)
+> -	FI - Creazione registrazione contabile cespiti: risolto problema nella registrazione dei cespiti utilizzando la funzionalità “Suddividi cespite” (Rif. Ticket TT04778/25)
+> -	FI - per la localizzazione IT, nelle griglie che mostrano i saldi dei sottoconti ora si visualizza la data fine validità di ogni sottoconto. La contabilizzazione ora testa inizialmente se ci sono sottoconti con data fine validità antecedente alla data di riapertura conti e in caso blocca la contabilizzazione. Modifications in account automatic closing form can have an impact on profiles. (#TT04124/25)
+> -	MES - Corretto bug negli ordini di produzione, che in alcuni casi il ricalcolo dei costi dell'ordine di produzione rimaneva bloccato. (#TT04042/25)
+> -	MS - Corretto bug in schedulazione a capacità finita che non rimuoveva le commesse elaborate dal tab commesse e rielaborandole creava ordini pianificati doppi. (#TT04779/25)
+> -	MS - Implementato nella capacità centri di lavoro un controllo che impedisce di spostare le fasi in giorni non compresi nel range di date filtrate. (#TT05140/25)
+> -	PM: calcolo piano di fatturazione - gestito caso in cui ore straordinario derivano da ore di viaggio, ed è previsto il cambio articolo nella fascia oraria.( #TT05178/25)
+> -	PM: WEBAPI interventi - gestita importazione interventi senza ore di pausa (#TT05108/25)
+> -	SCM - Risolta un’anomalia che impediva il corretto aggiornamento del progetto indicato in testata del documento sulle righe di tipo spese e note. (#TT05017/25)
+> -	SD - Duplica e Manutenzione Listini di Vendita: Durante l’inserimento di uno sconto nel listino, qualora non venga specificato il numero progressivo che ne determina l’ordine di applicazione il sistema assegna automaticamente la priorità. (#TT05196/25)
+> -	SH - Corretto bug nei prototipi che non permetteva di inserire le voci di costo in un prototipo appena creato senza prima uscire e rientrare. (#TT05114/25)
+> -	SH - Increase the limit of the field province and city ( TT05151/25)
+> -	SH - Per l'uso delle Matrice tasse, revisione utilizzo giurisdizioni(#TT04234/25, #TT05267/25)
+> -	WM - Analisi Disponibilità: corretto errata disponibilità in griglia quando lanciata da menu contestuale. (#TT04843/25)
+> -	WM - Corretta errata valorizzazione codice lotto in inserimento spunta. (#TT05129/25)
+> -	WM - Fix WMS Confirm picking - Batch residual quantity problem. (#TT04821/25)
+> -	WM - Risolta un’anomalia che, in alcuni casi, impediva la corretta visualizzazione del contenuto della causale di magazzino all’apertura del documento. (#TT03964/25)
+> -	WMS - Ricevimento merce - Corretta imprevista riconversione da quantità alternativa (#TT04673/25).
+
 ### Patch 802.0013 - 21/11/2025
 
 > -	BI - fix algorithm call from Cruscotti 
