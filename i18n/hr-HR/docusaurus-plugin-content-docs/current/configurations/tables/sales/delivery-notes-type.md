@@ -17,56 +17,56 @@ Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su
 
 Za unos novih zapisa potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti tipku **Novi**.
 
-**Tipo DDT /Descrizione tipo DDT**: tipo e descrizione del tipo DDT. Il codice del DDT deve essere univoco;
+**Vrsta otpremnice / Opis vrste otpremnice**: vrsta i opis vrste otpremnice. Kod otpremnice mora biti jedinstven;  
 
-**Numerazione:** in questo campo va inserito il codice della numerazione appropriato. Per approfondimenti fare riferimento all'articolo relativo alle [numerazioni Fluentis](/docs/configurations/tables/fluentis-numerations);
+**Numeracija:** u ovo polje unosi se kod odgovarajuće numeracije. Za više detalja pogledati članak o [Fluentis numeracijama](/docs/configurations/tables/fluentis-numerations);
 
-**Natura DDT**: in questo campo va inserita la natura del DDT: consegna, reso, c/visione e reso c/visione. Questo valore dovrà essere selezionato da un elenco;
+**Vrsta otpremnice**: u ovo polje unosi se vrsta otpremnice: isporuka, povrat, na viđenje i povrat s viđenja. Vrijednost se odabire s popisa;
 
-**Ordine**: se attivo, questo flag indica che il DDT può essere evaso da un ordine cliente;
+**Nalog**: ako je aktivan ovaj flag, označava da se otpremnica može izraditi na temelju naloga kupca;  
 
-**Valori**: se attivo, questo flag farà si che nella stampa DDT vengano mostrati i valori delle righe articolo presenti nel documento;
+**Vrijednosti**: ako je flag aktivan, u ispisu otpremnice prikazuju se vrijednosti stavki artikala iz dokumenta;  
 
-**Tipo fattura/Descrizione tipo fattura**: in questi campi verrà definito il tipo fattura che si vorrà venga utilizzato per creare la fattura da DDT tramite l'apposita [procedura](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes). E' possibile creare la fattura dal DDT solo se questo campo è valorizzato con il tipo fattura;
+**Vrsta računa / Opis vrste računa**: u ova polja definira se vrsta računa koji će se koristiti pri izradi računa iz otpremnice putem odgovarajuće [procedura](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes). Račun se može izraditi iz otpremnice samo ako je ovo polje popunjeno;
 
-**Causale Trasporto**: in questi campo andrà inserita la descrizione della causale di trasporto; si tratta di un campo di testo libero su cui indicare la causale che verrà proposta nel DDT;
+**Predložak prijevoza**: u ovo se polje unosi opis predloška prijevoza; riječ je o slobodnom tekstu koji će biti predložen u otpremnici.;
 
-**Controllo Cliente**: se attivo,  questo flag consente al sistema di effettuare un controllo sul tipo anagrafica del conto/sottoconto che si è inserito nel documento per verificare che sia obbligatoriamente un cliente. Se così non fosse il sistema avviserà l'utente riportando un messaggio di errore. Sarebbe Obbligatorio attivarlo su tutte le tipologie di DDT di Vendita;
+**Provjera kupca**: ako je aktivan, ovaj flag omogućuje sustavu da provjeri je li u dokument unesen konto/podkonto tipa kupac. Ako nije, sustav će upozoriti korisnika porukom o grešci. Preporučuje se obavezno aktivirati ga na svim vrstama otpremnica prodaje;  
 
-**Blocca Doc. Stampato**: se attivo, questo flag non permette di modificare un DDT che risulti essere già con il flag Stampato settato in testata;
+**Blokiraj ispisani dokument**: ako je aktivan, flag onemogućuje izmjene otpremnice koja već ima postavljen flag Ispisano u zaglavlju;  
 
-**Fido**: se attivo, il DDT con questo tipo rientrerà nel controllo del fido;
+**Kredit**: ako je aktivan, otpremnice ove vrste ulaze u provjeru kreditnog limita;  
 
-**Escludi blocco**: se attivo, il sistema per questo tipo DDT non andrà a considerare il blocco del documento dovuto all'eventuale superamento fido ma permetterà comunque all'utente di poterlo inserire e stampare;
+**Isključi blokadu**: ako je aktivan, sustav neće primjenjivati blokadu dokumenta zbog eventualnog prekoračenja kreditnog limita te će korisniku omogućiti unos i ispis dokumenta;  
 
-**Cash flow**: se attivo, il tipo DDT concorre al calcolo del [cash flow](/docs/treasury/cash-flow/cash-flow/search-cash-flow).
+**Cash flow**: ako je aktivan, ovaj tip otpremnice ulazi u izračun [cash flowa](/docs/treasury/cash-flow/cash-flow/search-cash-flow).
 
-**Magazzino/Descrizione magazzino**: in questi campi di dovrà inserire il magazzino di arrivo della merce contenuta nelle DDT appartenenti a questa tipologia. Questo valore verrà utilizzato come valore di default;
+**Skladište / Opis skladišta**: u ova polja unosi se skladište u koje stiže roba navedena u otpremnicama ove vrste. Vrijednost se koristi kao zadana.  
 
-**Causale magazzino/Descrizione causale magazzino**: in questi campi invece si dovrà andare ad indicare la casuale di movimentazione della merce in arrivo contenuta nelle DDT appartenenti a questa tipologia;
+**Predložak skladišta / Opis predloška skladišta**: u ova polja unosi se predložak skladišnog prometa za robu u dolaznim otpremnicama ove vrste;  
 
-**Evasione quantità articolo non sommata**: se settato questo flag consentirà, nel momento in cui si andranno ad evadere queste tipologie di DDT, di riportare le quantità evase del documento di evasione suddivise per riga articolo senza sommare le quantità;
+**Evidencija nesumiranih količina**: ako je ovaj flag uključen, prilikom obrade otpremnica sustav će prenijeti isporučene količine iz dokumenta razdvojene po pojedinoj stavci, bez zbrajanja količina;  
 
-**Agr. Acq. IVA**: se attivo, in fase di creazione DDT, il sistema andrà a verificare se per l'articolo utilizzato è presente un codice dell'IVA agricola altrimenti verrà utilizzato il codice IVA presente nell'anagrafica dell'articolo;
+**Poljoprivredni PDV**: ako je aktiviran, sustav pri kreiranju otpremnice provjerava ima li artikal postavljen poljoprivredni PDV; ako ga nema, koristi PDV iz šifrarnika artikla;  
 
-**Controlla Picking Scaricato**: se attivo, quando si crea una DDT da un Picking scaricato, si attiva in automatico il flag scaricato per la DDT. Si consiglia di attivare sempre questo flag qualora si utilizzi la gestione picking;
+**Kontrola preuzetog pickinga**: ako je aktivan, pri izradi otpremnice iz preuzetog pickinga automatski se postavlja flag preuzeto. Preporučuje se aktivirati ga ako se koristi upravljanje pickingom;  
 
-**Blocca Quantità Picking**: se attivo, blocca la quantità e la quantità alternativa nel DDT creata da lista UDC. Si consiglia di attivare sempre questo flag qualora si utilizzi la gestione picking e UDC;
+**Blokiraj količine iz pickinga**: ako je aktivan, blokira količine i alternativne količine u otpremnici kreiranoj iz UDC liste. Preporučuje se aktivirati ako se koristi upravljanje pickingom i UDC-om;  
 
-**Permetti scarico lotti non disponibili** se attivo, permette anche lo scarico dei lotti non disponibili;
+**Dozvoli izdavanje nedostupnih lotova** ako je aktivan, omogućuje izdavanje i onih lotova koji nisu dostupni;  
 
-**Gestione EDI**: se attivo, per il DDT di questo tipo è possibile creare un file EDI;
+**EDI obrada**: ako je aktivan, za ovu vrstu otpremnice moguće je kreirati EDI datoteku;  
 
-**Prezzo Ivato**: se attivo, il sistema recupera il prezzo di vendita da listini o dall'anagrafica articolo e lo riporta con l'aggiunta dell'IVA. Se non trova il listino (nel caso per esempio di listino scaduto o listino in valuta non compatibile) recupera i costi o i prezzi dall'anagrafica articolo e li riporta comprensivi di IVA.
+**Cijena s PDV-om**: ako je aktivan, sustav dohvaća prodajnu cijenu iz cjenika ili šifrarnika artikla i prikazuje ju s dodanim PDV-om. Ako ne pronađe odgovarajući cjenik (npr. istekao ili valuta ne odgovara), sustav koristi troškove ili cijene iz šifrarnika artikla, također s PDV-om.  
 
-I costi e i prezzi in anagrafica sono in EUR, quindi il sistema li andrà anche a convertire nella valuta del cliente.
+Troškovi i cijene u šifrarniku izraženi su u EUR, pa ih sustav preračunava u valutu kupca.
 
-**Verifica lotti:** se attivo, controlla che i lotti siano congrui per gli articoli;
+**Provjera lotova:** ako je aktivan, sustav provjerava valjanost lotova za artikle;  
 
-**Gestione matrici Extra Data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice. Se non attivo, non viene visualizzato questo TAB e la conseguente matrice.
+**Upravljanje matricama – dodatni podaci**: ako je aktivan, kod artikala s matricom prikazuje se dodatna kartica za unos količina po pojedinoj ćeliji matrice. Ako nije aktivan, kartica i matrica se ne prikazuju.
 
-**Gestione cespiti**: questo flag abilita la gestione dei cespiti nel tipo fattura e nel campo successivo va specificato il tipo di operazione dei cespiti;
+**Upravljanje osnovnim sredstvima**: ovaj flag omogućuje upravljanje osnovnim sredstvima u vrsti računa, a u sljedećem polju definira se vrsta operacije nad osnovnim sredstvima;  
 
-**Tipo operazione**: in questa combo box è possibile selezionare il tipo di operazione dei cespiti tra diverse opzioni (rivalutazione, distruzione, plusvalenza, ecc.).       
+**Vrsta operacije**: u padajućem izborniku moguće je odabrati vrstu operacije nad osnovnim sredstvima (revalorizacija, uništenje, plusvalija itd.).     
 
-**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
+**Vrsta popusta / Opis**: u ovom stupcu može se pridružiti vrsta popusta koja će se predlagati kada se popusti unose izravno u stupac *Popusti artikla* u mreži artikala u dokumentima (više detalja u članku [Pojednostavljeni widget za popuste](/docs/sales/sales-flow/discount-widget)).
