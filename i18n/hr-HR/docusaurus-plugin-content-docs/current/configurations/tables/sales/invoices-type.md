@@ -4,46 +4,46 @@ sidebar_position: 20
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+U slučaju da se želi konfigurirati ručno, potrebno je slijediti check listu na povezanoj stranici.  
 :::
 
-La tabella si apre tramite il percorso **Tabelle > Vendite > Tipi fatture di vendita** ed è utilizzata per determinare le proprietà di una fattura;
+Tablica se otvara putem **Tablice > Prodaja > Tipovi izlaznih računa** i koristi se za određivanje svojstava računa;  
 
-Consente di inserire nuovi record o di ricercare quelli già esistenti per visualizzarli, modificarli oppure cancellarli;
+Omogućuje umetanje novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja;  
 
-La form si compone di un'area di filtro e da una di risultato; Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** per visualizzare i risultati all'interno della griglia di risultato;
+Forma se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, potrebno je kliknuti na tipku **Pretraži**, nakon čega će se rezultati prikazati u rešetki rezultata;  
 
-Per poter inserire nuovi record è necessario cliccare nella griglia sulla prima riga vuota oppure premere il pulsante **Nuovo**; 
+Za unos novog zapisa potrebno je kliknuti na prvu praznu liniju u rešetki ili pritisnuti tipku **Novi**; 
 
-**Tipo/Descrizione**: tipo fattura e descrizione del tipo fattura; il codice inserito deve essere univoco;
+**Tip/Opis**: tip računa i opis tipa; uneseni šifra mora biti jedinstvena;  
 
-**Numerazione:** in questo campo va inserito il codice della numerazione appropriato; Per approfondimenti fare riferimento all'articolo relativo alle [numerazioni fluentis](/docs/configurations/tables/fluentis-numerations); 
+**Numeracija:** u ovo se polje upisuje šifra odgovarajuće numeracije. Za više informacija pogledati članak o [fluentis numeracijama](/docs/configurations/tables/fluentis-numerations); 
 
-**Natura fattura**: in questo campo va inserita la natura associata al tipo fattura; il valore verrà selezionato da un elenco tra Fattura, Nota di credito, ecc;
+**Priroda računa**: odabire se priroda vezana uz tip računa (račun, storno račun, itd.);  
 
-**Ordine**: se attivo, la fattura potrà essere creata dall'evasione dell'ordine tramite l'apposita procedura; altrimenti, il bottone 'Evasione da ordini' sarà disattivato;
+**Narudžba**: ako je aktivno, račun se može kreirati iz izvršenja narudžbe putem odgovarajuće procedure; inače je tipka Evidentiranje iz narudžbi deaktivirana;  
 
-**Immediata**: se attivo, significa che la fattura è di tipo immediato e dovranno essere compilati, nella fattura, anche i dati per il trasporto; se non attivo la fattura sarà di tipo differito e i dati del trasporto saranno recuperati dal DDT;
+**Neposredni račun**: ako je aktivno, račun je neposrednog tipa te je potrebno popuniti podatke o transportu; ako nije aktivno, račun je odgođenog tipa i podaci o transportu preuzimaju se iz otpremnice;  
 
-**Natura della Transazione Intrastat**: in questo campo va inserito il codice transazione utilizzato per la dichiarazione intrastat; Per approfondimenti fare riferimento alla [Natura transazioni intrastat](/docs/configurations/tables/finance/nature-of-intrastat-transaction); 
+**Priroda Intrastat transakcije**: ovdje se upisuje šifra transakcije za Intrastat prijavu. Za više informacija pogledati [Natura transazioni intrastatPriroda Intrastat transakcija](/docs/configurations/tables/finance/nature-of-intrastat-transaction); 
 
-**In statistica**: se attivo, la fattura con questo tipo verrà riportata nelle statistiche quindi sarà visibile nelle stampe *Fatturato*;
+**U statistici**: ako je aktivno, računi ovog tipa bit će uključeni u statistike i vidljivi u ispisima *Fakturat*;
 
-**Proforma**: se attivo, la fattura è di tipo proforma e non può essere contabilizzata;
+**Proforma**: ako je aktivno, račun je proforma i ne može se knjižiti;
 
-**Causale**: in questo campo va inserita la causale contabile utilizzata per la contabilizzazione della fattura; Per approfondimenti fare riferimento alle [causali di contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates);
+**Predložak**: ovdje se upisuje računovodstveni predložak korišten za knjiženje računa. Za više informacija vidjeti [predloške glavne knjige](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates);
 
-**Tipo documento**: in questo campo va inserita la causale analitica utilizzata pe la contabilizzazione della fattura in contabilità analitica;
+**Tip dokumenta**: ovdje se upisuje analitički predložak korišten za knjiženje u analitičkom računovodstvu;  
 
-**Note**: campo di testo libero in cui è possibile inserire delle note descrittive del tipo fattura;
+**Napomena**: slobodan tekst za unos napomena o tipu računa;
 
-**Controllo cliente**: se attivo, questo flag consente al sistema di effettuare un controllo sul tipo anagrafica del conto/sottoconto che si è inserito nel documento per verificare che sia obbligatoriamente un cliente; Se così non fosse il sistema avviserà l'utente riportando un messaggio di errore; Sarebbe *obbligatorio* attivarlo su tutte le tipologie di fattura di vendita;
+**Kontrola kupca**: ako je aktivno, ovaj flag omogućuje sustavu da izvrši provjeru vrste kartona računa/podračuna koji je unesen u dokument kako bi se osiguralo da je obavezno kupac; Ako to nije slučaj, sustav će obavijestiti korisnika prikazujući poruku o pogrešci; Bilo bi *obavezno* aktivirati ga za sve vrste prodajnih faktura;
 
-**Blocca doc; stampato**: se attivo, questo flag non permette di modificare una fattura che risulti essere già con il flag *Stampato* settato in testata;
+**Zaključaj dokument; otisnut**: ako je aktivno, ovaj flag onemogućuje izmjenu računa koji već ima postavljen flag *Otisnuto* u zaglavlju;
 
-**Intracomunitaria**: se attivo, il sistema verifica che la nazione del cliente sia una *nazione CEE*; Questo flag andrà *impostato solo su tipi fattura Intracomunitari*; Qualora non ci fosse il link tra cliente e tipo fattura intracomunitaria, il sistema ritornerà un messaggio di avviso;
+**Intrakomunitarni**: ako je aktivno, sustav provjerava da li je država kupca *država EU*; Ovaj flag treba *postaviti samo za vrste faktura unutar zajednice*; Ako ne postoji veza između kupca i vrste fakture unutar zajednice, sustav će vratiti poruku upozorenja.;
 
 **Evasione fattura proforma**: se settato, e la fattura è proforma, l'evasione evade l'ordine altrimenti l'ordine rimane non evaso;
 
