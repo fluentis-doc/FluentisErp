@@ -1,5 +1,5 @@
 ---
-title: Tipi fatture di vendita
+title: Vrste prodajnih računa  
 sidebar_position: 20
 ---
 
@@ -45,48 +45,49 @@ Za unos novog zapisa potrebno je kliknuti na prvu praznu liniju u rešetki ili p
 
 **Intrakomunitarni**: ako je aktivno, sustav provjerava da li je država kupca *država EU*; Ovaj flag treba *postaviti samo za vrste faktura unutar zajednice*; Ako ne postoji veza između kupca i vrste fakture unutar zajednice, sustav će vratiti poruku upozorenja.;
 
-**Evasione fattura proforma**: se settato, e la fattura è proforma, l'evasione evade l'ordine altrimenti l'ordine rimane non evaso;
+**Evidentiranje fakture proforme**: ako je postavljeno i faktura je proforma, evidentiranjem se izvršava narudžba; u suprotnom narudžba ostaje neizvršena;  
 
-**Causale trasporto**: Campo di testo libero in cui va indicata una causale di trasporto da poter stampare in fattura;
+**Predložak prijevoza**: slobodno tekstualno polje u koje se upisuje predložak prijevoza koji će biti otisnut na fakturi;  
 
-**Fido**: se attivo, la fattura con questo tipo rientrerà nel controllo del fido;
+**Kredit**: ako je aktivno, račun s ovom vrstom ulazit će u kontrolu limita;
 
-**Escludi blocco:** si riferisce al blocco per superamento del fido e perciò inserito nella gestione Lock Manager presente nell’area tesoreria tra le procedure dell’Utilizzo Fidi. Se attivo, il sistema per questo tipo fattura non considererà il blocco del documento dovuto al superamento del fido ma lascerà all'utente la possibilità di inserire e stampare il documento; se non attivo, il tipo fattura verrà bloccato qualora si superi il fido e all'utente verrà impedito la stampa del documento; 
+**Isključi blokadu:** odnosi se na blokadu zbog prekoračenja fida, definiranu u Lock Manageru unutar područja Riznice u procedurama korištenja fida. Ako je aktivno, sustav za ovu vrstu fakture neće primjenjivati blokadu dokumenta zbog prekoračenja fida te korisnik može unijeti i ispisati dokument. Ako nije aktivno, vrsta fakture bit će blokirana pri prekoračenju fida i korisniku neće biti dopušten ispis dokumenta;   
 
-**Magazzino/Descrizione magazzino**: in questi campi si andrà ad indicare il [magazzino](/docs/configurations/tables/logistics/warehouses) di impegno degli articoli presenti in quel determinato tipo di fattura; il magazzino qui specificato viene riportato in tutte le righe articolo inserite nella fattura di questa tipologia; 
+**Skladište/Opis skladišta**: u ova se polja upisuje [skladište](/docs/configurations/tables/logistics/warehouses) iz kojeg se rezerviraju artikli za tu određenu vrstu fakture. Navedeno skladište prenosi se u sve retke artikala unutar fakture ove vrste;   
 
-**Causale /Descrizione causale magazzino**: in questi campi si andrà invece ad indicare la [causale di movimentazione](/docs/configurations/tables/logistics/warehouse-templates) degli articoli impegnati contenuti in quel determinato tipo di ordine; la causale qui specificata viene riportato in tutte le righe articolo inserite nell’ordine di questa tipologia; 
+**Predložak / Opis predloška skladišta**: u ova polja upisuje se [predložak kretanja](/docs/configurations/tables/logistics/warehouse-templates) za artikle koji se rezerviraju unutar te vrste narudžbe. Navedeni predložak prenosi se u sve retke artikala unutar narudžbe ove vrste; 
 
-**Raggruppamento partite**: se attivo, nella contabilizzazione fatture vengono raggruppate le partite; Per approfondimenti fare riferimento a [raggruppamento partite](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping); 
+**Grupiranje rata**: ako je aktivno, prilikom knjiženja faktura grupe rata se spajaju. Za detalje pogledati odjeljak o [grupiranju rata](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping); 
 
-**Iva agricola per vendite**: se attivo, in fase di creazione DDT, il sistema andrà a verificare se per l'articolo utilizzato è presente un codice dell'IVA agricola altrimenti verrà utilizzato il codice IVA presente nell'anagrafica dell'articolo;
+**Poljoprivredni PDV za prodaju**: ako je aktivno, u fazi kreiranja DDT-a, sustav će provjeriti je li za korišteni artikal prisutan kod za poljoprivredni PDV, inače će se koristiti kod PDV-a prisutan u kartonu artikla;  
 
-**Controlla Picking scaricato**: se attivo, quando si crea una fattura da un Picking scaricato, si attiva in automatico il flag scaricato per la DDT; Se non attivo, il flag non viene attivato; 
+**Kontrola preuzetog Pickinga**: ako je aktivno, pri izradi fakture iz preuzetog Pickinga automatski se aktivira flag “preuzeto” za otpremnicu. Ako nije aktivno, flag se ne aktivira;   
 
-**Blocca quantità Picking**: se attivo, blocca la quantità e la quantità alternativa nella fattura  creata da lista UDC; Se non attivo non blocca la quantità ma la lascia libera; Si consiglia di attivare sempre questo flag qualora si utilizzi la gestione picking e UDC;
+**Zaključaj količinu Pickinga**: ako je aktivno, zaključava količinu i alternativnu količinu u fakturi kreiranoj iz popisa UDC-a. Ako nije aktivno, količina je slobodna za uređivanje. Preporučuje se uvijek aktivirati ovaj flag pri korištenju Pickinga i UDC-a;  
 
-**Calcola provvigioni**: se attivo, le fatture appartenenti a questa tipologia, verranno conteggiate nel il calcolo delle provvigioni agenti;
+**Izračun provizija**: ako je aktivno, fakture ove vrste uključuju se u obračun provizija agenata;  
 
-**Scollega DDT**: se attivo, e in presenza di una fattura di tipo Immediata, consente di effettuare lo scarico sia del DDT che della fattura che lo valorizza. Questa opzione viene generalmente utilizzata quando è necessario movimentare la merce prima dello scarico effettivo del documento. In tali casi, nel DDT si indica una causale di scarico con contropartita di carico (per spostare la merce in un altro magazzino) e successivamente si utilizza la fattura per scaricare definitivamente la merce dal secondo magazzino;   
+**Odvoji otpremnicu**: ako je aktivno, a faktura je tipa “Immediata”, omogućuje istovremeno razduženje i otpremnice i fakture koja je valorizira. Koristi se kad je potrebno evidentirati kretanje robe prije stvarnog razduženja dokumenta. U otpremnici se navodi predložak razduženja s protustavkom za zaduženje (za premještaj u drugo skladište), a zatim se fakturom konačno razdužuje roba iz drugog skladišta;     
 
-**Non evade Picking**: se attivo, non farà evadere il picking qualora venga generata una fattura;
+**Ne izvršava Picking**: ako je aktivno, prilikom generiranja fakture picking neće biti izvršen;  
 
-**Prezzo Ivato**: la gestione dei prezzi ivati si attiva tramite questo parametro presente in tutti i documenti dell’area vendita a partire dai listini di vendita. Nella ripresa prezzi di un documento con tipologia Prezzo Ivato, si cerca nei listini, con lo stesso flag Prezzo Ivato settato, e si calcolano gli sconti partendo sempre dal prezzo ivato. Dal prezzo ivato utilizzando l’aliquota iva dell’anagrafica cliente o dell’anagrafica articolo  viene calcolato il prezzo non ivato.Nei documenti sono visibili le colonne Prezzo e Prezzo Ivato Attenzione! se non esiste un listino valido con settato il flag Prezzo Ivato e in anagrafica articoli c’è un prezzo di vendita, viene proposto come Prezzo Ivato il prezzo di vendita. Per capire il funzionamento della ripresa Prezzi e dei prezzi ivati e non ivati seguire l’articolo Ripresa Prezzi e Sconti nei documenti di vendita.  
+**Cijena s PDV-om**: upravljanje cijenama s PDV-om aktivira se ovim parametrom (dostupnim u svim prodajnim dokumentima, od cjenika nadalje). Pri dohvaćanju cijena traže se cjenici sa istim aktivnim flagom i popusti se računaju uvijek na cijenu s PDV-om. Iz cijene s PDV-om, prema stopi PDV-a iz kartice kupca ili artikla, računa se cijena bez PDV-a. U dokumentima su vidljive kolone Cijena i Cijena s PDV-om.
+Napomena: ako ne postoji valjan cjenik sa aktivnim flagom “Cijena s PDV-om”, a artikl u kartici ima definiranu prodajnu cijenu, ona se uzima kao cijena s PDV-om. Za detalje pogledati članak o dohvaćanju cijena i popusta u prodajnim dokumentima.  
 
-**Competenza economica**: se attivo, il tipo fattura ha competenza economica e quindi sarà necessario impostare le date del periodo di competenza;
+**Ekonomska pripadnost**: ako je aktivno, vrsta fakture ima ekonomsku pripadnost te je potrebno postaviti datume razdoblja pripadnosti;  
 
-**Causale Competenza Economica**: in questo campo va indicata la causale di competenza economica utilizzata in contabilizzazione delle fatture; Questo valore potrà essere scelto da un elenco; Per approfondimenti fare riferimento alle [Causali di contabilità generale](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates);
+**Predložak ekonomske pripadnosti**: U ovo polje upisuje se predložak ekonomske pripadnosti koji se koristi pri knjiženju faktura. Ova se vrijednost može odabrati s popisa. Za detalje pogledati [Predloške glavnog knjigovodstva](/docs/configurations/tables/finance/ledger-records-templates/search-ledger-records-templates);
 
-**Gestione matrici Extra Data**: se attivo, permette di visualizzare nel caso di gestione articoli con matrice, un tab aggiuntivo per l'imputazione dei valori della quantità per singola cella di matrice; Se non attivo, non viene visualizzato questo TAB e la conseguente matrice;
+**Upravljanje matricama Extra Data**: ako je aktivno, kod upravljanja artiklima s matricom prikazuje se dodatna kartica za unos količina za svaku pojedinu ćeliju matrice. Ako nije aktivno, ta kartica i sama matrica nisu vidljive;  
 
-**Stampa**: in questo campo è possibile impostare la stampa di default da utilizzare per questa tipologia di documento; ricordiamo che, in fase di stampa documento, sarà necessario selezionare il report 'Stampe multiple' per utilizzare in automatico la stampa di default;
+**Ispis**: u ovom se polju može postaviti zadani ispis koji će se koristiti za ovu vrstu dokumenta. Podsjećamo da je prilikom ispisa dokumenta potrebno odabrati report Stampe multiple kako bi se zadani ispis primijenio automatski;  
 
-**Numero di copie**: in questo campo vengono impostate il numero di copie documento da stampare; 
+**Broj kopija**: u ovom se polju postavlja broj kopija dokumenta koje će se ispisati;   
 
-**Gestione Conai**: questo bottone abilita la gestione CONAI (Consorzio Nazionale Imballaggi) per il tipo fattura;
+**Upravljanje Conai**: ova tipka aktivira CONAI za ovu vrstu fakture;
 
-**Gestione cespiti**: questo flag abilita la gestione dei cespiti nel tipo fattura e nel campo successivo va specificato il tipo di operazione dei cespiti;
+**Upravljanje osnovnim sredstvima**: ovaj flag aktivira upravljanje osnovnim sredstvima za ovu vrstu fakture, a u sljedećem polju potrebno je odabrati vrstu operacije;  
 
-**Tipo operazione**: in questa combo box è possibile selezionare il tipo di operazione dei cespiti tra diverse opzioni (rivalutazione, distruzione, plusvalenza, ecc.).       
+**Vrsta operacije**: u ovom padajućem izborniku odabire se vrsta operacije nad osnovnim sredstvima (revalorizacija, uništenje, kapitalni dobitak itd.).       
 
-**Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
+**Vrsta popusta / Opis**: u ovoj koloni moguće je pridružiti vrstu popusta koja se predlaže kada se popusti unose izravno u kolonu *Rabat stavke* u tablici artikala (za detalje pogledati članak o [Pojednostavljenom widgetu za popuste](/docs/sales/sales-flow/discount-widget)).
