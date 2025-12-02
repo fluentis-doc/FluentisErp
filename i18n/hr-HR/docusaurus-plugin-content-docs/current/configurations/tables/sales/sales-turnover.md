@@ -21,19 +21,18 @@ Za unos novih zapisa potrebno je kliknuti na prvu praznu red u mreži ili pritis
 
 **Tip iznosa**: koristi se prilikom knjiženja dokumenta; za više detalja provjeriti [upotrebu](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) u administrativnom području.  
 
-**Famiglia prodotti/Descrizione famiglia prodotti**: campo di assegnazione statistica della vendita per il Sales Forecast del Crm.
+**Obitelj proizvoda/Opis obitelji proizvoda**: polje za statističko dodjeljivanje prodaje za Sales Forecast CRM-a.  
 
-**Dettaglio per nazioni**: questi dati sono utilizzati solo per lo scambio dati con programmi esterni. In futuro sarà possibile definire conti di costo diversi per nazione e tipo contabilizzazione articolo, associato in anagrafica cliente.
+**Detalji po zemljama**: podaci se koriste isključivo za razmjenu podataka s vanjskim programima. U budućnosti će biti moguće definirati različite konta troška po zemlji i tipu knjiženja artikla, povezano s karticom klijenta.  
 
-:::note Note
-Se il *Tipo fatturato* viene inserito nell'*Anagrafica articoli* questo codice viene proposto nelle righe articolo del documento di acquisti e automatizza la contabilizzazione dei documenti su un determinato conto di contropartita.
+:::note Napomena
+Ako je *Tip prodajnog prihoda* unesen u *Karticu artikla* ta šifra se automatski predlaže u stavkama artikala dokumenta prodaje i automatizira knjiženje dokumenata na određeni konto kontropartije.  
 :::
 
-#### Esempio di una fattura di vendita:
+#### Primjer prodajne fakture:
 
-Se quindi, il *Tipo fatturato* fosse presente già nell'*Anagrafica articolo*, nei documenti di vendita lo troveremo riportato nel nel tab *Articoli*, nel campo *Fatturato vendite*; nel caso in cui non sia presente in anagrafica articolo, è possibile andarlo a selezionare direttamente all'interno del documento di vendita tramite l'apposita combo box.
+Ako je *Tip prodajnog prihoda* već prisutan u *Kartici artikla*, u dokumentima prodaje će se pojaviti u kartici *Artikli*, u polju *Prodajni prihodi*. Ako nije prisutan u kartici artikla, moguće ga je odabrati izravno unutar dokumenta prodaje putem pripadajuće padajuće liste.
 
-Nel caso in cui non venga inserito nell'anagrafica articolo e non ci si ricordi di andarlo ad inserire manualmente nel documento di vendita, il sistema per non bloccare la contabilizzazione dei documenti, permette (se questa scelta risulta opportuna) di riprendere il sottoconto di contropartita di default che si è deciso di impostare nell'Anagrafica contatto > tab Dati Contabili > tab Amministrazione nel campo **Costo/Ricavo di contropartita predefinito**.
+Ako nije unesen u karticu artikla i zaboravi se unijeti ručno u dokumentu prodaje, sustav, kako bi se ne blokiralo knjiženje, omogućuje (ako je to željena opcija) preuzimanje podkonta kontropartije prema zadanoj vrijednosti postavljenoj u Kartica kontakta > kartica Knjigovodstveni podaci > kartica Administracija > **Cijena/Prir. kontropartije po defaultu**.  
 
-
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostalo što nije detaljno objašnjeno u ovom dokumentu o općem funkcioniranju formi, pogledati [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).

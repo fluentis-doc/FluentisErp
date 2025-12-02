@@ -1,5 +1,5 @@
 ---
-title: Kategorije popusta Upravljanja cijenama
+title: Kategorije popusta upravljanja cijenama
 sidebar_position: 3
 ---
 
