@@ -1,5 +1,5 @@
 ---
 title: Monitorirnaje poslovnih procesa
-sidebar_label: Monitoraggio Business Process
+sidebar_label: Monitorirnaje poslovnih procesa
 sidebar_position: 5
 ---
