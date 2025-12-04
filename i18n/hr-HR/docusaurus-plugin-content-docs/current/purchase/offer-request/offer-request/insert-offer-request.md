@@ -168,19 +168,17 @@ U ovoj kartici prikazane su i/ili se unose dodatne informacije vezane uz odabran
 
 Donosi se popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću unosa novih dodatnih podataka koji su korisni samo za predmetni dokument, uz mogućnost putem odgovarajuće oznake odabrati koje dodatne podatke ispisati.
 
-#### 3.5 Documenti allegati {#attached-documents}
+#### 3.5 Priloženi dokumenti {#attached-documents}
 
-import DocAttachDocument from './../../../import/sections/doc-attach-document.md'
+Prikazuje se detalj eventualnog **Priloženog dokumenta** (naziv, tip dokumenta, eventualne napomene, naš/vaša referenca). Za upute o tome kako priložiti dokument, upućujemo na članak [Priloži dokumente](/docs/guide/common/operations-with-data/attach-documents).
 
-<DocAttachDocument />
+## **4. Sažeci** {#summaries}
 
-## **4. Riepiloghi** {#summaries}
+U sekcijama ove kartice prikazane su glavne informacije koje se odnose na cijeli dokument.
 
-Nelle sezioni di questo tab sono presentate le informazioni principali dell'intero documento.
+### 4.1 Završni popusti na artikle  
 
-### 4.1 Sconti finali articoli
-
-Gli sconti finali applicati a livello di singolo articolo vengono distribuiti (o "spalmati") su ciascuna riga articolo del documento. Questo significa che l'importo dello sconto è suddiviso proporzionalmente tra tutti gli articoli presenti nel documento, e lo sconto relativo sarà visibile nel tab Articoli per ogni singola riga.
+Popusti koji se primjenjuju na razini pojedinog artikla raspoređuju se (ili "proširuju") na svaku liniju artikla u dokumentu. To znači da se iznos popusta proporcionalno dijeli između svih artikala prisutnih u dokumentu, a odgovarajući popust bit će vidljiv na kartici Artikli za svaki pojedinačni redak.
 
 - **Tipo/Descrizione sconto**: permette di scegliere le tipologie di sconto (predefiniti in [Tipi sconti](/docs/configurations/tables/general-settings/discount-types)), attribuendo alla tipologia la priorità di applicazione dello sconto e se lo sconto viene calcolato sull'imponibile o in cascata rispetto agli sconti precedentemente applicati.  
 
