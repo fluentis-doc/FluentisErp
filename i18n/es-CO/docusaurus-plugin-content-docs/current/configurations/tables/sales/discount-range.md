@@ -1,7 +1,6 @@
 ---
 title: Rango de Descuento
 sidebar_position: 17
-ai_generated: true
 ---
 
 La tabla se accede a través de la ruta **Tablas > Ventas > Rango de descuento** y permite definir el elemento sobre el cual establecer la variabilidad de los tramos de aplicación de los descuentos, sobre los cuales definir las comisiones de los agentes.
