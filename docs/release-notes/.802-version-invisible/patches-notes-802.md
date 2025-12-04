@@ -3,6 +3,31 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 802.0015 - 04/12/2025
+
+> -	CO - Coretto bug nella procedura di Calcolo costo inerente al calcolo con l’area gestionale. (#TT04832/25)
+> -	CPQ - Aggiornati i parametri delle funzioni negli script, bugfix generale nella configurazione, corretta la possibilità di eliminare uno script nel workflow domande
+> -	FI - Creazione registrazione contabile da documenti acquisto in entrata: revisione modifica e salvataggio della data competenza in registrazione contabile. Modifications in posting form can have an impact on profiles. (Rif. #TT03307/25)
+> -	FI - Intrastat: Revisione caricamento dati in creazione automatica Intrastat (Rif. TT05014/25).
+> -	FI - Stampa estratto conto: Revisione della stampa dell’estratto conto, ora vengono riportati anche i dettagli di conto e sottoconto dell’anagrafica. (#TT05044/25)
+> -	La modifica del progetto della riga articolo fa ricalcolare il centro della dimensione progetti nel tab di analitica (#TT4994/25)
+> -	MES - Corretto bug nel completamento dati ordine negli ordini di produzione. (#TT04902/25)
+> -	MES - Corretto bug nel MES inerente alla quantità scartata nei materiali impiegati. (#TT05053/25)
+> -	MES - Corretto bug nelle registrazioni delle dichiarazioni di produzione nel calcolo della disponibilità del lotto nel caso questo avesse una data superiore a quella della registrazione stessa. (#TT04517/25)
+> -	MES - Corretto bug nell'importazione delle dichiarazioni di produzione tramite WebApi nel caso in cui venisse importata anche la variante. (#TT05277/25)
+> -	MES - Dichiarazioni di produzione - Nelle dichiarazioni di fasi non movimentabili Il magazzino di versamento delle quantità prodotte e scartate non viene più proposto e non è obbligatorio. (#TT05292/25)
+> -	MES - Nelle dichiarazioni di produzione, l’ubicazione di versamento viene presa dall’ubicazione dalla fase dell'ordine di produzione e non dalla fase standard. (#TT05094/25)
+> -	MES - Non è più possibile cancellare i materiali negli ordini di produzione in stato evaso. (#TT04893/25)
+> -	QY - Tipi prova - Risolta anomalia che visualizzava, nella colonna Categoria tipo prova, le categorie di tutte le società. (#TT05260/25)
+> -	Risolto bug per gestire i parametri di uscita di un’attività senza un result
+> -	Risolto bug segnalato nel ticket (#TT05301/25) di aggiornamento delle dashboard
+> -	SD - Shipping Planner - move on next state doesn't work (#TT05360/25)
+> -	Solved bug to use ftp client on different port
+> -	WM - Aggiunto il Lotto Fornitore in inserimento registrazioni con Web Api. (#TT04962/25)
+> -	WM - Corretta valorizzazione della UM alternativa in generazione DDT e Fattura da picking (rif. #TT04628/25)
+> -	WM - Corretto errore in creazione DDT da lista di prelievo UDC in mancanza di UM peso con flag di riferimento attivo. (#TT04650/25)
+
+
 ### Patch 802.0014 - 27/11/2025
 
 > -	ARM - add duplicate algorithm for business object information (compact grids) (#TT05187/25)
