@@ -1,26 +1,27 @@
 ---
-title: Creazione Ordine fornitore da Offerta fornitore
+title: Kreiranje narudžbenice dobavljaču iz ponude dobavljača
 sidebar_position: 4
 ---
 
-Questa procedura permette la creazione un [Ordine di acquisto](/docs/purchase/purchase-orders/general-overview) partendo da una *Richiesta di offerta*. 
+Ova procedura omogućuje kreiranje [Narudžbenice](/docs/purchase/purchase-orders/general-overview) polazeći od *Zahtjeva za ponudom*. 
    
-La procedura è composta da una parte di filtro, nella quale ricercare in maniera più mirata le RDO, e una griglia di risultato in cui sono visualizzati singolarmente gli articoli. 
+Postupak se sastoji od dva dijela: dijela za filtriranje, kojim se preciznije pretražuju RfQ-ovi, te rezultacijske tablice u kojoj su pojedinačno prikazani artikli.
 
-Tra i filtri particolari di questa maschera citiamo:     
-- **Visualizza le offerte aperte**: se disattivato rende possibile la visualizzazione delle offerte già chiuse, altrimenti saranno viualizzate solo quelle non chiuse; le righe delle offerte chiuse sono visualizzate nella griglia in rosso.     
-- **Non confermati**: permette la visualizzazione delle offerte senza *Data Conferma*.      
-- **Visualizza le offerte già eseguite**: riporta come risultato della ricerca le offerte già convertite in ordine; le righe delle offerte già eseguite sono visualizzate nella griglia in verde.     
-- **Visualizza le offerte non eseguite**: riporta come risultato della ricerca le offerte non ancora convertite in ordine.    
+Među posebnim filtrima ove maske ističu se:      
+- **Prikaži otvorene ponude**: ako je isključeno, omogućuje prikaz već zatvorenih ponuda; u suprotnom se prikazuju samo otvorene. Retci zatvorenih ponuda prikazani su crvenom bojom.       
+- **Nije potvrđeno**: omogućuje prikaz ponuda bez *Datuma potvrde*.       
+- **Prikaži već izvršene ponude**: u rezultatima prikazuje ponude koje su već pretvorene u narudžbenice; retci takvih ponuda prikazani su zelenom bojom.    
+- **Prikaži neizvršene ponude**: u rezultatima prikazuje ponude koje još nisu pretvorene u narudžbenice.   
       
-Nella griglia sono visualizzati i dati degli articoli e le RDO di cui fanno parte.    
-Per processare uno più articoli, è necessario selezionarli con il flag a sinistra delle righe. E' possibile scegliere di processare una quantità diversa rispetto alla quantità totale del documento: basterà indicare la *Quantità confermata* da evadere nell'omonima colonna.    
+U tablici su prikazani podaci o artiklima te pripadajućim RDO-ovima.
+Za obradu jednog ili više artikala potrebno ih je označiti kvačicom s lijeve strane retka.
+Po potrebi je moguće obraditi i količinu koja se razlikuje od ukupne količine u dokumentu — dovoljno je u odgovarajućem stupcu unijeti željenu *Potvrđenu količinu* za izvršenje.    
 
-*Pulsanti specicifici*:   
->- **Crea ordine fornitore**: permette la creazione dell'ordine fornitore per le righe selezionate nella griglia. Una volta cliccato il bottone, si apre un pop-up in cui è possibile scegliere di raggruppare gli ordini fornitore per *Richieste di offerta* oppure per *Conto*, ed è possibile scegliere di *Chiudere le offerte collegate* con il relativo flag (verrà quindi inserita una *Data chiusura* nelle offerte).   
->- **Seleziona**: permette di attivare i flag per tutte le righe selezionate da tastiera.   
->- **Seleziona/Deseleziona tutti**: permette di attivare/disattivare i flag per tutti gli articoli visualizzati nella griglia.   
->- **Seleziona il fornitore**: permette di impostare un nuovo fornitore per l'articolo e apre l'help per selezionarlo.     
->- **Chiudi le offerte**: inserisce una data di chiusura nell'offerta contenente l'articolo selezionato.       
->- **Rollback**: permette di effettuare il rollback dell'ordine fornitore creato e di riportare la RDO in stato *non eseguita*.  
->- **Apri ordine fornitore**: permette di aprire l'ordine fornitore creato per la riga dell'offerta selezionata nella grigia.    
+*Specifične tipke*:     
+>- **Kreiraj narudžbenicu dobavljaču**: omogućuje kreiranje narudžbe dobavljača za odabrane retke u mreži. Kada se klikne na tipku, otvara se iskačući prozor u kojem je moguće odabrati grupiranje narudžbi dobavljača prema *Zahtjevima za ponudu* ili prema *Računu*, te je moguće odabrati *Zatvaranje povezanih ponuda* s pripadajućim flagom (tada će se unijeti *Datum zatvaranja* u ponude).  
+>- **Označi**: omogućuje aktiviranje flagova za sve odabrane retke putem tipkovnice.  
+>- **Označi/Odznači sve**: omogućuje aktiviranje ili deaktiviranje kvačica za sve artikle prikazane u tablici.
+>- **Odaberite dobavljača**: omogućuje postavljanje novog dobavljača za artikl te otvara pomoćni prozor za njegov odabir.     
+>- **Zatvori ponude**: unosi datum zatvaranja u ponudu koja sadrži odabrani artikl.        
+>- **Povrati sve**: omogućuje poništavanje kreirane narudžbenice dobavljaču i vraćanje RDO-a u status *neizvršen*.  
+>- **Otvorite narudžbenicu**: omogućuje otvaranje narudžbenice dobavljaču koja je kreirana za odabrani redak ponude u tablici.

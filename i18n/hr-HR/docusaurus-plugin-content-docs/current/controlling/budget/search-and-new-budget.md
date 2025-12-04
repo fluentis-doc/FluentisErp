@@ -73,19 +73,19 @@ Opcije vrijednost po razdoblju i originalna ekonomska razdoblja su alternativne.
 
 Za ovu vrstu imat ćemo na raspolaganju sljedeće tipke: (Prva dva i posljednji su iste opcije viđene u prethodnoj točki i ne zahtijevaju dodatna objašnjenja).
 
--	Crea da registrazioni contabili
+-	Stvori iz knjiženja
 
--	Crea da chiusure infrannuali
+-	Stvori iz međugodišnjih zatvaranja
 
--	Crea centri di costo dai conti contabili: attiva un popup per selezionare (selezione multipla attiva) la lista dei sotto-budget di tipo *Sottoconto* da utilizzare come origine dati; vengono letti i dati di budget di questi sottoconti e valorizzato il budget per centri di costo leggendo le impostazioni di default del Piano dei conti (legami con i centri ecc...) per ogni sottoconto, ricalcolando eventualmente la variabilità (stesso riferimento del tipo precedente).
+-	Stvori centre troška iz kontnih konta: otvara se skočni prozor (omogućena višestruka selekcija) u kojem se može odabrati popis pod-budžeta tipa Sottoconto koji će se koristiti kao izvor podataka. Učitavaju se budžetski podaci tih sottoconta te se popunjava budžet po centrima troška, koristeći zadane postavke iz Kontnog plana (povezanost s centrima itd.) za svaki sottoconto, uz eventualni ponovni izračun varijabilnosti (kao i kod prethodne vrste).
 
--	Crea centri di costo da storico registrazioni gestionali: attiva un popup (utile solo se viene utilizzato completamente il modulo controlling) per selezionare lo *Storico registrazioni gestionali* (Da anno a anno e da periodo a periodo e l'Area) potendo applicare eventualmente (Flag) le percentuali di variazione.
+-	Stvori centre troška iz povijesti upravljačkih knjiženja: otvara se skočni prozor (koristan samo ako se u potpunosti koristi controlling modul) za odabir *Povijesti upravljačkih knjiženja* (od godine do godine, od razdoblja do razdoblja i područja), uz mogućnost primjene postotaka varijacija (označavanjem polja).
 
--	Raggruppa righe dei dettagli
+-	Grupiraj retke detalja
 
-**BUDGET SU MODELLI DI RICLASSIFICAZIONE**
+**BUDŽET NA MODELINIMA REKLASIFIKACIJE**
 
-Per questa tipologia l’unico pulsante attivo è **Crea valori del modello**, che attiva un popup per selezionare i *sotto-budget* da considerare come origine dati (nella combo box è attiva la selezione multipla con i tasti Ctrl o Shift):
+Za ovu vrstu jedina aktivna tipka je **Stvori vrijednosti modela**, koja otvara skočni prozor za odabir *pod-budžeta* koji će se koristiti kao izvor podataka (u padajućem izborniku omogućena je višestruka selekcija pomoću tipki Ctrl ili Shift):  
 
-- i *sotto-budget* per *sottoconti* saranno utilizzati per valorizzare i nodi (le righe) del modello di riclassificazione [**impostate con tipologia *sottoconti***](/docs/controlling/reclassifications/create-reclassification-model#campi-di-testata)
-- i *sotto-budget* per *centri di costo* saranno utilizzati per valorizzare i nodi (le righe) del modello di riclassificazione [**impostate con tipologia *centri di costo***](/docs/controlling/reclassifications/create-reclassification-model#campi-di-testata)
+- *pod-budžeti* za *Podkonta* koristit će se za popunjavanje čvorova (redaka) modela reklasifikacije [**postavljenih s tipologijom *Podkonta***](/docs/controlling/reclassifications/create-reclassification-model#campi-di-testata)
+- *pod-budžet* za *centre troška* koristit će se za popunjavanje čvorova (redaka) modela reklasifikacije [**postavljenih s tipologijom *centri troška***](/docs/controlling/reclassifications/create-reclassification-model#campi-di-testata)
