@@ -15,7 +15,10 @@ In Fluentis è possibile, una volta configurato il servizio Fluentis Business Hu
 
 *Pulsanti specifici:*
 
-> **Visualizza**: consente di visionare il file XML selezionato con l'apertura del *Registro dei documenti SdI* dove è possibile visualizzare le azioni svolte sul documento, scaricare gli allegati e abbinare il file SdI agli acquisti, alle registrazioni oppure ai percipienti. Per maggiori dettagli su queste procedure si veda il [paragrafo 1](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
+> **Visualizza**: consente di visionare il file XML selezionato con l'apertura del *Registro dei documenti SdI* dove è possibile visualizzare le azioni svolte sul documento, scaricare gli allegati e abbinare il file SdI agli acquisti, alle registrazioni oppure ai percipienti. Per maggiori dettagli su queste procedure si veda il [paragrafo 1](/docs/finance-area/sdi-documents/incoming-purchase-documents).
+:::note[Opzioni di visualizzazione]
+Nella Ribbon Bar è presente la *sezione* *Visualizza* con una apposito pulsante **Alterna View** con il quale quale è possibile cambiare tra due stili alternativi di visualizzazione della fattura: Stile Assosoftware e Stile Agenzia delle Entrate.
+:::   
 > **Apri fattura**: è abilitato solo se il documento selezionato è nello stato *Riceuta* e apre la registrazione contabile/documento di acquisto/compenso a cui il file XML risulta abbinato.   
 > **Scarica allegato**: esegue il download del file XML selezionato.   
 > **Importa il file XML**: apre in automatico una finestra in cui selezionare il/i file da importare nel registro dei documenti SDI.    
@@ -24,6 +27,12 @@ In Fluentis è possibile, una volta configurato il servizio Fluentis Business Hu
 > **Creazione fattura di acquisto**: permette di creare la Fattura di Acquisto a partire del file XML. A seguito della creazione della fattura Fluentis effettua l'associazione automatica del DDT di Acquisto o dell'Ordine fornitore corrispondente, se presente. Per maggiori dettagli vedere il [paragrafo 4](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
 > **Creazione compenso**: permette di creare il compenso a partire dal documento XML. Per procedere è necessario che il Fornitore (o l'Agente) selezionato abbia il flag *Ritenuta d'acconto* attivato. 
 
+> **Stampa / Anteprima di stampa**: permette stampare o generale l'anteprima di stampa del documento XML.
+
+:::note[Opzioni di visualizzazione]
+Nella Ribbon Bar è presente la *sezione* *Visualizza* con una apposita combo box dalla quale è possibile selezionare due modalità alternative Per la stampa: Stile Assosoftware e Stile Agenzia delle Entrate.
+::: 
+> **Stampa / Anteprima di stampa Allegato**: permette stampare o generale l'anteprima di stampa dell'allegato PDF al documento XML, se questo è stato incluso nel file dal Fornitore che ha inviato la fattura elettronica.
 
 ### 1. Abbinamento delle fatture elettroniche di acquisto
 

@@ -7,12 +7,22 @@ La form “**Documenti vendita in uscita**“ è divisa in due sezioni, una di t
 
 ## Pulsanti della ribbon bar:
 
-- Ricerca: avvia la ricerca nella griglia di risultato secondo i dati presenti nei filtri della testata
-- Visualizza: apre il visualizzatore integrato per la visione del file xml secondo il foglio di stile già pre-caricato dentro Fluentis al fine di consentire la visione "in chiaro"
-- Apri documento: viene aperto il documento fattura riferito al file xml in questione
+- **Ricerca**: avvia la ricerca nella griglia di risultato secondo i dati presenti nei filtri della testata
+- **Visualizza**: apre il visualizzatore integrato per la visione del file xml secondo il foglio di stile già pre-caricato dentro Fluentis al fine di consentire la visione "in chiaro"
+:::note[Opzioni di visualizzazione]
+Nella Ribbon Bar è presente la *sezione* *Visualizza* con una apposito pulsante **Alterna View** con il quale quale è possibile cambiare tra due stili alternativi di visualizzazione della fattura: Stile Assosoftware e Stile Agenzia delle Entrate.
+:::
+- **Apri documento**: viene aperto il documento fattura riferito al file xml in questione
 - **Scarica allegato:** viene scaricato localmente nel pc copia del file xml al fine di gestirlo ad esempio con servizi di invio di terze parti
 - **Ricarica file:** E’ attivo quando la riga è in stato *Generata* e permette di ricaricare il file da un folder esterno (locale o di rete); utile per consentire di ricaricare un xml nel quale si è dovuto intervenire manualmente per settare qualche tag particolare o non gestito (senza dover passare per lo step *firmata* come sin passato).
 Fluentis verifica che il file abbia lo stesso nome e che l’xml sia sintatticamente corretto, ma non fa un test sulla struttura Sdi (quindi un tag sbagliato o con valori errati non riceverà nessun messaggio e non avverrà l'invio Sdi). Nel log relativo al file, (premendo ad esempio Visualizza) nel campo **Informazioni** viene riportata la dicitura che il file è stato sovrascritto manualmente e la data.
+- **Stampa / Anteprima di stampa**: permette stampare o generale l'anteprima di stampa del documento XML.
+
+:::note[Opzioni di visualizzazione]
+Nella Ribbon Bar è presente la *sezione* *Visualizza* con una apposita combo box dalla quale è possibile selezionare due modalità alternative Per la stampa: Stile Assosoftware e Stile Agenzia delle Entrate.
+::: 
+
+- **Stampa / Anteprima di stampa Allegato**: permette stampare o generale l'anteprima di stampa dell'allegato PDF al documento XML, se questo è stato incluso nel file.
 
 
 ## Valori presentati nella griglia:
