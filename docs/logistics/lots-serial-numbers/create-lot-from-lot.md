@@ -33,7 +33,7 @@ La form si compone di 3 sezioni distinte:
 - **Causale di carico lotto di destinazione**: indica la causale di carico con la quale verrà caricato il lotto di destinazione.
 - **Ubicazione lotto di destinazione**: indica l'ubicazione nella quale verrà caricato il lotto di destinazione.
 
-:::noteAttenzione
+:::note Attenzione
 Le causali di magazzino che possono essere utilizzate in questa procedura sono solo quelle che hanno il flag **Crea lotto da lotto** attivo nella tabella delle [Causali di magazzino](/docs/configurations/tables/logistics/warehouse-templates/). Per poterlo settare è necessario creare una causale di **Scarico**, con i flag **Gestione lotti** e **Integra quantità iniziale** attivi, il flag **Distinta base** disattivato e deve avere una **contro partita** di **Carico**.
 :::
 

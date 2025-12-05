@@ -36,15 +36,15 @@ Per inserire un nuovo automezzo:
 1. Cliccare sulla prima riga vuota della griglia oppure premere il pulsante **Nuovo**.
 2. Inserire almeno i campi obbligatori richiesti:
 
-   - **Tipo automezzo**: tipologia del mezzo selezionata dalla tabella *Tipo automezzo*;
-   - **Codice**: codice identificativo del mezzo;
-   - **Targa**: numero di targa del mezzo;
-   - **Data registrazione**: data di registrazione del mezzo;
-   - **Tipo carburanti autoveicolo**: tipo di carburante usato, definito nella tabella [Tipo di carburante](/docs/configurations/tables/logistics/motorvehicle-gas-type).
+- **Tipo automezzo**: tipologia del mezzo selezionata dalla tabella *Tipo automezzo*;
+- **Codice**: codice identificativo del mezzo;
+- **Targa**: numero di targa del mezzo;
+- **Data registrazione**: data di registrazione del mezzo;
+- **Tipo carburanti autoveicolo**: tipo di carburante usato, definito nella tabella [Tipo di carburante](/docs/configurations/tables/logistics/motorvehicle-gas-type).
 
 3. È possibile inoltre inserire campi opzionali come:
 
-   - **Marca**: marca del mezzo presente nella tabella [Marchi automezzi](/docs/configurations/tables/logistics/motorvehicle-brands);
+- **Marca**: marca del mezzo presente nella tabella [Marchi automezzi](/docs/configurations/tables/logistics/motorvehicle-brands);
 - **Modello**: indica il modello del mezzo presente nella tabella [Marchi automezzi](/docs/configurations/tables/logistics/motorvehicle-brands);        
 - **Data inizio**: indica la data di inizio di utilizzo dell'automezzo;     
 - **Data scadenza contratto**: indica la data di scadenza del contratto dell'automezzo;  
