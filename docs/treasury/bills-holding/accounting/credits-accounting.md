@@ -52,6 +52,14 @@ In questa sezione sono presenti anche tre campi per la visualizzazione dei total
 **Contabilizzazione**: Esegue la contabilizzazione per le righe selezionate.
 
 
+:::important[Scrittura contabile generata]
+Lo schema contabile della registrazione è fisso e indipendente dalla causale contabile selezionata, in questa fase avverrà lo storno el conto **Contropartita presentato al salvo buon fine / sconto / dopo incasso** (conto transitorio di **presentazione** utilizzato in fase di [***contabilizzazione della distinta***](/docs/treasury/bills-holding/accounting/lists-accounting)) ed in contropartita verrà utilizzato l'altro conto presente nella testata ella distinta: **Banca conto corrente** collegato all'anagrafica banca sul quale avverrà **l'accredito** finale al buon fine dell'operazione.
+
+**Nota** le fasi precedenti sono state:
+- **Presentazione**: storno del conto configurato nella tabella [**Tipi effetti**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) per ogni tipologia e contabilizzazione sul conto in testata distinta Contropartita presentato al salvo buon fine / sconto / dopo incasso;
+- **Emissione**: storno del credito vero il cliente e contabilizzazione sul conto configurato nella tabella [**Tipi effetti**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types), per ogni tipologia
+:::
+
 
 ### Tab Precedenti
 

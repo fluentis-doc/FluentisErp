@@ -39,6 +39,12 @@ Il flag **data scadenza con data valuta uguale a data maturazione**: registrerà
 **Contabilizzazione**: Esegue la contabilizzazione per le righe selezionate.
 
 
+:::important[Scrittura contabile generata]
+Lo schema contabile della registrazione è fisso e indipendente dalla causale contabile selezionata, in questa fase avverrà lo **storno  del conto** utilizzato nella fase precedente di **Contabilizzazione effetti** che è possibile configurare per ogni tipologia di effetto nella tabella [**Tipi effetti**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) ed **in contropartita** verrà utilizzato **il conto** pr la presentazione al salvo buon fine / allo sconto / al dopo incasso **presente nella testata della distinta**. 
+:::
+
+
+
 ### Tab Precedenti
 
 Dalla scheda precedenti è possibile procedere all'annullamento delle contabilizzazioni eseguite. 

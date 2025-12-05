@@ -44,6 +44,11 @@ Si ricorda che non sarà possibile contabilizzare effetti creati da fatture stam
 
 **Contabilizzazione effetti**: Esegue la contabilizzazione per le righe selezionate.
 
+:::important[Scrittura contabile generata]
+Lo schema contabile della registrazione è fisso e indipendente dalla causale contabile selezionata, in questa fase avverrà la chiusura del credito verso il cliente (salvo opzioni alternative definite nei [*parametri portafoglio effetti*](/docs/configurations/parameters/treasury/bills-portfolio-parameters)) ed in contropartita verrà utilizzato un conto (solitamente definito con nomi quali portafoglio attivo o similari) che è possibile configurare per ogni tipologia di effetto nella tabella [**Tipi effetti**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types)
+:::
+
+
 ### Tab Precedenti
 
 Dalla scheda *precedenti* è possibile procedere all'annullamento delle contabilizzazioni eseguite. 

@@ -9,11 +9,21 @@ La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-s
 Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
 :::
 
-La tabella viene compilata attraverso l'imposizione di un codice e di una descrizione utente, ai quali va assegnato poi un numeratore di riferimento, una tipologia di effetto tra quelle predefinite e infine un sottoconto di movimentazione: tale sottoconto sarà utilizzato in contropartita alla chiusura cliente all'interno della procedura di contabilizzazione effetti.
+- **Codice** / **descrizione**: liberamente definibile dall'utente per codificare i possibili tipi di effetto. 
+- **Numeratore**: di riferimento per la numerazione automatica egli effetti ( si tratta i un numeratore standard Fluentis con le relatvie possibili opzioni); 
+- **Natura effetto** predefinite di default idicano la possibile tipologia di effetto
+:::tip[Importante]
+- **Conto - Sottoconto - Descrizione**. il sottoconto inserito in questo campo sarà utilizzato in **contropartita alla chiusura cliente** all'interno della procedura di [***contabilizzazione effetti***](/docs/treasury/bills-holding/accounting/bills-accounting).
+:::
 
-Il tipo effetto può poi essere associato al tipo di pagamento nella tabella omonima.
+:::important[To do!]
+Il tipo effetto può (**raccomandato** per poter filtrare le partite connesse al tipo pagamento nella procedura di creazione effetti dalle partite o dalle fatture) **essere associato al tipo di pagamento** nella [**tabella omonima**](/docs/configurations/tables/general-settings/payment-types#tipi-effetti).
+:::
 
-Da segnalare, infine, che solo gli effetti di tipo cambiario potranno essere gestiti nelle procedura di contabilizzazione insoluti su cessione del modulo Insoluti.
+:::note[Nota]
+Solo gli effetti di tipo cambiario potranno essere gestiti nelle procedura di contabilizzazione insoluti su cessione del modulo Insoluti.
+:::
+
 
 Il flag **Gestione importo parziale** consente di creare effetti che consumano *parzialmente* le partite, indicandone l'importo. Prevede una gestione manuale all'interno dell'effetto.
 
