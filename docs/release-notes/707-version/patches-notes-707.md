@@ -23,6 +23,7 @@ sidebar_position: 1
 > -	WM - Corretta valorizzazione della UM alternativa in generazione DDT e Fattura da picking (rif. #TT04628/25)
 > -	WM - Corretto errore in creazione DDT da lista di prelievo UDC in mancanza di UM peso con flag di riferimento attivo. (#TT04650/25)
 > -	WM - Implementata la possibilità di personalizzare tramite script la possibilità di scrivere anche nella seconda descrizione dell’articolo nel caso in cui si utilizzi il codificatore presente nella classe. (#TT05362/25)
+> - SCM – Quando nell’anagrafica cliente è configurata una spesa percentuale con il flag “Valore spesa minima” attivo, nel documento viene applicato l’importo minimo qualora le spese calcolate risultino inferiori. In caso contrario, la spesa viene determinata come percentuale sull’imponibile. (#TT05073/25) 
 
 ### Patch 707.1-0057 - 28/11/2025
 
