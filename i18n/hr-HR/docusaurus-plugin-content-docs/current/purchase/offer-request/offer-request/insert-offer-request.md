@@ -180,40 +180,40 @@ U sekcijama ove kartice prikazane su glavne informacije koje se odnose na cijeli
 
 Popusti koji se primjenjuju na razini pojedinog artikla raspoređuju se (ili "proširuju") na svaku liniju artikla u dokumentu. To znači da se iznos popusta proporcionalno dijeli između svih artikala prisutnih u dokumentu, a odgovarajući popust bit će vidljiv na kartici Artikli za svaki pojedinačni redak.
 
-- **Tipo/Descrizione sconto**: permette di scegliere le tipologie di sconto (predefiniti in [Tipi sconti](/docs/configurations/tables/general-settings/discount-types)), attribuendo alla tipologia la priorità di applicazione dello sconto e se lo sconto viene calcolato sull'imponibile o in cascata rispetto agli sconti precedentemente applicati.  
+- **Vrsta/Opis popusta**: omogućuje odabir tipova popusta (predefiniranih u [Tipovi popusta](/docs/configurations/tables/general-settings/discount-types)), pri čemu se svakoj vrsti dodjeljuje prioritet primjene te određuje računa li se popust na osnovicu ili se primjenjuje kaskadno, nakon prethodno obračunatih popusta.
 
-- **Priorità**: rappresenta la priorità di applicazione dello sconto; l'ordinamento da applicare avviene in modo crescente.  
+- **Prioritet**: predstavlja redoslijed primjene popusta; primjenjuje se uzlazno sortiranje (niži broj = ranije se primjenjuje).  
 
-- **Cascata/Imponibile**: per definire se il calcolo dello sconto usa come imponibile il (prezzo * quantità) - (sconti già calcolati) oppure (prezzo * quantità).  
+- **Kaskadno/Osnovica**: određuje hoće li se izračun popusta temeljiti na (cijena * količina) - (već primijenjeni popusti) ili na početnoj vrijednosti (cijena * količina).
 
-- **Valore**: valore numerico dello sconto finale da applicare.  
+- **Vrijednost**: numerička vrijednost konačnog popusta koji se primjenjuje.
 
-### 4.2 Totali documento
+### 4.2 Totali dokumenta
 
-- **Importo lordo articoli**: rappresenta la somma dei valori di tutti gli articoli.
+- **Iznos stavki bez popusta**: predstavlja zbroj vrijednosti svih artikala.
 
-- **Acconto**: rappresenta il valore dell'eventuale acconto ricevuto per il documento.
+- **Zaduženje**: predstavlja iznos eventualnog predujma primljenog za dokument.
 
-- **Importo omaggio**: rappresenta l'importo degli articoli di tipo omaggio inseriti nel tab *Articoli*.
+- **Poklonjeni iznos**: predstavlja ukupnu vrijednost artikala označenih kao poklon, unesenih u kartici *Artikli*.
 
-- **Totale sconti applicati**: rappresenta il valore totale degli sconti applicati sugli articoli, escludendo gli sconti finali.
+- **Ukupni primijenjeni popusti**: predstavlja ukupnu vrijednost popusta primijenjenih na artikle, isključujući završne popuste.
 
-- **Importo netto articoli**: *Importo lordo articoli* – *Totale sconti applicati*.
+- **Neto iznos artikala**: *Bruto iznos artikala* – *Ukupni primijenjeni popusti*.
 
-- **Sconti finali articoli**: rappresenta il valore degli sconti finali espressi in percentuale sull'importo lordo degli articoli.
+- **Završni popusti na artikle**: predstavlja iznos završnih popusta izraženih u postotku na bruto iznos artikala.
 
-- **Importo netto sconti finali**: *Importo netto articoli* - *Totale sconti finali*.
+- **Neto iznos nakon završnih popusta**: *Neto iznos artikala* - *Ukupni završni popusti.*.
 
-- **Totale articoli spese**: rappresenta il valore delle spese inserite nel tab precedente come articoli di *Tipo spese*.
+- **Ukupno artikli – troškovi**: predstavlja vrijednost troškova unesenih u prethodnoj kartici kao artikli tipa *Trošak*.
 
-- **Spese di incasso**: rappresenta la somma delle spese di incasso inserite nella griglia delle *Spese*.
+- **Troškovi naplate**: predstavlja zbroj troškova naplate unesenih u tablicu *Troškovi*.
 
-- **Spese bollo**: rappresenta la somma delle spese di bollo inserite nella griglia delle *Spese*.
+- **Troškovi biljeg/markice**: predstavlja zbroj troškova biljeiga/markica unesenih u tablicu *Troškovi*.
 
-- **Totale spese/sconti/maggiorazioni**: rappresenta il valore totale delle spese inserite nella griglia *Spese*.
+- **Ukupno troškovi/popusti/povećanja**: predstavlja ukupnu vrijednost svih troškova unesenih u tablicu *Spese*.
 
-- **Imponibile**: *Importo netto articoli* – *Sconti finali* + *Totale articoli spese* + *Totale spese/sconti/maggiorazioni*.
+- **Osnovica**: *Neto iznos artikala* – *Završni popusti* + *Ukupno artikli – troškovi* + *Ukupno troškovi/popusti/povećanja*.
 
-- **IVA**: rappresenta la somma dei valori contenuti nei riepiloghi IVA.
+- **PDV**: predstavlja zbroj vrijednosti iz PDV rekapitulacija.  
 
-- **Totale**: *Imponibile* + *IVA*.
+- **Ukupno**: *Osnovica* + *PDV*.
