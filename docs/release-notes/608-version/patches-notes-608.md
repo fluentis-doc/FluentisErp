@@ -6,9 +6,7 @@ sidebar_position: 2
 ### Patch 608.1-0082 - 05/12/2025
 
 > - FI - revisione contabilizzazione dei dati iva in caso di importi iva portati a zero nel riepilogo della fattura di acquisto. (#TT01757/25)
-
 > - FI - nei compensi, proposta dei centri di costo legati al costo della contribuzione inps, che vengono ora contabilizzati nella contabilizzazione pagamenti che rileva il costo. (#TT04459/25)
-
 > - PR - nei parametri dei pagamenti fornitori è stato inserito un nuovo parametro, non obbligatorio, per impostare i 3 caratteri da utilizzare di default per il metodo di pagamento (label “modalità versamento”). Tale valore viene riportato in testata della distinta di pagamento e viene utilizzata per il tag `<PmtMtd>`. Se il campo in testata è vuoto, si usano come in precedenza TRF per i bonifici su iban IT e TRA per i bonifici con iban non IT. Modifications in pagamenti fornitori parameters and pagamenti fornitori forms can have an impact on profile (#TT04309/25).
 
 ### Patch 608.1-0081 - 23/10/2025
