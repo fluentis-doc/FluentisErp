@@ -54,7 +54,9 @@ Sulla testata della distinta è presente un flag **Autorizzato** per consentire 
 
 > **Documenti**: Pulsante per il collegamento alla gestione documentale.
 
-
+:::note[Info: Controllo SEPA sui bonifici della ragione sociale del Creditore]
+Il SEPA ha introdotto in alcuni casi un controllo di corrispondenza tra l'intestatario del conto corrente e la ragione sociale del Creditore destinatario del bonifico. Per superare questo controllo in casi di discrepanza el dato legato alla codifica dell'anagrafica è possibile utilizzare un [**Indirizzo alternativo**](/docs/configurations/tables/general-settings/address-types) con apposito flag *Utilizzato in SEPA*
+:::
 ---
 
 ### **VIDEO TUTORIALS**
