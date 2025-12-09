@@ -57,6 +57,13 @@ Sulla testata della distinta è presente un flag **Autorizzato** per consentire 
 :::note[Info: Controllo SEPA sui bonifici della ragione sociale del Creditore]
 Il SEPA ha introdotto in alcuni casi un controllo di corrispondenza tra l'intestatario del conto corrente e la ragione sociale del Creditore destinatario del bonifico. Per superare questo controllo in casi di discrepanza el dato legato alla codifica dell'anagrafica è possibile utilizzare un [**Indirizzo alternativo**](/docs/configurations/tables/general-settings/address-types) con apposito flag *Utilizzato in SEPA*
 :::
+
+:::note[Campo Specifico - Livello di servizio]
+permette di selezionare da una lista fissa pre-caricata una tipologia di servizio per i bonifici quali a esempio *Istantaneo* , *Pago PA*, *Urgente* eccetera da riportare nel tracciato telematico xml.
+
+Il valore di default è impostato tramite i [**Parametri Pagamenti fornitori**](/docs/configurations/parameters/treasury/vendor-payments-parameters).
+:::
+
 ---
 
 ### **VIDEO TUTORIALS**
