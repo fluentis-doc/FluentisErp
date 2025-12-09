@@ -1,28 +1,27 @@
 ---
-title: Estados incobrados
+title: Estado de No Pago
 sidebar_position: 6
-ai_generated: true
 ---
 
-:::tip[FAst Start]<!-- [FAst Start] -->
-La tabla está incluida en el procedimiento de [**Fast Start**](/docs/guide/fast-start)<!-- tabella è interessata dalla procedura di [**Fast Start**] -->
+:::tip[FAst Start]
+La tabla está incluida en el procedimiento de [**Fast Start**](/docs/guide/fast-start)
 
-En caso de que se desee configurar manualmente, consulte la checklist de la página enlazada<!-- Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata -->
+En caso de que se desee configurar manualmente, consulte la lista de verificación de la página enlazada
 :::
 
-La tabla se completa asignando un código y una descripción de usuario para los estados necesarios para la gestión de incobrados<!-- insoluti --> de la empresa, configurando uno de los estados predefinidos entre:
+La tabla se completa asignando un código y una descripción de usuario para los estados necesarios para la gestión de No Remunerado de la empresa, configurando uno de los estados predefinidos entre:
 
-**Incobrado;<!-- Insoluto; -->**  
-**Contabilizado;<!-- Contabilizzato; -->**  
-**Emitido nota de débito (no utilizado);<!-- Emesso note debito (non utilizzato); -->**  
-**Contabilizado nota de débito (no utilizado);<!-- Contabilizzato note debito (non utilizzato); -->**  
-**Cobrado;<!-- Incassato; -->**  
-**Autorizado (no utilizado).<!-- Autorizzato (non utilizzato). -->**
+**No remunerado;**  
+**Contabilizado;**  
+**Emitido nota de débito (no utilizado);**  
+**Contabilizado nota de débito (no utilizado);**  
+**Recopilado**  
+**Autorizado (no utilizado).**
 
-| Función<!-- Funzione --> | Significado | <!-- Significato -->
+| Función | Descripción extendida |
 | --- | --- |
-| Buscar<!-- Ricerca --> | Con este botón se realiza la búsqueda de estados incobrados<!-- stati insoluti --> según los filtros configurados. |
-| Nuevo<!-- Nuovo --> | Sitúa el cursor para ingresar una nueva fila. |
-| Eliminar<!-- Cancella --> | Elimina el tipo de anticipo seleccionado. |
-| Vista previa<!-- Anteprima --> | Realiza la vista previa de impresión de la tabla en uso. |
-| Imprimir<!-- Stampa --> | Realiza la impresión de la tabla en uso. |
+| Buscar | Con este botón se realiza la búsqueda de Estado de No Pago según los filtros configurados. |
+| Nuevo | Sitúa el cursor para ingresar una nueva fila. |
+| Cancelar | Elimina el tipo de anticipo seleccionado. |
+| Vista previa | Realiza la vista previa de impresión de la tabla en uso. |
+| Imprimir Informe | Realiza la impresión de la tabla en uso. |
