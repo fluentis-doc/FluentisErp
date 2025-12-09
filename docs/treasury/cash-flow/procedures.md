@@ -43,7 +43,7 @@ Se viene scelta questa opzione **NON devono essere inseriti anche i conti d'appo
 :::
 
 
-**Escludere Effetti contabilizzati:** Opzione riferita al flusso del Portafoglio Effetti Attivi ed attiva in combinazione con uno dei due flag precedenti (*Usa nella disponibilità attuale* oppure *Usa in scadenza nel castelletto*) che permette di escludere (filtrando) gli effetti già accreditati (leggendo lo stato effetto) oppure, in ogni caso, accreditati in data successiva ad oggi (rilevando la data della scrittura contabile di accredito).
+**Escludere Effetti contabilizzati:** Opzione riferita al flusso del Portafoglio Effetti Attivi ed attiva in combinazione con uno dei due flag precedenti (*Usa nella disponibilità attuale* oppure *Usa in scadenza nel castelletto*) che permette di **escludere** gli effetti **già accreditati** in data precedente all'elaborazione del cashflow (leggendo lo stato effetto e **considerando** **solo quelli** *Non Accreditati* - Flag Accreditato = 0) oppure **accreditati in data successiva** ad oggi, cioè la data di elaborazione del cashflow, (rilevando la data della scrittura contabile di accredito). Quindi questa condizione specifica meglio la lettura delle condizioni di accredito in aggiunta ai due flag precedenti che non eseguono alcuna condizione sullo stato dell'accredito. 
 
 <details>
 
