@@ -7,7 +7,7 @@ Normalmente la simulazione di cash flow viene creata attraverso questa maschera,
 
 Ogni nuova elaborazione andrà a salvare il calcolo associato al campo **Numero**, assegnato automaticamente. E' possibile inoltre associare una **Descrizione** di dettaglio.
 
-*Campi specifici*
+## *Campi specifici*
 
 **Tipo / Descrizione flusso:** ripresi dalla tabella Tipi flusso
 
@@ -19,11 +19,14 @@ Ogni nuova elaborazione andrà a salvare il calcolo associato al campo **Numero*
 
 **Non pagabili:** considera o meno anche le partite aperte nello stato *Non pagabile*
 
-**Usa q.ta residua:** permette di considerare gli ordini secondo la quantità residua da evadere
+**Usa quantità residua:** permette di considerare gli ordini secondo la quantità residua da evadere
 
-**Usa nella disp. attuale:** legge gli effetti in portafoglio PRESENTATI e non insoluti con scadenze superiori ad oggi e li espone alla data di oggi nel conto ORDINARIO presente nella distinta di presentazione (anche se contabilmente l’accredito sarà solo al dopo incasso)
+**Usa nella disponibilità attuale:** legge gli effetti in portafoglio PRESENTATI e non insoluti con scadenze superiori ad oggi e li espone alla data di oggi nel conto ORDINARIO presente nella distinta di presentazione (anche se contabilmente l’accredito sarà solo al dopo incasso)
 
-**Usa in scad. nel castelletto:** permette di considerare anche gli effetti presentati al salvo buon fine. In particolare usa il conto bancario di appoggio per il s.b.f. (salvo buon fine) inserito nella distinta di presentazione (anzichè il conto del cliente così come fa quando l'effetto è soltanto *Emesso*) e lo movimenta in dare in base a quanto presentato nelle varie date di scadenza degli effetti inseriti in distinta.
+**Usa in scadenza nel castelletto:** permette di considerare anche gli effetti presentati al salvo buon fine. In particolare usa il conto bancario di appoggio per il s.b.f. (salvo buon fine) inserito nella distinta di presentazione (anzichè il conto del cliente così come fa quando l'effetto è soltanto *Emesso*) e lo movimenta in dare in base a quanto presentato nelle varie date di scadenza degli effetti inseriti in distinta.
+
+
+
 
 :::danger ATTENZIONE
 Gli effetti inseriti in distinta saranno visibili solo se hanno il flag **Contabilizzato** attivo al loro interno (inquanto è stata effettuata la contabilizzazione dell'emissione). Poichè è comunque possibile inserirli in distinta per la presentazione in banca anche se non stati contabilizzati si consiglia di fare attenzione.
@@ -31,13 +34,27 @@ Gli effetti inseriti in distinta saranno visibili solo se hanno il flag **Contab
 Altra condizione importante è il filtro che esclude (indipendentemente dalla data di filtro impostata prima del lancio del calcolo) gli effetti con data scadenza precedente ad "oggi" ovvero la data di elaborazione del cashflow in questione
 :::
 
+:::tip[Anticipi Fatture]
 Se abilitato in relazione al tipo flusso **Anticipi**, va a rilevare gli importi delle distinte di anticipo fatture non contabilizzate per l'importo anticipato sul conto bancario, con data uguale alla data scadenza anticipata.
+:::
 
-**ATTENZIONE:**
-Se viene scelta questa opzione NON devono essere inseriti anche i conti d'appoggio utilizzati per il s.b.f. nella consistenza finanziaria iniziale (tramite la gestione dei *tipi conto finanziario*,) altrimenti il dato (in termini di flusso di cassa positivo) verrà duplicato e dunque il risultato sarà falsato e non attendibile.
+:::danger[ATTENZIONE]
+Se viene scelta questa opzione **NON devono essere inseriti anche i conti d'appoggio** utilizzati per il s.b.f. nella consistenza finanziaria iniziale (tramite la gestione dei *tipi conto finanziario*,) altrimenti il dato (in termini di flusso di cassa positivo) verrà duplicato e dunque il risultato sarà falsato e non attendibile.
+:::
 
 
-*Dettaglio delle logiche applicate ai tipi flusso*:
+**Escludere Effetti contabilizzati:** Opzione riferita al flusso del Portafoglio Effetti Attivi ed attiva in combinazione con uno dei due flag precedenti (*Usa nella disponibilità attuale* oppure *Usa in scadenza nel castelletto*) che permette di escludere (filtrando) gli effetti già accreditati (leggendo lo stato effetto) oppure, in ogni caso, accreditati in data successiva ad oggi (rilevando la data della scrittura contabile di accredito).
+
+<details>
+
+  <summary>Formula della condizione (Click to expand)</summary>
+  
+  and FSPromissory.IsCredited = 0 or (FSPromissory.IsCredited != 0 and CreditedPosting.Date > 'today')
+
+
+</details>
+
+## *Dettaglio delle logiche applicate ai tipi flusso*:
 
 **Saldo contabile**: il range di date viene utilizzato per calcolare il saldo contabile secondo la data registrazione contabile;
 
