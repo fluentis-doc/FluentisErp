@@ -1,27 +1,26 @@
 ---
-title: Datos Extra
+title: Datos Adicionales
 sidebar_position: 0
-ai_generated: true
 ---
 
-El formulario de **Datos Extra<!-- ExtraData -->** es accesible desde **Configuración<!-- Configurazione -->** > **Utilidades<!-- Utilità -->** > **Datos Extra<!-- ExtraData -->**.
+El formulario de **Datos Adicionales** es accesible desde **Configuración** > **Utilid** > **Datos Adicionales**.
 
-Los **Datos Extra<!-- ExtraData -->** son una forma de añadir **nuevas propiedades** tanto a objetos estándar como personalizados de Fluentis sin necesidad de recurrir al uso de código personalizado<!-- codice custom --> y, por tanto, sin tener que compilar proyectos basados en **código personalizado<!-- codice custom -->**.  
-Todos los principales objetos funcionales como artículos<!-- articoli -->, pedidos<!-- ordini -->, facturas<!-- fatture -->, ya están preparados para la adición de Datos Extra<!-- ExtraData -->.
+Los **Datos Adicionales** son una forma de añadir **nuevas propiedades** tanto a objetos estándar como personalizados de Fluentis sin necesidad de recurrir al uso de código personalizado y, por tanto, sin tener que compilar proyectos basados en **código personalizado**.  
+Todos los principales objetos funcionales como artículos, órdenes, facturas, ya están preparados para la adición de Datos Adicionales.
 
-### Filtro estándar<!-- Filtro Standard -->  
-El filtro estándar permite la búsqueda de los Datos Extra<!-- ExtraData --> definidos en Fluentis por **Código<!-- Codice -->**.  
+### Filtro estándar
+El filtro estándar permite la búsqueda de los Datos Adicionales definidos en Fluentis por **Código**.  
 
-### Datos extra<!-- Extra data -->
+### Datos Adicionales
 
-La tabla contiene los resultados relativos a cada uno de los Datos Extra<!-- Extra Data --> definidos en Fluentis.  
+La tabla contiene los resultados relativos a cada uno de los Datos Adicionales definidos en Fluentis.  
 
-Al abrir el formulario de detalle de un Dato Extra<!-- ExtraData -->, se accede al panel de parametrización de ese Dato Extra<!-- ExtraData -->.
+Al abrir el formulario de detalle de un Dato Adicional, se accede al panel de parametrización de ese Dato Adicional.
 
-#### Botones específicos<!-- Pulsanti specifici -->
+#### Botones específicos
 
-> **Buscar<!-- Search -->**: permite buscar los Datos Extra<!-- ExtraData --> existentes.  
-> **Nuevo<!-- New -->**: permite crear un nuevo Dato Extra<!-- ExtraData -->.  
-> **Editar<!-- Edit -->**: permite abrir en modo lectura-escritura un Dato Extra<!-- ExtraData --> existente.  
-> **Ver<!-- View -->**: permite abrir en modo solo lectura un Dato Extra<!-- ExtraData --> existente.  
-> **Eliminar<!-- Remove -->**: permite eliminar un Dato Extra<!-- ExtraData --> existente.
+> **Buscar**: permite buscar los Datos Adicionales existentes.  
+> **Nuevo**: permite crear un nuevo Dato Adicional.  
+> **Editar**: permite abrir en modo lectura-escritura un Dato Adicional existente.  
+> **Ver**: permite abrir en modo solo lectura un Dato Adicional existente.  
+> **Eliminar**: permite eliminar un Dato Adicional existente.
