@@ -1,46 +1,44 @@
 ---
-title: Evasioni
+title: Izvršenja
 sidebar_position: 5
 ---
 
-Il ciclo di evasione in Fluentis serve a gestire in modo strutturato e integrato l'intero flusso operativo di acquisto, dalla fase iniziale di richiesta di acquisto fino alla fase finale di fatturazione. Ogni fase è caratterizzata da procedure specifiche e configurazioni che garantiscono una gestione fluida e integrata del flusso di lavoro.
+Ciklus ispunjenja u Fluentisu služi za strukturirano i integrirano upravljanje cijelim operativnim tokom nabave, od početne faze zahtjeva za nabavu do završne faze fakturiranja. Svaka faza karakterizira se specifičnim postupcima i konfiguracijama koje osiguravaju glatko i integrirano upravljanje radnim tokom.
 
-## Conversione da Offerta a Ordine
+## Pretvorba ponude u narudžbu  
 
-La procedura di conversione da offerta fornitore a ordine di acquisto può essere avviata: 
+Postupak konverzije iz ponude dobavljača u narudžbu za kupnju može se pokrenuti:
 
-- Dal Menù [Procedure](/docs/purchase/offer-request/procedures/order-creation): andando su *Acquisti > Richieste di Offerta > Procedure > Creazione Ordine fornitore da Offerta fornitore*.
+- Iz izbornika [Procedure](/docs/purchase/offer-request/procedures/order-creation): odabirom *Nabava > Zahtjevi za ponudu > Procedure > Kreiranje narudžbe dobavljača iz ponude dobavljača*.
 
-Questa procedura permette di trasformare una richiesta di offerta in un ordine di acquisto effettivo. 
-Per eseguire la conversione è necessario configurare il Tipo ordine fornitore desiderato nella tabella [Tipo richiesta di offerta](/docs/configurations/tables/purchase/purchase-offer-type). 
+Za izvođenje pretvorbe potrebno je konfigurirati željeni tip narudžbe dobavljača u tablici [Tip zahtjeva za ponudu](/docs/configurations/tables/purchase/purchase-offer-type). 
 
-Durante la procedura di conversione appare un pop-up con le seguenti opzioni:
-- Richiesta di offerta: permette di creare un ordine di acquisto per ciascuna richiesta di offerta.
-- Conto: permette di raggruppare le richieste di offerta per fornitore.
-- Chiudi le offerte collegate: inserisce una *Data chiusura* per le RDO convertite in ordini di acquisto.
+Tijekom postupka pretvorbe pojavljuje se skočni prozor sa sljedećim opcijama:  
+- Zahtjev za ponudu: omogućuje izradu jedne narudžbe za svaki zahtjev za ponudu.  
+- Račun: omogućuje grupiranje zahtjeva za ponudu prema dobavljaču.  
+- Zatvori povezane ponude: umeće *Datum zatvaranja* za sve ZOP-ove koji se pretvaraju u narudžbe.  
 
-Una volta confermata la conversione, il sistema genera un nuovo ordine fornitore utilizzando i dati della richiesta di offerta e avvisa l'utente con un messaggio pop-up riguardante il successo della conversione.
+Nakon potvrde pretvorbe, sustav generira novu narudžbu dobavljača koristeći podatke iz zahtjeva za ponudu te korisnika obavještava putem skočnog prozora o uspjehu postupka.  
 
-Per maggiori dettagli sulla procedura si rimanda all'apposita pagina della documentazione.
+Za više detalja pogledajte odgovarajuću stranicu dokumentacije.  
 
-## Conversione da Richiesta di Acquisto a Ordine
+## Pretvorba zahtjeva za nabavu u narudžbu  
 
-La procedura di creazione Ordine fornitore da Richiesta di Acquisto può essere avviata:
+Postupak kreiranja narudžbe dobavljača iz zahtjeva za nabavu može se pokrenuti:  
 
-- Dal Menù [Procedure](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests): andando su *Acquisti > Ordini Fornitori > Procedure > Creazione automatica ordini*.
+- Iz izbornika [Procedure](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests): *Nabava > Narudžbe dobavljača > Procedure > Automatsko kreiranje narudžbi*.
 
-Questa procedura permette la creazione di uno o più ordini di acquisto a partire da una o più richieste di acquisto e si compone di cinque tab:
+Ovaj postupak omogućuje izradu jedne ili više narudžbi iz jednog ili više zahtjeva za nabavu i sastoji se od pet kartica:  
 
-- Filtro Da: consente di inserire filtri per selezionare le RDA (con stato "Autorizzata") da convertire in ordine.
-- Scelta fornitore: permette di effettuare la scelta del fornitore a cui intestare l'ordine sulla base di diversi criteri tra cui: miglior prezzo di acquisto, fornitore preferenziale di default, migliore condizione di pagamento, ecc.
-- Prototipi ordine: visualizza il riepilogo dell'ordine da creare e consente di generare un nuovo ordine oppure di aggiungere le righe articolo ad un ordine esistente. 
-- Parametri: configura le opzioni di creazione dell'ordine, come il tipo ordine da creare e i dati da utilizzare se non sono codificati per ogni articolo. È possibile scegliere anche di considerare le disponibilità provenienti dalle varie aree del gestionale. 
-- Operazioni: permette di visualizzare, filtrare e annullare le operazioni precedenti. 
+- Filter Od: omogućuje definiranje filtera za odabir ZAN-ova (sa statusom „Odobreno“) koji se pretvaraju u narudžbu.    
+- Odabir dobavljača: omogućuje odabir dobavljača kojem će se narudžba dodijeliti, prema kriterijima poput najbolje cijene nabave, preferiranog dobavljača, najboljih uvjeta plaćanja itd.  
+- Prototipovi narudžbe: prikazuje sažetak narudžbi koje će se kreirati te omogućuje izradu nove narudžbe ili dodavanje stavki postojećoj narudžbi.  
+- Parametri: konfigurira opcije za kreiranje narudžbe, kao što su tip narudžbe i podaci koji će se koristiti ako nisu definirani na artiklima. Također je moguće uključiti raspoloživosti iz različitih modula sustava.  
+- Operacije: omogućuje prikaz, filtriranje i poništavanje prethodnih operacija.  
 
-Una volta confermato il prototipo d'ordine, cliccando sul pulsante *Genera ordini fornitore* il sistema creerà gli ordini di acquisto sulla base dei parametri scelti. 
+Nakon potvrde prototipa narudžbe, pritiskom na tipku *Generiraj narudžbe dobavljača* sustav kreira narudžbe prema odabranim parametrima.
 
-La stessa procedura può essere utilizzata per la creazione Ordini fornitore da Ordini cliente. Per maggiori dettagli si rimanda all'apposita [pagina](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests) della documentazione.
-
+Isti postupak može se koristiti i za kreiranje narudžbi dobavljača iz narudžbi kupaca. Više detalja dostupno je na ovoj [stranici](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests). 
 
 ## Evasione da Ordini a DDT
 
