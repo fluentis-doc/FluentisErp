@@ -40,42 +40,42 @@ Nakon potvrde prototipa narudžbe, pritiskom na tipku *Generiraj narudžbe dobav
 
 Isti postupak može se koristiti i za kreiranje narudžbi dobavljača iz narudžbi kupaca. Više detalja dostupno je na ovoj [stranici](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests). 
 
-## Evasione da Ordini a DDT
+## Evasione da narudžbi u otpremnice  
 
-La procedura di evasione da ordine a Documento di Trasporto è disponibile in due modalità:
+Postupak prijenosa narudžbi u otpremnicu (DDT) dostupan je na dva načina:  
 
-- Dal Menù [Procedure](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): andando su *Acquisti > DDT di Acquisto > Procedure > Evasione da ordini*.
-- Evasione dalla [Testata](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) del DDT: utilizzando il pulsante *Evasione da Ordine* per aprire una finestra di selezione degli ordini confermati del fornitore da trasferire nel DDT.
+- Iz izbornika [Procedure](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): putanja *Nabava > Otpremnice nabave > Procedure > Izvršenje iz narudžbi*.
+- Izvršenje iz [Zaglavlja](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) otpremnice: korištenjem tipke *Izvršenje iz narudžbe* otvara se prozor za odabir potvrđenih narudžbi dobavljača koje se mogu prenijeti u otpremnicu.  
 
-Questa procedura permette di trasformare uno o più ordini di acquisto in uno o più DDT. Prima di avviare la procedura, è necessario configurare il tipo di DDT desiderato nella tabella [Tipi ordine fornitore](/docs/configurations/tables/purchase/purchase-orders-type/). La procedura automatica consente la creazione di DDT solo se l'ordine è stampato e confermato.
+Ovaj postupak omogućuje pretvaranje jedne ili više narudžbi u jednu ili više otpremnica. Prije pokretanja, potrebno je konfigurirati željeni tip otpremnice u tablici [Tipovi narudžbi dobavljača](/docs/configurations/tables/purchase/purchase-orders-type/). Automatsko kreiranje otpremnice moguće je samo ako je narudžba otisnuta i potvrđena.  
 
-Le condizioni per l'evasione sono: 
+Uvjeti za izvršenje:   
 
-- Il fornitore degli ordini deve coincidere con il fornitore del DDT.
-- L'ordine da evadere deve avere il flag "Stampato" e una *Data di Conferma* ordine.
-- Per la seconda procedura il *Tipo ordine* deve avere un *Tipo bolla consegna* associato.
+- Dobavljač na narudžbama mora odgovarati dobavljaču na otpremnici.  
+- Narudžba koja se izvršava mora imati oznaku "Otisnuto" i evidentiran *Datum potvrde*.
+- Ako se izvršenje pokreće iz zaglavlja otpremnice, *Tip narudžbe* mora imati pridružen *Tip otpremnice*.
 
-Le condizioni di raggruppamento degli ordini in DDT possono essere definite nei [Parametri raggruppamento DDT di acquisto](/docs/configurations/parameters/purchase/dn-grouping).
+Pravila grupiranja narudžbi u otpremnice definiraju se u sljedećim parametrima: [Parametri grupiranja otpremnica nabave](/docs/configurations/parameters/purchase/dn-grouping).
 
-Dopo aver selezionato gli ordini e impostato i filtri, cliccando su *Trasferimento* si genererà il DDT con i dati dell'ordine. Se l'evasione è stata eseguita correttamente, l'ordine cambierà automaticamente stato in *"Evaso"* o *"Parzialmente Evaso"*.
+Nakon odabira narudžbi i postavljanja filtera, klikom na, *Prijenos* generira se otpremnica s preuzetim podacima iz narudžbi. Ako je ispunjenje izvršeno ispravno, narudžba će automatski promijeniti stanje u *"Ispunjeno"* ili *"Djelomično ispunjeno"*.
 
-L'evasione da ordine a DDT è completabile anche dalla testata della fattura stessa tramite il pulsante *Evasione da ordine*.
+Ispunjenje narudžbe u otpremnicu može se dovršiti i iz zaglavlja same fakture putem tipke *Ispunjenje narudžbe (Evasione da ordine)*.
 
-## Evasione da DDT a Fatture
+## Evidentiranje otpremnica u račune
 
-La procedura di evasione da DDT a fattura può essere avviata in due modalità:
+Postupak evidentiranja otpremnica u račun može se pokrenuti na dva načina:
 
-- Dal Menù [Procedure](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): andando su *Acquisti > Fatture di acquisto > Procedure > Valorizzazione DDT di acquisto*. 
-- Dalla [Testata] della Fattura di Vendita: utilizzando il pulsante *Evasione DDT* nella testata della fattura.
+- Iz izbornika [Procedure](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): andando su *Nabava > Ulazni računi > Procedure > Vrednovanje otpremnica*. 
+- Iz [Zaglavlja] prodajnog računa: korištenjem tipke *Evidencija otpremnica* u zaglavlju računa.
 
-Questa procedura permette di creare una o più fatture a partire da uno o più DDT. La procedura si compone di tre tab principali:
+Ovaj postupak omogućuje izradu jednog ili više računa na temelju jedne ili više otpremnica. Sastoji se od tri glavne kartice:
 
-- Valorizzazione: Consente di inserire filtri per selezionare i DDT da fatturare (con stato "Controllato") e specificare la data di creazione della fattura.
-- Parametri: Configura il tipo fattura da creare, se non indicata nella tabella [Tipi DDT](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) e i riferimenti DDT da riportare nella fattura.
-- Precedenti: Permette di visualizzare, filtrare e annullare le operazioni di fatturazione precedenti.
+- Vrednovanje: omogućuje unos filtera za odabir otpremnica koje će se fakturirati (sa statusom „Kontrolirano”) te određivanje datuma kreiranja računa.  
+- Parametri: konfigurira vrstu računa koji će se izraditi, ako nije definirana u tablici [Vrste otpremnica](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) te koje će se reference otpremnice prenijeti na račun.  
+- Prethodni: omogućuje pregled, filtriranje i poništavanje ranijih postupaka fakturiranja.  
 
-Le condizioni di raggruppamento dei DDT in fattura possono essere definite nei [Parametri raggruppamento fattura di acquisto](/docs/configurations/parameters/purchase/invoice-grouping/).
+Uvjeti grupiranja otpremnica u račun mogu se definirati u [Parametrima grupiranja ulaznih računa](/docs/configurations/parameters/purchase/invoice-grouping/).
 
-Dopo aver selezionato i DDT e impostato i parametri, è possibile procedere con la creazione della fattura cliccando su *Valorizzazione DDT di acquisto*.
+Nakon odabira otpremnica i postavljanja parametara, izrada računa pokreće se klikom na *Vrednovanje otpremnica*.
 
-L'evasione da DDT a fattura è completabile anche dalla testata della fattura stessa tramite il pulsante *Evasione DDT*.
+Evidentiranje otpremnica u račun može se dovršiti i iz samog zaglavlja računa putem tipke *Evidencija otpremnica*.

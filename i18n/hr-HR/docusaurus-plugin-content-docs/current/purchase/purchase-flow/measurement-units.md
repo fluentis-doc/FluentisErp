@@ -1,15 +1,15 @@
 ---
-title: Gestione Unità di misura principale e alternativa
+title: Upravljanje glavnom i alternativnom jedinicom mjere
 sidebar_position: 4
 ---
 
-Questa funzionalità permette di definire e utilizzare diverse **unità di misura** per lo stesso prodotto in contesti differenti, come la vendita, l'acquisto o la gestione del magazzino.
+Ova funkcionalnost omogućuje definiranje i korištenje različitih **jedinica mjere** za isti proizvod u različitim kontekstima, poput prodaje, nabave ili upravljanja skladištem.
 
 :::note
-Per abilitare la gestione delle **unità di misura alternative**, è necessario attivare il flag **Gestione doppia unità di misura** nei [Parametri](/docs/configurations/parameters/sales/dn-parameters).
+Za aktiviranje upravljanja **alternativnim jedinicama mjere**, potrebno je uključiti opciju **Upravljanje dvostrukom jedinicom mjere** u [Parametrima](/docs/configurations/parameters/sales/dn-parameters).
 :::
 
-L'**unità di misura principale**, obbligatoria, viene definita per ogni articolo nella sua anagrafica e non può essere modificata dopo l’utilizzo dell’articolo nei documenti o nei movimenti di magazzino. L'**unità di misura alternativa**, invece, consente di gestire il prodotto in un'unità diversa rispetto a quella principale e può essere impostata nel tab [Unità di Misura Alternative](/docs/erp-home/registers/items/create-new-item) dell’anagrafica articolo.
+**Glavna jedinica mjere**, koja je obavezna, definira se za svaki artikl u njegovoj osnovnoj kartici i ne može se mijenjati nakon što je artikl već korišten u dokumentima ili skladišnim zapisima. L'**unità di misura alternativa**, invece, consente di gestire il prodotto in un'unità diversa rispetto a quella principale e può essere impostata nel tab [Unità di Misura Alternative](/docs/erp-home/registers/items/create-new-item) dell’anagrafica articolo.
 
 Nei documenti, l'unità di misura principale viene mostrata nella griglia degli **Articoli**, mentre il widget dell'unità di misura alternativa è visibile nel tab**Dati articolo**, contenente i campi**Quantità Alternativa** e**Prezzo Unità di Misura Alternativa**, ma solo se il flag **Gestione Doppia Unità di Misura** è attivo nei parametri del modulo.
 
