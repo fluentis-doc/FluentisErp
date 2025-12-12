@@ -3,6 +3,28 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 802.0016 - 12/12/2025
+
+> -	Add flag StartTls on BizLink Service Mail Connector
+> -	ARM - WEBAPI: corretto caso per cui abilitando un campo nel tracciato di una webapi, la proposta automatica del tag mancava dell'ultimo carattere del nome campo. (#TT05391/25)
+> -	CO - Elaborazione periodi optimization ( TT05417/25)
+> -	FI - Creazione registrazioni contabili: risolto problema in fase di inserimento registrazioni in prima nota (Rif. Ticket TT05213/25).
+> -	MS - Aggiunto l’id nella risposta della webapi ReleaseResourcesRequirementsOrders. (#TT04918/25)
+> -	MS - Nel report della costificazione commesse è stato aggiunto il riepilogo per articolo anche nel caso in cui la commessa sia multiprodotto. (#TT05218/25)
+> -	MS - Reintrodotta la possibilità di inserire quantità negative nei componenti della distinta base. (#TT04892/25)
+> -	PM - WEBAPI dichiarazione attività - corretto caso per cui lo stato attività non veniva importato. (#TT05374/25)
+> -	PR - Corretto errore nel calcolo del Fatturato 12 mesi precedenti e visualizzazione clienti nella procedura Esposizione clienti. Modulo Rischio clienti. Rif. #TT04644/25
+> -	PR - nei parametri dei pagamenti fornitori è stato inserito un nuovo parametro, non obbligatorio, per impostare i 3 caratteri da utilizzare di default per il metodo di pagamento (label “modalità versamento”). Tale valore viene riportato in testata della distinta di pagamento e viene utilizzata per il tag `PmtMtd`. Se il campo in testata è vuoto, si usano come in precedenza TRF per i bonifici su iban IT e TRA per i bonifici con iban non IT. Modifications in pagamenti fornitori parameters and pagamenti fornitori forms can have an impact on profile. (#TT04309/25)
+> -	QY - Certificati di analisi - Corretta l'anomalia della mancata importazione del riferimento del Lotto dai controlli effettuati. (#TT05415/25)
+> -	Revisione gestione cambiamento Cdc nei documenti per le righe della dimensione progetti già valorizzate (#TT05477/25)
+> -	SD - Fix SalesOrder block at saving(. #TT01258/21)
+> -	SD - Il cambio del centro di costo ora va a riassegnare il sottoconto verificando il tipo contabilizzazione articolo (#TT05483/25)
+> -	SD - Calendario spedizioni - corretto funzionamento "Passa allo stato successivo" da tasto destro ed ordinamento stati all'interno della videata della spedizione (#TT05360/25)
+> -	WM - Implementata la possibilità di personalizzare tramite script la possibilità di scrivere anche nella seconda descrizione dell’articolo nel caso in cui si utilizzi il codificatore presente nella classe. (#TT05362/25)
+> -	WM -Corretto bug in fase di generazione dei movimenti di magazzino, che non generava l'extension nella contropartita se presente nel movimento principale. (#TT05378/25)
+> -	WM - Aggiungere parametro ShowItemsArchived (default: false) all'API WM/ItemsAvailability/getItemsAvailability (#TT05322/25)
+> -	WMS Maui - Ricevimento merce - Scorrimento automatico griglia in inserimento UDC. (#TT04475/25)
+
 ### Patch 802.0015 - 04/12/2025
 
 > -	CO - Coretto bug nella procedura di Calcolo costo inerente al calcolo con l’area gestionale. (#TT04832/25)
