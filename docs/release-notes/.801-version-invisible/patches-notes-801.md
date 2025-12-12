@@ -3,6 +3,17 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 801.0030 - 12/12/2025
+
+> -	FI - Creazione registrazioni contabili: risolto problema in fase di inserimento registrazioni in prima nota (Rif. Ticket TT05213/25).
+> -	PM - WEBAPI dichiarazione attività - corretto caso per cui lo stato attività non veniva importato. (#TT05374/25)
+> -	QY - Certificati di analisi - Corretta l'anomalia della mancata importazione del riferimento del Lotto dai controlli effettuati. (#TT05415/25)
+> -	QY - Controllo articoli - Anomalia risolta nel widget dell'Ordine di produzione presente nel Filtro del controllo articoli che, in presenza di un numero elevato di Ordini da filtrare, costringeva l'utente a, una volta effettuato un primo filtro, eliminare il contenuto per poter filtrare il dato una seconda volta. (#TT05269/25)
+> -	QY - Tipi prova - Risolta anomalia che visualizzava, nella colonna Categoria tipo prova, le categorie di tutte le società. (#TT05260/25)
+> -	SD - Fix SalesOrder block at saving (#TT01258/21).
+> -	SH - fix grid column visibility handling to/from profiles (TT03851/25).
+> -	WM -Corretto bug in fase di generazione dei movimenti di magazzino, che non generava l'extension nella contropartita se presente nel movimento principale. (#TT05378/25)
+
 ### Patch 801.0029 - 28/11/2025
 
 > -	FI - Corretto comportamento del flag Contabilizzato nel compenso percipiente, editabile se non contabilizzato con la procedura automatica e bloccato nel caso contrario. Modifications in compensi form can have an impact on profiles. ( #TT05242/25)
