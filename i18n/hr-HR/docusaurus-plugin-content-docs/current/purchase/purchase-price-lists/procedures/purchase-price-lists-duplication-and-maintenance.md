@@ -41,7 +41,7 @@ Dostupne tipke u traci izbornika su:
 Ako se ne specificira *Datum početka valjanosti*, ažuriranje ne daje nikakve rezultate i ne izvršava se.
 :::  
 
-- **Izađi**: apre un pop up in cui inserire la *Data fine validità* per le righe listino selezionate; la *Data di fine validità* deve essere maggiore alla maggior data dell'ultimo documento riferito alle righe listino da chiudere (far scadere).      
-- **Duplica listini**: apre un pop up e, per le righe listini selezionate, crea o aggiunge le nuove righe ad un nuovo listino o ad un listino già esistente; è possibile, per le righe selezionate, creare un nuovo listino andando a specificare il *Fornitore*, che può essere diverso rispetto a quello del listino di partenza, la *Data validità da* e la *Divisa*; con il flag *Mantieni le stesse date del listino di origine* si crea un listino intestato ad un fornitore diverso ma con le stesse date validità.
-- **Sconti**: apre un pop up per assegnare alle righe selezionate degli *Sconti* di riga, aggiungendoli a quelli presenti o sostituendoli utilizzando il check button *Cancella Sconti precedenti*.
-- **Riapertura listini**: se viene usato, in caso di righe listino con *Data fine validità*, tali righe vengono riportate nel listino *senza* data fine validità.
+- **Izađi**: otvara skočni prozor u kojem se unosi *Datum isteka valjanosti* za odabrane stavke cjenika; *Datum isteka valjanosti* mora biti veći od najkasnijeg datuma posljednjeg dokumenta koji se odnosi na stavke cjenika koje treba zatvoriti (isteći).       
+- **Kopiraj cjenike**: otvara skočni prozor i, za odabrane stavke cjenika, stvara ili dodaje nove stavke u novi cjenik ili u već postojeći cjenik; moguće je, za odabrane stavke, stvoriti novi cjenik specificirajući *Dobavljača*, koji može biti različit od onog u početnom cjeniku, *Datum valjanosti od* i *Valutu*; s flagom *Zadrži iste datume kao u izvornom cjeniku* stvara se cjenik na ime drugog dobavljača, ali s istim datumima valjanosti.    
+- **Popusti**: otvara iskačući prozor za dodjeljivanje odabranim redovima *Popusta* po redu, dodajući ih postojećima ili ih zamjenjujući korištenjem prekidača *Izbriši prethodne popuste*.    
+- **Ponovno otvaranje cjenika**: se se koristi, u slučaju redaka cjenika s *Datumom isteka valjanosti*, ti redovi se prikazuju u cjeniku *bez* datuma isteka valjanosti.  
