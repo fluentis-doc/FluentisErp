@@ -3,6 +3,12 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0126 - 12/12/2025
+
+> - Estratto conto - fix per apertura conti.
+
+> - CO - Elaborazione periodi optimization (TT05417/25).
+
 ### Patch 545.1-0125 - 27/11/2025
 
 > - Dichiarazione D300 - allineamento alle novità legislative per la localizzazione rumena.
