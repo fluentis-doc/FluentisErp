@@ -7,9 +7,8 @@ La form si trova in Tesoreria > Portafoglio Effetti > Contabilizzazione > Contab
 
 Da questa maschera si procede alla contabilizzazione distinte: la procedura chiuderà il conto collegato al [**tipo**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) degli effetti inseriti in distinta e aprirà il conto transitorio della banca inserito nella distinta.
 
-::tip[Nota]
+:::note[Nota]
 Generalmente si può eseguire questa procedura direttamente **dentro la distinta** con l'apposito pulsante per la sua **Contabilizzazione**.
-
 Dalla presente maschera risulta invece possibile eseguire una contabilizzazione massiva di più distinte.
 :::
 
