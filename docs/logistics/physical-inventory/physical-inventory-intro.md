@@ -1,9 +1,26 @@
 ---
-title: Introduzione
+title: Introduzione agli Inventari Fisici
+description: Introduzione alle funzionalità dell’area Inventari Fisici - creazione liste, rilevazione giacenze, allineamento fisico/logico, valorizzazioni e storico.
+keywords:
+  - inventari fisici
+  - magazzino
+  - valorizzazione
+  - differenze inventariali
 sidebar_position: 1
+schema: TechArticle
+tags:
+  - inventario
+  - magazzino
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Il modulo consente all'operatore di creare le liste inventariali, popolarle e confrontare i dati sulle giacenze fisiche con le giacenze logiche. Il sistema, in modo automatico e secondo i parametri inseriti dall'utente, procederà all'allineamento delle giacenze logiche con quelle fisiche allineando quindi il magazzino informatico a quello fisico. Una volta effettuata questa operazione sarà poi possibile passare alla valorizzazione del magazzino.
+# Introduzione agli Inventari Fisici
+
+Il modulo consente all'operatore di creare e gestire le liste inventariali, rilevare le giacenze fisiche e confrontarle con le giacenze logiche presenti nel sistema.  
+In base ai parametri configurati, Fluentis permette di allineare automaticamente le giacenze logiche a quelle fisiche, sincronizzando il magazzino informatico con lo stato reale delle merci.  
+
+Una volta completata la fase di allineamento, diventa possibile procedere con la **valorizzazione del magazzino**.
 
 ## I documenti gestiti
 
@@ -27,16 +44,23 @@ import Link from '@docusaurus/Link';
     </div>
 </div>
 
-## Per iniziare ad utilizzare   
+## Per iniziare a utilizzare gli Inventari fisici
 
-gli **Inventari fisici**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)        
-- definire correttamente le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates) da utilizzare       
-- definire i [*Parametri iniziali di magazzino*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)          
-- definire i [*Parametri differenze inventariali*](/docs/configurations/parameters/logistics/stock-difference/)           
-- definire un [*Tipo lista inventariale*](/docs/configurations/tables/logistics/stock-lists-types/)        
-- creare un dipendente nella tabella [Dipendenti](/docs/project-management/registers/employee/new-employee/)
+Per lavorare correttamente con gli **Inventari fisici**, è necessario predisporre i seguenti dati:
 
+- creare articoli nell’[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item)
+- definire le [*Causali di magazzino*](/docs/configurations/tables/logistics/warehouse-templates)
+- configurare i [*Parametri iniziali di magazzino*](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters)
+- impostare i [*Parametri differenze inventariali*](/docs/configurations/parameters/logistics/stock-difference/)
+- definire un [*Tipo lista inventariale*](/docs/configurations/tables/logistics/stock-lists-types/)
+- creare un dipendente nella tabella [*Dipendenti*](/docs/project-management/registers/employee/new-employee/)
 
 ## Collegamenti con altri moduli
-Dalle [*Registrazione di magazzino*](/docs/logistics/warehouse/stock-records/record) è possibile visualizzare i risultati dell'**inventario** e delle **chiusure di magazzino**.
+
+Dalle [*Registrazioni di magazzino*](/docs/logistics/warehouse/stock-records/record) è possibile visualizzare:
+
+- i risultati degli inventari fisici  
+- le chiusure di magazzino  
+- le movimentazioni generate dall’allineamento delle giacenze  
+
+Questo consente una visione completa e integrata del processo inventariale.
