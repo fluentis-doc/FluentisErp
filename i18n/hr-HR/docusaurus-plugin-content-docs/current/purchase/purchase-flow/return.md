@@ -1,37 +1,38 @@
 ---
-title: Gestione Resi e Note di Accredito
+title: Upravljanje povratima i storno računima
 sidebar_position: 3
 --- 
 
-La gestione dei **resi a fornitore** e delle **note di accredito** consente di amministrare i flussi di ritorno delle merci e i relativi aggiustamenti finanziari con i fornitori.    
+Upravljanje **povratima dobavljaču** i **storno računima** omogućuje praćenje povratnog toka robe te pripadajućih financijskih ispravaka u odnosu na dobavljače.     
 
-:::important Ricorda
-I **resi fornitore** si differenziano dalle altre tipologie di fatture perchè la *Natura fattura* (presente nella tabella [Tipi fatture di acquisto](/docs/configurations/tables/purchase/purchase-invoices-type)) è **Nota accredito da Fornitore**. Analogamente, il DDT di reso avrà [Natura](/docs/configurations/tables/purchase/purchase-delivery-notes-type) **Reso**. 
+:::important Zapamti
+**Povrati dobavljaču** razlikuju se od ostalih vrsta ulaznih računa jer je *Vrsta računa* (u tablici [Vrste ulaznih računa](/docs/configurations/tables/purchase/purchase-invoices-type)) postavljena na **Storno od dobavljača**. Otpremnica povrata imat će [Vrstu](/docs/configurations/tables/purchase/purchase-delivery-notes-type) **Povrat**. 
 :::
 
-### Creazione del Reso fornitore
+### Kreiranje povrata dobavljaču
 
-Quando viene restituito un prodotto a un fornitore, il processo inizia con la creazione di un documento di reso nel gestionale. Questo documento può essere inserito manualmente (creando un DDT di *Reso* o una *Nota di accredito* e inserendo manualmente gli articoli da stornare), oppure automaticamente tramite la procedura di *Storno* disponibile nella ricerca dei documenti. 
+Kada se proizvod vraća dobavljaču, proces započinje izradom dokumenta o povratu u sustavu. Ovaj dokument može se unijeti ručno (kreiranjem otpremnice tipa *Povrat* ili *Storno računa* i ručnim unosom artikala koje treba stornirati), ili automatski putem postupka *Storno* dostupnog u pretraživanju dokumenata.  
 
-Nella ribbon bar della [Ricerca fatture di acquisto](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) è presente il pulsante **Storno fatturazione** (analogamente, nella [Ricerca DDT di acquisto](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/search-delivery-note) è presente il pulsante **Storno**). Questo pulsante permette di creare un reso collegato alla fattura di acquisto selezionata.    
-Una volta selezionata la fattura da stornare e premuto il bottone, si apre la maschera **Storno documento**, nella quale è necessario flaggare gli articoli da rendere e indicare la [tipologia](/docs/configurations/tables/purchase/purchase-invoices-type) di documento da creare (vengono proposti solo i documenti con Natura *Nota accredito da fornitore*). Una volta confermata la procedura, verrà creata la fattura di storno, visibile dalla Ricerca fatture. La fattura viene creata con la data odierna e avrà l'importo totale degli articoli da stornare preso dalla fattura di partenza.    
+U traci izbornika unutar [Pretraživanja ulaznih računa](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) nalazi se tipka **Storno fakturiranja** (dok se u [Pretraživanju ulaznih otpremnica](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/search-delivery-note) nalazi tipka **Storno**). Ova tipka omogućuje kreiranje povrata povezanog s odabranim ulaznim računom.  
+Nakon što se odabere račun koji se stornira i pritisne tipka, otvara se prozor **Storno dokumenta**, u kojem je potrebno označiti artikle koji se vraćaju te odabrati [Tipologiju](/docs/configurations/tables/purchase/purchase-invoices-type) dokumenta koja se treba stvoriti (predloženi su samo dokumenti s prirodom *Potvrda o kreditu od dobavljača*). Nakon što se postupak potvrdi, bit će stvoren račun za povrat, vidljiv u Pretraživanju računa. Račun se stvara s današnjim datumom i imat će ukupni iznos artikala koji se vraćaju preuzet iz početnog računa.
 
-Se viene creato un **DDT di reso**, invece, il sistema può generare automaticamente la nota di accredito corrispondente utilizzando le procedure di [Valorizzazione DDT di Acquisto](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) oppure mediante l'[Evasione DDT](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) dall'interno di una nuova *Nota di Accredito*.
+Ako se kreira **otpremnica povrata**, sustav može automatski generirati i pripadajući storno račun putem postupka [Vrednovanja ulaznih otpremnica](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) ili kroz [Evidentiranje otpremnice](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) unutar nove *Storno fakture*.
 
-Prima di essere finalizzata, la nota di accredito può essere controllata e modificata, se necessario. Al salvataggio di una nota di accredito, viene proposta la modifica dei segni di tutti i tipi di spesa associati, ma è possibile decidere liberamente se accettare la modifica o meno.    
+Prije nego što bude finalizirana, nota o odobrenju može se provjeriti i izmijeniti, ako je potrebno. Pri spremanju note o odobrenju, predlaže se izmjena oznaka svih vrsta troškova povezanih s njom, ali je moguće slobodno odlučiti hoće li se izmjena prihvatiti ili ne. 
 
-Anche per i **resi** è possibile utilizzare le diverse **Stampe** previste dal modulo, basterà filtrare per la tipologia di documento prescelto. 
+Za **povrate** je moguće koristiti sve dostupne **Ispise** u modulu, uz filtriranje željene vrste dokumenta.  
 
-### Aggiornamento delle Scorte
+### Ažuriranje zaliha  
 
-Dopo aver registrato a magazzino il documento di storno, il sistema aggiorna automaticamente le scorte del magazzino per riflettere il rientro della merce, diminuendo la giacenza e la disponibilità degli articoli resi.    
+Nakon knjiženja dokumenta povrata u skladištu, sustav automatski ažurira zalihe, smanjujući količinu i raspoloživost artikala koji su vraćeni.   
 
-### Aggiornamento della Contabilità
+### Ažuriranje računovodstva  
 
-Una volta contabilizzata, la **nota di accredito** aggiorna i registri contabili, riducendo l’importo dovuto al fornitore. Questo può comportare una diminuzione del saldo aperto o un rimborso, a seconda degli accordi contrattuali con il fornitore.    
+Nakon knjiženja, **storno račun** ažurira računovodstvene evidencije, smanjujući dugovanje prema dobavljaču. To može rezultirati smanjenjem otvorene stavke ili povratom sredstava, ovisno o dogovoru s dobavljačem.      
 
 :::note Nota
-Dalla versione 607 le **Note di accredito** vengono gestite con il segno meno. Al momento del salvataggio della fattura **Fluentis** cambierà il segno degli articoli e delle spese avvisando l'utente con un pop up.    
-La gestione della contabilizzazione del documento non cambia rispetto al passato in quanto il documento negativo continua ad essere defalcato dal registro iva (prima veniva convertito in negativo al momento della contabilizzazione). L'invio del documento allo sdi tramite generazione del file .xml prevede un nuovo cambio di segno in conformità alle specifiche tecniche per la fatturazione elettronica.   
-La modifica in commento si è resa necessaria, pertanto, soprattutto per una migliore gestione delle statistiche e delle elaborazioni connesse.
+Od verzije 607 **storno računi** vode se s negativnim predznakom. Prilikom spremanja dokumenta, **Fluentis** automatski će promijeniti predznak artikala i troškova te o tome obavijestiti korisnika putem pop-up poruke.
+Postupak knjiženja ostaje nepromijenjen, budući da se negativni dokument i dalje knjiži u PDV evidenciju (ranije se predznak mijenjao tek tijekom knjiženja).
+Prilikom slanja dokumenta u SDI putem .xml datoteke, predznak se ponovno prilagođava tehničkim specifikacijama elektroničkog računa.
+Ova izmjena uvedena je radi boljeg upravljanja statistikom i pripadajućim analitičkim prikazima.  
 :::
