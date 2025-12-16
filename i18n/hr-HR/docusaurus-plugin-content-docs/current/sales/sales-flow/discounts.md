@@ -1,14 +1,14 @@
 ---
-title: Ripresa prezzi e sconti
+title: Preuzimanje cijena i popusta
 sidebar_position: 1
 ---
 
-I prezzi dei prodotti possono essere definiti nei listini di vendita o direttamente nell’anagrafica articoli. Nei listini, i prezzi possono essere "ivati" o "non ivati", una differenza determinata dall’attivazione del flag "Prezzo Ivato" nella testata del listino.
+Cijene proizvoda mogu se definirati u cjenicima ili izravno u kartonu artikala. U cjenicima, cijene mogu biti "s PDV-om" ili "bez PDV-a", a razlika je određena aktivacijom flag-a "Cijena s PDV-om" u zaglavlju cjenika.
 
 **Tipologie di Listino**      
-I listini si dividono in due categorie principali: generale e per cliente. I listini generali devono essere configurati nell’apposita tabella, dove è anche possibile specificare se il listino è "ivato" o "non ivato" tramite un flag. I listini per cliente utilizzano come codice il conto e sottoconto del cliente, rendendoli univoci e personalizzati.
+I listini se dijele u dvije glavne kategorije: opći i po kupcu. Opći listini moraju biti konfigurirani u odgovarajućoj tablici, gdje je također moguće specificirati je li listina "s PDV-om" ili "bez PDV-a" putem flag-a. Listini po kupcu koriste kao kod račun i podračun kupca, čineći ih jedinstvenima i prilagođenima.
 
-Ogni listino è identificato da tre elementi chiave:
+Svaka cjenovna lista identificira se s tri ključna elementa:
 
 - Tipologia (generale o per cliente),
 - Divisa,
