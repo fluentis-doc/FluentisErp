@@ -17,41 +17,39 @@ U kartici zaglavlja ispuniti sljedeća polja:
 U donjem dijelu KARTICE Plaćanja unesite vrstu plaćanja ANT (avans) umjesto vrste plaćanja predložene iz kartice. Prebacujem se na tab Artikli i obavezno moram unijeti artikl s kodom, inače procedura ne funkcionira. Također, u retku artikla, polje “Fakturirano prodaje” mora biti ispunjeno.  
 Spremam narudžbu.
                
-Vado nella sezione riepiloghi, in basso apro la sezione “riepilogo scadenze”
-Seleziono la riga nella griglia. Nella ribbon bar uso il tasto creo partita d’anticipo.
+Idem u odjeljak sažetaka, dolje otvaram odjeljak “sažetak rokova”.  
+Odabirem redak u mreži. U traci izbornika koristim tipku za kreiranje predujma.
                
-Si apre la finestra di “creazione partite d’anticipo” indico il tipo documento (GEN per rimanere generici) e inserisco una descrizione ad esempio “ordine … incasso anticipato”.
+Otvara se prozor za "kreiranje avansa" gdje označavam vrstu dokumenta (GEN za ostati generički) i unosim opis, na primjer "narudžba ... avansno plaćanje".
                 
-**Fase 2 Registro l’incasso anticipato**               
+**Faza 2 Registracija unaprijed plaćenog iznosa**               
             
-Entro nel modulo amministrazione e creo una Nuova registrazione contabile. Nella causale inserisco: incasso o incasso bonifico, in base a quello disponibile.
-> - Nella ribbon bar utilizzo il tasto “Ricerca partite”, con doppio click seleziono la partita creata dall’ordine.
-> - Mi sposto nel Tab Registrazione e a libro giornale nella descrizione “depositi bancari” inserisco la mia banca.
-> - Salvo.
-> - Dopo aver salvato esce una finestra di richiesta creazione della fattura d’anticipo. Fare si.
+Ulazim u modul administracije i kreiram novu računovodstvenu registraciju. U uzroku unosim: naplata ili naplata bankovnog transfera, ovisno o onome što je dostupno.  
+> - Na traci s alatima koristim tipku “Pretraži utakmice”, dvoklikom odaberem utakmicu kreiranu iz narudžbe.  
+> - Prebacujem se na karticu Registracija i u knjigu dnevnika u opis “bankovni depoziti” unosim svoju banku.
+> - Spremam.
+> - Nakon spremanja pojavljuje se prozor s upitom za kreiranje avansne fakture. Odaberite da.  
                 
-**Fase 3 Gestione partite di anticipo**              
+**Faza 3 Upravljanje avansnim stavkama**              
                
-Entro nella tab “Gestione anticipi”, Tasto Ricerca e seleziono la riga dell’ordine di interesse. Nella ribbon bar premo il pulsante “Fatturazione anticipi”
-Si aprirà la finestra “creazione partita d’anticipo”. Inserisco nei vari campi il Tipo di fattura (fatt. vend. Anticipo…), l’iva e il tipo fatturato vendite (“anticipi da clienti” o simile). Invio.
+Ulazim u kartici “Upravljanje avansima”, pritisnem tipku Pretraživanje i odabirem redak narudžbe od interesa. U traci izbornika pritisnem tipku “Fakturiranje avansa”.  
+Otvorit će se prozor “izrada avansne stavke”. Unosim u razna polja Tip fakture, PDV i tip fakturiranja prodaje (“avansi od kupaca” ili slično). Šaljite.
               
-**Fase 4**               
+**Faza 4**               
            
-Dopo aver inviato, in automatico si apre la fattura d’anticipo appena creata. Si ricorda che senza il flag Stampata non si contabilizza la fattura
-Nel TAB pagamenti eliminare il pagamento proposto dall’anagrafica (esempio bonifico, riba, etc.), lasciare SOLO la riga con tipo pagamento ANT (anticipo). Salvo.
+Nakon što pošaljete, automatski se otvara upravo kreirana avansna faktura. Napomena: bez oznake “Otisnuta” faktura se neće knjižiti.
+U kartici Plaćanja obrišite plaćanje koje je predloženo prema kartici klijenta (npr. bankovni transfer, RIBA itd.), ostavite SAMO redak s tipom plaćanja ANT (avans). Spremite.
                
-**Fase 5 Contabilizzare la fattura**           
+**Faza 5 Knjiženje fakture**           
                 
-Nel modulo Vendite nella maschera Fatture di vendita andare nella procedure e contabilizzare la fattura appena creata !!! Potrebbe apparire errore. Bisogna controllare se nel “tipo fattura” che si sta utilizzando nei parametri della causale è disabilitato il flag:
-Fase 6 Creare una nuova fattura di vendita
-Nuova fattura di vendita Selezionare tipo fattura una qualsiasi fattura di acconto
-Inserire il cliente Nei pagamenti inserire sempre il tipo ANT(anticipato) al posto di quello proposto dall’anagrafica.
-                
-Nella ribbon bar usare la procedura “Evasione da ordini clienti
-Selezionare l’ordine e Fare Trasferimento col tasto nella ribbon bar
-Salvo.
-Mi sposto nel tab Articoli devo controllare che nella griglia l’articolo abbia inserito nel campo “Fatturato acquisti” l’apposito conto altrimenti mi darà errore alla fine. In alto nella ribbon bar appare il pulsante gestione acconti. Nel caso non apparisse chiudere la scheda della fattura e rientrare.
-Nella maschera gestione acconti spostarsi nel TAB storno acconti.
-Seleziono la riga di interesse premo pulsante nella ribbon bar “Crea storno”
-Nella ribbon bar si abiliterà il pulsante “Crea chiusura lavori”
-Chiudo la fattura e contabilizzo la fattura con la solita procedura di contabilizzazione.
+U modulu Prodaja, u obrascu Prodajne fakture, idite na Postupci i knjižite upravo kreiranu fakturu.
+Moguće je da se pojavi greška. Treba provjeriti je li u “tipu fakture” koji se koristi u parametrima knjiženja uključen ili isključen odgovarajući flag.                 
+Na traci izbornika koristite postupak Ispunjavanje prema narudžbama kupaca.
+Odaberite narudžbu i napravite Prijenos pritiskom na tipku na traci izbornika.
+Spremite.  
+Prebacujem se u karticu Artikli i provjeravam da li je u mreži artikala u polju Fakturirano u nabavi upisan odgovarajući račun; inače će se pojaviti greška na kraju.  
+Na vrhu trake izbornika pojavljuje se tipka Upravljanje avansima. Ako ne bude vidljiva, zatvorite karticu fakture i ponovno otvorite.  
+U obrascu Upravljanje avansima, prebacite se na karticu Storno avansa.
+Odaberite redak od interesa i pritisnite tipku Kreiraj storno na traci izbornika.  
+Na traci izbornika zatim će se aktivirati tipka Kreiraj zatvaranje radova.  
+Zatvorite fakturu i knjižite je koristeći uobičajenu proceduru knjiženja.
