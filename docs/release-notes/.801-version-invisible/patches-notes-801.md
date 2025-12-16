@@ -12,7 +12,8 @@ sidebar_position: 1
 > -	QY - Tipi prova - Risolta anomalia che visualizzava, nella colonna Categoria tipo prova, le categorie di tutte le società. (#TT05260/25)
 > -	SD - Fix SalesOrder block at saving (#TT01258/21).
 > -	SH - fix grid column visibility handling to/from profiles (TT03851/25).
-> -	WM -Corretto bug in fase di generazione dei movimenti di magazzino, che non generava l'extension nella contropartita se presente nel movimento principale. (#TT05378/25)
+> -	WM - Corretto bug in fase di generazione dei movimenti di magazzino, che non generava l'extension nella contropartita se presente nel movimento principale. (#TT05378/25)
+  - WMS - Aggiunte alcune traduzioni in lingua Cinese (#TT04192/25)
 
 ### Patch 801.0029 - 28/11/2025
 
