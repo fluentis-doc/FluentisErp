@@ -1,44 +1,115 @@
 ---
-title: Distinta base Ddmrp
+title: Distinta base DDMRP
+description: Visualizzazione della distinta base in ambiente DDMRP con analisi di DLT, ADU, zone buffer e capitale circolante.
+keywords:
+  - distinta base DDMRP
+  - DLT disaccoppiato
+  - ADU
+  - buffer DDMRP
+  - capitale circolante
 sidebar_position: 8
+schema: TechArticle
+sidebar_label: Distinta base DDMRP
+tags:
+  - DDMRP
+  - Produzione
+  - Pianificazione
+  - Distinte base
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Questa form visualizza la distinta base di un prodotto e differisce dalla form gestione distinte Fluentis poichè riporta delle informazioni che hanno senso solo in un ambiente Ddmrp (tramite questa form non è possibile modificare una distinta base).
+# Distinta base DDMRP
 
-Gli articoli che sono gestiti a scorta Ddmrp sono evidenziati tramite il simbolo del cestino a tre colori e per essi sono visualizzate informazioni specifiche quali ADU, DLT, Zona rossa, Zona gialla, Zona verde, Capitale circolante.
+Questa form consente la visualizzazione della distinta base di un prodotto in ambiente **DDMRP**.  
+Si differenzia dalla form di gestione distinte Fluentis in quanto mostra informazioni rilevanti esclusivamente nel contesto DDMRP e **non consente la modifica della distinta base**.
 
-Questi valori sono quelli validi oggi come riscontrabili nel form dei **Parametri Ddmrp**, mentre per il capitale circolante qui si vuole solo evidenziare che il valore si riferisce all'articolo e non alla scorta necessaria per realizzare il prodotto di cui si sta visualizzando la distinta base, pertanto il valore è determinato dal fabbisogno di tutti gli articoli che necessitano del prodotto a scorta. Il valore del capitale circolante mostrato è relativo all'ultimo calcolo eseguito, pertanto se si vuole essere sicuri che sia aggiornato basta lanciare la relativa procedura di calcolo.
+## Articoli a scorta DDMRP e informazioni visualizzate
 
-Da questa form è possibile lanciare la procedura [**Calcolo DLT (lead time disaccoppiato)**](/docs/ddmrp/procedures/dlt-calculation), la procedura [**Calcolo delle zone**](/docs/ddmrp/procedures/zones-calculation), la procedura [**Aggiornamento consumo medio giornaliero (ADU)**](/docs/ddmrp/procedures/adu-update), la procedura [**Calcolo valori scorte**](/docs/ddmrp/procedures/inventory-value). 
+Gli articoli gestiti a scorta DDMRP sono evidenziati tramite il simbolo del **cestino a tre colori**.  
+Per tali articoli vengono mostrate le seguenti informazioni specifiche:
 
-La visualizzazione DDMRP della distinta è utile quando si fanno delle simulazioni per verificare le variazioni di DLT e di capitale circolante (utilizzare la stampa capitale circolante per una analisi più significativa).
+- ADU (Average Daily Usage)
+- DLT (Decoupled Lead Time)
+- Zona rossa
+- Zona gialla
+- Zona verde
+- Capitale circolante
 
-Notare che per alcuni articoli che non sono delle scorte Ddmrp risulta comunque visualizzato il relativo DLT, questo accade per quegli articoli che sono evidenziati in rosso cioè quelli che si trovano sul percorso critico di qualche prodotto finito.
+I valori visualizzati sono quelli **attualmente validi**, coerenti con quanto presente nella form dei **Parametri DDMRP**.
 
-La ragione è che alcuni di essi sono stoccati nei centri di distribuzione, quindi per calcolare il DLT nei centri distribuzione bisogna sommare al tempo di trasporto dalla fabbrica il tempo necessario alla realizzazione dei prodotti.
+:::important
+Il capitale circolante mostrato si riferisce all’articolo stesso e non alla scorta necessaria per realizzare il prodotto di cui si sta visualizzando la distinta base.
+:::
 
-Per alcuni articoli che non sono podotti finiti ciò è dovuto al fatto che per calcolare il DLT di un buffer Ddmrp la procedura deve necessariamente calcolare tale valore anche per gli articoli che si trovano sul "percorso critico" del buffer.
+Il valore è determinato dal fabbisogno complessivo di tutti gli articoli che richiedono il prodotto a scorta ed è relativo **all’ultimo calcolo eseguito**.  
+Per garantire l’aggiornamento dei dati è sufficiente rilanciare la procedura di calcolo dedicata.
+
+## Procedure avviabili dalla form
+
+Dalla form di visualizzazione della distinta base DDMRP è possibile avviare direttamente le seguenti procedure operative:
+
+1. [**Calcolo DLT (lead time disaccoppiato)**](/docs/ddmrp/procedures/dlt-calculation)
+2. [**Calcolo delle zone**](/docs/ddmrp/procedures/zones-calculation)
+3. [**Aggiornamento consumo medio giornaliero (ADU)**](/docs/ddmrp/procedures/adu-update)
+4. [**Calcolo valori scorte**](/docs/ddmrp/procedures/inventory-value)
+
+## Utilizzo per simulazioni e analisi
+
+La visualizzazione DDMRP della distinta base risulta particolarmente utile durante le simulazioni per verificare le variazioni di DLT e di capitale circolante (utilizzare la stampa **capitale circolante**).
+
+## Articoli sul percorso critico e visualizzazione del DLT
+
+Per alcuni articoli che non sono delle scorte Ddmrp risulta comunque visualizzato il relativo DLT. Ciò accade per gli articoli evidenziati in **rosso**, ovvero quelli appartenenti al *percorso critico* di di qualche prodotto finito.
+
+Le principali motivazioni sono:  
+- Articoli stoccati nei centri di distribuzione, quindi per calcolare il DLT nei centri distribuzione bisogna sommare al tempo di trasporto dalla fabbrica il tempo necessario alla realizzazione dei prodotti.
+- Articoli intermedi non finiti, per i quali il calcolo del DLT del buffer DDMRP, la procedura deve necessariamente calcolare tale valore anche per gli articoli che si trovano sul "percorso critico" del buffer.
+
+*Procedura di calcolo DLT*:
 
 La procedura di calcolo DLT individua tutti gli articoli che si trovano sui perorsi critici di tutte le distinte base presenti nel sistema (quindi non solo quelle di articoli a buffer Ddmrp).
 
-Nella visualizzazione distinte base Ddmrp, gli articoli presenti su qualunque percorso critico vengono evidenziati in rosso, pertanto nella visualizzazione di una distinta base ci possono essere più rami di distinta evidenziati in rosso, sia perchè il prodotto di cui si visualizza la distinta può avere più percorsi critici (i cui valori DLT sono quindi uguali), sia perchè alcuni rami sono pezzi di percorsi critici di altri prodotti.
+## Evidenziazione dei percorsi critici
 
-La diminuzione del tempo di consegna disaccoppiato (DLT) del prodotto di cui si sta visualizzando la distinta base può essere ottenuta solo creando una scorta Ddmrp per uno degli articoli evidenziati in rosso che si trova sul percorso critico dello stesso (questa precisazione è necessaria poichè in alcuni casi ci possono essere più rami di distinta rossi, alcuni dei quali evidenziano percorsi critici di altri prodotti), pertanto questo tipo di visualizzazione rende semplice capire quali articoli messi a scorta possono portare ad una diminuizione del tempo di consegna del prodotto finito.
+Nella visualizzazione delle distinte base DDMRP, tutti gli articoli presenti su qualunque **percorso critico** vengono evidenziati in rosso, pertanto nella visualizzazione di una distinta base ci possono essere più rami di distinta evidenziati in rosso, sia perchè il prodotto di cui si visualizza la distinta può avere più percorsi critici (i cui valori DLT sono quindi uguali), sia perchè alcuni rami sono pezzi di percorsi critici di altri prodotti.
 
-La visualizzazione del capitale circolante consente poi di capire quali scelte di posizionamento di scorte consente contemporanemente di ridurre il tempo di consegna e di minimizzare il capitale circolante impegnato per ottenere tale risultato (vedere stampa del capitale circolante).
+## Diminuzione tempo di consegna disaccoppiato (DLT)
 
-Il costo unitario visualizzato per tutti gli articoli è quello utilizzato nell'ultimo calcolo del Capitale circolante mediamente investito nelle scorte Ddmrp (medio,ultimo,standard) e tiene conto solo dei costi dei materiali e delle lavorazioni esterne per il conto lavoro, cioè costi attribuibili solo a fornitori esterni (vedere la sezione relativa a tale calcolo).
+La riduzione del **DLT del prodotto** di cui si sta visualizzando la distinta base è possibile esclusivamente creando una scorta Ddmrp per uno degli articoli evidenziati in rosso che si trova sul percorso critico dello stesso (questa precisazione è necessaria poichè in alcuni casi ci possono essere più rami di distinta rossi, alcuni dei quali evidenziano percorsi critici di altri prodotti)
 
-Notare che per gli articoli di conto lavoro il costo unitario della lavorazione viene dedotto sottraendo al costo dell'articolo quello dei suoi figli di distinta base.
+Questo tipo di visualizzazione consente quindi di individuare rapidamente quali articoli messi a scorta possono portare ad una diminuizione del tempo di consegna del prodotto finito.
 
-Moltiplicando questo per la giacenza media (zona rossa + zona verde/2) si ottiene il valore del capitale circolante mediamente investito nella scorta.
+## Capitale circolante e criteri di calcolo
 
-Si prega di notare che il valore del capitale circolante visualizzato nella distinta potrebbe non essere corretto poichè si riferisce agli ultimi valori trovati. 
+La visualizzazione del *capitale circolante* consente poi di capire quali scelte di posizionamento di scorte consente contemporanemente di ridurre il tempo di consegna e di minimizzare il capitale circolante impegnato per ottenere tale risultato (vedere stampa del capitale circolante).
 
-Se infatti dopo tale calcolo sono variati i valori delle zone dei buffers, o è cambiato il valore del costo unitario, quanto visualizzato non è aggiornato.
+Il *costo unitario* visualizzato per tutti gli articoli è quello utilizzato nell'ultimo calcolo del *Capitale circolante* mediamente investito nelle scorte Ddmrp (medio,ultimo,standard) e tiene conto solo dei costi dei materiali e delle lavorazioni esterne per il conto lavoro, cioè costi attribuibili solo a fornitori esterni (vedere la sezione relativa a tale calcolo).
 
-Per essere sicuri di visualizzare il valore corretto ed aggiornato lanciare la procedura di calcolo costo capitale circolante (calcolo valori scorte).
+Per gli articoli di **conto lavoro**, il costo unitario della lavorazione è determinato sottraendo dal costo dell’articolo il costo dei relativi figli di distinta base.
 
+Moltiplicando questo per la giacenza media (zona rossa + zona verde/2) si ottiene il valore del capitale circolante mediamente investito nella scorta
 
+:::important
+Il capitale circolante visualizzato nella distinta potrebbe non essere aggiornato se, dopo l’ultimo calcolo, sono variati:
+- I valori delle zone buffer
+- Il costo unitario degli articoli
+:::
 
+Per garantire dati corretti e aggiornati è necessario lanciare la procedura di calcolo costo capitale circolante (*calcolo valori scorte*).
 
+## Riepilogo e approfondimenti
+
+La form di visualizzazione della distinta base DDMRP consente di:
+
+- Analizzare DLT, ADU e zone buffer in modo integrato
+- Identificare i percorsi critici e gli articoli strategici
+- Valutare l’impatto delle scorte sul capitale circolante
+- Supportare decisioni di pianificazione e simulazione DDMRP
+
+Per ulteriori approfondimenti operativi consultare:
+
+- [Calcolo DLT (lead time disaccoppiato)](/docs/ddmrp/procedures/dlt-calculation)
+- [Calcolo delle zone](/docs/ddmrp/procedures/zones-calculation)
+- [Aggiornamento ADU](/docs/ddmrp/procedures/adu-update)
+- [Calcolo valori scorte](/docs/ddmrp/procedures/inventory-value)
