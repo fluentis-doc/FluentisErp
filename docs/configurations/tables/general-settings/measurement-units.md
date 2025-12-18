@@ -39,6 +39,11 @@ dove codificare la nuova unità di misura e attribuire le caratteristiche princi
 Es. ore macchina è flusso, mentre i metri quadri di uno stabile sono tipicamente di stato perché valido ogni mese.
 :::
 
+### Descrizioni in lingua
+
+L'utente ha la possibilità di tradurre il codice e la descrizione nella lingua desiderata utilizzando questo tabulatore.
+Sarà sufficiente selezionare l'unità di misura nella griglia principale, poi la lingua nel tabulatore dedicato e indicare *Codice* e *Descrizione*.
+
 ### Conversioni tra unità di misura
 
 dove gestire i fattori di conversioni tra diverse unità di misura al fine di gestire nei documenti la doppia unità di misura
