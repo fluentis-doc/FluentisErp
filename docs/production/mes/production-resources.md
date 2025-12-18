@@ -93,6 +93,10 @@ Contiene una serie di controlli legati al tab *Controllo qualità* di Fluentis M
 **Causale di sospensione pausa pranzo**: indica la causale di sospensione che viene utilizzata per creare la sospensione per la pausa pranzo;      
 **Causale di sospensione blocco fase**: indica la causale di sospensione che viene utilizzata per bloccare le fasi nel caso di non conformità nei controlli di qualità.      
 
+:::note Nota
+Nel caso in cui venga sospesa un'attività, utilizzando una [Causale di sospensione](/docs/production/mes/production-resources/) con l'indicazione di *Blocco proposta fase in M.E.S.*, alla successiva proposta delle fasi in lavorazione per il Centro di lavoro, la fase sospesa non verrà visualizzata. Per poter proseguire nella lavorazione della fase sospesa sarà necessario selezionarla, tramite il pulsante **Seleziona nuove fasi**, ed effettuare una dichiarazione di ripresa.    
+:::
+
 ## Layout
 
 *Pulsanti specifici*:  

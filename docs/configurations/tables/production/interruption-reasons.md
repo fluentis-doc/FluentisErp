@@ -29,6 +29,7 @@ Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla pr
 > **Predefinito cessione**: utilizzato nella form gestione ore personale presente in *Produzione > Gestione ore Produzione > Gestione ore personale;               
 > **Indiretto**: attualmente non implementato;     
 > **Macchina**: attualmente non implementato;     
+> **Blocco proposta fase in M.E.S.**: alla sospensione di un'attività, indicando una *Causale di sospensione* con l'indicazione di *Blocco proposta fase in M.E.S.*, alla successiva proposta delle fasi in lavorazione per il Centro di lavoro, la fase sospesa non verrà visualizzata. Per poter proseguire nella lavorazione della fase sospesa sarà necessario selezionarla, tramite il pulsante **Seleziona nuove fasi**, ed effettuare una dichiarazione di ripresa;
 > **Tipo**: indica il tipo della causale di sospensione e può essere:
 > > **Produzione**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di perso dovuto a cause esterne all'azienda (ad esempio materiale inviato dal fornitore/cliente non conforme);      
 > > **Attrezzaggio**: indica che il tempo the intercorre tra la *sospensione* e la successiva *ripresa* viene considerato come tempo di attrezzaggio;          
