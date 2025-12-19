@@ -26,6 +26,8 @@ import Link from '@docusaurus/Link';
 ###     <Link to="/docs/production/production-intro">MES - Manufacturing Execution System</Link>
         <p><Link to="/docs/production/pp-production-in-progress/production-orders/search-production-orders" className="bold-link">Ordini di produzione</Link></p>
         <p>Il modulo è progettato per ottimizzare e semplificare la pianificazione dei processi produttivi. Consente di gestire ordini in stato "Lanciato" ed "Esecutivo", permettendo una chiara distinzione tra gli ordini pronti per l'avvio e quelli già in fase di esecuzione.</p>
+        <p><Link to="/docs/production/pp-production-in-progress/tasks/manual-task" className="bold-link">Tasks</Link></p>
+        <p>La funzionalità **Creazione manuale Task** consente di creare e gestire manualmente i **Task** di produzione raggruppando le Fasi di lavorazione (non ancora dichiarate) di Ordini di Produzione in stato *Lanciato* e/o *Esecutivo*, a partire da un Materiale previsto da utilizzare.</p>
         <p><Link to="/docs/production/pp-production-in-progress/picking-materials-list" className="bold-link">Lista prelievo materiali</Link></p>
         <p>Permette di gestire e movimentare efficacemente i materiali destinati alla produzione.</p>
         <p><Link to="/docs/production/pp-production-in-progress/signals/sisgnals" className="bold-link">Dichiarazioni di produzione</Link></p>
