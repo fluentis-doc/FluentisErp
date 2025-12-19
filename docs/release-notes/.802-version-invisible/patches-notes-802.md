@@ -3,6 +3,29 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 802.0017 - 19/12/2025
+
+> -	CO - revisione proposta dati di Budget quando non è gestito per divisione, applicato un filtro solo sulla società attiva. (#TT05487/25)
+> -	CPQ - bugfixing generale in casi situazionali, aggiunta la possibilità di allineare i parametri e i binding nella main configuration, Implementati messaggi di chiusura in form matrici, ottimizzato caricamento configurazione finale
+> -	FI - creazione compensi da file Sdi, revisione per gestione quantità di riga del file Xml (#TT04742/25)
+> -	FI - revisione contabilizzazione documenti per valorizzazione dimensione progetti, in caso di utilizzo di un centro di progetto diverso da quello di default Fluentis non inserisce più un doppione con quello di default (#TT05570/25)
+> -	FI - revisione contabilizzazione fatture di acquisto con incrementi multipli sullo stesso cespite. (#TT05558/25)
+> -	MS - Corretto bug in pianificazione generale legato all’utilizzo di articoli fittizi in distinta base. (#TT04427/25)
+> -	MS - Corretto bug nel report della costificazione commesse che non calcolava correttamente il costo totale se non fosse stata inserita la dichiarazione di chiusura dell'ultima fase. (#TT04907/25)
+> -	MS - Corretto bug nella procedura MRP che non generava gli ordini pianificati con la quantità corretta in alcuni casi particolari. (#TT05310/25)
+> -	MS - Corretto bug nella procedura MRP inerente allla creazione di ordini pianificati raggruppati per gli articoli figli. (#TT04735/25 )
+> -	MS - Ordini di produzione con fasi esterne - La generazione Ordine di conto lavoro da Fase esterna di un Ordine di produzione riporta sempre Magazzino e Causale indicata nella Fase. (#TT04598/25)
+> -	PM - WEB - cedolini paghe - ripristinata possibilità di ridimensionare la sezione relativa al dettaglio attività da cui sono state calcolate le ore del cedolino (#TT04817/25)
+> -	SCM - Fatture di Acquisto: disattivando il flag Rivalsa IVA sulle righe di tipo omaggio l’imposta relativa non viene più inclusa nel totale del documento. (#TT01160/25)
+> -	SCM - Risolto errore che in alcuni casi impediva la cancellazione dei DDT di Acquisto per i quali era stato effettuato un tentativo di valorizzazione. (#TT05568/25)
+> -	SD - Conversione Offerta di Vendita in Ordine: se il cliente intestatario dell’offerta è stato bloccato nel Lock Manager la creazione dell’ordine viene bloccata. (#TT05495/25)
+> -	SD - Conversione Offerta in Ordine Cliente: Nel riferimento all’offerta presente sulle righe articolo dell’ordine viene ora riportata la data dell’offerta anziché la data di creazione. (#TT05527/25)
+> -	SD - Nelle Offerte gerarchiche, la modifica dell’articolo nella sezione Materiali aggiorna ora automaticamente anche la relativa descrizione. (#TT05534/25)
+> -	Solved bug with required parameters on Supervisor activities parameters
+> -	WMS - Inventario - Corretta lettura barcode per conto. (#TT05102/25)
+> -	WMS - Maui - Corretta perdita di login in (dis)connessione device bluetooth. (#TT04829/25)
+> -	WMS - Ricevimento merce - Corretto lettura dello stesso lotto su più righe DDT. (#TT05484/25)
+
 ### Patch 802.0016 - 12/12/2025
 
 > -	Add flag StartTls on BizLink Service Mail Connector
