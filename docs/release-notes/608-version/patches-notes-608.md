@@ -3,6 +3,12 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0083 - 22/12/2025
+
+> - CO - Elaborazione periodi optimization ( TT05417/25)
+> - MS - Nel report della costificazione commesse è stato aggiunto il riepilogo per articolo anche nel caso in cui la commessa sia multiprodotto. (#TT05218/25)
+> -  MS - Corretto bug nella procedura MRP nel caso di suggerimenti per anticipare dei documenti. (#TT05439/25)
+
 ### Patch 608.1-0082 - 05/12/2025
 
 > - FI - revisione contabilizzazione dei dati iva in caso di importi iva portati a zero nel riepilogo della fattura di acquisto. (#TT01757/25)
