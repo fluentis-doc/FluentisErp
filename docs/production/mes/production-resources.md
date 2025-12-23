@@ -66,6 +66,8 @@ se invece non viene dichiarata nessuna quantità, ma solo tempo, allora viene ca
 **Difetto obbligatorio se dichiarato scarto**: se attivo, abilita un controllo che obbliga l'operatore ad inserire la tipologia del difetto nel caso in cui inserisca una quantità scartata;    
 **Registrazione automatica**: se attivo, permette di creare la registrazione di magazzino in maniera automatica alla conferma della dichiarazione;    
 **Importa tutte le fasi del gruppo**: se attivo, anche l'omonimo flag presente nell'*help fasi* del tab *produzione* del MES risulta attivo di default. In questo modo se l'utente seleziona una fase appartenente ad un gruppo e l'aggiunge, vengono aggiunte anche tutte le altre fasi appartenenti al gruppo.      
+**Centro di lavoro multi-risorsa**: se attivo, fa si che se viene indicata una *Risorsa* di tipo *Dipendente* e viene dichiarata una fase di lavorazione, questa può essere dichiarata e portata a termine solamente da quella *Risorsa dipendente*. Nel caso in cui fosse necessario un cambio *Risorsa dipendente*, la fase deve essere *Sospesa* indicando una 
+ con l'indicazione di [Blocco proposta fase in M.E.S.](/docs/configurations/tables/production/interruption-reasons) per poi essere nuovamente selezionata, tramite il pulsante **Seleziona nuove fasi**, ed effettuata una dichiarazione di ripresa con un'altra *Risorsa dipendente*.          
 
 ### *Gestione documentale*     
 **Tipo origine documento da escludere**: questa tabella è legata al tab *Documenti e Istruzioni operative* di Fluentis MES e permette di definire quali tipologie di documenti devono essere escluse; in questo modo i file allegati a queste tipologie di documenti non saranno visualizzati nel tab *Documenti e Istruzioni operative*.     

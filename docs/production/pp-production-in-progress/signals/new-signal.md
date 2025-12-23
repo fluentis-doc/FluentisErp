@@ -55,8 +55,8 @@ Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una
 **Unità di misura alternativa**: indica l'unità di misura alternativa utilizzata;     
 **Quantità alternativa**: indica la quantità prodotta nell'unità di misura alternativa utilizzata;       
 **Magazzino versamento**: indica il magazzino di versamento della quantità prodotta;         
-**Causale versamento**: indica la causale di versamento utilizzata per la quantità prodotta;         
-**Versamento ubicazione**: indica l'ubicazione di versamento della quantità prodotta;         
+**Causale versamento**: indica la causale di versamento utilizzata per la quantità prodotta;      
+**Versamento ubicazione**: indica l'ubicazione di versamento della quantità prodotta. 
 **Quantità scartata**: indica la quantità scartata relativa alla riga della dichiarazione;        
 **Magazzino di scarto**: indica il magazzino di versamento della quantità scartata;      
 **Causale di scarto**: indica la causale di versamento utilizzata per la quantità scartata;       
@@ -114,7 +114,7 @@ Ovviamente, per far si che i materiali siano riportati automaticamente, la fase 
 **Quantità alternativa**: indica la quantità utilizzata del materiale nell'unità di misura alternativa;        
 **Magazzino consumo**: indica il codice del magazzino di consumo del materiale;         
 **Causale consumo**: indica il codice della causale di consumo del materiale;         
-**Ubicazione consumo**: indica il codice dell'ubicazione del magazzino di consumo del materiale;         
+**Ubicazione consumo**: indica il codice dell'ubicazione del magazzino di consumo del materiale. È presente nell’interfaccia ed è proposta nel seguente modo: Se non è null, viene presa dalla mappa ubicazioni per articolo per l’articolo corrente e il magazzino di consumo. Altrimenti: viene presa dall’ubicazione proposta della causale di consumo.           
 **Quantità scartata**: indica la quantità scartata del materiale;     
 **Magazzino di scarto**: indica il codice del magazzino di scarto del materiale;     
 **Ubicazione di scarto**: indica il codice dell'ubicazione del magazzino di scarto del materiale;        
