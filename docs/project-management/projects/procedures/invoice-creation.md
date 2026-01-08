@@ -8,11 +8,11 @@ Nell’area di filtro è possibilre indicare una serie di filtri per ricercare i
 Dopo aver impostato i filtri, premendo il pulsante **Ricerca** nella ribbon bar compariranno i risultati nella griglia. 
 In basso è possibile indicare i parametri da utilizzare per eseguire la procedura:
 
-**Tipo fattura**: contiene la tipologia di fattura da creare, se non è impostata nella tabella [Tipi progetto](/docs/configurations/tables/project-management/project-type/);
+**Tipo fattura**: contiene la tipologia di fattura da creare; se non indicato, il tipo fattura è ottenuto dal tipo progetto impostato nella tabella [Tipi progetto](/docs/configurations/tables/project-management/project-type/); 
 
 **Data creazione**: contiene la data nella quale verrà creata la fattura;
 
-**Raggruppa gli articoli nella fattura**: con questo flag, nella fattura ci sarà raggruppamento per articolo;
+**Raggruppa gli articoli nella fattura**: se il flag è abilitato, nella fattura le righe verranno raggruppate con i seguenti criteri: Tipo fattura impostato nel tipo progetto, mese/anno della riga di fatturazione, cliente, valuta, cambio valuta, CIG, CUP,  Giorni di pagamento per merci deperibili;
 
 **Aggiungi Progetto di riferimento**: questo flag aggiunge il progetto di origine alla fattura;
 
