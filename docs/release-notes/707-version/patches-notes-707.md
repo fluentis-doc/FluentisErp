@@ -3,6 +3,19 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0061 - 09/01/2026
+
+> -	FI - Stampa di controllo cespiti, revisione per calcolo del tipo operazione iva indetraibile (#TT05537/25)
+> -	FI- Compensazione veloce: inserito messaggio di avviso quando si compensano partite riferite ad un anno non presente all’interno dei parametri di contabilità (TT05459/25)
+> -	MS - Corretto bug che non riportava le note dei materiali presenti in distinta base negli ordini pianificati generati. (#TT05675/25)
+> -	Risolto bug per aggiungere moduli custom allo script delle importazioni Excel (#TT05655/25)
+> -	SCM - Corretta anomalia che non riportava le righe di tipo note in fase di evasione di una Commessa di acquisto in Ordine fornitore. (#TT05403/25)
+> -	SCM - Evasione Commessa di acquisto in Ordine fornitore: le informazioni contenute nel tab analitica degli articoli vengono ora proposte sulla base delle priorità inserite nei parametri ordini di acquisto. (#TT05615/25)
+> -	SCM - Importazione da prezzi fornitore: Se nel file di importazione Prezzi fornitore da Excel è stato indicato uno sconto, questo potrà essere riportato nel Listino fornitore generato dall’importazione prezzi fornitore, utilizzando la tipologia di sconto indicata nei parametri della procedura. (#TT05273/25)
+> -	SCM - Risolta anomalia nell’apertura di un ordine fornitore che talvolta non visualizzava il riferimento alla commessa di produzione su alcune righe articolo, in presenza di un profilo personalizzato. (#TT05524/25)
+> -	SD - Ottimizzazione importazione ordini di vendita WebApi (#TT04576/25).
+> -	SD - Stampa DDT di Vendita: Corretta la visualizzazione dell’unità di misura nella stampa nel caso di prezzo articolo riferito all’unità di misura alternativa. (#TT05230/25)
+
 ### Patch 707.1-0060 - 22/12/2025
 
 > -	FI - creazione compensi da file Sdi, revisione per gestione quantità di riga del file Xml (#TT04742/25)
