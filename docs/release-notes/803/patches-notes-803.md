@@ -3,6 +3,26 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0005 - 09/01/2026
+
+> -	CO - comparation reclassifications ( TT00010/26)
+> -	FI - contabilizzazione documenti di acquisto/vendita con tax engine attivo, in caso di mancanza di righe nelle collection delle tasse ora si contabilizza utilizzando la tassa con categoria ‘nexus exemption’ (#TT05566/25)
+> -	FI - Nella form di stampa “Registri tasse”, inserita opzione per selezionare un range di periodo manuale, escludendo la selezione per mese/trimestre. Con questa opzione, la stampa definitiva non è abilitata. (#TT05624/25)
+> -	MS - Corretto bug che non riportava le note dei materiali presenti in distinta base negli ordini pianificati generati. (#TT05675/25)
+> -	Risolto bug per aggiungere moduli custom allo script delle importazioni Excel (#TT05655/25)
+> -	Risolto problema di Identizzione nello script editor
+> -	SCM - Importazione da prezzi fornitore: Se nel file di importazione Prezzi fornitore da Excel è stato indicato uno sconto, questo potrà essere riportato nel Listino fornitore generato dall’importazione prezzi fornitore, utilizzando la tipologia di sconto indicata nei parametri della procedura. (#TT05273/25)
+> -	SCM - Quando un DDT movimentato a magazzino viene valorizzato o evaso in una Fattura di Acquisto con cambio valuta diverso, il cambio del DDT e il relativo importo della registrazione di magazzino vengono aggiornati di conseguenza. (#TT04687/25)
+> -	SCS - Rientro di conto lavoro: implementata la possibilità di duplicare un Rientro. (#TT05329/25)
+> -	SD - Aggiunto il campo Riferimento disegno tecnico nelle offerte e negli ordini clienti all'interno del tab item data. Modifications in SalesOrder and SalesOffer object forms can have an impact on profiles (#TT05634/25)
+> -	SD - Nella creazione del file Sdi IT, valorizzazione tag `<NumeroCivico>` del cedente/prestatore e cessionario/committente (#TT05470/25)
+> -	SD - Revisione visibilità campo 'Cedente prestatore' per autofatture. (#TT05662/25)
+> -	SD - Stampa DDT di Vendita: Corretta la visualizzazione dell’unità di misura nella stampa nel caso di prezzo articolo riferito all’unità di misura alternativa. (#TT05230/25)
+> -	SH - Revisione gestione inserimento dettagli nella Matrice applicazione tasse. (#TT05283/25)
+> -	Solved bug for missing script on Parser Objects
+> -	WM - Corretto bug in ricevimento merci del WMS che non inseriva correttamente il conto del cliente nelle unità di carico create. (#TT05674/25)
+> -	WMS - Ricevimento merce - Esecuzione dell’algoritmo di chiusura form etichette anche da WPF.
+
 ### Patch 803.0004 - 22/12/2025
 
 > - FI - Stampa di controllo cespiti, revisione per calcolo del tipo operazione iva indetraibile (#TT05537/25).
