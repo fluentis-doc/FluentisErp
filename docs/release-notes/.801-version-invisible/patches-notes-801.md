@@ -3,7 +3,7 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
-### Patch 801.0030 - 12/12/2025
+### Patch 801.0031 - 09/01/2026
 
 > -	SCM - Quando un DDT movimentato a magazzino viene valorizzato o evaso in una Fattura di Acquisto con cambio valuta diverso, il cambio del DDT e il relativo importo della registrazione di magazzino vengono aggiornati di conseguenza. (#TT04687/25)
 
