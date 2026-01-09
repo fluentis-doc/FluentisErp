@@ -5,6 +5,12 @@ sidebar_position: 1
 
 ### Patch 801.0030 - 12/12/2025
 
+> -	SCM - Quando un DDT movimentato a magazzino viene valorizzato o evaso in una Fattura di Acquisto con cambio valuta diverso, il cambio del DDT e il relativo importo della registrazione di magazzino vengono aggiornati di conseguenza. (#TT04687/25)
+
+> -	WMS - Ricevimento merce - Esecuzione dell’algoritmo di chiusura form etichette anche da WPF.
+
+### Patch 801.0030 - 12/12/2025
+
 > -	FI - Creazione registrazioni contabili: risolto problema in fase di inserimento registrazioni in prima nota (Rif. Ticket TT05213/25).
 > -	PM - WEBAPI dichiarazione attività - corretto caso per cui lo stato attività non veniva importato. (#TT05374/25)
 > -	QY - Certificati di analisi - Corretta l'anomalia della mancata importazione del riferimento del Lotto dai controlli effettuati. (#TT05415/25)
