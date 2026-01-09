@@ -1,23 +1,23 @@
 ---
-title: Evasioni
+title: Izvršenja
 sidebar_position: 7
 ---
 
-Il ciclo di evasione in Fluentis serve a gestire in modo strutturato e integrato l'intero flusso operativo di vendita, dalla fase iniziale di offerta fino alla fase finale di fatturazione. Ogni fase è caratterizzata da procedure specifiche e configurazioni che garantiscono una gestione fluida e integrata del flusso di lavoro.
+Ciklus realizacije u Fluentisu služi za strukturirano i integrirano upravljanje cjelokupnim operativnim prodajnim procesom – od početne faze ponude pa sve do završne faze fakturiranja. Svaka faza obilježena je specifičnim procedurama i postavkama koje osiguravaju nesmetano i povezano upravljanje radnim tijekom.
 
-## Conversione da Offerta a Ordine
+## Konverzija ponude u narudžbu
 
-La procedura di conversione da offerta a ordine di vendita può essere avviata in due modalità:
+Postupak konverzije ponude u prodajnu narudžbu može se pokrenuti na dva načina:   
 
-- Dalla [Ricerca Offerte](/docs/sales/offers/search-offers): Selezionando una o più offerte e cliccando sul pulsante *Conversione* presente nella barra degli strumenti, è possibile eseguire una conversione massiva.
-- Dalla [Testata](/docs/sales/offers/insert-offer) dell'Offerta: All'interno della singola offerta, il pulsante di *Conversione* nella testata consente di convertire l'offerta selezionata in un ordine di vendita.
+- Iz [Pretraga ponuda](/docs/sales/offers/search-offers): Odabirom jedne ili više ponuda i klikom na tipku *Konverzija* koja se nalazi na traci izbornika, moguće je izvršiti masovnu konverziju.  
+- Iz [Zaglavlja](/docs/sales/offers/insert-offer) ponude: Unutar pojedinačne ponude, tipka *Konverzija* u zaglavlju omogućuje pretvaranje odabrane ponude u prodajnu narudžbu.  
 
-Questa procedura permette di trasformare un'offerta di vendita in un ordine di vendita effettivo. Per eseguire correttamente la conversione, è necessario configurare il [Tipo di ordine](/docs/configurations/tables/sales/sales-order-types) desiderato nella tabella [Tipo di offerta](/docs/configurations/tables/sales/sales-offer-type). Inoltre, l'offerta deve avere una *Data di Conferma* inserita nella testata; in caso contrario, il sistema visualizzerà un messaggio pop-up per richiedere la conferma dell'offerta prima di procedere.
+Ova procedura omogućuje pretvaranje prodajne ponude u stvarnu prodajnu narudžbu. Kako bi se konverzija ispravno izvršila, potrebno je u tablici [Vrsta ponude](/docs/configurations/tables/sales/sales-offer-type) konfigurirati željenu [Vrstu narudžbe](/docs/configurations/tables/sales/sales-order-types). Osim toga, ponuda mora imati unesen *Datum potvrde* u zaglavlju; u suprotnom će sustav prikazati skočnu poruku (pop-up) kako bi zatražio potvrdu ponude prije nastavka postupka.  
 
-Durante la procedura di conversione, appare un pop-up con diverse opzioni:
+Tijekom postupka konverzije prikazuje se skočni prozor (pop-up) s različitim opcijama:
 
-- Gestione delle Righe Offerta: Se alcune righe dell'offerta sono già state convertite in ordine, il sistema chiede all'utente se vuole creare un nuovo ordine utilizzando tutte le righe dell'offerta o solo quelle non ancora referenziate.
-- Crea/Aggiorna Progetto: Questa opzione consente di creare o aggiornare un progetto. Sono disponibili le opzioni: *Crea Nuovo Progetto Vuoto*, *Crea Nuovo Progetto da Offerta*, o *Crea Nuovo Progetto da Offerta e Template Progetto*. È necessario specificare il [Tipo Progetto](/docs/configurations/tables/project-management/project-type) da creare. Se il progetto esiste già, bisogna inserire il nome del progetto da aggiornare.
+- Upravljanje stavkama ponude: Ako su neke stavke ponude već konvertirane u narudžbu, sustav pita korisnika želi li kreirati novu narudžbu koristeći sve stavke ponude ili samo one koje još nisu referencirane.  
+- Kreiraj / ažuriraj projekt: Ova opcija omogućuje kreiranje ili ažuriranje projekta. Sono disponibili le opzioni: *Crea Nuovo Progetto Vuoto*, *Crea Nuovo Progetto da Offerta*, o *Crea Nuovo Progetto da Offerta e Template Progetto*. È necessario specificare il [Tipo Progetto](/docs/configurations/tables/project-management/project-type) da creare. Se il progetto esiste già, bisogna inserire il nome del progetto da aggiornare.
 - Trasferimento Materiali/Risorse: Questa opzione consente di trasferire le risorse e i materiali dell'offerta, se [gerarchica](/docs/sales/offers/insert-offer), come righe articolo nell'ordine.
 
 Una volta confermata la conversione, il sistema genera un nuovo ordine cliente utilizzando i dati dell'offerta e avvisa l'utente con un messaggio pop-up riguardante il successo della conversione, il numero dell'offerta convertita, la versione e il numero dell'ordine cliente generato. Le informazioni modificate in anagrafica durante la creazione dell'offerta (ad es. Annotazioni Cliente, Spedizione, Pagamenti) saranno riportate anche nell'ordine generato.
