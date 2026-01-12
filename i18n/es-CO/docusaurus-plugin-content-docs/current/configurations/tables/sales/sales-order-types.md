@@ -67,7 +67,7 @@ Para insertar nuevos registros es necesario hacer clic en la cuadrícula en la p
 
 **Generación de Orden de trabajo de Producción**: si está activo, indica que la orden de trabajo de producción del tipo especificado en la columna *Tipo de Producción de Orden de trabajo* se creará automáticamente una vez que la orden sea confirmada. 
 
-:::notas
+:::note
 Cuando se añade una nueva línea dentro de una orden de venta para la cual se generan automáticamente las Órdenes de Trabajo de Producción, la nueva línea en la orden tendrá estado *No examinado*.
 :::
 
