@@ -165,7 +165,7 @@ Una vez iniciado el procedimiento, Fluentis controla la presencia de almacén<!-
 Si el procedimiento es exitoso, se crea el [Registro de almacén<!-- Registrazione di magazzino -->](/docs/logistics/warehouse/stock-records/record) que mueve los artículos del documento y se introduce el flag **Descargado** en el encabezado del DDT.
 
 :::important Recuerda
-Si en los *[Parámetros de DDT](/docs/configurations/parameters/sales/dn-parameters#scarico) > pestaña Descarga* el flag **Crear registro con la fecha del documento** no está activo, el registro de almacén<!-- registrazione di magazzino --> siempre se ejecutará con la fecha actual.
+Si en los *[Parámetros de DDT](/docs/configurations/parameters/sales/dn-parameters) > pestaña Descarga* el flag **Crear registro con la fecha del documento** no está activo, el registro de almacén<!-- registrazione di magazzino --> siempre se ejecutará con la fecha actual.
 Si el flag en los parámetros está activo, el registro se creará utilizando la *Fecha de transporte* indicada en la pestaña *Transporte* del DDT, si está rellenada, de lo contrario se utilizará la fecha del DDT.
 :::
 

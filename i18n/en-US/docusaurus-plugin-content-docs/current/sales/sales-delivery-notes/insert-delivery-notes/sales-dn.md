@@ -164,7 +164,7 @@ Once the procedure is initiated, Fluentis checks for the presence of warehouses 
 If the procedure is successful, a [Warehouse Registration](/docs/logistics/warehouse/stock-records/record) is created, which moves the items in the document, and the **Load** flag is inserted in the DN header.      
 
 :::important Remember   
-If in the *[DN Parameters](/docs/configurations/parameters/sales/dn-parameters#scarico) > Unload tab* the flag **Create recording with document date** is not active, the warehouse registration will always be executed with the current date.  
+If in the *[DN Parameters](/docs/configurations/parameters/sales/dn-parameters) > Unload tab* the flag **Create recording with document date** is not active, the warehouse registration will always be executed with the current date.  
 If the flag in the parameters is active, the registration will be created using the *Transportation Date* indicated in the *Transportation* tab of the DN, if filled; otherwise, the date of the DN will be used.  
 :::
 

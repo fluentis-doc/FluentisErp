@@ -27,7 +27,7 @@ En esta pestaña, el usuario tiene la posibilidad de buscar y transferir los DDT
 > **Descargar<!-- Scarico -->**: permite ejecutar la descarga de los DDT seleccionados desde el almacén<!-- magazzino -->, según los algoritmos de descarga y los parámetros ingresados en la siguiente pestaña *Parámetros*.
 
 :::important Recuerda<!-- Ricorda -->
-Si en los *[Parámetros DDT](/docs/configurations/parameters/sales/dn-parameters#scarico) > pestaña Descarga<!-- tab Scarico -->* la bandera **Crear registración con la fecha del documento** no está activa, la registración de almacén<!-- registrazione di magazzino --> siempre se realizará con la fecha actual.     
+Si en los *[Parámetros DDT](/docs/configurations/parameters/sales/dn-parameters) > pestaña Descarga<!-- tab Scarico -->* la bandera **Crear registración con la fecha del documento** no está activa, la registración de almacén<!-- registrazione di magazzino --> siempre se realizará con la fecha actual.     
 Si la bandera en los parámetros está activa, la registración se creará usando la *Fecha de transporte* indicada en la pestaña *Transporte* del DDT, si está especificada; de lo contrario se usará la fecha del DDT.    
 :::
 

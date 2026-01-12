@@ -26,7 +26,7 @@ In this tab, the user has the ability to search for and transfer the DN that hav
 > **Unload**: allows you to execute the shipment of the selected DN from the warehouse, based on the shipment algorithms and the parameters entered in the following *Parameters* tab.
 
 :::important Remember 
-If in the *[DN Parameters](/docs/configurations/parameters/sales/dn-parameters#scarico) > Unload tab* the flag **Create recording with document date** is not active, the warehouse registration will always be executed with the current date.     
+If in the *[DN Parameters](/docs/configurations/parameters/sales/dn-parameters) > Unload tab* the flag **Create recording with document date** is not active, the warehouse registration will always be executed with the current date.     
 If the flag in the parameters is active, the registration will be created using the *Transportation Date* indicated in the *Transportation* tab of the DN, if filled; otherwise, the date of the DN will be used.    
 :::
 

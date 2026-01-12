@@ -26,7 +26,7 @@ In questo tab, l'utente ha la possibilità di cercare e trasferire i DDT che han
 > **Scarico**: permette di eseguire lo scarico dei DDT selezionati dal magazzino, in base agli algoritmi di scarico e ai parametri inseriti nel successivo tab *Parametri*.
 
 :::important Ricorda
-Se nei *[Parametri DDT](/docs/configurations/parameters/sales/dn-parameters#scarico) > tab Scarico* il flag **Crea registrazione con la data del documento** non è attivo, la registrazione di magazzino sarà sempre eseguita con la data corrente.     
+Se nei *[Parametri DDT](/docs/configurations/parameters/sales/dn-parameters) > tab Scarico* il flag **Crea registrazione con la data del documento** non è attivo, la registrazione di magazzino sarà sempre eseguita con la data corrente.     
 Se il flag nei parametri è attivo, la registrazione sarà creata utilizzando la *Data trasporto* indicata nel tab *Trasporto* del DDT, se valorizzata, altrimenti sarà utilizzata la data del DDT.    
 :::
 
