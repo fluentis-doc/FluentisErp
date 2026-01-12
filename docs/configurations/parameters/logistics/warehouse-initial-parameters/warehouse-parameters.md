@@ -77,7 +77,7 @@ Nel magazzino *Conto lavoro* solitamente si tiene attivato il flag sulla colonna
 
 ## 4. Parametri giacenza
 
-In questo tab è possibile decidere decidere per ciascun magazzino in che como debba essere gestita la *Giacenza*. 
+In questo tab è possibile decidere per ciascun magazzino in che modo debba essere gestita la *Giacenza*. 
 
 **Permetti giacenza negativa**: consente di avere la giacenza di un articolo sottozero. Nel caso in cui il flag non sia attivato, il sistema impedisce sempre di salvare registrazioni di magazzino o operazioni di scarico che mandino sottozero la giacenza di qualsiasi articolo. Da precisare che se l'articolo è gestito a lotti o a serial numbers, attivare questo flag non significa avere la possibilità di mandarlo sottozero, in quanto l'articolo gestito a lotti o a serial numbers non può mai essere scaricato se la giacenza del lotto o del serial number che si vuole scaricare non esiste.
 
@@ -90,5 +90,9 @@ In questo tab è possibile decidere decidere per ciascun magazzino in che como d
 **Giacenza progetto**: significa controllare la giacenza anche per il progetto specificato nel movimento (se la giacenza per quel progetto non è sufficiente, il movimento non è creato); 
 
 **Giacenza cliente/fornitore**: significa controllare la giacenza anche per il cliente/fornitore specificato nella registrazione (se la giacenza per quel cliente/fornitore non è sufficiente, il movimento non è creato. Può essere usato per i magazzini terzisti).
+
+:::important Attenzione
+Ogni volta che si interviene sulla scheda dei parametri di chiusura o in quello di giacenza è importante verificare i due siano configurati in modo coerente. Diversamente è possibile che, pur gestendo la giacenza per conto o per ubicazione, alla prima chiusura di magazzino ci si ritrovi la giacenza senza conto assegnato oppure con ubicazione vuota in quanto la chiusura non l'ha riportato.
+:::
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
