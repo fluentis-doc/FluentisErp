@@ -87,5 +87,5 @@ Per questa tipologia avremo a disposizione i seguenti pulsanti: (I prime due e l
 
 Per questa tipologia l’unico pulsante attivo è **Crea valori del modello**, che attiva un popup per selezionare i *sotto-budget* da considerare come origine dati (nella combo box è attiva la selezione multipla con i tasti Ctrl o Shift):
 
-- i *sotto-budget* per *sottoconti* saranno utilizzati per valorizzare i nodi (le righe) del modello di riclassificazione [**impostate con tipologia *sottoconti***](/docs/controlling/reclassifications/create-reclassification-model#campi-di-testata)
-- i *sotto-budget* per *centri di costo* saranno utilizzati per valorizzare i nodi (le righe) del modello di riclassificazione [**impostate con tipologia *centri di costo***](/docs/controlling/reclassifications/create-reclassification-model#campi-di-testata)
+- i *sotto-budget* per *sottoconti* saranno utilizzati per valorizzare i nodi (le righe) del modello di riclassificazione [**impostate con tipologia *sottoconti***](/docs/controlling/reclassifications/create-reclassification-model)
+- i *sotto-budget* per *centri di costo* saranno utilizzati per valorizzare i nodi (le righe) del modello di riclassificazione [**impostate con tipologia *centri di costo***](/docs/controlling/reclassifications/create-reclassification-model)

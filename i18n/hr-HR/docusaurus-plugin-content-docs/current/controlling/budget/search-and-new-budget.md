@@ -87,5 +87,5 @@ Za ovu vrstu imat ćemo na raspolaganju sljedeće tipke: (Prva dva i posljednji 
 
 Za ovu vrstu jedina aktivna tipka je **Stvori vrijednosti modela**, koja otvara skočni prozor za odabir *pod-budžeta* koji će se koristiti kao izvor podataka (u padajućem izborniku omogućena je višestruka selekcija pomoću tipki Ctrl ili Shift):  
 
-- *pod-budžeti* za *Podkonta* koristit će se za popunjavanje čvorova (redaka) modela reklasifikacije [**postavljenih s tipologijom *Podkonta***](/docs/controlling/reclassifications/create-reclassification-model#campi-di-testata)
-- *pod-budžet* za *centre troška* koristit će se za popunjavanje čvorova (redaka) modela reklasifikacije [**postavljenih s tipologijom *centri troška***](/docs/controlling/reclassifications/create-reclassification-model#campi-di-testata)
+- *pod-budžeti* za *Podkonta* koristit će se za popunjavanje čvorova (redaka) modela reklasifikacije [**postavljenih s tipologijom *Podkonta***](/docs/controlling/reclassifications/create-reclassification-model)
+- *pod-budžet* za *centre troška* koristit će se za popunjavanje čvorova (redaka) modela reklasifikacije [**postavljenih s tipologijom *centri troška***](/docs/controlling/reclassifications/create-reclassification-model)
