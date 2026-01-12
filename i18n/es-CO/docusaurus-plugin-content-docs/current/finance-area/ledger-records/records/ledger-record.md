@@ -14,52 +14,34 @@ El formulario se abre a través de la ruta **Administración > Registraciones co
 1. **Ingresa los datos obligatorios en el Encabezado<!-- Testata -->**: *Fecha de registración<!-- Data Registrazione -->, si es diferente de Hoy*, ***Causal contable<!-- Causale contabile -->***, *Cuenta<!-- Conto --> (cliente o proveedor)*, *Número* y *Fecha del Documento* *Total de la registración<!-- registrazione -->*.  
  
 2. **Ingresa los datos de IVA**: Tipo de IVA<!-- IVA -->, Cuenta de contrapartida y porcentaje de IVA (si no se propone ya desde la ficha del cliente/proveedor) 
-<!--
-2. **Ingresa los datos de IVA**: Tipo de IVA, Cuenta de contrapartida y porcentaje de IVA (si no se propone ya desde la ficha del cliente/proveedor) 
--->
+<!-- 2. **Ingresa los datos de IVA**: Tipo de IVA, Cuenta de contrapartida y porcentaje de IVA (si no se propone ya desde la ficha del cliente/proveedor) -->
 
 3. **Gestiona las fechas de competencia económica**: si es necesario, especialmente para los servicios, con el fin de obtener automáticamente los devengos y diferimientos posteriormente.
-<!--
-3. **Gestisci le date di competenza economica**: se necessario in particolare per i servizi al fine di ottenere i ratei e risconti automatici in seguito.
--->
+<!-- 3. **Gestisci le date di competenza economica**: se necessario in particolare per i servizi al fine di ottenere i ratei e risconti automatici in seguito. -->
 
 4. **Verifica y modifica la sección Libro diario<!-- Libro giornale -->** si es necesario, puedes cambiar las cuentas o dividir el coste o ingreso insertando nuevas filas.
-<!--
-4. **Verifica e modifica la sezione Libro giornale** se necessario puoi variare i conti o suddividere il costo o ricavo inserendo nuove righe
--->
+<!-- 4. **Verifica e modifica la sezione Libro giornale** se necessario puoi variare i conti o suddividere il costo o ricavo inserendo nuove righe -->
 
 5. **Revisa la sección de Resúmenes<!-- Riepiloghi -->** verificando que el asiento<!-- registrazione --> esté balanceado.  
-<!--
-5. **Controlla la sezione dei Riepiloghi** verificando che la registrazione sia bilanciata.  
--->
+<!-- 5. **Controlla la sezione dei Riepiloghi** verificando che la registrazione sia bilanciata.  -->
 
 6. **Revisa o gestiona la pestaña de Partidas abiertas<!-- Tab delle Partite aperte -->** si no se propone desde la ficha del cliente o proveedor, ingresa los datos relativos al tipo y solución de pago para gestionar las partidas abiertas de manera alineada respecto al movimiento contable<!-- movimento contabile -->.
-<!--
-6. **Controlla o gestisci la Tab delle Partite aperte** se non viene proposta dall'anagrafica cliente o fornitore inserisci i dati relativi al tipo e soluzione di pagamento per gestire le partite aperte iun maniera allineata rispetto al movimento contabile
--->
+<!-- 6. **Controlla o gestisci la Tab delle Partite aperte** se non viene proposta dall'anagrafica cliente o fornitore inserisci i dati relativi al tipo e soluzione di pagamento per gestire le partite aperte iun maniera allineata rispetto al movimento contabile -->
 
 7. **Cobros o pagos** se gestionarán desde la **Pestaña Pagos<!-- Tab Pagamenti -->** que será utilizada **primero**, buscando las partidas a cerrar con el botón **Buscar Partidas<!-- Ricerca Partite -->** y haciendo doble clic en las partidas a cerrar; de este modo, los datos de los clientes o proveedores cobrados o pagados ya estarán reflejados en la sección Libro diario<!-- Libro giornale -->.
-<!--
-7. **Incassi o pagamenti** verranno gestiti dalla **Tab Pagamenti** che sarà utilizzata **per prima**, ricercando le partite da chiudere con il bottone **Ricerca Partite** e facendo doppio click sulle partite da chiudere, in questo modo i dati dei clienti o fornitori incassati o pagati saranno già riportati nella sezione Libro giornale.
--->
+<!-- 7. **Incassi o pagamenti** verranno gestiti dalla **Tab Pagamenti** che sarà utilizzata **per prima**, ricercando le partite da chiudere con il bottone **Ricerca Partite** e facendo doppio click sulle partite da chiudere, in questo modo i dati dei clienti o fornitori incassati o pagati saranno già riportati nella sezione Libro giornale. -->
 
 8. **Asientos simples de diario<!-- Scritture semplici di prima nota -->** como transferencias entre cuentas, etc., pueden ser ingresados directamente en la sección Libro diario<!-- Libro giornale -->, ya que la correspondiente causa<!-- causale --> no prevé mover la cuadrícula de IVA<!-- griglia IVA -->.
-<!--
-8. **Scritture semplici di prima nota** come giroconti cc... possono essere inseriti direttamente nella sezione Libro giornale, non prevedendo la relativa causale di movimentare la griglia IVA
--->
+<!-- 8. **Scritture semplici di prima nota** come giroconti cc... possono essere inseriti direttamente nella sezione Libro giornale, non prevedendo la relativa causale di movimentare la griglia IVA -->
 
 9. **Otras secciones específicas no obligatorias**: según los parámetros activados en la causa contable<!-- causale contabile -->, se visualizarán otras secciones específicas, como la Contabilidad **analítica<!-- analitica -->**, los activos fijos<!-- cespiti -->, los **Intrastat**, las comisiones de **Agentes** que es posible gestionar.
-<!--
-9. **Altre sezioni specifiche non obbligatorie**  a seconda sei parametri attivati nella causale contabile, verranno visualizzate altre sezioni specifiche, quali la Contabilità **analitica**, I cespiti, gli **Intrastat**, le provvigioni **Agenti** che è possibile gestire.
--->
+<!-- 9. **Altre sezioni specifiche non obbligatorie**  a seconda sei parametri attivati nella causale contabile, verranno visualizzate altre sezioni specifiche, quali la Contabilità **analitica**, I cespiti, gli **Intrastat**, le provvigioni **Agenti** che è possibile gestire. -->
  
 </details>
 
 
 El asiento contable<!-- Registrazione contabile -->, y por consiguiente el formulario para su ingreso, está compuesto por los siguientes elementos:
-<!--
-La Registrazione contabile, e conseguentemente la form per il suo inserimento, è composta dai seguenti elementi:
--->
+<!-- La Registrazione contabile, e conseguentemente la form per il suo inserimento, è composta dai seguenti elementi: -->
 
 - El **Encabezado<!-- Testata -->** ("*Header*" que corresponde a la zona superior del formulario) que contiene elementos únicos para el asiento<!-- registrazione --> tales como:
     > La fecha
@@ -100,15 +82,13 @@ a partir de la fecha de registro<!-- data di registrazione -->, la aplicación b
 Esta fecha es la base para la impresión del libro diario<!-- libro giornale --> y de los extractos de cuenta contables<!-- estratti conto contabili -->.
 
 En caso de que se pulse el botón de creación de una *Nueva registración* desde dentro de la que se está gestionando, es posible configurar, mediante los **parámetros de ingreso<!-- parametri di inserimento -->** (en la barra de cinta), que este campo también se proponga en la nueva;
-<!--
-  L'importanza di questa data è fondamentale in quanto non esiste la necessità di procedere ad un Cambio esercizio: 
+<!-- L'importanza di questa data è fondamentale in quanto non esiste la necessità di procedere ad un Cambio esercizio: 
 
 a partire dalla data di registrazione l'applicativo ricerca  i parametri di contabilità per l'anno di riferimento (individuando all'interno di quale range di date esercizio si trovi) e da questo riprende gli altri range di date di controllo (date competenza in linea e date periodo in linea). 
 
 Questa data è quella base della stampa del libro giornale e degli estratti conto contabili. 
 
-In caso sia premuto il pulsante di creazione di una *Nuova registrazione* da dentro quella in gestione è possibile impostare, tramite i **parametri di inserimento**  (nella ribbon bar) che questo campo sia proposto anche in quella nuova;
--->
+In caso sia premuto il pulsante di creazione di una *Nuova registrazione* da dentro quella in gestione è possibile impostare, tramite i **parametri di inserimento**  (nella ribbon bar) che questo campo sia proposto anche in quella nuova; -->
 
 </details>
 
