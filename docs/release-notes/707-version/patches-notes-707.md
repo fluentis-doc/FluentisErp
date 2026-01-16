@@ -3,6 +3,25 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0062 - 16/01/2026
+
+> -	CO - nelle scritture di integrazione delle Chiusure infrannuali ora Fluentis restituisce un messaggio se la registrazione da creare non ha righe a causa del valore 0 dell’integrazione da eseguire. (#TT04864/25)
+> -	FI - la contabilizzazione ora valorizza l’analitica della registrazione solo per i sottoconti economici o per i patrimoniali che hanno la gestione centri aziendali attiva. (#TT00169/26)
+> -	MES - Importo WebApi segnalazioni di produzione - nuova opzione "RegisterSignalAfterInsert" - registra automaticamente dopo l'inserimento (se la registrazione da errori, viene eseguito un rollback anche per l'inserimento di segnalazione) (#TT00095/26)
+> -	MS - Fasi standard - La colonna del Tempo fisso non è più modificabile in quanto è relativa al Centro di Lavoro e non alla Fase standard (#TT00104/26).
+> -	PM - Corretto funzionamento codici per l'elaborazione "Stato avanzamento lavori": CNTP001 - CNTP002. Ora le scritture contabili relative ad acquisti e vendite collegate a progetto, sono incluse correttamente nel SAL. (#TT03598/25)
+> -	PM - WEBAPI importazione interventi - gestita caso in cui righe servizi non codificate con progetto associato non venivano importate. (#TT05501/25)
+> -	PM - WEBAPI interventi - gestita importazione interventi senza ore di pausa (#TT05108/25)
+> -	PR - Lock Manager: corretto errore in fase di inserimento riga all’interno del blocco cliente (rif. Ticket TT00027/26)
+> -	PR - Stampa dilazione media incassi: revisione proposta della data scadenza nel report (rif. ticket 5491/25)
+> -	SCS - Se nei parametri di Conto lavoro è attivo il flag Controlla disponibilità, durante l’evasione di un ordine in DDT di conto lavoro viene verificata la disponibilità del materiale presso il magazzino del terzista. Se la disponibilità è uguale o superiore alla quantità residua del materiale, la quantità da evadere proposta sarà zero. Se la disponibilità è inferiore, la quantità da evadere proposta sarà calcolata come differenza tra la quantità residua e la disponibilità nel magazzino del terzista. (#TT01615/25)
+> -	SD - Creazione Fattura di Vendita da Gestione anticipi: La fattura generata dalla gestione anticipi non riporta gli sconti predefiniti per cliente o tipo pagamento. (#TT04844/25)
+> -	SD - Fix Sales business document item agent percentage calculation after final discount change(#TT04058/25)
+> -	WM - Brogliaccio di Magazzino: Corretto calcolo giacenza iniziale con rimanenze nel periodo di stampa. (#TT00142/26)
+> -	WM - Brogliaccio di magazzino: Corretto errore “summaryTemplate missing”. (#TT00170/26)
+> -	WM - Spedizioni - Corretta errata evasione ordini clienti creando picking con tipo senza evasione. (#TT05607/25)
+> -	WM - Stampa inventario a quantità - spostato totale di magazzino nel footer per problema di caricamento del dato con molte righe.
+
 ### Patch 707.1-0061 - 09/01/2026
 
 > -	FI - Stampa di controllo cespiti, revisione per calcolo del tipo operazione iva indetraibile (#TT05537/25)
