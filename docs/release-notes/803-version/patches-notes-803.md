@@ -3,6 +3,43 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0006 - 16/01/2026
+
+> -	ARM - fix database migration for Bizlink FBH (#TT00057/26)
+> -	CO - form Visualizzazione totali per Centro di costo, risolto errore in apertura (#TT00036/26)
+> -	CO - nella form dei ‘Valori di controllo’ del controlling, i campi con i valori delle griglie sono stati formattati con i separatori delle migliaia. Modifications in form ‘Valori di controllo’ can have an impact on profiles.(#TT00012/26)
+> -	CO - nella procedura di “Storico ammortamenti” dell’elaborazione periodi nel Controlling, compilazione campi del cambio valuta e importo valuta (#TT04897/25)
+> -	CO - nelle scritture di integrazione delle Chiusure infrannuali ora Fluentis restituisce un messaggio se la registrazione da creare non ha righe a causa del valore 0 dell’integrazione da eseguire. (#TT04864/25)
+> -	CO - procedura di Consolidamento Master, revisione filtro applicato alla dimensione Dimensione nella griglia. (#TT00031/26)
+> -	FI - la contabilizzazione della fattura di acquisto con allocazione costi ora usa il sottoconto dal riferimento di allocazione anche negli ambienti con tax engine attiva. (#TT05618/25)
+> -	FI - la contabilizzazione ora valorizza l’analitica della registrazione solo per i sottoconti economici o per i patrimoniali che hanno la gestione centri aziendali attiva. (#TT00169/26)
+> -	FI - Nella gestione delle dichiarazioni di intento i pulsanti di stampa si abilitano solo quando la dichiarazione è salvata ( Application exception - 287125/2025 )
+> -	FI - solve a crash in interest calculation ( application exception 287428/2025)
+> -	FI - è stata modificata la tabella Giurisdizione per aggiungere i campi della regione e provincia di riferimento. Modificata la stampa Registro tasse e Riepilogo per codice tasse per aggiungere filtri per nazione/regione/provincia della giurisdizione. Modifications in forms Giurisdizione, Registro tasse and Riepilogo per codice tasse can have an impact on profiles(#TT05664/25)
+> -	FI - Compensazione veloce: inserito messaggio di avviso quando si compensano partite riferite ad un anno non presente all’interno dei parametri di contabilità ( TT05459/25)
+> -	FI/PR/CRM/SH/SD - set defaults post migration
+> -	MES - Importo WebApi segnalazioni di produzione - nuova opzione "RegisterSignalAfterInsert" - registra automaticamente dopo l'inserimento (se la registrazione da errori, viene eseguito un rollback anche per l'inserimento di segnalazione) (#TT00095/26)
+> -	MS - Fasi standard - La colonna del Tempo fisso non è più modificabile in quanto è relativa al Centro di Lavoro e non alla Fase standard (#TT00104/26).
+> -	PM - WEBAPI importazione interventi - gestita caso in cui righe servizi non codificate con progetto associato non venivano importate. (#TT05501/25)
+> -	PR - Lock Manager: corretto errore in fase di inserimento riga all’interno del blocco cliente (rif. Ticket TT00027/26)
+> -	PR - Stampa dilazione media incassi: revisione proposta della data scadenza nel report (rif. ticket 5491/25)
+> -	Risolto bug per ImportazioniExcel nel calcolo degli elementi inclusi in una transazione
+> -	SCM - DDT di Acquisto: Corretto il calcolo delle spese relative al Contributo RAEE nel caso di creazione DDT da Ricevimento merci del WMS. (#TT00085/26)
+> -	SCM - Ordini Fornitore: corretto l’aggiornamento dello stato di evasione della riga a seguito di utilizzo del pulsante Suddividi quantità in più date di consegna, nel caso di righe articolo parzialmente evase. Introdotto un controllo in fase di suddivisione che impedisce di impostare, sulla riga di origine, una quantità inferiore a quella già evasa. (#TT04796/25)
+> -	SCM - Richieste di Acquisto: Il prezzo unitario netto viene ora determinato partendo dal prezzo dell’articolo, invece che dall’importo netto della riga. (#TT05051/25)
+> -	SCS - Se nei parametri di Conto lavoro è attivo il flag Controlla disponibilità, durante l’evasione di un ordine in DDT di conto lavoro viene verificata la disponibilità del materiale presso il magazzino del terzista. Se la disponibilità è uguale o superiore alla quantità residua del materiale, la quantità da evadere proposta sarà zero. Se la disponibilità è inferiore, la quantità da evadere proposta sarà calcolata come differenza tra la quantità residua e la disponibilità nel magazzino del terzista. (#TT01615/25)
+> -	SD - Creazione Fattura da DDT: Se per il cliente risultano Fatture di Acconto non ancora chiuse, la procedura di valorizzazione segnala all’utente la presenza di acconti aperti. (#TT05473/25)
+> -	SD - Creazione Fattura di Vendita da Gestione anticipi: La fattura generata dalla gestione anticipi non riporta gli sconti predefiniti per cliente o tipo pagamento. (#TT04844/25)
+> -	SD - Fix Sales business document item agent percentage calculation after final discount change(#TT04058/25)
+> -	SD - Ottimizzazione importazione ordini di vendita WebApi, (#TT04576/25)
+> -	SD - Set values for sales fixed tables after migration(#TT00096/26)
+> -	SH - Risolto problema di visualizzazione nell’apertura dei dettagli delle maschere da Form navigator. (#TT05677/25)
+> -	WM - Brogliaccio di Magazzino: Corretto calcolo giacenza iniziale con rimanenze nel periodo di stampa. (#TT00142/26)
+> -	WM - Brogliaccio di magazzino: Corretto errore “summaryTemplate missing”. (#TT00170/26)
+> -	WM - Spedizioni - Corretta errata evasione ordini clienti creando picking con tipo senza evasione. (#TT05607/25)
+> -	WM - Stampa inventario a quantità - spostato totale di magazzino nel footer per problema di caricamento del dato con molte righe.
+> -	WMS - Ricevimento Merce - Creazione UDC con gruppo da ordine fornitore ora vengono generate con anno concorde. (#TT00077/26)
+
 ### Patch 803.0005 - 09/01/2026
 
 > -	CO - comparation reclassifications ( TT00010/26)
