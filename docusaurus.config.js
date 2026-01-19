@@ -366,7 +366,7 @@ const config = {
         // 3...
         //
         // Do _not_ use Infinity, the value must be a JSON-serializable integer.
-        indexDocSidebarParentCategories: 0,
+        indexDocSidebarParentCategories: 1,
 
         // whether to index blog pages
         indexBlog: false,
@@ -388,7 +388,7 @@ const config = {
 
         // The maximum number of search results shown to the user. This does _not_ affect performance of
         // searches, but simply does not display additional search results that have been found.
-        maxSearchResults: 64,
+        maxSearchResults: 50,
 
         // lunr.js-specific settings
         lunr: {
@@ -398,7 +398,7 @@ const config = {
           // By default, it splits the text at whitespace and dashes.
           //
           // Note: Does not work for "ja" and "th" languages, since these use a different tokenizer.
-          tokenizerSeparator: /[\s\-_]+|(?=[A-Z])/,
+          tokenizerSeparator: /[\s\-]+/,
           // https://lunrjs.com/guides/customising.html#similarity-tuning
           //
           // This parameter controls the importance given to the length of a document and its fields. This
@@ -415,10 +415,10 @@ const config = {
           // the search term appears in just the text. This is done by "boosting" title matches with a
           // higher value than content matches. The concrete boosting behavior can be controlled by changing
           // the following settings.
-          titleBoost: 10,
-          contentBoost: 2,
-          tagsBoost: 3,
-          parentCategoriesBoost: 2, // Only used when indexDocSidebarParentCategories > 0
+      titleBoost: 15,      // TITOLI = fondamentali
+      contentBoost: 2,     // testo normale
+      tagsBoost: 6,        // usa tags nei doc!
+      parentCategoriesBoost: 4, // Only used when indexDocSidebarParentCategories > 0
         }
       },
     ],
