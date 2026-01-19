@@ -9,15 +9,18 @@ La funzione di **inventario** consente una gestione completa e dettagliata delle
 
 Questa procedura è utilizzata per popolare una lista inventariale creata in wpf con gli articoli letti tramite barcode.  
 
-L'operatore, tramite WMS, potrà ricercare l’inventario di riferimento e premendo il pulsante *ricerca*, visualizzerà solamente le liste inventariali associate a sé stesso.        
+L'operatore, tramite WMS, potrà ricercare l’inventario di riferimento e premendo il pulsante *ricerca*, visualizzerà solamente le liste inventariali associate a sé stesso oppure senza un operatore assegnato.        
 Selezionando la lista e premendo il pulsante *modifica*, viene aperta la form di inserimento dove: leggendo l’articolo e la sua ubicazione verranno caricati i relativi dati e l’operatore dovrà inserire la quantità.           
 Premendo il pulsante conferma, la procedura compilerà in tempo reale la lista inventariale con i dati appena inseriti.         
 Nel caso in cui l'articolo letto sia gestito a lotti, verrà visualizzato anche il relativo campo in cui andare ad inserire il lotto che dovrà essere inventariato.         
 Se un articolo viene letto una seconda volta (stessa Classe/Codice/Lotto (se gestito a lotti)) e indicato nella stessa ubicazione della prima, compare un pop-up che chiede se **Aggiungere** o **Sostituire** la quantità letta in precedenza.
 
-Una volta ultimate le liste inventariali, da Fluentis verranno creati tutti i movimenti di rettifica attraverso la procedura di [Differenze inventariali](/docs/logistics/physical-inventory/stock-difference).         
+Una volta ultimate le liste inventariali, da Fluentis è possibile creare i movimenti di rettifica attraverso la procedura di [Differenze inventariali](/docs/logistics/physical-inventory/stock-difference).         
 
+:::note Parametri per utente
+L'operatore corrente su cui sono filtrate le liste inventariali proposte è identificato come quello che ha il **Nome Utente** corrispondente al **Login** dell'utente con cui è stato fatto l'accesso all'applicazione.
 Per l'utilizzo di questa form, non è necessario inserire nessun parametro nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+:::
 
 :::note Nota
 È possibile variare il comportamento della lista inventariale relativamente all'ubicazione tramite il flag **Mantieni ubicazione** nella tabella dei [Tipi liste inventariali](/docs/configurations/tables/logistics/stock-lists-types). Questo se attivo, fa in modo che in fase di inventario con il WMS l'ubicazione inserita non verrà variata fino a quando non sarà letta un'altra ubicazione; nel caso in cui invece, fosse disattivato, l'ubicazione dovrà essere inserita ogni volta prima della conferma dell'articolo.
