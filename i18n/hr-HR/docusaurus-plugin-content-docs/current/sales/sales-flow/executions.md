@@ -44,15 +44,15 @@ Nakon odabira narudžbi i postavljanja filtara, klikom na *Prijenos* generira se
 
 Postupak isporuke iz otpremnice u račun može se pokrenuti na dva načina:
 
-- Iz izbornika [Procedure](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes): Andando su *Vendite > Fatture di Vendita > Procedure > Creazione da DDT*.
-- Dalla [Testata](/docs/sales/sales-invoices/invoicing/sales-invoice) della Fattura di Vendita: Utilizzando il pulsante *Evasione DDT* nella testata della fattura.
+- Iz izbornika [Procedure](/docs/sales/sales-invoices/procedures/create-invoices-from-delivery-notes): Idite na *Prodaja > Računi > Procedure > Kreiranje iz otpremnica*.
+- Iz [Zaglavlja](/docs/sales/sales-invoices/invoicing/sales-invoice) računa: Koristeći tipku *Izvršenje otpremnice/primke* u traci izbornika zaglavlja računa.  
 
-Questa procedura permette di creare una o più fatture a partire da uno o più DDT. La procedura si compone di tre tab principali:
+Ova procedura omogućava kreiranje jednog ili više računa na temelju jedne ili više otpremnica. Procedura se sastoji od tri glavna taba:
 
-- Valorizzazione: Consente di inserire filtri per selezionare i DDT da fatturare (con stato "Stampato") e specificare la data di creazione della fattura.
-- Parametri: Configura le opzioni di raggruppamento per la creazione di una fattura da più DDT, come l'inclusione di DDT di anni e periodi IVA diversi, tipi di DDT diversi o con tassi di cambio diversi. È possibile anche definire il trattamento dei pagamenti, ripristinando quelli dell'anagrafica o mantenendo quelli specificati nei DDT.
-- Precedenti: Permette di visualizzare, filtrare e annullare le operazioni di fatturazione precedenti.
+- Vrijednovanje: Omogućava unos filtera za odabir otpremnica za fakturiranje (sa statusom "Ispisano") i definiranje datuma kreiranja računa.  
+- Parametri: Konfigurira opcije grupiranja za kreiranje računa iz više otpremnica, uključujući otpremnice iz različitih godina i poreznih razdoblja, različite vrste otpremnica ili s različitim tečajevima. Također je moguće definirati način obrade plaćanja, vraćajući podatke iz kartoteke ili zadržavajući one specificirane u otpremnicama.
+- Prethodni: Omogućava pregled, filtriranje i poništavanje prethodnih fakturiranja.
 
-Dopo aver selezionato i DDT e impostato i parametri, è possibile procedere con la creazione della fattura cliccando su *Creazione Fattura da DDT*.
+Nakon odabira otpremnica i postavljanja parametara, moguće je nastaviti s kreiranjem računa klikom na *Kreiranje računa iz otpremnice*.
 
-L'evasione da DDT a fattura è completabile anche dalla testata della fattura stessa tramite il pulsante Evasione DDT.
+Evidencija iz otpremnice u račun također se može dovršiti iz samog zaglavlja računa pomoću tipke Izdavanje iz otpremnice u traci izbornika.
