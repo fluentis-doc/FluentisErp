@@ -38,7 +38,7 @@ Clicca per i passaggi fondamentali:
 Sulla testata della distinta è presente un flag **Autorizzato** per consentire la creazione del tracciato XML ed eseguire il pagamento. Il flag memorizza l'utente e la data di autorizzazione. Può essere attivato di default accedendo alla form **Parametri pagamenti fornitori** e attivando il flag *Autorizzato di default*.
 :::
 
-9. **Premi il pulsante Creazione file SEPA** per generare automaticamente un tracciato .xml della lista dei pagamenti ed archiviarlo automaticamente nel documentale. Puoi scaricare il file dal documentale per la successiva impostazione sui sistemi corporate banking, anzichè dover reinserire i pagamenti manualmente.
+9. **Premi il pulsante Creazione file SEPA** per generare automaticamente un tracciato .xml della lista dei pagamenti ed archiviarlo automaticamente nel documentale. Puoi scaricare il file dal documentale per la successiva impostazione sui sistemi corporate banking, anzichè dover reinserire i pagamenti manualmente. (sono disponibili, tramite i relativi pulsanti, anche tracciati per l'esportazione i file SEPA per bonifici esteri, file per autorizzazione di pagamento RiBa o altri effetti passivi, file per esportazione dei pagamenti verso Piteco, un software verticale per la tesoreria).
 
 10. Premi il bottone **Documenti**, nel gruppo Document manager per accedere al documentale con l'allegato .xml Da dentro la form del documentale premi poi il bottone **Salva allegato** per scaricare la copia sul PC locale.
 
@@ -53,6 +53,17 @@ Sulla testata della distinta è presente un flag **Autorizzato** per consentire 
 > **Crea un pagamento dalle partite**: Attivabile dopo il salvataggio della testata, acquisisce i dati dall'archivio partite.
 
 > **Documenti**: Pulsante per il collegamento alla gestione documentale.
+
+> **Creazione file SEPA / SEPA Estero / Piteco / Pagamento Effetti**: pulsanti per l'esportazione del relativo tracciato specifico
+
+> **Contabilizzazione / Ripristina contabilizzazione**: pulsanti per eseguire, direttamente dalla presente form, la contabilizzazione della distinta oppure il ripristino della contabilizzazione stessa. La contabilizzazione avviene in base alla riga (o sulle righe) selezionate.
+Quando si preme la contabilizzazione appare un popup per l'impostazione di tutti i parametri relativi laa scrittura contabile da generare (ata causale contabile eccetera). E'presente un flag particolare, ***Esegui la contabilità per tutte le righe di pagamento***, il quale, se impostato, fa contabilizzare tutti i dettagli della distinta di pagamento (quelli non già contabilizzati chiaramente), mentre se disattivato verranno contabilizzate solo le righe preselezionate con il mouse prima di premere il pulsante.
+
+Il rollback, invece, esegue solo in riferimento alla riga selezionata.
+
+La contabilizzazione viene tracciata nella procedura di [**Contabilizzazione pagamenti fornitore**](/docs/treasury/vendors-payments/accounting/vendor-payments-accounting), in modo da permettere di fare il rollback anche da questa, volendo.
+
+
 
 :::note[Info: Controllo SEPA sui bonifici della ragione sociale del Creditore]
 Il SEPA ha introdotto in alcuni casi un controllo di corrispondenza tra l'intestatario del conto corrente e la ragione sociale del Creditore destinatario del bonifico. Per superare questo controllo in casi di discrepanza el dato legato alla codifica dell'anagrafica è possibile utilizzare un [**Indirizzo alternativo**](/docs/configurations/tables/general-settings/address-types) con apposito flag *Utilizzato in SEPA*
@@ -69,9 +80,5 @@ Il valore di default è impostato tramite i [**Parametri Pagamenti fornitori**](
 ### **VIDEO TUTORIALS**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
 
 
