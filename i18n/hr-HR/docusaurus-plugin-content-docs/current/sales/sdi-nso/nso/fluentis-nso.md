@@ -48,51 +48,45 @@ U dokumentima tipa:
 
 - Početna i zamjenska unaprijed dogovorena narudžba;       
 
-il codice del tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
-“DeliveryTerms”, come mostrato nel seguente esempio:        
+Kod vrste narudžbe navodi se u polju “SpecialTerms” elementa 
+“DeliveryTerms”, kako je prikazano u sljedećem primjeru:         
 
 < cac:DeliveryTerms> < cbc:SpecialTerms>220< /cbc:SpecialTerms> < /cac:DeliveryTerms>
          
-Esiste un’ulteriore classificazione dei tipi ordine, non obbligatoria.       
-Per il tipo ordine 220 Ordine di acquisto:      
-- OF, Ordine di fatturazione per prodotti già consumati 
-- OFR, Ordine di fatturazione e reintegro 
-Per il tipo ordine 227 Ordine di consegna:      
-- CD Conto deposito 
-- CV Conto visione 
-- CG Comodato gratuito       
+Postoji dodatna klasifikacija vrsta narudžbi, koja nije obvezna.       
+Za vrstu narudžbe 220 Narudžbenica:      
+- OF, Narudžba za fakturiranje već potrošenih proizvoda  
+- OFR, Narudžba za fakturiranje i obnovu zaliha   
+Za vrstu narudžbe 227 Nalog za isporuku:        
+- CD Račun pologa
+- CV Konto pregleda
+- CG Besplatna posudba (kredit)      
 
-Nei Documenti di tipo: 
-- Ordine iniziale e sostitutivo; 
-- Ordine di riscontro sostitutivo;        
+U dokumentima tipa:  
+- Početna i zamjenska narudžba;
+- Zamjenska narudžba za potvrdu;        
 
-il codice del sotto-tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
-“DeliveryTerms”, come mostrato nel seguente esempio:        
+šifra podtipa narudžbe se navodi u polju “SpecialTerms” unutar elementa 
+“DeliveryTerms”, kako je prikazano u sljedećem primjeru:       
 
 < cac:DeliveryTerms> < cbc:SpecialTerms>OFR< /SpecialTerms> < /cac:DeliveryTerms>
      
-Nei Documenti di tipo: 
-- Ordine pre-concordato iniziale e sostitutivo;         
+U dokumentima tipa:  
+- Početna pred-dogovorena narudžba i zamjenska pred-dogovorena narudžba;          
 
-il codice del sotto-tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
-“DeliveryTerms”, dopo il codice del tipo di ordine, utilizzando il formato dei campi strutturati, 
-come mostrato nel seguente esempio:         
+kod podtipa narudžbe navodi se u polju „SpecialTerms” elementa „DeliveryTerms”, nakon koda tipa narudžbe, koristeći format strukturiranih polja, kao što je prikazano u sljedećem primjeru:          
 
 < cac:DeliveryTerms> < cbc:SpecialTerms>220#OFR< /SpecialTerms> < /cac:DeliveryTerms>
 
-## Codice Articolo
+## Šifra artikla  
 
-L’individuazione del prodotto (bene o servizio) all’interno di ciascuna linea d’ordine avviene, oltre 
-che attraverso il nome (elemento “Name, che è obbligatorio) e la descrizione (elemento 
-“Description”), anche per mezzo dell’utilizzo di codici identificativi. 
-In particolare, i tracciati dei predetti Documenti prevedono, primariamente, due tipi di codice: 
-- il codice attribuito dal Fornitore (elemento “SellersItemIdentification/ID”); 
-- il codice standard, corrispondente all’identificativo assegnato al prodotto da un sistema di 
-identificazione univoca (elemento “StandardItemIdentification/ID”) selezionato tra quelli presenti 
-nell’apposita code list prevista dallo standard PEPPOL.         
+Identifikacija proizvoda (robe ili usluge) unutar svake stavke narudžbe provodi se, osim putem naziva (element „Name”, koji je obvezan) i opisa (element „Description”), također i korištenjem identifikacijskih kodova.  
+In particolare, i tracciati dei predetti Konkretno, strukture navedenih dokumenata predviđaju prvenstveno dvije vrste kodova:   
+- kod koji dodjeljuje dobavljač (element „SellersItemIdentification/ID”);  
+- standardni kod, koji odgovara identifikatoru dodijeljenom proizvodu od strane sustava jedinstvene identifikacije (element „StandardItemIdentification/ID”), odabranog među onima navedenima u odgovarajućoj kodnoj listi predviđenoj standardom PEPPOL.     
 
-Gli elementi su menzionati non sono obbligatori, tuttavia se ne raccomanda vivamente l’utilizzo.      
-Esempio:     
+Navedeni elementi nisu obvezni, međutim njihova se uporaba snažno preporučuje.
+Primjer:      
 
 < cac:OrderLine>          
         < cac:LineItem>        
@@ -109,21 +103,13 @@ Esempio:
         < /cac:LineItem>      
 < /cac:OrderLine>          
 
-Per i beni di largo consumo, si suggerisce di valorizzare l’elemento 
-“StandardItemIdentification/ID” con il relativo codice GTIN (corrispondente allo 
-“schemeID=”0160” della code list PEPPOL), come mostrato nel precedente esempio.         
-Per i prodotti farmaceutici provvisti del codice di Autorizzazione all’Immissione in Commercio 
-(AIC) rilasciato dell’Agenzia Italiana del Farmaco (AIFA), l’elemento 
-“SellersItemIdentification/ID” deve essere valorizzato sempre con il relativo codice AIC.
+Za robu široke potrošnje preporučuje se popunjavanje elementa „StandardItemIdentification/ID” odgovarajućim GTIN kodom (koji odgovara „schemeID = 0160” iz PEPPOL kodne liste), kao što je prikazano u prethodnom primjeru.           
+Za farmaceutske proizvode koji imaju kod Odobrenja za stavljanje u promet (AIC), izdan od strane Talijanske agencije za lijekove (AIFA), element „SellersItemIdentification/ID” mora se uvijek popuniti odgovarajućim AIC kodom.  
 
-## Gruppo Merceologico
+## Robna skupina
 
-Per ciascun prodotto, all’interno della relativa linea d’ordine è possibile specificare uno o più 
-codici di classificazione, valorizzando il campo “ItemClassificationCode/ID” dell’elemento 
-“CommodityClassification”. 
-Il valore da indicare deve essere tratto da un sistema di classificazione univoca selezionato tra 
-quelli presenti nell’apposita code list prevista dallo standard PEPPOL, come mostrato 
-nell’esempio seguente:       
+Za svaki proizvod, unutar odgovarajuće stavke narudžbe, moguće je navesti jedan ili više klasifikacijskih kodova, popunjavanjem polja „ItemClassificationCode/ID” elementa „CommodityClassification”.
+Vrijednost koju je potrebno navesti mora biti preuzeta iz sustava jedinstvene klasifikacije odabranog među onima navedenima u odgovarajućoj kodnoj listi predviđenoj standardom PEPPOL, kao što je prikazano u sljedećem primjeru:       
 
 < cac:OrderLine>        
 < cac:LineItem>       
@@ -135,25 +121,22 @@ nell’esempio seguente:
 < /cac:LineItem>      
 < /cac:OrderLine>      
 
-Si raccomanda di utilizzare almeno uno dei sistemi di classificazione riportati nella tabella che 
-segue, ove applicabili.       
+Preporučuje se koristiti barem jedan od sustava klasifikacije navedenih u tablici koja slijedi, tamo gdje je primjenjivo.      
 
-| Codice | Descrizione dello standard di classificazione | Ambito di utilizzo |
+| Kod | Opis klasifikacijskog standarda | Područje primjene |
 | :-- | :-- | :-- |
-| STI | Sistema ufficiale europeo di classificazione unico per gli appalti pubblici (CPV - Common Procurement Vocabulaty) | Prodotti e servizi oggetto di appalti pubblici |
-| STL | Sistema di classificazione anatomico, terapeutico e chimico (ATC - Anatomical Therapeutic Chemical classification system) | Farmaci |
-| STO | Classificazione Nazionale Italiana dei Dispositivi medici (CND) | Dispositivi medici |
-| STH | Classificazione commerciale dei prodotti (GPC - Global Product Classification) | Beni di largo consumo |
-| IB | Sistema di identificazione internazionale dei libri (ISBN - International Standard Book Number) | Libri |
-| ZZZ | Sistema definito manualmente tra le parti | Per i dispositivi medici permette di specificare i valori 'DM1', 'DM2' o 'DM0' (quando non applicabili i primi due) |
+| STI | Službeni europski sustav jedinstvene klasifikacije za javne nabave (CPV - Common Procurement Vocabulary) | Proizvodi i usluge predmet javnih nabava |
+| STL | Sistema klasifikacije anatomskih, terapijskih i kemijskih (ATC - Anatomical Therapeutic Chemical classification system) | Lijekovi |
+| STO | Talijanska nacionalna klasifikacija medicinskih proizvoda (CND) | Medicinski proizvodi |  
+| STH | Trgovačka klasifikacija proizvoda (GPC – Global Product Classification) | Roba široke potrošnje |  
+| IB | Međunarodni sustav identifikacije knjiga (ISBN – International Standard Book Number) | Knjige |
+| ZZZ | Sustav ručno definiran između strana | Za medicinske proizvode omogućuje navođenje vrijednosti „DM1”, „DM2” ili „DM0” (kada prva dva nisu primjenjiva) |
 
-In Fluentis questi codici sono da attribuire alla tabella codici Barcode da associare all’articolo.     
+U Fluentisu se ovi kodovi dodjeljuju u tablici Barcode kodova, koja se zatim povezuje s artiklom.      
 
-## Unità di misura
+## Jedinica mjere  
 
-Nelle linee d’ordine, è necessario indicare la quantità del prodotto specificando un’unità di misura 
-tra quelle indicate nell’apposita Code List prevista dallo standard PEPPOL, come mostrato nel 
-seguente esempio:     
+U stavkama narudžbe potrebno je navesti količinu proizvoda, pri čemu se mora odabrati jedinica mjere s popisa predviđenog u odgovarajućoj Code List prema PEPPOL standardu, kao što je prikazano u sljedećem primjeru:   
 
 < cac:OrderLine> 
 < cac:LineItem> 
