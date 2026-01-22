@@ -366,7 +366,7 @@ const config = {
         // 3...
         //
         // Do _not_ use Infinity, the value must be a JSON-serializable integer.
-        indexDocSidebarParentCategories: 1,
+        indexDocSidebarParentCategories: 0,
 
         // whether to index blog pages
         indexBlog: false,
@@ -388,7 +388,7 @@ const config = {
 
         // The maximum number of search results shown to the user. This does _not_ affect performance of
         // searches, but simply does not display additional search results that have been found.
-        maxSearchResults: 10,
+        maxSearchResults: 50,
 
         // lunr.js-specific settings
         lunr: {

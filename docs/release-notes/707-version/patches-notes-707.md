@@ -1,6 +1,8 @@
 ---
 title: Patch notes Versione 707
 sidebar_position: 1
+tags:
+  - DatiContratto
 ---
 
 ### Patch 707.1-0062 - 16/01/2026
