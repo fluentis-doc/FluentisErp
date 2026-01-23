@@ -3,6 +3,10 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0084 - 19/01/2026
+
+> - ARM - bug fix for serial number movements migration (#TT04969/25).
+
 ### Patch 608.1-0083 - 22/12/2025
 
 > - CO - Elaborazione periodi optimization (#TT05417/25)
