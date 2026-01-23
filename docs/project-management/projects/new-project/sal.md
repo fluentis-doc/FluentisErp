@@ -1,6 +1,6 @@
 ---
 title: Fattura di Anticipo
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 In questa tab è possibile gestire le fatture di anticipo relative al progetto, che potranno essere associate ai documenti dell'area progetti, come richieste intervento, interventi pianificati, interventi.

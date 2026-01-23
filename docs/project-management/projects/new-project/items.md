@@ -156,4 +156,8 @@ Nel **Tab Extradata** è possibile inserire gli extradata per la riga di progett
 Nel **Tab Documenti Allegati** è possibile inserire allegati per la riga di progetto. 
 
 
+Cliccando su una riga **tasto destro - Copia Elemento** è possibile copiare i dati di una riga di progetto con tutto il suo contenuto. 
+Cliccando su un'altra riga in un'altra posizione **tasto destro - Incolla Elemento** è possibile incollare la riga copiata e tutto il suo contenuto. Verrà richiesto se incollare allo stesso livello, oppure come sottolivello. 
 
+Selezionando una riga e utilizzando il bottone **Sposta WBS**, è possibile selezionare una riga e spostarla in un'altra posizione. Si aprirà un popup, con le opzioni "Inserisci come Nodo Fratello" o "Inserisci come Nodo Figlio" e la possibilità di selezionare la riga progetto di destinazione. 
+La scelta ovviamente dovrà essere coerente con le regole sopra indicate sul Tipo Nodo.
