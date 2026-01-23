@@ -12,6 +12,28 @@ Il modulo è presente nell'area tesoreria e preleva i dati dalla contabilità.
 ### Importazione movimenti
 La presente maschera consente di eseguire l'importazione dei movimenti di conto corrente dal file telematico (standard abi) che si può estrarre dall'home banking.
 
+:::note[Nota]
+I file supportati e scaricabili dai siti di home banking sono attualmente di due tipi:
+
+- .txt
+- .xml (di più recente introduzione e che permette la gestione di un maggior numero di informazioni)
+ 
+[Esempio di tracciato txt per file contenente movimenti bancari](/txt/CBI_1_esempio.txt)
+
+Il tracciato txt è chiamato dal CBI “*Rendicontazione saldi e movimenti di conti correnti*” e sul sito ufficiale del CBI è presente la documentazione con le specifiche tecniche.
+
+I tracciati xml riferiti al più recente circuito SEPA sono generati generalmente secondo due possibili tracciati:
+
+- DlyStmtReqLogMsg
+- PrdcStmtReqLogMsg
+
+Che definiscono, rispettivamente, rendicontazioni **giornaliere** o rendicontazioni **periodiche** (i due tracciati sono molto simili).
+
+Alleghiamo le specifiche tecniche
+
+[Giornaliero e Periodico](/pdf/it-IT/CBI-RND-0016_05.pdf)
+:::
+
 Per procedere all'importazione è necessario innanzi tutto impostare alla base della maschera (in basso) il sottoconto bancario per il quale si vuole importare il file, poi premendo il pulsante ***Nuovo*** si aprirà la maschera di importazione del file telematico che permette di definire la posizione dove è memorizzato il file da importare. Al buon fine dell'operazione apparirà in griglia una nuova riga di importazione: con un doppio click sulla stessa oppure attraverso il pulsante ***Modifica*** è possibile visualizzare il dettaglio dei dati importati.
 
 I movimenti così importati saranno così utilizzabili nella procedura di riconciliazione C/C oppure, in alternativa, (se il movimento o i movimenti contenuti nel file non sono ancora stati contabilizzati) di procedere alla creazione automatica della scrittura contabile a partire dai dati del file.
