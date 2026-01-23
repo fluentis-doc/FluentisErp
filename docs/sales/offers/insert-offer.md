@@ -13,9 +13,12 @@ La form **Nuova Offerta** si apre tramite il percorso **Vendite > Nuova Offerta*
 
 - **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente nella tabella [Numerazione Offerte](/docs/configurations/tables/fluentis-numerations) e al tipo di documento che contiene la numerazione.     
 
-- **Cliente**: l'inserimento del cliente è possibile usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure inserendo [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i caratteri.
+- **Cliente**: l'inserimento del cliente è possibile usando l'[help di campo](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) oppure inserendo [manualmente](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) i caratteri. Aprendo l'expander, saranno visibili i dati anagrafici quali indirizzo e partita iva del cliente. 
 
-- **Contatto CRM**: se l'Offerta è per una lead non ancora cliente, sarà possibile inserire un Contatto CRM invece di un cliente.    
+- **Contatto CRM**: se l'Offerta è per una lead non ancora cliente, sarà possibile inserire un Contatto CRM invece di un cliente.
+Nel caso il contatto CRM non sia codificato, è possibile inserirlo direttamente dall'offerta. 
+Aprendo l'expander del contatto CRM, sono disponibili tutti i campi per inserire la ragione sociale, il tipo contatto, l'indirizzo e la partita IVA. 
+Terminato l'inserimento, premere sul bottone in ribbon bar **Crea nuovo contatto CRM**. Verrà quindi inserita una nuova anagrafica CRM (con tutti i dati anagrafici, la partita IVA, i dati relativi a Porto, Note Porto, Nazione, Lingua) e verrà collegata subito all'offerta. Un'offerta perchè possa essere salvata, deve avere un cliente validio o un contatto CRM valido.      
 
 - **Anno**: viene proposto l'anno corrente.  
 
