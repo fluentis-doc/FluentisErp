@@ -143,6 +143,7 @@ Nel **Tab Dati** sono presenti:
 Nel **Tab Agenti** è possibile indicare l'Agente Principale e gli Agenti collegati alla riga di progetto;
 
 Nel **Tab Fatturazione** è possibile inserire le rate da fatturare relative al progetto, tramite la procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md). 
+Se compilata la Data "Chiuso Forzatamente" nella tab Pianificazione Servizio, le rate non verranno visualizzate nella procedura di creazione fatture. 
 **Priorità**: viene assegnata la sequenza delle rate;
 **Giorno**: indica il giorno a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);
 **Mese**: indica il mese a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);

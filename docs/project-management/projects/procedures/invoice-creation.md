@@ -3,10 +3,12 @@ title: Creazione Fattura di Vendita
 sidebar_position: 1
 ---
 
-Nell’area di filtro è possibilre indicare una serie di filtri per ricercare i progetti in modo più mirato.
+Nell’area di filtro è possibile indicare una serie di filtri per ricercare i progetti in modo più mirato.
 
 Dopo aver impostato i filtri, premendo il pulsante **Ricerca** nella ribbon bar compariranno i risultati nella griglia. 
 In basso è possibile indicare i parametri da utilizzare per eseguire la procedura:
+
+Le righe di progetto con Data "Chiusura Forzatamente" non verranno visualizzate in questa griglia. 
 
 **Tipo fattura**: contiene la tipologia di fattura da creare; se non indicato, il tipo fattura è ottenuto dal tipo progetto impostato nella tabella [Tipi progetto](/docs/configurations/tables/project-management/project-type/); 
 
