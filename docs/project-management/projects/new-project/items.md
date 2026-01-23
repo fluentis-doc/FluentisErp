@@ -151,6 +151,8 @@ Se compilata la Data "Chiuso Forzatamente" nella tab Pianificazione Servizio, le
 **Percentuale**: è la percentuale utilizzata per il calcolo del prezzo da inserire in fattura. Se ad es. il prezzo della riga di progetto è 100, e percentuale è impostata a 30, in fattura troveremo il prezzo impostato a 30.
 **Valore**: in alternativa alla percentuale, è possibile indicare un valore del prezzo da inserire i fattura. Se ad es. il prezzo della riga di progetto è 100, si possono inserire 2 righe con ciascuna il valore 50. In fattura troveremo il prezzo impostato a 50.
 Si può compilare un solo campo tra Percentuale e Valore, mai insieme. Inoltre non viene effettuato nessun controllo sull'effettiva quadratura tra importo impostato in riga progetto e singole rate. 
+Il valore e la percentuale riguardano solo il campo prezzo, non il campo quantità. 
+Per cui la quantità verrà sempre manutenuta uguale a quella impostata nella riga di progetto
 
 Nel **Tab Extradata** è possibile inserire gli extradata per la riga di progetto. 
 
