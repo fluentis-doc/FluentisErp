@@ -117,7 +117,7 @@ jobs:
             team_usernames=( 
                 ["en-US"]="alba-fluentis" 
                 ["ro-RO"]="rodica1234" 
-                ["hr-HR"]="Federica-fluentis" 
+                ["hr-HR"]="Karla-fluentis" 
             )
             
             # get last commit message for use in issue title
