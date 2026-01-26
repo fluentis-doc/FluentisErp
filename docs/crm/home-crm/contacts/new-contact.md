@@ -232,7 +232,7 @@ Ogni voce del punteggio avrà un valore minimo ed un valore massimo con cui potr
 
 ### 5. Indirizzi Contatto
 
-Questa è la terza tab dei **Contatti CRM**.
+Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab è possibile inserire e visualizzare eventuali indirizzi alternativi rispetto a quello principale indicato sul contatto. Ogni indirizzo è composto dai seguenti campi:
 
@@ -262,7 +262,7 @@ In questa tab è possibile inserire e visualizzare eventuali indirizzi alternati
 
 ### 6. Note Contatto
 
-Questa è la quarta tab dei **Contatti CRM**.
+Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab è possibile visualizzare le note relative al contatto.
 All’interno della tab sono presenti i campi di filtro, tramite i quali è possibile fare una ricerca delle note.
@@ -280,6 +280,8 @@ Nella maschera di inserimento sono presenti i seguenti campi:
 
 ### 7. Gestione Documentale
 
+Questa è una delle tab dei **Contatti CRM**.
+
 In questa tab è possibile consultare i documenti allegati. Per allegare i documenti è possibile procedere in due modi:
 
 - utilizzando il pulsante della barra degli strumenti Documenti si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.
@@ -287,19 +289,19 @@ In questa tab è possibile consultare i documenti allegati. Per allegare i docum
 
 ### 8. Categoria Commerciale
 
-Questa è la sesta tab dei **Contatti CRM**.
+Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab è possibile inserire e visualizzare la categorie commerciale di appartenenza dell’azienda. È sufficiente selezionare la [Categoria commerciale](/docs/configurations/tables/crm/contacts/commercial-category) così come da tabella.
 
 ### 9. Zona Contatto
 
-Questa è la settima tab dei **Contatti CRM**.
+Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab è possibile inserire e visualizzare la zona di appartenenza dell’azienda. È sufficiente selezionare la zona.
 
 ### 10. Agenti Contatto
 
-Questa è l'ottava tab dei **Contatti CRM**.
+Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab è possibile definire gli **Agenti** collegati a questo contatto.
 
@@ -369,7 +371,7 @@ Facendo doppio click sulla riga dell'opportunità questa verrà aperta in visual
 
 ### 13. Visit Report Contatti
 
-Questa è la nona tab dei **Contatti CRM**.
+Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab viene visualizzata la lista dei **Visit Reports** inseriti per il contatto.
 
@@ -380,7 +382,7 @@ Per inserire un nuovo Visit Reports per il contatto in oggetto è sufficiente pr
 
 ### 14. Offerte contatto
 
-Questa è la decima tab dei **Contatti CRM**.
+Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab viene visualizzata la lista delle offerte inserite per il contatto.
 Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale delle offerte desiderate.
@@ -398,19 +400,25 @@ E'possibile inoltre creare nuovi ordini.
 
 ### 16. DDT di vendita
 
+Questa è una delle tab dei **Contatti CRM**.
+
 In questa tab viene visualizzata la lista dei DDT di vendita inseriti per il contatto già convertito a cliente.
 
 ### 17. Fatture di vendita
+
+Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab viene visualizzata la lista delle fatture di vendita inserite per il contatto già convertito a cliente.
 
 ### 18. Interventi
 
+Questa è una delle tab dei **Contatti CRM**.
+
 In questa tab viene visualizzata la lista degli interventi, per i quali il contatto CRM è stato collegato nelle righe di servizio degli interventi. 
 
 ### 19. Extra Data Contatto
 
-Questa è la undicesima tab dei **Contatti CRM**.
+Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab è possibile visualizzare e inserire gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) per il contatto, che verranno poi riportati sui documenti a lui collegati.
 
@@ -422,7 +430,7 @@ In questa tab vengono visualizzati i giorni e gli orari di apertura del contatto
 
 ### 21. Concorrenti Contatto
 
-Questa è la dodicesima tab dei **Contatti CRM**.
+Questa è una delle tab dei **Contatti CRM**..
 
 In questa tab è possibile indicare eventuali **Concorrenti** che la nostra azienda ha nella trattativa con il contatto.
 È possibile selezionare il contatto mediante l’apposito menu a tendina, selezionando i valori presenti nella relativa [tabella](/docs/configurations/tables/crm/contacts/competitors).
