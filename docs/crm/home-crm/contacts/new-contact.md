@@ -14,11 +14,14 @@ La schermata del Contatto CRM si compone di tre parti:
 
 **Tipo Contatto**: rimanda all'omonima tabella [Tipo contatto](/docs/configurations/tables/crm/contacts/contact-type); usata per distinguere tra loro i vari contatti CRM (Contatto, Prospect, Lead, ecc.); il **Tipo contatto** contiene inoltre le tab da visualizzare sull’anagrafica.        
 
-**Nome Contatto**: serve per indicare la ragione sociale o, più in generale, il nominativo del contatto;    
+**Nome Contatto**: serve per indicare la ragione sociale o, più in generale, il nominativo del contatto; aprendo l'expander saranno visibili i seguenti dati: 
+**Globale**: se questo flag è abilitato, indica che il contatto visibile e gestibile in tutte le società presenti; 
+**Società**: indica la società di appartenenza del contatto; se indicata, il contatto sarà gestibile solo in questa società. Il campo si attiva solo se il flag Globale è disattivato. 
+**Dipartimento**: indica il dipartimento di appartenenza del contatto, in funzione della società selezionata; Il campo si attiva solo se il flag Globale è disattivato. 
 
 #### Campi non obbligatori
 
-**Partita IVA**: campo composto dal codice ISO internazionale della nazione (definito nella tabella **Nazioni** stessa) e dalla relativa partita iva. Il campo è soggetto a test di correttezza del carattere di controllo per le partite iva italiane; dopo l'inserimento di questo campo, utilizzando il bottone della barra degli strumenti *Proponi dati* è possibile popolare automaticamente i dati anagrafica.   
+**Partita IVA**: campo composto dal codice ISO internazionale della nazione (definito nella tabella **Nazioni** stessa) e dalla relativa partita iva. Il campo è soggetto a test di correttezza del carattere di controllo per le partite iva italiane; dopo l'inserimento di questo campo, utilizzando il bottone della barra degli strumenti *Proponi dati* è possibile popolare automaticamente i dati anagrafica. Se già presente un contatto o cliente con la stessa partita IVA, verrà data notifica.    
 
 **IVA**: codice IVA da utilizzare nel caso di emissione di documenti intestati al contatto. 
 
@@ -28,18 +31,16 @@ La schermata del Contatto CRM si compone di tre parti:
 
 **Posta certificata**: spazio riservato all'indirizzo PEC nel caso sia attiva la modalità PEC destinatario nel campo Tipo codice per l'emissione fatture elettroniche. Verrà riportato in anagrafica cliente qualora il contatto venga convertito. 
 
-**Dettagli indirizzo**: in questa sezione vengono inserite le varie parti che compongono l'indirizzo.    
+**Codice Fiscale**: codice fiscale del contatto.
 
-**Agente Principale** serve per titolo informativo, ma anche per fini di accesso a Fluentis da parte degli agenti: essi potranno consultare solo i contatti in cui hanno il permesso.      
+**Persona**: indica la tipologia di entità del contatto, se persona fisica o giuridica. 
 
-**Latitudine/Longitudine**: viene data la possibilità di gestire la posizione dei contatti con latitudine e longitudine invece che l'indirizzo; questi dati vengono considerati per la localizzazione all'interno del Map presente nella [Ricerca Contatti CRM](/docs/crm/home-crm/contacts/search-contacts), se non presente l'indirizzo.     
+**Stato Legale**: campo a compilazione libera dove definire lo stato legale del contatto.     
 
-**Pipeline contatto**: Se il contatto ha un workflow associato, e lo stato del workflow corrisponde ad uno degli stati presenti in "Pipeline contatto" per il Tipo contatto, il campo "Pipeline contatto" nell'anagrafica contatto verrà aggiornato in automatico. 
-Quindi ad ogni cambio stato del workflow, se presente corrispondenza, verrà aggiornato in automatico il campo "Pipeline Contatto". In questo modo il workflow ed il campo Pipeline contatto in anagrafica contatto saranno sempre allineati. 
+**Capitale Sociale**: campo a compilazione libera dove è possibile indicare il capitale sociale dell’azienda relativa al contatto.
 
-**Origine contatto**: è possibile indicare come è stato reperito il contatto e quindi la sua [Origine](/docs/configurations/tables/crm/contacts/contact-origin).    
-
-**Qualità contatto** attribuisce delle stelle ai vari contatti: la [qualità](/docs/configurations/tables/crm/contacts/contact-quality) è espressa in modo crescente da una a cinque stelline; questa caratteristica serve per le varie analisi e per definire la qualità del contatto in base ad una classificazione effettuata dall'utente.     
+**Dettagli indirizzo**: in questa sezione vengono inserite le varie parti che compongono l'indirizzo. Prima di acquisire un contatto come cliente, è obbligatorio compilare la nazione. 
+Aprendo l'expander sono visibili oltre all'indirizzo, anche ulteriori campi di contatto.
 
 **Telefono/Email**: contiene telefono e email principali del contatto, specificati negli omonimi successivi campi: Telefono, Telefono cellulare, Fax, Email, Email secondaria, Web Site. 
 
@@ -47,23 +48,24 @@ Quindi ad ogni cambio stato del workflow, se presente corrispondenza, verrà agg
 
 **Natura giuridica società**: natura giuridica della società, selezionabile dal presente elenco. 
 
-**Informazioni Statistiche**: i 3 spazi che lo compongono verranno riempiti in base ai valori inseriti nei successivi campi **Anno Statistica**, **Statistica Fatturato** e **Numero statistico dipendenti**; la modifica di uno di questi campi andrà ad influenzare il relativo spazio e viceversa; solitamente questa combo box contiene i dati del fatturato e del numero dei dipendenti per l'ultimo anno disponibile, informazioni molto importanti in sede di redazione offerta commerciale.    
+**Porto** e **Nota Porto**: campo dove indicare il porto (ad es. “Franco Fabbrica”), da proporre sui documenti legati al contatto, ed una eventuale Nota porto.
 
-**Ambiti Email** bisogna indicare se per questa anagrafica è possibile inviare Offerte e/o Newsletter; è importante questo flag perchè altrimenti non sarà possibile inviare nessuna di queste tipologie di documento. 
+**Agente Principale** serve per titolo informativo, ma anche per fini di accesso a Fluentis da parte degli agenti: essi potranno consultare solo i contatti in cui hanno il permesso.      
 
-**Altre informazioni**: contiene Altre informazioni e il Codice fiscale inseriti negli omonimi successivi campi.     
+**Pipeline contatto**: indica la fase in cui si trova il contatto, in base ad un specifico percorso strutturato. Il percorso è differenziato per ogni Tipo contatto, ed è configurabile nella tabella [Tipo contatto](/docs/configurations/tables/crm/contacts/contact-type). Se la prima fase configurata corrisponde a "Contatto" / "Contact", allora verrà proposto in automatico questo valore nella pipeline di un nuovo contatto. L'avanzamento agli stati successivi, può essere fatto manualmente, oppure tramite appositi script negli stati del workflow associato. 
+I vantaggi dell'uso della pipeline sono: 
+- facilità di ricerca dei contatti che si trovano in una specifica fase; 
+- Il tipo contatto assegnato può rimanere "fisso", e l'evoluzione del contatto come "lead/prospect/opportunity/customer/supplier/partner" può avvenire tramite la pipeline. 
 
-**Persona**: serve per stabilire se il contatto sia una persona fisica o giuridica.     
+**Origine contatto**: è possibile indicare come è stato reperito il contatto e quindi la sua [Origine](/docs/configurations/tables/crm/contacts/contact-origin).    
 
-**Stato Legale**: campo a compilazione libera dove definire lo stato legale del contatto.     
+**Punteggio Totale / Ultimo aggiornamento**: campo che contiene la somma dei valori attribuiti nella tab Punteggio del contatto. Il punteggio è configurabile nel [Tipo contatto](/docs/configurations/tables/crm/contacts/contact-type) ed è gestibile nell'apposita tab Punteggio del contatto. A seconda dei valori assegnati, questi verranno sommati e mostrati in testata ed in ricerca contatto. La data ultimo aggiornamento indica a quando risale il punteggio assegnato. 
 
-**Capitale Sociale**: campo a compilazione libera dove è possibile indicare il capitale sociale dell’azienda relativa al contatto.
+**Qualità contatto** attribuisce delle stelle ai vari contatti: la [qualità](/docs/configurations/tables/crm/contacts/contact-quality) è espressa in modo crescente da una a cinque stelline; questa caratteristica serve per le varie analisi e per definire la qualità del contatto in base ad una classificazione effettuata dall'utente.     
 
-**Porto**: campo dove indicare il porto (ad es. “Franco Fabbrica”), da proporre sui documenti legati al contatto.
+**Anagrafica** in questo campo viene visualizzato il nomignolo e la ragione sociale dell'anagrafica cliente associata al contatto, nel momento in cui quest’ultimo viene convertito a cliente. Oppure è possibile effettuare l'associazione manualmente.  
 
-**Nota Porto**: campo dove indicare eventuali note relative al porto, da proporre sui documenti legati al contatto.
-
-**Anagrafica** in questo campo viene indicato automaticamente da Fluentis il nomignolo e la ragione sociale del cliente legato al contatto, nel momento in cui quest’ultimo viene convertito a cliente. Oppure è possibile effettuare l'associazione manualmente.     
+**Altre informazioni**: campo note di libera compilazione. All'interno dell'expander sono presenti ulteriori campi. 
 
 **Categoria amministrativa**: serve per indicare la categoria amministrativa del contatto, potrebbe essere utile a fini statistici.     
 
@@ -73,11 +75,19 @@ Quindi ad ogni cambio stato del workflow, se presente corrispondenza, verrà agg
 
 **Contatto Padre**: è possibile indicare un contatto collegato a quello in visualizzazione, ad esempio nel caso in cui il contatto faccia parte di una holding la cui controllante rientri già tra i nostri contatti. Oppure nel momento in cui contatto cambia ragione sociale, è possibile tenerne traccia collegando con il nuovo contatto.        
 
+**Tipo legame Contatto Padre**: se indicato un Contatto padre, è possibile dettagliare anche il tipo di legame esistente con il contatto. Ad es. Filiale, Holding, Cambio ragione sociale, etc. La tabella è a libera codifica. 
+
+**Riferimento gruppo organizzativo**: visualizza i gruppi configurati in Arm e permette l'associazione del contatto ad un gruppo. Questa informazione viene utilizzata nella gestione del Ticketing. 
+
+**Livello di servizio**: indica il livello di servizio di riferimento. Questa informazione viene utilizzata nella gestione del Ticketing. 
+
 **Marca**: serve per indicare l’eventuale marca commercializzata dall’azienda.       
 
 **Sconto**: tipo di sconto da applicare ai documenti intestati al contatto.
 
 **Percentuale**: percentuale di sconto da applicare relativamente al tipo sconto selezionato. 
+
+**Ambiti Email** bisogna indicare se per questa anagrafica è possibile inviare Offerte e/o Newsletter; è importante questo flag perchè altrimenti non sarà possibile inviare nessuna di queste tipologie di documento. 
 
 **Data chiusura**: è possibile specificare una data chiusura del contatto, che non lo farà più comparire tra i contatti attivi, dalla data specificata.          
 
@@ -85,11 +95,17 @@ Quindi ad ogni cambio stato del workflow, se presente corrispondenza, verrà agg
 
 **Descrizione motivo di chiusura**: è possibile dettagliare ulteriormente la motivazione della chiusura, andando ad integrare quanto già presente nel campo **Motivo di chiusura**.
 
-Nell'ultima parte della maschera sono poi presenti le **tab specifiche**.     
+
+### Tab aggiuntive
+Nella seconda parte della videata, sotto i dati principali del contatto, sono presenti ulteriori tab, abilitati in funzione del Tipo contatto ed all'utente/ruolo. Queste informazioni sono configurabili nella tabella [Tipo contatto](/docs/configurations/tables/crm/contacts/contact-type) abilitando i vari flag, e nella tab "Tipo di contatto Ruolo" per configurazioni specifiche di utenti-ruoli.
 
 Nella barra degli strumenti sono presenti i seguenti pulsanti:         
 **Proponi dati**: utilizzando questa funzionalità a partire dalla partita iva, verranno precompilati i dati anagrafici.      
 **Conversione a cliente**: con questo pulsante è possibile convertire un contatto CRM in un [Cliente](/docs/erp-home/registers/contacts/create-new-contact/general); i dati inseriti nel contatto verranno copiati nella nuova anagrafica; il pulsante è attivo per i [Tipi contatto](/docs/configurations/tables/crm/contacts/contact-type) che non hanno attivo il flag *Cliente*.
+E' obbligatorio indicare la nazione per poter convertire un contatto in cliente. 
+La conversione prevede 2 opzioni: 
+- Nuovo contatto: codifica quindi un nuovo cliente, con il Tipo conto indicato; 
+- Contatto Esistente: permette di ricercare i contatti erp già esistenti, e selezionare il contatto da associare. 
 
 All'interno del contatto sono presenti anche dei campi utilizzati a fine statistico, non mostrati direttamente all'utente ed impostati in automatico: 
 
@@ -113,29 +129,35 @@ I campi disponibili nel dettaglio delle attività sono divisi in 2 riquadri, **A
 
 Nel primo riquadro sono presenti i seguenti campi:
 
+**Mostra attività relative ad opportunità contatto**: flag che se abilitato, mostra nel riquadro la lista di Attità inserite nelle [Opportunità](/docs/crm/chance/new-chance.md) gestite per il contatto. Questa visualizzazione dati, facilita l'utente ad avere una visione globale delle interazioni avute con il contatto. 
+
 **Tipo Attività**: è possibile specificare la tipologia di attività effettuata per il contatto; le tipologie vengono definite nella tabella Tipi Attività di Arm; in base alle impostazioni inserite nel workflow, le attività potranno cambiare in base allo stadio del workflow in cui si è;          
 
 **Data**: questo campo viene compilato automaticamente dalla procedura nel momento in cui venga inserito il campo **Tipo Attività**; 
 
 **Operatore**: contiene l'utente Fluentis che ha effettuato l'inserimento;    
 
-**Descrizione attività**: è possibile specificare i dettagli dell'attività in questo campo.     
+**Descrizione attività**: è possibile specificare i dettagli dell'attività in questo campo. 
+
+**Opportunità**: se abilitato il flag Mostra attività relative ad opportunità contatto, verranno visualizzate le attività relative alle [Opportunità](/docs/crm/chance/new-chance.md). Quindi nella colonna Opportunità verranno indicati il numero e data dell'opportunità da cui provengono le attività.
 
 Nel secondo riquadro sono invece presenti i seguenti campi:
 
-**Data attività in attesa**: questo campo viene compilato automaticamente dalla procedura nel momento in cui venga inserito il campo **Tipo Attività**;
+**Data attività in attesa**: questo campo viene compilato automaticamente dalla procedura indicando la data odierna nel momento in cui viene inserito il campo Tipo Attività;
 
 **Tipo Attività**: è possibile specificare la tipologia di attività sospesa per il contatto; 
 
+**Crea nuova attività**: se abilitato il flag, inserisce un nuovo task nella sezione generale dei Task-Attività dell'utente indicato nel campo Operatore. Se non abilitato, l'attività sarà visibile soltanto all'interno del workflow del contatto, e non nella lista generale di Task.  
+
+**Data inizio/fine promemoria**: in questo campo può essere indicata il range di date in cui dovrà essere visualizzato un promemoria per l’attività successiva; il promemoria dev'essere configurato tramite un supervisor dedicato.
+
+**Data chiusura**: data in cui l'attività è stata completata. E' possibile impostarla manualmente, oppure in automatico tramite drag&drop nella sezione Attività-Log;
+
+**Operatore**: deve essere definito l’utente di Fluentis che dovrà effettuare l’attività; viene proposto di default l'operatore che inserisce l'attività, ma può essere cambiato. 
+
 **Descrizione attività**: in questo campo è possibile definire nel dettaglio l’attività che dovrà essere svolta;
 
-**Data chiusura**: è possibile impostare una data di scadenza per l’attività;
-
-**Operatore**: deve essere definito l’utente di Fluentis che dovrà effettuare l’attività;
-
-**Data inizio/fine promemoria**: in questo campo può essere indicata il range di date in cui dovrà essere visualizzato un promemoria per l’attività successiva;        
-
-**Crea attività**: apponendo la spunta su questa voce verrà creata una nuova voce nella sezione **Attività** di Fluentis per l’utente indicato nel campo **Operatore**. Tale automatismo scatterà al momento del salvataggio del contatto.    
+**Data Scadenza**: indica la data di scadenza dell'attività. 10 minuti prima della scadenza, verrà mostrato un pop up di reminder in Fluentis.      
 
 #### Log 
 
@@ -149,21 +171,66 @@ Per inserire un nuovo Riferimento, è necessario premere sul pulsante della ribb
 
 Nella maschera di inserimento del nuovo riferimento sono presenti i seguenti campi:
 
-**Cognome**: è il cognome del riferimento.
-
 **Nome**: è il nome del riferimento.
 
-**Operatore**: viene riportato l'eventuale operatore associato in anagrafica riferimento.      
+**Cognome**: è il cognome del riferimento.
+
+**Generale**: campo generico dove si può indicare il titolo della persona. 
 
 **Ruolo**: campo dove viene riportato il ruolo del riferimento all’interno dell’azienda del contatto.
 
-**Telefono**: è il telefono fisso principale del riferimento.
+**Operatore**: viene riportato l'eventuale operatore associato in anagrafica riferimento, ad es. nel caso di gestione di Agenti inseriti come riferimento di un contatto che utilizzano Fluentis. 
+
+**Visibilità del documento**: in funzione all'operatore assegnato, indica la possibilità di visualizzare tutti i documenti o solo i propri. 
+
+**Lingua**: lingua di riferimento per il soggetto inserito come riferimento. 
+
+**Infos**: campo a libera compilazione.  
+
+**Telefono**: è il telefono fisso del riferimento.
+
+**Mobile**: è il telefono cellulare del riferimento.
 
 **Fax**: è il numero di fax del riferimento.
 
 **Email**: è la mail aziendale del riferimento.
 
-### 3. Indirizzi Contatto
+**Tab Riferimento**
+
+**Infos**: è possibile codificare diverse informazioni per il riferimento, specificando la tipologia dell'informazione.
+
+**Indirizzi**: è possibile codificare diversi indirizzi per il riferimento.
+
+**Ambito Email**: indicare se per questo riferimento è possibile inviare Offerte e/o Newsletter; è importante perchè altrimenti non sarà possibile inviare nessuna di queste tipologie di documento. 
+
+**Documenti allegati**: gestione documentale degli allegati del riferimento.
+
+
+### 3. Informazioni commerciali
+
+Questa è una delle tab dei **Contatti CRM**.
+
+Per ogni **Anno**, è possibile inserire i dati relativi:
+
+**Numero dipendenti**: numero di dipendenti del contatto, in essere per l'anno di riferimento;
+
+**Data Inserimento**: data in cui è stata inserita l'informazione; 
+
+**Profitto**: valore del profitto per l'anno di riferimento;
+
+**Fatturato**: valore del fatturato per l'anno di riferimento;
+
+**Note**: campo note di libera compilazione;
+
+
+### 4. Punteggio
+
+Questa è una delle tab dei **Contatti CRM**.
+
+Nel [Tipo contatto](/docs/configurations/tables/crm/contacts/contact-type) è possibile configurare dei criteri di valutazione del contatto, sulla base di un punteggio di specifici valori.
+Ogni voce del punteggio avrà un valore minimo ed un valore massimo con cui potrà incidere sul totale, un valore del passo di avanzamento e dei colori dedicati. A seconda dei valori assegnati, questi verranno sommati e mostrati in testata nel campo Punteggio Totale ed in ricerca contatto. Se assegnata una attività nella configurazione del punteggio, verrà inserita in automatico nella sezione Attività del workflow, al fine di tenere traccia di tutte le variazioni. 
+
+### 5. Indirizzi Contatto
 
 Questa è la terza tab dei **Contatti CRM**.
 
@@ -193,7 +260,7 @@ In questa tab è possibile inserire e visualizzare eventuali indirizzi alternati
 
 **Regione**: è la regione riferita all’indirizzo.
 
-### 4. Note Contatto
+### 6. Note Contatto
 
 Questa è la quarta tab dei **Contatti CRM**.
 
@@ -211,26 +278,26 @@ Nella maschera di inserimento sono presenti i seguenti campi:
 
 **Tipo nota contatto**: è possibile indicare la [tipologia di nota](/docs/configurations/tables/crm/contacts/contact-note-type) che si sta inserendo.
 
-### 5. Gestione Documentale
+### 7. Gestione Documentale
 
 In questa tab è possibile consultare i documenti allegati. Per allegare i documenti è possibile procedere in due modi:
 
 - utilizzando il pulsante della barra degli strumenti Documenti si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.
 - utilizzando direttamente nella griglia il tasto destro e selezionando Allega file si va in creazione di un nuovo Documento da allegare.
 
-### 6. Categoria Commerciale
+### 8. Categoria Commerciale
 
 Questa è la sesta tab dei **Contatti CRM**.
 
 In questa tab è possibile inserire e visualizzare la categorie commerciale di appartenenza dell’azienda. È sufficiente selezionare la [Categoria commerciale](/docs/configurations/tables/crm/contacts/commercial-category) così come da tabella.
 
-### 7. Zona Contatto
+### 9. Zona Contatto
 
 Questa è la settima tab dei **Contatti CRM**.
 
 In questa tab è possibile inserire e visualizzare la zona di appartenenza dell’azienda. È sufficiente selezionare la zona.
 
-### 8. Agenti Contatto
+### 10. Agenti Contatto
 
 Questa è l'ottava tab dei **Contatti CRM**.
 
@@ -246,64 +313,7 @@ I campi compilabili sono i seguenti:
 
 **Utilizzare valore percentuale**: mettendo la spunta a questa voce si indica alla procedura che in fase di inserimento delle offerte di vendita dovrà essere tenuto conto del valore indicato nel campo **Percentuale** per effettuare il calcolo delle provvigioni spettanti all’agente.
 
-### 9. Visit Report Contatti
-
-Questa è la nona tab dei **Contatti CRM**.
-
-In questa tab viene visualizzata la lista dei **Visit Reports** inseriti per il contatto.
-
-Nella parte superiore della tab sono presenti i campi di **filtro** che permettono di effettuare una ricerca più puntuale dei Visit Reports desiderati.
-
-Facendo doppio click sulla riga del Visit Reports lo stesso verrà aperto in visualizzazione/modifica.
-Per inserire un nuovo Visit Reports per il contatto in oggetto è sufficiente premere il pulsante ![](/img/neutral/common/new-visit-report.png), presente sulla ribbon bar.
-
-### 10. Offerte contatto
-
-Questa è la decima tab dei **Contatti CRM**.
-
-In questa tab viene visualizzata la lista delle offerte inserite per il contatto.
-Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale delle offerte desiderate.
-Facendo doppio click sulla riga dell’offerta la stessa verrà aperta in visualizzazione/modifica.
-E'possibile inoltre creare nuove offerte.
-
-### 11. Extra Data Contatto
-
-Questa è la undicesima tab dei **Contatti CRM**.
-
-In questa tab è possibile visualizzare e inserire gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) per il contatto, che verranno poi riportati sui documenti a lui collegati.
-
-### 12. Concorrenti Contatto
-
-Questa è la dodicesima tab dei **Contatti CRM**.
-
-In questa tab è possibile indicare eventuali **Concorrenti** che la nostra azienda ha nella trattativa con il contatto.
-È possibile selezionare il contatto mediante l’apposito menu a tendina, selezionando i valori presenti nella relativa [tabella](/docs/configurations/tables/crm/contacts/competitors).
-Nel campo **Nota** è possibile indicare ulteriori informazioni utili riguardo il concorrente.
-
-### 13. Listini di vendita del contatto
-
-Questa è una delle tab dei **Contatti CRM**.
-
-In questa tab vengono visualizzati i listini di vendita validi per il contatto, che verranno applicati nei documenti intestati al contatto. In fase di conversione del contatto in cliente, questi dati verranno riportati. 
-
-### 14. Ordini vendita contatto
-
-Questa è una delle tab dei **Contatti CRM**.
-
-In questa tab viene visualizzata la lista degli ordini inseriti per il contatto.
-Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale degli ordini.
-Facendo doppio click sulla riga dell'ordine questo verrà aperto in visualizzazione/modifica.
-E'possibile inoltre creare nuovi ordini.
-
-### 15. Newsletter contatto
-
-Questa è una delle tab dei **Contatti CRM**.
-
-In questa tab viene visualizzata la lista delle newsletter inserite per il contatto.
-Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale delle newsletter desiderate.
-Facendo doppio click sulla riga della newsletter la stessa verrà aperta in visualizzazione/modifica.
-
-### 16. Pagamenti contatto
+### 11. Pagamenti contatto
 
 Questa è una delle tab dei **Contatti CRM**.
 
@@ -349,28 +359,105 @@ In questo modo è possibile inserire delle banche d'appoggio alternative (sempre
 
 L'inserimento di una banca può essere eseguita attraverso un doppio click nei campi abi/cab per aprire l'help di ricerca tra le agenzie bancarie nazionali, dalle quali selezionare quella del caso e creare il codice nell'anagrafica da completare con i dati di conto corrente, cin, iban, swift.
 
-### 17. Opportunità contatto
+### 12. Opportunità contatto
 
 Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab viene visualizzata la lista delle opportunità inserite per il contatto.
 Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale delle opportunità presenti.
-Facendo doppio click sulla riga dell'opportunità questa verrà aperta in visualizzazione/modifica.
+Facendo doppio click sulla riga dell'opportunità questa verrà aperta in visualizzazione/modifica
 
-### 18. Orari di apertura contatto
+### 13. Visit Report Contatti
+
+Questa è la nona tab dei **Contatti CRM**.
+
+In questa tab viene visualizzata la lista dei **Visit Reports** inseriti per il contatto.
+
+Nella parte superiore della tab sono presenti i campi di **filtro** che permettono di effettuare una ricerca più puntuale dei Visit Reports desiderati.
+
+Facendo doppio click sulla riga del Visit Reports lo stesso verrà aperto in visualizzazione/modifica.
+Per inserire un nuovo Visit Reports per il contatto in oggetto è sufficiente premere il pulsante ![](/img/neutral/common/new-visit-report.png), presente sulla ribbon bar.
+
+### 14. Offerte contatto
+
+Questa è la decima tab dei **Contatti CRM**.
+
+In questa tab viene visualizzata la lista delle offerte inserite per il contatto.
+Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale delle offerte desiderate.
+Facendo doppio click sulla riga dell’offerta la stessa verrà aperta in visualizzazione/modifica.
+E'possibile inoltre creare nuove offerte.
+
+### 15. Ordini vendita contatto
+
+Questa è una delle tab dei **Contatti CRM**.
+
+In questa tab viene visualizzata la lista degli ordini inseriti per il contatto.
+Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale degli ordini.
+Facendo doppio click sulla riga dell'ordine questo verrà aperto in visualizzazione/modifica.
+E'possibile inoltre creare nuovi ordini.
+
+### 16. DDT di vendita
+
+In questa tab viene visualizzata la lista dei DDT di vendita inseriti per il contatto già convertito a cliente.
+
+### 17. Fatture di vendita
+
+In questa tab viene visualizzata la lista delle fatture di vendita inserite per il contatto già convertito a cliente.
+
+### 18. Interventi
+
+In questa tab viene visualizzata la lista degli interventi, per i quali il contatto CRM è stato collegato nelle righe di servizio degli interventi. 
+
+### 19. Extra Data Contatto
+
+Questa è la undicesima tab dei **Contatti CRM**.
+
+In questa tab è possibile visualizzare e inserire gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) per il contatto, che verranno poi riportati sui documenti a lui collegati.
+
+### 20. Orari di apertura contatto
 
 Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab vengono visualizzati i giorni e gli orari di apertura del contatto.
 
-### 19. Telefonate contatto
+### 21. Concorrenti Contatto
+
+Questa è la dodicesima tab dei **Contatti CRM**.
+
+In questa tab è possibile indicare eventuali **Concorrenti** che la nostra azienda ha nella trattativa con il contatto.
+È possibile selezionare il contatto mediante l’apposito menu a tendina, selezionando i valori presenti nella relativa [tabella](/docs/configurations/tables/crm/contacts/competitors).
+Nel campo **Nota** è possibile indicare ulteriori informazioni utili riguardo il concorrente.
+
+### 22. Telefonate contatto
 
 Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab viene visualizzata la lista delle telefonate effettuate al contatto.
 
-### 20. Campagne marketing contatto
+### 23. Newsletter contatto
+
+Questa è una delle tab dei **Contatti CRM**.
+
+In questa tab viene visualizzata la lista delle newsletter inserite per il contatto.
+Nella parte superiore della tab sono presenti i campi di filtro che permettono di effettuare una ricerca più puntuale delle newsletter desiderate.
+Facendo doppio click sulla riga della newsletter la stessa verrà aperta in visualizzazione/modifica.
+
+
+### 24. Campagne marketing contatto
 
 Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab viene visualizzata la lista delle campagne marketing dove è presente il contatto. 
+
+
+### 25. Listini di vendita del contatto
+
+Questa è una delle tab dei **Contatti CRM**.
+
+In questa tab vengono visualizzati i listini di vendita validi per il contatto, che verranno applicati nei documenti intestati al contatto. In fase di conversione del contatto in cliente, questi dati verranno riportati. 
+
+### 26. Contatti collegati
+
+Questa è una delle tab dei **Contatti CRM**.
+
+In questa tab vengono visualizzati i contatti collegati al contatto CRM tramite il campo "Contatto Padre". In questo modo è facilmente visibile l'esistenza di eventuali relazioni con altri contatti dell'archivio crm. 
