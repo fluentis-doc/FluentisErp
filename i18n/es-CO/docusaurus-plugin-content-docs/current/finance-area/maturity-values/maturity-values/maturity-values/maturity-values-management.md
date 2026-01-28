@@ -3,6 +3,7 @@ title: Gestión de partidas
 sidebar_position: 1
 ---
 
+
 Esta funcionalidad sólo es accesible desde el menú **Partidas** (Administración > Partidas > Partidas).
 
 El acceso se realiza de dos maneras:
