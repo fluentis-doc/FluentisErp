@@ -1,8 +1,7 @@
 ---
 title: Búsqueda de partidas
 sidebar_position: 2
-ai_generated: true
----
+
 
 Esta pantalla permite buscar las partidas<!-- partite --> a través de los campos presentes en el encabezado, que representa el área de filtro para los datos que serán mostrados, y acceder a la edición de cada partida con un doble clic del ratón.
 
@@ -10,7 +9,7 @@ Campos adicionales útiles para el filtro de búsqueda están disponibles abrien
 
 Por defecto se proponen las partidas abiertas (ya que al abrir la pantalla, el campo **Estado** del filtro está rellenado con la opción Partida Abierta). Es posible visualizar todas las partidas simplemente eliminando el valor del campo filtro para no filtrar un tipo en particular.
 
-Al realizar la búsqueda (comando **Buscar<!-- Ricerca -->** en la Ribbon Bar) se mostrarán las partidas junto con toda la información relacionada.
+Al realizar la búsqueda (comando **Buscar<!-- Ricerca -->** en la barra de herramientas) se mostrarán las partidas junto con toda la información relacionada.
 
 **Para la descripción de los campos de detalle visualizados, consulte el [Glosario](/docs/guide/common/glossary/glossary-intro).**<!-- Per i campi di dettaglio visualizzati si rinvia al  [Glossario](/docs/guide/common/glossary/glossary-intro). -->
 
@@ -18,7 +17,7 @@ Al realizar la búsqueda (comando **Buscar<!-- Ricerca -->** en la Ribbon Bar) s
 
 **Partidas abiertas a fecha**: representa la fecha de referencia para considerar la partida como abierta (por ejemplo, hoy podría estar cerrada pero mostrándola a la fecha de ayer podría considerarse abierta ya que aún no había sido pagada). Para utilizar este campo elimine el estado Abierta del filtro principal **Estado**.
 
-**Con efectos por vencer**: de forma análoga a los reportes del módulo, permite incluir también aquellas partidas que estarían cerradas pero que se han convertido en efectos activos (por ejemplo, RiBa) y por lo tanto siguen siendo interesantes porque aún no han sido cobradas definitivamente. Para utilizar este campo elimine el estado Abierta del filtro principal **Estado**.
+**Con efectos por vencer**: de forma análoga a los reportes del módulo, permite incluir también aquellas partidas que estarían cerradas pero que se han convertido en efectos activos (por ejemplo, recibo bancario) y por lo tanto siguen siendo interesantes porque aún no han sido cobradas definitivamente. Para utilizar este campo elimine el estado Abierta del filtro principal **Estado**.
 
 **Mostrar Depósitos de garantía**: campo que permite visualizar los depósitos de garantía recaudados de los clientes. Estos ingresos particulares están representados por partidas que contienen el campo **Cuenta Depósito de Garantía<!-- Conto Cauzione -->** rellenado (en el formulario de gestión de partidas). Cuando se cierran mediante un registro contable de cobro, en la sección Libro Diario en lugar de mover normalmente la cuenta del cliente, se mueve la *Cuenta Depósito de Garantía<!-- Conto Cauzione -->* dentro de la partida que es cobrada.
 
@@ -36,7 +35,7 @@ En particular, para cada fila correspondiente a la partida hay un comando (+) qu
 
 **No pagable**: indica que la partida<!-- partita --> ha sido bloqueada por el usuario para que no sea pagable. El bloqueo puede ser configurado directamente al momento de la creación o luego, y tanto desde la **[pestaña Partidas<!-- tab Partite -->](/docs/finance-area/ledger-records/records/ledger-record)** del asiento contable<!-- registrazione contabile --> que genera la partida<!-- partita -->, como editando la misma partida desde este formulario.
 
-**Barra de comandos (Ribbon Bar):**<!-- Ribbon bar -->
+**Barra de herramientas (Ribbon Bar):**<!-- barra de herramientas -->
 
 | Función | Significado |
 | --- | --- |
