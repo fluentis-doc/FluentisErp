@@ -2,6 +2,7 @@
 title: Introducción
 sidebar_position: 1
 
+
 El módulo de partidas en Fluentis ERP gestiona las posiciones deudoras y acreedoras, facilitando el seguimiento de cobros y pagos. Accesible mediante Administración > Partidas > Partidas, permite crear, modificar y agrupar partidas manualmente o automáticamente desde los asientos contables.
 
 **Funcionalidades principales**
