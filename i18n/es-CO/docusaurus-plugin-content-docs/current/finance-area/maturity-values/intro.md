@@ -1,30 +1,28 @@
 ---
 title: Introducción
 sidebar_position: 1
-ai_generated: true
----
 
-El módulo de partidas abiertas<!-- partite aperte --> en Fluentis ERP gestiona las posiciones deudoras y acreedoras, facilitando el seguimiento de los pagos e ingresos<!-- incassi -->. Accesible mediante Administración > Partidas > Partidas<!-- Amministrazione > Partite > Partite -->, permite crear, modificar y agrupar partidas<!-- partite --> manualmente o automáticamente desde los asientos contables<!-- scritture contabili -->.
+El módulo de partidas en Fluentis ERP gestiona las posiciones deudoras y acreedoras, facilitando el seguimiento de cobros y pagos. Accesible mediante Administración > Partidas > Partidas, permite crear, modificar y agrupar partidas manualmente o automáticamente desde los asientos contables.
 
-**Funcionalidades principales<!-- Funzionalità Principali -->**
+**Funcionalidades principales**
 
-- **Gestión de Partidas<!-- Gestione Partite -->**: Creación, modificación y bloqueo/desbloqueo de partidas<!-- partite --> con trazabilidad automática de fecha y usuario.
-- **Vinculación con el Cash Flow**: Asociación automática a subcuentas bancarias<!-- sottoconti bancari --> y uso de la fecha prevista para previsiones financieras precisas.
-- **Agrupación y División<!-- Accorpamento e Suddivisione -->**: Posibilidad de agrupar o dividir partidas<!-- partite --> para una gestión simplificada.
-- **Vinculación contable<!-- Collegamento Contabile -->**: Enlace de las partidas<!-- partite --> generadas manualmente con los asientos contables<!-- scritture contabili -->, manteniendo la alineación de datos.
+- **Gestión de Partidas**: Creación, modificación y bloqueo/desbloqueo de partidas con trazabilidad automática de fecha y usuario.
+- **Vinculación con el Cash Flow**: Asociación automática a subcuentas bancarias y uso de la fecha prevista para previsiones financieras precisas.
+- **Agrupación y División**: Posibilidad de agrupar o dividir partidas para una gestión simplificada.
+- **Vinculación contable**: Enlace de las partidas generadas manualmente con los asientos contables, manteniendo la alineación de datos.
 
-**Reportes disponibles<!-- Stampe Disponibili -->**
+**Reportes disponibles**
 
-- **Extracto de partidas abiertas<!-- Estratto Conto Partite Aperte -->**: Muestra el estado de las partidas abiertas<!-- partite aperte --> por cada cliente o proveedor.
-- **Reporte de Antigüedad (Aging Report)<!-- Report di Aging -->**: Divide las partidas<!-- partite --> en vencidas y por vencer, facilitando la evaluación de los flujos.
-- **Vencimientos Clientes/Proveedores<!-- Scadenziario Clienti/Fornitori -->**: Monitorea los vencimientos según diferentes parámetros (fecha, estado, tipo de documento).
-- **Cartas de aviso<!-- Lettere di Sollecito -->**: Automatiza el envío de avisos de vencimiento para las partidas<!-- partite --> vencidas.
-- **Diferencia de saldo contable y partidas<!-- Differenza Saldo Contabile e Partite -->**: Verifica discrepancias entre saldo contable y saldo de partidas<!-- saldo partitario -->.
+- **Extracto de partidas abiertas**: Muestra el estado de las partidas abiertas por cada cliente o proveedor.
+- **Informe de Antigüedad (Aging Report)**: Divide las partidas en vencidas y por vencer, facilitando la evaluación de los flujos.
+- **Vencimientos Clientes/Proveedores**: Monitorea los vencimientos según diferentes parámetros (fecha, estado, tipo de documento).
+- **Cartas de cobro**: Automatiza el envío de avisos de vencimiento para las partidas vencidas.
+- **Diferencia partidas y saldo contable**: Verifica discrepancias entre saldo contable y saldo de partidas.
 
-**Procedimientos principales<!-- Procedure Principali -->**
+**Procedimientos principales**
 
-- **Compensación de partidas<!-- Compensazione Partite -->**: Saldar partidas<!-- partite --> entre clientes y proveedores, cerrando posiciones abiertas.
-- **Cálculo de intereses de demora<!-- Calcolo Interessi di Mora -->**: Gestión automática de intereses por retrasos en los pagos.
+- **Compensación de partidas>**: Saldar partidas entre clientes y proveedores, cerrando posiciones abiertas.
+- **Cálculo de intereses por mora<!-- Calcolo Interessi di Mora -->**: Gestión automática de intereses por retrasos en los pagos.
 - **Creación automática de avisos<!-- Creazione Automatica Solleciti -->**: Generación masiva de avisos para las partidas<!-- partite --> vencidas.
 - **Vinculación de asientos contables<!-- Collegamento Registrazioni Contabili -->**: Asociación entre partidas<!-- partite --> y asientos contables<!-- scritture contabili --> para un control completo.
 - **Gestión de pagos asociados<!-- Gestione Pagamenti Collegati -->**: Creación de nuevas partidas<!-- partite --> a partir de pagos ya existentes.
