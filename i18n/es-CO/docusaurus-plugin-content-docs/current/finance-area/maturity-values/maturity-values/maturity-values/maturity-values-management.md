@@ -1,15 +1,13 @@
 ---
 title: Gestión de partidas
 sidebar_position: 1
-ai_generated: true
----
 
-Este formulario solo es accesible desde el formulario **Partidas<!-- Partite -->** (Administración<!-- Amministrazione --> > Partidas<!-- Partite --> > Partidas<!-- Partite -->).
+Esta funcionalidad sólo es accesible desde el menú **Partidas** (Administración > Partidas > Partidas).
 
 El acceso se realiza de dos maneras:
 
- 1. A través del comando *Nueva partida<!-- Nuova partita -->*
- 2. Haciendo doble clic con el mouse en una partida<!-- partita --> presente en la cuadrícula principal del formulario de *Búsqueda de partidas<!-- Ricerca partite -->* o seleccionando la fila y utilizando el comando Modificar partida<!-- Modifica partita --> en la ribbon bar.
+ 1. A través del comando *Nueva partida*
+ 2. Haciendo doble clic con el mouse en una partida<!-- partita --> presente en la cuadrícula principal del formulario de *Búsqueda de partidas<!-- Ricerca partite -->* o seleccionando la fila y utilizando el comando Modificar partida<!-- Modifica partita --> en la barra de herramientas.
 
 Desde esta posición es posible:
 
@@ -27,23 +25,23 @@ o quitándolo para desbloquear (en ese momento también aparecerá el usuario qu
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image02.png)
 
-**Subcuenta de pag.<!-- Sottoconto di pagam. -->**: esta subcuenta<!-- sottoconto --> se asocia a las partidas<!-- partite --> creadas, para poder verificar la canalización de los pagos/cobros en los listados de vencimientos<!-- scadenziari --> y en las simulaciones de cash flow; por lo tanto, se completará ingresando la cuenta bancaria<!-- conto bancario --> de la empresa en uso. El campo se completará automáticamente, para las partidas<!-- partite --> creadas desde asientos contables<!-- registrazioni contabili -->, si en la ** [ficha del proveedor](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) ** está completo el campo correspondiente.<!-- anagrafica del fornitore -->
+**Subcuenta de pago<!-- Sottoconto di pagam. -->**: esta subcuenta<!-- sottoconto --> se asocia a las partidas<!-- partite --> creadas, para poder verificar la canalización de los pagos/cobros en los listados de vencimientos<!-- scadenziari --> y en las simulaciones de cash flow; por lo tanto, se completará ingresando la cuenta bancaria<!-- conto bancario --> de la empresa en uso. El campo se completará automáticamente, para las partidas<!-- partite --> creadas desde asientos contables<!-- registrazioni contabili -->, si en la ** [ficha del proveedor](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance) ** está completo el campo correspondiente.<!-- anagrafica del fornitore -->
 
 **Agente**: el campo se completa automáticamente para las partidas<!-- partite --> generadas por contabilización automática de facturas de venta que tengan asociado un agente a la misma. Esta información es útil para filtrar las partidas<!-- partite --> en el formulario de búsqueda y en los reportes donde dicho campo está presente.
 
-**Fecha prevista<!-- Data Prevista -->**: este campo puede completarse para soportar el procesamiento del ** [Cash Flow](/docs/treasury/cash-flow/cash-flow/cash-flow-management) ** (funcionalidad presente en el área de tesorería<!-- area tesoreria -->). Por lo tanto, se puede indicar una fecha prevista de cobro o de pago que difiere de la fecha de vencimiento<!-- data scadenza --> de la partida<!-- partita --> y que será reportada en los procesos de cash flow (véanse los detalles allí). En particular, se recuerda que, en ausencia de una indicación particular definida en este campo, la fecha prevista se valorizará en la elaboración del cash flow sumando, a partir de la fecha de vencimiento<!-- data scadenza -->, el dato (si está presente) contenido en el campo **Días de retraso<!-- Giorni di Ritardo -->** presente en la ficha<!-- anagrafica --> del cliente o proveedor.
+**Fecha prevista<!-- Data Prevista -->**: este campo puede completarse para soportar el procesamiento del ** [Cash Flow](/docs/treasury/cash-flow/cash-flow/cash-flow-management) ** (funcionalidad presente en el área de tesorería<!-- area tesoreria -->). Por lo tanto, se puede indicar una fecha prevista de cobro o de pago que difiere de la fecha de vencimiento<!-- data scadenza --> de la partida<!-- partita --> y que será reportada en los procesos de cash flow (vease los detalles allí). En particular, se recuerda que, en ausencia de una indicación particular definida en este campo, la fecha prevista se valorizará en la elaboración del cash flow sumando, a partir de la fecha de vencimiento<!-- data scadenza -->, el dato (si está presente) contenido en el campo **Días de retraso<!-- Giorni di Ritardo -->** presente en la ficha<!-- anagrafica --> del cliente o proveedor.
 
-Para los demás campos ver el ** [Glosario](/docs/guide/common/glossary/glossary-intro) ** y consulte las instrucciones relativas a la ** [Pestaña Partidas<!-- Tab Partite --> en el Asiento contable<!-- Registrazione contabile -->](/docs/finance-area/ledger-records/records/ledger-record) **.
+Para los demás campos ver el ** [Glosario](/docs/guide/common/glossary/glossary-intro) ** y consulte las instrucciones relativas a la ** [Pestaña Partidas en el Registro contable](/docs/finance-area/ledger-records/records/ledger-record) **.
 
 **NOTA:**
 
 Generalmente la inserción manual de partidas<!-- partite --> es una operación poco común ya que las partidas<!-- partite --> se crean mediante asientos contables<!-- registrazioni contabili -->. Puede hacerse, por ejemplo, para ingresar manualmente algunas partidas abiertas<!-- partite aperte --> derivadas de la transferencia de datos desde un sistema de gestión anterior (como alternativa a las funcionalidades de importación masiva) o por otras motivaciones particulares.
 
-Si, en paralelo, por ejemplo, se inserta un asiento contable<!-- scrittura contabile --> de apertura de saldo de cliente o proveedor, desde el formulario en cuestión es posible vincular el asiento contable<!-- scrittura contabile --> mediante el comando correspondiente presente en la ribbon bar, descrito más abajo.
+Si, en paralelo, por ejemplo, se inserta un asiento contable<!-- scrittura contabile --> de apertura de saldo de cliente o proveedor, desde el formulario en cuestión es posible vincular el asiento contable<!-- scrittura contabile --> mediante el comando correspondiente presente en la barra de herramientas, descrito más abajo.
 
 ## Partidas agrupadas<!-- Partite raggruppate -->
 
-Desde el formulario en comentario también es posible realizar una especie de "agrupamiento" de partidas<!-- accorpamento delle partite -->. Es decir, a la partida<!-- partita --> que se está modificando, se pueden agrupar otras partidas<!-- partite --> (incluso que no pertenezcan al mismo sujeto). El comando está en la ribbon bar. **Agregar partidas a agrupar<!-- Aggiungi partite da raggruppare -->**.
+Desde el formulario en comentario también es posible realizar una especie de "agrupamiento" de partidas<!-- accorpamento delle partite -->. Es decir, a la partida<!-- partita --> que se está modificando, se pueden agrupar otras partidas<!-- partite --> (incluso que no pertenezcan al mismo sujeto). El comando está en la barra de herramientas. **Agregar partidas a agrupar<!-- Aggiungi partite da raggruppare -->**.
 
 El resultado será que:
 
@@ -55,7 +53,7 @@ El resultado será que:
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image03.png)
 
-**Para ejecutar la adición de partidas<!-- partite --> a agrupar utilice el comando Agregar partidas a agrupar<!-- Aggiungi partite da raggruppare --> presente en la ribbon bar.**
+**Para ejecutar la adición de partidas<!-- partite --> a agrupar utilice el comando Agregar partidas a agrupar<!-- Aggiungi partite da raggruppare --> presente en la barra de herramientas.**
 
 *Botones específicos*
 > **Agregar partidas a agrupar<!-- Aggiungi partite da raggruppare -->**: permite seleccionar otras partidas<!-- partite --> que se agruparán a la partida<!-- partita --> en edición;  
