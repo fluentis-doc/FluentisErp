@@ -70,13 +70,14 @@ Il ricalcolo (FIFO) e la modifica dei valori nei documenti iniziano dalla data d
 
 L’elaborazione si applica al periodo valorizzato, iniziando dalla data di chiusura del magazzino.
 
-:::danger Attenzione  
-Controllare attentamente i valori nei [Parametri iniziali magazzino](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters), soprattutto se la data di chiusura del magazzino appartiene all’anno precedente.
-:::
-
 *Esempio*:  
 Se la data inizio è il 01.10.2023, mentre la data odierna potrebbe essere, ad esempio, il 28.3.2024.       
 Avviando la procedura **Crea valorizzazione**, i valori nei documenti di magazzino sarebbero modificati dal 01.10.2023 fino alla data odierna. Quindi, poiché il 2023 è passato ed è probabilmente già chiuso finanziariamente, i valori nei documenti di magazzino dal 1.10.2023 al 31.12.2023 verrebbero modificati, alterando notevolmente i report già conclusi per il 2023.
+
+:::danger Attenzione  
+Controllare attentamente i valori nei [Parametri iniziali magazzino](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters), sia per l'anno in cui avviene la chiusura che per quello corrente; in particolare verificare che i parametri di chiusura siano coerenti con quelli del calcolo della giacenza.
+Una errata configurazione può comportare il fallimento della valorizzazione nel caso migliore e a dati di magazzino incongruenti in quello peggiore.
+:::
 
 ## Allineamento con la contabilità
 
