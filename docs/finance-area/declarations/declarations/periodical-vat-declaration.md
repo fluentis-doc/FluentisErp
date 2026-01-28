@@ -23,7 +23,11 @@ Compilare SENZA INDICAZIONE DEL SEGNO il campo VP16
 
 ![](/img/it-it/finance-area/declarations/declarations/periodical-vat-declaration/image01.png)
 
-Allo stesso modo possono essere inseriti altri importi che vanno ad incrementare il credito risultante nella liquidazione, quali lo scomputo dell'acconto iva di dicembre versato (campo VP 20).
+:::tip[Acconto IVA annuale]
+Allo stesso modo possono essere inseriti altri importi che vanno ad incrementare il credito risultante nella liquidazione, quali lo **scomputo dell'acconto iva di dicembre versato (campo VP 20)**.
+:::
+
+
 
 **CREDITO IVA DA COMPENSARE IN F24**:
 

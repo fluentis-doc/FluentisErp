@@ -13,7 +13,21 @@ selezionare dalla combo box il registro iva sul quale stampare la liquidazione:
 
 la stampa può essere effettuata in coda al registro vendite o su un registro riepilogativo dedicato (opzione consigliata). 
 
-Nel caso in cui sia stato selezionato l'ultimo periodo dell'anno si abiliterà la possibilità di stampa/**calcolo dell'acconto** IVA, in base al quale il report riporterà le registrazioni fino alla data del 20/12/yyyy.
+:::tip[Gestione dell'acconto annuale IVA]
+Nel caso in cui sia stato selezionato l'ultimo periodo dell'anno si abiliterà la possibilità di stampare attivando il flag **calcolo acconto** IVA, in base al quale il report riporterà soltanto le registrazioni fino alla data del 20/12/yyyy.
+
+Quindi questa modalità di supporto al calcolo dell'acconto si riferisce al metodo cosiddetto ***analitico*** ed è l'unico (dei tre metodi previsti dalla normativa) supportato.
+
+Utilizzando il flag Calcolo acconto, si consiglia di NON attivare anche il flag *definitiva*, inquanto, in particolare per contribuenti mensili, avremo la necessità di stampare anche la liquidazione completa del mese di dicembre.
+
+Dunque abiliteremo il flag definitivo (che blocca la modifica dei dati del periodo) al momento della stampa del mese completo.
+
+Stampando il mese di dicembre completo potremo anche **inserire manualmente il valore dell'acconto versato** al fine di detrarlo all'eventuale debito relativo al mese di dicembre.
+
+Il campo specifico per lo scomputo dell'acconto è il rigo VP20-Acconto Versato presente nella form [**Dichiarazione IVA Periodica**](/docs/finance-area/declarations/declarations/periodical-vat-declaration)
+:::
+
+
 
 **Data versamento / Modalità di versamento**: questi campi (una data che poi viene riportata nella stringa testuale) permettono di far comparire nella stampa una dicitura relativa alla data e modalità di versamento dell'imposta (oppure, modificandoli, un'annotazione libera).
 
