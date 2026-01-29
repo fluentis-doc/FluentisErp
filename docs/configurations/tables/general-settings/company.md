@@ -118,7 +118,7 @@ Nella colonna di destra della maschera abbiamo tre griglie.
 
 Nella prima sono visibili le divisioni definite per la società. E’ bene ricordarsi sempre che per ogni società deve esistere all’interno del software almeno una divisione, anche se questa, come avviene in molti casi, corrisponde all’unica sede. Infatti viene spesso rinominata in divisione 1 o, ancora meglio, semplicemente sede. Su ogni divisione è possibile definire se il controllo di gestione avviene con cadenza settimanale o mensile.
 
-Nella seconda possiamo indicare le 
+Nella seconda possiamo indicare alcune banche d'appoggio, contrassegnandone una come banca di default. Il dato qui indicato non ha tuttavia una particolare rilevanza pratica. Potrebbe essere sfruttato nei report di stampa (creati custom) per indicare una banca di riferimento. Nelle procedure standard è utilizzato unicamente nel report di stampa delle [**lettere di sollecito**](/docs/finance-area/maturity-values/reports/dunning-letters) di pagamento verso i clienti per indicare un appoggio bancario dove pagare.
 
 L’ ultima parte riguarda il logo aziendale, per il quale quello di default (impostato attraverso il pulsante ***Cambia logo di default*** della ribbon bar) viene utilizzato automaticamente all’ interno dei documenti del ciclo attivo/passivo.
 
