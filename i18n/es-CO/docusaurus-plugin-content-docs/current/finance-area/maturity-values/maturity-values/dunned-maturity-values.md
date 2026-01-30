@@ -1,7 +1,7 @@
 ---
 title: Partidas reclamadas
 sidebar_position: 2
-
+---
 
 Búsqueda de partidas reclamadas
 

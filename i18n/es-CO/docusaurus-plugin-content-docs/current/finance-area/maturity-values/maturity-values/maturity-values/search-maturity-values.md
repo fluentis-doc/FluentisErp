@@ -1,7 +1,7 @@
 ---
 title: Búsqueda de partidas
 sidebar_position: 2
-
+---
 
 Esta pantalla permite buscar las partidas<!-- partite --> a través de los campos presentes en el encabezado, que representa el área de filtro para los datos que serán mostrados, y acceder a la edición de cada partida con un doble clic del ratón.
 
