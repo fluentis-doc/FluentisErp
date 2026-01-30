@@ -3,6 +3,63 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0008 - 29/01/2026
+
+> -	Arm - validate database view before aligning to object
+> -	BI - Dasboards(Cruscotti) fix column countings when filter present (TT00178/26)
+> -	CO - Ottimizzazione elaborazione periodi (TT00435/26)
+> -	FI - Registrazioni Contabili, Movimenti Contabili: Revisione salvataggio dei profili (Rif. Ticket TT00052/26)
+> -	MES - Ordine di produzione - Corretta l’anomalia per cui, eseguendo una nuova form di filtro, dopo la selezione di un oggetto Tile con valori maggiori di zero e la pressione del relativo tasto di Ricerca, non veniva visualizzato alcun dato. Era necessario eseguire una seconda Ricerca per visualizzare correttamente le informazioni. (#TT00345/26)
+> -	MS - Corretto errore che nella procedura di Generazione commesse di produzione che dal tab sottoscorta non riporta tutti gli articoli da inserire in commessa. (#TT02716/25)
+> -	MS - Corretto errore che nella procedura di Generazione commesse di produzione che dal tab sottoscorta per il quale la form andava in crash nel caso in cui fossero presenti molte righe da caricare. (#TT00861/25)
+> -	QY - Azioni correttive - Risolta l’anomalia che da ‘Crea Azione correttiva’, presente nelle gestioni: ‘Reclami’, ‘Non conformità’ e ‘Azioni correttive’, non veniva ricopiato il ‘Riferimento documenti’. (#TT00070/26)
+> -	Risolto bug nello script editor per generare il codice per aprire una form
+> -	SCM - Calcolo RAEE: Risolto eccedenza importo dei scadenza rispetto a Totale Documento per errata considerazione del contributo RAEE (rif.ticket 327/26)
+> -	SD - Generazione file XML della fatturazione elettronica: è possibile creare un file custom per le righe fattura personalizzando l'algoritmo CheckSalesInvoiceItemForElectronicExportLinesDetail (rif.ticket 5255/25)
+> -	SD-SalesOrder-Expand first level logic modification(TT00368/26).
+> -	WM - Corretto bug nella webapi degli articoli in cui andava in errore la delete di una variante articolo (#TT00039/26).
+
+### Patch 803.0007 - 26/01/2026
+
+> -	Cambia formato Data Valuta e Data Valuta NIR, rimuovere la parte ORA (#TT00290/26)
+> -	CPQ - miglioramenti computazionali, inserimento bottone per allineamento parametri e binding, bugfix
+> -	FI - Controllo sbilanci cdc/cdp/progetti, revisione gestione flag 'controllo date competenza'. (#TT00291/26)
+> -	FI - creazione public virtual void MovementsAccountingWithParameters, per poter facilmente contabilizzare i movimenti di magazzino tramite script (#TT00264/26)
+> -	FI - CU2026, revisione tendina di regime escluso (RF19). Modifications in Certificazione ritenute telematica form can have an impact on profiles. (#TT00248/26)
+> -	FI - Links change in Purchase invoices accounting procedure. Small improvements in supplier invoice accounting ( TT00280/26).
+> -	MES - Sistemato visualizzazione messaggi di errori da scripting in dichiarazioni di produzione. (#TT00183/26)
+> -	MS - Corretto bug nella procedura MRP che non generava gli ordini pianificati con le quantità corrette in alcuni casi. (#TT00234/26)
+> -	PR - L'importazione file nella riconciliazione bancaria non popola i campi. Modifications in bank movement detail form can have an impact on profiles (TT05582/25).
+> -	QY - Azioni correttive - E' stata aggiornata la descrizione del data source e invertita la visualizzazione di Area e Settore.
+> -	QY - Azioni correttive - E' stata aggiornata la descrizione del data source.
+> -	QY - Documenti di origine esterna - E' stato creato il data source per l'analisi di quanti documenti sono stati inseriti per categoria documento.
+> -	QY - Documenti di origine esterna - E' stato creato il grafico per l'analisi di quanti documenti sono stati inseriti per categoria documento.
+> -	QY - Documenti di origine interna - E' stato creato il data source per l'analisi di quanti documenti sono stati inseriti per categoria documento.
+> -	QY - Documenti di origine interna - E' stato creato il grafico per l'analisi di quanti documenti sono stati inseriti per categoria documento.
+> -	QY - Non conformità - E' stata aggiornata la descrizione del data source.
+> -	QY - Non conformità - E' stato creato il data source per l'analisi di quante non conformità sono state inserite per fornitore.
+> -	QY - Non conformità - E' stato creato il data source per l'analisi di quante non conformità sono state inserite per funzione/area/reparto.
+> -	QY - Non conformità - E' stato creato il grafico per l'analisi di quante non conformità sono state inserite per fornitore.
+> -	QY - Non conformità - E' stato creato il grafico per l'analisi di quante non conformità sono state inserite per funzione/area/reparto.
+> -	QY - Reclami - E' stata aggiornata la descrizione del data source.
+> -	QY - Strumenti di misura - E' stata aggiornata la descrizione del grafico.
+> -	QY - Strumenti di misura - E' stata modificata l'origine dei dati e aggiornata la descrizione del data source.
+> -	QY - Strumenti di misura - E' stato creato il data source per l'analisi sugli strumenti di misura.
+> -	Rilascio stampa CU2026
+> -	Risolto bug nel magazzino 3d per spostare le ubicazioni graficamente
+> -	Risolto bug widget Task Supervisor
+> -	SCM - Richieste di Offerta: Abilitata la possibilità di creare una nuova versione o di duplicare un’offerta intestata ad un Nuovo fornitore. (#TT05126/25)
+> -	SD - Evasione DDT e Fatture da ricerca Ordini cliente: Abilitata la proposta automatica dei lotti anche per l’evasione da ricerca ordini, quando il flag Proposta lotti è attivo e la tipologia di prelievo del lotto non è manuale. (#TT05623/25)
+> -	SD - Offerte di vendita gerarchiche: Introdotta la possibilità di inserire materiali con tipo riga Articolo non codificato digitando direttamente la descrizione articolo. (#TT00296/26)
+> -	SD - Ottimizzazione webapi ordine cliente(#TT04576/25)
+> -	SD - Revisione calcolo automatico liquidazione agenti quando sono presenti fatture di vendita con divise differenti.Modifications in agent settlement form can have an impact on profiles (#TT05266/25)
+> -	SD - Risolta un’anomalia durante lo scarico di documenti contenenti articoli gestiti a lotti e numeri seriali, inseriti con quantità negative. (TT05672/25)
+> -	SDI Documenti di acquisto in entrata: Ora l'anteprima di stampa è stata riportata alle dimensioni e font presenti nel visualizzatore del registro SDI (rif.ticket 00094/26 e 287/26)
+> -	SH - Corretto bug che non visualizzava correttamente tutti i caratteri del codice articolo nell’intestazione della form. (#TT00243/26)
+> -	SH - fix right panels(Tools, Object Navigator, Context Panel, Configuration) ordering when pinned first time (#TT04452/25)
+> -	SH - Prototipi - La dimensione del campo note di fase è stata uniformata a quella delle note di fase del ciclo di lavoro in quanto, all’importazione di quest’ultime nelle fasi del prototipo, veniva generato un errore di dato troncato se la nota di fase del ciclo di lavoro eccedeva di 512 caratteri. (#TT00166/26)
+> -	WMS - Carico/Sposta UDC - Abilitato lo spostamento ubicazione anche per UDC non caricate (#TT05359/25).
+
 ### Patch 803.0006 - 16/01/2026
 
 > -	ARM - Correzione della migrazione del database per BizLink FBH (#TT00057/26)
@@ -93,8 +150,8 @@ sidebar_position: 1
 
 ### Patch 803.0001 - 17/12/2025
 
-> - ARM – aggiornamento dello script post migrazione
+> - ARM - aggiornamento dello script post migrazione
 > - Risolto il problema con i parametri obbligatori delle attività supervisore
 > - Risolto un bug nella creazione di una nuova operazione di flusso e dei documenti con BizLink
 > - Risolto un bug relativo ai parametri GitHub mancanti nell’editor di script
-> - SD – correzione importazione SalesOffer via WebApi – ricerca ticket CrmContact (#TT5577/25)
+> - SD - correzione importazione SalesOffer via WebApi - ricerca ticket CrmContact (#TT5577/25)
