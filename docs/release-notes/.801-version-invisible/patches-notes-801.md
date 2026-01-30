@@ -3,10 +3,16 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 801.0032 - 26/01/2026
+
+> -	MES - Sistemato visualizzazione messaggi di errori da scripting in dichiarazioni di produzione (#TT00183/26).  
+> -	MS - Calendario capacità produttive - Risolta l’anomalia che costringeva l’operatore ad uscire dalla gestione ogni qualvolta si modificava un orario nell’elenco dopo aver modificato uno precedentemente.  
+> -	PR - Lock Manager: corretto errore in fase di inserimento riga all’interno del blocco cliente (#TT00027/26).
+> -	PR - L'importazione file nella riconciliazione bancaria non popola i campi. Modifications in bank movement detail form can have an impact on profiles (#TT05582/25).
+
 ### Patch 801.0031 - 09/01/2026
 
-> -	SCM - Quando un DDT movimentato a magazzino viene valorizzato o evaso in una Fattura di Acquisto con cambio valuta diverso, il cambio del DDT e il relativo importo della registrazione di magazzino vengono aggiornati di conseguenza. (#TT04687/25)
-
+> -	SCM - Quando un DDT movimentato a magazzino viene valorizzato o evaso in una Fattura di Acquisto con cambio valuta diverso, il cambio del DDT e il relativo importo della registrazione di magazzino vengono aggiornati di conseguenza(#TT04687/25).  
 > -	WMS - Ricevimento merce - Esecuzione dell’algoritmo di chiusura form etichette anche da WPF.
 
 ### Patch 801.0030 - 12/12/2025
