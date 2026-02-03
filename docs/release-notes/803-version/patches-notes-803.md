@@ -94,7 +94,7 @@ sidebar_position: 1
 > -	WM - Brogliaccio di Magazzino: Corretto calcolo giacenza iniziale con rimanenze nel periodo di stampa (#TT00142/26)
 > -	WM - Brogliaccio di magazzino: Corretto errore “summaryTemplate missing” (#TT00170/26)
 > -	WM - Spedizioni - Corretta errata evasione ordini clienti creando picking con tipo senza evasione (#TT05607/25)
-> -	WM - Stampa inventario a quantità - spostato totale di magazzino nel footer per problema di caricamento del dato con molte righe.
+> -	WM - Stampa inventario a quantità - spostato totale di magazzino nel footer per problema di caricamento del dato con molte righe. (#TT00008/26)
 > -	WMS - Ricevimento Merce - Creazione UDC con gruppo da ordine fornitore ora vengono generate con anno concorde (#TT00077/26)
 
 ### Patch 803.0005 - 09/01/2026
@@ -115,7 +115,7 @@ sidebar_position: 1
 > -	SH - Revisione gestione inserimento dettagli nella Matrice applicazione tasse (#TT05283/25)
 > -	Risolto errore per script mancante su Parser Objects
 > -	WM - Corretto bug in ricevimento merci del WMS che non inseriva correttamente il conto del cliente nelle unità di carico create (#TT05674/25)
-> -	WMS - Ricevimento merce - Esecuzione dell’algoritmo di chiusura form etichette anche da WPF.
+> -	WMS - Ricevimento merce - Esecuzione dell’algoritmo di chiusura form etichette anche da WPF. (#TT05548/25)
 
 ### Patch 803.0004 - 22/12/2025
 

@@ -22,7 +22,7 @@ I pulsanti specifici per la creazione sono:
 - **Creazione DDT**: crea il DDT a partire dal piano di carico selezionato.
 
 :::important
-Per poter effettuare la *Creazione Picking* dal Piano di carico è necessario aver prima specificato le dimensioni del piano.  
+Per poter eseguire una delle operazioni descritte il piano va prima *Rilasciato* effettuare la *Creazione Picking* dal Piano di carico è necessario aver prima specificato le dimensioni del piano.  
 Le dimensioni vengono calcolate in automatico sulla base delle dimensioni, dei pesi e del volume inseriti per ciascun articolo nel tab [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-item) della sua anagrafica.
 :::
 

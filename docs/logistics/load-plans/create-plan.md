@@ -65,6 +65,11 @@ In questo tab vengono proposti i dati per la preparazione del piano di carico. I
 - **Sposta in altro piano di carico**: sposta la riga in un piano di carico già esistente, scelto dalla maschera di ricerca.
 - **Creazione picking**: crea il *Picking* dal piano di carico; nella maschera è necessario inserire il **Tipo picking**, l'**Operatore** ed è possibile scegliere se creare un picking diverso per ogni ordine o meno. Il picking creato sarà disponibile nella Ricerca picking.
 
+:::important
+Per eseguire il *Rilascio piano* è necessario che siano definite le dimensioni del piano.  
+Le dimensioni vengono calcolate in automatico sulla base delle dimensioni, dei pesi e del volume inseriti nel tab [Pesi/Dimensioni](/docs/erp-home/registers/items/create-new-item) e dei pesi e del volume del tipo UDC specificato nel tab [Confezionamento](/docs/erp-home/registers/items/create-new-item)) dell'anagrafica degli articoli inseriti nel piano.
+:::
+
 ### Gestione dei lotti
 
 Nel caso in cui gli articoli presenti nel Piano di carico fossero gestiti a lotti, i lotti nel picking creato vengono proposti in base alla configurazione:
