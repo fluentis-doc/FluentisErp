@@ -3,6 +3,41 @@ title: Patch notes Versione 707
 sidebar_position: 1
 ---
 
+### Patch 707.1-0063 - 02/02/2026
+
+> -	Cambia formato Data Valuta e Data Valuta NIR, rimuovere la parte ORA (#TT00290/26)
+> -	CO - implement progress bar in scritture di rettifica ( TT04382/25)
+> -	CO - Ottimizzazione elaborazione periodi (TT00435/26)
+> -	FI - CU2026, revisione tendina di regime escluso (RF19). Modifications in Certificazione ritenute telematica form can have an impact on profiles. (#TT00248/26)
+> -	FI - Links changement in Purchase invoices accounting procedure. Small improvements in supplier invoice accounting ( TT00280/26 )
+> -	FI - Registrazioni Contabili, Movimenti Contabili: Revisione salvataggio dei profili (Rif. Ticket TT00052/26)
+> -	FI - time out in query executed during import from DocFinance ( TT00192/26 / TT03926/25)
+> -	FI - Webapi sull’oggetto FSPosting, revisione dell’importazione per gestire gli automatismi di chiusura partite delle registrazioni di pagamento/incassso (#TT05518/25)
+> -	MES - Corretto bug nell'import Webapi delle dichiarazioni di produzione. (#TT00459/26)
+> -	MES - Ordine di produzione - Corretta l’anomalia per cui, eseguendo una nuova form di filtro, dopo la selezione di un oggetto Tile con valori maggiori di zero e la pressione del
+> -	MRP - correggere il caso di calcolo per i documenti con data degli ordini di vendita futura
+> -	MS - Corretto bug in pianificazione generale che nel caso in cui fosse attivato il flag "Esecuzione MRP dopo pianificazione" veniva rimosso il flag "Pianificati" nei parametri della procedura MRP. (#TT00168/26)
+> -	MS - Corretto bug in pianificazione generale nel caso in cui venissero pianificate nuovamente commesse in stato esecutivo o lanciato. (#TT00046/26)
+> -	MS - Corretto bug nella procedura MRP che in alcuni casi non creava correttamente gli ordini pianificati per i figli degli articoli fittizi. (#TT04427/25)
+> -	MS - Corretto errore che nella procedura di Generazione commesse di produzione che dal tab sottoscorta non riporta tutti gli articoli da inserire in commessa. (#TT02716/25)
+> -	MS - Corretto errore che nella procedura di Generazione commesse di produzione che dal tab sottoscorta per il quale la form andava in crash nel caso in cui fossero presenti molte righe da caricare. (#TT00861/25)
+> -	MS - Ottimizzata e migliorata la parte grafica della form Capacità centri di lavoro. (#TT05531/25)
+> -	PR - L'importazione file nella riconciliazione bancaria non popola i campi. Modifications in bank movement detail form can have an impact on profiles. ( TT05582/25)
+> -	Rilascio stampa CU2026
+> -	Risolto bug nello script editor per generare il codice per aprire una form
+> -	SCM - Corretto l'aggiornamento degli importi nella registrazione di magazzino generata dal carico di un DDT, in caso di cancellazione di una riga spese dai riepiloghi del documento. (#TT00408/26)
+> -	SD - Generazione file XML della fatturazione elettronica: è possibile creare un file custom per le righe fattura personalizzando l'algoritmo CheckSalesInvoiceItemForElectronicExportLinesDetail (rif.ticket 5255/25)
+> -	SD - Nella creazione del file Sdi IT, valorizzazione tag `<NumeroCivico>` del cedente/prestatore e cessionario/committente (#TT05470/25)
+> -	SD - Offerte di vendita gerarchiche: Introdotta la possibilità di inserire materiali con tipo riga Articolo non codificato digitando direttamente la descrizione articolo. (#TT00296/26)
+> -	SD - Ottimizzazione webapi ordine cliente(#TT04576/25)
+> -	SD - Revisione calcolo automatico liquidazione agenti quando sono presenti fatture di vendita con divise differenti.Modifications in agent settlment form can have an impact on profiles (#TT05266/25)
+> -	SD - Risolta un’anomalia durante lo scarico di documenti contenenti articoli gestiti a lotti e numeri seriali, inseriti con quantità negative. (TT05672/25)
+> -	SD - Shippings - Calendario Spedizioni - Corretto errori in creazione spedizioni da calendario. (#TT00391/26)
+> -	SH - Configurazione Documenti Elettronici: Corretto anomalia nel salvataggio delle configurazioni per società (rif.ticket 197/26)
+> -	SH - Prototipi - La dimensione del campo note di fase è stata uniformata a quella delle note di fase del ciclo di lavoro in quanto, all’importazione di quest’ultime nelle fasi del prototipo, veniva generato un errore di dato troncato se la nota di fase del ciclo di lavoro eccedeva di 512 caratteri. (#TT00166/26)
+> -	WMS - Xamarin - Corretta perdita di login in (dis)connessione device bluetooth. (#TT04829/25)
+> -	relativo tasto di Ricerca, non veniva visualizzato alcun dato. Era necessario eseguire una seconda Ricerca per visualizzare correttamente le informazioni. (#TT00345/26)
+
 ### Patch 707.1-0062 - 16/01/2026
 
 > -	CO - nelle scritture di integrazione delle Chiusure infrannuali ora Fluentis restituisce un messaggio se la registrazione da creare non ha righe a causa del valore 0 dell’integrazione da eseguire (#TT04864/25)
@@ -86,7 +121,7 @@ sidebar_position: 1
 > -	MES - Non è più possibile cancellare i materiali negli ordini di produzione in stato evaso (#TT04893/25)
 > -	QY - Tipi prova - Risolta anomalia che visualizzava, nella colonna Categoria tipo prova, le categorie di tutte le società (#TT05260/25)
 > -	SCM - Documenti di Acquisto in Entrata: Corretto errore nella procedura di Creazione Fattura di Acquisto da documento Sdi (#TT05275/25)
-> -	SD - Shipping Planner – il passaggio allo stato successivo non funzionava. (#TT05360/25)
+> -	SD - Shipping Planner - il passaggio allo stato successivo non funzionava. (#TT05360/25)
 > -	WM - Aggiunto il Lotto Fornitore in inserimento registrazioni con Web Api (#TT04962/25)
 > -	WM - Corretta valorizzazione della UM alternativa in generazione DDT e Fattura da picking (#TT04628/25)
 > -	WM - Corretto errore in creazione DDT da lista di prelievo UDC in mancanza di UM peso con flag di riferimento attivo (#TT04650/25)
@@ -203,7 +238,7 @@ sidebar_position: 1
 > -	FI - Corretto calcolo interessi trimestrali iva nella comunicazione periodica delle liquidazioni IVA. Non vengono più esposti nel quarto trimestre come da istruzioni ministeriali (#TT00124/22)
 > -	FI - corretto problema che non riportava I dati dei centri di costo riferiti alle commesse nelle scritture di assestamento (#TT03979/25) 
 > -	FI - Creazione compenso da documenti di acquisto in entrata: Risolto problema relativo alla creazione di un nuovo contatto e al calcolo delle righe all’interno del compenso (#TT01805/25) 
-> -	MES - Dichiarazioni di produzione da soluzione MES - Corretta anomalia che, alla doppia pressione del pulsante [Avanza], creava una doppia dichiarazione di produzione (#TT04436/25) 
+> -	MES - Dichiarazioni di produzione da soluzione MES - Corretta anomalia che, alla doppia pressione del pulsante **Avanza**, creava una doppia dichiarazione di produzione (#TT04436/25) 
 > -	MES - Verticalizzazione Pharma - Ordini di produzione - Corretta anomalia che non effettuava un refresh della form al cambio stato workflow di "Parzialmente associato", non visualizzando automaticamente la griglia del dettaglio dei Lotti (#TT04063/25) 
 > -	MES - Verticalizzazione Pharma - Ordini di produzione - Corretta anomalia che non decrementava la "Quantità totale" di consumo del materiale principale assegnando una "Quantità totale" di consumo ai materiali alternativi (#TT04062/25) 
 > -	MS - Corretto bug in costificazione delle commesse di produzione che non valorizzava correttamente il costo di setup (#TT04167/25) 
