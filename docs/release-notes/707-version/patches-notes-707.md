@@ -1,6 +1,8 @@
 ---
 title: Patch notes Versione 707
 sidebar_position: 1
+keywords:
+  - Civico
 ---
 
 ### Patch 707.1-0063 - 02/02/2026
