@@ -3,6 +3,15 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0085 - 02/02/2026
+
+> - FI - CU2026, revisione tendina di regime escluso (RF19). Modifications in Certificazione ritenute telematica form can have an impact on profiles (#TT00248/26).  
+> - MPS - Corretto errore che nella procedura MPS dal tab sottoscorta non riporta tutti gli articoli da inserire in commessa (#TT02716/25).  
+> - MPS - Corretto errore che nella procedura MPS dal tab sottoscorta per il quale la form andava in crash nel caso in cui fossero presenti molte righe da caricare (#TT00861/25).  
+> - MS - Corretto bug in pianificazione generale nel caso in cui venissero
+Rilascio stampa CU2026.  
+> - SH - Configurazione Documenti Elettronici: Corretto anomalia nel salvataggio delle configurazioni per società (rif.ticket 197/26).  
+
 ### Patch 608.1-0084 - 19/01/2026
 
 > - ARM - bug fix for serial number movements migration (#TT04969/25).
@@ -11,7 +20,7 @@ sidebar_position: 2
 
 > - CO - Elaborazione periodi optimization (#TT05417/25)
 > - MS - Nel report della costificazione commesse è stato aggiunto il riepilogo per articolo anche nel caso in cui la commessa sia multiprodotto (#TT05218/25)
-> -  MS - Corretto bug nella procedura MRP nel caso di suggerimenti per anticipare dei documenti (#TT05439/25)
+> - MS - Corretto bug nella procedura MRP nel caso di suggerimenti per anticipare dei documenti (#TT05439/25)
 
 ### Patch 608.1-0082 - 05/12/2025
 
