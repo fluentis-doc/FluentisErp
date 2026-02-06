@@ -3,6 +3,13 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0086 - 05/02/2026
+
+> - FI - Intrastat - in caso di importo 0 il raggruppamento mantiene il campo del segno impostato a 1 (#TT00417/26)
+> - FI - Revisione chiusura partite in registrazioni contabili, lock random su update nei solleciti (#TT01305/25)
+> - WM - Valorizzazione di magazzino - Controllo giacenze negative lotti anche se magazzino ammette giacenze negative. (#TT00344/26)
+
+
 ### Patch 608.1-0085 - 02/02/2026
 
 > - FI - CU2026, revisione tendina di regime escluso (RF19). Modifications in Certificazione ritenute telematica form can have an impact on profiles (#TT00248/26).  
