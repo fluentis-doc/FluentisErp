@@ -5,6 +5,24 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0064 - 05/02/2026
+
+> -	FI - Intrastat - in caso di importo 0 il raggruppamento mantiene il campo del segno impostato a 1 (#TT00417/26)
+> -	FI - Partite: Modificata la gestione di FSMaturity in custom (#TT00180/26)
+> -	FI - Revisione chiusura partite in registrazioni contabili, lock random su update nei solleciti (#TT01305/25)
+> -	MS - Corretto bug nella procedura MRP che non generava correttamente gli ordini pianificati nel caso in cui fosse attivo il flag Considera passato. (#TT05561/25)
+> -	PM: progetti - contatore Giorni eseguiti, corretto il calcolo per un caso in cui non venivano considerati nei conteggi gli interventi che hanno una dichiarazione attività collegata (#TT00441/26)
+> -	SCM - Contabilizzazione fatture di acquisto: revisione della procedura di rollback della contabilizzazione in presenza di partite già pagate (#TT00381/26)
+> -	SCM - Nell'importazione WebAPI, viene considerato il codice lotto fornitore inserito negli articoli e non viene sovrascritto con quello di anagrafica lotto (#TT04840/25)
+> -	SCM - Risolta anomalia che in alcuni casi non visualizzava la causale o l’ubicazione inserita sulla prima riga articolo di un DDT di Acquisto. (#TT00188/26)
+> -	SCM - Risolto errore relativo all’impossibilità di importare tramite WebAPI la proprietà CountryId (#TT04957/25)
+> -	SCM - Valorizzazione DDT di Acquisto: Corretto errore nella valorizzazione di un DDT contenente articoli gestiti con serial number.( #TT00530/26)
+> -	SD - Fatture di Vendita: Risolta anomalia che attivava il pulsante Salva nelle fatture Consegnate, quando era attivo il flag Valori modificati manualmente nel tab Trasporto. (#TT04757/25)
+> -	SD - Ordini clienti: Risolto errore che talvolta si verificava al salvataggio di un ordine generato mediante Evasione da Progetto. (#TT00455/26)
+> -	SD-Corretto errore nella stampa delle provvigioni maturate, modulo vendite, che presentava la provvigione come non maturata, anche se la partita era chiusa, nel caso in cui il pagamento veniva registrato assieme al pagamento di un insoluto. (Rif Ticket 353/26)
+> -	SD-SalesOrder-Expand first level logic modification(TT00368/26)
+> -	WM - Valorizzazione di magazzino - Controllo giacenze negative lotti anche se magazzino ammette giacenze negative. (#TT00344/26)
+
 ### Patch 707.1-0063 - 02/02/2026
 
 > -	Cambia formato Data Valuta e Data Valuta NIR, rimuovere la parte ORA (#TT00290/26)
