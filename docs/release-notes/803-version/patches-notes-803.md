@@ -3,6 +3,36 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0009 - 06/02/2026
+
+> -	CPQ - Aggiunte validazioni sulle configurazioni e bug fixing
+> -	FI - Intrastat - in caso di importo 0 il raggruppamento mantiene il campo del segno impostato a 1 (#TT00417/26)
+> -	FI - Partite: Modificata la gestione di FSMaturity in custom (#TT00180/26)
+> -	FI - Revisione chiusura partite in registrazioni contabili, lock random su update nei solleciti (#TT01305/25)
+> -	FI - Webapi sull’oggetto FSPosting, revisione dell’importazione per gestire gli automatismi di chiusura partite delle registrazioni di pagamento/incassso (#TT05518/25)
+> -	MES - Corretto bug nell'import Webapi delle dichiarazioni di produzione. (#TT00459/26)
+> -	MES - Soluzione MES - Utilizzando il bar-code tokenizer della Risorsa di tipo Dipendente, indipendentemente dal tabulatore visualizzato, è ora possibile inserire un nuovo componente della Squadra di lavoro oppure impostare un termine attività per un componente già presente (#TT00249/26)
+> -	MS - Corretto bug in pianificazione generale che nel caso in cui fosse attivato il flag "Esecuzione MRP dopo pianificazione" veniva rimosso il flag "Pianificati" nei parametri della procedura MRP. (#TT00168/26)
+> -	MS - Corretto bug in pianificazione generale nel caso in cui venissero pianificate nuovamente commesse in stato esecutivo o lanciato. (#TT00046/26)
+> -	MS - Corretto bug nella procedura MRP che in alcuni casi non creava correttamente gli ordini pianificati per i figli degli articoli fittizi. (#TT04427/25)
+> -	MS - Corretto bug nella procedura MRP che non generava correttamente gli ordini pianificati nel caso in cui fosse attivo il flag Considera passato. (#TT05561/25)
+> -	PM: duplica intervento da planner, corretto caso per cui settava le ore di inizio servizio nella data intervento generale, invece di mantenere l'ora 00.00 (#TT00499/26 )
+> -	PM: generazione intervento da intervento pianificato - corretta casistica per cui solo in specifiche condizioni, le spese sostenute non riportavano la data corretta e le spese da fatturare non erano proposte correttamente (#TT00481/26)
+> -	PM: WEB ripristinati tasti di espandi/comprimi nella visualizzazione progetto nel calendario di WBS assegnazione risorse (#TT00477/26)
+> -	Risolto problema di importazioni ordini Peppol
+> -	SCM - Calcolo RAEE: Risolta procedura EVASIONE ORDINI per il calcolo delle spese RAEE (rif.ticket 331/26)
+> -	SCM - Contabilizzazione fatture di acquisto: revisione della procedura di rollback della contabilizzazione in presenza di partite già pagate (#TT00381/26)
+> -	SCM - Corretto il calcolo degli Importi del documento generato tramite la procedura di Creazione DDT da Ricevimento Merci. (#TT00524/26)
+> -	SCM - Ordini Fornitore: Il Contributo RAEE viene ora calcolato anche negli ordini generati da Richieste di acquisto o Richieste di Offerta. (#TT00526/26)
+> -	SCM - Valorizzazione DDT di Acquisto: Corretto errore nella valorizzazione di un DDT contenente articoli gestiti con serial number.( #TT00530/26)
+> -	SD - Fatture di Vendita: Risolta anomalia che attivava il pulsante Salva nelle fatture Consegnate, quando era attivo il flag Valori modificati manualmente nel tab Trasporto. (#TT04757/25)
+> -	SD - Ordini clienti: Risolto errore che talvolta si verificava al salvataggio di un ordine generato mediante Evasione da Progetto. (#TT00455/26)
+> -	SD - Shippings - Calendario Spedizioni - Corretto errori in creazione spedizioni da calendario. (#TT00391/26)
+> -	SD- Se la riga acconto (tipo 6) in fattura aveva l’articolo valorizzato, ora lo storno acconto riporta questo articolo nella riga di tipo 7. (#TT00084/26)
+> -	SD\SCM-Nella tabella dei tipi spese aggiungere un check button per determinare l’area di competenza, in questo modo è possibile gestire tipi spesa differenti tra documenti di acquisto e di vendita, e nel caso del RAEE questi vengono proposti automaticamente dagli algoritmi.Modifications in charge type form can have an impact on profiles (#TT00339/26)
+> -	SD-Corretto errore nella stampa delle provvigioni maturate, modulo vendite, che presentava la provvigione come non maturata, anche se la partita era chiusa, nel caso in cui il pagamento veniva registrato assieme al pagamento di un insoluto. (Rif Ticket 353/26)
+> -	WM - Valorizzazione di magazzino - Controllo giacenze negative lotti anche se magazzino ammette giacenze negative. (#TT00344/26)
+
 ### Patch 803.0008 - 29/01/2026
 
 > -	Arm - validate database view before aligning to object
