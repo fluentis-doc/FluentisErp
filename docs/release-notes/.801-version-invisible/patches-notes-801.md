@@ -3,6 +3,12 @@ title: Patch notes Versione 802
 sidebar_position: 1
 ---
 
+### Patch 801.0033 - 05/02/2026
+
+BI – Dasboards(Cruscotti) fix column counting when filter present (TT00178/26)
+QY - Azioni correttive – Risolta l’anomalia che da ‘Crea Azione correttiva’, presente nelle gestioni: ‘Reclami’, ‘Non conformità’ e ‘Azioni correttive’, non veniva ricopiato il ‘Riferimento documenti’. (#TT00070/26)
+WMS – Carico/Sposta UDC – Abilitato lo spostamento ubicazione anche per UDC non caricate. (#TT05359/25)
+
 ### Patch 801.0032 - 26/01/2026
 
 > -	MES - Sistemato visualizzazione messaggi di errori da scripting in dichiarazioni di produzione (#TT00183/26).  
