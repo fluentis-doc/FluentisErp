@@ -3,6 +3,37 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0010 - 13/02/2026
+
+> -	CPQ - bugfixing su script di inizializzazione e aggiunta Extra Data ad articoli creati.
+> -	FI - calcolo ammortamenti, revisione gestione data inizio attività su cespiti collegati ( TT00645/26)
+> -	FI - Contabilizzazione Compensi ed Enasarco: revisione delle procedure di contabilizzazione dei compensi e dei contributi Enasarco, con revisione delle relative procedure di rollback. (Rif. Ticket TT00330/26)
+> -	FI - creazione file F24, revisione record 50.01 (#TT01973/25)
+> -	FI - PaymentImport fix - delete FSMaturityPaymentReservation ( TT00631/26)
+> -	Framework - Risolta l’anomalia che, aprendo un documento, causava uno sfarfallio iniziale nell’evidenziazione dei campi obbligatori (quelli evidenziati in rosso). (#TT00553/26)
+> -	Impostazione Xslt di visualizzazione Liquidazione iva periodica (#TT00520/26)
+> -	MS - Corretto bug in costificazione che non calcolava correttamente il costo per le fasi a tempo fisso. (#TT05668/25)
+> -	MS - MES - Ora se la numerazione dei documenti commesse di produzione, ordini pianificati, ordini di produzione e di conto lavoro sono con periodo Annuale, la numerazione proposta dipenderà dall'anno della data del documento appena inserito. (#TT00040/26)
+> -	MS e MES - Materiali proposti al Completamento dati ordine
+> -	PM - risolto caso di segnalazione nella ricerca interventi in presenza di customizzazioni (#TT00466/26)
+> -	QY - Filtro controllo articoli - Risolto il problema di perdita dei caratteri inseriti nel filtro degli Ordini di produzione, presente nei documenti di origine delle Dichiarazioni di produzione e nella Fase ordine di produzione. (#TT00454/26)
+> -	QY - Numerazione documenti - Dove prevista la numerazione documenti, è stata implementata la gestione della progressione non annuale.(#TT00625/26)
+> -	revisione calcolo scaglioni Firr (#TT00516/26)
+> -	Risolto errore durante la ricerca di documenti su tab precedenti di NIR quando esiste custom per oggetto PurchaseDeliveryNote o PurchaseInvoice(TT00653/26)
+> -	SCS - Creazione Ordine di Conto lavoro da fase esterna di Ordine di Produzione: Corretta la proposta dell'ubicazione riportata sulla riga articolo dell'ordine di conto lavoro. (#TT05383/25)
+> -	SH - Attività/Task - Corretto errore in chiusura nuova attività senza salvare. (TT00613/26)
+> -	Solved crash when click on dashboard grid for some dashboards
+> -	Solved problem to compile script for Mono platform
+> -	WM - Aggiunta proprietà “Qtà Impegno” in analisi disponibilità con dettaglio distinta base. (#TT05061/25). Can have an impact in the profile of availability form
+> -	WM - Lista inventariale - Messaggio di avviso in Help articoli se magazzino non presente nella lista. (#TT00471/26)
+> -	WM - MS - MES: Allineato il comportamento dell’utilizzo dell’unità di misura alternativa all’interno di tutte le form delle aree logistica, pianificazione e produzione, nel caso in cui fosse attivato il flag *Tassativo*. (#TT05379/25)
+> -	WM - Stampa inventario - Corretto filtri tipo e categoria fiscale non funzionanti in valorizzazione LIFO. (#TT00404/26)
+> -	WM - Valorizzazione magazzino - Limitato il controllo giacenza su articoli fittizi alla data chiusura.(#TT00541/26)
+> -	WMS - Articoli fittizi possono non possono essere inventariati. (#TT05113/25)
+> -	WMS - Carico UDC - Attivata identificazione barcode ubicazione. (#TT05359/25)
+> -	È stata revisionata la modalità di proposta dei materiali nel completamento dati ordine degli Ordini pianificati e degli Ordini di produzione. Al momento della richiesta di completamento, viene visualizzata una finestra in cui è possibile scegliere quale data considerare per la verifica della data di validità del componente della distinta base.
+> -	Le opzioni disponibili sono: Data prevista inizio (proposta predefinita) e Data odierna(#TT02644/25).
+
 ### Patch 803.0009 - 06/02/2026
 
 > -	CPQ - Aggiunte validazioni sulle configurazioni e bug fixing
@@ -16,9 +47,9 @@ sidebar_position: 1
 > -	MS - Corretto bug in pianificazione generale nel caso in cui venissero pianificate nuovamente commesse in stato esecutivo o lanciato. (#TT00046/26)
 > -	MS - Corretto bug nella procedura MRP che in alcuni casi non creava correttamente gli ordini pianificati per i figli degli articoli fittizi. (#TT04427/25)
 > -	MS - Corretto bug nella procedura MRP che non generava correttamente gli ordini pianificati nel caso in cui fosse attivo il flag Considera passato. (#TT05561/25)
-> -	PM: duplica intervento da planner, corretto caso per cui settava le ore di inizio servizio nella data intervento generale, invece di mantenere l'ora 00.00 (#TT00499/26 )
-> -	PM: generazione intervento da intervento pianificato - corretta casistica per cui solo in specifiche condizioni, le spese sostenute non riportavano la data corretta e le spese da fatturare non erano proposte correttamente (#TT00481/26)
-> -	PM: WEB ripristinati tasti di espandi/comprimi nella visualizzazione progetto nel calendario di WBS assegnazione risorse (#TT00477/26)
+> -	PM - duplica intervento da planner, corretto caso per cui settava le ore di inizio servizio nella data intervento generale, invece di mantenere l'ora 00.00 (#TT00499/26 )
+> -	PM - generazione intervento da intervento pianificato - corretta casistica per cui solo in specifiche condizioni, le spese sostenute non riportavano la data corretta e le spese da fatturare non erano proposte correttamente (#TT00481/26)
+> -	PM - WEB ripristinati tasti di espandi/comprimi nella visualizzazione progetto nel calendario di WBS assegnazione risorse (#TT00477/26)
 > -	Risolto problema di importazioni ordini Peppol
 > -	SCM - Calcolo RAEE: Risolta procedura EVASIONE ORDINI per il calcolo delle spese RAEE (rif.ticket 331/26)
 > -	SCM - Contabilizzazione fatture di acquisto: revisione della procedura di rollback della contabilizzazione in presenza di partite già pagate (#TT00381/26)
