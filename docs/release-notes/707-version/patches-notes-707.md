@@ -5,22 +5,46 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0065 - 13/02/2026
+
+> -	FI - Contabilizzazione Compensi ed Enasarco: revisione delle procedure di contabilizzazione dei compensi e dei contributi Enasarco, con revisione delle relative procedure di rollback. (Rif. Ticket TT00330/26)
+> -	FI - creazione file F24, revisione record 50.01 (#TT01973/25)
+> -	FI - PaymentImport fix - delete FSMaturityPaymentReservation ( TT00631/26)
+> -	FI/PR/CRM - WebApi evict ( TT03911/25)
+> -	Framework - Risolta l’anomalia che, aprendo un documento, causava uno sfarfallio iniziale nell’evidenziazione dei campi obbligatori (quelli evidenziati in rosso). (#TT00553/26)
+> -	Impostazione Xslt di visualizzazione Liquidazione iva periodica (#TT00520/26)
+> -	MS - Capacità Centri di lavoro - Risolta l’anomalia nelle Fasi con Centri di lavoro a tempo fisso: lo spostamento tra le date generava un’eccezione e impediva il corretto ricalcolo del tempo. (#TT00599/26)
+> -	MS - Corretto bug in costificazione che non calcolava correttamente il costo per le fasi a tempo fisso. (#TT05668/25)
+> -	MS - MES - Ora se la numerazione dei documenti commesse di produzione, ordini pianificati, ordini di produzione e di conto lavoro sono con periodo Annuale, la numerazione proposta dipenderà dall'anno della data del documento appena inserito. (#TT00040/26)
+> -	MS e MES - Materiali proposti al Completamento dati ordine
+> -	PM - risolto caso di segnalazione nella ricerca interventi in presenza di customizzazioni (#TT00466/26)
+> -	revisione calcolo scaglioni Firr (#TT00516/26)
+> -	Risolto errore durante la ricerca di documenti su tab precedenti di NIR quando esiste custom per oggetto PurchaseDeliveryNote o PurchaseInvoice(TT00653/26)
+> -	SD - Creazione Fatture da DDT: Nel caso di valorizzazione di più DDT con spese di tipo percentuale, le spese vengono riportate in Fattura come spese a valore, con importo pari a quello indicato nel DDT. (#TT00560/26)
+> -	WM - Aggiunta proprietà “Qtà Impegno” in analisi disponibilità con dettaglio distinta base. (#TT05061/25). Can have an impact in the profile of availability form
+> -	WM - MS - MES: Allineato il comportamento dell’utilizzo dell’unità di misura alternativa all’interno di tutte le form delle aree logistica, pianificazione e produzione, nel caso in cui fosse attivato il flag Tassativo. (#TT05379/25)
+> -	WM - Stampa inventario - Corretto filtri tipo e categoria fiscale non funzionanti in valorizzazione LIFO. (#TT00404/26)
+> -	WM - Valorizzazione magazzino - Limitato il controllo giacenza su articoli fittizi alla data chiusura.(#TT00541/26)
+> -	WMS - Articoli fittizi possono non possono essere inventariati. (#TT05113/25)
+> -	È stata revisionata la modalità di proposta dei materiali nel completamento dati ordine degli Ordini pianificati e degli Ordini di produzione. Al momento della richiesta di completamento, viene visualizzata una finestra in cui è possibile scegliere quale data considerare per la verifica della data di validità del componente della distinta base.
+> -	Le opzioni disponibili sono: Data prevista inizio (proposta predefinita) e Data odierna.(#TT02644/25)
+
 ### Patch 707.1-0064 - 05/02/2026
 
 > -	FI - Intrastat - in caso di importo 0 il raggruppamento mantiene il campo del segno impostato a 1 (#TT00417/26)
 > -	FI - Partite: Modificata la gestione di FSMaturity in custom (#TT00180/26)
 > -	FI - Revisione chiusura partite in registrazioni contabili, lock random su update nei solleciti (#TT01305/25)
 > -	MS - Corretto bug nella procedura MRP che non generava correttamente gli ordini pianificati nel caso in cui fosse attivo il flag Considera passato. (#TT05561/25)
-> -	PM: progetti - contatore Giorni eseguiti, corretto il calcolo per un caso in cui non venivano considerati nei conteggi gli interventi che hanno una dichiarazione attività collegata (#TT00441/26)
+> -	PM - Progetti - contatore Giorni eseguiti, corretto il calcolo per un caso in cui non venivano considerati nei conteggi gli interventi che hanno una dichiarazione attività collegata (#TT00441/26)
 > -	SCM - Contabilizzazione fatture di acquisto: revisione della procedura di rollback della contabilizzazione in presenza di partite già pagate (#TT00381/26)
 > -	SCM - Nell'importazione WebAPI, viene considerato il codice lotto fornitore inserito negli articoli e non viene sovrascritto con quello di anagrafica lotto (#TT04840/25)
 > -	SCM - Risolta anomalia che in alcuni casi non visualizzava la causale o l’ubicazione inserita sulla prima riga articolo di un DDT di Acquisto. (#TT00188/26)
 > -	SCM - Risolto errore relativo all’impossibilità di importare tramite WebAPI la proprietà CountryId (#TT04957/25)
-> -	SCM - Valorizzazione DDT di Acquisto: Corretto errore nella valorizzazione di un DDT contenente articoli gestiti con serial number.( #TT00530/26)
+> -	SCM - Valorizzazione DDT di Acquisto: Corretto errore nella valorizzazione di un DDT contenente articoli gestiti con serial number.(#TT00530/26)
 > -	SD - Fatture di Vendita: Risolta anomalia che attivava il pulsante Salva nelle fatture Consegnate, quando era attivo il flag Valori modificati manualmente nel tab Trasporto. (#TT04757/25)
 > -	SD - Ordini clienti: Risolto errore che talvolta si verificava al salvataggio di un ordine generato mediante Evasione da Progetto. (#TT00455/26)
-> -	SD-Corretto errore nella stampa delle provvigioni maturate, modulo vendite, che presentava la provvigione come non maturata, anche se la partita era chiusa, nel caso in cui il pagamento veniva registrato assieme al pagamento di un insoluto. (Rif Ticket 353/26)
-> -	SD-SalesOrder-Expand first level logic modification(TT00368/26)
+> -	SD - Corretto errore nella stampa delle provvigioni maturate, modulo vendite, che presentava la provvigione come non maturata, anche se la partita era chiusa, nel caso in cui il pagamento veniva registrato assieme al pagamento di un insoluto. (Ticket 353/26)
+> -	SD - SalesOrder-Expand first level logic modification(TT00368/26)
 > -	WM - Valorizzazione di magazzino - Controllo giacenze negative lotti anche se magazzino ammette giacenze negative. (#TT00344/26)
 
 ### Patch 707.1-0063 - 02/02/2026
