@@ -16,8 +16,10 @@ La schermata del Contatto CRM si compone di tre parti:
 
 **Nome Contatto**: serve per indicare la ragione sociale o, più in generale, il nominativo del contatto; aprendo l'expander saranno visibili i seguenti dati: 
 **Globale**: se questo flag è abilitato, indica che il contatto visibile e gestibile in tutte le società presenti; 
+Il contatto CRM sarà visibile in ricerca per tutte le società;
 **Società**: indica la società di appartenenza del contatto; se indicata, il contatto sarà gestibile solo in questa società. Il campo si attiva solo se il flag Globale è disattivato. 
 **Dipartimento**: indica il dipartimento di appartenenza del contatto, in funzione della società selezionata; Il campo si attiva solo se il flag Globale è disattivato. 
+Il contatto CRM sarà visibile in ricerca per le società indicata nel contatto;
 
 #### Campi non obbligatori
 
@@ -64,6 +66,9 @@ I vantaggi dell'uso della pipeline sono:
 **Qualità contatto** attribuisce delle stelle ai vari contatti: la [qualità](/docs/configurations/tables/crm/contacts/contact-quality) è espressa in modo crescente da una a cinque stelline; questa caratteristica serve per le varie analisi e per definire la qualità del contatto in base ad una classificazione effettuata dall'utente.     
 
 **Anagrafica** in questo campo viene visualizzato il nomignolo e la ragione sociale dell'anagrafica cliente associata al contatto, nel momento in cui quest’ultimo viene convertito a cliente. Oppure è possibile effettuare l'associazione manualmente.  
+Nel caso il contatto sia globale: verrà mostrata l'anagrafica corrispondente per la società corrente in uso; 
+Questo vuol dire che sarà possibile codificare un'anagrafica lato erp per ogni società desiderata, mantenendo tutte il collegamento allo stesso contatto CRM globale. 
+Nel caso il contatto sia per società/dipartimento:  verrà mostrata l'anagrafica corrispondente per la società indicata nel contatto CRM;
 
 **Altre informazioni**: campo note di libera compilazione. All'interno dell'expander sono presenti ulteriori campi. 
 
@@ -106,6 +111,10 @@ E' obbligatorio indicare la nazione per poter convertire un contatto in cliente.
 La conversione prevede 2 opzioni: 
 - Nuovo contatto: codifica quindi un nuovo cliente, con il Tipo conto indicato; 
 - Contatto Esistente: permette di ricercare i contatti erp già esistenti, e selezionare il contatto da associare. 
+
+Nel caso il contatto sia globale: verrà permesso di codificare una nuova anagrafica per la società corrente in uso. I tipi conto proposti saranno quelli per la società indicata nel contatto CRM. 
+Si intende quindi che sarà possibile codificare un'anagrafica per ogni società desiderata, mantenendo tutte il collegamento allo stesso contatto CRM globale. 
+Nel caso il contatto sia per società/dipartimento: verrà permesso di codificare una nuova anagrafica se non già presente per la società indicata nel contatto. I tipi conto proposti saranno quelli per la società indicata nel contatto CRM;
 
 All'interno del contatto sono presenti anche dei campi utilizzati a fine statistico, non mostrati direttamente all'utente ed impostati in automatico: 
 
