@@ -133,21 +133,56 @@ Nei parametri generali del progetto l'unità di misura per i giorni è "GG-giorn
 La quantità verrà segnata in automatico come 1,14 GG. (Ottenuta dalla conversione di 1 GG = 7 ore)
 :::
 
-**Prezzo Unitario**, **Prezzo totale**, **Importo totale**, **Iva**, **Sconti** : dati relativi al prezzo ed all'IVA ottenuti dalle apposite impostazioni di listino del cliente ed articolo;
-**Risorsa** : risorsa che ha svolto il servizio, di default proposta quella presente in testata, ma comunque modificabile;
-**Progress percentuale stima del lavoro**: percentuale di lavoro eseguito, aggiorna il valore corrispondente nel progetto;
-**Fatturato vendite**: fatturato vendite assegnate in base alla priorità dall'anagrafica articolo o anagrafica cliente;
-**Progetto**: ereditato dalla testata intervento se presente, oppure associato manualmente dall'operatore. Aggiorna l'eventuale prezzo se il servizio non è valorizzato, determina la categoria attività;
-**Ticket**: ticket di riferimento del servizio;
-**Anagrafica impianti**: aangrafica impianti EAM collegata al servizio; 
-**Dipendente**: dipendente associato alla risorsa;
-**Fattura di Anticipo**: Fattura di anticipo presente in un progetto (anche diveso da quello assegnato al servizio) e collegata al servizio, che quindi comporterà l'erosione del residuo della totale fattura di anticipo, oltre al corretto storno in fatturazione;
-**Nota**: eventuali note del cliente. 
-**Fatturabile**: se abilitato identifica il servizio che verrà considerato nel piano di fatturazione. Il valore del flag è definito dai documenti a monte da cui è stato generato, oppure dal progetto, oppure dalla categoria attività;
-**Prezzo Manuale** : flag che identifica se il prezzo proposto da listino o procedure è stato modificato manualmente dall'utente;
-**Attività a valore aggiunto**: flag che identifica i servizi a valore aggiunto, a scopo statistico. Valorizzato in base al progetto, se non presente in base alla configurazione della categoria attività. Può essere modificato manualmente dall'utente. 
+- **Prezzo Unitario**, **Prezzo totale**, **Importo totale**, **Iva**, **Sconti** : dati relativi al prezzo ed all'IVA ottenuti dalle apposite impostazioni di listino del cliente ed articolo;
+- **Risorsa** : risorsa che ha svolto il servizio, di default proposta quella presente in testata, ma comunque modificabile;
+- **Progress percentuale stima del lavoro**: percentuale di lavoro eseguito, aggiorna il valore corrispondente nel progetto;
+- **Fatturato vendite**: fatturato vendite assegnate in base alla priorità dall'anagrafica articolo o anagrafica cliente;
+- **Progetto**: ereditato dalla testata intervento se presente, oppure associato manualmente dall'operatore. Aggiorna l'eventuale prezzo se il servizio non è valorizzato, determina la categoria attività;
+- **Ticket**: ticket di riferimento del servizio;
+- **Anagrafica impianti**: aangrafica impianti EAM collegata al servizio; 
+- **Dipendente**: dipendente associato alla risorsa;
+- **Fattura di Anticipo**: Fattura di anticipo presente in un progetto (anche diveso da quello assegnato al servizio) e collegata al servizio, che quindi comporterà l'erosione del residuo della totale fattura di anticipo, oltre al corretto storno in fatturazione;
+- **Nota**: eventuali note del cliente. 
+- **Fatturabile**: se abilitato identifica il servizio che verrà considerato nel piano di fatturazione. Il valore del flag è definito dai documenti a monte da cui è stato generato, oppure dal progetto, oppure dalla categoria attività;
+- **Prezzo Manuale** : flag che identifica se il prezzo proposto da listino o procedure è stato modificato manualmente dall'utente;
+- **Attività a valore aggiunto**: flag che identifica i servizi a valore aggiunto, a scopo statistico. Valorizzato in base al progetto, se non presente in base alla configurazione della categoria attività. Può essere modificato manualmente dall'utente. 
 
 Sono presenti due ulteriori tab: **Documenti collegati** ed **Extra Data**, liberamente compilabili.
+
+### Priorità assegnazione prezzo alle righe di servizio di un intervento
+
+Il prezzo del progetto ha priorità sul prezzo dal listino, a condizione che ci sia corrispondenza con l’unità di misura e che la riga non sia di tipo note. In seguito sono indicate tutte le condizioni specifiche. 
+
+flag "Prezzo manuale" attivo: non verrà fatto alcun ricalcolo, viene mantenuto il prezzo già assegnato. 
+
+flag "Prezzo manuale" NON attivo, il prezzo verrà assegnato con le priorità illustrate in seguito. 
+
+**1. prezzo da riga di progetto (se il progetto è indicato in riga)**
+
+**2. prezzo da listino** - considerato se non presente il prezzo nel progetto (o non coerente per le unità di misura tra servizio - progetto) 
+
+**3. prezzo di vendita dell'articolo**, considerato se non presente il listino.
+
+:::note[Esempio]
+Intervento con una riga di servizio, codice articolo "SERVIZIO_1" (presente nel listino di vendita del cliente) con orari, quantità e con riferimento a riga progetto.
+
+I prezzi sono configurati a sistema come segue: 
+-	Prezzo vendita in anagrafica articolo SERVIZIO_1, unità di misura GG - 100,00 EUR
+-	Prezzo listino articolo SERVIZIO_1, unità di misura GG - 500,00 EUR
+-	Prezzo da progetto articolo SERVIZIO_1, unità di misura GG – 400,00 EUR
+-	Prezzo da progetto articolo A0001, unità di misura NR - 300,00 EUR
+
+**Riga progetto di tipo note**: la riga di servizio otterrà il prezzo dal listino e nel caso illustrato sarà 500,00 EUR
+
+**Riga progetto di tipo articolo codificato “SERVIZIO_1”**: la riga di servizio otterrà il prezzo dal progetto e nel caso illustrato sarà 400,00 EUR
+
+**Riga progetto di tipo articolo codificato “A0001”**: la riga di servizio otterrà il prezzo dal listino per l’articolo "SERVIZIO_1" e sarà 500,00 EUR, in quanto non c’è corrispondenza con le UM con la riga di progetto. 
+
+**Non è presente un progetto in riga servizio**: la riga di servizio otterrà il prezzo dal listino per l’articolo "SERVIZIO_1" e sarà 500,00 EUR.
+
+**Non è presente un progetto in riga servizio, e l'articolo non c'è nel listino**: la riga di servizio otterrà il prezzo dal prezzo di vendita in anagrafica articolo e sarà 100,00 EUR. 
+
+:::
 
 ## Tab Materiali
 
