@@ -3,6 +3,28 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0011 - 20/02/2026
+
+> -	Bizlink FI : Obrazac PDV for HR localization, passed to v.11 ( TT00770/26)
+> -	CPQ - Risolto problema che genera un’eccezione quando si estrae il tipo di un Extra Data basato su DataSource
+> -	MES - Corretto bug nel report Foglio di Lavoro nel quale venivano visualizzati dei valori con il formato inglese. (#TT00688/26)
+> -	PM - Generazione fatture da interventi - il progetto collegato al servizio riporta CIG e CUP in testata. Le righe della fattura che fanno riferimento a quel progetto avranno riportato il codice CIG CUP negli appositi campi ( #TT03731/25)
+> -	PM - Gestita casistica di intestazione fatture generate da progetti, per cui ora è possibile avere il cliente di fatturazione diverso dal cliente del progetto (#TT00695/26)
+> -	PR - revisione contabilizzazione da riconciliazione bancaria, se si effettuano chiusure partite ora la riga banca importata da file non viene più ricalcolata. (#TT05304/25)
+> -	Rilascio stampa Obrazac PDV versione 11 per localizzazione HR
+> -	SCM - Corretta anomalia che non permetteva l’attivazione dei flag della sezione Stato DDT in fase di creazione di un Nuovo DDT dall’interno di uno esistente. (#TT00667/26)
+> -	SCM - Ordini Fornitore: corretto l’aggiornamento della quantità residua dell’articolo a seguito di utilizzo del pulsante Suddividi quantità in più date di consegna. (#TT00692/26)
+> -	SCM - Registrazione DDT di Acquisto: Risolto errore che si verificava durante il caricamento di un DDT, in presenza del parametro Tralasciare l’articolo senza magazzino e causale. (#TT00768/26)
+> -	SD - Fatture di Vendita: In fase di emissione di una nota di credito mediante la procedura di Storno fatturazione viene ora valorizzato il campo Base liquidazione agenti. (#TT00632/26)
+> -	SD - Inserita la possibilità, nell'importazione WebAPI di picking, DDT e fatture, di evadere le righe ordine inserendo la proprietà OrderItem che trasferisce tutte le proprietà dell'articolo (#TT04674/25)
+> -	SD - Nell'importazione Web API delle fatture di vendita, vengono correttamente inserite le scadenze anche nel caso in cui si inseriscano nel file (#TT00736/26)
+> -	SD - Ordini Cliente: Abilitata la possibilità di aggiungere CIG e CUP alla griglia di ricerca degli ordini di vendita. (#TT00659/26)
+> -	Solved bug to send fiscal invoice to Croatia FiscalAgency Ticket (#TT00641/26)
+> -	WM - Allineato dimensioni note picking a note ordini per evitare troncamenti (#TT00696/26)
+> -	WM - Prototipi - Corretta l’anomalia che, durante la creazione di un nuovo prototipo, non veniva ricalcolato correttamente la componente di costo del materiale. (#TT00666/26)
+> -	WMS - Migliorata risposta del tasto Indietro in form Inventario (#TT00177/26)
+> -	WMS - Ricevimento Merci - Sistemato problema in cui venivano ignorate le condizioni di filtro. (#TT00174/26)
+
 ### Patch 803.0010 - 13/02/2026
 
 > -	CPQ - bugfixing su script di inizializzazione e aggiunta Extra Data ad articoli creati.
