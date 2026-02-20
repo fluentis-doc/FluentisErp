@@ -17,6 +17,7 @@ sidebar_position: 2
 > - MS - Corretto bug in pianificazione generale nel caso in cui venissero
 Rilascio stampa CU2026.  
 > - SH - Configurazione Documenti Elettronici: Corretto anomalia nel salvataggio delle configurazioni per società (rif.ticket 197/26).  
+> - WM - Corretto problema sui movimenti con serial numbers nella conversione da F2015. (#TT04969/25)
 
 ### Patch 608.1-0084 - 19/01/2026
 
