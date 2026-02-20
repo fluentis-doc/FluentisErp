@@ -5,6 +5,24 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0066 - 20/02/2026
+
+> -	
+> -	FI - change D300 - fiscal RO changes add new fields (TT00820/26)
+> -	MES - Corretto bug nel report Foglio di Lavoro nel quale venivano visualizzati dei valori con il formato inglese. (#TT00688/26)
+> -	MS - Corretto bug sul calcolo del tempo di occupazione delle fasi di lavorazione. (#TT05544/25)
+> -	PR - revisione contabilizzazione da riconciliazione bancaria, se si effettuano chiusure partite ora la riga banca importata da file non viene più ricalcolata. (#TT05304/25)
+> -	SCM - Registrazione DDT di Acquisto: Risolto errore che si verificava durante il caricamento di un DDT, in presenza del parametro Tralasciare l’articolo senza magazzino e causale. (#TT00768/26)
+> -	SD - Creazione Fattura da DDT: Se per il cliente risultano Fatture di Acconto non ancora chiuse, la procedura di valorizzazione segnala all’utente la presenza di acconti aperti. (#TT05473/25)
+> -	SD - Evasione DDT e Fatture da ricerca Ordini cliente: Abilitata la proposta automatica dei lotti anche per l’evasione da ricerca ordini, quando il flag Proposta lotti è attivo e la tipologia di prelievo del lotto non è manuale. (#TT05623/25)
+> -	SD - Fatture di Vendita: In fase di emissione di una nota di credito mediante la procedura di Storno fatturazione viene ora valorizzato il campo Base liquidazione agenti. (#TT00632/26)
+> -	SD - Inserita la possibilità di selezionare più articoli nell'Help articoli.Modifications in Item Help and Sales price list widget forms can have an impact on profiles. (#TT02312/24)
+> -	SD - Inserita la possibilità, nell'importazione WebAPI di picking, DDT e fatture, di evadere le righe ordine inserendo la proprietà OrderItem che trasferisce tutte le proprietà dell'articolo (#TT04674/25)
+> -	SD - Nell'importazione Web API delle fatture di vendita, vengono correttamente inserite le scadenze anche nel caso in cui si inseriscano nel file (#TT00736/26)
+> -	SD - Ordini Cliente: Abilitata la possibilità di aggiungere CIG e CUP alla griglia di ricerca degli ordini di vendita. (#TT00659/26)
+> -	WM - Prototipi - Corretta l’anomalia che, durante la creazione di un nuovo prototipo, non veniva ricalcolato correttamente la componente di costo del materiale. (#TT00666/26)
+> -	WM - Registrazioni di Magazzino - Abilitata quantità movimento se UM alternativa specificata. (#TT00802/26)
+
 ### Patch 707.1-0065 - 13/02/2026
 
 > -	FI - Contabilizzazione Compensi ed Enasarco: revisione delle procedure di contabilizzazione dei compensi e dei contributi Enasarco, con revisione delle relative procedure di rollback. (Rif. Ticket TT00330/26)
