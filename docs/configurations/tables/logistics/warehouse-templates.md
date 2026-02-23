@@ -75,7 +75,7 @@ Lo stesso procedimento è valido per la gestione a **Serial Numbers**;
 
 **Distinta base**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag ‘Distinta Base' attivato allora nel momento in cui si salva la riga del movimento, anziché inserire l'articolo selezionato (che deve obbligatoriamente avere una distinta base) vengono inseriti gli articoli di primo livello della distinta base. Viene spesso usato in causali di scarico di contropartita per scaricare i componenti di un articolo caricato dalla causale principale;
 
-**Invantario fisico**: il flag **Inventario fisico** consente di decidere quali siano le causali di magazzino che debbano poter essere selezionabili nei [Parametri differenze inventariali](/docs/configurations/parameters/logistics/stock-difference) come causali da utilizzare nel calcolo delle differenze inventariali. Le registrazioni di magazzino che saranno create automaticamente dalla procedura *Differenze Inventariali* presenteranno in testata causali di questo tipo;
+**Inventario fisico**: il flag **Inventario fisico** consente di decidere quali siano le causali di magazzino che debbano poter essere selezionabili nei [Parametri differenze inventariali](/docs/configurations/parameters/logistics/stock-difference) come causali da utilizzare nel calcolo delle differenze inventariali. Le registrazioni di magazzino che saranno create automaticamente dalla procedura *Differenze Inventariali* presenteranno in testata causali di questo tipo;
 
 **Magazzino di Contropartita**: in questa colonna l'utente può specificare il codice del **Magazzino di contropartita**, attingendo tramite l'apposita combo box alla tabella dei *Magazzini*. Esso non è altro che il magazzino che deve comparire nel tab *Contropartita* della registrazione di magazzino;
 
@@ -97,7 +97,7 @@ Lo stesso procedimento è valido per la gestione a **Serial Numbers**;
 
 **Alternative Miste**: l'attivazione di questo flag avviene in contemporanea al flag *Distinta Base*; se attivo, la procedura scarica contemporaneamente più articoli alternativi fino al completamento della quantità necessaria. Esso è strettamente legato al flag *Alternative*;
 
-**Considera movimenti a zero**: con l'attivazione di questo flag l'utente può decidere quali siano i movimenti di magazzino con quantità pari a zero che debbano concorrere al calcolo del costo medio ponderato degli articoli; questa è l'unica causale che permette di inserire un movimento con quantità pari a zero. Ovviamente il flag viene di solito attivato su casuali che abbiano il flag *Aggiornamento Costo Medio* attivato;
+**Considera movimenti a zero**: l'attivazione di questo flag va abbinato al flag *Aggiorna Costo Medio*; indica che anche i movimenti di magazzino con quantità pari a zero devono concorrere al calcolo se la registrazione ha una causale con questo flag attivo;
 
 **Tracciabilità**: se attivo, indica che i movimenti generati con questa causale verranno usati per la [Tracciabilità dei lotti](/docs/logistics/lots-serial-numbers/lots-register); questa procedura garantisce la possibilità di risalire a quali materiali sono stati impiegati all'interno di un certo prodotto finito oppure, al contrario di capire in quali prodotti finiti è stato utilizzato un certo materiale.
 
