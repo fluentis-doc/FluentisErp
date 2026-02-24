@@ -62,10 +62,15 @@ Nel caso in cui sia necessario avere la possibilità di sovra evadere la quantit
 
 **Parametri carico/scarico** da inserire nella tabella [Parametri Carico/Scarico per utente](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
+
 | Area | Modulo | Form |
 | :-- | :-- | :-- |
-| WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
-| WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
+| WM | Fluentis.FluentisErp.Mvvm.WM.Pickings.ReadWrite.Views | CheckRowManagement |
+| WM | Fluentis.FluentisErp.Mvvm.WM.Pickings.ReadWrite.Views | CheckRowManagement |
+
+:::important Versioni precedenti
+Nelle versioni precedenti di Fluentis il modulo da utilizzare è Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views
+:::
 
 I parametri sono ripetuti poiché la form utilizza una causale di scarico (senza contropartita), per scaricare gli articoli prelevati, ed una di carico per caricarli all’interno delle unità di carico appena create. Per la causale di carico è importante indicare anche una ubicazione di default che verrà utilizzata per caricare l'unità di carico appena creata.    
                                          
@@ -123,7 +128,11 @@ Nel caso in cui sia necessario avere la possibilità di sovra evadere la quantit
 
 | Area | Modulo | Form |
 | :-- | :-- | :-- |
-| WM | Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views | CheckRowManagement |
+| WM | Fluentis.FluentisErp.Mvvm.WM.Pickings.ReadWrite.Views | CheckRowManagement |
+
+:::important Versioni precedenti
+Nelle versioni precedenti di Fluentis il modulo da utilizzare è Fluentis.FluentisErp.Mvvm.WM.ReadWrite.Views
+:::
 
 :::note Nota
 È importante ricordare che la causale utilizzata dovrà essere una causale di scarico con una causale di carico in contropartita.
