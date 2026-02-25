@@ -1,19 +1,30 @@
 ---
-title: Instalare 
+title: Activare vizualizare Fluent pentru MES
+description: Procedură pentru activarea vizualizării Fluent în Fluentis MES și optimizarea interfeței la nivelul utilajului.
+keywords:
+  - Fluentis MES
+  - vizualizare Fluent
+  - modul Fluent
+  - setări interfață
 sidebar_position: 2
+schema: HowTo
+tags:
+  - MES
+  - Interfață
+  - Configurare
+  - Producție
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Pașii pentru instalarea Fluentis MES:  
+# Activare vizualizare Fluent pentru MES
 
-- creați un fișier text care să conțină:
+Pentru a utiliza modulul **Fluent**, proiectat pentru a optimiza vizualizarea **la nivelul utilajului** în Fluentis MES, este necesară configurarea corectă a setărilor interfeței.
 
-```csharp
-<?xml version="1.0" encoding="utf-8" ?>
-<Settings applicationStyle="Fluent"></Settings>
-```
+## Procedura de activare
 
-- redenumiți fișierul creat în "MobileSettings.xml";  
-- copiați fișierul "MobileSettings.xml" în folderul în care se află WPF-ul Fluentis;  
-- creați o nouă conexiune către executabilul Fluentis (aflat în folderul în care a fost salvat fișierul la pasul anterior);  
-- intrați în proprietățile conexiunii creat și modificați calea de *destinație* adăugând la final un spațiu și următorul string: **settingsFile="MobileSettings.xml"**  
-- lansați **Fluentis MES** prin intermediul conexiunii.
+1. Faceți clic pe pictograma **rotiță dințată** situată în partea stângă a ecranului.
+2. Deschideți secțiunea **Setări**.
+3. Selectați **Vizualizare Fluent**.
+
+La finalizarea procedurii, Fluentis se va deschide cu vizualizarea Fluent.
