@@ -5,9 +5,22 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0067 - 26/02/2026
+
+> - FI - Revisionata la gestione della contabilizzazione e del rollback delle scritture di assestamento. (#TT00808/26)  
+> - MES – Corretto bug nell’importazione tramite WebAPI delle dichiarazioni di produzione, nelle quali, nel caso in cui il lotto del materiale importato fosse inesistente, veniva proposto un lotto con la logicaFIFO anche se il tipo prelievo dell’articolo era manuale. Ora, se il tipo prelievo dell’articolo è manuale e nei parametri degli ordini di produzione è attivo il flag “Gestione automatica dei lotti e SN”, in caso di lotto inesistente viene creata la riga materiale senza associare un lotto. (#TT00711/26)  
+> - MES – Corretto bug nel calcolo del costo dell’articolo prodotto tramite la dichiarazione di produzione quando nel ciclo erano presenti fasi esterne prima dell’ultima fase interna. (#TT00748/26)  
+> - MES – Corretto bug nel calcolo del costo dei materiali degli ordini di produzione, che non considerava correttamente le chiusure di magazzino. (#TT00452/26)  
+> - SD – Ottimizzata l’importazione tramite WebAPI dei listini di vendita corposi. Aggiunta la possibilità di effettuare l’update degli articoli per inserirli nel listino. (#TT04887/24, #TT05479/25)  
+> - SD - Se l’utente porta in stato “controllato” e poi “non esaminato” una fattura di vendita creata da DDT, sarà possibile effettuare il rollback dell’operazione per cancellare la fattura. (#TT05405/25)  
+> - SD – Importo ordine di vendita WebAPI: quando avviene l'esecuzione forzatamente, da aggiornare anche ForceExecutedQuantity su articoli di ordine cliente (#TT00825/26)  
+> - SD – Dettaglio righe ordini clienti: corretta la visualizzazione del codice e della descrizione articolo cliente nella griglia dei risultati. (#TT00297/26)  
+> - WM – Prototipi – Corrette le anomalie che non calcolavano correttamente la componente del Costo macchina e quella degli Altri costi. (#TT00716/26)  
+> - WM – Corretta la valorizzazione di “Livello”, “Priorità” e “Articolo Padre” nell’analisi disponibilità con dettaglio distinta base. (#TT00602/26)  
+> - WM – Corretto bug che generava giacenze negative dopo la modifica della registrazione di un movimento di magazzino. (#TT00644/26)
+
 ### Patch 707.1-0066 - 20/02/2026
 
-> -	
 > -	FI - change D300 - fiscal RO changes add new fields (TT00820/26)
 > -	MES - Corretto bug nel report Foglio di Lavoro nel quale venivano visualizzati dei valori con il formato inglese. (#TT00688/26)
 > -	MS - Corretto bug sul calcolo del tempo di occupazione delle fasi di lavorazione. (#TT05544/25)
