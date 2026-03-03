@@ -475,8 +475,14 @@ Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab vengono visualizzati i listini di vendita validi per il contatto, che verranno applicati nei documenti intestati al contatto. In fase di conversione del contatto in cliente, questi dati verranno riportati. 
 
-### 26. Contatti collegati
+### 26. Contatti CRM collegati
 
 Questa è una delle tab dei **Contatti CRM**.
 
 In questa tab vengono visualizzati i contatti collegati al contatto CRM tramite il campo "Contatto Padre". In questo modo è facilmente visibile l'esistenza di eventuali relazioni con altri contatti dell'archivio crm. 
+
+### 27. Contratti collegati
+
+Questa è una delle tab dei **Contatti CRM**.
+
+In questa tab vengono visualizzati i documenti "Contratti" per cui il contatto CRM figura come Contraente oppure come Controparte. 
