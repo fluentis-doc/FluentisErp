@@ -43,3 +43,11 @@ La compensazione può dar luogo, automaticamente, anche ad una scrittura contabi
 Per attivare la contabilizzazione mettere il flag sul campo contabilizzazione in alto in corrispondenza delle tab della maschera ed espandere la sezione per impostare i parametri necessari (in particolare la causale di contabilità)
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation3.png)
+
+### Partite in divisa estera
+
+:::tip[Partite in Divisa estera]
+Per la compensazione di partite in divisa estera è richiesto obbligatoriamente (con apposito messaggio di avviso) di attivare la contabilizzazione, poichè è necessario gestire, anche contabilmente, la differenza cambio che si genera in caso di tassi di cambio diversi.
+
+**ATTENZIONE**: la causale contabile da utilizzare può essere una qualsiasi (si consiglia una causale di prima nota) inquanto non viene utilizzato specificamente lo schema della causale contabile. **E' necessario**, tuttavia che **all'interno della tabella [Divise](/docs/configurations/tables/general-settings/currencies#sezione-inferiore)**, per ogni divisa utilizzata nelle partite da compensare, **siano stati configurati i sottoconti di default per l'utile o la perdita su cambi**.
+:::
