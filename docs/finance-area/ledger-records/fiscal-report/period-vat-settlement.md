@@ -48,11 +48,20 @@ La stampa definitiva abiliterà l'opzione di **contabilizzazione liquidazione** 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image02.png)
 
 
+## Sblocco liquidazione periodica stampata in definitivo.
 
-| Funzione | Significato |
-| --- | --- |
-| Anteprima | Pulsante per eseguire l'anteprima di stampa della liquidazione. |
-| Stampa | Pulsante per eseguire la stampa fisica della liquidazione. |
+<details>
+  <summary> **Come posso sbloccare una liquidazione periodica IVA stampata in definitivo?** Click to expand </summary>
+
+1. Nella form Amministrazione > DICHIARAZIONI > **Versamenti Iva**, dove sono riportati tutti i periodi per i quali è presente la liquidazione in definitivo, selezionare il periodo (anche più di uno) da sbloccare e premere il pulsante ***Cancella Liquidazioni IVA***.
+2. Normalmente, se quando è stata fatta la liquidazione in definitivo, è stata abilitata l'opzione per le scritture automatiche di giroconto, verrà visualizzato un messaggio che conferma la cancellazione automatica dei giroconti. Verrà inoltre mostrato un messaggio di avviso che ricorda di cancellare manualmente il record (per il periodo corrispondente) presente nella form [**Dichiarazione iva periodica**](/docs/finance-area/declarations/declarations/periodical-vat-declaration) che era stato creato automaticamente al lancio della liquidazione in definitivo.
+3. Come riportato al punto precedente cancellare manualmente il record presente nella form **Dichiarazione iva periodica** per il periodo corrispondente a quello sbloccato. Ricordiamo che in questa tabella vengono memorizzati i dati per la gestione dei campi manuali della liquidazione (riporto credito, compensazione ecc...)
+4. Riportare indietro il contatore delle pagine e la data i ultima stampa per il sezionale IVA sul quale vengono stampate le liquidazioni periodiche (generalmente codice RIE in database FastStart). Accedere alla tabella [**Registri IVA**](/docs/configurations/tables/finance/vat-books), localizzare il sezionale da ripristinare (es. *RIE*) e manualmente correggere, per l'anno corrente nella griglia inferiore di dettaglio, i campi **Ultima pagina stampata**, **Data ultima stampa**.
+5. Se le liquidazioni periodiche vengono stampate accodandole ad un sezionale iva ordinario (ad esempio alle vendite o agli acquisti), ed in tutti i casi in cui si necessiti di modificare movimenti iva per i quali, oltre alla liquidazione in definitivo, sono stati stampati in definitivo anche i sezionali, dalla tabella **Registri IVA** premere il pulsante nella ribbon bar **Annulla stampe definitive**. Verrà mostrato un popup dove selezionare e confermare il periodo da sbloccare ed il sezionale iva da sbloccare. Nel caso di sblocco di più periodi per un determinato sezionale, si consiglia di procedere in modo consecutivo e sbloccando tutti gli eventuali periodi intermedi, procedendo dal più recente al più vecchio. Procedere quindi al ripristino manuale dei dati di *ultima pagina stampata, ultima data stampa, ed ultimo protocollo IVA*.
+
+</details>
+
+
 
 
 :::important Vedi Anche
