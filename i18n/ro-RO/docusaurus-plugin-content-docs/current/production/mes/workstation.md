@@ -21,69 +21,67 @@ last_update:
 # Workstation
 
 :::important Utilizare
-Introducerea stațiilor de lucru<!-- workstation --> din **MES Fluentis** este esențială pentru gestionarea eficientă a resurselor și a operațiunilor de producție.  
-Tabelul dedicat permite codificarea stațiilor de lucru<!-- workstation -->, căutarea, modificarea și asocierea acestora la resursele operaționale.
+Tabelul dedicat permite codificarea stațiilor de lucru, căutarea, modificarea și asocierea acestora la resursele operaționale.
 :::
 
-Sistemul oferă o gestionare structurată a stațiilor de lucru<!-- workstation -->, permițând utilizatorilor să:
+Sistemul oferă o gestionare structurată a stațiilor de lucru, permițând utilizatorilor să:
 
 - Introducă noi codificări.
-- Căute stații de lucru<!-- workstation --> existente prin filtre dedicate.
-- Asocieze una sau mai multe resurse<!-- risorse -->.
+- Căute stații de lucru existente prin filtre dedicate.
+- Asocieze una sau mai multe resurse.
 - Influențeze comportamentul de încărcare al MES la pornire, în funcție de resursele asociate.
 
-## Gestionarea stațiilor de lucru<!-- Gestione Workstation -->
+## Gestionara stații de lucru
 
-Tabelul permite gestionarea codificării diferitelor tipuri de *stații de lucru<!-- Workstation -->*.
+Tabelul permite gestionarea codificării diferitelor tipuri de *stații de lucru*.
 
-Permite introducerea de noi înregistrări sau căutarea celor deja existente pentru a le vizualiza, modifica sau șterge.
+Permite introducerea înregistrărilor noi sau căutarea celor deja existente pentru a le vizualiza, modifica sau șterge.
 
-## Căutare stații de lucru<!-- Ricerca Workstation -->
+## Căutare stații de lucru
 
-Formularul de căutare este compus din:  
-- **Zona de filtre<!-- Area filtri -->**: permite setarea criteriilor de căutare.
-- **Grila rezultatelor<!-- Griglia dei risultati -->**: afișează lista stațiilor de lucru<!-- workstation --> găsite.
+Form-ul de căutare este compus din:  
+- **Zona de filtre**: permite setarea criteriilor de căutare.
+- **Tabelul cu rezultate**: afișează lista stațiilor de lucru găsite.
 
-### Procedura de căutare<!-- Procedura di ricerca -->
+### Procedura de căutare
 
 1. Setați filtrele dorite.
-2. Faceți clic pe butonul **Caută<!-- Ricerca -->**.
-3. Vizualizați rezultatele în grilă.
+2. Faceți clic pe butonul **Caută**.
+3. Vizualizați rezultatele în tabel.
 
-## Introducere stație de lucru<!-- Inserimento Workstation -->
+## Inserare stație de lucru
 
 Pentru a crea o nouă codificare:
 
-1. Faceți clic pe primul rând gol din grilă sau apăsați **Nou<!-- Nuovo -->**.
+1. Faceți clic pe primul rând gol din tabel sau apăsați **Nou**.
 2. Completați următoarele câmpuri:
-   - **Cod<!-- Codice -->**: numele PC-ului care va funcționa ca stație de lucru<!-- workstation -->.  
+   - **Cod** și **Descriere**: numele și descrierea calculatorului care va funcționa ca stație de lucru.  
      :::note
      Numele PC-ului poate fi obținut executând comanda `hostname` din promptul de comandă.
      :::
-   - **Descriere<!-- Descrizione -->**: descrierea PC-ului care va funcționa ca stație de lucru<!-- workstation -->.
 
-3. În grila secundară asociați **resursele<!-- risorse -->**.
+3. În tabelul secundar asociați **resursele**.
 
-## Asociere resurse<!-- Associazione risorse -->
+## Asociere resurse
 
-În această grilă este posibilă asocierea *resurselor<!-- risorse -->* care pot lucra pe fiecare stație de lucru<!-- workstation -->.
-- În cazul în care pentru o stație de lucru<!-- workstation --> este asociată o singură resursă (ex. de tip centru de lucru<!-- centro di lavoro -->), la pornire MES va încărca automat acea resursă și toate fazele deja începute asociate acesteia.      
-Exemplu de stație de lucru<!-- workstation --> dedicată unui centru de lucru<!-- centro di lavoro -->.        
-- În cazul în care pentru o stație de lucru<!-- workstation --> sunt asociate mai multe resurse (ex. de tip centru de lucru<!-- centro di lavoro -->), la pornirea MES nu va fi încărcată niciuna dintre ele și utilizatorul va putea selecta doar una dintre resursele asociate.      
-Exemplu de stație de lucru<!-- workstation --> dedicată unui departament unde se vor declara toate centrele de lucru<!-- centro di lavoro --> ale acelui departament.     
-- În cazul în care, însă, pentru o stație de lucru<!-- workstation --> nu este asociată nicio resursă, la pornirea MES nu va fi încărcată niciuna dintre ele și utilizatorul va putea selecta orice resursă introdusă în tabelul [Resurse de producție<!-- Risorse di produzione -->](/docs/production/mes/production-resources).       
-Exemplu de stație de lucru<!-- workstation --> dedicată unui tehnician care va declara activitățile pentru toate centrele de lucru<!-- centro di lavoro -->.
+În acest tabel este posibilă asocierea *resurselor* care pot lucra pe fiecare stație de lucru.
+- În cazul în care pentru o stație de lucru este asociată o singură resursă (ex. de tip centru de lucru), la pornire MES va încărca automat acea resursă și toate fazele deja începute asociate acesteia.      
+Exemplu de stație de lucru dedicată unui centru de lucru.        
+- În cazul în care pentru o stație de lucru sunt asociate mai multe resurse (ex. de tip centru de lucru), la pornirea MES nu va fi încărcată niciuna dintre ele și utilizatorul va putea selecta doar una dintre resursele asociate.      
+Exemplu de stație de lucru dedicată unui departament unde se vor declara toate centrele de lucru ale acelui departament.     
+- În cazul în care, însă, pentru o stație de lucru nu este asociată nicio resursă, la pornirea MES nu va fi încărcată niciuna dintre ele și utilizatorul va putea selecta orice resursă introdusă în tabelul [Resurse de producție](/docs/production/mes/production-resources).       
+Exemplu de stație de lucru dedicată unui operator care va declara activitățile pentru toate centrele de lucru.
 
-## Rezumat și detalii suplimentare<!-- Riepilogo e approfondimenti -->
+## Rezumat și detalii suplimentare
 
-Stațiile de lucru<!-- workstation --> din MES Fluentis permit:
+Stațiile de lucru din MES Fluentis permit:
 
-- Definirea posturilor operaționale utilizate în procesul de producție.
-- Asocierea de resurse<!-- risorse --> individuale sau multiple cu impact direct asupra comportamentului sistemului.
+- Definirea locațiilor operaționale utilizate în procesul de producție.
+- Asocierea de resurse individuale sau multiple, cu impact direct asupra comportamentului sistemului.
 - Automatizarea sau personalizarea încărcării fazelor de producție.
-- Gestionarea fișelor de bază printr-un formular structurat cu funcții de căutare, introducere și modificare.
+- Gestionarea registrelor printr-un form structurat cu funcții de căutare, inserare și modificare.
 
 Pentru detalii suplimentare:
 
-- [Resurse de producție<!-- Risorse di produzione -->](/docs/production/mes/production-resources)  
-- [Funcționalități comune<!-- Funzionalità comuni -->](/docs/guide/common)
+- [Resurse de producție](/docs/production/mes/production-resources)  
+- [Funcționalități comune](/docs/guide/common)
