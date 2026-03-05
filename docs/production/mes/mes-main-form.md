@@ -148,7 +148,7 @@ La tabella contiene i seguenti campi:
 - **Tipo valore**: indica se il valore è di tipo *Testo*, di tipo *Si/No* oppure di tipo *Numerico*;      
 - **Tipo limite**: permette di indicare un *Tipo limite*; si abilita solo se il *Tipo valore* è *Numerico*;       
 - **Valore Unità di misura**: indica l'unità di misura dei valori;           
-- **V*alore nominale**: indica il valore numerico che deve avere la prova;      
+- **Valore nominale**: indica il valore numerico che deve avere la prova;      
 - **Limite minimo** / **Limite massimo**: indicano il limite minimo e massimo di errore che può avere la prova, in percentuale o valore assoluto in base al flag *%*; il *Limite minimo* va sottratto al *Valore nominale*, mentre il *Limite massimo* va sommato;       
 - **L. min (toll-/+)** / **L. Max (toll-/+)**: indica le tolleranze sui limiti minimo e massimo che si aggiungono alle tolleranze precedenti; può essere presente per esempio l'incertezza sull'unità di misura; è un valore percentuale;                
 - **%**: indica se i valori sono espressi in percentuale o sono assoluti;               

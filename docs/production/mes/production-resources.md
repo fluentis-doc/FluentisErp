@@ -85,7 +85,7 @@ se invece non viene dichiarata nessuna quantità, ma solo tempo, allora viene ca
 - **Stampa etichette obbligatoria**: se attivo, abilita un controllo che obbliga l'operatore a stampare tutte le etichette prima di proseguire nell'attività di dichiarazione;    
 - **Difetto obbligatorio se dichiarato scarto**: se attivo, abilita un controllo che obbliga l'operatore ad inserire la tipologia del difetto nel caso in cui inserisca una quantità scartata;    
 - **Registrazione automatica**: se attivo, permette di creare la registrazione di magazzino in maniera automatica alla conferma della dichiarazione;    
-- **Importa tutte le fasi del gruppo**: se attivo, anche l'omonimo flag presente nell'*help fasi* del tab *produzione* del MES risulta attivo di default. In questo modo se l'utente seleziona una fase appartenente ad un gruppo e l'aggiunge, vengono aggiunte anche tutte le altre fasi appartenenti al gruppo.      
+- **Importa tutte le fasi del task**: se attivo, anche l'omonimo flag presente nell'*help fasi* del tab *produzione* del MES risulta attivo di default. In questo modo se l'utente seleziona una fase appartenente ad un task e l'aggiunge, vengono aggiunte anche tutte le altre fasi appartenenti al task.      
 - **Centro di lavoro multi-risorsa**: se attivo, fa si che se viene indicata una *Risorsa* di tipo *Dipendente* e viene dichiarata una fase di lavorazione, questa può essere dichiarata e portata a termine solamente da quella *Risorsa dipendente*. Nel caso in cui fosse necessario un cambio *Risorsa dipendente*, la fase deve essere *Sospesa* indicando una con l'indicazione di [Blocco proposta fase in M.E.S.](/docs/configurations/tables/production/interruption-reasons) per poi essere nuovamente selezionata, tramite il pulsante **Seleziona nuove fasi**, ed effettuata una dichiarazione di ripresa con un'altra *Risorsa dipendente*.          
 
 ### Gestione documentale
@@ -137,7 +137,7 @@ Questa sezione permette di definire se un tab sia visibile o meno, inoltre è po
 Questa sezione permette di nascondere varie informazioni non necessarie all'interno di Fluentis MES.
 
 ### Generale
-- **Gruppo**: se attivo, nasconde le informazioni relative al gruppo;     
+- **Task/Gruppo**: se attivo, nasconde le informazioni relative al task/gruppo;     
 - **Sequenza**: se attivo, nasconde le informazioni relative alla sequenza;     
 - **Sottofase**: se attivo, nasconde le informazioni relative alla Sottofase;     
 - **Centro di lavoro**: se attivo, nasconde le informazioni relative al centro di lavoro;     
