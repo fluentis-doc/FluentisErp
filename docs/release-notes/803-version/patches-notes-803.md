@@ -3,6 +3,54 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0012 - 05/03/2026
+
+> - CO - implementato messaggio di avviso utente quando si cerca di cancellare un nodo in un modello di riclassificazione, se è referenziato in altre parti del modello ( T00842/26)
+> - CO - revisione elaborazione periodi, esclusione delle righe con date competenza nulle (#TT00971/26)
+> - CRM: Introdotto caricamento tra i dati del ticket dell’agente principale del contatto CRM (TT00926/26)
+> - FI - change D300 - fiscal RO changes add new fields ( TT00820/26)
+> - FI - contabilizzazione movimenti di magazzino, revisione gestione descrizione di dettaglio nei movimenti di centro di costo della registrazione contabile (#TT00815/26)
+> - FI - revisione gestione contabilizzazione e rollback scritture di assestamento (#TT00808/26)
+> - Fixed bug when configuring objects containing ExtraData based on DataSource
+> - MES – Corretto bug nel calcolo costo dell’articolo prodotto con la dichiarazione di produzione nel caso in cui nel ciclo fossero presenti fasi esterne prima dell’ultima fase interna. (#TT00748/26)
+> - MES – Corretto bug nel calcolo del costo dei materiali degli ordini di produzione che non considerava correttamente le chiusure di magazzino. (#TT00452/26)
+> - MES – Corretto bug nell’importazione tramite webapi delle dichiarazioni di produzione, nelle quali, nel caso in cui il lotto del materiale importato fosse inesistente, veniva proposto un lotto con la logica fifo anche se il tipo prelievo dell’articolo era manuale. Ora, se cui il tipo prelievo dell’articolo è manuale e nei parametri degli ordini di produzione è attivo il flag Gestione automatica dei lotti e SN, nel caso in cui il lotto del materiale fosse inesistente, verrà creata la riga del materiale ma senza associare un lotto. (#TT00711/26)
+> - MES – Corretto bug nella procedura di Generazione lotto degli ordini di produzione che non generava correttamente l’extension per il nuovo lotto. (#TT00920/26)
+> - MS – Commesse di produzione – Revisionate tutte le procedure che aggiornano la “Data merce pronta” di una Commessa di tipo Indipendente, in quanto la “Data merce pronta” veniva aggiornata alla “Data fine prevista” della Commessa, anche se il parametro dedicato, “Aggiornamento Data merce pronta” presente nei “Parametri MS”, non lo permetteva. (#TT00875/26)
+> - MS - F.C.S. – Corretta l’anomalia che non considerava la disponibilità dei materiali per l’inizio lavori pur indicando tale richiesta nei parametri. (#TT00604/26)
+> - MS – Pianificazione generale – Modifiche attuate:
+    -	corretta l’anomalia che pianificava l’ora di fine e quella di inizio di due ordini di una medesima commessa di livello figlio e padre accavallando gli orari;
+    -	modificata la logica di considerazione della “% di utilizzo centro di lavoro”: antecedente alla modifica la percentuale incrementava il tempo di lavoro giornaliero del relativo Calendario della capacità produttiva; ora è il tempo di lavoro della fase che viene incrementato mantenendo inalterato il periodo di lavoro giornaliero del Centro.
+    - !! Per rendere attive e corrette le variazioni alle procedure di calcolo si rende necessario rigenerare tutti i “Calendari delle capacità produttive” di tutti i Centri di lavoro !! (#TT04940/25)
+> - PM: risolto caso specifico in cui non venivano proposte le spese negli interventi esterni (#TT00956/26)
+> - PM: videata cedolino paghe - risolto caso per cui avendo il profilo impostato come default, non proponeva la risorsa nei filtri attività (#TT00652/26)
+> - PR - Change in SDD file creation ( TT05663/25)
+> - Profili - Corretto il funzionamento dei profili nei documenti che possono avere il tab Documenti Collegati. (rif.ticket 792/26)
+> - Restored font widget for Blockly
+> - Risolto problema integrazione GitHub per credenziali non corrette
+> - RN: corretto problema nella fattura di acquisto (tipo nota di credito) quando veniva impostata una spesa finale di tipo bollo e nelle righe erano presenti prezzi o quantità negative, il messaggio di richiesta di inversione segno della spesa finale non gestiva correttamente il rifiuto di invertire il segno. Rif. Ticket - #TT00726/26
+> - SCM – Documenti di acquisto in entrata: revisione della gestione delle fatture elettroniche con allegati in formato .7zip (Rif. Ticket 878/26)
+> - SD – Creazione Ordine fornitore da Ordine cliente – Sulle righe articolo dell’ordine fornitore vengono ora riportati il magazzino e la causale previsti per il tipo ordine creato. (#TT00889/26)
+> - SD – Dettaglio righe ordini clienti: Corretta la visualizzazione di codice e descrizione articolo cliente nella griglia dei risultati. (#TT00297/26)
+> - SD – Evasione ordini in DDT e Fatture: i centri di costo e ricavo non vengono più riportati anche sulle righe di tipo note in presenza del flag “Ricalcola centri di costo/ricavo”. (#TT00801/26)
+> - SD – Ottimizzata l’importazione Web API dei listini di vendita corposi. Inserita la possibilità di fare update sugli articoli per aggiungerne al listino (#TT04887/24, #TT05479/25)
+> - SD - Se l’utente porta in stato controllato e poi non esaminato una fattura di vendita creata da DDT, sarà possibile effettuare il RollBack dell'operazione per cancellare la fattura. (#TT05405/25)
+> - SD-Importo ordine di vendita WebApi: quando viene l'esecuzione forzatamente, da aggiornare anche ForceExecutedQuantity su articoli di ordine cliente(#TT00825/26)
+> - SH - generazione file F24, revisione campi importo con decimali per separatore virgola (#TT01973/25)
+> - SH - matrice di applicazione tasse, revisione gestione univocità di riga. (#TT00738/26)
+> - Solved bug for form generator widget on script editor
+> - Solved bug to compile Forms from Script
+> - Solved bug to execute Workflow Action Script
+> - Solved bug to invoke global script from Cruscotti
+> - Solved bug to set UI property to MultiTarget widget from script
+> - WM – Analisi Disponibilità con dettaglio distinta base: Corretto mancata valorizzazione colonne se versione di distinta nei componenti vuota. (#TT00602/26)
+> - WM – Corretta valorizzazione “Livello”, “Priorità” e “Articolo Padre” in analisi disponibilità con dettaglio distinta base. (#TT00602/26)
+> - WM – Corretto bug nell’import webapi dell’anagrafica articolo che non veniva correttamente inserito il valore del campo Nomenclatura. (#TT00840/26)
+> - WM - Negative stock resulted after editing warehouse entry registration (#TT00644/26)
+> - WM – Prototipi – Corrette le anomalie che non calcolavano correttamente la componente del Costo macchina e quella degli Altri costi. (#TT00716/26)
+> - WM - Registrazioni di Magazzino – Abilitata quantità movimento se UM alternativa specificata. (#TT00802/26)
+
+
 ### Patch 803.0011 - 20/02/2026
 
 > -	Bizlink FI : Obrazac PDV for HR localization, passed to v.11 ( TT00770/26)
