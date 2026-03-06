@@ -60,21 +60,25 @@ Nella seconda parte della finestra nel tab *Attributi dell’ubicazione* è poss
   
 Inoltre, nell'expander *Parametri* possono essere anche attivati i seguenti flag relativi alla singola ubicazione:
 
-**Mono articolo**: se attivo indica che l’ubicazione è mono articolo; quindi, non sarà possibile movimentare su quell’ubicazione un articolo diverso da quello già presente;
+**Mono articolo**: se attivo indica che l’ubicazione non deve contenere contemporaneamente più articoli.
 
-**Mono lotto**: se attivo indica che l’ubicazione è mono lotto; quindi, non sarà possibile movimentare su quell’ubicazione uno stesso articolo con lotto diverso da quello già presente;
+**Mono lotto**: se attivo indica che l’ubicazione non deve contenere contemporaneamente più lotti.
 
-**Attiva**: se attivo, indica che l’ubicazione è attiva;
+**Attiva**: se attivo, indica che l’ubicazione può contenere materiale, ad esempio ubicazioni non attive possono essere quelle che raggruppano altre ubicazioni;
 
-**Bloccata**: se attivo, indica che l’ubicazione è bloccata (quindi è una giacenza non disponibile);
+**Bloccata**: se attivo, indica che il materiale presente in questa ubicazione non è utilizzabile (tale giacenza risulterà non disponibile);
 
-**Prenotata**: se attivo, indica che l’ubicazione è prenotata;
+**Prenotata**: se attivo, indica che l’ubicazione è di tipo Prenotata;
 
-**Di stock**: se attivo, indica che l’ubicazione è di tipo di stock (usato nelle personalizzazioni);
+**Di stock**: se attivo, indica che l’ubicazione è di tipo Di stock;
 
-**Di pick**: se attivo, indica che l’ubicazione è di tipo di picking (usato nelle personalizzazioni);
+**Di pick**: se attivo, indica che l’ubicazione è di tipo Di pick;
 
-**Obsoleta**: se attivo, indica che l’ubicazione è obsoleta.
+**Obsoleta**: se attivo, indica che l’ubicazione non è più operativa e non va utilizzata.
+
+:::note **ATTENZIONE**
+Ad esclusione dei flag *Attiva* e *Bloccata* questi parametri vanno intesi come descrittivi ed eventuali controlli vanno implementati come personalizzazioni.
+:::
 
 Nel tab **Articoli** è possibile vedere quali sono gli articoli caricati su quell’ubicazione.
 
