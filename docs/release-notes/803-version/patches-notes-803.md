@@ -7,7 +7,7 @@ sidebar_position: 1
 
 > - CO - implementato messaggio di avviso utente quando si cerca di cancellare un nodo in un modello di riclassificazione, se è referenziato in altre parti del modello ( T00842/26)
 > - CO - revisione elaborazione periodi, esclusione delle righe con date competenza nulle (#TT00971/26)
-> - CRM: Introdotto caricamento tra i dati del ticket dell’agente principale del contatto CRM (TT00926/26)
+> - CRM - Introdotto caricamento tra i dati del ticket dell’agente principale del contatto CRM (TT00926/26)
 > - FI - change D300 - fiscal RO changes add new fields ( TT00820/26)
 > - FI - contabilizzazione movimenti di magazzino, revisione gestione descrizione di dettaglio nei movimenti di centro di costo della registrazione contabile (#TT00815/26)
 > - FI - revisione gestione contabilizzazione e rollback scritture di assestamento (#TT00808/26)
@@ -19,16 +19,16 @@ sidebar_position: 1
 > - MS – Commesse di produzione – Revisionate tutte le procedure che aggiornano la “Data merce pronta” di una Commessa di tipo Indipendente, in quanto la “Data merce pronta” veniva aggiornata alla “Data fine prevista” della Commessa, anche se il parametro dedicato, “Aggiornamento Data merce pronta” presente nei “Parametri MS”, non lo permetteva. (#TT00875/26)
 > - MS - F.C.S. – Corretta l’anomalia che non considerava la disponibilità dei materiali per l’inizio lavori pur indicando tale richiesta nei parametri. (#TT00604/26)
 > - MS – Pianificazione generale – Modifiche attuate:
-    -	corretta l’anomalia che pianificava l’ora di fine e quella di inizio di due ordini di una medesima commessa di livello figlio e padre accavallando gli orari;
-    -	modificata la logica di considerazione della “% di utilizzo centro di lavoro”: antecedente alla modifica la percentuale incrementava il tempo di lavoro giornaliero del relativo Calendario della capacità produttiva; ora è il tempo di lavoro della fase che viene incrementato mantenendo inalterato il periodo di lavoro giornaliero del Centro.
-    - !! Per rendere attive e corrette le variazioni alle procedure di calcolo si rende necessario rigenerare tutti i “Calendari delle capacità produttive” di tutti i Centri di lavoro !! (#TT04940/25)
-> - PM: risolto caso specifico in cui non venivano proposte le spese negli interventi esterni (#TT00956/26)
-> - PM: videata cedolino paghe - risolto caso per cui avendo il profilo impostato come default, non proponeva la risorsa nei filtri attività (#TT00652/26)
+>> - corretta l’anomalia che pianificava l’ora di fine e quella di inizio di due ordini di una medesima commessa di livello figlio e padre accavallando gli orari;
+>> - modificata la logica di considerazione della “% di utilizzo centro di lavoro”: antecedente alla modifica la percentuale incrementava il tempo di lavoro giornaliero del relativo Calendario della capacità produttiva; ora è il tempo di lavoro della fase che viene incrementato mantenendo inalterato il periodo di lavoro giornaliero del Centro.
+>> - !! Per rendere attive e corrette le variazioni alle procedure di calcolo si rende necessario rigenerare tutti i “Calendari delle capacità produttive” di tutti i Centri di lavoro !! (#TT04940/25)
+> - PM - risolto caso specifico in cui non venivano proposte le spese negli interventi esterni (#TT00956/26)
+> - PM - videata cedolino paghe - risolto caso per cui avendo il profilo impostato come default, non proponeva la risorsa nei filtri attività (#TT00652/26)
 > - PR - Change in SDD file creation ( TT05663/25)
 > - Profili - Corretto il funzionamento dei profili nei documenti che possono avere il tab Documenti Collegati. (rif.ticket 792/26)
 > - Restored font widget for Blockly
 > - Risolto problema integrazione GitHub per credenziali non corrette
-> - RN: corretto problema nella fattura di acquisto (tipo nota di credito) quando veniva impostata una spesa finale di tipo bollo e nelle righe erano presenti prezzi o quantità negative, il messaggio di richiesta di inversione segno della spesa finale non gestiva correttamente il rifiuto di invertire il segno. Rif. Ticket - #TT00726/26
+> - RN - corretto problema nella fattura di acquisto (tipo nota di credito) quando veniva impostata una spesa finale di tipo bollo e nelle righe erano presenti prezzi o quantità negative, il messaggio di richiesta di inversione segno della spesa finale non gestiva correttamente il rifiuto di invertire il segno. Rif. Ticket - #TT00726/26
 > - SCM – Documenti di acquisto in entrata: revisione della gestione delle fatture elettroniche con allegati in formato .7zip (Rif. Ticket 878/26)
 > - SD – Creazione Ordine fornitore da Ordine cliente – Sulle righe articolo dell’ordine fornitore vengono ora riportati il magazzino e la causale previsti per il tipo ordine creato. (#TT00889/26)
 > - SD – Dettaglio righe ordini clienti: Corretta la visualizzazione di codice e descrizione articolo cliente nella griglia dei risultati. (#TT00297/26)
