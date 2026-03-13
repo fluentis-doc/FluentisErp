@@ -1,34 +1,87 @@
 ---
 title: Rilascio ordini di produzione
+description: Procedura per il rilascio e il ripristino degli ordini di produzione in Fluentis, con gestione dei movimenti di magazzino automatici.
+keywords:
+  - ordini di produzione
+  - rilascio ordini
+  - ripristino ordini
+  - Fluentis ERP
+  - produzione
 sidebar_position: 2
+schema: HowTo
+tags:
+  - produzione
+  - ordini di produzione
+  - magazzino
+  - procedure
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-:::important A cosa serve
-La procedura di **Rilascio degli ordini di produzione** in Fluentis permette di gestire in modo efficiente il passaggio degli ordini dallo stato *Lanciato* a *Esecutivo*. Mediante un'interfaccia intuitiva, è possibile filtrare e selezionare gli ordini da rilasciare, generando al contempo i relativi movimenti di magazzino per il prelievo automatico dei materiali. Inoltre, questa procedura consente di ripristinare ordini già rilasciati, garantendo una flessibilità operativa significativa nel processo produttivo.
+# Rilascio ordini di produzione
+
+:::important
+La procedura di **Rilascio degli ordini di produzione** in Fluentis consente di passare gli ordini dallo stato *Lanciato* allo stato *Esecutivo*.  
+Mediante un'interfaccia intuitiva, è possibile filtrare e selezionare gli ordini da rilasciare, generando al contempo i relativi movimenti di magazzino per il prelievo automatico dei materiali.  
+La stessa procedura permette anche di eseguire il **ripristino** degli ordini già rilasciati, ripristinando lo stato precedente.
 :::
 
-Questa form permette di effettuare il cambio di stato degli ordini di produzione e contemporaneamente creare anche i relativi movimenti di magazzino di scarico di tutti gli articoli che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**.
+Questa form consente quindi di:
+- cambiare lo stato degli ordini di produzione;
+- generare i movimenti di scarico di tutti gli articoli che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**;
+- ripristinare ordini già rilasciati, eliminando i movimenti creati.
+
 
 ## Filtro
 
-In questo tab è possibile visualizzare la lista degli ordini di produzione in stato lanciato che devono essere ancora rilasciati ed è possibile filtrarli attraverso una serie di criteri di selezione. 
+Il tab **Filtro** consente di visualizzare tutti gli ordini di produzione in stato *Lanciato* che devono ancora essere rilasciati.  
+Sono disponibili diversi criteri di selezione per restringere la ricerca.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+### Procedura di ricerca e rilascio
 
-Dopo aver individuato e selezionato gli ordini che si vogliono rilasciare, per procedere bisognerà utilizzare con il pulsante **Rilascio ordini**  presente nella *ribbon bar*, questo permetterà di variare lo stato degli ordini da *Lanciato* ad *Esecutivo* e allo stesso tempo di creare i movimenti di magazzino di scarico di tutti i materiali che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**.
+1. Impostare i criteri di selezione desiderati nel tab **Filtro**.
+2. Fare clic su **Ricerca** nella *ribbon bar* per visualizzare gli ordini nella griglia dei risultati.
+3. Selezionare uno o più ordini da rilasciare.
+4. Fare clic su **Rilascio ordini** per:
+   - aggiornare lo stato degli ordini da *Lanciato* a *Esecutivo*;
+   - generare automaticamente i movimenti di magazzino di scarico di tutti i materiali che hanno, nei [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) dell'articolo, come *Tipo di prelievo* il valore **Automatico**.  
 
 ## Ripristino
 
-In questo tab è possibile eseguire la procedura di ripristino che consente di annullare il rilascio dell'ordine di produzione precedentemente effettuato, ripristinando la situazione antecedente al rilascio stesso, riportando lo stato dell'ordine di produzione a *Lanciato* ed eliminando il relativo movimento di magazzino.
+Il tab **Ripristino** consente di annullare un rilascio già effettuato, riportando l’ordine allo stato precedente ed eliminando i movimenti di magazzino collegati.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.  
+### Funzionamento del tab Ripristino
 
-Tenendo selezionata una delle righe presenti nella griglia di risultato, vengono visualizzati nella griglia sottostante i relativi movimenti di magazzino creati.
+- Dopo aver impostato i filtri, cliccare su **Ricerca**.
+- Gli ordini rilasciati e ripristinabili vengono mostrati nella griglia di risultati.
+- Selezionando una riga, nella griglia di risultati vengono visualizzati nella griglia sottostante i relativi movimenti di magazzino creati.
 
-Per lanciare il ripristino, selezionare uno o più ordini e cliccare il pulsante **Ripristino**. 
+### Procedura di ripristino
 
-Il ripristino dell'ordine di produzione è possibile solo se l'ordine di produzione generato si trova nello stato di *Esecutivo* e non sono ancora state iniziate le relative dichiarazioni di produzione; mentre nel caso in cui sia già *Evaso* non è più possibile eseguire il ripristino dell'ordine di produzione, a meno che non si proceda a ritroso partendo dal rollback della registrazione della dichiarazione di produzione.
+1. Impostare i filtri e avviare la ricerca.
+2. Selezionare uno o più ordini in stato *Esecutivo*.
+3. Cliccare su **Ripristino** per:
+   - riportare lo stato dell’ordine da *Esecutivo* a *Lanciato*;
+   - eliminare i movimenti di magazzino generati al rilascio.
 
-Eseguendo questa procedura, gli ordini ripristinati saranno nuovamente visibili nel tab di **Filtro** dove sarà possibile rieseguire il rilascio.
+### Condizioni per il ripristino
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Il ripristino è possibile solo se:
+- l’ordine si trova nello stato **Esecutivo**;
+- **non** sono state effettuate dichiarazioni di produzione.
+
+Il ripristino **non è possibile** se l’ordine è nello stato *Evaso*, a meno che non si proceda a ritroso partendo dal rollback della registrazione della dichiarazione di produzione.
+
+Gli ordini ripristinati torneranno automaticamente visibili nel tab **Filtro**, da cui potranno essere nuovamente rilasciati.
+
+
+## Riepilogo e approfondimenti
+
+La procedura di **Rilascio ordini di produzione** di Fluentis permette di:
+- gestire il passaggio dallo stato *Lanciato* a *Esecutivo* degli ordini di produzione;
+- generare automaticamente i movimenti di magazzino per il prelievo materiali;
+- ripristinare gli ordini rilasciati quando non ancora dichiarati.
+
+Per approfondire funzionalità correlate:
+- [Parametri MRP degli articoli](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
+- [Funzionalità, pulsanti e campi comuni](/docs/guide/common)
