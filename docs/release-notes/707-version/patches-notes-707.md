@@ -5,6 +5,36 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0068 - 12/03/2026
+
+> - ARM - Corretto il problema di creazione degli indici di tabella.   
+> - CO - Rivista l’elaborazione dei periodi, esclusione delle righe con date competenza nulle. (#TT00971/26) 
+> - CO - Implementato un messaggio di avviso quando si tenta di cancellare un nodo in un modello di riclassificazione che risulta referenziato in altre parti del modello. (#T00842/26)  
+> - FI - Generazione file F24: rivista la gestione dei campi importo con decimali quando è utilizzato il separatore con virgola. (#TT01973/25)  
+> - FI - Risolto un problema di visibilità nel report di stampa della CU 2026 relativamente ai campi della sezione “Dati Previdenziali”. Le modifiche nella form “Certificazione ritenute telematica” possono avere impatto sui profili. (#TT00960/26)  
+> - FI - Nella testata dell’Intrastat acquisti sono stati inseriti due flag per l’abilitazione delle sezioni beni o servizi. La creazione tramite procedure automatiche restituisce un messaggio di conferma relativo all’esclusione delle righe delle sezioni non abilitate; la creazione del file intra esclude le righe presenti in sezioni beni o servizi non attive. Le modifiche nella form Intrastat possono avere impatto sui profili. (#TT00823/26)  
+> - MES - Corretto bug nella registrazione delle dichiarazioni di produzione che non riportava correttamente nel movimento la quantità alternativa (se utilizzata) inserita nel materiale consumato. (#TT01018/26)  
+> - PM - Valorizzazione interventi: nella riga descrittiva in fattura relativa all’intervento viene ora riportata anche la descrizione del tipo intervento, oltre al codice. (#TT00775/26)  
+> - PR - Modifica nella creazione del file SDD. (TT05663/25)  
+> - PR - Risolto errore nella ricerca dei pagamenti fornitori da contabilizzare quando l’oggetto FSSupplierPaymentDetail è personalizzato. (TT00483/26)  
+> - RN - Corretto un problema nella fattura di acquisto (tipo nota di credito): quando veniva impostata una spesa finale di tipo bollo e nelle righe erano presenti prezzi o quantità negative, il messaggio di richiesta di inversione del segno della spesa finale non gestiva correttamente il rifiuto dell’utente. (#TT00726/26)  
+> - SD - Evasione ordini in DDT e Fatture: i centri di costo e ricavo non vengono più riportati sulle righe di tipo “nota” quando è attivo il flag “Ricalcola centri di costo/ricavo”. (#TT00801/26)  
+> - SD - Creazione ordine fornitore da ordine cliente: sulle righe articolo dell’ordine fornitore vengono ora riportati il magazzino e la causale previsti per il tipo ordine creato. (#TT00889/26)  
+> - SD - Offerte multilivello: gestito messaggio bloccante in fase di conversione in ordine quando manca il codice IVA nei materiali. (#TT01031/26)   
+> - SD - WebApi SalesInvoice e POS: corretto l’aggiornamento, evitando la modifica della data con quella corrente. (#TT01107/26)  
+> - SD - Corretto lo storno della fatturazione in presenza di articoli con prezzo negativo. In fase di generazione della nota di credito l’importo viene ora riportato con segno positivo, garantendo la corretta valorizzazione dell’imponibile totale. (#TT01045/26)  
+> - SD - Scarico magazzino da rendita: ottimizzata la chiamata dell’algoritmo UpdateBatchRegister. (#TT01149/26)  
+> - SH - Risolto il problema nel report retrieval, che ora considera anche il campo “itemnature” quando aperto in Report Designer. (TT00903/26)  
+> - SH - Contatti – Indirizzi alternativi: riportata la ragione sociale a 80 caratteri. (#TT01039/26)  
+> - WM - Analisi Disponibilità con dettaglio distinta base: corretta la mancata valorizzazione delle colonne quando la versione di distinta nei componenti era vuota. (#TT00602/26)  
+> - WM - Abilitato il cambio della classe articolo tramite WebAPI. (#TT05186/25)  
+> - WM - Liste di prelievo UDC: aggiunto il nuovo report “Packing list”.  
+> - WM - Distinta Base: corretto l’errato aggiornamento dell’unità di misura nei componenti con UM predefinita.  
+> - WM - Valorizzazione di Magazzino: ora è possibile cancellare movimenti di magazzino che hanno una referenza negli errori di chiusura. (#TT00888/26)  
+> - WM - Piani di Carico: rivista la gestione delle unità di misura in creazione lista UDC. (#TT05221/25)  
+> - WM - Piani di Carico: ripristinata l’evasione ordini cliente in “Rilascio” con la cancellazione del picking. (#TT01008/26)  
+> - ImportPurchasePriceLists - Inserito il nome corretto nella route “ImportPurchasePriceLists”. (#TT01123/26)  
+
 ### Patch 707.1-0067 - 26/02/2026
 
 > - FI - Revisionata la gestione della contabilizzazione e del rollback delle scritture di assestamento. (#TT00808/26)  
