@@ -1,32 +1,86 @@
 ---
-title: Lansare ordine de producţie
+title: Lansare ordine de producție
+description: Procedură pentru lansarea și restaurarea ordinelor de producție în Fluentis, cu gestionarea automată a mișcărilor de stoc.
+keywords:
+  - ordine de producție
+  - lansare ordine
+  - restaurare ordine
+  - Fluentis ERP
+  - producție
 sidebar_position: 2
+schema: HowTo
+tags:
+  - producție
+  - ordine de producție
+  - stoc
+  - proceduri
+last_update:
+  author: Fluentis Documentation Team
+ai_generated: true
 ---
 
-:::important Utilizare
-Procedura permite gestionarea eficientă a tranziției ordinelor de la starea *Lansat* în *Executiv*. Printr-o interfață intuitivă, este posibil să filtrați și să selectați ordinele de lansat, generând în același timp mișcările de gestiune necesare pentru colectarea automată a materialelor. În plus, această procedură permite restabilirea ordinelor deja eliberate, garantând o flexibilitate operațională semnificativă în procesul de producție.
+# Lansare ordine de producție
+
+:::important
+Procedura de **Lansare a ordinelor de producție** în Fluentis permite trecerea ordinelor din starea *Lansat* în starea *În execuție*.  
+Prin intermediul unei interfețe intuitive, este posibil să filtrați și să selectați ordinele care urmează să fie lansate, generând în același timp mișcările de gestiune aferente pentru preluarea automată a materialelor.  
+Aceeași procedură permite și **restaurarea** ordinelor deja lansate, readucându-le la starea anterioară.
 :::
 
-Acest form permite schimbarea stării ordinelor de producție și, simultan, crearea mișcărilor de gestiune pentru descărcarea tuturor articolelor care au în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ai articolului, *Tipul de ieşire* cu valoarea **Automatic**.
+Acest form permite astfel:
+- schimbarea stării ordinelor de producție;
+- generarea mișcărilor de descărcare pentru toate articolele care au în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ai articolului, la *Tip de ieşire* valoarea **Automat**.;
+- restaurarea ordinelor deja lansate, prin ștergerea mișcărilor create.
 
-## Filtru 
+## Filtru
 
-În acest tab este posibilă vizualizarea listei ordinelor planificate care trebuie să fie încă lansate și este posibil să le filtrați folosind o serie de criterii de selecție.
+Tabul **Filtru** permite vizualizarea tuturor ordinelor de producție aflate în starea *Lansat* care trebuie încă lansate.  
+Sunt disponibile mai multe criterii de selecție pentru restrângerea căutării.
 
-După inserarea filtrelor faceți clic pe butonul **Caută** prezent în ribbon bar pentru afișa rezultatele în tabelul rezultatelor.
+### Procedura de căutare și lansare
 
-După ce ați identificat și selectat ordinele pe care doriți să le lansați, utilizați butonul **Lansează ordine** prezent în ribbon bar, acest lucru va permite schimbarea stării ordinelor ddin *Lansat* în *Executiv* și, în același timp, crearea mișcărilor de gestiune pentru descărcarea tuturor materialelor care au în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ai articolului, *Tipul de  ieşire* cu valoarea **Automatic**.
+1. Setați criteriile de selecție dorite în tabul **Filtru**.
+2. Faceți clic pe **Caută** în *ribbon bar* pentru a vizualiza ordinele în tabelul de rezultate.
+3. Selectați unul sau mai multe ordine pentru lansare.
+4. Faceți clic pe **Lansare ordine** pentru a:
+   - actualiza starea ordinelor din *Lansat* în *În execuție*;
+   - genera automat mișcările de gestiune de descărcare pentru toate materialele care au, în [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ai articolului, la *Tip de ieşire* valoarea **Automat**.  
 
-## Restaurare  
+## Restaurare
 
-În acest tab este posibilă executarea procedurii de restaurare care permite anularea ribbon lansării ordinului de producție efectuat anterior, restabilind situația anterioară lansării, readucând ordinul de producție în starea starea *Lansat* și eliminând mișcarea de gestiune corespunzătoare.
+Tabul **Restaurare** permite anularea unei lansări deja efectuate, readucând ordinul la starea anterioară și ștergând mișcările de gestiune asociate.
 
-După inserarea filtrelor faceți clic pe butonul **Caută** prezent în ribbon bar pentru afișa rezultatele în tabelul rezultatelor.
+### Funcționarea tabului Restaurare
 
-Pentru fiecare linie selectată în tabelul de rezultate, mișcările de gestiune corelate sunt afișate în tabelul inferior.
+- După setarea filtrelor, faceți clic pe **Caută**.
+- Ordinele lansate și care pot fi restaurate sunt afișate în tabelul de rezultate.
+- Selectând un rând, în tabelul de rezultate sunt afișate în tabelul de jos mișcările de gestiune aferente create.
 
-Pentru a lansa restaurarea, selectați unul sau mai multe ordine și faceți clic pe butonul **Restaurare**.
+### Procedura de restaurare
 
-Restaurarea ordinului de producție este posibilă numai dacă ordinul de producție generat se află în starea de *În execuţie* și nu au început încă declarațiile de producție corespunzătoare; în cazul în care este deja *Executat*, nu mai este posibilă executarea restaurării ordinului de producție, cu excepția cazului în care se merge înapoi pornind de la rollback-ul înregistrării declarațiilor de producție.
+1. Setați filtrele și porniți căutarea.
+2. Selectați unul sau mai multe ordine în starea *În execuție*.
+3. Faceți clic pe **Restaurare** pentru a:
+   - readuce starea ordinului din *În execuție* în *Lansat*;
+   - șterge mișcările de gestiune generate la lansare.
 
-Executând această procedură, ordinele restaurate vor fi din nou vizibile în tab **Filtru** unde va fi posibil să reexecutați lansarea.
+### Condiții pentru restaurare
+
+Restaurarea este posibilă doar dacă:
+- ordinul se află în starea **În execuție**;
+- **nu** au fost efectuate declarații de producție.
+
+Restaurarea **nu este posibilă** dacă ordinul este în starea *Executat*, cu excepția cazului în care se revine pas cu pas, începând cu rollback-ul înregistrării declarației de producție.
+
+Ordinele restaurate vor deveni automat vizibile în tabul **Filtru**, de unde pot fi lansate din nou.
+
+## Rezumat și detalii suplimentare
+
+Procedura de **Lansare ordine de producție** din Fluentis permite:
+- gestionarea trecerii de la starea *Lansat* la *În execuție* a ordinelor de producție;
+- generarea automată a mișcărilor de gestiune pentru preluarea materialelor;
+- restaurarea ordinelor lansate atunci când nu au fost încă declarate.
+
+Pentru detalii suplimentare despre funcționalități conexe:
+- [Parametrii MRP ai articolelor](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
+- [Funcționalități, butoane și câmpuri comune](/docs/guide/common)
