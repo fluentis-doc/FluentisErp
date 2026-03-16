@@ -5,6 +5,38 @@ sidebar_position: 1
 
 ### Patch 803.0012 - 05/03/2026
 
+> - CO - modifiche nei *cost driver* e nella gestione reparti. (#TT00030/24)  
+> - CO - La duplicazione delle registrazioni extracontabili del controlling ora mantiene le competenze economiche dei movimenti originali. (#TT00981/26)  
+> - FI - In testata dell’Intrastat acquisti sono stati inseriti due flag di abilitazione delle sezioni beni o servizi. La creazione dalle procedure automatiche restituisce un messaggio di conferma dell’esclusione delle righe appartenenti a sezioni non abilitate; la creazione del file intra esclude le righe inserite in sezioni beni o servizi non attive. Le modifiche al form Intrastat possono avere impatto sui profili. (#TT00823/26)  
+> - FI - La contabilizzazione delle scritture di assestamento non assegna più le date di competenza economica per le righe di rettifica. (#TT00789/26)
+> - FI - Revisionata la contabilizzazione acquisti in società con gestione tasse attiva. (#TT00799/26)
+> - FI - Risolto un problema di visibilità nel report di stampa della CU 2026 riguardante i campi della sezione Dati Previdenziali. Le modifiche al form “Certificazione ritenute telematica” possono avere impatto sui profili. (#TT00960/26)  
+> - ImportPurchasePriceLists - Corretto il nome del route “ImportPurchasePriceLists”. (#TT01123/26)  
+> - MES - Corretto bug nella registrazione delle dichiarazioni di produzione che non riportava correttamente, nel movimento, la quantità alternativa (se utilizzata) inserita nel materiale consumato. (#TT01018/26)  > - MES - Ordini di produzione: implementata la possibilità di eseguire l’algoritmo standard di ricalcolo dei costi degli ordini tramite la API operation *RecalculateCosts*.  
+La documentazione è disponibile in Fluentis Integration Documentation, area MES, Production Orders, RecalculateCosts. (#TT00397/26)  
+> - PM - Risolto un caso in cui, per due o più appuntamenti diversi con stesso tipo documento, numero documento, stato documento e range di date, ma con risorse e WBS differenti, l’appuntamento risultava visibile solo per una risorsa. (#TT00951/26)
+> - PM - Valorizzazione interventi: nella riga descrittiva in fattura relativa all’intervento viene ora indicata anche la descrizione del tipo intervento, oltre al codice. (#TT00775/26)  
+> - PR - Risolto errore nella ricerca dei pagamenti fornitori da contabilizzare quando l’oggetto *FSSupplierPaymentDetail* è custom. (#TT00483/26)  
+> - SD - Corretta la gestione dello storno fatturazione in presenza di articoli con prezzo negativo: in fase di generazione della nota di credito, l’importo viene ora riportato con segno positivo, garantendo la corretta valorizzazione dell’imponibile totale. (#TT01045/26)
+> - SD - Scarico magazzino da rendita: Ottimizzata la chiamata dell’algoritmo *UpdateBatchRegister*. (#TT01149/26)
+> - SD - Offerte multilivello: gestito messaggio bloccante in fase di conversione in ordine nel caso di codice IVA mancante nei materiali. (#TT01031/26)
+> - SD - WebApi SalesInvoice e POS: corretto il comportamento di aggiornamento per evitare la modifica automatica della data con la data corrente. (#TT01107/26)
+
+> - SH - Contatti – Indirizzi alternativi: riportata la ragione sociale a 80 caratteri. (#TT01039/26)
+> - SH - Gestione Spese: le spese da anagrafica cliente vengono proposte solo alla creazione di nuovi documenti senza origine. In evasione/valorizzazione, le spese valore vengono trasferite tali e quali; le spese percentuali vengono convertite in importo proporzionale. Le spese omogenee (stesso tipo) provenienti da più documenti vengono sommate. Le variazioni di quantità/prezzi/sconti nel documento evaso richiedono una correzione manuale delle spese; viene mostrato un avviso. (rif. ticket 511/26)
+
+> - WM - Abilitato il cambio classe articolo tramite WebAPI. (#TT05186/25)
+> - WM - Distinta Base: corretto l’errato aggiornamento dell’unità di misura nei componenti con UM predefinita.
+> - WM - Liste di prelievo UDC: aggiunto un nuovo report “Packing list”.
+> - WM - Piani di Carico: ripristino l’evasione degli ordini cliente in stato “Rilascio” con cancellazione del picking. (#TT01008/26)
+> - WM - Piani di Carico: rivista la gestione dell’unità di misura in creazione lista UDC. (#TT05221/25)
+> - WM - Prototipi: corretta l’anomalia che non considerava correttamente la politica di sconto alla proposta “Miglior prezzo di listino fornitore”. (#TT00747/26)
+> - WM - Valorizzazione di Magazzino: ora è possibile cancellare movimenti di magazzino che presentano una referenza negli errori di chiusura. (#TT00888/26)
+
+> - WMS - Corretto bug nelle form WMS di conferma spunta e ricevimento merci che si verificava quando veniva creata una seconda unità di carico. (#TT01128/26)
+
+### Patch 803.0012 - 05/03/2026
+
 > - CO - implementato messaggio di avviso utente quando si cerca di cancellare un nodo in un modello di riclassificazione, se è referenziato in altre parti del modello ( T00842/26)
 > - CO - revisione elaborazione periodi, esclusione delle righe con date competenza nulle (#TT00971/26)
 > - CRM - Introdotto caricamento tra i dati del ticket dell’agente principale del contatto CRM (TT00926/26)
