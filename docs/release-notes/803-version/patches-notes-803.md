@@ -20,19 +20,16 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > - SD - Corretta la gestione dello storno fatturazione in presenza di articoli con prezzo negativo: in fase di generazione della nota di credito, l’importo viene ora riportato con segno positivo, garantendo la corretta valorizzazione dell’imponibile totale. (#TT01045/26)
 > - SD - Scarico magazzino da rendita: Ottimizzata la chiamata dell’algoritmo *UpdateBatchRegister*. (#TT01149/26)
 > - SD - Offerte multilivello: gestito messaggio bloccante in fase di conversione in ordine nel caso di codice IVA mancante nei materiali. (#TT01031/26)
-> - SD - WebApi SalesInvoice e POS: corretto il comportamento di aggiornamento per evitare la modifica automatica della data con la data corrente. (#TT01107/26)
-
+> - SD - WebApi SalesInvoice e POS: corretto il comportamento di aggiornamento per evitare la modifica automatica della data con la data corrente. (#TT01107/26)  
 > - SH - Contatti – Indirizzi alternativi: riportata la ragione sociale a 80 caratteri. (#TT01039/26)
-> - SH - Gestione Spese: le spese da anagrafica cliente vengono proposte solo alla creazione di nuovi documenti senza origine. In evasione/valorizzazione, le spese valore vengono trasferite tali e quali; le spese percentuali vengono convertite in importo proporzionale. Le spese omogenee (stesso tipo) provenienti da più documenti vengono sommate. Le variazioni di quantità/prezzi/sconti nel documento evaso richiedono una correzione manuale delle spese; viene mostrato un avviso. (rif. ticket 511/26)
-
+> - SH - Gestione Spese: le spese da anagrafica cliente vengono proposte solo alla creazione di nuovi documenti senza origine. In evasione/valorizzazione, le spese valore vengono trasferite tali e quali; le spese percentuali vengono convertite in importo proporzionale. Le spese omogenee (stesso tipo) provenienti da più documenti vengono sommate. Le variazioni di quantità/prezzi/sconti nel documento evaso richiedono una correzione manuale delle spese; viene mostrato un avviso. (rif. ticket 511/26)  
 > - WM - Abilitato il cambio classe articolo tramite WebAPI. (#TT05186/25)
 > - WM - Distinta Base: corretto l’errato aggiornamento dell’unità di misura nei componenti con UM predefinita.
 > - WM - Liste di prelievo UDC: aggiunto un nuovo report “Packing list”.
 > - WM - Piani di Carico: ripristino l’evasione degli ordini cliente in stato “Rilascio” con cancellazione del picking. (#TT01008/26)
 > - WM - Piani di Carico: rivista la gestione dell’unità di misura in creazione lista UDC. (#TT05221/25)
 > - WM - Prototipi: corretta l’anomalia che non considerava correttamente la politica di sconto alla proposta “Miglior prezzo di listino fornitore”. (#TT00747/26)
-> - WM - Valorizzazione di Magazzino: ora è possibile cancellare movimenti di magazzino che presentano una referenza negli errori di chiusura. (#TT00888/26)
-
+> - WM - Valorizzazione di Magazzino: ora è possibile cancellare movimenti di magazzino che presentano una referenza negli errori di chiusura. (#TT00888/26)  
 > - WMS - Corretto bug nelle form WMS di conferma spunta e ricevimento merci che si verificava quando veniva creata una seconda unità di carico. (#TT01128/26)
 
 ### Patch 803.0012 - 05/03/2026

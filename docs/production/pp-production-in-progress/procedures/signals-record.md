@@ -1,34 +1,71 @@
 ---
-title: Registrazione dichiarazioni
+title: Registrazione dichiarazioni di produzione
+description: Guida alla registrazione e al ripristino delle dichiarazioni di produzione in Fluentis, con filtri, funzionalità e comandi disponibili.
+keywords:
+  - dichiarazioni di produzione
+  - registrazione produzione
+  - ripristino dichiarazioni
+  - movimenti di magazzino
 sidebar_position: 1
+schema: TechArticle
+tags:
+  - Produzione
+  - Dichiarazioni
+  - Registrazione
+  - Magazzino
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-:::important A cosa serve
-La procedura di registrazione delle dichiarazioni di produzione in Fluentis consente di registrare più dichiarazioni contemporaneamente.
+# Registrazione dichiarazioni di produzione
+
+:::important
+La procedura consente di registrare contemporaneamente più dichiarazioni di produzione e di ripristinare eventuali registrazioni effettuate.
 :::
 
 ## Filtro
 
-In questo tab è possibile visualizzare la lista delle segnalazioni di produzione non ancora registrate ed è possibile filtrarle attraverso una serie di criteri di selezione. 
+In questa sezione è possibile visualizzare l’elenco delle segnalazioni di produzione non ancora registrate e filtrarle tramite diversi criteri di selezione.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+#### Come utilizzare il filtro
 
-*Pulsanti specifici*: 
+1. Impostare i criteri di filtro desiderati.
+2. Cliccare sul pulsante **Ricerca** presente nella *ribbon bar*.
+3. Visualizzare i risultati nella griglia sottostante.
 
-> **Registrazione dichiarazioni**: questo pulsante permette di registrare tutte le dichiarazioni selezionate dall'utente nella griglia sottostante.
+#### Pulsanti specifici
 
+- **Registrazione dichiarazioni**: permette di registrare tutte le dichiarazioni selezionate nella griglia dei risultati.
 
 ## Riepilogativa
 
-In questo tab è possibile ripristinare le registrazioni effettuate ed è possibile filtrarle attraverso una serie di criteri di selezione.
+La sezione *Riepilogativa* permette di consultare e ripristinare le registrazioni già effettuate, applicando filtri di ricerca analoghi alla sezione precedente.
 
-Una volta impostati tutti i filtri desiderati, basterà cliccare sul pulsante **Ricerca** presente nella *ribbon bar* per visualizzare i risultati all'interno della griglia di risultato.
+#### Consultazione dei dati
 
-Selezionando una registrazione, nel tab sottostante **dichiarazioni** è possibile visualizzare le relative dichiarazioni registrate e per ciascuna di esse, nel tab **Registrazione di magazzino**, i relativi movimenti di magazzino.
+1. Impostare i filtri desiderati.
+2. Cliccare su **Ricerca**.
+3. Selezionare una registrazione per visualizzare:
+   - Nel tab **Dichiarazioni**: le dichiarazioni registrate collegate.
+   - Nel tab **Registrazione di magazzino**: i relativi movimenti di magazzino.
 
-*Pulsanti specifici*: 
+#### Pulsanti specifici
 
-> **Cancellazione registrazione dichiarazioni**: questo pulsante permette di ripristinare tutte le dichiarazioni registrate in quella registrazione;          
-> **Ripristino dichiarazione**: questo pulsante permette di ripristinare la singola registrazione selezionata dall'utente nella griglia sottostante, lasciando le altre registrate.
+- **Cancellazione registrazione dichiarazioni**: ripristina tutte le dichiarazioni comprese nella registrazione selezionata.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+- **Ripristino dichiarazione**: ripristina solo la dichiarazione selezionata dall’utente nella griglia sottostante, mantenendo inalterate tutte le altre.
+
+## Riepilogo e approfondimenti
+
+Questa procedura consente di:
+
+- Filtrare e visualizzare segnalazioni di produzione non registrate.
+- Registrare più dichiarazioni contemporaneamente.
+- Consultare dichiarazioni e relativi movimenti di magazzino.
+- Ripristinare una o più dichiarazioni già registrate.
+
+Per approfondire, consulta anche:
+
+- [Segnalazioni di produzione](/docs/guide/production)
+- [Registrazione movimenti di magazzino](/docs/guide/magazzino)  
+- [Funzionalità, pulsanti e campi comuni](/docs/guide/common)
