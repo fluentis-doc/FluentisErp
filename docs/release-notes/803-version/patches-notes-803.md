@@ -3,7 +3,7 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
-### Patch 803.0012 - 05/03/2026
+### Patch 803.0013 - 16/03/2026
 
 > - CO - modifiche nei *cost driver* e nella gestione reparti. (#TT00030/24)  
 > - CO - La duplicazione delle registrazioni extracontabili del controlling ora mantiene le competenze economiche dei movimenti originali. (#TT00981/26)  
