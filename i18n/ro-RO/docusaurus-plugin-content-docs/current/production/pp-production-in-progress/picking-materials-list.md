@@ -13,10 +13,9 @@ tags:
   - producție
   - logistică
   - materiale
-  - picking
+  - dispoziție de livrare
 last_update:
   author: Fluentis Documentation Team
-ai_generated: true
 ---
 
 # Listă ieşiri materiale
@@ -49,7 +48,7 @@ Acest tab permite căutarea dispozițiilor de livrare dorite aplicând filtrele 
 - **Caută materiale**: permite crearea directă a înregistrărilor de gestiune. Dintre toate datele afișate mai jos, referitoare la detaliul fiecărui material, este important de subliniat importanța flagului **Mişc.**, care, dacă este activ, indică faptul că pentru acel material a fost ales *tipul ieşiri cu listă* în *Parametrii MRP* ai articolului. Dacă flagul nu este activ înseamnă că pentru acel material s-a optat pentru t*ipul de ieşire manuală*. (Pentru mai multe detalii despre semnificația acestor tipuri de ieşiri, consultați articolul referitor la [Parametrii MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) ai articolului).  
 - **Caută materiale dispoziție de livrare**: permite crearea dispozițiilor de livrare, deci nu a unor adevărate înregistrări, ci a unor documente de transfer materiale care pot fi vizualizate în fereastra [Dispoziție de livrare](/docs/logistics/picking/search-picking) prezentă în aria logistică. În acest caz, înregistrarea va fi făcută ulterior, după un al doilea control.             
 - **Creează mișcări**: permite, după selectarea materialelor în funcție de tipul de căutare efectuată, crearea mișcărilor de gestiune (descărcarea) sau a dispoziției de livrare.  
-În cazul în care se creează picking-ul, pentru materialele care sunt cu:  
+În cazul în care se creează dispoziția de livrare, pentru materialele care sunt cu:  
 > - *Tip ieșire Cu listă*: vor fi setate șablonul și gestiunea care sunt deja prezente pe linia materialelor din ordinul de producție.  
 > - *Tip ieșire Manuală*: vor fi setate șablonul și gestiunea setate în **Tip dispoziție de livrare** utilizat.  
 
@@ -64,7 +63,7 @@ Selectând un rând sunt afișate:
 
 - **Șterge listă ieşiri**: restaurează simultan atât înregistrările cât și dispozițiile de livrare generate.  
 - **Șterge înregistrări**: restaurează exclusiv înregistrarea de gestiune selectată.   
-- **Șterge picking**: restaurează dispoziția de livrare selectată în tabul **Dispoziții de livrare generate din ieșiri**.
+- **Șterge dispoziția de livrare**: restaurează dispoziția de livrare selectată în tabul **Dispoziții de livrare generate din ieșiri**.
 
 ## Rezumat și detalii suplimentare
 

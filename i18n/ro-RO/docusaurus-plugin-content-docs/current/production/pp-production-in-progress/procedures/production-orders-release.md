@@ -16,7 +16,6 @@ tags:
   - proceduri
 last_update:
   author: Fluentis Documentation Team
-ai_generated: true
 ---
 
 # Lansare ordine de producție
