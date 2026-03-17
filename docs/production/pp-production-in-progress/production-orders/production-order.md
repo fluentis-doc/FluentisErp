@@ -1,40 +1,62 @@
 ---
 title: Ordini di Produzione
+description: Guida completa alla creazione, gestione e configurazione degli ordini di produzione in Fluentis ERP.
+keywords:
+  - ordini di produzione
+  - produzione Fluentis
+  - ciclo di lavoro
+  - distinta base
+  - materiali produzione
+  - fasi lavorazione
 sidebar_position: 3
+schema: TechArticle
+tags:
+  - Produzione
+  - Ordini
+  - Pianificazione
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Normalmente gli ordini di produzione vengono generati automaticamente dalla procedura di *Rilascio ordini di pianificati*.
-Per creare un ordine di produzione manualmente, è necessario creare prima l'ordine pianificato di produzione e poi rilasciarlo tramite la procedura dedicata. 
+# Ordini di Produzione
 
-## Testata ordine di produzione 
+Normalmente gli ordini di produzione vengono generati automaticamente dalla procedura di **Rilascio ordini pianificati**.  
+Per creare manualmente un ordine di produzione è necessario:
 
-In testata vengono riepilogati tutti i dati riguardanti l'ordine di produzione, come: numero, lotto e anno, i dati della commessa e del cliente di riferimento, il progetto collegato, la data inizio e fine, le informazioni relative all’articolo da produrre, con versione distinta base e ciclo, quantità da produrre e prodotta.
-È anche possibile indicare il magazzino e la causale, che saranno usate per il carico del prodotto finito a magazzino; queste avranno priorità massima rispetto a tutti gli altri parametri come spiegato in dettaglio nei [Parametri di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
+1. Creare un ordine pianificato di produzione.
+2. Rilasciarlo tramite l’apposita procedura.
 
-*Pulsante specifico*:  
+## Testata ordine di produzione
 
-> **Completamento dati ordine**: richiama la procedura che consente di inserire e/o aggiornare, per l'articolo inserito nell'ordine di produzione, tutti i dati relativi a materiali, fasi, attrezzaggio, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo e **validi alla data di esecuzione del completamento dati**.         
-> **Ricalcola data inizio**: Richiama la procedura che consente di eseguire un aggiornamento della data inizio dell'ordine di produzione ed eventualmente delle fasi di lavorazione dello stesso a seguito di una modifica dei tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine di produzione.  
-> **Genera distinta base**: consente di generare la distinta base sulla base dei dati inseriti al'interno dell'ordine di produzione o di aggiornare i dati esistenti con quelli inseriti nell'ordine.  
-> **Generazione ciclo di lavoro**: permette di creare il ciclo di lavoro dell'articolo basandosi sui dati inseriti nell'ordine, o di aggiornare i dati esistenti con quelli inseriti nell'ordine. 
+La testata riepiloga tutte le informazioni generali dell’ordine, tra cui:  numero, lotto e anno, i dati della commessa e del cliente di riferimento, il progetto collegato, la data inizio e fine, le informazioni relative all’articolo da produrre, con versione distinta base e ciclo, quantità da produrre e prodotta.
 
-*Campi specifici*: 
+:::important
+Il magazzino e la causale indicati in testata hanno **priorità massima** rispetto agli altri parametri.  
+Vedi: [Parametri di produzione](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
+:::
 
-**Stato**: indica lo stato dell'ordine di produzione: *Lanciato* è lo stato iniziale dell'ordine di produzione appena generato dalla procedura di rilascio ordini pianificati, mentre *Esecutivo* è lo stato da assegnare all'ordine per poi poter procedere con le segnalazioni di produzione.     
+#### Pulsanti specifici
 
-**Tassativo**: abilitando questo flag, si rende l’ordine di produzione tassativo, quindi, la [Schedulazione a capacità finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling) non lo andrà a riposizionare nel tempo e lo manterrà fisso in quelle date. Inoltre, questo verrà preso anche in considerazione dalla procedura [M.R.P.](/docs/planning/ms-master-scheduling/mrp) quando è attivo il flag *Differenzia domanda di produzione confermata*.
+- **Completamento dati ordine**: permette di inserire o aggiornare, per l'articolo inserito nell'ordine di produzione, i dati relativi a materiali, fasi, attrezzaggi, attrezzature, attributi e note varie, riprendendoli da distinta base e ciclo di lavorazione dell'articolo e **validi alla data di completamento dati**.  
+- **Ricalcola data inizio**: aggiorna la data di inizio dell’ordine e delle relative fasi a seguito di modifiche ai tempi di lavorazione e/o della quantità da produrre dell'articolo oggetto di ordine di produzione.  
+- **Genera distinta base**: genera la distinta base sulla base dei dati inseriti al'interno dell'ordine di produzione o aggiorna i dati esistenti con quelli inseriti nell'ordine.  
+- **Generazione ciclo di lavoro**: crea il ciclo di lavoro dell'articolo basandosi sui dati inseriti nell'ordine, o aggiorna i dati esistenti con quelli inseriti nell'ordine.
+
+#### Campi specifici
+
+- **Stato**: indica lo stato dell'ordine di produzione: *Lanciato* è lo stato iniziale dell'ordine di produzione appena generato dalla procedura di rilascio ordini pianificati, mentre *Esecutivo* è lo stato da assegnare all'ordine per poi poter procedere con le segnalazioni di produzione.     
+- **Tassativo**: abilitando questo flag, si rende l’ordine di produzione tassativo, quindi, la [Schedulazione a capacità finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling) non lo andrà a riposizionare nel tempo e lo manterrà fisso in quelle date. Inoltre, questo verrà preso anche in considerazione dalla procedura [M.R.P.](/docs/planning/ms-master-scheduling/mrp) quando è attivo il flag *Differenzia domanda di produzione confermata*.
 
 ## Materiali
 
-In questo tab vengono riportati i materiali di primo livello della distinta base relativa al prodotto finito da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali alla lista componenti dell'ordine di produzione.  
-Per importare i dati direttamente dalla distinta base dell'articolo, è necessario cliccare sul pulsante **Completamento dati ordine** presente nella ribbon bar.
+In questo tab sono elencati i materiali di primo livello della distinta base del prodotto relativa al prodotto finito da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali alla lista componenti dell'ordine di produzione.  
+Per importarli dalla distinta base usare il pulsante **Completamento dati ordine**.
 
-*Pulsanti specifici*:
+#### Pulsanti specifici
 
-> **Inserisci materiale**: consente di inserire un nuovo materiale nella griglia;  
-> **Cancella materiale**: consente di cancellare i materiali inseriti nella griglia. 
+- **Inserisci materiale**: permette di inserire un nuovo materiale nella griglia.  - **Cancella materiale**: permette di cancellare i materiali inseriti nella griglia.
 
-*Campi specifici*:
+#### Campi specifici
 
 **Classe**: Indica la classe dell'articolo;       
 **Codice articolo**: indica il codice dell'articolo;          
@@ -53,25 +75,21 @@ Per importare i dati direttamente dalla distinta base dell'articolo, è necessar
 **Causale**: indica la causale di magazzino con quale verrà scaricato questo articolo;    
 **Priorità**: qui viene visualizzata la priorità del componente, se presente, inserita in [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management). Questa contribuisce all'unicità del materiale, quindi lo stesso materiale può essere inserito più volte con priorità diverse. Inoltre può essere modificata manualmente, come tutti gli altri dati presenti in questa griglia;      
 **Quantità disponibile**: in questo campo compare la quantità disponibile dell'articolo data dalla procedura di **Ricalcola fattibilità** presente in [Sequenza fasi](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown);           
-**Da dichiarare su mobile**: se abilitato, il materiale verrà automaticamente proposto nella form di dichiarazione di produzione presente sul WMS.
+**Da dichiarare su mobile**: se abilitato, il materiale verrà automaticamente proposto nella form di dichiarazione di produzione presente sul WMS
 
 ## Fasi
 
-In questo tab vengono riportate le fasi del ciclo di lavoro relativo al prodotto finito da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori fasi all'ordine di produzione.  
-Per importare i dati direttamente dal ciclo di lavorazione dell'articolo, è necessario cliccare sul pulsante **Completamento dati ordine** presente nella ribbon bar.
+Questo tab riporta le fasi del ciclo di lavoro relativo al prodotto finito da produrre; sono modificabili e integrabili con ulteriori fasi.  
+È possibile trasformare una fase interna in esterna (creando ordine di conto lavoro) o viceversa (con eliminazione automatica dell’ordine CL).  
+Per importare le fasi dal ciclo di lavoro usare il pulsante **Completamento dati ordine**.  
 Nell'ordine di produzione è possibile variare una fase da interna ad esterna, quindi sarà possibile inserire anche il terzista e al salvataggio dello stesso la procedura creerà l'ordine di conto lavoro. Inoltre, nel caso in cui una fase esterna venga convertita in interna, la procedura eliminerà automaticamente l'ordine di conto lavoro collegato.
 
-*Pulsanti specifici*:
-> **Inserisci fase**: consente di inserire una nuova fase nella griglia;  
-> **Cancella fase**: consente di cancellare le fasi inserite nella griglia. 
+#### Campi specifici
 
-*Campi specifici*:
-
-**Codice fase / Fase / Sotto Fase**: con un doppio click si apre il relativo help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase;  
-**Controllo qualità**: se attivato, questo flag indica che questa fase è soggetta a controllo qualità e nel tab specifico si può indicare il *Piano di controllo* che verrà utilizzato per verificare l'articolo a dichiarazione di produzione effettuata;     
-**Fase produttiva**: se attivo, indica che la fase è produttiva e si può procedere all'inserimento delle segnalazioni di produzione (quindi attivandolo si vuole che la produzione per questa fase venga rilevata); se non attivo, non sarà possibile dichiarare la fase stessa;         
-**Fase movimentabile**: se attivo, indica che nel momento in cui si va a rilevare la fase di produzione si creano anche dei movimenti di magazzino; questo significa che procedendo con la segnalazione di produzione di procederà anche al carico del prodotto finito a magazzino e allo scarico della materia prima impiegata per la produzione in quella fase;     
-**Centro di lavoro**: indica il centro di lavoro, ovvero la macchina in cui si svolgerà quella specifica fase;     
+**Codice fase / Fase / Sotto Fase**: con un doppio click si apre il relativo help fasi di lavorazione dal quale si può selezionare la relativa fase e sottofase;  **Controllo qualità**: se attivato, questo flag indica che questa fase è soggetta a controllo qualità e nel tab specifico si può indicare il *Piano di controllo* che verrà utilizzato per verificare l'articolo a dichiarazione di produzione effettuata;  
+**Fase produttiva**: se attivo, indica che la fase è produttiva e si può procedere all'inserimento delle segnalazioni di produzione (quindi attivandolo si vuole che la produzione per questa fase venga rilevata); se non attivo, non sarà possibile dichiarare la fase stessa;  
+**Fase movimentabile**: se attivo, indica che nel momento in cui si va a rilevare la fase di produzione si creano anche dei movimenti di magazzino; questo significa che procedendo con la segnalazione di produzione di procederà anche al carico del prodotto finito a magazzino e allo scarico della materia prima impiegata per la produzione in quella fase;  
+**Centro di lavoro**: indica il centro di lavoro, ovvero la macchina in cui si svolgerà quella specifica fase;  
 **Tempo fisso**: se abilitato, indica che il tempo di quella fase è fisso e quindi non variabile in base alla quantità; questo viene ereditato dal centro di lavoro inserito;     
 **Quantità fase**: indica la quantità totale di pezzi da produrre in quella fase;        
 **Data inizio / fine prevista**: si tratta delle date di inizio e fine della relativa fase; cambiando le Date previste di inizio e fine lavorazione vengono automaticamente modificate anche quest'ultime. Esse vengono calcolate in base i tempi inseriti nelle fasi di lavorazione, e più precisamente in base al maggiore tra il tempo operaio totale e il tempo macchina totale per la fase selezionata;          
@@ -92,7 +110,7 @@ Nell'ordine di produzione è possibile variare una fase da interna ad esterna, q
 
 ### Fasi - Proprietà
 
-Nel tab **Proprietà** sono visualizzati i seguenti dati relativi alla fase selezionata in griglia:
+Nel tab sono visualizzati i seguenti dati relativi alla fase selezionata in griglia:
 
 **Descrizione fase**: indica la descrizione della fase e sottofase selezionata;      
 **Tipo**: in questa combo è possibile impostare il tipo di lavorazione (interna o esterna);  
@@ -116,10 +134,10 @@ Permette di allegare dei documenti alla fase selezionata, i quali saranno poi vi
 
 ## Attrezzaggio
 
-In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase selezionata nel tab precedente.      
-È importante ricordare che i dati inserenti al centro di lavoro, macchina e manodopera, vanno inseriti solamente se sono differenti da quelli usati per la fase, altrimenti se vuoti verranno automaticamente considerati quello della fase principale.  
+Consente di impostare i tempi di attrezzaggio della fase selezionata nel tab precedente.  
+È importante ricordare che i dati inserenti al centro di lavoro, macchina e manodopera, vanno inseriti solamente se sono differenti da quelli usati per la fase, altrimenti se vuoti verranno automaticamente considerati quello della fase principale.
 
-*Campi specifici*:
+#### Campi specifici
 
 **Fase / Sottofase / Descrizione**: in questi campi vengono visualizzate le informazioni relative alla fase che è selezionata nel tab *Fasi*;  
 **Tipo**: indica la tipologia della fase (interna o esterna);  
@@ -141,8 +159,7 @@ In questo tab è possibile definire i tempi relativi all'attrezzaggio della fase
 
 In questo tab, costituito principalmente da una griglia, è possibile definire quali e quante attrezzature dovranno essere utilizzate nella produzione della fase selezionata nel tab *Fasi*. 
 
-*Campi specifici*:
-
+#### Campi specifici  
 **Sequenza**: in questo campo è possibile indicare la sequenza con cui devono essere utilizzate le attrezzature;  
 
 **Attrezzature**: con questa combo box è possibile richiamare il codice dell'attrezzatura, ripreso dall'apposita tabella [Attrezzature](/docs/configurations/tables/production/equipments);  
@@ -174,4 +191,20 @@ In questo tab è possibile inserire gli operatori che dovranno svolgere le singo
 
 Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+## Riepilogo e approfondimenti
+
+La gestione degli ordini di produzione in Fluentis include:
+
+- Creazione automatica o manuale tramite rilascio.
+- Configurazione completa di testata, materiali, fasi e attrezzaggi.
+- Gestione avanzata di ciclo, distinta e modifiche operative.
+- Collegamento con MRP, schedulazione, qualità e MES.
+- Strumenti di supporto come completamento dati, sovrapposizioni e controllo risorse.
+
+Approfondimenti:
+
+- [Distinta base](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)  
+- [Ciclo di lavoro](/docs/erp-home/registers/production/routes/new-route)  
+- [Schedulazione FCS](/docs/planning/ms-master-scheduling/fcs-scheduling)  
+- [MES](/docs/production/mes/mes-intro)  
+- [Funzionalità, pulsanti e campi comuni](/docs/guide/common)

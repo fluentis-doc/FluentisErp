@@ -64,8 +64,5 @@ Această procedură permite:
 - Consultarea declarațiilor și a mișcărilor de gestiune aferente.
 - Restaurarea uneia sau mai multor declarații deja înregistrate.
 
-Pentru detalii suplimentare, consultă:
-
-- [Semnalări de producție](/docs/guide/production)
-- [Înregistrarea mișcărilor de stoc](/docs/guide/magazzino)  
+Pentru detalii suplimentare, consultă:  
 - [Funcționalități, butoane și câmpuri comune](/docs/guide/common)

@@ -64,8 +64,5 @@ Questa procedura consente di:
 - Consultare dichiarazioni e relativi movimenti di magazzino.
 - Ripristinare una o più dichiarazioni già registrate.
 
-Per approfondire, consulta anche:
-
-- [Segnalazioni di produzione](/docs/guide/production)
-- [Registrazione movimenti di magazzino](/docs/guide/magazzino)  
+Per approfondire, consulta anche:  
 - [Funzionalità, pulsanti e campi comuni](/docs/guide/common)
