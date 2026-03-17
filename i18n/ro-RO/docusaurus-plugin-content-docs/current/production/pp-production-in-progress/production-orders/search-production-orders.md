@@ -1,32 +1,47 @@
 ---
-title: Ricerca Ordini di Produzione
+title: Caută Ordine de Producție
+description: Ghid pentru căutarea și gestionarea avansată a ordinelor de producție în Fluentis, cu funcții de generare loturi, modificare stare și completare date.
 sidebar_position: 2
+schema: TechArticle
+tags:
+  - Producție
+  - Ordine
+  - Planificare
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-:::important A cosa serve
-Il modulo per la gestione degli **Ordini di Produzione** di Fluentis è una soluzione dinamica e versatile, pensata per supportare in modo efficace il controllo e la pianificazione delle attività produttive. Direttamente dalla form principale, gli utenti possono gestire ordini in diversi stati, tra cui "Lanciato" ed "Esecutivo", permettendo una chiara distinzione tra gli ordini pronti per l'avvio e quelli già in fase di esecuzione.
+# Caută Ordine de Producție
 
-Una delle funzionalità principali è la possibilità di creare vari lotti a partire da un singolo ordine di produzione, consentendo così una maggiore flessibilità e una gestione più precisa delle quantità da produrre. Ogni lotto può essere associato a dettagli specifici, garantendo così una tracciabilità ottimale. La gestione intuitiva degli ordini non solo semplifica il monitoraggio delle fasi di produzione, ma facilita anche l'adeguamento ai cambiamenti delle esigenze operative, rendendo Fluentis un alleato strategico per l'efficienza produttiva.
+:::important Utilizare
+
+Modulul dedicat gestionării **Ordinelor de Producție** în Fluentis este proiectat pentru a susține eficient activitățile de control și planificare a producției.  
+Din form-ul principal este posibilă vizualizarea și gestionarea ordinelor în diferite stări (de exemplu *Lansat* sau *În execuţie*), făcând ușoară diferențierea între ordinele ce pot fi lansate și cele deja în curs de procesare.
+
+Una dintre funcționalitățile principale este posibilitatea de a crea mai multe loturi pornind de la un singur ordin de producție, permițând astfel o flexibilitate mai mare și o gestionare mai precisă a cantităților de produs. Fiecare lot poate fi asociat cu detalii specifice, asigurând astfel o trasabilitate optimă. Gestionarea intuitivă a ordinelor nu doar simplifică monitorizarea etapelor de producție, ci facilitează și adaptarea la schimbările cerințelor operaționale, făcând din Fluentis un aliat strategic pentru eficiența productivă.
 :::
 
-Il modulo **Ordini di Produzione** consente di gestire gli ordini di produzione.
+Modulul **Ordine de Producție** permite căutarea și gestionarea ordinelor de producție printr-un formular dedicat.
 
 import SearchForm from './../../../import/sections/search-form.md'
 
 <SearchForm />
 
-*Pulsanti specifici*:
+#### Butoane specifice
 
-> **Generazione lotti**: questo pulsante, che si abilita solamente dopo aver selezionato un ordine, permette di creare dei lotti di produzione partendo dalla quantità dell'ordine di produzione stesso; quindi, da la possibilità di creare dei nuovi ordini di produzione con lo stesso numero principale, ma con numero lotto diverso e per ciascuno di essi permette di indicare le quantità da produrre;     
-:::note Nota
-La quantità del lotto di origine non può essere variata nel caso in cui siano già state create delle *Liste di prelievo*, delle *Dichiarazioni di produzione*, oppure nel caso in cui alcuni materiali siano già stati consumati. In questi casi è comunque possibile creare nuovi lotti di produzione, ma senza poter variare la quantità del lotto di origine.          
+- **Generare loturi**: activ doar după selectarea unui ordin, permite crearea de loturi de producție pornind de la cantitatea ordinului de producție; astfel, oferă posibilitatea de a crea noi ordine de producție cu același număr principal, dar cu număr de lot diferit și pentru fiecare dintre acestea se poate indica cantitatea de produs.
+
+Dacă ordinul se află în starea **Executat**, se activează și opțiunea **Menţine referinţa la comanda de producţie**, care permite să se decidă dacă noul lot al ordinului trebuie creat cu referință la proiectul sursă sau nu; în acest caz este important de reținut că proiectul va rămâne în starea *Executat*, deci, dacă este necesar, utilizatorul va trebui să îl redeschidă manual.
+
+:::note Notă
+Cantitatea lotului sursă **nu poate fi modificată** dacă au fost create *Liste de ieșiri*, *Declarații de producție*, sau în cazul în care unele materiale au fost deja consumate.
+
+Este totuși posibilă generarea de noi loturi, dar **fără a modifica cantitatea lotului sursă**.
 :::
-> **Seleziona progetto**: questo pulsante permette di associare un progetto agli ordini di produzione selezionati;    
-> **Ricalcola disponibilità**: questo pulsante di lanciare il calcolo della disponibilità per gli ordini di produzione selezionati;    
-> **Modifica stato ordine**: questo pulsante, che si abilita solamente dopo aver selezionato uno o più ordini, permette di variare lo stato degli ordini selezionati (Lanciato, Esecutivo, Evaso, Storicizzato);     
-> **Completamento dati ordine**: questo pulsante, che si abilita solamente dopo aver selezionato uno o più ordini, permette di rigenerare i dati dell'ordine di produzione, sostituendoli con quelli presenti nella distinta base e nel ciclo di lavoro presenti in anagrafica;    
-> **Ricalcolo costi Ordine di Produzione**: questo pulsante permette di effettuare il ricalcolo dei costi di produzione degli ordini di produzione selezionati.    
 
-
-
-
+> **Selectează proiect**: acest buton permite asocierea unui proiect la ordinele de producție selectate;    
+> **Modifică stare ordin**: acest buton, care devine activ doar după selectarea unuia sau mai multor ordine, permite modificarea stării ordinelor selectate (Lansat, În execuție, Executat, Arhivat);     
+> **Completează date ordin**: acest buton, care devine activ doar după selectarea unuia sau mai multor ordine, permite regenerarea datelor ordinului de producție, înlocuindu-le cu cele prezente în *lista de componente* și în *ciclul de lucru* din registru;    
+> **Recalculează costuri ordine de producţie**: acest buton permite recalcularea costurilor de producție pentru ordinele de producție selectate;            
+> **Activează obligatoriu**: permite activarea opțiunii **Obligatoriu** în toate ordinele de producție selectate;       
+> **Dezactivează obligatoriu**: permite dezactivarea opțiunii **Obligatoriu** în toate ordinele de producție selectate.
