@@ -1,40 +1,61 @@
 ---
-title: Ordine de producție
+title: Ordine de Producție
+description: Ghid complet pentru crearea, gestionarea și configurarea ordinelor de producție în Fluentis ERP.
+keywords:
+  - ordine de producție
+  - producție Fluentis
+  - ciclu de lucru
+  - listă de materiale
+  - materiale producție
+  - faze de lucru
 sidebar_position: 3
+schema: TechArticle
+tags:
+  - Producție
+  - Ordine
+  - Planificare
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-În  mod normal*, ordinele de producție sunt generate automat de procedura de *Lansare ordine planificate*.
-Pentru a crea un ordin de producție manual, este necesar să creați mai întâi ordinul planificat de producție și apoi să-l lansați utilizând procedura dedicată.
+# Ordine de Producție
 
-## 1. Antet
+De obicei, ordinele de producție sunt generate automat de procedura **Lansare ordine planificate**.  
+Pentru a crea manual un ordin de producție este necesar:
 
-În antet sunt prezentate toate datele referitoare la ordinul de producție, precum: numărul, lotul și anul, datele comenzii și ale clientului de referință, proiectul asociat, data de început și sfârșit, informațiile referitoare la articolul de produs, cu versiunea listei componentelor și ciclul, cantitatea de produs și cea produsă.
-Este de asemenea posibilă inserarea gestiunii și șablonului, care vor fi folosite pentru încărcarea produsului finit în gestiune; acestea vor avea prioritate maximă față de toți ceilalți parametri, așa cum este explicat în detaliu în [Parametrii de producție](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
+1. Să creați un ordin planificat de producție.
+2. Să îl lansați cu procedura dedicată.
+
+## Antet ordin de producție
+
+Antetul rezumă toate informațiile generale ale ordinului, printre care: număr, lot și an, datele comenzii și ale clientului de referință, proiectul asociat, data de început și sfârșit, informațiile referitoare la articolul care urmează să fie produs, cu versiunea listei componentelor și a ciclului, cantitatea de produs și cea produsă.
+
+:::important
+Gestiunea și șablonul indicate în antet au **prioritate maximă** față de ceilalți parametri.  
+Vedeți și [Parametri de producție](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
+:::
 
 #### Butoane specifice
 
-> **Completează date ordin**: apelează procedura care permite introducerea și/sau actualizarea, pentru articolul introdus în ordinul de producție, a tuturor datelor referitoare la materiale, faze, echipamente, dotări, atribute și diverse note, preluându-le din lista componentelor și ciclul de lucru al articolului, **valabile la data completării datelor**.
-> **Recalculează data inițială**: apelează procedura care permite actualizarea datei de început a ordinului de producție și, eventual, a fazelor de lucru ale acestuia ca urmare a modificării timpilor de lucru și/sau a cantității de produs a articolului vizat de ordinul de producție.
-> **Generează lista de componente**: permite generarea listei componentelor bazată pe datele introduse în ordinul de producție sau actualizarea datelor existente cu cele introduse în ordin.
-> **Generare ciclu de lucru**: permite crearea ciclului de lucru al articolului bazat pe datele introduse în ordin sau actualizarea datelor existente cu cele introduse în ordin.
+- **Completează date ordin**: permite introducerea sau actualizarea, pentru articolul introdus în ordinul de producție, datelor referitoare la materiale, faze, setări, echipamente, atribute și note diverse, preluându-le din lista componentelor și ciclul de lucru al articolului, **valabile la data completării datelor**.  
+- **Recalculează data inițială**: actualizează data de început a ordinului și a fazelor aferente ca urmare a modificărilor timpilor de lucru și/sau a cantității de produs a articolului din ordinul de producție.  
+- **Generează listă de componente**: generează lista componentelor pe baza datelor introduse în ordinul de producție sau actualizează datele existente cu cele introduse în ordin.  
+- **Generează ciclu de lucru**: creează ciclul de lucru al articolului pe baza datelor introduse în ordin sau actualizează datele existente cu cele introduse în ordin.
 
 #### Câmpuri specifice
 
-**Stare**: indică starea ordinului de producție: *Lansat* este starea inițială a ordinului de producție, abia generat prin procedura de lansare a ordinelor planificate, în timp ce *Executiv* este starea de atribuit ordinului pentru a putea continua cu raportările de producție.
+- **Stare**: indică starea ordinului de producție: *Lansat* este starea inițială a ordinului de producție abia generat de procedura de lansare a ordinelor planificate, în timp ce *În execuție* este starea ce trebuie atribuită ordinului pentru a putea continua cu raportările de producție.     
+- **Obligatoriu**: activând acest flag, ordinul de producție devine obligatoriu. Deci [Planificarea la capacitate finită](/docs/planning/ms-master-scheduling/finite-capacityscheduling) nu îl va repoziționa în timp ci îl va menține fix în acele date. În plus, acesta va fi luat în considerare și de procedura [M.R.P.](/docs/planning/ms-master-scheduling/mrp) atunci când este activ opțiunea *Diferentiază cererea de producție confirmată*.
 
-**Obligatoriu**: activând această opțiune, ordinul de producție devine obligatoriu. Deci [Planificarea la capacitate finită](/docs/planning/ms-master-scheduling/finite-capacityscheduling) nu îl va repoziționa în timp ci îl va menține fix în acele date. În plus, aceasta va fi luată în considerare și de procedura [M.R.P.](/docs/planning/ms-master-scheduling/mrp) atunci când opțiunea *Diferențiază cererea de producție confirmată* este activ.
+## Materiale
 
-## 2. Materiale
-
-În acest tab sunt raportate materialele de prim nivel din listei componentelor referitoare la produsul finit care urmează să fie produs, însă utilizatorul poate modifica datele și/sau adăuga materiale suplimentare la lista de componente a ordinului de producție.
-Pentru a importa datele direct din lista componentelor articolului, este necesar să se facă clic pe butonul **Completează date ordin** prezent în bara de instrumente.
+În acest tab sunt enumerate materialele de prim nivel din lista componentelor a produsului finit care urmează să fie produs, dar utilizatorul poate modifica datele și/sau adăuga materiale suplimentare la lista de componente a ordinului de producție.  
+Pentru a le importa din lista componentelor folosiți butonul **Completare date ordin**.
 
 #### Butone specifice
 
 > **Inserează material**: permite introducerea unui nou material în tabel;
 > **Șterge material**: permite ștergerea materialelor introduse în tabel.
-
-#### Câmpuri specifice
 
 **Clasă**: reprezintă clasa articolului;  
 **Cod articol**: reprezintă codul articolului;
@@ -55,7 +76,7 @@ Pentru a importa datele direct din lista componentelor articolului, este necesar
 **Cantitate disponibilă**: reprezintă cantitatea disponibilă a articolului dată de procedura **Recalculează fezabilitatea** prezentă în [Secvența fazelor](/docs/planning/capacity-requirements-planning/phase-sequences/phase-sequence-topdown);
 **De declarat pe mobil**: dacă este activat, materialul va fi propus automat în formul declarației de producție din WMS.
 
-## 3. Faze
+## Faze
 
 În acest tab sunt raportate fazele ciclului de lucru referitoare la produsul finit care urmează să fie produs, însă utilizatorul poate modifica datele și/sau adăuga faze suplimentare la ordinul de producție.
 Pentru a importa datele direct din ciclul de lucru al articolului, utilizați butonul **Completează date ordin** prezent în bara de instrumente.
@@ -93,7 +114,7 @@ Pentru a importa datele direct din ciclul de lucru al articolului, utilizați bu
 
 ### Faze - Proprietăți
 
-În tabul **Proprietăți** sunt vizualizate datele referitoare la faza selectată în tabel:
+În tab sunt afișate următoarele date referitoare la faza selectată în grilă:
 
 **Descriere fază**: indică descrierea fazei și subfazei selectate;  
 **Tip**: în această combo se poate seta tipul lucrării (intern sau extern);  
@@ -113,59 +134,80 @@ Conține eventualele date suplimentare referitoare la faza selectată.
 
 ### Faze - Documente atașate
 
-Permite atașarea de documente la faza selectată, acestea vor fi vizibile și în [MES](/docs/production/mes/mes-intro).
+Permite atașarea de documente la faza selectată, care vor fi apoi vizibile și în [MES](/docs/production/mes/mes-intro).
 
-## 4. Montaj
+## Setare
 
-În acest tab este posibil să se definească timpii referitori la montajul fazei selectate în tabul anterior.
-Este important de reținut că, datele referitoare la centrul de lucru, mașină și operatori ar trebui introduse doar dacă sunt diferite de cele utilizate pentru fază, altfel dacă sunt goale, acestea vor fi considerate automat ca făcând parte din faza principală.
+Permite inserarea timpilor de setare pentru faza selectată în tabul anterior.  
+Este important de reținut că, datele referitoare la centrul de lucru, mașină și operatori trebuie introduse doar dacă sunt diferite de cele utilizate pentru fază, altfel dacă sunt goale, acestea vor fi considerate automat ca făcând parte din faza principală.
 
 #### Câmpuri specifice
 
-**Fază / Subfază / Descriere**: în aceste câmpuri sunt vizualizate informațiile referitoare la faza care este selectată în tabul *Faze*;
-**Tip**: indică tipologia fazei (internă sau externă);  
-**Tip suprapunere**: indică eventualul tip de suprapunere;
-**UM Timp**: indică unitatea de măsură temporală a fazei;
-**Centru de lucru**: reprezintă codul (și descrierea aferentă) centrului de lucru stabilit pentru montaj; (de utilizat doar dacă centrul de lucru pentru montaj este diferit de centrul de lucru utilizat în faza selectată);
-**Mașină**: reprezintă codul (și descrierea aferentă) mașinii pentru montaj; (de utilizat doar dacă mașina utilizată pentru montaj este diferită de mașina utilizată în faza selectată);
-**Grup manoperă**: reprezintă codul (și descrierea aferentă) grupului de manoperă pentru montaj; (de utilizat doar dacă grupul de manoperă utilizat pentru montaj este diferit de cel utilizat în faza selectată);
-**Valoare**: indică valoarea eventualei suprapuneri;
-**Centru de lucru**: în aceste câmpuri este vizualizat codul și descrierea Centrului de Lucru al fazei selectate;
-**Data început**: este vizualizată data începutului fazei selectate în tabul *Faze*;
-**Data sfârșit**: este vizualizată data de sfârșit a fazei selectate în tabul *Faze*;
-**Timp montaj**: este introdus timpul montajului. Este un timp fix, care nu variază odată cu modificarea cantității de produs în faza selectată;
-**Timp remontaj**: se utilizează în cazul în care este necesară remontarea centrului de lucru între o execuție și alta a fazei respective și se adaugă la timpul de montaj;
-**Număr mașini**: se indică numărul de mașini rezervate pentru montaj;
-**Număr operatori**: se indică numărul de operatori rezervați pentru montaj.
+**Fază / Sub-fază / Descriere**: în aceste câmpuri sunt afișate informațiile referitoare la faza selectată în tabul *Faze*;  
+**Tip**: indică tipul fazei (internă sau externă);  
+**Tip suprapunere**: indică eventualul tip de suprapunere;  
+**UM Timp**: indică unitatea de măsură temporală a fazei;  
+**Centru de lucru**: în aceste câmpuri se introduce codul (și descrierea aferentă) *centrului de lucru* inserat pentru setare; (de utilizat doar dacă centrul de lucru pentru setare este diferit de cel utilizat în faza selectată);      
+**Mașină**: în aceste câmpuri se introduce codul (și descrierea aferentă) mașinii pentru setare; (de utilizat doar dacă mașina utilizată pentru setare este diferită de cea utilizată în faza selectată);        
+**Grup manoperă**: în aceste câmpuri se introduce codul (și descrierea aferentă) grupului de manoperă pentru setare; (de utilizat doar dacă grupul de manoperă utilizat pentru setare este diferit de cel utilizat în faza selectată);         
+**Valoare**: indică valoarea eventualei suprapuneri;  
+**Centru de lucru**: în aceste câmpuri este afișat codul și descrierea centrului de lucru aferent fazei selectate;  
+**Data început**: este afișată data de început a fazei selectate în tabul *Faze*;  
+**Data sfârșit**: este afișată data de sfârșit a fazei selectate în tabul *Faze*;  
+**Timp setare**: se introduce timpul de setare. Este un timp fix, care nu variază în funcție de cantitățile de produs din faza selectată;  
+**Timp resetare**: se introduce timpul de resetare. Se utilizează în cazul în care este necesară resetarea centrului de lucru între două execuții ale aceleiași faze și se adaugă la timpul de setare;           
+**Număr mașini**: se indică numărul de mașini utilizate pentru setare;  
+**Număr operatori**: se indică numărul de operatori utilizați pentru setare.
 
-## 5. Echipamente
+## Echipamente
 
 Acest tab permite inserarea echipamentelor care trebuie să fie utilizate în producția fazei selectate în tabul *Faze*.
 
-#### Câmpuri specifice
+#### Câmpuri specifice  
+**Secvență**: în acest câmp se poate indica secvența în care trebuie utilizate echipamentele;  
 
-**Secvență**: în acest câmp se inserează secvența în care trebuie folosite echipamentele;  
-**Echipamente**: reprezintă codul echipamentului, preluat din tabelul [Echipamente](/docs/configurations/tables/production/equipments);  
+**Echipamente**: se poate apela codul echipamentului, preluat din tabelul  [Echipamente](/docs/configurations/tables/production/equipments);  
+**Planificat**: dacă este activ, indică faptul că echipamentul va fi ocupat în timpul producției; cu acest flag, [Planificarea F.C.S.](https://docs.fluentis.com/FluentisErp/docs/planning/ms-master-scheduling/fcs-scheduling) va lua în considerare nu articolul introdus prin lista de echipamente, ci articolul introdus în câmpurile clasă și cod, care trebuie să aibă ca *Natura articol* tipul *Echipament* sau *Unealtă*;          
+**De reordonat**: dacă este activ, procedura de [Planificare F.C.S.](https://docs.fluentis.com/FluentisErp/docs/planning/ms-master-scheduling/fcs-scheduling) va crea un ordin planificat pentru aprovizionarea echipamentului respectiv în cazul în care nu este disponibil; dacă nu este activ, înseamnă că acel echipament nu trebuie reordonat, ci poate fi utilizat repetat în funcție de disponibilitatea sa (de exemplu, o matriță);            
 **Clasă/Cod articol**: reprezintă clasa și codul articolului (helpul filtrează automat doar articolele care sunt identificate drept *Echipamente* în câmpul *Natura Articol*);  
 **Variantă**: reprezintă varianta articolului;  
 **Cantitate**: reprezintă cantitatea articolului.
+**Lot**: indică lotul articolului;  
+**Număr de serie**: indică numărul de serie al articolului.  
 
-## 6. Control calitate
+## Control calitate
 
 Acest tab afișează detaliile testelor planificate de [controlul de calitate](/docs/quality/quality-intro) pentru fază/subfază.
 
-## 7. Notă fază
+## Notă fază
 
-În acest tab este vizualizată nota asociată fazei de lucru selectate în tabul *Faze*. 
+În acest tab este vizualizată nota asociată fazei de lucru selectate în tabul *Faze*. Poate fi modificată de utilizator în ordin de producție.
 
-## 8. Instrucțiuni operative
+## Instrucțiuni operative
 
-În acest tab sunt afișate *Instrucțiunile operative* referitoare la faza de lucru selectată în tabul *Faze*. Acestea vor fi vizualizate și în [Fluentis MES](/docs/production/mes/mes-intro).
+În acest tab se pot atașa și vizualiza *Instrucțiunile operative* legate de faza de lucru selectată în tabul *Faze*. Acestea vor fi vizibile și în [Fluentis MES](/docs/production/mes/mes-intro). 
 
-## 9. Angajați
+## Angajați
 
-În acest tab se inserează operatorii care trebuie să realizeze fazele individuale ale ciclului de producție. (*Acest lucru este utilizat doar pentru personalizări*).
+În acest tab se pot introduce operatorii care vor efectua fazele individuale ale ciclului de producție. (*Se utilizează doar pentru personalizări*).    
 
-## 10. Extra Data
+## Extra Data
 
-Pentru o descrierea detaliată a acestora consultați documentul [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
+Pentru descrierea detaliată a datelor suplimentare, consultați articolul [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
+
+## Rezumat și detalii suplimentare
+
+Gestionarea ordinelor de producție în Fluentis include:
+
+- Creare automată sau manuală.
+- Gestionare avansată a ciclului, listei componentelor și modificărilor operative.
+- Legătură cu MRP, planificare, calitate și MES.
+- Instrumente de suport precum completare date, suprapuneri și control resurse.
+
+Detalii suplimentare:
+
+- [Listă de componente](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)  
+- [Ciclu de lucru](/docs/erp-home/registers/production/routes/new-route)  
+- [Planificare FCS](/docs/planning/ms-master-scheduling/fcs-scheduling)  
+- [MES](/docs/production/mes/mes-intro)  
+- [Funcționalități, butoane și câmpuri comune](/docs/guide/common)
