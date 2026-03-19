@@ -1,32 +1,33 @@
 ---
-title: Foglio di lavoro
-description: Report di stampa del foglio di lavoro per ordini di produzione e fasi, con gestione dei flag di stampa.
+title: Foaie de lucru
+description: Raport de tipărire a foii de lucru pentru ordinele de producție și faze, cu gestionarea flagurilor de tipărire.
 keywords:
-  - foglio di lavoro
-  - ordini di produzione
-  - fasi di produzione
-  - stampa report
+  - foaie de lucru
+  - ordine de producție
+  - faze de producție
+  - tipărire raport
 sidebar_position: 1
 schema: TechArticle
 tags:
-  - produzione
-  - reportistica
-  - stampe
-  - procedure
+  - producție
+  - raportare
+  - tipăriri
+  - proceduri
 last_update:
   author: Fluentis Documentation Team
+ai_generated: true
 ---
 
-# Foglio di lavoro
+# Fișă de lucru
 
-Questa form consente di stampare il report del **Foglio di lavoro** degli ordini di produzione o direttamente le fasi (se considero il centro di lavoro).  
-L’utente può quindi scegliere se generare la stampa per *intero ordine di produzione*, oppure per *singola fase dell’ordine*.
+Acest form permite tipărirea raportului **Fișă de lucru** pentru ordinele de producție sau direct pentru faze (dacă se ia în considerare centrul de lucru).  
+Utilizatorul poate alege astfel dacă să genereze tipărirea pentru întregul *ordin de producție*, sau pentru fiecare*faza a ordinului*.
 
-## Funzionamento della stampa
+## Funcționare raport
 
-Al momento dell'avvio della stampa, il sistema applica automaticamente il flag **Già stampato** per ciascuna fase o ordine di produzione stampato.
+La momentul lansării tipăririi, sistemul aplică automat flagul **Deja tipărit** pentru fiecare fază sau ordin de producție tipărit.
 
-## Stampa definitiva
+## Raport definitiv
 
-All’interno della sezione **Filtro fogli già stampati** è presente il flag **Definitiva** → se attivato, il sistema imposta il flag **Stp. def.** sulla riga della fase dell’ordine di produzione.  
-Questo indica che la stampa del foglio di lavoro è stata effettuata in modalità **definitiva**, distinguendola dalle stampe di controllo.
+În secțiunea **Filtru fișe deja tipărite** este prezent flagul **Definitivă** → dacă este activat, sistemul setează flagul **Rap. def.** pe linia fazei ordinului de producție.  
+Acest lucru indică faptul că tipărirea fișăde lucru a fost efectuată în modul **definitiv**, distingând-o de tipăririle de control.
