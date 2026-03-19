@@ -48,11 +48,18 @@ NOTA: la comunicazione eseguita in questa modalità si appoggia sulla preventiva
 
 - In alternativa il tracciato può essere **inviato allo SDI** attraverso l'apposito workflow di Fluentis Business Hub presente nella form.
 
+:::note[Flag Esportata e Blocco dei dati]
+Utilizzando il comando **Esporta** viene aggiornato il flag ***Esportata*** ed i dati diventano non modificabili. Il flag può essere comunque rimosso manualmente.
+
+Nel caso sia utilizzato il workflow per invio SDI il flag viene attivato passando allo stato *Da Spedire*. In questo caso non può essere resettato manualmente. Se la comunicazione sarà scartata dallo SDI e notificata all'utente tramite lo stato *Non conforme*, l'utente riporterà, come previsto, la comunicazione allo stato iniziale per le opportune correzione e nuovo invio. Passando allo stato iniziale *Non esaminata*, il flag potrà essere disattivato per procedere allo sblocco de dati ed eseguire le opportune correzioni. 
+:::
+
+
 **ATTENZIONE**:
 
 La corretta elaborazione dei dati proposti dalla procedura di calcolo, in modo che siano conformi al risultato delle varie** [liquidazioni periodiche iva](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement) **,  dipende in particolare dalla corretta attivazione / abilitazione, ai fini del calcolo, dei vari codici iva utilizzati nelle registrazioni contabili.
 
-Per verificare il corretto settaggio aprire la tabella ** [aliquote / modialità iva](/docs/configurations/tables/finance/vat-rates) ** e verificare in particolare la colonna relativa al flag in dichiarazione iva.
+Per verificare il corretto settaggio aprire la tabella ** [aliquote / modalità iva](/docs/configurations/tables/finance/vat-rates) ** e verificare in particolare la colonna relativa al flag in dichiarazione iva.
 
 ![](/img/it-it/finance-area/declarations/declarations/periodic-vat-calculation/image01.png)
 
