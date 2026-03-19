@@ -5,13 +5,13 @@ sidebar_position: 4
 
 Dalla presente form è possibile gestire l'adempimento fiscale (introdotto dall'art. 21-bis del D.L. 193/2016 a decorrere dall'anno 2017) che prevede l'invio telematico di una comunicazione dei dati riepilogativi delle liquidazioni periodiche iva (mensili o trimestrali).
 
-Tramite il tasto **Ricerca** presente nella ribbon bar è possibile visualizzare la lista delle comunicazioni già elaborate. E' possibile modificarle (tasto **Modifica**) oppure eliminarle (tato **Elimina**) o semplicemente visualizzarle (tasto **Visualizzazione**).
+Tramite il tasto **Ricerca** presente nella ribbon bar è possibile visualizzare la lista delle comunicazioni già elaborate. E' possibile modificarle (tasto **Modifica**) oppure eliminarle (tasto **Elimina**) o semplicemente visualizzarle (tasto **Visualizzazione**).
 
 Per inserire una nuova comunicazione premere il tasto **Nuovo**.
 
 **PROCEDURA DI INSERIMENTO**:
 
-- indicare l'**Anno** oggetto di comunicazione ed il numero del **Trimestre** da dichiarare. A questo punto il programma procederà a verificare se esite già una dichiarazione per questo periodo ed in caso negativo (in caso contrario viene visualizzato un avviso) procede a creare automaticamente il nome da assegnare al file telematico ed a visualizzare le tab relative ai tre mesi del trimestre con i relativi righi corrispondenti al modello ministeriale.
+- indicare l'**Anno** oggetto di comunicazione ed il numero del **Trimestre** da dichiarare. A questo punto il programma procederà a verificare se esiste già una dichiarazione per questo periodo ed in caso negativo (in caso contrario viene visualizzato un avviso) procede a creare automaticamente il nome da assegnare al file telematico ed a visualizzare le tab relative ai tre mesi del trimestre con i relativi righi corrispondenti al modello ministeriale.
 
 - compilare gli altri campi della testata:
 
@@ -44,7 +44,9 @@ NOTA: la comunicazione eseguita in questa modalità si appoggia sulla preventiva
 
 - Premere **Calcola** trimestre per eseguire il calcolo dei dati dei tre mesi del trimeste. A questo punto i campi saranno compilati in automatico, tuttavia è sempre possibile editarli manualmente per eventuali correzioni. Attenzione: se verrà premuto nuovamente Calcola verranno ripristinati i dati calcolati dal sistema.
 
-- Premere il tasto **Esporta** per generare e memorizzare nella gestione docuumentale di Fluentis il file telematico in formato .xml. Sarà quindi possibil selzionarlo premendo il tasto della gestione documentale direttamemte dalla form in commento e procedere a salvare una copia del file sul proprio pc per l'invio telematico o la trasmissione all'intermediario abilitato. E' possibile anche procedere ad una stampa cartacea (o visione in anteprima) dei dati su modello ministeriale.
+- Premere il tasto **Esporta** per generare e memorizzare nella gestione documentale di Fluentis il file telematico in formato .xml. Sarà quindi possibile selezionarlo premendo il tasto della gestione documentale direttamente dalla form in commento e procedere a salvare una copia del file sul proprio pc per l'invio telematico o la trasmissione all'intermediario abilitato. E' possibile anche procedere ad una stampa cartacea (o visione in anteprima) dei dati su modello ministeriale.
+
+- In alternativa il tracciato può essere **inviato allo SDI** attraverso l'apposito workflow di Fluentis Business Hub presente nella form.
 
 **ATTENZIONE**:
 
