@@ -21,7 +21,7 @@ ai_generated: true
 # Fișă de lucru
 
 Acest form permite tipărirea raportului **Fișă de lucru** pentru ordinele de producție sau direct pentru faze (dacă se ia în considerare centrul de lucru).  
-Utilizatorul poate alege astfel dacă să genereze tipărirea pentru întregul *ordin de producție*, sau pentru fiecare*faza a ordinului*.
+Utilizatorul poate alege astfel dacă să genereze tipărirea pentru întregul *ordin de producție*, sau pentru fiecare *faza a ordinului*.
 
 ## Funcționare raport
 
