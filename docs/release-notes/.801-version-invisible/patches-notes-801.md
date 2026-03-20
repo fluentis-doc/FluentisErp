@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ### Patch 801.0035 - 19/03/2026
 
-Framework - Corrette alcune anomalie che si presentavano nella gestione dei filtri sugli oggetti in memoria e nella gestione degli extra degli articoli duplicati.
+> -	Framework - Corrette alcune anomalie che si presentavano nella gestione dei filtri sugli oggetti in memoria e nella gestione degli extra degli articoli duplicati.
 
 ### Patch 801.0034 - 13/02/2026
 
