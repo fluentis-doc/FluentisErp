@@ -3,6 +3,34 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0014 - 23/03/2026
+
+> -	BI - Switchboards: Fix call actions of algorithm type. Rif. #TT01175/26
+> -	FI - aggiunto un controllo sull’avvenuta esportazione del tracciato telematico per la comunicazione trimestrale liquidazioni iva che blocca la form dalla modifica dei dati già esportati. Modifications in Periodic VAT calculation form can have impact on profiles.( TT00972/26)
+> -	FI - Corretta esportazione del tracciato telematico certificazioni uniche delle ritenute d’acconto che non incrementava correttamente la numerazione delle righe dopo la centesima posizione.( TT01198/26)
+> -	FI - revisione contabilizzazione fattura con gestione partite d’acconto, in caso di spese bollo (o altre) aggiuntive ora viene creata una partita separata per l’importo relativo (#TT00891/26)
+> -	FI - revisione form di acquisizione automatica intrastat, disabilitazione pulsante di ricerca finché la ricerca automatica non si conclude. (#TT01022/26)
+> -	FI - revisione rollback contabilizzazione per messaggi di blocco non restituiti in interfaccia. (#TT01228/26)
+> -	FI - Risolto problema di visibilità nel report di stampa della CU 2026 dei campi relativi alla sezione Dati Previdenziali. Rif. #TT00960/26
+> -	FI- Solving Customization issue regarding FsCostCenter with the extension table procedure (#TT01051/26)
+> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione riguardo al tag QuantityProduced (#TT01226/26).
+> -	MES - Gestione ordini produzione - bug fix per inserire fase esterne (#TT01192/26)
+> -	MS - AFCS, un task su macchina con regola attrezzaggio può essere messo in produzione anche se i materiali necessari non sono completamente disponibili a magazzino (#TT01282/26).
+> -	MS - AFCS: le giacenze negative vengono ignorate se il relativo flag nei parametri MRP è attivo (#TT01156/26).
+> -	MS - Aggiunta indicazione dell’articolo mancante quando un task su macchina con regola attrezzaggio non può essere lavorato (#TT01232/26)
+> -	PM - progetti - servizio di caricamento campi - abilitato caricamento dati anagrafica articolo - parametri MRP. Potranno quindi essere abilitati gli appositi campi nella load request affinchè siano visibili nelle righe progetto (#TT01286/26)
+> -	PR - Modificato algoritmo di importazione file cbi per i movimenti bancari per considerare tutti i possibili caratteri di controllo LF e CRLF ( TT01009/26)
+> -	PR - revisione dimensione campo FSDocFinancePostingImportError.Line (fluentis.PR_DocFinancePostingImportErrors.PRDFPIE_Line). (#TT01049/26)
+> -	SD - Numerazione ddt di conto lavoro, ddt di vendita, corretto errore di numerazione nel caso in cui Progressione data numero sia attivo. (#TT00598/26)
+> -	SD: Conversione offerta in ordine e progetto, gestita propagazione IBAN impostato nella tab pagamenti dell’offerta, anche nella tab pagamenti del progetto (#TT01141/26)
+> -	SH - Anagrafica cliente - Tab Listini: impedito di poter specificare nella stessa riga sia un listino generale che un listino per cliente. (rif.ticket 1264/26)
+> -	SH - Gestione matrice applicazione tasse, revisione per società e partner non EU (#TT01182/26, #TT01326/26)
+> -	WM - GetItemsStock: Aggiunte request property per unità di misura alternativa. (#TT00959/26)
+> -	WM - In fase di creazione ddt/fattura da packing list ora viene riportato correttamente sulla riga dell’articolo il valore presente nel campo Vostro numero riferimento dell’ordine cliente. ( #TT01259/26)
+> -	WM - Mappa Ubicazioni per articolo: Corretto errore in inserimento nuove mappature. (#TT00612/26)
+> -	WM - WebApi PickingWarehousePosting: Impostato messaggio Success in caso di completamento senza errori. (#TT01179/26)
+> -	WMS - Corretto problema in messaggio di errore in WMS per cui i comandi per visualizzare i dettagli e l’invio o meno dell’errore non funzionavano.
+
 ### Patch 803.0013 - 16/03/2026
 
 > - CO - modifiche nei *cost driver* e nella gestione reparti. (#TT00030/24)  
@@ -21,7 +49,7 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > - SD - Scarico magazzino da rendita: Ottimizzata la chiamata dell’algoritmo *UpdateBatchRegister*. (#TT01149/26)
 > - SD - Offerte multilivello: gestito messaggio bloccante in fase di conversione in ordine nel caso di codice IVA mancante nei materiali. (#TT01031/26)
 > - SD - WebApi SalesInvoice e POS: corretto il comportamento di aggiornamento per evitare la modifica automatica della data con la data corrente. (#TT01107/26)  
-> - SH - Contatti – Indirizzi alternativi: riportata la ragione sociale a 80 caratteri. (#TT01039/26)
+> - SH - Contatti - Indirizzi alternativi: riportata la ragione sociale a 80 caratteri. (#TT01039/26)
 > - SH - Gestione Spese: le spese da anagrafica cliente vengono proposte solo alla creazione di nuovi documenti senza origine. In evasione/valorizzazione, le spese valore vengono trasferite tali e quali; le spese percentuali vengono convertite in importo proporzionale. Le spese omogenee (stesso tipo) provenienti da più documenti vengono sommate. Le variazioni di quantità/prezzi/sconti nel documento evaso richiedono una correzione manuale delle spese; viene mostrato un avviso. (rif. ticket 511/26)  
 > - WM - Abilitato il cambio classe articolo tramite WebAPI. (#TT05186/25)
 > - WM - Distinta Base: corretto l’errato aggiornamento dell’unità di misura nei componenti con UM predefinita.
@@ -41,13 +69,13 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > - FI - contabilizzazione movimenti di magazzino, revisione gestione descrizione di dettaglio nei movimenti di centro di costo della registrazione contabile (#TT00815/26)
 > - FI - revisione gestione contabilizzazione e rollback scritture di assestamento (#TT00808/26)
 > - Fixed bug when configuring objects containing ExtraData based on DataSource
-> - MES – Corretto bug nel calcolo costo dell’articolo prodotto con la dichiarazione di produzione nel caso in cui nel ciclo fossero presenti fasi esterne prima dell’ultima fase interna. (#TT00748/26)
-> - MES – Corretto bug nel calcolo del costo dei materiali degli ordini di produzione che non considerava correttamente le chiusure di magazzino. (#TT00452/26)
-> - MES – Corretto bug nell’importazione tramite webapi delle dichiarazioni di produzione, nelle quali, nel caso in cui il lotto del materiale importato fosse inesistente, veniva proposto un lotto con la logica fifo anche se il tipo prelievo dell’articolo era manuale. Ora, se cui il tipo prelievo dell’articolo è manuale e nei parametri degli ordini di produzione è attivo il flag Gestione automatica dei lotti e SN, nel caso in cui il lotto del materiale fosse inesistente, verrà creata la riga del materiale ma senza associare un lotto. (#TT00711/26)
-> - MES – Corretto bug nella procedura di Generazione lotto degli ordini di produzione che non generava correttamente l’extension per il nuovo lotto. (#TT00920/26)
-> - MS – Commesse di produzione – Revisionate tutte le procedure che aggiornano la “Data merce pronta” di una Commessa di tipo Indipendente, in quanto la “Data merce pronta” veniva aggiornata alla “Data fine prevista” della Commessa, anche se il parametro dedicato, “Aggiornamento Data merce pronta” presente nei “Parametri MS”, non lo permetteva. (#TT00875/26)
-> - MS - F.C.S. – Corretta l’anomalia che non considerava la disponibilità dei materiali per l’inizio lavori pur indicando tale richiesta nei parametri. (#TT00604/26)
-> - MS – Pianificazione generale – Modifiche attuate:
+> - MES - Corretto bug nel calcolo costo dell’articolo prodotto con la dichiarazione di produzione nel caso in cui nel ciclo fossero presenti fasi esterne prima dell’ultima fase interna. (#TT00748/26)
+> - MES - Corretto bug nel calcolo del costo dei materiali degli ordini di produzione che non considerava correttamente le chiusure di magazzino. (#TT00452/26)
+> - MES - Corretto bug nell’importazione tramite webapi delle dichiarazioni di produzione, nelle quali, nel caso in cui il lotto del materiale importato fosse inesistente, veniva proposto un lotto con la logica fifo anche se il tipo prelievo dell’articolo era manuale. Ora, se cui il tipo prelievo dell’articolo è manuale e nei parametri degli ordini di produzione è attivo il flag Gestione automatica dei lotti e SN, nel caso in cui il lotto del materiale fosse inesistente, verrà creata la riga del materiale ma senza associare un lotto. (#TT00711/26)
+> - MES - Corretto bug nella procedura di Generazione lotto degli ordini di produzione che non generava correttamente l’extension per il nuovo lotto. (#TT00920/26)
+> - MS - Commesse di produzione - Revisionate tutte le procedure che aggiornano la “Data merce pronta” di una Commessa di tipo Indipendente, in quanto la “Data merce pronta” veniva aggiornata alla “Data fine prevista” della Commessa, anche se il parametro dedicato, “Aggiornamento Data merce pronta” presente nei “Parametri MS”, non lo permetteva. (#TT00875/26)
+> - MS - F.C.S. - Corretta l’anomalia che non considerava la disponibilità dei materiali per l’inizio lavori pur indicando tale richiesta nei parametri. (#TT00604/26)
+> - MS - Pianificazione generale - Modifiche attuate:
 >> - corretta l’anomalia che pianificava l’ora di fine e quella di inizio di due ordini di una medesima commessa di livello figlio e padre accavallando gli orari;
 >> - modificata la logica di considerazione della “% di utilizzo centro di lavoro”: antecedente alla modifica la percentuale incrementava il tempo di lavoro giornaliero del relativo Calendario della capacità produttiva; ora è il tempo di lavoro della fase che viene incrementato mantenendo inalterato il periodo di lavoro giornaliero del Centro.
 >> - !! Per rendere attive e corrette le variazioni alle procedure di calcolo si rende necessario rigenerare tutti i “Calendari delle capacità produttive” di tutti i Centri di lavoro !! (#TT04940/25)
@@ -58,11 +86,11 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > - Restored font widget for Blockly
 > - Risolto problema integrazione GitHub per credenziali non corrette
 > - RN - corretto problema nella fattura di acquisto (tipo nota di credito) quando veniva impostata una spesa finale di tipo bollo e nelle righe erano presenti prezzi o quantità negative, il messaggio di richiesta di inversione segno della spesa finale non gestiva correttamente il rifiuto di invertire il segno. Rif. Ticket - #TT00726/26
-> - SCM – Documenti di acquisto in entrata: revisione della gestione delle fatture elettroniche con allegati in formato .7zip (Rif. Ticket 878/26)
-> - SD – Creazione Ordine fornitore da Ordine cliente – Sulle righe articolo dell’ordine fornitore vengono ora riportati il magazzino e la causale previsti per il tipo ordine creato. (#TT00889/26)
-> - SD – Dettaglio righe ordini clienti: Corretta la visualizzazione di codice e descrizione articolo cliente nella griglia dei risultati. (#TT00297/26)
-> - SD – Evasione ordini in DDT e Fatture: i centri di costo e ricavo non vengono più riportati anche sulle righe di tipo note in presenza del flag “Ricalcola centri di costo/ricavo”. (#TT00801/26)
-> - SD – Ottimizzata l’importazione Web API dei listini di vendita corposi. Inserita la possibilità di fare update sugli articoli per aggiungerne al listino (#TT04887/24, #TT05479/25)
+> - SCM - Documenti di acquisto in entrata: revisione della gestione delle fatture elettroniche con allegati in formato .7zip (Rif. Ticket 878/26)
+> - SD - Creazione Ordine fornitore da Ordine cliente - Sulle righe articolo dell’ordine fornitore vengono ora riportati il magazzino e la causale previsti per il tipo ordine creato. (#TT00889/26)
+> - SD - Dettaglio righe ordini clienti: Corretta la visualizzazione di codice e descrizione articolo cliente nella griglia dei risultati. (#TT00297/26)
+> - SD - Evasione ordini in DDT e Fatture: i centri di costo e ricavo non vengono più riportati anche sulle righe di tipo note in presenza del flag “Ricalcola centri di costo/ricavo”. (#TT00801/26)
+> - SD - Ottimizzata l’importazione Web API dei listini di vendita corposi. Inserita la possibilità di fare update sugli articoli per aggiungerne al listino (#TT04887/24, #TT05479/25)
 > - SD - Se l’utente porta in stato controllato e poi non esaminato una fattura di vendita creata da DDT, sarà possibile effettuare il RollBack dell'operazione per cancellare la fattura. (#TT05405/25)
 > - SD-Importo ordine di vendita WebApi: quando viene l'esecuzione forzatamente, da aggiornare anche ForceExecutedQuantity su articoli di ordine cliente(#TT00825/26)
 > - SH - generazione file F24, revisione campi importo con decimali per separatore virgola (#TT01973/25)
@@ -72,12 +100,12 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > - Solved bug to execute Workflow Action Script
 > - Solved bug to invoke global script from Cruscotti
 > - Solved bug to set UI property to MultiTarget widget from script
-> - WM – Analisi Disponibilità con dettaglio distinta base: Corretto mancata valorizzazione colonne se versione di distinta nei componenti vuota. (#TT00602/26)
-> - WM – Corretta valorizzazione “Livello”, “Priorità” e “Articolo Padre” in analisi disponibilità con dettaglio distinta base. (#TT00602/26)
-> - WM – Corretto bug nell’import webapi dell’anagrafica articolo che non veniva correttamente inserito il valore del campo Nomenclatura. (#TT00840/26)
+> - WM - Analisi Disponibilità con dettaglio distinta base: Corretto mancata valorizzazione colonne se versione di distinta nei componenti vuota. (#TT00602/26)
+> - WM - Corretta valorizzazione “Livello”, “Priorità” e “Articolo Padre” in analisi disponibilità con dettaglio distinta base. (#TT00602/26)
+> - WM - Corretto bug nell’import webapi dell’anagrafica articolo che non veniva correttamente inserito il valore del campo Nomenclatura. (#TT00840/26)
 > - WM - Negative stock resulted after editing warehouse entry registration (#TT00644/26)
-> - WM – Prototipi – Corrette le anomalie che non calcolavano correttamente la componente del Costo macchina e quella degli Altri costi. (#TT00716/26)
-> - WM - Registrazioni di Magazzino – Abilitata quantità movimento se UM alternativa specificata. (#TT00802/26)
+> - WM - Prototipi - Corrette le anomalie che non calcolavano correttamente la componente del Costo macchina e quella degli Altri costi. (#TT00716/26)
+> - WM - Registrazioni di Magazzino - Abilitata quantità movimento se UM alternativa specificata. (#TT00802/26)
 
 
 ### Patch 803.0011 - 20/02/2026
