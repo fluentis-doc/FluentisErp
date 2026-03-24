@@ -5,30 +5,30 @@ sidebar_position: 1
 
 ### Patch 803.0014 - 23/03/2026
 
-> -	BI - Switchboards: Fix call actions of algorithm type. Rif. #TT01175/26
-> -	FI - aggiunto un controllo sull’avvenuta esportazione del tracciato telematico per la comunicazione trimestrale liquidazioni iva che blocca la form dalla modifica dei dati già esportati. Modifications in Periodic VAT calculation form can have impact on profiles.( TT00972/26)
-> -	FI - Corretta esportazione del tracciato telematico certificazioni uniche delle ritenute d’acconto che non incrementava correttamente la numerazione delle righe dopo la centesima posizione.( TT01198/26)
-> -	FI - revisione contabilizzazione fattura con gestione partite d’acconto, in caso di spese bollo (o altre) aggiuntive ora viene creata una partita separata per l’importo relativo (#TT00891/26)
-> -	FI - revisione form di acquisizione automatica intrastat, disabilitazione pulsante di ricerca finché la ricerca automatica non si conclude. (#TT01022/26)
-> -	FI - revisione rollback contabilizzazione per messaggi di blocco non restituiti in interfaccia. (#TT01228/26)
+> -	BI - Switchboards: Corrette le azioni di chiamata del tipo algoritmo. (#TT01175/26)   
+> -	FI - aggiunto un controllo sull’avvenuta esportazione del tracciato telematico per la comunicazione trimestrale liquidazioni iva che blocca la form dalla modifica dei dati già esportati. Modifications in Periodic VAT calculation form can have impact on profiles.(#TT00972/26)  
+> -	FI - Corretta esportazione del tracciato telematico certificazioni uniche delle ritenute d’acconto che non incrementava correttamente la numerazione delle righe dopo la centesima posizione.(#TT01198/26)  
+> -	FI - revisione contabilizzazione fattura con gestione partite d’acconto, in caso di spese bollo (o altre) aggiuntive ora viene creata una partita separata per l’importo relativo (#TT00891/26)  
+> -	FI - revisione form di acquisizione automatica intrastat, disabilitazione pulsante di ricerca finché la ricerca automatica non si conclude. (#TT01022/26)  
+> -	FI - revisione rollback contabilizzazione per messaggi di blocco non restituiti in interfaccia. (#TT01228/26)  
 > -	FI - Risolto problema di visibilità nel report di stampa della CU 2026 dei campi relativi alla sezione Dati Previdenziali. Rif. #TT00960/26
-> -	FI- Solving Customization issue regarding FsCostCenter with the extension table procedure (#TT01051/26)
-> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione riguardo al tag QuantityProduced (#TT01226/26).
-> -	MES - Gestione ordini produzione - bug fix per inserire fase esterne (#TT01192/26)
-> -	MS - AFCS, un task su macchina con regola attrezzaggio può essere messo in produzione anche se i materiali necessari non sono completamente disponibili a magazzino (#TT01282/26).
-> -	MS - AFCS: le giacenze negative vengono ignorate se il relativo flag nei parametri MRP è attivo (#TT01156/26).
-> -	MS - Aggiunta indicazione dell’articolo mancante quando un task su macchina con regola attrezzaggio non può essere lavorato (#TT01232/26)
-> -	PM - progetti - servizio di caricamento campi - abilitato caricamento dati anagrafica articolo - parametri MRP. Potranno quindi essere abilitati gli appositi campi nella load request affinchè siano visibili nelle righe progetto (#TT01286/26)
-> -	PR - Modificato algoritmo di importazione file cbi per i movimenti bancari per considerare tutti i possibili caratteri di controllo LF e CRLF ( TT01009/26)
-> -	PR - revisione dimensione campo FSDocFinancePostingImportError.Line (fluentis.PR_DocFinancePostingImportErrors.PRDFPIE_Line). (#TT01049/26)
-> -	SD - Numerazione ddt di conto lavoro, ddt di vendita, corretto errore di numerazione nel caso in cui Progressione data numero sia attivo. (#TT00598/26)
-> -	SD: Conversione offerta in ordine e progetto, gestita propagazione IBAN impostato nella tab pagamenti dell’offerta, anche nella tab pagamenti del progetto (#TT01141/26)
-> -	SH - Anagrafica cliente - Tab Listini: impedito di poter specificare nella stessa riga sia un listino generale che un listino per cliente. (rif.ticket 1264/26)
-> -	SH - Gestione matrice applicazione tasse, revisione per società e partner non EU (#TT01182/26, #TT01326/26)
-> -	WM - GetItemsStock: Aggiunte request property per unità di misura alternativa. (#TT00959/26)
-> -	WM - In fase di creazione ddt/fattura da packing list ora viene riportato correttamente sulla riga dell’articolo il valore presente nel campo Vostro numero riferimento dell’ordine cliente. ( #TT01259/26)
-> -	WM - Mappa Ubicazioni per articolo: Corretto errore in inserimento nuove mappature. (#TT00612/26)
-> -	WM - WebApi PickingWarehousePosting: Impostato messaggio Success in caso di completamento senza errori. (#TT01179/26)
+> -	FI- Solving Customization issue regarding FsCostCenter with the extension table procedure (#TT01051/26)  
+> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione riguardo al tag QuantityProduced (#TT01226/26).  
+> -	MES - Gestione ordini produzione - bug fix per inserire fase esterne (#TT01192/26)  
+> -	MS - AFCS, un task su macchina con regola attrezzaggio può essere messo in produzione anche se i materiali necessari non sono completamente disponibili a magazzino (#TT01282/26).  
+> -	MS - AFCS: le giacenze negative vengono ignorate se il relativo flag nei parametri MRP è attivo (#TT01156/26).    
+> -	MS - Aggiunta indicazione dell’articolo mancante quando un task su macchina con regola attrezzaggio non può essere lavorato (#TT01232/26)  
+> -	PM - progetti - servizio di caricamento campi - abilitato caricamento dati anagrafica articolo - parametri MRP. Potranno quindi essere abilitati gli appositi campi nella load request affinchè siano visibili nelle righe progetto (#TT01286/26)  
+> -	PR - Modificato algoritmo di importazione file cbi per i movimenti bancari per considerare tutti i possibili caratteri di controllo LF e CRLF ( TT01009/26)  
+> -	PR - revisione dimensione campo FSDocFinancePostingImportError.Line (fluentis.PR_DocFinancePostingImportErrors.PRDFPIE_Line). (#TT01049/26)  
+> -	SD - Numerazione ddt di conto lavoro, ddt di vendita, corretto errore di numerazione nel caso in cui Progressione data numero sia attivo. (#TT00598/26)  
+> -	SD - Conversione offerta in ordine e progetto, gestita propagazione IBAN impostato nella tab pagamenti dell’offerta, anche nella tab pagamenti del progetto (#TT01141/26)  
+> -	SH - Anagrafica cliente - Tab Listini: impedito di poter specificare nella stessa riga sia un listino generale che un listino per cliente. (rif.ticket 1264/26)  
+> -	SH - Gestione matrice applicazione tasse, revisione per società e partner non EU (#TT01182/26, #TT01326/26)  
+> -	WM - GetItemsStock: Aggiunte request property per unità di misura alternativa. (#TT00959/26)  
+> -	WM - In fase di creazione ddt/fattura da packing list ora viene riportato correttamente sulla riga dell’articolo il valore presente nel campo Vostro numero riferimento dell’ordine cliente. ( #TT01259/26)  
+> -	WM - Mappa Ubicazioni per articolo: Corretto errore in inserimento nuove mappature. (#TT00612/26)  
+> -	WM - WebApi PickingWarehousePosting: Impostato messaggio Success in caso di completamento senza errori. (#TT01179/26)  
 > -	WMS - Corretto problema in messaggio di errore in WMS per cui i comandi per visualizzare i dettagli e l’invio o meno dell’errore non funzionavano.
 
 ### Patch 803.0013 - 16/03/2026
@@ -40,24 +40,25 @@ sidebar_position: 1
 > - FI - Revisionata la contabilizzazione acquisti in società con gestione tasse attiva. (#TT00799/26)
 > - FI - Risolto un problema di visibilità nel report di stampa della CU 2026 riguardante i campi della sezione Dati Previdenziali. Le modifiche al form “Certificazione ritenute telematica” possono avere impatto sui profili. (#TT00960/26)  
 > - ImportPurchasePriceLists - Corretto il nome del route “ImportPurchasePriceLists”. (#TT01123/26)  
-> - MES - Corretto bug nella registrazione delle dichiarazioni di produzione che non riportava correttamente, nel movimento, la quantità alternativa (se utilizzata) inserita nel materiale consumato. (#TT01018/26)  > - MES - Ordini di produzione: implementata la possibilità di eseguire l’algoritmo standard di ricalcolo dei costi degli ordini tramite la API operation *RecalculateCosts*.  
+> - MES - Corretto bug nella registrazione delle dichiarazioni di produzione che non riportava correttamente, nel movimento, la quantità alternativa (se utilizzata) inserita nel materiale consumato. (#TT01018/26)  
+> - MES - Ordini di produzione: implementata la possibilità di eseguire l’algoritmo standard di ricalcolo dei costi degli ordini tramite la API operation *RecalculateCosts*.  
 La documentazione è disponibile in Fluentis Integration Documentation, area MES, Production Orders, RecalculateCosts. (#TT00397/26)  
 > - PM - Risolto un caso in cui, per due o più appuntamenti diversi con stesso tipo documento, numero documento, stato documento e range di date, ma con risorse e WBS differenti, l’appuntamento risultava visibile solo per una risorsa. (#TT00951/26)
-> - PM - Valorizzazione interventi: nella riga descrittiva in fattura relativa all’intervento viene ora indicata anche la descrizione del tipo intervento, oltre al codice. (#TT00775/26)  
-> - PR - Risolto errore nella ricerca dei pagamenti fornitori da contabilizzare quando l’oggetto *FSSupplierPaymentDetail* è custom. (#TT00483/26)  
-> - SD - Corretta la gestione dello storno fatturazione in presenza di articoli con prezzo negativo: in fase di generazione della nota di credito, l’importo viene ora riportato con segno positivo, garantendo la corretta valorizzazione dell’imponibile totale. (#TT01045/26)
-> - SD - Scarico magazzino da rendita: Ottimizzata la chiamata dell’algoritmo *UpdateBatchRegister*. (#TT01149/26)
-> - SD - Offerte multilivello: gestito messaggio bloccante in fase di conversione in ordine nel caso di codice IVA mancante nei materiali. (#TT01031/26)
+> - PM - Valorizzazione interventi: nella riga descrittiva in fattura relativa all’intervento viene ora indicata anche la descrizione del tipo intervento, oltre al codice. (#TT00775/26)   
+> - PR - Risolto errore nella ricerca dei pagamenti fornitori da contabilizzare quando l’oggetto *FSSupplierPaymentDetail* è custom. (#TT00483/26)   
+> - SD - Corretta la gestione dello storno fatturazione in presenza di articoli con prezzo negativo: in fase di generazione della nota di credito, l’importo viene ora riportato con segno positivo, garantendo la corretta valorizzazione dell’imponibile totale. (#TT01045/26)  
+> - SD - Scarico magazzino da rendita: Ottimizzata la chiamata dell’algoritmo *UpdateBatchRegister*. (#TT01149/26)  
+> - SD - Offerte multilivello: gestito messaggio bloccante in fase di conversione in ordine nel caso di codice IVA mancante nei materiali. (#TT01031/26)  
 > - SD - WebApi SalesInvoice e POS: corretto il comportamento di aggiornamento per evitare la modifica automatica della data con la data corrente. (#TT01107/26)  
 > - SH - Contatti - Indirizzi alternativi: riportata la ragione sociale a 80 caratteri. (#TT01039/26)
 > - SH - Gestione Spese: le spese da anagrafica cliente vengono proposte solo alla creazione di nuovi documenti senza origine. In evasione/valorizzazione, le spese valore vengono trasferite tali e quali; le spese percentuali vengono convertite in importo proporzionale. Le spese omogenee (stesso tipo) provenienti da più documenti vengono sommate. Le variazioni di quantità/prezzi/sconti nel documento evaso richiedono una correzione manuale delle spese; viene mostrato un avviso. (rif. ticket 511/26)  
-> - WM - Abilitato il cambio classe articolo tramite WebAPI. (#TT05186/25)
-> - WM - Distinta Base: corretto l’errato aggiornamento dell’unità di misura nei componenti con UM predefinita.
-> - WM - Liste di prelievo UDC: aggiunto un nuovo report “Packing list”.
-> - WM - Piani di Carico: ripristino l’evasione degli ordini cliente in stato “Rilascio” con cancellazione del picking. (#TT01008/26)
-> - WM - Piani di Carico: rivista la gestione dell’unità di misura in creazione lista UDC. (#TT05221/25)
-> - WM - Prototipi: corretta l’anomalia che non considerava correttamente la politica di sconto alla proposta “Miglior prezzo di listino fornitore”. (#TT00747/26)
-> - WM - Valorizzazione di Magazzino: ora è possibile cancellare movimenti di magazzino che presentano una referenza negli errori di chiusura. (#TT00888/26)  
+> - WM - Abilitato il cambio classe articolo tramite WebAPI. (#TT05186/25)  
+> - WM - Distinta Base: corretto l’errato aggiornamento dell’unità di misura nei componenti con UM predefinita.  
+> - WM - Liste di prelievo UDC: aggiunto un nuovo report “Packing list”.  
+> - WM - Piani di Carico: ripristino l’evasione degli ordini cliente in stato “Rilascio” con cancellazione del picking. (#TT01008/26)  
+> - WM - Piani di Carico: rivista la gestione dell’unità di misura in creazione lista UDC. (#TT05221/25)  
+> - WM - Prototipi: corretta l’anomalia che non considerava correttamente la politica di sconto alla proposta “Miglior prezzo di listino fornitore”. (#TT00747/26)  
+> - WM - Valorizzazione di Magazzino: ora è possibile cancellare movimenti di magazzino che presentano una referenza negli errori di chiusura. (#TT00888/26)   
 > - WMS - Corretto bug nelle form WMS di conferma spunta e ricevimento merci che si verificava quando veniva creata una seconda unità di carico. (#TT01128/26)
 
 ### Patch 803.0012 - 05/03/2026
