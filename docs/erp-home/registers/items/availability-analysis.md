@@ -69,10 +69,22 @@ Nella griglia di dettaglio si vedranno invece, cliccando sulla riga d'interesse 
 Tramite un doppio click del tasto sx del mouse sulla riga seleziona è possibile aprire il relativo documento.     
 
 :::note Nota
-La disponibilità dell'articolo da produrre è data solamente dall'ultima fase con i flag **produttiva** e **movimentabile** attivi presente nel [Ciclo di lavoro](/docs/erp-home/registers/production/routes/new-route).
+La disponibilità dell'articolo da produrre è data dalle fasi con i flag **produttiva** e **movimentabile** attivi presenti nel [Ciclo di lavoro](/docs/erp-home/registers/production/routes/new-route).
+:::
+
+:::important Documenti in Analisi Disponibilità
+In generale, un documento per essere incluso nell'analisi deve: 
+- avere una data di disponibilità all'interno del periodo di analisi, 
+- avere un tipo documento con il flag **Controlla disponibilità** attivo, 
+- essere stampato, autorizzato o confermato a seconda dei casi e
+- deve insistere su un magazzino incluso nell'analisi.
+
+Nel caso della domanda dipendente e delle RDA che non hanno un proprio magazzino viene considerato il magazzino delle materie prime nei parametri MRP dell'articolo o, se non valorizzato, l'analogo magazzino nei parametri generali di produzione.
 :::
 
 Per quanto riguarda la descrizione delle funzionalità comuni a tutti le form, presenti nella ribbon bar, si rimanda all'articolo relativo ai [Pulsanti Comuni](/docs/guide/common/common-buttons), in particolare per le funzionalità delle stampe si rimanda anche all'articolo [Anteprima e Stampa](/docs/guide/common/operations-with-data/reports).
+
+
 
 *Pulsante specifico*:
 > **Espandi/riduci griglia articoli**: pulsante che permette di espandere o ridurre le griglie di risultato. 
