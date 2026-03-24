@@ -41,7 +41,7 @@ La griglia inferiore mostra i dettagli degli articoli contenuti in ciascun ordin
 
 > **Quantità originale**: quantità inserita nel documento di origine (RDA o ordine cliente).  
 > **Quantità disponibile**: disponibilità dell'articolo su tutti i magazzini considerati nel *Calcolo disponibilità* alla data odierna.  
-> **Quantità confermata**: se la *Quantità disponibile* è minore della *Quantità originale*, viene proposta automaticamente quest'ultima. In alternativa, sarà proposta una quantità nulla, e per proseguire sarà necessario valorizzare questo campo.
+> **Quantità confermata**: se la *Quantità disponibile* è zero o negativa è posta uguale alla *Quantità originale*, viceversa non verrà proposto nulla e sarà necessario valorizzare questo campo in base all'effettiva quantità disponibilità per la riga corrente.
 
 5. **Generazione ordini fornitore**: l'ultimo passo è la generazione degli ordini tramite il pulsante **Genera ordini fornitore**. In alternativa, è possibile aggiungere le righe a ordini già esistenti con il pulsante **Ordini**.
 
