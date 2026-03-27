@@ -3,6 +3,20 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0015 - 26/03/2026
+
+> -	CO - revisione Elaborazione periodi per filtro su divisione, revisione comparazione riclassificazioni per sezione calcolo indici(#TT01390/26)
+> -	CPQ – Ottimizzato l’algoritmo di calcolo delle combinazioni valide della matrice completa del configuratore
+> -	FI - corretto errore nella stampa Situazione contabile sottoconti che non gestiva correttamente l’opzione Visualizza Valori di apertura. (#TT01256/26)
+> -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti (#TT00769/26)
+> -	FI - Visualizzazione e compilazione campo ‘Provincia origine’ in scheda Intrastat delle registrazioni e in creazione automatica intrastat vendite da registrazioni. Modifications in posting intrastat tab can have impact on profiles. (#TT01023/26)
+> -	PR - corretto calcolo del cashflow per il flusso relativo agli ordini di conto lavoro. In presenza di calcolo del prezzo utilizzando la quantità alternativa non calcolava correttamente il valore dell’imponibile continuando a leggere la quantità e unità di misura principale. Ora utilizza direttamente la proprietà NetAmount. (#TT00873/26)
+> -	SD - WebAPI importa bolla di consegna e fattura di vendita - consente quantità superiori a quella dell'articolo dell'ordine di vendita correlato (#TT01384/26)
+> -	SD- Corretta la visualizzazione dei decimali nella quantità alternativa nel tab Riepilogo. Modifications in the object forms SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, SalesOffer and SalesOrder can have impact on profiles (#TT01238/26)
+> -	SH – Consider UseDocumentManager flag from “Edit Standard Object” custom property. (#TT00699/26)
+> -	WEBAPI Import: Risolto l'errore in importazione di un file XML/Json contenente solo proprietà referenze (#TT1197/26)
+> -	MES – Corretto bug nella procedura di Generazione lotto degli ordini di produzione che non generava correttamente l’extension per il nuovo lotto. (#TT00920/26)
+
 ### Patch 803.0014 - 23/03/2026
 
 > -	BI - Switchboards: Corrette le azioni di chiamata del tipo algoritmo. (#TT01175/26)   
@@ -19,11 +33,11 @@ sidebar_position: 1
 > -	MS - AFCS: le giacenze negative vengono ignorate se il relativo flag nei parametri MRP è attivo (#TT01156/26).    
 > -	MS - Aggiunta indicazione dell’articolo mancante quando un task su macchina con regola attrezzaggio non può essere lavorato (#TT01232/26)  
 > -	PM - progetti - servizio di caricamento campi - abilitato caricamento dati anagrafica articolo - parametri MRP. Potranno quindi essere abilitati gli appositi campi nella load request affinchè siano visibili nelle righe progetto (#TT01286/26)  
-> -	PR - Modificato algoritmo di importazione file cbi per i movimenti bancari per considerare tutti i possibili caratteri di controllo LF e CRLF ( TT01009/26)  
+> -	PR - Modificato algoritmo di importazione file cbi per i movimenti bancari per considerare tutti i possibili caratteri di controllo LF e CRLF (#TT01009/26)  
 > -	PR - revisione dimensione campo FSDocFinancePostingImportError.Line (fluentis.PR_DocFinancePostingImportErrors.PRDFPIE_Line). (#TT01049/26)  
 > -	SD - Numerazione ddt di conto lavoro, ddt di vendita, corretto errore di numerazione nel caso in cui Progressione data numero sia attivo. (#TT00598/26)  
 > -	SD - Conversione offerta in ordine e progetto, gestita propagazione IBAN impostato nella tab pagamenti dell’offerta, anche nella tab pagamenti del progetto (#TT01141/26)  
-> -	SH - Anagrafica cliente - Tab Listini: impedito di poter specificare nella stessa riga sia un listino generale che un listino per cliente. (rif.ticket 1264/26)  
+> -	SH - Anagrafica cliente - Tab Listini: impedito di poter specificare nella stessa riga sia un listino generale che un listino per cliente. (#TT1264/26)  
 > -	SH - Gestione matrice applicazione tasse, revisione per società e partner non EU (#TT01182/26, #TT01326/26)  
 > -	WM - GetItemsStock: Aggiunte request property per unità di misura alternativa. (#TT00959/26)  
 > -	WM - In fase di creazione ddt/fattura da packing list ora viene riportato correttamente sulla riga dell’articolo il valore presente nel campo Vostro numero riferimento dell’ordine cliente. ( #TT01259/26)  
@@ -65,8 +79,8 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 
 > - CO - implementato messaggio di avviso utente quando si cerca di cancellare un nodo in un modello di riclassificazione, se è referenziato in altre parti del modello ( T00842/26)
 > - CO - revisione elaborazione periodi, esclusione delle righe con date competenza nulle (#TT00971/26)
-> - CRM - Introdotto caricamento tra i dati del ticket dell’agente principale del contatto CRM (TT00926/26)
-> - FI - change D300 - fiscal RO changes add new fields ( TT00820/26)
+> - CRM - Introdotto caricamento tra i dati del ticket dell’agente principale del contatto CRM (#TT00926/26)
+> - FI - change D300 - fiscal RO changes add new fields (#TT00820/26)
 > - FI - contabilizzazione movimenti di magazzino, revisione gestione descrizione di dettaglio nei movimenti di centro di costo della registrazione contabile (#TT00815/26)
 > - FI - revisione gestione contabilizzazione e rollback scritture di assestamento (#TT00808/26)
 > - Fixed bug when configuring objects containing ExtraData based on DataSource
@@ -82,8 +96,8 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 >> - !! Per rendere attive e corrette le variazioni alle procedure di calcolo si rende necessario rigenerare tutti i “Calendari delle capacità produttive” di tutti i Centri di lavoro !! (#TT04940/25)
 > - PM - risolto caso specifico in cui non venivano proposte le spese negli interventi esterni (#TT00956/26)
 > - PM - videata cedolino paghe - risolto caso per cui avendo il profilo impostato come default, non proponeva la risorsa nei filtri attività (#TT00652/26)
-> - PR - Change in SDD file creation ( TT05663/25)
-> - Profili - Corretto il funzionamento dei profili nei documenti che possono avere il tab Documenti Collegati. (rif.ticket 792/26)
+> - PR - Change in SDD file creation (#TT05663/25)
+> - Profili - Corretto il funzionamento dei profili nei documenti che possono avere il tab Documenti Collegati. (#TT792/26)
 > - Restored font widget for Blockly
 > - Risolto problema integrazione GitHub per credenziali non corrette
 > - RN - corretto problema nella fattura di acquisto (tipo nota di credito) quando veniva impostata una spesa finale di tipo bollo e nelle righe erano presenti prezzi o quantità negative, il messaggio di richiesta di inversione segno della spesa finale non gestiva correttamente il rifiuto di invertire il segno. Rif. Ticket - #TT00726/26
@@ -111,7 +125,7 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 
 ### Patch 803.0011 - 20/02/2026
 
-> -	Bizlink FI : Obrazac PDV for HR localization, passed to v.11 ( TT00770/26)
+> -	Bizlink FI : Obrazac PDV for HR localization, passed to v.11 (#TT00770/26)
 > -	CPQ - Risolto problema che genera un’eccezione quando si estrae il tipo di un Extra Data basato su DataSource
 > -	MES - Corretto bug nel report Foglio di Lavoro nel quale venivano visualizzati dei valori con il formato inglese. (#TT00688/26)
 > -	PM - Generazione fatture da interventi - il progetto collegato al servizio riporta CIG e CUP in testata. Le righe della fattura che fanno riferimento a quel progetto avranno riportato il codice CIG CUP negli appositi campi ( #TT03731/25)
@@ -134,10 +148,10 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 ### Patch 803.0010 - 13/02/2026
 
 > -	CPQ - bugfixing su script di inizializzazione e aggiunta Extra Data ad articoli creati.
-> -	FI - calcolo ammortamenti, revisione gestione data inizio attività su cespiti collegati ( TT00645/26)
+> -	FI - calcolo ammortamenti, revisione gestione data inizio attività su cespiti collegati (#TT00645/26)
 > -	FI - Contabilizzazione Compensi ed Enasarco: revisione delle procedure di contabilizzazione dei compensi e dei contributi Enasarco, con revisione delle relative procedure di rollback. (Rif. Ticket TT00330/26)
 > -	FI - creazione file F24, revisione record 50.01 (#TT01973/25)
-> -	FI - PaymentImport fix - delete FSMaturityPaymentReservation ( TT00631/26)
+> -	FI - PaymentImport fix - delete FSMaturityPaymentReservation (#TT00631/26)
 > -	Framework - Risolta l’anomalia che, aprendo un documento, causava uno sfarfallio iniziale nell’evidenziazione dei campi obbligatori (quelli evidenziati in rosso). (#TT00553/26)
 > -	Impostazione Xslt di visualizzazione Liquidazione iva periodica (#TT00520/26)
 > -	MS - Corretto bug in costificazione che non calcolava correttamente il costo per le fasi a tempo fisso. (#TT05668/25)
@@ -147,9 +161,9 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > -	QY - Filtro controllo articoli - Risolto il problema di perdita dei caratteri inseriti nel filtro degli Ordini di produzione, presente nei documenti di origine delle Dichiarazioni di produzione e nella Fase ordine di produzione. (#TT00454/26)
 > -	QY - Numerazione documenti - Dove prevista la numerazione documenti, è stata implementata la gestione della progressione non annuale.(#TT00625/26)
 > -	revisione calcolo scaglioni Firr (#TT00516/26)
-> -	Risolto errore durante la ricerca di documenti su tab precedenti di NIR quando esiste custom per oggetto PurchaseDeliveryNote o PurchaseInvoice(TT00653/26)
+> -	Risolto errore durante la ricerca di documenti su tab precedenti di NIR quando esiste custom per oggetto PurchaseDeliveryNote o PurchaseInvoice(#TT00653/26)
 > -	SCS - Creazione Ordine di Conto lavoro da fase esterna di Ordine di Produzione: Corretta la proposta dell'ubicazione riportata sulla riga articolo dell'ordine di conto lavoro. (#TT05383/25)
-> -	SH - Attività/Task - Corretto errore in chiusura nuova attività senza salvare. (TT00613/26)
+> -	SH - Attività/Task - Corretto errore in chiusura nuova attività senza salvare. (#TT00613/26)
 > -	Solved crash when click on dashboard grid for some dashboards
 > -	Solved problem to compile script for Mono platform
 > -	WM - Aggiunta proprietà “Qtà Impegno” in analisi disponibilità con dettaglio distinta base. (#TT05061/25). Can have an impact in the profile of availability form
@@ -179,7 +193,7 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > -	PM - generazione intervento da intervento pianificato - corretta casistica per cui solo in specifiche condizioni, le spese sostenute non riportavano la data corretta e le spese da fatturare non erano proposte correttamente (#TT00481/26)
 > -	PM - WEB ripristinati tasti di espandi/comprimi nella visualizzazione progetto nel calendario di WBS assegnazione risorse (#TT00477/26)
 > -	Risolto problema di importazioni ordini Peppol
-> -	SCM - Calcolo RAEE: Risolta procedura EVASIONE ORDINI per il calcolo delle spese RAEE (rif.ticket 331/26)
+> -	SCM - Calcolo RAEE: Risolta procedura EVASIONE ORDINI per il calcolo delle spese RAEE (#TT331/26)
 > -	SCM - Contabilizzazione fatture di acquisto: revisione della procedura di rollback della contabilizzazione in presenza di partite già pagate (#TT00381/26)
 > -	SCM - Corretto il calcolo degli Importi del documento generato tramite la procedura di Creazione DDT da Ricevimento Merci. (#TT00524/26)
 > -	SCM - Ordini Fornitore: Il Contributo RAEE viene ora calcolato anche negli ordini generati da Richieste di acquisto o Richieste di Offerta. (#TT00526/26)
@@ -195,17 +209,17 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 ### Patch 803.0008 - 29/01/2026
 
 > -	Arm - validate database view before aligning to object
-> -	BI - Dasboards(Cruscotti) fix column countings when filter present (TT00178/26)
-> -	CO - Ottimizzazione elaborazione periodi (TT00435/26)
+> -	BI - Dasboards(Cruscotti) fix column countings when filter present (#TT00178/26)
+> -	CO - Ottimizzazione elaborazione periodi (#TT00435/26)
 > -	FI - Registrazioni Contabili, Movimenti Contabili: Revisione salvataggio dei profili (Rif. Ticket TT00052/26)
 > -	MES - Ordine di produzione - Corretta l’anomalia per cui, eseguendo una nuova form di filtro, dopo la selezione di un oggetto Tile con valori maggiori di zero e la pressione del relativo tasto di Ricerca, non veniva visualizzato alcun dato. Era necessario eseguire una seconda Ricerca per visualizzare correttamente le informazioni. (#TT00345/26)
 > -	MS - Corretto errore che nella procedura di Generazione commesse di produzione che dal tab sottoscorta non riporta tutti gli articoli da inserire in commessa. (#TT02716/25)
 > -	MS - Corretto errore che nella procedura di Generazione commesse di produzione che dal tab sottoscorta per il quale la form andava in crash nel caso in cui fossero presenti molte righe da caricare. (#TT00861/25)
 > -	QY - Azioni correttive - Risolta l’anomalia che da ‘Crea Azione correttiva’, presente nelle gestioni: ‘Reclami’, ‘Non conformità’ e ‘Azioni correttive’, non veniva ricopiato il ‘Riferimento documenti’. (#TT00070/26)
 > -	Risolto bug nello script editor per generare il codice per aprire una form
-> -	SCM - Calcolo RAEE: Risolto eccedenza importo dei scadenza rispetto a Totale Documento per errata considerazione del contributo RAEE (rif.ticket 327/26)
-> -	SD - Generazione file XML della fatturazione elettronica: è possibile creare un file custom per le righe fattura personalizzando l'algoritmo CheckSalesInvoiceItemForElectronicExportLinesDetail (rif.ticket 5255/25)
-> -	SD-SalesOrder-Expand first level logic modification(TT00368/26).
+> -	SCM - Calcolo RAEE: Risolto eccedenza importo dei scadenza rispetto a Totale Documento per errata considerazione del contributo RAEE (#TT327/26)
+> -	SD - Generazione file XML della fatturazione elettronica: è possibile creare un file custom per le righe fattura personalizzando l'algoritmo CheckSalesInvoiceItemForElectronicExportLinesDetail (#TT5255/25)
+> -	SD-SalesOrder-Expand first level logic modification(#TT00368/26).
 > -	WM - Corretto bug nella webapi degli articoli in cui andava in errore la delete di una variante articolo (#TT00039/26).
 
 ### Patch 803.0007 - 26/01/2026
@@ -215,10 +229,10 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > -	FI - Controllo sbilanci cdc/cdp/progetti, revisione gestione flag 'controllo date competenza'. (#TT00291/26)
 > -	FI - creazione public virtual void MovementsAccountingWithParameters, per poter facilmente contabilizzare i movimenti di magazzino tramite script (#TT00264/26)
 > -	FI - CU2026, revisione tendina di regime escluso (RF19). Modifications in Certificazione ritenute telematica form can have an impact on profiles. (#TT00248/26)
-> -	FI - Links change in Purchase invoices accounting procedure. Small improvements in supplier invoice accounting ( TT00280/26).
+> -	FI - Links change in Purchase invoices accounting procedure. Small improvements in supplier invoice accounting (#TT00280/26).
 > -	MES - Sistemato visualizzazione messaggi di errori da scripting in dichiarazioni di produzione. (#TT00183/26)
 > -	MS - Corretto bug nella procedura MRP che non generava gli ordini pianificati con le quantità corrette in alcuni casi. (#TT00234/26)
-> -	PR - L'importazione file nella riconciliazione bancaria non popola i campi. Modifications in bank movement detail form can have an impact on profiles (TT05582/25).
+> -	PR - L'importazione file nella riconciliazione bancaria non popola i campi. Modifications in bank movement detail form can have an impact on profiles (#TT05582/25).
 > -	QY - Azioni correttive - E' stata aggiornata la descrizione del data source e invertita la visualizzazione di Area e Settore.
 > -	QY - Azioni correttive - E' stata aggiornata la descrizione del data source.
 > -	QY - Documenti di origine esterna - E' stato creato il data source per l'analisi di quanti documenti sono stati inseriti per categoria documento.
@@ -242,8 +256,8 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > -	SD - Offerte di vendita gerarchiche: Introdotta la possibilità di inserire materiali con tipo riga Articolo non codificato digitando direttamente la descrizione articolo. (#TT00296/26)
 > -	SD - Ottimizzazione webapi ordine cliente(#TT04576/25)
 > -	SD - Revisione calcolo automatico liquidazione agenti quando sono presenti fatture di vendita con divise differenti.Modifications in agent settlement form can have an impact on profiles (#TT05266/25)
-> -	SD - Risolta un’anomalia durante lo scarico di documenti contenenti articoli gestiti a lotti e numeri seriali, inseriti con quantità negative. (TT05672/25)
-> -	SDI Documenti di acquisto in entrata: Ora l'anteprima di stampa è stata riportata alle dimensioni e font presenti nel visualizzatore del registro SDI (rif.ticket 00094/26 e 287/26)
+> -	SD - Risolta un’anomalia durante lo scarico di documenti contenenti articoli gestiti a lotti e numeri seriali, inseriti con quantità negative. (#TT05672/25)
+> -	SDI Documenti di acquisto in entrata: Ora l'anteprima di stampa è stata riportata alle dimensioni e font presenti nel visualizzatore del registro SDI (#TT00094/26 e 287/26)
 > -	SH - Corretto bug che non visualizzava correttamente tutti i caratteri del codice articolo nell’intestazione della form. (#TT00243/26)
 > -	SH - fix right panels(Tools, Object Navigator, Context Panel, Configuration) ordering when pinned first time (#TT04452/25)
 > -	SH - Prototipi - La dimensione del campo note di fase è stata uniformata a quella delle note di fase del ciclo di lavoro in quanto, all’importazione di quest’ultime nelle fasi del prototipo, veniva generato un errore di dato troncato se la nota di fase del ciclo di lavoro eccedeva di 512 caratteri. (#TT00166/26)
