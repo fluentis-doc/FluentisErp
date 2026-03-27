@@ -3,90 +3,106 @@ title: Fluentis NSO
 sidebar_position: 5
 ---
 
-## Konfiguracija  
+## Configurazione
 
-Prva konfiguracija koju treba napraviti jest postaviti oznake za slanje elektroničkih narudžbi u: *Home > Tablice > Opće postavke > Konfiguracija elektroničkih dokumenata*.          
-U tablici Konfiguracija elektroničkih dokumenata moguće je za svaku tvrtku definirati korištenje primitka i slanja elektroničkih narudžbi prema javnoj upravi, a u istoj tablici moguće je i odrediti kako se trebaju izvršavati određene transakcije.         
-Među tablicama općih postavki nalazi se i PEPPOL sekcija, u kojoj se nalaze:  
-Predefinirane tablice:  
-- Tipovi narudžbi klijenta standard PEPPOL, sadrži kodove tipova narudžbi „Narudžba“ i „Podnarudžba“ definirane u code listi PEPPOL standarda  
-- Kodovi jedinica mjere standard PEPPOL, contiene le Unità di misura definiti nella code 
+La prima configurazione da fare è inserire il flag Trasmissione Ordini Elettronici in *Home > Tabelle > Impostazioni generali > Configurazione documenti elettronici*.        
+Nella tabella Configurazione documenti elettronici è possibile definire per ogni società l’utilizzo 
+del ricevimento e della trasmissione degli ordini elettronici con la pubblica amministrazione, 
+nella stessa tabella è possibile identificare come devono essere eseguite certe transazioni.        
+Tra le tabelle delle impostazioni generali c’è la sezione PEPPOL dove ci sono:
+Le tabelle precodificate:
+- Tipi ordine cliente standard PEPPOL, contiene i codici dei tipi ordine Ordine e sotto-Ordine definiti nella code list dello Standard PEPPOL
+- Codici Unità di misura standard PEPPOL, contiene le Unità di misura definiti nella code 
 list dello Standard PEPPOL
-- Standardni PEPPOL PDV kodovi – sadrži PDV kodove definirane u PEPPOL standardnoj code listi   
-- Standardni PEPPOL kodovi za popuste  
-- Standardni PEPPOL kodovi za troškove  
-- Standardna klasifikacija artikala PEPPOL  
-- Vrsta procesa  
-- Vrsta dokumenata  
+- Codici IVA standard PEPPOL, contiene i codici IVA definiti nella code list dello 
+Standard PEPPOL
+- Codici sconto standard PEPPOL
+- Codici spese standard PEPPOL
+- Classificazione Articoli standard PEPPOL
+- Natura Processi 
+- Natura Documenti
 
-## Tablice za konfiguraciju   
+## Tabelle da configurare
 
-Sljedeće tablice je potrebno konfigurirati:    
+Le tabelle da configurare sono le seguenti:     
 
-- Tipovi narudžbi Fluentis koji odgovaraju PEPPOL tipovima narudžbi (konfiguracija tipova narudžbi kupca)  
-- PDV kodovi Fluentis koji odgovaraju PEPPOL PDV kodovima (konfiguracija PDV-a)  
-- Jedinice mjere Fluentis koje odgovaraju PEPPOL kodovima jedinica mjere (konfiguracija jedinica mjere)    
-- Tipovi barkodova – potrebno je definirati koji tip barkoda identificira AIC kod, standardnu kodifikaciju ili klasifikaciju artikala  
-- Konfiguracija tipova popusta – gdje se Fluentis tipovi popusta povezuju s PEPPOL kodovima popusta  
-- Konfiguracija tipova troškova – gdje se Fluentis tipovi troškova povezuju s PEPPOL kodovima troškova  
+- I tipi ordine Fluentis che corrispondono ai tipi ordine PEPPOL (configurazione tipi 
+ordine cliente)
+- I codici iva Fluentis che corrispondono ai codici IVA di PEPPOL (configurazione iva) 
+- Le unità di misura di Fluentis che corrispondono ai codici unità di misura di PEPPOL 
+(configurazione unità di misura) 
+- Nella tipi barcode c’è da definire quale tipo barcode identifica l’AIC code, la codifica 
+standard o la classificazione articoli 
+- Configurazione tipi abbuoni, dove si associano i tipi sconto Fluentis con i codici abbuono 
+PEPPOL
+- Configurazione tipi spese, dove si associano i tipi spese Fluentis con i codici spesa 
+PEPPOL
 
-## Dodjela prekodiranih tablica  
+## Dati delle tabelle Precodificate 
 
-Potrebno je identificirati tip narudžbe koristeći vrijednosti iz odgovarajuće code liste predviđene PEPPOL standardom, koja uključuje sljedeća dva koda:  
-- “220”, za narudžbe u užem smislu (kupovne narudžbe);   
-- “227”, za narudžbe za isporuku.        
+E’ necessario identificare il tipo di ordine, utilizzando i valori della relativa code list prevista 
+dallo standard PEPPOL, che include i seguenti due codici: 
+- “220”, per gli ordini di acquisto in senso stretto; 
+- “227”, per gli ordini di consegna.       
 
-U dokumentima tipa:  
-- Početna i zamjenska narudžba; 
-- Zamjenska potvrda narudžbe;          
+Nei Documenti di tipo: 
+- Ordine iniziale e sostitutivo; 
+- Ordine di riscontro sostitutivo;        
 
-kod tipa narudžbe navodi se u elementu “OrderTypeCode”, kao što je prikazano u sljedećem primjeru:  
+il codice del tipo di ordine viene indicato nell’elemento “OrderTypeCode”, come mostrato nel 
+seguente esempio: 
 
 < cbc:OrderTypeCode>220< /cbc:OrderTypeCode>             
 
-U dokumentima tipa:        
+Nei Documenti di tipo:       
 
-- Početna i zamjenska unaprijed dogovorena narudžba;       
+- Ordine pre-concordato iniziale e sostitutivo;       
 
-Kod vrste narudžbe navodi se u polju “SpecialTerms” elementa 
-“DeliveryTerms”, kako je prikazano u sljedećem primjeru:         
+il codice del tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
+“DeliveryTerms”, come mostrato nel seguente esempio:        
 
 < cac:DeliveryTerms> < cbc:SpecialTerms>220< /cbc:SpecialTerms> < /cac:DeliveryTerms>
          
-Postoji dodatna klasifikacija vrsta narudžbi, koja nije obvezna.       
-Za vrstu narudžbe 220 Narudžbenica:      
-- OF, Narudžba za fakturiranje već potrošenih proizvoda  
-- OFR, Narudžba za fakturiranje i obnovu zaliha   
-Za vrstu narudžbe 227 Nalog za isporuku:        
-- CD Račun pologa
-- CV Konto pregleda
-- CG Besplatna posudba (kredit)      
+Esiste un’ulteriore classificazione dei tipi ordine, non obbligatoria.       
+Per il tipo ordine 220 Ordine di acquisto:      
+- OF, Ordine di fatturazione per prodotti già consumati 
+- OFR, Ordine di fatturazione e reintegro 
+Per il tipo ordine 227 Ordine di consegna:      
+- CD Conto deposito 
+- CV Conto visione 
+- CG Comodato gratuito       
 
-U dokumentima tipa:  
-- Početna i zamjenska narudžba;
-- Zamjenska narudžba za potvrdu;        
+Nei Documenti di tipo: 
+- Ordine iniziale e sostitutivo; 
+- Ordine di riscontro sostitutivo;        
 
-šifra podtipa narudžbe se navodi u polju “SpecialTerms” unutar elementa 
-“DeliveryTerms”, kako je prikazano u sljedećem primjeru:       
+il codice del sotto-tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
+“DeliveryTerms”, come mostrato nel seguente esempio:        
 
 < cac:DeliveryTerms> < cbc:SpecialTerms>OFR< /SpecialTerms> < /cac:DeliveryTerms>
      
-U dokumentima tipa:  
-- Početna pred-dogovorena narudžba i zamjenska pred-dogovorena narudžba;          
+Nei Documenti di tipo: 
+- Ordine pre-concordato iniziale e sostitutivo;         
 
-kod podtipa narudžbe navodi se u polju „SpecialTerms” elementa „DeliveryTerms”, nakon koda tipa narudžbe, koristeći format strukturiranih polja, kao što je prikazano u sljedećem primjeru:          
+il codice del sotto-tipo di ordine viene indicato nel campo “SpecialTerms” dell’elemento 
+“DeliveryTerms”, dopo il codice del tipo di ordine, utilizzando il formato dei campi strutturati, 
+come mostrato nel seguente esempio:         
 
 < cac:DeliveryTerms> < cbc:SpecialTerms>220#OFR< /SpecialTerms> < /cac:DeliveryTerms>
 
-## Šifra artikla  
+## Codice Articolo
 
-Identifikacija proizvoda (robe ili usluge) unutar svake stavke narudžbe provodi se, osim putem naziva (element „Name”, koji je obvezan) i opisa (element „Description”), također i korištenjem identifikacijskih kodova.  
-In particolare, i tracciati dei predetti Konkretno, strukture navedenih dokumenata predviđaju prvenstveno dvije vrste kodova:   
-- kod koji dodjeljuje dobavljač (element „SellersItemIdentification/ID”);  
-- standardni kod, koji odgovara identifikatoru dodijeljenom proizvodu od strane sustava jedinstvene identifikacije (element „StandardItemIdentification/ID”), odabranog među onima navedenima u odgovarajućoj kodnoj listi predviđenoj standardom PEPPOL.     
+L’individuazione del prodotto (bene o servizio) all’interno di ciascuna linea d’ordine avviene, oltre 
+che attraverso il nome (elemento “Name, che è obbligatorio) e la descrizione (elemento 
+“Description”), anche per mezzo dell’utilizzo di codici identificativi. 
+In particolare, i tracciati dei predetti Documenti prevedono, primariamente, due tipi di codice: 
+- il codice attribuito dal Fornitore (elemento “SellersItemIdentification/ID”); 
+- il codice standard, corrispondente all’identificativo assegnato al prodotto da un sistema di 
+identificazione univoca (elemento “StandardItemIdentification/ID”) selezionato tra quelli presenti 
+nell’apposita code list prevista dallo standard PEPPOL.         
 
-Navedeni elementi nisu obvezni, međutim njihova se uporaba snažno preporučuje.
-Primjer:      
+Gli elementi su menzionati non sono obbligatori, tuttavia se ne raccomanda vivamente l’utilizzo.      
+Esempio:     
 
 < cac:OrderLine>          
         < cac:LineItem>        
@@ -103,6 +119,7 @@ Primjer:
         < /cac:LineItem>      
 < /cac:OrderLine>          
 
+<<<<<<< HEAD
 Za robu široke potrošnje preporučuje se popunjavanje elementa „StandardItemIdentification/ID” odgovarajućim GTIN kodom (koji odgovara „schemeID = 0160” iz PEPPOL kodne liste), kao što je prikazano u prethodnom primjeru.           
 Za farmaceutske proizvode koji imaju kod Odobrenja za stavljanje u promet (AIC), izdan od strane Talijanske agencije za lijekove (AIFA), element „SellersItemIdentification/ID” mora se uvijek popuniti odgovarajućim AIC kodom.  
 
@@ -110,6 +127,23 @@ Za farmaceutske proizvode koji imaju kod Odobrenja za stavljanje u promet (AIC),
 
 Za svaki proizvod, unutar odgovarajuće stavke narudžbe, moguće je navesti jedan ili više klasifikacijskih kodova, popunjavanjem polja „ItemClassificationCode/ID” elementa „CommodityClassification”.
 Vrijednost koju je potrebno navesti mora biti preuzeta iz sustava jedinstvene klasifikacije odabranog među onima navedenima u odgovarajućoj kodnoj listi predviđenoj standardom PEPPOL, kao što je prikazano u sljedećem primjeru:       
+=======
+Per i beni di largo consumo, si suggerisce di valorizzare l’elemento 
+“StandardItemIdentification/ID” con il relativo codice GTIN (corrispondente allo 
+“schemeID=”0160” della code list PEPPOL), come mostrato nel precedente esempio.         
+Per i prodotti farmaceutici provvisti del codice di Autorizzazione all’Immissione in Commercio 
+(AIC) rilasciato dell’Agenzia Italiana del Farmaco (AIFA), l’elemento 
+“SellersItemIdentification/ID” deve essere valorizzato sempre con il relativo codice AIC.
+
+## Gruppo Merceologico
+
+Per ciascun prodotto, all’interno della relativa linea d’ordine è possibile specificare uno o più 
+codici di classificazione, valorizzando il campo “ItemClassificationCode/ID” dell’elemento 
+“CommodityClassification”. 
+Il valore da indicare deve essere tratto da un sistema di classificazione univoca selezionato tra 
+quelli presenti nell’apposita code list prevista dallo standard PEPPOL, come mostrato 
+nell’esempio seguente:       
+>>>>>>> bf472a02 (Translation Sales)
 
 < cac:OrderLine>        
 < cac:LineItem>       
@@ -121,6 +155,7 @@ Vrijednost koju je potrebno navesti mora biti preuzeta iz sustava jedinstvene kl
 < /cac:LineItem>      
 < /cac:OrderLine>      
 
+<<<<<<< HEAD
 Preporučuje se koristiti barem jedan od sustava klasifikacije navedenih u tablici koja slijedi, tamo gdje je primjenjivo.      
 
 | Kod | Opis klasifikacijskog standarda | Područje primjene |
@@ -137,6 +172,27 @@ U Fluentisu se ovi kodovi dodjeljuju u tablici Barcode kodova, koja se zatim pov
 ## Jedinica mjere  
 
 U stavkama narudžbe potrebno je navesti količinu proizvoda, pri čemu se mora odabrati jedinica mjere s popisa predviđenog u odgovarajućoj Code List prema PEPPOL standardu, kao što je prikazano u sljedećem primjeru:   
+=======
+Si raccomanda di utilizzare almeno uno dei sistemi di classificazione riportati nella tabella che 
+segue, ove applicabili.       
+
+| Codice | Descrizione dello standard di classificazione | Ambito di utilizzo |
+| :-- | :-- | :-- |
+| STI | Sistema ufficiale europeo di classificazione unico per gli appalti pubblici (CPV - Common Procurement Vocabulaty) | Prodotti e servizi oggetto di appalti pubblici |
+| STL | Sistema di classificazione anatomico, terapeutico e chimico (ATC - Anatomical Therapeutic Chemical classification system) | Farmaci |
+| STO | Classificazione Nazionale Italiana dei Dispositivi medici (CND) | Dispositivi medici |
+| STH | Classificazione commerciale dei prodotti (GPC - Global Product Classification) | Beni di largo consumo |
+| IB | Sistema di identificazione internazionale dei libri (ISBN - International Standard Book Number) | Libri |
+| ZZZ | Sistema definito manualmente tra le parti | Per i dispositivi medici permette di specificare i valori 'DM1', 'DM2' o 'DM0' (quando non applicabili i primi due) |
+
+In Fluentis questi codici sono da attribuire alla tabella codici Barcode da associare all’articolo.     
+
+## Unità di misura
+
+Nelle linee d’ordine, è necessario indicare la quantità del prodotto specificando un’unità di misura 
+tra quelle indicate nell’apposita Code List prevista dallo standard PEPPOL, come mostrato nel 
+seguente esempio:     
+>>>>>>> bf472a02 (Translation Sales)
 
 < cac:OrderLine> 
 < cac:LineItem> 

@@ -1,70 +1,132 @@
 ---
-title: Vrste dokumenata
+title: Tipi documento
 sidebar_position: 2
 ---
 
-## Narudžba
+## Ordine
 
-Narudžba je dokument koji predstavlja zahtjev za kupnju dobara i usluga, izdana od strane Klijenta (Pošiljatelja) i upućena Dobavljaču (Primatelju). Narudžba se sastoji od jedne ili više stavki, u kojima su navedeni proizvod ili usluga koju se namjerava kupiti, količina i cijena.         
-**Narudžba je pripremljena u formatu definiranom PEPPOL Order transaction 3.0 specifikacijom.**
-Narudžba može:    
-- odrediti, neovisno o drugim prethodno izdanim narudžbama, dobra i/ili usluge koje Klijent namjerava kupiti, te priložiti upute za izvršenje (početna narudžba). Početna narudžba ne sadrži reference na druge narudžbe;   
-da li Klijent namjerava kupiti i pripadajuće upute za izvršenje usluge (Početna narudžba). Početna narudžba ne sadrži reference na druge narudžbe;  
-- odrediti, neovisno o drugim prethodno izdanih narudžbi, dobra i/ili usluge koje Klijent namjerava kupiti te pripadajuće upute za izvršenje isporuke i, međutim, biti općenito povezano s drugim Dokumentom (Povezana početna narudžba). Povezana početna narudžba sadrži referencu na Dokument na koji je povezana i oznaku da se radi o pukom "povezivanju";  
-- Poništavanje prethodno izdanog Naloga (Nalog za revokaciju). Nalog za revokaciju je Nalog koji sadrži naznaku da se radi o “Revokaciji” i referencu na Nalog koji se želi poništiti.     
-- Zamjena prethodno izdanog Naloga (Zamjenski nalog).
-Izmjena Naloga je novi Nalog koji sadrži sve stavke izvornog Naloga, a u kojem je naznačeno da se radi o “Izmjeni” te sadrži referencu na Nalog koji se želi izmijeniti.     
-Zamjene i opozivi, redom, zamjenjuju odnosno poništavaju kako nalog koji je u njima naveden, tako i sve druge prethodno dostavljene zamjene i opozive koji se odnose na isti početni nalog.
-Povezani početni nalog smije se koristiti isključivo radi evidentiranja da je novi postupak koji se namjerava pokrenuti povezan s prethodnim postupkom te se nikada ne smije koristiti umjesto drugih alata (nalog za opoziv, zamjenski nalog i nalog za očitovanje) koji su posebno izrađeni za opoziv, zamjenu (ili dopunu), potvrdu ili odbijanje drugog dokumenta.
+L’ Ordine è il Documento rappresentativo dell’ordine di acquisto di beni e servizi emesso dal 
+Cliente (Mittente) e indirizzato al Fornitore (Destinatario). Un Ordine è composto da una o più 
+linee d’ ordine, in cui sono indicati il bene o il servizio che si intende acquistare, la quantità e il 
+prezzo.        
+**L’Ordine è predisposto nel formato descritto dalla specifica PEPPOL Order transaction 3.0.**
+Un Ordine può: 
+- determinare, indipendentemente da altri Ordini precedentemente emessi, i beni e/o i servizi 
+che il Cliente intende acquistare e le relative istruzioni per eseguire la prestazione (Ordine 
+iniziale). Un Ordine iniziale non contiene riferimenti ad altri Ordini; 
+- determinare, indipendentemente da altri Ordini precedentemente emessi, i beni e/o i servizi 
+che il Cliente intende acquistare e le relative istruzioni per eseguire la fornitura e, tuttavia, 
+essere genericamente relazionato a un altro Documento (Ordine iniziale collegato). Un 
+Ordine iniziale collegato contiene il riferimento al Documento che a cui è collegato e 
+l’indicazione che si tratta di un mero “collegamento;
+- revocare un Ordine precedentemente emesso (Ordine di revoca). L’Ordine di revoca è un 
+Ordine che contiene l’indicazione che si tratta di una “Revoca” e il riferimento all’Ordine 
+che si intende revocare; 
+- sostituire un Ordine precedentemente emesso (Ordine sostitutivo). La Modifica di ordine 
+è un nuovo Ordine completo di tutte le linee di ordine, che contiene l’indicazione che si 
+tratta di una “Modifica” e il riferimento all’Ordine che si intende modificare. 
+Le Sostituzioni e le Revoche, rispettivamente, rimpiazzano e annullano sia l’Ordine ivi indicato 
+sia tutte le altre Sostituzioni e Revoche, già trasmesse, riferite al relativo Ordine iniziale. 
+L’Ordine iniziale collegato può essere utilizzato esclusivamente per tenere memoria che il nuovo 
+processo che si intende avviare è collegato ad un processo precedente e non deve mai essere usato 
+al posto degli altri strumenti (Ordine di revoca, Ordine sostitutivo e Ordine di riscontro) 
+appositamente realizzati per revocare, sostituire (o integrare), confermare o rifiutare un altro 
+Documento.
 
-## Odgovor
+## Risposta
 
-Odgovor je dokument kojim Dobavljač (Pošiljatelj) prihvaća, odbija ili predlaže izmjene narudžbe zaprimljene od Kupca (Primatelja).  
-**Odgovor se izrađuje u formatu opisanom u specifikaciji PEPPOL Order Response transaction 3.0.**      
-Putem Odgovora Dobavljač može Kupcu priopćiti da:  
-- je zaprimio Narudžbu (Odgovor o zaprimanju), ali je još nije obradio. Riječ je, očito, o privremenoj obavijesti koja ne sadrži nikakvu naznaku o tome hoće li i na koji način Dobavljač postupiti po Narudžbi. Odgovor o zaprimanju je Odgovor bez stavki narudžbe, koji sadrži oznaku da je riječ o „zaprimanju” („AB”) te upućivanje na Narudžbu čiji se primitak potvrđuje;    
-- namjerava postupiti po zaprimljenoj Narudžbi (Odgovor o prihvaćanju). Odgovor o prihvaćanju je Odgovor bez stavki narudžbe, koji sadrži oznaku da je riječ o „Prihvaćanju” te upućivanje na Narudžbu koja se prihvaća;   
-- odbija zaprimljenu Narudžbu (Odgovor o odbijanju). Odgovor o odbijanju je Odgovor bez stavki narudžbe, koji sadrži oznaku da je riječ o „Odbijanju” te upućivanje na Narudžbu koja se odbija;  
-- namjerava izvršiti zaprimljenu Narudžbu unoseći određene izmjene (Odgovor s izmjenama). Odgovor s izmjenama, koji označava da se radi o „Izmjeni” i upućuje na Narudžbu koja se mijenja, mora sadržavati sve stavke narudžbe—i one koje se namjeravaju zadržati i one koje se namjeravaju promijeniti—budući da nadopunjuje prethodno dostavljenu Narudžbu na koju se odnosi.
-Odgovori s izmjenama i Odgovori o odbijanju, redom, nadopunjuju odnosno poništavaju kako Narudžbu navedenu u njima, tako i sve druge prethodno dostavljene Izmjene i Opozive koji se odnose na istu početnu Narudžbu.   
+La Risposta è il Documento con cui il Fornitore (Mittente) accetta, declina o propone dei 
+cambiamenti a un Ordine ricevuto dal Cliente (Destinatario). 
+**La Risposta è predisposta nel formato descritto dalla specifica PEPPOL Order Response transaction 3.0.**     
+Con la Risposta il Fornitore può comunicare al Cliente che: 
+- ha ricevuto l’Ordine (Risposta di ricezione), ma non lo ha ancora processato. Si tratta, 
+evidentemente, di una comunicazione interlocutoria che non contiene alcuna indicazione 
+in merito a “se e come” il Fornitore intende dar corso all’Ordine. La Risposta di ricezione 
+è una Risposta priva di linee d’ordine, che contiene l’indicazione che si tratta di una 
+“ricezione” (“AB”) e il riferimento all’Ordine che si comunica di aver ricevuto 
+- intende dar corso all’Ordine ricevuto (Risposta di accettazione). La Risposta di 
+accettazione è una Risposta priva di linee d’ordine, che contiene l’indicazione che si 
+tratta di una “Accettazione” e il riferimento all’Ordine che si intende accettare; 
+- declina l’Ordine ricevuto (Risposta di diniego ). La Risposta di diniego è una Risposta 
+priva di linee d’ordine, che contiene l’indicazione che si tratta di un “Rifiuto” e il 
+riferimento all’Ordine che si intende rifiutare; 
+- intende dar corso all’Ordine ricevuto apportando alcune modifiche (Risposta con 
+modifiche). La Risposta con modifiche3, che contiene l’indicazione che si tratta di una 
+“Modifica” e il riferimento all’Ordine che si intende modificare, deve contenere tutte le 
+linee d’ordine, sia quelle che si intende mantenere sia quelle che si intende variare, in 
+quanto integra l’Ordine precedentemente trasmesso a cui fa riferimento. 
+Le Risposte con modifiche e le Risposte di diniego, rispettivamente, integrano e annullano sia 
+l’Ordine ivi indicato sia tutte le altre Modifiche e Revoche, già trasmesse, riferite al medesimo 
+Ordine iniziale.       
 
-Odgovor na opozvanu narudžbu nema učinka.  
+La Risposta a un Ordine revocato non ha effetti.
 
-## Prihvaćen nalog
+## Ordine di Riscontro
 
-Potvrdni nalog je dokument kojim Kupac (Pošiljatelj) potvrđuje, odbija ili zamjenjuje (zamjenski potvrdni nalog) prethodno dogovorenu Narudžbu ili Odgovor poslan od Dobavljača (Primatelja).   
-**Potvrdni nalog, stoga, u biti predstavlja Narudžbu koja se odnosi na dokument poslan od Dobavljača. Sukladno tome, izrađuje se u istom formatu, opisanom u specifikaciji PEPPOL Order transaction 3.0.**    
-Putem Potvrdnog naloga Kupac može Dobavljaču priopćiti da:    
-- potvrđuje prethodno dogovorenu Narudžbu ili Odgovor poslan od Dobavljača (Potvrdni nalog za potvrdu). Potvrdni nalog za potvrdu je Narudžba koja sadrži oznaku da se radi o „Potvrdi” te upućivanje na prethodno dogovorenu Narudžbu ili Odgovor koji se potvrđuje;     
-- koji odbija unaprijed dogovoreni Nalog ili Odgovor poslan od strane Dobavljača (Nalog za provjeru s odbijanjem).
-Nalog za provjeru s odbijanjem je Nalog koji sadrži oznaku da se radi o ‘Odbijanju’ i referencu na Nalog ili Odgovor koji se želi odbiti;   
-- koji namjerava zamijeniti unaprijed dogovoreni Nalog ili Odgovor poslan od strane Dobavljača (Zamjenski Nalog za provjeru).
-Zamjenski Nalog za provjeru je novi Nalog, kompletan sa svim stavkama narudžbe, koji sadrži oznaku da se radi o ‘Zamjeni’ i referencu na Nalog ili Odgovor koji se želi zamijeniti.           
+L’ Ordine di riscontro è il Documento con cui il Cliente (Mittente) conferma, declina o sostituisce 
+(Ordine di riscontro sostitutivo) un Ordine pre-concordato oppure una Risposta inviati dal 
+Fornitore (Destinatario). 
+**L’Ordine di riscontro, pertanto, altro non è che un Ordine che fa riferimento a un Documento inviato dal Fornitore. Conseguentemente, è predisposto nel medesimo formato, che è descritto dalla specifica PEPPOL Order transaction 3.0.**
+Con l’Ordine di riscontro il Cliente può comunicare al Fornitore: 
+- che conferma un Ordine pre-concordato o una Risposta inviata dal Fornitore ( Ordine di 
+riscontro per conferma ). L’Ordine di riscontro per conferma è un Ordine che contiene 
+l’indicazione che si tratta di una “Conferma” e il riferimento all’Ordine pre-concordato o 
+alla Risposta che si intende confermare; 
+- che declina un Ordine pre-concordato o una Risposta inviata dal Fornitore ( Ordine di 
+riscontro per diniego ). L’Ordine di riscontro per diniego è un Ordine che contiene 
+l’indicazione che si tratta di un “Rifiuto” e il riferimento all’Ordine o alle Risposta che si 
+intende rifiutare; 
+- che intende sostituire un Ordine pre-concordato o una Risposta inviata dal Fornitore ( 
+Ordine di riscontro sostitutivo ). L’Ordine di riscontro sostitutivo è un nuovo Ordine, 
+completo di tutte le linee d’ordine, che contiene l’indicazione che si tratta di una 
+“Sostituzione” e il riferimento all’Ordine o alla Risposta che si intende sostituire.        
 
-Zamjenski nalozi za provjeru i nalozi za provjeru s odbijanjem redom zamjenjuju, odnosno poništavaju, kako navedeni unaprijed dogovoreni Nalog ili Odgovor, tako i sve prethodno poslane zamjene i otkaze povezane s tim početnim Nalogu.
-Nalog za provjeru koji se odnosi na unaprijed dogovoreni Nalog koji je već otkazan nema učinka.
+Gli Ordini di riscontro sostitutivi e gli Ordini di riscontro per diniego, rispettivamente, rimpiazzano 
+e annullano sia l’Ordine pre-concordato o la Risposta ivi indicati sia tutte le altre Sostituzioni e 
+Revoche, già trasmesse, riferite al relativo Ordine iniziale.      
+L’Ordine di riscontro riferito a un Ordine pre-concordato revocato non ha effetti.
 
-## Unaprijed dogovoreni nalog
+## Ordine PRE-Concordato
 
-Unaprijed dogovoreni nalog je dokument koji predstavlja narudžbu roba i usluga, izdan od strane Dobavljača (Pošiljatelja) umjesto Klijenta (Primatelja), u dogovoru s Klijentom.
-Unaprijed dogovoreni nalog sastoji se od jedne ili više stavki narudžbe, u kojima su navedeni kupljeni proizvod ili usluga, količina i cijena.    
-**Unaprijed dogovoreni nalog priprema se u formatu opisanom u specifikaciji PEPPOL Order Agreement transaction 3.0.**   
-Unaprijed dogovoreni nalog može:  
-- odrediti, neovisno o drugim prethodno dogovorenim Narudžbama, robu i/ili usluge koje Klijent namjerava kupiti i odgovarajuće upute za izvršenje isporuke (Inicijalna prethodno dogovorena narudžba). Inicijalna prethodno dogovorena narudžba ne sadrži reference na druge prethodno dogovorene Narudžbe.  
-- odrediti, neovisno o drugih prethodno dogovorenih Narudžbi, dobra i/ili usluge koje Klijent namjerava kupiti te odgovarajuće upute za izvršenje isporuke i, ipak, biti općenito povezan s drugim Dokumentom (povezana inicijalna prethodno dogovorena Narudžba). Povezana inicijalna prethodno dogovorena Narudžba sadrži referencu na Dokument s kojim je povezana i oznaku da se radi o pukom "povezivanju".  
-- revocirati narudžbu prethodno dogovorenu (Ordine pre-concordato di revoca). Narudžba prethodno dogovorena za revokaciju je narudžba koja sadrži oznaku da se radi o "revokaciji" ("Cancelled") i referencu na prethodno dogovorenu narudžbu koju se namjerava revokirati, a također ima samo jedan redak narudžbe bez sadržaja.  
-- zamijeniti prethodno izdanu prekonkordnu narudžbu (Sostituire un Ordine pre-concordato precedentemente emesso). Modifikacija prekonkordne narudžbe je nova prekonkordna narudžba, koja sadrži sve redove narudžbe, a koja uključuje oznaku da se radi o "zamjeni" ("sostituzione" ili "Revised") i referencu na prekonkordnu narudžbu koju se namjerava modificirati.    
+L’ Ordine pre - concordato è il Documento rappresentativo dell’ordine di acquisto di beni e servizi, 
+emesso dal Fornitore (Mittente) invece che dal Cliente (Destinatario), in accordo con quest’ultimo. 
+Un Ordine pre-concordato è composto da una o più linee d’ordine , in cui sono indicati il bene o il 
+servizio oggetto dell’acquisto, la quantità e il prezzo. 
+**L’Ordine pre-concordato è predisposto nel formato descritto dalla specifica PEPPOL Order Agreement transaction 3.0.**
+Un Ordine pre-concordato può: 
+- determinare, indipendentemente da altri Ordini pre-concordati precedentemente emessi, i 
+beni e/o i servizi che il Cliente intende acquistare e le relative istruzioni per eseguire la 
+fornitura (Ordine pre-concordato iniziale). Un Ordine pre-concordato iniziale non 
+contiene riferimenti ad altri Ordini pre-concordati
+- determinare, indipendentemente da altri Ordini pre-concordati precedentemente emessi, i 
+beni e/o i servizi che il Cliente intende acquistare e le relative istruzioni per eseguire la 
+fornitura e, tuttavia, essere genericamente relazionato a un altro Documento (Ordine preconcordato iniziale collegato). Un Ordine pre-concordato iniziale collegato contiene il 
+riferimento al Documento che a cui è collegato e l’indicazione che si tratta di un mero 
+“collegamento”. 
+- revocare un Ordine pre-concordato precedentemente emesso (Ordine pre-concordato di 
+revoca). L’Ordine pre-concordato di revoca è un Ordine pre-concordato che contiene 
+l’indicazione che si tratta di una “revoca” (“Cancelled”) e il riferimento all’Ordine preconcordato che si intende revocare, inoltre ha una sola linea d’ordine priva di contenuto.
+- sostituire un Ordine pre-concordato precedentemente emesso (Ordine pre-concordato 
+sostitutivo). La Modifica di ordine pre-concordato è un nuovo Ordine pre-concordato, 
+completo di tutte le linee d’ordine, che contiene l’indicazione che si tratta di una 
+“sostituzione” (“Revised”) e il riferimento all’Ordine pre-concordato che si intende 
+modificare.        
 
-Zamjene i Opozivi, redom, zamjenjuju i poništavaju kako unaprijed dogovorenu Narudžbu navedenu, tako i sve druge Zamjene i Opozive, već poslane, koje se odnose na odgovarajuću inicijalnu unaprijed dogovorenu Narudžbu.  
-Inicijalna unaprijed dogovorena Narudžba može se koristiti isključivo za zadržavanje evidencije da je novi proces koji se namjerava pokrenuti povezan s prethodnim procesom i nikada se ne smije koristiti umjesto drugih alata (Opoziv unaprijed dogovorene Narudžbe, Zamjenska unaprijed dogovorena Narudžba i Odgovor) posebno izrađenih za opoziv, zamjenu (ili dopunu), prihvaćanje ili odbijanje drugog Dokumenta.  
+Le Sostituzioni e le Revoche, rispettivamente, rimpiazzano e annullano sia l’Ordine preconcordato ivi indicato sia tutte le altre Sostituzioni e Revoche, già trasmesse, riferite al relativo 
+Ordine pre-concordato iniziale.        
+L’Ordine pre-concordato iniziale collegato può essere utilizzato esclusivamente per tenere 
+memoria che il nuovo processo che si intende avviare è collegato ad un processo precedente e non 
+deve mai essere usato al posto degli altri strumenti (Ordine pre-concordato di revoca, Ordine preconcordato sostitutivo e Risposta) appositamente realizzati per revocare, sostituire (o integrare), 
+accettare o rifiutare un altro Documento.
 
-## VEZA S PEPPOL STANDARDOM  
+## RELAZIONE CON LO STANDARD PEPPOL
 
-U vezi s naručivanjem robe i usluga, PEPPOL BIS standard verzije 3.0 definira tri tipa dokumenata:          
+Con riferimento all’Ordinazione di acquisto di beni e servizi, lo standard PEPPOL BIS versione 
+3.0 definisce tre tipi di documento:        
 − Order transaction 3.0;       
 − Order Response transaction 3.0;     
 − Order Agreement transaction 3.0;       
-i tri procesa (nazvana profili):        
+e tre processi (denominati profili):      
 − BIS Order only 3.0;     
 − BIS Ordering 3.0;      
 − BIS Order Agreement 3.0.
