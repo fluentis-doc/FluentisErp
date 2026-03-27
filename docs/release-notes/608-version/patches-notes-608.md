@@ -3,6 +3,16 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0087 - 27/03/2026
+
+> -	CO - revisione elaborazione periodi, esclusione delle righe con date competenza nulle (#TT00971/26)
+> -	FI - corretto calcolo interessi trimestrali nella stampa liquidazione iva periodica. Non tenevano conto dell'acconto IVA versato. (#TT00658/26)
+> -	PR - Change in SDD file creation (#TT05663/25)
+> -	PR - corretto calcolo del cashflow per il flusso relativo agli ordini di conto lavoro. In presenza di calcolo del prezzo utilizzando la quantità alternativa non calcolava correttamente il valore dell’imponibile continuando a leggere la quantità e unità di misura principale. Ora utilizza direttamente la proprietà NetAmount. (#TT00873/26)
+> -	SD – Agenti: Abilitata la gestione di provvigioni a valore e in percentuale per lo stesso agente. (#TT00102/26)
+> -	SD - Se l’utente effettua la conversione di un’offerta di vendita con valuta diversa, l’ordine di vendita generato riporterà il tasso di cambio presente nell'offerta. (#TT00952/26)
+> -	WM – Piani di Carico: Rivista gestione UM in creazione lista UDC. (#TT05221/25)
+
 ### Patch 608.1-0086 - 05/02/2026
 
 > - FI - Intrastat - in caso di importo 0 il raggruppamento mantiene il campo del segno impostato a 1 (#TT00417/26)
