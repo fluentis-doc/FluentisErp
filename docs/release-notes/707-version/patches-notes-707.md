@@ -7,28 +7,28 @@ keywords:
 
 ### Patch 707.1-0069 - 26/03/2026
 
-> -	FI - aggiunto un controllo sull’avvenuta esportazione del tracciato telematico per la comunicazione trimestrale liquidazioni iva che blocca la form dalla modifica dei dati già esportati. Modifications in Periodic VAT calculation form can have impact on profiles (#TT00972/26)
-> -	FI - Corretta esportazione del tracciato telematico certificazioni uniche delle ritenute d’acconto che non incrementava correttamente la numerazione delle righe dopo la centesima posizione.(#TT01198/26)
-> -	FI - corretto errore nella stampa Situazione contabile sottoconti che non gestiva correttamente l’opzione Visualizza Valori di apertura. (#TT01256/26)
-> -	FI - la contabilizzazione scritture di assestamento non assegna più le date competenza economica per le righe di rettifica (#TT00789/26)
+> -	FI - aggiunto un controllo sull’avvenuta esportazione del tracciato telematico per la comunicazione trimestrale liquidazioni iva che blocca la form dalla modifica dei dati già esportati. Modifications in Periodic VAT calculation form can have impact on profiles (#TT00972/26)  
+> -	FI - Corretta esportazione del tracciato telematico certificazioni uniche delle ritenute d’acconto che non incrementava correttamente la numerazione delle righe dopo la centesima posizione.(#TT01198/26)  
+> -	FI - corretto errore nella stampa Situazione contabile sottoconti che non gestiva correttamente l’opzione Visualizza Valori di apertura. (#TT01256/26)  
+> -	FI - la contabilizzazione scritture di assestamento non assegna più le date competenza economica per le righe di rettifica (#TT00789/26)  
 > -	FI - revisione contabilizzazione fattura con gestione partite d’acconto, in caso di spese bollo (o altre) aggiuntive ora viene creata una partita separata per l’importo relativo (#TT00891/26)
-> -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti (#TT00769/26)
+> -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti (#TT00769/26)  
 > -	FI- Solving Customization issue regarding FsCostCenter with the extension table procedure (#TT01051/26)
-> -	MES – Corretto bug nell’import webapi delle dichiarazioni di produzione riguardo al tag QuantityProduced (#TT01226/26).
-> -	MES - MES Solution - Gestione del blocco proposta fase in soluzione tramite le "Causali di sospensione". Alla sospensione di un'attività, indicando una "Causale di sospensione" con l'indicazione di "Blocco proposta fase in M.E.S.", alla successiva proposta delle fasi in lavorazione per il Centro di lavoro, la fase sospesa non verrà visualizzata. Per poter proseguire nella lavorazione della fase sospesa è necessario selezionarla, tramite il pulsante "Seleziona nuove fasi", ed effettuare una dichiarazione di ripresa. (#TT05365/25)
-> -	PR - corretto calcolo del cashflow per il flusso relativo agli ordini di conto lavoro. In presenza di calcolo del prezzo utilizzando la quantità alternativa non calcolava correttamente il valore dell’imponibile continuando a leggere la quantità e unità di misura principale. Ora utilizza direttamente la proprietà NetAmount. (#TT00873/26)
-> -	PR - Modificato algoritmo di importazione file cbi per i movimenti bancari per considerare tutti i possibili caratteri di controllo LF e CRLF (#TT01009/26)
-> -	SCM – Costi di magazzino:
-> -	SD - La data trasporto del DDT viene valorizzata con data e ora di creazione, non ereditata dall’ordine cliente. (#TT01187/26)
-> -	SD - Numerazione ddt di conto lavoro, ddt di vendita, corretto errore di numerazione nel caso in cui Progressione data numero sia attivo. (#TT00598/26)
-> -	SD - WebAPI importa bolla di consegna e fattura di vendita - consente quantità superiori a quella dell'articolo dell'ordine di vendita correlato (TT01384/26)
-> -	SD- Corretta la visualizzazione dei decimali nella quantità alternativa nel tab Riepilogo. Modifications in the object forms SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, SalesOffer and SalesOrder can have impact on profiles. (#TT01238/26)
-> -	SD - Conversione offerta in ordine e progetto, gestita propagazione IBAN impostato nella tab pagamenti dell’offerta, anche nella tab pagamenti del progetto (#TT01141/26)
-> -	SH – Anagrafica cliente – Tab Listini: impedito di poter specificare nella stessa riga sia un listino generale che un listino per cliente. (#TT1264/26)
-> -	Una modifica del valore dell’articolo nella fattura di acquisto (sconti, cambio valuta, divisa, prezzo, ecc.) aggiorna sempre: il documento precedente collegato, la registrazione di magazzino (e la registrazione contabile) anche se non direttamente collegata al documento in cui avviene la modifica del valore. (#TT01127/26, #TT00868/26 and #TT01096/25 )
-> -	Una modifica della quantità nella fattura di acquisto non aggiorna mai le quantità nel documento precedente collegato; la variazione della quantità ha effetto sul magazzino solo se la modifica viene effettuata direttamente nel documento che ha generato il movimento di magazzino.
-> -	WEBAPI Import: Risolto l'errore in importazione di un file XML/Json contenente solo proprietà referenze (#TT1197/26)
-> -	WM – GetItemsStock: Aggiunte request property per unità di misura alternativa. (#TT00959/26)
+> -	MES – Corretto bug nell’import webapi delle dichiarazioni di produzione riguardo al tag QuantityProduced (#TT01226/26).  
+> -	MES - MES Solution - Gestione del blocco proposta fase in soluzione tramite le "Causali di sospensione". Alla sospensione di un'attività, indicando una "Causale di sospensione" con l'indicazione di "Blocco proposta fase in M.E.S.", alla successiva proposta delle fasi in lavorazione per il Centro di lavoro, la fase sospesa non verrà visualizzata. Per poter proseguire nella lavorazione della fase sospesa è necessario selezionarla, tramite il pulsante "Seleziona nuove fasi", ed effettuare una dichiarazione di ripresa. (#TT05365/25)  
+> -	PR - corretto calcolo del cashflow per il flusso relativo agli ordini di conto lavoro. In presenza di calcolo del prezzo utilizzando la quantità alternativa non calcolava correttamente il valore dell’imponibile continuando a leggere la quantità e unità di misura principale. Ora utilizza direttamente la proprietà NetAmount. (#TT00873/26)  
+> -	PR - Modificato algoritmo di importazione file cbi per i movimenti bancari per considerare tutti i possibili caratteri di controllo LF e CRLF (#TT01009/26)  
+> -	SCM – Costi di magazzino:  
+>> -	Una modifica del valore dell’articolo nella fattura di acquisto (sconti, cambio valuta, divisa, prezzo, ecc.) aggiorna sempre: il documento precedente collegato, la registrazione di magazzino (e la registrazione contabile) anche se non direttamente collegata al documento in cui avviene la modifica del valore. (#TT01127/26, #TT00868/26 and #TT01096/25 )  
+>> -	Una modifica della quantità nella fattura di acquisto non aggiorna mai le quantità nel documento precedente collegato; la variazione della quantità ha effetto sul magazzino solo se la modifica viene effettuata direttamente nel documento che ha generato il movimento di magazzino.  
+> -	SD - La data trasporto del DDT viene valorizzata con data e ora di creazione, non ereditata dall’ordine cliente. (#TT01187/26)  
+> -	SD - Numerazione ddt di conto lavoro, ddt di vendita, corretto errore di numerazione nel caso in cui Progressione data numero sia attivo. (#TT00598/26)  
+> -	SD - WebAPI importa bolla di consegna e fattura di vendita - consente quantità superiori a quella dell'articolo dell'ordine di vendita correlato (TT01384/26)  
+> -	SD- Corretta la visualizzazione dei decimali nella quantità alternativa nel tab Riepilogo. Modifications in the object forms SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, SalesOffer and SalesOrder can have impact on profiles. (#TT01238/26)  
+> -	SD - Conversione offerta in ordine e progetto, gestita propagazione IBAN impostato nella tab pagamenti dell’offerta, anche nella tab pagamenti del progetto (#TT01141/26)  
+> -	SH – Anagrafica cliente – Tab Listini: impedito di poter specificare nella stessa riga sia un listino generale che un listino per cliente. (#TT1264/26)   
+> -	WEBAPI Import: Risolto l'errore in importazione di un file XML/Json contenente solo proprietà referenze (#TT1197/26)  
+> -	WM – GetItemsStock: Aggiunte request property per unità di misura alternativa. (#TT00959/26)  
 > -	WM - WebApi PickingWarehousePosting: Impostato messaggio Success in caso di completamento senza errori. (#TT01179/26)
 
 ### Patch 707.1-0068 - 12/03/2026
