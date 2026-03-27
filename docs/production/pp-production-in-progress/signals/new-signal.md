@@ -1,33 +1,64 @@
 ---
-title: Nuova dichiarazione
+title: Nuova dichiarazione di produzione
+description: Guida completa alla creazione e gestione manuale delle dichiarazioni di produzione in Fluentis ERP.
+keywords:
+  - dichiarazioni di produzione
+  - MES
+  - ordine di produzione
+  - avanzamento produzione
+  - attrezzaggio
+  - materiali
+  - UDC
 sidebar_position: 2
+schema: TechArticle
+tags:
+  - Produzione
+  - Dichiarazioni
+  - MES
+  - ERP
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Normalmente le *Dichiarazioni di produzione* vengono generate automaticamente tramite Fluentis [MES](/docs/production/mes/mes-intro), ma l'utente ha anche la possibilità di generarle manualmente utilizzando questa form.
+# Nuova dichiarazione di produzione
 
-All'apertura della form è necessario inserire l'ordine di produzione con l’indicazione di anno, numero e lotto, manualmente o tramite l’help dedicato, e la fase e sottofase che si vuole dichiarare sempre in maniera manuale o tramite l’help.         
-In questo modo vengono caricati in automatico i dati della fase selezionata nella parte superiore della form, dove possiamo vedere le informazioni relative al tipo ordine di produzione, alla commessa con anno, numero e tipo, al progetto associato, il centro di lavoro e la macchina su cui si sta eseguendo la fase, la data di fine prevista lavorazione, e le informazioni dell’articolo con eventuale variante.        
-L’indicazione della quantità totale da produrre, la quantità prodotta che è pari alla somma delle quantità dichiarate dall’ultima fase produttiva e movimentabile del ciclo, quindi corrispondente all’articolo finito, e la quantità di fase prodotta che è data dalla somma delle quantità presenti nella dichiarazione della fase stessa.
+Le *Dichiarazioni di produzione* vengono normalmente generate automaticamente tramite [Fluentis MES](/docs/production/mes/mes-intro).  
+In alternativa, l’utente può crearle manualmente mediante questa form dedicata.
+
+## Inserimento ordine di produzione
+
+All’apertura della form è necessario:
+
+1. Inserire l’ordine di produzione (anno, numero e lotto), manualmente oppure tramite help.  
+2. Selezionare fase e sottofase, sempre manualmente o tramite help dedicato.
+
+In questo modo vengono *caricati in automatico i dati della fase* selezionata nella parte superiore della form, dove possiamo vedere le informazioni relative al tipo ordine di produzione, alla commessa con anno, numero e tipo, al progetto associato, il centro di lavoro e la macchina su cui si sta eseguendo la fase, la data di fine prevista lavorazione, e le informazioni dell’articolo con eventuale variante.        
+L’indicazione della quantità totale da produrre, la **quantità prodotta** che è pari alla somma delle quantità dichiarate dall’ultima fase produttiva e movimentabile del ciclo, quindi corrispondente all’articolo finito, e la **quantità di fase prodotta** che è data dalla somma delle quantità presenti nella dichiarazione della fase stessa.
 
 Il campo **barcode** presente in testata, viene utilizzato per l'inserimento dell'Ordine di produzione o della Fase da dichiarare.    
-Il barcode deve essere composto da un identificativo fisso per riconoscere l'Ordine di produzione (707) oppure la Fase di un ordine di produzione (718), il carattere di separazione "-" e l'identificativo o dell'Ordine di produzione o della Fase che si desidera dichiarare.   
+Il **barcode** deve essere composto da un identificativo fisso per riconoscere l'Ordine di produzione (707) oppure la Fase di un ordine di produzione (718), il carattere di separazione "-" e l'identificativo o dell'Ordine di produzione o della Fase che si desidera dichiarare.   
 
-Esempio: 707-1234 oppure 718-98765
+*Esempio*: 707-1234 oppure 718-98765
 
-Nella griglia centrale vanno inserite le righe della dichiarazione di produzione.
-Il primo dato da inserire è lo *Stato della dichiarazione* che può assumere i seguenti valori:
+#### Inserimento righe dichiarazione
+
+Nella parte centrale si gestiscono le righe della dichiarazione.  
+Il primo dato richiesto è lo **Stato della dichiarazione**, con le possibili tipologie:
 
 - *Apertura*: permette di creare una dichiarazione di produzione di apertura;    
 - *Sospensione*: permette di creare una dichiarazione di produzione di sospensione;    
 - *Ripresa*: permette di creare una dichiarazione di produzione di ripresa; va inserito solo dopo una *Sospensione*;          
 - *Avanzamento*: permette di creare una dichiarazione di produzione di avanzamento;    
-- *Chiusura*: permette di creare una dichiarazione di produzione di chiusura;    
+- *Chiusura*: permette di creare una dichiarazione di produzione di chiusura  
 
-Ogni dichiarazione di produzione deve avere come prima riga una dichiarazione di apertura che determina il momento in cui inizia la lavorazione.              
-Questa può essere seguita da un avanzamento o direttamente da una fase di chiusura a seconda dei casi. La differenza sostanziale sta nel fatto che la chiusura non permette di inserire ulteriori righe di dichiarazione, mentre l'avanzamento si.         
-Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una di ripresa, nel caso in cui sia necessario fermare la produzione per qualche motivo.
+:::important Nota
+Ogni dichiarazione di produzione deve avere come prima riga una dichiarazione di **apertura** che determina il momento in cui inizia la lavorazione.              
+Questa può essere seguita da un avanzamento o direttamente da una fase di **chiusura** a seconda dei casi. La differenza sostanziale sta nel fatto che la chiusura non permette di inserire ulteriori righe di dichiarazione, mentre l'avanzamento si.
+:::
 
-*Pulsante specifico*:  
+Sono inoltre possibili sequenze del tipo *Sospensione → Ripresa*, nel caso in cui sia necessario fermare la produzione per qualche motivo.
+
+#### Pulsanti specifici
 
 > **Salva**: permette di salvare le modifiche effettuate;        
 > **Nuova dichiarazione di produzione**: permette di inserire una nuova riga della dichiarazione;          
@@ -41,8 +72,7 @@ Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una
 > **Registrazione dichiarazioni**: permette di creare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata;          
 > **Ripristino dichiarazioni**: permette di annullare la registrazione del movimento di magazzino relativo alla riga di dichiarazione selezionata.                                     
 
-*Campi specifici*: 
-
+#### Campi specifici  
 **Registrato**: indica che la riga della dichiarazione è stata registrata ed è stato creato il relativo movimento di magazzino;        
 **Data**: indica la data di inizio relativa alla riga della dichiarazione;         
 **Ora**: indica l'ora di inizio relativa alla riga della dichiarazione;         
@@ -95,13 +125,12 @@ Inoltre, è anche possibile inserire dichiarazioni di sospensione seguite da una
 
 La parte inferiore della form si compone di una serie di tab relativi alla riga della dichiarazione selezionata.
 
-## Materiali
+### Materiali  
 
 In questo tab vengono riportati automaticamente i materiali utilizzati nella fase per la realizzazione dell'articolo da produrre, ma l'utente può modificare i dati e/o aggiungere ulteriori materiali in base alle necessità.      
 Ovviamente, per far si che i materiali siano riportati automaticamente, la fase deve essere l'ultima di tipo *Produttivo* e *Movimentabile* presente nel ciclo; nel caso in cui non fosse l'ultima, deve comunque essere di tipo *Produttivo* e *Movimentabile* ed ad essa devono essere stati assegnati dei materiali direttamente.  
 
-*Campi specifici*: 
-
+#### Campi specifici  
 **Registrato**: indica che il materiale della riga della dichiarazione selezionata è stato registrato ed è stato creato il relativo movimento di magazzino;        
 **Unità di carico materiale**: permette di indicare l'unità di carico da cui prelevo il materiale;             
 **Classe**: indica la classe dell'articolo;         
@@ -129,7 +158,7 @@ Ovviamente, per far si che i materiali siano riportati automaticamente, la fase 
 
 Inoltre, nella parte sottostante è possibile inserire i lotti e anche i serial number nelle relative griglie.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
+##### *Lotti* 
 
 **Lotto**: indica il numero di lotto del materiale selezionato;        
 **Codice lotto fornitore**: indica il numero di lotto del fornitore del materiale selezionato;         
@@ -139,7 +168,7 @@ La griglia dei *Lotti* si compone delle seguenti colonne:
 **Data scadenza**: indica la data scadenza del lotto del materiale selezionato;         
 **Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore del materiale selezionato.   
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
+#### Serial number  
 
 **Barcode**: il codice barcode riporta il numero di serial number e le altre informazione relative. Per tutte le informazioni su come codificare i barcode da leggere in questo campo consultare la pagina relativa al [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer);          
 **Tipo Serial number**: indica il tipo di serial number del materiale selezionato;    
@@ -148,12 +177,11 @@ La griglia dei *Serial number* si compone delle seguenti colonne:
 **Annullato**: indica che il serial number è in stato annullato;      
 **Lotto**: indica il codice lotto del serial number del materiale selezionato.             
 
-## Squadra
+### Squadra
 
 Questo tab permette di gestire i membri della squadra che svolgono la lavorazione relativa alla riga della dichiarazione selezionata andando ad indicare per ognuno data inizio e fine lavorazione.
 
-*Campi specifici*: 
-
+#### Campi specifici  
 **Codice**: indica il codice dell'operatore che sta lavorando sulla dichiarazione;             
 **Cognome**: indica il cognome dell'operatore che sta lavorando sulla dichiarazione;     
 **Nome**: indica il nome dell'operatore che sta lavorando sulla dichiarazione;        
@@ -169,15 +197,15 @@ Questo tab permette di gestire i membri della squadra che svolgono la lavorazion
 **Data ultima modifica**: indica la data di ultima modifica del record;         
 **Operatore**: indica l'utente di creazione del record.
 
-## Articoli alternativi
+### Articoli alternativi
 
-Questo tab permette di aggiungere e gestire tutti quegli articoli (spin-off) che vengono realizzati come conseguenza della produzione di un articolo principale.       
+Permette di gestire articoli spin‑off generati come conseguenza della produzione di un articolo principale.
+
 Quindi, è possibile inserirli nella griglia dedicata con la possibilità di gestirne anche i relativi lotti e serial numbers.      
 Ovviamente, i lotti e serial numbers sono riferiti alla riga dell'articolo alternativo selezionato.      
 I movimenti di carico degli articoli alternativi saranno effettuati con il magazzino, la causale e l’ubicazione indicate sulla riga.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
-
+#### Lotti  
 **Lotto**: indica il numero di lotto dell'articolo;  
 **Tipo codice lotto**: indica il tipo del codice lotto dell'articolo;         
 **Tipo lotto**: indica il tipo del lotto dell'articolo;         
@@ -189,37 +217,35 @@ La griglia dei *Lotti* si compone delle seguenti colonne:
 **Data scadenza**: indica la data scadenza del lotto dell'articolo;         
 **Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore dell'articolo.   
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
-    
+#### Serial number      
 **Codice Serial number**: indica il serial number dell'articolo;      
 **Tipo Serial numnber**: indica il tipo di serial number dell'articolo;  
 **Serial number cliente**: indica il serial number del cliente per quell'articolo;      
 **Serial number fornitore**: indica il serial number del fornitore per quell'articolo;      
 **Data inizio**: indica la data inizio del serial number dell'articolo;    
 **Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number dell'articolo.             
+**Lotto**: indica il codice lotto del serial number dell'articolo.      
 
-## Sospensioni
+### Sospensioni
 
 Questo tab permette di specificare più causali di sospensione con i relativi minuti e si abilità solamente in corrispondenza di una riga con stato dichiarazione *Sospensione*.  
 
-## Scarto
+### Scarto
 
 Questo tab permette di specificare più magazzini e causali di scarto con le relative quantità e si abilità solamente se viene dichiarata una quantità scartata.  
 
-## Extra Data
+### Extra Data
 
 Permmette di gestire e visualizzare gli Extra Data relativi alla dichiarazione .
 
 Per una descrizione approfondita sugli extra data si rimanda all'articolo [Extra data](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
-## Lotti e Serial Number
+### Lotti e Serial Number
 
-Nel tab **Lotti e Serial numbers**, in fase di registrazione della dichiarazione di produzione, vengono riportati in automatico i lotti e i serial numbers degli articoli prodotti in base alla logica indicata nel tab [Lotti e Serial numbers](/docs/erp-home/registers/items/create-new-item) dell’anagrafica articolo.      
+In questo tab, in fase di registrazione della dichiarazione di produzione, vengono riportati in automatico i lotti e i serial numbers degli articoli prodotti in base alla logica indicata nel tab [Lotti e Serial numbers](/docs/erp-home/registers/items/create-new-item) dell’anagrafica articolo.      
 Nel caso in cui fosse indicato un lotto nel campo lotto della riga di dichiarazione, gli articoli prodotti verranno registrati con questo numero di lotto, che ha priorità rispetto alle regole inserite in anagrafica.
 
-La griglia dei *Lotti* si compone delle seguenti colonne:
-
+#### Lotti  
 **Lotto**: indica il numero di lotto dell'articolo;  
 **Tipo codice lotto**: indica il tipo del codice lotto dell'articolo;         
 **Tipo lotto**: indica il tipo del lotto dell'articolo;         
@@ -231,17 +257,27 @@ La griglia dei *Lotti* si compone delle seguenti colonne:
 **Data scadenza**: indica la data scadenza del lotto dell'articolo;         
 **Conto/Sottoconto/Descrizione conto**: indicano rispettivamente conto, sotto conto e descrizione del cliente/fornitore dell'articolo.   
 
-La griglia dei *Serial number* si compone delle seguenti colonne:
-    
+#### Serial number     
 **Codice Serial number**: indica il serial number dell'articolo;      
 **Tipo Serial number**: indica il tipo di serial number dell'articolo;  
 **Serial number cliente**: indica il serial number del cliente per quell'articolo;      
 **Serial number fornitore**: indica il serial number del fornitore per quell'articolo;      
 **Data inizio**: indica la data inizio del serial number dell'articolo;    
 **Annullato**: indica che il serial number è in stato annullato;      
-**Lotto**: indica il codice lotto del serial number dell'articolo.             
+**Lotto**: indica il codice lotto del serial number dell'articolo.
 
-Per dettagli sul funzionamento comune delle form fare riferimento al link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+## Riepilogo e approfondimenti
 
+Questa guida descrive in dettaglio la gestione manuale delle *Dichiarazioni di produzione* in Fluentis ERP, incluse:
 
+- Inserimento ordine e fase  
+- Creazione righe di dichiarazione  
+- Stati disponibili e loro logiche  
+- Materiali, squadra, scarti, sospensioni  
+- Gestione UDC e movimenti di magazzino  
 
+Per approfondire:
+
+- [Funzionalità, pulsanti e campi comuni](/docs/guide/common)  
+- [MES – Introduzione](/docs/production/mes/mes-intro)  
+- [Lista prelievo materiali](/docs/production/pp-production-in-progress/picking-materials-list)
