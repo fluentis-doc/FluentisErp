@@ -27,14 +27,14 @@ La form si apre tramite il percorso **Parametri > Produzione > Parametri Ordini 
 
 **Registrazione automatica dichiarazioni**: è utilizzato nella form delle dichiarazioni di produzione presente nel WMS, se attivo, fa si che appena inserisco la dichiarazione questa viene anche registrata automaticamente;
 
-**Associa lotto per lista prelievo**: se attivo, questo flag indica che quando si crea una lista di prelievo tramite la relativa procedura, per i materiali gestiti a lotti il sistema va a scegliere i lotti che sono da prelevare per quel/quegli ordini di produzione che ho selezionato; se non viene attivato vuol dire che l'utente dovrà andare a dichiarare manualmente nel picking quali sono i lotti che sono stati prelevati;
+**Associa lotto per lista prelievo**: se attivo, questo flag indica che quando si crea una lista di prelievo tramite la relativa procedura, per i materiali gestiti a lotti il sistema va a scegliere i lotti che sono da prelevare per quel/quegli ordini di produzione che ho selezionato; se non viene attivato vuol dire che l'utente dovrà andare a dichiarare manualmente nel Picking quali sono i lotti che sono stati prelevati;
 
 **Aggiorna materiali utilizzati nell’ordine di produzione**: se attivo, al variare della quantità dichiarata in una dichiarazione di produzione, verrà mostrato un messaggio che chiede di ricalcolare o meno le quantità utilizzate dei materiali; se non è attivo, il ricalcolo dei materiali avviene automaticamente;
 
 **Abilita controllo presenze nel MES**: se attivo, abilita il controllo presenze all'interno di [Fluentis MES](/docs/production/mes/mes-intro), Il controllo si basa sulla tabella *Fluentis.HR_BadgeRecords*.       
 In questa i campi obbligatori per il controllo sono: *HRBR_Resource_HRR_Id*, *HRBR_RecordDateTime*, *HRBR_BadgeRecordType_HRBRTY_Id*, che può assumere i valori E = Ingresso o U = Uscita.
 Per ogni riga ci può essere solo l’orario di entrata o quello di uscita, quindi in giorno ci saranno 4 righe per ogni utente, ad esempio:     
-- 2024-01-02 08:30:00.000 - tipo E 
+- 2024-01-02 08:30:00.000 - Tipo E 
 - 2024-01-02 12:30:00.000 - Tipo U 
 - 2024-01-02 14:00:00.000 - Tipo E 
 - 2024-01-02 18:00:00.000 - Tipo U      
@@ -44,6 +44,8 @@ Questi verranno poi incrociati con i valori di inizio e fine lavoro di ciascun o
 **Mostra la versione per componente dentro distinta base**: se attivo, abilita il campo della versione presente nel tab componente della distinta base.
 
 **Abilita il salvataggio automatico sulle dichiarazioni di produzione**: se attivo, abilita il salvataggio automatico all'interno delle dichiarazioni di produzione.
+
+**Formato ora**: Tramite questo parametro è possibile parametrizzare il formato visualizzato degli orari di dichiarazione, di inizio e fine lavoro. I formati disponibili sono: ore, minuti e secondi oppure ore e minuti (formato predefinito). La parametrizzazione opera: nelle Fasi degli Ordini pianificati e di produzione, nelle Dichiarazioni di produzione, nelle Dichiarazioni della Soluzione M.E.S. e nelle funzionalità di Sequenza fasi e Capacità centri di lavoro.   
 
 Ci sono infine altre quattro sezioni: **Fogli di lavoro Gestiti per**, **Periodo Analisi**, **Valorizzazione materiali a costo**, **Proposta sequenza fase**.
 
@@ -62,6 +64,7 @@ Ci sono infine altre quattro sezioni: **Fogli di lavoro Gestiti per**, **Periodo
 
 :::note Nota
 Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto, ovviamente tra i movimenti effettuati con causali di carico con il flag aggiorna costo ultimo o medio (a seconda del valore indicato nel campo **Tipo di costo**) e il flag di interesse fiscale attivi; se non trova nessun movimento con queste caratteristiche va a cercare tra i movimenti che hanno caricato quel lotto, se non trova nemmeno questi va a cercare tra tutti i movimenti di quell'articolo. Se non ho nessun movimento di carico per quell'articolo va a vedere nei rispettivi campi costo ultimo, medio e standard dell'anagrafica dell'articolo.
+:::
 
 **Proposta sequenza fase**: la sezione consente di scegliere, durante la creazione di un ciclo di lavoro, il numero di sequenza della fase che viene proposto, che può essere preso dal numero di sequenza della fase standard oppure come progressivo dell’ordine di inserimento, indicando anche il valore di step.
 
@@ -86,7 +89,7 @@ La priorità per lo **scarico** sarà data nell'ordine da:
 
 In questo tab quindi, si potranno impostare i magazzini relativi alle *Materie Prime*, ai *Semilavorati*, ai *Prodotti finiti* e ad eventuali *Scarti* con le relative causali di carico e scarico.
 
-Per poter impostare uno di questi magazzini sarà sufficiente selezionare tramite le relative combo box il magazzino e le causali (precodificati nelle rispettive tabelle [Magazzini](/docs/configurations/tables/logistics/warehouses) e [Causali](/docs/configurations/tables/logistics/warehouse-templates)) che si vogliono impostare.
+Per poter impostare uno di questi magazzini sarà sufficiente selezionare tramite le relative combo box il magazzino e le causali (pre-codificati nelle rispettive tabelle [Magazzini](/docs/configurations/tables/logistics/warehouses) e [Causali](/docs/configurations/tables/logistics/warehouse-templates)) che si vogliono impostare.
 
 Oltre a questi magazzini principali vi sono i magazzini W.I.P. che si attivano selezionando la voce W.I.P. e procedendo alla selezione all'interno della combo box dei magazzini e delle causali come viene fatto per gli altri magazzini.
 
