@@ -37,7 +37,7 @@ Nel caso in cui l'utente confermi la riga, di un articolo gestito a lotti e per 
 **Pulsanti specifici**
 > **Dettaglio spunta**: permette di posizionarsi sul tab **Articoli spuntati**;        
 > **Conferma**: permette di confermare i dati inseriti e successivamente di caricare i dati relativi alla riga successiva;          
-> **Nuova UDC**: permette di creare una nuova *Unità di carico* dopo aver selezionato il tipo.         
+> **Nuova UDC**: permette di creare una nuova *Unità di carico* dopo aver selezionato il tipo. Il gruppo dell'UDC sarà sempre posta uguale al numero del picking mentre il numero verrà calcolato progressivamente a parità di anno, tipo UDC e gruppo. 
 
 Al di sotto della quantità prelievo, è presente una griglia in sola lettura con le seguenti colonne: *Quantità*, *Ubicazione* e *Lotto*. Questa si aggiorna dinamicamente ed ad esempio, se viene solo indicato l’articolo deve fare vedere tutte le ubicazioni con giacenza > 0 in cui c’è quell’articolo, se è indicato anche il lotto, deve far vedere tutte le ubicazioni con giacenza > 0 in cui c’è quell’articolo con quel lotto.
 
