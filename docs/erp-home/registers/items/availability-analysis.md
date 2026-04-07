@@ -58,18 +58,74 @@ Dopo aver impostato i vari filtri e flag, si andrà a cliccare sul pulsante **Ri
 
 ### Disponibilità prodotto
 
-Nelle griglie di risultato per magazzino si vedranno le varie righe di disponibilità in base ai documenti oppure la riga cumulativa in base ai magazzini. Quindi si potranno vedere le disponibilità generali in base agli impegni di tutti i magazzini (Totale) oppure le disponibilità per singolo magazzino (tutti i vari tab con i nomi dei magazzini codificati nel database).
+Nelle griglie di risultato per magazzino si vedranno le varie righe di disponibilità in base ai documenti oppure la riga cumulativa in base ai magazzini. Quindi si potranno vedere le disponibilità generali in base agli impegni di tutti i magazzini (Totale) oppure le disponibilità per singolo magazzino (una scheda per ogni magazzino su cui è attiva l'analisi).
+
+Le colonne visualizzate in questa griglia sono:
+
+- *Classe*, *Codice articolo*, *Descrizione articolo*, *Codice variante* e *U.M.*: dati anagrafici dell'articolo;
+
+- *Data*: Data a cui fanno riferimento i dati visualizzati in riga; 
+
+- *Disponibilità*: Disponibilità calcolata alla data; 
+
+- *Giacenza Operativa*: Giacenza totale dell'articolo nei magazzini selezionati eslusi i lotti chiusi e/o non disponibili; 
+
+- *Giacenza Operativa Disponibile*: *Giacenza Operativa* meno la *Giacenza Operativa Non Disponibile* (vedi colonna successiva); 
+
+- *Giacenza Operativa Non Disponibile*: E' definita non disponibile la giacenza operativa che rientra in uno dei seguenti casi:
+  - è collocata in una ubicazione bloccata,
+  - è stata caricata con un movimento il cui flag "available stock" è spento (carico udc di riservazione),
+  - è riferita a un lotto con stato contrassegnato come non disponibile,
+  - è relativa a un movimento di fase standard (intermedio di produzione);
+
+- *In ritardo*: rappresenta la somma algebrica di tutti i documenti in ritardo (con data consegna antecedente ad oggi) presenti nella disponibilità, quindi è dato dalla somma dei valori nella colonna domanda meno la somma dei valori della colonna offerta ma solo per i documenti in ritardo.
+
+- *Ordini fornitori*: Disponibilità da ordini fornitori non forzatamente evasi e con residuo da consegnare; 
+
+- *DDT di acquisto*: Disponibilità da DDT di acquisto non caricati; 
+
+- *Fatture di acquisto*: Disponibilità da Fatture di acquisto immediate non caricate; 
+
+- *Ricevimento Merci*: Disponibilità da documenti di Ricevimento Merci; 
+
+- *Richieste di acquisto*: Disponibilità da documenti RDA nel magazzino dei parametri di produzione dei materiali; 
+
+- *Carico da Conto Lavoro*: Disponibilità da Ordini di Conto Lavoro non forzatamente evasi e con residuo da consegnare; 
+
+- *Carico da Ordini Pianificati*: Disponibilità da Ordini Pianificati; 
+
+- *Carico da Ordini di Produzione*: Disponibilità da Ordini di Produzione non forzatamente evasi e con residuo da produrre; 
+
+- *Ordini Clienti*: Disponibilità da documenti Ordini Clienti non forzatamente evasi e con residuo da spedire; 
+
+- *DDT*: Disponibilità da DDT di Vendita non scaricati; 
+
+- *Fatture di Vendita*: Disponibilità da Fatture di Vendita immediate non scaricate; 
+
+- *Picking*: Disponibilità da documenti di Picking non forzatamente evasi e con residuo da prelevare; 
+
+- *Scarico da Conto Lavoro*: Disponibilità da documenti di bolla di conto lavoro non forzatamente evasi e con residuo da spedire; 
+
+- *Scarico da Ordini Pianificati*: Disponibilità derivante da fabbisogni di Ordini Pianificati non evasi; 
+
+- *Scarico da Ordini di Produzione*: Disponibilità derivante da fabbisogni di Ordini di Produzione non evasi; 
+
+- *Commesse di produzione*: Disponibilità da Commesse di produzione non ancora schedulate; 
+
+- *Carico da ordine Ddmrp*: Disponibilità da ordini Ddmrp; 
+
+- *Prelievo da ordine Ddmrp*: Disponibilità derivante da fabbisogni di Ordini Ddmrp; 
+
 
 ### Dettagli
 
 Nella griglia di dettaglio si vedranno invece, cliccando sulla riga d'interesse nella griglia di magazzino, tutti i documenti collegati a quella singola riga. Quindi l'ordine cliente a cui fa riferimento, l'ordine di produzione e la commessa di riferimento ed eventuali documenti di vendita se presenti (come DDT, fatture).
 
-*In ritardo*: rappresenta la somma algebrica di tutti i documenti in ritardo (con data consegna antecedente ad oggi) presenti nella disponibilità, quindi è dato dalla somma dei valori nella colonna domanda meno la somma dei valori della colonna offerta ma solo per i documenti in ritardo.
-
 Tramite un doppio click del tasto sx del mouse sulla riga seleziona è possibile aprire il relativo documento.     
 
 :::note Nota
 La disponibilità dell'articolo da produrre è data dalle fasi con i flag **produttiva** e **movimentabile** attivi presenti nel [Ciclo di lavoro](/docs/erp-home/registers/production/routes/new-route).
+Tranne l'ultima di tali fasi che versa l'articolo prodotto tutte le altre movimentano i semilavorati intermedi dell'articolo da produrre, ovvero la giacenza per fase standard. 
 :::
 
 :::important Documenti in Analisi Disponibilità
@@ -83,7 +139,6 @@ Nel caso della domanda dipendente e delle RDA che non hanno un proprio magazzino
 :::
 
 Per quanto riguarda la descrizione delle funzionalità comuni a tutti le form, presenti nella ribbon bar, si rimanda all'articolo relativo ai [Pulsanti Comuni](/docs/guide/common/common-buttons), in particolare per le funzionalità delle stampe si rimanda anche all'articolo [Anteprima e Stampa](/docs/guide/common/operations-with-data/reports).
-
 
 
 *Pulsante specifico*:
