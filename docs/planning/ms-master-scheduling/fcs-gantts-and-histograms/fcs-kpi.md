@@ -1,5 +1,5 @@
 ---
-title: K.P.I. F.C.S.
+title: K.P.I. A.F.C.S.
 sidebar_position: 3
 ---
 

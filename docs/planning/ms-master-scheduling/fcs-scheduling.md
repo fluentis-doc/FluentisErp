@@ -1,11 +1,11 @@
 ---
-title: Schedulazione F.C.S.
+title: Schedulazione A.F.C.S.
 sidebar_position: 5
 ---
 
 :::important A cosa serve
-Il sistema AFCS Fluentis consente di simulare i processi produttivi, di approvvigionamento, vendita e distribuzione di una organizzazione.
-Fluentis AFCS esegue una simulazione di dettaglio molto realistica che consente di raggiungere i seguenti obiettivi:
+Il sistema A.F.C.S. Fluentis consente di simulare i processi produttivi, di approvvigionamento, vendita e distribuzione di una organizzazione.
+Fluentis A.F.C.S. esegue una simulazione di dettaglio molto realistica che consente di raggiungere i seguenti obiettivi:
 - Stimare con precisione le date di consegna a clienti interni ed esterni all’organizzazione (anche in ambiti DDMRP).
 - Ottimizzare i processi produttivi in modo da bilanciare al meglio costo di produzione e livello di servizio.
 - Individuare le criticità che riducono le prestazioni del sistema produttivo, e di conseguenza simulare azioni migliorative (per esempio straordinari, esternalizzazione di attività, incremento della capacità produttiva etc.).
@@ -15,9 +15,9 @@ Fluentis AFCS esegue una simulazione di dettaglio molto realistica che consente 
 - Aggiornare rapidamente il piano di produzione in base all’avanzamento effettivo, ed al presentarsi di imprevisti (per esempio mancanza inattesa di personale, guasto di un macchinario etc.).
 :::
 
-Per avviare una sessione di simulazione FCS bisogna prima di tutto eseguire la fase di importazione in RAM dei dati del database Fluentis.      
+Per avviare una sessione di simulazione A.F.C.S. bisogna prima di tutto eseguire la fase di importazione in RAM dei dati del database Fluentis.      
 Durante questa fase vengono eseguiti molti controlli sulla validità dei dati ai fini della simulazione, ed al termine si possono avere delle segnalazioni di errori, che non permettono di avviare la sessione di simulazione, o delle segnalazioni di avvertimento, che permettono comunque di procedere con la simulazione.      
-Se la fase di importazione si è conclusa senza errori, si può procedere alla simulazione premendo sul tasto **Esegui**, ed alla fine di questa si può salvarne il risultato premendo il tasto **Salva**, ed analizzarne successivamente i dettagli tramite il form [Esecuzioni FCS](/docs/planning/ms-master-scheduling/fcs-execution).       
+Se la fase di importazione si è conclusa senza errori, si può procedere alla simulazione premendo sul tasto **Esegui**, ed alla fine di questa si può salvarne il risultato premendo il tasto **Salva**, ed analizzarne successivamente i dettagli tramite il form [Esecuzioni AFCS](/docs/planning/ms-master-scheduling/fcs-execution).       
 Il comportamento dello schedulatore dipende dai valori inseriti nei parametri di schedulazione presenti nelle seguenti sezioni della form.
 
 ### **Simulazione**
@@ -32,7 +32,7 @@ In sintesi, un valore positivo può migliorare le sequenze di lavorazione su mac
 
 ### **Fornitori**
 
-- **Giorni ritardo disponibilità per acquisti**: questo parametro indica dopo quanti giorni dalla data di consegna indicata sugli ordini di acquisto, la merce è considerata prelevabile da magazzino ai fini della simulazione FCS. È un parametro di sicurezza che rende più realistico e probabile il piano di produzione generato dallo schedulatore.      
+- **Giorni ritardo disponibilità per acquisti**: questo parametro indica dopo quanti giorni dalla data di consegna indicata sugli ordini di acquisto, la merce è considerata prelevabile da magazzino ai fini della simulazione A.F.C.S. È un parametro di sicurezza che rende più realistico e probabile il piano di produzione generato dallo schedulatore.      
 Se infatti questo parametro è nullo, la merce degli ordini di acquisto verrà considerata disponibile a partire dal giorno successivo alla data di consegna dell'ordine. Se per esempio, una consegna di un fornitore avviene con 3 giorni di ritardo e questo parametro vale almeno 3, il piano di lavoro creato dallo schedulatore risulterebbe sicuramente ancora valido e fattibile, perchè siamo certi che nessuna lavorazione che necessiti di tale merce possa essere stata simulata prima dell'arrivo effettivo della merce, mentre se questo campo fosse nullo, le lavorazioni che necessitano della merce in ritardo programmate entro quei 3 giorni, non sarebbero eseguibili.  
 - **Giorni ritardo disponibilità per conto lavoro**: funziona come nel caso dell'acquisto, ma per gli ordini di conto lavoro.
 

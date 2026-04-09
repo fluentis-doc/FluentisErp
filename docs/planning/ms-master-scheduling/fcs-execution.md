@@ -1,9 +1,9 @@
 ---
-title: Esecuzioni F.C.S.
+title: Esecuzioni A.F.C.S.
 sidebar_position: 6
 ---
 
-## Esecuzioni F.C.S. (griglia principale)
+## Esecuzioni A.F.C.S. (griglia principale)
 
 La form si compone di una griglia principale dove premendo il tasto **Ricerca** si ottiene l'elenco delle simulazioni salvate. Selezionando una di queste, vengono caricati i relativi dati nelle varie tab del form.     
 E' possibile eliminare una simulazione selezionandola e premendo il tasto **Cancella**.
