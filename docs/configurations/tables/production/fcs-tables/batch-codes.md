@@ -3,9 +3,9 @@ title: Codici accorpamento
 sidebar_position: 4
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Codici accorpamento**.
+La tabella si trova sul percorso **Tabelle > Produzione > Tabelle A.F.C.S. > Codici accorpamento**.
 
-I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione A.F.C.S.](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
 I codici accorpamento permettono di raggruppare fasi di lavoro da processare insieme nelle macchine a lavorazioni accorpabili.
 

@@ -3,9 +3,9 @@ title: Eccezioni di calendario
 sidebar_position: 7
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Eccezioni di calendario**.
+La tabella si trova sul percorso **Tabelle > Produzione > Tabelle A.F.C.S. > Eccezioni di calendario**.
 
-I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione A.F.C.S.](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
 Questa form permette di definire le eccezioni di calendario di qualunque risorsa simulata dallo schedulatore (Centri di lavoro, Macchine, Lavoratori, Risorse di produzione).       
 Esiste un rapporto gerarchico tra i centri e le macchine, quindi se un centro è inattivo ad un certo orario, le relative macchine saranno automaticamente inattive.         

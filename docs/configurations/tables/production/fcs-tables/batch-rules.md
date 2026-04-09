@@ -3,9 +3,9 @@ title: Regole di accorpamento macchina
 sidebar_position: 3
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Regole di accorpamento macchina**.
+La tabella si trova sul percorso **Tabelle > Produzione > Tabelle A.F.C.S. > Regole di accorpamento macchina**.
 
-I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione A.F.C.S.](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
 Ogni regola di accorpamento è definita tramite un solo record di questa tabella. 
 

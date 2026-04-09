@@ -3,9 +3,9 @@ title: Attributi attrezzaggio
 sidebar_position: 1
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Attributi attrezzaggio**.
+La tabella si trova sul percorso **Tabelle > Produzione > Tabelle A.F.C.S. > Attributi attrezzaggio**.
 
-I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione A.F.C.S.](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
 Questa tabella registra tutti i possibili attributi di attrezzaggio.         
 Il flag **Numerico** deve essere selezionato per attributi numerici (per esempio temperatura). Per gli attributi non numerici vanno salvati tutti i valori possibili, che verranno selezionati dove richiesto, evitando la possibilità di inserire errori di input.       

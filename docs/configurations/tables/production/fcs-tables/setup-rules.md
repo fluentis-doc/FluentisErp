@@ -3,9 +3,9 @@ title: Regole attrezzaggio
 sidebar_position: 2
 ---
 
-La tabella si trova sul percorso **Tabelle > Produzione > Tabelle F.C.S. > Regole attrezzaggio**.
+La tabella si trova sul percorso **Tabelle > Produzione > Tabelle A.F.C.S. > Regole attrezzaggio**.
 
-I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling). 
+I dati presenti in questa tabella sono utilizzati solamente nella procedura di [Schedulazione A.F.C.S.](/docs/planning/ms-master-scheduling/fcs-scheduling). 
 
 Questa form permette di definire le regole che consentono di calcolare il tempo di attrezzaggio delle lavorazioni da processare su una macchina per la quale sono definiti gli [Attributi di attrezzaggio](/docs/configurations/tables/production/fcs-tables/setup-property).       
 Una regola di attrezzaggio può essere definita tramite più di un record di questa tabella. Ogni record permette di gestire fino a 10 attributi di attrezzaggio. Per ciascuno degli attributi definiti nel record, esiste un coefficiente moltiplicativo (di default 1) che verrà applicato al valore di transizione di stato dell'attributo.         
