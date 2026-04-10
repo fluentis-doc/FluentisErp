@@ -26,7 +26,7 @@ sidebar_position: 1
 > -	QY - Reclami, Non conformità e Azioni correttive - Sono stati revisionati i metodi di calcolo dei contatori delle Tile in modo che rispecchino il numero di documenti associati al relativo flag di stato: Approvato, Accettato, Bloccato e Chiuso. (#TT01452/26)
 > -	SCM - Corretta valorizzazione dei DDT di acquisto e rientro conto lavoro: è ora possibile valorizzare insieme più righe di DDT di natura diversa (#TT01216/26)
 > -	SD - Corretto il funzionamento del filtro di ricerca “confermato” e “non confermato” in Ordini Clienti (#TT01464/26)
-> -	SD - Creazione file XML FE: limitato la descrizione dell’indirizzo <CedentePrestatore><Sede><Indirizzo> ai 60 caratteri ministeriali (rif.ticket #TT01416/26)
+> -	SD - Creazione file XML FE: limitato la descrizione dell’indirizzo `<CedentePrestatore><Sede><Indirizzo>` ai 60 caratteri ministeriali (rif.ticket #TT01416/26)
 > -	SD - Dopo il trasferimento degli imballi a rendere nella form DDT di vendita, spostandosi tra le righe della griglia i valori vengono visualizzati correttamente (#TT01576/26)
 > -	SD - Pesi e Volume in tab trasporto: Corretta visualizzazione UM di misura dei pesi e del volume che in alcuni casi non era visbile anche se correttamente calcolata (rif. Ticket #TT01521/26 #TT01530/26)
 > -	SD/SCM - Duplica documenti di acquisto/vendita, sviluppata esclusione delle righe di analitica legate a centri di costo non validi alla data (#TT01524/26 - #TT01353/26)
