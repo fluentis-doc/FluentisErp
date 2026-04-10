@@ -5,6 +5,31 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0070 - 10/04/2026
+
+> -	CO - elaborazione periodi, revisione mensilizzazione dati iniziale (#TT01502/26)
+> -	FI - Corretta la gestione delle date di fine validità per gli agenti quando vengono inseriti nelle partite aperte dei clienti. (#TT01388/26)
+> -	FI - form di stampa Bilancio d’esercizio, impostazione di default del flag ‘Visualizza importi segno negativo’ e della causale esclusa ripresa dai parametri di contabilità, causale di chiusura conti. Modifications in form periodic balance sheet report can have impact on profiles (#TT01400/26)
+> -	FI - il salvataggio della registrazione contabile restituisce un avviso se manca il progetto per i centri di costo della dimensione con 'IsProjectEnabled' true (#TT01641/26)
+> -	FI - la riapertura degli assestamenti ora imposta le date competenza economica delle integrazione con stesso range di date delle righe di giornale. (#TT01497/26)
+> -	FI - La stampa CU dati previdenziali viene riportata correttamente (#TT01180/26)
+> -	FI - modificata la stampa della certificazione unica ritenute d'acconto. Il campo sesso riportava di default F anche quando il campo nell'anagrafica percipiente era NULL. (#TT01315/26)
+> -	FI - revisione gestione tendina di selezione dei centri di costo per dimensioni con flag ‘Progetti’ attiva. (#TT00030/26)
+> -	FI - revisione impostazione progetto nelle righe di analitica delle registrazioni contabili quando la dimensione prevede il flag ‘Abilita progetti’. (#TT01096/26)
+> -	MES - Dichiarazioni di produzione - Corretta l’anomalia che non proponeva Magazzino e Causale di scarto in presenza di un Materiale con una percentuale di scarto predefinita. (#TT01246/26)
+> -	MS - Commesse di produzione - Corretta l’anomalia, durante la costificazione, che non considerava correttamente il costo preventivo delle lavorazioni su Centri di lavoro a tempo fisso moltiplicando il tempo fisso per la quantità da produrre. (#TT05668/25)
+> -	MS - Corretto bug nel filtro del report degli ordini di produzione che non filtrava correttamente per l’anno indicato nel filtro. (#TT01498/26)
+> -	PM - Inserimento righe fatturazione nel tab Fatturazione di un progetto - corretta proposta dell’anno in modo che corrisponda all’anno corrente e non all’anno del progetto (TT01300/26)
+> -	SCM - Corretta valorizzazione dei DDT di acquisto e rientro conto lavoro: è ora possibile valorizzare insieme più righe di DDT di natura diversa (#TT01216/26)
+> -	SD - Corretto il funzionamento del filtro di ricerca “confermato” e “non confermato” in Ordini Clienti (#TT01464/26)
+> -	SD - Pesi e Volume in tab trasporto: Corretta visualizzazione UM di misura dei pesi e del volume che in alcuni casi non era visbile anche se correttamente calcolata (rif. Ticket #TT01521/26 #TT01530/26)
+> -	SD/SCM - Duplica documenti di acquisto/vendita, sviluppata esclusione delle righe di analitica legate a centri di costo non validi alla data (#TT01524/26 - #TT01353/26)
+> -	SD - conversione offerta di vendita in ordine - se mancante l'articolo da usare per le righe ordine derivate da risorse offerta, la conversione viene bloccata. (#TT01220/26)
+> -	WM - Picking - Revisione layout dati di dettaglio in griglia di ricerca. Modifications in form Filter Picking can have impact on profiles. (#TT01463/26)
+> -	WM - Prototipi - Corretta l’anomalia che non calcolava correttamente il Costo lavorazione dei componenti di Conto lavoro, in assenza di un listino associato. (#TT01526/26)
+> -	WM - Stampa packing list: raggruppamento anche per articolo (#TT01567/26).
+> -	SH - reso visibile il flag Visualizza Cambio indiretto nella tabella società. Modifications in company form can have impact on profiles. (#TT01157/26)
+
 ### Patch 707.1-0069 - 26/03/2026
 
 > -	FI - aggiunto un controllo sull’avvenuta esportazione del tracciato telematico per la comunicazione trimestrale liquidazioni iva che blocca la form dalla modifica dei dati già esportati. Modifications in Periodic VAT calculation form can have impact on profiles (#TT00972/26)  
@@ -14,11 +39,11 @@ keywords:
 > -	FI - revisione contabilizzazione fattura con gestione partite d’acconto, in caso di spese bollo (o altre) aggiuntive ora viene creata una partita separata per l’importo relativo (#TT00891/26)
 > -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti (#TT00769/26)  
 > -	FI- Solving Customization issue regarding FsCostCenter with the extension table procedure (#TT01051/26)
-> -	MES – Corretto bug nell’import webapi delle dichiarazioni di produzione riguardo al tag QuantityProduced (#TT01226/26).  
+> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione riguardo al tag QuantityProduced (#TT01226/26).  
 > -	MES - MES Solution - Gestione del blocco proposta fase in soluzione tramite le "Causali di sospensione". Alla sospensione di un'attività, indicando una "Causale di sospensione" con l'indicazione di "Blocco proposta fase in M.E.S.", alla successiva proposta delle fasi in lavorazione per il Centro di lavoro, la fase sospesa non verrà visualizzata. Per poter proseguire nella lavorazione della fase sospesa è necessario selezionarla, tramite il pulsante "Seleziona nuove fasi", ed effettuare una dichiarazione di ripresa. (#TT05365/25)  
 > -	PR - corretto calcolo del cashflow per il flusso relativo agli ordini di conto lavoro. In presenza di calcolo del prezzo utilizzando la quantità alternativa non calcolava correttamente il valore dell’imponibile continuando a leggere la quantità e unità di misura principale. Ora utilizza direttamente la proprietà NetAmount. (#TT00873/26)  
 > -	PR - Modificato algoritmo di importazione file cbi per i movimenti bancari per considerare tutti i possibili caratteri di controllo LF e CRLF (#TT01009/26)  
-> -	SCM – Costi di magazzino:  
+> -	SCM - Costi di magazzino:  
 >> -	Una modifica del valore dell’articolo nella fattura di acquisto (sconti, cambio valuta, divisa, prezzo, ecc.) aggiorna sempre: il documento precedente collegato, la registrazione di magazzino (e la registrazione contabile) anche se non direttamente collegata al documento in cui avviene la modifica del valore. (#TT01127/26, #TT00868/26 and #TT01096/25 )  
 >> -	Una modifica della quantità nella fattura di acquisto non aggiorna mai le quantità nel documento precedente collegato; la variazione della quantità ha effetto sul magazzino solo se la modifica viene effettuata direttamente nel documento che ha generato il movimento di magazzino.  
 > -	SD - La data trasporto del DDT viene valorizzata con data e ora di creazione, non ereditata dall’ordine cliente. (#TT01187/26)  
@@ -26,9 +51,9 @@ keywords:
 > -	SD - WebAPI importa bolla di consegna e fattura di vendita - consente quantità superiori a quella dell'articolo dell'ordine di vendita correlato (TT01384/26)  
 > -	SD- Corretta la visualizzazione dei decimali nella quantità alternativa nel tab Riepilogo. Modifications in the object forms SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, SalesOffer and SalesOrder can have impact on profiles. (#TT01238/26)  
 > -	SD - Conversione offerta in ordine e progetto, gestita propagazione IBAN impostato nella tab pagamenti dell’offerta, anche nella tab pagamenti del progetto (#TT01141/26)  
-> -	SH – Anagrafica cliente – Tab Listini: impedito di poter specificare nella stessa riga sia un listino generale che un listino per cliente. (#TT1264/26)   
+> -	SH - Anagrafica cliente - Tab Listini: impedito di poter specificare nella stessa riga sia un listino generale che un listino per cliente. (#TT1264/26)   
 > -	WEBAPI Import: Risolto l'errore in importazione di un file XML/Json contenente solo proprietà referenze (#TT1197/26)  
-> -	WM – GetItemsStock: Aggiunte request property per unità di misura alternativa. (#TT00959/26)  
+> -	WM - GetItemsStock: Aggiunte request property per unità di misura alternativa. (#TT00959/26)  
 > -	WM - WebApi PickingWarehousePosting: Impostato messaggio Success in caso di completamento senza errori. (#TT01179/26)
 
 ### Patch 707.1-0068 - 12/03/2026
@@ -51,7 +76,7 @@ keywords:
 > - SD - Corretto lo storno della fatturazione in presenza di articoli con prezzo negativo. In fase di generazione della nota di credito l’importo viene ora riportato con segno positivo, garantendo la corretta valorizzazione dell’imponibile totale. (#TT01045/26)  
 > - SD - Scarico magazzino da rendita: ottimizzata la chiamata dell’algoritmo UpdateBatchRegister. (#TT01149/26)  
 > - SH - Risolto il problema nel report retrieval, che ora considera anche il campo “itemnature” quando aperto in Report Designer. (TT00903/26)  
-> - SH - Contatti – Indirizzi alternativi: riportata la ragione sociale a 80 caratteri. (#TT01039/26)  
+> - SH - Contatti - Indirizzi alternativi: riportata la ragione sociale a 80 caratteri. (#TT01039/26)  
 > - WM - Analisi Disponibilità con dettaglio distinta base: corretta la mancata valorizzazione delle colonne quando la versione di distinta nei componenti era vuota. (#TT00602/26)  
 > - WM - Abilitato il cambio della classe articolo tramite WebAPI. (#TT05186/25)  
 > - WM - Liste di prelievo UDC: aggiunto il nuovo report “Packing list”.  
@@ -64,16 +89,16 @@ keywords:
 ### Patch 707.1-0067 - 26/02/2026
 
 > - FI - Revisionata la gestione della contabilizzazione e del rollback delle scritture di assestamento. (#TT00808/26)  
-> - MES – Corretto bug nell’importazione tramite WebAPI delle dichiarazioni di produzione, nelle quali, nel caso in cui il lotto del materiale importato fosse inesistente, veniva proposto un lotto con la logicaFIFO anche se il tipo prelievo dell’articolo era manuale. Ora, se il tipo prelievo dell’articolo è manuale e nei parametri degli ordini di produzione è attivo il flag “Gestione automatica dei lotti e SN”, in caso di lotto inesistente viene creata la riga materiale senza associare un lotto. (#TT00711/26)  
-> - MES – Corretto bug nel calcolo del costo dell’articolo prodotto tramite la dichiarazione di produzione quando nel ciclo erano presenti fasi esterne prima dell’ultima fase interna. (#TT00748/26)  
-> - MES – Corretto bug nel calcolo del costo dei materiali degli ordini di produzione, che non considerava correttamente le chiusure di magazzino. (#TT00452/26)  
-> - SD – Ottimizzata l’importazione tramite WebAPI dei listini di vendita corposi. Aggiunta la possibilità di effettuare l’update degli articoli per inserirli nel listino. (#TT04887/24, #TT05479/25)  
+> - MES - Corretto bug nell’importazione tramite WebAPI delle dichiarazioni di produzione, nelle quali, nel caso in cui il lotto del materiale importato fosse inesistente, veniva proposto un lotto con la logicaFIFO anche se il tipo prelievo dell’articolo era manuale. Ora, se il tipo prelievo dell’articolo è manuale e nei parametri degli ordini di produzione è attivo il flag “Gestione automatica dei lotti e SN”, in caso di lotto inesistente viene creata la riga materiale senza associare un lotto. (#TT00711/26)  
+> - MES - Corretto bug nel calcolo del costo dell’articolo prodotto tramite la dichiarazione di produzione quando nel ciclo erano presenti fasi esterne prima dell’ultima fase interna. (#TT00748/26)  
+> - MES - Corretto bug nel calcolo del costo dei materiali degli ordini di produzione, che non considerava correttamente le chiusure di magazzino. (#TT00452/26)  
+> - SD - Ottimizzata l’importazione tramite WebAPI dei listini di vendita corposi. Aggiunta la possibilità di effettuare l’update degli articoli per inserirli nel listino. (#TT04887/24, #TT05479/25)  
 > - SD - Se l’utente porta in stato “controllato” e poi “non esaminato” una fattura di vendita creata da DDT, sarà possibile effettuare il rollback dell’operazione per cancellare la fattura. (#TT05405/25)  
-> - SD – Importo ordine di vendita WebAPI: quando avviene l'esecuzione forzatamente, da aggiornare anche ForceExecutedQuantity su articoli di ordine cliente (#TT00825/26)  
-> - SD – Dettaglio righe ordini clienti: corretta la visualizzazione del codice e della descrizione articolo cliente nella griglia dei risultati. (#TT00297/26)  
-> - WM – Prototipi – Corrette le anomalie che non calcolavano correttamente la componente del Costo macchina e quella degli Altri costi. (#TT00716/26)  
-> - WM – Corretta la valorizzazione di “Livello”, “Priorità” e “Articolo Padre” nell’analisi disponibilità con dettaglio distinta base. (#TT00602/26)  
-> - WM – Corretto bug che generava giacenze negative dopo la modifica della registrazione di un movimento di magazzino. (#TT00644/26)
+> - SD - Importo ordine di vendita WebAPI: quando avviene l'esecuzione forzatamente, da aggiornare anche ForceExecutedQuantity su articoli di ordine cliente (#TT00825/26)  
+> - SD - Dettaglio righe ordini clienti: corretta la visualizzazione del codice e della descrizione articolo cliente nella griglia dei risultati. (#TT00297/26)  
+> - WM - Prototipi - Corrette le anomalie che non calcolavano correttamente la componente del Costo macchina e quella degli Altri costi. (#TT00716/26)  
+> - WM - Corretta la valorizzazione di “Livello”, “Priorità” e “Articolo Padre” nell’analisi disponibilità con dettaglio distinta base. (#TT00602/26)  
+> - WM - Corretto bug che generava giacenze negative dopo la modifica della registrazione di un movimento di magazzino. (#TT00644/26)
 
 ### Patch 707.1-0066 - 20/02/2026
 
