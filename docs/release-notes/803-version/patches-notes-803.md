@@ -3,19 +3,61 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0016 - 09/04/2026
+
+> -	Arm - in un ambiente cliente, ora la duplica di un workflow standard crea la copia con natura “customer” (#TT01631/26)
+> -	CO - Cost driver and department management changes (#TT00030/24)
+> -	CO - elaborazione periodi, revisione mensilizzazione dati iniziale (#TT01502/26)
+> -	CO - revisione form di ‘Visualizzazione valori Contabilità gestionale’ Modifications in form can have impact on profiles(#TT01525/26)
+> -	FI - Corretta la gestione delle date di fine validità per gli agenti quando vengono inseriti nelle partite aperte dei clienti. Rif. #TT01388/26
+> -	FI - form di stampa Bilancio d’esercizio, impostazione di default del flag ‘Visualizza importi segno negativo’ e della causale esclusa ripresa dai parametri di contabilità, causale di chiusura conti. Modifications in form periodic balance sheet report can have impact on profiles(#TT01400/26)
+> -	FI - la contabilizzazione fatture di vendita ora riporta destinatario e destinazione nelle partite contabili. (#TT00531/26)
+> -	FI - la riapertura degli assestamenti ora imposta le date competenza economica delle integrazione con stesso range di date delle righe di giornale. (#TT01497/26)
+> -	FI - modificata la stampa della certificazione unica ritenute d'acconto. Il campo sesso riportava di default F anche quando il campo nell'anagrafica percipiente era NULL. Rif. #TT01315/26
+> -	FI - revisione gestione tendina di selezione dei centri di costo per dimensioni con flag ‘Progetti’ attiva. (#TT00030/26)
+> -	FI - revisione impostazione progetto nelle righe di analitica delle registrazioni contabili quando la dimensione prevede il flag ‘Abilita progetti’. (#TT01096/26)
+> -	Framework - Corretto il conteggio degli stati del workflow (#TT01291/26)
+> -	MES - Dichiarazioni di produzione - Corretta l’anomalia che non proponeva Magazzino e Causale di scarto in presenza di un Materiale con una percentuale di scarto predefinita. (#TT01246/26)
+> -	MS - AFCS: Da magazzino alternativo è ora possibile prelevare la sola quantità che manca in quello principale, invece che tutta la quantità richiesta dall'ordine di produzione.(#TT01466/26)
+> -	MS - Commesse di produzione - Corretta l’anomalia, durante la costificazione, che non considerava correttamente il costo preventivo delle lavorazioni su Centri di lavoro a tempo fisso moltiplicando il tempo fisso per la quantità da produrre. (#TT05668/25)
+> -	MS - Corretto bug nel filtro del report degli ordini di produzione che non filtrava correttamente per l’anno indicato nel filtro. (#TT01498/26)
+> -	MS- AFCS: In caso di attributo di attrezzaggio numerico è stata potenziata la modalità di calcolo aggiungendo una costante. Ora il calcolo è come l'equazione di una retta, cioè del tipo R = c*x + k, dove x è la variazione di valore dell’attributo e k è la costante.(#TT01040/26)
+> -	PM - Inserimento righe fatturazione nel tab Fatturazione di un progetto - corretta proposta dell’anno in modo che corrisponda all’anno corrente e non all’anno del progetto (TT01300/26)
+> -	QY - Reclami, Non conformità e Azioni correttive - Sono stati revisionati i metodi di calcolo dei contatori delle Tile in modo che rispecchino il numero di documenti associati al relativo flag di stato: Approvato, Accettato, Bloccato e Chiuso. (#TT01452/26)
+> -	SCM - Corretta valorizzazione dei DDT di acquisto e rientro conto lavoro: è ora possibile valorizzare insieme più righe di DDT di natura diversa (#TT01216/26)
+> -	SD - Corretto il funzionamento del filtro di ricerca “confermato” e “non confermato” in Ordini Clienti (#TT01464/26)
+> -	SD - Creazione file XML FE: limitato la descrizione dell’indirizzo <CedentePrestatore><Sede><Indirizzo> ai 60 caratteri ministeriali (rif.ticket #TT01416/26)
+> -	SD - Dopo il trasferimento degli imballi a rendere nella form DDT di vendita, spostandosi tra le righe della griglia i valori vengono visualizzati correttamente (#TT01576/26)
+> -	SD - Pesi e Volume in tab trasporto: Corretta visualizzazione UM di misura dei pesi e del volume che in alcuni casi non era visbile anche se correttamente calcolata (rif. Ticket #TT01521/26 #TT01530/26)
+> -	SD/SCM - Duplica documenti di acquisto/vendita, sviluppata esclusione delle righe di analitica legate a centri di costo non validi alla data (#TT01524/26 - #TT01353/26)
+> -	SD - conversione offerta di vendita in ordine - se mancante l'articolo da usare per le righe ordine derivate da risorse offerta, la conversione viene bloccata. (#TT01220/26)
+> -	SH - Focus su campo Trova eseguendo il comando Ricerca (#TT01361/26)
+> -	SH - la creazione degli allegati tramite workflow ora assegna all’allegato del documentale il nome corretto (#TT01341/26)
+> -	WM - Analisi disponibilità - abilitato ordinamento anche con dettaglio distinta base. (#TT01571/26)
+> -	WM - Form di Selezione Lotti da scaricare - Modifiche al layout. (#TT01493/26)
+> -	WM - Gestione UDC: Blocco spostamento su magazzino diverso anche se stesso codice ubicazione. (#TT00440/26)
+> -	WM - Picking - Revisione layout dati di dettaglio in griglia di ricerca. Modifications in form Filter Picking can have impact on profiles. (#TT01463/26)
+> -	WM - Prototipi - Corretta l’anomalia che non calcolava correttamente il Costo lavorazione dei componenti di Conto lavoro, in assenza di un listino associato. (#TT01526/26)
+> -	WM - Stampa packing list: raggruppamento anche per articolo (#TT01567/26).
+> -	WM - Tracciabilità lotti: Corretta quantità scaricata lotto anziché movimento in stampa. (#TT00622/26)
+> -	WMS - - Ricevimento Merci: Focus su barcode dopo conferma di ogni riga. (#TT01496/26)
+> -	WMS Maui - Conferma Picking/Gestione Spunta - Inibita selezione manuale articolo. Modifications in both forms can have impact on profiles (#TT01494/26)
+> -	WMS Maui - Conferma prelievo UDC - focus su campo barcode UDC (#TT04479/25).
+> -	SH - reso visibile il flag Visualizza Cambio indiretto nella tabella società. Modifications in company form can have impact on profiles. (#TT01157/26)
+
 ### Patch 803.0015 - 26/03/2026
 
 > -	CO - revisione Elaborazione periodi per filtro su divisione, revisione comparazione riclassificazioni per sezione calcolo indici(#TT01390/26)
-> -	CPQ – Ottimizzato l’algoritmo di calcolo delle combinazioni valide della matrice completa del configuratore
+> -	CPQ - Ottimizzato l’algoritmo di calcolo delle combinazioni valide della matrice completa del configuratore
 > -	FI - corretto errore nella stampa Situazione contabile sottoconti che non gestiva correttamente l’opzione Visualizza Valori di apertura. (#TT01256/26)
 > -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti (#TT00769/26)
 > -	FI - Visualizzazione e compilazione campo ‘Provincia origine’ in scheda Intrastat delle registrazioni e in creazione automatica intrastat vendite da registrazioni. Modifications in posting intrastat tab can have impact on profiles. (#TT01023/26)
 > -	PR - corretto calcolo del cashflow per il flusso relativo agli ordini di conto lavoro. In presenza di calcolo del prezzo utilizzando la quantità alternativa non calcolava correttamente il valore dell’imponibile continuando a leggere la quantità e unità di misura principale. Ora utilizza direttamente la proprietà NetAmount. (#TT00873/26)
 > -	SD - WebAPI importa bolla di consegna e fattura di vendita - consente quantità superiori a quella dell'articolo dell'ordine di vendita correlato (#TT01384/26)
 > -	SD- Corretta la visualizzazione dei decimali nella quantità alternativa nel tab Riepilogo. Modifications in the object forms SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, SalesOffer and SalesOrder can have impact on profiles (#TT01238/26)
-> -	SH – Consider UseDocumentManager flag from “Edit Standard Object” custom property. (#TT00699/26)
+> -	SH - Consider UseDocumentManager flag from “Edit Standard Object” custom property. (#TT00699/26)
 > -	WEBAPI Import: Risolto l'errore in importazione di un file XML/Json contenente solo proprietà referenze (#TT1197/26)
-> -	MES – Corretto bug nella procedura di Generazione lotto degli ordini di produzione che non generava correttamente l’extension per il nuovo lotto. (#TT00920/26)
+> -	MES - Corretto bug nella procedura di Generazione lotto degli ordini di produzione che non generava correttamente l’extension per il nuovo lotto. (#TT00920/26)
 
 ### Patch 803.0014 - 23/03/2026
 
