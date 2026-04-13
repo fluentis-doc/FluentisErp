@@ -213,6 +213,12 @@ In questo campo viene selezionata attraverso l'help, la nomenclatura (ovvero la 
 
 #### Nostro/Vostro riferimento
 
+#### Nota spese {#expense-report}
+
+Il documento *Nota spese* viene utilizzato nell’area Project Management per registrare le spese sostenute da un dipendente in un determinato periodo.
+La *Nota spese* viene successivamente utilizzata nei cedolini paga per la gestione dei rimborsi spese.
+Le spese derivano dalle dichiarazioni di attività e dagli interventi registrati.
+
 #### Note iniziali {#initial-note}
 Permette di selezionare le note che sono state inserite in precedenza nella tabella omonima che si trova nel percorso *Configurazione > Utilità > Gestione note codificate*. Per questo l'utente deve effettuare doppio click sul campo **Note iniziale** per aprire *Help note codificate* e selezionare i dati, oppure con il tasto destro del mouse può aprire una finestra per poter specificare un testo molto lungo di nota. Se il campo contiene un valore, viene cambiato il colore dello sfondo del campo.
 
