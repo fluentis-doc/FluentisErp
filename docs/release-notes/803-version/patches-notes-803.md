@@ -53,6 +53,7 @@ sidebar_position: 1
 > -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti (#TT00769/26)
 > -	FI - Visualizzazione e compilazione campo ‘Provincia origine’ in scheda Intrastat delle registrazioni e in creazione automatica intrastat vendite da registrazioni. Modifications in posting intrastat tab can have impact on profiles. (#TT01023/26)
 > -	PR - corretto calcolo del cashflow per il flusso relativo agli ordini di conto lavoro. In presenza di calcolo del prezzo utilizzando la quantità alternativa non calcolava correttamente il valore dell’imponibile continuando a leggere la quantità e unità di misura principale. Ora utilizza direttamente la proprietà NetAmount. (#TT00873/26)
+> -	SCM - Importazione Prezzi Fornitore: Corretta la ricerca in filtro per i valori della classe e codice articolo. (#TT1114/26)
 > -	SD - WebAPI importa bolla di consegna e fattura di vendita - consente quantità superiori a quella dell'articolo dell'ordine di vendita correlato (#TT01384/26)
 > -	SD- Corretta la visualizzazione dei decimali nella quantità alternativa nel tab Riepilogo. Modifications in the object forms SubcontractorDeliveryNote, SalesDeliveryNote, SalesInvoice, SalesOffer and SalesOrder can have impact on profiles (#TT01238/26)
 > -	SH - Consider UseDocumentManager flag from “Edit Standard Object” custom property. (#TT00699/26)
