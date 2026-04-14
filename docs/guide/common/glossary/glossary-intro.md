@@ -250,6 +250,9 @@ In questo campo visualizza il prezzo comprensivo dell'aliquota Iva.
 
 ### R
 
+#### Richiesta di acquisto {#purchase-requisition}  
+Possono essere generate sia da MRP, produzione, ecc, sulla base dei fabbisogni, ma anche create manualmente. In entrambi i casi vengono autorizzate e viene poi creato un ordine di acquisto da inviare al fornitore a partire da quella richiesta di acquisto.
+
 #### Riepiloghi IVA
 Griglia nella quale viene proposto il riepilogo IVA del documento, per ogni codice IVA;
 
