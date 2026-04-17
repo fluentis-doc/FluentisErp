@@ -3,6 +3,31 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0017 - 17/04/2026
+
+> -	CO - revisione elaborazione ammortamenti del controlling (#TT01510/26)
+> -	CPQ - Ottimizzate le prestazioni di calcolo delle matrici e risoluzione di alcuni problemi lato core e UI
+> -	Creata stampa standard per la form Visualizzazione Bilancio con centri di costo.
+> -	CRM - Griglia ricerca ticket - corretto caso per cui colonna extradata non mostrava i dati (#TT01332/26)
+> -	FI - calcolo scritture di assestamento, revisione gestione arrotondamenti righe Cdc (#TT01506/26)
+> -	FI - Creata stampa standard per la form Visualizzazione Bilancio con centri di costo. (#TT01380/26)
+> -	FI - il salvataggio della registrazione contabile restituisce un avviso se manca il progetto per i centri di costo della dimensione con 'IsProjectEnabled' true (#TT01641/26)
+> -	FI - Implement Payment_Received for HR eInvoice (#TT01269/26)
+> -	FI - Modificata contabilizzazione rata mutuo. Le date di competenza economica sui conti di costo e sui centri di costo vengono impostate pari alla data registrazione anche in presenza del parametro di inserimento “Nessuno per tipo conto servizi”. (#TT00569/26)
+> -	MES - Dichiarazioni di produzione: se l’Ubicazione proposta per il versamento del Semilavorato WIP viene annullata nella Fase di un Ordine di produzione, durante la Dichiarazione di produzione viene proposta l’Ubicazione associata alla Causale di carico (se presente) altrimenti rimane vuota. (#TT01629/26)
+> -	MS - M.R.P: corretta l’anomalia che, in presenza di un articolo gestito con dei valori di approvvigionamento e la richiesta di esecuzione MRP considerando anche il passato, proponeva dei reintegri nel passato. (#TT01167/26, #TT01545/26)
+> -	MS - Pianificazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la pianificazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi. (#TT00987/26)
+> -	MS - Sequenza Fasi: corrette le anomalie di: rappresentazione dei valori visualizzati nel “Tempo macchina” e del calcolo degli Orari di inizio e fine fase. (#TT01612/26)
+> -	SCM - Bolle di Acquisto/Fatture Acquisto: Disabilitata la possibilità di cancellare i lotti dopo il carico del documento (#TT1664/26)
+> -	SD - Create SalesInvoice from SalesDeliveryNote new method for scripting call. Modifications in SalesDeliveryNote Filter form can have impact on profiles (#TT01704/26)
+> -	SD - Fix Create SalesInvoice proforma with batches from Picking problem(#TT01074/26)
+> -	SD - Fix SalesOrder-check packages number for item problem(#TT01597/26)
+> -	SD - WebApi SalesDeliveryNote, SalesInvoice, Picking - evasione da ordine - non permetere evadere righe evase o forzatamente evase (#TT01744/26)
+> -	SH - Aggiunto supporto a OCR e elaborazione documenti di importazione con AI (lato server)
+> -	SH - Aggiunto supporto pagamenti elettronici
+> -	SH - fix barcode retrieval from images within document manager
+> -	SH - Profili - Risolto bug il quale in alcuni casi dopo aver aggiunto una colonna, non si poteva più rimuovere (#TT00938/26, #TT01250/26, #TT00614/26)
+
 ### Patch 803.0016 - 09/04/2026
 
 > -	Arm - in un ambiente cliente, ora la duplica di un workflow standard crea la copia con natura “customer” (#TT01631/26)
@@ -22,11 +47,11 @@ sidebar_position: 1
 > -	MS - Commesse di produzione - Corretta l’anomalia, durante la costificazione, che non considerava correttamente il costo preventivo delle lavorazioni su Centri di lavoro a tempo fisso moltiplicando il tempo fisso per la quantità da produrre. (#TT05668/25)
 > -	MS - Corretto bug nel filtro del report degli ordini di produzione che non filtrava correttamente per l’anno indicato nel filtro. (#TT01498/26)
 > -	MS- AFCS: In caso di attributo di attrezzaggio numerico è stata potenziata la modalità di calcolo aggiungendo una costante. Ora il calcolo è come l'equazione di una retta, cioè del tipo R = c*x + k, dove x è la variazione di valore dell’attributo e k è la costante.(#TT01040/26)
-> -	PM - Inserimento righe fatturazione nel tab Fatturazione di un progetto - corretta proposta dell’anno in modo che corrisponda all’anno corrente e non all’anno del progetto (TT01300/26)
+> -	PM - Inserimento righe fatturazione nel tab Fatturazione di un progetto - corretta proposta dell’anno in modo che corrisponda all’anno corrente e non all’anno del progetto (#TT01300/26)
 > -	QY - Reclami, Non conformità e Azioni correttive - Sono stati revisionati i metodi di calcolo dei contatori delle Tile in modo che rispecchino il numero di documenti associati al relativo flag di stato: Approvato, Accettato, Bloccato e Chiuso. (#TT01452/26)
 > -	SCM - Corretta valorizzazione dei DDT di acquisto e rientro conto lavoro: è ora possibile valorizzare insieme più righe di DDT di natura diversa (#TT01216/26)
 > -	SD - Corretto il funzionamento del filtro di ricerca “confermato” e “non confermato” in Ordini Clienti (#TT01464/26)
-> -	SD - Creazione file XML FE: limitato la descrizione dell’indirizzo `<CedentePrestatore><Sede><Indirizzo>` ai 60 caratteri ministeriali (rif.ticket #TT01416/26)
+> -	SD - Creazione file XML FE: limitato la descrizione dell’indirizzo `<CedentePrestatore><Sede><Indirizzo>` ai 60 caratteri ministeriali (#TT#TT01416/26)
 > -	SD - Dopo il trasferimento degli imballi a rendere nella form DDT di vendita, spostandosi tra le righe della griglia i valori vengono visualizzati correttamente (#TT01576/26)
 > -	SD - Pesi e Volume in tab trasporto: Corretta visualizzazione UM di misura dei pesi e del volume che in alcuni casi non era visbile anche se correttamente calcolata (rif. Ticket #TT01521/26 #TT01530/26)
 > -	SD/SCM - Duplica documenti di acquisto/vendita, sviluppata esclusione delle righe di analitica legate a centri di costo non validi alla data (#TT01524/26 - #TT01353/26)
