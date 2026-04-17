@@ -3,15 +3,23 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0088 - 17/04/2026
+
+> -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti(#TT00769/26)
+
+> -	MS - Schedulazione generale - Corretta l’anomalia che non considerava correttamente la versione della distinta base, indicata nella Commessa di produzione, durante la valutazione dei componenti. (#TT01221/26)
+
+> -	MS - Schedulazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la schedulazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi. (#TT00987/26)
+
 ### Patch 608.1-0087 - 27/03/2026
 
 > -	CO - revisione elaborazione periodi, esclusione delle righe con date competenza nulle (#TT00971/26)
 > -	FI - corretto calcolo interessi trimestrali nella stampa liquidazione iva periodica. Non tenevano conto dell'acconto IVA versato. (#TT00658/26)
 > -	PR - Change in SDD file creation (#TT05663/25)
 > -	PR - corretto calcolo del cashflow per il flusso relativo agli ordini di conto lavoro. In presenza di calcolo del prezzo utilizzando la quantità alternativa non calcolava correttamente il valore dell’imponibile continuando a leggere la quantità e unità di misura principale. Ora utilizza direttamente la proprietà NetAmount. (#TT00873/26)
-> -	SD – Agenti: Abilitata la gestione di provvigioni a valore e in percentuale per lo stesso agente. (#TT00102/26)
+> -	SD - Agenti: Abilitata la gestione di provvigioni a valore e in percentuale per lo stesso agente. (#TT00102/26)
 > -	SD - Se l’utente effettua la conversione di un’offerta di vendita con valuta diversa, l’ordine di vendita generato riporterà il tasso di cambio presente nell'offerta. (#TT00952/26)
-> -	WM – Piani di Carico: Rivista gestione UM in creazione lista UDC. (#TT05221/25)
+> -	WM - Piani di Carico: Rivista gestione UM in creazione lista UDC. (#TT05221/25)
 
 ### Patch 608.1-0086 - 05/02/2026
 
