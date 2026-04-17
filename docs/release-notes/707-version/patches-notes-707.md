@@ -5,6 +5,18 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0071 - 17/04/2026
+
+> -	Creata stampa standard per la form Visualizzazione Bilancio con centri di costo.
+> -	FI - calcolo scritture di assestamento, revisione gestione arrotondamenti righe Cdc (#TT01506/26)
+> -	FI - Modificata contabilizzazione rata mutuo. Le date di competenza economica sui conti di costo e sui centri di costo vengono impostate pari alla data registrazione anche in presenza del parametro di inserimento “Nessuno per tipo conto servizi”. #TT00569/26
+> -	FI - Creata stampa standard per la form Visualizzazione Bilancio con centri di costo. ( TT01380/26)
+> -	MES - Dichiarazioni di produzione: se l’Ubicazione proposta per il versamento del Semilavorato WIP viene annullata nella Fase di un Ordine di produzione, durante la Dichiarazione di produzione viene proposta l’Ubicazione associata alla Causale di carico (se presente) altrimenti rimane vuota. (#TT01629/26)
+> -	MS - M.R.P: corretta l’anomalia che, in presenza di un articolo gestito con dei valori di approvvigionamento e la richiesta di esecuzione MRP considerando anche il passato, proponeva dei reintegri nel passato. (#TT01167/26, #TT01545/26)
+> -	MS - Pianificazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la pianificazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi. (#TT00987/26)
+> -	SD - Fix SalesOrder-check packages number for item problem(TT01597/26)
+> -	SD - WebApi SalesDeliveryNote, SalesInvoice, Picking - evasione da ordine - non permetere evadere righe evase o forzatamente evase (TT01744/26)
+
 ### Patch 707.1-0070 - 10/04/2026
 
 > -	CO - elaborazione periodi, revisione mensilizzazione dati iniziale (#TT01502/26)
