@@ -5,10 +5,8 @@ sidebar_position: 2
 
 ### Patch 608.1-0088 - 17/04/2026
 
-> -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti(#TT00769/26)
-
-> -	MS - Schedulazione generale - Corretta l’anomalia che non considerava correttamente la versione della distinta base, indicata nella Commessa di produzione, durante la valutazione dei componenti. (#TT01221/26)
-
+> -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti(#TT00769/26)  
+> -	MS - Schedulazione generale - Corretta l’anomalia che non considerava correttamente la versione della distinta base, indicata nella Commessa di produzione, durante la valutazione dei componenti. (#TT01221/26)  
 > -	MS - Schedulazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la schedulazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi. (#TT00987/26)
 
 ### Patch 608.1-0087 - 27/03/2026
