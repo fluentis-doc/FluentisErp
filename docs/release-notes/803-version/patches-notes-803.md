@@ -19,6 +19,7 @@ sidebar_position: 1
 > -	MS - Pianificazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la pianificazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi. (#TT00987/26)
 > -	MS - Sequenza Fasi: corrette le anomalie di: rappresentazione dei valori visualizzati nel “Tempo macchina” e del calcolo degli Orari di inizio e fine fase. (#TT01612/26)
 > -	SCM - Bolle di Acquisto/Fatture Acquisto: Disabilitata la possibilità di cancellare i lotti dopo il carico del documento (#TT1664/26)
+> - SCS – Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo. (#TT01357/26)
 > -	SD - Create SalesInvoice from SalesDeliveryNote new method for scripting call. Modifications in SalesDeliveryNote Filter form can have impact on profiles (#TT01704/26)
 > -	SD - Fix Create SalesInvoice proforma with batches from Picking problem(#TT01074/26)
 > -	SD - Fix SalesOrder-check packages number for item problem(#TT01597/26)
@@ -93,7 +94,7 @@ sidebar_position: 1
 > -	FI - revisione contabilizzazione fattura con gestione partite d’acconto, in caso di spese bollo (o altre) aggiuntive ora viene creata una partita separata per l’importo relativo (#TT00891/26)  
 > -	FI - revisione form di acquisizione automatica intrastat, disabilitazione pulsante di ricerca finché la ricerca automatica non si conclude. (#TT01022/26)  
 > -	FI - revisione rollback contabilizzazione per messaggi di blocco non restituiti in interfaccia. (#TT01228/26)  
-> -	FI - Risolto problema di visibilità nel report di stampa della CU 2026 dei campi relativi alla sezione Dati Previdenziali. Rif. #TT00960/26
+> -	FI - Risolto problema di visibilità nel report di stampa della CU 2026 dei campi relativi alla sezione Dati Previdenziali. (#TT00960/26)
 > -	FI- Solving Customization issue regarding FsCostCenter with the extension table procedure (#TT01051/26)  
 > -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione riguardo al tag QuantityProduced (#TT01226/26).  
 > -	MES - Gestione ordini produzione - bug fix per inserire fase esterne (#TT01192/26)  
@@ -111,7 +112,7 @@ sidebar_position: 1
 > -	WM - In fase di creazione ddt/fattura da packing list ora viene riportato correttamente sulla riga dell’articolo il valore presente nel campo Vostro numero riferimento dell’ordine cliente. ( #TT01259/26)  
 > -	WM - Mappa Ubicazioni per articolo: Corretto errore in inserimento nuove mappature. (#TT00612/26)  
 > -	WM - WebApi PickingWarehousePosting: Impostato messaggio Success in caso di completamento senza errori. (#TT01179/26)  
-> -	WMS - Corretto problema in messaggio di errore in WMS per cui i comandi per visualizzare i dettagli e l’invio o meno dell’errore non funzionavano.
+> -	WMS - Corretto problema in messaggio di errore in WMS per cui i comandi per visualizzare i dettagli e l’invio o meno dell’errore non funzionavano. (TT00937/26)
 
 ### Patch 803.0013 - 16/03/2026
 
@@ -133,10 +134,10 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > - SD - Offerte multilivello: gestito messaggio bloccante in fase di conversione in ordine nel caso di codice IVA mancante nei materiali. (#TT01031/26)  
 > - SD - WebApi SalesInvoice e POS: corretto il comportamento di aggiornamento per evitare la modifica automatica della data con la data corrente. (#TT01107/26)  
 > - SH - Contatti - Indirizzi alternativi: riportata la ragione sociale a 80 caratteri. (#TT01039/26)
-> - SH - Gestione Spese: le spese da anagrafica cliente vengono proposte solo alla creazione di nuovi documenti senza origine. In evasione/valorizzazione, le spese valore vengono trasferite tali e quali; le spese percentuali vengono convertite in importo proporzionale. Le spese omogenee (stesso tipo) provenienti da più documenti vengono sommate. Le variazioni di quantità/prezzi/sconti nel documento evaso richiedono una correzione manuale delle spese; viene mostrato un avviso. (rif. ticket 511/26)  
+> - SH - Gestione Spese: le spese da anagrafica cliente vengono proposte solo alla creazione di nuovi documenti senza origine. In evasione/valorizzazione, le spese valore vengono trasferite tali e quali; le spese percentuali vengono convertite in importo proporzionale. Le spese omogenee (stesso tipo) provenienti da più documenti vengono sommate. Le variazioni di quantità/prezzi/sconti nel documento evaso richiedono una correzione manuale delle spese; viene mostrato un avviso. (#TT00511/26)  
 > - WM - Abilitato il cambio classe articolo tramite WebAPI. (#TT05186/25)  
-> - WM - Distinta Base: corretto l’errato aggiornamento dell’unità di misura nei componenti con UM predefinita.  
-> - WM - Liste di prelievo UDC: aggiunto un nuovo report “Packing list”.  
+> - WM - Distinta Base: corretto l’errato aggiornamento dell’unità di misura nei componenti con UM predefinita. (#TT00363/26)
+> - WM - Liste di prelievo UDC: aggiunto un nuovo report “Packing list”. (#TT01567/26)
 > - WM - Piani di Carico: ripristino l’evasione degli ordini cliente in stato “Rilascio” con cancellazione del picking. (#TT01008/26)  
 > - WM - Piani di Carico: rivista la gestione dell’unità di misura in creazione lista UDC. (#TT05221/25)  
 > - WM - Prototipi: corretta l’anomalia che non considerava correttamente la politica di sconto alla proposta “Miglior prezzo di listino fornitore”. (#TT00747/26)  

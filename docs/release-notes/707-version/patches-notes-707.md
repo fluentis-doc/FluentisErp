@@ -16,6 +16,7 @@ keywords:
 > -	MS - Pianificazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la pianificazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi. (#TT00987/26)
 > -	SD - Fix SalesOrder-check packages number for item problem(TT01597/26)
 > -	SD - WebApi SalesDeliveryNote, SalesInvoice, Picking - evasione da ordine - non permetere evadere righe evase o forzatamente evase (TT01744/26)
+> - SCS – Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo. (#TT01357/26)
 
 ### Patch 707.1-0070 - 10/04/2026
 
@@ -92,8 +93,8 @@ keywords:
 > - SH - Contatti - Indirizzi alternativi: riportata la ragione sociale a 80 caratteri. (#TT01039/26)  
 > - WM - Analisi Disponibilità con dettaglio distinta base: corretta la mancata valorizzazione delle colonne quando la versione di distinta nei componenti era vuota. (#TT00602/26)  
 > - WM - Abilitato il cambio della classe articolo tramite WebAPI. (#TT05186/25)  
-> - WM - Liste di prelievo UDC: aggiunto il nuovo report “Packing list”.  
-> - WM - Distinta Base: corretto l’errato aggiornamento dell’unità di misura nei componenti con UM predefinita.  
+> - WM - Liste di prelievo UDC: aggiunto il nuovo report “Packing list”. (#TT01567/26)
+> - WM - Distinta Base: corretto l’errato aggiornamento dell’unità di misura nei componenti con UM predefinita.  (#TT00363/26)
 > - WM - Valorizzazione di Magazzino: ora è possibile cancellare movimenti di magazzino che hanno una referenza negli errori di chiusura. (#TT00888/26)  
 > - WM - Piani di Carico: rivista la gestione delle unità di misura in creazione lista UDC. (#TT05221/25)  
 > - WM - Piani di Carico: ripristinata l’evasione ordini cliente in “Rilascio” con la cancellazione del picking. (#TT01008/26)  
