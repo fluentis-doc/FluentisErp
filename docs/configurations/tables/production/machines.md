@@ -45,6 +45,7 @@ Per il nuovo record, nella griglia *Macchine*, si devono inserire almeno i campi
 **Descrizione centro di costo**: indica la descrizione del centro di costo a cui si riferisce la macchina;  
 **Descrizione Reparto**: indica la descrizione del reparto in cui è inserita la macchina;  
 **Descrizione articolo macchina**: indica la descrizione articolo (nel caso in cui la macchina sia codificata come articolo);  
+**Tipo tempi segnalazione**: definisce come vanno calcolate le durate nelle segnalazioni, con *Automatica* viene calcolata dal tempo intercorso dalla segnalazione precedente, *Da dettaglio*"* viene calcolata dalle dichiarazioni di dettaglio di operatori e macchine mentre con *Manuale* le durate andranno indicate nella segnalazione stessa (nessun ricalcolo); Nel caso sia selezionata quest'ultima opzione nelle dichiarazioni di produzione nel WMS fatte su questa macchina andrà specificata manualmente la durata.
 
 <details>
 <summary> I seguenti campi sono utilizzati solamente nella procedura di [Schedulazione F.C.S](/docs/planning/ms-master-scheduling/fcs-scheduling) </summary>
