@@ -20,6 +20,15 @@ Se per qualsiasi motivo l'id della partita non corrisponde a quello presente nel
 :::
 
 
+:::danger[ATTENZIONE]
+Ricordiamo che resta in gestione **su Fluentis la creazione della distinta Sbf** (e quindi creeremo il file in Fluentis per importarlo in DocFinance) **così come la creazione dell’insoluto** (per la riapertura delle partite originali): in particolare, **è necessario mantenere la gestione del portafoglio effetti in Fluentis per poter gestire correttamente le maturazioni delle provvigioni sul pagamento**.
+
+**La contabilizzazione insoluti deve prevedere in avere un conto transitorio banca (che è possibile impostare nei parametri del modulo insoluti) perché DocFinance invia l’addebito in conto corrente con contropartita questo stesso conto transitorio.**
+:::
+
+
+
+
 :::note Info
 [Link alle specifiche tecniche **Docfinance**](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
 :::

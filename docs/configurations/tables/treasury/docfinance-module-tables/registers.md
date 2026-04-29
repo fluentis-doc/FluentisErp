@@ -34,9 +34,12 @@ Esempio di derogabilità standard DocFinance
 
 - I codici delle causali di Fluentis (max 4 caratteri disponibili nel tracciato di DocFinance) verranno mappate su DocFinance, sui  movimenti contabili che vengono importati in Fluentis: si consiglia di impostare nelle causali in Fluentis sia i flag di chiusura che di apertura partite (nel caso in cui la partita non sia individuata o sia un anticipo).
 
-- Ricordiamo che resta in gestione su Fluentis la creazione della distinta Sbf (e quindi creeremo il file in Fluentis per importarlo in DocFinance) così come la creazione dell’insoluto (per la riapertura delle partite originali): in particolare, è necessario mantenere la gestione del portafoglio effetti in Fluentis per poter gestire correttamente le maturazioni delle provvigioni sul pagamento.
+:::danger[ATTENZIONE]
+Ricordiamo che resta in gestione **su Fluentis la creazione della distinta Sbf** (e quindi creeremo il file in Fluentis per importarlo in DocFinance) **così come la creazione dell’insoluto** (per la riapertura delle partite originali): in particolare, **è necessario mantenere la gestione del portafoglio effetti in Fluentis per poter gestire correttamente le maturazioni delle provvigioni sul pagamento**.
+:::
 
-La contabilizzazione insoluti deve prevedere in avere un conto transitorio banca (che è possibile impostare nei parametri del modulo insoluti) perché DocFinance invia l’addebito in conto corrente con contropartita questo stesso conto transitorio.
+
+**La contabilizzazione insoluti deve prevedere in avere un conto transitorio banca (che è possibile impostare nei parametri del modulo insoluti) perché DocFinance invia l’addebito in conto corrente con contropartita questo stesso conto transitorio.**
 
 Tutti gli altri movimenti di incasso e pagamento che coinvolgono banche saranno gestiti su DocFinance.
 
