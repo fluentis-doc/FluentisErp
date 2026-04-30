@@ -9,7 +9,7 @@ keywords:
 
 > -	CO - Elaborazione costi di Progetto/commessa nella form di Ripresa dati da produzione del Controlling, risolto errore su campo UnitNetPrice (#TT01736/26)
 > -	FI - Corretto errore nella stampa Calcolo provvigioni modulo amministrazione che non visualizzava correttamente i dati Ticket (#TT01701/26)
-> -	FI - create new parameters Gen-GlobalSettings_ManageSafT and GlobalSettings_ItemMUWeightsForIntrastat(#TT01888/26)
+> -	FI - create new parameters `Gen-GlobalSettings_ManageSafT` and `GlobalSettings_ItemMUWeightsForIntrastat`(#TT01888/26)
 > -	FI - form di ammortamento cespiti, revisione ricerca cespiti per esclusione righe già totalmente ammortizzate in anni precedenti ma con righe aggiuntive già ammortizzate nell’anno ricercato (#TT01465/26)
 > -	FI - Migliorato controllo di quadratura tra i centri di costo e il movimento contabile nei casi in cui nel piano dei conti non è presente un abbinamento conto-centro (#TT01297/26)
 > -	MES - Foglio di lavoro: corretta l’anomalia sulla ricerca del filtro relativo agli Ordini cliente. (#TT05177/25)
@@ -29,7 +29,7 @@ keywords:
 >> - Utilizzando il comando “Stampa” (ribbon Stampa i documenti selezionati) su una selezione multipla di documenti, la stampa viene inviata direttamente alla stampante associata al report delle fatture di acquisto, senza passare dall’anteprima di stampa. In questo caso vengono applicate le proprietà di stampa configurate sulla stampante, come ad esempio la stampa fronte/retro.  
 >> - Per visualizzare un documento in anteprima di stampa, è necessario aprire il documento tramite Visualizza Documento e utilizzare il comando Stampa presente nel registro SDI, che consente il passaggio tramite l’anteprima di stampa di Windows.  
 > -	SH - fix deletion of grid columns added in grid using profile management (#TT01500/26)
-> -	SH- BusinessDocumentItem-UnitNetPrice logic change.(#TT05051/25)
+> -	SH- `BusinessDocumentItem-UnitNetPrice` logic change.(#TT05051/25)
 > -	WM - Anagrafica articolo: Salvataggio nota in creazione articolo. (#TT01035/26)
 > -	WM - Ottimizzazione import WebApi di registrazione di magazzino (#TT01820/26)
 > -	WM - Piani di Carico: Aggiunta data merce pronta articolo in dettaglio piano di carico. Modifications inside the LoadPlan form can have impact on profiles. (#TT01902/26)

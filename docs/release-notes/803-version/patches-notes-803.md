@@ -7,7 +7,7 @@ sidebar_position: 1
 
 > -	CO - Nei valori di controllo, revisione gestione dati del tab ‘Valori Commessa’ (#TT01816/26)
 > -	FI - Corretto errore nella stampa Calcolo provvigioni modulo amministrazione che non visualizzava correttamente i dati Ticket (#TT01701/26)
-> -	FI - create new parameters Gen-GlobalSettings_ManageSafT and GlobalSettings_ItemMUWeightsForIntrastat (#TT01888/26)
+> -	FI - create new parameters `Gen-GlobalSettings_ManageSafT` and `GlobalSettings_ItemMUWeightsForIntrastat` (#TT01888/26)
 > -	FI - form di ammortamento cespiti, revisione ricerca cespiti per esclusione righe già totalmente ammortizzate in anni precedenti ma con righe aggiuntive già ammortizzate nell’anno ricercato (#TT01465/26)
 > -	FI - Gestione partite di anticipo: nel tab ordini cliente e DDT sono state aggiunte le colonne con il codice e la descrizione della soluzione di pagamento del documento. Modifications inside the form can have impact on profiles (Ticket - #TT01636/26)
 > -	FI - Migliorato controllo di quadratura tra i centri di costo e il movimento contabile nei casi in cui nel piano dei conti non è presente un abbinamento conto-centro (#TT01297/26)
@@ -24,7 +24,7 @@ sidebar_position: 1
 > -	MS - Stampe - Ordini di produzione: revisionato il calcolo del costo; ora il tempo di sospensione non viene considerato nel calcolo del costo. (#TT01692/26)
 > -	MS- AFCS - solved bug relevant a phase following a batch type phase (#TT01633/26)
 > -	QY - Controllo articoli - Importazione articoli da controllare: corretta anomalia sulla ricerca e associazione dei Piani di controllo, anche obsoleti, sulla base della data del documento importato. (#TT01883/26)
-> -	SCM - Importazione Prezzi Fornitore: Migliorate le performance di importazione di numero considerevole di articoli (>6000 righe <10000 righe) con creazione articoli e creazione listino fornitore. (#TT1302/26)
+> -	SCM - Importazione Prezzi Fornitore: Migliorate le performance di importazione di numero considerevole di articoli (`>6000 righe <10000 righe`) con creazione articoli e creazione listino fornitore. (#TT1302/26)
 > -	SCS - Registrazioni Rientri - Rollback : esplicitati i messaggi di mancanza giacenza. (#TT01604/26)
 > -	SCS - Rientro Conto Lavoro: Per le righe di tipo Nota non viene richiesto nessun altro dato oltre alla descrizione (#TT00800/26)
 > -	SD - WEBAPI Import Ordini: se l'ordine è di tipo Con Prezzi Ivati e non è specificato il prezzo automaticamente verrà ricercato un listino con prezzi ivati. (#TT01790/26)
