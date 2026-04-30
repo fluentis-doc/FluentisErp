@@ -3,6 +3,50 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0018 - 29/04/2026
+
+> -	CO - Nei valori di controllo, revisione gestione dati del tab ‘Valori Commessa’ (#TT01816/26)
+> -	FI - Corretto errore nella stampa Calcolo provvigioni modulo amministrazione che non visualizzava correttamente i dati Ticket (#TT01701/26)
+> -	FI - create new parameters Gen-GlobalSettings_ManageSafT and GlobalSettings_ItemMUWeightsForIntrastat (#TT01888/26)
+> -	FI - form di ammortamento cespiti, revisione ricerca cespiti per esclusione righe già totalmente ammortizzate in anni precedenti ma con righe aggiuntive già ammortizzate nell’anno ricercato (#TT01465/26)
+> -	FI - Gestione partite di anticipo: nel tab ordini cliente e DDT sono state aggiunte le colonne con il codice e la descrizione della soluzione di pagamento del documento. Modifications inside the form can have impact on profiles (Ticket - #TT01636/26)
+> -	FI - Migliorato controllo di quadratura tra i centri di costo e il movimento contabile nei casi in cui nel piano dei conti non è presente un abbinamento conto-centro (#TT01297/26)
+> -	FI - nella compensazione partite, revisione gestione cancellazione conto di testata (#TT01800/26)
+> -	FI - Rilascio stampe Tax Statistic per localizzazione US, revisione stringhe del Bilancio di Esercizio per terminologia US
+> -	FI - Scritture di assestamento, revisione gestione inserimento assestamenti per centri di costo (#TT01946/26)
+> -	MES - Foglio di lavoro: corretta l’anomalia sulla ricerca del filtro relativo agli Ordini cliente. (#TT05177/25)
+> -	MS - AFCS - se un ordine di produzione aveva lo stesso componente elencato più volte e riferito alla stessa fase si poteva creare un errore. (#TT01734/26)
+> -	MS - Corretto bug nel calendario della capacita centri di lavoro che non considerava correttamente i valori nel caso in cui fosse inserito 0 come numero macchine o operai. (#TT01042/26)
+> -	MS - M.R.P.: corretta l’anomalia che, durante l’aggiornamento dei Parametri di esecuzione dell’elaborazione, generava un time-out con relativa exception. (#TT01203/26)
+> -	MS - Pianificazione generale - Corretta anomalia che non rigenerava gli Ordini pianificati in ritardo rispetto alla data odierna se richiesto il “Controllo documenti in ritardo con ATP”. (#TT01769/26)
+> -	MS - Rilascio ordini pianificati - Al rilascio di un Ordine pianificato di produzione con fase esterna, viene verificata la presenza, nei Parametri di Conto lavoro, delle Causali necessarie per la movimentazione. In loro assenza viene visualizzato un messaggio di errore e l’Ordine pianificato non viene rilasciato. (#TT01583/26)
+> -	MS - Sequenza fasi e Capacità Centri di lavoro: risolta anomalia che presentava, nelle colonne dei Tempi Macchina e Manodopera la Quantità di fase. (#TT01963/26)
+> -	MS - Stampe - Ordini di produzione: revisionato il calcolo del costo; ora il tempo di sospensione non viene considerato nel calcolo del costo. (#TT01692/26)
+> -	MS- AFCS - solved bug relevant a phase following a batch type phase (#TT01633/26)
+> -	QY - Controllo articoli - Importazione articoli da controllare: corretta anomalia sulla ricerca e associazione dei Piani di controllo, anche obsoleti, sulla base della data del documento importato. (#TT01883/26)
+> -	SCM - Importazione Prezzi Fornitore: Migliorate le performance di importazione di numero considerevole di articoli (>6000 righe <10000 righe) con creazione articoli e creazione listino fornitore. (#TT1302/26)
+> -	SCS - Registrazioni Rientri - Rollback : esplicitati i messaggi di mancanza giacenza. (#TT01604/26)
+> -	SCS - Rientro Conto Lavoro: Per le righe di tipo Nota non viene richiesto nessun altro dato oltre alla descrizione (#TT00800/26)
+> -	SD - WEBAPI Import Ordini: se l'ordine è di tipo Con Prezzi Ivati e non è specificato il prezzo automaticamente verrà ricercato un listino con prezzi ivati. (#TT01790/26)
+> -	SD - Fattura di Vendita - Modifica Progetto (#TT2031/25). Il progetto è modificabile se:  
+>> - la fattura non è ancora Controllata per lo SDI  
+>> - non è Contabilizzata con una causale che gestisce la contabilizzazione per progetto  
+>> - non rappresenta i dati di contratto da riportare nel fiel XML della fatturazione elettronica tramite il relativo parametro globale  
+> -	SDI - Documenti di acquisto in entrata.  E’ stato aggiornato il comportamento dei comandi di stampa e anteprima di stampa:  
+>> - Il comando Anteprima di stampa mostrerà la stessa anteprima attualmente disponibile tramite il pulsante Stampa. All’interno dell’anteprima l’utente potrà selezionare la stampante e avviare la stampa.  
+>> - Se vengono selezionati più documenti e si utilizza il comando Anteprima di stampa, tutti i documenti selezionati verranno mostrati in un’unica anteprima di stampa. In questo caso non sarà possibile gestire le opzioni fronte/retro, ma sarà comunque possibile stampare più documenti in un’unica operazione.  
+>> - Il comando Stampa invierà direttamente il report alla stampante predefinita dell’utente per il report fatture di acquisto, senza visualizzare l’anteprima di stampa.  
+>> - Se vengono selezionati più documenti l’utente potrà sfruttare le impostazioni della stampante (ad esempio stampa fronte/retro)(#TT03482/25).   
+> -	SH - Fix report retrieval considering Item Nature (TT00903/26)
+> -	SH- BusinessDocumentItem-UnitNetPrice logic change.(#TT05051/25)
+> -	WM - Anagrafica articolo: Salvataggio nota in creazione articolo. (#TT01035/26)
+> -	WM - Liste Trasferimento UDC: Corretto valorizzazione tipo Udc in griglia.(#TT01152/26)
+> -	WM - Ottimizzazione import WebApi di registrazione di magazzino (#TT01820/26)
+> -	WM - Piani di Carico: Aggiunta data merce pronta articolo in dettaglio piano di carico. Modifications inside the LoadPlan form can have impact on profiles. (#TT01902/26)
+> -	WM - Stampa articoli non movimentati: Corretto funzionamento flag interesse fiscale (#TT01642/26)
+> -	WM - Visualizza Giacenza: Disattivato ridimensionamento form su inserimento progetto in Genera registrazione. (#TT01927/26)
+> -	WN - Disponibilità lotti: Corretta data movimento lotto in fatturazione di vendita che creava problemi dopo chiusura di magazzino. (#TT01543/26)
+
 ### Patch 803.0017 - 17/04/2026
 
 > -	CO - revisione elaborazione ammortamenti del controlling (#TT01510/26)
@@ -19,7 +63,7 @@ sidebar_position: 1
 > -	MS - Pianificazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la pianificazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi. (#TT00987/26)
 > -	MS - Sequenza Fasi: corrette le anomalie di: rappresentazione dei valori visualizzati nel “Tempo macchina” e del calcolo degli Orari di inizio e fine fase. (#TT01612/26)
 > -	SCM - Bolle di Acquisto/Fatture Acquisto: Disabilitata la possibilità di cancellare i lotti dopo il carico del documento (#TT1664/26)
-> - SCS – Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo. (#TT01357/26)
+> - SCS - Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo. (#TT01357/26)
 > -	SD - Create SalesInvoice from SalesDeliveryNote new method for scripting call. Modifications in SalesDeliveryNote Filter form can have impact on profiles (#TT01704/26)
 > -	SD - Fix Create SalesInvoice proforma with batches from Picking problem(#TT01074/26)
 > -	SD - Fix SalesOrder-check packages number for item problem(#TT01597/26)
@@ -52,9 +96,9 @@ sidebar_position: 1
 > -	QY - Reclami, Non conformità e Azioni correttive - Sono stati revisionati i metodi di calcolo dei contatori delle Tile in modo che rispecchino il numero di documenti associati al relativo flag di stato: Approvato, Accettato, Bloccato e Chiuso. (#TT01452/26)
 > -	SCM - Corretta valorizzazione dei DDT di acquisto e rientro conto lavoro: è ora possibile valorizzare insieme più righe di DDT di natura diversa (#TT01216/26)
 > -	SD - Corretto il funzionamento del filtro di ricerca “confermato” e “non confermato” in Ordini Clienti (#TT01464/26)
-> -	SD - Creazione file XML FE: limitato la descrizione dell’indirizzo `<CedentePrestatore><Sede><Indirizzo>` ai 60 caratteri ministeriali (#TT#TT01416/26)
+> -	SD - Creazione file XML FE: limitato la descrizione dell’indirizzo `<CedentePrestatore><Sede><Indirizzo>` ai 60 caratteri ministeriali (#TT01416/26)
 > -	SD - Dopo il trasferimento degli imballi a rendere nella form DDT di vendita, spostandosi tra le righe della griglia i valori vengono visualizzati correttamente (#TT01576/26)
-> -	SD - Pesi e Volume in tab trasporto: Corretta visualizzazione UM di misura dei pesi e del volume che in alcuni casi non era visbile anche se correttamente calcolata (rif. Ticket #TT01521/26 #TT01530/26)
+> -	SD - Pesi e Volume in tab trasporto: Corretta visualizzazione UM di misura dei pesi e del volume che in alcuni casi non era visbile anche se correttamente calcolata (#TT01521/26 #TT01530/26)
 > -	SD/SCM - Duplica documenti di acquisto/vendita, sviluppata esclusione delle righe di analitica legate a centri di costo non validi alla data (#TT01524/26 - #TT01353/26)
 > -	SD - conversione offerta di vendita in ordine - se mancante l'articolo da usare per le righe ordine derivate da risorse offerta, la conversione viene bloccata. (#TT01220/26)
 > -	SH - Focus su campo Trova eseguendo il comando Ricerca (#TT01361/26)
@@ -272,7 +316,7 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > -	SD - Shippings - Calendario Spedizioni - Corretto errori in creazione spedizioni da calendario. (#TT00391/26)
 > -	SD- Se la riga acconto (tipo 6) in fattura aveva l’articolo valorizzato, ora lo storno acconto riporta questo articolo nella riga di tipo 7. (#TT00084/26)
 > -	SD\SCM-Nella tabella dei tipi spese aggiungere un check button per determinare l’area di competenza, in questo modo è possibile gestire tipi spesa differenti tra documenti di acquisto e di vendita, e nel caso del RAEE questi vengono proposti automaticamente dagli algoritmi.Modifications in charge type form can have an impact on profiles (#TT00339/26)
-> -	SD-Corretto errore nella stampa delle provvigioni maturate, modulo vendite, che presentava la provvigione come non maturata, anche se la partita era chiusa, nel caso in cui il pagamento veniva registrato assieme al pagamento di un insoluto. (Rif Ticket 353/26)
+> -	SD-Corretto errore nella stampa delle provvigioni maturate, modulo vendite, che presentava la provvigione come non maturata, anche se la partita era chiusa, nel caso in cui il pagamento veniva registrato assieme al pagamento di un insoluto. (#TT353/26)
 > -	WM - Valorizzazione di magazzino - Controllo giacenze negative lotti anche se magazzino ammette giacenze negative. (#TT00344/26)
 
 ### Patch 803.0008 - 29/01/2026
