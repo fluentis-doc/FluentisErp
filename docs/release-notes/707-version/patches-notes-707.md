@@ -5,18 +5,48 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0072 - 29/04/2026
+
+> -	CO - Elaborazione costi di Progetto/commessa nella form di Ripresa dati da produzione del Controlling, risolto errore su campo UnitNetPrice (#TT01736/26)
+> -	FI - Corretto errore nella stampa Calcolo provvigioni modulo amministrazione che non visualizzava correttamente i dati Ticket (#TT01701/26)
+> -	FI - create new parameters Gen-GlobalSettings_ManageSafT and GlobalSettings_ItemMUWeightsForIntrastat(#TT01888/26)
+> -	FI - form di ammortamento cespiti, revisione ricerca cespiti per esclusione righe già totalmente ammortizzate in anni precedenti ma con righe aggiuntive già ammortizzate nell’anno ricercato (#TT01465/26)
+> -	FI - Migliorato controllo di quadratura tra i centri di costo e il movimento contabile nei casi in cui nel piano dei conti non è presente un abbinamento conto-centro (#TT01297/26)
+> -	MES - Foglio di lavoro: corretta l’anomalia sulla ricerca del filtro relativo agli Ordini cliente. (#TT05177/25)
+> -	MS - Corretto bug nel calendario della capacità centri di lavoro che non considerava correttamente i valori nel caso in cui fosse inserito 0 come numero macchine o operai. (#TT01042/26)
+> -	MS - Pianificazione generale - Corretta anomalia che non rigenerava gli Ordini pianificati in ritardo rispetto alla data odierna se richiesto il “Controllo documenti in ritardo con ATP”. (#TT01769/26)
+> -	MS - Rilascio ordini pianificati - Al rilascio di un Ordine pianificato di produzione con fase esterna, viene verificata la presenza, nei Parametri di Conto lavoro, delle Causali necessarie per la movimentazione. In loro assenza viene visualizzato un messaggio di errore e l’Ordine pianificato non viene rilasciato. (#TT01583/26)
+> -	MS - Stampe - Ordini di produzione: revisionato il calcolo del costo; ora il tempo di sospensione non viene considerato nel calcolo del costo. (#TT01692/26)
+> -	QY - Controllo articoli - Importazione articoli da controllare: corretta anomalia sulla ricerca e associazione dei Piani di controllo, anche obsoleti, sulla base della data del documento importato. (#TT01883/26)
+> -	SCS - Rientro Conto Lavoro: Per le righe di tipo Nota non viene richiesto nessun altro dato oltre alla descrizione (rif. ticket #TT00800/26)
+> -	SD - Fix AgentSettlement calculation special case with items Reversal(TT01258/21)
+> -	SD - Fix Import SalesDeliveryNote linked with sales order, with batch proposal (TT01783/26)
+> -	SD - Fattura di Vendita - Modifica Progetto (rif ticket 2031/25). Il progetto è modificabile se:
+>> - la fattura non è ancora Controllata per lo SDI
+>> - non è Contabilizzata con una causale che gestisce la contabilizzazione per progetto
+>> - non rappresenta i dati di contratto da riportare nel fiel XML della fatturazione elettronica tramite il relativo parametro globale
+> -	SDI - Documenti di acquisto in entrata. È stato modificato il comportamento di stampa dei documenti di acquisto provenienti da SDI (#TT03482/25).
+>> - Utilizzando il comando “Stampa” (ribbon Stampa i documenti selezionati) su una selezione multipla di documenti, la stampa viene inviata direttamente alla stampante associata al report delle fatture di acquisto, senza passare dall’anteprima di stampa. In questo caso vengono applicate le proprietà di stampa configurate sulla stampante, come ad esempio la stampa fronte/retro.  
+>> - Per visualizzare un documento in anteprima di stampa, è necessario aprire il documento tramite Visualizza Documento e utilizzare il comando Stampa presente nel registro SDI, che consente il passaggio tramite l’anteprima di stampa di Windows.  
+> -	SH - fix deletion of grid columns added in grid using profile management (#TT01500/26)
+> -	SH- BusinessDocumentItem-UnitNetPrice logic change.(#TT05051/25)
+> -	WM - Anagrafica articolo: Salvataggio nota in creazione articolo. (#TT01035/26)
+> -	WM - Ottimizzazione import WebApi di registrazione di magazzino (#TT01820/26)
+> -	WM - Piani di Carico: Aggiunta data merce pronta articolo in dettaglio piano di carico. Modifications inside the LoadPlan form can have impact on profiles. (#TT01902/26)
+> -	WN - Disponibilità lotti: Corretta data movimento lotto in fatturazione di vendita che creava problemi dopo chiusura di magazzino. (#TT01543/26)
+
 ### Patch 707.1-0071 - 17/04/2026
 
 > -	Creata stampa standard per la form Visualizzazione Bilancio con centri di costo.
 > -	FI - calcolo scritture di assestamento, revisione gestione arrotondamenti righe Cdc (#TT01506/26)
 > -	FI - Modificata contabilizzazione rata mutuo. Le date di competenza economica sui conti di costo e sui centri di costo vengono impostate pari alla data registrazione anche in presenza del parametro di inserimento “Nessuno per tipo conto servizi”. #TT00569/26
-> -	FI - Creata stampa standard per la form Visualizzazione Bilancio con centri di costo. ( TT01380/26)
+> -	FI - Creata stampa standard per la form Visualizzazione Bilancio con centri di costo. (#TT01380/26)
 > -	MES - Dichiarazioni di produzione: se l’Ubicazione proposta per il versamento del Semilavorato WIP viene annullata nella Fase di un Ordine di produzione, durante la Dichiarazione di produzione viene proposta l’Ubicazione associata alla Causale di carico (se presente) altrimenti rimane vuota. (#TT01629/26)
 > -	MS - M.R.P: corretta l’anomalia che, in presenza di un articolo gestito con dei valori di approvvigionamento e la richiesta di esecuzione MRP considerando anche il passato, proponeva dei reintegri nel passato. (#TT01167/26, #TT01545/26)
 > -	MS - Pianificazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la pianificazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi. (#TT00987/26)
 > -	SD - Fix SalesOrder-check packages number for item problem(TT01597/26)
 > -	SD - WebApi SalesDeliveryNote, SalesInvoice, Picking - evasione da ordine - non permetere evadere righe evase o forzatamente evase (TT01744/26)
-> - SCS – Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo. (#TT01357/26)
+> - SCS - Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo. (#TT01357/26)
 
 ### Patch 707.1-0070 - 10/04/2026
 
