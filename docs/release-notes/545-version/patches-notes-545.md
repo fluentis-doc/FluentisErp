@@ -15,16 +15,13 @@ sidebar_position: 1
 
 ### Patch 545.1-0127 - 02/02/2026
 
-> - Implement file for non SEPA payments without IBAN code(#TT05630/25).
-
-> - Rilascio stampa CU2026
-
-> - FI - CU2026, revisione tendina di regime escluso (RF19) (#TT00248/26).
+> - Implement file for non SEPA payments without IBAN code(#TT05630/25).  
+> - Rilascio stampa CU2026  
+> - FI - CU2026, revisione tendina di regime escluso (RF19) (#TT00248/26).  
 
 ### Patch 545.1-0126 - 12/12/2025
 
-> - Estratto conto - fix per apertura conti.
-
+> - Estratto conto - fix per apertura conti.  
 > - CO - Elaborazione periodi optimization (TT05417/25).
 
 ### Patch 545.1-0125 - 27/11/2025
