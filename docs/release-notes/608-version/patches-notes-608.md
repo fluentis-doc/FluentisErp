@@ -3,6 +3,12 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0089 - 04/05/2026
+
+> -	SCS - Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo. (#TT01357/26)
+
+> -	QY - Controllo articoli - Importazione articoli da controllare: corretta anomalia sulla ricerca e associazione dei Piani di controllo, anche obsoleti, sulla base della data del documento importato. (#TT01883/26)
+
 ### Patch 608.1-0088 - 17/04/2026
 
 > -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti(#TT00769/26)  

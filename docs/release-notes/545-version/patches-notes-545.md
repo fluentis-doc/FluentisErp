@@ -3,6 +3,16 @@ title: Patch notes Versione 545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0128 - 04/05/2026
+
+> - BZ - importazione Bizlink, è possibile importare listino con prezzo per quantità nei listini cliente (#00175/26)
+> - CO - Errore chiusura infrannuale (TT05542/25)
+> - CO - revisione elaborazione periodi, esclusione delle righe con date competenza nulle (#TT00971/26)
+> - FI - Intrastat - in caso di importo 0 il raggruppamento mantiene il campo del segno impostato a 1 (#TT00417/26)
+> - PR - Change in SDD file creation (TT05663/25)
+> - SD - Agenti: Abilitata la gestione di provvigioni a valore e in percentuale per lo stesso agente. (#TT00102/26)
+
+
 ### Patch 545.1-0127 - 02/02/2026
 
 > - Implement file for non SEPA payments without IBAN code(#TT05630/25).
