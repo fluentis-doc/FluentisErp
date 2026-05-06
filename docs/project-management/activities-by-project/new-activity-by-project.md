@@ -1,5 +1,5 @@
 ---
-title: Nuova Dichiarazione Attività per Progetto
+title: Nuova dichiarazione attività per progetto
 sidebar_position: 1
 ---
 
