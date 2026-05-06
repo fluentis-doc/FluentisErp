@@ -64,6 +64,8 @@ Contiene eventuali Oneri di viaggio, identificati da:
 - **Costo totale**: campo calcolato in base ai dati precedentemente inseriti che contiene il costo totale della spesa (es. km per costo km, ore viaggio per costo orario, etc);     
 - **Da rimborsare**: questo flag indica se l’onere è da rimborsare; 
 - **Allegati** indica se la riga contiene degli allegati associati;
+- **Spesa cumulativa**: indica la presenza di un dettaglio spesa cumulata;
+- **Tipo pagamento**: tipo pagamento utilizzato per sostenere la spesa;
 - **Nota**: eventuali note inserite dall'utente;
 
  
@@ -109,6 +111,16 @@ La spesa forfait da fatturare risulterà in totale 250 (100 autostrada fissi, 50
 --> non ci sarà alcuna indennità di trasferta, in quanto il minimo oltre alle 8 ore sono 2 di viaggio (in questo caso invece avremmo 9 ore, quindi 1 sola ora oltre alle 8 ordinarie)
 
 ::: 
+
+### Dettaglio spesa cumulata 
+La griglia di dettaglio spesa cumulata si trova nella tab spese intervento sostenute, ed è utilizzata nel caso di spese sostenute da una risorsa a nome di più risorse. Quindi per poter gestire la nota spese in modo opportuno (rispettando i plafond stabiliti per risorsa) è necessario dividere la spesa in quote congrue per tutte le risorse, al fine di agevolare i controlli. 
+
+
+Per ogni riga spese, nella griglia sottostante si indicano:
+- **risorsa** : tutte le risorse, inclusa la risorsa "principale" che ha sostenuto la spesa.
+- **importo spesa** : il calcolo dell'importo avviene in modo automatico, man mano che si aggiungono le risorse. La spesa indicata nella riga principale, viene divisa per il numero di righe risorse inserite. L'importo è comunque liberamente modificabile, a condizione che al momento del salvataggio il totale delle righe corrisponda al totale spesa nella riga principale. 
+- **Valore massimo rimborsato**: in base alla risorsa selezionata ed al tipo spesa nella riga principale, verrà mostrato l'importo del plafond configurato in anagrafica risorsa. 
+
 
 ## Tab Servizi
 
@@ -274,7 +286,7 @@ In seguito vengono cercate le configurazioni per tipo intervento (corrispondenza
 
 In base a queste corrispondenze verranno utilizzate le configurazioni più consone. Se non si trova alcuna corrispondenza, il piano di fatturazione rimarrà vuoto. 
 
-##Esempi di calcolo piano di fatturazione
+## Esempi di calcolo piano di fatturazione
 Poniamo che la configurazione attuale per gli esempi a seguire sia:
 
 >Fascia oraria: lun-ven 08.00-20.00 massimo giornaliero 8 ore

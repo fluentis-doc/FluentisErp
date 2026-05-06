@@ -1,5 +1,5 @@
 ---
-title: Nuova nota spese risorse
+title: Nota spese risorse
 sidebar_position: 2
 ---
 

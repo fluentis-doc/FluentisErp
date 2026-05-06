@@ -1,9 +1,11 @@
 ---
-title: Nuova dichiarazione attività per progetto
+title: Dichiarazione attività per progetto
 sidebar_position: 1
 ---
 
-I dati sono:
+Nell'area progetti ogni risorsa può inserire le dichiarazioni delle proprie attività. Queste potranno essere collegate (non obbligatoriamente) a progetto, e potranno poi essere fatturate (e quindi genereranno un intervento), oltre a contribuire al calcolo del cedolino paghe. 
+
+## Testata
 
 **Tipo attività**: contiene il [Tipo attività](/docs/configurations/tables/project-management/activity-type/);
 
@@ -49,7 +51,6 @@ Modificando l' Ora di fine, se antecedente alla pausa, questa verrà cancellata 
 **Società / Divisione Intercompany** : indica la società e divisione di appartenenza se diverso dalla società di inserimento. 
 
 **Intervento**: contiene l’eventuale [Intervento](/docs/project-management/service-activities/search-intervention/) collegato manualmente o generato in automatico al salvataggio attività o generato dalla procedura guidata; Nel tipo attività è possibile impostare il tipo intervento da utilizzare. 
-![](/img/it-it/project-management/projects/declaration.png)
 
 **Stato attività**: contiene lo stato tra Inserito, Verificato, Sospeso, Chiuso.
 
@@ -73,12 +74,12 @@ Modificando l' Ora di fine, se antecedente alla pausa, questa verrà cancellata 
 
 Successivamente sono presenti diverse tab.
 
-
-**Tab Descrizione**
+## Descrizione
 In questa tab è possibile descrivere l’attività nel campo **Descrizione attività**, che verrà utilizzata come Descrizione attività svolta negli interventi (se generati). E' presente anche una **Descrizione interna** che invece non verrà propagata in alcun altro documento. 
 Se l'attività è collegata ad un intervento e si fanno modifiche ad orari e/o descrizione, verrà automaticamente aggiornato anche l'intervento. 
 
-**Tab Oneri di viaggio**
+
+## Oneri di viaggio
 Questa tab contiene eventuali oneri di viaggio sostenuti dalla risorsa. 
 In fase di inserimento manuale della dichiarazione attività, le spese verranno proposte in automatico selezionando la risorsa, se configurate in anagrafica. 
 Se invece la dichiarazione attività è stata generata in automatico dall'intervento, la tab Oneri di viaggio conterrà soltanto quanto dichiarato dalla risorsa come Spese sostenute nell'intervento. Se la tab Spese sostenute nell'intervento sarà completamente vuota, nell'attività verranno comunque proposte le spese configurate in anagrafica risorsa. 
@@ -91,18 +92,34 @@ Al salvataggio se le spese proposte non sono state completate con valori ed impo
 
 **Da rimborsare** se abilitato, nell'elaborazione del cedolino paga, l'importo verrà considerato come da rimborsare, altrimenti sarà escluso dal cedolino. 
 
-**In fattura** indica se la spesa dev'essere inserita come spesa "Da fatturare" nell'intervento qualora venga generato. 
+**In fattura** indica se la spesa dev'essere inserita come spesa "Da fatturare" nell'intervento qualora venga generato.
+
+**Allegati** indica la presenza di allegati per la riga spesa.
+
+**Spesa cumulativa** indica la presenza di un dettaglio spesa cumulata.
+
+**Tipo pagamento**: tipo pagamento utilizzato per sostenere la spesa;
 
 **Note** eventuali note inserite dall'utente.
 
-**Tab Attività contatto**
+### Dettaglio spesa cumulata 
+La griglia di dettaglio spesa cumulata si trova nella tab oneri di viaggio, ed è utilizzata nel caso di spese sostenute da una risorsa a nome di più risorse. Quindi per poter gestire la nota spese in modo opportuno (rispettando i plafond stabiliti per risorsa) è necessario dividere la spesa in quote congrue per tutte le risorse, al fine di agevolare i controlli. 
+
+
+Per ogni riga spese, nella griglia sottostante si indicano:
+- **risorsa** : tutte le risorse, inclusa la risorsa "principale" che ha sostenuto la spesa.
+- **importo spesa** : il calcolo dell'importo avviene in modo automatico, man mano che si aggiungono le risorse. La spesa indicata nella riga principale, viene divisa per il numero di righe risorse inserite. L'importo è comunque liberamente modificabile, a condizione che al momento del salvataggio il totale delle righe corrisponda al totale spesa nella riga principale. 
+- **Valore massimo rimborsato**: in base alla risorsa selezionata ed al tipo spesa nella riga principale, verrà mostrato l'importo del plafond configurato in anagrafica risorsa. 
+
+## Attività contatto
 In questa tab è possibile collegare la dichiarazione attività ad un contatto dell'area CRM, ad un'Opportunità area CRM ed ad una Campagna Marketing. 
 
-**Tab Documenti allegati**
+## Documenti allegati
 In questa tab è possibile visualizzare e aggiungere degli allegati, che verranno salvati nel modulo Documentale di Fluentis. Per aggiungere un file è sufficiente utilizzare il drag and drop, ossia selezionando il file dal percorso in cui si trova attualmente e rilasciandolo all’interno della tabella.
 
-**Tab Extra Data** 
+## Extra Data
 In questo tab è possibile inserire eventuali Extra Data collegati; per maggiori informazioni consultare la sezione [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata). 
+
 
 
 
