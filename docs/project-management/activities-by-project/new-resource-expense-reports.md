@@ -116,27 +116,22 @@ In questa tab sono mostrati i riepiloghi dei totali:
 
 I totali sono calcolati come segue: 
 -	**Totale spese**: somma totale dei valori del campo “Importo” di ogni riga spesa.  
-
 -	**Totale eccedenze**: somma totale dei valori del campo “Eccedenza” di ogni riga spesa
-
--	vTotale addebitato in cedolino paga**: importo addebitato in busta paga = 
-somma dei valori presenti in “Eccedenza” delle righe spese che hanno:
+-	**Totale addebitato in cedolino paga**: importo addebitato in busta paga = somma dei valori presenti in “Eccedenza” delle righe spese che hanno:
     -   stato “Non autorizzato” oppure “Parzialmente Autorizzato”
     -   NON hanno attivo il flag “Rimborsabile”
 
 
 -	**Totale non rimborsabile in cedolino paga**: importo non riconosciuto in busta paga = somma dei valori presenti in “Eccedenza” delle righe spese che hanno:
-o	stato “Non autorizzato” oppure “Parzialmente Autorizzato”
-o	hanno attivo il flag “Rimborsabile”
+    -   stato “Non autorizzato” oppure “Parzialmente Autorizzato”
+    -   hanno attivo il flag “Rimborsabile”
 
--	**Totale rimborsabile in cedolino paga **: importo accreditato in busta paga =
-somma dei valori presenti in “Importo” al netto dell’importo “Eccedenza” delle righe spese che hanno 
+-	**Totale rimborsabile in cedolino paga**: importo accreditato in busta paga = somma dei valori presenti in “Importo” al netto dell’importo “Eccedenza” delle righe spese che hanno 
     -   stato “Autorizzato” oppure “Parzialmente Autorizzato”
     -   hanno attivo il flag “Rimborsabile”
 
 -	**Totale spese non validate**: 
-somma dei valori presenti in “Importo” che hanno 
-    -   Stato “Inserito”
+somma dei valori presenti in “Importo” che hanno Stato “Inserito”
 
 
 ## Funzionalità nella ribbon bar
