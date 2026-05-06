@@ -46,3 +46,7 @@ Sono previste le seguenti origini dati:
 **Portafoglio effetti**: Effetti emessi (e presentati, a seconda dell'impostazione del flag *Usa in scad. nel castelletto* presente nella maschera di *Generazione automatica cashflow*)
 
 **Anticipi**: Distinte di anticipo fattura create. L'elaborazione del cash flow, se per questo tipo è impostato il flag 'Usa in scad. nel castelletto' (nella maschera *Generazione automatica Cashflow*) va a rilevare gli importi delle distinte contabilizzate per l'importo anticipato sul conto bancario, e nei flussi alle date scadenza. Quando el fatture vengono incassate (elaborando un nuovo cashflow) i flussi in scadenza vengono eliminati e l'importo del conto bancario viene aggiornato con la quota residua non già anticipata al netto di eventuali commissioni e interessi.
+
+**Fatturazione Progetti**: Ogni riga articolo del progetto può prevedere un piano di fatturazione utilizzato per creare automaticamente le fatture dal progetto stesso (Comando *Gestione progetti > Procedure > Creazione Fattura di Vendita*).
+Questa procedura si utilizza ad esempio per eventuali canoni periodici previsti dal progetto, non per la fatturazione degli interventi.
+La procedura del cashflow leggerà il piano di fatturazione per creare una scadenza simulata per ognuna di quelle non già fatturate (che a quel punto rientrano nel flusso delle fatture).
