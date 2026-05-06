@@ -13,6 +13,11 @@ l'eventuale **Valore in divisa** secondo quanto inserito nella registrazione (il
 
 **Numero del documento**, la **Data di registrazione** e il **Codice del servizio** ripreso dall'anagrafica intestataria della registrazione.
 
+:::note[Nota]
+Per gli altri campi specifici della form fare riferimento alla procedura [**Creazione automatica**](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/parameters).
+:::
+
+
 Una volta completati i dati è possibile procedere alla creazione, operazione che andrà a riportare i dettagli nelle sezioni bis - ter - quater.
 
 Il corretto inserimento, automatico, nella sezione adeguata del modello dipende dalla gestione, in fase di inserimento della scrittura contabile, del campo **Tipo IVA** nella griglia iva. Se impostato su *Generico* il movimento sarà inserito nella sezione Bis, se impostato su *Servizio*, sarà inserita nella sezione quater. 

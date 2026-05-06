@@ -27,7 +27,19 @@ All'interno della sezione **Parametri** la procedura riporta tutte le righe di d
 
 **Codice trasporto e Modalità trasporto** sono inseriti rispetto ai codici porto/spedizione assegnati al documento;
 
-**Dati relativi alle provincie di origine/destinazione **e al** paese di provenienza/destinazione** sono letti dall'anagrafica del soggetto intestatario del documento o dalla tabella società.
+**Dati relativi alle provincie di origine/destinazione** sono letti dalla tabella società (Campo della **Provincia**).
+
+:::tip[Novità]
+Dalla versione 804 il software verificherà se la riga fattura ha un magazzino collegato.
+Se c’è un magazzino, e se il magazzino è legato ad un contatto (Campi *Nomignolo* e *Ragione sociale* nella tabella [**Magazzini**](/docs/configurations/tables/logistics/warehouses)) e se questo contatto ha il campo *Provincia* valorizzato, allora userà questa provincia:
+-	Direttamente in creazione intrastat vendite da fatture di vendita
+-	In contabilizzazione fattura di vendita, per valorizzare la scheda *intrastat* della registrazione nel campo della provincia di origine e quindi poi da qui finirà nell’intrastat se si usa la procedura [**Creazione da registrazioni**](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)
+
+La provincia di origine, infatti, dovrebbe essere la provincia da dove la merce è partita, quindi in caso di aziende con più magazzini dislocati in diverse provincie sarà più preciso e non obbligherà a modifiche manuali.
+:::
+
+
+Dati relativi al **paese di provenienza/destinazione** sono letti dall'anagrafica del soggetto intestatario del documento (Fattura).
 
 Alla fine della griglia sono visualizzati i riferimenti al documento d'origine della riga.
 
