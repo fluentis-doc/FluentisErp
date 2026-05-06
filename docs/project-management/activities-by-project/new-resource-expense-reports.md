@@ -101,6 +101,12 @@ In questa tab è visualizzato l'elenco dettagliato delle spese che sono state in
 
 **Modificato manualmente**: nel caso di cambio stato forzato rispetto a quanto proposto, o modifiche dell’importo 	di eccedenza, il flag si abilita in automatico
 
+Nella griglia sarà possibile trovare righe intestate a risorse diverse dalla risorsa principale indicata nella nota spese. 
+
+Questo si verifica nel caso di righe di dettaglio delle spese cumulative, dove nel dettaglio ci sono diverse risorse.
+Tutte le righe di dettaglio verranno inserite nella Nota spese inerente alla risorsa che ha effettivamente sostenuto la spesa. Questo al fine di garantire un corretto rimborso nel cedolino paga. L'indicazione invece delle singole risorse, sarà necessaria per il controllo dei specifici plafond.  
+
+
 ### Stato riga spesa
 
 Ogni riga spesa si trova in uno specifico “Stato”, i valori ammessi sono i seguenti: 
@@ -131,7 +137,7 @@ in alto è presente un flag per filtrare:
 **Visualizza spese con giustificativo Richiesto – senza allegato**
 Verranno mostrate tutte le spese a cui manca l’allegato e la cui configurazione richiede l’allegato obbligatoriamente.
 
-Da questa videata l’utente avrà la possibilità di aggiungere l’allegato mancante, che verrà poi reso visibile anche nei rispettivi documenti (attività/interventi). Le modalità di inserimento sono le stesse come per altre aree, drag&drop oppure bottone da ribbon bar. 
+Da questa videata l’utente avrà la possibilità di aggiungere l’allegato mancante, che verrà salvato e poi reso visibile anche nei rispettivi documenti (attività/interventi). Le modalità di inserimento sono le stesse come per altre aree, drag&drop oppure bottone da ribbon bar. L'eventuale cancellazione della nota spese, NON comporta la cancellazione degli allegati, che rimarranno a sistema legati al documento specifico. 
 
 ## Tab Riepiloghi 
 Nella tab riepiloghi, sono presenti i totali delle spese inserite, con dettagliati gli importi che verranno rimborsati, oppure gli importi che non verranno rimborsati. 

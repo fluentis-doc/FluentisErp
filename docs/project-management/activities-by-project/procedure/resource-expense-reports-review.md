@@ -42,7 +42,7 @@ Nella griglia verranno mostrate tutte le spese inserite negli interventi e nelle
 
 **Plafond**: importo massimo giornaliero definito in anagrafica risorsa per tipologia di spesa. Se 	plafond = 0 significa che non ci sono limiti di plafond.
 
-**Quota Plafond già usata**: nel caso siano già presenti altre spese già validate in altre Note Spesa per la risorsa/giorno/tipologia di spesa, la quota di plafond va considerata parzialmente erosa (es. 2 interventi nello stesso giorno della stessa 	risorsa dello stesso Tipo Spesa)
+**Quota Plafond già usata**: nel caso siano già presenti altre spese già validate in altre Note Spesa per la risorsa/giorno/tipologia di spesa, la quota di plafond va considerata parzialmente erosa (es. 2 interventi nello stesso giorno della stessa risorsa dello stesso Tipo Spesa)
 
 **Eccedenza**: quota che supera il plafond. Ottenuta con il seguente calcolo: 
 	Eccedenza = Plafond – Importo spesa – quota Plafond già usata
@@ -64,6 +64,20 @@ Nella griglia verranno mostrate tutte le spese inserite negli interventi e nelle
 
 **Note**: note inserite per la spesa in questione. 
 
+#### Stati riga spesa
+In fase di ricerca spese, lo stato verrà già impostato in funzione delle regole stabilite.
+
+Stati gestiti: 
+-	**Inserito**: spesa inserita non ancora processata.
+-	**Autorizzata**: stato attribuito se la spesa è configurata in anagrafica risorsa e non supera il plafond. 
+-	**Non Autorizzata**: stato attribuito se la spesa NON è configurata in anagrafica risorsa oppure se la spesa eccede per intero il plafond. Il campo Eccedenza avrà il valore uguale alla spesa.
+-	**Parzialmente Autorizzata**: stato attribuito se la spesa è configurata in anagrafica risorsa ed eccede solo parzialmente il plafond. Il campo Eccedenza sarà modificabile.
+-	**Autorizzata Forzatamente**: nel caso la spesa superi il plafond oppure non sia prevista in anagrafica risorsa, ma si decide l’approvazione forzata. Il campo Eccedenza sarà forzato a 0.
+
+
+Nel caso di Spesa Parzialmente autorizzata, il campo “Eccedenza” sarà modificabile. 
+Questo per permettere di variare la redistribuzione del plafond da utilizzare (ad es. nel caso di più spese dello stesso tipo / stessa risorsa / stesso giorno oppure per aumentare per il plafond per il caso specifico)
+
 
 ### Parametri (parte inferiore)
 
@@ -84,3 +98,43 @@ per la generazione di una nuova Note Spese
 
 **Totale Eccedenze**: totale delle eccedenze delle spese visualizzate
 
+### Allegati
+
+Nella procedura è presente una tab “Documenti allegati” che mostra l’elenco degli allegati e la relativa anteprima
+Selezionando le spese con allegati, verrà mostrato l’elenco allegati. 
+Selezionando un documento dell’elenco, nel riquadro sottostante verrà mostrata l’anteprima della spesa. 
+E' possibile aggiungere allegati direttamente dalla procedura, che verranno salvati direttamente nei documenti interessati. 
+
+### Funzionalità in ribbon bar
+- **Ricerca** funziona come “Ricalcolo” di tutte le voci. Se ci sono voci con il flag “modificate manualmente” verrà richiesto se mantenere le modifiche. 
+- **Cambia stato** è possibile attribuire massivamente uno stato specifico alle spese selezionate. 
+- **Conferma Verifica** viene generata e salvata la nota spese per ogni risorsa con i parametri indicati nella videata.
+
+Al salvataggio verranno rifatte le verifiche affinché i dati siano coerenti con le regole – stato delle singole spese.
+
+Le righe con stato “Approvazione Forzata” saranno ignorate da questo controllo.
+
+Tutte le altre righe saranno raggruppate per: 
+	- Risorsa / data spesa / Tipo spesa
+
+E verrà fatta la seguente verifica :
+	- se (Plafond + somma importi Eccedenza – somma importi spese) maggiore uguale a 0 --> OK 
+
+Altrimenti verrà dato messaggio di blocco:
+
+"Attenzione! Ci sono righe modificate manualmente che non rispettano le condizioni stabilite. Procedere alla correzione prima di confermare oppure effettuare una nuova ricerca e validazione. "
+
+Nel caso di righe di dettaglio spese cumulative, anche se nel dettaglio ci sono diverse risorse, tutte le righe verranno inserite nella Nota spese inerente alla risorsa che ha effettivamente sostenuto la spesa. Questo al fine di garantire un corretto rimborso nel cedolino paga. L'indicazione invece delle singole risorse, sarà necessaria per il controllo dei specifici plafond.  
+
+Le spese che sono state inserite nella Nota Spese risulteranno quindi “Verificate” con una data-utente di verifica.
+
+Nel caso di tentativo di modifica spese nei documenti (Interventi ed Attività), si verrà bloccati da messaggio: 
+
+	“Spesa verificata! Impossibile modificare”
+	
+Per sbloccare la spesa e procedere alla modifica, è necessario eliminarla dalla Nota spese, oppure effettuare un rollback della procedura di generazione Nota Spese: 
+
+### Rollback
+Nella tab di rollback è possibile annullare la procedura appena effettuata. Non verranno cancellati gli allegati aggiunti, che resteranno salvati nei specifici documenti. 
+
+Il rollback annulla soltanto la nota spese generata. 

@@ -111,6 +111,16 @@ Per ogni riga spese, nella griglia sottostante si indicano:
 - **importo spesa** : il calcolo dell'importo avviene in modo automatico, man mano che si aggiungono le risorse. La spesa indicata nella riga principale, viene divisa per il numero di righe risorse inserite. L'importo è comunque liberamente modificabile, a condizione che al momento del salvataggio il totale delle righe corrisponda al totale spesa nella riga principale. 
 - **Valore massimo rimborsato**: in base alla risorsa selezionata ed al tipo spesa nella riga principale, verrà mostrato l'importo del plafond configurato in anagrafica risorsa. 
 
+
+Le spese che sono state inserite nella [Nota Spese](\docs\project-management\activities-by-project\new-resource-expense-reports) risulteranno quindi “Verificate” con una data-utente di verifica.
+
+Nel caso di tentativo di modifica spese nei documenti (Interventi ed Attività), si verrà bloccati da messaggio: 
+
+    “Spesa verificata! Impossibile modificare”
+    
+Per sbloccare la spesa e procedere alla modifica, è necessario eliminarla dalla Nota spese, oppure effettuare un rollback della procedura di generazione Nota Spese.
+
+
 ## Attività contatto
 In questa tab è possibile collegare la dichiarazione attività ad un contatto dell'area CRM, ad un'Opportunità area CRM ed ad una Campagna Marketing. 
 
