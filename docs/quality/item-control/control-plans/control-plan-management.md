@@ -121,8 +121,9 @@ Vengono ereditati dagli *Extra data* associati al *Tipo piano di controllo*.
 Contiene le *Prove pianificate* degli *Articoli* o *Attributi articolo* del *Piano di controllo*.
 L'elenco si compone delle seguenti informazioni:   
 > **Sequenza**: è la sequenza di attuazione della *Prove pianificate*.   
-> **Tipo prova**: è il codice della *Prova pianificata*.   
+> **Tipo prova**: è il codice della *Prova pianificata*. L'inserimento di questo codice riporta automaticamente le informazioni ad esso associate dalla rispettiva tabella [Tipi prova](/docs/configurations/tables/quality/item-control/test-type).   
 > **Descrizione tipo prova**:  è la descrizione della *Prova pianificata*. L'informazione è di sola lettura.   
+> **Prova obbligatoria**: indica se la prova è obbligatoria per poter proseguire la Dichiarazione di produzione; questo controllo viene attuato nelle Dichiarazioni di produzione del [M.E.S.](/docs/production/mes/mes-main-form)   
 > **Descrizione**: è la descrizione della *Prova pianificata* compilabile.   
 > **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di prove riconosciute globalmente.   
 > **Prova interna**: indica se la *Prova* viene rilevata internamente o presso un laboratorio esterno.   

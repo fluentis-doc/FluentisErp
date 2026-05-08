@@ -144,6 +144,7 @@ La tabella contiene i seguenti campi:
 - **Sequenza**: indica la sequenza delle prove da effettuare;          
 - **Tipo di Prova**: indica il codice della prova da effettuare;         
 - **Descrizione tipo di prova**: indica la descrizione della prova da effettuare;           
+- **Prova obbligatoria**: indica se la prova è obbligatoria per poter proseguire la Dichiarazione di produzione;   
 - **Categoria strumento**: indica la categoria dello strumento utilizzato;         
 - **Tipo valore**: indica se il valore è di tipo *Testo*, di tipo *Si/No* oppure di tipo *Numerico*;      
 - **Tipo limite**: permette di indicare un *Tipo limite*; si abilita solo se il *Tipo valore* è *Numerico*;       

@@ -36,6 +36,7 @@ E' l'elenco dove vengono inserite le informazioni principali del *Tipo prova*.
 L'elenco si compone delle seguenti informazioni:   
 > **Codice**: è il codice del *Tipo prova*.   
 > **Descrizione**: è la descrizione del *Tipo prova*.   
+> **Prova obbligatoria**: indica se la prova è obbligatoria per poter proseguire la Dichiarazione di produzione; questo controllo viene attuato nelle Dichiarazioni di produzione del [M.E.S.](/docs/production/mes/mes-main-form)   
 > **Riferimento piano di controllo standard**: è un campo descrittivo che contiene i riferimenti a codifiche di metodologie di prove riconosciute standard.   
 >  
 > **Categoria**

@@ -117,6 +117,7 @@ L'elenco si compone delle seguenti informazioni:
 > **Tipo prova**: è il codice della *Prova*.   
 > **Descrizione tipo prova**:  è la descrizione della *Prova*. L'informazione è di sola lettura.   
 > **Prova distruttiva**: indica se la prova è di tipo distruttiva. L'informazione è di sola lettura.   
+> **Prova obbligatoria**: indica se la prova è obbligatoria per poter proseguire la Dichiarazione di produzione; questo controllo viene attuato nelle Dichiarazioni di produzione del [M.E.S.](/docs/production/mes/mes-main-form)   
 > **Prova interna**: indica se la *Prova* viene rilevata internamente o presso un laboratorio esterno.   
 > **Laboratorio esterno**: è la ragione sociale del *Fornitore* che effettuerà la prova. L'informazione è di sola lettura se è indicata la *Prova interna*.   
 > **Data invio**: è la data in cui si è inviato il materiale necessario ad effettuare la *Prova* presso il *Laboratorio esterno*. L'informazione è di sola lettura se è indicata la *Prova interna*.   
