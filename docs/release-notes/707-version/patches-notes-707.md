@@ -16,7 +16,7 @@ keywords:
 > -	SD - Offerta, ordine, ddt, fattura di vendita, consegna conto lavoro: corretto errore cancellazione articolo con prezzo per unità di misura alternativa in riga esistente (#TT02105/26 )
 > -	SH - Creazione anagrafica da documenti di acquisto in entrata: revisione delle procedure per la generazione dell’anagrafica a partire dai documenti di acquisto in entrata (#TT00774/26)
 > -	SH - Bug fix deleting subcollections with custom extension (#TT00969/26)
-> -	WebAPI acquisti - risolere problmi di aggiornamento valori su righe articoli. #TT02091/26
+> -	WebAPI acquisti - risolere problemi di aggiornamento valori su righe articoli. #TT02091/26
 > -	WM - Stampa Inventario a quantità: Risolta errata ubicazione in stampa. (#TT01891/26)
 > -	WMS Xamarin - Ricevimento merce: Visualizzazione quantità decimali in creazione DDT. (#TT01871/26)
 
