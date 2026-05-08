@@ -9,6 +9,11 @@ La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-s
 Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
 :::
 
-In questa tabella si definiscono le tipologie di scadenze extacontabili che saranno gestite manualmente all'interno del cash flow. Ad ogni tipologia può essere associato un sottoconto bancario di canalizzazione del flusso.
+In questa tabella si definiscono le tipologie di scadenze extacontabili che saranno gestite manualmente all'interno del cash flow. 
+
+**Conto / Sottoconto / Descrizione**: Utile per attribuire un conto (ad esempio il conto contabile *Dipendenti c/retribuzione* in corrispondenza di un tipo cadenza denominato *Stipendi*) con il quale contrassegnare le scadenze extracontabili inserite all'interno della stampa [**Analisi CashFlow**](/FluentisErp/docs/treasury/cash-flow/reports). Se non gestito tali scadenze saranno rappresentate solamente dal campo Codice.
+
+**Banca Conto / Sottoconto / Descrizione**: Ad ogni tipologia può essere associato un sottoconto **bancario** di canalizzazione del flusso (al fine di ottenere la rappresentazione del cashflow per banca).
 
 Le tipologie qui codificate rappresentano, più che altro, un raggruppamento o un'etichetta per l'inserimento effettivo del dettaglio che viene fatto attraverso la form [**Scadenze Extracontabili**](/docs/treasury/cash-flow/off-balance-due-dates).
+
