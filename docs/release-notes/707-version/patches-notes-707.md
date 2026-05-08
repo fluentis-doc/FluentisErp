@@ -5,6 +5,22 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0073 - 08/05/2026
+
+> -	FI - Generazione solleciti: revisione della proposta relativa ai pulsanti di rollback (#TT01836/26)
+> -	FI - migliorato messaggio di warning che non riconosceva correttamente i segni nell’associazione tra file sdi ricevuti e registrazioni contabili in caso di note di accredito ed Autofatture (#TT01425/26)
+> -	MS - M.R.P.: il calcolo del livello minimo degli articoli ora viene calcolato non più sulla versione di default ma su tutte le versioni utilizzate. Precedentemente alla modifica, gli articoli utilizzati come componenti in distinta base con una versione diversa da quella di default, non venivano considerati correttamente dall’elaborazione. (#TT01809/26)
+> -	MS - Pianificazione generale: è stata resa disponibile la possibilità di aggiungere, dall’object navigator, dei filtri di ricerca aggiuntivi. (#TT01774/26)
+> -	PR - nella riconciliazione conti correnti, quando la riga riconciliata è legata ad una registrazione contabile creata da un’altra procedura allora l’operazione di scollegamento non esegue più la cancellazione della registrazione; se la registrazione è manuale, invece, viene restituito un messaggio di richiesta conferma della cancellazione. (#TT01495/26)
+> -	SD - Creazione da ddt: risolto assenza modalità di pagamento nelle valorizzazioni di più documenti implicando clienti con parametri raggruppamento in anagrafica (#TT01955/26)
+> -	SD - Offerta, ordine, ddt, fattura di vendita, consegna conto lavoro: corretto errore cancellazione articolo con prezzo per unità di misura alternativa in riga esistente (#TT02105/26 )
+> -	SH - Creazione anagrafica da documenti di acquisto in entrata: revisione delle procedure per la generazione dell’anagrafica a partire dai documenti di acquisto in entrata (#TT00774/26)
+> -	SH - Bug fix deleting subcollections with custom extension (#TT00969/26)
+> -	WebAPI acquisti - risolere problmi di aggiornamento valori su righe articoli. #TT02091/26
+> -	WM - Stampa Inventario a quantità: Risolta errata ubicazione in stampa. (#TT01891/26)
+> -	WMS Xamarin - Ricevimento merce: Visualizzazione quantità decimali in creazione DDT. (#TT01871/26)
+
+
 ### Patch 707.1-0072 - 29/04/2026
 
 > -	CO - Elaborazione costi di Progetto/commessa nella form di Ripresa dati da produzione del Controlling, risolto errore su campo UnitNetPrice (#TT01736/26)
