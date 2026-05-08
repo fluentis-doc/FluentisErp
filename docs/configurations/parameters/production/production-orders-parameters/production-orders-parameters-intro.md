@@ -71,7 +71,7 @@ Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la pro
 :::
 
 Sezione **Dichiarazioni semplificate**
->la sezione è valida solamente per la gestione delle [Dichiarazioni semplificate](/docs/production/mes/simplified-declarations) presente nella Soluzione M.E.S. e consente la parametrizzazione del suo funzionamento.   
+>la sezione è valida solamente per la gestione delle *Dichiarazioni semplificate* presente nella Soluzione M.E.S. e consente la parametrizzazione del suo funzionamento.   
 > I parametri previsti sono:
 >- **Richiesta dell'operatore**: se indicato, all'operatore verrà richiesto di inserire la Risorsa Dipendente (tramite Barcode tokenizer) che prenderà parte della Squadra che effettuerà la lavorazione;
 >- **Richiesta di più operatori**: abilitato solamente se è stata indicata la *Richiesta dell'operatore*; se indicato, all'operatore verrà richiesto di inserire la Risorsa Dipendente (tramite Barcode tokenizer) che si aggiungerà ai componenti della Squadra che effettuerà la lavorazione;
