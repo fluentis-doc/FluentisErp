@@ -45,28 +45,48 @@ Questi verranno poi incrociati con i valori di inizio e fine lavoro di ciascun o
 
 **Abilita il salvataggio automatico sulle dichiarazioni di produzione**: se attivo, abilita il salvataggio automatico all'interno delle dichiarazioni di produzione.
 
-**Formato ora**: Tramite questo parametro è possibile parametrizzare il formato visualizzato degli orari di dichiarazione, di inizio e fine lavoro. I formati disponibili sono: ore, minuti e secondi oppure ore e minuti (formato predefinito). La parametrizzazione opera: nelle Fasi degli Ordini pianificati e di produzione, nelle Dichiarazioni di produzione, nelle Dichiarazioni della Soluzione M.E.S. e nelle funzionalità di Sequenza fasi e Capacità centri di lavoro.   
+**Formato ora**: Tramite questa informazione predefinita è possibile parametrizzare il formato visualizzato degli orari di dichiarazione, di inizio e fine lavoro. I formati disponibili sono: ore, minuti e secondi oppure ore e minuti (formato predefinito). La parametrizzazione opera: nelle Fasi degli Ordini pianificati e di produzione, nelle Dichiarazioni di produzione, nelle Dichiarazioni della Soluzione M.E.S. e nelle funzionalità di Sequenza fasi e Capacità centri di lavoro.   
 
-Ci sono infine altre quattro sezioni: **Fogli di lavoro Gestiti per**, **Periodo Analisi**, **Valorizzazione materiali a costo**, **Proposta sequenza fase**.
+**Tipo task da proporre nel MES**: è il tipo di task che verrà utilizzato per la generazione dei Tasks delle Fasi o gruppi di Fase che verranno dichiarate.
 
-**Fogli di lavoro gestiti per**: la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il tipo di raggruppamento da utilizzare durante la stampa del foglio di lavoro (che contiene i parametri che indicano come deve essere prodotto quel materiale). Si tratta comunque di una proposta, che può essere poi modificata all'interno della maschera di stampa del foglio di lavoro stesso;
+Ci sono infine altre sezioni: **Fogli di lavoro Gestiti per**, **Periodo Analisi**, **Valorizzazione materiali a costo**, **Dichiarazioni semplificate** e **Proposta sequenza fase**.
 
-**Periodo di Analisi**: la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il periodo di filtraggio degli ordini di produzione che dovranno essere visualizzati nella finestra della stampa del foglio di lavoro (settimanale, giornaliero o ogni X giorni);
+Sezione **Fogli di lavoro gestiti per**
+>la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il tipo di raggruppamento da utilizzare durante la stampa del foglio di lavoro (che contiene i parametri che indicano come deve essere prodotto quel materiale). Si tratta comunque di una proposta, che può essere poi modificata all'interno della maschera di stampa del foglio di lavoro stesso;
 
-**Valorizzazione materiali a costo**: la sezione consente di definire dei parametri che saranno utilizzati per il calcolo dei costi relativi alle dichiarazioni di produzione registrate. (Questi parametri non sono presi in considerazione dalla [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), in quando questa prende i valori direttamente dalle registrazioni delle dichiarazioni di produzione).   
+Sezione **Periodo di Analisi**
+>la sezione consente, tramite l'attivazione di uno dei radio button, di scegliere il periodo di filtraggio degli ordini di produzione che dovranno essere visualizzati nella finestra della stampa del foglio di lavoro (settimanale, giornaliero o ogni X giorni);
 
-> **Ultimo**: permette di valorizzare i materiali a costo *Ultimo*;      
-> **Medio**: permette di valorizzare i materiali a costo *Medio*;                
-> **Standard**: permette di valorizzare i materiali a costo *Standard*;          
-> **Da area gestionale**: permette di valorizzare i materiali in base al costo legato all'*Area gestionale* selezionata nella relativa combo box;     
-> **Costo del lotto**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quello specifico lotto;     
-> **Costo della commessa**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa.     
+Sezione **Valorizzazione materiali a costo*
+>la sezione consente di definire dei parametri che saranno utilizzati per il calcolo dei costi relativi alle dichiarazioni di produzione registrate. (Questi parametri non sono presi in considerazione dalla [Costificazione](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), in quando questa prende i valori direttamente dalle registrazioni delle dichiarazioni di produzione).   
+>- **Ultimo**: permette di valorizzare i materiali a costo *Ultimo*;      
+>- **Medio**: permette di valorizzare i materiali a costo *Medio*;                
+>- **Standard**: permette di valorizzare i materiali a costo *Standard*;          
+>- **Da area gestionale**: permette di valorizzare i materiali in base al costo legato all'*Area gestionale* selezionata nella relativa combo box;     
+>- **Costo del lotto**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quello specifico lotto;     
+>- **Costo della commessa**: attivando questo flag, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa.     
 
 :::note Nota
 Se **Costo del lotto** e **Costo della commessa** sono attivati entrambi, la procedura valorizzerà il costo del materiale in base al tipo costo selezionato considerando i valori solo di quella specifica commessa e per quello specifico lotto, ovviamente tra i movimenti effettuati con causali di carico con il flag aggiorna costo ultimo o medio (a seconda del valore indicato nel campo **Tipo di costo**) e il flag di interesse fiscale attivi; se non trova nessun movimento con queste caratteristiche va a cercare tra i movimenti che hanno caricato quel lotto, se non trova nemmeno questi va a cercare tra tutti i movimenti di quell'articolo. Se non ho nessun movimento di carico per quell'articolo va a vedere nei rispettivi campi costo ultimo, medio e standard dell'anagrafica dell'articolo.
 :::
 
-**Proposta sequenza fase**: la sezione consente di scegliere, durante la creazione di un ciclo di lavoro, il numero di sequenza della fase che viene proposto, che può essere preso dal numero di sequenza della fase standard oppure come progressivo dell’ordine di inserimento, indicando anche il valore di step.
+Sezione **Dichiarazioni semplificate**
+>la sezione è valida solamente per la gestione delle [Dichiarazioni semplificate](/docs/production/mes/simplified-declarations) presente nella Soluzione M.E.S. e consente la parametrizzazione del suo funzionamento.   
+> I parametri previsti sono:
+>- **Richiesta dell'operatore**: se indicato, all'operatore verrà richiesto di inserire la Risorsa Dipendente (tramite Barcode tokenizer) che prenderà parte della Squadra che effettuerà la lavorazione;
+>- **Richiesta di più operatori**: abilitato solamente se è stata indicata la *Richiesta dell'operatore*; se indicato, all'operatore verrà richiesto di inserire la Risorsa Dipendente (tramite Barcode tokenizer) che si aggiungerà ai componenti della Squadra che effettuerà la lavorazione;
+>- **Richiesta conferma Centro di lavoro**: se indicato, all'operatore verrà richiesta conferma o la possibilità di sostituire la Risorsa Centro di lavoro proposta(tramite Barcode tokenizer) ;
+>- **Richiesta conferma Macchina**: se indicato e se prevista una Macchina per la fase di lavoro selezionata, all'operatore verrà richiesta conferma o la possibilità di sostituire la Risorsa Macchina proposta con una Risorsa Macchina alternativa (tramite Barcode tokenizer) e valida per il Centro di lavoro indicato;
+>- **Richiesta Tempo di attrezzaggio**: se indicato e se previsto un tempo di attrezzaggio per la fase in lavoro, all'operatore verrà richiesto se, alla dichiarazione di Apertura è associata un'attività di Attrezzaggio; questa verrà ultimata alla successiva dichiarazione di Sospensione delle attività;
+>- **Chiusura automatica al raggiungimento/superamento quantità prevista**: se indicato, al raggiungimento/superamento delle quantità prodotte dichiarate rispetto alle previste da produrre, verrà effettuata una dichiarazione di chiusura della fase altrimenti si continuerà a proporre dichiarazioni di Sospensione e Ripresa delle attività;
+>- **Visualizzazione tabulatore Istruzioni operative**: se indicato e se la Risorsa Centro di lavoro lo prevede, verrà visualizzato il tabulatore delle *Istruzioni operative*;
+>- **Richiesta conferma presa visione istruzioni operative**: abilitato solamente se è stata indicata la *Visualizzazione tabulatore Istruzioni operative*; se indicato e se la Risorsa Centro di lavoro lo prevede, in presenza di *Istruzioni operative*, all'operatore verrà richiesta la conferma di presa visione;
+>- **Visualizzazione tabulatore Note**: se indicato e se la Risorsa Centro di lavoro lo prevede, verrà visualizzato il tabulatore delle *Note*;
+>- **Visualizzazione tabulatore Documenti**: se indicato e se la Risorsa Centro di lavoro lo prevede, verrà visualizzato il tabulatore dei *Documenti*;
+>- **Tempo di conferma attività automatica (5-60 secondi)**: i valori ammessi sono 0 e un qualsiasi valore intero compreso tra 5 e 60; indica, ove previsto, i secondi di attesa prima del passaggio automatico allo step successivo di dichiarazione; se è indicato 0 (zero) la conferma all'attività successiva deve essere confermata dall'operatore.
+
+Sezione **Proposta sequenza fase**
+>la sezione consente di scegliere, durante la creazione di un ciclo di lavoro, il numero di sequenza della fase che viene proposto, che può essere preso dal numero di sequenza della fase standard oppure come progressivo dell’ordine di inserimento, indicando anche il valore di step.
 
 ## 2. Magazzini
 
