@@ -3,6 +3,28 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0019 - 08/05/2026
+
+> -	CO - chiusure infrannuali, revisione memorizzazione id delle registrazioni utilizzate, memorizzazione flag di "Chiusure per divisione", revisione procedura di Scritture di integrazione per utilizzare il campo "Chiusure per divisione" memorizzato. Modifications inside internal closures first tab can have impact on profiles (#TT01948/26)
+> -	CPQ - Bug fixing su alcuni errori in UI e modifica comportamento selezioni nelle matrici helper
+> -	FI - in anagrafica banche aggiunto campo di assegnazione dello schema excel di import, utilizzo nella form “Importa estratto conto”, nella quale è stato aggiunto campo per memorizzare un eventuale identificativo di riga. Modifications inside contact bank account can have impact on profiles (#TT01718/26)
+> -	FI - WEB - registrazioni contabili - tab analitica - risolto caso per cui cambiando il centro di costo su diverse righe in modo sequenziale, si verificava un'eccezione. (#TT01775/26)
+> -	MES - Soluzione M.E.S.: è stata migliorata l’automazione della soluzione. Ora, l’operatore, non serve che indichi su quale Centro di lavoro inizia a lavorare. Questo viene automaticamente proposto alla selezione della Fase. Se la Fase: non è ancora stata iniziata, proporrà il Centro di lavoro previsto nella Fase selezionata; è già iniziata, proporrà l’ultimo Centro di lavoro dichiarato. (#TT00250/26)
+> -	MS - M.R.P.: il calcolo del livello minimo degli articoli ora viene calcolato non più sulla versione di default ma su tutte le versioni utilizzate. Precedentemente alla modifica, gli articoli utilizzati come componenti in distinta base con una versione diversa da quella di default, non venivano considerati correttamente dall’elaborazione. (#TT01809/26)
+> -	MS - Pianificazione generale: è stata resa disponibile la possibilità di aggiungere, dall’object navigator, dei filtri di ricerca aggiuntivi. (#TT01774/26)
+> -	PR - la creazione insoluti in società con gestione Commissioni non verifica più se l’effetto è accreditato. (#TT01050/26)
+> -	PR - nella riconciliazione conti correnti, quando la riga riconciliata è legata ad una registrazione contabile creata da un’altra procedura allora l’operazione di scollegamento non esegue più la cancellazione della registrazione; se la registrazione è manuale, invece, viene restituito un messaggio di richiesta conferma della cancellazione. (#TT01495/26)
+> -	SCM - Richieste di Acquisto: In dettaglio righe richieste di acquisto aggiunta colonna con il costo totale di riga. (Rif.ticket 2123/26) -Modificaiton that can impact the purchase demand details profiles
+> -	SD - Creazione da ddt: risolto assenza modalità di pagamento nelle valorizzazioni di più documenti implicando clienti con parametri raggruppamento in anagrafica (#TT01955/26)
+> -	SD - Offerta, ordine, ddt, fattura di vendita, consegna conto lavoro: corretto errore cancellazione articolo con prezzo per unità di misura alternativa in riga esistente (#TT02105/26 )
+> -	SH - Creazione anagrafica da documenti di acquisto in entrata: revisione delle procedure per la generazione dell’anagrafica a partire dai documenti di acquisto in entrata (#TT00774/26)
+> -	SH - Bug fix deleting subcollections with custom extension (#TT00969/26)
+> -	WebAPI acquisti - risolere problmi di aggiornamento valori su righe articoli. #TT02091/26
+> -	WM - Lista Trasferimento UDC: Corrette incongruenze a seguito di rollback. (#TT01145/26)
+> -	WM - Stampa Inventario a quantità: Risolta errata ubicazione in stampa. (#TT01891/26)
+> -	WM - WebApi ImportWarehousePostings: Corretta importazione Serial Numbers. (#TT01788/26)
+> -	WMS - Gestione spunta: Corretto comportamento con riga picking senza causale o senza ubicazione. (#TT01862/26)
+
 ### Patch 803.0018 - 29/04/2026
 
 > -	CO - Nei valori di controllo, revisione gestione dati del tab ‘Valori Commessa’ (#TT01816/26)
