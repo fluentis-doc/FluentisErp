@@ -67,7 +67,7 @@ In questo tab è possibile decidere per quali **Magazzini** devono essere esegui
 
 **Lotti e Serial number**: se attivo, la chiusura e la ripresa delle giacenze terranno conto dei lotti e S/N;	
 
-**Commesse**: se attivo, la chiusura e la ripresa delle giacenze terranno conto delle commesse di vendita (progetti);	
+**Progetto** (*Commesse* sulle precedenti versioni): se attivo, la chiusura e la ripresa delle giacenze terranno conto del progetto (commesse di vendita);	
 
 **Cliente/Fornitore**: se attivo, la chiusura e la ripresa delle giacenze terranno conto del cliente/fornitore. 	
 
