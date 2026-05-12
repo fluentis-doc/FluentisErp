@@ -43,9 +43,6 @@ sostituzione* passerà allo stato *Sostituito da cliente*.
 
 Nel processo di ordinazione completa, dove il cliente e il fornitore si possono inviare gli ordini tramite 
 NSO, dallo stato “Inserito” si può passare ai seguenti stati:
-- *Spedizione risposta di conferma* effettua l’invio di una notifica al cliente che conferma 
-l’accettazione dell’ordine da parte del fornitore (IBSA). L’ordine passa nello stato “Confermato da fornitore” e verrà creata un’ulteriore riga per il file di 
-risposta della conferma.
 - *Spedizione risposta di diniego* invia una notifica di non accettazione dell’ordine al cliente, con 
 l’ordine che passa nello stato *Annullato da Fornitore*.
 - *Creazione risposta di modifica* permette di effettuare la modifica del documento per quanto 
