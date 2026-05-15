@@ -30,4 +30,10 @@ Nr Documento, Posizione partita, Da / A Data documento, Da / A data scadenza, an
 CAMPI RELATIVI AI RIFERIMENTI SOLLECITO PRECEDENTE SU PARTITE GIA? SOLLECITATE
 Tipo Sollecito, DA / A data sollecito, DA / A Data scadenza (sollecito), Numero sollecito, Riferimento...
 
+:::note[Nota]
+Utilizzando i campi Da Data Sollecito - A Data Sollecito la ricerca presuppone che esista un sollecito per la partita, quindi non verranno visualizzate le partite senza alcun sollecito. Per questo motivo è possibile utilizzare il filtro in combinazione con il flag seguente
+:::
+
+FLAG INCLUDI PARTITE NON SOLLECITATE: aggiunge lla ricerca le partite senza un sollecito, da abbinare al filtro sulle date sollecito, vedi nota precedente.
+
 TIPO PARTITE: Flag per estrarre non solo le classiche partite attive clienti ma anche quelle riferite ad esempio ai fornitori ecc....
