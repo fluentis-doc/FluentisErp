@@ -5,6 +5,16 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0074 - 15/05/2026
+
+> -	FI - errore apertura partite (#TT02171/26)
+> -	FI - migliorato controllo di quadratura per dimensione tra movimenti contabile e centri di costo. (#TT01297/26)
+> -	FI - nella form di ricerca ‘Commissioni’ è stato inserito un nuovo flag di filtro ‘Da liquidare’, impostandolo si abilita la data di riferimento che sarà utilizzata per visualizzare le righe in maturazione. Modifications inside commission form can have impact on profiles. (#TT01385/26)
+> -	FI - revisione gestione inizio date competenza per le riaperture degli assestamenti, per il caso di rettifiche con data inizio successiva all’inizio esercizio successivo (#TT02150/26)
+> -	MS - M.R.P.: corretta anomalia per articoli che sono componenti di altri articoli fittizi. (#TT02170/26)
+> -	MS - Pianificazione generale: corretta anomalia generata alla generazione di Ordini pianificati di produzione con l’utilizzo di materiali alternativi indicati in Distinta base. (#TT01855/26)
+> -	SD - Gestione Data Competenza: In fase di evasione ordini, la data di competenza viene automaticamente ricalcolata sulla base della data del documento generato (DDT o fattura).(rif.ticket 1950/26)
+
 ### Patch 707.1-0073 - 08/05/2026
 
 > -	FI - Generazione solleciti: revisione della proposta relativa ai pulsanti di rollback (#TT01836/26)
