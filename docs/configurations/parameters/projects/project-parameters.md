@@ -139,7 +139,7 @@ ad es. se la dichiarazione del 20/06 è mancante, all'inserimento della nuova di
 
 Aumentando il numero di mesi, si estende il range dei mesi passati da controllare. 
 
-**Non controllare attività mancanti se le ore totali attività coincidono con il monte ore giornaliero della risorsa**: 
+**Controllo attività mancanti solo su monte ore giornaliero e non sugli orari del turno della risorsa**: 
 flag utilizzato per stabilire quale data-ora proporre nella dichiarazione attività.
 
 - abilitato: la verifica delle dichiarazioni attività mancanti viene fatta sul monte ore della giornata, configurato nel turno della risorsa. Non viene verificato che le dichiarazioni attività abbiano gli orari corrispondenti a quelli indicati nel turno della risorsa.
