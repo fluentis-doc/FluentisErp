@@ -127,11 +127,25 @@ con flag disabilitato il piano di fatturazione sarà:
 
 ## Attività
 
-**Controlla attività mancanti negli ultimi: numero mesi**: indicare il numero di mesi, per i quali in fase di dichiarazione attività, verranno controllate eventuali dichiarazioni attività mancanti (ore/giorni) e verranno proposti in automatico in fase di dichiarazione. 
+**Controlla attività mancanti negli ultimi: numero mesi**: 
+valore utilizzato per stabilire quale data-ora proporre nella dichiarazione attività.
 
-Valore di default = 0, nella dichiarazione attività verrà sempre proposta la data odierna senza alcun controllo per le dichiarazioni mancanti nei mesi passati
+Indicare il numero di mesi, per i quali in fase di dichiarazione attività, verranno controllati gli N mesi precedenti ricercando dichiarazioni attività mancanti (giorno-ora) e verranno proposti in automatico in fase di dichiarazione. 
+
+Valore di default = 0, nella dichiarazione attività verrà sempre proposta la data odierna senza alcun controllo per le dichiarazioni mancanti nei mesi passati.
 
 Valore "1": verrà controllato il periodo dato da data odierna fino al mese precedente. es. 05/06 - 05/07
 ad es. se la dichiarazione del 20/06 è mancante, all'inserimento della nuova dichiarazione attività, la data proposta sarà 20/06
 
 Aumentando il numero di mesi, si estende il range dei mesi passati da controllare. 
+
+**Non controllare attività mancanti se le ore totali attività coincidono con il monte ore giornaliero della risorsa**: 
+flag utilizzato per stabilire quale data-ora proporre nella dichiarazione attività.
+
+- abilitato: la verifica delle dichiarazioni attività mancanti viene fatta sul monte ore della giornata, configurato nel turno della risorsa. Non viene verificato che le dichiarazioni attività abbiano gli orari corrispondenti a quelli indicati nel turno della risorsa.
+La ricerca di dichiarazioni attività mancanti, viene sempre effettuata in base agli N mesi precedenti stabiliti dal parametro soprastante. 
+
+Quindi se il monte ore giornaliero è rispettato, la giornata viene considerata valida anche se non rispetta la fascia oraria concordata per la risorsa. Si passerà quindi al controllo delle giornate successive.
+Questo approccio si può adottare quando le risorse hanno flessibilità oraria, quindi hanno un turno di riferimento, ma non devono attenersi strettamente agli orari indicati. L'unica condizione è quindi che il totale ore della giornata corrisponda a quello stabilito nel turno. 
+
+- disabilitato: la verifica delle dichiarazioni attività mancanti viene fatta sul turno configurato per la risorsa, indipendentemente dal totale ore dichiarate. Gli orari dichiarati devono coincidere perfettamente con il turno, altrimenti si vedrà proposta la fascia oraria mancante nelle dichiarazioni attività. 

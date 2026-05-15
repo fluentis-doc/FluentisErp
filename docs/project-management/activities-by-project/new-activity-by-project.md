@@ -26,7 +26,7 @@ Se invece viene indicato un articolo specifico:
 - se l'UM articolo e UM progetto collegato coincidono, e la UM nel progetto è di tipo "Tempo", nell'intervento avremo il codice articolo indicato in attività, con prezzo ed UM presi dal progetto. 
 - se l'UM articolo e UM progetto collegato NON coincidono o la UM del progetto non è di tipo "Tempo", nell'intervento avremo il codice articolo indicato in attività, con prezzo ed UM attribuiti in base alle logiche standard dei documenti (come nel caso di inserimento di una nuova riga in un documento, vengono considerati listini, sconti, prezzo default in anagrafica articolo, etc) 
 
-**Ora di inizio/Ora fine**: contiene l’orario di inizio e di fine dell’attività; viene proposta in base al turno della risorsa, e se già presenti altre dichiarazioni, verrà proposta solo la fascia oraria mancante per la giornata. 
+**Ora di inizio/Ora fine**: contiene l’orario di inizio e di fine dell’attività; viene proposta in base al turno della risorsa, e se sono già presenti altre dichiarazioni attività, verrà proposta solo la fascia oraria impostata nel turno risorsa, che risulta mancante per la giornata. 
 <u>Non sono ammesse date disallineate</u> tra i vari campi Inizio-Fine, Inizio-Fine pausa e Data attività, per cui alla modifica di una qualsiasi data di queste, gli altri campi si allineeranno in automatico. 
 Modificando l' Ora di fine, se antecedente alla pausa, questa verrà cancellata in automatico
 
