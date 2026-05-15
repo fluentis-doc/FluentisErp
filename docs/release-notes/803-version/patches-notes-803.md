@@ -3,6 +3,25 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0020 - 15/05/2026
+
+> -	CO - nelle registrazioni del controlling, rivisto l’inserimento manuali di righe nella griglia dei cdc (#TT02152/26)
+> -	CPQ - Aggiunte nuove funzioni alla classe Helper dello scripting nelle configurazioni
+> -	CPQ - Risolto problema nella creazione delle distinte base da configuratore
+> -	FI - errore apertura partite ( TT02171/26)
+> -	FI - migliorato controllo di quadratura per dimensione tra movimenti contabile e centri di costo. (#TT01297/26)
+> -	FI - migliorato messaggio di warning che non riconosceva correttamente i segni nell’associazione tra file sdi ricevuti e registrazioni contabili in caso di note di accredito ed Autofatture (#TTT01425/26)
+> -	FI - nella form di ricerca ‘Commissioni’ è stato inserito un nuovo flag di filtro ‘Da liquidare’, impostandolo si abilita la data di riferimento che sarà utilizzata per visualizzare le righe in maturazione. Modifications inside commission form can have impact on profiles. (#TT01385/26)
+> -	FI - revisione gestione inizio date competenza per le riaperture degli assestamenti, per il caso di rettifiche con data inizio successiva all’inizio esercizio successivo (#TT02150/26)
+> -	MS - AFCS - incrementata lista parametri input per calcolo personalizzato tempo di attrezzaggio. (#TT01965/26)
+> -	MS - M.R.P.: corretta anomalia per articoli che sono componenti di altri articoli fittizi. (#TT02170/26)
+> -	MS - Pianificazione generale: corretta anomalia generata alla generazione di Ordini pianificati di produzione con l’utilizzo di materiali alternativi indicati in Distinta base. (#TT01855/26)
+> -	Portal - Conferma Picking: Aggiornamento flag stampato da mobile. (#TT01751/26)
+> -	PR - creazione ed esportazione cash flow per DocFinance, ottimizzazione ed esclusione dall’elaborazione di dati inutili per il file (TT02184/26)
+> -	SD - Gestione Data Competenza: In fase di evasione ordini, la data di competenza viene automaticamente ricalcolata sulla base della data del documento generato (DDT o fattura).((#TT1950/26)
+> -	SH - consider workflow activation condition in filters (#TT01839/26)
+> -	WMS - Spunta Picking: Incrementate righe in griglia tab Articoli. (#TT02112/26)
+
 ### Patch 803.0019 - 08/05/2026
 
 > -	CO - chiusure infrannuali, revisione memorizzazione id delle registrazioni utilizzate, memorizzazione flag di "Chiusure per divisione", revisione procedura di Scritture di integrazione per utilizzare il campo "Chiusure per divisione" memorizzato. **Attenzione! Questa modifica può impattare sui profili** (#TT01948/26)
