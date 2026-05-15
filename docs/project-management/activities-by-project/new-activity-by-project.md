@@ -112,7 +112,7 @@ Per ogni riga spese, nella griglia sottostante si indicano:
 - **Valore massimo rimborsato**: in base alla risorsa selezionata ed al tipo spesa nella riga principale, verrà mostrato l'importo del plafond configurato in anagrafica risorsa. 
 
 
-Le spese che sono state inserite nella [Nota Spese](\docs\project-management\activities-by-project\new-resource-expense-reports) risulteranno quindi “Verificate” con una data-utente di verifica.
+Le spese che sono state inserite nella [Nota Spese](/docs/project-management/activities-by-project/new-resource-expense-reports) risulteranno quindi “Verificate” con una data-utente di verifica.
 
 Nel caso di tentativo di modifica spese nei documenti (Interventi ed Attività), si verrà bloccati da messaggio: 
 

@@ -109,7 +109,6 @@ La spesa forfait da fatturare risulterà in totale 250 (100 autostrada fissi, 50
  3 ore di viaggio
 
 --> non ci sarà alcuna indennità di trasferta, in quanto il minimo oltre alle 8 ore sono 2 di viaggio (in questo caso invece avremmo 9 ore, quindi 1 sola ora oltre alle 8 ordinarie)
-
 ::: 
 
 ### Dettaglio spesa cumulata 
@@ -121,7 +120,7 @@ Per ogni riga spese, nella griglia sottostante si indicano:
 - **importo spesa** : il calcolo dell'importo avviene in modo automatico, man mano che si aggiungono le risorse. La spesa indicata nella riga principale, viene divisa per il numero di righe risorse inserite. L'importo è comunque liberamente modificabile, a condizione che al momento del salvataggio il totale delle righe corrisponda al totale spesa nella riga principale. 
 - **Valore massimo rimborsato**: in base alla risorsa selezionata ed al tipo spesa nella riga principale, verrà mostrato l'importo del plafond configurato in anagrafica risorsa. 
 
-Le spese che sono state inserite nella [Nota Spese](\docs\project-management\activities-by-project\new-resource-expense-reports) risulteranno quindi “Verificate” con una data-utente di verifica.
+Le spese che sono state inserite nella [Nota Spese](/docs/project-management/activities-by-project/new-resource-expense-reports) risulteranno quindi “Verificate” con una data-utente di verifica.
 
 Nel caso di tentativo di modifica spese nei documenti (Interventi ed Attività), si verrà bloccati da messaggio: 
 
