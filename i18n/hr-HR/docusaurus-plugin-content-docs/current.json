@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.financeArea.category.Dichiarazioni": {
-    "message": "Deklaracije",
+    "message": "Obrasci/Izjave/Deklaracije",
     "description": "The label for category Dichiarazioni in sidebar financeArea"
   },
   "sidebar.financeArea.category.Plafond": {

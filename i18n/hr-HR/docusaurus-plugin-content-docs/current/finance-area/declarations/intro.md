@@ -2,30 +2,40 @@
 title: Uvod
 sidebar_position: 1
 ---
-**Deklaracije**: modul Fluentis ERP Deklaracije podržava upravljanje glavnim deklaracijama i poreznim obvezama koje zahtijevaju talijanski propisi, omogućujući tvrtkama automatizaciju pripreme i elektroničkog slanja poreznih dokumenata.  
+**Obrasci/Izjave/Deklaracije**: moduli Fluentis ERP-a podržavaju upravljanje glavnim poreznim prijavama i obvezama koje zahtijevaju zakoni i propisi, omogućujući tvrtkama automatizaciju pripreme i elektroničkog slanja poreznih dokumenata.  
 
 Glavne značajke 
 
-- Elektroničko fakturiranje s nerezidentnim subjektima: s ukidanjem zahtjeva "Esterometro" kojim se prethodno upravljalo, implementirano je automatsko kreiranje samofaktura za komunikaciju o kupnjama koje su izvršili dobavljači unutar zajednice ili dobavljači izvan zajednice za kupnju usluga (uz talijanski u režimu obrnute naknade).  
+- PDV obrasci i periodični obračun PDV-a:
+Omogućuje izradu i elektroničku predaju PDV obrazaca te periodičnih obračuna PDV-a na mjesečnoj ili tromjesečnoj razini, uključujući obračun obveze za uplatu ili povrat PDV-a.
 
-- Jedinstvena potvrda: Upravlja stvaranjem i elektroničkim slanjem Jedinstvene potvrde za poreze po odbitku primateljima. Postupkom se generira elektronička datoteka potrebna za slanje Poreznoj upravi  
+- PDV-S obrazac:
+Podržava generiranje PDV-S obrasca za prijavu isporuka dobara i usluga unutar Europske unije, uz automatsko prikupljanje podataka iz knjiga izlaznih računa.
 
-- Obračun PDV-a grupe: Upravlja periodičnim obračunima PDV-a u kontekstu grupe PDV-a, agregirajući podatke iz podružnica za izračun PDV-a koji treba platiti na razini grupe  
+- Obrazac ZP i porezna izvješća:
+Omogućuje pripremu različitih poreznih izvještaja i pregleda potrebnih za zakonsko izvještavanje i kontrolu poreznih evidencija.
 
-- Komunikacija periodičnih plaćanja PDV-a (LIPE): Omogućuje stvaranje i elektroničko slanje komunikacija sa sažetkom mjesečnih ili tromjesečnih plaćanja PDV-a
+- Izjave o prijenosu porezne obveze i oslobođenjima:
+Upravlja unosom i evidencijom izjava vezanih uz oslobođenja od PDV-a, prijenos porezne obveze i međunarodne transakcije, uz podršku za EU i izvozna poslovanja.  
 
-- Izjava namjere: Upravlja umetanjem i izmjenama izdanih ili primljenih izjava namjere, s posebnom pozornošću na upravljanje PDV grupama i međunarodno fakturiranje 
+- Godišnji obračun PDV-a:
+Omogućuje obradu podataka iz periodičnih PDV obračuna i generiranje izvještaja potrebnih za godišnje porezno usklađenje i kontrolu.
 
-- Periodična godišnja prijava PDV-a: Omogućuje vam obradu vrijednosti periodičnih plaćanja PDV-a, generiranje izvješća podrške za sastavljanje poreznih obrazaca 
+- Obrada posebnih poreznih postupaka:
+Podržava specifične postupke obračuna PDV-a poput prijenosa porezne obveze (reverse charge), trostranih poslova, stjecanja unutar EU i obračuna usluga iz inozemstva.
 
-- Provjetravanje razmatranja: Omogućuje vam upravljanje provjetravanjem PDV-a na temelju kretanja prodaje, povezujući registre prodaje i kupnje za obradu relevantnih operacija  
+- pravljanje poreznim oslobođenjima za izvoznike:
+Omogućuje evidenciju i kontrolu poreznih oslobođenja i limita za izvoznike te praćenje iskorištenja poreznih prava u skladu s hrvatskim zakonodavstvom.
 
-- Upravljanje plafonom PDV-a za redovite izvoznike
+- Elektroničko fakturiranje s inozemnim subjektima:
+Podržava upravljanje elektroničkim računima za transakcije s inozemnim dobavljačima i kupcima unutar EU i izvan EU. Omogućuje automatsko evidentiranje obračuna PDV-a prema pravilima prijenosa porezne obveze te obradu usluga i dobara iz inozemstva u skladu s hrvatskim poreznim propisima.
 
-Ispisi dostupni  
+Dostupni ispisi
 
-- Ispis jedinstvene potvrde: pruža detaljan sažetak zadržanih prihoda od primatelja, u skladu s poreznim propisima  
+- Ispis PDV evidencija i prijava:
+Omogućuje pregled i kontrolu podataka iz PDV obrazaca, uključujući knjige ulaznih i izlaznih računa te obračune PDV-a.
 
-- Ispis izjava namjere: Omogućuje vam praćenje i provjeru preostalih naplativih ograničenja za izjave namjere  
+- Ispis izjava o oslobođenju i prijenosu porezne obveze:
+Omogućuje praćenje i provjeru još raspoloživih limita i prava vezanih uz porezna oslobođenja, reverse charge i međunarodne transakcije.
 
-**Intrastat**: posvećen stvaranju Intrastat statističkih komunikacija: predviđeno je i ručno upravljanje podacima i automatsko kreiranje s obzirom na podatke prisutne u fakturama nabave i prodaje relevantnih područja nabave i prodaje, kao i oporavak podataka iz računovodstva zapisa. Dvije su metode alternativne i međusobno ovisne. Računovodstvom zahvaćenih faktura s odgovarajućim postavkama moguće je upravljati automatskim kreiranjem kroz knjigovodstvene evidencije, kako za proizvode  tako i za usluge. [**Saznajte više**](/docs/finance-area/declarations/intrastat/general-overview)
+**Intrastat**: Namijenjen izradi Intrastat statističkih izvješća. Predviđeno je i ručno upravljanje podacima i automatsko generiranje na temelju podataka sadržanih u ulaznim i izlaznim računima područja nabave i prodaje, kao i preuzimanje podataka iz računovodstvenih knjiženja. Dva načina rada su alternativna i međusobno povezana. Knjiženjem odgovarajućih računa uz pravilne postavke moguće je automatski upravljati generiranjem Intrastat podataka putem računovodstvenih evidencija, kako za robu tako i za usluge. [**Saznajte više**](/docs/finance-area/declarations/intrastat/general-overview)

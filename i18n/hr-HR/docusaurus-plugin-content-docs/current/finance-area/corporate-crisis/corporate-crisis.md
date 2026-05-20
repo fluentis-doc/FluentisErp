@@ -4,13 +4,13 @@ sidebar_position: 1
 ---
 
 :::important[Uvod]
-Propisi o krizi poduzeća, uvedeni Zakonom D.Lgs. 14/2019 (Kodeks o krizi poduzeća i insolventnosti), imaju za cilj spriječiti situacije insolventnosti kroz usvajanje alata za rano praćenje financijskih poteškoća.
+Propisi i zakoni imaju za cilj spriječiti situacije insolventnosti kroz usvajanje alata za rano praćenje financijskih poteškoća.
 
 Tvrtke su dužne osigurati odgovarajuće organizacijske, administrativne i računovodstvene strukture koje su sposobne pravovremeno uočiti signale ekonomske, imovinske ili financijske neravnoteže.
 
 Među alatima predviđenim zakonskom regulativom nalaze se **specifični indikatori**, poput DSCR-a (Debt Service Coverage Ratio), provjere kontinuiteta poslovanja, i analize održivosti duga. Nepoštivanje obveza može dovesti do odgovornosti za upravni organ.
 
-Unutar Fluentis ERP dostupne su funkcionalnosti posvećene kontroli pokazatelja krize, koje podržavaju tvrtku u poštivanju onoga što je predviđeno važećim propisima.
+Unutar Fluentis ERP-a dostupne su funkcionalnosti posvećene kontroli pokazatelja krize, koje podržavaju tvrtku u poštivanju onoga što je predviđeno važećim propisima.
 
 U sljedećim odlomcima detaljno su opisane funkcionalnosti dostupne za ispunjavanje tih obveza.
 :::
