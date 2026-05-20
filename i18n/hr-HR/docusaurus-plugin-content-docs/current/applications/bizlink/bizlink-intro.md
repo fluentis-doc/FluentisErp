@@ -10,7 +10,7 @@ Zahvaljujući ovoj aplikaciji tipa **ESB** (Enterprise Service Bus) koju je **Fl
 
 Kroz ovaj postupak, **Bizlink** omogućuje vrlo jednostavnu konfiguraciju čitanja bilo kojeg CSV, TXT, XML i drugih formata datoteka radi interpretacije, čitanja i/ili čak pisanja istih datoteka. Sve to prati se u odgovarajućim **Zapisnicima Ulaznih i Izlaznih** informacija kako bi se operateru pružila evidencija je li proces uvoza ili izvoza uspio ili nije.
 
-Također, u **BizLinku** se nalazi i područje **Uvoz podataka “na zahtjev”**, vrlo korisno svim tvrtkama koje moraju uvoziti podatke, posebno u početnoj fazi konfiguracije proizvoda. Naime, putem područja "na zahtjev" uvoza, posebno putem *elektroničkih tablica*, aktiviranjem ove procedure moguće je lako uvesti i ažurirati osnovne arhive kao što su Artikli, Strukture, Ciklusi, Klijenti, Dobavljači, itd., čak i dokumente poput narudžbenica, računa, cjenika itd.
+Također, u **BizLinku** se nalazi i područje **Uvoz podataka “na zahtjev”**, vrlo korisno svim tvrtkama koje moraju uvoziti podatke, posebno u početnoj fazi konfiguracije podataka. Naime, putem područja "na zahtjev" uvoza, posebno putem *elektroničkih tablica*, aktiviranjem ove procedure moguće je lako uvesti i ažurirati osnovne arhive kao što su Artikli, Strukture, Ciklusi, Klijenti, Dobavljači, itd., čak i dokumente poput narudžbenica, računa, cjenika itd.
 
 Modul je dostupan iz bočnog panela **Fluentis** putem sljedeće staze [**Alati**>**BizLink**].
 
