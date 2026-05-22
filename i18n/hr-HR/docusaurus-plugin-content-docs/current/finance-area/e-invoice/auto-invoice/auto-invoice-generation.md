@@ -1,9 +1,9 @@
 ---
-title: Automatsko generiranje samofakture
+title: Automatsko generiranje faktura
 sidebar_position: 4
 ---
 :::note BILJEŠKA:
-Sljedeće upute odnose se na postupak za automatizirano generiranje faktura za samoprodaju stvorenih kako bi se SDI-u, putem kruga elektroničkog fakturiranja, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro".
+Sljedeće upute odnose se na postupak za automatizirano generiranje prodajnih faktura/računa stvorenih kako bi se u SDI-u, putem slanja e-računa, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro".
 :::
 
 Prilikom spremanja računovodstvenog unosa, Fluentis će kreirati automatske dokumente postavljene u predlošku plaćanja: dakle i administrativni(računovodstveni) prijenos za neutralizaciju PDV-a i samofakturiranje za prodaju. Zatvaranje obrasca tada će vratiti dvije poruke, onu koja otvara registraciju automatskog prijenosa i novu poruku koja prikazuje samoračun.  

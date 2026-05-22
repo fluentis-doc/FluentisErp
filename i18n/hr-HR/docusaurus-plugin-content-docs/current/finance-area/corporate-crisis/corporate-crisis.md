@@ -8,7 +8,7 @@ Propisi i zakoni imaju za cilj spriječiti situacije insolventnosti kroz usvajan
 
 Tvrtke su dužne osigurati odgovarajuće organizacijske, administrativne i računovodstvene strukture koje su sposobne pravovremeno uočiti signale ekonomske, imovinske ili financijske neravnoteže.
 
-Među alatima predviđenim zakonskom regulativom nalaze se **specifični indikatori**, poput DSCR-a (Debt Service Coverage Ratio), provjere kontinuiteta poslovanja, i analize održivosti duga. Nepoštivanje obveza može dovesti do odgovornosti za upravni organ.
+Među alatima predviđenim zakonskom regulativom nalaze se **specifični indikatori**, poput DSCR-a (Debt Service Coverage Ratio), provjere kontinuiteta poslovanja, i analize održivosti duga. Nepoštivanje obveza može dovesti do odgovornosti za upravu.
 
 Unutar Fluentis ERP-a dostupne su funkcionalnosti posvećene kontroli pokazatelja krize, koje podržavaju tvrtku u poštivanju onoga što je predviđeno važećim propisima.
 
@@ -23,11 +23,11 @@ Upravljanje krizom poduzeća moguće je putem korištenja rješenja Fluentis ***
 CPM, općenito, osmišljen je za praćenje poslovnih performansi i, posebno, za stvaranje indeksa i KPI-a. Također se koristi za fleksibilnije upravljanje indeksima krize.
 
 ## 2 CPM funkcionalnosti 
-Modul CPM uključuje odjeljak posvećen provjeri krize poduzeća, podijeljen u četiri kartice. 
+Modul CPM uključuje odjeljak posvećen provjeri krize poduzeća, podijeljen u četiri dijela. 
 
 ![](/img/it-it/finance-area/corporate-crisis/2.png)
 
-Svaka kartica prikazuje izračun raznih kontrola predviđenih propisima:
+Svaki dio prikazuje izračun raznih kontrola predviđenih propisima:
 
 U prvom, ***Provjerama trećih strana***, provode se testovi entiteta kao što su **Porezna uprava** i **INPS**, koji prate:
 
@@ -40,16 +40,16 @@ Posebno, pragovi koji aktiviraju prijave su:
 -	Ostali porezni dugovi: iznos veći od 1.000.000 € i kašnjenje > 90 dana → prijava  
 -	Doprinosi za socijalno osiguranje: iznos veći od 50.000 € i kašnjenje > 180 dana → prijava  
 
-Ovi pragovi su konfigurabilni u internim tablicama sustava. 
+Ovi pragovi su podesivi u internim tablicama sustava. 
 
-U drugoj kartici, ***Provjera neto imovine i DSCR*** provjerava se:
+U drugom dijelu, ***Provjera neto imovine i DSCR*** provjerava se:
 
 -	Ukupna neto imovina: ako je negativna, pretpostavlja se stanje krize
 -	DSCR (Debt Service Coverage Ratio): ako je manji od 1, također se pretpostavlja stanje krize
 
-U trećoj kartici, ***Sektoralni indeksi***, provjerava se 5 sektorskih pokazatelja, gdje su očekivane vrijednosti određene prema djelatnosti poduzeća.  
+U trećem dijelu, ***Indeksi sektora***, provjerava se 5 sektorskih pokazatelja, gdje su očekivane vrijednosti određene prema djelatnosti poduzeća.  
 
-Posljednja kartica posvećena je izračunu eventualnih ***Prilagođeni indeksi***, na temelju kojih svako poduzeće provodi vlastite specifične procjene.  
+Posljednji dio posvećen je izračunu eventualnih ***Prilagođenih indeksa***, na temelju kojih svako poduzeće provodi vlastite specifične procjene.  
 
 ## 3 Izvori podataka
 Podaci koji se koriste za kontrole dolaze iz:
@@ -57,7 +57,7 @@ Podaci koji se koriste za kontrole dolaze iz:
 -	**Specifičnih konfiguracijskih tablica**
 -	Automatskih izračuna putem **SQL** upita
 -	Konfiguracija povezanih s **kontnim planom**
--	**Tablica dospijeća**
+-	**Pregledom dospijeća**
 
 Prije svega, unutar tablice **Društva** potrebno je navesti **gospodarski sektor** kojem poduzeće pripada: **Kartica Administrativne postavke > Polje sektor za procjenu krize poduzeća**
  
@@ -65,20 +65,20 @@ Zatim, unutar **kontnog plana** potrebno je **dodijeliti vrste računa za procje
 
 Moguće vrste su:
  
-- ADE-VAT obično se povezuje s računom koji prikazuje mjesečni saldo PDV-a, za koji je potrebno upravljati otvorenim stavkama radi identifikacije otvorenog duga;  
-- ADE-OTHER slično, povezuje se s računima koji prikazuju druge porezne obveze, također s upravljanjem otvorenim stavkama;  
-- INPS povezuje se s računima za doprinose za socijalno osiguranje, također s otvorenim stavkama;  
-- LIQ povezuje se s **glavnim računima** koji sadrže šifre kupaca/dobavljača — iz kojih se putem cash flow analize izvode podaci o dostupnoj likvidnosti;  
-- FIN povezuje se s računima (ili glavnim računima) koji prikazuju financijske obveze, bilo izravno ili putem budućih otplata kredita i leasinga;  
-- RIS povezuje se s podračunima rezervi za pokriće;   
-- MON povezuje se s podračunima (ili računima) nenovčanih troškova i prihoda.  
+- ADE-VAT obično se povezuje s kontom koji prikazuje mjesečni saldo PDV-a, za koji je potrebno upravljati otvorenim stavkama radi identifikacije otvorenog duga;  
+- ADE-OTHER slično, povezuje se s kontima koji prikazuju druge porezne obveze, također s upravljanjem otvorenim stavkama;  
+- INPS povezuje se s kontima za doprinose za socijalno osiguranje, također s otvorenim stavkama;  
+- LIQ povezuje se s **glavnim računima** koji sadrže šifre kupaca/dobavljača — iz kojih se putem *cash flow* analize izvode podaci o dostupnoj likvidnosti;  
+- FIN povezuje se s kontima (ili glavnim kontima) koji prikazuju financijske obveze, bilo izravno ili putem budućih otplata kredita i leasinga;  
+- RIS povezuje se s kontima rezervi za pokriće;   
+- MON povezuje se s kontima (ili računima) nenovčanih troškova i prihoda.  
 
 Zadani izračuni uzimaju podatke iz:
 -	izravno iz računovodstvenih stavki  
--	iz posljednjeg obrađenog cash flowa  
+-	iz posljednjeg obrađenog *cash flowa*  
 -	iz kontnih salda računa povezanih s određenim čvorovima unutar **standardnog modela rekategorizacije** ***IV. direktiva***. 
 
-U ovom slučaju, model služi isključivo za identifikaciju relevantnih računa za svaku varijablu, a iznosi se čitaju izravno iz glavne knjige, bez potrebe za privremenim zatvaranjem ili dodatnim rekategorizacijama.
+U ovom slučaju, model služi isključivo za identifikaciju relevantnih konta za svaku varijablu, a iznosi se čitaju izravno iz glavne knjige, bez potrebe za privremenim zatvaranjem ili dodatnim rekategorizacijama.
 
 ## 4 Upravljanje krizom  
 Trenutno sustav provodi samo **validaciju pokazatelja**, ali ne upravlja cijelim operativnim procesom u slučaju krize.  
