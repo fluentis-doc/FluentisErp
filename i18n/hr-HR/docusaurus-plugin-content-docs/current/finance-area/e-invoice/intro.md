@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Funkcionalnosti za elektroničko fakturiranje, premda povezane s fiskalnim i administrativnim potrebama, obuhvaćaju više područja Fluentis ERP-a, poput nabave, prodaje, administracije itd.
 
-Prednost ovog modula leži u njegovoj integraciji. Dakle, bez izlaska iz ERP-a moguće je automatski primati nove ulazne račune i knjižiti ih, ili izdavati i slati nove račune za prodaju.
+Prednost ovog modula leži u njegovoj integraciji. Dakle, bez izlaska iz ERP-a moguće je automatski primati nove ulazne račune i knjižiti ih, ili izdavati i slati nove prodajne račune.
 
 Također je moguće izvesti XML datoteke prodojanih računa, a na isti način moguće je ručno uvesti XML datoteke za ulaznih računa.
 

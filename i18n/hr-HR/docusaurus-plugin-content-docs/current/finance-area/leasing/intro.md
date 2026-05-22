@@ -3,11 +3,11 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul Leasing posebno je dizajniran za upravljanje ugovorima o leasingu sklopljenim za stjecanje proizvodnih faktora i imovine poduzeća.   
+Modul Leasing posebno je dizajniran za upravljanje ugovorima o leasingu sklopljenim za nabavu proizvodnih resursa i poslovne imovine poduzeća.   
 
 Omogućuje izračun amortizacijskog plana leasinga jednostavnim unosom osnovnih podataka ugovora.  
 
-Tada će biti moguće nastaviti s automatskim obračunom naknada koje se odnose na različite rate i sve početne maksimalne naknade.  
+Tako će biti moguće izvršiti automatsko knjiženje leasing rata i eventualnog početnog jednokratnog predujma (maxi rate). 
 
 Na kraju financijske godine, obično je potrebno dodijeliti odgodu kako bi se neutralizirao iskrivljujući učinak maksimalne naknade na dobit tvrtke, postupajući prema ispravnim ekonomskim kriterijima obračuna.
 

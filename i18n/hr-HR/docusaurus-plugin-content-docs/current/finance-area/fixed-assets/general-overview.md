@@ -3,9 +3,9 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul **Imovina** omogućuje operateru upravljanje dugotrajnom imovinom koja se koristi u tvrtki.  
-Modul se nalazi u *Administrativnom području* i ažurira se prilikom kupnje/prodaje putem unosa u općoj knjigovodstvenoj evidenciji temeljenoj na specifičnim uzrocima koji predviđaju njeno kretanje, no evidencije ovog modula mogu se također unositi i usklađivati ručno. Iz ovog modula provode se proračuni amortizacije prema računovodstvenim/poreznim pravilima, kao i višegodišnje simulacije i porezni ispisi.  
-Prije nego što se pristupi unosu ili izradi imovine, potrebno je osigurati da su svi tablični podaci i parametri modula ispravno postavljeni.
+Modul **Imovina** omogućuje upravljanje dugotrajnom imovinom/osnovim sredstvima koja se koriste u poduzeću.  
+Modul se nalazi u *Administrativnom području* i ažurira se prilikom kupnje/prodaje putem unosa u općoj knjigovodstvenoj evidenciji temeljenoj na specifičnim predlošcima koji predviđaju njeno kretanje. No, evidencije ovog modula mogu se također unositi i usklađivati ručno. Iz ovog modula provode se proračuni amortizacije prema računovodstvenim/poreznim pravilima, kao i višegodišnje simulacije i porezni ispisi.  
+Prije nego što se pristupi unosu ili izradi imovine, potrebno je osigurati da su svi podaci i parametri modula ispravno postavljeni.
 
 *Specifični ispisi*  
 
@@ -25,27 +25,27 @@ Prije nego što se pristupi unosu ili izradi imovine, potrebno je osigurati da s
 
 
 **Potrebne tablice za upravljanje modulom**: 
-[Knjigovodstveni plan konta](/docs/erp-home/registers/accounting/analytic-chart-of-accounts),  
+[Kontni plan](/docs/erp-home/registers/accounting/analytic-chart-of-accounts),  
 
 [Stope PDV-a](/docs/configurations/tables/finance/vat-rates),  
 
-[Fiksni tečajevi eura](/docs/configurations/tables/finance/euro-fixed-exchanges),  
+[Fiksni tečaj za EURO](/docs/configurations/tables/finance/euro-fixed-exchanges),  
 
-[Valutni tečajevi](/docs/configurations/tables/finance/currency-exchange),  
+[Devizni tečajevi](/docs/configurations/tables/finance/currency-exchange),  
 
-[Kategorije dugotrajne imovine](/docs/configurations/tables/finance/fixed-asset-category), 
+[Kategorije dugotrajne imovine/osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-category), 
 
-[Prekod dugotrajne imovine](/docs/configurations/tables/finance/alternative-depreciation-plans),  
+[Šifriranje dugotrajne imovine/osnovnih sredstava](/docs/configurations/tables/finance/alternative-depreciation-plans),  
 
-[Vlasništvo dugotrajne imovine](/docs/configurations/tables/finance/fixed-asset-precode),  
+[Vlasništvo dugotrajne imovine/osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-precode),  
 
-[Tipovi knjiženja dugotrajne imovine](/docs/configurations/tables/finance/fixed-asset-property), Tipi contabilizzazione cespiti,
+[Vrste knjiženja dugotrajne imovine/osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-property), Tipi contabilizzazione cespiti,
 
-[Vrste objektivne amortizacije](/docs/configurations/tables/finance/objective-amortization-types),  
+[Vrste amortizacije](/docs/configurations/tables/finance/objective-amortization-types),  
 
-[Vrste porezne priznate amortizacije](/docs/configurations/tables/finance/deductibility-types),  
+[Vrste porezno priznate amortizacije](/docs/configurations/tables/finance/deductibility-types),  
 
 [Vrste revalorizacija](/docs/configurations/tables/finance/revaluation-types).
 
 
-**Parametri**: [Parametri za dugotrajnu imovin](/docs/configurations/parameters/finance/fixed-assets-parameters).
+**Parametri**: [Parametri za dugotrajnu imovinu/osnovna sredstva](/docs/configurations/parameters/finance/fixed-assets-parameters).
