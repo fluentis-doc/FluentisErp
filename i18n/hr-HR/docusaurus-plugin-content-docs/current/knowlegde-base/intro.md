@@ -17,7 +17,7 @@ Ovaj odjeljak osmišljen je kako bi vam pomogao:
 
 > 💡 **Savjet (Suggerimento):** Prije nego što kontaktirate podršku, provjerite nalazi li se vaše pitanje već u ovom odjeljku. Često je rješenje odmah dostupno i omogućuje vam nastavak rada bez čekanja.  
 
-ČPP (FAQ) su organizirane prema **područjima (aree)**, tako da lako možete pronaći informacije koje se odnose na vašu ulogu ili na specifične zadatke koje obavljate.
+ČPP (FAQ) su organizirane prema **područjima**, tako da lako možete pronaći informacije koje se odnose na vašu ulogu ili na specifične zadatke koje obavljate.
 
 ---
 

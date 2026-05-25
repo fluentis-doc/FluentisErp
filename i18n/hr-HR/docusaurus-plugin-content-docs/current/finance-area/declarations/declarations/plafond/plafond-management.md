@@ -3,7 +3,7 @@ title: Upravljanje plafonom
 sidebar_position: 5
 ---
 
-Obrazac se nalazi putem izbornika **Administracija > Izjave > Plafon > Novi** i omogućuje kreiranje *novog* izračuna plafona.  
+Obrazac se nalazi u izborniku **Administracija > Izjave > Plafon > Novi** i omogućuje kreiranje *novog* izračuna plafona.  
 
 ## Kako kreirati Izračun plafona  
 

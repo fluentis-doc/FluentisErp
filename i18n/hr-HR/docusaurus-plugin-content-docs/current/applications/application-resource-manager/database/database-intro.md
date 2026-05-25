@@ -1,10 +1,10 @@
 ---
-title: Overview
-sidebar_label: Overview
+title: Pregled
+sidebar_label: Pregled
 sidebar_position: 0
 ---
 
-# Datasources / SQL Query / Fluentis Query Studio
+# Izvori podataka / SQL upiti / Fluentis Query Studio
 
 ## Overview
 In questa pagina vediamo una panoramica generale degli strumenti messi a disposizione da Fluentis per interagire con la base dati.  

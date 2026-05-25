@@ -3,7 +3,7 @@ title: Automatsko kreiranje
 sidebar_position: 1
 ---
 
-Tipka 'Automatsko kreiranje' otvara proceduru za dohvaćanje podataka iz prodajnog područja.  
+Tipka 'Automatsko kreiranje' otvara proceduru za dohvaćanje podataka iz područje prodaje.  
 
 Procedura se sastoji od tri kartice:
 
@@ -11,7 +11,7 @@ Procedura se sastoji od tri kartice:
 
 **[Parametri](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/parameters)**
 
-**[Vraćanje promjena](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/restore)**
+**[Povrat](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/restore)**
 
 Tijekom **kreiranja** Intrastata koristi se **Filter računa**, gdje se pretražuju aktivni računi koji će biti uključeni u Instrastat, i **Parametri** koji predstavljaju pregled podataka s ciljem dodavanja eventualnih nedostajućih podataka.
 
