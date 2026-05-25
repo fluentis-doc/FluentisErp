@@ -12,9 +12,9 @@ Traka izbornika također sadrži naredbe za ispis predloška; potrebno je odabra
 | Funkcija | Značenje |
 | --- | --- |
 | Traži | Tipka za pokretanje filtara pretraživanja prethodno umetnutih Intrastat1 deklaracija. Mogućnost pretraživanjapo tipu, razdoblju, godini i broju. |
-| Novo | Pokretanje procedure za umetanje nove Intrastat1 deklaracije. |
-| Izmijeni | Pokreće postupak izmjene prethodno umetnute Intrastat1 deklaracije. |
-| Izbriši | Brisanje prethodno upisane Intrastat 1 deklaracije. |
+| Novo | Pokretanje procedure za umetanje nove Intrastat1 deklaracije (obrasca). |
+| Izmijeni | Pokreće postupak izmjene prethodno umetnute Intrastat1 deklaracije (obrasca). |
+| Izbriši | Brisanje prethodno upisane Intrastat 1 deklaracije (obrasca). |
 | Izvoz u datoteku | Tipka za kreiranje i izvoz elektroničke datoteke, uz spremanje datoteke u direktorij po izboru korisnika i u Upravljanje dokumentima Fluentisa. |
 
 

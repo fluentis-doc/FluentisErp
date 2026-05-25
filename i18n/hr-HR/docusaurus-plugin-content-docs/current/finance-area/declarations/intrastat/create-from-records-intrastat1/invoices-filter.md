@@ -1,18 +1,18 @@
 ---
-title: Filter faktura
+title: Filter knjiženja
 sidebar_position: 2
 ---
 
-Ova kartica prikazuje popis zapisa koji su namijenjeni subjektima definiranim kao, **te imaju popunjeni Intrastat karticu (ova kartica je vidljiva ako je stavka označena s flagom INTRASTAT).**  
+Ova kartica prikazuje popis zapisa/knjiženja koji su namijenjeni subjektima definiranim kao Intrastat, tj. **imaju popunjenu Intrastat karticu (ova kartica je vidljiva ako predložak knjiženja ima aktivnu oznaku INTRASTAT knjiženja).**  
 
-Odabir se potvrđuje pritiskom na tipku **Naprijed** koji se nalazi na vrpci, što će premjestiti prikaz na drugu karticu Parametri.
+Odabir se potvrđuje pritiskom na tipku **Sljedeće** koja se nalazi na vrpci, što će premjestiti prikaz na drugu karticu **Parametri**.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Pretraži | Tipka za pretraživanje popisa intrakomunitarnih knjiženja. |
-| Odaberi sve | Omogućuje odabir svih redaka u tablici rezultata pretraživanja. |
-| Poništi odabir | Omogućuje poništavanje odabira svih redaka u tablici rezultata pretraživanja. |
-| Dalje | Prenosi odabrane retke na karticu Parametri (gdje će se prikazati pregled redaka Intrastat obrasca radi dopune mogućih nedostajućih podataka). |
+| Traži | Tipka za pretraživanje popisa Intrastat knjiženja. |
+| Označi sve | Omogućuje odabir svih redaka u tablici rezultata pretraživanja. |
+| Odznači sve | Omogućuje poništavanje odabira svih redaka u tablici rezultata pretraživanja. |
+| Sljedeće | Prenosi odabrane retke na karticu Parametri (gdje će se prikazati pregled redaka Intrastat obrasca radi dopune mogućih nedostajućih podataka). |
 
 
 

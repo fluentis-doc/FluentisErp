@@ -3,7 +3,7 @@ title: Kreiranje iz zapisa
 sidebar_position: 1
 ---
 
-Tipka **b Kreiranje iz knjiženja** otvara vođeni postupak posvećen preuzimanju podataka iz glavne knjige, pri čemu se odgovarajuće aktivira **Intrastat upravljanje** u knjiženju (flag ***Intrastat*** na kartici *Detalji knjiženja*).
+Tipka **Kreiranje iz knjiženja/zapisa** otvara vođeni postupak posvećen preuzimanju podataka iz glavne knjige, uz prethodno odgovarajuće omogućavanje **Intrastat upravljanja** u predlošku knjiženja (flag ***Intrastat*** na kartici *Detalji knjiženja*).
 
 Kartice:
 
@@ -11,7 +11,7 @@ Kartice:
 
 **[Parametri](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/parameters)**
 
-**[Rollback](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/restore)**
+**[Povrat](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/restore)**
 
  
 

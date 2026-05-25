@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Kartica Intra 1 sadrži podatke s naslovnice obrasca: osnovni podaci popunjavaju se automatski prema informacijama unesenima u tablicu Društvo. 
 
-Ručnom obradom ostaju flag za prvu prijavu i flag za prestanak djelatnosti ili promjenu PDV identifikacijskog broja, kao i odjeljak o ovlaštenoj osobi za podnošenje prijave.  
+Ručnom obradom ostaju *flag* za prvu prijavu i flag za prestanak djelatnosti ili promjenu PDV identifikacijskog broja, kao i odjeljak o ovlaštenoj osobi za podnošenje prijave.  
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image01.png)![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1/image02.png)
 

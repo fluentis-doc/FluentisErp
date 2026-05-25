@@ -1,5 +1,5 @@
 ---
-title: Filter faktura
+title: Filter knjiženja
 sidebar_position: 2
 ---
 
