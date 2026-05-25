@@ -10,6 +10,8 @@ L'implementazione di un **WMS** consente di gestire in modo più efficace le sco
 
 In definitiva, l'utilizzo di un **WMS** aiuta le aziende a snellire le operazioni logistiche, ridurre i costi e migliorare la qualità del servizio, creando un vantaggio competitivo in un mercato sempre più dinamico e complesso.
 
+## Configurazione
+  [Configurare il WMS](/docs/logistics/wms/configuration)
 
 ## Moduli dell'area 
 
