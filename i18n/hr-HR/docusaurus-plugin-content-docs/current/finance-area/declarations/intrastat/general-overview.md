@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 Modul Intrastat služi za izradu statističkih izvještaja Intrastat: predviđeno je kako ručno upravljanje podacima tako i automatski unos podataka temeljenih na podacima prisutnim u ulaznim i izlaznim računima iz odgovarajućih područja nabave i prodaje, kao i preuzimanje podataka iz računovodstvenih evidencija. 
-Knjiženjem relevantnih faktura s odgovarajućim postavkama (konkretno aktiviranjem **flag** *Intrastat* unutar **predložaka** knjiženja) moguće je upravljati automatskim stvaranjem putem računovodstvenih evidencija, kako za robu tako i za usluge.
+Knjiženjem relevantnih faktura s odgovarajućim postavkama (konkretno aktiviranjem ***flaga*/opcije** *Intrastat* unutar **predložaka** knjiženja) moguće je upravljati automatskim stvaranjem putem računovodstvenih evidencija, kako za robu tako i za usluge.
 
 Osnovne postavke vezane su uz **matične podatke** i **vrste dokumenata** u nabavi i prodaji: 
 

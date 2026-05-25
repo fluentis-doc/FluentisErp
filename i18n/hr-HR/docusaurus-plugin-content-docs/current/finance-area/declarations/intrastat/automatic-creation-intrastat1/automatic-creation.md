@@ -25,7 +25,7 @@ Ako se koristi naredba za brisanje intrastata u gore navedenoj situaciji (bez pr
 :::tip Automatska raspodjela dodatnih troškova u računu   
 Moguće je upravljati automatskom raspodjelom računa za završni dodatni trošak (donji dio dokumenta) poput troškova prijevoza i sl.  
 
-Potrebno je koristiti tip troška (tablica tipova troškova) koji ima oznaku  ***Statistička intrakomunitarna vrijednost** za unos u račun ili u šifrarniku klijenta/dobavljača kako bi se automatizirao prijenos iz računa.
+Potrebno je koristiti tip troška (tablica tipova troškova) koji ima oznaku  ***Statistička vrijednost Intrastat** za unos u račun ili u šifrarniku klijenta/dobavljača kako bi se automatizirao prijenos iz računa.
 
 Tijekom automatskog kreiranja primijetit će se da je vrijednost svakog reda povećana za dio konačnog troška koji je raspoređen.  
 :::
