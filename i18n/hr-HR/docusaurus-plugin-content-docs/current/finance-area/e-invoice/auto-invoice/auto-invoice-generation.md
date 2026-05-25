@@ -6,13 +6,13 @@ sidebar_position: 4
 Sljedeće upute odnose se na postupak za automatizirano generiranje prodajnih faktura/računa stvorenih kako bi se putem slanja e-računa, poslali podaci o nabavi, prethodno priopćeni putem ukinutog zahtjeva poznatog kao "Esterometro" (Italija).
 :::
 
-Prilikom spremanja računovodstvenog zapisa, Fluentis će automatski kreirati dokumente postavljene u predlošku plaćanja: dakle i administrativni(računovodstveni) prijenos za neutralizaciju PDV-a i samofakturiranje za prodaju. Zatvaranje obrasca tada će vratiti dvije poruke, onu koja otvara registraciju automatskog prijenosa i novu poruku koja prikazuje samoračun.  
+Prilikom spremanja računovodstvenog zapisa, Fluentis će automatski kreirati dokumente postavljene u predlošku plaćanja: dakle i administrativni(računovodstveni) prijenos za obrsčun PDV-a i samofakturiranje prodajnih faktura. Zatvaranje obrasca tada će vratiti dvije poruke, onu koja otvara knjiženje automatskog prijenosa i novu poruku koja prikazuje izrađeni račun.  
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation1.png)
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation2.png)
 
-U automatski generiranom samoračunu: u polju prijenosnik imamo i dobavljača, u referencama broj i datum računa dobavljača.  
+U automatski generiranom obračunu: u polju imamo i dobavljača, u referencama broj i datum računa dobavljača.  
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation3.png)
 
