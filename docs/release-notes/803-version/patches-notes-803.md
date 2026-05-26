@@ -3,12 +3,37 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0021 - 26/05/2026
+
+> -	Allow to save command with-out right (#TT02125/26)
+> -	CO - revisione driver di progetto nell’elaborazione del consuntivo di progetto (#TT01593/26)
+> -	CPQ - Risolto problema di sessione NHibernate errata nella creazione delle distinte da configurazione.
+> -	E’ stato disabilitata la visualizzazione grafica delle Ubicazioni su Web (#TT01810/26)
+> -	FI - Aggiunto il flag Includi scadenze non sollecitate nella form di generazione solleciti che, in caso di filtro per data sollecito non poteva restituire le partite mai sollecitate. Modifications inside dunning letters issue form can have impact on profiles Rif . #TT01954/26
+> -	FI - Corretta anomalia nella cancellazione dei clienti dalla lista esclusi da solleciti automatici (#TT01837/26)
+> -	FI - Revisione ricalcolo importi di riga Cdc quando si interviene nella colonna della percentuale. Revisione proposta sottoconto se si inserisce una riga manuale a partire dalla tendina del centro di costo. Revisione assegnazione collegamento alla riga del giornale di origine. (#TT02150/26)
+> -	Import paghe da zucchetti, revisione gestione data di riferimento e riferimento cdc (#TT05241/25)
+> -	Modifiche al framework per griglie con campi non attivati correttamente (#TT02250/26)
+> -	Risolto il problema su algoritmo di creazione NIR da bolla di acquisto quando si usa un lotto di scarico per documenti di reso (#TT02240/26)
+> -	Risolti problemi relativi alla creazione del NIR con lotti (#TT02240/26)
+> -	SCM - Importazione Prezzi Fornitori: E’ stata ottimizzata la procedura di selezione e importazione con un numero di righe che supera le migliaia. (#TT2035/26)
+> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio. (#TT2207/26)
+> -	SH - API cambi del giorno (#TT00620/26)
+> -	SH - workflow gestito da ricerca documenti, corretto caso per cui le nelle transizioni, le condizioni impostate nel campo ignora azione non venivano considerate (#TT02352/26)
+> -	WM - Prototipi: corretta anomalia all’inserimento di un nuovo componente, con successiva importazione della distinta base del medesimo componente. Il nuovo componente veniva eliminato e i materiali, presenti nella nuova distinta base, li importata al livello 1 del padre. (#TT02122/26)
+> -	WMS - Aggiunto comando per generare una exception (#TT00937/26)
+> -	WMS - Liste Trasferimento UDC: Inibita aggiunta UDC su liste in stato “Trasferita” (#TT01154/26).
+> -	WMS - Ricevimento merce: Corretto quantità alternativa che rimaneva valorizzata. (#TT01217/26)
+> -	WMS - Ricevimento merce: Inibita creazione riga aggiuntiva con quantità zero se presente una unità di misura alternativa (#TT05080/25).
+> -	WMS - Ricevimento merce: Inibita doppia apertura form con doppio click su “Creazione DDT acquisto” (#TT00939/26).
+
+
 ### Patch 803.0020 - 15/05/2026
 
 > -	CO - nelle registrazioni del controlling, rivisto l’inserimento manuali di righe nella griglia dei cdc (#TT02152/26)
 > -	CPQ - Aggiunte nuove funzioni alla classe Helper dello scripting nelle configurazioni
 > -	CPQ - Risolto problema nella creazione delle distinte base da configuratore
-> -	FI - errore apertura partite ( TT02171/26)
+> -	FI - errore apertura partite (#TT02171/26)
 > -	FI - migliorato controllo di quadratura per dimensione tra movimenti contabile e centri di costo. (#TT01297/26)
 > -	FI - migliorato messaggio di warning che non riconosceva correttamente i segni nell’associazione tra file sdi ricevuti e registrazioni contabili in caso di note di accredito ed Autofatture (#TTT01425/26)
 > -	FI - nella form di ricerca ‘Commissioni’ è stato inserito un nuovo flag di filtro ‘Da liquidare’, impostandolo si abilita la data di riferimento che sarà utilizzata per visualizzare le righe in maturazione. Modifications inside commission form can have impact on profiles. (#TT01385/26)
