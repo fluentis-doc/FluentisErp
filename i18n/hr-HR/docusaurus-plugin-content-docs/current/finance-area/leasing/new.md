@@ -84,7 +84,7 @@ koji se mogu aktivirati iz obrasca leasinga isti su kao oni dostupni s popisa po
 
 Razlika se sastoji u činjenici da se s ove pozicije može raditi samo na konkretnom leasingu koji, dok u slučaju računovodstvenih postupaka modula, u odgovarajućem obrascu, sve najamnine koje još treba platiti bit će moguće pretraživati i odabrati leasing prisutan u bazi podataka. 
 
-Knjiženje maxicanona vrši se samo jednom (također nakon i neovisno o knjiženju kanona).
+Knjiženje *maxicanona* vrši se samo jednom (također nakon i neovisno o knjiženju kanona).
 
 Za obračun naknada moguće je odabrati ratu koja se obračunava i, nakon potvrde za nastavak, tražit će se ispunjenje u dijaloškom okviru s brojem dokumenta i datumom dokumenta u koji ćete unijeti reference na primljeni račun za dospjele naknade.  
 
