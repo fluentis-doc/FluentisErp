@@ -3,18 +3,18 @@ title: Računovodstveni parametri za samofakturiranje
 sidebar_position: 1
 ---
 :::note BILJEŠKA:
-Sljedeće upute odnose se na postupak za automatizirano generiranje faktura za samoprodaju stvorenih kako bi se SDI-u, putem kruga elektroničkog fakturiranja, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro".
+Sljedeće upute odnose se na postupak za automatizirano generiranje izlaznih računa stvorenih kako bi se SDI-u, putem kruga elektroničkog fakturiranja, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro" (Italija).
 :::
 
-Za izradu dokumenta samofakture u prodaji potrebno je naznačiti neke zadane elemente:
+Za izradu dokumenta takve prodajne fakture potrebno je naznačiti neke zadane elemente:
 
-1)	mjerna jedinica koja će se koristiti u nekodificiranom članku koji će biti umetnut u dokument  
+1)	mjerna jedinica koja će se koristiti u nekodificiranom artiklu koji će biti umetnut u dokument  
 
-2)	pripadajući promet od prodaje za eventualno obračunavanje  
+2)	pripadajući promet prodaje za eventualno knjiženje  
 
-3)	podračun kupca samofakture, odnosno kupca koji identificira samu tvrtku  
+3)	podkonto kupca za takve fakture, odnosno kupca koji predstavlja samo poduzeće.
 
-Računovodstvo za samofakturiranje nije obavezno jer se automatska registracija obično provodi izravno povezana s fakturom dobavljača koja se bilježi: stoga je obično moguće naznačiti jednu od prodajnih faktura koje su već prisutne, bez potrebe za definiranjem određene.  
+Knjiženje ovakvih računa nije obavezno, jer se obično izravno izvršava automatsko knjiženje povezano s evidentiranjem dobavljačevog računa. Stoga se u pravilu može koristiti jedan od već postojećih prodajnih konta, bez potrebe definiranja posebnog.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/parameters1.png)
 

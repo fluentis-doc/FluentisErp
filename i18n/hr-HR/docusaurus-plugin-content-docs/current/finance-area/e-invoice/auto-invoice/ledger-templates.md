@@ -3,10 +3,10 @@ title: Računovodstveni predlošci za samofakturiranje
 sidebar_position: 3
 ---
 :::note BILJEŠKA:
-Sljedeće upute odnose se na postupak za automatizirano generiranje faktura za samoprodaju stvorenih kako bi se SDI-u, putem kruga elektroničkog fakturiranja, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro".
+Sljedeće upute odnose se na postupak za automatizirano generiranje izlaznih računa stvorenih kako bi se SDI-u, putem kruga elektroničkog fakturiranja, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro" (Italija).
 :::
 
-U okviru općih računovodstvenih predložaka koji detektiraju interne intra/storne fakture za kupnju, potrebno je navesti vrstu fakture koja će se generirati za prodaju. Na primjer, navest ćemo i za fakture i za knjižna odobrenja za unutarnje kupnje  
+Unutar predložaka glavne knjige koji evidentiraju *intrakomunitarne/reverse charge* ulazne račune potrebno je navesti koju vrstu izlaznog računa treba generirati u prodaji. Na primjer, i za račune i za odobrenja intrakomunitarnih nabava navest ćemo odgovarajuću vrstu izlaznog računa.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/ledger-templates1.png)
 

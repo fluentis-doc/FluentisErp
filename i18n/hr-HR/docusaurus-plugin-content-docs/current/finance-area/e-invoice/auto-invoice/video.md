@@ -1,5 +1,5 @@
 ---
-title: Video Tutorijali
+title: Video tutorijali
 sidebar_position: 5
 ---
 
