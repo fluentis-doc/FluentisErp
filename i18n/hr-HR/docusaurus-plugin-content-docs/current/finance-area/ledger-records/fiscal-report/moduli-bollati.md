@@ -1,5 +1,5 @@
 ---
-title: Ispis za ovjeru  
+title: Ispis za ovjeru (IT) 
 sidebar_position: 7
 ---
 

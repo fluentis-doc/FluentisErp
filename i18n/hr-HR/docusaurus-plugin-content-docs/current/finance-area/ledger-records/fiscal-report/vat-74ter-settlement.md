@@ -1,5 +1,5 @@
 ---
-title: Likvidacija PDV-a 74 ter
+title: Likvidacija PDV-a 74 ter (IT)
 sidebar_position: 6
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Obračun PDV-a
+title: Obrazac PDV
 sidebar_position: 5
 ---
 
@@ -15,9 +15,9 @@ Ukoliko je odabrano zadnje razdoblje u godini, bit će omogućena mogućnost isp
 
 **Datum uplate/Modalitet uplate**: ova polja (datum koji se zatim prijavljuje u tekstualnom nizu) dopuštaju da se tekst koji se odnosi na datum i način plaćanja poreza pojavi u ispisu (ili, njihovom izmjenom, dodatna napomena).
 
-**Prikaži zaglavlje**: flag predložena prema zadanim postavkama: treba je ukloniti samo ako tvrtka i dalje ispisuje na starim obrascima.
+**Prikaži zaglavlje**: flag predložen prema zadanim postavkama: treba je ukloniti samo ako tvrtka i dalje ispisuje na starim obrascima.
 
-**Definitivno**: il flag attivo renderà definitiva la stampa bloccando il periodo iva di riferimento ed aggiornando i contatori di pagina del registro sul quale si sta stampando. Permette inoltre di abilitare la sezione sottostante per i giroconti automatici. Inoltre andrà a modificare il periodo di riferimento per farlo corrispondere a quello successivo all'ultimo stampato in definitivo e sarà disabilitato il numero di copie da stampare. 
+**Definitivno**: Aktivna oznaka učinit će ispis konačnim, zaključavajući odgovarajuće PDV razdoblje i ažurirajući brojače stranica registra koji se ispisuje. Također omogućuje aktiviranje donje sekcije za automatska prijenosna knjiženja. Osim toga, promijenit će referentno razdoblje tako da odgovara razdoblju nakon posljednjeg konačno ispisanog, a broj kopija za ispis bit će onemogućen.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/period-vat-settlement/image01.png)
 

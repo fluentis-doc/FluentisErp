@@ -1,5 +1,5 @@
 ---
-title: Nezaključana bilanca razdoblja  
+title: Bilanca razdoblja (privremena)  
 sidebar_position: 1
 ---
 
@@ -7,7 +7,7 @@ Ispis probnog stanja prikazuje popis podkonta s njihovim ukupnim dugovanjima/pot
 
 Glavni parametri filtra kojima treba upravljati prije pokretanja ispisa su:  
 
- - raspon datuma registracije; prema zadanim postavkama predloženo je razdoblje od početka godine do danas. 
+ - raspon datuma knjiženja; prema zadanim postavkama predloženo je razdoblje od početka godine do danas. 
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image01.png)
 
@@ -19,7 +19,7 @@ Moguće je filtrirati samo neka podkonta koji se odnose na evidenciju kupaca (go
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image03.png)
 
-Oppure è possibile escludere alcuni tipi conti di anagrafica affinché non vengano visualizzati i dettagli di ogni singolo sottoconto riferito alla tipologia per la quale si attiva il flag.
+Također je moguće isključiti određene vrste konta iz matičnih podataka kako se ne bi prikazivali detalji svakog pojedinog podkonta vezanog uz tipologiju za koju je aktivirana oznaka.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image04.png)
 

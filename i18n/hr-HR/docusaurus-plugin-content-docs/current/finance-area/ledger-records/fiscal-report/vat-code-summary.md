@@ -20,7 +20,7 @@ Kriteriji grupiranja mogu se zatim ukloniti ili preurediti po položaju (priorit
 - Otkaži: uklanja kriterij grupiranja  
 - Ukloni grupiranje: uklanja sve grupiranje  
 - Premjesti gore: ako postoji više kriterija, pomiče odabrani kriterij prema gore kako bi mu se dao veći prioritet  
-- Pomakni dolje: ako postoji više kriterija, pomiče odabrani prema dolje kako bi mu se dao niži prioritet  
+- Premjesti dolje: ako postoji više kriterija, pomiče odabrani prema dolje kako bi mu se dao niži prioritet  
 
 Za više informacija o grupiranju pogledati **[Pregled knjiženja po shemi knjiženja](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template).**
 

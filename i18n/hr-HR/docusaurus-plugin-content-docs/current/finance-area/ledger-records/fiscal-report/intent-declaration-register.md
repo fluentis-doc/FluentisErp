@@ -1,5 +1,5 @@
 ---
-title: Registar izjave o namjeri  
+title: Registar izjave o namjeri (IT) 
 sidebar_position: 8
 ---
 

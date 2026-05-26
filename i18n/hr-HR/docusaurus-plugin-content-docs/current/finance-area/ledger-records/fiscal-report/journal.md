@@ -3,7 +3,7 @@ title: Dnevnik knjiženja
 sidebar_position: 3
 ---
 
-Kada se prozor otvori, predložena je tekuća obračunska godina, a filtar za zapise postavljen je prema zadanim postavkama da pokriva odgovarajuću obračunsku godinu (datum obračuna računovodstva nije popunjen prema zadanim postavkama pod pretpostavkom da se želi raditi prema "formalnom" datumu);
+Kada se prozor otvori, predložena je tekuća obračunska godina, a filtar za zapise postavljen je prema zadanim postavkama da pokriva odgovarajuću obračunsku godinu (datum obračuna nije popunjen prema zadanim postavkama pod pretpostavkom da se želi raditi prema "formalnom" datumu);
 
 Prijavljuju se početni podaci o broju stranice, saldu retka dugovne i potražne strane: program predlaže filtar snimaka također uzimajući u obzir datum posljednjeg definitivnog ispisa.
 

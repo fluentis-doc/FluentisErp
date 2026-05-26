@@ -1,5 +1,5 @@
 ---
-title: Izjava o namjeri
+title: Izjava o namjeri (IT)
 sidebar_position: 2
 ---
 
