@@ -3,6 +3,12 @@ title: Patch notes Versione 608
 sidebar_position: 2
 ---
 
+### Patch 608.1-0090 - 26/05/2026
+
+> -	SH - la creazione di una nuova anagrafica ha già visibile il campo del Regime fiscale. (#TT02110/26)
+
+> -	WM - Prototipi: corretta anomalia all’inserimento di un nuovo componente, con successiva importazione della distinta base del medesimo componente. Il nuovo componente veniva eliminato e i materiali, presenti nella nuova distinta base, li importata al livello 1 del padre. (#TT02122/26)
+
 ### Patch 608.1-0089 - 04/05/2026
 
 > -	SCS - Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo. (#TT01357/26)
