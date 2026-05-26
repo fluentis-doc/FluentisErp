@@ -3,7 +3,7 @@ title: Ekonomske operacije
 sidebar_position: 3
 ---
 
-U kartici 'Ekonomske operacije’ moguće je pohraniti troškove upravljanja imovinom/sredstvom koji ne ulaze u knjigu osnovnih sredstava/imovine (npr.  gorivo za automobil, obično održavanje sustava itd.). Obično se ne koristi jer bi to zahtijevalo računovodstveno specifično kretanje predložaka i donekle bi zakompliciralo računovodstveno izvješćivanje.
+U kartici 'Ekonomske operacije’ moguće je pohraniti troškove upravljanja imovinom/sredstvom koji ne ulaze u knjigu osnovnih sredstava/imovine (npr.  gorivo za automobil, obično održavanje sustava itd.). Obično se ne koristi jer bi to zahtijevalo računovodstveno specifično knjiženje i donekle bi zakompliciralo potrebno izvještavanje.
 
 Pogledati i odgovarajući članak u odjeljku  **[Računovodstvena knjiženja](/docs/finance-area/ledger-records/records/ledger-record)**. 
 

@@ -25,7 +25,7 @@ Stoga predstavlja, zajedno s tabom Detalji, glavnu sekciju kartice imovine.
 
 ### GORNJI PREGLED
 
-Ova mreža se koristi kako za operacije nabave (ili povećanja) imovine, tako i za operacije prodaje (ukupno ili djelomično).
+Ovaj pregled se koristi kako za operacije nabave (ili povećanja) imovine, tako i za operacije prodaje (ukupno ili djelomično).
 
 Prvi redak se uglavnom odnosi na početnu kupnju imovine/sredstva: **datum operacije**, njen **progresivni** broj i naknadni **iznos** upisuju se u odgovarajući stupac: 
 

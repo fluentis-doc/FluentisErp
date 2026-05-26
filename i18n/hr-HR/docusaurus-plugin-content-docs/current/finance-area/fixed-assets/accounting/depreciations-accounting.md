@@ -7,10 +7,10 @@ LINK:
 
 **[Amortizacija](/docs/finance-area/fixed-assets/accounting/depreciation)**
 
-**[Reset](/docs/finance-area/fixed-assets/accounting/restore)**
+**[Povrat](/docs/finance-area/fixed-assets/accounting/restore)**
 
  
-Ova procedura ažurira kartice sredstsva/imovine (dodavanjem flaga Knjiženo i ažuriranjem vrijednosti akumulirane amortizacije i neto knjigovodstvene vrijednosti) i bilježi povezana kretanja amortizacije u računovodstvu
+Ova procedura ažurira kartice sredstsva/imovine (dodavanjem *flaga* Knjiženo i ažuriranjem vrijednosti akumulirane amortizacije i neto knjigovodstvene vrijednosti) i bilježi povezana kretanja amortizacije u računovodstvu
 
 Da bi postupak bio uspješan potrebno je: 
 

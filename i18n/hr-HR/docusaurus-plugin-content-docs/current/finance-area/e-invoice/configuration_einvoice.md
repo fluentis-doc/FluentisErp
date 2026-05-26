@@ -12,7 +12,7 @@ Počevši od verzije 606, knjižna odobrenja uvijek se moraju unositi u Fluentis
 Za računovodstvene potrebe, u slučaju da su unutar odobrenja prisutni mješoviti predznaci (pozitivne linije i negativne linije), potrebno je omogućiti mogućnost upravljanja njihovim mijenjanjem u administraciji (računovodstvu) internog parametra u bazi podataka (varijacija od 0 do 1, u prošlosti je postavljeno -1 prije gornje promjene). Obratite se tehničkoj dokumentaciji i eventualno službi za podršku.  
 :::
 
-### Kodiranje artikla po kupcu (Oznaka 2.2.1.3 Šifraartikla)
+### Kodiranje artikla po kupcu (Oznaka 2.2.1.3 Šifra artikla)
 
 Oznaka koda stavke može se ponoviti nekoliko puta, generirajući dvostruko kodiranje, promjenom koda u oznaci 2.2.1.3.1 
 
