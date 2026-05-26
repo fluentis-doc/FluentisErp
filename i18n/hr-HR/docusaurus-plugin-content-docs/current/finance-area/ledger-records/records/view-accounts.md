@@ -7,7 +7,7 @@ Ova forma omogućuje pregled računovodstvenih zapisa bilo kojeg konta ili podko
 
 ## Testata:
 
-U gornjem dijelu obavezno je unijeti šifru konta ili izravno podračun, ostala polja filtra su opcionalna.
+U gornjem dijelu obavezno je unijeti šifru konta ili izravno podkonto, ostala polja filtra su opcionalna.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image01.png)
 
@@ -31,7 +31,7 @@ Polje **Progresivan** je vidljivo samo ako je zadržan zadani redoslijed prikaza
 
 ## Ukupni iznosi na dnu forme:
 
-**Odaberi stanje**: zbroj dugovnih/potražnih iznosa,  koji su odabrani u tablici mišem; ako odaberete sve retke u tablici (pomoću ctrl+a), ovo polje će prikazati isti rezultat kao i polje *Trenutni saldo*. 
+**Odabrano stanje**: zbroj dugovnih/potražnih iznosa,  koji su odabrani u tablici mišem; ako odaberete sve retke u tablici (pomoću ctrl+a), ovo polje će prikazati isti rezultat kao i polje *Trenutni saldo*. 
 
 **Tekuće stanje**: zbroj dugovnih/potražnih iznosa za sve prikazane redove (uvijek sve, neovisno o selekciji napravljenoj mišem);  
 
@@ -53,7 +53,7 @@ Polje **Progresivan** je vidljivo samo ako je zadržan zadani redoslijed prikaza
 
 
 
-U prikazu su vidljive dviprikazanih podračuna: podračun zaglavlja (koji se preuzima iz podračuna nositelja knjiženja iz kojeg je preuzet pokret) i podračun detalja, koji je zapravo podračun za koji se pretražuju pokreti. Na primjer, ako pregledavamo pokrete generičkog troškovnog računa, u podračunu zaglavlja prikazat će se šifre dobavljača koji su nam poslali račune knjižene na taj troškovni račun, dok će u podračunu detalja biti prikazani pojedinačni specifični podračuni troškova.
+U mreži su vidljive dvije vrste prikazanih podkonta: zaglavno podkonto (koje se preuzima iz podkonta nositelja knjiženja iz kojeg je preuzet sam promet) i detaljno podkonto koje je stvarno podkonto za koje se pretražuju knjiženja. Na primjer, ako se prikazuju knjiženja generičkog troškovnog konta, u zaglavnom podkontu bit će prikazane šifre dobavljača koji su poslali račune knjižene na to troškovno konto, dok će u detaljnom podkontu biti prikazana pojedinačna specifična troškovna podkonta koja su evidentirana.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image02.png)
 
