@@ -26,7 +26,7 @@ Flag **Fiskalni podaci** prikazuje dodatne stupce koji sadrže podatke koji se o
 
 Ostala polja filtera su ona uobičajena koja su već obrađena za druge ispise i druge obrasce u području osnovnih sredstava.  
 
-Kako funkcionira pregled za odabir kategorije osnovnog sredstva, **[ pogledati ovdje](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**.  
+Kako funkcionira pregled za odabir kategorije osnovnog sredstva, **[pogledati ovdje](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

@@ -3,7 +3,7 @@ title: Amortizacija
 sidebar_position: 2
 ---
 
-Prije svega, od temeljne je važnosti upravljati flagom **Operazioni incrementali**. Budući da se postupkom amortizacije upravlja drugačijom logikom, ako poduzeće koristi inkrementalnu opciju za svoje kategorije, bit će potrebno aktivirati ovu oznaku kako bi se identificirali podaci.
+Prije svega, od temeljne je važnosti upravljati flagom **Inkrementalne operacije**. Budući da se postupkom amortizacije upravlja drugačijom logikom, ako poduzeće koristi inkrementalnu opciju za svoje kategorije, bit će potrebno aktivirati ovu oznaku kako bi se identificirali podaci.
 
 Stoga, ako postoje obje kategorije osnovnog sredstva s inkrementalnom opcijom i kategorije bez te opcije, amortizacija osnovnog sredstva mora se provesti u dvije faze nakon pretraživanja sa i bez tog flaga.
 

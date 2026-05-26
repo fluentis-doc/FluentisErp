@@ -7,7 +7,7 @@ Ovaj obrazac omogućuje ispis knjige osnovnih sredstava pomoću uobičajenih fil
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image01.png)
 
-Flag **Kategorija osnovnog sredstva**, ako je aktivna, omogućuje odabir jedne ili više (s tipkom Ctrl) kategorija iz glavnog pregleda. 
+Oznaka/flag **Kategorija osnovnog sredstva**, ako je aktivna, omogućuje odabir jedne ili više (s tipkom Ctrl) kategorija iz glavnog pregleda. 
 
 S desne strane: obično se osnovno sredstvo, prodana ili uništena u godinama koje prethode umetnutoj referentnoj godini, više neće izvještavati u tiskanom obliku, osim ako se ne postavi odgovarajući flag. Postoji flag čijim aktiviranjem se prikazuju osnovna sredstva prema željenom svojstvu.
 

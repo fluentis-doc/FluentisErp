@@ -16,9 +16,9 @@ LINK:
 **[Svojstva imovine](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
 
  
-Dalla presente form è possibile inserire manualmente una nuova scheda cespite (questo tipo di operazione non è normalmente previsto, un esempio pratico può essere l'inserimento di cespiti pregressi di cui non si intende caricare la registrazione contabile già presente, magari, su un precedente software).
+Iz ove forme moguće je ručno unijeti novu karticu dugotrajne imovine (ova vrsta operacije obično nije predviđena; praktičan primjer može biti unos postojeće dugotrajne imovine za koju se ne želi učitati već postojeće računovodstveno knjiženje, primjerice iz prethodnog softvera).
 
-Questa procedura è alternativa all'inserimento della scheda direttamente dalla registrazione contabile della fattura di acquisto configurata appositamente per la gestione cespiti (procedura, quest'ultima, consigliata).
+Ova procedura predstavlja alternativu unosu kartice izravno iz računovodstvenog knjiženja ulaznog računa posebno konfiguriranog za upravljanje dugotrajnom imovinom (što je ujedno i preporučena procedura).
 
 
 **Zaglavlje**

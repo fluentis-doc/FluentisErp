@@ -5,7 +5,7 @@ sidebar_position: 4
 
 Ovim izvješćem moguće je izvršiti bilancu, tj. provjeru usklađenja, konto po konto, između zapisa u administraciji (računovodstvu) koji se odnose na odabrano sredstvo i stanja knjige osnovnih sredstava. Ukupni iznosi prisutni u modulu osnovnih sredstava uspoređuju se s ukupnim iznosima prisutnim u glavnoj knjizi. 
 
-Rezultat izvješća bit će popis računovodstvenih računa (identificiranih u kategorijama osnovnih sredstava odabranih u obrascu i valoriziranih u modulu osnovnih sredstva) s povezanim ukupnim vrijednostima zabilježenim u dva Fluentis modula, kako bi se olakšala provjera usklađenosti
+Rezultat izvješća bit će popis knjiženih računa (identificiranih u kategorijama osnovnih sredstava odabranih u obrascu i valoriziranih u modulu osnovnih sredstva) s povezanim ukupnim vrijednostima zabilježenim u dva Fluentis modula, kako bi se olakšala provjera usklađenosti
 
 Obrazac za parametriziranje ispisa sličan je onom kod drugih ispisa dostupnih u modulu osnovnih sredstava. Posebno se ističu 3 polja:  
 
