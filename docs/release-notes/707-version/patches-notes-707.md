@@ -5,6 +5,18 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0075 - 26/05/2026
+
+> -	CO - nella gestione assestamenti, per le integrazioni e quando il costo/ricavo è completamente dell’esercizio di calcolo, ora si usa il sottoconto fatture da ricevere/emettere se la registrazione di origine ha il sottoconto di testata compilato (come per le fatture), altrimenti si usano i conti dei ratei. (#TT01938/26)
+> -	CO - revisione driver di progetto nell’elaborazione del consuntivo di progetto (#TT01593/26)
+> -	FI - Aggiunto il flag Includi scadenze non sollecitate nella form di generazione solleciti che, in caso di filtro per data sollecito non poteva restituire le partite mai sollecitate. Modifications inside dunning letters issue form can have impact on profiles Rif . (#TT01954/26)
+> -	FI - Corretta anomalia nella cancellazione dei clienti dalla lista esclusi da solleciti automatici (#TT01837/26)
+> -	Import paghe da zucchetti: revisione gestione data di riferimento e riferimento cdc (#TT05241/25)
+> -	Risolvere il problema su algoritmo di creazione NIR da bolla di acquisto quando si usa un lotto di scarico per documenti di reso (#TT02240/26)
+> -	Risolvere problemi relativi alla creazione del NIR con lotti (#TT02240/26)
+> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio. (#TT2207/26)
+> -	WM - Prototipi: corretta anomalia all’inserimento di un nuovo componente, con successiva importazione della distinta base del medesimo componente. Il nuovo componente veniva eliminato e i materiali, presenti nella nuova distinta base, li importata al livello 1 del padre. (#TT02122/26)
+
 ### Patch 707.1-0074 - 15/05/2026
 
 > -	FI - errore apertura partite (#TT02171/26)
