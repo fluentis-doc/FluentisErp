@@ -11,9 +11,27 @@ Di seguito ci sono una serie di combo, all'interno delle quali si andrà a selez
 In ogni casella è presente un flag, che, se attivato, indica che il giorno in questione è *Festivo*.  
 Il fatto che un determinato giorno sia designato come *Festivo* consente all'utente di fare in modo che quando esegua la generazione del *Calendario delle capacità produttive* l'applicazione generi in automatico una disponibilità della *Risorse produttiva* solo per i giorni che nel [Calendario di Fabbrica](/docs/configurations/tables/production/factory-calendar) sono identificati come non festivi.
 
-Oltre a questo flag, all'interno di ciascuna casella saranno visualizzabile e/o modificabile anche le *ore di capacità produttiva* di quel centro di lavoro (quindi per quante ore al giorno può lavorare).
+Oltre a questo flag, all'interno di ciascuna casella saranno visualizzabili anche le *ore/minuti di capacità produttiva* di quel centro di lavoro per quella determinata giornata.
 
-E' possibile stabilire che il centro di lavoro lavori tutti i giorni tranne i giorni festivi, e nel caso di **Eccezioni**, basterà posizionarsi nella giornata che si desidera modificare e aggiungere/togliere il flag e aumentare/diminuire le ore di lavoro.
+Nell'elenco sottostante dei *Periodi lavoro*, del Centro di lavoro e mese visualizzato, vengono elencate le informazioni di:
+> **Giorno**: è il nome del giorno della settimana considerato; l'informazione è di sola lettura;   
+> **Data**: è la data nel formato *giorno/mese/anno* considerato; l'informazione è di sola lettura;   
+> **Festivo**: è se la *Data* è festiva o lavorativa; l'informazione è di sola lettura;   
+> **Ora inizio**: è l'inizio del periodo lavorativo della *Data*, nel formato *ore:minuti*, ed ereditato dal *Centro di lavoro*;   
+l'informazione è modificabile; la modifica comporta il ricalcolo della capacità produttiva del giorno;   
+> **Ora fine**: è la fine del periodo lavorativo della Data, nel formato *ore:minuti*, ed ereditato dal *Centro di lavoro*;   
+l'informazione è modificabile; *Ora fine* non può essere inferiore a *Ora inizio*;   
+la modifica comporta il ricalcolo della capacità produttiva del giorno;   
+> **Numero**: è il numero di risorse Macchina o Uomo ed è ereditato dal *Centro di lavoro*, l'informazione è modificabile;   
+la modifica comporta il ricalcolo della capacità produttiva del giorno;   
+> **Tipo risorsa**: è il Tipo di risorsa con la quale si specifica il Numero; è ereditato dal *Centro di lavoro*;   
+l'informazione è di sola lettura.   
+
+:::important Calcolo della capacità produttiva giornaliera
+Il calcolo della capacità produttiva giornaliera viene calcolato come segue:   
+> Σ ((Ora fine - Ora inizio) * Numero)   
+:::
+
 
 Il calendario delle capacità produttive prevale sul calendario di fabbrica.
 
