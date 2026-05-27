@@ -5,29 +5,28 @@ title: Sustav PDV-a na maržu
 
 ### KONFIGURACIJE
 
-Potrebno je kodirati (barem) dva **specifična PDV registra**  u koje će se unositi kupnje povezane sa sustavom PDV-a na maržu i prodaje istog sustava, povezujući ih u polju **tip registra**:
+Potrebno je kodirati (barem) dvije **specifične PDV šifre** u koje će se unositi nabave povezane sa sustavom PDV-a na maržu i prodaje istog sustava, povezujući ih u polju **tip registra**:
 
-- Kupnje sustava PDV-a na maržu
+- Nabave sustava PDV-a na maržu
 - Prodaje sustava PDV-a na maržu
 
-Drugi korak bit će kreiranje [**PDV stopa**](/docs/configurations/tables/finance/vat-rates)  koje će se koristiti na ovim specifičnim PDV registrima, identificirajući ih s **flagom** ***PDV na maržu***:
+Drugi korak bit će kreiranje [**PDV stopa**](/docs/configurations/tables/finance/vat-rates) koje će se koristiti na ovim specifičnim PDV šiframa, identificirajući ih s **flagom** ***PDV na maržu***:
 
 ![](/img/it-it/finance-area/other/VATMargine.png)
 
-Stopa koja će se koristiti pri kupnji imat će označenu stopu PDV-a margine referencije, kako bi se znalo kojoj stopi proporcionalno dodijeliti vrijednost same margine.
+Stope koje se koriste u nabavi sadržavat će oznaku PDV stope pripadajuće marže, kako bi se moglo odrediti kojoj PDV stopi proporcionalno dodijeliti vrijednost same marže.
 
-Trebali bismo zatim kodificirati računovodstvene razloge koji predviđaju evidentiranje u ovim specifičnim registrima: razlog prodaje, posebice, bit će povezan s određenim tipom fakture prodaje, što će omogućiti izdavanje dokumenta u prodaji i njegovo slanje u Sdi.
-Može biti korisno, kako bi se izbjegla pogrešna korištenja nepredviđenih stopa za upravljanje maržom, omogućiti u ovim razlozima odjeljak za obvezu za aktivirane PDV stope (*Provjera stope PDV-a*).
+Zatim je potrebno definirati računovodstvene predloške koji predviđaju evidentiranje na tim specifičnim šiframa: posebno će predložak prodaje biti povezan s određenom vrstom izlaznog računa, što će omogućiti izdavanje dokumenta u prodaji i njegovo slanje prema SDI sustavu. Kako bi se izbjegla pogrešna upotreba PDV stopa koje nisu predviđene za upravljanje maržom, može biti korisno u tim predlošcima aktivirati sekciju ograničenja dopuštenih PDV stopa (*Provjera stope PDV-a*).
 
-Razlog prodaje će zabilježiti dug za PDV na margini, s tipom kretanja *prodaje prema normalnom režimu* i redovitim registrovanjem prodaje.
+Predložak prodaje evidentirat će obvezu PDV-a na maržu, s vrstom knjiženja prodaje u standardnom režimu i standardnim registrom prodaje.
 
 ![](/img/it-it/finance-area/other/VATMargine2.png)
 
-Ova registracija predviđa računovodstveno račun dugovanja PDV-a i račun za poništavanje prihoda od prodaje za marginu, koji se postavlja u parametrima općeg računovodstva u ovoj sekciji:
+Takvo knjiženje računovodstveno predviđa konto obveze PDV-a i konto storna prihoda od prodaje za maržu, koji se postavlja u parametrima glavne knjige u ovoj sekciji:
 
 ![](/img/it-it/finance-area/other/VATMargine3.png)
 
-Navedeni će biti prihod od prodaje i osnovni razlog. Datum posljednje obrade i negativna vrijednost marže, s druge strane, dva su vrijednosti koja Fluentis automatski ažurira prilikom završnog ispisa obrade marže za razdoblje.
+Navedeni će biti prihod od prodaje i osnovni predložak. Datum posljednje obrade i negativna vrijednost marže, s druge strane, dva su vrijednosti koja Fluentis automatski ažurira prilikom završnog ispisa obrade marže za razdoblje.
 
 ### OBRADA
 
@@ -40,7 +39,7 @@ Generiranjem novog izračuna imat ćemo:
 Godina računovodstvenih parametara, registar koji će se koristiti za evidentiranje eventualnog duga na pozitivnoj marži, razlog evidentiranja, klijent koji će biti dodeljen za evidenciju duga i desno opseg datuma koji je predmet obrade.
 Nakon što postavimo ove podatke, imat ćemo mogućnost izvršiti izračun putem gumba na traci s alatima, koji će popuniti podatke na dvije kartice:
 
-Na prvoj kartici imat ćemo ukupne iznose PDV stopa evidentirane u registrima kupnje i prodaje marže, gdje ćemo za kupnju imati prikazane odgovarajuće postotke raspodjele:
+U prvoj će se prikazivati ukupni iznosi PDV stopa evidentiranih u registrima marže nabave i prodaje, gdje će za nabavu biti prikazan i pripadajući postotak raspodjele:
 
 ![](/img/it-it/finance-area/other/VATMargine5.png)
 

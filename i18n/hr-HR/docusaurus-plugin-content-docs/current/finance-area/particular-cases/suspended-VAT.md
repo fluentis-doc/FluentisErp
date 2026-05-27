@@ -22,17 +22,17 @@ Posebno je važno ispravno odabrati, unutar uključenih predložaka, u polju **T
 
 U detalje:
 
-- Predložak za registraciju računa dobavljača imat će tip *PDV kupnje u suspenziji*
-- Predložak za registraciju računa kupca imat će tip *Prodaja s PDV-om u suspenziji*
+- Predložak za knjiženje računa dobavljača imat će tip *PDV kupnje u suspenziji*
+- Predložak za knjiženje računa kupca imat će tip *Prodaja s PDV-om u suspenziji*
 - Predlošci za naplatu ili plaćanje neće imati poseban tip, već će kao i obično imati tip *Nema PDV-a* (bit će povezani s predlošcima koji se automatski izvršavaju za knjiženje PDV-a koji postaje dospjelo kroz polje *Automatski predložak*)
-- Predložak za knjiženje PDV-a na kupnje imat će tip Knjiženje PDV-a na kupnje u suspenziji
+- Predložak za knjiženje PDV-a od nabave imat će tip Knjiženje PDV-a na kupnje u suspenziji
 - Predložak za knjiženje PDV-a na prodaje imat će tip Knjiženje PDV-a u suspenziji
 
-Sadržaj predložaka korištenih za fakture prodaje i kupnje obično se razlikuje od običnih predložaka jer se PDV knjiži na poseban račun za suspendirani PDV, koji je različit od običnih računa namijenjenih za PDV na kredit i dug, a koji se zatim knjiže na račun poreza/PDV u fazi periodičkog obračuna. Što se tiče registrovanog PDV-a, on može ostati uobičajen bez potrebe za definiranjem posebnog. Poseban tip kretanja PDV-a definiran u predlošku osigurava da porez ne bude smatran kreditom ili dugom dok ne dođe do knjiženja, iako će biti prikazan u kretanjima PDV-a za razdoblje.
+Sadržaj (predložak) predložaka koji se koriste za izlazne i ulazne račune tipično se razlikuje od standardnih predložaka po tome što se PDV knjiži na posebno konto za odgođeni PDV, različito od uobičajenih konta pretporeza i obveze PDV-a, koja se zatim prenose na konto obveze prema državi za PDV tijekom periodičnog obračuna PDV-a. Što se tiče PDV registra koji se koristi, može ostati standardni postojeći registar bez potrebe za definiranjem posebnog registra. Posebna vrsta PDV knjiženja definirana u predlošku omogućuje da se porez ne smatra potraživanjem niti obvezom sve dok se ne izvrši prijenosno knjiženje, iako će i dalje biti vidljiv u PDV evidencijama razdoblja.
 
 Sadržaj predložaka za naplatu i plaćanje ostaje uobičajen.
 
-Sadržaj predložaka (izvršenih automatski) za knjiženje suspendiranog PDV-a, poništava specifične račune suspendiranog PDV-a i knjiži na račune običnog PDV-a jer je od tog trenutka PDV postao dospjelo ili odbitno, ovisno o slučaju.
+Sadržaj predložaka (izvršenih automatski) za knjiženje odgođenog PDV-a, poništava specifične račune odgođenog PDV-a i knjiži na račune običnog PDV-a jer je od tog trenutka PDV postao dospjelo ili odbitno, ovisno o slučaju.
 
 U nastavku su prikazane neke slike detalja postavki.
 
@@ -52,16 +52,16 @@ Upravljanje omogućuje identifikaciju otvorenih stavki starijih od godinu dana i
 
 Za to je moguće koristiti (s posebnim postavkama) obrazac [**Prijenos stavki**](/docs/finance-area/maturity-values/procedures/maturity-values-giro/filter-tab)
 
-### POSTAVKE U SLUČAJU BANKOVNIH POTVRDA I NENAPLAĆENIH POTRAŽIVANJA 
+### POSTAVKE U SLUČAJU BANKOVNIH MJENICA I NENAPLAĆENIH POTRAŽIVANJA 
 
-Ako je unutar aktivnog ciklusa predviđeno izdavanje bankovnih potvrda i njihovo predavanje banci na naplatu ili kao (s uvjetom povoljnog ishoda), konfiguracija predložaka bit će sljedeća:
+Ako je u okviru prodajnog ciklusa predviđeno izdavanje bankovnih mjenica te njihovo slanje banci na naplatu ili uz klauzulu „uz dobru naplatu”, konfiguracija predložaka bit će sljedeća:
 
-1. Izdavanje računa: registrira se s predloškom konfiguriranim kao gore opisano;
+1. Izdavanje računa: knjiži se s predloškom konfiguriranim kao gore opisano;
 
-2. Izdavanje efekta: normalna registracija s uobičajenim predloškom, zatvara se otvorena stavka s računa, ali se ne izvršava nikakvo knjiženje PDV-a; 
+2. Izdavanje efekta/mjenice: normalno knjićenje s uobičajenim predloškom, zatvara se otvorena stavka s računa, ali se ne izvršava nikakvo knjiženje PDV-a; 
 
-3. Knjiženje  **odvojene** prezentacije Ri.Ba: **Predložak korišten za ovo povezava je s automatskim prijenosom PDV-a**, prijenos PDV-a se knjiži na datum dospjelošću efekata; 
+3. Knjiženje **zbirnog naloga** za prezentaciju Ri.Ba: **Predložak korišten za ovo povezava je s automatskim prijenosom PDV-a**, prijenos PDV-a se knjiži na datum dospijeća efekata/mjenica; 
 
-4. Knjiženje akreditiva: normalno, kao i obično.
+4. Knjiženje priljeva: normalno, kao i obično.
 
 **U slučaju knjiženja nenaplaćenih potraživanja**: računovodstveni predložak koji se koristi ne zahtijeva posebna podešavanja, postupak prepoznaje stavku zatvorenu putem Ri.Ba. povezanu s PDV-om prema naplati i briše registraciju prijenosa, a umjesto ponovnog otvaranja stavke, izvršava plaćanje s iznosom na teret kako bi poništio plaćanje koje je izvršeno izdavanjem Ri.Ba., čime se ponovno otvara izvorna stavka (povezana s suspendiranim PDV-om).

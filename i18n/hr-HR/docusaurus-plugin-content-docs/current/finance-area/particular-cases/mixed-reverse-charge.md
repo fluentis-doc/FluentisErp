@@ -1,11 +1,11 @@
 ---
 sidebar_position: 2
-title: Mješoviti Reverse Charge
+title: Mješoviti prijenos porezne obveze
 ---
 
-U sustavu postoji posebna funkcionalnost za automatsko upravljanje situacijama takozvanog mješovitog reverse charge-a, tj. kada je u istoj fakturi za kupovinu jedan dio fakturiran prema reverse charge-u, a drugi prema običnom režimu.
+U sustavu postoji posebna funkcionalnost za automatsko upravljanje situacijama takozvanog mješovitog reverse charge-a (Prijenosa porezne obveze), tj. kada je u istoj fakturi za kupovinu jedan dio fakturiran prema reverse charge-u, a drugi prema običnom režimu.
 
-Ovaj skup postavki **nadograđuje**  one koje su već bile prisutne i s kojima se prije pokušavalo (ne potpuno) upravljati mješovitom situacijom, posebno flag  *Izuzmi iz automatskih predložaka* u tablici Aliquote e modalità IVA.    
+Ovaj skup postavki **nadograđuje**  one koje su već bile prisutne i s kojima se prije pokušavalo (ne potpuno) upravljati mješovitom situacijom, posebno flag  *Izuzmi iz automatskih predložaka* u tablici PDV stope i načini obračuna PDV-a.   
 Sadašnje postavke mogu se koristiti umjesto tog flaga za potpunije i funkcionalnije upravljanje.
 
 
