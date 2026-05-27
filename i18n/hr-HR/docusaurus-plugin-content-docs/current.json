@@ -96,7 +96,7 @@
     "description": "The label for category Stampe analitica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Partite": {
-    "message": "Stavke",
+    "message": "Otvorene stavke",
     "description": "The label for category Partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Procedure": {
