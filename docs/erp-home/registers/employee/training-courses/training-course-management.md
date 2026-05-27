@@ -34,8 +34,9 @@ Al termine dell'elaborazione il nuovo *Corso di formazione* viene visualizzato.
 
 ### ![](/img/neutral/common/update.png) Aggiorna dipendenti
 
-Il pulsante è abilitato solamente se esistono *Mansioni coinvolte*.   
-Successivamente all'inserimento di una *Mansione* nell'elenco presente nel tabulatore *Mansioni coinvolte*, per inserire i *Dipendenti* che ricoprono la nuova *Mansione* inserita è necessario premere il pulsante **Aggiorna dipendenti**. I *Dipendenti già presenti nell'elenco *Dipendenti coinvolti* non verranno modificati.
+Il pulsante inserisce, nell'elenco *Dipendenti coinvolti*, tutti i *Dipendenti* che ricoprono, alla data del corso, le *Mansioni* inserite nell'elenco *Mansioni coinvolte*.   
+I *Dipendenti* già presenti nell'elenco *Dipendenti coinvolti* non verranno modificati.   
+Il pulsante è abilitato solamente se sono state inserite *Mansioni* nell'elenco *Mansioni coinvolte*, il corso è stato memorizzato e non completato.   
 
 
 ## Gestione dati
