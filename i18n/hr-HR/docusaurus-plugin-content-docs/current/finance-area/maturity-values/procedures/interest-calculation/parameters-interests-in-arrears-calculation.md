@@ -11,7 +11,7 @@ U obrascu se nalazi lista zastavica/flagova za odabir tipova stavki za koje će 
 
 Ako nije unesena oznaka, izračun će procijeniti kamatu koja se odnosi na dane kašnjenja prisutne u rasponu postavljenih datuma.
 
-**Vrsta dokumenta** i **način plaćanja**: ovo su daljnji filtri za prepoznavanje stavki na kojima treba izvršiti obračun kamata.
+**Tip dokumenta** i **način plaćanja**: ovo su daljnji filtri za prepoznavanje stavki na kojima treba izvršiti obračun kamata.
 
 Omogućeno je i definiranje vrste stope koja se koristi u izračunu kamata:
 

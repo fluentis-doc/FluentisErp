@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 
 :::note Put
-**Administracija>Dospijeća plaćanja>Procedure>Kompenazcija dospjelih plaćanja**
+**Administracija > Dospijeća plaćanja>Procedure > Kompenazcija dospjelih plaćanja**
 
 Napomena:
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom funkcioniranju obrazaca, molimo se obratite sljedećoj poveznici:[Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
@@ -30,6 +30,6 @@ Parametri koji se postavljaju su oni iz predloška knjiženja koji će se korist
 
 I ovdje postoje "ladice" tj. (bočne kartice/tabovi) u kojima se također prikazuju dospijeća i nakon odabira (dvostrukim klikom ili određenom tipkom na traci izbornika) prebacuju se na glavne prikaze i zatim se može još lakše raditi s kompenzacijama.
 
-PAŽNJA, radnja s kompenzacijama je dovršena kada se obračuna. Tab/kartica Knjiženje je uključen kada se podudaraju vrijednosti stavki koje se kompenziraju. Stoga, u slučaju da se vrijednost (ili ostatak) stavki koje treba kompenzirati ne poklapa, potrebno je izmijeniti vrijednost stavke u stupcu **Iznos**, na taj način će stavka biti zatvorena za kompenzaciju samo za tu vrijednost (na primjer, od 2000 kompenzira se samo s 1000 što je vrijednost dospijeća suprotnog predznaka) i stoga će ostati otvoreno kao ostatak. Treba provjeravati je li polje **Razlika** na dnu obrasca na nuli.
+PAŽNJA, operacija se finalizira kada se proknjiži. Gumb za knjiženje (koji će djelovati samo na zatvaranje otvorenih stavki ako vrsta kompenzacije ne predviđa računovodstveni dio) aktivira se kada se vrijednosti otvorenih stavki za kompenzaciju podudaraju. Stoga, ako vrijednost (ili preostali iznos) otvorenih stavki koje se kompenziraju nije jednaka, potrebno je izmijeniti vrijednost stavke u stupcu Iznos. Na taj će način otvorena stavka biti zatvorena kompenzacijom samo za taj iznos (primjerice, stavka od 2.000 bit će kompenzirana samo za 1.000, što je vrijednost stavke suprotnog predznaka), dok će ostatak ostati otvoren. Provjerite da polje Razlika, pri dnu forme, bude jednako nuli.
 
-Pritiskom na tipku Knjiženje, generiraju se isplate.
+Pritiskom na gumb za knjiženje (uz mogućnost vraćanja/promjene) u sljedećoj kartici (Knjiženje) generirat će se plaćanja za zatvaranje otvorenih stavki i, ako vrsta kompenzacije to predviđa, računovodstvena knjiženja kompenzacije.

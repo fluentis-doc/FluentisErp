@@ -31,7 +31,7 @@ Ovim se može upravljati putem prilagođenih radnih procesa koji se posebno konf
 
 U zaglavlju je potrebno postaviti dva retka s uvjetima plaćanja, jedan red će voditi akontaciju, a drugi red će imati postavku za preostali postotak.
 
-Ovo će unijeti prisutnost roka plaćanja unaprijed koji će se poslati u računovodstvo putem odgovarajuće tipke **Stvarnje zrelosti unaprijed**
+Ovo će unijeti prisutnost roka plaćanja unaprijed koji će se poslati u računovodstvo putem odgovarajuće tipke **Kreiranj dospijeća plaćanja unaprijed**
 
 Pritiskom na ovu tipku otvara se obrazac u kojem se traže dva dodatna podatka: opis koji će se prijaviti ovakvom vođenju dospijeća i vrsta dokumenta koja će se povezati s ne knjiženom stavkom koja će se kreirati.
 
@@ -39,7 +39,7 @@ Rezultat će biti kreiranje vanbilančne stavke za iznos i istek naloga. Ova ope
 
 ### Upravljanje prethodnim dospijećima unutar forme
 
-U ovoj formi u prvoj kartici prodajne strane moguće je kreirati avansne artikle i za druge narudžbe kupaca i neovisno o kreiranju unutar narudžbe kupca ili artikle za isporuke prisutne u drugoj kartici. 
+U ovoj formi u prvoj kartici prodajne strane moguće je kreirati avansne stavke i za druge narudžbe kupaca i neovisno o kreiranju unutar narudžbe kupca ili stavke za isporuke prisutne u drugoj kartici. 
 
 Na kartici ***Napredno upravljanje*** može se vratiti prethodni unos koji se upravo stvorio. 
 

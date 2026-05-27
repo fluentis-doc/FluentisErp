@@ -29,7 +29,7 @@ Nakon odabira novčanog tijek, Fluentis će uzeti salda financijskih računa kak
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-1.png)
 
-Sve ostale vrijednosti bit će preuzete s bočne ploče *Novčani tijek*,  se pretražuje pomoću tipke ***Pretraga novčanog toka***, odabirom linija i njihovim dodavanjem pomoću tipke ***Stvoriti iz novčanog toka***.
+Sve ostale vrijednosti bit će preuzete s bočne ploče *Novčani tijek*, a pretražuje se pomoću tipke ***Pretraga novčanog toka***, odabirom linija i njihovim dodavanjem pomoću tipke ***Stvoriti iz novčanog toka***.
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-2.png)
 
@@ -58,11 +58,11 @@ Također je moguće ručno unijeti evidenciju dostupnosti ili prebrisati valutu 
 
 :::note OSTALA MREŽNA POLJA
 
-**Globalna kreditna linija**: : to je glavna postavka bankovnog registra
+**Globalna kreditna linija**: : to je glavna postavka iz šifarnika banke
 
-**Kreditna linija predujma**: ovo je postavka predujma bankovnog registra
+**Kreditna linija predujma**: ovo je postavka predujma iz šifarnika banke
 
-**Linija kredita SBF**: ovo je SBF postavka bankovnog registra
+**Linija kredita SBF**: ovo je SBF postavka iz šifarnika banke
 
 **Saldo predujmova**: predstavlja 'Stanje predujmova na fakturi', to je ukupni iznos predstavljen u obrascu za *predujmove i naplate* (s datumom dospijeća većim od 'danas')
 
@@ -80,7 +80,7 @@ Također je moguće ručno unijeti evidenciju dostupnosti ili prebrisati valutu 
 #### Donji prikaz
 U donji prikaz mogu se ručno umetnuti novi redovi, čak i bez povezivanja računa (na primjer za otkrivanje neračunovodstvenih troškova/prihoda kao što su plaće ili PDV koji treba platiti). 
 
-Polja koja se mogu uređivati su ona za *očekivani datum*, *redni broj*, *novčani iznos koji treba platiti*, flag *Isključeno* i *Sakrij*. 
+Polja koja se mogu uređivati su ona za *očekivani datum*, *redni broj*, *novčani iznos koji treba platiti*, flag *Isključeno* i *Sakriti*. 
 
 Linije postaju crvene kada polje Progresivan postane negativno.  
 
@@ -102,7 +102,7 @@ Krajnje desno polje ***računa*** je bankovni račun podrške (preuzeto iz dospi
 
 Flag **Isključeno** isključuje redak iz izračuna, a ostavlja ga vidljivim.
 
-Flag **Sakrij** također automatski postavlja flag *sakrij *, služi za ne brojanje retka i za njegovo sakrivanje  (putem filter flag-a u zaglavlju **Isključi skrivene**, uklanjanjem tog flag-a retci ponovno postaju vidljivi)
+Flag **Sakriti** također automatski postavlja flag *sakrij *, služi za ne brojanje retka i za njegovo sakrivanje  (putem filter flag-a u zaglavlju **Isključi skrivene**, uklanjanjem tog flag-a retci ponovno postaju vidljivi)
 
 Krajnja desna polja povezana su s [**Razinom autorizacije**](/docs/configurations/tables/finance/authorization-levels/) (**datum autorizacije, ime, opis, šifra, opis i napomena o autorizaciji**).
 

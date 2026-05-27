@@ -15,7 +15,7 @@ POLJA FILTRA:
 
 **Konto/podkonto:** odnosi se na odabir klijenta kao kupca/dobavljača
 
-**Agent:** služi za filtriranje agenta koji je u šifrarniku kupaca
+**Predstavnik:** služi za filtriranje agenta koji je u šifrarniku kupaca
 
 **Agent (dospijeća s opomenama):** filtrira dospijeća s agentom umetnutim u to dospijeće.
 

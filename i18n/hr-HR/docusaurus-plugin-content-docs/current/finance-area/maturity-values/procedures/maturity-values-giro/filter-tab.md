@@ -8,7 +8,7 @@ sidebar_position: 1
 | Traži | Tipka za traženje dospijeća koja se odnose na podkonto za prijenos na drugi podkonto.|
 | Knjiži | Tipka za knjiženje prijenosa između odabranih konta. |
 
-### GENERIČKA UPORABA
+### GENERALNA UPORABA
 
 Obrazac se sastoji od gornjeg dijela filtera unutar kojeg je obavezno naznačiti podkonto na kojem se traže stavke za prijenos, prikaz za odabir stavki i na dnu postavka predloška knjiženja. Tu su još datumi unosa/obračuna i podkonto na kojem se predmeti ponovno otvaraju. Konkretno, predložak knjiženja mora uključivati i oznaku otvaranja i zatvaranja dospijeća. Rezultat će biti otkrivanje zatvaranja stavki odabranih za ponovno otvaranje, uz zadržavanje istih izvornih referenci, ali na odredišnom podkontu.
 
