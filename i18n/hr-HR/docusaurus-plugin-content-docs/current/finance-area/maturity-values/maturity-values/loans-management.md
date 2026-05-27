@@ -1,19 +1,19 @@
 ---
-title: Upravljanje bankarskim kreditima
+title: Upravljanje kreditima
 sidebar_position: 2
 ---
 
 ### Uvod
 
-Iz ovog obrasca moguće je pretraživati i unositi nove naplative hipoteke.
+Iz ove forme moguće je pretraživati i unositi nove pasivne kredite (hipoteke).
 
-Upravljanje pasivnom hipotekom omogućuje detaljan unos svih relevantnih podataka, posebice plana otplate hipoteke, kako bi se naknadno pristupilo automatskom obračunu plaćanja obroka u predviđenim rokovima.
+Upravljanje omogućuje detaljan unos svih relevantnih podataka, posebice plana otplate, kako bi se naknadno pristupilo automatskom obračunu plaćanja obroka u predviđenim rokovima.
 
-Glavna polja prikazana u maski također su prisutna u detaljima.
+Glavna polja prikazana u formi također su prisutna u detaljima.
 
-Za unos nove hipoteke pritisnite **Novo**.
+Za unos nove hipoteke/kredita pritisnite **Novo**.
 
-Prvi obvezni podatak koji se upisuje je vrsta hipoteke, preko kombiniranog okvira koji upućuje na konkretnu tablicu Vrste hipoteka (dostupnoj i desnom tipkom i naredbom Otvori obrazac).
+Prvi obvezni podatak koji se upisuje je vrsta kredita, preko kombiniranog okvira koji upućuje na konkretnu tablicu Vrste kredite (dostupnoj i desnom tipkom i naredbom Otvori obrazac).
 
 ### Tablica vrsta kredita
 
@@ -22,7 +22,7 @@ Prvi obvezni podatak koji se upisuje je vrsta hipoteke, preko kombiniranog okvir
 
 **Vrsta opisa bankovnog zajma**: prošireni opis podataka;
 
-**Vrsta tijeka / opis**: polje za prisjećanje (u tablici *Vrste financijskog tijeka*) koja vrsta financijskog tijeka koja se odnosi na obradu novčanog tijeka će se kombinirati s ratama hipoteke, tako da se mogu automatski prikazati u obradi novčanog tijeka; 
+**Vrsta tijeka / opis**: polje za odabir (u tablici **Vrste financijskog toka**) vrste financijskog toka koji će biti povezan s ratama kredita u obradi Cash Flow-a, kako bi se one mogle automatski prikazivati u obradi novčanog toka.
 
 **Predložak**: računovodstveni predložak kombiniran kako bi se omogućilo automatsko obračunavanje rata.
 :::
@@ -32,7 +32,7 @@ Prvi obvezni podatak koji se upisuje je vrsta hipoteke, preko kombiniranog okvir
 Ostala obavezna polja su opis ugovora i glavni računi za kasnije računovodstvene operacije
 
 - Banka: za unos bankovnog računa na koji će se uplate rate;
-- Debit: za unos debitnog računa s kojeg će biti otkazana **otplata glavnice** (npr. "Hipotekarne obveze");
+- Dug: za unos ugnog računa s kojeg će biti otkazana **otplata glavnice** (npr. "Hipotekarne obveze");
 - Kamate: za unos računa na koji će se obračunavati kamata svake rate;
 - Troškovi: za unos računa na koji će se obračunavati provizija ili drugi troškovi svake rate;
 
@@ -40,11 +40,11 @@ Druga važna polja su plaćeni iznos, valuta (osobito ako se razlikuje od eura, 
 
 **APR:** kamatna stopa koja se obračunava na hipoteku, podaci se koriste u postupku automatskog izračuna otplatnog plana.
 
-Polje Verzija povezano je s tipkom  **Nova verzija** koji se nalazi u obrascu za pretraživanje koji omogućuje, čak i nakon umetanja amortizacijskog plana i obračuna nekih rata, izmjene u planu historiziranjem prethodne situacije.  
+Polje Verzija povezano je s tipkom  **Nova verzija** koji se nalazi u obrascu za pretraživanje koji omogućuje, čak i nakon umetanja amortizacijskog plana i obračuna nekih rata, izmjene u planu arhiviranjem prethodne situacije.  
 
-U detaljnu mrežu upisuje se amortizacijski plan koji se sastoji od svih očekivanih obroka, popunjavanja datuma (koji će biti uključeni u računovodstveni postupak), dijela kapitala i dijela kamata te pripadajućih provizija (u stupcu **Trošak**)
+U pregled detalja upisuje se amortizacijski plan koji se sastoji od svih očekivanih obroka, popunjavanja datuma (koji će biti uključeni u računovodstveni postupak), dijela kapitala i dijela kamata te pripadajućih provizija (u stupcu **Trošak**)
 
-Sljedećim stupcima, označenim plavom bojom, upravlja Fluentis kako bi se istaknuo ukupni iznos rate, računovodstvo provedeno korištenjem odgovarajuće procedure i referenca na generirani računovodstveni zapis.
+Sljedećim stupcima, označenim plavom bojom, upravlja Fluentis kako bi se istaknuo ukupni iznos rate, knjiženje provedeno korištenjem odgovarajuće procedure i referenca na generirani računovodstveni zapis.
 
 ### Postupci dostupni na traci izbornika
 

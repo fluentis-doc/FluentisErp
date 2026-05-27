@@ -1,13 +1,13 @@
 ---
-title: Grupiraj dospijeća plaćanja
+title: Grupiranje dospijeća plaćanja
 sidebar_position: 3
 ---
 
-Pretraživanje provedeno pomoću ovog obrasca mora se koristiti, umjesto funkcije pretraživanja podudaranja, u prisustvu grupiranja podudaranja.
+Pretraživanje izvršeno ovom formom treba koristiti umjesto funkcionalnosti pretraživanja otvorenih stavki kada postoje grupiranja otvorenih stavki.
 
 Upravljanje dospijećima kroz grupiranje predstavlja alternativnu i posebnu metodologiju u odnosu na klasičnu, te zahtijeva specifičnu vizualizaciju kako bi se dobila jasna situacija.
 
-Za daljnje  **[detalje o grupiranju dospijeća pogledajte ovdje](/docs/finance-area/ledger-records/records/ledger-record)**
+Za daljnje **[detalje o grupiranju dospijeća pogledajte ovdje](/docs/finance-area/ledger-records/records/ledger-record)**
 
 Ispis koji odgovara ovoj funkciji pretraživanja također se naziva **[Grupiranje dospijeća](/docs/finance-area/maturity-values/reports/maturity-value-grouping)**.
 
