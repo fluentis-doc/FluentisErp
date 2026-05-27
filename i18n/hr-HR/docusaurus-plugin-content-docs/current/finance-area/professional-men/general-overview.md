@@ -10,7 +10,7 @@ Iz ovog modula vrši se evidentiranje dugova za razne poreze koji se trebaju pla
 
 - Pretraživanje i upravljanje naknadama: Omogućuje unos, izmjenu i pregled naknada, s mogućnošću brisanja pogrešnih i upravljanja isplatama akontacija na masovni način, izbjegavajući ručne izmjene pojedinih naknada​.
 
-- Knjiženje kompenzacija: Naknade se mogu knjižiti izravno, kako za porezni dio (zadržavanja, INPS, ENASARCO), tako i za upravljanje centrima troška i profita tvrtke. Konačne naknade se zatim unose u računovodstvo​.
+- Knjiženje naknada: Naknade se mogu knjižiti izravno, kako za porezni dio (zadržavanja, INPS, ENASARCO), tako i za upravljanje centrima troška i profita tvrtke. Konačne naknade se zatim unose u računovodstvo​.
 
 - Model F24 (Modello F24): Modul upravlja izračunom i popunjavanjem modela F24 za uplatu zadržavanja i drugih poreza, s mogućnošću automatskog predlaganja potrebnih podataka zahvaljujući informacijama unesenim u naknade​.
 

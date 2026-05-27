@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Pomoću ovog ispisa moguće je izdvojiti podatke o izvršenim isplatama naknada, kako bi se dobio sažetak podataka koji se odnose na izvršene poreze po odbitku kako bi se upravljalo isplatom s obrascem F24 ili radi provjera u kontekstu jedinstvenu certifikaciju primatelja i naknadni model 770.
 
-Postoje dva različita izgleda ispisa koja se mogu odabrati putem kombiniranog okvira u gornjem lijevom kutu: prvi "Potvrda o porezu po odbitku" slijedi komunikaciju u slobodnom obliku koja je bila poslana primateljima do nedavnog uvođenja jedinstvene potvrde, dok drugi "Situacija s porezom po odbitku" " predstavlja kao kontrolni popis.
+Postoje dva različita izgleda ispisa koja se mogu odabrati putem *combo boxa* u gornjem lijevom kutu: prvi "Potvrda o porezu po odbitku" slijedi komunikaciju u slobodnom obliku koja je bila poslana primateljima do nedavnog uvođenja jedinstvene potvrde, dok drugi "Situacija s porezom po odbitku" " predstavlja kao kontrolni popis.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image01.png)
 
@@ -18,8 +18,6 @@ Podaci o obavijesti o naknadama.
 - Obavijest o rasponu datuma
 
 - Obavijest o rasponu brojeva
-
-- Split
 
 - Porezni broj
 

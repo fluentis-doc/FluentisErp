@@ -3,7 +3,7 @@ title: Prethodni
 sidebar_position: 4
 ---
 
-Iz prethodne kartice moguće je nastaviti s otkazivanjem provedenog obračuna. Otkaz će biti moguć samo ako se razdoblje još može mijenjati (ispisivanje dnevnika i zatvaranje računa nije izvršeno). Dupli klik u odjeljku evidencije omogućit će vam pregled relevantnog računovodstvenog zapisa.
+Iz prethodne kartice moguće je nastaviti s otkazivanjem provedenog obračuna. Otkazivanje će biti moguće samo ako se razdoblje još može mijenjati (ispisivanje dnevnika i zatvaranje računa nije izvršeno). Dupli klik u odjeljku evidencije omogućit će vam pregled relevantnog računovodstvenog zapisa.
 
 
 

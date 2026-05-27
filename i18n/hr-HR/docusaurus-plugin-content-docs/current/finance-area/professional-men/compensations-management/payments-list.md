@@ -5,15 +5,15 @@ sidebar_position: 3
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/payments-list/image01.png)
 
-**Gornja rešetka**: predstavlja postavku uvjeta plaćanja kako je predloženo putem referentnog agenta ili registra dobavljača, ili koji se mogu umetnuti ili izmijeniti izravno u ovom obrascu. Također postoje polja za unos prateće banke primatelja (u slučaju plaćanja bankovnom doznakom) ili naše tvrtke (na primjer u slučaju Ri.Ba. plaćanja).  
+**Gornji prikaz**: predstavlja postavku uvjeta plaćanja kako je predloženo putem referentnog agenta ili šifarnika dobavljača, ili koji se mogu umetnuti ili izmijeniti izravno u ovom obrascu. Također postoje polja za unos prateće banke primatelja (u slučaju plaćanja bankovnom doznakom) ili naše tvrtke (na primjer u slučaju Ri.Ba. plaćanja).  
 
 
 
-**Donja rešetka**: predstavlja popis datuma dospijeća za plaćanje izračunat na temelju uvjeta gornje rešetke.
+**Donji prikaz**: predstavlja popis datuma dospijeća za plaćanje izračunat na temelju uvjeta gornje rešetke.
 
-Stavka koja će se otvoriti za spremanje naknade (također u obliku obavijesti o naknadi) može se blokirati za plaćanje aktiviranjem **flag Ne plativo** i može se dodati povezana bilješka.
+Stavka koja će se otvoriti za spremanje naknade (također u obliku obavijesti o naknadi) može se blokirati za plaćanje aktiviranjem flag **ne plativo** i može se dodati povezana bilješka.
 
-Radnja je potpuno slična rešetki prisutnoj u **[prvim unosima bilješki](/docs/finance-area/ledger-records/records/ledger-record)** na koje se upućuje.
+Radnja je potpuno slična formi prisutnoj u **[unosu zapisa](/docs/finance-area/ledger-records/records/ledger-record)** na koje se upućuje.
 
  
 

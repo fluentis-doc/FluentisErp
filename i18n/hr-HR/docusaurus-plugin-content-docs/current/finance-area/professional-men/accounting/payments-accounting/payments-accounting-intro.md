@@ -9,7 +9,7 @@ LINK:
 
 **[Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)**
 
-**[Povratak](/docs/finance-area/professional-men/accounting/payments-accounting/previous)**
+**[Povrat](/docs/finance-area/professional-men/accounting/payments-accounting/previous)**
 
  
 

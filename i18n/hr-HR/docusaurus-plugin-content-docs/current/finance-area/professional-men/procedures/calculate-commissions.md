@@ -1,5 +1,5 @@
 ---
-title: Izračunajte provizije
+title: Izračun provizija
 sidebar_position: 2
 ---
 

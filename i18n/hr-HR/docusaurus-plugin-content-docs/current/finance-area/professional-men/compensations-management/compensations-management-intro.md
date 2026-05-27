@@ -21,7 +21,7 @@ sidebar_position: 1
 
  
 
-Iz ovog obrasca nastavljate s učitavanjem/izmjenom dokumenta primljenog od stručnjaka ili agenta, **u slučaju privremene notule i konačne fakture: razlika između toga dvoje, zapravo, odnosit će se samo na trenutno ili naknadno umetanje (dakle ulazak u izmjene već zabilježenog privremenog dokumenta) polja koja se odnose na broj i datum konačnog dokumenta.**
+Iz ovog obrasca nastavljate s učitavanjem/izmjenom dokumenta primljenog od vanjskog predstavnika ili agenta, **u slučaju privremenog obračuna i konačne fakture: razlika između toga dvoje, zapravo, odnosit će se samo na trenutno ili naknadno umetanje (dakle ulazak u izmjene već zabilježenog privremenog dokumenta) polja koja se odnose na broj i datum konačnog dokumenta.**
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image01.png)
 
@@ -29,11 +29,11 @@ Iz ovog obrasca nastavljate s učitavanjem/izmjenom dokumenta primljenog od stru
 
 ### **POLJA ZAGLAVLJA**:
 
-**Primatelj**: odnosi se na unos nositelja podračuna naknade: u ovo polje mogu se unijeti samo podračuni s vrstom računa agenta ili dobavljača koji imaju oznaku poreza po odbitku postavljenu u šifarniku.
+**Primatelj**: odnosi se na unos nositelja podkonta naknade: u ovo polje mogu se unijeti samo konta s vrstom konta agenta ili dobavljača koji imaju oznaku poreza po odbitku postavljenu u šifarniku.
 
 Sljedeći statusni flagovi (otvoriti expander) su: 
 
-**Uračunato**: njime automatski upravlja aplikacija u trenutku obračuna naknade. Nakon što je ova zastavica postavljena, kompenzacija se više ne može mijenjati.  **Plaćeno zadržavanje**: primijenit će se na naknadu ručno ili kroz postupak  **[Plaćanja po odbitku](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)** koji se može izvesti iz maske za pretraživanje naknade. 
+**Uračunato**: njime automatski upravlja aplikacija u trenutku obračuna naknade. Nakon što je ova zastavica postavljena, naknada se više ne može mijenjati. **Plaćeno zadržavanje**: primijenit će se na naknadu ručno ili kroz postupak  **[Plaćanja po odbitku](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)** koji se može izvesti iz maske za pretraživanje naknade. 
 
 **Certifikat**: automatski ga postavlja program kada se zadržani certifikati definitivno ispisuju.
 
@@ -41,7 +41,7 @@ Sljedeći statusni flagovi (otvoriti expander) su:
 
  
 
-Povezano s podračunom agenta ili dobavljača, može se unaprijed definirati **vrsta poreza** po odbitku koji će se predložiti prilikom učitavanja naknade (veza se definira u registru agenta ili dobavljača).
+Povezano s podkonto agenta ili dobavljača, može se unaprijed definirati **vrsta poreza** po odbitku koji će se predložiti prilikom učitavanja naknade (veza se definira u registru agenta ili dobavljača).
 
 Sljedeće polje za **bilješke** omogućuje vam da zapišete referentni tekst naknade: to je bilješka koja će se zatim prijaviti u detaljnim bilješkama svih računovodstvenih kretanja povezanih s ovom kompenzacijom. 
 
@@ -67,7 +67,7 @@ Primjer: šifra A = samozaposleni rad koji se obavlja uobičajeno; Q = provizije
 
  
 
-**Projekt** (bivši radni nalog): služi za povezivanje naknade s projektom (prodajni radni nalog): to može biti slučaj procjene na gradilištu kojim se upravlja na temelju radnog naloga. Ako **[računovodstveni predložak](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** koji se koristi u računovodstvu za kompenzaciju ima aktivnu oznaku projekti (ex narudžbe), tada će troškovi uneseni u ovu kompenzaciju biti dodijeljeni projektu (narudžbi) umetnutom u ovo polje.
+**Projekt** (bivši radni nalog): služi za povezivanje naknade s projektom (prodajni radni nalog): to može biti slučaj procjene na gradilištu kojim se upravlja na temelju radnog naloga. Ako **[računovodstveni predložak](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** koji se koristi u računovodstvu za naknadu ima aktivnu oznaku projekti (ex narudžbe), tada će troškovi uneseni u ovu kompenzaciju biti dodijeljeni projektu (narudžbi) umetnutom u ovo polje.
 
 **Mjenjačnica / Datum valute / Valuta**: povezano s upravljanjem valutom i pripadajućim podacima o mjenjaču preuzetim iz mjenjačke tablice (valuta se postavlja iz registra agenta/dobavljača).
 
@@ -87,9 +87,9 @@ Primjer: šifra A = samozaposleni rad koji se obavlja uobičajeno; Q = provizije
 
 **Ostalo**: njime se upravlja kao iznosom koji podliježe zadržavanju (ali korisnik može prisiliti ovu postavku): to su obično naknade troškova na dnu popisa uključene u naknadu, koje mogu, ali ne moraju biti predmetom zadržavanja i obično su ne podliježe PDV-u.  
 
-Prilikom spremanja kompenzacije, kontrolne poruke će se izvršiti u slučaju da vrijednost stavke ne odgovara ukupnom iznosu za plaćanje, kao i neuspjeh u balansiranju podataka u troškovno-profitnom centru. 
+Prilikom spremanja naknade, kontrolne poruke će se izvršiti u slučaju da vrijednost stavke ne odgovara ukupnom iznosu za plaćanje, kao i neuspjeh u balansiranju podataka u troškovno-profitnom centru. 
 
-Nakon što se izvrši obračun kompenzacije, više neće biti moguće mijenjati podatke o kompenzaciji: u slučaju da je obračun proveden. plaćanja ili Enasarco, međutim, reference na konačni broj/datum dokumenta, opis kretanja i podračun umetnut u mrežu s detaljima moći će se mijenjati.
+Nakon što se izvrši obračun naknade, više neće biti moguće mijenjati podatke o naknadi: u slučaju da je obračun proveden. Plaćanja ili Enasarco, međutim, reference na konačni broj/datum dokumenta, opis kretanja i podračun umetnut u mrežu s detaljima moći će se mijenjati.
 
 Ako je naknada spremljena i ima definitivan datum i broj dokumenta, moći će se nastaviti s obračunom preko tipke  **Knjiži i zatvori** na traci izbornika: otvorit će se obrazac u kojem će predloženi datumi biti zadnji važeći za PDV registar povezan s predloškom koji je povezan s korištenom vrstom poreza po odbitku.
 
@@ -101,7 +101,7 @@ Dostupni su neki ispisi koji se mogu izvesti pomoću naredbi koje se nalaze na t
 *Specifični tipke*:  
 > **Parametri umetanja**: u korisničkim parametrima moguće je definirati mora li nova naknada ponovno predložiti isti podračun kao trenutni, istu vrstu poreza po odbitku, kako upravljati novim datumom dokumenta i na kraju kako upravljati raspon ekonomskih obračunskih datuma (kraj financijske godine - tj. konačni datum bit će jednak kraju financijske godine, dnevni - tj. konačni datum jednak početnom datumu, bez datuma za vrstu računa usluga - tj. obvezno će zahtijevati umetanje oba datuma ako je vrsta unesenog podračuna postavljena kao 'Usluga');   
 > **Knjiži i zatvori**: aktivno kada su uneseni konačni datum i broj dokumenta, omogućuje vam da izvršite obračun naknade;   
-> **Novi detalj**: attiva il cursore nell'inserimento di una nuova riga di dettaglio del compenso;  
+> **Novi detalj**: aktivira kursor pri unosu novog retka detalja naknade;
 > **Izbriši detalj**: briše linije detalja odabrane u kompenzaciji;   
 > **Izračunaj vrijednosti**: vrši ponovni izračun vrijednosti poreza po odbitku na temelju podataka unesenih u retke detalja.  
 

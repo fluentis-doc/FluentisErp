@@ -1,9 +1,9 @@
 ---
-title: Troškovni/Profitni centar
+title: Centri troška/profita 
 sidebar_position: 6
 ---
 
-Kartice troškovnih/profitnih centara omogućuju vam da poboljšate troškovni centar (i/ili dobit - ne koristi se ako je aktivno upravljanje naprednim kontrolingom) s unesenim troškovima.
+Kartice troškovnih/profitnih centara omogućuju vam da poboljšate praćenje troškovnog centra (i/ili dobit - ne koristi se ako je aktivno upravljanje naprednim kontrolingom) s unesenim troškovima.
 
 
 
