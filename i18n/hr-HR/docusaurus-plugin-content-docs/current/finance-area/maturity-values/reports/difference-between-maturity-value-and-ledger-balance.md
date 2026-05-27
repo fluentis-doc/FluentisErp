@@ -3,12 +3,12 @@ title: Razlika između dospijeća plaćanja i glavne knjige
 sidebar_position: 5
 ---
 
-Ispis koji se može pokrenuti iz ovog obrasca odgovara sadržaju prikaza na ekranu koji se može dobiti pomoću obrasca **[Razlika između otvorenih partija i računovodstvenog salda.](/docs/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance)**
+Ispis koji se može pokrenuti iz ovog obrasca odgovara sadržaju prikaza na ekranu koji se može dobiti pomoću obrasca **[Razlika između otvorenih stavaka i glavne knjige.](/docs/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance)**
 
 Ovaj ispis služi za traženje stavaka (razlika) između stanja otvorenih stavaka i stanja glavne knjige za svakog kupca i dobavljača, s ciljem kako bi se takve stavke ispravile. Ove razlike mogu nastati od pogrešaka u vođenju glavne knjige ili računovodstvenih zapisa (nedostatak usklađenosti između računovodstvenog kretanja i otvaranja stavki ili naplate/plaćanja i zatvaranja stavke).
 
 :::danger BILJEŠKA:
-U slučaju **primatelja**,  ako se primijeni kriterij izlaganja otvorenih partija umanjenih za porez na dohodak (u parametrima [tipa poreza na dohodak](/docs/configurations/tables/finance/withholding-tax-types)),  razlike koje će biti prikazane trebaju se ignorirati (i ne smatrati greškama), uzimajući u obzir da će biti apsorbirane prilikom plaćanja naknade i zatvaranja odgovarajuće partije.
+U slučaju **primatelja naknade**, ako se primijeni kriterij izlaganja otvorenih stavaka umanjenih za porez na dohodak (u parametrima [tipa poreza na dohodak](/docs/configurations/tables/finance/withholding-tax-types)), razlike koje će biti prikazane trebaju se ignorirati (i ne smatrati greškama), uzimajući u obzir da će biti apsorbirane prilikom plaćanja naknade i zatvaranja odgovarajuće partije.
 :::
 
 

@@ -1,5 +1,5 @@
 ---
-title: Izvještaj starenja Kupaca/Dobavljača
+title: Izvještaj dospijeća Kupaca/Dobavljača
 ---
 
 Ovaj poseban ispis osmišljen je kako bi na prvi pogled pružio situaciju, i dobavljačima i kupcima, o sastavu isteklih stavaka plaćanja prema vremenskim kategorijama.

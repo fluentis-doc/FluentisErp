@@ -3,13 +3,13 @@ title: Grupiraj dospijeća plaćanja
 sidebar_position: 2
 ---
 
-Ispis koji se pokreće iz ovog obrasca treba se koristiti umjesto drugih ispisa modula, kao što su Popis partija, Izvod za otvorene partije i Pregled rokova za klijente / dobavljače, u prisutnosti grupiranja partija.
+Ispis pokrenut iz ove forme treba koristiti umjesto ostalih ispisa modula, kao što su Lista otvorenih stavki, Izvod otvorenih stavki i Dospijeća kupaca/dobavljača, kada postoje grupiranja otvorenih stavki.
 
 Upravljanje dospijećima kroz grupiranje predstavlja alternativnu i posebnu metodologiju u odnosu na klasičnu, te zahtijeva specifičnu vizualizaciju kako bi se dobila jasno čitljiva situacija.
 
-Za daljnje **[detalje o grupiranju utakmica pogledati ovdje](/docs/finance-area/ledger-records/records/ledger-record)**
+Za daljnje **[detalje o grupiranju otvorenih stavaka pogledati ovdje](/docs/finance-area/ledger-records/records/ledger-record)**
 
-Ispis odgovara funkciji  **[prikaza na ekranu grupiranih partija.](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping)**
+Ispis odgovara funkciji **[prikaza na ekranu grupiranih stavaka.](/docs/finance-area/maturity-values/maturity-values/maturity-value-grouping)**
 
 
 Polja filtera obrasca slijede ona predviđena za pokretanje [**ostalih ispisa obrasca za otvorene stavke**](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).

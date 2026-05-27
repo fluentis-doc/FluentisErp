@@ -6,26 +6,26 @@ sidebar_position: 1
 
 Modul otvorenih stavki u Fluentis ERP upravlja dugovanjima i potraživanjima, olakšavajući praćenje uplata i prihoda. Dostupan putem Administracija > Dospijeća plaćanja, omogućuje izradu, izmjenu i grupiranje stavki ručno ili automatski iz računovodstvenih dokumenata.
 
-Glavne funkcionalnosti 
+**Glavne funkcionalnosti**
 
-    Upravljanje otvorenim stavkama: Kreaizradacija, izmjena i blokiranje/otključavanje otvorenih stavaka uz automatsko praćenje datuma i korisnika.
+    Upravljanje otvorenim stavkama: Kreiranje, izmjena i zaključavanje/otključavanje otvorenih stavki uz automatsko praćenje datuma i korisnika.
     Povezivanje s novčanim tokom: Automatska povezanost s bankovnim kontima i korištenje predviđenog datuma za točne financijske prognoze.  
-    Spajanje i podjela: Mogućnost grupiranja ili razdvajanja otvorenih stavaka za pojednostavljeni rad.  
+    Grupiranje i podjela: Mogućnost grupiranja ili razdvajanja otvorenih stavaka za pojednostavljeni rad.  
     Računovodstvena povezanost: Povezivanje ručno kreiranih otvorenih stavaka s računovodstvenim knjiženjima, održavajući usklađenost podataka.  
 
 **Dostupni izvještaji**
 
-    Izvod stanja otvorenih stavki: Prikazuje stanje otvorenih stavki za svakog klijenta ili dobavljača.
-    Izvještaj o starenju (*Aging Report*): Razdvaja stavke na one koje su prošle rok i one koje dolaze, kako bi se procijenili novčani tokovi. 
-    Kalendar plaćanja klijenata/dobavljača: Praćenje rokova temeljenih na različitim parametrima (datum, status, tip dokumenta).
-    Pisma za opomenu: Automatizira slanje opomena za nepodmirene stavke. 
-    Razlika između računovodstvenog salda (glavne knjige) i otvorenih stavki: Provjerava eventualne nejednakosti između računovodstvenog zapisa i stavki.
+    Konto kartica otvorenih stavki: Prikazuje stanje otvorenih stavki za svakog klijenta ili dobavljača.
+    Izvještaj dospijeća Kupaca/Dobavljača (*Aging Report*): Razdvaja stavke na one koje za koje je prošao rok i one koje dolaze, kako bi se procijenili novčani tokovi. 
+    Pregled otvorenih stavaka kupaca/dobavljača: Praćenje rokova temeljenih na različitim parametrima (datum, status, tip dokumenta).
+    Opomene za zakašnjelo plaćanje: Automatizira slanje opomena za nepodmirene stavke. 
+    Razlika između glavne knjige i otvorenih stavki: Provjerava eventualne nejednakosti između računovodstvenog zapisa i stavki.
 
 **Glavne procedure**
 
     Kompenzacija otvorenih stavaka: *Izravnavanje* otvorenih stavaka između kupaca i dobavljača, sa zatvaranjem otvorenih pozicija. 
     Izračun zakašnjenih Kamata: Automatsko upravljanje kamatama za kašnjenja u plaćanjima.
-    Automatsko kreiranje podsjetnika: Masovno generiranje podsjetnika za neplaćene otvorene stavke.
+    Automatsko izdavanje opomena: Masovno generiranje podsjetnika za neplaćene otvorene stavke.
     Povezivanje računovodstvenih zapisa: Povezivanje otvorenih stavaka s računovodstvenim zapisima za potpunu kontrolu.
     Upravljanje povezanim plaćanjima: Kreiranje novih otvorenih stavaka na temelju već postojećih plaćanja.
 

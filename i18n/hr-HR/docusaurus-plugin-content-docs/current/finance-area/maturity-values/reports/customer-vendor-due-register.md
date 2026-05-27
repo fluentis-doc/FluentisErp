@@ -25,7 +25,7 @@ Na vrhu obrasca nalaze se različiti filteri s osnovnim podacima:
 
 **Valuta**: filtrirajte prema valuti u kojoj su dospijeća denominirana (ekvivalentne vrijednosti u eurima također će biti prikazane u ispisu).  
 
-**Agent**: filtrirajte agenta povezanog sa stavkama (samo na strani klijenta).
+**Predstavnik**: filtrirajte agenta povezanog sa stavkama (samo na strani klijenta).
 
 **Banka**: filter po banci vezanoj uz otvorenu stavku.   
 
