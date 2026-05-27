@@ -17,13 +17,13 @@ Ili
 
  Za detalje pogledati:   
 
-**[Izlazna prodajna dokumentacija](/docs/finance-area/sdi-documents/outgoing-sales-documents)**
+**[Izlazni e-dokumenti](/docs/finance-area/sdi-documents/outgoing-sales-documents)**
 
-**[Dokumenti za dolaznu kupnju](/docs/finance-area/sdi-documents/incoming-purchase-documents)**
+**[Ulazni e-dokumenti](/docs/finance-area/sdi-documents/incoming-purchase-documents)**
 
 Odlazna PDV komunikacija  
 
-**[Odlazni strani dokument](/docs/finance-area/sdi-documents/outgoing-foreign-purchase-documents)**
+**[Izlazni inozemni e-dokumenti](/docs/finance-area/sdi-documents/outgoing-foreign-purchase-documents)**
 
 ---
 

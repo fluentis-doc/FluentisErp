@@ -1,10 +1,10 @@
 ---
-title: Dokumenti za dolaznu kupnju
+title: Ulazni e-dokumenti
 sidebar_position: 3
 ---
 
 
-U Fluentisu je moguće, nakon što je usluga Fluentis Business Hub konfigurirana, primati fakture koje dolaze od dobavljača i prolaze kroz Exchange System. Jedan od načina za pregled ovih dokumenata je upravljanje fakturama u funkciji **Dokumenti za dolaznu kupnju**. Obrazac za upravljanje podijeljen je na odjeljak zaglavlja, s poljima filtra za pretraživanje dokumenata i prikazom rezultata.
+U Fluentisu je moguće, nakon što je usluga Fluentis Business Hub konfigurirana, primati fakture koje dolaze od dobavljača i prolaze kroz Exchange System. Jedan od načina za pregled ovih dokumenata je upravljanje fakturama u funkciji **Ulazni e-dokumenti**. Obrazac za upravljanje podijeljen je na odjeljak zaglavlja, s poljima filtra za pretraživanje dokumenata i prikazom rezultata.
 
 - **Status e-dokumenta**: označava stanje dokumenta nakon što je preuzet u Fluentis. Može biti *Nedodijeljeno*, kada faktura još nije povezana s računovodstvenom registracijom ili s fakturom izdanom iz pasivnog ciklusa ili dokumentom izdanim prema primatelju, ili *Primljeno*, kada je faktura povezana.  
 - **Tip**: tip vrste dokumenta (ulazni račun).
@@ -16,19 +16,18 @@ U Fluentisu je moguće, nakon što je usluga Fluentis Business Hub konfigurirana
 *Specifične tipke:*
 
 > **Pogled**: omogućuje pregled odabranog XML dokumenta otvaranjem *Registar Sdi dokumenata* gdje je moguće vidjeti izvršene radnje na dokumentu, preuzeti privitke i povezati SdI datoteku s nabavkama, knjiženjima ili primateljima. Za više informacija o tim postupcima, pogledajte [odjeljak 1](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
-> **Otvori fakturu**: omogućeno je samo ako je odabrani dokument u stanju *Primljeno* i otvara računovodstvenu registraciju/dokument nabave/naknadu kojoj je XML datoteka povezana.     
+> **Otvori dokument**: omogućeno je samo ako je odabrani dokument u stanju *Primljeno* i otvara računovodstveno knjiženje/dokument nabave/naknadu kojoj je XML datoteka povezana.     
 > **Preuzmi privitak**: preuzima odabranu XML datoteku.    
 > **Uvezi XML datoteku**: automatski otvara prozor u kojem se mogu odabrati datoteke za uvoz u registar SDI dokumenata.     
-> **Parametri za kreiranje registracija**:  omogućuje postavljanje parametara za kreiranje registracije. Za više informacija pogledajte [odjeljak 2](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
-> **Kreiranje registracije**: omogućuje automatsko kreiranje računovodstvene registracije na temelju primljene XML datoteke. Za više informacija pogledajte [odjeljak 3](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
-> **Kreiranje fakture nabave**:  omogućuje kreiranje fakture nabave na temelju XML datoteke. Nakon kreiranja fakture, Fluentis automatski povezuje odgovarajuću primku nabave ili narudžbenicu dobavljača, ako su prisutni. Za više informacija pogledajte [odjeljak 4](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
-> **Kreiranje naknade**: omogućuje kreiranje naknade na temelju XML dokumenta. Za nastavak, potrebno je da odabrani Dobavljač (ili Agent) ima aktivirani flag *Porez po odbitku*. 
+> **Parametri stvaranja registracija**:  omogućuje postavljanje parametara za kreiranje knjiženja. Za više informacija pogledajte [odjeljak 2](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
+> **Kreiraj zapis**: omogućuje automatsko kreiranje knjiženja na temelju primljene XML datoteke. Za više informacija pogledajte [odjeljak 3](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
+> **Izrada ulaznog računa**:  omogućuje kreiranje fakture nabave na temelju XML datoteke. Nakon kreiranja fakture, Fluentis automatski povezuje odgovarajuću primku nabave ili narudžbenicu dobavljača, ako su prisutni. Za više informacija pogledajte [odjeljak 4](/docs/finance-area/sdi-documents/incoming-purchase-documents).    
 
 
 ### 1. Uspoređivanje elektroničkih ulaznih računa
 
 Nakon pretrage ulaznih dokumenata, pomoću funkcije **Pogled** ili dvostrukim klikom na datoteku kojom se upravlja, moguće je kombinirati XML datoteku s računovodstvenim unosom ili dokumentom, klikom na redak koji se odnosi na XML datoteku, ulaskom u dijalog za upravljanje datotekama i korištenjem funkcija:
-- **Dodijelite kupnjama**
+- **Dodijelite nabavi**
 - **Dodijelite knjiženjima**
 - **Dodijelite profesionalcima**
 
@@ -94,7 +93,7 @@ Postupiti na sljedeći način:
 
 ### 4. Izrada računa za kupnju i izvršenje otpremnice/primke i narudžbe
 
-Iz primljenog XML dokumenta moguće je automatski stvoriti odgovarajući račun za kupovinu pomoću tipke **Kreiranje računa za kupovinu**.
+Iz primljenog XML dokumenta moguće je automatski stvoriti odgovarajući ulazni račun pomoću tipke **Izrada ulaznog računa**.
   
 Nakon što se pritisne ovaj gumb, Fluentis će analizirati datoteku i, koristeći OIB isporučitelja, pronaći odgovarajući podračun dobavljača. Moguće situacije su slične onima iz prethodnog dijela.     
 
@@ -107,18 +106,18 @@ Ako je ovo prva faktura koju primate od ovog dobavljača i u njegovom šifarniku
 
 Svaka od ovih vrsta podataka omogućava opciju spremanja odabrane postavke, kako bi je mogli ponovo koristiti za fakture koje će se kasnije primiti od istog dobavljača.
 
-Nakon potvrde podataka, otvorit će se upravo stvorena faktura za kupovinu.   
+Nakon potvrde podataka, otvorit će se upravo stvorena ulazna faktura.   
 Prilikom spremanja fakture, Fluentis provodi pretragu u primkama ili neizvršenim narudžbama od dobavljača kako bi nastavio s automatskim izvršenjem.
 
-#### 4.1 Povezivanje fakture s primkom ili narudžbom za kupovinu
+#### 4.1 Povezivanje fakture s primkom ili narudžbom za nabavu
 
 Kada se nova faktura spremi, Fluentis automatski pokreće pretragu primki ili narudžbi koje je potrebno povezati s fakturom. Ako pronađe primku ili narudžbu koju treba povezati s cijelom fakturom ili s pojedinim stavkama, označava dokument (ili stavku dokumenta) kao izvršen i unosi u fakturu referencu na primku ili narudžbu u odgovarajuća polja. Prioriteti pretrage su sljedeći:
-1.	Pretraga primki za kupovinu koje imaju isti datum i isti broj dokumenta naznačen u XML datoteci (ili s istim vrijednostima u poljima *Naša Referenca* i/ili *Vaša referenca*). Ako se pronađe primka s tim podacima, nastavlja se provjera artikala (prvo prema šifri artikla, zatim prema opisu). Ako i artikli odgovaraju onima unesenima na fakturi, izvršit će se ispunjavanje, eventualno parcijalno, primke.  
+1.	Pretraga primki koje imaju isti datum i isti broj dokumenta naznačen u XML datoteci (ili s istim vrijednostima u poljima *Naša Referenca* i/ili *Vaša referenca*). Ako se pronađe primka s tim podacima, nastavlja se provjera artikala (prvo prema šifri artikla, zatim prema opisu). Ako i artikli odgovaraju onima unesenima na fakturi, izvršit će se ispunjavanje, eventualno parcijalno, primke.  
 2. Pretraga se provodi u svim neizvršenim primkama koje su na ime istog dobavljača s fakture, a rezultati se sortiraju prema datumu i pretražuju po stavkama artikla. Artikli na fakturi mogu biti povezani s različitim primkama.  
 3.	Ako postoje neizvršene primke za dobavljača, ali neke (ili sve) stavke ne mogu biti povezane s fakturom, bit će prikazan obrazac za *ručno povezivanje*. 
-4.	Ako ne postoje primke za kupovinu za dobavljača, pretraga će se obaviti na narudžbama dobavljača počinjući s podacima narudžbe za kupovinu: traži se narudžba koja ima isti datum i broj dokumenta kao ID dokumenta naveden u XML datoteci (ili s istim vrijednostima u poljima *Naša Referenca* i/ili *Vaša Referenca*). Ako se narudžba identificira, nastavit će se s provjerom artikala prema *Referenci broja stavke*; in caso di esito negativo effettuerà una ricerca per codice e poi per descrizione articolo.
+4.	Ako ne postoje primke za dobavljača, pretraga će se obaviti na narudžbama dobavljača počinjući s podacima narudžbe za nabavu: traži se narudžba koja ima isti datum i broj dokumenta kao ID dokumenta naveden u XML datoteci (ili s istim vrijednostima u poljima *Naša Referenca* i/ili *Vaša Referenca*). Ako se narudžba identificira, nastavit će se s provjerom artikala prema *Referenci broja stavke*; in caso di esito negativo effettuerà una ricerca per codice e poi per descrizione articolo.
 5.	Ako se ne identificira odgovarajuća narudžba, provodi se pretraga svih neizvršenih narudžbi na ime dobavljača s fakture, a zatim se uspoređuje pojedinačna stavka artikla. Faktura može obraditi više narudžbi.  
 6.	Ako nije moguće izvršiti povezivanje neke (ili svih) stavki, otvorit će se obrazac za *Ručno povezivanje*. U suprotnom, narudžba će biti označena kao *Ispunjeno* (ili *Djelomično ispunjeno*) i stavke artikla na fakturi sadržavat će referencu na identificiranu narudžbu.  
 
-Obrazac za **Ručno povezivanje** otvara se u slučajevima kada se izvršenje ne može automatski obaviti nakon kreiranja fakture ili kada se klikne tipka *Sdi – Zatvaranje dokumenata* na traci izbornika fakture za kupovinu.    
-U ovom obrascu bit će prikazane sve narudžbe i primke za kupovinu na ime dobavljača koje još nisu izvršene, kako bi korisnik mogao ručno označiti, za svaku stavku artikla na fakturi, odgovarajuću primku ili narudžbu.
+Obrazac za **Ručno povezivanje** otvara se u slučajevima kada se izvršenje ne može automatski obaviti nakon kreiranja fakture ili kada se klikne tipka *Sdi – Zatvaranje dokumenata* na traci izbornika ulazne fakture.    
+U ovom obrascu bit će prikazane sve narudžbe i primke na ime dobavljača koje još nisu izvršene, kako bi korisnik mogao ručno označiti, za svaku stavku artikla na fakturi, odgovarajuću primku ili narudžbu.

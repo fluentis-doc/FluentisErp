@@ -1,5 +1,5 @@
 ---
-title: Odlazni inozemni dokumenti o kupnji
+title: Izlazni inozemni e-dokumenti
 sidebar_position: 5
 ---
 :::tip[Napomena]

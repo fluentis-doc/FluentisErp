@@ -1,9 +1,9 @@
 ---
-title: Kreiranje ulaznog računa iz XML-a
+title: Izrada ulaznog računa iz XML-a
 sidebar_position: 4
 ---
 
-**Kreiranje ulaznog računa** dostupno je na alatnoj traci unutar menija SDI (ES), kojem se može pristupiti putem Alati > BizLink > ES Dokumenti > Dokumenti za dolaznu kupnju.  
+**Izrada ulaznog računa** dostupno je na alatnoj traci unutar menija SDI (ES), kojem se može pristupiti putem Alati > BizLink > ES Dokumenti > Dokumenti za dolaznu kupnju.  
 
 :::note Napomena
 Za aktivaciju tipke potrebno je u SQL tablici fluentis.SDI_CompanyConfiguration postaviti flag SDICFC_PurchaseInvoiceCreation.

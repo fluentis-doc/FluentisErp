@@ -1,9 +1,9 @@
 ---
-title: Izlazna prodajna dokumentacija
+title: Izlazni e-dokumenti
 sidebar_position: 2
 ---
 
-Obrazac “**Izlazna prodajna dokumentacija**“ podijeljen je u dva dijela, zaglavlje koje sadrži polja za filtriranje koja se mogu koristiti za filtriranje dokumenata i prikaza rezultata provedenog pretraživanja:  
+Obrazac “**Izlazni e-dokumenti**“ podijeljen je u dva dijela, zaglavlje koje sadrži polja za filtriranje koja se mogu koristiti za filtriranje dokumenata i prikaza rezultata provedenog pretraživanja:  
 
 ## Tipke na traci izbornika:
 
