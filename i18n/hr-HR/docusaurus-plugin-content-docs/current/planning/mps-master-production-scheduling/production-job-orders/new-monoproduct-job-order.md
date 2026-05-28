@@ -1,5 +1,5 @@
 ---
-title: Radni nalog jednoproizvoda
+title: Radni nalog monoproizvoda
 sidebar_position: 4
 ---
 
@@ -11,7 +11,7 @@ Obrazac se otvara putem putanje  **Planiranje > Proizvodne narudžbe** klikom na
 > [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona s baznom strukturom proizvoda za artikl;   
 > [Proizvodni ciklus](/docs/erp-home/registers/production/routes/new-route): omogućuje prikaz radnog ciklusa i pripadajućih faza proizvodnje za artikl.
 
-## Upravljanje narudžbama jednoproizvoda
+## Upravljanje narudžbama monoproizvoda
 
 Unutar ovog obrasca se navode glavni podaci koje mora sadržavati proizvodna narudžba.
 

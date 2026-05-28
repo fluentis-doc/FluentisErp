@@ -15,7 +15,7 @@ Za otvaranje detalja dokumenta, dovoljno je odabrati dokument i dvaput kliknuti 
 
 Na temelju statusa narudžbe (npr. planirana, izvršna itd.), redak narudžbe će imati različitu boju. Boje koje se mogu pridružiti statusu narudžbe određuju se unutar [Parametara MPS](/docs/configurations/parameters/production/mps-parameters), u sekciji *Boje narudžbi*.  
 
-Također, iz ovog obrasca moguće je *kreirati nove narudžbe*, kako  **jednoproizvode** tako i **multiproizvode** klikom na odgovarajuće gumbe u *traci izbornika*: [Umetni narudžbu ](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) i [Umetni višeproizvodnu narudžbu](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
+Također, iz ovog obrasca moguće je *kreirati nove narudžbe*, kako  **monoproizvode** tako i **multiproizvode** klikom na odgovarajuće gumbe u *traci izbornika*: [Umetni narudžbu ](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) i [Umetni višeproizvodnu narudžbu](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
 
 Dvostruki klik na jednu od narudžbi u rezultatnoj mreži omogućit će ulazak u detalje te narudžbe, čiji će se podaci detaljnije istražiti u člancima  *Unos nove jednoproizvodne narudžbe* i *Unos nove višeproizvodne narudžbe*.
 

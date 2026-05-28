@@ -21,7 +21,7 @@ Prije nastavka, molimo pogledajte kako je naznačeno na sljedećim stranicama u 
 > **Proširite obračun troškova**: omogućuje raspakiranje stabla dokumenata već stvorenog cijenjenja.  
 
 :::note NAPOMENA
-Kartica **Obračun troškova** (koja se odnosi na cijenjenje troškova) prisutna je u upravljanju kako jednoproizvodnim tako i višeproizvodnim narudžbama; u slučaju višeproizvodnih narudžbi, cijenjenje će uzeti u obzir sve artikle prisutne u toj narudžbi.  
+Kartica **Obračun troškova** (koja se odnosi na cijenjenje troškova) prisutna je u upravljanju kako monoproizvodnim tako i multiproizvodnim narudžbama; u slučaju višeproizvodnih narudžbi, cijenjenje će uzeti u obzir sve artikle prisutne u toj narudžbi.  
 ::: 
 
 U gornjem dijelu obrasca nalazi se mreža koja sadrži popis svih pokrenutih valorizacija za tu narudžbu, dok se na desnoj strani prikazuju opće informacije o odabranoj narudžbi.   

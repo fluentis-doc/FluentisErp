@@ -1,5 +1,5 @@
 ---
-title: Planirani nalozi
+title: Planirani nalozi (narudžbe)
 sidebar_position: 3
 ---
 

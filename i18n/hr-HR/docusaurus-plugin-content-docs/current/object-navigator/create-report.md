@@ -3,7 +3,7 @@ title: Izrada izvješća
 sidebar_position: 3
 ---
 
-XtraReport je alat za izvješćivanje, integriran u Fluentis, za generiranje izvješća namijenjenih krajnjem korisniku.
+XtraReport je alat za izvještavanje, integriran u Fluentis, za generiranje izvješća namijenjenih krajnjem korisniku.
 
 • Izrada izvješća 
 

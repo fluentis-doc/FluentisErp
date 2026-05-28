@@ -1,5 +1,5 @@
 ---
-title: Articoli MPS
+title: Artikli MPS
 sidebar_position: 1
 ---
 

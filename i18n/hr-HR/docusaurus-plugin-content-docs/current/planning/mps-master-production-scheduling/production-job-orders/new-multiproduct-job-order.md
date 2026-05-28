@@ -1,9 +1,9 @@
 ---
-title: Radni nalog s više proizvoda
+title: Radni nalog s multiproizvoda
 sidebar_position: 5
 ---
 
-Obrazac se otvara putem staze  **Planiranje > Proizvodne narudžbe** klikom na gumb  **Unesi višeproizvodnu narudžbu** u obrascu **Proizvodne narudžbe**.
+Obrazac se otvara putem staze  **Planiranje > Proizvodne narudžbe** klikom na gumb  **Unesi multiproizvodnu narudžbu** u obrascu **Proizvodne narudžbe**.
 
 ## Posebni gumbi
 
@@ -11,13 +11,13 @@ Obrazac se otvara putem staze  **Planiranje > Proizvodne narudžbe** klikom na g
 > [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona s materijalnom specifikacijom artikla;  
 > [Proizvodni ciklusi](/docs/erp-home/registers/production/routes/new-route): omogućuje pregled radnog ciklusa i pripadajućih faza proizvodnje artikla.  
 
-## Upravljanje radnim nalozima s više proizvoda
+## Upravljanje radnim nalozima s multiproizvodima
 
-Ova kartica izgleda isto kao ona na zaslonu za [Unos narudžbi s jednim proizvodom](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
+Ova kartica izgleda isto kao ona na zaslonu za [Unos narudžbi s monoproizvodom](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
 
 *Osnovna razlika* je u tome što ne postoji odjeljak u kojem se unosi artikl s njegovim relevantnim podacima kao što je to slučaj kod kreiranja narudžbe s jednim proizvodom, već je taj prostor zamijenjen mrežom koja omogućuje unos ne jednog, već više artikala budući da se radi o narudžbi s više proizvoda.   
 
-Polja prisutna u mreži su ista kao i u narudžbi s [jednim proizvodom](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); jedina razlika je polje **Progresivno** koje je polje koje korisnik može uređivati, u kojem se predlaže progresivni redak *Narudžbe za proizvodnju s više proizvoda* te planirani datumi početka/završetka, predloženi datum i datum početka i završetka plana se specificiraju za svaki artikl prisutan u narudžbi s više proizvoda (ostaje dio Predviđeni datum i Stvarni datum koji se odnosi na ukupno stanje narudžbe s više proizvoda).
+Polja prisutna u mreži su ista kao i u narudžbi s [jednim proizvodom](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); jedina razlika je polje **Progresivno** koje je polje koje korisnik može uređivati, u kojem se predlaže progresivni redak *Narudžbe za proizvodnju s više (multi) proizvoda* te planirani datumi početka/završetka, predloženi datum i datum početka i završetka plana se specificiraju za svaki artikl prisutan u narudžbi s više proizvoda (ostaje dio Predviđeni datum i Stvarni datum koji se odnosi na ukupno stanje narudžbe s više proizvoda).
 
 ### Referencije narudžbi kupaca
 

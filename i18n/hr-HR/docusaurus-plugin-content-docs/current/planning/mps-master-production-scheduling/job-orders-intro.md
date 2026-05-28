@@ -1,43 +1,45 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-La gestione della **Generazione delle commesse** di produzione consente di creare ordini di lavoro basati su diversi input come ordini clienti, previsioni di vendita, sottoscorta e necessità di magazzino.    
-L'utente può configurare vari parametri per ottimizzare il processo, selezionando gli ordini rilevanti e impostando criteri specifici per la produzione.         
-Questo sistema facilita la pianificazione delle attività produttive, permettendo di scegliere tra diverse modalità operative, come commesse mono o multi prodotto, e di organizzare il lavoro in base a priorità definite. È anche possibile aggiornare commesse esistenti o creare nuove commesse basate su esigenze specifiche di approvvigionamento e distribuzione.        
-L'approccio flessibile alla **Generazione delle commesse** aiuta a garantire che la produzione corrisponda alle esigenze di mercato e alle priorità aziendali, ottimizzando la gestione delle risorse e migliorando l'efficienza operativa complessiva.
+Upravljanje **Generiranjem proizvodnih naloga** omogućuje kreiranje radnih naloga na temelju različitih ulaznih podataka kao što su narudžbe kupaca, prognoze prodaje, minimalne zalihe i potrebe skladišta.
+Korisnik može konfigurirati različite parametre za optimizaciju procesa, odabirom relevantnih narudžbi i postavljanjem specifičnih kriterija za proizvodnju.
 
-## Moduli dell'area 
+Ovaj sustav olakšava planiranje proizvodnih aktivnosti, omogućujući odabir između različitih operativnih načina rada, poput jednoartikalskih ili višeartikalskih naloga, te organizaciju rada prema definiranim prioritetima. Također je moguće ažurirati postojeće naloge ili kreirati nove na temelju specifičnih potreba nabave i distribucije.
+
+Fleksibilan pristup **Generiranju proizvodnih naloga** pomaže osigurati da proizvodnja odgovara tržišnim zahtjevima i poslovnim prioritetima, optimizirajući upravljanje resursima i poboljšavajući ukupnu operativnu učinkovitost.
+
+## Moduli područja 
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     Commesse di produzione
-        <p><Link to="/docs/planning/mps-master-production-scheduling/job-order-creation" className="bold-link">Generazione commesse di produzione</Link></p>
-        <p>Consente di creare commesse di produzione basate su ordini clienti, previsioni, sottoscorta e necessità di magazzino.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders" className="bold-link">Commesse di produzione</Link></p>
-        <p>Permette di visualizzare i dati di testata di tutte le commesse di produzione.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders-detail" className="bold-link">Commesse di produzione (dettagli)</Link></p>
-        <p>Consente visualizzare i dati di testata e anche quelli relativi gli articoli presenti all'interno delle commessa di produzione.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order" className="bold-link">Commesse monoprodotto</Link></p>
-        <p>Consente gestire commesse di produzione dedicate ad un unico articolo.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order" className="bold-link">Commesse multiprodotto</Link></p>
-        <p>Consente gestire commesse di produzione con il raggruppamento di più articoli legati allo stesso cliente o progetto.</p>
-        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/valorization" className="bold-link">Costificazione</Link></p>
-        <p>Permette di calcolare i costi associati alla produzione, evidenziando costi preventivi e consuntivi. </p>
+###     Proizvodni nalozi
+        <p><Link to="/docs/planning/mps-master-production-scheduling/job-order-creation" className="bold-link">Generiranje proizvodnih naloga</Link></p>
+        <p>Omogućuje kreiranje proizvodnih naloga na temelju narudžbi kupaca, prognoza, minimalnih zaliha i potreba skladišta.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders" className="bold-link">Proizvodni nalozi</Link></p>
+        <p>Omogućuje prikaz zaglavnih podataka svih proizvodnih naloga.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders-detail" className="bold-link">Proizvodni nalozi (detalji)</Link></p>
+        <p>Omogućuje prikaz zaglavnih podataka kao i podataka o artiklima koji se nalaze unutar proizvodnog naloga.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order" className="bold-link">Nalozi monoproizvoda</Link></p>
+        <p>Omogućuje upravljanje proizvodnim nalozima namijenjenima jednom artiklu.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order" className="bold-link">Nalozi multiproizvoda</Link></p>
+        <p>Omogućuje upravljanje proizvodnim nalozima s grupiranjem više artikala povezanih s istim kupcem ili projektom.</p>
+        <p><Link to="/docs/planning/mps-master-production-scheduling/production-job-orders/valorization" className="bold-link">Obračun troškova.</Link></p>
+        <p>Omogućuje izračun troškova povezanih s proizvodnjom, uz prikaz planskih i stvarnih troškova. </p>
     </div>
 </div> 
 
-## Per iniziare ad utilizzare   
+## Za početak korištenja   
 
-le **Commesse di produzione**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) 
-- definire i [*Tipi documento*](/docs/configurations/tables/production/documents-types/)  
-- definire i [*Parametri MS*](/docs/configurations/parameters/production/mps-parameters/)   
+**Proizvodni nalozi**:
+- ckreirati artikle u [*Šifarniku artikala*](/docs/erp-home/registers/items/create-new-item) 
+- definirati [*Vrste dokumenta*](/docs/configurations/tables/production/documents-types/)  
+- definirati [*Parametre MS*](/docs/configurations/parameters/production/mps-parameters/)   
 
-## Collegamenti con altri moduli 
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item), agli [*Ordini clienti*](/docs/sales/sales-orders/settings) e alle **Previsioni di vendita**.
+## Povezanost s drugim modulima.
+Oni su usko povezani s [*Šifarnikom artikala*](/docs/erp-home/registers/items/create-new-item), s [*Narudžbama kupaca*](/docs/sales/sales-orders/settings) i s **Prognozama prodaje**.
 
 
