@@ -3,7 +3,7 @@ title: Ispravak artikla
 sidebar_position: 4
 ---
 
-Ova procedura koristi se za retifikaciju određenog artikla. Obrazac prikazuje mrežu koja mijenja svoje stupce na temelju unesenih filtera za pretraživanje. Obrazac ne dopušta masovne retifikacije, stoga su promjene onemogućene ako je mreža popunjena s više rezultata. Promjena količine može se izvršiti putem gumba u donjem dijelu ili izravno mijenjanjem vrijednosti u mreži.
+Ova procedura koristi se za ispravak određenog artikla. Obrazac prikazuje formu koja mijenja svoje stupce na temelju unesenih filtera za pretraživanje. Obrazac ne dopušta masovne promjene, stoga su promjene onemogućene ako je forma popunjena s više rezultata. Promjena količine može se izvršiti putem gumba u donjem dijelu ili izravno mijenjanjem vrijednosti u mreži.
 
 **Parametri utovara/istovara** trebaju se unijeti u tablicu [Parametri punjenja/pražnjenja po korisniku](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 

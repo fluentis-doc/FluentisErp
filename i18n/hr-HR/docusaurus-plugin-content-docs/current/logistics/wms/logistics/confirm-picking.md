@@ -1,5 +1,5 @@
 ---
-title: Potvrdite Odabir
+title: Potvrdite Slaganje robe
 sidebar_position: 7
 ---
 
