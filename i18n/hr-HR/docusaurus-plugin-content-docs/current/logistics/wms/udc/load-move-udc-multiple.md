@@ -1,5 +1,5 @@
 ---
-title: Učitaj/pomakni više transportnih jedinica
+title: Učitaj/pomakni više utovarnih jedinica
 sidebar_position: 3
 ---
 

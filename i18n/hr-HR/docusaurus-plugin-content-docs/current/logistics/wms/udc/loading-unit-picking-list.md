@@ -1,5 +1,5 @@
 ---
-title: Lista preuzimanja / Pakirna Lista
+title: Lista za preuzimanje
 sidebar_position: 4
 ---
 

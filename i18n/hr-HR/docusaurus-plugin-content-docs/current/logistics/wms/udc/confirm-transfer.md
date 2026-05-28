@@ -1,5 +1,5 @@
 ---
-title: Potvrdi prijenos transportne jedinice
+title: Potvrdi prijenos utovarne jedinice
 sidebar_position: 6
 ---
 

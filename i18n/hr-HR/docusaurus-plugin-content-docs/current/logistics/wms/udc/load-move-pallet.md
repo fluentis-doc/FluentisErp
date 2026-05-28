@@ -1,5 +1,5 @@
 ---
-title: Utovar/Premještanje transportne jedinice
+title: Utovar/Premještanje utvoarne jedinice
 sidebar_position: 2
 ---
 
@@ -14,4 +14,4 @@ Ova procedura koristi se za čitanje jedinice utovara kako bi se nastavilo s *Ut
 
 Parametri su uneseni dva puta jer obrazac koristi i uzrok za utovar i uzrok za istovar.
 
-Za sve informacije o tome kako kodirati barkodove za čitanje u polju **kod Barkoda** pogledajte stranicu o [Barkod tokenizator](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Za sve informacije o tome kako kodirati barkodove za čitanje u polju **šifra Barkoda** pogledajte stranicu o [Barkod tokenizator](/docs/configurations/tables/general-settings/barcode-tokenizer).

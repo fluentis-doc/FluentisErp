@@ -1,5 +1,5 @@
 ---
-title: Liste za prijenos jedinica
+title: Liste za prijenos utovarnih jedinica
 sidebar_position: 5
 ---
 
