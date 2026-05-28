@@ -1,13 +1,13 @@
 ---
-title: Attivare visualizzazione Fluent per MES
+title: Aktivacija prikaza za Fluentis MES
 sidebar_position: 2
 ---
 
-Per poter utilizzare la modalità di visualizzazione Fluent, creata per ottimizzare la visualizzazione bordo macchina di Fluentis MES, è necessario eseguire i seguenti passaggi:
+Za korištenje kreirano za optimizaciju prikaza Fluentis MES-a na proizvodnim terminalima, potrebno je izvršiti sljedeće korake:
 
- - Cliccare sull'ingranaggio sulla parte sinistra dello schermo 
- - Aprire le impostazioni
- - Selezionare la visualizzazione Fluent
+- Kliknite na kotačić na lijevoj strani ekrana
+- Otvorite postavke
+- Odaberite Fluent prikaz
 
-A questo punto Fluentis verrà aperto con la visualizzazione Fluent.
+U ovom trenutku Fluentis će se otvoriti u Fluentis načinu prikaza.
 
