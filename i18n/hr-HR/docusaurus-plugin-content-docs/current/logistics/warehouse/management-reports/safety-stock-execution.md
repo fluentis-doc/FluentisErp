@@ -3,7 +3,7 @@ title: Sigurnosna zaliha
 sidebar_position: 4
 ---
 
-Ova funkcija se nalazi u putanji **Logistika > Skladište > Upravljanje ispisima > Sigurnosna zaliha** i omogućuje operateru da provjeri stanje zaliha kako bi ih mogao pravilno upravljati. Posebno je moguće, nakon što se odgovarajuće popuni opis artikla, upitati sustav radi pronalaska artikala koji će u budućnosti imati malu zalihu. Također je moguće, nakon izvođenja postupka, automatski generirati narudžbe za nabavu u pravilno vrijeme za artikle koji imaju malu zalihu.
+Ova funkcija se nalazi u putanji **Logistika > Skladište > Izvještaji upravljanja > Sigurnosna zaliha** i omogućuje operateru da provjeri stanje zaliha kako bi ih mogao pravilno upravljati. Posebno je moguće, nakon što se odgovarajuće popuni opis artikla, upitati sustav radi pronalaska artikala koji će u budućnosti imati malu zalihu. Također je moguće, nakon izvođenja postupka, automatski generirati narudžbe za nabavu u pravilno vrijeme za artikle koji imaju malu zalihu.
 
 **Tablice i parametri**
 

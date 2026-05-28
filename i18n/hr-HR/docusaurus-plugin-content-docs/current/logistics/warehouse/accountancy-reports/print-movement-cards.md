@@ -1,9 +1,9 @@
 ---
-title: Izvještaj o karticama prometa
+title: Izvještaj o pregledu prometa
 sidebar_position: 2
 ---
 
-Izvještaj se nalazi na putanji  **Logistika > Skladište > Financijski ispisi > Pregled prometa** i omogućuje korisniku izvlačenje izvješća s informacijama o promjenama u skladištu. Postoji niz filtara i parametara za dobivanje željenog ispisa.
+Izvještaj se nalazi na putanji  **Logistika > Skladište > Izvještaji računovodstva > Pregled prometa** i omogućuje korisniku izvlačenje izvješća s informacijama o promjenama u skladištu. Postoji niz filtara i parametara za dobivanje željenog ispisa.
 
 U ovom obrascu moguće je filtrirati prema skladištu, uzroku, artiklu, eventualnoj varijanti, itd. Zadano, izvještaj ne izvlači promjene koje nisu od fiskalnog interesa. Međutim, mogu se izdvojiti aktiviranjem pripadajuće oznake.
 

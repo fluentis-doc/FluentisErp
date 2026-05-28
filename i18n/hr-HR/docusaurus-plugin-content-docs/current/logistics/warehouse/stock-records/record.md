@@ -4,17 +4,17 @@ sidebar_position: 3
 ---
 
 Ovaj obrazac se otvara:  
-- putem putanje **Logistika > Skladište > Evidencija > Nova evidencija**  
+- putem putanje **Logistika > Skladište > Zapisi > Novi zapis**  
 ili    
-- klikom na gumb **Novo** na obrascu pretraživanje **Evidencija**.
+- klikom na gumb **Novo** na obrascu pretraživanje **Zapis**.
 
-## Automatsko stvaranje evidencija
+## Automatsko stvaranje zapisa
 
-Evidencije skladišta mogu se automatski stvarati putem *postupaka učitavanja* dostavnica, faktura nabave, primitaka robe, putem postupaka *pražnjenja* otpremnica, fakture prodaje, liste izdavanja robe, liste preuzimanja materijala, primopredajnih lista za rad na osnovu naloga, ili putem *postupaka evidentiranja proizvodnih naloga i povrata rada*. 
+Zapisi skladišta mogu se automatski stvarati putem *postupaka učitavanja* dostavnica, faktura nabave, primki, putem postupaka *pražnjenja* otpremnica, fakture prodaje, liste izdavanja robe, liste preuzimanja materijala, primopredajnih lista za rad na osnovu naloga, ili putem *postupaka evidentiranja proizvodnih naloga i povrata rada*. 
 
-## Ručno stvaranje evidencije 
+## Ručno stvaranje zapisa 
 
-Korisnik također može ručno unijeti evidencije skladišta, postavljajući sve potrebne podatke ovisno o vrsti artikla i vrsti uzroka koje se odluči koristiti.
+Korisnik također može ručno unijeti zapise skladišta, postavljajući sve potrebne podatke ovisno o vrsti artikla i vrsti uzroka koje se odluči koristiti.
 
 Prozor za novu evidenciju skladišta sastoji se od 2 kartice: **Evidencija** i **Protustavka**.
 

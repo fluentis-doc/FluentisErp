@@ -3,7 +3,7 @@ title: Indeks rotacije
 sidebar_position: 3
 ---
 
-Izvješće se nalazi na putanji **Logistika > Skladište > Upravljanje ispisima> Indeks rotacije** i omogućuje korisniku upit bazi podataka kako bi izvukao sažetak artikala i njihovog indeksa rotacije.
+Izvješće se nalazi na putanji **Logistika > Skladište > Izvještaji upravljanja > Indeks rotacije** i omogućuje korisniku upit bazi podataka kako bi izvukao sažetak artikala i njihovog indeksa rotacije.
 
 Indeks rotacije skladišta, ili stopa rotacije skladišta, predstavlja omjer između prosječne količine robe u skladištu (poznate kao prosječna zaliha) tijekom određenog vremenskog razdoblja i količine prodane u istom razdoblju. 
 

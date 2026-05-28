@@ -1,9 +1,9 @@
 ---
-title: Artikli koji nisu pomični
+title: Artikli bez kretanja (prometa)
 sidebar_position: 1
 ---
 
-Izvještaj se nalazi na putanji **Logistika > Skladište > Upravljanje ispisima > Artikli bez prometa** i omogućuje korisniku jednostavno ispitivanje sustava i brzo izvlačenje informacija o artiklima koji nisu pomičeni u skladištu. Ovaj izvještaj omogućuje stvaranje logističkih statistika o artiklima.
+Izvještaj se nalazi na putanji **Logistika > Skladište > Izvještaji upravljanja > Artikli bez prometa** i omogućuje korisniku jednostavno ispitivanje sustava i brzo izvlačenje informacija o artiklima koji nisu pomičeni u skladištu. Ovaj izvještaj omogućuje stvaranje logističkih statistika o artiklima.
 
 Nakon unosa željenih filtera moguće je ispisati standardne ili prilagođene izvještaje (nakon mapiranja u upravljanju ispisima). Ako želite ispisati prilagođeni izvještaj, potrebno je odabrati isti iz kartice u parametrima ispisa.
 

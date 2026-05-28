@@ -1,5 +1,5 @@
 ---
-title: Mapiranje lokacija po Artiklima
+title: Mapiranje lokacija po artiklima
 sidebar_position: 3
 ---
 

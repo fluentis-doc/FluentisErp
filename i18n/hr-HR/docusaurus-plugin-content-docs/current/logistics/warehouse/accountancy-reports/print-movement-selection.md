@@ -1,9 +1,9 @@
 ---
-title: Odabir kretnji
+title: Odabir knjiženja
 sidebar_position: 1
 ---
 
-Izvješće se nalazi na putanji **Logistika > Skladište > Financijska izvješća > Odabir kretnji** i prikazuje popis pokreta dobara iz skladišta.
+Izvješće se nalazi na putanji **Logistika > Skladište > Izvještaji računovodstva > Odabir knjiženja** i prikazuje popis knjiženja dobara iz skladišta.
 
 Nakon što se unesu željeni filtri, moguće je ispisati standardno izvješće ili prilagođeno izvješće (prethodno mapirano u upravljanju ispisima). Ako želite ispisati prilagođeno izvješće, odaberite isto u kartici parametara ispisa.
 
