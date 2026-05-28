@@ -1,5 +1,5 @@
 ---
-title: Vizualizacija prebacivanja transportnih jedinica
+title: Vizualizacija prebacivanja utovarnih jedinica
 sidebar_position: 3
 ---
 

@@ -15,7 +15,7 @@ Obavezni podaci za unos su:
 **Korisnik koji potvrđuje**: unesite zaposlenika koji ima pravo potvrditi listu.
 
 Nakon unosa potrebnih podataka moguće je spremiti listu preuzimanja.
-Pomoću gumba na gornjem izbirniku **pomoć transportna jedinica** moguće je otvoriti prozor u kojem možete odabrati UDC-e za preuzimanje.  
+Pomoću gumba na gornjem izborniku **Pomoć utovarna jedinica** moguće je otvoriti prozor u kojem možete odabrati UDC-e za preuzimanje.  
 Pretraživanje može biti izvršeno na jedinicama tereta povezanim s narudžbama kupaca (omogućavanjem zastavice **Traži narudžbe prodaje**), pa za svaku narudžbu kupca možemo vidjeti artikle koji je čine i jesu li ti artikli prethodno uneseni unutar jedinice tereta. Jednom kada odaberete UDC-ove od interesa, oni se dodaju na listu.    
 Alternativno, onemogućavanjem zastavice **Traži narudžbe prodaje**, jedinice tereta mogu biti pretražene među svima stvorenima, čak i ako nisu povezane s narudžbom kupca, i na isti način mogu biti odabrane i dodane na našu listu preuzimanja.   
 U prikazu *Detalj* pojavit će se samo UDC-ovi u stanju preuzimanja, nakon čega je moguće spremiti listu i zatvoriti je.  
@@ -24,7 +24,7 @@ Povratkom na ekran *Pretraživanje Picking liste*, lista će biti prisutna sa st
 *Posebni gumbi:*
 > **Račun**: stvara račun iz odabrane Liste; u izlaznom prozoru potreban je [Tip Računa](/docs/configurations/tables/sales/invoices-type) koji treba stvoriti i eventualno grupiranje koje treba primijeniti; račun se već stvara kao *Preuzmi* (kako bi se izbjegao rizik dvostrukog preuzimanja).      
 > **Otpremnica**: stvara Otpremnicu iz odabrane *Liste*; u izlaznom prozoru potreban je [Tip Otpremnice](/docs/configurations/tables/sales/delivery-notes-type) koji treba stvoriti i eventualno grupiranje koje treba primijeniti; Otpremnica se već stvara kao *Preuzeta* (kako bi se izbjegao rizik dvostrukog preuzimanja).   
-> **Upravljanje Transportnom jedinicom**: odabirom *Liste preuzimanja* ei klikom na ovaj gumb otvara se prozor **Upravljanje Transportnom jedinicom** u kojem su utovarne jedinice iz liste prethodno filtrirane. U ovom prozoru utovarne jedinice se mogu upravljati u skladištu s različitim gumbovima na traci s vrpcama.
+> **Upravljanje utovarnom jedinicom**: odabirom *Liste preuzimanja* ei klikom na ovaj gumb otvara se prozor **Upravljanje utovarnom jedinicom** u kojem su utovarne jedinice iz liste prethodno filtrirane. U ovom prozoru utovarne jedinice se mogu upravljati u skladištu s različitim gumbovima na traci s vrpcama.
 
 Za sve informacije o korištenju ove forme iz WMS-a pogledajte [Liste preuzimanja/Packing liste](/docs/logistics/wms/udc/loading-unit-picking-list)
 

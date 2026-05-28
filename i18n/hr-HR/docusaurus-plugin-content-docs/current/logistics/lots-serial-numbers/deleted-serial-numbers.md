@@ -1,5 +1,5 @@
 ---
-title: Otkazani serijski brojevi
+title: Otkazani/obrisani serijski brojevi
 sidebar_position: 9
 ---
 

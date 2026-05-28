@@ -1,5 +1,5 @@
 ---
-title: Stvorite lot iz lota i Stvorite lot iz lota s promjenama artikla
+title: Kreiranje lota iz lota i kreiranje lota iz lota uz promjenu artikla.
 sidebar_position: 5
 ---
 

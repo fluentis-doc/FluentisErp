@@ -1,5 +1,5 @@
 ---
-title: Pretraga Komisioniranja
+title: Pretraga Slaganja robe
 sidebar_position: 2
 ---
 

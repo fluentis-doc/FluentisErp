@@ -1,11 +1,11 @@
 ---
-title: Liste za premještaj transportnih jedinica (verzije WPF i WMS)
+title: Liste za premještaj utovarnih jedinica (verzije WPF i WMS)
 sidebar_position: 2
 ---
 
 ### Liste za transfer UDC-a (verzija WPF) 
 
-**Liste za premještaj transportnih jedinica** su vrlo slične [Listama za preuzimanje UDC / Packing liste](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), s razlikom da se koriste za premještanje UDC unutar vlastitih skladišta, dok se **Liste za podizanje transportnih jedinica/ Packing liste** koriste kada se roba šalje kupcu.      
+**Liste za premještaj utovarnih jedinica** su vrlo slične [Listama za preuzimanje UDC / Packing liste](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), s razlikom da se koriste za premještanje UDC unutar vlastitih skladišta, dok se **Liste za podizanje utovarnih jedinica/ Packing liste** koriste kada se roba šalje kupcu.      
 
 Iz kategorije **Traži** moguće je pretražiti prethodno unesene liste. 
 
@@ -21,15 +21,15 @@ Nakon unosa ovih podataka i ostalih ako je potrebno, možete spremiti Listu tran
 *Posebni gumbi:*
 
 
-> **Upravljanje transportnom jedinicom**: odabirom Liste za transfer i klikom na ovaj gumb otvara se maska **Upravljanje transportnom jedinicom** u kojoj su dostupni UDC-ovi za transfer. Moguće je premjestiti UDC pritiskom na gumb **Premjesti transportnu jedinicu**.             
-> **Otpremnica**: stvara otpremnicu iz odabrane **Liste za premještaj transportnih jedinica**.    
+> **Upravljanje utovarnom jedinicom**: odabirom Liste za transfer i klikom na ovaj gumb otvara se maska **Upravljanje utovarnom jedinicom** u kojoj su dostupni UDC-ovi za transfer. Moguće je premjestiti UDC pritiskom na gumb **Premjesti utovarnu jedinicu**.             
+> **Otpremnica**: stvara otpremnicu iz odabrane **Liste za premještaj utovarnih jedinica**.    
 
 Za sve informacije o korištenju ovog obrasca u WMS-u pogledajte [Listu premještaj transportnih jedinica](/docs/logistics/wms/udc/loading-unit-transfer-list)
 
 ### Liste transfera UDC-a (WMS verzija)
 
 Ovaj postupak koristi se za stvaranje lista transfera s jedinicama tereta.       
-**Liste za premještaj transportnih jedinica** su vrlo slične [Liste za preuzimanje UDC / Packing listama](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), s razlikom da se koriste za premještanje UDC unutar vlastitih skladišta, dok se **Liste za preuzimanje UDC / Packing list** koriste kada se roba šalje kupcu. Odgovarajući pokret skladišta generira se samo putem postupka [Potvrde transfera](/docs/logistics/wms/udc/confirm-transfer). 
+**Liste za premještaj utovarnih jedinica** su vrlo slične [Liste za preuzimanje UDC / Packing listama](/docs/logistics/udc/loading-unit-packing-lists/loading-unit), s razlikom da se koriste za premještanje UDC unutar vlastitih skladišta, dok se **Liste za preuzimanje UDC / Packing list** koriste kada se roba šalje kupcu. Odgovarajući pokret skladišta generira se samo putem postupka [Potvrde transfera](/docs/logistics/wms/udc/confirm-transfer). 
 
 **Parametri zaduženja/razduženja** unose se u tablicu [Parametri zaduženja/razduženja za korisnika](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
