@@ -25,7 +25,7 @@ Iz ovog obrasca također možete dodati novi zapis skladišta koristeći gumb **
 
 **Datum dokumenta**: stupac prikazuje datum referentnog dokumenta navedenog u zaglavlju zapisa;   
 
-**Utovar/ Istovar**: stupac prikazuje vrstu zapisa. Može biti samo isporuka ili primanje;   
+**Utovar/Istovar**: stupac prikazuje vrstu zapisa. Može biti samo isporuka ili primanje;   
 
 **Skladište protustavke**: stupac prikazuje kod skladišta registracije protustrane, ako je dostupno;   
 
