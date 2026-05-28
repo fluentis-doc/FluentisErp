@@ -1,6 +1,5 @@
-
 ---
-title: Kontrola korištenje materijala
+title: Kontrola korištenja materijala
 sidebar_position: 5
 ---
 
