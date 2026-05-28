@@ -16,24 +16,24 @@ Zapisi skladišta mogu se automatski stvarati putem *postupaka učitavanja* dost
 
 Korisnik također može ručno unijeti zapise skladišta, postavljajući sve potrebne podatke ovisno o vrsti artikla i vrsti uzroka koje se odluči koristiti.
 
-Prozor za novu evidenciju skladišta sastoji se od 2 kartice: **Evidencija** i **Protustavka**.
+Prozor za novu evidenciju skladišta sastoji se od 2 kartice: **Zapis** i **Protustavka**.
 
 :::note NAPOMENA
-Kartica **Protustavka** aktivna je samo ako razlog unesen u prvoj kartici ima pridruženi razlog za protustavku u odgovarajućoj tablici *Skladišni razlog*.
+Kartica **Protustavka** aktivna je samo ako razlog unesen u prvoj kartici ima pridruženi predložak za protustavku u odgovarajućoj tablici *Skladišni predložak*.
 :::
 
-Unutar evidencije skladišta mogu se unijeti različiti pokreti skladišta za različite artikle i s različitim vrstama upravljanja.
+Unutar evidencije skladišta mogu se unijeti različiti zapisi skladišta za različite artikle i s različitim vrstama upravljanja.
 
-## Registracija 
+## Zapis 
 
 Ova kartica sastoji se od zaglavlja i 4 različite mreže, od kojih je prva ona u koju se unose artikli koji se kreću putem evidencije skladišta; ostale 3 mreže koriste se ovisno o tome kako su postavljeni podaci o artiklu i uzrok evidentiranja skladišta unesen u zaglavlje.
 
-### Registracija  – fiksni odjeljak
+### Zapis  – fiksni odjeljak
 
 **Skladište**: predstavlja šifru skladišta na kojem se vrši evidencija;     
-**Predložak skladišta**: obvezni podatak za unosenje pokreta skladišta. Odabire se koristeći odgovarajući padajući izbornik, u kojem se nude samo uzroci povezani s odabranim skladištem;    
-**Datum registracije**: automatski se nudi trenutni datum i posebno identificira dan kada se vrše pokreti skladišta koji će biti uneseni u odgovarajući prikaz, pa ga je moguće mijenjati postavljanjem, na primjer, prethodnog datuma od trenutnog. Međutim, ovaj datum uvijek mora biti između datuma Početka i Završetka razdoblja unesenih u prvom odjeljku *Početni parametri skladišta*;   
-**Broj registracije**: automatski se nudi; to je progresivni broj za skladište koji se svakodnevno vraća na nulu, automatski počinjući s brojem 1. Oba podatka mogu se uređivati od strane korisnika;
+**Predložak skladišta**: obvezni podatak za unosenje zapisa skladišta. Odabire se koristeći odgovarajući padajući izbornik, u kojem se nude samo predlošci povezani s odabranim skladištem;    
+**Datum**: automatski se nudi trenutni datum i posebno identificira dan kada se vrše zapisi skladišta koji će biti uneseni u odgovarajući prikaz, pa ga je moguće mijenjati postavljanjem, na primjer, prethodnog datuma od trenutnog. Međutim, ovaj datum uvijek mora biti između datuma Početka i Završetka razdoblja unesenih u prvom odjeljku *Početni parametri skladišta*;   
+**Broj**: automatski se nudi; to je progresivni broj za skladište koji se svakodnevno vraća na nulu, automatski počinjući s brojem 1. Oba podatka mogu se uređivati od strane korisnika;
 
 :::note NAPOMENA
 Nakon unosa prvog artikla u mrežu, datum i broj evidencije postaju samo za čitanje.  
@@ -45,21 +45,21 @@ Ako je evidencija stvorena automatski iz *evidencije proizvodnje*, u ovom polju 
 
 **Verzija**: putem ovog padajućeg izbornika korisnik može postaviti drugačiju verziju od zadane, automatski ponuđenu postupkom;
 
-**Račun**: u ovim 3 polja navedeni su odgovarajući podaci o *Klijentu/Dobavljaču: račun, podračun, naziv firme*.  
+**Konto**: u ovim 3 polja navedeni su odgovarajući podaci o *Klijentu/Dobavljaču: račun, podračun, naziv firme*.  
 Ako je evidencija stvorena automatski putem *učitavanja* ili *pražnjenja* dokumenta, automatski će se postaviti podaci o kupcu ili dobavljaču koji je vlasnik dokumenta.
 
-**Referentni dokument**: u ovom polju korisnik može navesti dokument koji je generirao samu evidenciju.  
+**Vezani dokument**: u ovom polju korisnik može navesti dokument koji je generirao samu evidenciju.  
 Ako je evidencija stvorena automatski putem *učitavanja* ili *pražnjenja* dokumenta, automatski će se postaviti opis parametara dokumenta, koji uključuje i opis vrste dokumenta i njegov broj.
 Ako je evidencija stvorena automatski iz *evidencije proizvodnje*, u ovom polju će se prikazati broj narudžbe proizvodnje za koju je stvorena evidencija proizvodnje.
 
 **Projekt**: dvostrukim klikom otvara se *pomoćnik projekata* koji omogućuje povezivanje projekta s cijelom evidencijom koju unosite. To će se zatim replicirati u svakom retku artikla unesenom u mrežu;
 
-**Napomena**: U ovom polju možete unijeti slobodnu napomenu vezanu uz evidenciju skladišta.  
+**Bilješka**: U ovom polju možete unijeti slobodnu napomenu vezanu uz evidenciju skladišta.  
 Kao što je već gore navedeno, korisnik može sada preći na unos pokreta u prvu mrežu, onu koja će sadržavati artikle za kretanje.
 
 ### Artikli 
 
-U prvom mrežnom prikazu korisnik može unijeti, koristeći *pomoć Artikala*, popis artikala za kretanje.  
+U prvom prikazu korisnik može unijeti, koristeći *pomoć Artikala*, popis artikala za kretanje.  
 
 **Broj kretanja**: u ovoj koloni se prikazuje progresivni broj kretanja. Uvijek počinje s 1 i jednostavno se resetira kada se otvori druga evidencija skladišta. Ovo polje je samo za čitanje i ne dopušta ručno dobivanje brojeva kretanja u slučaju ručnog brisanja redova kretanja;
 
@@ -77,7 +77,7 @@ U prvom mrežnom prikazu korisnik može unijeti, koristeći *pomoć Artikala*, p
 
 **Operativna količina**: u ovoj koloni se, u samo za čitanje, prikazuje količina izražena u upravnoj jedinici mjere artikla. To je isto kao količina kretanja ako je kolona *Alt. J.M.* prazna; inače, kolona postaje promjenjiva, i korisnik mora ručno unijeti upravnu količinu, a zatim će automatski biti izračunata količina kretanja, koja će imati vrijednost jednaku količini upravljanja podijeljenoj ili pomnoženoj (ovisno o postavkama u *Početnim parametrima skladišta*) faktorom konverzije postavljenim u kartici *Artikla > tablica Alternativne jedinice mjere*;
 
-**Iznos kretanja**: u ovoj koloni se automatski prikazuje vrijednost *posljednjeg troška, prosječnog troška, standardnog troška* ili *prodajne cijene*, ovisno o postavkama uzroka skladišta korištenog u evidenciji.  
+**Iznos promjene**: u ovoj koloni se automatski prikazuje vrijednost *posljednjeg troška, prosječnog troška, standardnog troška* ili *prodajne cijene*, ovisno o postavkama uzroka skladišta korištenog u evidenciji.  
 
 Ako uzrok predloži *Nijedan* kao trošak, postupak će predložiti trošak evidencije kao nulu.    
 
@@ -96,7 +96,7 @@ Ako je kolona Alt. J.M. prazna, iznos upravljanja uvijek će biti isti kao iznos
 
 **Ukupan iznos**: u ovoj koloni prikazuje se, ne može se uređivati, ukupni iznos reda kretanja. On se dobiva množenjem upravne količine s upravnim iznosom;
 
-**Opis artikla**: u ovoj koloni prikazuje se opis artikla. On se automatski postavlja čim korisnik unese artikl prepoznat u mreži;
+**Opis stavke**: u ovoj koloni prikazuje se opis artikla. On se automatski postavlja čim korisnik unese artikl prepoznat u mreži;
 
 **Opis varijante**: u ovoj koloni prikazuje se opis varijacije artikla. On se automatski postavlja čim korisnik unese kod varijacije artikla prepoznat u mreži;
 
@@ -117,45 +117,45 @@ U ovom polju, aktivnom samo ako je korišteni skladišni događaj imao aktiviran
 
 Kao što znamo, registracija skladišta može biti ulazna ili izlazna; ovisno o 2 različita slučaja, mreža lotova ima različite upotrebe i postavke.
 
-> *1° slučaj: Registracija ulaza*
+> *1° slučaj: Zapis ulaza*
 
 Kada korisnik spremi redak kretanja, postupak ostavlja redak u ažuriranju, pozivajući korisnika da se premjesti u mrežu Serije i navede pojedinosti o serijama koje treba dodati.
 
-Stupci prisutni u mreži su sljedeći:
+Stupci prisutni u pregledu su sljedeći:
 
-**Tip šifre serije**: u ovom se stupcu unosi tip koda serije unesen u opis artikla;
+**Vrsta šifre lota**: u ovom se stupcu unosi tip koda selotarije unesen u opis artikla;
 
-**Tip serije**: u ovom se stupcu opcionalno može unijeti od strane korisnika Tip serije, putem odgovarajuće padajuće liste, koja crpi iz tablice s istim imenom. Ipak, to je podatak koji nije obavezan
+**Tipovi lota**: u ovom se stupcu opcionalno može unijeti od strane korisnika Tip serije, putem odgovarajuće padajuće liste, koja crpi iz tablice s istim imenom. Ipak, to je podatak koji nije obavezan
 
-**Broj serije**: u ovom se stupcu unosi kod serije koju treba dodati, konstruiran prema pravilima postavljenim u *Početnim postavkama skladišta* povezanim s unesenim tipom *koda lota*. Polje je žute boje jer bi korisnik mogao odlučiti izvršiti novi ulaz serije koja već postoji u bazi podataka; u tom slučaju dvostrukim klikom na žuto polje korisnik bi, putem odgovarajuće *pomoći lota*, mogao odabrati seriju koju treba dodati, filtrirajući je među serijama upravljanim do tog trenutka u bazi podataka i u tvrtki u kojoj radi;
+**Broj lota**: u ovom se stupcu unosi kod serije koju treba dodati, konstruiran prema pravilima postavljenim u *Početnim postavkama skladišta* povezanim s unesenim tipom *koda lota*. Polje je žute boje jer bi korisnik mogao odlučiti izvršiti novi ulaz serije koja već postoji u bazi podataka; u tom slučaju dvostrukim klikom na žuto polje korisnik bi, putem odgovarajuće *pomoći lota*, mogao odabrati seriju koju treba dodati, filtrirajući je među serijama upravljanim do tog trenutka u bazi podataka i u tvrtki u kojoj radi;
 
-**Šifra serije dobavljača**: u ovom se stupcu ručno unosi kod serije dobavljača, obično naziv koji dobavljač dodjeljuje seriji. Ovo je polje koje se ne može automatski generirati tijekom operacija ulaska i nije obavezno. U slučaju unosa koda serije putem pomoći serija, ovaj stupac automatski bi bio popunjen *kodom lota* dobavljača povezanog s odabranom serijom;
+**Šifra lota dobavljača**: u ovom se stupcu ručno unosi šifra lota dobavljača, obično naziv koji dobavljač dodjeljuje ltu. Ovo je polje koje se ne može automatski generirati tijekom operacija ulaska i nije obavezno. U slučaju unosa koda lota putem pomoći serotaija, ovaj stupac automatski bi bio popunjen *kodom lota* dobavljača povezanog s odabranim lotom;
 
-**Datum početka**: u ovom polju prikazuje se isti datum kao i datum registracije skladišta, koji korisnik može uređivati. U slučaju unosa koda serije putem pomoći serija, ovaj bi se stupac automatski popunio datumom početka odabrane serije;
+**Datum početka**: u ovom polju prikazuje se isti datum kao i datum zapisa skladišta, koji korisnik može uređivati. U slučaju unosa koda lota putem pomoći lota, ovaj bi se stupac automatski popunio datumom početka odabrane serije;
 
 **Datum dospijeća**: u ovom polju prikazuje se datum isteka lota, koji korisnik može urediti, a koji se izračunava, polazeći od datuma početka i dodajući dane valjanosti lota unesene u kartici *Lotovi/SN* opisa artikla. U slučaju unosa šifre lota putem pomoći lota, ovaj bi se stupac automatski popunio datumom isteka odabranog lota;
 
 **Količina**: u ovom polju se prikazuje količina koju korisnik želi dodijeliti unesenom lotu. U slučaju automatskog stvaranja lota pritiskom na gumb 'Auto', količina se automatski popunjava s količinom sadržanom u retku kretanja; međutim, korisnik je može urediti, smanjiti je, i zatim pritisnuti 'Auto' na sljedećem retku: na taj način bi se stvorio novi lot, sličnih karakteristika kao i prethodni lot, ali s drugačijom šifrom Lota;
 
-**Lot koji se može prodavati (lot za prodaju)**: ako je aktivno, označava da je lot dostupan za preuzimanje u dokumentima prodaje, proizvodnje ili zapisima skladišta. To praktično omogućuje korisniku da odredi mogućnost preuzimanja ili nekorištenja lota, kao alternativu složenijem i detaljnijem upravljanju stanjem lota. Dakle, u slučaju automatskog punjenja lota, zastavica je automatski aktivirana, iako korisnik već u ovom trenutku može odlučiti deaktivirati je, čime bi lot bio već nedostupan;
+**Prodajni lot**: ako je aktivno, označava da je lot dostupan za preuzimanje u dokumentima prodaje, proizvodnje ili zapisima skladišta. To praktično omogućuje korisniku da odredi mogućnost preuzimanja ili nekorištenja lota, kao alternativu složenijem i detaljnijem upravljanju stanjem lota. Dakle, u slučaju automatskog punjenja lota, zastavica je automatski aktivirana, iako korisnik već u ovom trenutku može odlučiti deaktivirati je, čime bi lot bio već nedostupan;
 
-**Napomena**: u ovom polju korisnik može unijeti napomenu o lotu koji se učitava. U slučaju unosa šifre Lota putem *Pomoći za Lote*, ovaj stupac bi se automatski ispunio napomenom povezanom s odabranim lotom;
+**Bilješka**: u ovom polju korisnik može unijeti napomenu o lotu koji se učitava. U slučaju unosa šifre Lota putem *Pomoći za Lote*, ovaj stupac bi se automatski ispunio napomenom povezanom s odabranim lotom;
 
 Nakon što korisnik dovrši unos lotova u prikaz Loti, osiguravajući da je količina retka kretanja jednaka zbroju količina učitanih lotova, korisnik može spremiti redak kretanja bez primanja poruka o pogrešci od postupka.
 
-> *2° slučaj: Registracija pražnjenja*
+> *2° slučaj: Zapis izlaza*
 
-Kada korisnik spremi redak kretanja, postupak ostavlja redak u ažuriranju, pozivajući korisnika da se premjesti u mrežu Lotti i navede pojedinosti o lotovima koji se trebaju prazniti.
+Kada korisnik spremi redak kretanja, postupak ostavlja redak u ažuriranju, pozivajući korisnika da se premjesti u pregled Lotovi i navede pojedinosti o lotovima koji se trebaju prazniti.
 
-Stupci prisutni u mreži su sljedeći:
+Stupci prisutni u pregledu su sljedeći:
 
-**Broj serije**: u ovom stupcu dvostrukim klikom na žuti polje korisnik ima mogućnost, putem odgovarajuće *pomoći za lote*, odabrati lot za pražnjenje filtriranjem među dostupnim lotovima u skladištu registracije;
+**Broj lota**: u ovom stupcu dvostrukim klikom na žuti polje korisnik ima mogućnost, putem odgovarajuće *pomoći za lote*, odabrati lot za pražnjenje filtriranjem među dostupnim lotovima u skladištu registracije;
 
-**Šifra dobavljača Lota**: ovaj stupac automatski se popunjava s šifrom *dobavljača* povezanim s odabranim *lotom*;
+**Šifra lota dobavljača**: ovaj stupac automatski se popunjava s šifrom *dobavljača* povezanim s odabranim *lotom*;
 
 **Datum početka**: u ovom polju prikazuje se datum početka odabranog lota;
 
-**Datum isteka**: u ovom polju prikazuje se datum isteka odabranog lota;
+**Datum dospijeća**: u ovom polju prikazuje se datum isteka odabranog lota;
 
 **Količina**: u ovom polju prikazuje se količina koja se želi pražniti od odabranog lota. Ona je editabilna od strane korisnika, koji može odlučiti smanjiti je, i zatim pretražiti pomoću loto-a na donjem retku;
 
@@ -163,13 +163,13 @@ Stupci prisutni u mreži su sljedeći:
 
 **Serijski broj**
 
-U ovoj mreži, aktivna samo ako je korištena skladišna stavka označena zastavicom *Upravljanje lotovima* i ako je artikl također označen kao artikl koji se upravlja serijskim brojevima, korisnik mora obvezno unijeti informacije povezane s serijskim brojevima koje treba kretati.
+U ovom pregledu, aktivnom samo ako je korištena skladišna stavka označena zastavicom *Upravljanje lotovima* i ako je artikl također označen kao artikl koji se upravlja serijskim brojevima, korisnik mora obvezno unijeti informacije povezane s serijskim brojevima koje treba kretati.
 
 Kao što znamo, evidentiranje u skladištu može biti učitavanje ili pražnjenje; ovisno o 2 različita slučaja, mreža Numeričkih Serijskih brojeva ima različite upotrebe i postavke.
 
-> *1°  slučaj: Evidentiranje učitavanja*
+> *1°  slučaj: Evidentiranje ulaza*
 
-Kada korisnik spremi redak kretanja, postupak ostavlja redak u "update", pozivajući korisnika da se premjesti u mrežu Numeričkih Serijskih brojeva i da navede pojedinosti o serijskim brojevima koje treba učitati.
+Kada korisnik spremi redak kretanja, postupak ostavlja redak u *update*, pozivajući korisnika da se premjesti u mrežu Numeričkih Serijskih brojeva i da navede pojedinosti o serijskim brojevima koje treba učitati.
 
 Stupci prisutni u mreži su sljedeći:
 
@@ -185,19 +185,19 @@ Stupci prisutni u mreži su sljedeći:
 
 **Datum dospijeća**: označava datum isteka serijskog broja; 
 
-**Datum posljednje izmjene**: označava datum posljednje izmjene;
+**Datum zadnje izmjene**: označava datum posljednje izmjene;
 
-**Otkazano**: označava da se serijski broj nalazi u poništenom stanju;
+**Opozvano**: označava da se serijski broj nalazi u poništenom stanju;
 
-**Prisično zatvoreno**: označava da je serijski broj prisilno zatvoren;
+**Prisilno zatvoreno**: označava da je serijski broj prisilno zatvoren;
 
 **Lot**: označava broj lota koji odgovara tom serijskom broju.
 
 Nakon što korisnik dovrši unos serija u mrežu *Numeričkih Serijskih brojeva*, osiguravajući da je količina reda kretanja jednaka broju unesenih serijskih brojeva u mrežu, korisnik može spremiti redak kretanja bez primanja poruka o pogrešci od postupka.
 
-> *2° slučaj: Evidentiranje pražnjenja*
+> *2° slučaj: Evidentiranje izlaza*
 
-Kada korisnik spremi redak kretanja, postupak ostavlja redak u "update", pozivajući korisnika da se premjesti u mrežu Numeričkih Serijskih brojeva i navede pojedinosti o serijskim brojevima koje treba prazniti.
+Kada korisnik spremi redak kretanja, postupak ostavlja redak u *update*, pozivajući korisnika da se premjesti u mrežu Numeričkih Serijskih brojeva i navede pojedinosti o serijskim brojevima koje treba prazniti.
 
 Stupci prisutni u mreži su sljedeći:
 
@@ -231,14 +231,14 @@ Poziva se na dokumentaciju vezanu uz [Dodatne podatke](/docs/configurations/util
 
 ## Protustavka
 
-Ova je kartica identičan kartici *Registracija*, ali je aktivan samo ako je u kartici *Registracija* postavljena izdana uprava skladišta i kontrastavka. Kontrolovni računi postavljaju se u slučaju kada se želi upravljati dvostrukim kretanjem skladišta jednim zapisom. Stoga je moguće u tablici upravljanja skladištem postaviti kretanje skladišta kao kontropartitu za isporuku i obratno. 
+Ova je kartica identičan kartici *Zapis*, ali je aktivan samo ako je u kartici *Zapis* postavljena izdana uprava skladišta i protustavka. Kontrole se postavljaju u slučaju kada se želi upravljati dvostrukim kretanjem skladišta jednim zapisom. Stoga je moguće u tablici upravljanja skladištem postaviti kretanje skladišta kao protustavku za isporuku i obratno. 
 
-U tablici *Protustavke* prikazuju se točno svi podaci postavljeni unutar kartice *Registracija*, s mogućnošću korisnika da mijenja samo neke od zaglavlja: unutarnji dokument, referentni dokument, prodajni nalog. 
+U tablici *Protustavke* prikazuju se točno svi podaci postavljeni unutar kartice *Zapis*, s mogućnošću korisnika da mijenja samo neke od zaglavlja: unutarnji dokument, referentni dokument, prodajni nalog. 
 
 Podaci retka kretanja moraju biti identični između oba taba; ista stvar vrijedi i za tablice Lotova, Serijskih brojeva, Varijanti i Centara troškova pojedinačnog kretanja. Samo je polje lokacije uređivo unutar taba kontrastavka.
 
-Postoji **poseban** slučaj u kojem je u kartici *Registracija* unesen jedan proizvod, a u tabu *Protustavka* uneseni drugi proizvodi: to se događa samo kada su kretanja protustavki povezana s glavnim kretanjem omogućena postavkama *Osnovne strukture*, zastava koja omogućuje korisniku da unese proizvod u karticu *Registracija* (tako korištenjem kretanja opterećenja) i vidi njegovu osnovnu strukturu unesenu u kartici *Protustavka*, unutar kojeg će stoga biti prisutno kretanje istovara. Obrnuto je također moguće upravljati.
+Postoji **poseban** slučaj u kojem je u kartici *Zapis* unesen jedan proizvod, a u tabu *Protustavka* uneseni drugi proizvodi: to se događa samo kada su kretanja protustavki povezana s glavnim kretanjem omogućena postavkama *Osnovne strukture*, zastava koja omogućuje korisniku da unese proizvod u karticu *Zapis* (tako korištenjem kretanja opterećenja) i vidi njegovu osnovnu strukturu unesenu u kartici *Protustavka*, unutar kojeg će stoga biti prisutno kretanje istovara. Obrnuto je također moguće upravljati.
 
-**Posebna** situacija koja zahtijeva upravljanje kretanjima s povezanim kontropartitama odnosi se na *automatsko pražnjenje dokumenta za dostavu posla*, koje vrši pražnjenje materijala koji se dostavljaju izvana iz skladišta sirovina (ili poluproizvoda, ovisno o slučaju) s neposrednim i trenutnim opterećenjem skladišta vanjskom tvrtkom s istim materijalima koji će onda biti korišteni za proizvodnju onoga što je traženo putem naloga za rad.
+**Posebna** situacija koja zahtijeva upravljanje kretanjima s povezanim protustavkama odnosi se na *automatsko razduženje primke/otpremnice za kooperantsku obradu.*, koje vrši pražnjenje materijala koji se dostavljaju izvana iz skladišta sirovina (ili poluproizvoda, ovisno o slučaju) s neposrednim i trenutnim opterećenjem skladišta vanjskom tvrtkom s istim materijalima koji će onda biti korišteni za proizvodnju onoga što je traženo putem naloga za rad.
 
 Za sve što nije pojedinosti navedene u ovom dokumentu o uobičajenom radu formi, obratite se sljedećoj vezi  [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
