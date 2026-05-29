@@ -1,5 +1,5 @@
 ---
-title: Novo Stanje Napretka Radova
+title: Novo stanje napretka radova
 sidebar_position: 1
 ---
 

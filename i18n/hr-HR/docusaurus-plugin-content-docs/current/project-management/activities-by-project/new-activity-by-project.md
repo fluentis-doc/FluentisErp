@@ -11,7 +11,7 @@ sidebar_position: 1
 
 **Resurs**: sadrži resurs koji obavlja aktivnost;
 
-**Datum/Manualno vrijeme**: csadrži datum unosa i oznaku, ako je aktivirana, omogućuje polje **Ukupno vrijeme**;
+**Datum/Manualno vrijeme**: sadrži datum unosa i oznaku, ako je aktivirana, omogućuje polje **Ukupno vrijeme**;
 
 **Kupac**: sadrži klijenta za kojeg se obavlja aktivnost;
 

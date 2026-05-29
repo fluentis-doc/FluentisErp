@@ -25,7 +25,7 @@ Zaglavlje također sadrži dodatne kartice.
 Sadrži eventualne Troškove putovanja, identificirane prema:
 
 **Vrsta troška**: sadrži vrstu troška s odgovarajućim **Opisom**;    
-**KM**: contiene i chilometri percorsi con il relativo **Costo Km**;    
+**KM**: Sadrži prijeđene kilometre s pripadajućim **troškom Km**;    
 **Satnica**: moguće je alternativno navesti satnicu;   
 **Datum/Vrijeme polaska**: sadrži datum i vrijeme polaska;   
 **Datum/Vrijeme dolaska**: sadrži datum i vrijeme dolaska;   
@@ -34,7 +34,7 @@ Sadrži eventualne Troškove putovanja, identificirane prema:
 **PDV**:pokazuje PDV koji treba primijeniti;      
 **Ukupni trošak**: polje izračunato na temelju prethodno unesenih podataka koje sadrži ukupni trošak troškova;    
 **Na računu**: pokazuje treba li trošak biti prikazan na računu;      
-**Importo spesa**: è possibile indicare direttamente l’importo dell’onere, per esempio nel caso si trattasse del rimborso di un pasto;     
+**Importo spesa**: moguće je izravno unijeti iznos troška, primjerice ako se radi o refundaciji troška obroka;     
 **Datum troška**: datum na koji treba knjižiti trošak;     
 **Način plaćanja**: sadrži vrstu plaćanja s odgovarajućim **Opisom**;     
 **Za povrat**: ova zastava označava je li trošak za povrat.
