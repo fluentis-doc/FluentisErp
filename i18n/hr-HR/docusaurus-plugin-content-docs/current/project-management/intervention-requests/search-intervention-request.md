@@ -1,9 +1,9 @@
 ---
-title: Pretraga Zahtjeva za Intervencijom
+title: Pretraga Zahtjeva za intervencijom
 sidebar_position: 1
 ---
 
-Na ovoj formi moguće je pretraživati prethodno unesene Zahtjeve za Intervencijom.
+U ovoj formi moguće je pretraživati prethodno unesene Zahtjeve za Intervencijom.
 
 *Specifično dugme*
 

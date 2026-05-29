@@ -1,9 +1,9 @@
 ---
-title: Novi Zahtjev za Intervencijom
+title: Novi Zahtjev za intervencijom
 sidebar_position: 2
 ---
 
-Na ovoj formi mogu se unijeti podaci o **Zahtjevu za Intervencijom**:
+U ovoj formi mogu se unijeti podaci o **Zahtjevu za Intervencijom**:
 
 **Vrsta Intervencije**: sadrži [tip zahtjeva](/docs/configurations/tables/project-management/request-intervention-type/);
 

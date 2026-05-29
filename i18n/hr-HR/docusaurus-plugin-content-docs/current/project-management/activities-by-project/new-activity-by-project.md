@@ -1,9 +1,9 @@
 ---
-title: Aktivnosti po Projektu
+title: Aktivnosti po projektu
 sidebar_position: 1
 ---
 
-**. Podaci su:
+**Podaci su:**
 
 **Vrsta aktivnosti**: sadrži [Tip aktivnosti](/docs/configurations/tables/project-management/activity-type/);
 
