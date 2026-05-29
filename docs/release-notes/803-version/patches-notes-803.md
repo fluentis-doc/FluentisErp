@@ -5,6 +5,20 @@ sidebar_position: 1
 
 ### Patch 803.0021 - 26/05/2026
 
+> -	CPQ - Aggiunte alcune funzionalità per la generazione dele BOM d configuratore e ottimizzate le funzione di selezione risposte e creazione configurazioni
+> -	È inoltre possibile gestire automaticamente la priorità di applicazione degli sconti, nel caso siano presenti più condizioni con lo stesso tipo. (rif.ticket #TT01011/26)
+> -	FI - revisione gestione segni in causali automatiche con prima registrazione negativa (#TT02176/26)
+> -	SCM - Creazione Automatica Ordini Fornitori: la creazione Ordini Fornitori con l’opzione di proposta fornitore e prezzi, “Fornitore con migliore prezzo di acquisto”, tiene conto anche degli scaglioni di prezzo in funzione della quantità.(#TT02545/25)
+> -	SCM - Creazione Automatica Ordini: La creazione degli Ordini Fornitore (OF) con le opzioni di proposta fornitore (“da fornitore” e “per miglior prezzo di listino”) tiene conto degli scaglioni di prezzo in funzione della quantità.
+> -	SCM - Coretta valorizzazione parziale di commessa a seguito di ordine fornitore con procedura “evasione da progetto” (#TT01632/26).
+> -	SH - allineati campi SHCNTC_Description e SHCH_Description per evitare errori in fase di storicizzazione di una anagrafica.(#TT02151/26)
+> -	WM - Corretto un bug nell’algoritmo di aggiunta Extra Data agli articoli
+> -	WMS - Corretto popup errore Fluentis (#TT00937/26).
+> -	WMS - Ricevimento Merce: DDT mantiene prezzo ordine anziché leggerlo dal listino. (#TT01879/26)
+
+
+### Patch 803.0021 - 26/05/2026
+
 > -	Allow to save command with-out right (#TT02125/26)
 > -	CO - revisione driver di progetto nell’elaborazione del consuntivo di progetto (#TT01593/26)
 > -	CPQ - Risolto problema di sessione NHibernate errata nella creazione delle distinte da configurazione.
