@@ -3,7 +3,7 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
-### Patch 803.0021 - 26/05/2026
+### Patch 803.0022 - 28/05/2026
 
 > -	CPQ - Aggiunte alcune funzionalità per la generazione dele BOM d configuratore e ottimizzate le funzione di selezione risposte e creazione configurazioni
 > -	È inoltre possibile gestire automaticamente la priorità di applicazione degli sconti, nel caso siano presenti più condizioni con lo stesso tipo. (rif.ticket #TT01011/26)
