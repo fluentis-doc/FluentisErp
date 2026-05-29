@@ -1,17 +1,17 @@
 ---
-title: Izradite upit za ponudu
+title: Izradi upit za ponudu
 sidebar_position: 3
 ---
 
-Forma se otvara putem izbornika **Nabava > Zahtjev za ponudom > Novi zahtjev za ponudom** ili kroz filter pretrage Zahtjevi za ponudom, koristeći tipku Novi.
+Forma se otvara putem izbornika **Nabava > Upit za ponudu > Novi upit za ponudom** ili kroz filter pretrage Upit za ponudu, koristeći tipku Novi.
 
-## *Kako kreirati zahtjev za ponudom*
+## *Kako kreirati upit za ponudom*
 
 <details>
  
 <summary>Kliknite za prikaz osnovnih koraka</summary>
  
-1. **Unesi obavezne podatke**: *Tip zahtjeva za ponudom* i *Dobavljač*. *Godina*, *Broj* i *Datum* bit će predloženi automatski.  
+1. **Unesi obavezne podatke**: *Vrsta upita za ponudom* i *Dobavljač*. *Godina*, *Broj* i *Datum* bit će predloženi automatski.  
  
 2. **Unesi ili izmijeni neobavezne podatke** u zaglavlju: poput datuma isporuke, eventualnih *popusta*, *odredišta*, itd.   
  
@@ -28,7 +28,7 @@ Alternativno, moguće je odabrati kao *Tip retka* *Neodređeni artikal* i ručno
 
 ## **1. Gornji dio** {#upper-section}
 
-Obavezna polja za unos zahtjeva za nabavu su sljedeća:
+Obavezna polja za unos upita za nabavu su sljedeća:
 
 - **Tip**: obavezno polje. Ovisno o odabranom [Tipu RDO](/docs/configurations/tables/purchase/purchase-offer-type) aktiviraju se dodatne funkcionalnosti, npr. *Upravljanje sredstvima*.   
 - **Datum/Godina/Broj**: po defaultu se predlaže trenutni datum, ali se može promijeniti.   
@@ -161,7 +161,7 @@ U ovoj kartici prikazane su i/ili se unose dodatne informacije vezane uz odabran
 >- **Cijena za alternativnu jedinicu mjere**: ako je aktivirano, označava da se cijena unesena u stavci odnosi na alternativnu, a ne na glavnu jedinicu mjere.   
 
 >- **Marka**: predstavlja marku artikla, preuzetu iz njegove anagrafike ili iz cjenika.
->- **Zahtjev za nabavu**: ako je ponuda kreirana iz RDA, ovdje se prikazuje odgovarajući [Zahtjev za nabavu](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request).   
+>- **Upit za nabavu**: ako je ponuda kreirana iz RDA, ovdje se prikazuje odgovarajući [Upit za nabavu](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request).   
 
 
 #### 3.4 Dodatni podaci {#extra-data}

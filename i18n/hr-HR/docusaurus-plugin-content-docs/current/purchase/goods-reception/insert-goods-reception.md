@@ -1,11 +1,11 @@
 ---
-title: Unos Primanja Robe
+title: Unos primanja Robe
 sidebar_position: 3
 ---
 
 Putanje za stvaranje novog **Primanja Robe**:
 
-- idite na **Nabava > Narudžba dobavljača > Stvorite popis primanja**  
+- idite na **Nabava > Prijem robe > Izradite prijem robe**  
 
 - ili putem gumba **Novo** koji se nalazi u obrascu
 
@@ -14,21 +14,21 @@ Putanje za stvaranje novog **Primanja Robe**:
 
 **Dobavljač**, koristeći [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unošenje podataka.
 
-**Vrsta primanja robe**: predefinirana u *Konfiguracija > Tablice > Nabava > Vrste primanja robe*. Ovo polje određuje raspon numeracije dokumenta koji se unosi i automatski predlaže **Broj** temeljem datuma unosa i posljednjeg unesenog broja;   
+**Tip dokumenta**: predefiniran u *Konfiguracija > Tablice > Nabava > Vrste primanja robe*. Ovo polje određuje raspon numeracije dokumenta koji se unosi i automatski predlaže **Broj** temeljem datuma unosa i posljednjeg unesenog broja;   
 **Broj**: automatski se predlaže prema vrsti, ali se može ručno izmijeniti uvijek poštujući pravilo napretka između datuma i broja;   
 **Datum prijema**: automatski se predlaže trenutni datum, ali se može ručno izmijeniti uvijek poštujući pravilo napretka između datuma i broja.
 
 ## **1. Artikli**
 
-**Vrsta linije** pruža mogućnost odabira različitih artikala iz padajućeg izbornika.
+**Tip linije** pruža mogućnost odabira različitih artikala iz padajućeg izbornika.
 
 :::note NAPOMENA 
 Ako se krene izravno s unosom artikla, njegova *klasa*, *kod* i *vrsta reda* - *Kodirani artikl* automatski će biti uneseni.
 :::
-> **Artikl sa klasom**: artikli kodirani u općem registru koji se mogu evidentirati u analitičkom računovodstvu i evidentirati u skladištu.   
-> **Artikl ne-kodiran**: opisni artikli koji se mogu evidentirati u analitičkom računovodstvu, ali se ne mogu kretati u skladištu.   
+> **Artikl s klasom**: artikli kodirani u općem registru koji se mogu evidentirati u analitičkom računovodstvu i evidentirati u skladištu.   
+> **Artikl bez klase**: opisni artikli koji se mogu evidentirati u analitičkom računovodstvu, ali se ne mogu kretati u skladištu.   
 > **Trošak**: kodirani ili nekodirani artikli koji se razlikuju u sažecima dokumenata; ako je kodirani artikl trošak i ima poreznu relevantnost, bit će zabilježen u skladištu, ako nije kodiran ili nema poreznu relevantnost, neće se zabilježiti u skladištu.   
-> **Napomene o članku**: opisne napomene navedene u ispisi dokumenta; ne utječe na računovodstvo i skladište.
+> **Opis**: opisne napomene navedene u ispisi dokumenta; ne utječe na računovodstvo i skladište.
 
 **Kod**: odnosi se na *Barkodni kod artikla* unesen u *Artikli > Kartica Barkodni kod*.  
 
@@ -66,19 +66,19 @@ Prikazani su lotovi koji se moraju uvesti u skladište i koji su povezani s arti
 
 > **Izbriši lot**: omogućuje brisanje odabranog reda lota.
 
-### 2.2 Dati articolo
+### 2.2 Podaci artikla
 
-All'interno di questo tab vengono riportate/inserite ulteriori informazioni relative all'articolo.
+Unutar ove kartice prikazuju se/unose dodatne informacije vezane uz artikl.
 
-- **Articolo**: visualizza l'articolo selezionato nella griglia superiore.   
+- **Artikl**: prikazuje artikl odabran u gornjem pregledu.   
 
-- **Variante**: in questo campo è possibile selezionare una variante dell'articolo tra quelle precedentemente codificate nel tab [Varianti](/docs/erp-home/registers/items/create-new-item) dell'anagrafica articolo. Se nel listino sono stati inseriti prezzi e/o sconti diversi per ciascuna variante essi saranno aggiornati quando si sleziona una variante diversa dell'articolo.   
+- **Varijanta**: u ovom polju moguće je odabrati varijantu artikla među onima koje su prethodno definirane u kartici [Varijante](/docs/erp-home/registers/items/create-new-item) u matičnim podacima artikla. Ako su u cjeniku definirane različite cijene i/ili popusti za pojedine varijante, oni će se automatski ažurirati prilikom odabira druge varijante artikla.  
 
-- **Magazzino e causale**: permette di inserire il magazzino e la causale di riferimento da utilizzare per il carico degli articoli relativi in magazzino. Se la riga articolo è stata ripresa a un ordine di acquisto, saranno proposti il magazzino e la causale inseriti nell'ordine, altrimenti possono essere inseriti manualmente per ciascuna riga articolo. Se i campi non sono valorizzati, al momento del carico del ricevimento merci saranno utilizzati quelli inseriti nei parameti ordini fornitori, tab [Carico](/docs/configurations/parameters/purchase/purchase-orders-parameters). 
+- **Skladište i predložak**: omogućuje unos skladišta i pripadajućeg predloška koji će se koristiti za knjiženje zaprimanja povezanih artikala na skladište. Ako je redak artikla preuzet iz narudžbe dobavljaču, automatski će se predložiti skladište i predložak uneseni u narudžbi; u suprotnom se mogu ručno unijeti za svaki redak artikla. Ako polja nisu popunjena, prilikom knjiženja prijema robe koristit će se vrijednosti definirane u parametrima narudžbi dobavljača, u kartici [Zaprimanje].(/docs/configurations/parameters/purchase/purchase-orders-parameters). 
 
-- **Progetto**: rappresenta il progetto da associare al documento. Se nella testata del documento è stato inserito un progetto, esso sarà riportato su tutte le righe articolo; in alternativa può essere selezionato tramite l'apposito help progetti.
+- **Projekt**: predstavlja projekt koji se povezuje s dokumentom. Ako je projekt unesen u zaglavlju dokumenta, automatski će se prenijeti na sve retke artikala; alternativno, može se odabrati putem odgovarajuće pomoći za odabir projekata.
 
-- **Unità di misura/Quantità alternativa**: se nell'[anagrafica dell'articolo](/docs/erp-home/registers/items/create-new-item) è stata codificata un'unità di misura alternativa con il flag *Predefinito* e nei Parametri ordini fornitore è stato attivato il flag *Proposta automatica U.M. alternativa*, questi valori saranno proposti in automatico al momento dell'inserimento dell'articolo.
+- **Alternativna mjerna jedinica / alternativna količina**: ako je u [matičnim podacima artikla] (/docs/erp-home/registers/items/create-new-item) definirana alternativna mjerna jedinica s oznakom *Zadano* te je u parametrima narudžbi dobavljača aktivirana oznaka *Automatski prijedlog alternativne mjerne jedinice*, te će se vrijednosti automatski predložiti prilikom unosa artikla.
 
 ### 2.3 Analitika
 
@@ -87,9 +87,9 @@ All'interno di questo tab vengono riportate/inserite ulteriori informazioni rela
 #### Posebni gumbi
 
 > **Izbriši centar troška**: omogućuje brisanje odabranog reda centra troškova;   
-> **Izbriši profitne centre**: omogućuje brisanje odabranog reda centra dobiti.
+> **Izbriši profitne centre**: omogućuje brisanje odabranog reda centra profita.
 
 
-### 2.4 Extra data
+### 2.4 Dodatni podaci
 
 Prikazuje popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću dodavanja novih dodatnih podataka koji su korisni samo za taj dokument, uz mogućnost odabira, putem odgovarajuće oznake, koji dodatni podaci će se ispisati.
