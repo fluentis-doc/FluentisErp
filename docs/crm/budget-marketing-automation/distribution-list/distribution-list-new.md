@@ -3,7 +3,7 @@ title: Nuova Lista di Distribuzione
 sidebar_position: 3
 ---
 
-La procedura di creazione di una nuova **Lista di distribuzione** permette di andare a definire quali saranno le caratteristiche della lista che verrà poi utilizzato nella procedura di invio delle [Newsletter](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), oltre a definire quali saranno i **contatti CRM** facenti parte di tale lista. Per creare una nuova lista è necessario cliccare sul pulsante **Nuovo** dalla maschera di ricerca liste di distribuzione.
+La procedura di creazione di una nuova **Lista di distribuzione** permette di andare a definire quali saranno le caratteristiche della lista che verrà poi utilizzato nella procedura di invio delle [Newsletter](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), oltre a definire quali saranno i **contatti CRM** o **contatti ERP** facenti parte di tale lista. Per creare una nuova lista è necessario cliccare sul pulsante **Nuovo** dalla maschera di ricerca liste di distribuzione.
 
 La form è composta da due sezioni.
 
@@ -16,6 +16,18 @@ La sezione superiore permette di definire le seguenti informazioni:
 **Nota**: campo alfanumerico che permette di inserire delle note libere;
 
 **Autore**: viene indicato l’utente che ha generato la lista;
+
+**Oggetto Business**: indica la tipologia di documento o anagrafica interessati all'invio. Sono ammessi i seguenti valori: 
+- contatti CRM 
+- campagna marketing
+- opportunità
+- richiesta di offerta di acquisto
+- ordine di acquisto
+- offerta di vendita
+- ordine di vendita
+- ddt di vendita
+- fattura di vendita
+- intervento area progetti
 
 **Tipo**: permette di definire la tipologia di lista di distribuzione tra **Statica** o **Dinamica**.
 
@@ -51,12 +63,9 @@ Devono essere inizialmente indicati questi 3 dati:
 **Area**: serve per definire l’area di Fluentis in cui dovranno essere recuperati i dati;
 **Modulo**: è riferito all’Area selezionata in precedenza;
 **Sql Query**: deve essere selezionata la Query Sql precedentemente creata in Fluentis (per maggiori informazioni fare riferimento alla sezione Fluentis Query Studio)
-Nella griglia sottostante vengono mostrate le proprietà e come sono state mappate.
+Nella griglia sottostante vengono mostrate le proprietà obbligatorie in grassetto, a cui è necessario associare un valore corrispondente della query, per ottenere una mappatura corretta. 
 
-![](/img/it-it/applications/crm/distribution-list/configuration.png)
 
 #### Mapping
 
 In questa tab vengono mostrate in tempo reali i contatti elaborati e inseriti nella lista di distribuzione in base alla Sql Query indicata nella tab Configurazione.
-
-![](/img/it-it/applications/crm/distribution-list/mapping.png)

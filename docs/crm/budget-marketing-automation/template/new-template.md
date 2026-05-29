@@ -3,7 +3,7 @@ title: Nuovo Template
 sidebar_position: 2
 ---
 
-La procedura di creazione di un **nuovo Template** permette di andare a definire quali saranno le caratteristiche del Template che verrà poi utilizzato nella procedura di invio delle Newsletter, quali immagini, testo, hyperlink e merge data.
+La procedura di creazione di un **nuovo Template** permette di andare a definire quali saranno le caratteristiche del testo della email che verrà poi utilizzato nella procedura di invio delle Newsletter, quali immagini, testo, hyperlink e merge data.
 La form è composta da due sezioni.
 
 La sezione superiore permette di definire le seguenti informazioni:
@@ -20,8 +20,6 @@ La sezione superiore permette di definire le seguenti informazioni:
 
 La parte inferiore della form prevede una serie di tab con le diverse funzioni con cui costruire il template e il foglio di lavoro su cui costruire effettivamente il Template e visualizzarne graficamente il risultato:
 
-![](/img/it-it/applications/crm/budget-marketing-automation/template-file.png)
-
 Di seguito le tab presenti nella form.
 
 **File**
@@ -35,14 +33,10 @@ Questa tab permette di effettuare le operazioni di base del Template, come l’a
 **Undo**: cancella l’ultima modifica al template;  
 **Redo**: ripristina l’ultima modifica cancellata al template.  
 
-![](/img/it-it/applications/crm/budget-marketing-automation/file.png)
-
 **Home**
 
 Questa Tab contiene i pulsanti per le funzionalità di base riguardanti l’editing del testo del Template, quali le dimensioni del carattere, gli elenchi, l’allineamento del testo, ecc.  
 Richiama le funzioni di base degli editor di testo più diffusi, quali Microsoft Word.  
-
-![](/img/it-it/applications/crm/budget-marketing-automation/home.png)
 
 **Insert**
 
@@ -59,8 +53,6 @@ Questa Tab contiene i pulsanti per inserire alcuni elementi al Template, quali t
 **Text Box**: permette di inserire una casella di testo nel Template;  
 **Symbol**: serve per inserire un simbolo speciale all’interno del Template.  
 
-![](/img/it-it/applications/crm/budget-marketing-automation/insert.png)
-
 **Merge data**
 
 In questa tab sono presenti i pulsanti necessari alla gestione ed all’inserimento dei merge data.  
@@ -72,6 +64,4 @@ In questa tab sono presenti i pulsanti necessari alla gestione ed all’inserime
 **Previous record**: permette di posizionarsi sul record precedente rispetto a quello attuale estrapolato dai merge data;  
 **Next record**: permette di posizionarsi sul record successivo rispetto a quello attuale estrapolato dai merge data;  
 **Last Record**: permette di posizionarsi sull’ultimo record estrapolato dai merge data.  
-
-![](/img/it-it/applications/crm/budget-marketing-automation/merge-data.png)
 
