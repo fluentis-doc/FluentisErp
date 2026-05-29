@@ -1,12 +1,12 @@
 ---
-title: Unos Otpremnice dobavljača
+title: Unos primke dobavljača
 sidebar_position: 1
 ---
 
 
 Putanje za stvaranje nove otpremnice:
 
-- odlazak na **Nabava > Otpremnice dobavljača > Kreiraj primku** 
+- odlazak na **Nabava > Primke > Kreiraj primku** 
 
 - ili putem gumba **Novo** koji se nalazi u obrascu [Pretraga primki](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/search-delivery-note).
 
@@ -14,7 +14,7 @@ U ovom dijelu automatski se predlaže trenutni **Datum** koji se može promijeni
 
 ## **1. Obavezni podaci**
 
-**Vrsta dostavnice u nabavi** predefinirana u *Konfiguracija > Tablice > Nabava > Vrste dostavnica u nabavi*; 
+**Vrsta primke** predefinirana u *Konfiguracija > Tablice > Nabava > Vrste dostavnica u nabavi*; 
 **Broj** i **Datum** dokumenta dodijeljeni od strane dobavljača.  
 **Dobavljač**, pomoću *polja za pomoć* ili *ručnim* unosom podataka.
 
@@ -28,7 +28,7 @@ Nakon odabira obveznih podataka u gornjem dijelu, korisnik može nastaviti [ruč
 Ako se dokument stvara *automatski*, ovi podaci preuzimaju se iz izvornog dokumenta iz kojeg je generiran.
 :::
 
-### 2.1 Dati fornitore
+### 2.1 Podaci dobavljača
 
 Unoseći **Dobavljača** automatski se *predlažu* svi specifični podaci iz kartice **Zaglavlje** prema prethodno postavljenim podacima u  [šifarnik dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) u odgovarajućim poljima adrese i *odjeljcima*: 
 
@@ -182,13 +182,13 @@ Da biste unijeli **Novi artikl** u mrežu, jednostavno se pozicionirajte na red 
 Ako se izravno kreće s unosom članka, njegova *klasa*, *kod* i *vrsta retka - Kodirani članak* automatski se unose.
 :::
 
-> **Artikl sa klasom**: to su članci kodirani u anagrafici i mogu se knjižiti u analitičkom knjigovodstvu i registrirati u skladištu.   
-> **Artikl Nekodirani**: to su opisni članci koji se mogu knjižiti u analitičkom knjigovodstvu, ali ih nije moguće premjestiti u skladište.  
+> **Artikl s klasom**: to su članci kodirani u anagrafici i mogu se knjižiti u analitičkom knjigovodstvu i registrirati u skladištu.   
+> **Artikl bez klase**: to su opisni članci koji se mogu knjižiti u analitičkom knjigovodstvu, ali ih nije moguće premjestiti u skladište.  
 > **Trošak**: To su kodirani ili nekodirani članci koji se posebno sažimaju u riječima u riječi dokumenta, ako je članak troškova kodiran i od poreznog interesa, bit će premješten u skladište, ako nije kodiran ili nije od poreznog interesa, neće se premještati u skladište. 
 
-**Bilješka o članku**: To su opisne bilješke koje se pojavljuju u ispisu dokumenta; ne utječe na računovodstvo i skladište.
+**Bilješka o artiklu**: To su opisne bilješke koje se pojavljuju u ispisu dokumenta; ne utječe na računovodstvo i skladište.
 
-**Razred/Kod/Opis članka**: Mogu se unijeti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili u [pomoći u polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koja će predložiti sve povezane podatke unesene u Šifarnik artikla.
+**Klasa/Kod/Opis artikla**: Mogu se unijeti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili u [pomoći u polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koja će predložiti sve povezane podatke unesene u Šifarnik artikla.
 
 Nakon unosa članka, njegov će se *Opis* automatski preuzeti iz šifarnika. Ako članak ima *Varijante*, trebat će odabrati željenu varijantu iz padajućeg izbornika *Varijante*. 
 
@@ -218,7 +218,7 @@ Nedostatak ovih podataka može uzrokovati pogreške u knjiženju računa koje ć
 
 **Alternativna količina**: prijedlog je vrijednosti povezane s alternativnom mjernom jedinicom., izračunato množenjem ili dijeljenjem *količine upravljanja* (vezano uz glavnu mjernu jedinicu.) s *faktorom pretvorbe postavljenim* u *Šifarnik artikla > kartica Alternativna mjerna jedinica*.
 
-**Skladište/Opis/Razlog**: ovi podaci potrebni su za knjiženje robe u skladište. Preuzimaju se prema dokumentu kupnje iz tablice *Tip naloga/Otpremnica/ Ulazni račun* ili se unose ručno.
+**Skladište/Opis/Predložak**: ovi podaci potrebni su za knjiženje robe u skladište. Preuzimaju se prema dokumentu kupnje iz tablice *Tip naloga/Otpremnica/ Ulazni račun* ili se unose ručno.
 
 **Težine**: prikazane su ukupne neto i bruto težine redova članaka. Težine članaka u anagrafici pomnožene su količinom reda.
 

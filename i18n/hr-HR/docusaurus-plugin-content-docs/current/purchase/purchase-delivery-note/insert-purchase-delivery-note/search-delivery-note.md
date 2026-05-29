@@ -1,10 +1,10 @@
 ---
 title: Pretraga primki
 sidebar_position: 2
-description: DDT di acquisto
+description: Primka
 ---
 
-Obrazac se otvara putem putanje **Nabava > Otpremnice dobavljača > Pretraga primki**.
+Obrazac se otvara putem putanje **Nabava > Primke > Pretraga primki**.
 
 Omogućuje pretraživanje svih dokumenata kako bi ih se moglo pregledati, urediti, eventualno izbrisati ili dodati novi dokument. Prozor se sastoji od područja za filtriranje i mreže rezultata.
 
@@ -33,7 +33,7 @@ Dodavanje novih polja u obrasce pretraživanja
 
 *Postupak*:
 > 1. Odaberite dokument za poništavanje i kliknite na gumb **Storno**. Aplikacija će otvoriti pop-up prozor sa svim redovima artikla iz izvornog dokumenta.   
-> 2. Unesite u ovaj obrazac: **Tip storno dokumenta** koji želite stvoriti i, za svaki artikl, navedite **Količinu za stornirati**, **Uzrok storniranja** i aktivirajte opciju **Storno**.
+> 2. Unesite u ovaj obrazac: **Tip storno dokumenta** koji želite stvoriti i, za svaki artikl, navedite **Količinu za stornirati**, **Predložak storniranja** i aktivirajte opciju **Storno**.
 > 3. Kliknite **OK** za potvrdu operacije.  
 
 Povezanost između storno dokumenta i izvornog dokumenta mora se ručno unijeti u **Zaglavlje** novog dokumenta.
