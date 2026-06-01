@@ -1,9 +1,9 @@
 ---
-title: Stvaranje ulaznih računa za kupnju iz evidencije primljenih proizvoda
+title: Kreiranje ulaznog računa iz prijema robe
 sidebar_position: 2
 ---
 
-Postupak se pokreće putem **Nabava > Ulazni računi > Postupci > Generiranje računa iz evidencije primljenih proizvoda**
+Postupak se pokreće putem **Nabava > Ulazni računi > Procedure > Kreiranje ulaznog računa iz prijema robe**
 
 ### Filtri
 
@@ -14,16 +14,22 @@ Ova sekcija pruža mogućnost primjene filtara za pretraživanje zaprimljenih pr
 
 *Posebni gumbi*:
 
+> **Kreiranje ulaznog računa iz prijema robe**: nakon što su postavljeni potrebni parametri i odabrani retci za valorizaciju, račun se može kreirati korištenjem ovog gumba.
+
 ### Parametri
 
 U ovoj kartici korisnik ima mogućnost konfiguriranja parametara za stvaranje računa.
 
-Obvezna polja uključuju: [Vrsta računa za kupnju](/docs/configurations/tables/purchase/purchase-invoices-type), [Porezna stopa](/docs/configurations/tables/finance/vat-rates) i Vrsta naplate kupnje.
+Obvezna polja uključuju: [Vrsta ulaznog računa](/docs/configurations/tables/purchase/purchase-invoices-type), [PDV](/docs/configurations/tables/finance/vat-rates) i Vrsta prometa nabave.
 
-### Poništavanje
+**Dodatne opcije**:
+
+> Preračunaj centre troškova/prihoda: omogućuje odabir želi li se prilikom kreiranja računa izvršiti ponovni izračun centara troškova i/ili prihoda. Ako je opcija aktivirana, sustav će pri kreiranju računa ponovno odrediti raspodjelu po centrima troškova/prihoda prema važećim pravilima i
+
+### Povrat
 
 Pruža mogućnost pretraživanja, pregleda i poništavanja provedenih operacija.
 
-:::note POSEBNOSTI
-Svaki redak u gornjoj mreži (koji sadrži broj, datum i korisnika koji je stvorio račun) odgovara jednom ili više redaka u donjim mrežama *Računi* i *Zaprimljeni proizvodi*. U ovim dvjema mrežama, dvostrukim klikom na odgovarajući redak, korisnik može pregledati nedavno stvoren račun ili zaprimanje proizvoda.
-:::
+Za poništavanje operacije potrebno je u gornjoj tablici odabrati redak koji odgovara računu koji se želi obrisati te kliknuti na gumb „Povrat” (Rollback) na alatnoj traci (Ribbon Bar).
+Svakom retku u gornjoj tablici (koja sadrži broj dokumenta, datum i korisnika koji je kreirao račun) odgovara jedan ili više redaka u donjim tablicama Računi i Zaprimanja robe.
+U tim dvjema tablicama korisnik može dvostrukim klikom na željeni redak otvoriti i pregledati upravo kreirani račun ili pripadajuće zaprimanje robe.

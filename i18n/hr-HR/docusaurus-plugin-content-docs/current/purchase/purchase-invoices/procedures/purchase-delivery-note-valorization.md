@@ -3,14 +3,14 @@ title: Valorizacija primke
 sidebar_position: 3
 ---
 
-Postupak se otvara putem **Nabava > Ulazni računi > Postupci > Valorizacija primke**. 
+Postupak se otvara putem **Nabava > Ulazni računi > Procedure > Valorizacija primke**. 
 
-Ova procedura omogućuje izvođenje/ponovno pokretanje stvaranja računa za kupnju iz jednog ili više ulaznih dostavnih naloga.
+Ova procedura omogućuje izvođenje/ponovno pokretanje stvaranja ulaznog računa iz jednog ili više ulaznih dokumenata.
 
 
 ### Valorizacija
 
-Na ovom je zaslonu korisniku omogućeno korištenje filtara za pretraživanje ulaznih otpremnice koji će biti fakturirani pomoću filtara (vrsta otpremnice, datum, broj, dobavljač).
+Na ovom je zaslonu korisniku omogućeno korištenje filtara za pretraživanje primki koje će biti fakturirane, pomoću filtara (vrsta primke, datum, broj, dobavljač).
 
 **Datum kreiranja**: omogućuje specificiranje datuma računa koji će biti stvoren.
 
