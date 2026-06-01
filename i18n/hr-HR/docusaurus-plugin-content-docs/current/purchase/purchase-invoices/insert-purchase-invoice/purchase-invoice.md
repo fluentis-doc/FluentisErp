@@ -7,11 +7,11 @@ Ovaj se obrazac otvara putem **Nabava > Ulazni računi > Kreiranje ulaznih raču
 
 U obrascu za unos automatski se predlaže trenutni **Datum** ali ga korisnik može promijeniti.
 
-## **1. Dati obbligatori**
+## **1. Obavezni podaci**
 
-Za nastavak stvaranja računa za kupnju, korisnik mora unijeti obavezna polja:
+Za nastavak stvaranja ulaznog računa, korisnik mora unijeti obavezna polja:
 
-- **Tip računa** predefinirana u **Tablice > Nabava > [Tip ulaznog računa](/docs/configurations/tables/purchase/purchase-invoices-type)**;
+- **Vrsta ulaznog računa** predefinirano u **Tablice > Nabava > [Tip ulaznog računa](/docs/configurations/tables/purchase/purchase-invoices-type)**;
 
 - **Datum** i **Broj** dokumenta dodijeljen od strane dobavljača;
 
@@ -27,7 +27,7 @@ Nakon odabira obveznih podataka u gornjem dijelu, korisnik može nastaviti [ruč
 Ako se dokument *kreira automatski*, ovi podaci preuzimaju se iz *izvornog dokumenta* iz kojeg je generiran.
 :::
 
-### 2.1 Dati fornitore
+### 2.1 Podaci dobavljača
 
 Unoseći **Dobavljača** automatski se *predlažu* svi specifični podaci iz kartice **Zaglavlje**, prema prethodno postavljenim podacima u [šifarnik dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) u odgovarajućim poljima adrese i *odjeljcima*:  
 
@@ -37,24 +37,24 @@ Unoseći **Dobavljača** automatski se *predlažu* svi specifični podaci iz kar
 
 ### 2.2 Ostala opcionalna polja
 
-**Status računa**: kada se račun stvori, nema aktivnih zastava. Ovaj odjeljak uključuje sljedeća polja:  
+**Status računa**: kada se račun stvori, nema aktivnih zastavica. Ovaj odjeljak uključuje sljedeća polja:  
 > **Kontrolirano**: aktivna zastava omogućuje knjiženje računa;  
-> **Knjiženo**: zastava se automatski aktivira kada račun podržava  [postupak knjiženja](/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting);  
-> **Utovareno**: zastava postaje aktivna kada račun podržava [postupak učitavanja]header-procedures/automatic-loading-on-warehouse). U slučaju da je račun stvoren iz već učitanog prijevoznog dokumenta, prisutan je opći parametar VE-PurchaseInvoices_VerifyLoadStatusDDT koji blokira zastavu Učitano i na računu.   
-> **Otkazano**: aktivna zastava omogućuje poništenje računa.
+> **Knjiženo**: zastavica se automatski aktivira kada račun podržava  [postupak knjiženja](/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting);  
+> **Utovareno**: zastavica postaje aktivna kada račun podržava [postupak učitavanja (stavljanja) na skladište]header-procedures/automatic-loading-on-warehouse). U slučaju da je račun stvoren iz već učitanog prijevoznog dokumenta, prisutan je opći parametar VE-PurchaseInvoices_VerifyLoadStatusDDT koji blokira zastavicu Učitano i na računu.   
+> **Otkazano**: aktivna zastavica omogućuje poništenje računa.
 
 :::NAPOMENA
 Oznake se mogu ukloniti postupkom vraćanja operacije.  
 :::
 
-**Bilješke dobavljača**: predlaže se informacija unesena u kartoteku dobavljača, dok se u slučaju automatskog stvaranja iz drugog dokumenta preuzimaju isti podaci koji se nalaze u odgovarajućem polju izvornog dokumenta.
+**Bilješke dobavljača**: predlaže se informacija unesena u šifarnik dobavljača, dok se u slučaju automatskog stvaranja iz drugog dokumenta preuzimaju isti podaci koji se nalaze u odgovarajućem polju izvornog dokumenta.
 
 Također se može ručno unijeti. Desnim klikom miša moguće je otvoriti formu za specificiranje dugog teksta bilješke; ako polje sadrži vrijednost, boja pozadine polja mijenja se.
 
 **Naša/Vaša referenca**: kada se dovrši postupak:
 - [Izvršenje narudžbenice](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders), također se nudi informacija iz odgovarajućeg polja narudžbenice. 
  
-Ovaj prijenos vrijedi samo ako je faktura stvorena povlačenjem podataka iz samo jedne narudžbenice.
+Ovaj prijenos vrijedi samo ako je faktura stvorena preuzimanjem podataka iz samo jedne narudžbenice.
 
 - [Valorizacija dostavnice kupnje](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization), predlaže se informacija iz odgovarajućeg otpremnice.
 
@@ -72,23 +72,23 @@ Ovo udruživanje funkcionira samo na razini zaglavlja članka.
 
 **Referenca**: nakon što stvori [storno](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) fakture, korisnik mora povezati dvije fakture unoseći *broj*, *datum* i *vrstu* izvorne fakture;
 
-**Račun potraživanja**: navodi broj, datum i protokol knjiženja koji proizlazi iz knjiženja fakture.
+**Knj. zap.**: navodi broj, datum i protokol knjiženja koji proizlazi iz knjiženja fakture.
 
 ### 2.3 Plaćanja
 
-**Rješenja za plaćanje** automatski se prenose iz *Šifarnik dobavljača > kartica Plaćanja* i mogu se mijenjati/brisati od strane korisnika.
+**Plaćanja** se automatski prenose iz *Šifarnik dobavljača > kartica Plaćanja* i mogu se mijenjati/brisati od strane korisnika.
 
 Ako je **Tip plaćanja** povezan sa financijskim popustom, iznos popusta uzima se u obzir samo u računovodstvene svrhe, odnosno u rokovima plaćanja dokumenta, a ne u ukupnom iznosu računa.
 
 Ako dokument potječe iz:
 
-- *Narudžbenice dobavljača*, tipovi plaćanja mogu se preuzeti iz prvog dokumenta ili iz Šifarnika dobavljača; sva plaćanja dokumenata koji se moraju obraditi mogu se prikazati na jednom obrascu, a korisnik može odabrati željeni tip plaćanja.
+- *Narudžbe dobavljača*, tipovi plaćanja mogu se preuzeti iz prvog dokumenta ili iz Šifarnika dobavljača; sva plaćanja dokumenata koji se moraju obraditi mogu se prikazati na jednom obrascu, a korisnik može odabrati željeni tip plaćanja.
 
 - *Otpremnice*, plaćanja dobavljača mogu se zadržati ili pojedinačna plaćanja prisutna u svakoj otpremnici; u ovom slučaju, u računu se prikazuje tip plaćanja s osnovicom i PDV-om istim kao i otpremnici; nadalje, za eventualne redove artikala dodane u račun, a koje ne proizlaze iz otpremnice, dodaje se novi red.
 
 #### Posebni gumb
 
-**Otkaži plaćanja**: koristi se za brisanje odabranih redova plaćanja.
+**Izbriši plaćanje**: koristi se za brisanje odabranih redova plaćanja.
 
 ### 2.4 Popusti
 
@@ -100,7 +100,7 @@ Ako nakon unosa redaka artikala unesete novi popust u zaglavlje, on se ne replic
 
 #### Posebni gumb
 
-**Izbriši rabate**: koristi se za brisanje odabranih redova popusta.
+**Otkaži (rabate)**: koristi se za brisanje odabranih redova popusta.
 
 ### 2.5 Pošiljka
 
@@ -110,21 +110,68 @@ Padajući izbornik nudi sve *Primatelje* i *Odredišta* unesena u  Šifarnik dob
 
 Adrese dostave (primatelj/odredište i prijevoznik) mogu se unijeti samo kao opis bez prethodnog unosa među kontaktima.
 
-### 2.6 Dodatni podaci
+### 2.6 Prijevoznik
+
+U ovom polju moguće je unijeti prijevoznika koji će obaviti isporuku. Ako je prijevoznik definiran u kartici dobavljača, na kartici „Isporuka“, moći će se odabrati iz padajućeg izbornika u drugom stupcu. U suprotnom, dovoljno je dvostruko kliknuti na treći stupac (Prijevoznik) kako bi se odabrao jedan od kontakata tvrtke.
+
+Po želji je moguće unijeti i podatke o registarskoj oznaci vozila prijevoznika te datum i vrijeme prijevoza.
+
+### 2.7 Dodatni podaci
 
 Ovdje se predlaže informacija unesena u *Šifarnik subjekta > kartica Dodatni podaci*, samo ako postoje zadani podaci.
 
-### 2.8 Procedure testata
+## Procedure:
 
-#### Izuzimanje iz narudžbe od strane dobavljača
+### Automatski utovar (zaduživanje) skladištda
 
-Na zaglavlju dokumenta, pritiskom na dugme **Izuzimanje iz narudžbe od strane dobavljača** otvorit će se obrazac gdje možete filtrirati narudžbe dobavljača koje se odnose na dobavljača u dokumentu.
+Ovaj postupak pokreće se pomoću gumba **Automatsko zaduživanje skladišta** koji se nalazi u zaglavlju dokumenta i poštuje niz prethodno postavljenih parametara na računu. Za detalje pogledajte identičan postupak: [Učitavanje računa o kupnji u skladište](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
+
+Rezultat se može vidjeti u Logistika > [Zapisi](/docs/logistics/warehouse/stock-records/records) ili u proceduri [Zaduženje skladišta ulaznim računima](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
+
+### Izvršenje otpremnice/primke
+
+Postupak omogućuje izradu ulaznog računa preuzimanjem stavki iz jednog ili više dobavljačevih dokumenata. U zaglavlju računa, klikom na gumb „Izvršenje otpremnice/primke” otvara se prozor za odabir i filtriranje dokumenata vezanih uz odabranog dobavljača. Odabrane stavke mogu se prenijeti na račun, uz mogućnost potpunog ili djelomičnog zatvaranja dokumenata.
+
+Kako bi se postupak mogao koristiti, moraju biti ispunjeni sljedeći uvjeti:
+
+- dobavljač na odabranim dokumentima mora odgovarati dobavljaču navedenom na računu;
+- dokument mora imati status Kontrolirano, a status Valorizirano ne smije biti postavljen.
+
+#### Postupak
+
+U zaglavlju novog ulaznog računa potrebno je odabrati vrstu računa koju želite kreirati te dobavljača. Nakon unosa tih podataka potrebno je kliknuti na gumb „Izvršenje otpremnice/primke” kako bi se otvorio obrazac za preuzimanje dokumenata.
+
+Filteri za dobavljača i valutu automatski će se postaviti prema podacima dobavljača odabranog na računu.
+
+U području za filtriranje moguće je odabrati način prikaza podataka u tabličnom prikazu (Grid), u hijerarhijskoj strukturi, ili kombinacijom oba prikaza istovremeno.
+
+> Hijerarhijska struktura omogućuje pregledniji prikaz DDT dokumenata dostupnih za preuzimanje te artikala sadržanih u svakom od njih. Također omogućuje masovni odabir svih artikala unutar pojedinog DDT-a jednostavnim označavanjem kućice (flag-a) na retku DDT dokumenta.
+
+> Tablični prikaz (Grid) omogućuje veću prilagodbu obrasca dodavanjem polja putem Object Navigatora. U tom slučaju masovni odabir stavki obavlja se korištenjem tipki na tipkovnici, nakon čega je potrebno kliknuti na gumb „Odaberi/Odznači” na alatnoj traci (Ribbon Bar).
+
+Nakon što se postave svi željeni filtri, klikom na gumb „Traži” u donjem dijelu prikazat će se svi dokumenti koji imaju status „Kontrolirano”, a još nisu valorizirani ili su valorizirani samo djelomično.
+
+U prikazu rezultata korisnik zatim može:
+
+- Odabrati sve ili samo pojedine artikle – dovoljno je označiti opciju (flag) na početku retka artikla. Količina za preuzimanje automatski će se postaviti jednako preostaloj količini.
+
+- Odabrati pojedine artikle za djelomično preuzimanje – u tom slučaju potrebno je ručno izmijeniti polje Količina za preuzimanje.
+
+Za dovršetak postupka potrebno je kliknuti na gumb „Prijenos”, nakon čega će sustav preuzeti sve podatke iz odabranih dokumenata i prenijeti ih na ulazni račun.
+
+:::tip Zapamti 
+Napomene unesene u zaglavlju dokumenta (kao što su Naša referenca, Vaša referenca ili Početne napomene) prenose se u zaglavlje računa samo ako se podaci preuzimaju iz jednog dokumenta. Ako se račun kreira preuzimanjem podataka iz više dokumenata, navedene napomene neće se automatski prenijeti u zaglavlje računa. 
+:::
+
+### Izuzimanje iz narudžbe (od strane dobavljača)
+
+Na zaglavlju dokumenta, pritiskom na dugme **Izuzimanje iz narudžbe** otvorit će se obrazac gdje se mogu filtrirati narudžbe dobavljača koje se odnose na dobavljača u dokumentu.
 
 Moguće je zatim unijeti stavke unutar fakture, potpuno ili djelomično ispunjavajući cijelu narudžbu ili redak.
 
 #### Posebni gumbi
 
-> **Pretraži**: omogućuje pretraživanje narudžbi dobavljača.  
+> **Traži**: omogućuje pretraživanje narudžbi dobavljača.  
 > **Prijenos**: omogućuje prijenos odabranih artikala/narudžbi.   
 > **Prisilno izvršenje narudžbe**: omogućuje silovito ispunjenje narudžbe.  
 > **Izvršenje narudžbi**: omogućuje ispunjenje narudžbe.   
@@ -147,11 +194,7 @@ Koristite oznake (**3**) za označavanje  ![](/img/neutral/common/check.png) / o
 
 Izvršite ispunjenje pomoću gumba **Prijenos**.
 
-#### Automatski utovar skladištda
 
-Ovaj postupak pokreće se pomoću gumba **Automatski utovar skladišta** koji se nalazi u zaglavlju dokumenta i poštuje niz prethodno postavljenih parametara na računu. Za detalje pogledajte identičan postupak: [Učitavanje računa o kupnji u skladište](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
-
-Rezultat se može vidjeti u Logistika > [Zapisi](/docs/logistics/warehouse/stock-records/records) ili u postupku [Učitavanje računa o kupnji u skladište](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
 
 ## **3. Artikli**
 
