@@ -1,9 +1,9 @@
 ---
-title: Izvještaj ulaznih računa
+title: Izvještaji ulaznih računa
 sidebar_position: 6
 ---
 
-Printanje se otvara putem putanje **Nabava > Ulazni računi > Printanje**. 
+Printanje se otvara putem putanje **Nabava > Ulazni računi > Izvještaji**. 
 
 > **Ispis ulaznih računa**: omogućuje filtriranje i printanje računa.      
 > **Popis ulaznih računa**: omogućuje filtriranje i sortiranje liste računa.     
