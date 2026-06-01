@@ -229,39 +229,97 @@ Ako se račun kreira preuzimanjem podataka iz više narudžbi, navedene napomene
 U slučaju višestrukih djelomičnih preuzimanja iste stavke artikla unutar istog računa, moguće je odabrati hoće li se količine zbrojiti u jednu stavku na računu ili će ostati prikazane kao zasebni retci. To se određuje u tablici Vrste ulaznih računa: ako je oznaka „Ne zbrajaj količine artikla pri preuzimanju” deaktivirana, količine će se zbrojiti u jedan redak računa; ako je oznaka aktivirana, svako djelomično preuzimanje bit će prikazano u zasebnom retku računa.
 :::
 
+### Sdi zatvaranje dokumenata
+
+Klikom na gumb „SDI – Zatvaranje dokumenata” otvara se modul koji omogućuje ručno povezivanje narudžbi i DDT dokumenata nabave s računima generiranim iz zaprimljenih XML datoteka. Ovaj se postupak također automatski pokreće kada se povezivanje izvrši iz ekrana Ulazni dokumenti nabave. Modul je podijeljen u dva glavna dijela: lijevi dio namijenjen je prikazu DDT dokumenata i narudžbi; desni dio prikazuje stavke (artikle) računa.
+
+Tablica narudžbi i primki/otpremnica sadrži sljedeće stupce:
+
+- Broj povezanog retka računa
+- Vrsta dokumenta
+- Broj dokumenta
+- Datum
+- Broj retka
+- Klasa artikla
+- Šifre artikla
+- Opis artikla
+- Količina
+- Cijena
+- Ukupni popust
+- Neto iznos
+- Jedinična neto cijena
+
+Retci koji su već povezani sa stavkama računa bit će označeni zelenom bojom kako bi ih bilo lakše prepoznati.
+
+Tablica računa sadrži sljedeće stupce:
+
+- Broj retka
+- Klasa artikla
+- Šifre artikla
+- Opis artikla
+- Količina
+- Cijena
+- Ukupni popust
+- Neto iznos
+- Jedinična neto cijena
+
+Retci koji su već povezani sa stavkama dokumenata primki/otpremnica ili narudžbi bit će posebno označeni kako bi se olakšala provjera. U ovim tablicama prikazuju se samo retci dokumenata ili narudžbi koji još nisu obrađeni (preuzeti) niti su prethodno ručno povezani. 
+
+Za uspostavu veze potrebno je u stupac „Broj povezanog retka računa” unijeti broj retka računa s kojim se želi povezati dokument, a zatim na alatnoj traci kliknuti gumb „Poveži”.
+
+:::note Napomena
+Isti broj retka računa ne može istovremeno biti povezan i s dokumentom primki/otpremnica i s narudžbom.
+:::
+
+Klikom na gumb „Poveži” retci koji imaju popunjeno polje „Broj povezanog retka računa” bit će povezani i obrađeni u odgovarajućim DDT dokumentima ili narudžbama. Gumb „Poništi povezivanje” (Rollback Associa) omogućuje uklanjanje uspostavljene veze te vraćanje ispravnog statusa obrade za povezane DDT dokumente ili narudžbe.
+
+Tijekom postupka povezivanja sustav provodi nekoliko kontrola kako bi osigurao usklađenost podataka:
+
+- Cijene: provjeravaju se razlike između cijena navedenih na narudžbama/dokumentima otpremnica-primka i cijena na automatski generiranom računu.
+- Popusti: provjeravaju se odstupanja u ukupnim iznosima popusta.
+- Jedinična neto cijena: provjeravaju se razlike između jedinične neto cijene navedene na računu i one na dokumentima/narudžbama.
+- Ukupni iznos: provjeravaju se razlike između ukupnog iznosa računa i zbroja ukupnih iznosa povezanih stavki na dokumentima/narudžbama.
+
+Ako jedna ili više navedenih provjera ne prođu uspješno, povezivanje se neće izvršiti automatski. U tom slučaju pogreška će biti prikazana u tablici pogrešaka, zajedno s brojem retka računa na koji se odnosi i opisom utvrđene nepravilnosti.
+
+
 ## **3. Artikli**
 
 U ovoj kartici unose se svi artikli sa pripadajućim podacima.
 
 Podaci se unose **ručno**, uz pomoć **polja za pomoć** ili ih mogu predložiti povezane procedure.
 
-Da biste unijeli **Novi artikl** u mrežu, dovoljno je postaviti se na red kako biste popunili različite podatke ili koristiti gumb **Novo** u traci s vrpcom.
+Da biste unijeli **Novi artikl** u obrazac, dovoljno je postaviti se na red kako biste popunili različite podatke ili koristiti gumb **Novo** u traci s vrpcom.
 
-### 3.1 DObavezni podaci
+:::note Napomena
+Ako je račun kreiran preuzimanjem podataka iz narudžbe ili iz dokumenta nabave, obavezni podaci bit će automatski preuzeti iz izvornog dokumenta.
+:::
 
-**Broj linije**: ovo polje popunit će se automatski i postupno unosom podataka u redak.
+### 3.1 Obavezni podaci
+
+**Red**: ovo polje popunit će se automatski i postupno unosom podataka u redak.
 
 **Tip linije**: pruža mogućnost odabira različitih artikla iz okvira za odabir.
 
-:::note NAPOMENA
-Ako se izravno krene s unosom artikla, njegova *klasa*, *kod* i *vrsta retka* - *Kodirani artikl* unose se automatski.
-:::
-
-> **Artikl sa klasom**: to su artikli kodirani u šifarniku i mogu se knjižiti u analitičkom računovodstvu i registrirati u skladištu.  
-> **Artikl Ne-kodiran**: to su opisni artikli koji se mogu knjižiti u analitičkom računovodstvu, ali ih nije moguće knjižiti u skladištu.  
-> **Trošak**: to su kodirani ili nekodirani artikli koji su posebno sažeti u sažecima dokumenata; ako je artikl troškova kodiran i od interesa za poreze, bit će pomican u skladištu, ako nije kodiran ili nije od interesa za poreze, neće se pomicati u skladištu.  
+> **Artikl sa šifrom**: to su artikli kodirani u šifarniku i mogu se knjižiti u analitičkom računovodstvu i knjižiti u skladištu.  
+> **Artikl bez šifre**: to su opisni artikli koji se mogu knjižiti u analitičkom računovodstvu, ali ih nije moguće knjižiti u skladištu.  
+> **Artikl troška**: to su kodirani ili nekodirani artikli koji su posebno sažeti u sažecima dokumenata; ako je artikl troškova kodiran i od značenja za poreze, bit će knjižen u skladištu, ako nije kodiran ili nije od temelja za poreze, neće biti knjižen u skladištu.  
 > **Napomena o artiklu**: to su opisne napomene koje se prikazuju u ispisu dokumenta; ne utječe na računovodstvo i skladište.  
 > **Gratis artikl**: artikl za poklon se tretira kao kodirani ili nekodirani artikl u fiskalne i skladišne svrhe, ali budući da je poklon, zasebno se evidentira u sažecima računa. Ako je postavljena zastavica 'Pravo naplate PDV-a' na kartici, izračunava se iznos PDV-a za poklon, koji može ili ne mora biti na teret dobavljača.  
 
-**Klasa/Kod/Opis artikla**: mogu se unijeti ručno ili uz pomoć polja za pomoć koje će predložiti sve povezane informacije unesene u *Šifarnik artikla*.
+:::note NAPOMENA
+Ako se izravno krene s unosom artikla, njegova *klasa*, *kod* i *vrsta linije* - *Artikl sa šifrom* unose se automatski.
+:::
 
-Nakon unosa artikla, njegov će *Opis* automatski biti preuzet iz evidencije. Ako artikl ima *Varijacije*, morat ćete odabrati željenu varijantu iz padajućeg izbornika *Varijante*. 
+**Klasa/Artikl/Opis artikla**: mogu se unijeti ručno ili uz pomoć polja za pomoć koje će predložiti sve povezane informacije unesene u *Šifarnik artikla*.
 
-**Varijante**: ako odabrani artikl ima varijacije, morat ćete odabrati željenu varijantu iz ovog padajućeg izbornika. Odabir varijante koristan je za artikle s ovom posebnom konfiguracijom koji mogu imati različitu cijenu od postavljene standardne cijene. Stoga cijena artikla s varijacijama može biti različita od cijene artikla bez varijacija. To može zahtijevati upravljanje varijacijama artikla u referentnom cjeniku.
+Nakon unosa artikla, njegov će *Opis* automatski biti preuzet iz šifarnika. Ako artikl ima *Varijante*, mora se odabrati željena varijantu iz padajućeg izbornika *Varijante*. 
 
-**Količina**: predstavlja količinu glavne jedinice mjere i pretpostavljena je vrijednost 1; može se unijeti ručno ili se može preuzeti iz dokumenta koji se razmatra za izvršenje (npr. iz narudžbenice).
+**Varijante**: ako odabrani artikl ima varijacije/varijante, mora se odabrati željena varijanta iz padajućeg izbornika. Odabir varijante koristan je za artikle s ovom posebnom konfiguracijom koji mogu imati različitu cijenu od postavljene standardne cijene. Stoga cijena artikla s varijantama može biti različita od cijene artikla bez varijacija. To može zahtijevati upravljanje varijantama artikla u referentnom cjeniku.
 
 **Jedinica mjere**: automatski se predlaže glavna jedinica mjere artikla, ali korisnik može odabrati drugu jedinicu mjere. 
+
+**Količina**: predstavlja količinu glavne jedinice mjere i pretpostavljena je vrijednost 1; može se unijeti ručno ili se može preuzeti iz dokumenta koji se razmatra za izvršenje (npr. iz narudžbenice).
 
 **Cijena**: cijena se predlaže iz cjenika unesenog u evidenciju kontakata; referentni cjenik za sam artikl prikazan je na kartici *Popusti/Cjenici*.
 
@@ -270,6 +328,10 @@ Isti dokument može sadržavati artikle s cijenama preuzetim iz različitih cjen
 Dvoklikom u polje **Cjenici** (kartica *Popusti/Cjenici*) korisnik ima mogućnost odabira drugačije ponude od zadane, iz koje će se preuzeti cijena unesenog artikla.
 
 Ako nema cjenika, predloženi podatak može se preuzeti iz **posljednje nabavne cijene** unesene u šifarnik artikla, ako u kartici [Postavkama narudžbenica dobavljača](/docs/erp-home/registers/items/create-new-item) nije postavljeno da se *trošak postavlja na nulu* u odsutnosti cjenika.
+
+**Iznos**: automatski se izračunava nakon primjene svih popusta, odnosno predstavlja neto iznos stavke umanjen za odobrene popuste.
+
+**Ukupno rabat**: prikazuje ukupan iznos svih popusta definiranih na kartici Popusti/Cjenici za pojedini redak artikla.
 
 **PDV**: prioritet ima podatak unesen u polje PDV *Šifarnik kontakta*. Ako toga nema, predložena je vrijednost iz *Šifarnik artikla*, ali korisnik ima mogućnost unosa drugog podatka. To je obavezno polje.
 
@@ -283,54 +345,71 @@ Moguće je da nedostatak te informacije uzrokuje pogreške u knjiženju računa 
 
 **Alternativna količina**: predložena je vrijednost koja se odnosi na alternativnu mjeru, a izračunava se množenjem ili dijeljenjem *upraviteljske količine* (koja se odnosi na glavnu jedinicu mjere) s *faktorom pretvorbe* postavljenim u kartici *Alternativne mjernih jedinica u šifarnik artikla*.
 
-**Skadište/Opis/Uzrok**: Ovi podaci su potrebni za evidentiranje ulaza u skladištu. Preuzimaju se na osnovu dokumenta nabave iz tablice *Vrste narudžbi/OTP/Primke* ili se unose ručno.
+**Skadište/Opis/Predložak**: Ovi podaci su potrebni za evidentiranje ulaza u skladištu. Preuzimaju se na osnovu dokumenta nabave iz tablice *Vrste narudžbi/Otpremnice/Primke* ili se unose ručno.
 
 **Težine**: Navode se ukupne neto i bruto Težine stavki artikla. Navode se težine artikala iz šifarnika pomnožene s količinom stavke.
 
 #### Posebni gumbi
 
-> **Upravljanje pakiranjem**: omogućuje otvaranje upravljanja pakiranjem za vraćene stavke u dokumentima nabave. Gumb postaje aktivan kada je dokument spremljen, ali ne učitan. Klikom na ovaj gumb otvara se odgovarajući obrazac gdje možete unijeti količinu, odabrati stavku i izvršiti transfer odabranog pakiranja u stavke artikla pritiskom na gumb **Izvrši**. Na ovom se obrascu prikazuju artikli koji su uneseni s prirodom pakiranja i koji se nalaze u tablici **Vraćena pakiranja**.  
+> **Upravljanje ambalažom**: omogućuje otvaranje upravljanja pakiranjem za vraćene stavke u dokumentima nabave. Gumb postaje aktivan kada je dokument spremljen, ali ne učitan. Klikom na ovaj gumb otvara se odgovarajući obrazac gdje možete unijeti količinu, odabrati stavku i izvršiti transfer odabranog pakiranja u stavke artikla pritiskom na gumb **Izvrši**. Na ovom se obrascu prikazuju artikli koji su uneseni s prirodom pakiranja i koji se nalaze u tablici **Vraćena pakiranja**.  
 > **Storno**: omogućuje storniranje tipova dokumenata koji imaju prirodu povrata.    
 > **Ažurirajte cjenike**: omogućuje ažuriranje cijene artikla prema novom cjeniku (ako je unesen ažurirani cjenik).
 Klikom na padajući izbornik pored gumba, bit će moguće stvoriti novi cjenik ako još nije stvoren.
+
+:::important Zapamti
+Prilikom kreiranja ili ažuriranja cjenika putem ove procedure, u cjenik se prenose samo oni popusti koji su ručno uneseni na računu.
+:::
 
 ### 3.3 Popusti/Cjenici  
 
 **Cjenik**: nudi se cjenik iz kojeg je preuzet artikl, s datumom početka/završetka važenja te s posebnim uvjetima (npr. raspon popusta) dodijeljenim artiklu u cjeniku;
 
+**Ručna cijena**: automatski se aktivira kada je cijena artikla unesena ili izmijenjena ručno od strane korisnika.
+
 **Popusti**: nudi se svi popusti povezani s artiklom, svaki s vlastitom osnovom izračuna i dodjelom.
 
-#### Poseban gumb*
+#### Poseban gumb
 > **Izbriši rabate**: omogućuje brisanje odabranog popusta iz odgovarajuće mreže.
 
-### 3.3 Podaci 
+:::important Zapamti
+Za upravljanje popustima na poreznu osnovicu potrebno je u bazi podataka aktivirati opći parametar GEN-GlobalSettings_CalculateDiscountOnAmount za odgovarajuće poduzeće. Ako navedeni parametar nije aktivan, popusti na poreznu osnovicu automatski će se pretvoriti u kaskadne popuste.
+:::
 
-**Lokacija**: ponuđuje se samo ako je za odabrani artikl odabran skladište.
+### 3.4 Podaci artikla
 
-**Projekt**: predstavlja projekt povezan s dokumentom. Može se unijeti i pomoću odgovarajuće pomoći za projekte.
+**Artikl**: prikazuje klasu, šifru i opis artikla odabranog u tabličnom prikazu (gridu).
+
+**Varijante**: U ovom polju moguće je odabrati varijantu artikla među onima koje su prethodno definirane na kartici „Varijante” u matičnim podacima artikla. Ako su u cjeniku za pojedine varijante definirane različite cijene i/ili popusti, oni će se automatski ažurirati prilikom odabira druge varijante artikla.
+
+**Napomene**: odnose se na pojedini redak artikla. Mogu se unijeti i putem pomoći za unaprijed definirane (kodificirane) napomene. Bit će prenesene u sve dokumente koji se naknadno generiraju iz ovog dokumenta.
+
+**Skladište i predložak**: predlažu se skladište i predložak koji će se automatski koristiti prilikom knjiženja zaprimanja pripadajućih artikala na skladište. Ti se podaci preuzimaju iz Vrste ulaznih računa ili iz narudžbe odnosno otpremnica/primki, ako je račun nastao preuzimanjem narudžbe ili valorizacijom otpremnica/primki. Podaci se mogu ručno izmijeniti za svaki redak artikla pojedinačno.
+
+**Lokacija**: automatski se predlaže ako je uz odabrani skladišni predložak definirana lokacija u tablici Skladišni predložak ili ako je za artikl definirana lokacija u Mapi lokacija po artiklu. Vrijednost se po potrebi može ručno unijeti ili izmijeniti.
+
+**Alternativna mjerna jedinica / Alternativna količina**: ako je u matičnim podacima artikla definirana alternativna mjerna jedinica s aktiviranom oznakom Zadano, te je u Parametrima dobavljačkih narudžbi aktivirana opcija Automatski prijedlog alternativne mjerne jedinice, ove će se vrijednosti automatski predložiti prilikom unosa artikla.
+
+**Cijena za alternativnu mjernu jedinicu**: ako je ova oznaka aktivna, znači da se cijena unesena na retku artikla odnosi na alternativnu mjernu jedinicu, a ne na osnovnu mjernu jedinicu artikla. Ova oznaka, zajedno s poljima Alternativna mjerna jedinica i Alternativna količina, vidljiva je samo ako je u Parametrima ulaznih računa aktivirana opcija Upravljanje dvostrukom mjernom jedinicom.
+
+**Projekt**: predstavlja projekt koji se povezuje s dokumentom. Ako je projekt unesen u zaglavlju dokumenta, automatski će biti prenesen na sve retke artikala. U suprotnom, projekt se može odabrati putem odgovarajućeg pomoćnog izbornika za odabir projekata.
+
+**Od/Do datuma obračuna**: omogućuju definiranje datuma obračunskog razdoblja za dokument. Ako je u tablici 'Poduzeće' aktivirana opcija *Controlling*, prilikom kreiranja računa iz otpremnice/primke ili iz povrata kooperantske proizvodnje (Conto Lavoro) kao datumi obračunskog razdoblja preuzimaju se datumi iz dokumenta skladišnog zaprimanja. Kod dokumenata koji nisu knjiženi na skladište ili kod artikala koji su ručno uneseni na račun, datumi obračunskog razdoblja podudaraju se s datumom računa.
+
+**Povrat PDV-a**: ako je postavljeno, PDV poklona uzima se u obzir za ukupni iznos računa.
+
+**Marka**: predstavlja marku artikla, koja se preuzima iz matičnih podataka artikla ili iz cjenika artikla.
 
 **Referenca naloga**: u slučaju da je račun generiran iz narudžbe, referenca na narudžbu u ovom polju bit će automatski unesena.
 
-**Napomena**: mogu se unijeti bilješke o artiklu koje će kasnije biti navedene u svim dokumentima generiranim iz ovoga.
-
-**Pravo naplate PDV-a**: ako je postavljeno, PDV poklona uzima se u obzir za ukupni iznos računa.
-
-### 3.4 Podaci o artiklu 
-
-**Lokacija**: nudi se samo ako je za odabrani artikl odabrano skladište.
-
-## Varijante
-
-Prikazuje se varijante odabranog artikla, kodirane u kartici **Varijante** šifarnika artikla ili se mogu unijeti ručno.Prilika je za upravljanje varijantama artikla na različit način od onoga što je ponuđeno na retku artikla.Primjerice, na svakom retku artikla moguće je unijeti ukupnu količinu; zatim, u istoj kartici, mogu se odrediti različite količine za više varijanti odabranog artikla, čak i za varijantu i atribut, odnosno upravljanje veličinom/bojom.Ova operacija je moguća samo ako su sve varijante artikla jednake cijene kao i standardna konfiguracija artikla.
-
-#### Poseban gumb
-> **Otkaži**: omogućuje brisanje odabranog retka varijante.
-
 ### 3.5 Lotovi i Serijski broj
 
-U oba mrežna polja mogu se unijeti i partije i serijski brojevi koji se moraju učitati u skladište i koji su povezani s artiklom *Šifarnik artikla > kartica* [Lotovi i Serijski broj](/docs/erp-home/registers/items/create-new-item) ili ih se može unijeti ručno. 
+U oba pregleda mogu se unijeti i lotovi i serijski brojevi koji se moraju učitati u skladište i koji su povezani s artiklom *Šifarnik artikla > kartica* [Lotovi i Serijski broj](/docs/erp-home/registers/items/create-new-item) ili ih se može unijeti ručno. 
 
-Ako artikl ne podržava upravljanje Partijama/Serijskim brojevima, ova će kartica biti onemogućena.
+Ako artikl ne podržava upravljanje Lotovima/Serijskim brojevima, ova će kartica biti onemogućena.
+
+:::note Zapamti
+Ako je u Parametrima ulaznih DDT dokumenata deaktivirana opcija „Lotovi i serijski brojevi obvezni”, dokument će biti moguće spremiti i bez unosa lotova ili serijskih brojeva. Prilikom skladišnog knjiženja (zaprimanja) DDT dokumenta, lotovi će se automatski predložiti ako prethodno nisu bili uneseni.
+:::
 
 #### Posebni gumbi
 > **Izbriši lot**: omogućuje brisanje odabrane partije.   
@@ -354,6 +433,17 @@ Prikazuje popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću doda
 
 Prikazuje pojedinosti o mogućem **Dokumenti u privitku** (naziv, vrsta dokumenta, eventualne napomene, naš/vaša referenca). Upute o tome kako priložiti dokument potražite u artiklu **Priloži dokumente**.
 
+### 3.9 CONAI materijali za artikl (Italija)
+
+Ova kartica vidljiva je samo ako je za aktivno društvo uključeno upravljanje CONAI naknadama.
+U ovom dijelu prikazuju se ambalažni materijali od kojih se sastoji artikl, zajedno s pripadajućom mjernom jedinicom, jediničnom težinom (umanjenom za eventualni postotak izuzeća definiran u matičnim podacima kupca) te ukupnom težinom, koja se izračunava množenjem broja prodanih artikala s jediničnom težinom.
+Prilikom spremanja dokumenta ili pritiskom na gumb „Ponovni izračun CONAI”, Fluentis će automatski dodati jedan ili više redaka troškova, pri čemu će preuzeti artikl ambalažnog materijala, postaviti količinu jednaku zbroju količina te cijenu jednaku CONAI trošku definiranom za taj materijal.
+Za više informacija o upravljanju CONAI naknadama u Fluentisu pogledajte povezanu dokumentaciju.
+
+### 3.10 Troškovi za obračun
+
+Kartice Troškovi za obračun i Troškovi (Spese) nisu podržane niti se koriste u trenutačnoj verziji Fluentisa.
+
 ### 3.11 Odjeljak s vrijednostima
 
 Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene odabranog artikla u mreži artikla.
@@ -362,11 +452,11 @@ Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene 
 
 **Količina**: vrijednost polja Količina;
 
-**Iznos u liniji**: Cijena artikla * Količina artikla;
+**Iznos u retku**: Cijena artikla * Količina artikla;
 
 **Ukupno rabat**: zbroj popusta artikla, uključujući i konačne popuste;
 
-**Osnovica**: Iznos bez popusta - Popusti;
+**Osnovica (iznos)**: Iznos bez popusta - Popusti;
 
 **Porez**: Osnovica* stopa PDV-a artikla;
 
@@ -376,7 +466,7 @@ Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene 
 
 U različitim sekcijama ovog taba prikazane su glavne informacije o cijelom dokumentu i neki posebni gumbi.
 
-### 4.1 Završni popusti
+### 4.1 KOnačni popusti artikala
 
 Mogu se unijeti samo popusti izraženi u postocima koji se primjenjuju na ukupan iznos dokumenta.
 
@@ -389,15 +479,25 @@ Popusti uneseni u ovoj sekciji izračunavaju se i prikazuju na svakom artiklu do
 
 ### 4.2 Troškovi
 
-Prikazani su troškovi uneseni u osnovne podatke o kontaktu, u kartici *Troškovi/Popusti*.
+Predlažu se troškovi uneseni u matične podatke kontakta, na kartici „Troškovi/Popusti”. U ovoj tablici troškove je potrebno unositi s pozitivnim predznakom, a popuste s negativnim predznakom. 
 
-Također postoji mogućnost unosa troškova koji se odnose samo na trenutačni dokument.
+Ovi se elementi primjenjuju na cijeli dokument i ne raspoređuju se na pojedine retke artikala. Mogu uključivati: dodatne troškove, globalne popuste, povećanja cijene (dodatke) primijenjene na cijeli dokument. Ako su definirani u matičnim podacima kontakta, automatski će se predložiti prilikom kreiranja dokumenta.
 
-**Vrsta/Opis**: Omogućuje odabir vrsta troškova (unaprijed definiranih u *Vrstama troškova*), dodjeljujući vrsti postotak troška za primjenu.  
+**Vrsta/Opis**: Omogućuje odabir vrsta troškova (unaprijed definiranih u *Vrstama troškova*), dodjeljujući vrsti postotak troška za primjenu.   
+**Iznos troška**: označava vrijednost troška izraženu u valuti dokumenta.  
+**PDV**: označava PDV stopu koja će se primijeniti na unesene troškove.  
 **Postotak/Vrijednost**: Polje koje određuje hoće li se troškovi izračunavati postotkom ili predefiniranom novčanom vrijednošću.  
 **Postotak**: Numerička vrijednost postotka troška.  
 
-### 4.3 Sažeci PDV-a
+:::note Napomena
+
+Ako odabrana vrsta troška ima aktiviranu oznaku „Raspodijeljeno”, prilikom knjiženja računa na skladište trošak će se raspodijeliti na sve artikle proporcionalno ukupnim iznosima pojedinih stavki artikala. Rezultat raspodjele troška vidljiv je u skladišnoj knjižbi.
+
+> 1. Ako artikli imaju definiranu cijenu: ukupni trošak raspodjeljuje se proporcionalno neto iznosima pojedinih artikala. Dobiveni iznos dodaje se početnoj cijeni artikla u polju Ukupni iznos skladišne knjižbe. Ako pojedine stavke imaju iznos 0, za potrebe raspodjele tretirat će se kao da imaju vrijednost 1, kako bi se trošak raspodijelio na sve artikle.
+> 2. Ako svi artikli imaju cijenu 0: trošak se ravnomjerno raspodjeljuje na sve stavke artikala. Na temelju tako raspodijeljenog troška izračunava se iznos skladišnog kretanja / upravljački iznos u skladišnoj knjižbi, uzimajući u obzir količine pojedinih artikala.
+:::
+
+### 4.3 Sažetak PDV-a
 
 Prikazuje sažetak PDV-a dokumenta, za svaki PDV.
 
