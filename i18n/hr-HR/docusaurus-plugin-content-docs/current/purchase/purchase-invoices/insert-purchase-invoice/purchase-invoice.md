@@ -145,7 +145,7 @@ Filteri za dobavljača i valutu automatski će se postaviti prema podacima dobav
 
 U području za filtriranje moguće je odabrati način prikaza podataka u tabličnom prikazu (Grid), u hijerarhijskoj strukturi, ili kombinacijom oba prikaza istovremeno.
 
-> Hijerarhijska struktura omogućuje pregledniji prikaz DDT dokumenata dostupnih za preuzimanje te artikala sadržanih u svakom od njih. Također omogućuje masovni odabir svih artikala unutar pojedinog DDT-a jednostavnim označavanjem kućice (flag-a) na retku DDT dokumenta.
+> Struktura hijerarhije omogućuje pregledniji prikaz DDT dokumenata dostupnih za preuzimanje te artikala sadržanih u svakom od njih. Također omogućuje masovni odabir svih artikala unutar pojedinog DDT-a jednostavnim označavanjem kućice (flag-a) na retku DDT dokumenta.
 
 > Tablični prikaz (Grid) omogućuje veću prilagodbu obrasca dodavanjem polja putem Object Navigatora. U tom slučaju masovni odabir stavki obavlja se korištenjem tipki na tipkovnici, nakon čega je potrebno kliknuti na gumb „Odaberi/Odznači” na alatnoj traci (Ribbon Bar).
 
@@ -163,38 +163,71 @@ Za dovršetak postupka potrebno je kliknuti na gumb „Prijenos”, nakon čega 
 Napomene unesene u zaglavlju dokumenta (kao što su Naša referenca, Vaša referenca ili Početne napomene) prenose se u zaglavlje računa samo ako se podaci preuzimaju iz jednog dokumenta. Ako se račun kreira preuzimanjem podataka iz više dokumenata, navedene napomene neće se automatski prenijeti u zaglavlje računa. 
 :::
 
+#### Posebni gumbi
+
+> **Traži**: omogućuje pretraživanje DDT dokumenata dostupnih za prijenos.
+> **Premještaj**: omogućuje prijenos odabranih artikala/narudžbi u dokument.
+> **Označi sve**: označava sve artikle na popisu.
+> **Odznači sve**: uklanja oznaku sa svih artikala na popisu.
+> **Označi**: aktivira oznaku (flag) za sve retke koji su odabrani mišem.
+> **Odznačiti**: deaktivira oznaku (flag) za sve retke koji su odabrani mišem.
+
+
 ### Izuzimanje iz narudžbe (od strane dobavljača)
 
-Na zaglavlju dokumenta, pritiskom na dugme **Izuzimanje iz narudžbe** otvorit će se obrazac gdje se mogu filtrirati narudžbe dobavljača koje se odnose na dobavljača u dokumentu.
+Postupak omogućuje kreiranje ulaznog računa preuzimanjem jednog ili više dobavljačkih narudžbi.
 
-Moguće je zatim unijeti stavke unutar fakture, potpuno ili djelomično ispunjavajući cijelu narudžbu ili redak.
+U zaglavlju dokumenta, pritiskom na gumb „Izuzimanje iz narudžbe” otvara se obrazac u kojem je moguće filtrirati narudžbe povezane s dobavljačem navedenim na računu. Nakon toga moguće je prenijeti artikle na račun, pri čemu se može u cijelosti ili djelomično preuzeti cijela narudžba ili pojedina njezina stavka.
+
+Za korištenje ove procedure potrebno je zadovoljiti sljedeće preduvjete:
+
+- dobavljač na odabranoj narudžbi mora odgovarati dobavljaču navedenom na računu;
+- narudžba mora imati status Ispisano i prethodno mora biti potvrđena.
+
+#### Postupak
+
+U zaglavlju novog ulaznog računa potrebno je odabrati vrstu računa koju želite kreirati te dobavljača. Nakon unosa tih podataka potrebno je kliknuti na gumb „Izuzimanje iz narudžbe” kako bi se otvorio obrazac za preuzimanje narudžbi.
+
+Filteri za dobavljača i valutu automatski će se postaviti prema dobavljaču odabranom na računu.
+
+U području za filtriranje moguće je odabrati način prikaza podataka: tablični prikaz (Grid), hijerarhijski prikaz (Struktura hijerarhije), ili kombinaciju oba prikaza istovremeno.
+
+> Struktura hijerarhije omogućuje pregledniju podjelu pojedinih narudžbi i artikala sadržanih unutar svake od njih. Također omogućuje masovni odabir svih artikala iz određene narudžbe jednostavnim označavanjem opcije (flaga) na retku narudžbe.
+
+> Tablični prikaz (Grid) omogućuje veću prilagodbu obrasca dodavanjem dodatnih polja putem Object Navigatora. U tom slučaju masovni odabir obavlja se korištenjem tipki na tipkovnici, nakon čega je potrebno kliknuti na gumb „Aktiviraj/Deaktiviraj samo odabrane retke” na alatnoj traci (Ribbon Bar).
+
+Nakon što se postave svi željeni filtri, klikom na gumb „Traži” u donjem dijelu prozora prikazat će se sve narudžbe koje imaju status „Ispisano” i „Potvrđeno”, a koje još nisu preuzete (zatvorene) ili su preuzete samo djelomično.
+
+:::note NAPOMENA
+Postupak preuzima sve podatke sadržane u narudžbi, pa će se kao posljedica primijeniti uvjeti nabave definirani na narudžbi, čak i ako su oni u međuvremenu promijenjeni.
+U slučaju preuzimanja više narudžbi koje imaju isti način plaćanja i/ili istu adresu isporuke, na račun će se prenijeti podaci iz narudžbi. U suprotnom će se koristiti podaci definirani u matičnim podacima dobavljača.
+:::
+
+U prikazu rezultata korisnik ima mogućnost:
+
+- Odabrati sve ili samo pojedine ponuđene artikle – dovoljno je označiti opciju (flag) na početku retka artikla. Polje Količina za izvršenje automatski će se postaviti na vrijednost preostale količine.
+Odabrati pojedine artikle za djelomično izvršenje – u tom slučaju potrebno je ručno izmijeniti vrijednost u polju Količina za izvršenje.
+
+- Za dovršetak postupka potrebno je kliknuti na gumb „Izuzimanje”, nakon čega će sustav preuzeti sve podatke iz odabrane narudžbe (ili narudžbi) i prenijeti ih na ulazni račun.
+
+:::tip Zapamti 
+Napomene unesene u zaglavlju narudžbe (primjerice Naša referenca, Vaša referenca ili Početne napomene) prenose se u zaglavlje ulaznog računa samo ako se podaci preuzimaju iz jedne narudžbe.
+Ako se račun kreira preuzimanjem podataka iz više narudžbi, navedene napomene neće se automatski prenijeti u zaglavlje računa.
+:::
 
 #### Posebni gumbi
 
 > **Traži**: omogućuje pretraživanje narudžbi dobavljača.  
-> **Prijenos**: omogućuje prijenos odabranih artikala/narudžbi.   
-> **Prisilno izvršenje narudžbe**: omogućuje silovito ispunjenje narudžbe.  
-> **Izvršenje narudžbi**: omogućuje ispunjenje narudžbe.   
-> **Proširi**: omogućuje proširenje cijelog stabla narudžbi u donjoj mreži kako biste vidjeli sadržane stavke.   
-> **Sažmi**: omogućuje skupljanje cijelog stabla narudžbi.   
+> **Izuzimanje**: omogućuje prijenos odabranih artikala/narudžbi.   
+> **Prisilno izvršenje narudžbe**: omogućuje prisilno ispunjenje narudžbe.    
 > **Označi sve**: omogućuje označavanje svih stavki na popisu.  
 > **Odznači sve**: omogućuje odznačavanje svih stavki na popisu.  
+> **Aktiviraj samo odabrane retke**: aktivira oznake (flagove) za sve retke koji su odabrani mišem.
+> **Deaktiviraj samo odabrane retke**: deaktivira oznake (flagove) za sve retke koji su odabrani mišem.
 
-*Postupak*:
-
-Za dobavljača i sve ostale filtre unesene u odjeljku *Filtriraj*, u donjoj mreži pojavit će se jedan red za svaku isprintanu, potvrđenu i neispunjenu ili djelomično ispunjenu narudžbu.
-
-:::note NAPOMENA
-Postupak preuzima sve podatke prisutne u narudžbi, a kao posljedica primijenit će se trenutni uvjeti kupnje prisutni u narudžbi, iako su se možda u međuvremenu promijenili.
+:::tip Zapamti 
+U slučaju višestrukih djelomičnih preuzimanja iste stavke artikla unutar istog računa, moguće je odabrati hoće li se količine zbrojiti u jednu stavku na računu ili će ostati prikazane kao zasebni retci. To se određuje u tablici Vrste ulaznih računa: ako je oznaka „Ne zbrajaj količine artikla pri preuzimanju” deaktivirana, količine će se zbrojiti u jedan redak računa; ako je oznaka aktivirana, svako djelomično preuzimanje bit će prikazano u zasebnom retku računa.
 :::
-
-Koristite gumbe (**2**) za proširenje ![](/img/neutral/common/minus.png) / skupljanje ![](/img/neutral/common/plus.png) željenih narudžbi.
-
-Koristite oznake (**3**) za označavanje  ![](/img/neutral/common/check.png) / odznačavanje ![](/img/it-it/purchase/purchase-invoices/insert-purchase-invoice/header-procedures/header-procedures/image14.png) pojedinačnih stavki ili cijele narudžbe.
-
-Izvršite ispunjenje pomoću gumba **Prijenos**.
-
-
 
 ## **3. Artikli**
 
