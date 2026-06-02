@@ -259,42 +259,50 @@ Za narudžbe generirane iz zahtjeva za nabavu (RDA), datum isporuke određuje se
 > **Podijeli količinu u više datuma dostave**: koristi se za podjelu reda narudžbenice u više redova prema traženom datumu isporuke. Ovaj postupak otvorit će novi obrazac u kojem ćete morati unijeti novi datum isporuke i predviđenu količinu za taj datum.    
 > **Pakiranje**: postaje dostupno nakon spremanja narudžbe te omogućuje kreiranje UDC-a (jedinice za rukovanje teretom) na temelju odabranog retka. Odabrani redak mora sadržavati artikl koji je šifriran i spremljen u dokumentu. Korisnik mora imati odgovarajuća prava definirana u Parametrima skladišnog ulaza/izlaza za kreiranje paleta. Osim toga, artikl mora biti podešen za upravljanje putem UDC-a. UDC će se kreirati prema pravilima definiranim za Vrstu UDC-a u matičnim podacima artikla, na kartici Pakiranje.
 > **Ažuriraj cjenike**:
-- Gumb „Ažuriraj trenutni cjenik” omogućuje ažuriranje cijena u trenutno važećem cjeniku za svaki odabrani redak artikla.
-- Gumb „Kreiraj novi cjenik s novim razdobljem važenja” otvara prozor u kojem je potrebno unijeti datume važenja novog cjenika. Novi cjenik sadržavat će samo odabrane retke te će biti povezan s dobavljačem navedenim na narudžbi.  
+- Gumb „Ažuriraj cjenik trenutnih cijena” omogućuje ažuriranje cijena u trenutno važećem cjeniku za svaki odabrani redak artikla.
+- Gumb „Izradite novi cjenik s novom valjanošću” otvara prozor u kojem je potrebno unijeti datume važenja novog cjenika. Novi cjenik sadržavat će samo odabrane retke te će biti povezan s dobavljačem navedenim na narudžbi.  
 
 
 ### 3.3 Popusti/Cjenici  
 
-**Vrijednosti kataloga**: nudi se katalog iz kojeg je preuzet artikl, s datumom početka/završetka važenja te s posebnim uvjetima (npr. raspon popusta) dodijeljenim artiklu u katalogu;
+**Cjenik**: prikazuje cjenik iz kojeg je preuzeta cijena artikla, zajedno s datumom početka i završetka važenja te posebnim uvjetima dodijeljenima artiklu u cjeniku (npr. vrsta količinskog razreda popusta).
 
-**Popusti**: nudi se svi popusti povezani s artiklom, svaki s vlastitom osnovom izračuna i dodjelom.         
-**Cjenik koji će biti ažuriran**: ako je ova zastava aktivna, odgovarajući katalog kupnje automatski se ažurira informacijama o artiklu prilikom spremanja.
+**Ručna cijena**: automatski se aktivira kada je cijena artikla unesena ili izmijenjena ručno.
+
+**Ažurirati cjenik**: ako je ova oznaka aktivna, cijena artikla automatski će se ažurirati u odgovarajućem nabavnom cjeniku prilikom spremanja dokumenta.
+
+:::important VAŽNO
+Za korištenje popusta na poreznu osnovicu potrebno je u bazi podataka aktivirati opći parametar GEN-GlobalSettings_CalculateDiscountOnAmount za odgovarajuće društvo.
+Ako navedeni parametar nije aktivan, popusti na poreznu osnovicu automatski će se pretvoriti u kaskadne popuste.
+:::
 
 #### Poseban gumb
 
-> **Izbriši rabate**: omogućuje brisanje odabranog popusta iz odgovarajuće mreže.
+> **Izbriši zadane rabate**: omogućuje brisanje odabranog popusta iz odgovarajuće mreže.
 
 ### 3.4 Podaci o artiklu  
 
-Unutar ovog kartice navode/se unose dodatne informacije o artiklu.
+Unutar ove kartice prikazuju se i uređuju dodatne informacije vezane uz stavku artikla.
 
-**Projekt**: predstavlja projekt povezan s dokumentom. Može se unijeti i pomoću odgovarajuće pomoći za projekte.
+- **Varijanta** – omogućuje odabir varijante artikla među prethodno definiranim varijantama na kartici artikla. Ako su za pojedine varijante definirane različite cijene i/ili popusti, oni će se automatski ažurirati nakon odabira druge varijante.
 
-**Artikl/Varijanta**: prikazuje odabrani artikl u gornjoj mreži i njegovu varijantu;
+- **Projekt** – predstavlja projekt koji se povezuje sa stavkom dokumenta. Ako je projekt definiran u zaglavlju dokumenta, automatski će se prenijeti na sve stavke. Alternativno, projekt se može odabrati korištenjem pomoći za unos projekata.
 
-**Zahtjev za kupnju**: ako je narudžbenica stvorena iz zahtjeva, prikazat će se referentni zahtjev;
+- **Napomene** – napomene vezane uz pojedinu stavku artikla. Mogu se unijeti ručno ili odabrati iz unaprijed definiranih predložaka napomena. Prenose se na sve dokumente nastale iz ove narudžbe.
 
-**Napomene**: napomene vezane uz redak artikla, mogu se unijeti i pomoću pomoći za bilješke. Bit će navedene u svim dokumentima generiranim iz ovog.
+- **Marka** – oznaka robne marke artikla. Podatak se preuzima iz kartice artikla ili iz cjenika artikla.
 
-**Marka**: predstavlja marku artikla, preuzetu iz njegovog šifarnika ili iz kataloga artikla.
- 
-#### Varijante
+- **Artikl proizvodnog naloga** – ako je narudžba dobavljača povezana s proizvodnim nalogom (primjerice putem planiranog naloga nabave ili zahtjeva za nabavu), u ovom polju prikazuje se nadređeni artikl definiran na komesi.
 
-Prikazuje se varijante odabranog artikla, kodirane u kartici **Varijante** šifarnika artikla ili se mogu unijeti ručno.
-Prilika je za upravljanje varijantama artikla na različit način od onoga što je ponuđeno na retku artikla.
-Primjerice, na svakom retku artikla moguće je unijeti ukupnu količinu; zatim, u istoj kartici, mogu se odrediti različite količine za više varijanti odabranog artikla, čak i za varijantu i atribut, odnosno upravljanje veličinom/bojom.
-Ova operacija je moguća samo ako su sve varijante artikla jednake cijene kao i standardna konfiguracija artikla. 
+- **Upit za ponudu** – ako je narudžba kreirana iz zahtjeva za ponudom postupkom **Kreiranje narudžbe dobavljača iz ponude dobavljača**, u ovom se polju prikazuje referenca na izvorni zahtjev za ponudom.
 
+- **Skladište i skladišna vrsta dokumenta** – definiraju skladište i vrstu skladišnog dokumenta koji će se automatski koristiti prilikom zaprimanja robe na skladište. Vrijednosti se preuzimaju iz postavki vrste narudžbe, ali ih je moguće izmijeniti na pojedinoj stavci.
+
+- **Proizvodni nalog** – ako je narudžba nastala iz procesa planiranja proizvodnje, u ovom se polju prikazuje povezana proizvodna komesa.
+
+- **Cijena po alternativnoj jedinici mjere** – kada je opcija aktivna, unesena cijena odnosi se na alternativnu jedinicu mjere, a ne na osnovnu jedinicu. Ovo polje, zajedno s poljima *Alternativna jedinica mjere* i *Alternativna količina*, dostupno je samo ako je u parametrima narudžbi dobavljača uključena opcija **Upravljanje dvostrukim jedinicama mjere**.
+
+- **Alternativna jedinica mjere / Alternativna količina** – ako je na kartici artikla definirana zadana alternativna jedinica mjere te je u parametrima narudžbi dobavljača uključena opcija **Automatsko predlaganje alternativne jedinice mjere**, ove će se vrijednosti automatski predložiti prilikom dodavanja artikla na dokument.
 
 #### Poseban gumb
 
@@ -306,16 +314,13 @@ Može sadržavati informacije o troškovnim/profitnim centrima na koje su raspod
 
 Ovi podaci se mogu unositi ručno ili automatski (u slučaju da su troškovni/profitni centri prethodno uneseni u šifarnik subjekta, šifarnik artikla ili u plan konta).
 
-
 ### 3.6 Dodatni podaci
 
 Prikazuje popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću dodavanja novih dodatnih podataka korisnih samo za trenutni dokument, uz mogućnost, putem odgovarajuće oznake, odabira koje dodatne podatke isprintati.
 
-
 ### 3.7 Dokumenti u privitku
 
 Prikazuje pojedinosti o mogućem **Dokumenti u privitku** (naziv, vrsta dokumenta, eventualne napomene, naš/vaša referenca). Upute o tome kako priložiti dokument potražite u artiklu *Priloži dokumente*.
-
 
 ### 3.8 Odjeljak s vrijednostima
 
@@ -325,11 +330,11 @@ Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene 
 
 **Količina**: vrijednost polja Količina;
 
-**Iznos u liniji**: Cijena artikla* Količina artikla;
+**Iznos u retku**: Cijena artikla* Količina artikla;
 
 **Ukupno rabat**: zbroj popusta artikla, uključujući i konačne popuste;
 
-**Osnovica**: Iznos bez popusta - Popusti;
+**Iznos**: Iznos bez popusta - Popusti;
 
 **Porez**: Osnovica * stopa PDV-a artikla;
 
@@ -339,7 +344,7 @@ Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene 
 
 U različitim sekcijama ovog taba prikazane su glavne informacije cijelog dokumenta i neki specifični gumbi.
 
-### 4.1 Konačni rabati
+### 4.1 Konačni popusti artikala
 
 Mogu se unijeti samo popusti izraženi u postocima koji se primjenjuju na ukupan iznos dokumenta.
 
@@ -353,7 +358,6 @@ Uneseni popusti u ovoj sekciji izračunavaju se i prikazuju za svaki artikl u do
 
 **Vrijednost**: numerička vrijednost završnog popusta koji se primjenjuje.
 
-
 ### 4.2 Troškovi 
 
 Prikazani su troškovi uneseni u šifarnik kontakta, na kartici *Troškovi/Popusti*.
@@ -364,14 +368,17 @@ Također postoji mogućnost unosa troškova koji se odnose samo na trenutni doku
 **Postotak/Vrijednost**: polje koje označava hoće li se troškovi izračunavati postotkom ili unaprijed određenim novčanim iznosom.  
 **Postotak**: numerička vrijednost postotka troška.
 
-
 ### 4.3 Sažetak PDV-a
 
-Prikazuje se PDV rezime dokumenta za svaki PDV kod.
+Prikazuje se PDV rezime dokumenta za svaku PDV šifru.
 
-### 4.4 Druga polja
+### 4.4 Pregled dospijeća
 
-**Završne napomene**: Ovo je opisno polje koje korisnik može popuniti i uz pomoć *pomoći kodiranih napomena*.
+U ovoj tablici prikazuju se rokovi dospijeća plaćanja izračunati na temelju uvjeta definiranih u odabranim vrstama plaćanja.
+
+### 4.5 Ostala polja
+
+**Konačna bilješka naloga**: opisno polje koje korisnik može slobodno popuniti, uključujući korištenje pomoći za unaprijed definirane (kodificirane) napomene.
 
 ### 4.6 Svi iznosi dokumenta 
 
@@ -380,12 +387,12 @@ Prikazuje se PDV rezime dokumenta za svaki PDV kod.
 **Poklonjeni iznos**: Predstavlja iznos poklon artikla unesenih u kartici *Artikli*.  
 **Ukupni primjenjeni rabati**: Predstavlja ukupnu vrijednost popusta primijenjenih na artikle, ali bez konačnih popusta.  
 **Neto iznos artikala**: Bruto iznos artikla – Ukupni primijenjeni popusti.  
-**Ukupno konačnih rabata**: Predstavlja vrijednost konačnih popusta izraženih u postocima na bruto iznos artikla.  
-**Neto iznos konačnih rabata**: *Neto iznos artikla - Ukupni konačni popusti*.  
-**Neregistrirani troškovi**: Predstavlja vrijednost troškova unesenih u prethodnoj kartici kao artikli *Tipa troškovi*.  
+**Konačni popusti artikla**: Predstavlja vrijednost konačnih popusta izraženih u postocima na bruto iznos artikla.  
+**Iznos umanjen za ukupni popust**: *Neto iznos artikla - Ukupni konačni popusti*.  
+**Ukupno za stavke troškova**: Predstavlja vrijednost troškova unesenih u prethodnoj kartici kao artikli *Tipa troškovi*.  
 **Troškovi naplate**: Predstavlja zbroj unesenih troškova naplate u mreži *Troškovi*.  
 **Trošak ovjere**: Predstavlja zbroj unesenih troškova marke u mreži Troškovi.  
-**Trošak dokumentacije**: Predstavlja vrijednost troškova unesenih u mreži *Troškovi*.  
-**Osnovica**: *Neto iznos artikla – Završni popusti + Ukupni nedokumentirani troškovi + Ukupni dokumentirani troškovi*.  
+**Ukupno troškoci/popusti/doplate**: Predstavlja vrijednost troškova unesenih u mreži *Troškovi*.  
+**Osnovica**: *Neto iznos artikla – Konačni popusti artikla + Ukupno za stavke troškova + Ukupno troškoci/popusti/doplate*.  
 **Porez**: Predstavlja zbroj vrijednosti sadržanih u sažecima PDV-a.  
 **Ukupno**: *Osnovica + PDV*.  
