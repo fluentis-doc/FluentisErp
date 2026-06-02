@@ -4,7 +4,7 @@ sidebar_position: 2
 showLastUpdateTime: true
 ---
 
-Postupak se nalazi na putanji **Nabava > Narudžbe dobavljača > Postupci** i omogućuje stvaranje narudžbenica dobavljača iz  *Zahtjeva za kupnju* ili *Narudžbi od klijenata*.
+Postupak se nalazi na putanji **Nabava > Narudžbe dobavljača > Procedure** i omogućuje stvaranje narudžbenica dobavljača iz  *Zahtjeva za kupnju* ili *Narudžbi od klijenata*.
 
 ## Filter od 
 
