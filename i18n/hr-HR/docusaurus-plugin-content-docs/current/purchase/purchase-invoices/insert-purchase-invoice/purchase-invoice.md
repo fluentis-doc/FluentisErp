@@ -1,5 +1,5 @@
 ---
-title: Kreiraj ulazne račune
+title: Kreiranje ulaznih računa
 sidebar_position: 1
 ---
 

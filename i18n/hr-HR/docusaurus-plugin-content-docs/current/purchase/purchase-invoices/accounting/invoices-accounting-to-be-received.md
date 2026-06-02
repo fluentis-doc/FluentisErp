@@ -39,12 +39,12 @@ Na osnovu forme postoje određeni parametri upravljanja knjiženjem:
 
 ### Prethodni
 
-Obrazac prikazuje popis izvršenih knjiženja kako bi ih pregledali i eventualno poništili putem odgovarajućih gumbiju. Dvostruki klik u mreži stvorenih knjiženja omogućuje pregled knjiženja.
+Obrazac prikazuje popis izvršenih knjiženja kako bi ih pregledali i eventualno poništili putem odgovarajućih tipki. Dvostruki klik u mreži stvorenih knjiženja omogućuje pregled knjiženja.
 
 **Knjiženje (računa koji se očekuju)**: prikaz s detaljima izvršenih operacija. Popunjava se nakon postupka pretraživanja, a mogu se odabrati operacije na koje se primjenjuju funkcije vrpce.
 
 Podaci u donjim pregledima, **Dokumenti** i **Zapis glavne knjige** odnose se na odabranu operaciju u gornjem pregledu. Dvostruki klik u odjeljku pokreta/knjiženja omogućit će pregled odgovarajućeg pokreta/knjiženja.
 
-*Posebni gumbi*:
+*Posebne tipke*:
 > **Povrat knjiženja**: za brisanje odabrane knjiženja.   
 > **Povrat transakcije računa**: za brisanje cijele odabrane operacije u prvom pregledu, sa svim detaljima prikazanim u dva donja pregleda.  
