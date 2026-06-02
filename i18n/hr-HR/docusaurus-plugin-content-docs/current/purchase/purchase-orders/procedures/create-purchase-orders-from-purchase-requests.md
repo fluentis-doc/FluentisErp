@@ -44,7 +44,7 @@ Artikli bez dobavljača mogu se odabrati desnim klikom mišem i premjestiti, tak
 
 *Posebni gumbi*:
 
-> **Proširi**: omogućuje proširavanje svih redaka u mreži s dokumentima.
+> **Proširi**: omogućuje proširivanje svih redaka u mreži s dokumentima.
 
 > **Obriši odabrani prototip narudžbe**: omogućuje brisanje odabranog prototipa narudžbe.
 
