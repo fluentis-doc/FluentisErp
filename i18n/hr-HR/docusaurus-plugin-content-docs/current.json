@@ -716,11 +716,11 @@
     "description": "The label for category Stampe in sidebar purchase"
   },
   "sidebar.purchase.category.Ordini fornitori": {
-    "message": "Narudžbe nabave",
+    "message": "Narudžba dobavljačima",
     "description": "The label for category Ordini fornitori in sidebar purchase"
   },
   "sidebar.purchase.category.Inserimento ordini fornitori": {
-    "message": "Unos narudžba nabave",
+    "message": "Unos Narudžba dobavljačima",
     "description": "The label for category Inserimento ordini fornitori in sidebar purchase"
   },
   "sidebar.purchase.category.Purchase order items": {
@@ -2280,7 +2280,7 @@
     "description": "The label for category Richieste di offerta in sidebar purchase"
   },
   "sidebar.purchase.category.Commesse di acquisto": {
-    "message": "Nabavne narudžbe",
+    "message": "Nalog za nabavom",
     "description": "The label for category Commesse di acquisto in sidebar purchase"
   },
   "sidebar.sales.category.Documenti SDI e NSO": {

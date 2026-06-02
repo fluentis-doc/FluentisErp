@@ -1,16 +1,16 @@
 ---
-title: Unos narudžbi dobavljača - fiksna sekcija
+title: Unos narudžbi dobavljača
 sidebar_position: 1
 ---
 
 Ovaj obrazac otvara se putem:    
--  putanje **Nabava > Narudžba od dobavljača > Kreiraj narudžbu od dobavljača**  
+-  putanje **Nabava > Narudžba dobavljačima > Nova narudžba**  
 ili putem  
 -  gumba **Novo** koji se nalazi u formi [Pretraživanje narudžbe od dobavljača](/docs/purchase/purchase-orders/insert-purchase-orders/search-purchase-orders).
  
-## **1. Dati obbligatori**
+## **1. Obavezni podaci**
 
-Da biste kreirali narudžbu, korisnik mora unijeti obavezna polja:
+Da bi se kreirala narudžba, korisnik mora unijeti obavezna polja:
 
 **Vrsta narudžbe**: predefinirana u *Konfiguracija > Tablice > Nabava > Vrste narudžbi od dobavljača*.  
 Ovo polje određuje raspon numeriranja dokumenta koji se unosi i automatski predlaže broj narudžbe od dobavljača na temelju datuma unosa i posljednjeg unesenog broja. Osim toga, ako je u *Vrsti narudžbe* postavljena zastava [Autoizvršenje](/docs/configurations/tables/purchase/purchase-orders-type) datum potvrde narudžbe će biti predložen kao jednak datumu unosa narudžbe;  
@@ -27,47 +27,64 @@ Nakon odabira obaveznih podataka u gornjem dijelu, korisnik može nastaviti unos
 Ako se dokument *kreira automatski*, ovi podaci preuzimaju se iz *izvornog dokumenta* iz kojeg je generiran.
 :::
 
-### 2.1 Dati fornitore
+### 2.1 Podaci dobavljača
 
 Unosom **Dobavljača** automatski se *predlažu* svi specifični podaci s kartice **Zaglavlje**, prema podacima postavljenim prethodno u [šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), u odgovarajućim poljima adrese i *odjeljcima*:  
 
 - **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Kurs](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
 - **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
-- **Isporuka**: [Isporuka](/docs/guide/common/glossary/glossary-intro#shipment), [Porto](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [vremenski okvir važenja](/docs/guide/common/glossary/glossary-intro#validity-date).
+- **Pošiljke**: [Isporuka](/docs/guide/common/glossary/glossary-intro#shipment), [Paritet](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [vremenski okvir važenja](/docs/guide/common/glossary/glossary-intro#validity-date).
+- **Plaćanja**: odjeljak koji sadrži podatke o plaćanjima, popustima, odredištu isporuke i prijevozniku.
 
 ### 2.2 Drugi opcionalni podaci
 
+- **Traženi datum isporuke** i **Datum isporuke** – ako se postave prije unosa stavki u narudžbu, automatski će se prenijeti na sve stavke dokumenta. Naknadno je moguće ažurirati datume na stavkama korištenjem funkcije **Zamijeni planirani datum isporuke u stavkama** na alatnoj traci.
+
+- **Datum potvrde naloga** – za vrste narudžbi koje nemaju uključenu opciju automatske potvrde, u ovo se polje upisuje datum potvrde narudžbe. Za realizaciju narudžbe dobavljača potrebno je unijeti datum potvrde.
+
+- **Primjeni iz** – datum koji se koristi kao osnova za izračun rokova dospijeća plaćanja.
+
+- **Bilješke dobavljača** – polje se automatski popunjava podacima iz kartice dobavljača, ali ga je moguće i ručno izmijeniti.
+
+- **Naša/Vaša referenca** – u ova polja obično se unose interna referenca i referenca dobavljača za dokument. Ako su podaci definirani na kartici dobavljača, automatski se preuzimaju, a po potrebi ih je moguće ručno izmijeniti.
+
+  Ako je narudžba kreirana postupkom **Realizacija po projektu**, u polja *Napomene dobavljaču* i *Naša/Vaša referenca* automatski se prenose podaci iz nabavne komese. Ovaj prijenos moguć je samo kada je narudžba kreirana na temelju jednog izvornog dokumenta.
+
+- **Početne bilješka naloga** – moguće je odabrati unaprijed definirane napomene unesene u šifrarnik **Konfiguracija > Pomoćni podaci > Upravljanje predlošcima napomena**. Odabir se vrši putem pomoći za unos (Help) na polju *Početne napomene*.
+
+- **Projekt** – dokument je moguće povezati s projektom korištenjem pomoći za unos. Povezivanje se odnosi na zaglavlje dokumenta. Ako je narudžba kreirana iz dokumenta koji već sadrži projekt (primjerice zahtjev za nabavu), projekt se automatski prenosi.
+
+- **Nalog proizvodnje** – dokument je moguće povezati s proizvodnom komesom korištenjem pomoći za unos. Ako je narudžba nastala iz planiranih nabavnih naloga, komesa se predlaže automatski.
+
+- **Država, jezik i zona** – podaci se automatski preuzimaju iz kartice dobavljača, ali ih je moguće ručno promijeniti.
+
+- **Operater** – definira korisnika koji je izradio dokument. Ako je u parametrima narudžbi dobavljača uključena opcija **Obavezan operater**, unos ovog podatka bit će obvezan za spremanje dokumenta. Operateri moraju prethodno biti evidentirani u šifrarniku zaposlenika.
+
+- **Prijevoznik** – podatak se preuzima iz kartice dobavljača ako je definiran, a može se i ručno unijeti.
+
+- **Prodajni cjenik** – ako je na kartici dobavljača definiran zadani cjenik, on će se automatski predložiti zajedno s pripadajućim razdobljem važenja.
+
+- **Ažuriranje cjenika** – kada je opcija uključena, nabavni cjenik automatski se ažurira prilikom spremanja dokumenta prema podacima sa stavki. Postavku je moguće mijenjati i na razini pojedine stavke.
+
+- **Prodajna mjesta** – koristi se u procesima vezanim uz distribucijske lance i nalazi se u području logistike. Ako je narudžba nastala prijenosom robe između prodajnih mjesta unutar iste organizacije, ovdje će biti prikazano prodajno mjesto s kojeg roba dolazi.
+
+- **Status izvršenja** – kada se narudžba djelomično ili potpuno realizira putem primke (DDT-a) ili ulaznog računa, status se automatski mijenja iz **Nije izvršeno** u **Djelomično izvršeno** ili **Izvršeno**. Moguće je prisilno označiti narudžbu kao realiziranu i kada nije u potpunosti obrađena. U tom slučaju sprema se datum realizacije u polje *Datum realizacije*.
+
 **Status narudžbe**: kada se kreira, nema aktivnih zastava, ali se kasnije može promijeniti u:    
-> **Printano**: kada se isprinta konačno;    
+> **Ispisano**: kada se isprinta kao konačna;    
 > **Autorizirano**: kada korisnik odobri, nema utjecaja na poslovne procese, ali se vrednuje u Mobilnoj Aplikaciji;    
 > **Povijesno**: kada korisnik pohrani dokument;  
-> **Opozvano**: kada korisnik želi otkazati dokument umjesto brisanja, automatski se postavlja status evidentirano na svim njegovim redovima.
+> **Poništen**: kada korisnik želi otkazati dokument umjesto brisanja, automatski se postavlja status evidentirano na svim njegovim redovima.
 
 :::NAPOMENE
 Zastave se mogu ukloniti postupkom poništenja operacije.
 :::
 
-**Bilješke dobavljača**: ovo polje preuzima se iz kartice dobavljača, ali se može i ručno unijeti. Desnim klikom miša može se otvoriti forma za unos duljih bilješki; ako polje sadrži vrijednost, mijenja se boja pozadine polja.    
-**Naša/Vaša referenca**: u ovim poljima obično se navodi unutarnja referenca i referenca dobavljača za dokument.  
-Ako se narudžba dovršava postupkom *Isporuke iz narudžbenice*, prikazuje se informacija iz odgovarajućeg polja narudžbenice. Ovaj prijenos vrijedi samo za narudžbu dobavljača stvorenu preuzimanjem podataka iz jednog izvornog dokumenta.
-
-**Početna bilješka**: Moguće je odabrati bilješke koje su prethodno unesene u odgovarajuću tablicu, dostupnu putem putanja *Konfiguracije > Alati > Upravljanje kodiranim bilješkama*. Da biste to učinili, korisnik može dvaput kliknuti na polje **Početna bilješka** kako bi otvorio *pomoć vezanu uz kodirane bilješke* i odabrao podatke. Alternativno, desnim klikom miša moguće je otvoriti prozor radi specificiranja vrlo dugog teksta bilješke. Ako polje sadrži vrijednost, boja pozadine polja mijenja se.
-
-U slučaju stvaranja narudžbenice pomoću postupka *Dobiti iz naloga za posao*, informacije prisutne u nalogu ponovno će biti prikazane.
-
-**Operater**: Omogućuje unos korisnika koji stvara dokument. Zaposlenici su prethodno uneseni u tablicu *Zaposlenici*, koja se nalazi na putanji *Početna stranica > Zaposlenici*. Podatak postaje **obavezan** ako je opcija postavljena u samim Postavkama dokumenta.
-
-**Projekt:** korištenjem [pomoći uz polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) moguće je povezati dokument s projektom. Ovo udruživanje funkcionira samo na razini zaglavlja stavke. Projekt se automatski unosi ako narudžbenica nastaje kao rezultat dokumenta koji ga sadržava (npr. planirane narudžbe za kupnju).    
-**Nalog proizvodnje**: mora biti postojeći broj radnog naloga za određenu godinu. Ako narudžbenica nastaje izdavanjem planiranih narudžbi za kupnju, radni nalog automatski dobiva broj.  
-**Status izvršenja**: kada se narudžbenica izvrši putem DDT-a ili fakture, njezino stanje isporuke automatski se mijenja iz neizvršenog u djelomično izvršeno ili izvršeno. Korisnik može prisiliti izvršenje narudžbenice koja nije u potpunosti izvršena, a kada se to dogodi, datum izvršenja također se sprema.    
-**Status dokumenta**: unosi ga korisnik i upravlja se u određenim vertikalizacijama (distribucijski lanci ili povezane tvrtke) kako bi se replicirali dokumenti između maloprodajnih mjesta i centralnog sustava te obrnuto.
-
-**Prodajna mjesta**: upravlja se samo vertikalizacijom koja se odnosi na distribucijske lance. U slučaju narudžbenice dobivene prijenosom robe između maloprodajnih mjesta istog lanca, prikazuje se maloprodajno mjesto porijekla robe.
-
 #### Posebni gumbi
 
-> **Dobit iz naloga za posao**: poziva postupak za stvaranje narudžbenice iz radnog naloga. Aktivira se unosom dobavljača i vrste narudžbenice.   
-> **Zamijeni datume predviđene isporuke u redovima**: nakon što su određeni datumi zahtjeva za isporukom i/ili predviđene isporuke u zaglavlju narudžbenice, moguće je masovno zamijeniti te datume u već unesenim redovima stavki.
+> **Izvršenje projekta**: pokreće postupak za kreiranje dobavljačke narudžbe iz nabavnog projekta (naloga). Opcija postaje dostupna nakon unosa dobavljača i vrste dobavljačke narudžbe. Da bi se nabavni projekt mogao preuzeti, mora biti ispisan i potvrđen.
+
+> **Zamijeni planirani datum isporuke u stavkama**: omogućuje, nakon definiranja polja Traženi datum isporuke i/ili Datum isporuke u zaglavlju narudžbe, masovnu zamjenu tih datuma u svim već unesenim stavkama artikala.
  
 ### 2.3 Plaćanja
 
