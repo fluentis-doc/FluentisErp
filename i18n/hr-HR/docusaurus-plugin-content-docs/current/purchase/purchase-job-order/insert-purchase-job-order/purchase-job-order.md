@@ -1,9 +1,9 @@
 ---
-title: Nova nabavna narudžba
+title: Novi Nalog za nabavom
 sidebar_position: 1
 ---
 
-Forma se otvara putem izbornika **Nabava > Nabavne narudžbe > Nova nabavna narudžba** ili iz filtera za pretraživanje nabavnih narudžbi, pomoću tipke *Nova narudžba*.
+Forma se otvara putem izbornika **Nabava > Nalog za nabavom > Kreiraj nalog za nabavom** ili iz filtera za pretraživanje nabavnih narudžbi, pomoću tipke *Novi radni nalog*.
 
 ## *Kako kreirati nabavnu narudžbu*
 
@@ -11,12 +11,12 @@ Forma se otvara putem izbornika **Nabava > Nabavne narudžbe > Nova nabavna naru
  
 <summary>Kliknite za prikaz ključnih koraka</summary>
  
-1. **Unesite obavezne podatke**: *Vrsta* i *Dobavljač*. *Godina*, *Broj* i *Datum unosa* bit će predloženi automatski.    
+1. **Unesite obavezne podatke**: *Tip radnog naloga* i *Dobavljač*. *Godina*, *Broj* i *Datum unosa* bit će predloženi automatski.    
  
 2. **Unesite ili uredite neobavezne podatke** u zaglavlju, poput *popusta*, *odredišta* i sl.   
  
-3. **Unesite artikle**: putem dvostrukim klikom na polje *Kod artikla* otvara se pomoć za artikle koja omogućuje pretraživanje i odabir postojećeg artikla. Svi ostali podaci retka, kao što su *jedinica mjere*, *količina*, *cijena*, bit će automatski predloženi, ali se mogu mijenjati.  
-Alternativno, moguće je odabrati kao *Tip retka* *Nepodijeljeni artikal* i ručno unijeti sljedeće podatke.
+3. **Unesite artikle**: putem dvostrukog klika na polje *Artikl* otvara se pomoćni prozor za artikle koji omogućuje pretraživanje i odabir postojećih artikala. Svi ostali podaci retka, kao što su *jedinica mjere*, *količina*, *cijena*, bit će automatski predloženi, ali se mogu mijenjati.  
+Alternativno, moguće je odabrati kao *Tip retka* *Nešifrirani artikl* i ručno unijeti sljedeće podatke.
  
 4. **Unesite eventualne popuste ili dodatne informacije** u kartici *Podaci*.
  
