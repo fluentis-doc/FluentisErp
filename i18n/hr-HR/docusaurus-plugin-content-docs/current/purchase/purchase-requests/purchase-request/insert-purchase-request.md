@@ -17,7 +17,7 @@ Obrazac se otvara putem izbornika **Nabava > Zahtjevi za nabavu > Novi zahtjev**
 
 2. **Dodati artikle**. Dvostrukim klikom na polje **Šifra artikla** otvara se pregled artikala iz kojeg je moguće odabrati postojeći artikl. Ostali podaci na stavci, poput jedinice mjere, količine i cijene, automatski se popunjavaju, ali ih je moguće izmijeniti.
 
-   Alternativno, moguće je odabrati vrstu retka **Nekodificirani artikl** i ručno unijeti podatke.
+   Alternativno, moguće je odabrati vrstu retka **Artikl bez klase** i ručno unijeti podatke.
 
 3. Po potrebi unesite dodatne informacije u kartici **Podaci artikla**.
 
@@ -28,7 +28,7 @@ Obrazac se otvara putem izbornika **Nabava > Zahtjevi za nabavu > Novi zahtjev**
 
 Obavezna polja za unos zahtjeva za nabavu su:
 
-- [**Vrsta**](/docs/configurations/tables/purchase/purchase-request-type) – definira se u izborniku **Konfiguracija > Šifrarnici > Vrste zahtjeva za nabavu**. Ovisno o odabranoj vrsti mogu biti aktivirane dodatne funkcionalnosti, primjerice provjera raspoloživosti zaliha.
+- [**Vrsta**](/docs/configurations/tables/purchase/purchase-request-type) – definira se u izborniku **Konfiguracija > Šifarnici > Vrste zahtjeva za nabavu**. Ovisno o odabranoj vrsti mogu biti aktivirane dodatne funkcionalnosti, primjerice provjera raspoloživosti zaliha.
 
 - **Datum / Godina** – prema zadanim postavkama predlaže se trenutačni datum, ali ga je moguće ručno izmijeniti.
 
@@ -53,7 +53,7 @@ U tablici stavki dostupni su sljedeći podaci:
 
 - **Tip** – omogućuje odabir različitih vrsta stavki:
 
-  - **Artikl s klasom** – artikl definiran u šifrarniku artikala koji se može knjižiti u analitičkom računovodstvu i evidentirati na skladištu.
+  - **Artikl s klasom** – artikl definiran u šifarniku artikala koji se može knjižiti u analitičkom računovodstvu i evidentirati na skladištu.
 
   - **Artikl bez klase** – opisna stavka koja se može knjižiti u analitičkom računovodstvu, ali se ne vodi kroz skladišno poslovanje.
 
@@ -123,7 +123,7 @@ Ova kartica sadrži dodatne informativne podatke o artiklu. Vrijednosti se autom
 
 - **Valuta** – zadana valuta definirana na kartici preferiranog dobavljača.
 
-- **Tečaj** – datum i tečaj koji se koriste za preračun valuta.
+- **Tečaj** – datum i tečaj koji se koriste za izračun valuta.
 
 - **Varijanta** – omogućuje odabir jedne od definiranih varijanti artikla. Ako za pojedine varijante postoje različite cijene ili popusti, oni će se automatski ažurirati nakon promjene varijante.
 
@@ -179,7 +179,7 @@ Na temelju tih podataka moguće je odabrati najpovoljnijeg dobavljača za slanje
 
 Moguće je koristiti sljedeće vrste primatelja zahtjeva:
 
-1. **Dobavljač** – odabir postojećeg dobavljača iz šifrarnika. Odabirom ove opcije omogućuje se unos podataka u polje *Naziv dobavljača*.
+1. **Dobavljač** – odabir postojećeg dobavljača iz šifarnika. Odabirom ove opcije omogućuje se unos podataka u polje *Naziv dobavljača*.
 
 2. **Nomenklatura** – odabir unaprijed definiranog naziva i poslovnog subjekta. Odabirom ove opcije omogućuje se unos podataka u polja *Nomenklatura* i *Opis nomenklature*.
 
