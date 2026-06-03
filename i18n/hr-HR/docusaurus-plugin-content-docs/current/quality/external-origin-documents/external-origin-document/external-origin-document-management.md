@@ -126,7 +126,7 @@ Popis se sastoji od sljedećih informacija:
 >> **Opis**: slobodan opis primatelja koji nije kodiran.  
 >
 > **Podaci za dostavu**   
->> **Na papiru**: označava da primatelj želi primiti *Tiskanu* kopiju dokumenta ili u privitku putem *Emaila*.   
+>> **Na papiru**: označava da primatelj želi primiti *Tiskanu* kopiju dokumenta ili u privitku putem *E-maila*.   
 >> **Vrsta obavijesti**: označava uobičajenu metodu dostave *Dokumenta*.   
 >> **Email**: označava email adresu primatelja, ako nije kodirana u registru primatelja.   
 >> **Dostava**: označava da je dostava izvršena; postavlja se automatski prilikom distribucije dokumenta i naknadno se može mijenjati.   

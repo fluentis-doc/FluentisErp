@@ -3,7 +3,6 @@ title: Uvod
 sidebar_position: 1
 ---
 
-
 ## Upravljani dokumenti
 
 import Link from '@docusaurus/Link';
@@ -13,7 +12,7 @@ import Link from '@docusaurus/Link';
 ###     <Link to="/docs/quality/external-origin-documents/external-origin-document/external-origin-document-management">Dokumenti vanjskog podrijetla</Link>
         <p>Upravljanje dokumentima vanjskog podrijetla omogućuje: katalogizaciju, upravljanje izdanjima/revizijama i njihovu distribuciju (u tiskanoj i elektroničkoj formi) poslovnim funkcijama koje su zainteresirane za pregled tih dokumenata.</p>
         <p>Neki primjeri dokumenata vanjskog podrijetla koji se mogu katalogizirati: *Priručnici za uporabu i održavanje strojeva i postrojenja*, *Propisi*, *Zakoni*, *Specifikacije časopisa*, itd.</p>
-        <p>Informacije o mjestu pohrane originala i mogućnost priloženja njihovih elektroničkih kopija omogućuju njihovu trenutnu pronalažljivost i pregled jednostavnim klikom miša.</p>
+        <p>Informacije o mjestu pohrane originala i mogućnost prilaganja njihovih elektroničkih kopija omogućuju njihovo trenutno nalaženje i pregled jednostavnim klikom miša.</p>
         <p>U standardu su dostupna izvješća: *Dokumenti u privitku* i *Dokumenti priloženi dokumentu*.</p>
     </div>
 </div>
