@@ -3,11 +3,11 @@ title: Unos cjenika dobavljača
 sidebar_position: 3
 ---
 
-Obrazac se otvara putem putanje **Nabava > Cjenici Dobavljača > Stvori Cjenik Dobavljača** ili putem gumba **Novo** koji se nalazi u obrascu [Pretraživanje Cjenika Dobavljača.
+Obrazac se otvara putem putanje **Nabava > Cjenici Dobavljača > Novi cjenik** ili putem gumba **Novo** koji se nalazi u obrascu [Pretraživanje Cjenika dobavljača.
 
-## **1. Gornji odjeljak**
+## **1. Obavezni podaci**
 
-U obrascu za unos automatski se predlažu vrijednosti polja **Od datuma valjanosti** (predložen je trenutni datum početka valjanosti) i [Valuta](/docs/guide/common/glossary/glossary-intro#currency) (predložena je valuta tvrtke), ali ih je moguće promijeniti.
+U obrascu za unos automatski se predlažu vrijednosti polja **Od datuma valjanosti** (predložen je trenutni datum početka valjanosti) i [**Valutu**](/docs/guide/common/glossary/glossary-intro#currency) (predložena je valuta tvrtke), ali ih je moguće promijeniti.
 
 Za nastavak stvaranja cjenika, korisnik mora unijeti:
 
@@ -15,46 +15,174 @@ Za nastavak stvaranja cjenika, korisnik mora unijeti:
 
 **Do datuma valjanosti**: ovo je opcionalno polje koje se koristi ako se želi definirati promotivnu kampanju ili postaviti datum isteka cjenika.
 
+:::warning Važno
+Kako bi cjenik bio valjan za određenog dobavljača, potrebno ga je povezati na kartici dobavljača u kartici **Cjenici**. Više informacija dostupno je u dokumentaciji dobavljača.
+:::
+
+## Dodatni podaci
+
+- **Datum završetka važenja** – koristi se kada je potrebno definirati vremenski ograničen cjenik, primjerice za promotivne akcije ili posebne uvjete nabave. Datum je moguće masovno postaviti na više cjenika iz pregleda cjenika korištenjem funkcije **Zatvori**.
+
+- **Struktura dodatnih popusta** – ako je na kartici dobavljača definirana dodatna struktura popusta, prikazat će se u ovom polju samo za pregled.
+
+- **Napomene** – slobodan unos dodatnih informacija vezanih uz cjenik.
+
+Nakon unosa obaveznih podataka potrebno je spremiti dokument kako bi bilo moguće unositi stavke cjenika.
+
 ## **2. Artikli**
 
-Nakon što unesete i spremite dobavljača, da biste unijeli novi artikl u mrežu, jednostavno se pozicionirajte na redak i unesite različite podatke ili koristite gumb *Novi artikl* koji se nalazi u ribbon traci.
+Nakon što se unese i spremi dobavljač, da bi se unio novi artikl, jednostavno se pozicionira na redak i unašaju se različiti podaci ili se koristi gumb *Novi artikl* koji se nalazi u *ribbon* traci.
 
-**Varijanta artikla**: koristi se ako varijanta dodatno razlikuje jedan artikl od drugog;
+Dostupni stupci uključuju:
 
-**Artikl dobavljača**: koristi se ako je kod dobavljača različit od koda tvrtke;
+- **Artikl / Opis artikla** – šifra i naziv artikla koji se dodaje u cjenik. Novi artikl moguće je unijeti izravno u tablicu ili korištenjem funkcije **Novi artikl**.
 
-**Kod varijante dobavljača**: koristi se ako varijanta dodatno razlikuje jedan dobavljački artikl od drugog dobavljačkog artikla;
+- **Šifra / Opis varijante artikla** – koristi se kada se cijena odnosi na određenu varijantu artikla.
 
-**Jedinica mjere**: može biti upravljačka jedinica mjere za artikl ili jedna od njenih alternativnih jedinica mjere;
+- **Šifra / Opis artikla dobavljača** – koristi se ako dobavljač koristi vlastitu šifru artikla koja se razlikuje od interne šifre u sustavu.
 
-**Marka artikla**: ako je navedena;
+- **Šifra / Opis varijante artikla dobavljača** – koristi se ako dobavljač za pojedinu varijantu artikla koristi vlastitu oznaku.
 
-**Količina**: predložena kao 1, to je referentna količina za cijenu; ako je različita od 1, kada se cijena izračunava, dijeli se s količinom cjenika;
+- **Jedinica mjere** – osnovna ili alternativna jedinica mjere za koju vrijedi definirana cijena.
 
-**Cijena**: u vezi s valutom cjenika;
+- **Marka proizvoda (artikl)** – oznaka robne marke artikla, ako je definirana.
 
-**Dodatna vrijednost** i **Postotak dodatka**: koriste se kada se stvaraju prodajni cjenici iz dobavljačkih cjenika; ova vrijednost se dodaje cjeni dobavljača.
+- **Količina** – referentna količina za koju vrijedi navedena cijena. Standardno je postavljena na 1. Ako je definirana druga vrijednost, sustav prilikom izračuna koristi odnos između cijene i količine.
 
-*Posebni Gumb*
+- **Nabavna cijena** – cijena artikla izražena u valuti cjenika. Ovo polje dostupno je samo kada je uključena opcija prikaza nabavnih cijena.
 
-> **Ažuriraj cijene**:
+- **Dodatna vrijednost** i **Dodatni postotak** – koriste se pri kreiranju prodajnih cjenika na temelju nabavnih cjenika. Na nabavnu cijenu automatski se dodaje definirana vrijednost ili postotak.
 
-### Popusti
+## 2.1 Detalji
 
-Korisnik može unijeti popuste koji će se primijeniti na redak stavke cjenika. Popust mora imati vrstu popusta s prioritetom primjene, može se primijeniti u kaskadi u odnosu na popuste s višim prioritetom ili na osnovu osnovice, bez obzira na prioritet, uz postotak popusta.
+Za svaki artikl na cjeniku moguće je definirati različite vrste popusta.
 
-### Popusti na količinu
+U polju **Vrsta obračuna popusta** određuje se zadana metoda obračuna popusta za odabrani artikl. Vrijednost definirana na cjeniku ima prednost nad postavkama definiranim na kartici artikla.
 
-Korisnik može unijeti popuste koji će se primjenjivati na redak stavke cjenika prema različitim količinskim razredima kupljenih artikala. Popust mora imati vrstu popusta s određenim prioritetom primjene. Može se primijeniti u kaskadi u odnosu na popuste s višim prioritetom ili na osnovu osnovne cijene, bez obzira na prioritet. Količinski razred i postotak popusta primjenjuju se od količine u tom razredu do jedinice ispod količine u sljedećem razredu.
+U desnom dijelu obrasca moguće je definirati jedan ili više popusta koji će se primjenjivati na artikl. Ako je za artikl definirano više različitih vrsta popusta, tijekom unosa dokumenta moguće je odabrati odgovarajuću metodu obračuna.
 
-### Popusti po vrijednosti
+U nastavku su opisane dostupne vrste popusta.
 
-Korisnik može unijeti popuste koji će se primjenjivati na redak stavke cjenika prema različitim vrijednosnim razredima kupljenih artikala. Popust mora imati vrstu popusta s određenim prioritetom primjene. Može se primijeniti u kaskadi u odnosu na popuste s višim prioritetom ili na osnovu osnovne cijene, bez obzira na prioritet. Vrijednosni razred i postotak popusta primjenjuju se od vrijednosti u tom razredu do jedinice ispod vrijednosti u sljedećem razredu.
+## 2.2 Fiksni popusti (bez grupiranja)
 
-### Cijene po količini
+Fiksni popusti primjenjuju se neovisno o količini ili drugim uvjetima navedenima na dokumentu. Najčešći primjer su standardni komercijalni popusti.
 
-Korisnik može unijeti neto cijene koje će se primjenjivati na redak stavke cjenika prema različitim količinskim razredima kupljenih artikala. Količinski razred i neto cijena primjenjuju se od količine u tom razredu do jedinice ispod količine u sljedećem razredu.
+Dostupna polja su:
 
-### Napomene
+- **Vrsta popusta** – odabir vrste popusta iz unaprijed definiranog šifrarnika.
 
-Korisnik može definirati napomene s datumom njihove valjanosti.
+- **Prioritet** – određuje redoslijed primjene popusta kada je definirano više popusta za isti artikl.
+
+- **Način obračuna** – određuje osnovicu za izračun popusta:
+  - **Kaskadno (višefazno)** – popust se obračunava na iznos umanjen za prethodno obračunate popuste.
+  - **Na osnovicu** – popust se uvijek obračunava na početni iznos stavke.
+
+- **Postotak** – postotak popusta koji će se primijeniti.
+
+## 2.3 Količinski popusti (rabat po količini)
+
+Količinski popusti omogućuju primjenu različitih postotaka popusta ovisno o naručenoj količini artikla.
+
+Dostupna polja su:
+
+- **Vrsta popusta** – odabir vrste popusta iz šifrarnika.
+
+- **Količina** – prag količine od kojeg se aktivira definirani popust.
+
+- **Postotak** – postotak popusta koji će se primijeniti kada se dostigne ili premaši definirana količina.
+
+Primjer:
+
+| Količina | Popust (%) |
+|-----------|------------|
+| 2 | 7 |
+| 3 | 10 |
+| 4 | 12 |
+| 5 | 15 |
+| 6 | 18 |
+
+U prikazanom primjeru:
+
+- Za kupnju 2 komada odobrava se popust od 7%.
+- Za kupnju 3 komada odobrava se popust od 10%.
+- Za kupnju 4 komada odobrava se popust od 12%.
+- Za kupnju 5 komada odobrava se popust od 15%.
+- Za kupnju 6 ili više komada odobrava se popust od 18%.
+
+U prikazanom primjeru, pri kupnji 2 komada ostvaruje se popust od 7%, pri kupnji 3 komada popust od 10%, i tako dalje.
+
+## 2.4 Popusti prema vrijednosti (rabat po vrijednosti)
+
+Kod ove vrste popusta popust se aktivira kada vrijednost pojedine stavke dokumenta dosegne ili premaši definirani iznos.
+
+Dostupna polja su:
+
+- **Vrsta popusta** – odabir vrste popusta iz unaprijed definiranog šifrarnika.
+- **Vrijednost** – prag iznosa nakon kojeg se primjenjuje popust.
+- **Postotak** – postotak popusta koji će se primijeniti nakon dostizanja definirane vrijednosti.
+
+Primjer:
+
+| Vrijednost | Popust (%) |
+|------------|------------|
+| 100,00 | 2 |
+| 200,00 | 4 |
+| 300,00 | 6 |
+
+U prikazanom primjeru:
+
+- Ako je vrijednost stavke manja od 100 EUR, popust se ne primjenjuje.
+- Za vrijednost od 100 do 199,99 EUR primjenjuje se popust od 2%.
+- Za vrijednost od 200 do 299,99 EUR primjenjuje se popust od 4%.
+- Za vrijednost od 300 EUR ili više primjenjuje se popust od 6%.
+
+## 2.5 Cijena po količini
+
+Ova funkcionalnost omogućuje definiranje različitih jediničnih cijena ovisno o naručenoj količini artikla.
+
+Dostupna polja su:
+
+- **Količina** – prag količine nakon kojeg se primjenjuje definirana cijena.
+- **Jedinična cijena** – cijena koja vrijedi za naručenu količinu.
+
+Primjer:
+
+| Količina | Jedinična cijena |
+|-----------|------------------|
+| 100 | 10,00 |
+| 120 | 9,00 |
+| 140 | 8,00 |
+| 160 | 7,00 |
+
+U prikazanom primjeru:
+
+- Za količine manje od 100 koristi se osnovna cijena iz cjenika.
+- Za količine od 100 do 119 primjenjuje se cijena od 10,00.
+- Za količine od 120 do 139 primjenjuje se cijena od 9,00.
+- Za količine od 140 do 159 primjenjuje se cijena od 8,00.
+- Za količine od 160 ili više primjenjuje se cijena od 7,00.
+
+## 2.6 Napomene
+
+Za pojedini artikl moguće je definirati napomene te odrediti razdoblje njihove valjanosti.
+
+Napomene se mogu koristiti za dodatne informacije o uvjetima nabave, posebnim zahtjevima ili drugim podacima vezanim uz artikl.
+
+## 2.7 Dodatni podaci artikla
+
+Prikazuje se popis dodatnih podataka povezanih s artiklom.
+
+Po potrebi je moguće dodati nove dodatne podatke koji će vrijediti samo za dokument na kojem se trenutno radi.
+
+Opcija **Ispisati** određuje koji će se dodatni podaci uključiti u ispis dokumenta.
+
+## 2.8 Priloženi dokumenti
+
+U ovom dijelu prikazuju se podaci o dokumentima povezanim sa stavkom cjenika, uključujući:
+
+- Naziv dokumenta
+- Vrstu dokumenta
+- Napomene
+- Internu i eksternu referencu
+
+Za informacije o dodavanju priloga pogledajte dokumentaciju za funkcionalnost **Priloženi dokumenti**.
