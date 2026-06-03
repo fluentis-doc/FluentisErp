@@ -35,7 +35,7 @@ import Link from '@docusaurus/Link';
 ###     <Link to="/docs/quality/item-control/items-control/item-control-management">Kontrola artikala</Link>
         <p>Kontrole artikla omogućuju registraciju izvršenih mjerenja, zabilježenih vrijednosti i posljedičnu naznaku usklađenosti ili neusklađenosti kontroliranog materijala, poluproizvoda ili gotovog proizvoda.</p>
         <p>Dokumenti iz kojih je moguće izvršiti kontrole nad artiklima: Primke robe, otpremnice i ulazne fakture, Izjave o proizvodnji, Faze proizvodnih naloga, Povrati iz kooperacije i Knjiženja ulaza. Za svaku vrstu dokumenta moguće je odrediti za koji detalj artikla se želi provesti provjera: Nijedan, po Lotu, po Serijskom broju ili po Jedinici tereta, vrstu kontrole koju treba generirati te iz koje vrste kontrolnog plana treba, s prioritetom, preuzeti ispitivanja koja treba provesti.</p>
-        <p>Omogućuje se postavljanje boja reda za različita stanja Kontrola artikala, koje se potom prikazuju u filteru za Kontrole artikala.</p>
+        <p>Omogućuje se postavljanje boja reda za različita stanja Kontrola artikala, koje se potom prikazuju u filtru za Kontrole artikala.</p>
         <p>Također je moguće postaviti da sustav automatski predloži negativan ishod ispitivanja: kod prve evidentirane neusklađenosti vrijednosti ili na temelju aritmetičke sredine svih evidentiranih vrijednosti.</p>
         <p>Upravljanje unosom i pregledom zabilježenih mjerenja prikazuje: kontrolirani artikl, izvorni kontrolni plan, ukupni ishod mjerenja, detalje izvornog dokumenta i – za svako provedeno ispitivanje – sve informacije naslijeđene iz izvornog kontrolnog plana, vrijednost i prosjek zabilježenih vrijednosti u sesiji *Višestruko mjerenje vrijednosti*, ishod, operatera koji je evidentirao vrijednosti te korišteni mjerni instrument. Iz upravljanja je također moguće izvršiti prijenose artikala iz skladišta kontrole kvalitete u skladišta sukladnih i nesukladnih artikala.</p>
         <p>Putem M.E.S. rješenja, integriranog u Fluentis, moguće je unositi navedene tražene informacije na izravan i pojednostavljen način.  </p>
@@ -45,7 +45,7 @@ import Link from '@docusaurus/Link';
 <div className="cardContainer">
     <div className="card">
 ###     <Link to="/docs/quality/item-control/certificates-of-analysis/certificate-of-analysis-management">Certifikati s analize</Link>
-        <p>Certifikati s analize potvrđuju provedene provjere proizvoda, poštivanje granica navedenih u Kontrolnim planovia i povezanim Tehničkim uputstvima te prate prodaju proizvoda.</p>
+        <p>Certifikati s analize potvrđuju provedene provjere proizvoda, poštivanje granica navedenih u Kontrolnim planovima i povezanim Tehničkim uputstvima te prate prodaju proizvoda.</p>
         <p>Standardno su dostupna izvješća: Certifikat analize i Izjava o sukladnosti.</p>
     </div>
 </div>
