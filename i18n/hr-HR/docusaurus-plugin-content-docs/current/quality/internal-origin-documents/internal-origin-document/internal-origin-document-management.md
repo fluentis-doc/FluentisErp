@@ -17,7 +17,7 @@ Nekoliko primjera dokumenata unutarnjeg podrijetla koji se mogu katalogizirati:
 > *Operativne upute*  
 > *Servisna kartica*   
 
-Informacije o mjestu pohrane originala i mogućnost priloženja njihovih elektroničkih kopija omogućuju njihovu trenutnu pronalažljivost i pregled jednostavnim klikom miša.
+Informacije o mjestu pohrane originala i mogućnost prilaganja njihovih elektroničkih kopija omogućuju njihovo trenutno nalaženje i pregled jednostavnim klikom miša.
 
 Kao standard, dostupna su izvješća:  
 > **Naslovna stranica**: kartica koja za svaki *Dokument* prikazuje popis provedenih *Revizija* i *Distribucijsku listu*.  
@@ -184,7 +184,7 @@ Informacije su moguće mijenjati ako je dokument u statusu *U izradi*, inače su
 
 ### Privitak
 
-Moguće je priložiti *Dokument* koji se kataloži pomoću 'drag'n'drop'; prikazuje se pregled.  
+Moguće je priložiti *Dokument* pomoću *'drag'n'drop'* funkcije; prikazuje se pregled.  
 Ovaj prilog nije uključen u Fluentis Dokumente.  
 U informacijama *Naziv priloga* i *Tip priloga* sustav prepoznaje naziv fizičke datoteke i ekstenziju.  
 Ako nisu prepoznati, mogu se unijeti ručno.
@@ -264,8 +264,8 @@ Popis se sastoji od sljedećih informacija:
 > **Naslov**: *Naslov* *Dokumenta*.   
 > **Stanje**: *Stanje* *Dokumenta*.   
 > **Od datuma**: datum kada je *Dokument* preuzeo trenutno *Stanje*.   
-> **Referenca paragrafa**: referenca na brojeve paragrafa izmijenjenih u odnosu na prethodnu *ediciu/reviziju*.   
-> **Referenca stranica**: referenca na brojeve stranica izmijenjenih u odnosu na prethodnu *ediciu/reviziju*.   
+> **Referenca paragrafa**: referenca na brojeve paragrafa izmijenjenih u odnosu na prethodnu *ediciju/reviziju*.   
+> **Referenca stranica**: referenca na brojeve stranica izmijenjenih u odnosu na prethodnu *ediciju/reviziju*.   
 > **Funkcija provjere/odobrenja**: *Poslovna funkcija* odgovorna za provjeru/odobrenje.   
 > **Funkcija izrade/izdavanja**: *Poslovna funkcija* odgovorna za izradu/izdavanje.  
 
