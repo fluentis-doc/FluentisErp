@@ -1,85 +1,106 @@
 ---
-title: Automatsko stvaranje narudžbe
+title: Automatsko generiranje narudžbe
 sidebar_position: 2
 showLastUpdateTime: true
 ---
 
-Postupak se nalazi na putanji **Nabava > Narudžbe dobavljača > Procedure** i omogućuje stvaranje narudžbenica dobavljača iz  *Zahtjeva za kupnju* ili *Narudžbi od klijenata*.
+Postupak se nalazi na putanji **Nabava > Narudžba dobavljačima > Procedure** i omogućuje stvaranje narudžba dobavljačima iz  *Zahtjeva za nabavom* ili *Narudžbi kupaca*.
 
-## Filter od 
+## Filtriraj iz
 
-Na ovoj kartici odabiru se izvorni dokumenti iz kojih će se stvoriti narudžbenica dobavljača. Stoga je potrebno slijediti sljedeće korake:
+Na ovoj kartici odabiru se izvorni dokumenti iz kojih će se stvoriti narudžba. Stoga je potrebno slijediti sljedeće korake:
 
-**1**. filtrirajte *Zahtjev za kupnju* ili *Narudžbu klijenta* iz kojih će se generirati narudžbenica dobavljača.
+**1**. filtrirati *Zahtjev za nabavom* ili *Narudžbu kupca* iz kojih će se generirati narudžba.
 
-**2**. odaberite podatke iz mreža (gornja sadrži zahtjev/narudžbu, a donja odgovarajuće artikle) mišem ili pomoću gumba za odabir koji se nalaze na vrpci.
+**2**. odabrati podatke iz pregleda (gornji sadrži zahtjev/narudžbu, a donji odgovarajuće artikle) mišem ili pomoću gumba za odabir koji se nalaze na vrpci.
 
-**3**. pritisnite gumb *Generiraj prototip narudžbe* kako biste prešli na sljedeću karticu.
+**3**. pritisnuti gumb *Generiraj prototipove narudžbe* kako bi se prešlo na sljedeću karticu.
  
 
 ## Izbor dobavljača
 
-Nakon generiranja *Prototipa narudžbe* mogu se potvrditi na temelju  *preferiranih Dobavljača* artikla ili *dobavljačkih Cjenika*. Na ovoj kartici potrebno je odabrati dobavljača od kojeg želite naručiti.
+Nakon generiranja *Prototipova narudžbe*, oni se mogu potvrditi na temelju *preferiranih Dobavljača* artikla ili *cjenika dobavljača*. Na ovoj kartici potrebno je odabrati dobavljača od kojeg se želi naručiti.
 
-**4**. u prvoj mreži odaberite prototipe ili samo neke od njihovih artikla. ![](/img/neutral/common/check.png). Podređene mreže, *Artikli* i *Analitika*, prikazat će pojedinosti o odabranoj stavci u prvoj mreži. 
+**4**. u prvom prikazu odaberu se prototipovi ili samo neki od njihovih artikla. ![](/img/neutral/common/check.png). Pregledi *Artikli* i *Analitika*, prikazat će pojedinosti o odabranoj stavci u prvoj mreži. 
 
 
-**5**. Potražite/odaberite/promijenite dobavljača za artikle, ovisno o odabranom parametru u odjeljku *Izaberite dobavljača prema kojem se naručuje*:
+**5**. Potražiti/odabrati/promijeniti dobavljača za artikle, ovisno o odabranom parametru u odjeljku *Izbor dobavljača*:
 
 - **Dobavljač i cjenik iz zahtjeva za kupnju**: ova kartica predlaže dobavljača prisutnog u zahtjevu za kupnju;
 
-- **Dobavljač i cjenik od zadanih dobavljača**: ovaj flag predlaže zadano preferiranog dobavljača za artikl;
+- **Dobavljač i cjenik po preferencijalnom zadanom dobavljaču**: ovaj *flag* predlaže zadanog preferiranog dobavljača za artikl;
 
-- **Dobavljač i cijene od posljednje fakture/narudžbe/primitka**: ova kartica traži dobavljača i cijene u zadnjem primljenom računu kupnje; ako se ne upravlja računima kupnje, tražit će se u prijevoznim dokumentima, a zatim u narudžbama;
+- **Dobavljač i cijene iz posljednje fakturirane/zaprimljene/naručene nabave**: ova opcija traži dobavljača i cijene u zadnjem primljenom ulaznom računu; ako se ne upravlja ulaznim računima, tražit će se u prijevoznim dokumentima, a zatim u narudžbama;
 
-- **Dobavljač s najnižom cijenom kupnje**: aktivna kartica omogućuje odabir dobavljača s najnižom cijenom (cijena bez popusta);
+- **Dobavljač s najpovoljnijom otkupnom cijenom**: opcija omogućuje odabir dobavljača s najnižom cijenom (cijena bez popusta);
 
-- **Dobavljač s najkraćim vremenom nabave**: aktivna kartica omogućuje odabir dobavljača s najkraćim vremenom nabave;
+- **Dobavljač s najboljim vremenom nabave**: opcija omogućuje odabir dobavljača s najkraćim vremenom nabave;
 
-- **Dobavljač s najboljim uvjetima plaćanja**: aktivna kartica omogućuje odabir dobavljača s najdužim rokom dospijeća;
+- **Dobavljač s najboljim uvjetima plaćanja**: opcija omogućuje odabir dobavljača s najdužim rokom dospijeća;
 
 Artikli bez dobavljača mogu se odabrati desnim klikom mišem i premjestiti, također mišem, ispod željenog dobavljača koji već ima barem jedan povezani artikl.
 
-**6**. potvrdite odabirom **![](/img/it-it/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests/image03.png)**, kako biste generirali narudžbe dobavljača na temelju odabranih prototipova.
+**6**. potvrditi odabirom **![](/img/it-it/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests/image03.png)**, kako bi se generirale narudžbe na temelju odabranih prototipova.
 
 *Posebni gumbi*:
 
 > **Proširi**: omogućuje proširivanje svih redaka u mreži s dokumentima.
 
-> **Obriši odabrani prototip narudžbe**: omogućuje brisanje odabranog prototipa narudžbe.
+> **Izbriši odabrani prototip narudžbe**: omogućuje brisanje odabranog prototipa narudžbe.
 
-> **Odaberi dobavljača**: omogućuje odabir dobavljača. Postaje aktivan ako je odabran barem jedan prototip/artikl.
+> **Odaberite dobavljača**: omogućuje odabir dobavljača. Postaje aktivan ako je odabran barem jedan prototip/artikl.
 
 > **Potvrdi odabrane prototipe narudžbe**: omogućuje generiranje narudžbi dobavljača na temelju odabranih prototipova.
 
 ## Prototipovi narudžbe
 
-Prikazani su i pred narudžbenice radi stvaranja narudžbenica s podacima predloženim na kartici Parametri.
+U ovom odjeljku prikazuju se *predbilježbe narudžbi (pre-orderi)* namijenjene kreiranju narudžbi dobavljačima.
 
-**7**. uredite i/ili unesite nedostajuće podatke za narudžbu (Vrsta) ili za njene artikle (Količina, PDV, Vrsta fakturiranja kupnje) i odlučite hoće li se izvršiti izvršenje reda zahtjeva ili narudžbe klijenta prisilno, bez dodatnog uzimanja u obzir preostalih količina.
+**7**. urediti i/ili unijeti nedostajuće podatke za narudžbu (Vrsta) ili za njene artikle (Količina, PDV, Vrsta prometa nabave) i odlučiti hoće li se zahtjev za nabavom ili narudžba kupca izvršiti prisilno, bez dodatnog uzimanja u obzir preostalih količina.
 
-**8**. generirajte narudžbenice dobavljača pomoću gumba *Generiraj narudžbenice dobavljača* ili, alternativno, dodajte redove postojećim narudžbama pomoću gumba *Narudžbe*.
+**8**. generirati narudžbe dobavljačima pomoću gumba *Generiraj narudžbe dobavljača* ili, alternativno, dodati redove postojećim narudžbama pomoću gumba *Narudžbe*.
 
-## Parametri 
+## Parametri (kreiranja)
 
-**Tip narudžbe**: koristi se za stvaranje ispravnog broja narudžbenice;
+- **Vrsta narudžbe dobavljača za zahtjeve za nabavu** – određuje vrstu narudžbe koja će se kreirati iz zahtjeva za nabavu. Vrijednost je moguće promijeniti u koraku *Prototipovi narudžbi*.
 
-Podaci koji će se koristiti, ako nisu kodirani za svaki artikl:
+- **Vrsta narudžbe dobavljača za narudžbe kupaca** – određuje vrstu narudžbe koja će se kreirati iz narudžbi kupaca. Vrijednost je također moguće promijeniti u koraku *Prototipovi narudžbi*.
 
-**Vrsta prometa nabave**: ako artikl nema vrstu fakturiranja kupnje;
+- **Grupiranje za stavku** – ako zahtjev za nabavu ili narudžba kupca sadrže više redaka s istim artiklom, sustav će kreirati jednu stavku sa zbrojenom količinom. Grupiranje se primjenjuje samo na stavke unutar istog izvornog dokumenta.
 
-**Stopa PDV-a**: ako artikl nema PDV kod;
+## Zadane vrijednosti za artikle bez definiranih podataka
 
-**Mjerna jedinica**: ako želite stvoriti narudžbe i s alternativnom mjerom;
+Ove vrijednosti koriste se kada određeni podaci nisu definirani na kartici artikla.
 
-**Vrijeme nabave**: za određivanje datuma isporuke.
+- **Vrsta prometa nabave** – koristi se ako na artiklu nije definirana vrsta fakturiranja nabave.
+
+- **Stopa PDV-a** – koristi se ako na artiklu nije definirana PDV stopa.
+
+- **Jedinica mjere (alternativna jedinica mjere)** – koristi se ako se narudžbe kreiraju s alternativnom jedinicom mjere.
+
+- **Vrijeme nabave** – koristi se za izračun i određivanje planiranih datuma isporuke.
+
+## Razmotri dostupnost
+
+Ako je ova opcija uključena, u koraku **Prototipovi narudžbi** bit će prikazan stupac **Raspoloživa količina**.
+
+Prilikom izračuna raspoloživosti sustav može uzeti u obzir količine iz sljedećih područja, ovisno o odabranim opcijama:
+
+- Kooperacija / dorada
+- Nabava
+- Prodaja
+- Planiranje
+- Proizvodnja
+- Skladište
+
+Na temelju tih podataka određuje se stvarna raspoloživost artikla koja se koristi pri prijedlogu količina za naručivanje.
 
 ## Operacije
 
-Na temelju vrste izvornog dokumenta (*Zahtjev za kupnju* ili *Narudžba klijenta*), prikazuje povijest svih provedenih kreacija s detaljima o operateru, stvorenim Narudžbenicama dobavljača i njihovim pojedinostima..
+Na temelju vrste izvornog dokumenta (*Zahtjev za kupnju* ili *Narudžba kupca*), prikazuje povijest svih provedenih kreacija s detaljima o operateru, stvorenim Narudžbama dobavljačima i njihovim pojedinostima.
 
-Narudžbenice dobavljača mogu se pregledati dvostrukim klikom na retke kartica **Operacije**/**Detalji**.
+Narudžbe dobavljačima mogu se pregledati dvostrukim klikom na retke kartica (dolje) **Operacija**/**Detalji**.
 
 *Posebna tipka*:
 
-> **Povrati označene operacije**: omogućuje poništenje stvorene narudžbenice dobavljača i vraćanje zahtjeva za kupnjom.
+> **Povrati označene operacije**: omogućuje poništenje stvorene narudžbe i vraćanje zahtjeva za nabavom.
