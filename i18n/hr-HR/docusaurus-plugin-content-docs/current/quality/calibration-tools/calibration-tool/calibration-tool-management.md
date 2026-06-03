@@ -9,8 +9,7 @@ Upravljanje se nalazi na putanji **Kvaliteta > Kalibracija uređaja > Kalibracij
 :::important ČEMU SLUŽI
 U okviru upravljanja Kalibracijom uređaja moguće je zabilježiti interne kalibracije i Certifikate kalibracije.   
 Ako je instrument podložan kalibraciji i kalibracija je interna, moguće je unijeti, za predviđene pozicije, izmjerene vrijednosti. Fluentis će automatski dodijeliti pozitivan ili negativan rezultat, za svaku pojedinačnu poziciju i općenito.   
-Ako je instrument podložan kalibraciji i kalibracija je eksterna, moguće je priložiti Certifikat kalibracije koji je izdao vanjski entitet koji je izvršio kalibraciju. Rezultat će u ovom slučaju ručno dodijeliti operater.   
-A standard sono disponibili le reportistiche di: Registro tarature strumenti raggruppati per: Rapporto, Strumento e Operatore.   
+Ako je instrument podložan kalibraciji i kalibracija je eksterna, moguće je priložiti Certifikat kalibracije koji je izdao vanjski entitet koji je izvršio kalibraciju. Rezultat će u ovom slučaju ručno dodijeliti operater.     
 
 Standardno su dostupni sljedeći izvještaji:   
 > **Dnevnik kalibracije instrumenta**: popis *Kalibracija instrumenata* koji se može grupirati prema: *Izvještaj*, *Instrument* i *Izvršeno od strane*.   
@@ -39,7 +38,7 @@ Upravljane informacije su:
 > - *Stvarni datum kalibracije* predložen je jednak trenutnom datumu;   
 > - *Godina* i *Broj* predloženi su na temelju stvarnog *datuma kalibracije* i *Numeracije* pridružene *Vrsti kalibracije*.   
 >
-> **Kalibraciju izvršio**: expander u kojem je moguće unijeti sljedeće:   
+> **Kalibraciju odrađena od**: proširenje u kojem je moguće unijeti sljedeće:   
 >
 >> **Interna kalibracija**: označava da *kalibraciju uređaja* obavlja osoba unutar poduzeća.   
 >> **Vanjski laboratorij**: to je naziv tvrtke koja provodi vanjsku kalibraciju.   
@@ -94,7 +93,6 @@ Ako je odstupanje veće od *Tražene vrijednosti* zbrojene s *Nesigurnošću (±
 Na prvi negativni rezultat u popisu *Očitavanih vrijednosti* i *Ukupni rezultat kalibracije* bit će također negativan.   
 > **Opservacije**: slobodne bilješke na temu.   
 > **Napomena**: slobodne bilješke.   
-
 
 ### Povijest Izvještaja i Certifikata kalibracije 
 U ovom popisu moguće je pregledati povijest *Kalibracija* i *Certifikata kalibracije* planiranih i izvršenih za *mjerni instrument* povezan s prikazanom *Kalibracijom*.  

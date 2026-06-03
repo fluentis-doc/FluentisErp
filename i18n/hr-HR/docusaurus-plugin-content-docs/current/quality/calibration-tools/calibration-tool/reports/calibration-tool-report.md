@@ -3,7 +3,7 @@ title: Popis kalibracija uređaja
 sidebar_position: 1
 ---
 
-Filter za izvršenje izvještaja nalazi se na putanji **Kvaliteta > Kalibracija uređaja > Kalibracija uređaja > Procedure > Popis Kalibracije uređaja**.   
+Filter za izvršenje izvještaja nalazi se na putanji **Kvaliteta > Kalibracija uređaja > Kalibracija uređaja > Izvještaji > Popis Kalibracije uređaja**.   
 
 Filter za izvršenje izvještaja omogućava pretraživanje *Kalibracije uređaja* kako bi se mogli ispisati.   
 

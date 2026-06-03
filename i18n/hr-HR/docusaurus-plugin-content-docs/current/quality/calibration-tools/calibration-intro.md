@@ -45,4 +45,4 @@ import Link from '@docusaurus/Link';
 
 
 ## Povezanost na druge module
-Modul *Kalibracija instrumenta* nije spojen ni na jedan drugi modul.   
+Modul *Kalibracija uređaja* nije spojen ni na jedan drugi modul.   
