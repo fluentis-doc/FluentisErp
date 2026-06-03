@@ -3,9 +3,9 @@ title: Upravljačka ploča cjenika dobavljača
 sidebar_position: 4
 ---
 
-Forma se otvara putem izbornika **Nabava > Cjenici > Upravljačka ploča cjenika dobavljača**.   
+Forma se otvara putem izbornika **Nabava > Cjenici dobavljača > Upravljačka ploča cjenika dobavljača**.   
 
-U rezultirajućem gridu prikazuje se jedan redak za svaku artikl-stavku sadržanu u različitim cjenicima, zajedno s referencom na cjenik iz kojeg su podaci preuzeti.  
+U formi se prikazuje jedan redak za svaku artikl-stavku sadržanu u različitim cjenicima, zajedno s referencom na cjenik iz kojeg su podaci preuzeti.  
 
 *Prisutna polja*:
 
