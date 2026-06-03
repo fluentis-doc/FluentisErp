@@ -293,10 +293,10 @@ Upravljane informacije su:
 >> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može promijeniti ovaj datum.
 >> Prilikom unosa datuma, automatski se predlažu sljedeće opcije: *Provjerio korisnik* i *Provjerila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* i postavljena je oznaka *Provjereno*. 
 >>
->> **Potvđeno od korisnika**: ovo je *A.R.M. korisnik* koji je potvrdio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
+>> **Potvrđeno od korisnika**: ovo je *A.R.M. korisnik* koji je potvrdio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
 >> **Potvrđeno od osobe**: ovo je *zaposlenik* koji je potvrdio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
 >> **Potvrđeno od funkcije**: ovo je *funkcija tvrtke* koja je potvrdila *Plan korektivnih radnji*.
->> Omogućeno samo ako je *Plan korektivnih radnji* *Potvrden*.  
+>> Omogućeno samo ako je *Plan korektivnih radnji* *Potvrđen*.  
 
 
 ### Međukontrolne akcije
@@ -318,7 +318,7 @@ Upravljane informacije su:
 >> **Prezime**: ovo je prezime *Zaposlenika* koji je izvršio međukontrolu.
 >> **Ime**: ovo je ime *Zaposlenika* koji je izvršio međukontrolu.   
 >
-> **Potvrđeno od funckije**
+> **Potvrđeno od funkcije**
 >> **Šifra**: ovo je Šifra *Funkcije tvrtke* koja je izvršila privremenu provjeru.
 >> **Opis**: ovo je opis *Funkcije tvrtke* koja je izvršila privremenu provjeru.
 >
