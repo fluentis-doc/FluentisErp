@@ -1608,7 +1608,7 @@
     "description": "The label for category Richiesta di offerta in sidebar purchase"
   },
   "sidebar.purchase.category.Listini fornitori": {
-    "message": "Cjenik dobavljača",
+    "message": "Cjenici dobavljača",
     "description": "The label for category Listini fornitori in sidebar purchase"
   },
   "sidebar.purchase.category.Gestione prezzi": {

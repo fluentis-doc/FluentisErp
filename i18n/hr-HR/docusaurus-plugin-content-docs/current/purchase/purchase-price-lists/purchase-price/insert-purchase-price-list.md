@@ -69,7 +69,7 @@ Fiksni popusti primjenjuju se neovisno o količini ili drugim uvjetima navedenim
 
 Dostupna polja su:
 
-- **Vrsta popusta** – odabir vrste popusta iz unaprijed definiranog šifrarnika.
+- **Vrsta popusta** – odabir vrste popusta iz unaprijed definiranog šifarnika.
 
 - **Prioritet** – određuje redoslijed primjene popusta kada je definirano više popusta za isti artikl.
 
@@ -85,7 +85,7 @@ Količinski popusti omogućuju primjenu različitih postotaka popusta ovisno o n
 
 Dostupna polja su:
 
-- **Vrsta popusta** – odabir vrste popusta iz šifrarnika.
+- **Vrsta popusta** – odabir vrste popusta iz šifarnika.
 
 - **Količina** – prag količine od kojeg se aktivira definirani popust.
 
@@ -117,7 +117,7 @@ Kod ove vrste popusta popust se aktivira kada vrijednost pojedine stavke dokumen
 
 Dostupna polja su:
 
-- **Vrsta popusta** – odabir vrste popusta iz unaprijed definiranog šifrarnika.
+- **Vrsta popusta** – odabir vrste popusta iz unaprijed definiranog šifarnika.
 - **Vrijednost** – prag iznosa nakon kojeg se primjenjuje popust.
 - **Postotak** – postotak popusta koji će se primijeniti nakon dostizanja definirane vrijednosti.
 
