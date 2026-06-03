@@ -3,7 +3,7 @@ title: Odobrenja
 sidebar_position: 9
 --- 
 
-Nužno je napomenuti da su od verzije 607, odobrenja su dobila artikle sa negativnom količinom; u slučaju unosa pozitivne količine, pojavit će se skočni prozor za promjenu znaka količine. 
+Nužno je napomenuti da su od verzije 607, odobrenja dobila artikle s negativnom količinom; u slučaju unosa pozitivne količine, pojavit će se skočni prozor za promjenu znaka količine. 
 Povratni računi od dobavljača razlikuju se od drugih vrsta računa jer je **Tip računa** (prikazani u tablici [Tipovi nabavnih računa](/docs/configurations/tables/purchase/purchase-invoices-type)) i **Odobrenja dobavljača** (slično će povratna dostavnica imati  **Povratni** tip). 
 
 Izrada povrata dobavljača može se izvršiti ručno ili postupkom.
