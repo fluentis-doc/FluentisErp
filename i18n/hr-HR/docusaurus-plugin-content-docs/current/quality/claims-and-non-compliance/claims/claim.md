@@ -7,7 +7,7 @@ sidebar_position: 2
 Upravljanje reklamacijama se može pronaći na putanji **Kvaliteta > Reklamacije > Nova reklamacija** ili se to može učiniti putem **Pretraživanja reklamacija**.  
  
 
-:::improtant Čemu služi?
+:::important Čemu služi?
 Reklamacije se koriste za evidentiranje nezadovoljstva uslugom ili proizvodom, što tvrtki omogućuje prepoznavanje i ispravljanje bilo kakvih problema. One su alat za poboljšanje kvalitete i održavanje dobrih odnosa s kupcima te bi trebale:      
 - utvrditi uzroke neusklađenosti;
 - utvrditi postoje li slične anomalije ili se mogu pojaviti;
@@ -38,8 +38,8 @@ Moguće je kreirati *odobrenje* prema pošiljatelju *reklamacije*.
 Tipka je omogućena samo ako je *Reklamacija* spremljena, odobrena i ako postoji *Vrijednost za kredit*.   
 Zahtjev za podatke/potvrda se pojavljuje za:  
 > **Vrsta računa**: ovo je *Vrsta dokumenta* novog *odobrenja* (obavezni podatak); predlaže se *Vrsta računa* unesena u *Vrstu reklamacije* izvorne *Reklamacije*.   
-> **Opis**: je opis koji će se koristiti za redak *Stavke troška* novog *odoborenja* (obavezni podatak); opis koji je parametriziran u [Parametri valorizacije reklamacije](/docs/quality/claims-and-non-compliance/claims/procedures/claim-valorisation), odjel *Reference reklamacije*.   
-> **PDV**: je *Vrsta PDV-a* koja će se koristiti za redak *Trošak* novog *odoborenja*.  
+> **Opis**: je opis koji će se koristiti za redak *Stavke troška* novog *odobrenja* (obavezni podatak); opis koji je parametriziran u [Parametri valorizacije reklamacije](/docs/quality/claims-and-non-compliance/claims/procedures/claim-valorisation), odjel *Reference reklamacije*.   
+> **PDV**: je *Vrsta PDV-a* koja će se koristiti za redak *Trošak* novog *odobrenja*.  
 > Predlaže se *Vrsta PDV-a* sa sljedećim prioritetima:  
 > 1. ako postoji *Izjava namjere', uzima se u obzir *Vrsta PDV-a* prisutna u dokumentu;   
 > 2. ako ne postoji *Izjava namjere', uzima se u obzir *Vrsta PDV-a* povezana s pošiljateljem *Reklamacije*;   
@@ -214,7 +214,7 @@ U kartici je moguće unijeti i druge troškove uz one koji proizlaze iz Troškov
 U karticu se mogu unijeti podaci koji se odnose na potražne (odobrenja) i dugovne (zaduženja) dokumente za *Reklamaciju*, nastale troškove i one koji će se knjižiti pošiljatelju *Reklamacije*. Uključene informacije su:
 > **Valuta**, **Tečaj** i **Datum valute**: Ovo je *Valuta* pošiljatelja *Reklamacije*, koja navodi sve vrijednosti dokumenata, odgovarajući tečaj prema *Valuti* *Tvrtke* i *Datum valute*.
 > **Referentni dokument zaduženja**: ovo je referenca na *Zaduženje* primljeno od *Kupca*.
-> **Napomen na dokumentu odobrenja**: napomene u slobodnom obliku o predmetu.  
+> **Napomena na dokumentu odobrenja**: napomene u slobodnom obliku o predmetu.  
 >   
 > **Ukupni iznos reklamacija**: podaci samo za čitanje ako je u *Parametrima reklamacija i neusklađenosti*, za datum godine dokumenta, odjel *Reklamacije*, zatražen *Automatski ponovni izračun ukupnih iznosa*; predlaže se zbroj komponente troškova obrade prerađenih *Neispravnih stavki*. 
 >   

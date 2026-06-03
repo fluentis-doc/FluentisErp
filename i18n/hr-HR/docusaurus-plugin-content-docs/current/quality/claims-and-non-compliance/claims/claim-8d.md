@@ -17,15 +17,15 @@ Ovo je popis *Predmeta reklamacije* i sastoji se od sljedećih informacija:
 >> **Lot**: je interna šifra *lota* traženog *artikla*.   
 >> **Serijski broj**: Ovo je *serijski broj* *artikla*.   
 >> **Utovarna jedinica**: Ovo je originalna *utovarna jedinica* koja je sadržavala *artikl*.   
->> Umetanjem *jedinice za utovar* automatski se stavljaju svi retci s detaljima *artikla* koji se u njoj nalaze.  
->> Ako je u *Parametrima neusklađenosti*, za godinu datuma dokumenta, u sekciji *Reklamacije*, označeno *razvrstavanje podataka utovarne jedinice*, retci s jednakim *artiklima* bit će prikazani u jednom retku s dodanim količinama.   
+>> Umetanjem *jedinice za utovar* automatski se stavljaju svi redovi s detaljima *artikla* koji se u njoj nalaze.  
+>> Ako je u *Parametrima neusklađenosti*, za godinu datuma dokumenta, u sekciji *Reklamacije*, označeno *razvrstavanje podataka utovarne jedinice*, redovi s jednakim *artiklima* bit će prikazani u jednom retku s dodanim količinama.   
 >  
 > **Kvaliteta**   
 >> **Mjerna jedinica**: *Mjerna jedinica* traženog *artikla*.
 >> **Prodano**: ovo je količina *artikla* prodanog pošiljatelju *Reklamacije*; ovu vrijednost potrebno je unijeti ručno.  
 >> **Osporeno**: ovo je količina *artikla* koju je pošiljatelj *Reklamacije* osporio; vrijednost se mora unijeti ručno.   
 >> **Povrat**: ovo je količina *artikla* koju je vratio pošiljatelj *Reklamacije*; vrijednost se mora unijeti ručno.   
->> **Prerađeno**: ovo je količina *artkla* koju je preradio podnositelj *Reklamacije*; ovu vrijednost potrebno je unijeti ručno.   
+>> **Prerađeno**: ovo je količina *artikla* koju je preradio podnositelj *Reklamacije*; ovu vrijednost potrebno je unijeti ručno.   
 >> **Prihvaćeno**: ovo je prihvaćena količina *artikla*; ovu vrijednost potrebno je unijeti ručno.
 >
 > **Vrijednost**   

@@ -136,7 +136,7 @@ Upravljane informacije su:
 
 ### Referenca dokumenta
 
-Kartica sadrži informacije o dokumentima koji su doveli do upravljanja *Nesukladnosću*. Uključene informacije su:
+Kartica sadrži informacije o dokumentima koji su doveli do upravljanja *Nesukladnošću*. Uključene informacije su:
 > **Račun**, **Primka/Otpremnica**, **Prijem robe**, **Povrat od podizvođača**, **Reklamacija**, **Godina/Narudžba/Serija** i **Broj faze/podfaze/deklaracije**:
 > Sve su to reference samo za čitanje na izvorni dokument koji je stvorio *Nesukladnost*.
 > U standardu, ovo je jedini dokument koji može stvoriti *Nesukladnost* i automatski postavlja referencu i *Reklamaciju*.
@@ -284,7 +284,7 @@ To je popis *Reklamiranih artikala* koji se mogu povezati s odabranim *Pronađen
 >> **Lot**: ovo je interna šifra *lota* *Artikla*.
 >> **Utovarna jedinica**: ovo je originalna *Utovarna jedinica* koja je sadržavala *Artikl*.  
 >> Unos *Utovarne jedinice* automatski ubacuje sve retke s detaljima *Artikla* koji se nalaze u njoj.
->> Ako je *UDC grupiranje podataka* označeno u *Parametrima reklamacija i neusklađenosti* u odjelu *Nesukladnosti*, retci s identičnim *Artiklima* bit će prikazani u jednom retku s dodanim količinama.  
+>> Ako je *UDC grupiranje podataka* označeno u *Parametrima reklamacija i neusklađenosti* u odjelu *Nesukladnosti*, redovi s identičnim *Artiklima* bit će prikazani u jednom retku s dodanim količinama.  
 >> **Serijski broj**: Ovo je *Serijski broj* zatraženog *predmeta/artikla*.   
 >> **Povratna jedinica tereta**: je *jedinica tereta* koja sadrži predmet* za koji se traži povrat.   
 >  
@@ -324,7 +324,7 @@ Ovo su dodatne informacije za odabrani redak *Reklamiranog artikla*. Upravljane 
 > **Radni centar**: ovo je *Radni centar* koji se koristi za popravke neusklađenog *Predmeta*.
 > Odabirom *Radnog centra*, u *Jediničnoj cijeni* predložit će se stopa koja će se primijeniti na vrijeme utrošeno na posao.
 > Predložena stopa je zbroj stopa *Troškovnih centara* povezanih sa *Strojem* i *Radnom grupom* *Radnog centra*.  
-> **Ukupni neobrađeni materijal**: informacija samo za čitanje, predlaže se vrijednost proizvoda između *Neobrađene količine" i *Jedinične cijene materijala* odabranog *Neispravnog pedmeta*.   
+> **Ukupni neobrađeni materijal**: informacija samo za čitanje, predlaže se vrijednost proizvoda između *Neobrađene količine" i *Jedinične cijene materijala* odabranog *Neispravnog predmeta*.   
 > **Ukupno obrađeni materijal**: informacije samo za čitanje. Ova vrijednost je umnožak *Obrađene količine" i *Jedinične cijene* plus umnožak *Radnih sati* i zbroja stopa povezanih s *Troškovnim centrima* povezanim sa *Strojem* i *Radnom grupom* *Radnog centra*.
 > **Ukupni nedostaci**: informacije samo za čitanje. Ova vrijednost je zbroj *Ukupnog neobrađenog materijala* i *Ukupnog obrađenog materijala*. 
 
@@ -383,10 +383,10 @@ Popis se sastoji od sljedećih informacija:
 >> **Rok dospijeća**: ovo je datum do kojeg uključena osoba mora dovršiti zadatke povezane s razlogom svog sudjelovanja.
 >> **Odgovor**: bilješke u slobodnom obliku o temi.  
 >> **Zatvoreno**: označava da je angažman ispitanika završen.   
->> Samo *Funkcija ili odgovorna osoba* za *Nesuklanost* ili *Funkcija tvrtke* ili uključeni *Zaposlenik* može zatvoriti incident/angažman.
+>> Samo *Funkcija ili odgovorna osoba* za *Nesukladnost* ili *Funkcija tvrtke* ili uključeni *Zaposlenik* može zatvoriti incident/angažman.
 >> Nakon zatvaranja, automatski se predlaže *Datum zatvaranja*, koji je postavljen na današnji datum i može se promijeniti.  
 >> **Datum zatvaranja**: ovo je datum kada je uključenost subjekta završena.
->> Samo *Funkcija ili odgovorna osoba* za *Nesuklanost* ili *Funkcija tvrtke* ili uključeni *Zaposlenik* može unijeti ili promijeniti ovaj datum.
+>> Samo *Funkcija ili odgovorna osoba* za *Nesukladnost* ili *Funkcija tvrtke* ili uključeni *Zaposlenik* može unijeti ili promijeniti ovaj datum.
 >> Kada se unese datum, automatski se postavlja oznaka *Zatvoreno*.
 >
 > **Napomena**: slobodne bilješke. 

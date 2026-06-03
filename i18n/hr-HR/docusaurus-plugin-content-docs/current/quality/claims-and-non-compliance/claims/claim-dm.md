@@ -71,8 +71,8 @@ To je popis *Reklamiranih artikala/predmeta* koji se mogu povezati s odabranim *
 >> **Varijanta**: ovo je šifra varijante *artikla* za koji se traži reklamacija.   
 >> **Lot**: je interna šifra *Lota* zatraženog *Artikla*. 
 >> **Utovarna jedinica**: Ovo je originalna *Utovarna jedinica* koja je sadržavala zatraženi *artikl*.   
->> Umetanjem *utovarne jedinice* automatski se umeću svi retci s detaljima *artikla* koji se u njoj nalaze.   
->> Ako je u *Parametrima pritužbi i neusklađenosti*, za datum dokumenta po godini, u odjelu *Rewklamacije*, zatraženo *UDC grupiranje podataka*, retci s jednakim *Artiklima* bit će prikazani u jednom retku s dodanim količinama.   
+>> Umetanjem *utovarne jedinice* automatski se umeću svi redovi s detaljima *artikla* koji se u njoj nalaze.   
+>> Ako je u *Parametrima pritužbi i neusklađenosti*, za datum dokumenta po godini, u odjelu *Reklamacije*, zatraženo *UDC grupiranje podataka*, redovi s jednakim *Artiklima* bit će prikazani u jednom retku s dodanim količinama.   
 >> **Serijski broj**: Ovo je *serijski broj* *artikla* za koji se traži reklamacija.   
 >  
 > **Količina**   
