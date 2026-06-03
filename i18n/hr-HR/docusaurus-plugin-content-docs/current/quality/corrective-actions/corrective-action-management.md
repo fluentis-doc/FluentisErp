@@ -142,7 +142,7 @@ Upravljane informacije su:
 >>
 >> **Datum pregleda**: ovo je datum na koji je *korektivna radnja* *pregledana*. 
 >> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može promijeniti ovaj datum.   
->> Prilikom unosa datuma, automatski se predlažu sljedeći elementi: *Potvrdio korisnik* i *Potvrdila osoba* predloženi povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* te je postavljena zastavica *Potvrdjeno*.  
+>> Prilikom unosa datuma, automatski se predlažu sljedeći elementi: *Potvrdio korisnik* i *Potvrdila osoba* predloženi povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* te je postavljena zastavica *Potvrđeno*.  
 >>
 >> **Ukupni rezultat**: ovo je *Rezultat* pripisan provjeri *Korektivne radnje*.
 >> **Provjera učinkovitosti**: slobodne bilješke u vezi s ishodom provjere ili učinkovitosti *Korektivne radnje*.
@@ -152,7 +152,7 @@ Upravljane informacije su:
 >> Omogućeno samo ako je *Korektivna radnja* *Potvrđena*.
 
 
-### Međukontrolne akcije
+### *Međukontrolne* akcije
 
 Kartica sadrži informacije o međukontrolama provedenim na *Korektivnoj radnji*.
 Upravljane informacije su:  
