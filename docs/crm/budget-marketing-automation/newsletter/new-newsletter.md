@@ -35,8 +35,7 @@ Nella parte inferiore della form devono essere invece selezionate le liste di di
 Premendo sul pulsante + alla sinistra della singola lista sarà possibile espandere la lista di distribuzione, per visualizzare i contatti appartenenti a tale lista.
 
 Per inviare la Newsletter, una volta indicati i parametri mostrati in precedenza, è necessario premere sul pulsante Invia presente sulla Ribbon bar.
-In tal modo si aprirà la form effettiva di invio della Newsletter, che presenta i tab **Home**, **Insert** e **Merge Data**, già presenti nella sezione Template Documento (per maggiori informazioni a riguardo fare riferimento alla sezione [Template](\docs\crm\budget-marketing-automation\template\new-template)), oltre alla tab **Email** che presenta le seguenti funzioni:
-
+In tal modo si aprirà la form effettiva di invio della Newsletter, che presenta i tab **Home**, **Insert** e **Merge Data**, già presenti nella sezione Template Documento (per maggiori informazioni a riguardo fare riferimento alla sezione [Template](/docs/crm/budget-marketing-automation/template/new-template)), oltre alla tab **Email** che presenta le seguenti funzioni:  
 **Stampa** Pulsante per effettuare la stampa fisica della newsletter;  
 **Anteprima di stampa** Pulsante per effettuare l’anteprima di stampa della newsletter;  
 **Salva** Pulsante per salvare le modifiche alla Newsletter;  
