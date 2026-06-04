@@ -1,1 +1,0 @@
-- **Numero riga**: questo campo si compilerà automaticamente e progressivamente all'inserimento dei dati nella riga.

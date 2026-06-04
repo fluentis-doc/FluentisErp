@@ -1,1 +1,0 @@
-- **Ubicazione**: viene proposto solo se per l'articolo selezionato è stato scelto il magazzino.
