@@ -26,6 +26,8 @@ I campi principali sono:
 6. **Contatto/Cliente**: indica il contatto CRM o il cliente; il campo cambia label e oggetto a seconda del flag (*Contatto CRM* o *Conto Fluentis*).  
 7. **Partecipanti**: indicare i soggetti che hanno partecipato all’incontro.  
 8. **Agente**: riferimento all’anagrafica agenti; indicare l’agente presente all’incontro, se disponibile.  
+9. **Stato Visit report**: indica lo stato in cui si trova il visit report, a scopo descrittivo.
+Le voci presenti nell'elenco sono configurabili nell'apposita tabella Stati Visit report.
 
 ### Parte inferiore
 
@@ -34,12 +36,13 @@ La parte inferiore della form presenta due tab.
 #### Documento
 
 In questa tab generalmente viene compilato il vero e proprio report creato durante la visita. Questo documento può contenere svariate informazioni, in base alla tipologia di visita effettuata. Per questo motivo, nella griglia è possibile selezionare un [Template](/docs/crm/budget-marketing-automation/template/template-search) da utilizzare come base del report e da compilare con le informazioni del cliente. E' necessario quindi creare a priori i vari template per averli disponibili in fase di visita e poterli utilizzare. 
-Nella parte destra sarà visualizzato il Template selezionato e sarà possibile compilarlo. E' inoltre possibile inserire i dati necessari per l'invio tramite email del documento.            
+Nella parte destra sarà visualizzato il Template selezionato e sarà possibile compilarlo. E' inoltre possibile inserire i dati necessari per l'invio tramite email del documento, nella sezione Informazioni destinatario.            
 Per la gestione del template sono disponibili le seguenti sezioni:     
 - **Email**: questa tab contiene:     
 > - *Stampa*: permette di stampare il foglio di lavoro;
 > - *Anteprima di stampa*: permette di fare la stampa a video del foglio di lavoro in anteprima;
-> - *Salva*: permette di salvare una copia del documento;    
+> - *Salva*: permette di salvare una copia del documento;   
+> - *Invia*: effettua l'invio della email; 
 > - *Undo*: cancella l’ultima modifica al template;
 > - *Redo*: ripristina l’ultima modifica cancellata al template.
 
@@ -59,7 +62,7 @@ Richiama le funzioni di base degli editor di testo più diffusi, quali Microsoft
 > - *Text Box*: permette di inserire una casella di testo nel Template;
 > - *Symbol*: serve per inserire un simbolo speciale all’interno del Template.
 
-- **Merge data**: in questa tab sono presenti i pulsanti necessari alla gestione ed all’inserimento dei merge data.
+- **Merge data**: in questa tab sono presenti i pulsanti necessari alla gestione ed all’inserimento dei merge data, ovvero campi dinamici presi dal datasource impostato nel template, eventualmente filtrato per dei parametri.
 > - *Insert Merge Field*: Il pulsante permette di inserire i merge data selezionandoli da una lista che si basa sul Data Source a cui fa riferimento il Template;
 > - *View Merged Data*: il pulsante permette di nascondere/visualizzare i merge data inseriti nel template;
 > - *Show All Field Codes*: il pulsante serve per mostrare I codici dei campi utilizzati come merge data;
@@ -69,9 +72,21 @@ Richiama le funzioni di base degli editor di testo più diffusi, quali Microsoft
 > - *Next record*: permette di posizionarsi sul record successivo rispetto a quello attuale estrapolato dai merge data;
 > - *Last Record*: permette di posizionarsi sull’ultimo record estrapolato dai merge data.
 
+#### Extra Data
+
+In questa tab è possibile gestire gli Extra Data.
+
 #### Documenti allegati
 
 In questa tab è possibile consultare i documenti allegati. Per allegare i documenti è possibile procedere in due modi:
 
 - utilizzando il pulsante della barra degli strumenti Documenti si può scegliere se allegare un documento già codificato in Fluentis o se creare un nuovo Documento da allegare.
 - utilizzando direttamente nella griglia il tasto destro e selezionando Allega file si va in creazione di un nuovo Documento da allegare.
+
+
+Nella ribbon bar è presente il bottone **Inserisci appuntamento in calendario**
+
+
+Utilizzando questa funzionalità, verrà inserito all'interno del calendario di Fluentis dell'utente attualmente in uso, un appuntamento collegato a questo visit report. 
+Si aprirà una videata con la possibilità di cambiare risorsa del calendario, oltre a specificare data-ora ed ulteriori dati e note. 
+Nel caso sia già presente un appuntamento, verrà chiesta conferma se generare un nuovo appuntamento a calendario.
