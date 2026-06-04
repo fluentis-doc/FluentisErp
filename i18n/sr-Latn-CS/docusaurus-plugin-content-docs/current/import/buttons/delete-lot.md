@@ -1,0 +1,1 @@
+**Izbriši lot**: Omogućuje brisanje odabranog retka lota.

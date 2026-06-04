@@ -1,0 +1,10 @@
+---
+title: Izvještaji
+sidebar_position: 6
+---
+
+**Ispiši prikmu**: pokreće postupak za ispis primki prema specificiranim kriterijima filtriranja (vrsta primke, broj, datum, dobavljač, itd.).
+
+**Popis primki**: pokreće postupak za ispis popisa primki prema specificiranim kriterijima filtriranja (vrsta, broj, datum, dobavljač), nudeći mogućnost sortiranja prema dobavljaču, broju, vrsti ili datumu unosa.
+
+Više pojedinosti o ovom predmetu možete pronaći u člancima: [Pretraživanje podataka u obrascima samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/common/operations-with-data/reports). 

@@ -1,0 +1,10 @@
+---
+title: Upravljanje pojednostavljenim widgetom za popuste
+sidebar_position: 6
+---
+
+Od verzije 706 uvedena je mogućnost unosa popusta izravno u mrežu artikala u prodajnim dokumentima. Za aktivaciju ove funkcionalnosti potrebno je omogućiti parametar **Omogući pojednostavljeni widget popusta** koji se nalazi u parametrima ([Parametri ponuda](/docs/configurations/parameters/sales/offer-parameters), [Parametri narudžbi](/docs/configurations/parameters/sales/sales-orders-parameters), [Parametri otpremnica](/docs/configurations/parameters/sales/dn-parameters), [Parametri faktura](/docs/configurations/parameters/sales/sales-invoices-parameters)) u prodajnom modulu. Osim toga, potrebno je definirati tip popusta u odgovarajućem tipu dokumenta ([Tip ponude](/docs/configurations/tables/sales/sales-offer-type), [Tip narudžbe](/docs/configurations/tables/sales/sales-order-types), [Tip otpremnice](/docs/configurations/tables/sales/delivery-notes-type), [Tip fakture](/docs/configurations/tables/sales/invoices-type)).
+
+Jednom kada su ovi parametri konfigurirani, popusti se mogu unositi izravno u posvećeni stupac mreže artikala prodajnih dokumenata, nazvan **Popusti artikla**. Unos je moguć korištenjem jednostavne notacije, kao što je "50+10+5": na taj način, u mreži popusta generirat će se tri retka s istim tipom odabranog popusta, ali s rastućim prioritetom: prvo će se primijeniti popust od 50%, zatim od 10% i konačno od 5%, redoslijedom. Za unos povećanja, dovoljno je koristiti znak "-" (minus), dok se za primjenu fiksnog popusta koristi simbol "#" nakon broja (na primjer, "5#" označava popust od 5 eura, a ne od 5%).
+
+U mreži artikala, također je dodan stupac **Konačni popusti**, koji prikazuje (bez mogućnosti izmjene) konačne popuste na artikle unesene u karticu *Sažeci* dokumenta.

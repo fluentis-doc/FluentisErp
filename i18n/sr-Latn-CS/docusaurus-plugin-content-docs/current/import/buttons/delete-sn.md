@@ -1,0 +1,1 @@
+**Izbriši serijski broj**: omogućuje brisanje odabranog retka serijskog broja.

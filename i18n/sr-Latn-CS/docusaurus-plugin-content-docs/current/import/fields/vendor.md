@@ -1,0 +1,1 @@
+**Dobavljač**, upotrebom[pomoći polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili utipkavajući podatke [ručno ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).

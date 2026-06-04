@@ -1,0 +1,1 @@
+**Storno povrata**: **Omogućuje storniranje onih tipova dokumenata koji imaju prirodu povrata.

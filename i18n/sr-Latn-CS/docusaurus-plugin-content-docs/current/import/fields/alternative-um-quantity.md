@@ -1,0 +1,3 @@
+**Alternativna JM**: u ovim poljima bit će prikazana količina u alternativnoj mjernoj jedinici u slučaju da je u *šifarniku artikla* ovaj podatak prisutan na kartici **Alternativne mjerne jedinice** (uzima se ona koja ima aktiviranu oznaku **Zadano**) i ako su u parametrima dokumenta aktivirane oznake: **Upravljanje dvostrukom mjernom jedinicom** i **Automatski prijedlog alternativne mjerne jedinice**.
+
+**Alternativna količina**: predložena vrijednost za alternativnu mjernu jedinicu, izračunata množenjem ili dijeljenjem *upravljane količine* (one u glavnoj mjernoj jedinice) sa *faktorom pretvorbe* podešenim u *Šifarnik artikala > kartica Alternativne mjerne jedinice*.

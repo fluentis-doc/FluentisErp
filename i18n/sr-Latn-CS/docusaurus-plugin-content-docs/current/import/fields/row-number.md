@@ -1,0 +1,1 @@
+**Broj retka**: ovo polje će se automatski i progresivno popunjavati prilikom unosa podataka u retku.
