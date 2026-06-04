@@ -21,7 +21,7 @@ const config = {
   favicon: 'img/fluentis-32x32px.png',
   i18n: {
     defaultLocale: 'it-IT',
-    locales: ['en-US', 'es-CO', 'fr-FR', 'hr-HR', 'it-IT', 'pt-PT', 'ro-RO'],  // , 'sr-Latn-CS', 'zh-CN'
+    locales: ['en-US', 'es-CO', 'fr-FR', 'hr-HR', 'it-IT', 'pt-PT', 'ro-RO', 'sr-Latn-RS'],  // , , 'zh-CN'
     localeConfigs: {
       "en-US": {
         label: 'English',
@@ -44,9 +44,9 @@ const config = {
       "ro-RO": {
         label: 'Română',
       },
-      /*"sr-Latn-CS": {
+      "sr-Latn-RS": {
         label: 'Srpski',
-      },*/
+      },
       "zh-CN": {
         label: '中文',
       },
