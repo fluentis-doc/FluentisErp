@@ -60,14 +60,14 @@ import Link from '@docusaurus/Link';
 - treba unijeti novo [*Tehničko uputstvo*](/docs/quality/item-control/data-sheets/data-sheet-management)   
 
  **Kontrolni planovi**:
-- treba definirati [*Vrstu kontrolnog plana*](/docs/configurations/tables/quality/item-control/control-plan-type) i povezana *Numerazione*   
+- treba definirati [*Vrstu kontrolnog plana*](/docs/configurations/tables/quality/item-control/control-plan-type) i povezana *Numeracija*   
 - treba definirati [*Vrstu testa*](/docs/configurations/tables/quality/item-control/test-type) koji će se koristiti u kartici *Planirani testovi* u [*Kontrolnim planovima*](/docs/quality/item-control/control-plans/control-plan-management)   
-- za olakšanje upravljanjem *Piani di controllo* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) u odjelu *Kontrolni planovi*   
+- za olakšanje upravljanjem *Planova kontrole* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) u odjelu *Kontrolni planovi*   
 - treba unijeti novi [*Kontrolni plan*](/docs/quality/item-control/control-plans/control-plan-management)   
 
  **Kontrola artikala**:   
 - treba definirati: [*Vrstu kontrole artikala*](/docs/configurations/tables/quality/item-control/item-control-type) i [*Vrstu ishoda*](/docs/configurations/tables/quality/general/result-type)   
-- treba definirati [*Kontrolni plan*](/docs/quality/item-control/control-plans/control-plan-management) i povezati ga sa stavkom u sesiji/kartici *Povezane stvati* ili s fazom radnog ciklusa koja podliježe kontroli kvalitete   
+- treba definirati [*Kontrolni plan*](/docs/quality/item-control/control-plans/control-plan-management) i povezati ga sa stavkom u sesiji/kartici *Povezane stvari* ili s fazom radnog ciklusa koja podliježe kontroli kvalitete   
 - za olakšanje upravljanjem *Kontrolom artikala* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) u sesiji/kartici *Kontrola artikala*   
 - treba unijeti novu [*Kontrolu artikala*](/docs/quality/item-control/items-control/item-control-management) putem funkcionalnosti [*Uvoz artikala za provjeru*](/docs/quality/item-control/items-control/item-control-import)    
 

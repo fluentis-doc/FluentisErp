@@ -3,7 +3,7 @@ title: Certifikati s analize
 sidebar_position: 2
 ---
 
-Upravljanje se može pronaći na putanji **Kvaliteta > Kontrola artikla > Certifikati s analize > Novi certifikat s analize** ili se može izvršiti putem **Pretraživanja certifikata analize**.   
+Upravljanje se može pronaći na putanji **Kvaliteta > Kontrola artikla > Certifikati s analize > Novi certifikat o analizi** ili se može izvršiti putem **Pretraživanja certifikata analize**.   
 
 
 :::important Čemu služi
@@ -11,7 +11,7 @@ Upravljanje se može pronaći na putanji **Kvaliteta > Kontrola artikla > Certif
 Potvrde mogu biti generičke ili prilagođene. Ako su prilagođene, potrebno je unijeti **Kupca**.  
 
 Sljedeća izvješća dostupna su standardno:
-> **Potvrda o analizi**: Oobrazac s popisom *Proizvoda* s detaljima o *izvršenim ispitivanjima*, *otkrivenim vrijednostima* i dobivenim *rezultatima*.
+> **Potvrda o analizi**: Obrazac s popisom *Proizvoda* s detaljima o *izvršenim ispitivanjima*, *otkrivenim vrijednostima* i dobivenim *rezultatima*.
 > **Izjava o sukladnosti**: obrazac kojim se potvrđuje i jamči sukladnost *Proizvoda*.   
 :::
 
@@ -218,7 +218,7 @@ Upravljane informacije su:
 > **Referenca plana kontrole**: ovo je referenca na *Kontrolni plan* korišten za testove i zabilježene vrijednosti. Ove su informacije samo za čitanje.   
 > **Opis kontrole**: ovo je opis povezane *Kontrole artikla*. Ove su informacije samo za čitanje.   
 > **Napomena o kontroli**: bilješke u slobodnom obliku o temi.   
-> **Bilješke artkl-kupac**: bilješke u slobodnom obliku o temi.   
+> **Bilješke artikl-kupac**: bilješke u slobodnom obliku o temi.   
 > **Referenca tehničkog lista**: ovo je referenca na *Tehničko uputstvo* povezano s korištenim *Kontrolnim planom*. Ove su informacije samo za čitanje.   
 > **Vrsta izvornog dokument**: ovo je referenca na *Vrstu izvornog dokumenta* na kojem su provedene *Kontrole artikala*. Ove su informacije samo za čitanje.   
 > **Referenca dokumenta podrijetla**: ovo je referenca na *Izvorni dokument* na kojem su provedene *Kontrole artikala*. Ove su informacije samo za čitanje.   
