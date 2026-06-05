@@ -26,7 +26,7 @@ Za umetanje novih *Kontrolnih planova* potrebno je pritisnuti tipku **Novo**.
 
 ### ![](/img/neutral/common/edit.png) Izmijeni ili ![](/img/neutral/common/view.png) Prikaži kontrolne planove
 
-Za otvaranje upravljanja prikazim rezultata potrebno je dvaput kliknuti na redak on interesa ili odabirom jednog ili više redaka, pritisnuti tipke **Izmijeni** ili **Prikaži**. 
+Za otvaranje upravljanja prikazanih rezultata potrebno je dvaput kliknuti na redak on interesa ili odabirom jednog ili više redaka, pritisnuti tipke **Izmijeni** ili **Prikaži**. 
 
 
 *Specifične tipke*: 
@@ -39,13 +39,13 @@ Za dupliciranje postojećeg *kontrolnog plana* u novi *kontrolni plan*, kliknuti
 > **Broj**: ovo je progresivni *broj* novog *kontrolnog plana* (obavezni podatak). Predlaže se na temelju *numeriranja* povezanog s *Vrstom kontrolnog plana* i današnjim datumom.
 > **Dupliciraj sa sljedivošću**: označava želi li se zadržati odnos/sljedivost odredišnog *kontrolnog plana* u izvornom *kontrolnom planu*, posebno na kartici *Srodni planovi kontrole*. 
 
-Zatim se pritisne tipja **U redu** ili **Otkaži** kako bi se odlučilo želi li se nastaviti s dupliciranjem ili ne.
+Zatim se pritisne tipka **U redu** ili **Otkaži** kako bi se odlučilo želi li se nastaviti s dupliciranjem ili ne.
 Kada je obrada završena, prikazuje se novi *kontrolni plan*.
 
 
 ### ![](/img/neutral/common/execute.png) Stvori novu reviziju
 
-Za izradu nove *Revizije* postojećeg *kontrolnog plana* klikne se na *kontrolni plan* iz kojeg se želi stvoriti nova *Reviziju* u prikazu i pritisne tipka **Stvori novu reviziju**. Nova *Reviziju* može se stvoriti samo za jedan *kontrolni plan* istovremeno.
+Za izradu nove *Revizije* postojećeg *kontrolnog plana* klikne se na *kontrolni plan* iz kojeg se želi stvoriti nova *Revizija* u prikazu i pritisne tipka **Stvori novu reviziju**. Nova *Revizija* može se stvoriti samo za jedan *kontrolni plan* istovremeno.
 Novi *kontrolni plan* stvara se sa svim informacijama iz izvornog *kontrolnog plana*, ali s povećanim indeksom *Revizije* i *Datumom početka stupanja na snagu* postavljenim na današnji datum.
 Izvorni *kontrolni plan* istječe, a *Datum završetka stupanja na snagu* automatski se postavlja na današnji datum.
 Nakon što je obrada dovršena, prikazuje se nova *Revizija* *kontrolnog plana*.
@@ -59,7 +59,7 @@ Stvori se novo *Tehničko uputstvo* sa svim informacijama iz izvornog *kontrolno
 > **Kupac**: ovo je *Kupac* novog *Tehničkog uputstva*. Predlaže se račun *Kupca* iz izvornog *kontrolnog plana* (samo ako je *Vrsta računa kupac*).
 > **Nova šifra**: ovo je *Šifra* novog *Tehničkog uputstva* (obavezno). Predlaže se na temelju *Metode kodiranja* povezane s *Vrstom tehničkog lista*. 
 > **Rev.**: Ovo je indeks *Revizije* novog *Tehničkog uputstva* (obavezni podaci); postavljen je na *nulu*.
-> **Stvara održavanje sljedivosti**: označava želi li se održati odnos/sljedivost u odredišnom *Tehničkm uputstvu*, u izvornom *kontrolnim planu* i posebno na kartici *Povezane sheme*.   
+> **Stvara održavanje sljedivosti**: označava želi li se održati odnos/sljedivost u odredišnom *Tehničkom uputstvu*, u izvornom *kontrolnim planu* i posebno na kartici *Povezane sheme*.   
 
 Zatim se pritisne tipka **U redu** ili **Otkaži** da bi se nastavilo s postupkom izrade ili ne.   
 Nakon što je postupak završen, prikazuje se novo *Tehničko uputstvo*.   
