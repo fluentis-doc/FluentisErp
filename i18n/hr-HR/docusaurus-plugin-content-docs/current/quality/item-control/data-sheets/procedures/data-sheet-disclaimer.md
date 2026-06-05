@@ -29,6 +29,6 @@ Za unos novih informacija potrebno je pritisnuti tipku **Novo**.
 > **Datum početka valjanosti**: datum od kojeg je *Izjava* važeća i primjenjiva.  
 > **Datum završetka valjanosti**: datum od kojeg *Izjava* prestaje biti važeća i primjenjiva.  
 > **Opis**: opis *Izjave*.  
-> **Bilješke**: slobodne napomene.  
+> **Napomene**: slobodne napomene.  
 
 Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
