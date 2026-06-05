@@ -21,7 +21,7 @@ Tabulatori su:
 > **Tehnička uputstva**;  
 > **Svojstva**;  
 > **Norme i zakoni**;  
-> **Povezane stvari**.  
+> **Povezani artikli**.  
 
 ### Specifične tipke
 
@@ -44,7 +44,7 @@ U slučaju da se tijekom **Izmjene** pojave nepravilnosti, upozorenja su dostupn
 
 #### Područje filtra
 
-Područje se sastoji od fiksnog dijela u kojem su prikazani filteri pretrage vezani uz informacije zaglavlja **Tehničke kartice** te od promjenjivog dijela koji je kontekstualan za odabranu karticu; promjenjivi dio nalazi se u prošitenju koje nosi isti naslov kao odabrana kartica; ovaj promjenjivi dio nije vidljiv za karticu **Tehničke kartice**.  
+Područje se sastoji od fiksnog dijela u kojem su prikazani filteri pretrage vezani uz informacije zaglavlja **Tehničke kartice** te od promjenjivog dijela koji je kontekstualan za odabranu karticu; promjenjivi dio nalazi se u proširenju koje nosi isti naslov kao odabrana kartica; ovaj promjenjivi dio nije vidljiv za karticu **Tehničke kartice**.  
 Pritiskom na tipku **Traži** rezultati se prikazuju u prikazu rezultata odabrane kartice. 
 
 #### Područje izmjene
