@@ -3,56 +3,87 @@ title: Zbirno upravljanje podacima
 sidebar_position: 1
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikla > Kontrolni planovi > Procedure > Zbirno upravljanje podacima**.   
+Upravljanje se nalazi na putanji **Kvalitet > Kontrola artikla > Kontrolni planovi > Procedure > Zbirno upravljanje podacima**.
 
 :::important Čemu služi
-Ova procedura omogućuje skupno upravljanje nekim informacijama koje se nalaze u *Kontrolnim planovima*, bez obveze da se mora ulaziti u svaki dokument, unositi željene izmjene i pohranjivati ih.     
+Ova procedura omogućava grupno upravljanje određenim informacijama koje se nalaze u *Kontrolnim planovima*, bez potrebe za otvaranjem svakog pojedinačnog dokumenta, unosom izmena i njihovim čuvanjem.
 :::
 
-Obrazac je podijeljen na:   
-- područje filtra za pretraživanje informacija zaglavlja *Kontrolnih planova*;   
-- povezano područje filtra za sesije informacija koje se žele izmijeniti;   
-- područje koje se sastoji od različitih kartica, od kojih svaka sadrži tablice posvećene izmjeni i rezultatu filtra;   
-- posljednja kartica sadrži *Povijest pogrešaka* uočenih tijekom aktivnosti izmjene.     
+Obrazac je podeljen na:
 
-Kartice su:   
-> **Kontrolni planovi**;   
-> **Planiran test**;   
-> **Povezani artikli**. 
+- oblast filtera za pretragu informacija iz zaglavlja *Kontrolnih planova*;
+- povezanu oblast filtera za informacije koje se žele izmeniti;
+- oblast sastavljenu od više kartica, pri čemu svaka kartica sadrži tabele namenjene izmeni podataka i prikazu rezultata pretrage;
+- poslednju karticu koja sadrži *Istoriju grešaka* zabeleženih tokom procesa izmene.
 
-### Specifične tipke
+Dostupne kartice su:
 
-#### ![](/img/neutral/common/search.png) Traži
+> **Kontrolni planovi**;
+>
+> **Planirani test**;
+>
+> **Povezani artikli**.
 
-Obrazac se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar tablice rezultata. Područje filtra je promjenjivo u odabranoj kartici. Rezultat primjene filtra prikazat će podatke u tablici rezultata prethodno odabrane kartice.      
+## Specifična dugmad
 
-#### ![](/img/neutral/common/delete.png) Otkaži
+### ![](/img/neutral/common/search.png) Traži
 
-Omogućeno je ako se odabere barem jedan redak iz tablice rezultata.   
-Nakon što se odaberu željeni reci, potrebno je kliknuti na tipku **Izbriši** kako bi se izbrisali uz prethodnu potvrdu.      
+Obrazac se sastoji od oblasti za filtriranje i oblasti sa rezultatima.
 
-#### ![](/img/neutral/common/execute.png) Izmijeni
+Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-Omogućeno je ako se odabere barem jedan redak iz tablice rezultata.   
-Nakon što se odaberu željeni reci i unesu se izmjene koje treba provesti u tablici rezultata, potrebno je kliknuti na tipku **Izmijeni** kako bi se primijenile izmjene.   
-U slučaju uočenih anomalija tijekom *Izmjene*, prijave su dostupne na kartici *Povijest pogrešaka*.   
+Oblast filtera se menja u zavisnosti od izabrane kartice.
 
-### Zbirno upravljanje podacima
+Rezultati pretrage prikazuju se u tabeli rezultata trenutno izabrane kartice.
 
-#### Područje filtra
+### ![](/img/neutral/common/delete.png) Otkaži
 
-Područje se sastoji od fiksnog dijela gdje se prikazuju filtri za pretraživanje vezani uz informacije zaglavlja *Kontrolnog plana* i varijabilnog dijela koji je povezan s odabranom karticom; postoji i dio koji se nalazi se u proširenju koje nosi isti naslov kao i odabrana kartica; taj dio se ne prikazuje za karticu *Kontrolni planovi*.   
-Pritiskom na tipku **Traži** prikazuju se rezultati unutar tablice rezultata odabrane kartice.     
+Omogućeno je kada je izabran najmanje jedan red iz tabele rezultata.
 
-#### Područje izmjene
+Nakon izbora željenih redova potrebno je kliknuti na dugme **Obriši** kako bi se odabrani podaci uklonili uz prethodnu potvrdu korisnika.
 
-Sadržano je u svakoj kartici (osim na kartici *Povijest pogrešaka*), to je gornja "tablica" koja se sastoji od jednog retka.   
-U ovu tablicu, koja sadrži iste stupce kao i tablica rezultata (ona donja), moguće je unijeti sve informacije koje se žele prenijeti u retke tablice rezultata pritiskom na tipku *Izmijeni*.   
-Nakon što se završi zamjena vrijednosti, postojeće vrijednosti u gornjoj tablici bit će izbrisane.     
+### ![](/img/neutral/common/execute.png) Izmeni
 
-#### Područje rezultata
-Sadržano je u svakoj kartici, to je donja "tablica" koja sadrži rezultat *Pretraživanja* primijenjenog na području filtra.   
-U ovoj tablici, koja sadrži iste stupce kao i tablica izmjene (ona gornja), moguće je ručno izmijeniti sve informacije bez potrebe ulaska u svako upravljanje *Kontrolnog plana*.   
-Stupci se razlikuju ovisno o odabranoj kartici. Stupci gdje nije moguće izmijeniti informacije su onemogućeni i istaknuti drugom bojom.   
+Omogućeno je kada je izabran najmanje jedan red iz tabele rezultata.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Nakon izbora željenih redova i unosa izmena koje treba primeniti u tabeli rezultata, potrebno je kliknuti na dugme **Izmeni** kako bi se izmene izvršile.
+
+U slučaju da tokom procesa *Izmene* budu otkrivene nepravilnosti, informacije o njima biće dostupne na kartici *Istorija grešaka*.
+
+## Zbirno upravljanje podacima
+
+### Oblast filtera
+
+Oblast se sastoji od:
+
+- fiksnog dela koji sadrži filtere za pretragu informacija iz zaglavlja *Kontrolnog plana*;
+- promenljivog dela koji zavisi od trenutno izabrane kartice;
+- dodatnog dela smeštenog u proširenju (expander) koje nosi naziv izabrane kartice.
+
+Ovaj dodatni deo nije prikazan za karticu *Kontrolni planovi*.
+
+Pritiskom na dugme **Traži** prikazuju se rezultati u tabeli rezultata trenutno izabrane kartice.
+
+### Oblast izmene
+
+Nalazi se na svakoj kartici, osim na kartici *Istorija grešaka*.
+
+Predstavlja gornju tabelu koja se sastoji od jednog reda.
+
+U ovu tabelu, koja sadrži iste kolone kao i tabela rezultata (donja tabela), moguće je uneti informacije koje se pritiskom na dugme **Izmeni** prenose u izabrane redove tabele rezultata.
+
+Nakon završetka prenosa vrednosti, postojeće vrednosti iz gornje tabele automatski se brišu.
+
+### Oblast rezultata
+
+Nalazi se na svakoj kartici i predstavlja donju tabelu koja prikazuje rezultate *Pretrage* izvršene na osnovu definisanih filtera.
+
+Ova tabela sadrži iste kolone kao i tabela za izmenu (gornja tabela), a omogućava ručnu izmenu podataka bez potrebe za otvaranjem svakog pojedinačnog *Kontrolnog plana*.
+
+Kolone se razlikuju u zavisnosti od izabrane kartice.
+
+Kolone koje nije moguće menjati su onemogućene i prikazane drugom bojom.
+
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu:
+
+[Funkcionalnosti, dugmad i polja](/docs/guide/common).
