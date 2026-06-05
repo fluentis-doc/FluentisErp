@@ -1,80 +1,108 @@
 ---
-title: Zahtjevi za kontrolne planove
+title: Zahtevi za kontrolne planove
 sidebar_position: 3
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikla > Kontrolni planovi > Procedure > Zahtjevi za kontrolne planove**.   
-
+Upravljanje se nalazi na putanji **Kvalitet > Kontrola artikla > Kontrolni planovi > Procedure > Zahtevi za kontrolne planove**.
 
 :::important Čemu služi
-Ova procedura omogućava dodjeljivanje *Zahtjeva* generiranih tijekom povezivanja *Kontrolnih planova* s *Kontrolama artikla* gdje takvo povezivanje nije bilo moguće. Nakon što se Kontrola poveže s Planom, testovi *Kontrolnog plana* automatski će se predložiti Kontroli artikla.   
-Kako bi se iskoristila funkcija *Povezivanja*/*Unosa*, potrebno je:   
-- s kartice **Zahtjevi** odabrati retke *Kontrola artikla*;   
-- s kartice **Kontrolni planovi** odabrati *Kontrolne planove*;    
-- kliknuti na tipku **Novi kontrolni plan** ili **Poveži kontrolni plan**.   
+Ova procedura omogućava dodeljivanje *Zahteva* generisanih tokom povezivanja *Kontrolnih planova* sa *Kontrolama artikala* u slučajevima kada povezivanje nije bilo moguće.
+
+Nakon povezivanja kontrole sa planom, testovi iz *Kontrolnog plana* automatski će biti predloženi u okviru *Kontrole artikla*.
+
+Da biste koristili funkciju *Povezivanja*/*Unosa*, potrebno je:
+
+- na kartici **Zahtevi** odabrati redove *Kontrola artikla*;
+- na kartici **Kontrolni planovi** odabrati *Kontrolne planove*;
+- kliknuti na dugme **Novi kontrolni plan** ili **Poveži kontrolni plan**.
 :::
 
-## Zahtjevi   
+## Zahtevi
 
-Na ovoj kartici moguće je pretraživati i odabirati *zahtjeve* za povezivanje generirane putem *Uvoza artikala za kontrolu* gdje nije bilo moguće povezati *Kontrolni plan* s retkom artikla.   
-Radno područje sastoji se od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretraga zahtjeva** kako bi se prikazali rezultati unutar tablice rezultata.   
+Na ovoj kartici moguće je pretraživati i birati *zahteve za povezivanje* generisane tokom *Uvoza artikala za kontrolu* kada nije bilo moguće povezati *Kontrolni plan* sa redom artikla.
 
-*Specifične tipke*:   
+Radna površina sastoji se od dela za filtriranje i dela sa rezultatima. Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Pretraga zahteva** kako bi se rezultati prikazali u tabeli rezultata.
 
-### ![](/img/neutral/common/search.png) Pretraga zahtjeva   
-Na temelju postavljenog filtra prikazuju se rezultati unutar tablice rezultata.   
+*Specifična dugmad:*
 
-### Otvori kontrole artikala  
-Omogućeno je ako se odabere barem jedan redak iz tablice rezultata.   
-Pritiskom na tipku izvršava se upravljanje odabranim *Kontrolama artikla*.   
+### ![](/img/neutral/common/search.png) Pretraga zahteva
 
-### ![](/img/neutral/common/item-web.png) Otvori kontrolne planove   
-Omogućeno je ako se odabere barem jedan redak iz tablice rezultata.   
-Pritiskom na tipku izvršava se upravljanje odabranim *Kontrolnim planovima*.   
+Na osnovu postavljenih filtera prikazuju se rezultati u tabeli rezultata.
 
-### ![](/img/neutral/common/new.png) Novi plan kontrole   
-Omogućeno je ako se odabere barem jedan redak iz tablice rezultata kartice *Zahtjevi*.   
-Pritiskom na tipku stvara se novi *Kontrolni plan* koji sadrži *Artikle* odabranih *Kontrola artikla*.   
-Redcima odabranih *Zahtjeva* povezuje se upravo stvoreni *Kontrolni plan* i retci *Zahtjeva* se skrivaju.   
-Kako bi se ponovno vidjeli, potrebno je djelovati u području filtra navodeći filtar *Već povezano* i pritisnuti tipku **Pretraga zahtjeva**.   
+### Otvori kontrole artikala
 
-### ![](/img/neutral/common/duplicate.png) Odaberite kontrolne planove   
-Pritiskom na tipku automatski se pozicionira na karticu **Kontrolni planovi**.   
+Omogućeno je kada je odabran najmanje jedan red iz tabele rezultata.
 
+Pritiskom na dugme otvara se upravljanje izabranim *Kontrolama artikala*.
+
+### ![](/img/neutral/common/item-web.png) Otvori kontrolne planove
+
+Omogućeno je kada je odabran najmanje jedan red iz tabele rezultata.
+
+Pritiskom na dugme otvara se upravljanje izabranim *Kontrolnim planovima*.
+
+### ![](/img/neutral/common/new.png) Novi kontrolni plan
+
+Omogućeno je kada je odabran najmanje jedan red iz tabele rezultata na kartici *Zahtevi*.
+
+Pritiskom na dugme kreira se novi *Kontrolni plan* koji sadrži *Artikle* iz odabranih *Kontrola artikala*.
+
+Sa redovima odabranih *Zahteva* povezuje se upravo kreirani *Kontrolni plan*, nakon čega se redovi zahteva skrivaju.
+
+Da biste ih ponovo prikazali, potrebno je u delu za filtriranje uključiti filter *Već povezano* i pritisnuti dugme **Pretraga zahteva**.
+
+### ![](/img/neutral/common/duplicate.png) Odaberi kontrolne planove
+
+Pritiskom na ovo dugme automatski se prelazi na karticu **Kontrolni planovi**.
 
 ## Kontrolni planovi
 
-Na ovoj kartici moguće je pretraživati i odabrati *Kontrolni plan* u koji se žele unijeti *Artikli* iz *Kontrola artikla* odabranih na kartici *Zahtjevi*. Radno područje sastoji se od područja filtra i područja rezultata.   
-Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretraži kontrolne planove** kako bi se prikazali rezultati unutar tablice rezultata.    
+Na ovoj kartici moguće je pretraživati i odabrati *Kontrolni plan* u koji će biti uneti *Artikli* iz *Kontrola artikala* izabranih na kartici *Zahtevi*.
 
-*Specifične tipke*:   
+Radna površina sastoji se od dela za filtriranje i dela sa rezultatima.
+
+Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Pretraži kontrolne planove** kako bi se rezultati prikazali u tabeli rezultata.
+
+*Specifična dugmad:*
 
 ### ![](/img/neutral/common/search.png) Pretraži kontrolne planove
-Na temelju postavljenog filtra prikazuju se rezultati unutar tablice rezultata.   
+
+Na osnovu postavljenih filtera prikazuju se rezultati u tabeli rezultata.
 
 ### ![](/img/neutral/common/item-web.png) Otvori kontrolne planove
-Omogućeno je ako se odabere barem jedan redak iz tablice rezultata.   
-Pritiskom na tipku izvršava se upravljanje odabranim *Kontrolnim planovima*.    
+
+Omogućeno je kada je odabran najmanje jedan red iz tabele rezultata.
+
+Pritiskom na dugme otvara se upravljanje izabranim *Kontrolnim planovima*.
 
 ### ![](/img/neutral/common/new.png) Novi kontrolni plan
-Omogućeno je ako se odabere barem jedan redak iz tablice rezultata kartice *Zahtjevi*.   
-Pritiskom na tipku stvara se novi *Kontrolni plan* koji sadrži *Artikle* iz **Kontrola artikla** odabranih na kartici *Zahtjevi*.   
-Redcima odabranih **Kontrola artikla** povezuje se upravo stvoreni *Kontrolni plan* i retci se skrivaju.   
 
-### Poveži kontrolni plan   
-Omogućeno je ako se odabere barem jedan redak iz tablice rezultata kartice *Zahtjevi* i samo jedan *Kontrolni plan* iz tablice rezultata kartice *Kontrolni planovi*.   
-Pritiskom na tipku, s odabranim *Kontrolnim planom* povezuju se *Artikli* iz *Kontrola artikla* odabranih iz tablice rezultata kartice *Zahtjevi*.   
+Omogućeno je kada je odabran najmanje jedan red iz tabele rezultata na kartici *Zahtevi*.
 
-### ![](/img/neutral/common/duplicate.png) Odaberi zahtjeve
-Pritiskom na tipku automatski se pozicionira na karticu **Zahtjevi**.   
+Pritiskom na dugme kreira se novi *Kontrolni plan* koji sadrži *Artikle* iz odabranih *Kontrola artikala*.
 
+Sa redovima izabranih *Kontrola artikala* povezuje se upravo kreirani *Kontrolni plan*, nakon čega se redovi skrivaju.
 
-## Svojstva   
+### Poveži kontrolni plan
 
-Na ovoj kartici moguće je navesti kriterije po kojima se *Artikli* stvaraju/povezuju s *Kontrolnim planovima*.
-Dva moguća kriterija su:   
-> **Standardno**: omogućuje stvaranje/povezivanje redaka *Kontrola artikla* bez referenci na račune *Kupac/Dobavljač* s *Kontrolnim planovima* bez referenci na račune *Kupac/Dobavljač*.   
-> **Kupac/Dobavljač**: omogućuje stvaranje/povezivanje redaka *Kontrola artikla* s referencama na račune *Kupac/Dobavljač* s *Kontrolnim planovima* s istim računom *Kupac/Dobavljač*.      
+Omogućeno je kada je odabran najmanje jedan red iz tabele rezultata na kartici *Zahtevi* i tačno jedan *Kontrolni plan* iz tabele rezultata na kartici *Kontrolni planovi*.
 
+Pritiskom na dugme, sa izabranim *Kontrolnim planom* povezuju se *Artikli* iz *Kontrola artikala* odabranih na kartici *Zahtevi*.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+### ![](/img/neutral/common/duplicate.png) Odaberi zahteve
+
+Pritiskom na ovo dugme automatski se prelazi na karticu **Zahtevi**.
+
+## Svojstva
+
+Na ovoj kartici moguće je definisati kriterijume prema kojima se *Artikli* kreiraju ili povezuju sa *Kontrolnim planovima*.
+
+Dostupna su dva kriterijuma:
+
+> **Standardno**: omogućava kreiranje ili povezivanje redova *Kontrola artikala* bez referenci na konta *Kupac/Dobavljač* sa *Kontrolnim planovima* koji takođe nemaju reference na konta *Kupac/Dobavljač*.
+>
+> **Za Kupca/Dobavljača**: omogućava kreiranje ili povezivanje redova *Kontrola artikala* sa referencama na konta *Kupac/Dobavljač* sa *Kontrolnim planovima* koji imaju isto konto *Kupca/Dobavljača*.
+
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu:
+
+[Funkcionalnosti, dugmad i polja](/docs/guide/common).
