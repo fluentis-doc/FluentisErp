@@ -1,87 +1,116 @@
 ---
-title: Uvoz artikala za provjeru
+title: Uvoz artikala za kontrolu
 sidebar_position: 2
 ---
 
-Procedura uvoza nalazi se na putanji **Kvaliteta > Kontrola artikla > Kontrola artikla > Uvoz artikala za provjeru**.      
-
+Procedura uvoza nalazi se na putanji **Kvalitet > Kontrola artikla > Kontrola artikla > Uvoz artikala za kontrolu**.
 
 :::important Čemu služi
-Ovo upravljanje omogućuje stvaranje novih *Kontrola artikla* uvozom *Artikala* za kontrolu iz predviđenih *Vrsta dokumenata*:   
-> ***Prijem robe***   
-> ***Primke***   
-> ***Ulazni račun***   
-> ***Izjave o proizvodnji***   
-> ***Faze izrada nadrudžbe***   
-> ***Povrat od podizvođača***   
-> ***Rukovanje teretom***   
+Ovo upravljanje omogućava kreiranje novih *Kontrola artikla* uvozom *Artikala* za kontrolu iz predviđenih *Vrsta dokumenata*:
 
-te ih povezati s predviđenim *Kontrolnim planom* kako bi se zatim, putem vizualnih pregleda ili uz pomoć *Mjernih instrumenata*, provjerila njihova sukladnost.   
+> - *Prijem robe*
+> - *Primke*
+> - *Ulazni računi*
+> - *Prijave proizvodnje*
+> - *Faze proizvodnog naloga*
+> - *Povrati od kooperanata*
+> - *Rukovanje teretom*
+
+Uvezeni artikli se zatim povezuju sa odgovarajućim *Kontrolnim planom* kako bi se putem vizuelnih pregleda ili korišćenjem *Mernih instrumenata* proverila njihova usklađenost.
 :::
 
+Forma je podeljena na:
 
-Obrazac je podijeljen na:   
-- područje filtra, *Vrsta dokumenta* iz koje se žele uvesti *Artikli* za kontrolu;   
-- područje koje se sastoji od različitih kartica, po jedna za *Vrstu dokumenta*, od kojih svaka sadrži tablice posvećene rezultatu filtra.      
+- oblast filtera za izbor *Vrste dokumenta* iz koje se uvoze *Artikli* za kontrolu;
+- oblast sa više kartica, po jedna za svaku *Vrstu dokumenta*, pri čemu svaka kartica sadrži tabelu sa rezultatima pretrage.
 
-## Specifične tipke
+## Specifična dugmad
 
-### ![](/img/neutral/common/search.png) Pretraživanje redaka dokumenta za uvoz
+### ![](/img/neutral/common/search.png) Pretraga dokumenata za uvoz
 
-Područje filtra i kartica koja sadrži tablicu rezultata mijenjaju se nakon što se odredi *Vrsta dokumenta*.   
-Nakon što se postave željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar tablice rezultata.   
-Od odabrane *Vrste dokumenta* prikazat će se samo retci dokumenata artikala:   
-- kodirani za *Prijem robe*, *Primke*, *Ulazne račune* i *Povrate od podizvođača*;   
-- s proizvedenim i/ili odbačenim količinama za *Izjave o proizvodnji*;      
+Oblast filtera i kartica sa rezultatima menjaju se u zavisnosti od izabrane *Vrste dokumenta*.
 
-za preostale *vrste dokumenata* *Faza proizvodnog naloga* i *Rukovanje teretom* prikazat će se svi retci dokumenata.   
+Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-### Potvrda redaka dokumenta za uvoz
+U zavisnosti od izabrane *Vrste dokumenta* prikazuju se:
 
-Omogućeno je ako se odabere barem jedan redak iz tablice rezultata i *Vrsta kontrole* koju treba stvoriti.   
-Nakon što se odaberu željeni reci, potrebno je kliknuti na tipku **Potvrda** kako bi se povezali *Kontrolni planovi* i stvorile *Kontrole artikla*.   
-Po završetku operacije postavlja se pitanje želite li nastaviti s aktivnostima uvoza ili otvoriti upravo stvorene *Kontrole artikla*.   
+- za *Prijem robe*, *Primke*, *Ulazne račune* i *Povrate od kooperanata* samo kodirani redovi artikala;
+- za *Prijave proizvodnje* samo redovi sa proizvedenim i/ili odbačenim količinama;
+- za *Faze proizvodnog naloga* i *Rukovanje teretom* svi redovi dokumenta.
+
+### Potvrda redova dokumenta za uvoz
+
+Omogućeno je kada je odabran najmanje jedan red iz tabele rezultata i definisana *Vrsta kontrole* koju treba kreirati.
+
+Nakon izbora željenih redova potrebno je kliknuti na dugme **Potvrda** kako bi se povezali odgovarajući *Kontrolni planovi* i kreirale *Kontrole artikla*.
+
+Po završetku operacije sistem postavlja pitanje da li želite da nastavite sa aktivnostima uvoza ili da otvorite upravo kreirane *Kontrole artikla*.
 
 import ControlPlanSearchMethod from './../../../import/procedure/control-plan-search-method.md'
 
 <ControlPlanSearchMethod />
 
-## Upravljanje uvozom artikla za provjeru   
+## Upravljanje uvozom artikala za kontrolu
 
-### Područje filtra
+### Oblast filtera
 
-Područje se sastoji od fiksnog dijela gdje se prikazuju filtri za pretraživanje vezani uz opće informacije i dijela koji za odabranu *Vrstu dokumenta*; taj dio prikazuje se ispod proširenja *Artikl*.      
-Filtri za pretraživanje vezani uz opće informacije su:   
-> **Vrsta dokumenta**: to je *Vrsta dokumenta* u kojoj se pretražuju informacije.   
-> Pri izvršavanju upravljanja predlaže se *Vrsta dokumenta* označena kao *Zadana* na popisu *Vrsta dokumenata za uvoz* koji se nalazi na kartici *Kontrole artikla* unutar *Parametara kontrole artikla*; ako nije navedena, predlaže se *Primka*.   
-> Automatski prijedlog, ili naknadna promjena od strane operatera, uzrokovat će promjenu varijabilnog dijela filtra podataka i prikazane kartice.   
->   
-> **Detalj artikla**: vrsta detalja za kontrolu *Artikla* za specifičnu vrstu dokumenta.   
-> To je popis unaprijed definiranih vrijednosti sustava:   
-> - *Nijedan* - razmatrani redak *Artikla* neće uzeti nikakve detaljne podatke;   
-> - *Lot* - razmatrani redak *Artikla* uzet će kao detalj *Lot*;   
-> - *S.N.* - razmatrani redak *Artikla* uzet će kao detalj *Serijski broj*;   
-> - *UDC* - razmatrani redak *Artikla* uzet će kao detalj *Jedinicu utovara*.   
->   
-> Prilikom izvršavanja upravljanja predlaže se *Detalj artikla* naveden u *Detaljima artikla* na popisu *Vrste dokumenata za uvoz* koji se nalazi na kartici *Kontrole artikla* u *Parametrima kontrole artikla*.      
+Oblast se sastoji od:
+
+- fiksnog dela koji sadrži filtere za pretragu opštih informacija;
+- promenljivog dela koji zavisi od izabrane *Vrste dokumenta* i prikazuje se u proširenju *Artikal*.
+
+Filteri za pretragu opštih informacija su:
+
+> **Vrsta dokumenta**: *Vrsta dokumenta* u kojoj se pretražuju podaci.
 >
-> **Tip kontrole**: šifra *Vrste kontrole* koju treba povezati s *Kontrolama artikala* koje se stvaraju.   
-> Pri izvršavanju upravljanja predlaže se *Vrsta kontrole* navedena u *Vrsti kontrole* na popisu *Vrsta dokumenata za uvoz* koji se nalazi na kartici *Kontrole artikla* unutar *Parametara kontrole artikla*.   
->   
-> proširenje **Detalj**   
->> **Još nije razmatrano**: označava treba li pretraživati samo retke dokumenta koji još nisu razmotreni u prethodnim uvozima.   
->> **Već razmatrano**: označava treba li pretraživati, osim onih koje još nisu razmotrene, i retke koji su već razmotreni u prethodnim uvozima (obično se koristi u slučaju da se žele provesti dodatne kontrole).    
->   
-> **Barkod**: to je kod koji je omogućen za prepoznavanje: *Artikla*, *Jedinice tereta*, *Lota* i *Serijskog broja*.   
->   
-> proširenje **Artikl**
->> **Učitavanje jedinice**: formatirani je kod *Jedinice tereta*.   
->> **Lot**: šifra *Lota*.   
->> **Serijski broj**: je kod *Serijskog broja*.   
+> Prilikom pokretanja procedure predlaže se *Vrsta dokumenta* označena kao *Podrazumevana* u listi *Vrste dokumenata za uvoz* na kartici *Kontrole artikala* u okviru *Parametara kontrole artikala*.
+>
+> Ako nije definisana podrazumevana vrednost, predlaže se *Primka*.
+>
+> Promena ovog podatka automatski menja promenljivi deo filtera i prikazanu karticu.
+>
+> **Detalj artikla**: vrsta detalja koji se koristi za kontrolu artikla za izabranu vrstu dokumenta.
+>
+> Dostupne sistemske vrednosti su:
+>
+> - *bez grupisanja* – red artikla neće koristiti dodatne detalje;
+> - *Lot* – koristi se *Lot* kao detalj;
+> - *S.N.* – koristi se *Serijski broj* kao detalj;
+> - *Jedinica utovara* – koristi se *Jedinica utovara* kao detalj.
+>
+> Prilikom pokretanja procedure predlaže se vrednost definisana u listi *Vrste dokumenata za uvoz* u okviru *Parametara kontrole artikala*.
+>
+> **Vrsta kontrole**: šifra *Vrste kontrole* koja će biti povezana sa kreiranim *Kontrolama artikla*.
+>
+> Predlaže se vrednost definisana u listi *Vrste dokumenata za uvoz* u okviru *Parametara kontrole artikala*.
+>
+> **Proširenje Detalj**
+>
+>> **Još nije razmatrano**: prikazuju se samo redovi dokumenta koji još nisu bili obuhvaćeni prethodnim uvozima.
+>>
+>> **Već razmatrano**: prikazuju se i redovi koji su već bili obrađeni u prethodnim uvozima, što se najčešće koristi za dodatne kontrole.
+>
+> **Barkod**: kod koji omogućava identifikaciju:
+>
+> - *Artikla*;
+> - *Jedinice utovara*;
+> - *Lota*;
+> - *Serijskog broja*.
+>
+> **Proširenje Artikal**
+>
+>> **Jedinica utovara**: formatirani kod *Jedinice utovara*.
+>>
+>> **Lot**: šifra *Lota*.
+>>
+>> **Serijski broj**: šifra *Serijskog broja*.
 
-### Područje rezultata   
+### Oblast rezultata
 
-Sadržano je u svakoj kartici, to je tablica koja sadrži rezultat *Pretraživanja* primijenjenog na području filtra.   
-Informacije sadržane u popisu povezane su s odabranom *Vrstom dokumenta*.   
+Nalazi se na svakoj kartici i predstavlja tabelu sa rezultatima *Pretrage* izvršene na osnovu definisanih filtera.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Informacije prikazane u tabeli zavise od izabrane *Vrste dokumenta*.
+
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu:
+
+[Funkcionalnosti, dugmad i polja](/docs/guide/common).
