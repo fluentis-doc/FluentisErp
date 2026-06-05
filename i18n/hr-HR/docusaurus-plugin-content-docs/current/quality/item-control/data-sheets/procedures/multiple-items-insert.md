@@ -1,9 +1,9 @@
 ---
-title: Unos više stavaka
+title: Masovni unos artikala
 sidebar_position: 3
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikla > Tehnička uputstva > Procedure > Unos više stavaka**
+Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikla > Tehnička uputstva > Procedure > Masovni unos artikala**
 
 
 :::important Čemu služi
@@ -37,7 +37,7 @@ Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon �
 
 ### ![](/img/neutral/common/search.png) Pretraži kartice
 Na temelju postavljenog filtera, rezultati se prikazuju unutar prikaza rezultata.   
-### ![](/img/neutral/common/duplicate.png) Odaberite artikle
+### ![](/img/neutral/common/duplicate.png) Odaberi artikle
 Pritiskom na tipku automatski se pozicionira u karticu **Artikli**.   
 ### ![](/img/neutral/common/execute.png) Umetni
 Odabrani *Artikli* bit će povezani s odabranim *Tehničkim uputstvima* u pripadajućim karticama s informacijama navedenim u kartici *Parametri*.  
@@ -45,7 +45,7 @@ Odabrani *Artikli* bit će povezani s odabranim *Tehničkim uputstvima* u pripad
 
 ## Parametri
 
-U ovoj kartici moguće je unijeti neke informacije koje će se predložiti pri unosu *Artiklala* u *Tehničkim uputstvima*.  
+U ovoj kartici moguće je unijeti neke informacije koje će se predložiti pri unosu *Artikala* u *Tehničkim uputstvima*.  
 U kartici je moguće unijeti:  
 > **Vrsta deklaracije u artiklima**: tip *deklaracije* koji se koristi za odabir grupe *deklaracija* koje će se prikazati u ispisu.  
 > **Napomene**: slobodne bilješke.   
