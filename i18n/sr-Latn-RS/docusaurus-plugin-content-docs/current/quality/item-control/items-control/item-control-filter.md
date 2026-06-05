@@ -1,23 +1,28 @@
 ---
-title: Pretraga kontrole artikala
+title: Pretraga kontrola artikala
 sidebar_position: 1
 ---
 
-Filtar se nalazi na putanji **Kvaliteta > Kontrola artikla > Kontrola artikla**.      
+Filter se nalazi na putanji **Kvalitet > Kontrola artikla > Kontrola artikla**.
 
-Filtar podataka omogućuje unošenje novih *Kontrola artikla* ili pretraživanje već postojećih kako bi ih se vidjelo, izmijenilo ili izbrisalo.   
-Različite boje redaka mogu se postaviti u **Parametri kontrole artikla > Kontrole artikla**.     
+Filter podataka omogućava unos novih *Kontrola artikla* ili pretragu postojećih radi pregleda, izmene ili brisanja.
 
-### ![](/img/neutral/common/search.png) Pretraga kontrole artikala
+Različite boje redova mogu se definisati u **Parametrima kontrole artikla > Kontrole artikala**.
 
-Obrazac se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar tablice rezultata.      
+### ![](/img/neutral/common/search.png) Pretraga kontrola artikala
 
-### ![](/img/neutral/common/new.png) Unos kontrole artikala
+Forma se sastoji od dela za filtriranje i dela sa rezultatima.
 
-Kako bi se unijele nove *Kontrole artikla*, potrebno je pritisnuti tipku **Uvoz artikala za provjeru**.      
+Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-### ![](/img/neutral/common/edit.png) Izmijeni ili ![](/img/neutral/common/view.png) Prikaži Kontrolu artikla
+### ![](/img/neutral/common/new.png) Unos kontrola artikala
 
-Kako bi se otvorilo upravljanje tablicom rezultata, potrebno je dvaput kliknuti na redak od interesa ili, odabirom jednog ili više redaka, pritisnuti tipke **Izmijeni** ili **Prikaži**.      
+Za unos novih *Kontrola artikla* potrebno je pritisnuti dugme **Uvoz artikala za kontrolu**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+### ![](/img/neutral/common/edit.png) Izmeni ili ![](/img/neutral/common/view.png) Prikaži kontrolu artikla
+
+Za otvaranje zapisa iz tabele rezultata potrebno je dvaput kliknuti na željeni red ili, nakon izbora jednog ili više redova, pritisnuti dugme **Izmeni** ili **Prikaži**.
+
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu:
+
+[Funkcionalnosti, dugmad i polja](/docs/guide/common).
