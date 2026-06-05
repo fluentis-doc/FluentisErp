@@ -19,7 +19,7 @@ Upravljanje omogućuje umetanje novih *Početnih i periodičnih procjena* ili pr
 
 ### ![](/img/neutral/common/search.png) Pretraga Početnih i periodičnih procjena
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se klikne tipka **Traži** da bi se vidjeli podaci u pregeldu rezultata.
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se klikne tipka **Traži** da bi se vidjeli podaci u pregledu rezultata.
 
 
 ### ![](/img/neutral/common/new.png) Unos Početnih i periodičnih procjena
@@ -56,7 +56,7 @@ Popis se sastoji od sljedećih podataka:
 >
 > **Inspektor**: je šifra *Inspektora* koji provodi evaluaciju.   
 >
-> **Raztog procjene**: slobodne bilješke o temi, to je opis motivacije za evaluaciju.   
+> **Razlog procjene**: slobodne bilješke o temi, to je opis motivacije za evaluaciju.   
 >
 > **Procjena**: ovo je *Ocjena* koju je *Inspektor* dao *Dobavljaču*.   
 > Ćelija je obojena bojama *pozadine* i *teksta* navedenima u tablici *Ocjene dobavljača*.   
