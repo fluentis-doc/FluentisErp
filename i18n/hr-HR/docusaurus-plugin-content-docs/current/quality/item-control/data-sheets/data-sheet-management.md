@@ -43,7 +43,7 @@ Po završetku obrade novo *Tehničko uputstvo* će se prikazati.
 
 ### ![](/img/neutral/common/execute.png) Stvori novu reviziju
 
-Da bi se kreirala nova *Revizija* postojeće *Tehničke kartice*, potrebno je kliknuti u priakzu na *Tehničku karticu* iz koje se želi kreirati nova *Revizija* i pritisnuti tipku **Stvori novu reviziju**. Može se kreirati nova *Revizija* samo za jednu *Tehničku karticu* odjednom.  
+Da bi se kreirala nova *Revizija* postojeće *Tehničke kartice*, potrebno je kliknuti u prikazu na *Tehničku karticu* iz koje se želi kreirati nova *Revizija* i pritisnuti tipku **Stvori novu reviziju**. Može se kreirati nova *Revizija* samo za jednu *Tehničku karticu* odjednom.  
 Kreira se nova *Tehnička kartica*, sa svim informacijama iz izvornog dokumenta, ali s povećanim indeksom *Revizije* i *Datumom početka važenja* postavljenim na današnji datum.  
 Izvorna *Tehnička kartica* završava svoje važenje, a *Datum završetka važenja* se postavlja na današnji datum.  
 Po završetku obrade, nova *Revizija* *Tehničke kartice* se prikazuje.   
@@ -55,7 +55,7 @@ Iz *Tehničke kartice* moguće je kreirati *Kontrolni plan*; za to je potrebno k
 Kreira se novi *Kontrolni plan*, kopiraju se samo *Svojstva* izvora s indikatorom *Mjerenja koja se trebaju provesti*, dok sve ostale informacije iz *Tehničke kartice* ostaju, ali s indeksom *Revizije* postavljenim na *nula* i *Datumom početka važenja* postavljenim na današnji datum. Prikazat će se upit za:  
 > **Tip kontrolnog plana**: je *Vrsta kontrolnog plana* novog *Kontrolnog plana* (obavezno polje).  
 > **Broj**: je progresivni broj novog *Kontrolnog plana* (obavezno polje), predlaže se na temelju *Numeracije* povezane s *Vrsta kontrolnog plana* i današnjim datumom.  
-> **Stvara održavanje sljedivosti**: označava hoće li se zadržati veza/praćenje izvornog *Tehničke kartice* u *Kontrolnom planu* odredišta (u expanderu *Izvor Kontrolnog plana* u *podacima zaglavlja*).    
+> **Stvara održavanje sljedivosti**: označava hoće li se zadržati veza/praćenje izvornog *Tehničke kartice* u *Kontrolnom planu* odredišta (u proširenju *Izvor Kontrolnog plana* u *podacima zaglavlja*).    
 
 Nakon toga se pritisne tipka **OK** ili tipku **Otkaži** ako se želi nastaviti s aktivnošću kreiranja ili odustati.  
 Po završetku obrade, novi *Kontrolni plan* bit će prikazan.   
@@ -73,8 +73,8 @@ Sve informacije iz izvornog *Svojstva* dupliciraju se u novo *Svojstvo* koje se 
 ### Podaci zaglavlja
 
 Upravlja se informacijama:  
-> **Vrsta lsite**: to je *Vrsta tehničke kartice* (obavezno polje).  
-> Prilikom ručnog unosa nove *Tehničke kartice* predlaže se *Vrsta tehničke kartice* navedena u prošitenju *Tehničke kartice* u kartici *Općenito* prisutnoj u *Parametrima kontrole artikala*.   
+> **Vrsta liste**: to je *Vrsta tehničke kartice* (obavezno polje).  
+> Prilikom ručnog unosa nove *Tehničke kartice* predlaže se *Vrsta tehničke kartice* navedena u proširenju *Tehničke kartice* u kartici *Općenito* prisutnoj u *Parametrima kontrole artikala*.   
 >
 > **Šifra**: to je *Šifra* *Tehničke kartice* (obavezno polje).  
 > Predlaže se u skladu s *Metodom kodiranja* pridruženom *Vrsti tehničke kartice*.   
@@ -91,9 +91,9 @@ Informacija se može mijenjati ako se kreira nova *Tehnička kartica*, inače je
 > Datumi se automatski upravljaju prilikom kreiranja nove *Revizije* *Tehničke kartice*.
 >
 > **Odgovorna osoba**: to je *Zaposlenik* odgovoran za *Tehničku karticu*.  
-> Prilikom ručnog unosa nove *Tehničke kartice*, predlaže se *Odgovorna osoba* navedena u expanderu *Tehničke kartice* na kartici *Općenito* unutar *Parametara kontrole artikala*.  
+> Prilikom ručnog unosa nove *Tehničke kartice*, predlaže se *Odgovorna osoba* navedena u proširenju *Tehničke kartice* na kartici *Općenito* unutar *Parametara kontrole artikala*.  
 >
-> **Izvor podataka s kartica**: prošitenje gdje je moguće unijeti:  
+> **Izvor podataka s kartica**: proširenje gdje je moguće unijeti:  
 >
 >> **Tip/Izvorni list/Rev.**: sadrži reference na *Izvorna tehnička kartica* (*Tip kartice*, *Kod* i *Revizija*).  
 >> **Razlog za reviziju**: kratki opis razloga koji je doveo do revizije.  
@@ -104,7 +104,7 @@ Informacija se može mijenjati ako se kreira nova *Tehnička kartica*, inače je
 
 ### Atributi svojstva
 Moguće je umetnuti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaku *Tehničku karticu*.   
-Naslijeđuju se iz *Atributa tehničke kartice* povezanih s *Tipom tehničke kartice*.   
+Nasljeđuju se iz *Atributa tehničke kartice* povezanih s *Tipom tehničke kartice*.   
 
 
 ### Svojstva
@@ -154,7 +154,7 @@ Popis se sastoji od sljedećih informacija:
 > **Napomene**: slobodne napomene.  
 
 
-### Povezane stvari
+### Povezani artikli
 Sadrži *Artikle* sa sličnim karakteristikama, navedene u popisu *Svojstava*.
 Popis se sastoji od sljedećih informacija:
 > **Klasa**: je klasa *Artikla*.
