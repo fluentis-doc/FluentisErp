@@ -1,39 +1,52 @@
 ---
-title: Pretraga certifikata s analize
+title: Pretraga sertifikata analize
 sidebar_position: 1
 ---
 
-Filter se nalazi na putanji **Kvaliteta > Kontrole Artikla > Kontrolni planovi**.  
+Filter se nalazi na putanji **Kvalitet > Kontrole artikala > Kontrolni planovi**.
 
-**Certifikati s analize** ili **Ispitni certifikati** potvrđuju sukladnost prodanih artikala s karakteristikama navedenima u *Tehničkim uputstvima*.
-*Certifikati s analize* mogu biti generički ili specifični za *kupca*.   
+**Sertifikati analize** ili **Ispitni sertifikati** potvrđuju usaglašenost prodatih artikala sa karakteristikama navedenim u *Tehničkim uputstvima*.
 
-Filtar podataka omogućuje unos novih *Certifikata s analize* ili pretraživanje postojećih kako bi se pregledali, uredili ili izbrisali.   
+*Sertifikati analize* mogu biti generički ili specifični za *kupca*.
 
-### ![](/img/neutral/common/search.png) Pretraga certifikata s analize
+Filter podataka omogućava unos novih *Sertifikata analize* ili pretragu postojećih radi pregleda, izmene ili brisanja.
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se klikne gumb **Traži** da bi se vidjeli rezultati u pregledu rezultata.
+### ![](/img/neutral/common/search.png) Pretraga sertifikata analize
 
-### ![](/img/neutral/common/new.png) Unos certifikata s analize
+Obrazac se sastoji od dela za filtriranje i dela sa rezultatima. Nakon što se podese svi željeni filteri, potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u pregledu rezultata.
 
-Za unos novih *Certifikata s analize* mora se pritisnuti gumb **Novo**.   
+### ![](/img/neutral/common/new.png) Unos sertifikata analize
 
-### ![](/img/neutral/common/edit.png) Izmijeni ili ![](/img/neutral/common/view.png) Prikaži certifikate s analize
+Za unos novog *Sertifikata analize* potrebno je pritisnuti dugme **Novo**.
 
-Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na redak od interesa ili, odabirom jednog ili više redaka, pritisnuti tipke **Uredi** ili **Prikaži**.  
+### ![](/img/neutral/common/edit.png) Izmeni ili ![](/img/neutral/common/view.png) Prikaži sertifikate analize
 
-*Specifične tipke*: 
-    
-### ![](/img/neutral/common/duplicate.png) Dupliciranje certifikata s analize
+Za otvaranje upravljanja iz prikaza rezultata potrebno je dvaput kliknuti na željeni red ili, nakon izbora jednog ili više redova, pritisnuti dugme **Izmeni** ili **Prikaži**.
 
-Za dupliciranje postojećeg *certifikata s analize* u novi *certifikat s analize*, klikne se na *certifikat s analize* koj se želit duplicirati u prikazu i pritisnite tipka **Dupliciraj**. Možete se duplicirati samo jedan *certifikat s analize* istovremeno. Pojavit će se upit:  
-> **Vrsta certifikata s analize**: ovo je *Vrsta certifikata s analize* novog *Certifikata s analize* (obavezni podaci), predlaže se *Vrsta certifikata s analize* izvornog *Certifikata s analize*.   
-> **Broj**: je progresivni *broj* novog *certifikata s analize* (obavezni podatak), predlaže se na temelju onoga što je navedeno u *Numeriranju* povezanom s *Vrstom certifikata s analize* i današnjim datumom.   
-> **Dupliciraj izvorne reference kontrolnih artikala**: označava ako se žele duplicirati retci povezani s *Kontrolama artikala*.   
-> **Duplicirane ostale izvorne reference**: označava ako se žele duplicirati retci koji nisu povezani s *Kontrolama artikala*.   
-> **Dupliciraj izvorne dokumente**: označava ako se žele duplicirati *Dokumenti*.   
+*Specifična dugmad:*
 
-Zatim se pritisne tipka **U redu** ili **Otkaži** kako bi se odlučilo želi li se nastaviti s postupkom dupliciranja ili ne.
-Kada je postupak završen, prikazuje se novi *Certifikat s analize*.
+### ![](/img/neutral/common/duplicate.png) Dupliranje sertifikata analize
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Da biste duplirali postojeći *Sertifikat analize* u novi *Sertifikat analize*, potrebno je označiti *Sertifikat analize* koji želite da duplirate u prikazu i pritisnuti dugme **Dupliraj**.
+
+Istovremeno je moguće duplirati samo jedan *Sertifikat analize*.
+
+Prikazaće se sledeći dijalog:
+
+> **Vrsta sertifikata analize**: predstavlja *Vrstu sertifikata analize* novog *Sertifikata analize* (obavezno polje). Podrazumevano se predlaže *Vrsta sertifikata analize* izvornog *Sertifikata analize*.
+>
+> **Broj**: redni *broj* novog *Sertifikata analize* (obavezno polje). Predlaže se na osnovu *Numeracije* povezane sa *Vrste sertifikata analize* i tekućeg datuma.
+>
+> **Dupliraj izvorne reference kontrola artikala**: označava da li se dupliraju redovi povezani sa *Kontrolama artikala*.
+>
+> **Dupliraj ostale izvorne reference**: označava da li se dupliraju redovi koji nisu povezani sa *Kontrolama artikala*.
+>
+> **Dupliraj izvorne dokumente**: označava da li se dupliraju *Dokumenti*.
+
+Nakon toga potrebno je pritisnuti dugme **U redu** ili **Otkaži** kako biste odlučili da li želite da nastavite postupak dupliranja.
+
+Po završetku postupka prikazuje se novi *Sertifikat analize*.
+
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu:
+
+[Funkcionalnosti, dugmad i polja](/docs/guide/common).
