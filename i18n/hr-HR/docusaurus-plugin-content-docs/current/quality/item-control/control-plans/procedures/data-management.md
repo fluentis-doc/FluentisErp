@@ -46,12 +46,12 @@ Pritiskom na tipku **Traži** prikazuju se rezultati unutar tablice rezultata od
 
 #### Područje izmjene
 
-Sadržano je u svakoj kartici (osim na kartici *Povijest pogrešaka*), to je gornja "tablica" koja se sastoji od jednog retka.   
+Sadržano je u svakoj kartici (osim na kartici *Povijest pogrešaka*), to je gornja tablica koja se sastoji od jednog retka.   
 U ovu tablicu, koja sadrži iste stupce kao i tablica rezultata (ona donja), moguće je unijeti sve informacije koje se žele prenijeti u retke tablice rezultata pritiskom na tipku *Izmijeni*.   
 Nakon što se završi zamjena vrijednosti, postojeće vrijednosti u gornjoj tablici bit će izbrisane.     
 
 #### Područje rezultata
-Sadržano je u svakoj kartici, to je donja "tablica" koja sadrži rezultat *Pretraživanja* primijenjenog na području filtra.   
+Sadržano je u svakoj kartici, to je donja tablica koja sadrži rezultat *Pretraživanja* primijenjenog na području filtra.   
 U ovoj tablici, koja sadrži iste stupce kao i tablica izmjene (ona gornja), moguće je ručno izmijeniti sve informacije bez potrebe ulaska u svako upravljanje *Kontrolnog plana*.   
 Stupci se razlikuju ovisno o odabranoj kartici. Stupci gdje nije moguće izmijeniti informacije su onemogućeni i istaknuti drugom bojom.   
 
