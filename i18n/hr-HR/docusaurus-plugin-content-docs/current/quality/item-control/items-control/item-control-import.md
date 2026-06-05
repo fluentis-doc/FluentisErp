@@ -12,7 +12,7 @@ Ovo upravljanje omogućuje stvaranje novih *Kontrola artikla* uvozom *Artikala* 
 > ***Primke***   
 > ***Ulazni račun***   
 > ***Izjave o proizvodnji***   
-> ***Faze izrada nadrudžbe***   
+> ***Faze izrada narudžbe***   
 > ***Povrat od podizvođača***   
 > ***Rukovanje teretom***   
 
@@ -26,7 +26,7 @@ Obrazac je podijeljen na:
 
 ## Specifične tipke
 
-### ![](/img/neutral/common/search.png) Pretraživanje redaka dokumenta za uvoz
+### ![](/img/neutral/common/search.png) Pretraživanje dokumenta za uvoz
 
 Područje filtra i kartica koja sadrži tablicu rezultata mijenjaju se nakon što se odredi *Vrsta dokumenta*.   
 Nakon što se postave željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali rezultati unutar tablice rezultata.   
@@ -52,16 +52,16 @@ import ControlPlanSearchMethod from './../../../import/procedure/control-plan-se
 
 Područje se sastoji od fiksnog dijela gdje se prikazuju filtri za pretraživanje vezani uz opće informacije i dijela koji za odabranu *Vrstu dokumenta*; taj dio prikazuje se ispod proširenja *Artikl*.      
 Filtri za pretraživanje vezani uz opće informacije su:   
-> **Vrsta dokumenta**: to je *Vrsta dokumenta* u kojoj se pretražuju informacije.   
+> **Tip dokumenta**: to je *Vrsta dokumenta* u kojoj se pretražuju informacije.   
 > Pri izvršavanju upravljanja predlaže se *Vrsta dokumenta* označena kao *Zadana* na popisu *Vrsta dokumenata za uvoz* koji se nalazi na kartici *Kontrole artikla* unutar *Parametara kontrole artikla*; ako nije navedena, predlaže se *Primka*.   
 > Automatski prijedlog, ili naknadna promjena od strane operatera, uzrokovat će promjenu varijabilnog dijela filtra podataka i prikazane kartice.   
 >   
 > **Detalj artikla**: vrsta detalja za kontrolu *Artikla* za specifičnu vrstu dokumenta.   
 > To je popis unaprijed definiranih vrijednosti sustava:   
-> - *Nijedan* - razmatrani redak *Artikla* neće uzeti nikakve detaljne podatke;   
+> - *bez grupiranja* - razmatrani redak *Artikla* neće uzeti nikakve detaljne podatke;   
 > - *Lot* - razmatrani redak *Artikla* uzet će kao detalj *Lot*;   
 > - *S.N.* - razmatrani redak *Artikla* uzet će kao detalj *Serijski broj*;   
-> - *UDC* - razmatrani redak *Artikla* uzet će kao detalj *Jedinicu utovara*.   
+> - *utovarna jedinica* - razmatrani redak *Artikla* uzet će kao detalj *Jedinicu utovara*.   
 >   
 > Prilikom izvršavanja upravljanja predlaže se *Detalj artikla* naveden u *Detaljima artikla* na popisu *Vrste dokumenata za uvoz* koji se nalazi na kartici *Kontrole artikla* u *Parametrima kontrole artikla*.      
 >
@@ -75,7 +75,7 @@ Filtri za pretraživanje vezani uz opće informacije su:
 > **Barkod**: to je kod koji je omogućen za prepoznavanje: *Artikla*, *Jedinice tereta*, *Lota* i *Serijskog broja*.   
 >   
 > proširenje **Artikl**
->> **Učitavanje jedinice**: formatirani je kod *Jedinice tereta*.   
+>> **Utovarna jedinica**: formatirani je kod *Jedinice tereta*.   
 >> **Lot**: šifra *Lota*.   
 >> **Serijski broj**: je kod *Serijskog broja*.   
 
