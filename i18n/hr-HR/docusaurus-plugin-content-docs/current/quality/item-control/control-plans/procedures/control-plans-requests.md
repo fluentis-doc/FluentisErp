@@ -49,7 +49,7 @@ Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretr
 
 *Specifične tipke*:   
 
-### ![](/img/neutral/common/search.png) Pretraži kontrolne planove
+### ![](/img/neutral/common/search.png) Traži kontrolne planove
 Na temelju postavljenog filtra prikazuju se rezultati unutar tablice rezultata.   
 
 ### ![](/img/neutral/common/item-web.png) Otvori kontrolne planove
@@ -73,8 +73,8 @@ Pritiskom na tipku automatski se pozicionira na karticu **Zahtjevi**.
 
 Na ovoj kartici moguće je navesti kriterije po kojima se *Artikli* stvaraju/povezuju s *Kontrolnim planovima*.
 Dva moguća kriterija su:   
-> **Standardno**: omogućuje stvaranje/povezivanje redaka *Kontrola artikla* bez referenci na račune *Kupac/Dobavljač* s *Kontrolnim planovima* bez referenci na račune *Kupac/Dobavljač*.   
-> **Kupac/Dobavljač**: omogućuje stvaranje/povezivanje redaka *Kontrola artikla* s referencama na račune *Kupac/Dobavljač* s *Kontrolnim planovima* s istim računom *Kupac/Dobavljač*.      
+> **Standardno**: omogućuje stvaranje/povezivanje redaka *Kontrola artikla* bez referenci na konta *Kupac/Dobavljač* s *Kontrolnim planovima* bez referenci na konta *Kupac/Dobavljač*.   
+> **Za Kupca/Dobavljača**: omogućuje stvaranje/povezivanje redaka *Kontrola artikla* s referencama na konta *Kupac/Dobavljač* s *Kontrolnim planovima* s istim kontom *Kupac/Dobavljač*.      
 
 
 Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
