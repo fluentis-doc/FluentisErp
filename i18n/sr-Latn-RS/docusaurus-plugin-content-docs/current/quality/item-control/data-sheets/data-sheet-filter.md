@@ -1,59 +1,104 @@
 ---
-title: Pretraga tehničkih uputstva
+title: Pretraga tehničkih uputstava
 sidebar_position: 1
 ---
 
-Filtar se nalazi na putanji **Kvaliteta > Kontrola artikala > Tehnička uputstva**.
+Filter se nalazi na putanji **Kvalitet > Kontrola artikala > Tehnička uputstva**.
 
-Tehnička uputstva katalogiziraju sve one informacije koje opisuju karakteristike povezanih proizvoda kao prikladne za ugovor, funkcionalnu specifikaciju ili određenu namjenu, i mogu se prilagoditi za *Kupca*.  
-Upravlja se *revizijama* i praćenjem povezanosti među različitim *Tehničkim uputstvima*.  
-Standardno su dostupna izvješća: *Tehničko uputstvo* (za internu upotrebu) i *Kartica proizvoda* (za komercijalnu upotrebu).  
+Tehnička uputstva katalogizuju sve informacije koje opisuju karakteristike povezanih proizvoda kao usklađene sa ugovorom, funkcionalnom specifikacijom ili određenom namenom i mogu biti prilagođena za *Kupca*.
 
+Omogućeno je upravljanje *Revizijama* i sledljivošću između različitih *Tehničkih uputstava*.
 
-Filtriranje podataka omogućuje unos novih *Tehničkih uputstava* ili pretraživanje već postojećih radi njihovog pregledavanja, izmjene ili brisanja.  
+Standardno su dostupni sledeći izveštaji:
 
-### ![](/img/neutral/common/search.png) Pretraga tehničkih uputstva
+- *Tehničko uputstvo* (za internu upotrebu)
+- *Kartica proizvoda* (za komercijalnu upotrebu)
 
-Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na gumb **Pretraži** kako bi se rezultati prikazali unutar mreže rezultata.   
+Filter podataka omogućava unos novih *Tehničkih uputstava* ili pretragu postojećih radi pregleda, izmene ili brisanja.
 
-### ![](/img/neutral/common/new.png) Unos tehničkih uputstva
+### ![](/img/neutral/common/search.png) Pretraga tehničkih uputstava
 
-Za unos novih *Tehničkih kartica* potrebno je pritisnuti gumb **Novo**.   
+Forma se sastoji od dela za filtriranje i dela sa rezultatima.
 
-### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) Prikaz tehničkih uputstva
+Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-Za otvaranje upravljanja u rezultirajućoj tablici potrebno je dvokliknuti na redak od interesa ili, selektirajući jedan ili više redaka, pritisnuti gumbe **Uredi** ili **Prikaži**. 
+### ![](/img/neutral/common/new.png) Unos tehničkih uputstava
 
-*Specifične tipke*:   
+Za unos novog *Tehničkog uputstva* potrebno je pritisnuti dugme **Novo**.
 
-### ![](/img/neutral/common/duplicate.png) Dupliciraj karticu
+### ![](/img/neutral/common/edit.png) Izmeni ili ![](/img/neutral/common/view.png) Prikaži tehnička uputstva
 
-Za dupliciranje postojeće *Tehničke kartice* u novu *Tehničku karticu* potrebno je kliknuti u tablici na *Tehničku karticu* koju želite duplicirati i pritisnuti gumb **Dupliciraj karticu**. Može se duplicirati samo jedna *Tehnička kartica* odjednom. Prikazuje se zahtjev za unos sljedećih podataka:   
-> **Vrsta lista**: je *Tip kartice* nove *Tehničke kartice* (obavezno polje).   
-> **Kupac**: je *Klijent* nove *Tehničke kartice*, predlaže se klijent iz originalne *Tehničke kartice*.   
-> **Nova šifra**: je *Šifra* nove *Tehničke kartice* (obavezno polje), predlaže se prema *Metodi kodiranja* pridruženoj *Tipu tehničke kartice*.   
-> **Dupliciraj sa sljedivošću**: označava želi li se zadržati odnos/praćenje, u originalnoj *Tehničkoj kartici* (tabulator *Povezane stvari* originalne *Tehničke kartice*) i u odredišnoj *Tehničkoj kartici* (u proširenju *Izvor podataka s kartica* unutar *podataka zaglavlja*).    
+Za otvaranje zapisa potrebno je dvaput kliknuti na željeni red ili, nakon izbora jednog ili više redova, pritisnuti dugme **Izmeni** ili **Prikaži**.
 
-Nakon toga pritisnuti tipku **OK** ili tipku **Otkaži** ako se želi nastaviti s aktivnošću dupliciranja ili odustati.  
-Nova *Tehnička kartica* koja se kreira imat će *Reviziju* postavljenu na *Nula*.  
-Po završetku obrade, nova *Tehnička kartica* se prikazuje.  
+*Specifična dugmad:*
 
-### ![](/img/neutral/common/execute.png) Stvori novu reviziju
+### ![](/img/neutral/common/duplicate.png) Dupliraj karticu
 
-Da bi se kreirala nova *Revizija* postojeće *Tehničke kartice*, potrebno je kliknuti u priakzu na *Tehničku karticu* iz koje se želi kreirati nova *Revizija* i pritisnuti tipku **Stvori novu reviziju**. Može se kreirati nova *Revizija* samo za jednu *Tehničku karticu* odjednom.  
-Kreira se nova *Tehnička kartica*, sa svim informacijama iz izvornog dokumenta, ali s povećanim indeksom *Revizije* i *Datumom početka važenja* postavljenim na današnji datum.  
-Izvorna *Tehnička kartica* završava svoje važenje, a *Datum završetka važenja* se postavlja na današnji datum.  
-Po završetku obrade, nova *Revizija* *Tehničke kartice* se prikazuje. 
+Za dupliranje postojeće *Tehničke kartice* u novu *Tehničku karticu*, potrebno je označiti željenu karticu u tabeli i pritisnuti dugme **Dupliraj karticu**.
 
-### ![](/img/neutral/common/item-web.png) Izradi kontrolni plan
+Istovremeno je moguće duplirati samo jednu *Tehničku karticu*.
 
-Iz *Tehničke kartice* moguće je kreirati *Kontrolni plan*; za to je potrebno kliknuti u prikazu na *Tehničku karticu* iz koje se želi kreirati kontrolni plan i pritisnuti tipku **Izradi kontrolni plan**. Novi *Kontrolni plan* može se kreirati samo za jednu *Tehničku karticu* odjednom.  
-Kreira se novi *Kontrolni plan*, kopiraju se samo *Svojstva* izvora s indikatorom *Mjerenja koja se trebaju provesti*, dok sve ostale informacije iz *Tehničke kartice* ostaju, ali s indeksom *Revizije* postavljenim na *nula* i *Datumom početka važenja* postavljenim na današnji datum. Prikazat će se upit za:  
-> **Tip kontrolnog plana**: je *Vrsta kontrolnog plana* novog *Kontrolnog plana* (obavezno polje).  
-> **Broj**: je progresivni broj novog *Kontrolnog plana* (obavezno polje), predlaže se na temelju *Numeracije* povezane s *Vrsta kontrolnog plana* i današnjim datumom.  
-> **Stvara održavanje sljedivosti**: označava hoće li se zadržati veza/praćenje izvornog *Tehničke kartice* u *Kontrolnom planu* odredišta (u expanderu *Izvor Kontrolnog plana* u *podacima zaglavlja*).  
+Prikazaće se dijalog za unos sledećih podataka:
 
-Nakon toga se pritisne tipka **OK** ili tipku **Otkaži** ako se želi nastaviti s aktivnošću kreiranja ili odustati.  
-Po završetku obrade, novi *Kontrolni plan* bit će prikazan.  
+> **Vrsta lista**: predstavlja *Vrstu kartice* nove *Tehničke kartice* (obavezno polje).
+>
+> **Kupac**: predstavlja *Kupca* nove *Tehničke kartice*; predlaže se kupac iz izvorne kartice.
+>
+> **Nova šifra**: predstavlja *Šifru* nove *Tehničke kartice* (obavezno polje), predloženu na osnovu *Metode kodiranja* povezane sa *Vrste tehničke kartice*.
+>
+> **Dupliraj sa sledljivošću**: označava da li se želi zadržati veza/sledljivost između izvorne i nove *Tehničke kartice*:
+>
+> - u izvornoj kartici na kartici *Povezane stavke*;
+> - u novoj kartici u sekciji *Izvor podataka kartice* unutar *Podataka zaglavlja*.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Nakon toga potrebno je pritisnuti dugme **U redu** ili **Otkaži** kako biste nastavili ili odustali od postupka.
+
+Nova *Tehnička kartica* biće kreirana sa *Revizijom* postavljenom na *0*.
+
+Po završetku postupka prikazuje se nova *Tehnička kartica*.
+
+### ![](/img/neutral/common/execute.png) Kreiraj novu reviziju
+
+Da biste kreirali novu *Reviziju* postojeće *Tehničke kartice*, potrebno je označiti željenu karticu i pritisnuti dugme **Kreiraj novu reviziju**.
+
+Nova *Revizija* može se kreirati samo za jednu *Tehničku karticu* istovremeno.
+
+Kreira se nova *Tehnička kartica* sa svim informacijama iz izvornog dokumenta, ali sa:
+
+- uvećanim indeksom *Revizije*;
+- *Datumom početka važenja* postavljenim na tekući datum.
+
+Izvorna *Tehnička kartica* prestaje da važi, a *Datum završetka važenja* automatski se postavlja na tekući datum.
+
+Po završetku postupka prikazuje se nova *Revizija Tehničke kartice*.
+
+### ![](/img/neutral/common/item-web.png) Kreiraj kontrolni plan
+
+Iz *Tehničke kartice* moguće je kreirati *Kontrolni plan*.
+
+Za to je potrebno označiti željenu *Tehničku karticu* i pritisnuti dugme **Kreiraj kontrolni plan**.
+
+Novi *Kontrolni plan* može se kreirati samo za jednu *Tehničku karticu* istovremeno.
+
+Prilikom kreiranja novog *Kontrolnog plana* kopiraju se samo *Svojstva* izvora koja imaju oznaku *Merenja koja treba izvršiti*, dok se ostale relevantne informacije preuzimaju iz *Tehničke kartice*.
+
+Novi plan se kreira sa:
+
+- indeksom *Revizije* postavljenim na *0*;
+- *Datumom početka važenja* postavljenim na tekući datum.
+
+Prikazaće se dijalog za unos sledećih podataka:
+
+> **Vrsta kontrolnog plana**: predstavlja *Vrstu kontrolnog plana* novog *Kontrolnog plana* (obavezno polje).
+>
+> **Broj**: redni broj novog *Kontrolnog plana* (obavezno polje), predložen na osnovu *Numeracije* povezane sa *Vrste kontrolnog plana* i tekućeg datuma.
+>
+> **Kreiraj održavanje sledljivosti**: označava da li će se zadržati veza/sledljivost između izvorne *Tehničke kartice* i novog *Kontrolnog plana*, u sekciji *Izvor kontrolnog plana* unutar *Podataka zaglavlja*.
+
+Nakon toga potrebno je pritisnuti dugme **U redu** ili **Otkaži** kako biste nastavili ili odustali od postupka.
+
+Po završetku postupka prikazuje se novi *Kontrolni plan*.
+
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu:
+
+[Funkcionalnosti, dugmad i polja](/docs/guide/common).
