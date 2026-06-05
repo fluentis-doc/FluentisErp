@@ -60,7 +60,7 @@ import Link from '@docusaurus/Link';
 - treba unijeti novo [*Tehničko uputstvo*](/docs/quality/item-control/data-sheets/data-sheet-management)   
 
  **Kontrolni planovi**:
-- treba definirati [*Vrstu kontrolnog plana*](/docs/configurations/tables/quality/item-control/control-plan-type) e relativa *Numerazione*   
+- treba definirati [*Vrstu kontrolnog plana*](/docs/configurations/tables/quality/item-control/control-plan-type) i povezana *Numerazione*   
 - treba definirati [*Vrstu testa*](/docs/configurations/tables/quality/item-control/test-type) koji će se koristiti u kartici *Planirani testovi* u [*Kontrolnim planovima*](/docs/quality/item-control/control-plans/control-plan-management)   
 - za olakšanje upravljanjem *Piani di controllo* postaviti i [*Parametre Kontrole artikala*](/docs/configurations/parameters/quality/item-control) u odjelu *Kontrolni planovi*   
 - treba unijeti novi [*Kontrolni plan*](/docs/quality/item-control/control-plans/control-plan-management)   
