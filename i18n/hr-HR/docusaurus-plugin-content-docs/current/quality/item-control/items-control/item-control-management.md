@@ -27,7 +27,7 @@ Standardno su dostupna izvješća o:
 
 Pritiskom na ovu tipku pohranjuju se sve izmijenjene informacije *Kontrola artikla* koje su prikazane.   
 
-### ![](/img/neutral/common/tick.png) Pretraživanje kontrole artikala
+### ![](/img/neutral/common/tick.png) Pretraživanje kontrolnih planova
 
 Pritiskom na ovu tipku pretražuje se *Kontrolni plan* za povezivanje s odabranim *Kontrolama artikla*. Ako za ispitivani *Kontrolni artikal*:   
 - postoje *Testovi* s već utvrđenim vrijednostima za te *Kontrole*, neće se provesti nikakvo pretraživanje;   
@@ -100,7 +100,7 @@ Popis *Kontrole artikala*, koji je samo za čitanje osim ako nije drugačije nav
 
 Područje koje sadrži reference na izvorni dokument varira ovisno o *Vrsti dokumenta*.
 Reference za svaku *Vrstu dokumenta* su:
-> **Primka**: *Dobavljač*, *Vrsta prmke*, *Broj primke*, *Datum primke* i *Redak*.   
+> **Primka**: *Dobavljač*, *Vrsta primke*, *Broj primke*, *Datum primke* i *Redak*.   
 > **Otpremnica**: *Dobavljač*, *Vrsta otpremnice*, *Broj dokumenta*, *Interni broj*, *Datum* i *Redak*.   
 > **Fakture**: *Dobavljač*, *Vrsta fakture*, *Broj dokumenta*, *Interni broj*, *Datum* i *Redak*.   
 > **Deklaracije o proizvodnji**: *Kupac*, *Vrsta narudžbe*, *Godina/Narudžba/Serija*, *Faza/Podfaza*, *Broj* i *Datum izvještavanja*.   
@@ -112,9 +112,9 @@ Reference za svaku *Vrstu dokumenta* su:
 ### Testovi
 Sadrži popis *Testova* za *Artikl*.
 Popis sadrži sljedeće informacije:   
-> **Redslijed**: ovo je slijed kojim se provodi *Test*.   
+> **Redoslijed**: ovo je slijed kojim se provodi *Test*.   
 > **Registrirano**: ovo označava da su za *Test* danas napravljeni skladišni zapisi za *Artikl* povezan s *Kontrolom*, za deklariranu *Potvrđenu količinu* i/ili *Nesukladnu količinu*, za navedeno *Skladište* i *Predloške*. Ove su informacije samo za čitanje.   
-> **Način testirannja**: ovo je šifra za *Test*.   
+> **Način testiranja**: ovo je šifra za *Test*.   
 > **Opis tipka testa**: ovo je opis *Testa*. Ove su informacije samo za čitanje.   
 > **Destruktivno ispitivanje**: ovo označava je li test destruktivni. Ove su informacije samo za čitanje.   
 > **Interni test**: ovo označava provodi li se *Test* interno ili u vanjskom laboratoriju.   
@@ -162,8 +162,8 @@ Popis sadrži sljedeće informacije:
 > **Opis rezultata**: slobodne bilješke o temi.   
 > **Ručni atribut ishoda**: označava je li *Rezultat* unesen ručno. Ove su informacije samo za čitanje.  
 >
-> **Potvrđena količina**: .   
-> **Nekonformna količina**: .   
+> **Potvrđena količina**
+> **Nekonformna količina**
 > **Skladište**: ovo je *skladište* iz kojeg se preuzimaju pregledani *artikli*.   
 > **Predložak istovara za sukladne artikle**: ovo je *Predložak istovara* koji se koristi za premještanje pregledanih *artikala* za koje se utvrdi da su *sukladni*.   
 > **Predložak istovara za nesukladne artikle**: ovo je *Predložak istovara* koji se koristi za premještanje pregledanih *artikala* za koje se utvrdi da su *nesukladni*.   
@@ -187,10 +187,10 @@ Popis sadrži sljedeće informacije:
 Podaci o: *Vrsti ispitivanja*, *Internom ispitivanju*, *Vanjskom laboratoriju*, *Kategoriji mjernog instrumenta*, *Mjernoj jedinici detektiranih vrijednosti*, *Vrsti vrijednosti*, *Vrsti ograničenja*, *Nominalnoj vrijednosti*, *Ograničenjima ...*, *Tolerancijama ...*, *%*, *Vrsti kontrole ispitivanja*, *Učestalosti* i *Broj detekcija* samo su za čitanje ako *Ispitivanje* dolazi iz *Plana kontrole*, inače se mogu izmijeniti kako bi se omogućilo ručno dodavanje daljnjih *Ispitivanja* koja nisu predviđena u *Planu kontrole*.
 
 
-#### Detekcija više vrijednosti
+#### Vrijednosti mjerenja
 Sadrži popis mjerenja provedenih za jedan *Test*.   
 Popis sadrži sljedeće informacije:   
-> **Redolijed**: ovo je slijed kojim se provodi detekcija.   
+> **Redoslijed**: ovo je slijed kojim se provodi detekcija.   
 > **Pozicija**: slobodne bilješke koje se odnose na lokaciju detekcije.   
 > **Otkrivena vrijednost**: ovo je vrijednost koju je detektirao operater.   
 > Ako je *Otkrivena vrijednost* *Brojčana*, prosjek *Otkrivenih vrijednosti* unesenih u ovaj popis za odabrani *Test* bit će umetnut u stupac *Prosječne otkrivene vrijednosti* odabranog *Testa*, što će odrediti njegov *Ishod*.   
@@ -228,7 +228,7 @@ Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-dat
 Nasljeđuju se od *Dodatnih podataka* povezanih s *Vrstom kontrole artikla*.   
 
 
-### Svojstva stakve
+### Svojstva stavke
 Moguće je unijeti neke [Dodatne podatke]/docs/configurations/utility/extra-data/extradata/new-extradata) za kontrolirani *artikl*.   
 Nasljeđuju se od *Dodatnih podataka* povezanih s *artiklom*.   
 
