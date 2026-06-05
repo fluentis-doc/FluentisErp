@@ -1,9 +1,9 @@
 ---
-title: Ispis tehničkih uputstva
+title: Ispis tehničkih uputstava
 sidebar_position: 1
 ---
 
-Filter za izvršenje izvještaja nalazi se na putanji **Kvaliteta > Kontrola artikla > Tehnička uputstva > Ispisi > Ispis tehničkih uputstva**. 
+Filter za izvršenje izvještaja nalazi se na putanji **Kvaliteta > Kontrola artikla > Tehnička uputstva > Ispisi > Ispis tehničkih uputstava**. 
 
 :::important Čemu služi
 Ovaj filter ispisa, za razliku od ispisa koji se može izvršiti preko filtera i upravljanja *Tehničkim uputstvima* koji omogućuje ispis općih informacija tehničke kartice, omogućuje odrediti za koji se konkretni *Artikl* žele ispisati informacije tehničke kartice (uputstva).
