@@ -1,24 +1,32 @@
 ---
-title: Ispis tehničkih uputstva
+title: Štampa tehničkih uputstava
 sidebar_position: 1
 ---
 
-Filter za izvršenje izvještaja nalazi se na putanji **Kvaliteta > Kontrola artikla > Tehnička uputstva > Ispisi > Ispis tehničkih uputstva**. 
+Filter za pokretanje izveštaja nalazi se na putanji **Kvalitet > Kontrola artikla > Tehnička uputstva > Izveštaji > Štampa tehničkih uputstava**.
 
 :::important Čemu služi
-Ovaj filter ispisa, za razliku od ispisa koji se može izvršiti preko filtera i upravljanja *Tehničkim uputstvima* koji omogućuje ispis općih informacija tehničke kartice, omogućuje odrediti za koji se konkretni *Artikl* žele ispisati informacije tehničke kartice (uputstva).
+Ovaj filter za štampu, za razliku od štampe koja se može pokrenuti iz filtera i upravljanja *Tehničkim uputstvima* i koja omogućava štampu opštih informacija tehničkog uputstva, omogućava definisanje konkretnog *Artikla* za koji se žele odštampati informacije iz tehničkog uputstva.
 :::
 
-Filter za izvršenje izvještaja omogućuje pretraživanje *Artikala* prisutnih u *Tehničkim uputstvima* radi njihovog ispisa.  
-Zadani izvještaj je **Tehnički list** - *Tehnička kartica Artikla* koja prikazuje popis *Svojstava* navedenih u *Tehničkom uputstvu*.  
+Filter za pokretanje izveštaja omogućava pretragu *Artikala* povezanih sa *Tehničkim uputstvima* radi njihove štampe.
+
+Podrazumevani izveštaj je **Tehnički list – Tehnička kartica artikla**, koji prikazuje listu *Svojstava* definisanih u *Tehničkom uputstvu*.
 
 ### ![](/img/neutral/common/search.png) Traži tehnička uputstva
-Forma se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali unutar prikaza *Tehničkih uputstva* (popis s lijeve strane).   
 
-Iz prikaza rezultata *Tehničkih uputstva* potrebno je odabrati jednu željenu *Tehničko uputstvo* kako bi se u prikazu rezultata *Artikala* (popis s desne strane) prikazao popis *Artikala* povezanih s njom.
+Forma se sastoji od dela za filtriranje i dela sa rezultatima.
 
-Iz prikaza rezultata *Artikala* potrebno je odabrati one *Artikle* koje želite ispisati.
+Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u listi *Tehničkih uputstava* (leva strana ekrana).
 
-Na dnu standardnog ispisa **Detalji o proizvodu** također se prikazuje *Izjava o odricanju odgovornosti* prema *Vrsti izjave* povezanoj s *Artiklom*. Ako nije navedeno, prikazat će se *Izjava o odricanju odgovornosti* prema *Vrsti izjave* navedena u *Vrsti izjave za ispis* ako artikl nema svoju.
+Iz liste rezultata *Tehničkih uputstava* potrebno je odabrati željeno *Tehničko uputstvo* kako bi se u listi *Artikala* (desna strana ekrana) prikazali svi *Artikli* povezani sa izabranim uputstvom.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Iz liste *Artikala* potrebno je odabrati one *Artikle* za koje želite izvršiti štampu.
+
+Na dnu standardnog izveštaja **Detalji o proizvodu** prikazuje se i *Izjava o odricanju od odgovornosti* na osnovu *Vrste izjave* povezane sa izabranim *Artiklom*.
+
+Ako za artikal nije definisana odgovarajuća *Vrsta izjave*, prikazaće se *Izjava o odricanju od odgovornosti* određena u polju *Vrsta izjave za štampu*.
+
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu:
+
+[Funkcionalnosti, dugmad i polja](/docs/guide/common).
