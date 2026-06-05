@@ -3,32 +3,42 @@ title: Izjava o odricanju od odgovornosti
 sidebar_position: 1
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikla > Tehnička uputstva > Procedure > Izjava o odricanju od odgovornosti**
+Upravljanje se nalazi na putanji **Kvalitet > Kontrola artikla > Tehnička uputstva > Procedure > Izjava o odricanju od odgovornosti**.
 
 :::important Čemu služi
-*Izjave o odricanju od odgovornosti* su klauzule u kojima se tvrtka ne smatra odgovornom, na primjer zbog nepravilne uporabe ili zbog štete prouzročene artiklom.  
-U izjavama o odricanju od odgovornosti mogu se definirati razlozi zbog kojih svojstva proizvoda prestaju vrijediti.
+*Izjave o odricanju od odgovornosti* predstavljaju klauzule kojima kompanija ograničava ili isključuje svoju odgovornost, na primer u slučajevima nepravilne upotrebe proizvoda ili štete nastale njegovom upotrebom.
+
+U okviru izjava o odricanju od odgovornosti moguće je definisati uslove i razloge zbog kojih određena svojstva proizvoda prestaju da važe.
 :::
 
-Primjer uporabe može se pronaći u ispisu **Proizvodne kartice**, koji se može izvršiti putem **Ispisa tehničke kartice**.
+Primer upotrebe može se videti u izveštaju **Kartica proizvoda**, koji je dostupan putem funkcije **Štampa tehničkog uputstva**.
 
-Filtriranje podataka omogućuje unos novih *Izjava o odricanju odgovornosti* ili pretraživanje već postojećih radi njihovog pregledavanja, izmjene ili brisanja.   
+Filter podataka omogućava unos novih *Izjava o odricanju od odgovornosti* ili pretragu postojećih radi pregleda, izmene ili brisanja.
 
-### ![](/img/neutral/common/search.png) Pretraga Izjava o odricanju od odgovornosti
+### ![](/img/neutral/common/search.png) Pretraga izjava o odricanju od odgovornosti
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u prikazu rezultata.  
+Forma se sastoji od dela za filtriranje i dela sa rezultatima.
 
-### ![](/img/neutral/common/new.png) Unos Izjava o odricanju od odgovornosti
+Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-Za unos novih informacija potrebno je pritisnuti tipku **Novo**.  
+### ![](/img/neutral/common/new.png) Unos izjava o odricanju od odgovornosti
 
-*Specifična polja*:   
+Za unos nove *Izjave o odricanju od odgovornosti* potrebno je pritisnuti dugme **Novo**.
 
-> **Redoslijed**: redoslijed prikaza *Izjava o neodgovornosti*.  
-> **Tip**: *Tip izjave* koji se koristi za grupiranje *Izjava* za ispis.  
-> **Datum početka valjanosti**: datum od kojeg je *Izjava* važeća i primjenjiva.  
-> **Datum završetka valjanosti**: datum od kojeg *Izjava* prestaje biti važeća i primjenjiva.  
-> **Opis**: opis *Izjave*.  
-> **Bilješke**: slobodne napomene.  
+### Specifična polja
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+> **Redosled**: redosled prikaza *Izjava o odricanju od odgovornosti*.
+>
+> **Vrsta**: *Vrsta izjave* koja se koristi za grupisanje *Izjava* prilikom štampe.
+>
+> **Datum početka važenja**: datum od kojeg je *Izjava* važeća i primenljiva.
+>
+> **Datum završetka važenja**: datum od kojeg *Izjava* prestaje da bude važeća i primenljiva.
+>
+> **Opis**: opis *Izjave*.
+>
+> **Napomene**: slobodne beleške.
+
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu:
+
+[Funkcionalnosti, dugmad i polja](/docs/guide/common).
