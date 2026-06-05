@@ -8,8 +8,8 @@ Upravljanje se može pronaći na putanji **Kvaliteta > Kontrole artikala > Kontr
 
 :::important Čemu služi
 Kontrolni planovi katalogiziraju sva planirana ispitivanja, provjere, potrebna mjerenja i vrijednosti koje treba dobiti kako bi se osiguralo da materijali i povezani proizvodi budu unutar granica potrebnih svojstava.   
-Pomoću kontrolnih planova moge se unaprijed definirati provjere koje će se provoditi tijekom životnog ciklusa artikla: od provjera ulaznih materijala, povrata od podizvođača do provjera tijekom proizvodnog ciklusa artikla: prije, tijekom i nakon stvaranja proizvoda.
-ontrolni planovi, poput tehničkih uputstava, mogu se prilagoditi za svakog klijenta i/ili dobavljača. Ovaj dokument također upravlja revizijama i sljedivošću između željenih kontrolnih planova.   
+Pomoću kontrolnih planova može se unaprijed definirati provjere koje će se provoditi tijekom životnog ciklusa artikla: od provjera ulaznih materijala, povrata od podizvođača do provjera tijekom proizvodnog ciklusa artikla: prije, tijekom i nakon stvaranja proizvoda.
+Kontrolni planovi, poput tehničkih uputstava, mogu se prilagoditi za svakog klijenta i/ili dobavljača. Ovaj dokument također upravlja revizijama i sljedivošću između željenih kontrolnih planova.   
 Za svako planirano ispitivanje moguće je naznačiti: provodi li se ispitivanje interno ili ga provode treće strane, kategoriju i mjerni instrument koji će se koristiti, vrste potrebnih vrijednosti (Da/Ne ili Numeričko), nominalnu vrijednost, donju i gornju granicu koje se mogu odrediti kao postotak ili kao apsolutna vrijednost, broj mjerenja koja treba provesti i s kojom učestalošću.   
 
 Neki primjeri mogućih vrsta kontrolnih planova: Provjere prihvatljivosti, Provjere prihvatljivosti za ključne dobavljače, Provjere proizvodnje, Završne inspekcije.   
@@ -23,7 +23,7 @@ Dostupno je standardno izvještavanje za **Kontrolne planove**.
 
 ### ![](/img/neutral/common/save.png) Spremi
 
-Pritiskom na ovu tipku spremaju se sve promijenjene informacije prikazanog *Kontrolnoh plana*.   
+Pritiskom na ovu tipku spremaju se sve promijenjene informacije prikazanog *Kontrolnog plana*.   
 
 
 ### ![](/img/neutral/common/duplicate.png) Dupliciraj kontrolni plan
@@ -80,14 +80,14 @@ Informacije kojima se može upravljati su:
 > **Godina/Broj**: to su *Godina* i *Broj* *Kontrolnog plana* (obavezni podaci).   
 > Pri unosu novog *Kontrolnog plana*, *Godina* i *Broj* se predlažu na temelju današnjeg datuma i *Numeracije* povezane s *Vrstom kontrolnog plana*.   
 >
-> **Rev.**: to je Revizija *Kontrolnog plana* (obavezan podatak).   
+> **Revizija**: to je Revizija *Kontrolnog plana* (obavezan podatak).   
 Podatak se može mijenjati ako se stvara novi *Kontrolni plan*, inače je samo za čitanje; može se mijenjati na način vođen sustavom pomoću tipke *Stvori novu reviziju* koja povećava prethodnu vrijednost *Revizije* za jednu jedinicu.      
 >
 > **Opis**: to je opis *Kontrolnog plana*.   
 > **Za kupca/dobavljača**: to je naziv tvrtke *Klijenta* ili *Dobavljača*. *Planirani testovi* su prilagođeni za *Klijenta* ili *Dobavljača* i *Povezane artikle*.   
-> **Napomene klijenta/dobavljača**: slobodne napomene za klijenta/dobavljača.   
+> **Bilješke klijenta/dobavljača**: slobodne napomene za klijenta/dobavljača.   
 >
-> **Specifikacija klijenta**: proširenje (expander) gdje je moguće unijeti:     
+> **Specifikacija kupca**: proširenje (expander) gdje je moguće unijeti:     
 >
 >> **Određeni datum**: to je datum specifikacije primljene od klijenta.   
 >> **Referenca**: slobodne napomene o referenci na specifikaciju primljenu od klijenta koja zahtijeva posebne kontrole koje treba izvršiti za *Povezane artikle*.   
@@ -112,9 +112,9 @@ Podatak se može mijenjati ako se stvara novi *Kontrolni plan*, inače je samo z
 >> Podatak se može mijenjati ako je *Kontrolni plan* još uvijek na snazi.  
 
 
-### Atributi kontrolnog plana
+### Atributi plana upravljanja
 Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *Kontrolni plan*.   
-Naslijeđuju se iz *Dodatnih podataka* (*Extra data*) povezanih s *Vrstom kontrolnog plana*.   
+Nasljeđuju se iz *Dodatnih podataka* (*Extra data*) povezanih s *Vrstom kontrolnog plana*.   
 
 
 ### Planiran test
@@ -124,7 +124,7 @@ Popis se sastoji od sljedećih informacija:
 > **Vrsta testa**: to je šifra *Planiranog testa*.   
 > **Opis tipa testa**: to je opis *Planiranog testa*. Podatak je samo za čitanje.   
 > **Opis**: to je opis *Planiranog testa* koji se može popuniti.   
-> **Referenca standardnog kontrolnog plana**: to je opisno polje koje sadrži reference na globalno priznate kodove testova.   
+> **Referenca standardnog plana kontrole**: to je opisno polje koje sadrži reference na globalno priznate kodove testova.   
 > **Interni test**: označava prikuplja li se *Test* interno ili u vanjskom laboratoriju.   
 > **Vanjski laboratorij**: to je naziv tvrtke *Dobavljača* koji će izvršiti test. Podatak je samo za čitanje ako je naveden *Interni test*.   
 > **Kategorija mjernog instrumenta**: to je *Kategorija mjernog instrumenta* koji se koristi za bilježenje *Vrijednosti* izraženih u *Testu*.   
