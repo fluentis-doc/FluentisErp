@@ -1,9 +1,9 @@
 ---
-title: Unesite više stavki
+title: Masovni unos artikala
 sidebar_position: 2
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikla > Kontrolni planovi > Procedure > Unesite više stavki**.   
+Upravljanje se nalazi na putanji **Kvaliteta > Kontrola artikla > Kontrolni planovi > Procedure > Masovni unos artikala**.   
 
 :::important Čemu služi
 Ova procedura omogućuje skupno dodjeljivanje *Artikala* *Kontrolnim planovima*.   
@@ -30,11 +30,11 @@ Pritiskom na tipku automatski se pozicionira na karticu **Kontrolni planovi**.
 ## Kontrolni planovi   
 
 Na ovoj kartici moguće je pretraživati i odabrati *Kontrolne planove* u koje se žele skupno unijeti *Artikli* koji se mogu odabrati na istoimenoj kartici. Radno područje sastoji se od područja filtra i područja rezultata.   
-Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Pretraži kontrolne planove** kako bi se prikazali rezultati unutar tablice rezultata.       
+Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži kontrolne planove** kako bi se prikazali rezultati unutar tablice rezultata.       
 
 *Specifične tipke*:   
 
-### ![](/img/neutral/common/search.png) Pretraži kontrolne planove
+### ![](/img/neutral/common/search.png) Traži kontrolne planove
 Na temelju postavljenog filtra prikazuju se rezultati unutar tablice rezultata.   
 ### ![](/img/neutral/common/duplicate.png) Odaberite artikle
 Pritiskom na tipku automatski se pozicionira na karticu **Artikli**.   
