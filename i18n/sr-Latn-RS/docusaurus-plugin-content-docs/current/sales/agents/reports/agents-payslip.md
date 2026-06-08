@@ -1,14 +1,22 @@
 ---
-title: Isplatnice trgovačkih predstavnika
+title: Isplatne liste trgovačkih predstavnika
 sidebar_position: 1
 ---
+Forma se otvara putem menija **Prodaja > Trgovački predstavnici > Izveštaji > Isplatne liste trgovačkih predstavnika**.
 
-Obrazac se otvara putem putanje *Prodaje > Predstavnici > Namirenja predstavnika > Ispisi*.
+Izveštaj omogućava izdvajanje provizija dodeljenih agentima iz prodajnih dokumenata, nezavisno od kriterijuma prema kojem agent ostvaruje pravo na proviziju.
 
-Ovaj ispis omogućuje izvlačenje provizija iz prodajnih dokumenata koje su unesene za različite predstavnike, neovisno o kriteriju dospijeća provizija za predstavnika.
+U sekciji **Ispis provizija za** bira se vrsta dokumenta koja će biti uzeta u obzir:
 
-U odjeljku **Ispiši proviziju od** se vrši odabir tipa dokumenta koji će se uzeti u obzir: narudžbenica kupca (naručeno), otpremnica (isporučeno) ili račun (prodano). Ovisno o ovoj opciji, filter **Tip dokumenta** će se promijeniti.
+- narudžbina kupca (*naručeno*);
+- otpremnica (*isporučeno*);
+- račun (*prodato*).
 
-Treba napomenuti opciju ispisa s detaljima po stavkama: ova verzija izvješća može biti korisna za provjeru ispravnosti provizija koje je sustav unio te za otkrivanje pogrešaka u postavkama agenata u evidenciji.
+U zavisnosti od izabrane opcije, promeniće se i filter **Vrsta dokumenta**.
 
-Više detalja o ovom temu možete pronaći u člancima: [Pretražite podatke u obrascima samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/common/operations-with-data/reports) 
+Posebno treba istaći mogućnost ispisa sa detaljima po artiklu.
+
+Više informacija o ovoj temi možete pronaći u člancima:
+
+- [Pretraga podataka u formama samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms)
+- [Pregled i štampa izveštaja](/docs/guide/common/operations-with-data/reports)
