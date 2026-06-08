@@ -1,35 +1,35 @@
 ---
-title: POS računovodstvo
+title: Knjiženje POS-a
 sidebar_position: 1
 ---
 
-Procedura se otvara putem putanje **Prodaja > POS > Knjiženje > POS računovodstvo**. 
+Procedura se otvara putem putanje **Prodaja > Maloprodajno mjesto > Knjiženje > Knjiženje POS-a**. 
 
-Da bi se POS knjižio, mora zadovoljiti niz uvjeta: u njegovom zaglavlju mora biti postavljena oznaka *Ispisano*, a tip POS-a mora sadržavati opći uzrok za knjiženje.
+Kako bi se POS dokumenti knjižili, mora se zadovoljiti niz uvjeta: u njegovom zaglavlju mora biti postavljena oznaka *Ispisano*, a tip POS-a mora sadržavati opći predložak za knjiženje.
 
 ### Knjiženje
 
-Formular u gornjem dijelu sadrži filtre za pretraživanje kako bi se pronašli i prikazali POS-ovi za knjiženje u mreži.
+Formular u gornjem dijelu sadrži filtre za pretraživanje kako bi se pronašli i prikazali dokumenti za knjiženje.
 
-Na dnu formulara nalaze se određeni parametri za upravljanje knjiženjem:
+Na dnu forme nalaze se određeni parametri za upravljanje knjiženjem:
 
-**Datum unosa jednak je datumu dokumenta**: ovaj flag zahtijeva knjiženje svakog pojedinačnog računa na njegov datum izdavanja.
+**Datum unosa jednak je datumu dokumenta**: ova postavka zahtijeva knjiženje svakog pojedinačnog računa na njegov datum izdavanja.
 
 Ako je zastavica onemogućena, aktivira se sljedeće polje, **Datum unosa**, unutar kojeg možete postaviti fiksni datum knjiženja;
 
 *Posebni gumbi*: 
-> **Traži**: pretražuje POS-ove; prikazuju se svi ispisani i neknjiženi POS-ovi.    
+> **Traži**: pretražuje POS-ove; prikazuju se svi ispisani i ne knjiženi dokumenti.    
 > **Knjiženje**: izvršava knjiženje odabranih POS-ova prema definiranim postavkama.  
 
-### Prethodne 
+### Prethodni 
 
-Na formularu se prikazuje popis izvršenih knjiženja kako bi se omogućilo pregledavanje i po potrebi poništavanje putem odgovarajućih gumba.
+U formi se prikazuje popis izvršenih knjiženja kako bi se omogućilo pregledavanje i po potrebi poništavanje putem odgovarajućih gumba.
 
 Poništenje je moguće samo ako je razdoblje još uvijek izmjenjivo.
 
-**POS računovodstvo**: mreža s detaljima izvršenih operacija. Popunjava se nakon postupka pretraživanja i mogu se odabrati operacije na kojima će se primijeniti funkcije u vrpci.
+**Knjiženje**: pregled s detaljima izvršenih operacija. Popunjava se nakon postupka pretraživanja i mogu se odabrati operacije na kojima će se primijeniti funkcije u gornjem meniju.
 
-Podaci u donjim mrežama, **Prodajno mjesto** i **Zapis konta** odgovaraju odabranoj operaciji u gornjoj mreži. Dvostruki klik na odjeljku točaka prodaje/registrovanja omogućit će vam pregled točke prodaje/registrovanja.
+Podaci u donjim pregledima, **Dokumenti** i **Zapis glavne knjige** odgovaraju odabranoj liniji u gornjoj mreži. Dvostruki klik na redak omogućit će pregled knjiženja
 
 *Posebni gumbi*:
 > **Traži**: traži popis izvršenih knjiženja.  
