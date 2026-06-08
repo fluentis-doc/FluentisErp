@@ -73,12 +73,14 @@ Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-dat
 :::tip Metoda korištena za izračun   
 *Metoda korištena za izračun:* **Ukupno izračunati bodovi**, **Preostali bonus**, **Bodovi %** i **Ocjena**.   
 - Razmatra se svaki pojedini redak *Kvara* *Nesukladnosti* unesen u procijenjenom razdoblju, i dodijeljen *Dobavljaču* u procjeni.   
-- Za svaki redak *Uočenog kvara* množi se svaki pojedini *IQF*: *Uočenog kvara*, *Stvarnog uzroka* ili *Pretpostavljenog uzroka* (u nedostatku povezanog *Stvarnog uzroka*), *Predloženog rješenja* i *Poduzete odluke*. Ako jedan od tih podataka nije unesen, *IQF* je jednak **1,0**. Primjer:   
+- Za svaki redak *Uočenog kvara* množi se svaki pojedini *IQF*: *Uočenog kvara*, *Stvarnog uzroka* ili *Pretpostavljenog uzroka* (u nedostatku povezanog *Stvarnog uzroka*), *Predloženog rješenja* i *Poduzete odluke*. Ako jedan od tih podataka nije unesen, *IQF* je jednak **1,0**. 
+Primjer:   
   - redak 1: *IQF Uočenog kvara* = **5,1**, *IQF Stvarnog uzroka* = **1,5**, *IQF Predloženo rješenje* = **1,3** i *IQF Poduzete odluke* = **2,1**;   
   Ukupno za redak iznosi: **5,1 * 1,5 * 1,3 * 2,1 = 20,8845** = *Ukupno Redak 1*.   
   - redak 2: *IQF Uočenog kvara* = **2,1**, *IQF Pretpostavljenog uzroka* = **4,2** (*Stvarni uzrok* nije unesen), *Predloženo rješenje* nije uneseno, stoga *IQF* = **1,0** i *IQF Poduzete odluke* = **1,7**;   
   Ukupno za redak iznosi: **2,1 * 4,2 * 1,0 * 1,7 = 14,994** = *Ukupno Redak 2*.   
-- Ukupan izračunati rezultat za pojedinačni redak zbraja se s ostalim razmatranim recima koji imaju istu *Ozbiljnost*. Zbroj svih rezultata po retku je *Ukupno izračunati rezultat* za tu *Ozbiljnost*. Primjer:   
+- Ukupan izračunati rezultat za pojedinačni redak zbraja se s ostalim razmatranim recima koji imaju istu *Ozbiljnost*. Zbroj svih rezultata po retku je *Ukupno izračunati rezultat* za tu *Ozbiljnost*. 
+Primjer:   
   - **Ukupno izračunato bodova** = *Ukupno Redak 1* + *Ukupno Redak 2* = **20,8845 + 14,994 = 35,8785**.   
 - Za izračun *Preostalog bonusa* uzimamo početni *Bonus* *Dobavljača* jednak **500**. Dakle:   
     - **Preostali bonus** = **Bonus** - zbroj **Ukupno izračunatih bodova** za svaku *Ozbiljnost* = **500 - 35,8785 = 464,1215**.   
