@@ -35,6 +35,3 @@ import Link from '@docusaurus/Link';
 - morate se unijeti barem jedna nova [*Nesukladnost dobavljača*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) s datumom uključenim u razdoblje koje se želi procijeniti   
 - mora se razraditi [*Periodična procjena nesukladnosti*](/docs/quality/vendor-rating/vendor-rating-on-nc)   
 
-
-## Povezanost s drugim modulima
-Modul *Dokumenti vanjskog podrijetla* nije povezan ni s jednim drugim modulom.   
