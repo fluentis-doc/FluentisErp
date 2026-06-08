@@ -3,12 +3,18 @@ title: Isplatnice trgovačkih predstavnika
 sidebar_position: 1
 ---
 
-Obrazac se otvara putem putanje *Prodaje > Predstavnici > Namirenja predstavnika > Ispisi*.
+Forma se otvara putem izbornika Prodaja > Trgovački predstavnici > Izvještaji > Isplatnice trgovačkih predstavnika.
 
-Ovaj ispis omogućuje izvlačenje provizija iz prodajnih dokumenata koje su unesene za različite predstavnike, neovisno o kriteriju dospijeća provizija za predstavnika.
+Ispis omogućuje izdvajanje provizija dodijeljenih agentima iz prodajnih dokumenata, neovisno o kriteriju prema kojem agent stječe pravo na proviziju.
 
-U odjeljku **Ispiši proviziju od** se vrši odabir tipa dokumenta koji će se uzeti u obzir: narudžbenica kupca (naručeno), otpremnica (isporučeno) ili račun (prodano). Ovisno o ovoj opciji, filter **Tip dokumenta** će se promijeniti.
+U sekciji Ispis provizija za odabire se vrsta dokumenta koja će se uzeti u obzir:
 
-Treba napomenuti opciju ispisa s detaljima po stavkama: ova verzija izvješća može biti korisna za provjeru ispravnosti provizija koje je sustav unio te za otkrivanje pogrešaka u postavkama agenata u evidenciji.
+- narudžba kupca (naručeno),
+- dostavnica (primka) (isporučeno),
+- račun (prodano).
+
+Ovisno o odabranoj opciji, promijenit će se i filtar Vrsta dokumenta.
+
+Posebno treba istaknuti opciju ispisa s detaljima po artiklu.
 
 Više detalja o ovom temu možete pronaći u člancima: [Pretražite podatke u obrascima samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/common/operations-with-data/reports) 
