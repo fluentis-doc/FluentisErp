@@ -36,7 +36,8 @@ Nella ribbon bar sono presenti i seguenti bottoni:
 
 **Conferma periodo**: cliccando sul bottone verrà aperta la videata per inserire il progetto di riferimento, la categoria attività ed il flag per Creare un periodo ferie nella dichiarazione attività con i dati appena inseriti.
 Alla risorsa di riferimento è possibile inviare una notifica via email. 
-Al termine della procedura abiliterà il flag "Gestito"
+Al termine della procedura abiliterà il flag "Gestito".
+La categoria attività e la wbs di progetto, se impostate nella tabella di [causali di assenza](/docs/configurations/tables/project-management/missing-reason), verranno proposti di default. 
 
 **Rollback del periodo**: permette di eliminare le attività generate dalla conferma periodo e di ripristinare il flag Gestito. 
 

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 I dati da inserire sono:
 
-**Tipo intervento**: contiene la [tipologia di Intervento](/docs/configurations/tables/project-management/intervention-type/);
+**Tipo intervento**: contiene la [tipologia di Intervento](/docs/configurations/tables/project-management/intervention-type);
 
 **Cliente**: contiene il cliente destinatario dell’intervento;
 
