@@ -1,6 +1,6 @@
 ---
 title: 🔧 Patch Notes v706
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 ### Patch 706.1-0018 - 31/10/2024
