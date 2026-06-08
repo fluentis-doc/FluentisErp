@@ -3,6 +3,36 @@ title: Patch notes Versione 803
 sidebar_position: 1
 ---
 
+### Patch 803.0023 - 05/06/2026
+
+> -	FI - Creazione registrazione contabile con analitica: revisione della gestione del campo "Descrizione centri di costo", ora impostato come sola lettura. Modifications inside posting form analitic tab can have impact on profiles. (Rif. #TT01625/26).
+> -	FI - revisione gestione pulsante creazione file Intrastat da ricerca intra1 (#TT02355/26)
+> -	FI - revisione proposta sottoconti in griglia centri di costo (#TT02420/26)
+> -	FI - stampa Riepilogo movimenti contabili con contropartite, revisione repository method (#TT02356/26)
+> -	MES - Segnalazioni: Permesso rollback registrazione a seguito di rollback trasferimento. (#TT01145/26)
+> -	MS - AFCS. In caso di mancanza materiale durante la lavorazione di un task, il messaggio di warning ora specifica qual è l'articolo mancante. (#TT02440/26)
+> -	MS - Capacità Centri di lavoro: corretta l’anomalia sulla proposta del periodo visualizzato, diversa dal filtro impostato, allo spostamento di una fase tra due centri di lavoro. (#TT02289/26)
+> -	MS - Ordini pianificati - L’esecuzione delle procedure di Pianificazione generale, M.R.P., la funzionalità di Completamento dati ordine e la variazione del Tipo di approvvigionamento dell’Ordine pianificato, propongono i magazzini e le causali di versamento e consumo sulla base Tipo di approvvigionamento: Acquisto e Produzione dai Parametri degli Ordini di produzione, Conto lavoro dai Parametri di Conto lavoro. (#TT02266/26, #TT02422/26)
+> -	MS - Rilascio ordini pianificati: risolta l'anomalia che, al rilascio di Ordini pianificati di produzione, veniva generata una exception. (#TT02448/26)
+> -	PM - Aggiornato report Dettaglio interventi - introdotto totale imponibile e migliorata gestione label colonne.
+> -	PR - revisione gestione griglia Gestione fidi in caso di applicazione filtri (#TT02250/26)
+> -	PR - riconciliazione CC, revisione import file di testo Cbi per gestione conti bancari diversi (#TT02332/26)
+> -	SCM - Corretta stampa diretta in registro sdi documenti acquisto in entrata (#TT02149/26)
+> -	SCM - Creazione Automatica Ordini - Ordini clienti: campo “Tipo fatturato acquisto” popolato in base ad anagrafica articolo (#TT02364/26)
+> -	SCM - Creazione automatica ordini fornitori - Ordini clienti: generazione di ordine fornitore con flag abilitato “Esplosione livello da struttura distinta” per articoli senza Distinta Base (#TT2439-26).
+> -	SCM - Dettaglio righe Ordine: Aggiunto filtro per ordini e righe articolo non evasi n(#TT1875/26)
+> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio. (#TT2207/26, 2439/26)
+> -	SD - Gestione lotti in fase di picking collegato a ordine cliente: Se, durante il picking generato dall’evasione di un ordine cliente, viene rimosso il lotto precedentemente prenotato, tale lotto viene automaticamente eliminato anche dall’ordine cliente. Questo comportamento consente di liberare correttamente la prenotazione, evitando che rimanga impegnata sull’ordine. (#TT1700/26)
+> -	SD - Sincronizzazione ordine cliente e progetto creato automaticamente dall’ordine: Nel caso in cui venga modificato un ordine collegato a un progetto già utilizzato in altri moduli, viene visualizzato un messaggio informativo. Il messaggio segnala che le modifiche apportate all’ordine non saranno replicate nel progetto, in quanto quest’ultimo risulta già referenziato, indicando anche il modulo coinvolto. (#TT1828/26)
+> -	SH - Fix app lock when grid line number changed (TT01394/26)
+> -	TR - Corretto filtro di ricerca della data scadenza in Effetti. Modifications inside effetti form can have impact on profiles. (#TT02491/26)
+> -	WEB - aprendo documenti di società diverse in contemporanea, veniva visualizzata un'eccezione (#TT02446/26)
+> -	WM - Gestione UDC: Abilitato inserimento/modifica extra data per UDC caricate. (#TT01258/26)
+> -	WM - Piani di Carico: Calcolo disponibilità ad oggi se data consegna nel passato in creazione piano. (#TT02464/26)
+> -	WM - Piani di Carico: Corretto calcolo disponibilità in presenza di varianti articolo in creazione piano. Modifications for LoadPlan form can have impact on profiles. (#TT01960/26)
+> -	WM - Registrazioni di Magazzino: Inibita modifica/inserimento per date non successive ultima chiusura. (#TT02429/26)
+> -	WMS - Ricevimento Merce - UDC create sempre con stesso anno dell’ordine fornitore. (#TT00077/26)
+
 ### Patch 803.0022 - 28/05/2026
 
 > -	CPQ - Aggiunte alcune funzionalità per la generazione dele BOM d configuratore e ottimizzate le funzione di selezione risposte e creazione configurazioni.  
