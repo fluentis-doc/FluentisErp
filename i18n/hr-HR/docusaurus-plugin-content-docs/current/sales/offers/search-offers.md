@@ -5,11 +5,11 @@ sidebar_position: 2
 
 Obrazac se otvara putem putanje **Prodaja > Ponude > Pretraživanje ponuda**.
 
-Omogućuje pretraživanje svih dokumenata radi pregleda, uređivanja, brisanja ili unosa novog dokumenta. Prozor se sastoji od područja za filtriranje i rezultatne mreže.
+Omogućuje pretraživanje svih dokumenata radi pregleda, uređivanja, brisanja ili unosa novog dokumenta. Prozor se sastoji od područja za filtriranje i prikaza rezultata.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** u *traci za vrpcu* kako biste vidjeli rezultate unutar rezultatne mreže.
+Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** u *traci za vrpcu* kako biste vidjeli rezultate unutar prikaza rezultata.
 
-Za otvaranje pojedinosti o dokumentu, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gumb **Uredi** (omogućuje ulazak u pojedinosti i uređivanje) ili na gumb **Pregled** (omogućuje ulazak u pojedinosti, ali bez mogućnosti uređivanja).
+Za otvaranje pojedinosti o dokumentu, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u pojedinosti i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u pojedinosti, ali bez mogućnosti uređivanja).
 
 *Vidi također*:     
 [Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)              
