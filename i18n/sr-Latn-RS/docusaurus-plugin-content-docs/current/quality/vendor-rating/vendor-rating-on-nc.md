@@ -1,91 +1,152 @@
 ---
-title: Periodične procjene nesukladnosti
+title: Periodične procene neusaglašenosti
 sidebar_position: 3
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Kvalifikacije dobavljača > Periodične procjene nesukladnosti**.  
-
+Upravljanje se nalazi na putanji **Kvalitet > Kvalifikacija dobavljača > Periodične procene neusaglašenosti**.
 
 :::important Čemu služi
-*Periodične procjene nesukladnosti* jedna su od metoda ocjenjivanja dobavljača koje su dostupne za njihovo ocjenjivanje.   
-Ova se objektivna metoda temelji na težini neispravnosti dodijeljenima *Nesukladnostima dobavljaču* i uobičajeno se koristi za periodične procjene.   
+*Periodične procene neusaglašenosti* predstavljaju jedan od dostupnih metoda ocenjivanja dobavljača.
 
-Upravljanje omogućuje unos novih *Periodičnih procjena nesukladnosti* ili pretraživanje već postojećih za pregled.   
+Ova objektivna metoda zasniva se na težini neusaglašenosti dodeljenih *Neusaglašenostima dobavljača* i najčešće se koristi za periodične procene dobavljača.
+
+Upravljanje omogućava kreiranje novih *Periodičnih procena neusaglašenosti* ili pretragu postojećih procena radi pregleda rezultata.
 :::
 
+## Dugmad za upravljanje
 
-## Tipke za upravljanje
+### ![](/img/neutral/common/search.png) Pretraga periodičnih procena neusaglašenosti
 
+Forma se sastoji od dela za filtriranje i dela sa rezultatima.
 
-### ![](/img/neutral/common/search.png) Pretraga Periodičnih procjena nesukladnosti
-
-Obrazac se sastoji od područja filtra i područja rezultata. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na tipku **Traži** kako bi se prikazali podaci unutar tablice rezultata.   
-
+Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Traži** kako bi se podaci prikazali u tabeli rezultata.
 
 ### ![](/img/neutral/common/accountant-search.png) Periodična kvalifikacija
 
-Za izvršavanje procjene potrebno je pritisnuti tipku **Periodična kvalifikacija**.   
-Prikazuje se zahtjev za:   
-> **Datum završetka procjene**: predložen na današnji datum, to je datum od kojeg se ocjenjuje svaki pojedini *Dobavljač*, idući unatrag, za razdoblje koje mu je dodijeljeno.   
-> **Tip procjene**: to je vrsta dodijeljena procjeni svakog pojedinog *Dobavljača*.   
-> Predlaže se *Vrsta procjene* navedena u *Parametrima kvalifikacije dobavljača*.   
-Obje informacije su obvezne.   
+Za izvršavanje procene potrebno je kliknuti na dugme **Periodična kvalifikacija**.
 
+Prikazuje se forma za unos sledećih podataka:
 
+> **Datum završetka procene**: predlaže se tekući datum i predstavlja datum od kojeg se za svakog *Dobavljača* unazad posmatra definisani period procene.
+>
+> **Vrsta procene**: vrsta procene koja će biti dodeljena svakom obrađenom *Dobavljaču*.
+>
+> Predlaže se *Vrsta procene* definisana u *Parametrima kvalifikacije dobavljača*.
 
-## Upravljani podaci
+Oba podatka su obavezna.
 
+## Podaci kojima se upravlja
 
-### Periodične procjene nesukladnosti
+### Periodične procene neusaglašenosti
 
-To je popis gdje se prikazuju glavne informacije o *Periodičnim procjenama nesukladnosti*.   
-Popis se sastoji od sljedećih informacija:   
-> **Od datuma procjene**: početni je datum razdoblja procjene.   
-> **Do datuma procjene**: krajnji je datum razdoblja procjene.   
-> **Dobavljač**: naziv je tvrtke ocijenjenog *Dobavljača*.   
-> **Bonus**: početna je vrijednost *Bonusa* dodijeljenog *Dobavljaču*.   
-> **Preostali bonus**: konačna je vrijednost *Bonusa* nakon izvršene procjene.   
-> **Bodovi %**: postotna je vrijednost između *Preostalog bonusa* i *Početnog bonusa*.   
-> **Procjena**: *Procjena* je dodijeljena *Dobavljaču* na temelju postignutog *Bodovi %*.   
-> Ćelija je obojena *pozadinskom* i *tekstualnom* bojom predviđenom u tablici *Procjena dobavljača*.   
-> Ako je dodijeljena *Procjena* povezana s *Procjenom dobavljača* s *Automatskom suspenzijom*, ocijenjeni *Dobavljač* bit će *Suspendiran* od *Datuma procjene*.   
-> Oporavak suspenzije mora se izvršiti ručno od strane nadležne *Poslovne funkcije*.   
-> **Napomene**: slobodne bilješke.   
-Sve su informacije samo za čitanje, osim Bilješki.   
+Ova lista prikazuje osnovne informacije o *Periodičnim procenama neusaglašenosti*.
 
+Sastoji se od sledećih podataka:
 
-### Vrijednosti nesukladnosti u periodu
+> **Od datuma procene**: početni datum perioda procene.
+>
+> **Do datuma procene**: završni datum perioda procene.
+>
+> **Dobavljač**: naziv ocenjenog *Dobavljača*.
+>
+> **Bonus**: početna vrednost *Bonusa* dodeljena *Dobavljaču*.
+>
+> **Preostali bonus**: konačna vrednost *Bonusa* nakon izvršene procene.
+>
+> **Bodovi %**: procentualna vrednost izračunata na osnovu odnosa *Preostalog bonusa* i početnog *Bonusa*.
+>
+> **Procena**: ocena dodeljena *Dobavljaču* na osnovu ostvarenog procenta bodova.
+>
+> Polje se prikazuje bojama pozadine i teksta definisanim u tabeli *Ocene dobavljača*.
+>
+> Ukoliko je dodeljena *Procena* povezana sa opcijom *Automatska suspenzija*, ocenjeni *Dobavljač* biće automatski označen kao *Suspendovan* počev od datuma procene.
+>
+> Uklanjanje suspenzije mora izvršiti odgovorna *Poslovna funkcija*.
+>
+> **Napomene**: slobodne beleške.
 
-To je popis različitih *Ozbiljnosti* utvrđenih u procijenjenom razdoblju.   
-Popis se sastoji od sljedećih informacija:   
-> **Ozbiljnost**: to je šifra *Ozbiljnosti*.   
-> **Opis ozbiljnosti**: opis *Ozbiljnosti*.   
-> **Broj**: broj je prebrojanih *Ozbiljnosti*.   
-> **Bodovi ozbiljnosti**: *Bodovi izračuna indeksa kvalifikacije dobavljača* povezani su s *Ozbiljnošću*.   
-> **Ukupni izračunati bodovi**: zbroj je svih *Bodova izračuna indeksa kvalifikacije dobavljača* (**IQF**) i međusobno pomnoženih.   
+Svi podaci su samo za čitanje, osim polja **Napomene**.
 
+### Vrednosti neusaglašenosti u periodu
+
+Ova lista prikazuje različite nivoe *Ozbiljnosti* evidentirane tokom procenjivanog perioda.
+
+Sastoji se od sledećih podataka:
+
+> **Ozbiljnost**: šifra *Ozbiljnosti*.
+>
+> **Opis ozbiljnosti**: opis *Ozbiljnosti*.
+>
+> **Broj**: broj evidentiranih pojava određene *Ozbiljnosti*.
+>
+> **Bodovi ozbiljnosti**: vrednost *Bodova za obračun indeksa kvalifikacije dobavljača (IQF)* povezana sa izabranom *Ozbiljnošću*.
+>
+> **Ukupno obračunati bodovi**: zbir svih izračunatih *IQF* vrednosti za datu *Ozbiljnost*.
 
 ### Dodatni podaci
 
-Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) generalno za *Periodične procjene nesukladnosti*.   
+Moguće je unositi [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *Periodične procene neusaglašenosti*.
 
+:::tip Metoda korišćena za obračun
 
-:::tip Metoda korištena za izračun   
-*Metoda korištena za izračun:* **Ukupno izračunati bodovi**, **Preostali bonus**, **Bodovi %** i **Ocjena**.   
-- Razmatra se svaki pojedini redak *Kvara* *Nesukladnosti* unesen u procijenjenom razdoblju, i dodijeljen *Dobavljaču* u procjeni.   
-- Za svaki redak *Uočenog kvara* množi se svaki pojedini *IQF*: *Uočenog kvara*, *Stvarnog uzroka* ili *Pretpostavljenog uzroka* (u nedostatku povezanog *Stvarnog uzroka*), *Predloženog rješenja* i *Poduzete odluke*. Ako jedan od tih podataka nije unesen, *IQF* je jednak **1,0**. Primjer:   
-  - redak 1: *IQF Uočenog kvara* = **5,1**, *IQF Stvarnog uzroka* = **1,5**, *IQF Predloženo rješenje* = **1,3** i *IQF Poduzete odluke* = **2,1**;   
-  Ukupno za redak iznosi: **5,1 * 1,5 * 1,3 * 2,1 = 20,8845** = *Ukupno Redak 1*.   
-  - redak 2: *IQF Uočenog kvara* = **2,1**, *IQF Pretpostavljenog uzroka* = **4,2** (*Stvarni uzrok* nije unesen), *Predloženo rješenje* nije uneseno, stoga *IQF* = **1,0** i *IQF Poduzete odluke* = **1,7**;   
-  Ukupno za redak iznosi: **2,1 * 4,2 * 1,0 * 1,7 = 14,994** = *Ukupno Redak 2*.   
-- Ukupan izračunati rezultat za pojedinačni redak zbraja se s ostalim razmatranim recima koji imaju istu *Ozbiljnost*. Zbroj svih rezultata po retku je *Ukupno izračunati rezultat* za tu *Ozbiljnost*. Primjer:   
-  - **Ukupno izračunato bodova** = *Ukupno Redak 1* + *Ukupno Redak 2* = **20,8845 + 14,994 = 35,8785**.   
-- Za izračun *Preostalog bonusa* uzimamo početni *Bonus* *Dobavljača* jednak **500**. Dakle:   
-    - **Preostali bonus** = **Bonus** - zbroj **Ukupno izračunatih bodova** za svaku *Ozbiljnost* = **500 - 35,8785 = 464,1215**.   
-- Za izračun *Postotka bodova* primjenjuje se postotak između *Preostalog bonusa* i *Početnog bonusa*:   
-    - **Preostali bonus** / **Bonus** * 100 = **464,1215 / 500 * 100 = 92.8243%**.   
-- **Ocjena** se dodjeljuje na temelju vrijednosti *Bodova od* navedenih na popisu *Raspona bodova za ocjenjivanje* koji se nalazi u *Parametrima kvalifikacije dobavljača*. Uzima se u obzir *Ocjena* s *Bodovi od* koja je odmah niža od **Postotka bodova**.   
+Metoda obračuna koristi sledeće vrednosti:
+
+- **Ukupno obračunati bodovi**
+- **Preostali bonus**
+- **Bodovi %**
+- **Procena**
+
+Postupak obračuna:
+
+- Razmatra se svaki red *Kvara* unutar *Neusaglašenosti* evidentiran tokom procenjivanog perioda i povezan sa odgovarajućim *Dobavljačem*.
+- Za svaki red množe se pojedinačne *IQF* vrednosti:
+  - *Uočeni kvar*
+  - *Stvarni uzrok* ili *Pretpostavljeni uzrok* (ako stvarni uzrok nije definisan)
+  - *Predloženo rešenje*
+  - *Preduzeta odluka*
+
+Ako neki od podataka nije definisan, njegova *IQF* vrednost iznosi **1,0**.
+
+Primer:
+
+- Red 1:
+  - IQF Uočenog kvara = **5,1**
+  - IQF Stvarnog uzroka = **1,5**
+  - IQF Predloženog rešenja = **1,3**
+  - IQF Preduzete odluke = **2,1**
+
+  Ukupno za red:
+
+  **5,1 × 1,5 × 1,3 × 2,1 = 20,8845**
+
+- Red 2:
+  - IQF Uočenog kvara = **2,1**
+  - IQF Pretpostavljenog uzroka = **4,2**
+  - IQF Predloženog rešenja = **1,0** (nije definisano)
+  - IQF Preduzete odluke = **1,7**
+
+  Ukupno za red:
+
+  **2,1 × 4,2 × 1,0 × 1,7 = 14,994**
+
+Ukupno obračunati bodovi za određenu *Ozbiljnost* predstavljaju zbir svih obračuna za redove iste ozbiljnosti:
+
+- **20,8845 + 14,994 = 35,8785**
+
+Za obračun *Preostalog bonusa*, uz početni *Bonus* od **500**:
+
+- **Preostali bonus = 500 − 35,8785 = 464,1215**
+
+Za obračun procenta bodova:
+
+- **464,1215 / 500 × 100 = 92,8243 %**
+
+*Procena* se određuje na osnovu vrednosti *Bodovi od* definisanih u listi *Rasponi bodova za ocenjivanje* unutar *Parametara kvalifikacije dobavljača*.
+
+Dodeljuje se ona *Procena* čija je vrednost *Bodovi od* neposredno niža od izračunatog procenta bodova.
+
 :::
 
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu:
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+[Funkcionalnosti, dugmad i polja](/docs/guide/common).
