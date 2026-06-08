@@ -1,11 +1,11 @@
 ---
-title: Scenarij upravljanja agentom – primjeri
+title: Scenarij upravljanja agentima – primjeri
 sidebar_position: 5
 ---
 
-Na ovoj stranici prikazujemo nekoliko primjera za sastavljanje mogućeg scenarija upravljanja agentom.
+Na ovoj stranici prikazujemo nekoliko primjera za sastavljanje mogućeg scenarija upravljanja trgovačkim predstavnikom, tj. agentom.
 
-Ova vrsta putanje korisna je za razumijevanje poveznica između različitih funkcionalnosti i za davanje nekoliko primjera kriterija izračuna.
+Ovo je korisno je za razumijevanje poveznica između različitih funkcionalnosti i za davanje nekoliko primjera kriterija izračuna.
 
 Slijedit ćemo ovu sekvencu:  
 - Definiranje provizijskih razreda  
@@ -27,12 +27,12 @@ Cilj je definirati opadajuće provizije kako raste popust koji agent odobrava kl
 
 Posebnost konfiguracije ovog kriterija, u usporedbi s jednostavnijim metodama, leži u potrebi da se unaprijed definiraju razine popusta povezane s pripadajućim postocima provizije.
 
-Prvo stoga upravljamo tablicom **Definiranje provizijskih razreda** (umetnite link).  
+Stoga, prvo upravljamo tablicom **Definiranje raspona provizija**.  
 
 :::important[Važno]
 **Obratite pažnju na zaglavlje forme**: preporučuje se da bude uvijek vidljivo pomoću tipke za pin u gornjem desnom kutu. Zaglavlje sadrži ključni filter za upravljanje tablicom: [***raspon popusta***](/docs/configurations/tables/sales/discount-range).
 
-Povezana tabela jednostavno omogućuje definiranje tipova koji su omogućeni, određujući kod i opis te se povezuje s unaprijed definiranim kriterijem među onima koji su prisutni, ali **u zaglavlju obrasca u komentaru potrebno je odabrati raspon popusta** kako bi se moglo vidjeti ili upravljati detaljima vezanim uz odabrani raspon.
+Povezana tabela jednostavno omogućuje definiranje tipova koji su omogućeni, određujući kod i opis te se povezuje s unaprijed definiranim kriterijem među onima koji su prisutni, ali **u zaglavlju obrasca u komentaru potrebno je odabrati raspon popusta (rabata)** kako bi se moglo vidjeti ili upravljati detaljima vezanim uz odabrani raspon.
 :::
 
 U vezi s odabranim rasponom popusta, koji može biti tipa *Jedinstveni* (jednostavni), ili prema *klasama* artikla, *tipologiji* artikla ili nekoj njegovoj *karakteristici* (sva polja prisutna u bazi podataka i povezana s artiklom te stoga mogu biti valorizirana), ili prema kategoriji robe kojoj artikal pripada, ili prema cjeniku prodaje u kojem je artikal uključen, možemo definirati detalje.
@@ -154,15 +154,15 @@ Pokretanjem izračuna softver vraća poruku potvrde ili upozorenje za agente za 
 
 Na kraju, ako se žele izvršiti provjere, moguće je [**otvoriti obračun**](/docs/sales/agents/agent-settlement/insert-settlement) dvostrukim klikom nakon što je prethodno [**pronađen**](/docs/sales/agents/agent-settlement/search-agent-settlement).
 
-Unutar obračuna moguće je dobiti popis faktura uključenih u obračun provizija. Za to se prebacite na karticu **Fakture** i pritisnite tipku **Pretraži** u vrpci.
+Unutar obračuna moguće je dobiti popis faktura uključenih u obračun provizija. Za to se prebacite na karticu **Fakture** i pritisnite tipku **Traži** u meniju.
 
-Rezultat se prikazuje u dvije donje mreže: prva prikazuje fakture koje su uzete u obzir (na razini zaglavlja dokumenata), dok druga prikazuje detalj stavki fakture s pripadajućim provizijama.
+Rezultat se prikazuje u dva donja pregleda: prvi prikazuje fakture koje su uzete u obzir (na razini zaglavlja dokumenata), dok drugi prikazuje detalj stavki fakture s pripadajućim provizijama.
 
 **PAŽNJA: radi se o iznosu provizija izračunatih na pojedinačne stavke fakture, ne nužno i dospjelih u obračunu, pa se ukupna vrijednost može razlikovati ako su dijelom naplaćene.**
 
 ## Upravljanje naknadama agenata
 
-Unutar obračuna već su uneseni podaci o predujmu poreza (ritenuta d’acconto) i udjelima koje snosi agent (koje se zadržavaju i uplaćuju u njegovo ime) te doprinosu Enasarco na teret nalogodavca.
+Unutar obračuna već su uneseni podaci o predujmu poreza (*ritenuta d’acconto*) i udjelima koje snosi agent (koje se zadržavaju i uplaćuju u njegovo ime) te doprinosu Enasarco na teret nalogodavca.
 
 U ovom trenutku, koristeći odgovarajući postupak, iz obračuna [**kreiramo naknadu**](/docs/sales/agents/procedures/create-professional-man-commission).
 
@@ -176,6 +176,6 @@ Poseban postupak za [**knjiženje doprinosa Enasarco**](/docs/finance-area/profe
 
 ## Obrada potvrde o predujmu poreza
 
-Postupak se završava [**zradom potvrde o predujmu poreza**](/docs/finance-area/declarations/declarations/withholding-tax-certification) koja se odnosi na agenta.
+Postupak se završava [**izradom potvrde o predujmu poreza**](/docs/finance-area/declarations/declarations/withholding-tax-certification) koja se odnosi na agenta.
 
 Nalazimo se u administrativnom modulu i radi se o fiskalnoj obvezi, stoga se detalji ne navode. Ova napomena je korisna kako bi se razumjela povezanost prodajnog i administrativnog područja: agent, osim što zahtijeva izračun provizija, podložan je predujmovima poreza i stoga se uključuje u upravljanje naknadama profesionalaca primatelja.
