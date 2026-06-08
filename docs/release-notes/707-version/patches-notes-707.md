@@ -1,6 +1,6 @@
 ---
 title: Patch notes Versione 707
-sidebar_position: 1
+sidebar_position: 2
 keywords:
   - Civico
 ---

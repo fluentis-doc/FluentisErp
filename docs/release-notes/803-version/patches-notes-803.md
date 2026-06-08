@@ -1,6 +1,6 @@
 ---
 title: Patch notes Versione 803
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ### Patch 803.0023 - 05/06/2026

@@ -1,6 +1,6 @@
 ---
 title: Patch notes Versione 608
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 ### Patch 608.1-0090 - 26/05/2026
