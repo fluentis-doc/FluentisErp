@@ -1,33 +1,43 @@
 ---
-title: Razduženje prodajnog mjesta
+title: Razduženje prodajnog mesta
 sidebar_position: 4
 ---
 
-Procedura se otvara putem putanje **Prodaja > POS > Procedure > Razduženje prodajnog mjesta**.
+Procedura se pokreće putem putanje **Prodaja > POS > Procedure > Razduženje prodajnog mesta**.
 
-Ova procedura omogućuje izvođenje/ponovno postavljanje operacija ispražnjivanja automatskih artikala prisutnih u POS-u.
+Ova procedura omogućava izvršavanje ili poništavanje automatskog razduženja skladišta za artikle evidentirane kroz POS sistem.
 
 ## Filter
 
-Na ovoj kartici korisnik može pretraživati i premještati POS-ove u skladište prema dostupnim kriterijima filtriranja.
+Na ovoj kartici korisnik može pretraživati i upravljati dokumentima koristeći dostupne kriterijume filtriranja.
 
-**Datum objave**: omogućuje specificiranje datuma povezanog s ispražnjivanjem iz skladišta.
+### Specifična polja
 
-*Posebni gumbi*:
+- **Datum unosa**: omogućava definisanje datuma koji će biti povezan sa razduženjem iz skladišta.
 
-> **Traži**: omogućuje pretraživanje POS-ova za ispražnjivanje.   
-> **Razduženje**: omogućuje izvođenje ispražnjivanja odabranih POS-ova iz skladišta, prema algoritmima za ispražnjivanje.  
+### Specifična dugmad
 
+> **Traži**: omogućava pretragu POS dokumenata za razduženje.
+
+> **Razduži**: izvršava razduženje artikala iz skladišta za odabrane POS dokumente.
 
 ## Sažeci
 
-Na ovoj kartici korisnik može pretraživati, pregledavati i poništavati izvršene operacije ispražnjivanja koje zadovoljavaju specifične uvjete za brisanje zapisa iz skladišta.
+Na ovoj kartici korisnik može pretraživati, pregledati i poništavati izvršene operacije razduženja koje ispunjavaju uslove za brisanje skladišnih evidencija.
 
-Podaci u donjim mrežama, **POS** i **Knjiženje**, odgovaraju odabranoj operaciji ispražnjivanja u gornjoj mreži (nakon filtriranja podataka). Također, u ovim posljednjim dvjema mrežama, postoji mogućnost pregledavanja POS-a i njegovog skladištenja (dvostruki klik na redak).
+Podaci prikazani u donjim pregledima:
 
-*Posebni gumbi*:
-> **Pretraga razduženih prodajnih mjesta**: za pretraživanje ispražnjenih POS-ova. Rezultat ovog postupka prikazan je u mreži rezultata.  
-> **Izbriši razduženje**: za potpuno brisanje odabranih operacija ispražnjivanja u mreži rezultata, ako zadovoljavaju specifične uvjete za brisanje zapisa iz skladišta.  
-> **Povrati prodajna mjesta**: za brisanje odabranih operacija ispražnjivanja u mreži rezultata za trenutni POS u mreži detalja.  
-> **Vrati POS i knjiženje**: za brisanje skladišne knjiženja odabranog dokumenta u operaciji ispražnjivanja u tijeku, ako zadovoljavaju specifične uvjete za brisanje zapisa iz skladišta.  
-> **Svojstva**: omogućuje prikaz načina izvođenja odabrane operacije ispražnjivanja.
+- **Razduženje**
+- **Stavka**
+
+odnose se na operaciju odabranu u gornjoj tabeli nakon izvršene pretrage.
+
+Takođe je moguće pregledati povezane skladišne dokumente dvostrukim klikom na željeni red.
+
+### Specifična dugmad
+
+> **Pretraga razduženih prodajnih mesta**: pretražuje skladišne dokumente nastale razduženjem i prikazuje rezultate u tabeli.
+
+> **Obriši razduženje**: potpuno briše odabrane operacije skladišnog kretanja ukoliko su ispunjeni uslovi za brisanje skladišnih dokumenata.
+
+> **Vrati prodajna mesta**: poništava odabrane operacije skladišnog kretanja povezane sa trenutno odabranim POS dokumentima.
