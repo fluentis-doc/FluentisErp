@@ -5,6 +5,25 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0076 - 05/06/2026
+
+> -	ARM - exclude collections from audit trail configuration (#TT05348/25)
+> -	FI - Creazione registrazione contabile con analitica: revisione della gestione del campo "Descrizione centri di costo", ora impostato come sola lettura. Modifications inside posting form analitic tab can have impact on profiles. (Rif. #TT01625/26).
+> -	FI - revisione gestione pulsante creazione file Intrastat da ricerca intra1 (#TT02355/26)
+> -	FI - revisione gestione segni in causali automatiche con prima registrazione negativa (#TT02176/26)
+> -	FI - revisione proposta sottoconti in griglia centri di costo (#TT02420/26)
+> -	FI - stampa Riepilogo movimenti contabili con contropartite, revisione repository method (#TT02356/26)
+> -	MS - Capacità Centri di lavoro: corretta l’anomalia sulla proposta del periodo visualizzato, diversa dal filtro impostato, allo spostamento di una fase tra due centri di lavoro. (#TT02289/26)
+> -	PM - Aggiornato report Dettaglio interventi - introdotto totale imponibile e migliorata gestione label colonne.
+> -	PR - riconciliazione CC, revisione import file di testo Cbi per gestione conti bancari diversi (#TT02332/26)
+> -	SCM - Corretta stampa diretta in registro sdi documenti acquisto in entrata (#TT02149/26)
+> -	SCM - Creazione Automatica Ordini - Ordini clienti: campo “Tipo fatturato acquisto” popolato in base ad anagrafica articolo (#TTTT02364/26)
+> -	SCM - Creazione automatica ordini fornitori - Ordini clienti: generazione di ordine fornitore con flag abilitato “Esplosione livello da struttura distinta” per articoli senza Distinta Base (#TT2439-26).
+> -	SCM - Coretta valorizzazione parziale di commessa a seguito di ordine fornitore con procedura “evasione da progetto” (#TT01632/26).
+> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio. (#TT2207/26, 2439/26)
+> -	SH - allineati campi `SHCNTC_Description e SHCH_Description` per evitare errori in fase di storicizzazione di una anagrafica. Rif. TT02151/26
+> -	WM - Registrazioni di Magazzino: Inibita modifica/inserimento per date non successive ultima chiusura. (#TT02429/26)
+
 ### Patch 707.1-0075 - 26/05/2026
 
 > -	CO - nella gestione assestamenti, per le integrazioni e quando il costo/ricavo è completamente dell’esercizio di calcolo, ora si usa il sottoconto fatture da ricevere/emettere se la registrazione di origine ha il sottoconto di testata compilato (come per le fatture), altrimenti si usano i conti dei ratei. (#TT01938/26)
@@ -25,7 +44,7 @@ keywords:
 > -	FI - revisione gestione inizio date competenza per le riaperture degli assestamenti, per il caso di rettifiche con data inizio successiva all’inizio esercizio successivo (#TT02150/26)
 > -	MS - M.R.P.: corretta anomalia per articoli che sono componenti di altri articoli fittizi. (#TT02170/26)
 > -	MS - Pianificazione generale: corretta anomalia generata alla generazione di Ordini pianificati di produzione con l’utilizzo di materiali alternativi indicati in Distinta base. (#TT01855/26)
-> -	SD - Gestione Data Competenza: In fase di evasione ordini, la data di competenza viene automaticamente ricalcolata sulla base della data del documento generato (DDT o fattura).(rif.ticket 1950/26)
+> -	SD - Gestione Data Competenza: In fase di evasione ordini, la data di competenza viene automaticamente ricalcolata sulla base della data del documento generato (DDT o fattura).(#TT1950/26)
 
 ### Patch 707.1-0073 - 08/05/2026
 
