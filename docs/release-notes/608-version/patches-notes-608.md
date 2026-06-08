@@ -1,6 +1,6 @@
 ---
 title: 🔧 Patch Notes v608
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ### Patch 608.1-0090 - 26/05/2026

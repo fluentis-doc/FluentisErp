@@ -1,6 +1,6 @@
 ---
 title: 🔧 Patch Notes v606
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 ### Patch 606.1-0028: 06/04/2023   
