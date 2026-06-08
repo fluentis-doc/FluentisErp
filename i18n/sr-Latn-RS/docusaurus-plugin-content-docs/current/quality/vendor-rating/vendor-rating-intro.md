@@ -3,38 +3,37 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Kvalifikacija dobavljača odnosi se na proces odobravanja potencijalnih dobavljača i procjene postojećih putem kvantitativnih i kvalitativnih procjena. Primarni cilj je sastaviti rang listu dostupnih dobavljača u svrhu kvalitete proizvoda/usluga.   
+Kvalifikacija dobavljača predstavlja proces odobravanja potencijalnih dobavljača i ocenjivanja postojećih dobavljača putem kvantitativnih i kvalitativnih procena.
 
+Osnovni cilj je kreiranje rang liste dostupnih dobavljača na osnovu kvaliteta proizvoda i usluga koje pružaju.
 
-## Upravljani dokumenti
+## Dokumenti kojima se upravlja
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/vendor-rating/initial-vendor-rating">Početne i periodične procjene</Link>
-        <p>To je *subjektivni* kriterij evaluacije temeljen na unaprijed definiranim pitanjima (*Check-list*) za *Kategorije dobavljača* postavljenim novim potencijalnim ili starim dobavljačima.</p>
+###     <Link to="/docs/quality/vendor-rating/initial-vendor-rating">Početne i periodične procene</Link>
+        <p>Predstavljaju subjektivni kriterijum evaluacije zasnovan na unapred definisanim pitanjima (Check-lista) za određene kategorije dobavljača, namenjen novim potencijalnim ili postojećim dobavljačima.</p>
     </div>
+
     <div className="card">
-###     <Link to="/docs/quality/vendor-rating/vendor-rating-on-nc">Periodične procjene nesukladnosti</Link>
-        <p>To je *objektivni* kriterij ocjenjivanja temeljen na *nesukladnostima* pripisanim *dobavljačima* u određenom vremenskom razdoblju.</p>
+###     <Link to="/docs/quality/vendor-rating/vendor-rating-on-nc">Periodične procene na osnovu neusaglašenosti</Link>
+        <p>Predstavljaju objektivni kriterijum ocenjivanja zasnovan na evidentiranim neusaglašenostima koje su pripisane dobavljačima u određenom vremenskom periodu.</p>
     </div>
 </div>
 
+## Početak korišćenja
 
-## Za početak korištenja   
+### Početne i periodične procene
 
-   **Početne i periodične procjene**:
-- treba definirati: [*Tip procjene*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type), konto [*Dobavljača*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) i [*Procjenu dobavljača*](/docs/configurations/tables/quality/vendor-rating/vendor-ratings)   
-- kako bi se olakšalo upravljanje *Početnim i periodičnim procjenama* treba postaviti i [*Parametre kvalifikacija dobavljača*](/docs/configurations/parameters/quality/vendor-ratings) u odjelu *Početne procjene*   
-- treba unijeti novu [*Početnu procjenu*](/docs/quality/vendor-rating/initial-vendor-rating)   
+- potrebno je definisati [*Vrstu procene*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type), konto [*Dobavljača*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) i [*Ocenu dobavljača*](/docs/configurations/tables/quality/vendor-rating/vendor-ratings);
+- radi lakšeg upravljanja potrebno je podesiti [*Parametre kvalifikacije dobavljača*](/docs/configurations/parameters/quality/vendor-ratings) u sekciji *Početne procene*;
+- potrebno je kreirati novu [*Početnu procenu*](/docs/quality/vendor-rating/initial-vendor-rating).
 
-   **Periodične procjene nesukladnosti**:
-- treba definirati [*Tip procjene*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type)   
-- kako bi se olakšalo upravljanje *Periodičnim procjenama nesukladnosti* treba postaviti i [*Parametre kvalifikacija dobavljača*](/docs/configurations/parameters/quality/vendor-ratings) u odjelu *Periodične procjene nesukladnosti*   
-- morate se unijeti barem jedna nova [*Nesukladnost dobavljača*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) s datumom uključenim u razdoblje koje se želi procijeniti   
-- mora se razraditi [*Periodična procjena nesukladnosti*](/docs/quality/vendor-rating/vendor-rating-on-nc)   
+### Periodične procene na osnovu neusaglašenosti
 
-
-## Povezanost s drugim modulima
-Modul *Dokumenti vanjskog podrijetla* nije povezan ni s jednim drugim modulom.   
+- potrebno je definisati [*Vrstu procene*](/docs/configurations/tables/quality/vendor-rating/vendor-rating-type);
+- radi lakšeg upravljanja potrebno je podesiti [*Parametre kvalifikacije dobavljača*](/docs/configurations/parameters/quality/vendor-ratings) u sekciji *Periodične procene na osnovu neusaglašenosti*;
+- potrebno je evidentirati najmanje jednu novu [*Neusaglašenost dobavljača*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) sa datumom koji pripada periodu koji se ocenjuje;
+- potrebno je izvršiti [*Periodičnu procenu na osnovu neusaglašenosti*](/docs/quality/vendor-rating/vendor-rating-on-nc).
