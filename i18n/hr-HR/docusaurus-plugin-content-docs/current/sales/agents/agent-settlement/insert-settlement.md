@@ -1,8 +1,8 @@
 ---
-title: Novo namirenje
+title: Novi obračun
 sidebar_position: 3
 ---
-Obrazac se otvara putem putanje *Prodaja > Predstavnici > Obračun trgovačkih predstavnika > Traži obračun trgovačkih predstavnika* klikom na gumb **Novo**.
+Obrazac se otvara putem putanje *Prodaja > Trgovački Predstavnici > Obračun trgovačkih predstavnika > Obračun trgovačkih predstavnika* klikom na gumb **Novo**.
 
 ## **1. Obračuni**
 
@@ -17,7 +17,7 @@ Unos obračuna zahtijeva:
 
 Ova kartica prikazuje sve elemente izračuna provizije.
 
-**Sažetak provizija**: ovdje su prikazani ukupni iznosi provizija po valutama. Ispod toga su polja sa *Valutom*obračuna (predloženo iz valute unesene u kartici predstavnika), *Tečajem* i *Datumom tečaja* per il cambio; niže su *PDV* dkoji se primjenjuje na osnovicu provizije provizije (također predložen prema zadanim postavkama kartice predstavnika) i *Ukupni dokument*.
+**Sažetak provizija**: ovdje su prikazani ukupni iznosi provizija po valutama. Ispod toga su polja s *Valutom* obračuna (predloženo iz valute unesene u kartici predstavnika), *Tečajem* i *Datumom tečaja*; niže je *PDV* koji se primjenjuje na osnovicu provizije (također predložen prema zadanim postavkama kartice predstavnika) i *Ukupni dokument*.
 
 **Sažetak izračuna odbitka**: ovaj prikaz omogućuje pregled primljenih naknada koje se smatraju akontacijama na trenutan obračun, *Tipa poreza* koji treba primijeniti (također uzet prioritetno iz kartice predstavnika ili iz kategorije predstavnika), pripadajućih postotaka i iznosa za porez na dohodak.
 
@@ -28,7 +28,6 @@ U slučaju da je postavljena *Ručna kalkulacija*, moguće je ručno unijeti pod
 Na ovoj kartici, sustav prikazuje zadanu postavku plaćanja unesenu u kartici predstavnika u **Popis plaćanja**, koja se ipak može mijenjati.
 
 U mreži **Popis dospijeća** dospijeća izračunavaju se odgovarajući rokovi dospijeća: napominjemo da će iznos dospijeća trebati ručno uskladiti s promjenama u obračunu, kako bi se podudarao s iznosom koji treba platiti.
-
 
 #### Posebni gumbi
 
@@ -41,12 +40,12 @@ U mreži **Popis dospijeća** dospijeća izračunavaju se odgovarajući rokovi d
 
 Na temelju *Vrsta dokumenta koji se uzima u obzir za osnovicu provizije* unesen u *Šifarniku predstavnika* prikazuje se druga kartica s dokumentima: Računi, Otpremnica ili Narudžbe.
 
-Unutargornjeg prikaza rezultata, nakon što se izvrši pretraživanje, prikazuju se dokumenti koji se uzimaju u obzir za izračun provizije predstavnika u upotrebi.
+Unutar gornjeg prikaza rezultata, nakon što se izvrši pretraživanje, prikazuju se dokumenti koji se uzimaju u obzir za izračun provizije predstavnika u upotrebi.
 
-Kroz dva upravljačka gumba: **Veza dokumenta s likvidacijom** i **Izbriši poveznice s obračunom moguće** je ručno dodati nove dokumente u liquidaciju ili ih izbrisati kako bi se unijeli u sljedeću.
+Kroz dva upravljačka gumba: **Veza dokumenta s likvidacijom** i **Izbriši poveznice s obračunom** moguće je ručno dodati nove dokumente u obračun ili ih izbrisati kako bi se unijeli u sljedeći.
 
 #### Posebni gumbi 
 
-> **Traži**: izvršava pretragu dokumenata unesenih u liquidaciju u upotrebi.   
-> **Veza dokumenta s likvidacijom**: otvara prozor za ručno pretraživanje i unos dokumenata u liquidaciju u upotrebi.   
-> **Izbriši poveznice s obračunom**: uklanja odabrani dokument iz liquidacije u upotrebi.  
+> **Traži**: izvršava pretragu dokumenata unesenih u likvidaciju u upotrebi.   
+> **Veza dokumenta s likvidacijom**: otvara prozor za ručno pretraživanje i unos dokumenata u likvidaciju u upotrebi.   
+> **Izbriši poveznice s obračunom**: uklanja odabrani dokument iz likvidacije u upotrebi.  
