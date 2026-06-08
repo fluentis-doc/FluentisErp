@@ -3,35 +3,53 @@ title: Obračunate provizije
 sidebar_position: 2
 ---
 
-Obrazac se otvara putem putanje *Prodaja > Agenti > Obračuni predstavnika > Ispisi*.
+Ovaj izveštaj predstavlja simulaciju obračuna dospelih provizija agenta na osnovu podešavanja definisanih na kartici agenta i filtera izabranih u izveštaju.
 
-Ispis je simulacija izračuna provizije koju je predstavnik ostvario, sukladno postavkama njegove evidencije i filterima primijenjenim na izvještaj.
+Kod provizija koje se obračunavaju prema **naplati**, izveštaj prikazuje samo dospele provizije, bez uključivanja vrednosti koje su već obuhvaćene automatskim obračunima provizija. Na taj način dobija se usklađen i verodostojan pregled stvarno dospelih provizija.
 
-**Posebno, u slučaju provizija na naplaćeno, ovaj će izvještaj prikazati ostvarene podatke isključujući vrijednosti automatskih obračuna stvorenih u upravljačkom programu, koji postaju obvezni kako bi se dobio usklađeni izvještaj;** u slučaju provizija na prihod/izvršeno/narudžbeno, upotreba ispravnog raspona datuma filtera omogućuje dobivanje ispravnih rezultata bez obzira na korištenje automatskog postupka obračuna provizije.
+Kod provizija koje se obračunavaju prema **fakturisanju**, **isporuci** ili **narudžbini**, pravilnim podešavanjem perioda moguće je dobiti kompletan izveštaj nezavisno od toga da li je izvršen automatski obračun provizija.
 
+## Ispis obračunatih provizija
 
-**Ispiši provizije obračunate na** označava datum odnosa za izračun provizije na *naplaćeno* 
+- **Datum obračuna** – određuje referentni datum za obračun dospelih provizija kod obračuna prema naplati.
 
-Oznaka **Ispis duga naspram/predstavnika na datum** s kojim se aktivira povezani datum: ovom opcijom moguće je simulirati ispis ostvarenih provizija na taj datum, uključujući i one obračunate na kasniji datum (koji su obično isključeni).
+- **Ispis prema datumu terećenja / agenta** – omogućava simulaciju stanja provizija na izabrani datum, uključujući i provizije koje su obračunate ili isplaćene nakon tog datuma, a koje se standardno ne prikazuju.
 
-Oznaka **Razmatra nulte provizije u osnovi provizionog poreza** omogućuje razmatranje među osnovnim provizijama čak i onih koje imaju vrijednost provizije jednaku nuli.
+- **Uključi provizije sa nultom osnovicom** – omogućava uključivanje stavki čija je provizija jednaka nuli u ukupnu osnovicu za obračun provizije.
 
-:::tip PROVIZIJE NA NAPLAĆENO I KOMPENZACIJA STAVKI  
-U slučaju kada su provizije obračunate na naplaćeno i dođe do kompenzacije stavki (npr. prethodno primljenih akontacija), potrebno je obratiti pažnju na činjenicu da kompenzacija dodjeljuje stavke zatvaranja stavkama za izračun ostvarenih provizija na temelju **datuma zapisa** najnovijeg između dva koja su stvorila stavke koje se međusobno kompenziraju.
+:::info Provizije prema naplati i zatvaranje stavki
 
-U situaciji čestih akontacija i storniranja gdje su možda prisutni isti iznosi, pažljivo je kompenzirati akontacije i storniranja za isto razdoblje, inače će provizija biti ostvarena na pogrešan datum.
+Ako se provizije obračunavaju prema naplati i dođe do zatvaranja otvorenih stavki (na primer prebijanjem prethodnih avansa), potrebno je obratiti pažnju na datum knjiženja zatvaranja.
+
+Sistem za obračun provizija koristi najnoviji datum knjiženja između dokumenata koji su učestvovali u zatvaranju stavke. Zbog toga nepravilno zatvaranje može dovesti do obračuna provizije u pogrešnom periodu.
+
+Posebnu pažnju treba posvetiti situacijama u kojima postoje avansi i storna istih iznosa, jer nepravilno zatvaranje može uzrokovati netačan datum dospeća provizije.
 :::
 
-:::tip PROVIZIJE NA NAPLAĆENO I PRIVREMENI RAČUNOVODSTVENI ZAPISI  
-Za izračun ostvarenih provizija uzimaju se u obzir SAMO zapisi u  **konačnom**, stanju, pa će eventualne naplate (čak i one unaprijed) zabilježene privremeno biti zanemarene.
+:::info Provizije prema naplati i privremena knjiženja
+
+Prilikom obračuna dospelih provizija uzimaju se u obzir isključivo knjiženja sa statusom **konačno knjiženo**.
+
+Sve uplate ili naplate evidentirane u privremenom statusu neće biti uključene u obračun provizija.
 :::
 
-:::tip PROVIZIJE NA NAPLAĆENO I BANKOVNE UPLATE  
-Dospijeće provizija uvijek uzima u obzir datum dospijeća efekta, čak i ako je klijentska stavka zatvorena zbog knjiženja izdavanja Ri.Ba. a mjenica se predočuje na naplatu ili kredit.
+:::info Provizije prema naplati i bankarske menice
+
+Prilikom obračuna provizija uvek se uzima u obzir datum dospeća menice ili efekta.
+
+Ovo važi i kada je otvorena stavka zatvorena knjiženjem menice koja je predata banci na naplatu ili diskont.
 :::
 
-:::danger PAŽNJA  
-Posebno obratite pažnju u slučaju bankovnih primitaka na upravljanje **PARAMETRIMA RIZIKA KUPCA** gdje postoje dva polja **Broj dana nakon dospijeća za efekte predstavljene pod “dozvoljeni” / Broj dana nakon dospijeća za efekte predstavljene nakon naplate** koji, ako su popunjeni, dodaju kašnjenje i u dospijeću provizija.
+:::warning Pažnja
 
-Također obratite pažnju prilikom pokretanja novog okruženja da je barem jednom spremljeno unutar obrasca Parametar rizika klijenta kako bi se osiguralo da su zadani parametri prisutni (posebno se odnosi na gore navedena polja), inače datum dospijeća efekta neće biti pročitan i provizija će uvijek biti ostvarena na zatvaranju stavke zbog izdavanja Ri.Ba.
+Kod korišćenja bankarskih menica potrebno je proveriti podešavanja u parametrima **Rizik kupca**.
+
+Posebnu pažnju treba obratiti na sledeće parametre:
+
+- **Broj dana nakon dospeća za potvrde predate banci na naplatu uz klauzulu**
+- **Broj dana nakon dospeća za potvrde predate banci po naplati**
+
+Ako su navedena polja popunjena, sistem će dodati definisani broj dana na datum dospeća prilikom određivanja datuma dospeća provizije.
+
+Prilikom inicijalne konfiguracije novog okruženja preporučuje se otvoriti i sačuvati podešavanja **Rizik kupca** najmanje jednom kako bi svi potrebni parametri bili pravilno inicijalizovani. U suprotnom, datum dospeća efekta možda neće biti pravilno uzet u obzir i provizija će biti obračunata tek prilikom zatvaranja otvorene stavke.
 :::
