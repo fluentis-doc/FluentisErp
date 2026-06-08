@@ -1644,7 +1644,7 @@
     "description": "The label for category Nuovo POS in sidebar sales"
   },
   "sidebar.sales.category.Liquidazione agenti": {
-    "message": "Obračun trgovačkih predstavnika",
+    "message": "Trgovački predstavnici",
     "description": "The label for category Liquidazione agenti in sidebar sales"
   },
   "sidebar.sales.category.Listini di vendita": {
