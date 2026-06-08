@@ -1,5 +1,5 @@
 ---
-title: Patch notes Versione 802
+title: 🔧 Patch Notes v802
 sidebar_position: 1
 ---
 

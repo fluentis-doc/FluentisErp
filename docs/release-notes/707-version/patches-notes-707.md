@@ -1,5 +1,5 @@
 ---
-title: Patch notes Versione 707
+title: 🔧 Patch Notes v707
 sidebar_position: 2
 keywords:
   - Civico

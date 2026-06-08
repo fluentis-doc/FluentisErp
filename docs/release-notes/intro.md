@@ -1,6 +1,6 @@
 ---
-title: 📘 Release Note Versioni
-sidebar_label: Release Note Versioni
+title: 📘 Release Notes and Patch Notes by Version
+sidebar_label: Release Notes and Patch Notes by Version
 sidebar_position: 1
 description: Consultazione delle release note, versioni e patch del sistema ERP. Include nuove funzionalità, correzioni di bug e miglioramenti di sicurezza.
 keywords:

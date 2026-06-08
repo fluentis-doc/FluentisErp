@@ -1,9 +1,10 @@
 ---
-title: Patch notes Versione 704
+title: 🔧 Patch Notes v704
 sidebar_position: 1
 ---
 
 ### Patch 704.1-0031 - 16/05/2024
+
 > - PR - corretto bug che utilizzava nel cashflow il conto cliente trzista per fasi esterni nell’ordine di conto lavoro anziché il fornitore effettivo (#TT02034/24)
 > - FI - revisione delle date di competenza economica assegnate alle registrazioni di riapertura degli assestamenti dalla chiusura conti automatica (#TT01535/24 - #TT01814/24)
 > - FI - nella compensazione partite, revisione gestione filtri partite rispetto al tipo di compensazione, gestione decimali nei campi in griglia (#TT02113/24)
@@ -11,6 +12,7 @@ sidebar_position: 1
 > - SD - Versioni offerte visibili correttamente in base al flag "visualizza tutte le versioni" anche nei tab degli stati del workflow (#TT02228/24)
 
 ### Patch 704.1-0030 - 09/05/2024
+
 > - WMS - Nella form Lista trasferimento UDC è stato aggiunto lo stato della lista sia come filtro che come colonna sulla griglia dei risultati  (#TT03338/23, #TT02030/24)
 > - SCM - Nell'anagrafica articolo, tab Listini Fornitori sono state aggiunte le colonne relative a Codice e Descrizione variante (#TT01851/24)
 > - SCM - Nella griglia del Navigatore articoli sono state aggiunte le colonne relative a Codice e Descrizione variante (#TT01890/24)
@@ -27,6 +29,7 @@ sidebar_position: 1
 > - SD - Nella creazione file Sdi su fatture/note di credito in valuta, revisione gestione arrotondamenti (#TT1703/24 - #TT02135/24)
 
 ### Patch 704.1-0029 - 06/05/2024
+
 > - SH - Nuovo messaggio di avviso se impostando l’anagrafica di una persona fisica non vengono compilati in nome e cognome e nuovo messaggio di errore generando il file della fattura elettronica senza questi dati (#TT01700/24)
 > - PR - Revisione ripresa dati da rientri di c/lavoro nel cash flow (#TT01934/24)
 > - PM - Il valore degli extra data di progetto viene caricato nella griglia della form di ricerca (#TT01740/24)
@@ -38,6 +41,7 @@ sidebar_position: 1
 > - FI - Scritture di assestamento: revisione descrizione dettaglio nelle registrazioni contabili create automaticamente dalla procedura (#TT00503/24)
 
 ### Patch 704.1-0028 - 29/04/2024
+
 > - SD - Corretto errore nel Dettaglio Movimenti che visualizzava alcune quantità con segno errato (#TT01546/24)
 > - ARM - Forms Wizard - Sostituzione fluentis: BaseView con fluentis: ViewModelResolver.
 > - WM - Corretto errore che non permetteva la generazione di un DDT dalla Lista di Prelievo UDC (#TT01595/24)

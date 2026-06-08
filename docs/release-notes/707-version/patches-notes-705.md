@@ -1,5 +1,5 @@
 ---
-title: Patch notes Versione 705
+title: 🔧 Patch Notes v705
 sidebar_position: 1
 ---
 
