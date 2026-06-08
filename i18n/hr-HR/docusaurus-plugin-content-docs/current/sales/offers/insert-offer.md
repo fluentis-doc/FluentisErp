@@ -13,7 +13,7 @@ Forma **Nova ponuda** otvara se putem izbornika **Prodaja > Nova ponuda** ili pu
 
 - **Klijent**: unos kupca je moguć korištenjem [pomoći za polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [ručnim](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unosom znakova.  
 
-- **CRM kontakt**: ako je ponuda namijenjena leadu koji još nije kupac, moguće je unijeti CRM kontakt umjesto kupca.    
+- **CRM kontakt**: ako je ponuda namijenjena *leadu* koji još nije kupac, moguće je unijeti CRM kontakt umjesto kupca.    
 
 - **Godina**: predlaže se tekuća godina.   
 
@@ -85,7 +85,7 @@ Dostupne su sljedeće kartice:
 #### Specifične tipke
 
 - **Stvori novi prototip**: ova tipka stvara [Prototip](/docs/erp-home/registers/production/standardization/new-prototype) za odabranu stavku artikla; referenca na generiranu ponudu se prikazuje u kartici Podaci o artiklu, polje Ponuda. Prototip je moguće urediti u odgovarajućem modulu.  
-- **Poveži prototip**: ovom tipkom moguće je povezati ponudu s već postojećim[Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) otvara se pomoćni prozor (help) u kojem se može odabrati prototip dostupan za taj artikl.  
+- **Poveži prototip**: ovom tipkom moguće je povezati ponudu s već postojećim [Prototipom](/docs/erp-home/registers/production/standardization/new-prototype) otvara se pomoćni prozor (help) u kojem se može odabrati prototip dostupan za taj artikl.  
 - **Otvori prototip**: tipka je aktivna ako odabrana stavka artikla ima povezani prototip i omogućuje njegovo otvaranje.     
 - **Uvezi iz projekta**: ova funkcija otvara help *Artikli projekta*, u kojem je moguće odabrati artikle iz projekta koje želimo unijeti u ponudu za prodaju. Pop-up se otvara izravno s filtriranjem prema kupcu kojem je ponuda namijenjena, kako bi se prikazali relevantni projekti.   
 
@@ -95,7 +95,7 @@ U slučaju da je Ponuda *hijerarhijskog tipa*, tab Artikli bit će drugačiji.
 
 U glavnoj mreži unose se artikli koristeći gumbe na alatnoj traci, koji omogućuju stvaranje strukture stabla. Karakteristike artikala moraju biti specificirane u tabu *Aktivnosti*.  
 
-Sada navodimo posebne tabove hijerarhijske ponude.
+Sada navodimo posebne kartice hijerarhijske ponude.
 
 ### 3.b.1 Aktivnosti 
 
@@ -106,10 +106,10 @@ U ovoj kartici potrebno je unijeti karakteristike artikala u mreži artikala. Po
 - **Šifra artikla**: prikazuje Klasa, Šifra i Opis eventualno odabranog kodificiranog artikla.             
 - **Šifra varijante**: prikazuje eventualnu [Varijantu](/docs/erp-home/registers/items/create-new-item) artikla.       
 - **Opis artikla**: prikazuje opis artikla ako je tip Napomena ili Nekodificirani.     
-- **Prototip**: prikazuje eventualni povezani [Prototip](/docs/erp-home/registers/production/standardization/new-prototype) collegato.          
+- **Prototip**: prikazuje eventualni povezani [Prototip](/docs/erp-home/registers/production/standardization/new-prototype).          
 - **Količina/UM/Cijena**: sadrži količinu, jedinicu mjere i cijenu odabranog artikla.       
 - **Alternativna količina**: sadrži eventualnu alternativnu količinu i alternativnu jedinicu mjere.    
-- **UM Cijena**: ako je označeno ovim flagom, jedinična cijena množi se s alternativnom količinom kako bi se dobio iznos.    
+- **UM Cijena**: ako je označeno ovom opcijom, jedinična cijena množi se s alternativnom količinom kako bi se dobio iznos.    
 - **Cjenik**: moguće je povezati cjenik iz kojeg se preuzima cijena artikla, uz **Tip skale** koji definira primijenjeni popust.     
 - **Ručno unesena cijena**: ovaj flag označava da je cijena unesena ručno, pa se cijena iz cjenika ne uzima u obzir.        
 - **Ažuriraj cijenu iz resursa**: ovaj flag, ako je postavljen, mijenja polje *Cijena* unoseći isti iznos iz kolone *Prihod* kartica *Resursi*; može se koristiti, na primjer, kada iznos retka u potpunosti ovisi o vremenu utrošenom od strane Resursa.  
@@ -129,8 +129,8 @@ U ovoj kartici moguće je navesti Prihode ostvarene radom različitih resursa. D
 - **Resurs**: zahtijeva unos prethodno šifriranog [Resursa](/docs/project-management/registers/employee/new-employee) koji je obavio aktivnost.      
 - **Jedinica mjere**: sadržava jedinicu mjere koja se koristi za resurs; predlaže se ona zadana u šifrarniku resursa, no može se promijeniti.     
 - **Količina / Jedinični trošak / Ukupni trošak**: Ukupni trošak automatski se izračunava množenjem unesene količine i jediničnog troška.       
-- **Postotak / Vrijednost**: u ova polja moguće je unijeti eventualni ricarico koji se primjenjuje na Ukupni trošak, bilo u postotku ili u apsolutnom iznosu.       
-- **Prihod**: u ovom stupcu automatski se izračunava Ukupni trošak uvećan za ricarico.          
+- **Postotak / Vrijednost**: u ova polja moguće je unijeti eventualnu maržu koji se primjenjuje na Ukupni trošak, bilo u postotku ili u apsolutnom iznosu.       
+- **Prihod**: u ovom stupcu automatski se izračunava Ukupni trošak uvećan za maržu.          
 - **Napomena**: polje za unos slobodnih bilješki.      
 - **Ekvivalent puno radno vrijeme**: ovdje se unosi koliko dane/sati resursa odgovaraju prema standardnom radnom vremenu tvrtke (npr. ako resurs radi pola radnog vremena, 1 njegov radni dan odgovara 0,5 standardnih radnih dana).      
 
@@ -140,8 +140,8 @@ U ovoj kartici moguće je navesti Prihode ostvarene upotrebom materijala.
 U prvim stupcima tablice može se unijeti kodificirani ili nekodificirani artikl, odnosno napomena, njegova eventualna varijanta te PDV. Sljedeći stupci su:      
 - **Količina / Jedinični trošak / Ukupni trošak**: Ukupni trošak automatski se izračunava množenjem unesene količine i jediničnog troška.       
 - **Vrsta izvora troška**: omogućuje odabir izvora za popunjavanje stupca *Jedinični trošak*, među opcijama: zadnji trošak, prosječni trošak, standardni trošak, neto cjenik dobavljača, narudžba dobavljača ili ulazna faktura. Zadana vrijednost definira se u [Parametrima ponude](/docs/configurations/parameters/sales/offer-parameters).    
-- **Postotak / Vrijednost**: omogućuje unos eventualnog ricarica koji se primjenjuje na Ukupni trošak, u postotku ili apsolutnom iznosu.      
-- **Prihod**: ovaj stupac automatski prikazuje Ukupni trošak uvećan za ricarico.        
+- **Postotak / Vrijednost**: omogućuje unos eventualne marže koji se primjenjuje na Ukupni trošak, u postotku ili apsolutnom iznosu.      
+- **Prihod**: ovaj stupac automatski prikazuje Ukupni trošak uvećan za maržu.        
 - **Opis dobavljača**: predlaže se preferirani dobavljač iz šifrarnika artikla, ali se može izmijeniti. Ako je u stupcu *Vrsta izvora troška* odabran cjenik dobavljača, koristi se cjenik koji je važeći za tog dobavljača.
 Također, taj će dobavljač biti nositelj **Zahtjeva za ponudu** generiranog iz ovog materijala.  
 - **Broj / Datum zahtjeva**: prikazuje eventualno kreiran **Zahtjev za ponudu** za materijal. Kada se nalazite na kartici *Materijali*, na traci izbornika pojavljuje se tipka *Kreiraj zahtjev za ponudu*, koja generira RDO za odabrani materijal.     
@@ -152,7 +152,7 @@ Ostale kartice jednake su onima u ne-hijerarhijskoj ponudi.
 #### Posebne tipke
 
 > **Kreiraj novi prototip**: ova tipka stvara [Prototip](/docs/erp-home/registers/production/standardization/new-prototype) za odabrani redak artikla; referenca na generirani predračun prikazuje se u kartici Podaci artikla, polje Predračun. Prototip se zatim može uređivati u odgovarajućem modulu.       
-> **Poveži prototip**: ovom tipkom moguće je povezati ponudu s već postojećim[Prototipo](/docs/erp-home/registers/production/standardization/new-prototype) già esistente; viene aperto un help nel quale poter scegliere tra i prototipi disponibili per quell'articolo.       
+> **Poveži prototip**: ovom tipkom moguće je povezati ponudu s već postojećim [Prototipom](/docs/erp-home/registers/production/standardization/new-prototype); otvorit će se prozor za odabir u kojem je moguće izabrati jedan od dostupnih prototipova za taj artikl.
 > **Otvori prototip**: ova tipka je aktivna ako odabrani redak artikla već ima pridruženi Prototip te omogućuje njegovo otvaranje.        
 > **Uvoz iz projekta**: ova funkcija otvara pomoćnik Artikl projekta, gdje je moguće odabrati artikle iz nekog projekta koje želimo uključiti u prodajnu ponudu. Prozor se automatski otvara s filtrom postavljenim na kupca kojem pripada ponuda, kako bi se prikazali samo njegovi projekti.      
 > **Novi podređeni redak**: omogućuje dodavanje projekta/retka koji će biti podređen odabranom retku.          
@@ -172,7 +172,7 @@ Mogu se unijeti samo popusti, izraženi u postotku, koji će se primijeniti na u
 
 Popusti uneseni u ovom odjeljku izračunavaju se i prikazuju na svakom artiklu dokumenta, u *kartica Artikli > kartica Popusti/Cjenici*.
 
-**Tip/Opis popusta**: omogućava odabir tipologije popusta (predefinirane u [Tipovima popusta](/docs/configurations/tables/general-settings/discount-types)), dodijeljujući tipologiji prioritet primjene popusta i hoće li se popust obračunavati na osnovicu ili kaskadno u odnosu na već prethodno primijenjene popuste.
+**Tip/Opis popusta**: omogućava odabir tipologije popusta (predefinirane u [Tipovima popusta](/docs/configurations/tables/general-settings/discount-types)), dodjeljujući tipologiji prioritet primjene popusta i hoće li se popust obračunavati na osnovicu ili kaskadno u odnosu na već prethodno primijenjene popuste.
 **Prioritet**: predstavlja prioritet primjene popusta; redoslijed koji se primjenjuje odvija se na rastući način. 
 **Kaskadni/Osnovni**: za definirati da li izračun popusta koristi kao osnovu (cijena * količina) - (već obračunati popusti) ili (cijena * količina).  
 **Vrijednost**: numerička vrijednost popusta koji treba primijeniti.  
