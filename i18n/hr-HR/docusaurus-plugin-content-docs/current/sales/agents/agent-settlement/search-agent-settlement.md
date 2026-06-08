@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Obrazac se otvara putem putanje **Prodaja > Trgovački predstavnici > Obračun trgovačkih predstavnika > Obračun trgovačkih predstavnika**.
 
-Omogućuje pretraživanje svih dokumenata s ciljem njihovog pregleda, uređivanja i po potrebi brisanja, ili dodavanja novog dokumenta; prozor se sastoji od područja filtriranja i rezultatne mreže.
+Omogućuje pretraživanje svih dokumenata s ciljem njihovog pregleda, uređivanja i po potrebi brisanja, ili dodavanja novog dokumenta; prozor se sastoji od područja filtriranja i pregleda rezultata.
 
 Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na gumb **Traži** u *gornjem izborniku* kako biste vidjeli rezultate unutar prikaza rezultata.
 
