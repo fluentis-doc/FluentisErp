@@ -1,23 +1,26 @@
 ---
-title: Pretraživanje Ponuda
+title: Pretraga ponuda
 sidebar_position: 2
 ---
 
-Obrazac se otvara putem putanje **Prodaja > Ponude > Pretraživanje ponuda**.
+Forma se otvara putem putanje **Prodaja > Ponude > Pretraga ponuda**.
 
-Omogućuje pretraživanje svih dokumenata radi pregleda, uređivanja, brisanja ili unosa novog dokumenta. Prozor se sastoji od područja za filtriranje i rezultatne mreže.
+Omogućava pretragu svih dokumenata radi pregleda, izmjene, brisanja ili unosa novog dokumenta. Prozor se sastoji od područja za filtriranje i prikaza rezultata.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** u *traci za vrpcu* kako biste vidjeli rezultate unutar rezultatne mreže.
+Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Traži** u *alatnoj traci* kako bi se rezultati prikazali u tabeli rezultata.
 
-Za otvaranje pojedinosti o dokumentu, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gumb **Uredi** (omogućuje ulazak u pojedinosti i uređivanje) ili na gumb **Pregled** (omogućuje ulazak u pojedinosti, ali bez mogućnosti uređivanja).
+Za otvaranje detalja dokumenta dovoljno je odabrati dokument i dvaput kliknuti mišem ili kliknuti na dugme **Izmijeni** (omogućava pregled i izmjenu podataka) ili **Prikaži** (omogućava samo pregled podataka bez mogućnosti izmjene).
 
-*Vidi također*:     
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)              
-Dodavanje novih polja u obrasce pretraživanja    
+*Vidi također*:  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u obrasce za pretragu
 
-Iz ove forme također možete **Kreirati novu ponudu** pritiskom na gumb **Novo**. 
+Iz ove forme moguće je i **Kreirati novu ponudu** klikom na dugme **Novo**.
 
-*Posebni gumbi*
-> **Dupliciraj**: : gumb za dupliciranje ponude. Omogućuje stvaranje kopije dokumenta, zadržavajući sve uvjete izvornog dokumenta, ali s trenutačnim podacima. Koristi se za česte unos ponuda istom klijentu. Klikom na gumb sustav će stvoriti novu ponudu, a pojavit će se skočni prozor s sažetkom osnovnih podataka o ponudi, poput starog broja, tipa, godine i novog broja. Da biste potvrdili stvaranje nove ponude, jednostavno kliknite gumb **OK**;    
-> **Nova verzija**: gumb za stvaranje nove verzije odabrane ponude kako bi se sačuvala povijest prethodnih ponuda; primjerice, koristi se prilikom ažuriranja cijene prethodno ponuđenog proizvoda;       
-> **Konverzija**: gumb koji omogućuje pretvaranje prodajne ponude u prodajnu narudžbu. Da bi postupak funkcionirao, prvo morate postaviti vrstu narudžbe koja će se generirati za tu [Vrstu Ponude](/docs/configurations/tables/sales/sales-offer-type) u tablici Vrste ponuda. Osim toga, ponuda se može unijeti samo ako postoji potvrda datuma; inače će sustav upozoriti korisnika putem skočnog prozora da je potrebno prvo potvrditi ponudu. Ako su svi potrebni podaci uneseni, kada pokrenete postupak, sustav će stvoriti novu narudžbu kupca s podacima iz ponude, koju možete pregledati i urediti u prozoru [Pretraživanje narudžbi kupaca](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders), a korisnika će obavijestiti o uspješnoj konverziji putem skočnog prozora koji sadrži broj pretvorene ponude i verziju te poruku koja označava broj narudžbe kupca generiran iz konverzije.
+### Specifična dugmad
+
+> **Dupliciraj**: omogućava kreiranje kopije postojeće ponude. Nova ponuda zadržava sve uslove originalnog dokumenta, ali koristi aktuelne podatke. Funkcija je korisna za često kreiranje ponuda istom kupcu. Nakon klika na dugme sistem kreira novu ponudu i prikazuje prozor sa sažetkom osnovnih podataka, uključujući stari broj, vrstu dokumenta, godinu i novi broj ponude. Kreiranje se potvrđuje klikom na dugme **OK**.
+
+> **Nova verzija**: kreira novu verziju odabrane ponude kako bi se sačuvala historija prethodnih verzija. Koristi se, na primjer, kada je potrebno ažurirati cijenu ili druge podatke prethodno poslane ponude.
+
+> **Konverzija**: omogućava pretvaranje prodajne ponude u prodajnu narudžbu. Da bi postupak bio moguć, potrebno je prethodno definisati vrstu narudžbe koja će se generisati za odabranu [Vrstu ponude](/docs/configurations/tables/sales/sales-offer-type) u šifrarniku vrsta ponuda. Također, ponuda mora imati unesen datum potvrde; u suprotnom će sistem prikazati upozorenje da je potrebno prvo potvrditi ponudu. Ako su svi potrebni podaci uneseni, pokretanjem procedure sistem generiše novu narudžbu kupca na osnovu podataka iz ponude. Generisana narudžba može se pregledati i uređivati kroz formu [Pretraga narudžbi kupaca](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders). Po završetku konverzije sistem prikazuje poruku sa brojem konvertovane ponude, verzijom ponude i brojem kreirane narudžbe kupca.
