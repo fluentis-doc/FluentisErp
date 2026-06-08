@@ -1,102 +1,133 @@
 ---
-title: Početne i periodične procjene
+title: Početne i periodične procene
 sidebar_position: 2
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Kvalifikacije dobavljača > Početne i periodične procjene**
-
+Upravljanje se nalazi na putanji **Kvalitet > Kvalifikacija dobavljača > Početne i periodične procene**.
 
 :::important Čemu služi
-*Početne i periodične procjene* jedna je od dostupnih metoda evaluacije dobavljača.   
-Ova subjektivna metoda je ručna i obično se koristi za početne i naknadne evaluacije.   
+*Početne i periodične procene* predstavljaju jedan od dostupnih metoda evaluacije dobavljača.
 
-Upravljanje omogućuje umetanje novih *Početnih i periodičnih procjena* ili pretraživanje postojećih kako bi se pregledale, izmijenile ili izbrisale.   
+Ova subjektivna metoda je ručna i najčešće se koristi za početnu kvalifikaciju dobavljača, kao i za periodične naknadne procene.
+
+Upravljanje omogućava unos novih *Početnih i periodičnih procena* ili pretragu postojećih radi pregleda, izmene ili brisanja.
 :::
 
+## Dugmad za upravljanje
 
-## Tipke za upravljanje
+### ![](/img/neutral/common/search.png) Pretraga početnih i periodičnih procena
 
+Forma se sastoji od dela za filtriranje i dela sa rezultatima.
 
-### ![](/img/neutral/common/search.png) Pretraga Početnih i periodičnih procjena
+Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Traži** kako bi se podaci prikazali u tabeli rezultata.
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se klikne tipka **Traži** da bi se vidjeli podaci u pregledu rezultata.
+### ![](/img/neutral/common/new.png) Unos početnih i periodičnih procena
 
+Za unos nove *Početne i periodične procene* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
-### ![](/img/neutral/common/new.png) Unos Početnih i periodičnih procjena
+Za kreiranje novog zapisa obavezno je uneti sledeća polja:
 
-Za unos novih *Početnih i periodičnih procjena* klikne se na prvi prazan redak u pregledu ili pritisne tipka **Novo**.   
-Za novi zapis moraju se unijeti barem obavezna polja koja zahtijeva program: **Datum procjene**, **Dobavljač** i **Tip procjene**.
+- **Datum procene**
+- **Dobavljač**
+- **Vrsta procene**
 
+### ![](/img/neutral/common/select-all.png) Poveži kontrolnu listu
 
-### ![](/img/neutral/common/select-all.png) Pridruži Check-listu
+Ovo dugme je omogućeno samo kada je izabrana jedna *Početna i periodična procena* i kada izabrani *Dobavljač* još nije evaluiran.
 
-Ova tipka je omogućena samo ako se odabere samo jednu *Početna i periodična procjena*, a *Dobavljač* još nije evaluiran.   
-Pojavljuje se *Pomoć za kontrolnu listu* s koje se može odabrati samo jedna takva lista.
-Ako za redak već postoji *Kontrolna lista*, pojavit će se upit želi li se zamijeniti postojeća lista (i pripadajuća *Pitanja*) s novoodabranom *Kontrolnom listom*.
+Prikazuje se pomoćna lista *Kontrolnih lista* iz koje je moguće odabrati samo jednu stavku.
 
+Ako je za zapis već povezana *Kontrolna lista*, sistem će postaviti pitanje da li želite da zamenite postojeću listu i pripadajuća *Pitanja* novoizabranom *Kontrolnom listom*.
 
-## Upravljani podaci
+## Podaci kojima se upravlja
 
+### Početne i periodične procene
 
-### Početne i periodične procjene
+Ova lista sadrži osnovne informacije o *Početnoj i periodičnoj proceni*.
 
-Ovo je popis na koji se unose glavni podaci iz *Početne i periodične procjene*.   
-Popis se sastoji od sljedećih podataka:  
-> **Datum procjene**: (obavezno) ovo je datum kada je evaluacija provedena.   
-> Prilikom unosa nove evaluacije, automatski se prikazuje današnji datum.   
+Podaci kojima se upravlja su:
+
+> **Datum procene**: (obavezno polje) datum kada je evaluacija izvršena.
 >
-> **Dobavljač**: (obavezno) je naziv tvrtke *Dobavljača* koji se ocjenjuje.    
+> Prilikom kreiranja nove procene automatski se predlaže tekući datum.
 >
-> **Tip procjene**: (obavezno polje) je šifra *Vrste evaluacije*.   
-> Prilikom unosa nove evaluacije, predlaže se *Vrsta evaluacije* naznačena u *Parametrima kvalifikacije dobavljača*.   
+> **Dobavljač**: (obavezno polje) naziv kompanije *Dobavljača* koji se ocenjuje.
 >
-> **Kontrolna lista**: ovo je šifra za *Kontrolnu listu*.   
-> Prilikom unosa *Dobavljača*, automatski se prikazuje *Kontrolna lista* koja se nalazi u njegovim *Računovodstvenim podacima > Podaci o kvaliteti* i povezana *Pitanja*.   
-> Uređivanje *Kontrolne liste* zamjenjuje postojeće *Opise/Pitanja* na zahtjev.
+> **Vrsta procene**: (obavezno polje) šifra *Vrste procene*.
 >
-> **Inspektor**: je šifra *Inspektora* koji provodi evaluaciju.   
+> Prilikom kreiranja nove procene predlaže se *Vrsta procene* definisana u *Parametrima kvalifikacije dobavljača*.
 >
-> **Razlog procjene**: slobodne bilješke o temi, to je opis motivacije za evaluaciju.   
+> **Kontrolna lista (Check-list)**: šifra povezane *Kontrolne liste*.
 >
-> **Procjena**: ovo je *Ocjena* koju je *Inspektor* dao *Dobavljaču*.   
-> Ćelija je obojena bojama *pozadine* i *teksta* navedenima u tablici *Ocjene dobavljača*.   
-> Ako je dodijeljena *Ocjena* povezana s *Ocjenom dobavljača* s *Automatskom suspenzijom*, ocijenjeni *Dobavljač* bit će *Suspendiran* od *Datuma ocjenjivanja*.   
-> Suspenziju mora ručno vratiti odgovorna *Funkcija tvrtke*.   
-> Nakon što je *Ocjena* povezana, podaci o *Datumu ocjenjivanja*, *Dobavljaču* i *Vrsti ocjenjivanja* više se neće moći uređivati.   
+> Nakon izbora *Dobavljača*, automatski se predlaže *Kontrolna lista* definisana u njegovim *Računovodstvenim podacima > Podaci o kvalitetu*, zajedno sa povezanim *Pitanjima*.
 >
-> **Opis vrste procjene**: ovo je opis *Vrste procjene*.   
-> **Opis kontrolne liste**: ovo je opis *Kontrolne liste*.   
-> **Opis inspektora**: ovo je opis *Inspektora*.   
-> **Napomene**: bilješke u slobodnom obliku.   
-
+> Izmena *Kontrolne liste* zamenjuje postojeće *Opise/Pitanja* nakon potvrde korisnika.
+>
+> **Inspektor**: šifra *Inspektora* koji vrši procenu.
+>
+> **Razlog procene**: slobodne beleške koje opisuju razlog sprovođenja evaluacije.
+>
+> **Procena**: *Ocena* koju je *Inspektor* dodelio *Dobavljaču*.
+>
+> Polje se prikazuje bojama pozadine i teksta definisanim u tabeli *Ocene dobavljača*.
+>
+> Ako je izabrana *Ocena* povezana sa opcijom *Automatska suspenzija*, ocenjeni *Dobavljač* biće automatski označen kao *Suspendovan* počev od *Datuma procene*.
+>
+> Suspenziju mora ručno ukloniti odgovorna *Funkcija kompanije*.
+>
+> Nakon dodele *Ocene*, polja *Datum procene*, *Dobavljač* i *Vrsta procene* više nije moguće menjati.
+>
+> **Opis vrste procene**: opis *Vrste procene*.
+>
+> **Opis kontrolne liste**: opis povezane *Kontrolne liste*.
+>
+> **Opis inspektora**: opis izabranog *Inspektora*.
+>
+> **Napomene**: slobodne beleške.
 
 ### Opisi/Pitanja
 
-Ovo je popis pitanja/aktivnosti koje će se koristiti/izvoditi za evaluaciju dobavljača.   
-Popis se sastoji od sljedećih informacija:   
-> **Redoslijed**: ovo je slijed kojim se provode *pitanja/aktivnosti*.   
-> **Opis/Pitanje**: bilješke u slobodnom obliku o temi.   
-> **Odgovor**: bilješke u slobodnom obliku o temi.   
-> **Kategorija**: ovo je *Kategorija* povezana s *Opisom/Pitanjem* ako je preuzeto s *Kontrolne liste*.   
-> **Očekivana procjena**: ovo je minimalna *Razina ocjene* potrebna za ocjenu.   
-> **Težina (%)**: ovo označava *Težinu* (važnost), izraženu kao postotak, povezanu s *Opisom/Pitanjem* ako je preuzeto s *Kontrolne liste*.   
-> **Zabilježena procjena**: ovo je procijenjena *Razina ocjene*.   
-> Font postaje *crven* ako je *Otkrivena ocjena* niža od *Očekivane ocjene*.   
-> **Ocjena težine**: ovo je *Ocjena* koju sustav automatski dodjeljuje evaluaciji danoj određenom *Opisu/Pitanju* na temelju *Razine* *Otkrivene evaluacije*;
-> Ova se ocjena izračunava (Ocjena težine = Otkrivena Razina Evaluacije.Razina / 100 * Pitanje S Popisa Provjere.Postotak težine).
-> **Napomene**: bilješke u slobodnom obliku.
+Ova lista sadrži pitanja i aktivnosti koje se koriste tokom evaluacije dobavljača.
 
+Podaci kojima se upravlja su:
 
-:::tip Metoda korištena za izračun ocjene težine   
-Za svaki *Opis/Pitanje*, gdje su uneseni podaci *Težina (%)* i *Otkrivena ocjena*, primjenjuje se sljedeći izraz:
-- **Ocjena težine** = **Razina** od **Zabilježena procjene** / **100** * **Težina (%)**;
-- **Ocjena težine** = **15** / **100** * **20** = **3**.
+> **Redosled**: redosled izvršavanja *Pitanja/Aktivnosti*.
+>
+> **Opis/Pitanje**: slobodan tekst pitanja ili aktivnosti.
+>
+> **Odgovor**: slobodan tekst odgovora.
+>
+> **Kategorija**: *Kategorija* povezana sa *Opisom/Pitanjem* ukoliko je preuzeto iz *Kontrolne liste*.
+>
+> **Očekivana procena**: minimalni zahtevani *Nivo procene*.
+>
+> **Težina (%)**: procenat važnosti povezan sa *Opisom/Pitanjem* ukoliko je preuzeto iz *Kontrolne liste*.
+>
+> **Evidentirana procena**: procenjeni *Nivo procene*.
+>
+> Tekst se prikazuje crvenom bojom ukoliko je evidentirana procena niža od očekivane procene.
+>
+> **Ocena težine**: ocena koju sistem automatski izračunava na osnovu *Nivoa evidentirane procene* i definisane *Težine (%)*.
+>
+> Formula za obračun:
+>
+> `Ocena težine = Nivo evidentirane procene / 100 × Težina (%)`
+>
+> **Napomene**: slobodne beleške.
+
+:::tip Metoda izračunavanja ocene težine
+
+Za svaki *Opis/Pitanje* za koji su unete vrednosti *Težina (%)* i *Evidentirana procena*, primenjuje se sledeća formula:
+
+- **Ocena težine** = **Nivo evidentirane procene** / **100** × **Težina (%)**
+- Primer: **15 / 100 × 20 = 3**
+
 :::
-
 
 ### Dodatni podaci
 
- Moguće je unijeti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) generalno za *Početne i periodične procjene*.   
+Moguće je uneti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) za *Početne i periodične procene*.
 
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na uobičajeno funkcionisanje obrazaca, pogledajte sledeću poveznicu:
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+[Funkcionalnosti, dugmad i polja](/docs/guide/common).
