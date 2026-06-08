@@ -23,13 +23,13 @@ In questa tab sono contenute informazioni generali sull’intervento, come la **
 
 Gli stati previsti per l'intervento sono i seguenti: 
 - <u>Inserito</u>: stato iniziale dell'intervento, che indica un documento appena inserito. 
-- <u>Da approvare</u>: stato utilizzato per dare visibilità da parte della risorsa di aver inserito tutti i dati richiesti, effettua il ricalcolo delle spese per le condizioni inserite nell'intervento, aggiungendo eventuali indennità di trasferta etc. Viene generato il Piano di fatturazione per dare un'anteprima di cosa verrà fatturato. 
-- <u>Approvato</u>: stato utilizzato dalla persona responsabile di verificare gli interventi dichiarati dalle risorse, per il quale si genera la relativa dichiarazione attività per la risorsa. 
+- <u>Da approvare</u>: stato utilizzato per dare visibilità da parte della risorsa di aver inserito tutti i dati richiesti, effettua il ricalcolo delle spese per le condizioni inserite nell'intervento, aggiungendo eventuali indennità di trasferta etc. Viene generato il piano di fatturazione per dare un'anteprima di cosa verrà fatturato. 
+- <u>Approvato</u>: stato utilizzato dalla persona responsabile di verificare gli interventi dichiarati dalle risorse, per il quale si genera la relativa dichiarazione attività per la risorsa (in base alle apposite configurazioni nel tipo intervento). 
 - <u>Controllato</u>: stato per il quale l'intervento si considera fatturabile.
 - <u>Fatturato</u>: intervento fatturato. Questo stato non può essere assegnato manualmente. 
 - <u>Parzialmente Fatturato</u>: stato che identifica un intervento con alcune righe di invoice plan fatturate, ed altre no. 
 - <u>Chiuso forzatamente</u>: stato che identifica un intervento chiuso forzatamente che quindi non è stato nè verrà mai fatturato. E' possibile assegnare anche una causale di sospensione personalizzata.
-- <u>Sospeso</u>: stato che identifica un intervento temporaneamente sospeso, escluso dalla fatturazione, ma che potrà essere ripristinato più avanti. 
+- <u>Sospeso</u>: stato che identifica un intervento temporaneamente sospeso, escluso dalla fatturazione, ma che potrà essere ripristinato più avanti. E' possibile assegnare anche una causale di sospensione personalizzata.
 
 **Tab Pagamenti**, **Tab sconti** permettono la configurazione di dati utili alle fatture che verranno emesse.
 
@@ -41,18 +41,19 @@ Gli stati previsti per l'intervento sono i seguenti:
 ## Spese
 Questa si suddivide in tre ulteriori sottogruppi:
 
-**Spese intervento sostenute** : indica le spese sostenute dalla risorsa, che di norma vengono proposte dall'anagrafica risorsa se presenti. Verranno inserite nella dichiarazione attività-tab Oneri di viaggio generata dall'intervento e potranno eventualmente essere marcate anche come da fatturare. Ogni riga potrà avere un suo allegato, ad es. un giustificativo di spesa. 
+**Spese intervento sostenute** : indica le spese sostenute dalla risorsa, che di norma vengono proposte dall'anagrafica risorsa se presenti. Verranno inserite nella dichiarazione attività-tab Oneri di viaggio generata dall'intervento e potranno eventualmente essere marcate anche come da fatturare. 
 
-**Spese intervento da fatturare**: indica le spese da fatturare al cliente, che di norma vengono proposte dall'anagrafica cliente se presenti. Possono anche derivare da spese sostenute marcate da fatturare. Verranno incluse nel Piano di fatturazione.
+Ogni riga potrà avere un suo allegato, ad es. un giustificativo di spesa, visibile nella sezione **Documenti allegati**.
+**Dettaglio spesa cumulata** evidenza se la spesa è stata sostenuta per più risorse, ed indica i rispettivi nominativi e quote. 
+
+**Spese intervento da fatturare**: indica le spese da fatturare al cliente, che di norma vengono proposte dall'anagrafica cliente se presenti. Possono anche derivare da spese sostenute marcate da fatturare. Verranno incluse nel piano di fatturazione.
 Saranno selezionabili soltanto le spese configurate appositamente come spese di tipo Viaggio. 
 
-**Altre spese**: altre spese generiche da includere nel Piano di fatturazione. 
-
-Contiene eventuali Oneri di viaggio, identificati da:
+Le spese sono identificate da:
 
 - **Risorsa**: risorsa che ha sostenuto la spesa, di default viene proposta la risorsa della testata;
-- **Tipo spese**: contiene la tipologia di onere, con la relativa **Descrizione**;   
-- **Data spesa**: data nella quale imputare la spesa;     
+- **Tipo spese**: indica la tipologia di spesa, con la relativa **Descrizione**; in base alla tipologia di spesa, si abilitano gli appositi campi. Ad es. nel caso di rimborso chilometrico, si abiliteranno i campi KM e Costo KM. Invece nel caso di spese come vitto ed alloggio, si abiliterà il campo importo spesa, e rimarranno disabilitati gli altri. 
+- **Data spesa**: data nella quale è stata sostenuta la spesa; viene proposta la data come da testata intervento, ma può essere variata;
 - **Importo spesa**: è possibile indicare direttamente l’importo della spesa, per esempio nel caso si trattasse del rimborso di un pasto;     
 - **KM**: contiene i chilometri percorsi con il relativo **Costo Km**;    
 - **Costo orario**: costo orario nel caso di spese di tipo "Ore Viaggio";    
@@ -61,17 +62,26 @@ Contiene eventuali Oneri di viaggio, identificati da:
 - **Ore viaggio**: indica le ore viaggio calcolate in base a data e ora;    
 - **Valore forfait**: in alternativa al Importo spesa è possibile avere un valore forfait. Generalmente viene compilato in anagrafica risorsa e proposto in automatico; non sarà modificabile dall'utente. Utilizzato nei casi in cui i rimborsi spettanti alla risorsa sono pre accordati e non modificabili dall'utente;
 - **IVA**: indica l’IVA da applicare;      
-- **Costo totale**: campo calcolato in base ai dati precedentemente inseriti che contiene il costo totale della spesa (es. km per costo km, ore viaggio per costo orario, etc);     
-- **Da rimborsare**: questo flag indica se l’onere è da rimborsare; 
-- **Allegati** indica se la riga contiene degli allegati associati;
-- **Spesa cumulativa**: indica la presenza di un dettaglio spesa cumulata;
+- **Costo totale**: campo calcolato in base ai dati precedentemente inseriti che contiene il costo totale della spesa (es. km moltiplicato per il costo km, ore viaggio moltiplicato per il costo orario, etc);     
+- **Rimborsabile**: questo flag indica se l’onere è da rimborsare; 
+- **Allegati** indica se la riga contiene degli allegati associati, visibili in dettaglio nel tab sottostante Documenti allegati;
+- **Spesa cumulativa**: indica la presenza di un dettaglio spesa cumulata, visibile in dettaglio nel tab sottostante di dettaglio;
 - **Tipo pagamento**: tipo pagamento utilizzato per sostenere la spesa;
 - **Nota**: eventuali note inserite dall'utente;
 
+Campi specifici per la tab **Spese intervento da fatturare**
+- **Importo spesa**: indica l'importo della spesa da fatturare, nel caso di valori fissi.
+- **Importo spesa fatturabile**: indica l'importo che verrà effettivamente portato nel piano di fatturazione e di conseguenza in fattura. Nel caso di spese gestite con configurazione "forfait", qui verrà riportato l'importo calcolato con le logiche del "forfait".
+Nel caso di spese provenienti dalla tab "Spese intervento sostenute", qui verrà riportato l'importo indicato in "importo spesa". Questa logica è stata adottata perchè ad es. la spesa sostenuta potrebbe essere di 12,73 euro, ma si desidera addebitare in fattura un importo diverso, magari arrotondato. Sarà quindi possibile modificare il valore nel campo Importo spesa fatturabile, indicano ad es. 15,00 , valore che verrà effettivamente fatturato.
+Per questa specifica casistica, nel campo Importo Spesa sarà quindi visibile l'importo originario sostenuto dalla risorsa, rispetto al valore portato effettivamente in fatturazione indicato nel campo Importo spesa fatturabile. 
+- **Totale fatturabile**: campo calcolato in base ai dati precedentemente inseriti che contiene l'importo totale della spesa (es. km moltiplicato per il costo km, ore viaggio moltiplicato per il costo orario o nel caso di valori fissi come Importo spesa fatturabile rimarrà uguale); 
+- **In fattura**: indica se la spesa dovrà essere inclusa nel piano di fatturazione;
  
  Nel caso di Tipo Intervento con flag Esterno abilitato, le spese previste per la risorsa non verranno proposte nel tab Spese Sostenute. Invece le spese inserite nella tab Spese-Intervento in anagrafica cliente verranno proposte nella tab Spese da fatturare in base alle configurazioni. 
 
-Bottone **Spese da Fatturare**: presente nella tab "Spese intervento sostenute", selezionando una spesa e cliccando sul bottone, questa verrà portata in automatico nella tab "Spese Intervento da Fatturare". Se il tipo spesa è già presente nelle spese da fatturare oppure il cliente ha configurato un forfait, verrà chiesto all'utente la converma per procedere con il ricalcolo. 
+ **Altre spese**: altre spese generiche da includere nel Piano di fatturazione. 
+
+Bottone **Spese da Fatturare**: presente nella tab "Spese intervento sostenute", selezionando una spesa e cliccando sul bottone, questa verrà portata in automatico nella tab "Spese Intervento da Fatturare". Il valore Importo Spesa verrà riportato sia nel campo Importo Spesa che nel campo Importo spesa fatturabile della tab Spese intervento da fatturare (vedasi indicazioni sulla gestione di questo campo nel paragrafo precedente). Se il tipo spesa è già presente nelle spese da fatturare oppure il cliente ha configurato un forfait, verrà chiesto all'utente la converma per procedere con il ricalcolo. 
 
 Bottone **Ricalcola spese**: da utilizzare solo all'occorrenza, la stessa procedura viene già eseguita al cambio stato intervento da "inserito" in "da approvare". 
 La procedura effettua: 
