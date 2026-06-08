@@ -50,7 +50,7 @@ Popis se sastoji od sljedećih podataka:
 > **Tip procjene**: (obavezno polje) je šifra *Vrste evaluacije*.   
 > Prilikom unosa nove evaluacije, predlaže se *Vrsta evaluacije* naznačena u *Parametrima kvalifikacije dobavljača*.   
 >
-> **Kontrolna lista**: ovo je šifra za *Kontrolnu listu*.   
+> **Kontrolna lista (*Check-list*)**: ovo je šifra za *Kontrolnu listu*.   
 > Prilikom unosa *Dobavljača*, automatski se prikazuje *Kontrolna lista* koja se nalazi u njegovim *Računovodstvenim podacima > Podaci o kvaliteti* i povezana *Pitanja*.   
 > Uređivanje *Kontrolne liste* zamjenjuje postojeće *Opise/Pitanja* na zahtjev.
 >
