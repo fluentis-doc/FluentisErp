@@ -3,8 +3,17 @@ title: Postavke
 sidebar_position: 1
 ---
 
-Modul se nalazi u području **Prodaje > Ponude**.
+Modul se nalazi u području **Prodaja > Ponude**.
 
-Preporučuje se postavljanje niza parametara prije nego što krenete s generiranjem ponuda, uključujući tablične predefinirane postavke i ispravnu parametrizaciju osnovnih algoritama.
+Prije početka rada s ponudama preporučuje se definisanje osnovnih parametara, šifarnika i postavki koje utiču na generisanje i obradu ponuda.
 
-**Tabelice**: važni obrasci uključuju  [Numeraciju ponuda](/docs/configurations/tables/fluentis-numerations), [Vrste ponuda](/docs/configurations/tables/sales/sales-offer-type) a nalaze se u odjeljku **Tablice > Prodaja**.
+Potrebno je pravilno podesiti numeracije dokumenata, vrste ponuda i ostale parametre koji određuju ponašanje sistema prilikom kreiranja i upravljanja ponudama.
+
+## Potrebni šifrarnici
+
+Važni obrasci koje je potrebno prethodno definisati su:
+
+- [Numeracije ponuda](/docs/configurations/tables/fluentis-numerations)
+- [Vrste ponuda](/docs/configurations/tables/sales/sales-offer-type)
+
+Navedeni obrasci nalaze se u meniju **Konfiguracija > Tabele > Prodaja**.
