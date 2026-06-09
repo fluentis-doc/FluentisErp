@@ -95,7 +95,7 @@ keywords:
 
 > -	Creata stampa standard per la form Visualizzazione Bilancio con centri di costo.
 > -	FI - calcolo scritture di assestamento, revisione gestione arrotondamenti righe Cdc (#TT01506/26)
-> -	FI - Modificata contabilizzazione rata mutuo. Le date di competenza economica sui conti di costo e sui centri di costo vengono impostate pari alla data registrazione anche in presenza del parametro di inserimento “Nessuno per tipo conto servizi”. #TT00569/26
+> -	FI - Modificata contabilizzazione rata mutuo. Le date di competenza economica sui conti di costo e sui centri di costo vengono impostate pari alla data registrazione anche in presenza del parametro di inserimento “Nessuno per tipo conto servizi” (#TT00569/26)
 > -	FI - Creata stampa standard per la form Visualizzazione Bilancio con centri di costo (#TT01380/26)
 > -	MES - Dichiarazioni di produzione: se l’Ubicazione proposta per il versamento del Semilavorato WIP viene annullata nella Fase di un Ordine di produzione, durante la Dichiarazione di produzione viene proposta l’Ubicazione associata alla Causale di carico (se presente) altrimenti rimane vuota (#TT01629/26)
 > -	MS - M.R.P: corretta l’anomalia che, in presenza di un articolo gestito con dei valori di approvvigionamento e la richiesta di esecuzione MRP considerando anche il passato, proponeva dei reintegri nel passato (#TT01167/26, #TT01545/26)
