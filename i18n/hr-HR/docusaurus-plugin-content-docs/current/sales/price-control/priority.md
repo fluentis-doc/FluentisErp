@@ -1,13 +1,13 @@
 ---
-title: Prioritet dodele popusta
+title: Prioritet dodjele popusta
 sidebar_position: 3
 ---
 
-U ovoj tabeli mogu se definisati prioriteti koji će se koristiti u [Pretrazi popusta](/docs/sales/price-control/combination) za [Definisanje politika popusta](/docs/sales/price-control/definition).
+U ovoj tabeli mogu se definirati prioriteti koji će se koristiti u [Pretrazi popusta](/docs/sales/price-control/combination) za [Definiranje politika popusta](/docs/sales/price-control/definition).
 
-Obavezno je uneti šifru u ovu tabelu, u suprotnom se ona neće uzimati u obzir prilikom pretrage kombinacija.
+Obavezno je unijeti šifru u ovu tabelu, u suprotnom se ona neće uzimati u obzir prilikom pretrage kombinacija.
 
-Tabela se sastoji od dve kolone:
+Tabela se sastoji od dvije kolone:
 
 - **Šifra prioriteta**
 - **Vrsta kombinacije**
