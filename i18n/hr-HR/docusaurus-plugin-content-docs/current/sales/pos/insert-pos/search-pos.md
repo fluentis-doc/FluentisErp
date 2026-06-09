@@ -3,13 +3,13 @@ title: Traži POS
 sidebar_position: 1
 ---
 
-Obrazac se otvara putem putanje  **Prodaja > POS > Traži POS**.
+Obrazac se otvara putem putanje  **Prodaja > Maloprodajno mjesto > Maloprodajno mjesto**.
 
-Omogućuje pretraživanje svih dokumenata s ciljem pregleda, izmjene ili eventualnog brisanja ili unošenja novog dokumenta; prozor se sastoji od područja filtra i rezultatne mreže.
+Omogućuje pretraživanje svih dokumenata s ciljem pregleda, izmjene ili eventualnog brisanja ili unošenja novog dokumenta; prozor se sastoji od područja filtra i prikaza rezultata.
 
 Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na gumb **Traži** koji se nalazi na gornjem *izborniku* kako bi se rezultati prikazali unutar prikaza rezultata.
 
-Da biste otvorili detalje dokumenta, dovoljno je odabrati ga i dvaput kliknuti mišem ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u detalje i njihovo uređivanje) ili na gumb **Pregled** (omogućuje ulazak u detalje i njihovo pregledavanje, ali bez mogućnosti uređivanja).
+Da biste otvorili detalje dokumenta, dovoljno je odabrati ga i dvaput kliknuti mišem ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u detalje i njihovo uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u detalje i njihovo pregledavanje, ali bez mogućnosti uređivanja).
 
 *Vidi također*:     
 [Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)              
