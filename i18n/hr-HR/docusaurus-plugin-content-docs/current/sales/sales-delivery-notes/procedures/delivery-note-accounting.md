@@ -1,32 +1,48 @@
 ---
-title: Contabilizzazione DDT
+title: Knjiženje otpremnica
 sidebar_position: 2
 ---
 
-Tramite questa procedura si può creare una registrazione contabile dalle DDT.
+Ova procedura omogućuje generiranje računovodstvenih knjiženja na temelju otpremnica.
 
-### Contabilizzazione
+## Knjiženje
 
-Un DDT, per essere contabilizzato, deve soddisfare una serie di condizioni: nella sua testata deve aver impostato il flag 'Stampato'; il tipo DDT deve contenere la causale generale per la contabilizzazione.
+Da bi otpremnica mogla biti knjižena, mora zadovoljiti sljedeće uvjete:
 
-L'utente può usare i filtri di ricerca per trovare un certo DDT. Ci sono più opzioni per la registrazione contabile che si vuole creare: data registrazione uguale alla data documento; data competenza IVA uguale alla data documento; l'uso della causale industriale inserita per la registrazione del DDT nella contabilità industriale (quando necessario). 
+- u zaglavlju dokumenta mora biti uključena oznaka **Ispisano**
+- tip otpremnice mora imati definiranu opću knjižnu shemu za knjiženje
 
-*Pulsanti specifici*  
-> **Cerca DDT**: pulsante per cercare i DDT. Vengono proposti tutti i DDT stampati e non contabilizzati;  
-> **Contabilizzazione DDT**: esegue la contabilizzazione dei DDT selezionati.  
+Korisnik može koristiti filtre pretraživanja za pronalaženje željenih otpremnica.
 
+Prilikom knjiženja moguće je odabrati dodatne opcije:
 
-### Omaggi
+- datum knjiženja jednak datumu dokumenta
+- datum PDV obračuna jednak datumu dokumenta
+- korištenje industrijske knjižne sheme definirane za knjiženje otpremnica u troškovnom računovodstvu (kada je primjenjivo)
 
-L'utente ha la possibilità di decidere quali omaggi sono da contabilizzare. Per questo deve specificare la causale per la contabilizzazione omaggi e il conto per lo storno IVA.
+### Dostupne funkcije
 
-### Precedenti
+- **Pretraži otpremnice**: prikazuje sve ispisane i još neknjižene otpremnice.
 
-Permette di visualizzare le registrazioni contabili create con questa procedura.  
+- **Knjiženje otpremnica**: izvršava knjiženje odabranih otpremnica.
 
-*Pulsanti specifici*  
-> **Ricerca contabilizzazione**: pulsante per filtrare e visualizzare le registrazioni contabili;  
-> **Anteprima contabilizzazione**: pulsante per eseguire l'anteprima di stampa della contabilizzazione selezionata;  
-> **Visualizzazione registrazione**: pulsante per visualizzare la registrazione contabile selezionata;  
-> **Ripristina contabilizzazione**: pulsante per cancellare la contabilizzazione associata a più DDT;  
-> **Ripristina DDT**: pulsante per cancellare la contabilizzazione del DDT selezionato. 
+## Besplatni artikli
+
+Korisnik može odrediti koje besplatne artikle treba uključiti u knjiženje.
+
+Za ispravno knjiženje potrebno je definirati:
+
+- knjižnu shemu za knjiženje besplatnih artikala
+- konto za storniranje PDV-a
+
+## Povijest knjiženja
+
+Ova kartica omogućuje pregled računovodstvenih knjiženja generiranih ovom procedurom.
+
+### Dostupne funkcije
+
+- **Pretraži knjiženja**: filtrira i prikazuje prethodno kreirana knjiženja.
+- **Pregled knjiženja**: prikazuje pregled ispisa odabranog knjiženja.
+- **Prikaži knjiženje**: otvara odabrano računovodstveno knjiženje.
+- **Poništi knjiženje**: briše knjiženje povezano s više otpremnica.
+- **Poništi otpremnicu**: briše knjiženje povezano s odabranom otpremnicom.
