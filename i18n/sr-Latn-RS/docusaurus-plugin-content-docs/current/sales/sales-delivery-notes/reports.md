@@ -1,13 +1,68 @@
 ---
-title: Ispisi
+title: Izveštaji
 sidebar_position: 5
 ---
 
-Pristup različitim ispisima otpremnica dostupan je iz izbornika **Prodaja > Otpremnica > Ispis**.
+Dostupno je više standardnih izveštaja. Za pregled izveštaja potrebno je postaviti željene filtere i kliknuti na dugme **Pregled** na alatnoj traci.
 
-Funkcija **Ispis otpremnice** služi za masovno ispisivanje već unesenih otpremnica za prodaju u sustavu, prema odabranim filtima na početnoj formi. Prvi odabir koji se traži je između *privremenog* i *konačnog* ispisa: razlika između ove dvije vrste je da privremeni ispis nema nikakvog utjecaja na status otpremnice, dok se tiskanje na papir ili digitalno obavlja konačno, dovodeći dokument u status *Ispisano*. Prvi filtri koji su nam prikazani odnose se na informacije o zaglavlju dokumenata, poput tipa dokumenta, broja dokumenta i klijenta. U grupnom okviru *Napredno pretraživanje* moguće je označiti stanja otpremnica prema kojima se filtrira i projekt naznačen u zaglavlju dokumenta. U okviru *Artikl* moguće je filtrirati, osim po šifri artikla, i po drugim informacijama vezanim za retke u tijelu dokumenta, poput barkoda, opisa artikla ili postojanja projekta povezanog s redkom artikla. Da biste pokrenuli ispis, nakon što ste postavili željene filtre, dovoljno je pritisnuti gumb *Pregled* za dobivanje prikaza otpremnica na zaslonu. Napominjemo da pregled ispisa neće nikako promijeniti status dokumenta. Ako je potrebno tiskati na papir ili u datoteku, potrebno je pritisnuti gumb *Ispis*.
+Ova radnja prikazuje dokument na ekranu bez promene njegovog statusa.
 
-S **Listom otpremnica** moguće je ispisati popis otpremnica unesenih u sustav. Filtri koji se nude isti su kao i u prethodnom ispisa, uz mogućnost odabira redoslijeda prikaza računa između klijenta, broja otpremnice i vrste otpremnice.
+Ukoliko je potrebno odštampati dokument ili ga sačuvati u datoteku, potrebno je koristiti dugme **Štampa**.
 
+## Štampa otpremnica
 
-Više detalja o ovom predmetu možete pronaći u člancima: [Pretraživanje podataka u obrascima samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/common/operations-with-data/reports) 
+Ovaj izveštaj služi za masovnu štampu prodajnih otpremnica evidentiranih u sistemu, prema filterima definisanim u početnom obrascu.
+
+Prvi izbor odnosi se na vrstu štampe:
+
+- **Privremena štampa**
+- **Konačna štampa**
+
+Razlika između njih je u tome što privremena štampa ne menja status otpremnice, dok konačna štampa ažurira status dokumenta na **Odštampano**.
+
+Početni filteri omogućavaju izbor podataka iz zaglavlja dokumenta, kao što su:
+
+- vrsta dokumenta
+- broj dokumenta
+- kupac
+
+U grupi **Napredna pretraga** moguće je filtrirati dokumenta prema statusima otpremnica i projektu povezanom sa zaglavljem dokumenta.
+
+U grupi **Artikal** moguće je dodatno filtrirati prema:
+
+- šifri artikla
+- barkodu
+- opisu artikla
+- projektu povezanom sa stavkom artikla
+
+Svaka otpremnica štampa se zasebno i sadrži sledeće sekcije:
+
+- Zaglavlje sa logotipom i podacima kompanije
+- Podaci o otpremnici (vrsta, broj, datum i slično)
+- Podaci o kupcu (PIB, agent i slično)
+- Stavke otpremnice (šifra artikla, količina, cena i slično)
+- Rekapitulacija otpremnice (ukupna vrednost robe, troškovi, porezi i slično)
+
+## Lista otpremnica
+
+Ovaj izveštaj omogućava štampu liste svih otpremnica evidentiranih u sistemu.
+
+Dostupni filteri isti su kao u prethodnom izveštaju, uz dodatnu mogućnost sortiranja prema:
+
+- kupcu
+- broju dokumenta
+- vrsti dokumenta
+
+U izveštaju se otpremnice grupišu prema izabranom kriterijumu sortiranja.
+
+Za svaku otpremnicu prikazuju se podaci kao što su:
+
+- organizaciona jedinica
+- iznos
+- artikal
+- PDV
+- ostali relevantni podaci
+
+Svaki red izveštaja odnosi se na jednu stavku otpremnice.
+
+Za više detalja pogledajte članak: [Pregled i štampa](/docs/guide/common/operations-with-data/reports)
