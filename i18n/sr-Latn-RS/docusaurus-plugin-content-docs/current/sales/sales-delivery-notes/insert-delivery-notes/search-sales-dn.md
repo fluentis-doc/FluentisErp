@@ -3,37 +3,54 @@ title: Pretraga otpremnica
 sidebar_position: 1
 ---
 
-Obrazac se otvara putem putanje **Prodaja > Otpremnice > Pretraga Otpremnica**
+Obrazac se otvara putem putanje **Prodaja > Otpremnice > Otpremnice**.
 
-Omogućuje pretraživanje svih dokumenata radi pregleda, uređivanja ili eventualnog brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja za filtriranje i prikaza rezultata.
+Omogućava pretragu svih dokumenata radi pregleda, izmene, brisanja ili kreiranja novog dokumenta. Prozor se sastoji od dela za filtriranje i prikaza rezultata.
+Nakon podešavanja željenih filtera dovoljno je kliknuti na dugme **Traži** u *gornjem meniju* kako bi se rezultati prikazali u listi rezultata.
+Za otvaranje detalja dokumenta dovoljno je označiti dokument i dvaput kliknuti mišem ili koristiti dugme:
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** u *gornjem izborniku* da biste vidjeli rezultate unutar prikaza rezultata.
+- **Izmeni** – otvara dokument u režimu izmene
+- **Prikaži** – otvara dokument samo za pregled, bez mogućnosti izmene
 
-Za otvaranje pojedinosti o dokumentu, dovoljno ga je odabrati i dvaput kliknuti mišem ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u pojedinosti i uređivanje) ili na gumb **Pregled** (omogućuje ulazak u pojedinosti i pregled, ali ne i uređivanje).
+*Vidi takođe:*
 
-*Vidi također*:   
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)            
-Dodavanje novih polja u obrasce pretraživanja    
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)
 
+Dodavanje novih polja u obrasce za pretragu
 
-*Posebni gumbi*:
+## Posebna dugmad
 
-> **Novo**: gumb omogućuje [Stvaranje nove Otpremnice](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn).   
-> **Dupliciraj**: gumb omogućuje stvaranje kopije dokumenta, prenoseći sve uvjete izvornog dokumenta, ali s trenutnim podacima.
-Koristi se za česte isporuke sličnih proizvoda istog subjekta dokumenta.
+> **Novo**: omogućava kreiranje [Nove otpremnice](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn).
+> **Dupliraj**: omogućava kreiranje kopije dokumenta, uz preuzimanje svih uslova iz izvornog dokumenta, ali sa trenutnim datumima.
+Koristi se za česte isporuke sličnih proizvoda istom poslovnom partneru.
 
-*Postupak*:
+### Postupak dupliranja
 
-> 1. odaberite dokument koji želite duplicirati i kliknite na gumb **Dupliciraj**;  
-> 2. aplikacija će započeti stvaranje dokumenta i otvoriti skočni prozor **Dupliciraj sažetak** gdje možete unijeti preostale podatke;  
-> 3. kliknite na **OK** da potvrdite operaciju.
+1. Označite dokument koji želite da duplirate i kliknite na dugme **Dupliraj**.
+2. Sistem će pokrenuti proceduru kreiranja novog dokumenta i otvoriti prozor **Rezime dupliranja** u kojem je moguće uneti dodatne podatke.
+3. Kliknite na **OK** kako biste potvrdili operaciju.
 
-**Storno**: gumb omogućuje *djelomično* ili *potpuno* storniranje dokumenta. Ovom funkcijom možete stvoriti dokument storna koji će izvršiti *storniranje* (u nabavi) / *knjiženje* (u prodaji) skladišta.
+> **Storno**: omogućava **delimično** ili **potpuno** storniranje dokumenta.
 
-*Postupak*:
+Ovom funkcijom moguće je kreirati storno dokument koji će izvršiti:
+- storno skladišnog kretanja (u nabavci)
+- suprotno knjiženje skladišnog kretanja (u prodaji)
 
-> 1. odaberite dokument koji želite stornirati i kliknite na gumb **Storno**. Aplikacija će otvoriti skočni prozor sa svim redovima artikla iz izvornog dokumenta;    
-> 2. unutar ovog obrasca unesite: **Vrsta dokumenta** storna koju želite stvoriti i, za svaki artikl, navedite **Količinu za storno**, **Storno uzrok** i omogućite parametar **Za storniranje**;  
-> 3. kliknite na **OK** da potvrdite operaciju.
+### Postupak storniranja
 
-Veza između dokumenta storna i izvornog dokumenta mora se ručno unijeti u **Zaglavlje** novog dokumenta.
+1. Označite dokument koji želite da stornirate i kliknite na dugme **Storno**.
+
+   Sistem će otvoriti prozor sa svim stavkama artikala iz izvornog dokumenta.
+
+2. U obrascu unesite:
+
+   - **Vrstu storno dokumenta**
+   - **Količinu za storno** za svaku stavku
+   - **Razlog storna**
+   - uključite opciju **Za storno**
+
+3. Kliknite na **OK** kako biste potvrdili operaciju.
+
+:::note Napomena
+Vezu između storno dokumenta i izvornog dokumenta potrebno je ručno uneti u sekciji **Zaglavlje** novog dokumenta.
+:::
