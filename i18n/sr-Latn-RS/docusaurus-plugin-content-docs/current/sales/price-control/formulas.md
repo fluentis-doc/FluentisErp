@@ -1,23 +1,76 @@
 ---
-title: Prodajna formula
+title: Formula za ažuriranje politike cena/popusta
 sidebar_position: 4
 ---
 
-Na ovoj formi možete povezati pravila između dokumenata kupovine i prodaje kako biste automatski promijenili cijenu stavki kada dobavljač pošalje novi katalog.  
-U prvom prikazu nalaze se **Šifra** i **Opis** formula.        
-U drugom prikazu nalaze se izvorni dokumenti, odredišni dokumenti i formule.  
-Moguće je primijeniti do 5 operacija za isti redak. Razmatraju se samo stupci s sadržajem, prazni stupci neće biti ažurirani niti uzeti u obzir kao izvor promjene. Korisnik stoga treba popuniti samo stupce koji ga zanimaju za izvor, odredište, operaciju i operativnu vrijednost. Razmotrimo stupce u drugom prikazu.     
-**Odredište vrste prodajnog cjenika**: sadrži tip prodajnog cjenika na koji se odnosi promjena kada se primijeni formula u ovom retku;    
-**Konto/Podkonto/opis odredišnje prodajne liste**: sadrži prilagođenu prodajnu listu koja prima promjenu;           
-**Tip cjenika dobavljača odredišta**: sadrži Tip cjenika dobavljača na koji se odnosi promjena;      
-**Konto/Podkonto /Opis dobavljačkog cjenika odredišta**: sadrži prilagođeni nabavni cjenik koji prima promjenu;        
-**Odredište računa s popisom prodajnih cjenika ili cjenik kupnje**: sadrži izvorni tip prodajnog cjenika na koji će se primijeniti Operator;       
-**Konto/Podkonto /opis izvornog klijenta**: sadrži prilagođeni cjenik koji se uzima kao izvor;  
-**Izvorni tip dobavljačkog cjenika**: sadrži izvorni tip dobavljačkog cjenika;  
-**Konto/Podkonto /opis izvornog dobavljačkog cjenika**: sadrži prilagođeni dobavljački cjenik koji se uzima kao izvor;  
-**Izvor troškova skladišta**: ovaj se stupac popunjava ako se trošak prosječne, posljednje ili standardne vrijednosti stavke želi koristiti kao izvor;  
-**Operand br**: u izvorni dokument bit će primijenjena operacija odabrana u ovom padajućem izborniku među +, -, *, / ili %;  
-**Vrijednost br**: u ovom polju možete unijeti ručnu vrijednost koja će se primijeniti prema odabranoj operaciji;  
-**Vrijednost Svojstva br**: u ovom polju možete unijeti polje koje se treba dodati/oduzeti itd. prema odabranoj operaciji; ovo polje isključuje prethodno: zbroj/razlika/dijeljenje itd. može biti ručna vrijednost ili vrijednost drugog polja; dvostruki klik na ovom polju otvara Navigator objekata iz kojeg možete odabrati svojstvo koje treba uzeti u obzir kao vrijednost operacije; posljednje dvije stavke u Navigatoru objekata su oznake **DodatnaVrijednost** i **DodatniPostotak**, koje služe za prenošenje ovih vrijednosti iz dobavljačkog cjenika;  
-**Prenjeti popust**: ovaj će se znak vratiti u odredišni dokument popusta iz odabranog cjenika;  
-**Prenjeti popust od željenog dobavljača**: ovaj će znak vratiti popust iz preferiranog dobavljačkog cjenika po zadanim postavkama.
+U ovom obrascu moguće je definisati pravila povezivanja između nabavnih i prodajnih dokumenata kako bi se cene artikala automatski ažurirale nakon prijema novog kataloga ili cenovnika dobavljača.
+
+U prvoj tabeli definišu se:
+
+- **Šifra**
+- **Opis**
+
+formule za ažuriranje cena.
+
+U drugoj tabeli definišu se izvorni dokumenti, odredišni dokumenti i formule koje će se koristiti za izračunavanje novih cena.
+
+Za jednu stavku moguće je definisati do pet uzastopnih operacija.
+
+U obračunu se uzimaju u obzir samo popunjena polja, dok se prazna polja zanemaruju.
+
+Korisnik treba da popuni samo polja koja su relevantna za željenu transformaciju cene.
+
+## Polja formule
+
+- **Vrsta odredišnog prodajnog cenovnika**: određuje vrstu prodajnog cenovnika koji će biti ažuriran primenom formule definisane u redu.
+
+- **Konto / Podkonto / Naziv – odredišni prodajni cenovnik**: određuje prilagođeni prodajni cenovnik na kojem će se izvršiti ažuriranje.
+
+- **Vrsta odredišnog nabavnog cenovnika**: određuje vrstu nabavnog cenovnika koji će biti ažuriran.
+
+- **Konto / Podkonto / Naziv – odredišni nabavni cenovnik**: određuje prilagođeni nabavni cenovnik na kojem će se izvršiti ažuriranje.
+
+- **(Izvorna) vrsta prodajnog cenovnika**: određuje vrstu prodajnog cenovnika iz kojeg se preuzimaju podaci za obračun.
+
+- **Konto / Podkonto / Naziv – izvorni kupac**: određuje prilagođeni prodajni cenovnik koji se koristi kao izvor podataka.
+
+- **(Izvorna) vrsta nabavnog cenovnika**: određuje vrstu nabavnog cenovnika koji se koristi kao izvor.
+
+- **Konto / Podkonto / Naziv – izvorni dobavljač**: određuje prilagođeni nabavni cenovnik koji se koristi kao izvor podataka.
+
+- **Izvor troškova skladišta**: omogućava korišćenje prosečnog, poslednjeg ili standardnog troška artikla kao izvora za obračun cene.
+
+- **Operand**: matematička operacija koja se primenjuje na izvornu vrednost.
+
+  Dostupne operacije su:
+
+  - `+`
+  - `-`
+  - `*`
+  - `/`
+  - `%`
+
+- **Vrednost**: omogućava unos fiksne numeričke vrednosti koja će se koristiti zajedno sa odabranom operacijom.
+
+- **Vrednost svojstva**: omogućava korišćenje vrednosti drugog polja umesto fiksne vrednosti.
+
+  Kada je ovo polje popunjeno, polje **Vrednost** se zanemaruje.
+
+  Vrednost može biti:
+
+  - ručno unet podatak
+  - vrednost drugog polja
+  - svojstvo dokumenta ili artikla
+
+  Klikom na polje otvara se navigator objekata iz kojeg se bira željeno svojstvo.
+
+  Među dostupnim svojstvima nalaze se i:
+
+  - ***AddedValue***
+  - ***AddedPercentage***
+
+  koja se koriste za preuzimanje vrednosti iz nabavnog cenovnika dobavljača.
+
+- **Prenos popusta**: prenosi popuste iz odabranog izvornog cenovnika na odredišni cenovnik.
+
+- **Prenos popusta preferiranog dobavljača**: prenosi popuste iz cenovnika preferiranog dobavljača definisanog na kartici artikla.
