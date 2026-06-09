@@ -5,71 +5,70 @@ sidebar_position: 1
 
 ### Patch 803.0023 - 05/06/2026
 
-> -	FI - Creazione registrazione contabile con analitica: revisione della gestione del campo "Descrizione centri di costo", ora impostato come sola lettura. Modifications inside posting form analitic tab can have impact on profiles. (Rif. #TT01625/26).
+> -	FI - Creazione registrazione contabile con analitica: revisione della gestione del campo "Descrizione centri di costo", ora impostato come sola lettura. **Attenzione! Questa modifica può impattare sui profili** (#TT01625/26)
 > -	FI - revisione gestione pulsante creazione file Intrastat da ricerca intra1 (#TT02355/26)
 > -	FI - revisione proposta sottoconti in griglia centri di costo (#TT02420/26)
 > -	FI - stampa Riepilogo movimenti contabili con contropartite, revisione repository method (#TT02356/26)
-> -	MES - Segnalazioni: Permesso rollback registrazione a seguito di rollback trasferimento. (#TT01145/26)
-> -	MS - AFCS. In caso di mancanza materiale durante la lavorazione di un task, il messaggio di warning ora specifica qual è l'articolo mancante. (#TT02440/26)
-> -	MS - Capacità Centri di lavoro: corretta l’anomalia sulla proposta del periodo visualizzato, diversa dal filtro impostato, allo spostamento di una fase tra due centri di lavoro. (#TT02289/26)
-> -	MS - Ordini pianificati - L’esecuzione delle procedure di Pianificazione generale, M.R.P., la funzionalità di Completamento dati ordine e la variazione del Tipo di approvvigionamento dell’Ordine pianificato, propongono i magazzini e le causali di versamento e consumo sulla base Tipo di approvvigionamento: Acquisto e Produzione dai Parametri degli Ordini di produzione, Conto lavoro dai Parametri di Conto lavoro. (#TT02266/26, #TT02422/26)
-> -	MS - Rilascio ordini pianificati: risolta l'anomalia che, al rilascio di Ordini pianificati di produzione, veniva generata una exception. (#TT02448/26)
+> -	MES - Segnalazioni: Permesso rollback registrazione a seguito di rollback trasferimento (#TT01145/26)
+> -	MS - AFCS. In caso di mancanza materiale durante la lavorazione di un task, il messaggio di warning ora specifica qual è l'articolo mancante (#TT02440/26)
+> -	MS - Capacità Centri di lavoro: corretta l’anomalia sulla proposta del periodo visualizzato, diversa dal filtro impostato, allo spostamento di una fase tra due centri di lavoro (#TT02289/26)
+> -	MS - Ordini pianificati - L’esecuzione delle procedure di Pianificazione generale, M.R.P., la funzionalità di Completamento dati ordine e la variazione del Tipo di approvvigionamento dell’Ordine pianificato, propongono i magazzini e le causali di versamento e consumo sulla base Tipo di approvvigionamento: Acquisto e Produzione dai Parametri degli Ordini di produzione, Conto lavoro dai Parametri di Conto lavoro (#TT02266/26, #TT02422/26)
+> -	MS - Rilascio ordini pianificati: risolta l'anomalia che, al rilascio di Ordini pianificati di produzione, veniva generata una exception (#TT02448/26)
 > -	PM - Aggiornato report Dettaglio interventi - introdotto totale imponibile e migliorata gestione label colonne.
 > -	PR - revisione gestione griglia Gestione fidi in caso di applicazione filtri (#TT02250/26)
 > -	PR - riconciliazione CC, revisione import file di testo Cbi per gestione conti bancari diversi (#TT02332/26)
 > -	SCM - Corretta stampa diretta in registro sdi documenti acquisto in entrata (#TT02149/26)
 > -	SCM - Creazione Automatica Ordini - Ordini clienti: campo “Tipo fatturato acquisto” popolato in base ad anagrafica articolo (#TT02364/26)
-> -	SCM - Creazione automatica ordini fornitori - Ordini clienti: generazione di ordine fornitore con flag abilitato “Esplosione livello da struttura distinta” per articoli senza Distinta Base (#TT2439-26).
-> -	SCM - Dettaglio righe Ordine: Aggiunto filtro per ordini e righe articolo non evasi n(#TT1875/26)
-> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio. (#TT2207/26, 2439/26)
-> -	SD - Gestione lotti in fase di picking collegato a ordine cliente: Se, durante il picking generato dall’evasione di un ordine cliente, viene rimosso il lotto precedentemente prenotato, tale lotto viene automaticamente eliminato anche dall’ordine cliente. Questo comportamento consente di liberare correttamente la prenotazione, evitando che rimanga impegnata sull’ordine. (#TT1700/26)
-> -	SD - Sincronizzazione ordine cliente e progetto creato automaticamente dall’ordine: Nel caso in cui venga modificato un ordine collegato a un progetto già utilizzato in altri moduli, viene visualizzato un messaggio informativo. Il messaggio segnala che le modifiche apportate all’ordine non saranno replicate nel progetto, in quanto quest’ultimo risulta già referenziato, indicando anche il modulo coinvolto. (#TT1828/26)
-> -	SH - Fix app lock when grid line number changed (TT01394/26)
-> -	TR - Corretto filtro di ricerca della data scadenza in Effetti. Modifications inside effetti form can have impact on profiles. (#TT02491/26)
+> -	SCM - Creazione automatica ordini fornitori - Ordini clienti: generazione di ordine fornitore con flag abilitato “Esplosione livello da struttura distinta” per articoli senza Distinta Base (#TT2439/26)
+> -	SCM - Dettaglio righe Ordine: Aggiunto filtro per ordini e righe articolo non evasi (#TT1875/26)
+> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio (#TT2207/26, #TT02439/26)
+> -	SD - Gestione lotti in fase di picking collegato a ordine cliente: Se, durante il picking generato dall’evasione di un ordine cliente, viene rimosso il lotto precedentemente prenotato, tale lotto viene automaticamente eliminato anche dall’ordine cliente. Questo comportamento consente di liberare correttamente la prenotazione, evitando che rimanga impegnata sull’ordine (#TT1700/26)
+> -	SD - Sincronizzazione ordine cliente e progetto creato automaticamente dall’ordine: Nel caso in cui venga modificato un ordine collegato a un progetto già utilizzato in altri moduli, viene visualizzato un messaggio informativo. Il messaggio segnala che le modifiche apportate all’ordine non saranno replicate nel progetto, in quanto quest’ultimo risulta già referenziato, indicando anche il modulo coinvolto (#TT1828/26)
+> -	SH - Corretto il blocco dell'applicazione che si verificava quando veniva modificata la numerazione delle righe della griglia (#TT01394/26)
+> -	TR - Corretto filtro di ricerca della data scadenza in Effetti. **Attenzione! Questa modifica può impattare sui profili** (#TT02491/26)
 > -	WEB - aprendo documenti di società diverse in contemporanea, veniva visualizzata un'eccezione (#TT02446/26)
-> -	WM - Gestione UDC: Abilitato inserimento/modifica extra data per UDC caricate. (#TT01258/26)
-> -	WM - Piani di Carico: Calcolo disponibilità ad oggi se data consegna nel passato in creazione piano. (#TT02464/26)
-> -	WM - Piani di Carico: Corretto calcolo disponibilità in presenza di varianti articolo in creazione piano. Modifications for LoadPlan form can have impact on profiles. (#TT01960/26)
-> -	WM - Registrazioni di Magazzino: Inibita modifica/inserimento per date non successive ultima chiusura. (#TT02429/26)
-> -	WMS - Ricevimento Merce - UDC create sempre con stesso anno dell’ordine fornitore. (#TT00077/26)
+> -	WM - Gestione UDC: Abilitato inserimento/modifica extra data per UDC caricate (#TT01258/26)
+> -	WM - Piani di Carico: Calcolo disponibilità ad oggi se data consegna nel passato in creazione piano (#TT02464/26)
+> -	WM - Piani di Carico: Corretto calcolo disponibilità in presenza di varianti articolo in creazione piano. **Attenzione! Questa modifica può impattare sui profili** (#TT01960/26)
+> -	WM - Registrazioni di Magazzino: Inibita modifica/inserimento per date non successive ultima chiusura (#TT02429/26)
+> -	WMS - Ricevimento Merce - UDC create sempre con stesso anno dell’ordine fornitore (#TT00077/26)
 
 ### Patch 803.0022 - 28/05/2026
 
 > -	CPQ - Aggiunte alcune funzionalità per la generazione dele BOM d configuratore e ottimizzate le funzione di selezione risposte e creazione configurazioni.  
 > -	FI - revisione gestione segni in causali automatiche con prima registrazione negativa (#TT02176/26)
-> -	SCM - Creazione Automatica Ordini Fornitori: la creazione Ordini Fornitori con l’opzione di proposta fornitore e prezzi, “Fornitore con migliore prezzo di acquisto”, tiene conto anche degli scaglioni di prezzo in funzione della quantità.(#TT02545/25)
-> -	SCM - Creazione Automatica Ordini: La creazione degli Ordini Fornitore (OF) con le opzioni di proposta fornitore (“da fornitore” e “per miglior prezzo di listino”) tiene conto degli scaglioni di prezzo in funzione della quantità.  
-È inoltre possibile gestire automaticamente la priorità di applicazione degli sconti, nel caso siano presenti più condizioni con lo stesso tipo. (#TT01011/26).
-> -	SCM - Coretta valorizzazione parziale di commessa a seguito di ordine fornitore con procedura “evasione da progetto” (#TT01632/26).
-> -	SH - allineati campi SHCNTC_Description e SHCH_Description per evitare errori in fase di storicizzazione di una anagrafica.(#TT02151/26)
+> -	SCM - Creazione Automatica Ordini Fornitori: la creazione Ordini Fornitori con l’opzione di proposta fornitore e prezzi, “Fornitore con migliore prezzo di acquisto”, tiene conto anche degli scaglioni di prezzo in funzione della quantità (#TT02545/25)
+> -	SCM - Creazione Automatica Ordini: La creazione degli Ordini Fornitore (OF) con le opzioni di proposta fornitore (“da fornitore” e “per miglior prezzo di listino”) tiene conto degli scaglioni di prezzo in funzione della quantità. È inoltre possibile gestire automaticamente la priorità di applicazione degli sconti, nel caso siano presenti più condizioni con lo stesso tipo (#TT01011/26)
+> -	SCM - Coretta valorizzazione parziale di commessa a seguito di ordine fornitore con procedura “evasione da progetto” (#TT01632/26)
+> -	SH - allineati campi SHCNTC_Description e SHCH_Description per evitare errori in fase di storicizzazione di una anagrafica (#TT02151/26)
 > -	WM - Corretto un bug nell’algoritmo di aggiunta Extra Data agli articoli
-> -	WMS - Corretto popup errore Fluentis (#TT00937/26).
-> -	WMS - Ricevimento Merce: DDT mantiene prezzo ordine anziché leggerlo dal listino. (#TT01879/26)
+> -	WMS - Corretto popup errore Fluentis (#TT00937/26)
+> -	WMS - Ricevimento Merce: DDT mantiene prezzo ordine anziché leggerlo dal listino (#TT01879/26)
 
 
 ### Patch 803.0021 - 26/05/2026
 
-> -	Allow to save command with-out right (#TT02125/26)
+> -	SH - Consentito il salvataggio del comando anche in assenza dei relativi permessi (#TT02125/26)
 > -	CO - revisione driver di progetto nell’elaborazione del consuntivo di progetto (#TT01593/26)
 > -	CPQ - Risolto problema di sessione NHibernate errata nella creazione delle distinte da configurazione.
 > -	E’ stato disabilitata la visualizzazione grafica delle Ubicazioni su Web (#TT01810/26)
-> -	FI - Aggiunto il flag Includi scadenze non sollecitate nella form di generazione solleciti che, in caso di filtro per data sollecito non poteva restituire le partite mai sollecitate. Modifications inside dunning letters issue form can have impact on profiles Rif . #TT01954/26
+> -	FI - Aggiunto il flag Includi scadenze non sollecitate nella form di generazione solleciti che, in caso di filtro per data sollecito non poteva restituire le partite mai sollecitate. **Attenzione! Questa modifica può impattare sui profili** (#TT01954/26)
 > -	FI - Corretta anomalia nella cancellazione dei clienti dalla lista esclusi da solleciti automatici (#TT01837/26)
-> -	FI - Revisione ricalcolo importi di riga Cdc quando si interviene nella colonna della percentuale. Revisione proposta sottoconto se si inserisce una riga manuale a partire dalla tendina del centro di costo. Revisione assegnazione collegamento alla riga del giornale di origine. (#TT02150/26)
+> -	FI - Revisione ricalcolo importi di riga Cdc quando si interviene nella colonna della percentuale. Revisione proposta sottoconto se si inserisce una riga manuale a partire dalla tendina del centro di costo. Revisione assegnazione collegamento alla riga del giornale di origine (#TT02150/26)
 > -	Import paghe da zucchetti, revisione gestione data di riferimento e riferimento cdc (#TT05241/25)
 > -	Modifiche al framework per griglie con campi non attivati correttamente (#TT02250/26)
 > -	Risolto il problema su algoritmo di creazione NIR da bolla di acquisto quando si usa un lotto di scarico per documenti di reso (#TT02240/26)
 > -	Risolti problemi relativi alla creazione del NIR con lotti (#TT02240/26)
-> -	SCM - Importazione Prezzi Fornitori: E’ stata ottimizzata la procedura di selezione e importazione con un numero di righe che supera le migliaia. (#TT2035/26)
-> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio. (#TT2207/26)
+> -	SCM - Importazione Prezzi Fornitori: E’ stata ottimizzata la procedura di selezione e importazione con un numero di righe che supera le migliaia (#TT2035/26)
+> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio (#TT2207/26)
 > -	SH - API cambi del giorno (#TT00620/26)
 > -	SH - workflow gestito da ricerca documenti, corretto caso per cui le nelle transizioni, le condizioni impostate nel campo ignora azione non venivano considerate (#TT02352/26)
-> -	WM - Prototipi: corretta anomalia all’inserimento di un nuovo componente, con successiva importazione della distinta base del medesimo componente. Il nuovo componente veniva eliminato e i materiali, presenti nella nuova distinta base, li importata al livello 1 del padre. (#TT02122/26)
+> -	WM - Prototipi: corretta anomalia all’inserimento di un nuovo componente, con successiva importazione della distinta base del medesimo componente. Il nuovo componente veniva eliminato e i materiali, presenti nella nuova distinta base, li importata al livello 1 del padre (#TT02122/26)
 > -	WMS - Aggiunto comando per generare una exception (#TT00937/26)
-> -	WMS - Liste Trasferimento UDC: Inibita aggiunta UDC su liste in stato “Trasferita” (#TT01154/26).
-> -	WMS - Ricevimento merce: Corretto quantità alternativa che rimaneva valorizzata. (#TT01217/26)
-> -	WMS - Ricevimento merce: Inibita creazione riga aggiuntiva con quantità zero se presente una unità di misura alternativa (#TT05080/25).
-> -	WMS - Ricevimento merce: Inibita doppia apertura form con doppio click su “Creazione DDT acquisto” (#TT00939/26).
+> -	WMS - Liste Trasferimento UDC: Inibita aggiunta UDC su liste in stato “Trasferita” (#TT01154/26)
+> -	WMS - Ricevimento merce: Corretto quantità alternativa che rimaneva valorizzata (#TT01217/26)
+> -	WMS - Ricevimento merce: Inibita creazione riga aggiuntiva con quantità zero se presente una unità di misura alternativa (#TT05080/25)
+> -	WMS - Ricevimento merce: Inibita doppia apertura form con doppio click su “Creazione DDT acquisto” (#TT00939/26)
 
 
 ### Patch 803.0020 - 15/05/2026
@@ -78,18 +77,18 @@ sidebar_position: 1
 > -	CPQ - Aggiunte nuove funzioni alla classe Helper dello scripting nelle configurazioni
 > -	CPQ - Risolto problema nella creazione delle distinte base da configuratore
 > -	FI - errore apertura partite (#TT02171/26)
-> -	FI - migliorato controllo di quadratura per dimensione tra movimenti contabile e centri di costo. (#TT01297/26)
+> -	FI - migliorato controllo di quadratura per dimensione tra movimenti contabile e centri di costo (#TT01297/26)
 > -	FI - migliorato messaggio di warning che non riconosceva correttamente i segni nell’associazione tra file sdi ricevuti e registrazioni contabili in caso di note di accredito ed Autofatture (#TTT01425/26)
-> -	FI - nella form di ricerca ‘Commissioni’ è stato inserito un nuovo flag di filtro ‘Da liquidare’, impostandolo si abilita la data di riferimento che sarà utilizzata per visualizzare le righe in maturazione. Modifications inside commission form can have impact on profiles. (#TT01385/26)
+> -	FI - nella form di ricerca ‘Commissioni’ è stato inserito un nuovo flag di filtro ‘Da liquidare’, impostandolo si abilita la data di riferimento che sarà utilizzata per visualizzare le righe in maturazione. **Attenzione! Questa modifica può impattare sui profili** (#TT01385/26)
 > -	FI - revisione gestione inizio date competenza per le riaperture degli assestamenti, per il caso di rettifiche con data inizio successiva all’inizio esercizio successivo (#TT02150/26)
-> -	MS - AFCS - incrementata lista parametri input per calcolo personalizzato tempo di attrezzaggio. (#TT01965/26)
-> -	MS - M.R.P.: corretta anomalia per articoli che sono componenti di altri articoli fittizi. (#TT02170/26)
-> -	MS - Pianificazione generale: corretta anomalia generata alla generazione di Ordini pianificati di produzione con l’utilizzo di materiali alternativi indicati in Distinta base. (#TT01855/26)
-> -	Portal - Conferma Picking: Aggiornamento flag stampato da mobile. (#TT01751/26)
-> -	PR - creazione ed esportazione cash flow per DocFinance, ottimizzazione ed esclusione dall’elaborazione di dati inutili per il file (TT02184/26)
-> -	SD - Gestione Data Competenza: In fase di evasione ordini, la data di competenza viene automaticamente ricalcolata sulla base della data del documento generato (DDT o fattura).((#TT1950/26)
-> -	SH - consider workflow activation condition in filters (#TT01839/26)
-> -	WMS - Spunta Picking: Incrementate righe in griglia tab Articoli. (#TT02112/26)
+> -	MS - AFCS - incrementata lista parametri input per calcolo personalizzato tempo di attrezzaggio (#TT01965/26)
+> -	MS - M.R.P.: corretta anomalia per articoli che sono componenti di altri articoli fittizi (#TT02170/26)
+> -	MS - Pianificazione generale: corretta anomalia generata alla generazione di Ordini pianificati di produzione con l’utilizzo di materiali alternativi indicati in Distinta base (#TT01855/26)
+> -	Portal - Conferma Picking: Aggiornamento flag stampato da mobile (#TT01751/26)
+> -	PR - creazione ed esportazione cash flow per DocFinance, ottimizzazione ed esclusione dall’elaborazione di dati inutili per il file (#TT02184/26)
+> -	SD - Gestione Data Competenza: In fase di evasione ordini, la data di competenza viene automaticamente ricalcolata sulla base della data del documento generato (DDT o fattura)(#TT1950/26)
+> -	SH - Considerata la condizione di attivazione del workflow nei filtri (#TT01839/26)
+> -	WMS - Spunta Picking: Incrementate righe in griglia tab Articoli (#TT02112/26)
 
 ### Patch 803.0019 - 08/05/2026
 
@@ -152,7 +151,7 @@ sidebar_position: 1
 > -	WM - Anagrafica articolo: Salvataggio nota in creazione articolo (#TT01035/26)
 > -	WM - Liste Trasferimento UDC: Corretto valorizzazione tipo Udc in griglia (#TT01152/26)
 > -	WM - Ottimizzazione import WebApi di registrazione di magazzino (#TT01820/26)
-> -	WM - Piani di Carico: Aggiunta data merce pronta articolo in dettaglio piano di carico. Modifications inside the LoadPlan form can have impact on profiles (#TT01902/26)
+> -	WM - Piani di Carico: Aggiunta data merce pronta articolo in dettaglio piano di carico. **Attenzione! Questa modifica può impattare sui profili** (#TT01902/26)
 > -	WM - Stampa articoli non movimentati: Corretto funzionamento flag interesse fiscale (#TT01642/26)
 > -	WM - Visualizza Giacenza: Disattivato ridimensionamento form su inserimento progetto in Genera registrazione (#TT01927/26)
 > -	WN - Disponibilità lotti: Corretta data movimento lotto in fatturazione di vendita che creava problemi dopo chiusura di magazzino (#TT01543/26)
@@ -193,7 +192,7 @@ sidebar_position: 1
 > -	FI - form di stampa Bilancio d’esercizio, impostazione di default del flag ‘Visualizza importi segno negativo’ e della causale esclusa ripresa dai parametri di contabilità, causale di chiusura conti. **Attenzione! Questa modifica può impattare sui profili** (#TT01400/26)
 > -	FI - la contabilizzazione fatture di vendita ora riporta destinatario e destinazione nelle partite contabili (#TT00531/26)
 > -	FI - la riapertura degli assestamenti ora imposta le date competenza economica delle integrazione con stesso range di date delle righe di giornale (#TT01497/26)
-> -	FI - modificata la stampa della certificazione unica ritenute d'acconto. Il campo sesso riportava di default F anche quando il campo nell'anagrafica percipiente era NULL. Rif. #TT01315/26
+> -	FI - modificata la stampa della certificazione unica ritenute d'acconto. Il campo sesso riportava di default F anche quando il campo nell'anagrafica percipiente era NULL (#TT01315/26)
 > -	FI - revisione gestione tendina di selezione dei centri di costo per dimensioni con flag ‘Progetti’ attiva (#TT00030/26)
 > -	FI - revisione impostazione progetto nelle righe di analitica delle registrazioni contabili quando la dimensione prevede il flag ‘Abilita progetti’ (#TT01096/26)
 > -	Framework - Corretto il conteggio degli stati del workflow (#TT01291/26)
@@ -323,8 +322,8 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > - Profili - Corretto il funzionamento dei profili nei documenti che possono avere il tab Documenti Collegati (#TT792/26)
 > - Restored font widget for Blockly
 > - Risolto problema integrazione GitHub per credenziali non corrette
-> - RN - corretto problema nella fattura di acquisto (#Tipo nota di credito) quando veniva impostata una spesa finale di tipo bollo e nelle righe erano presenti prezzi o quantità negative, il messaggio di richiesta di inversione segno della spesa finale non gestiva correttamente il rifiuto di invertire il segno. Rif. Ticket - #TT00726/26
-> - SCM - Documenti di acquisto in entrata: revisione della gestione delle fatture elettroniche con allegati in formato .7zip (Rif. Ticket 878/26)
+> - RN - corretto problema nella fattura di acquisto (#Tipo nota di credito) quando veniva impostata una spesa finale di tipo bollo e nelle righe erano presenti prezzi o quantità negative, il messaggio di richiesta di inversione segno della spesa finale non gestiva correttamente il rifiuto di invertire il segno (#TT00726/26)
+> - SCM - Documenti di acquisto in entrata: revisione della gestione delle fatture elettroniche con allegati in formato .7zip (#TT00878/26)
 > - SD - Creazione Ordine fornitore da Ordine cliente - Sulle righe articolo dell’ordine fornitore vengono ora riportati il magazzino e la causale previsti per il tipo ordine creato (#TT00889/26)
 > - SD - Dettaglio righe ordini clienti: Corretta la visualizzazione di codice e descrizione articolo cliente nella griglia dei risultati (#TT00297/26)
 > - SD - Evasione ordini in DDT e Fatture: i centri di costo e ricavo non vengono più riportati anche sulle righe di tipo note in presenza del flag “Ricalcola centri di costo/ricavo” (#TT00801/26)
@@ -372,7 +371,7 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 
 > -	CPQ - bugfixing su script di inizializzazione e aggiunta Extra Data ad articoli creati.
 > -	FI - calcolo ammortamenti, revisione gestione data inizio attività su cespiti collegati (#TT00645/26)
-> -	FI - Contabilizzazione Compensi ed Enasarco: revisione delle procedure di contabilizzazione dei compensi e dei contributi Enasarco, con revisione delle relative procedure di rollback (Rif. Ticket TT00330/26)
+> -	FI - Contabilizzazione Compensi ed Enasarco: revisione delle procedure di contabilizzazione dei compensi e dei contributi Enasarco, con revisione delle relative procedure di rollback (#TT00330/26)
 > -	FI - creazione file F24, revisione record 50.01 (#TT01973/25)
 > -	FI - PaymentImport fix - delete FSMaturityPaymentReservation (#TT00631/26)
 > -	Framework - Risolta l’anomalia che, aprendo un documento, causava uno sfarfallio iniziale nell’evidenziazione dei campi obbligatori (quelli evidenziati in rosso) (#TT00553/26)
@@ -434,7 +433,7 @@ La documentazione è disponibile in Fluentis Integration Documentation, area MES
 > -	Arm - Validare la vista database prima dell’allineamento all’oggetto.
 > -	BI - Dashboard (Cruscotti): corretto il conteggio delle colonne in presenza di filtri (#TT00178/26)
 > -	CO - Ottimizzazione elaborazione periodi (#TT00435/26)
-> -	FI - Registrazioni Contabili, Movimenti Contabili: Revisione salvataggio dei profili (Rif. Ticket TT00052/26)
+> -	FI - Registrazioni Contabili, Movimenti Contabili: Revisione salvataggio dei profili (#TT00052/26)
 > -	MES - Ordine di produzione - Corretta l’anomalia per cui, eseguendo una nuova form di filtro, dopo la selezione di un oggetto Tile con valori maggiori di zero e la pressione del relativo tasto di Ricerca, non veniva visualizzato alcun dato. Era necessario eseguire una seconda Ricerca per visualizzare correttamente le informazioni (#TT00345/26)
 > -	MS - Corretto errore che nella procedura di Generazione commesse di produzione che dal tab sottoscorta non riporta tutti gli articoli da inserire in commessa (#TT02716/25)
 > -	MS - Corretto errore che nella procedura di Generazione commesse di produzione che dal tab sottoscorta per il quale la form andava in crash nel caso in cui fossero presenti molte righe da caricare (#TT00861/25)

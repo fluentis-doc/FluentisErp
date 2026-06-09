@@ -7,44 +7,44 @@ keywords:
 
 ### Patch 707.1-0076 - 05/06/2026
 
-> -	ARM - exclude collections from audit trail configuration (#TT05348/25)
-> -	FI - Creazione registrazione contabile con analitica: revisione della gestione del campo "Descrizione centri di costo", ora impostato come sola lettura. Modifications inside posting form analitic tab can have impact on profiles. (Rif. #TT01625/26).
+> -	ARM - Escluse le collezioni dalla configurazione dell'Audit Trail (#TT05348/25)
+> -	FI - Creazione registrazione contabile con analitica: revisione della gestione del campo "Descrizione centri di costo", ora impostato come sola lettura. **Attenzione! Questa modifica può impattare sui profili** (#TT01625/26)
 > -	FI - revisione gestione pulsante creazione file Intrastat da ricerca intra1 (#TT02355/26)
 > -	FI - revisione gestione segni in causali automatiche con prima registrazione negativa (#TT02176/26)
 > -	FI - revisione proposta sottoconti in griglia centri di costo (#TT02420/26)
 > -	FI - stampa Riepilogo movimenti contabili con contropartite, revisione repository method (#TT02356/26)
-> -	MS - Capacità Centri di lavoro: corretta l’anomalia sulla proposta del periodo visualizzato, diversa dal filtro impostato, allo spostamento di una fase tra due centri di lavoro. (#TT02289/26)
+> -	MS - Capacità Centri di lavoro: corretta l’anomalia sulla proposta del periodo visualizzato, diversa dal filtro impostato, allo spostamento di una fase tra due centri di lavoro (#TT02289/26)
 > -	PM - Aggiornato report Dettaglio interventi - introdotto totale imponibile e migliorata gestione label colonne.
 > -	PR - riconciliazione CC, revisione import file di testo Cbi per gestione conti bancari diversi (#TT02332/26)
 > -	SCM - Corretta stampa diretta in registro sdi documenti acquisto in entrata (#TT02149/26)
 > -	SCM - Creazione Automatica Ordini - Ordini clienti: campo “Tipo fatturato acquisto” popolato in base ad anagrafica articolo (#TTTT02364/26)
-> -	SCM - Creazione automatica ordini fornitori - Ordini clienti: generazione di ordine fornitore con flag abilitato “Esplosione livello da struttura distinta” per articoli senza Distinta Base (#TT2439-26).
-> -	SCM - Coretta valorizzazione parziale di commessa a seguito di ordine fornitore con procedura “evasione da progetto” (#TT01632/26).
-> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio. (#TT2207/26, 2439/26)
+> -	SCM - Creazione automatica ordini fornitori - Ordini clienti: generazione di ordine fornitore con flag abilitato “Esplosione livello da struttura distinta” per articoli senza Distinta Base (#TT2439-26)
+> -	SCM - Coretta valorizzazione parziale di commessa a seguito di ordine fornitore con procedura “evasione da progetto” (#TT01632/26)
+> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio (#TT2207/26, 2439/26)
 > -	SH - allineati campi `SHCNTC_Description e SHCH_Description` per evitare errori in fase di storicizzazione di una anagrafica. Rif. TT02151/26
-> -	WM - Registrazioni di Magazzino: Inibita modifica/inserimento per date non successive ultima chiusura. (#TT02429/26)
+> -	WM - Registrazioni di Magazzino: Inibita modifica/inserimento per date non successive ultima chiusura (#TT02429/26)
 
 ### Patch 707.1-0075 - 26/05/2026
 
-> -	CO - nella gestione assestamenti, per le integrazioni e quando il costo/ricavo è completamente dell’esercizio di calcolo, ora si usa il sottoconto fatture da ricevere/emettere se la registrazione di origine ha il sottoconto di testata compilato (come per le fatture), altrimenti si usano i conti dei ratei. (#TT01938/26)
+> -	CO - nella gestione assestamenti, per le integrazioni e quando il costo/ricavo è completamente dell’esercizio di calcolo, ora si usa il sottoconto fatture da ricevere/emettere se la registrazione di origine ha il sottoconto di testata compilato (come per le fatture), altrimenti si usano i conti dei ratei (#TT01938/26)
 > -	CO - revisione driver di progetto nell’elaborazione del consuntivo di progetto (#TT01593/26)
-> -	FI - Aggiunto il flag Includi scadenze non sollecitate nella form di generazione solleciti che, in caso di filtro per data sollecito non poteva restituire le partite mai sollecitate. Modifications inside dunning letters issue form can have impact on profiles Rif . (#TT01954/26)
+> -	FI - Aggiunto il flag Includi scadenze non sollecitate nella form di generazione solleciti che, in caso di filtro per data sollecito non poteva restituire le partite mai sollecitate. **Attenzione! Questa modifica può impattare sui profili** (#TT01954/26)
 > -	FI - Corretta anomalia nella cancellazione dei clienti dalla lista esclusi da solleciti automatici (#TT01837/26)
 > -	Import paghe da zucchetti: revisione gestione data di riferimento e riferimento cdc (#TT05241/25)
 > -	Risolvere il problema su algoritmo di creazione NIR da bolla di acquisto quando si usa un lotto di scarico per documenti di reso (#TT02240/26)
 > -	Risolvere problemi relativi alla creazione del NIR con lotti (#TT02240/26)
-> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio. (#TT2207/26)
-> -	WM - Prototipi: corretta anomalia all’inserimento di un nuovo componente, con successiva importazione della distinta base del medesimo componente. Il nuovo componente veniva eliminato e i materiali, presenti nella nuova distinta base, li importata al livello 1 del padre. (#TT02122/26)
+> -	SD - Creazione Ordini Fornitori da Ordini clienti: se l’articolo non ha il fornitore preferenziale viene bloccata la creazione dell’ordine fornitore e visualizzato il messaggio (#TT2207/26)
+> -	WM - Prototipi: corretta anomalia all’inserimento di un nuovo componente, con successiva importazione della distinta base del medesimo componente. Il nuovo componente veniva eliminato e i materiali, presenti nella nuova distinta base, li importata al livello 1 del padre (#TT02122/26)
 
 ### Patch 707.1-0074 - 15/05/2026
 
 > -	FI - errore apertura partite (#TT02171/26)
-> -	FI - migliorato controllo di quadratura per dimensione tra movimenti contabile e centri di costo. (#TT01297/26)
-> -	FI - nella form di ricerca ‘Commissioni’ è stato inserito un nuovo flag di filtro ‘Da liquidare’, impostandolo si abilita la data di riferimento che sarà utilizzata per visualizzare le righe in maturazione. Modifications inside commission form can have impact on profiles. (#TT01385/26)
+> -	FI - migliorato controllo di quadratura per dimensione tra movimenti contabile e centri di costo (#TT01297/26)
+> -	FI - nella form di ricerca ‘Commissioni’ è stato inserito un nuovo flag di filtro ‘Da liquidare’, impostandolo si abilita la data di riferimento che sarà utilizzata per visualizzare le righe in maturazione. **Attenzione! Questa modifica può impattare sui profili** (#TT01385/26)
 > -	FI - revisione gestione inizio date competenza per le riaperture degli assestamenti, per il caso di rettifiche con data inizio successiva all’inizio esercizio successivo (#TT02150/26)
-> -	MS - M.R.P.: corretta anomalia per articoli che sono componenti di altri articoli fittizi. (#TT02170/26)
-> -	MS - Pianificazione generale: corretta anomalia generata alla generazione di Ordini pianificati di produzione con l’utilizzo di materiali alternativi indicati in Distinta base. (#TT01855/26)
-> -	SD - Gestione Data Competenza: In fase di evasione ordini, la data di competenza viene automaticamente ricalcolata sulla base della data del documento generato (DDT o fattura).(#TT1950/26)
+> -	MS - M.R.P.: corretta anomalia per articoli che sono componenti di altri articoli fittizi (#TT02170/26)
+> -	MS - Pianificazione generale: corretta anomalia generata alla generazione di Ordini pianificati di produzione con l’utilizzo di materiali alternativi indicati in Distinta base (#TT01855/26)
+> -	SD - Gestione Data Competenza: In fase di evasione ordini, la data di competenza viene automaticamente ricalcolata sulla base della data del documento generato (DDT o fattura)(#TT1950/26)
 
 ### Patch 707.1-0073 - 08/05/2026
 
@@ -76,8 +76,8 @@ keywords:
 > -	MS - Stampe - Ordini di produzione: revisionato il calcolo del costo; ora il tempo di sospensione non viene considerato nel calcolo del costo (#TT01692/26)
 > -	QY - Controllo articoli - Importazione articoli da controllare: corretta anomalia sulla ricerca e associazione dei Piani di controllo, anche obsoleti, sulla base della data del documento importato (#TT01883/26)
 > -	SCS - Rientro Conto Lavoro: Per le righe di tipo Nota non viene richiesto nessun altro dato oltre alla descrizione (#TT00800/26)
-> -	SD - Fix AgentSettlement calculation special case with items Reversal(#TT01258/21)
-> -	SD - Fix Import SalesDeliveryNote linked with sales order, with batch proposal (#TT01783/26)
+> -	SD - Corretta la gestione di un caso particolare nel calcolo delle provvigioni agente in presenza di righe di storno (Reversal)(#TT01258/21)
+> -	SD - Corretta l’importazione della bolla di consegna cliente collegata all’ordine di vendita con proposta dei lotti (#TT01783/26)
 > -	SD - Fattura di Vendita - Modifica Progetto (#TT02031/25) Il progetto è modificabile se:
 >> - la fattura non è ancora Controllata per lo SDI
 >> - non è Contabilizzata con una causale che gestisce la contabilizzazione per progetto
@@ -100,7 +100,7 @@ keywords:
 > -	MES - Dichiarazioni di produzione: se l’Ubicazione proposta per il versamento del Semilavorato WIP viene annullata nella Fase di un Ordine di produzione, durante la Dichiarazione di produzione viene proposta l’Ubicazione associata alla Causale di carico (se presente) altrimenti rimane vuota (#TT01629/26)
 > -	MS - M.R.P: corretta l’anomalia che, in presenza di un articolo gestito con dei valori di approvvigionamento e la richiesta di esecuzione MRP considerando anche il passato, proponeva dei reintegri nel passato (#TT01167/26, #TT01545/26)
 > -	MS - Pianificazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la pianificazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi (#TT00987/26)
-> -	SD - Fix SalesOrder-check packages number for item problem(#TT01597/26)
+> -	SD - Corretta la verifica del numero di colli per articolo nell’ordine di vendita (#TT01597/26)
 > -	SD - WebApi SalesDeliveryNote, SalesInvoice, Picking - evasione da ordine - non permetere evadere righe evase o forzatamente evase (#TT01744/26)
 > - SCS - Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo (#TT01357/26)
 
@@ -127,7 +127,7 @@ keywords:
 > -	WM - Picking - Revisione layout dati di dettaglio in griglia di ricerca. **Attenzione! Questa modifica può impattare sui profili** (#TT01463/26)
 > -	WM - Prototipi - Corretta l’anomalia che non calcolava correttamente il Costo lavorazione dei componenti di Conto lavoro, in assenza di un listino associato (#TT01526/26)
 > -	WM - Stampa packing list: raggruppamento anche per articolo (#TT01567/26)
-> -	SH - reso visibile il flag Visualizza Cambio indiretto nella tabella società. Modifications in company form can have impact on profiles (#TT01157/26)
+> -	SH - reso visibile il flag Visualizza Cambio indiretto nella tabella società. **Attenzione! Questa modifica può impattare sui profili** (#TT01157/26)
 
 ### Patch 707.1-0069 - 26/03/2026
 

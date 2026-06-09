@@ -5,35 +5,35 @@ sidebar_position: 1
 
 ### Patch 608.1-0090 - 26/05/2026
 
-> -	SH - la creazione di una nuova anagrafica ha già visibile il campo del Regime fiscale. (#TT02110/26)  
-> -	WM - Prototipi: corretta anomalia all’inserimento di un nuovo componente, con successiva importazione della distinta base del medesimo componente. Il nuovo componente veniva eliminato e i materiali, presenti nella nuova distinta base, li importata al livello 1 del padre. (#TT02122/26)
+> -	SH - la creazione di una nuova anagrafica ha già visibile il campo del Regime fiscale (#TT02110/26)  
+> -	WM - Prototipi: corretta anomalia all’inserimento di un nuovo componente, con successiva importazione della distinta base del medesimo componente. Il nuovo componente veniva eliminato e i materiali, presenti nella nuova distinta base, li importata al livello 1 del padre (#TT02122/26)
 
 ### Patch 608.1-0089 - 04/05/2026
 
-> -	SCS - Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo. (#TT01357/26)  
-> -	QY - Controllo articoli - Importazione articoli da controllare: corretta anomalia sulla ricerca e associazione dei Piani di controllo, anche obsoleti, sulla base della data del documento importato. (#TT01883/26)
+> -	SCS - Corretto aggiornamento costo in movimento rientro di C/L letto da anagrafica articolo (#TT01357/26)  
+> -	QY - Controllo articoli - Importazione articoli da controllare: corretta anomalia sulla ricerca e associazione dei Piani di controllo, anche obsoleti, sulla base della data del documento importato (#TT01883/26)
 
 ### Patch 608.1-0088 - 17/04/2026
 
 > -	FI - revisione gestione tipo importo ‘Imponibile sottoconto’ per caso note di credito con segni misti(#TT00769/26)  
-> -	MS - Schedulazione generale - Corretta l’anomalia che non considerava correttamente la versione della distinta base, indicata nella Commessa di produzione, durante la valutazione dei componenti. (#TT01221/26)  
-> -	MS - Schedulazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la schedulazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi. (#TT00987/26)
+> -	MS - Schedulazione generale - Corretta l’anomalia che non considerava correttamente la versione della distinta base, indicata nella Commessa di produzione, durante la valutazione dei componenti (#TT01221/26)  
+> -	MS - Schedulazione generale: corretta l’anomalia che, in presenza di un componente comune a due o più righe commessa e se richiesta la schedulazione con raggruppamento per Articolo da produrre, all’Ordine pianificato generato venivano calcolate date di previsto inizio e fine al più tardi (#TT00987/26)
 
 ### Patch 608.1-0087 - 27/03/2026
 
 > -	CO - revisione elaborazione periodi, esclusione delle righe con date competenza nulle (#TT00971/26)
-> -	FI - corretto calcolo interessi trimestrali nella stampa liquidazione iva periodica. Non tenevano conto dell'acconto IVA versato. (#TT00658/26)
+> -	FI - corretto calcolo interessi trimestrali nella stampa liquidazione iva periodica. Non tenevano conto dell'acconto IVA versato (#TT00658/26)
 > -	PR - Change in SDD file creation (#TT05663/25)
-> -	PR - corretto calcolo del cashflow per il flusso relativo agli ordini di conto lavoro. In presenza di calcolo del prezzo utilizzando la quantità alternativa non calcolava correttamente il valore dell’imponibile continuando a leggere la quantità e unità di misura principale. Ora utilizza direttamente la proprietà NetAmount. (#TT00873/26)
-> -	SD - Agenti: Abilitata la gestione di provvigioni a valore e in percentuale per lo stesso agente. (#TT00102/26)
-> -	SD - Se l’utente effettua la conversione di un’offerta di vendita con valuta diversa, l’ordine di vendita generato riporterà il tasso di cambio presente nell'offerta. (#TT00952/26)
-> -	WM - Piani di Carico: Rivista gestione UM in creazione lista UDC. (#TT05221/25)
+> -	PR - corretto calcolo del cashflow per il flusso relativo agli ordini di conto lavoro. In presenza di calcolo del prezzo utilizzando la quantità alternativa non calcolava correttamente il valore dell’imponibile continuando a leggere la quantità e unità di misura principale. Ora utilizza direttamente la proprietà NetAmount (#TT00873/26)
+> -	SD - Agenti: Abilitata la gestione di provvigioni a valore e in percentuale per lo stesso agente (#TT00102/26)
+> -	SD - Se l’utente effettua la conversione di un’offerta di vendita con valuta diversa, l’ordine di vendita generato riporterà il tasso di cambio presente nell'offerta (#TT00952/26)
+> -	WM - Piani di Carico: Rivista gestione UM in creazione lista UDC (#TT05221/25)
 
 ### Patch 608.1-0086 - 05/02/2026
 
 > - FI - Intrastat - in caso di importo 0 il raggruppamento mantiene il campo del segno impostato a 1 (#TT00417/26)
 > - FI - Revisione chiusura partite in registrazioni contabili, lock random su update nei solleciti (#TT01305/25)
-> - WM - Valorizzazione di magazzino - Controllo giacenze negative lotti anche se magazzino ammette giacenze negative. (#TT00344/26)
+> - WM - Valorizzazione di magazzino - Controllo giacenze negative lotti anche se magazzino ammette giacenze negative (#TT00344/26)
 
 ### Patch 608.1-0085 - 02/02/2026
 
@@ -43,7 +43,7 @@ sidebar_position: 1
 > - MS - Corretto bug in pianificazione generale nel caso in cui venissero
 Rilascio stampa CU2026.  
 > - SH - Configurazione Documenti Elettronici: Corretto anomalia nel salvataggio delle configurazioni per società (rif.ticket 197/26)  
-> - WM - Corretto problema sui movimenti con serial numbers nella conversione da F2015. (#TT04969/25)
+> - WM - Corretto problema sui movimenti con serial numbers nella conversione da F2015 (#TT04969/25)
 
 ### Patch 608.1-0084 - 19/01/2026
 
