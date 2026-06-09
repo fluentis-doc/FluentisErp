@@ -1,48 +1,77 @@
 ---
-title: Razduženje robe po otpremnici  
+title: Razduženje robe po otpremnici
 sidebar_position: 1
 ---
 
-Postupak se otvara putem **Prodaja > Otpremnica > Postupci > Razduženje robe po otpremnici**. 
+Postupak se otvara putem **Prodaja > Otpremnice > Procedure > Razduženje robe po otpremnici**.
 
-Ovaj postupak omogućuje izvođenje/ponovno postavljanje operacija automatskog isporuke iz skladišta artikala koji se nalaze u otpremnici.
+Ovaj postupak omogućava izvršavanje ili poništavanje operacija automatskog razduženja skladišta za artikle koji se nalaze na otpremnici.
 
-### Filter 
+:::info Zapamti
+Ako dokument sadrži **fiktivne artikle**, postupak će uzeti u obzir **vrstu nabavke** definisanu u **MRP parametrima artikla**:
 
-Na ovoj kartici omogućeno je korisniku pretraživanje i prijenos otpremnica označenih interno s oznakom *Kontrolirano*.
+- Artikli tipa **Nabavka** neće biti uključeni u skladišnu evidenciju.
+- Artikli tipa **Proizvodnja** ili **Radni nalog** biće evidentirani u skladištu zajedno sa prvim nivoom sastavnice (BOM-a).
+:::
 
-**Datum zapisa zalihe**: omogućuje određivanje datuma za isporuku iz skladišta, osim postavljanja *Stvaranje evidentiranja sa datumom dokumenta* u *Parametre otpremnica > kartica Razduženje*.
+## Filter
 
-*Posebni gumbi*:
+Na ovoj kartici korisnik može pretraživati i obrađivati otpremnice koje su interno označene statusom **Kontrolisano**.
 
-> **Traži**: omogućuje pretraživanje otpremnica za isporuku.  
-> **Razduženje**: omogućuje izvođenje isporuke odabranih otpremnica iz skladišta, na temelju algoritama isporuke i parametara unesenih u sljedećoj kartici *Parametri*.
+### Posebna dugmad
 
-### Parametri
+> **Traži**: omogućava pretragu otpremnica za razduženje.  
+> **Razduženje**: izvršava razduženje izabranih otpremnica iz skladišta, na osnovu algoritama razduženja i parametara definisanih na kartici **Parametri**.
 
-Na ovoj kartici korisnik može odrediti način obrade iznimki za retke artikla.  
+:::info Zapamti
+Ako u **Parametrima otpremnica > Izvršenje** opcija **Kreiraj skladišni zapis sa datumom dokumenta** nije aktivna, skladišno knjiženje će uvek biti kreirano sa trenutnim datumom.
 
-U ovom slučaju, ako redovi otpremnice nemaju određeno skladište i uzrok za isporuku, dostupne opcije su:
+Ako je opcija aktivna, knjiženje će koristiti:
 
-- **Ne izvršavati potpunu isporuku otpremnice**: ne dopušta djelomičnu isporuku otpremnice;
+- **datum transporta** definisan na kartici **Prevoz** otpremnice, ukoliko je popunjena;
+- u suprotnom, koristiće se datum same otpremnice.
+:::
 
-- **Ignoriraj stavke bez skladišta i predloška**: dopušta djelomičnu isporuku dokumenta; 
+## Parametri
 
-- **Prihvati kao skladište i predložak slijedeće podatke**: za sve artikle pronađene bez skladišta i uzroka u odabranim otpremnicama u filtru, postavlja odmah nakon toga unesene podatke u polja: *Skladište* i *Predložak* (osigurava potpunu isporuku dokumenta).
+Na ovoj kartici korisnik definiše način obrade stavki.
 
-*Posebni gumb*
+U slučaju da redovi otpremnice nemaju definisano skladište i tip skladišnog dokumenta, dostupne su sledeće opcije:
 
-> **Spremi parametre**: omogućuje spremanje postavljenih parametara za evidentiranje.
+- **Ne razdužuj/zadužuj kompletnu otpremnicu** – ne dozvoljava delimično razduženje otpremnice;
 
-Nakon odabira otpremnice (iz kartice *Filter*) i postavljanja parametara, otpremnice se mogu isporučiti pritiskom na gumb *Razduženje*.
+- **Ignoriši stavke bez skladišta i tipa dokumenta** – dozvoljava delimično razduženje dokumenta;
 
-### Sažetak 
+- **Koristi sledeće skladište i tip dokumenta** – za sve artikle kod kojih nisu definisani skladište i tip dokumenta automatski postavlja vrednosti unesene u polja:
 
-Na ovoj kartici korisnik može pretraživati, prikazivati i poništavati izvedene operacije isporuke koje zadovoljavaju određene uvjete za brisanje evidencija skladišta.
+  - **Skladište**
+  - **Tip dokumenta**
 
-Podaci u donjim prikazima, **Otpremnica** i **Zapis**, odgovaraju odabranoj evidenciji isporuke u gornjoj mreži (nakon filtriranja podataka). Također, u ovim zadnjim dvjema mrežama, postoji mogućnost pregleda otpremnica i njihove evidencije skladišta (dvostruki klik na retku).
+  Na taj način omogućava potpuno razduženje dokumenta.
 
-*Posebni gumbi*:
-> **Traži**: za pretraživanje isporučenih otpremnica. Rezultat ovog postupka prikazuje se u mreži rezultata.    
-> **Otkaži**: za potpuno brisanje odabranih operacija isporuke u prikazu rezultata, ako zadovoljavaju određene uvjete za brisanje evidencija skladišta.  
-> **Povrati otpremnicu/primku**: za brisanje odabranih operacija isporuke u prikazu rezultata, za otpremnicu u upotrebi u prikazu detalja.  
+### Posebno dugme
+
+> **Sačuvaj parametre**: omogućava čuvanje podešenih parametara za obradu.
+
+Nakon izbora otpremnice na kartici **Filter** i definisanja parametara, razduženje se pokreće klikom na dugme **Razduženje**.
+
+## Pregled
+
+Na ovoj kartici korisnik može pretraživati, pregledati i poništavati izvršene operacije razduženja koje ispunjavaju uslove za brisanje skladišnih evidencija.
+
+Podaci prikazani u donjim pregledima **Otpremnica** i **Zapis** odgovaraju operaciji izabranoj u gornjoj tabeli rezultata.
+
+Takođe je moguće otvoriti i pregledati:
+
+- otpremnicu,
+- skladišni dokument,
+
+dvostrukim klikom na odgovarajući red.
+
+### Posebna dugmad
+
+> **Traži**: pretražuje već razdužene otpremnice. Rezultati se prikazuju u tabeli rezultata.  
+
+> **Poništi**: potpuno briše izabrane operacije razduženja iz rezultata pretrage, pod uslovom da su ispunjeni uslovi za brisanje skladišnih evidencija.  
+
+> **Vrati otpremnicu/prijemnicu**: briše izabrane operacije razduženja za otpremnicu koja je trenutno prikazana u detaljnom pregledu.
