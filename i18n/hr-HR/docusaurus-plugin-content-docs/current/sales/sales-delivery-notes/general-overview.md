@@ -1,14 +1,34 @@
 ---
-title: Postavke
+title: Uvod
 sidebar_position: 1
 ---
 
-Modul se nalazi u području **Prodaja > Otpremnice**.
+U modulu **Prodaja i Logistika** sustava **Fluentis ERP**, upravljanje **Otpremnicama (DDT)** omogućuje praćenje i dokumentiranje izlaza robe, optimizaciju logističkih procesa te osiguravanje usklađenosti sa zakonskim zahtjevima.
 
-Omogućuje: ručno stvaranje otpremnica; unos poslovnih informacija za klijenta koji je primatelj otpremnice (predstavnici i provizije koje im se isplaćuju, plaćanja i rokovi plaćanja, popusti); upravljanje više vrsta otpremnica kako bi se dokumenti filtrirali prema njihovoj poslovnoj prirodi; upravljanje otpremnicom izravno iz jedne ili više narudžbi kupca, s mogućnošću podjele isporuke robe u više otpremnica i ispunjavanja artikala ili narudžbi; unos nešifriranih artikala u dokument, samo navođenjem njihovog opisa; povezivanje postojećih varijanti s dodatnim atributima na razini artikla kako bi se dobilo prozor koji omogućuje pregled različitih kombinacija; unos troškova za artikle koji su skinuti s skladišta u otpremnici; dodavanje napomena za svaki artikl; rezervacija pražnjenja serija izravno iz otpremnice; ispis otpremnice (uključujući prilagođene za klijenta); automatsko upravljanje prometom robe, s pražnjenjem artikala i ažuriranjem zaliha; ispis etiketa koje će biti poslane s robom; prikaz slike artikla u otpremnici; stvaranje obavijesti putem barkoda.
+## Početna konfiguracija modula
 
-Preporučuje se postavljanje niza **postavki**, kako tabličnih tako i pravilne parametrizacije osnovnih algoritama, prije nego što se krene s generiranjem otpremnice.
+- [**Numeracije**](/docs/configurations/tables/fluentis-numerations) – definiranje numeracija za otpremnice.
+- [**Parametri otpremnica**](/docs/configurations/parameters/sales/dn-parameters) – postavke specifične za upravljanje otpremnicama.
+- [**Parametri grupiranja otpremnica**](/docs/configurations/parameters/sales/dn-grouping) – konfiguracija grupiranja za procese izvršenja.
+- [**Vrste otpremnica**](/docs/configurations/tables/sales/delivery-notes-type) – definiranje i klasifikacija vrsta otpremnica.
 
-> **Tablice**: obrasci su [Numeracija otpremnice](/docs/configurations/tables/fluentis-numerations) i [Vrsta otpremnice](/docs/configurations/tables/fluentis-numerations) a nalaze se u **Tablicama > Prodaja**.
-> 
-> **Parametri**: obrazac je [Parametri otpremnice](/docs/configurations/parameters/sales/dn-parameters) i nalazi se u **Parametrima > Prodaja**.
+## Dokumenti unutar modula
+
+import Link from '@docusaurus/Link';
+
+<div className="cardContainer">
+    <div className="card">
+        <h3>Otpremnice</h3>
+
+        Omogućuje izradu **ručnih otpremnica** izravnim unosom podataka ili generiranjem iz narudžbe kupca.
+
+        <h4>Procedure</h4>
+
+        **Razduženje otpremnica sa skladišta**: artikli se automatski skidaju sa skladišta na temelju evidentiranih isporuka.
+
+        <h4>Ispisi</h4>
+
+        Prilagodljivi predlošci ispisa za svakog kupca.  
+        Uključivanje svih potrebnih komercijalnih i logističkih podataka.
+    </div>
+</div>
