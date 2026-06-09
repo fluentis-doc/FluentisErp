@@ -1,276 +1,365 @@
 ---
-title: Stvori POS
+title: Unos maloprodajnog mjesta (POS-a)
 sidebar_position: 2
 ---
 
-Obrazac **Stvori POS** otvara se putem putanje **Prodaja > POS > Stvori POS** ili putem gumba **Novo** koji se nalazi u obrascu pretraživanja *POS-a*.
+# Novi POS
 
-U obrascu za unos automatski se nude trenutačni **Datum** i **Godina**, ali ih korisnik može promijeniti.
+Obrazac **Unos maloprodajnog mjesta** otvara se putem izbornika **Prodaja > Maloprodajno mjesto > Unos maloprodajnog mjesta** ili klikom na gumb **Novi** u pregledu POS dokumenata. 
 
-## **1. Dati obbligatori**
+## 1. Obavezni podaci
 
-Za nastavak stvaranja računa prodaje, korisnik mora unijeti **obavezna** polja:
+Prilikom otvaranja obrasca sustav automatski predlaže trenutni **datum** i **godinu**, no korisnik ih može promijeniti.
 
-- **Tip POS-a** predefiniran u *Postavke > Tablice > Prodaja > Tipovi POS-a*.
+Za nastavak izrade POS računa potrebno je ispuniti sljedeća obavezna polja:
 
-- **Broj** svakom dokumentu dodjeljuje se broj prema numeraciji koju je odredio korisnik u tablici [Numeracija POS-a](/docs/configurations/tables/fluentis-numerations) i prema vrsti dokumenta koja sadrži numeraciju.
+- **Tip POS-a** – definira se u izborniku *Konfiguracija > Šifrarnici > Prodaja > Vrste POS-a*.
 
-- **Račun**, koristeći [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili[izravno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) upisujući podatke.
+- **Broj dokumenta** – automatski se dodjeljuje prema definiranoj numeraciji POS dokumenata i vrsti dokumenta.
 
+- **Kupac** – može se odabrati putem pomoći za unos ili ručnim unosom podataka.
 
-## 1.1 Ukupni iznosi
-
-U desnom dijelu obrasca nalaze se ukupni iznosi dokumenta:
-
-**Iznos stavki bez popusta**: predstavlja zbroj vrijednosti svih artikala;  
-
-**Zaduženje**: predstavlja vrijednost eventualne akontacije primljene za dokument;
-
-**Poklonjeni iznos**: predstavlja iznos poklonjenih artikala unesenih u kartici Artikli;    
-
-**Ukupni primjenjeni rabati**: predstavlja ukupnu vrijednost primijenjenih popusta na artikle, ali bez konačnih popusta.
-
-**Neto iznos artikala**: Iznos stavki bez popusta – Ukupni primjenjeni rabati;   
-
-**Ukupno konačnih rabata**: predstavlja vrijednost konačnih popusta izraženih u postotku na bruto iznos artikala; 
-
-**Neto iznos konačnih rabata**: Neto iznos artikala - Ukupno konačnih rabata;  
-
-**Neregistrirani troškovi**: predstavlja vrijednost troškova unesenih u prethodnoj kartici kao artikli Tipa troškovi;  
-
-**Troškovi naplate**: predstavlja zbroj troškova naplate unesenih u mrežu Troškovi;    
-
-**Trošak ovjere**: predstavlja zbroj troškova pečata unesenih u mrežu Troškovi;  
-
-**Trošak dokumentacije**: predstavlja vrijednost troškova unesenih u mrežu Troškovi;  
-
-**Osnovica**: Neto iznos artikala - Konačni popusti + Ukupni nepodmireni troškovi + Ukupni dokumentirani troškovi;  
-
-**Porez**: predstavlja zbroj vrijednosti u sažecima PDV-a;
-
-**Ukupno**: Osnovica + PDV.
-
-
-#### Posebni gumbi
-
-> **Fiskalizacija**: dozvoljena  
-> **Razduženje prodajnog mjesta**: omogućuje pražnjenje POS-a, ako je za svaki artikl unesen skladište i uzrok.  
-
-Obrazac sadrži niz kartica.
-
-## **2. Zaglavlje**
-
-Nakon odabira i unosa obveznih podataka u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili pomoću [pomoći polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection)
-
-Unoseći **Račun** automatski se *nude* svi specifični podaci iz kartice **Zaglavlje**, prema podacima postavljenim ranije u[Šifarniku kontakata](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), u odgovarajućim poljima adrese i *sekcijama*:  
-
-- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Valuta datuma](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Dostava**: [Dostava](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [interval valjanosti](/docs/guide/common/glossary/glossary-intro#validity-date)
-
-#### Ostala polja 
-
-**Pos status**: u fazi kreiranja, POS nema niti jedan aktivni oznaku. Ova sekcija uključuje polja:  
-> **Ispisano** aktivira se kada se izvrši ispis računa.   
-> **Učitaj** označava da je POS otpremljen iz skladišta ručno ili putem automatskog otpremanja.    
-> **Knjiženo**: automatski je označeno kada je POS knjižen.  
-> **Opozvano**: aktivirana oznaka omogućuje poništenje POS-a.  
-
-:::note BILJEŠKE
-Kartice se mogu ukloniti pomoću postupka poništavanja operacije.
+:::warning Pažnja
+Ovo polje nema utjecaja na knjiženje POS dokumenata. Kontna shema povezana s knjiženjem POS-a mora sadržavati fiksni konto kupca s definiranim podkontom (primjerice konto za gotovinske kupce). Iznos na stavci kupca treba biti postavljen kao ukupni iznos dokumenta.
 :::
 
-**Naša referenca/vaša referenca**: u ovim poljima obično se navodi interna referenca i referenca klijenta za određeni POS.
+- **Poslovni partner (Šifarnik)** – alternativno polje u odnosu na konto, koristi se za unos kontakta koji nije povezan s podkontom.
 
-**Početne bilješke**: Možete odabrati bilješke koje su prethodno unesene u tablicu s istim imenom koja se nalazi na putanji *Postavke  > Korisnički alati > Upravljanje šifriranim bilješkama*. Da biste to učinili, korisnik mora dvaput kliknuti na polje **Početne bilješke** kako bi otvorio *Pomoć za šifrirane bilješke* i odabrao podatke, ili desnom tipkom miša može otvoriti prozor kako bi specificirao vrlo dugu napomenu. Ako polje sadrži vrijednost, boja pozadine polja se mijenja.
+- **Barkod** – omogućuje brzo dodavanje artikala. Unosom barkoda artikla automatski se kreira nova stavka s količinom 1.
 
-**Operater**: omogućuje unos korisnika koji stvara dokument. Zaposlenici su prethodno uneseni u tablicu *Zaposlenici* koja se nalazi na putanji *Dipendenti* koja se nalazi na putanji *Početna stranica > Zaposlenici*. 
+### 1.1 Ukupni iznosi dokumenta
 
-**Projekt**: koristeći [pomoćno polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) dokument se može povezati s projektom. Ovo udruživanje funkcionira samo na razini zaglavlja artikla. 
+Na desnoj strani obrasca prikazuju se ukupni iznosi dokumenta.
+
+- **Iznos stavki bez popusta**: predstavlja zbroj vrijednosti svih artikala.
+
+- **Zaduženje**: predstavlja iznos eventualnog predujma zaprimljenog za dokument.
+
+- **Poklonjeni iznos**: predstavlja vrijednost artikala vrste *besplatni artikl* unesenih na kartici **Artikli**.
+
+- **Ukupni primijenjeni popusti**: predstavlja ukupnu vrijednost popusta primijenjenih na artikle, ne uključujući završne popuste.
+
+- **Neto iznos artikala**: Bruto iznos artikala − Ukupni primijenjeni popusti.
+
+- **Ukupno konačnih rabata**: predstavlja vrijednost završnih popusta izraženih u postotku na bruto iznos artikala.
+
+- **Iznos umanjen za ukupni popust**: Neto iznos artikala − Završni popusti.
+
+- **Ukupan za stavke troškova**: predstavlja vrijednost troškova evidentiranih na prethodnoj kartici kao artikli vrste *trošak*.
+
+- **Troškovi naplate**: predstavlja zbroj troškova naplate unesenih u tablici **Troškovi**.
+
+- **Trošak ovjere**: predstavlja zbroj troškova biljega unesenih u tablici **Troškovi**.
+
+- **Ukupni troškovi / popusti / doplate**: predstavlja ukupnu vrijednost troškova evidentiranih u tablici **Troškovi**.
+
+- **Porezna osnovica**: Neto iznos artikala − Završni popusti + Ukupan iznos artikala troška + Ukupni troškovi / popusti / uvećanja.
+
+- **Porez**: predstavlja zbroj svih iznosa prikazanih u pregledima PDV-a.
+
+- **Ukupno**: Porezna osnovica + PDV.
+
+#### Dostupne funkcije
+
+> **Fiskalni** – pokreće izdavanje fiskalnog računa putem povezane blagajne ili fiskalnog uređaja.
+
+> **Automatsko razduženje skladišta** – provodi skladišno razduženje artikala ako su za njih definirani skladište i skladišna vrsta dokumenta.
+
+## 2. Zaglavlje
+
+Nakon unosa obaveznih podataka u gornjem dijelu obrasca korisnik može nastaviti unos sljedećih podataka ručno ili korištenjem pomoći za unos.
+
+Nakon odabira **konta**, sustav automatski predlaže podatke definirane na kartici poslovnog partnera, uključujući adresu i podatke u sljedećim sekcijama:
+
+- **Valuta**: valuta, tečaj i datum valute.
+- **Država**: država, jezik i zona.
+- **Pošiljka**: način dostave, prijevoz, pakiranje, cjenik i razdoblje važenja cjenika.
+
+### Ostala polja
+
+- **POS status**: prilikom kreiranja dokumenta nijedan status nije aktivan.
+
+  Dostupni statusi su:
+
+  - **Ispisano** – aktivira se nakon ispisa računa.
+  - **Istovareno** – označava da je POS dokument razdužen sa skladišta, ručno ili automatskom procedurom.
+  - **Knjiženo** – automatski se aktivira nakon knjiženja POS dokumenta.
+  - **Opozvano** – omogućuje poništavanje POS dokumenta.
+
+:::note Napomena
+Aktivni statusi mogu se ukloniti korištenjem funkcije za vraćanje operacije.
+:::
+
+- **Naša referenca / Vaša referenca**: polja za unos internog i kupčevog referentnog broja povezanog s POS dokumentom.
+
+- **Početne napomene**: moguće je odabrati unaprijed definirane napomene iz šifrarnika **Konfiguracija > Uslužni programi > Upravljanje šifriranim napomenama**.
+
+  Za odabir napomene dvaput kliknite polje **Početne napomene** ili koristite pomoć za unos kako biste odabrali željenu vrijednost.
+
+  Desnim klikom moguće je otvoriti prozor za unos duljeg teksta napomene. Ako polje sadrži vrijednost, pozadina polja mijenja boju.
+
+- **Operater**: korisnik koji izrađuje dokument. Operateri moraju biti prethodno definirani u šifrarniku **Početna > Zaposlenici**.
+
+- **Projekt**: omogućuje povezivanje dokumenta s projektom putem pomoći za unos.
+
+  Ovo povezivanje vrijedi isključivo na razini zaglavlja dokumenta.
 
 ### 2.1 Plaćanja
 
-**Uvjeti plaćanja** automatski se preuzimaju iz *Podaci kupca> kartica Plaćanja* i mogu se mijenjati/brisati od strane korisnika.
+Načini plaćanja automatski se preuzimaju s kartice kupca te ih je moguće izmijeniti ili obrisati.
 
-#### Poseban gumb
+#### Dostupna funkcija
 
-> **Otkaži plaćanja**: koristi se za brisanje odabranih redaka plaćanja. 
+> **Otkaži plaćanja** – uklanja odabrane stavke plaćanja.
 
-### 2.3 Popusti
+## 2.2 Predviđen popust
 
-Nude se samo unaprijed definirani popusti preuzeti iz *Šifarnik klijenta> kartica Popusti* i mogu se mijenjati/brisati od strane korisnika.
+Predlažu se samo zadani popusti preuzeti s kartice **Kupac > Popusti**, a korisnik ih može izmijeniti ili obrisati.
 
-Popusti koji su ponuđeni u zaglavlju dokumenta reproduciraju se u svakom novom retku artikla unesenom u dokument.
+Popusti definirani u zaglavlju dokumenta automatski se prenose na svaku novu stavku artikla dodanu u dokument.
 
-Ako nakon unosa redaka artikla dodate novi popust u zaglavlje, to se neće replicirati u već unesenim redcima artikla.
+Ako se nakon unosa stavki artikala u zaglavlje dokumenta doda novi popust, taj se popust neće automatski primijeniti na već unesene stavke artikala.
 
-#### Poseban gumb
+### Dostupna funkcija
 
-> **Izbriši rabate**: koristi se za brisanje odabranih redaka popusta.
+> **Izbriši zadane rabate** – briše odabrane redove s popustima.
 
-### 2.3 Predstavnici
+### 2.3 Trgovački predstavnici
 
-Pokazuje kod predstanika i njegovu proviziju za svaki redak artikla. Ponuđeni su kod i postotak definirani u *Šifarnik klijenta > kartica Predstavnici*.
+Prikazuju se agent i njegova provizija definirani na kartici kupca.
 
-Ako provizija nije povezana s klijentom u njegovoj kartici, agent ipak mora biti unesen, ali s nultom provizijom, jer ako bi bila s provizijom 0, značilo bi da je agent povezan, ali ne prima proviziju.
+Ako agent nije povezan s kupcem, potrebno ga je dodati bez definirane provizije. Prazna vrijednost razlikuje se od provizije 0 %, koja označava da je agent povezan s kupcem, ali nema pravo na proviziju.
 
-Ovaj se odjeljak ponovno nudi za svaki redak artikla u odgovarajućoj kartici *Predstavnici*.
+Ista kartica dostupna je i na razini pojedine stavke artikla.
 
-#### Poseban gumb
+#### Dostupna funkcija
 
-> **Izbriši trgovačke predstavnike**: omogućuje brisanje odabranih predstavnika.
+> **Izbriši trgovačkog predstavnika** – uklanja odabrane agente.
 
-## **3 Artikli**
+## 3. Artikli
 
-U ovoj se kartici unose svi artikli s pripadajućim podacima.
+Na ovoj kartici unose se svi artikli i pripadajući podaci.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom radu obrazaca, obratite se na sljedeći link [ Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
+Podaci se mogu unositi ručno, pomoću pomoći za unos ili se automatski preuzimaju iz povezanih procedura.
 
-Podaci se mogu unositi [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), uz [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili ih mogu predložiti povezane procedure.
+Za unos novog artikla dovoljno je pozicionirati se na novi redak u tablici i unijeti podatke ili koristiti gumb **Novi** na alatnoj traci.
 
-Da biste unijeli **Novi artikl** u mrežu, dovoljno je postaviti se na red kako biste ispunili različite podatke ili koristiti gumb **Novo** koji se nalazi na gornjem izborniku.
+### 3.1 Obavezni podaci
 
+- **Redni broj**: polje se automatski i uzastopno popunjava prilikom unosa novih stavki.
 
-### Obavezni podaci
+- **Tip linije**: omogućuje odabir različitih vrsta stavki:
 
-**Broj linije**: ovo će se polje automatski popuniti progresivno prilikom unosa podataka u red.
+  - **Artikl s klasom**: artikl definiran u šifrarniku koji se može knjižiti u analitičkom računovodstvu i evidentirati na skladištu.
 
-**Tip linije** pruža mogućnost odabira artikala s različitim karakteristikama:
-> **Artikl sa klasom**: to su artikli kodirani u anagrafici i mogu se knjižiti u analitičkom knjigovodstvu i registrirati u skladištu;     
-> **Bilješka**: to je jednostavna napomena, ne utječe na knjigovodstvo i skladište;     
-> **Gratis artikl**: ovaj tip retka označava da je artikl unesen u tom retku poklon, pa stoga nema troškova za kupca;
+  - **Artikl - bilješke**: tekstualna stavka koja nema utjecaj na računovodstvo ni skladišno poslovanje.
 
-**Klasa/Kod/Opis artikla**: mogu se unijeti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koje će ponuditi sve relativne podatke unesene u šifarnik artikla.
+  - **Gratis artikl**: označava da se artikl isporučuje bez naplate kupcu.
 
-Nakon unosa artikla, njegov će *Opis* automatski biti preuzet iz šifarnika. Ako artikl ima *Varijante*, morat ćete odabrati željenu varijantu iz padajućeg izbornika *Varijante*.
+- **Klasa / Šifra / Naziv artikla**: podaci se mogu unijeti ručno ili odabrati pomoću pomoći za unos koja prikazuje artikle definirane u šifrarniku artikala.
 
-**Jedinica mjere**: ponuđena je glavna M.J. artikla, ali korisnik može odabrati drugu mjernu jedinicu.
+  Nakon odabira artikla njegov se naziv automatski preuzima iz kartice artikla.
 
-**Varijante**: ako odabrani artikl ima varijante, morat ćete odabrati željenu varijantu iz ovog padajućeg izbornika. Odabir varijante koristan je za artikle s ovom posebnom konfiguracijom koji mogu imati drugačiju cijenu od standardne postavljene. Prema tome, cijena artikla s varijantama može biti različita od cijene artikla bez varijanti. To može zahtijevati upravljanje varijantama artikla u referentnom cjeniku.
+  Ako artikl ima definirane varijante, željena varijanta može se odabrati na kartici **Podaci artikla**.
 
-**Količina**: predstavlja količinu glavne U.M. i po zadanim postavkama ima vrijednost 1; može se unijeti ručno ili se može preuzeti iz razmatranog dokumenta za isporuku (npr. iz narudžbe dobavljača).
+- **Jedinica mjere**: predlaže se osnovna jedinica mjere artikla. Ako su na kartici artikla definirane alternativne jedinice mjere, korisnik može odabrati drugu jedinicu.
 
-**Cijena s PDV-om**: predstavlja cijenu s PDV-om i mora biti unesena unaprijed u Registar artikla > kartica Troškovi i može biti različita za skladišta;
+- **Varijanta**: ako odabrani artikl ima definirane varijante, potrebno je odabrati željenu varijantu.
 
-**PDV** i **Osnovica**: automatski se izračunavaju, preuzimajući vrijednosti iz cijene s PDV-om.
+  Varijante mogu imati različite cijene pa cijena artikla s varijantom može biti različita od cijene osnovnog artikla.
 
-#### Posebni gumbi*  
-> **Upravljanje pakiranjem**: otvara upravljanje pakiranjem koje će se koristiti u dokumentu kupnje.
-Gumb postaje aktivan ako je dokument spremljen, ali nije učitan.
-Klikom na ovaj gumb otvara se odgovarajući obrazac gdje možete: unesite količinu, odaberite redak i izvršite prijenos odabranog pakiranja na retke artikla klikom na gumb **Izvrši**. U ovom obrascu prikazani su artikli koji su uneseni kao pakiranje i koji su prisutni u tablici **Pakiranja**. 
+  U nekim slučajevima za korištenje varijanti potrebno je održavati posebne cjenike.
 
-> **Ažurirajte cjenike**: omogućuje ažuriranje cijene artikla prema novom cjeniku (ako je unesen novi cjenik).
-Klikom na padajući izbornik pored gumba, moći ćete stvoriti novi cjenik ako ga još nema.
+- **Količina**: predstavlja količinu u osnovnoj jedinici mjere.
 
-### 3.1 Popusti/Cjenici
+  Zadana vrijednost je **1**, ali se može ručno promijeniti ili preuzeti iz izvornog dokumenta.
 
-**Popusti**: ponuđeni su svi popusti povezani s artiklom, svaki s vlastitim izračunom i dodjelom. Popusti se mogu preuzeti: iz podataka o kupcu, iz rješenja plaćanja dodijeljenih dokumentu, iz cjenika iz asocijacije cjenika-kupac. Svi predloženi podaci mogu se mijenjati.
+- **Cijena s PDV-om**: predstavlja prodajnu cijenu uključujući PDV.
 
-**Vrijednosti cjenika**: ponuđen je cjenik iz kojeg je artikl preuzet, s datumom početka/završetka važenja i s posebnim uvjetima prodaje (npr. razrede popusta) dodijeljenim artiklu u cjeniku.
+  Vrijednost se prethodno definira na kartici artikla u sekciji troškova/cijena te može biti različita po skladištima.
 
-#### Posebni gumb*
-> **Izbriši rabat**: omogućuje brisanje popusta povezanog s odabranim artiklom u gornjem izborniku.
+- **PDV** i **Porezna osnovica**: izračunavaju se automatski na temelju unesene cijene s PDV-om.
 
-### 3.2 Detalj artikla 
+### Dostupne funkcije
 
-Unutar ove kartice, možete pronaći/dodati dodatne informacije o artiklu.
+- **Upravljanje ambalažom**: omogućuje otvaranje modula za upravljanje povratnom ambalažom korištenom u POS dokumentu.
 
-**Artikl**: prikazuje informacije o odabranom artiklu iz tablice artikala.
+  Funkcija postaje dostupna nakon spremanja dokumenta, pod uvjetom da dokument još nije skladišno razdužen.
 
-**PDV**: prvenstveno koristi PDV unesen u polje PDV u Šifarnik kontakata. Ako to nije dostupno, koristi se vrijednost iz Šifarnika artikala, ali korisnik ima mogućnost unosa druge vrijednosti. Ovo polje je obavezno.
+  Klikom na gumb otvara se obrazac za povezivanje ambalaže sa stavkama dokumenta. Potrebno je odabrati količinu, označiti željeni redak te izvršiti prijenos ambalaže na stavke artikala klikom na gumb **Izvrši**.
 
-**Projekt**: projekt povezan s dokumentom ili može biti dodijeljen uz pomoć pomoći polja;
+  U obrascu se prikazuju svi artikli definirani kao ambalaža i evidentirani u šifrarniku povratne ambalaže.
 
-**Marka**: prikazuje marku artikla, preuzetu iz šifarnika ili cjenika artikla;
+- **Ažuriranje cjenika**: omogućuje ažuriranje cijene u cjeniku na temelju nove cijene unesene za artikl.
 
-**Promet prodaje**: prikazuje prodaju artikla, preuzetu iz *Šifarnik artikli > kartica Općenito*.
+  Klikom na strelicu pored gumba moguće je kreirati novi cjenik ako još nije definiran.
 
-Ako ovo nije dostupno, neće biti prikazani nikakvi podaci, ali tijekom knjiženja uzet će se u obzir vrijednost unesena u polje  *Trošak/Profit* u zadanim *Šifarnik Kontakata > Računovodstvo > kartica Administracija* 
+### 3.2 Popusti / Cjenici
 
-**Skladište i predložak**: automatski se prikazuju skladište i uzrok koji će se automatski pojaviti prilikom pražnjenja artikala iz skladišta. Podaci se preuzimaju iz tablice *Tipovi POS-a*.
+Na ovoj kartici moguće je pregledavati cjenik i popuste povezane s odabranom stavkom artikla.
 
-**Napomene**: omogućuje dodavanje bilješki za svaki artikl.
+U sekciji **Cjenik** prikazuje se cjenik iz kojeg je preuzeta cijena artikla, zajedno s datumom početka i završetka njegove valjanosti.
 
-## Trgovački predstavnici
+U polju **Vrsta popusta** predlaže se zadana vrsta popusta definirana za kupca ili povezana s odabranim cjenikom.
 
-**Predstavnik**: predstavnik povezan s odabranim artiklom i pripadajuća provizija; podaci odgovaraju onima koji su dostupni u *Zaglavlju > kartici Predstavnici*. Postotak se može promijeniti.
+Ako nije definirana zadana vrsta popusta, moguće je ručno odabrati željenu vrstu popusta.
 
-#### Poseban gumb*
-> **Obriši predstavnika**: omogućuje brisanje povezanog predstavnika s odabranim artiklom.
+Potrebno je uzeti u obzir da jedan cjenik može sadržavati više različitih vrsta popusta za isti artikl, primjerice:
 
+- količinske popuste
+- opće popuste
+- promotivne popuste
 
-### 3.3 Analitika
+Ako oznaka **Ručna cijena** nije aktivna, sustav automatski izračunava:
 
-Može sadržavati informacije o troškovnim/profitnim centrima na koje se raspoređuju vrijednosti artikala.
+- cjenik
+- cijenu
+- popuste stavke
 
-Ovi podaci mogu biti uneseni ručno ili *automatski* (ako su troškovni/profitni centri unaprijed uneseni u *kontakte*, *šifarnik artikala* ili u *plan konta*).
+Svaka ručna izmjena jednog od navedenih podataka automatski aktivira oznaku **Ručna cijena**.
 
-## **4. Sažetak dokumenta**
+U tablici **Popusti** prikazuju se svi popusti povezani s artiklom zajedno s njihovom osnovicom za obračun i načinom dodjele.
 
-### 4.1 Konačni popusti artikala 
+Popusti se mogu preuzeti iz:
 
-Mogu se unijeti samo popusti izraženi u postocima, koji će se primijeniti na ukupan iznos dokumenta.
+- kartice kupca
+- uvjeta plaćanja dodijeljenih dokumentu
+- povezanog cjenika kupca
 
-Popusti uneseni u ovoj sekciji se izračunavaju i prikazuju za svaki artikl u dokumentu, u kartici *Artikli > kartici Popusti/Listini*.
+Sve predložene vrijednosti moguće je ručno izmijeniti.
 
-**Vrsta/Opis popusta**: omogućuje odabir vrsta popusta (unaprijed definiranih u **Vrstama popusta**), dodjeljujući svakoj vrsti prioritet primjene popusta i određujući je li popust izračunat na osnovu osnovice ili kaskadno u odnosu na prethodno primijenjene popuste.  
-**Prioritet**: označava prioritet primjene popusta; sortiranje se provodi uzlazno.  
-**Kaskada/Iznos**: definira koristi li se osnovica za izračun popusta kao (cijena x količina) - (već izračunati popusti) ili (cijena x količina).  
-**Vrijednost**: numerička vrijednost konačnog popusta koji se primjenjuje.  
+### Dostupna funkcija
 
+- **Izbriši zadane rabate** – briše popust povezan s odabranom stavkom artikla.
 
-### 4.2 Naknade/Rabati
+### 3.3 Podaci artikla/Detalj
 
-Ponuđeni su troškovi uneseni u kontaktima, u kartici *Naknade/Rabati*.
+Na ovoj kartici prikazuju se i unose dodatni podaci povezani s artiklom.
 
-Također postoji mogućnost unosa troškova koji se odnose samo na trenutni dokument.
+- **Artikl**: prikazuje podatke artikla odabranog u tablici stavki.
 
-**Vrsta/Opis**: omogućuje odabir vrsta troškova (unaprijed definiranih u **Vrstama troškova**), dodjeljujući svakoj vrsti postotak troška koji se primjenjuje.
+- **PDV**: prioritetno se preuzima iz PDV postavke definirane na kartici kupca.
 
-**Postotak/Vrijednost**: polje koje označava je li troškove potrebno izračunati kao postotak ili kao unaprijed određenu novčanu vrijednost.
+  Ako na kartici kupca nije definiran PDV, sustav predlaže vrijednost definiranu na kartici artikla.
 
-**Postotak**: numerička vrijednost postotka troška.
+  Korisnik može odabrati drugu vrijednost. Polje je obavezno.
 
+- **Projekt**: projekt povezan s dokumentom ili dodijeljen pojedinoj stavci pomoću pomoći za unos.
 
-### 4.3 Sažeci PDV-a
+- **Marka**: preuzima se s kartice artikla ili iz cjenika artikla.
 
-Prikazuje se pregled PDV-a dokumenta za svaku PDV stopu.
+- **Promet prodaje**: preuzima se s kartice artikla u sekciji **Općenito**.
 
-### 4.4 Pregled dospjeća plaćanja
+  Ako vrijednost nije definirana, tijekom knjiženja koristi se konto prihoda definiran u polju **Zadani prihod/trošak protustavke** na kartici kupca.
 
-Prikazuje se pregled rokova dospijeća dokumenta za svaki tip i način plaćanja.
+- **Skladište i predložak**: predlažu se skladište i skladišna vrsta dokumenta koji će se automatski koristiti prilikom skladišnog razduženja artikala.
 
-**Broj**: progresivna vrijednost retka.  
+  Vrijednosti se preuzimaju iz šifrarnika **Vrste POS-a**.
 
-**Plaćanje**: označava alfanumerički kod *Tipa plaćanja* preuzetog iz *Zaglavlja dokumenta > kartice Plaćanja*.
+- **Napomene**: omogućuje unos dodatnih napomena za pojedinu stavku artikla.
 
-**Iznos**: iznos obračunatog dospijeća. Može se ručno izmijeniti, u kojem slučaju se automatski aktivira sljedeća opcija *Ručna izmjena*. (Automatski se izvršavaju kontrole i upozorenja o usklađenosti između iznosa dospijeća i ukupnog iznosa računa)
+### 3.4 Trgovački predstavnici
 
-**Datum dospijeća**: datum obračunatog dospijeća. Može se ručno izmijeniti, u kojem slučaju se automatski aktivira sljedeća opcija *Ručna izmjena*.
+- **Agent**: prikazuje agenta povezanog s odabranom stavkom zajedno s pripadajućom provizijom.
 
-**Troškovi naplate**: polje za unos obračunatih troškova naplate.
+  Podatak se preuzima iz kartice **Agenti** u zaglavlju dokumenta.
 
-**PDV**: koji se primjenjuje na troškove naplate (može se postaviti i ručno)
+  Postotak provizije moguće je izmijeniti na razini pojedine stavke.
 
-**Opis plaćanja**: omogućuje izravni unos knjiženja plaćanja / naplate. Važno je obratiti pažnju na predložak opisa plaćanja jer će koristiti račune čak i bez podračuna, zbog čega postoji sljedeće polje.
+#### Dostupna funkcija
 
-**Kontni podračun kupca/dobavljača**: račun koji koristi za naplatu/plaćanje (na primjer, blagajna ili banka) dospijeće, pri čemu se prebrisuje račun naveden u knjiženju plaćanja (ili naplate)
+- **Izbriši trgovačkog predstavnika** – uklanja agenta povezanog s odabranom stavkom artikla.
 
-**Primka broj**: eventualni broj primitka za primljene novce
+### 3.5 Analitika
 
-**Jed.**: aktivira knjiženje zatvaranja dospijeća u automatskom zapisu
+Kartica može sadržavati podatke o mjestima troška i profitnim centrima na koje se raspoređuju vrijednosti artikala.
 
-**Vrsta popusta**: vrsta financijskog popusta
+Podaci se mogu:
 
-**Dospjela vrijednost**: vrijednost financijskog popusta po primitku
+- unijeti ručno
+- automatski preuzeti s kartice kupca
+- automatski preuzeti s kartice artikla
+- automatski preuzeti iz kontnog plana
 
-**Detaljne deklaracije**: Odnosi se na izjavu namjere. PDV primijenjen na troškove naplate može biti previsok, pa je stoga potrebno unijeti odgovarajuću izjavu o namjeri (kao i za redove artikla i troškove)
+ako su prethodno definirani u odgovarajućim šifrarnicima.
 
+## 4. Sažeci
 
-**ULAZNI RAČUNI**
+### 4.1 Konačni popusti artikala
 
-**Znak**: samo dospijeća koja imaju ovu oznaku zatim se upravljaju plaćanjem s knjiženjem i postavljenim računom
+Završni popusti definirani na razini dokumenta raspoređuju se proporcionalno na sve stavke artikala. To znači da se ukupni iznos popusta dijeli između svih artikala na dokumentu, a pripadajući iznos popusta vidljiv je na svakoj pojedinoj stavci.
 
-**Modeli referentnih plaćanja**: model izrade koda plaćanja. U nekim stranim lokalizacijama svako dospijeće na računu ima kod dodijeljen od strane onoga tko fakturira: ovaj kod strukturiran je prema određenim specifičnim modelima (tablica MB_PaymentReferenceModels), kako bi se kod mogao izgraditi algoritmom.
+- **Vrsta / Naziv popusta**: omogućuje odabir vrste popusta definirane u šifrarniku vrsta popusta te određivanje prioriteta primjene i načina obračuna.
 
-**Kodovi modela plaćanja**: ovo je kod (strukturiran kao prethodni model) koji se mora navesti u stavci, a zatim u plaćanjima koje banka šalje, kako bi obavijestila primatelja koji je rok dospijeća plaćen (i time automatizirati uvoz iz bankovnih transakcija s zatvaranjem stavke). Odatle se popunjava unutar stavke i u SEPA datoteci.
+- **Prioritet**: određuje redoslijed primjene popusta. Popusti se obračunavaju prema rastućem prioritetu.
+
+- **Kaskadno / Iznos**: određuje obračunava li se popust na osnovicu umanjenu za prethodno obračunate popuste ili na puni iznos stavke.
+
+- **Vrijednost**: numerička vrijednost popusta koja će se primijeniti.
+
+### 4.2 Konačni troškovi / popusti / doplate
+
+Predlažu se troškovi i popusti definirani na kartici kupca u sekciji **Troškovi / Popusti**.
+
+U ovoj tablici:
+
+- troškovi se unose kao pozitivni iznosi
+- popusti se unose kao negativni iznosi
+
+Ove stavke primjenjuju se na cijeli dokument i ne raspoređuju se na pojedine artikle.
+
+Mogu sadržavati:
+
+- dodatne troškove
+- opće popuste
+- uvećanja vrijednosti dokumenta
+
+Ako su definirani na kartici kupca, automatski se predlažu prilikom kreiranja dokumenta.
+
+Dostupna polja:
+
+- **Vrsta / Opis**: omogućuje odabir vrste troška definirane u šifrarniku vrsta troškova te određivanje postotka troška.
+
+- **Iznos troška**: prikazuje iznos troška u valuti dokumenta.
+
+- **PDV**: određuje poreznu stopu koja će se primijeniti na uneseni trošak.
+
+- **Postotak / Vrijednost**: određuje obračunava li se trošak kao postotak ili kao unaprijed definiran novčani iznos.
+
+  Ako se odabere vrijednost, iznos troška potrebno je unijeti u polje **Iznos troška**.
+
+- **Postotak**: numerička vrijednost postotka troška.
+
+### 4.3 Sažetak PDV-a
+
+Prikazuje pregled PDV-a dokumenta grupiran po pojedinim poreznim stopama.
+
+### 4.4 Pregled dospijeća plaćanja
+
+Prikazuje pregled dospijeća dokumenta prema vrsti i načinu plaćanja.
+
+Dostupna polja:
+
+- **Redni broj**: redni broj stavke.
+
+- **Način plaćanja**: šifra načina plaćanja preuzeta iz kartice **Plaćanja** u zaglavlju dokumenta.
+
+- **Iznos**: obračunati iznos dospijeća.
+
+  Vrijednost je moguće ručno izmijeniti. U tom slučaju automatski se aktivira oznaka **Ručna izmjena** te se pokreću kontrole usklađenosti između iznosa dospijeća i ukupnog iznosa dokumenta.
+
+- **Datum dospijeća**: obračunati datum dospijeća.
+
+  Vrijednost je moguće ručno promijeniti, pri čemu se automatski aktivira oznaka **Ručna izmjena**.
+
+- **Troškovi naplate**: prikazuje obračunate troškove naplate.
+
+- **PDV**: porezna stopa primijenjena na troškove naplate. Vrijednost se može ručno izmijeniti.
+
+- **Predložak plaćanja**: omogućuje definiranje predloška koji će generirati automatsko knjiženje naplate ili plaćanja.
+
+  Potrebno je obratiti pozornost na predložak knjiženja jer će se koristiti konto definiran u samom predlošku bez konta.
+
+- **Konto / Opis kupca**: konto koji se koristi za evidentiranje naplate ili plaćanja (primjerice blagajna ili banka).
+
+  Ova vrijednost prepisuje konto definiran u kontnoj shemi plaćanja ili naplate.
