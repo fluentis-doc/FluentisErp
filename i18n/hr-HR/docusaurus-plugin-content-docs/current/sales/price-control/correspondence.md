@@ -3,14 +3,36 @@ title: Pridruživanje kategorija popusta
 sidebar_position: 5
 ---
 
-Na ovoj formi možete pregledavati i dodavati nove korespondencije za kategorije popusta. Opća kategorija popusta (primjerice, ona od glavnog dobavljača) povezana je s kategorijom popusta za prodaju i kategorijom popusta za kupnju. Trgovci mogu primiti katalog uvozom putem postupka [Cijena dobavljača](/docs/purchase/purchase-price-lists/procedures/supplier-price) od glavnog dobavljača na koji je primijenjena cijena s određenom kategorijom popusta; trgovci će zatim prodavati proizvod primjenjujući različitu kategoriju popusta. Različiti dobavljači mogu imati istu kategoriju popusta, ali različite kategorije popusta za prodaju i kupnju, jer imaju istog glavnog dobavljača, ali primjenjuju različite uvjete popusta.
-     
-Prvi dio obrasca omogućuje filtriranje rezultata; stupci rezultata su sljedeći:    
-        
-**Klasa artikla**: sadrži kategoriju artikla koja odgovara određenoj kategoriji popusta;           
-**Konto/podkonto /Opis**: sadrži podatke o računu koji je povezan s kategorijom popusta;        
-**Prodaja s popustom**: sadrži kategoriju popusta s kojom račun prodaje artikl;     
-**Kategorija popusta kup**: sadrži kategoriju popusta s kojom račun kupuje artikla;         
-**Prodajna formula**: sadrži eventualne formule koje treba koristiti u postupcima ažuriranja cijena;      
-**Od datuma valjanosti**: sadrži datum od kojeg se uzima u obzir kategorija popusta za kategoriju članka; na ovaj način možete povezati različite kategorije tijekom različitih dijelova godine;        
-**Kategorija rabata**: sadrži kategoriju popusta koja se primjenjuje od strane glavnog 
+U ovom obrascu moguće je pregledavati i definirati povezivanja između kategorija popusta.
+
+Generička kategorija popusta (primjerice kategorija definirana na razini matične tvrtke) povezuje se s jednom kategorijom popusta za prodaju i jednom kategorijom popusta za nabavu.
+
+Takvo povezivanje omogućuje pravilnu primjenu uvjeta popusta između modula nabave i prodaje.
+
+Primjer:
+
+- distributeri mogu preuzeti katalog artikala iz matične tvrtke putem procedure uvoza dobavljačkih cijena(/docs/purchase/purchase-price-lists/procedures/supplier-price) 
+- matična tvrtka primjenjuje jednu kategoriju popusta
+- distributeri mogu koristiti drugu kategoriju popusta za isti artikl
+
+Na taj način moguće je primjenjivati različite komercijalne uvjete uz zadržavanje zajedničke baze artikala.
+
+## Polja obrasca
+
+- **Klasa artikla**: određuje klasu artikala kojoj pripada definirana kategorija popusta.
+
+- **Konto / Podkonto / Naziv**: prikazuje poslovnog partnera kojem je dodijeljena kategorija popusta.
+
+- **Kategorija popusta prodaje**: kategorija popusta koja se koristi kada poslovni partner prodaje artikl.
+
+- **Kategorija popusta nabave**: kategorija popusta koja se koristi kada poslovni partner nabavlja artikl.
+
+- **Formula ažuriranja politike cijena**: određuje formulu koja će se koristiti u procedurama ažuriranja cijena.
+
+- **Od datuma valjanosti**: datum od kojeg se definirano povezivanje primjenjuje.
+
+  Na taj je način moguće koristiti različite kategorije popusta za različita vremenska razdoblja.
+
+- **Kategorija rabata**: generička kategorija popusta definirana na razini matične tvrtke.
+
+  Ovo je polje koje povezuje modul **Nabava** s modulom **Prodaja**.
