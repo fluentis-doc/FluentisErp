@@ -54,7 +54,7 @@ Za ispravno upravljanje povratima i kreditnim fakturama, potrebno je osigurati k
 
 - **Skladište i Razlog skladišta**: svaka vrsta dokumenta koja utječe na stanje skladišta mora biti povezana s [Skladištem](/docs/configurations/tables/logistics/warehouses) i pripadajućem [predlošku](/docs/configurations/tables/logistics/warehouse-templates); općenito, u povratima i u kreditnim bilješkama, kretanje će biti teret, budući da se roba vraća od kupca.
 
-## Upravljanje mješovitim znakovima - NAPOMENA ZA PARTNERE I PROJECT MANAGERE
+## Upravljanje mješovitim znakovima - NAPOMENA ZA PARTNERE I PROJECT MENADŽERE
 
 Mogućnost knjiženja dokumenta s mješovitim oznakama treba posebno omogućiti putem SQL skripte.
 
@@ -69,7 +69,7 @@ Identificirati Id traženog parametra
 
 U pretraživanju
 
-    select * from [Fluentis].[SH_CompanyParameters] where [SH_CompanyParameters].[SHCP_Parameter_SHLP_Id] = ..... individuare la riga per la società in uso attraverso il campo SHCP_Company_SHC_Id
+    select * from [Fluentis].[SH_CompanyParameters] where [SH_CompanyParameters].[SHCP_Parameter_SHLP_Id] = ..... pronaći red za tvrtku u upotrebi putem polja SHCP_Company_SHC_Id
 
 i izvršiti update na polju SHCP_Value
 

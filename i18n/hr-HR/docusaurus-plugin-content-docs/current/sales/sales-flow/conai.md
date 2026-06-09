@@ -52,7 +52,7 @@ U [tipovima otpremnica](/docs/configurations/tables/sales/delivery-notes-type) i
 
 ## Primjer primjene u prodajnoj fakturi
 
-Ako je upravljanje CONAI aktivirano za tvrtku, u kartici *Artikli* prodajne fakture bit će dostupna podkartica  **CONAI materijali po artiklu**. Ova sekcija uključuje materijale ambalaže koji čine artikl, s sljedećim informacijama:         
+Ako je upravljanje CONAI aktivirano za tvrtku, u kartici *Artikli* prodajne fakture bit će dostupna kartica  **CONAI materijali po artiklu**. Ova sekcija uključuje materijale ambalaže koji čine artikl, s sljedećim informacijama:         
 
 **Jedinica mjere**: Navodi jedinicu mjere koja se koristi za materijal.   
 **Težina po jedinici**: Težina svakog materijala, eventualno umanjena za postotak oslobađanja definiran u kartici klijenta.   

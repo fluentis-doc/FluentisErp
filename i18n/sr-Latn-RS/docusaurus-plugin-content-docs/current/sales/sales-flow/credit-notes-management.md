@@ -1,85 +1,135 @@
 ---
-title: Upravljanje povratima i kreditnim računima
+title: Upravljanje povratima i knjižnim odobrenjima
 sidebar_position: 3
 ---
 
-U modulu Prodaje sustava Fluentis, upravljanje povratima i kreditnim notama omogućuje registraciju i praćenje vraćanja dobara ili usluga od strane kupaca, generirajući potrebne računovodstvene i logističke dokumente. Ovaj proces osigurava ispravnu praćenje operacija i ažuriranje u stvarnom vremenu zaliha u skladištu i računovodstvenih pozicija kupaca.
+U modulu **Prodaja** sistema Fluentis, upravljanje povratima i knjižnim odobrenjima omogućava evidentiranje i praćenje povrata robe ili usluga od strane kupaca, uz generisanje potrebnih računovodstvenih i logističkih dokumenata. Ovaj proces obezbeđuje pravilno praćenje poslovnih događaja i ažuriranje stanja zaliha u skladištu, kao i računovodstvenih pozicija kupaca u realnom vremenu.
 
-Fluentis podržava različite tipove povrata:
+Fluentis podržava različite vrste povrata:
 
-- Povrat s kreditnim računom: povrat robe uz izdavanje kreditnog računa za storniranje fakturiranog iznosa. Roba se može vratiti putem otpremnice ili izravno prilikom izdavanja kreditnog računa, ovisno o postavkama skladišta.
+- **Povrat sa knjižnim odobrenjem**: povrat robe uz izdavanje knjižnog odobrenja radi storniranja prethodno fakturisanog iznosa. Roba može biti vraćena putem otpremnice ili direktno prilikom izdavanja knjižnog odobrenja, u zavisnosti od podešavanja skladišta.
 
-- Povrat bez kreditnog računa: povrat robe bez izdavanja kreditnog računa, npr. za zamjenu robe. U tom slučaju se obično koriste otpremnice za kretanje robe u skladištu.
+- **Povrat bez knjižnog odobrenja**: povrat robe bez izdavanja knjižnog odobrenja, na primer radi zamene robe. U tom slučaju najčešće se koriste otpremnice za evidentiranje kretanja robe u skladištu.
 
-Povrat također može biti: 
+Povrat može biti:
 
-- Djelomični povrat: povrat samo dijela isporučene robe.  
+- **Delimičan povrat**: vraća se samo deo isporučene robe.
 
-- Potpuni povrat: povrat cijele isporuke.  
+- **Potpun povrat**: vraća se kompletna isporuka.
 
-##  Operativni proces
+## Operativni proces
 
-Dokumenti **Povrat** mogu se generirati na dva načina:
+Dokumenti tipa **Povrat** mogu se generisati na dva načina:
 
-1) *putem procedure **Storno** dostupne na traci izbornika u pretrazi otpremnica ili faktura*. Ovom procedurom moguće je djelomično ili potpuno poništiti odabrane dokumente u mreži pretraživanja. Nakon što kliknete tipku *Poništi*, otvorit će se iskačući prozor gdje: odaberite redove artikala koje želite poništiti s pripadajućim količinama, unesite Tip dokumenta koji treba stvoriti (**bit će moguće odabrati samo tipove dokumenata s prirodom Povrata**) i unesite Razlog poništenja skladišta.
+### 1. Putem procedure **Storno**
 
-2) *ručno, kreiranjem nove otpremnice ili fakture* 
-U ovom slučaju važno je unijeti tip dokumenta s prirodom *Povrat*, odabrati klijenta i artikle za storniranje. Međutim, prilikom ručnog kreiranja povrata neće postojati veza s originalnim dokumentom, koji mora biti dodan ručno od strane korisnika.
+Procedura **Storno** dostupna je na alatnoj traci u pretragama otpremnica ili faktura.
 
-Ako je generirana otpremnica, iz nje je moguće generirati fakturu putem odgovarajuće procedure ili ručno.
-Prilikom spremanja ručno unesene kreditne fakture, korisnik će biti upozoren da mora unijeti negativnu količinu u kreditnu fakturu. Ova funkcionalnost omogućuje ažuriran promet, pri čemu se kreditne fakture uzimaju u obzir s negativnim iznosom.
+Ovom procedurom moguće je delimično ili potpuno stornirati izabrane dokumente iz liste rezultata.
+
+Nakon klika na dugme **Storno**, otvara se prozor u kojem je potrebno:
+
+- odabrati stavke koje se storniraju;
+- definisati količinu za storno;
+- izabrati tip dokumenta koji će biti kreiran (moguće je izabrati samo tipove dokumenata čija je priroda **Povrat**);
+- uneti razlog skladišnog storna.
+
+### 2. Ručnim kreiranjem nove otpremnice ili fakture
+
+U ovom slučaju potrebno je:
+
+- izabrati tip dokumenta čija je priroda **Povrat**;
+- odabrati kupca;
+- uneti artikle koji se vraćaju.
+
+Kod ručno kreiranih povrata ne postoji automatska veza sa originalnim dokumentom, pa korisnik mora ručno povezati dokumente.
+
+Ako je generisana povratna otpremnica, iz nje je moguće kreirati knjižno odobrenje odgovarajućom procedurom ili ručno.
+
+Prilikom čuvanja ručno unetog knjižnog odobrenja sistem će upozoriti korisnika da količina mora biti negativna. Ova funkcionalnost omogućava pravilno ažuriranje prometa, pri čemu se knjižna odobrenja evidentiraju sa negativnim iznosom.
 
 :::note Pažnja
-U tablici [Tipovi otpremnica](/docs/configurations/tables/sales/delivery-notes-type), tipu otpremnice *Povrat*mora biti pridružen [Tip fakture](/docs/configurations/tables/sales/invoices-type) *Kreditna faktura*.
+
+U tabeli [Tipovi otpremnica](/docs/configurations/tables/sales/delivery-notes-type), tipu otpremnice sa prirodom **Povrat** mora biti pridružen [Tip fakture](/docs/configurations/tables/sales/invoices-type) tipa **Knjižno odobrenje**.
+
 :::
 
-Za obračun otpremnica povrata u kreditnu fakturu mogu postojati različiti slučajevi, ovisno o znakovima količine i cijene u izvornoj otpremnici:   
-1)	Otpremnica – Povrat      Kol   10, Cijena 10 -> stavka fakture (normalna ili kreditna) Kol  -10, Cijena  10
-2)	Otpremnica – Povrat     Kol  -10, Cijena  10 -> stavka normalne fakture            Kol  10, Cijena  10 
-3)	Otpremnica – Povrat       Kol  -10, Cijena  10 -> stavka kreditne fakture                       Kol -10, Cijena  10 
-4)	Otpremnica – Povrat       Kol   10, Cijena -10 -> stavka normalne fakture            Kol -10, Cijena -10 
-5)	Otpremnica – Povrat      Kol   10, Cijena -10 -> stavka kreditne fakture                      Kol -10, Cijena  10 
-6)	Otpremnica – Povrat      Kol  -10, Cijena -10 -> stavka kreditne fakture           Kol  10, Cijena -10 
-7)	Otpremnica – Povrat       Kol  -10, Cijena -10 -> stavka kreditne fakture                       Kol -10, Cijena  10 
-8)	Otpremnica – Normalna Kol  10, Cijena  10 -> stavka kreditne fakture                        Kol -10, Cijena  10
-9)	Otpremnica – Normalna Kol  -10,Cijena  10 -> stavka kreditne fakture                        Kol -10, Cijena  10
-10)	Otpremnica – Normalna   10,Cijena -10 -> stavka kreditne fakture                        Kol -10, Cijena  10 
-11)	Otpremnica – Normalna Kol  -10,Cijena -10 -> stavka kreditne fakture                        Kol -10, Cijena  10 
+Za fakturisanje povratnih otpremnica u knjižno odobrenje mogu postojati različiti slučajevi, u zavisnosti od znakova količine i cene na izvornoj otpremnici:
 
-## Konfiguracije i Parametri
+1. Otpremnica – Povrat, količina **10**, cena **10** → stavka fakture (standardna ili knjižno odobrenje): količina **-10**, cena **10**
+2. Otpremnica – Povrat, količina **-10**, cena **10** → stavka standardne fakture: količina **10**, cena **10**
+3. Otpremnica – Povrat, količina **-10**, cena **10** → stavka knjižnog odobrenja: količina **-10**, cena **10**
+4. Otpremnica – Povrat, količina **10**, cena **-10** → stavka standardne fakture: količina **-10**, cena **-10**
+5. Otpremnica – Povrat, količina **10**, cena **-10** → stavka knjižnog odobrenja: količina **-10**, cena **10**
+6. Otpremnica – Povrat, količina **-10**, cena **-10** → stavka knjižnog odobrenja: količina **10**, cena **-10**
+7. Otpremnica – Povrat, količina **-10**, cena **-10** → stavka knjižnog odobrenja: količina **-10**, cena **10**
+8. Otpremnica – Standardna, količina **10**, cena **10** → stavka knjižnog odobrenja: količina **-10**, cena **10**
+9. Otpremnica – Standardna, količina **-10**, cena **10** → stavka knjižnog odobrenja: količina **-10**, cena **10**
+10. Otpremnica – Standardna, količina **10**, cena **-10** → stavka knjižnog odobrenja: količina **-10**, cena **10**
+11. Otpremnica – Standardna, količina **-10**, cena **-10** → stavka knjižnog odobrenja: količina **-10**, cena **10**
 
-Za ispravno upravljanje povratima i kreditnim fakturama, potrebno je osigurati konfiguraciju sljedećih elemenata:  
+## Konfiguracije i parametri
 
-- **Tipovi dokumenta**: Definiranje vrsta dokumenata za povrate i kreditne fakture.  
+Za pravilno upravljanje povratima i knjižnim odobrenjima potrebno je obezbediti konfiguraciju sledećih elemenata:
 
-- **Skladište i Razlog skladišta**: svaka vrsta dokumenta koja utječe na stanje skladišta mora biti povezana s [Skladištem](/docs/configurations/tables/logistics/warehouses) i pripadajućem [predlošku](/docs/configurations/tables/logistics/warehouse-templates); općenito, u povratima i u kreditnim bilješkama, kretanje će biti teret, budući da se roba vraća od kupca.
+- **Tipovi dokumenata**: definisanje tipova dokumenata za povrate i knjižna odobrenja.
 
-## Upravljanje mješovitim znakovima - NAPOMENA ZA PARTNERE I PROJECT MANAGERE
+- **Skladište i skladišni razlog**: svaki tip dokumenta koji utiče na stanje skladišta mora biti povezan sa [Skladištem](/docs/configurations/tables/logistics/warehouses) i odgovarajućim [Skladišnim razlogom](/docs/configurations/tables/logistics/warehouse-templates).
 
-Mogućnost knjiženja dokumenta s mješovitim oznakama treba posebno omogućiti putem SQL skripte.
+U povratima i knjižnim odobrenjima skladišno kretanje će uglavnom biti ulaznog tipa, jer se roba vraća od kupca nazad u skladište.
 
-:::note Tehnička napomena za aktivaciju:
-Slijedi SQL skripta koju je potrebno izvršiti:
+## Upravljanje mešovitim znakovima – NAPOMENA ZA PARTNERE I PROJEKT MENADŽERE
 
-PAŽNJA: Parametar ispod koji kontrolira način upravljanja znakovima sada se mora postaviti na +1, za razliku od prošlosti, uslijed promjene politike upravljanja znakovima o kojoj je riječ.
+Mogućnost knjiženja dokumenata sa mešovitim znakovima mora biti posebno omogućena SQL skriptom.
 
-    select * from [Fluentis].[SH_LocalizationParameters] where [SH_LocalizationParameters].[SHLP_Code] like 'VE-SalesInvoice_CreditNotesPostingSigns'
+:::note Tehnička napomena za aktivaciju
 
-Identificirati Id traženog parametra  
+Potrebno je izvršiti sledeći SQL upit:
 
-U pretraživanju
+sql
+select * 
+from [Fluentis].[SH_LocalizationParameters]
+where [SH_LocalizationParameters].[SHLP_Code] like 'VE-SalesInvoice_CreditNotesPostingSigns'
+```
 
-    select * from [Fluentis].[SH_CompanyParameters] where [SH_CompanyParameters].[SHCP_Parameter_SHLP_Id] = ..... individuare la riga per la società in uso attraverso il campo SHCP_Company_SHC_Id
+Identifikujte ID traženog parametra.
 
-i izvršiti update na polju SHCP_Value
+Zatim izvršite:
 
-VRIJEDNOSTI PARAMETRA:
+sql
+select *
+from [Fluentis].[SH_CompanyParameters]
+where [SH_CompanyParameters].[SHCP_Parameter_SHLP_Id] = .....Pronađite red za kompaniju koja se koristi preko polja:
 
-0 = trenutna postavka, ne dopušta miješane znakove (NC su uvijek prisiljene negativne)
+SHCP_Company_SHC_Id
 
--1 = NC uvijek invertirane (pozitivno postaje negativno i obrnuto)
+i ažurirajte vrednost polja:
 
-+1 = Trenutno zahtijevana postavka za miješane znakove; i fakture (FT) i kreditne fakture (NC) se knjiže sa stvarnim znakovima, + ostaje + i - ostaje -.
+SHCP_Value
+
+### Vrednosti parametra
+
+**0**
+
+Trenutna podrazumevana postavka.
+
+Ne dozvoljava mešovite znakove.
+
+Knjižna odobrenja su uvek prisilno negativna.
+
+**-1**
+
+Knjižna odobrenja se uvek invertuju.
+
+Pozitivno postaje negativno, a negativno postaje pozitivno.
+
+**+1**
+
+Trenutno preporučena postavka za rad sa mešovitim znakovima.
+
+I fakture i knjižna odobrenja knjiže se sa stvarnim znakom:
+
+- pozitivne vrednosti ostaju pozitivne;
+- negativne vrednosti ostaju negativne.
+
 :::
-
-

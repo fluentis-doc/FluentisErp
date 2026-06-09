@@ -12,7 +12,7 @@ Postupak konverzije ponude u prodajnu narudžbu može se pokrenuti na dva način
 - Iz [Pretraga ponuda](/docs/sales/offers/search-offers): Odabirom jedne ili više ponuda i klikom na tipku *Konverzija* koja se nalazi na traci izbornika, moguće je izvršiti masovnu konverziju.  
 - Iz [Zaglavlja](/docs/sales/offers/insert-offer) ponude: Unutar pojedinačne ponude, tipka *Konverzija* u zaglavlju omogućuje pretvaranje odabrane ponude u prodajnu narudžbu.  
 
-Ova procedura omogućuje pretvaranje prodajne ponude u stvarnu prodajnu narudžbu. Kako bi se konverzija ispravno izvršila, potrebno je u tablici [Vrsta ponude](/docs/configurations/tables/sales/sales-offer-type) konfigurirati željenu [Vrstu narudžbe](/docs/configurations/tables/sales/sales-order-types). Osim toga, ponuda mora imati unesen *Datum potvrde* u zaglavlju; u suprotnom će sustav prikazati skočnu poruku (pop-up) kako bi zatražio potvrdu ponude prije nastavka postupka.  
+Ova procedura omogućuje pretvaranje prodajne ponude u stvarnu prodajnu narudžbu. Kako bi se konverzija ispravno izvršila, potrebno je u tablici [Vrsta ponude](/docs/configurations/tables/sales/sales-offer-type) konfigurisati željenu [Vrstu narudžbe](/docs/configurations/tables/sales/sales-order-types). Osim toga, ponuda mora imati unesen *Datum potvrde* u zaglavlju; u suprotnom će sustav prikazati skočnu poruku (pop-up) kako bi zatražio potvrdu ponude prije nastavka postupka.  
 
 Tijekom postupka konverzije prikazuje se skočni prozor (pop-up) s različitim opcijama:
 
@@ -29,14 +29,14 @@ Postupak isporuke iz narudžbe u otpremnicu dostupan je na dva načina:
 - Masovna isporuka iz [Pretrage narudžbi](/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders): U pretrazi narudžbi odaberite jednu ili više narudžbi za isporuku te kliknite na Isporuka otpremnice na traci izbornika.  
 - Isporuka iz [Zaglavlja](/docs/sales/sales-delivery-notes/insert-delivery-notes/sales-dn) otpremnice: U zaglavlju otpremnice koristite tipku Isporuka iz narudžbe kako biste otvorili prozor za odabir potvrđenih narudžbi kupca koje će se prenijeti u otpremnicu.  
 
-Ovaj postupak omogućuje pretvaranje jedne ili više prodajnih narudžbi u jednu ili više otpremnica. Prije pokretanja postupka potrebno je konfigurirati željenu vrstu otpremnice u tablici [Vrste narudžbi](/docs/configurations/tables/sales/sales-order-types). Automatizirani postupak omogućuje izradu otpremnice samo ako je narudžba ispisana i potvrđena.
+Ovaj postupak omogućuje pretvaranje jedne ili više prodajnih narudžbi u jednu ili više otpremnica. Prije pokretanja postupka potrebno je konfigurisati željenu vrstu otpremnice u tablici [Vrste narudžbi](/docs/configurations/tables/sales/sales-order-types). Automatizovani postupak omogućuje izradu otpremnice samo ako je narudžba ispisana i potvrđena.
 
 Uvjeti za isporuku:
 
 - Kupac na narudžbama mora biti isti kao kupac na otpremnici.
 - Narudžba za isporuku mora imati oznaku „Ispisano” i postavljen datum potvrde narudžbe.
 - Tablica „Vrste otpremnica” mora imati postavljenu oznaku „Narudžba”, koja označava da se otpremnica može generirati iz narudžbe.
-- Ako se postupak pokreće iz Pretrage narudžbi, vrste dokumenata moraju biti kompatibilne: u tablici „Vrste narudžbi” vrsta narudžbe koja se isporučuje mora imati definiranu odgovarajuću vrstu otpremnice.  
+- Ako se postupak pokreće iz Pretrage narudžbi, vrste dokumenata moraju biti kompatibilne: u tablici „Vrste narudžbi” vrsta narudžbe koja se isporučuje mora imati definisanu odgovarajuću vrstu otpremnice.  
 
 Nakon odabira narudžbi i postavljanja filtara, klikom na *Prijenos* generira se otpremnica s podacima iz narudžbe. Ako je postupak uspješno izvršen, status narudžbe automatski se mijenja u „Isporučeno” ili „Djelomično isporučeno”.
 
@@ -49,8 +49,8 @@ Postupak isporuke iz otpremnice u račun može se pokrenuti na dva načina:
 
 Ova procedura omogućava kreiranje jednog ili više računa na temelju jedne ili više otpremnica. Procedura se sastoji od tri glavna taba:
 
-- Vrijednovanje: Omogućava unos filtera za odabir otpremnica za fakturiranje (sa statusom "Ispisano") i definiranje datuma kreiranja računa.  
-- Parametri: Konfigurira opcije grupiranja za kreiranje računa iz više otpremnica, uključujući otpremnice iz različitih godina i poreznih razdoblja, različite vrste otpremnica ili s različitim tečajevima. Također je moguće definirati način obrade plaćanja, vraćajući podatke iz kartoteke ili zadržavajući one specificirane u otpremnicama.
+- Vrednovanje: Omogućava unos filtera za odabir otpremnica za fakturiranje (sa statusom "Ispisano") i definisanje datuma kreiranja računa.  
+- Parametri: Konfigurisa opcije grupiranja za kreiranje računa iz više otpremnica, uključujući otpremnice iz različitih godina i poreznih razdoblja, različite vrste otpremnica ili s različitim tečajevima. Također je moguće definisati način obrade plaćanja, vraćajući podatke iz kartoteke ili zadržavajući one specificirane u otpremnicama.
 - Prethodni: Omogućava pregled, filtriranje i poništavanje prethodnih fakturiranja.
 
 Nakon odabira otpremnica i postavljanja parametara, moguće je nastaviti s kreiranjem računa klikom na *Kreiranje računa iz otpremnice*.

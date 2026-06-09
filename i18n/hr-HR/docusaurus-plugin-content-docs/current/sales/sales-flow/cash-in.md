@@ -3,7 +3,7 @@ title: Generiranje predujma od narudžbe kupca
 sidebar_position: 7
 ---
 
-Za naplatu predujma za robu naručenu od našeg kupca nije potrebno kreirati proforma fakturu, već se postupak pokreće iz modula prodaje u obrascu Narudžba kupca.
+Za naplatu predujma za robu naručenu od našeg kupca nije potrebno kreirati *proforma* fakturu, već se postupak pokreće iz modula prodaje u obrascu Narudžba kupca.
             
 **Faza 1**                
 Kreirati novu narudžbu (potrebno je unijeti artikl s kodom).
