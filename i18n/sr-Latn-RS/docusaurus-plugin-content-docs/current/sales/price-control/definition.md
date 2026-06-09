@@ -1,16 +1,16 @@
 ---
-title: Matrica Konfiguracije Popusta
+title: Matrica konfiguracije popusta
 sidebar_position: 1
 ---
 
-U ovom obrascu definiraju se politike popusta na temelju postavki unesenih u drugim obrascima u grupi **Upravljanje cijenama**. Za svaki red, politike popusta odabiru se prema prioritetu unesenom u tablici [Prioritet dodjele popusta](/docs/sales/price-control/priority).         
+U ovom obrascu definišu se politike popusta na osnovu podešavanja unetih u drugim obrascima grupe **Upravljanje cenama**. Za svaki red politike popusta biraju se prema prioritetu definisanom u tabeli [Prioritet dodele popusta](/docs/sales/price-control/priority).
 
-U prvoj mreži nalaze se sljedeći stupci:     
-       
-**Konto/podkonto/opis**: sadrži podatke o korisniku politike popusta;        
-**Klasa/Artikl/opis**: sadrži artikl na koji se primjenjuje politika popusta;     
-**Komercijalna kategorija**: sadrži komercijalnu kategoriju koja se uzima u obzir;    
-**Upravljanja cijenama, Kategorije popusta**: sadrži kategoriju popusta povezanu s tablicom Formula;        
-**Datum**: sadrži važenje politike popusta; omogućuje primjenu različitih politika u različitim razdobljima godine.  
+U prvoj tabeli nalaze se sledeće kolone:
 
-U drugom prikazu definiraju se **Popusti** koji se primjenjuju na kombinacije iz prvog prikaza. 
+- **Konto / Podkonto / Naziv**: sadrži podatke o korisniku politike popusta.
+- **Klasa / Artikal / Opis**: sadrži artikal na koji se primenjuje politika popusta.
+- **Komercijalna kategorija**: sadrži komercijalnu kategoriju koja se uzima u obzir.
+- **Kategorije popusta / Upravljanje cenama**: sadrži kategoriju popusta povezanu sa tabelom formula.
+- **Datum važenja**: određuje period važenja politike popusta i omogućava primenu različitih politika u različitim vremenskim periodima.
+
+U drugoj tabeli definišu se **Popusti** koji se primenjuju na kombinacije definisane u prvoj tabeli.
