@@ -10,7 +10,7 @@ U prvoj mreži nalaze se sljedeći stupci:
 **Konto/podkonto/opis**: sadrži podatke o korisniku politike popusta;        
 **Klasa/Artikl/opis**: sadrži artikl na koji se primjenjuje politika popusta;     
 **Komercijalna kategorija**: sadrži komercijalnu kategoriju koja se uzima u obzir;    
-**Upravljanja cijenama, Kategorije popusta**: sadrži kategoriju popusta povezanu s tablicom Formula;        
-**Datum**: sadrži važenje politike popusta; omogućuje primjenu različitih politika u različitim razdobljima godine.  
+**Kategorije popusta/Upravljanja cijenama**: sadrži kategoriju popusta povezanu s tablicom Formula;        
+**Datum valjanosti**: sadrži važenje politike popusta; omogućuje primjenu različitih politika u različitim razdobljima godine.  
 
 U drugom prikazu definiraju se **Popusti** koji se primjenjuju na kombinacije iz prvog prikaza. 
