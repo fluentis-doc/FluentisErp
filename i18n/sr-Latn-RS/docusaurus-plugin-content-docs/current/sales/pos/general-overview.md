@@ -3,7 +3,7 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul se nalazi na putanji **Prodaja > Maloprodajno mjesto**.
+Modul se nalazi na putanji **Prodaja > Maloprodajno mesto**.
 
 Modul omogućava upravljanje prodajom direktno na blagajni, uz napredne funkcionalnosti za kreiranje i upravljanje računima, izdavanje fiskalnih računa te automatsko ažuriranje stanja zaliha u skladištu.
 
