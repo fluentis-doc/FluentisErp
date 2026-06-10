@@ -3,45 +3,46 @@ title: Pretraga računa
 sidebar_position: 1
 ---
 
-Obrazac se otvara putem **Prodaja > Računi > Pretraživanje računa**.
+Obrazac se otvara putem **Prodaja > Izlazni računi > Izlazni računi**.
 
 ### Filtriranje podataka
 
-Omogućuje pretraživanje svih dokumenata radi pregleda, uređivanja ili brisanja, te eventualno unos novog dokumenta; prozor se sastoji od područja filtra i rezultatne mreže.
+Omogućava pretragu svih dokumenata radi pregleda, uređivanja ili brisanja, kao i eventualni unos novog dokumenta; prozor se sastoji od oblasti za filtriranje i mreže rezultata.
 
-Nakon što su postavljeni svi željeni filtri, jednostavno kliknite na gumb **Traži** u *gornjem izborniku* kako biste prikazali rezultate unutar prikazu rezultata.
+Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na dugme **Traži** u *gornjem meniju* kako bi se rezultati prikazali u mreži rezultata.
 
-Za otvaranje pojedinosti o dokumentu, jednostavno ga odaberite i dvaput kliknite mišem ili kliknite na gumb **Uredi** (omogućuje ulazak u pojedinosti i uređivanje) ili gumb **Pregled** (omogućuje ulazak u pojedinosti i pregled, ali ne i uređivanje).
+Za otvaranje detalja dokumenta, dovoljno je odabrati dokument i dvaput kliknuti mišem ili kliknuti na dugme **Uredi** (omogućava ulazak u detalje i uređivanje) ili dugme **Pregled** (omogućava ulazak u detalje i pregled, ali ne i uređivanje).
 
-*Vidi također*:   
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)            
-Dodavanje novih polja u obrasce pretraživanja    
+*Vidi takođe*:   
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)            
+Dodavanje novih polja u obrasce za pretragu
 
-## Filtri za elektroničko fakturiranje
+## Filteri za elektronsko fakturisanje
 
 U zaglavlju je moguće filtrirati fakture prema njihovom statusu.
-Status se odnosi kako na faze prije slanja na *Fluentis Business Hub* i/ili prije slanja na *Sustav razmjene podataka* Porezne uprave (SDI), tako i na one nakon toga (npr. neusklađeno, neisporučeno ili isporučeno).
 
-Moguće je također filtrirati prema svim ostalim informacijama vezanim uz SDI (koje su također prisutne u rezultatnoj mreži). Takve informacije automatski popunjava *Fluentis Business Hub* čim postanu dostupne.
+Status se odnosi kako na faze pre slanja u *Fluentis Business Hub* i/ili pre slanja u *Sistem za razmenu podataka* Poreske uprave (SDI), tako i na one nakon toga (npr. neusaglašeno, neisporučeno ili isporučeno).
 
-### Stvaranje, dupliciranje i storno faktura prodaje
+Moguće je takođe filtrirati prema svim ostalim informacijama vezanim za SDI (koje su takođe prisutne u prikazu rezultata). Takve informacije automatski popunjava *Fluentis Business Hub* čim postanu dostupne.
 
-*Posebni gumbi*:
+### Kreiranje, dupliranje i storno izlaznih računa
 
-> **Nova**: ovaj gumb omogućuje [Stvaranje nove fakture](/docs/sales/sales-invoices/invoicing/sales-invoice).  
-> **Dupliciraj**: ovaj gumb omogućuje stvaranje kopije dokumenta, zadržavajući sve uvjete originalnog dokumenta, ali s trenutnim podacima.
+*Posebna dugmad*:
+
+> **Novo**: ovo dugme omogućava [Kreiranje novog računa](/docs/sales/sales-invoices/invoicing/sales-invoice).  
+> **Dupliraj račun**: ovo dugme omogućava kreiranje kopije dokumenta, zadržavajući sve uslove originalnog dokumenta, ali sa trenutnim podacima.
 Koristi se za česta slanja slične robe istom subjektu dokumenta.
 
 *Postupak*:
 
-> 1. odaberite dokument koji želite duplicirati i kliknite na gumb **Dupliciraj**;
-> 2.	aplikacija će započeti stvaranje dokumenta i otvoriti dijaloški okvir **Sažetak dupliciranja**, gdje ćete popuniti potrebne podatke;
-> 3.	kliknite na **OK** za potvrdu operacije.
+> 1. odaberite dokument koji želite da duplirate i kliknite na dugme **Dupliraj**;
+> 2. aplikacija će pokrenuti kreiranje dokumenta i otvoriti dijaloški prozor **Sažetak dupliranja**, gde ćete popuniti potrebne podatke;
+> 3. kliknite na **OK** za potvrdu operacije.
 
-**Storno**: ovaj gumb omogućuje *djelomično* ili *potpuno poništenje dokumenta*. Pomoću ove funkcije možete stvoriti dokument o poništenju koji će *povećati* (u kupnji) / *smanjiti* (u prodaji) inventar.
+**Storno prometa**: ovo dugme omogućava *delimično* ili *potpuno poništavanje dokumenta*. Pomoću ove funkcije možete kreirati dokument storna koji će *povećati* (u nabavci) / *smanjiti* (u prodaji) stanje zaliha.
 
 *Postupak*:
 
-> 1. odaberite dokument koji želite poništiti i kliknite na gumb **Storno**. Aplikacija će otvoriti dijaloški okvir sa svim stavkama artikala originalnog dokumenta;  
-> 2.	u ovom obrascu unesite: **Vrsta dokumenta o poništenju** koju želite stvoriti i, za svaki članak, navedite **Količinu za poništiti**, **Razlog poništenja** i aktivirajte parametar**Za poništiti**;
-> 3.	kliknite na **OK** za potvrdu operacije.
+> 1. odaberite dokument koji želite da poništite i kliknite na dugme **Storno**. Aplikacija će otvoriti dijaloški prozor sa svim stavkama artikala originalnog dokumenta;
+> 2. u ovom obrascu unesite: **Tip dokumenta** storna koji želite da kreirate i, za svaki artikal, navedite **Količinu za storniranje**, **Predložak storna** i aktivirajte parametar **Stornirati**;
+> 3. kliknite na **OK** za potvrdu operacije.
