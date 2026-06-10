@@ -744,7 +744,7 @@
     "description": "The label for category Definizione politica sconti in sidebar purchase"
   },
   "sidebar.sales.category.Fatture di vendita": {
-    "message": "Prodajni računi",
+    "message": "Izlazni računi",
     "description": "The label for category Fatture di vendita in sidebar sales"
   },
   "sidebar.sales.category.Fatturazione": {
