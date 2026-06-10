@@ -1,33 +1,46 @@
 ---
-title: Postavke i operacije
-sidebar_position: 1
+title: Uvod
+sidebar_position: 2
 ---
 
-Modul se nalazi u  **Vendite > Prodaja > Izlazni računi**.
+Modul **Izlaznih (prodajnih) računa (faktura)** omogućuje ručno ili automatsko kreiranje računa, dohvat cijena i popusta iz cjenika, unos prilagođenih detalja, upravljanje različitim vrstama računa i numeracijama te automatizaciju procesa kao što su knjiženje, izdavanje mjeničnih instrumenata i grupiranje otpremnica (DDT). Ispis je prilagodljiv, osiguravajući potpunu i sljedivu dokumentaciju.
 
-### Postavke
+## Potrebna konfiguracija modula prije korištenja:
 
-Prije generiranja dokumenata preporučuje se postavljanje niza tabličnih **postavki** i ispravna parametrizacija osnovnih algoritama.
+- **[Numeracije](/docs/configurations/tables/fluentis-numerations)**: definiranje numeracija za račune.  
+- **[Parametri prodajnih računa](/docs/configurations/parameters/sales/sales-invoices-parameters)**: specifične postavke za upravljanje računima.  
+- **[Parametri grupiranja prodajnih računa](/docs/configurations/parameters/sales/invoice-grouping)**: konfiguracija za objedinjavanje više otpremnica u jednu fakturu.  
+- **[Promet prodaje](/docs/configurations/tables/sales/sales-turnover)**: praćenje i upravljanje podacima o prodaji.  
+- **[Vrste računa](/docs/configurations/tables/sales/invoices-type)**: kreiranje i klasifikacija vrsta računa.
 
-> **Tablice**: obrasci su Fakturirane prodaje, Numeracija faktura prodaje, Vrste faktura prodaje, koji se nalaze u **Tablicama > Prodaja**.
->
-> **Parametri**: obrazac je [Parametri fatture di vendita](/docs/configurations/parameters/sales/sales-invoices-parameters) prodaje i nalazi se u **Parametrima > Prodaja**.
+Alternativno je dostupna procedura [**Brzi početak (Fast Start)**](/docs/guide/fast-start).
 
-### Operacije 
+## Dokumenti kojima se upravlja
 
-- ručno stvaranje faktura;
-- unos poslovnih informacija za klijenta koji je primatelj fakture (agenti i provizije koje su im isplaćene, plaćanja i rokovi dospijeća, popusti, i kreiranje podataka);
-- upravljanje više vrsta faktura i numeracija, kako bi se dokumenti filtrirali prema njihovoj poslovnoj prirodi;
-- unos artikala za koje su informacije automatski predložene;
-- preuzimanje cijena iz prodajnih cjenika ili iz evidencije artikala, preuzimanje popusta iz prodajnih cjenika;
-- unos i artikala koji nisu šifrirani, navođenjem samo njihovog opisa;
-- unos u fakturu i troškova (popusta) za robu skinutu s skladišta;
-- dodavanje napomena za svaki artikl;
-- stvaranje fakture iz narudžbenice, eventualno s djelomičnim ispunjenjem;
-- stvaranje faktura iz otpremnice s mogućnošću grupiranja otpremnica prema skladišnim uzrocima, valutama, agentima itd., ili grupiranje prema rokovima dospijeća ili različitim godinama;
-- povezivanje postojećih varijanti s dodatnim atributima na razini artikla;
-- prikazivanje, u sažetku fakture, vrste plaćanja i rokova dospijeća, s mogućnošću izmjene, ponovnog izračuna ili grupiranja;
-- automatsko generiranje podataka vezanih uz izdane fakture;
-- ispis fakture (uključujući i prilagođene fakture klijenta);
-- knjiženje faktura i podataka;
-- stvaranje upozorenja putem barkoda.
+import Link from '@docusaurus/Link';
+
+<div className="cardContainer">
+    <div className="card">
+
+### Izlazni računi
+
+Omogućuje kreiranje *ručne* fakture izravnim unosom podataka ili *automatske* fakture generirane iz *narudžbi kupaca* ili iz *otpremnica (DDT)*.  
+
+### Postupci
+
+**Razduženje skladišta na osnovni računa**: artikli se automatski umanjuju na skladištu prema evidentiranim otpremama.  
+
+**Izrada iz otpremnice**: generiranje računa za jedan ili više otpremnica prema operativnim potrebama.  
+
+### Knjiženje
+
+Izdane fakture automatski se knjiže, ažurirajući financijske evidencije i održavajući usklađenost s poslovnim knjigama poduzeća.  
+
+### Ispisi
+
+Prilagodljivi predlošci za svakog kupca.  
+
+Uključivanje svih potrebnih komercijalnih i računovodstvenih podataka.  
+
+    </div>
+</div>
