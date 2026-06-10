@@ -17,7 +17,7 @@ U računu se automatski predlažu trenutni **Datum** i **Godina**, ali vrijednos
 
 Za nastavak stvaranja dokumenta, korisnik mora unijeti *obavezna* polja:
 
-- **Vrsta računa** predefiniran u *Konfiguriranje > Tabelica > Prodaja >  [Tipovi izlaznih računa](/docs/configurations/tables/sales/invoices-type)*.
+- **Vrsta računa** predefiniran u *Konfiguriranje > Tablica > Prodaja >  [Tipovi izlaznih računa](/docs/configurations/tables/sales/invoices-type)*.
 
 - **Broj** svakom dokumentu dodijeljen je broj prema numeraciji koje je korisnik odredio u tablici [Numeracija](/docs/configurations/tables/fluentis-numerations) i za tip dokumenta koji sadrži numeraciju.
 
@@ -71,7 +71,7 @@ U slučaju kada se račun generira putem:
 > *Stvaranja iz narudžbe kupca*, ova polja bit će popunjena informacijama koje su navedene u narudžbenici kupca. Ovaj prijenos vrijedi samo za račun stvoren uzimanjem podataka iz jedne narudžbenice;  
 > *Izrade iz otpremnice*, ova polja bit će popunjena informacijama koje su navedene u otpremnici. Ovaj prijenos vrijedi samo za račun stvoren uzimanjem podataka iz jedne otpremnice.
 
-**Početna bilješka račiun**: mogu se odabrati napomene koje su prethodno unesene u tablicu istog imena koja se nalazi u putanji *Konfiguracija > Korisnost > Upravljanje šifriranim bilješkama* Korisnik mora dvaput kliknuti na polje **Početna bilješka** kako bi otvorio pomoć *šifriranim napomenama* i odabrao podatke ili desnim klikom miša može otvoriti prozor kako bi specificirao vrlo dug tekst bilješke. Ako polje sadrži vrijednost, promijenit će se boja pozadine polja.
+**Početna bilješka računa**: mogu se odabrati napomene koje su prethodno unesene u tablicu istog imena koja se nalazi u putanji *Konfiguracija > Korisnost > Upravljanje šifriranim bilješkama* Korisnik mora dvaput kliknuti na polje **Početna bilješka** kako bi otvorio pomoć *šifriranim napomenama* i odabrao podatke ili desnim klikom miša može otvoriti prozor kako bi specificirao vrlo dug tekst bilješke. Ako polje sadrži vrijednost, promijenit će se boja pozadine polja.
 
 U slučaju *Izrade iz narudžbenice*, informacije koje su bile navedene u narudžbenici kupca bit će automatski ponovno prikazane u polju **Početna bilješka**.
 
@@ -118,7 +118,7 @@ U slučaju *Izrade iz narudžbenice*, informacije koje su bile navedene u narud�
 
 **Uvjeti plaćanja** automatski se prenose iz *Šifarnik kupca > kartica Plaćanje* i mogu se mijenjati/brisati od strane korisnika.
 
-Ako je uz **Vrstu plaćanja** povezan financijski popust, iznos popusta uzima se u obzir samo u računovodstvenom smislu, odnosno u rokovima plaćanja dokumenta, a ne u ukupnom iznosu otprmenice. 
+Ako je uz **Vrstu plaćanja** povezan financijski popust, iznos popusta uzima se u obzir samo u računovodstvenom smislu, odnosno u rokovima plaćanja dokumenta, a ne u ukupnom iznosu otpremnice. 
 
 Ako dokument potječe iz:
 
@@ -516,20 +516,20 @@ Prikazuje pregled rokova dokumenta, za svaki *tip i način plaćanja*.
 **Plaćanje**: predstavlja alfanumerički kod *Način plaćanja preuzet iz zaglavlja dokumenta > kartica Plaćanja*.
 **Iznos**: izračunati iznos roka. Može se ručno postaviti, u kojem slučaju se automatski aktivira sljedeća oznaka *Ručno uređivanje*. (Automatski se provjeravaju i upozorenja o podudarnosti vrijednosti rokova i ukupnog računa)
 **Datum dospijeća**: izračunati datum dospijeća. Može se ručno postaviti, u kojem slučaju se automatski aktivira sljedeća oznaka Ručno uređivanje.
-**Troškovi naplate**: polje u kojem su prikazani izračunati troškovi inkasa.
+**Troškovi naplate**: polje u kojem su prikazani izračunati troškovi.
 **PDV**: koji se primjenjuje (može se postaviti i ručno)
-**Predložak plaćanja**: moguće je izravno unijeti u račun računsku sljedivost koja rezultira automatskim zapisom naplate/plaćanja. Obratiti pažnju na predložak računske sljedivosti jer će koristiti prisutne račune čak i bez podračuna, zbog čega postoji sljedeće polje.
-**Račun s podračunom kupca/dobavljača** koji se koristi za naplatu/plaćanje (npr. gotovina ili banka) roka, što zamjenjuje prisutni račun u računskoj kauzalnosti plaćanja (ili inkasa)
+**Predložak plaćanja**: moguće je izravno unijeti u račun računsku sljedivost koja rezultira automatskim zapisom naplate/plaćanja. Obratiti pažnju na predložak računske sljedivosti jer će koristiti prisutne račune čak i bez konta, zbog čega postoji sljedeće polje.
+**Račun s kontom kupca/dobavljača** koji se koristi za naplatu/plaćanje (npr. gotovina ili banka) roka
 **Primka broj**: eventualni broj računa za primljene novce
 **Jed.**: aktivira računovodstvo zatvaranja rokova u automatskom zapisu
 **Vrsta popusta**: vrsta financijskog popusta
 **Dospjela vrijednost**: vrijednost financijskog popusta po naplati
-**Detaljne deklaracije**: To je referenca na izjavu namjere. PDV primijenjen na troškove inkasa može uvijek biti PDV plafond, pa je stoga potrebno moći unijeti i povezanu izjavu namjere (kao kod redaka stavki i troškova)
+**Detaljne deklaracije**: To je referenca na izjavu namjere. PDV primijenjen na troškove može uvijek biti PDV *plafond*, pa je stoga potrebno moći unijeti i povezanu izjavu namjere (kao kod redaka stavki i troškova)
 
 **ULAZNI RAČUNI**:
 
 **Znak**: samo rokovi s ovom oznakom kasnije se obrađuju u plaćanju s postavljenim računom i računom.
-**Modeli referentnog plaćanja**: model stvaranja kodova plaćanja. U nekim stranim lokalizacijama svaki rok u računu ima kod dodijeljen od strane fakturanta: ovaj se kod strukturira prema određenim specifičnim modelima (tablica MB_PaymentReferenceModels), kako bi se mogao izgraditi kod pomoću algoritma.
+**Modeli referentnog plaćanja**: model stvaranja kodova plaćanja. U nekim stranim lokalizacijama svaki rok u računu ima kod dodijeljen po računu: ova se šifra strukturira prema određenim specifičnim modelima (tablica MB_PaymentReferenceModels), kako bi se mogao izgraditi kod pomoću algoritma.
 **Šifre modela plaćanja**: ovo je šifra (strukturirana kao prethodni model) koju treba navesti u stavci, a zatim u plaćanjima koje se šalju banci, kako bi ona obavijestila korisnika o tome koji je rok plaćen (i tako automatizirala uvoz iz bankovnih transakcija s zatvaranjem stavke). Odatle se ispunjava unutar stavke i u Sepa datoteci.
 **Ograničenje datuma plaćanja unaprijed**: Ovo je polje predviđeno u SDI formatu računa, rok do kojeg se može primijeniti financijski popust.
 Općenito, rokovi dospijeća ponovno se izračunavaju ako se promijeni plaćanje u zaglavlju dokumenta. Slučajevi u kojima se rokovi dospijeća ne ažuriraju ako se promijeni plaćanje u zaglavlju su sljedeći:
