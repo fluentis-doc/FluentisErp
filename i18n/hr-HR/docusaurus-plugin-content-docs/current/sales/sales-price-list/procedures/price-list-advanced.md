@@ -1,33 +1,36 @@
 ---
-title: Napredno kreiranje cjenika
+title: Napredan unos cjenika
 sidebar_position: 4
 ---
 
-Postupak **Napredno kreiranje cjenika** omogućuje izradu novih cjenika primjenom *Formule*, polazeći od artikala koji se nalaze u postojećim cjenicima.    
+Postupak **Napredan unos cjenika** omogućuje izradu novih cjenika primjenom *Formule*, polazeći od artikala koji se nalaze u postojećim cjenicima.    
 Uvjet za prikaz artikala u ovoj mreži jest postojanje [**Formule za ažuriranje politika cijena i popusta**](/docs/sales/price-control/formulas) koja ima definirani cjenik odredišta i cjenik izvora; artikl, također, mora pripadati cjeniku izvora.
 Na temelju artikala iz cjenika izvora, Fluentis primjenjuje formulu i kreira cjenik odredišta.  
 
-Mreža za pretraživanje je samo za čitanje i sadrži sljedeća polja:         
-**Klasa, Artikl, Opis artikla**: ovdje se prikazuje artikl iz cjenika;          
-**Formule izračuna**:ovdje se nalazi formula definirana u pripadajućoj tablici;          
-**Izvor tipa prodajnog cjenika**: sadrži tip prodajnog cjenika izvora kojem pripada artikl, na koji će se primijeniti formula;        
-**Račun/podračun/opis izvora klijenta**: sadrži prilagođeni cjenik koji se uzima kao izvor kojem pripada artikl;       
-**Izvor tipa dobavljačkog cjenika**: sadrži tip dobavljačkog cjenika izvora;      
-**Conto/sottoconto/descrizione origine fornitore**: sadrži prilagođeni cjenik izvora;        
-**Odredište tipa prodajnog cjenika**: sadrži tip prodajnog cjenika koji je primatelj promjene kada se primijeni formula iz ovog reda;  
-**Račun/podračun/opis odredišnog prodajnog cjenika**: sadrži prilagođeni cjenik koji se kreira kao primatelj promjene;   
-**Odredište tipa dobavljačkog cjenika**: sadrži tip dobavljačkog cjenika primatelja promjene;  
-**Račun/podračun/opis odredišnog dobavljačkog cjenika**: sadrži prilagođeni nabavni cjenik primatelja promjene;        
-**Od/Do datum valjanosti**: prikazuje datume valjanosti pripadajućeg cjenika;      
-**Nova cijena**: ovdje se prikazuje cijena novog cjenika dobivena primjenom formule na prethodnu cijenu;          
-**Prethodna cijena**: ovdje se prikazuje cijena izvornog cjenika;         
-**Promjena**: ovdje se unosi promjena u apsolutnom iznosu;       
-**%Promjena**: ovdje se unosi promjena u postotku.      
 
-U donjem dijelu moguće je unijeti podatke za novi cjenik:          
-**Datum početka valjanosti**: predlaže se današnji datum, može se mijenjati;        
-**Datum završetka valjanosti**: ne predlaže se nikakav datum, ali je moguće unijeti datum završetka valjanosti;       
-**Valuta**: predlaže se valuta tvrtke, može se mijenjati;        
-[**Zaokruživanja**](/docs/sales/sales-price-list/procedures/rounding): moguće je unijeti određeni **Mask** koji se primjenjuje na raspon vrijednosti za upravljanje decimalnim mjestima.  
+Tablica za pretraživanje služi samo za pregled podataka i sadrži sljedeća polja:
 
-Za pokretanje postupka, odaberite redove artikala u mreži i kliknite **Kreiranje cjenika** u traci izbornika.
+- **Klasa, Artikl, Opis artikla**: u ovim poljima prikazuje se artikl cjenika.
+- **Formula izračuna**: prikazuje formulu definiranu u odgovarajućoj tablici.
+- **(Izvorna) vrsta prodajnog cjenika**: sadrži vrstu prodajnog cjenika izvornog reda, odnosno cjenik na koji će se primijeniti formula.
+- **Kupac / Podkonto / Opis (izvornog) kupca**: sadrži personalizirani cjenik koji se koristi kao izvor i kojem pripada artikl.
+- **(Izvorna) vrsta dobavljačkog cjenika**: sadrži vrstu izvornog dobavljačkog cjenika.
+- **Dobavljač / Podkonto / Opis (izvornog) dobavljača**: sadrži personalizirani dobavljački cjenik koji se koristi kao izvor.
+- **(Odredišna) vrsta prodajnog cjenika**: sadrži vrstu prodajnog cjenika koja će biti kreirana ili izmijenjena primjenom formule iz ovog retka.
+- **Kupac / Podkonto / Opis (odredišnog) prodajnog cjenika**: sadrži personalizirani prodajni cjenik koji će biti kreiran kao rezultat obrade.
+- **(Odredišna) vrsta dobavljačkog cjenika**: sadrži vrstu dobavljačkog cjenika koja će biti kreirana ili izmijenjena.
+- **Dobavljač / Podkonto / Opis (odredišnog) dobavljačkog cjenika**: sadrži personalizirani dobavljački cjenik koji će biti kreiran kao rezultat obrade.
+- **Vrijedi od / do**: prikazuje razdoblje važenja izvornog cjenika.
+- **Nova cijena**: prikazuje izračunanu cijenu novog cjenika, dobivenu primjenom formule na izvornu cijenu.
+- **Prethodna cijena**: prikazuje cijenu izvornog cjenika.
+- **Promjena**: prikazuje promjenu izraženu u apsolutnoj vrijednosti.
+- **% promjene**: prikazuje promjenu izraženu u postotku.
+
+U donjem dijelu obrasca moguće je definirati dodatne podatke za novi cjenik:
+
+- **Datum početka valjanosti**: predlaže se trenutni datum, ali ga je moguće promijeniti.
+- **Datum kraja valjanosti**: prema zadanim postavkama nije popunjen, no moguće je unijeti datum završetka važenja cjenika.
+- **Valuta**: predlaže se valuta društva, ali ju je moguće promijeniti.
+- **Zaokruživanja**(/docs/sales/sales-price-list/procedures/rounding): omogućuje definiranje maske za zaokruživanje koja će se primijeniti na raspon vrijednosti radi upravljanja decimalama.
+
+Za pokretanje procedure potrebno je označiti željene retke artikala u tablici te kliknuti gumb **Kreiranje cjenika** na alatnoj traci.
