@@ -1,16 +1,29 @@
 ---
-title: Uspostava asocijacije tipova lista prodaje
+title: Pridruživanje tipa prodajnog cenovnika
 sidebar_position: 1
 ---
 
-Ova procedura omogućuje pregled asocijacija lista prodaje povezanih s poslovnim kategorijama.  
-U prvoj kartici nalaze se referenca na asocijaciju i povezana poslovna kategorija. Ova veza označava da je skup [tipova](/docs/configurations/tables/sales/sales-price-lists) cjenika koji čini dio asocijacije valjan za odabranu poslovnu kategoriju.
-U drugom rešetku, pak, moguće je unijeti **Popuste** koji vrijede za asocijaciju.
+Ova procedura prikazuje povezanosti prodajnih cenovnika sa komercijalnim kategorijama.
+U prvoj tabeli prikazane su postojeće veze između grupa cenovnika i komercijalnih kategorija. Ta povezanost određuje da skup vrsta cenovnika(/docs/configurations/tables/sales/sales-price-lists) definisan u vezi važi za odabranu komercijalnu kategoriju.
+U drugoj tabeli moguće je definisati popuste koji važe za vezu odabranu u prvoj tabeli.
+Dvostrukim klikom na red u prvoj tabeli otvara se obrazac za uređivanje veze.
 
-Dvostrukim klikom na redak u prvom rešetku moguće je otvoriti  **Pridruživanje**.        
-U otvorenoj obrascu moguće je unijeti **Vrsta pridruživanja**, u gornjem dijelu, koji se sastoji od koda i opisa, te **Datum početka valjanosti** koji će biti predložen u listama. Također su dostupni gumbi za postavljanje prioriteta i popusta u retcima lista.         
-U rešetku se unose tipovi listina koji se uzimaju u obzir u ovoj asocijaciji. Moguće ih je ručno unijeti ili predložiti opće liste pomoću gumba **Predloži generalne cjenike** u traci vrpce.       
-Oznaka **Predefinirano** označava da je ovaj tip lista zadani.     
-Oznaka **On sam** omogućuje razmatranje prilagođenog lista u evidenciji klijenta kada dođe do asocijacije.
+U gornjem delu obrasca nalazi se polje **Vrsta pridruživanja**, koje se sastoji od:
+- šifre
+- opisa
+- datuma početka važenja koji će se predlagati u cenovnicima
 
-Sada se skup tipova cjenika prisutan u asocijaciji smatra valjanim za unesenu poslovnu kategoriju. Ako je potrebno masovno povezati ove tipove cjenika u evidenciji klijenta, koristi se postupak  [Asocijacij cjenika klijenata po poslovnoj kategoriji](/docs/sales/sales-price-list/procedures/category-association).
+Dostupna su i dugmad za definisanje prioriteta i popusta na stavkama cenovnika.
+U tabeli ispod definišu se vrste cenovnika koje pripadaju ovoj vezi.
+Vrste cenovnika moguće je:
+
+- unositi ručno
+- automatski predložiti pomoću dugmeta **Predloži opšte cenovnike**
+
+Oznaka **Podrazumevano** određuje koja je od navedenih vrsta cenovnika podrazumevana.
+
+Oznaka **Vlastito** omogućava korišćenje personalizovanog cenovnika definisanog na kartici kupca kada kupac ima dodeljenu ovu vezu.
+
+Nakon definisanja, skup vrsta cenovnika uključenih u vezu postaje važeći za odabranu komercijalnu kategoriju.
+
+Ako je potrebno masovno povezati ove vrste cenovnika sa karticama kupaca, koristi se procedura **Pridruživanje cenovnika kupaca prema komercijalnoj kategoriji**(/docs/sales/sales-price-list/procedures/category-association).
