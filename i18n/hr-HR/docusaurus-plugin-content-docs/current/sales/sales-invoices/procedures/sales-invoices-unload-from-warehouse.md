@@ -1,22 +1,28 @@
 ---
-title: Razduženje prodajnih računa skladišta
+title: Razduženje skladišta na osnovi računa
 sidebar_position: 2
 ---
 
-Preuzmite prodajne račune sa skladišta Procedura se otvara putem putanje **Prodaja > Otpremnice > Procedure > Razduženje prodajnih računa skladišta**. 
+Procedura se otvara putem putanje **Prodaja > Izlazni računi > Procedure > Razduženje skladišta na osnovi računa**. 
 
 Ova procedura omogućuje izvršavanje/obnavljanje operacija automatskog skladištenja artikala iz računa.
 
+:::info Zapamti
+Ako dokument sadrži **fiktivne artikle**, procedura će uzeti u obzir **način nabave** definiran u **MRP parametrima** artikla:
+- artikli tipa **Nabava** neće biti uključeni u skladišnu registraciju
+- artikli tipa **Proizvodnja** ili **Radni nalog** bit će evidentirani u skladištu koristeći prvu razinu sastavnice (BOM)
+:::
+
 ### Filter
 
-Na ovom tabu, korisnik ima mogućnost pretraživanja i transfera računa koji imaju postavljenu zastavicu *Ispisano* unutar sebe.
+Na ovom tabu, korisnik ima mogućnost pretraživanja i transfera računa koji imaju postavljenu zastavicu *Ispisano*.
 
 **Datum zapisa zalihe**: omogućuje specificiranje datuma za skladištenje iz skladišta, osim postavljanja *Stvori zapis sa datumom dokumenta* u *Parametri izlaznih računa > kartica Razduženje*.
 
 *Posebni gumbi*:
 
 > **Traži**: omogućuje pretraživanje računa za skladištenje.   
-> **Razduženje**: omogućuje izvršavanje skladištenja odabranih računa iz skladišta, na temelju algoritama skladištenja i parametara postavljenih u sljedećem tabu *Parametri*. 
+> **Istovar**: omogućuje izvršavanje skladištenja odabranih računa iz skladišta, na temelju algoritama skladištenja i parametara postavljenih u sljedećem tabu *Parametri*. 
 
 ### Parametri
 
@@ -24,7 +30,7 @@ Na ovom zaslonu, korisnik može specificirati način tretiranja iznimaka za stav
 
 U ovom slučaju, ako stavke računa nemaju specificirano skladište i uzrok za skladištenje, dostupne opcije su:
 
-- **Ne obavljaj potpuno skladištenje računa**: ne dopušta djelomično skladištenje otpremnice;
+- **Ne istovaruj/utovaruj cjelokupnu otpremnicu/primku**: ne dopušta djelomično skladištenje otpremnice;
 
 - **Ignoriraj stavke bez skladišta i predloška**: omogućuje djelomično skladištenje dokumenta;
 

@@ -1,52 +1,57 @@
 ---
-title: Razduženje prodajnih računa skladišta
+title: Razduženje skladišta na osnovu računa
 sidebar_position: 2
 ---
 
-Preuzmite prodajne račune sa skladišta Procedura se otvara putem putanje **Prodaja > Otpremnice > Procedure > Razduženje prodajnih računa skladišta**. 
+Procedura se otvara putem putanje **Prodaja > Izlazni računi > Procedure > Razduženje skladišta na osnovu računa**.
 
-Ova procedura omogućuje izvršavanje/obnavljanje operacija automatskog skladištenja artikala iz računa.
+Ova procedura omogućava izvršavanje/ponovno izvršavanje operacija automatskog razduženja artikala iz skladišta na osnovu računa.
+
+:::info Zapamti
+Ako dokument sadrži **fiktivne artikle**, procedura će uzeti u obzir **način nabavke** definisan u **MRP parametrima** artikla:
+- artikli tipa **Nabavka** neće biti uključeni u skladišnu registraciju
+- artikli tipa **Proizvodnja** ili **Radni nalog** biće evidentirani u skladištu koristeći prvi nivo sastavnice (BOM)
+:::
 
 ### Filter
 
-Na ovom tabu, korisnik ima mogućnost pretraživanja i transfera računa koji imaju postavljenu zastavicu *Ispisano* unutar sebe.
+Na ovoj kartici korisnik ima mogućnost pretrage i prenosa računa koji imaju postavljenu oznaku *Odštampano*.
 
-**Datum zapisa zalihe**: omogućuje specificiranje datuma za skladištenje iz skladišta, osim postavljanja *Stvori zapis sa datumom dokumenta* u *Parametri izlaznih računa > kartica Razduženje*.
+**Datum skladišne evidencije**: omogućava definisanje datuma razduženja iz skladišta, osim ako je uključena opcija *Kreiraj zapis sa datumom dokumenta* u *Parametri izlaznih računa > kartica Razduženje*.
 
-*Posebni gumbi*:
+*Posebna dugmad*:
 
-> **Traži**: omogućuje pretraživanje računa za skladištenje.   
-> **Razduženje**: omogućuje izvršavanje skladištenja odabranih računa iz skladišta, na temelju algoritama skladištenja i parametara postavljenih u sljedećem tabu *Parametri*. 
+> **Traži**: omogućava pretragu računa za razduženje.  
+> **Razduženje**: omogućava izvršavanje razduženja odabranih računa iz skladišta, na osnovu algoritama razduženja i parametara postavljenih na sledećoj kartici *Parametri*.
 
 ### Parametri
 
-Na ovom zaslonu, korisnik može specificirati način tretiranja iznimaka za stavke artikala.
+Na ovom ekranu korisnik može definisati način obrade izuzetaka za stavke artikala.
 
-U ovom slučaju, ako stavke računa nemaju specificirano skladište i uzrok za skladištenje, dostupne opcije su:
+U slučaju da stavke računa nemaju definisano skladište i razlog za skladišno knjiženje, dostupne su sledeće opcije:
 
-- **Ne obavljaj potpuno skladištenje računa**: ne dopušta djelomično skladištenje otpremnice;
+- **Ne razdužuj/zadužuj kompletnu otpremnicu/prijemnicu**: ne dozvoljava delimično razduženje dokumenta;
 
-- **Ignoriraj stavke bez skladišta i predloška**: omogućuje djelomično skladištenje dokumenta;
+- **Ignoriši stavke bez skladišta i šablona**: omogućava delimično razduženje dokumenta;
 
-- **Prihvati kao skladište i predložak slijedeće podatke**: za sve artikle koji nemaju skladište i uzrok u odabranim računima u odjeljku filtera, postavlja odmah nakon toga unesene podatke u polja: *Skladište* i *Uzrok* (osigurava potpuno skladištenje dokumenta).
+- **Prihvati kao skladište i šablon sledeće podatke**: za sve artikle koji nemaju definisano skladište i razlog u odabranim računima iz filtera, automatski postavlja unesene podatke u polja: *Skladište* i *Razlog* (obezbeđuje potpuno razduženje dokumenta).
 
-*Posebni gumbi*
+*Posebna dugmad*
 
-> **Spremi parametre**: omogućuje spremanje postavljenih parametara za evidentiranje.
+> **Sačuvaj parametre**: omogućava čuvanje podešenih parametara za evidenciju.
 
-Nakon odabira računa (iz kartice *Filter*) i postavljanja parametara, računi se mogu evidentirati pomoću gumba *Razduženje*.
+Nakon odabira računa (sa kartice *Filter*) i podešavanja parametara, računi se mogu evidentirati pomoću dugmeta *Razduženje*.
 
 ### Sažetak
 
-Na ovoj kartici, korisnik ima mogućnost pretraživanja, pregleda i poništavanja provedenih skladištenja, koji zadovoljavaju određene uvjete za brisanje skladišnih zapisa.
+Na ovoj kartici korisnik ima mogućnost pretrage, pregleda i poništavanja izvršenih skladišnih razduženja koja ispunjavaju određene uslove za brisanje skladišnih zapisa.
 
-Podaci u donjim tablicama, **Računi** i **Zapis**, odgovaraju odabranoj evidenciji skladištenja u gornjoj tablici (nakon filtriranja podataka). Također, u ovim posljednjim dvjema tablicama, postoji mogućnost pregleda računa i odgovarajućeg skladišnog zapisa (dvostruki klik na odabrani redak).
+Podaci u donjim tabelama, **Računi** i **Zapis**, odgovaraju odabranoj evidenciji razduženja u gornjoj tabeli (nakon filtriranja podataka). Takođe, u ove dve tabele postoji mogućnost pregleda računa i odgovarajućeg skladišnog zapisa (dvostrukim klikom na odabrani red).
 
-*Posebni gumbi*:
-> **Pretraga razduženih računa**: za pretraživanje evidentiranih računa. Rezultat ove procedure prikazan je u tablici rezultata.   
-> **Izbriši razduženje**: za potpuno brisanje odabranih operacija skladištenja u tablici rezultata.   
-> **Povrati račune**: za brisanje odabranih operacija skladištenja u prikazu rezultata, za trenutno odabrani račun u detaljima tablice.
+*Posebna dugmad*:
 
-
+> **Pretraga razduženih računa**: omogućava pretragu evidentiranih računa. Rezultat ove procedure prikazuje se u tabeli rezultata.  
+> **Obriši razduženje**: omogućava potpuno brisanje odabranih operacija razduženja iz tabele rezultata.  
+> **Povrati račune**: omogućava brisanje odabranih operacija razduženja iz prikaza rezultata za trenutno odabrani račun u detaljima tabele.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MWEUxnmD1hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
