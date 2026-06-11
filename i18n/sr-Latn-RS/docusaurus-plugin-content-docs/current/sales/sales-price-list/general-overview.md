@@ -3,24 +3,24 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul se nalazi na putanji **Prodaja > Prodajni cjenici**.
+Modul se nalazi na putanji **Prodaja > Prodajni cenovnici**.
 
-Modul nudi sveobuhvatan i fleksibilan pristup definiranju i kontroli cijena proizvoda i usluga koje nudi tvrtka. Zahvaljujući intuitivnom sučelju i naprednim funkcionalnostima, tvrtke mogu jednostavno upravljati višestrukim cjenicima, primjenjivati popuste i prilagođene uvjete za svakog klijenta te pratiti promjene cijena tijekom vremena.
+Modul nudi sveobuhvatan i fleksibilan pristup definisanju i kontroli cena proizvoda i usluga koje kompanija nudi. Zahvaljujući intuitivnom interfejsu i naprednim funkcionalnostima, kompanije mogu jednostavno upravljati višestrukim cenovnicima, primenjivati popuste i prilagođene uslove za svakog klijenta, kao i pratiti promene cena tokom vremena.
 
 **Glavne funkcionalnosti**:      
-- Unos i ažuriranje cijena: Korisnici mogu brzo unositi i ažurirati cijene proizvoda, osiguravajući da su informacije uvijek aktualne i točne.  
-- Upravljanje više cjenika: Moguće je istovremeno upravljati više cjenika, omogućujući diferenciranje cijena prema segmentima klijenata, geografskim područjima ili prodajnim kanalima.  
-- Vremenska valjanost cijena: Fluentis omogućuje postavljanje datuma početka i završetka valjanosti za svaku cijenu, olakšavajući upravljanje vremenskim promocijama i sezonskim promjenama.  
-- Primjena popusta: Sustav podržava automatsku ili ručnu primjenu popusta, poboljšavajući fleksibilnost u strategiji cijena i potičući prodaju.  
-- Specifični uvjeti za klijente: Moguće je definirati prilagođene uvjete cijena za svakog klijenta, osiguravajući konkurentne i ciljne ponude.  
-- Upravljanje više valuta: Modul omogućuje upravljanje cjenicima u različitim valutama, olakšavajući međunarodnu prodaju i povećavajući dostupnost za klijente iz različitih zemalja.  
-- Masovna ažuriranja: Fluentis omogućuje masovna ažuriranja cjenika, pojednostavljujući promjene cijena i uvjeta u velikom opsegu.  
-- Generiranje izvještaja: Moguće je generirati detaljne izvještaje o cjenicima i cijenama, pružajući korisne informacije za analize i strateške odluke.  
-- Povijest promjena: Sustav vodi povijest promjena cijena, omogućujući praćenje izmjena kroz vrijeme i procjenu utjecaja strategija cijena.  
+- Unos i ažuriranje cena: Korisnici mogu brzo unositi i ažurirati cene proizvoda, osiguravajući da su informacije uvek aktuelne i tačne.  
+- Upravljanje višestrukim cenovnicima: Moguće je istovremeno upravljati sa više cenovnika, omogućavajući diferencijaciju cena prema segmentima klijenata, geografskim područjima ili prodajnim kanalima.  
+- Vremenska važnost cena: Fluentis omogućava postavljanje datuma početka i završetka važenja za svaku cenu, olakšavajući upravljanje vremenski ograničenim promocijama i sezonskim promenama.  
+- Primena popusta: Sistem podržava automatsku ili ručnu primenu popusta, povećavajući fleksibilnost u strategiji određivanja cena i podstičući prodaju.  
+- Specifični uslovi za klijente: Moguće je definisati prilagođene cenovne uslove za svakog klijenta, obezbeđujući konkurentne i ciljane ponude.  
+- Upravljanje višestrukim valutama: Modul omogućava upravljanje cenovnicima u različitim valutama, olakšavajući međunarodnu prodaju i povećavajući dostupnost za klijente iz različitih zemalja.  
+- Masovna ažuriranja: Fluentis omogućava masovna ažuriranja cenovnika, pojednostavljujući promene cena i uslova u velikom obimu.  
+- Generisanje izveštaja: Moguće je generisati detaljne izveštaje o cenovnicima i cenama, pružajući korisne informacije za analize i strateške odluke.  
+- Istorija promena: Sistem vodi istoriju promena cena, omogućavajući praćenje izmena tokom vremena i procenu uticaja cenovnih strategija.  
 
 **Automatizacija i integracija**:      
-Modul za upravljanje cjenicima usko je povezan s modulima prodaje i fakturiranja u Fluentisu, što osigurava da su primijenjene cijene uvijek ažurirane i konzistentne. Ova integracija pomaže u sprječavanju pogrešaka i omogućuje glatko upravljanje prodajom.   
+Modul za upravljanje cenovnicima usko je povezan sa modulima prodaje i fakturisanja u Fluentisu, što osigurava da su primenjene cene uvek ažurirane i konzistentne. Ova integracija pomaže u sprečavanju grešaka i omogućava nesmetano upravljanje prodajom.   
 
-Prije korištenja modula potrebno je definirati sljedeće parametre i tablice:    
+Pre korišćenja modula potrebno je definisati sledeće parametre i tabele:    
 > - [Parametri](/docs/configurations/parameters/sales/price-list-parameters)
-> - [Tipovi prodajnih cjenika](/docs/configurations/tables/sales/sales-price-lists)
+> - [Tipovi prodajnih cenovnika](/docs/configurations/tables/sales/sales-price-lists)
