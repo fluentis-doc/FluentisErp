@@ -1,9 +1,9 @@
 ---
-title: Kreiraj račune iz otpremnice
+title: Izrada iz otpremnice
 sidebar_position: 1
 ---
 
-Postupak se otvara putem **Prodaja > Prodajni račun > Procedure > Kreiranje iz otpremnice**. 
+Postupak se otvara putem **Prodaja > Izlazni račun > Procedure > Izrada iz otpremnice**. 
 
 Ovaj postupak omogućuje izvršenje/ponovno izvršenje operacija kreiranja računa iz jedne ili više otpremnica.
 
@@ -21,7 +21,7 @@ Na ovoj kartici, korisnik ima mogućnost unosa filtera kako bi pronašao otpremn
 
 *Umetanje na račun*
 
-Pomoću ovih parametara možete grupirati otpremnice istog klijenta u jedan račun:
+Pomoću ovih parametara mogu se grupirati otpremnice istog klijenta u jedan račun:
 
 **Otpremnice s različitim godinama**: aktivirana oznaka omogućava stvaranje računa iz otpremnica različitih godina i razdoblja PDV-a.
 
@@ -59,7 +59,7 @@ Nakon odabira otpremnica (iz kartice *Valorizacija*) i postavljanja parametara, 
 
 Kao posljednja kartica, dostupna je kartica za povrat: može se koristiti za filtriranje, pregledavanje i poništavanje operacija.
 
-Podaci u donjim prikazima, **Fakture** i **Otpremnice**, odgovaraju odabranom ocjenjivanju u gornjem prikazu (nakon filtriranja podataka). Osim toga, u ovim zadnjim dvjema mrežama postoji mogućnost pregledavanja računa i odgovarajuće otpremnice dvostrukim klikom na odabranu liniju.
+Podaci u donjim prikazima, **Računi** i **Otpremnice**, odgovaraju odabranom ocjenjivanju u gornjem prikazu (nakon filtriranja podataka). Osim toga, u ovim zadnjim dvjema mrežama postoji mogućnost pregledavanja računa i odgovarajuće otpremnice dvostrukim klikom na odabranu liniju.
 
 *Posebni gumbi*:
 > **Pretraga računa**: omogućuje pretraživanje ocijenjenih otpremnica.    

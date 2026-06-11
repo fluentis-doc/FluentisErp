@@ -1,67 +1,69 @@
 ---
-title: Kreiraj račune iz otpremnice
+title: Izrada iz otpremnice
 sidebar_position: 1
 ---
 
-Postupak se otvara putem **Prodaja > Prodajni račun > Procedure > Kreiranje iz otpremnice**. 
+Postupak se otvara putem **Prodaja > Izlazni račun > Procedure > Izrada iz otpremnice**.
 
-Ovaj postupak omogućuje izvršenje/ponovno izvršenje operacija kreiranja računa iz jedne ili više otpremnica.
+Ovaj postupak omogućava izvršavanje/ponovno izvršavanje operacija kreiranja računa iz jedne ili više otpremnica.
 
 ### Valorizacija
 
-Na ovoj kartici, korisnik ima mogućnost unosa filtera kako bi pronašao otpremnice, sa statusom *Ispisano*, za fakturiranje koristeći filtre (vrsta otpremnice, datum, broj, klijent).
+Na ovoj kartici korisnik ima mogućnost unosa filtera kako bi pronašao otpremnice sa statusom *Odštampano*, za fakturisanje korišćenjem filtera (tip otpremnice, datum, broj, kupac).
 
-**Datum kreiranja**: omogućuje specificiranje datuma fakture koja će biti kreirana.
+**Datum kreiranja**: omogućava definisanje datuma računa koji će biti kreiran.
 
-*Posebni gumbi*: 
-> **Kreiraj račune iz otpremnice**: omogućuje valorizaciju odabranih otpremnica u mreži, na temelju parametara unesenih u sljedeću karticu *Parametri*.
-> **Otvori otpremnicu**: omogućuje pregled i izmjenu odabrane otpremnice.
+*Posebna dugmad*:
+
+> **Kreiraj račune iz otpremnice**: omogućava valorizaciju odabranih otpremnica u mreži, na osnovu parametara unetih na sledećoj kartici *Parametri*.  
+> **Otvori otpremnicu**: omogućava pregled i izmenu odabrane otpremnice.
 
 ### Parametri
 
 *Umetanje na račun*
 
-Pomoću ovih parametara možete grupirati otpremnice istog klijenta u jedan račun:
+Pomoću ovih parametara mogu se grupisati otpremnice istog kupca u jedan račun:
 
-**Otpremnice s različitim godinama**: aktivirana oznaka omogućava stvaranje računa iz otpremnica različitih godina i razdoblja PDV-a.
+**Otpremnice sa različitim godinama**: aktivirana oznaka omogućava kreiranje računa iz otpremnica različitih godina i PDV perioda.
 
-**Otpremnice s različitim tipovima**: aktivirana oznaka omogućava stvaranje računa iz različitih vrsta otpremnica.
+**Otpremnice sa različitim tipovima**: aktivirana oznaka omogućava kreiranje računa iz različitih tipova otpremnica.
 
-**Otpremnica s različitim tečajevima**: aktivirana oznaka omogućava stvaranje računa iz više otpremnica s različitim valutama.
+**Otpremnice sa različitim kursevima**: aktivirana oznaka omogućava kreiranje računa iz više otpremnica sa različitim valutama.
 
-**Grupiranje otpremnice po tipu i uvjetu plaćanja**: vrste plaćanja mogu se preuzeti iz kartoteke klijenta ili se mogu zadržati one iz otpremnica. Ako nema grupiranja po vrsti plaćanja, račun može sadržavati više različitih redova plaćanja.
+**Grupisanje otpremnica po tipu i uslovu plaćanja**: načini plaćanja mogu se preuzeti iz kartice kupca ili se mogu zadržati oni iz otpremnica. Ako nema grupisanja po načinu plaćanja, račun može sadržati više različitih redova plaćanja.
 
-*Obrada plaćanja u računu*
+*Obrada plaćanja na računu*
 
-Ako postoje otpremnice s različitim načinima plaćanja i ako nije postavljena oznaka *Grupiraj otpremnice*:
+Ako postoje otpremnice sa različitim načinima plaćanja i ako nije postavljena oznaka *Grupiši otpremnice*:
 
-**Povrati podatke nomenklature**: račun će preuzeti načine plaćanja iz kartoteke (ne uzima u obzir informacije unesene u otpremnice).
+**Preuzmi podatke iz šifarnika**: račun će preuzeti načine plaćanja iz kartice kupca (ne uzimaju se u obzir informacije unete u otpremnice).
 
-**Zadrži podatke otpremnice**: račun će preuzeti načine plaćanja unesene u otpremnice.
+**Zadrži podatke iz otpremnice**: račun će preuzeti načine plaćanja unete u otpremnicama.
 
 *Umetanje na račun*
 
-**Grupiranje dospjelosti na računima**: aktivirana oznaka omogućuje grupiranje dospijeća s istim datumom iz različitih otpremnica u jedan red.
+**Grupisanje dospeća na računima**: aktivirana oznaka omogućava grupisanje dospeća sa istim datumom iz različitih otpremnica u jedan red.
 
-**Ponovno izračunaj centre troškova/centre prihoda /Profitne centre**: koristi se u analitičkom računovodstvu za ponovni izračun centara troškova ili dobiti.
+**Ponovo izračunaj centre troškova/centre prihoda/profitne centre**: koristi se u analitičkom računovodstvu za ponovno izračunavanje centara troškova ili profita.
 
 *Reference otpremnice*
 
-**Umetni referente otpremnice**: ako je postavljena ova oznaka, na kartici [Artikl] računa bit će prikazan *Artikl s napomenama* koji će preuzeti reference otpremnice iz koje je račun stvoren. Sastav ovog članka treba biti unesen u polju 'Opis' prema parametrima opisanim na naljepnici.
+**Umetni reference otpremnice**: ako je uključena ova oznaka, na kartici [Artikli] računa biće prikazan *Artikal sa napomenom* koji će preuzeti reference otpremnice iz koje je račun kreiran. Sadržaj ovog artikla mora biti definisan u polju „Opis“ prema parametrima navedenim na oznaci.
 
-*Posebni gumb*: 
+*Posebno dugme*:
 
-> **Spremi parametre**: omogućuje spremanje postavljenih parametara za valorizaciju.
+> **Sačuvaj parametre**: omogućava čuvanje podešenih parametara za valorizaciju.
 
-Nakon odabira otpremnica (iz kartice *Valorizacija*) i postavljanja parametara, račun se može kreirati pomoću gumba *Kreiranje računa iz otpremnice.*.
+Nakon odabira otpremnica (sa kartice *Valorizacija*) i podešavanja parametara, račun se može kreirati pomoću dugmeta *Kreiranje računa iz otpremnice*.
 
-### Prethodni
+### Istorija
 
-Kao posljednja kartica, dostupna je kartica za povrat: može se koristiti za filtriranje, pregledavanje i poništavanje operacija.
+Kao poslednja kartica dostupna je kartica za povrat, koja se može koristiti za filtriranje, pregled i poništavanje izvršenih operacija.
 
-Podaci u donjim prikazima, **Fakture** i **Otpremnice**, odgovaraju odabranom ocjenjivanju u gornjem prikazu (nakon filtriranja podataka). Osim toga, u ovim zadnjim dvjema mrežama postoji mogućnost pregledavanja računa i odgovarajuće otpremnice dvostrukim klikom na odabranu liniju.
+Podaci u donjim prikazima, **Računi** i **Otpremnice**, odgovaraju odabranoj valorizaciji u gornjem prikazu (nakon filtriranja podataka). Pored toga, u ove dve mreže moguće je pregledati račun i pripadajuću otpremnicu dvostrukim klikom na odabrani red.
 
-*Posebni gumbi*:
-> **Pretraga računa**: omogućuje pretraživanje ocijenjenih otpremnica.    
-> **Povrati stvaranje**: omogućuje poništenje cijele operacije, tj. u slučaju kreiranja više računa istovremeno, briše sve račune i vraća otpremnice.   
-> **Povrati račun**: omogućuje vraćanje odabranog računa u kartici *Računi*.
+*Posebna dugmad*:
+
+> **Pretraga računa**: omogućava pretragu valorizovanih otpremnica.  
+> **Poništi kreiranje**: omogućava poništavanje kompletne operacije, odnosno u slučaju kreiranja više računa istovremeno briše sve račune i vraća otpremnice.  
+> **Poništi račun**: omogućava vraćanje odabranog računa sa kartice *Računi*.
