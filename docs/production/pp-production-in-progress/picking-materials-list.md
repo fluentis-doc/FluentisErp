@@ -41,12 +41,13 @@ La registrazione verrà fatta in un secondo momento tramite la procedura dedicat
 
 ## Filtro
 
-Nel tab **Filtro** è possibile ricercare i picking desiderati applicando i filtri disponibili.
+Nel tab **Filtro** è possibile ricercare gli *Ordini di produzione* desiderati applicando i filtri disponibili.
 
 ### Pulsanti specifici
 
 - **Cerca materiali**: ricercando i materiali tramite questo pulsante, sarà poi possibile creare direttamente le registrazioni di magazzino. Tra tutti i dati riportati sotto riguardanti il dettaglio di ogni materiale, va sottolineata l'importanza del flag Mov. che dove attivo indica che per quel materiale è stato scelto il tipo di prelievo con lista nei Parametri MRP dell'articolo, mentre se il flag non è attivo significa che per quel materiale si è optato per il tipo di prelievo manuale. (Per maggiori dettagli sul significato di questo tipo di prelievi si rimanda all'articolo relativo ai [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) dell'articolo).  
-- **Cerca materiali picking**: ricercando i materiali tramite questo pulsante, sarà poi possibile creare dei documenti di picking, quindi non delle vere e proprie registrazioni, ma dei documenti di spostamento dei materiali che si potranno visualizzare nella finestra [Picking](/docs/logistics/picking/search-picking) presente nell'area logistica. In questo caso la registrazione verrà fatta in un secondo momento, dopo un secondo controllo.             
+- **Cerca materiali picking**: ricercando i materiali tramite questo pulsante, sarà poi possibile creare dei documenti di picking, quindi non delle vere e proprie registrazioni, ma dei documenti di spostamento dei materiali che si potranno visualizzare nella finestra [Picking](/docs/logistics/picking/search-picking) presente nell'area logistica. In questo caso la registrazione verrà fatta in un secondo momento, dopo un secondo controllo.   
+- **Attiva movimentabile** e **Disattiva movimentabile**: attivano o disattivano, massivamente, sulla base delle righe materiali selezionate, il flag movimentabile *Mov.*.   
 - **Crea movimenti**: permette, dopo aver selezionato i materiali in base al tipo di ricerca effettuata, di creare i movimenti di magazzino (lo scarico) oppure il documento di picking.  
 Nel caso in cui venga creato il picking, per i materiali che sono con:  
 > - *Tipo prelievo Con lista*: verranno settati la causale e il magazzino che sono già presenti nella riga dei materiali dell'ordine di produzione.  
