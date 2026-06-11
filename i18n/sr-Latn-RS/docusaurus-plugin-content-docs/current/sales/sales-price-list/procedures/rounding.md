@@ -3,52 +3,52 @@ title: Zaokruživanja
 sidebar_position: 5
 ---
 
-Obrazac se otvara putem putanje **Prodaja > Cjenici prodaje > Postupci > Zaokruživanja**.
+Obrazac se otvara putem putanje **Prodaja > Prodajni cenovnici > Procedure > Zaokruživanja**.
 
-Ovaj postupak omogućuje pretraživanje Zaokruživanja i definiranje više šifri pravila povećanja/smanjenja cijena, ažuriranja popusta i politika zaokruživanja dobivenih cijena.
+Ova procedura omogućava pretragu **Zaokruživanja** i definisanje više šifara pravila povećanja/smanjenja cena, ažuriranja popusta i politika zaokruživanja dobijenih cena.
 
-Ove šifre Zaokruživanja koriste se u postupcima stvaranja cjenika prodaje.
+Ove šifre **Zaokruživanja** koriste se u procedurama kreiranja prodajnih cenovnika.
 
-U obrascu *Pretraga* moguće je pretražiti postojeće podatke, unijeti nove kodove zaokruživanja ili izmijeniti postojeće kodove.
+U obrascu, pomoću *Pretraži* moguće je pretražiti postojeće podatke, uneti nove šifre zaokruživanja ili izmeniti postojeće šifre.
 
-Definiranjem *Nove* šifre (klikom na gumb **Novo** obrascu *Pretraga*) ili *Izmjenom* postojećeg koda moguće je unijeti opis pravila.  
+Definisanjem *Nove* šifre (klikom na dugme **Novo**) ili *Izmenom* postojećeg koda moguće je uneti opis pravila.  
 
 ![](/img/it-it/sales/sales-price-list/procedures/rounding/image02.png)
 
-Promjena cijene može se dogoditi u postocima ili u vrijednosti, povećavajući ili smanjujući pomoću vrijednosti sa znakom.
+Promena cene može se vršiti procentualno ili po vrednosti, povećavanjem ili smanjivanjem pomoću vrednosti sa znakom.
 
-Metoda zaokruživanja definirana je za cjenovne razrede.
+Metoda zaokruživanja definiše se za cenovne razrede.
 
-**Gornja granica**: označava maksimalnu cijenu na koju će se primijeniti maska i postotak.
+**Gornja granica**: označava maksimalnu cenu na koju će se primeniti maska i procenat.
 
-**Maska**: tekstualno polje gdje korisnik definira pravilo zaokruživanja.
+**Maska**: tekstualno polje u kojem korisnik definiše pravilo zaokruživanja.
 
-**Postotak**: postotak preko kojeg, ako je omjer između izračunatih cijena, dobivenih primjenom promjene na početnu cijenu, i početna cijena premaši vrijednost ovog postotka, dobivena cijena će biti označena crveno jer prelazi dopušteni granica zaokruživanja. U gore navedenom primjeru, "zaokružena cijena" ne bi trebala prelaziti "cijenu koja nije zaokružena" za 5%.
+**Procenat**: procenat preko kojeg, ako odnos između obračunatih cena, dobijenih primenom promene na početnu cenu, i početne cene premaši vrednost ovog procenta, dobijena cena će biti označena crveno jer prelazi dozvoljenu granicu zaokruživanja. U gore navedenom primeru, „zaokružena cena“ ne bi trebalo da premaši „nezaokruženu cenu“ za 5%.
 
-**VALJANE VRIJEDNOSTI ZA MASKU**
+**VAŽEĆE VREDNOSTI ZA MASKU**
 
-MASKA je pravilo koje korisnik definira sastavljajući tekst pomoću sljedećeg jezika:
+MASKA je pravilo koje korisnik definiše sastavljanjem teksta pomoću sledećeg jezika:
 
-=  vrijednost ostaje nepromijenjena
+=  vrednost ostaje nepromenjena
 
-+  povećanje vrijednosti za jedinicu
++  povećanje vrednosti za jedinicu
 
--  smanjenje vrijednosti za jedinicu
+-  smanjenje vrednosti za jedinicu
 
-[  početak pravila za pojedinačnu vrijednost
+[  početak pravila za pojedinačnu vrednost
 
-]  završetak pravila za pojedinačnu vrijednost
+]  završetak pravila za pojedinačnu vrednost
 
-(  početak pravila koje određuje na koju fiksnu 
-vrijednost treba biti dovedena analizirana vrijednost
+(  početak pravila koje određuje na koju fiksnu 
+vrednost treba dovesti analiziranu vrednost
 
-)  završetak pravila koje određuje na koju fiksnu vrijednost treba biti dovedena analizirana vrijednost
+)  završetak pravila koje određuje na koju fiksnu vrednost treba dovesti analiziranu vrednost
 
-,  decimalni odjeljnik
+,  decimalni *razdvajač*
 
-Evo nekoliko primjera koji mogu pojasniti kako napraviti pravilo:
+Evo nekoliko primera koji mogu pojasniti kako napraviti pravilo:
 
-| Poč. cijena | Nezaokr. cijena | Maska | Zaokružena cijena |
+| Poč. cena | Nezaokr. cena | Maska | Zaokružena cena |
 | --- | --- | --- | --- |
 | 16,16 | 16,968 | [=][=][=],[=][+] | 16,98 |
 | 16,16 | 16,968 | [=][=][=],[=][=] | 16,97 |
@@ -66,4 +66,4 @@ Evo nekoliko primjera koji mogu pojasniti kako napraviti pravilo:
 | 16,16 | 16,968 | [=][=][-] | 16 |
 | 16,16 | 16,968 | [=][=][+] | 18 |
 
-U odjeljku popusta moguće je definirati popuste za svaki red u cjeniku, odabrati brisanje prethodno unesenih popusta u istom retku ili ići na uređivanje postojećih popusta u redovima cjenika.
+U odeljku popusta moguće je definisati popuste za svaki red u cenovniku, izabrati brisanje prethodno unetih popusta u istom redu ili preći na uređivanje postojećih popusta u redovima cenovnika.
