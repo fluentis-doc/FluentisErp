@@ -1,16 +1,15 @@
 ---
-title: Pretraživanje prodajnih cjenika
+title: Pretraga prodajnih cenovnika
 sidebar_position: 1
 ---
 
-Obrazac se otvara putem putanje **Prodaja > Prodajni cjenici**.     
+Obrazac se otvara putem putanje **Prodaja > Prodajni cenovnici**.     
+Za objašnjenje funkcionalnosti zajedničkih za dokumente prodaje, pogledati odeljak [Prodaja](/docs/sales/sales-intro).
 
-Za objašnjenje funkcionalnosti zajedničkih za dokumente prodaje, konzultirajte odjelja [Prodaja](/docs/sales/sales-intro).
-
-Specifična tipka ovog obrasca za pretraživanje je **Zatvorite cjenike**: s ovom tipkom prikazuje se iskačući prozor u koji se unosi datum isteka valjanosti za cjenik; nakon unesenog datuma, cjenik više neće biti važeći. Ako postoje dokumenti za odabrane cjenike prodaje, s datumom nakon unesenog datuma isteka u iskačućem prozoru, za te dokumente neće doći do promjene datuma i bit će označeni dokumenti s sljedećim podacima:   
+Specifično dugme ovog obrasca za pretragu je **Zatvori cenovnike**: pomoću ovog dugmeta prikazuje se iskačući prozor u koji se unosi datum isteka važenja cenovnika; nakon unetog datuma, cenovnik više neće biti važeći. Ako postoje dokumenti za odabrane prodajne cenovnike sa datumom nakon unetog datuma isteka u tom prozoru, za te dokumente neće doći do promene datuma i biće prikazani dokumenti sa sledećim podacima:   
 - Tip prodajnog dokumenta
 - Šifra i opis vrste dokumenta
 - Broj dokumenta
-- Račun 
+- Konto
 - Datum dokumenta
-- Datum završetka cjenika
+- Datum završetka cenovnika
