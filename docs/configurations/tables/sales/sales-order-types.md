@@ -76,3 +76,5 @@ Quando viene aggiunta una nuova riga all’interno di un Ordine Cliente per cui 
 **Tipo Operazione**: è sempre collegata alla gestione cespiti, se indicata viene proposta automaticamente nel widget Tipo Operazione presente nel tab Cespiti del tab Articoli dell’ordine.      
 
 **Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
+
+**Gestione RAEE**: questo flag abilita il tipo documento alla [Gestione RAEE](/docs/sales/sales-flow/raee).

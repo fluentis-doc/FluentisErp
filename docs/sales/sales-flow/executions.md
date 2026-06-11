@@ -1,6 +1,6 @@
 ---
 title: Evasioni
-sidebar_position: 7
+sidebar_position: 4
 ---
 
 Il ciclo di evasione in Fluentis serve a gestire in modo strutturato e integrato l'intero flusso operativo di vendita, dalla fase iniziale di offerta fino alla fase finale di fatturazione. Ogni fase è caratterizzata da procedure specifiche e configurazioni che garantiscono una gestione fluida e integrata del flusso di lavoro.

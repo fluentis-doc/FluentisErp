@@ -70,3 +70,5 @@ I costi e i prezzi in anagrafica sono in EUR, quindi il sistema li andrà anche 
 **Tipo operazione**: in questa combo box è possibile selezionare il tipo di operazione dei cespiti tra diverse opzioni (rivalutazione, distruzione, plusvalenza, ecc.).       
 
 **Tipo sconto/Descrizione**: in questa colonna è possibile associare la tipologia di sconto da proporre quando gli sconti vengono inseriti direttamente nella colonna *Sconti articolo* della griglia articoli dei documenti (per maggiori dettagli vedi l'articolo [Gestione Widget sconti semplificato](/docs/sales/sales-flow/discount-widget)).
+
+**Gestione RAEE**: questo flag abilita il tipo documento alla [Gestione RAEE](/docs/sales/sales-flow/raee).
