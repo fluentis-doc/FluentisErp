@@ -3,15 +3,15 @@ title: Zaokruživanja
 sidebar_position: 5
 ---
 
-Obrazac se otvara putem putanje **Prodaja > Cjenici prodaje > Postupci > Zaokruživanja**.
+Obrazac se otvara putem putanje **Prodaja > Cjenici prodaje > Procedure > Zaokruživanja**.
 
-Ovaj postupak omogućuje pretraživanje Zaokruživanja i definiranje više šifri pravila povećanja/smanjenja cijena, ažuriranja popusta i politika zaokruživanja dobivenih cijena.
+Ovaj postupak omogućuje pretraživanje **Zaokruživanja** i definiranje više šifri pravila povećanja/smanjenja cijena, ažuriranja popusta i politika zaokruživanja dobivenih cijena.
 
-Ove šifre Zaokruživanja koriste se u postupcima stvaranja cjenika prodaje.
+Ove šifre **Zaokruživanja** koriste se u postupcima stvaranja cjenika prodaje.
 
-U obrascu *Pretraga* moguće je pretražiti postojeće podatke, unijeti nove kodove zaokruživanja ili izmijeniti postojeće kodove.
+U obrascu, pomoću *Traži* moguće je pretražiti postojeće podatke, unijeti nove šifre zaokruživanja ili izmijeniti postojeće šifre.
 
-Definiranjem *Nove* šifre (klikom na gumb **Novo** obrascu *Pretraga*) ili *Izmjenom* postojećeg koda moguće je unijeti opis pravila.  
+Definiranjem *Nove* šifre (klikom na gumb **Novo**) ili *Izmjenom* postojećeg koda moguće je unijeti opis pravila.  
 
 ![](/img/it-it/sales/sales-price-list/procedures/rounding/image02.png)
 
@@ -23,7 +23,7 @@ Metoda zaokruživanja definirana je za cjenovne razrede.
 
 **Maska**: tekstualno polje gdje korisnik definira pravilo zaokruživanja.
 
-**Postotak**: postotak preko kojeg, ako je omjer između izračunatih cijena, dobivenih primjenom promjene na početnu cijenu, i početna cijena premaši vrijednost ovog postotka, dobivena cijena će biti označena crveno jer prelazi dopušteni granica zaokruživanja. U gore navedenom primjeru, "zaokružena cijena" ne bi trebala prelaziti "cijenu koja nije zaokružena" za 5%.
+**Postotak**: postotak preko kojeg, ako je omjer između izračunanih cijena, dobivenih primjenom promjene na početnu cijenu, i početna cijena premaši vrijednost ovog postotka, dobivena cijena će biti označena crveno jer prelazi dopušteni granica zaokruživanja. U gore navedenom primjeru, "zaokružena cijena" ne bi trebala prelaziti "cijenu koja nije zaokružena" za 5%.
 
 **VALJANE VRIJEDNOSTI ZA MASKU**
 
@@ -44,7 +44,7 @@ vrijednost treba biti dovedena analizirana vrijednost
 
 )  završetak pravila koje određuje na koju fiksnu vrijednost treba biti dovedena analizirana vrijednost
 
-,  decimalni odjeljnik
+,  decimalni *limitator*
 
 Evo nekoliko primjera koji mogu pojasniti kako napraviti pravilo:
 
