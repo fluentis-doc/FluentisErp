@@ -1,8 +1,12 @@
 ---
-title: Pridruživanje cjenika kupaca komercijalnoj kategoriji
+title: Dodeljivanje cenovnika kupcima po komercijalnoj kategoriji
 sidebar_position: 2
 ---
 
-Ova procedura omogućuje masovno povezivanje [pridruživanja](/docs/sales/sales-price-list/procedures/type-association) s klijentima.
-U lijevoj rešetki prikazane su prethodno stvorene asocijacije. Valja napomenuti da asocijacija podrazumijeva skup tipova listina koji vrijede za unesenu poslovnu kategoriju. Odabirom reda u lijevoj rešetki, u desnom dijelu se prikazuju svi klijenti koji pripadaju unesenoj poslovnoj kategoriji; ako nije unesena poslovna kategorija, prikazani su svi unosi u evidenciji. Moguće je filtrirati unose kako bi se izvršila ciljanija **Traži**.       
-Odabiraju se unosi u koje se žele unijeti tipovi popisa. Postupak se izvršava klikom na gumb **Primjeni na sve** ili **Primjeni na odabrane kupce** u vrpci. Na taj način, u evidenciji klijenata, na kartici listina, pojavit će se tipovi popisa koji su prisutni u asocijaciji, a koji će biti valjani za dokumente tog klijenta.
+Ova procedura omogućava masovno povezivanje **vrsta prodajnih cenovnika**(/docs/sales/sales-price-list/procedures/type-association) sa kupcima.
+U tabeli sa leve strane prikazuju se prethodno kreirane veze.
+Povezivanje se zasniva na grupisanju vrsta cenovnika prema unetoj **komercijalnoj kategoriji**. Kada se odabere red, u desnom delu obrasca prikazuju se svi kupci povezani sa tom komercijalnom kategorijom.
+Ako komercijalna kategorija nije definisana, prikazaće se sve kartice kupaca.
+Kartice kupaca moguće je dodatno filtrirati kako bi se pretraga suzila na željene rezultate.
+Nakon odabira kupaca kojima se želi dodeliti odabrana vrsta cenovnika, procedura se pokreće klikom na dugme **Primeni na sve** ili **Primeni na odabrane kupce**.
+Na taj način se na kartici kupca, na kartici **Cenovnici**, automatski dodeljuju vrste cenovnika definisane u odabranoj vezi i postaju dostupne za korišćenje u dokumentima tog kupca.
