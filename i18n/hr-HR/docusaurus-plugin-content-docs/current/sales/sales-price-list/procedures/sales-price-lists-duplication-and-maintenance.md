@@ -7,41 +7,71 @@ Obrazac se otvara putem putanje *Prodaja > Cjenici prodaje > Procedure > Kopiran
            
 U dijelu filtra možete odabrati prikaz:           
 - **Sve** vrste cjenika,         
-- samo **Generičke** cjenike ili           
-- samo **Prilagođene cjenike za kupca**.        
+- samo **Opće** cjenike ili           
+- samo **Personalizirane cjenike za kupca**.        
        
 Ovisno o odabiru, desno se aktivira pretraga po **Vrstu cjenika** ili po **Kupcu**.
 
-Ako je filtru za *Datum početka važenja* unesen, aplikacija prikazuje artikle cjenika koji su važeći na uneseni datum. Inače, bit će prikazani svi artikli, uključujući i one iz cjenika koji više nisu važeći.
+Ako je filtru za *Datum početka valjanosti* unesen, aplikacija prikazuje artikle cjenika koji su važeći na uneseni datum. Inače, bit će prikazani svi artikli, uključujući i one iz cjenika koji više nisu važeći.
 
-Moguće je filtrirati i po: Datumu završetka važenja, Valuti, Artiklu, Barkodu artikla ili samo po artiklima koji su bili promijenjeni, tj. povezani s dokumentima od određenog datuma.
+Moguće je filtrirati i po: Datumu završetka važenja, valuti, artiklu, barkodu artikla ili samo po artiklima koji su bili promijenjeni, tj. povezani s dokumentima od određenog datuma.
    
+### Tablica artikala
 
-Primjena **Popusta**  na odabrane redove cjenika 
-**Uklanjanje Datuma završetka važenja** za odabrane redove cjenika. 
+Nakon odabira željenih filtera i pokretanja pretrage, tablica će prikazati sve artikle koji odgovaraju zadanim kriterijima.
 
-*Posebni gumbi*:
+Dostupni stupci su:
 
-**Ažuriraj**: otvara obrazac za ažuriranje cijena prisutnih u cjeniku koristeći prethodno konfigurirana Zaokruživanja.
+- **Vrsta cjenika**: prikazuje vrstu cjenika te pripadajući opis ako je riječ o općem cjeniku.
 
-Potrebno je specificirati:  
-1. **Datum početka valjanosti** redova cjenika koje treba ažurirati  
-2. **Zaokruživanje**: sadrži politike promjene cijena i popusta cjenika ili **Postotak povećanja**, uklanjanjem koda zaokruživanja i ručnim unosom postotka.  
-3. **OK** za izvršavanje ažuriranja.  
+- **Kupac / Podkonto / Opis**: prikazuje vlasnika cjenika ako se radi o personaliziranom cjeniku.
 
-:::note NAPOMENA
-Ako ne specificirate Datum početka valjanosti, ažuriranje neće imati nikakav učinak i neće se izvršiti.
-:::  
+- **Klasa / Šifra / Opis artikla**: identifikacijski podaci artikla iz cjenika.
 
-**Zatvorite cjenike**: otvara novi obrazac za postavljanje *Datuma završetka važenja* za odabrane redove cjenika.  
+- **Šifra diviza**: prikazuje valutu cjenika.
 
-Potrebno je specificirati *Datum završetka važenja* za odabrane redove, uzimajući u obzir da mora biti veći od najnovijeg datuma posljednjeg dokumenta koji se odnosi na redove cjenika koje želite zatvoriti (istek).  
+- **Šifra jedinice mjere**: prikazuje jedinicu mjere definiranu u cjeniku.
 
-**Kopiraj cjenike**: otvara novi obrazac i, za odabrane redove cjenika, stvara ili dodaje nove redove u novi cjenik ili u već postojeći cjenik.
-Za odabrane redove možete stvoriti novi cjenik specificiranjem: želite li stvoriti *Općeniti* ili *Prilagođeni cjenik*, *Tip cjenika*, *Početni datum važenja* i *Valutu*.
+- **Cijena**: prikazuje cijenu artikla definiranu u cjeniku.
 
-Ako je označena opcija *Zadrži iste datume kao u izvornom cjeniku*, stvorit će se cjenik s različitom vrstom, ali s istim datumima važenja.
+- **Popust**: prikazuje eventualni popust definiran u cjeniku (samo fiksni popusti).
 
-**Popusti**: otvara novi obrazac za dodjelu odabrane *Popuste* na redovima, dodajući ih postojećim ili zamjenjujući ih koristeći opciju  **Izbriši prethodne Rabate**.
+- **Neto cijena**: prikazuje cijenu umanjenu za definirane popuste.
 
-**Ponovno otvaranje cjenika**: ako se koristi, redovi cjenika s *Datumom završetka važenja*, bit će ponovno postavljeni u cjenik *bez* datuma završetka važenja.
+- **Od važećeg dana**: prikazuje datum početka važenja cjenika.
+
+- **Do važećeg dana**: prikazuje eventualni datum završetka važenja cjenika.
+
+- **Datum zadnjeg transportnog dokumenta**: prikazuje datum posljednje otpremnice (DDT) koja sadrži navedeni artikl i cjenik.
+
+### Alatna traka
+
+Na alatnoj traci dostupne su sljedeće funkcije:
+
+- **Ažuriraj**: otvara prozor za ažuriranje cijene artikla u cjeniku. Potrebno je definirati:
+
+  1. **Datum početka valjanosti** redaka cjenika koje treba ažurirati (po želji se može definirati i **Datum završetka važenja**).
+
+  2. **Zaokruživanja**, koje određuje pravila zaokruživanja cijena i popusta.
+
+  3. **Postotak povećanja**, pri čemu se umjesto pravila zaokruživanja ručno unosi postotak promjene.
+
+  4. Klik na **OK** za izvršavanje ažuriranja.
+
+:::note Napomena
+Ako nije definiran **Datum početka valjanosti**, ažuriranje neće biti izvršeno.
+:::
+
+- **Zatvori cjenike**: otvara obrazac kojim se za odabrane retke cjenika postavlja **Datum završetka valjanosti**. Datum završetka mora biti veći od najnovijeg datuma posljednjeg dokumenta koji koristi taj cjenik kako bi se cjenik mogao zatvoriti (isteći).
+
+- **Kopiraj cjenike**: omogućuje kreiranje novih redaka cjenika na temelju odabranih redaka. Moguće ih je dodati u novi ili postojeći cjenik. Prilikom kreiranja novog cjenika mogu se definirati:
+  - **Opći** ili **Personalizirani** cjenik
+  - **Vrsta cjenika**
+  - **Datum početka valjanosti**
+  - **Valuta**
+
+  Također je moguće uključiti opciju **Drži iste datume kao u izvornom cjeniku** ako se želi kreirati novi cjenik s istim razdobljem važenja.
+
+- **Popusti**: otvara prozor za dodjelu popusta odabranim redcima. Popusti se mogu dodati postojećima ili ih zamijeniti aktiviranjem opcije **Izbriši prethodne rabate**.
+
+- **Ponovno otvaranje cjenika**: ako se koristi na redcima koji imaju definiran **Datum završetka valjanosti**, ti će se redci vratiti u cjenik bez datuma završetka važenja te će ponovno postati aktivni.
