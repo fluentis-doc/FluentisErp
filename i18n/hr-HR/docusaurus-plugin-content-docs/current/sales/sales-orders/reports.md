@@ -50,7 +50,7 @@ Svaka narudžba ispisuje se zasebno i sadrži:
 - detalje narudžbe (šifra artikla, mjerna jedinica i slično)
 - stanje zalihe artikla na skladištu
 - naručenu količinu
-- preuzetu količinu (polje koje skladišni operater ručno popunjava tijekom komisioniranja)
+- preuzetu količinu (polje koje skladišni operater ručno popunjava tijekom preuzimanja)
 
 ## Popis otpremnica za izvršene narudžbe
 
