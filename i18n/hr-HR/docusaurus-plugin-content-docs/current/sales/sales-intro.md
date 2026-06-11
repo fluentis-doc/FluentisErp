@@ -66,7 +66,7 @@ import Link from '@docusaurus/Link';
 ### <Link to="/docs/sales/pos/general-overview">Logistika</Link>
 <p>Automatsko ažuriranje **stanja zaliha** tijekom obrade prodajnih dokumenata.</p>
 
-<p>Mogućnost generiranja **naloga za komisioniranje** i **planova utovara** iz narudžbi kupaca, uz naknadnu transformaciju u **otpremnice** i **izlazne račune** radi učinkovitijeg upravljanja isporukama.</p>
+<p>Mogućnost generiranja **liste za preuzimanje** i **planova utovara** iz narudžbi kupaca, uz naknadnu transformaciju u **otpremnice** i **izlazne račune** radi učinkovitijeg upravljanja isporukama.</p>
     </div>
     <div className="card">
 ### <Link to="/docs/sales/agents/general-overview">Planiranje i proizvodnja</Link>
