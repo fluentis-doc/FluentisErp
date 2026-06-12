@@ -1,5 +1,6 @@
 ---
-title: 🔧 Patch Notes v608
+title: Patch Notes v608
+sidebar_label: 🔧 Patch Notes v608
 sidebar_position: 1
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: 🔧 Patch Notes v803
+title: Patch Notes v803
+sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1
 ---
 
