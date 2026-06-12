@@ -3,6 +3,14 @@ title: 🔧 Patch Notes v608
 sidebar_position: 1
 ---
 
+### Patch 608.1-0091 - 12/06/2026
+
+> -	FI - revisione gestione pulsante creazione file Intrastat da ricerca intra1 (#TT02355/26)
+
+> -	FI - revisione contabilizzazione nota di credito acquisti con segni misti e date competenza differenti (#TT02545/26)
+
+> -	PR - Extend the PR_FileTypes column PRFTY_Extension to 4 chars  (#TT02586/26)
+
 ### Patch 608.1-0090 - 26/05/2026
 
 > -	SH - la creazione di una nuova anagrafica ha già visibile il campo del Regime fiscale (#TT02110/26)  
