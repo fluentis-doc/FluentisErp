@@ -5,6 +5,21 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0077 - 12/06/2026
+
+> -	FI - aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. Modifications inside the form calculate commission report can have impact on profiles.  (#TT02180/26
+> -	FI - Import bank account (#TT02271/26)
+> -	FI - revisione contabilizzazione nota di credito acquisti con segni misti e date competenza differenti (#TT02545/26)
+> -	MES - Costificazione Ordini di produzione: corretta anomalia che non considerava le variazioni di Macchina e/o Gruppo manodopera nelle Dichiarazioni di produzione rispetto a quelli predefiniti nella Fase di lavoro. (#TT02400/26).
+> -	PR - Extend the PR_FileTypes column PRFTY_Extension to 4 chars  (#TT02586/26)
+> -	SCM - Bolle di Acquisto Rollback Carico Lotti e Serial Number:
+>> -	Risolto il rollback dei movimenti di carico da bolla di acquisto, l’indisponibilità era causata dal fatto che i movimenti dei ddt valorizzati in fattura non venivano conteggiati correttamente.  (#TT744/26)
+> -	SD - Corretta visualizzazione categoria merceologia in procedura “Duplica e manutenzione listini di vendita” (#TT02219/26)
+> -	SD - Corretto ricalcolo colli-pesi su righe ordine cliente al variare della quantità alternativa (#TT00803/26)
+> -	WM - Piani di Carico: Calcolo disponibilità ad oggi se data consegna nel passato in creazione piano. (#TT02464/26)
+> -	WM - Piani di Carico: Corretto calcolo disponibilità in presenza di varianti articolo in creazione piano. Modifications for LoadPlan form can have impact on profiles. (#TT01960/26)
+
+
 ### Patch 707.1-0076 - 05/06/2026
 
 > -	ARM - Escluse le collezioni dalla configurazione dell'Audit Trail (#TT05348/25)
