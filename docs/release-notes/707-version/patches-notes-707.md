@@ -7,7 +7,7 @@ keywords:
 
 ### Patch 707.1-0077 - 12/06/2026
 
-> -	FI - aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. Modifications inside the form calculate commission report can have impact on profiles.  (#TT02180/26
+> -	FI - aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. Modifications inside the form calculate commission report can have impact on profiles.  (#TT02180/26)
 > -	FI - Import bank account (#TT02271/26)
 > -	FI - revisione contabilizzazione nota di credito acquisti con segni misti e date competenza differenti (#TT02545/26)
 > -	MES - Costificazione Ordini di produzione: corretta anomalia che non considerava le variazioni di Macchina e/o Gruppo manodopera nelle Dichiarazioni di produzione rispetto a quelli predefiniti nella Fase di lavoro. (#TT02400/26).
