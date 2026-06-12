@@ -1,11 +1,11 @@
 ---
-title: Postavke naloga podizvođača
+title: Uvod
 sidebar_position: 1
 ---
 
-Narudžba Podizvođača može biti stvorena iz planiranja na temelju vanjskih faza rada navedenih u proizvodnom nalogu ili može biti stvorena samostalno.
+**Nalog podizvođača** može biti kreiran iz planiranja na osnovu spoljnih faza rada navedenih u proizvodnom nalogu ili može biti kreiran samostalno.
 
-Preporuča se niz **postavki** tablične prirode i ispravna parametrizacija osnovnih algoritama prije nego što se pristupi generiranju narudžbi za podizvođače.  
+Preporučuje se niz **podešavanja** i ispravna parametrizacija osnovnih algoritama pre nego što se pristupi generisanju naloga za podizvođače.
 
-> **Tablice**: preporučuje se posjetiti odjeljak *Konfiguracija  > Tablice  > Proizvodnja* za identifikaciju ispravnih postavki modul Podizvođača.     
-> **Parametri**: obrazac je [Parametri Podizvođača](/docs/configurations/parameters/production/subcontractor-parameters).
+> **Tabele**: preporučuje se proveriti odeljak *Konfiguracija > Tabele > Proizvodnja* radi identifikacije ispravnih podešavanja modula Podizvođača.
+> **Parametri**: obrazac je [Parametri podizvođača](/docs/configurations/parameters/production/subcontractor-parameters).
