@@ -3,4 +3,4 @@ title: Općenito
 sidebar_position: 1
 ---
 
-Ovaj modul omogućuje upravljanje povratom radova poslanih podizvođačima, provođenje realizacije narudžbi za uslugu i kontrolu rasporeda povrata. 
+Modul omogućuje upravljanje povratima materijala i proizvoda poslanih na kooperantsku obradu (podizvođaču), izvršavanje naloga te praćenje rokova i planiranih povrata.
