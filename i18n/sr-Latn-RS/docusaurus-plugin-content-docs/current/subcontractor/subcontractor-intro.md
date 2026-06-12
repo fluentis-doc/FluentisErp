@@ -1,6 +1,10 @@
 ---
-title: PODIZVOĐAČ  
+title: PODIZVOĐAČ
 sidebar_position: 1
 ---
 
-Upravljanje Podizvođača u **Fluentisu** omogućava kreiranje radnih naloga kako ručno iz proizvodnje, tako i automatski putem potvrde prijedloga za ponovno naručivanje generiranih analizom potreba. Nakon što se narudžbe proslijede vanjskim dobavljačima, modul upravlja izdavanjem transportnih dokumenata za materijale (uzimajući u obzir materijale koje direktno dobavljaju vanjski dobavljači i njihovu zalihu u skladištu), te konačno učitavanjem dokumenata o nabavi koji će smanjiti zalihu kod vanjskog dobavljača. Modul je integriran s osnovnom specifikacijom i omogućava upravljanje kodovima povrata iz Podizvođača putem organizacije povrata. Sve je integrirano s upravljanjem cjenicima, što omogućava dodjelu cijene kako za kodove tako i, prema potrebi, za kodove i faze.
+Upravljanje **Podizvođačem** u Fluentisu omogućava kreiranje naloga za doradu ručno iz proizvodnje ili automatski, potvrdom predloga za nabavku generisanih procedurama analize potreba. Nakon slanja naloga spoljnim kooperantima, modul upravlja izdavanjem otpremnica za materijal koji se šalje na doradu, uzimajući u obzir materijal koji obezbeđuje kompanija i materijal koji obezbeđuje kooperant.
+
+Takođe omogućava evidentiranje ulaznih dokumenata od kooperanata za izvršene usluge i automatsko kreiranje ulaznih otpremnica koje razdužuju zalihe kod kooperanta.
+Modul je integrisan sa sastavnicama materijala (BOM) i omogućava upravljanje šiframa povrata iz dorade putem organizacije povrata.
+Celokupan proces integrisan je sa upravljanjem cenovnicima, što omogućava definisanje cena po pojedinačnoj šifri artikla ili, po potrebi, po kombinaciji **šifra artikla – faza proizvodnje**.
