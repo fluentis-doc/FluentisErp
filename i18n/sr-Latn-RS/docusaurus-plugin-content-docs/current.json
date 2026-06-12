@@ -344,7 +344,7 @@
     "description": "The label for category Tesoreria in sidebar erpHome"
   },
   "sidebar.erpHome.category.Parametri conto lavoro": {
-    "message": "Parametri podizvođač",
+    "message": "Parametri podizvođača",
     "description": "The label for category Parametri conto lavoro in sidebar erpHome"
   },
   "sidebar.erpHome.category.Parametri ordini di produzione": {
@@ -1720,7 +1720,7 @@
     "description": "The label for category Registrazione rientri in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Listini di conto lavoro": {
-    "message": "Cjenici za usluge podizvođača",
+    "message": "Cenovnici podizvođača",
     "description": "The label for category Listini di conto lavoro in sidebar subcontractor"
   },
   "sidebar.configurations.category.Parametri": {
