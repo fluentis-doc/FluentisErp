@@ -1,34 +1,44 @@
 ---
-title: Istovar otpremnica
+title: Razduženje robe po otpremnici
 sidebar_position: 1
 ---
 
-Postupak se otvara putem **Podizvođač > Otpremnice > Procedure > Istovar otpremnica** i dopušta preuzimanje iz skladišta dostavnih otpremnica za rad na račun koje su već tiskane, a još nisu preuzete.  
+Postupak se otvara putem **Podizvođač > Otpremnice > Procedure > Razduženje robe po otpremnici** te omogućuje knjiženje skladišnog izlaza za otpremnice kooperantske proizvodnje koje su već ispisane, a još nisu knjižene kao izlaz sa skladišta.
 
-## Filter
+## Filtar
 
-Na ovoj kartici moguće je filtrirati dostavne listove za isporuku prema trećim stranama na koje su upisane, prema datumu dostavne liste (Od...do...), prema broju dostavne liste, itd.
+Na ovoj kartici moguće je filtrirati otpremnice za isporuku prema kooperantu na kojeg glase, prema datumu otpremnice (Od–Do), broju otpremnice i drugim kriterijima.
 
-*Posebni gumbi*:
-> **Traži**: gumb za primjenu filtara pretrage na cijelu bazu podataka unesenih, provjerenih i još neregistriranih otpremnica;    
-> **Razduženje**: poziva postupak koji provodi registraciju dostavne liste za isporuku i povezane skladišne promjene. 
+#### Posebne funkcije
 
-*Specifična polja*: 
+> **Traži**: primjenjuje zadane filtre pretraživanja na bazu unesenih, provjerenih i još ne proknjiženih otpremnica za isporuku.
 
-U donjem dijelu obrasca nalazi se polje datuma nazvano **Datum zapisa zalihe**, koje je zadano postavljeno na trenutni datum. Korisnik može promijeniti ovaj datum kako bi odlučio da se registracija u skladištu izvrši na drugi datum osim današnjeg.  
+> **Istovar**: pokreće proceduru knjiženja otpremnice za isporuku te pripadajućih skladišnih transakcija.
 
-Nakon što odaberete dostavne listove za isporuku koje želite registrirati, možete koristiti gumb **Razduženje** na traci s alatkama i izvršiti skladišne promjene: istovremeno s ovom operacijom, aplikacija provodi ispražnjivanje materijala za dostavu s skladišta i njihovo punjenje na skladište trećeg lica.
+#### Specifična polja
 
+- **Datum zapisa zalihe**: polje koje se prema zadanim postavkama popunjava trenutnim datumom. Korisnik može promijeniti datum kako bi knjiženje skladišnih promjena bilo izvršeno na datum različit od trenutnog.
 
-## Sažetak 
+Nakon odabira otpremnica za isporuku koje se žele knjižiti, potrebno je kliknuti gumb **Istovar** na alatnoj traci kako bi se izvršile skladišne transakcije.
 
-Na ovoj kartici moguće je izvršiti poništavanje operacije registracije dostavnih listova za isporuku, čime se vraća situacija na stanje prije same operacije. U zaglavlju ove kartice nalaze se filteri pretrage koji korisniku omogućuju filtriranje operacija prema broju ispraznjenja (Od...do...), datumu ispraznjenja dostavne liste (Od...do...), broju dostavne liste (Od...do...).   
+Tijekom ove operacije aplikacija istovremeno:
+- razdužuje materijal iz skladišta iz kojeg se roba šalje kooperantu,
+- te zadužuje isti materijal na skladište kooperanta.
 
-Rezultati su vidljivi unutar mreže u gornjem dijelu prozora nazvane  **Razduživanje Otpremnica**.  
-Kada se odabere redak unutar ove mreže, u donjem dijelu obrasca mogu se vidjeti ispražnjene otpremnice (u odgovarajućoj kartici *Otpremnica*), kao i pripadajući zapisi skladišta koji su automatski generirani ispraznjenjem odabrane *otpremnice* (u odgovarajućoj kartici *Registracija*).  
+## Sažetak
 
-*Posebni gumbi*:  
-> **Traži**: gumb za primjenu filtara pretrage na cijelu bazu podataka unesenih, ispisanih i već ispražnjenih dostavnih listova za isporuku.    
-> **Otkaži**: poziva postupak koji izvršava poništavanje cijele operacije ispraznjenja odabranog dostavnog lista za isporuku u mreži *Isprazni otpremnicu*; dakle, ako je istom operacijom registracije ispražnjen više dostavnih listova za isporuku, svi ti dostavni listovi bit će vraćeni u status koji *nije ispražnjen*.    
-> **Povrati otpremnicu**: poziva postupak koji izvršava poništavanje registracije odabranih dostavnih listova za isporuku u donjoj mreži, u kartici *Otpremnice*.    
-> **Povrati**: poziva postupak koji izvršava jednostavno brisanje odabranih zapisa skladišta u kartici *Registracija*, bez vraćanja povezanog dostavnog lista za isporuku u status koji nije *ispražnjen*. Preporučuje se da se ovaj gumb koristi samo u iznimnim situacijama.    
+Na ovoj kartici moguće je izvršiti poništavanje (*rollback*) knjiženja otpremnice za isporuku te vratiti stanje prije izvršene operacije. U zaglavlju kartice nalaze se filtri pretraživanja koji omogućuju odabir operacija prema broju razduženja (Od–Do), datumu razduženja otpremnice (Od–Do) te broju otpremnice (Od–Do).
+
+Rezultati pretraživanja prikazuju se u tablici u gornjem dijelu prozora pod nazivom **Razduženje otpremnice**.
+
+Odabirom retka u toj tablici, u donjem dijelu obrasca moguće je pregledati:
+- razdužene otpremnice za isporuku na kartici **Otpremnice**,
+- povezana skladišna knjiženja automatski generirana tijekom razduženja odabrane otpremnice na kartici **Knjiženje**.
+
+#### Posebne funkcije
+
+> **Traži**: primjenjuje filtre pretraživanja na bazu unesenih, ispisanih i već razduženih otpremnica za isporuku.
+
+> **Povrati otpremnicu/primku**: poništava knjiženje otpremnica odabranih u donjoj tablici na kartici **Otpremnice**.
+
+> **Povrati u prethodno stanje**: briše odabrana skladišna knjiženja s kartice **Knjiženje**, bez vraćanja pripadajuće otpremnice u stanje **nije razduženo**. Ovu funkciju preporučuje se koristiti samo u iznimnim situacijama kada je to zaista potrebno.
