@@ -1,219 +1,216 @@
 ---
-title: Nova otpremnica 
+title: Nova otpremnica za podizvođača (za isporuku)
 sidebar_position: 1
 ---
 
-Obrazac se otvara putem puta  **Podizvođač > Narudžbe > Novi nalog podizvođača** ili putem gumba **Novo** unutar obrasca [Pretraga naloga Podizvođača. ](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders).
+Obrazac se otvara putem menija **Podizvođač > Otpremnica > Nova otpremnica** ili klikom na dugme **Novo** u obrascu [Pretraga otpremnica](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders).
 
-## **1. Datum**
+## 1. Obavezni podaci
 
-Aplikacija zahtijeva unos  **Dobavljača** (Izvođača) koji je primatelj Otpremnice, koristeći odgovarajuću pomoćnu opciju računa koja se nalazi u zaglavlju Otpremnice. Automatski će se predložiti: trenutna: **Godina**, **Broj**, **Datum** i **Tip otpremnice** (predložen identično kao što je uneseno u *Parametre Podizvođača*), a korisnik ih može izmijeniti po potrebi.
+Prilikom kreiranja dokumenta potrebno je odabrati **Dobavljača** (kooperanta) koji će biti primalac otpremnice, koristeći pomoć za izbor dobavljača u zaglavlju dokumenta.
+Nakon odabira dobavljača sistem automatski predlaže:
 
-## **2. Zaglavlje**
+- **Godinu**
+- **Broj**
+- **Datum**
+- **Vrstu otpremnice za isporuku**
 
-Nakon odabira obveznih podataka u gornjem dijelu, korisnik može nastaviti [ručni](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unos sljedećih podataka ili koristiti [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection). Ovisno o podacima unesenima u kartici dobavljača, aplikacija *automatski* popunjava polja.
+Vrsta otpremnice predlaže se prema podešavanjima definisanim u **Parametrima kooperacije**, a sve predložene vrednosti korisnik može promeniti.
 
-### 2.1 Podaci o dobavljaču
+## 2. Zaglavlje
 
-Unosom **Dobavljača** automatski se *predlažu* svi specifični podaci iz kartice **Zaglavlje**, prema prethodno unesenim podacima u [Šifarnik dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) i u sljedećim *sekcijama*:  
+Nakon unosa obaveznih podataka korisnik može nastaviti unos ostalih podataka ručno, pomoću pomoći za izbor podataka ili automatski, na osnovu podataka definisanih na kartici kooperanta.
 
-- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Dostava**: [Dostava](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [interval valjanosti](/docs/guide/common/glossary/glossary-intro#validity-date)
+### 2.1 Podaci dobavljača
 
-### 2.2 Opcionalni podaci zaglavlja 
+Nakon odabira **Dobavljača**, automatski se popunjavaju podaci u kartici **Zaglavlje**, prema podacima definisanim na kartici dobavljača.
+Prikazuju se sledeće sekcije:
 
-**Stanje otpremnice**: pomoću ova dva znaka označava se stanje otpremnice, što može biti označeno kao ispisano (nakon što je fizički ispis izvješća otpremnice dostave pokrenut) i preuzeto (nakon što je sama otpremnica preuzeta iz skladišta). Ako otpremnica nije isprintana, nije moguće preuzeti;  
+- **Valuta**: valuta, kurs i datum kursa.
 
-**Naša/vaša referenca**: nakon što se postupak [Izvršenje iz narudžbe](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders),završi, također se predlaže informacija koja se nalazi u istoimenom polju narudžbe;    
+- **Država**: država, jezik i zona.
 
-**Projekt**: koristeći [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) dokument se može povezati s projektom.   
+- **Pošiljka**: način isporuke, paritet isporuke, pakovanje, cenovnik i period važenja cenovnika.
 
-#### Specifični gumbi
+### 2.2 Neobavezni podaci zaglavlja
 
-> [Očekivane isporuke](/docs/subcontractor/delivery-note/insert-delivery-note/new-delivery-note): pokreće postupak stvaranja otpremnice iz narudžbe. Aktivira se unosom dobavljača i vrste otpremnice. Narudžba koja se mora izvršiti mora imati postavljenu oznaku *Ispisano* i popunjeno polje *Datum potvrde narudžbe*;    
-> **Automatsko preuzimanje**: koristi se za automatsko preuzimanje skladišta odabranih artikala. Ovo polje će biti editabilno samo nakon što je polje *Ispisano* aktivirano.  
+- **Status otpremnice**: pomoću dve oznake definiše se status dokumenta. Dokument može biti:
+  - **Odštampano**, nakon štampanja izveštaja otpremnice za kooperanta
+  - **Razduženo**, nakon izvršenog skladišnog razduženja
+
+  Ako dokument nije odštampan, nije ga moguće skladišno razdužiti.
+
+- **Naša referenca / Vaša referenca**: ako je dokument nastao procedurom izvršenja iz naloga, automatski se preuzima istoimeni podatak sa izvornog naloga.
+
+- **Projekat**: pomoću pomoći za izbor moguće je povezati dokument sa projektom.
+
+#### Posebne funkcije
+
+> **Očekivane isporuke**: pokreće proceduru za kreiranje otpremnice iz naloga. Funkcija postaje dostupna nakon unosa dobavljača i vrste otpremnice. Nalog koji se izvršava mora imati uključenu oznaku **Odštampano** i popunjen **Datum potvrde naloga**.
+
+> **Automatsko razduženje skladišta**: omogućava automatsko skladišno razduženje odabranih artikala. Funkcija je dostupna tek nakon što dokument dobije status **Odštampano**.
 
 ### 2.3 Plaćanja
 
-**Načini plaćanja** automatski se preuzimaju u *Šifarniku dobavljača > kartice Plaćanja* i mogu se izmijeniti/izbrisati od strane korisnika.
+**Uslovi plaćanja** automatski se preuzimaju sa kartice dobavljača (*Kartica dobavljača > Plaćanja*), ali ih korisnik može izmeniti ili obrisati.
 
-Ako je na **Način plaćanja** povezan financijski popust, iznos popusta se uzima u obzir samo za računovodstvene svrhe, odnosno za rokove plaćanja dokumenta, a ne za ukupne Otpremnice.
+Ako je uz **Vrstu plaćanja** definisan finansijski popust, iznos popusta koristi se samo za računovodstvene potrebe, odnosno za obračun dospeća, i ne utiče na ukupan iznos otpremnice.
+Ako je dokument nastao iz naloga, vrste plaćanja mogu se preuzeti iz prvog izvornog dokumenta ili sa kartice dobavljača.
 
-Ako dokument potječe iz narudžbe, vrste plaćanja mogu se preuzeti ili iz prvog dokumenta ili iz Šifarnika dobavljača.
+#### Posebna funkcija
 
-#### Specifični gumbi
+> **Dodaj / Otkaži plaćanja**: koristi se za dodavanje ili brisanje odabranih redova plaćanja.
 
-> **Dodaj/Ukloni plaćanja**: koriste se za dodavanje/brisanje odabranih redaka plaćanja.  
+### 2.4 Popusti
 
-#### 2.4 Popusti  
+Prikazuju se samo unapred definisani popusti preuzeti sa kartice dobavljača (*Kartica dobavljača > Popusti*), a korisnik ih može izmeniti ili obrisati.
 
-Ponuđeni su samo predefinirani popusti preuzeti u *Šifarniku dobavljača >  kartica Popusti* i mogu ih korisnici mijenjati/brisati.  
+import TabDiscount from './../../../import/sections/tab-discount.md'
 
-Popusti navedeni u zaglavlju dokumenta prikazuju se u svakom novom retku stavke dodanom u dokument.
-
-Ako nakon unosa stavki u dokumentu dodate novi popust u zaglavlju, on se ne kopira u već unesene retke stavki.
-
-*Poseban gumb*  
-
-**Izbriši popuste**: koristi se za brisanje odabranih redaka popusta.
+<TabDiscount />
 
 ### 2.5 Agenti
 
-Ovdje se navodi kod agenta i njegova provizija za svaku stavku artikla. Predloženi su kod i postotak koji su definirani u *Šifarnik dobavljača > kartica Agenti*.  
+Ova sekcija prikazuje šifru agenta i pripadajuću proviziju za svaki red artikla.
+Šifra agenta i procenat provizije automatski se preuzimaju sa kartice kooperanta (*Kartica kooperanta > Agenti*).
+Ako provizija nije definisana na kartici kooperanta, agent se ipak mora uneti, ali sa vrednošću provizije **NULL**. Vrednost **0** značila bi da je agent povezan sa kooperantom, ali da nema pravo na proviziju.
+Ista sekcija dostupna je i na nivou pojedinačnih stavki artikala, na kartici **Agenti** (Predstavnici).
 
-Ako provizija nije povezana s dobavljačem u njegovoj kartici, ipak se mora unijeti kod agenta ali s provizijom NULL. Ako bi provizija bila 0, to bi značilo da je agent povezan, ali ne prima proviziju.
+#### Posebna funkcija
 
-Ovaj odjeljak bit će ponovno prikazan za svaki artikal u pripadajućoj kartici *Agenti*.  
+> **Otkaži agente**: briše odabrane agente.
 
-#### Specifični gumb
+## Procedure zaglavlja
 
-**Obriši agente**: omogućuje brisanje odabranih redaka agenata.
+### Izvršenje otpremnice
 
-## **Procedure testata:**
+U zaglavlju otpremnice za kooperanta klikom na dugme **Očekivane isporuke** otvara se obrazac za izbor naloga povezanih sa dobavljačem dokumenta.
+Ovom procedurom moguće je kreirati otpremnicu na osnovu izvršenja odgovarajućeg naloga. Artikli se mogu preneti u celosti ili delimično, za ceo nalog ili samo pojedine stavke.
 
-### *Izvršenje iz narudžbe**
+Za korišćenje procedure moraju biti ispunjeni sledeći uslovi:
+- dobavljač na nalogu mora biti isti kao dobavljač na otpremnici
+- nalog koji se izvršava mora imati uključenu oznaku **Odštampano**
+- vrste dokumenata moraju biti međusobno kompatibilne
 
-U zaglavlju otpremnice, pritiskom na gumb **Predviđene isporuke** otvorit će se obrazac gdje je moguće filtrirati narudžbe povezane s kupcem dokumenta.
+#### Postupak
 
-Pomoću ove procedure moguće je kreirati otpremnicu iz izvršenja odgovarajuće narudžbe. Zatim je moguće unijeti artikle u otpremnicu, izvršavajući cijelu narudžbu ili njezin dio, bilo da se radi o cijeloj narudžbi ili pojedinačnoj stavci.
+Filteri za dobavljača i valutu automatski se popunjavaju prema dobavljaču odabranom na otpremnici.
+Nakon definisanja željenih filtera potrebno je kliknuti **Traži**.
+U rezultatima će biti prikazan jedan red za svaki odštampani nalog koji još nije izvršen ili je delimično izvršen.
 
-Za korištenje ove procedure potrebno je ispuniti sljedeće početne uvjete:
-
- -  dobavljač narudžbi mora biti isti kao onaj u otpremnici;  
- -  narudžba koju želite izvršiti mora imati označenu opciju *Ispisano*;
- -  vrste dokumenata moraju biti kompatibilne.
-
-#### Postupak:
-
-Filtri za dobavljača i valutu automatski će se prenijeti na temelju odabranog dobavljača u otpremnici.   
-
-Nakon što postavite sve željene *Filtere* klikom na gumb *Pretraživanje*, u mreži će se prikazati jedan redak za svaku narudžbu koja je ispisana i još nije izvršena ili je djelomično izvršena.
-
-:::note UPOZORENJE
-Procedura preuzima sve podatke prisutne u narudžbi, što znači da će se primijeniti uvjeti iz narudžbe, čak i ako su se u međuvremenu promijenili.
+:::note Upozorenje
+Procedura preuzima sve podatke iz naloga. Kao posledica toga, primeniće se uslovi definisani na nalogu čak i ako su se oni u međuvremenu promenili.
 :::
 
-U mreži rezultata korisnik zatim ima mogućnost:
+U tabeli rezultata korisnik može:
+1. odabrati ceo nalog uključivanjem oznake na početku reda naloga
+2. odabrati samo određene artikle uključivanjem oznake na početku reda artikla
+3. odabrati određene artikle i izvršiti ih samo za deo količine izmenom količine za izvršenje
 
- 1. odabrati *cijelu narudžbu*. Da biste to učinili, jednostavno označite zastavicu na početku reda narudžbe.  
- 2. odabrati samo *neke* od predloženih *artikala*. Da biste to učinili, označite zastavicu na početku reda artikla.  
- 3. odabrati samo *neke artikle*, ali samo za *određenu količinu*. U tom slučaju morate izmijeniti količinu za izvršenje.  
+Za završetak postupka potrebno je kliknuti dugme **Nabavka**, nakon čega će svi relevantni podaci iz naloga biti preneti u otpremnicu.
 
-Za dovršetak procedure potrebno je kliknuti na gumb **Prijenos**, koji će preuzeti sve podatke iz narudžbe i prenijeti ih u otpremnicu.  
+#### Posebne funkcije
 
-#### Specifični gumbi*:
+> **Traži**: primenjuje filtere pretrage na bazu unetih naloga koji još nisu izvršeni ili su samo delimično izvršeni.
 
-> **Traži** omogućuje primjenu pretraživačkih filtera na cijelu bazu podataka narudžbi koje još nisu izvršene ili su djelomično izvršene.   
-> **Prijenos** omogućuje prijenos odabranih artikala u mrežu kartice Isporuke u otpremnici za vanjsko uslužno računovodstvo.    
-> **Proširi** omogućuje proširenje cijelog stabla narudžbi u donjoj mreži, kako bi se prikazali artikli sadržani u njima.    
-> **Sažmi** omogućuje sažimanje prikaza redaka artikala, prikazujući samo redove narudžbi.    
-> **Odaberi sve** omogućuje odabir svih artikala s popisa.   
+> **Nabavka**: prenosi artikle odabrane u donjem prozoru u tabelu kartice **Isporuke** na otpremnici kooperacije.
 
-## **3. Dostava**
+> **Označi sve**: označava sve artikle sa spiska.
 
-Na ovoj kartici se unose materijali koji trebaju biti dostavljeni dobavljaču. Oni se mogu automatski unijeti putem postupka *Izvršenje iz narudžbe* ili ručno od strane korisnika.  
+## 3. Isporuka
 
+Na ovoj kartici unose se materijali koji treba da budu isporučeni kooperantu. Materijali se mogu uneti automatski putem procedure **Izvršenje iz naloga** ili ručno od strane korisnika.
 
-#### Specifični gumbi:
-> **Umetni materijal**: pokreće postupak dodavanja novog materijala u mreži članaka na kartici 'Dostava'.    
-> **Otkaži materijal**: pokreće postupak brisanja materijala iz mreže članaka na kartici 'Dostava'.   
+#### Posebne funkcije
 
-#### Specifična polja:
+> **Dodaj materijal**: pokreće proceduru za unos novog materijala u tabelu artikala na kartici **Isporuke**.
 
-**Broj i godina narudžbenice Podizvođača**: prikazuju broj i godinu narudžbenice Podizvođača iz koje je preuzeta stavka artikla. Ako je stavka unesena ručno, ova će se kolona prikazati prazna;  
+> **Obriši materijal**: pokreće proceduru za brisanje materijala iz tabele artikala na kartici **Isporuke**.
 
-**Procijenjeni datum dostave**: ovo je datum koji označava predviđeni datum dostave materijala, preuzet iz kartice  *Materijali za dostavu* narudžbenice konta rada iz koje je generiran stavka artikla u Otpremnici;  
+#### Specifična polja
 
-**Očekivani povrat**: ovo je datum koji označava predviđeni datum povrata gotovog proizvoda koji će biti izrađen od strane dobavljača koristeći materijale koji su dostavljeni, preuzet iz kartice *Artikli za proizvodnju* narudžbenice konta rada iz koje je generirana stavka artikla u otpremnici.;
+- **Broj i godina naloga podizvođača**: prikazuje broj i godinu naloga iz kojeg je stavka artikla preuzeta. Ako je stavka uneta ručno, ovo polje ostaje prazno.
 
-**Broj linije**: predstavlja jednostavan progresivni broj reda dokumenta, koji može uređivati korisnik;
+- **Procenjeni datum isporuke**: predstavlja planirani datum isporuke materijala, preuzet sa kartice **Materijali za isporuku** naloga iz kojeg je nastala stavka otpremnice.
 
-**JM**: predstavlja upravljačku mjeru jedinice predmeta u isporuci;  
+- **Očekivani povrat**: predstavlja planirani datum povrata gotovog proizvoda koji kooperant treba da izradi koristeći isporučeni materijal. Datum se preuzima sa kartice **Artikli za proizvodnju** naloga kooperacije iz kojeg je nastala stavka otpremnice.
 
-**Faza/Podfaza**: prikazuju kod faze i kod podfaze proizvodne faze narudžbenice proizvodnje na koju je eventualno vezan predmet; to se događa ako je narudžbenica podizvođača iz koje je stvoren ovaj redak otpremnice generirana iz vanjske faze narudžbenice proizvodnje;  
+- **Red**: predstavlja redni broj reda dokumenta i korisnik ga može izmeniti.
 
-**Količina**: predstavlja količinu koju je odlučeno dostaviti Podizvođaču i koju korisnik može urediti;  
+- **Jedinica mere**: predstavlja osnovnu jedinicu mere artikla koji se isporučuje.
 
-**Skladište**: predstavlja kod skladišta iz kojeg se preuzima roba za dostavu Podizvođaču.Kod skladišta se predlaže isti kao u retku 'Materijali za isporuku' u kartici narudžbe konta rada iz koje je generiran redak otpremnica, ali ga korisnik može uređivati. Ako je aktivirana zastavica u Parametrima Podizvođača pod nazivom 'Uvažavaj skladišta prema vrsti otpremnice', predloženo skladište bit će ono postavljeno u tablici 'Vrste dostavnih naljepnica' u odgovarajućem stupcu 'Skladište';
+- **Faza / Podfaza**: prikazuje šifru faze i podfaze proizvodnog procesa ako je artikl povezan sa proizvodnim nalogom. Ovo se prikazuje kada je nalog kooperacije, iz kojeg je kreirana stavka otpremnice, nastao iz spoljne faze proizvodnog naloga.
 
-**Predložak**: predstavlja šifru predloška skladišta koja će se koristiti za povlačenje iz skladišta iz kojeg je potrebno izvaditi robu za isporuku dobavljaču. Šifra predloška skladišta predložena je ista kao ona postavljena u retku kartice 'Materijali za dostavu' narudžbenice konta rada iz koje je generiran redak otpremnice, ali je korisnik može urediti. Ako je, međutim, aktivna oznaka, prisutna u parametrima konta rada, nazvana 'Uvažavaj skladišta prema vrsti otpremnice', predloženi uzrok bit će onaj postavljen u tablici 'Vrste prodajnih otpremnica', u odgovarajućem stupcu 'Predložak';
+- **Količina**: predstavlja količinu koju je odlučeno isporučiti kooperantu i korisnik je može izmeniti.
 
-**Cijena**: predstavlja jediničnu cijenu artikla. Ovo je stupac koji korisnik može urediti i nije obavezan. Obično se koristi kada otpremnica mora proći carinu;  
+- **Skladište**: predstavlja šifru skladišta iz kojeg se preuzima roba za isporuku kooperantu. Predlaže se skladište definisano na stavci kartice **Materijali za isporuku** naloga kooperacije iz kojeg je nastala stavka otpremnice, ali ga korisnik može promeniti. Ako je u **Parametrima kooperacije** uključena opcija **Preuzimaj skladišta prema vrsti otpremnice za isporuku**, predlaže se skladište definisano u tabeli **Vrste prodajnih otpremnica**, u koloni **Skladište**.
 
-**PDV**: predstavlja PDV kod, ili ga automatski predlaže procedura koja ga preuzima iz registracije treće strane ili iz registracije artikla prisutnog u retku, ovisno o slučaju. Kombinirani okvir povlači iz tablice 'Stope PDV-a' koja se nalazi u 'Općim postavkama';  
+- **Predložak**: predstavlja šifru skladišnog predloška koji će se koristiti za izlaz robe iz skladišta prilikom isporuke kooperantu. Predlaže se predložak definisan na stavci kartice **Materijali za isporuku** naloga kooperacije iz kojeg je nastala stavka otpremnice, ali ga korisnik može promeniti. Ako je u **Parametrima kooperacije** uključena opcija **Preuzimaj skladišta prema vrsti otpremnice za isporuku**, predlaže se predložak definisan u tabeli **Vrste prodajnih otpremnica**, u koloni **Knjigovodstvena šema**.
 
-**Tip prometa nabave**: predstavlja kod Tip prometa ili ga automatski predlaže procedura koja ga preuzima iz registracije artikla prisutnog u retku. Kombinirani okvir povlači iz tablice 'Vrsta fakturiranih nabava' koja se nalazi u 'Tablicama područja nabave';       
+- **Cena**: predstavlja jediničnu cenu artikla. Polje je moguće uređivati i nije obavezno. Obično se koristi kada otpremnica za isporuku mora proći carinsku obradu.
 
-**Težine**: prikazuju se ukupna neto i bruto Težina redaka artikala. Prikazuju se težine iz šifarnika artikla pomnožene s količinom u retku.  
+- **PDV**: predstavlja šifru PDV-a. Vrednost se može uneti ručno ili se automatski predlaže sa kartice kooperanta ili sa kartice artikla, u zavisnosti od slučaja. Padajući meni koristi podatke iz tabele **Stope PDV-a** u **Opštim podešavanjima**.
 
-### 3.1 Istovar  
+- **Vrsta prometa nabavke**: predstavlja šifru vrste prometa nabavke. Vrednost se može uneti ručno ili se automatski predlaže sa kartice artikla na redu. Padajući meni koristi podatke iz tabele **Vrste prometa nabavke** u **Tabelama oblasti Nabavka**.
 
-U ovoj kartici daje se mogućnost postavljanja, za odabrani redak u mreži, serija za izdavanje iz skladišta s količinom artikla preuzetom za slanje trećoj strani, u slučaju da se radi o više različitih serija preuzetih s istim redkom otpremnice.  
+- **Težine**: prikazuje ukupnu neto i bruto težinu redova artikala. Težine se preuzimaju sa kartice artikla i množe količinom reda.
 
-Mreža serija omogućuje korisniku preuzimanje serije koristeći posebnu funkciju 'Pomoć za serije', koja filtrira dostupne serije odabranog artikla u gornjoj mreži. Informacije prikazane u mreži serija uključuju vrstu koda serije, kod serije, seriju dobavljača, vrstu serije, datum početka i datum isteka, količinu serije, lokaciju, podatke o dobavljaču serije (račun, podračun i poslovno ime). Naravno, zbroj količina različitih serija mora točno odgovarati isporučenoj količini iz retka artikla.  
+### 3.1 Lotovi/Serijski brojevi
 
-### 3.2 Datum materijala  
+Na ovoj kartici moguće je za odabrani red u tabeli definisati lotove koji će biti razduženi iz skladišta zajedno sa količinom artikla koja se šalje kooperantu, u slučaju da se ista stavka isporučuje iz više različitih lotova.
+Tabela lotova omogućava izbor lota putem **Pomoći za lotove**, koja prikazuje samo raspoložive lotove za artikl odabran u gornjoj tabeli. Za svaki lot prikazuju se: vrsta lota, šifra lota, dobavljačev lot, tip lota, datum početka, datum isteka, količina lota, lokacija skladištenja i podaci o dobavljaču lota (konto, podkonto i naziv).
+Zbir količina svih odabranih lotova mora odgovarati količini isporučenoj na redu artikla.
 
-U ovoj kartici prikazane su sljedeće informacije vezane uz odabrani redak u mreži:  
+### 3.2 Materijali
 
-**Klasa, kod, opis i varijanta artikla, količina za isporuku, jedinica mjere, Skladište, Predložak, Nalog podizvođača**: to su niz informacija koje su jednostavno preuzete iz odabranog retka otpremnice;  
+Na ovoj kartici prikazuju se dodatne informacije za red odabran u tabeli:
 
-**Projekt**: predstavlja prodajni zadatak vezan uz redak otpremnice. Obično se poziva prodajni zadatak unesen u redak naloga za rad po narudžbi iz kojeg je generiran redak otpremnice;  
+- **Klasa, šifra, opis i varijanta artikla, količina za isporuku, jedinica mere, skladište, predložak i nalog kooperacije**: informativni podaci preuzeti sa odabranog reda otpremnice.
+- **Projekat**: predstavlja prodajni projekat povezan sa redom otpremnice. Po pravilu se predlaže projekat naveden na redu naloga kooperacije iz kojeg je stavka generisana.
+- **Napomena**: omogućava unos napomene vezane za odabrani red.
 
-**Napomene**: u ovom polju korisnik može unijeti bilješku vezanu uz odabrani redak.  
+## 4. Rekapitulacije
 
-## **4. Sažeci**
+U ovom odeljku prikazane su glavne informacije o celom dokumentu.
 
-U Sažecima su prikazane glavne informacije cijelog dokumenta.
-
-### 4.1 Konačni popusti
-
-Mogu se unijeti samo popusti izraženi u postocima, koji se primjenjuju na ukupan iznos dokumenta.
-
-Popusti uneseni u ovoj sekciji izračunavaju se i prikazuju na svakom artiklu dokumenta, na *kartici Artikli > kartica Popusti/Cjenici*.
-
-> **Vrsta/Opis popusta**: omogućuje odabir vrsta popusta (prethodno definiranih u Vrstama popusta), dodjeljujući svakoj vrsti prioritet primjene popusta i određujući je li popust izračunat na osnovici ili se primjenjuje kaskadno u odnosu na prethodno primijenjene popuste;       
-> **Prioritet**: predstavlja redoslijed primjene popusta; sortiranje se vrši uzlazno;    
-> **Kaskada/Iznos**: određuje koristi li se za izračun popusta osnovica (cijena * količina) - (već izračunati popusti) ili (cijena * količina);     
-> **Vrijednost**: numerička vrijednost završnog popusta koji treba primijeniti.  
+### 4.1 Završni popusti
 
 
-### 4.2 Konačni troškovi/popusti/doplate
+import SummariesFinalDiscount from './../../../import/sections/summaries-final-discount.md'
 
-Ovdje se prikazuju troškovi uneseni u Šifarnik  kontakata, u kartici *Troškovi/Popusti*.
+<SummariesFinalDiscount />
 
-Također postoji mogućnost unosa troškova koji se odnose samo na trenutni dokument.
 
-> **Vrsta/Opis**: omogućuje odabir vrste troška (prethodno definirane u tablici Tipovi troškova), dodjeljujući svakoj vrsti postotak troška za primjenu;   
-> **Iznos troška**: označava vrijednost troška izraženu u valuti dokumenta;    
-> **PDV**: označava stopu PDV-a koja se primjenjuje na unesene troškove;    
-> **Postotak/Vrijednost**: označava hoće li se troškovi izračunati kao postotak ili kao unaprijed određeni novčani iznos. Odabirom Iznos troška treba unijeti u odgovarajuće polje;    
-> **Postotak**: numerička vrijednost postotka troška.  
+### 4.2 Troškovi / Popusti / Doplate
+
+
+import SummariesExpenses from './../../../import/sections/summaries-expenses.md'
+
+<SummariesExpenses />
 
 
 ### 4.3 Ostala polja
 
-**Volumen**: prikazuje kumulativni volumen koji proizlazi iz zbroja volumena artikala (vrijednost se preuzima iz kartice *Šifarnik artikla > kartica Težine/Dimenzije*), kada se jedinica mjere volumena artikala podudara s onom navedenom u parametrima računa. Razmatraju se samo artikli koji imaju ovaj podatak popunjen;    
-**Neto težina**: prikazuje kumulativnu neto težinu koja proizlazi iz zbroja neto težina artikala (vrijednost se preuzima iz kartice *Šifarnik artikla > kartica Težine/Dimenzije*), kada se jedinica mjere težine artikala podudara s onom navedenom u parametrima računa. Razmatraju se samo artikli koji imaju ovaj podatak popunjen;    
-**Bruto težina**: prikazuje kumulativnu bruto težinu koja proizlazi iz zbroja bruto težina artikala (vrijednost se preuzima iz kartice *Šifarnik artikla > kartica Težine/Dimenzije*), kada se jedinica mjere težine artikala podudara s onom navedenom u parametrima računa. Razmatraju se samo artikli koji imaju ovaj podatak popunjen;    
-**Paketi**: prikazuje broj komada na temelju podataka unesenih u kartici *Šifarnik artikla > kartica Težine/Dimenzije*, u poljima *Artikli prisutni u jednom pakiranju* ili *Paketi za oblikovanje*. Razmatraju se samo artikli koji imaju ovaj podatak popunjen.   
+- **Zapremina**: prikazuje ukupnu zapreminu izračunatu kao zbir zapremina svih artikala. Vrednost se preuzima iz *Kartice artikla > Težine/Dimenzije* ako se jedinica zapremine podudara sa onom definisanom u parametrima dokumenta. U obračun ulaze samo artikli sa popunjenim podatkom o zapremini.
+- **Neto težina**: prikazuje ukupnu neto težinu svih artikala. Vrednost se preuzima iz *Kartice artikla > Težine/Dimenzije* i uzimaju se u obzir samo artikli sa definisanim podacima o težini.
+- **Bruto težina**: prikazuje ukupnu bruto težinu svih artikala. Vrednost se preuzima iz *Kartice artikla > Težine/Dimenzije*.
+- **Paketi**: prikazuje broj paketa na osnovu podataka definisanih u *Kartici artikla > Težine/Dimenzije*, u poljima **Artikli po paketu** ili **Paketi za formiranje artikla**.
 
-### 4.3 Transport
+### 4.4 Prevoz
 
-Automatski se predlaže *Vrsta prijevoza prema postavkama* u  *Šifarniku kontakta > kartica  [Isporuka](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)* (radio button: Pošiljatelj/Primatelj/Prijevoznik), ali podaci se mogu izmijeniti.  
+Automatski se predlaže vrednost polja **Prevoz organizuje** iz *Kartice kontakta > Isporuka* (Pošiljalac / Primalac / Prevoznik), ali korisnik može promeniti predložene podatke.
 
-### 4.4 Sveukupni Dokument
+### 4.5 Ukupni iznosi dokumenta
 
-**Iznos stavki bez popusta**: predstavlja zbroj vrijednosti svih artikala;
-**Zaduženje**: predstavlja iznos eventualnog avansa primljenog za dokument;
-**Poklonjeni iznos**: predstavlja iznos artikala koji su poklonjeni, uneseni u kartici *Artikli*;  
-**Ukupni primjenjeni rabati**: predstavlja ukupnu vrijednost primijenjenih popusta na artikle, ali bez završnih popusta;  
-**Neto iznos artikala**: *Bruto iznos artikala* – *Ukupni primijenjeni popusti*;  
-**Ukupno konačnih popusta**: predstavlja vrijednost završnih popusta izraženih u postocima na bruto iznos artikala;    
-**Neto iznos završnih popusta**: *Neto iznos artikala* - *Ukupni završni popusti*;  
-**Naknade naplate**: predstavlja zbroj naknada za naplatu unesenih u mreži *Naknade*;    
-**Trošak ovjere**: predstavlja zbroj troškova pečata unesenih u mrežu *Naknade*;   
-**Oporezivo**: *Neto iznos artikala* – *Završni popusti* + *Ukupni nepotvrđeni troškovi* + *Ukupni potvrđeni troškovi*;  
-**Porezi**: predstavlja zbroj vrijednosti u pregledima PDV-a;  
-**Ukupno**: *Osnovica + PDV*.
+- **Iznos stavki bez popusta**: zbir vrednosti svih artikala.
+- **Avans**: vrednost eventualnog avansa povezanog sa dokumentom.
+- **Poklonjeni iznos**: ukupna vrednost artikala tipa poklon.
+- **Ukupni primenjeni rabati**: zbir svih popusta primenjenih na artikle, bez završnih popusta.
+- **Neto iznos artikala**: *Iznos stavki bez popusta – Ukupni primenjeni rabati*.
+- **Ukupno završnih rabata**: vrednost završnih popusta izražena kao procenat bruto iznosa artikala.
+- **Iznos umanjen za ukupan popust**: *Neto iznos artikala – Ukupno završnih rabata*.
+- **Troškovi naplate**: zbir troškova naplate unetih u tabelu **Troškovi**.
+- **Trošak overe**: zbir troškova taksi unetih u tabelu **Troškovi**.
+- **Poreska osnovica**: *Neto iznos artikala – Ukupno završnih rabata + Ukupno troškovi*.
+- **Porez**: zbir vrednosti iz PDV rekapitulacije.
+- **Ukupno**: *Poreska osnovica + PDV*.
