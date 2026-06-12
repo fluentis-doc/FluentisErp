@@ -3,10 +3,10 @@ title: Dupliciranje i održavanje cjenika podizvođača
 sidebar_position: 2
 ---
 
-Kroz ovaj postupak moguće je ažurirati, zatvoriti, duplicirati, ponovno otvoriti ili modificirati popuste postojećih cjenika. Pri otvaranju primjećujemo da postoje filteri pomoću kojih možemo ciljano pretraživati cjenik koji želimo obraditi. Klikom na gumb Pretraga, prikazuju se artikli cjenika prema postavljenim filterima. Potrebno je odabrati jedan ili više artikala koji će biti predmet promjene kako bismo izvršili postupak. Pomoću gumba na traci **Modifikacija** i **Pregled** možemo ući u uređivanje ili pregled odabranog cjenika; treba napomenuti da pregled ne dopušta promjene.  
+Kroz ovaj postupak moguće je ažurirati, zatvoriti, duplicirati, ponovno otvoriti ili modificirati popuste postojećih cjenika. U formi postoje filteri pomoću kojih se može ciljano pretraživati cjenik koji se želi obraditi. Klikom na gumb **Traži**, prikazuju se artikli cjenika prema postavljenim filterima. Potrebno je odabrati jedan ili više artikala koji će biti predmet promjene kako bi se izvršio postupak. Pomoću gumba na traci **Izmijeni** i **Prikaži** može se ući u uređivanje ili pregled odabranog cjenika; treba napomenuti da pregled ne dopušta promjene.  
 
 Pritiskom na gumb **Ažuriraj**, otvara se prozor u kojem se unose podaci potrebni za ažuriranje:
--	**Datum početka važenja** i **Datum završetka važenja** moraju biti isti kao i kod originalnog cjenika, inače Fluentis ne može izvršiti ažuriranje; ove datume možemo vidjeti izravno u retku artikla;  
+-	**Datum početka valjanosti** i **Datum završetka valjanosti** moraju biti isti kao i kod originalnog cjenika, inače Fluentis ne može izvršiti ažuriranje; ove datume možemo vidjeti izravno u retku artikla;  
 -	**Postotak povećanja**: možemo navesti postotak povećanja koji će se primijeniti na cijenu;  
 -	**Zaokruživanja**: ovo polje zamjenjuje prethodno, stoga je potrebno izbrisati sadržaj prethodnog polja prije uređivanja; ovdje možemo odabrati vrstu zaokruživanja koja će se primijeniti na cijenu; treba napomenuti da zaokruživanja također mogu sadržavati postotak povećanja, stoga ima smisla ostaviti polje za uređivanje. Kada postavimo željene promjene, klikom na **OK** izvršavamo postupak. Primijetit ćemo da se cijena odabranih redaka promijenila prema unesenim postavkama.
 
