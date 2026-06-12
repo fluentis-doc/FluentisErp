@@ -1,6 +1,6 @@
 ---
-title: Općenito
+title: Uvod
 sidebar_position: 1
 ---
 
-Modul **Otpremnice** za radne naloge omogućuje upravljanje dostavom materijala izvršiteljima i kontrolu rokova dostave koji trebaju biti izvršeni.
+Modul **Otpremnice** za radne naloge omogućava upravljanje isporukom materijala izvršiocima i kontrolu rokova isporuke koje je potrebno izvršiti.

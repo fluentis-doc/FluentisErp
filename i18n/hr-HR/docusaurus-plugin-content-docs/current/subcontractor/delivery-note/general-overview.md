@@ -1,5 +1,5 @@
 ---
-title: Općenito
+title: Uvod
 sidebar_position: 1
 ---
 
