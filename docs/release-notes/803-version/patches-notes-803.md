@@ -3,6 +3,25 @@ title: 🔧 Patch Notes v803
 sidebar_position: 1
 ---
 
+### Patch 803.0024 - 12/06/2026
+
+> -	Arm - fix merge (TT02594/26)
+> -	FI - aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. Modifications inside the form calculate commission report can have impact on profiles. Rif R: #TT02180/26
+> -	FI - Import bank account (#TT02271/26)
+> -	FI - revisione contabilizzazione nota di credito acquisti con segni misti e date competenza differenti (#TT02545/26)
+> -	MES - Costificazione Ordini di produzione: corretta anomalia che non considerava le variazioni di Macchina e/o Gruppo manodopera nelle Dichiarazioni di produzione rispetto a quelli predefiniti nella Fase di lavoro. (#TT02400/26).
+> -	MS - Pianificazione generale: corretta un'anomalia nel controllo della disponibilità degli articoli richiesti dagli Ordini cliente quando il magazzino di vendita non era compreso tra quelli considerati dal calcolo della disponibilità. (#TT02573/26)
+> -	PR - Extend the PR_FileTypes column PRFTY_Extension to 4 chars (#TT02586/26)
+> -	SD - Corretta visualizzazione categoria merceologia in procedura “Duplica e manutenzione listini di vendita” (#TT02219/26)
+> -	SD - Corretta visualizzazione sconti di riga e riepiloghi su DDT creato con “Evasione DDT” da elenco ordini clienti (#TT02585/26).
+> -	SD - Corretta visualizzazione stato evasione ordine cliente da proprietà. Modifications inside the SalesOrder property form can have impact on profiles. (#TT02468/26).
+> -	SD - Corretto ricalcolo colli-pesi su righe ordine cliente al variare della quantità alternativa (#TT00803/26)
+> -	SD - Evasione Ordini Cliente: È stata introdotta la gestione degli ordini cliente con totale negativo, tipicamente utilizzati per rappresentare un rientro merce anziché una vendita. Nei casi di ordine con totale negativo le quantità e/o i prezzi vengono automaticamente gestiti con segno negativo (-). Tali ordini possono essere evasi esclusivamente tramite fatture con natura Nota di accredito. L’evasione di questi ordini è consentita solo all’interno di una nuova fattura con Tipo impostato come Nota di accredito. Non è possibile evadere questi ordini direttamente dal filtro Ordini. (#TT1868/26)
+> -	SD - offerta già convertita in ordine, risolto caso per cui convertendo nuovamente veniva dato messaggio con esito positivo ma l’ordine non veniva creato effettivamente (#TT02496/26)
+> -	SH - Corretto anomalia del pulsante refresh all'interno del ribbon dashboard (#TT02321/26)
+> -	WMS - Spunta Picking: Aggiunto ordinamento in prelievo righe picking per Ubicazione e Priorità ubicazione. Modifications inside the form can have impact on profiles. (#TT02126/26)
+
+
 ### Patch 803.0023 - 05/06/2026
 
 > -	FI - Creazione registrazione contabile con analitica: revisione della gestione del campo "Descrizione centri di costo", ora impostato come sola lettura. **Attenzione! Questa modifica può impattare sui profili** (#TT01625/26)
