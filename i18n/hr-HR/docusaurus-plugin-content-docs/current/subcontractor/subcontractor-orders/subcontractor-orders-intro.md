@@ -7,5 +7,5 @@ sidebar_position: 1
 
 Preporuča se niz **postavki** i ispravna parametrizacija osnovnih algoritama prije nego što se pristupi generiranju narudžbi za podizvođače.  
 
-> **Tablice**: preporučuje se provjeriti odjeljak *Konfiguracija  > Tablice  > Proizvodnja* za identifikaciju ispravnih postavki modul Podizvođača.     
+> **Tablice**: preporučuje se provjeriti odjeljak *Konfiguracija > Tablice > Proizvodnja* za identifikaciju ispravnih postavki modul Podizvođača.     
 > **Parametri**: obrazac je [Parametri podizvođača](/docs/configurations/parameters/production/subcontractor-parameters).
