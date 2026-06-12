@@ -1,129 +1,144 @@
 ---
-title: Novi nalog podizvođača 
+title: Novi nalog podizvođača
 sidebar_position: 1
 ---
 
-Pomoću ovog obrasca moguće je ručno kreirati novu narudžbu za rad na temelju ugovora o radu ili izmijeniti već postojeće narudžbe.
+U ovom obrascu moguće je ručno kreirati novi nalog kooperacije ili uređivati postojeće naloge.
 
-Obrazac se otvara putem puta **Podizvođač > Nalog Podizvođača > Novi nalog Podizvođača** ili putem gumba **Novo** koji se nalazi u obrascu [Pretraga narudžbi Podizvođača](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/search-subcontractor-orders).
+Obrazac se otvara putem putanje **Podizvođač > Nalozi podizvođača > Novi nalog** ili putem dugmeta **Novo** koje se nalazi u obrascu [Pretraga naloga podizvođača](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/search-subcontractor-orders).
 
-## **1. Obavezni podaci**
+## 1. Obavezni podaci
 
-Aplikacija zahtijeva unos **Dobavljača** (izvršitelja) koji je nositelj narudžbe, koristeći odgovarajuću pomoć za račune. Automatski će biti predloženi: trenutna **Godina**, **Broj**, **Datum** i **Tip dokumenta** (predložena jednaka onoj unesenoj u *Parametre Podizvođača*), a korisnik ih može izmijeniti.
+Aplikacija zahteva unos **Dobavljača** (izvršioca) koji je nosilac naloga. Automatski će biti predloženi: tekuća **Godina**, **Broj**, **Datum** i **Tip dokumenta** (predložen prema vrednosti definisanoj u *Parametrima podizvođača*), a korisnik ih može izmeniti.
 
-## **2. Zaglavlje** {#header}
+## 2. Zaglavlje
 
-Nakon što odabere obavezne podatke u gornjem dijelu, korisnik može nastaviti unos sljedećih podataka [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz [pomoć polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili, na temelju podataka unesenih u evidenciju izvršitelja, aplikacija *automatski* popunjava polja.
+Nakon što se odaberu obavezni podaci u gornjem delu obrasca, korisnik može nastaviti unos sledećih podataka [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), korišćenjem [pomoćnih polja](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili će aplikacija, na osnovu podataka unetih u evidenciju izvršioca, *automatski* popuniti polja.
 
-### 2.1 Dati Dobavljač
+### 2.1 Podaci o dobavljaču
 
-Kada se unese **Dobavljač** automatski se *predlažu* svi specifični podaci na kartici **Zaglavlje**, prema podacima postavljenim ranije u [šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro) u odgovarajućim poljima adrese i u sljedećim *sekcijama*:  
+Kada se unese **Dobavljač**, automatski se *predlažu* svi specifični podaci na kartici **Zaglavlje**, prema podacima prethodno definisanim u [šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/accounting-data-intro), u odgovarajućim adresnim poljima i sledećim *sekcijama*:
 
-- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Tečaj](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
-- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone)
-- **Isporuka**: [Isporuka](/docs/guide/common/glossary/glossary-intro#shipment), [Luka](/docs/guide/common/glossary/glossary-intro#carriage), [Pakiranje](/docs/guide/common/glossary/glossary-intro#packing), [Cjenik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov  [vremenski okvir važenja](/docs/guide/common/glossary/glossary-intro#validity-date)
+- **Valuta**: [Valuta](/docs/guide/common/glossary/glossary-intro#currency), [Kurs](/docs/guide/common/glossary/glossary-intro#currency-exchange), [Datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
+- **Država**: [Država](/docs/guide/common/glossary/glossary-intro#country), [Jezik](/docs/guide/common/glossary/glossary-intro#language), [Zona](/docs/guide/common/glossary/glossary-intro#zone).
+- **Isporuka**: [Isporuka](/docs/guide/common/glossary/glossary-intro#shipment), [Paritet](/docs/guide/common/glossary/glossary-intro#carriage), [Pakovanje](/docs/guide/common/glossary/glossary-intro#packing), [Cenovnik](/docs/guide/common/glossary/glossary-intro#sales-price-list) i njegov [period važenja](/docs/guide/common/glossary/glossary-intro#validity-date).
 
 ### 2.2 Plaćanja
 
-**Mogućnost plaćanja** automatski se prenose  *Šifarnik izvršitelja > kartica Plaćanja* i mogu se mijenjati/brisati od strane korisnika.  
+**Uslovi plaćanja** automatski se preuzimaju iz *Šifarnika izvršioca > kartica Plaćanja* i korisnik ih može menjati ili brisati.
 
-#### Poseban gumb
+#### Posebno dugme
 
-> **Izbriši plaćanja**:  koristi se za brisanje odabranih redaka plaćanja.  
+> **Otkaži plaćanja**: koristi se za brisanje odabranih redova plaćanja.
 
 ### 2.3 Popusti
 
-Ponuđeni su samo predefinirani popusti preuzeti iz *Šifarnnik izvršitelja > kartica Popusti* i mogu se mijenjati/brisati od strane korisnika.  
+Prikazuju se samo unapred definisani popusti preuzeti iz *Šifarnika izvršioca > kartica Popusti* i korisnik ih može menjati ili brisati.
+Popusti definisani u zaglavlju dokumenta primenjuju se na svaki novi red artikla koji se unese u dokument.
+Ako se nakon unosa stavki doda novi popust u zaglavlje, on se neće automatski primeniti na već postojeće stavke.
 
-Popusti koji su ponuđeni u zaglavlju dokumenta primjenjuju se na svaki novi redak artikla koji se unese u dokument.
+#### Posebno dugme
 
-Ako nakon što su uneseni retci artikla dodate novi popust u zaglavlje, on se neće automatski primijeniti na već unesene retke artikla.
+> **Obriši podrazumevane rabate**: koristi se za brisanje odabranih redova popusta.
 
-*Poseban gumb*  
+## 3. Artikli
 
-> **Izbriši popuste**: koristi se za brisanje odabranih redaka popusta.
+Obrazac sadrži tabelu u koju korisnik može ručno unositi proizvode potrebne podizvođaču. Mogu se unositi šifrirani artikli i napomene.
+Obrazac može već biti popunjen ako nalog dolazi iz *proizvodnje (MS)* ili *MRP obrade*, ali korisnik i dalje može izmeniti postojeće ili dodati dodatne materijale na listu planiranog naloga.
 
-## **3. Artikli**
-
-Obrazac se sastoji od mreže u koju korisnik može ručno unijeti proizvode koji su potrebni izvršitelju. Mogu se unijeti kodirani artikli i napomene.
-
-Obrazac već može biti popunjena ako narudžba dolazi iz *Općeg rasporeda* ili *MRP obrade*, ali korisnik i dalje može izmijeniti ili dodati dodatne materijale na listu komponenti planirane narudžbe. Važno je napomenuti da ako je planirana narudžba za kupovinu, kartica Materijali bit će neaktivna.
+Važno je napomenuti da će kartica **Materijali** biti neaktivna ukoliko se radi o planiranom nalogu za nabavku.
 
 ### 3.1 Podaci o artiklu
 
-Na ovoj kartici prikazuju se informacije koje se odnose na odabranu liniju u mreži artikala, uključujući:  
+Na ovoj kartici prikazuju se informacije koje se odnose na izabranu stavku u tabeli artikala, uključujući:
+- **Tok obrade**: u ovom polju preuzima se oznaka **Tok obrade** definisana u MRP parametrima artikla.
+- **Količina za proizvodnju**: količina iz izvornog naloga koja je prijavljena kooperantu za obradu.
+- **Obrađena količina**: ukupna količina zaprimljena nakon obrade.
+- **Planirani datum povrata**: datum očekivanog povrata obrađene robe.
+- **Napomena obrade**: tekst koji korisnik može uneti ručno. Moguće je automatski preneti i određene sistemske informacije, na primer opis radne faze koja je generisala potrebu za kooperacijom.
+- **Faza**: dvostrukim klikom otvara se pomoćni pregled faza obrade u kojem je moguće odabrati fazu i podfazu te dodeliti izabrani materijal određenoj fazi obrade artikla.
+- **Skladište**: odredišno skladište za obrađeni proizvod.
+- **Težine**: prikazuju se ukupna neto i bruto težina stavki. Vrednosti se preuzimaju sa kartice artikla i množe količinom stavke.
 
-**Radni tijek**: ovo polje odražava oznaku prisutnu u MRP parametrima artikla nazvanom *Radni tijek*;  
-**Količina za proizvesti**: količina početne narudžbe komunicirana izvršitelju;  
-**Već vraćena količina**: ukupna količina primljena i obrađena;  
-**Očekivani datum povrata**: datum dolaska obrađenih proizvoda;  
-**Radna bilješka**: upravlja ih korisnik. Može biti parametrizirano i može sadržavati osjetljive podatke sustava, kao što je opis faze obrade koja je generirala potrebu za obradom;    
-**Faza**: dvoklikom se otvara pomoć za faze obrade, iz koje se može odabrati odgovarajuća faza i podfaza te dodijeliti odabrani materijal određenoj fazi obrade artikla;    
-**Skladište**: skladište odredišta za obrađeni proizvod;  
-**Težine**: prikazuju se ukupna neto i bruto težina linija artikala. Prikazuju se težine artikla iz evidencije pomnožene s količinom linije.  
+## 3.a Materijali
 
-## **3. Materijali**
+Obrazac se sastoji od dve tabele:
 
-Obrazac se sastoji od dvije mreže koje prikazuju materijale koji se šalju izvršitelju na obradu i materijale koji će se koristiti po povratku obrađenog proizvoda. Mogu se unijeti kodirani artikli, nekodirani artikli i napomene.
+- **Materijali za isporuku** – sadrži materijale koji se šalju kooperantu na obradu.
+- **Materijali koji će se koristiti** – sadrži materijale koji će biti korišćeni ili vraćeni zajedno sa obrađenim proizvodom.
 
-Operater može upravljati materijalima koji se šalju i koriste, u tom slučaju potrebno je unijeti količinu, eventualnu cijenu obrade, predviđeni datum povratka i datum upotrebe materijala. Ovi podaci već su popunjeni ako narudžba dolazi iz *Općeg rasporeda* ili *MRP obrade*.
+Moguće je unositi:
+- šifrirane artikle,
+- nešifrirane artikle,
+- napomene.
 
-### 3.1 Materijali za dostavu
+Materijali se mogu unositi ručno. U tom slučaju operater mora uneti:
+- količinu,
+- eventualnu cenu obrade,
+- planirani datum povrata,
+- datum korišćenja materijala.
 
-**Šifra artikla**: označava materijal koji treba dostaviti na obradu;
+Ako je nalog nastao iz procedure **proizvodnje (MS)** ili **MRP obrade**, navedeni podaci će biti automatski popunjeni.
+
+### 3.a.1 Materijali za isporuku
+
+**Šifra artikla**: označava materijal koji treba poslati na obradu.
 
 :::note NAPOMENA
-U slučaju da je narudžba rad na temelju ugovora generirana iz izdavanja *Planirane narudžbe* rad na temelju ugovora ili *Planirane proizvodne narudžbe* s jednim ili više vanjskih faza, materijali za dostavu neće biti prikazani ako: ne postoje [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) za artikl, ili zastavica *Razmatra se u podizvođaču* nije omogućena u  [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro), ili je *Tip izuzimanja* u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) *automatska*, ili je *Tip izuzimanja* u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) s *popisom* i zastavica WIP nije omogućena.
+U slučaju da je nalog generisan iz izdavanja *Planiranog naloga* ili *Planiranog proizvodnog naloga* sa jednom ili više eksternih faza, materijali za isporuku neće biti prikazani ako:
+
+- ne postoje [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) za artikl,
+- nije uključena opcija *Razmatra se u podizvođaču* u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro),
+- je *Tip izuzimanja* u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) postavljen na *automatsko*,
+- ili je *Tip izuzimanja* postavljen na *lista*, a opcija WIP nije uključena.
 :::
 
+### 3.a.2 Materijali koji će se koristiti
 
-### 3.2 Materijali za upotrebu
+**Šifra artikla**: označava materijal koji će biti korišćen nakon povratka obrađenog proizvoda;
+**Koristi se po jedinici**: količina potrebna za svaku jedinicu obrađenog proizvoda u slučaju automatskog upravljanja sastavnicom; ovu informaciju sistem automatski popunjava;
+**Količina za korišćenje**: ukupna količina potrebna za kompletnu obradu u slučaju automatskog upravljanja sastavnicom; ovu informaciju sistem automatski popunjava;
+**% otpada**: dodatna količina koja se koristi kao otpad;
+**Planirani datum korišćenja**: prema ovom datumu sistem planira dostupnost potrebnog materijala.
 
-**Šifra artikla**: označava materijal koji će se koristiti nakon povratka obrađenog proizvoda;    
-**Jedinična upotreba**: količina potrebna za svaku jedinicu obrađenog proizvoda, u slučaju automatskog upravljanja rasporedom sklopova; ova informacija je automatski popunjena od strane sistema;    
-**Ukupna upotreba**: ukupna količina potrebna za potpunu obradu, u slučaju automatskog upravljanja rasporedom sklopova; ova informacija je automatski popunjena od strane sistema;    
-**% otpad**: dodatna količina koja se koristi kao otpad;    
-**Planirani datum upotrebe**: prema ovom datumu, sistem planira dostupnost potrebnog materijala.  
+## 4. Sažeci
 
-## **4. Sažeci**
+U sekciji Sažeci prikazuju se glavne informacije za ceo dokument.
 
-U Sažecima se prikazuju glavne informacije cijelog dokumenta.
+### 4.1 Konačni rabati na artiklima
 
-### 3.1 Konačni popusti artikala 
+Moguće je unositi samo rabate izražene u procentima koji se primenjuju na ukupan iznos dokumenta.
 
-Mogu se unijeti samo popusti izraženi u postocima koji se primjenjuju na ukupni iznos dokumenta.
+Rabati uneseni u ovoj sekciji izračunavaju se i primenjuju na svaki artikl u dokumentu, na kartici *Artikli > Popusti/Cenovnici*.
 
-Popusti uneseni u ovoj sekciji se izračunavaju i primjenjuju na svaki artikal u dokumentu, u kartici *Artikli > kartica Popusti/Liste*.
+**Vrsta/Opis rabata**: omogućava izbor vrste rabata (predefinisane u *Vrste rabata*), određuje prioritet primene i definiše da li se rabat obračunava na osnovicu ili kaskadno u odnosu na prethodno obračunate rabate;
+**Prioritet**: određuje redosled primene rabata; sortiranje se vrši rastuće;
+**Kaskadno/Na osnovicu**: definiše da li se za obračun rabata koristi osnovica *(cena × količina) – (već obračunati rabati)* ili puna vrednost *(cena × količina)*;
+**Vrednost**: numerička vrednost konačnog rabata koji se primenjuje.
 
-**Vrsta/Opis popusta**: omogućuje odabir vrste popusta (predefinirane u *Vrstama popusta*), dodjeljujući vrsti prioritet primjene popusta i određuje se primjenjuje li se popust na osnovicu ili se kaskadno primjenjuje u odnosu na prethodno primijenjene popuste;    
-**Prioritet**: određuje prioritet primjene popusta; sortiranje se vrši uzlazno;  
-**Višefazni porez/Porijeklo iznosa**: definira koristi li se za izračun popusta porijeklo iznosa (cijena * količina) - (već izračunati popusti) ili (cijena * količina);  
-**Vrijednost**: numerička vrijednost završnog popusta koji se primjenjuje.
+### 4.2 Troškovi
 
+Prikazuju se troškovi uneseni na kartici kontakta, u sekciji *Troškovi/Popusti*.
 
-### 3.2 Troškovi
+Takođe postoji mogućnost unosa troškova koji se odnose isključivo na tekući dokument.
 
-Prikazani su troškovi uneseni u evidenciju kontakta, u kartici *Troškovi/Popusti*.
+**Vrsta/Opis**: omogućava izbor vrste troška (predefinisane u tabeli *Vrste troškova*), pri čemu se vrsti dodeljuje procenat troška koji će biti primenjen;
+**Iznos troška**: prikazuje vrednost troška izraženu u valuti dokumenta;
+**PDV**: označava PDV stopu koja se primenjuje na unete troškove;
+**Procenat/Iznos**: određuje da li će se troškovi obračunavati kao procenat ili kao unapred definisani novčani iznos. Ako se izabere opcija **Iznos**, vrednost troška mora se uneti u odgovarajuće polje;
+**Procenat**: numerička vrednost procenta troška.
 
-Također postoji mogućnost unosa troškova koji se odnose samo na trenutni dokument.
+### 4.3 Ukupno – dokument
 
-**Vrsta/Opis**: omogućuje odabir vrste troška (predefinirane u tablici *Vrste troškova*), dodjeljujući vrsti postotak troška koji se primjenjuje;  
-**Iznos troška**: prikazuje vrijednost troška izraženu u valuti dokumenta;   
-**PDV**: označava stopu PDV-a koja se primjenjuje na unesene troškove;  
-**Postotak/Iznos**: označava hoće li se troškovi izračunati kao postotak ili unaprijed određeni novčani iznos. Odabirom Iznos, iznos troška treba unijeti u odgovarajuće polje;  
-**Postotak**: numerička vrijednost postotka troška.  
-
-### 3.3 Ukupnosti dokumenta
-
-**Iznos stavki bez popusta**: predstavlja zbroj vrijednosti svih artikala;  
-**Zaduženje**: predstavlja iznos eventualne akontacije primljene za dokument;    
-**Poklonjeni iznos**: predstavlja iznos darovanih artikala unesenih u kartici *Artikli*;  
-**Ukupni primjenjeni rabati**: predstavlja ukupnu vrijednost primijenjenih popusta na artikle, ali bez završnih popusta;    
-**Neto iznos artikala**: *Bruto iznos artikala * – *Ukupno primijenjeni popusti*;    
-**Ukupno konačnih popusta**: predstavlja vrijednost završnih popusta izraženih u postocima na bruto iznos artikala;  
-**Neto iznos završnih popusta**: *Neto iznos artikala* - *Ukupni završni popusti*;  
-**Naknade za naplatu**: predstavlja zbroj troškova naplate unesenih u mrežu *Troškovi*;  
-**Trošak ovjere**: predstavlja zbroj troškova pečata unesenih u mrežu *Troškovi*;   
-**Oporezivi iznos**: *Neto iznos artikala* – *Završni popusti* + *Ukupno neizdvojene troškove* + *Ukupno izdvojene troškove*;  
-**Porez**: predstavlja zbroj vrijednosti sadržanih u sažecima PDV-a;  
+**Iznos stavki bez popusta**: predstavlja zbir vrednosti svih artikala;
+**Zaduženje**: predstavlja iznos eventualnog avansa primljenog za dokument;
+**Vrednost poklonjenih artikala**: predstavlja vrednost besplatnih artikala unetih na kartici *Artikli*;
+**Ukupno primenjeni rabati**: predstavlja ukupnu vrednost rabata primenjenih na artikle, bez konačnih rabata;
+**Neto iznos artikala**: *Iznos stavki bez popusta* – *Ukupno primenjeni rabati*;
+**Konačni rabati na artiklima**: predstavlja vrednost konačnih rabata izraženih u procentima na bruto iznos artikala;
+**Neto iznos nakon konačnih rabata**: *Neto iznos artikala* – *Konačni rabati na artiklima*;
+**Troškovi naplate**: predstavlja zbir troškova naplate unetih u tabeli *Troškovi*;
+**Trošak overe**: predstavlja zbir troškova overe unetih u tabeli *Troškovi*;
+**Oporezivi iznos**: *Neto iznos artikala* – *Ukupno primenjeni rabati* + *Troškovi naplate* + *Trošak overe*;
+**Porez**: predstavlja zbir vrednosti prikazanih u PDV rekapitulaciji;
 **Ukupno**: *Osnovica* + *PDV*.
