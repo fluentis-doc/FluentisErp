@@ -1,34 +1,46 @@
 ---
-title: Zapisi isporuke robe na skladište
+title: Evidentiranje prijema robe na skladište
 sidebar_position: 1
 ---
 
-Obrazac se otvara putem puta  **Podizvođač > Povrati > Procedure > Zapis isporuke robe na skladište** i omogućuje registraciju povrata u skladište koji su već provjereni i još nisu registrirani.
+Obrazac se otvara putem putanje **Podizvođač > Povrati > Procedure > Evidentiranje prijema robe na skladište** i omogućava knjiženje povrata na skladište koji su već provereni, a još nisu evidentirani.
 
-## Filter 
+## Filter
 
-Na ovoj kartici korisnik ima mogućnost pretraživanja i prijenosa povrataka u skladište prema dostupnim kriterijima filtra. 
-  
-*Poseban gumb*:
+Na ovoj kartici korisnik može pretraživati i prenositi povrate na skladište prema dostupnim kriterijumima filtriranja.
 
-> **Traži**: omogućuje primjenu filtara pretrage na cijelu bazu podataka Povrata Podizvođača koji su uneseni, provjereni i još nisu registrirani;     
-> **Razduženje**: omogućuje izdavanje odabranih povrataka iz skladišta prema algoritmima izdavanja.
+### Posebne funkcije
 
-*Specifična polja*:
+> **Pretraži**: omogućava primenu filtera pretrage na kompletnu bazu povrata podizvođača koji su uneseni, provereni i još nisu knjiženi.
 
-**Broj dokumenta**: u ovom stupcu prikazuje se broj povratka iz konta lavoro;  
-**Zadani  datum dokumenta**: u ovom stupcu prikazuje se datum povratka iz konta lavoro;  
-**Datum zapisa zalihe**: nalazi se u donjem dijelu forme i prema zadanim postavkama postavljen je na trenutni datum, ali se može promijeniti.
+> **Knjiženje**: omogućava evidentiranje odabranih povrata na skladište prema definisanim algoritmima skladišnog knjiženja.
 
-Nakon što se odaberu povrati podizvođača, koristite gumb *Razduženje* za izvršavanje skladišnih operacija: istovremeno s ovom operacijom, aplikacija vrši unos proizvedenih artikala izvan tvrtke na skladište, izdavanje materijala koji su korišteni iz skladišta izvan tvrtke te eventualni unos povrata na odgovarajuće skladište za povrate.
+### Specifična polja
+
+- **Broj dokumenta**: prikazuje broj dokumenta povrata.
+
+- **Datum dokumenta**: prikazuje datum povrata.
+
+- **Datum knjiženja zaliha**: nalazi se u donjem delu obrasca. Podrazumevano je postavljen na tekući datum, ali ga korisnik može promeniti.
+
+Nakon odabira povrata podizvođača koje je potrebno knjižiti, potrebno je kliknuti dugme **Knjiženje** kako bi se izvršile skladišne operacije.
+
+Tokom ove procedure aplikacija istovremeno:
+
+- evidentira na skladište proizvode proizvedene kod podizvođača,
+- razdužuje materijale koji su korišćeni sa skladišta podizvođača,
+- evidentira eventualne vraćene materijale na odgovarajuće skladište za povrate.
 
 ## Sažeci
 
-Na ovoj kartici moguće je izvršiti 'rollback' operacije registracije povrata konta lavoro, vraćajući situaciju na stanje prije same operacije. 
+Na ovoj kartici moguće je poništiti operaciju knjiženja povrata i vratiti stanje sistema na ono koje je postojalo pre izvršene operacije.
 
-Podaci u donjim tablicama, **Povrati** i **Registracije**, odgovaraju odabranim zapisima o registraciji iz tablice na vrhu (nakon primjene filtriranja podataka).
+Podaci prikazani u donjim tabelama **Povrati** i **Knjiženje** odnose se na trenutno odabranu operaciju knjiženja iz gornje tabele nakon primene filtera.
 
-*Specifični gumbi*:
-> **Traži**: koristi se za pretraživanje izvršenih izdavanja povrata. Rezultat ove procedure prikazuje se u tablici rezultata,  *Razduženje skladišta povratom*;    
-> **Vrati**: pokreće proceduru za poništavanje cijele operacije registracije odabrane iz tablice  *Razduženje skladišta povratom*; dakle, ako je istom operacijom registrirano više povrata, svi ti povrati će biti vraćeni u stanje "nije izdano";    
-> **Otkaži isporuke na skladište**: pokreće proceduru za poništavanje registracije samo odabranih povrata u donjoj tablici, u kartici *Povrati*.
+### Posebne funkcije
+
+> **Pretraži**: koristi se za pretragu već izvršenih knjiženja povrata. Rezultati se prikazuju u tabeli **Knjiženje skladišta povratom**.
+
+> **Vrati**: pokreće proceduru za potpuno poništavanje odabrane operacije iz tabele **Knjiženje skladišta povratom**. Ako je jednom operacijom knjiženo više povrata, svi će biti vraćeni u status **nije knjiženo**.
+
+> **Otkaži prijem na skladište**: pokreće proceduru za poništavanje knjiženja samo odabranih povrata prikazanih u donjoj tabeli na kartici **Povrati**.
