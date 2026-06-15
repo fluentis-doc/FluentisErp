@@ -3,45 +3,46 @@ title: Vrijednosni papiri
 sidebar_position: 3
 ---
 
-Obrazac za pretraživanje dospijeća plaćanja 
-- nalazi se na putu Riznica > Dospijeća plaćanja > Dospijeća > Dospijeća
+Obrazac za pretraživanje vrijednosnih papira nalazi se na putanji:
 
-- omogućuje korisniku da pretraži prethodno izdana dospijeća plaćanja s ciljem njihova pregleda, izmjene ili eventualnog brisanja.
+**Financije > Vrijednosni papiri > Vrijednosni papiri**
 
-Iz ovog obrasca također je moguće ručno unijeti novo dospijeće plaćanja, no ta se mogućnost u praksi rijetko koristi. Uobičajeno se koristi automatizirani postupak kreiranja dospijeća plaćanja (iz stavki ili iz računa).
+Omogućuje pretraživanje prethodno kreiranih vrijednosnih papira radi pregleda, izmjene ili brisanja.
 
+Iz ovog obrasca moguće je i ručno kreirati novi vrijednosni papir, no takav način rada koristi se rijetko. U praksi se najčešće koriste automatske procedure kreiranja vrijednosnih papira iz otvorenih stavki ili računa.
 
-## Gumbi na traci izbornika
+## Funkcije na alatnoj traci
 
-> - **Pretraživanje dospijeća plaćanja:** Gumb za pretragu dospijeća plaćanja prema filtrima definiranima u zaglavlju obrasca.
-> - **Novo dospijeće plaćanja:** Otvara obrazac za unos novog dospijeća plaćanja.
-> - **Uredi dospijeće plaćanja:** Omogućuje izmjenu prethodno unesenog dospijeća plaćanja.
-> - **Pregled dospijeća plaćanja:** Omogućuje pregled prethodno unesenog dospijeća plaćanja.
-> - **Obriši dospijeće plaćanja:** Briše prethodno uneseno dospijeće plaćanja.
+- **Traži vrijednosne papire**: pokreće pretraživanje prema zadanim kriterijima.
+- **Novi vrijednosni papir**: otvara obrazac za unos novog vrijednosnog papira.
+- **Izmijeni vrijednosni papir**: omogućuje izmjenu postojećeg zapisa.
+- **Prikaži vrijednosni papir**: prikazuje odabrani zapis u načinu pregleda.
+- **Izbriši vrijednosni papir**: briše odabrani vrijednosni papir.
 
-> Pokretanje **ispisa** (*Anteprima* oppure *Stampa*) pokreće, za dospijeća plaćanja odabrana mišem (moguće je odabrati više njih držeći tipku Ctrl), istoimeni ispis dostupan u [**izborniku ispisa**](/docs/treasury/bills-holding/reports/bill-holding-situation) modula.
+### Ispisi
 
-> - *Obavijest o dospijeću*: Pismo namijenjeno klijentu (jedna stranica za svako odabrano dospijeće plaćanja), s naglaskom na dospijeća koja uskoro dospijevaju, uključujući njihove reference.
-> - *Zbirno pismo*:  Pismo za klijenta koje prikazuje stavke ili račune uključene u svako pojedino dospijeće plaćanja. 
-> - *Portfelj dospijeća plaćanja:* Ispis popisa dospijeća plaćanja s prikazom glavnih podataka.
-> - *Stanje kreditnih okvira:* Ispis koji prikazuje, za svaku banku povezanu s odabranim dospijećima, stanje dodijeljenog, iskorištenog i preostalog kreditnog okvira.
+Pokretanjem funkcija **Pregled ispisa** ili **Ispis** za označene vrijednosne papire (moguće je označiti više zapisa držanjem tipke `Ctrl`) dostupni su sljedeći ispisi:
 
+- **Obavijest o dospijeću vrijednosnog papira (upozorenje)** – dopis kupcu s prikazom vrijednosnih papira koji uskoro dospijevaju.
+- **Kumulativno (grupno) pismo** – prikazuje otvorene stavke ili račune povezane s pojedinim vrijednosnim papirom.
+- **Portfelj vrijednosnih papira** – ispis popisa vrijednosnih papira s osnovnim podacima.
+- **Situacija kreditnih linija** – prikazuje za svaku banku odobreni, iskorišteni i raspoloživi limit za financiranje vrijednosnih papira.
 
-## Filteri pretraživanja
+## Kriteriji pretraživanja
 
-- **Konto:** filter koji se odnosi na polje ***Dužnik*** unutar dospijeća plaćanja
-- **Godina / Vrsta dospijeća:** filteri koji se odnose na istoimena polja unutar dospijeća plaćanja
-- **Od / Do / Datum dospijeća / Datum izdavanja / Broj**:  odnose se na istoimena polja unutar dospijeća
-- **Statusi dospijeća plaćanja:** filter koji se odnosi na *status dospijeća* , koji se automatski mijenja ovisno o izvršenim postupcima – npr. počinje kao Izdano, a zatim prelazi u Prezentirano, Odobreno, Nepodmireno itd.
-- **Valuta:** za filtriranje samo dospijeća u određenoj valuti, npr. dolarima
-- **Lokacija / Sintetički kod banke / Vodeći broj banke / Naziv banke:** odnose se na banku za naplatu dužnika
-- **Oznake u odjeljku Status dospijeća:** Po zadanim postavkama aktivna je opcija *Svi*, no moguće je odabrati više stanja istovremeno kako bi se proširila pretraga – npr. dospijeća koja su i otisnuta i proknjižena, i ona koja NISU otisnuta itd.
+- **Konto**: filtrira prema dužniku navedenom na vrijednosnom papiru.
+- **Godina / Vrsta vrijednosnog papira**: filtriranje prema vrsti i godini dokumenta.
+- **Od / Do datum dospijeća / Datum izdavanja / Broj**: filtriranje prema osnovnim podacima dokumenta.
+- **Status vrijednosnog papira**: filtriranje prema trenutnom statusu dokumenta. Status se automatski mijenja tijekom obrade (npr. *Izdan*, *Predan banci*, *Odobren*, *Nenaplaćen* i sl.).
+- **Valuta**: prikazuje samo vrijednosne papire u odabranoj valuti.
+- **Mjesto plaćanja / ABI / CAB / Naziv banke**: podaci o banci dužnika.
+- **Status računa**: prema zadanim postavkama aktivna je opcija **Svi**, a moguće je uključiti više statusa istovremeno radi proširenja rezultata pretrage.
 
-## Mreža rezultata
+## Rezultati pretrage
 
-U ovom obrascu prikazani su isti podaci kao u filterima opisanima iznad.
+Tablica prikazuje iste podatke koji se koriste u kriterijima pretraživanja.
+Dodatno su prikazani i:
+- **Iznos u valuti**
+- **Iznos u EUR**
 
-Također su prikazani i **iznosi**  (u valuti, npr. dolarima, i u eurima) dospijeća plaćanja – iznosi će biti isti ako je dospijeće denominirano u eurima.
-
-
-
+Ako je vrijednosni papir denominiran u eurima, oba iznosa bit će jednaka.
