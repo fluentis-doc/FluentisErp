@@ -1,5 +1,5 @@
 ---
-title: Izmjeni - Preračun rizika kupca 
+title: Izmjeni - Ponovni izračun rizika kupca 
 sidebar_position: 1
 ---
 

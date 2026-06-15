@@ -16,7 +16,7 @@ Ovaj obrazac prikazuje detaljan pregled evidentiranih uplata (primitaka) koje su
 
 - Evidencije uplata za odabranog kupca, unutar postavljenog vremenskog raspona, prikazuju se po datumu, od najstarije prema najnovijoj. U obrascu su prikazane od najnovije na vrhu prema najstarijoj na dnu, a prikazuje se i **datum dospijeća** otvorene stavke koja je naplaćena.
 
-- Izračun je **skalarnog tipa**, što znači da se retci međusobno uspoređuju kako bi se izračunale razlike u danima od prvog retka prema sljedećima. Računaju se tzv. **Brojevi**, odnosno iznos pomnožen s brojem dana (na isti način kao u skalarno obračunatim izvodima koje banke šalju za tekuće račune).
+- Izračun je **skalarnog tipa**, što znači da se retci međusobno uspoređuju kako bi se izračunale razlike u danima od prvog retka prema sljedećima. Računaju se tzv. **Brojevi**, odnosno iznos pomnožen s brojem dana (na isti način kao u skalarno obračunanim izvodima koje banke šalju za tekuće račune).
 
 - Uzima se u obzir i **valuta banke**,  tj. na računovodstvenom knjiženju naplate mogu biti dodani tzv. bankovni valutni dani, odnosno razmak između dana kada je kupac naložio uplatu i stvarnog primitka sredstava. Ovi valutni dani prikazani su na računovodstvenom knjiženju ako je aktivirana oznaka *Dani banke* u [Tip temeljnice](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates), a mogu biti automatski predloženi kroz [šifarnik ](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry) (Tab *Dani banke*) banke naplate ili ručno uneseni prilikom knjiženja. 
 
@@ -68,7 +68,7 @@ U slučaju efekata, datum valute postavlja se jednak datum dospijeća, neovisno 
 </details>
 
 
-- **Odmak** ili razlika između prosječnog datuma dospijeća i prosječnog datuma valute naplate, koji predstavlja prosječno kašnjenje u naplati između dospijeća i valute: ovaj broj dana može se spremiti, putem gumba **Ažuriraj broj dana kašnjenja**, u kartoteci klijenta u polju *Prosječni broj dana kašnjenja*, polju koje se koristi u simulacijama cash flow-a za dobivanje predviđenog datuma dospijeća financijskog toka.
+- **Odmak** ili razlika između prosječnog datuma dospijeća i prosječnog datuma valute naplate, koji predstavlja prosječno kašnjenje u naplati između dospijeća i valute: ovaj broj dana može se spremiti, putem gumba **Ažuriraj broj dana kašnjenja**, u kartoteci klijenta u polju *Prosječni broj dana kašnjenja*, polju koje se koristi u simulacijama novčanih tijekova za dobivanje predviđenog datuma dospijeća financijskog toka.
 
 <details>
 

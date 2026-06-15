@@ -1,51 +1,52 @@
 ---
-title: Korištenje kredita 
+title: Korišćenje kredita
 sidebar_position: 3
 ---
 
-Obrazac **Korištenje kredita** omogućuje kreiranje i spremanje izračuna korištenja kredita za svakog klijenta te pregled povijesnog prikaza. U listi izračuna prikazanoj u maski, redovi s odstupanjem bit će prikazani crvenom bojom. 
+Obrazac **Korišćenje kredita** omogućava kreiranje i čuvanje obračuna iskorišćenosti kredita za svakog kupca, kao i pregled istorije prethodnih obračuna. U listi obračuna prikazanoj na formi, redovi sa odstupanjima biće prikazani crvenom bojom.
 
-Za izradu novog izračuna pritisne se tipka **Novo**.
+Za kreiranje novog obračuna koristi se dugme **Novo**.
 
-Nakon otvaranja detaljne obrasca, unese se račun klijenta koji se želi analizirati.
+Nakon otvaranja detaljne forme, unosi se konto kupca koji se želi analizirati.
 
-Unese se ili izmijeni datum početka izračuna koji predstavlja datum od kojeg se čitaju podaci za izračun.
+Unosi se ili menja datum početka obračuna, koji predstavlja datum od kog se preuzimaju podaci za obračun.
 
-Zatim se pritisne tipka **Izračunavanje**.
+Zatim se pritiska dugme **Izračunaj**.
 
-Izračun se može spremiti pomoću naredbe **Spremi**.
+Obračun se može sačuvati korišćenjem komande **Sačuvaj**.
 
-**Referentni datum** predstavlja dan na koji se izračunava raspoloživi kredit.
+**Referentni datum** predstavlja datum na koji se izračunava raspoloživi kredit.
 
-NAPOMENA: U slučaju, primjerice, bankovnih mjenica koje su izdane i predane na naplatu, čak i ako su knjižene putem odgovarajuće računovodstvene procedure, iznos se za potrebe izračuna kredita smatra zauzetim sve do datuma dospijeća obveze koja je generirala mjenicu. Stoga, ako se referentni datum izračuna promijeni na datum nakon tog roka, može se uočiti da je iznos kredita oslobođen za odgovarajući iznos. 
+NAPOMENA: U slučaju, na primer, bankarskih menica koje su izdate i predate na naplatu, čak i ako su proknjižene odgovarajućom računovodstvenom procedurom, njihov iznos se za potrebe obračuna kredita smatra zauzetim sve do datuma dospeća obaveze koja je generisala menicu. Zbog toga se, promenom referentnog datuma na datum nakon tog roka, može primetiti oslobađanje odgovarajućeg iznosa kredita.
 
-Kod prodajnih dokumenata, poput narudžbe klijenta, izračun raspoloživog kredita (vidljiv u zaglavlju) uvijek je vezan za današnji datum, bez mogućnosti izmjene referentnog datuma. Stoga, nova narudžba koja prelazi dugovanje neće biti obradiva (osim putem autorizacijskog postupka) do dana dospijeća hipotetskog efekta koji oslobađa dovoljan iznos.
+Kod prodajnih dokumenata, kao što su porudžbine kupaca, obračun raspoloživog kredita (prikazan u zaglavlju) uvek se odnosi na tekući datum, bez mogućnosti izmene referentnog datuma. Zbog toga nova porudžbina koja premašuje raspoloživi kredit neće moći da se obradi (osim kroz postupak autorizacije) sve do dospeća hipotetičkog instrumenta naplate koji oslobađa dovoljan iznos kredita.
 
+Dugme **Ažuriraj kredit kupca** ažurira podatke kupca unete u zaglavlju obračuna i upisuje vrednost preuzetu iz polja **Procenjeni kredit**.
 
-Gumb **Ažurirajte kredit klijenta** ažurira evidenciju klijenta unesenu u zaglavlje izračuna i postavlja u evidenciji vrijednost koju očitava iz polja **Procijenjeni kredit**. 
+Ovo polje se popunjava komandom **Izračunaj**, primenom vrednosti iz polja **Multiplikator kreditne procene** (npr. 1) na ponderisani obračun zasnovan na prometu kupca u posmatranom periodu.
 
-Ovo polje, pak, popunjava naredba Izračunavanje, primjenjujući vrijednost iz polja **Multiplikator kreditne procjene** (npr. 1) na ponderirani izračun temeljen na prometu klijenta u razmatranom razdoblju.
+Obračun se vrši prema sledećoj formuli:
 
-Izračun je razvijen na sljedeći način:
+**Promet 12M / 365 × Multiplikator × Prosečan broj dana kašnjenja**
 
-Promet 12M / 365 * Množitelj * Prosječni broj dana kašnjenja, gdje su posljednji parametri izračunati na osnovu dospjelih faktura u zadnjih 12 mjeseci, prema formuli: (suma(Iznos dospijeća * Dani Kašnjenja)) / (ukupna suma dospijeća). 
+pri čemu se poslednji parametar izračunava na osnovu dospelih faktura u poslednjih 12 meseci prema formuli:
+
+**(Σ(Iznos dospeća × Dani kašnjenja)) / (Ukupan iznos dospeća)**
 
 **OSTALA POLJA FORME:**
 
-**Promet 12M**. = promet u posljednjih dvanaest mjeseci
+**Promet 12M** = promet ostvaren u poslednjih dvanaest meseci
 
-**Stavke** dugovanja/potraživanja i pripadajući saldo
+**Stavke duguje/potražuje** i pripadajući saldo
 
-**Duguje / Potražuje** = naplate iz privremenih evidencija (informativni podaci)
+**Duguje / Potražuje** = naplate iz privremenih evidencija (informativni podatak)
 
-**Dugovani / potražni saldo** = računovodstveni pokreti ako je odabrana računovodstvena metoda 
+**Saldo duguje / potražuje** = računovodstvena knjiženja ako je izabran računovodstveni metod
 
-**Promet za knjiženje** = promet koji još nije knjižen (potraživanje jer uključuje odobrenja)
+**Promet za knjiženje** = promet koji još nije proknjižen (potraživanje jer uključuje odobrenja)
 
-**Otpremnice za fakturiranje** (potraživanje ako su povratne otpremnice)
+**Otpremnice za fakturisanje** = potraživanje (ako se radi o povratnim otpremnicama)
 
-**Vrijednost i broj neplaćenih stavki** (statistički podatak, nije uključen u izračun)
+**Vrednost i broj nenaplaćenih stavki** = statistički podatak koji nije uključen u obračun
 
-**Dospjelo** = iznos dospjelih otvorenih stavki 
-
-
+**Dospelo** = iznos dospelih otvorenih stavki

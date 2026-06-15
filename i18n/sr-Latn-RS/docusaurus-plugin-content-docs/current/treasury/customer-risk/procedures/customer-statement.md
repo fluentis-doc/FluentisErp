@@ -1,76 +1,57 @@
 ---
-title: Izloženost kupaca 
+title: Izloženost kupaca
 sidebar_position: 2
 ---
 
-Obrazac se nalazi u Riznica > Rizik kupca > Procedure> Izloženost kupaca
+Obrazac se nalazi na putanji **Blagajna > Rizik kupaca > Procedure > Izloženost kupaca**.
 
-Obrazac "Izloženost kupaca" omogućuje pregled cjelokupne situacije rizika prema različitim klijentima, s mogućnošću dobivanja podataka po agentu, zemlji i grupiranju po grupama društava.  
+Omogućava pregled ukupne izloženosti riziku po kupcima, uz mogućnost analize prema agentu, državi ili grupaciji povezanih društava.
 
-## Kako provjeriti izloženost kupaca 
+## Kako proveriti izloženost kupaca
 
-1. Ako je potrebno, proširite odjeljak filtera kako biste unijeli raspon referentnih datuma za provjeru i željeni kriterij grupiranja (po državi, po agentu ili po kupcu).
+1. Po potrebi proširite odeljak filtera i unesite referentni period i željeni kriterijum grupisanja (**po državi**, **po agentu** ili **po kupcu**).
+2. Kliknite na **Izračunaj**. U prikazu će biti obuhvaćeni samo kupci kod kojih je u matičnim podacima aktivirana opcija **Izloženost kupaca**.
 
-2. Premere il tasto **Traži**: kupci prikazani u ovom obrascu su oni za koje je u matičnim podacima označen parametar *Izloženost kupaca*.
-
-:::note[Napomena]
-Početni odjeljak *parametara rizika kupca* prikazuje iste zadane parametre izračuna postavljene za modul, s dodatnim rasponom datuma knjiženja koji se koristi za provjeru uplata (za detalje pogledajte sljedeći dokument).
+:::note Napomena
+Početni odeljak **Parametri rizika kupaca** prikazuje podrazumevane parametre iz podešavanja modula, zajedno sa dodatnim rasponom datuma knjiženja koji se koristi za kontrolu uplata. Više informacija dostupno je u dokumentaciji procedure **Kontrola uplata**.
 :::
 
-:::note[Dostupni dodatni filteri]
-Moguće je filtrirati prema odgovornoj osobi (zaposleniku koji je povezan s matičnim podacima kupca, prvi tab *Administracija *), filtrirati kupce na međunarodna *tržišta* ili *Hrvatsku*, prikazati podatke grupirane po *grupi društava* (prikazat će se samo jedan ukupni iznos za podračun unesen u polje *grupa društava* unutar taba *administracija* matičnih podataka kupca, umjesto pojedinačnih podračuna kupaca) te konačno grupirati (i filtrirati) podatke po agentu ili državi.
+:::note Dodatni filteri
+Podatke je moguće filtrirati prema:
 
-Predviđena je i mogućnost sortiranja podataka po šifri računa/podračuna ili po opisu (nazivu tvrtke) kupca.
+- odgovornom licu povezanom sa kupcem,
+- domaćim ili inostranim kupcima,
+- grupaciji povezanih društava,
+- agentu,
+- državi.
+
+Podaci se mogu sortirati prema kontu/podkontu ili nazivu kupca.
 :::
 
-### Podatci prikazani u mreži  
+## Podaci prikazani u tabeli
 
-Bit će prikazani u crvenoj boji redovi s odstupanjem.
+Redovi sa odstupanjima prikazuju se crvenom bojom.
 
-**Potraživanje**: Ovdje se prikazuje iznos neplaćenih stavki koje nisu knjižene, ili (ako je označena zastavica u zaglavlju) i one koje su već knjižene;
+- **Nenaplaćeni vrednosni papiri**: iznos nenaplaćenih vrednosnih papira koji nisu proknjiženi ili, ukoliko je aktivirana odgovarajuća opcija, i onih koji su već proknjiženi.
+- **Promet u poslednjih 12 meseci**: promet ostvaren iz izlaznih faktura tokom poslednjih 12 meseci.
+- **Odstupanje u danima**: broj dana odstupanja između prosečnog datuma dospeća i prosečnog datuma naplate.
+- **Odstupanje dana dospeća**: prosečno kašnjenje otvorenih dospelih stavki.
+- **Promet**: promet ostvaren od početka tekuće godine.
+- **Prosečni dani naplate (DSO)**: pokazatelj vremena potrebnog za naplatu potraživanja. Ako promet u poslednjih 12 meseci iznosi 0, tada je i DSO jednak 0.
+- **Kreditni limit** i **Osigurani kreditni limit**: definisani iznosi kreditnog limita.
+- **Saldo otvorenih stavki**: ukupna dugovna i potražna salda otvorenih stavki ili knjigovodstvenog salda.
+- **Plaćanja iz privremenih knjiženja**: iznosi plaćanja povezanih sa privremenim knjiženjima.
+- **Vrednosni papiri u dospeću**: iznos vrednosnih papira koji još nisu dospeli na naplatu.
+- **Za knjiženje**: vrednost odštampanih, ali još neproknjiženih faktura.
+- **Za fakturisanje**: vrednost odštampanih, ali još nefakturisanih otpremnica.
+- **Ukupna izloženost**: zbir otvorenih porudžbina, nefakturisanih otpremnica, neproknjiženih faktura, salda otvorenih stavki, vrednosnih papira u dospeću i nenaplaćenih vrednosnih papira.
+- **Dospelo**: iznos otvorenih stavki kojima je istekao rok dospeća.
+- **Dospelo iz privremenih knjiženja**: dospeli iznosi nastali iz privremenih knjiženja.
+- **Porudžbine**: vrednost potvrđenih i odštampanih, ali još neizvršenih porudžbina.
 
-**Promet zadnjih 12 mjeseci**: To je ukupni iznos prometa (iz prodajnog odjela, fakture za prodaju) u posljednjih 12 mjeseci do referentnog datuma;
+Iz ovog obrasca moguće je odštampati prikazane podatke ili otvoriti proceduru **Kontrola uplata** za izabranog kupca.
 
-**Varijanca dani**: Označava broj dana odstupanja između prosječnog roka dospjelog i prosječnog dana plaćanja, prema izračunu napravljenom u obrascu "Kontrola doznake" koji se poziva za detalje. Posebnost je što se koristi ponderirani prosjek temeljen na iznosu stavki. Zapravo, podatak je izražen u broju dana dugovanja (kao u izvatku s bankovnog računa);
+## Posebne funkcije
 
-**Prosjek dana dospijeća**: Označava prosječan broj dana odstupanja od datuma dospjelosti u odnosu na datum dokumenta; uzima se u obzir samo neplaćeni iznos = Zbroj (preostali iznos stavke * broj dana zakašnjenja od datuma dospjelosti) / zbroj preostalih stavki. Izračunava prosječnu vrijednost kašnjenja;
-
-**Fakturirani iznos**: To je ukupni iznos prometa (iz prodajnog odjela, fakture za prodaju) od početka godine;
-
-**Prosječni dani naplate**: Odgovara pokazatelju poznatom kao DSO (Days of Sales Outstanding), odnosno broju dana rotacije potraživanja. Formula za izračun glasi: 365 * (Otvorene stavke potraživanja – otvorene stavke obveza + dospjeli efekti + nepodmirena potraživanja + računi koji još nisu proknjiženi) / Promet zadnjih 12 mjeseci. Ako je promet u zadnjih 12 mjeseci jednak 0, tada će i DSO biti 0;
-
-**Kredit **i** Dodijeljeni kredit**: Iznos odobrenog kredita i osigurani kredit;
-
-**Stanje glavne knjige**: Prikazuje ukupne iznose na naplatu izračunate od stavki ili iz bilance;
-
-**Plaćanja iz privremenih zapisa**:  Iznosi plaćanja koji su povezani s privremenim evidencijama;
-
-**Računi koji ističu**: Iznosi računa koji su u datumu dospjelosti;
-
-**Za knjiženje**: To su iznosi faktura koje su ispisane, ali još nisu knjižene;
-
-**Za fakturiranje**: To su iznosi otpremnica koje su ispisne, ali još nisu fakturirane;
-
-**Ukupna izloženost**: zbroj otvorenih narudžbi + otpremnica koje treba fakturirati + računa koji još nisu proknjiženi + saldo otvorenih stavki / računa + dospjelih efekata + nepodmirenih (neproknjiženih) insoluta;
-
-**Istekao**: Iznos otvorenih stavki koje su već prošle datum dospjelosti;
-
-**Kašnjenja iz privremenih zapisa**: Kao prethodno, ali povezano s privremenim evidencijama;
-
-**Narudžbe**:  Iznosi narudžbi koje su ispisane, potvrđene, ali još nisu realizirane.
-
-Iz obrasca "Izloženost kupaca" moguće je izvršiti ispis prikazanih podataka, ili prijeći na obrazac "Kontrola doznake" za odabranu klijentovu stavku, pomoću odgovarajućeg gumba za upravljanje.  
-
-
-
-**Specifični gumbi**
-
-**Izračunaj** Tipka za izračunavanje rizika klijenta prema označenim filtrima i postavkama.
-
-**Kontrola doznake** Pokreće postupak za otvaranje obrasca kontrole uplata.
-
-
-
-
-
-
+- **Izračunaj**: izračunava izloženost kupaca prema zadatim filterima i parametrima.
+- **Kontrola doznaka**: otvara obrazac za kontrolu uplata za izabranog kupca.

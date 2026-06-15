@@ -9,7 +9,7 @@ Modul omogućuje operateru definiranje i kontrolu kreditnih odobrenja za klijent
 
 Modul je smješten u području Riznice te preuzima podatke iz aktivnog dokumentacijskog toka i računovodstvenih podataka.
 
-Prije početka upravljanja rizikom klijenta, preporučuje se niz postavki koje uključuju unaprijed definirane tablične konfiguracije, kao i pravilnu parametizaciju osnovnih algoritama. 
+Prije početka upravljanja rizikom klijenta, preporučuje se niz postavki koje uključuju unaprijed definirane tablične konfiguracije, kao i pravilnu parametrizaciju osnovnih algoritama. 
 
  Glavne Funkcionalnosti 
 
@@ -22,11 +22,9 @@ Prije početka upravljanja rizikom klijenta, preporučuje se niz postavki koje u
 - Integracija s računovodstvom: Modul je u potpunosti integriran s glavnim knjigovodstvom i upravljanjem otvorenim stavkama, odakle preuzima podatke za ažuriranje izvještaja o izloženosti riziku i korištenju kredita svakog klijenta. Također je povezan s procesom aktivnog ciklusa, direktno intervenirajući u kreiranju dokumenata poput narudžbi, otpremnica (DDT) i računa, kako bi upozorio ili blokirao isporuku u slučaju prekoračenja limita.   
 
 
-
 **Tablice:** Ne postoje specifične tablice za ovaj modul, no treba napomenuti da razni tipovi dokumenata za nabavu i prodaju sadrže postavke povezane s rizikom klijenta ( [tablice povezane s modulom Rizik klijenta](/docs/configurations/tables/treasury/customer-risk-module-tables) ).
 
  
-
 **Preliminarni parametri za postavljanje**:  [Parametri rizika klijenta](/docs/configurations/parameters/treasury/customer-risk-parameters).
 
  

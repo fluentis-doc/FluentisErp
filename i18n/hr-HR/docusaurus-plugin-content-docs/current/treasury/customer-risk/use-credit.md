@@ -3,7 +3,7 @@ title: Korištenje kredita
 sidebar_position: 3
 ---
 
-Obrazac **Korištenje kredita** omogućuje kreiranje i spremanje izračuna korištenja kredita za svakog klijenta te pregled povijesnog prikaza. U listi izračuna prikazanoj u maski, redovi s odstupanjem bit će prikazani crvenom bojom. 
+Obrazac **Korištenje kredita** omogućuje kreiranje i spremanje izračuna korištenja kredita za svakog klijenta te pregled povijesnog prikaza. U listi izračuna prikazanoj u formi, redovi s odstupanjem bit će prikazani crvenom bojom. 
 
 Za izradu novog izračuna pritisne se tipka **Novo**.
 
@@ -21,7 +21,6 @@ NAPOMENA: U slučaju, primjerice, bankovnih mjenica koje su izdane i predane na 
 
 Kod prodajnih dokumenata, poput narudžbe klijenta, izračun raspoloživog kredita (vidljiv u zaglavlju) uvijek je vezan za današnji datum, bez mogućnosti izmjene referentnog datuma. Stoga, nova narudžba koja prelazi dugovanje neće biti obradiva (osim putem autorizacijskog postupka) do dana dospijeća hipotetskog efekta koji oslobađa dovoljan iznos.
 
-
 Gumb **Ažurirajte kredit klijenta** ažurira evidenciju klijenta unesenu u zaglavlje izračuna i postavlja u evidenciji vrijednost koju očitava iz polja **Procijenjeni kredit**. 
 
 Ovo polje, pak, popunjava naredba Izračunavanje, primjenjujući vrijednost iz polja **Multiplikator kreditne procjene** (npr. 1) na ponderirani izračun temeljen na prometu klijenta u razmatranom razdoblju.
@@ -38,7 +37,7 @@ Promet 12M / 365 * Množitelj * Prosječni broj dana kašnjenja, gdje su posljed
 
 **Duguje / Potražuje** = naplate iz privremenih evidencija (informativni podaci)
 
-**Dugovani / potražni saldo** = računovodstveni pokreti ako je odabrana računovodstvena metoda 
+**Dugovni / potražni saldo** = računovodstveni pokreti ako je odabrana računovodstvena metoda 
 
 **Promet za knjiženje** = promet koji još nije knjižen (potraživanje jer uključuje odobrenja)
 

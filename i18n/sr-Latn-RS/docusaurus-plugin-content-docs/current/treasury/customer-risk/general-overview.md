@@ -1,38 +1,26 @@
 ---
-title: Uvod 
+title: Uvod
 sidebar_position: 1
 ---
 
-Modul Rizik Klijenta u sklopu Fluentis ERP-a koristan je alat za praćenje i upravljanje financijskim rizikom povezanim s klijentima, osiguravajući stalnu kontrolu izloženosti poduzeća kreditnom riziku. Ovaj modul omogućuje analizu i procjenu rizika insolventnosti klijenata, pomažući tvrtkama u donošenju informiranih odluka i poboljšanju upravljanja kreditima.   
+Modul Rizik kupaca u okviru Fluentis ERP-a predstavlja koristan alat za praćenje i upravljanje finansijskim rizikom povezanim sa kupcima, obezbeđujući stalnu kontrolu izloženosti preduzeća kreditnom riziku. Ovaj modul omogućava analizu i procenu rizika insolventnosti kupaca, pomažući kompanijama da donose informisane odluke i unaprede upravljanje kreditima.
 
-Modul omogućuje operateru definiranje i kontrolu kreditnih odobrenja za klijente. Za svakog klijenta definira se iznos kredita i način praćenja, bilo putem jednostavne obavijesti ili blokade u slučaju prekoračenja. Također, moguće je definirati prava i uloge unutar poduzeća za korisnike zadužene za autorizaciju blokiranih dokumenata, kako bi se omogućila njihova eventualna obrada u iznimnim slučajevima prekoračenja limita. 
+Modul omogućava operateru definisanje i kontrolu kreditnih odobrenja za kupce. Za svakog kupca definiše se kreditni limit i način kontrole, bilo putem jednostavnog upozorenja ili blokade u slučaju prekoračenja. Takođe je moguće definisati prava i uloge unutar preduzeća za korisnike zadužene za autorizaciju blokiranih dokumenata, kako bi se omogućila njihova obrada u izuzetnim slučajevima prekoračenja limita.
 
-Modul je smješten u području Riznice te preuzima podatke iz aktivnog dokumentacijskog toka i računovodstvenih podataka.
+Modul se nalazi u okviru Blagajne i preuzima podatke iz aktivnog toka dokumenata i računovodstvenih podataka.
 
-Prije početka upravljanja rizikom klijenta, preporučuje se niz postavki koje uključuju unaprijed definirane tablične konfiguracije, kao i pravilnu parametizaciju osnovnih algoritama. 
+Pre početka upravljanja rizikom kupaca preporučuje se definisanje niza podešavanja koja uključuju unapred definisane tabelarne konfiguracije, kao i pravilnu parametrizaciju osnovnih algoritama.
 
- Glavne Funkcionalnosti 
+## Glavne funkcionalnosti
 
-- Praćenje kreditne izloženosti: Modul omogućuje definiranje prilagođenih kreditnih limita za svakog klijenta i kontinuirano praćenje njihove financijske izloženosti, uspoređujući dostupno dugovanje s korištenim kreditom.  
+- **Praćenje kreditne izloženosti**: Modul omogućava definisanje prilagođenih kreditnih limita za svakog kupca i kontinuirano praćenje njihove finansijske izloženosti, upoređujući raspoloživo zaduženje sa iskorišćenim kreditom.
 
-- Procjena rizika: Integrira alate za analizu koji omogućuju klasifikaciju klijenata prema njihovom ponašanju u plaćanju, poput prosječnog kašnjenja u plaćanjima, što omogućuje proaktivno donošenje odluka za upravljanje dugovima i novčanim tokovima.
+- **Procena rizika**: Integrisani su alati za analizu koji omogućavaju klasifikaciju kupaca prema njihovom ponašanju u plaćanju, kao što je prosečno kašnjenje u plaćanju, čime se omogućava proaktivno donošenje odluka u upravljanju potraživanjima i novčanim tokovima.
 
-- Automatske blokade i obavijesti: Ako klijent prekorači kreditne limite ili ima dospjele račune, sustav može aktivirati automatske blokade za kreiranje novih narudžbi ili slati obavijesti prodajnom ili administrativnom odjelu.
+- **Automatske blokade i obaveštenja**: Ukoliko kupac prekorači kreditni limit ili ima dospela neizmirena potraživanja, sistem može automatski aktivirati blokade za kreiranje novih porudžbina ili slati obaveštenja prodajnom ili administrativnom sektoru.
 
-- Integracija s računovodstvom: Modul je u potpunosti integriran s glavnim knjigovodstvom i upravljanjem otvorenim stavkama, odakle preuzima podatke za ažuriranje izvještaja o izloženosti riziku i korištenju kredita svakog klijenta. Također je povezan s procesom aktivnog ciklusa, direktno intervenirajući u kreiranju dokumenata poput narudžbi, otpremnica (DDT) i računa, kako bi upozorio ili blokirao isporuku u slučaju prekoračenja limita.   
+- **Integracija sa računovodstvom**: Modul je u potpunosti integrisan sa glavnom knjigom i upravljanjem otvorenim stavkama, odakle preuzima podatke za ažuriranje izveštaja o izloženosti riziku i iskorišćenosti kredita svakog kupca. Takođe je povezan sa procesima prodajnog ciklusa, direktno intervenišući pri kreiranju dokumenata kao što su porudžbine, otpremnice i fakture, kako bi upozorio ili blokirao isporuku u slučaju prekoračenja limita.
 
+**Tabele:** Ne postoje specifične tabele za ovaj modul, ali treba napomenuti da različite vrste dokumenata nabavke i prodaje sadrže podešavanja povezana sa rizikom kupaca ([tabele povezane sa modulom Rizik kupaca](/docs/configurations/tables/treasury/customer-risk-module-tables)).
 
-
-**Tablice:** Ne postoje specifične tablice za ovaj modul, no treba napomenuti da razni tipovi dokumenata za nabavu i prodaju sadrže postavke povezane s rizikom klijenta ( [tablice povezane s modulom Rizik klijenta](/docs/configurations/tables/treasury/customer-risk-module-tables) ).
-
- 
-
-**Preliminarni parametri za postavljanje**:  [Parametri rizika klijenta](/docs/configurations/parameters/treasury/customer-risk-parameters).
-
- 
-
-
-
-
-
-
+**Preliminarni parametri za podešavanje:** [Parametri rizika kupaca](/docs/configurations/parameters/treasury/customer-risk-parameters).

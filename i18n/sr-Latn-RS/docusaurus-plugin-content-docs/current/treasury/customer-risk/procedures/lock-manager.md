@@ -1,47 +1,51 @@
 ---
-title: Upravljanje zaključavanjem 
+title: Upravljanje zaključavanjem (Lock Manager)
 sidebar_position: 3
 ---
 
-Obrazac se nalazi u Put Riznica > Rizik Klijenta > Procedure > Upravljanje zaključavanjem.
+Obrazac se nalazi na putanji **Blagajna > Rizik kupaca > Procedure > Upravljanje zaključavanjem (Lock Manager)**.
 
-Putem ovog postupka upravlja se autorizacijom dokumenata koji premašuju odobrene kreditne limite, kao i izravnim blokiranjem klijenta, neovisno o prekoračenju limita.
+Ova funkcionalnost služi za upravljanje autorizacijama dokumenata koji prelaze odobreni kreditni limit kupca, kao i za ručno blokiranje kupaca nezavisno od raspoloživog kreditnog limita.
 
-Podsjećamo da blokiranje dokumenata pretpostavlja ispravnu postavku [**Cjenici Kupaca / dobavljača**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) (za klijente podložne kontroli limita i u skladu s odabranim načinom upravljanja) te odgovarajućih tablica za [**vrste prodajnih dokumenata**](/docs/configurations/tables/sales/sales-order-types) (npr. Vrsta narudžbe, Vrsta otpremnice itd.), kako bi se definiralo koje vrste dokumenata podliježu kontroli i eventualnom blokiranju.
+Podsećamo da upravljanje blokadama dokumenata zahteva prethodnu konfiguraciju [**matičnih podataka kupca**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments) (za kupce koji podležu kontroli kreditnog limita), kao i odgovarajućih tabela [**vrsta prodajnih dokumenata**](/docs/configurations/tables/sales/sales-order-types) (npr. vrste porudžbina, vrste otpremnica i slično), kako bi se definisalo koji dokumenti podležu kontroli i eventualnoj blokadi.
 
+## Kartica Autorizacija
 
+Korisnici sa odgovarajućim ovlašćenjima mogu pregledati listu dokumenata koji su označeni za proveru, blokirani, odobreni ili obrađeni.
 
+U tabeli je moguće promeniti status iz **Blokiran dokument** u **Odobrenje izdato**, čime se omogućava nastavak daljeg toka obrade povezanog dokumenta.
 
-## Kartica autorizacija
-
-Korisnik koji ima pristupna prava može pregledavati popis označenih, blokiranih, autoriziranih dokumenata itd. 
-
-U prikazanoj tablici moguće je promijeniti status iz ***Dok. blokiran*** u ***Autorizacija odobrena*** kako bi se omogućio nastavak dokumentacijskog tijeka za taj dokument. 
-
-:::tip Info
-Dvostrukim klikom na redak tablice moguće je otvoriti sam dokument i pregledati sve njegove detalje.
+:::tip Informacija
+Dvostrukim klikom na red moguće je otvoriti dokument i pregledati sve njegove detalje.
 :::
 
-## Kartica **Blokada klijenata**
+## Kartica Blokada kupaca
 
-Omogućuje ručno postavljanje ***Blokade narudžbi*** ili ***Blokade otpremnica*** (ili oboje, putem odgovarajućih oznaka) za određeni popis klijenata, uz definiranje vremenskog razdoblja blokade. 
+Ova kartica omogućava prinudnu blokadu:
 
-### Kako blokirati klijenta
+- porudžbina,
+- otpremnica,
+- ili oba tipa dokumenata istovremeno,
 
-Na primjer, ako klijent nije podmirio ratu (npr. nepodmirena mjenica), financijsko odjeljenje može odlučiti blokirati sve poslovne transakcije s tim klijentom. 
+za izabrane kupce tokom definisanog perioda blokade.
 
-1. pristupiti ovom obrascu
-2. ispuniti polje Opis unosom matice klijenta kojeg treba blokirati
-3. aktivirati oznake Blokada narudžbi i/ili Blokada otpremnica te upisati datume početka i kraja blokade
+### Kako blokirati kupca
 
-:::note[Napomena]
-Za ponovno omogućavanje poslovanja s klijentom dovoljno je unijeti **Datum završetka valjanosti zaključavanja** (čime se zadržava povijesni zapis blokade) ili potpuno obrisati red iz sustava. 
-Sustav bilježi **korisnika i datum blokade i deblokade**.
+Na primer, ukoliko kupac ima nenaplaćenu bankarsku menicu ili drugo neizmireno potraživanje, administracija može prinudno blokirati sve poslovne aktivnosti povezane sa tim kupcem.
+
+1. Otvorite obrazac **Upravljanje zaključavanjem (Lock Manager)**.
+2. U polju **Opis** izaberite kupca kojeg želite da blokirate.
+3. Aktivirajte opcije **Blokada porudžbina** i/ili **Blokada otpremnica** i unesite datum početka i završetka blokade.
+
+:::note Napomena
+Za ponovno aktiviranje kupca dovoljno je:
+
+- uneti **datum završetka važenja** blokade kako bi se sačuvao istorijski zapis ili
+- obrisati zapis blokade iz sistema.
+
+Sistem automatski evidentira korisnika, kao i datum blokiranja i deblokiranja.
 :::
 
+Opcije **Autorizuj porudžbinu** i **Autorizuj otpremnicu** zahtevaju autorizaciju svakog dokumenta bez obzira na raspoloživi kreditni limit.
 
-
-
-Oznake **Autoriziraj narudžbu** i **Autoriziraj Ovlaštene prodajne napomene** omogućuju da se za narudžbu ili otpremnicu uvijek traži autorizacija, neovisno o tome postoji li raspoloživi kreditni limit ili ne.
-
-**Napomene**: omogućuju unos slobodnog komentara uz radnju blokade (ili deblokade, ako se redak zadrži).
+**Napomene** omogućavaju unos slobodnih beleški vezanih za blokadu ili deblokadu kupca.

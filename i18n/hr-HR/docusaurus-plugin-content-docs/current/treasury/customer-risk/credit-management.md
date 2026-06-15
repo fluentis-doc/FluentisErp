@@ -3,7 +3,7 @@ title: Upravljanje dugovanjima
 sidebar_position: 2
 ---
 
-Ovaj obrazac omogućava provjeru i upravljanje postavkama limita kreditnog salda za evidencije kupaca, bez potrebe da se pojedinačno ulazi kroz upravljanje kontaktima u tabu ‘Home’ - ‘Šifarnici’ - ‘Šifarnici kontakata’.
+Ovaj obrazac omogućava provjeru i upravljanje postavkama limita kreditnog salda za evidencije kupaca, bez potrebe da se pojedinačno ulazi kroz upravljanje kontaktima u kartici  ‘Šifarnici’ - ‘Šifarnici kontakata’.
 
 Predviđene su četiri vrste kontrole:
 

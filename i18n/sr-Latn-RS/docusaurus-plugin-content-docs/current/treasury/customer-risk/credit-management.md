@@ -1,23 +1,18 @@
 ---
-title: Upravljanje dugovanjima 
+title: Upravljanje zaduženjima
 sidebar_position: 2
 ---
 
-Ovaj obrazac omogućava provjeru i upravljanje postavkama limita kreditnog salda za evidencije kupaca, bez potrebe da se pojedinačno ulazi kroz upravljanje kontaktima u tabu ‘Home’ - ‘Šifarnici’ - ‘Šifarnici kontakata’.
+Ovaj obrazac omogućava proveru i upravljanje postavkama kreditnog limita za evidencije kupaca, bez potrebe da se pojedinačno ulazi kroz upravljanje kontaktima u kartici „Šifarnici“ - „Šifarnici kontakata“.
 
 Predviđene su četiri vrste kontrole:
 
-**Blokada dokumenata i nadzor kreditnog limita**: dokument iz prodajnog područja koji premašuje odobreni kreditni limit bit će blokiran, stoga će biti potrebna autorizacija za nastavak sljedećih faza poslovanja s klijentom;
+**Blokada dokumenata i kontrola kreditnog limita**: dokument iz prodajnog područja koji premašuje odobreni kreditni limit biće blokiran, te će biti potrebna autorizacija za nastavak narednih faza poslovanja sa kupcem;
 
-**Nadzor kreditnog limita**: provodi se jednostavna kontrola kreditnog limita uz eventualnu poruku korisniku o prekoračenju;  
+**Kontrola kreditnog limita**: vrši se jednostavna kontrola kreditnog limita uz eventualnu poruku korisniku o prekoračenju;
 
-**Grupna blokada**: kao u prvom slučaju, ali izračun je kumulativan za sve tvrtke u bazi podataka koje pripadaju istoj klijentskoj evidenciji; 
+**Grupna blokada**: kao u prvom slučaju, ali se obračun vrši kumulativno za sva preduzeća u bazi podataka koja pripadaju istoj evidenciji kupca;
 
-**Grupni nadzor**: kao u drugom slučaju, ali izračun je kumulativan za sve tvrtke u bazi podataka koje pripadaju istoj klijentskoj evidenciji. 
+**Grupna kontrola**: kao u drugom slučaju, ali se obračun vrši kumulativno za sva preduzeća u bazi podataka koja pripadaju istoj evidenciji kupca.
 
-Polje **osiguranog kreditnog limita** služi samo kao referenca i nije aktivno upravljano programom, isto kao i bilješke o kreditnom limitu.
-
-
-
-
-
+Polje **osiguranog kreditnog limita** služi samo kao informativni podatak i program ga ne koristi aktivno, isto kao ni napomene o kreditnom limitu.

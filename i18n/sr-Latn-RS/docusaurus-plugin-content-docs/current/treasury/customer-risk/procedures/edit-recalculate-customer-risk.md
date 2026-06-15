@@ -1,51 +1,45 @@
 ---
-title: Izmjeni - Preračun rizika kupca 
+title: Izmena - Ponovni obračun rizika kupca
 sidebar_position: 1
 ---
 
-Ovaj obrazac predstavlja zahtjev za pregled trenutne situacije klijenta, dok obrazac za "Korištenje kredita" omogućuje pohranu svakog izračuna koji se obavi i tako omogućuje prikaz povijesne serije.
+Ovaj obrazac služi za pregled trenutnog stanja kupca, dok obrazac **Korišćenje kredita** omogućava čuvanje svakog izvršenog obračuna i pregled istorijskih podataka.
 
-Razmotrimo detaljno popis polja koji se prikazuju, u suštini identični onima u obrascu za izloženost kupaca.
+U nastavku je detaljan opis polja koja se prikazuju, a koja su u osnovi ista kao i u obrascu za izloženost kupaca.
 
-U zaglavlju su prisutni parametri izračuna: konto klijenta, datum početka izračuna (postavljen prema zadanim postavkama modula za rizik klijenta), referentni datum obračuna (postavljen na današnji datum), broj dana kašnjenja na naplatu (postavljeni prema parametrima modula), oznaka za uzimanje u obzir stavki povezanih s privremenim računovodstvenim zapisima. Nakon što se pritisne gumb za izračun, prikazat će se sljedeće vrijednosti:
+U zaglavlju se nalaze parametri obračuna: konto kupca, datum početka obračuna (postavljen prema podrazumevanim parametrima modula za rizik kupaca), referentni datum obračuna (podrazumevano tekući datum), broj dana kašnjenja u naplati (preuzet iz parametara modula) i opcija za uključivanje stavki povezanih sa privremenim računovodstvenim knjiženjima.
 
-**Promet 12M**: promet (iz prodajnog područja, prodajnih faktura) u posljednjih 12 mjeseci prije referentnog datuma;
+Nakon pritiska na dugme **Izračunaj**, prikazuju se sledeće vrednosti:
 
-**Godišnji promet**: promet (iz prodajnog područja, prodajnih faktura) od početka godine;
+**Promet 12M**: promet (iz prodajnog ciklusa, odnosno izlaznih faktura) ostvaren u poslednjih 12 meseci pre referentnog datuma;
 
-U sekciji **Status otvorene dospjele vrijednosti** biti će vidljivi ukupni iznosi dugovanja/potraživanja i saldo povezani s otvorenim stavkama;
+**Godišnji promet**: promet (iz prodajnog ciklusa, odnosno izlaznih faktura) ostvaren od početka tekuće godine;
 
-U sekciji **Plaćanja iz privremenih zapisa** biti će prikazani eventualni iznosi plaćanja uneseni u privremene računovodstvene zapise;
+U sekciji **Stanje otvorenih stavki** prikazuju se ukupni iznosi duguje/potražuje i saldo otvorenih stavki;
 
-U sekciji **Status glavne knjige** biti će prikazani ukupni iznosi dugovanja/potraživanja i saldo glavne knjige;
+U sekciji **Plaćanja iz privremenih knjiženja** prikazuju se eventualni iznosi plaćanja uneti kroz privremena računovodstvena knjiženja;
 
-**Dospjela vrijednost/Saldo glavne knjige**: prikazuje ukupne iznose dugovanja/potraživanja iz stavki ili salda, kao što je prikazano u prethodnim sekcijama;
+U sekciji **Stanje glavne knjige** prikazuju se ukupni iznosi duguje/potražuje i saldo glavne knjige;
 
-**Fakture se obračunavaju**: iznosi faktura koje su ispisane, ali još nisu knjižene;
+**Dospela vrednost / Saldo glavne knjige**: prikazuje ukupne iznose duguje/potražuje iz otvorenih stavki ili salda glavne knjige, kao što je prikazano u prethodnim sekcijama;
 
-**Otpremnica za fakturiranje**: iznosi otpremnica koje su ispisane, ali još nisu fakturirane;
+**Fakture za knjiženje**: iznosi faktura koje su odštampane, ali još nisu proknjižene;
 
-**Nalozi za izvršenje**: iznosi narudžbi koje su ispisane i potvrđene, ali još nisu izvršene;
+**Otpremnice za fakturisanje**: iznosi otpremnica koje su odštampane, ali još nisu fakturisane;
 
-**Izdani računi**: iznosi računa koji su izdani i knjiženi, ali još nisu predani na naplatu;
+**Porudžbine za izvršenje**: iznosi porudžbina koje su odštampane i potvrđene, ali još nisu realizovane;
 
-**Računi podložni naplati**: iznosi računa koji su predani, ali imaju datum dospijeća (plus broj dana prema parametrima postavljenim u zaglavlju izračuna) koji je veći od referentnog datuma;
+**Izdati vrednosni papiri**: iznosi vrednosnih papira koji su izdati i proknjiženi, ali još nisu predati na naplatu;
 
-Sekcija *Neplaćeni*: prikazani su neplaćeni iznosi koji nisu knjiženi, ili (ako je označeno) oni koji su već knjiženi, kako prema iznosu tako i prema broju stavki; 
+**Vrednosni papiri u naplati**: iznosi vrednosnih papira koji su predati na naplatu, ali imaju datum dospeća (uvećan za broj dana definisan u parametrima obračuna) koji je veći od referentnog datuma;
 
-Iz zbroja prethodnih vrijednosti izračunava se ‘Rizik klijenta’, koji u usporedbi s odobrenim kreditom pokazuje prekoračenje kredita. .
+U sekciji **Nenaplaćeni vrednosni papiri** prikazuju se nenaplaćeni iznosi koji nisu proknjiženi ili, ukoliko je uključena odgovarajuća opcija, i oni koji su već proknjiženi, kako po iznosu tako i po broju stavki.
 
-Polje **Istekao** prikazuje iznos otvorenih stavki koje su već dospjele, kao dodatni element za analizu situacije klijenta.
+Na osnovu zbira prethodnih vrednosti izračunava se **Rizik kupca**, koji se poredi sa odobrenim kreditnim limitom i prikazuje eventualno prekoračenje kredita.
 
-
+Polje **Dospelo** prikazuje iznos otvorenih stavki kojima je istekao rok dospeća i predstavlja dodatni element za procenu finansijskog stanja kupca.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Spremi | Tipka koja omogućuje pohranu dobivenog rezultata. |
-| Izračunavanje | Pokreće postupak za izračunavanje ukupne situacije rizika za klijenta. |
-
-
-
-
-
-
+| Sačuvaj | Dugme koje omogućava čuvanje dobijenog rezultata. |
+| Izračunaj | Pokreće postupak obračuna ukupne situacije rizika za kupca. |
