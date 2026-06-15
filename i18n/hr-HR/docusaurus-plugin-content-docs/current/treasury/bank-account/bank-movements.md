@@ -31,13 +31,13 @@ Nakon toga slijede daljnji podaci prijavljeni u pojedinostima uvezene datoteke, 
 ### Pojedinosti o postupku kretanja i usklađivanja​
 Unosom pojedinosti kretanja dvostrukim klikom ili gumbom ***Izmijeni***, različita kretanja sadržana u datoteci prikazuju se u tablici rezultata s relativnim iznosom, predznakom i datumom valute banke. Također se bilježe podaci odgovarajućeg knjiženja prisutni ili generirani u Fluentisu. Na prvom mjestu je zastavica koja identificira je li kretanje već usklađeno ili nije. 
 
-Za pregled detaljnog opisa kretanja sadržanog u datoteci, koristi se gumb + lijevo od polja **U**sklađenje** (na prvoj poziciji).  
+Za pregled detaljnog opisa kretanja sadržanog u datoteci, koristi se gumb + lijevo od polja **Usklađenje** (na prvoj poziciji).  
 
 **MOGUĆI POSTUPCI:**
 
 - ***Automatsko usklađivanje***: pojavljuje se skočni prozor koji omogućuje da se odaberu kriteriji automatskog podudaranja podataka putem zastavica (na primjer, isti datum, isti iznos itd.) Pretraživanje i usklađivanje počinje gumbom ***Pokreni*** i može se poništiti gumbom ***Poništi***. Transakcije će se automatski ažurirati postavljanjem oznake za usklađivanje, dok se one koje nisu pronađene, mogu uskladiti ručno ili ako stvarno nedostaju, nastaviti s njihovim automatskim stvaranjem.
 
-- ***Ručno(manualno) usklađenje***: pritiskom na tu tipku automatski se otvara obrazac [***Prikaži konta*** ](/docs/finance-area/ledger-records/records/view-accounts) i filtri podračuna (koji odgovaraju odabranoj banci), a datumi se automatski popunjavaju kako bi odgovarali kretanju koje treba uskladiti. Prvo je potrebno **pritisnuti tipku Prikaži konta** i tražiti. Nakon što je identificiran odgovarajući pokret, odabere se redak i pritisne gumb ***Uskladiti*** (gore na traci izbornika). U ovom se koraku unos ručno usklađuje, a poveznice i oznake ažuriraju.
+- ***Ručno(manualno) usklađenje***: pritiskom na tu tipku automatski se otvara obrazac [***Prikaži konta*** ](/docs/finance-area/ledger-records/records/view-accounts) i filtri konta (koji odgovaraju odabranoj banci), a datumi se automatski popunjavaju kako bi odgovarali kretanju koje treba uskladiti. Prvo je potrebno **pritisnuti tipku Prikaži konta** i tražiti. Nakon što je identificiran odgovarajući pokret, odabere se redak i pritisne gumb ***Uskladiti*** (gore na traci izbornika). U ovom se koraku unos ručno usklađuje, a poveznice i oznake ažuriraju.
 
 - ***Poništi usklađenje***: omogućuje da se otkaže već provedeni postupak usklađivanja brisanjem poveznica prema računovodstvenoj evidenciji.
 
@@ -49,7 +49,7 @@ Ovisno o banci koja izdaje elektroničke datoteke na raspolaganje, postoje više
 Logika prema kojoj Fluentis može automatski upravljati zatvaranjem otvorene stavke koja može biti prisutna u sustavu je sljedeća:
 
 - Ako je polje *Referenca vjerovnika depozita* prisutna u uvezenoj elektroničkoj datoteci (vidljivo na Fluentisu otvaranjem pojedinosti redaka datoteke pomoću gumba + s lijeve strane) i referentni kod prisutan u polju pored, te stavke će se koristiti za traženje otvorenih stavki. Podaci moraju odgovarati polju *Referentni broj* prisutnom u podudaranju (onom uz polje *Referentni model plaćanja*).
-- Ako prvi uvjet nije zadovoljen, postupak će pročitati polje IBAN računa u elektroničkoj datoteci (uvijek vidljivo otvaranjem pojedinosti redaka kako je objašnjeno u prethodnoj točki) i pretražit će postoji li računovodstveni račun kod Kupca / Podaci o dobavljaču koji pokazuju isti IBAN. Ovaj IBAN **mora** se nalaziti u polju IBAN u šifarmiku u kartici Plaćanja, namijenjenom isključivo za bankovne podatke kupaca i dobavljača, Stoga se ne smije miješati s istim poljem koje se nalazi u gornjem prikazu pod nazivom  *Vrste plaćanja*.
+- Ako prvi uvjet nije zadovoljen, postupak će pročitati polje IBAN računa u elektroničkoj datoteci (uvijek vidljivo otvaranjem pojedinosti redaka kako je objašnjeno u prethodnoj točki) i pretražit će postoji li računovodstveni račun kod Kupca / Podaci o dobavljaču koji pokazuju isti IBAN. Ovaj IBAN **mora** se nalaziti u polju IBAN u šifarniku u kartici Plaćanja, namijenjenom isključivo za bankovne podatke kupaca i dobavljača, Stoga se ne smije miješati s istim poljem koje se nalazi u gornjem prikazu pod nazivom  *Vrste plaćanja*.
 Ako se IBAN podudara, tražit će se otvorena stavka za taj račun s istim iznosom, ako ih ima više s istim iznosom, uzet će se onaj s najstarijim rokom valjanosti.
 - Ako nije pronađeno podudaranje koje odgovara prethodnim kriterijima, ali je još uvijek vidljiv račun kupca ili dobavljača s odgovarajućim IBAN-om, Fluentis će samo umetnuti redak u računovodstvo bez automatskog generiranja plaćanja.
 - Ako se preko IBAN koda ne pronađe račun kupca/dobavljača, Fluentis će umetnuti samo redak koji se odnosi na banku u računovodstveni unos, a unos će ostati za popunjavanje retkom kupca/dobavljača.

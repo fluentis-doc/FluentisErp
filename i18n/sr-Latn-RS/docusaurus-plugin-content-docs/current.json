@@ -980,7 +980,7 @@
     "description": "The label for category Obsoleto e non supportato in sidebar treasury"
   },
   "sidebar.treasury.category.Conti correnti": {
-    "message": "Tekući računi",
+    "message": "Bankovni računi",
     "description": "The label for category Conti correnti in sidebar treasury"
   },
   "sidebar.treasury.category.Riconciliazione": {
