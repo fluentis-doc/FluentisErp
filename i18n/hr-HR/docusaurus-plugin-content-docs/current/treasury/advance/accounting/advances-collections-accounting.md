@@ -18,9 +18,3 @@ U kartici dospijeća moguće je pretraživati i filtrirati dospjela potraživanj
 ![](/img/it-it/treasury/advance/accounting/advances-collections-accounting/image02.png)
 
 Knjiženje se može poništiti i obnoviti, kao i inače putem kartice **Povrat**.
-
-
-
-
-
-

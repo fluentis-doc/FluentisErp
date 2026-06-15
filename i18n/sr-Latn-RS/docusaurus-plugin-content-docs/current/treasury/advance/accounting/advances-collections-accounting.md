@@ -1,26 +1,26 @@
 ---
-title: Knjiženje primljenih avansa 
+title: Knjiženje naplate avansno finansiranih faktura
 sidebar_position: 2
 ---
 
-S ovog obrasca upravlja se knjigovodstvenim prihodima s računa ili dospjelim predujmovima od strane banke.
+Iz ovog obrasca upravlja se računovodstvenim knjiženjem naplate faktura ili dospijeća koja su prethodno avansno finansirana od strane banke.
 
-Ovdje se automatski mogu generirati dva knjigovodstvena dokumenta koji poništavaju otvoreni dug za avans, te će evidentirati naplatu potraživanja umanjenu za naknade i kamate. 
+Sistem omogućava automatsko generisanje dva računovodstvena dokumenta kojima se zatvara otvorena obaveza po osnovu avansa i evidentira naplata potraživanja, umanjena za provizije i kamate banke.
 
-U kartici Parametri potrebno je unijeti račune koji će se koristiti za naplatu, eventualne popuste te iznose eventualnih naknada i kamata, kao i dokument koji će se koristiti za naplatu.
+Na kartici **Parametri** potrebno je definisati:
+- konta koja će se koristiti za naplatu,
+- eventualne rabate,
+- iznose provizija i kamata,
+- dokument koji će se koristiti za evidentiranje naplate.
 
-Proces knjiženja je fiksiran, neovisno o odabranom predlošku.
+Proces knjiženja je unaprijed definisan i izvršava se nezavisno od odabranog predloška knjiženja.
 
 ![](/img/it-it/treasury/advance/accounting/advances-collections-accounting/image01.png)
 
-U kartici dospijeća moguće je pretraživati i filtrirati dospjela potraživanja koja treba naplatiti. Također, moguće je isključiti ili uključiti aktivna dospijeća povezana s dobavljačima.
+Na kartici **Dospijeća** moguće je pretraživati i filtrirati dospjela potraživanja koja treba naplatiti.
+
+Takođe je moguće uključiti ili isključiti prikaz aktivnih dospijeća povezanih sa dobavljačima.
 
 ![](/img/it-it/treasury/advance/accounting/advances-collections-accounting/image02.png)
 
-Knjiženje se može poništiti i obnoviti, kao i inače putem kartice **Povrat**.
-
-
-
-
-
-
+Kao i kod drugih procedura knjiženja, izvršena knjiženja moguće je poništiti i ponovo generisati putem kartice **Povrat**.
