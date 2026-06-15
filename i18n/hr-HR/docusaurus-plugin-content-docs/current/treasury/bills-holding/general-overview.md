@@ -3,9 +3,9 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul Portfelj dospijeća plaćanja u Fluentis ERP-u osmišljen je za upravljanje i praćenje dospijeća plaćanja, kao što su mjenice, bankovne potvrde i drugi instrumenti odgođenog plaćanja.
+Modul **Vrijednosnih papira** u Fluentis ERP-u namijenjen je upravljanju i praćenju komercijalnih naplatnih instrumenata, poput mjenica, bankovnih doznaka (Ri.Ba.) i drugih oblika odgođenog plaćanja.
 
-Ovaj modul omogućuje upravljanje svim operacijama povezanim s dospijećima plaćanja – od njihove izrade, preko prezentacije banci na naplatu ili uz rezervu naplate, do knjiženja konačnih iznosa koji su naplaćeni – pružajući potpunu kontrolu nad novčanim tokovima koji proizlaze iz odgođenih plaćanja.
+Modul omogućuje upravljanje svim procesima vezanima uz naplatne instrumente, od njihovog kreiranja, predaje banci ili naplatu uz "uvjet dobre naplate", pa sve do evidentiranja konačnih uplata. Na taj način omogućuje potpunu kontrolu novčanih tokova koji proizlaze iz odgođenih plaćanja.
 
 ## Operativni tijek: 
 
@@ -50,7 +50,7 @@ U sustavu su već dostupne (nakon početne konfiguracije Fast Start) **Doznaka u
 |  [Preuzimanje vrijednosnih papira iz dospijeća plaćanja](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)  | Pokreće proceduru za automatsko kreiranje dospijeća iz otvorenih stavki. |<a href="https://youtu.be/pWgf3bowpMQ&amp;t=05s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
 |  [Knjiženje vrijednosnih papira](/docs/treasury/bills-holding/accounting/bills-accounting)  | Pokreće proceduru za knjiženje dospijeća i zatvaranje računa kupca. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=02m55s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
 |  **Knjiženje vrijednosnih papira prema dobavljaču**  | Pokreće proceduru za knjiženje dospijeća prema dobavljaču i zatvaranje računa dobavljača. | |
-|  [Knjiženje popisa](/docs/treasury/bills-holding/accounting/lists-accounting)  | Richiama la procedura per effettuare la contabilizzazione della distinta e valorizzare il conto di presentazione. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05m05s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
+|  [Knjiženje popisa](/docs/treasury/bills-holding/accounting/lists-accounting)  | Pokreće postupak knjiženja zbirnog naloga te evidentiranja vrijednosti na kontu predaje na naplatu. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=05m05s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
 |  Knjiženje odobrenja  | Pokreće proceduru za knjiženje prezentacijskih lista i valorizaciju računa prezentacije. | <a href="https://youtu.be/pWgf3bowpMQ&amp;t=07m51s" target="_blank" rel="noopener noreferrer">Link na Video Tutorial</a> |
 |  [Neplaćeni uvoz](/docs/treasury/bills-holding/procedures/import-unpaids)  | 	Pokreće proceduru uvoza datoteke s nenaplaćenim dospjelim dospijećima. |
 |  [Knjiženje nenaplaćenih dospjelih računa](/docs/treasury/bills-holding/accounting/unpaid-accounting)  | Pokreće proceduru knjiženja nenaplaćenih dospjelih računa uz ponovno otvaranje stavki kupca po parametrima modula. | |
