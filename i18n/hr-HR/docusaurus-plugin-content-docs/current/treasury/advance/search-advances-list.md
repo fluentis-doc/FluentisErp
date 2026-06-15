@@ -16,13 +16,13 @@ U zaglavlju forme nalaze se **filtri** za pretragu koji se odnose na:
 - vrstu obračuna  
 - status.
 
-Zastavica **Obračunato** označava i filtrira popis za koje je već pokrenut proces [**knjiženja**](/docs/treasury/advance/accounting/advances-list-accounting).
+Zastavica **Knjiženo** označava i filtrira popis za koje je već pokrenut proces [**knjiženja**](/docs/treasury/advance/accounting/advances-list-accounting).
 
 U formi su također vidljiva sljedeća polja:
 
-**Ukupan popis:** Izračunato polje koje predstavlja zbroj ukupnog iznosa avansnih računa. 
+**Ukupan popis:** Izračunano polje koje predstavlja zbroj ukupnog iznosa avansnih računa. 
 
-**Ukupan predujam:** Izračunato polje koje predstavlja zbroj iznosa koji je banka predvidjela za svaki račun.
+**Ukupan predujma:** Izračunano polje koje predstavlja zbroj iznosa koji je banka predvidjela za svaki račun.
 
 
 
