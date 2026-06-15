@@ -908,7 +908,7 @@
     "description": "The label for category Lock manager in sidebar treasury"
   },
   "sidebar.treasury.category.Cash flow": {
-    "message": "Cash flow",
+    "message": "Novčani tijek",
     "description": "The label for category Cash flow in sidebar treasury"
   },
   "sidebar.treasury.category.Portofoglio Effetti": {
@@ -1832,7 +1832,7 @@
     "description": "The label for category Costo prodotto / commessa in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo cash flow": {
-    "message": "Tablice modula novčanog toka",
+    "message": "Tablice modula novčanog tijeka",
     "description": "The label for category Tabelle modulo cash flow in sidebar configurations"
   },
   "sidebar.configurations.category.Tabelle modulo Portafoglio effetti": {

@@ -1,9 +1,8 @@
 ---
-title: Analiza novčanog toka
+title: Analiza novčanog tijeka
 sidebar_position: 5
 ---
-Ovaj se modul nalazi u izborniku Riznica > Cash Flow > Ispis > Analiza novčanog toka.
-
+Ovaj se modul nalazi u izborniku Riznica > Novčani tijek > Ispiši > Analiza novčanog tijeka.
 
 Iz ovog obrasca moguće je dobiti ispis obrađenih i u sustavu pohranjenih analiza novčanog toka: pri otvaranju sustav automatski predlaže kao filter posljednju obradu koju je izvršio trenutni korisnik.
 
@@ -17,7 +16,7 @@ Moguće je postaviti sljedeće filtere:
 
 - **prikaz podataka** raspoređen po **banci**, 
 
-- filter po **Nalog za posao**  (prijašnje nalog), 
+- filter po **projektu** (prijašnje nalog), 
 
 - prikaz **Detalji** svakog pojedinog toka (npr. svi nalozi, svi otpremni dokumenti itd.).
 

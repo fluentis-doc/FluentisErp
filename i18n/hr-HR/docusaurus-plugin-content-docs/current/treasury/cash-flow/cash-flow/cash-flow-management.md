@@ -10,7 +10,6 @@ S ovih izbornika moguće je kreirati/izmijeniti izračune simulacije novčanog t
 Iz ovog obrasca također je moguće pregledati izvorni dokument kako bi se procijenili podaci.
 
 
-
 | Funkcija | Značenje |
 | --- | --- |
 | Spremi | Spremanje novčanog tijeka. |

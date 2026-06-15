@@ -2,29 +2,61 @@
 title: Analiza novčanog toka
 sidebar_position: 5
 ---
-Ovaj se modul nalazi u izborniku Riznica > Cash Flow > Ispis > Analiza novčanog toka.
 
+Ovaj modul se nalazi u meniju:
 
-Iz ovog obrasca moguće je dobiti ispis obrađenih i u sustavu pohranjenih analiza novčanog toka: pri otvaranju sustav automatski predlaže kao filter posljednju obradu koju je izvršio trenutni korisnik.
+**Blagajna > Novčani tok > Izveštaji > Analiza novčanog toka**
 
-Moguće je postaviti sljedeće filtere:
+Iz ovog obrasca moguće je dobiti izveštaj nad prethodno obrađenim i sačuvanim analizama novčanog toka. Prilikom otvaranja sistema automatski predlaže kao filter poslednju obradu koju je izvršio trenutni korisnik.
 
-- koje vrste tokova uključiti u ispis, tako da se deaktivira oznaka **Svi tipovi toka** i odaberu željene vrste u mrežnom prikazu
- 
-- 6 referentnih datuma za izračun, mijenjanjem odgovarajućih polja u sekciji **Sažetak do slijedećih dospjelosti**
+## Dostupni filteri
 
-- **Tip izvještaja** koju želite vidjeti, grupiranu prema vrsti toka ili vrsti plaćanja,
+### Tipovi tokova
 
-- **prikaz podataka** raspoređen po **banci**, 
+Moguće je definisati koje vrste tokova će biti uključene u izveštaj.
 
-- filter po **Nalog za posao**  (prijašnje nalog), 
+Da biste odabrali samo određene tipove tokova:
+1. Isključite opciju **Svi tipovi toka**.
+2. U mrežnom prikazu označite željene vrste tokova.
 
-- prikaz **Detalji** svakog pojedinog toka (npr. svi nalozi, svi otpremni dokumenti itd.).
+### Referentni datumi
 
-- oznaku **Predviđeni datum** koja prikazuje tokove prema predviđenom datumu, umjesto prema zadanim postavkama koje koriste *Rok trajanja do* (ako predviđeni datum nije promijenjen, po zadanom odgovara datumu dospijeća).
+Moguće je definisati do šest referentnih datuma za potrebe obračuna.
+Datumi se podešavaju kroz sekciju:
 
+**Sažetak do sledećih dospeća**
 
+Promenom ovih datuma menja se način grupisanja i prikaza finansijskih tokova u izveštaju.
 
+### Tip izveštaja
 
+Moguće je odabrati način grupisanja podataka:
+- po vrsti toka,
+- po vrsti plaćanja.
 
+### Prikaz po banci
 
+Opcija omogućava prikaz i grupisanje podataka prema banci kojoj pojedini finansijski tok pripada.
+
+### Projekat
+
+Moguće je filtrirati podatke prema projektu (ranije radnom nalogu), kako bi se analiza ograničila samo na tokove povezane sa određenim projektom.
+
+### Detaljan prikaz
+
+Aktiviranjem opcije **Detalji** prikazuju se pojedinačne stavke svakog toka.
+
+Na primer:
+- sve narudžbine,
+- svi otpremni dokumenti,
+- sve fakture,
+- svi ostali dokumenti koji učestvuju u generisanju novčanog toka.
+
+### Predviđeni datum
+
+Opcija **Predviđeni datum** omogućava prikaz tokova prema planiranom datumu realizacije, umesto prema standardnom datumu dospeća.
+Podrazumevano sistem koristi datum dospeća. Ukoliko predviđeni datum nije ručno promenjen, on će biti jednak datumu dospeća.
+
+:::note Napomena
+Korišćenje predviđenog datuma omogućava realnije planiranje novčanih tokova kada se očekuje da će stvarna realizacija naplate ili plaćanja odstupati od ugovorenog roka dospeća.
+:::

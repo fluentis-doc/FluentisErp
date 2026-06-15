@@ -12,17 +12,11 @@ LINK:
 **[Ispis](/docs/treasury/cash-flow/reports)**
 
  
-
- 
-
 Iz ovog obrasca moguće je pretraživati i mijenjati prethodno unesene obrade.   
 
 Također, moguće je unijeti novu obradu koja bi u tom slučaju bila potpuno ručna (a time manje korisna u praksi).   
 
-Preporučuje se kreiranje novčanog tijeka putem postupka ** [Automatska generacija novčanog toka](/docs/treasury/cash-flow/procedures) **.
-
-
-
+Preporučuje se kreiranje novčanog tijeka putem postupka ** [Automatska generacija novčanog tijeka](/docs/treasury/cash-flow/procedures) **.
 
 
 | Funkcija | Značenje |
@@ -31,13 +25,12 @@ Preporučuje se kreiranje novčanog tijeka putem postupka ** [Automatska generac
 | Novo | Tipka za unos novog novčanog tijeka. |
 | Izmjeni | Tipka za izmjenu prethodno unesenog novčanog tijeka. |
 | Prikaži | Tipka za pregled prethodno unesenog novčanog tijeka. |
-| Otkaži | Izvršava postupak brisanja prethodno unesenog novčanog tijek. |
-
+| Otkaži | Izvršava postupak brisanja prethodno unesenog novčanog tijeka. |
 
 
 | Funkcija | Značenje |
 | --- | --- |
-| Analiza novčanog toka | Poziva se procedura za ispis novčanog toka. |
+| Analiza novčanog tijeka | Poziva se procedura za ispis novčanog tijeka. |
 
 
 

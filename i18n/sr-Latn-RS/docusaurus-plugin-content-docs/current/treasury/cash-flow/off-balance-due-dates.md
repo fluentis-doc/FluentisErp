@@ -1,35 +1,32 @@
 ---
-title: Datum dospijeća vanbilančnih konta
+title: Datum dospeća vanbilansnih konta
 sidebar_position: 3
 ---
 
-Obrazac se nalazi u Riznica > Novčani tok > Novčani tok > Dugovanja za vanjske obveze.
+Obrazac se nalazi u **Blagajna > Novčani tok > Novčani tok > Datum dospeća vanbilansnih konta**.
 
+Ovde je moguće upravljati vanbilansnim dospećima koja se uključuju u odgovarajući *novčani tok* (definisan u tabeli [**Tipovi tokova**](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types) pomoću oznake *Vanbilansno*), kao što su projekcije budućih odliva za poreze, zarade zaposlenih i slično.
 
-Ovim ekranom moguće je upravljati izvanknjižnim dospijećima koja se uključuju u odgovarajući cash flow tok (definiran u tablici [**Tip tijeka**](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types) pomoću oznake *Izvanknjižno*), kao što je primjerice predviđanje izlaznih tokova za poreze, plaće itd.
+## Kako uneti vanbilansno dospeće za prikaz u novčanom toku
 
-## Kako unijeti izvanknjižno dospijeće za prikaz u cash flow-u
+Planirana dospeća unose se direktno u tabelu.
 
-Izravno u mrežu unose se planirana dospijeća.
+- Polje **Tipovi datuma dospeća** povezano je sa istoimenom tabelom, u kojoj se slobodno definiše oznaka koja opisuje vrstu dospeća.
+- **Datum dospeća** određuje prikaz u novčanom toku (u odgovarajućem mesecu), jer predstavlja datum kada se očekuje realizacija finansijskog toka.
+- **Valuta** je podrazumevano postavljena na valutu kompanije (npr. evro), ali je moguće odabrati i drugu valutu ukoliko se želi evidentirati tok u stranoj valuti. U tom slučaju vodi se računa i o kursu na datum dospeća.
+- **Iznos u valuti** odnosi se na izabranu valutu, dok se iznosi **Potražuje** (pozitivan finansijski tok, npr. priliv) i **Duguje** (negativan finansijski tok, npr. obaveza) iskazuju u valuti kompanije.
+- Oznaka **Zatvoreno** koristi se kada se određeni red više ne želi uključivati u buduće simulacije novčanog toka, ali ga je potrebno zadržati u evidenciji bez brisanja.
 
-- Polje **Tipovi datuma dospijeća** povezano je s istoimenom tablicom, gdje se slobodno definira „oznaka” kojom se opisuje vrsta dospijeća.
-- Datum dospijeća određuje prikaz u cash flow-u (u odgovarajućem mjesecu), jer se smatra datumom kada će se financijski tok realizirati.
-- Valuta je po defaultu postavljena na onu tvrtke (npr. euro), ali je moguće odabrati drugu valutu ako se želi unijeti tok u stranoj valuti. U tom slučaju se upravlja i tečajem na datum dospijeća.
-- Iznos u valuti odnosi se na odabranu valutu u prethodnom polju, dok su iznosi Potražuje (pozitivan financijski tok, npr. potraživanje) ili Duguje (negativan tok, npr. obveza) iskazani u valuti tvrtke (npr. euro).
-- Oznaka **zatvoreno** koristi se kada se redak više ne želi uključivati u buduće simulacije, ali ga se želi zadržati i arhivirati bez brisanja.
+## Posebna dugmad
 
+### Traži
 
+Primjenjuje zadate kriterijume pretrage na listu vanbilansnih dospeća.
 
-**Specifični gumbi**
+### Novo
 
-**Traži** - gumb za primjenu filtera pretrage na popis izvanknjižnih dospijeća.
+Postavlja kursor na novi red za unos vanbilansnog dospeća.
 
-**Novo** - postavlja pokazivač na unos novog izvanknjižnog dospijeća.
+### Obriši
 
-**Otkaži** - briše označeno izvanknjižno dospijeće.
-
-
-
-
-
-
+Briše označeno vanbilansno dospeće.

@@ -1,46 +1,38 @@
 ---
-title: Traženje novčanog tijeka 
+title: Pretraga novčanog toka
 sidebar_position: 1
 ---
 
-LINK:
+## Povezane funkcionalnosti
 
-**[Preliminarne tablice za upravljanje](/docs/treasury/cash-flow/general-overview)**
+- [Prethodne tabele za podešavanje](/docs/treasury/cash-flow/general-overview)
+- [Automatsko generisanje novčanog toka](/docs/treasury/cash-flow/procedures)
+- [Izveštaji novčanog toka](/docs/treasury/cash-flow/reports)
 
-**[Automatska obrada](/docs/treasury/cash-flow/procedures)**
+## Opis
 
-**[Ispis](/docs/treasury/cash-flow/reports)**
+Ovaj obrazac omogućava pretragu, pregled i izmenu prethodno kreiranih simulacija novčanog toka.
 
- 
+Takođe je moguće kreirati novi novčani tok ručnim unosom podataka. Međutim, takav način rada se retko koristi u praksi jer zahteva ručno održavanje svih finansijskih tokova.
 
- 
+Preporučuje se korišćenje procedure **Automatsko generisanje novčanog toka**, koja automatski prikuplja podatke iz različitih modula sistema i kreira kompletnu simulaciju novčanog toka.
 
-Iz ovog obrasca moguće je pretraživati i mijenjati prethodno unesene obrade.   
+## Funkcije na alatnoj traci
 
-Također, moguće je unijeti novu obradu koja bi u tom slučaju bila potpuno ručna (a time manje korisna u praksi).   
+| Funkcija | Opis |
+|-----------|------|
+| **Pretraži** | Pokreće pretragu kroz sve prethodno kreirane novčane tokove prema zadatim filterima. |
+| **Novo** | Kreira novi novčani tok. |
+| **Izmeni** | Otvara izabrani novčani tok u režimu za izmenu. |
+| **Prikaži** | Otvara izabrani novčani tok u režimu pregleda. |
+| **Obriši** | Briše izabrani novčani tok. |
 
-Preporučuje se kreiranje novčanog tijeka putem postupka ** [Automatska generacija novčanog toka](/docs/treasury/cash-flow/procedures) **.
+## Dodatne funkcije
 
+| Funkcija | Opis |
+|-----------|------|
+| **Analiza novčanog toka** | Pokreće proceduru za prikaz i štampu analiza novčanog toka. |
 
-
-
-
-| Funkcija | Značenje |
-| --- | --- |
-| Traži | Tipka za primjenu filtara pretraživanja na cijeli bazu podataka unesenih novčanih tokova. |
-| Novo | Tipka za unos novog novčanog tijeka. |
-| Izmjeni | Tipka za izmjenu prethodno unesenog novčanog tijeka. |
-| Prikaži | Tipka za pregled prethodno unesenog novčanog tijeka. |
-| Otkaži | Izvršava postupak brisanja prethodno unesenog novčanog tijek. |
-
-
-
-| Funkcija | Značenje |
-| --- | --- |
-| Analiza novčanog toka | Poziva se procedura za ispis novčanog toka. |
-
-
-
-
-
-
+:::tip Preporuka
+Za najpreciznije rezultate preporučuje se da se novčani tok generiše putem procedure **Automatsko generisanje novčanog toka**, a da se ovaj obrazac koristi za pregled, naknadne korekcije i analizu već kreiranih simulacija.
+:::

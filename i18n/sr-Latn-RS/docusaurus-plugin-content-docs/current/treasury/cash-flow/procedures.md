@@ -1,67 +1,146 @@
 ---
-title: Automatsko generiranje novčanog tijeka 
+title: Automatsko generisanje novčanog toka
 sidebar_position: 4
 ---
 
-Obično se simulacija novčanog toka kreira kroz ovaj obrazac, koji omogućuje definiranje parametara upravljanja za svaki tip toka.
+Simulacija novčanog toka se uobičajeno kreira putem ovog obrasca, koji omogućava definisanje parametara za svaki tip finansijskog toka.
 
-Svaka nova obrada sprema izračun povezan s poljem **Broj**, koji se automatski dodjeljuje. Također je moguće dodati detaljan **Opis**.
+Svaka nova obrada čuva rezultat izračuna pod jedinstvenim **Brojem**, koji sistem automatski dodeljuje. Takođe je moguće uneti detaljan **Opis** simulacije.
 
-*Specifična polja*
+## Specifična polja
 
-**Tip / Opis tijeka:** preuzeto iz tablice Tipovi toka 
-
-**Od datuma / Do datuma:** Raspon datuma filtra koji djeluje prema specifičnoj logici svakog tipa toka 
-
-**Omogući:** oznaka koja upravlja stvarnom upotrebom odgovarajućeg tipa tijeka u izračunu koji će biti pokrenut 
-
-**Privremeni zapis:** uzima ili ne uzima u obzir podatke povezane s računovodstvenim zapisima u statusu *Privremeno*
-
-**Neplativo:** uzima ili ne uzima u obzir stavke koje su *nenaplative*
-
-**Koristi preostalu količinu:** omogućuje uzimanje u obzir narudžbi prema preostalom iznosu koji treba isporučiti 
-
-**Koristi trenutnu dostupnost:** čita račune u portfelju koji nisu neplaćeni s rokom koji je veći od današnjeg, te ih prikazuje na današnji datum u grupnom računu (iako će knjiženje biti izvršeno tek nakon naplate) 
-
-**Koristi dospijeće:** omogućuje uzimanje u obzir i računa "po primitku".  
+**Tip / Opis toka**  
+Preuzima se iz tabele *Tipovi tokova*.
+**Od datuma / Do datuma**  
+Period koji se koristi za filtriranje podataka prema pravilima svakog pojedinačnog tipa toka.
+**Omogući**  
+Oznaka koja određuje da li će odgovarajući tip toka biti uključen u obračun.
+**Privremena knjiženja**  
+Određuje da li će se u obračun uključiti podaci iz računovodstvenih knjiženja sa statusom *Privremeno*.
+**Nenaplativo**  
+Određuje da li će se u obračun uključiti stavke označene kao nenaplative.
+**Koristi preostalu količinu**  
+Omogućava obračun narudžbina na osnovu preostale količine koja tek treba da bude isporučena.
+**Koristi trenutnu raspoloživost**  
+Uključuje vrednosne papire u portfelju koji nisu nenaplaćeni i čiji je rok dospeća nakon današnjeg datuma, prikazujući ih kao raspoloživa sredstva na današnji datum, iako će knjiženje biti izvršeno tek nakon naplate.
+**Koristi dospeće**  
+Omogućava uključivanje i faktura sa načinom plaćanja *po prijemu*.
 
 :::danger PAŽNJA
-Stavke unesene u popis bit će vidljive samo ako imaju aktiviranu oznaku **Knjiženo** unutar njih (jer je izvršeno računovodstveno knjiženje). Budući da ih je ipak moguće unijeti u popis za prezentaciju banci, čak i ako nisu knjiženi, preporuča se obratiti pažnju.
 
-Drugi važan uvjet je filtriranje koje isključuje (neovisno o datumu filtra postavljenom prije pokretanja izračuna) račune s datumom dospijeća koji je prije "današnjeg", odnosno datumom obrade novčanog toka u pitanju. 
+Stavke će biti prikazane u novčanom toku samo ako imaju aktivnu oznaku **Knjiženo**, odnosno ako je izvršeno računovodstveno knjiženje.
+
+Pošto je moguće uključiti vrednosne papire u prezentacionu listu i pre njihovog knjiženja, potrebno je obratiti pažnju na ovu situaciju.
+
+Takođe, sistem automatski isključuje vrednosne papire čiji je datum dospeća stariji od datuma obrade novčanog toka, bez obzira na postavljene filtere.
 :::
 
-Ako se radi s tipom tijeka **Avansi**, tada će se uzimati iznosi iz popisa predujma faktura koje nisu knjižene za iznos predujma na bankovnom računu, s datumom jednakim datumu dospijeća predujma.
+Ako se koristi tip toka **Avansi**, u obračun se uključuju iznosi iz lista avansa faktura koji još nisu knjiženi na bankovni račun, sa datumom jednakim datumu dospeća avansa.
 
-**PAŽNJA:**
-Ako se odabere ova opcija, NE smiju se unositi i pomoćni računi koji se koriste u početnoj financijskoj ravnoteži (putem upravljanja tipovima financijskih računa), inače će se podaci (u smislu pozitivnog novčanog toka) duplicirati i rezultat će biti iskrivljen i nepouzdan. 
+:::danger PAŽNJA
 
+Ako je aktiviran tip toka **Avansi**, ne smeju se istovremeno uključivati pomoćni bankovni računi korišćeni za početno finansijsko stanje kroz podešavanja *Tipova finansijskih računa*, jer bi se pozitivni tokovi evidentirali dvostruko i rezultati novčanog toka bili bi netačni.
+:::
 
-*Detalj logika primijenjenih na tipove toka*:
+## Logika pojedinačnih tipova tokova
 
-**Stanje glavne knjige**: raspon datuma koristi se za izračunavanje računovodstvenog salda prema datumu računovodstvenog knjiženja;
+### Stanje glavne knjige
 
-**Dospijeća plaćanja**: raspon datuma koristi se za filtriranje prema datumima dospijeća. Također su prisutne oznake za uzimanje u obzir dospijeća povezanih s privremenim knjiženjima, kao i dospijeća koja nisu plaćena;
+Period datuma koristi se za obračun računovodstvenog salda prema datumu knjiženja.
 
-**Narudžbe kupaca/dobavljača**: raspon datuma filtrira prema datumu narudžbe. Uzimaju se u obzir samo tipovi s označenim *novčani tijekom* koji su ispisani i potvrđeni. Preporučuje se postaviti oznaku *Koristi preostalu količinu* kako bi se simulirala narudžba prema preostalom iznosu koji treba isporučiti/primiti. Ispod se računaju hipotetski rokovi temeljem postavki tipa/načina plaćanja postavljenih u zaglavlju, uzimajući kao početni datum isporuke stavke (ako nedostaje datum isporuke iz zaglavlja narudžbe) ili današnji datum ako je on prije današnjeg. ;
+### Dospela potraživanja i obaveze
 
-**Otpremnice/primke**: raspon datuma filtrira prema datumu otpremnice. Uzimaju se u obzir samo vrste postavljene za 'novčani tijek', ispisane ili kontrolirane, koje nisu već valorizirane u fakturi. Ispod se računaju hipotetski rokovi temeljem postavki tipa/načina plaćanja postavljenih u zaglavlju, počevši od datuma otpremnice;
+Period datuma filtrira podatke prema datumima dospeća.
 
-**Fakture prodaja/nabava**: raspon datuma filtrira prema datumu dospijeća na fakturi. Razmatraju se dokumenti koji nisu proforma, isprintani, kontrolirani ili oni koji nisu knjiženi;
+Dostupne su dodatne opcije za:
+- uključivanje privremenih knjiženja,
+- uključivanje nenaplaćenih stavki.
 
-**Narudžbe/radni nalog**: raspon datuma filtrira prema datumu narudžbe, samo otisnute narudžbe koje nisu izvršene. Stvaraju se hipotetski rokovi temeljem preostalog iznosa koji nije naplaćen i troška obrade;
+### Narudžbine kupaca i dobavljača
 
-**Povrat/radni nalog**: raspon datuma filtrira prema datumu povratka, samo otisnuti povratci koji nisu fakturirani. 
+Period datuma filtrira prema datumu narudžbine.
 
-Povrati moraju biti generirani tako da se izvrši narudžba za radni nalog, a ne unosom ručno, inače neće biti vidljiva;
+Uzimaju se u obzir samo tipovi dokumenata označeni za novčani tok koji su:
+- odštampani,
+- potvrđeni.
 
-**Vanbilančni zapisi**: raspon datuma filtrira prema datumu dospijeća vanbilančnih zapisa.
+Preporučuje se korišćenje opcije **Koristi preostalu količinu** kako bi se simulirao samo neisporučeni deo narudžbine.
 
-Samo završni datum za vrstu toka računovodstvenog salda uvijek će biti postavljen kao današnji datum pri otvaranju. Nakon što je postavljen opis novčanog tijeka, moguće je pritisnuti gumb za izračun. S obzirom na pomake narudžbi, za koje sustav mora napraviti simulaciju redak po redak, obrada može biti osobito duga, ovisno o broju podataka prisutnih u postavljenom filtru. Kada obrada bude završena, moguće je otvoriti novčani tijek putem odgovarajućeg gumba za upravljanje. 
+Sistem zatim izračunava očekivana dospeća na osnovu:
+- načina plaćanja,
+- tipa plaćanja definisanog u zaglavlju dokumenta.
 
-**Aktivni portfelj**: PAŽNJA: potrebno je obratiti pažnju na stavke koji su prikazane, ali nisu knjižene. Takva situacija može nastati, na primjer, ako su računi izdani iz dospjelih dugovanja i zatim uneseni u popis bez knjiženja. U tom će slučaju računi biti isključeni iz novčanog tijeka. Drugi uvjet na koji treba obratiti pažnju je taj da, neovisno o filtru, datum dospijeća učinka mora biti veći ili jednak od "današnjeg" (datum obrade novčanog toka). 
+Kao početni datum koristi se:
+- datum isporuke sa stavke,
+- datum isporuke iz zaglavlja narudžbine,
+- ili današnji datum ako je planirani datum u prošlosti.
 
-| Funkcija  | Značenje |
-| --- | --- |
-| Kreiranje | Izvršava postupak generiranja novčanog tijeka prema postavkama unesenim u obrazac. |
-| Izmjeni | Otvara novčani tijek koji je stvoren u načinu uređivanja. |
+### Otpremnice i prijemnice
+
+Period datuma filtrira prema datumu dokumenta.
+
+Uzimaju se u obzir samo:
+- dokumenti označeni za novčani tok,
+- odštampani ili kontrolisani dokumenti,
+- dokumenti koji još nisu fakturisani.
+
+Dospeća se simuliraju na osnovu uslova plaćanja definisanih na dokumentu.
+
+### Prodajne i nabavne fakture
+
+Period datuma filtrira prema datumu dospeća fakture.
+
+Uzimaju se u obzir dokumenti koji:
+- nisu predračuni,
+- imaju status odštampano ili kontrolisano,
+- ili još nisu knjiženi.
+
+### Narudžbine proizvodnje / Radni nalozi
+
+Period datuma filtrira prema datumu naloga.
+
+Uzimaju se u obzir samo:
+- odštampani nalozi,
+- nalozi koji nisu izvršeni.
+
+Sistem generiše očekivana dospeća na osnovu:
+- preostalog nenaplaćenog iznosa,
+- procenjenih troškova proizvodnje.
+
+### Povrati po radnom nalogu
+
+Period datuma filtrira prema datumu povrata.
+
+Prikazuju se samo:
+- odštampani povrati,
+- povrati koji nisu fakturisani.
+
+Povrati moraju biti generisani iz radnog naloga. Ručno uneseni povrati neće biti uključeni u novčani tok.
+
+### Vanbilansne stavke
+
+Period datuma filtrira prema datumu dospeća vanbilansnih stavki.
+
+## Generisanje novčanog toka
+
+Kod tipa toka **Stanje glavne knjige**, završni datum se prilikom otvaranja obrasca automatski postavlja na današnji datum.
+
+Nakon unosa opisa simulacije moguće je pokrenuti obračun.
+
+:::note Napomena
+
+Obrada može trajati duže vreme, naročito kada su uključene narudžbine, jer sistem mora simulirati očekivane tokove za svaku pojedinačnu stavku.
+:::
+
+Po završetku obračuna, novčani tok je moguće otvoriti i pregledati pomoću odgovarajuće funkcije za upravljanje.
+
+## Aktivni portfelj
+
+Potrebno je obratiti pažnju na vrednosne papire koji su uključeni u prezentacione liste, ali još nisu knjiženi.
+Takva situacija može nastati kada su vrednosni papiri kreirani iz dospelih potraživanja i uključeni u prezentacionu listu bez prethodnog knjiženja. U tom slučaju neće biti uključeni u novčani tok.
+Dodatno, bez obzira na postavljene filtere, datum dospeća vrednosnog papira mora biti jednak ili veći od datuma obrade novčanog toka.
+
+| Funkcija | Opis |
+|-----------|------|
+| **Generiši** | Pokreće postupak generisanja novčanog toka prema zadatim parametrima. |
+| **Izmeni** | Otvara prethodno generisani novčani tok u režimu za izmenu. |

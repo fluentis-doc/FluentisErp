@@ -1,42 +1,83 @@
 ---
-title: Upravljanje novčanim tijekom 
+title: Upravljanje novčanim tokom
 sidebar_position: 2
 ---
 
-Iz ovog obrasca prelazi se na učitavanje/izmjenu novčanog tijeka. 
+Ovaj obrazac služi za pregled, učitavanje i izmenu simulacija novčanog toka.
 
-S ovih izbornika moguće je kreirati/izmijeniti izračune simulacije novčanog tijeka. Uz ručno upravljanje, moguće je ručno unositi retke ili pozvati podatke putem tipke za preuzimanje prisutne na vrhu, odabirom vrste tijeka koji će otvoriti obrazac za pretragu i odabir povezanih podataka.
+Pored ručnog unosa i uređivanja podataka, moguće je automatski preuzimati informacije iz različitih modula sistema putem funkcije **Preuzimanje**, koja omogućava izbor izvora podataka za uključivanje u novčani tok.
 
-Iz ovog obrasca također je moguće pregledati izvorni dokument kako bi se procijenili podaci.
+Takođe je moguće otvoriti i pregledati originalni dokument iz kojeg je nastao pojedini finansijski tok radi dodatne provere podataka.
 
+## Funkcije na alatnoj traci
 
+| Funkcija | Opis |
+|-----------|------|
+| **Sačuvaj** | Čuva izmene novčanog toka. |
+| **Pronađi sve** | Prikazuje sve finansijske račune uključene u novčani tok. |
+| **Pronađi kretanja novčanog toka** | Pretražuje kretanja novčanog toka prema zadatim kriterijumima. |
+| **Preuzimanje** | Omogućava izbor izvora podataka iz kojeg će se preuzeti stavke za projekciju novčanog toka. |
+| **Novo kretanje toka** | Dodaje novi red u sekciji finansijskih računa. |
+| **Novo knjiženje glavne knjige** | Dodaje novi detalj u projekciju novčanog toka. |
+| **Obriši sve** | Briše sve unete transakcije. |
+| **Obriši knjiženje** | Briše izabrano knjiženje finansijskog računa. |
+| **Obriši novčani tok** | Briše odabrane stavke novčanog toka. |
+| **Prikaži originalni dokument** | Otvara izvorni dokument povezan sa izabranim tokom. |
 
-| Funkcija | Značenje |
-| --- | --- |
-| Spremi | Spremanje novčanog tijeka. |
-| Traži sve | Pretraživanje tijeka za financijske račune. |
-| Traži kretanje novčanog tijeka | Traži kretanje novčanog tijeka. |
-| Nabava | S ovom tipkom korisnik može odabrati vrstu tijeka iz kojeg će uzeti podatke predviđanja za umetanje u novčani tijek koji se koristi. |
-| Pokret novog toka | Aktivira se prilikom umetanja novog retka detalja u prometu financijskih računa. |
-| Novo knjiženje glavne knjige | Aktivira umetanje novog detalja u prognozu kretanja. |
-| Vrati sve | Brisanje svih unesenih transakcija. |
-| Vrati knjiženje | Brisanje unosa financijskih računa. |
-| Povrati novčani tijek | Brisanje stavaka novčanog tijeka. |
-| Prikaži originalni dokument | Prikazuje odabrani izvorni dokument tijeka. |
+## Funkcija Preuzimanje
 
-**GUMB (popis) *ZA PREUZIMANJE*:**
+Klikom na dugme **Preuzimanje** otvara se lista izvora iz kojih se mogu preuzeti podaci za simulaciju novčanog toka.
 
- 1. Dospijeća: obrazac omogućuje preuzimanje dospijeća plaćanja iz računovodstva; 
- 2. Računovodstvo: obrazac omogućuje preuzimanje salda financijskih računa; 
- 3. Vanbilančno računovodstveno: obrazac omogućuje preuzimanje podataka o rokovima koji nisu računovodstveni, vezani za novčani tok; 
- 4. Fakture (kupnja/prodaja): iz ovih obrazaca odabiru se podaci o rokovima faktura za kupnju/prodaju; 
- 5. Narudžbe (kupci/dobavljači): iz ovih obrazaca odabiru se simulacije preostalih podataka narudžbi kupaca/dobavljača (otpisane i potvrđene). Preporučuje se ostaviti zadane postavke obrasca; 
- 6. Neiskorišteni primatelji: obrazac omogućuje unos podataka o naknadama za neiskorištene primatelje u novčani tijek; 
- 7. Otpremnica (prodaja/kupnja): obrasci omogućuju preuzimanje podataka o otpremnicama koji nisu fakturirani; 
- 8. Radni nalog (narudžbe/povratci): obrasci omogućuju preuzimanje podataka iz narudžbi i odgovarajućih povratnica koje nisu fakturirane (ostaviti zadane postavke oba obrasca). 
+### 1. Dospela potraživanja i obaveze
 
+Omogućava preuzimanje dospeća iz računovodstva.
 
+### 2. Računovodstvo
 
+Omogućava preuzimanje stanja finansijskih računa iz glavne knjige.
 
+### 3. Vanbilansne stavke
 
+Omogućava preuzimanje vanbilansnih dospeća koja se koriste u projekcijama novčanog toka.
 
+### 4. Fakture (nabavka / prodaja)
+
+Omogućava preuzimanje rokova dospeća iz:
+- ulaznih faktura,
+- izlaznih faktura.
+
+### 5. Narudžbine (kupci / dobavljači)
+
+Omogućava preuzimanje simuliranih podataka iz:
+- prodajnih narudžbina,
+- nabavnih narudžbina.
+
+Uzimaju se u obzir potvrđene i odštampane narudžbine sa preostalim neisporučenim količinama.
+
+Preporučuje se korišćenje podrazumevanih postavki obrasca.
+
+### 6. Neiskorišćeni efekti
+
+Omogućava unos podataka o neiskorišćenim instrumentima naplate koji treba da budu uključeni u projekciju novčanog toka.
+
+### 7. Otpremnice (prodaja / nabavka)
+
+Omogućava preuzimanje podataka iz:
+- prodajnih otpremnica,
+- nabavnih prijemnica
+
+koje još nisu fakturisane.
+
+### 8. Kooperacija (narudžbine / povrati)
+
+Omogućava preuzimanje podataka iz:
+- narudžbina kooperantima,
+- povrata od kooperanata
+
+koji još nisu fakturisani.
+
+Preporučuje se korišćenje podrazumevanih podešavanja oba obrasca.
+
+:::tip Napomena
+Upravljanje novčanim tokom omogućava kombinovanje automatski preuzetih podataka sa ručno unetim projekcijama, čime se dobija preciznija simulacija budućih priliva i odliva sredstava.
+:::

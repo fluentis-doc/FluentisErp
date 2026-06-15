@@ -1,45 +1,35 @@
 ---
-title: Uvod 
+title: Uvod
 sidebar_position: 1
 ---
 
-Modul Novčani tijek (Cash Flow) u Fluentis ERP-u je koristan alat za analizu predviđenih poslovnih novčanih tokova.   
+Modul Novčani tok (*Cash Flow*) u Fluentis ERP-u predstavlja koristan alat za analizu planiranih novčanih tokova poslovanja.
 
-Omogućuje precizno praćenje prihoda i izdataka novca, pomažući tvrtkama da zadrže jasnu i ažuriranu sliku o svojoj likvidnosti. Modul se integrira s računovodstvenim i financijskim podacima kako bi pružio preciznu analizu i detaljne prognoze budućih novčanih tokova.  
+Omogućava precizno praćenje priliva i odliva novca, pomažući kompanijama da održe jasan i ažuran pregled svoje likvidnosti. Modul je integrisan sa računovodstvenim i finansijskim podacima kako bi omogućio precizne analize i detaljne projekcije budućih novčanih tokova.
 
-Modul također uključuje mogućnost ručnog unosa dodatnih rokova koji se ne nalaze u sustavu, poput budućih projekcija plaća zaposlenika, plana otplate već otpisanog duga iz računovodstva i slično. 
+Modul takođe omogućava ručni unos dodatnih dospeća koja nisu evidentirana u sistemu, kao što su buduće projekcije zarada zaposlenih, planovi otplate ranije otpisanih dugovanja iz računovodstva i slično.
 
-**Glavne funkcionalnosti**:
+## Glavne funkcionalnosti
 
-- Automatsko generiranje novčanog tijeka s mogućnošću uključivanja ili isključivanja tipova financijskog tijeka, uz jednostavno upravljanje putem oznake.
-- Mogućnost filtriranja po datumima za svaki pojedini tijek.
-- Detaljan pregled obrade novčanog tijeka s mogućnošću izvoza podataka u različite formate, uključujući Excel.
-- Izvršenje analitičkog izvještaja za čitanje rezultata s naglaskom na kretanje novčanog tijeka na kraju svakog mjeseca.
-- Mogućnost pregleda analitičkog izvještaja s grupiranjem po matičnoj banci. 
-- Mogućnost definiranja predviđenog datuma za svaki tijek, paralelno s datumom prirodnog dospijeća.
+- Automatsko generisanje novčanog toka uz mogućnost uključivanja ili isključivanja pojedinih tipova finansijskih tokova pomoću jednostavnih opcija za označavanje.
+- Mogućnost filtriranja po datumima za svaki pojedinačni tok.
+- Detaljan pregled obrađenih podataka novčanog toka sa mogućnošću izvoza u različite formate, uključujući Excel.
+- Izrada analitičkog izveštaja za pregled rezultata sa naglaskom na kretanje novčanog toka na kraju svakog meseca.
+- Mogućnost pregleda analitičkog izveštaja grupisanog po matičnoj banci.
+- Mogućnost definisanja planiranog datuma za svaki tok, paralelno sa njegovim prirodnim datumom dospeća.
 
-**Popis tablica potrebnih za upravljanje modulom:** 
+## Lista tabela potrebnih za korišćenje modula
 
-[Tipovi financijskih konta](/docs/configurations/tables/treasury/cash-flow-module-tables/financial-account-types),  
+- [Tipovi finansijskih konta](/docs/configurations/tables/treasury/cash-flow-module-tables/financial-account-types)
 
-[Tip tijeka](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types),  
+- [Tipovi tokova](/docs/configurations/tables/treasury/cash-flow-module-tables/flux-types)
 
-[Tipovi datuma dospijeća](/docs/configurations/tables/treasury/cash-flow-module-tables/due-date-types),  
+- [Tipovi datuma dospeća](/docs/configurations/tables/treasury/cash-flow-module-tables/due-date-types)
 
-[Tipovi narudžbe/otpremnice/fakture](/docs/configurations/tables/treasury/cash-flow-module-tables/order-dn-invoice-types)  
+- [Tipovi narudžbina/otpremnica/faktura](/docs/configurations/tables/treasury/cash-flow-module-tables/order-dn-invoice-types)
 
-[Šifarnik klijenta/dobavljača/agenta](/docs/configurations/tables/treasury/cash-flow-module-tables/customer-vendor-agent-register).
+- [Šifarnik kupaca/dobavljača/agenata](/docs/configurations/tables/treasury/cash-flow-module-tables/customer-vendor-agent-register)
 
-Također, u vezi sa svakom vrstom financijskog tijeka koja se aktivira, potrebno je upravljati unutar odgovarajućih tablica, poput Tipova otpremnica, Tipova narudžbi (kupci i dobavljači) itd., kako bi se odredile specifične vrste dokumenata koje trebaju biti praćene.
+Pored toga, za svaku aktiviranu vrstu finansijskog toka potrebno je izvršiti odgovarajuća podešavanja u povezanim tabelama, kao što su tipovi otpremnica, tipovi narudžbina (kupaca i dobavljača) i druge relevantne tabele, kako bi se definisalo koje vrste dokumenata treba uključiti u obračun novčanog toka.
 
-Na primjer, obično će se isključiti otpremnice koje nisu u sklopu prodaje, poput računa na skladištu, jer one neće generirati novčani tijek. 
-
- 
-
- 
-
-
-
-
-
-
+Na primer, uobičajeno je da se iz obračuna isključe otpremnice koje nisu povezane sa prodajom, kao što su interni skladišni dokumenti, jer one ne generišu novčani tok.
