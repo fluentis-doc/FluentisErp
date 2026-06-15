@@ -1,31 +1,25 @@
 ---
-title: Pretraga popisa avansa
+title: Pretraga lista avansa
 sidebar_position: 2
 ---
 
-U ovom obrascu pretražuju se već uneseni avansi u sustavu, koji se mogu otvoriti za pregled ili uređivanje dvostrukim klikom.
+U ovom obrascu moguće je pretraživati već evidentirane avanse u sistemu. Dokumenti se mogu otvoriti za pregled ili uređivanje dvostrukim klikom na željeni red.
 
-Također je moguće unijeti novi popis avansa pomoću gumba ***Novo***.
+Takođe je moguće kreirati novu listu avansa korišćenjem dugmeta **Novo**.
 
-U zaglavlju forme nalaze se **filtri** za pretragu koji se odnose na: 
+U zaglavlju obrasca nalaze se **filteri** za pretragu prema sljedećim kriterijumima:
 
-- konto banke (redoviti)  
-- konto za predujmove od strane banke 
-- broj predujma  
-- datum podnošenja  
-- vrstu obračuna  
+- konto banke (redovni račun),
+- konto bankarskog avansa,
+- broj avansa,
+- datum podnošenja,
+- vrsta obračuna,
 - status.
 
-Zastavica **Obračunato** označava i filtrira popis za koje je već pokrenut proces [**knjiženja**](/docs/treasury/advance/accounting/advances-list-accounting).
+Oznaka **Knjiženo** omogućava filtriranje lista avansa za koje je već pokrenuta procedura [**knjiženja**](/docs/treasury/advance/accounting/advances-list-accounting).
 
-U formi su također vidljiva sljedeća polja:
+U obrascu su prikazana i sljedeća informativna polja:
 
-**Ukupan popis:** Izračunato polje koje predstavlja zbroj ukupnog iznosa avansnih računa. 
+**Ukupan iznos liste**: izračunato polje koje predstavlja zbir ukupnih iznosa svih faktura uključenih u listu avansa.
 
-**Ukupan predujam:** Izračunato polje koje predstavlja zbroj iznosa koji je banka predvidjela za svaki račun.
-
-
-
-
-
-
+**Ukupan iznos avansa**: izračunato polje koje predstavlja zbir iznosa koje je banka odobrila za avansno finansiranje pojedinačnih faktura.

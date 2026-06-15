@@ -23,9 +23,3 @@ U formi su također vidljiva sljedeća polja:
 **Ukupan popis:** Izračunano polje koje predstavlja zbroj ukupnog iznosa avansnih računa. 
 
 **Ukupan predujma:** Izračunano polje koje predstavlja zbroj iznosa koji je banka predvidjela za svaki račun.
-
-
-
-
-
-
