@@ -3,7 +3,7 @@ title: Kreiraj popis avansa
 sidebar_position: 3
 ---
 
-Pristupanjem formi za unos novog popisa avansa, prvo je potrebno unijeti Vrstu predujma/avansa pomoću odgovarajuće padajuće liste (combo box).
+Pristupanjem formi za unos novog popisa avansa, prvo je potrebno unijeti Vrstu predujma/avansa pomoću odgovarajuće padajuće liste (*combo box*).
 
 Svi podaci povezani s odabranom vrstom predujma/avansa bit će automatski učitani.
 
