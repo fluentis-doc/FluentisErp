@@ -1,50 +1,48 @@
 ---
-title: Računovodstvo neplaćenih potraživanja
+title: Knjiženje nenaplaćenog na cesiju
 sidebar_position: 6
 ---
 
-Obrazac se nalazi u **Riznica** > **Portfelj učinaka** > **Knjiženja** > **Računovodstvo neplaćenih potraživanja**.
+Obrazac se nalazi u **Riznica > Vrijednosni papiri > Knjiženja > Knjiženje nenaplaćenog na cesiju**.
 
-Iz ove obrasca nastavlja se s knjiženjem nepodmirenih obveza prenesenih na plaćanje dobavljaču: procedura, prema postavkama računovodstvenog uzroka, ponovno će otvoriti kupce povezane s nepodmirenim potraživanjima, kao i zatvorene obveze dobavljača s prijenosom potraživanja.
+Ova funkcija služi za knjiženje nenaplaćenih vrijednosnih papira koji su prethodno preneseni dobavljaču kao sredstvo plaćanja. Postupak, prema postavkama odabranog kontnog naloga, ponovno otvara otvorene stavke kupaca povezane s nenaplaćenim vrijednosnim papirima te istovremeno ponovno otvara stavke dobavljača koje su bile zatvorene prijenosom tih vrijednosnih papira.
 
+## Kako knjižiti nenaplaćeni vrijednosni papir kod cesije
 
+1. U gornjem dijelu obrasca postavite filtre za pretraživanje nenaplaćenih vrijednosnih papira.
+2. U središnjoj tablici označite zapise koje želite knjižiti.
+3. U kartici **Parametri knjiženja** unesite potrebne podatke:
+   - **Konto-knjiženje**
+   - **Datum knjiženja**
+   - **Datum obračunskog razdoblja**
 
-## Kako računovodstveno obraditi neplaćeno potraživanje na osnovi cesije
-
-1. Iskoristite gornji dio obrasca za filtriranje pretraživanja neplaćenih stavki koje treba knjižiti.  
-2. Odaberite iz središnje mreže neplaćene stavke koje želite knjižiti.  
-3. Ispunite karticu parametara za knjiženje, unoseći podatke poput **Predložak knjiženja**, **datuma registracije** i **datuma dospijeća**..
-
-:::note[Nota]
-Ovaj odjeljak može biti unaprijed definiran pomoću [**parametara**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) unutar modula Portfelj efekata.
+:::note Napomena
+Ove se vrijednosti mogu unaprijed definirati u parametrima modula **Portfelj vrijednosnih papira**.
 :::
 
-Zastavica **Troškovi povrata** upravljat će naplatom troškova na računu kupca, prema tome registrirajući pripadajući prihod prema podračunu unesenom u istom obrascu (**Račun / podračun naplate troškova kupcu**).
+Opcija **Troškovi terećenja kupca** omogućuje zaduženje troškova kupcu te evidentiranje pripadajućeg prihoda na konto naveden u polju **Konto/podkonto za terećenje troškova kupcu**.
 
-Podračuni za **Troškove protesta** i račun **Privremeni** preuzimaju se iz parametara modula, ali se mogu izmijeniti ili dodavati svaki put.
+Podkonta za **Troškove protesta** i **Prijelazni konto** preuzimaju se iz parametara modula, ali ih je moguće promijeniti ili unijeti ručno za pojedinu obradu.
 
-4. Pritisnite gumb u traci izbornika **Računovodstvo neplaćenih potraživanja**.
+4. Kliknite **Knjiženje nenaplaćenih vrijednosnih papira** na alatnoj traci.
 
-**Specifične tipke**
+### Posebne funkcije
 
-**Traži**: Pretraži popis neplaćenih stavki za knjiženje. 
+- **Pretraži**: prikazuje popis nenaplaćenih vrijednosnih papira spremnih za knjiženje.
+- **Knjiži**: izvršava knjiženje za označene retke.
 
-**Knjiženje**: izvršava knjiženje za odabrane stavke.
+## Kartica Prethodna knjiženja
 
-### Predhodni
+Na kartici **Prethodna knjiženja** moguće je poništiti prethodno izvršena knjiženja.
 
-Na kartici Predhodni moguće je poništiti već izvršena knjiženja. 
+Poništenje je moguće samo ako je obračunsko razdoblje još uvijek otvoreno za izmjene (glavna knjiga nije zaključena i nije izvršeno zaključavanje konta).
 
-Poništenje će biti moguće samo ako je razdoblje još uvijek podložno izmjenama (nisu izvršeni ispis dnevnika ili zatvaranje računa). 
+Dvostrukim klikom na zapis moguće je otvoriti povezani knjižni nalog.
 
-Dvostruki klik na odjeljak s knjiženjima omogućit će prikaz povezane knjigovodstvene stavke. 
+Dostupna je i kartica za pregled eventualnih pogrešaka koje su nastale tijekom knjiženja.
 
-Dostupno je i izvješće za pregled pogrešaka zabilježenih tijekom knjiženja.
+### Posebne funkcije
 
-**Specifične tipke**
-
-**Traži**: Pretraži popis izvršenih knjiženja. 
-
-**Poništavanje knjiženja**: Izvršava obnovu odabranih knjiženja.
-
-**Poništavanje dugovanja**: Izvršava obnovu odabrane računovodstvene registracije.
+- **Pretraži**: prikazuje popis izvršenih knjiženja.
+- **Vrati knjiženje**: poništava odabrana knjiženja.
+- **Vrati nenaplaćeni vrijednosni papir**: poništava knjiženje povezano s pojedinačnim nenaplaćenim vrijednosnim papirom.

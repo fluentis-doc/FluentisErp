@@ -3,59 +3,57 @@ title: Knjiženje popisa
 sidebar_position: 2
 ---
 
-Obrazac se nalazi u Riznica > Portfelj efekata > Knjiženja > Knjiženje popisa.
+Obrazac se nalazi na putanji **Riznica > Vrijednosni papiri > Knjiženja > Knjiženje prezentacijskih lista**.
 
-Iz ovog obrasca pristupa se knjiženju naloga za plaćanje: postupak će zatvoriti račun povezan s [**vrstom**](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types) mjenica unesenih u nalog te otvoriti prijelazni račun banke unesen u nalogu.
+Ova funkcija služi za knjiženje prezentacijskih lista. Postupak zatvara konto povezan s vrstom vrijednosnih papira uključenih u prezentacijsku listu te otvara prijelazni konto banke definiran u samoj listi.
 
-::tip[Napomena]
-Generalno, ovu proceduru možete izvesti izravno **unutar popisa materijala** pomoću odgovarajuće tipke za **Knjiženje**..
+:::note Napomena
+Uobičajeno je da se knjiženje prezentacijske liste izvršava izravno unutar same prezentacijske liste pomoću funkcije **Knjiženje**.
 
-Iz ovog obrasca moguće je izvršiti masovno knjiženje više popisa materijala.
+Ovaj obrazac omogućuje masovno knjiženje više prezentacijskih lista odjednom.
 :::
 
-## Knjiženje popisa
+## Kako knjižiti prezentacijsku listu (popis)
 
-1. Iskoristite gornji dio obrasca za filtriranje pretraživanja popisa za knjiženje. Knjiženje popisa može se izvršiti samo za popise koji su otisnuti.
+1. U gornjem dijelu obrasca postavite filtre za pronalaženje prezentacijskih lista za knjiženje. Knjiženje je moguće izvršiti samo za liste koje imaju status **Ispisano**.
+2. U središnjoj tablici označite prezentacijske liste koje želite knjižiti.
+3. Unesite parametre knjiženja:
+   - **Konto-knjiženje**
+   - **Datum knjiženja**
+   - **Datum obračunskog razdoblja**
 
-2. Odaberite iz središnjeg dijela obrasca popise koje želite knjižiti.
-
-3. Ispunite parametre za contabilizaciju, kao što su **knjigovodstveni predložak**, **datum registracije** i datum odobrenja.
-
-:::note[Napomena]
-Ovaj se odjeljak može unaprijed definirati unutar [**parametara**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) modula Portfelj mjenica.  
+:::note Napomena
+Ove se vrijednosti mogu unaprijed definirati u parametrima modula [**vrijednosnih papira**](/docs/configurations/parameters/treasury/bills-portfolio-parameters).
 :::
 
-Flag **knjigovodstvo na datum dospijeća**: razdijelit će registraciju popisa na različite datume dospijeća efekata s dodatkom dana banke postavljenih u kartonu banke za zadani uzrok.
+### Dodatne opcije
 
-Flag **datum isteka s datumom valute koji je jednak datumu dospijeća**: zabilježiti će različite učinke na razne datume isteka, ali s datumom valute banke ispravljenim prema danima banke postavljenim u kartonu banke.
+- **Knjiženje prema datumu dospijeća**: razdvaja knjiženje prezentacijske liste prema pojedinačnim datumima dospijeća vrijednosnih papira, uz primjenu broja bankarskih dana definiranih u evidenciji banke za odabranu vrstu knjiženja.
+- **Datum dospijeća s datumom valute jednakim datumu dospijeća**: knjiži pojedinačne vrijednosne papire prema njihovim datumima dospijeća, dok se datum valute banke korigira prema broju bankarskih dana definiranih u evidenciji banke.
 
-4. Kliknite gumb na traci izbornika **Knjiži popise**
+4. Kliknite **Knjiženje prezentacijskih lista** na alatnoj traci.
 
+### Posebne funkcije
+- **Pretraži**: prikazuje popis prezentacijskih lista spremnih za knjiženje.
+- **Knjiženje**: izvršava knjiženje označenih prezentacijskih lista.
 
-**Specifični gumbi**
+:::important Generirani knjižni nalog
+Knjižna shema ove operacije je fiksna i ne ovisi o odabranom konto-knjiženju.
 
-**Traži**: Pretraži popis izvještaja za knjiženje.
+Tijekom ove faze zatvara se konto korišten u prethodnoj fazi **Knjiženja vrijednosnih papira**, odnosno konto portfelja vrijednosnih papira definiran za pojedinu [vrstu vrijednosnog papira](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-types).
 
-**Knjiženje**: Izvršava knjiženje za odabrane stavke.
+Kao protustavka koristi se konto za **prezentaciju, diskontiranje ili naplatu nakon dospijeća**, definiran u zaglavlju prezentacijske liste.
+:::
 
+## Kartica Prethodna knjiženja
 
-### Predhodni
+Na kartici **Prethodna knjiženja** moguće je poništiti prethodno izvršena knjiženja.
+Poništenje je moguće samo ako je obračunsko razdoblje još uvijek otvoreno za izmjene (glavna knjiga nije zaključena i nisu izvršena završna zatvaranja konta).
+Dvostrukim klikom na zapis moguće je otvoriti povezani knjižni nalog.
 
-S kartice prethodne moguće je poništiti izvršena knjiženja. 
+### Posebne funkcije
+- **Pretraži**: prikazuje popis izvršenih knjiženja.
+- **Poništi knjiženje**: poništava odabrana knjiženja.
+- **Poništi prezentacijsku listu**: poništava knjiženje povezano s odabranom prezentacijskom listom.
 
-Poništavanje će biti moguće samo ako je razdoblje još uvijek moguće mijenjati (knjiga dnevnika nije ispisana i računi nisu zatvoreni). 
-
-Dvostruki klik na odjeljak s registracijama omogućit će prikaz pripadajuće računovodstvene registracije.
-
-
-**Specifični gumbi**
-
-**Traži**: Pretraži popis izvršenih knjiženja.
-
-**Poništavanje knjiženja**: Izvršava obnovu odabranih knjiženja.
-
-**Poništavanje registracija**: Izvršava obnovu odabrane računovodstvene registracije.
-
-Prisutna je kartica sa detaljima za prikaz grešaka otkrivenih tijekom knjiženja.
-
-
+Dostupna je i kartica za pregled eventualnih pogrešaka nastalih tijekom knjiženja.

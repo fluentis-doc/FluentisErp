@@ -3,76 +3,52 @@ title: Knjiženje odobrenja
 sidebar_position: 3
 ---
 
-Obrazac se nalazi u Riznica > Portfelj potraživanja > Knjiženja > Knjiženje prihoda.
+Obrazac se nalazi na putanji **Blagajna > Vrednosni papiri > Knjiženja > Knjiženje odobrenja**.
 
-S ovog obrasca prelazi se na završnu fazu portfelja mjenica: postupak će zatvoriti prijelazni račun banke koja je izvršila prezentaciju kako bi se iznos prenio na stvarni tekući račun banke navedene u nalogu.
+Ova funkcija predstavlja završnu fazu obrade portfelja vrednosnih papira. Postupak zatvara prelazni konto banke korišćen tokom prezentacije i evidentira uplatu na stvarni tekući račun banke definisan u prezentacionoj listi.
 
-:::tip[Napomena]
-**Potrebno je izričito pristupiti ovom obrascu za ovu knjiženje, budući da nije predviđen nikakav gumb unutar mjenice ili naloga**. 
+:::tip Napomena
+Za ovu vrstu knjiženja potrebno je koristiti upravo ovaj obrazac jer nije moguće pokrenuti postupak iz obrasca vrednosnog papira ili prezentacione liste.
 :::
 
-## Knjiženje odobrenja
+## Kako knjižiti uplatu
 
-1. Koristite gornji dio obrasca za filtriranje pretrage mjenica koje treba knjižiti kao priljev: knjiženje priljeva može se izvršiti samo za već knjižene mjenice. Odabir se vrši na detaljima mjenica kako bi se mogli utvrditi iznosi koji se knjiže za svaki datum dospijeća
+1. U gornjem delu obrasca postavite filtere za pronalaženje vrednosnih papira za koje je potrebno evidentirati uplatu.
 
-2. Odaberite iz središnjeg dijela mjenice koje želite obraditi. 
+   Knjiženje uplata moguće je izvršiti samo za prethodno proknjižene vrednosne papire. Izbor se vrši na nivou pojedinačnih vrednosnih papira kako bi se mogla pratiti uplata za svaki datum dospeća.
 
-3. Popuni parametre za knjiženje, kao što su kontrolna **šifra knjiženja**, **datum knjiženja** i datum razgraničenja.
+2. U centralnoj tabeli označite vrednosne papire koje želite da obradite.
 
-:::note[Napomena]
-Ovaj se odjeljak može unaprijed postaviti unutar [**parametara**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) modula Portfelj mjenica.
+3. Unesite parametre knjiženja:
+
+   - **Kontni nalog**
+   - **Datum knjiženja**
+   - **Datum obračunskog perioda**
+
+:::note Napomena
+Ove vrednosti mogu biti unapred definisane u parametrima modula **Portfelj vrednosnih papira**.
 :::
 
-4. Također popunite i ostala polja za upravljanje knjiženjem:
+4. Unesite dodatne podatke potrebne za knjiženje.
 
-**Troškovi provizija**: podračun na koji će se knjižiti troškovi provizija, koji treba navesti u sljedećem polju.
+### Troškovi provizije
 
-**Provizije**: Iznos provizija na knjiženje priljeva mjenica koji se evidentira u računovodstvu; za svaku mjenicu može biti automatski predložen na temelju *provizija* postavljenih u [***šifarniku banaka***](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry).  
+- **Konto troškova provizije**: konto na koji će biti knjižene bankarske provizije.
 
-**Pasivni troškovi**:  račun na koji će se knjižiti obračunati pasivni kamatni troškovi za mjenice na eskont.
+- **Provizija**: iznos provizije obračunate prilikom naplate vrednosnog papira. Vrednost se može automatski predložiti na osnovu podataka definisanih u evidenciji banke.
 
-:::note[Napomena]
-U ovom su odjeljku također dostupna tri polja za prikaz ukupnih iznosa odabranih mjenica u središnjoj tablici:
+### Pasivne kamate
 
-**Ukupno odabranih pasivnih troškova**: zbroj vrijednosti pasivnih troškova za sve odabrane mjenice;
+- **Konto pasivnih kamata**: konto na koji će biti knjižene pasivne kamate obračunate prilikom diskontovanja vrednosnih papira.
 
-**Ukupno odabranih provizija**: zbroj vrijednosti provizija za sve odabrane mjenice;
+:::note Napomena
+U ovom delu obrasca prikazuju se i ukupni iznosi za odabrane vrednosne papire:
 
-**Ukupan iznos odabranih mjenica**:  zbroj vrijednosti svih odabranih mjenica;
+- **Ukupne pasivne kamate**: zbir svih iznosa pasivnih kamata za označene vrednosne papire.
+
+- **Ukupne provizije**: zbir svih provizija za označene vrednosne papire.
+
+- **Ukupan iznos odabranih vrednosnih papira**: zbir nominalnih iznosa svih označenih vrednosnih papira.
 :::
 
-4. Klikni gumb **Knjiženje priljeva** na traci izbornika
-
-
-
-**Specifični gumbi**
-
-**Traži**: Pretraži popis efekata za uplatu.
-
-**Knjiženje**: Izvršava knjiženje za odabrane stavke.
-
-
-
-### Predhodni
-
-S kartice Prethodni moguće je poništiti već izvršena knjiženja.
-
-Poništenje će biti moguće samo ako je razdoblje još uvijek izmjenjivo (knjiga dnevnika nije ispisana i računi nisu zatvoreni).
-
-Dvostruki klik na odjeljak s evidentiranim stavkama omogućit će prikaz pripadajućeg računovodstvenog zapisa. 
-
-Prisutna je kartica za detaljno pregledavanje uočenih grešaka tijekom knjiženja.
-
-
-
-**Specifični gumbi**
-
-**Traži**: Pretraži popis izvršenih knjiženja.
-
-**Poništavanje knjiženja**: Izvršava obnavljanje odabranih knjiženja za sve dokumente koji se u njima nalaze.
-
-**Poništavanje registracija**: Izvršava obnovu odabrane računovodstvene registracije.
-
-
-
-
+5. Kliknite na funkciju **Knjiženje uplata** na alatnoj traci kako biste izvršili knjiženje.

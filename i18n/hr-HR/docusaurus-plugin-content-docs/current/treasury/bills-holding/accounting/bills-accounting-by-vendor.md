@@ -1,50 +1,48 @@
 ---
-title: Knjiženje vrijednosnih papira i dobavljača 
+title: Knjiženje vrijednosnih papira prema dobavljaču
 sidebar_position: 4
 ---
 
-Obrazac se nalazi u Riznica > Portfelj učinaka > Knjiženja > Knjiženje vrijednosnih papira i dobavljača.
+Obrazac se nalazi na putanji **Riznica > Vrijednosni papiri > Knjiženja > Knjiženje vrijednosnih papira prema dobavljaču**.
 
-Iz ove maske prelazi se na knjiženje vrijednosnih papira i dobavljača: procedura će zatvoriti račun povezan s knjiženjima unesenih u popis i izvršit će knjiženje plaćanja dobavljača unesenih u popis.
+Ova funkcija služi za knjiženje prijenosa vrijednosnih papira dobavljaču. Postupak zatvara konto povezan s vrstom vrijednosnih papira uključenih u prezentacijsku listu te evidentira plaćanja dobavljačima definirana unutar iste liste.
 
-:::tip[Napomena]
-Knjiženje izvještaja može se izvršiti samo za izvještaje giro koji su ispisani, u kojima je odjeljak efekata jednak odjeljku plaćanja.
+:::tip Napomena
+Knjiženje je moguće izvršiti samo za ispisane prezentacijske liste prijenosa kod kojih je ukupni iznos vrijednosnih papira jednak ukupnom iznosu plaćanja.
 :::
 
-## Knjiženje izvještaja za dobavljača
+## Kako knjižiti vrijednosne papire prenesene dobavljaču
 
-1. Iskoristite gornji dio obrasca za filtriranje pretraživanja izvještaja za knjiženje.
-2. Odaberite iz središnjeg dijela popise materijala koje želite knjižiti.
-3. Popunite parametre za računovodstvo, kao što su **Računovodstveni predložak**, **datum knjiženja** i **datum dospijeća**.*.
+1. U gornjem dijelu obrasca postavite filtre za pronalaženje prezentacijskih lista koje treba knjižiti.
+2. U središnjoj tablici označite liste koje želite obraditi.
+3. Unesite parametre knjiženja:
+   - **Konto-knjiženje**
+   - **Datum knjiženja**
+   - **Datum obračunskog razdoblja**
 
-:::note[Napomena]
-Ova sekcija može biti unaprijed definirana unutar [**parametara**](/docs/configurations/parameters/treasury/bills-portfolio-parameters) unutar modula Portfelj računa.
+:::note Napomena
+Ove se vrijednosti mogu unaprijed definirati u parametrima modula **Portfelj vrijednosnih papira**.
 :::
 
-4. Izaberite gumb na traci izbornika **Knjiži vrijednosne papire**.
+4. Kliknite funkciju **Knjiženje prezentacijskih lista** na alatnoj traci.
 
-**Specifični gumbi**
+### Posebne funkcije
 
-**Traži**: Pretraži popis vrijednosnih papira za knjiženje. 
+- **Pretraži**: prikazuje popis prezentacijskih lista spremnih za knjiženje.
+- **Knjiženje prezentacijskih lista**: izvršava knjiženje za označene zapise.
 
-**Knjiženje vrijednosnih papira**: Izvršava knjiženje za odabrane stavke.
+## Kartica Prethodna knjiženja
 
-### Predhodni
+Na kartici **Prethodna knjiženja** moguće je poništiti prethodno izvršena knjiženja.
 
-S kartice prethodni moguće je poništiti izvršena knjiženja. 
+Poništenje je moguće samo ako je obračunsko razdoblje još uvijek otvoreno za izmjene (glavna knjiga nije zaključena i nisu provedena završna zatvaranja konta).
 
-Poništavanje će biti moguće samo ako je razdoblje još uvijek moguće mijenjati (knjiga dnevnika nije ispisana i računi nisu zatvoreni). 
+Dvostrukim klikom na zapis moguće je otvoriti povezani knjižni nalog.
 
-Dvostruki klik na odjeljak s registracijama omogućit će prikaz pripadajuće računovodstvene registracije. 
+Dostupna je i kartica za pregled eventualnih pogrešaka nastalih tijekom knjiženja.
 
-Dostupan je izvještaj za pregled grešaka uočenih tijekom knjiženja.
+### Posebne funkcije
 
-
-
-**Specifični gumbi**
-
-**Traži**: Pretraži popis izvršenih knjiženja. 
-
-**Poništavanje knjiženja**: Izvršava obnovu odabranih knjiženja.
-
-**Poništavanje vrijednosnih papira**: Izvršava obnovu odabranog knjiženja koje se odnosi na pojedinačni vrijednosni papir. 
+- **Pretraži**: prikazuje popis izvršenih knjiženja.
+- **Poništi knjiženje**: vraća odabrana knjiženja u prethodno stanje.
+- **Poništi prezentacijsku listu**: poništava knjiženje povezano s pojedinačnom prezentacijskom listom.

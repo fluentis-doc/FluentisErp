@@ -1,70 +1,70 @@
 ---
-title: Knjiženje dugovanja 
+title: Knjiženje nenaplaćenih dospelih potraživanja
 sidebar_position: 4
 ---
-Obrazac se nalazi u Riznica > Portfelj Efekata > Knjiženje > Knjiženje dugovanja.
 
+Obrazac se nalazi na putanji **Blagajna > Vrednosni papiri > Knjiženja > Knjiženje nenaplaćenih dospelih potraživanja**.
 
-Iz ovog obrasca prelazi se na knjiženje dugovanja: postupak ponovno otvara račune kupaca povezane s nepodmirenim potraživanjima i eventualno generira račun za naplatu troškova.
+Ova funkcija služi za knjiženje nenaplaćenih vrednosnih papira. Postupak ponovo otvara otvorene stavke kupaca povezane sa nenaplaćenim vrednosnim papirima i po potrebi generiše račun za zaduženje troškova.
 
-**Specifični gumbi**
+### Posebne funkcije
 
-**Traži**: Pretraži popis dugovanja za knjiženje.
+- **Pretraži**: prikazuje listu nenaplaćenih vrednosnih papira spremnih za knjiženje.
+- **Knjiži**: izvršava knjiženje za označene zapise.
 
-**Knjiženje**: Izvršava knjiženje za odabrane stavke.
+## Kako knjižiti nenaplaćeni vrednosni papir
 
-## Knjiženje dugovanja
+1. U gornjem delu obrasca postavite filtere za pronalaženje nenaplaćenih vrednosnih papira.
 
-1. Iskoristite gornji dio obrasca za filtriranje pretrage dugovanja za knjiženje. PAŽNJA: Prvo je potrebno izvršiti njihovo kreiranje.
+   > Pre knjiženja potrebno je prethodno evidentirati nenaplaćene vrednosne papire.
 
-2. Odaberite iz središnjeg dijela obrasca efekte koje želiš knjižiti.
+2. U centralnoj tabeli označite vrednosne papire koje želite da knjižite.
 
-3. Ispunite parametre za knjiženje kao što su **računovodstveni predložak** i **datum knjiženja**..
+3. Unesite parametre knjiženja:
+   - **Kontni nalog**
+   - **Datum knjiženja**
 
-:::note[Napomena]
-Ova sekcija može biti unaprijed definirana unutar [**parametara**](/docs/configurations/parameters/treasury/unpaids-parameters) unutar modula Dugovanja. 
+:::note Napomena
+Ove vrednosti mogu biti unapred definisane u parametrima modula [**Nenaplaćeni vrednosni papiri**](/docs/configurations/parameters/treasury/unpaids-parameters).
 
-Posebice:
+Posebno:
 
-- računovodstveni predložak se predlaže prema parametrima modula, 
-- datumi registracije su postavljeni na današnji datum; 
-- i podračuni za **Troškove protesta** i račun **Tranzit** preuzimaju se iz parametara modula, ali mogu se mijenjati ili unositi prema potrebi.
+- kontni nalog se predlaže prema podešavanjima modula,
+- datum knjiženja se predlaže kao tekući datum,
+- podkonta za **Troškove protesta** i **Prelazni konto** preuzimaju se iz parametara modula, ali ih je moguće izmeniti ili uneti ručno za pojedinačnu obradu.
 
-Flag **Sistematizacija knjiženja** bilježi u jednoj registraciji sve dugove predstavljene na istoj kreditnoj instituciji (banci): obično se ova opcija ne koristi, posebno ako je postavljena obaveza unosa datuma i broja fakture u računovodstveni predložak koji se koristi.
+Opcija **Zbirno knjiženje** omogućava knjiženje svih nenaplaćenih vrednosnih papira iste banke u jednom knjižnom nalogu. Ova mogućnost se retko koristi, naročito kada kontni nalog zahteva obavezan unos broja i datuma računa.
 
-Flag **Naknada troškova** omogućava ponovno naplaćivanje troškova kupcu: s ovom opcijom, aktivira se sekcija za upravljanje mogućnošću fakturiranja tih troškova umjesto izravnog knjiženja u računovodstvu. U ovoj sekciji svi se podaci moraju postaviti kako bi se mogla stvoriti faktura za prodaju. 
+Opcija **Zaduženje troškova kupcu** omogućava ponovno fakturisanje troškova kupcu. Aktiviranjem ove opcije prikazuje se dodatna sekcija za generisanje izlaznog računa umesto direktnog knjiženja troškova u glavnu knjigu. Za kreiranje računa potrebno je popuniti sva obavezna polja.
 
-Konačno, obavezno je unijeti: 
-- **tip plaćanja** i
-- **datum dospijeća plaćanja** koji će se dodijeliti za ponovno otvaranje stavke. Alternativno, flag **Datum dospijeća jednak datumu dospijeća efekta** 
+Takođe je potrebno definisati:
 
-Također u ovom slučaju dolazi do čitanja parametara obrasca za prijedlog ova dva podatka.
- 
-4. Kliknite gumb na traci izbornika **Knjiži**
+- **Vrstu plaćanja**
+- **Datum dospeća** za ponovo otvorenu stavku
 
-### Predhodni
+ili aktivirati opciju:
 
-Sa prethodne kartice moguće je izvršiti poništavanje izvršenih knjiženja.
+- **Datum dospeća jednak datumu dospeća vrednosnog papira**
 
-Poništavanje će biti moguće samo ako je razdoblje još uvijek moguće mijenjati (ako ispis knjige dnevnika i zatvaranje računa nisu izvršeni).
+I ovi podaci mogu biti automatski predloženi iz parametara modula.
+:::
 
-Dvostruki klik na sekciju registracija omogućit će pregled povezane računovodstvene registracije.
+4. Kliknite na **Knjiženje** na alatnoj traci.
 
-Prisutan je izvještaj za pregled uočenih pogrešaka tijekom knjiženja.
+## Kartica Prethodna knjiženja
 
+Na kartici **Prethodna knjiženja** moguće je poništiti prethodno izvršena knjiženja.
 
+Poništavanje je moguće samo ako je obračunski period još uvek otvoren za izmene (glavna knjiga nije zaključena i nisu izvršena završna zatvaranja konta).
 
+Dvostrukim klikom na zapis moguće je otvoriti povezani knjižni nalog.
 
-**Specifični gumbi**
+Dostupan je i pregled grešaka nastalih tokom knjiženja.
 
-**Traži**: Pretraži popis izvršenih knjiženja.
+### Posebne funkcije
 
-**Poništavanje knjiženja**: Izvršava obnovu odabranih knjiženja.
+- **Pretraži**: prikazuje listu izvršenih knjiženja.
+- **Poništi knjiženje**: poništava odabrana knjiženja.
+- **Poništi nenaplaćeni vrednosni papir**: poništava odabrani knjižni nalog povezan sa pojedinačnim nenaplaćenim vrednosnim papirom.
 
-**Poništavanje dugovanja**: Izvršava obnovu odabrane računovodstvene registracije.
-
-Prisutan je tab za pregled grešaka pohranjenih tijekom knjiženja.
-
-
-
-
+Dostupna je i posebna kartica za pregled svih grešaka evidentiranih tokom postupka knjiženja.
