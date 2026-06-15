@@ -3,7 +3,7 @@ title: Ispis Stanja popisa vrijednosnih papira
 sidebar_position: 2
 ---
 
-Da questa form è possibile stampare, secondo i filtri di ricerca impostati:
+Iz ovog obrasca moguće je ispisati, prema postavljenim kriterijima pretraživanja:
 
 - **Obavijest o dospijeću vrijednosnih papira**: Pismo upućeno kupcu s prikazom vrijednosnih papira koji uskoro dospijevaju, s pripadajućim referencama
 - **Grupirani računi**:  Račun upućen kupcu s prikazom stavki ili računi uključeni u svaki pojedini vrijednosni papir

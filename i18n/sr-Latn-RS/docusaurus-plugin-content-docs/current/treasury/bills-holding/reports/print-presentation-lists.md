@@ -1,12 +1,6 @@
 ---
-title: Ispis Popisa prezentacije
+title: Prezentaciona lista
 sidebar_position: 1
 ---
 
-Iz ovog prozora moguće je ispisati zbirne naloge za prezentaciju vrijednosnih papira prema postavljenom filteru. Ispis zbirnog naloga (označen statusnim pokazateljem ‘Ispisano’) obavezan je uvjet za njegovo knjiženje.
-
-
-
-
-
-
+Iz ovog prozora moguće je štampati prezentacione liste vrednosnih papira prema postavljenim kriterijumima pretrage. Štampanje prezentacione liste (označene statusom **„Štampano“**) predstavlja obavezan uslov za njeno knjiženje.

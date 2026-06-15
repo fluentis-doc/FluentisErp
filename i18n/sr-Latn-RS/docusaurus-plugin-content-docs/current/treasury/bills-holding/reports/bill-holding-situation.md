@@ -1,24 +1,25 @@
 ---
-title: Ispis Stanja popisa vrijednosnih papira
+title: Ispis stanja liste vrednosnih papira
 sidebar_position: 2
 ---
 
-Da questa form è possibile stampare, secondo i filtri di ricerca impostati:
+Iz ovog obrasca moguće je, prema postavljenim kriterijumima pretrage, štampati:
 
-- **Obavijest o dospijeću vrijednosnih papira**: Pismo upućeno kupcu s prikazom vrijednosnih papira koji uskoro dospijevaju, s pripadajućim referencama
-- **Grupirani računi**:  Račun upućen kupcu s prikazom stavki ili računi uključeni u svaki pojedini vrijednosni papir
-- **Portfelj vrijednosnih papira:** Ispis popisa vrijednosnih papira s prikazom njihovih glavnih podataka
-- **Stanje kreditnih okvira:** Ispis po banci koji prikazuje dodijeljeni, iskorišteni i preostali iznos kreditnog okvira
+- **Obaveštenje o dospeću vrednosnih papira**: dopis upućen kupcu sa prikazom vrednosnih papira koji uskoro dospevaju, zajedno sa pripadajućim referencama.
+- **Grupisani računi**: izveštaj sa prikazom stavki ili računa uključenih u svaki pojedinačni vrednosni papir.
+- **Portfelj vrednosnih papira**: pregled vrednosnih papira sa prikazom njihovih osnovnih podataka.
+- **Stanje kreditnih limita**: izveštaj po banci koji prikazuje odobreni, iskorišćeni i raspoloživi kreditni limit.
 
+## Kriterijumi pretrage
 
-## Kriteriji pretraživanja
+To su isti kriterijumi koji su dostupni u obrascu za pretragu [**Vrednosni papiri**](/docs/treasury/bills-holding/bills),
 
-To su isti kriteriji dostupni u formi za pretraživanje [**Vrijednosni papiri**](/docs/treasury/bills-holding/bills)
+uz dodatne filtere:
 
-uz dodatne filtre:
+- **Banka (šifra) / Naziv banke / ABI kod / CAB kod**: polja povezana sa sekcijom *Banka za plaćanje* unutar vrednosnog papira (banka preko koje se vrši naplata potraživanja).
 
-- **Banka (šifra) / Opis banke / ABI kod / CAB kod:** polja vezana uz sekciju Banka za plaćanje unutar vrijednosnog papira (banka preko koje se plaća dug)
+- **Banka prezentacije**: polje povezano sa sekcijom *Podaci o prezentaciji*, odnosno poljem *Banka prezentacije* unutar vrednosnog papira.
 
-- **Banka prezentacije:**  polje vezano uz sekciju *Podaci o prezentaciji*, polje *Banka prezentacije* unutar vrijednosnog papira
-- **Tip sastavnice materijala:** polje koje se odnosi na istoimeno polje *Vrsta* u zaglavlju zbirnog naloga prezentacije u koji je vrijednosni papir uključen
-- **Od / Do / datum / Broj zbirnog naloga**: podaci koji se odnose na zbirni nalog prezentacije u koji je vrijednosni papir uključen
+- **Tip prezentacione liste**: polje koje se odnosi na istoimeno polje *Vrsta* u zaglavlju prezentacione liste u koju je vrednosni papir uključen.
+
+- **Od / Do datum prezentacije / Broj prezentacione liste**: podaci koji se odnose na prezentacionu listu u koju je vrednosni papir uključen.

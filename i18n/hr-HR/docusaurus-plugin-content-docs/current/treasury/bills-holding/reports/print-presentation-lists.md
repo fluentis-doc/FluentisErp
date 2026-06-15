@@ -1,5 +1,5 @@
 ---
-title: Ispis Popisa prezentacije
+title: Prezentacijska lista
 sidebar_position: 1
 ---
 

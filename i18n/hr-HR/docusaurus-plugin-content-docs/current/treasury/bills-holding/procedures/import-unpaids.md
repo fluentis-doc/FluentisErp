@@ -1,32 +1,21 @@
 ---
-title: Uvoz podataka o potraživanjima 
+title: Uvoz podataka o potraživanjima
 sidebar_position: 3
 ---
 
-Iz ovog obrasca postupamo s uvozom popisa nepodmirenih obveza iz standardne telematičke datoteke za bankovnu komunikaciju. 
+Ovaj obrazac služi za uvoz popisa nenaplaćenih vrijednosnih papira iz standardne bankovne elektroničke datoteke.
 
-Obično je moguće aktivirati prijem tog traga popisa, koji djelomično preuzima istu datoteku poslanu s prijavom, unutar koje je uključen identifikator efekta. Čitanjem tog podatka možemo automatski kreirati popis nepodmirenih obveza, uz izravno bilježenje bankovnih naknada za svaki pojedini efekt. 
+U pravilu je moguće od banke zaprimiti datoteku s popisom nenaplaćenih vrijednosnih papira koja djelomično koristi iste podatke kao i datoteka prethodno poslana banci tijekom prezentacije. Budući da datoteka sadrži identifikator vrijednosnog papira, sustav može automatski prepoznati povezane zapise, kreirati popis nenaplaćenih vrijednosnih papira te evidentirati pripadajuće bankovne troškove za svaki pojedini zapis.
 
-Postupak započinje klikom na gumb **Izvrši uvoz**, koji će otvoriti masku za otvaranje datoteke u sustavu. Nakon što se pronađe datoteka u odgovarajućem direktoriju, potrebno je jednostavno otvoriti datoteku kako bi se nastavilo s uvozom popisa. 
+Postupak se pokreće funkcijom **Pokreni uvoz**, koja otvara dijalog za odabir datoteke. Nakon odabira odgovarajuće datoteke potrebno ju je samo otvoriti kako bi sustav izvršio uvoz.
 
-Eventualni popis efekata koji nisu pronađeni bit će prikazan u masci za pogreške: za te će biti potrebno ručno kreirati nepodmirenu obvezu. 
+Ako tijekom obrade pojedini vrijednosni papiri ne budu pronađeni u sustavu, prikazat će se popis pogrešaka. Za takve će zapise biti potrebno ručno evidentirati nenaplaćeni vrijednosni papir.
 
-Iz obrasca je također moguće izbrisati izvršeni uvoz: to će poništiti popis nepodmirenih obveza koji su kreirani s tim uvozom.
+Iz ovog obrasca moguće je i poništiti prethodno izvršeni uvoz. Poništavanjem uvoza automatski se brišu svi nenaplaćeni vrijednosni papiri kreirani tom uvoznom operacijom.
 
+### Posebne funkcije
 
-
-**Specifični gumbi**
-
-**Pretraga uvoza:** Ricerca la lista delle importazioni insoluti già eseguite.
-
-**Izvrši uvoz**: Ovim gumbom otvara se obrazac za odabir telematičke datoteke za koju će se izvršiti postupak uvoza. 
-
-**Prikazivanje datoteke nepodmirene obveze**: Prikazivanje telematičke datoteke uvezene nepodmirene obveze. 
-
-**Izbriši uvoz**: Izbriši izvršeni uvoz.
-
-
-
-
-
-
+- **Pretraži uvoze**: prikazuje popis prethodno izvršenih uvoza nenaplaćenih vrijednosnih papira.
+- **Pokreni uvoz**: otvara dijalog za odabir bankovne datoteke i pokretanje postupka uvoza.
+- **Prikaži datoteku nenaplaćenih vrijednosnih papira**: otvara uvezenu bankovnu datoteku.
+- **Obriši uvoz**: poništava odabrani uvoz i briše sve zapise kreirane tijekom tog postupka.

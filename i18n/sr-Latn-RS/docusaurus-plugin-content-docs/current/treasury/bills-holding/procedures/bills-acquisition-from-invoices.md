@@ -1,45 +1,35 @@
 ---
-title: Preuzimanje vrijednosnih papira iz računa 
+title: Preuzimanje vrednosnih papira iz računa
 sidebar_position: 1
 ---
 
-Postupak evidentiranja efekata iz računa sličan je onome koji se odnosi na [**stavke**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values), na koji se **upućuje** radi dodatnih informacija..
+Postupak preuzimanja vrednosnih papira iz računa sličan je postupku [**Preuzimanja vrednosnih papira iz otvorenih stavki**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values), na koji se upućuje za dodatne informacije.
 
-Izvorni podaci neće biti otvorene stavke, već izravno **rokovi dospijeća računa iz izlaznog ciklusa**.
+Razlika je u tome što izvor podataka nisu otvorene stavke, već direktno **rokovi dospeća računa iz prodajnog ciklusa**.
 
+:::tip Napomena
+Ova funkcionalnost omogućava kreiranje i predaju vrednosnih papira banci (na primer bankarskih menica na naplatu uz klauzulu „uz dobar ishod“) i pre knjiženja izdatih računa.
 
-:::tip[Napomena]
-To omogućuje da se izrada i predaja efekata banci (na primjer bankovnih mjenica za naplatu uz klauzulu „uz dobar ishod”) obavi unaprijed, čak i prije knjiženja izdanih računa.
-
-Preporučuje se prvo knjiženje izdanih računa, a tek nakon toga knjiženje izdavanja efekata, kako bi se omogućilo automatsko zatvaranje otvorenih stavki putem prvog knjiženja.
+Ipak, preporučuje se da se najpre proknjiže izdati računi, a zatim evidentira izdavanje vrednosnih papira, kako bi se omogućilo automatsko zatvaranje otvorenih stavki tokom prvog knjiženja.
 :::
 
-
-:::danger[Pažnja]
-**Upravljanje evidentiranjem efekata iz računa** predstavlja alternativu evidentiranju iz stavki.
+:::danger Pažnja
+**Preuzimanje vrednosnih papira iz računa** predstavlja alternativu preuzimanju iz otvorenih stavki. Nije predviđeno istovremeno korišćenje oba postupka za iste dokumente.
 :::
 
-**Specifični gumbi:**
+### Posebne funkcije
 
-**Traži**: Pretraži popis rokova za koje je potrebno stvoriti efekte.
+- **Pretraži**: prikazuje listu rokova dospeća za koje je potrebno kreirati vrednosne papire.
+- **Preuzimanje**: kreira vrednosne papire za odabrane rokove dospeća.
 
-**Preuzimanje** Izvršava stvaranje efekata za odabrane rokove.
+## Kartica Prethodna preuzimanja
 
+Nakon uspešno izvršenog preuzimanja, obrađeni redovi nestaju iz glavne tabele, a rezultat je vidljiv na kartici **Prethodna preuzimanja**, gde je moguće poništiti izvršenu operaciju.
 
-### Predhodni
+Nije moguće poništiti kreiranje vrednosnih papira ako su oni već proknjiženi ili uključeni u prezentacionu listu.
 
-Nakon izvršenja kreiranja, redci će nestati iz mreže, a rezultat će biti vidljiv u kartici **Vrati** unutar koje je moguće poništiti operaciju. 
+### Posebne funkcije
 
-Nije moguće poništiti kreiranje efekata ako su oni već računovodstveno evidentirani ili prikazani na popisu.
-
-
-**Specifični gumbi:**
-
-**Traži**: Pretraga popisa izvršenih kreacija.
-
-**Poništavanje preuzimanja**: Ovim gumbom bit će izbrisano cijelo preuzimanje, uključujući sve povezane efekte. 
-
-**Poništavanje efekta**: Ovim gumbom bit će izbrisano kreiranje pojedinačnog odabranog efekta.
-
-
-
+- **Pretraži**: prikazuje listu prethodno izvršenih preuzimanja.
+- **Poništi preuzimanje**: briše celo preuzimanje zajedno sa svim povezanim vrednosnim papirima.
+- **Poništi vrednosni papir**: briše pojedinačno kreirani vrednosni papir.
