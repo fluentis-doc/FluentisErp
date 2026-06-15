@@ -57,7 +57,7 @@ Prikazuju podatke banke preko koje se instrument naplate obrađuje:
 
 ### Podaci o prezentaciji
 
-Prikazuju podatke o prezentacijskoj listi putem koje je instrument predan banci (primjerice za naplatu ili inkaso).
+Prikazuju podatke o prezentacijskoj listi putem koje je instrument predan banci (primjerice za naplatu).
 
 ## Kartica Referetne dospjelosti
 
