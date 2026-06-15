@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 :::note[Info]
-Praksa predfinanciranja računa u banci predstavlja financijsku operaciju koju poduzeća često koriste kako bi osigurala trenutnu likvidnost. Riječ je o postupku u kojem se računi izdani klijentima naplaćuju unaprijed, prije njihovog dospijeća. Na taj način komercijalna potraživanja pretvaraju se u gotovinu, što omogućuje učinkovitije upravljanje novčanim tokom, pravovremeno podmirenje obveza te lakše planiranje ulaganja – bez potrebe za čekanjem na naplatu od klijenata.
+Praksa predfinanciranja (avansiranja) računa u banci predstavlja financijsku operaciju koju poduzeća često koriste kako bi osigurala trenutnu likvidnost. Riječ je o postupku u kojem se računi izdani klijentima naplaćuju unaprijed, prije njihovog dospijeća. Na taj način komercijalna potraživanja pretvaraju se u gotovinu, što omogućuje učinkovitije upravljanje novčanim tokom, pravovremeno podmirenje obveza te lakše planiranje ulaganja – bez potrebe za čekanjem na naplatu od klijenata.
 
 Tvrtka banci predočuje jedan ili više računa koje klijenti još nisu platili. Banka unaprijed isplaćuje dio vrijednosti računa, obično između 70% i 90%, zadržavajući dio kao jamstvo do potpune otplate. Kada klijent plati račun, banka zadržava proviziju i ostatak iznosa uplaćuje tvrtki.
 
@@ -19,7 +19,7 @@ U ovoj tablici definiraju se mogući tipovi avansa i odgovarajući parametri.
 
 ![](/img/it-it/treasury/advance/advances-collections/image01.png)
 
-**Šifra / Opis**: proizvoljan upis šife i opisa avansa.
+**Tip / Opis**: proizvoljan upis šifre i opisa avansa.
 
 **Vrsta obračuna** (šifra / opis): moguće opcije su Osnovica ili Ukupni dokument. Ovo označava hoće li postotak koji banka predfinancira biti izračunat na temelju ukupnog iznosa računa ili samo na osnovicu bez PDV-a. .
 

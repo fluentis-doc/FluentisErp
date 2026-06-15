@@ -4,45 +4,39 @@ sidebar_position: 1
 ---
 
 :::note[Info]
-Praksa predfinanciranja računa u banci predstavlja financijsku operaciju koju poduzeća često koriste kako bi osigurala trenutnu likvidnost. Riječ je o postupku u kojem se računi izdani klijentima naplaćuju unaprijed, prije njihovog dospijeća. Na taj način komercijalna potraživanja pretvaraju se u gotovinu, što omogućuje učinkovitije upravljanje novčanim tokom, pravovremeno podmirenje obveza te lakše planiranje ulaganja – bez potrebe za čekanjem na naplatu od klijenata.
+Praksa predfinansiranja (avansiranja) faktura kod banke predstavlja finansijsku operaciju koju preduzeća često koriste kako bi obezbijedila trenutnu likvidnost. Radi se o postupku u kojem se fakture izdate kupcima naplaćuju unaprijed, prije njihovog dospijeća. Na taj način komercijalna potraživanja pretvaraju se u gotovinu, što omogućava efikasnije upravljanje novčanim tokom, pravovremeno izmirenje obaveza i lakše planiranje investicija, bez potrebe čekanja na naplatu od kupaca.
 
-Tvrtka banci predočuje jedan ili više računa koje klijenti još nisu platili. Banka unaprijed isplaćuje dio vrijednosti računa, obično između 70% i 90%, zadržavajući dio kao jamstvo do potpune otplate. Kada klijent plati račun, banka zadržava proviziju i ostatak iznosa uplaćuje tvrtki.
+Preduzeće banci dostavlja jednu ili više faktura koje kupci još nisu platili. Banka unaprijed isplaćuje dio vrijednosti fakture, najčešće između 70% i 90%, zadržavajući preostali dio kao garanciju do potpune naplate. Kada kupac plati fakturu, banka zadržava svoju proviziju, a ostatak sredstava prenosi preduzeću.
 
-U računovodstvenom smislu, tvrtka bilježi dug prema banci za iznos koji je unaprijed isplaćen. Kada klijent izvrši uplatu, tvrtka zatvara dug prema banci i bilježi troškove za provizije i druge povezane izdatke.
+Sa računovodstvenog aspekta, preduzeće evidentira obavezu prema banci za iznos unaprijed isplaćenih sredstava. Kada kupac izvrši uplatu, zatvara se obaveza prema banci i evidentiraju se troškovi provizija i ostali povezani troškovi.
 :::
 
-Pomoću ovog modula Fluentis ERP-a moguće je upravljati popisima predfinanciranja računa koje treba dostaviti banci, umanjeno za provizije i kamate, te knjižiti i prezentaciju i konačnu naplatu.
+Pomoću ovog modula Fluentis ERP-a moguće je upravljati listama predfinansiranja faktura koje se dostavljaju banci, uz obračun provizija i kamata, kao i knjiženje prezentacije i konačne naplate.
 
-Prije unosa novih popisa predfinanciranja, potrebno je unaprijed postaviti tablicu TIPOVI AVANSA.
+Prije unosa novih lista predfinansiranja potrebno je prethodno definisati tabelu **TIPOVI AVANSA**.
 
-U ovoj tablici definiraju se mogući tipovi avansa i odgovarajući parametri.
+U ovoj tabeli definišu se dostupni tipovi avansa i pripadajući parametri.
 
 ![](/img/it-it/treasury/advance/advances-collections/image01.png)
 
-**Šifra / Opis**: proizvoljan upis šife i opisa avansa.
+**Tip / Opis**: slobodan unos šifre i opisa avansa.
 
-**Vrsta obračuna** (šifra / opis): moguće opcije su Osnovica ili Ukupni dokument. Ovo označava hoće li postotak koji banka predfinancira biti izračunat na temelju ukupnog iznosa računa ili samo na osnovicu bez PDV-a. .
+**Vrsta obračuna** (šifra / opis): dostupne opcije su **Osnovica** ili **Ukupan dokument**. Ova postavka određuje da li će procenat koji banka predfinansira biti obračunat na osnovu ukupnog iznosa fakture ili samo na poresku osnovicu bez PDV-a.
 
-**Postotak računa s predujmom**: ovdje se postavlja vrijednost postotka računa koji će banka predfinancirati.
+**Procenat predfinansiranja fakture**: definiše procenat vrijednosti fakture koji će banka predfinansirati.
 
 ![](/img/it-it/treasury/advance/advances-collections/image02.png)
 
-**Vrsta akvizicije**: moguće opcije su Dospijeće ili Računi. Ova opcija kontrolira samo način prikaza podataka u prozoru za pretraživanje prilikom kreiranja novog popisa avansa, odnosno hoće li se moći odabrati cijeli račun ili pojedinačna dospijeća računa. U svakom slučaju, s aspekta baze podataka, upravlja se svim dospijećima, čak i u načinu rada s računima.
+**Vrsta preuzimanja**: dostupne opcije su **Dospijeća** ili **Fakture**. Ova opcija kontroliše način prikaza podataka u prozoru za pretragu prilikom kreiranja nove liste avansa, odnosno da li će biti moguće odabrati cijelu fakturu ili pojedinačna dospijeća fakture. Bez obzira na odabrani način rada, sistem u pozadini uvijek upravlja dospijećima.
 
-**Numeracija**: potrebno je postaviti numeraciju iz odgovarajuće tablice numeratora za ovu vrstu dokumenta.
+**Numeracija**: potrebno je definisati numeraciju iz odgovarajuće tabele numeratora za ovu vrstu dokumenta.
 
-**Banka C/C**: (konto/podkonto opis): ovdje se unosi podkonto koji će se koristiti za knjiženje u vezi s bankovnim računom.
+**Banka T/R**: (konto/podkonto/opis) određuje podkonto koji će se koristiti za knjiženja povezana sa bankarskim računom.
 
-**Bankovni konto avansa**: konto koji će se koristiti za knjiženje bankovnog predfinanciranja/avansa.
+**Bankarski konto avansa**: konto koji će se koristiti za knjiženje bankarskog predfinansiranja odnosno avansa.
 
 ![](/img/it-it/treasury/advance/advances-collections/image03.png)
 
-**Konto pasivne kamate**: konto koji će se koristiti za knjiženje kamata na teret.
+**Konto pasivne kamate**: konto koji će se koristiti za knjiženje obračunatih kamata.
 
-**Konto za provizije**: konto koji će se koristiti za knjiženje bankovnih provizija.
-
-
-
-
-
-
+**Konto provizija**: konto koji će se koristiti za knjiženje bankarskih provizija.
