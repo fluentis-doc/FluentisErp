@@ -4,18 +4,18 @@ sidebar_position: 3
 ---
 
 Forma za pretraživanje lista: 
-- nalazi se u Riznica > Portfelj vrijednosnih papira > Vrijednosni papiri > Liste prezentacije
+- nalazi se u Riznica > Vrijednosni papiri > Popisi
 
 - omogućuje korisniku pretraživanje prethodno kreiranih lista prezentacije u svrhu njihovog pregleda, izmjene ili eventualnog brisanja.
 
 
 ## Gumbi na traci izbornika
 
-> - **Pretraživanje lista:** Gumb za pretraživanje lista prema filtrima definiranima u zaglavlju forme.
-> - **Nova lista:** Otvara formu za unos nove liste.
-> - **Izmjena liste:** Omogućuje izmjenu prethodno unesene liste.
-> - **Prikaz liste:** Prikazuje prethodno unesenu listu.
-> - **Brisanje liste:** Briše prethodno unesenu listu.
+> - **Traži:** Gumb za pretraživanje lista prema filtrima definiranima u zaglavlju forme.
+> - **Novo:** Otvara formu za unos nove liste.
+> - **Izmijeni:** Omogućuje izmjenu prethodno unesene liste.
+> - **Prikaži:** Prikazuje prethodno unesenu listu.
+> - **Ukloni:** Briše prethodno unesenu listu.
 
 > Izvršavanje **ispis** (*Pregled* ili *Ispis*) *Liste prezentacije*: pokreće, za selektirane liste (može ih se odabrati više istovremenim pritiskom na Ctrl), istoimeni ispis dostupan u [**izborniku ispisa**](/docs/treasury/bills-holding/reports/print-presentation-lists) modula.
 
@@ -27,7 +27,7 @@ Forma za pretraživanje lista:
 
 - **OD - DO Broj liste:** filtrira prema broju liste, vrijednosti generiranoj automatskim brojačem prilikom kreiranja liste.
 
-- **OD / DO datum prezentacije:** filtrira prema datumu prezentacije, podatku iz zaglavlja liste koji je po defaultu postavljen na *danas*, ali ga korisnik može promijeniti.
+- **OD / DO datum prezentacije:** filtrira prema datumu prezentacije, podatku iz zaglavlja liste koji je inicijalno postavljen na *danas*, ali ga korisnik može promijeniti.
 
 - **Valute:** filtrira prema valuti, podatku iz zaglavlja koji se odnosi na valutu vrijednosnih papira unutar liste, npr. za prikaz samo onih u dolarima.
 

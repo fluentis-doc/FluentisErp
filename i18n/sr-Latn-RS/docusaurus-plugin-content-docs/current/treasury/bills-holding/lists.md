@@ -1,50 +1,41 @@
 ---
-title: Popisi
+title: Liste
 sidebar_position: 3
 ---
 
-Forma za pretraživanje lista: 
-- nalazi se u Riznica > Portfelj vrijednosnih papira > Vrijednosni papiri > Liste prezentacije
+Forma za pretragu lista:
 
-- omogućuje korisniku pretraživanje prethodno kreiranih lista prezentacije u svrhu njihovog pregleda, izmjene ili eventualnog brisanja.
+- nalazi se na putanji **Blagajna > Vrednosni papiri > Liste**;
+- omogućava korisniku pretragu prethodno kreiranih prezentacionih lista radi njihovog pregleda, izmene ili eventualnog brisanja.
 
+## Dugmad na alatnoj traci
 
-## Gumbi na traci izbornika
+> - **Pretraži**: pokreće pretragu lista prema filterima definisanim u zaglavlju forme.
+> - **Novo**: otvara formu za unos nove liste.
+> - **Izmeni**: omogućava izmenu prethodno unete liste.
+> - **Prikaži**: prikazuje prethodno unetu listu.
+> - **Obriši**: briše prethodno unetu listu.
 
-> - **Pretraživanje lista:** Gumb za pretraživanje lista prema filtrima definiranima u zaglavlju forme.
-> - **Nova lista:** Otvara formu za unos nove liste.
-> - **Izmjena liste:** Omogućuje izmjenu prethodno unesene liste.
-> - **Prikaz liste:** Prikazuje prethodno unesenu listu.
-> - **Brisanje liste:** Briše prethodno unesenu listu.
+> Pokretanje funkcije **Štampa** (*Pregled* ili *Štampa*) za *Prezentacionu listu* pokreće, za označene liste (moguće je označiti više lista istovremenim pritiskom na taster `Ctrl`), odgovarajući izveštaj dostupan u [**meniju za štampu**](/docs/treasury/bills-holding/reports/print-presentation-lists) modula.
 
-> Izvršavanje **ispis** (*Pregled* ili *Ispis*) *Liste prezentacije*: pokreće, za selektirane liste (može ih se odabrati više istovremenim pritiskom na Ctrl), istoimeni ispis dostupan u [**izborniku ispisa**](/docs/treasury/bills-holding/reports/print-presentation-lists) modula.
+## Filteri u zaglavlju forme
 
-## Filtri u zaglavlju forme
+- **Vrsta**: filtrira prema vrsti liste definisanoj u tabeli [***Tipovi prezentacionih lista vrednosnih papira***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types).
 
-- **Vrsta:** filtrira prema vrsti liste, definiranoj u tablici [***Tipovi prezentacije popisa vrijednosnih papira***](/docs/configurations/tables/treasury/bills-portfolio-module-tables/bills-list-presentation-types)
+- **Banka**: filtrira prema **bankovnom tekućem računu** definisanom u zaglavlju liste.
 
-- **Banka:** filtrira prema **Tekući račun banke** postavljenom u zaglavlju liste.
+- **Od – Do broj liste**: filtrira prema broju liste, vrednosti koja se automatski generiše putem numeratora prilikom kreiranja liste.
 
-- **OD - DO Broj liste:** filtrira prema broju liste, vrijednosti generiranoj automatskim brojačem prilikom kreiranja liste.
+- **Od / Do datum prezentacije**: filtrira prema datumu prezentacije, podatku iz zaglavlja liste koji je inicijalno postavljen na tekući datum, ali ga korisnik može promeniti.
 
-- **OD / DO datum prezentacije:** filtrira prema datumu prezentacije, podatku iz zaglavlja liste koji je po defaultu postavljen na *danas*, ali ga korisnik može promijeniti.
+- **Valuta**: filtrira prema valuti definisanoj u zaglavlju liste, odnosno prema valuti vrednosnih papira uključenih u listu (na primer, za prikaz samo instrumenata u američkim dolarima).
 
-- **Valute:** filtrira prema valuti, podatku iz zaglavlja koji se odnosi na valutu vrijednosnih papira unutar liste, npr. za prikaz samo onih u dolarima.
+- **Odštampano**: ako je označeno, prikazuju se samo liste koje imaju status *Odštampano*.
 
-- **Ispisano:** ako je označeno, ovaj filter prikazuje samo ispisane liste (ili one s oznakom *ispisano* „true”).
+- **Proknjiženo**: ako je označeno, prikazuju se samo liste koje su proknjižene putem [odgovarajuće procedure](/docs/treasury/bills-holding/accounting/lists-accounting), odnosno liste sa statusom *Proknjiženo*.
 
-- **Knjiženo:** ako je označeno, ovaj filter prikazuje samo knjižene liste putem [odgovarajuće procedure](/docs/treasury/bills-holding/accounting/lists-accounting) (ili one s oznakom *knjiženo* „true”)
+## Tabela rezultata
 
+Forma prikazuje ista polja koja su dostupna u filterima opisanim iznad.
 
-## Tablica rezultata
-
-Ova forma prikazuje ista polja kao i filtri detaljno opisani gore.
-
-Također prikazuje **Ukupan iznos** liste (zbroj iznosa vrijednosnih papira unutar liste).
-
-
-
-
-
-
-
+Pored toga, prikazuje i polje **Ukupan iznos**, koje predstavlja zbir iznosa svih vrednosnih papira uključenih u prezentacionu listu.
