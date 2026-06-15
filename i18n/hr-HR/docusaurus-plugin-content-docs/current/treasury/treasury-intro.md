@@ -7,59 +7,57 @@ sidebar_position: 1
 
 Područje Riznice unutar sustava **Fluentis ERP** obuhvaća niz modula i procedura koje poduzeću omogućuju analizu tijeka planiranih novčanih tokova, procjenu pripadajućih rizika te upravljanje komunikacijom s financijskim institucijama – kako za ulazne, tako i za izlazne tokove.
 
-Uz ove funkcionalnosti praćenja i analize, dostupne su i različite procedure za svakodnevno operativno upravljanje transakcijama plaćanja i naplate, izdavanja te prezentacije mjenica i bankovnih priznanica na naplatu ili inkaso, kao i za upravljanje predujmovima na temelju izdanih računa prema banci.
+Uz navedene funkcionalnosti praćenja i analize, sustav nudi i različite postupke za svakodnevno upravljanje procesima plaćanja i naplate, izdavanje i predaju mjenica i bankovnih naplatnih instrumenata na naplatu ili uz klauzulu „uz naplatu po dospijeću”, kao i postupke financiranja putem otkupa (avansiranja) izlaznih računa kod banke.
 
-Modul je usko povezan s modulom Financije, što omogućuje čitanje otvorenih stavki iz dospijeća radi generiranja naloga za plaćanje i doznaka koje treba izvršiti, ili pak za izdavanje mjenica i bankovnih priznanica (Ri.Ba.).
+Modul je usko povezan s modulom Administracije (Financija), što omogućuje čitanje otvorenih stavki iz dospijeća radi generiranja naloga za plaćanje i doznaka koje treba izvršiti, ili pak za izdavanje mjenica i bankovnih priznanica (Ri.Ba.).
 
 Nakon obrade podataka, iste procedure omogućuju automatsko generiranje računovodstvenih zapisa za knjiženje raznih uplata i isplata, kao i za izdavanje, prezentaciju i naplatu mjenica i Ri.Ba. dokumenata.
 
-
 ### Detaljan pregled funkcionalnosti
-
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
 ###   <Link to="/docs/treasury/cash-flow/general-overview/">Novčani tok (Cash Flow)</Link>
-        <p>za provođenje preventivne analize potencijalnog novčanog toka, s mogućnošću kreiranja više scenarija uključivanjem ili isključivanjem određenih vrsta financijskih tokova (npr. s ili bez narudžbi kupaca, za više ili manje konsolidiran prikaz CF-a)</p>
+        <p>Za provođenje preventivne analize potencijalnog novčanog toka, s mogućnošću kreiranja više scenarija uključivanjem ili isključivanjem određenih vrsta financijskih tokova (npr. s ili bez narudžbi kupaca, za više ili manje konsolidiran prikaz CF-a)</p>
         <p>Uključuje i</p>
-        <p><Link to="/docs/treasury/cash-flow/off-balance-due-dates" className="bold-link">Vanjskobilančne dospjelosti</Link></p>
-        <p>za ručno uključivanje izvan-sustavnih predviđenih tokova u novčani tok</p>
+        <p><Link to="/docs/treasury/cash-flow/off-balance-due-dates" className="bold-link">Datum dospijeća vanbilančnih konta</Link></p>
+        <p>Za ručnu dopunu novčanog toka (cash flowa) prognoziranim tokovima koji nisu evidentirani u sustavu.</p>
         <p><Link to="/docs/treasury/cash-flow/reports" className="bold-link">Analitički ispis novčanog toka</Link></p>
-        <p>za cjeloviti prikaz očekivanih budućih rezultata</p>
+        <p>Za cjeloviti prikaz očekivanih budućih rezultata</p>
     </div>
     <div className="card">
-###   <Link to="/docs/treasury/advance/advances-collections">Predujmovi po fakturama</Link>
-        <p>Specifični modul za bankovno predfinanciranje temeljem izdanih faktura (obično za inozemne kupce)</p>
+###   <Link to="/docs/treasury/advance/advances-collections">Avansi i naplata</Link>
+        <p>Specijalizirani modul za bankovno financiranje (avansiranje) potraživanja po računima, najčešće za inozemne izlazne račune.</p>
     </div>
 </div>
 
 <div className="cardContainer">
     <div className="card">
-###   <Link to="/docs/treasury/bills-holding/general-overview">Portfelj mjenica</Link>
-        <p>za izdavanje, predaju i naplatu mjenica i bankovnih priznanica, uključujući njihovo automatsko knjiženje, kao i upravljanje nepodmirenim mjenicama i povezanim knjiženjima</p>
+###   <Link to="/docs/treasury/bills-holding/general-overview">Portfelj</Link>
+        <p>Za izdavanje, predaju i naplatu mjenica i bankovnih priznanica, uključujući njihovo automatsko knjiženje, kao i upravljanje nepodmirenim mjenicama i povezanim knjiženjima</p>
         <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices/" className="bold-link">Kreiranje mjenica iz faktura</Link></p>
         <p><Link to="/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values/" className="bold-link">Kreiranje mjenica iz otvorenih stavaka</Link></p>
     </div>
     <div className="card">
 ###   <Link to="/docs/treasury/vendors-payments/general-overview">Plaćanja dobavljačima</Link>
-        <p>za upravljanje nalozima za plaćanje putem bankovnog transfera, SDD naloga i pasivnih Ri.Ba. obavijesti, s automatskim knjiženjem</p>
-        <p><Link to="/docs/treasury/vendors-payments/procedures/block-passive-maturity-values" className="bold-link">Blokiranje pasivnih stavaka</Link></p>
-        <p>masovno upravljanje blokadom autorizacije za plaćanje pasivnih stavaka</p>
-        <p><Link to="/docs/treasury/vendors-payments/procedures/payments-support-management" className="bold-link">Upravljanje bankama za plaćanja</Link></p>
-        <p>upravljanje podacima o bankama predviđenima za izvršenje plaćanja</p>
+        <p>Za upravljanje nalozima za plaćanje putem bankovnog transfera i naloga, s automatskim knjiženjem</p>
+        <p><Link to="/docs/treasury/vendors-payments/procedures/block-passive-maturity-values" className="bold-link">Blokiranje pasivnih dospijeća plaćanja</Link></p>
+        <p>Masovno upravljanje blokadom odobrenja za plaćanje obveza.</p>
+        <p><Link to="/docs/treasury/vendors-payments/procedures/payments-support-management" className="bold-link">Upravljanje bankovnim plaćanjima</Link></p>
+        <p>Upravljanje bankovni podacima predviđenima za izvršenje plaćanja</p>
     </div>
 </div>
 <div className="cardContainer">
     <div className="card">
 ###   <Link to="/docs/treasury/bank-account/bank-movements">Bankovni računi</Link>
-        <p>za uvoz elektroničkih bankovnih izvoda i njihovo usklađivanje s računovodstvom, ili za korištenje istih pri generiranju knjiženja</p>
+        <p>Za uvoz elektroničkih bankovnih izvoda i njihovo usklađivanje s računovodstvom, ili za korištenje istih pri generiranju knjiženja</p>
     </div>
     <div className="card">
-###   <Link to="/docs/treasury/customer-risk/general-overview">Kreditni rizik kupaca</Link>
+###   <Link to="/docs/treasury/customer-risk/general-overview">(Kreditni) rizik kupaca</Link>
         <p>za upravljanje kreditnim limitom kod isporuka na odgodu plaćanja, nadzor ili blokadu u slučaju prekoračenja limita, analizu izloženosti kreditnom riziku putem raznih panela i pokazatelja</p>
-        <p><Link to="/docs/treasury/customer-risk/procedures/lock-manager" className="bold-link">Lock manager za autorizaciju prekoračenja</Link></p>
+        <p><Link to="/docs/treasury/customer-risk/procedures/lock-manager" className="bold-link">Upravljanje autorizacijom prekoračenja</Link></p>
         <p><Link to="/docs/treasury/customer-risk/procedures/customer-statement" className="bold-link">Izloženost kupaca</Link></p>
         <p><Link to="/docs/treasury/customer-risk/procedures/remittances-check" className="bold-link">Upravljanje doznakama</Link></p>
         <p>Za kontrolu prosječnog kašnjenja u plaćanjima</p>
@@ -67,7 +65,7 @@ import Link from '@docusaurus/Link';
 </div>
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/treasury/docfinance/general-overview">DocFinance i Piteco</Link>
+###     <Link to="/docs/treasury/docfinance/general-overview">DocFinance i Piteco (Italija)</Link>
         <p>za upravljanje uvozom i izvozom podataka prema najpoznatijim specijaliziranim softverima za trezor.</p>
     </div>
 </div>
@@ -91,18 +89,20 @@ Iako je moguće ručno unositi podatke kao što su izrada bankovne priznanice il
 
 Također se općenito koriste automatske procedure za knjiženje portfelja ili izvršenih uplata.
 
-Ostale funkcionalnosti predstavljaju softversku obradu na temelju postojećih podataka, npr. Cashflow s procedurom automatskog kreiranja (iako postoji mogućnost ručnog kreiranja pozivanjem financijskih tokova jedan po jedan, što se rijetko koristi) ili podaci izdvojeni iz modula Upravljanje rizikom kupaca.
+Ostale funkcionalnosti predstavljaju softversku obradu na temelju postojećih podataka, npr. *Cashflow* s procedurom automatskog kreiranja (iako postoji mogućnost ručnog kreiranja pozivanjem financijskih tokova jedan po jedan, što se rijetko koristi) ili podaci izdvojeni iz modula Upravljanje rizikom kupaca.
 
-## Tipičan tijek rada u području riznice
+## Tipični tijek rada – područje financija i trezora
 
-- "Trenutne" procedure: 
-    - izvršavanje plaćanja dobavljačima čitanjem otvorenih stavki i automatsko knjiženje samog plaćanja s zatvaranjem stavki
-    - izdavanje aktivnih mjenica (često bankovnih priznanica) čitanjem računa ili otvorenih stavki te automatsko knjiženje izdanih dokumenata
-    - izrada zbirnih naloga za prezentaciju mjenica (Ri.Ba.) na naplatu ili po principu "salvo buon fine" te izvoz telematske datoteke za slanje banci; automatsko knjiženje prezentacije
-    - naplata mjenica po principu automatsko preknjiženje
-    - eventualno pojavljivanje nepodmirenih potraživanja s ponovnim otvaranjem potraživanja kupca i automatskim knjiženjem
-    - izrada zbirnih naloga za predočenje faktura na diskont temeljem dospijeća, automatsko knjiženje predujma i naknadne potpune naplate
+### Redovne procedure
 
-- Procedure "na zahtjev":
-    - izrada novčanog toka (cash flow) na temelju postojećih podataka u sustavu (stanja, stavki, dokumenata iz ciklusa nabave i prodaje, mjenica, dokumenata kooperacije i proizvodnje)
-    - izrada statistika korištenja kreditnih limita kupaca ili kašnjenja u plaćanjima
+- Izvršavanje plaćanja dobavljačima na temelju otvorenih stavki uz automatsko knjiženje plaćanja i zatvaranje otvorenih stavki.
+- Generiranje naplativih instrumenata (najčešće bankovnih mjenica) na temelju računa ili otvorenih stavki te automatsko knjiženje izdavanja.
+- Kreiranje prezentacijskih lista za naplative instrumente (Ri.Ba.) za naplatu po dospijeću ili uz klauzulu „uz naplatu po dospijeću” te izvoz elektroničke datoteke za slanje banci uz automatsko knjiženje prezentacije.
+- Naplata instrumenata po dospijeću uz automatski prijenos sredstava.
+- Eventualno izdavanje zamjenskih instrumenata za nepodmirena potraživanja kupaca uz automatsko knjiženje.
+- Kreiranje prezentacijskih lista računa za diskontiranje na temelju dospjelih računa, uz automatsko knjiženje predujma i kasnije potpune naplate.
+
+### Procedure na zahtjev
+
+- Izrada novčanog toka (*cash flow*) korištenjem podataka dostupnih u sustavu (stanja računa, otvorene stavke, dokumenti prodajnog i nabavnog ciklusa, naplativi instrumenti, dokumenti kooperacije i proizvodnje).
+- Izrada statističkih analiza korištenja kreditnih limita kupaca i kašnjenja u plaćanjima.
