@@ -1,64 +1,101 @@
 ---
-title: Kreiranje i upravljanje dospijećima plaćanja
+title: Kreiranje i upravljanje vrijednosnim papirima
 sidebar_position: 5
 ---
 
-Obrazac se nalazi na putu **Riznica > Dospijeća plaćanja > Kreiraj dospijeće plaćanja** i omogućuje *ručno* kreiranje te upravljanje, izmjenu/pregled dospijeća plaćanja.
+Obrazac se nalazi na putanji **Riznica > Vrijednosni papiri > Vrijednosni papiri** te omogućuje **ručno kreiranje**, upravljanje, izmjenu i pregled vrijednosnih papira ili instrumenata naplate.
 
-## Kako kreirati novo dospijeće plaćanja
+## Kako kreirati novi vrijednosni papir
 
-:::tip[Pažnja]
-U nastavku su prikazani koraci za ***ručno***  kreiranje dospijeća plaćanja. Međutim, **ovaj način se rijetko koristi. Preporučuje se korištenje automatskih procedura:**
+:::tip Pažnja
+U nastavku je opisan postupak **ručnog kreiranja** instrumenta naplate. Ovaj način rada koristi se rijetko te se preporučuje korištenje automatskih procedura:
 
-[**Preuzimanje vrijednosnih papira iz dospijeća plaćanja**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)
-
-[**Preuzimanje vrijednosnih papira iz računa**](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)
+- [Preuzimanje iz otvorenih stavki](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values)
+- [Preuzimanje iz računa](/docs/treasury/bills-holding/procedures/bills-acquisition-from-invoices)
 :::
 
-Iz ovog obrasca:
+Za ručno kreiranje potrebno je:
 
-1. Odaberite **Vrsta računa**: program će automatski dodijeliti **broj** prema brojčaniku povezanom s odabranom vrstom dospijeća i prema **godini** na koju se odnosi, koja je zadano postavljena kao godina sistemskog datuma.
- 
-2. Ispunite polja **Dužnik** (s kontom glavne knjige osobe na koju glasi dospijeće plaćanja) i **Krajnji Rok** (s datumom dospijeća tog dospijeća plaćanja).
+1. Odabrati **vrstu vrijednosnog papira**. Sustav automatski dodjeljuje **broj dokumenta** prema numeraciji povezanoj s vrstom instrumenta i odgovarajućom **godinom**.
+2. Unijeti **dužnika** (konto kupca ili druge osobe na koju glasi instrument) i **datum dospijeća**.
+3. Spremiti zaglavlje dokumenta.
+4. Ručno unijeti **iznos u valuti** i **iznos instrumenta** ili ih automatski preuzeti iz povezanih otvorenih stavki odnosno dospijeća putem kartica **Reference dospijeća** i **Reference stavki**.
 
-3. Spremite zaglavlje dospijeća plaćanja.
+Polje **Iznos biljega** nije u uporabi.
 
-4. Unesite **Iznos u valuti** i **Iznos računa**  ručno, ili ih izračunaj automatski na temelju stavki/dospijeća odabranih iz kartica **referenci dospijeća/stavki**. Polje za iznos takse nije u upotrebi. U karticama referenci stavki ili dospijeća možeš koristiti naredbe **Unos stavki ili Unos dospijećae** kako bi pretražio i dodao stavke ili dospijeća u dospijeće plaćanja.
+Za povezivanje stavki ili dospijeća koriste se funkcije **Dodaj stavke** i **Dodaj dospijeća**.
 
-**Datum valute** je datum za primjenu tečaja u slučaju dospijeća plaćanja u valuti. Predlaže se jednak datumu dospijeća plaćanja.
+**Datum valute** predstavlja datum tečaja za instrumente u stranoj valuti i prema zadanim postavkama jednak je datumu instrumenta.
 
-Obvezni elementi koje je potrebno navesti su datum dospijeća, valuta i tečaj, kupac-dužnik te mjesto (popunjava se na temelju matičnih podataka povezanih s kupcem).
+Obavezni podaci su:
+- datum dospijeća,
+- valuta i tečaj,
+- kupac (dužnik),
+- mjesto plaćanja (automatski preuzeto iz podataka kupca).
 
-**Agent** je jednostavno referentno polje glavnog agenta izvorne fakture.
+**Agent** je informativni podatak koji prikazuje glavnog agenta povezanog s izvornim računom.
 
-**Status računa** predlaže se kao *izdano* i automatski će se ažurirati na temelju operacija koje će se izvršiti za dospijeće plaćanja.
+**Status instrumenta** inicijalno se postavlja na *Izdan* te se automatski mijenja tijekom daljnjih obrada.
 
-Oznaka **Ispisano** nije u upotrebi, dok *proknjiženo* i *odobreno* ovise o izvršenim postupcima knjiženja i odobrenja dospijeća plaćanja.
+Polje **Ispisano** nije aktivno, dok statusi **Knjiženo** i **Odobreno** ovise o izvršenim procedurama knjiženja i odobravanja.
 
-Polje **Referenca** je slobodno napomensko polje koje se prenosi u datoteku kao referenca operacije.
+Polje **Reference** služi za unos slobodnih napomena koje se prenose u datoteku kao opis operacije.
 
-### Kartica prezentacija
+## Kartica Prezentacija
 
-Sadrži dva dijela:
+Kartica sadrži dvije sekcije.
 
-**Banka**, gdje su prikazani podaci banke za naplatu kao što su **Šifre ABI/CAB** (obvezni za unos dospijeća plaćanja u platnu listu), uz *broj računa* (IBAN i SWIFT) i *CIN*, koji su potrebni samo u slučaju dospijeća plaćanja tipa RID.
+### Bankovni podaci
 
-**Podaci o prezentaciji**
-Prikazuje podatke o platnoj listi kojom je dospijeće plaćanja predano banci (na primjer, uz odgodu ili za naplatu).
+Prikazuju podatke banke preko koje se instrument naplate obrađuje:
 
-### Kartica Referencije dospijeća
+- ABI/CAB kodovi (obavezni za uključivanje instrumenta u prezentacijsku listu),
+- broj računa,
+- IBAN,
+- SWIFT,
+- CIN (potreban samo za RID instrumente).
 
-Ovdje se mogu vidjeti reference na izvornu fakturu (u slučaju korištenja postupka *preuzimanja dospijeća plaćanja prema dospijećima*), ili se mogu ručno dodavati dospijeća pomoću gumba *unos dospijeća*. U ovom slučaju moguće je unijeti i dospijeća koja nisu povezana s vrstama plaćanja kojima se upravlja dospijećima plaćanja (npr. *bankovne potvrde*), kao i dospijeća povezana s odobrenjima.
+### Podaci o prezentaciji
 
-### Kartica Referencije stavki
+Prikazuju podatke o prezentacijskoj listi putem koje je instrument predan banci (primjerice za naplatu ili inkaso).
 
-Ovdje se mogu vidjeti reference na izvorne stavke (u slučaju preuzimanja dospijeća plaćanja prema stavkama), ili se ručno mogu dodavati stavke pomoću gumba *unos stavki*.
+## Kartica Referetne dospjelosti
 
-Također je moguće unijeti i stavke koje nisu povezane s vrstama plaćanja kojima se upravlja dospijećima plaćanja (npr. *bankovne potvrde*), kao i stavke povezane s odobrenjima.
+Prikazuje reference izvornog računa kada je instrument nastao procedurom preuzimanja iz dospijeća ili omogućuje ručno dodavanje dospijeća putem funkcije **Dodaj dospijeće**.
 
-### Kartica Ostalo
-Ovdje se mogu pohraniti reference na girante i avaliste.
+Moguće je povezati i dospijeća koja nisu vezana uz vrste plaćanja koje koriste instrumente naplate te dospijeća kreditnih nota.
 
+## Kartica Reference dospjele vrijednosti
 
+Prikazuje reference otvorenih stavki kada je instrument nastao procedurom preuzimanja iz stavki ili omogućuje ručno dodavanje stavki putem funkcije **Dodaj stavku**.
 
+Moguće je povezati i stavke koje nisu vezane uz instrumente naplate te stavke kreditnih nota.
 
+## Kartica Ostalo
+
+Omogućuje pohranu podataka o indosantima i jamcima.
+
+## SDD – SEPA Direct Debit
+
+**SEPA Direct Debit (SDD)** zamjenjuje prethodni nacionalni sustav RID te predstavlja unaprijed odobren način naplate temeljen na mandatu koji dužnik daje vjerovniku.
+
+Temelji se na prethodnom sporazumu između dužnika i vjerovnika, kojim vjerovnik dobiva pravo pokretanja međubankovne procedure za automatsko terećenje računa dužnika.
+
+:::tip Kako kreirati SDD prezentacijsku listu
+
+Prije kreiranja SDD naloga potrebno je ispravno popuniti podatke:
+
+- u [evidenciji kupca](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information),
+- u postavkama vlastite tvrtke.
+
+Nakon toga potrebno je:
+
+1. Definirati vrstu instrumenta naplate **SDD** i povezati je s odgovarajućom [vrstom plaćanja](/docs/configurations/tables/general-settings/payment-types).
+2. Definirati odgovarajuću vrstu prezentacijske liste s uključenim postavkama za SDD.
+3. Kreirati SDD instrument korištenjem procedura:
+   - Preuzimanje instrumenata iz otvorenih stavki
+   - Preuzimanje instrumenata iz dospijeća
+4. Kreirati novu prezentacijsku listu tipa **SDD** i u nju uključiti odgovarajuće SDD instrumente.
+5. Koristiti funkciju **Izvoz SDD datoteke** za generiranje bankarske datoteke u SEPA formatu.
+
+:::

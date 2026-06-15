@@ -912,7 +912,7 @@
     "description": "The label for category Cash flow in sidebar treasury"
   },
   "sidebar.treasury.category.Portofoglio Effetti": {
-    "message": "Portfolio",
+    "message": "Vrijednosni papiri",
     "description": "The label for category Portofoglio Effetti in sidebar treasury"
   },
   "sidebar.treasury.category.Riba/Rid/Lcr": {
