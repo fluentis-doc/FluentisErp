@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Područje Riznice unutar sustava **Fluentis ERP** obuhvaća niz modula i procedura koje poduzeću omogućuju analizu tijeka planiranih novčanih tokova, procjenu pripadajućih rizika te upravljanje komunikacijom s financijskim institucijama – kako za ulazne, tako i za izlazne tokove.
 
-Uz navedene funkcionalnosti praćenja i analize, sustav nudi i različite postupke za svakodnevno upravljanje procesima plaćanja i naplate, izdavanje i predaju mjenica i bankovnih naplatnih instrumenata na naplatu ili uz klauzulu „uz naplatu po dospijeću”, kao i postupke financiranja putem otkupa (avansiranja) izlaznih računa kod banke.
+Uz navedene funkcionalnosti praćenja i analize, sustav nudi i različite postupke za svakodnevno upravljanje procesima plaćanja i naplate, izdavanje i predaju mjenica i bankovnih naplatnih instrumenata na naplatu ili uz klauzulu „uz naplatu po dospijeću”, kao i postupke financiranja putem otkupa (*avansiranja*) izlaznih računa kod banke.
 
 Modul je usko povezan s modulom Administracije (Financija), što omogućuje čitanje otvorenih stavki iz dospijeća radi generiranja naloga za plaćanje i doznaka koje treba izvršiti, ili pak za izdavanje mjenica i bankovnih priznanica (Ri.Ba.).
 
