@@ -1,13 +1,13 @@
 ---
-title: Popis plaćenih računa i računa plaćenih predujmom
+title: Lista naplaćenih i avansno finansiranih faktura
 sidebar_position: 4
 ---
 
-Ovdje je moguće pokrenuti ispis koji sažima unaprijed naplaćene fakture.
+U ovom obrascu moguće je pokrenuti izvještaj koji daje pregled faktura obuhvaćenih postupkom avansnog finansiranja.
 
-Prisutni su glavni elementi filtriranja poput vrste fakture (izlaznog računa), banke koja je odobrila predujam, klijenta, kao i reference na popis predujma.
+Dostupni su osnovni kriterijumi filtriranja, kao što su: vrsta fakture (izlazna faktura), banka koja je odobrila avans, kupac, referenca na listu avansa.
 
-Također, moguće je ograničiti prikaz samo na fakture koje su već naplaćene, one koje su unaprijed naplaćene ili koje tek treba naplatiti.
+Takođe je moguće ograničiti prikaz samo na: fakture koje su već naplaćene, fakture koje su avansno finansirane, fakture koje još nisu naplaćene.
 
 ![](/img/it-it/treasury/advance/report-advanced-collected-invoices-list/image01.png)
 
