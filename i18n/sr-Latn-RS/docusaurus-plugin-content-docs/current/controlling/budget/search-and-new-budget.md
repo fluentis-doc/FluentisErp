@@ -1,91 +1,96 @@
 ---
-title: Pretraživanje i Novi Budžet
+title: Pretraživanje i Novi budžet
 sidebar_position: 4
 ---
 
 ## Pretraživanje
 
-Naredba **Budžet** omogućuje pretraživanje, upravljanje i ispis budžeta. Možemo kreirati nove zapise (pomoću tipke Novi na traci izbornika ili naredbom Novi budžet u izborniku), uređivati postojeće ili duplicirati prethodno kreirani budžet. Prilikom dupliciranja pojavit će se popup prozor s opcijama:  
--	odrediti želimo li kreirati **Novu verziju** (označeno polje) odabranog budžeta ili novi budžet s novim brojem (polje postavljeno na false);   
--	unijeti **Opis** za kopiju koja se stvara.  
--	odabrati hoće li se primijeniti (true) ili ne (false) **ostotci promjene** dodijeljeni različitim podračunima.  
+Naredba **Budžet** omogućava pretraživanje, upravljanje i ispis budžeta. Moguće je kreirati nove zapise (pomoću dugmeta **Novi** na alatnoj traci ili opcijom **Novi budžet** u meniju), uređivati postojeće ili duplirati prethodno kreiran budžet. Prilikom dupliranja pojaviće se dijalog sa sledećim opcijama:
 
-Obrazac pretraživanja Budžeta prema zadanim postavkama prikazuje samo posljednju verziju svakog budžeta (uz istu *Broj* Budžeta, *Tip* Budžeta i *Tip razdoblja*): otvaranjem odjeljka za filtriranje obrasca bit će moguće prikazati i prethodne verzije, koje ostaju u memoriji, aktiviranjem flag-a **Prikaži sve verzije**.
+- određivanje da li se kreira **nova verzija** odabranog budžeta ili novi budžet sa novim brojem,
+- unos **opisa** za kopiju koja se kreira,
+- izbor da li će se primeniti **procenti promene** dodeljeni različitim podkontima.
 
+Forma za pretragu budžeta podrazumevano prikazuje samo poslednju verziju svakog budžeta (sa istim *Brojem* budžeta, *Tipom* budžeta i *Tipom perioda*). Otvaranjem sekcije za filtriranje moguće je prikazati i prethodne verzije aktiviranjem opcije **Prikaži sve verzije**.
 
-:::note[Napomena]
-Tablica [**Postoci valorizacije**](/docs/configurations/tables/controlling/analytical-accounting/variation-percentages), koja se nalazi u tablicama Controllinga, omogućuje definiranje postotne promjene za fiksni i varijabilni dio vrijednosti podračuna. Svaki kod se potom može dodijeliti pojedinom podračunu troška/prihoda unutar plana konta.
+:::note Napomena
+Tabela [**Procenti valorizacije**](/docs/configurations/tables/controlling/analytical-accounting/variation-percentages), koja se nalazi među tabelama Controllinga, omogućava definisanje procentualne promene za fiksni i varijabilni deo vrednosti podkonta. Svaki kod može se dodeliti pojedinačnom podkontu troška ili prihoda u kontnom planu.
 :::
 
-:::tip[Konsolidirani budžet]
-Sljedeće naredbe u izborniku, za pretraživanje i unos novog **Konsolidiranog budžeta** omogućuju kreiranje obračuna na razini ostvarenja, radi isticanja **analize odstupanja** u odnosu na planirani budžet definiran u ovoj formi, te za procjenu tijeka upravljanja.  
+:::tip Konsolidovani budžet
+Opcije za pretragu i unos novog **Konsolidovanog budžeta** omogućavaju kreiranje obračuna na nivou realizacije radi prikaza **analize odstupanja** u odnosu na planirani budžet definisan u ovoj formi, kao i procenu rezultata poslovanja.
 :::
 
-## Novi Budžet
+## Novi budžet
 
-1. Popuniti obavezne podatke u zaglavlju, kao što su *Vrsta budžeta*, *Vrsta razdoblja*, **Opis**. Po potrebi izmijeniti ostale podatke, poput datuma, godine i referentnih datuma budžeta (**Datum početka - Datum završetka**). Obavezno je unijeti ili godinu ili raspon datuma (u ovom drugom slučaju, Fluentis automatski popunjava polje godina prema godini datuma početka).  
+1. Popuniti obavezne podatke u zaglavlju, kao što su *Tip budžeta*, *Tip perioda* i **Opis**. Po potrebi izmeniti ostale podatke, kao što su datum, godina i referentni datumi budžeta (**Datum početka – Datum završetka**). Obavezno je uneti godinu ili vremenski period. U slučaju unosa perioda, Fluentis automatski popunjava polje godine prema godini datuma početka.
 
-- Flag **Definitivno**: čini budžet neizmjenjivim;   
-- Flag **Zadani**: označava koji je budžet u upotrebi u odnosu na druge verzije koje se koriste, primjerice, samo za simulaciju;   
-- Flag **Detaljno po odjelu**: omogućuje povezivanje *podbudžeta* s pojedinim poslovnim odjelima.
+   - **Definitivan** – budžet postaje neizmenjiv.
+   - **Podrazumevani** – označava budžet koji je aktivan u odnosu na druge verzije koje se koriste, na primer za simulacije.
+   - **Detaljno po organizacionoj jedinici** – omogućava povezivanje podbudžeta sa pojedinačnim organizacionim jedinicama.
 
-2. opuniti podatke u gornjoj tablici unosom **vrsta vrijednosti** koje će se koristiti u budžetu (u vezi s detaljima *podbudžeta*), odabirom iz polja **Vrsta objekta budžeta**:
-    - Podračuni konta
-    - Centri troška / prihoda
-    - Modeli reklasifikacije
-    - Artikli
- 
-Ovisno o vrsti podataka, omogućuje se odgovarajući stupac za postavljanje podataka (u slučaju računovodstvenih podataka ili modela reclassifikacije).  
-Stupac **Opis**, koji je fakultativan, omogućuje unos dodatnih detalja o odabranim podacima;
+2. Popuniti podatke u gornjoj tabeli unosom **vrsta vrednosti** koje će se koristiti u budžetu, izborom iz polja **Tip budžetskog objekta**:
 
-Stupac **Odjel** aktivan je samo ako je u zaglavlju uključena opcija definiranja budžeta po odjelima.
+   - Podkonta
+   - Centri troška / prihoda
+   - Modeli reklasifikacije
+   - Artikli
 
-3. Upravljati donjim tablicama u skladu s odabranom vrstom podbudžeta:
+   U zavisnosti od vrste podataka aktivira se odgovarajuća kolona za unos.
 
-- Mreža u donjem lijevom kutu sadrži popis s detaljima vrijednosti vezanim uz odabrani pod-budžet iznad, stoga će dostupna polja ovisiti o vrsti samog pod-budžeta (vrsta podataka), zadržavajući zajedničke iznose *dugovanje*, *potraživanje*, iznos *fiksno* i iznos *varijabilno*. Postotna valorizacija iznosa fiksnog i varijabilnog može se unaprijed definirati u planu računa, ispunjavanjem polja *varijabilnost* na razini podračuna ili na razini mreže varijabilnosti podračuna za troškovni centar.
+   Kolona **Opis** je opciona i omogućava unos dodatnih informacija o odabranim podacima.
 
-:::note[Primjer]
-Ako je pod-budžet za podračune, imat ćemo popis podračuna; ako je tip centara troškova, imat ćemo podračun i centar troškova; ako je tip centra prihoda, imat ćemo podračun i centar prihoda; ako je tip modela, moći ćemo odabrati čvorove povezanog modela.
+   Kolona **Organizaciona jedinica** aktivna je samo ako je u zaglavlju uključena opcija budžetiranja po organizacionim jedinicama.
+
+3. Upravljati donjim tabelama u skladu sa odabranom vrstom podbudžeta.
+
+   Mreža u donjem levom delu sadrži detaljne vrednosti povezane sa odabranim podbudžetom. Dostupna polja zavise od vrste podbudžeta, pri čemu su zajednička polja *dugovanje*, *potraživanje*, *fiksni iznos* i *varijabilni iznos*. Procentualna valorizacija fiksnog i varijabilnog iznosa može se unapred definisati u kontnom planu, popunjavanjem polja *varijabilnost* na nivou podkonta ili kroz tabelu varijabilnosti podkonta po centru troška.
+
+:::note Primer
+Ako je podbudžet definisan po podkontima, prikazuje se lista podkonta. Ako je definisan po centrima troška, prikazuju se podkonto i centar troška. Ako je definisan po centrima prihoda, prikazuju se podkonto i centar prihoda. Ako je definisan po modelima reklasifikacije, moguće je birati čvorove povezanog modela.
 :::
 
-Jednom kada se počnu unositi podaci o detaljima pod-budžeta, gornji red povezan neće više biti moguće uređivati.
+Nakon početka unosa detalja podbudžeta više nije moguće menjati povezani red u gornjoj tabeli.
 
-- Mreža **desno** omogućit će unos podataka po razdobljima: u slučaju ručnog unosa u mrežu lijevo, trenutno ne postoji automatsko vrednovanje niti provjera usklađenosti detaljnog odjeljka desno s onim lijevo.
+Mreža **desno** omogućava unos podataka po periodima. Kod ručnog unosa trenutno ne postoji automatska valorizacija niti provera usklađenosti između podataka unetih u levu i desnu tabelu.
 
 ### Procedure automatskog popunjavanja podbudžeta
 
-Unutar budžeta nalaze se neke tipke koje omogućuju automatsko vrednovanje podataka različitih pod-budžeta, preuzimajući podatke iz drugih sekcija Fluentis-a u zavisnosti od odabranog pod-budžeta.
+Unutar budžeta postoje dugmad koja omogućavaju automatsko popunjavanje različitih podbudžeta preuzimanjem podataka iz drugih delova Fluentis sistema, u zavisnosti od izabranog tipa podbudžeta.
 
-**BUDŽET ZA PODRAČUNE**
+**BUDŽET ZA PODKONTA**
 
-Ovaj podbudžet može se popuniti pomoću dvije tipke:  
--	**Kreiraj iz knjiženja**: otvara popup prozor za filtriranje datuma knjiženja, razdoblja, eventualnih konta koja treba isključiti (npr. zatvaranje prethodnih razdoblja), uključivanje konta bilance (ekonomski dio uvijek se uzima), primjena postotaka promjene (iz tablice Postotci promjene) i primjena vrijednosti po razdoblju ili originalnih ekonomskih razdoblja knjiženja.   
+Ovaj podbudžet može se popuniti pomoću sledećih funkcija:
 
-:::note[Napomena]
-Opcije vrijednost po razdoblju i originalna ekonomska razdoblja su alternativne. Fluentis popunjava detalje po razdoblju u desnoj tablici, čitajući ponderirane vrijednosti ili uzimajući stvarne datume ekonomskog razdoblja knjiženja (npr. ako trošak X ima samo jedno knjiženje od 01/03 do 31/08, desno će se prikazati vrijednosti od ožujka do kolovoza, proporcionalno broju dana u mjesecu).  
+- **Kreiraj iz knjiženja**: otvara dijalog za filtriranje datuma knjiženja, obračunskih perioda, eventualnih konta koja treba isključiti (na primer zatvaranja prethodnih perioda), uključivanje bilansnih konta (ekonomski deo se uvek uključuje), primenu procenata promene (iz tabele Procenti promene) i primenu vrednosti po periodima ili prema originalnim ekonomskim periodima knjiženja.
+
+:::note Napomena
+Opcije *Vrednost po periodu* i *Originalni ekonomski periodi* međusobno se isključuju. Fluentis popunjava detalje po periodima u desnoj tabeli koristeći ponderisane vrednosti ili originalne datume ekonomskog perioda knjiženja. Na primer, ako trošak ima jedno knjiženje od 01.03. do 31.08., u desnoj tabeli biće prikazane vrednosti od marta do avgusta proporcionalno broju dana u svakom mesecu.
 :::
 
-- **Kreiraj iz međugodišnjeg zatvaranja**: otvara popup za odabir izvora podataka i primjenu istih opcija kao i kod prethodne tipke (uključivanje konta bilance, postotci promjene, primjena vrijednosti po razdoblju ili originalne ekonomske datume).  
+- **Kreiraj iz međugodišnjeg zatvaranja**: otvara dijalog za izbor izvora podataka i omogućava korišćenje istih opcija kao kod prethodne funkcije (uključivanje bilansnih konta, procenti promene, vrednosti po periodima ili originalni ekonomski periodi).
 
-- **Grupiraj detaljne retke**: koristi se kada je odabrana opcija *Koristi originalna ekonomska razdoblja*. Fluentis tada generira detaljan redak za svako ekonomsko razdoblje, što olakšava provjeru, ali otežava upravljanje ukupnim budžetom. Tipka grupira vrijednosti po podračunu.
+- **Grupiši detaljne redove**: koristi se kada je aktivirana opcija *Koristi originalne ekonomske periode*. Fluentis tada generiše poseban red za svaki ekonomski period, što olakšava kontrolu podataka, ali otežava pregled budžeta. Ova funkcija grupiše vrednosti po podkontima.
 
-**BUDŽET ZA CENTRE TROŠKA / PRIHODA**
+**BUDŽET ZA CENTRE TROŠKOVA / PRIHODA**
 
-Za ovu vrstu imat ćemo na raspolaganju sljedeće tipke: (Prva dva i posljednji su iste opcije viđene u prethodnoj točki i ne zahtijevaju dodatna objašnjenja).
+Za ovu vrstu podbudžeta dostupne su sledeće funkcije:
 
--	Stvori iz knjiženja
+- **Kreiraj iz knjiženja**
+- **Kreiraj iz međugodišnjeg zatvaranja**
+- **Kreiraj centre troškova iz podkonta**
+- **Kreiraj centre troškova iz istorije controlling knjiženja**
+- **Grupiši detaljne redove**
 
--	Stvori iz međugodišnjih zatvaranja
+Prve dve i poslednja funkcija imaju istu namenu kao kod budžeta za podkonta.
 
--	Stvori centre troška iz kontnih konta: otvara se skočni prozor (omogućena višestruka selekcija) u kojem se može odabrati popis pod-budžeta tipa Sottoconto koji će se koristiti kao izvor podataka. Učitavaju se budžetski podaci tih sottoconta te se popunjava budžet po centrima troška, koristeći zadane postavke iz Kontnog plana (povezanost s centrima itd.) za svaki sottoconto, uz eventualni ponovni izračun varijabilnosti (kao i kod prethodne vrste).
+- **Kreiraj centre troškova iz podkonta**: otvara dijalog sa mogućnošću višestrukog izbora podbudžeta tipa *Podkonto* koji će se koristiti kao izvor podataka. Budžetske vrednosti iz odabranih podbudžeta prenose se na centre troškova koristeći podešavanja iz kontnog plana (veze sa centrima troškova i slično), uz eventualni ponovni obračun varijabilnosti.
 
--	Stvori centre troška iz povijesti upravljačkih knjiženja: otvara se skočni prozor (koristan samo ako se u potpunosti koristi controlling modul) za odabir *Povijesti upravljačkih knjiženja* (od godine do godine, od razdoblja do razdoblja i područja), uz mogućnost primjene postotaka varijacija (označavanjem polja).
+- **Kreiraj centre troškova iz istorije controlling knjiženja**: otvara dijalog za izbor podataka iz *Istorije controlling knjiženja* (godina od–do, period od–do i područje), uz mogućnost primene procenata promene.
 
--	Grupiraj retke detalja
+**BUDŽET PO MODELIMA REKLASIFIKACIJE**
 
-**BUDŽET NA MODELINIMA REKLASIFIKACIJE**
+Za ovu vrstu dostupna je samo funkcija **Kreiraj vrednosti modela**, koja otvara dijalog za izbor podbudžeta koji će služiti kao izvor podataka. U listi je omogućena višestruka selekcija pomoću tastera Ctrl ili Shift.
 
-Za ovu vrstu jedina aktivna tipka je **Stvori vrijednosti modela**, koja otvara skočni prozor za odabir *pod-budžeta* koji će se koristiti kao izvor podataka (u padajućem izborniku omogućena je višestruka selekcija pomoću tipki Ctrl ili Shift):  
-
-- *pod-budžeti* za *Podkonta* koristit će se za popunjavanje čvorova (redaka) modela reklasifikacije [**postavljenih s tipologijom *Podkonta***](/docs/controlling/reclassifications/create-reclassification-model)
-- *pod-budžet* za *centre troška* koristit će se za popunjavanje čvorova (redaka) modela reklasifikacije [**postavljenih s tipologijom *centri troška***](/docs/controlling/reclassifications/create-reclassification-model)
+- Podbudžeti tipa **Podkonta** koriste se za popunjavanje čvorova (redova) modela reklasifikacije definisanih sa tipologijom *Podkonta*.
+- Podbudžeti tipa **Centri troškova** koriste se za popunjavanje čvorova (redova) modela reklasifikacije definisanih sa tipologijom *Centri troškova*.

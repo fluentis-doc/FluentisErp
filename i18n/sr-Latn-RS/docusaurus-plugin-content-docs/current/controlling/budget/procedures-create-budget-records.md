@@ -1,12 +1,27 @@
 ---
-title: Procedure - Kreiranje budžetskih knjiženja  
+title: Procedure - Kreiranje budžetskih knjiženja
 sidebar_position: 6
 ---
 
-Ovu proceduru mogu koristiti isključivo društva koja u potpunosti koriste modul Controlling (i imaju aktiviranu opciju *Upravljanje controllingom* u šifrarniku društva), budući da omogućuje popunjavanje tablica Budžetnog područja koje su se koristile i u prethodnim verzijama sustava za potrebe budžetiranja
+Ovu proceduru mogu koristiti isključivo društva koja u potpunosti koriste modul **Controlling** i imaju aktiviranu opciju **Upravljanje controllingom** u šifrarniku društva.
 
-Na vrhu se odabire proračun koji će se koristiti putem odgovarajuće kombinirane kutije, a u mreži će se prikazati *pod-proračuni* tipa ***troškovni centar***, jedini koji ima smisla čitati za vrednovanje područja proračuna: na dnu obrasca bit će potrebno postaviti područje koje treba dodijeliti i računovodstveni uzrok koji će se koristiti.
+Procedura omogućava popunjavanje tabela budžetskog područja koje su se koristile i u prethodnim verzijama sistema za potrebe budžetiranja.
 
-Tipka **Kreiranje izvanknjigovodstvenih budžetskih knjiženja** generira izvanknjigovodstvena budžetska knjiženja koja je potom moguće pretraživati u [**odgovarajućoj formi**](/docs/controlling/budget/offbalance-records-search). Druga tipka, **Kreiranje povijesti budžetskih knjiženja** izravno će popuniti povijest budžeta, koja se također može pregledavati putem [**odgovarajuće forme**](/docs/controlling/budget/budgeting-records-search).
+Na vrhu obrasca bira se budžet koji će se koristiti putem odgovarajuće padajuće liste. U tabeli će biti prikazani **podbudžeti tipa centar troška**, koji predstavljaju jedine relevantne stavke za vrednovanje budžetskog područja.
 
-Ova druga opcija omogućuje izravno popunjavanje baze podataka ostvarenih budžetskih vrijednosti, kako bi se potom moglo odmah pristupiti usporedbi i reklasifikacijama, s ciljem analize odstupanja između Budžetnog područja i područja ostvarenja.
+U donjem delu obrasca potrebno je definisati:
+
+- područje koje će biti dodeljeno budžetskim knjiženjima,
+- predložak knjiženja koji će se koristiti tokom generisanja podataka.
+
+### Dostupne funkcije
+
+#### Kreiranje vanbilansnih budžetskih knjiženja
+
+Dugme **Kreiranje vanbilansnih budžetskih knjiženja** generiše vanbilansna budžetska knjiženja koja se kasnije mogu pregledati u obrascu [**Vanbudžetska evidencija**](/docs/controlling/budget/offbalance-records-search).
+
+#### Kreiranje istorije budžetskih knjiženja
+
+Dugme **Kreiranje istorije budžetskih knjiženja** direktno popunjava istoriju budžeta, koja se može pregledati u obrascu [**Budžetska knjiženja**](/docs/controlling/budget/budgeting-records-search).
+
+Ova opcija omogućava direktno popunjavanje baze podataka planiranih budžetskih vrednosti, kako bi se odmah moglo pristupiti analizama, poređenjima i reklasifikacijama sa ciljem utvrđivanja odstupanja između budžetskog područja i područja realizacije.

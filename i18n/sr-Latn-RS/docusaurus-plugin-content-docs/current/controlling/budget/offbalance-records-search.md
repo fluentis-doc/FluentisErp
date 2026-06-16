@@ -1,13 +1,23 @@
 ---
-title: Izvanproračunska evidencija 
+title: Vanbudžetska evidencija
 sidebar_position: 2
 ---
 
-Ovdje je moguće pretraživati i unositi izvanproračunske zapise budžeta pomoću tipke **Novi**.
+U ovom obrascu moguće je pretraživati i unositi vanbudžetska knjiženja korišćenjem dugmeta **Novo**.
 
-Za unos novog kretanja obavezno je odabrati [**Područje**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize (preporučuje se pravilno šifrirati, npr.  *Budžet* kako bi se razlikovao od *konačnih* rezultata, *simulacije* itd....)
+Za unos novog knjiženja obavezno je odabrati [**Područje**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize. Preporučuje se jasno definisanje i označavanje područja (na primer *Budžet*) kako bi se razlikovalo od drugih analitičkih područja kao što su *Realizacija*, *Simulacija* i slično.
 
-Postupak unosa uključuje odabir predloška knjiženja (analogno onome što je predviđeno za knjigovodstvene transakcije), unos datuma knjiženja, navođenje referentne valute, bilo eura ili druge valute. 
+Postupak unosa obuhvata:
 
-Nakon toga, unosi se knjigovodstveni podkonto, pripadajući projekt (ako postoji), dugovna i potražna vrijednost.   
-Svi unosi povezani su s poslovnom podjelom poduzeća, što je posebno važno u slučaju višestrukih poslovnih jedinica.  
+- izbor predloška knjiženja (na isti način kao kod računovodstvenih knjiženja),
+- unos datuma knjiženja,
+- definisanje referentne valute (evro ili druga valuta).
+
+Nakon toga potrebno je uneti:
+
+- knjigovodstveni podkonto,
+- povezani projekat (ukoliko postoji),
+- dugovni iznos,
+- potražni iznos.
+
+Sva knjiženja moraju biti povezana sa odgovarajućom poslovnom jedinicom organizacije, što je naročito važno u okruženjima sa više poslovnih jedinica ili društava.

@@ -1,32 +1,42 @@
 ---
-title: Pretraživanje i Novi Konsolidirani Budžet
+title: Pretraživanje i Novi konsolidovani budžet
 sidebar_position: 5
 ---
 
 ## Pretraživanje
 
-Naredba **Konsolidirani budžet** omogućuje pretraživanje, upravljanje i ispis obračuna konsolidiranih budžeta, kako bi se procijenio trend i odstupanja između planiranih i ostvarenih vrijednosti. Možemo kreirati nove zapise (pomoću tipke Novi na ribbon traci ili naredbom Novi konsolidirani budžet u izborniku) ili uređivati postojeće.  
+Opcija **Konsolidovani budžet** omogućava pretraživanje, upravljanje i štampu obračuna konsolidovanih budžeta radi analize trendova i odstupanja između planiranih i ostvarenih vrednosti. Moguće je kreirati nove zapise (pomoću dugmeta **Novi** na alatnoj traci ili opcijom **Novi konsolidovani budžet** u meniju) ili uređivati postojeće.
 
-Odabirom opcije **Novi konsolidirani budžet** otvara se forma za unos ostvarenih vrijednosti za ***pojedine podbudžete***, kako bi se mogla analizirati **dinamika i odstupanja**.
+Odabirom opcije **Novi konsolidovani budžet** otvara se forma za unos ostvarenih vrednosti za pojedinačne podbudžete kako bi se analizirala **kretanja i odstupanja**.
 
-## Kako dobiti analizu odstupanja na konsolidiranom budžetu
+## Kako dobiti analizu odstupanja na konsolidovanom budžetu
 
-1. U padajućem izborniku **Budžet** odabrati planski budžet koji se želi usporediti s ostvarenim vrijednostima (za analizu odstupanja na konsolidiranoj razini).  
-2. U desnom dijelu zaglavlja forme odabrati podatke **na razini ostvarenja** koji mogu biti:  
-    - **Međugodišnje zatvaranje** prethodno obrađeno, odabrano iz pripadajućeg izbornika;  
-    - **Podaci iz Controllinga**, odnosno iz *kontroling računovodstva*, aktiviranjem pripadajućeg označnog polja te odabirom **Područja** analize, **Dimenzije** i **raspona razdoblja** (godina / mjesec).  
-3. Spremiti zaglavlje s parametrima iz prethodnih koraka, a zatim redom odabrati pojedine *podbudžete* u gornjoj tablici;  
-4. Pritisnuti tipku **Izračunaj konsolidirani budžet** koja popunjava detaljne podatke u donjoj tablici za svaki podbudžet označen u gornjoj tablici.  
- 
-U donjoj mreži, ovisno o vrsti pod-proračuna koja je valorizirana, imat ćemo stupce s ukupnim podacima proračuna i ukupnim podacima konačnog računa (one označene kao ***stvarno***), za procjenu odstupanja.
+1. U padajućoj listi **Budžet** odabrati planski budžet koji se želi uporediti sa ostvarenim vrednostima.
 
-:::note[Bilješka]
-Ako zatvaranje između godišnjih razdoblja (ili postavljeni kontrolni periodi) traje do 31.06., na primjer, automatski će se zbrojiti i procijeniti prvih 6 mjeseci proračuna.
+2. U desnom delu zaglavlja forme odabrati podatke **na nivou realizacije**, koji mogu biti:
 
-Forma ne prikazuje detaljnu usporedbu po pojedinom razdoblju, ali ona postoji u pozadinskoj obradi (objekt FSBudgetActualObjectValueByPeriod) i dostupna je za izradu nadzornih ploča i prilagođenih vizualizacija.
+   - **Međugodišnje zatvaranje** koje je prethodno obrađeno i izabrano iz odgovarajuće liste.
+   - **Podaci iz Controllinga**, odnosno iz controlling računovodstva, aktiviranjem odgovarajuće opcije i izborom **Područja**, **Dimenzije** i **perioda** (godina / mesec).
 
+3. Sačuvati zaglavlje sa definisanim parametrima, a zatim redom odabrati pojedinačne podbudžete u gornjoj tabeli.
+
+4. Pritisnuti dugme **Izračunaj konsolidovani budžet**, koje popunjava detaljne podatke u donjoj tabeli za svaki označeni podbudžet.
+
+U donjoj tabeli, u zavisnosti od tipa podbudžeta, prikazuju se kolone sa ukupnim budžetskim vrednostima i ukupnim ostvarenim vrednostima (označenim kao **stvarno**) radi analize odstupanja.
+
+:::note Napomena
+Ako međugodišnje zatvaranje (ili definisani controlling period) traje, na primer, do 30.06., sistem će automatski sabrati i analizirati prvih šest meseci budžeta.
+
+Forma ne prikazuje detaljno poređenje po pojedinačnim periodima, ali ti podaci postoje u pozadinskoj obradi (objekat *FSBudgetActualObjectValueByPeriod*) i mogu se koristiti za izradu kontrolnih tabli i prilagođenih izveštaja.
 :::
 
-## Ispis Analize Budžeta
+## Štampa analize budžeta
 
-Izvještaj ***Analiza budžeta*** prikazuje iste podatke o konsolidiranim budžetima kao i forma. Prije pokretanja ispisa dostupni su filtri koji odgovaraju prikazanim podacima: Vrsta budžeta, Vrsta razdoblja te Datum / Broj za planske i ostvarene vrijednosti.
+Izveštaj **Analiza budžeta** prikazuje iste podatke o konsolidovanim budžetima kao i sama forma.
+
+Pre pokretanja štampe dostupni su filteri koji odgovaraju prikazanim podacima:
+
+- Tip budžeta
+- Tip perioda
+- Datum / Broj planskih vrednosti
+- Datum / Broj ostvarenih vrednosti

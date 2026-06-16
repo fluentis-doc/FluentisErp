@@ -1,35 +1,41 @@
 ---
-title: Uvoz excel datoteka za izvanproračunske evidencije 
+title: Uvoz Excel datoteka za vanbilansne evidencije
 sidebar_position: 3
 ---
 
-U izborniku alata, unutar grupe **Bizlink**, nalaze se ***uvozi na zahtjev*** uključujući ***uvoz Excel***: datoteka: među dostupnim opcijama nalazi se uvoz s šifrom **OffBalanceRecordsForArea**,(Vanbilančna knjiženja (kontroling)), koji omogućuje jednostavan uvoz izvanbilančnih zapisa za određeno područje. To su npr. knjiženja naknada odbora ili knjiženja koja služe za razradu detalja budžeta za određeni period.  
+U meniju **Alati**, unutar grupe **Bizlink**, nalaze se opcije za **uvoz na zahtev**, uključujući i **uvoz Excel datoteka**. Među dostupnim opcijama nalazi se uvoz sa šifrom **OffBalanceRecordsForArea** (*Vanbilansna knjiženja – kontroling*), koji omogućava jednostavan uvoz vanbilansnih evidencija za određeno područje.
+
+Ove evidencije mogu predstavljati, na primer, knjiženja naknada članovima odbora ili knjiženja koja služe za detaljnu razradu budžeta za određeni period.
 
 Dostupna polja za unos:
-- ***Datum unosa***: obavezno, datum koji će biti dodijeljen registraciji.
 
-- ***Datum obračuna***: obavezno, uvijek isti kao prethodno navedeni datum zapisa. 
+- **Datum unosa**: obavezno polje, datum koji će biti dodeljen knjiženju.
 
-- ***Broj zapisa***: obavezno,  preporučuje se koristiti visoke brojeve kako bi se izbjeglo preklapanje s postojećim zapisima (npr. onima generiranim automatskim postupcima poput obračuna amortizacije u kontrolingu ili knjiženja zaliha u privremenim zatvaranjima). 
+- **Datum obračuna**: obavezno polje, mora biti isti kao datum unosa.
 
-- ***Predložak***: obavezno, mora biti povezan s centrima troškova.
+- **Broj knjiženja**: obavezno polje. Preporučuje se korišćenje većih brojeva kako bi se izbeglo preklapanje sa postojećim knjiženjima (na primer onima koja nastaju automatskim procedurama kao što su obračun amortizacije u kontrolingu ili knjiženje zaliha prilikom privremenih zatvaranja).
 
-- ***Konto i podkonto***: obavezno, konto/podkonto koji se dodjeljuje transakciji.  
+- **Predložak knjiženja**: obavezno polje, mora biti povezan sa centrima troškova.
 
-- [***CENTAR TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): obavezno, poslovni centar koji se dodjeljuje zapisu. 
+- **Konto i podkonto**: obavezno polje, konto/podkonto koji se dodeljuje transakciji.
 
-- ***Tip – Interni broj – Godina – WBS broj***: opcionalno, ako se registracija povezuje s projektom. 
+- [**Centar troška**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): obavezno polje, poslovni centar koji se dodeljuje knjiženju.
 
-- ***Duguje***: obavezno, može biti 0. 
+- **Tip – Interni broj – Godina – WBS broj**: opciona polja koja se koriste ukoliko je knjiženje povezano sa projektom.
 
-- ***Potražuje***: obavezno, može biti 0. 
+- **Duguje**: obavezno polje, vrednost može biti 0.
 
-- ***Od datuma obračuna***: nije obavezno, ali se preporučuje za ekonomske transakcije.
+- **Potražuje**: obavezno polje, vrednost može biti 0.
 
-- ***Do datuma obračuna***: nije obavezno, ali se preporučuje za ekonomske transakcije. 
+- **Od datuma obračuna**: nije obavezno, ali se preporučuje za ekonomske transakcije.
 
-- ***Divisione***: nije obavezno, ako nije navedeno, koristi se odjel postavljen u parametrima uvoza 
+- **Do datuma obračuna**: nije obavezno, ali se preporučuje za ekonomske transakcije.
 
-Nakon unosa svih potrebnih podataka, moguće je validirati raspon unesenih podataka pomoću (tipke ***Validiraj raspon podataka***), kako bi se provjerilo ima li nedostajućih ili pogrešnih šifri. Zatim se može pokrenuti uvoz podataka klikom na tipku ***Uvezite Excel tablicu***: pri čemu će biti zatražena specifikacija **Odjela**  i referentne valute operacije.
+- **Organizaciona jedinica (Division)**: nije obavezno. Ako nije navedena, koristi se organizaciona jedinica definisana u parametrima uvoza.
 
+Nakon unosa svih potrebnih podataka moguće je proveriti ispravnost unetih vrednosti pomoću funkcije **Validiraj raspon podataka**, koja služi za proveru nedostajućih ili neispravnih šifara.
 
+Nakon uspešne validacije, uvoz se pokreće klikom na dugme **Uvezi Excel tabelu**, pri čemu će sistem zatražiti unos:
+
+- **Organizacione jedinice**
+- **Referentne valute** operacije.
