@@ -1,31 +1,28 @@
 ---
-title: Uvoz zapisa
+title: Uvoz knjiženja
 sidebar_position: 3
 ---
 
-Ovim postupkom provodite postupak uvoza datoteke računovodstvenih evidencija koju je izradio DocFinance. 
+Ovom procedurom vrši se uvoz datoteke računovodstvenih knjiženja koju je kreirao DocFinance.
 
-Uvoz se vrši putem Bizlink *Folder Monitor* streama.
+Uvoz se izvršava putem Bizlink *Folder Monitor* toka (*stream*).
 
-Stoga će datoteka sa snimkama za uvoz biti pohranjena u mapi koju nadzire servis koji će ih automatski uvoziti. 
+Datoteka sa knjiženjima za uvoz smešta se u direktorijum koji nadzire servis, a koji će automatski izvršiti njen uvoz.
 
-U ovom trenutku sustav će kreirati relevantne računovodstvene evidencije, zatvarajući stavke koje je označio DocFinance i računovodstveno bilježeći kretanja na računima mapiranim u sustavu (računovodstveni predlošci moraju imati isti kod između ERP-a i DocFinancea). 
+Tokom ovog procesa sistem kreira odgovarajuća računovodstvena knjiženja, zatvara stavke koje je označio DocFinance i evidentira finansijska kretanja na kontima definisanim u sistemu (računovodstveni predlošci moraju imati isti kod u ERP-u i u *DocFinance*-u).
 
-Rezultat uvoza bit će vidljiv u donjoj rešetki (dok će izvršeni uvozi biti prikazani u gornjem), a pomoću naredbi na traci izbornika moći će se poništiti uvoz i pregledati pojedinosti o pogreškama pronađenim tijekom uvoz. 
+Rezultat uvoza prikazuje se u donjoj tabeli, dok su prethodno izvršeni uvozi prikazani u gornjoj tabeli. Putem funkcija na alatnoj traci moguće je poništiti uvoz i pregledati detalje eventualnih grešaka nastalih tokom procesa.
 
-:::danger PAŽNJA 
-Uvoz plaćanja zahtijeva da se ID otvorene stavke, koje treba zatvoriti, proslijede u Docfinance putanju. Čime se generira plaćanje koje s njim povezuje Fluentis. 
+:::danger PAŽNJA
+Uvoz plaćanja zahteva da se ID otvorene stavke koja treba da bude zatvorena prosledi u *DocFinance* proces. Na osnovu tog identifikatora Fluentis generiše uplatu i povezuje je sa odgovarajućom stavkom.
 
-Ako iz bilo kojeg razloga ID serije ne odgovara onom koji je prisutan u zapisu (ručne promjene bilo koje vrste, napravljene nakon izvoza serija, kojima se tada upravljalo u Docfinanceu), plaćanja će se generirati, ali neće biti ispravno povezano sa serijama koje će ostati otvorene. Moguće je nastaviti kompenzaciju ovih stavki ili tražiti plaćanja uvezena u ovoj situaciji, izbrisati ih i ručno ponovno kreirati ispravnim povezivanjem relevantne stavke. Operacija se provodi, nakon storniranja uplate, pritiskom na tipku Novo i potom Kreiraj iz stavki/uplata i odabirom stavke za zatvaranje. 
+Ako iz bilo kog razloga ID stavke ne odgovara ID-u koji se nalazi u knjiženju (na primer zbog ručnih izmena izvršenih nakon izvoza stavki koje su zatim obrađene u *DocFinance*-u), uplata će biti kreirana, ali neće biti pravilno povezana sa stavkom koja će ostati otvorena.
+
+U tom slučaju moguće je izvršiti kompenzaciju otvorenih stavki ili pronaći tako uvezene uplate, obrisati ih i ručno ih ponovo kreirati sa ispravnim povezivanjem odgovarajuće stavke.
+
+Postupak se izvodi tako što se nakon storniranja uplate klikne na dugme **Novo**, zatim **Kreiraj iz stavki/uplata**, a potom izabere stavka koju treba zatvoriti.
 :::
-
 
 :::note Info
-[Veza na **Docfinance** tehničke specifikacije](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
+[Link ka **DocFinance** tehničkoj specifikaciji](/pdf/it-IT/TRACCIATI_DocFinance_28_Luglio_2021.pdf)
 :::
-
-
-
-
-
-

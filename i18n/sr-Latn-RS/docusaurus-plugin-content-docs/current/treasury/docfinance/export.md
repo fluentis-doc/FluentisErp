@@ -1,27 +1,27 @@
 ---
-title: Izvozi
+title: Izvoz
 sidebar_position: 2
 ---
 
-Iz ovog obrasca možete izvesti podatke za DocFinance, s tri različite opcije. 
+Iz ovog obrasca moguće je izvesti podatke za DocFinance korišćenjem tri različite opcije.
 
-**Izvoz šifarnika**: aktiviranje ove zastavice prisilit će sustav da kreira datoteku za usklađivanje kontnog plana i matičnih podataka. Nakon postavljanja, aktivirat će se sljedeća povezana polja, gdje možete postaviti naziv datoteke i zajednički put stvaranja (oba će se podatka pohraniti kako bi se ponovno predložila za sljedeću izradu). Prvo polje 'Datum zadnjeg izvoza' omogućuje definiranje referentnog datuma za izvoz samo izmijenjenih/dodanih podataka u kontnom planu: moguće je izbrisati ovaj datum kako bi se stvorila potpuna datoteka sa svim postavkama kontnog plana /osobni podaci (ovo ima značajan utjecaj na vrijeme potrebno za usklađivanje dva sustava)
+**Izvoz šifarnika (nomenklature)**: aktiviranjem ove opcije sistem će kreirati datoteku za usklađivanje kontnog plana i matičnih podataka. Nakon aktivacije postaju dostupna povezana polja za unos naziva datoteke i zajedničke putanje za kreiranje datoteke. Oba podatka se čuvaju kako bi bila automatski predložena prilikom narednog izvoza.
 
-**Automatsko stvaranje novčanog toka**: s ovom zastavom program će stvoriti novi novčani tok u istoimenom modulu, prije nego što nastavi s izvozom podataka sljedeće točke. Izrada će se odvijati sa zadanim parametrima postupka 'Automatsko stvaranje novčanog toka': molimo pogledajte posebnu dokumentaciju za dodatne pojedinosti.
+Polje **Datum poslednjeg izvoza** omogućava definisanje referentnog datuma za izvoz samo izmenjenih ili novo dodatih podataka u kontnom planu. Brisanjem ovog datuma moguće je kreirati kompletnu datoteku sa svim postavkama kontnog plana i matičnih podataka. Ovo može značajno uticati na vreme potrebno za usklađivanje dva sistema.
 
-**Izvoz novčanog toka**: s ovom zastavom sustav će stvoriti datoteku financijskog tijeka, poput računovodstvenih stavki i predviđanja. Kada je zastavica postavljena, aktiviraju se sljedeća zastavica "Može se odstupiti od osobnih podataka/vrsta plaćanja" i aktiviraju se polja s imenima i zajedničkom putanjom stvaranja datoteke (oba pohranjena). Detaljno, ovisno o tome je li zastavica 'Odstupanje od zapisa/vrsta plaćanja' postavljena ili ne, logika za dodjelu odstupanja se mijenja: ako nije postavljena, odstupanje za dobavljače će se detektirati prema vrsti plaćanja i za kupci iz registra; ako je postavljeno, odstupanje će potjecati iz registra kupaca/dobavljača, a ako nije postavljeno ovdje, izračunat će se s fiksnim kodovima ('01' za ribas, ili '01' – '02' – '03' – ' 04' jer ovisno o tome daje li razlika između datuma isteka i trenutnog datuma istekli rok, razliku manju od 30 dana, od 30 do 90 ili više od 90). 
+**Automatsko kreiranje novčanog toka**: aktiviranjem ove opcije program će pre izvoza podataka automatski kreirati novi novčani tok u odgovarajućem modulu. Kreiranje se vrši korišćenjem podrazumevanih parametara procedure **Automatsko kreiranje novčanog toka**. Za dodatne informacije pogledajte odgovarajuću dokumentaciju.
 
-Korisnik koji će kreirati datoteke mora biti definiran na dnu forme te mora imati pristup dijeljenim mapama postavljenim za stvaranje datoteke. 
+**Izvoz novčanog toka**: ovom opcijom sistem kreira datoteku koja sadrži finansijske tokove, računovodstvene stavke i projekcije. Kada je opcija aktivna, dostupna je i opcija **Odstupanje po nomenklaturi/tipu**, kao i polja za unos naziva datoteke i zajedničke putanje za kreiranje datoteke (oba podatka se čuvaju za naredne izvoze).
 
+Detaljno:
+- Ako opcija **Odstupanje po nomenklaturi/tipu** nije aktivna, odstupanje za dobavljače određuje se prema vrsti plaćanja, a za kupce prema podacima iz šifarnika.
+- Ako je opcija aktivna, odstupanje se preuzima iz šifarnika kupaca/dobavljača. Ako tamo nije definisano, sistem koristi podrazumevane kodove:
+  - `01` za Ri.Ba. instrumente,
+  - `01`, `02`, `03` ili `04` u zavisnosti od toga da li je rok dospeća istekao, kraći od 30 dana, između 30 i 90 dana ili duži od 90 dana.
 
+Korisnik koji kreira datoteke mora biti definisan u donjem delu obrasca i mora imati pristup deljenim direktorijumima koji su određeni za kreiranje datoteka.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Spremi | Ovim gumbom moguće je spremiti postavke koje će se prema zadanim postavkama predložiti u obrascu. |
-| Izvoz | Stvara datoteke kako je postavljeno u obrascu.  |
-
-
-
-
-
-
+| Sačuvaj | Čuva podešavanja koja će biti automatski predložena prilikom sledećeg otvaranja obrasca. |
+| Izvezi | Kreira datoteke prema parametrima definisanim u obrascu. |
