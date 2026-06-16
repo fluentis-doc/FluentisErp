@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Modul plaćanja dobavljača uglavnom se koristi za **izradu uplatnica**, obično za **bankovne prijenose**: modul pruža mogućnost elektroničkog slanja **SEPA** (.xml) plaćanja bankovnim prijenosom. 
 
-Također je moguće upravljati **putanjama za SDD** (Sepa Direct Debit) slipove, format koji je na europskoj razini zamijenio prethodne R.i.d. koristi se za automatske autorizacije zaduženja na bakovnim računima. 
+Također je moguće upravljati **putanjama za SDD** (Sepa Direct Debit), format koji je na europskoj razini zamijenio prethodne R.i.d. koristi se za automatske autorizacije zaduženja na bankovnim računima. 
 
 Modul također omogućuje elektronički uvoz **obavijesti o plaćanju za pasivne bankovne potvrde**, koje se mogu autorizirati i platiti, slanjem povratnog tijeka s autoriziranim potvrdama u banku, a zatim se dovrši postupak automatskim obračunom izvršenih plaćanja. 
 

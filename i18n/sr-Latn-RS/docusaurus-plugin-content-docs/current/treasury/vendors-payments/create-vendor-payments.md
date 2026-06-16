@@ -1,67 +1,95 @@
 ---
-title: Kreiranje plaćanja dobavljaču 
+title: Kreiranje plaćanja dobavljaču
 sidebar_position: 2
 ---
-Obrazac se nalazi u **Riznica > Plaćanja > Kreiraj plaćanja dobavljačima** i omogućuje kreiranje nove platne liste. Isti obrazac koristi se i za otvaranje već spremljene platne liste radi izmjene ili pregleda.
 
-Iz obrasca za pretraživanje moguće je kreirati novi dokument putem gumba **> Novo plaćanje**, ili otvoriti već postojeći kako bi se pregledao i/ili izmijenio.
+Obrazac se nalazi u **Riznica > Plaćanja dobavljaču > Unos plaćanja dobavljačima** i omogućava kreiranje nove liste za plaćanje. Isti obrazac koristi se i za otvaranje već sačuvane liste radi pregleda ili izmene.
 
-## Kako kreirati platnu listu
+Iz obrasca za pretragu moguće je kreirati novi dokument pomoću dugmeta **Novo plaćanje** ili otvoriti postojeći dokument radi pregleda i/ili izmene.
 
-Kliknite za osnovne korake:
+## Kako kreirati listu za plaćanje
 
-1. Odaberite **Vrstu plaćanja** platne liste iz prvog padajućeg polja.
-2. Sljedeća se polja popunjavaju automatski:
-   - **Godina**: predlaže se tekuća godina iz sustava.
-   - **Broj popisa prezentacije**: progresivna numeracija platne liste.
-   - **Datum izdavanja**: predlaže se današnji datum.
-3. Ispunite obavezna polja zaglavlja:
-   - **Banka**:  unijeti šifru analitičkog konta iz matice banaka preko kojeg se izdaje platna lista.
-   - **Bankovni račun**: automatski se popunjava na temelju banke povezane s analitičkim kontom.
-   - **Početne bilješke**:  slobodno polje za eventualne napomene (nije korišteno u standardu).
-   - **Završne bilješke**: koristi se pri knjiženju za popunjavanje opisa kontne stavke za banku.
-4. Postavite eventualne dodatne opcije:
-   - **Nametni ovaj datum valute primatelja**: definira datum valute primatelja u telematskom zapisu.
-5. Provjerite statuse (oznake) platne liste:
-   - **Ispisano**: nije automatski upravljano od strane programa.
-   - **Datoteka je izdana**: automatski se ažurira nakon izrade telematske datoteke.
-6. Odaberi stavke za plaćanje:
-   - Pritisni gumb **> Kreiraj plaćanje** iz stavki za odabir kontabilnih stavki koje treba zatvoriti.
-   - Pažnja na korištenje oznake prikaz stavki isplatitelja: upravljanje plaćanjem mora se izvršiti iz modula isplatitelja.
-   - Oznaka *Nametni banku za uplatu iz matice dobavljača* omogućuje korištenje unaprijed definirane banke iz matice dobavljača.
-   - Moguće je unijeti djelomična plaćanja ili ručno dodavati retke.
-   - Pažnja: ručno dodavanje može uzrokovati razlike u kontnom saldu ako nije pravilno upravljano.
-8. Provjerite **Bilješke** u mreži: automatski se popunjavaju referencama plaćenih stavki i bit će prenesene u glavnu knjigu.
+Osnovni koraci:
+
+1. Izabrati **Vrstu (način) plaćanja** liste za plaćanje iz prvog padajućeg polja.
+2. Sledeća polja se automatski popunjavaju:
+   - **Datum izdavanja**: predlaže se tekući datum.
+   - **Godina**: predlaže se tekuća poslovna godina.
+   - **Broj**: automatski generisana numeracija liste za plaćanje.
+3. Popuniti obavezna polja zaglavlja:
+   - **Banka**: uneti šifru analitičkog konta iz registra banaka preko kojeg se vrši plaćanje.
+   - **Bankovni račun**: automatski se popunjava na osnovu banke povezane sa izabranim analitičkim kontom.
+   - **Početne napomene**: slobodno polje za dodatne informacije (nije deo standardnog procesa).
+   - **Završne napomene**: koriste se prilikom knjiženja za popunjavanje opisa bankarske stavke.
+4. Po potrebi podesiti dodatne opcije:
+   - **Postavi korisnički datum valute**: definiše datum valute primaoca u platnom nalogu.
+5. Proveriti statusne oznake liste:
+   - **Odštampano**: ne ažurira se automatski.
+   - **Datoteka je kreirana**: automatski se postavlja nakon generisanja datoteke.
+6. Odabrati stavke za plaćanje:
+   - Kliknuti na dugme **Kreiraj plaćanje iz dospeća plaćanja** radi izbora otvorenih stavki koje treba zatvoriti.
+   - Ako je aktivirana opcija **Prikaži dospele vrednosti zaposlenih**, plaćanja se moraju obrađivati isključivo kroz modul obračuna trgovačkih predstavnika.
+   - Opcija **Nametni banku za uplatu iz registra dobavljača** omogućava korišćenje unapred definisane banke iz matičnih podataka dobavljača.
+
+7. Moguće je unositi delimična plaćanja ili ručno dodavati redove.
+   - Pažnja: ručno dodavanje može izazvati razlike u kontnim saldima ukoliko se ne koristi pravilno.
+
+8. Proveriti polje **Napomene** u tabeli:
+   - Automatski se popunjava referencama plaćenih stavki i prenosi se u glavnu knjigu.
 
 :::tip PAŽNJA
-U zaglavlju platne liste nalazi se oznaka **Odobren** koja omogućuje izradu XML traka i izvršenje plaćanja. Ova oznaka pohranjuje korisnika i datum autorizacije. Može se unaprijed automatski aktivirati pristupom u formu **Parametri plaćanja dobavljaču** i aktiviranjem oznake *Ovlašteno prema zadanim postavkama*.
+U zaglavlju liste za plaćanje nalazi se oznaka **Odobreno** koja omogućava generisanje XML datoteka i izvršenje plaćanja. Ova oznaka čuva podatke o korisniku i datumu autorizacije.
+
+Može se automatski aktivirati kroz obrazac **Parametri plaćanja dobavljačima** uključivanjem opcije **Ovlašćeno prema podrazumevanim postavkama**.
 :::
 
-9. **Pritisnite gumb Izrada SEPA datoteke** za automatsko generiranje .xml traka s popisom plaćanja i njegovo automatsko arhiviranje u dokumentacijski sustav. Datoteku možeš preuzeti iz dokumentacije i potom je prenijeti u sustav korporativnog bankarstva, bez potrebe za ručnim unosom plaćanja.
+9. Kliknuti na dugme **Kreiraj SEPA datoteku** kako bi se automatski generisala XML datoteka sa listom plaćanja i arhivirala u sistem za upravljanje dokumentima.
 
-10. Pritisnite gumb **Dokumenti**, u grupi Document manager za pristup dokumentacijskom sustavu s priloženim .xml. Iz samog dokumentacijskog sučelja zatim klikni na gumb **Spremi privitak** kako bi preuzeo kopiju na lokalno računalo.
+10. Kliknuti na dugme **Dokumenti** u sekciji za upravljanje dokumentima radi pristupa generisanoj XML datoteci. Iz dokumentacionog sistema zatim koristiti opciju **Sačuvaj prilog** za preuzimanje kopije datoteke na lokalni računar.
 
-#### Specifični gumbi
+### Specifična dugmad
 
-> **Novo plaćanje**: Ručno umetanje red plaćanja dobavljaču.
+> **Novo plaćanje**: Ručni unos novog reda plaćanja dobavljaču.
 
-> **Spremi**: Sprema zaglavlje platne liste nakon unosa vrste plaćanja i bankovnog analitičkog konta.
+> **Sačuvaj**: Čuva zaglavlje liste plaćanja nakon unosa vrste plaćanja i analitičkog bankovnog konta.
 
-> **Izbriši označena plaćanja**: Briše plaćanja dobavljačima stvorena ručno ili putem izrade plaćanja iz stavki.
+> **Obriši označena plaćanja**: Briše plaćanja dobavljačima kreirana ručno ili putem funkcije kreiranja plaćanja iz dospeća.
 
-> **Kreiraj plaćanje iz stavki**: Aktivira se nakon spremanja zaglavlja, preuzima podatke iz arhive stavki.
+> **Kreiraj plaćanje iz dospeća plaćanja**: Aktivira se nakon čuvanja zaglavlja i preuzima podatke iz evidencije otvorenih stavki.
 
-> **Dokumenti**:  Gumb za povezivanje s dokumentacijskim sustavom.
+> **Dokumenti**: Dugme za povezivanje sa sistemom za upravljanje dokumentima.
 
+> **Kreiraj SEPA / međunarodni SEPA / Piteco / direktna zaduženja**: Funkcije za izvoz odgovarajućih bankarskih datoteka u propisanom formatu.
+
+> **Knjiženje / Poništi knjiženje**: Funkcije za direktno knjiženje liste plaćanja ili poništavanje prethodno izvršenog knjiženja. Knjiženje se može izvršiti za jedan ili više označenih redova.
+
+Prilikom pokretanja knjiženja otvara se dijalog za unos svih parametara potrebnih za generisanje knjiženja, kao što su datum knjiženja, šema knjiženja i knjigovodstveni nalog.
+
+Dostupna je posebna opcija **Pokreni knjiženje za sve redove plaćanja**. Kada je aktivirana, sistem knjiži sve stavke liste plaćanja koje još nisu proknjižene. Ako nije aktivirana, knjiže se samo redovi prethodno označeni pre pokretanja funkcije.
+
+Funkcija poništavanja knjiženja odnosi se isključivo na trenutno izabrani red.
+
+Podaci o izvršenom knjiženju evidentiraju se i u postupku [**Knjiženje plaćanja dobavljačima**](/docs/treasury/vendors-payments/accounting/vendor-payments-accounting), što omogućava naknadno poništavanje knjiženja i iz tog modula.
+
+:::note Informacija: SEPA kontrola primaoca plaćanja
+SEPA standard u određenim slučajevima proverava podudaranje između vlasnika bankovnog računa i naziva primaoca plaćanja. Ako postoji razlika između naziva evidentiranog u matičnim podacima i naziva koji treba poslati banci, moguće je koristiti [**Alternativnu adresu**](/docs/configurations/tables/general-settings/address-types) sa aktiviranom opcijom **Koristi se za SEPA**.
+:::
+
+:::note Specifično polje – Nivo usluge
+Omogućava izbor unapred definisanog tipa usluge za bankarske transfere, na primer:
+
+- Instant plaćanje,
+- PagoPA,
+- Hitno plaćanje,
+- Ostale dostupne vrste usluga.
+
+Izabrana vrednost prenosi se u XML bankarsku datoteku.
+
+Podrazumevana vrednost definiše se u [**Parametrima plaćanja dobavljačima**](/docs/configurations/parameters/treasury/vendor-payments-parameters).
+:::
 
 ---
 
-### **VIDEO TUTORIALS**
+### **VIDEO TUTORIJALI**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

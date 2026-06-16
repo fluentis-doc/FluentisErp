@@ -3,15 +3,17 @@ title: Upravljanje plaćanjima
 sidebar_position: 2
 ---
 
-Unutar evidencije kupaca/dobavljača moguće je definirati zadani podkonto banke za plaćanje: na temelju toga se svaka stavka prilikom kreiranja usmjerava na ovaj račun, ali se podaci mogu mijenjati iz ovog obrasca. 
+U okviru matičnih podataka kupaca i dobavljača moguće je definisati podrazumevano analitičko konto banke za plaćanje. Na osnovu ove postavke svaka stavka se prilikom kreiranja automatski usmerava na odgovarajući bankovni račun, ali se ti podaci mogu naknadno menjati kroz ovaj obrazac.
 
-Osim ove funkcije, obrazac omogućuje pregled liste u kojoj je dospijeće uplaćeno, kao i ručno memoriranje primitka obavijesti o uplati, njezinu kontrolu i slanje iste kroz zastavice u glavnom pregledu. 
+Pored ove funkcionalnosti, obrazac omogućava:
 
-Pravodobno upravljanje plaćanjima vrlo je korisno za naknadno dobivanje obrade **[*Cash Flow-a*](/docs/treasury/cash-flow/reports)** (novčani tok) grupiranog po bankama, kako bi se znao trend i dosljednost, ne samo općeg novčanog tijeka, već i za procjenu situacije i mogućeg prekoračenja bankovnog računa poduzeća. 
+- pregled liste plaćanja u kojoj je određeno dospeće uključeno,
+- ručno evidentiranje prijema obaveštenja o plaćanju,
+- kontrolu primljenih obaveštenja,
+- slanje obaveštenja korišćenjem odgovarajuće opcije iz glavnog pregleda.
 
-**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=5m37s" target="_blank" rel="noopener noreferrer">Molimo pogledajte Tutorial - YouTube Link</a>**
+Pravovremeno upravljanje plaćanjima veoma je korisno za naknadnu izradu analiza u okviru modula **[*Novčani tok (Cash Flow)*](/docs/treasury/cash-flow/reports)**, posebno kada su podaci grupisani po bankama.
 
+Na taj način moguće je pratiti trendove i raspoloživost sredstava ne samo na nivou ukupnog novčanog toka, već i proceniti stanje pojedinačnih bankovnih računa i potencijalna prekoračenja po računima preduzeća.
 
-
-
-
+**<a href="https://youtu.be/DkxoWgTkvUg&t=5m37s" target="_blank" rel="noopener noreferrer">Pogledaj video tutorijal</a>**

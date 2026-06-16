@@ -1,23 +1,20 @@
 ---
-title: Blokiraj pasivna dospijeća plaćanja 
+title: Blokiranje pasivnih dospeća plaćanja
 sidebar_position: 1
 ---
 
-Korisnik (s odgovarajućim korisničkim pravima unutar ARM aplikacije) može nastaviti s uređivanjem popisa dospijeća plaćanja prikazanim prema postavljenim filtrima pretraživanja. Procedura će memorirati tko je i kada uređivao dospijeće te tko je i kada isto autorizirao. 
+Korisnik sa odgovarajućim korisničkim ovlašćenjima može upravljati dospećima plaćanja prikazanim prema zadatim kriterijumima pretrage.
 
+Procedura evidentira:
+- korisnika koji je izvršio blokiranje ili izmenu dospeća,
+- datum i vreme izmene,
+- korisnika koji je izvršio autorizaciju,
+- datum i vreme autorizacije.
 
-**<a href="https://youtu.be/DkxoWgTkvUg&amp;t=05s" target="_blank" rel="noopener noreferrer">Molimo pogledajte Tutorial - YouTube Link </a>**
+**<a href="https://youtu.be/DkxoWgTkvUg&t=05s" target="_blank" rel="noopener noreferrer">Pogledaj video tutorijal</a>**
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za pokretanje traženja dospijeća, nakon određivanja filtara kroz koje će se dobiti podaci. |
-| Blokiraj dospijeća plaćanja | Tipka za zaključavanje odabranih dospijeća u tablici rezultata. |
-| Otključaj dospijeća | Tipka za otključavanje odabranih dospijeća u tablici rezultata.  |
-
-
-
-
-
-
-
-
+| Pretraži | Pokreće pretragu dospeća prema definisanim filterima. |
+| Blokiraj dospeća plaćanja | Blokira odabrana dospeća iz tabele rezultata. |
+| Odblokiraj dospeća | Uklanja blokadu sa odabranih dospeća u tabeli rezultata. |

@@ -1,46 +1,55 @@
 ---
-title: Knjiženje Plaćanja Dobavljača
+title: Knjiženje plaćanja dobavljača
 sidebar_position: 1
 ---
 
-Ova forma se nalazi u Riznica > Plaćanja dobavljača > Knjiženje > Knjiženje plaćanja dobavljača.
+Ovaj obrazac nalazi se na putanji **Riznica > Plaćanja dobavljačima > Knjiženja > Knjiženje plaćanja dobavljača**.
 
-Iz ovog prozora moguće je knjižiti plaćanja koja su prethodno unesena u platne naloge.
+Iz ovog obrasca moguće je knjižiti plaćanja koja su prethodno unesena u platne naloge (liste za plaćanje).
 
-Alternativno, može se koristiti integrirana procedura [*Automatsko generiranje plaćanja dobavljačima*](/docs/treasury/vendors-payments/procedures/automatic-vendor-payments-creation), koja istovremeno generira platni nalog i knjiži plaćanja.
+Alternativno, može se koristiti integrisana procedura [**Automatsko kreiranje plaćanja dobavljačima**](/docs/treasury/vendors-payments/procedures/automatic-vendor-payments-creation), koja istovremeno generiše platni nalog i knjiži plaćanja.
 
 ## Kako knjižiti plaćanja
 
-1. Koristite gornji dio obrasca s filtrima za pretraživanje plaćanja koja su kreirana, ali još nisu knjižena: pritisnite gumb *Pretraži*, a u rešetki će biti prikazane sve stavke plaćanja unutar različitih platnih naloga, koje se stoga mogu knjižiti i djelomično. Uobičajena situacija ipak predviđa filtriranje prema referenci platnog naloga i njegovo grupno knjiženje.
+1. U gornjem delu obrasca koriste se filteri za pronalaženje plaćanja koja su kreirana, ali još nisu proknjižena. Klikom na dugme **Pretraži** prikazuju se sve stavke plaćanja iz različitih platnih naloga, koje se mogu knjižiti pojedinačno ili grupno. U praksi se najčešće koristi filtriranje po referenci platnog naloga i grupno knjiženje svih njegovih stavki.
 
-2. U donjem dijelu unesite podatke za upravljanje operacijom: **Predložak zapisa knjige** koja će se koristiti za knjiženje, te **datume knjiženja i razgraničenja**. Ako proširite sekciju, možete odabrati **kriterij grupiranja** za knjiženje. 
+2. U donjem delu obrasca unose se parametri za knjiženje:
+   - **Tip temeljnice**
+   - **Datum knjiženja**
+   - **Datum obračunskog perioda**
 
-Zadana opcija, *grupiranje po banci*, omogućuje knjiženje jednog zapisa za svaki bankovni podračun izlaznih sredstava, što je optimalno rješenje za pojednostavljenje usklađivanja bankovnih transakcija s ispisima iz bankovnih izvoda. Alternativno, dostupno je *grupiranje po podračunu dobavljača* ili detaljno knjiženje svake pojedinačne uplate (*Bez grupiranja*).
+   Proširivanjem dodatne sekcije moguće je izabrati i **kriterijum grupisanja** za knjiženje.
 
-**Podračun** za evidentiranje **aktivnih i pasivnih rabata** unesenih u platnom nalogu predlaže se na temelju podračuna *izvanredni prihodi* koji je definiran u parametrima glavne knjige. 
+   Podrazumevana opcija **Grupisanje po banci** omogućava kreiranje jednog knjiženja za svaki bankovni račun sa kojeg se vrši plaćanje, što olakšava kasnije usklađivanje sa bankovnim izvodima.
 
-**Datum i broj dokumenta** su opcionalni i mogu se unijeti kao referenca zaglavlja knjiženja (na primjer, broj/datum platnog naloga).
+   Dostupne su i sledeće opcije:
+   - **Grupisanje po analitičkom kontu (dobavljaču)**,
+   - **Bez grupisanja**, gde se svaka uplata knjiži zasebno.
 
-Oznaka **zatvaranje stavke** (zadano uključena, ne preporučuje se isključivati) omogućuje ispravno zatvaranje stavke u knjizi dospijeća.
+   **Konto za evidentiranje aktivnih i pasivnih razlika** unetih u platnom nalogu automatski se predlaže na osnovu konta **vanrednih prihoda** definisanog u parametrima glavne knjige.
 
+   Polja **Datum dokumenta** i **Broj dokumenta** nisu obavezna i mogu se koristiti kao referenca u zaglavlju knjiženja (na primer broj i datum platnog naloga).
 
-Ako kontna šifra predviđa upravljanje valutnim datumom banke, te je u registru banaka definiran broj dana za njegovo izračunavanje u odnosu na korištenu kontnu šifru, polje će automatski biti popunjeno prilikom knjiženja.
+   Opcija **Zatvaranje otvorene stavke** (podrazumevano uključena) omogućava automatsko zatvaranje odgovarajućih stavki u evidenciji dospeća. Ne preporučuje se njeno isključivanje.
 
-3. Pritisnite gumb **Knjiži** za pokretanje postupka.
+   Ako šema knjiženja podržava upravljanje bankarskim datumom valute, a u registru banaka je definisan broj dana za njegov obračun, polje će biti automatski popunjeno tokom knjiženja.
 
+3. Kliknite na dugme **Knjiženje** kako biste pokrenuli postupak.
 
-### Kartica za vraćanje knjiženja
+## Kartica Povrat knjiženja (Prethodna knjiženja)
 
-Omogućuje pregled knjiženja dvostrukim klikom u odjeljku za knjiženja, kao i djelomično/potpuno poništavanje odabranih platnih transakcija. Poništavanje je moguće samo ako je obračunsko razdoblje još uvijek otvoreno (nije izvršten ispis dnevnika i zaključenje računa).
+Kartica omogućava pregled izvršenih knjiženja, kao i njihovo delimično ili potpuno poništavanje.
 
-**Specifični gumbi**
+Dvostrukim klikom na zapis moguće je otvoriti povezano knjiženje.
 
-**Traži** Pretražuje popis izvršenih knjiženja.
+Poništavanje je moguće samo ako je obračunski period i dalje otvoren za izmene (nije izvršeno zaključivanje glavne knjige niti štampanje dnevnika knjiženja).
 
-**Poništi knjiženje** Izvršava povratak (rollback) cijelog odabranog knjiženja.
+### Specifična dugmad
 
-**Poništi pojedinačna knjiženja**  Izvršava povratak (rollback) odabranih pojedinačnih knjiženja.
+> **Pretraži**: Prikazuje listu izvršenih knjiženja.
 
+> **Poništi knjiženje**: Poništava kompletno izabrano knjiženje.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+> **Poništi temeljnicu**: Poništava pojedinačna označena knjiženja.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CDCVq0iC29s" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
