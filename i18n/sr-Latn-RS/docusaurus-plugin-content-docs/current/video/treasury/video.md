@@ -1,9 +1,9 @@
 ---
-title: Riznica
+title: Blagajna
 sidebar_position: 1
 ---
 
-Prvi video pokriva osnovne parametre i tablice modula, te se preporučuje gledanje kako biste razumjeli moguće postavke i opcije, iako ne obrađuje konkretne operativne procedure.  
+Prvi video pokriva osnovne parametre i tablice modula, te se preporučuje gledanje kako biste razumeli moguće postavke i opcije, iako ne obrađuje konkretne operativne procedure.  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnRACKqZqvM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 

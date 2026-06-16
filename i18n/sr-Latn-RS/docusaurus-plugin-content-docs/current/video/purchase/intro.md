@@ -1,5 +1,5 @@
 ---
-title: Nabava 
+title: Nabavka 
 sidebar_position: 1
 ---
 

@@ -3,178 +3,171 @@ title: Administracija
 sidebar_position: 1
 ---
 
-## OSNOVNE OPĆE TABLICE
+## OSNOVNE OPŠTE TABELE
 
-Upravljanje podacima o tvrtki i eventualno dodavanje novih tvrtki predstavlja osnovnu i opću informaciju – preporučuje se najprije pogledati ovaj video.  
+Upravljanje podacima o kompaniji i eventualno dodavanje novih kompanija predstavlja osnovnu i opštu informaciju – preporučuje se da najpre pogledate sledeći video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Rbho9hXmCjo" title="YouTube video player" frameborder="0"  allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rbho9hXmCjo" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 ---
 
-Stari video, ali još uvijek vrijedi kao opći koncept.
+Stariji video, ali i dalje važi kao opšti koncept.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LqakjaVSfKE" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LqakjaVSfKE" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 ---
 
 ### **UPRAVLJANJE PODACIMA O KUPCIMA, DOBAVLJAČIMA, BANKAMA I AGENTIMA**
 
-Razumijevanje kako ispravno unijeti i upravljati podacima nužno je za ispravno **i automatizirano** upravljanje ostalim administrativnim i računovodstvenim podacima. Preporučuje se prvo pogledati ove videozapise.  
+Razumevanje pravilnog unosa i upravljanja podacima neophodno je za ispravno i automatizovano upravljanje svim ostalim administrativnim i računovodstvenim podacima. Preporučuje se da najpre pogledate sledeće video materijale.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yvvYvTZMI_o" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yvvYvTZMI_o" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/H4cos9Q4FTo" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H4cos9Q4FTo" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C5YmYWgPubY" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C5YmYWgPubY" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iBBMYnZsvRg" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iBBMYnZsvRg" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 ### **KONTNI PLAN**
 
-Ispravan unos kontnog plana (ako je personaliziran) ili izmjena standardnog plana za potrebna prilagođavanja, pregled ili ispis, preduvjet je za unos računovodstvenih transakcija. Preporučuje se prvo pogledati sljedeći video prije unosa podataka.  
+Pravilan unos kontnog plana (ukoliko je prilagođen) ili izmena standardnog plana radi potrebnih prilagođavanja, pregleda ili štampe, predstavlja preduslov za unos računovodstvenih transakcija. Preporučuje se da pre početka rada pogledate sledeći video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_0azlCYnIQ" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
+## **OSNOVNI PARAMETRI I ADMINISTRATIVNE TABELE**
 
-## **OSNOVNI PARAMETRI I ADMINISTRATIVNE TABLICE**
+Ovde se obrađuju svi opšti konfiguracioni parametri i osnovne tabele administrativnog modula.
 
-Ovdje se obrađuju svi opći konfiguracijski parametri i osnovne tablice administrativnog modula.  
+Pregled ovih video materijala koristan je svim korisnicima, a posebno onima koji žele da konfigurišu nestandardno radno okruženje (bez korišćenja početne konfiguracije **Fast Start**).
 
-Pregled ovih videozapisa **koristan** je svima, a posebno onima koji žele konfigurirati **nestandardno radno okruženje** (nije pokrenuta početna konfiguracija *Fast Start*).
+### RAČUNOVODSTVENI PARAMETRI
 
-### RAČUNOVODSTVENI PARAMETRI  
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UpAkdvW8ClQ" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UpAkdvW8ClQ" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 
-### TABLICE ADMINISTRATIVNOG MODULA  
+### TABELE ADMINISTRATIVNOG MODULA
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r62pWFU1tuk" title="YouTube video player" frameborder="0"  allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r62pWFU1tuk" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zRxODibrGL4" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
+### KONFIGURACIJA RAČUNOVODSTVENIH KNJIŽENJA
 
+Konfiguracija računovodstvenih knjiženja predstavlja logičko srce modula za knjiženje i omogućava korišćenje svih povezanih automatizacija.
 
-### KONFIGURACIJA RAČUNOVODSTVENIH KNJIŽENJA  
+Pregled ovih video materijala preporučuje se svim korisnicima koji žele detaljnije da razumeju specifična podešavanja.
 
-Konfiguracija računovodstvenih knjiženja predstavlja logičko srce modula za knjiženje i omogućuje iskorištavanje sve povezane automatizacije.
+Neophodan je za one koji žele da konfigurišu prilagođeno radno okruženje.
 
-Pregled ovih videozapisa preporučuje se svima koji žele detaljnije razumjeti specifične postavke.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u-tX9Gx4JQA" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-A nužan je za one koji žele konfigurirati prilagođeno radno okruženje.  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EKrOH5__a08" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u-tX9Gx4JQA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EKrOH5__a08" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aHWrFseEiYU" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aHWrFseEiYU" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9JwJVWUl8PM" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9JwJVWUl8PM" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JZaPIKhRfHk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JZaPIKhRfHk" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IUb1jeTteB4" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IUb1jeTteB4" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hKPW4QfQnt8" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hKPW4QfQnt8" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-### PARAMETRI DEL MODULO CESPITI
+## **PARAMETRI MODULA OSNOVNIH SREDSTAVA**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
+## **PARAMETRI MODULA OSNOVNIH SREDSTAVA**
 
-## **PARAMETRI MODULA DUGOTRAJNE IMOVINE**
+Prvi video prikazuje pretragu i pregled računovodstvenih podataka.
 
-Prvi video prikazuje pretraživanje i pregled računovodstvenih podataka.  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gS0i_G0O5ko" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gS0i_G0O5ko" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+U ovom videu objašnjeno je kako se unose knjiženja u glavnu knjigu.
 
-In questo video si spiega come inserire movimenti contabili di prima nota.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lOWGrEg-w6A" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lOWGrEg-w6A" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+## ISPISI ADMINISTRATIVNIH PODATAKA
 
-## ISPIS ADMINISTRATIVNIH PODATAKA  
+### RAČUNOVODSTVENI IZVEŠTAJI
 
-### RAČUNOVODSTVENI ISPISI
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vQS47gLDe2M" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vQS47gLDe2M" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+### PORESKI IZVEŠTAJI
 
-### POREZNI ISPISI  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HWjgN0yehEc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+### Reklasifikacija bilansa za izradu zakonskog bilansa (CEE format)
 
-### Reklasifikacija bilance za izradu zakonske bilance (CEE format)  
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bhoSB80XFGY" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bhoSB80XFGY" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 ## **MODUL OTVORENIH STAVKI**
 
-### PRETRAŽIVANJE OTVORENIH STAVKI  
+### PRETRAGA OTVORENIH STAVKI
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FZVfr6QuXDc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FZVfr6QuXDc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/suRoBRtPadc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/suRoBRtPadc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Phu6-Q4ZF7o" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Phu6-Q4ZF7o" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-### ISPISI OTVORENIH STAVKI  
+### IZVEŠTAJI O OTVORENIM STAVKAMA
 
-<iframe width="560" height="315" src="https://youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-## **DUGOTRAJNA IMOVINA**
+## **OSNOVNA SREDSTVA**
 
 ### UNOS
 
-<iframe width="560" height="315" src="https://youtube.com/embed/EumrLuAHXCk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/EumrLuAHXCk" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-### ISPISI
+### IZVEŠTAJI
 
-<iframe width="560" height="315" src="https://youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 ### PARAMETRI
 
-<iframe width="560" height="315" src="https://youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/m_qhk6-JrVc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-### AMORTIZACIJA
+### OBRAČUN AMORTIZACIJE
 
-<iframe width="560" height="315" src="https://youtube.com/embed/jD0qtQmqCIA" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/jD0qtQmqCIA" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
+## **PRIMAOCI PRIHODA**
 
-## **PRIMATELJI DOHOTKA**
+<iframe width="560" height="315" src="https://youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/8sdFGMDVIFc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/8sdFGMDVIFc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/DVXhUdwqBS4" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/DVXhUdwqBS4" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+## **PORESKE PRIJAVE**
 
-## **POREZNE PRIJAVE**
+<iframe width="560" height="315" src="https://youtube.com/embed/-IAAv1RdE-g" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/-IAAv1RdE-g" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/rZM6NBOpIxQ" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/rZM6NBOpIxQ" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+## UPRAVLJANJE PASIVNIM KREDITIMA
 
-## UPRAVLJANJE PASIVNIM KREDITIMA  
+<iframe width="560" height="315" src="https://youtube.com/embed/lIsD0KRlFFw" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/lIsD0KRlFFw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+## **ELEKTRONSKO FAKTURISANJE**
 
-## **ELEKTRONIČKO IZDAVANJE RAČUNA**
+<iframe width="560" height="315" src="https://youtube.com/embed/2obPKWM9aFE" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/2obPKWM9aFE" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/hnEjquEtLDo" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/hnEjquEtLDo" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/2UbRju_n0sI" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/2UbRju_n0sI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/mIsN2W8NPO0" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/mIsN2W8NPO0" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/CY522zV62m4" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://youtube.com/embed/CY522zV62m4" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-<iframe width="560" height="315" src="https://youtube.com/embed/8WUv3uwuaiQ" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
+<iframe width="560" height="315" src="https://youtube.com/embed/8WUv3uwuaiQ" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

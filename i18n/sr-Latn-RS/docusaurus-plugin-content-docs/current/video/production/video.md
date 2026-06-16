@@ -42,7 +42,7 @@ sidebar_position: 1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S9lKjaOTnUg" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-**Kvaliteta**
+**Kvalitet**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wf0TBhuVixo" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
