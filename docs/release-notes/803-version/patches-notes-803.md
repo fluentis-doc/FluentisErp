@@ -4,10 +4,22 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1
 ---
 
+### Patch 803.0025 - 15/06/2026
+
+> -	FI - revisione assegnazione numero cespiti nella procedura di suddivisione cespiti dentro la registrazione contabile (#TT02419/26)
+> -	FI - revisione calcolo importi per registrazione automatica giro iva da stampa liquidazione iva definitiva (#TT02548/26)
+> -	FI - Calcolo Provvigioni: aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. Rif #TT02180/26
+> -	FI - ricerca compensi, revisione applicazione filtro
+> -	PR - Gestione della liquidità: revisione inserimento righe disponibilità bancarie da cash flow e da ricerca registrazioni (#TT01923/26 - #TT02211/25 - #TT03176/25)
+> -	SCM - Bolle di Acquisto Rollback Carico Lotti e Serial Number: risolto il rollback dei movimenti di carico da bolla di acquisto, l’indisponibilità era causata dal fatto che i movimenti dei ddt valorizzati in fattura non venivano conteggiati correttamente. (#TT744/26)
+> -	SD - Blocco eliminazione righe su Riepiloghi Iva/scadenze su elenco Fatture Vendita post consegna allo SDI (#TT02532/26)
+> -	SD - Fatture di vendita: risolta l'errata applicazione degli sconti finali nella procedura di creazione da DDT per gli articoli con parametro 'Nessuna condizione commerciale' attivo (#TT02260/26)
+> -	SH - Risolto un problema di blocco della riga nella griglia di inserimento che si verificava al doppio clic sui campi ComboBox relativi a oggetti referenziati, in assenza di filter widget o filter result.
+
 ### Patch 803.0024 - 12/06/2026
 
-> -	Arm - fix merge (TT02594/26)
-> -	FI - aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. Modifications inside the form calculate commission report can have impact on profiles. ( #TT02180/26)
+> -	Arm - fix merge (#TT02594/26)
+> -	FI - aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. Modifications inside the form calculate commission report can have impact on profiles. (#TT02180/26)
 > -	FI - Import bank account (#TT02271/26)
 > -	FI - revisione contabilizzazione nota di credito acquisti con segni misti e date competenza differenti (#TT02545/26)
 > -	MES - Costificazione Ordini di produzione: corretta anomalia che non considerava le variazioni di Macchina e/o Gruppo manodopera nelle Dichiarazioni di produzione rispetto a quelli predefiniti nella Fase di lavoro. (#TT02400/26).
