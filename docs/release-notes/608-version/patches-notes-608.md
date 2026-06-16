@@ -4,6 +4,10 @@ sidebar_label: 🔧 Patch Notes v608
 sidebar_position: 1
 ---
 
+### Patch 608.1-0092 - 15/06/2026
+
+> -	SH - Risolto un problema di blocco della riga nella griglia di inserimento che si verificava al doppio clic sui campi ComboBox relativi a oggetti referenziati, in assenza di filter widget o filter result.
+
 ### Patch 608.1-0091 - 12/06/2026
 
 > -	FI - revisione gestione pulsante creazione file Intrastat da ricerca intra1 (#TT02355/26)  
