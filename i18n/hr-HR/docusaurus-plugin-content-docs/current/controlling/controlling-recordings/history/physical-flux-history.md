@@ -18,7 +18,7 @@ Tablica sadrži sljedeća polja:
 
 - ***Količina***
 
-- Polje ***Izračunato*** prikazuje izvor podataka
+- Polje ***Izračunano*** prikazuje izvor podataka
 
 - ***Šifra, broj i opis osnovnog sredstva*** dna koje se redak odnosi
 

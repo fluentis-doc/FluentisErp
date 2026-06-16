@@ -28,7 +28,7 @@ Dostupna polja za unos:
 
 - ***Do datuma obračuna***: nije obavezno, ali se preporučuje za ekonomske transakcije. 
 
-- ***Divisione***: nije obavezno, ako nije navedeno, koristi se odjel postavljen u parametrima uvoza 
+- ***Odjel***: nije obavezno, ako nije navedeno, koristi se odjel postavljen u parametrima uvoza 
 
 Nakon unosa svih potrebnih podataka, moguće je validirati raspon unesenih podataka pomoću (tipke ***Validiraj raspon podataka***), kako bi se provjerilo ima li nedostajućih ili pogrešnih šifri. Zatim se može pokrenuti uvoz podataka klikom na tipku ***Uvezite Excel tablicu***: pri čemu će biti zatražena specifikacija **Odjela**  i referentne valute operacije.
 

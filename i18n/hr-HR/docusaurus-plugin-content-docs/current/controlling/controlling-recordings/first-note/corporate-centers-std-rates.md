@@ -3,7 +3,7 @@ title: Troškovi radnih centara
 sidebar_position: 3
 ---
 
-U ovoj formi moguće je unijeti fiksne troškve radnih centara (putem gumba **Novo**), koji nisu izračunati pomoću omjera definiranih između rezultata modela reklasifikacije i rezultata centra troška.
+U ovoj formi moguće je unijeti fiksne troškove radnih centara (putem gumba **Novo**), koji nisu izračunati pomoću omjera definiranih između rezultata modela reklasifikacije i rezultata centra troška.
 
 Te će troškovi zatim koristiti nositelji troškova (posebno distribucijski kriterij *Povrat na proizvodnju po standardnoj tarifi*) za vrednovanje zapisa i rezultata centara koji se tipično temelje na fizičkim veličinama, a ne na ekonomskim podacima.
 

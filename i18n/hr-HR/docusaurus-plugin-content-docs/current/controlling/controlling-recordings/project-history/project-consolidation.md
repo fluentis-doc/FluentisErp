@@ -1,5 +1,5 @@
 ---
-title: Konsolidacija naloga za posao
+title: Konsolidacija naloga/projekta
 sidebar_position: 5
 ---
 
@@ -9,7 +9,7 @@ Prikazana polja:
 
 - ***Podkonto***
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): u ovom slučaju centar projekta/naloga, tj. centar koji ima flag *Zadano za dimenziju projekata* ili centar dodijeljen projektu putem ***tablice pridruživanja centara projektima/nalozima***
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): u ovom slučaju centar projekta/naloga, tj. centar koji ima opciju *Zadano za dimenziju projekata* ili centar dodijeljen projektu putem ***tablice pridruživanja centara projektima/nalozima***
 - [***Centar prijenosa***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), (prikazuje se samo za stavke povezane s nositeljima troškova)
 - ***Godina***
 - ***Razdoblje***
@@ -21,10 +21,10 @@ Prikazana polja:
 - ***Valuta***, (uvijek jednaka valuti poduzeća)
 - ***Vrsta retka***, može biti:
     - *0* Izvorni redovi (nastali iz zatvaranja ili ručnih unosa zatvaranja, ali i iz redova nositelja troškova raspodjele)
-    - *2* Primljeni redovi (za nositelje troškova raspodjele, to su redovi kojiprenose vrijednost iz centra nositelja u centar troška)
+    - *2* Primljeni redovi (za nositelje troškova raspodjele, to su redovi koji prenose vrijednost iz centra nositelja u centar troška)
 
 :::tip NAPOMENA
-Redovi *raspodjele* su u osnovi redovi raspodjele *nositelja troškova*, koji iz prijelaznih konta preraspodjeljuju vrijednosti na stvarne *centre troška*. Nositelji troškova *raspodjele* uključuju sve ostale metode prijenosa vrijednosti.
+Redovi *raspodjele* su u osnovi redovi raspodjele *nositelja troškova*, koji iz prijelaznih konta preraspodjeljuju vrijednosti na stvarne *centre troška*. Nositelji troškova  raspodjele* uključuju sve ostale metode prijenosa vrijednosti.
 
 :::
 - ***Vrsta distribucije*** primijenjenog nositelja troškova

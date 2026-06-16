@@ -3,7 +3,7 @@ title: Tablica Poduzeća
 sidebar_position: 1
 ---
 
-Prva odluka koju treba donijeti odnosi se na vrstu kontrolinga koje poduzeće želi primijeniti. Ako je cilj uspostaviti sustav poslovnih centara međusobno povezanih logikom prijenosa vrijednosti troškova i prihoda, s ciljem potpune valorizacije analitičkog računovodstva, potrebno je ući u ***Tablicu poduzeća*** i aktivirati flag upravljanja *kontrolingom*, koja se nalazi u kartici *Ostale postavke*.  
+Prva odluka koju treba donijeti odnosi se na vrstu kontrolinga koje poduzeće želi primijeniti. Ako je cilj uspostaviti sustav poslovnih centara međusobno povezanih logikom prijenosa vrijednosti troškova i prihoda, s ciljem potpune valorizacije analitičkog računovodstva, potrebno je ući u ***Tablicu poduzeća*** i aktivirati opciju upravljanja *kontrolingom*, koja se nalazi u kartici *Ostale postavke*.  
 
 Nakon toga, konfiguracija se nastavlja u pregledu *Divizije* (kartica Opći podaci), gdje je potrebno postaviti razdoblje za kontrolu: *mjesečna* (zadana opcija) ili *tjedna*.  
 

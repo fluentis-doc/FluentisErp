@@ -4,11 +4,9 @@ sidebar_position: 1
 ---
 
 Ovo je obrazac gdje se unose ili pregledavaju podaci koji se koriste za obradu podataka u *kontrolingu*, za nositelje troškova ili za izračun tarifa centara prema količinama.
-Za određene jedinice mjere, poput kvadratnih metara koje zauzimaju različiti centri za raspodjelu troškova poslovne zgrade, unos se vrši ručno početkom godine, unosom podataka u formu ili dupliciranjem vrijednosti iz prethodne godine pomoću
-odgovarajućeg gumba. Za druge vrste fizičkih veličina, poput radnih sati strojeva ili sati rada zaposlenika,
-tablica se može popunjavati putem ***procedure dohvata podataka iz proizvodnje***, koja za svaki period zbraja
-podatke iz proizvodnje ili sate rada na projektu. Dodatna mogućnost je učitavanje iz Excel tablice putem
-modela *PhysicalMovingControlling* koji je na zahtjev dostupan u ***Bizlinku***.
+Za određene jedinice mjere, poput kvadratnih metara koje zauzimaju različiti centri za raspodjelu troškova poslovne zgrade, unos se vrši ručno početkom godine, unosom podataka u formu ili dupliciranjem vrijednosti iz prethodne godine pomoću odgovarajućeg gumba. 
+Za druge vrste fizičkih veličina, poput radnih sati strojeva ili sati rada zaposlenika,
+tablica se može popunjavati putem ***procedure dohvata podataka iz proizvodnje***, koja za svaki period zbraja podatke iz proizvodnje ili sate rada na projektu. Dodatna mogućnost je učitavanje iz Excel tablice putem modela *PhysicalMovingControlling* koji je na zahtjev dostupan u ***Bizlinku***.
 
 
 Polja dostupna u gornjoj mreži:
@@ -35,7 +33,7 @@ Polja dostupna u donjem obracu (detalji količina):
 - [***Odredišni centar***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), tj. centar za koji je izvorni centar prethodno obavljao rad na tim količinama
 
 :::tip PRIMJER
-Ako zaposlenik Tehničkog ureda priprema tehničke detalje ponude za komercijalni odjel, tada će Tehnički ured biti *centar podrijetla*, a komercijalni odjel *odredišni centar*. I [***Nositelji troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) s ***Vrstom distribucije*** 10 - Prijenos na proizvodnju prema standardnoj tarifi, 11 - Izravni prijenos prema standardnoj tarifi, 12 - Prijenos na proizvodnju prema izračunatoj tarifi odnose se na količine centara podrijetla i/ili odredišta
+Ako zaposlenik Tehničkog ureda priprema tehničke detalje ponude za komercijalni odjel, tada će Tehnički ured biti *centar podrijetla*, a komercijalni odjel *odredišni centar*. I [***Nositelji troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) s ***Vrstom distribucije*** 10 - Prijenos na proizvodnju prema standardnoj tarifi, 11 - Izravni prijenos prema standardnoj tarifi, 12 - Prijenos na proizvodnju prema izračunanoj tarifi odnose se na količine centara podrijetla i/ili odredišta
 :::
 
 - Valjana ***količina*** za redak

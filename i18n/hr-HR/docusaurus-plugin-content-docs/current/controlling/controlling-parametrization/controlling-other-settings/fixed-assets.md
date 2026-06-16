@@ -1,13 +1,16 @@
 ---
-title: Šifrarnici osnovnih sredstava 
+title: Šifarnici osnovnih sredstava 
 sidebar_position: 7
 ---
 
 Prvi korak je definirati hoće li se primjenjivati isključivo računovodstvene logike ili će se kontroling odvojiti od njih i koristiti drugačije kriterije. 
 
-U prvom slučaju potrebno je otvoriti ***Parametre modula osnovnih sredstava*** i aktivirati flag *Omogućavanje računovodstvenog centra*. S ovom opcijom u kategorijama osnovnih sredstava bit će dostupna tablica s unaprijed definiranim *Centrima troškova* dok će u zaglavlju biti vidljiva tablica za dodjelu *Centara troškova* pojedinačnoj imovini. U obje tablice moguće je definirati popis centara koji će se koristiti uz pripadajući postotak dodjele. Prilikom kreiranja računovodstvenih izvještaja putem ***privremenih zatvaranja***, unutar procedure *Povrat amortizacije osnovnog sredstva*, odabire se zatvaranje i ***FluentisERP*** izračunava amortizaciju na temelju broja dana u razdoblju zatvaranja, koristeći postotke kategorije kako bi ih rasporedio po centrima prema sljedećem prioritetu: prvo su to centri definirani u zaglavlju osnovnog sredstva, zatim centri definirani na razini kategorije osnovnog sredstva pa centri definirani na kontu troška u kontnom planu.
+U prvom slučaju potrebno je otvoriti ***Parametre modula osnovnih sredstava*** i aktivirati opciju *Omogućavanje računovodstvenog centra*. 
+S ovom opcijom u kategorijama osnovnih sredstava bit će dostupna tablica s unaprijed definiranim *Centrima troškova* dok će u zaglavlju biti vidljiva tablica za dodjelu *Centara troškova* pojedinačnoj imovini. 
+U obje tablice moguće je definirati popis centara koji će se koristiti uz pripadajući postotak dodjele. 
+Prilikom kreiranja računovodstvenih izvještaja putem ***privremenih zatvaranja***, unutar procedure *Povrat amortizacije osnovnog sredstva*, odabire se zatvaranje i ***FluentisERP*** izračunava amortizaciju na temelju broja dana u razdoblju zatvaranja, koristeći postotke kategorije kako bi ih rasporedio po centrima prema sljedećem prioritetu: prvo su to centri definirani u zaglavlju osnovnog sredstva, zatim centri definirani na razini kategorije osnovnog sredstva pa centri definirani na kontu troška u kontnom planu.
 
-Ako poduzeće ima aktiviran *Kontroling* i želi se odvojiti od računovodstvenih logika, neće se postaviti flag *Omogućavanje računovodstvenog centra*Time će centri nestati iz kategorija i zaglavlja osnovnih sredstava, a postat će obavezna kartica ***Postavke za kontroling*** kako bi se omogućilo spremanje osnovnog sredstva. 
+Ako poduzeće ima aktiviran *Kontroling* i želi se odvojiti od računovodstvenih logika, neće se postaviti flag *Omogućavanje računovodstvenog centra*. Time će centri nestati iz kategorija i zaglavlja osnovnih sredstava, a postat će obavezna kartica ***Postavke za kontroling*** kako bi se omogućilo spremanje osnovnog sredstva. 
 
 Ako se otvori kartica amortizacije za kontroling u matičnim podacima osnovnog sredstva, bit će dostupna sljedeća polja:  
 
@@ -33,7 +36,7 @@ Izračun temeljen na količini uzima osnovu amortizacije i dijeli je s ukupnom k
 
 - flag ***ZA PONOVNO GENERIRANJE VRIJEDNOSTI IZ KONTROLINGA***
 
-Posljednja dva flaga preuzimaju se iz pripadajuće kategorije, ali njihova svrha je definiranje zadanih vrijednosti za pojedino osnovno sredstvo, jer se ona može razlikovati od postavki kategorije. 
+Posljednje dvije opcije preuzimaju se iz pripadajuće kategorije, ali njihova svrha je definiranje zadanih vrijednosti za pojedino osnovno sredstvo, jer se ona može razlikovati od postavki kategorije. 
 
 U donjoj tablici definiraju se ***CENTRI TROŠKOVA*** kojima će se dodijeliti amortizacija osnovnog sredstva, a postoji i mogućnost dodjele ***PROJEKTA*** na koji će se amortizacija izravno knjižiti. 
 

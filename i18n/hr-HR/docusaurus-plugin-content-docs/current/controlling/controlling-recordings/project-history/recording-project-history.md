@@ -3,8 +3,7 @@ title: Povijest zapisa
 sidebar_position: 3
 ---
 
-Ova forma je u osnovi ista kao ***Povijest zapisa upravljanja***, prikazuje rezultate ***Razdoblja obrade*** ali
-filtrira isključivo one redove koji su izravno povezani s projektom/nalogom. To znači da su prikazani troškovi i prihodi koji su izravno dodijeljeni analiziranoj dimenziji projekta/naloga.
+Ova forma je u osnovi ista kao ***Povijest zapisa upravljanja***, prikazuje rezultate ***Razdoblja obrade*** ali filtrira isključivo one redove koji su izravno povezani s projektom/nalogom. To znači da su prikazani troškovi i prihodi koji su izravno dodijeljeni analiziranoj dimenziji projekta/naloga.
 
 Polja su ista kao u općoj formi za direkcijsku dimenziju, uključujući:
 
@@ -17,7 +16,7 @@ Polja su ista kao u općoj formi za direkcijsku dimenziju, uključujući:
 - ***Duguje***
 - ***Potražuje***
 - ***Fiksna vrijednost***, (zbrojena s varijabilnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
-- ***Varijabilna vrijednost***, t (zbrojena s fiksnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
+- ***Varijabilna vrijednost***, (zbrojena s fiksnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
 - ***Odjel***
 - ***Valuta***, (uvijek jednaka valuti poduzeća)
 - ***Distribucija*** perioda povezana s redom
@@ -42,7 +41,7 @@ Redovi raspodjele su u osnovi redovi *raspodjele nositelja troškova*, koji iz p
     - *Materijali proizvodnje* (8), troškovi materijala u proizvodnji
     - *Vanjske usluge* (9), troškovi vanjskih radova
     - *Proizvodne transformacije* (10), interni proizvodni procesi
-    - *Konsolidacija kontrolinga* (15), postupak konsolidacije master kontrolinga u multicompany postavkama
+    - *Konsolidacija kontrolinga* (15), postupak konsolidacije master kontrolinga u *multicompany* postavkama
 
 
 :::tip NAPOMENA

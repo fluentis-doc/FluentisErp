@@ -19,15 +19,15 @@ Dostupna polja:
 
 - ***Fiksna vrijednost*** i ***varijabilna vrijednost***: dva dijela ukupnih troškova dodijeljenih centru putem modela reklasifikacije povezanog s centrom
 
-- Četiri moguće [*jedinice mjere*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) za svaki centar: ***Fiksna mjerna jedinica***, ***Druga fiksna jedinica mjere***, ***Promijenjiva mjerna jedinica*** i ***Druga promijenjiva jedinica mjere***. Polja su popunjena na temelju fizičkih indeksa i prema postavkama pojedinog centra.
+- Četiri moguće [*jedinice mjere*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) za svaki centar: ***Fiksna mjerna jedinica***, ***Druga fiksna jedinica mjere***, ***Promjenjiva mjerna jedinica*** i ***Druga promjenjiva jedinica mjere***. Polja su popunjena na temelju fizičkih indeksa i prema postavkama pojedinog centra.
 
 - ***Prva jedinica mjere za fiksnu količinu*** - brojnik za fiksni indeks prve jedinice mjere
 
-- ***Prva mjerna jedinica za promijenjivu količinu*** – brojnik za varijabilni indeks prve jedinice mjere
+- ***Prva mjerna jedinica za promjenjivu količinu*** – brojnik za varijabilni indeks prve jedinice mjere
 
 - ***Druga mjerna jedinica za fiksnu količinu*** - brojnik za fiksni indeks druge jedinice mjere
 
-- ***Druga jedinica mjere za promijenivu količinu*** – brojnik za varijabilni indeks druge jedinice mjere
+- ***Druga jedinica mjere za promjenivu količinu*** – brojnik za varijabilni indeks druge jedinice mjere
 
 - ***Nazivnik*** – koristi se za postotne indekse
 

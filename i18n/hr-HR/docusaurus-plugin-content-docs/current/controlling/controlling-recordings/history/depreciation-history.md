@@ -23,6 +23,6 @@ sidebar_position: 2
 
 - Referentni ***broj*** i ***opis osnovnog sredstva***  na koje se redak odnosi
 
-Na temelju ovih podataka, izračunatih putem **Obrade perioda**, **FluentisERP** kreira **posebno knjiženje područja**, koje sadrži analitičke podatke valorizirane prema ukupnim vrijednostima **konta/centra** i relevantnom rasponu datuma.
+Na temelju ovih podataka, izračunanih putem **Obrade perioda**, **FluentisERP** kreira **posebno knjiženje područja**, koje sadrži analitičke podatke valorizirane prema ukupnim vrijednostima **konta/centra** i relevantnom rasponu datuma.
 
 Nije dopušteno brisanje, izmjena niti unos podataka u tablicu.

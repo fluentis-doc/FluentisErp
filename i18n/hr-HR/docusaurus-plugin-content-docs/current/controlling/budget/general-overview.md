@@ -3,7 +3,7 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul Izrada proračuna omogućuje upravljanje budžetom po centru troška, pri čemu se integrira s kontrolingom unutar ***Fluentis Erp*** kako bi se valoriziralo određeno analitičko područje budžeta. Ovo područje može biti valorizirano specifičnim nositeljima troškova te se uspoređuje s konačnim podacima unutar usporedbe reklasifikacija. Modul je dio kontrolinga i omogućuje učitavanje detaljnih podataka putem uvoza iz Excela s planiranim podacima budžeta. 
+Modul **Izrada proračuna** omogućuje upravljanje budžetom po centru troška, pri čemu se integrira s kontrolingom unutar ***Fluentis Erp*** kako bi se valoriziralo određeno analitičko područje budžeta. Ovo područje može biti valorizirano specifičnim nositeljima troškova te se uspoređuje s konačnim podacima unutar usporedbe *reklasifikacija*. Modul je dio kontrolinga i omogućuje učitavanje detaljnih podataka putem uvoza iz Excela s planiranim podacima budžeta. 
 
 ## Početna konfiguracija modula 
 

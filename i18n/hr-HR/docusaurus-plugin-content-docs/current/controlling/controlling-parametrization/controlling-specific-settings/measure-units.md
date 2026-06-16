@@ -29,5 +29,5 @@ Drugi korak je povezivanje ovih jedinica mjere kontrolinga s proizvodnim poslovn
 - Jedinica mjere za evidentiranje ***vremena ljudske radne snage***
 - Jedinica mjere za evidentiranje ***vremena stroja***
 - Raspon datuma važenja konfiguracije ***(Od datuma – Do datuma)*** 
-- Flagovi za uključivanje ili isključivanje različitih vremenskih podataka u izračun produktivnosti centra
+- Opcije za uključivanje ili isključivanje različitih vremenskih podataka u izračun produktivnosti centra
 

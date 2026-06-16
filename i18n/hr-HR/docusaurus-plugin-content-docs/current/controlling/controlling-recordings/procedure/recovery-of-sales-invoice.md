@@ -6,7 +6,8 @@ sidebar_position: 2
 Postupak ***dohvata (preuzimanja) podataka iz izlaznih (prodajnih) računa*** omogućuje integraciju podataka iz područja analize s dva ključna podatka iz prodaje: provizijama i popustima.
 
 ## DOHVAT PROVIZIJE
-Kod provizija, cilj je evidentirati troškove provizija unutar odabranog perioda, iako će ih financijsko računovodstvo registrirati tek u trenutku nastanka obveze, primjerice tek nakon potpune naplate računa.Za postavljanje ovog postupka definiraju se sljedeći parametri:
+Kod provizija, cilj je evidentirati troškove provizija unutar odabranog perioda, iako će ih financijsko računovodstvo registrirati tek u trenutku nastanka obveze, primjerice tek nakon potpune naplate računa.
+Za postavljanje ovog postupka definiraju se sljedeći parametri:
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize
 - ***Datum*** 
 - ***Godina***

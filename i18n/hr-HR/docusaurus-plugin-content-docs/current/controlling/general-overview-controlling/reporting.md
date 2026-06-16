@@ -10,5 +10,4 @@ Izvještavanje se može podijeliti u dvije kategorije:
 
 Ovakvo izvještavanje treba omogućiti i usporedbu različitih razdoblja ili vremenskih jedinica kako bi se provela barem osnovna analiza odstupanja. Primjerice, za različita područja može se usporediti ostvareni rezultat s budžetom.
 
-Za poduzeća koja koriste vrednovanje kroz [*projekte/narudžbe*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) bit će dostupna i procedura ispisa izvještaja o ostvarenju projekta, uvijek temeljenog na
-specifičnom [*modelu klasifikacije*](/docs/controlling/reclassifications/create-reclassification-model).
+Za poduzeća koja koriste vrednovanje kroz [*projekte/narudžbe*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) bit će dostupna i procedura ispisa izvještaja o ostvarenju projekta, uvijek temeljenog na specifičnom [*modelu klasifikacije*](/docs/controlling/reclassifications/create-reclassification-model).

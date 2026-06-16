@@ -14,7 +14,7 @@ Odabirom opcije **Novi konsolidirani budžet** otvara se forma za unos ostvareni
 1. U padajućem izborniku **Budžet** odabrati planski budžet koji se želi usporediti s ostvarenim vrijednostima (za analizu odstupanja na konsolidiranoj razini).  
 2. U desnom dijelu zaglavlja forme odabrati podatke **na razini ostvarenja** koji mogu biti:  
     - **Međugodišnje zatvaranje** prethodno obrađeno, odabrano iz pripadajućeg izbornika;  
-    - **Podaci iz Controllinga**, odnosno iz *kontroling računovodstva*, aktiviranjem pripadajućeg označnog polja te odabirom **Područja** analize, **Dimenzije** i **raspona razdoblja** (godina / mjesec).  
+    - **Podaci iz kontrolinga**, odnosno iz *kontroling računovodstva*, aktiviranjem pripadajućeg označnog polja te odabirom **Područja** analize, **Dimenzije** i **raspona razdoblja** (godina / mjesec).  
 3. Spremiti zaglavlje s parametrima iz prethodnih koraka, a zatim redom odabrati pojedine *podbudžete* u gornjoj tablici;  
 4. Pritisnuti tipku **Izračunaj konsolidirani budžet** koja popunjava detaljne podatke u donjoj tablici za svaki podbudžet označen u gornjoj tablici.  
  

@@ -14,8 +14,7 @@ Završna točka, koja predstavlja konačni cilj kontrolinga barem u dijelu indus
 
 ***ADMINISTRATIVNI TROŠAK:*** nadovezuje se na industrijski trošak dodavanjem tzv. strukturnih troškova, koji uključuju opće, administrativne, komercijalne i financijske troškove.
 
-***EKONOMSKI TEHNIČKI TROŠAK:*** predstavlja završnu konfiguraciju i ne koristi se uvijek. Razlika između ukupnog troška i ekonomskog tehničkog troška je u tome što se dodaju imputirani troškovi. Primjerice, umjesto da se uzme u obzir amortizacija tehničke zgrade, može se koristiti procijenjena tržišna najamnina, čak i ako je objekt u vlasništvu poduzeća. Drugi primjer
-je rad vlasnika poduzeća, koji se obično ne kvantificira jer ulazi u kategoriju dobiti, ali se ovdje uračunava kao da je riječ o zaposleniku (dakle, dodjeljuje mu se plaća za obavljeni rad u okviru poduzeća).
+***EKONOMSKI TEHNIČKI TROŠAK:*** predstavlja završnu konfiguraciju i ne koristi se uvijek. Razlika između ukupnog troška i ekonomskog tehničkog troška je u tome što se dodaju imputirani troškovi. Primjerice, umjesto da se uzme u obzir amortizacija tehničke zgrade, može se koristiti procijenjena tržišna najamnina, čak i ako je objekt u vlasništvu poduzeća. Drugi primjer je rad vlasnika poduzeća, koji se obično ne kvantificira jer ulazi u kategoriju dobiti, ali se ovdje uračunava kao da je riječ o zaposleniku (dakle, dodjeljuje mu se plaća za obavljeni rad u okviru poduzeća).
 
 Na taj način moguće je slobodno kreirati različite [*modele klasifikacije*](/docs/controlling/reclassifications/create-reclassification-model) za kontroling, s konfiguracijama troškova koje najbolje odgovaraju stvarnosti poduzeća.
 

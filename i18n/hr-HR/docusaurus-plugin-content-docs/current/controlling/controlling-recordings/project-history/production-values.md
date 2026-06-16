@@ -3,7 +3,7 @@ title: Vrijednosti proizvodnje
 sidebar_position: 4
 ---
 
-Ovdje se prikazuju troškovi materijala povezane s projektom/nalogom, uključujući materijale obrađene interno i eksterno.
+Ovdje se prikazuju troškovi materijala povezani s projektom/nalogom, uključujući materijale obrađene interno i eksterno.
 
 Dostupna polja su:
 

@@ -45,8 +45,8 @@ Redovi *raspodjele* su u osnovi redovi raspodjele *nositelja troškova*, koji iz
     - *Zalihe* (7), zapisi zaliha u kontrolingu
     - *Materijali proizvodnje* (8), troškovi materijala u proizvodnji
     - *Vanjske usluge* (9), troškovi vanjskih radova
-    - *TProizvodne transformacije* (10), interni proizvodni procesi
-    - *Konsolidacija kontrolinga* (15), postupak konsolidacije master kontrolinga u multicompany postavkama
+    - *Proizvodne transformacije* (10), interni proizvodni procesi
+    - *Konsolidacija kontrolinga* (15), postupak konsolidacije master kontrolinga u *multicompany* postavkama
 
 :::tip NAPOMENA
 Postoje dodatne četiri kategorije izvora podataka, vidljive u povijesti konačnog proračuna projekta:
@@ -56,6 +56,6 @@ Postoje dodatne četiri kategorije izvora podataka, vidljive u povijesti konačn
     - *Priprema čovjeka* (14)
 :::
 
-- ***Broj***, ***Godina***, ***Redak***, ***Wbs***: referentni podaciza projekte (nisu valorizirani).
+- ***Broj***, ***Godina***, ***Redak***, ***Wbs***: referentni podaci za projekte (nisu valorizirani).
 
 Nije dopušteno brisanje, izmjena niti unos podataka u tablicu.

@@ -1,5 +1,5 @@
 ---
-title: Kategorija osnovnih sredstava za kontrolu
+title: Kategorija osnovnih sredstava za kontroling
 sidebar_position: 7
 ---
 

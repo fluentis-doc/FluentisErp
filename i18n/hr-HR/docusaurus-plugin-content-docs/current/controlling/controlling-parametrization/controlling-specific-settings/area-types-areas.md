@@ -24,10 +24,10 @@ Obično imamo tri područja:
 
 - *STVARNO STANJE*: koristi se pri obradi međugodišnjih zatvaranja;
 
-- *SET PRAVILA*: područje koje ne sadrži vrijednosti, osim eventualno nekih fizičkih mjera. Ovo područje pohranjuje standardna pravila cost drivera: ako, na primjer, obrađujem područje konsuntiva i želim raspodijeliti trošak najma pomoću cost drivera, Fluentis će koristiti specifični cost driver za konsuntive ako ga pronađe; inače će koristiti opća pravila koja su po defaultu povezana s područjem set pravila.
+- *SET PRAVILA*: područje koje ne sadrži vrijednosti, osim eventualno nekih fizičkih mjera. Ovo područje pohranjuje standardna pravila nositelja troškova: ako se, na primjer, obrađuje područje ostvarenih troškova i želi raspodijeliti trošak najma pomoću nositelja troškova, Fluentis će koristiti specifičnog nositelja troškova za ostvarene troškove ako ga pronađe; inače će koristiti opća pravila koja su po *defaultu* povezana s područjem set pravila.
 
 :::tip NAPOMENA 
-Broj analitičkih područja možemo definirati slobodno. Tipični cilj je simulirati što se događa ako promijenimo pravila cost drivera u tvrtki ili primijeniti različite konfiguracije troškova.
+Broj analitičkih područja možemo definirati slobodno. Tipični cilj je simulirati što se događa ako promijenimo pravila nositelja troškova u tvrtki ili primijeniti različite konfiguracije troškova.
 
-Druga primjena je “kristalizacija” kontroling obračuna: kao što će biti objašnjeno kod cost drivera, obračuni kontrolinga brišu i ponovno kreiraju podatke za obračunsku godinu. Ako želimo zadržati, primjerice, podatke za prvo tromjesečje kako bismo ih usporedili s prva tri mjeseca obračuna prvog polugodišta, to možemo postići kreiranjem različitih konsuntivnih područja.
+Druga primjena je “kristalizacija” kontroling obračuna: kao što će biti objašnjeno kod nositelja troškova, obračuni kontrolinga brišu i ponovno kreiraju podatke za obračunsku godinu. Ako želimo zadržati, primjerice, podatke za prvo tromjesečje kako bismo ih usporedili s prva tri mjeseca obračuna prvog polugodišta, to možemo postići kreiranjem različitih područja ostvarenih troškova.
 :::

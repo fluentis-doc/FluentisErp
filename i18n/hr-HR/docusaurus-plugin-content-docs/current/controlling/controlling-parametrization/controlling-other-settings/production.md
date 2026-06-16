@@ -5,7 +5,7 @@ sidebar_position: 9
 
 Povezivanje centara poduzeća u konfiguracijama proizvodnje odvija se na dva načina:
 
-- U tablici ***Strojevi***, svakoj pojedinoj mašini može se dodijeliti odgovarajući [***CENTAR TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) 
+- U tablici ***Strojevi***, svakom pojedinom stroju može se dodijeliti odgovarajući [***CENTAR TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) 
 
 - U tablici ***Grupe radne snage***, svakoj grupi može se dodijeliti odgovarajući [***CENTAR TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) 
 

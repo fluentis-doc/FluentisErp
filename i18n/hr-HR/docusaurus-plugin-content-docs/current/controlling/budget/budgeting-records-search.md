@@ -10,5 +10,5 @@ Za unos novog zapisa obavezno je odabrati [***Područje***](/docs/controlling/co
 Zatim se odabire predložak knjiženja (kao i kod računovodstvenih transakcija), datum unosa i referentna valuta (Euro ili druga valuta). 
 
 U tablici unosa detalja mogu se dodati podkonta, centri troška povezani s odgovarajućom dimenzijom, projekt (ako postoji povezanost), dugovne i potražne vrijednosti.   
-Svi unosi moraju biti povezani s odgovarajućium odjelom. 
+Svi unosi moraju biti povezani s odgovarajućim odjelom. 
 
