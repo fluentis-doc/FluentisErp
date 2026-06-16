@@ -6,6 +6,16 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0078 - 15/06/2026
+
+> -	FI - Aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. (#TT02180/26)
+> -	FI - revisione assegnazione numero cespiti nella procedura di suddivisione cespiti dentro la registrazione contabile (#TT02419/26)
+> -	FI - revisione calcolo importi per registrazione automatica giro iva da stampa liquidazione iva definitiva (#TT02548/26)
+> -	PR - Gestione della liquidità, revisione inserimento righe disponibilità bancarie da cash flow e da ricerca registrazioni (#TT01923/26 - #TT02211/25 – #TT03176/25)
+> -	SD - Fatture di vendita, risolta l'errata applicazione degli sconti finali nella procedura di creazione da DDT per gli articoli con parametro 'Nessuna condizione commerciale' attivo (#TT02260/26)
+> -	SH - Risolto un problema di blocco della riga nella griglia di inserimento che si verificava al doppio clic sui campi ComboBox relativi a oggetti referenziati, in assenza di filter widget o filter result.
+
+
 ### Patch 707.1-0077 - 12/06/2026
 
 > -	FI - aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. Modifications inside the form calculate commission report can have impact on profiles.  (#TT02180/26)
