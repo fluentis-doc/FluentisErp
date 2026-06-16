@@ -366,7 +366,7 @@ const config = {
         // 3...
         //
         // Do _not_ use Infinity, the value must be a JSON-serializable integer.
-        indexDocSidebarParentCategories: 0,
+        indexDocSidebarParentCategories: 2,
 
         // whether to index blog pages
         indexBlog: false,
@@ -410,15 +410,15 @@ const config = {
           // default value is 1.2. If the collection of documents being indexed have high occurrences
           // of words that are not covered by a stop word filter, these words can quickly dominate any
           // similarity calculation. In these cases, this value can be reduced to get more balanced results.
-          k1: 1.2,
+          k1: 0.8,
           // By default, we rank pages where the search term appears in the title higher than pages where
           // the search term appears in just the text. This is done by "boosting" title matches with a
           // higher value than content matches. The concrete boosting behavior can be controlled by changing
           // the following settings.
-          titleBoost: 5,
+          titleBoost: 15,
           contentBoost: 1,
-          tagsBoost: 3,
-          parentCategoriesBoost: 2, // Only used when indexDocSidebarParentCategories > 0
+          tagsBoost: 10,
+          parentCategoriesBoost: 8, // Only used when indexDocSidebarParentCategories > 0
         }
       },
     ],
