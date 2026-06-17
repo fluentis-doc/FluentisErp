@@ -5,20 +5,20 @@ sidebar_position: 1
 
 Na ovoj se kartici mogu pretraživati postojeće  **Marketinške kampanje** ili stvarati Nove.
 
-Ekran se sastoji od tri dijela:     
+Forma se sastoji od tri dijela:     
 - prvi gornji dio prikazuje eventualne povezane radne tokove s kampanjom; za više informacija o radnim tokovima, pogledajte odgovarajući vodič za radne tokove;            
 - središnji dio prikazuje zaglavlje s općim informacijama, neke su obavezne, a druge nisu;       
 - ispod se nalazi nekoliko kartica koje prikazuju različite izvršene operacije.        
 
 ## Zaglavlje 
 
-Navodimo polja koja se pojavljuju u zaglavlju Marketinške kampanje.      
+Polja koja se pojavljuju u zaglavlju Marketinške kampanje:     
 
 **Vrsta kampanje**: označava vrstu kampanje koju treba stvoriti; vrste kampanja razlikuju se po kodu, opisu, numeraciji i razdoblju proračuna.       
 
 **Broj/Verzija/Datum**: ova polja automatski se popunjavaju;        
 
-**Lista distribucije**: moguće je povezati kampanju sa određenim prethodno kodiranim [Popisom](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-new) ali također možete odabrati i prazan popis i ručno unijeti kontakte; međutim, u kampanji izlaznog marketinga obično su već prisutni kontakti i bit će to svi oni kojima će se poslati e-mail.      
+**Lista distribucije**: moguće je povezati kampanju s određenim prethodno kodiranim [Popisom](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-new) ali također se može odabrati i prazan popis i ručno unijeti kontakte; međutim, u kampanji *izlaznog marketinga* obično su već prisutni kontakti i bit će to svi oni kojima će se poslati e-mail.      
 
 **Kategorija kampanje**: moguće je povezati kategoriju, koja se sastoji od koda i opisa;      
 
@@ -46,7 +46,7 @@ Sada prelazimo na donje kartice.
 
 ## Kontakti 
 
-Ovdje se nalaze kontakti koji su primatelji Marketinške Kampanje; mogu se dodati novi pritiskom na tipku **Novo** u traci s vrpcama: bit će zatraženi **Datum unosa**, la **Datum stvaranja potencijalnog kupca** (ovo će se polje automatski popuniti i u kartici **Potencijalni kupci**), **Kontakt**, itd.
+Ovdje se nalaze kontakti koji su primatelji Marketinške kampanje; mogu se dodati novi pritiskom na tipku **Novo** u traci s vrpcama: bit će zatraženi **Datum unosa**, **Datum stvaranja potencijalnog kupca** (ovo će se polje automatski popuniti i u kartici **Potencijalni kupci**), **Kontakt**, itd.
 
 Odabirom kontakata za koje želite provesti marketinšku kampanju, možete pritisnuti tipku **E-pošta** na vrpci da biste poslali E-poštu.
 

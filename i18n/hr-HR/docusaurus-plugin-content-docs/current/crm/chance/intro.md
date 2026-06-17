@@ -9,14 +9,14 @@ S tehničkog stajališta, prilike omogućuju praćenje svake interakcije s kupce
 **Prilika**       
 Modul Prilike u Fluentis ERP-u omogućuje upravljanje cijelim životnim ciklusom prodajne prilike – od njezina stvaranja do zatvaranja.   
 
-**CRM karta prilika**       
+**CRM mapa mogućnosti**       
 Ova funkcionalnost omogućuje geografski prikaz aktivnih prilika, koristeći geolokacijske podatke iz baze CRM kontakata. Moguće je filtrirati prilike prema vrsti, odgovornom korisniku ili vjerojatnosti uspjeha.     
 
 **Kanban ploča – Napredak prilika prema vjerojatnosti uspjeha**     
 Ova funkcija prikazuje prilike raspoređene prema vjerojatnosti zatvaranja pomoću Kanban ploče. Napredni filtri omogućuju izdvajanje određenih skupina prilika, a stupci predstavljaju različite postotke vjerojatnosti uspjeha. Svaki stupac prikazuje broj prilika, njihov ukupni neto iznos te pojedinosti za svaku priliku.        
 
-**Kanban ploča – Faze workflowa prilika**      
-Slično prethodnoj, ova funkcionalnost prikazuje prilike raspoređene prema fazama pripadajućeg workflowa. Svaki stupac Kanban ploče predstavlja jednu fazu, uz informacije o broju prilika i njihovom neto iznosu.     
+**Kanban ploča – Faze tijeka prilika**      
+Slično prethodnoj, ova funkcionalnost prikazuje prilike raspoređene prema fazama pripadajućeg tijeka. Svaki stupac Kanban ploče predstavlja jednu fazu, uz informacije o broju prilika i njihovom neto iznosu.     
 
 **Kanban ploča – Napredak fakturiranja**       
 Ova funkcionalnost omogućuje praćenje statusa prilika, narudžbi i računa u definiranom vremenskom razdoblju, raspoređeno po mjesecima. Dokumenti se mogu pregledavati agregirano ili pojedinačno, uz financijske detalje i poveznice za izravno uređivanje.

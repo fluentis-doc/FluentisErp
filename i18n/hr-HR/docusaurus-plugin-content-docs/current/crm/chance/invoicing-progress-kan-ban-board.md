@@ -1,9 +1,9 @@
 ---
-title: Invoicing Progress KanBan Board
+title: Kan Ban ploča napretka fakturiranja
 sidebar_position: 6
 ---
 
-Ova procedura ima cilj vizualizirati (korištenjem metodologije Kan Ban) Prilike, Narudžbe i Fakture za određene periode. Procedura se sastoji od dvije kartice: **Filter** i **Rezultati**.
+Ova procedura ima za cilj vizualizirati (korištenjem metodologije Kan Ban) Prilike, Narudžbe i Fakture za određene periode. Procedura se sastoji od dvije kartice: **Filter** i **Rezultati**.
 
 ### Filter   
 
@@ -19,7 +19,7 @@ Na kraju postoje odjeljci u koje možete unijeti filtre za Prilike, Fakture i Na
 ### Rezultati  
 
 Na ovoj kartici nalazi se  **Kan Ban Board**, gdje su prikazani dokumenti podijeljeni prema različitim mjesecima unesenim u filtre.   
-Svaka kolona Kan Ban Boarda sastoji se od sljedećih elemenata:      
+Svaka kolona Kan Bana sastoji se od sljedećih elemenata:      
 **Gornji pojas** na kojem su prikazani, redom, sljedeći podaci;  
 - Referentni mjesec;
 - Count: odgovara broju prilika/faktura/narudžbi koje su smještene u toj koloni;  

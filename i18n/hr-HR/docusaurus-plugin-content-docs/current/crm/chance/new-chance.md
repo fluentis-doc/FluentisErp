@@ -18,7 +18,7 @@ U ovom obrascu unose se sve opće informacije vezane uz **Priliku** koja se žel
 
 ### Zaglavlje    
 
-**Tip prilike**: koristi se za definiranje [Vrste Prilike ](/docs/configurations/tables/crm/opportunities/opportunity-type) koja se unosi. Na tipu prilike također možete navesti zadani tok pipelina;
+**Tip prilike**: koristi se za definiranje [Vrste Prilike](/docs/configurations/tables/crm/opportunities/opportunity-type) koja se unosi. Na tipu prilike također možete navesti zadani tijek (*pipeline*);
 
 **Broj**: vrijednost koja se dodjeljuje automatski od strane Fluentisa koja omogućuje jedinstvenu identifikaciju prilike;
 
@@ -32,7 +32,7 @@ U ovom obrascu unose se sve opće informacije vezane uz **Priliku** koja se žel
 
 **Glavni Agent**: ova se informacija automatski preuzima na temelju podataka navedenih u kontaktu CRM-a koji je vlasnik prilike;   
 
-**Valuta**: indica la divisa in cui dovranno essere espressi i valori dell’opportunità;
+**Valuta**: označava valutu u kojoj će biti iskazane vrijednosti poslovne prilike;
 
 **Vrijeme proteklo od posljednje aktivnosti**: označava vrijeme proteklo od unosa posljednje aktivnosti za određenu priliku;
 

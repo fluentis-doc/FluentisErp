@@ -1,5 +1,5 @@
 ---
-title: CRM mapa prilika 
+title: CRM mapa mogućnosti 
 sidebar_position: 3
 ---
 
