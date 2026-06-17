@@ -1,23 +1,23 @@
 ---
-title: Povrat podataka
+title: Dohvat podataka
 sidebar_position: 3
 ---
 
 :::important Čemu služi
-Obrada za automatsko generiranje podataka o prodaji i, ako je potrebno, Prognoza prodaje na temelju povijesnih podataka iz dokumenata iz područja Prodaje; posebno iz dokumenata: Narudžbe kupaca, otpremnice i računi od prodaje.
+Obrada za automatsko generiranje podataka o prodaji i, ako je potrebno, Plan prodaje na temelju povijesnih podataka iz dokumenata iz područja Prodaje; posebno iz dokumenata: Narudžbe kupaca, otpremnice i računi od prodaje.
 :::
 
-Možemo pokrenuti Dohvat podataka iz izbornika područja Kontroling > Mjesečne prognoze prodaje.
+Pokreće se iz izbornika područja Kontroling > Mjesečne planovi prodaje.
 
-Upravljanje se sastoji od obrasca filtera za pretraživanje prethodno izvršenih Dohvata podataka te, putem gumba **Novo**, stvaranja novih. Također uključuje obrazac **Upravljanje dohvata podataka** u kojem je moguće odrediti iz kojih tipova prodajnih dokumenata i za koje razdoblje će se dohvatiti podaci, koji zatim postaju početna osnova za izradu Prognoza prodaje za unaprijed definiranu [Verziju prognoze prodaje](/docs/configurations/tables/controlling/forecast/pv-versions).
+Upravljanje se sastoji od obrasca filtera za pretraživanje prethodno izvršenih Dohvata podataka te, putem gumba **Novo**, stvaranja novih. Također uključuje obrazac **Upravljanje dohvata podataka** u kojem je moguće odrediti iz kojih tipova prodajnih dokumenata i za koje razdoblje će se dohvatiti podaci, koji zatim postaju početna osnova za izradu Planova prodaje za unaprijed definiranu [Verziju prognoze prodaje](/docs/configurations/tables/controlling/forecast/pv-versions).
 
-U nastavku navodimo detaljno svaku pojedinu informaciju koja je prisutna:
+U nastavku je navedena svaka pojedina informaciju koja je prisutna:
 
 - **Verzija**: obvezan podatak koji služi za pohranu dohvaćenih podataka u toj specifičnoj verziji;
-- **Grupiraj po varijanti**: omogućuje ili onemogućuje uzimanje u obzir detalja po varijanti artikla;
+- **Razvrstaj po varijanti**: omogućuje ili onemogućuje uzimanje u obzir detalja po varijanti artikla;
 - **Datum posljednjeg snimanja**: predlaže se današnji datum i ažurira se pritiskom na gumb **Dohvat podataka** s datumom obrade;
-- **Uzmite u obzir predviđeni datum isporuke**: ako je označeno, pri dohvaćanju samo Narudžbi kupaca mjesec obračuna bit će mjesec Predviđenog datuma isporuke, a ne onaj iz Datuma spremnosti robe;
-- **Generiranje prognoza**: ako je označeno, **Dohvat podataka** će generirati i Prognoze prodaje po artiklu, varijanti i verziji;
+- **Uzmi u obzir predviđeni datum isporuke**: ako je označeno, samo pri dohvaćanju Narudžbi kupaca mjesec obračuna bit će mjesec Predviđenog datuma isporuke, a ne onaj iz Datuma spremnosti robe;
+- **Generiranje predviđanja**: ako je označeno, **Dohvat podataka** će generirati i Prognoze prodaje po artiklu, varijanti i verziji;
 - **Izlazni računi**: u prvom popisu možemo navesti iz kojih tipova računa dohvatiti informacije i za koje razdoblje (*Od datuma*, *Do datuma*); odabrani tip računa automatski će predložiti radi li se o tipu računa za povrat ili ne;
 - **Otpremnica**: u drugom popisu možemo navesti iz kojih tipova otpremnica dohvatiti informacije i za koje razdoblje (*Od datuma*, *Do datuma*); odabrani tip otpremnice automatski će predložiti radi li se o tipu povrata ili ne;
 - **Narudžbe kupaca**: u trećem popisu možemo navesti iz kojih tipova narudžbi dohvatiti informacije i za koje razdoblje (*Od datuma*, *Do datuma*).
