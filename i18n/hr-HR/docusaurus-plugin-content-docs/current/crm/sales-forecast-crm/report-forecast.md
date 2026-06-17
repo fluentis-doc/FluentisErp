@@ -16,7 +16,7 @@ Na donjoj kartici **Podaci** moguće je uvesti dokumentaciju koristeći gumbe na
        
 Postoje određeni uvjeti za uvoz Faktura i Narudžbi:     
 - Redovi artikala u dokumentima moraju imati [Razred artikla](/docs/configurations/tables/logistics/item-class) povezan s grupom artikala unesenom u Prognozu prodaje;
-- [Prihod od prodaje ](/docs/configurations/tables/sales/sales-turnover) povezan s redovima artikala u dokumentima mora biti povezan s Obitelji artikala unesenom u Prognozu prodaje;      
+- [Prihod od prodaje](/docs/configurations/tables/sales/sales-turnover) povezan s redovima artikala u dokumentima mora biti povezan s Obitelji artikala unesenom u Prognozu prodaje;      
 
 Postoje i određeni uvjeti za uvoz Prilika:         
 - Agent dodijeljen Prognozi prodaje mora biti isti agent povezan s Kontaktom vlasnikom Prilike;        

@@ -10,9 +10,9 @@ Naslov se sastoji od sljedećih polja:
 **Opis**: ovo je polje slobodnog opisa.;      
 **Godina/Datum/Redni broj**: ova polja automatski se popunjavaju na temelju povezane Numeracije i Datuma narudžbe.    
 
-U prvoj mreži dopušteno je unositi redove vezane uz prognozu prodaje. Pomoću gumba u alatnoj traci moguće je izgraditi strukturu drveta, primjerice za geografsko podjelu. Počinje se s prvom grupom, a zatim se struktura detaljizira prema željenim razinama podjele. Iznosi u drugoj mreži mogu se popuniti samo na razini pojedinosti, odnosno nakon unosa posljednje razine drveta. Kad se unese ta posljednja razina, druga mreža automatski će se popuniti, razdvajajući datume prema postavljenom [Tipu razdoblja](/docs/configurations/tables/crm/sales-forecast/period-type). Tada će biti moguće popuniti količine i iznose raznih razdoblja u drugoj mreži, omogućujući Fluentisu da izračuna ukupne i prikaže ih u prvoj mreži.
+U prvoj tablici dopušteno je unositi redove vezane uz prognozu prodaje. Pomoću gumba u alatnoj traci moguće je izgraditi strukturu drveta, primjerice za geografsko podjelu. Počinje se s prvom grupom, a zatim se struktura detaljizira prema željenim razinama podjele. Iznosi u drugoj tablici mogu se popuniti samo na razini pojedinosti, odnosno nakon unosa posljednje razine drveta. Kad se unese ta posljednja razina, druga tablica automatski će se popuniti, razdvajajući datume prema postavljenom [Tipu razdoblja](/docs/configurations/tables/crm/sales-forecast/period-type). Tada će biti moguće popuniti količine i iznose raznih razdoblja u drugoj tablici, omogućujući Fluentisu da izračuna ukupne i prikaže ih u prvoj tablici.
 
-U prvoj mreži neka polja su aktivna kad se unese Grupa, a druga kada se unese Detalj, s odgovarajućim gumbima u alatnoj traci.        
+U prvoj tablici neka polja su aktivna kad se unese Grupa, a druga kada se unese Detalj, s odgovarajućim tipkama u alatnoj traci.        
 Analizirajmo polja koja se mogu ispuniti ako je redak Grupa/Čvor:         
 **Redni broj grupe**: svakoj Grupi dodjeljuje se redni broj;      
 **Opis grupe**: moguće je unijeti slobodan opis za svaku Grupu;       
@@ -25,8 +25,8 @@ Analizirajmo polja koja se mogu unijeti ako je redak Detalj:
 **Jedinica mjere**: predložena je jedinica mjere Obitelji;        
 **Detaljna napomena**: slobodno polje za napomene.           
 Zatim postoje i izračunata polja:       
-**Ukupna količina**: prikazuje zbroj Količina razdoblja u drugoj mreži;     
-**Srednja Jedinična Cijena**: prikazuje zbroj Iznosa razdoblja u drugoj mreži;      
+**Ukupna količina**: prikazuje zbroj Količina razdoblja u drugoj tablici;     
+**Srednja Jedinična Cijena**: prikazuje zbroj Iznosa razdoblja u drugoj tablici;      
 **Prosječna cijena po jedinici**: unosi se rezultat operacije *Ukupna količina/Ukupan iznos*.     
 
-U drugoj mreži, prikazuje se *Detalj* [Tipa Razdoblja](/docs/configurations/tables/crm/sales-forecast/period-type) povezanog s odabranim  [Tipom prognoze prodaje](/docs/configurations/tables/crm/sales-forecast/sales-forecast-type). Osim toga, moći će se navesti  **Količina** i **Iznos** za svako razdoblje. Ti se podaci, zbrojeni, koriste za formiranje **Ukupnog iznosa** i **Ukupne količine** u prvoj mreži. 
+U drugoj tablici, prikazuje se *Detalj* [Tipa Razdoblja](/docs/configurations/tables/crm/sales-forecast/period-type) povezanog s odabranim  [Tipom prognoze prodaje](/docs/configurations/tables/crm/sales-forecast/sales-forecast-type). Osim toga, moći će se navesti  **Količina** i **Iznos** za svako razdoblje. Ti se podaci, zbrojeni, koriste za formiranje **Ukupnog iznosa** i **Ukupne količine** u prvoj tablici. 
