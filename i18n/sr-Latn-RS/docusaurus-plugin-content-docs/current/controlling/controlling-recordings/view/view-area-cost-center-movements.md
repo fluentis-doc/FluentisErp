@@ -3,6 +3,6 @@ title: Prikaz kretanja centara u području
 sidebar_position: 2
 ---
 
-Ovak obrazac namijenjen je prikazu podataka prisutnih u analitici zapisa kreiranih unutar *računovodstva*.
+Ova forma namenjena je prikazu podataka prisutnih u analitici knjiženja kreiranih unutar *računovodstva*.
 
-Nakon što se postavi područje za koje se žele prikazati podaci, moguće je zatražiti kretanja centara, filtrirajući ih prema kontu/podkontu ili prema šifri centra troška.
+Nakon što se postavi područje za koje se žele prikazati podaci, moguće je pregledati kretanja centara filtriranjem po kontu/podkontu ili po šifri centra troška.

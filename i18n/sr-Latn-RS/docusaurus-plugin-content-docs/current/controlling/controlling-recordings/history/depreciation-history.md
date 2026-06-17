@@ -1,28 +1,20 @@
 ---
-title: Povijest amortizacije
+title: Istorija amortizacije
 sidebar_position: 2
 ---
 
-***Povijest amortizacije*** omogućuje pregled detalja obračuna tehničke amortizacije specifične za *kontroling*, prikazane po pojedinačnom osnovnom sredstvu. Vidljiva su sljedeća polja:
+***Istorija amortizacije*** omogućava pregled detalja obračuna tehničke amortizacije specifične za *kontroling*, prikazanih po pojedinačnom osnovnom sredstvu. Vidljiva su sledeća polja:
 
-- Referentno [***područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) 
-
-- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) kojem je amortizacija pripisana
-
-- Referentna ***godina*** i ***period*** 
-
-- ***Postotak*** korišten ako je obračun temeljen na postotku
-
-- ***Količina*** ako je obračun temeljen na količini
-
+- Referentno [***područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) kome je amortizacija dodeljena
+- Referentna ***godina*** i ***period***
+- ***Procenat*** korišćen ako je obračun zasnovan na procentu
+- ***Količina*** ako je obračun zasnovan na količini
 - ***Iznos*** amortizacije
+- ***Trošak po jedinici***, ako je obračun zasnovan na količini
+- ***Konto i podkonto troška***
+- Referentni ***broj*** i ***opis osnovnog sredstva*** na koje se red odnosi
 
-- ***Trošak po jedinici***, ako je obračun temeljen na količini
+Na osnovu ovih podataka, obračunatih kroz **Obradu perioda**, **FluentisERP** kreira **posebno knjiženje područja**, koje sadrži analitičke podatke vrednovane prema ukupnim vrednostima **konta/centra** i odgovarajućem rasponu datuma.
 
-- ***Konto i podkonto troška*** 
-
-- Referentni ***broj*** i ***opis osnovnog sredstva***  na koje se redak odnosi
-
-Na temelju ovih podataka, izračunatih putem **Obrade perioda**, **FluentisERP** kreira **posebno knjiženje područja**, koje sadrži analitičke podatke valorizirane prema ukupnim vrijednostima **konta/centra** i relevantnom rasponu datuma.
-
-Nije dopušteno brisanje, izmjena niti unos podataka u tablicu.
+Brisanje, izmena i unos podataka u tabelu nisu dozvoljeni.

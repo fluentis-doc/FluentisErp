@@ -1,29 +1,31 @@
 ---
-title: Knjigovodstvene evidencije i funkcionalnosti u općem računovodstvu 
+title: Knjigovodstvene evidencije i funkcionalnosti u opštem računovodstvu
 sidebar_position: 10
 ---
 
-U svakoj knjigovodstvenoj evidenciji s predlošcima knjiženja koja ima aktiviran flag za upravljanje *Centrima troškova*, bit će vidljiv tab „Analitika“, posvećen vrednovanju analitičkog računovodstva po centru troškova. 
+U svakoj knjigovodstvenoj evidenciji sa šablonima knjiženja kod kojih je aktivirana opcija upravljanja *centrima troškova*, biće vidljiva kartica **Analitika**, namenjena valorizaciji analitičkog računovodstva po centrima troškova.
 
 :::tip NAPOMENA
-Flag za upravljanje *Projektima* prisutan u predlošcima knjiženja, ponašat će se različito ovisno o tome je li u poduzeću aktiviran *Kontroling*: 
-- ako **nije aktiviran**, flag će omogućiti prikaz posebne kartice za upravljanje izravnim troškovima/prihodima projekta, koja je odvojena od analitičkog računovodstva. 
-- ako **è attivo**, il flag renderà visibile il campo progetti all'interno della scheda di gestione a centri di costo dell'analitica: il campo sarà editabile solo per dimensioni legate alla dimensione progetti
+Opcija za upravljanje *projektima* u šablonima knjiženja ponaša se različito u zavisnosti od toga da li je u preduzeću aktiviran *Controlling*:
+
+- Ako **nije aktiviran**, opcija omogućava prikaz posebne kartice za upravljanje direktnim troškovima i prihodima projekta, odvojene od analitičkog računovodstva.
+- Ako **jeste aktiviran**, opcija čini polje **Projekti** vidljivim unutar kartice za upravljanje centrima troškova u analitičkom računovodstvu. Polje će biti moguće uređivati samo za dimenzije povezane sa dimenzijom projekata.
 :::
 
-Unutar analitičke kartice bit će dostupna potpuna vidljivost i mogućnost uređivanja svih redaka koje ***FluentisERP*** automatski vrednuje prilikom unosa evidencije ili koje su prenesene iz izvornog dokumenta knjiženja. Bit će moguće mijenjati iznose, dodavati nove redove ili uklanjati postojeće, u skladu s konfiguracijskim pravilima dimenzije pojedinog centra, kontnog plana i uzročnosti.
+Unutar kartice Analitika dostupni su potpuni pregled i uređivanje svih redova koje ***Fluentis ERP*** automatski valorizuje prilikom unosa evidencije ili koji su preneti iz izvornog dokumenta knjiženja. Moguće je menjati iznose, dodavati nove redove ili brisati postojeće, u skladu sa pravilima konfiguracije dimenzije pojedinačnog centra, kontnog plana i uzroka knjiženja.
 
-Po završetku knjiženja, podaci će biti vidljivi u određenim procedurama i ispisima općeg računovodstva. 
+Po završetku knjiženja podaci će biti dostupni u odgovarajućim procedurama i izveštajima opšteg računovodstva.
 
-## POSTUPCI OPĆEG RAČUNOVODSTVA 
-- ***Postupak pregleda knjiženja po centru troška***: pretražuje zapise analitike unutar knjigovodstvenih evidencija, uz mogućnost uređivanja same evidencije. 
+## POSTUPCI OPŠTEG RAČUNOVODSTVA
 
-- ***Postupak pregleda stanja računa po mjestu troška***: omogućuje pregled ukupnih iznosa po centrima, kao i po centru i podkontu, uz zbrajanje unutar strukture kontnog plana. 
+- ***Pregled knjiženja po centru troška***: pretražuje analitičke zapise unutar knjigovodstvenih evidencija uz mogućnost uređivanja same evidencije.
+- ***Pregled stanja konta po centru troška***: omogućava pregled ukupnih iznosa po centrima, kao i po centru i kontu, uz sumiranje kroz strukturu kontnog plana.
 
-## IZVJEŠTAJI OPĆEG RAČUNOVODSTVA
-Unutar grupe *Ispisa analitike* dostupni su sljedeći izvještaji:
-- ispis ***Analize centara troškova***: omogućuje grupiranje podataka o zapisima analitike prema unaprijed definiranim svojstvima, povlačenjem u rešetku za grupiranje.  
-- ispis ***Analize profitnih centara***: ovaj izvještaj sličan je prethodnom, ali čita podatke o zapisima  *Centara profita*.  
-- ispis ***Analize knjiženja za centre troškova***: prikazuje detalje kretanja pojedinih podkonta, specificirajući u kojim su centrima evidentirana.  
+## IZVEŠTAJI OPŠTEG RAČUNOVODSTVA
 
-- ispis ***kontrole neuravnoteženosti Centara troškova/Profitnog centra/Projekata***: u poduzećima s aktiviranim kontrolingom, ovaj ispis omogućuje provjeru usklađenosti podataka analitičkog računovodstva centara troškova, filtrirajući po određenoj [*dimenziji*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension). Ako kontroling nije aktiviran, dostupni su flagovi za podešavanje pretrage neuravnoteženosti centara troškova, centara prihoda ili projektne sekcije knjigovodstvenih evidencija.  
+U okviru grupe *Izveštaji analitike* dostupni su sledeći izveštaji:
+
+- ***Analiza centara troškova***: omogućava grupisanje analitičkih podataka prema unapred definisanim svojstvima korišćenjem tabele za grupisanje.
+- ***Analiza profitnih centara***: funkcionalno je slična prethodnom izveštaju, ali prikazuje podatke vezane za *profitne centre*.
+- ***Analiza knjiženja za centre troškova***: prikazuje detalje kretanja pojedinačnih podkonta i centre u kojima su evidentirani.
+- ***Kontrola neuravnoteženosti centara troškova / profitnih centara / projekata***: u preduzećima sa aktiviranim Controlling modulom omogućava proveru usklađenosti podataka analitičkog računovodstva filtriranjem po određenoj [*dimenziji*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension). Ako Controlling nije aktiviran, dostupne su opcije za proveru neuravnoteženosti centara troškova, centara prihoda ili projektne sekcije knjigovodstvenih evidencija.

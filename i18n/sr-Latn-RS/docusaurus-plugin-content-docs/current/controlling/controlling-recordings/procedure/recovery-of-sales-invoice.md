@@ -3,26 +3,37 @@ title: Dohvat podataka s izlaznih računa
 sidebar_position: 2
 ---
 
-Postupak ***dohvata (preuzimanja) podataka iz izlaznih (prodajnih) računa*** omogućuje integraciju podataka iz područja analize s dva ključna podatka iz prodaje: provizijama i popustima.
+Procedura ***dohvata podataka iz izlaznih računa*** omogućava integraciju podataka iz područja analize sa dva ključna elementa iz prodaje: provizijama i popustima.
 
-## DOHVAT PROVIZIJE
-Kod provizija, cilj je evidentirati troškove provizija unutar odabranog perioda, iako će ih financijsko računovodstvo registrirati tek u trenutku nastanka obveze, primjerice tek nakon potpune naplate računa.Za postavljanje ovog postupka definiraju se sljedeći parametri:
+## DOHVAT PROVIZIJA
+
+Kod provizija, cilj je evidentiranje troškova provizija u okviru izabranog perioda, iako će ih finansijsko računovodstvo registrovati tek u trenutku nastanka obaveze, na primer nakon potpune naplate računa.
+
+Za podešavanje ove procedure definišu se sledeći parametri:
+
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize
-- ***Datum*** 
+- ***Datum***
 - ***Godina***
-Zatim ćemo s desne strane unijeti
-- ***Predložak*** knjiženja
-- Raspon ***datuma Od*** - ***datuma Do*** koji određuje vremenski okvir računa za dohvat podataka
 
+Sa desne strane unose se:
+
+- ***Šablon*** knjiženja
+- Raspon ***datuma Od*** – ***datuma Do*** koji određuje vremenski okvir računa za preuzimanje podataka
 
 ## DOHVAT POPUSTA
-Popusti predstavljaju vrijednost koja nije izravno vidljiva u analitičkom računovodstvu, budući da se uobičajeno evidentira neto prihod, a ne bruto prihod umanjen za trošak popusta. U određenim analizama može biti korisno istaknuti ovaj skriveni trošak koji poduzeće snosi prilikom prodaje, što opravdava potrebu za obradom ovih podataka.
 
-Za postavljanje ovog postupka definiraju se sljedeći parametri:
+Popusti predstavljaju vrednost koja nije direktno vidljiva u analitičkom računovodstvu, jer se uobičajeno evidentira neto prihod, a ne bruto prihod umanjen za trošak popusta.
+
+U određenim analizama može biti korisno prikazati ovaj skriveni trošak koji preduzeće snosi prilikom prodaje, zbog čega postoji potreba za obradom ovih podataka.
+
+Za podešavanje ove procedure definišu se sledeći parametri:
+
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize
 - ***Konto*** na kojem će se evidentirati ovi komercijalni troškovi
 - ***Datum***
 - ***Godina***
-Zatim ćemo s desne strane unijeti
-- ***Predložak*** knjiženja
-- Raspon ***datuma Od*** - ***datuma Do*** koji određuje vremenski okvir računa za dohvat podataka
+
+Sa desne strane unose se:
+
+- ***Šablon*** knjiženja
+- Raspon ***datuma Od*** – ***datuma Do*** koji određuje vremenski okvir računa za preuzimanje podataka

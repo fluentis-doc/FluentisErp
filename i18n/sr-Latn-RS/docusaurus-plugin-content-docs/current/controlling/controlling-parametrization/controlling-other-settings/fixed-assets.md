@@ -1,44 +1,43 @@
 ---
-title: Šifrarnici osnovnih sredstava 
+title: Šifarnici osnovnih sredstava
 sidebar_position: 7
 ---
 
-Prvi korak je definirati hoće li se primjenjivati isključivo računovodstvene logike ili će se kontroling odvojiti od njih i koristiti drugačije kriterije. 
+Prvi korak je definisati da li će se primjenjivati isključivo računovodstvene logike ili će se controlling odvojiti od njih i koristiti drugačije kriterijume.
 
-U prvom slučaju potrebno je otvoriti ***Parametre modula osnovnih sredstava*** i aktivirati flag *Omogućavanje računovodstvenog centra*. S ovom opcijom u kategorijama osnovnih sredstava bit će dostupna tablica s unaprijed definiranim *Centrima troškova* dok će u zaglavlju biti vidljiva tablica za dodjelu *Centara troškova* pojedinačnoj imovini. U obje tablice moguće je definirati popis centara koji će se koristiti uz pripadajući postotak dodjele. Prilikom kreiranja računovodstvenih izvještaja putem ***privremenih zatvaranja***, unutar procedure *Povrat amortizacije osnovnog sredstva*, odabire se zatvaranje i ***FluentisERP*** izračunava amortizaciju na temelju broja dana u razdoblju zatvaranja, koristeći postotke kategorije kako bi ih rasporedio po centrima prema sljedećem prioritetu: prvo su to centri definirani u zaglavlju osnovnog sredstva, zatim centri definirani na razini kategorije osnovnog sredstva pa centri definirani na kontu troška u kontnom planu.
+U prvom slučaju potrebno je otvoriti ***Parametre modula osnovnih sredstava*** i aktivirati opciju *Omogući računovodstveni centar*.
 
-Ako poduzeće ima aktiviran *Kontroling* i želi se odvojiti od računovodstvenih logika, neće se postaviti flag *Omogućavanje računovodstvenog centra*Time će centri nestati iz kategorija i zaglavlja osnovnih sredstava, a postat će obavezna kartica ***Postavke za kontroling*** kako bi se omogućilo spremanje osnovnog sredstva. 
+Sa ovom opcijom u kategorijama osnovnih sredstava biće dostupna tabela sa unaprijed definisanim *Centrima troškova*, dok će u zaglavlju biti vidljiva tabela za dodjelu *Centara troškova* pojedinačnom sredstvu.
 
-Ako se otvori kartica amortizacije za kontroling u matičnim podacima osnovnog sredstva, bit će dostupna sljedeća polja:  
+U obje tabele moguće je definisati listu centara koji će se koristiti zajedno sa pripadajućim procentom raspodjele.
 
-- ***KATEGORIJA DUGOTRAJNE IMOVINE ZA KONTROLING***, obavezno polje koje postavlja zadane vrijednosti za ostala polja
+Prilikom kreiranja računovodstvenih izvještaja putem ***privremenih zatvaranja***, unutar procedure *Povrat amortizacije osnovnog sredstva*, bira se zatvaranje, a ***Fluentis ERP*** obračunava amortizaciju na osnovu broja dana u periodu zatvaranja, koristeći procente kategorije kako bi ih rasporedio po centrima prema sljedećem prioritetu: prvo se koriste centri definisani u zaglavlju osnovnog sredstva, zatim centri definisani na nivou kategorije osnovnog sredstva, pa centri definisani na troškovnom kontu u kontnom planu.
 
-- ***OTKUPNA VRIJEDNOST*** ako je predviđena u osnovi izračuna
+Ako preduzeće ima aktiviran *Controlling* i želi se odvojiti od računovodstvenih logika, opcija *Omogući računovodstveni centar* neće biti aktivirana. Tada će centri nestati iz kategorija i zaglavlja osnovnih sredstava, a kartica ***Postavke za controlling*** postaće obavezna kako bi bilo moguće sačuvati osnovno sredstvo.
 
-- ***UKUPNA KOLIČINA*** koju osnovno sredstvo može obraditi tijekom svog vijeka trajanja
+Ako se otvori kartica amortizacije za controlling u matičnim podacima osnovnog sredstva, biće dostupna sljedeća polja:
 
-- ***FIZIČKA MJERNA JEDINICA***
+- ***KATEGORIJA OSNOVNOG SREDSTVA ZA CONTROLLING***, obavezno polje koje postavlja podrazumijevane vrijednosti za ostala polja.
+- ***OTKUPNA VRIJEDNOST***, ukoliko je predviđena u osnovici obračuna.
+- ***UKUPNA KOLIČINA*** koju osnovno sredstvo može obraditi tokom svog vijeka trajanja.
+- ***FIZIČKA MJERNA JEDINICA***.
 
 :::tip NAPOMENA
-Izračun temeljen na količini uzima osnovu amortizacije i dijeli je s ukupnom količinom kako bi se dobila jedinična amortizacija. Zatim se, na temelju proizvedenih količina u pojedinom razdoblju (podaci koji se obično preuzimaju iz ***proizvodnih podataka***) dobiva vrijednost amortizacije za razdoblje.
+Obračun zasnovan na količini uzima osnovicu amortizacije i dijeli je ukupnom količinom kako bi se dobila jedinična amortizacija. Zatim se, na osnovu proizvedenih količina u određenom periodu (podaci koji se najčešće preuzimaju iz ***proizvodnih podataka***), dobija vrijednost amortizacije za taj period.
 :::
 
-- ***BAZA ZA IZRAČUN*** preuzeta iz pripadajuće kategorije, ali se može mijenjati na razini pojedinačnog osnovnog sredstva
+- ***OSNOVICA ZA OBRAČUN*** preuzeta iz odgovarajuće kategorije, ali se može mijenjati na nivou pojedinačnog osnovnog sredstva.
+- ***TIP OBRAČUNA*** preuzet iz odgovarajuće kategorije, ali se može mijenjati na nivou pojedinačnog osnovnog sredstva.
+- ***PROCENAT ZA CONTROLLING*** primjenjuje se kada je tip obračuna zasnovan na procentualnim logikama; predlaže se iz kategorije, ali ga je moguće izmijeniti.
+- opcija ***ZA AŽURIRANJE PROCENTA***.
+- opcija ***ZA PONOVNO GENERISANJE VRIJEDNOSTI IZ CONTROLLINGA***.
 
-- ***TIP IZRAČUNA*** preuzet iz pripadajuće kategorije, ali se može mijenjati na razini pojedinačnog osnovnog sredstva
+Posljednje dvije opcije preuzimaju se iz odgovarajuće kategorije, ali služe za definisanje podrazumijevanih vrijednosti pojedinačnog osnovnog sredstva, jer se ono može razlikovati od postavki kategorije.
 
-- ***POSTOTAK ZA KONTROLING*** primjenjuje se kada je vrsta izračuna vezana uz postotne logike; predložena je iz kategorije, ali se može mijenjati 
+U donjoj tabeli definišu se ***CENTRI TROŠKOVA*** kojima će biti dodijeljena amortizacija osnovnog sredstva, a postoji i mogućnost dodjele ***PROJEKTA*** na koji će se amortizacija direktno knjižiti.
 
-- flag ***ZA AKTUALIZACIJU POSTOTKA***
-
-- flag ***ZA PONOVNO GENERIRANJE VRIJEDNOSTI IZ KONTROLINGA***
-
-Posljednja dva flaga preuzimaju se iz pripadajuće kategorije, ali njihova svrha je definiranje zadanih vrijednosti za pojedino osnovno sredstvo, jer se ona može razlikovati od postavki kategorije. 
-
-U donjoj tablici definiraju se ***CENTRI TROŠKOVA*** kojima će se dodijeliti amortizacija osnovnog sredstva, a postoji i mogućnost dodjele ***PROJEKTA*** na koji će se amortizacija izravno knjižiti. 
-
-Polja ***PERIODA*** i ***GODINA*** bit će omogućena samo ako je amortizacija postavljena kao ukupna za godinu, što omogućuje određivanje godine ili specifičnog razdoblja u kojem će se trošak potpuno knjižiti.
+Polja ***PERIOD*** i ***GODINA*** biće dostupna samo ako je amortizacija postavljena kao ukupna za godinu, što omogućava određivanje godine ili konkretnog perioda u kojem će trošak biti u potpunosti knjižen.
 
 :::tip NAPOMENA
-Unutar modula osnovnog sredstva dostupna je funkcija *Provjera podataka za kontroling*. Ova funkcija, slična standardnoj pretrazi osnovnih sredstava, omogućuje pronalaženje sredstva koje nema ispravno povezane centre troškova u kartici Amortizacija za *kontroling*. Ako se otvori prvi unos na popisu, moguće je vidjeti da ima postotak 0, što znači da neće imati nikakvu amortizaciju. Pogreška može biti i u tome što nije dodan nijedan centar troškova ili da je faktor množenja 0. 
+Unutar modula osnovnih sredstava dostupna je funkcija *Provjera podataka za controlling*. Ova funkcija, slična standardnoj pretrazi osnovnih sredstava, omogućava pronalaženje sredstava koja nemaju ispravno povezane centre troškova na kartici amortizacije za *controlling*. Otvaranjem prvog zapisa na listi moguće je vidjeti da ima procenat 0, što znači da neće imati obračunatu amortizaciju. Greška može biti i u tome što nije dodijeljen nijedan centar troškova ili što je faktor množenja postavljen na 0.
 :::

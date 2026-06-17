@@ -3,13 +3,12 @@ title: Glavna konsolidacija
 sidebar_position: 5
 ---
 
-Postupak ***glavne konsolidacije*** namijenjen je instalacijama s više poduzeća (multicompany). Postavljanjem master poduzeća unutar jednog poduzeća omogućuje se povezivanje kontnog plana ostalih poduzeća s kontima master (glavnog) poduzeća
+Procedura ***Glavna konsolidacija*** namenjena je instalacijama sa više preduzeća (*multicompany*). Definisanjem master preduzeća omogućava se povezivanje kontnog plana ostalih preduzeća sa kontima master preduzeća.
 
-Postupak konsolidacije preuzima podatke iz odabrane dimenzije ostalih poduzeća i prenosi ih u ciljanu dimenziju master poduzeća. Tijekom ovog prijenosa, sustav zamjenjuje sintetički konto iz izvorišnog poduzeća s odgovarajućim kontom master poduzeća,
-dok se za troškovni centar pretražuju centri *s istom šifrom*.
+Procedura konsolidacije preuzima podatke iz izabrane dimenzije drugih preduzeća i prenosi ih u ciljnu dimenziju master preduzeća. Tokom ovog prenosa sistem zamenjuje sintetički konto iz izvornog preduzeća odgovarajućim kontom master preduzeća, dok se za centre troškova pretražuju centri sa *istom šifrom*.
 
 :::tip NAPOMENA
-Ako sintetička konta nisu mapirana ili troškovni centri nisu dosljedno šifrirani, postupak će generirati pogrešku.
+Ako sintetička konta nisu mapirana ili centri troškova nisu dosledno šifrirani, procedura će prijaviti grešku.
 :::
 
-Rezultat konsolidacije je da master poduzeće sadrži podatke iz ***knjigovodstvenih zapisa*** svih povezanih poduzeća, omogućujući time grupno izvještavanje. Dodatno, u master poduzeću moguće je primijeniti novi set nositelja troškova za izračun.
+Rezultat konsolidacije je da master preduzeće sadrži podatke iz ***knjiženja*** svih povezanih preduzeća, čime se omogućava grupno izveštavanje. Pored toga, u master preduzeću moguće je primeniti novi skup nosilaca troškova za obračun.

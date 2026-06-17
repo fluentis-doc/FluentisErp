@@ -1,61 +1,64 @@
 ---
-title: Povijest zapisa upravljanja
+title: Istorija upravljačkih knjiženja
 sidebar_position: 3
 ---
 
-Ovdje se prikazuje popis zapisa koji su kreirani putem postupka ***Obrade perioda*** kontrolinga. Radi se o bazi podataka koju nije moguće mijenjati, a sadrži detalje svake pojedinačne valorizirane stavke, počevši od mjesečnih računovodstvenih vrijednosti do pojedinačnih raspodjela nositelja troškova (izuzimajući one iz konačnih proračuna projekta, koji imaju zaseban postupak obrade i prikaz podataka).
+Ovde se prikazuje lista knjiženja kreiranih putem procedure ***Obrada perioda*** u kontrolingu. Reč je o bazi podataka koja se ne može menjati, a sadrži detalje svake pojedinačne vrednovane stavke, počev od mesečnih računovodstvenih vrednosti pa do pojedinačnih raspodela nosilaca troškova (izuzev onih iz konačnih obračuna projekta, koji imaju zasebnu proceduru obrade i prikaza podataka).
 
 :::tip Napomena
-Budući da postupak ***Obrada perioda*** kontrolinga briše i ponovno kreira vrijednosti za cijelu godinu, svaka godina i obrađeno područje imat će samo jedan zapis.
+Pošto procedura ***Obrada perioda*** u kontrolingu briše i ponovo kreira vrednosti za celu godinu, svaka godina i obrađeno područje imaće samo jedan zapis.
 :::
 
-Svaki zapis može se otvoriti u prikazu kako bi se analizirali koraci obrade i detalji obrađenih podataka, uz potpunu vidljivost svih izvornih karakteristika podataka, raspodjele razdoblja, primijenjenog nositelja troškova i ciklusa obrade. Na temelju ovih podataka moguće je identificirati uzroke mogućih nesukladnosti uzrokovanih neusklađenim postavkama.
+Svako knjiženje može se otvoriti u režimu pregleda radi analize koraka obrade i detalja obrađenih podataka, uz potpunu vidljivost svih izvornih karakteristika podataka, raspodele perioda, primenjenog nosioca troškova i ciklusa obrade. Na osnovu tih podataka moguće je identifikovati uzroke eventualnih neusaglašenosti nastalih zbog neusklađenih podešavanja.
 
-Dostupna polja u tablici:
+Dostupna polja u tabeli:
 
 - ***Konto***
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
 - [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
-- [***Centar prijenosa***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) (prikazuje se samo za stavke povezane s nositeljima troškova)
+- [***Centar prenosa***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) (prikazuje se samo za stavke povezane sa nosiocima troškova)
 - ***Godina***
-- ***Razdoblje***
+- ***Period***
 - ***Duguje***
 - ***Potražuje***
-- ***Fiksna vrijednost***,(zbrojena s varijabilnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
-- ***Varijabilna vrijednost***, (zbrojena s fiksnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
-- ***Odjel***
-- ***Valuta***, (uvijek jednaka valuti poduzeća)
-- ***Distribucija*** perioda povezana s redom
-- ***Vrsta retka***, može biti:
-    - *0* – Izvorni redovi (nastali iz zatvaranja ili ručnih unosa zatvaranja, ali i iz redova nositelja troškova raspodjele)
-    - *1* Preneseni redovi (za nositelje troškova raspodjele, to su redovi koji storniraju vrijednost iz *poslovnog centra*)
-    - *2* Primljeni redovi (za nositelje troškova raspodjele, to su redovi koji prenose vrijednost iz centra nositelja u *centar troška*)
+- ***Fiksna vrednost*** (zbir fiksne i varijabilne vrednosti daje prethodnu vrednost duguje ili potražuje)
+- ***Varijabilna vrednost*** (zbir varijabilne i fiksne vrednosti daje prethodnu vrednost duguje ili potražuje)
+- ***Odeljenje***
+- ***Valuta*** (uvek jednaka valuti preduzeća)
+- ***Raspodela*** perioda povezana sa redom
+- ***Vrsta reda***, može biti:
+  - *0* – Izvorni redovi (nastali iz zatvaranja ili ručnih unosa zatvaranja, kao i iz redova nosilaca troškova raspodele)
+  - *1* – Preneti redovi (kod nosilaca troškova raspodele to su redovi koji storniraju vrednost iz *poslovnog centra*)
+  - *2* – Primljeni redovi (kod nosilaca troškova raspodele to su redovi koji prenose vrednost iz centra nosioca u *centar troška*)
+
 :::tip NAPOMENA
-Redovi *raspodjele* su u osnovi redovi raspodjele *nositelja troškova*, koji iz *prijelaznih konta* preraspodjeljuju vrijednosti na stvarne *centre troška*. Nositelji troškova raspodjele *uključuju* sve ostale metode prijenosa vrijednosti.
+Redovi *raspodele* predstavljaju redove raspodele *nosilaca troškova*, koji iz *prelaznih konta* preraspodeljuju vrednosti na stvarne *centre troškova*. Nosioci troškova raspodele *obuhvataju* sve ostale metode prenosa vrednosti.
 :::
-- ***Vrsta distribucije*** primijenjenog nositelja troškova
-- [***Nositelj troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) primijenjen
+
+- ***Vrsta raspodele*** primenjenog nosioca troškova
+- [***Nosilac troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) koji je primenjen
 - ***Izvor*** podataka može biti:
-    - *Računovodstveni podaci* (1), izravno iz *privremenog zatvaranja*
-    - *Ručno uneseni podaci* (2), *izvanbilančna knjiženja* područja
-    - *Formula* (3), knjiženja stvorena pomoću *računalnih formula*
-    - *Amortizacija* (4), – knjiženja stvorena putem obračuna amortizacije kontrolinga
-    - *Korigiranja* (5), zapisi iz privremenih ili godišnjih korekcija
-    - *Nositelji troškova tarifa* (6),  primjena nositelja troškova tarifa
-    - *Zalihe* (7), zapisi zaliha u kontrolingu
-    - *Materijali proizvodnje* (8), troškovi materijala u proizvodnji
-    - *Vanjske usluge* (9), troškovi vanjskih radova
-    - *TProizvodne transformacije* (10), interni proizvodni procesi
-    - *Konsolidacija kontrolinga* (15), postupak konsolidacije master kontrolinga u multicompany postavkama
+  - *Računovodstveni podaci* (1), direktno iz *privremenog zatvaranja*
+  - *Ručno uneti podaci* (2), *vanbilansna knjiženja* područja
+  - *Formula* (3), knjiženja kreirana pomoću *računskih formula*
+  - *Amortizacija* (4), knjiženja nastala obračunom amortizacije kontrolinga
+  - *Korekcije* (5), zapisi iz privremenih ili godišnjih korekcija
+  - *Nosioci troškova tarifa* (6), primena nosilaca troškova tarifa
+  - *Zalihe* (7), knjiženja zaliha u kontrolingu
+  - *Materijali proizvodnje* (8), troškovi materijala u proizvodnji
+  - *Spoljne usluge* (9), troškovi eksternih radova
+  - *Proizvodne transformacije* (10), interni proizvodni procesi
+  - *Konsolidacija kontrolinga* (15), procedura konsolidacije master kontrolinga u *multicompany* okruženju
 
 :::tip NAPOMENA
-Postoje dodatne četiri kategorije izvora podataka, vidljive u povijesti konačnog proračuna projekta:
-    - *Vrijeme stroja* (11)
-    - *Vrijeme čovjeka* (12)
-    - *Priprema stroja* (13)
-    - *Priprema čovjeka* (14)
+Postoje još četiri kategorije izvora podataka koje su vidljive u istoriji konačnog obračuna projekta:
+
+- *Vreme mašine* (11)
+- *Vreme čoveka* (12)
+- *Priprema mašine* (13)
+- *Priprema čoveka* (14)
 :::
 
-- ***Broj***, ***Godina***, ***Redak***, ***Wbs***: referentni podaciza projekte (nisu valorizirani).
+- ***Broj***, ***Godina***, ***Red***, ***WBS***: referentni podaci za projekte (nisu vrednovani).
 
-Nije dopušteno brisanje, izmjena niti unos podataka u tablicu.
+Brisanje, izmena i unos podataka u tabelu nisu dozvoljeni.

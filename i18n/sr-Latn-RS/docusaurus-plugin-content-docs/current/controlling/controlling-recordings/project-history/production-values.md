@@ -1,26 +1,26 @@
 ---
-title: Vrijednosti proizvodnje
+title: Vrednosti proizvodnje
 sidebar_position: 4
 ---
 
-Ovdje se prikazuju troškovi materijala povezane s projektom/nalogom, uključujući materijale obrađene interno i eksterno.
+Ovde se prikazuju troškovi materijala povezani sa projektom/nalogom, uključujući interno i eksterno obrađene materijale.
 
 Dostupna polja su:
 
-- ***Konto/Podkonto*** troška, obično fakturirani troškovi nabave povezani s artiklom ili konto za vanjske obrade
+- ***Konto/Podkonto*** troška, najčešće konto fakturisanih troškova nabavke povezanih sa artiklom ili konto za spoljne obrade
 
-- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) povezan s redom, koji se tipično preuzima iz postavki u kontnom planu za prethodno navedeni podkonto
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) povezan sa redom, koji se obično preuzima iz postavki kontnog plana za navedeni podkonto
 
-- ***Godina*** i ***period*** 
+- ***Godina*** i ***period***
 
-- ***Broj projekta***, ***godina projekta***, ***linija***, ***WBS broj***: uvijek popunjeni referencama na projekte
+- ***Broj projekta***, ***godina projekta***, ***linija***, ***WBS broj*** – uvek popunjeni referencama na projekte
 
-- ***Artikl*** i ***opis artikla*** koji je predmet analize
+- ***Artikal*** i ***opis artikla*** koji su predmet analize
 
-- [***Jedinica mjere***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
+- [***Jedinica mere***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
 
-- ***Količina*** 
+- ***Količina***
 
-- ***Prosječni trošak***, ***standardni trošak*** ili ***posljednji trošak*** za dotični red
+- ***Prosečni trošak***, ***standardni trošak*** ili ***poslednji trošak*** za dati red
 
-Nije dopušteno brisanje, izmjena ili unos novih podataka u prikazanoj tablici.
+Nije dozvoljeno brisanje, izmena niti unos novih podataka u prikazanu tabelu.

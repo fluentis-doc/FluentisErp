@@ -1,63 +1,81 @@
 ---
-title: Obrada perioda 
+title: Obrada perioda
 sidebar_position: 3
---- 
+---
 
-Postupak **obrade perioda** glavni je postupak u analizama kontrolinga. Ovaj modul podijeljen je na četiri zasebna postupka: obrada fizičkih kretanja, izračun amortizacije, obradu računovodstvenih podataka i proračun projekta.
+Procedura **Obrada perioda** predstavlja centralnu proceduru u analizama kontrolinga. Ovaj modul je podeljen na četiri odvojene procedure: obradu fizičkih kretanja, obračun amortizacije, obradu računovodstvenih podataka i obračun projekta.
 
 ## OBRADA FIZIČKIH KRETANJA
-Prvi postupak očitava ***zapise fizičkih kretanja*** kako bi se stvorila osnovna bazu podataka za ***arhivu podataka fizičkih kretanja***. Očitavaju se količine statičkih mjernih jedinica (npr. kvadratni metri uredskih prostora) kako bi se replicirali kroz različite periode, dok se protok mjernih jedinica raspoređuje prema pravilima distribucijskih perioda. Potrebno je definirati:
--[***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
--***Godina***
 
-## POVIJEST AMORTIZACIJE
-Ovaj modul vrši obradu amortizacije u kontrolingu. Definiraju se sljedeći parametri:
--[***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize za dodjelu vrijednosti
-- ***Godina*** obrade
-- ***Do razdoblja***, (posljednji period u godini koji će se obraditi, obično odgovara posljednjem periodu privremenog zatvaranja)
-- ***Početna godina za ponovni izračun*** (ako su promijenjene postavke kontrolinga na već obrađenim osnovnim sredstvima)
+Prva procedura učitava ***zapise fizičkih kretanja*** kako bi kreirala osnovnu bazu podataka za ***istoriju fizičkih kretanja***. Učitavaju se količine statičkih jedinica mere (npr. kvadratni metri kancelarijskog prostora) koje se repliciraju kroz različite periode, dok se protočne jedinice mere raspoređuju prema pravilima distribucije perioda.
 
-:::tip PRIMJER
-Ako je osnovno sredstvo kupljeno 2015. godine i amortizira se po stopi od 15% godišnje, u kontrolingu bi bilo potpuno amortizirano nakon 6,5 godina. Ako se prvi izračun u ***FluentisERP-u*** radi 2022. godine, sustav će automatski izračunati amortizaciju od 2015. nadalje kako bi provjerio preostalu vrijednost u 2022. Ako se stopa amortizacije naknadno promijeni na 10%, sustav mora odlučiti hoće li zadržati prethodne izračune ili ponoviti obradu od početne godine za ponovni izračun. Nakon obrade, ***FluentisERP*** ažurira podatke na dva mjesta. To je arhiva (povijest) o amortizaciji, gdje su vidljivi podaci za područje, osnovno sredstvo, godinu i mjesec i u izvanbilančnim knjiženjima u kojima se briše i ponovno kreira godišnje knjiženje s mjesečnim
-detaljima amortizacije, s ukupnim vrijednostima po podkontu i centru troškova. 
+Potrebno je definisati:
+
+- [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+- ***Godinu***
+
+## ISTORIJA AMORTIZACIJE
+
+Ova procedura obrađuje amortizaciju u kontrolingu. Potrebno je definisati sledeće parametre:
+
+- [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize za dodelu vrednosti
+- ***Godinu*** obrade
+- ***Do perioda*** (poslednji period u godini koji će biti obrađen, obično odgovara poslednjem periodu privremenog zatvaranja)
+- ***Početnu godinu za ponovni obračun*** (ako su promenjene postavke kontrolinga na već obrađenim osnovnim sredstvima)
+
+:::tip PRIMER
+Ako je osnovno sredstvo nabavljeno 2015. godine i amortizuje se po stopi od 15% godišnje, u kontrolingu bi bilo potpuno amortizovano nakon približno 6,5 godina. Ako se prvi obračun u ***FluentisERP-u*** radi 2022. godine, sistem će automatski obračunati amortizaciju počev od 2015. kako bi utvrdio preostalu vrednost u 2022. godini.
+
+Ako se stopa amortizacije naknadno promeni na 10%, sistem mora odlučiti da li će zadržati prethodne obračune ili ponovo obračunati amortizaciju počev od definisane početne godine za ponovni obračun.
+
+Nakon obrade, ***FluentisERP*** ažurira podatke na dva mesta: u istoriji amortizacije, gde su vidljivi podaci po području, osnovnom sredstvu, godini i mesecu, kao i u vanbilansnim knjiženjima gde briše i ponovo kreira godišnje knjiženje sa mesečnim detaljima amortizacije i ukupnim vrednostima po podkontu i centru troška.
 :::
 
-Nakon što je obrada dovršena, ***FluentisERP*** će popuniti podatke u dvije maske: prva je maska ***Povijest amortizacija***, u kojoj ćemo imati pregled detalja po području, osnovnom sredstvu, godini i mjesecu obrađenih podataka za pojedino osnovno sredstvo. Kao i kod ostalih povijesnih maski, podaci u ovoj tablici nisu izmjenjivi od strane korisnika. Druga maska koja je popunjena bit će maska ***Izvanbilančnih knjiženja po području***, u kojoj će Fluentis izbrisati i ponovno stvoriti knjiženje za svaku godinu koje sadrži mjesečni detalj primijenjenih amortizacija, zbrajajući vrijednosti po podračunu i centru.
+Po završetku obrade, ***FluentisERP*** popunjava dve maske. Prva je ***Istorija amortizacije***, koja omogućava pregled detalja po području, osnovnom sredstvu, godini i mesecu obrađenih podataka za pojedinačno osnovno sredstvo. Kao i kod ostalih istorijskih maski, podaci nisu dostupni za izmenu korisnicima.
 
+Druga maska je ***Vanbilansna knjiženja po području***, gde Fluentis briše i ponovo kreira knjiženje za svaku godinu sa mesečnim detaljima obračunate amortizacije, grupisanim po podkontu i centru troška.
 
 ## OBRADA RAČUNOVODSTVENIH PODATAKA
-Ova obrada očitava ***privremeno zatvaranje***, priprema podatke za mjesečnu obradu i primjenjuje nositelje troškova prema redoslijedu ciklusa. Potrebno je definirati:
+
+Ova obrada učitava podatke iz ***privremenog zatvaranja***, priprema ih za mesečnu obradu i primenjuje nosioce troškova prema redosledu ciklusa.
+
+Potrebno je definisati:
+
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize
 - ***Privremeno zatvaranje*** (nije obavezno)
-- ***Vrijeme uravnoteženja*** (za korekciju konta koja se ne koriste u kontrolingu)
-- ***Datum*** 
+- ***Vreme usklađenja*** (za korekciju konta koja se ne koriste u kontrolingu)
+- ***Datum***
 - ***Godinu*** obrade
-- ***Predložak*** knjiženja
+- ***Šablon*** knjiženja
 
-Odabir ***privremenog zatvaranja*** nije obavezan. Na primjer, ako su podaci uvezeni iz vanjskog dokumenta, gdje su procijenjeni saldi po podkontima i centrima za sljedeću godinu, može se provesti analiza na temelju tih posebnih knjiženja. U tom slučaju, primijenit će se nositelji troškova specifični za neko područje, kako bi se podaci mjesečno rasporedili i usporedili s
-konsolidiranim podacima iz računovodstva. Budući da izvor podataka dolazi iz knjigovodstva, privremeno zatvaranje neće se postavljati. 
+Izbor ***privremenog zatvaranja*** nije obavezan. Na primer, ako su podaci uvezeni iz spoljnog dokumenta koji sadrži procenjena salda po podkontima i centrima za narednu godinu, moguće je izvršiti analizu na osnovu tih posebnih knjiženja. U tom slučaju primenjuju se nosioci troškova specifični za određeno područje kako bi se podaci raspodelili po mesecima i uporedili sa konsolidovanim računovodstvenim podacima. Pošto izvor podataka ne dolazi iz knjigovodstva, privremeno zatvaranje nije potrebno definisati.
 
-Ako se, međutim, obrađuju stvarni podaci konsolidacije, ***FluentisERP*** omogućuje generiranje automatskih knjiženja ***poravnavanja***, uz opciju primjene korekcija na privremena ili ***godišnja*** zatvaranja konta.
+U slučaju obrade stvarnih podataka konsolidacije, ***FluentisERP*** omogućava generisanje automatskih knjiženja ***usklađenja***, uz mogućnost primene korekcija na privremena ili ***godišnja*** zatvaranja.
 
-Ovaj proces omogućuje usklađivanje podataka podkonta koji su definirani kao neupotrebljivi u kontrolingu, u odnosu na one koji su prethodno evidentirani kroz izvanbilančna knjiženja područja. 
+Ovaj proces omogućava usklađivanje podataka podkonta definisanih kao nekorišćenih u kontrolingu sa podacima prethodno evidentiranim kroz vanbilansna knjiženja područja.
 
 :::tip NAPOMENA
-Prema prethodno navedenim smjernicama u dokumentaciji, logike izjednačavanja mogu se primijeniti na dva načina: Samo na razini vrijednosti, zadržavajući proporcije već evidentiranih centara troškova i potpuno brisanje kontroling podataka, uz
-storniranje zapisa kako bi se osigurala računovodstvena valorizacija i na razini vrijednosti i centra troškova.
+Prema pravilima opisanim u dokumentaciji, logike usklađenja mogu se primeniti na dva načina:
+
+- samo na nivou vrednosti, uz zadržavanje postojećih proporcija centara troškova
+- potpunim brisanjem kontroling podataka i generisanjem stornirajućih knjiženja kako bi se obezbedilo računovodstveno usklađenje i po vrednosti i po centru troška
 :::
 
-Tijekom tih obrada, ***FluentisERP*** će također pripremiti mjesečnu tablicu s podacima isključivo po projektu/nalogu, koja će poslužiti kao polazište za obradu konačnog izvještaja (konsuntiva). Ako obrada računovodstvenih podataka obuhvaća sve drivere tipova raspodjele od 01 do 12, tada će obrada konačnog izvještaja po projektu primijeniti posebne drivere specifične za projekt/nalog.
+Tokom obrade, ***FluentisERP*** priprema i mesečnu tabelu podataka vezanih isključivo za projekte/naloge, koja predstavlja osnovu za obradu konačnog obračuna projekta.
 
-## OBRADA KONAČNOG PRORAČUNA PROJEKTA
-Ovaj postupak analizira knjiženja obrađena u prethodnim koracima i povezana s projektima. Također uzima u obzir podatke iz  proizvodnje (uključujući internu i eksternu obradu), čime se obuhvaćaju svi izravni troškovi i prihodi projekta. Nakon toga se
-primjenjuju nositelji troškova specifični za distribucijske vrste od 13 do 18. Detaljnije informacije dostupne su u dokumentaciji o ***nositeljima troškova***. Potrebni parametri:
+Ako obrada računovodstvenih podataka obuhvata sve nosioce troškova tipa raspodele od 01 do 12, obrada konačnog obračuna projekta primeniće posebne nosioce troškova namenjene projektima i nalozima.
+
+## OBRADA KONAČNOG OBRAČUNA PROJEKTA
+
+Ova procedura analizira knjiženja obrađena u prethodnim koracima koja su povezana sa projektima. Takođe uzima u obzir podatke iz proizvodnje, uključujući internu i eksternu obradu, kako bi obuhvatila sve direktne troškove i prihode projekta.
+
+Nakon toga primenjuju se nosioci troškova specifični za tipove raspodele od 13 do 18. Više informacija dostupno je u dokumentaciji o ***nosiocima troškova***.
+
+Potrebni parametri su:
 
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) koje se obrađuje
 - Raspon ***datuma od*** i ***datuma do***
 - ***Šifra*** i ***opis*** obrade
-- ***Datum*** 
-- Referentna ***Godina*** 
-- ***Predložak*** knjiženja
-
-
-
+- ***Datum***
+- Referentna ***godina***
+- ***Šablon*** knjiženja

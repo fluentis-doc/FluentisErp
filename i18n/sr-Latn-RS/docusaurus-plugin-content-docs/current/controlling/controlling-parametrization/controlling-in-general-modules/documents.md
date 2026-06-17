@@ -1,15 +1,14 @@
 ---
-title: Dokumenti nabave i prodaje 
+title: Dokumenti nabavke i prodaje
 sidebar_position: 20
 ---
 
-Unutar različitih dokumenata u poslovanju dostupna su, u osnovi, dva elementa od interesa za valorizacije u *Kontrolingu*: poveznice na *Projekte* i detalji valorizacije *Analitičke* kartice za svaki artikl koji se evidentira. 
+Unutar različitih poslovnih dokumenata dostupna su, u osnovi, dva elementa od interesa za valorizaciju u *Controllingu*: veze sa *Projektima* i detalji valorizacije kartice *Analitika* za svaki evidentirani artikal.
 
-Što se tiče *Projekata*, u zaglavlju dokumenata moguće je povezati referentni projekt, koji će se koristiti za automatsku valorizaciju svih artikala unutar istog dokumenta. Ako se promijeni referenca u zaglavlju dok su artikli već dodani, ***FluentisERP*** će tražiti potvrdu o zamjeni u svim detaljima. Omogućena je i ručna izmjena projektne reference na pojedinoj stavci artikla, s jednim dostupnim poljem za povezivanje.  
+Što se tiče *Projekata*, u zaglavlju dokumenta moguće je povezati referentni projekat koji će se koristiti za automatsku valorizaciju svih artikala unutar istog dokumenta. Ako se referenca u zaglavlju promeni nakon što su artikli već dodati, ***Fluentis ERP*** će zatražiti potvrdu za zamenu reference u svim detaljima. Takođe je omogućena ručna izmena projektne reference na pojedinačnoj stavci artikla putem posebnog polja za povezivanje.
 
-Što se tiče *Analitičke* kartice, u dijelu ispod artikala omogućava se slobodno raspoređivanje vrijednosti stavke na više centara poduzeća: ***FluentisERP*** automatski dodjeljuje podatke centrima prema prioritetnim logikama i dostupnim konfiguracijama, ali korisnik uvijek ima mogućnost ručne izmjene. Ako je u poduzeću aktiviran *Kontroling*, ova analitička kartica imat će iste značajke multidimenzionalnog i projektnog upravljanja kao analitička kartica knjigovodstvenih evidencija. Budući da su dokument i stavke artikala već potencijalno povezani s *Projektom*, analitička sekcija automatski valorizira odgovarajuću dimenziju *Projekti* centara poduzeća. 
-
+Što se tiče kartice *Analitika*, u delu ispod artikala omogućena je slobodna raspodela vrednosti stavke na više centara preduzeća. ***Fluentis ERP*** automatski dodeljuje podatke centrima prema prioritetnim pravilima i dostupnim konfiguracijama, ali korisnik uvek može izvršiti ručne izmene. Ako je u preduzeću aktiviran *Controlling*, ova analitička kartica ima iste karakteristike višedimenzionalnog i projektnog upravljanja kao i analitička kartica knjigovodstvenih evidencija. Pošto dokument i stavke artikala već mogu biti povezani sa *Projektom*, analitička sekcija automatski valorizuje odgovarajuću dimenziju *Projekti* unutar centara preduzeća.
 
 :::tip NAPOMENA
-Budući da analitička kartica predstavlja izvor podataka za valorizaciju dimenzije *Projekti* i ujedno je slobodno izmjenjiva, čak i ako je stavka artikla povezana s jednim *Projektom*, korisnik može unutar analitike podijeliti atribuciju na više *Projekata*, bez potrebe za umnožavanjem stavki artikala unutar dokumenta. 
+Pošto analitička kartica predstavlja izvor podataka za valorizaciju dimenzije *Projekti* i ujedno je potpuno prilagodljiva, čak i kada je stavka artikla povezana sa jednim *Projektom*, korisnik može unutar analitike raspodeliti vrednost na više *Projekata* bez potrebe za dupliranjem stavki artikala u dokumentu.
 :::

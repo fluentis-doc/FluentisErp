@@ -1,56 +1,84 @@
 ---
 title: Dohvat podataka iz proizvodnje
-sidebar_position: 1 
+sidebar_position: 1
 ---
 
-Funkcija dohvata (preuzimanja) podataka iz proizvodnje omogućuje učitavanje podataka radi dodjele fizičkih
-pokreta (odnosno kretanja materijala i vremena) na proizvodne naloge te radi vrednovanja troškova obrade.
+Funkcija preuzimanja podataka iz proizvodnje omogućava učitavanje podataka radi dodele fizičkih kretanja (materijala i vremena) proizvodnim nalozima, kao i za vrednovanje troškova obrade.
 
-Obrazac je podijeljen na tri zasebne procedure:
+Forma je podeljena na tri odvojene procedure.
 
-## DOHVAT SATA/TROŠKOVA PO PROJEKTU
-Ova procedura omogućuje preuzimanje podataka o radnim satima proizvodnog osoblja (iz modula ***Upravljanje prijavljenim satima***)  te podataka iz modula Projekti, uključujući odrađene ***aktivnosti*** i ***Intervencije***, Ti se podaci zatim unose u ***zapise fizičkih pokreta*** i ***projekata***. Dostupne opcije:
-- Odabir [***Područja***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) na kojem će se preuzimati podaci
-- Definiranje ***Datuma***
-- Odabir ***Godine*** kontrolinga
-- Postavljanje vremenskog okvira ***Od datuma*** - ***Do datuma***
-- Definiranje ***vrste mjerenja***, (prva ili druga jedinica mjere postavljena u centrima)
-- Odabir ***vrste projekta***, za prijenos podataka u fizičke pokrete projekta:
-    - ***Svi projekti u deklariranim satima***, preuzimaju se svi projekti referencirani u prijavama sati
-    - ***Sati na povezane projekte***, preuzimaju se glavni projekti povezani s prijavljenima
-    - ***Vrednovanje sati iz intercompanya***, čime se u aktivnom poduzeću registriraju sati koje su zaposlenici unijeli u drugom poduzeću unutar baze podataka.
-S desne strane također možemo dodati i ekonomsku valorizaciju našim dosad kvantitativnim razmatranjima o vremenu: 
-- ***Valorizacija putnih troškova*** aktivnosti/intervencija 
-- ***Upravljanje radnim vremenom za projekte***, pri čemu se u FluentisERP razmatraju samo sati povezani s projektom
-- ***Vrednovanje troškova resursa koji nisu redvono evidentirani*** primjenom troška resursa na broj sati u periodu, uz mogućnost korekcije putem faktora *Efikasnosti*
-- ***Procijeni međukompanijske troškove/prihode resursa***: omogućujući vrednovanje troškova ili prihoda od intercompany usluga prijavljenih u satima
+## DOHVAT SATI/TROŠKOVA PO PROJEKTU
 
-## DOHVAT FIZIČKIH POKRETA
-Ova procedura preuzima podatke iz proizvodnih dokumenata te vrednuje vrijeme stroja, vrijeme rada i vrijeme postavljanja stroja i opreme. Podaci se upisuju u ***zapise fizičkih kretanja i projekata/proizvodnih*** naloga. Podaci se provjeravaju u odnosu na centar troškova pridružen stroju ili radnoj grupi. Ako je centar postavljen za mjerenje vremena stroja, rada ili postavljanja, koristit će se podaci iz tablice ***Jedinice mjere centara u kontrolingu***.
+Ova procedura omogućava preuzimanje podataka o radnim satima proizvodnog osoblja iz modula ***Upravljanje prijavljenim satima***, kao i podataka iz modula Projekti, uključujući izvršene ***aktivnosti*** i ***intervencije***. Ovi podaci se zatim upisuju u ***zapise fizičkih kretanja*** i ***projekte***.
+
+Dostupne opcije:
+
+- Izbor [***područja***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) za koje se preuzimaju podaci
+- Definisanje ***datuma***
+- Izbor ***godine*** kontrolinga
+- Definisanje vremenskog opsega ***Od datuma*** – ***Do datuma***
+- Definisanje ***vrste merenja*** (prva ili druga jedinica mere definisana na centru)
+- Izbor ***vrste projekta*** za prenos podataka u fizička kretanja projekta:
+  - ***Svi projekti iz prijavljenih sati*** – preuzimaju se svi projekti navedeni u prijavama sati
+  - ***Sati na povezanim projektima*** – preuzimaju se glavni projekti povezani sa prijavljenim projektima
+  - ***Vrednovanje sati iz intercompany okruženja*** – evidentiraju se sati koje su zaposleni uneli u drugom preduzeću unutar iste baze podataka
+
+Sa desne strane moguće je dodati i ekonomsku valorizaciju vremenskih podataka:
+
+- ***Valorizacija putnih troškova*** aktivnosti/intervencija
+- ***Upravljanje radnim vremenom za projekte***, pri čemu FluentisERP uzima u obzir samo sate povezane sa projektom
+- ***Vrednovanje troškova resursa koji nisu redovno evidentirani*** primenom troška resursa na broj sati u periodu, uz mogućnost korekcije preko faktora *efikasnosti*
+- ***Vrednovanje intercompany troškova/prihoda resursa***, kojim se obračunavaju troškovi ili prihodi intercompany usluga evidentiranih kroz sate rada
+
+## DOHVAT FIZIČKIH KRETANJA
+
+Ova procedura preuzima podatke iz proizvodnih dokumenata i vrednuje vreme rada mašina, vreme rada zaposlenih i vreme pripreme mašina i opreme.
+
+Podaci se upisuju u ***zapise fizičkih kretanja*** i ***projekte/proizvodne naloge***. Podaci se proveravaju u odnosu na centar troška dodeljen mašini ili radnoj grupi. Ako je za centar definisano praćenje vremena rada mašine, rada zaposlenih ili pripreme, koristiće se podaci iz tabele ***Jedinice mere centara u kontrolingu***.
+
 Podaci koji se unose:
+
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) analize
 - ***Datum*** evidentiranja
-- ***Godina*** 
-- Raspon ***Od datuma*** - ***Do datuma***
+- ***Godina***
+- Raspon ***Od datuma*** – ***Do datuma***
+
 Opcije za obračun vremena:
-- ***Završna vremena***– vrednovanje stvarnog vremena iz proizvodnih prijava
-- ***Vrijeme ciklusa*** – vrednovanje teorijskog ciklusa, proporcionalno proizvedenoj količini
-- ***Vrijeme standardne faze*** – vrednovanje na temelju standardne faze prijavljene proizvodnje. Ako su strojevi ili oprema povezani s osnovnim sredstvima, postupak također vrednuje ***zapise fizičkih pokreta*** (i one za projekt) s obzirom
-na količine proizvedene u periodu, kako bi se omogućio obračun amortizacije na količinu.
+
+- ***Završna vremena*** – vrednovanje stvarnog vremena iz proizvodnih prijava
+- ***Vreme ciklusa*** – vrednovanje teorijskog ciklusa proporcionalno proizvedenoj količini
+- ***Vreme standardne faze*** – vrednovanje na osnovu standardne faze prijavljene proizvodnje
+
+Ako su mašine ili oprema povezani sa osnovnim sredstvima, procedura takođe vrednuje ***zapise fizičkih kretanja*** (uključujući i one vezane za projekte) prema proizvedenim količinama u periodu, kako bi se omogućio obračun amortizacije prema količini.
 
 ## DOHVAT TROŠKOVA IZ NALOGA
-Ova procedura omogućuje ***dohvat troškova internih i eksternih obrada proizvodnje***.
-Podaci koji se unose:
+
+Ova procedura omogućava ***preuzimanje troškova internih i eksternih obrada proizvodnje***.
+
+Potrebno je uneti:
+
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
 - ***Datum*** evidentiranja
-- ***Godina*** 
-- ***Predložak*** knjiženja
-- Raspon ***Od datuma*** - ***Do datuma***
-- ***Konto za vanjsku obradu*** koji se koristi za vrednovanje eksternih obrada evidentiranih kroz konto rada. Za troškove preuzete iz konta rada, koristi se cijena iz ulazne fakture, ako je obrada fakturirana, cijena iz prijema obrade,
-ako faktura još nije izdana. Troškovi se vrednuju u odnosu na centar troškova pridružen kontu troškova. Za interne obrade,
-vrednovanje se može izvršiti prema ***Standardnom trošku, Posljednjem trošku ili Prosječnom trošku***, ovisno o količinama iz
-proizvodnih dokumenata ili materijalima korištenima u intervencijama kod trećih strana.
+- ***Godinu***
+- ***Šablon*** knjiženja
+- Raspon ***Od datuma*** – ***Do datuma***
+- ***Konto za eksternu obradu*** koji se koristi za vrednovanje eksternih obrada evidentiranih preko konta rada
 
-Rezultati obrade unose se u ***Vrijednosti iz proizvodnje***, dio modula Upravljanje projektima. Ova procedura filtrira samo one podatke koji su povezani s projektima i obrađuje ih ***isključivo*** za potrebe konačnog obračuna projekta
+Za troškove preuzete sa konta rada koristi se:
 
-Dodatna opcija (tab) ***Projekti*** omogućuje selekciju specifičnih dokumenata za vrednovanje troškova. Ako se ne postave filteri, vrednovat će se svi pokreti naloga unutar odabranog perioda.
+- cena iz ulazne fakture, ako je obrada fakturisana
+- cena iz prijema obrade, ako faktura još nije evidentirana
+
+Troškovi se vrednuju u odnosu na centar troška povezan sa kontom troška.
+
+Za interne obrade vrednovanje se može vršiti prema:
+
+- ***Standardnom trošku***
+- ***Poslednjem trošku***
+- ***Prosečnom trošku***
+
+u zavisnosti od količina iz proizvodnih dokumenata ili materijala korišćenih u intervencijama kod trećih lica.
+
+Rezultati obrade upisuju se u ***Vrednosti iz proizvodnje*** unutar modula Upravljanje projektima. Procedura filtrira samo podatke povezane sa projektima i obrađuje ih ***isključivo*** za potrebe konačnog obračuna projekta.
+
+Dodatna kartica ***Projekti*** omogućava izbor specifičnih dokumenata za vrednovanje troškova. Ukoliko se ne definišu filteri, vrednovaće se sva kretanja naloga unutar izabranog perioda.

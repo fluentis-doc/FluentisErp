@@ -3,31 +3,29 @@ title: Vrste područja - Područja
 sidebar_position: 5
 ---
 
-:::tip NAPOMENA 
-Ova tablica je od interesa samo za tvrtke u kojima je aktiviran *kontroling*.   
+:::tip NAPOMENA
+Ova tabela je od značaja samo za kompanije kod kojih je aktiviran *kontroling*.
 :::
 
-Podaci kontrolinga uvijek se upravljaju kroz analitičko područje koje identificira koje vrste podataka sadrži. Možemo to zamisliti kao fizičku kutiju: svaka kutija se puni računovodstvenim i kvantitativnim vrijednostima, a svaka kutija može imati vlastiti, zaseban model izračuna. Jedno područje obuhvaća podatke svih *dimenzija* centara.
+Podaci kontrolinga se uvek obrađuju kroz analitičko područje koje određuje koju vrstu podataka sadrži. Možemo ga zamisliti kao fizičku kutiju: svaka kutija se popunjava računovodstvenim i kvantitativnim vrednostima, a svaka može imati sopstveni, zaseban model obračuna. Jedno područje obuhvata podatke svih *dimenzija* centara.
 
 [**Specifična polja**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
 
-- **Kod**
+- **Šifra**
 - **Opis**
 - [**Vrsta područja**](/docs/configurations/tables/controlling/managerial-accounting/area-type/)
-- **Uskladna stavka**, nije upravljano
+- **Stavka usklađenja** – nije podržana
 
-[**TIPOLOGIJE PODRUČJA**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
+[**Tipovi područja**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
 
-Obično imamo tri područja:
+Uobičajeno postoje tri osnovna područja:
 
-- *BUDŽET*: sadrži budžet za sljedeću godinu;
+- **Budžet** – sadrži budžet za narednu godinu.
+- **Stvarno stanje** – koristi se prilikom obrade međuperiodnih zatvaranja.
+- **Skup pravila** – područje koje ne sadrži vrednosti, osim eventualno određenih fizičkih mera. Ovo područje čuva standardna pravila nosilaca troškova. Na primer, ako se obrađuje područje ostvarenih troškova i želi se raspodeliti trošak zakupa pomoću nosilaca troškova, Fluentis će koristiti specifičnog nosioca troškova za ostvarene troškove ukoliko postoji. U suprotnom će koristiti opšta pravila koja su podrazumevano povezana sa područjem *Skup pravila*.
 
-- *STVARNO STANJE*: koristi se pri obradi međugodišnjih zatvaranja;
+:::tip NAPOMENA
+Broj analitičkih područja može se definisati slobodno. Uobičajeni cilj je simulacija efekata promene pravila nosilaca troškova ili primena različitih konfiguracija troškova.
 
-- *SET PRAVILA*: područje koje ne sadrži vrijednosti, osim eventualno nekih fizičkih mjera. Ovo područje pohranjuje standardna pravila cost drivera: ako, na primjer, obrađujem područje konsuntiva i želim raspodijeliti trošak najma pomoću cost drivera, Fluentis će koristiti specifični cost driver za konsuntive ako ga pronađe; inače će koristiti opća pravila koja su po defaultu povezana s područjem set pravila.
-
-:::tip NAPOMENA 
-Broj analitičkih područja možemo definirati slobodno. Tipični cilj je simulirati što se događa ako promijenimo pravila cost drivera u tvrtki ili primijeniti različite konfiguracije troškova.
-
-Druga primjena je “kristalizacija” kontroling obračuna: kao što će biti objašnjeno kod cost drivera, obračuni kontrolinga brišu i ponovno kreiraju podatke za obračunsku godinu. Ako želimo zadržati, primjerice, podatke za prvo tromjesečje kako bismo ih usporedili s prva tri mjeseca obračuna prvog polugodišta, to možemo postići kreiranjem različitih konsuntivnih područja.
+Druga česta primena je „kristalizacija“ obračuna kontrolinga. Pošto obračuni kontrolinga brišu i ponovo generišu podatke za obračunsku godinu, moguće je sačuvati rezultate određenog perioda (na primer prvog tromesečja) radi kasnijeg poređenja sa podacima obrađenim za prvo polugodište. To se postiže kreiranjem dodatnih područja ostvarenih troškova.
 :::

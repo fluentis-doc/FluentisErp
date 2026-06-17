@@ -1,32 +1,32 @@
 ---
-title: Povijest fizičkih kretanja naloga
+title: Istorija fizičkih kretanja naloga
 sidebar_position: 2
 ---
 
-U ***Povijesti fizičkih kretanja naloga*** prikazane su proizvodne količine povezane s projektima/nalozima. Konkretno, dostupni su sljedeći podaci:
+U ***Istoriji fizičkih kretanja naloga*** prikazane su proizvodne količine povezane sa projektima/nalozima. Konkretno, dostupni su sledeći podaci:
 
 - Referentno [***područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
 
 - ***Godina*** i ***period***
 
-- Referentni ***projekt*** 
+- Referentni ***projekat***
 
-- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) iz kojeg potječe kretanje
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) iz kojeg potiče kretanje
 
 - ***Klasa*** i ***šifra*** proizvedenog/obrađenog artikla
 
 - ***Faza*** i ***Podfaza*** proizvodnje
 
-- [***Jedinica mjere***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) kretanja
+- [***Jedinica mere***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) kretanja
 
-- ***Količina proizvodnje***, tj. obračunata količina prema prijavama iz proizvodnje
+- ***Količina proizvodnje***, odnosno obračunata količina prema prijavama iz proizvodnje
 
-- ***Količina faze ciklusa***, tj. količina u odnosu na teorijski ciklus
+- ***Količina faze ciklusa***, odnosno količina u odnosu na teorijski ciklus
 
-- ***Standardna fazna količina***, tj. količina u odnosu na standardnu fazu
+- ***Standardna fazna količina***, odnosno količina u odnosu na standardnu fazu
 
-- ***Vremenski popis*** usklađen s vrstom količine evidentirane u prethodnim poljima
+- ***Vremenski zapis*** usklađen sa vrstom količine evidentirane u prethodnim poljima
 
-- ***Izvor*** označava podrijetlo evidentiranih podataka, obično *proizvodnju*
+- ***Izvor*** označava poreklo evidentiranih podataka, najčešće *proizvodnju*
 
-Nije dopušteno brisanje, izmjena ili unos novih podataka u prikazanoj tablici.
+Nije dozvoljeno brisanje, izmena niti unos novih podataka u prikazanoj tabeli.

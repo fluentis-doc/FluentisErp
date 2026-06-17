@@ -1,14 +1,14 @@
 ---
 title: Šifarnik artikala
 sidebar_position: 5
---- 
+---
 
-Unutar artikla, u kartici **ADMINISTRACIJA**, postoji mogućnost dodjele [***CENTARA TROŠKA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
+Unutar artikla, na kartici **ADMINISTRACIJA**, postoji mogućnost dodjele [***CENTARA TROŠKOVA***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
 
-Poduzeća koja **nemaju** aktiviran kontroling imat će dostupno samo jedno polje za povezivanje s jednim centrom, dok će se za ona s **aktiviranim** kontrolingom omogućiti tablica u kojoj se može dodijeliti više centara, čak i različitih dimenzija, replicirajući logiku već opisanu u *Kontnom planu* (što znači da se može ostaviti prazno polje za centar i aktivirati samo određena dimenzija za dodjelu).
+Preduzeća koja **nemaju** aktiviran controlling imaće dostupno samo jedno polje za povezivanje sa jednim centrom, dok će za ona sa **aktiviranim** controllingom biti dostupna tabela u kojoj je moguće dodijeliti više centara, čak i različitih dimenzija, replicirajući logiku već opisanu u *Kontnom planu* (što znači da je moguće ostaviti prazno polje za centar i aktivirati samo određenu dimenziju za dodjelu).
 
 :::tip NAPOMENA
-Centar profita je vidljiv, ali u poduzećima s aktiviranim *kontrolingom* preporučuje se zamjena centara profita specifičnom dimenzijom koja će se koristiti za dodjelu u centrima poduzeća.
+Profitni centar je vidljiv, ali se u preduzećima sa aktiviranim *controllingom* preporučuje zamjena profitnih centara posebnom dimenzijom koja će se koristiti za dodjelu unutar centara preduzeća.
 :::
 
-Za postupak ***Knjiženja zaliha*** unutar simulacija bilance u modulu ***Privremeno zatvaranje***, ključno je svakom artiklu (koji je relevantan za vrednovanje skladišta) dodijeliti odgovarajuću ***Fiskalnu kategoriju***. Na temelju te tablice ***FluentisERP*** preuzima odgovarajuća podkonta koji će se koristiti za vrednovanje početnih i završnih zaliha. 
+Za postupak ***Knjiženja zaliha*** unutar simulacija bilansa u modulu ***Privremeno zatvaranje***, ključno je svakom artiklu (koji je relevantan za vrednovanje zaliha) dodijeliti odgovarajuću ***Fiskalnu kategoriju***. Na osnovu te tabele ***Fluentis ERP*** preuzima odgovarajuća podkonta koja će se koristiti za vrednovanje početnih i završnih zaliha.

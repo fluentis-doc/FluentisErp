@@ -3,41 +3,50 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Unutar modula ‘računovodstvo upravljanja’ nalaze se sve procedure za unos i obradu podataka računovodstva po centrima u područjima analize različitim od područja proračuna: dostupni su zapisi fizičkih kretanja ili vanbilančna knjiženja, povijest
-obrađenih podataka (bilo fizičkih ili vrijednosnih) za godinu/razdoblje, različiti prikazi kontrole i izvlačenja podataka, kao i prikaz izvještaja ostvarenih podataka za analitičku dimenziju projekta..
+U okviru modula ***upravljačko računovodstvo*** nalaze se sve procedure za unos i obradu podataka računovodstva po centrima u analitičkim područjima različitim od budžetskih područja. Dostupna su knjiženja fizičkih kretanja i vanbilansna knjiženja, istorija obrađenih podataka (kako fizičkih tako i vrednosnih) za godinu/period, različiti pregledi za kontrolu i pregled podataka, kao i prikaz izveštaja ostvarenih podataka za analitičku dimenziju projekata.
 
 ## Početna konfiguracija modula
-Preporučujemo da se obratite odjeljku [*Opći pregled Kontrolinga*](/docs/controlling/general-overview-controlling/general-overview) za uvid u tablice i logičke korake konfiguracije, koja mora započeti preciznom analizom proizvodne strukture poduzeća i ciljeva koje se žele postići implementacijom Kontrolinga.
 
-## **Dokumenti koji se obrađuju**
+Preporučujemo da pogledate odeljak [*Opšti pregled kontrolinga*](/docs/controlling/general-overview-controlling/general-overview) radi uvida u tabele i logičke korake konfiguracije, koja treba da započne detaljnom analizom proizvodne strukture preduzeća i ciljeva koje je potrebno ostvariti implementacijom kontrolinga.
+
+## Dokumenti koji se obrađuju
+
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-        <p>Modul je strukturiran kroz sljedeće sekcije:</p>
-###     Dnevnik unosa
-        <p>Dnevnik početnog unosa fizičkih podataka ili zapisa iz područja analize:</p>
-        <p>- *Knjiženje fizičkih kretanja*: vrednovanje iz proizvodnje/projekta ili ručno</p>
-        <p>- *Vanjskobilančni zapisi iz područja*: automatski generirani iz amortizacije ili zaliha, ili uneseni ručno</p>
-        <p>- *Standardne tarife centara troška*: ručno upravljanje</p>
-###     Povijesni zapisi upravljanja
-        <p>U ovoj sekciji nalaze se svi povijesni podaci različitih obrađenih baza:</p>
-        <p>- *Povijesni fizički tok*: povijesna baza fizičkih kretanja</p>
-        <p>- *Povijest amortizacije*: povijesna baza obrađenih amortizacija</p>
-        <p>- *Povijest zapisa upravljanja*: baza podataka obrađena po mjesecima i reobrađena pomoću svih drivere</p>
-        <p>- *Povijest indeksa*: povijesna baza troškovnih pokazatelja obrađenih po centrima</p>
-###     Procedure
-        <p>Ova sekcija sadrži razne procedure za dohvat i obradu podataka:</p>
-        <p>- *Dohvat podataka iz proizvodnje*: dohvat vremena i troškova iz projekata, vremena iz proizvodnje, troškova iz unutarnjih/vanjskih obrada</p>
-        <p>- *Dohvat podataka iz izlaznih računa*: dohvat provizija i primijenjenih popusta</p>
-        <p>- *Obrada razdoblja*: obrada fizičkih podataka, amortizacije i izgradnja baze primjenom drivere</p>
-        <p>- *Ažuriranje tarifa proizvodnje*:  usklađivanje tarifa proizvodnih centara</p>
-        <p>- *Konsolidacija mastera*: stvaranje jedinstvenog grupnog kontrolinga</p>
-###     Povijest projekta
-        <p>Ova sekcija sadrži sve povijesne podatke za korisnike koji rade po projektima/nalozima:</p>
-        <p>- *Povijest fizičkih kretanja po nalogu*: povijesna baza vremena i količina obrađenih na projektu/nalogu</p>
-        <p>- *Upravljački zapisi*: povijesna baza izravnih troškova i prihoda projekta</p>
-        <p>- *Vrijednosti iz proizvodnje*: materijali i obrade izravno korišteni na projektu/nalogu</p>
-        <p>- *Konsolidirani pregled naloga*: konačna baza podataka s izravnim, neizravnim troškovima i troškovima raspodijeljenim putem drivera</p>
+        <p>Modul je organizovan kroz sledeće sekcije:</p>
+
+### Dnevnik unosa
+
+        <p>Dnevnik početnog unosa fizičkih podataka ili knjiženja iz analitičkih područja:</p>
+        <p>- *Knjiženje fizičkih kretanja*: vrednovanje iz proizvodnje/projekta ili ručni unos</p>
+        <p>- *Vanbilansna knjiženja po području*: automatski generisana iz amortizacije ili zaliha, ili ručno uneta</p>
+        <p>- *Standardne tarife centara troškova*: ručno upravljanje</p>
+
+### Istorijski upravljački podaci
+
+        <p>U ovoj sekciji nalaze se svi istorijski podaci različitih obrađenih baza:</p>
+        <p>- *Istorija fizičkih tokova*: istorijska baza fizičkih kretanja</p>
+        <p>- *Istorija amortizacije*: istorijska baza obračunate amortizacije</p>
+        <p>- *Istorija upravljačkih knjiženja*: baza podataka obrađena po mesecima i kroz sve nosioce troškova</p>
+        <p>- *Istorija indeksa*: istorijska baza obrađenih pokazatelja troškova po centrima</p>
+
+### Procedure
+
+        <p>Ova sekcija sadrži različite procedure za preuzimanje i obradu podataka:</p>
+        <p>- *Preuzimanje podataka iz proizvodnje*: preuzimanje vremena i troškova iz projekata, vremena iz proizvodnje i troškova internih/eksternih obrada</p>
+        <p>- *Preuzimanje podataka iz izlaznih računa*: preuzimanje provizija i odobrenih popusta</p>
+        <p>- *Obrada perioda*: obrada fizičkih podataka, amortizacije i kreiranje baze primenom nosilaca troškova</p>
+        <p>- *Ažuriranje proizvodnih tarifa*: usklađivanje tarifa proizvodnih centara</p>
+        <p>- *Glavna konsolidacija*: kreiranje jedinstvenog grupnog kontrolinga</p>
+
+### Istorija projekta
+
+        <p>Ova sekcija sadrži sve istorijske podatke za korisnike koji rade po projektima/nalozima:</p>
+        <p>- *Istorija fizičkih kretanja po nalogu*: istorijska baza vremena i količina obrađenih na projektu/nalogu</p>
+        <p>- *Upravljačka knjiženja*: istorijska baza direktnih troškova i prihoda projekta</p>
+        <p>- *Vrednosti proizvodnje*: materijali i obrade direktno korišćeni na projektu/nalogu</p>
+        <p>- *Konsolidovani pregled naloga*: konačna baza podataka sa direktnim, indirektnim troškovima i troškovima raspoređenim putem nosilaca troškova</p>
     </div>
 </div>

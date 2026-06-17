@@ -1,19 +1,24 @@
 ---
-title: Vanbilančna knjiženja
+title: Vanbilansna knjiženja
 sidebar_position: 2
 ---
 
-Osim osnovnih vanbilančnih knjiženja povezanih s ***privremenim zatvaranjem konta***, ***FluentisERP*** omogućuje upravljanje ***vanbilančnim knjiženjima vezanim uz područja***.
+Pored osnovnih vanbilansnih knjiženja povezanih sa ***privremenim zatvaranjem konta***, ***FluentisERP*** omogućava upravljanje ***vanbilansnim knjiženjima povezanim sa područjima***.
 
-Ova knjiženja nisu povezana s određenim konačnim obračunom perioda, već su vezana uz područje analize te se koriste u obradi podataka kontrolinga unutar godine zapisa, ovisno o ekonomskoj raspodjeli unesenoj u analitičke pokrete koje sadrže.
+Ova knjiženja nisu povezana sa određenim konačnim obračunom perioda, već su vezana za područje analize i koriste se u obradi podataka kontrolinga tokom godine knjiženja, u skladu sa ekonomskom raspodelom definisanom u analitičkim knjiženjima koja sadrže.
 
-:::tip PRIMJER
-Na početku godine u ovom modulu mogu se evidentirati svi zapisi koje će opće računovodstvo naknadno knjižiti ili obrađivati na kraju godine, poput naknada nadzornog odbora ili honorara uprave. Također, moguće je mjesečno evidentirati troškova
-vezanih uz plaće zaposlenika kako bi se ravnomjerno rasporedili dodatni mjesečni prihodi i različite rezervacije koje se monetarno ostvaruju u specifičnim periodima godine.
+:::tip PRIMER
+Na početku godine u ovom modulu mogu se evidentirati sva knjiženja koja će se kasnije knjižiti ili obrađivati u glavnom računovodstvu na kraju godine, kao što su naknade članovima nadzornog odbora ili naknade rukovodstvu.
+
+Takođe, moguće je mesečno evidentirati troškove povezane sa zaradama zaposlenih kako bi se ravnomerno rasporedili dodatni mesečni prihodi i različita rezervisanja koja se finansijski realizuju u određenim periodima godine.
 :::
 
-Nakon što se u pretraživaču definira područje analize, moguće je pretražiti već unesene zapise radi izmjena ili brisanja,  duplicirati postojeće zapise kako bi se kreirali novi za sljedeću godinu, koristiti gumb "Novo" za kreiranje novog izvanbilančnog knjiženja. Obrazac je sličan onom iz općeg računovodstva i koristi isti skup predložaka knjiženja
+Nakon što se u pretrazi definiše područje analize, moguće je pronaći već uneta knjiženja radi izmene ili brisanja, duplirati postojeća knjiženja kako bi se kreirala nova za narednu godinu ili koristiti dugme **Novo** za kreiranje novog vanbilansnog knjiženja.
+
+Forma je slična onoj u opštem računovodstvu i koristi isti skup šablona knjiženja.
 
 :::tip NAPOMENA
-Kod ovih knjiženja ključni su podaci unutar analitičkog računovodstva, dok su podaci općeg računovodstva nebitni za obradu  podataka u kontrolingu. Prema internim pravilima i preferencijama, moguće je definirati posebna konta koja automatski prikazuju karticu analitike te omogućuju spremanje pokreta s unaprijed postavljenom nultom vrijednošću u općem računovodstvu, čime se izbjegava nepotrebna valorizacija.
+Kod ovih knjiženja ključni su podaci iz analitičkog računovodstva, dok podaci opšteg računovodstva nisu značajni za obradu podataka u kontrolingu.
+
+U skladu sa internim pravilima i potrebama, moguće je definisati posebna konta koja automatski prikazuju karticu analitike i omogućavaju čuvanje knjiženja sa unapred postavljenom nultom vrednošću u opštem računovodstvu, čime se izbegava nepotrebna valorizacija.
 :::

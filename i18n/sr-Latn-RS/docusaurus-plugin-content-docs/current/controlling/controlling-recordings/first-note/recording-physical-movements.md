@@ -1,48 +1,37 @@
 ---
-title: Zapis fizičkih kretanja
+title: Evidencija fizičkih kretanja
 sidebar_position: 1
 ---
 
-Ovo je obrazac gdje se unose ili pregledavaju podaci koji se koriste za obradu podataka u *kontrolingu*, za nositelje troškova ili za izračun tarifa centara prema količinama.
-Za određene jedinice mjere, poput kvadratnih metara koje zauzimaju različiti centri za raspodjelu troškova poslovne zgrade, unos se vrši ručno početkom godine, unosom podataka u formu ili dupliciranjem vrijednosti iz prethodne godine pomoću
-odgovarajućeg gumba. Za druge vrste fizičkih veličina, poput radnih sati strojeva ili sati rada zaposlenika,
-tablica se može popunjavati putem ***procedure dohvata podataka iz proizvodnje***, koja za svaki period zbraja
-podatke iz proizvodnje ili sate rada na projektu. Dodatna mogućnost je učitavanje iz Excel tablice putem
-modela *PhysicalMovingControlling* koji je na zahtjev dostupan u ***Bizlinku***.
+Ovo je forma u kojoj se unose ili pregledaju podaci koji se koriste za obradu podataka u *kontrolingu*, za nosioce troškova ili za obračun tarifa centara na osnovu količina.
 
+Za određene merne jedinice, kao što su kvadratni metri koje zauzimaju različiti centri za raspodelu troškova poslovne zgrade, unos se vrši ručno na početku godine, unosom podataka u formu ili kopiranjem vrednosti iz prethodne godine pomoću odgovarajućeg dugmeta.
 
-Polja dostupna u gornjoj mreži:
+Za druge vrste fizičkih veličina, kao što su radni sati mašina ili radni sati zaposlenih, tabela se može popunjavati putem ***procedure preuzimanja podataka iz proizvodnje***, koja za svaki period sabira podatke iz proizvodnje ili sate rada na projektu. Dodatno, moguće je učitavanje podataka iz Excel tabele putem modela *PhysicalMovingControlling*, koji je dostupan na zahtev u okviru ***Bizlinka***.
+
+Polja dostupna u gornjoj tabeli:
 
 - Referentno [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) podataka
-
-- [***Mjerna jedinica***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
-
-- ***Distribucija razdoblja*** koja se koristi (obavezno polje za jedinice mjere *toka*). Ovim poljem ***FluentisERP-u*** se daje uputa kako raspodijeliti uneseni podatak na pojedine periode unutar definiranog raspona.
-
+- [***Merna jedinica***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units)
+- ***Raspodela perioda*** koja se koristi (obavezno polje za merne jedinice tipa *tok*). Ovim poljem se ***FluentisERP-u*** definiše način raspodele unetih podataka po pojedinačnim periodima unutar zadatog raspona.
 - ***Datum*** knjiženja kretanja količina
+- Referentna ***godina***
+- ***Period od*** – ***Period do*** (raspon perioda na koji se odnose unesene količine)
+- ***Status*** (nije moguće menjati), označava da li je red unet ručno ili prikazuje vrstu izvora podataka
 
-- Referentna ***godina*** 
+Polja dostupna u donjoj tabeli (detalji količina):
 
-- ***Period od***  - ***Period do*** (raspon perioda na koje se odnose unesene količine)
-
-- ***Status***, (nije moguće uređivati), označava je li redak unesen ručno ili prikazuje vrstu izvora podataka
-
-Polja dostupna u donjem obracu (detalji količina):
 - [***Izvorni centar***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
+- ***Odredišni projekat*** (ako se radi o direktnim količinama povezanim sa projektom)
+- [***Odredišni centar***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), odnosno centar za koji je izvorni centar prethodno obavljao rad na tim količinama
 
-- ***Odredišni projekt***, (ako se radi o izravnim količinama vezanim uz projekt)
+:::tip PRIMER
+Ako zaposleni iz Tehničke službe priprema tehničke detalje ponude za komercijalni sektor, tada će Tehnička služba biti *izvorni centar*, a komercijalni sektor *odredišni centar*.
 
-- [***Odredišni centar***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), tj. centar za koji je izvorni centar prethodno obavljao rad na tim količinama
-
-:::tip PRIMJER
-Ako zaposlenik Tehničkog ureda priprema tehničke detalje ponude za komercijalni odjel, tada će Tehnički ured biti *centar podrijetla*, a komercijalni odjel *odredišni centar*. I [***Nositelji troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) s ***Vrstom distribucije*** 10 - Prijenos na proizvodnju prema standardnoj tarifi, 11 - Izravni prijenos prema standardnoj tarifi, 12 - Prijenos na proizvodnju prema izračunatoj tarifi odnose se na količine centara podrijetla i/ili odredišta
+I [***Nosioci troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) sa ***Tipom raspodele*** 10 - Prenos na proizvodnju prema standardnoj tarifi, 11 - Direktan prenos prema standardnoj tarifi, 12 - Prenos na proizvodnju prema obračunatoj tarifi odnose se na količine izvornih i/ili odredišnih centara.
 :::
 
-- Valjana ***količina*** za redak
-
-- Slobodna ***bilješka*** za redak
-
-- ***Kategorija osnovnog sredstva*** vezanog uz uneseni redak (koristi se npr. za osnovna sredstva u proizvodnji ako se koriste
-amortizacije prema količini)
-
-- ***Odjel*** vezan uz redak, korisno u poduzećima s više aktivnih odjela.
+- Važeća ***količina*** za red
+- Slobodna ***napomena*** za red
+- ***Kategorija osnovnog sredstva*** povezana sa unetim redom (koristi se, na primer, za osnovna sredstva u proizvodnji kada se primenjuje amortizacija prema količini)
+- ***Odeljenje*** povezano sa redom, korisno u preduzećima sa više aktivnih odeljenja.

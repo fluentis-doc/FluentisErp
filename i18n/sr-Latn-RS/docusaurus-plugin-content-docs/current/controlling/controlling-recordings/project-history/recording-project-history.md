@@ -1,58 +1,58 @@
 ---
-title: Povijest zapisa
+title: Istorija knjiženja
 sidebar_position: 3
 ---
 
-Ova forma je u osnovi ista kao ***Povijest zapisa upravljanja***, prikazuje rezultate ***Razdoblja obrade*** ali
-filtrira isključivo one redove koji su izravno povezani s projektom/nalogom. To znači da su prikazani troškovi i prihodi koji su izravno dodijeljeni analiziranoj dimenziji projekta/naloga.
+Ova forma je u osnovi ista kao ***Istorija upravljačkih knjiženja***. Prikazuje rezultate ***Obrade perioda***, ali filtrira isključivo one redove koji su direktno povezani sa projektom/nalogom. To znači da su prikazani troškovi i prihodi koji su direktno dodeljeni analiziranoj dimenziji projekta/naloga.
 
-Polja su ista kao u općoj formi za direkcijsku dimenziju, uključujući:
+Polja su ista kao u opštoj formi za upravljačku dimenziju i uključuju:
 
 - ***Podkonto***
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
 - [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers)
-- [***Centar prijenosa***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), prikazuje se samo za stavke povezane s nositeljima troškova
+- [***Centar prenosa***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), prikazuje se samo za stavke povezane sa nosiocima troškova
 - ***Godina***
-- ***Razdoblje***
+- ***Period***
 - ***Duguje***
 - ***Potražuje***
-- ***Fiksna vrijednost***, (zbrojena s varijabilnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
-- ***Varijabilna vrijednost***, t (zbrojena s fiksnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
-- ***Odjel***
-- ***Valuta***, (uvijek jednaka valuti poduzeća)
-- ***Distribucija*** perioda povezana s redom
-- ***Vrsta retka***, može biti:
-    - *0*  Izvorni redovi (nastali iz zatvaranja ili ručnih unosa zatvaranja, ali i iz redova nositelja troškova raspodjele)
-    - *1* Preneseni redovi (za nositelje troškova raspodjele, to su redovi koji storniraju vrijednost iz *poslovnog centra*)
-    - *2* Primljeni redovi (za nositelje troškova raspodjele, to su redovi koji prenose vrijednost iz centra nositelja
-u *centar troška*)
-:::tip NAPOMENA
-Redovi raspodjele su u osnovi redovi *raspodjele nositelja troškova*, koji iz prijelaznih konta preraspodjeljuju vrijednosti na stvarne *centre troška*. Nositelji troškova *raspodjele* uključuju sve ostale metode prijenosa vrijednosti.
-:::
-- ***Vrsta distribucije*** primijenjenog nositelja troškova
-- [***Nositelj troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) koji je primijenjen
-- ***Izvor***, podataka može biti:
-    - *Računovodstveni podaci* (1), izravno iz *privremenog zatvaranja*
-    - *Ručno uneseni podaci* (2), *izvanbilančna knjiženja* područja
-    - *Formula* (3), knjiženja stvorena pomoću *računalnih formula*
-    - *Amortizacija* (4), knjiženja stvorena putem obračuna amortizacije kontrolinga
-    - *Korigiranja* (5), zapisi iz privremenih ili godišnjih korekcija
-    - *Nositelji troškova tarifa* (6), primjena nositelja troškova tarifa 
-    - *Zalihe* (7), zapisi zaliha u kontrolingu
-    - *Materijali proizvodnje* (8), troškovi materijala u proizvodnji
-    - *Vanjske usluge* (9), troškovi vanjskih radova
-    - *Proizvodne transformacije* (10), interni proizvodni procesi
-    - *Konsolidacija kontrolinga* (15), postupak konsolidacije master kontrolinga u multicompany postavkama
-
+- ***Fiksna vrednost*** (zbir sa varijabilnom vrednošću daje prethodnu vrednost duguje ili potražuje)
+- ***Varijabilna vrednost*** (zbir sa fiksnom vrednošću daje prethodnu vrednost duguje ili potražuje)
+- ***Odeljenje***
+- ***Valuta*** (uvek jednaka valuti preduzeća)
+- ***Distribucija*** perioda povezana sa redom
+- ***Vrsta reda***, može biti:
+  - *0* Izvorni redovi (nastali iz zatvaranja ili ručnih unosa zatvaranja, ali i iz redova nosilaca troškova raspodele)
+  - *1* Preneti redovi (za nosioce troškova raspodele, to su redovi koji storniraju vrednost iz *poslovnog centra*)
+  - *2* Primljeni redovi (za nosioce troškova raspodele, to su redovi koji prenose vrednost iz centra nosioca u *centar troška*)
 
 :::tip NAPOMENA
-Postoje dodatne četiri kategorije izvora podataka, vidljive u povijesti konačnog proračuna projekta
-    - *Vrijeme stroja* (11)
-    - *Vrijeme čovjeka* (12)
-    - *Priprema stroja* (13)
-    - *Priprema čovjeka* (14)
+Redovi raspodele su u osnovi redovi *raspodele nosilaca troškova*, koji sa prelaznih konta preraspodeljuju vrednosti na stvarne *centre troškova*. Nosioci troškova *raspodele* uključuju sve ostale metode prenosa vrednosti.
 :::
 
-- ***Broj***, ***Godina***, ***Redak***, ***Wbs***: referentni podaci za projekte (nisu valorizirani).
+- ***Vrsta distribucije*** primenjenog nosioca troškova
+- [***Nosilac troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) koji je primenjen
+- ***Izvor*** podataka može biti:
+  - *Računovodstveni podaci* (1), direktno iz *privremenog zatvaranja*
+  - *Ručno uneti podaci* (2), *vanbilansna knjiženja* područja
+  - *Formula* (3), knjiženja kreirana pomoću *računskih formula*
+  - *Amortizacija* (4), knjiženja kreirana obračunom amortizacije kontrolinga
+  - *Korekcije* (5), zapisi iz privremenih ili godišnjih korekcija
+  - *Nosioci troškova tarifa* (6), primena nosilaca troškova tarifa
+  - *Zalihe* (7), knjiženja zaliha u kontrolingu
+  - *Materijali proizvodnje* (8), troškovi materijala u proizvodnji
+  - *Spoljne usluge* (9), troškovi eksternih radova
+  - *Proizvodne transformacije* (10), interni proizvodni procesi
+  - *Konsolidacija kontrolinga* (15), postupak konsolidacije master kontrolinga u *multicompany* postavkama
 
-Nije dopušteno brisanje, izmjena ili unos novih podataka u prikazanoj tablici.
+:::tip NAPOMENA
+Postoje dodatne četiri kategorije izvora podataka, vidljive u istoriji konačnog obračuna projekta:
+
+- *Vreme mašine* (11)
+- *Vreme radnika* (12)
+- *Priprema mašine* (13)
+- *Priprema radnika* (14)
+:::
+
+- ***Broj***, ***Godina***, ***Red***, ***WBS***: referentni podaci za projekte (nisu valorizovani).
+
+Nije dozvoljeno brisanje, izmena niti unos novih podataka u prikazanoj tabeli.

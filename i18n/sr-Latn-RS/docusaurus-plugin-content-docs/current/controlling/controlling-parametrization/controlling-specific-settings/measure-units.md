@@ -1,33 +1,33 @@
 ---
-title: Jedinice mjere
+title: Merne jedinice
 sidebar_position: 13
 ---
 
-U tablici ***Jedinice mjere*** potrebno je šifrirati sve jedinice mjere koje su neophodne za upravljanje *kontrolingom*. Tipično će to biti radni sati ljudi i radni sati strojeva, kako bi se podaci mogli preuzeti iz proizvodnje, ali i druge jedinice koje su potrebne za ručne unose u ***Zapisu fizičkih kretanja*** (kWh, m², broj radnih mjesta, broj telefonskih priključaka itd.).
+U tabeli ***Merne jedinice*** potrebno je definisati sve merne jedinice koje su neophodne za upravljanje *kontrolingom*. To su najčešće radni sati zaposlenih i radni sati mašina, kako bi podaci mogli da se preuzimaju iz proizvodnje, ali i druge jedinice potrebne za ručne unose u ***Evidenciju fizičkih kretanja*** (kWh, m², broj radnih mesta, broj telefonskih priključaka i slično).
 
-Za svaku od ovih jedinica mjere posebno je važno definirati svojstvo **Vrsta procjene vremena**, koje može imati dvije opcije:
+Za svaku od ovih mernih jedinica posebno je važno definisati svojstvo **Tip procene vremena**, koje može imati dve vrednosti:
 
-- ***Stanje***: kada su evidentirane količine u osnovi fiksne i ponavljaju se u svakom razdoblju.
-- ***Tijek***: kada su specifične za pojedino razdoblje.
+- ***Stanje***: kada su evidentirane količine u osnovi fiksne i ponavljaju se u svakom periodu.
+- ***Tok***: kada su specifične za određeni period.
 
 :::tip Napomena
-Ova postavka je ključna za način na koji će ***FluentisERP*** zahtijevati unos količina u ***Zapisu fizičkih kretanja***: Ako se unosi ***jedinica mjere tipa Stanje***, nije potrebno obavezno unositi razdoblje distribucije, jer će se unesena količina replicirati za svaki period unutar zadanog raspona. Ako se unosi ***jedinica mjere tipa Tijek***, obavezno je definirati razdoblje distribucije kako bi se količina rasporedila na sve periode unutar unesenog raspona.
+Ova postavka je ključna za način na koji će ***FluentisERP*** zahtevati unos količina u ***Evidenciji fizičkih kretanja***. Ako se unosi ***merna jedinica tipa Stanje***, nije obavezno unositi period raspodele, jer će se uneta količina automatski preneti na svaki period unutar zadatog raspona. Ako se unosi ***merna jedinica tipa Tok***, obavezno je definisati period raspodele kako bi se količina rasporedila na sve periode unutar unetog raspona.
 :::
 
-Kod preuzimanja podataka o vremenu iz proizvodnje, treba uzeti u obzir da se *deklaracije proizvodnje* uvijek evidentiraju u *minutama*. Stoga je potrebno konfigurirati način na koji će ***FluentisERP*** izvršiti konverziju u jedinice mjere koje se koriste za evidentiranje vremena u kontrolingu. 
+Prilikom preuzimanja podataka o vremenu iz proizvodnje, treba imati u vidu da se *proizvodne prijave* uvek evidentiraju u *minutima*. Zbog toga je potrebno definisati način na koji će ***FluentisERP*** izvršiti konverziju u merne jedinice koje se koriste za evidentiranje vremena u kontrolingu.
 
-Prvi korak je definiranje konverzije između minuta iz proizvodnje i jedinice mjere vremena koja će se koristiti u *kontrolingu*. Ako, primjerice, postoji jedinica mjere "radni sat čovjeka", tada će se u tabeli  ***Jedinica mjere***, unutar taba/kartice **Konverzije među ostalim jedinicama mjere**, definirati sljedeće postavke
-- *Alternativna jedinica mjere*: 'Min' (jedinica koja ima označene opcije ***Jedinica vremena*** i ***Minute***).
+Prvi korak je definisanje konverzije između minuta iz proizvodnje i merne jedinice vremena koja će se koristiti u *kontrolingu*. Na primer, ako postoji merna jedinica „radni sat zaposlenog“, u tabeli ***Merne jedinice***, na kartici **Konverzije sa drugim mernim jedinicama**, potrebno je definisati sledeće:
+
+- *Alternativna merna jedinica*: „Min“ (jedinica kod koje su označene opcije ***Jedinica vremena*** i ***Minuti***)
 - *Faktor konverzije*: 60
-- *Za umnožiti*: flag/opcija označena
+- *Pomnoži*: opcija uključena
 
-Drugi korak je povezivanje ovih jedinica mjere kontrolinga s proizvodnim poslovnim centrima. To se podešava u tabeli ***Mjerne jedinice poslovnih centara za kontroling***. Ovdje se konfiguriraju sljedeći parametri:
+Drugi korak je povezivanje ovih mernih jedinica kontrolinga sa proizvodnim poslovnim centrima. Ovo se podešava u tabeli ***Merne jedinice poslovnih centara za kontroling***. U njoj se definišu sledeći parametri:
 
 - Referentno [***područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) konfiguracije
-- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) kojem se dodjeljuju podaci o vremenu iz proizvodnje
-- Jedinica mjere za evidentiranje  ***vremena ponovnog opremanja***
-- Jedinica mjere za evidentiranje ***vremena ljudske radne snage***
-- Jedinica mjere za evidentiranje ***vremena stroja***
-- Raspon datuma važenja konfiguracije ***(Od datuma – Do datuma)*** 
-- Flagovi za uključivanje ili isključivanje različitih vremenskih podataka u izračun produktivnosti centra
-
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) kojem se dodeljuju podaci o vremenu iz proizvodnje
+- Merna jedinica za evidentiranje ***vremena pripreme***
+- Merna jedinica za evidentiranje ***vremena rada zaposlenih***
+- Merna jedinica za evidentiranje ***vremena rada mašine***
+- Period važenja konfiguracije ***(Od datuma – Do datuma)***
+- Opcije za uključivanje ili isključivanje različitih vremenskih podataka u obračun produktivnosti centra

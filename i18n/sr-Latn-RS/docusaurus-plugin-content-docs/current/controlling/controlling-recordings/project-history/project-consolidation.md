@@ -1,57 +1,55 @@
 ---
-title: Konsolidacija naloga za posao
+title: Konsolidacija naloga/projekta
 sidebar_position: 5
 ---
 
-Prilikom svake obrade ***konsolidiranog projekta*** putem ***Obrade perioda***, ovdje će se prikazati odgovarajući zapisi koji sadrže detalje svih troškova i prihoda dodijeljenih projektima, bilo da su izravni ili neizravni putem preraspodjele nositelja troškova primijenjenih na podatke direkcijske dimenzije.
+Prilikom svake obrade ***konsolidovanog projekta*** kroz proceduru ***Obrada perioda***, ovde će biti prikazana odgovarajuća knjiženja koja sadrže detalje svih troškova i prihoda dodeljenih projektima, bilo direktno ili indirektno putem preraspodele nosilaca troškova primenjenih na podatke upravljačke dimenzije.
 
 Prikazana polja:
 
 - ***Podkonto***
 - [***Područje***](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas)
-- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): u ovom slučaju centar projekta/naloga, tj. centar koji ima flag *Zadano za dimenziju projekata* ili centar dodijeljen projektu putem ***tablice pridruživanja centara projektima/nalozima***
-- [***Centar prijenosa***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), (prikazuje se samo za stavke povezane s nositeljima troškova)
+- [***Centar troška***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): u ovom slučaju centar projekta/naloga, odnosno centar koji ima uključenu opciju *Podrazumevano za dimenziju projekata* ili centar dodeljen projektu putem ***tabele povezivanja centara sa projektima/nalozima***
+- [***Centar prenosa***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), prikazuje se samo za stavke povezane sa nosiocima troškova
 - ***Godina***
-- ***Razdoblje***
+- ***Period***
 - ***Duguje***
 - ***Potražuje***
-- ***Fiksna vrijednost***, (zbrojena s varijabilnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
-- ***Varijabilna vrijednost***, (zbrojena s fiksnom vrijednošću daje prethodnu vrijednost duguje ili potražuje)
-- ***Odjel***
-- ***Valuta***, (uvijek jednaka valuti poduzeća)
-- ***Vrsta retka***, može biti:
-    - *0* Izvorni redovi (nastali iz zatvaranja ili ručnih unosa zatvaranja, ali i iz redova nositelja troškova raspodjele)
-    - *2* Primljeni redovi (za nositelje troškova raspodjele, to su redovi kojiprenose vrijednost iz centra nositelja u centar troška)
+- ***Fiksna vrednost*** (zbir fiksne i varijabilne vrednosti daje ukupnu vrednost duguje ili potražuje)
+- ***Varijabilna vrednost*** (zbir sa fiksnom vrednošću daje ukupnu vrednost duguje ili potražuje)
+- ***Odeljenje***
+- ***Valuta*** (uvek jednaka valuti preduzeća)
+- ***Vrsta reda***, koja može biti:
+  - *0* – Izvorni redovi (nastali iz zatvaranja ili ručnih unosa zatvaranja, kao i iz redova nosilaca troškova raspodele)
+  - *2* – Primljeni redovi (za nosioce troškova raspodele, redovi koji prenose vrednost iz centra nosioca troškova u centar troška)
 
 :::tip NAPOMENA
-Redovi *raspodjele* su u osnovi redovi raspodjele *nositelja troškova*, koji iz prijelaznih konta preraspodjeljuju vrijednosti na stvarne *centre troška*. Nositelji troškova *raspodjele* uključuju sve ostale metode prijenosa vrijednosti.
-
-:::
-- ***Vrsta distribucije*** primijenjenog nositelja troškova
-- [***Nositelj troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) koji je primijenjen
-- ***Izvor***, podataka može biti:
-    - *Računovodstveni podaci* (1), izravno iz *privremenog zatvaranja*
-    - *Ručno uneseni podaci* (2),  *izvanbilančna knjiženja* područja
-    - *Formula* (3), knjiženja stvorena pomoću *računalnih formula*
-    - *Amortizacija* (4), knjiženja stvorena putem obračuna amortizacije kontrolinga
-    - *Korigiranja* (5), zapisi iz privremenih ili godišnjih korekcija
-    - *Nositelji troškova tarifa* (6), primjena nositelja troškova tarifa 
-    - *Zalihe* (7), zapisi zaliha u kontrolingu
-    - *Materijali proizvodnje* (8), troškovi materijala u proizvodnji
-    - *Vanjske usluge* (9), troškovi vanjskih radova
-    - *Proizvodne transformacije* (10), – interni proizvodni procesi
-    - *Vrijeme stroja* (11)
-    - *Vrijeme čovjeka* (12)
-    - *Priprema stroja* (13)
-    - *Priprema čovjeka* (14)
-    - *Konsolidacija kontrolinga* (15), postupak konsolidacije master kontrolinga u *multicompany* postavkama
-
+Redovi *raspodele* predstavljaju redove nosilaca troškova koji sa prelaznih konta preraspodeljuju vrednosti na stvarne *centre troškova*. Nosioci troškova raspodele obuhvataju sve ostale metode prenosa vrednosti.
 :::
 
-- ***Vrsta troška*** *(za retke podrijetlom iz materijala)*
+- ***Vrsta distribucije*** primenjenog nosioca troškova
+- [***Nosilac troškova***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) koji je primenjen
+- ***Izvor*** podataka, koji može biti:
+  - *Računovodstveni podaci* (1), direktno iz *privremenog zatvaranja*
+  - *Ručno uneti podaci* (2), iz *vanbilansnih knjiženja* područja
+  - *Formula* (3), knjiženja kreirana pomoću *formula*
+  - *Amortizacija* (4), knjiženja nastala obračunom amortizacije u kontrolingu
+  - *Korekcije* (5), zapisi iz privremenih ili godišnjih korekcija
+  - *Nosioci troškova tarifa* (6), primena tarifnih nosilaca troškova
+  - *Zalihe* (7), zapisi zaliha u kontrolingu
+  - *Materijali proizvodnje* (8), troškovi materijala u proizvodnji
+  - *Spoljne usluge* (9), troškovi eksternih radova
+  - *Proizvodne transformacije* (10), interni proizvodni procesi
+  - *Vreme mašine* (11)
+  - *Vreme radnika* (12)
+  - *Priprema mašine* (13)
+  - *Priprema radnika* (14)
+  - *Konsolidacija kontrolinga* (15), procedura konsolidacije master kontrolinga u *multicompany* okruženju
 
-- ***Broj***, ***godina***, ***linija***, ***Wbs broj***: reference na projekte (nepopunjeno)
+- ***Vrsta troška*** (za redove nastale iz materijala)
 
-- [***Jedinica mjere***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), ***artikl***, ***opis artikla***, ***faza***, ***podfaza***, ***broj***, ***opis*** i ***količina***  proizvedenog ili obrađenog artikla
+- ***Broj***, ***godina***, ***linija***, ***WBS broj***: reference na projekte (mogu ostati nepopunjene)
 
-Nije dopušteno brisanje, izmjena ili unos novih podataka u prikazanoj tablici.
+- [***Jedinica mere***](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units), ***artikal***, ***opis artikla***, ***faza***, ***podfaza***, ***broj***, ***opis*** i ***količina*** proizvedenog ili obrađenog artikla
+
+Nije dozvoljeno brisanje, izmena niti unos novih podataka u prikazanu tabelu.

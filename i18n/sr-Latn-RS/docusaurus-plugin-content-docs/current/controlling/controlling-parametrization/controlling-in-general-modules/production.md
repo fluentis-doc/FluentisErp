@@ -1,10 +1,10 @@
 ---
-title: Procesi proizvodnje 
+title: Procesi proizvodnje
 sidebar_position: 40
 ---
 
-Proizvodni procesi, prilikom evidentiranja proizvodne prijave (npr. napredovanja u proizvodnji), na temelju strojeva i/ili grupa radne snage te njihovih poveznica s centrima, prenose u dokumente proizvodnje odgovarajući centar.
+Proizvodni procesi, prilikom evidentiranja proizvodne prijave (npr. napretka proizvodnje), na osnovu mašina i/ili grupa radne snage te njihovih veza sa centrima, prenose u proizvodne dokumente odgovarajući centar.
 
 :::tip NAPOMENA
-Iz dokumenata proizvodnje moguće je očitati vremena (vrijeme rada stroja, radnika te pripreme radnika i stroja) kao i proizvedene količine putem procedure  ***Dohvat podataka iz proizvodnje***.
+Iz proizvodnih dokumenata moguće je preuzeti podatke o vremenu rada (vrijeme rada mašine, radnika, kao i vrijeme pripreme radnika i mašine) te proizvedenim količinama putem procedure ***Preuzimanje podataka iz proizvodnje***.
 :::
