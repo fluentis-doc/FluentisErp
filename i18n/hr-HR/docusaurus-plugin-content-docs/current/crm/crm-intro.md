@@ -96,6 +96,6 @@ Obrasci za **pretraživanje CRM dokumenata** omogućuju:
 Fluentis CRM potpuno je integriran s:
 
 - **Prodajom**, za automatsko upravljanje ponudama i narudžbama.
-- **Marketing Automationom**, za planiranje i upravljanje marketinškim kampanjama.
+- **Marketingom**, za planiranje i upravljanje marketinškim kampanjama.
 - **Helpdeskom**, za pružanje postprodajne korisničke podrške.
 - **Poslovnom inteligencijom (Business Intelligence)**, za naprednu analitiku i izvještavanje.
