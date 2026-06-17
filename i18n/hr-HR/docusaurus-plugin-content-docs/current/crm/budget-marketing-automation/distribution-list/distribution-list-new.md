@@ -3,7 +3,7 @@ title: Nova lista distribucije
 sidebar_position: 3
 ---
 
-Postupak stvaranja nove **Lista di distribuzione** omogućuje definiranje karakteristika liste koja će se koristiti u postupku slanja [Newslettera](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), kao i definiranje **Kontakata CRM** koji će biti dio te liste. Za stvaranje nove liste potrebno je kliknuti na tipku Novo ![](/img/neutral/common/new.png) na maski pretraživanja lista distribucije.
+Postupak stvaranja nove **distribucijske liste** omogućuje definiranje karakteristika liste koja će se koristiti u postupku slanja [*Newslettera*](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), kao i definiranje **Kontakata CRM** koji će biti dio te liste. Za stvaranje nove liste potrebno je kliknuti na tipku Novo ![](/img/neutral/common/new.png) na maski pretraživanja lista distribucije.
 
 Obrazac se sastoji od dvije sekcije.
 

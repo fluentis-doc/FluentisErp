@@ -3,38 +3,37 @@ title: Novi Predložak
 sidebar_position: 2
 ---
 
-Procedura stvaranja **Novog Predloška** omogućuje definiranje značajki predloška koje će se kasnije koristiti u postupku slanja newslettera, uključujući slike, tekst, hiperlinkove i spajanje podataka. Obrazac se sastoji od dvije sekcije. 
+Procedura stvaranja **Novog Predloška** omogućuje definiranje značajki predloška koje će se kasnije koristiti u postupku slanja *newslettera*, uključujući slike, tekst, hiperlinkove i spajanje podataka. Obrazac se sastoji od dvije sekcije. 
 
 I gornji dio obrasca omogućava definiranje sljedećih pojedinosti:
 
-**Naziv**: odgovara kodu prema kojem će se identificirati Predložak;
+**Naziv**: odgovara kodu prema kojem će se identificirati predložak;
 
-**Opis**: opisuje Predložak;
+**Opis**: opisuje predložak;
 
-**Poslovni predmet**: poslovni predmet u Fluentisu za koji će se koristiti Predložak;
+**Poslovni predmet**: poslovni predmet u Fluentisu za koji će se koristiti predložak;
 
-**Vrsta izvora podataka**: označava vrstu izvora podataka na kojem se temelji template (Jednostavno, GroupBy i SQL Upit);
+**Vrsta izvora podataka**: označava vrstu izvora podataka na kojem se temelji predložak (Jednostavno, *GroupBy* i *SQL* Upit);
 
-**Izvor podataka**: predstavlja izvor podataka koji će se koristiti za popunjavanje Merge Data u Predlošku.
+**Izvor podataka**: predstavlja izvor podataka koji će se koristiti za popunjavanje *Merge Data* u Predlošku.
 
-Donji dio obrasca uključuje različite kartice s funkcijama za izradu Predloška i radnu knjigu na kojoj je moguće kreirati Predložak te ga grafički pregledati:
+Donji dio obrasca uključuje različite kartice s funkcijama za izradu predloška i radnu knjigu na kojoj je moguće kreirati predložak te ga grafički pregledati:
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/template-file.png)
 
-Ovo su tablice dostupne u obrazcu.
+Ovo su tablice dostupne u obrascu.
 
 **Datoteke**
 
-Ova kartica omogućuje osnovne operacije s Predloškom, kao što su otvaranje novog
-radnog lista, otvaranje drugog radnog lista i pregled Predloška prije ispisa.
+Ova kartica omogućuje osnovne operacije s Predloškom, kao što su otvaranje novognradnog lista, otvaranje drugog radnog lista i pregled predloška prije ispisa.
  
-**New**: otvara novi radni list;  
-**Open**: otvara drugi radni list;  
-**Save As**: omogućuje spremanje radnog lista s određenim imenom na računalo;  
-**Print**: omogućuje ispis radnog lista;  
-**Print Preview**: omogućuje pregled radnog lista prije stvarnog ispisa;  
-**Undo**: poništava posljednju promjenu na predlošku;  
-**Redo**: obnavlja posljednju poništenu promjenu na predlošku.  
+**Novo**: otvara novi radni list;  
+**Otvori**: otvara drugi radni list;  
+**Spremi kao**: omogućuje spremanje radnog lista s određenim imenom na računalo;  
+**Ispis**: omogućuje ispis radnog lista;  
+**Pregled ispisa**: omogućuje pregled radnog lista prije stvarnog ispisa;  
+**Poništi(*undo*)**: poništava posljednju promjenu na predlošku;  
+**Ponovi(*redo*)**: obnavlja posljednju poništenu promjenu na predlošku.  
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/file.png)
 
@@ -47,10 +46,10 @@ Poziva osnovne funkcije popularnih uređivača teksta poput Microsoft Word-a.
 
 **Umetni**
 
-Ova kartica sadrži tipke za umetanje određenih elemenata u Predložak, poput tablica, slika i hiperlinkova.   
-**Table**: omogućuje umetanje tablice unutar radnog lista;  
-**Inline Picture**: omogućuje umetanje slike u tijelo dokumenta;  
-**Picture**: omogućuje umetanje slike u tijelo dokumenta;  
+Ova kartica sadrži tipke za umetanje određenih elemenata u predložak, poput tablica, slika i hiperlinkova.   
+**Tablica**: omogućuje umetanje tablice unutar radnog lista;  
+**Inline slika**: omogućuje umetanje slike u tijelo dokumenta;  
+**Slika**: omogućuje umetanje slike u tijelo dokumenta;  
 **Bookmark**: omogućuje umetanje knjižne oznake unutar predloška;  
 **Hyperlink**: omogućuje umetanje veze prema web stranici ili knjižnoj oznaci unutar predloška;  
 **Header**: omogućuje umetanje zaglavlja predloška;  

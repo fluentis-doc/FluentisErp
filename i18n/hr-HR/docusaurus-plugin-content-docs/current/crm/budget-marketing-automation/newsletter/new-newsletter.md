@@ -1,37 +1,37 @@
 ---
-title: Novi Newsletter
+title: Novi *Newsletter*
 sidebar_position: 2
 ---
 
-Postupak stvaranja novog **Newsletter-a** omogućuje definiranje karakteristika Newsletter-a koji će biti poslan, od Predloška do popisa distribucije.
+Postupak stvaranja novog ***Newslettera*** omogućuje definiranje karakteristika *Newslettera* koji će biti poslan, od predloška do popisa distribucije.
 
 Obrazac je podijeljen u dva dijela.
 
 U gornjem dijelu nalaze se sljedeća polja:
 
-**Naslov**: odgovara kodu Newsletter-a;
+**Naslov**: odgovara kodu *newslettera*;
 
-**Opis**: alfanumeričko polje za detaljno opisivanje značenja Newsletter-a;
+**Opis**: alfanumeričko polje za detaljno opisivanje značenja *newslettera*;
 
 **Predložak**: služi za odabir [Predloška](/docs/crm/budget-marketing-automation/template/new-template);
 
-**Autor**: označava korisnika koji je stvorio newsletter;
+**Autor**: označava korisnika koji je stvorio *newsletter*;
 
-**Od**: u ovom polju treba navesti e-mail adresu s koje će newsletter biti poslan primateljima;
+**Od**: u ovom polju treba navesti e-mail adresu s koje će *newsletter* biti poslan primateljima;
 
-**Datum stvaranja**: odgovara datumu stvaranja newsletter-a;
+**Datum stvaranja**: odgovara datumu stvaranja *newslettera*;
 
-**Datum i vrijeme zakazivanja**: odnose se na datum i vrijeme zakazane za slanje newsletter-a (isključivo informativno polje);
+**Datum i vrijeme zakazivanja**: odnose se na datum i vrijeme zakazane za slanje *newslettera* (isključivo informativno polje);
 
 **Predmet**: odgovara onome što se obično naziva predmetom e-maila;
 
-**Zakazano**: ovaj flag označava da je slanje newsletter-a zakazano (isključivo informativno polje);
+**Zakazano**: ova opcija označava da je slanje *newslettera* zakazano (isključivo informativno polje);
 
-**Poslano**: ovaj flag označava da je Newsletter poslan.
+**Poslano**: ovaj opcija označava da je *newsletter* poslan.
 
 ![](/img/it-it/applications/crm/newsletter/new-newsletter.png)
 
-U donjem dijelu obrasca trebaju se odabrati liste distribucije koje sadrže primatelje i njihove e-mail adrese kojima će Newsletter biti poslan.
+U donjem dijelu obrasca trebaju se odabrati liste distribucije koje sadrže primatelje i njihove e-mail adrese kojima će *newsletter* biti poslan.
 
 ![](/img/it-it/applications/crm/newsletter/distribution-list.png)
 
@@ -39,15 +39,15 @@ Klikom na tipku s lijeve strane ![](/img/neutral/common/plus.png) pojedinačne l
 
 ![](/img/it-it/applications/crm/newsletter/contacts.png)
 
-Za slanje Newslettera, nakon što su navedeni parametri prikazani ranije, potrebno je pritisnuti gumb Pošalji ![](/img/neutral/common/send.png) na Ribbon traci.   
-Na taj način otvorit će se stvarna forma za slanje Newslettera, koja sadrži kartice  **Početna stranica**, **Insert** i **Merge Data**, već prisutne u odjeljku Predložak Dokumenta (za više informacija, pogledajte odjeljak [Predložak](/docs/crm/budget-marketing-automation/template/new-template)), osim kartice **E-pošta** koja sadrži sljedeće funkcije:
+Za slanje *newslettera*, nakon što su navedeni parametri prikazani ranije, potrebno je pritisnuti gumb Pošalji ![](/img/neutral/common/send.png) na Ribbon traci.   
+Na taj način otvorit će se stvarna forma za slanje *mewslettera*, koja sadrži kartice  **Početna stranica**, **Umetni** i **Spoji podatke**, već prisutne u odjeljku Predložak Dokumenta (za više informacija, pogledati odjeljak [Predložak](/docs/crm/budget-marketing-automation/template/new-template)), osim kartice **E-pošta** koja sadrži sljedeće funkcije:
 
-**Ispis** tipka za fizički ispis Newslettera;    
-**Pregled ispisa** Tipka za pregled ispisa Newslettera;    
-**Spremi** Tipka za spremanje promjena na Newsletteru;    
-**Pošalji** Tipka za slanje Newslettera;      
-**Poništi** Tipka za poništavanje posljednje izmjene na Newsletteru;    
-**Ponovno napravi** Tipka za vraćanje posljednje izmjene na Newsletteru. 
+**Ispis** tipka za fizički ispis *newslettera*;    
+**Pregled ispisa** Tipka za pregled ispisa *newslettera*;    
+**Spremi** Tipka za spremanje promjena na *newsletteru*;    
+**Pošalji** Tipka za slanje *newslettera*;      
+**Poništi** Tipka za poništavanje posljednje izmjene na *newsletteru*;    
+**Ponovno napravi** Tipka za vraćanje posljednje izmjene na *newsletteru*. 
 
 ![](/img/it-it/applications/crm/newsletter/email.png)
 
@@ -61,8 +61,8 @@ U donjem dijelu prikazana su neka polja, neka od njih preuzeta iz prethodnog obr
 
 **Cc**: služi za označavanje e-pošte koja će primiti kopiju;
 
-**Bcc**: služi za označavanje e-pošte koja će primiti skrivenu kopiju. Fluentis automatski popunjava ovo polje s e-poštnim adresama CRM kontakata tako da svaki primatelj newslettera ne vidi e-poštne adrese drugih primatelja;
+**Bcc**: služi za označavanje e-pošte koja će primiti skrivenu kopiju. Fluentis automatski popunjava ovo polje s adresama CRM kontakata tako da svaki primatelj *newslettera* ne vidi adrese drugih primatelja;
 
 **Ugrađena slika**: označavanjem ovog okvira slike u predlošku neće se dodavati kao privici stvorene pošte, već kao stvarni elementi pošte;
 
-**Privici**: prikazane su datoteke koje će biti priložene Newsletteru.
+**Privici**: prikazane su datoteke koje će biti priložene *newsletteru*.
