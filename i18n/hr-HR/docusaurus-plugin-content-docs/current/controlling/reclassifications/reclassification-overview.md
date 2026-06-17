@@ -3,13 +3,13 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul **Reporting** omogućuje operateru upravljanje reklasifikacijama bilance, kako na podacima iz glavnog knjigovodstva, tako i na podacima iz analitičkog računovodstva po troškovnim centrima. Osim izvještaja, dostupan je i napredan postupak usporedbe izrađenih reklasifikacija, i na podacima iz glavnog knjigovodstva i na onima iz upravljačkog računovodstva; u potonjem slučaju moguće je slobodno uspoređivati različita područja analize i razdoblja (mjesece ili tjedne, ovisno o početnoj konfiguraciji).
+Modul **Reporting** omogućuje korisniku upravljanje reklasifikacijama bilance, kako na podacima iz glavnog knjigovodstva, tako i na podacima iz analitičkog računovodstva po troškovnim centrima. Osim izvještaja, dostupan je i napredan postupak usporedbe izrađenih reklasifikacija, i na podacima iz glavnog knjigovodstva i na onima iz upravljačkog računovodstva; u potonjem slučaju moguće je slobodno uspoređivati različita područja analize i razdoblja (mjesece ili tjedne, ovisno o početnoj konfiguraciji).
 Modul se nalazi u području *Kontrolinga* i koristi kao izvorne podatke one obrađene u *Međuzatvaranju* ili u *Upravljačkim knjiženjima*. Ova druga opcija dostupna je samo za društva koja su aktivirala i konfigurirala *Kontroling*.
 
 ## Početna konfiguracija modula
 - [***Tipovi reklasifikacije***](/docs/configurations/tables/controlling/reporting/reclassification-types): za definiranje vrsta reklasifikacija koje će se koristiti.
 
-- [***Sheme reklasifikacije***](/docs/controlling/reclassifications/create-reclassification-model): potrebno je provjeriti potpunost unaprijed učitanih modela iz Fast start opcije u odnosu na eventualne prilagođene šifrarnike na razini Kontnog plana.
+- [***Sheme reklasifikacije***](/docs/controlling/reclassifications/create-reclassification-model): potrebno je provjeriti potpunost unaprijed učitanih modela iz *Fast start* opcije u odnosu na eventualne prilagođene šifarnike na razini kontnog plana.
 
 
 ## Upravljani dokumenti

@@ -1,5 +1,5 @@
 ---
-title: Reklasicikacija bilance video tutorijal
+title: Reklasifikacija bilance - video tutorijal
 sidebar_position: 3
 ---
 

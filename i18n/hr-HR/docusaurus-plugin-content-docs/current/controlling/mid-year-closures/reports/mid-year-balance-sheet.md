@@ -11,12 +11,11 @@ Ispis omogućuje izvršavanje sažetog ispisa osnovnih sekcija bilance na temelj
 
 **Prikaz registra**: omogućuje prikaz u bilanci detalja salda po analitikama kupaca/dobavljača.
 
-**Prikaz prodane valute**: omogućuje prikaz detalja salda u valuti za račune koji u kontnom planu imaju aktivno valutno praćenje. 
-
+**Prikaz prodane valute**: omogućuje prikaz detalja salda u valuti za račune koji u kontnom planu imaju aktivno valutno praćenje.
 
 **Usporediti**: omogućuje usporedbu dviju specifičnih među­bilanci. Aktiviranjem opcije aktivira se drugi padajući izbornik za odabir bilance koju treba usporediti s glavnom.
 
-**Prikaži podatke po centru troška**: aktiviranjem ove opcije u ispisu će se prikazati podaci iz *analitičkog* dijela bilance (uglavnom ekonomski dio), s podacima zbrojenima po centrima troška, a zatim po računu/podračunu.
+**Prikaži podatke po centru troška**: aktiviranjem ove opcije u ispisu će se prikazati podaci iz *analitičkog* dijela bilance (uglavnom ekonomski dio), s podacima zbrojenima po centrima troška, a zatim po kontu/podkontu.
 
 **UPOZORENJE**: aktiviranjem ove opcije potrebno je koristiti drugi izvještaj za ispis, dostupan u padajućem izborniku na traci s alatima, pod nazivom ***Bilanca po poslovnim centrima***.
 

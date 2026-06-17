@@ -78,7 +78,7 @@ Ako se uspoređuje model za dodjelu troškova centrima radi izračuna indeksa, a
 
 - *% BROJNIK* brojnik za izračun postotnog indeksa
 - *% NAZIVNIK* nazivnik za izračun postotnog indeksa
-- *% POSTOTAK* vvrijednost postotnog indeksa
+- *% POSTOTAK* vrijednost postotnog indeksa
 
 :::tip NAPOMENA
 Prilikom obrade usporedbe u kontrolingu, ***FluentisERP*** će automatski stvoriti onoliko reklasifikacija na modelu koliko ima kombinacija centra, godine, mjeseca i detalja koje je potrebno obraditi prije prikaza rezultata. Što je lista složenija, to će obrada trajati duže.

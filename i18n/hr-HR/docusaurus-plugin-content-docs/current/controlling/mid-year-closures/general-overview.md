@@ -7,7 +7,7 @@ Modul **Privremenog zatvaranja** omogućuje upravljanje izvanbilančnim simulaci
 Modul se nalazi u području *Kontrolinga* i koristi kao izvorne podatke iz glavne knjige.
 
 ## Prethodna konfiguracija modula
-- [***Numeriranje Ekstrabilančanih zapisa***](/docs/configurations/tables/controlling/managerial-accounting/managerial-accounting-numeration): za definiranje načina numeriranja izvanknjižnih zapisa povezanih s operacijama kontrolinga.
+- [***Numeriranje izvanbilančanih zapisa***](/docs/configurations/tables/controlling/managerial-accounting/managerial-accounting-numeration): za definiranje načina numeriranja izvanknjižnih zapisa povezanih s operacijama kontrolinga.
 
 - Ne postoje specifične konfiguracijske tablice osim onih potrebnih za vrednovanje različitih područja izvora podataka kojima upravljaju procedure samog modula.
 
@@ -18,10 +18,10 @@ import Link from '@docusaurus/Link';
     <div className="card">
 ###     <Link to="/docs/controlling/mid-year-closures/create-mid-year-closures-intro">Izradi međugodišnje zatvaranje računa</Link>
         <p>- kako bi se u kontroling prenijeli salda glavne i analitičke knjige za razdoblje od interesa</p>
-###     <Link to="/docs/controlling/mid-year-closures/procedures/adjusting-entry" className="bold-link">Zapisi uskladenja</Link>
+###     <Link to="/docs/controlling/mid-year-closures/procedures/adjusting-entry" className="bold-link">Zapisi usklađenja</Link>
         <p>- za upravljanje razgraničenjima</p>
 ###     <Link to="/docs/controlling/mid-year-closures/procedures/integration-records" className="bold-link">Zapisi integracije</Link>
-        <p>- za upravljanje obračunatim stavkama</p>
+        <p>- za upravljanje obračunanim stavkama</p>
 ###     <Link to="/docs/controlling/mid-year-closures/procedures/purchase-and-sales-area-valorization" className="bold-link">Valorizacija prodaje i nabave</Link>
         <p>- upravljanje onima za primiti/izdati iz dokumenata u prijenosu u okviru aktivnog/pasivnog ciklusa</p>
 ###     <Link to="/docs/controlling/mid-year-closures/procedures/warehouse-oddments" className="bold-link">Zaliha Računovodstva</Link>
@@ -29,8 +29,8 @@ import Link from '@docusaurus/Link';
 ###     <Link to="/docs/controlling/mid-year-closures/procedures/fixed-assets-depreciation-retrieve" className="bold-link">Povrat amortizacije osnovnog sredstva</Link>
         <p>- za dodavanje amortizacije razdoblja</p>
 ###     <Link to="/docs/controlling/mid-year-closures/procedures/consolidation" className="bold-link">Konsolidacija</Link>
-        <p>- za višekompanijske instalacije</p>
-###     <Link to="/docs/controlling/mid-year-closures/search-off-balance-sheet-records" className="bold-link">Izvanknjižni zapisi za zatvaranje</Link>
+        <p>- za *intercompany* instalacije</p>
+###     <Link to="/docs/controlling/mid-year-closures/search-off-balance-sheet-records" className="bold-link">Izvanknjigovodstveni zapisi za zatvaranje</Link>
         <p>- za ručna knjiženja</p>
     </div>
 </div>
