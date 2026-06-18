@@ -1,30 +1,39 @@
 ---
-title: Invoicing Progress KanBan Board
+title: Kanban tabla napretka fakturisanja
 sidebar_position: 6
 ---
 
-Ova procedura ima cilj vizualizirati (korištenjem metodologije Kan Ban) Prilike, Narudžbe i Fakture za određene periode. Procedura se sastoji od dvije kartice: **Filter** i **Rezultati**.
+Ova procedura ima za cilj da vizualizuje (korišćenjem Kanban metodologije) Prilike, Narudžbine i Fakture za određene periode. Procedura se sastoji od dve kartice: **Filter** i **Rezultati**.
 
-### Filter   
+### Filter
 
-Na ovoj kartici potrebno je unijeti filtre koje ćemo koristiti za prikaz rezultata na sljedećoj kartici.      
-U prvom dijelu nalaze se sljedeće oznake: *Sažmi račune*, *Sažmi narudžbe*, *Sažmi prilike*; postavljanjem ovih oznaka želimo prikazati ukupne neto iznose narudžbi, prilika i računa; bez ovih oznaka, različiti dokumenti bit će prikazani odvojeno, svaki s vlastitim vrijednostima.         
-Filter **Tvrtka** je obavezan i sadrži tvrtku na koju se odnosi.     
-Filter **Mjesečni interval** služi za označavanje tromjesečnog razdoblja koje treba uzeti u obzir.       
-Filter **Agent** omogućuje prikaz dokumenata koji imaju istog povezanog agenta;       
-Filter **Valuta** popunjava se automatski.           
-Zatim postoje filteri *Prilika*, *Faktura* i *Narudžba klijenta*: ove oznake postavljaju koje dokumente prikazati među rezultatima.        
-Na kraju postoje odjeljci u koje možete unijeti filtre za Prilike, Fakture i Narudžbe. U sva tri slučaja, predloženi datumi ovise o prethodno unesenom mjesečnom intervalu.     
+Na ovoj kartici potrebno je uneti filtere koji će se koristiti za prikaz rezultata na sledećoj kartici.
 
-### Rezultati  
+U prvom delu nalaze se sledeće oznake: *Sažmi račune*, *Sažmi narudžbine*, *Sažmi prilike*; postavljanjem ovih oznaka želi se prikazati ukupan neto iznos narudžbina, prilika i računa; bez ovih oznaka, različiti dokumenti biće prikazani odvojeno, svaki sa svojim vrednostima.
 
-Na ovoj kartici nalazi se  **Kan Ban Board**, gdje su prikazani dokumenti podijeljeni prema različitim mjesecima unesenim u filtre.   
-Svaka kolona Kan Ban Boarda sastoji se od sljedećih elemenata:      
-**Gornji pojas** na kojem su prikazani, redom, sljedeći podaci;  
-- Referentni mjesec;
-- Count: odgovara broju prilika/faktura/narudžbi koje su smještene u toj koloni;  
-- Total Net Amount: odgovara ukupnoj vrijednosti prilika/faktura/narudžbi prisutnih u toj koloni, umanjeno za primijenjene popuste.       
-  
-**Donji pojas** na kojem su prikazane različite pojedinosti o pojedinačnim dokumentima.
+Filter **Kompanija** je obavezan i sadrži kompaniju na koju se odnosi.
+
+Filter **Mesečni interval** služi za označavanje tromesečnog perioda koji treba uzeti u obzir.
+
+Filter **Agent** omogućava prikaz dokumenata koji imaju istog povezanog agenta.
+
+Filter **Valuta** popunjava se automatski.
+
+Zatim postoje filteri *Prilika*, *Faktura* i *Narudžbina kupca*: ove oznake određuju koje dokumente treba prikazati među rezultatima.
+
+Na kraju postoje odeljci u koje je moguće uneti filtere za Prilike, Fakture i Narudžbine. U sva tri slučaja, predloženi datumi zavise od prethodno unetog mesečnog intervala.
+
+### Rezultati
+
+Na ovoj kartici nalazi se **Kanban tabla**, gde su dokumenti prikazani podeljeni prema različitim mesecima unetim u filtere.
+
+Svaka kolona Kanban table sastoji se od sledećih elemenata:
+
+**Gornja traka** na kojoj su prikazani, redom, sledeći podaci:
+- Referentni mesec;
+- Count: odgovara broju prilika/faktura/narudžbina koje su smeštene u toj koloni;
+- Total Net Amount: odgovara ukupnoj vrednosti prilika/faktura/narudžbina prisutnih u toj koloni, umanjenoj za primenjene popuste.
+
+**Donja traka** na kojoj su prikazani različiti detalji o pojedinačnim dokumentima.
 
 Dvostrukim klikom moguće je otvoriti povezani dokument.

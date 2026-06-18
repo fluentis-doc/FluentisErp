@@ -1,18 +1,19 @@
 ---
-title: CRM mapa prilika 
+title: CRM mapa prilika
 sidebar_position: 3
 ---
 
-Ova značajka omogućuje grafički prikaz geografske raspodjele postojećih **Prilika** na temelju geografskih informacija navedenih u kontaktima CRM-a koji su povezani s prilikama.
+Ova funkcionalnost omogućava grafički prikaz geografske raspodele postojećih **Prilika** na osnovu geografskih informacija navedenih u CRM kontaktima koji su povezani sa prilikama.
 
-Pomoću filtara moguće je prikazati: samo jednu vrstu prilike (**Vrsta Prilike**), više prilika koje je unio isti korisnik (**Operater**), više prilika s istim postotkom uspjeh (**Vjerojatnost uspjeha**).
+Pomoću filtera moguće je prikazati: samo jednu vrstu prilike (**Vrsta prilike**), više prilika koje je uneo isti korisnik (**Operater**), više prilika sa istim procentom uspeha (**Verovatnoća uspeha**).
 
-Područje filtra namijenjeno je sadržavanju popisa mogućih vrsta podataka pomoću kojih je moguće napraviti odabir. Filtri su obično u uvjetu 'I' i mogu se odrediti više kriterija filtra istovremeno.
+Područje filtera namenjeno je prikazu liste mogućih vrsta podataka pomoću kojih je moguće izvršiti izbor. Filteri su obično u uslovu „I“ (AND) i moguće je istovremeno zadati više kriterijuma filtriranja.
 
-U području ispod filtra nalazi se mapa na kojoj su prikazane prilike označene pokazivačem unutar kojeg je moguće vidjeti broj prilika koje su povezane s istim kontaktom.  
-Klikom na pokazivač prikazuju se sljedeće informacije u skočnom prozoru:
+U delu ispod filtera nalazi se mapa na kojoj su prikazane prilike označene pokazivačem, unutar kojeg je moguće videti broj prilika koje su povezane sa istim kontaktom.
 
--	Poslovno ime kontakta vlasnika prilike;
--	Kvaliteta kontakta;
--	Vrijednost prilike;
--	Adresa kontakta.
+Klikom na pokazivač prikazuju se sledeće informacije u iskačućem prozoru:
+
+- Poslovni naziv kontakta vlasnika prilike;
+- Kvalitet kontakta;
+- Vrednost prilike;
+- Adresa kontakta.

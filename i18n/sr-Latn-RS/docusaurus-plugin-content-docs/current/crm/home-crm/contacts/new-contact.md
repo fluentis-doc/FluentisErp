@@ -3,368 +3,379 @@ title: Novi kontakt
 sidebar_position: 2
 ---
 
-Zaslon za CRM Kontakt sastoji se od tri dijela:        
-- prvi gornji dio prikazuje eventualne radne tokove povezane s CRM kontaktom; radni tokovi obično slijede korisničko putovanje koje pretvara potencijalnog kupca u klijenta, ali svaki korisnik može stvoriti vlastiti radni tok prema potrebama CRM poslovanja; za dodatne informacije pogledajte odgovarajući vodič o Workflowima([ovdje](/docs/crm/home-crm/contacts/workflow-example) je primjer).               
-- središnji dio sadrži zaglavlje kontakta s općim i anketnim informacijama, neke obavezne, a neke neobavezne;   
-- ispod se nalazi nekoliko kartica koje prikazuju različite radnje provedene na klijentu, a koje će biti obrađene u nastavku ovog vodiča. Prikazane kartice ovisit će o onima odabranima za svaki [Tipo contatto](/docs/configurations/tables/crm/contacts/contact-type) u odgovarajućoj tablici.  
+Ekran CRM kontakta sastoji se od tri dela:
+- prvi gornji deo prikazuje eventualne workflow procese povezane sa CRM kontaktom; workflow procesi obično prate korisničko putovanje koje pretvara potencijalnog kupca u klijenta, ali svaki korisnik može kreirati sopstveni workflow prema potrebama CRM poslovanja; za dodatne informacije pogledajte odgovarajući vodič o workflow procesima ([ovde](/docs/crm/home-crm/contacts/workflow-example) je primer).
+- srednji deo sadrži zaglavlje kontakta sa opštim i anketnim informacijama, od kojih su neka polja obavezna, a neka opciona;
+- ispod se nalazi nekoliko kartica koje prikazuju različite aktivnosti sprovedene nad klijentom, a koje će biti obrađene u nastavku ovog vodiča. Prikazane kartice zavise od onih koje su odabrane za svaki [tip kontakta](/docs/configurations/tables/crm/contacts/contact-type) u odgovarajućoj tabeli.
 
 ### Podaci zaglavlja
 
 #### Obavezna polja
 
-**Vrsta kontakta**: prethodno definiran u tablici [Vrsta kontakta](/docs/configurations/tables/crm/contacts/contact-type); koristi se za razlikovanje različitih CRM kontakata (Kontakt, Potencijalni kupac, Lead itd.); **Vrsta kontakta** također sadrži kartice koje će se prikazivati u kartici kontakta.          
+**Tip kontakta**: prethodno definisan u tabeli [Tip kontakta](/docs/configurations/tables/crm/contacts/contact-type); koristi se za razlikovanje različitih CRM kontakata (Kontakt, Potencijalni kupac, Lead itd.); **Tip kontakta** takođe sadrži kartice koje će biti prikazane na kartici kontakta.
 
-**Ime kontakta**: koristi se za navođenje naziva tvrtke ili, općenito, imena kontakta;     
+**Naziv kontakta**: koristi se za navođenje naziva kompanije ili, uopšteno, imena kontakta.
 
-#### Neobavezna polja 
+#### Opciona polja
 
-**PDV broj**: polje sastavljeno od ISO koda zemlje (definirano u tablici **Države**)  i odgovarajućeg PDV ID-a. Polje je podložno testiranju ispravnosti kontrolnog broja za talijanske porezne brojeve; nakon unosa ovog polja, koristeći tipku na traci izbornika *Predloži podatke*, moguće je automatski popuniti podatke kartona.   
+**PIB**: polje sastavljeno od ISO koda države (definisanog u tabeli **Države**) i odgovarajućeg poreskog identifikacionog broja. Polje podleže proveri ispravnosti kontrolnog broja za italijanske poreske brojeve; nakon unosa ovog polja, korišćenjem dugmeta na traci menija *Predloži podatke*, moguće je automatski popuniti podatke kartice.
 
-**PDV**: kod PDV koji se koristi u slučaju izdavanja dokumenata na ime kontakta.
+**PDV**: PDV šifra koja se koristi u slučaju izdavanja dokumenata na ime kontakta.
 
 **Valuta**: valuta koja se koristi u slučaju izdavanja dokumenata na ime kontakta.
 
-**Šifra ureda**: IPA kod javnog ureda primatelja računa ili (ako je aktivirana opcija Elektroničko fakturiranje) SDI kod primatelja računa. Ovi podaci bit će uneseni u karticu klijenta ako se kontakt konvertira.
+**Šifra kancelarije**: IPA kod javne ustanove primaoca računa ili (ako je aktivirana opcija Elektronsko fakturisanje) SDI kod primaoca računa. Ovi podaci će biti preneti u karticu klijenta ukoliko se kontakt konvertuje.
 
-**Ovjerena pošta**: Prostor rezerviran za PEC adresu u slučaju da je aktiviran način rada PEC primatelja u polju Tip koda za izdavanje elektroničkih računa. Ovaj podatak bit će unesen u karticu klijenta ako se kontakt konvertira.
+**Overena elektronska pošta (PEC)**: prostor rezervisan za PEC adresu ukoliko je aktiviran režim PEC primaoca u polju Tip koda za izdavanje elektronskih računa. Ovaj podatak će biti prenet u karticu klijenta ukoliko se kontakt konvertuje.
 
-**Pojedinosti o adresi**: u ovom odjeljku unose se različiti dijelovi koji čine adresu.   
+**Podaci o adresi**: u ovom odeljku unose se različiti elementi koji čine adresu.
 
-**Glavni agent**: služi kao informativni naslov, ali i za potrebe pristupa Fluentisu od strane agenata: oni će moći pregledavati samo kontakte za koje imaju dopuštenje.
+**Glavni agent**: služi kao informativni podatak, ali i za potrebe pristupa Fluentisu od strane agenata: oni će moći da pregledaju samo kontakte za koje imaju ovlašćenje.
 
-**Zemljopisna širina/duljina**: omogućuje se upravljanje lokacijom kontakata pomoću zemljopisne širine i duljine umjesto adrese; ti se podaci koriste za lociranje unutar karte dostupne u [Pretraživanju CRM kontakata](/docs/crm/home-crm/contacts/search-contacts), u slučaju da adresa nije unesena.   
+**Geografska širina/dužina**: omogućava upravljanje lokacijom kontakata pomoću geografske širine i dužine umesto adrese; ovi podaci koriste se za pozicioniranje na mapi dostupnoj u [Pretrazi CRM kontakata](/docs/crm/home-crm/contacts/search-contacts), u slučaju da adresa nije uneta.
 
-**Pipeline kontakt**: Ako je kontaktu dodijeljen workflow i njegovo stanje odgovara jednom od stanja definiranih u "Pipeline kontakta" za određeni tip kontakta, tada će se polje "Pipeline kontakta" u kartici kontakta automatski ažurirati.
-Dakle, pri svakoj promjeni stanja workflowa, ako postoji podudaranje, polje "Pipeline kontakta" bit će automatski osvježeno. Na taj način workflow i polje Pipeline u kontaktnoj kartici uvijek će biti usklađeni. 
+***Pipeline* kontakta**: ako je kontaktu dodeljen workflow i njegovo stanje odgovara jednom od stanja definisanih u „Pipeline kontakta“ za određeni tip kontakta, tada će polje „Pipeline kontakta“ na kartici kontakta biti automatski ažurirano.  
+Dakle, pri svakoj promeni stanja workflow-a, ukoliko postoji podudaranje, polje „Pipeline kontakta“ biće automatski osveženo. Na taj način workflow i polje Pipeline na kartici kontakta uvek će biti usklađeni.
 
-**Podrijetlo kontakta**: è possibile indicare come è stato reperito il contatto e quindi la sua [Origine](/docs/configurations/tables/crm/contacts/contact-origin).    
+**Poreklo kontakta**: moguće je navesti na koji način je kontakt ostvaren i njegov [Izvor](/docs/configurations/tables/crm/contacts/contact-origin).
 
-**Kvaliteta kontakta**: dodjeljuje zvjezdice različitim kontaktima: [kvaliteta](/docs/configurations/tables/crm/contacts/contact-quality) e izražava rastućim redoslijedom, od jedne do pet zvjezdica.
-Ova se značajka koristi za razne analize i za definiranje kvalitete kontakta na temelju klasifikacije koju je odredio korisnik.      
+**Kvalitet kontakta**: dodeljuje zvezdice različitim kontaktima; [kvalitet](/docs/configurations/tables/crm/contacts/contact-quality) izražava se rastućim redosledom, od jedne do pet zvezdica. Ova funkcionalnost koristi se za različite analize i za definisanje kvaliteta kontakta na osnovu klasifikacije koju odredi korisnik.
 
-**Telefon/Email**: sadrži glavni telefonski broj i email adresu kontakta, navedene u istoimenim sljedećim poljima: Telefon, Mobilni telefon, Faks, Email, Sekundarni email, Web stranica.
+**Telefon/Email**: sadrži glavni broj telefona i email adresu kontakta, navedene u istoimenim poljima: Telefon, Mobilni telefon, Faks, Email, Sekundarni email, Web sajt.
 
-**Jezik**: jezik koji koristi kontakt. 
+**Jezik**: jezik koji koristi kontakt.
 
-**Vrsta prava poduzeća**: pravni oblik društva, odabire se s ovog popisa.
+**Vrsta pravnog lica**: pravni oblik kompanije, bira se sa ove liste.
 
-**Statistički podaci**: tri polja koja čine ovu sekciju automatski će se popuniti na temelju vrijednosti unesenih u sljedeća polja: **Godina statistike**, **Statistika prometa** i **Statistički broj zaposlenih**; promjena bilo kojeg od tih polja utjecat će na pripadajuće prikazano polje i obrnuto. Ova kombinirana lista obično sadrži podatke o prometu i broju zaposlenih za posljednju dostupnu godinu – informacije koje su vrlo važne prilikom izrade komercijalne ponude.
+**Statistički podaci**: tri polja koja čine ovu sekciju automatski će se popunjavati na osnovu vrednosti unetih u sledeća polja: **Godina statistike**, **Statistika prometa** i **Statistički broj zaposlenih**; promena bilo kog od ovih polja uticaće na odgovarajuće prikazano polje i obrnuto. Ova kombinovana lista obično sadrži podatke o prometu i broju zaposlenih za poslednju dostupnu godinu – informacije koje su veoma važne prilikom izrade komercijalne ponude.
 
-**Email područja**: potrebno je označiti je li za ovu šifru moguće slati Ponude i/ili Newslettere. Ova je oznaka važna jer, ako nije aktivirana, slanje tih vrsta dokumenata neće biti moguće.
+**Email oblasti**: potrebno je označiti da li je za ovu šifru moguće slati Ponude i/ili *Newslettere*. Ova oznaka je važna jer, ukoliko nije aktivirana, slanje tih vrsta dokumenata neće biti moguće.
 
-**Više informacija**: sadrži ostale informacije i OIB, unesene u istoimena sljedeća polja.
+**Više informacija**: sadrži ostale informacije i PIB, unete u istoimena sledeća polja.
 
-**Osoba**: služi za definiranje je li kontakt fizička ili pravna osoba.   
+**Osoba**: služi za definisanje da li je kontakt fizičko ili pravno lice.
 
-**Pravni status**: polje za slobodan unos u koje se može upisati pravni status kontakta. 
+**Pravni status**: polje za slobodan unos u koje se može upisati pravni status kontakta.
 
-**Temeljni kapital**: polje za slobodan unos u koje se može upisati temeljni kapital tvrtke povezane s kontaktom.  
+**Osnovni kapital**: polje za slobodan unos u koje se može upisati osnovni kapital kompanije povezane sa kontaktom.
 
-**Paritet**: polje u koje se upisuje paritet isporuke (npr. „Franko tvornica“), koji će se predložiti na dokumentima vezanim uz kontakt.
+**Paritet**: polje u koje se unosi paritet isporuke (npr. „Franko fabrika“), koji će biti predložen na dokumentima povezanim sa kontaktom.
 
-**Napomena paritet**: polje za eventualne napomene vezane uz paritet isporuke, koje će se također predložiti na povezanim dokumentima.
+**Napomena o paritetu**: polje za eventualne napomene vezane za paritet isporuke, koje će takođe biti predložene na povezanim dokumentima.
 
-**Šifarnik**: u ovo polje Fluentis automatski upisuje nadimak i puni naziv klijenta povezanog s kontaktom, u trenutku kada se kontakt konvertira u klijenta. Također, povezivanje je moguće unijeti i ručno.     
+**Šifarnik**: u ovo polje Fluentis automatski upisuje nadimak i puni naziv klijenta povezanog sa kontaktom, u trenutku kada se kontakt konvertuje u klijenta. Takođe, povezivanje je moguće uneti i ručno.
 
-**Administrativna kategorija**: služi za označavanje administrativne kategorije kontakta, što može biti korisno u statističke svrhe.      
+**Administrativna kategorija**: služi za označavanje administrativne kategorije kontakta, što može biti korisno u statističke svrhe.
 
-**Komercijalna kategorija**: kao i administrativna, može se koristiti za potrebe statistike.  
+**Komercijalna kategorija**: kao i administrativna, može se koristiti za potrebe statistike.
 
-**Sektor uporabe**: ovo je polje unutar CRM-a koje služi za označavanje [sektora](/docs/configurations/tables/crm/contacts/sector-use) u kojem kontakt posluje.     
+**Sektor upotrebe**: ovo je polje unutar CRM-a koje služi za označavanje [sektora](/docs/configurations/tables/crm/contacts/sector-use) u kojem kontakt posluje.
 
-**Nadređeni kontakt**: moguće je označiti kontakt povezan s onim koji je u prikazu, na primjer, u slučaju kada kontakt pripada holding kompaniji čija matična tvrtka već spada među naše kontakte. Ili u trenutku kada kontakt promijeni naziv tvrtke, moguće je pratiti to povezivanjem s novim kontaktom. 
+**Nadređeni kontakt**: moguće je označiti kontakt povezan sa onim koji je prikazan, na primer, u slučaju kada kontakt pripada holding kompaniji čija matična kompanija već spada među naše kontakte. Ili u trenutku kada kontakt promeni naziv kompanije, moguće je pratiti tu promenu povezivanjem sa novim kontaktom.
 
-**Marca**: služi za označavanje eventualnog brenda koji tvrtka prodaje.        
+**Brend**: služi za označavanje eventualnog *brenda* koji kompanija prodaje.
 
-**Popust**: vrsta popusta koja se primjenjuje na dokumente izdane na ime kontakta.  
+**Popust**: vrsta popusta koja se primenjuje na dokumente izdate na ime kontakta.
 
-**Postotak**: postotak popusta koji se primjenjuje u odnosu na odabranu vrstu popusta.
+**Procenat**: procenat popusta koji se primenjuje u odnosu na odabranu vrstu popusta.
 
-**Datum zatvaranja**: moguće je specificirati datum zatvaranja kontakta, nakon kojeg kontakt više neće biti prikazan među aktivnim kontaktima.           
+**Datum zatvaranja**: moguće je navesti datum zatvaranja kontakta, nakon kojeg kontakt više neće biti prikazan među aktivnim kontaktima.
 
-**Motivo di chiusura**: moguće je navesti razlog zbog kojeg je kontakt zatvoren.
+**Razlog zatvaranja**: moguće je navesti razlog zbog kojeg je kontakt zatvoren.
 
-**Završni opis razloga**: moguće je detaljnije opisati razlog zatvaranja, nadopunjujući ono što je uneseno u polje **Razlog zatvaranja**.
+**Završni opis razloga**: moguće je detaljnije opisati razlog zatvaranja, dopunjujući ono što je uneseno u polje **Razlog zatvaranja**.
 
-Na kraju obrasca nalaze se **specifične kartice**.     
+Na kraju obrasca nalaze se **specifične kartice**.
 
-U traci izbornika nalaze se sljedeće tipke:         
-**Predloži podatke**: utilizzando questa funzionalità a partire dalla partita iva, verranno precompilati i dati anagrafici.      
-**Pretvorbe na kupca**: ovom tipkom moguće je pretvoriti CRM kontakt u [Klijenta](/docs/erp-home/registers/contacts/create-new-contact/general); podaci uneseni u kontakt bit će kopirani u novi karton klijenta; gumb je aktivan za [Tipove kontakta](/docs/configurations/tables/crm/contacts/contact-type) koji nemaju označen *Klijent*.
+U traci menija nalaze se sledeća dugmad:
 
-Unutar kontakta također se nalaze polja koja se koriste u statističke svrhe, koja nisu izravno prikazana korisniku i automatski se postavljaju:
+**Predloži podatke**: korišćenjem ove funkcionalnosti, unosom PIB-a automatski će se popuniti matični podaci.
+
+**Konverzija u klijenta**: ovim dugmetom moguće je konvertovati CRM kontakt u [Klijenta](/docs/erp-home/registers/contacts/create-new-contact/general); podaci uneti u kontakt biće kopirani u novu karticu klijenta; dugme je aktivno za [Tipove kontakta](/docs/configurations/tables/crm/contacts/contact-type) koji nemaju označenu opciju *Klijent*.
+
+Unutar kontakta takođe postoje polja koja se koriste u statističke svrhe, koja nisu direktno prikazana korisniku i automatski se postavljaju:
 
 - datum kreiranja kontakta
 - datum početka lead-a i datum završetka lead-a
-- datum početka klijenta i datum završetka klijenta  
+- datum početka klijenta i datum završetka klijenta
 
-U trenutku kada se kontakt kreira, dodjeljuje se datum kreiranja kontakta. Kada se tip kontakta promijeni u tip s aktiviranim flagom "lead", dodijelit će se datum prijelaza u tip lead. U trenutku prijelaza na drugi tip kontakta koji ima onemogućen flag "lead", dodijelit će se datum završetka lead-a.  
-Ista logika će se koristiti u slučaju prijelaza tipa kontakta u tip kontakta s aktiviranim flagom "kupac".
+U trenutku kada se kontakt kreira, dodeljuje se datum kreiranja kontakta. Kada se tip kontakta promeni u tip sa aktiviranom opcijom „lead“, dodeliće se datum prelaska u tip lead. U trenutku prelaska na drugi tip kontakta koji ima onemogućen indikator „lead“, dodeliće se datum završetka lead-a.
+
+Ista logika koristiće se i u slučaju prelaska tipa kontakta u tip kontakta sa aktiviranom opcijom „klijent“.
 
 ### 1. Workflow Log
 
-Ovo je prva kartica u obrascu  **CRM Kontakti**. Ova kartica se pojavljuje samo ako je za CRM kontakte aktiviran workflow koji uključuje prikaz kartice loga. Za tehničke pojedinosti, molimo konzultirajte dokumentaciju o radnom toku.  
-Upotreba radnog toka za upravljanje odnosom s potencijalnim klijentima omogućuje upravljanje odnosom s potencijalnim klijentima u fazama. Različite faze radnog toka mogu uključivati različite aktivnosti za privlačenje klijenta, koje će ovisiti o vrsti odnosa postignutog u određenoj fazi: na primjer, u fazi kvalifikacije bit će važno obaviti informativni poziv, dok u fazi prilike nije jer klijent već poznaje nas i razmatra kupnju.     
+Ovo je prva kartica u obrascu **CRM Kontakti**. Ova kartica se prikazuje samo ako je za CRM kontakte aktiviran workflow koji uključuje prikaz kartice dnevnika. Za tehničke detalje pogledajte dokumentaciju o workflow procesu.
 
-Prisutne su dvije kartice: Aktivnosti i Zapisnik.
+Korišćenje workflow procesa za upravljanje odnosima sa potencijalnim klijentima omogućava upravljanje tim odnosima kroz faze. Različite faze workflow procesa mogu uključivati različite aktivnosti za pridobijanje klijenta, koje će zavisiti od vrste odnosa postignutog u određenoj fazi: na primer, u fazi kvalifikacije biće važno obaviti informativni poziv, dok u fazi prilike to nije potrebno jer nas klijent već poznaje i razmatra kupovinu.
 
-#### Aktivnosti 
+Prisutne su dve kartice: **Aktivnosti** i **Dnevnik**.
 
-Raspoloživa polja u pojedinostima o aktivnostima podijeljena su u 2 okvira, **Aktivnosti** i **Aktivnosti na čekanju**. Prvi služi za pojedinosti o već obavljenim aktivnostima, dok se u drugom već mogu definirati neki podaci o aktivnosti koja će biti obavljena nakon već unesene aktivnosti.  
+#### Aktivnosti
 
-U prvom okviru prisutna su sljedeća polja:
+Dostupna polja u detaljima aktivnosti podeljena su u 2 okvira, **Aktivnosti** i **Aktivnosti na čekanju**. Prvi služi za detalje o već obavljenim aktivnostima, dok se u drugom mogu unapred definisati podaci o aktivnosti koja će biti izvršena nakon već unete aktivnosti.
 
-**Vrsta aktivnosti**: moguće je specificirati vrstu aktivnosti provedene za kontakt; vrste se definiraju u tablici Tipovi aktivnosti u Arm-u; ovisno o postavkama unesenim u radnom toku, aktivnosti se mogu mijenjati ovisno o fazi radnog toka u kojoj se nalazimo;           
+U prvom okviru nalaze se sledeća polja:
 
-**Datum**: ovo polje automatski popunjava procedura kada se unese **Vrsta aktivnosti**; 
+**Tip aktivnosti**: moguće je definisati vrstu aktivnosti koja je sprovedena za kontakt; tipovi se definišu u tabeli Tipovi aktivnosti u CRM-u; u zavisnosti od podešavanja unetih u workflow, aktivnosti se mogu menjati u skladu sa fazom workflow procesa u kojoj se nalazimo;
 
-**Operater**: sadrži Fluentis korisnika koji je upisao podatke;    
+**Datum**: ovo polje procedura automatski popunjava kada se unese **Tip aktivnosti**;
 
-**Opis aktivnosti**: moguće je specificirati detalje aktivnosti u ovom polju.     
+**Operater**: sadrži Fluentis korisnika koji je uneo podatke;
 
- drugom okviru prisutna su sljedeća polja:
+**Opis aktivnosti**: u ovom polju moguće je navesti detalje aktivnosti.
 
-**Datum aktivnosti na čekanju**: ovo polje automatski popunjava procedura kada se unese **Vrsta aktivnosti**;
+U drugom okviru nalaze se sledeća polja:
 
-**Vrsta aktivnosti**: moguće je specificirati vrstu aktivnosti na čekanju za kontakt;
+**Datum aktivnosti na čekanju**: ovo polje procedura automatski popunjava kada se unese **Tip aktivnosti**;
 
-**Opis aktivnosti**: u ovom polju moguće je detaljnije definirati aktivnost koja će biti obavljena;  
+**Tip aktivnosti**: moguće je definisati vrstu aktivnosti na čekanju za kontakt;
+
+**Opis aktivnosti**: u ovom polju moguće je detaljnije definisati aktivnost koja će biti izvršena;
 
 **Datum zatvaranja**: moguće je postaviti datum isteka aktivnosti;
 
-**Operater**: mora se definirati Fluentis korisnik koji će obaviti aktivnost;
+**Operater**: potrebno je definisati Fluentis korisnika koji će izvršiti aktivnost;
 
-**Datum početka/završetka podsjetnika**: u ovom polju može se naznačiti raspon datuma u kojem će se prikazati podsjetnik za sljedeću aktivnost;      
+**Datum početka/završetka podsetnika**: u ovom polju može se navesti vremenski period u kojem će biti prikazan podsetnik za narednu aktivnost;
 
-**Izradite zadatak**: postavljanjem oznake na ovu stavku stvorit će se nova stavka u odjeljku  **Aktivnosti** u Fluentisu za korisnika naznačenog u polju **Operater**. Ovaj automatizam će se aktivirati prilikom spremanja kontakta. 
+**Kreiraj zadatak**: postavljanjem oznake na ovu stavku kreiraće se nova stavka u odeljku **Aktivnosti** u Fluentisu za korisnika navedenog u polju **Operater**. Ova automatizacija će se aktivirati prilikom snimanja kontakta.
 
-#### Zapis 
+#### Dnevnik
 
+Na ovoj kartici prikazane su promene statusa workflow procesa, sa naznačenim:
 
-Na ovoj kartici prikazane su promjene stanja radnog toka, s naznačenim: početnim i završnim stanjem, operaterom koji je obavio operaciju i datumom.    
+- početnim statusom,
+- završnim statusom,
+- operaterom koji je izvršio operaciju,
+- datumom izvršenja.
 
-### 2. Referenca Kontakta
+### 2. Kontakt osobe
 
 Ovo je druga kartica unutar **CRM Kontakti**.
 
-Da biste dodali novi kontakt, potrebno je pritisnuti gumb na traci za radnje *Novi kontakt*, koji se pojavljuje kada se nalazite unutar ove kartice.
+Da biste dodali novu kontakt osobu, potrebno je kliknuti na dugme u traci sa akcijama *Nova kontakt osoba*, koje se prikazuje kada se nalazite unutar ove kartice.
 
-U prozoru za unos novog kontakta dostupna su sljedeća polja:
+U prozoru za unos nove kontakt osobe dostupna su sledeća polja:
 
-**Prezime**: prezime kontakta; 
+**Prezime**: prezime kontakt osobe;
 
-**Ime**: ime kontakta; 
+**Ime**: ime kontakt osobe;
 
-**Operater**: prikazuje se eventualni operater povezan u referentnom šifarniku.    
+**Operater**: prikazuje eventualnog operatera povezanog u referentnom šifarniku;
 
-**Uloga**: polje za naznačavanje uloge kontakta unutar tvrtke kontakta; 
+**Uloga**: polje za navođenje uloge kontakt osobe unutar kompanije kontakta;
 
-**Telefon**: glavni fiksni telefon kontakta; .
+**Telefon**: glavni fiksni telefon kontakt osobe;
 
-**Faks**: broj faksa kontakta; 
+**Faks**: broj faksa kontakt osobe;
 
-**Email**: poslovna email adresa kontakta;
+**Email**: poslovna email adresa kontakt osobe;
 
-### 3. Adrese Kontakta
+### 3. Adrese kontakta
 
 Ovo je treća kartica unutar **CRM Kontakti**.
 
-Na ovoj kartici moguće je dodavati i pregledavati eventualne sekundarne adrese u odnosu na glavnu adresu navedenu na kontaktu. Svaka adresa sastoji se od sljedećih polja:
+Na ovoj kartici moguće je dodavati i pregledati eventualne sekundarne adrese u odnosu na glavnu adresu navedenu na kontaktu. Svaka adresa sastoji se od sledećih polja:
 
 **Opis**: polje za slobodan unos;
 
-**Telefon**: broj telefona povezan s navedenom adresom;
+**Telefon**: broj telefona povezan sa navedenom adresom;
 
-**Fax**: broj faksa povezan s navedenom adresom;
+**Faks**: broj faksa povezan sa navedenom adresom;
 
-**Email**: email adresa povezana s navedenom adresom;
+**Email**: email adresa povezana sa navedenom adresom;
 
-**Web stranica**: web stranica povezana s navedenom adresom;
+**Web stranica**: web stranica povezana sa navedenom adresom;
 
-**Vrsta adrese**: vrsta adrese kojoj se odnosi, prema [tablici](/docs/configurations/tables/general-settings/address-types) ;
+**Tip adrese**: tip adrese na koju se odnosi, prema [tabeli](/docs/configurations/tables/general-settings/address-types);
 
 **Adresa**: stvarna adresa;
 
-**Poštanski broj**: poštanski broj povezan s navedenom adresom;
+**Poštanski broj**: poštanski broj povezan sa navedenom adresom;
 
-**Grad**: grad povezan s navedenom adresom;
+**Grad**: grad povezan sa navedenom adresom;
 
-**Županija**: županija povezana s navedenom adresom;
+**Okrug**: okrug povezan sa navedenom adresom;
 
-**Država**: država koja se odnosi na navedenu adresu;
+**Država**: država na koju se odnosi navedena adresa;
 
-**Regija**: regija koja se odnosi na navedenu adresu.
+**Region**: region na koji se odnosi navedena adresa.
 
-
-### 4. Bilješke o Kontaktu
+### 4. Beleške o kontaktu
 
 Ovo je četvrta kartica u **CRM Kontakti**.
 
-Na ovoj kartici moguće je pregledavati bilješke koje se odnose na kontakt. Unutar kartice postoje filtri pomoću kojih možete pretraživati bilješke. Za unos nove bilješke dovoljno je pritisnuti tipku ![](/img/neutral/common/new.png) na traci s opcijama.
+Na ovoj kartici moguće je pregledati beleške koje se odnose na kontakt. Unutar kartice postoje filteri pomoću kojih možete pretraživati beleške. Za unos nove beleške dovoljno je pritisnuti dugme ![](/img/neutral/common/new.png) na traci sa opcijama.
 
-U prozoru za unos nalaze se sljedeća polja:
+U prozoru za unos nalaze se sledeća polja:
 
-**Naslov**: naslov bilješke koji će olakšati pretraživanje bilješke;
+**Naslov**: naslov beleške koji će olakšati pretragu beleške;
 
-**Datum**: datum unosa bilješke;
+**Datum**: datum unosa beleške;
 
-**Napomena**: u ovom polju varchar (variable character) možete napisati detalje bilješke;
+**Napomena**: u ovom polju mogu se unositi detaljne beleške;
 
-**Tip note kontakta**: možete naznačiti [vrstu bilješke](/docs/configurations/tables/crm/contacts/contact-note-type) koju unosite.
+**Tip beleške kontakta**: može se navesti [tip beleške](/docs/configurations/tables/crm/contacts/contact-note-type) koji se unosi.
 
 ### 5. Upravljanje dokumentima
 
-U ovoj kartici moguće je konzultirati priložene dokumente. Za priložiti dokumente moguće je postupiti na dva načina:
+U ovoj kartici moguće je pregledati priložene dokumente. Za prilaganje dokumenata moguće je postupiti na dva načina:
 
-- korištenjem tipke Dokumenti na traci izbornika moguće je odabrati želite li priložiti već registrirani dokument u Fluentisu ili stvoriti novi dokument za priložiti.  
-- korištenjem desnog klika izravno u rešetki i odabirom opcije Priloži datoteku, prelazi se na izradu novog dokumenta koji će se priložiti.  
+- korišćenjem dugmeta Dokumenti na traci menija moguće je odabrati da li želite da priložite već registrovani dokument u Fluentisu ili da kreirate novi dokument za prilaganje;
+- korišćenjem desnog klika direktno u mreži i izborom opcije Priloži datoteku, prelazi se na kreiranje novog dokumenta koji će biti priložen.
 
 ### 6. Komercijalna kategorija
 
 Ovo je šesta kartica u **CRM Kontakti**.
 
-Na ovoj kartici možete unijeti i pregledati poslovne kategorije kojima tvrtka pripada. Dovoljno je odabrati [Komercijalnu Kategoriju](/docs/configurations/tables/crm/contacts/commercial-category) iz tablice.
-  
+Na ovoj kartici možete unositi i pregledati komercijalne kategorije kojima kompanija pripada. Dovoljno je odabrati [Komercijalnu kategoriju](/docs/configurations/tables/crm/contacts/commercial-category) iz odgovarajuće tabele.
 
-### 7. Zona Kontakta 
+### 7. Zona kontakta
 
 Ovo je sedma kartica u **CRM Kontakti**.
 
-Na ovoj kartici možete unijeti i pregledati područje koje pripada tvrtki. Dovoljno je odabrati odgovarajuće područje.  
+Na ovoj kartici možete unositi i pregledati zonu kojoj kompanija pripada. Dovoljno je odabrati odgovarajuću zonu.
 
-### 8. Trgovački predstavnici 
+### 8. Trgovački predstavnici
 
 Ovo je osma kartica u **CRM Kontakti**.
 
-Na ovoj kartici možete definirati **Agente** povezan s ovim kontaktom.
+Na ovoj kartici mogu se definisati **Agenti** povezani sa ovim kontaktom.
 
-Polja koja možete popuniti su sljedeća:
+Polja koja možete popuniti su sledeća:
 
 **Konto - Podkonto - Opis računa**: pomoću ovih polja možete odabrati agenta, pozivajući se na odgovarajuće podatke;
 
-**Zona**: možete odrediti područje nadležnosti agenta, kako je definirano u tablici;
+**Zona**: možete odrediti područje nadležnosti agenta, kako je definisano u tabeli;
 
-**Postotak**: postotak provizije koji pripada agentu u vezi s kontaktom;
+**Procenat**: procenat provizije koji pripada agentu u vezi sa kontaktom;
 
-**Koristite postotak**: označavanjem ove stavke upućujete postupku da prilikom unosa ponuda za prodaju uzme u obzir vrijednost navedenu u polju **Postotak** kako bi izračunao pripadajuće provizije.    
+**Koristi procenat**: označavanjem ove stavke upućujete proceduru da prilikom unosa prodajnih ponuda uzme u obzir vrednost navedenu u polju **Procenat** radi obračuna pripadajućih provizija.
 
-### 9. Izvještaji Posjeta
+### 9. Izveštaji o poseti
 
 Ovo je deveta kartica u **CRM Kontakti**.
 
-Na ovoj kartici prikazan je popis unesenih **Izvješća o Posjeti** inseriti per il contatto.
+Na ovoj kartici prikazan je spisak unetih **Izveštaja o poseti** za kontakt.
 
-U gornjem dijelu kartice nalaze se polja za **filtriranje** koja omogućuju preciznije pretraživanje željenih izvješća o posjetu.
+U gornjem delu kartice nalaze se polja za **filtriranje** koja omogućavaju precizniju pretragu željenih izveštaja o poseti.
 
-Duplim klikom na redak izvješća o posjetu, isto će se otvoriti u prikazu/promjeni. Za unos novog izvješća o posjetu za određeni kontakt dovoljno je pritisnuti tipku ![](/img/neutral/common/new-visit-report.png), koja se nalazi na vrpci s alatkama.
+Dvostrukim klikom na red izveštaja o poseti, isti će se otvoriti za pregled/izmenu. Za unos novog izveštaja o poseti za određeni kontakt dovoljno je pritisnuti dugme ![](/img/neutral/common/new-visit-report.png), koje se nalazi na traci sa alatkama.
 
-### 10. Ponude za Kontakt 
+### 10. Ponude za kontakt
 
 Ovo je deseta kartica u **CRM Kontakti**.
 
-Na ovoj kartici prikazan je popis unesenih ponuda za kontakt. U gornjem dijelu kartice nalaze se polja za filtriranje koja omogućuju preciznije pretraživanje željenih ponuda. Dvoklikom na redak ponude, ista će se otvoriti u prikazu/promjeni. Također je moguće stvoriti nove ponude.
+Na ovoj kartici prikazan je spisak unetih ponuda za kontakt. U gornjem delu kartice nalaze se polja za filtriranje koja omogućavaju precizniju pretragu željenih ponuda. Dvostrukim klikom na red ponude, ista će se otvoriti za pregled/izmenu. Takođe je moguće kreirati nove ponude.
 
-### 11. Drugi podaci o Kontaktu
+### 11. Ostali podaci o kontaktu
 
 Ovo je jedanaesta kartica u **CRM Kontakti**.
 
-Na ovoj kartici moguće je pregledati i unijeti [Drugi Podaci](/docs/configurations/utility/extra-data/extradata/search-extradata) o kontaktu koji će zatim biti prikazani na povezanim dokumentima.
+Na ovoj kartici moguće je pregledati i unositi [Ostale podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) o kontaktu, koji će zatim biti prikazani na povezanim dokumentima.
 
-### 12. Konkurenti Kontakta
+### 12. Konkurenti kontakta
 
 Ovo je dvanaesta kartica u **CRM Kontakti**.
 
-Na ovoj kartici moguće je naznačiti eventualne **Konkurente** koje naša tvrtka ima u pregovorima s ovim kontaktom.   
-Kontakt se može odabrati putem odgovarajućeg padajućeg izbornika, odabirom vrijednosti iz pripadajuće [tablice](/docs/configurations/tables/crm/contacts/competitors).
+Na ovoj kartici moguće je navesti eventualne **Konkurente** koje naša kompanija ima u pregovorima sa ovim kontaktom.
+
+Kontakt se može odabrati putem odgovarajuće padajuće liste, izborom vrednosti iz pripadajuće [tabele](/docs/configurations/tables/crm/contacts/competitors).
+
 U polju **Napomena** možete navesti dodatne korisne informacije o konkurentu.
 
-### 13. Cjenici prodaje kontakta
+### 13. Prodajni cenovnici kontakta
 
-Ovo je jedna od kartica **CRM kontakata**.
+Ovo je jedna od kartica **CRM Kontakti**.
 
-Na ovoj kartici prikazuju se važeći prodajni cjenici za kontakt, koji će se primijeniti u dokumentima izdanim na ime kontakta. Prilikom pretvorbe kontakta u klijenta, ti će se podaci prijeliti u karticu klijenta.   
+Na ovoj kartici prikazani su važeći prodajni cenovnici za kontakt, koji će se primenjivati u dokumentima izdatim na ime kontakta. Prilikom konverzije kontakta u klijenta, ovi podaci će biti preneti u karticu klijenta.
 
 ### 14. Prodajni nalozi kontakta
 
-Ovo je jedna od kartica **CRM kontakata**.
+Ovo je jedna od kartica **CRM Kontakti**.
 
-Na ovoj kartici prikazuje se popis narudžbi koje su unesene za kontakt. U gornjem dijelu kartice nalaze se polja za filtriranje koja omogućuju preciznije traženje narudžbi.
-Dvaput klikom na red narudžbe, ista se otvara za pregled/izmjenu. Također je moguće kreirati nove narudžbe.  
+Na ovoj kartici prikazan je spisak naloga koji su uneti za kontakt. U gornjem delu kartice nalaze se polja za filtriranje koja omogućavaju precizniju pretragu naloga.
 
-### 15. Newsletter kontakta 
+Dvostrukim klikom na red naloga, isti se otvara za pregled/izmenu. Takođe je moguće kreirati nove naloge.
 
-Ovo je jedna od kartica **CRM kontakata**.
+### 15. Newsletter kontakta
 
-Na ovoj kartici prikazuje se popis newsletter-a povezanih s kontaktom. U gornjem dijelu kartice nalaze se polja za filtriranje koja omogućuju precizno traženje željenog newsletter-a. Dvaput klikom na red newsletter-a, otvara se za pregled/izmjenu.
+Ovo je jedna od kartica **CRM Kontakti**.
+
+Na ovoj kartici prikazan je spisak *newslettera* povezanih sa kontaktom. U gornjem delu kartice nalaze se polja za filtriranje koja omogućavaju preciznu pretragu željenog *newslettera*. Dvostrukim klikom na red *newslettera*, isti se otvara za pregled/izmenu.
 
 ### 16. Plaćanja kontakta
 
-Ovo je jedna od kartica **CRM kontakata**.
+Ovo je jedna od kartica **CRM Kontakti**.
 
-Na ovoj kartici konfiguriraju se uvjeti plaćanja koje treba predložiti u dokumentima vezanim uz kontakt.
+Na ovoj kartici konfigurišu se uslovi plaćanja koje treba predlagati u dokumentima povezanim sa kontaktom.
 
 #### Tipovi plaćanja
 
-Ključni dio kartice **Plaćanja** služi za definiranje logike izračuna dospijeća. Odabiru se **Tip plaćanja** i **Rješenje plaćanja** (oba su definirana u *Konfiguracija > Tablice > Opće postavke*).
+Ključni deo kartice **Plaćanja** služi za definisanje logike obračuna dospeća. Biraju se **Tip plaćanja** i **Način plaćanja** (oba su definisana u *Konfiguracija > Tabele > Opšta podešavanja*).
 
-**Postotak**: omogućuje definiranje udjela (u postotku) ukupne vrijednosti plaćanja (ili primitka) koji će biti upravljan prema uvjetu plaćanja (kombinacija tipa plaćanja i rješenja plaćanja) postavljenom u tom retku.
+**Procenat**: omogućava definisanje udela (u procentima) ukupne vrednosti plaćanja (ili naplate) koji će biti obrađen prema uslovu plaćanja (kombinacija tipa plaćanja i načina plaćanja) postavljenom u tom redu.
 
-Ako je postotak manji od 100, potrebno je napraviti više redova čiji zbroj postotaka bude 100.  
+Ako je procenat manji od 100, potrebno je kreirati više redova čiji zbir procenata iznosi 100.
 
-*Primjer*:<br />
-- 50 % gotovinsko odmah + 50 % bankovni transfer za 30 dana.<br />
-- 50 % gotovinsko odmah; 25 % bankovni transfer za 30 dana; 25 % bankovni transfer za 60 dana.<br />
-![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image03.png)  ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image04.png)
+*Primer*:<br />
+- 50 % gotovina odmah + 50 % bankovni transfer za 30 dana.<br />
+- 50 % gotovina odmah; 25 % bankovni transfer za 30 dana; 25 % bankovni transfer za 60 dana.<br />
+![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image03.png) ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image04.png)
 
-<u>Pažnja</u>: ako rješenje plaćanja predviđa više od jednog dospijeća, unosi se na sljedeći način: na primjer 50 % gotovina odmah, 50 % bankovni transfer na 30 – 60 dana.  
+<u>Pažnja</u>: ako način plaćanja predviđa više od jednog dospeća, unosi se na sledeći način: na primer 50 % gotovina odmah, 50 % bankovni transfer na 30 – 60 dana.
 
 **![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image05.png)**
 
-**Banka (podrška)**: predstavlja banku referentnu za partije.  
-- Za karticu klijenta: 
-> - ako je tip plaćanja bankovna mjenica, treba navesti banku klijenta;  
-> - ako je tip plaćanja bankovni transfer, navodi se banka tvrtke u upotrebi (da se na dokumentima prikažu ispravni referentni podaci za plaćanje).  
+**Banka (podrška)**: predstavlja referentnu banku za stavke.
 
-To polje se popunjava putem kombiniranog izbora (**Banka**) koji je povezan s tablicom *Banka prezentacije*. Unutar te tablice moguće je unijeti banke tvrtke i banke protustrane (klijenta ili dobavljača). Također, moguće je unijeti redove s kompletnim IBAN i/ili SWIFT kodovima (preporučeno za banke tvrtke) ili samo ABI i CAB kodove (preporučeno za banke klijenta), koje se mogu naknadno nadopuniti u kartici.  
+- Za karticu kupca:
+> - ako je tip plaćanja bankovna menica, potrebno je navesti banku kupca;
+> - ako je tip plaćanja bankovni transfer, navodi se banka kompanije koja se koristi (kako bi se na dokumentima prikazali ispravni podaci za plaćanje).
 
-Ako je red u tablici Banka d’appoggio potpun (IBAN i/ili SWIFT + ABI i CAB), pri izboru tog reda kombinacijskom listom podaci će se prenijeti u karticu. Ako nije, prenijet će se samo ABI i CAB, ali korisnik može naknadno dopuniti podatke. Ovo je praktično za banke klijenta kako ne bi bilo potrebno unositi prevelik broj redova u karticu banke. Bolje je navesti samo podatke poslovnice (ABI i CAB) za više klijenata.
+Ovo polje se popunjava putem kombinovanog izbora (**Banka**) koji je povezan sa tabelom *Banka prezentacije*. U okviru te tabele moguće je uneti banke kompanije i banke kupca ili dobavljača. Takođe je moguće uneti redove sa kompletnim IBAN i/ili SWIFT kodovima (preporučeno za banke kompanije) ili samo ABI i CAB kodovima (preporučeno za banke kupca), koji se kasnije mogu dopuniti u kartici.
 
-Dodavanje banke može se napraviti i dvostrukim klikom u polja ABI/CAB da se otvori pomoć za pretragu među nacionalnim bankovnim agencijama, odabrati primarnu i kreirati kod u kartici uz dopunu podataka: račun, CIN, IBAN, SWIFT 
+Ako je red u tabeli banke kompletan (IBAN i/ili SWIFT + ABI i CAB), izborom tog reda iz kombinovane liste podaci će biti preneti u karticu. Ako nije, biće preneti samo ABI i CAB, ali korisnik može naknadno dopuniti podatke. Ovo je praktično za banke kupca kako ne bi bilo potrebno unositi veliki broj redova u karticu banke. Bolje je navesti samo podatke poslovnice (ABI i CAB) za više kupaca.
 
-**Opis banke**: polje povezano s prethodnim poljem.  
+Dodavanje banke može se izvršiti i dvostrukim klikom u polja ABI/CAB kako bi se otvorila pomoć za pretragu među nacionalnim bankarskim filijalama, odabrala odgovarajuća i kreirao zapis u kartici uz dopunu podataka: račun, CIN, IBAN, SWIFT.
 
-**Kod banke**: polje NE koristi se u Italiji. Za inozemne lokalizacije može primiti alternativni kod banke izvan sustava ABI/CAB.
+**Opis banke**: polje povezano sa prethodnim poljem.
+
+**Kod banke**: ovo polje se NE koristi u Italiji. Za strane lokalizacije može sadržati alternativni kod banke izvan sistema ABI/CAB.
 
 #### Banke podrške
 
-U tablici se mogu unijeti banke podrške protostrane.
+U tabelu je moguće uneti banke za plaćanja poslovnom partneru.
 
-To omogućuje unos alternativnih banaka klijenta. Na primjer: klijent plaća bankovnim transferom (i u tablici Tip plaćanja se navodi banka tvrtke), ali želite unijeti i banku klijenta za situacije povrata ili izvansudska plaćanja.
+To omogućava unos alternativnih banaka kupca. Na primer: kupac plaća bankovnim transferom (i u tabeli Tip plaćanja navodi se banka kompanije), ali želite da unesete i banku kupca za situacije povraćaja sredstava ili vansudskih plaćanja.
 
-Banka se može dodati dvostrukim klikom u polja ABI/CAB za pomoć pri pretraživanju nacionalnih banaka, odabirom relevantne banke i unošenjem podataka računa, IBAN, SWIFT.
+Banka se može dodati dvostrukim klikom u polja ABI/CAB radi pretrage nacionalnih banaka, izborom odgovarajuće banke i unosom podataka računa, IBAN-a i SWIFT-a.
 
-### 17. Prilika za kontakt
-
-Ovo je jedna od kartica **CRM kontakata**.
-
-Na ovoj kartici prikazuje se popis prilika (opportunità) unesenih za kontakt.
-U gornjem dijelu kartice nalaze se polja za filtriranje koja omogućuju preciznije pretraživanje postojećih prilika.
-Dvostrukim klikom na redak s određenom prilikom, ista će se otvoriti za pregled ili uređivanje.  
-
-### 18. Radno vrijeme kontakta 
+### 17. Prilike kontakta
 
 Ovo je jedna od kartica **CRM kontakata**.
 
-Na ovoj kartici prikazuju se dani i sati kada je kontakt dostupan, odnosno njegovo radno vrijeme. 
+Na ovoj kartici prikazuje se lista prilika unetih za kontakt.
+
+U gornjem delu kartice nalaze se polja za filtriranje koja omogućavaju precizniju pretragu postojećih prilika.
+
+Dvostrukim klikom na red sa određenom prilikom, ista će se otvoriti za pregled ili izmenu.
+
+### 18. Radno vreme kontakta
+
+Ovo je jedna od kartica **CRM kontakata**.
+
+Na ovoj kartici prikazuju se dani i sati kada je kontakt dostupan, odnosno njegovo radno vreme.
 
 ### 19. Telefonski pozivi kontakta
 
 Ovo je jedna od kartica **CRM kontakata**.
 
-Na ovoj kartici prikazuje se popis telefonskih poziva obavljenih prema kontaktu.  
+Na ovoj kartici prikazuje se lista telefonskih poziva obavljenih prema kontaktu.
 
-### 20. Marketinške kampanje kontakta  
+### 20. Marketinške kampanje kontakta
 
 Ovo je jedna od kartica **CRM kontakata**.
 
-Na ovoj kartici prikazuje se popis marketinških kampanja u kojima se kontakt nalazi.   
+Na ovoj kartici prikazuje se lista marketinških kampanja u kojima se kontakt nalazi.

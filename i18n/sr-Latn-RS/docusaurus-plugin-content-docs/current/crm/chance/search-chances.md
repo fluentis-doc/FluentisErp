@@ -1,19 +1,18 @@
 ---
-title: Prilika 
+title: Prilika
 sidebar_position: 1
 ---
 
-Modul **Prilika** omogućava operaterima upravljanje prilikama povezanim s kontaktima u sustavu CRM-a. Prilikom se odnosi na postojeće ili potencijalne pregovore vezane uz kontakt.
+Modul **Prilika** omogućava operaterima upravljanje prilikama povezanim sa kontaktima u CRM sistemu. Prilika se odnosi na postojeće ili potencijalne pregovore vezane za kontakt.
 
-Procedura **Pretraga Prilika** dizajnirana je kako bi omogućila korisnicima jednostavno pretraživanje već unesenih prilika u CRM-u, s ciljem da ih pregledaju, urede i po potrebi obrišu. 
-Pomoću filtera možete pregledati: jednu priliku (**Broj**), više prilika iste vrste (**Vrsta prilike**), više prilika s istom vjerojatnošću uspjeha (**Vjerojatnost Uspjeha**).
+Procedura **Pretraga prilika** osmišljena je tako da korisnicima omogući jednostavno pretraživanje već unetih prilika u CRM-u, sa ciljem njihovog pregleda, uređivanja i po potrebi brisanja.
 
-Pogledajte [Zajedničke funkcije](/docs/guide/common/operations-with-data/view-modify-save-and-delete-data) za tipke koji se nalaze u **Vrpci alatnih traka**.
+Pomoću filtera moguće je pregledati: jednu priliku (**Broj**), više prilika iste vrste (**Vrsta prilike**), više prilika sa istom verovatnoćom uspeha (**Verovatnoća uspeha**).
 
-**Područje filtra** predviđeno je za prikaz popisa mogućih vrsta podataka koji omogućuju odabir. Filteri su obično u uvjetu 'I' i mogu se specificirati više kriterija za istodobno filtriranje.
+Pogledati [Zajedničke funkcije](/docs/guide/common/operations-with-data/view-modify-save-and-delete-data) za dugmad koja se nalaze u **alatnoj traci**.
 
-Glavni filteri uključuju **Vrstu prilike**, **Broj** prilike i **Kontakt** povezan s prilikom.
+**Područje filtera** namenjeno je prikazu liste mogućih vrsta podataka koje omogućavaju izbor. Filteri su obično u uslovu „I“ (AND) i moguće je zadati više kriterijuma za istovremeno filtriranje.
 
-**Rezultat u tabeli** prikazuje popis prilika koji odgovara gore navedenim podacima za filtriranje. Korisnik, nakon što specificira vrijednosti putem kojih želi izvršiti pretraživanje prilika, ako pritisne tipku ![Pretraži](/img/neutral/common/search.png) u pripadajućoj vrpci, dobit će popis željenih prilika u mreži rezultata. U mreži se mogu prikazati glavne značajke svake prilike.  
+Glavni filteri uključuju **Vrstu prilike**, **Broj** prilike i **Kontakt** povezan sa prilikom.
 
-
+**Tabela rezultata** prikazuje listu prilika koja odgovara prethodno zadatim kriterijumima filtriranja. Korisnik, nakon što definiše vrednosti prema kojima želi da izvrši pretragu prilika, pritiskom na dugme ![Pretraži](/img/neutral/common/search.png) na odgovarajućoj traci sa alatkama dobija listu željenih prilika u mreži rezultata. U mreži se mogu prikazati glavne karakteristike svake prilike.

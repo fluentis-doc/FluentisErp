@@ -1,24 +1,25 @@
 ---
-title: Opportunity Stages KanBan Board
+title: Kanban tabla faza poslovnih prilika
 sidebar_position: 5
 ---
 
-Postupak **Opportunity Stages KanBan Board** ima cilj grafički prikazati, korištenjem KanBan metodologije, prilike unesene u Fluentis podijeljene prema fazama povezanog postupka rada. Postupak rada koji treba uzeti u obzir mora biti naveden u filtima.   
-Pomoću filtara moguće je prikazati: samo jednu vrstu prilike (**Vrsta prilike**), više prilika koje je unio isti korisnik (**Operater**), više prilika s istim postotkom uspjeha  (**Vjerojatnost uspjeha**).
+Postupak **Kanban tabla faza poslovnih prilika** ima za cilj da grafički prikaže, korišćenjem Kanban metodologije, prilike unete u Fluentis, podeljene prema fazama povezanog radnog toka. Radni tok koji treba uzeti u obzir mora biti naveden u filterima.
 
-Područje filtra namijenjeno je sadržavanju popisa mogućih vrsta podataka pomoću kojih je moguće napraviti odabir. Filtri su obično u uvjetu 'I' i mogu se odrediti više kriterija filtra istovremeno.
+Pomoću filtera moguće je prikazati: samo jednu vrstu prilike (**Vrsta prilike**), više prilika koje je uneo isti korisnik (**Operater**), više prilika sa istim procentom uspeha (**Verovatnoća uspeha**).
 
-U području ispod filtra nalazi se **Kan Ban Board**, na kojoj se prikazuju prilike podijeljene prema različitim fazama postupka rada odabrane u filtima. Svaka kolona na KanBan Boardu sastoji se od sljedećih elemenata:
+Područje filtera namenjeno je prikazu liste mogućih vrsta podataka pomoću kojih je moguće izvršiti izbor. Filteri su obično u uslovu „I“ (AND) i moguće je zadati više kriterijuma filtriranja istovremeno.
 
-**Gornji pojas** na kojem su prikazani, redom, sljedeći podaci:  
-- Faza postupka rada;  
-- Count: odgovara broju prilika koje su smještene u toj koloni;  
-- Total Net Amount: odgovara ukupnoj vrijednosti prilika prisutnih u toj koloni, umanjeno za primijenjene popuste  
+U delu ispod filtera nalazi se **Kanban tabla**, na kojoj su prikazane prilike podeljene prema različitim fazama radnog toka odabranog u filterima. Svaka kolona na Kanban tabli sastoji se od sledećih elemenata:
 
-**Donji pojas** na kojem su prikazane pojedinačne prilike. Za svaku priliku prikazuju se, redom, sljedeći podaci:  
+**Gornja traka** na kojoj su prikazani, redom, sledeći podaci:
+- Faza radnog toka;
+- Count: odgovara broju prilika koje se nalaze u toj koloni;
+- Total Net Amount: odgovara ukupnoj vrednosti prilika prisutnih u toj koloni, umanjenoj za primenjene popuste.
+
+**Donja traka** na kojoj su prikazane pojedinačne prilike. Za svaku priliku prikazuju se, redom, sledeći podaci:
 - Ime kontakta vlasnika prilike;
 - Naslov prilike;
-- Korisnik Fluentisa koji je unio priliku;
-- Ukupni neto iznos prilike.
+- Fluentis korisnik koji je uneo priliku;
+- Ukupan neto iznos prilike.
 
-Dvostrukim klikom na pojedinu priliku ulazi se u način prikaza/uređivanja same prilike.
+Dvostrukim klikom na pojedinačnu priliku ulazi se u režim prikaza/izmene same prilike.

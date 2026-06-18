@@ -1,78 +1,74 @@
 ---
-title: Novi Predložak
+title: Novi šablon
 sidebar_position: 2
 ---
 
-Procedura stvaranja **Novog Predloška** omogućuje definiranje značajki predloška koje će se kasnije koristiti u postupku slanja newslettera, uključujući slike, tekst, hiperlinkove i spajanje podataka. Obrazac se sastoji od dvije sekcije. 
+Procedura kreiranja **Novog šablona** omogućava definisanje karakteristika šablona koji će se kasnije koristiti u postupku slanja *newsletter-a*, uključujući slike, tekst, hiperlinkove i spajanje podataka. Forma se sastoji od dve sekcije.
 
-I gornji dio obrasca omogućava definiranje sljedećih pojedinosti:
+Gornji deo forme omogućava definisanje sledećih detalja:
 
-**Naziv**: odgovara kodu prema kojem će se identificirati Predložak;
+**Naziv**: odgovara šifri po kojoj će se šablon identifikovati;  
+**Opis**: opisuje šablon;  
+**Poslovni subjekt**: poslovni subjekt u Fluentisu za koji će se koristiti šablon;  
+**Vrsta izvora podataka**: označava vrstu izvora podataka na kojem se zasniva šablon (Jednostavno, *GroupBy* i *SQL* upit);  
+**Izvor podataka**: predstavlja izvor podataka koji će se koristiti za popunjavanje *Merge Data* u šablonu.
 
-**Opis**: opisuje Predložak;
-
-**Poslovni predmet**: poslovni predmet u Fluentisu za koji će se koristiti Predložak;
-
-**Vrsta izvora podataka**: označava vrstu izvora podataka na kojem se temelji template (Jednostavno, GroupBy i SQL Upit);
-
-**Izvor podataka**: predstavlja izvor podataka koji će se koristiti za popunjavanje Merge Data u Predlošku.
-
-Donji dio obrasca uključuje različite kartice s funkcijama za izradu Predloška i radnu knjigu na kojoj je moguće kreirati Predložak te ga grafički pregledati:
+Donji deo forme sadrži različite kartice sa funkcijama za izradu šablona i radni list na kojem je moguće kreirati šablon i grafički ga pregledati:
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/template-file.png)
 
-Ovo su tablice dostupne u obrazcu.
+Ovo su kartice dostupne u formi.
 
-**Datoteke**
+**Datoteka**
 
-Ova kartica omogućuje osnovne operacije s Predloškom, kao što su otvaranje novog
-radnog lista, otvaranje drugog radnog lista i pregled Predloška prije ispisa.
- 
-**New**: otvara novi radni list;  
-**Open**: otvara drugi radni list;  
-**Save As**: omogućuje spremanje radnog lista s određenim imenom na računalo;  
-**Print**: omogućuje ispis radnog lista;  
-**Print Preview**: omogućuje pregled radnog lista prije stvarnog ispisa;  
-**Undo**: poništava posljednju promjenu na predlošku;  
-**Redo**: obnavlja posljednju poništenu promjenu na predlošku.  
+Ova kartica omogućava osnovne operacije sa šablonom, kao što su otvaranje novog radnog lista, otvaranje drugog radnog lista i pregled šablona pre štampe.
+
+**Novo**: otvara novi radni list;  
+**Otvori**: otvara drugi radni list;  
+**Sačuvaj kao**: omogućava čuvanje radnog lista pod određenim imenom na računaru;  
+**Štampaj**: omogućava štampanje radnog lista;  
+**Pregled štampe**: omogućava pregled radnog lista pre stvarne štampe;  
+**Poništi (*undo*)**: poništava poslednju izmenu na šablonu;  
+**Ponovi (*redo*)**: vraća poslednju poništenu izmenu na šablonu.
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/file.png)
 
-**Početna stranica**
+**Početna**
 
-Ova kartica sadrži tipke za osnovne funkcije uređivanja teksta u Predlošku, kao što su veličina fonta, popisi, poravnanje teksta itd.
-Poziva osnovne funkcije popularnih uređivača teksta poput Microsoft Word-a. 
+Ova kartica sadrži dugmad za osnovne funkcije uređivanja teksta u šablonu, kao što su veličina fonta, liste, poravnanje teksta i slično.  
+Poziva osnovne funkcije popularnih uređivača teksta kao što je Microsoft Word.
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/home.png)
 
 **Umetni**
 
-Ova kartica sadrži tipke za umetanje određenih elemenata u Predložak, poput tablica, slika i hiperlinkova.   
-**Table**: omogućuje umetanje tablice unutar radnog lista;  
-**Inline Picture**: omogućuje umetanje slike u tijelo dokumenta;  
-**Picture**: omogućuje umetanje slike u tijelo dokumenta;  
-**Bookmark**: omogućuje umetanje knjižne oznake unutar predloška;  
-**Hyperlink**: omogućuje umetanje veze prema web stranici ili knjižnoj oznaci unutar predloška;  
-**Header**: omogućuje umetanje zaglavlja predloška;  
-**Footer**: omogućuje umetanje podnožja predloška;  
-**Page Number**: služi za označavanje broja stranice u zaglavlju ili podnožju Predloška;  
-**Page Count**: služi za označavanje ukupnog broja stranica predloška u zaglavlju ili podnožju;  
-**Text Box**: omogućuje umetanje okvira za tekst unutar Predloška;  
-**Symbol**: služi za umetanje posebnog simbola unutar Predloška.  
+Ova kartica sadrži dugmad za umetanje određenih elemenata u šablon, kao što su tabele, slike i hiperlinkovi.
+
+**Tabela**: omogućava umetanje tabele unutar radnog lista;  
+**Inline slika**: omogućava umetanje slike u telo dokumenta;  
+**Slika**: omogućava umetanje slike u telo dokumenta;  
+**Bookmark**: omogućava umetanje obeleživača unutar šablona;  
+**Hyperlink**: omogućava umetanje veze ka veb stranici ili obeleživaču unutar šablona;  
+**Header**: omogućava umetanje zaglavlja šablona;  
+**Footer**: omogućava umetanje podnožja šablona;  
+**Page Number**: služi za označavanje broja stranice u zaglavlju ili podnožju šablona;  
+**Page Count**: služi za označavanje ukupnog broja stranica šablona u zaglavlju ili podnožju;  
+**Text Box**: omogućava umetanje okvira za tekst unutar šablona;  
+**Symbol**: služi za umetanje specijalnog simbola unutar šablona.
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/insert.png)
 
-**Merge data**
+**Merge Data**
 
-Na ovoj kartici nalaze se tipke potrebne za upravljanje i umetanje podataka za spajanje.   
-**Insert Merge Field**: omogućuje umetanje polja za spajanje odabirom iz liste koja se temelji na izvoru podataka na koji se odnosi Predložak;  
-**View Merged Data**: omogućuje skrivanje/prikazivanje umetnutih podataka za spajanje unutar predloška;  
-**Show All Field Codes**: omogućuje prikaz svih kodova polja korištenih kao podaci za spajanje;  
-**Show All Field Results**: omogućuje prikaz rezultata polja korištenih kao podaci za spajanje;  
-**First Record**: omogućuje postavljanje na prvi zapis izvučen iz podataka za spajanje;  
-**Previous record**: omogućuje postavljanje na prethodni zapis u odnosu na trenutni izvučeni iz podataka za spajanje;  
-**Next record**: omogućuje postavljanje na sljedeći zapis u odnosu na trenutni izvučeni iz podataka za spajanje;  
-**Last Record**: omogućuje postavljanje na posljednji zapis izvučen iz podataka za spajanje.
+Na ovoj kartici nalaze se dugmad potrebna za upravljanje i umetanje podataka za spajanje.
+
+**Insert Merge Field**: omogućava umetanje polja za spajanje izborom iz liste koja se zasniva na izvoru podataka na koji se odnosi šablon;  
+**View Merged Data**: omogućava skrivanje/prikaz umetnutih podataka za spajanje unutar šablona;  
+**Show All Field Codes**: omogućava prikaz svih kodova polja korišćenih kao podaci za spajanje;  
+**Show All Field Results**: omogućava prikaz rezultata polja korišćenih kao podaci za spajanje;  
+**First Record**: omogućava pozicioniranje na prvi zapis preuzet iz podataka za spajanje;  
+**Previous Record**: omogućava pozicioniranje na prethodni zapis u odnosu na trenutno prikazani zapis iz podataka za spajanje;  
+**Next Record**: omogućava pozicioniranje na sledeći zapis u odnosu na trenutno prikazani zapis iz podataka za spajanje;  
+**Last Record**: omogućava pozicioniranje na poslednji zapis preuzet iz podataka za spajanje.
 
 ![](/img/it-it/applications/crm/budget-marketing-automation/merge-data.png)
-

@@ -4,29 +4,19 @@ sidebar_position: 2
 ---
 
 Postupak stvaranja novog ***Newslettera*** omogućuje definiranje karakteristika *Newslettera* koji će biti poslan, od predloška do popisa distribucije.
-
 Obrazac je podijeljen u dva dijela.
 
 U gornjem dijelu nalaze se sljedeća polja:
 
 **Naslov**: odgovara kodu *newslettera*;
-
 **Opis**: alfanumeričko polje za detaljno opisivanje značenja *newslettera*;
-
 **Predložak**: služi za odabir [Predloška](/docs/crm/budget-marketing-automation/template/new-template);
-
 **Autor**: označava korisnika koji je stvorio *newsletter*;
-
 **Od**: u ovom polju treba navesti e-mail adresu s koje će *newsletter* biti poslan primateljima;
-
 **Datum stvaranja**: odgovara datumu stvaranja *newslettera*;
-
 **Datum i vrijeme zakazivanja**: odnose se na datum i vrijeme zakazane za slanje *newslettera* (isključivo informativno polje);
-
 **Predmet**: odgovara onome što se obično naziva predmetom e-maila;
-
 **Zakazano**: ova opcija označava da je slanje *newslettera* zakazano (isključivo informativno polje);
-
 **Poslano**: ovaj opcija označava da je *newsletter* poslan.
 
 ![](/img/it-it/applications/crm/newsletter/new-newsletter.png)
@@ -54,15 +44,9 @@ Na taj način otvorit će se stvarna forma za slanje *mewslettera*, koja sadrži
 U donjem dijelu prikazana su neka polja, neka od njih preuzeta iz prethodnog obrasca:
 
 **Primatelji**: polje omogućava označavanje primatelja e-pošte odabirom između referenci CRM kontakata ili između Fluentis korisnika;
-
 **Predmet**: odgovara onome što se obično naziva Predmetom e-pošte;
-
 **Predložak e-pošte**: služi za odabir [Predloška](/docs/crm/budget-marketing-automation/template/new-template);
-
 **Cc**: služi za označavanje e-pošte koja će primiti kopiju;
-
 **Bcc**: služi za označavanje e-pošte koja će primiti skrivenu kopiju. Fluentis automatski popunjava ovo polje s adresama CRM kontakata tako da svaki primatelj *newslettera* ne vidi adrese drugih primatelja;
-
 **Ugrađena slika**: označavanjem ovog okvira slike u predlošku neće se dodavati kao privici stvorene pošte, već kao stvarni elementi pošte;
-
 **Privici**: prikazane su datoteke koje će biti priložene *newsletteru*.

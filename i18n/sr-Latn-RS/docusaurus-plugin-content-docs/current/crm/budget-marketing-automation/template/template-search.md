@@ -1,18 +1,18 @@
 ---
-title: Pretraživanje Predloška
-sidebar_position: 1 
+title: Pretraga šablona
+sidebar_position: 1
 ---
 
-Procedura za Predložak dokumenta omogućuje stvaranje osnovnih predložaka za tijelo newslettera koji namjeravate poslati.
+Procedura za šablon dokumenta omogućava kreiranje osnovnih šablona za telo *newslettera* koji se namerava poslati.
 
-Omogućava pretraživanje svih dokumenata s ciljem pregleda, uređivanja, brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja filtra i rezultata u obliku mreže.
+Omogućava pretragu svih dokumenata radi pregleda, izmene, brisanja ili dodavanja novog dokumenta; prozor se sastoji od dela za filtere i rezultata prikazanih u tabeli.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na tipku **Pretraživanje** u *traci s alatkama* kako biste prikazali rezultate unutar mreže.
+Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za otvaranje pojedinosti o dokumentu dovoljno je odabrati ga i dvaput kliknuti mišem, ili pritisnuti tipku **Uredi** (omogućuje ulazak u pojedinosti i uređivanje) ili tipku **Pregled** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
+Za otvaranje detalja dokumenta dovoljno je odabrati dokument i dvaput kliknuti mišem ili pritisnuti dugme **Izmeni** (omogućava ulazak u detalje i izmenu) ili dugme **Prikaži** (omogućava ulazak u detalje i pregled, ali bez mogućnosti izmene).
 
-*Vidi također*:   
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)            
-Dodavanje novih polja u obrasce pretraživanja    
+*Vidi takođe:*  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u forme za pretragu
 
-Područje filtra namijenjeno je sadržavanju popisa mogućih vrsta podataka pomoću kojih možete napraviti odabir. Filteri su obično u uvjetu 'AND' i mogu se specificirati više kriterija filtra istovremeno. Posebno je moguće filtrirati prema **Nazivu Predloška** i **Nazivu objekta** na temelju kojeg je predložak izrađen.
+Deo za filtere namenjen je prikazu liste mogućih vrsta podataka pomoću kojih je moguće izvršiti odabir. Filteri su obično u uslovu „AND“ i moguće je istovremeno zadati više kriterijuma filtriranja. Konkretno, moguće je filtrirati prema **Nazivu šablona** i **Nazivu objekta** na osnovu kojeg je šablon kreiran.

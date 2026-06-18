@@ -8,13 +8,9 @@ Procedura stvaranja **Novog Predloška** omogućuje definiranje značajki predlo
 I gornji dio obrasca omogućava definiranje sljedećih pojedinosti:
 
 **Naziv**: odgovara kodu prema kojem će se identificirati predložak;
-
 **Opis**: opisuje predložak;
-
 **Poslovni predmet**: poslovni predmet u Fluentisu za koji će se koristiti predložak;
-
 **Vrsta izvora podataka**: označava vrstu izvora podataka na kojem se temelji predložak (Jednostavno, *GroupBy* i *SQL* Upit);
-
 **Izvor podataka**: predstavlja izvor podataka koji će se koristiti za popunjavanje *Merge Data* u Predlošku.
 
 Donji dio obrasca uključuje različite kartice s funkcijama za izradu predloška i radnu knjigu na kojoj je moguće kreirati predložak te ga grafički pregledati:

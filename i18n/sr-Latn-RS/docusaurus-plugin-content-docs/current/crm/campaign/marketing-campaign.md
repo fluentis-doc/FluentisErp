@@ -3,66 +3,58 @@ title: Marketinške kampanje
 sidebar_position: 1
 ---
 
-Na ovoj se kartici mogu pretraživati postojeće  **Marketinške kampanje** ili stvarati Nove.
+Na ovoj kartici mogu se pretraživati postojeće **Marketinške kampanje** ili kreirati nove.
 
-Ekran se sastoji od tri dijela:     
-- prvi gornji dio prikazuje eventualne povezane radne tokove s kampanjom; za više informacija o radnim tokovima, pogledajte odgovarajući vodič za radne tokove;            
-- središnji dio prikazuje zaglavlje s općim informacijama, neke su obavezne, a druge nisu;       
-- ispod se nalazi nekoliko kartica koje prikazuju različite izvršene operacije.        
+Forma se sastoji iz tri dela:
+- prvi gornji deo prikazuje eventualne povezane tokove rada sa kampanjom; za više informacija o tokovima rada pogledajte odgovarajući vodič za tokove rada;
+- srednji deo prikazuje zaglavlje sa opštim informacijama, od kojih su neke obavezne, a druge nisu;
+- ispod se nalazi nekoliko kartica koje prikazuju različite izvršene operacije.
 
-## Zaglavlje 
+## Zaglavlje
 
-Navodimo polja koja se pojavljuju u zaglavlju Marketinške kampanje.      
+Polja koja se pojavljuju u zaglavlju Marketinške kampanje:
 
-**Vrsta kampanje**: označava vrstu kampanje koju treba stvoriti; vrste kampanja razlikuju se po kodu, opisu, numeraciji i razdoblju proračuna.       
+**Vrsta kampanje**: označava vrstu kampanje koju treba kreirati; vrste kampanja razlikuju se po šifri, opisu, numeraciji i budžetskom periodu.  
+**Broj/Verzija/Datum**: ova polja se automatski popunjavaju;  
+**Distribuciona lista**: moguće je povezati kampanju sa određenom prethodno šifriranom [Listom](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-new), ali je moguće odabrati i praznu listu i ručno uneti kontakte; međutim, u kampanji *outbound marketinga* obično su kontakti već prisutni i to će biti svi oni kojima će se poslati e-mail.  
+**Kategorija kampanje**: moguće je povezati kategoriju koja se sastoji od šifre i opisa;  
+**Referentni marketinški stručnjak**: u ovom polju automatski se predlaže korisnik koji kreira kampanju, ali je moguće ručno navesti i drugog korisnika.  
+**Prodajni predstavnik**: u ovom polju automatski se predlaže korisnik koji kreira kampanju, ali je moguće ručno navesti i drugog korisnika.  
+**Budžetski period**: ovo polje se predlaže na osnovu odabrane Vrste kampanje;  
+**Konto**: moguće je zadužiti knjigovodstveni konto;  
+**Projekat**: u ovo polje unosi se [Projekat](/docs/project-management/projects/new-project/new-project-intro) povezan sa Kampanjom;  
+**Datum važenja**: ova polja sadrže datum početka i eventualni datum završetka;
 
-**Broj/Verzija/Datum**: ova polja automatski se popunjavaju;        
+U sledećim poljima traže se **Država** (predložena automatski), **Zona**, **Jezik** i **Valuta**.
 
-**Lista distribucije**: moguće je povezati kampanju sa određenim prethodno kodiranim [Popisom](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-new) ali također možete odabrati i prazan popis i ručno unijeti kontakte; međutim, u kampanji izlaznog marketinga obično su već prisutni kontakti i bit će to svi oni kojima će se poslati e-mail.      
+**Predloži datum kreiranja potencijalnog kupca**: ovo polje se popunjava na kartici za trenutni kontakt sa potencijalnim kupcem.  
+**Naslov**: ovo polje se automatski popunjava na osnovu vrste kampanje i njene numeracije;  
+**Kontaktirani kontakti**: ovo polje čini vidljivim kontakte na kartici **Kontakti** za koje je marketinška kampanja već započela.
 
-**Kategorija kampanje**: moguće je povezati kategoriju, koja se sastoji od koda i opisa;      
+Sada prelazimo na donje kartice.
 
-**Referentni marketinški stručnjak**: u ovom se polju automatski predlaže korisnik koji stvara kampanju, ali ručno možete navesti i drugog korisnika.      
+## Kontakti
 
-**Prodajni predstavnik**: u ovom se polju automatski predlaže korisnik koji stvara kampanju, ali ručno možete navesti i drugog korisnika.      
+Ovde se nalaze kontakti koji su primaoci Marketinške kampanje; novi se mogu dodati pritiskom na dugme **Novo** na traci sa alatkama: biće zatraženi **Datum unosa**, **Datum kreiranja potencijalnog kupca** (ovo polje će se automatski popuniti i na kartici **Potencijalni kupci**), **Kontakt** itd.
 
-**Razdoblje proračuna**: ovo polje se predlaže na temelju odabrane Vrste kampanje;     
+Odabirom kontakata za koje želite da sprovedete marketinšku kampanju, možete pritisnuti dugme **E-pošta** na traci sa alatkama kako biste poslali e-poštu.
 
-**Račun**: moguće je zadužiti knjigovodstveni račun;      
+## Izvorni kontakti
 
-**Projekt**: u ovo polje unosi se [Projekt](/docs/project-management/projects/new-project/new-project-intro) povezan s Kampanjom;     
+Na ovoj kartici prikazuju se svi kontakti koji pripadaju odabranoj Distribucionoj listi za ovu Marketinšku kampanju. Kartica takođe sadrži deo za filtriranje koji omogućava pretragu kontakata unutar distribucione liste. Da biste preneli kontakte sa ove kartice na karticu Kontakti, potrebno je označiti redove i kliknuti na *Unesi kontakte* na traci sa alatkama.
 
-**Datum važenja**: ova polja sadrže datum početka i eventualne datume završetka;      
+## Potencijalni kupci
 
-U sljedećim poljima traži se **Država** (predložena automatski), **Zona**, **Jezik** i **Valuta**.
+Ovde su navedeni detalji o kreiranju različitih kontakata sa klijentima; moguće je pretraživati potencijalne kupce koji već postoje pomoću dugmeta **Pretraži potencijalne kupce**; na isti način moguće ih je i obrisati pomoću dugmeta **Obriši**.
 
-**Predloži datum stvaranja vodiča**: ovaj se okvir popunjava u kartici za trenutni kontakt s potencijalnim kupcem.     
+## Troškovi
 
-**Naslov**: ovo polje automatski se popunjava na temelju vrste kampanje i njezine numeracije;     
+Zahteva ručni unos troškova marketinške kampanje; potrebno je evidentirati troškove kako bi bilo moguće kreirati marketinški budžet. Ti stvarni troškovi zatim se mogu uporediti sa inicijalno postavljenim budžetom.
 
-**Kontaktirani kontakti**: ovaj okvir čini vidljivima kontakte u kartici **Kontakti** za koje je marketinška kampanja već počela.
+Zbog toga se preporučuje unos stvarnih troškova na ovoj kartici radi praćenja strateške aktivnosti.
 
-Sada prelazimo na donje kartice.     
+Troškovi se mogu unositi pritiskom na dugmad **Novi troškovi** i **Novi troškovi za period** na traci sa alatkama.
 
-## Kontakti 
+## Dodatni podaci
 
-Ovdje se nalaze kontakti koji su primatelji Marketinške Kampanje; mogu se dodati novi pritiskom na tipku **Novo** u traci s vrpcama: bit će zatraženi **Datum unosa**, la **Datum stvaranja potencijalnog kupca** (ovo će se polje automatski popuniti i u kartici **Potencijalni kupci**), **Kontakt**, itd.
-
-Odabirom kontakata za koje želite provesti marketinšku kampanju, možete pritisnuti tipku **E-pošta** na vrpci da biste poslali E-poštu.
-
-## Izvorni kontakti  
-
-Na ovoj kartici prikazuju se svi kontakti koji pripadaju odabranoj Listi distribucije za ovu Marketinšku kampanju. Kartica također sadrži dio za filtriranje koji omogućuje pretraživanje kontakata unutar liste distribucije. Da biste prenijeli kontakte s ove kartice na karticu Kontakata, morate odabrati retke i kliknuti na *Umetni kontakte* u traci s vrpcama.       
-
-## Potencijalni kupci 
-Ovdje su navedeni detalji o stvaranju različitih kontakata s klijentima; možete pretraživati eventualne predvodnike koji već postoje pomoću gumba  **Pretraži potencijalne kupce**; na isti način možete ih i obrisati pomoću gumba **Obriši**. 
-
-## Troškovi   
-Zahtijeva ručno unošenje troškova marketinške kampanje; potrebno je troškove utvrditi kako biste mogli napraviti marketinški proračun. Zatim se ti stvarni troškovi mogu usporediti s početno postavljenim proračunom.
-
-Stoga je preporučljivo unijeti stvarne troškove u ovu karticu kako biste pratili strategijsku aktivnost.
-
-Troškovi se mogu unijeti pritiskom na gumbe **Novi troškovi** i **Novi troškovi za razdoblje** u traci s vrpcama.
-
-## Dodatni podaci   
-Ova kartica omogućuje unošenje dodatnih podataka.
+Ova kartica omogućava unos dodatnih podataka.

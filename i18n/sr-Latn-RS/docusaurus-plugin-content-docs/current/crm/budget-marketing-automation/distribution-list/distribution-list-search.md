@@ -1,18 +1,18 @@
 ---
-title: Traži unutar Liste za distribuciju
+title: Pretraga distribucionih lista
 sidebar_position: 2
 ---
 
-Maske za pretraživanje **Liste distribucije** omogućuju traženje već unesenih lista u Fluentisu, kao i dodavanje novih.
+Forma za pretragu **Distribucionih lista** omogućava pretragu već unetih lista u Fluentisu, kao i dodavanje novih.
 
-Omogućava pretraživanje svih dokumenata s ciljem pregleda, uređivanja, brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja filtra i rezultata u obliku mreže.
+Omogućava pretragu svih dokumenata radi pregleda, izmene, brisanja ili dodavanja novog dokumenta; prozor se sastoji od dela za filtere i rezultata prikazanih u tabeli.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na tipku **Pretraživanje** u *traci s alatkama* kako biste prikazali rezultate unutar mreže.
+Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za otvaranje pojedinosti o dokumentu dovoljno je odabrati ga i dvaput kliknuti mišem, ili pritisnuti tipku **Uredi** (omogućuje ulazak u pojedinosti i uređivanje) ili tipku **Pregled** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
+Za otvaranje detalja dokumenta dovoljno je odabrati dokument i dvaput kliknuti mišem ili pritisnuti dugme **Izmeni** (omogućava ulazak u detalje i izmenu) ili dugme **Prikaži** (omogućava ulazak u detalje i pregled, ali bez mogućnosti izmene).
 
-*Vidi također*:   
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)            
-Dodavanje novih polja u obrasce pretraživanja    
+*Vidi takođe:*  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u forme za pretragu
 
-Područje filtra posvećeno je prikazu popisa mogućih vrsta podataka putem kojih je moguće izvršiti odabir. Filteri su tipično u uvjetu 'I'(AND) i mogu se specificirati više kriterija filtera istovremeno. Konkretno, moguće je filtrirati po **Nazivu** liste, **Nazivu predloška** na kojem se temelji, **Tipu Kontakta** i Fluentis **Operateru** koji je stvorio listu.
+Deo za filtere namenjen je prikazu liste mogućih vrsta podataka pomoću kojih je moguće izvršiti odabir. Filteri su tipično u uslovu „I“ (AND) i moguće je istovremeno zadati više kriterijuma filtriranja. Konkretno, moguće je filtrirati po **Nazivu** liste, **Nazivu šablona** na kojem se zasniva, **Tipu kontakta** i Fluentis **Operateru** koji je kreirao listu.

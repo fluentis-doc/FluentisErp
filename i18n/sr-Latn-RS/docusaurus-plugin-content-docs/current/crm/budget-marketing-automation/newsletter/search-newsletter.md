@@ -1,19 +1,18 @@
 ---
-title: Pretraga Newsletter
+title: Pretraga *newslettera*
 sidebar_position: 1
 ---
 
-Prozor za pretragu Newsletter omogućuje pretraživanje već unesenih Newsletter-a u Fluentisu, kao i dodavanje novih.
+Prozor za pretragu *newslettera* omogućava pretragu već unetih *newslettera* u Fluentisu, kao i dodavanje novih.
 
-Omogućava pretraživanje svih dokumenata s ciljem pregleda, uređivanja, brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja filtra i rezultata u obliku mreže.
+Omogućava pretragu svih dokumenata radi pregleda, izmene, brisanja ili dodavanja novog dokumenta; prozor se sastoji od dela za filtere i rezultata prikazanih u tabeli.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na tipku **Pretraživanje** u *traci s alatkama* kako biste prikazali rezultate unutar mreže.
+Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za otvaranje pojedinosti o dokumentu dovoljno je odabrati ga i dvaput kliknuti mišem, ili pritisnuti tipku **Uredi** (omogućuje ulazak u pojedinosti i uređivanje) ili tipku **Pregled** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
+Za otvaranje detalja dokumenta dovoljno je odabrati dokument i dvaput kliknuti mišem ili pritisnuti dugme **Izmeni** (omogućava ulazak u detalje i izmenu) ili dugme **Prikaži** (omogućava ulazak u detalje i pregled, ali bez mogućnosti izmene).
 
-*Vidi također*:   
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)            
-Dodavanje novih polja u obrasce pretraživanja    
+*Vidi takođe:*  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u forme za pretragu
 
-Područje za filtriranje namijenjeno je prikazu mogućih vrsta podataka preko kojih je moguće napraviti selekciju. Filteri su obično u uvjetu 'I' (AND) i mogu se specificirati više kriterija filtriranja istovremeno. Konkretno, moguće je filtrirati po **Korisniku**, **Naslovu** i već poslanim **Newsletter-ima**.
-
+Deo za filtriranje namenjen je prikazu mogućih vrsta podataka preko kojih je moguće izvršiti selekciju. Filteri su obično u uslovu „I“ (AND) i moguće je istovremeno zadati više kriterijuma filtriranja. Konkretno, moguće je filtrirati po **Korisniku**, **Naslovu** i već poslatim ***newsletterima***.

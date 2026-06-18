@@ -15,31 +15,20 @@ Forma se sastoji od tri dijela:
 Polja koja se pojavljuju u zaglavlju Marketinške kampanje:     
 
 **Vrsta kampanje**: označava vrstu kampanje koju treba stvoriti; vrste kampanja razlikuju se po kodu, opisu, numeraciji i razdoblju proračuna.       
-
 **Broj/Verzija/Datum**: ova polja automatski se popunjavaju;        
-
 **Lista distribucije**: moguće je povezati kampanju s određenim prethodno kodiranim [Popisom](/docs/crm/budget-marketing-automation/distribution-list/distribution-list-new) ali također se može odabrati i prazan popis i ručno unijeti kontakte; međutim, u kampanji *izlaznog marketinga* obično su već prisutni kontakti i bit će to svi oni kojima će se poslati e-mail.      
-
 **Kategorija kampanje**: moguće je povezati kategoriju, koja se sastoji od koda i opisa;      
-
 **Referentni marketinški stručnjak**: u ovom se polju automatski predlaže korisnik koji stvara kampanju, ali ručno možete navesti i drugog korisnika.      
-
 **Prodajni predstavnik**: u ovom se polju automatski predlaže korisnik koji stvara kampanju, ali ručno možete navesti i drugog korisnika.      
-
 **Razdoblje proračuna**: ovo polje se predlaže na temelju odabrane Vrste kampanje;     
-
 **Račun**: moguće je zadužiti knjigovodstveni račun;      
-
 **Projekt**: u ovo polje unosi se [Projekt](/docs/project-management/projects/new-project/new-project-intro) povezan s Kampanjom;     
-
 **Datum važenja**: ova polja sadrže datum početka i eventualne datume završetka;      
 
 U sljedećim poljima traži se **Država** (predložena automatski), **Zona**, **Jezik** i **Valuta**.
 
 **Predloži datum stvaranja vodiča**: ovaj se okvir popunjava u kartici za trenutni kontakt s potencijalnim kupcem.     
-
 **Naslov**: ovo polje automatski se popunjava na temelju vrste kampanje i njezine numeracije;     
-
 **Kontaktirani kontakti**: ovaj okvir čini vidljivima kontakte u kartici **Kontakti** za koje je marketinška kampanja već počela.
 
 Sada prelazimo na donje kartice.     
