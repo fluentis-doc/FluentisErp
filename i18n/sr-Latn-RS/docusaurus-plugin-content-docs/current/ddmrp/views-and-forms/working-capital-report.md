@@ -1,13 +1,17 @@
 ---
-title: Working capital report
+title: Izveštaj o obrtnom kapitalu
 sidebar_position: 2
 ---
-Ovo izvješće prikazuje prosječno investirani kapital u skladišnim zalihama artikala koji se upravljaju prema logici DDMRP. 
 
-Valorizacija tih zaliha provodi se putem postupka [**vrednovanja inventara artikala**](/docs/ddmrp/procedures/inventory-value).
+Ovaj izveštaj prikazuje prosečno investirani kapital u zalihama artikala kojima se upravlja prema DDMRP logici.
+Vrednovanje ovih zaliha vrši se kroz proceduru [**Vrednovanje zaliha artikala**](/docs/ddmrp/procedures/inventory-value).
 
-Postoje dva tipa izvješća:
+Dostupna su dva tipa izveštaja:
 
-- po artiklu, s detaljima po artiklu, a po želji i po skladištu, ako se odabere izvješće za sva skladišta, omogućujući usporedbu kapitala uloženog u svaki artikl u različitim skladištima. 
+Prikazuje detalje po artiklu, a po potrebi i po skladištu.
+Ako se odabere prikaz za sva skladišta, moguće je uporediti iznos investiranog kapitala za isti artikl u različitim skladištima.
+Ovaj prikaz omogućava analizu raspodele kapitala po pojedinačnim artiklima i logističkim lokacijama.
 
-- po skladištu, prikazuje se ukupni kapital u optjecaju za svako skladište u odabranom vremenskom razdoblju, omogućujući praćenje kretanja kapitala u svakom skladištu kroz vrijeme.
+Prikazuje ukupan obrtni kapital vezan za svako skladište u izabranom vremenskom periodu.
+
+Na taj način moguće je pratiti kretanje i promene investiranog kapitala u svakom skladištu tokom vremena, kao i analizirati uticaj DDMRP politika na ukupnu vrednost zaliha.

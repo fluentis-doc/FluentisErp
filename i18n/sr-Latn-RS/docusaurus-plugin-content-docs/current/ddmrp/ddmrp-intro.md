@@ -3,38 +3,39 @@ sidebar_position: 1
 title: DDMRP
 ---
 
-:::important[Info]
-Modul DDMRP (**Demand Driven Material Requirements Planning**) u Fluntis ERP-u osmišljen je za optimizaciju upravljanja zalihama i proizvodnjom, usvajanjem inovativnog i reaktivnog pristupa stvarnoj potražnji. DDMRP predstavlja evoluciju tradicionalnog MRP-a ( Material Requirements Planning), integrirajući koncepcije Lean Manufacturing-a i upravljanja lancem opskrbe (Supply Chain Management) kako bi poboljšao upravljanje resursima u složenim i stalno promjenjivim okruženjima.
+:::important[Informacija]
 
-Glavni cilj modula je pomoći tvrtkama da smanje razine zaliha i poboljšaju pouzdanost usluge, istovremeno štiteći operativne tokove od varijabilnosti potražnje i ponude. DDMRP omogućuje identificiranje strateških točaka duž lanca opskrbe, gdje se postavljaju skladišne zalihe koje djeluju kao jastučići protiv fluktuacija.
+DDMRP modul (**Demand Driven Material Requirements Planning**) u sistemu Fluentis ERP osmišljen je za optimizaciju upravljanja zalihama i proizvodnjom kroz primenu inovativnog i reaktivnog pristupa zasnovanog na stvarnoj potražnji.
+DDMRP predstavlja evoluciju tradicionalnog MRP-a (*Material Requirements Planning*), integrišući principe *Lean Manufacturing*-a i upravljanja lancem snabdevanja (*Supply Chain Management*) radi unapređenja upravljanja resursima u složenim i dinamičnim poslovnim okruženjima.
 
-Među glavnim značajkama DDMRP modula u Fluntis ERP-u nalaze se:
+Glavni cilj modula jeste da pomogne kompanijama da smanje nivo zaliha i poboljšaju pouzdanost isporuke, uz istovremenu zaštitu operativnih tokova od promenljivosti potražnje i ponude.
+DDMRP omogućava identifikaciju strateških tačaka u lancu snabdevanja na kojima se postavljaju zalihe (*buffer-i*) koje služe kao zaštita od fluktuacija.
+Među glavnim karakteristikama DDMRP modula u Fluentis ERP-u nalaze se:
+- **Strateško pozicioniranje buffer-a**  
+  Identifikuje ključne tačke u lancu snabdevanja na kojima je potrebno postaviti buffer-e kako bi se apsorbovale promene u potražnji i ponudi.
 
-    Strateško pozicioniranje spremnika (buffera): Identificira ključne točke u opskrbnom lancu na kojima je potrebno postaviti spremnike kako bi se apsorbirale varijacije u potražnji i ponudi.
+- **Dinamički nivoi buffer-a**  
+  Dinamički prilagođava nivoe zaliha na osnovu faktora kao što su varijabilnost potražnje, vreme isporuke i operativna efikasnost.
 
-    Dinamične razine spremnika: Dinamički prilagođava razine zaliha na temelju faktora kao što su varijabilnost potražnje, vrijeme isporuke i operativna učinkovitost.
+- **Planiranje zasnovano na stvarnoj potražnji**  
+  Za razliku od tradicionalnih sistema koji se oslanjaju na prognoze, DDMRP se fokusira na stvarne narudžbine, omogućavajući brže reagovanje i smanjenje sigurnosnih zaliha.
 
-    Planiranje temeljeno na stvarnoj potražnji: Za razliku od tradicionalnih sustava koji se oslanjaju na prognoze, DDMRP se fokusira na stvarne narudžbe, omogućujući bržu reakciju i smanjenje sigurnosnih zaliha.
+- **Vidljivost i kontrola**  
+  Pruža napredne alate za praćenje i upravljanje tokovima materijala, smanjujući složenost procesa i unapređujući donošenje odluka.
 
-    Vidljivost i kontrola: Pruža napredne alate za praćenje i upravljanje materijalnim tokovima, smanjujući složenost i poboljšavajući donošenje odluka.
-
-Zahvaljujući ovim funkcionalnostima, DDMRP modul omogućuje tvrtkama optimizaciju proizvodnih procesa, smanjenje troškova vezanih uz zalihe te poboljšanje korisničke usluge, čime cijeli opskrbni lanac postaje učinkovitiji i otporniji.
+Zahvaljujući ovim funkcionalnostima, DDMRP modul omogućava kompanijama da optimizuju proizvodne procese, smanje troškove povezane sa zalihama i unaprede nivo usluge prema kupcima, čineći čitav lanac snabdevanja efikasnijim i otpornijim.
 :::
-
 
 :::tip[Napomena]
-**Metodologija DDMRP** implementirana je izvorno unutar Fluentis sustava, što znači da nije riječ o vanjskom modulu ili softveru koji komunicira s pripadajućom bazom podataka.   
 
-Sve DDMRP funkcionalnosti u Fluentisu verificirane su od strane **Demand Driven Institute** koji je certificirao Fluentis DDMRP rješenje.
+**DDMRP metodologija** implementirana je direktno u okviru Fluentis sistema, što znači da nije reč o eksternom modulu ili zasebnom softverskom rešenju koje komunicira sa bazom podataka.
 
-La documentazione qui fornita consente di capire in che modo tale metodologia trova applicazione e ne vengono richiamati i concetti principali ma non è e non vuole essere una guida al "metodo" Ddmrp, pertanto l’utente che intende utilizzare le funzionalità Ddmrp deve conoscerne i contenuti ed averli appresi tramite opportuni corsi o documentazione ufficiale.
+Sve DDMRP funkcionalnosti u Fluentisu verifikovane su od strane **Demand Driven Institute**, koji je sertifikovao Fluentis DDMRP rešenje.
+Dokumentacija dostupna u ovom odeljku omogućava razumevanje načina na koji je metodologija implementirana i pruža pregled njenih osnovnih koncepata. Međutim, ona nije i ne treba da bude vodič za učenje DDMRP metodologije.
+Korisnici koji planiraju da koriste DDMRP funkcionalnosti treba da poznaju principe metodologije i usvoje ih kroz odgovarajuće edukacije ili zvaničnu DDMRP dokumentaciju.
 :::
- 
 
-La documentazione è suddivisa nelle seguenti aree: 
-
+Dokumentacija je podeljena na sledeće oblasti:
 [**ŠIFARNICI**](/docs/ddmrp/master-data/introduction)
-
 [**PROCEDURE**](/docs/ddmrp/procedures/adu-update)
-
-[**OBRASCI I IZVJEŠTAJI**](/docs/ddmrp/views-and-forms/buffer-status)
+[**OBRASCI I IZVEŠTAJI**](/docs/ddmrp/views-and-forms/buffer-status)

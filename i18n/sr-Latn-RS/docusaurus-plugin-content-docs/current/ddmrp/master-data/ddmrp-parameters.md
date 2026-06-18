@@ -1,171 +1,165 @@
 ---
-title: Parametri za DDMRP artikle 
+title: Parametri za DDMRP artikle
 sidebar_position: 5
 ---
 
-Putem ovog obrasca definiraju se parametri potrebni za upravljanje buffer artiklom, odnosno artiklom kojim se upravlja prema DDMRP logici.   
+Putem ovog obrasca definišu se parametri potrebni za upravljanje bafer artiklom, odnosno artiklom kojim se upravlja prema DDMRP logici.
 
-Za svaki buffer artikla mora postojati barem jedan zapis u ovoj tablici – jedan za svako distribucijsko središte (vidi **logističku strukturu**) u kojem se artikl drži na zalihi prema DDMRP načelima, te eventualno jedan za tvornicu (s praznim poljem za skladište) ako se artikl drži na zalihi u tvornici.
+Za svaki bafer artikl mora postojati najmanje jedan zapis u ovoj tabeli – jedan za svaki distributivni centar (vidi **logističku strukturu**) u kojem se artikl drži na zalihama prema DDMRP principima, kao i eventualno jedan za fabriku (sa praznim poljem skladišta) ukoliko se artikl drži na zalihama u fabrici.
 
-DDMRP parametri koje je potrebno definirati su sljedeći:  
+DDMRP parametri koje je potrebno definisati su sledeći:
 
 - **Skladište**
 
-  kod skladišta povezan s logističkom jedinicom zapisa, odnosno distribucijskim centrom (ili međupostajom). Ovo polje ostaje prazno ako se zapis odnosi na tvornicu. 
+  Šifra skladišta povezana sa logističkom jedinicom zapisa, odnosno distributivnim centrom (ili međustanicom). Ovo polje ostaje prazno ako se zapis odnosi na fabriku.
 
 - **Dobavljač**
 
-  označava dobavljača od kojeg se opskrbljuje ovaj artikl u dotičnoj logističkoj jedinici.
+  Označava dobavljača od kojeg se ovaj artikl snabdeva u datoj logističkoj jedinici.
 
-  Prema zadanim postavkama, opskrbljujuća logistička jedinica definirana je u tablici logističke strukture. Međutim, ovim poljem moguće je upravljati iznimkama za pojedine artikle. 
+  Podrazumevano je logistička jedinica snabdevanja definisana u tabeli logističke strukture. Međutim, ovim poljem moguće je upravljati izuzecima za pojedinačne artikle.
 
-  Na primjer, artikli se u ovoj logističkoj jedinici obično opskrbljuju iz jednog središnjeg huba, no neki artikli mogu dolaziti iz drugog huba ili izravno iz tvornice. 
+  Na primer, artikli se u ovoj logističkoj jedinici uglavnom snabdevaju iz jednog centralnog *huba*, ali neki artikli mogu dolaziti iz drugog *huba* ili direktno iz fabrike.
 
-  Ako dobavljač nije naveden u tablici logističkih jedinica, radi se o vanjskom dobavljaču, te će se prema njemu izdati standardna narudžbenica.   
+  Ako dobavljač nije naveden u tabeli logističkih jedinica, smatra se spoljnim dobavljačem i prema njemu će biti izdata standardna porudžbenica.
 
-- **Dani za transport**
+- **Dani transporta**
 
-  Ako je polje dobavljač popunjeno, potrebno je popuniti i ovo polje. Ono predstavlja vrijeme potrebno za nabavu robe iz logističke jedinice ili od vanjskog dobavljača navedenog u polju dobavljač.  
+  Ako je polje dobavljača popunjeno, potrebno je popuniti i ovo polje. Ono predstavlja vreme potrebno za nabavku robe iz logističke jedinice ili od spoljnog dobavljača navedenog u polju dobavljač.
 
+- **Šifra profila (profil bafera)**
 
-- **Kod profila (buffer profil)**, 
+  Šifra profila bafera povezanog sa ovim artiklom u logističkoj jedinici navedenoj u polju skladište.
 
-  Kod profila buffera povezanog s ovim artiklom u logističkoj jedinici navedenoj u polju skladište. 
+- **Faktor vremena isporuke (lead time factor)**
 
-- **Faktor vremena isporuke (lead time factor)**,
+  Omogućava definisanje drugačije vrednosti od one koja je određena u profilu bafera povezanom sa ovim zapisom.
 
-  Omogućuje određivanje drugačije vrijednosti od one definirane u profilu buffera povezanom s ovim zapisom. 
+- **Faktor varijabilnosti (variability factor)**
 
-- **Faktor varijabilnosti (variability factor)**,
+  Omogućava postavljanje drugačije vrednosti od one definisane u profilu bafera povezanom sa ovim zapisom.
 
-  Omogućuje postavljanje drugačije vrijednosti od one definirane u profilu buffera povezanom s ovim zapisom. 
+- **Prosečna dnevna potrošnja (ADU)**
 
-- **Prosječna dnevna potrošnja (ADU)**, 
+  Količina koja se u proseku troši svakog dana u logističkoj jedinici ovog zapisa (razlikuje se za svaku jedinicu). Potrebno je uzeti u obzir dovoljno dug vremenski period (višestruko duži od vremena nabavke artikla) za obračun proseka.
 
-  Količina koja se prosječno troši svaki dan u logističkoj jedinici ovog zapisa (razlikuje se za svaku jedinicu). Treba uzeti u obzir dovoljno dug vremenski period (višestruko duži od vremena nabave artikla) za izračun prosjeka. 
-  
-  Ova vrijednost značajno utječe na razinu zaliha artikla i potrebno ju je periodično ažurirati [(vidi proceduru)](/docs/ddmrp/procedures/adu-update).
+  Ova vrednost značajno utiče na nivo zaliha artikla i potrebno ju je periodično ažurirati [(vidi proceduru)](/docs/ddmrp/procedures/adu-update).
 
 - **Razdvojeni lead time (DLT)**,
 
-  Polje nije moguće uređivati – rezultat je automatskog izračuna. 
+  Polje nije moguće uređivati – rezultat je automatskog obračuna.
 
-  Predstavlja vrijeme potrebno za nabavu artikla uzimajući u obzir postojanje drugih buffera u njegovoj strukturi ili logističkoj mreži. 
+  Predstavlja vreme potrebno za nabavku artikla uzimajući u obzir postojanje drugih bafera u njegovoj strukturi ili logističkoj mreži.
 
-  U slučaju distribucijskog centra, dobiva se zbrajanjem vremena transporta iz opskrbljujuće logističke jedinice i eventualnog vremena proizvodnje, ako je opskrbljujuća jedinica tvornica, a artikl nije buffer u tvornici (tj. nema zaliha).  
+  U slučaju distributivnog centra, dobija se sabiranjem vremena transporta iz logističke jedinice koja ga snabdeva i eventualnog vremena proizvodnje, ukoliko je jedinica snabdevanja fabrika, a artikl nije bafer u fabrici (odnosno nema zaliha).
 
 - **Kumulativni lead time (CLT)**,
 
-  Polje nije moguće uređivati – rezultat je izračuna DLT procedure.  
+  Polje nije moguće uređivati – rezultat je obračuna DLT procedure.
 
-  Predstavlja vrijeme potrebno za nabavu artikla u tvornici ako nijedan od artikala u njegovoj strukturi nije buffer. Drugim riječima, to je vrijeme proizvodnje u slučaju potpune odsutnosti zaliha za sve njegove komponente.  
+  Predstavlja vreme potrebno za nabavku artikla u fabrici ako nijedan od artikala u njegovoj strukturi nije bafer. Drugim rečima, to je vreme proizvodnje u slučaju potpunog odsustva zaliha za sve njegove komponente.
 
 - **Željeni ciklus ponovnog naručivanja (DOC)**,
 
-  Izražava se u danima i predstavlja broj dana koji bi trebao proći između jedne i sljedeće narudžbe.  
+  Izražava se u danima i predstavlja broj dana koji bi trebalo da prođe između jedne i naredne porudžbine.
 
-  Ova vrijednost uzima se u obzir prilikom izračuna zelene zone za ovaj artikal.
+  Ova vrednost se uzima u obzir prilikom obračuna zelene zone za ovaj artikl.
 
-- **Minimalna naručiva količina (MOQ)**,
+- **Minimalna količina za poručivanje (MOQ)**,
 
-  Ako postoji minimalna količina narudžbe koju postavlja dobavljač ili interna politika (posebno za optimizaciju proizvodnje), ona se navodi u ovom polju. 
+  Ako postoji minimalna količina porudžbine koju propisuje dobavljač ili interna politika (posebno radi optimizacije proizvodnje), ona se navodi u ovom polju.
 
-  Ova vrijednost također se uzima u obzir prilikom izračuna zelene zone za ovaj artikl.  
+  Ova vrednost se takođe uzima u obzir prilikom obračuna zelene zone za ovaj artikl.
 
 - **Zelena zona**,
 
-  Polje nije moguće uređivati – rezultat je automatske procedure ažuriranja zona.  
+  Polje nije moguće uređivati – rezultat je automatske procedure ažuriranja zona.
 
-  Zelena zona određuje veličinu narudžbi (nijedna narudžba koju predloži DDMRP ne može biti manja od zelene zone) te tako utječe na učestalost ponovnog naručivanja. Učestalost naručivanja izračunava se kao omjer između zelene zone i prosječne dnevne potrošnje (ADU), a također definira i očekivane prosječne i maksimalne razine zaliha.  
+  Zelena zona određuje veličinu porudžbina (nijedna porudžbina koju predloži DDMRP ne može biti manja od zelene zone) i na taj način utiče na učestalost ponovnog naručivanja.
+
+  Učestalost poručivanja izračunava se kao odnos između zelene zone i prosečne dnevne potrošnje (ADU), a takođe definiše očekivane prosečne i maksimalne nivoe zaliha.
 
 - **Žuta zona**,
 
-  Polje nije moguće uređivati – što je rezultat automatske procedure ažuriranja zona. 
+  Polje nije moguće uređivati – rezultat je automatske procedure ažuriranja zona.
 
- Žuta zona predstavlja prosječnu potrošnju unutar razdoblja potrebnog za opskrbu artiklom (DLT).  
-  
+  Žuta zona predstavlja prosečnu potrošnju tokom perioda potrebnog za snabdevanje artiklom (DLT).
 
 - **Crvena zona**,
 
-  Polje nije moguće uređivati – rezultat je automatske procedure ažuriranja zona. 
+  Polje nije moguće uređivati – rezultat je automatske procedure ažuriranja zona.
 
-  Crvena zona definira razinu sigurnosne zalihe, minimalnu i maksimalnu razinu zaliha. 
+  Crvena zona definiše nivo sigurnosne zalihe, minimalni i maksimalni nivo zaliha.
 
-  Njezina veličina raste s povećanjem varijabilnosti povezane s bufferom (vidi buffer profil).  
+  Njena veličina raste sa povećanjem varijabilnosti povezane sa baferom (vidi profil bafera).
 
-- **Prag vršnih narudžbi (OST)**,
+- **Prag vršnih porudžbina (OST)**,
 
-  Koristi se u izračunu NFP (Net Flow Position).  
+  Koristi se u obračunu NFP (Net Flow Position).
 
-  Kada ukupna dnevna potražnja (unutar zadanog vremenskog okvira za vrhove potražnje) premaši ovu vrijednost, ona se uključuje u NFP izračun. 
+  Kada ukupna dnevna potražnja (u okviru definisanog vremenskog perioda za vrhove potražnje) premaši ovu vrednost, ona se uključuje u obračun NFP-a.
 
-  Preporučuje se korištenje vrijednosti između 50% i 100% crvene zone artikla. 
+  Preporučuje se korišćenje vrednosti između 50% i 100% crvene zone artikla.
 
-  Preniska vrijednost dovela bi do toga da se uobičajene oscilacije potražnje pogrešno prepoznaju kao vršni zahtjevi, što bi rezultiralo prečestim narudžbama i većom prosječnom zalihom od potrebne. 
+  Preniska vrednost dovela bi do toga da se uobičajene oscilacije potražnje pogrešno prepoznaju kao vršni zahtevi, što bi rezultovalo prečestim porudžbinama i većim prosečnim zalihama nego što je potrebno.
 
-  Previsoka vrijednost mogla bi rezultirati time da se značajni, ali ne ekstremni vrhovi potražnje ne prepoznaju na vrijeme, što bi dovelo do smanjenja zaliha ispod optimalne razine, iscrpljivanja crvene zone ili čak prekida zaliha (stockout). 
+  Previsoka vrednost mogla bi dovesti do toga da se značajni, ali ne i ekstremni vrhovi potražnje ne prepoznaju na vreme, što bi rezultovalo smanjenjem zaliha ispod optimalnog nivoa, iscrpljivanjem crvene zone ili čak nestašicom zaliha (*stockout*).
 
-  **Vremenski horizont za vršne narudžbe (OSH)**,
+  - **Vremenski horizont za vršne porudžbine (OSH)**,
 
-  Vremenski period od danas unutar kojeg se provjerava prisutnost vršnih zahtjeva (za izračun NFP). 
+  Vremenski period od danas unutar kojeg se proverava prisustvo vršnih zahteva (za obračun NFP-a).
 
-  Ova vrijednost ne smije biti manja od DLT (razdvojenog lead time-a), jer je potrebno na vrijeme prepoznati potencijalne vrhove potražnje, barem onoliko unaprijed koliko traje nabava artikla.  
+  Ova vrednost ne sme biti manja od DLT-a (razdvojenog *lead time*-a), jer je potrebno na vreme prepoznati potencijalne vrhove potražnje, najmanje onoliko unapred koliko traje nabavka artikla.
 
-- **Metoda predviđanja prosječne dnevne potrošnje**,
+- **Metoda predviđanja prosečne dnevne potrošnje**,
 
-  Odaberite jednu od sljedećih metoda koje će se primijeniti u postupku ažuriranja ADU (prosječne dnevne potrošnje):
+  Izaberite jednu od sledećih metoda koja će se primenjivati u postupku ažuriranja ADU (prosečne dnevne potrošnje):
 
-  - 0) Bez ažuriranja 
-  - 1) Aritmetička sredina na temelju prošlih podataka (analiziraju se stvarne povijesne potrošnje, svi podaci imaju jednaku težinu) 
-  - 2) Ponderirana sredina na temelju prošlih podataka (nedavni podaci imaju veću težinu od starijih podataka) 
-  - 3) Aritmetička sredina na temelju budućih podataka (analizira se tablica s predviđenom dnevnom potrošnjom) 
-  - 4) Aritmetička sredina kombinacijom prošlih i budućih podataka (kombinira se metoda 1 i 3) 
-  - 5) Ponderirana sredina prošlih i aritmetička sredina budućih podataka (kombinacija metoda 2 i 3)
-
+  - 0) Bez ažuriranja
+  - 1) Aritmetička sredina na osnovu istorijskih podataka (analiziraju se stvarne istorijske potrošnje, svi podaci imaju jednaku težinu)
+  - 2) Ponderisani prosek na osnovu istorijskih podataka (noviji podaci imaju veću težinu od starijih)
+  - 3) Aritmetička sredina na osnovu budućih podataka (analizira se tabela predviđene dnevne potrošnje)
+  - 4) Aritmetička sredina kombinovanjem istorijskih i budućih podataka (kombinuju se metode 1 i 3)
+  - 5) Ponderisani prosek istorijskih i aritmetička sredina budućih podataka (kombinacija metoda 2 i 3)
 
 - **Dani u prošlosti**,
 
-  Period u prošlosti koji se koristi za izračun prosječne dnevne potrošnje. 
+  Period u prošlosti koji se koristi za obračun prosečne dnevne potrošnje.
 
 - **Dani u budućnosti**,
 
-  Period u budućnosti koji se koristi za predviđanje prosječne dnevne potrošnje. 
+  Period u budućnosti koji se koristi za predviđanje prosečne dnevne potrošnje.
 
 - **Tip zaliha**
 
-  Definira vrstu DDMRP zaliha:  
+  Definiše vrstu DDMRP zaliha:
 
   - 1 = Replenished (dinamička zaliha)
-  - 2 = Replenished override (statička zaliha) 
+  - 2 = Replenished override (statička zaliha)
   - 3 = Min-max (minimalno-maksimalna zaliha)
 
+## Funkcijski tasteri
 
+Omogućava unos DDMRP parametara za kombinaciju artikl-varijanta-skladište, pri čemu šifra skladišta identifikuje [**logističku jedinicu**](/docs/ddmrp/master-data/facilities) (distributivni centar, hub ili fabriku – u tom slučaju polje ostaje prazno).
 
-**Funkcijske tipke**
+Najpre izaberite skladište iz ponuđene liste; prikazaće se artikli koji još nemaju zapis u DDMRP parametrima za to skladište. Za fabriku izaberite bilo koje povezano skladište, jer sistem sve fabrike smatra ekvivalentnim skladištu sa praznom šifrom.
 
-Omogućuje unos DDMRP parametara za kombinaciju artikl-varijanta-skladište, pri čemu kod skladišta identificira [**logističku jedinicu**](/docs/ddmrp/master-data/facilities) (distribucijski centar, hub ili tvornicu – u tom slučaju polje ostaje prazno).
+Zatim izaberite profil bafera za novi zapis kako biste aktivirali dugme **„Unesi“**.
 
-Prvo odaberite skladište iz ponuđene liste; prikazat će se artikli koji još nemaju zapis u DDMRP parametrima za to skladište. Za tvornicu odaberite bilo koje povezano skladište, jer sustav sve tvornice smatra ekvivalentnima skladištu s praznim kodom. 
+Nakon toga izaberite redove za uvoz, pritisnite **„Unesi“**, a zatim otvorite nove zapise kako biste dovršili unos podataka.
 
-Zatim odaberite buffer profil za novi zapis kako biste aktivirali tipku "Unesi".  
+## Taster Zamena parametara
 
-Nakon toga odaberite redove za uvoz, pritisnite "Unesi", a zatim otvorite nove zapise kako biste dovršili unos podataka.  
+Omogućava promenu parametara za više zapisa istog skladišta.
 
-**Tipka Zamjena parametara**
+Ako je potrebno izmeniti više skladišta, postupak se mora ponoviti za svako posebno.
 
-Omogućuje promjenu parametara za više zapisa istog skladišta.  
+Nakon izbora više redova, taster postaje aktivan i otvara obrazac za izmenu jednog ili više parametara za izabrane zapise.
 
-Ako je potrebno izmijeniti više skladišta, postupak se mora ponoviti za svako zasebno. 
+Promena se primenjuje samo ako je pored parametra uključen odgovarajući potvrdni okvir (*flag*).
 
-Nakon odabira više redaka, tipka postaje aktivna i otvara obrazac za izmjenu jednog ili više parametara za odabrane zapise. 
+## Taster Obriši
 
-Promjena se primjenjuje samo ako je pored parametra uključen odgovarajući potvrdni okvir (flag). 
+Omogućava brisanje zapisa, čime se određeni artikl više ne smatra DDMRP baferom u navedenom skladištu.
 
-**Tipka Obriši**
-
-Omogućuje brisanje zapisa, čime se određeni artikl više ne smatra DDMRP bufferom u navedenom skladištu. 
-
-Povijesni podaci vezani za artikl i skladište bit će sačuvani te će ostati dostupni kroz povijest DDMRP parametara i povijest Net Flow Position-a. 
-
-
-
+Istorijski podaci povezani sa artiklom i skladištem biće sačuvani i ostaće dostupni kroz istoriju DDMRP parametara i istoriju Net Flow Positiona.

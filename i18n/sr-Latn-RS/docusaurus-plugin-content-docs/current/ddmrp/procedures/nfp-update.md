@@ -1,32 +1,30 @@
 ---
-title: Ažuriranje vrijednosti Net Flow Position (NFP) 
+title: Ažuriranje vrednosti Net Flow Position (NFP)
 sidebar_position: 5
 ---
 
-Ova procedura provodi izračun neto položaja protoka (NFP) za artikl u bufferu-u unutar određene logističke jedinice.   
+Ova procedura vrši izračun neto pozicije toka (NFP – Net Flow Position) za buffer artikl unutar određene logističke jedinice.
 
-Za isti artikl vrijednost NFP mijenja se ovisno o logističkoj jedinici u kojoj je pohranjen. Ako je, primjerice, artikl pohranjen u pet logističkih jedinica, imat će pet različitih vrijednosti NFP-a, po jednu za svaku jedinicu.
+Za isti artikl, vrednost NFP-a menja se u zavisnosti od logističke jedinice u kojoj se nalazi. Na primer, ako se artikl skladišti u pet logističkih jedinica, imaće pet različitih NFP vrednosti, po jednu za svaku jedinicu.
 
-Izračun se provodi prema sljedećoj formuli, u skladu s teorijskim postavkama:
+Izračun se vrši prema sledećoj formuli, u skladu sa teorijskim postavkama:
 
-NFP = On-Hand + On Order - Demand - Demand Spikes
+**NFP = On-Hand + On Order - Demand - Demand Spikes**
 
-On-hand = označava zalihu u skladištu koje odgovara pojedinačnom retku (u slučaju proizvodnog pogona ovo polje ostaje prazno).  
+**On-Hand** = predstavlja zalihu u skladištu koje odgovara konkretnom zapisu (u slučaju proizvodnog pogona ovo polje ostaje prazno).
 
-On order = predstavlja ukupnu preostalu količinu potvrđenih narudžbi. Za distribucijske centre to su narudžbe dobavljačima i interne narudžbe opskrbe, dok se za proizvodni pogon uzimaju u obzir narudžbe dobavljačima, proizvodne narudžbe i narudžbe za vanjsku obradu.  
+**On Order** = predstavlja ukupnu preostalu količinu potvrđenih narudžbina. Za distributivne centre to su narudžbine prema dobavljačima i interne narudžbine za dopunu zaliha, dok se za proizvodni pogon uzimaju u obzir narudžbine prema dobavljačima, proizvodni nalozi i nalozi za eksternu obradu.
 
-Demand = je zbroj svih nepodmirenih potreba čiji datum obveze nije nakon današnjeg datuma.  
+**Demand** = predstavlja zbir svih neizvršenih potreba čiji datum dospeća nije nakon današnjeg datuma.
 
-Za distribucijske centre i čvorišta potražnja proizlazi iz narudžbi kupaca ili potvrđenih internih narudžbi opskrbe (planirane narudžbe se ne uzimaju u obzir). Za proizvodne pogone, uz navedene izvore potražnje, dodaju se i potrebe iz potvrđenih i planiranih proizvodnih naloga te naloga za vanjsku obradu, kao i zahtjevi za nabavu (RDA) i nefakturirane isporuke.   
+Za distributivne centre i hubove, potražnja proizlazi iz narudžbina kupaca ili potvrđenih internih narudžbina za dopunu zaliha (planirane narudžbine se ne uzimaju u obzir). Za proizvodne pogone, pored navedenih izvora potražnje, uključuju se i potrebe iz potvrđenih i planiranih proizvodnih naloga i naloga za eksternu obradu, kao i zahtevi za nabavku (RDA) i neobračunate isporuke.
 
-Demand Spikes = predstavljaju ukupni broj mogućih vrhunaca potražnje u razdoblju koje započinje sutra i traje do sutrašnjeg dana uvećanog za horizont vrhunaca potražnje (OSH), kako je definirano u DDMRP parametrima.  
+**Demand Spikes** = predstavljaju ukupan broj mogućih vrhova potražnje u periodu koji počinje sutra i traje do datuma dobijenog dodavanjem horizonta vrhova potražnje (OSH), definisanog u DDMRP parametrima.
 
-Rezultat izračuna također uključuje podatake o mogućoj potrebnoj količini za naručivanje. Ako je izračunati NFP manji ili jednak zbroju crvene i žute zone, tada je potrebno izdati narudžbu u količini izračunatoj kao zbroj crvene, žute i zelene zone umanjen za NFP, pri čemu se uzimaju u obzir eventualne iznimke zona na današnji dan.    
+Rezultat izračuna uključuje i podatak o eventualnoj količini koju je potrebno naručiti. Ako je izračunati NFP manji ili jednak zbiru crvene i žute zone, potrebno je izdati narudžbinu u količini koja se izračunava kao zbir crvene, žute i zelene zone umanjen za NFP, pri čemu se uzimaju u obzir eventualni izuzeci zona važeći na tekući dan.
 
-Svi elementi korišteni u izračunu pohranjuju se radi jednostavne analize i mogućnosti pregleda podataka iz prošlih razdoblja.  
+Svi elementi korišćeni u izračunu čuvaju se radi lakše analize i mogućnosti pregleda podataka iz prethodnih perioda.
 
-Za svaki dan pohranjuje se samo jedan izračun. Ako se procedura pokrene više puta unutar istog dana, pohranjuje se samo rezultat posljednje izvršene kalkulacije. Detalji izračuna dostupni su u obliku **Analiza NFP**.
+Za svaki dan čuva se samo jedan obračun. Ako se procedura pokrene više puta tokom istog dana, sačuvaće se samo rezultat poslednjeg izvršenog izračuna.
 
-
-
-
+Detalji obračuna dostupni su kroz funkcionalnost **Analiza NFP-a**.

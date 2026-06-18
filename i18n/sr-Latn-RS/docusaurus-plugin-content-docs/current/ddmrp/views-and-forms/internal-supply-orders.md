@@ -1,38 +1,48 @@
 ---
-title: Interni DDMRP nalozi 
+title: Interni DDMRP nalozi
 sidebar_position: 4
 ---
 
-Interni DDMRP nalozi su narudžbe koje izdaje jedna lokacija (osim tvornice) prema drugoj lokaciji (uključujući tvornicu) radi isporuke tražene robe. 
+# Interni DDMRP nalozi
 
-Zahtijevajući facility djelovat će kao kupac prema facility koja isporučuje robu, koji će djelovati kao dobavljač.   
+Interni DDMRP nalozi predstavljaju naloge koje jedna lokacija (osim fabrike) izdaje drugoj lokaciji (uključujući fabriku) radi isporuke potrebne robe.
 
-Stoga, ove narudžbe imaju dvostruku ulogu: narudžbe za nabavu u lokaciji koja prima robu i narudžbe koje generiraju potrebu u lokaciji koja isporučuje robu. 
+Lokacija koja zahteva robu ima ulogu kupca prema lokaciji koja robu isporučuje, dok lokacija koja isporučuje robu ima ulogu dobavljača.
 
-Podaci narudžbe uključuju skladište odredišta, što odgovara lokaciji koja treba primiti robu i koja je time traži, te skladište izvora, što odgovara lokaciji koja treba isporučiti robu. 
+Zbog toga ovi nalozi imaju dvostruku funkciju:
+- kao nalozi za nabavku u lokaciji koja prima robu,
+- kao nalozi koji generišu potrebu u lokaciji koja robu isporučuje.
 
-Planerski sustav generira planirane interne narudžbe nakon izračuna neto protoka (NFP), koje su već popunjene svim potrebnim podacima i mogu se pretvoriti u stvarne narudžbe putem odgovarajuće procedure (eventualno uz izmjene). 
+Podaci naloga uključuju:
 
-Planirane interne DDMRP narudžbe ne generiraju potrebu u dobavljačkim lokacijama, samo potvrđene narudžbe generiraju potrebu. 
+- **Odredišno skladište** – odgovara lokaciji koja treba da primi robu i koja je podnela zahtev;
+- **Izvorno skladište** – odgovara lokaciji koja treba da isporuči robu.
 
-Ova opcija osigurava da DDMRP prijedlozi narudžbi ne stvaraju potrebu u dobavljačkim lokacijama dok ne budu analizirani i pretvoreni u stvarne narudžbe od strane odgovarajućih osoba, prema postupku planiranja na razinama. 
+Sistem za planiranje generiše planirane interne DDMRP naloge nakon izračuna neto pozicije toka (NFP). Takvi nalozi su već popunjeni svim potrebnim podacima i mogu se pretvoriti u stvarne naloge putem odgovarajuće procedure, po potrebi uz dodatne izmene.
 
-Iz tog razloga, tvornica je logistička jedinica koja se planira posljednja, nakon što su planirane i potvrđene narudžbe logističkih jedinica za distribuciju i prodaju robe. .
+Planirani interni DDMRP nalozi ne generišu potrebe u dobavljačkim lokacijama. Potrebe generišu isključivo potvrđeni nalozi.
 
-Naravno, interne DDMRP narudžbe mogu se ručno kreirati bez ograničenja. 
+Ovakav pristup omogućava da DDMRP predlozi naloga ne stvaraju potrebe u dobavljačkim lokacijama sve dok ih odgovorne osobe ne pregledaju i ne pretvore u stvarne naloge, u skladu sa procedurom planiranja po nivoima.
 
-Datum narudžbe smatra se datumom potrebe (jednako kao datum početka narudžbe proizvodnje), isti za svaki artikl u narudžbi, dok je datum isporuke specifičan za svaki artikl jer može biti različit. 
+Iz tog razloga fabrika predstavlja logističku jedinicu koja se planira poslednja, nakon što su isplanirani i potvrđeni nalozi logističkih jedinica zaduženih za distribuciju i prodaju robe.
 
-Naime, ako lokaciju odredišta opskrbljuje druga lokacija koja nije tvornica, vrijeme isporuke artikala na odredište isto je za sve i jednako je lead time-u navedenom u tablici lokacija za lokaciju odredišta (osim ako nisu utvrđene iznimke u tablici parametara DDMRP za neki artikl). 
+Naravno, interne DDMRP naloge moguće je kreirati i ručno, bez ograničenja.
 
-Ako je, pak, dobavljačka lokacija tvornica, obično će DLT svakog artikla u lokaciji odredištu varirati jer uključuje zbroj vremena transporta od tvornice (koje je isto za sve artikle u buffer-u unutar odredišne jedinice) i DLT artikla u tvornici, što odgovara vremenu potrebnom za njegovu proizvodnju, ako artikl nije buffer u toj tvornici. 
+Datum naloga smatra se datumom potrebe (isto kao datum početka proizvodnog naloga) i zajednički je za sve artikle u nalogu, dok je datum isporuke specifičan za svaki pojedinačni artikl i može se razlikovati.
 
-Za svaki artikl u narudžbi vidljive su količine naručene, poslane i primljene. 
+Ako se odredišna lokacija snabdeva iz druge lokacije koja nije fabrika, vreme isporuke artikala do odredišta jednako je za sve artikle i odgovara lead time-u definisanom u tabeli logističkih lokacija za odredišnu lokaciju (osim ukoliko za određeni artikl nisu definisani izuzeci u tabeli DDMRP parametara).
 
-Kada vrijeme isporuke nije zanemarivo, tijekom transporta bit će ažurirana količina poslana, ali ne i količina primljena, koja će biti ažurirana tek nakon prijema robe. 
+Ako je dobavljačka lokacija fabrika, DLT svakog artikla u odredišnoj lokaciji obično će biti različit, jer se sastoji od:
 
-Razlozi za uplatu i povlačenje definirani su u tablici Facilities (logistička struktura). 
+- vremena transporta od fabrike do odredišne lokacije (isto za sve artikle u buffer-u te lokacije),
+- DLT-a artikla u fabrici, koji predstavlja vreme potrebno za njegovu proizvodnju, ukoliko taj artikl nije buffer u fabrici.
 
+Za svaki artikl u nalogu prikazane su sledeće količine:
 
+- **Naručena količina**
+- **Poslata količina**
+- **Primljena količina**
 
+Kada vreme transporta nije zanemarljivo, tokom transporta ažurira se poslata količina, dok se primljena količina ažurira tek nakon prijema robe.
 
+Razlozi za izdavanje i prijem robe definišu se u tabeli **Facilities (Logistička struktura)**.

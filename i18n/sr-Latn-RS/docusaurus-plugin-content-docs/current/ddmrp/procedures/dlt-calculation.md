@@ -1,28 +1,30 @@
 ---
-title: Ažuriranje disociranog vremena vođenja (DLT)
+title: Ažuriranje razdvojenog vremena nabavke (DLT)
 sidebar_position: 2
 ---
 
-Ova procedura izračunava dekuplirano vrijeme isporuke (DLT) za sve artikle upravljane buffer-om, bilo da se nalaze u tvornici ili u distribucijskim centrima/hubovima. 
+Ova procedura izračunava razdvojeno vreme nabavke (**DLT – Decoupled Lead Time**) za sve artikle koji imaju definisane buffere, bilo da se nalaze u proizvodnji ili u distributivnim centrima / logističkim čvorištima (hubovima).
 
-Ovo je vrlo važan parametar za određivanje veličine zone buffer-a, a time i razine zaliha koje su proporcionalne dlt-u. 
+Ovo je veoma važan parametar za određivanje veličine buffer zona, a samim tim i nivoa zaliha koji su proporcionalni vrednosti DLT-a.
 
-Ako distribucijski centar/hub dobiva zalihe iz drugog huba, DLT artikla koji se u njemu skladište jednak je za sve i određen je vremenom isporuke navedenim u tablici logističke strukture, osim ako artikl u parametrima DDMRP-a ne sadrži iznimku za opskrbu. 
+Ako distributivni centar ili hub dobija zalihe iz drugog huba, DLT artikala koji se u njemu skladište jednak je za sve artikle i određen je vremenom isporuke navedenim u tabeli logističke strukture, osim ukoliko za određeni artikl u DDMRP parametrima nije definisan izuzetak za snabdevanje.
 
-Ako distribucijski centar/hub dobiva zalihe iz tvornice, svaki artikl imat će specifičan DLT koji se dobiva zbrajanjem vremena transporta iz tvornice i vremena potrebnog za proizvodnju proizvoda u tvornici. Vrijednost je nula samo za artikle koji su buffer artikli u tvornici. 
+Ako distributivni centar ili hub dobija zalihe iz fabrike, svaki artikl ima specifičan DLT koji se dobija sabiranjem vremena transporta iz fabrike i vremena potrebnog za proizvodnju proizvoda u fabrici. Vrednost je jednaka nuli samo za artikle koji su buffer artikli u fabrici.
 
-Procedura zahtijeva ispravne i ažurirane informacije, stoga tip dijela profila buffer-a mora biti točno postavljen za artikle upravljane buffer-om, a općenito mora biti definirano i vrijeme isporuke za artikle u listi materijala. Za nabavne artikle potrebno je definirati preferiranog dobavljača s pripadajućom oznakom i vremenom isporuke, dok za ostale artikle mora biti definirano vrijeme isporuke u parametrima MRP-a. 
+Procedura zahteva tačne i ažurne podatke. Zbog toga tip dela definisan u buffer profilu mora biti ispravno postavljen za artikle kojima se upravlja pomoću buffera, a generalno mora biti definisano i vreme nabavke za artikle u sastavnici proizvoda.
 
-Artikli s nedosljednim ili nepotpunim podacima neće biti uzeti u obzir pri izračunu. Po završetku postupka prikazat će se poruka s popisom utvrđenih nedosljednosti. 
+Za nabavne artikle potrebno je definisati preferiranog dobavljača sa odgovarajućom oznakom i vremenom isporuke, dok za ostale artikle mora biti definisano vreme nabavke u MRP parametrima.
 
-Za sve artikle u tvornici koji imaju definiranu listu materijala, procedura zbraja vremena isporuke svakog artikla unutar liste materijala, pri čemu se izračun zaustavlja kada naiđe na artikl s buffer-om, budući da je takav artikl već dostupan i ne zahtijeva dodatno vrijeme za nabavu. 
+Artikli sa nedoslednim ili nepotpunim podacima neće biti uključeni u obračun. Po završetku procedure prikazaće se poruka sa spiskom utvrđenih nedoslednosti.
 
-Najveći zbroj među različitim ograncima određuje vrijednost dlt-a artikla, odnosno vrijeme potrebno za proizvodnju proizvoda. 
+Za sve artikle u fabrici koji imaju definisanu sastavnicu, procedura sabira vremena nabavke svih artikala u sastavnici. Obračun se zaustavlja kada naiđe na artikl koji ima buffer, jer se smatra da je takav artikl već dostupan na zalihama i ne zahteva dodatno vreme za nabavku.
 
-Ovaj se izračun provodi i za proizvode koji u tvornici nisu buffer artikli prema DDMRP-u, budući da oni mogu biti buffer artikli u distribucijskim centrima ili hubovima, pri čemu njihov DLT odgovara vrijednosti dlt-a u tvornici uvećanoj za vrijeme transporta. 
+Najveći zbir među različitim granama sastavnice određuje DLT artikla, odnosno vreme potrebno za njegovu proizvodnju.
 
-Procedura također određuje kritični put svakog artikla, odnosno identificira sve artikle koji se nalaze na najduljem opskrbnom lancu i time određuju vrijednost dlt-a artikla. 
+Ovaj obračun se vrši i za proizvode koji nisu definisani kao DDMRP buffer artikli u fabrici, jer oni mogu biti buffer artikli u distributivnim centrima ili hubovima. U tom slučaju njihov DLT odgovara DLT vrednosti u fabrici uvećanoj za vreme transporta.
 
-Ako se želi smanjiti vrijednost dlt-a artikla, potrebno je odabrati artikle na kritičnom putu kao nove artikle s buffer-om, budući da odabir artikala koji nisu na kritičnom putu neće donijeti nikakvu korist. 
+Procedura takođe određuje **kritični put** svakog artikla, odnosno identifikuje sve artikle koji se nalaze na najdužem lancu snabdevanja i samim tim određuju DLT vrednost artikla.
 
-Po završetku postupka automatski se pokreće procedura ažuriranja zona.
+Ukoliko je cilj smanjenje DLT vrednosti nekog artikla, potrebno je odabrati artikle koji pripadaju kritičnom putu kao nove buffer artikle, jer izbor artikala koji nisu deo kritičnog puta neće doneti nikakvo poboljšanje.
+
+Po završetku procedure automatski se pokreće procedura za ažuriranje zona.

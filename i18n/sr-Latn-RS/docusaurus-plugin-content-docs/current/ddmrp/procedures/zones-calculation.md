@@ -1,24 +1,32 @@
 ---
-title: Ažuriranje vrijednosti zona artikala u bufferu
+title: Ažuriranje vrednosti zona buffer artikala
 sidebar_position: 3
 ---
 
-Ova procedura izračunava vrijednosti zelenih, žutih i crvenih zona svakog buffer-a na temelju DDMRP parametara artikala.
+Ova procedura izračunava vrednosti zelene, žute i crvene zone za svaki buffer na osnovu DDMRP parametara artikla.
 
-Zelena zona određuje se uzimajući u obzir najveću vrijednost među sljedećim elementima:   
+**Zelena zona** određuje se kao najveća vrednost među sledećim elementima:
 
-1. minimalna količina narudžbe
-2. količina potrošena u razdoblju ponovnog naručivanja (ako je definirano) = (ADU x DOC) odnosno prosječna dnevna potrošnja × ciklus ponovnog naručivanja u danima 
-3. ADU x DLT x LTF odnosno prosječna dnevna potrošnja × razdvojeno vrijeme isporuke × faktor vremena isporuke
+1. minimalna količina naručivanja (MOQ)
+2. količina potrošnje tokom ciklusa ponovnog naručivanja (ukoliko je definisan) = **ADU × DOC**, odnosno prosečna dnevna potrošnja × ciklus ponovnog naručivanja izražen u danima
+3. **ADU × DLT × LTF**, odnosno prosečna dnevna potrošnja × razdvojeno vreme nabavke × faktor vremena nabavke
 
-Veličina zelene zone određuje minimalnu količinu narudžbe, što znači da nije moguće izdati narudžbu za količinu manju od vrijednosti ove zone. Također, veća zelena zona smanjuje učestalost naručivanja, jer se narudžbe izdaju rjeđe
+Veličina zelene zone određuje minimalnu količinu narudžbine, što znači da nije moguće izdati narudžbinu za količinu manju od vrednosti ove zone. Takođe, veća zelena zona smanjuje učestalost naručivanja, jer se narudžbine izdaju ređe.
 
-Zona žuta određena je kao ADU x DLT, tj. prosječna dnevna potrošnja x neovisno vrijeme isporuke.
+**Žuta zona** određuje se kao:
 
-Zona crvena se izračunava kao ADU x DLT x LTF (1 + VAF), što znači prosječna dnevna potrošnja x razdvojeni vrijeme isporuke x faktor vremena isporuke, sve pomnoženo sa 1 uvećanom za faktor varijabilnosti.
+**ADU × DLT**
 
-Povećanjem varijabilnosti potrošnje povećava se i crvena zona, koja predstavlja sigurnosnu zalihu artikla, odnosno onu količinu zaliha koja je namijenjena nepredviđenim situacijama.   
+odnosno prosečna dnevna potrošnja × razdvojeno vreme nabavke.
 
-Ova procedura uzima u obzir mogući **Korekcijski faktor za prosječnu dnevnu potrošnju** kao i eventualne iznimke za crvenu, žutu i zelenu zonu koje su važeće u trenutku njezina izvođenja.   
+**Crvena zona** izračunava se prema formuli:
 
-Dobiveni rezultat koristi se za ažuriranje vrijednosti zona u tablici DDMRP parametara.  
+**ADU × DLT × LTF × (1 + VAF)**
+
+odnosno prosečna dnevna potrošnja × razdvojeno vreme nabavke × faktor vremena nabavke × (1 + faktor varijabilnosti).
+
+Povećanjem varijabilnosti potrošnje povećava se i crvena zona, koja predstavlja sigurnosnu zalihu artikla, odnosno količinu zaliha namenjenu pokrivanju nepredviđenih situacija.
+
+Ova procedura uzima u obzir eventualni **Faktor korekcije prosečne dnevne potrošnje**, kao i sve važeće izuzetke za crvenu, žutu i zelenu zonu koji su aktivni u trenutku izvršavanja procedure.
+
+Dobijeni rezultati koriste se za ažuriranje vrednosti zona u tabeli DDMRP parametara.

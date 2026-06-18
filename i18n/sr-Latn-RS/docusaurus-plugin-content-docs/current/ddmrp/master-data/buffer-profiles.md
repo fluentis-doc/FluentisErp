@@ -1,39 +1,40 @@
 ---
-title: Profili buffer-a 
+title: Profili bafera
 sidebar_position: 4
 ---
 
-Profil buffer-a definira zajedničke karakteristike za mnoge artikle sa buffer-om.    
-Na taj način, svaki artikl sa buffer-om može imati svoj profil, što olakšava i ubrzava izmjenu njegovih parametara. Naime, svaka izmjena u profilu automatski će se primijeniti na sve artikle povezane s tim profilom.   
+Profil *bafera* definiše zajedničke karakteristike za više artikala sa *baferom*.  
+Na taj način svaki artikl sa baferom može imati svoj profil, što olakšava i ubrzava izmenu njegovih parametara. Naime, svaka izmena u profilu automatski će biti primenjena na sve artikle povezane sa tim profilom.
 
-Profil se definira kombinacijom tri parametra:  
+Profil se definiše kombinacijom tri parametra:
 
-1. **vrsta dijela**
+1. **vrsta dela**
 
-   - M = proizvodnja, tj. dio proizveden u tvornici (gotov proizvod ili poluproizvod)    
-   - I = poluproizvod, tj. poluproizvod proizveden u tvornici (ova distinkcija u odnosu na M je opcionalna)     
-   - P =  kupnja, kupljeni dio   
-   - D = distribucija, dio pohranjen u distribucijskom centru (u ovom slučaju zapis ne može imati prazno polje skladišta)   
+   - M = proizvodnja, odnosno deo proizveden u fabrici (gotov proizvod ili poluproizvod)  
+   - I = poluproizvod, odnosno poluproizvod proizveden u fabrici (ova razlika u odnosu na M je opciona)  
+   - P = nabavka, kupljeni deo  
+   - D = distribucija, deo uskladišten u distributivnom centru (u ovom slučaju zapis ne može imati prazno polje skladišta)
 
 2. **kategorija vremena isporuke**
 
-  Upoređujući artikle s istom vrstom dijela, može se definirati niža i viša vrijednost vremena isporuke koja omogućuju grupiranje artikala u tri skupine s pripadajućim koeficijentom između 0 i 1.
+   Upoređivanjem artikala iste vrste dela mogu se definisati donja i gornja vrednost vremena isporuke koje omogućavaju grupisanje artikala u tri grupe sa odgovarajućim koeficijentom između 0 i 1.
 
-   - S = artikli s kratkim vremenom isporuke (koeficijent između 0,61 i 1)  
-   - M = artikli s srednjim vremenom isporuke (koeficijent između 0,41 i 0,6) 
-   - L = artikli s dugim vremenom isporuke (koeficijent između 0 i 0,4)  
+   - S = artikli sa kratkim vremenom isporuke (koeficijent između 0,61 i 1)  
+   - M = artikli sa srednjim vremenom isporuke (koeficijent između 0,41 i 0,6)  
+   - L = artikli sa dugim vremenom isporuke (koeficijent između 0 i 0,4)
 
-   Vrijednost koeficijenta je obrnuto proporcionalna vremenu isporuke, jer je za artikle s dugim vremenom isporuke bolje imati više narudžbi manjih količina nego nekoliko narudžbi velikih količina, kako bi se smanjio rizik od problema s isporukom.   
+   Vrednost koeficijenta je obrnuto proporcionalna vremenu isporuke, jer je za artikle sa dugim vremenom isporuke bolje imati više porudžbina manjih količina nego nekoliko porudžbina velikih količina, kako bi se smanjio rizik od problema sa isporukom.
 
 3. **kategorija varijabilnosti**
 
-   Uspoređujući artikle s istom vrstom dijela i analizirajući varijabilnost u potražnji i opskrbi, odlučuje se je li buffer karakteriziran niskom, srednjom ili visokom varijabilnošću.    
-   Ovo je složenija analiza od one za vrijeme isporuke jer mora uzeti u obzir varijabilnost potražnje (na primjer, provjerom statističke disperzije vrijednosti potražnje kroz značajan vremenski period), varijabilnost opskrbe (na primjer, uzimajući u obzir statističku disperziju kašnjenja isporuke), te uzimajući u obzir jesu li kao "djeca" ili "roditelji" prisutni drugi buffer-i koji prirodno smanjuju varijabilnost.    
+   Upoređivanjem artikala iste vrste dela i analizom varijabilnosti u potražnji i snabdevanju odlučuje se da li je bafer karakterisan niskom, srednjom ili visokom varijabilnošću.
 
-   Razmatraju se tri razine varijabilnosti povezane s koeficijentom između 0 i 1, kako slijedi:    
+   Ovo je složenija analiza od analize vremena isporuke jer mora uzeti u obzir varijabilnost potražnje (na primer, proverom statističke disperzije vrednosti potražnje tokom značajnog vremenskog perioda), varijabilnost snabdevanja (na primer, uzimanjem u obzir statističke disperzije kašnjenja isporuke), kao i činjenicu da li su kao „deca“ ili „roditelji“ prisutni drugi baferi koji prirodno smanjuju varijabilnost.
 
-   - L = niska varijabilnost (koeficijent između 0 i 0,4)  
-   - M = srednja varijabilnost (koeficijent između 0,41 i 0,6)  
-   - H = visoka varijabilnost (koeficijent između 0,61 i 1)   
+   Razmatraju se tri nivoa varijabilnosti povezana sa koeficijentom između 0 i 1, i to:
 
-   Što je varijabilnost veća, to mora biti viša razina sigurnosnih zaliha buffer-a (crvena zona), što je zapravo proporcionalno koeficijentu varijabilnosti.   
+   - L = niska varijabilnost (koeficijent između 0 i 0,4)  
+   - M = srednja varijabilnost (koeficijent između 0,41 i 0,6)  
+   - H = visoka varijabilnost (koeficijent između 0,61 i 1)
+
+   Što je varijabilnost veća, to mora biti viši nivo sigurnosnih zaliha bafera (crvena zona), koji je zapravo proporcionalan koeficijentu varijabilnosti.

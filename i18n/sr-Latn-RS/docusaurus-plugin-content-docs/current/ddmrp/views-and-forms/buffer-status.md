@@ -1,17 +1,25 @@
 ---
-title: Stanje buffer-a 
+title: Stanje buffera
 sidebar_position: 1
 ---
-Ovo izvješće prikazuje stanje razine zaliha unutar buffer-a.   
 
-Za određeni buffer (zaliha u određenom skladištu) analizira se trenutna i buduća razina zaliha u vremenskom razdoblju usporedivom s dlt-om artikla.   
+# Stanje buffera
 
-Prikazane su stavke s različitim datumima počevši od danas, a za svaku se navodi stvarna razina zaliha te postotna vrijednost zaliha u odnosu na crvenu zonu artikla.   
+Ovaj izveštaj prikazuje stanje nivoa zaliha unutar buffera.
 
-Koristi se sustav boja kako bi se istaknula razina kritičnosti zaliha.   
+Za određeni buffer (zaliha u određenom skladištu) analizira se trenutni i budući nivo zaliha u vremenskom periodu uporedivom sa DLT-om artikla.
 
-Ako je zaliha manja od 0, koristi se tamno crvena boja (vrlo kritična situacija s prekidom zaliha i nemogućnošću ispunjenja potražnje). Ako je između 0% i 50% crvene zone, koristi se crvena boja (kritična situacija s rizikom prekida zaliha). Ako je između 50% i 100% crvene zone, koristi se žuta boja (nije kritično, ali zahtijeva praćenje). Ako je iznad 100%, koristi se zelena boja (situacija bez kritičnosti).   
+Prikazuju se stavke sa različitim datumima počev od današnjeg dana, a za svaku se navodi stvarni nivo zaliha, kao i procenat zaliha u odnosu na crvenu zonu artikla.
 
-Treba napomenuti da negativna zaliha označava nedostatak robe uz postojeću potražnju, što dovodi do kašnjenja i prekida opskrbnog lanca. Nulta zaliha označava odsutnost robe, ali bez trenutne potražnje, što ne uzrokuje trenutačne probleme, ali može postati kritično ako se potražnja pojavi prije nego što se buffer obnovi.   
+Koristi se sistem boja kako bi se istakao nivo kritičnosti zaliha.
 
-Redovi s budućim datumima odnose se na prognoze vrijednosti zalihe uzimajući u obzir već poznatu potražnju u tom trenutku, kako bi se unaprijed istaknule moguće kritične situacije (one označene crvenom bojom).
+- Ako je zaliha manja od 0, koristi se tamnocrvena boja (veoma kritična situacija sa nestašicom zaliha i nemogućnošću zadovoljenja potražnje).
+- Ako je između 0% i 50% crvene zone, koristi se crvena boja (kritična situacija sa rizikom od nestašice).
+- Ako je između 50% i 100% crvene zone, koristi se žuta boja (situacija nije kritična, ali zahteva praćenje).
+- Ako je iznad 100%, koristi se zelena boja (situacija bez kritičnosti).
+
+Važno je napomenuti da negativna zaliha označava manjak robe uz postojeću potražnju, što dovodi do kašnjenja i prekida u lancu snabdevanja.
+
+Nulta zaliha označava odsustvo robe, ali bez trenutne potražnje, što ne izaziva neposredne probleme, ali može postati kritično ukoliko se potražnja pojavi pre nego što se buffer dopuni.
+
+Redovi sa budućim datumima odnose se na projekcije vrednosti zaliha koje uzimaju u obzir već poznatu potražnju u tom trenutku, kako bi se unapred identifikovale moguće kritične situacije (one označene crvenom bojom).

@@ -1,10 +1,14 @@
 ---
-title: Uvod u šifarnik DDMRP-a 
+title: Uvod u DDMRP šifarnike
 sidebar_position: 0
 ---
 
-U ovom odjeljku nalaze se matični podaci o artiklima koji se upravljaju prema DDMRP logici, odnosno takozvani bufferi, odnosno strateške zalihe koje se dimenzioniraju i obnavljaju prema DDMRP logici.
+U ovom odeljku nalaze se matični podaci o artiklima kojima se upravlja prema DDMRP logici, odnosno takozvanim *bufferima* – strateškim zalihama koje se dimenzionišu i obnavljaju prema DDMRP metodologiji.
 
-Prvo, potrebno je obavijestiti Fluentis da je artikal DDMRP buffer putem kartice [**Parametri MRP**](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) selekcijom vrijednosti za Politiku opskrbe među dostupnim opcijama (bufferi dinamički, bufferi fiksni, bufferi min-max).
+Pre svega, potrebno je obavestiti Fluentis da je određeni artikl DDMRP buffer putem kartice [**MRP Parametri**](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), izborom odgovarajuće vrednosti u polju **Politika snabdevanja** među dostupnim opcijama (*dinamički bufferi*, *fiksni bufferi*, *min-max bufferi*).
 
-Dinamički bufferi predviđaju promjene u vremenu triju karakterističnih zona (zelena, žuta, crvena), a time i prosječnu razinu zaliha; fiksni bufferi koriste fiksne vrijednosti zona, pa je i prosječna razina zaliha nepromjenjiva (koriste se u slučajevima ograničenog skladišnog prostora, investicijskih ograničenja, sigurnosnih zahtjeva itd.); min-max bufferi koriste samo crvenu i zelenu zonu. 
+**Dinamički bufferi** predviđaju promene tokom vremena za tri karakteristične zone (zelenu, žutu i crvenu), a samim tim i promene prosečnog nivoa zaliha.
+
+**Fiksni bufferi** koriste nepromenljive vrednosti zona, pa je i prosečan nivo zaliha konstantan. Koriste se u situacijama sa ograničenim skladišnim kapacitetom, investicionim ograničenjima, bezbednosnim zahtevima i sličnim slučajevima.
+
+**Min-max bufferi** koriste samo crvenu i zelenu zonu za upravljanje zalihama.

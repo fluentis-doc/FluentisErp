@@ -1,24 +1,28 @@
 ---
-title: Ispravak zelene zone  
+title: Korekcija zelene zone
 sidebar_position: 8
 ---
 
-Vrijednost zelene zone automatski izračunava postupak ažuriranja zona na temelju vrijednosti DDMRP parametara artikla.   
+Vrednost **zelene zone** automatski izračunava procedura za ažuriranje zona na osnovu vrednosti DDMRP parametara artikla.
 
-Putem ove tablice moguće je prisilno postaviti drugačiju vrijednost na određene datume.   
+Pomoću ove tabele moguće je prisilno postaviti drugačiju vrednost za određene datume.
 
-Planerski sustav uzima u obzir eventualne ispravke zona pri izračunu NFP-a, čak i ako postupak ažuriranja zona nije proveden. 
+Sistem za planiranje uzima u obzir eventualne korekcije zona prilikom izračunavanja NFP-a, čak i ako procedura za ažuriranje zona nije pokrenuta.
 
-Tipično se može nametnuti drugačija vrijednost od one dobivene normalnim izračunom za ograničeno vremensko razdoblje, kako bi se promijenila veličina izdanih narudžbi.   
- 
-Ako se vrijednost zelene zone poveća, izdavat će se veće narudžbe i rjeđe će se naručivati; ako se smanji, događa se suprotno. 
+Uobičajeno je da se za ograničeni vremenski period nametne drugačija vrednost od one dobijene standardnim izračunom, kako bi se promenila veličina izdatih narudžbina.
 
-Tipičan primjer odnosi se na proizvodne resurse s značajnim vremenima pripreme.   
+Ako se vrednost zelene zone poveća, izdavaće se veće narudžbine i ređe će se vršiti naručivanje; ako se smanji, dešava se suprotno.
 
-Ako proizvodni ciklus artikla na skladištu uključuje obradu na resursu s nezanemarivim vremenom postavljanja i ako je taj resurs usko grlo, tj. resurs s radnim opterećenjem vrlo blizu njegovog proizvodnog kapaciteta, nastoji se smanjiti vrijeme neaktivnosti resursa zbog postavljanja povećanjem veličine proizvodnih serija. To se postiže određivanjem minimalne naručive količine u DDMRP parametrima artikla, što posljedično određuje i veličinu njegove zelene zone.   
+Tipičan primer odnosi se na proizvodne resurse sa značajnim vremenima pripreme.
 
-Ako je ova potreba prisutna samo u određenom vremenskom razdoblju, umjesto postavljanja minimalne naručive količine, unosi se iznimka za zelenu zonu za to razdoblje.   
+Ako proizvodni ciklus artikla na zalihama uključuje obradu na resursu sa značajnim vremenom podešavanja i ako je taj resurs usko grlo, odnosno resurs čije je opterećenje veoma blizu maksimalnog kapaciteta, cilj je smanjiti vreme zastoja zbog podešavanja povećanjem veličine proizvodnih serija.
 
-Ovo se, primjerice, događa kod proizvoda s izraženom sezonalnošću, gdje se u razdoblju prije vrhunca sezonske potražnje stvara odgovarajuća zaliha privremenim povećanjem zelene zone, čime se povećava produktivnost zasićenog resursa. Nakon toga, kada je resurs manje opterećen i više nije zasićen, odnosno kada postoji višak proizvodnog kapaciteta, provodi se češća proizvodnja manjih narudžbi, dajući prednost fleksibilnosti proizvodnog sustava.   
+To se postiže definisanjem minimalne količine za naručivanje u DDMRP parametrima artikla, čime se indirektno određuje i veličina njegove zelene zone.
 
-Dulja ukupna vremena postavljanja u tom razdoblju nisu problem jer resurs nije u potpunosti opterećen, pa postoji raspoloživo neiskorišteno vrijeme resursa. 
+Ako je ova potreba prisutna samo tokom određenog vremenskog perioda, umesto postavljanja minimalne količine za naručivanje, unosi se izuzetak za zelenu zonu za taj period.
+
+Ovakva situacija je tipična za proizvode sa izraženom sezonskom potražnjom, gde se u periodu koji prethodi vrhuncu sezone formiraju odgovarajuće zalihe privremenim povećanjem zelene zone, čime se povećava produktivnost opterećenog resursa.
+
+Kasnije, kada je resurs manje opterećen i više nije usko grlo, odnosno kada postoji višak proizvodnog kapaciteta, prelazi se na češću proizvodnju manjih količina, dajući prednost fleksibilnosti proizvodnog sistema.
+
+Duže ukupno vreme podešavanja u tom periodu ne predstavlja problem, jer resurs nije potpuno opterećen i postoji raspoloživo slobodno vreme.

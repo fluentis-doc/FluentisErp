@@ -1,24 +1,31 @@
 ---
-title: Detalj narudžbi za nabavu / potreba 
+title: Detalj naloga za nabavku i potreba
 sidebar_position: 5
 ---
 
-Obrazac detalja narudžbi za nabavu omogućuje filtriranje i pregled svih neizvršenih narudžbi nabave, bilo planiranih ili potvrđenih, dok obrazac potreba omogućuje filtriranje i prikaz popisa neizvršenih dokumenata koji stvaraju potražnju. Dvostrukim klikom na redak otvara se odgovarajuća narudžba. 
+Obrazac za detalje naloga za nabavku omogućava filtriranje i pregled svih neizvršenih naloga za nabavku, bilo da su planirani ili potvrđeni, dok obrazac potreba omogućava filtriranje i prikaz liste neizvršenih dokumenata koji generišu potražnju.
 
-U obrascu potreba prikazan je artikl koji je angažiran. Stoga, u slučaju narudžbi za proizvodnju i radnih naloga, to nije artikl iz same narudžbe. 
+Dvostrukim klikom na red otvara se odgovarajući nalog.
+U obrascu potreba prikazuje se angažovani artikl. Zbog toga, kod proizvodnih naloga i radnih naloga, prikazani artikl nije nužno artikl definisan na samom nalogu, već artikl na koji se potreba odnosi.
 
-Sekcija za filtriranje omogućuje odabir prema prirodi narudžbe, statusu narudžbe, artiklu i drugim kriterijima. 
+Sekcija za filtriranje omogućava izbor prema:
+- vrsti naloga,
+- statusu naloga,
+- artiklu,
+- kao i drugim dostupnim kriterijumima.
 
-Ovi podaci posebno su važni kada se želi detaljno analizirati situacija narudžbi za određeni artikl, osobito kroz analizu NFP-a. 
+Ovi podaci su posebno značajni kada je potrebno detaljno analizirati stanje naloga za određeni artikl, naročito kroz analizu NFP-a (*Net Flow Position*).
+Svaki red obojen je u skladu sa statusom buffer-a artikla (statusom zaliha) u odnosu na skladište isporuke navedeno u redu naloga:
 
-Svaki redak obojen je prema statusu buffer-a artikla (statusu zaliha) u odnosu na skladište isporuke navedeno u retku narudžbe (skladište odredišta za interne DDMRP narudžbe) u slučaju narudžbi za nabavu, ili skladište angažmana za narudžbe koje stvaraju potrebu. 
+- kod naloga za nabavku koristi se skladište isporuke (odredišno skladište za interne DDMRP naloge),
+- kod dokumenata koji generišu potrebu koristi se skladište angažovanja.
 
-Boje su: tamno crvena za negativnu zalihu, crvena za zalihe niže od 50% crvene zone, žuta ako je zaliha između 50% i 100% crvene zone, zelena ako je zaliha iznad crvene zone (minimalna normalna zaliha) i ispod zbroja crvene i zelene zone (maksimalna normalna zaliha), plava ako je iznad tog zbroja (prekomjerna zaliha). 
+Koriste se sledeće boje:
+- **Tamnocrvena** – negativna zaliha;
+- **Crvena** – zaliha manja od 50% crvene zone;
+- **Žuta** – zaliha između 50% i 100% crvene zone;
+- **Zelena** – zaliha iznad crvene zone (minimalni normalni nivo zaliha) i ispod zbira crvene i zelene zone (maksimalni normalni nivo zaliha);
+- **Plava** – zaliha veća od zbira crvene i zelene zone (prekomerna zaliha).
 
-Ako artikl nije buffer u skladištu isporuke navedenom u retku narudžbe, kolona status zaliha ostat će prazna, a redak neće biti obojen. 
-
-Ako skladište u retku narudžbe nije specificirano, smatrat će se skladištem Tvornica. 
-
-
-
-
+Ako artikl nije definisan kao buffer u skladištu isporuke navedenom u redu naloga, kolona **Status zaliha** ostaće prazna, a red neće biti obojen.
+Ako skladište nije navedeno u redu naloga, sistem će podrazumevano smatrati da se radi o skladištu **Fabrika**.

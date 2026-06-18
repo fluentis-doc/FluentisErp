@@ -1,120 +1,118 @@
 ---
-title: Logistička struktura 
+title: Logistička struktura
 sidebar_position: 1
 ---
 
-Fluentis DDMRP može upravljati ne samo jednom tvornicom, već i cijelim opskrbnim lancem koji se sastoji od tvornice, različitih hubova i distribucijskih centara.   
+Fluentis DDMRP može upravljati ne samo jednom fabrikom, već i celokupnim lancem snabdevanja koji se sastoji od fabrike, različitih hubova i distributivnih centara.
 
-Ova tablica prikazuje logističku strukturu, odnosno opskrbni lanac, na kojem Fluentis DDMRP djeluje.    
+Ova tabela prikazuje logističku strukturu, odnosno lanac snabdevanja, na kojem Fluentis DDMRP funkcioniše.
 
-U sustavu Fluentis svaki čvor opskrbnog lanca nazivamo "Facility", a ova tablica sadrži popis svih "Facilities".   
+U sistemu Fluentis svaki čvor lanca snabdevanja naziva se „Facility“, a ova tabela sadrži spisak svih „Facilities“.
 
-Razmatra se hijerarhijska struktura kako je opisano u nastavku.   
+Razmatra se hijerarhijska struktura opisana u nastavku.
 
-**Distribucijski centri**
+## Distributivni centri
 
-To su logističke jedinice koje opskrbljuju krajnje kupce izravno iz vlastitih zaliha.   
+To su logističke jedinice koje snabdevaju krajnje kupce direktno iz sopstvenih zaliha.
 
-Geografski su smješteni na strateškim lokacijama kako bi se smanjilo vrijeme transporta do krajnjih kupaca.  
+Geografski su smešteni na strateškim lokacijama kako bi se smanjilo vreme transporta do krajnjih kupaca.
 
-Svaki distribucijski centar opskrbljuje se iz međuprostornog huba ili izravno iz tvornice.   
+Svaki distributivni centar snabdeva se iz *međuregionalnog huba* ili direktno iz fabrike.
 
-**Hubovi**
+## Hubovi
 
-To su logističke jedinice koje opskrbljuju distribucijske centre.   
+To su logističke jedinice koje snabdevaju distributivne centre.
 
-Geografski su smješteni na strateškim lokacijama kako bi se smanjilo vrijeme transporta do distribucijskih centara.   
+Geografski su smešteni na strateškim lokacijama kako bi se smanjilo vreme transporta do distributivnih centara.
 
-Hubovi omogućuju održavanje visoke razine usluge za krajnje kupce, istovremeno smanjujući ukupnu razinu zaliha u distribucijskoj mreži. 
+Hubovi omogućavaju održavanje visokog nivoa usluge za krajnje kupce, uz istovremeno smanjenje ukupnog nivoa zaliha u distributivnoj mreži.
 
-Hubovi se opskrbljuju iz tvornice ili, u vrlo velikim mrežama, iz drugih hubova. 
+Hubovi se snabdevaju iz fabrike ili, u veoma velikim mrežama, iz drugih hubova.
 
-**Tvornica**
+## Fabrika
 
-U logističkoj strukturi razmatra se samo jedna tvornica.   
+U logističkoj strukturi razmatra se samo jedna fabrika.
 
-Ona opskrbljuje hubove i/ili distribucijske centre.   
+Ona snabdeva hubove i/ili distributivne centre.
 
-Između jedinica logističke strukture postoji odnos kupac-dobavljač (svaka logistička jedinica mora biti kodificirana i kao kupac i kao dobavljač).   
+Između jedinica logističke strukture postoji odnos kupac-dobavljač (svaka logistička jedinica mora biti šifrirana i kao kupac i kao dobavljač).
 
-Distribucijski centri su kupci i nisu dobavljači unutar logističke strukture, hubovi su istovremeno kupci (tvornice ili drugih hubova) i dobavljači (distribucijskih centara ili drugih hubova), dok tvornica ima distribucijske centre ili hubove kao kupce, ali nema nijednu logističku jedinicu kao dobavljača.   
+Distributivni centri su kupci i nisu dobavljači unutar logističke strukture, hubovi su istovremeno kupci (fabrike ili drugih hubova) i dobavljači (distributivnih centara ili drugih hubova), dok fabrika ima distributivne centre ili hubove kao kupce, ali nema nijednu logističku jedinicu kao dobavljača.
 
-Polja koja definiraju logističku jedinicu su sljedeća:   
+Polja koja definišu logističku jedinicu su sledeća:
 
-**Skladište**
+### Skladište
 
-To je kod skladišta povezan s logističkom jedinicom.   
+To je šifra skladišta povezana sa logističkom jedinicom.
 
-Osim tvornice, svaka logistička jedinica jednoznačno je identificirana skladištem koje joj je dodijeljeno (ovaj odabir je napravljen kako bi se povećala kompatibilnost s vanjskim aplikacijama).   
+Osim fabrike, svaka logistička jedinica jednoznačno je identifikovana skladištem koje joj je dodeljeno (ovaj izbor napravljen je radi veće kompatibilnosti sa spoljnim aplikacijama).
 
-Tvornici se, međutim, može dodijeliti više skladišta, a sustav DDMRP će uzeti u obzir samo ona skladišta koja su navedena u ovoj tablici i koja sadrže buffer artikle tvornice. Skladišta unutar tvornice koja nisu navedena u ovoj tablici ne smiju sadržavati DDMRP buffere jer bi ih sustav zanemario pri izračunu NFP-a.   
+Fabrici se, međutim, može dodeliti više skladišta, a DDMRP sistem će uzimati u obzir samo ona skladišta koja su navedena u ovoj tabeli i koja sadrže bafer artikle fabrike. Skladišta unutar fabrike koja nisu navedena u ovoj tabeli ne smeju sadržati DDMRP bafere, jer bi ih sistem zanemario prilikom obračuna NFP-a.
 
-Skladišta navedena u ovoj tablici koja nisu označena kao tvornica bit će ignorirana od strane MRP postupka, budući da su to skladišta za distribuciju robe, a ne za proizvodnju. Planirat će se pojedinačno putem izračuna neto pozicije toka (NFP) iz MRP izbornika.   
- 
-U sustavu Fluentis DDMRP, logistička jedinica "Tvornica" bit će identificirana praznim kodom skladišta, upravo zato što je to jedina logistička jedinica kojoj se može pridružiti više skladišta, čime se gubi jednoznačna veza između skladišta i logističke jedinice.   
+Skladišta navedena u ovoj tabeli koja nisu označena kao fabrika biće ignorisana od strane MRP procedure, pošto se radi o skladištima za distribuciju robe, a ne za proizvodnju. Njima će se upravljati pojedinačno putem obračuna neto pozicije toka (NFP) iz MRP menija.
+
+U sistemu Fluentis DDMRP, logistička jedinica „Fabrika“ identifikovaće se praznom šifrom skladišta, upravo zato što je to jedina logistička jedinica kojoj može biti pridruženo više skladišta, čime se gubi jednoznačna veza između skladišta i logističke jedinice.
 
 **Kupac**
 
-Njegova vrijednost identificira logističku jedinicu koja će opskrbiti robu onu koja je identificirana kodom skladišta i/ili kupčevim kodom u zapisu.    
+Njegova vrednost identifikuje logističku jedinicu kojoj će roba biti isporučena, a koja je identifikovana šifrom skladišta i/ili šifrom kupca u zapisu.
 
-Ako je ta jedinica dobavljač druge logističke jedinice, tada mora imati i povezani dobavljačev račun.   
+Ako je ta jedinica dobavljač druge logističke jedinice, tada mora imati i povezanu šifru dobavljača.
 
-Isti kupčev kod stoga ne može biti povezan s više skladišta (osim tvornice), kao što isti kod skladišta ne može biti povezan s više kupčevih kodova.  
+Ista šifra kupca stoga ne može biti povezana sa više skladišta (osim fabrike), kao što ni ista šifra skladišta ne može biti povezana sa više šifara kupaca.
 
 **Dobavljač**
 
-Njegova vrijednost identificira logističku jedinicu koja će opskrbiti robu onu koja je identificirana kodom skladišta i/ili kupčevim kodom u zapisu.    
+Njegova vrednost identifikuje logističku jedinicu koja će snabdevati robom onu jedinicu koja je identifikovana šifrom skladišta i/ili šifrom kupca u zapisu.
 
-Samo za zapise povezane s tvornicom (kada je odabran flag Tvornica), ovo polje nije moguće uređivati i ostaje prazno jer tvornica ne može biti opskrbljena od strane druge logističke jedinice.   
+Samo za zapise povezane sa fabrikom (kada je aktiviran indikator Fabrika), ovo polje nije moguće uređivati i ostaje prazno, jer fabrika ne može biti snabdevana od strane druge logističke jedinice.
 
-Kao dobavljač može se odabrati samo logistička jedinica koja je već unesena u ovu tablicu (nije moguće odabrati dobavljača iz općeg popisa dobavljača).
+Kao dobavljač može se odabrati samo logistička jedinica koja je već uneta u ovu tabelu (nije moguće odabrati dobavljača iz opšteg registra dobavljača).
 
-Sustav provjerava kupčev kod povezan s dobavljačevim kodom, a zatim traži taj kupčev kod u polju kupca različitih zapisa u tablici Facilities, pa logistička jedinica dobavljač mora imati povezane i kupčev i dobavljačev kod.   
+Sistem proverava šifru kupca povezanu sa šifrom dobavljača, a zatim traži tu šifru kupca u polju Kupac drugih zapisa u tabeli Facilities, pa logistička jedinica dobavljača mora imati povezane i šifru kupca i šifru dobavljača.
 
-To znači da unos u ovu tablicu mora početi od najnižeg sloja, tj. od tvornice, a zatim se penjati prema eventualnim hubovima i na kraju distribucijskim centrima. Dakle, unos se vrši prema padajućem redoslijedu prioriteta.   
+To znači da unos u ovu tabelu mora početi od najnižeg nivoa, odnosno od fabrike, zatim nastaviti preko eventualnih hubova i na kraju distributivnih centara. Dakle, unos se vrši prema opadajućem redosledu prioriteta.
 
-Nije obavezno da svi artikli prisutni u logističkoj jedinici budu opskrbljeni od strane jedinice označene kao dobavljač.   
+Nije obavezno da svi artikli prisutni u logističkoj jedinici budu snabdevani od strane jedinice označene kao dobavljač.
 
-Ta jedinica ostaje zadani dobavljač koji će se koristiti pri kreiranju **planiranih unutarnjih narudžbi** koje generira sustav planiranja i za izračun odvojenog vremena isporuke (DLT).    
+Ta jedinica ostaje podrazumevani dobavljač koji će se koristiti prilikom kreiranja **planiranih internih narudžbina** koje generiše sistem planiranja i za izračunavanje razdvojenog vremena isporuke (DLT).
 
-U tablici DDMRP parametara za artikle mogu se definirati iznimke, odabirom druge logističke jedinice ili općeg vanjskog dobavljača izvan logističke strukture, zajedno s pripadajućim vremenom transporta. 
+U tabeli DDMRP parametara za artikle mogu se definisati izuzeci, izborom druge logističke jedinice ili opšteg eksternog dobavljača van logističke strukture, zajedno sa pripadajućim vremenom transporta.
 
 **Skladište dobavljača**
 
-To je kod skladišta povezan s logističkom jedinicom dobavljača odabranog zapisa; ova vrijednost omogućuje brzo pretraživanje u ovoj tablici putem polja Skladište.    
+To je šifra skladišta povezana sa logističkom jedinicom dobavljača izabranom u zapisu; ova vrednost omogućava brzo pretraživanje u tabeli putem polja Skladište.
 
-Ako je dobavljač tvornica, ovo polje bit će prazno jer je tvornica jedina logistička jedinica kojoj se može povezati više skladišta.   
+Ako je dobavljač fabrika, ovo polje će biti prazno, jer je fabrika jedina logistička jedinica kojoj može biti pridruženo više skladišta.
 
-**Tvornica**
+**Fabrika**
 
-To je flag koji označava da se skladište u zapisu odnosi na tvornicu (u tom slučaju polje dobavljač ostaje prazno).   
+Ovo je indikator koji označava da se skladište u zapisu odnosi na fabriku (u tom slučaju polje Dobavljač ostaje prazno).
 
-Za tvornicu je moguće imati više zapisa, po jedan za svako skladište koje sustav planiranja mora uzeti u obzir.   
+Za fabriku je moguće imati više zapisa, po jedan za svako skladište koje sistem planiranja treba da uzme u obzir.
 
-Nakon unosa prvog skladišta s aktivnom oznakom Tvornica, za sljedeća skladišta bit će provjereno je li kupčev kod isti kao u zapisima s aktivnom oznakom tvornica, jer će tvornici uvijek biti pridružen samo jedan kupčev kod (i jedan dobavljačev kod).   
+Nakon unosa prvog skladišta sa aktivnim indikatorom Fabrika, za naredna skladišta proveravaće se da li je šifra kupca ista kao u zapisima sa aktivnim indikatorom Fabrika, jer će fabrici uvek biti dodeljena samo jedna šifra kupca (i jedna šifra dobavljača).
 
 **Prioritet planiranja**
 
-To je vrijednost veća ili jednaka 0, a manja ili jednaka 100.    
+To je vrednost veća ili jednaka 0, a manja ili jednaka 100.
 
-Zapisi povezani s tvornicom imaju vrijednost 100 prema Fluentis konvenciji, dok ostale logističke jedinice imaju niže vrijednosti.   
+Zapisi povezani sa fabrikom imaju vrednost 100 prema Fluentis konvenciji, dok ostale logističke jedinice imaju niže vrednosti.
 
-Ovaj element služi za upućivanje sustava planiranja koji redoslijed slijediti u procesu izračuna; naime, prvo će biti planirane logističke jedinice s nižim vrijednostima, a zatim će se planirati one s višim vrijednostima, dok će tvornica biti planirana posljednja, poštujući lanac odnosa kupac-dobavljač između logističkih jedinica, baš kao što je slučaj s proizvodnim računima, počinjući od najviših razina i postupno prelazeći na niže razine.   
+Ovaj element služi da sistemu planiranja odredi redosled obračuna; najpre će biti planirane logističke jedinice sa nižim vrednostima prioriteta, a zatim one sa višim vrednostima, dok će fabrika biti planirana poslednja, poštujući lanac odnosa kupac-dobavljač između logističkih jedinica, slično kao kod proizvodnih sastavnica, počevši od viših nivoa i postepeno prelazeći na niže.
 
-Ovaj redoslijed je nužan jer da bi se utvrdili potrebni materijali za logističku jedinicu, prvo je potrebno planirati potrebe njenih jedinica kupaca.  
+Ovaj redosled je neophodan jer je za utvrđivanje potreba jedne logističke jedinice prvo potrebno isplanirati potrebe njenih kupaca.
 
-Svaki zapis kupca mora imati niži prioritet od njegove dobavljačke jedinice.   
+Svaki zapis kupca mora imati niži prioritet od svoje dobavljačke jedinice.
 
-**Vrijeme isporuke (Lead time)**
+**Vreme isporuke (Lead Time)**
 
-To je vrijeme potrebno za transport robe od logističke jedinice dobavljača, izraženo u danima.   
+To je vreme potrebno za transport robe od logističke jedinice dobavljača, izraženo u danima.
 
-**Razlog povlačenja iz dobavljačkog skladišta** 
+**Razlog izlaza iz skladišta dobavljača**
 
-To je razlog u skladištu koji će se koristiti za izvršenje unutarnje narudžbe, tj. za povlačenje robe iz ove logističke jedinice i slanje je u logističku jedinicu koja je zatražila robu. Razlog mora biti povezan sa skladištem kako bi mogao biti odabran u fazi unosa zapisa.   
+To je skladišni razlog koji će se koristiti za izvršenje interne narudžbine, odnosno za izdavanje robe iz ove logističke jedinice i njeno slanje logističkoj jedinici koja je robu zahtevala. Razlog mora biti povezan sa skladištem kako bi mogao biti izabran tokom unosa zapisa.
 
-**Razlog slaganja u skladište kupca**
+**Razlog ulaza u skladište kupca**
 
-To je razlog u skladištu koji će se koristiti za prihvat robe nakon unutarnje narudžbe, tj. za slaganje robe u ovoj logističkoj jedinici koja dolazi iz logističke jedinice koja je isporučila robu. Razlog mora biti povezan sa skladištem kako bi mogao biti odabran u fazi unosa zapisa. 
-
-
+To je skladišni razlog koji će se koristiti za prijem robe nakon interne narudžbine, odnosno za prijem robe u ovu logističku jedinicu koja dolazi iz logističke jedinice koja je robu isporučila. Razlog mora biti povezan sa skladištem kako bi mogao biti izabran tokom unosa zapisa.

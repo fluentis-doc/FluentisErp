@@ -1,14 +1,18 @@
 ---
-title: Ispravak crvene zone  
+title: Korekcija crvene zone
 sidebar_position: 10
 ---
 
-Vrijednost crvene zone automatski izračunava postupak ažuriranja zona na temelju vrijednosti DDMRP parametara artikla.   
+Vrednost **crvene zone** automatski izračunava procedura za ažuriranje zona na osnovu vrednosti DDMRP parametara artikla.
 
-Putem ove tablice moguće je prisilno postaviti drugačiju vrijednost na određene datume. 
+Pomoću ove tabele moguće je prisilno postaviti drugačiju vrednost za određene datume.
 
-Planerski sustav uzima u obzir eventualne ispravke zona pri izračunu NFP-a, čak i ako postupak ažuriranja zona nije proveden.   
+Sistem za planiranje uzima u obzir eventualne korekcije zona prilikom izračunavanja NFP-a, čak i ako procedura za ažuriranje zona nije pokrenuta.
 
-Također, izračun statusa buffer-a uzima u obzir moguću iznimku crvene zone, čak i ako postupak ažuriranja zona nije proveden.   
+Takođe, izračunavanje statusa buffer-a uzima u obzir eventualnu korekciju crvene zone, čak i kada procedura za ažuriranje zona nije izvršena.
 
-Tipično se iznimke crvene zone koriste kada se za ograničeno vremensko razdoblje unaprijed zna da će doći do događaja koji privremeno povećava rizik opskrbe. 
+Korekcije crvene zone se najčešće koriste kada je unapred poznato da će tokom ograničenog vremenskog perioda nastupiti događaj koji privremeno povećava rizik u lancu snabdevanja.
+
+Takvi događaji mogu uključivati povećanu neizvesnost u isporukama, planirane zastoje kod dobavljača, sezonske poremećaje, logističke probleme, štrajkove, praznike ili druge okolnosti koje mogu negativno uticati na raspoloživost materijala.
+
+Privremenim povećanjem crvene zone obezbeđuje se viši nivo sigurnosnih zaliha, čime se smanjuje rizik od nestašica i prekida u snabdevanju tokom perioda povećane neizvesnosti.
