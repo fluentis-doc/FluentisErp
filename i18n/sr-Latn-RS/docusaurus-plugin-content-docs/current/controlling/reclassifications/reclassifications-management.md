@@ -3,29 +3,28 @@ title: Reklasifikacije
 sidebar_position: 4
 ---
 
-Reklasifikacije su u osnovi primjena podataka iz *privremenog zatvaranja konta* (ili *konsolidacije*) na [*model reklasifikacije*](/docs/controlling/reclassifications/create-reclassification-model).
+Reklasifikacije predstavljaju primenu podataka iz *privremenog zatvaranja konta* (ili *konsolidacije*) na [*model reklasifikacije*](/docs/controlling/reclassifications/create-reclassification-model).
 
-Prilikom unosa nove reklasifikacije, pri otvaranju obrasca potrebno je postaviti jedinstveni kod od *5* alfanumeričkih znakova, opis reklasifikacije i unijeti model reklasifikacije. U tom trenutku postoji mogućnost pozivanja privremenog zatvaranja konta za korištenje ili korištenja gumba za izradu novog *privremenog zatvaranja konta*. U drugom slučaju otvorit će se obrazac
-za izradu zatvaranja, a nakon dovršetka postupka ***FluentisERP*** će automatski dodijeliti novo kreiranje reklasifikaciji koja je u obradi.
+Prilikom unosa nove reklasifikacije, po otvaranju obrasca potrebno je definisati jedinstvenu šifru od *5* alfanumeričkih karaktera, opis reklasifikacije i izabrati model reklasifikacije. Nakon toga moguće je odabrati postojeće privremeno zatvaranje koje će se koristiti ili pokrenuti kreiranje novog *privremenog zatvaranja konta* pomoću odgovarajućeg dugmeta. U tom slučaju otvoriće se obrazac za kreiranje zatvaranja, a po završetku postupka ***FluentisERP*** će automatski povezati novokreirano zatvaranje sa reklasifikacijom koja se obrađuje.
 
-:::tip Napomena
-Ova je mogućnost primjenjiva u jednostavnijim situacijama, gdje se ne smatra potrebnim primijeniti postupke koji su trenutno isključeni iz automatske obrade privremenog zatvarnja.
+:::tip NAPOMENA
+Ova mogućnost je pogodna za jednostavnije situacije u kojima nije potrebno primeniti procedure koje trenutno nisu uključene u automatsku obradu privremenog zatvaranja.
 :::
 
-U slučaju da je postavljena oznaka ***Konsolidirano***, bit će moguće pozvati šifru Međupoduzetničkog *konsolidiranja* koju treba obraditi u reklasifikaciji.
+Ako je aktivirana opcija ***Konsolidovano***, moguće je odabrati *intercompany konsolidaciju* koja će biti korišćena u reklasifikaciji.
 
-Za reklasifikacije na temelju modela računovodstva, u zaglavlju reklasifikata dodatno su dostupna polja za povezivanje s prodajnim projektima, troškovnim centrima i profitnim centrima: nakon što se jedno od njih postavi, sustav će ponovno izračunati cijelu strukturu reklasifikata, preuzimajući podatke iz međuzatvaranja povezanih s primijenjenim filtrom.
+Kod reklasifikacija zasnovanih na računovodstvenim modelima, u zaglavlju su dodatno dostupna polja za povezivanje sa prodajnim projektima, centrima troškova i profitnim centrima. Nakon postavljanja bilo kog od ovih filtera, sistem će ponovo izračunati kompletnu strukturu reklasifikacije koristeći podatke iz privremenih zatvaranja koji odgovaraju primenjenom filteru.
 
-Zadnje polje u zaglavlju reklasifikacije naziva se **Inkrementalno zatvaranje**. To je u osnovi početna vrijednost na temelju koje će program izračunati razlike za valorizaciju detalja podkonta s tipom salda *Povećanje* (pogledati detaljnu dokumentaciju o vrstama razina podkonta i projekata).
+Poslednje polje u zaglavlju reklasifikacije naziva se **Inkrementalno zatvaranje**. Ono predstavlja početnu vrednost na osnovu koje program izračunava razlike za vrednovanje detalja podkonta sa tipom salda *Povećanje* (pogledati detaljnu dokumentaciju o vrstama nivoa podkonta i projekata).
 
-Ispod ovog odjeljka, na lijevoj strani obrasca, prikazat će se struktura [*Modela reklasifikacije*](/docs/controlling/reclassifications/create-reclassification-model) valorizirana podacima iz postavljene završnice/konsolidacije. Odabirom čvora
-koji nije tipa *Zbroj podčvorova* ili *Izraz*, ***FluentisERP*** će na desnoj strani prikazati dva obrasca. U gornjem će se prikazati popis salda zatvaranja (ili konsolidacije) koji su u skladu s postavkama razine. U donjem će se prikazati
-popis podataka koji su zapravo valorizirali razinu. Pomoću dostupnih gumba na vrpci moguće je izvršiti izravne izmjene u reklasificiranom modelu bez izmjene referentnog modela. Također je dopušten ručni unos podataka donjem obrascu, uz mogućnost dodavanja novih ručnih redaka.
+U donjem delu obrasca, sa leve strane, prikazuje se struktura [*modela reklasifikacije*](/docs/controlling/reclassifications/create-reclassification-model) vrednovana podacima iz izabranog zatvaranja ili konsolidacije. Kada se odabere čvor koji nije tipa *Zbir podređenih čvorova* niti *Izraz*, ***FluentisERP*** će sa desne strane prikazati dva pregleda.
 
-:::tip Napomena
-Ako je čvor tipa *Izraz* postavljen na fiksnu vrijednost 0, tada će u reklasificiranom modelu na desnoj strani biti
-dostupno polje za ručno postavljanje vrijednosti koja će se koristiti u trenutnoj obradi. 
+U gornjem pregledu prikazuje se lista salda zatvaranja (ili konsolidacije) koja odgovaraju postavkama izabranog nivoa.
+
+U donjem pregledu prikazuju se podaci koji su stvarno vrednovali izabrani nivo. Putem dostupnih opcija na alatnoj traci moguće je vršiti direktne izmene u reklasifikovanom modelu bez izmene izvornog modela reklasifikacije. Takođe je dozvoljen ručni unos podataka u donji pregled, uključujući dodavanje novih ručnih redova.
+
+:::tip NAPOMENA
+Ako je čvor tipa *Izraz* postavljen na fiksnu vrednost 0, u reklasifikovanom modelu biće dostupno polje za ručni unos vrednosti koja će se koristiti samo u trenutnoj obradi.
 :::
 
-U obrascu (kao i u pregledu reklasifikacija) dostupno je i ispisivanje reklasificiranog modela. Alternativno, dostupan je i izvještaj ***valorizacije reklasifikacija***, koji omogućuje usporedbu dviju reklasifikacija već pohranjenih u sustavu.
-
+Iz samog obrasca, kao i iz pregleda reklasifikacija, moguće je štampati reklasifikovani model. Pored toga, dostupan je i izveštaj ***Vrednovanje reklasifikacija***, koji omogućava poređenje dve reklasifikacije prethodno sačuvane u sistemu.

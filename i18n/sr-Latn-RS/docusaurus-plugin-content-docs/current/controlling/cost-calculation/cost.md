@@ -1,23 +1,22 @@
 ---
-title: Izračun troškova
+title: Obračun troškova
 sidebar_position: 2
 ---
 
-U gornjem dijelu obrasca nalazi se filtar gdje je moguće preciznije pretraživanje artikala koji će biti uključeni u
-postupak. U prikazu rezultata pretrage moguće je odabrati artikle koji će se uzeti u obzir. Postupak se pokreće pomoću tipke **Izračunavanje troškova odabranih artikala**; u alatnoj traci. Rezultati postupka izračuna bit će izravno prikazani u donjoj tablici. Pomoću gumba **Valorizacija sastavnica**, otvara se odgovarajući ispis, koji sadrži razne ispise. 
-Odabrani artikli u postupku izračuna troškova bit će valorizirani prema opciji označenoj u odjeljku **Valorizacija prema**:
+U gornjem delu forme nalazi se filter koji omogućava precizniju pretragu artikala koji će biti uključeni u postupak. U prikazu rezultata pretrage moguće je odabrati artikle koji će biti uzeti u obzir. Postupak se pokreće pomoću dugmeta **Obračun troškova izabranih artikala** na alatnoj traci. Rezultati obračuna biće direktno prikazani u donjoj tabeli.
 
--	**Posljednji trošak** i **prosječni trošak**: Zadnji trošak odnosi se na posljednju nabavnu cijenu. Prosječni ponderirani trošak izračunava se na temelju skladišnih kretanja. Ove vrijednosti nalaze se u šifrarniku artikala, kartica Troškovi.
+Pomoću dugmeta **Valorizacija sastavnica** otvara se odgovarajući izveštaj koji sadrži različite prikaze. Izabrani artikli u postupku obračuna troškova biće valorizovani prema opciji odabranoj u sekciji **Valorizacija prema**:
 
--	**Standardni trošak / standardna iduća godina**: Standardni trošak je ručno postavljena vrijednost ili rezultat postupka izračuna troškova. Označava referentni trošak artikla koji se koristi tijekom godine. Obično se ažurira na početku ili kraju godine. Za nabavne artikle obično odgovara prosječnom trošku. Za ostale artikle izračunava se postupkom izračuna troškova u kontrolingu kao zbroj troškova materijala i faza proizvodnje. Može se koristiti za valorizaciju strukture proizvoda,
-skladišnih zaliha ili valorizaciju proizvodnih naloga (i pripadajućih skladišnih kretanja). Ova vrijednost se također nalazi u šifrarniku artikala, kartica Troškovi.
+- **Poslednji trošak** i **prosečni trošak**: poslednji trošak odnosi se na poslednju nabavnu cenu. Prosečni ponderisani trošak izračunava se na osnovu skladišnih kretanja. Ove vrednosti nalaze se u šifarniku artikala, kartica *Troškovi*.
 
+- **Standardni trošak / standardni trošak za narednu godinu**: standardni trošak je ručno postavljena vrednost ili rezultat postupka obračuna troškova. Predstavlja referentni trošak artikla koji se koristi tokom godine. Obično se ažurira na početku ili na kraju godine. Za nabavne artikle najčešće odgovara prosečnom trošku. Za ostale artikle izračunava se kroz postupak obračuna troškova u kontrolingu kao zbir troškova materijala i proizvodnih faza. Može se koristiti za valorizaciju strukture proizvoda, skladišnih zaliha ili proizvodnih naloga (i pripadajućih skladišnih kretanja). Ova vrednost se takođe nalazi u šifarniku artikala, kartica *Troškovi*.
 
--	**Iz područja upravljanja**: Ako se odabere ova opcija, potrebno je navesti Upravljačko područje iz kojeg će se preuzeti trošak. Upravljačko područje sadrži dva prikaza. Prvi je unos šifre i opisa. Drugi je unos različitih parametara, uključujući vrstu troška koja će se koristiti za to područje. Tablica Vrsta troška može sadržavati različite vrste troškova i može se temeljiti na prodajnim ili nabavnim cjenicima.
+- **Iz upravljačkog područja**: ako se odabere ova opcija, potrebno je navesti upravljačko područje iz kojeg će se preuzeti trošak. Upravljačko područje sadrži dva prikaza. Prvi omogućava unos šifre i opisa, a drugi unos različitih parametara, uključujući vrstu troška koja će se koristiti za to područje. Tabela *Vrsta troška* može sadržati različite vrste troškova i može biti zasnovana na prodajnim ili nabavnim cenovnicima.
 
-Opcija **Ažuriranje troška stavke** omogućuje ažuriranje troškova u šifrarniku artikla. Ako nije označena, izračun neće mijenjati postojeće vrijednosti. Moguće je odabrati opciju Uzimi u obzir jeftiniju seriju materijala, kao i datum od kojeg novi troškovi postaju valjani.  Lijevi dio ekrana, **Parametri popisa materijala i ciklusa proizvodnje** služi za određivanje **verzije artikla i ciklusa** koji će se uzeti u obzir tijekom postupka izračuna troškova. Dovoljno je označiti pripadajući checkbox i unijeti verziju i/ili ciklus.
+Opcija **Ažuriranje troška artikla** omogućava ažuriranje troškova u šifarniku artikla. Ako nije označena, obračun neće menjati postojeće vrednosti. Takođe je moguće odabrati opciju **Uzmi u obzir jeftiniju seriju materijala**, kao i definisati datum od kojeg novi troškovi postaju važeći.
 
-Rezultati postupka vidljivi su klikom na tipku **Izračunavanje troškova odabranih artikala** u alatnoj traci. Ovisno o unesenim parametrima, ponovo će se izračunati samo određeni stupci.
+Levi deo ekrana, **Parametri sastavnice i proizvodnog ciklusa**, služi za određivanje **verzije artikla i ciklusa** koji će biti uzeti u obzir tokom postupka obračuna troškova. Dovoljno je označiti odgovarajuće polje i uneti verziju i/ili ciklus.
 
--------------
+Rezultati postupka prikazuju se klikom na dugme **Obračun troškova izabranih artikala** na alatnoj traci. U zavisnosti od unetih parametara, biće ponovo izračunate samo određene kolone.
 
+---

@@ -1,27 +1,22 @@
 ---
-title: Bilanca perioda
+title: Bilans perioda
 sidebar_position: 1
 ---
 
-Ispis omogućuje izvršavanje sažetog ispisa osnovnih sekcija bilance na temelju odabrane među­bilance (ili *konsolidacije*).
+Izveštaj omogućava prikaz sažetog pregleda osnovnih sekcija bilansa na osnovu odabranog međubilansa (ili *konsolidacije*).
 
-**Konsolidirano**: aktiviranjem ove opcije padajući izbornik omogućit će odabir konsolidiranih bilanci putem postupka [**konsolidacije**](/docs/controlling/mid-year-closures/consolidation-entry), umjesto običnih bilanci (pojedinačnog društva).  
+**Konsolidovano**: aktiviranjem ove opcije padajući meni omogućava izbor konsolidovanih bilansa kreiranih procedurom [**Konsolidacija**](/docs/controlling/mid-year-closures/consolidation-entry), umesto standardnih bilansa pojedinačnog preduzeća.
 
-**Prikaži iznose s negativnim predznakom**: opcija jednaka onoj koja se nalazi u ispisima [godišnje bilance](/docs/finance-area/ledger-records/fiscal-report/period-balance-sheet) u području administracije.
+**Prikaži iznose sa negativnim predznakom**: opcija identična onoj koja se nalazi u izveštajima [godišnjeg bilansa](/docs/finance-area/ledger-records/fiscal-report/period-balance-sheet) u oblasti finansija.
 
-**Prikaz registra**: omogućuje prikaz u bilanci detalja salda po analitikama kupaca/dobavljača.
+**Prikaz registra**: omogućava prikaz detalja salda po analitičkim kontima kupaca i dobavljača.
 
-**Prikaz prodane valute**: omogućuje prikaz detalja salda u valuti za račune koji u kontnom planu imaju aktivno valutno praćenje. 
+**Prikaz valute dokumenta**: omogućava prikaz detalja salda u valuti za konta kod kojih je u kontnom planu aktivirano valutno praćenje.
 
+**Uporedi**: omogućava poređenje dva određena međubilansa. Aktiviranjem opcije postaje dostupan dodatni padajući meni za izbor bilansa koji će se uporediti sa glavnim bilansom.
 
-**Usporediti**: omogućuje usporedbu dviju specifičnih među­bilanci. Aktiviranjem opcije aktivira se drugi padajući izbornik za odabir bilance koju treba usporediti s glavnom.
+**Prikaži podatke po centru troška**: aktiviranjem ove opcije u izveštaju će biti prikazani podaci iz *analitičkog* dela bilansa (uglavnom ekonomski deo), grupisani najpre po centrima troškova, a zatim po kontu/podkontu.
 
-**Prikaži podatke po centru troška**: aktiviranjem ove opcije u ispisu će se prikazati podaci iz *analitičkog* dijela bilance (uglavnom ekonomski dio), s podacima zbrojenima po centrima troška, a zatim po računu/podračunu.
-
-**UPOZORENJE**: aktiviranjem ove opcije potrebno je koristiti drugi izvještaj za ispis, dostupan u padajućem izborniku na traci s alatima, pod nazivom ***Bilanca po poslovnim centrima***.
-
-
-
-
-
-
+:::warning UPOZORENJE
+Kada je ova opcija aktivirana, potrebno je koristiti drugi tip izveštaja dostupan u padajućem meniju na alatnoj traci pod nazivom **Bilans po poslovnim centrima**.
+:::

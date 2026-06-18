@@ -1,29 +1,28 @@
 ---
-title: Povrat amortizacije osnovnog sredstva
+title: Obračun amortizacije osnovnih sredstava
 sidebar_position: 3
 ---
 
-Unutar modula za privremena zatvaranja, nakon što je stvoreno privremeno zatvaranje, moguće je automatski vrednovati amortizaciju koja pripada ekonomskom razdoblju postavljenom unutar zatvaranja.
+U okviru modula Privremena zatvaranja, nakon kreiranja privremenog zatvaranja, moguće je automatski obračunati amortizaciju koja pripada ekonomskom periodu definisanom unutar zatvaranja.
 
 ## Amortizacija
 
-Pri otvaranju obrasca, u donjem dijelu obavezno je postaviti sljedeće parametre:
+Prilikom otvaranja obrasca, u donjem delu potrebno je definisati sledeće parametre:
 
-- Referentno **zatvaranje** (iz kojeg se čita raspon datuma ekonomske pripadnosti);
+- Referentno **zatvaranje** (iz kojeg se preuzima period ekonomske pripadnosti);
 
-- **Datum knjiženja** zapisa unutar izvanknjigovodstvenih knjiženja;
+- **Datum knjiženja** zapisa u vanbilansnim knjiženjima;
 
-- **Tip** temeljnice  koji će se koristiti (ovdje je također potrebno da predložak omogućuje upravljanje troškovnim centrima/projektima kako bi se mogli vrednovati unutar knjiženja).
+- **Tip temeljnice** koji će se koristiti (predložak mora omogućavati upravljanje troškovnim centrima/projektima kako bi oni mogli biti vrednovani u okviru knjiženja).
 
-Flag **Pojedinačno zapisivanje** omogućuje stvaranje jednog izvanknjigovodstvenog knjiženja unutar koje će biti sadržani različita podkonta amortizacije/fonda.
+Opcija **Pojedinačno knjiženje** omogućava kreiranje jednog vanbilansnog knjiženja koje sadrži različita podkonta amortizacije i akumulirane amortizacije.
 
-Važno je napomenuti da se unutar gornjih filtera za pretraživanje nalazi flag za filtriranje osnovnih sredstva koje ili pripadaju "inkrementalnim" kategorijama ili ne pripadaju.
+Važno je napomenuti da se među filterima za pretragu nalazi opcija za filtriranje osnovnih sredstava koja pripadaju ili ne pripadaju „inkrementalnim“ kategorijama.
 
-Pokretanjem pretrage podataka, program će popuniti tablicu obrasca podacima o amortizacijama koje treba izračunati,  proporcionalno broju dana ekonomske pripadnosti zatvaranja. Konkretno, za svako osnovno sredstvo provjerava se je li amortizacija za godinu (iz godine postavljene kao parametar zatvaranja) već unesena u karticu sredstva. Ako je unesena, vrijednost
-će se ponovno proporcionalno raspodijeliti na broj dana; ako nije unesena, provest će se simulacija izračuna (na temelju parametara kategorije kojoj pripada i preostalog iznosa za amortizaciju), a zatim će se i ta vrijednost proporcionalno raspodijeliti na broj dana ekonomske pripadnosti.
+Pokretanjem pretrage podataka program popunjava tabelu obrasca podacima o amortizaciji koju je potrebno obračunati, proporcionalno broju dana ekonomske pripadnosti zatvaranja. Konkretno, za svako osnovno sredstvo proverava se da li je amortizacija za godinu (iz godine definisane u parametrima zatvaranja) već evidentirana na kartici sredstva. Ukoliko jeste, vrednost se proporcionalno raspoređuje prema broju dana. Ukoliko nije, izvršava se simulacija obračuna (na osnovu parametara kategorije kojoj sredstvo pripada i preostale vrednosti za amortizaciju), nakon čega se i ta vrednost proporcionalno raspoređuje prema broju dana ekonomske pripadnosti.
 
-Potrebno je označiti sve redove u tablici kako bi se mogli vrednovati unutar zatvaranja.
+Potrebno je označiti sve redove u tabeli kako bi mogli biti uključeni u obračun i vrednovanje unutar zatvaranja.
 
-## Povrat
+## Poništavanje
 
-U ovom dijelu moguće je poništiti prethodno izvršenu operaciju u kartici *Amortizacija*.
+U ovom delu moguće je poništiti prethodno izvršenu operaciju iz kartice *Amortizacija*.

@@ -3,14 +3,17 @@ title: Računovodstvo zaliha
 sidebar_position: 2
 ---
 
-Unutar modula za prviremena zatvaranja, nakon što je stvoreno privremeno zatvaranje, moguće je automatski vrednovati početne/završne zalihe skladišta.
+U okviru modula za privremena zatvaranja, nakon kreiranja privremenog zatvaranja moguće je automatski izvršiti vrednovanje početnih i završnih zaliha skladišta.
 
-Nakon otvaranja obrasca, potrebno je postaviti raspon datuma koji će se koristiti, vrstu zaliha koja će se uzeti u obzir (Pozitivna/Negativna), način izračuna troška (Prosječni trošak, Posljednji trošak, FIFO s godišnjim prijelazima, LIFO s godišnjim prijelazima, područje), te predložak koji će se koristiti za knjiženja koja će se stvoriti.
-Prisutnost ili odsutnost oznake Kontroling određuje način obrade na dva različita načina:
-- Ako oznaka *nije prisutna*, **FluentisERP** će stvoriti knjiženja početnih i završnih zaliha na datume početka i kraja razdoblja privremenog zatvaranja i dodati ih na kraj ostalih prilagodbenih knjiženja istog zatvaranja.
-- Ako je oznaka *prisutna*, **FluentisERP** će stvoriti knjiženja početnih i završnih zaliha za svaki pojedini mjesec unutar raspona datuma obuhvaćenih privremenim zatvaranjem i umetnuti ih kao izvanknjigovodstvena knjiženja u području povezano sa zatvaranjem (dakle, to neće biti knjiženja zatvaranja, već knjiženja valjana samo za kontroling).
+Nakon otvaranja obrasca potrebno je definisati opseg datuma koji će se koristiti, vrstu zaliha koje će biti obuhvaćene (Pozitivne/Negativne), metod obračuna troška (Prosečni trošak, Poslednji trošak, FIFO sa godišnjim prenosima, LIFO sa godišnjim prenosima ili Područje), kao i predložak knjiženja koji će biti korišćen za generisana knjiženja.
+
+Prisustvo ili odsustvo oznake **Kontroling** određuje način obrade na dva različita načina:
+
+- Ako oznaka *nije aktivirana*, **FluentisERP** će kreirati knjiženja početnih i završnih zaliha na datume početka i kraja perioda privremenog zatvaranja i dodati ih na kraj ostalih korektivnih knjiženja istog zatvaranja.
+- Ako je oznaka *aktivirana*, **FluentisERP** će kreirati knjiženja početnih i završnih zaliha za svaki pojedinačni mesec unutar perioda obuhvaćenog privremenim zatvaranjem i evidentirati ih kao vanbilansna knjiženja u području povezanom sa zatvaranjem (dakle, neće biti evidentirana kao knjiženja zatvaranja, već kao knjiženja koja važe isključivo za potrebe kontrolinga).
 
 :::tip NAPOMENA
-Obrada provjerava prisutnost ovih vrsta knjiženja te, ako ih već pronađe, pita želi li ih se izbrisati i ponovno stvoriti ili ih jednostavno dodati (npr. u slučaju kada se odluči obraditi samo određena skladišta, a ne sva, putem dostupnog padajućeg izbornika). Ako je potrebno stvoriti i knjiženja područja za kontroling i prilagodbena knjiženja unutar zatvaranja, dovoljno je
-pokrenuti postupak *prvo* s aktiviranom oznakom Kontroling, a *zatim* s deaktiviranom oznakom.
+Procedura proverava da li ovakva knjiženja već postoje i, ukoliko ih pronađe, pita korisnika da li želi da ih obriše i ponovo kreira ili samo da ih dopuni (na primer, kada se želi obraditi samo određeno skladište, a ne sva skladišta, korišćenjem dostupnog padajućeg menija).
+
+Ako je potrebno kreirati i knjiženja područja za kontroling i korektivna knjiženja unutar zatvaranja, dovoljno je pokrenuti proceduru **prvo** sa aktiviranom oznakom *Kontroling*, a **zatim** sa deaktiviranom oznakom.
 :::

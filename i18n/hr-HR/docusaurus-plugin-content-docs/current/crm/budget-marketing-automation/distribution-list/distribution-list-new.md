@@ -6,19 +6,13 @@ sidebar_position: 3
 Postupak stvaranja nove **distribucijske liste** omogućuje definiranje karakteristika liste koja će se koristiti u postupku slanja [*Newslettera*](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), kao i definiranje **Kontakata CRM** koji će biti dio te liste. Za stvaranje nove liste potrebno je kliknuti na tipku Novo ![](/img/neutral/common/new.png) na maski pretraživanja lista distribucije.
 
 Obrazac se sastoji od dvije sekcije.
-
 Gornja sekcija omogućuje definiranje sljedećih informacija:
 
 **Naziv**: odgovara identifikacijskom kodu liste distribucije;
-
 **Datum kreiranja**: datum kada je lista kreirana;
-
 **Bilješka**: alfanumeričko polje koje omogućuje unos slobodnih bilješki;
-
 **Autor**: prikazuje korisnika koji je generirao listu;
-
 **Vrsta**: omogućuje definiranje vrste liste distribucije između **Statične** ili **Dinamične**.
-
 
 Donji obrazac razlikuje se ovisno o tome je li lista statička ili dinamična.
 
@@ -49,7 +43,6 @@ Gumb Dodijeli ![](/img/neutral/common/assign-row.png) premješta kontakt s karti
 Ova sekcija je podijeljena u 2 kartice.
 
 **Kartica Konfiguracija**
-
 Na početku morate navesti ova 3 podatka:   
 **Područje**: koristi se za definiranje područja u Fluentisu gdje će se podaci dohvatiti;  
 **Modul**: odnosi se na prethodno odabrano područje;

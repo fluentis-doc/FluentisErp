@@ -3,187 +3,235 @@ title: Kreiranje modela reklasifikacije
 sidebar_position: 2
 ---
 
-:::note Put
-**Kontroling > Reklasifikacije > Sheme reklasifikacije > Kreiraj model reklasifikacije**
+:::note Putanja
+**Kontroling > Reklasifikacije > Šeme reklasifikacije > Kreiranje modela reklasifikacije**
 
 NAPOMENA:
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničko funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
 
 :::
 
 ---
 
-### UNOS NOVOG MODELA – NASLOV
+### UNOS NOVOG MODELA – ZAGLAVLJE
 
-Modeli reklasifikacije su zajednički elementi za sva poduzeća učitana u isti bazu podataka: struktura reklasifikacije će biti vidljiva u svim poduzećima, dok će specifično za svako od njih biti dodjela vlastite strukture kontnog plana (cdc/cdp itd.) različitim modelima. Na ovaj način bit će moguće stvoriti i konsolidiranu reklasifikaciju za grupu.
-
-:::tip NAPOMENA
-Modeli su zajednički za sva poduzeća, ili za sva poduzeća iste geografske lokacije dodijeljene *tipu reklasifikacije* putem svojstva *Države*.
-:::
-
-Elementi potrebni za kreiranje novog modela su: 
-
-- **Tip reklasifikacije**,
-
-- **Šifra modela** (alfanumerički od 10 znakova), 
-
-- **Opis** modela.
-
-- **Povratni znak odabranog čvora**, flag dostupno samo za tipove reklasifikacija povezane s *Kontrolingom*, omogućava prisilno
-obrtanje +- na svim čvorovima modela.
-
-- **Indeks u apsolutnoj vrijednosti**, dostupan samo za tipove reklasifikacija povezane s *Kontrolingom*, postavlja izračun postotnih indeksa u apsolutnoj vrijednosti.
-
-Nakon dodijele ovih vrijednosti, aktivirat će se različiti gumbi za definiranje strukture reklasifikacije: pomoću
-gumba **Umetni čvor korijena** kreirat će se prvi nivoi strukture, dok će se pomoću sljedećeg gumba **Umetni čvora** dodati podnivoi odabranom čvoru u strukturi.
-
-Svaki nivo strukture bit će definiran putem šifre (alfanumerički od 8 znakova) i opisa: jedinstvenost u ovom posebnom slučaju osigurava kombinacija obje vrijednosti, šifre i opisa zajedno (to je zato što u reklasifikaciji EU, na primjer, postoje različiti nivoi ‘A' u različitim sekcijama modela, s različitim opisima). Sljedeći će koraci detaljno opisati tipove razina koje je
-moguće dodijeliti, uzimajući u obzir da je brisanje razina dopušteno samo ako nisu korištene u formuli.
-
-
-### ALATI U IZBORNOJ TRACI
-
-
- 1. Obrazac za **pretraživanje podkonta koji nedostaju** omogućava pretraživanje i ispis podkonta koji nisu uneseni ni na jednom mjestu modela reklasifikacije: u filtrima pretrage dostupne su opcije za *prikaz konta s istekom roka valjanosti*, *prikaz konta koji nije korišten u pregledu centara troškova*, te *prikaz konta koji nije korišten u pregledu konta*, pri čemu posljednja dva
-omogućuju definiranje pretrage u čvorovima tipa *Centri troškova* ili *Podkonta*. 
-Konkretno, ako je unesen opći konto, njegova podkonta neće biti prikazana, čak iako nisu specifično uneseni u sam model.
- 2. Obrazac za pretraživanje **višestruko umetnutih podkonta** omogućava pretraživanje i ispis popisa podkonta koji su uneseni na više mjesta modela, uzimajući u obzir samo čvorove konta ili čvorove centara putem dvaju flagova: *Prikaz dupliciranog konta u
-pregledu centara troškova* i *Prikaz dupliciranog konta u pregledu konta*, koji su dostupni u filtrima. Ako je opći konto unesen zajedno s njegovim podkontom, bit će prikazan jer se smatra i ukupnim iznosom i kao detalj.
-
-
-
-### POLJA ZAGLAVLJA
-
-**Tip čvora** - Predstavlja vrstu retka u modelu reklasifikacije. Dostupne su sljedeće vrste:
-
-- ***Podkonta*** posvećeni valorizaciji podataka iz glavne knjige, prema detaljima strukture kontnog plana poduzeća
-
-- ***Centri troškova***  - posvećeni valorizaciji analitičkih podataka. Ako je model vezan uz kontroling, bit će dostupne specifične karakteristike.
-
-- ***Centri profita*** (samo ako poduzeće nema flag Kontroling) - posvećen valorizaciji podataka iz knjigovodstva za centre profita/prihoda.
-
-- ***Zbroj ‘djece’***:čvor koji se automatski valorizira zbrojem čvorova koji se nalaze na prvom nižem nivou.
-
-- ***Izraz***: u ovom slučaju, sekcija za unos izraza je slobodno konfigurabilna. Dozvoljeni su zagrade, osnovni matematički znakovi i unos brojeva. Za unos čvora modela u formulu preporučuje se korištenje gumba ‘Formula’, koji će otvoriti pomoć za selekciju čvorova modela.
-
-- ***Nalozi*** (samo ako poduzeće nema flag Kontroling) - posvećen valorizaciji podataka iz knjigovodstva za poslove, prema detaljima posla.
-
-- **Tip podataka**, polje je aktivno samo u čvorovima tipa Izraz i ima opcije: *Valuta* ili *Broj*. Ako je odabrana valuta, nivo će prikazivati novčani iznos s simbolom i pripadajućim decimama prema valuti poduzeća. Ako je odabran broj, nivo će prikazivati opći broj sa zaokruženim decimalama prema postavci u sljedećem polju.
-
-- **Povratni znaka odabranog čvora** omogućava obrtanje negativnih u pozitivne i obratno: u reklasifikacijama FluentisERP-a, svi podaci s iznosom “dugovno” bit će prikazani s pozitivnim znakom, a “potražni” s negativnim. Pomoću ovog flagova moguće je prikazivati ukupne pozitivne iznose za razine koje po  svojoj prirodi imaju iznos “primanja” (obveze, prihodi). Obrtanje se primjenjuje na rezultat razine, ali ne i na detalje (podračune, cdc, cdp, poslove) koji ga valoriziraju. 
-
-- **Ispisati**: označava hoće li nivo biti prikazan na ispisu ili ne.
+Modeli reklasifikacije predstavljaju zajedničke elemente za sva preduzeća učitana u istu bazu podataka: struktura reklasifikacije biće vidljiva u svim preduzećima, dok će za svako pojedinačno preduzeće biti definisana sopstvena dodela kontnog plana (CDC/CDP itd.) različitim modelima. Na taj način moguće je kreirati i konsolidovanu reklasifikaciju za grupu preduzeća.
 
 :::tip NAPOMENA
-Korištenje ovog flaga ovisi o upravljanju vidljivošću unutar izvještaja za ispis.
+Modeli su zajednički za sva preduzeća ili za sva preduzeća iste geografske lokacije dodeljene *tipu reklasifikacije* putem svojstva *Država*.
 :::
 
-- **Pokaži detalje**: omogućava je mogućnost označavanja, u usporedbama, unutarnjih detalja čvora (tj. popisa podkonta ili centara)
+Elementi potrebni za kreiranje novog modela su:
 
-- **Upravljanje valutom**: opcija je važeća za čvorove tipa *Podkonto*, označava ***FluentisERP-u*** da procijeni eventualne salde u valuti za podkonta koji imaju oznaku Upravljanje valutom u kontnom planu (tipično svi podaci o kupcima/dobavljačima/agencijama/bankovnim računima). U tom slučaju, dakle, u reklasificiranim podacima ovog modela bit će N redaka za svaki podkonto, jedan za svaku valutu kretanja u privremenom zatvaranju korištenoj u privremenom zatvaranju.
+- **Tip reklasifikacije**
 
-- Odjeljak **Priroda grupiranja** omogućava postavljanje tipova konta koji se mogu dodijeliti ovom nivou, a vidljiv je samo u čvoru
-tipa *Podkonto*: zapravo, prilikom unosa podkonta primijenit će se filtriranje prema tipu konta već ograničeno na ona koja imaju
-oznaku usklađenu s postavkom.
+- **Šifra modela** (alfanumerička, do 10 karaktera)
 
-:::tip PRIMJERI
-Na primjer, ako je priroda "Imovina", bit će moguće unijeti tipove konta koji imaju ovu oznaku u tablici: tipično imovina, kupci i banke. U slučaju da se ova postavka mijenja s već postojećim podkontima na razini, prilikom spremanja promjena bit će zatraženo hoće li se izbrisati podkonta koji nisu usklađena.
-:::
+- **Opis** modela
 
-S oznakom **Razmotri podređeni centar troška/prihoda**, bit će moguće unijeti centar troška X, a ***FluentisERP*** će
-prikazati sve njegove interne centre troškova u reklasifikaciji koji imaju neku vrijednost. Ova oznaka omogućava izbjegavanje unosa i održavanje svih mogućih detalja centara troškova, već samo onog višeg centra troška koji ih grupira.
+- **Obrtanje znaka izabranog čvora**, opcija dostupna samo za tipove reklasifikacija povezane sa *Kontrolingom*, koja omogućava prisilno invertovanje znaka (+/-) na svim čvorovima modela
 
+- **Indeks u apsolutnoj vrednosti**, dostupan samo za tipove reklasifikacija povezane sa *Kontrolingom*, određuje da se procentualni indeksi obračunavaju u apsolutnoj vrednosti
 
-### PREGLED DODIJELJIVANJE KONTA
+Nakon unosa ovih vrednosti aktiviraju se različita dugmad za definisanje strukture reklasifikacije: pomoću dugmeta **Ubaci korenski čvor** kreiraju se prvi nivoi strukture, dok se pomoću dugmeta **Ubaci čvor** dodaju *podnivoi* trenutno izabranom čvoru.
 
-Pregled **konta** omogućava definiranje popisa konta i/ili podkonta koji će valorizirati ovaj nivo modela. Nije
-dopušten unos istog konta ili podkonta s istim tipom salda u istom nivou, dok se isti može unositi u druge dijelove reklasifikacije bez ikakvih ograničenja. Dopušten je unos samo općeg konta (glavnog): tipičan slučaj je opći konto koji sadrži podkonta iz evidencije, bez detaljnog popisa kupaca/dobavljača u modelu koji bi zahtijevao stalnu usklađenost raznih modela.
+Svaki nivo strukture definiše se pomoću šifre (alfanumerička, do 8 karaktera) i opisa. Jedinstvenost se u ovom slučaju određuje kombinacijom šifre i opisa zajedno (na primer, u EU reklasifikaciji mogu postojati različiti nivoi označeni slovom „A“ u različitim delovima modela, ali sa različitim opisima). U nastavku su detaljno opisani tipovi nivoa koje je moguće dodeliti, uz napomenu da je brisanje nivoa dozvoljeno samo ukoliko nisu korišćeni u formulama.
 
-**Tip salda** pojedinog retka konta ili podkonta uključuje sljedeće mogućnosti: 
+### ALATI NA TRAKI SA OPCIJAMA
 
-**Općenito**  (bit će unesen saldo podkontoa neovisno o njegovom znaku; u slučaju općeg konta, bit će unesen zbroj salda podkonta koji pripadaju tom kontu),
+1. Forma za **pretragu podkonta koji nedostaju** omogućava pretragu i ispis podkonta koji nisu uneti ni na jednom mestu u modelu reklasifikacije. U filterima pretrage dostupne su opcije:
 
-**Duguje** (bit će unesen saldo podkonta samo ako ima znak dugovanja; u slučaju općeg konta, bit će unesen
-zbroj salda dugovanja podkonta koji pripadaju tom kontu),
+   - *Prikaži konta sa isteklim rokom važenja*
+   - *Prikaži konta koja nisu korišćena u pregledu centara troškova*
+   - *Prikaži konta koja nisu korišćena u pregledu konta*
 
-**Potražuje** (bit će unesen saldo podkonta samo ako ima znak potraživanja; u slučaju općeg konta, bit će unesen
-zbroj salda potraživanja podkonta koji pripadaju tom kontu),
+   Poslednje dve opcije omogućavaju definisanje pretrage u čvorovima tipa *Centri troškova* ili *Podkonta*.
 
-**Povećanje** (za podkonto ili konto izračunat će se vrijednost kao razlika između privremenog zatvaranja reklasifikacije i drugog referentnog zatvaranja: ovaj tip je koristan za analizu prema tijekovima).
+   Ukoliko je uneto opšte konto, njegova podkonta neće biti prikazana, čak i ako nisu posebno unesena u model.
 
-PosljednjI flag u mreži naziva se **Inverzija kolona**: znači da će se, za odabrani podkonto, znak salda invertirati
+2. Forma za pretragu **višestruko unetih podkonta** omogućava pretragu i ispis liste podkonta koji su uneti na više mesta u modelu, uzimajući u obzir samo čvorove konta ili čvorove centara putem sledećih opcija:
 
-:::tip Napomena
-Može biti korisno, na primjer, za oduzimanje od salda jednog konta vrijednosti njegovog podkonta: primjerice, ukloniti interkompanijskog kupca koji je šifriran unutar glavnog konta kupaca, kako bi ga obradili u odvojenom čvoru bez dupliciranja vrijednosti.
-:::
+   - *Prikaži duplirano konto u pregledu centara troškova*
+   - *Prikaži duplirano konto u pregledu konta*
 
-Unos u ovaj pregled može se izvršiti s dvije metode: izravnim unosom, unosom šifre ili putem pomoći za konta koja omogućuje odabir jednog zapisa ili korištenjem gumba "Višestruko umetanje podkonta" za aktivaciju višestrukog odabira u pomoći za konta.
+   Ukoliko su opšte konto i njegovo podkonto uneseni istovremeno, biće prikazani jer se smatraju i zbirnim iznosom i detaljem.
 
-### PREGLED ZA DODIJELJIVANJE CENTARA PODUZEĆA
+   ## POLJA ZAGLAVLJA
 
-U mreži centara troškova unose se centri troškova koji će valorizirati razinu. Dostupna polja su:
+**Tip čvora** predstavlja vrstu retka unutar modela reklasifikacije. Dostupne su sljedeće vrste:
 
-- **Tip linije**: ovo polje je povezano s upravljanjem nositelja troškova u kontrolingu i stoga se koristi samo u modelima tipova povezanih s računovodstvom kontrole, mogući odabir je između:
-    - *Izvor* analitičkih redaka dodijeljenih izravno centru ili dodijeljenih prvom ciklusu nositelja troškova
-    - *Prodan* Primljeno od drugih centara troškova, koji će biti navedeni u pregledu
-    - *Primka* Primljeno od drugih centara troškova, koji će biti navedeni u pregledu
+- ***Podkonta***, namijenjena valorizaciji podataka iz glavne knjige prema strukturi kontnog plana poduzeća.
 
-- **Konto-Podkonto-Opis**: služi za označavanje s kojim kontom (ili konto-podkonto) se filtriraju podaci analitike ili računovodstvenog upravljanja
+- ***Centri troškova***, namijenjeni valorizaciji analitičkih podataka. Ako je model povezan s kontrolingom, bit će dostupne dodatne specifične funkcionalnosti.
 
-- [**Centri troška**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers): polje je opcionalno u modelima povezanima s kontrolingom, dok je obavezno u ostalim slučajevima. To je centar koji će se koristiti
-za filtriranje podataka analitike ili računovodstvenog upravljanja.
+- ***Centri profita*** (samo ako poduzeće nema aktiviran kontroling), namijenjeni valorizaciji knjigovodstvenih podataka po centrima profita i prihoda.
 
-- **Inverzija kolona**: znači da će, za odabrani redak, znak salda biti invertiran
+- ***Zbroj podređenih čvorova***, čvor koji se automatski valorizira zbrojem svih čvorova koji se nalaze na neposredno nižoj razini.
 
-- **Varijable**: polje je vidljivo samo u modelima povezanima s kontrolingom, omogućuje definiranje hoće li se koristiti 
-    - *promjenjiva* kvota
-    - *fiksna* kvota
-    - *opći* (dugovanje ili potraživanje), koji je zadani tip kada nije označeno
+- ***Izraz***, kod kojeg je dostupna sekcija za unos formule. Podržane su zagrade, osnovni matematički operatori i unos numeričkih vrijednosti. Za umetanje čvora modela u formulu preporučuje se korištenje gumba **Formula**, koji otvara pomoćni alat za odabir čvorova modela.
 
-**Tip salda**: uvijek se upravlja saldom tipa Općenito, dok se u modelima povezanima s Kontrolingom koristi tip salda
-    - *Početni*
-    - *Završni* 
-    
-za retke podkonta početnih/završnih zaliha
+- ***Nalozi*** (samo ako poduzeće nema aktiviran kontroling), namijenjeni valorizaciji knjigovodstvenih podataka po nalozima.
 
+**Tip podataka** aktivan je samo za čvorove tipa *Izraz* te omogućuje odabir između opcija *Valuta* i *Broj*. Ako je odabrana opcija *Valuta*, razina će prikazivati novčani iznos sa simbolom valute i odgovarajućim brojem decimalnih mjesta prema postavkama valute poduzeća. Ako je odabrana opcija *Broj*, prikazivat će se numerička vrijednost zaokružena prema postavci definiranoj u sljedećem polju.
 
-### POSEBNOSTI VRSTE ČVORA U CENTRIMA TROŠKOVA ZA MODELE KONTROLINGA
-U modelima povezanima s kontrolingom, dostupne su neke specifične opcije u čvorovima centara troškova. Posebno:
+**Obrni predznak odabranog čvora** omogućuje zamjenu pozitivnih i negativnih vrijednosti. U reklasifikacijama FluentisERP-a svi iznosi na dugovnoj strani prikazuju se kao pozitivni, dok se potražni iznosi prikazuju kao negativni. Ova opcija omogućuje prikaz pozitivnih vrijednosti za razine koje po svojoj prirodi predstavljaju prihode ili obveze. Obrtanje predznaka primjenjuje se samo na rezultat razine, a ne i na detaljne podatke koji je valoriziraju (podkonta, centre troškova/prihoda ili naloge).
 
-- **Postotna referenca**: služi za razumijevanje, u usporedbama, koji je čvor referenca za izračunavanje postotka "vertikalno" u modelu.
+**Ispisati** određuje hoće li se razina prikazivati u ispisima.
 
 :::tip NAPOMENA
-Na primjer, ovo se postavi na ukupne prihode kako bi se moglorazumjeti koliko svaki troškovni čvor doprinosi postotno prema tom čvoru.
+Korištenje ove opcije ovisi o postavkama vidljivosti definiranima u izvještajima za ispis.
 :::
 
-- **Brojnik za izračunavanje indeksa**: u modelu ukupnog troška centara, označava čvor koji zbraja troškove kako bi ga koristio kao brojnik za izračun tarifa centara.
+**Prikaži detalje** omogućuje prikaz detalja čvora u usporedbama, odnosno popisa podkonta ili centara koji ga valoriziraju.
 
-- **Varijable**: omogućuje definiranje hoće li se koristiti
-    - *promjenjiva* kvota
-    - *fiksna* kvota
-    - *općenito* (dugovanje ili potraživanje), koji je zadani tip kada nije označeno
+**Upravljanje valutama** dostupno je samo za čvorove tipa *Podkonto* i nalaže FluentisERP-u da obradi eventualna salda u stranim valutama za podkonta koja u kontnom planu imaju uključenu opciju *Upravljanje valutama* (najčešće kupci, dobavljači, agenti i bankovni računi). U tom slučaju reklasificirani podaci sadržavat će zaseban red za svaku valutu evidentiranu u korištenom privremenom zatvaranju.
 
-Oznaka na razini čvora primjenjuje se ako nije označena na razini pojedinog retka u mreži
+Odjeljak **Priroda grupiranja** omogućuje definiranje tipova konta koji se mogu dodijeliti razini te je dostupan samo za čvorove tipa *Podkonto*. Prilikom unosa podkonta primjenjuje se filtriranje prema odabranoj prirodi grupiranja.
 
-- **Indeks čvora**: ne koristi se
+:::tip PRIMJER
+Ako je odabrana priroda grupiranja *Imovina*, bit će moguće unositi samo tipove konta označene tom prirodom, primjerice konta imovine, kupaca i banaka. Ako se postavka promijeni na razini koja već sadrži podkonta, prilikom spremanja sustav će zatražiti potvrdu za brisanje podkonta koja više nisu usklađena s novom postavkom.
+:::
 
-### POSEBNOSTI VRSTE ČVORA ZA CENTRE TROŠKOVA ZA MODELE KONSOLIDACIJE PROJEKTA/NALOGA
+Aktiviranjem opcije **Razmotri podređene centre troška/prihoda** moguće je unijeti nadređeni centar troška, a FluentisERP će automatski prikazati sve njegove podređene centre koji imaju evidentirane vrijednosti. Time se izbjegava potreba za pojedinačnim unosom i održavanjem svih podređenih centara, jer je dovoljno definirati samo nadređeni centar koji ih grupira.
 
-- **Brojnik za izračun profitabilnosti**: označava čvor koji zbraja maržu projekta/naloga
+### PREGLED DODJELJIVANJA KONTA
 
-- **Vrsta izvora**: označava koja vrsta izvora podataka će valorizirati čvor. Mogući izvori uključuju sljedeće:
-    - *Knjiženje*: tipično korišten za čvor koji zbraja direktne prihode, podaci dolaze iz računovodstva
-    - *Ručni obračun*: za podatke koji dolaze iz izvanknjigovodstvenih unosa
-    - *Formula*: za podatke koji dolaze iz formula za izračun
-    - *Amortizacije*: za podatke koji dolaze iz tehničkog izračuna amortizacija u kontrolingu
-    - *Ostatci*: za usklađenja na kraju razdoblja, obično se ne koristi
-    - *Preokret po tarifi:*: obično se ne koristi
-    - *Zalihe*: za podatke koji dolaze iz računovodstvenih zaliha u kontrolingu
-    - *Materijali*:za prikaz troškova potrošnjen materijala u proizvodnjo
-    - *Vanjsko djelovanje*: za prikaz troškova vanjskih radova (s računa za rad)
-    - *Transformacija*: za prikaz troškova unutrašnje obrade (iz proizvodnje)
-    - *Vrijeme stroja*: za prikaz vremena korištenja strojeva u proizvodnji
-    - *Vrijeme ljudskih resursa*: za prikaz vremena rada ljudi u proizvodnji
-    - *Vrijeme pripreme stroja*: za prikaz vremena za pripremu stroja
-    - *Vrijeme pripreme ljudi*: za prikaz vremena za pripremu ljudi
-    - *Konsolidacija*: za unos konsolidacijskih podataka između tvrtki, obično se ne koristi.
+Pregled **konta** omogućuje definiranje popisa konta i/ili podkonta koji će valorizirati ovu razinu modela. Nije dopušten unos istog konta ili podkonta s istim tipom salda unutar iste razine, dok se isti konto ili podkonto može koristiti na drugim mjestima u reklasifikaciji bez ograničenja. Dopušten je i unos samo glavnog konta bez pojedinačnih podkonta. To je uobičajen slučaj kod konta koja sadrže podkonta iz evidencija kupaca ili dobavljača, kada nije potrebno održavati detaljan popis svih analitika unutar modela.
+
+**Tip salda** za pojedini red konta ili podkonta može biti:
+
+- **Općenito**, pri čemu se preuzima saldo podkonta neovisno o njegovom predznaku. Ako je uneseno glavno konto, preuzima se zbroj salda svih pripadajućih podkonta.
+
+- **Duguje**, pri čemu se preuzima saldo samo ako je dugovne prirode. Za glavno konto uzima se zbroj svih dugovnih salda pripadajućih podkonta.
+
+- **Potražuje**, pri čemu se preuzima saldo samo ako je potražne prirode. Za glavno konto uzima se zbroj svih potražnih salda pripadajućih podkonta.
+
+- **Povećanje**, pri čemu se za konto ili podkonto izračunava razlika između privremenog zatvaranja korištenog u reklasifikaciji i drugog referentnog zatvaranja. Ova opcija posebno je korisna za analize temeljene na promjenama odnosno tokovima.
+
+Posljednja opcija u pregledu je **Inverzija kolona**, koja omogućuje obrtanje predznaka salda za odabrano konto ili podkonto.
+
+:::tip NAPOMENA
+Ova opcija može biti korisna kada je potrebno iz ukupnog salda određenog konta isključiti vrijednost pojedinog podkonta. Primjerice, intercompany kupac može se izdvojiti iz glavnog konta kupaca kako bi se prikazao u zasebnom čvoru bez dvostrukog uključivanja iste vrijednosti.
+:::
+
+Unos podataka u ovaj pregled može se izvršiti ručnim unosom šifre konta, odabirom iz pomoći za konta ili korištenjem gumba **Višestruko umetanje podkonta**, koji omogućuje istovremeni odabir više zapisa.
+
+### PREGLED DODJELJIVANJA CENTARA PODUZEĆA
+
+U pregledu centara troškova definiraju se centri koji će valorizirati pojedinu razinu modela. Dostupna su sljedeća polja:
+
+- **Tip retka**, koji je povezan s upravljanjem nositeljima troškova u kontrolingu te se koristi samo u modelima povezanima s kontrolingom. Moguće vrijednosti su:
+  - *Izvor* – analitički retci izravno dodijeljeni centru ili dodijeljeni u prvom ciklusu nositelja troškova.
+  - *Predano* – vrijednosti prenesene drugim centrima troškova koji su navedeni u pregledu.
+  - *Primljeno* – vrijednosti zaprimljene od drugih centara troškova navedenih u pregledu.
+
+- **Konto / Podkonto / Opis**, kojim se definira konto ili konto-podkonto prema kojem će se filtrirati podaci analitike ili upravljačkog računovodstva.
+
+- [**Centar troška**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), koji je obavezan u modelima koji nisu povezani s kontrolingom, dok je u modelima kontrolinga opcionalan. Koristi se za filtriranje podataka analitike ili upravljačkog računovodstva.
+
+- **Inverzija kolona**, kojom se za odabrani redak obrće predznak salda.
+
+- **Varijable**, vidljive samo u modelima povezanima s kontrolingom. Omogućuju određivanje hoće li se koristiti:
+  - *Varijabilna kvota*
+  - *Fiksna kvota*
+  - *Općenito* (dugovno ili potražno), što je zadana vrijednost kada nije odabrana nijedna posebna opcija.
+
+**Tip salda** standardno se vodi kao *Općenito*, dok su u modelima povezanima s kontrolingom dodatno dostupne opcije:
+
+- *Početni*
+- *Završni*
+
+Ove se opcije koriste za retke podkonta koji predstavljaju početne i završne zalihe.
+
+### PREGLED DODELJIVANJA KONTA
+
+Pregled **konta** omogućava definisanje liste konta i/ili podkonta koji će vrednovati ovaj nivo modela. Nije dozvoljen unos istog konta ili podkonta sa istim tipom salda u okviru istog nivoa, dok se isto konto ili podkonto može koristiti na drugim mestima u reklasifikaciji bez ograničenja. Dozvoljen je i unos samo glavnog konta bez pojedinačnih podkonta. Ovo je tipičan slučaj kod konta koja sadrže podkonta iz evidencija kupaca ili dobavljača, kada nije potrebno održavati detaljnu listu svih analitika unutar modela.
+
+**Tip salda** za pojedini red konta ili podkonta može biti:
+
+- **Opšti**, pri čemu se preuzima saldo podkonta bez obzira na njegov predznak. Ako je uneseno glavno konto, preuzima se zbir salda svih pripadajućih podkonta.
+
+- **Duguje**, pri čemu se preuzima saldo samo ako je dugovne prirode. Za glavno konto uzima se zbir svih dugovnih salda pripadajućih podkonta.
+
+- **Potražuje**, pri čemu se preuzima saldo samo ako je potražne prirode. Za glavno konto uzima se zbir svih potražnih salda pripadajućih podkonta.
+
+- **Povećanje**, pri čemu se za konto ili podkonto izračunava razlika između privremenog zatvaranja korišćenog u reklasifikaciji i drugog referentnog zatvaranja. Ova opcija je posebno korisna za analize zasnovane na promenama odnosno tokovima.
+
+Poslednja opcija u pregledu je **Inverzija kolona**, koja omogućava obrtanje predznaka salda za odabrano konto ili podkonto.
+
+:::tip NAPOMENA
+Ova opcija može biti korisna kada je potrebno iz ukupnog salda određenog konta isključiti vrednost pojedinog podkonta. Na primer, intercompany kupac može biti izdvojen iz glavnog konta kupaca kako bi se prikazao u zasebnom čvoru bez dvostrukog uključivanja iste vrednosti.
+:::
+
+Unos podataka u ovaj pregled može se izvršiti ručnim unosom šifre konta, odabirom iz pomoći za konta ili korišćenjem dugmeta **Višestruko umetanje podkonta**, koje omogućava istovremeni odabir više zapisa.
+
+### PREGLED DODELJIVANJA CENTARA PREDUZEĆA
+
+U pregledu centara troškova definišu se centri koji će vrednovati pojedini nivo modela. Dostupna su sledeća polja:
+
+- **Tip reda**, koji je povezan sa upravljanjem nosiocima troškova u kontrolingu i koristi se samo u modelima povezanim sa kontrolingom. Moguće vrednosti su:
+  - *Izvor* – analitički redovi direktno dodeljeni centru ili dodeljeni u prvom ciklusu nosilaca troškova.
+  - *Preneto* – vrednosti prenete drugim centrima troškova koji su navedeni u pregledu.
+  - *Primljeno* – vrednosti primljene od drugih centara troškova navedenih u pregledu.
+
+- **Konto / Podkonto / Opis**, kojim se definiše konto ili konto-podkonto prema kojem će se filtrirati podaci analitike ili upravljačkog računovodstva.
+
+- [**Centar troška**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), koji je obavezan u modelima koji nisu povezani sa kontrolingom, dok je u modelima kontrolinga opcion. Koristi se za filtriranje podataka analitike ili upravljačkog računovodstva.
+
+- **Inverzija kolona**, kojom se za odabrani red obrće predznak salda.
+
+- **Varijable**, vidljive samo u modelima povezanim sa kontrolingom. Omogućavaju određivanje da li će se koristiti:
+  - *Varijabilna kvota*
+  - *Fiksna kvota*
+  - *Opšte* (dugovno ili potražno), što je podrazumevana vrednost kada nije odabrana nijedna posebna opcija.
+
+**Tip salda** standardno se vodi kao *Opšti*, dok su u modelima povezanim sa kontrolingom dodatno dostupne opcije:
+
+- *Početni*
+- *Završni*
+
+Ove opcije koriste se za redove podkonta koji predstavljaju početne i završne zalihe.
+
+### POSEBNOSTI VRSTE ČVORA ZA CENTRE TROŠKOVA U MODELIMA KONTROLINGA
+
+U modelima povezanim sa kontrolingom dostupne su određene specifične opcije za čvorove centara troškova. Konkretno:
+
+- **Procentualna referenca** služi za određivanje referentnog čvora na osnovu kojeg se u poređenjima izračunava „vertikalni“ procenat u modelu.
+
+:::tip NAPOMENA
+Na primer, ova opcija se postavlja na ukupne prihode kako bi se moglo utvrditi koliki je procentualni udeo svakog troškovnog čvora u odnosu na ukupne prihode.
+:::
+
+- **Brojilac za izračunavanje indeksa** koristi se u modelu ukupnog troška centara i označava čvor koji sabira troškove kako bi se njegova vrednost koristila kao brojilac za izračunavanje tarifa centara.
+
+- **Varijable** omogućavaju definisanje da li će se koristiti:
+  - *varijabilna kvota*
+  - *fiksna kvota*
+  - *opšte* (dugovno ili potražno), što predstavlja podrazumevanu opciju kada nije izabrana nijedna od prethodnih.
+
+Postavka definisana na nivou čvora primenjuje se samo ukoliko nije drugačije definisana na nivou pojedinačnog reda u mreži.
+
+- **Indeks čvora** se ne koristi.
+
+### POSEBNOSTI VRSTE ČVORA ZA CENTRE TROŠKOVA U MODELIMA KONSOLIDACIJE PROJEKTA/NALOGA
+
+- **Brojilac za izračun profitabilnosti** označava čvor koji sabira maržu projekta ili naloga.
+
+- **Vrsta izvora** određuje koju vrstu izvora podataka će koristiti čvor za svoju valorizaciju. Dostupne su sledeće opcije:
+
+  - *Knjiženje* – najčešće se koristi za čvorove koji sabiraju direktne prihode; podaci potiču iz računovodstva.
+  - *Ručno knjiženje* – koristi se za podatke koji dolaze iz vanbilansnih unosa.
+  - *Formula* – koristi se za podatke generisane formulama za obračun.
+  - *Amortizacija* – koristi podatke dobijene tehničkim obračunom amortizacije u kontrolingu.
+  - *Korekcije* – koristi se za usklađenja na kraju obračunskog perioda i uglavnom se ne koristi.
+  - *Raspodela po tarifi* – uglavnom se ne koristi.
+  - *Zalihe* – koristi podatke koji potiču iz obračuna zaliha u kontrolingu.
+  - *Materijali* – prikazuje troškove utrošenog materijala u proizvodnji.
+  - *Spoljne usluge* – prikazuje troškove eksternih radova i usluga.
+  - *Transformacija* – prikazuje troškove internih proizvodnih obrada.
+  - *Vreme mašine* – prikazuje vreme korišćenja mašina u proizvodnji.
+  - *Vreme ljudskih resursa* – prikazuje vreme rada zaposlenih u proizvodnji.
+  - *Vreme pripreme mašine* – prikazuje vreme potrebno za pripremu mašina.
+  - *Vreme pripreme zaposlenih* – prikazuje vreme potrebno za pripremu zaposlenih.
+  - *Konsolidacija* – koristi se za unos konsolidacionih podataka između povezanih kompanija i uglavnom se ne koristi.

@@ -3,19 +3,22 @@ title: Zapisi integracije
 sidebar_position: 5
 ---
 
-Unutar modula Privremenih zatvaranja odabire se postupak "Zapisi integracije". Ovaj obrazac omogućuje zasebno upravljanje integracijskim operacijama koje se mogu provesti istovremeno s izradom novog privremenog zatvaranja.
+U okviru modula Privremena zatvaranja bira se procedura **„Zapisi integracije“**. Ovaj obrazac omogućava zasebno upravljanje integracionim operacijama koje se mogu izvršavati istovremeno sa kreiranjem novog privremenog zatvaranja.
 
-Za upravljanje postupkom potrebno je postaviti: referentno zatvaranje, datum početka ekonomske pripadnosti, vrstu kalendara koji će se koristiti (preporučuje se ostaviti godišnji kalendar), tip temeljnice (predložak mora imati oznaku cdc/cdp za upravljanje integracijom troškovnih/profitnih centara).
+Za upravljanje procedurom potrebno je definisati: referentno zatvaranje, datum početka ekonomske pripadnosti, vrstu kalendara koja će se koristiti (preporučuje se korišćenje godišnjeg kalendara) i tip temeljnice (predložak mora imati oznaku cdc/cdp radi upravljanja integracijom troškovnih/profitnih centara).
 
-Ovim postupkom sustav provjerava, počevši od "Datuma početka", retke troškova/prihoda prisutne u računovodstvu, ali ne i uključene u zatvaranje (odnosno knjiženja izvan raspona datuma knjiženja/pripadnosti postavljenih pri preuzimanju podataka iz
-računovodstva). Na temelju tih podataka kreiraju se vremenska razgraničenja za dane unutar raspona ekonomskih datuma. Pokonta vremenskih razgraničenja koji će se koristiti su oni navedeni u kontnom planu za pojedini podkonto troška/prihoda ili generički
-podkonto naveden u računovodstvenim parametrima godine privremenog zatvaranja. Dostupan je i gumb za vraćanje ili brisanje pokreta koje je ova procedura već evidentirala.
+Ovom procedurom sistem proverava, počev od definisanog **Datuma početka**, stavke troškova/prihoda koje postoje u računovodstvu, ali nisu uključene u zatvaranje (odnosno knjiženja koja se nalaze izvan opsega datuma knjiženja/pripadnosti definisanih prilikom preuzimanja podataka iz računovodstva). Na osnovu tih podataka kreiraju se vremenska razgraničenja za dane koji se nalaze unutar raspona ekonomskih datuma. Podkonta vremenskih razgraničenja koja će se koristiti su ona definisana u kontnom planu za odgovarajući podkonto troška/prihoda ili generički podkonto naveden u računovodstvenim parametrima godine privremenog zatvaranja. Dostupno je i dugme za poništavanje ili brisanje knjiženja koja je ova procedura prethodno evidentirala.
 
-Posebnu pažnju treba obratiti na početni datum koji se postavlja, jer će taj datum obično biti isti kao datum posljednjeg otvaranja konta evidentiranog u računovodstvu. Primjer: Ako se kreira zatvaranje za prvo tromjesečje poslovne godine, raspon datuma za ekonomski dio obično će biti 01.01.godina – 31.03.godina. Ako je provedeno ponovno otvaranje konta iz prethodne poslovne godine, tada će se unutar ovog raspona automatski nalaziti prijenos troškova/prihoda vremenskih razgraničenja
-evidentiranih u bilanci godina-1. U tom slučaju, datum početka integracije treba postaviti na 01.01.godina, kako bi sustav provjerio postoje li nakon 31.03. stavke s pripadnošću prethodnom tromjesečju. Ako ponovno otvaranje nije provedeno, početni datum potrebno je postaviti na 01.01.godina-1, kako bi **FluentisERP** provjerio postoje li i u cijeloj prethodnoj poslovnoj
-godini troškovi/prihodi koji pripadaju početnom tromjesečju nove poslovne godine.
+Posebnu pažnju treba obratiti na početni datum koji se definiše, jer će on najčešće odgovarati datumu poslednjeg otvaranja konta evidentiranog u računovodstvu.
+
+Primer: Ako se kreira zatvaranje za prvi kvartal poslovne godine, raspon datuma za ekonomski deo obično će biti od **01.01.godina** do **31.03.godina**.
+
+Ako je izvršeno ponovno otvaranje konta iz prethodne poslovne godine, u okviru ovog perioda automatski će se nalaziti preneti troškovi/prihodi vremenskih razgraničenja evidentirani u bilansu godine-1. U tom slučaju datum početka integracije treba postaviti na **01.01.godina**, kako bi sistem proverio da li nakon **31.03.** postoje stavke čija pripadnost odgovara prethodnom kvartalu.
+
+Ukoliko ponovno otvaranje nije izvršeno, početni datum treba postaviti na **01.01.godina-1**, kako bi ***FluentisERP*** proverio da li u toku cele prethodne poslovne godine postoje troškovi/prihodi koji pripadaju prvom kvartalu nove poslovne godine.
 
 :::tip NAPOMENA
-Posebnu pažnju treba posvetiti ručnom upravljanju vremenskim razgraničenjima u računovodstvu, posebno pri zatvaranju i ponovnom otvaranju konta, jer je ispravno dodjeljivanje datuma pripadnosti stavkama ključno za točnost preuzimanja podataka u kontroling
-putem zapisa integracije ili tijekom obračuna razdoblja u kontrolingu. Automatizirano upravljanje putem **Zapisa usklađenja** omogućuje izbjegavanje pogrešaka u ovom osjetljivom procesu, čime se sprječavaju dvostruke ili netočne evidencije unutar područja kontrolinga.
+Posebnu pažnju treba posvetiti ručnom upravljanju vremenskim razgraničenjima u računovodstvu, naročito prilikom zatvaranja i ponovnog otvaranja konta, jer je pravilno definisanje datuma pripadnosti stavkama od ključnog značaja za tačnost preuzimanja podataka u kontroling putem zapisa integracije ili tokom obrade perioda u kontrolingu.
+
+Automatizovano upravljanje putem **Zapisa usklađenja** omogućava izbegavanje grešaka u ovom osetljivom procesu i sprečava dvostruka ili netačna evidentiranja unutar oblasti kontrolinga.
 :::

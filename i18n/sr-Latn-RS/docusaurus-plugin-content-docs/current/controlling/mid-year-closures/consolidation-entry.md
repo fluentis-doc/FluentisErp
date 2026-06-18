@@ -3,14 +3,14 @@ title: Zapisi konsolidacije
 sidebar_position: 6
 ---
 
-Ova forma prvenstveno služi za pretragu i pregled knjiženja generiranih postupkom konsolidacije u modulu privremenih zatvaranja.
+Ova forma prvenstveno služi za pretragu i pregled knjiženja generisanih procedurom konsolidacije u modulu privremenih zatvaranja.
 
-Potrebno je odabrati odgovarajuće konsolidacijsko zatvaranje iz padajućeg izbornika kako bi se prikazale pripadajuće knjižene stavke.
+Potrebno je izabrati odgovarajuće konsolidaciono zatvaranje iz padajućeg menija kako bi se prikazale pripadajuće knjižene stavke.
 
-Kao i kod izvanknjigovodstvenih knjiženja, iz ovog prozora moguće je dovršiti operacije konsolidacije dodavanjem potpuno ručnih knjiženja (npr. za međusobna vlasnička sudjelovanja unutar poduzeća).
+Kao i kod vanbilansnih knjiženja, iz ovog prozora moguće je dopuniti konsolidaciju dodavanjem potpuno ručnih knjiženja (na primer, za međusobna vlasnička učešća između povezanih društava).
 
-I ova knjiženja zahtijevaju odgovarajući predložak knjiženja. Za razliku od standardnih knjiženja, svaka pojedinačna redovna stavka u konsolidaciji prije svega sadrži oznaku poduzeća na koje se odnosi.
+I ova knjiženja zahtevaju odgovarajući predložak knjiženja. Za razliku od standardnih knjiženja, svaka pojedinačna stavka u konsolidaciji sadrži oznaku preduzeća na koje se odnosi.
 
-:::SAVJET[]
-Za postupak konfiguracije i izvršenja konsolidacije pogledati  [**ovdje**](/docs/controlling/mid-year-closures/procedures/consolidation)
+:::tip SAVET
+Za postupak konfiguracije i izvršavanja konsolidacije pogledajte [**ovde**](/docs/controlling/mid-year-closures/procedures/consolidation).
 :::

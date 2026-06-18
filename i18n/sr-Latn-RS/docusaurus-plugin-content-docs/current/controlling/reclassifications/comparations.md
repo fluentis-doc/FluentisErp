@@ -1,85 +1,87 @@
 ---
-title: Usporedba reklasifikacije
+title: Upoređivanje reklasifikacija
 sidebar_position: 5
 ---
 
-Usporedbe reklasifikacija omogućuju, polazeći od određenog [*modela reklasifikacije*](/docs/controlling/reclassifications/create-reclassification-model), izradu usporedbi između različitih reklasifikacija pohranjenih u ***FluentisERP-u***.
+Upoređivanje reklasifikacija omogućava, polazeći od određenog [*modela reklasifikacije*](/docs/controlling/reclassifications/create-reclassification-model), izradu poređenja između različitih reklasifikacija sačuvanih u ***FluentisERP-u***.
 
+## UPOREĐIVANJE NA OSNOVU PODATAKA REKLASIFIKOVANIH PRIVREMENIH ZATVARANJA
 
-## USPOREDBE NA TEMELJU PODATAKA REKLASIFICIRANIH PRIVREMENIH ZAVRŠNICA
-Potrebno je postaviti model, unijeti opis usporedbe, a na desnoj strani ne označiti status **Podaci iz kontrolinga** kako bi ***FluentisERP*** pročitao podatke reklasificiranih modela izrađenih iz podataka privremenog zatvaranja ili *konsolidacije*.
+Potrebno je postaviti model, uneti opis poređenja, a sa desne strane ne označiti opciju **Podaci iz kontrolinga**, kako bi ***FluentisERP*** učitao podatke reklasifikovanih modela kreiranih iz podataka privremenog zatvaranja ili *konsolidacije*.
 
-U donjem obrascu ***Detalji*** nalaze se sljedeća polja:
-- *Progresivan* redni broj – identifikacijski element podatka za karticu ***Odstupanja***
-- *Šifra/Zatvaranje* (s pripadajućim opisom i datumom)
+U donjem obrascu ***Detalji*** nalaze se sledeća polja:
 
-Nakon spremanja ovih postavki, u kartici ***Odstupanja*** prikazat će se rezultat usporedbe. Dostupne su sljedeće opcije:
+- *Redni broj* – identifikacioni element podatka za karticu ***Odstupanja***
+- *Šifra/Zatvaranje* (sa pripadajućim opisom i datumom)
 
-- *Prikaz odstupanja*: omogućuje prikaz postotnog odstupanja između unesenih reklasifikacija. Na desnoj strani može se postaviti u kojem stupcu (u susjednom ili fiksnom) će se izračunati odstupanje
+Nakon čuvanja ovih podešavanja, na kartici ***Odstupanja*** biće prikazan rezultat poređenja. Dostupne su sledeće opcije:
 
-- *Prikaži detalje podataka*: prikazuje detalje podkonta ili centara koji valoriziraju pojedini čvor modela
+- *Prikaz odstupanja*: omogućava prikaz procentualnog odstupanja između unetih reklasifikacija. Sa desne strane može se odrediti u kojoj koloni (susednoj ili fiksnoj) će se izračunavati odstupanje.
 
-- *Prikaz centara*: nije aktivno za usporedbe koje nisu iz kontrolinga
+- *Prikaži detalje podataka*: prikazuje detalje podkonta ili centara koji vrednuju pojedinačni čvor modela.
 
-- *Decimalna mjesta*: broj decimalnih mjesta za stupac odstupanja
+- *Prikaz centara*: nije aktivan za poređenja koja nisu iz kontrolinga.
 
+- *Decimalna mesta*: broj decimalnih mesta za kolonu odstupanja.
 
-## USPOREDBE NA TEMELJU PODATAKA IZ UPRAVLJAČKOG RAČUNOVODSTVA KONTROLINGA
-Potrebno je postaviti model, unijeti opis usporedbe, a na desnoj strani označiti status **Podaci kontrolinga** kako bi ***FluentisERP*** pročitao podatke iz upravljačkog računovodstva kontrolinga.
+## UPOREĐIVANJE NA OSNOVU PODATAKA IZ UPRAVLJAČKOG RAČUNOVODSTVA KONTROLINGA
 
-U donjem obrascu ***Detalji*** nalaze se sljedeća polja:
-- *Progresivan* redni broj – identifikacijski element podatka u kartici ***Odstupanja***
-- *Područje*, (obavezno) – područje iz kojeg se čitaju podaci
-- [*Dimenzija*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), (obavezno) – dimenzija iz koje se čitaju podaci
-- [*Centar troška*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers), (opcionalno) – centar za koji se žele prikazati podaci
-- *Projekt*, nije u uporabi
-- *Početno* i *završno razdoblje*, (obavezno) – vremenski raspon razdoblja koji se uzima u obzir
+Potrebno je postaviti model, uneti opis poređenja, a sa desne strane označiti opciju **Podaci iz kontrolinga**, kako bi ***FluentisERP*** učitao podatke iz upravljačkog računovodstva kontrolinga.
+
+U donjem obrascu ***Detalji*** nalaze se sledeća polja:
+
+- *Redni broj* – identifikacioni element podatka na kartici ***Odstupanja***
+- *Područje* (obavezno) – područje iz kojeg se učitavaju podaci
+- [*Dimenzija*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) (obavezno) – dimenzija iz koje se učitavaju podaci
+- [*Centar troška*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) (opciono) – centar za koji se žele prikazati podaci
+- *Projekat* – trenutno nije u upotrebi
+- *Početni i završni period* (obavezno) – vremenski raspon perioda koji se uzima u obzir
 - *Početna i završna godina* (obavezno) – vremenski raspon godina koji se uzima u obzir
-- *Prikaz detalja razdoblja*: omogućuje prikaz podataka za svaki period unutar definiranog raspona kao zaseban stupac
-- *Centar/nalog po stucpu*: omogućuje prikaz šifre *centra* unutar naziva stupca
-- *Izračun indeksa*: – opcija koja forsira trenutni izračun indeksa troškova centara. Ova opcija vrijedi prilikom usporedbe modela korištenog za mjerenje centara u tablici *Centri troškova*
+- *Prikaz detalja perioda*: omogućava prikaz podataka za svaki period unutar definisanog raspona kao zasebne kolone
+- *Centar/Nalog po koloni*: omogućava prikaz šifre *centra* unutar naziva kolone
+- *Izračunavanje indeksa*: opcija koja forsira trenutni obračun indeksa troškova centara. Ova opcija važi prilikom poređenja modela koji se koristi za merenje centara u tabeli *Centri troškova*.
 
+Nakon čuvanja ovih podešavanja, na kartici ***Odstupanja*** biće prikazan rezultat poređenja. Dostupne su sledeće opcije:
 
-Nakon spremanja ovih postavki, u kartici ***Odstupanja*** prikazat će se rezultat usporedbe. Dostupne su sljedeće opcije:
+- *Prikaz odstupanja*: omogućava prikaz procentualnog odstupanja između unetih reklasifikacija. Sa desne strane može se odrediti u kojoj koloni (susednoj ili fiksnoj) će se izračunavati odstupanje.
 
-- *Prikaz odstupanja*: – omogućuje prikaz postotnog odstupanja između unesenih reklasifikacija. Na desnoj strani može se postaviti u kojem stupcu (u susjednom ili fiksnom) će se izračunati odstupanje
+- *Prikaži detaljne podatke*: prikazuje detalje podkonta ili centara koji vrednuju pojedinačni čvor modela.
 
-- *Prikaži detaljne podatke*: – prikazuje detalje podkonta ili centara koji valoriziraju pojedini čvor modela
+- *Prikaz centara*: prikazuje i detalje centara povezanih sa podkontima čvora.
 
-- *Prikaz centara* – prikazuje i detalje centara povezanih s podkontima čvora
+- *Prikaz ukupnih iznosa*: dodaje završnu kolonu sa zbirnim iznosom svih prikazanih kolona u donjem prikazu.
 
-- *Prikaz ukupnih iznosa* – dodaje završni stupac sa zbrojem svih prikazanih stupaca u donjem prikazu
+- *Decimalna mesta*: broj decimalnih mesta za kolonu odstupanja.
 
-- *Decimalna mjesta*– broj decimalnih mjesta za stupac odstupanja
+U slučaju prikaza odstupanja, dostupne su sledeće kolone odstupanja:
 
-U slučaju prikaza odstupanja, dostupni su sljedeći stupci odstupanja:
-- *%* – vertikalni postotak između čvora s oznakom Referentni postotak (koji će imati vrijednost 100%) i svih ostalih
-- *Odstupanje* – apsolutna vrijednost odstupanja
-- *% Odstupanja* – odstupanje izraženo u postotcima
-- *% Odstupanja u odnosu na %* - uspoređuje postotke između dva stupca
+- *%* – vertikalni procenat između čvora označenog kao Referentni procenat (koji će imati vrednost 100%) i svih ostalih
+- *Odstupanje* – apsolutna vrednost odstupanja
+- *% Odstupanja* – odstupanje izraženo u procentima
+- *% Odstupanja u odnosu na %* – poredi procente između dve kolone
 
-Ako se uspoređuje model za dodjelu troškova centrima radi izračuna indeksa, a u detaljima postavki filtrirani su različiti proizvodni centri, u donjem proširenju bit će dostupni ukupni rezultati izračuna indeksa troškova za svaki od centara. Prikazani podaci uključuju:
+Ako se poredi model za raspodelu troškova centrima radi obračuna indeksa, a u detaljima podešavanja filtrirani su različiti proizvodni centri, u donjem proširenom prikazu biće dostupni ukupni rezultati obračuna indeksa troškova za svaki centar. Prikazani podaci uključuju:
 
-- *UM1-F BROJNIK*: brojnik za izračun fiksnog indeksa na UM1 centra
-- *UM1-F NAZIVNIK*: nazivnik za izračun fiksnog indeksa na UM1 centra
-- *UM1-F VRIJEDNOST INDEKSA*: vrijednost fiksnog indeksa na UM1 centra
-- *UM1-V BROJNIK*: brojnik za izračun varijabilnog indeksa na UM1 centra
-- *UM1-F NAZIVNIK*: nazivnik za izračun varijabilnog indeksa na UM1 centra
-- *UM1-F VRIJEDNOST INDEKSA*: vrijednost varijabilnog indeksa na UM1 centra
-- *UM1 UKUPNO*: ukupni indeks UM1 centra
+- *JM1-F BROJILAC*: brojilac za obračun fiksnog indeksa za JM1 centra
+- *JM1-F IMENILAC*: imenilac za obračun fiksnog indeksa za JM1 centra
+- *JM1-F VREDNOST INDEKSA*: vrednost fiksnog indeksa za JM1 centra
+- *JM1-V BROJILAC*: brojilac za obračun varijabilnog indeksa za JM1 centra
+- *JM1-V IMENILAC*: imenilac za obračun varijabilnog indeksa za JM1 centra
+- *JM1-V VREDNOST INDEKSA*: vrednost varijabilnog indeksa za JM1 centra
+- *JM1 UKUPNO*: ukupan indeks JM1 centra
 
-- *UM2-F BROJNIK*: brojnik za izračun fiksnog indeksa na UM2 centra
-- *UM2-F NAZIVNIK*: nazivnik za izračun fiksnog indeksa na UM2 centra
-- *UM2-F VRIJEDNOST INDEKSA*: vrijednost fiksnog indeksa na UM2 centra
-- *UM2-V BROJNIK*: brojnik za izračun varijabilnog indeksa na UM2 centra
-- *UM2-V NAZIVNIK*: nazivnik za izračun varijabilnog indeksa na UM2 centra
-- *UM2-V VRIJEDNOST INDEKSA*: vrijednost varijabilnog indeksa na UM2 centra
-- *UM2 UKUPNO*: ukupni indeks UM2 centra
+- *JM2-F BROJILAC*: brojilac za obračun fiksnog indeksa za JM2 centra
+- *JM2-F IMENILAC*: imenilac za obračun fiksnog indeksa za JM2 centra
+- *JM2-F VREDNOST INDEKSA*: vrednost fiksnog indeksa za JM2 centra
+- *JM2-V BROJILAC*: brojilac za obračun varijabilnog indeksa za JM2 centra
+- *JM2-V IMENILAC*: imenilac za obračun varijabilnog indeksa za JM2 centra
+- *JM2-V VREDNOST INDEKSA*: vrednost varijabilnog indeksa za JM2 centra
+- *JM2 UKUPNO*: ukupan indeks JM2 centra
 
-- *% BROJNIK* brojnik za izračun postotnog indeksa
-- *% NAZIVNIK* nazivnik za izračun postotnog indeksa
-- *% POSTOTAK* vvrijednost postotnog indeksa
+- *% BROJILAC*: brojilac za obračun procentualnog indeksa
+- *% IMENILAC*: imenilac za obračun procentualnog indeksa
+- *% PROCENAT*: vrednost procentualnog indeksa
 
 :::tip NAPOMENA
-Prilikom obrade usporedbe u kontrolingu, ***FluentisERP*** će automatski stvoriti onoliko reklasifikacija na modelu koliko ima kombinacija centra, godine, mjeseca i detalja koje je potrebno obraditi prije prikaza rezultata. Što je lista složenija, to će obrada trajati duže.
+Prilikom obrade poređenja u kontrolingu, ***FluentisERP*** će automatski kreirati onoliko reklasifikacija na modelu koliko postoji kombinacija centra, godine, meseca i detalja koje je potrebno obraditi pre prikaza rezultata. Što je lista složenija, to će obrada trajati duže.
 :::

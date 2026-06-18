@@ -3,30 +3,32 @@ title: Uvod
 sidebar_position: 2.0
 ---
 
-Područje kontrolinga sastoji se od niza modula koji mogu služiti različitim ciljevima: 
+Područje kontrolinga sastoji se od niza modula koji mogu služiti različitim ciljevima.
 
-- Jedan od mogućih ciljeva je simulacija računovodstvene bilance kroz nekoliko automatiziranih koraka pomoću modula Privremena zatvaranja. Za to nije potrebna posebna konfiguracija u ***FluentisERP*** : Dovoljno je ući u modul i kreiratic novo privremeno
-zatvaranje računa koje izračunava razne podatke preuzimanjem iz računovodstva. Zatim se dodaju različite automatske procedure, uključujući obračun razgraničenja prihoda i rashoda, amortizaciju, zalihe, ulazne fakture te eventualne dodatne ručne operacije
-za dovršavanje izračuna. Na kraju, ostaje samo ispis dobivenog izračuna, uz mogućnost konsolidacije više tvrtki u jedinstveni
-intercompany prikaz putem postupka *Konsolidacije*.
+- Jedan od mogućih ciljeva jeste simulacija finansijskih izveštaja kroz nekoliko automatizovanih koraka korišćenjem modula *Privremena zatvaranja*. Za ovu funkcionalnost nije potrebna posebna konfiguracija u ***FluentisERP-u***. Dovoljno je ući u modul i kreirati novo privremeno zatvaranje konta koje obračunava različite podatke preuzete iz računovodstva. Nakon toga se dodaju različite automatske procedure, uključujući obračun vremenskih razgraničenja, amortizacije, zaliha, ulaznih faktura, kao i eventualne dodatne ručne operacije potrebne za završetak obračuna. Na kraju ostaje samo štampanje dobijenih rezultata, uz mogućnost konsolidacije više preduzeća u jedinstven *intercompany* prikaz korišćenjem procedure *Konsolidacija*.
 
-- Nadalje, korištenje tih podataka može se proširiti agregacijom i rekategorizacijom pomoću modula *Reklasifikacije*, gdje korisnik može iskoristiti unaprijed definirane modele putem funkcije [***Fast start***](/docs/guide/fast-start) ili izraditi vlastite [*modele*](/docs/controlling/reclassifications/create-reclassification-model) Ovdje su dostupni ispisi reklasificiranih podataka te snažna funkcija usporedbe, koja omogućuje analizu razlika između različitih memoriranih reklasificiranih podataka, uključujući one iz prethodnih godina. Korisnik samo treba uskladiti unaprijed konfigurirane modele s eventualnim prilagodbama kontnog plana u odnosu na početne [***Fast start***](/docs/guide/fast-start) postavke.
-Međutim, ovdje je još uvijek sve unutar računovodstvene razine kontrolinga.
+- Korišćenje ovih podataka može se dodatno proširiti agregiranjem i reklasifikacijom kroz modul *Reklasifikacije*, gde korisnik može koristiti unapred definisane modele dostupne kroz funkciju [***Fast Start***](/docs/guide/fast-start) ili kreirati sopstvene [*modele*](/docs/controlling/reclassifications/create-reclassification-model). U okviru ovog modula dostupni su izveštaji sa reklasifikovanim podacima, kao i moćna funkcija poređenja koja omogućava analizu razlika između različitih sačuvanih reklasifikacija, uključujući i podatke iz prethodnih godina. Korisnik treba samo da uskladi unapred konfigurisane modele sa eventualnim prilagođavanjima kontnog plana u odnosu na početne [***Fast Start***](/docs/guide/fast-start) postavke.
 
-- Sljedeći korak je konfiguracija sustava Kontrole upravljanja, temeljenog na višerazinskoj i [*multidimenzionalnoj*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) strukturi [***Poslovnih centara***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers). Ovdje postoji više mogućnosti:
-    - Može se ograničiti na definiranje jedne dimenzije analize s popisom centara koji su povezani isključivo s računovodstvenim podacima, koristeći isključivo prethodno spomenute module *Privremenog zatvaranja* i *Reklasifikacije*. U ovom slučaju
-konfiguracija se svodi na tablice *Dimenzija*, *Centri tvrtke*, *Vrste područja* i *Područja*.
-    - Alternativno, moguće je integrirati izvanračunovodstvene podatke ili podatke iz proizvodnje (*sati* i *količine*), tehničke amortizacije te definirati više dimenzija analize (po poslovnoj liniji, projektu/narudžbi). Tako se mogu dobiti stvarne tarife proizvodnih centara, račun dobiti i gubitka prema marginalnom doprinosu, ili čak full costing analiza pojedinih prodajnih projekata/narudžbi.
- Ovisno o složenosti poduzeća i željenim rezultatima, u analizu se uključuju i tablice [*nositelja troškova*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers), veze između poslovnih centara i strojeva, radnih grupa te različitih WBS struktura projekata i aktivnosti resursa.
+Međutim, do ove tačke sve aktivnosti ostaju na nivou računovodstvenog kontrolinga.
 
-- Na postignute rezultate moguće je nadograditi dodatne funkcionalnosti:
-    - Upravljanje *proračunom* po troškovnom centru, radi usporedbe između predviđenih i stvarnih rezultata za odabrano razdoblje.
-    - Simulacije *troška proizvoda*, koje su standardno povezane s troškovima temeljenima na materijalnim specifikacijama proizvoda (BOM).
+- Sledeći korak predstavlja konfiguracija sistema upravljačkog kontrolinga zasnovanog na višeslojnoj i [*multidimenzionalnoj*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) strukturi [***poslovnih centara***](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers).
 
-Područje kontrolinga također uključuje i modul *Plana prodaje*
+Ovde postoje različite mogućnosti:
 
-U ovom općem pregledu bit će prikazane logične smjernice za implementaciju ***cjelovitog*** sustava Kontrolinga.
+    - Može se ostati na definisanju jedne dimenzije analize sa listom centara povezanih isključivo sa računovodstvenim podacima, koristeći samo prethodno pomenute module *Privremenih zatvaranja* i *Reklasifikacija*. U tom slučaju konfiguracija se svodi na tabele *Dimenzije*, *Poslovni centri*, *Tipovi područja* i *Područja*.
+
+    - Alternativno, moguće je integrisati vanračunovodstvene podatke ili podatke iz proizvodnje (*radne sate*, *mašinske sate* i *količine*), tehničku amortizaciju, kao i definisati više dimenzija analize (po poslovnim linijama, projektima ili nalozima). Na taj način moguće je dobiti stvarne tarife proizvodnih centara, račun dobiti i gubitka prema marginalnom doprinosu ili čak *full costing* analizu pojedinačnih prodajnih projekata i naloga. U zavisnosti od složenosti preduzeća i željenih rezultata, u analizu se uključuju i tabele [*nosilaca troškova*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers), veze između poslovnih centara i mašina, radnih grupa, kao i različitih WBS struktura projekata i aktivnosti resursa.
+
+- Na ostvarene rezultate moguće je nadograditi dodatne funkcionalnosti:
+
+    - Upravljanje *budžetom* po centru troška, radi poređenja planiranih i ostvarenih rezultata za određeni period.
+
+    - Simulacije *troškova proizvoda*, koje su standardno povezane sa troškovima definisanim kroz sastavnice proizvoda (BOM).
+
+Područje kontrolinga obuhvata i modul *Plana prodaje*.
+
+U ovom opštem pregledu biće predstavljene logičke smernice za implementaciju ***kompletnog*** sistema kontrolinga.
 
 :::tip Napomena
-Nije lako definirati jedinstveni i linearni obrazovni put za ovo područje, jer unutar iste tvrtke različiti korisnici mogu koristiti različite module i opcije. Stoga, gdje je potrebno, detaljno su opisani različiti mogući ciljevi i načini korištenja dostupnih procedura.
+Nije jednostavno definisati jedinstven i linearan put obuke za ovu oblast, jer različiti korisnici unutar iste kompanije mogu koristiti različite module i funkcionalnosti. Zbog toga su, gde god je potrebno, detaljno opisani različiti ciljevi i načini korišćenja dostupnih procedura.
 :::

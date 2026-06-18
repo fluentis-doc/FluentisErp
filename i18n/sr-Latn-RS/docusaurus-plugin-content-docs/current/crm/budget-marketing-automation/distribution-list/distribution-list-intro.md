@@ -1,11 +1,13 @@
 ---
-title: Distribucijske liste
+title: Distribucione liste
 sidebar_position: 1
 ---
 
-Procedura **Distribucijske Liste** omogućuje stvaranje lista CRM kontakata kojima će biti poslani **Newsletteri**.
-Distribucijske liste dijele se na dvije vrste:  
--	**Statičke liste**: korisniku zahtijevaju ručno dodavanje novih CRM kontakata u listu;  
--	**Dinamičke liste**: u stvarnom vremenu, na temelju postavljenih filtara na SQL upitu povezanom s listom, izračunavaju kontakte koji trebaju biti uključeni u slanje newslettera.  
+Procedura **Distribucione liste** omogućava kreiranje lista CRM kontakata kojima će biti poslati ***Newsletteri***.
 
-Liste distribucije mogu sadržavati kako same CRM kontakte, tako i reference na kontakte.
+Distribucione liste dele se na dve vrste:
+
+- **Statičke liste**: zahtevaju od korisnika ručno dodavanje novih CRM kontakata na listu;
+- **Dinamičke liste**: u realnom vremenu, na osnovu filtera postavljenih u SQL upitu povezanom sa listom, izračunavaju kontakte koji treba da budu uključeni u slanje *newslettera*.
+
+Distribucione liste mogu sadržati kako same CRM kontakte, tako i reference na kontakte.

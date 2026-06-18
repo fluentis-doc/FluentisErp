@@ -1,14 +1,14 @@
 ---
-title: Izvještavanje
-sidebar_Position: 2.9
---- 
+title: Izveštavanje
+sidebar_position: 2.9
+---
 
-Izvještavanje se može podijeliti u dvije kategorije:
+Izveštavanje se može podeliti u dve kategorije:
 
-***IZVJEŠTAJ O DOBITI I GUBITKU (POSLOVNO IZVJEŠTAVANJE):*** klasičan račun dobiti i gubitka temeljen na marginalnom doprinosu, dodanoj vrijednosti ili vrijednosti ostvarene ili prodane proizvodnje;  
-***EKONOMSKI IZVJEŠTAJ CENTARA:*** izvještaj koji, ovisno o odabranom nositelju troškova mjerenja centra, omogućuje određivanje parametarske tarife koja je za proizvodne centre gotovo uvijek izražena u eurima po satu. Ta tarifa koristi se za izračun troška na razini narudžbe ili proizvoda, uzimajući u obzir vrijeme utrošeno na samu transformaciju.
+***IZVEŠTAJ O DOBITI I GUBITKU (POSLOVNO IZVEŠTAVANJE):*** klasičan izveštaj o dobiti i gubitku zasnovan na marginalnom doprinosu, dodatnoj vrednosti ili vrednosti ostvarene odnosno prodate proizvodnje;
 
-Ovakvo izvještavanje treba omogućiti i usporedbu različitih razdoblja ili vremenskih jedinica kako bi se provela barem osnovna analiza odstupanja. Primjerice, za različita područja može se usporediti ostvareni rezultat s budžetom.
+***EKONOMSKI IZVEŠTAJ CENTARA:*** izveštaj koji, u zavisnosti od izabranog nosioca troškova za merenje centra, omogućava određivanje parametarske tarife koja je za proizvodne centre gotovo uvek izražena u evrima po satu. Ova tarifa koristi se za obračun troškova na nivou naloga ili proizvoda, uzimajući u obzir vreme utrošeno na samu transformaciju odnosno proizvodni proces.
 
-Za poduzeća koja koriste vrednovanje kroz [*projekte/narudžbe*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension) bit će dostupna i procedura ispisa izvještaja o ostvarenju projekta, uvijek temeljenog na
-specifičnom [*modelu klasifikacije*](/docs/controlling/reclassifications/create-reclassification-model).
+Ovakvo izveštavanje treba da omogući i poređenje različitih perioda ili vremenskih jedinica kako bi se sprovela makar osnovna analiza odstupanja. Na primer, za različita područja moguće je uporediti ostvarene rezultate sa budžetom.
+
+Za preduzeća koja koriste vrednovanje putem [*projekata/naloga*](/docs/controlling/controlling-parametrization/controlling-specific-settings/dimension), biće dostupna i procedura za štampu izveštaja o realizaciji projekta, koji se uvek zasniva na specifičnom [*modelu reklasifikacije*](/docs/controlling/reclassifications/create-reclassification-model).

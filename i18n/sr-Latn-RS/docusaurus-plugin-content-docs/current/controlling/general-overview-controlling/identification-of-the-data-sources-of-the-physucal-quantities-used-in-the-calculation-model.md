@@ -1,18 +1,30 @@
 ---
-title: Identifikacija izvora podataka za fizičke veličine korištene u modelu izračuna
+title: Identifikacija izvora podataka za fizičke veličine korišćene u modelu obračuna
 sidebar_position: 2.4
 ---
 
 :::tip NAPOMENA
-Ovaj odjeljak usko je povezan s primjenom proširenih opcija kontrolinga.
+Ovaj odeljak je usko povezan sa korišćenjem naprednih funkcionalnosti kontrolinga.
 :::
 
-Nakon što se identificirala potreba za upravljanjem nositelja prijenosa na temelju fizičkih količina, kao peti korak javlja se potreba za određivanjem izvora iz kojih se može preuzeti vrijednosti tih fizičkih veličina. Ako se govori o radnim satima strojeva, radnim satima zaposlenika, tonama ili drugim jedinicama, mora se također identificirati gdje će se to izvući, kao i [*jedinice mjere*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) koje će se koristiti. Općenito, podaci se nalaze u proizvodnom okruženju i, ako se govori o radnim satima strojeva i zaposlenika, izvor su proizvodni izvještaji, pomoću kojih možemo mjesečno evidentirati stvarno utrošene sate rada i strojeva za centre. No, ti
-podaci mogu također biti dostupni u vanjskom sustavu, iz kojeg se može preuzeti Excel datoteka i jednostavno uvesti u ***FluentisERP*** putem odgovarajuće procedure. Također, podaci se mogu dobiti praćenjem radnih sati administrativnog osoblja putem unosa sati na projektu, ili kroz ručni unos na početku godine, koji se potom može *proporcionalno rasporediti* prema periodizaciji povezanoj s fizičkim kretanjima.
+Nakon što se identifikuje potreba za upravljanjem nosiocima raspodele zasnovanim na fizičkim količinama, sledeći korak je određivanje izvora iz kojih će se preuzimati podaci o tim fizičkim veličinama.
+
+Ukoliko se radi o mašinskim satima, radnim satima zaposlenih, tonama ili drugim jedinicama mere, potrebno je definisati gde se ti podaci nalaze, kao i koje će se [*jedinice mere*](/docs/controlling/controlling-parametrization/controlling-specific-settings/measure-units) koristiti.
+
+Uobičajeno je da se takvi podaci nalaze u proizvodnom okruženju. Kada je reč o mašinskim ili radnim satima, izvor podataka su najčešće proizvodne prijave, koje omogućavaju mesečno evidentiranje stvarno utrošenih sati rada ljudi i mašina po centrima.
+
+Međutim, podaci mogu biti dostupni i u spoljnim sistemima, iz kojih se mogu izvesti u Excel format i zatim jednostavno uvesti u ***FluentisERP*** pomoću odgovarajuće procedure za uvoz.
+
+Podaci se takođe mogu dobijati:
+
+- kroz evidenciju radnih sati administrativnog osoblja putem prijave vremena na projektima,
+- ručnim unosom na početku godine,
+- ili kombinacijom ovih metoda, uz naknadnu *proporcionalnu raspodelu* prema periodizaciji definisanoj za fizička kretanja.
 
 :::tip NAPOMENA
-Obrada [*nositelja troškova*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) temeljenih na količinama, kao i svih drugih takvih nositelja, prema zadanim postavkama uključuje blokadu obrade kada potrebna
-količina za raspodjelu izvornog podatka nije dostupna u jednom od razdoblja koja se obrađuju. Ova postavka korisna je kako bi se spriječilo zaboravljanje valorizacije izvornog podatka, posebno kada je riječ o ručnom unosu podataka, a ne o podacima preuzetim iz proizvodnje.
-Ipak, moguće je onemogućiti blokadu kako bi se primijenila prosječna vrijednost postojećih podataka (pogledati *upravljanje greškama* u nositeljima troškova), u slučajevima kada doista može nedostajati količina u određenom razdoblju (npr. tijekom
-kolektivnih godišnjih odmora, poput kolovoza).
+Obrada [*nosilaca troškova*](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-drivers) zasnovanih na količinama, kao i svih drugih nosilaca ovog tipa, podrazumevano uključuje blokadu obračuna ukoliko u nekom od obrađivanih perioda nije dostupna potrebna količina za raspodelu izvornog podatka.
+
+Ova postavka je korisna jer sprečava da se previdi unos potrebnih količina, naročito kada se podaci unose ručno, a ne preuzimaju automatski iz proizvodnje.
+
+Ipak, moguće je deaktivirati ovu blokadu kako bi sistem koristio prosečnu vrednost raspoloživih podataka (videti opciju *upravljanje greškama* kod nosilaca troškova). Ovo je naročito korisno u situacijama kada u određenom periodu zaista nema količina, na primer tokom kolektivnih godišnjih odmora ili zastoja u proizvodnji.
 :::

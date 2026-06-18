@@ -3,9 +3,12 @@ title: Preračun troškova
 sidebar_position: 3
 ---
 
-Postupak **Preračun troškova** dostupan u modulu kontrolinga, omogućuje ponovni izračun zadnjeg i prosječnog troška artikala na temelju skladišnih kretanja.
-U gornjem dijelu obrasca nalazi se filtar, gdje je moguće preciznije pretraživanje artikala koji će biti uključeni u postupak. U prikazu rezultata pretrage moguće je odabrati artikle koji će se uzeti u obzir. Postupak se pokreće pomoću tipke **Preračun troškova**; u alatnoj traci. Rezultati izračuna bit će izravno prikazani u tablici.
+Postupak **Preračuna troškova**, dostupan u modulu kontrolinga, omogućava ponovni obračun poslednjeg i prosečnog troška artikala na osnovu skladišnih kretanja.
+
+U gornjem delu forme nalazi se filter koji omogućava precizniju pretragu artikala koji će biti uključeni u postupak. U prikazu rezultata pretrage moguće je odabrati artikle koji će biti uzeti u obzir. Postupak se pokreće pomoću dugmeta **Preračun troškova** na alatnoj traci. Rezultati obračuna biće direktno prikazani u tabeli.
 
 :::note NAPOMENA
-Važno je imati na umu da skladišna kretanja koja postupak uzima u obzir za izračun *zadnjeg troška* ili *prosječnog troška* obuhvaćaju sva kretanja od datuma posljednjeg zatvaranja plus jedan dan do danas. Osim toga, kretanja moraju biti evidentirana pomoću predloška koji imaju omogućene sljedeće oznake (flagove): *Ažuriraj posljednju cijenu* i/ili *Ažuriraj prosječnu cijenu* i *Zatezna kamata*.
+Važno je imati u vidu da skladišna kretanja koja postupak uzima u obzir za izračunavanje *poslednjeg troška* ili *prosečnog troška* obuhvataju sva kretanja od datuma poslednjeg zatvaranja uvećanog za jedan dan pa do tekućeg datuma.
+
+Pored toga, kretanja moraju biti evidentirana pomoću predložaka knjiženja koji imaju aktivirane sledeće opcije: *Ažuriraj poslednju cenu* i/ili *Ažuriraj prosečnu cenu* i *Zatezna kamata*.
 :::

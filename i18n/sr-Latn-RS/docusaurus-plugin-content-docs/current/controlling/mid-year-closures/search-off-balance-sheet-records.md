@@ -1,11 +1,10 @@
 ---
-title: Pretraga izvanknjigovodstvenih knjiženja
+title: Pretraga vanbilansnih knjiženja
 sidebar_position: 4
 ---
 
-Pretraga izvanknjigovodstvenih knjiženja omogućuje pregled svih zapisa povezanih s određenim ***privremenim zatvaranjem***. Svi gumbi u prozoru bit će onemogućeni dok se ne odredi na koje periodično zatvaranje se želi primijeniti pretraga.
+Pretraga vanbilansnih knjiženja omogućava pregled svih knjiženja povezanih sa određenim ***privremenim zatvaranjem***. Sva dugmad u prozoru biće onemogućena dok se ne odredi periodično zatvaranje na koje će se primeniti pretraga.
 
-Iz ovog prozora moguće je pronaći i izmijeniti knjiženja povezana s privremenim zatvaranjem, izbrisati knjiženja povezane s privremenim zatvaranjem, dodati ručna knjiženja u privremeno zatvaranje (npr. evidentirati rezervacije koje se odnose na obračun plaća), duplicirati odabranu ručno knjiženje (ali ne i automatska knjiuženja kreirana postupcima iz modula) u drugo zatvaranje koje je već prisutno u modulu.
+Iz ovog prozora moguće je pronaći i izmeniti knjiženja povezana sa privremenim zatvaranjem, obrisati knjiženja povezana sa privremenim zatvaranjem, dodati ručna knjiženja u privremeno zatvaranje (na primer, evidentirati rezervisanja koja se odnose na obračun zarada), kao i duplicirati izabrano ručno knjiženje (ali ne i automatska knjiženja kreirana procedurama modula) u drugo zatvaranje koje već postoji u sistemu.
 
-Kreiranje izvanknjigovodstvenog knjiženja u potpunosti je slično kreiranju unosa u dnevniku glavne knjige: uvijek se odabirepredložak knjiženja, a zatim se pristupa samom knjiženju. Jedina razlika je u tome što u privremenom zatvaranju ne postoji koncept PDV protokola. Modul, međutim, predstavlja kopiju s istim logičkim tablicama kao i knjigovodstvo, ali fizički je odvojen kako ne bi utjecao na službene podatke knjigovodstva. Dozvoljena su isključivo izvanknjigovodstvena knjiženja po centru troška/profita.
-
+Kreiranje vanbilansnog knjiženja u potpunosti je slično unosu knjiženja u dnevnik glavne knjige: uvek se bira predložak knjiženja, nakon čega se pristupa samom unosu knjiženja. Jedina razlika je u tome što u privremenom zatvaranju ne postoji koncept PDV protokola. Modul, međutim, predstavlja kopiju sa istim logičkim tabelama kao i računovodstvo, ali je fizički odvojen kako ne bi uticao na zvanične računovodstvene podatke. Dozvoljena su isključivo vanbilansna knjiženja po centrima troška/profita.

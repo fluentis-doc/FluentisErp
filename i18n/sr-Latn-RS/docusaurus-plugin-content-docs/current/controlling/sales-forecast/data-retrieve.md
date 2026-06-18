@@ -1,31 +1,31 @@
 ---
-title: Povrat podataka
+title: Dohvat podataka
 sidebar_position: 3
 ---
 
 :::important Čemu služi
-Obrada za automatsko generiranje podataka o prodaji i, ako je potrebno, Prognoza prodaje na temelju povijesnih podataka iz dokumenata iz područja Prodaje; posebno iz dokumenata: Narudžbe kupaca, otpremnice i računi od prodaje.
+Obrada za automatsko generisanje podataka o prodaji i, po potrebi, Plana prodaje na osnovu istorijskih podataka iz dokumenata iz oblasti Prodaje, i to posebno iz dokumenata: Narudžbine kupaca, Otpremnice i Prodajni računi.
 :::
 
-Možemo pokrenuti Dohvat podataka iz izbornika područja Kontroling > Mjesečne prognoze prodaje.
+Pokreće se iz menija Kontroling > Mesečni planovi prodaje.
 
-Upravljanje se sastoji od obrasca filtera za pretraživanje prethodno izvršenih Dohvata podataka te, putem gumba **Novo**, stvaranja novih. Također uključuje obrazac **Upravljanje dohvata podataka** u kojem je moguće odrediti iz kojih tipova prodajnih dokumenata i za koje razdoblje će se dohvatiti podaci, koji zatim postaju početna osnova za izradu Prognoza prodaje za unaprijed definiranu [Verziju prognoze prodaje](/docs/configurations/tables/controlling/forecast/pv-versions).
+Upravljanje se sastoji od forme za pretragu prethodno izvršenih preuzimanja podataka i, putem dugmeta **Novo**, kreiranja novih. Takođe uključuje formu **Upravljanje preuzimanjem podataka**, u kojoj je moguće definisati iz kojih tipova prodajnih dokumenata i za koji period će se podaci preuzimati, nakon čega oni postaju početna osnova za izradu Planova prodaje za unapred definisanu Verziju prognoze prodaje.
 
-U nastavku navodimo detaljno svaku pojedinu informaciju koja je prisutna:
+U nastavku su navedene sve informacije koje se nalaze u formi:
 
-- **Verzija**: obvezan podatak koji služi za pohranu dohvaćenih podataka u toj specifičnoj verziji;
-- **Grupiraj po varijanti**: omogućuje ili onemogućuje uzimanje u obzir detalja po varijanti artikla;
-- **Datum posljednjeg snimanja**: predlaže se današnji datum i ažurira se pritiskom na gumb **Dohvat podataka** s datumom obrade;
-- **Uzmite u obzir predviđeni datum isporuke**: ako je označeno, pri dohvaćanju samo Narudžbi kupaca mjesec obračuna bit će mjesec Predviđenog datuma isporuke, a ne onaj iz Datuma spremnosti robe;
-- **Generiranje prognoza**: ako je označeno, **Dohvat podataka** će generirati i Prognoze prodaje po artiklu, varijanti i verziji;
-- **Izlazni računi**: u prvom popisu možemo navesti iz kojih tipova računa dohvatiti informacije i za koje razdoblje (*Od datuma*, *Do datuma*); odabrani tip računa automatski će predložiti radi li se o tipu računa za povrat ili ne;
-- **Otpremnica**: u drugom popisu možemo navesti iz kojih tipova otpremnica dohvatiti informacije i za koje razdoblje (*Od datuma*, *Do datuma*); odabrani tip otpremnice automatski će predložiti radi li se o tipu povrata ili ne;
-- **Narudžbe kupaca**: u trećem popisu možemo navesti iz kojih tipova narudžbi dohvatiti informacije i za koje razdoblje (*Od datuma*, *Do datuma*).
+- **Verzija**: obavezan podatak koji služi za čuvanje preuzetih podataka u toj konkretnoj verziji;
+- **Razvrstaj po varijanti**: omogućava ili onemogućava uzimanje u obzir detalja po varijanti artikla;
+- **Datum poslednjeg snimanja**: podrazumevano se predlaže današnji datum i ažurira se pritiskom na dugme **Preuzimanje podataka** sa datumom obrade;
+- **Uzmi u obzir predviđeni datum isporuke**: ako je uključeno, prilikom preuzimanja Narudžbina kupaca mesec obračuna biće određen prema Predviđenom datumu isporuke, a ne prema Datumu spremnosti robe;
+- **Generisanje prognoze**: ako je uključeno, **Preuzimanje podataka** će generisati i Prognoze prodaje po artiklu, varijanti i verziji;
+- **Prodajni računi**: u prvom pregledu može se definisati iz kojih tipova računa će se preuzimati podaci i za koji period (*Od datuma*, *Do datuma*); odabrani tip računa automatski predlaže da li je reč o računu za povrat ili ne;
+- **Otpremnice**: u drugom pregledu može se definisati iz kojih tipova otpremnica će se preuzimati podaci i za koji period (*Od datuma*, *Do datuma*); odabrani tip otpremnice automatski predlaže da li je reč o povratu ili ne;
+- **Narudžbine kupaca**: u trećem pregledu može se definisati iz kojih tipova narudžbina će se preuzimati podaci i za koji period (*Od datuma*, *Do datuma*).
 
-Za razdoblja tipova računa i prodajnih otpremnica, pri unosu novog tipa dokumenta predlaže se: *Od datuma* = 1. siječnja tekuće godine, *Do datuma* = današnji datum; dok se za razdoblja tipova narudžbi kupaca predlaže: *Od datuma* = 1. siječnja tekuće godine, *Do datuma* = 31. prosinca tekuće godine. Sve vrijednosti operater može izmijeniti.
+Za periode tipova računa i prodajnih otpremnica, prilikom unosa novog tipa dokumenta podrazumevano se predlaže: *Od datuma* = 1. januar tekuće godine, *Do datuma* = današnji datum; dok se za periode tipova narudžbina kupaca predlaže: *Od datuma* = 1. januar tekuće godine, *Do datuma* = 31. decembar tekuće godine. Sve vrednosti operater može izmeniti.
 
-Dostupni gumbi su:
+Dostupna su sledeća dugmad:
 
-- **Spremi**: pohranjuje informacije unesene u obrazac za dohvat podataka;
-- **Unesi novu vrstu računa**, **Izbriši označene tipove računa**, **Unesi novu vrstu otpremnice/primke**, **Izbriši označene tipove otpremnica/primki**, **Unesi novu vrstu naloga**, **Izbriši označene tipove naloga**: svi ovi gumbi služe za pozicioniranje na redak unosa novog tipa dokumenta ili za brisanje odabranih tipova dokumenata;
-- **Povrat podataka**: ovom obradom sve stavke dokumenata koje odgovaraju odabranim tipovima dokumenata i zadanim razdobljima (datum računa za račune, datum otpremnice za otpremnice i datum spremnosti robe ili predviđeni datum isporuke za narudžbe) postaju osnova za generiranje prognoza za traženu verziju.
+- **Sačuvaj**: čuva informacije unete u formu za preuzimanje podataka;
+- **Unesi novi tip računa**, **Obriši označene tipove računa**, **Unesi novi tip otpremnice/prijema**, **Obriši označene tipove otpremnica/prijema**, **Unesi novi tip naloga**, **Obriši označene tipove naloga**: sva ova dugmad služe za pozicioniranje na red za unos novog tipa dokumenta ili za brisanje označenih tipova dokumenata;
+- **Preuzimanje podataka**: ovom obradom sve stavke dokumenata koje odgovaraju odabranim tipovima dokumenata i zadatim periodima (datum računa za račune, datum otpremnice za otpremnice i datum spremnosti robe ili predviđeni datum isporuke za narudžbine) postaju osnova za generisanje prognoza za izabranu verziju.
