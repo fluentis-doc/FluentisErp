@@ -7,7 +7,7 @@ Ova tablica sadrži prognoze prodaje gotovih proizvoda proizvedenih u tvornici t
 
 Za distribuirane proizvode ne koristi se ova tablica, već ona s prognozama dnevne potrošnje.   
 
-Potreba za prognozom prodaje u DDMRP-u mnogo je rjeđa nego u MRP-u, jer se Master Production Schedule ne koristi, budući da nije potrebno unaprijed predviđati potražnju kao u klasičnom MRP-u.   
+Potreba za prognozom prodaje u DDMRP-u mnogo je rjeđa nego u MRP-u, jer se *Master Production Schedule* ne koristi, budući da nije potrebno unaprijed predviđati potražnju kao u klasičnom MRP-u.   
 
 Prognoza prodaje potrebna je samo kada je unaprijed poznato da će se potražnja za gotovim proizvodom u budućnosti znatno promijeniti u kratkom vremenskom razdoblju (razdoblje usporedivo sa zbrojem vremena proizvodnje gotovog proizvoda).   
 

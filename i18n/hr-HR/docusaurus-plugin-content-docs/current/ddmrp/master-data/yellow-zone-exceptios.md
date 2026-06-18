@@ -3,11 +3,11 @@ title: Ispravak žute zone 
 sidebar_position: 9
 ---
 
-Vrijednost žute zone automatski izračunava postupak ažuriranja zona na temelju vrijednosti DDMRP parametara artikla.   
+Vrijednost **žute zone** automatski izračunava postupak ažuriranja zona na temelju vrijednosti DDMRP parametara artikla.   
 
 Putem ove tablice moguće je prisilno postaviti drugačiju vrijednost na određene datume.   
 
-Planerski sustav uzima u obzir eventualne ispravke zona pri izračunu NFP-a, čak i ako postupak ažuriranja zona nije proveden.   
+Sustav planiranja uzima u obzir eventualne ispravke zona pri izračunu NFP-a, čak i ako postupak ažuriranja zona nije proveden.   
 
 Žuta zona izračunava se kao umnožak prosječne dnevne potrošnje (ADU) i vremena nabave artikla (DLT).   
 

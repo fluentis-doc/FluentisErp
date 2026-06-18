@@ -17,7 +17,7 @@ Ažuriranje se odvija prema metodi navedenoj u DDMRP parametrima artikla na slje
 
 Razdoblje analize koje se uzima u obzir definirano je za svaki artikl u DDMRP parametrima putem polja **Dani u prošlosti** i **Dani u budućnosti**.
 
-Što se tiče analiza prošlih podataka, preporučuje se korištenje vremenskog razdoblja dovoljno dugog da bude reprezentativno, odnosno vrijednosti koja je nekoliko puta veća od dekupliranog vremena isporuke (DLT) artikla, jer bi u suprotnom ponovni izračun mogao biti previše osjetljiv na posljednje promjene. 
+Što se tiče analiza povijesnih podataka, preporučuje se koristiti dovoljno dugo vremensko razdoblje kako bi rezultati bili statistički značajni, odnosno razdoblje koje je nekoliko puta duže od odvojenog vremena isporuke (DLT – Decoupled Lead Time) artikla. U suprotnom, ponovni izračun mogao bi biti previše osjetljiv na posljednje promjene i odstupanja.
 
 Ako se odabere aritmetička sredina, izračun će biti manje osjetljiv na slučajne varijacije, ali će s određenim kašnjenjem prepoznati nove trendove potrošnje. 
 

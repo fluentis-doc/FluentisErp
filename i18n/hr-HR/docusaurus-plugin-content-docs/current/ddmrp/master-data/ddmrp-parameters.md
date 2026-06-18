@@ -19,7 +19,7 @@ DDMRP parametri koje je potrebno definirati su sljedeći:
 
   Prema zadanim postavkama, opskrbljujuća logistička jedinica definirana je u tablici logističke strukture. Međutim, ovim poljem moguće je upravljati iznimkama za pojedine artikle. 
 
-  Na primjer, artikli se u ovoj logističkoj jedinici obično opskrbljuju iz jednog središnjeg huba, no neki artikli mogu dolaziti iz drugog huba ili izravno iz tvornice. 
+  Na primjer, artikli se u ovoj logističkoj jedinici obično opskrbljuju iz jednog središnjeg *huba*, no neki artikli mogu dolaziti iz drugog *huba* ili izravno iz tvornice. 
 
   Ako dobavljač nije naveden u tablici logističkih jedinica, radi se o vanjskom dobavljaču, te će se prema njemu izdati standardna narudžbenica.   
 
@@ -28,9 +28,9 @@ DDMRP parametri koje je potrebno definirati su sljedeći:
   Ako je polje dobavljač popunjeno, potrebno je popuniti i ovo polje. Ono predstavlja vrijeme potrebno za nabavu robe iz logističke jedinice ili od vanjskog dobavljača navedenog u polju dobavljač.  
 
 
-- **Kod profila (buffer profil)**, 
+- **Šifra profila (buffer profil)**, 
 
-  Kod profila buffera povezanog s ovim artiklom u logističkoj jedinici navedenoj u polju skladište. 
+  Šifra profila buffera povezanog s ovim artiklom u logističkoj jedinici navedenoj u polju skladište. 
 
 - **Faktor vremena isporuke (lead time factor)**,
 
@@ -64,7 +64,7 @@ DDMRP parametri koje je potrebno definirati su sljedeći:
 
   Izražava se u danima i predstavlja broj dana koji bi trebao proći između jedne i sljedeće narudžbe.  
 
-  Ova vrijednost uzima se u obzir prilikom izračuna zelene zone za ovaj artikal.
+  Ova vrijednost uzima se u obzir prilikom izračuna zelene zone za ovaj artikl.
 
 - **Minimalna naručiva količina (MOQ)**,
 
@@ -103,13 +103,13 @@ DDMRP parametri koje je potrebno definirati su sljedeći:
 
   Preniska vrijednost dovela bi do toga da se uobičajene oscilacije potražnje pogrešno prepoznaju kao vršni zahtjevi, što bi rezultiralo prečestim narudžbama i većom prosječnom zalihom od potrebne. 
 
-  Previsoka vrijednost mogla bi rezultirati time da se značajni, ali ne ekstremni vrhovi potražnje ne prepoznaju na vrijeme, što bi dovelo do smanjenja zaliha ispod optimalne razine, iscrpljivanja crvene zone ili čak prekida zaliha (stockout). 
+  Previsoka vrijednost mogla bi rezultirati time da se značajni, ali ne ekstremni vrhovi potražnje ne prepoznaju na vrijeme, što bi dovelo do smanjenja zaliha ispod optimalne razine, iscrpljivanja crvene zone ili čak prekida zaliha (*stockout*). 
 
   **Vremenski horizont za vršne narudžbe (OSH)**,
 
   Vremenski period od danas unutar kojeg se provjerava prisutnost vršnih zahtjeva (za izračun NFP). 
 
-  Ova vrijednost ne smije biti manja od DLT (razdvojenog lead time-a), jer je potrebno na vrijeme prepoznati potencijalne vrhove potražnje, barem onoliko unaprijed koliko traje nabava artikla.  
+  Ova vrijednost ne smije biti manja od DLT (razdvojenog *lead timea*), jer je potrebno na vrijeme prepoznati potencijalne vrhove potražnje, barem onoliko unaprijed koliko traje nabava artikla.  
 
 - **Metoda predviđanja prosječne dnevne potrošnje**,
 

@@ -4,13 +4,13 @@ title: DDMRP
 ---
 
 :::important[Info]
-Modul DDMRP (**Demand Driven Material Requirements Planning**) u Fluntis ERP-u osmišljen je za optimizaciju upravljanja zalihama i proizvodnjom, usvajanjem inovativnog i reaktivnog pristupa stvarnoj potražnji. DDMRP predstavlja evoluciju tradicionalnog MRP-a ( Material Requirements Planning), integrirajući koncepcije Lean Manufacturing-a i upravljanja lancem opskrbe (Supply Chain Management) kako bi poboljšao upravljanje resursima u složenim i stalno promjenjivim okruženjima.
+Modul DDMRP (**Demand Driven Material Requirements Planning**) u Fluntis ERP-u osmišljen je za optimizaciju upravljanja zalihama i proizvodnjom, usvajanjem inovativnog i reaktivnog pristupa stvarnoj potražnji. DDMRP predstavlja evoluciju tradicionalnog MRP-a (Material Requirements Planning), integrirajući koncepcije *Lean Manufacturinga* i upravljanja lancem opskrbe (Supply Chain Management) kako bi poboljšao upravljanje resursima u složenim i stalno promjenjivim okruženjima.
 
-Glavni cilj modula je pomoći tvrtkama da smanje razine zaliha i poboljšaju pouzdanost usluge, istovremeno štiteći operativne tokove od varijabilnosti potražnje i ponude. DDMRP omogućuje identificiranje strateških točaka duž lanca opskrbe, gdje se postavljaju skladišne zalihe koje djeluju kao jastučići protiv fluktuacija.
+Glavni cilj modula je pomoći tvrtkama da smanje razine zaliha i poboljšaju pouzdanost usluge, istovremeno štiteći operativne tokove od varijabilnosti potražnje i ponude. DDMRP omogućuje identificiranje strateških točaka duž lanca opskrbe, gdje se postavljaju skladišne zalihe koje djeluju kao zaštita protiv fluktuacija.
 
 Među glavnim značajkama DDMRP modula u Fluntis ERP-u nalaze se:
 
-    Strateško pozicioniranje spremnika (buffera): Identificira ključne točke u opskrbnom lancu na kojima je potrebno postaviti spremnike kako bi se apsorbirale varijacije u potražnji i ponudi.
+    Strateško pozicioniranje spremnika (*buffera*): Identificira ključne točke u opskrbnom lancu na kojima je potrebno postaviti spremnike kako bi se apsorbirale varijacije u potražnji i ponudi.
 
     Dinamične razine spremnika: Dinamički prilagođava razine zaliha na temelju faktora kao što su varijabilnost potražnje, vrijeme isporuke i operativna učinkovitost.
 
@@ -27,11 +27,11 @@ Zahvaljujući ovim funkcionalnostima, DDMRP modul omogućuje tvrtkama optimizaci
 
 Sve DDMRP funkcionalnosti u Fluentisu verificirane su od strane **Demand Driven Institute** koji je certificirao Fluentis DDMRP rješenje.
 
-La documentazione qui fornita consente di capire in che modo tale metodologia trova applicazione e ne vengono richiamati i concetti principali ma non è e non vuole essere una guida al "metodo" Ddmrp, pertanto l’utente che intende utilizzare le funzionalità Ddmrp deve conoscerne i contenuti ed averli appresi tramite opportuni corsi o documentazione ufficiale.
+Ovdje dostupna dokumentacija omogućuje razumijevanje načina na koji se ova metodologija primjenjuje te daje pregled njezinih osnovnih koncepata. Međutim, ona nije i ne želi biti vodič za DDMRP metodu. Stoga korisnik koji namjerava koristiti DDMRP funkcionalnosti mora poznavati njezina načela i usvojiti ih kroz odgovarajuće edukacije ili službenu dokumentaciju.
 :::
  
 
-La documentazione è suddivisa nelle seguenti aree: 
+Dokumentacija je podijeljena na sljedeća područja:
 
 [**ŠIFARNICI**](/docs/ddmrp/master-data/introduction)
 

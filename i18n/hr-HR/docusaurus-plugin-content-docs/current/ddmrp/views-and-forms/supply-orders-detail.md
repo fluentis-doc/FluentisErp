@@ -1,5 +1,5 @@
 ---
-title: Detalj narudžbi za nabavu / potreba 
+title: Detalj narudžbi za nabavu/potreba 
 sidebar_position: 5
 ---
 

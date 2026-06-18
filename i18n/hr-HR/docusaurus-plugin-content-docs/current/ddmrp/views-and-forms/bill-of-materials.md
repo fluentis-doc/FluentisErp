@@ -1,40 +1,137 @@
 ---
-title: Osnovna lista DDMRP  
+title: DDMRP sastavnica
+description: Prikaz sastavnice u DDMRP okruženju s analizom DLT-a, ADU-a, buffer zona i obrtnog kapitala.
+keywords:
+  - DDMRP sastavnica
+  - DLT
+  - ADU
+  - DDMRP buffer
+  - obrtni kapital
 sidebar_position: 8
+schema: TechArticle
+sidebar_label: DDMRP sastavnica
+tags:
+  - DDMRP
+  - Proizvodnja
+  - Planiranje
+  - Sastavnice
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Ovaj obrazac prikazuje osnovnu listu proizvoda i razlikuje se od obrasca za upravljanje osnovnim listama unutar Fluentis-a jer prikazuje informacije relevantne samo za DDMRP okruženje. Putem ovog obrasca nije moguće mijenjati osnovnu listu. 
+# DDMRP sastavnica
 
-Artikli koji se upravljaju kao DDMRP zalihe označeni su simbolom košarice u tri boje, a za njih se prikazuju specifične informacije kao što su ADU, DLT, Crvena zona, Žuta zona, Zelena zona i Kapital u optjecaju. 
+Ovaj obrazac omogućuje prikaz sastavnice proizvoda u **DDMRP** okruženju.
+Razlikuje se od standardnog Fluentis obrasca za upravljanje sastavnicama jer prikazuje isključivo informacije relevantne za DDMRP te **ne omogućuje izmjenu sastavnice**.
 
-Ove vrijednosti vrijede za trenutni dan, kako je prikazano u obrascu za **DDMRP parametre**. Kapital u optjecaju odnosi se na artikl, a ne na zalihe potrebne za proizvodnju proizvoda čiju osnovnu listu prikazuje. Vrijednost je određena potrebom za svim artiklima koji zahtijevaju proizvod na skladištu. Vrijednosti kapitala u optjecaju temelje se na posljednjem izvršenom izračunu. Ako želite ažurirane podatke, potrebno je pokrenuti odgovarajući postupak izračuna.
+## Artikli upravljani DDMRP zalihama i prikazane informacije
 
-Putem ovog obrasca mogu se pokrenuti različiti postupci, poput [**izračuna dlt-a (odvojeno vrijeme isporuke)**](/docs/ddmrp/procedures/dlt-calculation), procedura [**Izračun zona**](/docs/ddmrp/procedures/zones-calculation), procedura [**Ažuriranje prosječne dnevne potrošnje (ADU)**](/docs/ddmrp/procedures/adu-update), procedura [**Izračun vrijednosti zaliha**](/docs/ddmrp/procedures/inventory-value). 
+Artikli koji se upravljaju putem DDMRP zaliha označeni su simbolom **trobojnog spremnika (buffer)**.
+Za takve artikle prikazuju se sljedeće specifične informacije:
+- ADU (Average Daily Usage – prosječna dnevna potrošnja)
+- DLT (Decoupled Lead Time – razdvojeno vrijeme nabave/proizvodnje)
+- Crvena zona
+- Žuta zona
+- Zelena zona
+- Obrtni kapital
 
-DDMRP prikaz osnovne liste posebno je koristan za simulacije promjena u dlt-u i kapitalu u optjecaju (korisno je koristiti ispis kapitala u optjecaju za značajniju analizu). 
+Prikazane vrijednosti su **trenutno važeće** i usklađene s podacima definiranima u obrascu **DDMRP parametri**.
 
-Za određene artikle koji nisu DDMRP zalihe, DLT se i dalje prikazuje. Takvi artikli označeni su crvenom bojom i nalaze se na kritičnoj putanji nekog gotovog proizvoda.  
+:::important
+Prikazani obrtni kapital odnosi se na sam artikl, a ne na zalihu potrebnu za proizvodnju proizvoda čija se sastavnica trenutno pregledava.
+:::
 
-Razlog tome je što su neki od njih pohranjeni u distribucijskim centrima, pa za izračun dlt-a u distribucijskim centrima treba zbrojiti vrijeme transporta iz tvornice i vrijeme potrebno za proizvodnju proizvoda. 
+Vrijednost se određuje na temelju ukupne potražnje svih artikala koji koriste predmetni artikl kao DDMRP zalihu te se odnosi na **posljednji izvršeni izračun**.
+Kako bi podaci bili ažurni, dovoljno je ponovno pokrenuti odgovarajući postupak izračuna.
 
-Za artikle koji nisu gotovi proizvodi, DLT se izračunava jer postupak mora identificirati sve artikle na "kritičnoj putanji" zalihe. 
+## Postupci dostupni iz obrasca
 
-Postupak identificira sve artikle na kritičnim putovima svih osnovnih listi u sustavu, ne samo za DDMRP artikle.
+Iz obrasca za prikaz DDMRP sastavnice moguće je izravno pokrenuti sljedeće operativne postupke:
 
-U DDMRP prikazu osnovne liste artikli na kritičnim putovima označeni su crvenom bojom. Više grana osnovne liste može biti označeno crveno zbog više kritičnih putova ili zbog dijeljenja kritičnih putova s drugim proizvodima. 
+1. [**Izračun DLT-a (Decoupled Lead Time)**](/docs/ddmrp/procedures/dlt-calculation)
+2. [**Izračun buffer zona**](/docs/ddmrp/procedures/zones-calculation)
+3. [**Ažuriranje prosječne dnevne potrošnje (ADU)**](/docs/ddmrp/procedures/adu-update)
+4. [**Izračun vrijednosti zaliha**](/docs/ddmrp/procedures/inventory-value)
 
-Smanjenje vremena isporuke (DLT) moguće je stvaranjem DDMRP zalihe za artikle označene crvenom bojom na kritičnoj putanji. Ovaj prikaz omogućuje korisnicima da lakše razumiju koji artikli na skladištu mogu smanjiti vrijeme isporuke gotovog proizvoda.  
+## Korištenje za simulacije i analize
 
-Prikaz kapitala u optjecaju omogućuje analizu kako postavljanje zaliha može istovremeno smanjiti vrijeme isporuke i optimizirati kapital u optjecaju. 
+DDMRP prikaz sastavnice posebno je koristan tijekom simulacija za provjeru promjena DLT-a i obrtnog kapitala (koristeći izvještaj **Obrtni kapital**).
 
-Jedinična cijena za artikle prikazuje se na temelju posljednjeg izračuna kapitala u optjecaju i uključuje samo troškove materijala i vanjske obrte za radne naloge.  
+## Artikli na kritičnom putu i prikaz DLT-a
 
-Za artikle koji su radni nalozi, jedinični trošak obrade izračunava se na temelju troškova njihovih "sinova" osnovne liste.e.
+Kod pojedinih artikala koji nisu definirani kao DDMRP zalihe ipak se prikazuje njihov DLT.
+To se događa kod artikala označenih **crvenom bojom**, odnosno onih koji pripadaju **kritičnom putu** nekog gotovog proizvoda.
+Glavni razlozi za to su:
+- Artikli skladišteni u distribucijskim centrima, gdje je za izračun DLT-a potrebno zbrojiti vrijeme transporta iz proizvodnog pogona i vrijeme potrebno za izradu proizvoda.
+- Međuproizvodi koji nisu gotovi proizvodi, za koje postupak izračuna DDMRP buffera mora izračunati DLT i za artikle koji se nalaze na kritičnom putu buffera.
 
-Vrijednost kapitala u optjecaju izračunava se množenjem jedinične cijene s prosječnom zalihom (crvena zona + zelena zona / 2). 
+### Postupak izračuna DLT-a
 
-Važno je napomenuti da kapital u optjecaju prikazan u osnovnoj listi možda nije točan ako su nakon posljednjeg izračuna promijenjene vrijednosti zona zaliha ili jediničnih troškova.  
+Postupak [**Izračun DLT-a (Decoupled Lead Time)**](/docs/ddmrp/procedures/dlt-calculation) identificira sve artikle koji se nalaze na kritičnim putovima svih sastavnica prisutnih u sustavu, a ne samo sastavnica artikala koji imaju DDMRP buffer.
 
-Za sigurnu i ažuriranu vrijednost potrebno je pokrenuti postupak izračuna kapitala u optjecaju. 
+## Označavanje kritičnih putova
 
+U prikazu DDMRP sastavnice svi artikli koji pripadaju bilo kojem **kritičnom putu** označeni su crvenom bojom.
+Zbog toga se u prikazu jedne sastavnice može pojaviti više crveno označenih grana:
+- zato što proizvod može imati više kritičnih putova (čije su DLT vrijednosti jednake),
+- ili zato što pojedine grane predstavljaju dio kritičnog puta nekog drugog proizvoda.
 
+## Smanjenje razdvojenog vremena isporuke (DLT)
+
+Smanjenje **DLT-a proizvoda** čija se sastavnica pregledava moguće je isključivo stvaranjem DDMRP zalihe za jedan od artikala označenih crvenom bojom koji se nalazi na kritičnom putu tog proizvoda.
+Ova je napomena važna jer se ponekad prikazuje više crvenih grana, od kojih neke predstavljaju kritične putove drugih proizvoda.
+Takav prikaz omogućuje brzo prepoznavanje artikala čijim se stavljanjem na zalihu može smanjiti vrijeme isporuke gotovog proizvoda.
+
+## Obrtni kapital i kriteriji izračuna
+
+Prikaz **obrtnog kapitala** omogućuje razumijevanje koje odluke o pozicioniranju zaliha istovremeno:
+- smanjuju vrijeme isporuke,
+- minimiziraju obrtni kapital potreban za postizanje tog rezultata.
+
+Za dodatne informacije pogledajte izvještaj **Obrtni kapital**.
+
+### Jedinični trošak
+
+**Jedinični trošak** prikazan za svaki artikl odgovara vrijednosti korištenoj u posljednjem izračunu prosječno investiranog obrtnog kapitala u DDMRP zalihama (prosječni, posljednji ili standardni trošak).
+U obzir se uzimaju isključivo:
+- troškovi materijala,
+- troškovi vanjskih operacija i kooperacije,
+
+odnosno troškovi koji se mogu izravno pripisati vanjskim dobavljačima.
+Za dodatne informacije pogledajte postupak [**Izračun vrijednosti zaliha**](/docs/ddmrp/procedures/inventory-value).
+
+### Artikli kooperacije (conto lavoro)
+
+Kod artikala koji se proizvode putem kooperacije (*conto lavoro*), jedinični trošak obrade izračunava se oduzimanjem troška podređenih artikala iz sastavnice od ukupnog troška artikla:
+> Trošak artikla − Trošak podređenih artikala iz sastavnice
+
+### Izračun obrtnog kapitala
+
+Prosječno investirani obrtni kapital izračunava se množenjem:
+> Jedinični trošak × Prosječna zaliha
+pri čemu je:
+> Prosječna zaliha = Crvena zona + (Zelena zona / 2)
+
+Dobiveni rezultat predstavlja prosječnu vrijednost obrtnog kapitala vezanog uz predmetnu zalihu.
+
+:::important
+Prikazana vrijednost obrtnog kapitala možda nije ažurna ako su nakon posljednjeg izračuna promijenjeni:
+- parametri buffer zona,
+- jedinični troškovi artikala.
+:::
+
+Kako bi podaci bili točni i ažurni, potrebno je ponovno pokrenuti postupak [**Izračun vrijednosti zaliha**](/docs/ddmrp/procedures/inventory-value).
+
+## Sažetak i dodatne informacije
+
+Obrazac za prikaz DDMRP sastavnice omogućuje:
+- Integriranu analizu DLT-a, ADU-a i buffer zona
+- Identifikaciju kritičnih putova i strateških artikala
+- Procjenu utjecaja zaliha na obrtni kapital
+- Podršku pri planiranju i DDMRP simulacijama
+
+Za dodatne operativne informacije pogledajte:
+- [**Izračun DLT-a (Decoupled Lead Time)**](/docs/ddmrp/procedures/dlt-calculation)
+- [**Izračun buffer zona**](/docs/ddmrp/procedures/zones-calculation)
+- [**Ažuriranje prosječne dnevne potrošnje (ADU)**](/docs/ddmrp/procedures/adu-update)
+- [**Izračun vrijednosti zaliha**](/docs/ddmrp/procedures/inventory-value)

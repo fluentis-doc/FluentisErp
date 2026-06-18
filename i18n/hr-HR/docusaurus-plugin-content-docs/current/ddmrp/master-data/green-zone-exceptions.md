@@ -3,7 +3,7 @@ title: Ispravak zelene zone
 sidebar_position: 8
 ---
 
-Vrijednost zelene zone automatski izračunava postupak ažuriranja zona na temelju vrijednosti DDMRP parametara artikla.   
+Vrijednost **zelene zone** automatski izračunava postupak ažuriranja zona na temelju vrijednosti DDMRP parametara artikla.   
 
 Putem ove tablice moguće je prisilno postaviti drugačiju vrijednost na određene datume.   
 

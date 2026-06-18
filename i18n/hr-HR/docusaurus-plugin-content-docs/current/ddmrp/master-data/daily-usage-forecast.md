@@ -2,7 +2,7 @@
 title: Predviđanja potrošnje 
 sidebar_position: 7
 ---
-Ova tablica sadrži predviđanja potrošnje za buffer artikle.  
+Ova tablica sadrži predviđanja potrošnje za *buffer* artikle.  
 
 Za svaki buffer artikl i za svaku logističku jedinicu predviđa potrošni iznos s dnevnim detaljima.  
 

@@ -1,5 +1,5 @@
 ---
-title: Izračun vrijednosti kapitala uloženog u buffer-e 
+title: Izračun vrijednosti kapitala uloženog u buffere 
 sidebar_position: 4
 ---
 
@@ -13,7 +13,7 @@ Glavna svrha ove procedure je provjeriti smanjuje li odluka o uvođenju ili ukla
 
 Ako odluka dovodi do smanjenja ukupne vrijednosti kapitala, smatra se opravdanom, dok bi se suprotna situacija trebala izbjegavati.   
 
-Ako artikl s buffer-om ima definiranu listu materijala, unutar koje postoji ogranak koji vodi do nabavnih proizvoda i koji predstavlja lanac kritičnih komponenti, odnosno onaj lanac koji određuje vrijednost dekupliranog vremena isporuke (DLT) matičnog buffer-a.   
+Ako artikl s bufferom ima sastavnicu (BOM – Bill of Materials), unutar nje postoji grana koja se proteže sve do nabavnih proizvoda. Ta grana predstavlja lanac kritičnih komponenti, odnosno lanac koji određuje vrijednost odvojenog vremena isporuke (DLT – Decoupled Lead Time) nadređenog međuspremnika.
 
 Uobičajeno je da uvođenje buffer-a za jedan od takvih artikala smanjuje vrijednost dlt-a matičnog buffer-a, što dovodi do smanjenja njegove prosječne zalihe, dok se istovremeno uvodi nova zaliha za novi buffer.   
 

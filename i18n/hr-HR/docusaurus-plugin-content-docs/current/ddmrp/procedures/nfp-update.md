@@ -3,7 +3,7 @@ title: Ažuriranje vrijednosti Net Flow Position (NFP)
 sidebar_position: 5
 ---
 
-Ova procedura provodi izračun neto položaja protoka (NFP) za artikl u bufferu-u unutar određene logističke jedinice.   
+Ova procedura provodi izračun neto položaja protoka (NFP) za artikl u bufferuu unutar određene logističke jedinice.   
 
 Za isti artikl vrijednost NFP mijenja se ovisno o logističkoj jedinici u kojoj je pohranjen. Ako je, primjerice, artikl pohranjen u pet logističkih jedinica, imat će pet različitih vrijednosti NFP-a, po jednu za svaku jedinicu.
 
@@ -21,7 +21,7 @@ Za distribucijske centre i čvorišta potražnja proizlazi iz narudžbi kupaca i
 
 Demand Spikes = predstavljaju ukupni broj mogućih vrhunaca potražnje u razdoblju koje započinje sutra i traje do sutrašnjeg dana uvećanog za horizont vrhunaca potražnje (OSH), kako je definirano u DDMRP parametrima.  
 
-Rezultat izračuna također uključuje podatake o mogućoj potrebnoj količini za naručivanje. Ako je izračunati NFP manji ili jednak zbroju crvene i žute zone, tada je potrebno izdati narudžbu u količini izračunatoj kao zbroj crvene, žute i zelene zone umanjen za NFP, pri čemu se uzimaju u obzir eventualne iznimke zona na današnji dan.    
+Rezultat izračuna također uključuje podatke o mogućoj potrebnoj količini za naručivanje. Ako je izračunati NFP manji ili jednak zbroju crvene i žute zone, tada je potrebno izdati narudžbu u količini izračunanoj kao zbroj crvene, žute i zelene zone umanjen za NFP, pri čemu se uzimaju u obzir eventualne iznimke zona na današnji dan.    
 
 Svi elementi korišteni u izračunu pohranjuju se radi jednostavne analize i mogućnosti pregleda podataka iz prošlih razdoblja.  
 

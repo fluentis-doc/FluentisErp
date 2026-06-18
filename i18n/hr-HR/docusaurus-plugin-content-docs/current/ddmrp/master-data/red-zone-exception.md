@@ -3,7 +3,7 @@ title: Ispravak crvene zone
 sidebar_position: 10
 ---
 
-Vrijednost crvene zone automatski izračunava postupak ažuriranja zona na temelju vrijednosti DDMRP parametara artikla.   
+Vrijednost **crvene zone** automatski izračunava postupak ažuriranja zona na temelju vrijednosti DDMRP parametara artikla.   
 
 Putem ove tablice moguće je prisilno postaviti drugačiju vrijednost na određene datume. 
 

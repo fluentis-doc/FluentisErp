@@ -17,7 +17,7 @@ To su logističke jedinice koje opskrbljuju krajnje kupce izravno iz vlastitih z
 
 Geografski su smješteni na strateškim lokacijama kako bi se smanjilo vrijeme transporta do krajnjih kupaca.  
 
-Svaki distribucijski centar opskrbljuje se iz međuprostornog huba ili izravno iz tvornice.   
+Svaki distribucijski centar opskrbljuje se iz *međuprostornog huba* ili izravno iz tvornice.   
 
 **Hubovi**
 

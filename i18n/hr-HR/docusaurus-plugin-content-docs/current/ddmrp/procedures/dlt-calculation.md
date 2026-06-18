@@ -3,7 +3,7 @@ title: Ažuriranje disociranog vremena vođenja (DLT)
 sidebar_position: 2
 ---
 
-Ova procedura izračunava dekuplirano vrijeme isporuke (DLT) za sve artikle upravljane buffer-om, bilo da se nalaze u tvornici ili u distribucijskim centrima/hubovima. 
+Ova procedura izračunava odvojeno vrijeme isporuke (DLT – Decoupled Lead Time) za sve artikle koji imaju definirane međuspremnike (buffer), bilo da se nalaze u proizvodnji ili u distribucijskim centrima / logističkim čvorištima (hubovima).
 
 Ovo je vrlo važan parametar za određivanje veličine zone buffer-a, a time i razine zaliha koje su proporcionalne dlt-u. 
 

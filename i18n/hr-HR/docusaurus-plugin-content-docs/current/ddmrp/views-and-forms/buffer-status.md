@@ -1,5 +1,5 @@
 ---
-title: Stanje buffer-a 
+title: Stanje buffera 
 sidebar_position: 1
 ---
 Ovo izvješće prikazuje stanje razine zaliha unutar buffer-a.   
