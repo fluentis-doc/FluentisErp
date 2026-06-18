@@ -1,41 +1,38 @@
 ---
-title: Novo Izvješće o Posjetama
+title: Novi izveštaj o poseti
 sidebar_position: 2
 ---
 
-Postupak stvaranja novog **Izvješća o Posjetama** omogućuje definiranje karakteristika izvješća o posjetama koje će se unijeti, uključujući kontakt i referentnog agenta.
+Procedura kreiranja novog **Izveštaja o poseti** omogućava definisanje karakteristika izveštaja o poseti koji će biti unet, uključujući kontakt i referentnog agenta.
 
-Obrazac je podijeljen u dva dijela.
+Obrazac je podeljen na dva dela.
 
-U gornjem dijelu nalaze se sljedeća polja:  
+U gornjem delu nalaze se sledeća polja:
 
-**Vrsta izvješća o posjetama**: omogućuje označavanje vrste izvješća o posjetama koje se unosi i odnosi se na osnovnu tablicu **Vrsta izvješća o posjetama**;
+**Vrsta izveštaja o poseti**: omogućava označavanje vrste izveštaja o poseti koja se unosi i odnosi se na osnovnu tabelu **Vrsta izveštaja o poseti**;
 
+**Broj**: broj izveštaja o poseti koji automatski dodeljuje Fluentis;
 
-**Broj**: broj Izvješća o Posjetama koji automatski dodjeljuje Fluentis;
+**Datum**: datum koji se odnosi na posetu navedenu u izveštaju o poseti;
 
-**Datum**: datum koji se odnosi na posjetu navedenu u izvješću o posjetama;
+**Predmet**: u ovom polju treba navesti razlog posete klijentu;
 
-**Predmet**: u ovom polju treba navesti razlog posjete klijentu;
+**Napomene**: slobodno polje za unos dodatnih napomena o poseti;
 
-**Bilješke**: slobodno polje za unos dodatnih napomena o posjeti;
+**Kontakt/Klijent**: u ovom polju treba navesti CRM kontakt ili klijenta na kojeg se odnosi izveštaj o poseti. Oznaka polja i sadržaj polja menjaju se u zavisnosti od toga da li je postavljena oznaka na „CRM kontakt“ ili na „Fluentis konto“;
 
-**Kontakt/Klijent**: u ovom polju treba navesti CRM kontakt ili klijenta na kojeg se odnosi izvješće o posjetama. Oznaka polja i predmet polja mijenjaju se ovisno o tome je li zastava postavljena na "CRM kontakt" ili na "Fluentis konto";
+**Učesnici**: u ovom polju, koje se slobodno popunjava, treba navesti subjekte koji su učestvovali na sastanku;
 
-**Sudionici**: u ovom polju, slobodno se ispunjava, trebaju se navesti subjekti koji su sudjelovali na sastanku;
+**Predstavnik**: u ovom polju, koje se odnosi na Fluentis šifarnik agenata, potrebno je navesti agenta koji je prisustvovao sastanku.
 
-**Predstavnik**: in questo campo, che fa riferimento all’anagrafica agenti di Fluentis, deve essere indicato l’agente che ha presenziato all’incontro.
+Donji deo obrasca ima dve kartice.
 
-Donji dio obrasca ima dvije kartice.
+### Kartica Dok.
 
-**Kartica doc.**
+Na ovoj kartici moguće je uneti i poslati **e-poštu** direktno iz Izveštaja o poseti, koristeći šablone modula *Newsletter* (za dodatne informacije o šablonima pogledati odeljak [Newsletter](/docs/crm/budget-marketing-automation/newsletter/new-newsletter) u ovom vodiču).
 
-Na ovoj kartici moguće je unijeti i poslati **e-poštu** izravno iz Izvješća o Posjetama Fluentis, koristeći predloške modula Newsletter (za dodatne informacije o predlošcima pogledajte odjeljak [Newsletter](/docs/crm/budget-marketing-automation/newsletter/new-newsletter) u ovom vodiču).
+### Kartica Upravljanje dokumentacijom
 
-
-**Kartica Upravljanje dokumentacijom**
-
-Na ovoj kartici moguće je dodati privitke Izvješću o Posjetama pomoću funkcije drag & drop.
+Na ovoj kartici moguće je dodati priloge Izveštaju o poseti pomoću funkcije *drag & drop*.
 
 ![](/img/it-it/applications/crm/visit-report/document.png)
-

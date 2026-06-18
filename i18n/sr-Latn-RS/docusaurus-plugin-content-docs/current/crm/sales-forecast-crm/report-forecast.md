@@ -1,23 +1,26 @@
 ---
-title: Ispis zatvaranja prodajnih prognoza
+title: Izveštaj zatvaranja prognoza prodaje
 sidebar_position: 2
 ---
 
-U ovom prozoru moguće je uvesti dokumentaciju i usporediti je s prethodno stvorenim [Prognozama prodaje](/docs/crm/sales-forecast-crm/new-sales-forecast) kako biste saznali jesu li ciljevi prognoze ostvareni.
+U ovom prozoru moguće je uvesti dokumentaciju i uporediti je sa prethodno kreiranim [Prognozama prodaje](/docs/crm/sales-forecast-crm/new-sales-forecast) kako biste utvrdili da li su ciljevi prognoze ostvareni.
 
-U zaglavlju se nalaze sljedeća polja:  
-**Operater**: sadrži operatera koji obavlja operaciju;      
-**Vrsta razdoblja**: Ovo polje se automatski popunjava unoseći sljedeće polje i predlaže [Vrstu razdoblja](/docs/configurations/tables/crm/sales-forecast/period-type) povezanu s Prognozom;      
-**Prognoza prodaje**: potrebno je unijeti [Prognozu prodaje](/docs/crm/sales-forecast-crm/new-sales-forecast) koju želimo analizirati i usporediti s dokumentacijom;       
-**Godina/Datum/Redni broj**: ova polja automatski se popunjavaju prema povezanoj Numeraciji i Datumu narudžbe;     
-**Detalj vrste razdoblja**: ovi podaci su ključni kako bi se naznačilo koje detalje razdoblja (preuzete iz tablice [Vrsta razdoblja](/docs/configurations/tables/crm/sales-forecast/period-type)) treba uzeti u obzir;             
+U zaglavlju se nalaze sledeća polja:
 
-Na donjoj kartici **Podaci** moguće je uvesti dokumentaciju koristeći gumbe na alatnoj traci. Kartica sadrži tri mreže, svaka za svrhu različite vrste dokumenata: Fakture, Narudžbe i Prilike.
-       
-Postoje određeni uvjeti za uvoz Faktura i Narudžbi:     
-- Redovi artikala u dokumentima moraju imati [Razred artikla](/docs/configurations/tables/logistics/item-class) povezan s grupom artikala unesenom u Prognozu prodaje;
-- [Prihod od prodaje ](/docs/configurations/tables/sales/sales-turnover) povezan s redovima artikala u dokumentima mora biti povezan s Obitelji artikala unesenom u Prognozu prodaje;      
+**Operater**: sadrži operatera koji izvršava operaciju;
+**Tip perioda**: ovo polje se automatski popunjava unosom sledećeg polja i predlaže [Tip perioda](/docs/configurations/tables/crm/sales-forecast/period-type) povezan sa prognozom;
+**Prognoza prodaje**: potrebno je uneti [Prognozu prodaje](/docs/crm/sales-forecast-crm/new-sales-forecast) koju želimo da analiziramo i uporedimo sa dokumentacijom;
+**Godina/Datum/Redni broj**: ova polja se automatski popunjavaju prema povezanoj numeraciji i datumu naloga;
+**Detalj tipa perioda**: ovaj podatak je ključan kako bi se naznačilo koji detalji perioda (preuzeti iz tabele [Tip perioda](/docs/configurations/tables/crm/sales-forecast/period-type)) treba da budu uzeti u obzir;
 
-Postoje i određeni uvjeti za uvoz Prilika:         
-- Agent dodijeljen Prognozi prodaje mora biti isti agent povezan s Kontaktom vlasnikom Prilike;        
-- U detaljima Prilike mora biti unesena Obitelj proizvoda predviđena u Prognozi prodaje.    
+Na donjoj kartici **Podaci** moguće je uvoziti dokumentaciju korišćenjem dugmadi na alatnoj traci. Kartica sadrži tri mreže, od kojih je svaka namenjena različitoj vrsti dokumenata: Fakture, Porudžbine i Prilike.
+
+Postoje određeni uslovi za uvoz faktura i porudžbina:
+
+- Stavke artikala u dokumentima moraju imati [Klasu artikla](/docs/configurations/tables/logistics/item-class) povezanu sa grupom artikala unetom u prognozu prodaje;
+- [Promet od prodaje](/docs/configurations/tables/sales/sales-turnover) povezan sa stavkama artikala u dokumentima mora biti povezan sa grupom artikala unetom u prognozu prodaje;
+
+Postoje i određeni uslovi za uvoz prilika:
+
+- Agent dodeljen prognozi prodaje mora biti isti agent koji je povezan sa kontaktom vlasnikom prilike;
+- U detaljima prilike mora biti uneta porodica proizvoda predviđena u prognozi prodaje.

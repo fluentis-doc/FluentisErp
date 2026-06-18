@@ -1,19 +1,23 @@
 ---
-title: Marketinški proračun
+title: Marketinški budžet
 sidebar_position: 4
 ---
 
-Kroz ovu funkcionalnost moguće je stvoriti budžet za određeno razdoblje.      
-Podaci zaglavlja su sljedeći:      
-**Razdoblje budžeta**: u ovom polju potrebno je unijeti [Razdoblje](/docs/configurations/tables/crm/sales-forecast/budget-period) koje će se koristiti kao jedinica podjele godine; na temelju odabranog razdoblja, kasnije uneseni iznosi automatski će se raspodijeliti u različitim razdobljima navedenim u tablici ispod *Razdoblja*;     
-**Opis**: sadrži slobodan opis;      
-**Datum završetka važenja**: sadrži eventualni datum zatvaranja budžeta;      
-**Projekt**: moguće je povezati projekt.     
+Kroz ovu funkcionalnost moguće je kreirati budžet za određeni period.
 
-U prikazu je moguće izgraditi stablo budžeta koristeći gumbe na alatnoj traci. Svaki korijenski čvor stabla sadržavat će Zbroj količina i iznosa različitih donjih čvorova. Krajnji čvorovi stabla su oni u koje je moguće unijeti troškove kroz sljedeća polja:       
-**Vrsta troškova**: na temelju odabira [Vrste troškova](/docs/configurations/tables/crm/sales-forecast/expenses-type), bit će moguće unijeti Opis, Račun ili Artikl;         
-**Jedinica mjere**: sadrži jedinicu mjere koja će se koristiti za trošak;       
-**Ukupna količina**: sadrži ukupnu količinu koja će se podijeliti u različitim razdobljima budžeta;        
-**Jedinična cijena**: ovo polje automatski se popunjava rezultatom dijeljenja *Ukupnog iznosa* i *Ukupne količine*;        
-**Ukupni iznos**: sadrži ukupni iznos koji će se podijeliti u različitim razdobljima budžeta.
-U desnom prikazu, *Ukupna količina* i *Ukupni iznos* podijeljeni su po broju razdoblja predviđenih u [Periodu budžeta](/docs/configurations/tables/crm/sales-forecast/budget-period) unesenom u zaglavlju. Na taj način bit će moguće pregledati budžet za svako razdoblje. Prikaz *Perioda* može se mijenjati korištenjem gumba u traci s vrpcama, u slučaju da kalendar treba odstupiti od standardne kodifikacije.                     
+Podaci zaglavlja su sledeći:
+
+**Budžetski period**: u ovo polje potrebno je uneti [Period](/docs/configurations/tables/crm/sales-forecast/budget-period) koji će se koristiti kao jedinica podele godine; na osnovu izabranog perioda, kasnije uneti iznosi automatski će biti raspoređeni po različitim periodima navedenim u tabeli ispod *Periodi*;
+**Opis**: sadrži slobodan opis;
+**Datum isteka važenja**: sadrži eventualni datum zatvaranja budžeta;
+**Projekat**: moguće je povezati projekat.
+
+U prikazu je moguće izgraditi stablo budžeta korišćenjem dugmadi na alatnoj traci. Svaki korenski čvor stabla sadržaće zbir količina i iznosa različitih podređenih čvorova. Krajnji čvorovi stabla su oni u koje je moguće unositi troškove kroz sledeća polja:
+
+**Vrsta troška**: na osnovu izbora [Vrste troška](/docs/configurations/tables/crm/sales-forecast/expenses-type), biće moguće uneti Opis, Konto ili Artikal;
+**Jedinica mere**: sadrži jedinicu mere koja će se koristiti za trošak;
+**Ukupna količina**: sadrži ukupnu količinu koja će biti raspodeljena po različitim budžetskim periodima;
+**Jedinična cena**: ovo polje se automatski popunjava rezultatom deljenja *Ukupnog iznosa* sa *Ukupnom količinom*;
+**Ukupan iznos**: sadrži ukupan iznos koji će biti raspodeljen po različitim budžetskim periodima.
+
+U desnom prikazu, *Ukupna količina* i *Ukupan iznos* raspodeljeni su prema broju perioda predviđenih u [Budžetskom periodu](/docs/configurations/tables/crm/sales-forecast/budget-period) unetom u zaglavlju. Na taj način biće moguće pregledati budžet za svaki pojedinačni period. Prikaz *Perioda* može se menjati korišćenjem dugmadi na ribbon traci, ukoliko kalendar treba da odstupa od standardne šifre.

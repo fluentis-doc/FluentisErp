@@ -3,30 +3,38 @@ title: Upravljanje prognozama prodaje
 sidebar_position: 1
 ---
 
-Ova funkcija je dostupna putem **Sales Forecast > Upravljanje prognozama prodaje**. Ovdje možete pregledati sve već kodirane prognoze prodaje i kreirati nove. Analizirajmo karakteristike nove prognoze prodaje.     
-         
-Naslov se sastoji od sljedećih polja:       
-**Vrsta prognoze prodaje**: podaci se izdvajaju iz tablice [Vrsta prognoze prodaje](/docs/configurations/tables/crm/sales-forecast/sales-forecast-type) i igraju ključnu ulogu u određivanju perioda u kojima Fluentis treba podijeliti prognozu prodaje. Povezivanjem s [Tipom razdoblja](/docs/configurations/tables/crm/sales-forecast/period-type) prisutnim u ovoj tablici, Fluentis može odrediti hoće li se prognoza morati podijeliti godišnje, mjesečno ili na druge određene načine;          
-**Opis**: ovo je polje slobodnog opisa.;      
-**Godina/Datum/Redni broj**: ova polja automatski se popunjavaju na temelju povezane Numeracije i Datuma narudžbe.    
+Ova funkcionalnost dostupna je putem **Prognoza prodaje > Upravljanje prognozama prodaje**. Ovde je moguće pregledati sve već definisane prognoze prodaje i kreirati nove. Analizirajmo karakteristike nove prognoze prodaje.
 
-U prvoj mreži dopušteno je unositi redove vezane uz prognozu prodaje. Pomoću gumba u alatnoj traci moguće je izgraditi strukturu drveta, primjerice za geografsko podjelu. Počinje se s prvom grupom, a zatim se struktura detaljizira prema željenim razinama podjele. Iznosi u drugoj mreži mogu se popuniti samo na razini pojedinosti, odnosno nakon unosa posljednje razine drveta. Kad se unese ta posljednja razina, druga mreža automatski će se popuniti, razdvajajući datume prema postavljenom [Tipu razdoblja](/docs/configurations/tables/crm/sales-forecast/period-type). Tada će biti moguće popuniti količine i iznose raznih razdoblja u drugoj mreži, omogućujući Fluentisu da izračuna ukupne i prikaže ih u prvoj mreži.
+Zaglavlje se sastoji od sledećih polja:
 
-U prvoj mreži neka polja su aktivna kad se unese Grupa, a druga kada se unese Detalj, s odgovarajućim gumbima u alatnoj traci.        
-Analizirajmo polja koja se mogu ispuniti ako je redak Grupa/Čvor:         
-**Redni broj grupe**: svakoj Grupi dodjeljuje se redni broj;      
-**Opis grupe**: moguće je unijeti slobodan opis za svaku Grupu;       
-**Zona**: svaka Grupa može biti povezana s različitom Zonom;       
-**Dodijeljeni operater**: potrebno je navesti operatera odgovornog za prognozu prodaje u toj Zoni;           
-**Agent**: moguće je navesti agenta odgovornog za prodaju u toj Zoni;      
-**Napomena**: slobodno polje za napomene.        
-Analizirajmo polja koja se mogu unijeti ako je redak Detalj:           
-**Grupa proizvoda**: ovo polje sadrži grupu artikala za koju se stvara prognoza, s pripadajućim **Opisom**; samo će se [Razredi artikala](/docs/configurations/tables/logistics/item-class) koji su povezani s ovom obitelji proizvoda uzeti u obzir za statistike;            
-**Jedinica mjere**: predložena je jedinica mjere Obitelji;        
-**Detaljna napomena**: slobodno polje za napomene.           
-Zatim postoje i izračunata polja:       
-**Ukupna količina**: prikazuje zbroj Količina razdoblja u drugoj mreži;     
-**Srednja Jedinična Cijena**: prikazuje zbroj Iznosa razdoblja u drugoj mreži;      
-**Prosječna cijena po jedinici**: unosi se rezultat operacije *Ukupna količina/Ukupan iznos*.     
+**Tip prognoze prodaje**: podaci se preuzimaju iz tabele [Tip prognoze prodaje](/docs/configurations/tables/crm/sales-forecast/sales-forecast-type) i imaju ključnu ulogu u određivanju perioda na koje Fluentis treba da podeli prognozu prodaje. Povezivanjem sa [Tipom perioda](/docs/configurations/tables/crm/sales-forecast/period-type) definisanim u ovoj tabeli, Fluentis može da odredi da li prognoza treba da bude podeljena godišnje, mesečno ili na druge definisane načine;
 
-U drugoj mreži, prikazuje se *Detalj* [Tipa Razdoblja](/docs/configurations/tables/crm/sales-forecast/period-type) povezanog s odabranim  [Tipom prognoze prodaje](/docs/configurations/tables/crm/sales-forecast/sales-forecast-type). Osim toga, moći će se navesti  **Količina** i **Iznos** za svako razdoblje. Ti se podaci, zbrojeni, koriste za formiranje **Ukupnog iznosa** i **Ukupne količine** u prvoj mreži. 
+**Opis**: polje za slobodan unos opisa;
+
+**Godina/Datum/Redni broj**: ova polja se automatski popunjavaju na osnovu povezane numeracije i datuma naloga.
+
+U prvoj tabeli dozvoljen je unos redova koji se odnose na prognozu prodaje. Pomoću dugmadi na alatnoj traci moguće je izgraditi strukturu stabla, na primer za geografsku podelu. Počinje se od prve grupe, a zatim se struktura detaljno razrađuje prema željenim nivoima podele. Iznosi u drugoj tabeli mogu se unositi samo na nivou detalja, odnosno nakon unosa poslednjeg nivoa stabla. Kada se unese poslednji nivo, druga tabela će se automatski popuniti, raspoređujući datume prema podešenom [Tipu perioda](/docs/configurations/tables/crm/sales-forecast/period-type). Tada će biti moguće uneti količine i iznose za različite periode u drugoj tabeli, omogućavajući Fluentisu da izračuna ukupne vrednosti i prikaže ih u prvoj tabeli.
+
+U prvoj tabeli neka polja su aktivna kada se unosi Grupa, a druga kada se unosi Detalj, uz odgovarajuću dugmad na alatnoj traci.
+
+Analizirajmo polja koja se mogu popuniti ako je red tipa Grupa/Čvor:
+
+**Redni broj grupe**: svakoj grupi dodeljuje se redni broj;
+**Opis grupe**: moguće je uneti slobodan opis za svaku grupu;
+**Zona**: svaka grupa može biti povezana sa različitom zonom;
+**Dodeljeni operater**: potrebno je navesti operatera odgovornog za prognozu prodaje u toj zoni;
+**Agent**: moguće je navesti agenta odgovornog za prodaju u toj zoni;
+**Napomena**: slobodno polje za beleške.
+
+Analizirajmo polja koja se mogu unositi ako je red tipa Detalj:
+
+**Grupa proizvoda**: ovo polje sadrži grupu artikala za koju se kreira prognoza, zajedno sa pripadajućim **Opisom**; samo [Klase artikala](/docs/configurations/tables/logistics/item-class) koje su povezane sa ovom grupom proizvoda biće uzete u obzir za statistiku;
+**Jedinica mere**: predlaže se jedinica mere grupe proizvoda;
+**Napomena detalja**: slobodno polje za beleške.
+
+Zatim postoje i obračunata polja:
+**Ukupna količina**: prikazuje zbir količina perioda iz druge tabele;
+**Prosečna jedinična cena**: prikazuje zbir iznosa perioda iz druge tabele;
+**Prosečna cena po jedinici**: sadrži rezultat operacije *Ukupna količina/Ukupan iznos*.
+
+U drugoj tabeli prikazan je *Detalj* [Tipa perioda](/docs/configurations/tables/crm/sales-forecast/period-type) povezanog sa izabranim [Tipom prognoze prodaje](/docs/configurations/tables/crm/sales-forecast/sales-forecast-type). Takođe je moguće uneti **Količinu** i **Iznos** za svaki period. Ovi podaci se sabiraju i koriste za formiranje **Ukupnog iznosa** i **Ukupne količine** u prvoj tabeli.

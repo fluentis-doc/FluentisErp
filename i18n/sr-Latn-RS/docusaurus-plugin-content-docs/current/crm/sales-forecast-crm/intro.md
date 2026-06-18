@@ -3,20 +3,22 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul Prodajne prognoze u sustavu Fluentis ERP pruža alate za strukturirano upravljanje i analizu prognoza prodaje. U nastavku slijedi tehnički opis glavnih funkcionalnosti:        
+Modul prognoze prodaje u sistemu Fluentis ERP pruža alate za strukturisano upravljanje i analizu prognoza prodaje. U nastavku sledi tehnički opis glavnih funkcionalnosti:
 
-**Upravljanje prodajnim prognozama**      
-Ova funkcionalnost omogućuje kreiranje i upravljanje prodajnim prognozama putem izbornika Sales Forecast > Upravljanje prodajnim prognozama. Moguće je kreirati nove prognoze ili pregledavati postojeće, pri čemu se definira vrsta prognoze koja određuje vremensku podjelu (godišnju, mjesečnu ili drugu).       
-Prognoze se organiziraju hijerarhijski u stablo, gdje je prvi nivo označen kao Grupa, a sljedeći nivoi kao Detalj. Podaci o količinama i iznosima unose se na razini Detalja i automatski se raspoređuju prema definiranim vremenskim periodima. Podatkovna mreža podržava automatski izračun ukupnih vrijednosti i prosjeka.  
+**Upravljanje prognozama prodaje**  
+Ova funkcionalnost omogućava kreiranje i upravljanje prognozama prodaje putem menija *Prognoza prodaje > Upravljanje prognozama prodaje*. Moguće je kreirati nove prognoze ili pregledati postojeće, pri čemu se definiše vrsta prognoze koja određuje vremensku podelu (godišnju, mesečnu ili drugu).
 
-**Ispis zatvaranja prodajnih prognoza**       
-Ova funkcionalnost omogućuje usporedbu prognoza prodaje sa stvarnim podacima, uvozom dokumenata poput faktura, narudžbi i prilika (opportunity). Uvezeni dokumenti moraju zadovoljavati određene uvjete (npr. podudaranje između klasa artikala i obitelji proizvoda) kako bi se ispravno povezali s prognozom.
-Korisnici mogu odabrati prognozu koju žele analizirati, ciljni vremenski period te dokumente za usporedbu, što omogućuje preciznu provjeru ostvarenja planiranih ciljeva.     
+Prognoze su organizovane hijerarhijski u obliku stabla, gde je prvi nivo označen kao *Grupa*, a naredni nivoi kao *Detalj*. Podaci o količinama i iznosima unose se na nivou detalja i automatski raspoređuju prema definisanim vremenskim periodima. Mreža podataka podržava automatski obračun ukupnih vrednosti i proseka.
 
-**Periodično zatvaranje – izvještaji**      
-Omogućuje kreiranje izvještaja o zatvaranju koji uspoređuju prognoze s stvarnim podacima poslovnih dokumenata (računi, narudžbe, prilike). Korisnici mogu filtrirati prognoze i specificirati dokumente koje žele uvesti u izvještaj. Sustav provjerava postoje li prethodni nekompletni izvještaji o zatvaranju za isto razdoblje i, ako ne postoje, generira nove. Dokumenti se automatski povezuju s odabranom prognozom, pružajući detaljno uspoređivanje između prognoza i rezultata.   
+**Izveštaj zatvaranja prognoza prodaje**  
+Ova funkcionalnost omogućava poređenje prognoza prodaje sa stvarnim podacima, uvozom dokumenata kao što su fakture, porudžbine i poslovne prilike. Uvezeni dokumenti moraju ispunjavati određene uslove (npr. podudaranje između klasa artikala i porodica proizvoda) kako bi se pravilno povezali sa prognozom.
 
-**Marketinški budžet**          
-Ova funkcionalnost omogućuje planiranje marketinškog budžeta za određeno razdoblje. Modul omogućuje kreiranje strukture u obliku stabla za organizaciju troškova, s automatskom raspodjelom po definiranim vremenskim periodima.
+Korisnici mogu izabrati prognozu koju žele da analiziraju, ciljni vremenski period i dokumente za poređenje, što omogućava preciznu proveru ostvarenja planiranih ciljeva.
 
-Troškovi se mogu podijeliti po vrstama, uz unos ukupnih količina i iznosa koji se zatim ravnomjerno raspoređuju po odabranim vremenskim jedinicama. Sustav nudi sučelje za uređivanje kalendarskih detalja i prilagodbu vremenskih razdoblja prema specifičnim potrebama korisnika.
+**Periodično zatvaranje – izveštaji**  
+Omogućava kreiranje izveštaja o zatvaranju koji porede prognoze sa stvarnim podacima poslovnih dokumenata (fakture, porudžbine, poslovne prilike). Korisnici mogu filtrirati prognoze i definisati dokumente koje žele da uključe u izveštaj. Sistem proverava da li postoje prethodni nedovršeni izveštaji o zatvaranju za isti period i, ukoliko ne postoje, generiše nove. Dokumenti se automatski povezuju sa izabranom prognozom, omogućavajući detaljno poređenje između planiranih i ostvarenih rezultata.
+
+**Marketinški budžet**  
+Ova funkcionalnost omogućava planiranje marketinškog budžeta za određeni period. Modul omogućava kreiranje strukture u obliku stabla za organizaciju troškova, sa automatskom raspodelom po definisanim vremenskim periodima.
+
+Troškovi se mogu podeliti po vrstama, uz unos ukupnih količina i iznosa koji se zatim ravnomerno raspoređuju po izabranim vremenskim jedinicama. Sistem pruža interfejs za uređivanje kalendarskih detalja i prilagođavanje vremenskih perioda specifičnim potrebama korisnika.
