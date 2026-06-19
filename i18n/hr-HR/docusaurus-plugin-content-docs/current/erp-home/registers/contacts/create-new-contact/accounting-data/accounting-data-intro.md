@@ -7,30 +7,29 @@ Na ovoj kartici definirat ćete specifične informacije koje se odnose na šifar
 
 ## Dodijeljena podkonta
 
-U grid se prikazuju **Podračuni** dodijeljeni subjektu koji zatim određuju prikazivanje niza *određenih kartica*, na kojima će se unijeti informacije povezane s različitim područjima sustava.
+U tablici se prikazuju **konta** dodijeljena subjektu koji zatim određuju prikazivanje niza *određenih kartica*, na kojima će se unijeti informacije povezane s različitim područjima sustava.
 
-Da biste dodijelili računovodstveni podračun šifarnika koji se koriste, jednostavno se postavite u prvi stupac **Tip konta** i odaberite vrstu koja je *kompatibilna* s upravljanjem podacima o subjektima (iako izbornik prikazuje sve vrste računa).
-
-:::note Bilješka
-Kompatibilne vrste su: *Kupci/Dobavljači*, *Agenti* i *Banke*. *Primatelji* se klasificiraju kao dobavljači te se unutar detaljnih podataka aktiviraju specifične postavke za upravljanje porezima po odbitku.
-:::
-
-Nakon odabira vrste računa, pritiskom na tipku kartica za prijelaz na sljedeća polja, primijetit ćemo da **Fluentis** automatski dodjeljuje račun i podračun. Prilikom spremanja, također će se učitati kartice s detaljnim informacijama.
-
-Veza između vrste računa (npr. kupci ili, u slučaju drugačije postavke plana konta, kupci Italija/talijanski kupci) i računa iz računskog plana definirana je [Parametri knjiženja](/docs/configurations/parameters/finance/accounting-parameters). Povezivanje se događa kada godina *Računskih Parametara* odgovara godini stvaranja računa.
-
-Podračun se dodjeljuje automatski nakon toga.
+Da bi se dodijelila računovodstvena konta šifarnika koji se koriste, jednostavno se postavite u prvi stupac **Tip konta** i odaberite vrstu koja je *kompatibilna* s upravljanjem podacima o subjektima (iako izbornik prikazuje sve vrste računa).
 
 :::note Bilješka
-Obratite pozornost da progresivni brojač NE popunjava eventualne praznine u progresiji (uvijek je moguće ručno nametnuti određeni podračun, pod uvjetom da već nije korišten).
-
-Stoga se preporučuje ne miješati ručno u numeraciju, primjerice, ostavljajući praznine kako bi se izbjeglo da, kada se postigne ograničenje numeracije određeno i postavkama plana konta (na primjer, kod podračuna s dva znamenke, tri znamenke itd.), više nije moguće dodavati podračune bez mijenjanja strukture plana konta 
-ili neprekidno intervenirati ručno.
-
-Preporučljivo je prepustiti **Fluentis** upravljanje dodjelom podračuna. Također, izbjegavajte ručno mijenjati numeraciju podračuna povezanih s matičnim podacima izravno iz plana konta.
+Kompatibilne vrste su: *Kupci/Dobavljači*, *Agenti* i *Banke*. *Zaposlenici* se klasificiraju kao dobavljači te se unutar detaljnih podataka aktiviraju specifične postavke za upravljanje porezima po odbitku.
 :::
 
-Za svaki registar moguće je **dodijeliti više podračuna istovremeno**. Najčešći slučajevi u praksi su oni dobavljača koji je ujedno i kupac ili kupca koji je ujedno i agent. U tim slučajevima, na temelju odabranog retka, kartice s detaljima također se mijenjaju:
+Nakon odabira vrste računa, pritiskom na tipku kartica za prijelaz na sljedeća polja, primijetit ćemo da **Fluentis** automatski dodjeljuje konto i podkonto. Prilikom spremanja, također će se učitati kartice s detaljnim informacijama.
+
+Veza između vrste konta (npr. kupci ili, u slučaju drugačije postavke kontnog plana, kupci Italija/talijanski kupci) i konta iz kontnog plana definirana je [Parametri knjiženja](/docs/configurations/parameters/finance/accounting-parameters). Povezivanje se događa kada godina iz parametara knjiženja odgovara godini stvaranja konta.
+
+Podkonto se dodjeljuje automatski nakon toga.
+
+:::note Bilješka
+Obratiti pozornost da progresivni brojač NE popunjava eventualne praznine u progresiji (uvijek je moguće ručno nametnuti određeni podkonto, pod uvjetom da već nije korišten).
+
+Stoga se preporučuje ne miješati ručno u numeraciju, primjerice, ostavljajući praznine kako bi se izbjeglo da, kada se postigne ograničenje numeracije određeno i postavkama plana konta (na primjer, konto s dvije znamenke, tri znamenke itd.), više nije moguće dodavati podkonta bez mijenjanja strukture plana konta ili neprekidno intervenirati ručno.
+
+Preporučljivo je prepustiti **Fluentisu** upravljanje dodjelom šifri konta. Također, izbjegavati ručno mijenjanje numeracije konta povezanih s matičnim podacima izravno iz kontnog plana.
+:::
+
+Za svaki šifarnik moguće je **dodijeliti više podkonta istovremeno**. Najčešći slučajevi u praksi su oni dobavljača koji je ujedno i kupac ili kupca koji je ujedno i agent. U tim slučajevima, na temelju odabranog retka, kartice s detaljima također se mijenjaju:
 
 ### [Šifarnik kupaca/dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)
 
