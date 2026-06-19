@@ -4,6 +4,19 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1
 ---
 
+### Patch 803.0026 - 19/06/2026
+
+> -	CO - salvataggio modelli di riclassificazione, ottimizzazione (#TT02665/26)
+> -	CRM - Ticket - ripristinata possibilità di modifica extradata in seguito a salvataggio ticket (#TT02613/26)
+> -	Fi - Valorizzazione area acquisti/vendite (#TT02678/26)
+> -	SCM – Creazione automatica ordini fornitori da RDA: ottimizzazione gestione data richiesta consegna e data consegna in prototipi ordine (#TT02154/26).
+> -	SCM – Duplicazione fatture di acquisto: corretta la gestione del riporto della data di competenza nella fattura duplicata (#2459/26).
+> -	SCM - Ottimizzazione procedure di rollback carico e scarico documenti con articoli gestiti a lotti e serial number (#TT00744/26).
+> -	SCS - Extradata Conto Lavoro: Implementata propagazione degli extra-data dagli ordini conto lavoro ai DDT di consegna. (#2617/26)
+> -	SH - Ripristinata funzionalità per cui nelle corpo delle email inviate da workflow, sono inclusi i link agli stati alternativi, che permettono l'avanzamento del workflow da email (#TT02687/26)
+> -	SH - workflow log - risolto caso per cui una attività di workflow completata tramite task utente, non mostrava più la descrizione (#TT01373/26)
+> -	Solved bug to Add more than one object to Excel Imports
+
 ### Patch 803.0025 - 15/06/2026
 
 > -	FI - revisione assegnazione numero cespiti nella procedura di suddivisione cespiti dentro la registrazione contabile (#TT02419/26)
