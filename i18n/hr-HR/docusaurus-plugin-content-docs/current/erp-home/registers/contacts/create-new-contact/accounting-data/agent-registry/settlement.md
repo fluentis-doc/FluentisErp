@@ -3,14 +3,49 @@ title: Obračun
 sidebar_position: 3
 ---
 
-U ovoj prozoru postavljaju se opći elementi za izračun provizije: 
+U ovoj formi definiraju se opće postavke za izračun i obračun provizija agenata.
 
-**Uzročno održan**: polje je obavezno kako bi se automatski valorizirao i dio poreza na dohodak primijenjen na proviziju agenta. Bez ovog polja neće biti moguće automatski valorizirati proviziju iz agentovog iznosa; Polje je povezano s tablicom [Tipovi odbitka poreza](/docs/configurations/tables/finance/withholding-tax-types).
+### Šifra poreznog odbitka
 
-**Period namirenja**: označava periodičnost obračuna agenata;
+Ovo je **obavezno polje** koje omogućuje automatski obračun poreznog odbitka na proviziju agenta. Bez popunjenog polja nije moguće automatski evidentirati naknadu prilikom obračuna provizija.
 
-**Vrsta dokumenta**: razmatra se **pri izračunu provizije agenata**: moguće je naznačiti da agent zarađuje proviziju na potvrđenu narudžbu, isporuku robe (tj. izdavanje DDT-a), izdavanje računa, dospijeće (nezavisno od naplate ili ne), plaćanje (tj. na temelju naplaćenog iznosa: ako klijent plati polovicu računa, agent će zaračunati polovicu provizije za taj dokument). Ovo podešenje NE može se promijeniti nakon što počnete stvarati obračune za agenta: bit će potrebno stvoriti novu karticu s novim postavkama (i koristiti postupak 'Dodjela agenata' za masovno ažuriranje šifarnika klijenata u Početna stranica > Kontakte).
+Polje je povezano sa šifrarnikom [Tipovi odbitka poreza](/docs/configurations/tables/finance/withholding-tax-types).
 
-:::note BILJEŠKA
-Samo za [postupak izračuna provizija agenata koji upravlja modulom Administracija](/docs/finance-area/professional-men/procedures/calculate-commissions) dostupan je i dodatni način **Ukupno plaćanje**, u ovom slučaju, provizija će sazrijeti samo ako je račun plaćen u cijelosti, a neće se uzimati u obzir eventualni djelomični plaćanja.
+### Razdoblje obračuna
+
+Određuje učestalost obračuna provizija agenata.
+
+:::note[Napomena]
+Ovo polje ima isključivo informativnu funkciju i ne koristi se izravno u postupku izračuna provizija.
+
+Kod metode **plaćanje izvršeno**, prilikom obračuna uvijek se uzimaju svi dokumenti do odabranog datuma. Nije moguće obračunavati samo dio provizija prema unaprijed definiranim obračunskim razdobljima.
+
+Filtri dostupni u postupku **Automatski obračun provizija** temelje se na datumima narudžbi, otpremnica i računa, a ne na datumima plaćanja.
+
+Razlog tome je što se dokumenti nakon obračuna ne mogu naknadno mijenjati, dok se plaćanja mogu unositi ili ispravljati i za već obrađena razdoblja. U suprotnom bi pojedine provizije mogle ostati neobračunate.
+:::
+
+### Dokument koji određuje nastanak prava na proviziju
+
+Određuje trenutak u kojem agent stječe pravo na proviziju. Moguće su sljedeće opcije:
+
+- **Potvrđena narudžba** – provizija nastaje potvrdom narudžbe.
+- **Isporuka robe** – provizija nastaje izdavanjem otpremnice.
+- **Izdavanje računa** – provizija nastaje knjiženjem računa.
+- **Dospijeće računa** – provizija nastaje po dospijeću računa, neovisno o naplati.
+- **Izvršeno plaćanje** – provizija nastaje proporcionalno izvršenim uplatama kupca. Ako je kupac platio 50 % računa, agent ostvaruje 50 % pripadajuće provizije.
+- **Potpuno plaćanje** – provizija nastaje tek kada je račun u cijelosti podmiren.
+
+:::warning[Pažnja]
+Ova postavka ne može se mijenjati nakon što započne obračun provizija u prodajnom modulu.
+
+Ako je potrebno promijeniti način obračuna, potrebno je kreirati novu konfiguraciju te, po potrebi, koristiti postupak **Dodjela agenata** za masovno ažuriranje kupaca.
+:::
+
+:::note[Napomena]
+Opcija **Potpuno plaćanje** dostupna je samo u [postupku obračuna provizija koji se koristi u modulu Administracija](/docs/finance-area/professional-men/procedures/calculate-commissions) te nije dostupna u standardnom obračunu provizija unutar prodajnog modula.
+:::
+
+:::note[Napomena]
+Postupak upravljanja provizijama u računovodstvu omogućuje naknadnu promjenu logike obračuna provizija jer se pravilo nastanka provizije pohranjuje na razini pojedinog dokumenta ili računa.
 :::

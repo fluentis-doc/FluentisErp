@@ -3,7 +3,7 @@ title: Dani banke
 sidebar_position: 5
 ---
 
-U ovom obrazcu mogu se povezati dani valute s odgovarajućim knjigovodstvenim uzrocima kako bi se automatizirao izračun datuma valute u bankovnim knjiženjima (ako sami knjigovodstveni uzroci predviđaju upravljanje danima banke). 
+U ovom obrascu mogu se povezati dani valute s odgovarajućim knjigovodstvenim uzrocima kako bi se automatizirao izračun datuma valute u bankovnim knjiženjima (ako sami knjigovodstveni uzroci predviđaju upravljanje danima banke). 
 
 Opcija **Radni dani** postavlja procjenu radi li se o radnom danu ili prazniku (uzimajući u obzir i tablicu Definirani praznici za tvrtku u Početna stranica > Korisnost >Praznici tijekom godine).
 

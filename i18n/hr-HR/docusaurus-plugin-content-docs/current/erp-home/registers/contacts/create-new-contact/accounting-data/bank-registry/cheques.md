@@ -3,7 +3,7 @@ title: Čekovi
 sidebar_position: 3
 ---
 
-Ova kartica je ručna knjiga gdje treba navesti pojedinosti o matricama čekova i referencama pojedinačnih izdatih čekova.
+Ova kartica je ručna knjiga gdje treba navesti pojedinosti o matricama čekova i referencama pojedinačnih izdanih čekova.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/cheques/image01.png)
 

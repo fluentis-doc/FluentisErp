@@ -3,7 +3,7 @@ title: Agenti
 sidebar_position: 8
 ---
 
-U ovom obrascu unosite agente koji komercijalno upravljaju predmetom u uporabi čiji su podaci prethodno uneseni kako bi bili dostupni kao odabir u ovoj kartici.
+U ovom obrascu unose se agente koji komercijalno upravljaju predmetom u uporabi čiji su podaci prethodno uneseni kako bi bili dostupni kao odabir u ovoj kartici.
 
 Može postojati nekoliko agenata, primjerice u slučaju kada imamo agenta i područnog upravitelja koji dobivaju proviziju za isti proizvod, ili u slučaju različitih vrsta prodanog proizvoda - za svaku vrstu može postojati drugi odgovorni agent. 
 

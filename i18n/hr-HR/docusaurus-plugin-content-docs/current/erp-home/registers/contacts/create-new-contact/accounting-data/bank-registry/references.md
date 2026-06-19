@@ -11,7 +11,7 @@ sidebar_position: 1
 
 **Valuta**: naznačite valutu u kojoj je izražen bankovni račun;
 
-Moguće je unijeti neke korisne podatke za interakciju s **DocFinance®** (vanjskim programom za trezorstvo):
+Moguće je unijeti neke korisne podatke za interakciju s **DocFinance®** (vanjskim programom za riznicu):
 
 **R.B.N.**: predstavlja vrstu odnosa (npr. tekući račun, valutni račun...);
 
@@ -21,4 +21,4 @@ Moguće je unijeti neke korisne podatke za interakciju s **DocFinance®** (vanjs
 
 **SIA**: kod za slanje talijanskih elektroničkih datoteka, npr. za bankovne Potvrde (ako nije naveden, koristi se zadani kod unesen u tablicu tvrtke, Početna stranica > Tablice > Općenito).
 
-**Banka za podršku**: omogućuje povezivanje šikranika banke s odgovarajućim općim kodom banke za podršku. Ovo može poslužiti za automatsko usmjeravanje financijskih transakcija od strane stranaka i njihovo vrednovanje u analizama novčanih tokova.
+**Banka za podršku**: omogućuje povezivanje šifarnika banke s odgovarajućim općim kodom banke za podršku. Ovo može poslužiti za automatsko usmjeravanje financijskih transakcija od strane stranaka i njihovo vrednovanje u analizama novčanih tokova.

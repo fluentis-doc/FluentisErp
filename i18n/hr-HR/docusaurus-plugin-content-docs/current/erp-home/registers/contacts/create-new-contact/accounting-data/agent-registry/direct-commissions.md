@@ -5,9 +5,9 @@ sidebar_position: 4
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/direct-commissions/image01.png)
 
-Ovaj prozor je ključan za definiranje kriterija određivanja postotaka provizija.
+Ova forma je ključna za definiranje kriterija određivanja postotaka provizija.
 
-Prva dva polja omogućuju definiranje **općeg postotka** i **fiksnog iznosa**: lopći postotak će se koristiti samo ako u odjeljku s desne strane, gdje se definiraju po prioritetu kriteriji valorizacije, postoji tipologija ‘1 -  Šifarnik o agentu'.
+Prva dva polja omogućuju definiranje **općeg postotka** i **fiksnog iznosa**: opći postotak će se koristiti samo ako u odjeljku s desne strane, gdje se definiraju po prioritetu kriteriji valorizacije, postoji tipologija ‘1 -  Šifarnik o agentu'.
 
 Popis mogućih opcija (odabir iz padajućeg izbornika) je sljedeći:
 
@@ -39,7 +39,7 @@ Logika određivanja provizije koja će se primijeniti stoga ovisi o prioritetima
 
 Za neke od ovih opcija potrebno je pritisnuti gumb **Detalj označenog postotka** kako biste otvorili prozor za definiranje kombinacija koje vrijede za samog agenta. U tim prozorima, koji ovise o vrsti početnih postavki (npr. ako se radi o artiklima, bit će polje za definiranje artikla, ako se radi o cjenicima, bit će polje za cjenik itd.), važno je definirati raspon datuma valjanosti ovih postavki: za isti artikl, primjerice, moglo bi postojati više postotaka provizije s različitim rasponima datuma valjanosti.
 
-Posebno je važno objasniti provizionalni detalj definiran za *Raspon popusta*: za ove, naime, važno je definirati koji će se *Raspon popusta* (kako je definiran u tablici) primijeniti na agenta i hoće li provizije biti one standardno unesene u ovom ili prilagođeni postotak za agenta na rasponima popusta definiranim za taj raspon; drugo, bitno je reći je li izračun stvarnog primijenjenog popusta definiran u odnosu na cijenu artikla u šifarniku, ili prema odnosu bruto-neto cijene pojedine linije artikla (u kojem slučaju neće biti moguće automatizirati provizije agenata prilikom stvaranja dokumenata izravno na neto cijenama).
+Posebno je važno objasniti detalj definiran za *Raspon popusta*: za ove, naime, važno je definirati koji će se *Raspon popusta* (kako je definiran u tablici) primijeniti na agenta i hoće li provizije biti one standardno unesene u ovom ili prilagođeni postotak za agenta na rasponima popusta definiranim za taj raspon; drugo, bitno je reći je li izračun stvarnog primijenjenog popusta definiran u odnosu na cijenu artikla u šifarniku, ili prema odnosu bruto-neto cijene pojedine linije artikla (u kojem slučaju neće biti moguće automatizirati provizije agenata prilikom stvaranja dokumenata izravno na neto cijenama).
 
 Dodatna opća napomena u vezi s popisima: povezani su s određenim popisima, ne s vrstama popisa. Drugim riječima, ako se u modulu prodajnih popisa stvori novi popis iste vrste kao prethodni, ali s novim datumom početka valjanosti, taj se popis mora ponovno povezati s agentom i njegovim postotcima provizije.
 

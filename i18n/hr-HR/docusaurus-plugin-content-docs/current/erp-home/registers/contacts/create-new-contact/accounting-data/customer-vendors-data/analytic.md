@@ -3,7 +3,7 @@ title: Analitika
 sidebar_position: 9
 ---
 
-U ovom obrascu moguće je definirati poveznicu za valorizaciju troškova/prihoda troškovno-profitnih centara ( *Konfiguracija > Tablice > Kontroling*) za dokumente/zapise registrirane povezanim sa stavkom u uporabi.
+U ovom obrascu moguće je definirati poveznicu za valorizaciju troškova/prihoda troškovno-profitnih centara (*Konfiguriranje > Tablice > Kontroling*) za dokumente/zapise knjižene s artiklima u uporabi.
 
 Spomenuto povezivanje uzima u obzir i druge opcije valorizacije troškovnih i profitnih centara (prema artiklu, općem kontnom planu, skladištu) koje se mogu definirati modul po modul.
 
@@ -17,6 +17,6 @@ Prioritet očitanja u valorizaciji centara troška/profita postavljen je, iz god
 
 **Odjel**: padajući izbornik za pozivanje poslovne jedinice koja se odnosi na unesenu vezu.
 
-**Datum početka valjanosti**: obavezno polje koje označava datum od kojeg je poveznica važeća.
+**Datum početka valjanosti**: obavezno polje koje označava datum od kojeg je veza važeća.
 
-**Datum isteka valjanosti**: označava datum od kojeg poveznica više ne vrijedi.
+**Datum kraja valjanosti**: označava datum od kojeg veza više ne vrijedi.
