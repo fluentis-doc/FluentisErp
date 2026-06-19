@@ -3,7 +3,7 @@ title: Razno
 sidebar_position: 7
 ---
 
-U ovom obrazcu možemo povezati različite napomene s našim dobavljačem ili klijentom.    
+U ovom obrascu mogu se povezati različite napomene s dobavljačem ili klijentom.    
 
 *Poseban gumb*:
-> Brisanje nespojivih: za brisanje podračuna koji nisu kompatibilni. 
+> Izbriši nekompatibilno: za brisanje konta koji nisu kompatibilni. 

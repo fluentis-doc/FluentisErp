@@ -3,7 +3,18 @@ title: Razno
 sidebar_position: 7
 ---
 
-Na ovoj tablici mogu se definirati parametri grupiranja koji će se koristiti za kontakt.
-U svakom retku naveden je postupak Fluentis koji omogućuje grupiranje. Na temelju postavljenih oznaka za svaki redak, različiti će se dokumenti stvoriti s pravilima grupiranja. Prilikom stvaranja nove anagrafike, ovi parametri bit će popunjeni zadanim vrijednostima.
-Zastava *Sažetak* ključna je za stvaranje jednog dokumenta koji uključuje različite početne dokumente. Ostale zastave odnose se na posebna grupiranja.
-Općenito, tijekom postupaka dokumenti se mogu grupirati prema: vrsti dokumenta, godini, mjesecu, promjeni, narudžbi, projektu, vrsti i načinu plaćanja, odredištu, članku 62, suvlasnicima.
+U ovoj kartici moguće je definirati parametre grupiranja koji će se koristiti za kontakt. U svakom retku prikazana je Fluentis procedura koja podržava grupiranje dokumenata. Ovisno o oznakama postavljenima za pojedini redak, dokumenti će se kreirati prema odgovarajućim pravilima grupiranja.
+Prilikom kreiranja novih matičnih podataka, ovi se parametri automatski popunjavaju zadanim vrijednostima.
+Oznaka Zbirno ključna je za kreiranje jednog dokumenta iz više izvornih dokumenata. Ostale oznake odnose se na posebna pravila grupiranja.
+Općenito, tijekom obrade dokumenti se mogu grupirati prema sljedećim kriterijima:
+- vrsta dokumenta
+- godina
+- mjesec
+- tečaj valute
+- narudžba
+- projekt
+- vrsta i uvjeti plaćanja
+- odredište
+- Art. 62
+-sunositelji dokumenta (zajednički nositelji)
+- drugi specifični kriteriji grupiranja.
