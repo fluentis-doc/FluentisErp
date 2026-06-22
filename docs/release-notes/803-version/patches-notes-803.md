@@ -4,13 +4,20 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1
 ---
 
+### Patch 803.0027 - 22/06/2026
+
+> -	CO - valorizzazione area acquisti/vendite nelle chiusure infrannuali, revisione gestione filtri per chiusura, da impostare ora in ogni singolo tipo di documento di origine (#TT02678/26)  
+> -	CO - valorizzazione area acquisti/vendite nelle chiusure infrannuali non verifica più la data ultima stampa registri iva (#TT02587/26)  
+> -	PR - creazione cash flow da export DocFinance, fix errore "method not found"  
+> -	SH - ripristinata funzionalità per cui nelle corpo delle email inviate da workflow, sono inclusi i link agli stati alternativi, che permettono l'avanzamento del workflow da email (#TT02687/26)
+
 ### Patch 803.0026 - 19/06/2026
 
 > -	CO - salvataggio modelli di riclassificazione, ottimizzazione (#TT02665/26)
 > -	CRM - Ticket - ripristinata possibilità di modifica extradata in seguito a salvataggio ticket (#TT02613/26)
 > -	Fi - Valorizzazione area acquisti/vendite (#TT02678/26)
-> -	SCM – Creazione automatica ordini fornitori da RDA: ottimizzazione gestione data richiesta consegna e data consegna in prototipi ordine (#TT02154/26).
-> -	SCM – Duplicazione fatture di acquisto: corretta la gestione del riporto della data di competenza nella fattura duplicata (#2459/26).
+> -	SCM - Creazione automatica ordini fornitori da RDA: ottimizzazione gestione data richiesta consegna e data consegna in prototipi ordine (#TT02154/26).
+> -	SCM - Duplicazione fatture di acquisto: corretta la gestione del riporto della data di competenza nella fattura duplicata (#2459/26).
 > -	SCM - Ottimizzazione procedure di rollback carico e scarico documenti con articoli gestiti a lotti e serial number (#TT00744/26).
 > -	SCS - Extradata Conto Lavoro: Implementata propagazione degli extra-data dagli ordini conto lavoro ai DDT di consegna. (#2617/26)
 > -	SH - Ripristinata funzionalità per cui nelle corpo delle email inviate da workflow, sono inclusi i link agli stati alternativi, che permettono l'avanzamento del workflow da email (#TT02687/26)
