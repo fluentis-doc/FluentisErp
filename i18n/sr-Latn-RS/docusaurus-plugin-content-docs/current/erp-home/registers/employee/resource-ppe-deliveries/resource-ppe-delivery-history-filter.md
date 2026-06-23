@@ -1,22 +1,22 @@
 ---
-title: Pretraga povijesti dostava/povrata D.P.I.
+title: Pretraga istorije isporuke/povrata OZO (lične zaštitne opreme)
 sidebar_position: 2
 ---
 
-Filtriranje se nalazi na putanji **Početna stranica > Zaposlenici > Dostave/povrati D.P.I. > Povijest dostava/povrata D.P.I.**.   
+Filtriranje se nalazi na putanji **Početna stranica > Zaposleni > Isporuke/Povrat OZO > Istorija isporuka/povrata OZO**.
 
-Filtriranje podataka omogućuje unos novih *Dostava/Povrata D.P.I.* ili pretraživanje već postojećih radi pregleda, izmjene ili brisanja.  
+Filtriranje podataka omogućava unos novih **isporuka/povrata OZO** ili pretragu postojećih zapisa radi pregleda, izmene ili brisanja.
 
-### ![](/img/neutral/common/search.png) Pretraga Povijesti dostava/povrata D.P.I.
+### ![](/img/neutral/common/search.png) Pretraga istorije isporuka/povrata OZO
 
-Obrazac se sastoji od područja za filtriranje i rezultate. Nakon što postavite sve željene filtre, jednostavno kliknite na gumb **Traži** kako biste prikazali rezultate unutar tablice rezultata.   
+Obrazac se sastoji od područja za filtriranje i tabele rezultata.
+Nakon što postavite željene filtere, kliknite na dugme **Traži** kako biste prikazali rezultate u tabeli rezultata.
 
-### ![](/img/neutral/common/new.png) Unos dostave/povrata D.P.I.
+### ![](/img/neutral/common/new.png) Unos isporuke/povrata OZO
 
-Da biste unijeli nove *Dostave/Povrate D.P.I.* potrebno je pritisnuti gumb **Novo**.   
+Za unos nove **isporuke/povrata OZO** potrebno je kliknuti na dugme **Novo**.
 
-### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) Prikaz Povijesti dostava/povrata D.P.I.
+### ![](/img/neutral/common/edit.png) Izmena ili ![](/img/neutral/common/view.png) pregled istorije isporuka/povrata OZO
 
-Za otvaranje upravljanja tablicom rezultata potrebno je dvaput kliknuti na redak koji nas zanima ili, odabravši jedan ili više redaka, pritisnuti gumbe  **Izmjena** ili **Prikaz**.   
-
-Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkim funkcijama obrazaca, obratite se sljedećem linku: [Zajedničke funkcije, gumbe i polja](/docs/guide/common).
+Za otvaranje zapisa iz tabele rezultata potrebno je dvaput kliknuti na željeni red ili, nakon odabira jednog ili više redova, koristiti dugmad **Izmeni** ili **Prikaži**.
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkim funkcijama obrazaca, pogledajte: [Zajedničke funkcije, dugmad i polja](/docs/guide/common).

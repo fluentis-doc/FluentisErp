@@ -1,42 +1,42 @@
 ---
-title: Povijest dostave/povrata D.P.I.
+title: Istorija isporuke/povrata OZO (lične zaštitne opreme)
 sidebar_position: 3
 ---
 
-Upravljanje se može izvršiti kroz filtriranje **Povijesti dostava/povrata D.P.I.**:
-> pritiskom na gumb *Novo*;   
-> dvostrukim klikom na redak *dostave/povrata D.P.I.* u prikazu rezultata;   
-> odabirom *dostave/povrata D.P.I.* iz prikaza rezultata i pritiskom na gumbe *Izmjena* ili *Prikaz*.   
+Upravljanje se može izvršiti kroz filter **Istorija isporuke/povrata OZO**:
+> pritiskom na dugme *Novo*;   
+> dvostrukim klikom na red *Isporuka/povrat OZO* u prikazu rezultata;   
+> izborom *Isporuke/povrata OZO* iz prikaza rezultata i pritiskom na dugmad *Izmena* ili *Prikaz*.   
 
 
-:::important Za što služi
-Podaci prisutni u ovom upravljanju koriste se za upravljanje informacijama *Povijesti dostava/povrata D.P.I.*   
+:::important Čemu služi
+Podaci prisutni u ovom upravljanju koriste se za vođenje informacija o *istoriji isporuke/povrata OZO*.   
 :::
 
 
-## Specifični gumbi 
+## Specifična dugmad
 
 
-### ![](/img/neutral/common/save.png) Spremi Povijest dostave/povrata D.P.I.
+### ![](/img/neutral/common/save.png) Sačuvaj istoriju isporuke/povrata OZO
 
-Da biste spremili izmijenjene informacije, potrebno je pritisnuti gumb **Spremi**.   
+Da biste sačuvali izmenjene informacije, potrebno je pritisnuti dugme **Sačuvaj**.   
 
 
 ## Upravljanje podacima
 
 Informacije kojima se upravlja su:   
-> **Zaposlenik**: *Zaposlenik* kojem je dostavljen/povratak *D.P.I.*   
-> **D.P.I.**: *D.P.I.* koji je dostavljen/povratak.   
-> **Datum dostave/povrata**: *Datum* kada je *D.P.I.* dostavljen/povratak *Zaposleniku*.   
-> **Količina dostavljena**: *Količina* *D.P.I.* dostavljena *Zaposleniku*.   
-> **Dostavio**: *osoba* koja je dostavila *D.P.I.* *Zaposleniku*.
-> **Vraćena količina**: *Količina D.P.I.* koja je vraćena od strane *Zaposlenika*.   
-> **Vraćeno**: *osoba* koja je primila *D.P.I.* od *Zaposlenika*.   
-> **Upotreba**: slobodne bilješke o temi.   
-> **Recepti**: slobodne bilješke o temi.    
-> **Napomene**: slobodne bilješke.    
-> **Potpisano**: označava je li *Zaposlenik* potpisao, za prihvaćanje, izvješća:
->> *Kartica dostave Osobne Zaštitne Opreme*;   
->> *Kartica povrata Osobne Zaštitne Opreme*.   
+> **Zaposleni**: *Zaposleni* kojem je OZO isporučena/vraćena.   
+> **O.Z.O.**: lična zaštitna oprema koja je isporučena/vraćena.   
+> **Datum isporuke/povrata**: *Datum* kada je *OZO* isporučena/vraćena *zaposlenom*.   
+> **Isporučena količina**: *Količina* *OZO* isporučena *zaposlenom*.   
+> **Isporučio**: *osoba* koja je isporučila *OZO* *zaposlenom*.   
+> **Vraćena količina**: *Količina OZO* koju je *zaposleni* vratio.   
+> **Preuzeo povrat**: *osoba* koja je preuzela *OZO* od *zaposlenog*.   
+> **Namena korišćenja**: slobodne beleške na temu.   
+> **Propisi**: slobodne beleške na temu.    
+> **Napomene**: slobodne beleške.    
+> **Potpisano**: označava da li je *zaposleni* potpisao, kao potvrdu prijema, izveštaje:
+>> *Kartica isporuke lične zaštitne opreme*;   
+>> *Kartica povrata lične zaštitne opreme*.   
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkim funkcijama obrazaca, molimo pogledajte sljedeću poveznicu: [Zajedničke funkcije, gumbi i polja](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkim funkcijama obrazaca, pogledajte sledeći link: [Zajedničke funkcije, dugmad i polja](/docs/guide/common).
