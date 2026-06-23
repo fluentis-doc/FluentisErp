@@ -142,7 +142,22 @@ In questa tab è possibile indicare i Ricavi ottenuti dalle varie Risorse. I cam
 In questa tab è possibile indicare i Ricavi ottenuti dall'impiego di Materiali.      
 Nelle prime colonne della griglia è possibile inserire un Articolo codificato, Non codificato oppure Note, la sua eventuale Variante e l'iva. Le colonne successive sono:     
 - **Quantità/Costo unitario/Costo totale**: per ottenere il Costo totale viene moltiplicata automaticamente la Quantità inserita con il Costo unitario.      
-- **Tipo origine costo**: è possibile selezionare l'origine dalla quale popolare la colonna *Costo unitario* tra: Costo ultimo, Costo medio, Costo standard, Listino fornitore netto, Ordine fornitore o Fattura di acquisto; questo campo è parametrizzabile di default nei [Parametri offerta](/docs/configurations/parameters/sales/offer-parameters).    
+- **Tipo origine costo**: è possibile selezionare l'origine dalla quale popolare la colonna *Costo unitario* tra: 
+- Costo ultimo
+- Costo medio
+- Costo standard
+- Listino fornitore netto
+- Ordine fornitore
+- Fattura di acquisto; 
+questo campo è parametrizzabile di default nei [Parametri offerta](/docs/configurations/parameters/sales/offer-parameters).    
+
+
+I valori di costo ultimo e costo medio vengono calcolati alla data dell'offerta di vendita, con una specifica funzione, se l'articolo ha dei movimenti di magazzino valorizzati. Nel caso non ci siano movimenti, i dati vengono ottenuti dall'anagrafica articolo. 
+I valori di ordine fornitore e fattura di acquisto vengono ricercati in funzione alla data offerta di vendita, e vengono considerati gli ultimi documenti validi trovati alla data offerta (stampati-confermati).
+
+
+Nel caso l'offerta sia in valuta diversa dalla valuta società, in fase di assegnazione costo materiale, il valore verrà convertito nella valuta dell'offerta. 
+
 - **Percentuale/Valore**: in questi campi è possibile inserire un eventuale ricarico da applicare al Costo totale, in percentuale o valore.     
 - **Ricavo**: in questa colonna verrà calcolato automaticamente il Costo totale ricaricato.        
 - **Descrizione fornitore**: viene proposto il Fornitore preferenziale inserito in anagrafica articolo, ma è possibile modificarlo; se nella colonna *Tipo origine costo* è stato selezionato il listino fornitore, il listino considerato sarà quello valido per questo fornitore; inoltre, questo fornitore sarà l'intestatario della **Richiesta di offerta** generata dalla riga materiale.           
