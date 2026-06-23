@@ -3,34 +3,33 @@ title: Podaci knjiženja
 sidebar_position: 1
 ---
 
-Na ovoj kartici definirat ćete specifične informacije koje se odnose na šifarnik koji se koriste.
+Na ovoj kartici definišu se specifične informacije koje se odnose na šifarnik koji se koristi.
 
-## Dodijeljena podkonta
+## Dodeljeni podkonti
 
-U grid se prikazuju **Podračuni** dodijeljeni subjektu koji zatim određuju prikazivanje niza *određenih kartica*, na kojima će se unijeti informacije povezane s različitim područjima sustava.
+U tabeli se prikazuju **konta** dodeljena subjektu, koja zatim određuju prikazivanje niza *posebnih kartica* na kojima će se unositi informacije povezane sa različitim oblastima sistema.
 
-Da biste dodijelili računovodstveni podračun šifarnika koji se koriste, jednostavno se postavite u prvi stupac **Tip konta** i odaberite vrstu koja je *kompatibilna* s upravljanjem podacima o subjektima (iako izbornik prikazuje sve vrste računa).
+Da biste dodelili računovodstvena konta šifarniku koji se koristi, potrebno je da se pozicionirate u prvu kolonu **Tip konta** i odaberete vrstu koja je *kompatibilna* sa upravljanjem podacima o subjektima (iako meni prikazuje sve vrste konta).
 
-:::note Bilješka
-Kompatibilne vrste su: *Kupci/Dobavljači*, *Agenti* i *Banke*. *Primatelji* se klasificiraju kao dobavljači te se unutar detaljnih podataka aktiviraju specifične postavke za upravljanje porezima po odbitku.
+:::note Napomena
+Kompatibilne vrste su: *Kupci/Dobavljači*, *Agenti* i *Banke*. *Zaposleni* se klasifikuju kao dobavljači i u njihovim detaljnim podacima aktiviraju se specifična podešavanja za upravljanje porezom po odbitku.
 :::
 
-Nakon odabira vrste računa, pritiskom na tipku kartica za prijelaz na sljedeća polja, primijetit ćemo da **Fluentis** automatski dodjeljuje račun i podračun. Prilikom spremanja, također će se učitati kartice s detaljnim informacijama.
+Nakon izbora vrste konta, pritiskom na taster za prelazak na sledeće polje primetićemo da **Fluentis** automatski dodeljuje konto i podkonto. Prilikom čuvanja podataka učitaće se i kartice sa detaljnim informacijama.
 
-Veza između vrste računa (npr. kupci ili, u slučaju drugačije postavke plana konta, kupci Italija/talijanski kupci) i računa iz računskog plana definirana je [Parametri knjiženja](/docs/configurations/parameters/finance/accounting-parameters). Povezivanje se događa kada godina *Računskih Parametara* odgovara godini stvaranja računa.
+Veza između vrste konta (na primer kupci ili, u slučaju drugačije postavke kontnog plana, kupci Italija/italijanski kupci) i konta iz kontnog plana definiše se u [Parametrima knjiženja](/docs/configurations/parameters/finance/accounting-parameters). Povezivanje se vrši kada godina iz parametara knjiženja odgovara godini kreiranja konta.
 
-Podračun se dodjeljuje automatski nakon toga.
+Podkonto se nakon toga dodeljuje automatski.
 
-:::note Bilješka
-Obratite pozornost da progresivni brojač NE popunjava eventualne praznine u progresiji (uvijek je moguće ručno nametnuti određeni podračun, pod uvjetom da već nije korišten).
+:::note Napomena
+Obratite pažnju da progresivni brojač NE popunjava eventualne praznine u numeraciji (uvek je moguće ručno zadati određeni podkonto, pod uslovom da već nije korišćen).
 
-Stoga se preporučuje ne miješati ručno u numeraciju, primjerice, ostavljajući praznine kako bi se izbjeglo da, kada se postigne ograničenje numeracije određeno i postavkama plana konta (na primjer, kod podračuna s dva znamenke, tri znamenke itd.), više nije moguće dodavati podračune bez mijenjanja strukture plana konta 
-ili neprekidno intervenirati ručno.
+Zbog toga se preporučuje da se ne interveniše ručno u numeraciju, na primer ostavljanjem praznina, kako bi se izbeglo da, kada se dostigne ograničenje numeracije određeno strukturom kontnog plana (na primer konto sa dve, tri ili više cifara), više ne bude moguće dodavati podkonta bez izmene strukture kontnog plana ili stalnih ručnih intervencija.
 
-Preporučljivo je prepustiti **Fluentis** upravljanje dodjelom podračuna. Također, izbjegavajte ručno mijenjati numeraciju podračuna povezanih s matičnim podacima izravno iz plana konta.
+Preporučuje se da se **Fluentisu** prepusti upravljanje dodelom šifara konta. Takođe, treba izbegavati ručno menjanje numeracije konta povezanih sa matičnim podacima direktno iz kontnog plana.
 :::
 
-Za svaki registar moguće je **dodijeliti više podračuna istovremeno**. Najčešći slučajevi u praksi su oni dobavljača koji je ujedno i kupac ili kupca koji je ujedno i agent. U tim slučajevima, na temelju odabranog retka, kartice s detaljima također se mijenjaju:
+Za svaki šifarnik moguće je **istovremeno dodeliti više podkonta**. Najčešći slučajevi u praksi su dobavljač koji je istovremeno i kupac ili kupac koji je istovremeno i agent. U tim slučajevima, u zavisnosti od izabranog reda, menjaju se i kartice sa detaljnim podacima:
 
 ### [Šifarnik kupaca/dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)
 
@@ -46,12 +45,12 @@ Za svaki registar moguće je **dodijeliti više podračuna istovremeno**. Najče
 
 ---
 
-### **VIDEO TUTORIALI O ŠIFARNICIMA**
+### **VIDEO TUTORIJALI O ŠIFARNICIMA**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yvvYvTZMI_o" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yvvYvTZMI_o" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/H4cos9Q4FTo" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H4cos9Q4FTo" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C5YmYWgPubY" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C5YmYWgPubY" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iBBMYnZsvRg" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iBBMYnZsvRg" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
