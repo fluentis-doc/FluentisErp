@@ -1,7 +1,7 @@
 ---
 title: Patch Notes v803
 sidebar_label: 🔧 Patch Notes v803
-sidebar_position: 1
+sidebar_position: 1.2
 ---
 
 ### Patch 803.0027 - 22/06/2026
