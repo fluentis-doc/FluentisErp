@@ -3,110 +3,139 @@ title: Administracija
 sidebar_position: 2
 ---
 
-U ovom obrascu nalaze se sljedeća polja:
+U ovom obrascu nalaze se sledeća polja:
 
-**Valuta**: obavezno polje koje se standardno predlaže na temelju valute tvrtke, ali može biti promijenjeno kako bi se imala ta pretpostavka prilikom stvaranja dokumenata i knjigovodstvenih zapisa; 
+**Valuta**: obavezno polje koje se podrazumevano predlaže na osnovu valute preduzeća, ali se može promeniti kako bi se koristila kao podrazumevana vrednost prilikom kreiranja dokumenata i knjigovodstvenih knjiženja;
 
-**Stopa PDV-a**: to je stopa PDV-a koja će se predložiti u aktivnom/pasivnom ciklusu dokumentacije i u knjigovodstvenim zapisima.
+**PDV stopa (šifra)**: predstavlja PDV stopu koja će se predlagati u ulaznim i izlaznim dokumentima, kao i u knjigovodstvenim knjiženjima.
 
-:::note VAŽNO 
-Prioritet valorizacije polja [PDV](/docs/sales/sales-invoices/invoicing/sales-invoice) polja u dokumentima uključuje sljedeći redoslijed:  
-1. provjera [Deklaracija namjere](/docs/finance-area/declarations/declarations/intent-declaration), ukoliko postoje, i promjena PDV broja unutar dokumenta;  
-2. šifarnik kupca/dobavljač;  
+:::note VAŽNO
+Prioritet popunjavanja polja [PDV](/docs/sales/sales-invoices/invoicing/sales-invoice) u dokumentima prati sledeći redosled:
+
+1. provera [Izjave o nameri](/docs/finance-area/declarations/declarations/intent-declaration), ukoliko postoje, i eventualna promena PDV šifre u dokumentu;
+2. šifarnik kupca/dobavljača;
 3. šifarnik artikla.
 
-Preporučljivo je procijeniti, na temelju logike prioriteta valorizacije, treba li ispuniti ovo polje u matičnim podacima kupca/dobavljača.
+Preporučuje se da se, na osnovu logike prioriteta popunjavanja, proceni da li ovo polje treba popunjavati u matičnim podacima kupca/dobavljača.
 
-*Primjer*: ako popunim polje u evidenciji intra-EU kupca s stopom PDV-a za neoporezivost, ta stopa će prevladati u dokumentima u odnosu na eventualnu redovitu stopu PDV-a unesenu u evidenciju artikala koji se fakturiraju. Ova prevlast možda nije prikladna u drugim situacijama i stoga treba uzeti u obzir.
+*Primer*: ukoliko se u šifarniku kupca iz EU unese PDV stopa za neoporezivi promet, ta stopa će imati prioritet u dokumentima u odnosu na redovnu PDV stopu definisanu na artiklu. Takvo ponašanje možda neće biti odgovarajuće u svim situacijama i zato ga treba pažljivo proceniti.
+:::
 
-**Tipo rač. PDV-a**: ovo polje omogućuje definiranje, u kombinaciji s postavkama općih knjiženja, koji će se PDV podračun za kupnju/prodaju koristiti u zapisima povezanim s subjektom koji je trenutno u uporabi. Postoji zadani tip rač. PDV-a unutar računskih parametara; (uglavnom se koristi za poreze koji NISU talijanski).
+**Vrsta PDV knjiženja**: ovo polje omogućava definisanje vrste PDV podkonta za nabavku ili prodaju koji će se koristiti u knjiženjima vezanim za konkretnog partnera, u kombinaciji sa podešavanjima knjigovodstvenih šablona glavne knjige. U parametrima računovodstva postoji podrazumevana vrsta PDV knjiženja (*default*), koja se uglavnom koristi u poreskim sistemima van Italije.
 
-**Tip rač. članka**: za knjiženje računa u **Fluentisu**, omogućuje definiranje logike valorizacije detaljnog podračuna za kupovinu/prodaju razlikujući kontraporavnanje (trošak/prihod) u odnosu na kupca/dobavljača koji je primatelj računa o kupnji ili prodaji.
+**Vrsta knjiženja artikla**: prilikom knjiženja faktura u Fluentisu omogućava definisanje logike određivanja odgovarajućeg podkonta za promet nabavke ili prodaje. Na taj način moguće je razlikovati konto troška ili prihoda u zavisnosti od kupca ili dobavljača na kojeg glasi ulazna ili izlazna faktura.
 
-*Primjer*:
+*Primer*:
 
-U kontnom planu imam račun 500 Prodaja proizvoda koji ima sljedeća podkonta:
+U kontnom planu postoji konto **500 – Prihodi od prodaje proizvoda** sa sledećim podkontima:
 
-500-001 Prihodi od gotovih proizvoda
+- **500-001** Prihodi od prodaje gotovih proizvoda
+- **500-002** Prihodi od prodaje gotovih proizvoda unutar grupe (*intercompany*)
+- **500-003** Prihodi od prodaje gotovih proizvoda u inostranstvu
 
-500-002 Međusobni prihodi od gotovih proizvoda
+Artikl **XYZ** u svom šifarniku ima dodeljenu šifru fakturisanja **A – Prihodi od prodaje gotovih proizvoda**, koja je povezana sa kontom **500-001 Prihodi od prodaje gotovih proizvoda**.
 
-500-003 Strani prihodi od gotovih proizvoda
+Ako je kupac **001** domaći kupac, ova postavka je dovoljna. Prilikom prodaje artikla XYZ koristiće se šifra fakturisanja **A**, a prihod će se automatski knjižiti na konto **500-001**.
 
-Artikal XYZ ima prihod od prodaje  ‘A – Prihodi od gotovih proizvoda' u evidenciji, koji je povezan s računom 500-001 Prihodi od gotovih proizvoda.
+Međutim, ako se prodaja vrši:
 
-Ako je moj kupac s kodom 001 talijanski, postavka je zadovoljavajuća, redak prodaje članka *XYZ* s prihodom od prodaje ‘A', a zatim knjiženje prihoda na odgovarajući račun.
+- kupcu **002** koji pripada istoj grupi preduzeća (*intercompany*), ili
+- kupcu **003** koji je strani kupac,
 
-Ali ako je prodaja klijentu s kodom 002 Intercompany ili klijentu s kodom 003 inozemni, kako bi se izbjeglo da korisnik svaki put mora pamtiti promjenu prihoda od prodaje (u B ili C) na svim redovima dokumenta (faktura) kako bi knjižili dokument na odgovarajući račun, moguće je definirati ispravnu valorizaciju za dotičnu evidenciju, koja će prevladati nad općom postavkom.
+da korisnik ne bi morao ručno da menja šifru fakturisanja na svakoj stavci dokumenta radi knjiženja prihoda na odgovarajući konto, moguće je unapred definisati odgovarajuće podešavanje direktno na matičnoj kartici kupca.
 
- ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image03.png)
+Na taj način sistem automatski koristi odgovarajuću šifru fakturisanja i pripadajući konto prihoda, bez potrebe za ručnim intervencijama korisnika.
 
-Ispunjavanje polja vrši se putem kombiniranog okvira povezanog s tablicom [Vrsta stavke knjiženja:](/docs/configurations/tables/finance/articles-accounting-types) u ovoj tablici stvorit ćemo, na primjer, vrstu knjiženja s kodom 1 ‘Intercompany' i vrstu knjiženja s kodom 2 ‘Inozemstvo', te ćemo postaviti zastavu‘Kupac' na oba tako da ova dva zapisa budu vidljiva u evidenciji kupaca. Dakle, u evidenciji klijenta s kodom 002 postavit ćemo vrstu knjiženja s kodom 1 'Intercompany' a kod klijenta s kodom 003, postavit ćemo vrstu knjiženja s kodom 2 ‘Inozemstvo'.
+![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image03.png)
 
-Nakon toga će biti potrebno unijeti u tablicu [Promet prodaje,](/docs/configurations/tables/sales/sales-turnover) u odgovarajućem retku 'A - Prihodi od gotovih proizvoda' (u donjoj grid)
+Polje se popunjava putem padajućeg menija povezanog sa šifarnikom **Vrsta knjiženja artikla**. Na primer, mogu se definisati vrste knjiženja **Intercompany** i **Inostranstvo**, uz aktiviranu oznaku **Kupac**, kako bi bile dostupne na karticama kupaca.
 
-- redak vrste knjiženja ‘Intercompany' i račun 400-001 Prihodi intercompany od gotovih proizvoda;
+Kupcu **002** dodeljuje se vrsta knjiženja *Intercompany*, a kupcu **003** vrsta knjiženja *Inostranstvo*.
 
-- redak vrste knjiženja ‘Inozemstvo' i račun 400-002 Prihodi iz inozemstva od gotovih proizvoda.
+U tabeli **Fakturisanje prodaje**, za stavku **A – Prihodi od prodaje gotovih proizvoda**, potrebno je definisati:
+- **Intercompany** → konto **500-002 Prihodi od prodaje gotovih proizvoda unutar grupe**
+- **Inostranstvo** → konto **500-003 Prihodi od prodaje gotovih proizvoda u inostranstvu**
+
+Na taj način Fluentis automatski koristi odgovarajući konto prihoda prema vrsti kupca, bez ručnih izmena na dokumentima.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance/image04.png)
 
-Na ovaj način, korisnik će naknadno morati postaviti samo evidenciju, a postavke će automatski valorizirati odgovarajući podračun; knjiženje će provjeriti za svaki unos prihoda od prodaje u fakturi postoji li pojedinosti s određenim računom za vrstu koja je unesena kod klijenta.
+Na taj način korisnik treba samo ispravno da podesi karticu kupca, a sistem će automatski koristiti odgovarajući konto prema odabranoj vrsti knjiženja. Prilikom knjiženja proverava se da li za odabranu šifru fakturisanja postoji posebno konto povezano sa vrstom knjiženja definisanom na kupcu.
 
-Isto tako, postavke djeluju na strani dobavljača, postavljanjem flag *Dobavljači* u tablici [Vrsta stavke knjiženja](/docs/configurations/tables/finance/articles-accounting-types) i ažuriranjem tablice **Promet nabave**.
+Ista logika primenjuje se i na dobavljače: potrebno je uključiti oznaku **Dobavljač** u šifarniku **Vrsta knjiženja artikla** i definisati odgovarajuća konta u tabeli **Promet nabavke**.
 
+**Detaljni konto za knjiženje nefakturisanih računa**: u ovom polju definiše se bilančni podkonto (koji ima prioritet nad podrazumevanim podešavanjima iz računovodstvenih parametara) koji se koristi u postupku **Knjiženje obračunatih računa**, kao i u postupcima obračuna vremenskih razgraničenja i simulacijama međuobračunskih finansijskih izveštaja kada je potrebno evidentirati troškove ili prihode perioda. Polje je dostupno u zavisnosti od vrste konta:
 
-**Detaljni konto za račune koji se očekuju**: u ovom polju navedite podračun u imovini (prioritetan u odnosu na zadano unesen u računskim parametrima) koji će se koristiti u postupku područja kupovine **Kontabilizacija računa koji se trebaju platiti** (trenutno onemogućena funkcionalnost).
+- **Dobavljač** → primljeni računi za obračun
+- **Kupac** → izdati računi za obračun
 
+**Podkonto knjižnog odobrenja za obračun**: u ovom polju definiše se bilančni podkonto (koji ima prioritet nad podrazumevanim podešavanjima iz računovodstvenih parametara) koji se koristi za obračun primljenih ili izdatih knjižnih odobrenja, kao i u postupcima vremenskih razgraničenja i simulacijama finansijskih izveštaja. Polje je dostupno u zavisnosti od vrste konta:
 
-**Detaljni konto za fakturiranje**:  polje, ekskluzivno upravljano za klijentske evidencije, omogućuje definiranje podračuna koji će se koristiti za fakturiranje tijekom stvaranja računa iz dostavnih listova (DDT);
+- **Dobavljač** → primljena knjižna odobrenja za obračun
+- **Kupac** → izdata knjižna odobrenja za obračun
 
-*Primjer*: razmislimo o veleprodaji. 
+**Podkonto za fakturisanje**: polje dostupno isključivo na karticama kupaca koje omogućava definisanje podkonta na koji će račun biti naslovljen prilikom kreiranja računa iz otpremnice.
 
-Klijent X, poslovnica sa sjedištem u Sacileu, koji je u svojoj evidenciji ispunio podračun za fakturiranje = klijent Y (matična tvrtka) sa sjedištem u Milanu. 
+Primer: u maloprodajnim lancima pojedina poslovnica može biti evidentirana kao kupac za isporuku robe, dok se račun izdaje na centralu društva.
 
-Naša tvrtka dostavlja s DDT-om u trgovinu X u Sacileu, a zatim, kada izda račun, taj se račun upućuje matičnoj tvrtki klijenta Y u Milanu.
+Na primer, poslovnica **X** u Sisku može imati u polju *Podkonto za fakturisanje* definisanu centralu **Y** u Zagrebu. Roba se isporučuje poslovnici X putem otpremnice, dok se račun automatski izdaje na kupca Y.
 
-Metoda alternativna (preporučena) sastoji se uvijek upravljanju šifarnikom klijenta Y, matična tvrtka u Milanu, i u njezinom šifarnikom kodiranje ** [odredišta robe](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) ** = klijent X, trgovina u Sacileu. Na taj način dostavni listovi (DDT) i računi su upućeni istom subjektu s većom jasnoćom.
+Alternativni i preporučeni pristup jeste vođenje samo kartice centrale (kupac Y), dok se poslovnica X definiše kao [**adresa isporuke**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery). Na taj način i otpremnica i račun glase na istog kupca, što pojednostavljuje administraciju i obezbeđuje veću preglednost podataka.
 
-**Detaljni konto-glavna grupa**: u analizi kreditnog rizika klijenata, omogućava spajanje klijenata koji pripadaju istoj poslovnoj grupi; 
+**Detaljni konto – glavna grupa**: u analizi kreditnog rizika kupaca omogućava povezivanje kupaca koji pripadaju istoj poslovnoj grupi;
 
-**Podračun plaćanja (Plć. Dobav.)**: ovaj podračun se povezuje s knjigovodstvenim stavkama kako bi se mogla provjeriti usmjeravanje plaćanja/inkasa u ispisima kalendara dospijeća i simulacijama novčanog tijeka;  
+**Detaljni konto za plaćanje dobavljaču**: ovaj podkonto povezuje se sa kreiranim knjigovodstvenim stavkama kako bi se u izveštajima o dospećima i simulacijama novčanog toka moglo pratiti usmeravanje plaćanja i naplata.
 
-**Prijeboj konta troška**: ovo je podračun koji se preporučuje kao zadano u zapisima industrijskog računovodstva (POLJE ZASTARJELO, PRISUTNO ZBOG RETROKOMPATIBILNOSTI);
+**Detaljni konto podrazumevanog troška**: ovaj podkonto predstavlja podrazumevani konto glavne knjige koji se predlaže u PDV knjiženjima. Prilikom knjiženja dokumenata iz modula nabavke ili prodaje, ovaj podkonto koristi se kao podrazumevana vrednost u slučaju da na stavkama artikala nije definisan konto prometa nabavke odnosno prodaje.
 
-**Trošak/Prihod od unaprijed određenih suprotnih strana**: ovo je podračun opće knjige koji se zadano predlaže u knjiženjima knjigovodstva PDV-a; u slučaju knjiženja dokumenata iz kupnje/prodaje, ovaj podračun je zadana vrijednost koja se koristi ako nije unesen iznos kupnje/prodaje u redove artikala;
+### Prioritet popunjavanja polja konto, podkonto i opis u sekciji PDV stavke računovodstvenog knjiženja
 
+Prilikom popunjavanja polja **konto**, **podkonto** i **opis** u sekciji **PDV stavke** računovodstvenog knjiženja, sistem koristi sledeći redosled prioriteta:
 
-*Prioritet valorizacije* polja račun, podračun, opis u odjeljku **Podaci PDV-a** dokumenta u **Računovodstvenom Zapisu**:  
-1. Vrednovanje [Prometa od Prodaje](/docs/configurations/tables/sales/sales-turnover)/ **Prometa od Nabave** prisutnog na fakturi koji se obračunava i šifre računa, podračuna i opisa povezanog sa svakom vrstom u tablicama Promet od nabave / Promet od prodaje.    
-2. Šifarnik o Kupcu/Dobavljaču 
+1. Podešavanja definisana u šifarnicima [Prometa prodaje](/docs/configurations/tables/sales/sales-turnover) i Prometa nabavke, povezana sa šifrom fakturisanja korišćenom na dokumentu koji se knjiži.
+2. Podaci definisani na kartici **kupca** ili **dobavljača**.
 
-**Alternativni trošak/Prihod od suprotnih strana**: ovaj grid omogućava prethodnu definiciju popisa podračuna i pripadajućih stopa PDV-a koje će se predložiti u knjiženjima PDV-a na ime subjekta; kako biste koristili ovu opciju, potrebno je postaviti zadano ‘Pozicija PDV‘ i ne unijeti nikakav predefinirani trošak/prhod od suprotnih strana;
+Na taj način sistem prvo koristi specifična podešavanja vezana za vrstu fakturisanja, a tek ukoliko ona nisu definisana, primenjuje podatke iz matične kartice poslovnog partnera.
 
-**Bez popratnog računa**: flag koji sprječava stvaranje pratnih računa za prodaju određenog subjekta.
+**Konto avansa**: omogućava povezivanje posebnog podkonta avansa sa karticom kupca. Na primer, moguće je koristiti podkonto povezan sa vrstom konta **kupci**.
 
-**Sumirano fakturiranje**: omogućuje mogućnost grupiranja više transportnih dokumenata u jednom računu za kupnju/prodaju, prema logici grupiranja same procedure;
+Podkonto definisan u ovom polju koristi se za knjiženje redova tipa **6 – Račun za avans** i **7 – Storno avansa** na izlaznim računima.
 
-**Ne grupiraj po odredištu**: označava da se za subjekt u upotrebi nikada ne želi grupirati DDT po odredištu tijekom izrade računa za prodaju;
+Kod izdavanja računa za avans dokument je i dalje naslovljen na stvarnog kupca. Red tipa **Račun za avans** evidentira obavezu za primljeni avans, a tokom knjiženja iznos se automatski prenosi sa opšteg konta avansa na podkonto avansa definisan za tog kupca.
 
-**Grupiraj po narudžbama prodaje**: za subjekt, DDT-ovi transporta trebaju biti grupirani po narudžbi prodaje kako bi se stvorili računi za prodaju;
+Prilikom izdavanja konačnog računa, red tipa **Storno avansa** zatvara prethodno evidentirani avans. Knjiženjem završnog računa zatvara se saldo na kontu avansa kupca, a istovremeno se poništavaju prenosi nastali knjiženjem računa za avans.
 
-**Izrada fakture iz Otpr/Prim za Nar. Kl.**: za subjekt, DDT-ovi transporta trebaju biti grupirani po  **narudžbi kupaca** kako bi se stvorili računi za prodaju;
+Na taj način saldo svakog podkonta avansa kupca prikazuje iznos još neiskorišćenih avansa za pojedinog kupca.
 
-**Upravljanje EDI**: omogućava upravljanje EDI datotekama (trenutno onemogućena funkcionalnost);
+:::warning[Pažnja]
+Kod ove funkcionalnosti nastaju razlike između računovodstvenih knjiženja i otvorenih stavki, stoga korišćene računovodstvene šifre ne smeju zahtevati obavezno usklađivanje (ravnotežu) otvorenih stavki.
+:::
 
-**Intrastat/Kod. Usluge**: flag koja omogućava upravljanje intrastatnom prijavom za dokumente/zapise koji su na teret trenutnog subjekta; u slučaju subjekta s flagom ‘Intrastat', moguće je navesti zadani kod usluge za odjeljke quater i quinquies u intrastat prijavi;
+**Alternativni trošak/prihod protivstavke**: ova tabela omogućava prethodnu definiciju liste konta i pripadajućih stopa PDV-a koje će biti predložene u PDV knjiženjima za dati subjekt. Da bi se koristila ova opcija, potrebno je postaviti podrazumevanu **PDV poziciju** i ne unositi nikakav podrazumevani trošak/prihod protivstavke.
 
-**Postotak troškova Intrastat/Znak**: označava prosječan postotak troškova koji se treba dodati/oduzeti od vrijednosti robe za izračun statističke vrijednosti u intrastat prijavi; / znak koji određuje trebaju li troškovi biti zbrojeni ili oduzeti kako bi se dobila statistička vrijednost robe u intrastat prijavi;
+**Bez pratećeg računa**: opcija koja sprečava kreiranje pratećih računa za prodaju određenom subjektu.
 
-**Administrativna kategorija**: statistički podatak o administrativnoj kategoriji povezanoj sa subjektom;
+**Zbirno fakturisanje**: omogućava grupisanje više transportnih dokumenata u jedan ulazni/izlazni račun, prema logici grupisanja same procedure.
 
-**Komercijalna kategorija**: statistički podatak, ali i konfiguracija popusta prema kriterijima udruživanja definiranim u cjenovnicima prodajnog područja;
+**Ne grupiši po odredištu**: označava da se za dati subjekt dokumenti nikada ne grupišu po odredištu prilikom kreiranja izlaznih računa.
 
-**Kategorija fakturiranja**: kriterij za filtriranje u postupku stvaranja računa prodaje iz DDT-a;
+**Grupiši po narudžbinama/otpremnicama**: za dati subjekt transportni dokumenti treba da budu grupisani po narudžbinama radi kreiranja izlaznih računa.
 
-**Odgovorna osoba**: za analize rizika klijenata, interna osoba odgovorna za poslovanje subjekta.
+**Kreiranje fakture iz Otpremnice/Prijema**: za dati subjekt transportni dokumenti treba da budu grupisani po **narudžbini kupca** radi kreiranja izlaznih računa.
 
-*Poseban gumb*:
-> **Izračun popusta**: za dodjelu konfiguracije popusta (definirane u modulu *Prodaja > Cjenici prodaje*) šifarnika klijenta koji se koristi. Gumb je **aktivan** **samo** unutar šifarnika klijenta.
+**EDI upravljanje**: omogućava upravljanje EDI datotekama (trenutno onemogućena funkcionalnost).
+
+**Intrastat/Šifra usluge**: opcija koja omogućava upravljanje Intrastat prijavom za dokumente/knjiženja vezana za trenutni subjekt. Ukoliko je za subjekt aktivirana opcija **Intrastat**, moguće je definisati podrazumevanu šifru usluge za odeljke *quater* i *quinquies* Intrastat prijave.
+
+**Procenat troškova Intrastat/Znak**: označava prosečan procenat troškova koji treba dodati ili oduzeti od vrednosti robe radi obračuna statističke vrednosti u Intrastat prijavi; znak određuje da li se troškovi sabiraju ili oduzimaju kako bi se dobila statistička vrednost robe.
+
+**Administrativna kategorija**: statistički podatak o administrativnoj kategoriji povezanoj sa subjektom.
+
+**Komercijalna kategorija**: statistički podatak, ali i konfiguracija popusta prema kriterijumima grupisanja definisanim u prodajnim cenovnicima.
+
+**Kategorija fakturisanja**: kriterijum za filtriranje u postupku kreiranja izlaznih računa iz otpremnica.
+
+**Odgovorno lice**: za potrebe analiza kreditnog rizika kupaca, predstavlja internu osobu odgovornu za poslovanje sa datim subjektom.
+
+*Posebno dugme*:
+> **Obračun popusta**: koristi se za dodelu konfiguracije popusta (definisane u modulu *Prodaja > Cenovnici prodaje*) kartici kupca koja je trenutno u upotrebi. Dugme je aktivno samo u kartici kupca.

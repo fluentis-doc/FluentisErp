@@ -3,20 +3,20 @@ title: Detaljno
 sidebar_position: 2
 ---
 
-U prvoj Kartici mogu se navesti određeni opći podaci koje primjenjuju banke: ‘provizije po transakciji' (koristi se kod knjiženja efekata), za ‘maksimalno prekoračenje' (ne koristi se automatski), ‘razne naknade' (ne koristi se automatski), ‘Za nepodmireno' (ne koristi se automatski).
+Na prvoj kartici mogu se uneti određeni opšti podaci koje primenjuju banke: **„provizija po transakciji“** (koristi se prilikom knjiženja instrumenata naplate), **„maksimalno prekoračenje“** (ne koristi se automatski), **„razne naknade“** (ne koristi se automatski), **„Za nenaplaćeno“** (ne koristi se automatski).
 
-U mrežama **Aktivna/Pasivna** nalaze se rasponi aktivnih/pasivnih kamatnih stopa koje treba primijeniti.
+U tabelama **Aktivne/Pasivne** nalaze se rasponi aktivnih i pasivnih kamatnih stopa koje se primenjuju.
 
-**Datum**: datum stupanja na snagu raspona;
+**Datum**: datum početka važenja raspona;
 
-**Raspon**: vrijednost do koje vrijedi kamatna stopa;
+**Raspon**: vrednost do koje važi kamatna stopa;
 
-**Stopa**: postotna vrijednost;
+**Stopa**: procentualna vrednost;
 
-**Šifra stope**: padajući izbornik omogućuje odabir vrsta koje su unesene u povezanu tablicu *Tip kamatne stope* (*Konfiguracija > Tablice > Opće postavke > Vrsta kamatne stope*). Tablica omogućuje kodiranje vrsta bankovne kamatne stope i definiranje jesu li važeće za aktivne ili pasivne kamate.
+**Šifra stope**: padajući meni omogućava izbor tipova unetih u povezanu tabelu *Tip kamatne stope* (*Konfiguracija > Tabele > Opšta podešavanja > Tip kamatne stope*). Tabela omogućava definisanje vrsta bankarskih kamatnih stopa i određivanje da li se odnose na aktivne ili pasivne kamate.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/bank-registry/detail/image04.png)
 
-*Posebni gumbi*:
-> **Izbriši aktivne**: za brisanje odabranih aktivnih kamatnih stopa.   
-> **Izbriši pasivne**: za brisanje odabranih pasivnih kamatnih stopa.
+*Posebna dugmad*:
+> **Obriši aktivne**: za brisanje izabranih aktivnih kamatnih stopa.  
+> **Obriši pasivne**: za brisanje izabranih pasivnih kamatnih stopa.

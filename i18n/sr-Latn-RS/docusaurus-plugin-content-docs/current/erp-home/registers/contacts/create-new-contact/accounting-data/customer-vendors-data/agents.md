@@ -3,8 +3,10 @@ title: Agenti
 sidebar_position: 8
 ---
 
-U ovom obrascu unosite agente koji komercijalno upravljaju predmetom u uporabi čiji su podaci prethodno uneseni kako bi bili dostupni kao odabir u ovoj kartici.
+U ovom obrascu unose se agenti koji komercijalno upravljaju predmetnim klijentom, pri čemu njihovi podaci moraju prethodno biti uneseni kako bi bili dostupni za izbor na ovoj kartici.
 
-Može postojati nekoliko agenata, primjerice u slučaju kada imamo agenta i područnog upravitelja koji dobivaju proviziju za isti proizvod, ili u slučaju različitih vrsta prodanog proizvoda - za svaku vrstu može postojati drugi odgovorni agent. 
+Može postojati više agenata, na primer u slučaju kada i agent i regionalni menadžer ostvaruju proviziju za isti proizvod, ili kada za različite vrste prodatih proizvoda postoje različiti odgovorni agenti.
 
-U polju postotka moguće je naznačiti postotak provizije za agenta (pogledajte poglavlje šifarnik agenata za više detalja o mogućim varijantama izračuna provizije). Također su dostupni datum početka i datum završetka valjanosti kako bi se kontrolirala valjanost odnosa između agenta i klijenta, neovisno o valjanosti podataka o agentu, primjerice, agent je uvijek valjan i aktivan, ali je prekinuo odnos s određenim klijentom.
+U polju **Procenat** moguće je definisati procenat provizije za agenta (pogledajte poglavlje o šifarniku agenata za više detalja o mogućim načinima obračuna provizije).
+
+Takođe su dostupni **Datum početka važenja** i **Datum završetka važenja**, koji služe za kontrolu važenja odnosa između agenta i klijenta, nezavisno od važenja samih podataka o agentu. Na primer, agent može i dalje biti aktivan i važeći u sistemu, ali više ne sarađuje sa određenim klijentom.

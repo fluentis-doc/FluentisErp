@@ -1,15 +1,16 @@
 ---
-title: Plaćanja 
+title: Plaćanja
 sidebar_position: 5
 ---
 
-Ovaj prozor odgovara prozoru Plaćanja putem šifarnika korisnika / dobavljača.
+Ovaj prozor odgovara prozoru **Plaćanja** u šifarniku kupaca/dobavljača.
 
-Međutim, ovdje se postavlja samo jedna vrsta plaćanja i jedno plaćanje (Početna stranica > Tablice > Opće) sa standardnim bankarnim referencama.
+Međutim, ovde se definišu samo jedan način plaćanja i jedno plaćanje (*Početna stranica > Tabele > Opšte*) sa podrazumevanim bankarskim podacima.
 
-**Podračun plaćanja**: ovaj podračun je povezan s knjiženjem stvorenim kako bi se pratilo usmjeravanje plaćanja/učinci u izvještajima o dospjeću i simulacijama novčanog tijeka.
+**Konto plaćanja**: ovaj podkonto povezan je sa knjiženjem koje se kreira radi praćenja usmeravanja plaćanja/efekata u izveštajima o dospećima i simulacijama novčanog toka.
 
-U donjoj mreži nalazi se popis alternativnih bankarskih podrški za agenta.
+U donjoj tabeli nalazi se lista alternativnih bankarskih računa agenta.
 
-*Poseban gumb*:  
-> **Izbriši banku**: za brisanje odabrane rezervne banke.
+*Posebno dugme*:
+
+> **Obriši banku**: služi za brisanje izabrane rezervne banke.

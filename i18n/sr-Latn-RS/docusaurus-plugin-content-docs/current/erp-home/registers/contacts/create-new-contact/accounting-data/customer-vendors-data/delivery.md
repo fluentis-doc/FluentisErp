@@ -1,38 +1,38 @@
 ---
-title: Dostava 
+title: Dostava
 ---
 
-Ovaj obrazac omogućuje definiranje popisa odredišta robe i standardnih karakteristika odgovarajućih trgovačkih klauzula.
+Ovaj obrazac omogućava definisanje liste odredišta robe i podrazumevanih karakteristika odgovarajućih trgovačkih klauzula.
 
-**Popis primatelja**: moguće je naznačiti različite primatelje, uključujući zadanog primatelja koji se predlaže u dokumentima. Ukoliko je sjedište koje je navedeno u 'Zajedničkim podacima' šifarnika ujedno i adresa otpreme, u polju primatelja/odredišta nije potrebno ništa naznačiti.
+**Lista primalaca**: moguće je navesti različite primaoce, uključujući podrazumevanog primaoca koji će se automatski predlagati u dokumentima. Ukoliko je sedište navedeno u odeljku „Zajednički podaci“ šifarnika istovremeno i adresa isporuke, nije potrebno unositi podatke u polje primalac/odredište.
 
-Primatelje je moguće povezati sa **Područje** i **Područje isporuke**.
+Primaoce je moguće povezati sa **Područjem** i **Zonom isporuke**.
 
-**Popis odredišta**:  unosi se Br mogućih odredišta za primatelja, odredišta mogu imati zadanu *vrijednost*, zadano *prijevozno sredstvo*, *vrstu utovarne jedinice* i *područje dostave*. Moguće je provesti prodaju određenom subjektu, isporučiti određenom skladištu i drugom primatelju. 
+**Lista odredišta**: ovde se unose moguća odredišta za primaoca. Odredišta mogu imati podrazumevanu *vrednost*, podrazumevano *prevozno sredstvo*, *vrstu transportne jedinice* i *zonu isporuke*. Moguće je prodati robu jednom subjektu, a isporučiti je u određeno skladište i drugom primaocu.
 
-U donjem odjeljku mogu se navesti **Vrsta pošiljke** (cestom/morem/tir itd.) i dodatne informacije, vrsta *ambalaže* i druge *napomene*, te uvjete isporuke u polju *luka* i *napomene* (sve napomene će biti prikazane u otpremnici) sa popisom autoriziranih *prijevoznika* za određeni predmet;
+U donjem delu mogu se definisati **Vrsta pošiljke** (drumski, pomorski, TIR itd.) i dodatne informacije, vrsta *ambalaže* i druge *napomene*, kao i uslovi isporuke kroz polja *luka* i *napomene* (sve napomene će biti prikazane na otpremnici), zajedno sa listom ovlašćenih *prevoznika* za predmetnog partnera.
 
-U polju **Područje isporuke** postoje zadani elementi koji su važeći za kupca kao što su:
+U polju **Zona isporuke** nalaze se podrazumevani elementi koji važe za kupca:
 
-- **Generalno područje isporuke**: područje isporuke i adresa;
+- **Zona isporuke**: područje i adresa isporuke;
 
-- **Izuzimanje dana/Dan isporuke**: u ovom slučaju radi se o zadanom danu isporuke za to područje; ukoliko je označen flag za Izuzimanje dana onda će se odnositi na dan na koji se isporuke ne smiju vršiti u tom području;
+- **Dan isključenja (izuzimanja) / Dan isporuke**: predstavlja podrazumevani dan isporuke za tu zonu; ukoliko je aktivirana oznaka za izuzimanje dana, odnosiće se na dan kada isporuke nisu dozvoljene u toj zoni;
 
-- **Izuzimanje sata/Vrijeme isporuke**: ovo polje označava vremenski okvir unutar kojeg se isporuka mora izvršiti; ako je uključen flag izuzimanja, naznačeni vremenski okvir će se odnositi na razdoblje u kojem isporuke neće biti prihvaćene.
+- **Sat izuzimanja / Vreme isporuke**: označava vremenski interval u kojem se isporuka mora izvršiti; ako je aktivirana oznaka za izuzimanje, navedeni interval predstavlja period u kojem isporuke neće biti prihvaćene;
 
-- **Broj zaduženih osoba** za isporuku;
+- **Broj zaposlenih** potrebnih za isporuku;
 
-- **Prijevozno sredstvo** odnosi se na isporuku;
+- **Motorno vozilo** koje se koristi za isporuku;
 
-- **Vrsta utovarne jedinice** (pallet, europallet itd.);
+- **Vrsta transportne jedinice (tip palete)** (paleta, europaleta i sl.).
 
-Također možete odrediti ako transportom obično upravlja **Pošiljatelj**, **Primatelj** ili **Prijevoznik**.
+Takođe je moguće definisati da li transportom uobičajeno upravlja **Pošiljalac**, **Primalac** ili **Prevoznik**.
 
-U bližnjem polju bit će moguće naznačiti autoriziranu **Lista prijevoznika** za određeni predmet, označavajući jednog zadanog prijevoznika.
+U susednom polju moguće je navesti **Listu ovlašćenih prevoznika** za konkretnog partnera, uz mogućnost označavanja jednog podrazumevanog prevoznika.
 
-*Posebni gumbi*:
-> **Spremi**: za spremanje šifarnika koji je u upotrebi. 
-> **Novi primatelj/Novo odredište**: per gestire la creazione di una nuova anagrafica non contabile da associare automaticamente all'anagrafica in uso come destinatario, come destinazione o entrambe (se è selezionata un destinatario, sarà proposta la creazione di una destinazione; negli altri casi, sarà proposta la creazione di un nuovo destinatario). La maschera che si apre consente, oltre che a definire come associare l'anagrafica che si sta creando a quella attiva, di definire tutte le caratteristiche di un nuovo contatto. È possibile salvare la creazione e continuare l'inserimento di nuovi destinatari/destinazioni, oppure premere sul salvataggio con chiusura della maschera per ritornare all'anagrafica in uso.  
-> **Izbriši primatelja**: brisanje označenog primatelja.  
-> **Izbriši odredište**: brisanje označenog odredišta.  
-> **Izbriši prijevoznika**: brisanje označenog prijevoznika.  
+*Posebna dugmad*:
+> **Sačuvaj**: za čuvanje trenutno otvorenog šifarnika.  
+> **Novi primalac / Novo odredište**: Ova funkcionalnost omogućava kreiranje novih neknjigovodstvenih matičnih podataka koji će automatski biti povezani sa trenutno otvorenim šifarnikom kao primalac, odredište ili oboje. Ako je primalac već izabran, sistem će predložiti kreiranje novog odredišta. U ostalim slučajevima predložiće kreiranje novog primaoca. Otvoreni obrazac omogućava ne samo definisanje načina povezivanja novih matičnih podataka sa aktivnim zapisom, već i unos svih karakteristika novog kontakta. Nakon unosa moguće je sačuvati zapis i nastaviti sa unosom novih primalaca/odredišta ili sačuvati zapis i zatvoriti obrazac, čime se korisnik vraća na trenutno otvoreni šifarnik.  
+> **Obriši primaoca**: brisanje označenog primaoca.  
+> **Obriši odredište**: brisanje označenog odredišta.  
+> **Obriši prevoznika**: brisanje označenog prevoznika.

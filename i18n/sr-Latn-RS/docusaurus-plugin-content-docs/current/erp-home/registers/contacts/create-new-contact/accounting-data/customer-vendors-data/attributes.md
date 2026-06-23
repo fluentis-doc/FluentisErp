@@ -3,4 +3,4 @@ title: Karakteristike
 sidebar_position: 10
 ---
 
-U ovoj sekciji povezuju se s klijentom/dobavljačem slobodni atributi definirani u istoimenoj tablici koja se nalazi u *Konfiguracija > Tablice > Logistika*.
+U ovoj sekciji sa klijentom/dobavljačem povezuju se slobodni atributi definisani u istoimenoj tabeli koja se nalazi u *Konfiguracija > Tabele > Opšta podešavanja*.

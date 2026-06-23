@@ -3,140 +3,147 @@ title: Plaćanja
 sidebar_position: 4
 ---
 
-U ovom polju se mogu specificirati zadani komercijalni uvjeti plaćanja.  
+U ovoj kartici se mogu definisati podrazumevani komercijalni uslovi plaćanja.  
 
-*Posebni gumbi*:
-> Izbriši banke: za brisanje odabrane rezervne banke. 
-> Izbriši način plaćanja: brisanje retka načina plaćanja.  
+*Posebna dugmad*:
+> Obriši banke: za brisanje izabrane rezervne banke. 
+> Obriši vrstu plaćanja: brisanje reda načina plaćanja.  
 
-Za sve što ovdje nije navedeno o uobičajenim funkcionalnostima navedenog polja možete pristupiti sljedećem linku: [Funkcionalnosti, gumbovi i zajednička polja](/docs/guide/common).
+Za sve što ovde nije navedeno o uobičajenim funkcionalnostima navedenog polja možete pristupiti sledećem linku: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
 
 ### Načini plaćanja
 
-Osnovna sekcija polja **Plaćanja** koja služi za postavljanje dospijeća plaćanja. Odabiru se **Način plaćanja** i **Uvjet plaćanja** (obe se nalaze u *Konfiguracija > Tablice > Opće postavke*).
+Osnovna sekcija polja **Plaćanja** koja služi za postavljanje rokova dospeća plaćanja. Biraju se **Način plaćanja** i **Uslov plaćanja** (oba se nalaze u *Konfiguracija > Tabele > Opšta podešavanja*).
 
-**Iznos**: omogućuje obračun dospijeća nametanjem navedenog iznosa, ostatak treba upravljati s redovima s popunjenim poljem Postotak. Ako je ukupni iznos dokumenta manji od vrijednosti polja Iznos (čak i uz prisutnost redova s popunjenim poljem Postotak), tijekom stvaranja dospijeća u dokumentu bit će poslanu poruku o pogrešci koja traži ispravak postavki jer nisu usklađene.
+**Iznos**: omogućava obračun dospeća nametanjem navedenog iznosa, dok se ostatkom upravlja redovima sa popunjenim poljem 'Procenat'. Ako je ukupan iznos dokumenta manji od vrednosti polja Iznos (čak i uz prisustvo redova sa popunjenim poljem Procenat), tokom kreiranja dospeća u dokumentu biće prikazana poruka o grešci koja zahteva ispravku postavki jer nisu usklađene.
 
-<u>Pažnja</u>: Ovo polje rijetko se primjenjuje u praksi, a također se koristi i popunjava unutar dokumenata, u izračunu dospijeća, automatskim postupcima na sljedeći način: kada se, na primjer, popunjavaju više DDT-ova u jednom računu, može doći do situacije u kojoj mogu postojati različiti uvjeti plaćanja u dostavnim listovima. Tada se u računu stvaraju redovi plaćanja koliko ima vrsta uvjeta, grupirajući iznose (zbroj DDT-a s tim uvjetom) i unoseći tu vrijednost u polje *Iznos*, stvara se još jedan, “ostatak” red gdje se, koristeći polje *Postotak*, upravlja s 100% vrijednosti “ostatak” (eventualno) s uvjetom plaćanja određenim u evidenciji. Ova vrijednost “ostatka” obično obuhvaća eventualne dodatne iznose koji su izravno pridruženi računu (a stoga nisu prisutni u dostavnim listovima) kao što su *troškovi naplate, troškovi prijevoza, troškovi žiga* itd. Ovo popunjavanje više redova (barem dva, jedan za rok DDT-a i jedan "ostatak") dogodit će se čak i ako je popunjen samo jedan DDT. Ovaj način upravljanja nametnut je parametrom valorizacije DDT-a, u odjeljku *Tretman plaćanja na računu* opcijom *Održi one na dostavnim listovima*. Odabirom *Vrati one iz evidencije* svi će se rokovi spojiti s jedinim uvjetom prisutnim u evidenciji. Napomena: u ispisu računa bit će navedeni svi rokovi izračunati kao što su prikazani na zaslonu. Ako želite, možete prilagoditi ispis tako da prikaže samo stvarno korišteni red (tj. da ne prikaže “dodatni” red ako ne poveže nijedan rok).
+<u>Pažnja</u>: Ovo polje se retko koristi u praksi, a takođe se koristi i popunjava unutar dokumenata, u obračunu dospeća, automatskim procedurama na sledeći način: kada se, na primer, popunjava više otpremnica u jednom računu, može doći do situacije u kojoj postoje različiti uslovi plaćanja na otpremnicama. Tada se na računu kreiraju redovi plaćanja koliko ima vrsta uslova, grupišući iznose (zbir otpremnica sa tim uslovom) i unoseći tu vrednost u polje *Iznos*, kreira se još jedan, „ostatak“ red gde se, koristeći polje *Procenat*, upravlja sa 100% vrednosti „ostatka“ (eventualno) uz uslov plaćanja definisan u evidenciji. Ova vrednost „ostatka“ obično obuhvata eventualne dodatne iznose koji su direktno povezani sa računom (a samim tim nisu prisutni na otpremnicama) kao što su *troškovi naplate, troškovi prevoza, troškovi taksene marke* itd. Ovo popunjavanje više redova (najmanje dva, jedan za rok DDT-a i jedan "ostatak") desiće se čak i ako je popunjen samo jedan DDT. Ovakav način upravljanja nametnut je parametrom valorizacije DDT-a, u odeljku *Tretman plaćanja na računu* opcijom *Zadrži one sa otpremnica*. Odabirom *Vrati one iz evidencije* svi rokovi će se spojiti sa jedinim uslovom prisutnim u evidenciji. Napomena: na štampi računa biće navedeni svi rokovi obračunati kao što su prikazani na ekranu. Ako želite, možete prilagoditi štampu tako da prikaže samo stvarno korišćeni red (tj. da ne prikaže „dodatni” red ako nije povezan ni sa jednim rokom).
 
-**Postotak**: Omogućuje definiranje udjela (u postotku) od ukupne vrijednosti plaćanja (ili naplate) koji će se upravljati uvjetom plaćanja (kao kombinacija vrste plaćanja i rješenja plaćanja) postavljenim u retku. 
+**Procenat**: Omogućava definisanje udela (u procentima) od ukupne vrednosti plaćanja (ili naplate) kojim će se upravljati uslovom plaćanja (kao kombinacijom vrste plaćanja i uslova plaćanja) postavljenim u redu. 
 
-U slučaju postotka manjeg od 100, stoga treba stvoriti toliko redova s postocima koji se zbrajaju do 100.
+U slučaju procenta manjeg od 100, potrebno je kreirati toliko redova sa procentima koji se sabiraju do 100.
 
-*Primjer*:<br />
-- 50% Gotovina prilikom izdavanja fakture i 50% Bankovni prijenos u roku od 30 dana.<br />
-- 50% Gotovina prilikom izdavanja fakture; 25% Bankovni prijenos u roku od 30 dana; 25% Bankovni prijenos u roku od 60 dana.<br />  
+*Primer*:<br />
+- 50% Gotovina prilikom izdavanja fakture i 50% Bankovni transfer u roku od 30 dana.<br />
+- 50% Gotovina prilikom izdavanja fakture; 25% Bankovni transfer u roku od 30 dana; 25% Bankovni transfer u roku od 60 dana.<br />  
+
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image03.png)  
+
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image04.png)
 
-<u>Pažnja</u>: Ako rješenje plaćanja uključuje više od jednog roka dospijeća, popunit će se na sljedeći način: primjerice, 50% gotovine odmah i 50% bankovnog prijenosa u roku od 30 do 60 dana.
+<u>Pažnja</u>: Ako uslov plaćanja uključuje više od jednog roka dospeća, popuniće se na sledeći način: na primer, 50% gotovine odmah i 50% bankovnog transfera u roku od 30 do 60 dana.
 
 **![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image05.png)**
 
-**Banka za podršku**: predstavlja referentnu banku za transakcije.  
-- Za šifarnik klijenta:
-> - ako je vrsta plaćanja uplata putem banke, treba navesti banku klijenta;
-> - ako je vrsta plaćanja bankovni prijenos, treba navesti banku tvrtke u upotrebi (kako bi se imali podaci o plaćanju za klijenta tijekom ispisa dokumenata); 
+**Banka**: predstavlja referentnu banku za transakcije.  
+- Za šifarnik kupca:
+> - ako je vrsta plaćanja uplata putem banke, treba navesti banku kupca;
+> - ako je vrsta plaćanja bankovni transfer, treba navesti banku kompanije koja se koristi (kako bi podaci o plaćanju bili dostupni kupcu prilikom štampe dokumenata); 
 
 - Za šifarnik dobavljača:
-> - ako je vrsta plaćanja bankovni prijenos, treba navesti banku dobavljača;
-> - ako je vrsta plaćanja uplata putem banke, treba navesti banku tvrtke.
+> - ako je vrsta plaćanja bankovni transfer, treba navesti banku dobavljača;
+> - ako je vrsta plaćanja uplata putem banke, treba navesti banku kompanije.
 
-Polje se popunjava pomoću padajućeg izbornika (**Banka**) povezanog s tablicom *Banka za podršku*. 
-Unutar ove tablice moguće je unijeti kako banke tvrtke tako i banke suprotnih strana (kupca ili dobavljača). Također je moguće unijeti redove sa kompletnim IBAN i/ili SWIFT kodom (preporučljivo za banke tvrtke) i redove samo s kompletnim ABI i CAB kodom (preporučljivo za banke suprotnih strana gdje IBAN i SWIFT mogu biti navedeni u poljima mreže prisutne u šifarniku).
+Polje se popunjava pomoću padajućeg menija (**Banka**) povezanog sa tabelom *Banka*. 
 
-Ako je redak u tablici Banka za podršku potpuno ispunjen IBAN-om i/ili SWIFT-om, kao i ABI-jem i CAB-om, pozivajući taj redak putem combobox-a podaci će biti prikazani u grid u anagrafici, inače će biti prikazani samo ABI i CAB, ali će uvijek biti moguće dodati nedostajuće podatke izravno u mrežu. To se preporučuje za banke suprotnih strana kako bi se izbjeglo kodiranje previše redaka u tablici Banka za podršku koji se koriste samo za jednog kupca ili dobavljača. Preporučljivo je navesti samo podatke o bankovnom odjelu (ABI i CAB) gdje različiti klijenti ili dobavljači mogu imati tekući račun.
+Unutar ove tabele moguće je uneti kako banke kompanije tako i banke poslovnih partnera (kupaca ili dobavljača). Takođe je moguće uneti redove sa kompletnim IBAN i/ili SWIFT kodom (preporučljivo za banke kompanije) i redove samo sa kompletnim ABI i CAB kodom (preporučljivo za banke poslovnih partnera gde IBAN i SWIFT mogu biti navedeni u poljima mreže prisutne u šifarniku).
 
-Pri unosu banke također možete koristiti dvostruki klik u poljima ABI/CAB kako biste otvorili pomoć za pretraživanje među nacionalnim bankovnim agencijama, iz kojih možete odabrati odgovarajuću i stvoriti kod u šifarnik koji se treba dopuniti podacima o tekućem računu, CIN-u, IBAN-u, SWIFT-u.
+Ako je red u tabeli Banka potpuno popunjen IBAN-om i/ili SWIFT-om, kao i ABI-jem i CAB-om, pozivanjem tog reda putem padajućeg menija podaci će biti prikazani u tabeli u šifarniku, u suprotnom će biti prikazani samo ABI i CAB, ali će uvek biti moguće dodati nedostajuće podatke direktno u tabelu. To se preporučuje za banke poslovnih partnera kako bi se izbeglo kreiranje prevelikog broja redova u tabeli Banka koji se koriste samo za jednog kupca ili dobavljača. Preporučljivo je navesti samo podatke o bankarskoj filijali (ABI i CAB) gde različiti kupci ili dobavljači mogu imati tekući račun.
 
-**Naziv Banke**: polje povezano s prethodnim poljem.
+Prilikom unosa banke takođe se može koristiti dvostruki klik u poljima ABI/CAB kako bi se otvorila pomoć za pretraživanje među nacionalnim bankarskim filijalama, iz kojih se može odabrati odgovarajuća i kreirati šifra u šifarniku koju je zatim potrebno dopuniti podacima o tekućem računu, CIN-u, IBAN-u i SWIFT-u.
 
-**Šifra banke**: kod koji se NE koristi u Italiji. Za strane lokalizacije može prihvatiti alternativni bankarski kod umjesto ABI CAB sustava.
+**Naziv banke**: polje povezano sa prethodnim poljem.
 
-### Banka za podršku
+**Šifra banke**: šifra koja se NE koristi u Italiji. Za strane lokalizacije može sadržati alternativni bankarski kod umesto ABI/CAB sistema.
 
-U grid možete unijeti banke za podršku. 
+### Banka
 
-Među njima, ona postavljena kao **Zadana** (s flagom istog imena) može se koristiti kao korisnička banka za plaćanja dobavljača u modulu *Plaćanja dobavljača*.
+U tabelu se mogu unositi banke za poslovanje. 
 
-U ovom slučaju, unesena banka u ovoj grid bit će postavljena u odobrenje uplatnice, zamjenjujući onu koja se nalazi u knjigovodstvenom zapisu (posljednje definirana, u knjigovodstvenom zapisu, ručno ili putem podataka unesenih u kartici Tipovi plaćanja u gornjoj grid) i povezana s otvorenim stavkom.
+Među njima, ona koja je označena kao **Podrazumevana** (opcijom istog naziva) može se koristiti kao banka korisnika za plaćanja dobavljačima u modulu *Plaćanja dobavljačima*.
 
-*Napomena*: Da biste aktivirali zamjenu gornje banke za podršku, potrebno je omogućiti opciju *Nametni banku za podršku* prisutna u *Šifarnik dobavljača > [Parametri Plaćanja Dobavljača](/docs/configurations/parameters/treasury/vendor-payments-parameters)*.
+U tom slučaju, banka unesena u ovoj tabeli biće postavljena na nalogu za plaćanje, zamenjujući onu koja se nalazi u knjigovodstvenom knjiženju (poslednja definisana, u knjiženju, ručno ili putem podataka unetih na kartici Tipovi plaćanja u gornjoj tabeli) i povezana sa otvorenom stavkom.
 
-Ako je flag aktiviran u obrascu *Parametri plaćanja dobavljača*, ali nisu unesene banke s aktiviranim flagom zadane u grid, zadržat će se banka navedena u knjiženju putem podataka unesenih u glavnim podacima u gornjoj grid *Tipovi plaćanja* (ili ručno promijenjena u knjiženju).
+*Napomena*: Da bi se aktivirala zamena navedene banke, potrebno je omogućiti opciju *Nametni pomoćnu banku* koja se nalazi u *Šifarnik dobavljača > [Parametri plaćanja dobavljačima](/docs/configurations/parameters/treasury/vendor-payments-parameters)*.
 
-Na taj način možete unijeti alternative banaka (uvijek za suprotnu stranu). Još jedan primjer može biti klijent koji plaća putem bankovnog transfera (i stoga se unosi u mrežu Tipovi Plaćanja banka naše tvrtke), ali želite unijeti njegovu banku za potporu u slučaju plaćanja kreditnih nota.
+Ako je opcija aktivirana u obrascu *Parametri plaćanja dobavljačima*, ali nisu unesene banke sa aktiviranom opcijom **Podrazumevano** u tabeli, zadržaće se banka navedena u knjiženju putem podataka unetih u matičnim podacima u gornjoj tabeli *Tipovi plaćanja* (ili ručno izmenjena u knjiženju).
 
-Unos banke može se izvršiti dvostrukim klikom u polja ABI/CAB kako bi se otvorila help pretraga među nacionalnim bankarskim agencijama, iz koje možete odabrati odgovarajuću i stvoriti kod u osnovnim podacima koji se zatim popunjava podacima o tekućem računu, CIN-u, IBAN-u, SWIFT-u.
+Na ovaj način mogu se uneti alternativne banke (uvek za poslovnog partnera). Još jedan primer može biti kupac koji plaća putem bankovnog transfera (i stoga je u tabeli Tipovi plaćanja navedena banka kompanije), ali se želi uneti i banka za slučaj plaćanja odobrenja.
 
-**Korisnik**: flag omogućuje čitanje polja Pravno ime korisnika.
+Unos banke može se izvršiti dvostrukim klikom u polja ABI/CAB kako bi se otvorila pretraga među nacionalnim bankarskim filijalama, iz koje se može odabrati odgovarajuća i kreirati šifra u matičnim podacima koja se zatim dopunjava podacima o tekućem računu, CIN-u, IBAN-u i SWIFT-u.
 
-**Naziv tvrtke korisnika**: unesite podatke o osnovnim podacima ako su plaćanja namijenjena trećoj strani (na primjer, financijskom društvu unutar grupe).
+**Korisnik**: opcija omogućava čitanje polja Pravni naziv korisnika.
 
-### Mjesec izuzet iz dospjelosti
+**Naziv kompanije korisnika**: podaci o matičnim podacima ako su plaćanja namenjena trećoj strani (na primer, finansijskoj kompaniji unutar grupe).
+
+### Mesec izuzet iz dospeća
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/payments/image07.png)
 
-U ovoj grid možete postaviti automatski mehanizam koji odgađa sva dospijeća koja se odnose na jedan ili više mjeseci (dodajući više redova) i odgađa ih do određenog dana.
+U ovoj tabeli može se postaviti automatski mehanizam koji odlaže sva dospeća koja se odnose na jedan ili više meseci (dodavanjem više redova) i pomera ih na određeni dan.
 
-**Mjesec izuzet**: Mjesec za koji želite odgoditi dospijeća 
+**Izuzeti mesec**: mesec za koji se žele odložiti dospeća 
 
-**Dan**: Dan na koji želite premjestiti odgođena dospijeća 
+**Dan**: dan na koji se žele pomeriti odložena dospeća 
 
-**Mjesec**: Mjesec u koji želite premjestiti odgođena dospijeća 
+**Mesec**: mesec u koji se žele pomeriti odložena dospeća 
 
-*Primjer*: popunjavanjem kao na slici, sva dospijeća u kolovozu bit će odgođena do 5. rujna.
+*Primer*: popunjavanjem kao na slici, sva dospeća u avgustu biće odložena do 5. septembra.
 
-Uz dodavanje retka za Prosinac - 7. Siječnja, dospijeća za prosinac bit će odgođena do 7. siječnja.
+Dodavanjem reda za Decembar - 7. januar, dospeća za decembar biće odložena do 7. januara.
 
-### Donji odjeljak 
+### Donji odeljak 
 
-Tipologija izračuna stavke omogućuje definiranje hoće li osnova za izračun stavke biti samo oporezivi iznos dokumenta (na primjer, za dobavljače izvan EU-a ili one koji se računovodstveno tretiraju prema obrnutom porezu, gdje se PDV koji se integrira u dokument ne obrađuje na razini rasporeda) ili oporezivi iznos + PDV (što je zadana logika čak i ako u ovom polju nije ništa navedeno).
+Tipologija obračuna stavke omogućava definisanje da li će osnova za obračun stavke biti samo oporezivi iznos dokumenta (na primer, za dobavljače van EU ili one koji se računovodstveno tretiraju prema reverse charge principu, gde se PDV koji se integriše u dokument ne obrađuje na nivou rasporeda) ili oporezivi iznos + PDV (što je podrazumevana logika čak i ako u ovom polju nije ništa navedeno).
 
-**Koristi otvorene stavke**: flag se automatski predlaže i obavezna je za automatsko upravljanje otvorenim stavkama. 
+**Koristi dospeća**: opcija se automatski predlaže i obavezna je za automatsko upravljanje otvorenim stavkama. 
 
-U konfiguracijskim parametrima knjiženja moguće je definirati kontrolu kako bi se osiguralo da postoji podudarnost između salda knjigovodstva i salda otvorenih stavki;
+U konfiguracionim parametrima knjiženja moguće je definisati kontrolu kako bi se osiguralo da postoji podudarnost između salda glavne knjige i salda otvorenih stavki;
 
-**Vrsta obračuna**: padajući izbornik koji omogućuje odabir između dvije alternativne metode: oporezivi iznos + PDV ili samo oporezivi iznos. Način samo oporezivog iznosa preporučuje se, na primjer, za dobavljače izvan EU-a ili one koji se računovodstveno tretiraju prema "reverse charge" ili za klijente koji su podložni porezu na dodanu vrijednost "split payment".
+**Vrsta obračuna**: padajući meni koji omogućava izbor između dve alternativne metode: oporezivi iznos + PDV ili samo oporezivi iznos. Način samo oporezivog iznosa preporučuje se, na primer, za dobavljače van EU ili one koji se računovodstveno tretiraju prema sistemu *reverse charge*, ili za kupce koji podležu PDV režimu *split payment*.
 
-**Grupiranje dospijeća plaćanja**: trenutačno nije podržano; omogućuje grupiranje stavki koje u istom knjiženju imaju isti datum dospijeća (na primjer, u slučaju isključenja mjeseca);
+**Grupisanje dospeća plaćanja**: trenutno nije podržano; omogućava grupisanje stavki koje u istom knjiženju imaju isti datum dospeća (na primer, u slučaju izuzetog meseca);
 
-**Grupiranje dospijeća u učinke**: omogućuje grupiranje više stavki/dospijeća u jedan učinak iz modula portfelja učinaka (bit će grupirane u slučaju istog datuma dospijeća i iste banke za podršku);
+**Grupisanje dospeća na računima**: omogućava grupisanje više otvorenih stavki, odnosno dospeća, u jedan instrument naplate. Stavke će biti grupisane ako imaju isti datum dospeća i istu banku za poravnanje.
 
-**Grupiranje dobropisa u učinke**: omogućuje poništavanje u stvaranju efekata, čak i za dobropise koji imaju vrstu plaćanja za upravljanje učincima. Ako flag nije aktiviran, otvorene stavke povezane s dobropisima neće se prikazati u obrascu pretrage stavki za postupak [stvaranja efekata iz stavki](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values).
+**Grupisanje odobrenja na računima**: omogućava poništavanje pri kreiranju instrumenata naplate, čak i za odobrenja koja imaju vrstu plaćanja za upravljanje takvim naplatama. Ako opcija nije aktivna, otvorene stavke povezane sa odobrenjima neće biti prikazane u obrascu za pretragu stavki u postupku [kreiranja naplate iz stavki](/docs/treasury/bills-holding/procedures/bills-acquisition-from-maturity-values).
 
-Gornji parametar mora biti povezan s flagom **Grupirajte dobropise prema datumu dospijeća** koja se nalazi u [Parametri popisa vrijednosnih papira](/docs/configurations/parameters/treasury/bills-portfolio-parameters) 
+Gore navedeni parametar mora biti povezan sa opcijom **Grupiši odobrenja prema datumu dospeća** koja se nalazi u [Parametri portfolija vrednosnih papira](/docs/configurations/parameters/treasury/bills-portfolio-parameters)
 
-Ako je aktiviran flag za grupiranje po datumu dospijeća, stavka (ili stavke) vezane uz dobropis s odgovarajućim načinom plaćanja za izdavanje efekata bit će grupirane (poništavajući aktivne stavke) samo ako imaju isti datum dospijeća kao i odabrane stavke za izdavanje efekta. Suprotno tome, ako je flag isključen, dobropis će biti grupiran poništavanjem dospijele stavke na prvi dostupni datum (pod uvjetom, naravno, da je zastava *Grupiraj note kredita u efektima* u osnovnim podacima aktivna).
+Ako je aktivirana opcija za grupisanje po datumu dospeća, stavka (ili stavke) povezane sa odobrenjem i odgovarajućim načinom plaćanja za izdavanje naplate biće grupisane (poništavajući aktivne stavke) samo ako imaju isti datum dospeća kao i odabrane stavke za izdavanje naplate. Suprotno tome, ako je opcija isključena, odobrenje će biti grupisano poništavanjem dospele stavke na prvi raspoloživi datum (pod uslovom da je oznaka *Grupiši odobrenja na računima* u matičnim podacima aktivna).
 
-**Kontrola izloženosti**: aktiviranjem ovog flaga ovaj subjekt će postati vidljiv u sažetim obrascima  [Izloženosti kupaca](/docs/treasury/customer-risk/procedures/customer-statement).
+**Kontrola izloženosti**: aktiviranjem ove opcije ovaj subjekt postaje vidljiv u zbirnim obrascima [Izloženost kupaca](/docs/treasury/customer-risk/procedures/customer-statement).
 
-**Dani kašnjenja**: su statistički podaci izračunati u modulu upravljanja **klijentskim rizikom** (postupak [**kontrola doznake**](/docs/treasury/customer-risk/procedures/remittances-check) ) i koriste se u projekcijama novčanih tokova;/cash flow predstavljaju **prosjek dana kašnjenja u plaćanjima od strane klijenata** ne samo na trenutnim dospjelim stavkama, već i na povijesnim. Izračun uključuje ponderirani prosjek iznosa stavke. Naime, izračun se temelji na obradi "kreditnih brojeva" (kao u izvatku iz banke). Unutar obrasca za **kontrolu doznake** (na traci s alatima na vrhu) nalazi se naredba **Ažuriraj dane kašnjenja** koja unosi rezultat izračuna u polje Dani kašnjenja u evidenciji klijenata.
+**Dani kašnjenja**: predstavljaju statistički podatak izračunat u modulu upravljanja **kreditnim rizikom kupaca** (postupak [**kontrola doznaka**](/docs/treasury/customer-risk/procedures/remittances-check)) i koriste se u projekcijama novčanih tokova; predstavljaju **prosek dana kašnjenja u plaćanju od strane kupaca**, ne samo za trenutne dospele stavke, već i za istorijske. Obračun uključuje ponderisani prosek iznosa stavke. Naime, izračun se zasniva na obradi „kreditnih brojeva“ (kao kod bankovnog izvoda). U obrascu za **kontrolu doznaka** (na alatnoj traci na vrhu) nalazi se komanda **Ažuriraj dane kašnjenja** koja upisuje rezultat obračuna u polje Dani kašnjenja u evidenciji kupaca.
 
-**Odobreni iznos kreditnog limita**: odnosi se na iznos odobrenog kreditnog limita koji je dodijeljen klijentu. Za ispravno upravljanje ovom funkcionalnošću, također je potrebno upravljati flag **Kredit** u tablicama koje se odnose na vrste dokumenata u ciklusu prodaje (Vrsta računa; Vrste otpremnica; Vrste Narudžbi kupaca) a koja uključuje ili isključuje tip dokumenta u pitanju iz kontrole prekoračenja odobrenog limita.
+**Odobreni kreditni limit**: odnosi se na iznos odobrenog kreditnog limita dodeljenog kupcu. Za pravilno upravljanje ovom funkcionalnošću potrebno je upravljati i opcijom **Kredit** u tabelama koje se odnose na vrste dokumenata u prodajnom ciklusu (Vrsta računa, Vrste otpremnica, Vrste narudžbina kupaca), kojom se uključuje ili isključuje određeni tip dokumenta iz kontrole prekoračenja kreditnog limita.
 
-**Vrsta kreditnog limita**: moguće je definirati da li je kupac podložan samo jednom ‘**praćenje kreditnog limita**' (tj. dobit će samo jedno obavijestno upozorenje o prekoračenju fida) ili **blokada dokumenta i praćenje dozvoljenog kreditnog limita** pri čemu će dokument koji prelazi dobni kredit biti blokiran i morat će biti odobren unutar modula Rizik kupca (procedura [Upravljanje zaključavanjem](/docs/treasury/customer-risk/procedures/lock-manager). U slučaju višesocijalne baze podataka, postoji mogućnost postavljanja **grupnog monitora** ili **blokiranje grupe**, procjenjujući tako ukupnu situaciju subjekta u odnosu na sve tvrtke upravljane u bazi podataka i zatim zbrajanjem iznosa dokumenata (preporučuje se postavljanje jednake i aktivne iznose fida za sve tvrtke).**Blokada / grupni nadzor kupca** provjerava za grupu tvrtki i stoga pregledava polje matičnog podračuna (čita dozvoljeni minus glavnog poduzeća). Uvijek zbraja vrijednosti svih tvrtki u grupi na fido matične tvrtke. Ignorira vrijednost odobrenog minusa zapisanu u podacima o podružnicama.
+**Vrsta kreditnog limita**: moguće je definisati da li kupac podleže samo **praćenju kreditnog limita** (odnosno dobija samo upozorenje o prekoračenju limita) ili **blokadi dokumenta i praćenju kreditnog limita**, pri čemu će dokument koji prekoračuje limit biti blokiran i moraće biti odobren u modulu Rizik kupca (procedura [Upravljanje blokadama](/docs/treasury/customer-risk/procedures/lock-manager)).
 
-U modulu kreditni Rizik postoji postupak za [upravljanje dozvolama](/docs/treasury/customer-risk/credit-management) koji omogućuje pregled popisa postavljenih dozvola za sve klijentske kodove, bez potrebe ulaska u pojedinačni unos;
+U slučaju *multicompany* instalacije postoji mogućnost postavljanja **grupnog nadzora** ili **grupne blokade**, pri čemu se procenjuje ukupna situacija subjekta u odnosu na sve kompanije kojima se upravlja u bazi podataka i sabiraju iznosi dokumenata (preporučuje se postavljanje jednakih i aktivnih kreditnih limita za sve kompanije).
 
-**Osigurani kreditni limit**: ovo je jednostavno informativno polje o iznosu koji pokriva osiguranje, ne utječe na izračune rizika;
+**Grupna blokada / grupni nadzor kupca** proverava stanje za grupu kompanija i zato pregledava polje matičnog konta (čita odobreni kredit glavne kompanije). Uvek sabira vrednosti svih kompanija u grupi na kredit matične kompanije. Ignoriše vrednost odobrenog kredita upisanu u podacima povezanih društava.
 
-**Zabilježi kredit**: poslovne napomene o odobrenom kreditnom limitu.
+U modulu Kreditni rizik postoji postupak za [upravljanje odobrenjima](/docs/treasury/customer-risk/credit-management) koji omogućava pregled liste postavljenih odobrenja za sve šifre kupaca bez potrebe za ulaskom u pojedinačne matične podatke.
 
-**Datum kreditne revizije**: polje koje ukazuje na datum revidiranja poslovnog sporazuma s klijentom u vezi s odobrenim kreditnim limitom.
+**Kredit osiguran**: informativno polje o iznosu pokrivenom osiguranjem; ne utiče na obračune rizika.
 
-**Tip opomene**: vrsta opomene za plaćanje prema klijentu koja će se generirati u postupku automatskog stvaranja opomena. 
+**Napomena o kreditu**: poslovne napomene vezane za odobreni kreditni limit.
 
-Padajući izbornik je povezan s tablicom Tip opomene (Početna stranica > Tabele > Administracija); podaci o klijentu koji se koristi bit će povezani s jednim od mogućih tipova opomene.
+**Datum revizije kredita**: polje koje označava datum revizije poslovnog sporazuma sa kupcem u vezi sa odobrenim kreditnim limitom.
 
-*Primjer*: mogu se stvoriti standardni tip opomene i poseban tip opomene, na primjer za povijesne ili posebno važne klijente, s različitim tekstom (možda "blažim").
+**Tip opomene**: vrsta opomene za plaćanje prema kupcu koja će se generisati u postupku automatskog kreiranja opomena.
 
-**Datum ugovora**: datum ugovora o obračuna zateznih kamata za kašnjenje plaćanja;
+Padajući meni povezan je sa tabelom Tip opomene (*Konfiguracija > Tabele > Administracija*); podaci kupca biće povezani sa jednim od mogućih tipova opomene.
 
-**Vrsta kamatne stope**: to je vrsta zakasninske kamatne stope koja se primjenjuje na subjekt na temelju dogovora.;
+*Primer*: mogu se kreirati standardni tip opomene i poseban tip opomene, na primer za dugogodišnje ili posebno važne kupce, sa drugačijim tekstom (možda „blažim“).
 
-Padajući izbornik je povezan s tablicom [Tipovi poreznih stopa](/docs/configurations/tables/finance/rate-types) u Konfiguraciji > Tabele > Administracija.
+**Datum ugovora**: datum ugovora o obračunu zatezne kamate zbog kašnjenja u plaćanju.
 
-**Širenje**: povećanje stope kamate u odnosu na standardnu stopu za tu vrstu.
+**Vrsta kamatne stope**: vrsta zakonske kamatne stope koja se primenjuje na subjekt prema dogovoru.
 
-**Razina odobrenja**: referira se na [**tablicu povezanu**](/docs/configurations/tables/finance/authorization-levels/) s padajućim izbornikom.
+Padajući meni povezan je sa tabelom [Tipovi kamatnih stopa](/docs/configurations/tables/finance/rate-types) u *Konfiguracija > Tabele > Administracija*.
+
+**Marža (Spread)**: povećanje kamatne stope u odnosu na standardnu stopu za tu vrstu.
+
+**Nivo odobrenja**: odnosi se na [**povezanu tabelu**](/docs/configurations/tables/finance/authorization-levels/) povezanu sa padajućim menijem.

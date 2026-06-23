@@ -1,18 +1,18 @@
 ---
-title: Ispis Kontnog Plana
+title: Ispis kontnog plana
 sidebar_position: 3
 ---
 
-Na ovom obrascu možete definirati neke parametre koji su korisni prilikom izrade ispisa Plana Konta.
+Na ovom obrascu mogu se definisati određeni parametri korisni prilikom izrade ispisa kontnog plana.
 
 ![](/img/it-it/erp-home/registers/accounting/chart-of-accounts-report/image01.png)
 
-**Grupa**: ovaj padajući izbornik omogućuje filtriranje samo određenih grupa računa za prikaz u ispisu.
+**Grupa**: ovaj padajući meni omogućava filtriranje samo određenih grupa konta za prikaz u izveštaju.
 
-Sjetite se da biste odabrali više od jedne grupe istovremeno, redovi u padajućem izborniku moraju biti odabrani pritiskom na tipku **Ctrl**.
+Da biste istovremeno odabrali više grupa, redove u padajućem meniju potrebno je označiti držeći pritisnut taster **Ctrl**.
 
-**Od računa / Do računa**: polja omogućuju filtriranje para računa kako bi se ispisao samo dio plana računa.
+**Od konta / Do konta**: ova polja omogućavaju filtriranje konta kako bi se odštampao samo određeni deo kontnog plana.
 
-Zastava **Ne prikazuj**: omogućuje isključivanje s ispisa (s aktivnom zastavom) podračuna koji se odnose na šifarnike klijenata / dobavljača, agenata i banaka.
+Opcije **Ne prikazuj**: omogućavaju isključivanje sa ispisa (aktiviranjem odgovarajuće oznake) konta koja se odnose na šifarnike kupaca/dobavljača, agenata i banaka.
 
-Dakle, nakon što ste postavili željene parametre, pritisnite gumb Pregled ili Ispiši kako biste izravno ispisali.
+Nakon što se podese željeni parametri, potrebno je kliknuti na dugme *Pregled pre štampe* ili *Štampaj* kako bi se izveštaj prikazao ili direktno odštampao.

@@ -3,193 +3,205 @@ title: Kontni plan
 sidebar_position: 1
 ---
 
-### RIBBON BAR:
-:::note Gumbi Ribbon Bar-a
+### Alatna traka:
+:::note Dugmad *Ribbon Bara*
 
 | Funkcija | Značenje |
 | --- | --- |
-| Pretraga | Izvršava pretraživanje konta/podkonta unutar odabrane klase. |
-| Novi konto | Postavi kursor za unos novog podračuna unutar detaljne mreže. |
-| Premjesti konta | Otvara obrazac kako bi se konto mogao premjestiti iz jedne klase u drugu. |
-| Otvori šifarnik | Otvara šifarnik koji je povezan s odabranim podkontom klijenta/dobavljača/banke/agenta. |
-| Novo grupiranje | Unos nove ‘matične' klase u strukturi kontnog plana, neovisno o odabranoj klasi. |
-| Nova grupa | Unos klase. Nije moguće unijeti više klasa unutar klase koja već ima konto/podkonto. |
-| Izbriši konto | Služi za brisanje odabranog konta. Brisanje je također moguće izvršiti odabirom konta i klikom na tipku delete. Nije moguće izbrisati podkonto ako je korišten u sustavu. (u ovom slučaju, možete postaviti datum završetka valjanosti kako biste ga učinili nevidljivim korisniku.) |
-| Izbriši grupu | Služi za brisanje odabrane klase. |
-| Proširi grananje | Funkcija otvara padajući izbornik za odabranu klasu. |
-| Sažmi grananje | Funkcija zatvara padajući izbornik za odabranu klasu. |
-| Novi Centar Troška | Odaberite za unos novog troškovnog centra za odabrani podkonto. |
-| Otkaži centar troška | Izbriši označenog troškovnog centra. |
-| Nova Troškovna Mjesta | Odaberite za unos novog profitnog centra za odabrani podkonto. |
-| Izbriši profitni centar | Izbriši označenog profitnog centra. |
-| Novi automatski račun | Unos novog automatskog podkonta za odabrani podkonto |
-| Otkaži automatski račun | Izbriši odabrani automatski podkonto |
+| Traži konto | Vrši pretragu konta/podkonta unutar izabrane klase. |
+| Novi konto | Postavlja kursor za unos novog konta. |
+| Premesti konta | Otvara obrazac za premeštanje konta iz jedne klase u drugu. |
+| Otvori šifarnike | Otvara šifarnik povezan sa izabranim podkontom kupca/dobavljača/banke/agenta. |
+| Novo grupisanje | Unos nove „matične“ klase u strukturi kontnog plana, nezavisno od izabrane klase. |
+| Nova grupa | Unos nove klase. Nije moguće uneti više klasa unutar klase koja već sadrži konto/podkonto. |
+| Obriši konto | Služi za brisanje izabranog konta. Brisanje je moguće izvršiti i izborom konta i pritiskom na taster Delete. Nije moguće obrisati podkonto ako je korišćen u sistemu. (U tom slučaju moguće je postaviti datum isteka važenja kako bi postao nevidljiv korisniku.) |
+| Obriši grupu | Služi za brisanje izabrane klase. |
+| Proširi granu | Funkcija otvara padajući prikaz za izabranu klasu. |
+| Sažmi granu | Funkcija zatvara padajući prikaz za izabranu klasu. |
+| Novi centar troška | Omogućava unos novog centra troška za izabrani podkonto. |
+| Obriši centar troška | Briše označeni centar troška. |
+| Novi profitni centar | Omogućava unos novog profitnog centra za izabrani podkonto. |
+| Obriši profitni centar | Briše označeni profitni centar. |
+| Novi automatski konto | Unos novog automatskog podkonta za izabrani podkonto. |
+| Ukloni automatski konto | Briše izabrani automatski podkonto. |
 
 :::
 
 ---
 
-### Povezanost s drugim tablicama
-Šifriranje kontnog plana uključuje popunjavanje niza tablica: [Vrsta konta](/docs/configurations/tables/finance/account-types), [Šifarnik kontakata](/docs/erp-home/registers/contacts/registers-management), [Troškovne stavke](/docs/configurations/tables/finance/charge-item), Tipovi periodičnosti proračuna, Troškovna središta, Profitna središta, Odjeli, Ispravci/integracije knjiženja, Knjiženja od razlike u proračunu, [Automatski predlošci](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates), Vrsta iznosa.
+### Povezanost sa drugim tabelama
 
+Šifriranje kontnog plana podrazumeva popunjavanje niza tabela: [Tip konta](/docs/configurations/tables/finance/account-types), [Šifarnik kontakata](/docs/erp-home/registers/contacts/registers-management), [Stavke troškova](/docs/configurations/tables/finance/charge-item), Tipovi periodičnosti budžeta, Centri troška, Centri profita, Odeljenja, Ispravke/integracije knjiženja, Knjiženja razlika budžeta, [Automatski predlošci](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates), Tip iznosa.
 
 ### Unos strukture kontnog plana
 
-Šifriranje kontnog plana započinje unosom popisa klasa u gornjem dijelu obrasca: 
+Šifriranje kontnog plana započinje unosom liste klasa u gornjem delu obrasca:
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image01.png)
 
-Putem gumba za unos klasifikacija/klasa moguće je umetnuti nove prve razine ili razine niže od one odabrane, pripisujući svakoj jedinstveni alfanumerički kod, opis i vrstu konta.
+Putem dugmadi za unos grupisanja/klasa moguće je dodavati nove nivoe prve hijerarhije ili niže nivoe u odnosu na trenutno izabrani, pri čemu se svakom dodeljuje jedinstvena alfanumerička šifra, opis i tip konta.
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image02.png)
 
-**Novo grupiranje**: adjeluje isključivo kako bi se dodao novi **nulti nivo** (grupa bez nadređenih iznad nje).
+**Novo grupisanje**: koristi se isključivo za dodavanje novog **nultog nivoa** (grupa bez nadređene grupe).
 
-**Nova grupa**: djeluje tako da unese novu podgrupu odabrane grupe. 
+**Nova grupa**: služi za unos nove podgrupe unutar izabrane grupe.
 
-**Struktura**: polje automatski popunjeno sustavom kako bi predstavljalo konkatenaciju kodova grupa i grupiranja u kojima se redak nalazi;
+**Struktura**: polje koje sistem automatski popunjava kako bi prikazao spoj šifara grupa i grupisanja kojima red pripada;
 
-**Dodatni opis**: omogućuje vam da dodijelite dodatni opis koji se može koristiti, na primjer, u ispisu bilance (prilagođavajući ga posebnim alatima). Na primjer, može se unijeti prijevod opisa konta.
+**Alternativni opis**: omogućava unos dodatnog opisa koji se može koristiti, na primer, u izveštajima bilansa (prilagođavanjem posebnim alatima). Na primer, može se uneti prevod opisa konta.
 
-**Tip grupe**: prihvaća tip računa grupe. Combo box povezan je s tablicom Tip računa. Preporučuje se ispunjavanje tipa računa i za grupe i za grupiranje, kao što je opisano u fazi unosa podkonta u nastavku.
-
+**Tip grupe**: prihvata tip konta grupe. *Combo box* je povezan sa tabelom Tipovi konta. Preporučuje se popunjavanje tipa konta i za grupe i za grupisanja, kao što je opisano u nastavku u delu za unos podkonta.
 
 ### Unos detalja kontnog plana
 
-Kada je odabran najniži nivo grupe, u donjoj mreži će se aktivirati lista konta i podkonta unutar nje.
+Kada je odabran najniži nivo grupe, u donjem prikazu će se aktivirati lista konta i podkonta.
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image03.png)
 
-Ova **donja mreža popunjava se direktnim unosom podataka** u redove. Uvijek je vidljiv posljednji dostupni red za unos novog unosa, označen zvjezdicom u plavom području u lijevom kutu.
+Ova **donja tabela popunjava se direktnim unosom podataka** u redove. Uvek je vidljiv poslednji dostupan red za unos novog zapisa, označen zvezdicom u plavom polju u levom uglu.
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image04.png)
 
-**UPOZORENJE: Struktura plana konta zahtijeva da se za svaku najnižu razinu grupe u koju unosimo detalje, unese barem jedan račun ("glavni") bez podkonta koji služi kao posljednje grupiranje operativnih podkonta. Napominjemo da se samo konti s podkontima mogu koristiti u knjigovodstvenim zapisima.**
+**PAŽNJA: Struktura kontnog plana zahteva da se za svaki najniži nivo grupe u koji se unose detalji definiše najmanje jedno konto („glavno“) bez podkonta koje služi kao poslednje grupisanje operativnih podkonta. Napominjemo da se samo konta sa podkontima mogu koristiti u knjigovodstvenim knjiženjima.**
 
-Preporučuje se pratiti progresivni numerički kriterij s uniformnošću znakova (npr. svi konti s 4 znaka, svi podkonti s 3).
+Preporučuje se korišćenje uzastopne numeracije sa istim brojem znakova (npr. sva konta sa 4 znaka, svi podkonti sa 3).
 
-UPOZORENJE: Prilikom unosa podračuna u detalje aktiviran je brojač koji automatski povećava podračun za jedan u odnosu na zadnji uneseni za tu grupu; preporučuje se izbjegavanje "rupa" u numeraciji jer se automatski neće popuniti ni u jednom slučaju.
+**PAŽNJA:** Prilikom unosa podkonta u detalje aktiviran je brojač koji automatski povećava broj podkonta za jedan u odnosu na poslednji uneti u toj grupi; preporučuje se izbegavanje „rupa“ u numeraciji jer ih sistem ni u kom slučaju neće automatski popuniti.
 
+Postupiti sledećim redosledom: dodati **Tip konta**, zatim **Konto** (bez podkonta ako želite da kreirate novu „matičnu“ stavku), a potom **Podkonto** (ako se podkonto unosi prvi put za tu grupu, ručno unesite broj i definišite broj znakova, na primer 1 ili 01 ili 001; pri sledećem unosu broj će se automatski povećati).
 
+**Datum unosa**: datum kreiranja konta/podkonta;
 
-Postupite redoslijedom dodavanja **vrste konta**, zatim **konta** (bez podkonta ako želite stvoriti novu "matičnu" stavku), a zatim **podkonto** (ako se podkonto unosi prvi put za tu grupu, ručno unesite broj i odredite broj znakova, na primjer 1 ili 01 ili 001, pri sljedećem unosu broj će se automatski povećati)
+**Datum poslednje izmene**: datum poslednje izmene šifre konta/podkonta, koji sistem automatski ažurira;
 
-**Datum unosa**: to je datum stvaranja konta/podkonta;
+**Kreiraj otvorene stavke**: opcija koja označava da li se za konto povezan sa evidencijom kupaca i dobavljača upravlja otvaranjem otvorenih stavki. Oznaka se preuzima i održava unutar registra. Moguće je aktivirati ovu opciju i za konta koja nisu deo registra (troškovi, prihodi itd.) kako bi se otvorene stavke kreirale prilikom knjiženja (retko korišćen slučaj). U tom slučaju korišćeni knjigovodstveni nalog mora imati aktivan parametar za otvaranje stavki. Aktivna oznaka na kontu omogućava proveru usklađenosti između knjiženja i otvorene stavke. U svakom slučaju, otvaranje stavki za konta koja nisu deo registra mora se obaviti ručno i ne može biti automatsko.
 
-**Datum posljednje promjene**: to je datum posljednje izmjene koda računa/podračuna, automatski ažuriran od strane sustava;
+**Omogući poslovne centre**: aktiviranjem ove opcije omogućava se upravljanje centrima troškova i na bilančnim kontima (retko korišćeno); na primer kod kapitalizacije internih radova.
 
-**Otvaranje plaćanja**: flag koji označava, za račune povezane s evidencijom kupaca i dobavljača, da li se za taj račun upravlja otvaranjem partija. Oznaka se preuzima, i treba je upravljati, unutar evidencije. Moguće je aktivirati oznaku ovdje za račune koji NISU iz evidencije (troškovi, prihodi itd.) kako bi se otvorile partije istovremeno s knjiženjem (rijetko). U tom slučaju, knjigovodstveni uzrok korišten zahtijevat će aktivni parametar za otvaranje partija. U ovom slučaju, aktivna oznaka na računu omogućuje, posebno, provjeru ravnoteže između knjiženja i otvorene stavke. U svakom slučaju, otvaranje partija na računima koji nisu u evidenciji mora se obaviti ručno i ne može se automatski izvršiti.
+**Datum isteka važenja**: koristi se za **blokiranje korišćenja konta u novim knjiženjima** (počev od unetog datuma), uz zadržavanje vidljivosti prethodno unetih prometa;
 
-**Upravljanje poslovnim centrima**: Aktiviranjem ove zastavice bit će moguće upravljati centrima troškova čak i na bilansnim računima (rijetko); primjerice, povećanja za unutarnje radove u okviru ekonomije, itd.
+**Drugi opis**: pogledati **Alternativni opis** iznad;
 
-**Datum završetka valjanosti**: služi za **blokiranje korištenja podračuna u novim knjiženjima** (počevši od unesenog datuma), zadržavajući vidljivost prethodno unesenih prometa;
+**Razgraničenja/Obračuni – aktivni / pasivni – Konto / Podkonto / Opis**: polja koja omogućavaju unos posebnog konta za aktivna i pasivna razgraničenja i obračune, sa prioritetom u odnosu na opšta konta definisana u parametrima knjiženja. Koriste se za automatsko upravljanje obračunatim i razgraničenim prihodima i rashodima. Konto troška ili prihoda na koji se odnose mora imati odgovarajući tip konta (npr. „za razgraničenja“) sa aktivnom servisnom oznakom u tabeli **Tip konta**.
 
-**Drugi opis**: pogledajte Alternativni opis gore;
+**Konto / Podkonto / Odloženi PDV**: uglavnom se koristi za lokalizacije van Italije gde postoji potreba za knjiženjem neodbitnog dela PDV-a na poseban konto.
 
-**Ispravke/Ispravci - aktivni / pasivni - Konto / Podkonto / Opis**: Polja koja omogućuju unos, redom za aktivne i pasivne rate i prelazne račune, specifičnog podračuna na koji će se knjižiti, s prednošću u odnosu na opće podračune za aktivne i pasivne rate i prelazne račune uključene u [parametri knjiženja](/docs/configurations/parameters/finance/accounting-parameters), ispravke i integracije vezane uz podračun troška ili prihoda koji se popunjava. Napomena da za automatsko upravljanje aktivnim i pasivnim rastima i riskontima, račun troška ili prihoda na koji se odnose ispravke mora imati poseban tip konta (npr. "za ispravke") s aktivnom oznakom usluge u tablici [Tip konta](/docs/configurations/tables/finance/account-types).
+**Procenat neodbitnog PDV-a**: polje povezano sa prethodnim. Omogućava definisanje procenta neodbitnog PDV-a direktno na kontu umesto na PDV šifri.
 
+**Stavka troška / Opis**: padajuća lista povezana sa tabelom **Stavke troškova**; omogućava povezivanje sa statističkim podacima korisnim za kontroling.
 
-**Konto / Podkonto / opis Nedostaje Dopuštenje**: Uglavnom upravljano za lokacije izvan Italije gdje postoji potreba knjiženja neprihvatljivog dijela PDV-a na zaseban račun.
+**Varijabilnost**: ovo polje, povezano sa tabelama *Dodela centra troška* i *Varijabilnost centra troška* (koje služe za povezivanje konta sa poslovnim centrima radi automatske raspodele knjigovodstvenih prometa), posebno se koristi kada je knjigovodstveni promet povezan sa više poslovnih centara. Kao i istoimeno polje u tabeli *Varijabilnost centra troška*, prihvata procentualnu vrednost koja određuje da li je trošak **fiksan** (varijabilnost 0%), **potpuno varijabilan** (varijabilnost 100%) ili **delimično varijabilan** (npr. 70%). Pogledati sliku ispod za pravilno popunjavanje.
 
+BILJEŠKA: Ne treba ih mešati sa poljem **Procenat** (koje se nalazi u tabeli Dodela CDC) koje služi za određivanje procenta knjigovodstvenog prometa koji treba dodeliti tom centru (na primer, trošak podeljen između dva centra u odnosu 50% i 50% ili 70% i 30%).
 
-**Postotak koji se ne odbija**: Uglavnom upravljano za lokacije izvan Italije gdje postoji potreba knjiženja neprihvatljivog dijela PDV-a na zaseban račun. Povezano polje s prethodnim. Omogućuje definiranje postotka neprihvatljivosti PDV-a izravno na računu umjesto na upotrijebljenom PDV kodu.
-
-
-**Stavke troškova / Opis**: padajući izbornik povezan s tablicom [Elementi potrošnje](/docs/configurations/tables/finance/charge-item); omogućuje povezivanje s određenim statističkim podacima korisnim u upravljanju kontrolom.
-
-**Varijabilnost**: ovo polje, povezano s mrežama koje se nalaze s desne strane obrasca, *Pridjeljivanje Cdc* e *Varijabilitet Cdc* (potrebne za unos veza između podračuna i poslovnih centara kako bi se automatski raspodijelili knjigovodstveni pokreti na centre) posebno **se mijenja kada je knjigovodstveni pokret povezan s više od jednog poslovnog centra.**.  Kao i istoimeno polje u mreži Varijabilitet Cdc, prihvaća postotnu vrijednost koja **određuje je li trošak fiksan** (varijabilnost 0%) ili potpuno **varijabilan trošak**(varijabilnost 100%)ili djelomično varijabilan (npr. 70%). Pogledajte donju sliku za ispravno popunjavanje.
-
-BILJEŠKA: Ne treba ih zamijeniti s poljem Postotak (prisutnim u mreži Pridjeljivanje Cdc) koje služi za označavanje postotka knjigovodstvenog pokreta koji treba pridijeliti tom centru (primjerice, trošak podijeljen između dva centra podjednako ili 50% ili 70% i 30%).
-
-Polje **Varijabilnost** prisutno u glavnoj mreži u komentaru ima prioritet u odnosu na ono prisutno u grid *Variabilnost Cdc*. Iz tog razloga, ako je samo popunjeno polje u glavnoj mreži, podatak će se koristiti za oba (ili sva) povezana centra s odabranim računom. 
+Polje **Varijabilnost** prisutno u glavnoj tabeli ima prioritet u odnosu na istoimeno polje u tabeli *Varijabilnost CDC*. Iz tog razloga, ako je popunjeno samo polje u glavnoj tabeli, ta vrednost će se koristiti za oba (ili sva) poslovna centra povezana sa izabranim kontom.
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image05.png)
 
-**Ne koristi se u kontrolingu**: flag, korisna samo ako su aktivne napredne funkcije za kontroling u tabeli poduzeća, omogućuje isključivanje (ako je omogućeno) knjigovodstvenih prometa prisutnih za odabrani račun iz posebnih obrada kontrolinga (kao što su npr. reversioni na temelju troškovnih pokretača, formule i tehničke amortizacije specifične za kontroling). Na taj način bit će moguće ručno upravljati putem specifičnih funkcija kontrolinga.
+**Ne koristi se u kontrolingu**: opcija korisna samo ako su u tabeli preduzeća aktivirane napredne funkcije kontrolinga. Omogućava isključivanje (ako je aktivirana) knjigovodstvenih prometa evidentiranih na izabranom kontu iz posebnih obrada kontrolinga (kao što su obračuni po nosiocima troškova, formule i tehničke amortizacije specifične za kontroling). Na taj način moguće je ručno upravljati tim podacima kroz posebne funkcije kontrolinga.
 
-Primjer: ako želite koristiti specifične amortizacije definirane unutar funkcija samog kontrolinga umjesto polaska od knjigovodstvenih podataka. Drugi primjer: želite ručno evidentirati trošak nadzornog odbora, dodjeljujući ga ručno funkcijama kontrolinga kako biste upravljali proračunima i izvješćima, umjesto čekanja na evidentiranje pripadajućeg troška u računovodstvu (tipično retroaktivno i stoga ne pravodobno).
+Primer: ako se žele koristiti posebni obračuni amortizacije definisani unutar samog kontrolinga, umesto da se polazi od knjigovodstvenih podataka. Drugi primer: želi se ručno evidentirati trošak nadzornog odbora i ručno ga rasporediti kroz funkcije kontrolinga radi budžetiranja i izveštavanja, umesto čekanja na knjiženje odgovarajućeg troška u finansijskom računovodstvu (što je često retroaktivno i samim tim neblagovremeno).
 
-Bilješka: knjigovodstveni će se pokret i dalje uključivati u polugodišnje zatvaranje knjiga (Kontroling >Privremena zatvaranja).
+Napomena: knjigovodstveni promet će se i dalje uključivati u polugodišnje zatvaranje knjiga (**Kontroling > Privremena zatvaranja**).
 
-**Metodologija** opisana gore određuje potrebu za periodičnim izvršavanjem **prilagodbe** kako bi se uskladili knjigovodstveni pokreti (koji utječu na bilancu) s pokazateljima upravljačkog računovodstva (specifičnim za kontroling). Takve prilagodbe bit će prikazani u posebnim izvještajima kontrolinga putem određenih prilagodbi (s pozitivnim ili negativnim oznakama, ovisno o situaciji) koje jasno ukazuju na usklađivanje ukupnih iznosa u bilanci s ukupnim iznosima u upravljačkom računovodstvu (koji proizlaze iz ručno upravljanih pokreta ili pokreta koji nisu generirani iz knjigovodstvenih podataka).
+**Metodologija** opisana iznad podrazumeva potrebu za periodičnim izvršavanjem **usklađivanja** između knjigovodstvenih prometa (koji utiču na bilans) i pokazatelja upravljačkog računovodstva (specifičnih za kontroling). Takva usklađivanja prikazuju se u posebnim izveštajima kontrolinga putem posebnih korekcija (sa pozitivnim ili negativnim predznakom, u zavisnosti od situacije), koje jasno pokazuju usklađenje ukupnih iznosa iz bilansa sa ukupnim iznosima upravljačkog računovodstva (nastalim iz ručno unetih ili neknjigovodstvenih prometa).
 
-Sljedeća dva polja služe za ovu radnju:
+Sledeća dva polja služe upravo za ovu svrhu:
 
-**Vrijeme uravnoteženja**: padajući izbornik omogućuje odabir hoće li gore navedeni obračun biti godišnji, polugodišnji ili onemogućen (odabirom nitko)
+**Period usklađivanja**: padajuća lista omogućava izbor da li će se gore opisano usklađivanje vršiti godišnje, polugodišnje ili biti onemogućeno (izborom opcije *Nijedan*).
 
-**Tipovi izjednačavanja**: padajući izbornik omogućuje odabir između dvije različite metodologije obračuna:
+**Tip usklađivanja**: padajuća lista omogućava izbor između dve različite metodologije usklađivanja.
 
-**Reproporcija upravljanja**: pokreće se od knjigovodstvenog zapisa i ponovno ga preraspodjeljuje (ubacujući ispravke) koristeći logiku analitičkog računovodstva (odnosno dodjeljivanje centrima tvrtke) radi upravljanja razlikom;
+**Procenti varijacije / Opis**: padajuća lista povezana sa tabelom [Procenti valorizacije](/docs/configurations/tables/controlling/analytical-accounting/variation-percentages), omogućava definisanje procenata (prethodno definisanih i kategorizovanih u povezanoj tabeli) za svaki konto. Ovi procenti se koriste u različitim procesima kontrolinga, kao što je planiranje budžeta na osnovu prethodne godine uz primenu povećanja ili smanjenja.
 
-**Analitičke razlike**: polazi od upravljanja računovodstvom (kontrolingom) i usklađuje ga s knjigovodstvenim podacima, unoseći ispravke s pozitivnim ili negativnim predznakom.
+**Raspodela perioda / Opis**: padajuća lista povezana sa tabelom [Raspodela perioda](/docs/configurations/tables/controlling/managerial-accounting/periods-distribution), omogućava dodeljivanje specifične logike raspodele knjigovodstvenih prometa po pojedinačnim periodima tokom obrade polugodišnjih zatvaranja.
 
-**Postoci varijacije / opis**: padajući izbornik, povezan s tablicom [Postoci valorizacije](/docs/configurations/tables/controlling/analytical-accounting/variation-percentages), omogućuje definiranje postotaka (unaprijed definiranih i kategoriziranih unutar povezane tablice) za svaki podračun. Ti postoci se primjenjuju u raznim obradama kontrolinga, kao što su planiranje proračuna na temelju prethodne godine, primjenom povećanja ili smanjenja.
+**Grupe usklađivanja / Opis**: padajuća lista povezana je sa tabelom [Grupe usklađivanja](/docs/configurations/tables/controlling/analytical-accounting/adjustments-groups), u kojoj je moguće definisati grupisanja konta korisna za izradu specifičnih kontroling izveštaja. Polje nema drugu operativnu funkciju niti generiše dodatne automatizme.
 
-**Distribucija razdoblja / Opis**: padajući izbornik, povezan s tablicom [Distribucija razdoblja](/docs/configurations/tables/controlling/managerial-accounting/periods-distribution), omogućuje dodjelu, svakom podračunu, specifične logike raspodjele knjigovodstvenog prometa na pojedinačna razdoblja tijekom obrade polugodišnjih zatvaranja.
+**Spoljni opis 1 / 2 / 3**: dodatna polja za unos alternativnih opisa (na primer na drugim jezicima). Mogu se koristiti prilikom prilagođavanja izveštaja bilansa.
 
-**Grupe izravnavanja / Opis**: padajući izbornik je povezan s tablicom [Grupe izravnavanja](/docs/configurations/tables/controlling/analytical-accounting/adjustments-groups), unutar koje je moguće kodirati grupiranja računa korisna za upravljanje specifičnim izvještajima za kontroling. Polje nema drugu operativnu vrijednost i ne generira dodatne automatizme.
+### UNOS POVEZANOSTI IZMEĐU KONTA I POSLOVNIH CENTARA
 
-**Vanjski opis 1 / 2 / 3**: dodatna polja za prihvat alternativnih opisa (na primjer, na drugom jeziku). Mogu se, na primjer, naknadno unijeti tijekom prilagodbe ispisa bilance.
+Povezivanje se vrši jednostavnim izborom odgovarajućeg podkonta i unosom liste CDC/CDP (centara troškova/profitnih centara) u dve za to predviđene tabele. Moguće je povezati raspodelu na različite poslovne jedinice, mada se u praksi polje poslovne jedinice najčešće ne popunjava. Ne postoji kontrola koja proverava da li zbir unetih procenata iznosi 100%.
 
-### UMETANJE POVEZANOSTI IZMEĐU PODRAČUNA -  POSLOVNIH CENTARA 
+BILJEŠKA: Aktiviranjem naprednih funkcija kontrolinga u tabeli [Preduzeće](/docs/configurations/tables/general-settings/company), primenjuje se nova logika rada u kojoj profitni centri više nemaju centralnu ulogu. Umesto njih koriste se centri troškova (CDC) kao poslovni centri na koje se raspoređuju pozitivne i negativne stavke. Na osnovu tih podataka moguće je sprovoditi napredne analize, preraspodele i poređenja radi utvrđivanja marži i drugih pokazatelja poslovne uspešnosti.
 
-Veza se uspostavlja jednostavno odabirom odgovarajućeg podračuna i unošenjem popisa CDC/CDP u dvije odvojene mreže: moguće je povezati vrednovanje na različite poslovne divizije, ali obično se polje divizije ne popunjava. Nema kontrole da li je zbroj unesenih postotaka jednak 100%.
+Iz tog razloga tabela **Profitni centri** (zadržana radi kompatibilnosti sa standardnim logikama) premeštena je na karticu **Ostalo** (povezanu sa tabelom Dodela CDC).
 
-BILJEŠKA: Aktiviranjem naprednih funkcija za kontroling u tabeli [tvrtke](/docs/configurations/tables/general-settings/company) , radit ćemo prema novim logikama u kojima više nije relevantna upotreba centara dobiti, već se koriste CDC (u njihovom nazivu poslovnih Centara) na koje će se dodijeliti negativni ili pozitivni dijelovi kako bi se zatim proveli napredni postupci, poput reverzija i usporedbi, kako bi se odredili marže itd.
+Takođe treba imati u vidu da postoje i druga mesta na kojima se definišu centri troškova/profita: matični podaci kupaca, dobavljača i agenata, matični podaci artikala, skladišta i osnovnih sredstava. Prioritet popunjavanja ovih vrednosti definiše se parametrima upravljanja odgovarajućeg modula.
 
-Iz tog razloga, mreža **centara dobiti** (zadržana radi korištenja standardnih logika) premještena je u karticu **Ostalo** (vezano uz grid Pripisivanje CDC).
+### Tabela dodele CDC
 
-Također valja napomenuti da postoje dodatne točke kodiranja Troškova / Dobiti: podaci o klijentima/dobavljačima/agentima, podaci o artiklima, skladišta, imovina. Prioritet valorizacije obično se definira u upravljačkim parametrima pojedinog modula.
+**Broj**: redni broj stavke;
 
-### Tabilica pridruživanja CDC 
+**Centar troška / Opis**: padajuća lista povezana sa tabelom **Centri preduzeća**, koja omogućava izbor željenog centra;
 
-**Broj**: Progresivni broj retka;
+**Procenat %**: unosi se procenat dodele knjigovodstvenog prometa centru navedenom u redu. Na primer, unosom vrednosti 100 promet će biti dodeljen tom centru u celosti, dok će unos 50 dodeliti 50% tom centru, a ostatak će biti raspodeljen na druge centre navedene u narednim redovima.
 
-**Cdc / Opis**: padajući izbornik povezan s tablicom **Centri Tvrtke**, potreban za pozivanje željenog centra;
+**Odeljenje / Opis**: veza se po potrebi može definisati i po pojedinačnom odeljenju.
 
-**Postotak %**: unesite postotak pridruživanja knjigovodstvenog prometa centru navedenom u retku. Na primjer, unosom vrijednosti 100, knjigovodstveni promet bit će pridružen ovom centru za 100%, unosom 50 bit će pridružen 50%, a preostali iznos bit će (eventualno) dodijeljen drugim centrima navedenim u recima ispod.
+**Datum početka važenja**: označava datum od kojeg je automatsko dodeljivanje knjiženja centru aktivno.
 
-**Podjela / Opis**: veza se može unijeti, po mogućnosti, razlikujući po pojedinoj diviziji.
+**Datum isteka važenja**: označava datum nakon kojeg automatsko dodeljivanje knjiženja centru više neće biti primenjivano.
 
-**Datum početka valjanosti**: označava datum od kojeg je automatsko pripisivanje pokreta centru aktivno.
+**Dimenzija / Opis**: padajuća lista koja omogućava dodelu odgovarajuće analitičke dimenzije poslovnom centru koji se unosi (ovaj koncept je dostupan samo uz aktivirane napredne funkcije kontrolinga u tabeli preduzeća).
 
-**Datum završetka valjanosti**: označava datum završetka važenja nakon kojeg automatsko pripisivanje pokreta centru više neće imati učinka.
+**Kategorija troška / Opis**: padajuća lista povezana sa tabelom **Kategorije centara preduzeća**, omogućava povezivanje svake **Dimenzije** kontroling analize sa kategorijom koja je zatim povezana sa različitim poslovnim centrima (pošto je kategorija obavezno polje pri definisanju svakog poslovnog centra). Na taj način, prilikom unosa knjigovodstvenog prometa, operateru se omogućava izbor između unapred definisanih poslovnih centara. Ovo može predstavljati alternativu strogo definisanom povezivanju centra sa kontom (što je moguće aktiviranjem parametra „Ograničenje konto/centar“ u šifarniku dimenzije).
 
-**Veličina / Opis**: padajući izbornik potreban je za dodjelu odgovarajuće analitičke dimenzije poslovnom centru koji se unosi (ovaj koncept je uveden i dostupan samo aktiviranjem naprednih funkcija kontrolinga iz tablice poduzeća).
+### Tabela automatskih podkonta (kartica Ostalo)
 
-**Kategorija mjesta troška / Opis**: padajući izbornik,, povezana s tablicom **Kategorije centara tvrtke** omogućava povezivanje svake **Dimenzije** analize kontrolinga s kategorijom koja je zauzvrat povezana s različitim poslovnim centrima (budući da je kategorija obavezno polje u kodiranju svakog poslovnog centra). Na ovaj način, prilikom unosa knjigovodstvenog prometa, operateru se omogućuje odabir niza predefiniranih poslovnih centara. Ovo se može učiniti kao alternativa strogoj definiciji centra povezanog s računom (moguće je aktiviranjem parametra "Ograničenje račun / centar" unutar dimenzije).
+U ovoj mreži moguće je definisati, za svaki podkonto koji će biti korišćen u računovodstvenom knjiženju unetom putem računovodstvenog šablona sa pridruženim drugim automatskim šablonom, specifičan podkonto koji će se koristiti u knjiženju povezanom sa tim drugim automatskim šablonom.
 
-### Tablica Automatskih podračuna
+Na taj način moguće je dinamički menjati podkonta koja koristi drugi šablon, u zavisnosti od podkonta koji zamenjuje generički konto (obično definisan u šablonu glavnog knjiženja) u trenutku kreiranja računovodstvenog knjiženja putem programskih automatizama.
 
-U ovoj tablici moguće je unijeti, za svaki podračun koji će biti pozvan u knjiženju unesenom kroz knjižnu uzrokovanu imajući drugu automatsku uzrokovanu knjižnu uzrokovanu, specifičan podračun koji će se koristiti u knjiženju povezanoj s drugom automatskom uzrokovanom knjižnom uzrokom.
+Pored šifre podkonta, potrebno je uneti i vrstu iznosa, kao i stranu knjiženja (duguje ili potražuje) (pogledati dokumentaciju za upravljanje računovodstvenim šablonima).
 
-Na ovaj način moguće je "dinamički" mijenjati podračune koji se koriste u drugom uzroku, ovisno o podračunu koji zamjenjuje općeniti račun (obično unesen u predložak glavnog uzroka) u trenutku stvaranja knjiženja zahvaljujući automatizmima programa.
+:::note Napomena
 
-Potrebno je unijeti, osim koda podračuna, i tip iznosa te odjeljak dugovati ili potraživati (vidjeti dokumentaciju o upravljanju računskim uzrocima).
+Najvažniji deo logike funkcionisanja podrazumeva:
 
-:::note Bilješka
+- da se podkonto koristi u PDV sekciji unosa;
 
-Najvažniji dio logike funkcioniranja uključuje:
+- da se knjiženje zasniva na računovodstvenom šablonu koji uključuje automatski šablon;
 
-- da se podkonto koristi u odjeljku PDV-a unosa;
+- pod tim uslovima ERP će u automatsko knjiženje dodati automatska podkonta povezana sa izabranim podkontima;
 
-- da unos bude temeljen na uzroku koji uključuje automatski uzrok;
-
-- u ovim uvjetima ERP će dodati automatski unos, povezane automatske podkonte koji su povezani s podkontima;
-
-- valorizacija ovih podkonta koristit će tip iznosa odjeljka 'automatski podkonti', ali primjenjujući ga na izvornu PDV liniju.
+- vrednosti tih podkonta obračunavaće se prema vrsti iznosa definisanoj u sekciji „automatska podkonta“, ali primenjenoj na izvorni PDV red.
 :::
 
+:::tip[Predlog automatskog usklađivanja modela reklasifikacije prilikom unosa novog konta]
 
-**Primjer upotrebe može biti evidentiranje podkonta za koje treba valorizirati u dugovima/potraživanjima računa izvan bilance.**
+Aktiviranjem opšteg parametra **"FS-CO-AskModelAssignmentOnNewAccount"** unutar grupe **Controlling**  
+(*Konfiguracija > Parametri > Opšti parametri > Business Layer Settings > Business Areas > Controlling*),
+
+prilikom dodavanja novog konta ili podkonta u kontni plan Fluentisa prikazuje se iskačući prozor u kojem je moguće odabrati postojeće konto/podkonto sličnog tipa. Sistem će zatim automatski dodati novo konto u iste modele reklasifikacije u kojima se nalazi izabrano referentno konto.
+
+### Primer
+
+Ako se kreira novi podkonto za određenu uslugu, moguće je uneti šifru druge usluge koja je već uključena u modele reklasifikacije. Na taj način novo konto će automatski biti uključeno u iste pozicije modela, bez potrebe za ručnim usklađivanjem.
+
+### Dostupne opcije
+
+- **Onemogući predlog** (*Disabilita prova*)  
+  Postavlja parametar na vrednost *false* i predlog za automatsko usklađivanje više se neće prikazivati.
+
+- **Da** (*Sì*)  
+  Izvršava automatsko usklađivanje.
+
+- **Ne** (*No*)  
+  Ne izvršava usklađivanje, ali funkcionalnost ostaje aktivna i predlog će se ponovo prikazati prilikom sledećeg unosa novog konta.
+
+:::
 
 ---
 
-### Dodatni podaci: 
-upućuje na dokumentaciju vezanu uz [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/search-extradata)
+### Dodatni podaci
+
+Upućuje na dokumentaciju vezanu za [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata)
 
 ---
 
-### VIDEO TUTORIALI
+### VIDEO TUTORIJALI
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_0azlCYnIQ" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

@@ -3,14 +3,49 @@ title: Obračun
 sidebar_position: 3
 ---
 
-U ovoj prozoru postavljaju se opći elementi za izračun provizije: 
+U ovom obrascu definišu se opšta podešavanja za obračun i isplatu provizija agenata.
 
-**Uzročno održan**: polje je obavezno kako bi se automatski valorizirao i dio poreza na dohodak primijenjen na proviziju agenta. Bez ovog polja neće biti moguće automatski valorizirati proviziju iz agentovog iznosa; Polje je povezano s tablicom [Tipovi odbitka poreza](/docs/configurations/tables/finance/withholding-tax-types).
+### Šifra poreza po odbitku
 
-**Period namirenja**: označava periodičnost obračuna agenata;
+Ovo je **obavezno polje** koje omogućava automatski obračun poreza po odbitku na proviziju agenta. Bez popunjenog polja nije moguće automatski evidentirati naknadu prilikom obračuna provizija.
 
-**Vrsta dokumenta**: razmatra se **pri izračunu provizije agenata**: moguće je naznačiti da agent zarađuje proviziju na potvrđenu narudžbu, isporuku robe (tj. izdavanje DDT-a), izdavanje računa, dospijeće (nezavisno od naplate ili ne), plaćanje (tj. na temelju naplaćenog iznosa: ako klijent plati polovicu računa, agent će zaračunati polovicu provizije za taj dokument). Ovo podešenje NE može se promijeniti nakon što počnete stvarati obračune za agenta: bit će potrebno stvoriti novu karticu s novim postavkama (i koristiti postupak 'Dodjela agenata' za masovno ažuriranje šifarnika klijenata u Početna stranica > Kontakte).
+Polje je povezano sa šifarnikom [Tipovi poreza po odbitku](/docs/configurations/tables/finance/withholding-tax-types).
 
-:::note BILJEŠKA
-Samo za [postupak izračuna provizija agenata koji upravlja modulom Administracija](/docs/finance-area/professional-men/procedures/calculate-commissions) dostupan je i dodatni način **Ukupno plaćanje**, u ovom slučaju, provizija će sazrijeti samo ako je račun plaćen u cijelosti, a neće se uzimati u obzir eventualni djelomični plaćanja.
+### Obračunski period
+
+Određuje učestalost obračuna provizija agenata.
+
+:::note[Napomena]
+Ovo polje ima isključivo informativnu funkciju i ne koristi se direktno u postupku obračuna provizija.
+
+Kod metode **izvršeno plaćanje**, prilikom obračuna se uvek uzimaju svi dokumenti do izabranog datuma. Nije moguće obračunavati samo deo provizija prema unapred definisanim obračunskim periodima.
+
+Filteri dostupni u postupku **Automatski obračun provizija** zasnivaju se na datumima porudžbina, otpremnica i faktura, a ne na datumima plaćanja.
+
+Razlog za to je što se dokumenti nakon obračuna ne mogu naknadno menjati, dok se plaćanja mogu unositi ili ispravljati i za već obrađene periode. U suprotnom bi pojedine provizije mogle ostati neobračunate.
+:::
+
+### Dokument koji određuje nastanak prava na proviziju
+
+Određuje trenutak u kojem agent stiče pravo na proviziju. Dostupne su sledeće opcije:
+
+- **Potvrđena porudžbina** – provizija nastaje potvrdom porudžbine.
+- **Isporuka robe** – provizija nastaje izdavanjem otpremnice.
+- **Izdavanje fakture** – provizija nastaje knjiženjem fakture.
+- **Dospelost fakture** – provizija nastaje na datum dospeća fakture, nezavisno od naplate.
+- **Izvršeno plaćanje** – provizija nastaje proporcionalno izvršenim uplatama kupca. Ako je kupac platio 50% fakture, agent ostvaruje 50% pripadajuće provizije.
+- **Potpuno plaćanje** – provizija nastaje tek kada je faktura u potpunosti izmirena.
+
+:::warning[Pažnja]
+Ovo podešavanje nije moguće menjati nakon što započne obračun provizija u prodajnom modulu.
+
+Ako je potrebno promeniti način obračuna, potrebno je kreirati novu konfiguraciju i, po potrebi, koristiti postupak **Dodela agenata** za masovno ažuriranje kupaca.
+:::
+
+:::note[Napomena]
+Opcija **Potpuno plaćanje** dostupna je samo u [postupku obračuna provizija koji se koristi u modulu Administracija](/docs/finance-area/professional-men/procedures/calculate-commissions) i nije dostupna u standardnom obračunu provizija unutar prodajnog modula.
+:::
+
+:::note[Napomena]
+Postupak upravljanja provizijama u računovodstvu omogućava naknadnu promenu logike obračuna provizija, jer se pravilo nastanka provizije čuva na nivou pojedinačnog dokumenta ili fakture.
 :::

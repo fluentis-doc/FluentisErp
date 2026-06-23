@@ -3,20 +3,20 @@ title: Analitika
 sidebar_position: 9
 ---
 
-U ovom obrascu moguće je definirati poveznicu za valorizaciju troškova/prihoda troškovno-profitnih centara ( *Konfiguracija > Tablice > Kontroling*) za dokumente/zapise registrirane povezanim sa stavkom u uporabi.
+U ovom obrascu moguće je definisati povezivanje za raspodelu troškova/prihoda na centre troškova i profitne centre (*Konfiguracija > Tabele > Kontroling*) za dokumenta i knjiženja koja se evidentiraju sa predmetnim artiklom.
 
-Spomenuto povezivanje uzima u obzir i druge opcije valorizacije troškovnih i profitnih centara (prema artiklu, općem kontnom planu, skladištu) koje se mogu definirati modul po modul.
+Ovo povezivanje uzima u obzir i druge mogućnosti raspodele na centre troškova i profita (prema artiklu, kontnom planu ili skladištu), koje se mogu definisati u pojedinim modulima sistema.
 
-Prioritet očitanja u valorizaciji centara troška/profita postavljen je, iz godine u godinu, unutar [Parametri računovodstva](/docs/configurations/parameters/finance/accounting-parameters#center-proposal).
+Prioritet očitavanja za raspodelu na centre troškova/profita definiše se za svaku poslovnu godinu u okviru [Parametara računovodstva](/docs/configurations/parameters/finance/accounting-parameters#center-proposal).
 
-**Br**: predstavlja broj retka.
+**Br.**: predstavlja redni broj stavke.
 
-**Troškovni centar/Profitni centar**: padajući izbornik za ukazivanje na troškovnog/profitnog centra (već prisutan u tablici troškovnih/profitnih centara).
+**Centar troška / Profitni centar**: padajući meni za izbor centra troška ili profitnog centra (koji je prethodno definisan u odgovarajućem šifarniku).
 
-**Postotak %**: postotak pripisivanja troška ili prihoda centru (na primjer, ako se trošak mora podijeliti 50% na dva centra, umetnite retke, po jedan za svaki centar s postotkom od 50%).
+**Procenat %**: procenat raspodele troška ili prihoda na izabrani centar (na primer, ako se trošak deli 50% na dva centra, potrebno je uneti dva reda sa po 50%).
 
-**Odjel**: padajući izbornik za pozivanje poslovne jedinice koja se odnosi na unesenu vezu.
+**Odeljenje**: padajući meni za izbor poslovne jedinice povezane sa unetom vezom.
 
-**Datum početka valjanosti**: obavezno polje koje označava datum od kojeg je poveznica važeća.
+**Datum početka važenja**: obavezno polje koje označava datum od kojeg je veza aktivna.
 
-**Datum isteka valjanosti**: označava datum od kojeg poveznica više ne vrijedi.
+**Datum završetka važenja**: označava datum od kojeg veza više nije važeća.

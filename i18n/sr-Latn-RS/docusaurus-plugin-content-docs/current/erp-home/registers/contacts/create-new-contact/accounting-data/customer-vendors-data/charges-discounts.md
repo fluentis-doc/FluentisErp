@@ -3,17 +3,17 @@ title: Troškovi/Popusti
 sidebar_position: 5
 ---
 
-Ovaj obrazac služi za unos vrste troškova za kupca/dobavljača.
+Ovaj obrazac služi za unos vrsta troškova za klijenta/dobavljača.
 
-**Vrsta zadanih troškova**: ovdje se unose troškovi koji vrijede za kupca/dobavljača, prema zadanim postavkama u odgovarajućoj tablici (u *Konfiguracija > Tablice > Opće postavke > Vrste troškova*) i specifičnim vrijednostima.
+**Vrste podrazumevanih troškova**: ovde se unose troškovi koji važe za klijenta/dobavljača, prema podešavanjima definisanim u odgovarajućoj tabeli (*Konfiguracija > Tabele > Opšta podešavanja > Vrste troškova*) i njihovim specifičnim vrednostima.
 
-**Vrste putnih troškova**: vidljivo *samo* za šifarnik *kupca*; u ovoj tablici ćete odabrati *putne troškove* koji se odnose na *intervencije* podrške odabirom između onih unaprijed definiranih u odgovarajućoj tablici (u *Konfiguracija > Tablice > Opće postavke > Vrste troškova*).
+**Vrste putnih troškova**: vidljivo *samo* za šifarnik *klijenta*; u ovoj tabeli biraju se *putni troškovi* koji se odnose na *servisne intervencije*, odabirom između unapred definisanih stavki u odgovarajućoj tabeli (*Konfiguracija > Tabele > Opšta podešavanja > Vrste troškova*).
 
-**Vrste zadanih popusta**: omogućuje da definirate popuste koji će se uvijek primjenjivati ​​na dokumente kupca/dobavljača tako da ih odaberete među onima unaprijed postavljenim u relevantnoj tablici u *Konfiguracija > Tablice > Opće postavke > Vrste popusta*. U slučaju više popusta bit će moguće utvrditi prioritet.
+**Vrste podrazumevanih popusta**: omogućava definisanje popusta koji će se uvek primenjivati na dokumenta klijenta/dobavljača, izborom među onima definisanim u tabeli *Konfiguracija > Tabele > Opšta podešavanja > Vrste popusta*. U slučaju više popusta moguće je odrediti njihov prioritet.
 
-U donjem dijelu možete unijeti provedene **Maksimalne/minimalne sate za interne/vanjske intervencije** za određeni predmet.
+U donjem delu mogu se uneti definisani **maksimalni/minimalni sati za interne/spoljne intervencije** za konkretnog klijenta ili dobavljača.
 
-*Posebni gumbi*:  
-> **Izbriši troškove**: brisanje označenih troškova.  
-> **Izbriši popuste**: brisanje označenih popusta.  
-> **Izbriši putne troškove**: brisanje označenih putnih troškova. Ne može biti aktivirano u šifarniku dobavljača jer se u tom slučaju ne upravlja putnim troškovima. 
+*Posebna dugmad*:  
+> **Obriši troškove**: brisanje označenih troškova.  
+> **Obriši popuste**: brisanje označenih popusta.  
+> **Obriši putne troškove**: brisanje označenih putnih troškova. Dugme nije aktivno u šifarniku dobavljača, jer se u tom slučaju ne upravlja putnim troškovima.

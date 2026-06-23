@@ -3,38 +3,38 @@ title: Detaljno
 sidebar_position: 2
 ---
 
-Šifarnik vrste **Agenta** potrebna je radi upravljanja različitim postavkama i automatizmima povezanim s ovom vrstom subjekata. 
+Šifarnik vrste **trgovačkih predstavnika**, odnosno **agenata**, potreban je za upravljanje različitim postavkama i automatizmima povezanim sa ovom vrstom subjekata.
 
-Nakon unosa općih podataka o subjektu, nastavit će se s odabirom vrste konta **Agenti** unutar polja *Dodijeljeni podkonti* kartice *Računovodstveni podaci*.
+Nakon unosa opštih podataka o subjektu, potrebno je odabrati vrstu konta **Agenti** u polju *Dodeljena podkonta* na kartici *Računovodstveni podaci*.
 
-Ovaj prozor sadrži opće elemente samog agenta:
+Ovaj prozor sadrži opšte podatke o agentu:
 
-**Koristi otvorene stavke**: omogućuje upravljanje otvorenim stavkama za trenutni račun;
+**Koristi otvorene stavke**: omogućava upravljanje otvorenim stavkama za tekući račun;
 
-**Kategorija predstavnika**: osnovni element za izračunavanje Enasarca i FIRR-a, kako je definirano u tabeli [Kategorije trgovačkih predstavnika](/docs/configurations/tables/sales/agent-category); odabir se vrši putem padajućeg izbornika povezanog s tablicom;
+**Kategorija predstavnika**: osnovni element za obračun Enasarca i FIRR-a, kako je definisano u tabeli [Kategorije trgovačkih predstavnika](/docs/configurations/tables/sales/agent-category); izbor se vrši putem padajućeg menija povezanog sa tabelom;
 
-**Značajka predstavnika**: statistički slobodni element koristan je, na primjer, za stvaranje grupiranja. Padajući izbornik povezan je s tablicom [Kategorije trgovačkih predstavnika](/docs/configurations/tables/sales/agent-category);
+**Karakteristika predstavnika**: statistički slobodan element koristan, na primer, za kreiranje grupacija. Padajući meni povezan je sa tabelom [Kategorije trgovačkih predstavnika](/docs/configurations/tables/sales/agent-category);
 
-**PDV**: zadana stopa PDV-a koja će se predložiti prilikom stvaranja naknade za agenta, kako ručno, tako i putem postupka izračuna provizija iz obračuna provizija;
+**PDV**: podrazumevana PDV stopa koja će biti predložena prilikom kreiranja naknade za agenta, bilo ručno ili putem postupka obračuna provizija;
 
-**Valuta**: valuta u kojoj se naziva knjigovodstveni račun i dokumenti upućeni agentu;
+**Valuta**: valuta računa i dokumenata upućenih agentu;
 
-**Početni/završni datum radnog odnosa**: na temelju ove datuma započinje izračun supletivnog naknade za klijenta (dostupno za ispis u modulu Agenti/Primatelji);
+**Datum početka/završetka poslovnog odnosa**: na osnovu ovih datuma vrši se obračun naknade za agenta (dostupno za ispis u modulu Agenti/Primaoci);
 
-**Prijeboj/troškovi**: podračun opće knjige koji se predlaže prilikom unosa naknade u modul Primatelji (ili koji se koristi pri automatskom stvaranju izračuna naknada agenata) kako bi se obuhvatili troškovi provizija;
+**Prebijanje/troškovi**: konto glavne knjige koji se predlaže prilikom unosa naknade u modul Primaoci (ili se koristi pri automatskom kreiranju obračuna naknada agenata) za evidentiranje troškova provizije;
 
-**Konto fakturiranja**: ovaj podračun koristi se pri automatskom stvaranju naknade primatelja iz izračuna naknada agenata kako bi se naknada uputila na različiti knjigovodstveni kod (vrsta dobavljača, radi usklađivanja knjigovodstvenih podataka za subjekte koji su i agenti i dobavljači);
+**Konto za fakturisanje**: ovaj podkonto koristi se pri automatskom kreiranju naknade primaoca iz obračuna provizija agenata kako bi se naknada evidentirala na drugačiji knjigovodstveni konto (tip dobavljača, radi usklađivanja knjigovodstvenih podataka za subjekte koji su istovremeno agenti i dobavljači);
 
-**Primjedbe**: slobodne napomene o šifarniku agenta;
+**Napomene**: slobodno polje za napomene o agentu;
 
-**Enasarco**: broj upisa u entitet;
+**Enasarco**: broj registracije u Enasarco sistemu;
 
-**HGK**: broj upisa u Hrvatsku Gospodarsku Komoru;
+**PKS**: broj registracije u Privrednoj komori Srbije;
 
-**Područni menadžer**: omogućuje povezivanje podataka o agentu koji je voditelj područja u odnosu na trenutnog; nema automatizma vezanih uz izračun provizija;
+**Regionalni menadžer**: omogućava povezivanje podataka o agentu koji je nadređen trenutnom agentu; nema automatizama vezanih za obračun provizija;
 
-**Intra i Šifra usluge**: za agente unutar Europske unije koji se prijavljuju u četvrtom i petom odjeljku izvještaja o intraštatskoj trgovini;
+**Intrastat i šifra usluge**: za agente iz Evropske unije koji se prijavljuju u četvrtom i petom odeljku Intrastat izveštaja;
 
-**Tvrtka zaliha**: zastarjelo, prisutno iz razloga retrokompatibilnosti;
+**Kompanija za zalihe**: zastarelo polje, prisutno zbog *retrokompatibilnosti*;
 
-**Obveza provizije na liniju narudžbe**: ovom zastavicom korisnik je obvezan postaviti proviziju za agenta u narudžbi kupca.
+**Obavezna provizija na stavci porudžbine**: ovom oznakom korisnik je obavezan da definiše proviziju agenta na porudžbini kupca.

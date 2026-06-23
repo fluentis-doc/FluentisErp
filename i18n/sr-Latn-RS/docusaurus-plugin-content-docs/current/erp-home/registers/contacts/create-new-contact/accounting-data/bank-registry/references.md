@@ -3,22 +3,22 @@ title: Reference
 sidebar_position: 1
 ---
 
-Šifarnici banke prikazani su u Kartici **Reference** sadrže osnovne informacije o tekućem računu koje treba navesti:
+Šifarnik banke prikazan na kartici **Reference** sadrži osnovne informacije o tekućem računu koje je potrebno uneti:
 
-**ISO šifra**: navedite prvih 4 znaka IBAN-a, dakle 2 znaka za zemlju (npr. IT) + 2 za instituciju;
+**ISO šifra**: unose se prva 4 znaka IBAN-a, odnosno 2 znaka za državu (npr. RS) + 2 kontrolna znaka;
 
-**ABI**, **CAB**, kodovi, broj računa (za talijanske banke treba navesti 5 znakova za ABI i CAB - uključujući i početnu nulu - te sve 12 znakova talijanskog tekućeg računa), međunarodni  **Swift** kod, **CIN**;
+**ABI**, **CAB**, broj računa (za italijanske banke potrebno je uneti 5 znakova za ABI i CAB — uključujući vodeću nulu — kao i svih 12 znakova italijanskog tekućeg računa), međunarodni **SWIFT** kod i **CIN**;
 
-**Valuta**: naznačite valutu u kojoj je izražen bankovni račun;
+**Valuta**: navesti valutu u kojoj se vodi bankovni račun;
 
-Moguće je unijeti neke korisne podatke za interakciju s **DocFinance®** (vanjskim programom za trezorstvo):
+Moguće je uneti i određene podatke korisne za integraciju sa **DocFinance®** (spoljnim programom za upravljanje trezorom):
 
-**R.B.N.**: predstavlja vrstu odnosa (npr. tekući račun, valutni račun...);
+**R.B.N.**: predstavlja tip odnosa (npr. tekući račun, devizni račun i sl.);
 
-**Banka Doc Finance**: naziv banke koji se koristi za analizu tokova po banci i druge funkcije dopuštene od strane DocFinance; 
+**Banka Doc Finance**: naziv banke koji se koristi za analizu novčanih tokova po banci i druge funkcionalnosti koje omogućava DocFinance;
 
-**Šifra banke**: eventualni slobodni bankovni kod;
+**Šifra banke**: opciona interna šifra banke;
 
-**SIA**: kod za slanje talijanskih elektroničkih datoteka, npr. za bankovne Potvrde (ako nije naveden, koristi se zadani kod unesen u tablicu tvrtke, Početna stranica > Tablice > Općenito).
+**SIA**: šifra za slanje italijanskih elektronskih datoteka, npr. za bankarske potvrde. Ako nije uneta, koristiće se podrazumevana šifra definisana u šifarniku preduzeća (*Početna stranica > Tabele > Opšte*).
 
-**Banka za podršku**: omogućuje povezivanje šikranika banke s odgovarajućim općim kodom banke za podršku. Ovo može poslužiti za automatsko usmjeravanje financijskih transakcija od strane stranaka i njihovo vrednovanje u analizama novčanih tokova.
+**Matična banka**: omogućava povezivanje šifarnika banke sa odgovarajućom opštom šifrom matične banke. Ovo može služiti za automatsko usmeravanje finansijskih transakcija klijenata i dobavljača, kao i za njihovu valorizaciju u analizama novčanih tokova.

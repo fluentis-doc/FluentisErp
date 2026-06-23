@@ -3,46 +3,48 @@ title: Upravljanje autorskim pravima
 sidebar_position: 9
 ---
 
-Upravljanje pravima na naknadu slično je upravljanju provizijama agenata, s kojim djelomično dijeli postavke.
+Upravljanje pravima na naknadu (*royalties*) slično je upravljanju provizijama agenata, sa kojima deli deo zajedničkih podešavanja.
 
-### Konfiguracija artikla 
+### Konfiguracija artikla
 
-Artikli koji su podložni autorskim pravima/royalties trebaju imati odgovarajući flag (*Autorska prava*) na kartici **Općenito**
+Artikli koji podležu autorskim pravima (*royalties*) moraju imati aktiviranu odgovarajuću oznaku (*Autorska prava*) na kartici **Opšte**.
 
-Prilikom unosa označenog članka u prodajne dokumente, samo za članke koji imaju ovaj flag Fluentis će identificirati odgovarajućeg dizajnera (agenta) koji posjeduje autorska prava na istom.
+Prilikom unosa takvog artikla u prodajne dokumente, Fluentis će samo za artikle sa aktiviranom oznakom identifikovati odgovarajućeg dizajnera (agenta) koji poseduje autorska prava na tom artiklu.
 
-### Konfiguracija zapisa za osobne podatke agenta
+### Konfiguracija šifarnika agenta
 
-Konfiguracija subjekta koji posjeduje autorska prava na različite članke vrši se putem definiranja šifarnika agenta.
+Konfiguracija subjekta koji poseduje autorska prava nad različitim artiklima vrši se kroz definisanje šifarnika agenta.
 
-Uobičajeno, ovi subjekti nisu podložni porezu na dohodak niti posebnim doprinosima, stoga će biti potrebno kreirati posebnu [**Kategoriju agenata**](/docs/configurations/tables/sales/agent-category/) i poseban [**Tip poreza**](/docs/configurations/tables/finance/withholding-tax-types/) koji ne uključuje ni doprinose ni postotke poreza na dohodak.
+Po pravilu, ovi subjekti ne podležu porezu po odbitku niti posebnim doprinosima, pa je potrebno kreirati posebnu [**Kategoriju agenata**](/docs/configurations/tables/sales/agent-category/) i poseban [**Tip poreza po odbitku**](/docs/configurations/tables/finance/withholding-tax-types/) koji ne uključuje ni doprinose ni procente poreza po odbitku.
 
-U kartici **Obračun** ćemo odabrati vrstu poreza (koja se može stvoriti ili odabrati, kao što je gore spomenuto, vrstu s nulom postotkom), a zatim kriterij za ostvarivanje provizije kao što je to slučaj s agentom.
+Na kartici **Obračun** bira se tip poreza (koji se može kreirati ili odabrati, kao što je prethodno navedeno, sa stopom od 0%), a zatim kriterijum za ostvarivanje provizije, kao i kod standardnih agenata.
 
-:::tip VAŽNO 
-Specifičnost postavki nalazi se unutar kartice **Direktne provizije**, gdje ćemo kodirati vrstu provizije **23 – Autorska prava**
+:::tip VAŽNO
+Specifičnost podešavanja nalazi se na kartici **Direktne provizije**, gde je potrebno definisati tip provizije **23 – Autorska prava**.
 :::
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/royalties/tipo23.png)
 
-Kada se detaljnije prouče ove postavke (pomoću opcije **Detalj označenog postotka**), moguće je pratiti dva različita pristupa:
+Ulaskom u detalje ovih podešavanja (putem opcije **Detalj označenog procenta**) moguće je primeniti dva različita pristupa:
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/royalties/dettaglio.png)
 
-- Unesite detaljan popis članaka koji su podložni autorskim pravima (Fluentis neće dopustiti unos članaka koji nemaju postavljenu ovu oznaku)
+- Uneti detaljan spisak artikala koji podležu autorskim pravima (Fluentis neće dozvoliti unos artikala koji nemaju aktiviranu ovu oznaku);
 
-- ili proizvodna linija koja sadrži članke podložne autorskim pravima, pretpostavljajući da proizvodna linija identificira dizajn (ili element) podložan pravu: **ipak će samo članci s oznakom autorskih prava biti podložni odgovarajućem postotku**, nije dovoljno da budu povezani s linijom postavljenom šifarnik agenta.
+- Ili definisati proizvodnu liniju koja sadrži artikle podložne autorskim pravima, pod pretpostavkom da proizvodna linija identifikuje dizajn (ili element) koji podleže autorskom pravu. **Ipak, samo artikli sa aktiviranom oznakom autorskih prava biće predmet odgovarajućeg procenta**, nije dovoljno da pripadaju liniji povezanoj sa šifarnikom agenta.
 
 :::danger VAŽNO
-Nije dopušteno unijeti u agenta X članak (ili liniju) ako je isti članak upravljan u drugom agentu (kao članak ili kao pripadajuća linija): na istom članku, naime, nije dopušteno da više dizajnera zarađuje autorske naknade.
+Nije dozvoljeno uneti kod agenta X artikal (ili liniju) ako je isti artikal već definisan kod drugog agenta (direktno ili preko povezane linije). Za isti artikal nije moguće definisati više dizajnera koji ostvaruju pravo na autorsku naknadu.
 :::
 
-### Logika korištenja
+### Logika korišćenja
 
-Obavljene su postavke u artiklu i agentu, logika rada je sljedeća: prilikom unosa artikla u prodajne dokumente, Fluentis će provjeriti je li artikl podložan na autorska prava ili ne, u prvom slučaju će tražiti koji agent ima postavke (specifične ili za povezanu liniju artikla) provizija u detaljima tipa ’23 - Autorska prava’ i dodat će odgovarajući provizorni redak u dokument.
+Nakon što su podešavanja izvršena na artiklu i agentu, logika rada je sledeća:
 
-Logika koja će slijediti nakon ove valorizacije bit će ista kao i kod bilo kojeg drugog agenta, s pregledima agenta i izračunima liquidacija na zrelosti.
+Prilikom unosa artikla u prodajni dokument, Fluentis proverava da li artikal podleže autorskim pravima. Ako podleže, sistem pronalazi agenta koji ima odgovarajuće podešavanje provizije (direktno za artikal ili za povezanu liniju artikala) u okviru tipa **„23 - Autorska prava“** i automatski dodaje odgovarajući red provizije u dokument.
 
-:::tip BILJEŠKA
-Razlika između agenta i vlasnika autorskih prava je u tome što za potonjeg nije potrebno uključivanje u svaku klijentsku anketu kako bi Fluentis prepoznao postotak koji se primjenjuje na prodaju, što je obavezno za obične agente.
+Dalja obrada nakon ovog obračuna identična je obradi bilo kog drugog agenta, uključujući preglede agenata i obračune dospelih isplata.
+
+:::tip NAPOMENA
+Razlika između standardnog agenta i nosioca autorskih prava je u tome što za nosioca autorskih prava nije potrebno njegovo povezivanje sa svakim pojedinačnim kupcem kako bi Fluentis prepoznao procenat koji treba primeniti na prodaju. Kod standardnih agenata takvo povezivanje je obavezno.
 :::

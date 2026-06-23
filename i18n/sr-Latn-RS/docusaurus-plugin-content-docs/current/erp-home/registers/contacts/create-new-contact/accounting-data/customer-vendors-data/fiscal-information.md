@@ -1,146 +1,164 @@
 ---
-title: Porezni podaci
+title: Poreski podaci
 sidebar_position: 3
 ---
 
-U ovoj kartici unose se podaci i parametri uglavnom fiskalne prirode.
+U ovoj kartici unose se podaci i parametri pretežno fiskalne prirode.
 
 ### Polja
 
-**Nije u klijentu/dobavljaču**: ovo polje je zastarjelo i prisutno radi retrokompatibilnosti (odnosi se na Spezometar prije 2017. koji je ukinut). Unatoč tome, flag je još uvijek funkcionalan, jer je još uvijek prisutna godišnja funkcionalnost Spezometara (čl. 21. DL 78/2010).
+**Nije u kupcu/dobavljaču**: ovo polje je zastarelo i prisutno radi retrokompatibilnosti (odnosi se na Spezometar pre 2017. godine koji je ukinut). Uprkos tome, oznaka je i dalje funkcionalna, jer je još uvek prisutna godišnja funkcionalnost Spezometra (čl. 21. DL 78/2010).
 
-**Isključi iz izjave black list**: ovo polje je zastarjelo i prisutno radi retrokompatibilnosti. Fiskalna obveza trenutno je ukinuta.
+**Isključi iz prijave black list**: ovo polje je zastarelo i prisutno radi retrokompatibilnosti. Fiskalna obaveza je trenutno ukinuta.
 
-**CIG**: ovaj flag aktivira odgovarajuće polje unutar računa prodaje kako bi se naznačio kod identifikacije natječaja (primjerice, za javne natječaje).
+**CIG**: ova opcija aktivira odgovarajuće polje unutar izlaznih računa za unos identifikacionog koda javne nabavke (npr. za javne tendere).
 
-**CUP**: ovaj flag aktivira odgovarajuće polje unutar računa prodaje kako bi se naznačio jedinstveni kod projekta (za fakturiranje javnim tijelima).
+**CUP**: ova opcija aktivira odgovarajuće polje unutar izlaznih računa za unos jedinstvenog projektnog koda (za fakturisanje javnim ustanovama).
 
-**Porez po odbitku**: lag, koji se povezuje s nadolazećim poljem Vrsta poreza po odbitku, aktivira upravljanje porezom na dohodak na prihodima primatelja za određeni profil (tip dobavljača). S ovom aktiviranom vrstom upravljanja, unos dokumenata i knjiženje primljene fakture i izvršene uplate odvijat će se iz modula [**Primalci**](/docs/finance-area/professional-men/general-overview) kako bi se porez na dohodak mogao ispravno i automatski obraditi.
+**Porez po odbitku**: ova oznaka, koja se koristi zajedno sa sledećim poljem **Tip poreza po odbitku**, aktivira za trenutno otvorene matične podatke dobavljača upravljanje porezom po odbitku na naknade primaocima prihoda. Kada je ova funkcionalnost aktivna na strani dobavljača, unos dokumenata, knjiženje primljenih računa i izvršenih plaćanja obavlja se putem modula [Primaoci naknada](/docs/finance-area/professional-men/general-overview). Na taj način omogućeno je ispravno i automatsko upravljanje porezom po odbitku, kao i popunjavanje podataka za Jedinstvenu potvrdu (CU – Certificazione Unica).
 
-**Tip odbitka poreza**: polje (padajući izbornik) povezano je s tablicom  [**Vrste odbitka**](/docs/configurations/tables/finance/withholding-tax-types) unutar koje se definiraju vrste poreza po odbitku (ili poreza) koje treba koristiti. Za svaki redak koji odgovara vrsti poreza po odbitku, potrebno je popuniti polja koja omogućuju automatsko upravljanje izračunom i knjiženjem pomoću [**modula Primaoci**](/docs/finance-area/professional-men/general-overview). 
+**Tip poreza po odbitku**: polje (padajuća lista) povezano je sa tabelom [**Tipovi poreza po odbitku**](/docs/configurations/tables/finance/withholding-tax-types), u kojoj se definišu vrste poreza po odbitku koje treba koristiti. Za svaki red koji odgovara određenoj vrsti poreza po odbitku potrebno je popuniti polja koja omogućavaju automatski obračun i knjiženje kroz modul [**Primaoci naknada**](/docs/finance-area/professional-men/general-overview).
 
+### Javna uprava / Elektronsko fakturisanje
 
-### Javna uprava/Elektroničko fakturiranje 
+Opcija **Elektronsko fakturisanje** omogućava podešavanja u donjoj tabeli koja se odnose na specifičnosti elektronskog fakturisanja za javnu upravu ili za elektronsko fakturisanje sa privatnim licima.
 
-Flag **Elektroničko fakturiranje** određuje prilagodbu pojedinosti polja ispod mreže kako bi se odnosila na specifičnosti elektroničkog fakturiranja za javnu upravu ili elektroničkog fakturiranja s privatnim osobama.
+**Šifra kancelarije / Kod primaoca**: *IPA* kod javne ustanove primaoca računa ili (kada je aktivna opcija *Elektronsko fakturisanje*) *SDI* kod primaoca računa.
 
-**Kod ureda / Kod primatelja**: *IPA* kod javne ustanove primatelja računa ili (aktivan flag *Elektroničko fakturiranje* attivo) *SDI* kod primatelja računa.
+**Naziv kancelarije / Opis primaoca**: opis polja kancelarije/primaoca koji se popunjava nazivom javne ustanove ili privatnog lica.
 
-**Ime ureda / Opis primatelja**: opis polja koda ureda / koda primatelja koje se popunjava imenom javnog ureda ili privatne osobe.
+**Naziv firme**: u ovom polju moguće je povezati već postojeći zapis u Fluentisu koji se odnosi, na primer, na javnu ustanovu zavisnu od glavnog matičnog subjekta koji se koristi (primer: odeljenje za javne radove opštine ili određena zdravstvena ustanova).
 
-**Naziv tvrtke**: U ovom polju moguće je povezati već kodiranu evidenciju u Fluentisu koja se odnosi, na primjer, na javni ured koji ovisi o glavnoj evidenciji koju koristimo (primjer: ured za javne radove u općini ..., ili Zdravstvena ustanova ....... koja ovisi o glavnoj evidenciji "Općina ....") Ova povezana evidencija trebala bi biti postavljena kao odredište za glavnu evidenciju u kartici [**isporuke**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery), na taj način odredište (primjerice, ured za javne radove ....) bit će navedeno u .xml datoteci zajedno s kodom ureda i drugim podacima kao što su adresa itd...
+Ovaj povezani zapis treba da bude postavljen kao odredište za glavni zapis na kartici [**Dostava**](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery). Na taj način će odredište (npr. odeljenje za javne radove) biti navedeno u XML datoteci zajedno sa kodom kancelarije i ostalim podacima kao što su adresa i slično.
 
-Za ispravno upravljanje više kancelarijskih šifri (i stoga više subjekata) koji se odnose na istu glavnu evidenciju, preporučuje se upravljanje i popunjavanje ovog polja (koje nije obavezno i nije potrebno u slučaju pojedinačne kancelarijske šifre izravno povezane s relevantnom evidencijom).
+Za pravilno upravljanje sa više šifara kancelarija (i samim tim više subjekata) povezanih sa istim glavnim zapisom, preporučuje se korišćenje i popunjavanje ovog polja (koje nije obavezno i nije potrebno u slučaju jedne šifre direktno povezane sa odgovarajućim zapisom).
 
-
-**Datum početka**: određuje datum unosa reda ili bilo koji datum od kojeg je aktivan odnos isporuke s određenom javnom upravom.
-
+**Datum početka**: određuje datum unosa stavke ili datum od kojeg je aktivan odnos isporuke sa određenom javnom upravom.
 
 <a id="codice_articolo_fornitore_cliente" style={{ textDecoration: 'none' , color: 'inherit' }}></a>
 
+**Datum završetka**: određuje datum završetka odnosa isporuke sa javnom upravom i čini ovu poziciju nevažećom za generisanje elektronskog računa.
 
-**Datum završetka**: određuje datum završetka odnosa isporuke s javnom upravom i čini ovu poziciju nepodobnom za generiranje elektroničkog računa putem telematskog prijenosa.
+**E-mail**: polje rezervisano za PEC adresu ukoliko je u polju *Tip koda* aktiviran način prijema putem PEC-a.
 
+**Poreski režim**: polje potrebno za upravljanje elektronskim računima (posebno za ulazne račune iz EU ili za *reverse charge* postupke). Podaci se unose u XML zapise koje generiše Fluentis. Padajuća lista povezana je sa sistemskom tabelom koja sadrži dostupne poreske režime.
 
-**Email:** prostor rezerviran za PEC adresu u slučaju da je aktiviran PEC način primatelja u polju *Vrsta koda*
+**Tip šifre artikla za dobavljača/kupca**: u ova dva polja moguće je uneti dodatnu oznaku uz šifru artikla koja će se koristiti u ulaznom ili izlaznom fakturisanju za potrebe XML obrasca. Funkcionalnost je korisna u različitim slučajevima, kao što je automatsko kreiranje ulaznih računa iz primljenih XML datoteka, omogućavajući prepoznavanje šifre artikla koju koristi dobavljač u odnosu na podešavanja artikla u glavnom šifarniku, u sekciji preferiranih dobavljača.
 
-**Porezni režim**: polje potrebno za upravljanje elektroničkim računima (posebno za samofakture u vezi s kupnjama unutar EU-a ili reverse charge): podaci su uneseni u Fluentis-ove generirane .xml telematske zapise.Padajući izbornik povezan je s fiksnom tablicom koja sadrži moguće porezne režime za odabir.
+**PDV grupa / Matični zapis**: polje potrebno za upravljanje PDV grupom kojoj pripada kupac ili dobavljač. U ovom polju poziva se osnovni matični zapis (koji prethodno mora biti kreiran) glavnog subjekta kako bi se njegov poreski identifikacioni broj uneo u XML format umesto broja subjekta koji je član grupe, u skladu sa propisima.
 
-**Tip koda artikla za dobavljača/klijenta:** u prisutnosti dva polja, moguće je unijeti prateći kod uz kod članka za upotrebu u pasivnom ili aktivnom fakturiranju u svrhu xml obrasca. Funkcionalnost je korisna u različitim slučajevima, kao što je automatsko stvaranje faktura za kupnju iz primljenih xml datoteka, omogućavajući prepoznavanje koda članka koji koristi dobavljač u odnosu na postavke članka u šifarniku članova u odjeljku preferiranih dobavljača.
+:::tip Info: PDV GRUPA
+Uvođenjem ove regulative predviđena je mogućnost da preduzeća povezana finansijskim, ekonomskim i organizacionim interesima formiraju jedinstvenu grupu koja se, za potrebe PDV-a, tretira kao jedan poreski obveznik pred poreskim organima. Takva grupa ima jedinstven poreski identifikacioni broj.
 
-**Grupa PDV/Šifarnik:** polje potrebno za upravljanje PDV grupom kojem pripada klijent ili dobavljač kojeg kodiramo. U ovom polju bit će pozvana osnovna evidencija (koja se prethodno mora kreirati) matičnog subjekta kako bi se unio porezni identifikacijski broj (PIB) tog subjekta u xml format umjesto PIB-a subjekta koji je član grupe, prema propisima.
+Preduzeća koja čine deo grupe fakturišu poslovne transakcije prema trećim licima koristeći zajednički PDV identifikacioni broj, odnosno PDV broj grupe.
 
-:::tip Info: GRUPA PDV  
-S uvođenjem ove norme predviđena je mogućnost za poduzeća povezana financijskim, ekonomskim i organizacijskim interesima da stvore jedinstvenu grupu, tretiranu kao jedan porezni obveznik (samo za potrebe PDV-a) pred poreznim tijelima. Stoga će imati jedinstveni porezni identifikacijski broj. Poduzeća koja čine dio grupe fakturirat će poslove prema trećim stranama s zajedničkim PDV identifikacijskim brojem, PDV identifikacijskim brojem grupe. Suprotno tome, prijenosi dobara i pružanje usluga između tvrtki unutar grupe neće utjecati na PDV bazu, budući da se tretiraju kao interni poslovi unutar same grupe. Drugim riječima, sve transakcije izvršene od strane jednog subjekta unutar grupe smatraju se izvršenima od strane cijele grupe. Faktura i ostali dokumenti izdavat će se od strane predstavnika Grupe ili sudionika, navodeći na njima, osim PDV identifikacijskog broja Grupe, i porezni identifikacijski broj sudionika koji je izvršio operaciju.
+S druge strane, prenosi dobara i pružanje usluga između članica grupe ne utiču na PDV osnovicu, jer se smatraju internim transakcijama unutar same grupe.
+
+Drugim rečima, sve transakcije koje izvrši jedan subjekt unutar grupe smatraju se izvršenim od strane cele grupe.
+
+Fakture i ostala dokumentacija izdaju se od strane predstavnika grupe ili pojedinačnog člana, pri čemu se na dokumentima navode i PDV identifikacioni broj grupe i poreski identifikacioni broj člana koji je izvršio konkretnu transakciju.
 :::
 
-### Ograničenje rokova trajanja pokvarljivih dobara
+### Ograničenje rokova plaćanja za kvarljivu robu
 
-**Čl. 62**: flag koja omogućuje aktivaciju upravljanja maksimalnim rokovima plaćanja u prehrambenom sektoru za pokvarljive i nepokvarljive proizvode prema čl. 62. Zakonodavni dekret br. 192/2012; posebno, prilikom unošenja artikala na fakturi, provjerava rok plaćanja u usporedbi s obveznim rokovima za ovu vrstu proizvoda. Upravlja se sljedećim dvjema flaga:
+**Član 62**: opcija koja omogućava aktiviranje upravljanja maksimalnim rokovima plaćanja u prehrambenom sektoru za kvarljive i nekvarljive proizvode u skladu sa čl. 62 Zakonske uredbe br. 192/2012.
 
-> **Tjedno riješenje 30 dana**: postavlja rješenje plaćanja od 30 dana zaobilazeći druge postavke (uključujući one koje se odnose na čl. 62, npr. rješenje u 60 dana).  
-> **Tjedno riješenje 60 dana**: NIJE UPRAVLJANO / ONEMOGUĆENO
+Prilikom unosa artikala na fakturu sistem proverava rok plaćanja u odnosu na zakonski propisane rokove za ovu vrstu proizvoda.
 
-Postoje i druge postavke koje se odnose na **upravljanje pokvarljivom robom**:  
-> **Dani plaćanja za pokvarljivu robu** unutar [Šifarnik artikla > kartica Općenito](/docs/erp-home/registers/items/create-new-item) gdje je definiran rok trajanja koji se primjenjuje;  
-> **Dana do primitka računa** u *Šifarnik klijenta/dobavljača > kartica Opće > kartica Alternativne adrese* korisno je radi pridržavanja točnog datuma primitka računa (da bi se omogućilo polje, vrsta adrese povezana s korištenom alternativnom adresom i definirana u tablici [Tipovi adresa](/docs/configurations/tables/general-settings/address-types)  mora imati postavljeni flag  *Email*).
-> **Dani prijevoza** u tablici *Zone*,  polje koje se može unijeti u *Šifarnik klijenta/dobavljača > kartica [Dostava*](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery) 
+Podržane su sledeće opcije:
 
-### Logika izračuna datum dospijeća plaćanja 
+> **Nedeljno poravnanje 30 dana**: postavlja rok plaćanja od 30 dana, zanemarujući ostala podešavanja (uključujući i ona vezana za čl. 62, npr. rok od 60 dana).  
+> **Nedeljno poravnanje 60 dana**: NIJE PODRŽANO / ONEMOGUĆENO
 
- Datum dospijeća plaćanja predložen je na temelju datuma početka računa. 
+Postoje i druga podešavanja vezana za **upravljanje kvarljivom robom**:
 
- Datum početka računa automatski se izračunava na sljedeći način:
+> **Dani plaćanja za kvarljivu robu** unutar [Šifarnik artikla > kartica Opšte](/docs/erp-home/registers/items/create-new-item), gde se definiše rok koji se primenjuje.
 
- - početno jednak većem od datuma unosa i datuma računa, 
+> **Dani do prijema računa** u *Šifarnik kupca/dobavljača > kartica Opšte > kartica Alternativne adrese*, korisno za određivanje tačnog datuma prijema računa. Da bi polje bilo dostupno, tip adrese povezan sa korišćenom alternativnom adresom i definisan u tabeli [Tipovi adresa](/docs/configurations/tables/general-settings/address-types) mora imati aktiviranu oznaku *Email*.
 
- - zatim, ako su u tipu adrese e-pošte za fakturiranje postavljeni dani primitka računa, na datum računa zbrajaju se dani primitka računa, datum početka postaje veći od datuma početka i datuma računa + dani primitka računa,
+> **Dani transporta** u tabeli *Zone*, polje koje se može definisati u *Šifarnik kupca/dobavljača > kartica [Dostava](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/delivery)*.
 
- - ako u tipu adrese e-pošte za fakturiranje nisu postavljeni dani primitka računa, tada se traži jesu li postavljeni dani prijevoza u kodu zone koji je povezan s klijentom, a datumu računa zbrajaju se dani prijevoza, datum početka postaje veća od datuma početka i datuma računa + dani prijevoza,
+### Logika obračuna datuma dospeća plaćanja
 
- - ako za zonu klijenta nisu postavljeni dani prijevoza, datum početka korespondira/odgovara većem od datuma unosa računa i datuma računa,
+Rok plaćanja predlaže se na osnovu datuma početka obračuna računa.
 
-Korisnik u svakom slučaju može promijeniti datum početka i postaviti željeni datum, u računu će ostati zabilješka da je datum početka promijenjen ručno.
+Datum početka obračuna automatski se određuje na sledeći način:
 
-**Da biste pravilno predstavili datum dospijeća, potrebno je kodirati 2 nove opcije plaćanja s postavljenim flagom “DL Čl.62”, obje s postavljenim flagom"kraj mjeseca" i postavljenim flagom "komercijalno", jednu s rokom od 30 dana, a drugu s rokom od 60 dana.**
+- inicijalno se postavlja na kasniji datum između datuma unosa i datuma računa;
+- ako su za tip e-mail adrese za fakturisanje definisani dani prijema računa, oni se dodaju datumu računa, a datum početka obračuna postaje kasniji od sledeća dva datuma:
+  - postojećeg datuma početka obračuna;
+  - datuma računa uvećanog za dane prijema računa;
+- ukoliko za tip e-mail adrese nisu definisani dani prijema računa, sistem proverava da li postoje dani transporta definisani u zoni povezanoj sa kupcem. U tom slučaju dani transporta dodaju se datumu računa, a datum početka obračuna postaje kasniji od:
+  - postojećeg datuma početka obračuna;
+  - datuma računa uvećanog za dane transporta;
+- ako za zonu kupca nisu definisani dani transporta, datum početka obračuna odgovara kasnijem datumu između datuma unosa računa i datuma računa.
+
+Korisnik u svakom slučaju može ručno izmeniti datum početka obračuna i uneti željeni datum. Sistem će evidentirati da je datum početka obračuna promenjen ručno.
+
+**Da bi se pravilno prikazao datum dospeća, potrebno je definisati dve nove opcije plaćanja sa aktiviranom opcijom „DL Čl. 62“, obe sa uključenim opcijama „kraj meseca“ i „komercijalno“, jednu sa rokom od 30 dana, a drugu sa rokom od 60 dana.**
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image04.png)
 
-Ako je plaćanje kupca bolje od onoga što je izračunato za poljoprivredne ili prehrambene proizvode, zadržava se ta plaćanja.
+Ako su uslovi plaćanja definisani na kartici kupca povoljniji od onih izračunatih za poljoprivredne ili prehrambene proizvode, zadržavaju se uslovi plaćanja definisani za kupca.
 
-Dodavanjem ručno faktura (čak i preskakanjem stavki u narudžbi kupca) moguće je dodati, za kupca s postavljenom zastavicom Čl62, samo stavke koje imaju istu vrstu plaćanja, dakle sve stavke na 30 dana ili 60 dana ili bez dana plaćanja. Poruka će spriječiti unos mješovitih stavki i upozorit će da će se automatski promijeniti uvjet plaćanja na temelju dana plaćanja stavki. 
+Prilikom ručnog unosa računa (uključujući slučaj preuzimanja stavki iz narudžbine kupca), za kupca kod koga je aktivirana oznaka **Čl. 62** moguće je unositi samo artikle koji imaju istu vrstu plaćanja, odnosno:
 
-Stvaranjem računa iz drugih dokumenata (npr. iz DDT-a), dokumenti će se podijeliti prema danima plaćanja navedenim u stavci, i stvorit će se više računa ako u istom dokumentu postoje stavke s različitim danima plaćanja.
+- sve artikle sa rokom plaćanja od 30 dana,
+- sve artikle sa rokom plaćanja od 60 dana,
+- ili artikle bez definisanog roka plaćanja.
 
-### Polja koja se odnose na upravljanje odvojenim SDD (Sepa Direct Debit – SEPA izravna naplata)**
+Sistem će prikazati upozorenje koje sprečava unos artikala sa različitim rokovima plaćanja i obavestiti korisnika da će uslovi plaćanja biti automatski prilagođeni prema rokovima definisanim na artiklima.
 
-SEPA Direktna naplata, koja zamjenjuje prethodni nacionalni RID, alat je za predautoriziranu naplatu temeljem ovlasti o naplati koje Dužnik daje svojem Vjerovniku.
+Prilikom kreiranja računa iz drugih dokumenata (na primer iz otpremnice), dokumenti će se automatski razdvajati prema rokovima plaćanja definisanim na artiklima. Ako isti dokument sadrži artikle sa različitim rokovima plaćanja, sistem će kreirati više zasebnih računa.
 
-Temelji se na prethodnom sporazumu (nalogu) između Dužnika i Vjerovnika koji ovom posljednjem omogućuje da zatraži pokretanje međubankarske procedure za automatsko zaduživanje računa Dužnika.
+### Polja vezana za upravljanje SDD (SEPA Direct Debit – SEPA direktno zaduženje)
 
-**Mandat kod namjene**: U ovom polju treba upisati ‘Purpose code' (obično se postavlja kod“GDSV” [PurchaseSaleOfGoodsAndServices])
+SEPA direktno zaduženje, koje zamenjuje nekadašnji nacionalni RID, predstavlja instrument autorizovane naplate zasnovan na ovlašćenju koje dužnik daje poveriocu.
 
-**Šifra klijenta/mandata**: U ovom polju treba unijeti identifikacijski kod dodijeljen mandatu potpisanom od strane dužnika. Odgovara Rulebook-u (službenom tehničkom dokumentu) ad AT-01 Unique Mandate Reference.
+Zasniva se na prethodnom sporazumu (mandatu) između dužnika i poverioca, kojim se poveriocu omogućava pokretanje međubankarske procedure za automatsko terećenje računa dužnika.
 
- Polje nije case-sensitive. Primjerice, identifikatori 123AAa45678, 123aaA45678, 123aaa45678 e 123AAA45678 trebali bi se smatrati identičnima.
+**Kod namene mandata**: u ovo polje potrebno je uneti *Purpose Code* (najčešće se koristi kod **GDSV** – *PurchaseSaleOfGoodsAndServices*).
 
- Ne može se popuniti samo razmacima i mora sadržavati samo znakove koji pripadaju osnovnom latiničkom setu
+**Šifra klijenta/mandata**: u ovo polje unosi se identifikacioni kod dodeljen mandatu koji je potpisao dužnik. Odgovara tehničkoj specifikaciji označenoj kao **AT-01 Unique Mandate Reference**.
 
-*Primjer*: IT05394480900
+Polje nije **osetljivo na velika i mala slova** (*case-sensitive*). Na primer, identifikatori `123AAa45678`, `123aaA45678`, `123aaa45678` i `123AAA45678` smatraju se identičnim.
 
-**Promjena mandat**: kartica trenutačno nije podržana i treba ostati neoznačena.
+Ne može sadržati samo razmake i mora sadržati isključivo znakove iz osnovnog latiničnog skupa.
 
-**Datum potpisa mandata**: U ovom polju treba unijeti datum potpisa mandata.
+*Primer*: `IT05394480900`
 
-**Datum prvog izvršenja / Datum zadnjeg izvršenja**: Budući da je sdd naplata (kao i "stari" RID sustav) po prirodi periodična izvedba, ovaj raspon datuma kontrolira početak i završetak valjanosti izvedbe.
+**Izmena mandata**: kartica trenutno nije podržana i treba ostati neoznačena.
+
+**Datum potpisivanja mandata**: u ovo polje unosi se datum potpisivanja mandata.
+
+**Datum prvog izvršenja / Datum poslednjeg izvršenja**: budući da je SDD naplata (kao i nekadašnji RID sistem) po svojoj prirodi periodična, ovaj raspon datuma određuje početak i kraj važenja naplate.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image05.png)
 
-Za upravljanje SDD-om također treba popuniti polja
+Za upravljanje SDD-om potrebno je popuniti i sledeća polja:
 
 - **Jedinstveni kod kupca**
+- **Identifikator poverioca**: na primer `IT95ZZZ0000007333890900`
 
-- **Identifikator vjerovnika**: primjer IT95ZZZ0000007333890900
-
-U tablici  **Tvrtka**
+u tabeli **Preduzeće**.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image06.png)
 
-### DRUGO 
+### OSTALO
 
-**Upravljanje zajedničkim računima**: flag omogućava upravljanje zajedničkim izdavanjem računa za prodaju.
+**Upravljanje zajedničkim računima**: opcija omogućava upravljanje zajedničkim izdavanjem izlaznih računa.
 
-Ova situacija je česta, primjerice, u prodaji privatnim osobama dobara koja mogu biti predmet poreznog odbitka od poreza na dohodak. Ako trošak podnosi više osoba, račun mora biti na ime oboje kako bi se mogao ostvariti porezni odbitak.
+Ova situacija je česta, na primer, kod prodaje fizičkim licima dobara koja mogu biti predmet poreskih olakšica ili odbitaka. Ukoliko trošak snosi više osoba, račun mora glasiti na sve učesnike kako bi svaki od njih mogao ostvariti pravo na poreski odbitak.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image07.png)
 
-S aktivnim flagom, unutar računa koji su na ime povezani s određenom evidencijom, prikazat će se dodatna kartica na kojem možete unijeti suvlasnike.
+Kada je opcija aktivna, na računima koji se izdaju za odgovarajući matični podatak pojaviće se dodatna kartica na kojoj je moguće uneti suvlasnike.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image08.png)
 
-Da biste pozvali suvlasnike unutar povezane evidencije, potrebno ih je prethodno kodirati u odjeljku  **Alternativne adrese** unutar odjeljka Opći podaci.
+Da bi se suvlasnici mogli koristiti na računima, potrebno ih je prethodno evidentirati u sekciji **Alternativne adrese** unutar kartice **Opšti podaci**.
 
-U tu svrhu, potrebno je unaprijed definirati vrstu adrese s aktivnim flagom **Suvlasnici** unutar tablice **Vrste adresa** na koju je povezan combo box polja **Vrsta adreseo**.
+U tu svrhu potrebno je unapred definisati tip adrese sa aktiviranom opcijom **Suvlasnici** u tabeli **Tipovi adresa**, na koju je povezan padajući meni polja **Tip adrese**.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image09.png)
 
@@ -148,6 +166,6 @@ U tu svrhu, potrebno je unaprijed definirati vrstu adrese s aktivnim flagom **Su
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image11.png)
 
-Zatim ćemo ih unijeti na fakturi, navodeći i postotak raspodjele troškova.
+Nakon toga suvlasnici se unose na računu, uz navođenje procenta raspodele troška za svakog od njih.
 
 ![](/img/it-it/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/fiscal-information/image12.png)
