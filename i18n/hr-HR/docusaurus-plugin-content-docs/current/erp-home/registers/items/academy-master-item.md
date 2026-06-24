@@ -1,52 +1,54 @@
 ---
-title: Identifikacija proizvoda i pripadajućih djelova 
+title: Uvod
 sidebar_position: 0
 ---
 
-:::important **Fluentis Academy**     
+:::important **Identifikacija proizvoda i pripadajućih djelova**     
 
-Svako proizvodno poduzeće prodaje fizičke proizvode koji se uobičajeno nazivaju gotovim proizvodima. 
+Identifikacija proizvoda i njihovih sastavnih dijelova
 
-Za proizvodnju ovih proizvoda potrebne su sirovine i komponente koje se mogu nabaviti na tržištu.
+Svako proizvodno poduzeće prodaje fizičke proizvode koji se uobičajeno nazivaju gotovim proizvodima.
 
-Jasno je da svako proizvodno poduzeće kao minimum ima potrebu identificirati robu na ulazu i izlazu kako bi upravljalo procesima nabave, prodaje i pripadajuće računovodstvene postupke.
+Za njihovu izradu potrebne su sirovine i komponente dostupne na tržištu.
 
-Svaki proizvod jedinstveno se identificira putem artikla, obično alfanumeričkog koda, prema vlastitim logikama kodiranja svakog poduzeća.
+Očito je da svako proizvodno poduzeće mora, kao minimum, identificirati ulaznu i izlaznu robu kako bi moglo upravljati procesima nabave, prodaje i pripadajućim računovodstvenim procesima.
 
-Teoretski je uvijek moguće opisati strukturu gotovih proizvoda jednostavno putem osnovne liste na razini koja uključuje sve sirovine i/ili komponente za kupnju.
+Svaki proizvod jedinstveno se identificira putem šifre artikla, najčešće alfanumeričke, prema pravilima kodiranja specifičnima za pojedino poduzeće.
 
-Vrlo često je međutim ovaj izloženi način predstavljanja previše jednostavan i neefikasan, pa je potrebno kodirati i međuproizvode, nazvane poluproizvodi.
+Teoretski je stoga uvijek moguće opisati strukturu gotovog proizvoda jednostavnom sastavnicom (BOM) na jednoj razini, koja sadrži sve sirovine i/ili nabavne komponente.
 
-Koju logiku treba primijeniti kako bi se odredilo kada je potrebno kreirati šifru proizvoda za poluproizvod?
+Međutim, takav je prikaz često previše pojednostavljen i nedovoljno učinkovit, pa je potrebno definirati i poluproizvode.
 
-Zadan je gotov proizvod, koliko poluproizvoda treba kodirati kako bi se definirala njegova struktura?
+Postavlja se pitanje:
 
-S tehničko-inženjerskog gledišta moguće je identificirati mnoge dijelove u gotovom proizvodu, ali s proizvodnog gledišta potreba za kodiranjem može biti vrlo različita.
+Koju logiku treba primijeniti kako bi se utvrdilo kada je potrebno kreirati šifru artikla za poluproizvod?
+Koliko je poluproizvoda potrebno definirati kako bi se opisala struktura gotovog proizvoda?
 
-Općenito, ako se logička komponenta strukture uvijek odmah ponovno koristi nakon stvaranja, nije preporučljivo stvarati šifru artikla (osim u nekim iznimkama koje su objašnjene u nastavku).
+S projektantskog odnosno inženjerskog stajališta moguće je prepoznati velik broj dijelova unutar gotovog proizvoda, no iz proizvodne perspektive potreba za njihovim šifriranjem može biti znatno drukčija.
 
-Ako trenutak izrade i upotrebe nisu vremenski podudarni, tada postoji potreba za pohranom elementa, stoga ga treba kodirati kako bi se mogli upravljati odgovarajući procesi i bilanciranje na kraju godine.
+Općenito, ako se određena logička komponenta nakon proizvodnje uvijek odmah koristi u sljedećoj fazi procesa, nije preporučljivo za nju kreirati zasebnu šifru artikla (uz neke iznimke koje će biti objašnjene kasnije).
 
-Stoga, potreba za skladištenjem elementa dovoljan je uvjet za zahtjev za kodiranjem putem šifre artikla.
+Ako trenutak proizvodnje i trenutak korištenja nisu vremenski podudarni, nastaje potreba za skladištenjem te komponente. U tom je slučaju potrebno definirati šifru artikla kako bi se mogli upravljati povezanim procesima i evidentirati vrijednosti u godišnjim računovodstvenim obračunima.
 
-Razlozi koji dovode do potrebe za skladištenjem komponente tipično su sljedeći:  
-- Proizvodnja komponente uključuje značajne troškove postavljanja stroja, pa se postavljaju minimalni proizvodni lotovi kako bi se ograničila postavljanja i povećao omjer između stvarnih sati proizvodnje i dostupnih radnih sati. Stoga su lotovi obično veći od trenutnih potreba, pa će se dio proizvodnje pohraniti radi buduće potrošnje.    
-- Neki se dijelovi moraju proizvesti unaprijed u odnosu na potrebe kako bi se mogli isporučiti gotovi proizvodi u roku koji zahtijeva tržište, pa stvarne količine potrebne u trenutku proizvodnje nisu poznate. Stoga se stvara zaloga uoči buduće potrošnje.  
-- Neki proizvodni procesi imaju neujednačen prinos, pa je potrebno imati zalihu materijala za upotrebu.  
-- Želi se stvoriti zalihu iznad kritičnog resursa (usko grlo) kako bi se izbjegla opasnost od zaustavljanja zbog nedostatka materijala za obradu, jer je stopa proizvodnje tvornice određena upravo uskim grlom
-- Želi se odvojiti neke proizvodne procese kako bi se smanjila njihova međusobna ovisnost kada nisu sinkronizirani, kao što je slučaj u kontinuiranoj proizvodnji.  
+Stoga je potreba za skladištenjem dovoljan razlog za otvaranje zasebne šifre artikla.
 
-Ponekad se ipak odlučuje kodirati element, čak i ako se ne skladišti.
+Najčešći razlozi zbog kojih je potrebno skladištiti određenu komponentu su:
 
-To se obično događa iz sljedećih razloga:  
-- Članak služi samo kao logičko grupiranje skupine članaka koji se koriste zajedno u drugim proizvodima ili se prodaju kao skupina. 
-To omogućava brže i jednostavnije stvaranje osnovnih sastavnica upravljajući samo jednim člankom umjesto skupine članaka koji bi inače morali biti pojedinačno uneseni i upravljani u osnovama sastavnica u kojima se koriste (u literaturi često nazvane kit bill).
-- Obično se članak odmah potroši nakon upotrebe, ali potrebno je održavati malu zalihu kao rezervne dijelove za tehničku podršku.
-- Radni ciklus sastavljenog članka nije prikaziv putem linearnog niza faza jer ima mrežnu prirodu (tj. s više grana).  
-Naime, ogromna većina ERP sustava omogućuje definiranje samo sekvencijalnih radnih ciklusa, pa u slučaju mrežnog ciklusa rada potrebno je unijeti kodove članaka za svaku granu radnog ciklusa.
-- Za identifikaciju dijelova proizvoda s logičkog stajališta ili jer postoji potreba za izračunavanjem troškova za dijelove istog.  
-- Iz razloga tehničke dokumentacije za popravke i održavanje.  
+proizvodnja komponente zahtijeva značajne troškove pripreme stroja, pa se definiraju minimalne proizvodne serije kako bi se smanjio broj priprema i povećao omjer stvarnog proizvodnog vremena u odnosu na raspoloživo radno vrijeme. Zbog toga su proizvodne serije često veće od trenutačnih potreba, pa se dio proizvedene količine skladišti za buduću potrošnju;
+određene komponente potrebno je proizvesti unaprijed kako bi se gotovi proizvodi mogli isporučiti u rokovima koje zahtijeva tržište. Budući da u trenutku proizvodnje nisu poznate stvarne buduće potrebe, stvara se zaliha za buduću potrošnju;
+neki proizvodni procesi imaju promjenjiv prinos, zbog čega je potrebno održavati zalihu materijala;
+želi se stvoriti zaliha ispred kritičnog resursa (uskog grla) kako bi se spriječilo zaustavljanje proizvodnje zbog nedostatka materijala, budući da upravo uska grla određuju ukupni proizvodni kapacitet tvornice;
+želi se odvojiti pojedine proizvodne procese kako bi se smanjila njihova međusobna ovisnost kada ih nije moguće sinkronizirati kao u kontinuiranoj proizvodnji.
 
-U slučajevima kada se stvori kod članka, ali se nikada ne posjeduje, članak se identificira kao fantomski ili fiktivni članak. Stoga za njega neće biti moguće izdavati narudžbe ili izvršavati skladišni izračuni, a MRP sustav će izravno razmatrati njegove komponente bez planiranja samog članka s obzirom da ne može imati zalihe ili narudžbe.*
+Ponekad se ipak odlučuje definirati šifru artikla čak i kada se za taj artikl ne vodi zaliha.
 
+To se najčešće događa iz sljedećih razloga:
+
+artikl služi isključivo kao logička grupa više artikala koji se zajedno koriste u drugim proizvodima ili se prodaju kao paket. Na taj se način pojednostavljuje izrada sastavnica jer se upravlja jednim artiklom umjesto većim brojem pojedinačnih artikala (u literaturi poznato kao kit bill);
+artikl se u pravilu odmah troši nakon proizvodnje, ali je potrebno održavati malu zalihu za potrebe servisiranja i rezervnih dijelova;
+tehnološki postupak sastavljenog proizvoda ne može se prikazati linearnim slijedom operacija jer ima mrežnu strukturu s više grananja. Budući da većina ERP sustava podržava samo sekvencijalne radne procese, potrebno je uvesti dodatne šifre artikala na mjestima gdje dolazi do grananja;
+radi logičkog izdvajanja dijelova proizvoda ili potrebe za obračunom troškova pojedinih dijelova;
+zbog tehničke dokumentacije za popravke i održavanje.
+
+U slučajevima kada postoji šifra artikla, ali za njega nikada ne postoji stanje zalihe, takav se artikl definira kao fantomski artikl (phantom item) ili fiktivni artikl. Za njega nije moguće izdavati narudžbe niti provoditi skladišne transakcije, a MRP sustav će izravno uzimati u obzir njegove komponente bez planiranja samog artikla, budući da ne može imati ni zalihe ni narudžbe.
 :::

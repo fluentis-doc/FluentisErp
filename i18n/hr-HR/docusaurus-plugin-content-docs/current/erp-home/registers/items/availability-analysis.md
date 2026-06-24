@@ -3,66 +3,151 @@ title: Analiza raspoloživosti
 sidebar_position: 6
 ---
 
-Prozor za ispis analize dostupnosti otvara se putem puta **Početna stranica > Artikli > Analiza raspoloživosti** i sastoji se od tri dijela: područje filtra, mreža rezultata po skladištu, mreža pojedinosti.
+:::important Čemu služi
+Fluentis analiza raspoloživosti moćan je i fleksibilan alat koji korisnicima omogućuje praćenje i upravljanje raspoloživim količinama artikala u skladištu u stvarnom vremenu. Putem intuitivnog sučelja analiza brzo obrađuje podatke za određeni artikl jednostavnim unosom šifre artikla. Analiza se može proširiti i na komponente sastavnice (BOM-a), pružajući potpun pregled raspoloživosti.
 
-### Područje filtra 
+U glavnom dijelu analize prikazuju se detaljne informacije o raspoloživosti matičnog artikla i njegovih komponenti, uključujući podatke o zalihama, nedostupnim zalihama te količinama u kašnjenju. Također je moguće pregledati dokumente koji rezerviraju ili oslobađaju količine unutar sustava, što omogućuje detaljnu analizu svih aktivnih procesa.
 
-Pomoću filtara za **Artikl**, možete odrediti koji artikl ili koju seriju artikala želite provjeriti za dostupnost na skladištu.
+Zahvaljujući ovoj funkcionalnosti korisnici mogu donositi informirane odluke o nabavi i upravljanju zalihama, smanjiti rizik od nestašica te optimizirati operativnu učinkovitost. Analiza raspoloživosti ima ključnu ulogu u osiguravanju pravovremenog odgovora na zahtjeve tržišta i održavanju optimalne razine usluge.
+:::
+
+Prozor za pregled analize raspoloživosti otvara se putem izbornika **Početna > Artikli > Analiza raspoloživosti** i sastoji se od tri cjeline: područja filtara, mreže rezultata po skladištu i mreže detalja.
+
+### Područje filtara
+
+Putem filtara za **Artikl** moguće je odrediti za koji artikl ili skupinu artikala želite provjeriti raspoloživost zaliha.
 
 **Kumulativna količina**
 
-Ova opcija služi da odlučite želite li vidjeti kumulativnu količinu dostupnu za taj artikl, ili želite vidjeti dostupnost za svaki pojedini dokument. Također, u ovoj sekciji možete odlučiti hoće li se uzeti u obzir i zaliha koja još nije dostupna u razdoblju koje se razmatra, ili želite vidjeti i zalihu koja će biti dostupna od datuma pretrage ako ta zalihua nije u kašnjenju.
+Ova opcija određuje želite li prikazati ukupnu raspoloživu količinu artikla ili raspoloživost po pojedinom dokumentu. U istom dijelu moguće je definirati treba li uzeti u obzir zalihe koje još nisu raspoložive u promatranom razdoblju ili prikazati količine koje će postati raspoložive od datuma pretrage, pod uvjetom da nisu u kašnjenju.
 
-**Razmotri dostupnosti koje dolaze iz**
+**Razmotrite raspoloživosti iz**
 
-U ovoj sekciji možete odlučiti hoćete li uzeti u obzir raspoloživosti koje dolaze iz svih ili nekih od ponuđenih kategorija, poput: rad po narudžbi, planirana proizvodnja, nabava, izdana proizvodnja, prodaja i skladište.
+U ovoj sekciji moguće je odabrati hoće li se pri izračunu raspoloživosti uzimati u obzir svi ili samo određeni izvori raspoloživosti, kao što su kooperacija, planirana proizvodnja, nabava, oslobođena proizvodnja, prodaja i skladište.
 
 **Provjeravanje perioda**
 
-U ovoj sekciji možete odabrati razdoblje koje želite provjeriti, koje može biti: **Mjesečno** (u tom se slučaju označava broj mjeseci koji želite pregledati), **Tjedno**, **Dnevno** ili možete odabrati određeni datum za provjeru.
+U ovoj sekciji određuje se razdoblje za koje se provjerava raspoloživost. Analiza se može izvršiti na mjesečnoj razini (uz unos broja mjeseci), tjednoj razini, dnevnoj razini ili za točno određeni datum.
 
-**Prikaži retke bez raspoloživosti**
+**Prikaži linije bez raspoloživosti**
 
-Ako aktivan, ovaj flag ukazuje da želite prikazati čak i retke koji trenutačno nemaju raspoloživost, odabirom prikaza među njima:
+- *Prikaži linije bez raspoloživosti*: ako je uključeno, prikazuju se i retci bez vrijednosti u svim poljima raspoloživosti. Ako artikl ima ulaze i izlaze čiji je ukupni zbroj jednak nuli, prikazat će se i bez aktiviranja ove opcije.
 
-- *Samo u zakašnjenju*: dakle retci čija bi količina trebala biti proizvedena na datum koji se promatra, ali zbog proizvodnih kašnjenja još uvijek nije;
+- *Samo u zakašnjenju*: prikazuju se retci čije su količine prema planu već trebale biti proizvedene, ali zbog kašnjenja još nisu dostupne.
 
-- *Samo s negativnom zalihom*: dakle, količine koje trebaju biti proizvedene, koje su već planirane, ali za koje zalihama nije dovoljno da pokriju proizvodnju (vjerojatno će biti unesen nalog dobavljaču radi pokrivanja nedostajuće količine);
+- *Samo s negativne*: prikazuju se količine koje treba proizvesti i koje su već planirane, ali postojeće zalihe nisu dovoljne za pokrivanje potreba. U pravilu u sustavu postoji narudžba dobavljaču za pokrivanje nedostajuće količine.
 
-- *Sažeto*: pregled obiju navedenih opcija;;
+- *Sažeti prikaz*: objedinjeni prikaz prethodne dvije opcije.
 
-- *Detalj sastavnice*: odlučujući uključiti detalj sastavnice odlučujete vidjeti dostupnost svih pojedinih komponenti osnovne distinkcije traženog artikla (prikazuju se i komponente s dostupnošću nula);
+- *Detalj sastavnice*: odabirom ove opcije prikazuje se raspoloživost svih komponenti sastavnice analiziranog artikla, uključujući i komponente čija je raspoloživost jednaka nuli. U prikazu se dodaju stupci *Razina*, *Prioritet* (prioritet definiran u sastavnici za pojedinu komponentu), *Šifra matičnog artikla* i *Varijanta matičnog artikla*. Popis artikala sortira se prema redoslijedu: *Razina + Šifra matičnog artikla + Varijanta matičnog artikla + Prioritet + Šifra artikla + Varijanta artikla*.
 
 **Prodajna mjesta**
 
-U slučaju maloprodaje, možete odlučiti prikazati dostupnost filtriranjem po prodajnom mjestu.
+U maloprodajnom okruženju moguće je filtrirati raspoloživost prema pojedinom prodajnom mjestu.
 
-**Za dokumente koji nemaju potrebne datume**
+**Za dokumente bez potrebnog datuma**
 
-U ovom slučaju možete odabrati hoćete li uzeti u obzir artikle koji nemaju datum primljenje robe ili datum spremnosti za isporuku, ili ih i dalje razmatrati dodjeljujući im datum koji se određuje prilikom pretraživanja i koji se navodi u odgovarajućem polju;
+Moguće je odabrati način obrade artikala koji nemaju definiran datum zaprimanja robe ili datum spremnosti robe. Takve artikle moguće je isključiti iz analize ili ih uključiti dodjeljivanjem datuma koji se definira prilikom pokretanja pretrage.
+
+**Dostupnost skladišta**
+
+U ovoj sekciji moguće je odabrati koja će se skladišta uzeti u obzir prilikom provjere stanja zaliha.
+Nakon postavljanja željenih filtara i opcija potrebno je kliknuti gumb **Pretraži** koji se nalazi na ribbon traci.
+
+### Raspoloživost proizvoda
+
+U tablicama rezultata po skladištu prikazuju se pojedinačni redci raspoloživosti prema dokumentima ili kumulativni redak prema skladištima. Tako je moguće pregledati ukupnu raspoloživost na temelju rezervacija i raspoloživih količina svih skladišta (**Ukupno**) ili raspoloživost za svako pojedino skladište (posebna kartica za svako skladište uključeno u analizu).
+
+Prikazani stupci u ovoj mreži su:
+
+- *Klasa*, *Šifra artikla*, *Opis artikla*, *Šifra varijante* i *JM*: matični podaci artikla;
+
+- *Datum*: datum na koji se odnose podaci prikazani u retku;
+
+- *Raspoloživost*: izračunata raspoloživost na odabrani datum;
+
+- *Operativna zaliha*: ukupna količina artikla u odabranim skladištima, isključujući zatvorene i/ili nedostupne lotove;
+
+- *Dostupna operativna zaliha*: vrijednost *Operativne zalihe* umanjena za *Nedostupnu operativnu zalihu* (sljedeći stupac);
+
+- *Nedostupna operativna zaliha*: operativna zaliha smatra se nedostupnom u sljedećim slučajevima:
+  - nalazi se na blokiranoj lokaciji,
+  - evidentirana je prometom kod kojeg je isključena opcija „available stock” (rezervacijski UDC ulaz),
+  - odnosi se na lot čiji je status označen kao nedostupan,
+  - odnosi se na standardni fazni promet (međufaza proizvodnje);
+
+- *U odgodi*: predstavlja algebarski zbroj svih dokumenata u kašnjenju (s datumom isporuke prije današnjeg datuma) prisutnih u raspoloživosti. Izračunava se kao zbroj vrijednosti u stupcu potražnje umanjen za zbroj vrijednosti u stupcu ponude, ali samo za dokumente u kašnjenju;
+
+- *Narudžba dobavljači*: raspoloživost iz narudžbi dobavljačima koje nisu prisilno zatvorene i imaju preostalu količinu za isporuku;
+
+- *Primka*: raspoloživost iz primki nabave koje još nisu skladišno knjižene;
+
+- *Ulazni računi*: raspoloživost iz neposrednih ulaznih računa koji još nisu skladišno knjiženi;
+
+- *Zaprimanje robe*: raspoloživost iz dokumenata zaprimanja robe;
+
+- *Zahtjevi za nabavu*: raspoloživost iz zahtjeva za nabavu (RDA) u skladištu definiranom u parametrima proizvodnje materijala;
+
+- *Utovar iz podugovorenog*: raspoloživost iz naloga kooperacije koji nisu prisilno zatvoreni i imaju preostalu količinu za isporuku;
+
+- *UlUtovaraz iz planiranih naloga*: raspoloživost iz planiranih proizvodnih naloga;
+
+- *Utovar iz proizvodnih naloga*: raspoloživost iz proizvodnih naloga koji nisu prisilno zatvoreni i imaju preostalu količinu za proizvodnju;
+
+- *Narudžba kupaca*: raspoloživost iz narudžbi kupaca koje nisu prisilno zatvorene i imaju preostalu količinu za otpremu;
 
 
-**Raspoloživost skladišta**
+- *Otpremnice (DDT)*: raspoloživost iz izlaznih otpremnica koje još nisu skladišno razdužene;
 
-U ovoj sekciji možete odabrati koje skladište uzeti u obzir prilikom provjere stanja zaliha.
+- *Izlazni računi*: raspoloživost iz neposrednih izlaznih računa koji još nisu skladišno razduženi;
 
-Nakon postavljanja različitih filtera i oznaka, kliknite na gumb **Traži** smješten u ribbon Bar.
+- *Picking (slaganje robe)*: raspoloživost iz *picking* dokumenata koji nisu prisilno zatvoreni i imaju preostalu količinu za preuzimanje;
 
-### Raspoloživost proizvoda 
+- *Istovari u podugovorenog*: raspoloživost iz dokumenata kooperacije koji nisu prisilno zatvoreni i imaju preostalu količinu za otpremu;
 
-U rezultatnim tablicama za skladište možete vidjeti različite redove dostupnosti prema dokumentima ili kumulativni red prema skladištima. Dakle, možete vidjeti opću dostupnost na temelju obveza svih skladišta (Ukupno) ili dostupnost za pojedino skladište (sve različite kartice s
-imenima skladišta kodiranim u bazi podataka).
+- *Istovari iz planiranih naloga*: raspoloživost koja proizlazi iz potreba planiranih proizvodnih naloga koji još nisu izvršeni;
+
+- *Istovari iz proizvodnih naloga*: raspoloživost koja proizlazi iz potreba proizvodnih naloga koji još nisu izvršeni;
+
+- *Nalog proizvodnje*: raspoloživost iz proizvodnih projekata koji još nisu raspoređeni;
+
+- *Ulaz iz DDMRP narudžbe*: raspoloživost iz DDMRP naloga;
+
+- *Potrošnja iz narudžbe DDMRP*: raspoloživost koja proizlazi iz potreba DDMRP naloga;
 
 ### Detalji
 
-U mreži detalja, klikom na odabrani redak u mreži za skladište, prikazat će se svi dokumenti povezani s tim pojedinačnim redkom. Dakle, narudžba klijenta na koju se odnosi, proizvodni nalog i povezana narudžba te eventualni prodajni dokumenti ako postoje (poput otpremnica, računa).
+U tablici detalja, odabirom retka u mreži skladišta, prikazuju se svi dokumenti povezani s odabranim retkom. Tako je moguće pregledati povezanu narudžbu kupca, proizvodni nalog, pripadajući projekt te eventualne prodajne dokumente, poput otpremnica i računa.
 
-![](/img/it-it/erp-home/registers/items/availability-analysis/image10.png)
+Dvostrukim klikom lijeve tipke miša na odabrani redak moguće je otvoriti pripadajući dokument.
 
-Što se tiče opisa zajedničkih funkcionalnosti koje se pojavljuju u svim obrascima, prisutnih u traci s opcijama, upućuje se na članak o [Zajedničkim gumbima](/docs/guide/common/common-buttons), posebno za funkcionalnosti ispisa također se upućuje na članak o [Pregledu i Ispisu](/docs/guide/common/operations-with-data/reports).
+:::note Napomena
+Raspoloživost artikla koji se proizvodi određena je fazama kod kojih su u [Radnom ciklusu](/docs/erp-home/registers/production/routes/new-route) aktivirane oznake **proizvodna** i **skladišno pokretna**.
 
+Osim posljednje takve faze, koja evidentira završeni proizvod, sve ostale faze evidentiraju *međuproizvode*, odnosno standardnu zalihu po fazama proizvodnje.
+:::
 
-*Poseban gumb*:
-> **Proširi/Skupi ekransku tablicu artikala**: gumb koji omogućuje proširivanje ili smanjenje mrežnih prikaza rezultata.
+:::important Dokumenti uključeni u analizu raspoloživosti
+Kako bi dokument bio uključen u analizu raspoloživosti, mora:
 
-Za sve informacije koje nisu detaljno opisane u ovom dokumentu o zajedničkom radu formi, molimo pogledajte sljedeću vezu [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
+- imati datum raspoloživosti unutar analiziranog razdoblja,
+- koristiti vrstu dokumenta s aktiviranom oznakom **Provjera raspoloživosti**,
+- biti ispisan, odobren ili potvrđen, ovisno o vrsti dokumenta,
+- odnositi se na skladište uključeno u analizu.
+
+Kod zavisne potražnje i zahtjeva za nabavu (RDA), koji nemaju vlastito skladište, koristi se skladište sirovina definirano u MRP parametrima artikla ili, ako nije definirano, odgovarajuće skladište iz općih parametara proizvodnje.
+:::
+
+Za opis zajedničkih funkcionalnosti obrazaca dostupnih na ribbon traci pogledajte dokument [Zajednički gumbi](/docs/guide/common/common-buttons), a za funkcionalnosti ispisa i pregleda ispisa dokument [Pregled i ispis](/docs/guide/common/operations-with-data/reports).
+
+*Specifični gumb*:
+
+> **Proširi/smanji ekransku tablicu artikala**: omogućuje proširivanje ili sažimanje mreža rezultata.
+
+:::note Izrada profila
+U ovoj formi profile je moguće definirati samo za područje filtara i karticu **Ukupno**.
+
+Na karticama pojedinih skladišta nije moguće izrađivati profile jer se one generiraju i uklanjaju dinamički tijekom rada.
+:::
+
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na zajedničko ponašanje obrazaca, pogledajte [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

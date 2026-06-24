@@ -1,544 +1,503 @@
 ---
-title: Šifarnik artikala
-sidebar_position: 1
+title: Novi artikl
+sidebar_position: 1.1
 ---
 
-Postupak stvaranja novog artikla otvara se putem sljedećeg puta:
-- **Početna stranica > Artikl > Stvaranje novog artikla**,
+**Uvod**: [Identifikacija proizvoda i pripadajućih komponenti](/docs/erp-home/registers/items/master-item-intro)
 
-Ili 
+:::important Čemu služi
+Šifarnik artikala u Fluentisu ima ključnu ulogu u upravljanju i organizaciji podataka o artiklima poduzeća. Predstavlja središnju bazu podataka u kojoj se evidentiraju i ažuriraju informacije o svakom proizvodu, omogućujući jasan i sustavan pregled zaliha, troškova i skladišnih kretanja.
 
-- **Početna stranica > Artikli > Traži artikle** klikom na gumb **Novo** koji se nalazi na ribbon Bar za oblikovanje određene forme.
+Podaci pohranjeni u šifarniku artikala uključuju identifikacijske informacije kao što su šifra artikla, opis, mjerna jedinica te podaci o dobavljačima. Također je moguće evidentirati cijene, pravila nabave i upravljanje serijama, čime se olakšavaju svakodnevni procesi nabave, prodaje i logistike.
 
-Otvorit će se obrazac **Šifarnik artikala** s odjeljkom u kojem ćete definirati *obavezne karakteristike* artikla i donjim odjeljkom s različitim Karticama koje grupiraju *specifične karakteristike*.
-
-## 1. **Testata**
-
-Osnovne i obavezne karakteristike koje svaki članak mora imati, a koje nalazimo u prvom dijelu obrasca, uključuju: [**Klasa**](/docs/guide/common/glossary/glossary-intro#item-class), [**Šifra**](/docs/guide/common/glossary/glossary-intro#item-code), kratak **Opis** i [**Jedinica mjere**](/docs/guide/common/glossary/glossary-intro#unit-of-measurement).
-
-:::note BILJEŠKE 
-Komplet razreda i koda mora biti jedinstven za taj određeni članak. 
+Zahvaljujući ovom šifarniku, poduzeća mogu pratiti status artikala, automatizirati procese poput ponovnog naručivanja zaliha te izrađivati detaljna izvješća za učinkovitije planiranje nabave. Integracija s ostalim modulima Fluentisa omogućuje bolju koordinaciju skladišnih aktivnosti, povećava operativnu učinkovitost i doprinosi preciznijem upravljanju zalihama.
 :::
-Druge karakteristike nisu obavezne:
-- **Drugi opis**: drugi opis koji se može dodijeliti artiklu;
-- **Konfiguracija/Verzija**: combo izbornik putem kojeg se odabire verzija artikla;
 
-Nakon što su definirane sve obavezne značajke članka, nastavlja se s unosom specifičnijih značajki putem različitih kartica koje se nalaze u drugom dijelu prozora, a koje su obrađene u sljedećim dokumentima.
+Postupak kreiranja novog artikla pokreće se putem:
 
-*Posebni gumbi*  
+- **Početna > Artikli > Novi artikl**
 
-> **Ažuriranje LF LV s Formulom**: gumb koji omogućuje ažuriranje prodajnih cijena putem određenih formula, polazeći od cjenika;      
-> [**Parametri MRP**](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): gumb koji omogućuje pristup *MRP Parametrima* tog članka, gdje se definiraju parametri potrebni za upravljanje tim člankom u proizvodnji; ovaj gumb pronaći ćete i unutar drugih obrazaca koji se odnose na proizvodni dio.  
+ili
+
+- **Početna > Artikli > Pretraživanje artikala**, klikom na gumb **Novo** na *ribbon* traci forme.
+
+Otvara se forma **Šifarnik artikla - registar stavki**, koja se sastoji od gornjeg dijela za definiranje *obveznih karakteristika* artikla te donjeg dijela s karticama koje grupiraju njegove *specifične karakteristike*.
+
+## 1. **Zaglavlje**
+
+Osnovni i obvezni podaci koje svaki artikl mora imati, a nalaze se u prvom dijelu forme, jesu: [**Klasa**](/docs/guide/common/glossary/glossary-intro#item-class) (najviše 3 znaka), [**Šifra**](/docs/guide/common/glossary/glossary-intro#item-code) (najviše 50 znakova), kratki **Opis** te [**Jedinica mjere**](/docs/guide/common/glossary/glossary-intro#unit-of-measurement).
+
+:::note Napomena
+Kombinacija klase i šifre mora biti jedinstvena za svaki artikl.
+:::
+
+#### Neobvezna polja
+- **Drugi opis**: dodatni opis koji se može dodijeliti artiklu;
+- **Glavna konfiguracija/Verzija**: polje za odabir verzije artikla.
+
+Nakon definiranja svih obveznih karakteristika, moguće je unijeti dodatne specifične podatke kroz kartice koje se nalaze u donjem dijelu prozora i koje su opisane u sljedećim dokumentima.
+
+#### Specifični gumbi
+
+> **Ažuriranje prodajnih cijena formulom**: omogućuje ažuriranje prodajnih cijena na temelju definiranih formula i postojećih cjenika;
+> [**MRP parametri**](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): otvara *MRP parametre* artikla, gdje se definiraju postavke potrebne za upravljanje artiklom u proizvodnji. Ovaj se gumb pojavljuje i u drugim formama vezanim uz proizvodnju.
 
 ## 2. **Općenito**
 
-Unutar ove Kartice moguće je definirati sljedeće opće podatke:
-
-**Datum unosa**: polje koje se automatski popunjava prilikom stvaranja artikla i označava datum stvaranja artikla;
-
-**Stopa PDV-a**: polje za odabir koje omogućuje odabir i unos stope PDV-a koja se odnosi na taj artikl; ovo polje ima prioritet u odnosu na stopu PDV-a koja je dodijeljena klijentu/dobavljaču u šifarniku kontakata;
-
-**PDV na poljoprivredne kupnje / PDV na poljoprivredne prodaje**: koji imaju različitu metodu upravljanja;
-
-**Značajka i Model**: dva su neobavezna polja u kojima se dodatno definira artikl prema raznim grupama koje se uspostavljaju unutar poslovanja s proizvodima; 
-
-**Promet nabave**: izbornik koji je povezan s vrstom *Prometa kupnje* koja je definirana u tablici podračuna za knjiženje kupoprodajnih računa;
-
-**Vrsta artikla**: ovo je opcionalna tablica u kojoj se može unijeti dodatan opis artikla na temelju drugih internih grupiranja;
-
-**Nomenklatura**: u ovim poljima se putem pomoći bira nomenklatura (odnosno carinska tarifa artikla) koja je važna za Intrastat deklaraciju robe uvozom ili izvozom, kao i za statičke svrhe u trgovini artiklima unutar EU-a;
-
-**Dani plaćanja za pokvarljivu robu**: povezano s člankom 62; za pokvarljivu robu račun treba biti izdan i plaćen unutar roka od 30/60 dana, ovisno o vrsti artikla.
-U ovom slučaju, provjerava se kako na artiklu, tako i na vrsti plaćanja koja se unosi kako ne bi bilo moguće izdati račune s datumima dospijeća koji su duži od navedenog roka;
-	
-**Data posljednje izmjene**: označava datum posljednje izmjene artikla;
-
-**Porezna kategorija**: putem ovog odabira možete odabrati poreznu kategoriju kojoj pripada artikl, a koristi se za fiskalna izvješća o zalihi kako biste mogli grupirati inventar po poreznoj kategoriji;
-
-**Kategorija proizvoda**: podaci kao karakteristika, koristi se u određenim posebnim izvješćima; 
-
-**Prihodi od prodaje**: kao i kod fakturiranja kupovine, ovaj odabir služi za upravljanje podračunima prihoda od prodaje za artikl; 
-
-**Priroda artikla**: to je polje koje se koristi za definiranje članka i koristi se u nekim posebnim postupcima. U padajućem izborniku nalazi se popis različitih priroda koje možemo dodijeliti članku. (Kliknite za [rječnik](/docs/guide/common/glossary/glossary-intro#item-nature));
-
-> **Oprema/Alat/Stroj**: grupa članaka posvećena proizvodnom dijelu;	   
-> **Obitelj artikala**: definira artikl za prognoze prodaje;	   
-> **Pakiranje**: koristi se za upravljanje povratnom ambalažom, za računovodstvo (da biste razumjeli koliko ambalaže imate na skladištu i koliko ste dali kupcu ili dobavljaču, kako biste shvatili koliko vam je potrebno vratiti);	   
-> **Usluge**: za upravljanje intervencijama nakon prodaje;	   
-> **Posudba/Razno/Komponenta postrojenja**: služe za upravljanje održavanjem;	  
-**Artikl za set**: za upravljanje fiksnim artiklom koji se ne uzima u obzir prilikom određivanja dostupnosti na skladištu.
-
-Na kraju, nalazimo niz flaga:	
-
-**Kontrola kvalitete**: ako je ovaj flag aktivan, pokreće se proces kontrole kvalitete, što znači da će artikl biti uključen u tok kvalitete;
-
-**Fiktivno**: ako je ovaj flag aktivan, koristi se kako bi se deklariralo da artikl ne smije biti kretan;
-
-**Zatezna kamata**: ako je ovaj flag aktivan, koristi se za uključivanje artikla u porezne ispise skladišta;
-
-**ABC**: za ABC u logističkom upravljanju zalihama podrazumijeva se metoda kategorizacije inventara koja uključuje podjelu artikala u tri klase, nazvane A, B i C, gdje A sadrži najvažnije artikle, a C manje važne artikle. To je metoda koja pomaže fokusirati pažnju na nekoliko bitnih proizvoda umjesto na mnogo proizvoda koji su manje važni. Ako tvrtka koristi ovu metodu, u ovom polju će biti slovo koje određuje kategoriju kojoj artikl pripada;
-
-**U odlasku**: ako aktivan, ovaj flag označava da je artikl na izmaku zaliha.        
-Uvjeti za dobivanje upozorenja da artikl nestaje u dokumentima, na primjer, u Narudžbama kupaca, su:
-
-- u [parametrima Narudžbi kupaca](/docs/configurations/parameters/sales/sales-orders-parameters) mora biti postavljen flag "Provjeri zalihe artikala";             
-- u šifarnik artikla mora biti postavljen flag "U odlasku" i, nadalje "Datum isteka" mora biti manji ili jednak datumu narudžbe.          
-
-**Datum u isteku**: označava od kada je artikl u fazi isteka zaliha;
-
-**Artikl bez izračuna dostupnosti**: ako je flag aktiviran, sustav neće uzeti u obzir dostupnost za korištenje artikla.;
-
-**Arhivirano**: ako je zastava aktivirana, artikl se više neće pojavljivati na popisu artikala koje možete koristiti, jer je postao zastario;
-
-Za više informacija o načinima unosa i odabira podataka unutar formi, pogledajte članak [Unos i odabir podataka](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
-
-## 3. **Administracija**  
-
-Unutar ove Kartice unose se poslovni centri (troškovni centri) i eventualni profitni centar za artikl, tako da se pozivajući artikl u dokumentima prikazuje odabrani centar ili centri, koje se zatim koriste u fazi knjiženja.
-
-**Tablica poslovnih centara**: omogućuje povezivanje artikla s jednim ili više poslovnih centara;   
-
-Polja tablice poslovnih centara:
-> **Broj**: označava broj reda;        
-> **Troškovno mjesto**: omogućuje pozivanje koda troškovnog centra;         
-> **Opis**: pokazuje opis;         
-> **Postotak**: pokazuje postotak raspodjele među različitim centrima troškova unesenima u mrežu (ako je centar jedinstven, bit će 100%);            
-> **Odjel**: omogućuje povezivanje povezanosti centra troškova s artiklom u vezi s odabranom poslovnom *Podjelom*;          
-> **Datum početka / Datum završetka valjanosti**:omogućuje specificiranje veličine poslovnog centra (za dodatne pojedinosti pogledajte tablicu [Poslovnih Centara](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers));             
-> **Kategorija**: pomogućuje određivanje kategorije poslovnog centra (za dodatne pojedinosti pogledajte tablicu [Poslovnih Centara](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)).      
-
-:::note BILJEŠKE 
-Ako je opcija *Upravljanje kontrolingom*, prisutna u kartici *Dodatne postavke* u tablici [**Poduzeće**](/docs/configurations/tables/general-settings/company) isključena, ovo polje se koristi za unos centra troškova. 
+:::important Čemu služi
+Kartica **Općenito** sadrži glavne i logističke informacije o artiklu, poput šifre, opisa, mjerne jedinice te drugih opcionalnih klasifikacija, uključujući robnu kategoriju i vrstu artikla.
+Ova kartica omogućuje definiranje dodatnih podataka korisnih za upravljanje i praćenje artikala unutar poslovnih procesa te olakšava organizaciju podataka i izradu izvješća.
 :::
 
-**Profitni centar**: samo ako je opcija  *Upravljanje kontrolingom*, prisutna u kartici *Dodatne postavke* u tablici **Poduzeće** isključena, bit će omogućeno i služit će za unos profitnog centra.
+#### Specifična polja  
 
-Za dodatne informacije o načinima unosa i upravljanja poslovnim / troškovnim centrima, pogledajte članak  
-[Poslovni centri](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers).
+**Datum unosa**: polje koje se automatski popunjava prilikom kreiranja artikla i označava datum kreiranja artikla;  
+**Stopa PDV-a**: padajući izbornik putem kojeg se odabire i dodjeljuje PDV stopa za artikl; ovo polje ima prioritet nad PDV stopom koja je dodijeljena kupcu/dobavljaču u šifarniku kontakta;  
+**PDV nabave/prodaje za poljoprivredni sektor**: koriste poseban način obračuna;  
+**Karakteristika i Model**: dva neobvezna polja kojima se artiklu može dodijeliti dodatna klasifikacija prema grupiranjima definiranim unutar upravljanja proizvodima poduzeća;  
+**Promet nabave**: padajući izbornik povezan s vrstom *Prometa nabave* definiranom u tablici knjigovodstvenih podkonta za knjiženje ulaznih računa;  
+**Vrsta artikla**: neobvezna tablica u koju se može unijeti dodatna klasifikacija artikla prema internim grupiranjima;  
+**Nomenklatura**: u ovom se polju putem pomoći odabire nomenklatura (odnosno carinska oznaka artikla) potrebna za Intrastat izvještavanje, deklariranje robe pri uvozu i izvozu te statističko praćenje trgovine unutar EU;  
+**Dani plaćanja za kvarljivu robu**: povezano s člankom 62; za kvarljivu robu račun mora biti izdan i plaćen u roku od 30/60 dana, ovisno o vrsti artikla. Kontrola se provodi i na artiklu i na vrsti plaćanja kako ne bi bilo moguće izdati račun s datumom dospijeća duljim od dopuštenog;  
+**Datum zadnje izmjene**: označava datum posljednje izmjene artikla;  
+**Fiskalna kategorija**: putem ovog izbornika odabire se porezna kategorija kojoj artikl pripada, a koristi se za porezne skladišne izvještaje i grupiranje inventure po poreznim kategorijama;  
+**Kategorija proizvoda**: statistički podatak poput karakteristike, koji se koristi u određenim izvještajima;  
+**Promet prodaje**: kao i kod prometa nabave, ovaj izbornik služi za upravljanje prihodovnim kontima pri prodaji artikla;  
+**Vrsta artikla**: polje koje se koristi za dodjelu posebnih karakteristika artiklu kako bi se mogao koristiti u određenim specifičnim procedurama. U izborniku se nalazi popis različitih vrsta prirode artikla (kliknite za [pojmovnik](/docs/guide/common/glossary/glossary-intro#item-nature));  
+
+> **Oprema/Alat**: artikl ove vrste može se povezati sa šifarnikom mjernih instrumenata i opreme korištene u fazama radnih ciklusa.  
+> **Stroj/Postrojenje**: ova vrsta može se povezati sa šifarnikom strojeva;  
+> **Obitelj artikala**: definira artikl kao obitelj artikala/proizvoda koja se koristi u prognozama prodaje;  
+> **Ambalaža**: koristi se za upravljanje povratnom ambalažom i za računovodstveno praćenje količina ambalaže kod kupaca i dobavljača;  
+> **Usluge**: koristi se za upravljanje postprodajnim intervencijama;  
+> **Posudba / Komponenta postrojenja**: koriste se u procesima održavanja;  
+
+#### Dostupne opcije  
+
+**Kontrola kvalitete**: ako je opcija uključena, pokreće proces kontrole kvalitete, što znači da će artikl biti uključen u tok upravljanja kvalitetom;  
+**Fiktivan**: ako je uključena, označava da se artikl ne smije skladišno evidentirati;  
+**Fiskalni interes**: ako je uključena, artikl će biti uključen u porezne skladišne izvještaje;  
+**ABC**: u logističkom upravljanju zalihama ABC predstavlja metodu klasifikacije inventara koja dijeli artikle u tri skupine: A, B i C, gdje A sadrži najvažnije artikle, a C najmanje važne. Ova metoda omogućuje fokusiranje na mali broj ključnih proizvoda umjesto na veliki broj manje značajnih. Ako poduzeće koristi ovu metodu, u ovom će se polju nalaziti oznaka kategorije kojoj artikl pripada;  
+**U odlasku**: ako je opcija uključena, označava da je artikl u fazi povlačenja iz upotrebe.  
+Uvjeti za prikaz upozorenja da je artikl u gašenju u dokumentima, primjerice u narudžbama kupaca, su:  
+- u [Parametrima narudžbi kupaca](/docs/configurations/parameters/sales/sales-orders-parameters) mora biti uključena opcija **Provjera artikala u gašenju**;  
+- u šifarniku artikla mora biti uključena opcija **U gašenju**, a **Datum gašenja** mora biti manji ili jednak datumu narudžbe.  
+
+**Datum roka isteka**: označava datum od kojeg je artikl stavljen u status gašenja;  
+**Izuzimanje od izračuna raspoloživosti**: ako je opcija uključena, sustav neće provjeravati raspoloživost artikla prije njegove uporabe;  
+**Arhivirano**: ako je opcija uključena, artikl se više neće prikazivati među dostupnim artiklima jer se smatra zastarjelim;  
+**Autorska prava**: ako je opcija uključena, označava da je artikl podložan autorskim pravima odnosno *royalty* naknadama te će biti uključen u [Upravljanje *royalty* naknadama](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/agent-registry/royalties/).  
+
+## 3. **Administracija**
+
+Unutar ove kartice definiraju se poslovni centri (centri troška) i eventualni profitni centar artikla kako bi se, prilikom korištenja artikla u dokumentima, automatski prenijeli odabrani centri koji će se koristiti tijekom knjiženja.
+**Mreža poslovnih centara**: omogućuje povezivanje šifarnika artikla s jednim ili više poslovnih centara;  
+
+#### Polja tablice poslovnih centara  
+
+> **Broj**: označava broj retka;  
+> **Centar troška**: omogućuje odabir šifre centra troška;  
+> **Opis**: prikazuje opis centra troška;  
+> **Postotak**: označava postotak raspodjele između različitih centara troška unesenih u mrežu (ako postoji samo jedan centar, vrijednost je 100%);  
+> **Odjel**: omogućuje povezivanje centra troška s artiklom u odnosu na odabranu poslovnu *Diviziju*;  
+> **Datum početka / Datum završetka valjanosti**: omogućuju definiranje razdoblja valjanosti povezanosti;  
+> **Dimenzija**: omogućuje definiranje dimenzije poslovnog centra (za više informacija pogledati tablicu [Poslovni centri](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers));  
+> **Kategorija troška**: omogućuje definiranje kategorije poslovnog centra (za više informacija pogledati tablicu [Poslovni centri](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)).
+
+:::note[Napomena]
+Ako je parametar *Upravljanje kontrolingom*, koji se nalazi u kartici *Ostale postavke* tablice [**Tvrtka**](/docs/configurations/tables/general-settings/company), isključen, ovo se polje koristi za unos centra troška.
+:::
+
+**Profitni centar**: samo ako je parametar *Upravljanje kontrolingom*, koji se nalazi u kartici *Ostale postavke* tablice **Tvrtka**, isključen, ovo će polje biti dostupno i služit će za unos profitnog centra.
 
 ## 4. **Nabava**
 
-U ovoj Kartici definiraju se svi podaci potrebni za nabavu predmetnog članka.
+:::important[Čemu služi]
+Kartica Nabava u šifarniku artikala Fluentisa omogućuje definiranje svih parametara potrebnih za optimalno upravljanje zalihama artikla. U prvom dijelu postavljaju se opći podaci poput minimalne i maksimalne zalihe, koji određuju granice unutar kojih se količine na skladištu trebaju održavati. Ostali parametri uključuju tjedne pokrivenosti, dane zalihe i točku ponovne narudžbe koja određuje kada je potrebno izvršiti novu narudžbu.
+Dodatno su dostupne postavke za pisače etiketa i vrste izvještaja etiketa, korisne za upravljanje serijama u različitim statusima (*Jedinstvena*, *Usklađena*, *Postoji greška*, *Karantena*). U drugom dijelu moguće je definirati iste parametre za svako skladište u kojem se artikl nalazi, čime se omogućuje precizno i prilagođeno upravljanje zalihama.
+:::
 
-Prozor se sastoji od dvije dijelove: 
+U ovoj se kartici definiraju svi podaci potrebni za nabavu predmetnog artikla.  
+Prozor se sastoji od dva dijela:
 
-1. U prvom dijelu postavljaju se podaci za opskrbu općenito za artikl, a ne za pojedini skladište:
+a. U prvom dijelu postavljaju se podaci za opću nabavu artikla, a ne za pojedino skladište:
 
-**Minimalna zaliha i maksimalna zaliha**: predstavlja minimalne količine koje uvijek moraju biti prisutne u skladištu za taj artikl i maksimalne količine koje se mogu čuvati u skladištu;
+**Minimalna zaliha i maksimalna zaliha**: predstavljaju minimalne količine koje uvijek moraju biti dostupne na skladištu za taj artikl te maksimalne količine koje se mogu držati na skladištu;  
+**Dani zalihe**: predstavljaju broj dana potrebnih za nadoknadu barem minimalne zalihe definirane za artikl;  
+**Tjedni pokrivenosti**: definira vremensko razdoblje (izraženo u tjednima) tijekom kojeg zaliha pokriva potrebe za tim artiklom;  
+**Indeks pokrivenosti**: polje u koje se unosi postotak koji planer ili MRP može, ali ne mora, koristiti za obnovu zaliha. Ako je u MRP parametrima aktivirana opcija *Uzmi u obzir indeks pokrivenosti*, tijekom planiranja postupak će koristiti postotak definiran u ovom polju kako bi obnovio raspoloživost artikla u količini potrebnoj za pokrivanje potreba tijekom broja tjedana definiranih u polju **Tjedni pokrivenosti**;  
+**Razina zalihe za ponovno naručivanje**: ovdje se definira količina pri kojoj je potrebno pokrenuti novu narudžbu za artikl;  
+**Dani za ponovnu naručivanje**: broj dana potreban za obnovu zalihe materijala na skladištu;  
+**Interval pregleda točke ponovnog naručivanja**: definira koliko često je potrebno pregledati i ažurirati točku ponovne narudžbe;  
+**Zadnji datum izračuna točke ponovne naručivanja**: prikazuje datum posljednje analize tijekom koje je određena prethodno navedena točka ponovne narudžbe.
 
-**Dani zalihe**: dani potrebni za popunjavanje minimalnih zaliha koje su određene za taj artikl;
+Postoje i dvije dodatne sekcije:
 
-**Tjedni pokrivanja**: označava vremenski interval (izračunat u tjednima) tijekom kojeg zaloga pokriva potrebu za tim artiklom;
+- **Pisači za etikete**: omogućuju odabir zadanih pisača za ispis etiketa serija prema različitim *statusima serije*; moguće je odabrati pisač za statuse *Jedinstvena*, *Sukladna*, *Postoji greška* i *Karantena*.
 
-**Indeks pokrivenosti**: ovo je polje koje se može uređivati, a unosi se postotak koji se može ili ne mora uzeti u obzir od strane planera ili MRP-a za obnavljanje zaliha.
+- **Vrste etiketa**: omogućuju definiranje zadanih izvještaja za ispis etiketa serija prema različitim *statusima serije*; moguće je koristiti različite izvještaje za statuse *Jedinstvena*, *Sukladna*, *Postoji greška* i *Karantena*.
 
-Ako se u parametrima MRP postavi flag *Uzmi u obzir indeks pokrivanja* u trenutku planiranja, postupak će uzeti u obzir postotak naveden u ovom polju kako bi obnovio dostupnost artikla za količinu koja će pokriti potrebu n broj tjedana koje ste odlučili navesti u polju **Tjedni pokrivanja**;
+b. U drugom dijelu prozora definiraju se skladišta u kojima se artikl nalazi te se po potrebi mogu postaviti neki od prethodno navedenih podataka (minimalna/maksimalna zaliha i dani zalihe, točka ponovne narudžbe i dani za ponovnu narudžbu, ispis etiketa za statuse jedinstvena/sukladna/nesukladna/karantena) za svako pojedino skladište. (Primjerice, minimalna ili maksimalna zaliha tog artikla u određenom skladištu, kao i ostali navedeni podaci.)
 
-**Točka za ponovno naručivanje**: ovdje se označava kod kojeg se iznosa potrebno naručiti ponovo taj artikl;
+## 5. **Kategorije popusta nabave**
 
-**Dani za ponovno naručivanje**: dani potrebni za obnovu materijala na skladištu;
+U ovoj se kartici unose **Kategorije rabata** prema kojima se artikl nabavlja. Te kategorije koristi **Upravljanje cijenama** modula nabave.
 
-**Vremenski interval pregleda točke ponovnog naručivanja**: naznačava se svaki koliko vremena se treba pregledati i ažurirati bod ponovnog naručivanja;
+## 6. **Kategorije popusta na prodaju**
 
-**Zadnji datum izračuna točke ponovnog naručivanja**: naznačen je datum posljednjeg izračuna kada je provedena analiza i kada je postavljena točka naručivanja gore navede;
+U ovoj se kartici unose **Kategorije rabata** prema kojima se artikl prodaje. Te kategorije koristi **Upravljanje cijenama** modula prodaje.
 
-Nakon toga postoje dvije sekcije nazvane:
+## 7. **Kupci**
 
-- **Pisači za etikete**: omogućuje odabir zadanih pisača za ispis etiketa lotova za različite  *Lot Status-e*; tako će biti moguće odabrati pisač za Lot Status-e *Jedinstveno*, *Suglasno*, *Nesuglasno*, e *Karantena*.
+U ovoj je kartici moguće povezati artikl s popisom kupaca koji su ga kupili.
 
-- **Vrsta etikete**: omogućuje određivanje zadanih izvještaja za ispis za lotove u različitim Statusima lotova; stoga će biti moguće odabrati različite izvještaje ovisno o statusu lota  *Jedinstveno*, *Suglasno*, *Nesuglasno*, e *Karantena*.
+**Vrsta uzorka**: padajući izbornik za definiranje zadanog načina uzimanja uzoraka iz proizvodnog naloga za taj artikl (primjerice jedan uzorak na svakih 100 komada ili jedan uzorak na svaka 3 naloga i sl.). Vrste uzorkovanja prethodno se definiraju u tablici dostupnoj putem izbornika **Tablice > Logistika**.
 
-2. U drugom dijelu prozora, pak, navode se različiti skladišta u kojima se može pronaći artikl, a po potrebi je moguće odrediti neke od prethodno navedenih podataka (minimalna/maksimalna zaliha i dani za zalihu, točka ponovnog naručivanja i dani za ponovno naručivanje, ispis etikete za jedinstveni/suglasni/nesuglasni/karantinski status) za svako pojedinačno skladište. (npr. minimalna ili maksimalna zaliha koju možete imati za taj artikl u određenom skladištu, i tako dalje za ostale informacije).
+**Gornja tablica**:  
+**Kupac**: potrebno je navesti konto/podkonto i naziv kupca;  
+**Ekonomska serija**: unosi se ekonomska serija (minimalna količina koju kupac može naručiti) zajedno s pripadajućom mjernom jedinicom;  
+**Artikl kupca**: u ovom dijelu moguće je unijeti šifru i opis koje kupac koristi za artikl u vlastitoj bazi podataka; unosom te reference ona će se automatski prikazivati u svim dokumentima za tog kupca i taj artikl;  
+**Sektor primjene**: ovdje se navodi područje primjene kod kupca;  
+**Vrsta uzorka**: ovdje se odabire vrsta uzorkovanja artikla za konkretnog kupca, koja može biti različita od one odabrane u početnom izborniku prozora;  
+**Tehnička kartica**: ako za artikl već postoji tehnička specifikacija, u ovom se dijelu prikazuju podaci o dokumentu;  
+**Završno ispitivanje**: u ovo se polje unose eventualni podaci o vrsti, godini, šifri i opisu završnog ispitivanja;  
+**Varijanta**: u ovo se polje unosi eventualna varijanta artikla odabirom iz padajućeg izbornika koji sadrži prethodno definirane varijante iz tablice **Varijante artikla**;  
+**Napomene**: dio u koji se mogu unijeti dodatne napomene.
 
-## 5.Kategorija popusta na nabavu**
+Donja tablica može sadržavati informacije o [Dodatnim podacima](/docs/configurations/utility/extra-data/extradata/search-extradata).
 
-U ovoj kartici unose se **Kategorije popusta** s kojima se kupuje proizvod. Ove kategorije koriste se u **Upravljanju cijenama** modula kupnje.
+#### Specifični gumbi  
+> **Unesi kupce**: omogućuje unos novog kupca;  
+> **Izbriši kupca**: omogućuje brisanje prethodno unesenog zapisa kupca.
 
-## 6. Kategorija popusta na prodaju**
+## 8. **Barkod**
 
-U ovoj kartici unose se **Kategorije popusta** prema kojima se prodaje artikl. Ove kategorije koristi **Upravljanje cijenama** iz modula prodaje.
+Unutar ove kartice moguće je unijeti alternativne šifre, odnosno barkodove koji predstavljaju artikl.  
+Barkodovi su kodovi koji sadrže osnovne informacije o artiklu s kojim su povezani te su korisni za skladišne operacije. Ovi se kodovi očitavaju pomoću posebnih uređaja, tzv. mobilnih terminala, koristeći laserske zrake ili LED skenere.  
+Barkodovi mogu biti različitih vrsta.  
+Dvije vrste koje sustav podržava su:
 
-## 7. **Klijenti**
+- EAN13 (što znači da barkod može imati najviše 13 znakova)  
+- EAN128 (što znači da barkod mora imati paran broj znamenki).
 
-U ovoj Kartici moguće je povezati popis klijenata koji su kupili ovaj proizvod.
+U **Fluentis ERP-u** ne postoje unaprijed definirani parametri koji određuju kako barkod mora biti postavljen da bi odgovarao standardima EAN13 i EAN128, ali je moguće primijeniti prilagođene algoritme koji slijede standard i provjeravaju ispravnost unesenog barkoda prema navedenim pravilima.  
 
-**Tip uzorkovanja**: combo za definiranje zadane metode uzimanja uzoraka s proizvodnog naloga za taj artikl (na primjer, jedan uzorak svakih 100 komada ili 1 uzorak svakih 3 naloga itd.). Tipovi uzimanja uzoraka prethodno su kodirani unutar tablice u putanji **Tablice > Logistika**;
+Forma se sastoji od mreže u koju se može unijeti **Novi** barkod pomoću gumba **Unesi** na ribbon traci ili izravno dodavanjem novog retka.  
 
-Gornja mreža:
+U polju **Vrsta barkoda** odabire se vrsta barkoda putem odgovarajućeg izbornika, dok se u polje **Barkod** unosi sam kod.
 
-**Kupac**: potrebno je navesti klijenta, konto/podkonto i opis;
+:::note[Napomena]
+Ako je u tablici [Vrste barkodova](https://docs.fluentis.com/FluentisErp/docs/configurations/tables/general-settings/barcode-types/) aktivirana opcija **Izvoz za javnu upravu**, provjera jedinstvenosti barkoda provodi se samo na razini pojedinog artikla. Ako je opcija isključena, provjera jedinstvenosti provodi se globalno za sve artikle.
+:::
 
-**Ekonomski lot**: treba navesti ekonomski lot (minimalna količina koju kupac može kupiti) s odgovarajućom jedinicom mjere;
-
-**Artikl kupca**: u ovom odjeljku možete navesti šifru i opis koji kupac dodjeljuje artiklu unutar svoje baze podataka; navođenjem njihove reference u ovom odjeljku, ista će biti navedena u svim dokumentima vezanim uz tog kupca za taj artikl;
-
-**Sektorsko korištenje**: ovdje je naznačen sektor upotrebe klijenta;
-
-**Vrsta uzorka**: u ovom slučaju odabire se vrsta uzorkovanja artikla prema klijentu s kojim je povezan, što može biti drugačije od one odabrane u početnoj kombinaciji prozora; 
-
-**Tehnička kartica**: u slučaju da već postoji tehnički list za ovaj artikl, u ovoj sekciji se navode detalji dokumenta;
-
-**Završno ispitivanje**: u ovom polju unesite eventualne informacije o vrsti, godini, kodu i opisu konačne provjere;
-
-**Varijanta**: u ovom polju unesite eventualnu varijantu tog artikla, odabirom iz kombo okvira koji sadrži varijante prethodno kodirane u tablici **Varijante Artikla**;
-
-**Napomene**: odjeljak u kojem možete unijeti eventualne napomene.
-
-Donja mreža može sadržavati informacije o [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/search-extradata).
-
-*Posebni gumbi*: 
-> **Unesi kupce**: omogućuje unos novog klijenta;    
-> **Novi povlašteni kupac**:     
-> **Izbriši kupca**: omogućuje brisanje unesenog klijenta.
-
-## 8. **Barkodovi**
-
-U ovoj Kartici možete unijeti eventualne alternativne kodove, poznate i kao barkodovi, koji predstavljaju artikl.
-
-Barkodovi su trake s kodom koji sadrže neke od osnovnih informacija o kodiranju povezane s artiklom kojem su dodijeljeni i korisni su za operacije u skladištu. Ovi se kodovi čitaju putem određenih uređaja poznatih kao mobilni uređaji pomoću laserskih zraka ili LED traka. 
-
-Bar kodovi mogu biti različitih vrsta. 
-Dvije vrste kojima upravlja baza podataka su:
-- EAN13 (označava da maksimalna duljina barkoda može biti 13 znakova)   
-- EAN128 (označava da barkod mora imati paran broj znakova)
-
-U **Fluentis ERP** nisu unaprijed definirani parametri koji ukazuju kako postaviti barkod kodiranje da bi se poštovali standardi EAN13 i 128, ali mogu se primijeniti prilagođeni algoritmi koji slijede standarde i provjeravaju uneseni barkod kako bi se osiguralo da poštuje navedene norme.
-
-Obrazac se sastoji od mreže unutar koje se unosi **Novi** barkod putem gumba **Umetni** koji se nalazi na ribbor bar, ili izravno na novi redak.
-
-U polju **Tip barkoda** odabire se, putem odgovarajuće kombinacije, vrsta barkoda koju želite kodirati, a u polje **Barkod** unosi se kod barkoda.
-
-![](/img/it-it/erp-home/registers/items/create-new-items/item-registry/barcode/barcode_01.png)
-
-*Posebni gumbi*:
-
-> **Provjera**: pritiskom na ovaj gumb, sustav će provjeriti odgovara li kod navedenim pravilima o duljini koju kod treba imati prema vrsti koju unosimo;  
-> **Izbriši barkodove**: omogućuje brisanje prethodno unesenih barkodova.
+#### Specifični gumbi  
+> **Provjera**: pritiskom na ovaj gumb sustav provjerava odgovara li kod pravilima o duljini definiranima za odabranu vrstu barkoda;  
+> **Izbriši barkod**: omogućuje brisanje prethodno unesenog barkoda.
 
 ## 9. **Pakiranje**
 
-Putem ove Kartice definiramo način pakiranja artikla određujući koji su tipovi JZU (Jedinice za utovar) uključeni.
+:::important[Čemu služi]
+Kartica Pakiranje u šifarniku artikala Fluentisa ključna je za definiranje načina pakiranja artikla određivanjem vrsta jedinica tereta (UDC) koje ga čine. Ova konfiguracija može imati hijerarhijsku strukturu, gdje primjerice jedna paleta može sadržavati više kutija, a svaka kutija određeni broj artikala.
+Precizno definiranje pakiranja vrlo je važno jer omogućuje automatsko generiranje potrebnih jedinica tereta za otpremu prilikom pripreme narudžbe.
+Dodatno je moguće povezati specifične mjerne jedinice za volumen te definirati opis za kupca ili dobavljača, čime se omogućuje prilagođeno upravljanje prema potrebama pojedinog poslovnog partnera. Ova kartica predstavlja važan alat za optimizaciju logistike i upravljanje skladištem.
+:::
 
-Može biti strukturiran kao stablo, na primjer, možemo odrediti paletu kao način pakiranja, koja može sadržavati određeni broj kutija, a svaka od njih može sadržavati određeni broj artikala.
+Putem ove kartice definira se način pakiranja artikla određivanjem vrsta jedinica tereta koje ga čine. Struktura može biti hijerarhijska, jer je moguće definirati, primjerice, paletu kao način pakiranja koja sadrži određeni broj kutija, a svaka kutija određeni broj artikala. Definiranje pakiranja omogućuje sustavu automatsko kreiranje potrebnih jedinica tereta za otpremu prilikom pripreme narudžbe za isporuku. Prozor se sastoji od mreže unutar koje se unose sljedeće informacije:
 
-Definiranje pakiranja omogućuje sustavu stvaranje potrebnih  JZU ova za otpremu u trenutku kada moramo pripremiti narudžbu za dostavu;
-
-Na prozoru se nalazi mreža unutar koje se unose sljedeće informacije:
-
-**Tip JZU /Tip JZU sadržaj**: u ova polja unosimo vrstu JZU, odnosno vrstu pakiranja, te vrstu sadržaja odabirom odgovarajućeg unosa iz pripadajućeg padajućeg izbornika; podaci unutar ovih padajućih izbornika prethodno su definirani u pripadajućoj tablici (Konfiguracija > Tablice > Logistika);
-
-**Količina**: u ovom polju se navodi količina za određenu JZU;
-
-**Prioritet**: u ovom polju se navodi prioritet pakiranja (na primjer, ako imamo paletu unutar koje imamo kutije, trebat će odrediti prioritet kako bi sustav pri stvaranju JZU ova već znao redoslijed pakiranja);
-
-**Konto/Detaljni konto**: u ta polja unesite račun i podračun klijenta/dobavljača;
-
-**Dimenzija jedinice mjere**: ovom polju odabire se Jedinica mjere (JM) za JZU;
-
-**Visina/Širina/Dubina**: u ovim poljima se specificiraju dimenzije pakiranja;
-
-**Opis tipa JZU/ Opis tipa JZU sadržaja/Opis klijenta/dobavljača**: u ovim poljima, nakon što unesete vrstu JZU, vrstu JZU sadržaja i klijenta/ponuđača računa/podračuna, automatski će se prikazati opisi odabranih vrsta;
-
-**Jedinica mjere volumena**: u ovom polju ćemo navesti jedinicu mjere za volumen;
-
-**Tolerancija dimenzija/Tolerancija količine**: koriste se u prilagodbama i potrebni su kada se iz plana utovara stvara popis JZU-a s dostupnim JZU -ima na skladištu. Postupak bi trebao dodati na popis JZU-a JZU s dimenzijama ili količinama koje se razlikuju od onih navedenih u pakiranju za određeni postotak. Nisu korišteni kao standard;
-
-**Obavezne dimenzije**: ako je ova opcija aktivna, flag označava da su navedene dimenzije obavezne;
-
-**Obvezna utovarna jedinica**: ako je ova opcija aktivna, flag označava da se ovaj artikl mora obavezno upravljati putem jedinice za utovar u proizvodnim izjavama.
+**Vrsta jedinice tereta / Tip palete**: u ova se polja unosi vrsta jedinice tereta, odnosno vrsta ambalaže, te vrsta sadržaja odabirom željene stavke iz odgovarajućeg padajućeg izbornika; podaci dostupni u izbornicima prethodno su definirani u tablici [Vrste jedinica tereta/palete](/docs/configurations/tables/logistics/loading-unit-types);  
+**Količina**: u ovom se polju navodi količina koju ta jedinica tereta može sadržavati;  
+**Prioritet**: u ovom se polju definira prioritet pakiranja (primjerice, ako paleta sadrži kutije, potrebno je odrediti prioritet kako bi sustav znao redoslijed stvaranja jedinica tereta);  
+**Konto / Podkonto / Naziv kupca/dobavljača**: u ovom se polju navodi kupac ili dobavljač koji zahtijeva ovu vrstu jedinice tereta. Na taj je način moguće definirati različite jedinice tereta za pojedinog kupca;  
+**Jedinica mjere dimenzija**: u ovom se polju odabire mjerna jedinica za dimenzije jedinice tereta; prilikom unosa **Vrste jedinice tereta**, vrijednost se automatski preuzima iz tablice [Vrste jedinica tereta](/docs/configurations/tables/logistics/loading-unit-types);  
+**Visina / Širina / Dubina**: u ovim se poljima definiraju dimenzije kompletne jedinice tereta; prilikom unosa **Vrste jedinice tereta**, vrijednosti se automatski preuzimaju iz tablice [Vrste jedinica tereta](/docs/configurations/tables/logistics/loading-unit-types) samo ako opcija **Promjenjivi volumen** nije aktivna. U suprotnom se podaci ne predlažu te ih operater mora ručno unijeti zbog nemogućnosti predviđanja rasporeda artikala unutar odabrane jedinice tereta. Vrijednosti se uvijek mogu ručno izmijeniti, a pri svakoj izmjeni automatski se ponovno izračunava **Volumen**;  
+**Jedinica mjere volumena**: u ovom se polju definira mjerna jedinica volumena jedinice tereta; prilikom unosa **Vrste jedinice tereta**, vrijednost se automatski preuzima iz tablice [Vrste jedinica tereta](/docs/configurations/tables/logistics/loading-unit-types);  
+**Volumen**: u ovom se polju navodi volumen kompletne jedinice tereta. Ako je opcija **Promjenjivi volumen** aktivna, pri unosu **Vrste jedinice tereta** vrijednost se izračunava zbrajanjem volumena prazne jedinice tereta iz tablice [Vrste jedinica tereta](/docs/configurations/tables/logistics/loading-unit-types), volumena artikla (preuzetog iz polja *Volumen* na kartici Težine / Dimenzije šifrarnika artikla pomnoženog s količinom) te volumena sadržanih jedinica tereta. Ako opcija **Promjenjivi volumen** nije aktivna, automatski se preuzima volumen prazne jedinice tereta iz navedene tablice. U slučaju promjene dimenzija **Visina / Širina / Dubina**, volumen se ponovno izračunava. Volumen se također ponovno izračunava pri promjenama volumena **Vrste sadržane jedinice tereta**. Vrijednost je uvijek moguće ručno izmijeniti;  
+**Varijabilni volumen**: označava da se radi o jedinici tereta s promjenjivim volumenom, odnosno da ukupni volumen ovisi o sadržaju i načinu slaganja; riječ je o polju samo za čitanje koje se definira u tablici [Vrste jedinica tereta](/docs/configurations/tables/logistics/loading-unit-types);  
+**Jedinica mjere težine**: u ovom se polju definira mjerna jedinica težine jedinice tereta; prilikom unosa **Vrste jedinice tereta**, vrijednost se automatski preuzima iz tablice [Vrste jedinica tereta](/docs/configurations/tables/logistics/loading-unit-types);  
+**Težina**: u ovom se polju navodi ukupna težina jedinice tereta; pri unosu **Vrste jedinice tereta** i **Količine**, vrijednost se izračunava zbrajanjem težine prazne jedinice tereta iz tablice [Vrste jedinica tereta](/docs/configurations/tables/logistics/loading-unit-types) te težine artikala (preuzete iz polja *Bruto težina* na kartici Težine / Dimenzije šifrarnika artikla pomnožene s količinom) ili težine sadržanih jedinica tereta. Vrijednost se uvijek može ručno izmijeniti;  
+**Tolerancija dimenzija / Tolerancija količine**: koriste se u prilagodbama sustava te služe pri kreiranju popisa za preuzimanje utovarnih jedinica iz plana utovara s raspoloživim jedinicama tereta na skladištu. Procedura bi trebala uključiti jedinice tereta čije dimenzije ili količine odstupaju od definiranih vrijednosti za navedeni postotak. Trenutno se standardno ne koriste;  
+**Obvezne dimenzije**: ako je aktivno, označava da su navedene dimenzije obvezne i ne mogu odstupati;  
+**Obvezna jedinica za utovar**: ako je aktivno, označava da se artikl mora obvezno voditi putem jedinica tereta u proizvodnim prijavama i WMS prijemu robe;  
+**Opis vrste jedinice tereta / Opis vrste sadržane jedinice tereta**: nakon unosa vrste jedinice tereta i vrste sadržane jedinice tereta, u ovim se poljima automatski prikazuju opisi odabranih vrsta.
 
 ## 10. **Troškovi**
 
-Unutar ove Kartice unose se različiti troškovi povezani s artiklom. 
+:::important[Čemu služi]
+Na kartici Troškovi u šifarniku artikala Fluentis korisnici mogu evidentirati različite vrste troškova povezanih s artiklom, uključujući posljednji trošak i ponderirani prosječni trošak, koji se automatski ažuriraju na temelju skladišnih kretanja. Posljednji trošak predstavlja zadnju evidentiranu nabavnu cijenu, dok je prosječni trošak rezultat skladišnih kretanja i koristi se za izračun vrijednosti zaliha.
+Kartica također omogućuje definiranje standardnog troška, koji služi kao referentna vrijednost tijekom godine i obično se ažurira jednom godišnje. Osim toga, moguće je unijeti prodajnu cijenu koja predstavlja polazište za izradu prodajnih cjenika.
+Ove informacije ključne su za vrednovanje skladišnih zaliha i financijsko planiranje te doprinose učinkovitijem upravljanju artiklima u skladištu.
+:::
 
-Ovo su polja koja se mogu uređivati i u kojima će se definirati:
+Unutar ove kartice unose se različiti troškovi povezani s artiklom.
 
-**Zadnji trošak** i **Prosječni trošak**: pod pojmom Zadnja cijena misli se na posljednju cijenu kupnje (najnoviju), dok se pod pojmom Prosječni trošak ponderiran misli na prosječnu cijenu koja proizlazi iz zaliha skladišta. Za oba troška, uzrok koji se koristi za promet u skladištu mora imati označenu zastavu za ažuriranje *Prosječnog troška/Cijene zadnjeg ulaza*, kao i flag *Ažuriraj cijenu artikla*. 
+#### Specifična polja
 
-**Standardni trošak/ Sljedeća standardna cijena**: standardna cijena je trošak koji se postavlja ručno ili putem postupka obračuna troškova i označava referentni trošak za određeni artikl koji se koristi tijekom godine. Obično je trošak koji se ažurira na početku ili kraju godine. Za artikle koji se kupuju obično odgovara srednjem trošku, dok se za ostale artikle izračunava postupkom [Izračuna troškova](/docs/controlling/cost-calculation/cost) koji se nalazi u području *kontroling*, kao zbroj troškova materijala i troškova faza proizvodnje.
+**Posljednji trošak** i **Prosječni trošak**: pod posljednjim troškom podrazumijeva se posljednja (najnovija) nabavna cijena, dok ponderirani prosječni trošak predstavlja prosječnu cijenu izračunanu na temelju skladišnih kretanja. Za oba troška, skladišna knjižna oznaka mora imati aktivirane opcije *Ažuriranje prosječnog troška / posljednjeg troška*, *Ažuriraj trošak artikla* i *Fiskalni interes*, kako bi se odgovarajuća kretanja uključila u izračun troškova.
 
-Ovi troškovi mogu se koristiti za vrednovanje osnovne specifikacije, zaliha u skladištu ili (za kupljene artikle) za vrednovanje radnih naloga (i povezanih unosa u skladište) prilikom evidentiranja artikla radnog naloga u skladište.
+**Standardni trošak / Sljedeći standardni trošak**: standardni trošak je trošak definiran ručno ili putem procedure izračuna troškova te predstavlja referentni trošak artikla tijekom godine. Obično se ažurira na početku ili kraju godine. Za nabavne artikle uglavnom odgovara prosječnom trošku, dok se za ostale artikle izračunava procedurom [Izračun troška](/docs/controlling/cost-calculation/cost) iz područja *Controlling*, kao zbroj troškova materijala i troškova proizvodnih operacija.
 
-**Prodajna cijena**: osnovna cijena koja se može koristiti za stvaranje cjenika u slučaju da se razmatra početni nacionalni cjenik. Ako nema cjenika za ovaj artikl, artikl će koristiti ovu cijenu u dokumentima (osim kod dokumenata povrata gdje artikl zadano preuzima cijenu naznačenu kao posljednju cijenu, što treba pažljivo provjeriti) (ne koristi se često).
+Svi navedeni troškovi mogu se koristiti za vrednovanje sastavnica proizvoda (BOM), skladišnih zaliha ili (za nabavne artikle) za vrednovanje proizvodnih naloga i pripadajućih skladišnih knjiženja prilikom zaprimanja artikla iz proizvodnog naloga.
 
-**Kategorija popusta/ Konfiguracija raspona cijena /Formula za ažuriranje politike popusta**: Ovo su podaci čisto komercijalne prirode koji služe za ažuriranje cijena.
+**Prodajna cijena**: osnovna cijena koja može poslužiti kao polazište za izradu prodajnog cjenika, primjerice nacionalnog cjenika. Ako za artikl ne postoji definiran cjenik, dokumenti će koristiti ovu cijenu (osim kod povrata robe, gdje se prema zadanim postavkama koristi vrijednost posljednjeg troška, što je potrebno dodatno provjeriti). Ovo polje se rijetko koristi.
+**Kategorija popusta / Konfiguracija cjenovnih razreda / Formule za ažuriranje politika popusta**: komercijalni podaci koji služe za ažuriranje cijena. Formula ažuriranja koristi se u proceduri [Napredno kreiranje cjenika](/docs/sales/sales-price-list/procedures/price-list-advanced).
+**Bez komercijalnih uvjeta**: kada se artikl koristi u dokumentima, neće preuzimati cijene ni popuste iz cjenika u kojima se nalazi niti cijenu iz šifrarnika artikla, a za prodaju tog artikla neće se obračunavati provizije.
 
-Koristit će se u dokumentima, ali nikada neće prikazivati popuste iz listina u kojima je sadržan, i neće se računati provizije na prodaji ovog artikla.
+## 11. **Opisi artikla na jeziku**
 
-## 11. **Jezik za opis predmeta**
+Ova kartica omogućuje unos **Opisa na jeziku** i **Opisa 2** artikla na različitim radnim jezicima koji se koriste u sustavu.
 
-Ova kartica omogućuje unos **Opisa na jeziku** i drugog **Opisa 2** članka na različitim radnim jezicima koji se koriste.
+#### Specifična polja
 
-Na prozoru se nalazi mreža gdje se unose sljedeće informacije:
-
-**Jezik**: pomoću ovog izbornika odabirete jezik koji želite dodati; jezici među kojima možete odabrati već su prethodno kodirani u odgovarajućoj tablici;
-
-**Jezik opisa**: u ovom polju ručno ćete unijeti opis artikla na odabranom jeziku;
-
-**Opis 2**: u ovom polju ručno ćete unijeti dodatni opis artikla na odabranom jeziku.
+**Jezik**: putem ovog izbornika odabire se jezik koji se želi dodati; dostupni jezici prethodno su definirani u odgovarajućoj tablici.
+**Jezik opisa**: u ovo se polje ručno unosi opis artikla na odabranom jeziku.
+**Opis 2**: u ovo se polje ručno unosi sekundarni opis artikla na odabranom jeziku.
 
 ## 12. **Dodatni podaci**
 
-Obratite se na dokumentaciju vezanu uz [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/search-extradata).
+Za više informacija pogledati dokumentaciju vezanu uz [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata).
 
-## 13. **Preferencijalni dobavljači**
+## 13. **Preferencijalni dobavljač**
 
-U ovoj Kartici možete definirati pojedinačne preferirane dobavljače za svaki proizvod, navodeći zadani dobavljač kako biste sustavu omogućili uvijek naručivanje od istog dobavljača.
+:::important[Čemu služi]
+Kartica Preferirani dobavljači unutar šifarnika artikala u Fluentisu ključna je funkcionalnost za upravljanje nabavom. Omogućuje precizno definiranje preferiranih dobavljača za svaki artikl, čime se olakšava proces nabave i osigurava odabir najprikladnijih dobavljača.
+Sučelje je podijeljeno na dva glavna dijela. Prvi dio odnosi se na opće informacije o dobavljačima, poput odabira zadanog dobavljača koji postaje glavni kanal nabave za predmetni artikl. Ovdje korisnici mogu definirati i važne parametre poput maksimalne količine za naručivanje, tolerancija količina i cijena te podataka vezanih uz narudžbe dobavljačima.
+Drugi dio sadrži detaljnu mrežu u koju je moguće unositi specifične informacije za svakog dobavljača, poput vremena nabave i dodatnih napomena.
+:::
 
-Prozor se sastoji od dvije sekcije:
+U ovoj kartici moguće je definirati preferirane dobavljače za pojedini artikl te odrediti jednog zadanog dobavljača kako bi sustav uvijek predlagao narudžbu kod istog dobavljača.
+Prozor se sastoji od dvije cjeline:
 
-1. U prvom dijelu navode se informacije o svim preferiranim dobavljačima, u slučaju kada su ove informacije općenite, kao što su:
+1. U prvom dijelu definiraju se opće informacije koje vrijede za sve preferirane dobavljače, ako su podaci zajednički:
+> - **Obvezno izvješće dobavljača**: ako je aktivno, artikl se može nabavljati isključivo od zadanog dobavljača navedenog u mreži drugog dijela ekrana;  
+> - **Maksimalan broj linija dokaza**: najveći broj redaka narudžbe dobavljaču koji se može kreirati za određeni artikl/dobavljača dok je aktivna opcija **Blokiraj retke narudžbe**;  
+> - **Jedinica mjere nabave**: definira mjernu jedinicu za nabavu materijala;  
+> - **Maksimalna dobavljiva vrijednost**: definira najveću količinu koju je moguće naručiti od tog dobavljača za predmetni artikl;  
+> - **Blokiranje linije narudžbe**: ako je aktivno, onemogućuje unos novih redaka narudžbe dobavljaču;  
+> - **Datum blokade**: datum od kojeg blokada redaka narudžbe stupa na snagu;  
+> - **% tolerancije viška i manjka primljene količine**: definira dopušteno odstupanje količine isporučene od strane dobavljača;  
+> - **% tolerancije prekoračene cijene**: definira dopušteno odstupanje dobavljačke cijene u odnosu na ugovorenu cijenu;  
+> - **Dopusti cijenu 0**: ako je aktivno, omogućuje izdavanje narudžbi dobavljaču s cijenom 0 za predmetni artikl.
 
-**Maksimalni broj ispitnih linija**: ako je ovaj flag aktiviran, to znači da se ovaj proizvod može nabaviti samo od zadanih dobavljača koji će biti navedeni u mreži u drugom dijelu ekrana;
-
-**Numero massimo righe di prova**: ako je ovaj flag aktiviran, to znači da se ovaj proizvod može nabaviti samo od zadanih dobavljača koji će biti navedeni u mreži u drugom dijelu ekrana;
-
-**Jedinica mjere za nabavu**: u ovom polju navodi se jedinica mjere za nabavu tog materijala;
-
-**Maksimalna dobavljiva vrijednost**: u ovom polju označava se maksimalna količina koja se može naručiti od tog dobavljača za taj artikl;
-
-**Blokiranje linije narudžbe**: ako je aktivno, ovaj flag označava da se želi blokirati mogućnost unosa novih redova narudžbi od dobavljača;
-
-**Datum blokiranja**: označava datum kada se aktivira blokada redova narudžbi od dobavljača;
-
-**% tolerancija na količinu primljenu u višku i manjku**: u ovim dvama poljima navodi se postotak tolerancije na količinu koju dobavljač isporučuje više ili manje za taj materijal;
-
-**% tolerancija na količinu primljenu u višku i manjku**: u ovim dvama poljima navodi se postotak tolerancije na cijenu dobavljača u višku i manjku u odnosu na utvrđenu cijenu;
-
-**Dopusti cijenu nula**: ako je aktivno, ovaj flag omogućuje izdavanje narudžbi dobavljača s cijenom nula za taj artikl.
-
-2. U drugom dijelu prozora nalazi se mreža u kojoj će se označiti zadani dobavljač i eventualni drugi dobavljači koji se koriste za kupnju artikla i pripadni podaci za svakog dobavljača:
-
-**Dobavljač**: označit će se račun/podračun i opis dobavljača;
-
-**Zadano**: ovaj flag, ako je aktivan, označava zadani dobavljač u slučaju više dobavljača;
-
-**Ekonomski lot**: u ovoj sekciji ćete navesti za svakog dobavljača minimalnu ekonomsku količinu i njene višekratnike;
-
-**Artikl dobavljača**: u ovom dijelu možete dodati šifru i opis koji dobavljač koristi za identifikaciju artikla;
-
-**Vrijeme nabave**: ovo će se naznačiti za svakog dobavljača: upravljanje, odnosno vrijeme potrebno dobavljaču za reprodukciju/nabavu tog predmeta, isporuka, odnosno vrijeme potrebno za dostavu materijala od dobavljača, ukupno vrijeme, što je zbroj prethodna dva podatka koji označava ukupno vrijeme potrebno za ponovno snabdijevanje zaliha materijala;
-
-**Narudžbenica**: u ovoj sekciji navode se informacije za svakog pojedinog dobavljača koje se odnose na narudžbe već navedene (Jedinica mjere, blokada retka, datum blokade, maksimalni broj redova, maksimalna vrijednost, % tolerancije količine primljene u višku/nedostatku);
-
-**Proizvođač**: u ovoj sekciji ćete navesti račun i opis proizvođača materijala;
-
-**Kontrole prihvaćanja**: unutar ovog polja navode se eventualne provjere koje je potrebno provesti prilikom prihvata materijala prije nego što ga se može koristiti;
-
-**Varijanta**: u ovo polje unosi se eventualna varijanta tog artikla, odabirom iz kombinacije koja sadrži varijante prethodno kodirane u tabeli **Varijante Artikla**;
-
-**Napomene**: u ovom odjeljku moguće je unijeti eventualne napomene vezane uz navedenog dobavljača.
+2. U drugom dijelu nalazi se mreža u kojoj se definiraju zadani i ostali dobavljači za nabavu artikla te podaci specifični za svakog dobavljača:
+> - **Dobavljač**: unosi se konto/podkonto i naziv dobavljača;  
+> - **Zadano**: označava zadanog dobavljača kada postoji više dobavljača;  
+> - **Ekonomski lot**: definira minimalnu ekonomsku količinu i njezine višekratnike. Ako se koristi samo minimalna količina, preporučuje se postaviti *višekratnik* na 1;  
+> - **Artikl dobavljača**: omogućuje unos šifre i opisa koje dobavljač koristi za identifikaciju artikla;  
+> - **Vrijeme nabave**: definira vrijeme potrebno dobavljaču za proizvodnju ili nabavu artikla, vrijeme transporta te ukupno vrijeme potrebno za obnovu zalihe;  
+> - **Narudžbenica**: sadrži podatke vezane uz narudžbu (JM, blokadu retka, datum blokade, maksimalan broj redaka, maksimalnu količinu te tolerancije količine);  
+> - **Proizvođač**: unosi se konto i naziv proizvođača materijala;  
+> - **Izvor**: označava podrijetlo robe, primjerice zemlju podrijetla ili podrijetlo životinjskog ili biljnog materijala;  
+> - **Kontrole u prihvaćanju**: definiraju eventualne kontrole koje je potrebno provesti prilikom zaprimanja materijala prije njegove uporabe;  
+> - **Varijante**: omogućuje unos varijante artikla vezane uz određenog dobavljača;  
+> - **Napomene**: prostor za dodatne napomene vezane uz predmetnog dobavljača.
 
 ## 14. **Slike**
 
-Ova Kartica omogućuje povezivanje slike s artiklom.
+Ova kartica omogućuje povezivanje slika s artiklom.
+Putem gumba **Dodaj sliku** moguće je umetnuti sliku unutar kartice.
+Ova se funkcionalnost ne koristi često jer je u svakoj formi dostupna funkcija [**Priloži dokumente**](/docs/guide/common/common-buttons), koja omogućuje dodavanje različitih vrsta dokumenata, uključujući i slike.
 
-Pomoću gumba **Dodaj sliku** moguće je unijeti sliku unutar ove kartica.
+## 15. **Dobavljački cjenici**
 
-Ova procedura nije često korištena jer u svakom obrascu postoji funkcija [**Priloži dokumente**](/docs/guide/common/common-buttons) koja omogućuje prilaganje različitih vrsta dokumenata, uključujući i slike.
-
-## 15. **Cjenik dobavljača**
-
-U ovoj Kartici navedeni su svi dobavljački cjenici u kojima je proizvod prisutan. Mreža je samo za čitanje.
+U ovoj kartici prikazuju se svi dobavljački cjenici u kojima se artikl nalazi. Mreža je dostupna samo za pregled (*read only*).
 
 ## 16. **Prodajni cjenici**
 
-U ovoj Kartici prikazuju se svi cjenici za kupce u kojima je proizvod prisutan. Mreža je samo read only. 
+U ovoj kartici prikazuju se svi kupčevi/prodajni cjenici u kojima se artikl nalazi. Mreža je dostupna samo za pregled (*read only*).
 
-## 17. **Lotovi i serijski broj**
+## 17. **Lotovi i serijski brojevi**
 
-Artikl se može upravljati u Lotovima ili prema Serijskim Brojevima, a od svakog koda artikla mogu se stvoriti podgrupe koje se također mogu upravljati u lotovima ili prema serijskim brojevima.
+:::important[Čemu služi]
+Kartica „Lotovi i serijski brojevi” u šifarniku artikala Fluentis omogućuje detaljno upravljanje materijalima kroz dvije varijante: upravljanje po lotovima i upravljanje pomoću serijskih brojeva.
 
-Lotovi su skupine homogenih količina artikala koje ulaze u tvrtku (kupovni lotovi) ili se proizvode u samoj tvrtki (proizvodni lotovi).
+Upravljanje lotovima omogućuje organizaciju artikala u homogene skupine koje mogu biti nabavne ili proizvodne. Svaki lot identificiran je jedinstvenom šifrom koja omogućuje praćenje kretanja i zaliha, čak i u okruženju s više skladišta. Unutar upravljanja lotovima moguće je definirati način izdavanja (FIFO, prema datumu isteka ili ručno) te odabrati vrstu šifre lota koja određuje način kodiranja. Ova funkcionalnost posebno je važna za osjetljive proizvode poput prehrambenih i farmaceutskih artikala.
+Alternativno, upravljanje serijskim brojevima omogućuje praćenje svakog pojedinog komada putem jedinstvenog serijskog broja. To je osobito korisno za artikle visoke vrijednosti ili kritične proizvode kod kojih je potrebno precizno pratiti svaku jedinicu. Dostupne opcije uključuju način generiranja serijskog broja (ručno ili automatski) te vremensku valjanost samog broja.
+Ova kartica predstavlja ključan element za osiguravanje sljedivosti, usklađenosti s propisima i učinkovitog upravljanja zalihama, čime doprinosi optimizaciji logističkih procesa.
+:::
 
-Svaki lot mora imati jedinstvenu oznaku iz koje se dobivaju određene informacije koje karakteriziraju sam lot. Ovu oznaku tvrtka može definirati u prozoru **Vrsta šifre lota** ili, u slučaju kupovnih lotova, može odlučiti zadržati istu oznaku lota kao i dobavljač.
+Artikl se može voditi po lotovima ili po serijskim brojevima, a za svaku šifru artikla moguće je kreirati podskupine koje se također mogu voditi po lotovima ili serijskim brojevima.
+Lotovi predstavljaju skupine homogenih količina artikala koje ulaze u poduzeće (nabavni lotovi) ili se proizvode unutar poduzeća (proizvodni lotovi).
+Svaki lot mora biti identificiran jedinstvenom šifrom iz koje je moguće dohvatiti informacije koje ga karakteriziraju. Ovu šifru poduzeće može definirati u prozoru **Vrsta šifre lota**, dok je kod nabavnih lotova moguće koristiti i šifru lota dobavljača.
+Lot mora biti sljediv, a u slučaju više skladišta šifra lota mora omogućiti praćenje stanja zaliha po pojedinom skladištu.
+U ovoj kartici definiraju se parametri ovisno o odabranom načinu upravljanja artiklom, koji se aktivira putem oznaka **Upravljanje lotovima** i **Upravljanje serijskim brojevima**.
 
-Svaki lot mora biti moguće pratiti, a u slučaju više skladišta, pomoću oznake lota trebalo bi biti moguće pratiti podatke o zalihama za svako pojedino skladište.
+### Upravljanje lotovima
 
-Unutar ove kartice, definirat će se parametri ovisno o vrsti upravljanja koju ćete odabrati za određeni proizvod i koja će se primjenjivati putem odgovarajućih flaga koje se nalaze na početku ove kartice  **Upravljano serijama** - **Upravljano serijskim brojevima**.
+**Vrsta izdavanja**: određuje koristi li se FIFO metoda, izdavanje prema datumu isteka ili ručni odabir lota od strane operatera;  
+**Vrsta šifre lota**: omogućuje odabir vrste šifre lota (i pripadajućih karakteristika za njezino generiranje) definirane u prozoru *Vrsta šifre lota*, a koja se sastoji od kombinacije više polja;  
+**Početni status lota**: pojedini lot obično ima status koji definira njegovu valjanost. Za određene vrste materijala, osobito prehrambene i farmaceutske proizvode, status je obvezan (primjerice, farmaceutski lot koji zahtijeva analize prije uporabe može imati početni status *u karanteni* do završetka analiza). Za takve proizvode status se povezuje i s datumom isteka kako bi se spriječila prodaja ili korištenje robe kojoj je istekao rok trajanja. Ovisno o statusu lota, moguće je odabrati upravljanje putem RFID-a ili jedinstvenog RFID-a;  
+**Upravljan RFID**: ako je aktivirano, artikl se prati pomoću RFID tehnologije (radiofrekvencijska identifikacija) putem aplikacije;  
+**Jedinstveni RFID**: ako je aktivirano, RFID kod povezan s artiklom jedinstven je za taj artikl;  
+**Tip isteka lota**: omogućuje odabir načina određivanja isteka lota (točan datum isteka, posljednji dan mjeseca isteka ili prvi dan mjeseca isteka);  
+**Promjena roka**: ako je aktivirano, omogućuje ručnu izmjenu datuma isteka lota;  
+**Predviđena blokada lota izražena u danima**: polja **Upozorenje blokade** i **Blokada** omogućuju definiranje broja dana unaprijed za upozorenje na blokiranje lota te dana kada lot postaje blokiran;  
+**Lot za jednog dobavljača**: ako je aktivirano, označava da lot može sadržavati samo artikle istog dobavljača.
 
-### Upravlajnje lotovima 
+Alternativno, artikl se može voditi putem **upravljanja serijskim brojevima**. U tom slučaju za svaki pojedini komad generira se jedinstveni serijski broj koji omogućuje njegovu identifikaciju i praćenje unutar sustava. Ovakav način upravljanja posebno je prikladan za artikle koji se smatraju *kritičnima* ili *visokovrijednima*, kod kojih je potrebno pratiti svaki pojedinačni komad, a ne samo ukupnu količinu.
 
-**Vrsta preuzimanja lota**: ako picking, prema datumu isteka ili ručno;
+### Upravljanje serijskim brojevima
 
-**Vrsta šifre lota**: u ovom slučaju odabire se vrsta koda lota (i povezane karakteristike postavljene za njegovo kreiranje) koju ste definirali u prozoru *Vrsta koda lota*, a koja proizlazi iz konkatenacije više polja.  
-
-**Početni status lota**: obično je svaki pojedinačni lot karakteriziran određenim stanjem koje određuje njegovu valjanost. Za određene vrste materijala, kao što su prehrambeni i farmaceutski proizvodi, stanje je obavezno (npr. u farmaceutskom sektoru, lot koji zahtijeva analizu prije upotrebe bit će u početnom stanju 'karantene' dok se analize ne dovrše); za ove vrste proizvoda stanje će biti popraćeno datumom isteka kako bi se spriječila prodaja i uporaba isteklih proizvoda. Na temelju stanja lota, može se odabrati da se upravlja putem Rfid-a ili jedinstvenog Rfid-a;
-
-**Upravljano RFid-om**: ako je aktivirano, artikl će se upravljati putem tehnologije RFID-a (radiofrekvencija) pomoću aplikacije;   
-
-**Fluentis Mobile**: ova tehnologija se temelji na pohrani podataka pomoću posebnih oznaka koje služe za identifikaciju informacija o artiklima. Pomoću mobilnog uređaja, ove oznake se mogu daljinski upitati putem radiofrekvencijske tehnologije;   
-
-**Jedinstveni RFID**: ako aktiviran, RFID kod povezan s artiklom je jedinstven za taj artikl;   
-
-**Tipovi roka trajanja lota**: odaberite vrstu roka trajanja koju želite dodijeliti lotu (datum isteka, zadnji dan mjeseca isteka, prvi dan mjeseca isteka);   
-
-**Ažuriranje datuma isteka lota**: ako je aktivirano, omogućuje ručno mijenjanje datuma isteka lota;
-
-**Unaprijed blokirajte lot izraženo u danima**: dva polja, **Upozorenje na blokadu** i **Blokada** omogućuju izražavanje u danima, kada upozoriti da će taj lot biti blokiran i odrediti dan blokade lota;
-
-**Loto jednog dobavljača**: ako je aktivirano, označava da će taj lot sadržavati samo artikle od istog dobavljača.; 
-
-Može se alternativno odabrati upravljanje artiklom putem **Serijskog broja**. U ovom slučaju, za svaki komad se stvara jedinstveni serijski broj koji jednoznačno identificira taj komad unutar strukture kako bi se pratila njegova putanja. Ovaj tip upravljanja posebno je pogodan za artikle koji se smatraju *kritičnima* ili *visokovrijednima*, za koje je potrebno pratiti svaki pojedini komad, a ne cjelokupnu količinu.
-
-### Upravljanje serijskim brojem
-
-**Tip koda serijskog broja**: odabrati prema predefiniranom tipu u tablici **Tip šifre serijskog broja**;  
-
-**Dani važenja serijskog broja**: označava koliko dana će ovaj kod biti važeći;  
-
-**Generacija serijskog broja**: za postavljanje načina stvaranja serijskog broja, bilo ručno ili automatski;  
-
-**Upravljanje bojom i količinom**: polje koje je usko povezano s modnom industrijom.  
-
+**Tip šifre serijskog broja**: omogućuje odabir zadane vrste iz tablice **Vrsta šifre serijskog broja**;  
+**Broj dana valjanosti serijskog broja**: određuje koliko dana će serijski broj biti valjan;  
+**Generiranje serijskog broja**: određuje način kreiranja serijskog broja, ručno ili automatski. Ako je postavljeno na automatsko, za sva skladišna kretanja s uzrokom tipa *ulaz* i aktiviranom oznakom *Kreiraj serijski broj* (na samom uzroku), nakon unosa lota serijski brojevi bit će automatski generirani.
 
 ## 18. **Napomene**
 
-Ova je Kartica namijenjena povezivanju slobodnih napomena s artiklom.
+Ova kartica omogućuje povezivanje slobodnih napomena s artiklom.
 
-## 19. **Matrici**
+## 19. **Matrice**
 
-Questo tab si attiva solo se è stata impostata una [Configurazione](/docs/configurations/tables/CPQ/principal-configurations) nella testata dell'Articolo.           
-Viene gestito nel caso in cui sia necessario gestire le matrici per la combinazione degli attributi di un articolo e permette di definire le combinazioni possibili per l'articolo.        
-Come prima cosa è necessario assegnare **Codice** univoco identificativo e **[Definizione di matrice](/docs/configurations/tables/CPQ/matrices-definition)** (che contiene il set di attributi che comporrà la matrice); in base alla definizione selezionata, nei tab sottostanti sarà possibile selezionare solo gli [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) validi per questa matrice. 
+Ova kartica aktivira se samo ako je u zaglavlju artikla definirana [Konfiguracija](/docs/configurations/tables/CPQ/principal-configurations).
+Koristi se kada je potrebno upravljati matricama za kombiniranje atributa artikla te omogućuje definiranje svih mogućih kombinacija za određeni artikl.
+Prvi korak je dodjela jedinstvene vrijednosti **Šifra** te odabir **[Definicije matrice](/docs/configurations/tables/CPQ/matrices-definition)** (koja sadrži skup atributa koji će činiti matricu). Na temelju odabrane definicije, u karticama ispod bit će moguće odabrati samo one [Extra Data](/docs/configurations/utility/extra-data/extradata/search-extradata) vrijednosti koje su valjane za tu matricu.
+U sekciji *Dopuštene vrijednosti dimenzija* sljedeći korak je odabir pojedinačnih Extra Data atributa putem padajućeg izbornika **Atribut**. Nakon odabira atributa, u mreži *Dostupni rezultati* prikazuju se njegove vrijednosti (primjerice, ako odaberemo atribut Veličina, prikazat će se vrijednosti XS, S, M, L, XL itd.).
+Vrijednosti koje želimo učiniti dostupnima za matricu potrebno je premjestiti u mrežu *Dopuštene vrijednosti*, čime određujemo koje će se vrijednosti koristiti u kombinacijama matrice.
+Nakon definiranja valjanih vrijednosti za svaki atribut, automatski se pojavljuju nove kartice – po jedna za svaku pomoćnu matricu te jedna kartica za kompletnu matricu koja objedinjuje sve pomoćne matrice i prikazuje sve moguće kombinacije.
+U karticama generiranim za pomoćne matrice potrebno je označiti valjane kombinacije vrijednosti. Za svaku kombinaciju potrebno je uključiti oznaku samo ako je kombinacija dopuštena.
+U kartici *Potpuna matrica* generira se jedinstvena matrica sa svim valjanim kombinacijama definiranim u prethodnim karticama.
+Tako definirana matrica može se koristiti u objektima za koje je konfigurirana.
 
-Spostandosi nella sezione *Valori dimensione consentiti*, il passo successivo è selezionare, uno ad uno, gli Extra Data dal combo box **Attributo**. Una volta selezionato l'attributo, nella griglia *Risultati disponibili* vengono visualizzati i valori dell'Extra Data (per esempio, se selezioniamo l'attributo Taglia, in questa griglia saranno visualizzati i valori dell Extra Data: XS, S, M, L, XL, ecc.). Una volta selezionati i valori dell'attributo che vogliamo rendere validi per questa matrice, è necessario trascinarli nella griglia *Valori ammessi* per indicare che quei valori saranno validi per le combinazioni della matrice.        
-Una volta scelti i valori validi per ogni attributo, automaticamente compariranno dei nuovi tab, uno per ogni matrice di supporto e un tab per la matrice completa, che unirà le varie matrici di supporto per averne una unica con tutte le combinazioni possibili.        
-Spostandosi nei tab generati dalle matrici di supporto, è necessario flaggare le combinazioni di valori valide. Per ogni combinazione, quindi, è necessario inserire il flag solo se valida.        
-Nel tab della *Matrice completa*, invece, viene generata una matrice unica con tutte le combinazioni valide, impostate nel tab precedente.      
-La matrice ora può essere utilizzata negli oggetti per i quali è stata configurata. 
+## 20. **Težine / Dimenzije**
 
-## 20. **Težine/Dimenzije**
+:::important[Čemu služi]
+Kartica Težine i dimenzije u šifarniku artikala Fluentis ključna je za logističko upravljanje artiklima. U ovoj sekciji moguće je definirati dimenzije i težine artikala, čime se olakšavaju skladišne operacije i procesi nabave. Sustav omogućuje unos dimenzija (duljina, širina i visina) uz odabranu mjernu jedinicu te automatski izračun volumena.
+Osim toga, moguće je definirati bruto, neto i specifičnu težinu, što su važni podaci za planiranje otpreme i upravljanje troškovima.
+:::
 
-Ovo sadržava nekoliko sekcija:
+#### Dimenzije artikla
 
-**Dimenzije članka**
+U padajućem izborniku korisnik može odabrati mjernu jedinicu za dimenzije, a u poljima ispod unijeti prvu, drugu i treću dimenziju te njihove vrijednosti kako bi definirao visinu, širinu i dubinu artikla.
 
-U kombinirkoj oko imate mogućnost odabrati mjerne jedinice dimenzije među ponuđenim opcijama, a zatim u donjem dijelu možete navesti prvu, drugu i treću dimenziju i odgovarajuću vrijednost ako postoje, kako biste mogli navesti visinu, širinu i dubinu.
+#### Volumen
 
-**Volumen**
+U padajućem izborniku odabire se mjerna jedinica volumena, a u pripadajuće polje unosi se vrijednost volumena.
 
-U padajućem izborniku odabrat će se jedinica mjere za volumen, a u donjem polju unijet će se vrijednost referentnog volumena.
+#### Vrsta materijala
 
-**Vrsta materijala**
+U padajućem izborniku odabire se vrsta materijala između unaprijed definiranih tipova iz tablice **Tablice > Logistika > Vrste materijala**. Također je moguće definirati vrstu profila materijala zajedno s pripadajućim dimenzijama.
 
-U kombinaciji se odabire vrsta materijala iz prethodno definirane tablice Tipovi materijala u odjeljku **Tablice > Logistika > Vrsta materijala**.
+#### Težina
 
-**Težina**
+U padajućem izborniku odabire se mjerna jedinica težine, a u poljima ispod unose se bruto težina, neto težina i specifična težina.
+Bruto i neto težina prenose se u sve dokumente povezane s artiklom.
 
-U kombinaciji odaberite mjerne jedinice za težinu, a zatim unesite bruto težinu, neto težinu i specifičnu težinu u odgovarajuća polja. Bruto težina i neto težina su težine koje se navode u različitim dokumentima povezanim s artiklom.
+#### Vrsta jedinice tereta (palete)
 
-**Vrsta JZU**
+U padajućem izborniku definira se način pakiranja artikla (paleta, europaleta i sl.), a u polju ispod moguće je navesti broj artikala po jedinici tereta.
+Na temelju vrste jedinice tereta i broja artikala po jedinici tereta, pri kreiranju planova utovara sustav može automatski izračunati količine i ambalažu potrebnu za pripremu transporta. Važno je napomenuti da se ove vrijednosti koriste samo ako nisu definirane detaljnije vrijednosti u kartici [Pakiranje](/docs/erp-home/registers/items/create-new-item).
 
-U odabiru se definira pakiranje artikla (palete, europaleti itd.), a u donjem polju može se navesti broj artikala po JZU. Na temelju tipa JZU -a i artikala po tipu JZU -a prilikom stvaranja planova utovara automatski će se izračunati količine i pakiranje za pripremu kamiona.
+#### Broj paketa
 
-**Broj paketa**
-
-Ova sekcija služi za upravljanje brojem paketa u dokumentima; moguće ih je upravljati na temelju broja artikala po paketu ili broja paketa potrebnih za formiranje artikla, postavljanjem oznake na parametar koji želite koristiti za ovaj izračun; na taj način će se automatski prikazati izračun broja paketa u dokumentima.
+Ova sekcija služi za upravljanje brojem paketa u dokumentima. Moguće je definirati izračun na temelju broja artikala po paketu ili broja paketa potrebnih za formiranje artikla, odabirom odgovarajućeg parametra. Nakon toga sustav će u dokumentima automatski izračunavati broj paketa.
 
 ## 21. **Kvaliteta**
 
-Na ovoj Kartici će se definirati niz informacija koje su korisne za procese kontrole kvalitete (ako ih ima) za taj proizvod..
+U ovoj kartici definiraju se različite informacije potrebne za procese kontrole kvalitete (ako se koriste) za predmetni artikl.
 
-#### Lokacije 
+#### Lokacije skladištenja
 
-In questa sezione si andrà a definire il luogo all'interno del magazzino in cui l'articolo dovrà essere ubicato; in particolare si potranno definire:
+U ovoj sekciji definira se mjesto unutar skladišta na kojem će artikl biti pohranjen. Moguće je definirati:
 
-**Vrsta lokacije**: odnosno gdje želimo smjestiti artikl;
-
-**Lokacija mono-artikal**: ako je aktivno, ovaj flag označava da se na toj lokaciji može smjestiti samo određena vrsta artikla; ne mogu postojati dva različita artikla na istoj lokaciji istovremeno;
-
-**Lokacija mono-lot**: ako je ovaj flag aktivan, to znači da se na toj lokaciji može smjestiti ne samo jedna vrsta artikla, već se na toj lokaciji može smjestiti samo jedan lot tog artikla i ne više lotova istog artikla istovremeno;
+**Vrsta lokacije**: određuje gdje želimo smjestiti artikl;  
+**Lokacija za jedan artikl**: ako je aktivirana, ova oznaka znači da se na toj lokaciji može nalaziti samo taj tip artikla. Nije moguće istovremeno skladištiti dva različita artikla na istoj lokaciji;  
+**Lokacija za jedan lot**: ako je aktivirana, ova oznaka znači da se na toj lokaciji može nalaziti ne samo jedan tip artikla, već i samo jedan lot tog artikla, odnosno nije moguće istovremeno skladištiti više lotova istog artikla.
 
 #### Skladišna kretanja
 
-U ovoj sekciji definiraju se informacije koje su korisne za evidenciju skladišta za ovaj artikl, kao što su:
+U ovoj sekciji definiraju se informacije korisne za skladišne evidencije artikla:
 
-**Ručno opterećenje dopušteno**: ako je aktivno, ovaj flag označava da se ovaj artikl može ručno utovariti u skladište;
-
-**Pomicanje blokova**: koristi se u prilagodbama kako bi se spriječilo spremanje ručnog pravila ako pripadajuća vrijednost (iz standarda ili stvarne vrijednosti artikla ili serije) premašuje specificiranu **Maksimalnu Vrijednost** za utovar/istovar. Ne koristi se u standardu;
-
-**Maksimalna Vrijednost utovara/Maksimalna Vrijednost istovara**: koriste se u prilagodbama (uz flag Pomicanje blokova) kao referentne vrijednosti za sprječavanje spremanja ručnog pravila ako pripadajuća vrijednost (iz standarda ili stvarne vrijednosti artikla ili serije) premašuje navedenu vrijednost. Ne koriste se u standardu;
-
-**Trošak za korištenje**: u ovom pododjeljku označava se kako se planira vrednovati artikl, da li se uzima u obzir stvarni trošak ili standardni trošak;
+**Dopušteno ručno knjiženje ulaza**: ako je aktivirano, artikl se može ručno zaprimati u skladište;  
+**Blokada kretanja**: koristi se u prilagodbama za blokiranje spremanja ručne evidencije ako odgovarajuća vrijednost (standardna ili stvarna vrijednost artikla ili lota) premaši definiranu **Maksimalnu vrijednost ulaza / Maksimalnu vrijednost izlaza**. Ne koristi se u standardnoj verziji;  
+**Maksimalna vrijednost ulaza / Maksimalna vrijednost istovara**: koriste se u prilagodbama (zajedno s oznakom **Blokada kretanja**) kao referentne vrijednosti za blokiranje spremanja ručne evidencije ako odgovarajuća vrijednost premaši zadani limit. Ne koriste se u standardnoj verziji;  
+**Trošak za upotrebu**: u ovoj podsekciji definira se hoće li se artikl vrednovati prema stvarnom ili standardnom trošku.
 
 #### Nabava
 
-U ovom sekciji naznačuje se treba li se prilikom primanja materijala za kupnju provesti ulazne provjere materijala ili nisu potrebne, navođenjem:
+U ovoj sekciji definira se trebaju li se prilikom zaprimanja nabavljenog materijala provoditi ulazne kontrole:
 
-**Kontrole u prihvaćanju**: putem kombiniranog okvira odabire se vrsta kontrole koja se mora obaviti (unutarnja/nespecificirana/specificirana/službena), a pomoću polja uz to, putem pomoći, odabire se vrsta plana kontrole između kodificiranih planova kontrole dostupnih u odgovarajućem obrascu koji se pristupa putem putanje **Kvaliteta > Kontrolni planovi**.
-
-**Kontrole pri prihvaćanju nisu obavezne**: ako je ovaj flag aktiviran, označava da nisu potrebne kontrole pri prihvaćanju; 
+**Kontrole pri zaprimanju**: putem padajućeg izbornika odabire se vrsta kontrole (interna / nenormirana / normirana / službena), a putem pomoćnog odabira određuje se **Vrsta plana kontrole** među planovima definiranima u formi dostupnoj putem izbornika **Kvaliteta > Planovi kontrole**;  
+**Kontrole pri zaprimanju nisu potrebne**: ako je aktivirano, označava da ulazne kontrole nisu potrebne.
 
 #### Proizvodnja
 
-U ovoj sekciji se specificiraju informacije koje se odnose na proizvodnju materijala, uvijek povezane s kontrolom kvalitete, poput:
+U ovoj sekciji definiraju se informacije povezane s kontrolom kvalitete u proizvodnji:
 
-**% tolerancije na proizvedenu količinu**: ovdje će se navesti postotak tolerancije na količinu proizvedenu više i/ili manje,
-
-**Tehnička kartica**: u ovim poljima odabire se, gdje je dostupno, tehnički list i vrsta tehničkog lista vezani za ovaj artikl;
-
-**Tehnički podaci potrebni**: u slučaju da materijal ne zahtijeva tehnički list, ovaj će se flag aktivirati;
+**% tolerancije na proizvedenu količinu**: određuje dopušteno odstupanje proizvedene količine u plus ili minus;  
+**Tehnička kartica**: u ovim poljima odabire se tehnička specifikacija i njezina vrsta, ako postoje za predmetni artikl;  
+**Tehnička kartica nije obavezna**: aktivira se ako za materijal nije potrebna tehnička specifikacija.
 
 #### Kvaliteta
 
-U ovom sekciji navodi se vremenski period analize potreban za provođenje preliminarnih kontrola nad artiklom.
+U ovoj sekciji definira se vrijeme potrebno za provođenje preliminarnih kontrola kvalitete artikla:
 
-**Analiza pripremnog vremena**: ako je aktivna ovaj flag, to znači da je za taj materijal potrebna kontrola kvalitete koja zahtijeva određeni vremenski period (u danima), što je naznačeno u susjednom polju; ovo služi za određivanje koliko dana nakon primitka materijala može biti korišten u proizvodnji ili, u slučaju gotovog proizvoda, koliko dana nakon proizvodnje materijala može biti poslan;
+**Analiza pripremnog vremena (Lead time)**: ako je aktivirano, označava da su za materijal potrebne kontrole kvalitete koje zahtijevaju određeni broj dana naveden u susjednom polju. To služi za određivanje nakon koliko dana od zaprimanja materijala on može biti korišten u proizvodnji ili, u slučaju gotovog proizvoda, nakon koliko dana od proizvodnje može biti otpremljen.
 
 #### Postprodaja
 
-U ovoj završnoj sekciji navest ćemo eventualnu jamstvo koje se pruža za materijal i odgovarajuće dane jamstva, aktivirajući opciju **S Jamstvom** i unoseći broj dana jamstva u odgovarajuće polje; u slučaju da materijal nema jamstvo, opcija će biti isključena.
+U ovoj završnoj sekciji definira se eventualno jamstvo za materijal i broj dana trajanja jamstva aktiviranjem oznake **S jamstvom** te unosom broja dana jamstva u pripadajuće polje. Ako materijal nema jamstvo, oznaka ostaje neaktivna.
 
 ## 22. **Troškovi**
 
-Unutar ove kartice možete dodavati/upravljati troškovima koji se odnose na artikl, a mogu biti na primjer razni troškovi, troškovi zbrinjavanja, itd.
+U ovoj kartici moguće je dodavati i upravljati troškovima povezanim s artiklom, primjerice raznim naknadama, troškovima zbrinjavanja otpada i slično.
+Ti se troškovi prethodno definiraju u odgovarajućoj tablici **Troškovi**.
+Zaslon se sastoji od mreže u koju se unose troškovi koje želimo povezati s artiklom.
 
-Ovi troškovi se kodiraju u odgovarajućoj tablici **Troškovi**.
+**Vrsta**: putem padajućeg izbornika odabire se vrsta troška iz popisa prethodno definiranih troškova;  
+**Opis**: polje se automatski popunjava nakon odabira vrste troška te prikazuje njegov opis;  
+**Iznos**: u ovo polje ručno se unosi iznos troška u referentnoj valuti;  
+**Datum**: određuje datum početka valjanosti troška za artikl;  
+**Datum završetka**: omogućuje unos datuma završetka valjanosti troška za artikl.
+Ako je potrebno dodati više vrsta troškova, dovoljno je prijeći u sljedeći red i ponoviti postupak unosa.
 
-Zaslon se sastoji od mreže u koju se unose troškovi koje želite upravljati za taj artikl među onima koji su prethodno kodirani u vrstama troškova.
-
-**Tip**: kroz ovu kombinaciju odabiremo vrstu troška koju želimo dodati iz popisa troškova putem odgovarajuće kombinacije;
-
-**Opis**: polje koje se automatski popunjava nakon odabira vrste troška i prikazuje opis odabrane stavke troška;
-
-**Iznos**: u ovo polje ručno unosimo iznos tog troška u referentnoj valuti;
-
-**Datum**: putem ovog izbornika unosimo datum početka važenja ovog troška za ovaj artikl;
-
-**Datum završetka**: u ovom polju možete unijeti eventualni datum završetka važenja troška za taj artikl.
-
-U slučaju da je potrebno dodati više vrsta troškova, dovoljno je prijeći na donji redak i ponoviti postupak dodavanja troška koji je upravo opisan.
-
-:::note NAPOMENA
-Troškovi uneseni u ovoj kartici prikazuju se u kartici *Sažetci* klijentskih narudžbi u odjeljku **Troškovi**.
+:::note Napomena
+Troškovi uneseni u ovoj kartici prenose se u karticu *Sažeci* unutar narudžbi kupaca, u sekciju **Troškovi**.
 :::
 
-## 23. **Alternativna J.M.**
-Na ovoj kartici se naznačuje, gdje je to potrebno, alternativna mjerna jedinica za artikl.
+## 23. **Alternativne mjerne jedinice**
 
-Artikl se može upravljati u oba mjerna sustava i uspostavljati odnose između njih.
+:::important[Čemu služi]
+Kartica Alternativne mjerne jedinice u šifarniku artikala Fluentis pruža važnu funkcionalnost za upravljanje različitim mjernim jedinicama povezanim s pojedinim artiklom. U ovoj kartici moguće je definirati alternativnu mjernu jedinicu, korisnu za artikle kojima se može upravljati u više različitih mjernih jedinica.
 
-**JMJ** i **Opis**: navesti ćete alternativnu jedinicu mjere s njenim opisom;
+Takav pristup pojednostavljuje procese nabave i skladišnog poslovanja jer različiti korisnici mogu koristiti mjernu jedinicu koja im više odgovara ili bolje odgovara njihovim operativnim potrebama.
+Kartica sadrži sekciju za definiranje faktora konverzije između osnovne i alternativne mjerne jedinice, čime se omogućuje automatski izračun potrebnih količina.
+Dostupne opcije uključuju postavke za određivanje je li mjerna jedinica zadana ili obvezna te definiranje prioritetnih mjernih jedinica koje će imati prednost tijekom rada u WMS modulu.
+Korištenjem ovih funkcionalnosti poduzeća mogu učinkovitije upravljati zalihama i narudžbama te prilagoditi podatke o mjernim jedinicama svojim operativnim potrebama, uz bolju interoperabilnost s drugim sustavima, poput *Warehouse Management Systema* (WMS).
+:::
 
-**Faktor pretvorbe**: ovdje se definira faktor konverzije između glavne jedinice mjere i alternativne jedinice mjere; alternativna količina u dokumentima izračunava se prema postavkama u [Početnim Magazinskim Parametrima](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters).
+U ovoj kartici definira se alternativna mjerna jedinica artikla, kada je to potrebno.
+Artikl se može koristiti u obje mjerne jedinice, uz definiranje odnosa između njih.
 
-**Zadano**: ako je aktivno, ovaj flag označava koja je jedinica mjere referentna među br. mogućih alternativa za artikl;
-
-**Obvezna**: ako je aktivno, ovaj flag određuje neizmjenjivost faktora konverzije. Kada se unese upravljačka mjerna jedinica putem faktora konverzije, sustav automatski izračunava alternativnu mjernu jedinicu, i obrnuto;
-
-**Prioritetno**: ko je aktivno, ovaj flag ukazuje na to koja jedinica mjere treba biti navedena u prodajnim dokumentima;
-
-**Zadani WMS**: ako je aktivno, označava da će ova jedinica mjere biti korištena kao zadana unutar WMS-a.
+**Mjerna jedinica** i **Opis**: ovdje se definira alternativna mjerna jedinica zajedno s njezinim opisom;  
+**Faktor pretvorbe**: definira faktor pretvorbe između osnovne i alternativne mjerne jedinice; *alternativna količina* u dokumentima izračunava se prema postavkama definiranim u [Početnim parametrima skladišta](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters);  
+**Zadano**: ako je aktivirano, označava zadanu mjernu jedinicu među onima definiranim za artikl;  
+**Obvezno**: ako je aktivirano, faktor konverzije postaje nepromjenjiv. Kada se unese količina u osnovnoj mjernoj jedinici, sustav automatski izračunava alternativnu količinu i obratno. Aktiviranjem ove opcije oznaka **Prioritetno** postaje suvišna i automatski se deaktivira;  
+**Prioritet**: ako je aktivirano, promjena *osnovne količine* ne mijenja *alternativnu količinu* jer ona ima prioritet. Ako se promijeni *alternativna količina*, sustav ponovno izračunava *osnovnu količinu* prema definiranom faktoru konverzije;  
+**Zadani WMS**: ako je aktivirano, ova mjerna jedinica koristit će se kao zadana unutar WMS sustava.
 
 ## 24. **Varijante**
 
-U ovoj Kartici moguće je dodati i/ili pregledati varijante određenog artikla. Ponekad, ako je novi artikl koji treba stvoriti vrlo sličan već postojećem i razlikuje se samo po maloj karakteristici koja ne utječe značajno na informacije prisutne na različitim karticama postojećeg artikla, umjesto stvaranja novog artikla jednostavno se stvaraju varijante tog artikla.
+:::important[Čemu služi]
+Kartica Varijante u šifarniku artikala Fluentis omogućuje unos i upravljanje varijantama pojedinog artikla. Ova funkcionalnost posebno je korisna kada je potrebno kreirati novi artikl koji se od postojećeg razlikuje samo u manjoj karakteristici.
+U takvim slučajevima preporučuje se kreiranje varijante umjesto potpuno novog artikla, osobito kada osnovne karakteristike izvornog artikla ostaju nepromijenjene.
+Primjer ove funkcionalnosti nalazi se u modnoj industriji: može postojati artikl „majica“, a zatim se za njega definiraju varijante po veličini i boji, dok sve osnovne karakteristike artikla ostaju iste.
+Kartica se sastoji od dvije mreže. Prva sadrži podatke o varijantama kao što su šifra, opis, minimalna i maksimalna zaliha, točka naručivanja, dani zalihe, prosječni trošak i prodajna cijena. To su podaci koji razlikuju pojedinu varijantu od osnovnog artikla.
+U drugoj mreži moguće je, ako postoji, definirati i specifični barkod za pojedinu varijantu.
+Kartica Varijante predstavlja snažan alat za upravljanje manjim razlikama među sličnim artiklima te pojednostavljuje evidenciju i upravljanje zalihama.
+:::
 
-*Primjer* može biti u modnoj industriji: unese se artikl majica, a zatim se mogu stvoriti varijacije za veličinu i boju, ali osnovne karakteristike artikla majica ostaju iste.
+U ovoj kartici moguće je unositi i pregledavati varijante određenog artikla.
+Ponekad je novi artikl koji treba kreirati vrlo sličan već postojećem artiklu te se razlikuje samo u jednoj manjoj karakteristici koja nema značajan utjecaj na podatke u ostalim karticama artikla. U tom slučaju nije potrebno kreirati novi artikl, već samo novu varijantu postojećeg artikla.
+Primjer može biti modna industrija: definira se artikl *majica*, a zatim se kreiraju varijante prema veličini i boji, dok osnovne karakteristike artikla ostaju iste.
+Kartica se sastoji od dvije mreže.
+U prvoj mreži definiraju se varijante sa sljedećim podacima: šifra i opis, minimalna i maksimalna zaliha, točka naručivanja i pripadajući broj dana, broj dana zalihe, posljednji, prosječni i standardni trošak te prodajna cijena.
+Podaci prikazani u ovoj mreži jedini su podaci koji razlikuju varijantu od osnovnog artikla. Za sve ostale informacije koriste se podaci definirani u ostalim karticama artikla.
+U donjoj mreži moguće je, ako postoji, definirati i barkod specifičan za pojedinu varijantu.
 
-Kartica se sastoji od dvije mreže. U prvoj mreži unose se varijante s informacijama o kodu i opisu, minimalnoj i maksimalnoj zalihama, točki naručivanja i pripadajućim danima, danima zaliha, posljednjoj, prosječnoj, standardnoj cijeni i, na kraju, prodajnoj cijeni.
+## 25. **Ikonice**
 
-Informacije koje se nalaze u mreži jedine su informacije koje razlikuju varijantu od glavnog artikla; za sve informacije koje nisu prisutne u mreži, dovoljno je osloniti se na one prisutne u različitim karticama tog artikla.
-
-U donjoj mreži možete unijeti, ako postoji, određeni barkod za tu varijantu.
+U ovoj kartici moguće je povezati jedan ili više ikona s artiklima definiranim u šifarniku artikala.
+Piktogrami se mogu koristiti za vizualni prikaz specifičnih karakteristika artikla, kao što su materijali, namjena, certifikati ili druga važna svojstva.
+Posebno je korisna mogućnost označavanja simbola opasnosti u skladu s važećim propisima, čime se olakšava brzo prepoznavanje artikala koji zahtijevaju posebnu pažnju tijekom rukovanja, skladištenja i transporta.
+Povezivanje ikona doprinosi boljoj vizualnoj komunikaciji sigurnosnih informacija te podržava ispravno upravljanje proizvodima unutar različitih poslovnih procesa.
+Za dodavanje nove ikone dovoljno je kliknuti na prvi slobodan redak i odabrati ga iz tablice [Ikone](/docs/configurations/tables/general-settings/pictograms).
+Također je moguće unijeti i posebnu napomenu povezanu s odabranom ikonom.
