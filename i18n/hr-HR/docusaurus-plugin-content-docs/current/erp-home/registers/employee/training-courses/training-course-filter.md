@@ -3,13 +3,13 @@ title: Pretraga tečajeva obuke
 sidebar_position: 4
 ---
 
-Filtriranje se nalazi na putanji **Početna stranica > Zaposlenici > Tečajevi obuke > Tečajevi obuke**.   
+Filtriranje se nalazi na putanji **Početna stranica > HR > Tečajevi osposobljavanja > Tečajevi obuke**.   
 
 Filtriranje podataka omogućuje dodavanje *Novih tečajeva obuke* ili pretraživanje postojećih kako biste ih vidjeli, uredili ili obrisali.   
 
 ### ![](/img/neutral/common/search.png) Pretraživanje tečajeva obuke 
 
-Obrazac se sastoji od područja filtra i područja rezultata. Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Pretraži** kako biste prikazali rezultate unutar područja rezultata.
+Obrazac se sastoji od područja filtra i područja rezultata. Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** kako biste prikazali rezultate unutar područja rezultata.
 
 ### ![](/img/neutral/common/new.png) Unos Tečajeva obuke
 
