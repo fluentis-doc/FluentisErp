@@ -3,8 +3,7 @@ title: Artikli dobavljača
 sidebar_position: 3
 ---
 
-Obrazac se otvara putem menija **Početna > Artikli > Artikli dobavljača** i omogućava pretraživanje svih nabavnih artikala povezanih sa različitim dobavljačima, kao i unos novih zapisa.
-Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Obrazac se otvara putem menija **Početna > Artikli > Artikli dobavljača** i omogućava pretraživanje svih nabavnih artikala povezanih sa različitim dobavljačima, kao i unos novih zapisa. Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 Obrazac se sastoji od područja za filtriranje, mreže rezultata i detaljnog prikaza. Nakon postavljanja željenih filtera dovoljno je kliknuti dugme **Traži** kako bi se rezultati prikazali u mreži rezultata.
 Za unos novog zapisa potrebno je kliknuti na prvi prazan red u mreži ili koristiti dugme **Novo**.
 
