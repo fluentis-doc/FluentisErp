@@ -1,24 +1,42 @@
 ---
-title: Traži artikle
+title: Pretraživanje artikala
 sidebar_position: 1
 ---
 
-**Fluentis academy**: [Identifikacija proizvoda i pripadajućih dijelova](/docs/erp-home/registers/items/master-item-intro) 
+**Uvod**: [Identifikacija proizvoda i pripadajućih dijelova](/docs/erp-home/registers/items/master-item-intro)
 
-Omogućuje pretraživanje svih artikala s ciljem pregleda, uređivanja i, prema potrebi, brisanja ili dodavanja novog artikla; prozor se sastoji od područja filtra i rezultatnog mrežnog prikaza.
+:::important Čemu služi
+Filtar matičnih podataka artikala u Fluentisu ključna je funkcionalnost koja omogućuje pretraživanje, pregled i upravljanje artiklima unutar sustava.  
 
-Pomoću filtera možete odlučiti prikazati: samo jedan artikl (npr. pretražujući s kodom artikla) ili više artikala iste klase unoseći *klasu* artikla; artikle s istim karakteristikama ili istom *trgovinskom kategorijom* (npr. pretražujući prema karakteristici i trgovinskoj kategoriji); artikle iste vrste ili iste *vrste* ili iste *nomenklature*; sve artikle s istim *preferiranim dobavljačem*, istim *statusom* ili *verzijom*; u slučaju kupljenih materijala, moguće je pronaći *artikl putem koda dobavljača*.
+Organiziran je kroz dio za unos kriterija pretraživanja i mrežu rezultata te omogućuje ciljano pretraživanje pomoću različitih parametara kao što su šifra, klasa, robna kategorija ili dobavljač.  
 
-Moguće je koristiti i **Napredno pretraživanje** aotvaranjem odgovarajuće kombinacije, gdje se mogu dodati dodatne flag koje omogućavaju dodatno filtriranje artikala, prikazujući samo artikle na izmaku zaliha, arhivirane ili fiktivne.  
-Odjeljak o **Lotovima i serijskim brojevima** omogućuje nam filtriranje prikazivanjem samo artikala upravljanih lotovima ili samo onih upravljanih serijskim brojevima ili upravljanih jedinstvenim RFID-om.
+Moguća su i napredna pretraživanja, primjerice za pronalaženje artikala koji se ukidaju ili su arhivirani, čime se povećava učinkovitost upravljanja skladištem.
+:::
 
-Proučit ćemo detaljno objašnjenje ovih zastavica kako budemo analizirali različite kartice koje čine svaki članak u odgovarajućim dokumentima, u kojima su navedene odgovarajuće karakteristike.
+Omogućuje pretraživanje svih artikala s ciljem njihovog pregleda, izmjene i eventualnog brisanja ili unosa novog artikla. Prozor se sastoji od područja za filtriranje i mreže rezultata.
 
-Nakon što su postavljeni svi željeni filtri, jednostavno kliknite na gumb **Pretraži** kako biste prikazali rezultate unutar mreže rezultata.
+Pomoću filtera moguće je prikazati:
+- pojedinačni artikl (npr. pretragom po **šifri artikla**);
+- više artikala iste klase unosom **klase artikla**;
+- artikle s istim karakteristikama ili iz iste **robne kategorije** (npr. pretragom po karakteristici i robnoj kategoriji);
+- artikle istog **tipa artikla** ili iste **nomenklature**;
+- sve artikle s istim **preferiranim dobavljačem**, istim **statusom** ili **verzijom**;
+- kod nabavnih materijala, pretragu je moguće izvršiti i prema **šifri artikla dobavljača**.
 
-Da biste otvorili detalje članka, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gumb  **Uredi** (omogućuje ulazak u detalje i uređivanje) ili gumb **Pregled** (omogućuje ulazak u detalje i pregled, ali bez mogućnosti uređivanja).
+Moguće je koristiti i **Napredno pretraživanje** otvaranjem odgovarajuće sekcije, gdje se mogu uključiti dodatne oznake za filtriranje artikala, primjerice prikaz samo artikala u ukidanju, arhiviranih ili fiktivnih artikala.
 
-*Posebni gumbi*:
+Sekcija **Lotovi i serijski brojevi** omogućuje filtriranje samo artikala koji se vode po lotovima, samo artikala koji se vode po serijskim brojevima ili artikala kojima se upravlja putem jedinstvenog RFID-a.
 
-> **Novo**: gumb omogućuje stvaranje novog artikla;  
-> **Velika promjena**: gumb omogućuje, nakon što su odabrani članak koji zahtijeva istu izmjenu, unos i primjenu masovno, bez potrebe za izmjenom svakog pojedinog članka.
+Detaljna objašnjenja pojedinih oznaka i opcija bit će obrađena u dokumentaciji pojedinih kartica artikla, gdje su opisane njihove funkcionalnosti i karakteristike.
+
+Nakon postavljanja željenih filtera dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u mreži rezultata.
+
+Za otvaranje detalja artikla dovoljno je odabrati željeni redak i dvostruko kliknuti mišem ili koristiti tipke:
+- **Izmijeni** – otvara detalje artikla s mogućnošću izmjene;
+- **Prikaži** – otvara detalje artikla samo za pregled, bez mogućnosti izmjene.
+
+### Specifični gumbi
+
+> **Novo**: omogućuje kreiranje novog artikla.  
+
+> **Masovna promjena**: omogućuje odabir više artikala i primjenu iste izmjene na sve odabrane artikle odjednom, bez potrebe za pojedinačnim uređivanjem svakog artikla.

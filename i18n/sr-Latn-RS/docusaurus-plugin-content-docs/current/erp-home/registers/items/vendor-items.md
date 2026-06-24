@@ -3,20 +3,29 @@ title: Artikli dobavljača
 sidebar_position: 3
 ---
 
-Obrazac se otvara putem puta **Početna stranica > Artikli > Pretraživanje artikla** i omogućava pretragu svih kupljenih artikala, povezanih s različitim dobavljačima, te unos novih.
+Obrazac se otvara putem menija **Početna > Artikli > Artikli dobavljača** i omogućava pretraživanje svih nabavnih artikala povezanih sa različitim dobavljačima, kao i unos novih zapisa.
+Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Obrazac se sastoji od područja za filtriranje, mreže rezultata i detaljnog prikaza. Nakon postavljanja željenih filtera dovoljno je kliknuti dugme **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u mreži ili koristiti dugme **Novo**.
 
-Omogućava unos novih zapisa ili pretraživanje već postojećih kako biste ih vidjeli, mijenjali ili obrisali.
+## Artikli dobavljača
 
-Obrazac se sastoji od područja za filtriranje, područja za rezultate i područja za pojedinosti. Nakon što postavite sve željene filtre, jednostavno kliknite na gumb **Pretraži** kako biste prikazali rezultate unutar mrežnog prikaza.
+Na osnovu prethodno postavljenih filtera u mreži će biti prikazani rezultati koji uključuju:
+- šifru artikla dobavljača, njegov opis i varijantu;
+- konto/podkonto i naziv dobavljača;
+- klasu, šifru i opis artikla prema internom šifarniku;
+- klasu, šifru i opis artikla prema proizvođaču (koji može biti različit od dobavljača);
+- komercijalnu šifru artikla;
+- količinu i težinu;
+- dodijeljenu šifru ambalaže;
+- barkod, ukoliko se artikal vodi putem barkoda.
 
-Da biste mogli unijeti nove zapise, potrebno je kliknuti na prazan redak u mrežnom prikazu ili pritisnuti gumb **Novo**. 
+## Detalji
 
-**Artikli dobavljača**
+U ovoj mreži moguće je za svaki artikal dobavljača pregledati dodatne informacije vezane za:
+- cijenu;
+- količinu i povezanu mjernu jedinicu;
+- datum početka i završetka važenja cijene;
+- kategoriju rabata i njen opis.
 
-Na temelju prethodno odabranih filtara, pojavit će se rezultati u mrežnom prikazu: artikl dobavljač s njegovim opisom i varijantom, račun/podračun i opis dobavljača, razred/kod i opis artikla prema unutarnjem kodu, razred/kod i opis koji artikl ima za proizvođača (koji može biti različit od dobavljača), trgovački kod dodijeljen artiklu, količina i težina, dodijeljeni kod pakiranja i barkod ako se koristi barkod.
-
-**Detalji**
-
-U ovoj mreži moguće je vidjeti dodatne pojedinosti o svakom artiklu dobavljača, u vezi s cijenom, količinom i povezanom jedinicom mjere, datumom početka i završetka važenja te cijene, popustom kategorije i njegovim opisom. 
-
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu obrazaca, molimo da se obratite na sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common).
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na zajedničko ponašanje obrazaca, pogledajte dokument [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

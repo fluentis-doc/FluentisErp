@@ -1,65 +1,80 @@
 ---
-title: Dupliciraj artikle
+title: Dupliciranje artikala
 sidebar_position: 4
 ---
 
-Postupak dupliciranja artikala dostupan je putem izbornika **Početna stranica > Artikli > Dupliciraj artikle**.
+Proceduri za dupliciranje artikala pristupa se putem izbornika **Početna > Artikli > Dupliciranje artikala**.
 
-U ovom prozoru moguće je stvoriti nove artikle putem dupliciranja već postojećih artikala.  
-Na taj način moguće je duplicirati zajedničke informacije između dva artikla.
+U ovom prozoru moguće je kreirati nove artikle dupliciranjem već postojećih artikala. Na taj način mogu se kopirati sve informacije zajedničke izvornom i novom artiklu.
 
-### Područje filtra
+### Područje filtera
 
-U području filtra moguće je postaviti niz filtara koji omogućuju pretraživanje baze podataka kako bi se lakše pronašao članak ili članci s određenim karakteristikama. Ovo olakšava pronalaženje članka koji najbolje odgovara članku ili člancima koje želite duplicirati i koji će biti osnova za postupak dupliciranja.
+U području filtera moguće je postaviti niz kriterija pretraživanja koji omogućuju pronalaženje artikla ili skupine artikala sa željenim karakteristikama unutar baze podataka, kako bi se lakše pronašao artikl koji će poslužiti kao osnova za dupliciranje.
 
-Pomoću ovih filtara moguće je prikazati: jedan članak (npr. pretraživanjem po šifri članka) ili više članaka koji pripadaju istoj klasi unosom šifre članka; članke s istim karakteristikama ili istom trgovačkom kategorijom (npr. pretraživanjem karakteristika i trgovačke kategorije); članke s istom vrstom članka ili istom nomenklaturom; sve članke s istim preferiranim dobavljačem, istim stanjem ili verzijom; u slučaju kupljenih materijala moguće je pretraživati članak pomoću šifre dobavljača; naposlijetku, moguće je pretraživati članke pomoću njihovog barkoda.
+Pomoću ovih filtera moguće je prikazati:
+- pojedinačni artikl (npr. pretraživanjem po šifri artikla);
+- više artikala iste klase unosom klase artikla;
+- artikle s istim karakteristikama ili istom robnom kategorijom (npr. pretraživanjem po karakteristici i robnoj kategoriji);
+- artikle iste vrste ili s istom nomenklaturom;
+- sve artikle povezane s istim preferiranim dobavljačem, istim statusom ili verzijom;
+- kod nabavnih materijala, pretraživanje prema šifri artikla dobavljača;
+- pretraživanje prema barkodu.
 
-Otviranjem proširivača **Napredno pretraživanje** i **Partije i serijski brojevi**, moguće je odabrati filtriranje i prema stanju članka (izmišljen, arhiviran/nije arhiviran, u iscrpljenju/nije u iscrpljenju) ili prema upravljanju člankom (upravlja se partijama, serijskim brojevima, upravlja se RFID-om ili jedinstvenim RFID-om).
+Otvaranjem proširenih sekcija **Napredno pretraživanje** i **Lotovi i serijski brojevi** moguće je dodatno filtrirati prema statusu artikla (fiktivan, arhiviran/nearhiviran, u odlasku/nedostatku) ili prema načinu upravljanja artiklom (upravljanje lotovima, serijskim brojevima, RFID ili jedinstvenim RFID-om).
 
-Nakon postavljanja željenih parametara filtriranja i klikom na gumb za **Pretraživanje** u izbornoj traci, sustav će pronaći članak ili skup članaka koji odgovaraju odabranim parametrima i prikazat će ih u rezultatnoj mreži.
+Nakon definiranja željenih filtera, klikom na gumb **Traži** u ribbon traci sustav pronalazi artikle koji odgovaraju odabranim kriterijima i prikazuje ih u mreži rezultata.
 
-*Posebni gumbi*:
+*Specifični gumbi*:
 
-> **Generiraj prototipove članka**: gumb koji će se aktivirati kada se odabere glavni članak i kada se kodira potomak članka u prvom kartici prozora nazvanog 'Članak za dupliciranje'; na ovaj način će se generirati prototip potomka članka koji će se zatim definirati i potvrditi;  
-> **Označi/Odznači sve**: gumbi koji omogućuju označavanje ili odznačavanje svih artikala koji proizlaze iz postavljenih filtera pretraživanja;  
-> **Izbriši prototip artikla**: gumb koji omogućuje brisanje, nakon što je odabran, prototipa artikla koji je generiran prije nego što se službeno stvori postupkom 'Potvrdi generiranje prototipa';  
-> **Potvrda generiranja prototipa**: gumb koji omogućuje potvrdu prethodno stvorenog prototipa, službeno stvarajući potom djeteta članka unutar baze podataka. 
+> **Generiraj prototipove artikla**: aktivira se nakon odabira roditeljskog artikla i definiranja novog artikla u prvoj kartici *Artikl za dupliciranje*. Na taj način generira se prototip novog artikla koji će se kasnije definirati i potvrditi;  
 
-U nastavku će biti detaljno opisani koraci koji omogućuju dupliciranje artikla.
+> **Označi/Odznači sve**: omogućuje označavanje ili uklanjanje oznake sa svih artikala prikazanih u rezultatima pretraživanja;  
 
+> **Izbriši prototip odabranog elementa**: omogućuje brisanje prethodno generiranog prototipa prije njegove konačne potvrde;  
 
-### Članak za dupliciranje 
+> **Potvrdi prototipove odabranih stavki**: potvrđuje prethodno kreirani prototip i službeno generira novi artikl u bazi podataka.
 
-Ova Kartica uključuje mrežu rezultata u kojoj će biti prikazan članak i/ili lista članaka koji odgovaraju prethodno postavljenim kriterijima filtra za pronalaženje početnog članka.
+U nastavku su opisani koraci potrebni za dupliciranje artikla.
 
-Nakon što se pronađe matični članak od kojeg ćemo krenuti s dupliciranjem, u donjem dijelu automatski će se popuniti neki podaci: **Društvo**, **Divizija**, **Razred članka** i **Broj prototipova**.
+### Artikl za dupliciranje
 
-Svi ovi podaci ipak su moguće ručno mijenjati putem kombiniranih okvira ili unosom različitog broja prototipova u polje **Broj prototipova**.
+Ova kartica sadrži mrežu rezultata u kojoj se prikazuje artikl ili popis artikala koji odgovaraju prethodno definiranim kriterijima pretraživanja.
 
-**Šifra artikla**, s druge strane, bit će stvorena na temelju sastava šifre artikla koji ste odabrali prema klasi artikla u tablici **Klasa artikla**.
+Nakon što se odabere roditeljski artikl koji će služiti kao osnova za dupliciranje, u donjem dijelu automatski se popunjavaju određeni podaci: **Poduzeće**, **Odjel**, **Klasa artikla** i **Broj prototipova**.
 
-Kako možete primijetiti, odabirom klase artikla, u rešetki s desne strane nalaze se informacije koje pokazuju kako trebaju biti stvoreni kodovi artikala koji pripadaju toj klasi artikla; u gore navedenom primjeru, kod se sastoji redom od dodatnih podataka, tj. Zemlje (oznake) koja će činiti i kod i opis; drugog dodatnog podatka koji će biti boja, a i on će činiti i kod i opis; još jednog dodatnog podatka koji je u ovom slučaju ponovno zemlja, a zatim progresivnog koda duljine 3 znamenke koji će se izračunati počevši od vrijednosti 1, i na kraju fiksne vrijednosti koja je u ovom slučaju utvrđena kao slovo F.
+Sve ove podatke moguće je naknadno ručno izmijeniti putem padajućih izbornika ili unosom drugog broja u polje **Broj prototipova**.
 
-Ova tablica također se sažima u samoj kartici, **Artikli za dupliciranje**, gdje će se popuniti informacije o vrijednostima navedenim gore (dakle, navest će se zemlja, boja itd., ovisno o vrsti dodatnih podataka koje ste odabrali).
+**Šifra artikla** generira se prema pravilima definiranim za odabranu klasu artikla u tablici **Klase artikala**.
 
-Jednom kada su podaci postavljeni, u poljima **Šifra** i **Opis** će automatski prikazati šifru i opis novog artikla.
+Odabirom klase artikla, u mreži s desne strane prikazuju se informacije o načinu generiranja šifri za artikle te klase. U prikazanom primjeru šifra se sastoji od:
+- jednog Extra Data polja koje predstavlja državu (oznaka se koristi i u šifri i u opisu);
+- drugog Extra Data polja koje predstavlja boju (također se koristi i u šifri i u opisu);
+- dodatnog Extra Data polja koje ponovno predstavlja državu;
+- progresivnog broja duljine 3 znamenke koji kreće od vrijednosti 1;
+- fiksne vrijednosti koja je u ovom primjeru slovo **F**.
 
-Nakon toga, možete postaviti parametre kako biste nastavili s stvaranjem **Prototipa članka**, pritiskom na odgovarajući gumb u traci s izbornicima obrasca.
+Ova konfiguracija prikazana je i u samoj kartici **Artikl za dupliciranje**, gdje se unose vrijednosti za definirana polja (država, boja i ostali odabrani Extra Data atributi).
 
-Generirani prototip bit će prikazan na sljedećoj kartici, Prototipi artikla. 
+Nakon unosa podataka, polja **Šifra** i **Opis** automatski će prikazati novu šifru i opis artikla.
+
+Nakon toga moguće je pokrenuti generiranje **Prototipa artikla** klikom na istoimeni gumb u ribbon traci.
+
+Generirani prototip prikazuje se u sljedećoj kartici **Prototipovi artikla**.
 
 ### Parametri
 
-U ovoj Kartici, možete odabrati parametre koji će regulirati dupliciranje navedenog artikla.
+U ovoj kartici mogu se odabrati parametri koji određuju način dupliciranja artikla.
 
-Na ekranu se nalazi niz flaga koje će ukazivati na karakteristike članka koje želite duplicirati točno iste kao i kod matičnog članka, a koje će se ipak moći ažurirati i/ili mijenjati u djetetu članka.
+Prozor sadrži niz oznaka (*flagova*) kojima se definira koje karakteristike artikla treba duplicirati identično kao kod izvornog (roditeljskog) artikla. Te se informacije kasnije po potrebi mogu ažurirati ili izmijeniti na novom (dječjem) artiklu.
 
-Informacije koje se mogu duplicirati obuhvaćaju: troškove, mase i dimenzije, lotove i S/N, nabavu, varijante, preferirane dobavljače (u slučaju nabavnih artikala), klijente (u slučaju prodajnih artikala), alternativne mjernih jedinica, slike, bilješke, barkodske oznake, informacije sadržane u kartici Administracija, dodatne podatke, pakiranje, itd. To su sve informacije sadržane unutar kartica koje čine članak i koje su detaljno opisane u pripadajućim člancima (vidi [Izrada predmeta](/docs/erp-home/registers/items/create-new-item) s pripadajućim povezanim dokumentima).
+Moguće je duplicirati sljedeće podatke: troškove, težine i dimenzije, lotove i serijske brojeve (S/N), nabavu, varijante, preferirane dobavljače (za nabavne artikle), kupce (za prodajne artikle), alternativne mjerne jedinice, slike, napomene, barkodove, informacije iz kartice Administracija, Extra Data podatke, pakiranje itd. Sve su to podaci koji se nalaze unutar različitih kartica artikla i detaljno su opisani u odgovarajućoj dokumentaciji (vidi [Kreiranje artikla](/docs/erp-home/registers/items/create-new-item) i povezane dokumente).
 
-Također se može odlučiti duplicirati i [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies) članka, njezin [Proizvodni ciklus](/docs/erp-home/registers/production/routes/new-route) i [MRP Parametre](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) članka.
+Također je moguće duplicirati i proizvodnu [Sastavnicu (BOM)](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), pripadajući [Radni ciklus](/docs/erp-home/registers/production/routes/new-route) te [MRP parametre](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) artikla.
 
-Uvijek unutar ove kartice, postoji dodatni odjeljak gdje se može definirati boja popunjavanja ćelije i boja teksta kako bi se mogli identificirati tijekom generiranja prototipa: redci koji sadrže nedostajuće podatke (npr. ako jedan od podataka koje želite duplicirati nedostaje u roditeljskom artiklu, u djetetovom artiklu bit će prikazan redak koji odgovara toj stavci istaknut bojom po vašem izboru) i artikli koji su već bili kodirani ranije (u slučaju da stvarate artikl koji je potpuno identičan već postojećem artiklu unutar baze podataka). 
+Unutar iste kartice nalazi se i dodatna sekcija u kojoj je moguće definirati boju pozadine ćelije i boju teksta kako bi se tijekom generiranja prototipova lakše prepoznali:
+- redovi koji sadrže nedostajuće podatke (npr. ako je neko od polja koje se duplicira prazno na roditeljskom artiklu, odgovarajući redak na novom artiklu bit će označen odabranom bojom);
+- artikli koji su već prethodno bili kreirani, odnosno situacije kada se pokušava generirati artikl identičan već postojećem artiklu u bazi podataka.
 
-Nakon postavljanja parametara, možete nastaviti s dupliciranjem članka.
+Nakon definiranja svih parametara moguće je nastaviti s postupkom dupliciranja artikla.
 
-Za sve informacije koje nisu detaljno navedene u ovom dokumentu o zajedničkom funkcioniranju obrazaca, obratite se sljedećoj poveznici: [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na zajedničko ponašanje obrazaca, pogledajte dokument [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

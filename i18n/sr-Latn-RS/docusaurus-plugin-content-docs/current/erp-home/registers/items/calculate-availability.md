@@ -1,18 +1,26 @@
 ---
-title: Izračun raspoloživosti 
+title: Obračun raspoloživosti
 sidebar_position: 5
 ---
 
-La finestra relativa al calcolo della disponibilità si apre tramite il percorso **Početna stranica > Artikli > Izračun raspoloživosti**.
+:::important Čemu služi
+Obračun raspoloživosti u Fluentisu predstavlja ključni alat koji omogućava precizno određivanje raspoloživosti artikala unutar skladišta. Funkcionalnost je dostupna putem jednostavnog korisničkog interfejsa u kojem je moguće odabrati skladišta za koja se želi izvršiti obračun. Korisnik može definisati šifru i naziv skladišta te na taj način odrediti osnovu za obračun.
 
-Putem ovog obrasca unose se skladišta za koje želite izračunati dostupnost, a zatim će se ta skladišta prikazati na obrascu [Analiza dostupnosti](/docs/erp-home/registers/items/availability-analysis).
+U delu namenjenom obračunu moguće je postaviti kriterijume za fizičku i logičku raspoloživost, kao i odrediti da li treba uzeti u obzir dokumente vezane za nabavku, prodaju, planiranu proizvodnju i oslobođenu proizvodnju. Takođe je moguće definisati vremenski period za koji se obračun vrši, čime se povećava preciznost dobijenih podataka.
 
-Obrazac se sastoji od mreže u koju unosite šifru **Skladišta** i odgovarajući **Opis** za sva skladišta za koja želite izračunati dostupnost (dodavanjem ili uklanjanjem skladišta iz ove mreže, skladište će se dodati ili ukloniti i iz mreže skladišta koja se nalazi u obrascu *Analize dostupnosti*).
+Ova funkcionalnost ne služi samo za praćenje zaliha, već i za donošenje operativnih i strateških odluka u realnom vremenu, omogućavajući pravovremeno reagovanje na potrebe nabavke i prodaje. Zahvaljujući obračunu raspoloživosti, Fluentis optimizuje upravljanje zalihama i povećava operativnu efikasnost.
+:::
 
-U desnom se odijeljku može postaviti vrsta **Izračuna za fizičku raspoloživost** i **Logičku raspoloživost** za: račun/rad, kupnju, prodaju, planiranu proizvodnju, izdanu proizvodnju, skladište (možete odabrati jednu, nekoliko ili sve te opcije, koje mogu biti različite za fizičku dostupnost u odnosu na logičku dostupnost).
+Prozor za obračun raspoloživosti otvara se putem menija **Početna > Artikli > Obračun raspoloživosti**.
 
-Na kraju, postoji mogućnost određivanja razdoblja koje sustav mora uzeti u obzir prilikom izračuna dostupnosti, unoseći broj dana od današnjeg datuma (odnosno od datuma kada se pokreće analiza dostupnosti) **Broj dana** do kojeg sustav treba provjeravati dostupnost unutar dokumenata.
+Putem ove forme definišu se skladišta za koja se želi obračunavati raspoloživost, a koja će se zatim koristiti u formi [Analiza raspoloživosti](/docs/erp-home/registers/items/availability-analysis).
 
-Trenutačno se ovi podaci više ne upravljaju jer su implementirani unutar zaslona Analize dostupnosti. Jedini aktivni dio ostaje mreža Skladišta.
+Forma se sastoji od mreže u koju se unose **Skladište** i njegov **Naziv** za sva skladišta koja treba uključiti u obračun raspoloživosti. Dodavanjem ili uklanjanjem skladišta iz ove mreže, ono će automatski biti dodato ili uklonjeno i iz mreže skladišta u formi *Analiza raspoloživosti*.
 
-Nakon što su parametri postavljeni, možete pristupiti [Analizi dostupnosti](/docs/erp-home/registers/items/availability-analysis) putem *Analiza raspoloživosti*.
+U desnom delu moguće je definisati način obračuna **Fizičke raspoloživosti** i **Logičke raspoloživosti** za: kooperaciju, nabavku, prodaju, planiranu proizvodnju, oslobođenu proizvodnju i skladište. Moguće je odabrati jednu, više ili sve ponuđene opcije, pri čemu izbori za fizičku i logičku raspoloživost mogu biti različiti.
+
+Takođe je moguće definisati period koji sistem treba da uzme u obzir za obračun raspoloživosti unosom **Broja dana** od današnjeg datuma (odnosno datuma pokretanja analize raspoloživosti) do kojeg sistem treba da proverava raspoloživost u dokumentima.
+
+Trenutno se ovi parametri više ne koriste jer su njihove funkcionalnosti premeštene u formu **Analiza raspoloživosti**. Jedini deo koji je i dalje aktivan jeste mreža **Skladišta**.
+
+Nakon definisanja parametara moguće je pokrenuti [Analizu raspoloživosti](/docs/erp-home/registers/items/availability-analysis) putem izveštaja **Analiza raspoloživosti**.
