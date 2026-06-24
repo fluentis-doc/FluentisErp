@@ -1,137 +1,135 @@
 ---
-title: Osnovni tečaj
+title: Osnovni kurs
 sidebar_position: 3
 ---
 
-Upravljanje se nalazi na putanji **Početna stranica > Zaposlenici > Tečajevi obuke > Novi osnovni tečaj** ili ga je moguće pokrenuti putem **Pretraživanja osnovnih tečajeva**.   
+Upravljanje se nalazi na putanji **Početna stranica > HR > Kursevi osposobljavanja > Novi osnovni kurs** ili se može pokrenuti putem **Pretrage osnovnih kurseva**.
 
-
-:::important ZA ŠTO SLUŽI 
-Osnovni tečajevi su predlošci tečajeva koji se izvršavaju u tvrtki rekurzivno ili ne: prilikom zapošljavanja novih zaposlenika, tijekom promjena zaduženja, periodično radi obnove prema zakonima i propisima. 
+:::important ČEMU SLUŽI
+Osnovni kursevi predstavljaju šablone kurseva koji se u kompaniji sprovode periodično ili po potrebi: prilikom zapošljavanja novih radnika, promene radnog mesta ili periodičnog obnavljanja znanja u skladu sa zakonima i propisima.
 :::
 
+## Komande dugmadi
 
-## Naredbe gumba
+### ![](/img/neutral/common/save.png) Sačuvaj
 
+Klikom na ovo dugme čuvaju se sve izmenjene informacije prikazanog *osnovnog kursa*.
 
-### ![](/img/neutral/common/save.png) Spremi
+### ![](/img/neutral/common/duplicate.png) Dupliraj
 
-Pritiskom na ovaj gumb pohranjuju se sve promijenjene informacije o prikazanom *Osnovnom Tečaju*.  
+Da biste kopirali postojeći *osnovni kurs* u novi *osnovni kurs*, potrebno je pritisnuti dugme **Dupliraj**. Otvoriće se dijalog u kojem možete definisati:
 
+> **Tip osnovnog kursa**: *tip osnovnog kursa* novog *osnovnog kursa* (obavezno polje); predlaže se tip izvornog *osnovnog kursa*.   
+> **Šifra**: *šifra* novog *osnovnog kursa* (obavezno polje).   
+> **Naziv**: *naziv* novog *osnovnog kursa* (obavezno polje).   
+> **Oblast**: *oblast* novog *osnovnog kursa*; predlaže se oblast izvornog *osnovnog kursa*.   
+> **Sektor**: *sektor* novog *osnovnog kursa*; predlaže se sektor izvornog *osnovnog kursa*.   
+> **Kategorija kursa**: *kategorija kursa* novog *osnovnog kursa*; predlaže se kategorija izvornog *osnovnog kursa*.
 
-### ![](/img/neutral/common/duplicate.png) Kopiraj
+Zatim pritisnite dugme **U redu** ili **Otkaži**, u zavisnosti od toga da li želite da nastavite ili odustanete od postupka kopiranja.
 
-Da biste kopirali postojeći *Osnovni tečaj* u novi *Osnovni tečaj* potrebno je pritisnuti gumb **Kopiraj**. Otvorit će se dijaloški okvir u kojem možete odrediti:      
-> **Vrsta osnovnog tečaja**: *Vrsta osnovnog tečaja* novog *Osnovnog tečaja* (obavezno polje), ponudit će se ona izvornog *Osnovnog tečaja*.    
-> **Šifra**: *Šifra* novog *Osnovnog tečaja* (obavezno polje).       
-> **Naziv**: *Naziv* novog *Osnovnog tečaja* (obavezno polje).       
-> **Područje**: *Područje* novog *Osnovnog tečaja*, ponudit će se ono izvornog *Osnovnog tečaja*.       
-> **Sektor**: *Sektor* novog *Osnovnog tečaja*, ponudit će se onaj izvornog *Osnovnog tečaja*.       
-> **Kategorija tečaja**: *Kategorija tečaja* novog *Osnovnog tečaja*, ponudit će se ona izvornog *Osnovnog tečaja*.     
+Na kraju postupka prikazaće se novi *osnovni kurs*.
 
-Zatim pritisnite gumb **U redu** ili **Otkaži** za nastavak ili odustanak od postupka kopiranja. Na kraju, novi *Osnovni tečaj* bit će prikazan. 
+### Planiranje sledećeg kursa
 
+Za planiranje novog *kursa* na osnovu *osnovnog kursa* potrebno je pritisnuti dugme **Planiranje sledećeg kursa**.
 
-### Planiraj sljedeći tečaj
+Novi *kurs* imaće sledeće unapred definisane informacije:
 
-Za planiranje novog *Tečaja obuke* na osnovu *Osnovnog tečaja* potrebno je pritisnuti gumb **Planiraj sljedeći tečaj**.   
+> **Tip obuke**: određen u tabeli *tipova osnovnih kurseva* povezanoj sa izvornim *osnovnim kursom*.   
+> **Godina**, **broj** i **datum**: prema *numeraciji* povezanoj sa *tipom kursa obuke* i današnjim datumom.   
+> **Planiran**: oznaka da je *kurs planiran*.   
+> Ostale informacije preuzete iz izvornog *osnovnog kursa*: *sadržaj*, *predavač*, *zahtevi za predavača*, *prisustvo stranaca*, *procena efikasnosti*, *normativne reference*, *sektor*, *oblast*, *kategorija kursa*, *planirani sati* i *trošak*; kao i lista uključenih *radnih mesta*.   
+> Na osnovu uključenih *radnih mesta*, predložiće se *zaposleni* koji na datum kursa obavljaju ta *radna mesta*.
 
-Novi *Tečaj obuke* imat će sljedeće prethodno postavljene informacije:       
-> **Vrsta obuke**: određena u tablici *Vrsta osnovnog tečaja* prisutnog u izvornom *Osnovnom tečaju*.    
-> **Godina**, **Broj** e **Datum**: prema očekivanjima *Numeracije* povezane s *Vrstom tečaja obuke* i današnjim datumom.    
-> **Planirano**: indikator *planiranog Tečaja obuke*.       
-> Ostale informacije naslijeđene od izvornog *Osnovnog tečaja*: *Sadržaj*, *Predavač*, *Zahtjevi za predavača*, *Strani radnici*, *Procjena učinkovitosti*, *Normativne reference*, *Sektor*, *Područje*, *Kategorija tečaja*, *Predviđene sate* i *Predviđeni troškovi*; popis uključenih radnih *Zadataka*.     
-> Na temelju uključenih radnih *Zadataka*, ponudit će se *Zaposlenici* koji na datum tečaja obavljaju te *Zadatke*.  
+Na kraju postupka prikazaće se novi *kurs*.
 
-Na kraju postupka, novi *Tečaj obuke* bit će prikazan.
+### Planiranje sledeće obnove
 
-### Planiraj sljedeću obnovu
+Dugme je dostupno samo ako je izabran jedan *osnovni kurs* za koji je definisana obnova (*Podaci o obnovi kursa* sa *periodičnošću* različitom od *nule*).
+Da biste planirali novu obnovu na osnovu *osnovnog kursa*, potrebno je izabrati željeni kurs i pritisnuti dugme **Planiraj sledeću obnovu**. Moguće je planirati samo jedan *kurs obuke* odjednom.
+Ako za izabrani *osnovni kurs* nikada nije održan nijedan *kurs obuke*, prikazaće se poruka da nije moguće kreirati obnovu.
 
-Gumb je omogućen samo ako se iz tablice rezultata odabere samo jedan *Osnovni tečaj* gdje je predviđena obnova (*Podaci o obnovi tečaja* s različitim *Periodičnostima* od *nule*).  
-Da biste planirali novu obnovu na osnovu *Osnovnog tečaja*, potrebno je kliknuti na tablicu *Osnovnog tečaja* na kojem želite planirati i pritisnuti gumb **Planiraj sljedeću obnovu**. Moguće je planirati samo jedan *Tečaj obuke* odjednom.  
-Ako za *Osnovni tečaj* nikada nije proveden *Tečaj obuke*, bit će prikazana poruka o nemogućnosti stvaranja obnove.   
+Novi *kurs obuke* imaće sledeće unapred definisane informacije:
 
-Novi *Tečaj obuke* imat će sljedeće prethodno postavljene informacije:  
-> **Vrsta obuke**: određena u tablici *Vrsta osnovnog tečaja* prisutnog u izvornom *osnovnom Tečaju*.     
-> **Godina**, **Broj** i **Datum**: prema očekivanjima *Numeracije* povezane s *vrstom Tečaja obuke* i današnjim datumom.     
-> **Planirano**: indikator planiranog *Tečaja obuke*.     
-> **Obnova**: indikator *Obnove Tečaja obuke*.     
-> Ostale informacije naslijeđene od izvornog *Osnovnog tečaja*: *Predavač*, *Zahtjevi za predavača*, *Normativne reference*, *Sektor*, *Područje*, *Kategorija tečaja*, popis uključenih radnih *Zadataka*; iz *Osnovnog tečaja - Obnova*: *Sadržaj*, *Strani radnici*, *Procjena učinkovitosti*, *Predviđene sate* i *Predviđeni troškovi*.    
-> Na temelju uključenih radnih *Zadataka*, ponudit će se *Zaposlenici* koji na datum tečaja obavljaju te *Zadatke*.     
+> **Tip obuke**: određen u tabeli *tipova osnovnih kurseva* povezanoj sa izvornim *osnovnim kursom*.   
+> **Godina**, **broj** i **datum**: prema pravilima *numeracije* povezane sa *tipom kursa obuke* i današnjim datumom.   
+> **Planiran**: oznaka planiranog *kursa obuke*.   
+> **Obnova**: oznaka da je reč o *obnovi kursa obuke*.   
+> Ostale informacije preuzete iz izvornog *osnovnog kursa*: *predavač*, *zahtevi za predavača*, *normativne reference*, *sektor*, *oblast*, *kategorija kursa* i lista uključenih *radnih mesta*; iz sekcije *Osnovni kurs – Obnova*: *sadržaj*, *prisustvo stranaca*, *procena efikasnosti*, *planirani sati* i *planirani troškovi*.   
+> Na osnovu uključenih *radnih mesta*, predložiće se *zaposleni* koji na datum kursa obavljaju ta *radna mesta*.
 
-Na kraju postupka, novi *Tečaj obuke* bit će prikazan.
+Na kraju postupka prikazaće se novi *kurs obuke*.
 
 ## Upravljanje podacima
 
 
 ### Podaci zaglavlja
 
-Informacije koje se upravljaju su:     
-> **Osnovni tip tečaja**: to je *osnovni Tip tečaja* novog *Osnovnog tečaja* (obavezni podatak), predložen je *osnovni Tip tečaja* naveden u *Parametrima upravljanja osobljem*.     
-> **Šifra**: to je *Šifra* novog *Osnovnog tečaja* (obavezni podatak).   
-> **Naslov**: to je *Naslov* novog *Osnovnog tečaja* (obavezni podatak).   
-> **Aktivan**: označava da je *Osnovni tečaj* još uvijek *aktivan*.   
-> **Datum početka valjanosti**: to je datum od kojeg je *osnovni Tečaj* važeći.     
-> **Datum završetka valjanosti**: to je datum kada  *Osnovni tečaj* prestaje s važenjem.     
-> **Predviđeni sati**: to su predviđeni sati obuke.     
-> **Trošak**: to je predviđeni trošak obuke.       
-> **Sadržaji**: slobodne bilješke o temi.     
-> **Napomene**: slobodne bilješke.     
->   
-> **Sektor**: to je poslovni *Sektor* na koji je usmjeren *Tečaj*.     
-> **Područje**: to je poslovno *Područje* na koje je usmjeren *Tečaj*.     
-> **Kategorija tečaja**: to je *Kategorija tečaja*.     
-> **Predavač**: to je predviđeni *Predavač* koji će voditi *Tečaj obuke*. 
-> **Zahtjevi predavača**: slobodne bilješke o temi.  
-> **Normativne reference**: slobodne bilješke o temi.  
-> **Potvrda**: slobodne bilješke o temi.       
-> **Prisutnost stranog teksta**: slobodne bilješke o temi.     
-> **Procjena učinkovitosti**: slobodne bilješke o temi.    
+Informacije kojima se upravlja su:
+
+> **Tip osnovnog kursa**: predstavlja *tip osnovnog kursa* novog *osnovnog kursa* (obavezan podatak); predlaže se *tip osnovnog kursa* definisan u *Parametrima upravljanja ljudskim resursima*.     
+> **Šifra**: predstavlja *šifru* novog *osnovnog kursa* (obavezan podatak).   
+> **Naziv**: predstavlja *naziv* novog *osnovnog kursa* (obavezan podatak).   
+> **Aktivan**: označava da je *osnovni kurs* i dalje *aktivan*.   
+> **Datum početka važenja**: datum od kojeg je *osnovni kurs* važeći.     
+> **Datum završetka važenja**: datum kada *osnovni kurs* prestaje da važi.     
+> **Planirani sati**: predviđeni broj sati obuke.     
+> **Trošak**: predviđeni trošak obuke.       
+> **Sadržaj**: slobodne napomene na temu.     
+> **Napomene**: slobodne napomene.     
 >
-> **Obnova**: ekspander u kojem je moguće unijeti:   
+> **Sektor**: poslovni *sektor* na koji je kurs usmeren.     
+> **Oblast**: poslovna *oblast* na koju je kurs usmeren.     
+> **Kategorija kursa**: *kategorija kursa*.     
+> **Predavač**: planirani *predavač* koji će voditi *kurs obuke*.   
+> **Zahtevi za predavača**: slobodne napomene na temu.   
+> **Normativne reference**: slobodne napomene na temu.   
+> **Sertifikovan**: slobodne napomene na temu.       
+> **Prisustvo stranaca**: slobodne napomene na temu.     
+> **Procena efikasnosti**: slobodne napomene na temu.    
 >
->> **Podaci o obnovi**: slobodne bilješke o temi.     
->> **Sadržaji**: slobodne bilješke o temi.  
->> **Napomene**: slobodne bilješke o temi.   
+> **Obnova**: sekcija u kojoj je moguće uneti:
 >
->> **Predviđeni sati**: to su predviđeni sati obuke za svaku obnovu.     
->> **Trošak**: to je predviđeni trošak obuke za svaku obnovu.     
->> **Periodičnost (u mjesecima)**: to je razdoblje (izraženo u mjesecima) između prvog *Tečaja* i prve *Obnove* ili između *Obnove* i *Obnove*.  
->> **Potvrda**: slobodne bilješke o temi.      
->> **Prisutnost stranog teksta**: slobodne bilješke o temi.     
->> **Procjena učinkovitosti**: slobodne bilješke o temi.     
+>> **Podaci o obnovi**: slobodne napomene na temu.     
+>> **Sadržaj**: slobodne napomene na temu.   
+>> **Napomene**: slobodne napomene na temu.   
+>
+>> **Planirani sati**: predviđeni broj sati obuke za svaku obnovu.     
+>> **Trošak**: predviđeni trošak obuke za svaku obnovu.     
+>> **Periodičnost (u mesecima)**: period (izražen u mesecima) između prvog *kursa* i prve *obnove*, odnosno između dve uzastopne *obnove*.   
+>> **Sertifikovan**: slobodne napomene na temu.      
+>> **Prisustvo stranaca**: slobodne napomene na temu.     
+>> **Procena efikasnosti**: slobodne napomene na temu.     
 
 
-### Uključeni zadaci
+### Radna mesta
 
-To su uključeni *Zadaci* za sudjelovanje u *Tečaju*.       
-Na temelju navedenih *Zadataka*, u *Tečaju obuke* koji je stvoren od ovog *Osnovnog tečaja*, predloženi su *Zaposlenici* koji ih obavljaju.
+Predstavljaju uključena *radna mesta* za pohađanje *kursa*.
+Na osnovu navedenih *radnih mesta*, u *kursu obuke* kreiranom iz ovog *osnovnog kursa* biće predloženi *zaposleni* koji ih obavljaju.
+Lista se sastoji od sledećih informacija:
+
+> **Radno mesto**: šifra *radnog mesta*.   
+> **Opis radnog mesta**: opis *radnog mesta*.   
+> **Napomene**: slobodne napomene.
+
+### Planirani i završeni kursevi
   
-Popis se sastoji od sljedećih informacija:  
- 
-> **Zadatak**: to je kod *Zadatka*.   
-> **Opis zadatka**: to je opis *Zadatka*.  
-> **Napomene**: slobodne bilješke.   
+U ove dve liste može se pregledati istorija *planiranih kurseva* i *završenih kurseva*.
+Dvostrukim klikom miša na izabrani red moguće je upravljati odabranim *kursom obuke*.
 
-
-### Planirani i završeni tečajevi
+Lista planiranih kurseva sastoji se od sledećih informacija:
   
-U ovim dvama popisima mogu se vidjeti povijest *Planiranih tečajeva* i *Završenih tečajeva*.
-Dvostrukim klikom miša na odabranu liniju moguće je upravljati odabranim *Tečajem obuke*.
+> **Tema koja će se obrađivati**  
+> **Planirani datum početka**  
+> **Planirani broj sati**  
+> **Predavač**
 
-Popis Planiranih tečajeva sastoji se od sljedećih informacija:
-  
-> **Tema koja će se obraditi**.   
-> **Predviđeni datum početka**.   
-> **Predviđeni sati**.   
-> **Predavač**.   
+Lista *završenih kurseva* sastoji se od sledećih informacija:
 
-Popis *Završenih tečajeva* sastoji se od sljedećih informacija:  
+> **Obrađena tema**  
+> **Stvarni datum početka**  
+> **Trajanje (sati)**  
+> **Predavač**
 
-> **Obrađena tema**.   
-> **Stvarni datum početka**.   
-> **Trajanje (sati)**.   
-> **Predavač**.   
-
-
-Za sve što nije detaljno navedeno u ovom dokumentu o zajedničkom radu s formama, obratite se na sljedeću poveznicu: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno navedeno u ovom dokumentu o zajedničkom radu sa formama, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

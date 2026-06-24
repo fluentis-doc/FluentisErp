@@ -1,66 +1,71 @@
 ---
-title: Pretraživanje Osnovnih tečajeva
+title: Pretraga osnovnih kurseva
 sidebar_position: 2
 ---
 
-Filter za osnovne tečajeve nalazi se na putanji **Početna stranica > Zaposlenici > Tečajevi obuke > Osnovni tečajevi**.   
+Filter za osnovne kurseve nalazi se na putanji **Početna stranica > HR > Kursevi osposobljavanja > Osnovni kursevi**.
+Filter omogućava unos novih *osnovnih kurseva* ili pretragu postojećih radi pregleda, izmene ili brisanja.
 
-Filter podataka omogućuje dodavanje novih *Osnovnih tečajeva* ili pretraživanje već postojećih kako bi se prikazali, modificirali ili obrisali.   
+### ![](/img/neutral/common/search.png) Pretraga osnovnih kurseva
 
-### ![](/img/neutral/common/search.png) Pretraživanje Osnovnih tečajeva
+Obrazac se sastoji od filtera i rezultata. Nakon što postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako biste prikazali rezultate u tabeli rezultata.
 
-Obrazac se sastoji od filtera i rezultata. Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na gumb **Traži** kako biste prikazali rezultate unutar tablice s rezultatima.   
+### ![](/img/neutral/common/new.png) Unos osnovnih kurseva
 
-### ![](/img/neutral/common/new.png) Unos Osnovnih tečajeva
+Za unos novog *osnovnog kursa* potrebno je pritisnuti dugme **Novo**.
 
-Da biste dodali nove *Osnovne tečajeve* pritisnite gumb **Novo**.   
+### ![](/img/neutral/common/edit.png) Izmeni ili ![](/img/neutral/common/view.png) Pregledaj osnovne kurseve
 
-### ![](/img/neutral/common/edit.png) Uredi ili ![](/img/neutral/common/view.png) Pregledaj Osnovne tečajeve
+Za otvaranje forme za upravljanje potrebno je dvaput kliknuti na željeni red u tabeli rezultata ili, nakon izbora jednog ili više redova, pritisnuti dugmad **Izmeni** ili **Prikaži**.
 
-Za otvaranje upravljanja tablicom rezultata potrebno je dvostruko kliknuti na željeni redak ili, odabirom jednog ili više redaka, pritisnuti gumbe **Izmijeni** ili **Pregledaj**.   
+*Specifična dugmad*:
 
-*Posebni gumbi*: 
-    
-### ![](/img/neutral/common/duplicate.png) Dupliciraj Osnovni tečaj
+### ![](/img/neutral/common/duplicate.png) Dupliraj osnovni kurs
 
-Gumb je omogućen samo ako se iz tablice rezultata odabere samo jedan  *Osnovni tečaj*.   
-Da biste duplicirali postojeći *Osnovni tečaj* u novi, pritisnite gumb **Dupliciraj** na tečaju koji želite duplicirati. Možete duplicirati samo jedan *Osnovni tečaj* odjednom. Zatim će se prikazati zahtjev za: 
-> **Tip osnovnog tečaja**: odnosi se na *Tip osnovnog tečaja* novog tečaja (obavezno polje), predložen je *Tip osnovnog tečaja* izvornog tečaja.   
-> **Naslov**: *Naslov* novog *Osnovnog tečaja* (obavezno polje).     
-> **Područje**: *Područje* novog *Osnovnog tečaja*, predloženo je *Područje* izvornog *Tečaja*.   
-> **Sektor**: *Sektor* novog *Osnovnog tečaja*, predloženo je *Sektor* izvornog *Tečaja*.     
-> **Kategorija tečaja**: *Kategorija* novog *Osnovnog tečaja*, predložena je *Kategorija* izvornog *Tečaja*.     
+Dugme je dostupno samo ako je u tabeli rezultata izabran jedan *osnovni kurs*.
+Za kreiranje novog kursa na osnovu postojećeg potrebno je pritisnuti dugme **Dupliraj** na kursu koji želite da kopirate. Moguće je duplirati samo jedan *osnovni kurs* odjednom.
+Nakon toga prikazuje se forma sa sledećim podacima:
 
-Zatim pritisnite gumb **U redu** ili **Odustani** ako želite nastaviti s dupliciranjem ili ne.
-Na kraju postupka, novi *Osnovni tečaj* bit će prikazan.
+> **Tip osnovnog kursa**: odnosi se na *tip osnovnog kursa* novog kursa (obavezno polje); predlaže se tip izvornog kursa.   
+> **Šifra/Naziv**: *naziv* novog *osnovnog kursa* (obavezno polje).   
+> **Oblast**: *oblast* novog *osnovnog kursa*; predlaže se oblast izvornog kursa.   
+> **Sektor**: *sektor* novog *osnovnog kursa*; predlaže se sektor izvornog kursa.   
+> **Kategorija kursa**: *kategorija* novog *osnovnog kursa*; predlaže se kategorija izvornog kursa.
 
-### Planiraj sljedeći tečaj
+Nakon toga pritisnite dugme **U redu** ili **Otkaži**, u zavisnosti od toga da li želite da nastavite sa dupliranjem.
 
-Gumb je omogućen samo ako se iz tablice rezultata odabere samo jedan  *Osnovni tečaj*.   
-Da biste planirali novi *Tečaj obuke* iz *Osnovnog tečaja* pritisnite gumb  **Planiraj sljedeći tečaj** na tečaju koji želite planirati. Možete planirati samo jedan *Tečaj obuke* odjednom.  
-Novi *Tečaj obuke* imat će sljedeće unaprijed postavljene informacije:   
-> **Tip tečaja obuke**: određen je u tablici *Osnovnih tečajeva* prisutnih u izvornom *Tečaju*.  
-> **Godina, Broj** i **Datum**: prema onome što je predviđeno *Numeracijom* povezanom s *Tipom tečaja obuke* i današnjim datumom.    
-> **Planirano**: indikator *planiranog Tečaja obuke*.     
-> Ostale informacije naslijeđene iz izvornog *Osnovnog tečaja*: *Sadržaj, Predavač, Zahtjevi predavača, Strani prisutni, Procjena učinkovitosti, Normativni referentni, Sektor, Područje, Kategorija tečaja, Predviđeni sati* i *Predviđeni troškovi*; popis uključenih *Zanimanja*.
+Po završetku postupka prikazaće se novi *osnovni kurs*.
 
-> Na temelju uključenih *Zanimanja* predložit će se *Zaposlenici* koji u to vrijeme obavljaju ta *Zanimanja*.   
+### Planiranje sledećeg kursa
 
-Na kraju postupka, novi *Tečaj obuke* bit će prikazan.
+Dugme je dostupno samo ako je u tabeli rezultata izabran jedan *osnovni kurs*.
+Za planiranje novog *kursa* na osnovu *osnovnog kursa* pritisnite dugme **Planiranje sledećeg kursa** na kursu koji želite da planirate. Moguće je planirati samo jedan *kurs* odjednom.
 
-### Planiraj sljedeću obnovu
+Novi *kurs* imaće unapred postavljene sledeće informacije:
 
-Gumb je omogućen samo ako se iz tablice rezultata odabere samo jedan  *Osnovni tečaj* gdje je planirana obnova (*Podaci o obnovi tečaja* s intervalom *Ponavljanja* različitim od *nula*).
-Da biste planirali novu obnovu iz *Osnovnog tečaja* potrebno je kliknuti u tablici na *Osnovni tečaj* diz kojeg želite planirati te pritisnuti gumb **Planiraj sljedeću obnovu**. Možete planirati samo jedan *Tečaj obuke* odjednom.
-Ako za *Osnovni tečaj* nikad nije proveden *Tečaj obuke*, bit će prikazana poruka o nemogućnosti stvaranja obnove.
-Novi *Tečaj obuke* će imati sljedeće unaprijed postavljene informacije:  
-> **Tip tečaja obuke**: određen je u tablici *Tipova osnovnih tečajeva* prisutnih u izvornom *Osnovnom tečaju*.  
-> **Godina, Broj** i **Datum**: prema onome što je predviđeno *Numeracijom* povezanom s *Tipom tečaja obuke* i današnjim datumom.  
-> **Planirano**: indikator *Planiranog Tečaja obuke*.     
-> **Obnova**: indikator *Obnove Tečaja obuke*.     
-> Ostale informacije naslijeđene iz izvornog *Osnovnog tečaja*:  *Predavač*, *Zahtjevi predavača*, *Normativni referentni*, *Sektor*, *Područje*, *Kategorija tečaja*, popis uključenih *Zaduženja*; iz *osnovnog tečaja - Obnova*: *Sadržaj*, *Strani prisutni*, *Procjena učinkovitosti*, *Predviđeni sati* e *Predviđeni troškovi*.   
-> Na temelju uključenih *Zanimanja*, predložit će se *Zaposlenici* koji u to vrijeme obavljaju ta *Zanimanja*.   
+> **Tip kursa**: određuje se na osnovu postavke u tabeli *osnovnih kurseva* povezanih sa izvornim *kursom*.   
+> **Godina, broj i datum**: prema pravilima *numeracije* povezane sa *tipom kursa* i današnjim datumom.   
+> **Planiran**: oznaka da je *kurs planiran*.   
+> Ostali podaci preuzeti iz izvornog *osnovnog kursa*: *sadržaj, predavač, zahtevi za predavača, prisustvo stranaca, procena efikasnosti, normativne reference, sektor, oblast, kategorija kursa, planirani sati* i *trošak*; kao i lista uključenih *radnih mesta*.
 
-Na kraju postupka, novi *Tečaj obuke* bit će prikazan.
+> Na osnovu uključenih *radnih mesta*, biće predloženi *zaposleni* koji u tom trenutku obavljaju ta *radna mesta*.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkim funkcijama obrazaca, obratite se sljedećem linku: [Zajedničke funkcije, gumbe i polja](/docs/guide/common).
+Po završetku postupka prikazaće se novi *kurs*.
+
+### Planiranje sledeće obnove
+
+Dugme je dostupno samo ako je u tabeli rezultata izabran jedan *osnovni kurs* za koji je definisana obnova (*Podaci o obnovi kursa* sa intervalom *ponavljanja* različitim od *nule*).
+Za planiranje nove obnove potrebno je izabrati *osnovni kurs* koji želite da obnovite i pritisnuti dugme **Planiranje sledeće obnove**. Moguće je planirati samo jedan *kurs* odjednom.
+Ako za izabrani *osnovni kurs* nikada nije održan nijedan *kurs*, prikazaće se poruka da nije moguće kreirati obnovu.
+Novi *kurs* imaće unapred postavljene sledeće informacije:
+
+> **Tip kursa**: određuje se na osnovu tabele *tipova osnovnih kurseva* povezane sa izvornim *osnovnim kursom*.   
+> **Godina, broj i datum**: prema pravilima *numeracije* povezane sa *tipom kursa* i današnjim datumom.   
+> **Planiran**: oznaka da je *kurs planiran*.   
+> **Obnova**: oznaka da je reč o *obnovi kursa*.   
+> Ostali podaci preuzeti iz izvornog *osnovnog kursa*: *predavač*, *zahtevi za predavača*, *normativne reference*, *sektor*, *oblast*, *kategorija kursa* i lista uključenih *radnih mesta*; iz sekcije *obnova osnovnog kursa*: *sadržaj*, *prisustvo stranaca*, *procena efikasnosti*, *planirani sati* i *planirani troškovi*.   
+> Na osnovu uključenih *radnih mesta*, biće predloženi *zaposleni* koji u tom trenutku obavljaju ta *radna mesta*.
+
+Po završetku postupka prikazaće se novi *kurs*.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkim funkcijama obrazaca, pogledajte sledeći link: [Zajedničke funkcije, dugmad i polja](/docs/guide/common).

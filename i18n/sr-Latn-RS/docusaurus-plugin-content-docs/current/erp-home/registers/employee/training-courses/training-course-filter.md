@@ -1,37 +1,39 @@
 ---
-title: Pretraga tečajeva obuke
+title: Pretraga kurseva obuke
 sidebar_position: 4
 ---
 
-Filtriranje se nalazi na putanji **Početna stranica > Zaposlenici > Tečajevi obuke > Tečajevi obuke**.   
+Filter se nalazi na putanji **Početna stranica > HR > Kursevi obuke > Kursevi obuke**.
 
-Filtriranje podataka omogućuje dodavanje *Novih tečajeva obuke* ili pretraživanje postojećih kako biste ih vidjeli, uredili ili obrisali.   
+Filtriranje podataka omogućava unos *novih kurseva obuke* ili pretragu postojećih radi pregleda, izmene ili brisanja.
 
-### ![](/img/neutral/common/search.png) Pretraživanje tečajeva obuke 
+### ![](/img/neutral/common/search.png) Pretraga kurseva obuke
 
-Obrazac se sastoji od područja filtra i područja rezultata. Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Pretraži** kako biste prikazali rezultate unutar područja rezultata.
+Forma se sastoji od dela za filtriranje i dela sa rezultatima. Nakon što podesite sve željene filtere, dovoljno je da kliknete na dugme **Traži** kako biste prikazali rezultate u tabeli rezultata.
 
-### ![](/img/neutral/common/new.png) Unos Tečajeva obuke
+### ![](/img/neutral/common/new.png) Unos kurseva obuke
 
-Da biste dodali nove *Tečajeve obuke* potrebno je pritisnuti gumb **Novo**.   
+Za unos novog *kursa obuke* potrebno je pritisnuti dugme **Novo**.
 
-### ![](/img/neutral/common/edit.png) Uređivanje ili ![](/img/neutral/common/view.png) Pregled Tečajeva obuke
+### ![](/img/neutral/common/edit.png) Izmena ili ![](/img/neutral/common/view.png) Pregled kurseva obuke
 
-Za otvaranje upravljanja, iz područja rezultata, potrebno je dvostruko kliknuti na željeni redak ili, odabrati jedan ili više redaka, i pritisnuti gumbe **Uredi** ili **Pregled**.   
+Za otvaranje izabranog kursa potrebno je dvaput kliknuti na željeni red u rezultatima ili označiti jedan ili više redova i pritisnuti dugme **Izmeni** ili **Pregledaj**.
 
-*Posebni gumbi*: 
-    
-### ![](/img/neutral/common/duplicate.png) Dupliciraj osnovne tečajeve
+*Specifična dugmad*:
 
-Gumb je omogućen samo ako se iz područja rezultata odabere samo jedan  *Osnovni tečaj*.   
-Da biste duplicirali postojeći *Tečaj obuke* u novi tečaj obuke, potrebno je kliknuti na *Tečaj obuke* koji želite duplicirati u području rezultata i pritisnuti gumb **Dupliciraj**. Možete duplicirati samo jedan *Tečaj obuke* odjednom. Zatim se prikazuje zahtjev za: 
-> **Tip tečaja obuke**: to je *Tip tečaja obuke* novog *Tečaja obuke* (obavezno polje), predložen je *Tip tečaja* obuke iz izvornog *Tečaja obuke*.  
-> **Naslov**: to je *Naslov* novog *Tečaja obuke* (obavezno polje).  
-> **Područje**: to je *Područje* novog *Tečaja obuke*, predloženo je *Područje* iz izvornog *Tečaja obuke*.  
-> **Sektor**: to je *Sektor* novog *Tečaja obuke*, predložen je  *Sektor* iz izvornog *Tečaja obuke*.  
-> **Kategorija tečaja**: to je *Kategorija tečaja* novog *Tečaja obuke*, predložena je *Kategorija tečaja* iz izvornog *Tečaja obuke*.  
+### ![](/img/neutral/common/duplicate.png) Dupliraj kurs obuke
 
-Zatim pritisnite gumb **U redu** ili gumb **Odustani** ako želite nastaviti s aktivnošću dupliciranja ili ne.    
-Nakon završetka obrade, prikazuje se novi *Tečaj obuke*.
+Dugme je omogućeno samo ako je u rezultatima odabran jedan *kurs obuke*.
 
-Za sve što nije detaljno navedeno u ovom dokumentu o zajedničkom radu s obrascima, obratite se na sljedeću poveznicu: [Značajke, gumbovi i zajednička polja](/docs/guide/common).
+Da biste duplirali postojeći *kurs obuke* u novi kurs, potrebno je označiti kurs koji želite da kopirate i pritisnuti dugme **Dupliraj**. Moguće je duplirati samo jedan *kurs obuke* odjednom. Nakon toga prikazuje se prozor za unos sledećih podataka:
+
+> **Tip kursa obuke**: *tip kursa obuke* novog *kursa obuke* (obavezno polje); predlaže se tip iz izvornog kursa.  
+> **Naziv**: *naziv* novog *kursa obuke* (obavezno polje).  
+> **Oblast**: *oblast* novog *kursa obuke*; predlaže se oblast iz izvornog kursa.  
+> **Sektor**: *sektor* novog *kursa obuke*; predlaže se sektor iz izvornog kursa.  
+> **Kategorija kursa**: *kategorija kursa* novog *kursa obuke*; predlaže se kategorija iz izvornog kursa.
+
+Zatim pritisnite dugme **U redu** ili **Odustani**, u zavisnosti od toga da li želite da nastavite postupak dupliranja.
+Po završetku obrade prikazaće se novi *kurs obuke*.
+
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu sa formama, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
