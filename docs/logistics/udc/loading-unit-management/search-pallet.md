@@ -20,15 +20,16 @@ import SearchForm from './../../../import/sections/search-form.md'
 <SearchForm />
 
 :::note Nota
-In apertura della form i flag *Carico* e *Scarico*, presenti nel filtro, non sono spuntati, quindi verranno visualizzate solo le UDC che non sono ancora state caricate.
-Mentre attivando il flag *Carico* verranno visualizzate solo le UDC caricate e abilitando anche il flag *Scarico* si vedranno solo le UDC che sono state anche scaricate.
+In apertura della form i flag *Carico* e *Scarico*, presenti nel filtro, non sono spuntati, quindi permendo su *Ricerca* verranno visualizzate le sole UDC non ancora caricate.
+Attivando il flag *Carico* verranno ricercate le UDC in stato caricato mentre abilitando anche il flag *Scarico* si vedranno le sole UDC già spedite (scaricate).
+Sono disponibili tra i comandi di menu i pulanti **Carico UDC** e **Scarico UDC** per effetuare il carico e lo scarico delle UDC selezionate. 
 :::
 
+Tra i filtri di ricerca, oltre ad *Anno*, *Tipo*, *Gruppo* e *Numero* dell'UDC è possibile filtrare per *Articolo* contenuto, *Numero/Anno Lista Unità di carico* o *Numero/Anno Lista Unità di trasferimento* in cui è stata inserita l'UDC oppure filtrando sugli ordini clienti a cui le UDC sono collegate.
+
+**Mostra anche UDC vuote**: con questo flag disabilitato vengono nascoste le UDC che non contengono righe con quantità positiva.
+
 Nel caso in cui un'*Unità di carico* sia stata inserita in una *lista di consegna o di trasferimento*, nella griglia dei risultati vengono visualizzati il numero e la data della lista. 
-
-Inoltre, è interessante notare che è anche possibile ricercare le UDC per ordine cliente a cui sono state collegate.
-
-Da questa form, è possibile effettuare il carico delle UDC selezionandole e premendo il tasto **Carico UDC** e anche lo scarico (solo se già caricata e presente in una lista) tramite il pulsante **Scarico UDC**.
 
 :::note ATTENZIONE
 Se si desidera trasferire articoli dal magazzino direttamente all'interno dell'unità di carico, utilizzando una causale di carico per inserire gli articoli nell'unità e una contropartita di scarico per rimuoverli dal magazzino, è importante ricordare di spostare prima gli articoli nell'ubicazione indicata nella causale di contropartita.
@@ -50,5 +51,8 @@ Se si desidera trasferire articoli dal magazzino direttamente all'interno dell'u
 > **Rollback stampa**: permette di settare il flag di stampa a "False"; questo pulsante è abilitato solo per le righe non caricate e non legate a dichiarazioni di produzione.      
 
 ### Visualizzazione trasferimenti UDC
+:::note ATTENZIONE
+La form è del tutto simile alla form **Ricerca UDC** descritta precedentemente a cui si rimanda per tutto ciò che non viene trattato in questo paragrafo.
+:::
 
 La procedura è stata disegnata per permettere all'utente di interrogare facilmente il magazzino UDC con lo scopo di tenere sotto controllo le giacenze e avere in un tempo di interrogazione minimo tutte le informazioni relative alle UDC presenti a magazzino e che sono state trasferite o meno tra magazzini.

@@ -239,6 +239,9 @@ Tutti questi costi possono essere usati per le valorizzazioni della distinta bas
 **Prezzo di vendita**: prezzo base da cui si può partire a creare un listino di vendita nel caso in cui si vada a considerare un listino per esempio nazionale di partenza. Nel caso in cui non vi siano listini per questo articolo, nei documenti questo articolo prenderà questo prezzo. (salvo per i documenti di reso nei quali l'articolo prende di default il prezzo indicato nel costo ultimo da verificare bene) (non viene molto utilizzato).  
 **Categoria di sconto/Configurazione fasce di prezzo/Formule di aggiornamento delle politiche di sconto**: sono dei dati  commerciali che servono per l'aggiornamento dei prezzi. La formula di aggiornamneto viene utilizzata nella procedura di [Creazione listini avanzata](/docs/sales/sales-price-list/procedures/price-list-advanced).    
 **Nessuna condizione commerciale**: quando l'articolo verrà utilizzato nei documenti non riporterà mai i prezzi o gli sconti provenienti dai listini in cui è contenuto, o il prezzo da anagrafica articolo e non verranno calcolate le provvigioni sulle vendite di questo articolo.
+**Tipo Valorizzazione costi**: va selezionato se la valorizzazione di costo medio e costo ultimo deve essere calcolata per articolo o per magazzino; nel caso sia selezionata l'opzione *Non definito* vale quanto selezionato nella *Categoria fiscale* o nei *Parametri iniziali di magazzino*.
+
+Nel caso il *Tipo Valorizzazione costi* sia per magazzino nella parte bassa della form compare una griglia che riporti i costi medi e costi ultimi calcolati per magazzino. Tali valori vengono popolati, analogamente ai corrispondenti per articolo dai movimenti con causali opportune.
 
 ## 11. **Descrizione articoli in lingua**
 

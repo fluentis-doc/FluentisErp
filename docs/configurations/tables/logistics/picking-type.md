@@ -29,15 +29,17 @@ Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla pr
 
 **Numerazione lista di prelievo**: indica la numerazione da utilizzare per le liste UDC create con questo tipo picking;   
 
-**Evasione tipo fattura**: in questo campo va definito il tipo fattura che deve essere proposto per creare la fattura da picking tramite l'apposita procedura;
+**Evasione tipo fattura**: in questo campo va definito il *Tipo fattura* che deve essere proposto per creare la fattura da picking tramite l'apposita procedura;
 
-**Evasione tipo DDT**: in questo campo va definito il tipo DDT che deve essere proposto per creare la bolla da picking tramite l'apposita procedura;
+**Evasione tipo DDT**: in questo campo va definito il *Tipo DDT* che deve essere proposto per creare la bolla da picking tramite l'apposita procedura;
+
+**Tipo Pos**: *Tipo Pos* da utilizzare nella creazione del Pos da picking;
 
 **Stato iniziale**: indica lo *Stato* di default con cui viene creato il picking;
 
-**Magazzino/Descrizione magazzino**: in questi campi viene inserito il magazzino di movimentazione della merce da proporre in automatico sulle righe articolo inserite nel picking;   
+**Magazzino/Descrizione magazzino**: in questo campo viene inserito il magazzino di movimentazione della merce da proporre in automatico sulle righe articolo inserite nel picking;   
 
-**Causale/Descrizione causale**: in questi campi viene indicata la causale di movimentazione della merce contenuta nei picking appartenenti a questa tipologia;  
+**Causale/Descrizione causale**: in questo campo viene indicata la causale di movimentazione della merce contenuta nei picking appartenenti a questa tipologia;  
 
 **Senza evasione**: al momento dell'evasione dell'ordine nel picking non viene cambiato lo stato evasione dell'ordine;
 
@@ -51,13 +53,19 @@ Per poter inserire nuove codifiche è necessario cliccare nella griglia sulla pr
 Per i *Tipi picking* che saranno utilizzati nelle *Liste di prelievo materiali*, quindi per quelli che avranno il flag *Lista prelievo materiali* attivo, è necessario inserire una causale di magazzino che abbia anche una contropartita.
 :::
 
-**Evade ordini con commessa di produzione**: non più utilizzato;
+ **Controllo disponibilità Picking**: disattivando questo flag i relativi picking verranno esclusi dall’*Analisi disponibilità*.
 
+ **Controllo disponibilità Spunta**: attivando questo flag le spunte del picking vengono considerate come impegno in *Analisi disponibilità*.
+
+ **E' visibile in WMS**: disattivando questo flag i relativi picking non saranno visibili nelle form del WMS.
+ 
 **Unità di carico obbligatoria**: i tipi picking che hanno questo flag disattivato non potranno essere usati per il prelievo delle UDC e saranno visibili nella form di [Conferma picking](/docs/logistics/wms/sales/check-row-management) del WMS. Viceversa, le tipologie di picking che hanno questo flag attivo saranno visualizzate nella [Gestione spunta](/docs/logistics/wms/sales/check-row-management) del WMS. 
 
 **Sovraevadibile**: se attivo, permette di sovra evadere la quantità indicata nel picking; è utilizzabile sia nella [Gestione spunta](/docs/logistics/wms/sales/check-row-management) che nella [Conferma picking](/docs/logistics/wms/sales/check-row-management) del WMS. Nel caso non sia attivo e si tenti di movimentare una quantità maggiore rispetto a quella indicata viene mostrato un messaggio di avviso che impedisce di proseguire.
 
-**Stampa**: indica il nome della stampa associata e il **Numero di copie** da eseguire di default. 
+**Stampa**: indica il nome del report di default associato al picking
+
+**Numero di copie**: indica il numero di copie da stampare di default. 
 
 Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
 

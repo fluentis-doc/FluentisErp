@@ -77,6 +77,7 @@ Avviando la procedura **Crea valorizzazione**, i valori nei documenti di magazzi
 :::danger Attenzione  
 Controllare attentamente i valori nei [Parametri iniziali magazzino](/docs/configurations/parameters/logistics/warehouse-initial-parameters/warehouse-parameters), sia per l'anno in cui avviene la chiusura che per quello corrente; in particolare verificare che i parametri di chiusura siano coerenti con quelli del calcolo della giacenza.
 Una errata configurazione può comportare il fallimento della valorizzazione nel caso migliore e a dati di magazzino incongruenti in quello peggiore.
+Nel caso i flag di queste due parametrizzazioni non dovessero corrispondere comparirà un avviso non bloccante che suggerirà di verificarli prima di procedere.
 :::
 
 ## Allineamento con la contabilità

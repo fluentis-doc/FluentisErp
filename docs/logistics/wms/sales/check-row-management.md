@@ -33,6 +33,11 @@ In questo tab sono visualizzate tutte le righe articoli presenti nel picking.
 Tramite il campo **Input code** (quindi utilizzando un lettore barcode) è possibile inserire i dati relativi al lotto, all'ubicazione, alla quantità di prelievo e all’articolo se lo si vuole variare rispetto a quello proposto.
 L’utente può anche variare l’articolo spostandosi nel tab **Articoli**, dove sono visualizzate tutte le righe articoli presenti nel picking, selezionando quello di interesse e premendo il pulsante **Conferma** o spostandosi nuovamente nel tab **Conferma** per poter inserire i dati relativi all’articolo appena selezionato.      
 Nel caso in cui l'utente confermi la riga, di un articolo gestito a lotti e per il quale non sia stato inserito il lotto, verrà mostrato un messaggio che ricorda di inserire il lotto. È presente nel tab anche il campo *Unità di carico* da valorizzare per poter procedere alla conferma dei dati. 
+Tutti i valori sono visualizzati nell'unità di misura del picking e in quella alternativa selezionata. Se l'articolo ha una unità di misura alternativa *Default WMS* verrà automaticamente proposta alla selezione dell'articolo come alternativa.
+
+:::note Nota
+Il pulsante **Conferma** è associato al tasto F8 della tastiera. In questo modo è possibile riconfigurare un tasto fisico del device, ove disponibile, per confermare i dati inseriti.
+:::
 
 **Pulsanti specifici**
 > **Dettaglio spunta**: permette di posizionarsi sul tab **Articoli spuntati**;        
