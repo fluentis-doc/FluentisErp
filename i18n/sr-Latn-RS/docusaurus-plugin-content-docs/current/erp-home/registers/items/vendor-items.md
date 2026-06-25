@@ -3,13 +3,18 @@ title: Artikli dobavljača
 sidebar_position: 3
 ---
 
-Obrazac se otvara putem menija **Početna > Artikli > Artikli dobavljača** i omogućava pretraživanje svih nabavnih artikala povezanih sa različitim dobavljačima, kao i unos novih zapisa. Omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
-Obrazac se sastoji od područja za filtriranje, mreže rezultata i detaljnog prikaza. Nakon postavljanja željenih filtera dovoljno je kliknuti dugme **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se otvara putem menija **Početna > Artikli > Artikli dobavljača** i omogućava pretragu svih nabavnih artikala povezanih sa različitim dobavljačima, kao i unos novih zapisa.
+
+Omogućava unos novih zapisa ili pretragu postojećih radi pregleda, izmjene ili brisanja.
+
+Obrazac se sastoji od područja za filtriranje, tabele rezultata i detaljnog prikaza. Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u mreži rezultata.
+
 Za unos novog zapisa potrebno je kliknuti na prvi prazan red u mreži ili koristiti dugme **Novo**.
 
 ## Artikli dobavljača
 
-Na osnovu prethodno postavljenih filtera u mreži će biti prikazani rezultati koji uključuju:
+Na osnovu prethodno postavljenih filtera u mreži biće prikazani rezultati koji uključuju:
+
 - šifru artikla dobavljača, njegov opis i varijantu;
 - konto/podkonto i naziv dobavljača;
 - klasu, šifru i opis artikla prema internom šifarniku;
@@ -21,9 +26,10 @@ Na osnovu prethodno postavljenih filtera u mreži će biti prikazani rezultati k
 
 ## Detalji
 
-U ovoj mreži moguće je za svaki artikal dobavljača pregledati dodatne informacije vezane za:
+U ovoj mreži moguće je za svaki artikal dobavljača pregledati dodatne informacije koje se odnose na:
+
 - cijenu;
-- količinu i povezanu mjernu jedinicu;
+- količinu i pripadajuću mjernu jedinicu;
 - datum početka i završetka važenja cijene;
 - kategoriju rabata i njen opis.
 

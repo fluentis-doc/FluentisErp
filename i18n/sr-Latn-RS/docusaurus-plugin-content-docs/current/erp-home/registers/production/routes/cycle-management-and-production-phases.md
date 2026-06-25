@@ -1,10 +1,10 @@
 ---
-title: Upravljanje ciklusa i fazama rada
+title: Upravljanje ciklusima i fazama rada
 sidebar_position: 4
 ---
 
-Ovaj obrazac omogućuje brzu izmjenu prethodno stvorenih ciklusa, pružajući mogućnost izravne izmjene vrijednosti izravno u mreži pretraživanja.
+Ovaj obrazac omogućava brzo uređivanje prethodno kreiranih proizvodnih ciklusa, pri čemu je moguće mijenjati vrijednosti direktno u tabeli rezultata, bez otvaranja pojedinačnih zapisa.
 
-Nakon postavljanja filtara i klikanja na gumb za **Pretraživanje**, u rezultatima mreže prikazuju se ciklusi koji zadovoljavaju uvjete pretraživanja.
+Nakon definisanja željenih filtera i klika na dugme **Traži**, u tabeli rezultata prikazuju se svi proizvodni ciklusi koji odgovaraju postavljenim kriterijima pretrage.
 
-Tada se rezultati mogu izravno urediti unutar mreže.
+Prikazane podatke moguće je uređivati direktno u tabeli rezultata.

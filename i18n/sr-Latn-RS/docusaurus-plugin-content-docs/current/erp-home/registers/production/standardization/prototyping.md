@@ -3,20 +3,14 @@ title: Pretraga prototipa
 sidebar_position: 1
 ---
 
-Ovaj obrazac omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih prikazali, promijenili ili obrisali.
+Ovaj obrazac omogućava unos novih zapisa ili pretragu postojećih radi pregleda, izmjene ili brisanja.
 
-Obrazac se sastoji od područja za filtriranje i rezultata. Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na gumb **Pretraži** kako biste prikazali rezultate unutar rezultatne mreže.
+Obrazac se sastoji od područja za filtriranje i tabele rezultata. Nakon definisanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli.
 
-Za unos novih zapisa potrebno je kliknuti na prazan redak u mreži ili pritisnuti gumb **Novo**. 
+Za unos novog zapisa potrebno je kliknuti na prvi prazan red u tabeli ili koristiti dugme **Novo**.
 
-*Poseban gumb*:
+*Posebno dugme*:
 
-> **Ponovni izračun troškova**: odabirom jednog ili više redaka prototipa i pritiskom na gumb za ponovni izračun troškova, sustav će ponovno izračunati troškove tog prototipa temeljeći se na troškovima koji ga čine.
+> **Preračun troškova**: odabirom jednog ili više prototipova i klikom na ovo dugme sistem će ponovo izračunati njihove troškove na osnovu troškova svih komponenti koje ih čine.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom radu obrazaca, molimo vas da pogledate sljedeći link [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
-
-
-
-
-
-
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na zajedničko ponašanje obrazaca, pogledajte dokument [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

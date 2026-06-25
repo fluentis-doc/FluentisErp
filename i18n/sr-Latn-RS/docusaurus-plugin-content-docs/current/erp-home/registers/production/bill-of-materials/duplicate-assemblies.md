@@ -1,20 +1,16 @@
 ---
-title: Dupliciranje sklopova
+title: Dupliciraj sastavnice
 sidebar_position: 5
 ---
 
-Moguće je koristiti filtre kako biste pronašli postojeće sklopove koji će poslužiti kao polazna točka za dupliciranje novog sklopa koji želite stvoriti.
+Pomoću filtera moguće je pronaći postojeće sastavnice koje će poslužiti kao osnova za kreiranje nove sastavnice.
 
-Nakon postavljanja filtara i pritiska na gumb za **Pretraživanje**, u rezultatnoj mreži **Artikli za dupliciranje** prikazuju se rezultati pretraživanja.
+Nakon definisanja filtera i klika na dugme **Traži**, rezultati pretrage prikazuju se u tabeli **Dupliciraj sastavnice**.
 
-Korisnik može odabrati članak iz rezultata mreže, koji će postati polazni članak za dupliciranje, te unijeti u odjeljku pri dnu stranice klasu, kod, verziju i po potrebi varijantu članka na koji želi kopirati odabrani sklop (tvrtka i odjel automatski će se postaviti na istu tvrtku i odjel u kojem se radi).
+Korisnik može odabrati artikal iz tabele koji će predstavljati izvornu sastavnicu za dupliciranje, a zatim u donjem dijelu obrasca unijeti **klasu**, **šifru**, **verziju** i, po potrebi, **varijantu** artikla na koji želi kopirati odabranu sastavnicu. **Preduzeće** i **Odjel** automatski će biti postavljeni na iste vrijednosti kao kod izvorne sastavnice.
 
-Moguće je postaviti i zastave **Alternative** i **Faze** koje, ako su aktivirane, omogućuju dupliciranje i alternativa i faza proizvodnje polaznog članka.
+Takođe je moguće aktivirati opcije **Alternative** i **Faze**, koje omogućavaju da se zajedno sa sastavnicom dupliciraju i alternativne komponente, odnosno faze proizvodnje izvornog artikla.
 
-Nakon postavljanja svih podataka, pritiskanjem ikone na vrpci nazvane **Dupliciraj sklop** aktivira se postupak koji generira, za odabrani članak, sklop potpuno identičan polaznom sklopu.
+Nakon definisanja svih potrebnih podataka, klikom na dugme **Dupliciraj sastavnicu** pokreće se postupak kojim se za odabrani artikal kreira sastavnica identična izvornoj.
 
-*Posebni gumbi*:
-
-> **Dupliciraj sklopove**: gumb koji aktivira postupak za dupliciranje sklopa.
-
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu obrazaca, molimo pogledajte sljedeći link [Značajke, gumbe i zajednička polja](/docs/guide/common).
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na zajedničko ponašanje obrazaca, pogledajte dokument [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

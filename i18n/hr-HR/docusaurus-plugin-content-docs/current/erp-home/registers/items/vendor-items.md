@@ -7,7 +7,7 @@ Obrazac se otvara putem izbornika **Početna > Artikli > Artikli dobavljača** i
 
 Omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
-Obrazac se sastoji od područja za filtriranje, mreže rezultata i detaljnog prikaza. Nakon postavljanja željenih filtera dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od područja za filtriranje, tablice rezultata i detaljnog prikaza. Nakon postavljanja željenih filtera dovoljno je kliknuti gumb **Traži** kako bi se rezultati prikazali u mreži rezultata.
 
 Za unos novog zapisa potrebno je kliknuti na prvi prazan redak u mreži ili koristiti gumb **Novo**.
 

@@ -1,61 +1,70 @@
 ---
-title: Modifikacija komponenata
+title: Uređivanje komponenti prototipa
 sidebar_position: 4
 ---
 
-Ovaj obrazac omogućuje masovnu izmjenu prethodno stvorenih prototipova, koristeći tri različite procedure ovisno o vrsti željene promjene: zamjena/izmjena, dodavanje i poništenje.
+Ovaj obrazac omogućava masovno uređivanje prethodno kreiranih prototipova korištenjem tri različite procedure, u zavisnosti od vrste izmjene koju želite izvršiti: **Zamjena/Izmjena**, **Dodavanje** i **Brisanje**.
 
-### Zamjena i izmjena 
+### Zamjena i izmjena
 
-Odabirom opcije **Zamjena/Izmjena** iz padajućeg izbornika **Vrsta upravljanja**, potrebno je unijeti komponentu u područje filtra, odabirom je pomoću odgovarajućeg gumba l'apposito *Pomoć stavke* smještenog pored polja **Komponenta**.
+Odabirom opcije **Zamijeni/Izmijeni** iz padajućeg izbornika **Vrsta upravljanja**, potrebno je unijeti komponentu u područje filtera.
 
-Filtrirajte po jednom članku; nije moguće unijeti samo klasu članka ili samo dio koda ili opisa kao kriterij pretraživanja. Nakon postavljanja kriterija pretraživanja, klikom na gumb za **Pretraživanje** smješten na vrpci, postupak prikazuje sve osnovne distinkcije unutar kojih je prisutan komponent unesen u područje filtra, izvršavajući tako *Sažimanje komponente*.
+Filter omogućava pretragu samo jednog artikla. Kao kriterij pretrage nije moguće koristiti samo klasu artikla niti samo dio njegove šifre ili opisa.
 
-U rešetki rezultata prikazane su klasa, kod, opis i varijanta skupa, verzija osnovne distinkcije, početak i završetak valjanosti kako roditeljskog članka tako i komponente, također, prikazana je količina komponente i njena jedinica mjere, uvijek u kontekstu veze skup/komponenta.
+Nakon definisanja kriterija pretrage i klika na dugme **Traži** na *Ribbon* traci, sistem prikazuje sve prototipove koji sadrže komponentu unesenu u filteru, odnosno izvršava pretragu svih prototipova u kojima se komponenta koristi.
 
-Odaberite jednu od prikazanih distinkcija, ili, odaberite kombinacijom *CTRL + klik * mišem, popis osnovnih distinkcija na kojima želite izvršiti postupak **Zamjena/Izmjena**.
+U tabeli rezultata prikazuju se klasa, šifra, opis i varijanta prototipa, verzija sastavnice, početak i kraj perioda važenja za roditeljski artikal i komponentu, kao i količina komponente i njena mjerna jedinica u okviru veze prototip–komponenta.
 
-Odaberite, u donjem dijelu prozora, novu komponentu koja će zamijeniti onu odabrane u odjeljku filtra. 
-Za odabir ove nove komponente možete koristiti karticu *Pomoć stavke*, unoseći polja *klase, koda, opisa* i, prema potrebi *varijante* nove komponente, za koju obavezno treba unijeti i količinu (i je li količina *fiksna* ili *varijabilna*), *količinu otpada*, početak i završetak valjanosti, oznake *prioriteta* i *bilješke* nove komponente.
+Odaberite jedan ili više prototipova na kojima želite izvršiti postupak **Zamjene/Izmjene** (višestruki odabir moguć je kombinacijom **CTRL + klik**).
 
-Pomoću oznaka *Alternativa* moguće je odlučiti hoće li se u novu vezu uključiti i alternative povezane s novom komponentom.
+U donjem dijelu obrasca odaberite novu komponentu koja će zamijeniti komponentu definisanu u filteru.
 
-Moguće je također aktivirati, po potrebi, oznaku *Pomično* i oznaku *Fiktivno* (za detaljan opis različitih polja za popunjavanje upućujemo na članak [Upravljanje strukturama](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)).
+Prilikom odabira nove komponente moguće je koristiti **Pomoć pri izboru artikla** te unijeti **klasu**, **šifru**, **opis** i, po potrebi, **varijantu**. Obavezno je definisati **količinu** (fiksnu ili varijabilnu), a po potrebi i **količinu otpada**, **početak i kraj važenja**, **prioritet** i **napomene**.
 
-Pomoću ovog postupka moguće je unijeti istu komponentu unesenu u odjeljak filtra: u ovom će se slučaju jednostavno izvršiti izmjena već prisutnih informacija za tu komponentu unutar odabranih distinkcija u rešetki.
+Aktiviranjem opcije **Alternative** moguće je odlučiti da li će se zajedno s komponentom prenijeti i njene alternative.
 
-Nakon što unesete informacije, izvršite postupak **Zamjena/Izmjena** pomoću gumba *Izvrši*.
+Po potrebi se mogu uključiti i opcije **Dozvoljeno kretanje** i **Fiktivni nivo**. Za detaljan opis ovih polja pogledajte dokument [Upravljanje sastavnicama](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
 
-### Unos
+Istom procedurom moguće je odabrati i istu komponentu koja je navedena u filteru. U tom slučaju neće doći do zamjene komponente, već samo do izmjene njenih postojećih parametara u odabranim prototipovima.
 
-Odabirom opcije **Unos** iz padajućeg izbornika **Vrsta upravljanja**, potrebno je unijeti skup u područje filtra, odabirom ga pomoću odgovarajućeg gumba za *Pomoć stavke* smještenog pored polja **Skup**, unutar kojeg želite unijeti komponentu.
+Nakon unosa svih podataka kliknite na dugme **Izvrši** kako biste pokrenuli postupak **Zamjene/Izmjene**.
 
-U ovom slučaju nije potrebno filtrirati samo jedan članak, pa je stoga moguće unijeti i klasu članka ili samo dio koda ili opisa kao kriterij pretraživanja (polja filtra ista su kao i u postupku *Zamjena/Izmjena*). Zatim, klikom na gumb za **Pretraživanje** smješten na vrpci, postupak prikazuje sve osnovne distinkcije koje odgovaraju postavljenom kriteriju pretraživanja. U rešetki rezultata prikazane su klasa, kod, opis i varijanta skupa i svih njegovih komponenata.
+### Dodavanje
 
-Odaberite jednu od prikazanih distinkcija ili odaberite kombinacijom *CTRL + klik* mišem popis osnovnih distinkcija na kojima želite izvršiti postupak Unos.
+Odabirom opcije **Dodavanje** iz padajućeg izbornika **Vrsta upravljanja**, potrebno je u području filtera odabrati prototip u koji želite dodati novu komponentu.
 
-U donjem dijelu prozora odaberite novu komponentu koju želite unijeti unutar odabrane distinkcije u odjeljku filtra. Za odabir ove nove komponente možete koristiti karticu *Pomoć stavke*, unoseći polja *klase, koda, opisa* i, prema potrebi, *varijante* nove komponente, za koju obavezno treba unijeti i *količinu* (i je li količina *fiksna* ili *varijabilna*), početak i završetak valjanosti, prioritet i bilješke nove komponente.
+Za razliku od postupka zamjene, ovdje nije potrebno ograničiti pretragu na jedan artikal. Kao kriterij pretrage moguće je koristiti samo klasu artikla ili dio njegove šifre odnosno opisa (filteri su isti kao kod postupka **Zamjena/Izmjena**).
 
-Pomoću oznaka *Alternativa* moguće je odlučiti hoće li se u novu vezu uključiti i alternative povezane s novom komponentom.
+Nakon definisanja kriterija pretrage i klika na dugme **Traži**, sistem prikazuje sve prototipove koji odgovaraju zadanim uslovima.
 
-Moguće je također aktivirati, po potrebi, oznaku *Pomično* i oznaku *Fiktivno* (za detaljan opis različitih polja za popunjavanje upućujemo na članak [Upravljanje strukturama](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)).
+U tabeli rezultata prikazuju se klasa, šifra, opis i varijanta prototipa zajedno sa svim njegovim komponentama.
 
-Nakon što unesete informacije, izvršite postupak **Unos** pomoću gumba *Izvrši*.
+Odaberite jedan ili više prototipova (kombinacijom **CTRL + klik**) u koje želite dodati novu komponentu.
 
-### Poništavanje
+U donjem dijelu obrasca odaberite komponentu koju želite dodati. Za odabir možete koristiti **Pomoć pri izboru artikla**, pri čemu je potrebno unijeti **klasu**, **šifru**, **opis** i, po potrebi, **varijantu**. Obavezno je definisati **količinu** (fiksnu ili varijabilnu), a po potrebi i **početak i kraj važenja**, **prioritet** i **napomene**.
 
-Odabirom opcije **Poništavanje** iz padajućeg izbornika **Vrsta upravljanja**,potrebno je unijeti komponentu koju želite ukloniti iz osnovnih distinkcija, odabirom je pomoću odgovarajućeg gumba za *Pomoć stavke* smještenog pored polja **Komponenta**, te po želji i **Skup** (ili njegovu klasu ili dio koda ili opisa) iz kojeg želite ukloniti komponentu.
+Opcijom **Alternative** moguće je prenijeti i alternative povezane s novom komponentom.
 
-Zatim, klikom na gumb **Pretraživanje**, smješten na vrpci, postupak prikazuje sve osnovne distinkcije koje odgovaraju postavljenom kriteriju pretraživanja. U rešetki rezultata prikazane su klasa, kod, opis i varijanta skupa, početak i završetak valjanosti veze između odabrane komponente u području filtra i skupa prikazanog u rešetki, količina komponente i njena jedinica mjere korištenja, uvijek u kontekstu veze skup/komponenta.
+Po potrebi se mogu aktivirati i opcije **Dozvoljeno kretanje** i **Fiktivni nivo**. Za detaljnije informacije pogledajte dokument [Upravljanje sastavnicama](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
 
-Odaberite jednu od prikazanih distinkcija ili odaberite kombinacijom *CTRL + klik* mišem popis osnovnih distinkcija na kojima želite izvršiti postupak Poništavanje.
+Nakon unosa svih podataka kliknite na dugme **Izvrši** kako biste pokrenuli postupak **Dodavanja**.
 
-Donji dio prozora bit će deaktiviran u slučaju **Poništavanja**.
+### Brisanje
 
-Nakon odabira komponente za uklanjanje moguće je, pomoću gumba *Izvrši*, izvršiti postupak **Poništavanje**.
+Odabirom opcije **Obriši** iz padajućeg izbornika **Vrsta upravljanja**, potrebno je odabrati komponentu koju želite ukloniti iz prototipova.
 
-*Poseban gumb*:
+Nakon klika na dugme **Traži**, sistem prikazuje sve prototipove koji sadrže odabranu komponentu.
 
-> **Izvrši**: gumb koji omogućuje pokretanje odabrane procedure u početnom padajućem izborniku prozora (tj. postupka *Zamjena/Izmjena*, postupka *Unos* ili postupka *Poništavanje*).
+Tabela rezultata prikazuje klasu, šifru, opis i varijantu prototipa, početak i kraj važenja veze između komponente i prototipa, količinu komponente i njenu mjernu jedinicu.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu obrazaca, pogledajte sljedeću poveznicu [Zajedničke značajke, gumbe i polja](/docs/guide/common).
+Odaberite jedan ili više prototipova iz kojih želite ukloniti komponentu.
+
+Kod ove procedure donji dio obrasca nije dostupan za unos podataka.
+
+Nakon odabira željenih prototipova kliknite na dugme **Izvrši** kako biste pokrenuli postupak **Brisanja**.
+
+### Specifično dugme
+
+> **Izvrši**: pokreće proceduru odabranu u polju **Vrsta upravljanja** (*Zamjena/Izmjena*, *Dodavanje* ili *Brisanje*).
+
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na zajedničko ponašanje obrazaca, pogledajte dokument [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

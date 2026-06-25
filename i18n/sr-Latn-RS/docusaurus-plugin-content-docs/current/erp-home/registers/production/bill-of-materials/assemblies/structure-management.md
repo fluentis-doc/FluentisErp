@@ -1,99 +1,107 @@
 ---
-title: Upravljanje strukturama 
+title: Sastavnica materijala
 sidebar_position: 2
 ---
 
-Kao što je već spomenuto, iz obrasca [Sklopovi](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), odabirom osnovne razrade koju želite vidjeti i dvostrukim klikom ulazite u uređivanje osnovne razrade i vidite njezinu grafičku prikaz u obliku stabla.
+Kao što je već navedeno, iz obrasca [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies), odabirom željene sastavnice i dvostrukim klikom otvara se njen prikaz i uređivanje u obliku stabla.
+Sastavnica predstavlja višeslojnu strukturu u obliku stabla u kojoj postoji odnos **roditelj–dijete**. Jedna [komponenta](/docs/guide/common/glossary/glossary-intro#a) može istovremeno biti i roditelj drugim komponentama, čime se formira proizvoljan broj nivoa sve do posljednjeg nivoa na kojem se nalaze osnovni materijali.
 
-Osnovna razrada je višerazinska struktura, stablo u kojem postoji veza tipa roditelj-dijete. [Dijete](/docs/guide/common/glossary/glossary-intro#a) može također biti roditelj i tako dalje, za neodređeni broj razina, sve do posljednje razine gdje se nalaze materijali.
+Prozor je podijeljen na dva dijela: s lijeve strane prikazuje se stablo sastavnice, dok se s desne strane prikazuju detaljne informacije o odabranoj komponenti.
 
-Ekran je podijeljen u dva dijela: s lijeve strane je prikazano stablo osnovne razrade, dok se s desne strane prikazuju detalji o različitim komponentama stabla.
+## Struktura sastavnice
 
+Za prikaz kompletnog stabla dovoljno je kliknuti na oznaku **+** pored šifre artikla ili koristiti dugme **Proširi**. Na taj način prikazuju se svi nivoi sastavnice, pri čemu su različite vrste artikala označene odgovarajućim ikonama:
 
-## Struktura osnovne razrade
+![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image02.png): predstavlja proizvodne artikle;
 
-Da biste vidjeli cijelo stablo, jednostavno kliknite mišem na **+** pored koda artikla ili pritisnite gumb **Razvij**. Na taj način će se otvoriti svi različiti slojevi osnovne razrade, a svaki sloj bit će predstavljen ikonama koje identificiraju kategoriju svakog artikla ili točnije vrstu nabave tog artikla:
+![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image03.png): predstavlja nabavne artikle;
 
-![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image02.png): predstavlja artikle proizvodnje;
+![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image04.png): predstavlja artikle kooperacije.
 
-![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image03.png): predstavlja artikle kupovine;
+Nakon proširivanja stabla dostupna su sljedeća **specifična dugmad** za odabrani artikal:
 
-![](/img/it-it/erp-home/registers/production/bill-of-materials/assemblies/structure-management/image04.png): predstavlja artikle konta rada;
+> **Dodaj komponentu**: omogućava unos nove komponente u sastavnicu;  
+> **Obriši komponentu**: omogućava brisanje odabrane komponente;  
+> **Proširi**: potpuno razvija stablo sastavnice;  
+> **Kopiraj komponentu**: kopira odabranu komponentu;  
+> **Isijeci komponentu**: isijeca (*cut*) odabranu komponentu;  
+> **Nalijepi komponentu**: lijepi (*paste*) prethodno kopiranu ili isječenu komponentu;  
+> **MRP parametri**: otvara [MRP parametre](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) odabrane komponente;  
+> **Radni ciklus**: otvara [Radni ciklus](/docs/erp-home/registers/production/routes/new-route) odabrane komponente;  
+> **Ažuriraj strukturu**: ažurira sve informacije sastavnice (na primjer, ako je promijenjen opis artikla, nakon pokretanja ove funkcije prikazaće se ažurirani opis).
 
-Nakon što ste proširili padajući izbornik, imat ćete mogućnost koristiti sljedeće **Posebne gumbe** za odabrani članak:
+## Informacije o roditelju i komponenti
 
-> **Unesi komponentu**: omogućuje unos novog podnivoa razrade;  
-> **Izbriši komponente**: omogućuje brisanje odabrane komponente;    
-> **Razvijaj**: omogućuje potpuno razvijanje stabla osnovne razrade;     
-> **Kopiranje komponente**: omogućuje kopiranje odabrane komponente;     
-> **Izreži komponentu**: omogućuje izrezivanje odabrane komponente;     
-> **Zalijepi komponentu**: omogućuje lijepljenje odabrane komponente;     
-> **Parametri MRP**: omogućuje otvaranje [MRP Parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) odabrane komponente;     
-> **Radni Ciklus**: omogućuje otvaranje [Radnog Ciklusa](/docs/erp-home/registers/production/routes/new-route) del componente selezionato;       
-> **Ažuriraj strukturu**: omogućuje ažuriranje svih informacija o osnovnoj razradi (na primjer, ako je promijenjen opis članka osnovne razrade, upotrebom ove funkcije aplikacija prikazuje ažurirani opis tog članka).
+Odabirom bilo koje komponente u stablu, u desnom dijelu prozora prikazuju se informacije o njenom roditelju (gornji dio) i o samoj komponenti (donji dio).
 
+**Sastavnica**: prikazuju se verzija sastavnice, klasa, šifra, opis i varijanta roditeljskog artikla, količina roditelja na koju se odnosi količina komponente i pripadajuća mjerna jedinica.
+Za količinu je moguće odrediti da li je **fiksna** ili **promjenljiva**, odnosno da li će se uvijek proizvoditi ista količina ili ona može varirati između proizvodnih naloga.
+Takođe je moguće označiti sastavnicu kao **Fiktivnu sastavnicu**, čime se ona neće uzimati u obzir tokom planiranja proizvodnje ili MRP izračuna.
+Dostupno je i polje **Napomena** za unos dodatnih informacija, kao i polja koja prikazuju datum početka važenja, datum unosa i datum posljednje izmjene sastavnice.
 
-## Informacije o roditelju/dijelu osnovne razrade
+:::note Napomena
+**Datum važenja** omogućava pregled sastava sastavnice za određeni datum, čime je moguće pratiti istoriju svih izmjena.
 
-Držeći odabranom jednu od komponenata razrade, prikazuju se informacije u desnom dijelu prozora o razini iznad odabrane komponente (na gornjem desnom dijelu prozora) i same komponente (na donjem desnom dijelu prozora).
-
-**Sklop**: prikazuju se verzija osnovne razrade, razred, kod, opis i varijanta razine iznad, količina razine iznad na koju se odnosi količina komponente i njezina mjerna jedinica; u vezi s količinom moguće je odrediti je li riječ o fiksnoj ili varijabilnoj količini, odnosno, hoće li se s tom razradom uvijek proizvoditi određena količina ili može biti različita iz proizvodnje u proizvodnju; zatim se može odrediti je li ovaj sklop **Fikcionalni sklop** odnosno sklop koji se u obradi rasporeda ili MRP-a ne razmatra; zatim postoji polje **Bilješke** u kojem je moguće unijeti eventualne napomene o roditelju, a tu su i polja koja se odnose na datume važenja sklopa, datum unosa sklopa i datum posljednje izmjene sklopa.
-
-:::note NAPOMENA
-**Datum valjanosti**: datum važenja sklopa omogućava provjeru sastava osnovne razrade na uneseni datum; ovo omogućava održavanje povijesti svih promjena izvršenih na toj razradi. Na primjer, brisanjem datuma važenja prikazuju se svi komponenti korišteni za tu razradu od trenutka njezinog stvaranja, ističući crveno komponente koje više nisu važeće danas. 
+Na primjer, uklanjanjem datuma važenja prikazaće se sve komponente koje su ikada bile dio sastavnice od njenog nastanka, pri čemu će komponente koje više nisu važeće biti označene crvenom bojom.
 :::
 
-**Komponenta**: prikazuju se razred, šifra, opis i varijanta odabrane komponente u stablu, te jedinica mjere komponente; prioritet, odnosno redoslijed prema kojem se komponenta treba prikazati u stablu osnovne razrade, informacija o tome je li komponenta fikcionalna ili ne. Postoji i oznaka *Fikcionalno*, koja omogućava odluku hoće li odabrana komponenta biti smatrana fikcionalnom samo u okviru te osnovne razrade. U slučaju *fikcionalnog članka* ili *fikcionalnog nivoa*, postupak *Opće Rasporeda * i *MRP-a* tijekom eksplozije potreba “preskočit će” komponentu označenu kao fikcionalnu ili kao fikcionalni nivo, čitajući potrebe njezinih eventualnih komponenti.
+**Komponenta**: prikazuju se klasa, šifra, opis, varijanta i mjerna jedinica odabrane komponente, kao i njen prioritet odnosno redoslijed prikaza u stablu.
 
-Povezani s komponentom su i svi prisutni kartice:
+Prikazuje se i informacija da li je komponenta fiktivna. Opcija **Fiktivna** omogućava da se komponenta smatra fiktivnom samo unutar konkretne sastavnice.
+U slučaju fiktivnog artikla ili fiktivne komponente, procedure **Glavnog planiranja** i **MRP-a** tokom obračuna potreba preskaču tu komponentu i direktno obrađuju potrebe njenih podkomponenti, ukoliko one postoje. Za odabranu komponentu dostupne su i sve pripadajuće kartice.
 
-### Opći podaci 
+### Opšti podaci
 
-**Količina**: predstavlja količinu predviđenu za proizvodnju referentne količine njenog višeg nivoa;  
-**Jedinica mjere uporabe**: može se razlikovati od upravljačke jedinice mjere same komponente **Fiksno** označava da će se uvijek koristiti ista količina komponente za proizvodnju višeg nivoa; **Varijabilno** označava da će se količina komponente za proizvodnju potomstva mijenjati iz puta u put (na primjer, mijenjat će se s količinom roditelja);  
-**Postotak odstupanja na količinu negativno i pozitivno** označava postotak za koji se može koristiti komponenta više ili manje u odnosu na navedenu količinu kako bi se ostalo unutar postavljene tolerancije; 
-**Početak važenja** i **Kraj važenja**: omogućuju odlučivanje o tome hoće li komponenta biti valjana od određenog datuma ili do određenog datuma;
-**Prioritet**: označava redoslijed prema kojem se komponenta treba prikazati u stablu osnovne razrade;  
-**Pokretno**: omogućuje odlučivanje hoće li se komponenta kretati ili ne treba biti pomicana na skladište. Ova oznaka će utjecati na sve skladišne pokrete, jer će u kreaciji pokreta biti uzeti u obzir samo članci s aktivnom oznakom, dok drugi neće biti pomicani;  
-**Kritično**: ako je oznaka aktivna, služi za označavanje kritičnosti te komponente (za sada se koristi samo za [Raspoređivanje prema kapacitetu](/docs/planning/ms-master-scheduling/finite-capacityscheduling));          
-**Unaprijed postavljeni postotak otpada za komponentu**, koja omogućava da se eksplozija potreba poveća za taj postotak količine same komponente;  
-**Fiktivna razina**: ako je oznaka aktivna, čini da postupak *Opće Rasporeda* i *MRP* preskoči tu komponentu tijekom eksplozije potreba;  
-**Referentna shema**: omogućuje unos slobodne bilješke o komponenti (na primjer, referentna shema tehničkog crteža);           
-**Bilješke**: omogućuju unos slobodne bilješke o komponenti.
+**Količina**: predstavlja količinu komponente potrebnu za proizvodnju referentne količine njenog roditeljskog nivoa;
+**Jedinica mjere upotrebe**: može se razlikovati od osnovne mjerne jedinice same komponente.
+**Fiksno**: označava da će se uvijek koristiti ista količina komponente za proizvodnju roditeljskog artikla.
+**Promjenljivo**: označava da će se količina komponente mijenjati u zavisnosti od količine roditeljskog artikla.
+**Procenat odstupanja količine (negativno i pozitivno)**: određuje dozvoljeno odstupanje stvarno utrošene količine komponente u odnosu na definisanu količinu.
+**Početak važenja** i **Kraj važenja**: određuju period u kojem je komponenta važeća u sastavnici.
+**Prioritet**: određuje redoslijed prikaza komponente u stablu sastavnice.
+**Dozvoljeno knjiženje**: određuje da li će komponenta biti uključena u skladišna knjiženja. Tokom generisanja skladišnih dokumenata obrađuju se samo komponente kod kojih je ova opcija aktivna.
+**Kritično**: ako je uključeno, komponenta se označava kao kritična. Trenutno se koristi samo u proceduri [Planiranje sa konačnim kapacitetima](/docs/planning/ms-master-scheduling/finite-capacityscheduling).
+**Podrazumijevani procenat otpada**: omogućava automatsko uvećanje potrebne količine komponente za definisani procenat otpada.
+**Fiktivni nivo**: ako je uključeno, procedure **Glavnog planiranja** i **MRP-a** preskaču ovu komponentu prilikom obračuna potreba.
+**Referentna šema**: omogućava unos slobodne napomene vezane za komponentu (na primjer, oznaka tehničkog crteža).
+**Napomene**: omogućavaju unos dodatnih napomena za komponentu.
 
 ### Alternative
 
-Na ovoj Kartici moguće je postaviti alternative za komponentu osnovne razrade u prioritetnom redoslijedu, u slučaju da komponenta nije dostupna u trenutku proizvodnje te razrade.
+Na ovoj kartici moguće je definisati alternativne komponente koje će se koristiti prema definisanom prioritetu ukoliko osnovna komponenta nije dostupna u trenutku proizvodnje.
+Alternative se uzimaju u obzir tokom skladišnih knjiženja kada se koristi skladišni predložak kod kojeg su aktivirane opcije **Alternative** i/ili **Mješovite alternative**.
+Procedure **Glavnog planiranja** i **MRP-a** uzimaju alternative u obzir samo ako su aktivirane odgovarajuće opcije:
 
-Postoji mogućnost, u slučaju više alternativa, da se odredi prioritet njihove upotrebe tijekom proizvodnje *Raspored* i *MRP* uzimat će u obzir alternative ovisno o aktivaciji određenih zastava u povezanim parametrima (za *MRP Parametre* zastava koja se treba postaviti bit će *Razmotri i alternative materijala* i postavlja se u prozoru [MRP Parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), za *Raspored*, ista zastava koja se treba aktivirati bit će *Razmotri i alternative materijala* i postavlja se u zaslonu [Rasporeda](/docs/planning/ms-master-scheduling/general-schedule), kartica *Parametri*).
-
+- za Glavno planiranje potrebno je aktivirati opciju **Razmatraj alternative materijala**, koja se nalazi u prozoru Glavnog planiranja, na kartici [Opšti parametri](/docs/planning/ms-master-scheduling/general-schedule);
+- za MRP potrebno je aktivirati opciju **Razmatraj alternative materijala**, koja se nalazi u prozoru [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters).
 
 ### Faze razduženja
 
-Na ovoj kartici moguće je postaviti fazu tijekom koje se komponenta mora isprazniti.
+Na ovoj kartici moguće je definisati fazu proizvodnje u kojoj će se izvršiti razduženje komponente.
+Postoje tri načina razduženja materijala: **Automatsko**, **Sa liste** i **Ručno**, a definišu se u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters).
 
-Postoje tri vrste pražnjenja materijala: **Automatsko**, **S popisom** i **Ručno** a postavljaju se u [MRP Parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters).
-
-U slučaju odabira ručnog pražnjenja, **Fluentis** automatski uzima u obzir da će se pražnjenje materijala (koji nije dodijeljen fazi) automatski obaviti, ako postoji više faza za taj proizvod, u skladu s posljednjom fazom koja ima aktivirane zastave *Pomično* i *Proizvodno*. 
+Ako je izabrano **Ručno** razduženje, **Fluentis** automatski razdužuje materijal koji nije dodijeljen nijednoj fazi na posljednjoj fazi koja ima aktivirane opcije **Skladišna** i **Proizvodna**, ukoliko proizvodni ciklus sadrži više faza.
 
 ### Ciklus
 
-Na ovoj kartici prikazan je popis [faza](/docs/configurations/tables/production/standard-phases) koje čine [ciklus obrade](/docs/erp-home/registers/production/routes/new-route) odabranog članka.
+Na ovoj kartici prikazan je spisak [faza](/docs/configurations/tables/production/standard-phases) koje čine [Radni ciklus](/docs/erp-home/registers/production/routes/new-route) odabranog artikla.
 
 ### Komponente
 
-Na ovoj kartici prikazuju se eventualne komponente odabranog članka. Moguće je dodavati nove komponente i mijenjati postojeće s ove kartice, kao i putem gumba u traci s karticama (Umetni/Kopiraj/Zalijepi/Izreži i Izbriši komponente).
+Na ovoj kartici prikazuju se sve komponente odabranog artikla.
 
-### Bilješke
+Komponente je moguće dodavati, mijenjati i brisati direktno iz ove kartice ili korišćenjem odgovarajućih dugmadi na *ribbon* traci (**Dodaj**, **Kopiraj**, **Nalijepi**, **Isijeci** i **Obriši komponentu**).
 
-Na ovoj Kartici mogu se unijeti eventualne bilješke i učitati datoteke ili slike koje treba uzeti u obzir tijekom proizvodnje.
+### Napomene
 
-### Dodatni podaci – Osnovna razrada
+Na ovoj kartici moguće je unositi napomene, kao i dodavati datoteke ili slike koje treba uzeti u obzir tokom proizvodnje.
 
-Na ovoj Kartici moguće je pregledati i eventualno mijenjati dodatne podatke koji se odnose na osnovnu razradu odabrane komponente. Ova kartica je aktivna samo ako komponenta ima osnovnu razradu.
+### Dodatni podaci – Sastavnica
 
-### Dodatni podaci  - Komponenti 
+Na ovoj kartici moguće je pregledati i po potrebi izmijeniti dodatne podatke koji se odnose na sastavnicu odabrane komponente.
+Kartica je dostupna samo ako odabrana komponenta ima vlastitu sastavnicu.
 
-Na ovoj kartici moguće je pregledati i eventualno mijenjati dodatne podatke koji se odnose na odabranu komponentu. 
+### Dodatni podaci – Komponenta
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu obrazaca, molimo pogledajte sljedeći link [Značajke, gumbe i zajednička polja](/docs/guide/common).
+Na ovoj kartici moguće je pregledati i po potrebi izmijeniti dodatne podatke koji se odnose na odabranu komponentu.
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na zajedničko ponašanje obrazaca, pogledajte dokument [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

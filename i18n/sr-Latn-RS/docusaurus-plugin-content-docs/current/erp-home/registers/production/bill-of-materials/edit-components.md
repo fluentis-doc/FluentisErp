@@ -1,62 +1,64 @@
 ---
-title: Uredi kompnente
+title: Uredi komponente
 sidebar_position: 6
 ---
 
-Ovaj obrazac omogućuje masovne izmjene sklopova koji su prethodno stvoreni, koristeći tri različite procedure ovisno o vrsti izmjene koju želite izvršiti: zamjena/izmjena, dodavanje i poništavanje.
+Ovaj obrazac omogućava masovne izmjene sastavnica koje su prethodno kreirane, koristeći tri različite procedure, u zavisnosti od vrste izmjene koju želite izvršiti: **Zamjena/Uređivanje**, **Umetanje** (dodavanje) i **Otkazivanje** (uklanjanje).
 
-### Zamjena i izmjena 
+### Zamjena i uređivanje
 
-Odabiranjem opcije **Zamjena/Izmjena** iz padajućeg izbornika **Vrsta upravljanja**, potrebno je unijeti komponentu u područje filtriranja, odabirom *Pomoć stavke* pored polja **Komponenta**.
+Odabirom opcije **Zamjena/Uredi** iz padajućeg izbornika **Vrsta upravljanja**, potrebno je unijeti komponentu u područje filtera koristeći **Pomoć za izbor artikla** pored polja **Komponenta**.
 
-Filtrirajte samo jedan artikl; nije moguće unijeti kao filter pretraživanja samo klasu artikla ili samo dio koda ili opisa. Nakon postavljanja kriterija pretraživanja, pritiskom na gumb **Pretraživanje** na vrpci rezultirat će prikazivanjem u rešetki svih osnovnih razrada unutar kojih se nalazi komponenta unesena u područje filtra, izvršavajući time *Sažimanje komponente*.
+Kao filter moguće je odabrati isključivo jedan artikal. Nije moguće pretraživati samo po klasi artikla ili dijelu šifre odnosno opisa. Nakon definisanja kriterija pretrage i klika na dugme **Traži**, u tabeli će biti prikazane sve sastavnice koje sadrže komponentu unesenu u filter, čime se izvršava postupak *Sažimanja komponente*.
 
-U rešetki rezultata prikazuju se klasa, kod, opis i varijanta sklopa, početak i završetak valjanosti veze između komponente odabrane u području filtra i sklopa prikazanog u rešetki, količina komponente i njegova jedinica mjere, uvijek u kontekstu veze sklop/komponenta.
+U tabeli rezultata prikazuju se klasa, šifra, opis i varijanta sastavnice, datum početka i završetka važenja veze između komponente odabrane u filteru i prikazane sastavnice, kao i količina komponente i njena mjerna jedinica u okviru veze sastavnica–komponenta.
 
-Odaberite jedan od prikazanih sklopova ili, odabirom kombinacije *CTRL+klik* mišem, odaberite popis osnovnih razrada na kojima želite izvršiti postupak 'Zamjena/Izmjena'.
+Odaberite jednu ili više sastavnica na kojima želite izvršiti postupak **Zamjena/Uredi**. Višestruki odabir moguć je kombinacijom tipki **CTRL + klik**.
 
-Odaberite u donjem dijelu prozora novu komponentu koja će zamijeniti onu odabrane u odjeljku filtra.  
-Za odabir ove nove komponente moguće je koristiti *Pomoć stavke*, unoseći podatke o *klasi, kodu, opisu* i po potrebi *varijanti* nove komponente, za koju je obavezno unijeti i količinu (i je li količina *fiksna* ili *varijabilna*) te opcionalno l'*jedinicu mjere korištenja*, *količinu otpada*, *% pozitivnog i negativnog odstupanja*, početak i kraj valjanosti, *prioritet*, i *bilješke* nove komponente.
+U donjem dijelu prozora potrebno je odabrati novu komponentu koja će zamijeniti postojeću komponentu iz filtera.
 
-Pomoću zastava *Alternative* e *Faze* moguće je odlučiti hoće li se u novu vezu uključiti i alternative i faze obrade povezane s novom komponentom.
+Za odabir nove komponente moguće je koristiti **Pomoć za izbor artikla**, pri čemu je potrebno unijeti podatke o **klasi**, **šifri**, **opisu** i po potrebi **varijanti** nove komponente. Obavezno je unijeti i **količinu**, kao i odrediti da li je ona **fiksna** ili **varijabilna**. Po potrebi je moguće definisati i **mjernu jedinicu upotrebe**, **količinu otpada**, **pozitivno i negativno odstupanje (%)**, **datum početka i završetka važenja**, **prioritet** i **napomene** nove komponente.
 
-Ako je potrebno, moguće je aktivirati zastavice *Prenosivo* i *Fiktivno* (za detalje o popunjavanju različitih polja, pogledajte članak [Upravljanje strukturama](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)).
+Pomoću opcija **Alternative** i **Faza** moguće je odrediti da li će se zajedno s novom komponentom prenijeti i njene alternative, odnosno faze proizvodnog procesa.
 
-Ovim postupkom moguće je unijeti istu komponentu u donji odjeljak koji je unesen u odjeljak filtra: u ovom slučaju bit će jednostavno izvršena izmjena već prisutnih informacija za tu komponentu unutar odabranih razrada u rešetki.
+Po potrebi je moguće aktivirati i opcije **Dozvoljeno kretanje** i **Fiktivni nivo**. Više informacija o ovim poljima nalazi se u dokumentu [Upravljanje sastavnicama](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
 
-Kada unesete informacije, izvršite postupak **Zamjena/Izmjena** pritiskom na gumb za obradu ![](/img/neutral/common/execute.png).
+Ovim postupkom moguće je odabrati istu komponentu koja je unesena u filter. U tom slučaju neće biti izvršena zamjena komponente, već samo izmjena postojećih podataka te komponente u odabranim sastavnicama.
 
+Nakon unosa svih potrebnih podataka, postupak **Zamjena/Uređivanje** pokreće se klikom na dugme za izvršavanje ![](/img/neutral/common/execute.png).
 
 ### Umetanje
 
-Odabirom opcije **Umetanje** iz padajućeg izbornika **Tip upravljanja**, potrebno je unijeti u područje filtra sklop, odabirom *Pomoć* stavke pored polja **Sklop**, unutar kojeg želite dodati komponentu.
+Odabirom opcije **Umetanje** iz padajućeg izbornika **Vrsta upravljanja**, potrebno je unijeti **Sastavnicu** u području filtera u koju želite dodati novu komponentu.
 
-U ovom slučaju nije potrebno filtrirati samo jedan artikl, pa je moguće unijeti kao filter pretraživanja samo klasu artikla ili samo dio koda ili opisa, (polja za filtar su ista kao i u postupku *Zamjena/Izmjena*). Zatim, pritiskom na gumb **Pretraživanje** na vrpci, postupak će prikazati u rešetki sve osnovne razrade koje odgovaraju postavljenom kriteriju pretraživanja. U rešetki rezultata prikazuju se klasa, kod, opis i varijanta sklopa.
+U ovom slučaju nije potrebno filtrirati samo jedan artikal, pa je moguće kao kriterij pretrage unijeti samo klasu artikla ili dio šifre odnosno opisa (polja za filter ista su kao i kod postupka **Zamjena/Uredi**). Nakon toga, klikom na dugme **Traži**, u tabeli će biti prikazane sve sastavnice koje odgovaraju definisanim kriterijima pretrage. U tabeli rezultata prikazuju se klasa, šifra, opis i varijanta sastavnice.
 
-Izaberite jednu od prikazanih struktura ili, držeći tipku *CTRL + klik* mišem, odaberite listu osnovnih struktura na kojima želite izvršiti postupak Umetanja.
+Odaberite jednu ili više prikazanih sastavnica na kojima želite izvršiti postupak **Umetanja**. Višestruki odabir moguć je kombinacijom tipki **CTRL + klik**.
 
-U donjem dijelu prozora odaberite novu komponentu koju želite umetnuti unutar odabranih osnovnih struktura izdvojenih u odjeljku filtra. Za odabir nove komponente možete koristiti *Pomoć stavke*, unoseći podatke o *klasi, kodu, opisu* , i eventualno *varijanti* nove komponente, za koju je obavezno unijeti i *količinu* (i da li je količina *fiksna* ili *varijabilna*) te opcionalno jedinicu mjere korištenja, količinu otpada, postotak odstupanja pozitivan i negativan, početni i završni datum valjanosti, prioritet, i napomene o novoj komponenti.
+U donjem dijelu prozora potrebno je odabrati novu komponentu koju želite dodati u odabrane sastavnice.
 
-Korištenjem oznaka *Alternative* i *Faze* možete odlučiti želite li uključiti i alternative i faze proizvodnje povezane s novom komponentom.
+Za odabir nove komponente moguće je koristiti **Pomoć za izbor artikla**, pri čemu je potrebno unijeti podatke o **klasi**, **šifri**, **opisu** i po potrebi **varijanti** nove komponente. Obavezno je unijeti **količinu** i odrediti da li je ona **fiksna** ili **varijabilna**. Po potrebi je moguće definisati i **mjernu jedinicu upotrebe**, **količinu otpada**, **pozitivno i negativno odstupanje (%)**, **datum početka i završetka važenja**, **prioritet** i **napomene** nove komponente.
 
-Ako je potrebno, možete aktivirati oznake *Prijenosno* i *Fiktivno* (za detalje o poljima koja treba popuniti, pogledajte članak o [Upravljanju strukturama](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management)).
+Pomoću opcija **Alternative** i **Faza** moguće je odrediti da li će zajedno s novom komponentom biti prenesene i njene alternative, odnosno faze proizvodnog procesa.
 
-Nakon unosa informacija, izvršite postupak **Umetanja** pritiskom na gumb za obradu ![](/img/neutral/common/execute.png).
+Po potrebi je moguće aktivirati i opcije **Dozvoljeno kretanje** i **Fiktivni nivo**. Više informacija o ovim poljima nalazi se u dokumentu [Upravljanje sastavnicama](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
+
+Nakon unosa svih potrebnih podataka, postupak **Umetanja** pokreće se klikom na dugme za izvršavanje ![](/img/neutral/common/execute.png).
 
 ### Otkazivanje
 
-Odabirom opcije **Otkazivanje** iz padajućeg izbornika **Vrsta upravljanja**, potrebno je unijeti komponentu koju želite ukloniti iz osnovnih struktura, odabirom *Pomoć stavke* pored polja **Komponenta**, i opcionalno i **Sklop** (ili njegovu klasu ili dio koda ili opisa) iz kojeg želite ukloniti komponentu.
+Odabirom opcije **Otkaži** iz padajućeg izbornika **Vrsta upravljanja**, potrebno je u polje **Komponenta** unijeti komponentu koju želite ukloniti iz sastavnica, a po potrebi unijeti i **Sastavnicu** (ili njenu klasu, odnosno dio šifre ili opisa) iz koje će komponenta biti uklonjena.
 
-Zatim, pritiskom na gumb **Pretraži**, smješten na traci s opcijama, postupak prikazuje u mreži sve osnovne strukture koje odgovaraju postavljenom filtru pretraživanja. U rezultatima se prikazuju klasa, kod, opis i varijanta sklopa, početak i kraj valjanosti veze između odabrane komponente u filtru i sklopa prikazanog u mreži, količina komponente i njegova jedinica mjere korištenja, uvijek u vezi s vezom sklop-komponenta.
+Klikom na dugme **Traži** na *ribbon* traci, u tabeli će biti prikazane sve sastavnice koje odgovaraju definisanim kriterijima pretrage. U rezultatima se prikazuju klasa, šifra, opis i varijanta sastavnice, datum početka i završetka važenja veze između odabrane komponente i sastavnice, kao i količina komponente i njena mjerna jedinica u okviru veze sastavnica–komponenta.
 
-Odaberite jedan od prikazanih sklopova ili, držeći tipku *CTRL + klik* mmišem, odaberite listu osnovnih struktura na kojima želite izvršiti postupak Otkazivanja.
+Odaberite jednu ili više prikazanih sastavnica na kojima želite izvršiti postupak **Otkazivanja**. Višestruki odabir moguć je kombinacijom tipki **CTRL + klik**.
 
-Donji dio prozora bit će onemogućen u slučaju postupka **Otkazivanja**.
+Kod postupka **Otkazivanja**, donji dio prozora nije dostupan za uređivanje.
 
-Nakon odabira komponente koju želite ukloniti, možete, korištenjem gumba za Obradu ![](/img/neutral/common/execute.png), izvršiti postupak **Otkazivanja**.
+Nakon odabira komponente koju želite ukloniti, postupak **Otkazivanja** pokreće se klikom na dugme za izvršavanje ![](/img/neutral/common/execute.png).
 
-*Posebni gumbi*:
+### Specifična dugmad
 
-> **Obrada**: gumb koji omogućuje pokretanje odabrane procedure u početnom padajućem izborniku prozora (tj. postupka Zamjene/Modifikacije, postupka Umetanja ili postupka Otkazivanja).
+> **Obrada**: pokreće postupak odabran u padajućem izborniku **Vrsta upravljanja**, odnosno **Zamjena/Uređivanje**, **Umetanje** ili **Otkazivanje**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu oblika, obratite se sljedećoj poveznici [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na zajedničko ponašanje obrazaca, pogledajte dokument [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

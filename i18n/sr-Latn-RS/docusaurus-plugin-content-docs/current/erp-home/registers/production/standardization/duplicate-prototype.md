@@ -1,20 +1,16 @@
 ---
-title: Dupliciranje modela
+title: Dupliranje prototipa
 sidebar_position: 3
 ---
 
-Moguće je koristiti filtre za pretraživanje prototipa s kojima želite započeti dupliciranje novog prototipa koji želite stvoriti.
+Moguće je koristiti filtere za pretragu prototipova koji će poslužiti kao osnova za kreiranje novog prototipa.
 
-Nakon postavljanja filtara i klikanja na gumb za **Pretraživanje**, rezultati pretraživanja bit će prikazani u rešetki.
+Nakon postavljanja filtera i klika na dugme **Traži**, rezultati pretrage biće prikazani u tabeli.
 
-Korisnik može odabrati artikl prisutan u rezultatima rešetke koji će postati polazni artikl za dupliciranje i unijeti u donji dio stranice klasu, kod, verziju, te opcionalno varijantu artikla s kojeg želi kopirati odabrani sastav (tvrtka i odjel automatski se postavljaju jednako tvrtki i odjelu na kojem se radi).
+Korisnik može odabrati artikal iz tabele koji će predstavljati polazni artikal za dupliranje, a zatim u donjem dijelu obrasca unijeti klasu, šifru, verziju i, po potrebi, varijantu artikla na koji želi kopirati odabrani prototip (preduzeće i odjel automatski će biti postavljeni na iste vrijednosti kao u trenutnom radnom okruženju).
 
-Također je moguće postaviti oznake **Materijali**, **Dodatni podaci**, **Ciklusi faza**, **Stavke troškova** i **Povezani dokumenti** koje, ako su aktivirane, omogućuju i dupliciranje odgovarajućih podataka prisutnih u početnom prototipu.
+Takođe je moguće aktivirati opcije **Materijali**, **Dodatni podaci**, **Faze ciklusa**, **Elementi troška** i **Priloženi dokumenti**. Ako su ove opcije uključene, zajedno s prototipom biće duplicirani i odgovarajući povezani podaci.
 
-Nakon postavljanja svih podataka, klikom na ikonu na traci s nazivom **Dupliciraj** aktivirat će se procedura koja stvara, za navedeni artikl, prototip koji je potpuno identičan početnom.
+Nakon što su svi podaci definisani, klikom na dugme **Dupliraj** na *Ribbon* traci pokreće se procedura koja za odabrani artikal kreira prototip identičan izvornom.
 
-*Posebni gumbi*:
-
-> **Dupliciraj**: gumb koji aktivira postupak za dupliciranje skupa.
-
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu oblika, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na zajedničko ponašanje obrazaca, pogledajte dokument [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

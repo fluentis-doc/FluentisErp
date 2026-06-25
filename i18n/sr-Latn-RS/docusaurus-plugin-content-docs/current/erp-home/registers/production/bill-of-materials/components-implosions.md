@@ -1,16 +1,16 @@
 ---
-title: Sažimanje komponenti
+title: Sažmi komponente
 sidebar_position: 9
 ---
 
-Ovaj obrazac omogućuje pokretanje izvještaja koji omogućuje pregled osnovnih struktura u kojima je sadržan određeni članak.
+Ovaj obrazac omogućava pokretanje izvještaja koji prikazuje sastavnice u kojima se nalazi određeni artikal kao komponenta.
 
 Sastoji se od dvije sekcije:
 
-**Filtri**: koristi se za filtriranje prema komponenti za koju želite izvršiti imploziju. Verzija je pretpostavljena prema zadanim podacima unesenima u odgovarajuću tablicu upravljanja; datum valjanosti automatski se predlaže kao jednak današnjem datumu. Opciono možete unijeti i varijantu te odlučiti želite li da se operacija Sažimanje komponente odvija na gotovom proizvodu.
+**Filteri**: koriste se za filtriranje prema komponenti za koju želite izvršiti sažimanje. **Verzija** se automatski preuzima prema podrazumijevanim vrijednostima definisanim u odgovarajućoj tabeli, dok se **Datum važenja** automatski postavlja na tekući datum. Dodatno je moguće unijeti **varijantu** i odabrati da li će se sažimanje komponenti vršiti na nivou gotovog proizvoda;
 
-**Rezultat u mreži**: u ovoj sekciji prikazat će se rezultati proizašli iz opcija filtara unesenih u prethodnom odjeljku; osim komponente, prikazat će se i informacije povezane s odgovarajućim sklopom.
+**Rezultat u tabeli**: u ovoj sekciji prikazuju se rezultati dobijeni na osnovu definisanih filtera. Pored komponente, prikazuju se i informacije o sastavnici kojoj komponenta pripada.
 
-Za pokretanje izvještaja dovoljno je kliknuti na **Pregled** (u ovom slučaju vidjet ćete pregled izvještaja i moći ćete odlučiti želite li isprintati, koliko stranica i kopija isprintati ili želite li izvesti datoteku) ili kliknite na **Print** (u ovom slučaju izvještaj će se direktno isprintati).
+Za pokretanje izvještaja dovoljno je kliknuti na **Pregled prije štampe** (u tom slučaju prikazaće se pregled izvještaja iz kojeg je moguće odštampati izvještaj, odabrati broj stranica i kopija ili izvesti izvještaj u datoteku) ili na **Štampaj** (u tom slučaju izvještaj će odmah biti poslat na štampanje).
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu oblika, obratite se sljedećoj poveznici  [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
+Za sve funkcionalnosti koje nisu detaljno opisane u ovom dokumentu, a odnose se na zajedničko ponašanje obrazaca, pogledajte dokument [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
