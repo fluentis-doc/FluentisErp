@@ -1,117 +1,110 @@
 ---
-title: Funkcionalnost provjere krize poduzeća 
+title: Funkcionalnosti provere krize preduzeća
 sidebar_position: 1
 ---
 
 :::important[Uvod]
-Propisi i zakoni imaju za cilj spriječiti situacije insolventnosti kroz usvajanje alata za rano praćenje financijskih poteškoća.
+Propisi o krizi preduzeća, uvedeni Zakonskom uredbom br. 14/2019 (Kodeks o krizi preduzeća i insolventnosti), imaju za cilj sprečavanje nastanka insolventnosti primenom alata za rano praćenje finansijskih poteškoća.
 
-Tvrtke su dužne osigurati odgovarajuće organizacijske, administrativne i računovodstvene strukture koje su sposobne pravovremeno uočiti signale ekonomske, imovinske ili financijske neravnoteže.
+Preduzeća su dužna da uspostave odgovarajuće organizacione, administrativne i računovodstvene sisteme koji omogućavaju pravovremeno prepoznavanje znakova privredne, imovinske ili finansijske neravnoteže.
 
-Među alatima predviđenim zakonskom regulativom nalaze se **specifični indikatori**, poput DSCR-a (Debt Service Coverage Ratio), provjere kontinuiteta poslovanja, i analize održivosti duga. Nepoštivanje obveza može dovesti do odgovornosti za upravu.
+Među alatima predviđenim propisima nalaze se **specifični pokazatelji**, kao što su DSCR (Debt Service Coverage Ratio), provera kontinuiteta poslovanja i analiza održivosti duga. Neispunjavanje ovih obaveza može dovesti do odgovornosti uprave.
 
-Unutar Fluentis ERP-a dostupne su funkcionalnosti posvećene kontroli pokazatelja krize, koje podržavaju tvrtku u poštivanju onoga što je predviđeno važećim propisima.
+U okviru **Fluentis ERP-a** dostupne su funkcionalnosti namenjene kontroli pokazatelja krize, koje preduzeću pomažu u ispunjavanju zahteva važećih propisa.
 
-U sljedećim odlomcima detaljno su opisane funkcionalnosti dostupne za ispunjavanje tih obveza.
+U nastavku su detaljno opisane dostupne funkcionalnosti za ispunjavanje navedenih obaveza.
 :::
 
-## 1 Pristup funkcionalnosti 
-Upravljanje krizom poduzeća moguće je putem korištenja rješenja Fluentis ***Corporate Performance Monitor (CPM)***.
+## 1. Pristup funkcionalnosti
+
+Upravljanje krizom preduzeća moguće je korišćenjem Fluentis rešenja **Corporate Performance Monitor (CPM)**.
 
 ![](/img/it-it/finance-area/corporate-crisis/1.png)
 
-CPM, općenito, osmišljen je za praćenje poslovnih performansi i, posebno, za stvaranje indeksa i KPI-a. Također se koristi za fleksibilnije upravljanje indeksima krize.
+CPM je namenjen praćenju poslovnih performansi, kao i izradi pokazatelja i KPI-jeva. Takođe se koristi za fleksibilnije upravljanje pokazateljima krize.
 
-## 2 CPM funkcionalnosti 
-Modul CPM uključuje odjeljak posvećen provjeri krize poduzeća, podijeljen u četiri dijela. 
+## 2. Funkcionalnosti CPM-a
+
+Modul CPM sadrži odeljak posvećen proveri krize preduzeća, koji je podeljen na četiri kartice.
 
 ![](/img/it-it/finance-area/corporate-crisis/2.png)
 
-Svaki dio prikazuje izračun raznih kontrola predviđenih propisima:
+Svaka kartica prikazuje obračun kontrola propisanih važećim zakonodavstvom.
+Na prvoj kartici, **Provere eksternih institucija**, sprovode se kontrole institucija kao što su **Poreska uprava** i **INPS**, koje prate:
 
-U prvom, ***Provjerama trećih strana***, provode se testovi entiteta kao što su **Porezna uprava** i **INPS**, koji prate:
+- kašnjenja u plaćanju PDV-a;
+- kašnjenja u plaćanju doprinosa za socijalno osiguranje i poreskih obaveza zaposlenih.
 
--	Kašnjenja u uplati PDV-a
--	Kašnjenja u uplati doprinosa za socijalno osiguranje i poreza na dohodak zaposlenika
+Konkretno, pragovi koji aktiviraju upozorenja su:
+- **PDV**: minimalni dug od 100.000 € → moguća insolventnost;
+- **Ostali poreski dugovi**: više od 1.000.000 € uz kašnjenje duže od 90 dana → upozorenje;
+- **Doprinosi za socijalno osiguranje**: više od 50.000 € uz kašnjenje duže od 180 dana → upozorenje.
 
-Posebno, pragovi koji aktiviraju prijave su:  
+Navedeni pragovi mogu se konfigurisati u internim tabelama sistema.
+Na drugoj kartici, **Provera neto kapitala i DSCR-a**, proveravaju se:
+- **Ukupan neto kapital**: ako je negativan, pretpostavlja se stanje krize;
+- **DSCR (Debt Service Coverage Ratio)**: ako je manji od 1, pretpostavlja se stanje krize.
 
--	PDV: dug u minimalnom iznosu od 100.000 € → moguća nesolventnost  
--	Ostali porezni dugovi: iznos veći od 1.000.000 € i kašnjenje > 90 dana → prijava  
--	Doprinosi za socijalno osiguranje: iznos veći od 50.000 € i kašnjenje > 180 dana → prijava  
+Na trećoj kartici, **Sektorski pokazatelji**, proverava se pet sektorskih pokazatelja čije očekivane vrednosti zavise od privrednog sektora kojem preduzeće pripada. Ako su prekoračeni svi propisani pragovi, ponovo se pretpostavlja stanje krize.
+Poslednja kartica namenjena je obračunu **prilagođenih pokazatelja**, na osnovu kojih svako preduzeće može sprovoditi sopstvene specifične analize i procene.
 
-Ovi pragovi su podesivi u internim tablicama sustava. 
+## 3. Izvori podataka
 
-U drugom dijelu, ***Provjera neto imovine i DSCR*** provjerava se:
+Podaci koji se koriste za provere potiču iz:
+- **specifičnih** konfiguracionih **tabela**
+- automatskih obračuna putem **SQL** upita
+- konfiguracija povezanih sa **kontnim planom**
+- **dospelih plaćanja**
 
--	Ukupna neto imovina: ako je negativna, pretpostavlja se stanje krize
--	DSCR (Debt Service Coverage Ratio): ako je manji od 1, također se pretpostavlja stanje krize
-
-U trećem dijelu, ***Indeksi sektora***, provjerava se 5 sektorskih pokazatelja, gdje su očekivane vrijednosti određene prema djelatnosti poduzeća.  
-
-Posljednji dio posvećen je izračunu eventualnih ***Prilagođenih indeksa***, na temelju kojih svako poduzeće provodi vlastite specifične procjene.  
-
-## 3 Izvori podataka
-Podaci koji se koriste za kontrole dolaze iz:
-
--	**Specifičnih konfiguracijskih tablica**
--	Automatskih izračuna putem **SQL** upita
--	Konfiguracija povezanih s **kontnim planom**
--	**Pregledom dospijeća**
-
-Prije svega, unutar tablice **Društva** potrebno je navesti **gospodarski sektor** kojem poduzeće pripada: **Kartica Administrativne postavke > Polje sektor za procjenu krize poduzeća**
- 
-Zatim, unutar **kontnog plana** potrebno je **dodijeliti vrste računa za procjenu krize poduzeća** (fiksna tablica), putem polja ***Kriza poduzeća*** koje se nalazi u rešetki *Računi* (detalji kontnog plana).  
+Pre svega, u tabeli **Preduzeće** potrebno je definisati **privredni sektor** kojem preduzeće pripada: **Kartica Administrativne postavke > Polje Privredni sektor za krizu preduzeća**.
+Zatim je u **kontnom planu** potrebno **dodeliti vrste konta za krizu preduzeća** (fiksna tabela) putem polja **Kriza preduzeća**, koje se nalazi u mreži **Konta** (detalji kontnog plana).
 
 Moguće vrste su:
- 
-- ADE-VAT obično se povezuje s kontom koji prikazuje mjesečni saldo PDV-a, za koji je potrebno upravljati otvorenim stavkama radi identifikacije otvorenog duga;  
-- ADE-OTHER slično, povezuje se s kontima koji prikazuju druge porezne obveze, također s upravljanjem otvorenim stavkama;  
-- INPS povezuje se s kontima za doprinose za socijalno osiguranje, također s otvorenim stavkama;  
-- LIQ povezuje se s **glavnim računima** koji sadrže šifre kupaca/dobavljača — iz kojih se putem *cash flow* analize izvode podaci o dostupnoj likvidnosti;  
-- FIN povezuje se s kontima (ili glavnim kontima) koji prikazuju financijske obveze, bilo izravno ili putem budućih otplata kredita i leasinga;  
-- RIS povezuje se s kontima rezervi za pokriće;   
-- MON povezuje se s kontima (ili računima) nenovčanih troškova i prihoda.  
+- **ADE-VAT** – obično se dodeljuje kontu koje evidentira mesečni saldo PDV-a. Za to konto potrebno je voditi otvorene stavke kako bi se mogao utvrditi neizmireni dug.
+- **ADE-OTHER** – na sličan način dodeljuje se kontima koja evidentiraju ostale poreske obaveze, takođe uz vođenje otvorenih stavki.
+- **INPS** – dodeljuje se obavezama za doprinose za socijalno osiguranje, takođe uz vođenje otvorenih stavki.
+- **LIQ** – dodeljuje se **kontnim grupama** (glavnim kontima) koje sadrže detalje kupaca i dobavljača, iz kojih se putem novčanog toka određuju podaci o raspoloživoj likvidnosti.
+- **FIN** – dodeljuje se kontima (ili kontnim grupama) iz kojih se putem novčanog toka dobijaju podaci o finansijskim obavezama, odnosno budućim ratama kredita i lizinga.
+- **RIS** – dodeljuje se analitičkim kontima rezervi za pokriće.
+- **MON** – dodeljuje se analitičkim kontima (ili kontima) nemonetarnih troškova i prihoda.
 
-Zadani izračuni uzimaju podatke iz:
--	izravno iz računovodstvenih stavki  
--	iz posljednjeg obrađenog *cash flowa*  
--	iz kontnih salda računa povezanih s određenim čvorovima unutar **standardnog modela rekategorizacije** ***IV. direktiva***. 
+Obračuni koji se standardno izvršavaju preuzimaju iznose:
+- direktno iz računovodstvenih otvorenih stavki
+- iz podataka obrađenih u poslednjem obračunu novčanog toka
+- iz salda konta povezanih sa određenim čvorovima **standardnog modela reklasifikacije IV direktive**.
 
-U ovom slučaju, model služi isključivo za identifikaciju relevantnih konta za svaku varijablu, a iznosi se čitaju izravno iz glavne knjige, bez potrebe za privremenim zatvaranjem ili dodatnim rekategorizacijama.
+U ovom slučaju model služi isključivo za identifikaciju konta koja treba koristiti za pojedine varijable. Iznosi se čitaju direktno iz glavne knjige, bez potrebe za međuperiodnim zatvaranjem ili reklasifikacijom.
 
-## 4 Upravljanje krizom  
-Trenutno sustav provodi samo **validaciju pokazatelja**, ali ne upravlja cijelim operativnim procesom u slučaju krize.  
-Predviđena je mogućnost aktivacije automatskih upozorenja ako se prekorače zadani pragovi, putem planiranih zadataka (Supervisor).  
+## 4. Upravljanje krizom
 
-## 5 Ciljevi i sektori  
-Svaki gospodarski sektor ima vlastite predefinirane **ciljne vrijednosti** pokazatelja.  
+Trenutno sistem sprovodi samo **proveru pokazatelja**, ali ne upravlja kompletnim operativnim procesom krize.
+Moguće je konfigurisati automatska upozorenja u slučaju prekoračenja zadatih pragova pomoću zakazanih zadataka u **Supervisoru**.
 
-Te su vrijednosti pohranjene ili u fiksnim, nevidljivim tablicama (za kontrole trećih strana), ili u formi ***Targeting***, gdje podaci za standardne sektorske pokazatelje nisu izmjenjivi od strane korisnika jer imaju *standardni* karakter: samo ciljevi prilagođenih pokazatelja mogu imati prilagodljive ciljne vrijednosti.  
+## 5. Ciljne vrednosti i privredni sektori
 
-## 6 Opisnici i formule  
-Osim kontrola trećih strana, koje predviđaju izračun putem izvornog koda, svaki drugi pokazatelj povezan je s jednim *opisnikom* (vidi istoimenu formu u glavnom izborniku CPM-a), koji definira formulu izračuna. Na primjer:  
+Svaki privredni sektor ima svoje unapred definisane **ciljne vrednosti**.
+Ove vrednosti su sačuvane ili u internim, korisniku nedostupnim tabelama (za provere eksternih institucija) ili u obrascu **Targeting**, gde standardni sektorski pokazatelji nisu izmenjivi jer imaju status *standard*. Korisnik može menjati samo ciljne vrednosti sopstvenih prilagođenih pokazatelja.
 
-- Pokazatelj održivosti financijskih troškova: pokazatelj se izračunava kao “Financijski troškovi” / “Prihod”, i pohranjuje se pod opisnikom ‘03.01’ s formulom “[RIC-OneriFin]/[RIC-Fatturato]”
-- Pokazatelj adekvatnosti kapitala: izračun je “Neto imovina” / “Ukupan dug”, i registrira se kao opisnik 03.02 s formulom “[RIC-PatNetto]/[RIC-DebTot]”
+## 6. Deskriptori i formule
+
+Osim provera eksternih institucija, koje se obračunavaju u izvornom programskom kodu, svaki drugi pokazatelj povezan je sa **deskriptorom** (pogledajte istoimeni obrazac u glavnom meniju CPM-a), koji definiše njegovu formulu obračuna, na primer:
+
+- **Pokazatelj održivosti finansijskih troškova**: obračunava se kao **Finansijski troškovi / Prihodi**, a sačuvan je u deskriptoru **03.01** sa formulom **[RIC-OneriFin]/[RIC-Fatturato]**.
+- **Pokazatelj adekvatnosti kapitala**: obračunava se kao **Neto kapital / Ukupan dug**, a sačuvan je u deskriptoru **03.02** sa formulom **[RIC-PatNetto]/[RIC-DebTot]**.
 
 ![](/img/it-it/finance-area/corporate-crisis/5.png)
 
-U osnovi, formule se temelje na *varijablama* koje su u formuli prikazane putem njihovog koda unutar uglatih zagrada.  
+Formule se zasnivaju na **varijablama** koje se u formuli navode pomoću njihovih oznaka unutar uglastih zagrada.
 
-Svaka **varijabla** (vidi istoimenu formu u glavnom izborniku CPM-a) poziva svoj specifični SQL upit.  
- 
+Svaka **varijabla** (pogledajte istoimeni obrazac u glavnom meniju CPM-a) poziva sopstveni SQL upit.
+
 ![](/img/it-it/finance-area/corporate-crisis/6.png)
 
-Upiti na kojima se temelje standardne varijable također su standardni SQL upiti, na koje korisnik ne može utjecati. Polazeći od predloženih upita, moguće je definirati i prilagođene (custom) verzije koje će se uskladiti s karakteristikama računovodstvenog sustava konkretne instalacije. 
+SQL upiti na kojima se zasnivaju standardne varijable deo su standardnog sistema i korisnik ih ne može menjati. Međutim, na osnovu ponuđenih upita moguće je izraditi sopstvene prilagođene verzije koje odgovaraju specifičnostima računovodstvenog sistema pojedinačne implementacije.
 
-## 7 Repository
+## 7. Repozitorijum
 
-Sustav pohranjuje rezultate provedenih izračuna u formu Repository, čime se stvara povijesna baza podataka korisna za analize i nadzorne ploče (dashboarde).
-Svaka obrada povezana je s jednim datumom: svaki pokazatelj ima jedan rezultat po danu.  
- 
+Sistem u obrascu **Repozitorijum** čuva rezultate svih izvršenih obračuna, stvarajući istorijsku bazu podataka pogodnu za analize i kontrolne table.
+Svaka obrada povezana je sa određenim datumom, pri čemu svaki pokazatelj može imati samo jedan rezultat za svaki dan.
+
 ![](/img/it-it/finance-area/corporate-crisis/7.png)
-
-
-
-
