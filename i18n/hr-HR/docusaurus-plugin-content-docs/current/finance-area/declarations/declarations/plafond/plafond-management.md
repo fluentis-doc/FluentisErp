@@ -11,7 +11,7 @@ Obrazac se nalazi u izborniku **Administracija > Izjave > Plafon > Novi** i omog
 
 ![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image01.png)
 
- **Opis**: Slobodan opis izračuna koji se unosi. Preporučuje se upisati opis koji sadrži početnu godinu i vrstu izračuna.  
+**Opis**: Slobodan opis izračuna koji se unosi. Preporučuje se upisati opis koji sadrži početnu godinu i vrstu izračuna.  
 
 **Godina**: Unosi se početna godina izračuna plafona koji se kreira.
 
@@ -26,14 +26,14 @@ Potreba za unosom novog izračuna javlja se u slučaju promjene metode izračuna
 
 **Vrsta plafona**: Odabire se je li plafon Solarni (fiksni) ili Pomični (dva porezno predviđena načina upravljanja plafonom).
 
-Datum početka plafona: potrebno je unijeti mjesec i godinu početka plafona. Ako je riječ o proširenju, tada je potrebno unijeti i **mjesec**, **godinu** i **iznos** posljednjeg izračunatog razdoblja (u odjeljku Svojstva plafona).
+Datum početka plafona: potrebno je unijeti mjesec i godinu početka plafona. Ako je riječ o proširenju, tada je potrebno unijeti i **mjesec**, **godinu** i **iznos** posljednjeg izračunanog razdoblja (u odjeljku Svojstva plafona).
 
 **Kontrolna vrijednost**: može se postaviti granična vrijednost kako bi se korisnika upozorilo da se približava potpunom iskorištenju plafona. Na primjer, ako je plafon 100.000 eura, a postavimo prag na 10.000, sustav će nas upozoriti kada se pređe 90.000 eura jer ostaje samo zadnjih 10.000 eura za korištenje.
 
 **Zadano**: ovaj flag označava koji je izračun "trenutni", posebno u slučaju postojanja više spremljenih izračuna..
 
 :::tip[Pažnja]
-Ako postoji izračun plafona s ovim flagom aktivnim, pri kreiranju elektroničkog zapisa za slanje Poreznoj upravi u vezi [**izjava o namjeri**](/docs/finance-area/declarations/declarations/intent-declaration) automatski će se popuniti odgovarajuće polje.
+Ako postoji izračun plafona s ovom opcijom aktivnom, pri kreiranju elektroničkog zapisa za slanje Poreznoj upravi u vezi [**izjava o namjeri**](/docs/finance-area/declarations/declarations/intent-declaration) automatski će se popuniti odgovarajuće polje.
 :::
 
 2. Učitavanje povijesnih podataka za korištenje: u detaljnoj mreži potrebno je unijeti podatke za prethodnih dvanaest mjeseci u odnosu na početni datum izračuna.
@@ -59,7 +59,7 @@ Dostupna vrijednost na početku mjeseca prikazuje se u pripadajućem stupcu.
 |  |  |
 | --- | --- |
 | **Novi plafon** | Postavlja kursor na novi redak za unos podataka. |
-| **Izbriši plafon** | Briše označeni redak izračuna. Nije moguće obrisati međupodatke, samo zadnji uneseni. |
+| **Izbriši plafon** | Briše označeni redak izračuna. Nije moguće obrisati podatke, samo zadnji uneseni. |
 | **Predloži vrijednosti** | Izvršava izračun za novi mjesec i predlaže vrijednosti u mreži. |
 
 
