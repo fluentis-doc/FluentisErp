@@ -4,6 +4,21 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0028 - 24/06/2026
+
+> -	FI - Gestione Intrastat: revisione della logica di proposta dei documenti nella procedura di creazione automatica da fatture (#TT00245/26)
+> -	FI - Subreport della Liquidazione iva periodica: revisione filter string sui detail report (filtro di esclusione degli split payment). (#TT02718/26)
+> -	Framework - per le stampe ‘Estratto conto’, ‘Estratto conto a partite aperte’, ‘Lista partite’, ‘Scadenziario clienti/fornitori’, quando i report sono eseguiti filtrando un unico sottoconto allora è possibile procedere all’invio per email con testo preconfigurato tramite transformation definita sull’oggetto FSLedgerAccount (customizzabili). (#TT02757/26)
+> -	MS - Pianificazione generale: corretto calcolo impegno su componente utilizzato più volte in una distinta base, a volte impostato come livello fittizio, altre no. (#TT02367/26)
+> -	PR - aggiunto controllo sulla causale selezionata per le procedure di contabilizzazione insoluto e contabilizzazione insoluto su cessione, che sia stato attivato il flag Provvigioni, se è attiva la gestione delle Commissioni (nei parametri di contabilità). (#TTTT01741/26)
+> -	PR - Stampa lista insoluti: Revisionati i riferimenti relativi a numero documento, data documento e agente nella stampa degli insoluti (#TT2057/26)
+> -	SCM - Reso per riparazione: ottimizzazione gestione reso per riparazione di un articolo con Serial Number (#TT02651/26).
+> -	SDI - Documenti di Acquisto in entrata: Quando lo stato del file SDI viene modificato in “Non assegnato” (per scollegare la fattura di acquisto): I riferimenti alla fattura di acquisto e i dati del fornitore nei documenti di acquisto in entrata vengono automaticamente ripristinati ai valori precedenti al ricevimento del file SDI. (#TT260/26)
+> -	WM - Analisi disponibilità: Corretta visualizzazione “Data fine prevista” per ordini di produzione in scheda dettaglio. (#TT00627/26)
+> -	WM - Corretto impegno per quantità consumata in segnalazioni di produzione. (#TT02206/26)
+> -	WM - WebAPI Import WarehousePosting con Serial Number: Corretto errore per chiave “IsAvailable” non trovata. (#TT01788/26)
+> -	SD - Offerta cliente con struttura gerarchica - nella tab materiali gestita la conversione del costo materiale in valuta dell’offerta (#TT02681/26)
+
 ### Patch 803.0027 - 22/06/2026
 
 > -	CO - valorizzazione area acquisti/vendite nelle chiusure infrannuali, revisione gestione filtri per chiusura, da impostare ora in ogni singolo tipo di documento di origine (#TT02678/26)  
