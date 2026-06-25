@@ -1,5 +1,5 @@
 ---
-title: Upravljanje prototipima
+title: Upravljanje prototipovima
 sidebar_position: 2
 ---
 
@@ -23,14 +23,14 @@ Moguće je stvoriti prototip za artikl koji nije kodiran u šifarniku i isto tak
 
 Na desnoj strani zaglavlja nalazi se mogućnost navođenja informacija o nadređenom artiklu prototipa:
 
-- **Kodirani artikl**         
+- **Artikl s klasom**         
 U slučaju da želite stvoriti prototip za kodirani artikl, navodeći razred, šifru i opis artikala, šifru i opis varijante te mjeru;
 
-- **Nekodirani artikl**          
+- **Artikl bez klase**          
 U slučaju da želite stvoriti prototip za nekodirani artikl, ručno navodeći opis artikla i, po potrebi, varijantu, ako se radi o izmišljenom artiklu, mjeru i vrstu nabave.        
 Ovi će podaci zatim biti automatski korišteni za generiranje evidencije pripadajućeg artikla.    
 
-Okviri koji se odnose na **Kodirani artikl** i **Nekodirani artikl** nude se otvorenima u slučaju stvaranja novog prototipa, budući da još nije moguće znati hoće li se koristiti već kodirani artikl ili ne; dok se okvir za **Kodirani artikl** prikazuje otvoren, a okvir za **Nekodirani artikl** zatvoren u slučaju da se otvori prototip temeljen na već kodiranom artiklu, i obrnuto ako se temelji na nekodiranom artiklu.               
+Okviri koji se odnose na **Artikl s klasom** i **Artikl bez klase** nude se otvorenima u slučaju stvaranja novog prototipa, budući da još nije moguće znati hoće li se koristiti već kodirani artikl ili ne; dok se okvir za **Artikl s klasom** prikazuje otvoren, a okvir za **Artikl bez klase** zatvoren u slučaju da se otvori prototip temeljen na već kodiranom artiklu, i obrnuto ako se temelji na nekodiranom artiklu.               
 
 Ispod su prisutne posebne kartice za:
 - Proizvod     
@@ -45,63 +45,66 @@ Na ovom je kartici niz informacija, samo za čitanje, koje se odnose na artikl k
 
 **Težine**: prikazuje mjernu jedinicu težine i pripadajuće vrijednosti bruto težine, neto težine i specifične težine.
 
-**Zalihe u skladištima**: prikazuje sva skladišta s pripadajućim količinama trenutačne zalihe artikla.
+**Skladište zalihe**: prikazuje sva skladišta s pripadajućim količinama trenutačne zalihe artikla.
 
 **Troškovi**: prikazuje vrijednosti troškova: posljednji, srednji, standardni, standardni za sljedeću godinu i prodajna cijena.
 
-**Cjenici za prodaju**: prikazuju se svi cjenici za prodaju na kojima se pojavljuje ovaj artikl.
+**Prodajni cjenici**: prikazuju se svi cjenici za prodaju na kojima se pojavljuje ovaj artikl.
 
-**Datum nastanka prototipa**: omogućuje unos slobodne bilješke vezane uz prototip (jedino polje koje se može uređivati na ovoj kartici).
+**Napomena***: omogućuje unos slobodne bilješke vezane uz prototip (jedino polje koje se može uređivati na ovoj kartici).
 
 ### Komponente 
 
 Na kartici **Komponente** moguće je stvarati, mijenjati i pregledavati strukturu osnovne specifikacije prototipa.
 Pomoću određenih gumba, prisutnih u traci za naredbe, moguće je dodati ili ukloniti pojedinačne komponente u strukturi. Alternativno, to se može učiniti i preko opcija dostupnih desnim klikom miša na komponenti u strukturi. Dodatna mogućnost je korištenje opcije povlačenja i ispuštanja za premještanje komponente unutar strukture. Također je moguće, putem gumba **Uvezi**, uvesti već postojeću osnovnu specifikaciju, pa se odabranoj komponenti dodaje uvezena osnovna specifikacija ispod.  
-Na kartici **Općenito** prikazuje se odabrani nadređeni artikl s razredom, šifrom i opisom; u *Podacima o nadređenom artiklu* moguće je navesti varijantu, verziju, količinu nadređenog, jedinicu mjere i odabrati je li umjetnički artikl.    
-Na kraju, moguće je odabrati vrijednost *Izvoz BOM-a* između *Održi osnovnu specifikaciju* i *Nova osnovna specifikacija* kako na nadređenom artiklu, tako i na pojedinačnim komponentama; ovi se uzimaju u obzir prilikom izvoza upravo stvorene osnovne specifikacije u prototipu i, respektivno, omogućuju održavanje postojeće komponente (odabirom opcije *Održi osnovnu specifikaciju*) ili zamjenu postojeće novom (odabirom opcije *Nova osnovna specifikacija*).      
+Na kartici **Opći** prikazuje se odabrani nadređeni artikl s pripadajućom klasom, šifrom i opisom. U sekciji Podaci nadređenog artikla moguće je definirati varijantu, verziju, količinu nadređenog artikla, mjernu jedinicu te označiti radi li se o fiktivnom artiklu.
+Na kraju je moguće odabrati vrijednost polja Izvoz BOM-a (tipka Izvezi) između opcija Zadrži sastavnicu i Nova sastavnica, kako za nadređeni artikl tako i za pojedine komponente.
+Ove se postavke primjenjuju prilikom izvoza novokreirane sastavnice u prototip te određuju način obrade postojećih podataka:
+Zadrži sastavnicu – zadržava postojeću komponentu u sastavnici;
+Nova sastavnica – zamjenjuje postojeću komponentu novom.   
 
 Moguće je upravljati kodiranim i nekodiranim komponentama unutar odgovarajućeg okvira:
 
-- **Kodirani artikl**        
-Nel caso in cui si voglia inserire nel prototipo un articolo codificato, indicando classe, codice e descrizione articoli, codice e descriizone variante e unità di misura;
+- **Komponenta s klasom**        
+Ako se u prototip želi umetnuti već definirani artikl, potrebno je navesti klasu, šifru i opis artikla, kao i šifru i opis varijante te mjernu jedinicu.
 
-- **Nekodirani artikl**         
+- **Komponenta bez klase**         
 Ako želite dodati nekodirani artikl u prototip, ručno navodeći opis artikla i, po potrebi, varijantu (ako je riječ o umjetnom artiklu), jedinicu mjere i vrstu opskrbe. 
 Ovi podaci zatim služe za automatsko generiranje osnovnih podataka o odgovarajućem artiklu.
 
 Unutar okvira koji se odnosi na **Podaci o komponenti** moguće je navesti:          
 > **Količina**: označava količinu komponente koja se koristi za proizvodnju odgovarajuće *Količine nadređenog*;           
-> **Alternativna jedinica mjere**: označava alternativnu jedinicu mjere komponente;              
-> **Vrsta troška materijala**: prema zadanim postavkama nudi se *Vrsta troška materijala* koja se nalazi u [Parametrima prototipiranja](/docs/configurations/parameters/logistics/item-prototypes-parameters/), ali se naravno može ručno mijenjati za svaku komponentu. Ako je naveden dobavljač, postupak za određivanje troška komponente prvo provjerava postoji li popis za tog dobavljača i unosi pronađenu vrijednost neovisno o unesenoj *Vrsti troška materijala*. Dakle, pri izračunu troška komponente vrijednost popisa za unesenog dobavljača uvijek ima prednost.  
+> **Alternativna mjerna jedinica**: označava alternativnu jedinicu mjere komponente;              
+> **VrsTipta troška materijala**: prema zadanim postavkama nudi se *Vrsta troška materijala* koja se nalazi u [Parametrima prototipa](/docs/configurations/parameters/logistics/item-prototypes-parameters/), ali se naravno može ručno mijenjati za svaku komponentu. Ako je naveden dobavljač, postupak za određivanje troška komponente prvo provjerava postoji li popis za tog dobavljača i unosi pronađenu vrijednost neovisno o unesenoj *Vrsti troška materijala*. Dakle, pri izračunu troška komponente vrijednost popisa za unesenog dobavljača uvijek ima prednost.  
 > **Dobavljač**: označava dobavljača komponente. Automatski se prikazuje onaj koji je naveden kao zadani u preferiranim dobavljačima artikla, ali se može ručno mijenjati; ako je komponenta nekodirani artikl, uneseni dobavljač će se koristiti kao zadani dobavljač u preferiranim dobavljačima tijekom stvaranja artikla.        
 > **Trošak materijala**: označava trošak materijala komponente prema unesenoj **Vrsti troška materijala**;           
 > **Trošak rada**: označava trošak rada komponente, koji se sastoji od zbroja troškova rada i strojeva;         
 > **Trošak komponente**: označava ukupni trošak komponente, koji se sastoji od zbroja troškova materijala i rada;               
-> **Bilješke**: omogućuju unos slobodne bilješke vezane uz komponentu.    
+> **Bilješka**: omogućuju unos slobodne bilješke vezane uz komponentu.    
 
 Ako je odabrani element u strukturi poluproizvod, na kartici **Komponente** moguće je vidjeti komponente prvog stupnja od kojih se sastoji.
 
-Na karticama **Dodatni podaci - model** i **Dodatni podaci - komponenta** moguće je unijeti dodatne podatke koji se odnose na nadređeni artikl odnosno komponentu; za detaljan opis dodatnih podataka upućujemo na članak [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata).     
+Na karticama **Dodatni podaci - uzorak** i **Dodatni podaci - komponenta** moguće je unijeti dodatne podatke koji se odnose na nadređeni artikl odnosno komponentu; za detaljan opis dodatnih podataka upućujemo na članak [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata).     
 
-Na dnu obrasca, unutar kartice **Ciklus** moguće je unijeti radne faze koje se odnose na pojedine elemente u strukturi s pripadajućim vremenima i troškovima postavljanja i rada; također je moguće ručno unijeti trošak u polje **Ručni trošak faze** koji ima viši prioritet pri izračunu troškova, zamjenjujući trošak izračunan prema vremenima faza i centrima troškova.    
-Kartica **Ciklus** omogućena je za artikle s **Vrstom opskrbe**, *Proizvodnja* ili *Radni nalog* u [Parametrima MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro).       
-Osim toga, na kartici **Faze pražnjenja** navedena je faza u kojoj se odgovarajući element mora izvaditi iz skladišta.
+Na dnu obrasca, unutar kartice **Ciklus** moguće je unijeti proizvodne faze koje se odnose na pojedine elemente u strukturi s pripadajućim vremenima i troškovima postavljanja i rada; također je moguće ručno unijeti trošak u polje **Ručni cijena faza** koji ima viši prioritet pri izračunu troškova, zamjenjujući trošak izračunan prema vremenima faza i centrima troškova.    
+Kartica **Ciklus** omogućena je za artikle s **Vrstom opskrbe**, *Proizvodnja* ili *Radni nalog* u [MRP Parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro).       
+Osim toga, na kartici **Faze razduženja** navedena je faza u kojoj se odgovarajući element mora izvaditi iz skladišta.
 
 *Izvoz ciklusa u fazi razvoja.*
 
 *Posebni gumbi*:
 
-> **Parametri prototipiranja**: omogućuje otvaranje parametara prototipiranja, konkretno konzultiranje parametara prototipiranja;    
-> **Ponovno izračunavanje troškova**: omogućuje ponovno izračunavanje troškova tog prototipa na temelju troškova koji ga čine;    
+> **Parametri prototipa artikla**: omogućuje otvaranje parametara prototipiranja, konkretno konzultiranje parametara prototipiranja;    
+> **Preračun troškova**: omogućuje ponovno izračunavanje troškova tog prototipa na temelju troškova koji ga čine;    
 > **Šifarnik artikala**: omogućuje otvaranje šifarnika artikala povezan s odabranim elementom;    
-> **Parametri MRP-a**: omogućuje otvaranje parametara MRP-a povezanih s odabranim elementom;    
+> **MRP Parametri**: omogućuje otvaranje parametara MRP-a povezanih s odabranim elementom;    
 > **Kodiranje artikala**:  omogućuje kodiranje nekodiranih artikala;          
 > **Osnovna specifikacija**: omogućuje otvaranje odgovarajuće osnovne specifikacije povezane s odabranim elementom;    
 > **Ciklus rada**: omogućuje otvaranje ciklusa rada povezanog s odabranim elementom;   
-> **Analiziraj**: omogućuje usporedbu komponenata prikazanih na kartici *Komponente* s onima prisutnima u osnovnoj specifikaciji koja se nalazi u evidenciji, isticanjem komponenata koje su prisutne u oba;        
+> **Usporedite**: omogućuje usporedbu komponenata prikazanih na kartici *Komponente* s onima prisutnima u osnovnoj specifikaciji koja se nalazi u evidenciji, isticanjem komponenata koje su prisutne u oba;        
 > **Uvezi**: odabirom komponente iz stabla imamo mogućnost povezivanja s tom komponentom već prethodno definiranom osnovnom specifikacijom i zatim je možemo mijenjati;      
 > **Izvezi**: sprema ili prepliše stvorenu osnovnu specifikaciju u prototipima, radi zajedno s opcijom *Izvoz BOM* u kartici *Općenito* odjeljak *Komponenta*;    
-> **Dodaj komponentu**: omogućuje dodavanje komponente odabranom elementu;    
+> **Unesi komponentu**: omogućuje dodavanje komponente odabranom elementu;    
 > **Izbriši komponentu**: omogućuje brisanje komponente odabranog elementa;    
 > **Proširi sve**: omogućuje otvaranje cijelog stabla osnovne specifikacije;    
 > **Kopiraj**: omogućuje kopiranje elementa u strukturi osnovne specifikacije;     
@@ -118,9 +121,9 @@ Također je moguće unijeti eventualne *Direktne troškove*, *Opće troškove* i
 Konkretno, uzeti u obzir sljedeći polja:
 
 **Trošak sata ručnog rada**: omogućava ručni unos satnog troška, koji će utjecati samo na komponente koje imaju povezane faze;      
-**Trošak materijala**: ukupni materijalni trošak izračunat iz strukture distinte;      
-**Trošak radne snage**: ukupni trošak radne snage izračunat iz strukture distinte;      
-**Trošak stroja**: ukupni trošak stroja izračunat iz strukture distinte;      
+**Trošak materijala**: ukupni materijalni trošak izračunat iz strukture sastavnice;      
+**Trošak radne snage**: ukupni trošak radne snage izračunat iz strukture sastavnice;      
+**Trošak stroja**: ukupni trošak stroja izračunat iz strukture sastavnice;      
 **Ručni trošak**: nije upravljano;  
 
 **Industrijski trošak**: ukupni *Trošak materijala*, *Troška Radne snage* i *Troška stroja*;     
@@ -133,33 +136,43 @@ Konkretno, uzeti u obzir sljedeći polja:
 **Korekcija**: omogućuje unos vrijednosti za korekciju nove prodajne cijene;      
 **Zaokruživanje**: omogućuje odabir zaokruživanja prema gore ili prema dolje i redoslijeda veličine;   
 **Prodajna cijena**: ukupno od *Industrijskog troška + Direktni troškovi*, *Opći troškovi*, *Ukupni ostali troškovi*, *Korekcija* i *Zaokruživanje*; ako je u [Parametrima prototipiranja](/docs/configurations/parameters/logistics/item-prototypes-parameters/) omogućena opcija *Nova prodajna cijena* ovo polje automatski se izračunava i ne može se ručno mijenjati, dok je ako opcija onemogućena, polje je ručno uredno;           
-**Proizvodna serija**: omogućuje unos vrijednosti proizvodne serije, što utječe na povećanje ili smanjenje troškova radne snage i stroja, te utječe na jediničnu cijenu opremanja;      
-**Ukupno proizvodnog serija**: ukupno *Prodajna cijena* izračunata za navedenu *Proizvodnu seriju*;     
+**Proizvodni lot**: omogućuje unos vrijednosti proizvodne serije, što utječe na povećanje ili smanjenje troškova radne snage i stroja, te utječe na jediničnu cijenu opremanja;      
+**Ukupno proizvodni lot**: ukupno *Prodajna cijena* izračunata za navedenu *Proizvodnu seriju*;     
 **Odstupanje od cjenika**: pokazuje odstupanje u odnosu na cjenik prodaje;            
-**Tip cjenika prodaje**: označava vrstu cjenika;                
+**Vrsta cjenika prodaje**: označava vrstu cjenika;                
 **Do datuma valjanosti**: označava datum valjanosti cjenika;    
 
-**Vrsta grafičkog detalja analize**   
+**Tip detaljnog grafikona analize**   
 
 Omogućava prikaz sintetičkog ili analitičkog dijagrama torte koji prikazuje sastav troškova prototipa.
 
 *Posebni gumbi*:
 
-> **Ažuriranje cjenika prodaje**: omogućava ažuriranje cijene artikla na odgovarajućem cjeniku prodaje;         
+> **Ažuriraj prodajni cjenik**: omogućava ažuriranje cijene artikla na odgovarajućem cjeniku prodaje;         
 > **Ažuriranje ponuda**: promjenom vrijednosti *Prodajne cijene* prototipa povezanog s ponudom, pomoću ovog gumba možete ažurirati cijenu navedenu u ponudi;     
-> **Ažuriraj klijenta**: omogućava stvaranje nove valorizacijske stavke za prototip povezan s odabranim klijentom.        
+> **Osvježi kupce**: omogućava stvaranje nove valorizacijske stavke za prototip povezan s odabranim klijentom.        
 
 **Način izračuna troškova**
 
-Troškovi navedeni za svaki komponentu su jedinični troškovi, u strukturi distinte prototipa navedeni su jedinični i ukupni troškovi materijala i radnih procesa koji se odnose na količinu nadređenog elementa svake komponente.
+Za svaku komponentu prikazani su jedinični troškovi, dok se u strukturi sastavnice prototipa prikazuju jedinični i ukupni troškovi materijala i operacija, izračunati prema količini nadređenog artikla za svaku komponentu.
 
-- Za kupljene artikle nisu izračunati troškovi rada, a troškovi materijala preuzimaju se prema parametrima prototipa (skladišni troškovi, troškovi cjenika i najbolja cijena cjenika). Trošak se traži u cjeniku prema datumu valjanosti prototipa, ako datum valjanosti prototipa nije unesen, troškovi se traže prema datumu dana. 
-Za pretragu troškova u cjenicima koristi se JM korištenje i JM alternativno članka, a ako se pronađe cijena s UM različitom od JM Korištenja, primjenjuje se faktor pretvorbe JM alternativnog članka kako bi se izračunao trošak materijala. 
-Trošak materijala komponente može se unijeti ručno, a cijeli trošak materijala prototipa ponovno se izračunava prema novom trošku, ali pokretanjem ponovnog izračuna troškova iz Ribbona, trošak se traži prema pravilima parametara.
+Za nabavne artikle ne izračunavaju se troškovi operacija, dok se troškovi materijala preuzimaju prema postavkama prototipa (skladišni troškovi, cijene iz cjenika ili najpovoljnija cijena iz cjenika). Trošak se traži u cjeniku prema datumu valjanosti prototipa, a ako datum valjanosti nije definiran, koristi se tekući datum.
+Prilikom pretraživanja cjenika koristi se mjerna jedinica uporabe, uključujući slučajeve kada je definirana kao alternativna mjerna jedinica artikla. Ako se pronađe cijena izražena u drugoj mjernoj jedinici, primjenjuje se faktor pretvorbe alternativne mjerne jedinice kako bi se izračunao trošak materijala.
+Trošak materijala komponente moguće je unijeti i ručno. Nakon toga sustav ponovno izračunava trošak materijala prototipa na temelju nove vrijednosti. Međutim, pokretanjem funkcije Ponovni izračun troškova na alatnoj vrpci, trošak će se ponovno izračunati prema pravilima definiranim u parametrima.
+Za artikle kooperacije troškovi materijala preuzimaju se od njihovih komponenti, dok se troškovi operacija preuzimaju iz faza proizvodnje, a ako one nisu definirane, iz cjenika kooperacije.
+Za proizvodne artikle troškovi materijala također se preuzimaju od komponenti, dok se troškovi operacija preuzimaju iz faza proizvodnje.
 
-- Za artikle na računi rad, troškovi materijala preuzimaju se iz komponenti, dok se troškovi radnih procesa preuzimaju iz faza ako postoje, inače se preuzimaju iz cjenika računa rad.   
+Prilikom izračuna troškova operacija primjenjuje se sljedeći redoslijed prioriteta:
+- ako je u fazi definiran ručni trošak, koristi se ta vrijednost;
+- ako nije, provjerava se postoji li ručno definiran satni trošak na kartici Troškovi;
+- ako ni on nije definiran, trošak se preuzima iz centra troška grupe radnika odnosno strojeva.
 
-- Za artikle proizvodnje, troškovi materijala preuzimaju se iz komponenti, dok se troškovi rada preuzimaju iz faza. Izračun troškova rada uzima u obzir da je prioritetan ručni trošak izražen u fazi, ako ga nema, provjerava se ima li ručni satni trošak naveden u kartici troškova, ako nije prisutan, traži se trošak u centru troška radne skupine i strojeva. 
-Za postavljanje, ako je uneseno vrijeme postavljanja, smatra se sveobuhvatnim za radnu snagu i strojeve, a sve se računa kao radna snaga koristeći trošak prema opisanim prioritetima, inače, ako se želi podijeliti trošak postavljanja stroja od troška postavljanja radne snage, moraju se unijeti radna grupa za pretragu troška njenog centra i postavljanje strojeva, odnosno stroj, za pretragu troška njegovog centra, u nedostatku tih podataka, čak i ako su uneseni vremena postavljanja čovjeka i stroja, ne uzimaju se u obzir za izračun troškova. 
-Svaki sastavni dio distinte prototipa uključuje u svoj trošak materijala i radnih procesa i trošak svojih komponenti, isto vrijedi i za sam prototip. 
-Navedena proizvodna serija u kartici troškova odnosi se samo na izračun jedinične cijene postavljanja koja se dodaje na industrijski trošak prototipa, mijenjajući proizvodnu seriju povećavaju ili smanjuju troškovi radne snage i strojeva u kartici troškova. Procedura ponovnog izračuna troškova ponovno izračunava sve troškove uzimanjem podataka iz parametara za kupnju (skladišni troškovi, troškovi cjenika i najbolja cijena cjenika) i iz faza za radne procese.
+Kod troškova pripreme (setupa), ako je uneseno samo vrijeme pripreme, ono se smatra ukupnim vremenom koje uključuje rad strojeva i radnika te se cijeli trošak obračunava kao trošak rada koristeći prethodno opisani redoslijed prioriteta.
+Ako se želi zasebno obračunati trošak pripreme stroja i trošak pripreme radnika, potrebno je definirati:
+- grupu radnika radi preuzimanja troška iz njezina centra troška;
+- stroj za pripremu radi preuzimanja troška iz njegova centra troška.
+
+Ako ti podaci nisu definirani, vremena pripreme radnika i stroja neće se uzeti u obzir pri izračunu troškova, čak i ako su unesena.
+Trošak svake komponente u sastavnici prototipa uključuje vlastite troškove materijala i operacija, kao i troškove svih njezinih podkomponenti. Isto vrijedi i za ukupni trošak prototipa.
+Vrijednost proizvodne serije definirana na kartici Troškovi koristi se isključivo za izračun jediničnog troška pripreme, koji se pribraja industrijskom trošku prototipa. Promjenom veličine proizvodne serije povećavaju se ili smanjuju troškovi rada i strojeva prikazani na kartici Troškovi.
+Funkcija Ponovni izračun troškova ponovno izračunava sve troškove, pri čemu za nabavne artikle koristi podatke definirane u parametrima (skladišni troškovi, cijene iz cjenika ili najpovoljnija cijena iz cjenika), a za operacije podatke definirane u fazama proizvodnje.
