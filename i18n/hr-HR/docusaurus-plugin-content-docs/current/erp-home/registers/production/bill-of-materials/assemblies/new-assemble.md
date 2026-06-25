@@ -1,14 +1,14 @@
 ---
-title: Novi sklop
+title: Nova sastavnica
 sidebar_position: 1
 ---
 
-Postupak stvaranja **Novog sklopa** otvara se putem:
+Postupak stvaranja **Nove sastavnice** otvara se putem:
 
-**Proizvodnja > Osnovna razrada > Sklop**, klikom na gumb prisutan na vrpci;
+**Početna stranica > Proizvodnja > Sastavnica materijala > Sastavnica materijala**, klikom na gumb prisutan na vrpci;
 
 ili
 
-**Proizvodnja > Osnovna razrada > Stvori sklop**
+**Početna stranica > Proizvodnja > Sastavnica materijala > Nova sastavnica materijala**
 
-Obje procedure otvaraju obrazac [Upravljanje strukturama](structure-management) koji se sastoji od odjeljka u kojem će se definirati obavezne karakteristike sklopa i od odjeljka s različitim karticama koje grupiraju specifične karakteristike.
+Obje procedure otvaraju obrazac [Sastavnica materijala](structure-management) koji se sastoji od odjeljka u kojem će se definirati obavezne karakteristike sklopa (sastavnica) i od odjeljka s različitim karticama koje grupiraju specifične karakteristike.
