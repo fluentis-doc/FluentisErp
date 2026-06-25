@@ -3,19 +3,13 @@ title: Početna stranica
 sidebar_position: 1
 ---
 
-Kartica **Početna stranica** sadrži:  
-- kombinirano polje za odabir željenog **Jezika**,  
+Kartica **Početna** sadrži:
 
-- kombinirano polje za odabir Fluentis **Izbornika**, 
+- padajući meni za izbor željenog **jezika**,
+- padajući meni za izbor Fluentis **menija**.
 
- 
+U zavisnosti od aktivnog menija, *ribbon* traka na kartici **Početna** prikazuje funkcionalnosti zajedničke za cijelu aplikaciju, a istovremeno se dodaju kartice koje odgovaraju pojedinim Fluentis oblastima.
 
-Ovisno o aktiviranom izborniku, ribbon traka na kartici **Početna stranica** se popunjava informacijama koje su zajedničke za cijelu aplikaciju, a dodaju se kartice koje odgovaraju Fluentis područjima. 
+Na ovoj kartici dostupne su i **teme**, koje korisnik može izabrati kako bi promijenio izgled aplikacije u skladu sa svojim vizuelnim preferencijama.
 
- 
-
-**Teme** koje korisnik može odabrati kako bi promijenio pozadinu aplikacije prema svojim vizualnim preferencijama, 
-
-Raspoloživi prostor za prikaz otvorenih obrazaca korisnika, 
-
-*Strelica* za skrivanje ili prikazivanje cijele ribbon trake. 
+Takođe je dostupna i **strelica** za sakrivanje ili prikazivanje kompletne *ribbon* trake.
