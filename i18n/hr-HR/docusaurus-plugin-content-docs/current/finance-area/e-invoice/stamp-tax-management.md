@@ -1,24 +1,26 @@
 ---
-title: Upravljanje biljevinama
+title: Upravljanje biljezima
 sidebar_position: 2
 ---
 
-Upravljanje ispravnim umetanjem virtualne porezne marke u xml putanju elektroničke fakture od strane Fluentisa odvija se automatski, stoga će biti dovoljno kodirati i ispravno umetnuti ovaj trošak na fakturu (kao što je sažeto u nastavku). 
+Upravljanje ispravnim uključivanjem virtualnog biljega u XML datoteku elektroničkog računa u Fluentis ERP-u odvija se automatski. Dovoljno je pravilno definirati i dodati trošak biljega na račun, kako je opisano u nastavku.
 
-- u tablicu troškova upišite trošak tipa "marka" u vrijednosti od 2 eura  
+- U tablici **Troškovi** potrebno je definirati trošak vrste **Biljeg** s iznosom od **2,00 EUR**.
 
 ![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image01.png)
 
-- trošak tipa "markica" mora se dodati u registar kupaca odabirom koda koji je prethodno kreiran u tablici Vrste troškova 
+- U anagrafici kupca potrebno je dodati trošak vrste **Biljeg** odabirom šifre koja je prethodno definirana u tablici **Vrste troškova**.
 
-   n.b. kako se biljegovina ne bi zaračunala kupcu u trošku biljegine u registru, vrijednost mora biti postavljena na "0" 
+> **Napomena:** Ako se trošak biljega ne želi zaračunati kupcu, u anagrafici kupca iznos troška biljega treba postaviti na **0**.
 
- ![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image02.png)
+![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image02.png)
 
-- u tablici poduzeća ispunite polje "Troškovi marke"=2 i "Minimalni troškovi krova"=77,47
+- U tablici **Poduzeća** potrebno je popuniti sljedeća polja:
+  - **Trošak biljega** = **2,00 EUR**
+  - **Minimalni prag troškova** = **77,47 EUR**
 
 ![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image03.png)
 
-Nakon što postavite sljedeće postavke, predloženi trošak će se automatski pojaviti na prodajnom računu, stoga ćete u svakom pojedinačnom računu moći odabrati želite li ili ne naplatiti virtualnu bilježninu (kako biste izbjegli naplatu bilježine, unesite trošak s iznosom = 0).
+Nakon što su navedene postavke konfigurirane, u prodajnom računu automatski će se predložiti trošak biljega. Za svaki pojedini račun moguće je odlučiti hoće li se virtualni biljeg zaračunati kupcu ili ne. Ako se biljeg ne želi zaračunati, dovoljno je postaviti iznos troška na **0**.
 
-Prilikom izrade XML datoteke, ako se trošak kao što je biljegovina pojavi u sažetku fakture, relevantni odjeljak automatski se dodaje u izgled. 
+Prilikom generiranja XML datoteke, ako se u sažetku računa nalazi trošak vrste **Biljeg**, odgovarajući XML element za virtualni biljeg automatski će biti uključen u izlaznu datoteku.

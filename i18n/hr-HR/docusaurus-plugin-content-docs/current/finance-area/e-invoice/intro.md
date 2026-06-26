@@ -7,7 +7,7 @@ Funkcionalnosti za elektroničko fakturiranje, premda povezane s fiskalnim i adm
 
 Prednost ovog modula leži u njegovoj integraciji. Dakle, bez izlaska iz ERP-a moguće je automatski primati nove ulazne račune i knjižiti ih, ili izdavati i slati nove prodajne račune.
 
-Također je moguće izvesti XML datoteke prodojanih računa, a na isti način moguće je ručno uvesti XML datoteke za ulaznih računa.
+Također je moguće izvesti XML datoteke prodajnih računa, a na isti način moguće je ručno uvesti XML datoteke za ulaznih računa.
 
 Forme za upravljanje XML datotekama imaju integrirani preglednik koji omogućuje čitanje XML datoteka u jasnom formatu pomoću različitih stilova prikaza 
 

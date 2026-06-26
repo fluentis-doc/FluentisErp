@@ -107,7 +107,7 @@ primjer:
 gdje je CODCLI vrijednost unesena u polje *vrste šifre artikla kupca* u Šifarniku o kupcima. 
 
 :::tip UVID 
-Ako želite vidjeti kod članka Fluentis drugačije od standarda, morate prilagoditi FSItem transformaciju u ruci koja se zove FullTextDescriptionXMLFE. Ako ne želite ništa umetnuti u oznaku CodiceArticolo za CodiceType “art. dobavljač", u transformaciji, u mreži, ništa se ne smije unijeti u korespondenciju s nizom " Engine Parameters ". Da biste isključili kod klase u pojedinačnim redcima dokumenta, potrebno je prilagoditi transformaciju FullTextDesctiption FSItem objekta u Arm promjenom teksta sadržanog u odjeljku EngineParameters retka “Default” iz “ItemClassCode +”-“+ Šifra” u “Šifra”  
+Ako želite vidjeti šifru artikla drugačiju od standarda, morate prilagoditi FSItem transformaciju u ruci koja se zove FullTextDescriptionXMLFE. Ako ne želite ništa umetnuti u oznaku CodiceArticolo za CodiceType “art. dobavljač", u transformaciji, u mreži, ništa se ne smije unijeti u korespondenciju s nizom " Engine Parameters ". Da biste isključili kod klase u pojedinačnim redcima dokumenta, potrebno je prilagoditi transformaciju FullTextDesctiption FSItem objekta u Arm promjenom teksta sadržanog u odjeljku EngineParameters retka “Default” iz “ItemClassCode +”-“+ Šifra” u “Šifra”  
 :::
 
 ### Izjava namjere ( tag 2.2.1.16 Ostalipodacioupravljanju) 
@@ -162,7 +162,7 @@ Ovi ekstrapodaci, jednostavnog tipa, moraju biti povezani s nadređenim objektom
 ```
 na svojstvo, zapravo, ExtraData (postoje 3 vrste: niz, numerički, podaci). 
 
-U svaki redak članka, dakle, korisnik može slobodno (ručno) dodati ove dodatne podatke; kao rezultat će redak članka imati, (na primjer, ako su dodatni podaci tipa string), ovaj dodatni odjeljak: 
+U svaki redak artikl, dakle, korisnik može slobodno (ručno) dodati ove dodatne podatke; kao rezultat će redak artikla imati, (na primjer, ako su dodatni podaci tipa string), ovaj dodatni odjeljak: 
 
 ```xml
     <AltriDatiGestionali> 
@@ -201,7 +201,7 @@ Na računu su prikazana polja “Ime” + “ “ + “Prezime” tako upisane o
 
 ### Upravljanje "administrativnom referencom" prema detaljima retka (oznaka 2.2.1.15 Administrativna referenca)
 
-Neka javna tijela zahtijevaju 'administrativnu referencu' za jedan redak članka (a ne u zaglavlju).   
+Neka javna tijela zahtijevaju 'administrativnu referencu' za jedan redak artikla (a ne u zaglavlju).   
 
 U Fluentis je moguće umetnuti 'ExtraData' s kodom 
 
@@ -220,7 +220,7 @@ Ovi ekstrapodaci, jednostavnog tipa, moraju biti povezani s nadređenim objektom
 
 sa svojstvom Dodatni podaci (očekuje se kao niz). 
 
-Stoga u svaki redak članka korisnik može slobodno (ručno) dodati ove dodatne podatke i rezultat će biti da će taj redak članka imati ovaj dodatni odjeljak:  
+Stoga u svaki redak artikla korisnik može slobodno (ručno) dodati ove dodatne podatke i rezultat će biti da će taj redak artikla imati ovaj dodatni odjeljak:  
 
 ```xml
     <RiferimentoAmministrazione>RifAmm</RiferimentoAmministrazione> 

@@ -21,7 +21,7 @@ Za izradu elektroničke fakture/e-računa između poslovnih subjekata (B2B) i s 
 
 Novoizrađena faktura prikazuje se sa statusom "**Nije ispitano**", naknadni status  "**Kontrola dokumenta**" osim identifikacije da je dokument kreiran vrši i automatsku provjeru prisutnosti određenih mini podataka.
 
-Iz toga je moguće preko statusa "**Generazione del file**" generirati XML izgled fakture.
+Iz toga je moguće preko statusa "**Generiraj**" generirati XML izgled fakture.
 
 Imajte na umu dva posebna stanja "**Poništi dokument**" i "**Izuzmi dokument**", prvo znači da se dokument ne smije poslati krajnjem kupcu, ali će i dalje ostati važeći za potrebe PDV-a, drugo se odnosi na dokumente koji po svojoj prirodi ne smiju spadati u tijek upravljanja elektroničkim fakturiranjem.
 

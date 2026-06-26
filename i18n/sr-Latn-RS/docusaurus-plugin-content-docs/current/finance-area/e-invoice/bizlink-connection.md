@@ -1,41 +1,48 @@
 ---
-title: Konfiguracija Bizlinka za razmjenu sa SDI-jem  
+title: Konfiguracija BizLink-a za razmenu sa SDI sistemom
 sidebar_position: 7
 ---
 
-Fluentis omogućuje razmjenu ulaznih i izlaznih elektroničkih dokumenata putem sustava SDI, tj. ES. Prije korištenja ove funkcionalnosti, potrebno je provjeriti sljedeće postavke jer Fluentis mora komunicirati s vanjskim sustavima putem alata BizLink.  
+Fluentis omogućava razmenu ulaznih i izlaznih elektronskih dokumenata putem SDI sistema, odnosno ES-a. Pre korišćenja ove funkcionalnosti potrebno je proveriti sledeća podešavanja, jer Fluentis komunicira sa spoljnim sistemima preko alata **BizLink**.
 
-## Tablica konfiguracije elektroničkih dokumenata 
+## Tabela konfiguracije elektronskih dokumenata
 
-Ova tablica dostupna je u Fluentisu putem: Konfiguriranje > Tablice > Opće postavke > Konfiguracija elektroničkih dokumenata. 
-Prva provjera koju treba izvršiti jest kliknuti na *Provjeri vezu* na traci izbornika nakon otvaranja tablice. Ako su sve postavke ispravno konfigurirane, veza će biti omogućena.
+Ova tabela dostupna je u Fluentisu putem: **Konfiguracija > Tabele > Opšta podešavanja > Konfiguracija elektronskih dokumenata**.
 
-:::danger PAŽNJA 
-Ako se tijekom provjere veze primi pojavi greška, to znači da su prilikom aktivacije usluge uneseni pogrešni naziv poslužitelja (servera) ili baze podataka. U tom slučaju potrebno je kontaktirati podršku i dostaviti ispravne podatke.  
-:::
-
-
-## Tablica korisnika BizLink 
-
-Ova tablica dostupna je u ARM-u putem  Početna stranica > Spajanja > BizLink Korisnici.    
-U lijevom dijelu pregleda nalaze se korisnici sa skrivenim lozinkama, dok se u desnom dijelu nalaze dostupne veze s pripadajućim nazivima poslužitelja i baza podataka.   
-U ovoj tablici potrebno je provjeriti da korisnici postavljeni u lijevom dijelu pregleda imaju aktiviran flag u desnom dijelu pregleda.
-
-## Usluge BizLink  
-
-Zatim je potrebno otvoriti aplikaciju Servise na korisničkom računalu i zaustaviti uslugu BizLink.  
- Nakon zaustavljanja usluge, otvoriti mapu Servisi (putanja mape može se pronaći u svojstvima usluge BizLink) i provjeriti ključeve unutar konfiguracijske datoteke. Oni moraju odgovarati sljedećim vrijednostima:
-
-```xml
-        <"GlobalUser" value="FlConServiceUser"/>
-        <"GlobalPwd" value="FlConServiceUserPwd"/>
-        <"GlobalUrl" value="http://localhost/arm/"/>
-```
-Korisničko ime i lozinka moraju biti isti kao oni iz tablice BizLink users, prethodno provjerene. Preporučuje se korištenje opcije kopiraj i zalijepi.     
-
-U ovom trenutku moguće je obrisati tekstualnu datoteku prisutnu u mapi Servisi i ponovo pokrenuti servis BizLink. Na taj će način tekstualna datoteka biti ponovno kreirana. Ako tekstualna datoteka nije prisutna, pokrenite .exe datoteku.  
-Ako tekstualna datoteka ne sadrži greške, servis će biti aktivan.
+Prva provera koju je potrebno izvršiti jeste klik na dugme **Proveri vezu** na traci sa alatkama nakon otvaranja tabele. Ako su sva podešavanja ispravno konfigurisana, veza će biti uspešno uspostavljena.
 
 :::danger PAŽNJA
-Ako se .exe datoteka odmah zatvara, to znači da je usluga još uvijek aktivna ili postoji neki problem s datotekom konfiguracije.
+Ako se prilikom provere veze pojavi greška, to znači da su prilikom aktivacije servisa uneti pogrešni naziv servera ili baze podataka. U tom slučaju potrebno je kontaktirati tehničku podršku i dostaviti ispravne podatke.
+:::
+
+## Tabela BizLink korisnika
+
+Ova tabela dostupna je u ARM-u putem: **Početna > Konekcije > BizLink korisnici**.
+
+Na levoj strani pregleda prikazani su korisnici sa skrivenim lozinkama, dok se na desnoj strani nalaze dostupne veze sa odgovarajućim nazivima servera i baza podataka.
+
+Potrebno je proveriti da korisnici definisani u levom delu imaju aktiviranu odgovarajuću oznaku u desnom delu pregleda.
+
+## BizLink servisi
+
+Zatim je potrebno otvoriti aplikaciju **Services** na korisničkom računaru i zaustaviti **BizLink** servis.
+
+Nakon zaustavljanja servisa otvorite fasciklu **Services** (putanju možete pronaći u svojstvima BizLink servisa) i proverite vrednosti u konfiguracionoj datoteci. One moraju odgovarati sledećim vrednostima:
+
+```xml
+<"GlobalUser" value="FlConServiceUser"/>
+<"GlobalPwd" value="FlConServiceUserPwd"/>
+<"GlobalUrl" value="http://localhost/arm/"/>
+```
+
+Korisničko ime i lozinka moraju biti isti kao oni definisani u tabeli **BizLink korisnici** koja je prethodno proverena. Preporučuje se korišćenje opcije **kopiraj i nalepi**.
+
+Nakon toga možete obrisati tekstualnu datoteku koja se nalazi u fascikli **Services** i ponovo pokrenuti BizLink servis. Tom prilikom tekstualna datoteka biće automatski ponovo kreirana.
+
+Ako tekstualna datoteka ne postoji, pokrenite odgovarajuću **.exe** datoteku.
+
+Ako tekstualna datoteka ne sadrži greške, servis će biti uspešno pokrenut.
+
+:::danger PAŽNJA
+Ako se **.exe** datoteka odmah zatvori nakon pokretanja, to znači da je servis i dalje aktivan ili postoji problem sa konfiguracionom datotekom.
 :::

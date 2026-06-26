@@ -1,50 +1,61 @@
 ---
-title: Izrada elektroničkog računa
+title: Kreiranje elektronskog računa
 sidebar_position: 2
 ---
 
-Na ovoj stranici prikazano je:
+Na ovoj stranici opisani su:
 
- - **Izdavanje elektroničke računa za B2B i javnu upravu (PA)**  
- - **Upravljanje digitalnim potpisom**  
- - **Postupak izrade računa za korisnike koji nisu pretplaćeni na FBH uslugu**  
+- **Izdavanje elektronskih računa za B2B i javni sektor (PA)**
+- **Upravljanje digitalnim potpisom**
+- **Postupak kreiranja računa za korisnike koji ne koriste FBH servis**
 
-Za izradu elektroničke fakture/e-računa između poslovnih subjekata (B2B) i s javnom upravom (B2G), najprije se morati izraditi prodajnu fakturu uobičajenim Fluentis procedurama, nakon čega se nastavlja s generiranjem relevantne XML datoteke pomoću odgovarajućeg tijeka rada.
+Za kreiranje elektronskog računa između poslovnih subjekata (B2B) ili prema javnoj upravi (B2G), potrebno je najpre kreirati izlazni račun uobičajenim Fluentis procedurama, a zatim nastaviti sa generisanjem odgovarajuće XML datoteke kroz predviđeni tok rada.
 
 ![](/img/it-it/finance-area/e-invoice/create-electronic-invoice/image01.png)
 
- Generiranje XML datoteke se izvršava kroz neka stanja/statuse dokumenta/faktura.
+Generisanje XML datoteke odvija se kroz više statusa dokumenta.
 
- ![](/img/it-it/finance-area/e-invoice/create-electronic-invoice/image02.png)
+![](/img/it-it/finance-area/e-invoice/create-electronic-invoice/image02.png)
 
-  
+Novoizrađeni račun dobija status **Nije proveren**.
 
-Novoizrađena faktura prikazuje se sa statusom "**Nije ispitano**", naknadni status  "**Kontrola dokumenta**" osim identifikacije da je dokument kreiran vrši i automatsku provjeru prisutnosti određenih mini podataka.
+Sledeći status, **Provera dokumenta**, potvrđuje da je dokument kreiran i automatski proverava da li su prisutni svi obavezni podaci.
 
-Iz toga je moguće preko statusa "**Generazione del file**" generirati XML izgled fakture.
+Nakon uspešne provere moguće je, preko statusa **Generiši**, kreirati XML datoteku računa.
 
-Imajte na umu dva posebna stanja "**Poništi dokument**" i "**Izuzmi dokument**", prvo znači da se dokument ne smije poslati krajnjem kupcu, ali će i dalje ostati važeći za potrebe PDV-a, drugo se odnosi na dokumente koji po svojoj prirodi ne smiju spadati u tijek upravljanja elektroničkim fakturiranjem.
+Obratite pažnju na dva posebna statusa:
 
-Nakon statusa "generirano" moguće je dodijeliti status "**Za slanje**", ovaj status će automatski uzrokovati da Fluentis Business HUB obradi datoteku i pošalje je u SDI.
+- **Poništi dokument** – dokument se neće poslati krajnjem kupcu, ali ostaje važeći za potrebe obračuna PDV-a.
+- **Izuzmi dokument** – koristi se za dokumente koji po svojoj prirodi ne ulaze u proces elektronskog fakturisanja.
 
-Nakon što je dokument poslan FBH servisu, status će se automatski promijeniti prvo u "**U Fluentis Business Hubu**", a zatim u status "**U SDI-ju**", kada server proslijedi datoteku.
+Nakon statusa **Generisano** moguće je dodeliti status **Za slanje**. Ovaj status automatski pokreće obradu datoteke u **Fluentis Business Hub-u (FBH)** i njeno slanje SDI sistemu.
 
-Za praćenje ovih stanja jednostavno pritisnite tipku ![](/img/neutral/common/search.png) za ažuriranje obrasca.
+Nakon što FBH preuzme dokument, status se automatski menja najpre u **U Fluentis Business Hub-u**, a zatim u **U SDI-ju**, kada server prosledi datoteku SDI sistemu.
 
-n.b. prelaskom u status "Za slanje" više se neće moći vratiti ili modificirati fakturu već ćete morati pričekati obavijest o ishodu od SDI-ja.
+Za praćenje promena statusa dovoljno je kliknuti na dugme za osvežavanje.
 
-UPRAVLJANJE DIGITALNIM POTPISOM Ako datoteka mora biti digitalno potpisana, aktiviranje oznake "Digitalni potpis" na razini registra korisnika ili u tablici poduzeća uzrokovat će pojavljivanje dodatnog statusa nakon faze generiranja praćenja.
+![](/img/neutral/common/search.png)
 
-Zapravo, s generiranim statusom kopija datoteke stvorena je izravno u vanjskoj mapi postavljenoj prilikom konfiguracije elektroničkog fakturiranja i bit će dovoljno obraditi je softverom za potpis. 
+> **Napomena:** Nakon prelaska u status **Za slanje**, račun više nije moguće menjati niti vraćati u prethodno stanje. Potrebno je sačekati odgovor SDI sistema o ishodu obrade.
 
-Stoga status "**Potpis dokumenta**" samo ponovno uvozi potpisani dokument u novom formatu (p7m). 
+## Upravljanje digitalnim potpisom
 
-POSTUPAK ZA ONE KOJI SE NE PRETPLATE NA FBH SERVIS Za one koji se oslanjaju na alate van Fluentisa za slanje računa u SDI, jednostavno preuzmite e-račun u XML formatu i zatim ga prenesite putem odabranog kanala.
+Ako je potrebno digitalno potpisivanje XML datoteke, potrebno je aktivirati opciju **Digitalni potpis** na nivou korisnika ili u tabeli preduzeća.
 
-Pomoću tipke ![](/img/it-it/finance-area/e-invoice/create-electronic-invoice/image04.png) moguće je preuzeti xml datoteku koja je već u stanju "Generirano", no preporučljivo je ipak prebaciti u stanje "Za slanje" kako biste datoteku blokirali od bilo kakvih promjena.  
+U tom slučaju nakon faze generisanja pojavljuje se dodatni status.
 
+Kada dokument dobije status **Generisano**, kopija XML datoteke automatski se kreira u spoljašnjoj fascikli definisanoj prilikom konfiguracije elektronskog fakturisanja. Datoteku je zatim potrebno potpisati odgovarajućim softverom za digitalni potpis.
 
+Status **Potpiši dokument** služi za ponovno učitavanje digitalno potpisane datoteke u **.p7m** formatu.
 
+## Postupak za korisnike koji ne koriste FBH servis
 
+Korisnici koji koriste druga rešenja za slanje elektronskih računa prema SDI sistemu mogu jednostavno preuzeti XML datoteku i poslati je preko željenog kanala.
 
+Klikom na dugme
 
+![](/img/it-it/finance-area/e-invoice/create-electronic-invoice/image04.png)
+
+moguće je preuzeti XML datoteku kada se dokument nalazi u statusu **Generisano**.
+
+Ipak, preporučuje se da se dokument prethodno prebaci u status **Za slanje**, kako bi se sprečile eventualne naknadne izmene XML datoteke.

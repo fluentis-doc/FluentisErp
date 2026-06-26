@@ -1,14 +1,16 @@
 ---
-title: Upravljanje prilozima elektroničkog računa
+title: Upravljanje prilozima elektronskog računa
 sidebar_position: 3
 ---
 
-E-računu, uz PDF kopiju samog računa, moguće je prilikom slanja pridodati i neke popratne dokumente, poput neke specifikacije. 
+Elektronskom računu, pored PDF kopije samog računa, prilikom slanja moguće je priložiti i dodatne dokumente, kao što su specifikacije ili druga prateća dokumentacija.
 
-ŠTO JE POTREBNO?
+## Šta je potrebno?
 
-- Aktivirati umetanje privitka u šifarniku kupaca > kartica Porezni podaci ili (za sve šifre) u Konfiguriranje > Tablice > Opće postavke > Konfiguracija elektroničkog dokumenta.  
+- Aktivirati opciju za dodavanje priloga u **Šifarniku kupaca** na kartici **Poreski podaci** ili (za sve kupce) u **Konfiguracija > Tabele > Opšta podešavanja > Konfiguracija elektronskog dokumenta**.
 
-- Otvoriti račun kojem se žele priložiti dokumente, pritisnuti tipku Dokumenti u gornjem izborniku, priložiti dokumente umetanjem prefiksa ATTACHMENT_ uz naziv dokumenta prije generiranja XML datoteke. Može se priložiti bilo koja vrsta datoteke (.jpeg .xls itd., ali preporuka je svakako PDF)  
+- Otvoriti račun kojem želite da priložite dokumenta, kliknuti na dugme **Dokumenti** u gornjem meniju i dodati željene dokumente. Pre generisanja XML datoteke potrebno je nazivu dokumenta dodati prefiks **ATTACHMENT_**.
 
-Za pregled privitaka otvoriti Registar SDI dokumenata i kliknuti na naziv privitka u pregledu ispod pregleda računa.
+  Moguće je priložiti bilo koju vrstu datoteke (`.jpeg`, `.xls`, itd.), iako se preporučuje korišćenje **PDF** formata.
+
+Za pregled priloženih dokumenata otvorite **Registar SDI dokumenata** i kliknite na naziv priloga u pregledu koji se nalazi ispod pregleda računa.

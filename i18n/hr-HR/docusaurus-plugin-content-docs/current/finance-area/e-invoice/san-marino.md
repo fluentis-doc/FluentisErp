@@ -4,7 +4,7 @@ sidebar_position: 5
 ---
 
 :::note NAPOMENA
-U ovom se odjeljku obrađuje upravljanje elektroničkim računom u vezi s gospodarskim subjektima, korisnicima Fluentisa **stanovnicima**  ili onima koji imaju poslovni nastan u San Marinu.
+U ovom se odjeljku obrađuje upravljanje elektroničkim računom u vezi s gospodarskim subjektima, korisnicima Fluentisa **stanovnicima**  ili onima koji imaju poslovni subjekt u San Marinu.
 
 NE odnosi se stoga na aspekte povezane s izdavanjem računa od strane talijanskih subjekata prema San Marinu ili na račune primljene iz San Marina.
 :::
@@ -65,7 +65,7 @@ Gospodarski subjekt iz San Marina prima od poreznog ureda San Marina – istovre
 
 Navedena elektronička faktura za nabavu u tom trenutku unutar Fluentisa ima status ***Nepridruženo***. 
 
-Za dotično poduzeće mora biti aktiviran flag (u tablici Società - SH_Companies izravno u bazi podataka) koji omogućuje kreiranje ulaznih računa iz SDI datoteke.
+Za dotično poduzeće mora biti aktiviran flag (u tablici Poduzeća - SH_Companies izravno u bazi podataka) koji omogućuje kreiranje ulaznih računa iz SDI datoteke.
 Korisnik zatim kreira ulazni račun u tom trenutku elektronička faktura prelazi u status ***Primljeno*** nadopunjuje potrebne podatke, posebno vrstu troška nabave u redovima – kako bi se specificirala vrsta robe (vidi sliku dolje) – te stopu PDV-a u svrhu obračuna jednofaznog poreza, podaci koji su zahtijevani prema poreznim propisima San Marina.
 
 <details>

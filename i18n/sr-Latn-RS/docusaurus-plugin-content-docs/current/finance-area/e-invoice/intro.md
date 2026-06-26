@@ -3,20 +3,22 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Funkcionalnosti za elektroničko fakturiranje, premda povezane s fiskalnim i administrativnim potrebama, obuhvaćaju više područja Fluentis ERP-a, poput nabave, prodaje, administracije itd.
+Funkcionalnosti za elektronsko fakturisanje, iako su prvenstveno povezane sa fiskalnim i administrativnim zahtevima, obuhvataju više oblasti Fluentis ERP-a, kao što su nabavka, prodaja i računovodstvo.
 
-Prednost ovog modula leži u njegovoj integraciji. Dakle, bez izlaska iz ERP-a moguće je automatski primati nove ulazne račune i knjižiti ih, ili izdavati i slati nove prodajne račune.
+Glavna prednost ovog modula je njegova potpuna integracija sa ERP sistemom. Bez napuštanja Fluentisa moguće je:
 
-Također je moguće izvesti XML datoteke prodojanih računa, a na isti način moguće je ručno uvesti XML datoteke za ulaznih računa.
+- automatski primati i knjižiti ulazne račune;
+- kreirati i slati izlazne elektronske račune;
+- izvoziti XML datoteke izlaznih računa;
+- ručno uvoziti XML datoteke ulaznih računa.
 
-Forme za upravljanje XML datotekama imaju integrirani preglednik koji omogućuje čitanje XML datoteka u jasnom formatu pomoću različitih stilova prikaza 
+Obrasci za upravljanje XML datotekama sadrže ugrađeni preglednik koji omogućava pregled sadržaja XML datoteka u čitljivom formatu, uz korišćenje različitih stilova prikaza.
 
-
-**Tablice uključene u šifriranja i parametre za elektroničko fakturiranje**
+## Tabele koje učestvuju u konfiguraciji elektronskog fakturisanja
 
 - Stope i vrste PDV-a
 - Vrste plaćanja
 - Vrste računa
 - Vrste dokumenata
 
-Za dodatne specifične postavke pogledajte [**ovdje**](/docs/finance-area/e-invoice/configuration_einvoice) 
+Za dodatna i napredna podešavanja pogledajte **[ovde](/docs/finance-area/e-invoice/configuration_einvoice)**.

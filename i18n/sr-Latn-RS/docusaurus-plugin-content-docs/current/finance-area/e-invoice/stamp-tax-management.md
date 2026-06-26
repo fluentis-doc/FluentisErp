@@ -1,24 +1,26 @@
 ---
-title: Upravljanje biljevinama
+title: Upravljanje taksenom markicom
 sidebar_position: 2
 ---
 
-Upravljanje ispravnim umetanjem virtualne porezne marke u xml putanju elektroničke fakture od strane Fluentisa odvija se automatski, stoga će biti dovoljno kodirati i ispravno umetnuti ovaj trošak na fakturu (kao što je sažeto u nastavku). 
+Upravljanje ispravnim uključivanjem virtuelne taksene markice u XML datoteku elektronskog računa u Fluentis ERP-u odvija se automatski. Dovoljno je pravilno definisati i dodati trošak taksene markice na račun, kao što je opisano u nastavku.
 
-- u tablicu troškova upišite trošak tipa "marka" u vrijednosti od 2 eura  
+- U tabeli **Troškovi** potrebno je definisati trošak tipa **Taksena markica** u iznosu od **2,00 EUR**.
 
 ![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image01.png)
 
-- trošak tipa "markica" mora se dodati u registar kupaca odabirom koda koji je prethodno kreiran u tablici Vrste troškova 
+- U šifarniku kupaca potrebno je dodati trošak tipa **Taksena markica**, izborom šifre koja je prethodno definisana u tabeli **Vrste troškova**.
 
-   n.b. kako se biljegovina ne bi zaračunala kupcu u trošku biljegine u registru, vrijednost mora biti postavljena na "0" 
+> **Napomena:** Ako se trošak taksene markice ne naplaćuje kupcu, u šifarniku kupca iznos troška taksene markice treba postaviti na **0**.
 
- ![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image02.png)
+![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image02.png)
 
-- u tablici poduzeća ispunite polje "Troškovi marke"=2 i "Minimalni troškovi krova"=77,47
+- U tabeli **Preduzeće** potrebno je popuniti sledeća polja:
+  - **Trošak taksene markice** = **2,00 EUR**
+  - **Minimalni prag troškova** = **77,47 EUR**
 
 ![](/img/it-it/finance-area/e-invoice/stamp-tax-management/image03.png)
 
-Nakon što postavite sljedeće postavke, predloženi trošak će se automatski pojaviti na prodajnom računu, stoga ćete u svakom pojedinačnom računu moći odabrati želite li ili ne naplatiti virtualnu bilježninu (kako biste izbjegli naplatu bilježine, unesite trošak s iznosom = 0).
+Nakon što su navedena podešavanja konfigurisana, u izlaznom računu automatski će biti predložen trošak taksene markice. Za svaki pojedinačni račun moguće je odlučiti da li će se virtuelna taksena markica naplatiti kupcu ili ne. Ako se taksena markica ne naplaćuje, dovoljno je postaviti iznos troška na **0**.
 
-Prilikom izrade XML datoteke, ako se trošak kao što je biljegovina pojavi u sažetku fakture, relevantni odjeljak automatski se dodaje u izgled. 
+Prilikom generisanja XML datoteke, ukoliko se u sažetku računa nalazi trošak tipa **Taksena markica**, odgovarajući XML element za virtuelnu taksenu markicu automatski će biti uključen u izlaznu XML datoteku.
