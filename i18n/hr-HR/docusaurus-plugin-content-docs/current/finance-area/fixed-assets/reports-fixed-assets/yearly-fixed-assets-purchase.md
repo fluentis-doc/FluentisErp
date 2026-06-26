@@ -7,7 +7,7 @@ Izvješće služi za posebno izdvajanje operacija nabave i povećanja iz kartica
 
 Prilikom otvaranja obrasca moguće je u gornjem dijelu postaviti neke parametre filtera uključujući referentnu godinu nabave i broj sredstva (od br. do br.).
 
-Aktiviranjem flaga **Kategorija osnovnog sredstva** moguće je u središnjem pregledu odabrati kategoriju (ili kategorije pomoću tipke Ctrl) za koje se želi izdvojiti podatke.
+Aktiviranjem opcije **Kategorija osnovnog sredstva** moguće je u središnjem pregledu odabrati kategoriju (ili kategorije pomoću tipke Ctrl) za koje se želi izdvojiti podatke.
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase/image01.png)
 

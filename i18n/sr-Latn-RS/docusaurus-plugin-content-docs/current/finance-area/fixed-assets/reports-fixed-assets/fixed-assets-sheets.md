@@ -3,35 +3,28 @@ title: Pregled osnovnih sredstava
 sidebar_position: 1
 ---
 
-Izvješća u ovom obrascu omogućuju pregled podataka o osnovnog sredstva karticu po karticu.   
+Izveštaji dostupni u ovom obrascu omogućavaju pregled podataka o osnovnim sredstvima, karticu po karticu.
 
-Postoji klasična lista/knjiga osnovnih sredstava i shema održavanja s relevantnim podacima.  
+Dostupni su standardni pregled (registar) osnovnih sredstava i pregled održavanja sa odgovarajućim podacima.
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets/image01.png)
 
- 
-
-Kartice se tiskaju prema kriterijima razvrstavanja definiranim u podnožju obrasca.  
- 
+Kartice se štampaju prema kriterijumima sortiranja definisanim u donjem delu obrasca.
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets/image02.png)
 
-Prioritet je moguće promijeniti odabirom kriterija i korištenjem naredbi koje se nalaze u traci izbornika. ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets/image03.png)
+Redosled kriterijuma moguće je promeniti izborom željenog kriterijuma i korišćenjem komandi dostupnih na traci menija.
 
-Prioritet čitanja kriterija je odozgo prema dolje.  
+![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/fixed-assets-sheets/image03.png)
 
-(Sortiranje će se izvršiti prvo po kategoriji pa s istom kategorijom po vrsti svojstva, s istom vrstom svojstva na temelju predšifre i broja itd...)
- 
-Flag **Fiskalni podaci** prikazuje dodatne stupce koji sadrže podatke koji se odnose na poreznu amortizaciju.  
+Kriterijumi se primenjuju redom, od vrha ka dnu.
 
-Ostala polja filtera su ona uobičajena koja su već obrađena za druge ispise i druge obrasce u području osnovnih sredstava.  
+Na primer, sortiranje će se prvo izvršiti po kategoriji osnovnog sredstva, zatim unutar iste kategorije po vrsti svojstva, potom po prefiksu šifre, broju itd.
 
-Kako funkcionira pregled za odabir kategorije osnovnog sredstva, **[pogledati ovdje](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**.  
+Opcija **Fiskalni podaci** prikazuje dodatne kolone sa podacima koji se odnose na poresku amortizaciju.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+Ostala polja za filtriranje identična su onima koja se koriste u ostalim izveštajima i obrascima modula osnovnih sredstava.
 
+Način korišćenja pregleda za izbor kategorija osnovnih sredstava opisan je u dokumentu **[Godišnja nabavka osnovnih sredstava](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**.
 
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

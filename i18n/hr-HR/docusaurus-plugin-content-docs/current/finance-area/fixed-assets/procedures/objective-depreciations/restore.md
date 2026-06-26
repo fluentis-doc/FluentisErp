@@ -1,21 +1,14 @@
 ---
-title: Povrat 
+title: Povrat
 sidebar_position: 3
 ---
 
-Eseguito il calcolo, le righe spariranno dalla griglia e il risultato sarà visibile nella scheda 'Ripristino' all'interno della quale è possibile annullare l'operazione.
+Nakon izvršenog obračuna, retci će nestati iz mreže, a rezultat će biti vidljiv na kartici **Povrat**, unutar koje je moguće poništiti obračun.
 
-RIBBON BAR: rappresenta il menu della Form in oggetto, ossia l'area nella quale è possibile effettuare delle azioni collegate alla procedura in uso. La lista delle funzionalità possibili è di seguito rappresentata:
-
+**TRAKA IZBORNIKA**: predstavlja izbornik ove forme, odnosno područje u kojem je moguće izvršavati radnje povezane s postupkom koji se koristi. Dostupne funkcionalnosti prikazane su u nastavku:
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Potražite popis izvršenih obračuna amortizacije. |
-| Vrati | Vrši poništavanje izračuna za odabrane retke. |
+| Traži | Prikazuje popis izvršenih obračuna amortizacije. |
+| Vrati | Poništava obračun za odabrane retke. |
 | Prikaži sredstvo | Otvara matične podatke sredstva čija je amortizacija odabrana u mreži. |
-
-
-
-
-
-

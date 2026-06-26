@@ -1,5 +1,5 @@
 ---
-title: Knjiženje amortizacije 
+title: Knjiženje amortizacije
 sidebar_position: 1
 ---
 
@@ -9,23 +9,11 @@ LINK:
 
 **[Povrat](/docs/finance-area/fixed-assets/accounting/restore)**
 
- 
-Ova procedura ažurira kartice sredstsva/imovine (dodavanjem *flaga* Knjiženo i ažuriranjem vrijednosti akumulirane amortizacije i neto knjigovodstvene vrijednosti) i bilježi povezana kretanja amortizacije u računovodstvu
+Ova procedura ažurira kartice osnovnih sredstava dodavanjem oznake **Knjiženo** i ažuriranjem vrednosti akumulirane amortizacije i neto knjigovodstvene vrednosti, kao i evidentiranjem odgovarajućih knjiženja amortizacije u glavnoj knjizi.
 
-Da bi postupak bio uspješan potrebno je: 
+Da bi se postupak uspešno izvršio, potrebno je:
 
-- Postaviti parametre u **[Parametri knjiženja](/docs/configurations/parameters/finance/accounting-parameters)** za referentnu godinu;  
-
-- Postaviti parametre u **[Parametri osnovnih sredstava](/docs/configurations/parameters/finance/fixed-assets-parameters)**;
-
-- Unutar tablice  **[Kategorija osnovnog sredstva](/docs/configurations/tables/finance/fixed-asset-category)** definirati konta koja se odnose na amortizaciju (za svaku kategoriju);
-
-- Definirati predložak knjiženja koji se koristi za obračun amortizacije. 
-
- 
-
-
-
-
-
-
+- definisati odgovarajuće postavke u **[Parametrima knjiženja](/docs/configurations/parameters/finance/accounting-parameters)** za referentnu godinu;
+- definisati postavke u **[Parametrima osnovnih sredstava](/docs/configurations/parameters/finance/fixed-assets-parameters)**;
+- u tabeli **[Kategorije osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-category)** definisati konta koja se koriste za obračun amortizacije za svaku kategoriju;
+- definisati knjigovodstveni predložak koji će se koristiti za knjiženje amortizacije.

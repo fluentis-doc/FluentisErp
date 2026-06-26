@@ -1,23 +1,16 @@
 ---
-title: Godišnja nabava osnovnih sredstava
+title: Godišnja nabavka osnovnih sredstava
 sidebar_position: 2
 ---
 
-Izvješće služi za posebno izdvajanje operacija nabave i povećanja iz kartica osnovnog sredstva za postavljenu referentnu godinu.
+Ovaj izveštaj služi za izdvajanje operacija nabavke i povećanja vrednosti osnovnih sredstava evidentiranih na karticama osnovnih sredstava za izabranu referentnu godinu.
 
-Prilikom otvaranja obrasca moguće je u gornjem dijelu postaviti neke parametre filtera uključujući referentnu godinu nabave i broj sredstva (od br. do br.).
+Prilikom otvaranja obrasca moguće je u gornjem delu definisati parametre pretrage, uključujući referentnu godinu nabavke i opseg brojeva osnovnih sredstava (od broja – do broja).
 
-Aktiviranjem flaga **Kategorija osnovnog sredstva** moguće je u središnjem pregledu odabrati kategoriju (ili kategorije pomoću tipke Ctrl) za koje se želi izdvojiti podatke.
+Aktiviranjem opcije **Kategorija osnovnog sredstva** moguće je u centralnom pregledu odabrati jednu ili više kategorija (višestruki izbor pomoću tastera **Ctrl**) za koje se želi prikazati izveštaj.
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase/image01.png)
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase/image02.png)
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

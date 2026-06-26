@@ -1,21 +1,18 @@
 ---
-title: Amortizacija  
+title: Amortizacija
 sidebar_position: 2
 ---
 
-Prije svega, od temeljne je važnosti upravljati flagom **inkrementalnih operacija**: budući da se postupkom amortizacije upravlja drugačijom logikom, ako tvrtka koristi inkrementalnu opciju za svoje kategorije, bit će potrebno uvesti ovu oznaku kako bi se identificirali podaci . U podnožju obrasca, međutim, mora biti postavljena referentna godina izračuna: obično će se morati modificirati kako bi se umetnula godina koja prethodi tekućoj.  
+Pre svega, od ključnog je značaja pravilno upravljati opcijom **Inkrementalne operacije**. Budući da se postupak obračuna amortizacije razlikuje u zavisnosti od ove postavke, ukoliko preduzeće koristi inkrementalne operacije za pojedine kategorije osnovnih sredstava, potrebno je aktivirati odgovarajući filter kako bi se prikazali ispravni podaci.
 
-TRAKA IZBORNIKA: predstavlja izbornik predmetnog obrasca, odnosno područje u kojem je moguće provoditi radnje vezane uz proceduru koja se koristi. Popis mogućih funkcija prikazan je u nastavku: 
+U donjem delu obrasca potrebno je definisati **referentnu godinu** obračuna amortizacije. Uobičajeno je da se unese godina koja prethodi tekućoj poslovnoj godini.
 
+## Traka menija
+
+Traka menija sadrži funkcije namenjene radu sa postupkom obračuna amortizacije.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Potražite popis amortizacije za izračun. |
-| Amortizacija | Izvodi izračun za odabrane retke. |
-| Prikaži sredstvo | Otvara matične podatke sredstva čija je amortizacija odabrana u mreži. |
-
-
-
-
-
-
+| Traži | Pretražuje listu osnovnih sredstava za obračun amortizacije. |
+| Amortizacija | Izvršava obračun amortizacije za odabrane redove. |
+| Prikaži sredstvo | Otvara karticu osnovnog sredstva čija je amortizacija odabrana u tabeli. |

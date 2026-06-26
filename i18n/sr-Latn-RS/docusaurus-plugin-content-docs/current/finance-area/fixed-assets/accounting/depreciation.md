@@ -3,16 +3,13 @@ title: Amortizacija
 sidebar_position: 2
 ---
 
-Nakon otvaranja obrasca, potrebno je postaviti referentnu godinu, datuma unosa i obračuna (od kojih će potonji svakako biti kraj referentne godine, a prvi može biti u tekućoj godini), predložak knjiženja i *flag* za grupiranje Pojedinačnog zapisivanja. Ovom opcijom svi zapisi se unose u isto knjiženje, a iznosi koji pripadaju istom podkontu grupiraju se u jedno knjiženje.
+Nakon otvaranja obrasca potrebno je uneti referentnu godinu, datum knjiženja i datum obračuna. Datum obračuna uvek odgovara kraju referentne godine, dok datum knjiženja može biti u tekućoj godini.
+Takođe je potrebno odabrati odgovarajući knjigovodstveni predložak i aktivirati opciju **Grupisanje pojedinačnih knjiženja**, ukoliko je potrebno.
+Kada je ova opcija aktivirana, sva knjiženja biće objedinjena u jednom knjigovodstvenom nalogu, pri čemu će se iznosi koji pripadaju istom kontu grupisati u jednu stavku knjiženja.
 
 ![](/img/it-it/finance-area/fixed-assets/accounting/depreciation/image01.png)
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Traži popis izvršenih obračuna amortizacije. |
-| Knjiži | Izvođenje knjiženja za odabrane retke. |
-
-
-
-
-
+| Traži | Prikazuje listu izvršenih obračuna amortizacije. |
+| Knjiži | Kreira knjigovodstvena knjiženja za odabrane stavke. |

@@ -1,41 +1,38 @@
 ---
-title: Popis osnovnih sredstava  
+title: Popis osnovnih sredstava
 sidebar_position: 4
 ---
 
-Ovaj obrazac omogućuje ispis knjige osnovnih sredstava pomoću uobičajenih filtara pretraživanja za izdvajanje podataka.
+Ovaj obrazac omogućava štampanje registra osnovnih sredstava korišćenjem standardnih filtera za pretragu radi izdvajanja željenih podataka.
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image01.png)
 
-Oznaka/flag **Kategorija osnovnog sredstva**, ako je aktivna, omogućuje odabir jedne ili više (s tipkom Ctrl) kategorija iz glavnog pregleda. 
+Ako je aktivirana opcija **Kategorija osnovnog sredstva**, moguće je odabrati jednu ili više kategorija iz glavne tabele (višestruki izbor pomoću tastera **Ctrl**).
 
-S desne strane: obično se osnovno sredstvo, prodana ili uništena u godinama koje prethode umetnutoj referentnoj godini, više neće izvještavati u tiskanom obliku, osim ako se ne postavi odgovarajući flag. Postoji flag čijim aktiviranjem se prikazuju osnovna sredstva prema željenom svojstvu.
+Sa desne strane obrasca dostupne su dodatne opcije filtriranja. Po pravilu, osnovna sredstva koja su prodata ili rashodovana u godinama koje prethode izabranoj referentnoj godini neće biti uključena u izveštaj, osim ako se aktivira odgovarajuća opcija.
 
-Također je predviđena tipka za unos u izvješće i za imovinu označenu kao "Rashodovana". Na isti način, iz ispisa će biti isključena imovina koja u evidenciji ima upisan datum završetka aktivnosti.
+Takođe je moguće prikazati samo osnovna sredstva sa određenim svojstvom, kao i uključiti sredstva označena kao **Rashodovana**.
+
+Na isti način, iz izveštaja će biti isključena osnovna sredstva kod kojih je evidentiran **datum završetka aktivnosti**.
 
 ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image02.png)
 
-Flagovi ![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image03.png)
+Opcije:
 
-**Neamortizirano**
+![](/img/it-it/finance-area/fixed-assets/reports-fixed-assets/depreciable-fixed-assets-journal/image03.png)
 
-**Djelomično amortizirano**
+- **Neamortizovano**
+- **Delimično amortizovano**
+- **Potpuno amortizovano**
 
-**Ukupna amortizacija**
+Podrazumevano su sve tri opcije uključene kako bi se prikazale sve vrste osnovnih sredstava. Po potrebi se mogu isključiti one kategorije koje ne treba uključiti u izveštaj.
 
-su prema zadanim postavkama aktivna za prikaz svih vrsta osnovnih sredstava, oni koji se odnose na vrste koje se žele sakriti, mogu se deaktivirati.
+Opcija **Konačno** zaključava štampane zapise osnovnih sredstava. Nakon konačne štampe nije moguće obrisati odštampani zapis, a istovremeno se ažurira brojač stranica za odgovarajuću godinu u **Opštim parametrima knjiženja**.
 
- 
-Flag **Definitivno** blokirat će ispis podataka ispisanih zapisa sredstava, također će blokirati brisanje jednog ispisanog retka i ažurirati brojač stranica za referentnu godinu unutar općih parametara knjiženja. Otkazivanje definitivnog/konačnog ispisa može izvršiti ovlašteni korisnik iz obrasca Parametri knjiženja.  
+Poništavanje statusa konačne štampe može izvršiti samo ovlašćeni korisnik iz obrasca **Parametri knjiženja**.
 
-**Fiskalni podaci**: prikazuju dodatne stupce s poreznim podacima koji se odnose na amortizaciju.  
+**Fiskalni podaci** prikazuju dodatne kolone sa poreskim podacima koji se odnose na amortizaciju.
 
-**Prikaži zaglavlje**: ako je deaktivirano, neće prikazati zaglavlje ispisa, što omogućuje ispis na unaprijed ispisanim obrascima.  
+**Prikaži zaglavlje** određuje da li će zaglavlje biti uključeno u izveštaj. Ako je opcija isključena, zaglavlje se neće štampati, što omogućava korišćenje unapred odštampanih obrazaca.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

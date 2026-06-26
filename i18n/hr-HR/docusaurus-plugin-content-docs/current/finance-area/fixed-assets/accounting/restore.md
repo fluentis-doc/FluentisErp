@@ -8,7 +8,7 @@ Ova kartica/tab omogućuje pregled knjigovodstvene evidencije dvoklikom u dijelu
 | Funkcija | Značenje |
 | --- | --- |
 | Traži | Traži popis obavljenih knjiženja. |
-| Povrati knjiženje | Esegue il ripristino delle registrazioni contabili selezionate. |
+| Povrati knjiženje | Vraća odabrana knjigovodstvena knjiženja u prethodno stanje. |
 
 
 

@@ -3,31 +3,27 @@ title: Amortizacija
 sidebar_position: 2
 ---
 
-Prije svega, od temeljne je važnosti upravljati flagom **Inkrementalne operacije**. Budući da se postupkom amortizacije upravlja drugačijom logikom, ako poduzeće koristi inkrementalnu opciju za svoje kategorije, bit će potrebno aktivirati ovu oznaku kako bi se identificirali podaci.
+Pre svega, od ključnog je značaja pravilno upravljati opcijom **Inkrementalne operacije**. Budući da se postupak obračuna amortizacije razlikuje u zavisnosti od ove postavke, ako preduzeće koristi inkrementalne operacije za pojedine kategorije osnovnih sredstava, potrebno je aktivirati odgovarajući filter kako bi se prikazali ispravni podaci.
 
-Stoga, ako postoje obje kategorije osnovnog sredstva s inkrementalnom opcijom i kategorije bez te opcije, amortizacija osnovnog sredstva mora se provesti u dvije faze nakon pretraživanja sa i bez tog flaga.
+Ako postoje kategorije osnovnih sredstava koje koriste inkrementalne operacije i kategorije koje ih ne koriste, obračun amortizacije mora se izvršiti u dve odvojene faze – jednom za inkrementalne, a drugi put za neinkrementalne kategorije.
 
 ![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image01.png)
 
-U podnožju obrasca, međutim, mora biti postavljena referentna godina izračuna: obično će se morati modificirati kako bi se umetnula godina koja prethodi tekućoj. Obračun amortizacije za godinu X nije dopušten ako amortizacija za godinu X-1 nije obračunata.  
+U donjem delu obrasca potrebno je definisati **referentnu godinu** obračuna amortizacije. Uobičajeno je da se unese godina koja prethodi tekućoj poslovnoj godini.
+
+Obračun amortizacije za godinu **X** nije moguće izvršiti ukoliko prethodno nije obračunata amortizacija za godinu **X − 1**.
 
 ![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image02.png)
 
- Nakon što se izvrši pretraživanje podataka, moguće je, redak po redak, unijeti broj dana primjene kao i postotak amortizacije. U stvarnosti, preporučljivo je izvršiti izračun ovih posebnih slučajeva izravno unutar pojedinačne kartice osnovnog sredstva kako bi se izvršio brzi izračun s ukupnim odabirom redaka.   
+Nakon izvršenog pretraživanja moguće je, za svaki red pojedinačno, uneti broj dana obračuna i procenat amortizacije.
 
-Alternativna opcija koja se može koristiti, ako se žele koristiti različiti postoci između različitih sredstava, može se postaviti definicija **[parametra modula osnovnih sredstava](/docs/configurations/parameters/finance/fixed-assets-parameters)** pod nazivom **Postotak pojedinačne imovine**, što omogućuje da se definira postotak amortizacije koji će se koristiti definiran za svako sredstvo.  
+Međutim, preporučuje se da se ovakvi specifični slučajevi definišu direktno na kartici pojedinačnog osnovnog sredstva, kako bi se kasnije mogao izvršiti obračun nad svim odabranim stavkama odjednom.
+
+Alternativno, ukoliko je potrebno koristiti različite stope amortizacije za različita sredstva, može se aktivirati parametar modula **[Parametri osnovnih sredstava](/docs/configurations/parameters/finance/fixed-assets-parameters)** pod nazivom **Procenat pojedinačnog sredstva**, koji omogućava definisanje posebne stope amortizacije za svako pojedinačno osnovno sredstvo.
 
 ![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image03.png)
 
-
-
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Traži popis amortizacije za izračun. |
-| Amortizacija | Izvodi izračun za odabrane retke. |
-
-
-
-
-
-
+| Traži | Pretražuje listu osnovnih sredstava za obračun amortizacije. |
+| Amortizacija | Izvršava obračun amortizacije za odabrane redove. |

@@ -3,7 +3,7 @@ title: Amortizacija osnovnih sredstava
 sidebar_position: 3
 ---
 
-S ovim izvještajem moguće je izvući detalje o amortizacijama izračunatim prema parametrima navedenim u obrascu.
+S ovim izvještajem moguće je izvući detalje o amortizacijama izračunanim prema parametrima navedenim u obrascu.
 
 Način rada obrasca za unos parametara identičan je obrascu koji se koristi za **[Godišnja nabava osnovnih sredstava](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**
 

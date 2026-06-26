@@ -5,22 +5,22 @@ sidebar_position: 2
 
 Unutar ove kartice unose se detalji raznih operacija u knjizi imovine.
 
-Stoga predstavlja, zajedno s tabom Detalji, glavnu sekciju kartice imovine.
+Stoga predstavlja, zajedno s karticom Detalji, glavnu sekciju kartice imovine.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Nova operacija | Aktivira kursor u prvoj tablici imovinskih operacija. |
+| Nova operacija | Aktivira novi redak u prvoj tablici imovinskih operacija. |
 | Brisanje operacije | Briše odabranu operaciju u tablici imovinskih operacija. |
-| Nuovo ammortamento | Aktivira kursor u drugoj tablici amortizacija. |
+| Novi obračun amortizacije| Aktivira novi redak u drugoj tablici amortizacija. |
 | Brisanje amortizacije | Briše odabranu amortizaciju iz tablice amortizacija. |
 | Automatsko knjiženje amortizacije | Izračunava amortizaciju za aktivu u upotrebi za godinu postavljenu u polju iznad tablice amortizacija. |
-| Unos troškovnog centra (cdc) | Aktivira kursor u tablici troškovnih centara. |
+| Unos troškovnog centra (cdc) | Aktivira novi redak u tablici troškovnih centara. |
 | Brisanje troškovnog centra | Briše odabrani unos troškovnog centra iz tablice. |
 | Izračun troškovnih centara | Izvršava izračun troškovnih centara za iznos odabrane stavke amortizacije. |
-| Unos naloga/projekta | Aktivira kursor u tablici naloga/projekata. |
+| Unos naloga/projekta | Aktivira novi redak u tablici naloga/projekata. |
 | Brisanje naloga/projekta | Briše odabrani unos naloga/projekta iz tablice. |
 | Izračun naloga/projekta | Izvršava izračun za odabrani red amortizacije prema pripadajućem nalogu/projektu. |
-| Detalji revalorizacije | Otvara upravljanje detaljima revalorizacije. Tipka je aktivna samo ako je flag „revalorizacija” postavljena za kategoriju aktive u upotrebi. |
+| Detalji revalorizacije | Otvara upravljanje detaljima revalorizacije. Tipka je aktivna samo ako je opcija „revalorizacija” postavljena za kategoriju aktive u upotrebi. |
 | Dokumenti | Upravljanje dokumentacijom povezanoj s trenutnim prikazom (maskom). |
 
 ### GORNJI PREGLED
@@ -74,7 +74,7 @@ predstavlja popis obračunate amortizacije za sredstvo/imovinu: unos može biti 
 
  
 
-Izračun amortizacije bit će prikazan u stupcu ***Već amortiziran*** gornjeg prikaza koji će služiti za označavanje iznosa koji još nije konačan. Samo uz naznaku flaga ***Knjiženo***, u različitim redovima, veći će se iznosi pripisati stupcu fonda koji se odnosi na samu vrstu amortizacije. 
+Izračun amortizacije bit će prikazan u stupcu ***Već amortiziran*** gornjeg prikaza koji će služiti za označavanje iznosa koji još nije konačan. Samo uz naznaku opcije ***Knjiženo***, u različitim redovima, veći će se iznosi pripisati stupcu fonda koji se odnosi na samu vrstu amortizacije. 
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image06.png)
 
@@ -86,12 +86,12 @@ Izračun amortizacije bit će prikazan u stupcu ***Već amortiziran*** gornjeg p
 
  
 :::danger BILJEŠKA
-Ručno umetanje flaga se **NE** bilježi u računovodstvu (zbog toga postoji postupak obračuna amortizacije). Obično se koristi samo za početno ručno učitavanje povijesne situacije, za što je obično potrebno jedno umetanje koje se sastoji od ukupnog iznosa amortiziranog u godini koja prethodi početku korištenja novog softvera, a ne od cjelokupnog detalja amortizacije.  
+Ručno umetanje opcije se **NE** bilježi u računovodstvu (zbog toga postoji postupak obračuna amortizacije). Obično se koristi samo za početno ručno učitavanje povijesne situacije, za što je obično potrebno jedno umetanje koje se sastoji od ukupnog iznosa amortiziranog u godini koja prethodi početku korištenja novog softvera, a ne od cjelokupnog detalja amortizacije.  
 :::
 
-Prilikom spremanja retka s flagom *Knjiženo*, Fluentis će pitati za povezivanje postojećeg računovodstvenog zapisa, poruka na koju se obično odgovara negativno (u slučaju obnavljanja povijesnih podataka).
+Prilikom spremanja retka s opcijom *Knjiženo*, Fluentis će pitati za povezivanje postojećeg računovodstvenog zapisa, poruka na koju se obično odgovara negativno (u slučaju obnavljanja povijesnih podataka).
 
-Flag "Fiskalni" omogućuje fiskalno upravljanje amortizacijskom stavkom te se predlaže na temelju istog flaga postavljenog u kategoriji imovine. U nekim slučajevima može se koristiti ručno za bilježenje u knjizi imovine/sredstava, ciklusa ubrzane amortizacije koja se koristi u redovnom proračunu i fiskalne amortizacije kojom se upravlja samo za izračun poreza. Fiskalno upravljanje, s druge strane, postiže se valorizacijom polja s odbitnim/neodbitnim iznosima amortizacije, koji se automatski valoriziraju na temelju postotka odbitka povezanog s imovinom/sredstvom ili povezanom kategorijom.
+Flag "Fiskalni" omogućuje fiskalno upravljanje amortizacijskom stavkom te se predlaže na temelju iste opcije postavljenog u kategoriji imovine. U nekim slučajevima može se koristiti ručno za bilježenje u knjizi imovine/sredstava, ciklusa ubrzane amortizacije koja se koristi u redovnom proračunu i fiskalne amortizacije kojom se upravlja samo za izračun poreza. Fiskalno upravljanje, s druge strane, postiže se valorizacijom polja s odbitnim/neodbitnim iznosima amortizacije, koji se automatski valoriziraju na temelju postotka odbitka povezanog s imovinom/sredstvom ili povezanom kategorijom.
 
 Posljednji odjeljak sadrži detalje o vrednovanju mjesta troška za amortizaciju odabranu u srednjem prikazu.
 
@@ -99,11 +99,11 @@ Posljednji odjeljak sadrži detalje o vrednovanju mjesta troška za amortizaciju
 ### Učitavanje naslijeđenog sredstva
 
 Za umetanje imovine u sustav koja već postoji u trenutku početka knjiženja, s povezanom situacijom fonda amortizacije, postupi se na sljedeći način:
-1. Umetne se nova imovina/sredstvo s matičnim podacima o imovini/sredstvu: opis, kategorija itd. (kartica *Detalji*) i obratiti pozornost na **datum početka aktivnosti** koji mora biti neki prijšanji;
+1. Umetne se nova imovina/sredstvo s matičnim podacima o imovini/sredstvu: opis, kategorija itd. (kartica *Detalji*) i obratiti pozornost na **datum početka aktivnosti** koji mora biti neki prijašnji;
 
 2. Na kartici *Imovinske operacije* unese se povijesni trošak tako da se naznači datum kupnje i ispuni polje **Izvorni trošak**;
 
-3. **NE** ručno ispuniti polje *Zbirna linearna amortizacija* u retku (inače bi bilo prebrisano pri sljedećoj amortizaciji), već se umetne redak (ispod) u pregled Amortizacije s godinom koja je jednaka godini koja prethodi godini umetanja i ukupan iznos već obračunate amortizacije, te se postavi flag knjiženo. Amortizacija se mora unijeti u polje troška (nametajući je neovisno o ostalim prethodnim poljima).
+3. **NE** ručno ispuniti polje *Zbirna linearna amortizacija* u retku (inače bi bilo prebrisano pri sljedećoj amortizaciji), već se umetne redak (ispod) u pregled Amortizacije s godinom koja je jednaka godini koja prethodi godini umetanja i ukupan iznos već obračunate amortizacije, te se postavi flag knjiženo. Amortizacija se mora unijeti u polje troška (postavljena je neovisno o ostalim prethodnim poljima).
 
 
 ### Upravljanje raspolaganjem imovinom (slučajevi djelomičnog raspolaganja) 
@@ -111,7 +111,7 @@ Za umetanje imovine u sustav koja već postoji u trenutku početka knjiženja, s
 #### Slučaj imovine koja je već amortizirana 
 Valjani primjer ako se imovinom nije upravljalo putem komponenti ili povećanja, već na nepodijeljen način
 
-1. Automatski računovodstveni unos se ne radi, tako da se može upravljati imovinom/sredstvom i unutar kartice/šifrarnika, a zatim upisati unos amortizacijskog fonda na imovinu zasebno. 
+1. Automatski računovodstveni unos se ne radi, tako da se može upravljati imovinom/sredstvom i unutar kartice/šifarnika, a zatim upisati unos amortizacijskog fonda na imovinu zasebno. 
 2. Da bi se djelomično razdužila imovina, unese se negativan iznos u stupac amortizacije koji odgovara udjelu povijesnog troška prodanog ili uništenog. 
 3. U stupcu Djelomično otuđenje se naznači (**uvijek**) vrijednost po kojoj se prodaje (ili 0,00 ako je uništeno).  
 4. Stupac prenesenog izvornog troška automatski će se ažurirati.
@@ -133,12 +133,12 @@ Izračun koji se radi u stupcu izvornog troška također uzima u obzir kapitalni
 Povijesni trošak 1000, amortiziran za 125.   
 Prodana je polovica po cijeni od 200.  
 
-Prilagođava se rezerviranje izdvojeno za polovicu, dakle -62,50 i prodajna vrijednost (paziti da se ispuni stupac Djelomično otuđeno, inače, ako seispunim ukupno raspolaganje, prisiljava se na preuzimanje cjelokupnog povijesnog troška) od 200. 
+Prilagođava se rezerviranje izdvojeno za polovicu, dakle -62,50 i prodajna vrijednost (paziti da se ispuni stupac Djelomično otuđeno, inače, ako se ispuni ukupno raspolaganje, prisiljava se na preuzimanje cjelokupnog povijesnog troška) od 200. 
 
 Stoga s mora izračunati kapitalni gubitak koji treba unijeti na temelju polovice neto knjigovodstvene vrijednosti, dakle 875 / 2 = 437,50   
 Kapitalni gubitak = 437,50 – 200 = 237,50
 
-Polje prijenosa izvornog troška automatski se izračunava na 500 što je povijesni trošak stvarno preuzet iz knjige sredstava/imoivne za polovicu.  
+Polje prijenosa izvornog troška automatski se izračunava na 500 što je povijesni trošak stvarno preuzet iz knjige sredstava/imovine za polovicu.  
 
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling2.png)

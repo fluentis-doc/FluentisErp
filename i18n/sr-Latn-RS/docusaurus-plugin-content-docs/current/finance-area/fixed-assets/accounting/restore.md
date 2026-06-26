@@ -1,17 +1,13 @@
 ---
-title: Povrati u prethodno stanje 
+title: Povrat
 sidebar_position: 3
 ---
 
-Ova kartica/tab omogućuje pregled knjigovodstvene evidencije dvoklikom u dijelu evidencije, kao i djelomično/potpuno otkazivanje odabranih operacija. Otkazivanje će biti moguće samo ako se razdoblje još može promijeniti (nije izvršen ispis glavne knjige i zatvaranje konta).
+Ova kartica omogućava pregled knjigovodstvenih knjiženja dvostrukim klikom na odgovarajući zapis, kao i delimičan ili potpun povrat odabranih operacija.
+
+Povrat knjiženja moguć je samo ukoliko je obračunski period i dalje otvoren za izmene, odnosno ako nije izvršen ispis glavne knjige i zatvaranje konta.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Traži popis obavljenih knjiženja. |
-| Povrati knjiženje | Esegue il ripristino delle registrazioni contabili selezionate. |
-
-
-
-
-
-
+| Traži | Prikazuje listu izvršenih knjiženja. |
+| Povrati knjiženje | Vraća odabrana knjigovodstvena knjiženja u prethodno stanje. |

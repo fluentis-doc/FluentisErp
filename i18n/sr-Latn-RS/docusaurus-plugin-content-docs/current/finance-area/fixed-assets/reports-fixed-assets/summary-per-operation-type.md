@@ -1,21 +1,16 @@
 ---
-title: Pregled po tipu radnje  
+title: Pregled po vrsti operacije
 sidebar_position: 5
 ---
 
-Iz ovog obrasca moguće je izdvojiti različite vrste operacija koje se odnose na osnovno sredstvo odabranu u prikazu.  
+Ovaj obrazac omogućava izdvajanje i pregled različitih vrsta operacija koje se odnose na odabrana osnovna sredstva.
 
-Obrazac se sastoji od tri dijela:  
+Obrazac se sastoji iz tri dela:
 
-- područje filtra na vrhu (**[za detalje pogledati ovdje](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**); 
+- područja za filtriranje u gornjem delu obrasca (**[više informacija dostupno je ovde](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**);
 
-- pregled kategorije osnovnog sredstva koji omogućuje, nakon aktiviranja flaga **Kategorija osnovnog sredstva** odabir željene kategorije (ili kategorija pritiskom na tipku Ctrl). Ako zastavica nije aktivna, podaci će biti prikazani za sve kategorije;  
+- pregleda kategorija osnovnih sredstava, koji nakon aktiviranja opcije **Kategorija osnovnog sredstva** omogućava izbor jedne ili više kategorija (višestruki izbor pomoću tastera **Ctrl**). Ako opcija nije aktivirana, biće prikazani podaci za sve kategorije;
 
-- donji prikaz omogućuje odabir željene vrste operacija (ili tipova pritiskom na tipku Ctrl). Uz aktivnog flaga **Sve operacije** sve će se vrste uzeti u obzir.  
+- donjeg pregleda, u kojem je moguće odabrati jednu ili više vrsta operacija (takođe pomoću tastera **Ctrl**). Ako je aktivirana opcija **Sve operacije**, izveštaj će obuhvatiti sve vrste operacija.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0vMJpldI7fw" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

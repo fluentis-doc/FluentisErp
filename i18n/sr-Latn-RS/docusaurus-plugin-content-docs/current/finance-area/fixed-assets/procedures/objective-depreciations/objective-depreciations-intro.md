@@ -1,10 +1,8 @@
 ---
-title: Ciljana amortizacija   
+title: Objektivna amortizacija
 sidebar_position: 1
 ---
 
-U ovom obrascu moguće je pristupiti masovnom obračunu objektivne amortizacije na sva osnovna sredstva koja pripadaju kategorijama koje njima upravljaju. Takva se amortizacija ne može obračunati.  
+Ovaj obrazac omogućava masovni obračun **objektivne amortizacije** za sva osnovna sredstva koja pripadaju kategorijama za koje je ova vrsta amortizacije omogućena.
 
-
-
-
+Objektivna amortizacija predstavlja isključivo evidenciju u registru osnovnih sredstava i **ne može se proknjižiti u računovodstvu**.

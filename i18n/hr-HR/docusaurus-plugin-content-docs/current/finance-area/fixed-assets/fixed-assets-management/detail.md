@@ -36,7 +36,7 @@ Nakon toga postoji još niz opcija vidljivih otvaranjem proširenja Extra Data:
 
  
 
-Zadana je vrijednost osnovnih sredstava **u uporabi** (se il flag non è presente, il cespite non potrà essere ammortizzato), lo stato di cespite **usato**  (ako flag nije prisutan, imovina se ne može amortizirati), status iskorištenog osnovnog sredstva ako je oznaka postavljena, amortizacija će se primijeniti samo za prvu godinu kupnje i oznaka Prva godina amortizacije (prisutna u tablici **[Kategorije osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-category)**) neće imati učinka, stoga se postoci primjene amortizacije prve godine neće prepoloviti.; 
+Zadana je vrijednost osnovnih sredstava **u uporabi** (ako oznaka nije aktivirana, za dugotrajnu imovinu neće biti moguće obračunati amortizaciju). Također je moguće definirati status dugotrajne imovine kao „rabljena” (ako flag nije prisutan, imovina se ne može amortizirati), status iskorištenog osnovnog sredstva ako je oznaka postavljena, amortizacija će se primijeniti samo za prvu godinu kupnje i oznaka Prva godina amortizacije (prisutna u tablici **[Kategorije osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-category)**) neće imati učinka, stoga se postoci primjene amortizacije prve godine neće prepoloviti.; 
 
 **U održavanju** znači da se sredstvo treba ubrojiti u ispis održavanja; 
 

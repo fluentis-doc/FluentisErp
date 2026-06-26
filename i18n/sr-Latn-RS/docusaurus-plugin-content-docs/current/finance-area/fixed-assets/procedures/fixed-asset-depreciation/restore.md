@@ -1,18 +1,13 @@
 ---
-title: Povrati u prethodno stanje 
+title: Povratak
 sidebar_position: 3
 ---
 
-Nakon što je izračun obavljen, redci će nestati iz pregleda za pretraživanje u kartici/tabu Amortizacija, a rezultat će biti vidljiv u kartici Povrati u prethodno stanje gdje je moguće poništiti operaciju: ova je mogućnost dopuštena dok se amortizacija ne obračuna.  
+Nakon izvršenog obračuna amortizacije, obrađeni redovi više neće biti prikazani na kartici **Amortizacija**, već će biti dostupni na kartici **Povratak**, gde je moguće poništiti prethodno izvršeni obračun.
 
+Poništavanje je moguće sve dok amortizacija nije proknjižena u računovodstvu.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Traži popis izvršenih obračuna amortizacije. |
-| Povrati u prethodno stanje | Vrši poništavanje izračuna za odabrane retke. |
-
-
-
-
-
-
+| Traži | Pretražuje listu izvršenih obračuna amortizacije. |
+| Povratak | Poništava obračun amortizacije za odabrane redove. |

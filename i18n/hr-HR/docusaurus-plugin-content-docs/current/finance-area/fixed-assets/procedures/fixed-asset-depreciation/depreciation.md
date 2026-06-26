@@ -3,9 +3,9 @@ title: Amortizacija
 sidebar_position: 2
 ---
 
-Prije svega, od temeljne je važnosti upravljati flagom **Inkrementalne operacije**. Budući da se postupkom amortizacije upravlja drugačijom logikom, ako poduzeće koristi inkrementalnu opciju za svoje kategorije, bit će potrebno aktivirati ovu oznaku kako bi se identificirali podaci.
+Prije svega, od temeljne je važnosti upravljati opcijom **Inkrementalne operacije**. Budući da se postupkom amortizacije upravlja drugačijom logikom, ako poduzeće koristi inkrementalnu opciju za svoje kategorije, bit će potrebno aktivirati ovu oznaku kako bi se identificirali podaci.
 
-Stoga, ako postoje obje kategorije osnovnog sredstva s inkrementalnom opcijom i kategorije bez te opcije, amortizacija osnovnog sredstva mora se provesti u dvije faze nakon pretraživanja sa i bez tog flaga.
+Stoga, ako postoje obje kategorije osnovnog sredstva s inkrementalnom opcijom i kategorije bez te opcije, amortizacija osnovnog sredstva mora se provesti u dvije faze nakon pretraživanja sa i bez te opcije.
 
 ![](/img/it-it/finance-area/fixed-assets/procedures/fixed-asset-depreciation/depreciation/image01.png)
 

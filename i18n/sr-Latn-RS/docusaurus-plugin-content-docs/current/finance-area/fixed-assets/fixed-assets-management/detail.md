@@ -1,59 +1,61 @@
 ---
-title: Kartica Detalj
+title: Kartica Detalji
 sidebar_position: 1
 ---
 
-**Status osnovnog sredstva**: statusom se upravlja automatski na temelju operacija povezanih s imovinom/sredstvom i ne bi se trebalo ručno mijenjati. U slučaju prethodnog/prenesenog sredstva, koje također unosi akumuliranu amortizaciju, status će se promijeniti u Djelomično/Potpuno amortizirano. Za točan unos prethodnog/prenesenog sredstva  [**pogledati članak o knjigovodstvenom evidentiranju sredstva**.](/docs/finance-area/ledger-records/records/ledger-record) 
+**Status osnovnog sredstva**: statusom se upravlja automatski na osnovu operacija povezanih sa osnovnim sredstvom i ne bi ga trebalo ručno menjati. Kod prenetog osnovnog sredstva, za koje je uneta i akumulirana amortizacija, status će se automatski promeniti u **Delimično amortizovano** ili **Potpuno amortizovano**. Za ispravan unos prenetog osnovnog sredstva pogledajte članak **[Knjiženje osnovnog sredstva](/docs/finance-area/ledger-records/records/ledger-record)**.
 
+**Početak korišćenja**: prema podrazumevanim postavkama predlaže se današnji datum i predstavlja datum od kojeg je osnovno sredstvo stvarno stavljeno u upotrebu. Tek od tog datuma moguće je obračunavati amortizaciju.
 
-**Početak aktivnosti**, predložen je današnji datum, a predstavlja datum na koji je poduzeće stvarno počelo koristiti sredstvo. Tek od tog datuma bit će moguće amortizirati sredstvo. **Kraj aktivnosti** obično ne bi trebalo biti postavljeno, osim u posebnim slučajevima da se blokira izračun amortizacije i da se imovina više ne prikazuje u knjizi imovine. U normalnom upravljanju imovinom/sredstvom, zapravo, nakon završetka preostale amortizacije, imovina/sredstvo više neće biti prikazano kao amortizirano. **Datumi** koji se odnose na **jamstva/garanciju** imaju informativnu funkciju koja nije povezana ni s kakvim automatskim mehanizmom.  
+**Kraj korišćenja**: po pravilu se ne popunjava, osim u posebnim slučajevima kada je potrebno onemogućiti dalji obračun amortizacije i isključiti osnovno sredstvo iz registra. U uobičajenom radu, nakon završetka amortizacije, sredstvo će se automatski voditi kao potpuno amortizovano.
 
+**Datumi garancije** služe isključivo kao informativni podaci i nisu povezani ni sa jednom automatskom funkcionalnošću.
 
-Podkonto **osnovnog sredstva** za odabranu kategoriju imovine/sredstva automatski se prikazuje u polju Osnovno sredstvo; Šifrom dobavljača osnovnog sredstva program ne upravlja automatski, jer će dobavljači i referentni kupci različitih operacija biti posebno naznačeni unutar njih. 
+Podkonto osnovnog sredstva za izabranu kategoriju automatski se prikazuje u polju **Osnovno sredstvo**.
 
-Polje **Lokacija** poziva istoimenu tablicu i koristi se za pohranjivanje mjesta na kojem se imovina fizički nalazi (npr. sjedište tvrtke), dok je **serijski broj** slobodno tekstualno polje, gdje se može zabilježiti lokacija i serijski broj imovine/sredstva; šifra **zaposlenika** može omogućiti unos osobu koja koristi sredstvo.
+Polje **Dobavljač osnovnog sredstva** ne popunjava se automatski jer se dobavljači i kupci pojedinačnih transakcija evidentiraju zasebno kroz odgovarajuće operacije.
 
-Ovisno o postavkama parametara (Konfiguracija > Parametri > Administracija > Parametri osnovnih sredstava), 'prilagođeni' **postotak amortizacije** također može biti vidljiv za pojedinačnu imovinu, a koji će se koristiti s prioritetom u odnosu na kategoriju kojoj pripada, kao i jedinicu mjere za količine. 
+Polje **Lokacija** koristi istoimenu tabelu za evidentiranje mesta na kojem se osnovno sredstvo fizički nalazi (npr. sedište preduzeća), dok je **Serijski broj** slobodno tekstualno polje namenjeno unosu serijskog broja sredstva.
+
+Polje **Zaposleni** omogućava evidentiranje osobe koja koristi osnovno sredstvo.
+
+U zavisnosti od postavki u **Konfiguracija > Parametri > Administracija > Parametri osnovnih sredstava**, može biti dostupno i polje **Prilagođena stopa amortizacije**. Ako je definisana, koristi se umesto stope amortizacije zadate u kategoriji osnovnog sredstva. Takođe je moguće definisati mernu jedinicu za količinsko praćenje.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image01.png)
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image02.png)
 
- 
-U polju **Vrste odbitaka**, pojedinačno sredstvo može se povezati s prioritetnim tipom poreznog odbitka amortizacije. Padajući izbornik odnosi se na specifičnu tablicu u kojoj se može šifrirati i opis mogućih vrsta odbitka, a u donjoj mreži relativni postotak odbitka koji će se koristiti tijekom izračuna.  
+U polju **Vrsta odbitka** moguće je pojedinačnom osnovnom sredstvu dodeliti posebnu vrstu poreskog odbitka amortizacije. Vrednosti se biraju iz odgovarajuće tabele, u kojoj su definisani tipovi odbitaka i pripadajući procenti koji će se koristiti tokom obračuna amortizacije.
 
-Odjeljak **Trošak centri**: omogućuje dodjeljivanje automatskog postotka vrednovanja amortizacije različitim centrima troška definiranim u tvrtki. Za omogućavanje ovog odjeljka potrebno je aktivirati **flag Omogućen računovodstveni centar** u obrascu Parametri > Administracija > Parametri osnovnih sredstava.
+### Centri troškova
+
+Odeljak **Centri troškova** omogućava raspodelu amortizacije na više centara troškova prema unapred definisanim procentima.
+
+Za korišćenje ove funkcionalnosti potrebno je aktivirati opciju **Omogući centre troškova** u obrascu **Parametri osnovnih sredstava**.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image03.png)
 
- 
+### Dodatni podaci
 
-Nakon toga postoji još niz opcija vidljivih otvaranjem proširenja Extra Data:
-
-
+Otvaranjem odeljka **Dodatni podaci** dostupne su dodatne opcije:
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/detail/image04.png)
 
- 
+Prema podrazumevanim postavkama osnovno sredstvo ima status **U upotrebi**. Ako ova oznaka nije aktivna, za sredstvo neće biti moguće obračunati amortizaciju.
 
-Zadana je vrijednost osnovnih sredstava **u uporabi** (se il flag non è presente, il cespite non potrà essere ammortizzato), lo stato di cespite **usato**  (ako flag nije prisutan, imovina se ne može amortizirati), status iskorištenog osnovnog sredstva ako je oznaka postavljena, amortizacija će se primijeniti samo za prvu godinu kupnje i oznaka Prva godina amortizacije (prisutna u tablici **[Kategorije osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-category)**) neće imati učinka, stoga se postoci primjene amortizacije prve godine neće prepoloviti.; 
+Moguće je označiti i da je sredstvo **Polovno**. U tom slučaju amortizacija će se obračunavati samo tokom prve godine korišćenja, a postavka **Prva godina amortizacije** iz tabele **[Kategorije osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-category)** neće se primenjivati, odnosno stopa amortizacije prve godine neće biti umanjena.
 
-**U održavanju** znači da se sredstvo treba ubrojiti u ispis održavanja; 
+Opcija **Na održavanju** označava da se sredstvo uključuje u izveštaje o održavanju.
 
-**Posuđen** flag je aktivan samo za kategorije nematerijalne imovine i služi za isključivanje njihovog ispisa u pregledu osnovnih sredstava u slučaju da je vrijednost imovine stornirana iz bilance; 
+Opcija **Pozajmljeno** dostupna je samo za kategorije nematerijalne imovine i služi za isključivanje takve imovine iz štampanja registra osnovnih sredstava kada je njena vrednost već otpisana iz bilansa.
 
-**Ukupna amortizacija** omogućuje da se imovini pripiše 100% amortizacije izravno u prvoj godini. Kada je sredstvo/imovina spremljena, ERP će provjeriti ispravnost ove postavke u odnosu na ograničenje postavljeno u kategoriji imovine. Bit će vidljiv status imovine ispisano ili ne, što će značiti da se reference zaglavlja imovine/sredstva ne mogu mijenjati ako su one već umetnute u konačan ispis pregleda osnovnih sredstava;
+Opcija **Jednokratna amortizacija** omogućava obračun 100% amortizacije već u prvoj godini. Prilikom čuvanja sredstva ERP proverava da li je takav obračun dozvoljen prema ograničenjima definisanim u kategoriji osnovnog sredstva.
 
-Flag **Prihod** i **Studija sektora** koristi se za identifikaciju imovine koja se uzima u obzir za posebne porezne obveze.
+Vidljiv je i status koji označava da li je osnovno sredstvo već uključeno u zvaničan ispis registra osnovnih sredstava. Ako jeste, podaci zaglavlja više se ne mogu menjati.
 
+Oznake **Prihod** i **Studija sektora** koriste se za označavanje osnovnih sredstava koja ulaze u posebne poreske obračune.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Spremi | Spremanje sredstva/imovine, obavezno dodijeliti broj sredstvu i aktivirati različite opcije. |
-|  [Dokumenti](/docs/guide/common/operations-with-data/document-manager)  | Upravljanje arhiviranjem dokumenata vezanih uz obrazac u uporabi. |
-
-
-
-
-
-
+| Sačuvaj | Čuva osnovno sredstvo, dodeljuje mu broj i čuva izabrane postavke. |
+| [Dokumenti](/docs/guide/common/operations-with-data/document-manager) | Upravljanje dokumentima povezanim sa osnovnim sredstvom. |

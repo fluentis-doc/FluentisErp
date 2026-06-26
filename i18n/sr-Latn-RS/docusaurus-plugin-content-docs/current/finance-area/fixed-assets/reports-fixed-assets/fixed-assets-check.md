@@ -1,20 +1,37 @@
 ---
-title: Kontrola osnovnih sredstava  
+title: Kontrola osnovnih sredstava
 sidebar_position: 4
 ---
 
-Ovim izvješćem moguće je izvršiti bilancu, tj. provjeru usklađenja, konto po konto, između zapisa u administraciji (računovodstvu) koji se odnose na odabrano sredstvo i stanja knjige osnovnih sredstava. Ukupni iznosi prisutni u modulu osnovnih sredstava uspoređuju se s ukupnim iznosima prisutnim u glavnoj knjizi. 
+Ovaj izveštaj omogućava proveru usklađenosti između podataka u modulu **Osnovna sredstva** i podataka u **Glavnoj knjizi**, konto po konto.
 
-Rezultat izvješća bit će popis knjiženih računa (identificiranih u kategorijama osnovnih sredstava odabranih u obrascu i valoriziranih u modulu osnovnih sredstva) s povezanim ukupnim vrijednostima zabilježenim u dva Fluentis modula, kako bi se olakšala provjera usklađenosti
+Ukupni iznosi evidentirani u modulu osnovnih sredstava upoređuju se sa odgovarajućim iznosima u glavnoj knjizi radi provere njihove usklađenosti.
 
-Obrazac za parametriziranje ispisa sličan je onom kod drugih ispisa dostupnih u modulu osnovnih sredstava. Posebno se ističu 3 polja:  
+Rezultat izveštaja predstavlja listu konta (definisanih u kategorijama odabranih osnovnih sredstava i korišćenih u modulu osnovnih sredstava), zajedno sa ukupnim vrednostima evidentiranim u oba Fluentis modula i eventualnim razlikama između njih.
 
-**Referentni datum**: postavljen je prema zadanim postavkama s današnjim datumom i konačni je datum koji će Fluentis koristiti za traženje podataka unutar modula osnovnih sredstava. U biti, uzimaju se sve vrijednosti osnovnih sredstavakoje su manje ili jednake ovom datumu (dakle sva osnovna sredstva do ovog datuma), ali će se očitati amortizacija u godini samo do ovog datuma.
+Obrazac za definisanje parametara izveštaja sličan je ostalim izveštajima dostupnim u modulu osnovnih sredstava.
 
+Posebno su važna sledeća polja:
 
-**Od datuma do datuma**: obavezno kako bi se moglo pokrenuti izvješće, biti će razdoblje pretraživanja podataka unutar računovodstva: za svaki podkonto (osnovno sredstvo, fond, amortizacija) koji se koristi u osnovnih sredstava odabranih kategorija, saldo će se izračunati unutar ovog datumskog raspona. S ciljem provjere stanja na kraju godine, referentni datum se postavi kao 31/12/gggg i raspon kao 01/01/gggg – 31/12/gggg.  
+**Referentni datum**  
+Podrazumevano je postavljen tekući datum i predstavlja krajnji datum do kojeg Fluentis uzima podatke iz modula osnovnih sredstava.
+U obračun će biti uključena sva osnovna sredstva čiji su podaci evidentirani do tog datuma, dok će amortizacija za tekuću godinu biti obračunata samo do izabranog referentnog datuma.
 
-**Flag Detalji operacija**: aktiviranjem ove zastavice kreira se detalj za svaki datum kako bi se razumjelo postoji li relevantno kretanje u  kartici osnovnih sredstava za svaki datum bilježenja. 
+**Period od – do**  
+Obavezno polje za pokretanje izveštaja. Definiše period u kojem će se pretraživati podaci u glavnoj knjizi.
+Za svaki podkonto korišćen u odabranim kategorijama osnovnih sredstava (konto osnovnog sredstva, konto ispravke vrednosti i konto amortizacije) obračunava se saldo u okviru zadatog vremenskog perioda.
 
-Izvješće prikazuje popis računa korištenih u osnovnom sredstvu odabranih kategorija, stupac s vrijednošću dobivenom iz modula osnovnih sredstava, onu iz računovodstva i zatim sve razlike između te dvije vrijednosti
+Za proveru stanja na kraju poslovne godine preporučuje se sledeće podešavanje:
 
+- **Referentni datum:** 31.12.gggg
+- **Period:** od 01.01.gggg do 31.12.gggg
+
+**Opcija Detalji operacija**  
+Aktiviranjem ove opcije izveštaj prikazuje detalje po datumima, što omogućava lakšu proveru da li za određeni datum postoji odgovarajuće kretanje u kartici osnovnog sredstva.
+
+Izveštaj prikazuje:
+
+- listu konta korišćenih za odabrane kategorije osnovnih sredstava;
+- vrednost evidentiranu u modulu **Osnovna sredstva**;
+- vrednost evidentiranu u **Glavnoj knjizi**;
+- eventualne razlike između ova dva iznosa.

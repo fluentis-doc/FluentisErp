@@ -20,7 +20,7 @@ Prioritet je moguće promijeniti odabirom kriterija i korištenjem naredbi koje 
 
 Prioritet čitanja kriterija je odozgo prema dolje.  
 
-(Sortiranje će se izvršiti prvo po kategoriji pa s istom kategorijom po vrsti svojstva, s istom vrstom svojstva na temelju predšifre i broja itd...)
+(Sortiranje će se izvršiti prvo po kategoriji pa s istom kategorijom po vrsti svojstva, s istom vrstom svojstva na temelju *predšifre* i broja itd...)
  
 Flag **Fiskalni podaci** prikazuje dodatne stupce koji sadrže podatke koji se odnose na poreznu amortizaciju.  
 

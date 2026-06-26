@@ -1,70 +1,75 @@
 ---
-title: Kartica imovinske operacije
+title: Kartica Operacije na osnovnom sredstvu
 sidebar_position: 2
 ---
 
-Unutar ove kartice unose se detalji raznih operacija u knjizi imovine.
+Na ovoj kartici unose se detalji svih operacija koje se odnose na osnovno sredstvo.
 
-Stoga predstavlja, zajedno s tabom Detalji, glavnu sekciju kartice imovine.
+Zajedno sa karticom **Detalji**, predstavlja glavni deo kartice osnovnog sredstva.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Nova operacija | Aktivira kursor u prvoj tablici imovinskih operacija. |
-| Brisanje operacije | Briše odabranu operaciju u tablici imovinskih operacija. |
-| Nuovo ammortamento | Aktivira kursor u drugoj tablici amortizacija. |
-| Brisanje amortizacije | Briše odabranu amortizaciju iz tablice amortizacija. |
-| Automatsko knjiženje amortizacije | Izračunava amortizaciju za aktivu u upotrebi za godinu postavljenu u polju iznad tablice amortizacija. |
-| Unos troškovnog centra (cdc) | Aktivira kursor u tablici troškovnih centara. |
-| Brisanje troškovnog centra | Briše odabrani unos troškovnog centra iz tablice. |
-| Izračun troškovnih centara | Izvršava izračun troškovnih centara za iznos odabrane stavke amortizacije. |
-| Unos naloga/projekta | Aktivira kursor u tablici naloga/projekata. |
-| Brisanje naloga/projekta | Briše odabrani unos naloga/projekta iz tablice. |
-| Izračun naloga/projekta | Izvršava izračun za odabrani red amortizacije prema pripadajućem nalogu/projektu. |
-| Detalji revalorizacije | Otvara upravljanje detaljima revalorizacije. Tipka je aktivna samo ako je flag „revalorizacija” postavljena za kategoriju aktive u upotrebi. |
-| Dokumenti | Upravljanje dokumentacijom povezanoj s trenutnim prikazom (maskom). |
+| Nova operacija | Aktivira novi red u tabeli operacija na osnovnom sredstvu. |
+| Obriši operaciju | Briše izabranu operaciju iz tabele operacija. |
+| Novi obračun amortizacije | Aktivira novi red u tabeli amortizacija. |
+| Obriši amortizaciju | Briše izabrani obračun amortizacije iz tabele amortizacija. |
+| Automatski obračun amortizacije | Obračunava amortizaciju za osnovno sredstvo u upotrebi za godinu zadatu u polju iznad tabele amortizacija. |
+| Dodaj centar troška | Aktivira novi red u tabeli centara troškova. |
+| Obriši centar troška | Briše izabrani unos centra troška iz tabele. |
+| Obračun centara troškova | Izvršava raspodelu iznosa izabrane stavke amortizacije po centrima troškova. |
+| Dodaj nalog/projekat | Aktivira novi red u tabeli naloga/projekata. |
+| Obriši nalog/projekat | Briše izabrani unos naloga/projekta iz tabele. |
+| Obračun naloga/projekta | Izvršava raspodelu izabrane stavke amortizacije prema odgovarajućem nalogu/projektu. |
+| Detalji revalorizacije | Otvara upravljanje detaljima revalorizacije. Dugme je aktivno samo ako je za kategoriju osnovnog sredstva omogućena opcija **Revalorizacija**. |
+| Dokumenti | Upravljanje dokumentima povezanim sa trenutnim obrascem. |
 
-### GORNJI PREGLED
+## Gornji pregled
 
-Ovaj pregled se koristi kako za operacije nabave (ili povećanja) imovine, tako i za operacije prodaje (ukupno ili djelomično).
+Ovaj pregled koristi se za evidentiranje nabavke (ili povećanja vrednosti) osnovnog sredstva, kao i za potpuno ili delimično otuđenje osnovnog sredstva.
+Prvi red se najčešće odnosi na početnu nabavku osnovnog sredstva. Potrebno je uneti **datum operacije**, njen **redni broj** i odgovarajući **iznos**.
+Moguće vrednosti su:
+- **Izvorni trošak** – ako se iznos odnosi na nabavku osnovnog sredstva, predstavlja njegovu nabavnu vrednost;
+- **Otuđenje** – ako se iznos odnosi na potpuno otuđenje, predstavlja prodajnu vrednost;
+- **Delimično otuđenje** – ako se iznos odnosi na delimično otuđenje, predstavlja prodajnu vrednost otuđenog dela.
 
-Prvi redak se uglavnom odnosi na početnu kupnju imovine/sredstva: **datum operacije**, njen **progresivni** broj i naknadni **iznos** upisuju se u odgovarajući stupac: 
+Ako je omogućeno vođenje količina, potrebno je popuniti i polje **Količina**.
 
-**Izvorni trošak**: ako se iznos odnosi na samu transakciju kupnje, predstavlja i početni trošak;
-
-**Otuđenje**: ako se iznos odnosi na ukupno otuđenje, predstavlja i prodajnu vrijednost;
-
-**Djelomično otuđenje**: ako se iznos odnosi na djelomično otuđenje, predstavlja i prodajnu vrijednost;
-
- 
-
-Ako je aktivno upravljanje količinama potrebno je popuniti i polje **količine**.
-
- 
-:::danger BILJEŠKA:
-U slučaju učitavanja već postojeće povijesne imovine/sredstva, iznos sredstava amortizacije koji su već izračunati **NE** smije se unijeti izravno u ovaj odjeljak, već se prijaviti u odjeljku u nastavku (umetanjem ukupne vrijednosti akumulirane amortizacije) **sa statusom *Knjiženo*** kako bi se osiguralo da ovaj odjeljak ponovno izračunava ERP. 
+:::danger NAPOMENA
+Prilikom unosa već postojećeg osnovnog sredstva iz prethodnih perioda, iznos prethodno obračunate amortizacije **ne sme** se unositi u ovaj odeljak.
+Ukupna vrednost već obračunate (akumulirane) amortizacije unosi se u odeljku za amortizaciju, sa statusom **Knjiženo**, kako bi ERP mogao pravilno da nastavi obračun amortizacije.
 :::
 
-**![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image01.png)**
+![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image01.png)
 
-Umetanjem retka koji se odnosi na neku operaciju nad imovinom/sredstvom (npr. kupnja) i postavljanjem relevantnog iznosa u odgovarajući stupac (npr. izvorni trošak u slučaju kupnje), polje Iznos za amortizirati automatski ažurira program.  
+Nakon unosa reda koji se odnosi na operaciju nad osnovnim sredstvom (na primer, nabavka) i unosa odgovarajućeg iznosa u odgovarajuću kolonu (na primer, **Izvorni trošak** u slučaju nabavke), program automatski ažurira polje **Iznos za amortizaciju**.
 
-**Iznos za amortizirati**: vrijednost "učitavanja" (kupnja ili u svakom slučaju učitani povijesni trošak) na temelju koje se izračunava amortizacija;
+**Iznos za amortizaciju**: vrednost nabavke (ili prenetog istorijskog troška) na osnovu koje se obračunava amortizacija.
+**Knjigovodstvena vrednost**: Nabavna vrednost − Akumulirana amortizacija.
+**Već amortizovano**: privremena vrednost koja se ažurira prilikom obračuna amortizacije, a zatim se vraća na nulu nakon ažuriranja ukupne akumulirane amortizacije (tokom knjiženja amortizacije).
 
-**Knjižna vrijednost**: Nabavna cijena - Akumulirana amortizacija;
+## Središnji pregled – Amortizacije
 
-**Već amortiziran**: Privremena vrijednost koja će se ažurirati u vrijeme obračuna amortizacije, a zatim će se vratiti na nulu ažuriranjem ukupne akumulirane amortizacije (u vrijeme obračuna amortizacije).
+Ovaj pregled prikazuje obračune amortizacije za osnovno sredstvo. Unos amortizacije može biti ručni ili automatski.
 
+### Ručni unos
 
-### SREDIŠNJI PRIKAZ Amortizacije:
+Kod ručnog unosa potrebno je navesti:
+- referentnu godinu,
+- redni broj (samo za kategorije koje nisu inkrementalne; kod ostalih kategorija polje je skriveno jer je amortizacija uvek povezana sa rednim brojem operacije),
+- vrstu amortizacije.
 
-predstavlja popis obračunate amortizacije za sredstvo/imovinu: unos može biti ručni ili automatski.  
-
-- Ručni unos zahtijeva naznaku referentne godine, progresivni referentni broj retka (ali samo za neinkrementalne kategorije, za ostale je polje skriveno jer će amortizacija uvijek biti povezana s progresivnim brojem) i vrstu amortizacije koja se primjenjuje. Ovdje će ERP izvijestiti o postavkama referentne kategorije imovine, s kontom i podkontom za postotak i iznose. Na kraju mreže nalazi se referentni datum amortizacije, predložen kao kraj financijske godine referentne računovodstvene godine retka, te na kraju iznosi odbitnog i neodbitnog dijela amortizacije.  
+ERP zatim automatski preuzima postavke iz kategorije osnovnog sredstva, uključujući konta, podkonta, stopu amortizacije i iznose.
+Na kraju reda prikazuju se:
+- datum amortizacije (podrazumevano poslednji dan poslovne godine),
+- odbitni deo amortizacije,
+- neodbitni deo amortizacije.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image02.png)
 
+### Automatski unos
 
-- Automatsko umetanje uključuje definiranje referentne godine u polju iznad i korištenje tipke *Izvrši automatsku amortizaciju* koji će prijaviti očekivane podatke o amortizaciji u kategoriji za cjelokupno sredstvo u upotrebi.
+Kod automatskog obračuna dovoljno je definisati referentnu godinu u polju iznad tabele i koristiti dugme **Izvrši automatsku amortizaciju**.
+Program će automatski kreirati obračun amortizacije za celo osnovno sredstvo prema pravilima definisanim u njegovoj kategoriji.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image03.png)
 
@@ -72,92 +77,102 @@ predstavlja popis obračunate amortizacije za sredstvo/imovinu: unos može biti 
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image05.png)
 
- 
-
-Izračun amortizacije bit će prikazan u stupcu ***Već amortiziran*** gornjeg prikaza koji će služiti za označavanje iznosa koji još nije konačan. Samo uz naznaku flaga ***Knjiženo***, u različitim redovima, veći će se iznosi pripisati stupcu fonda koji se odnosi na samu vrstu amortizacije. 
+Obračunata amortizacija prikazuje se u koloni **Već amortizovano** u gornjem pregledu, gde predstavlja privremeni iznos koji još nije konačno knjižen.
+Tek kada se na redu označi opcija **Knjiženo**, iznos se prenosi u odgovarajući fond amortizacije za izabranu vrstu amortizacije.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image06.png)
-
- 
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image07.png)
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/image08.png)
 
- 
-:::danger BILJEŠKA
-Ručno umetanje flaga se **NE** bilježi u računovodstvu (zbog toga postoji postupak obračuna amortizacije). Obično se koristi samo za početno ručno učitavanje povijesne situacije, za što je obično potrebno jedno umetanje koje se sastoji od ukupnog iznosa amortiziranog u godini koja prethodi početku korištenja novog softvera, a ne od cjelokupnog detalja amortizacije.  
+:::danger NAPOMENA
+Ručno unete amortizacije sa oznakom **Knjiženo** **ne knjiže se automatski u računovodstvo**. Za to se koristi posebna procedura za obračun amortizacije.
+Ručni unos se najčešće koristi samo prilikom početnog prenosa istorijskih podataka, kada je potrebno uneti ukupnu vrednost već obračunate amortizacije iz godine koja prethodi početku korišćenja novog ERP sistema, a ne detaljan pregled amortizacije po godinama.
 :::
 
-Prilikom spremanja retka s flagom *Knjiženo*, Fluentis će pitati za povezivanje postojećeg računovodstvenog zapisa, poruka na koju se obično odgovara negativno (u slučaju obnavljanja povijesnih podataka).
+Prilikom čuvanja reda sa oznakom **Knjiženo**, Fluentis će ponuditi povezivanje sa postojećim računovodstvenim knjiženjem. Kod prenosa istorijskih podataka na ovo pitanje se uobičajeno odgovara **Ne**.
+Oznaka **Fiskalno** omogućava poresko evidentiranje stavke amortizacije i podrazumevano se preuzima iz kategorije osnovnog sredstva.
+U pojedinim slučajevima može se koristiti i ručno, na primer za evidentiranje ubrzane amortizacije u registru osnovnih sredstava ili poreske amortizacije koja se koristi isključivo prilikom obračuna poreza.
+Poresko evidentiranje zasniva se na poljima **Odbitni iznos** i **Neodbitni iznos**, koja se automatski popunjavaju prema procentu poreske priznatosti definisanom na osnovnom sredstvu ili njegovoj kategoriji.
+Poslednji odeljak prikazuje raspodelu amortizacije po centrima troškova za stavku amortizacije izabranu u srednjem pregledu.
 
-Flag "Fiskalni" omogućuje fiskalno upravljanje amortizacijskom stavkom te se predlaže na temelju istog flaga postavljenog u kategoriji imovine. U nekim slučajevima može se koristiti ručno za bilježenje u knjizi imovine/sredstava, ciklusa ubrzane amortizacije koja se koristi u redovnom proračunu i fiskalne amortizacije kojom se upravlja samo za izračun poreza. Fiskalno upravljanje, s druge strane, postiže se valorizacijom polja s odbitnim/neodbitnim iznosima amortizacije, koji se automatski valoriziraju na temelju postotka odbitka povezanog s imovinom/sredstvom ili povezanom kategorijom.
+### Učitavanje prenetog osnovnog sredstva
 
-Posljednji odjeljak sadrži detalje o vrednovanju mjesta troška za amortizaciju odabranu u srednjem prikazu.
+Za unos osnovnog sredstva koje već postoji u trenutku početka korišćenja sistema, zajedno sa postojećom akumuliranom amortizacijom, potrebno je postupiti na sledeći način:
+1. Kreirati novo osnovno sredstvo i uneti njegove osnovne podatke (opis, kategoriju i ostalo) na kartici **Detalji**, pri čemu treba obratiti pažnju da **Datum početka korišćenja** bude datum iz prethodnog perioda.
+2. Na kartici **Operacije na osnovnom sredstvu** uneti istorijsku nabavnu vrednost tako što će se uneti datum nabavke i popuniti polje **Izvorni trošak**.
+3. Polje **Ukupna linearna amortizacija** u redu **NE** treba popunjavati ručno (jer bi bilo prepisano prilikom sledećeg obračuna amortizacije). Umesto toga, u tabeli **Amortizacije** potrebno je dodati novi red sa godinom koja prethodi godini početka korišćenja sistema, uneti ukupan iznos već obračunate amortizacije i označiti opciju **Knjiženo**.
 
+Amortizacija se unosi u polje troška i evidentira se nezavisno od ostalih prethodno unetih vrednosti.
 
-### Učitavanje naslijeđenog sredstva
+## Upravljanje otuđenjem osnovnog sredstva (slučajevi delimičnog otuđenja)
 
-Za umetanje imovine u sustav koja već postoji u trenutku početka knjiženja, s povezanom situacijom fonda amortizacije, postupi se na sljedeći način:
-1. Umetne se nova imovina/sredstvo s matičnim podacima o imovini/sredstvu: opis, kategorija itd. (kartica *Detalji*) i obratiti pozornost na **datum početka aktivnosti** koji mora biti neki prijšanji;
+### Osnovno sredstvo koje je u potpunosti amortizovano
 
-2. Na kartici *Imovinske operacije* unese se povijesni trošak tako da se naznači datum kupnje i ispuni polje **Izvorni trošak**;
+Ovaj primer važi kada se osnovnim sredstvom nije upravljalo preko komponenti ili povećanja vrednosti, već kao jedinstvenom celinom.
+1. Automatsko računovodstveno knjiženje se ne koristi, tako da se osnovnim sredstvom upravlja direktno u kartici osnovnog sredstva, dok se knjiženje fonda amortizacije evidentira zasebno.
+2. Za delimično otuđenje potrebno je uneti **negativan iznos** u kolonu amortizacije koji odgovara delu istorijskog troška prodatog ili rashodovanog osnovnog sredstva.
+3. U kolonu **Delimično otuđenje** potrebno je **uvek** uneti prodajnu vrednost (ili **0,00** ako je sredstvo rashodovano).
+4. Kolona **Preneti izvorni trošak** automatski će se ažurirati.
 
-3. **NE** ručno ispuniti polje *Zbirna linearna amortizacija* u retku (inače bi bilo prebrisano pri sljedećoj amortizaciji), već se umetne redak (ispod) u pregled Amortizacije s godinom koja je jednaka godini koja prethodi godini umetanja i ukupan iznos već obračunate amortizacije, te se postavi flag knjiženo. Amortizacija se mora unijeti u polje troška (nametajući je neovisno o ostalim prethodnim poljima).
+### Osnovno sredstvo koje nije u potpunosti amortizovano
 
-
-### Upravljanje raspolaganjem imovinom (slučajevi djelomičnog raspolaganja) 
-
-#### Slučaj imovine koja je već amortizirana 
-Valjani primjer ako se imovinom nije upravljalo putem komponenti ili povećanja, već na nepodijeljen način
-
-1. Automatski računovodstveni unos se ne radi, tako da se može upravljati imovinom/sredstvom i unutar kartice/šifrarnika, a zatim upisati unos amortizacijskog fonda na imovinu zasebno. 
-2. Da bi se djelomično razdužila imovina, unese se negativan iznos u stupac amortizacije koji odgovara udjelu povijesnog troška prodanog ili uništenog. 
-3. U stupcu Djelomično otuđenje se naznači (**uvijek**) vrijednost po kojoj se prodaje (ili 0,00 ako je uništeno).  
-4. Stupac prenesenog izvornog troška automatski će se ažurirati.
-
-
-#### Slučaj da imovina NIJE u potpunosti amortizirana 
-
-Početna situacija
+Početno stanje:
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling1.png)
 
-Da bi se djelomično razdužila imovina, unese se negativan iznos u stupac vrijednosti koji odgovara dijelu izdvojenog fonda proporcionalnom povijesnom trošku prodanog ili uništenog sredstva/imovine. 
+Za delimično otuđenje potrebno je uneti **negativan iznos** u kolonu vrednosti koji odgovara delu izdvojenog fonda amortizacije proporcionalnom istorijskom trošku prodatog ili rashodovanog dela osnovnog sredstva. Prilikom izračunavanja vrednosti u koloni **Izvorni trošak**, sistem uzima u obzir i kapitalni dobitak ili gubitak od prodaje, koji je potrebno izračunati na osnovu neto knjigovodstvene vrednosti dela koji se prodaje.
 
-Da bi se djelomično razdužila imovina, unese se negativan iznos u stupac vrijednosti koji odgovara dijelu izdvojenog fonda proporcionalnom povijesnom trošku prodanog ili uništenog sredstva/imovine. 
+### Primer 1
 
-Izračun koji se radi u stupcu izvornog troška također uzima u obzir kapitalni dobitak/gubitak od prodaje, koji se mora unijeti uzimajući u obzir dio neto knjigovodstvene vrijednosti koji se prodaje.  
+Istorijski trošak: **1.000**
+Akumulirana amortizacija: **125**
+Prodaje se polovina sredstva po ceni od **200**.
+Potrebno je umanjiti fond amortizacije za polovinu njegovog iznosa:
+- amortizacija: **−62,50**
+- prodajna vrednost (**Delimično otuđenje**): **200**
 
-**Primjer 1**:
-Povijesni trošak 1000, amortiziran za 125.   
-Prodana je polovica po cijeni od 200.  
+> **Napomena:** Obavezno popuniti kolonu **Delimično otuđenje**. Ako se popuni kolona **Ukupno otuđenje**, sistem će tretirati operaciju kao potpuno otuđenje i preuzeti ceo istorijski trošak.
 
-Prilagođava se rezerviranje izdvojeno za polovicu, dakle -62,50 i prodajna vrijednost (paziti da se ispuni stupac Djelomično otuđeno, inače, ako seispunim ukupno raspolaganje, prisiljava se na preuzimanje cjelokupnog povijesnog troška) od 200. 
+Neto knjigovodstvena vrednost sredstva iznosi:
+**1.000 − 125 = 875**
 
-Stoga s mora izračunati kapitalni gubitak koji treba unijeti na temelju polovice neto knjigovodstvene vrijednosti, dakle 875 / 2 = 437,50   
-Kapitalni gubitak = 437,50 – 200 = 237,50
+Pošto se prodaje polovina sredstva:
+**875 / 2 = 437,50**
 
-Polje prijenosa izvornog troška automatski se izračunava na 500 što je povijesni trošak stvarno preuzet iz knjige sredstava/imoivne za polovicu.  
+Kapitalni gubitak iznosi:
+**437,50 − 200 = 237,50**
 
+Polje **Preneti izvorni trošak** automatski će biti obračunato na **500**, što predstavlja polovinu istorijskog troška koja se uklanja iz registra osnovnih sredstava.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling2.png)
 
-**Primjer 2**:
-Povijesni trošak 1000, amortiziran za 125.   
-Otuđena polovicu po cijeni od 0,00  
+### Primer 2
 
-Prilagođava se rezerviranje izdvojeno za polovicu, dakle -62,50 i ima se prodajna vrijednost (paziti da se ispunite stupac Djelomično otuđeno, inače ako se ispuni ukupno otpuštanje, prisiljava se na preuzimanje cjelokupnog povijesnog troška) od 0,00. 
+Istorijski trošak: **1.000**
+Akumulirana amortizacija: **125**
+Otuđuje se polovina sredstva po ceni od **0,00**.
+Potrebno je umanjiti fond amortizacije za polovinu njegovog iznosa:
+- amortizacija: **−62,50**
+- prodajna vrednost (**Delimično otuđenje**): **0,00**
 
-Stoga se mora izračunati kapitalni gubitak koji treba unijeti na temelju polovice neto knjigovodstvene vrijednosti, dakle 875 / 2 = 437,50   
-Kapitalni gubitak = 437,50 – 0 = 437,50
+> **Napomena:** Obavezno popuniti kolonu **Delimično otuđenje**. Ako se popuni kolona **Ukupno otuđenje**, sistem će tretirati operaciju kao potpuno otuđenje i preuzeti ceo istorijski trošak.
+Neto knjigovodstvena vrednost sredstva iznosi:
+**1.000 − 125 = 875**
 
-Polje prijenosa izvornog troška automatski se izračunava na 500 što je povijesni trošak stvarno preuzet iz knjige sredstava/imovine za polovicu. 
+Pošto se otuđuje polovina sredstva:
+**875 / 2 = 437,50**
+
+Kapitalni gubitak iznosi:
+**437,50 − 0 = 437,50**
+
+Polje **Preneti izvorni trošak** automatski će biti obračunato na **500**, što predstavlja polovinu istorijskog troška koja se uklanja iz registra osnovnih sredstava.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations/selling3.png)
 
-:::tip[Prijedlog]
-Prodaja (alijenacija) osnovnog sredstva, osobito u jednostavnijim slučajevima potpune prodaje, može se automatiziranije obraditi putem knjiženja prodaje s kontnim događajem koji ima omogućenu funkcionalnost za osnovna sredstva i s vrstom operacije Potpuna (ili djelomična) alijenacija.  
+:::tip[Predlog]
+Prodaja (otuđenje) osnovnog sredstva, naročito u jednostavnijim slučajevima potpunog otuđenja, može se automatizovanije obraditi putem knjiženja prodaje sa kontnim događajem koji ima omogućenu funkcionalnost za osnovna sredstva i sa vrstom operacije **Potpuno** (ili **Delimično**) otuđenje.
 
-U knjiženju će se prikazati [**odgovarajući odjeljak Osnovno sredstvo**](/docs/finance-area/ledger-records/records/ledger-record)
+Prilikom knjiženja biće prikazan odgovarajući odeljak **[Osnovno sredstvo](/docs/finance-area/ledger-records/records/ledger-record)**.
 :::
