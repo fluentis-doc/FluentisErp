@@ -3,19 +3,13 @@ title: Filter knjiženja
 sidebar_position: 2
 ---
 
-Ova kartica prikazuje popis zapisa/knjiženja koji su namijenjeni subjektima definiranim kao Intrastat, tj. **imaju popunjenu Intrastat karticu (ova kartica je vidljiva ako predložak knjiženja ima aktivnu oznaku INTRASTAT knjiženja).**  
+Ova kartica prikazuje spisak zapisa/knjiženja namenjenih partnerima definisanim kao Intrastat, odnosno onima koji imaju popunjenu **Intrastat** karticu (kartica je vidljiva samo ako šablon knjiženja ima aktiviranu oznaku **Intrastat**).
 
-Odabir se potvrđuje pritiskom na tipku **Sljedeće** koja se nalazi na vrpci, što će premjestiti prikaz na drugu karticu **Parametri**.
+Izbor se potvrđuje klikom na dugme **Sledeće** na traci sa alatkama, čime se prelazi na karticu **Parametri**.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za pretraživanje popisa Intrastat knjiženja. |
-| Označi sve | Omogućuje odabir svih redaka u tablici rezultata pretraživanja. |
-| Odznači sve | Omogućuje poništavanje odabira svih redaka u tablici rezultata pretraživanja. |
-| Sljedeće | Prenosi odabrane retke na karticu Parametri (gdje će se prikazati pregled redaka Intrastat obrasca radi dopune mogućih nedostajućih podataka). |
-
-
-
-
-
-
+| Traži | Dugme za pretragu liste Intrastat knjiženja. |
+| Označi sve | Omogućava izbor svih redova u tabeli rezultata pretrage. |
+| Poništi izbor | Omogućava poništavanje izbora svih redova u tabeli rezultata pretrage. |
+| Sledeće | Prenosi odabrane redove na karticu **Parametri**, gde se prikazuje pregled redova Intrastat obrasca radi dopune eventualno nedostajućih podataka. |

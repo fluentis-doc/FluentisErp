@@ -3,9 +3,9 @@ title: Kreiranje Intrastat1
 sidebar_position: 1
 ---
 
-LINK:
+LINKOVI:
 
-**[Naslovnica](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1)**
+**[Naslovna](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1)**
 
 **[Bis](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-bis)**
 
@@ -15,24 +15,12 @@ LINK:
 
 **[Quinquies](/docs/finance-area/declarations/intrastat/create-intrastat1/intra1-quinquies)**
 
- 
+Zaglavlje Intrastat obrasca sadrži sledeće podatke:
 
-Zaglavlje Intrastat obrazaca predviđa navođenje:
+- periodičnost izveštavanja: **mesečno** ili **tromesečno**;
+- referentni period (godina i mesec);
+- datum podnošenja i broj Intrastat obrasca.
 
-- periodičnosti izvještaja: mjesečna / tromjesečna
-
-- referentnog razdoblja (godina i mjesec)  
-
-- datuma podnošenja i broja Intrastat obrasca   
-
-Flag za pojednostavljenu prijavu onemogućuje navođenje statističke vrijednosti, šifre prijevoza i načina prijevoza.  
+Aktiviranjem oznake **Pojednostavljena prijava** onemogućava se unos **statističke vrednosti**, **šifre prevoza** i **načina prevoza**.
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/create-intrastat1/image01.png)
-
- 
-
-
-
-
-
-

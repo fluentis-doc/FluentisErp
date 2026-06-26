@@ -1,22 +1,14 @@
 ---
-title: Kreiranje iz zapisa   
+title: Kreiranje iz knjiženja
 sidebar_position: 1
 ---
 
-Tipka **Kreiranje iz knjiženja/zapisa** otvara vođeni postupak posvećen preuzimanju podataka iz glavne knjige, uz prethodno odgovarajuće omogućavanje **Intrastat upravljanja** u predlošku knjiženja (flag ***Intrastat*** na kartici *Detalji knjiženja*).
+Dugme **Kreiranje iz knjiženja** pokreće vođenu proceduru za preuzimanje podataka iz glavne knjige, uz prethodno omogućavanje opcije **Intrastat** u šablonu knjiženja (oznaka **Intrastat** na kartici *Detalji knjiženja*).
 
-Kartice:
+Procedura se sastoji od sledećih kartica:
 
-**[Filtar knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/invoices-filter)**
+**[Filter knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/invoices-filter)**
 
 **[Parametri](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/parameters)**
 
 **[Povrat](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/restore)**
-
- 
-
-
-
-
-
-

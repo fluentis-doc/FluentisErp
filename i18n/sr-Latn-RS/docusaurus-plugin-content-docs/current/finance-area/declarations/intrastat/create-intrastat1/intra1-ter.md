@@ -3,21 +3,15 @@ title: Intra1 ter
 sidebar_position: 4
 ---
 
-Odjeljak 'Ter' Intrastat prijava sadrži ispravke prijava za prethodna razdoblja koje se odnose na isporuku dobara.
-Ovaj se odjeljak automatski popunjava putem postupka, ali je dopuštena ručna izmjena i nadopuna.  
+Odeljak **ter** Intrastat prijave sadrži ispravke prijava za prethodne periode koje se odnose na isporuke robe.
 
-Na traci izbornika nalazi se tipka za grupiranje redaka na temelju podataka o poslovnom partneru.
+Ovaj odeljak se automatski popunjava putem odgovarajuće procedure, ali je dozvoljeno i ručno uređivanje i dopunjavanje podataka.
 
+Na traci sa alatkama nalazi se dugme za grupisanje redova prema podacima o poslovnom partneru.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Spremi | Tipka kojom se sprema prijava. |
-|  [Automatsko kreiranje](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Tipka koja pokreće čarobnjak za preuzimanje podataka iz područja prodaje. |
-|  [Kreiranje iz knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Tipka koja pokreće čarobnjak za preuzimanje podataka iz računovodstvenih knjiženja. |
-| Izbriši | Tipka za brisanje odabrane stavke (retka) s detaljima. |
-
-
-
-
-
-
+| Sačuvaj | Dugme za čuvanje prijave. |
+| [Automatsko kreiranje](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation) | Dugme koje pokreće čarobnjak za preuzimanje podataka iz modula prodaje. |
+| [Kreiranje iz knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro) | Dugme koje pokreće čarobnjak za preuzimanje podataka iz računovodstvenih knjiženja. |
+| Izbriši | Dugme za brisanje odabrane stavke (reda) iz detalja. |

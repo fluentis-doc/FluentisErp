@@ -3,37 +3,27 @@ title: Intra1 quater
 sidebar_position: 5
 ---
 
-Odjeljak 'quater' Intrastat prijava sadrži detaljne podatke za razdoblje koji se odnose na isporuku usluga.
+Odeljak **quater** Intrastat prijave sadrži detaljne podatke za izveštajni period koji se odnose na isporuke usluga.
 
-Ovaj se odjeljak automatski popunjava preuzimanjem podataka iz **[Vrsta računa](/docs/configurations/tables/sales/invoices-type)** s vrstom transakcije 'S – usluge' 
+Ovaj odeljak se automatski popunjava preuzimanjem podataka iz **[Vrste računa](/docs/configurations/tables/sales/invoices-type)** za vrste transakcija **S – usluge**.
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1-quater/image01.png)
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1-quater/image02.png)
 
- 
-
-ili iz knjiženja u glavnoj knjizi (koja nisu nastala iz kupovine/prodaje), također s redovima vrste 'PDV usluga', 
+ili iz knjiženja u glavnoj knjizi (koja nisu nastala iz procesa prodaje ili nabavke), takođe sa redovima tipa **PDV usluge**.
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1-quater/image03.png)
 
-ali je dopuštena ručna izmjena i nadopuna.
+Dozvoljeno je i ručno uređivanje i dopunjavanje podataka.
 
-**NAPOMENA**: Predložak knjiženja povezan s knjiženjem mora imati aktiviran INTRASTAT flag, a odgovarajuća Intrastat kartica knjiženja mora biti ispunjena.  
+> **NAPOMENA:** Šablon knjiženja povezan sa knjiženjem mora imati aktiviranu oznaku **INTRASTAT**, a odgovarajuća **Intrastat** kartica knjiženja mora biti popunjena.
 
 ![](/img/it-it/finance-area/declarations/intrastat/create-intrastat1/intra1-quater/image04.png)
 
-
-
 | Funkcija | Značenje |
 | --- | --- |
-| Spremi | Tipka kojim se sprema prijava. |
-|  [Automatsko kreiranje](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation)  | Tipka koja pokreće čarobnjak za preuzimanje podataka iz područja prodaje. |
-|  [Kreiranje iz knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro)  | Tipka koja pokreće čarobnjak za preuzimanje podataka iz knjiženja u računovodstvu. |
-| Izbriši | Tipka za brisanje odabrane stavke (retka) s detaljima. |
-
-
-
-
-
-
+| Sačuvaj | Dugme za čuvanje prijave. |
+| [Automatsko kreiranje](/docs/finance-area/declarations/intrastat/automatic-creation-intrastat1/automatic-creation) | Dugme koje pokreće čarobnjak za preuzimanje podataka iz modula prodaje. |
+| [Kreiranje iz knjiženja](/docs/finance-area/declarations/intrastat/create-from-records-intrastat1/create-from-records-intrastat1-intro) | Dugme koje pokreće čarobnjak za preuzimanje podataka iz računovodstvenih knjiženja. |
+| Izbriši | Dugme za brisanje odabrane stavke (reda) iz detalja. |

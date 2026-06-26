@@ -3,22 +3,21 @@ title: Parametri
 sidebar_position: 3
 ---
 
-Unutar odjeljka 'Parametri' procedura prikazuje sve redove unesenih transakcija. Konkretno:
+U okviru odeljka **Parametri** procedura prikazuje sve redove unetih transakcija. Konkretno:
 
-**Status i šifra PDV-a** se preuzimaju iz šifarnika nositelja;
+- **Status i PDV šifra** preuzimaju se iz šifarnika partnera;
+- **Iznos u valuti** prikazuje iznos unet prilikom knjiženja (polje je dostupno samo za Intra2);
+- **Broj dokumenta**, **Datum knjiženja** i **Šifra usluge** preuzimaju se iz šifarnika klijenta.
 
-mogući **Iznos u valuti** prema unesenom iznosu prilikom knjiženja (polje je prisutno samo za intra2);
+Nakon popunjavanja podataka moguće je pokrenuti kreiranje obrasca. Tom prilikom detalji se prenose u odeljke *bis*, *ter* i *quater*.
 
-**Broj dokumenta**, **Datum zapisa** i **Šifra usluge** preuzeti su iz šifarnika klijenta.
+Automatsko raspoređivanje u odgovarajući odeljak obrasca zavisi od vrednosti polja **PDV šifra** u PDV prikazu knjiženja:
 
-Nakon što su podaci popunjeni, moguće je nastaviti s kreiranjem, operacija koja će unijeti detalje u odjeljke *bis - ter - quater*.
+- ako je postavljena vrednost **Generički**, transakcija će biti preneta u odeljak **bis**;
+- ako je postavljena vrednost **Usluga**, transakcija će biti preneta u odeljak **quater**.
 
-Ispravan unos, automatski, u odgovarajući odjeljak obrasca ovisi o upravljanju unosa knjigovodstvenog zapisa, poljem **Šifra PDV-a** u PDV prikazu. Ako je postavljen na *Generički* transakcija će biti unesena u odjeljak *Bis*, ako je postavljen na *Usluga*, , bit će unesena u odjeljak *quater*.   
-Taj podatak će, zauzvrat, pravilno popuniti polje ***BisTer*** (koje se smatra odjeljkom modela) prisutno u *Intrastat* kartici zapisa, a to je zapravo podatak koji se prenosi u fazi izrade modela.
+Na osnovu ove vrednosti automatski se popunjava polje **BisTer** na kartici *Intrastat* knjiženja, koje određuje u koji odeljak Intrastat obrasca će zapis biti prenet prilikom kreiranja obrasca.
 
-Odjeljak Ter se popunjava također putem  *Intrastat* kartice, kada se bilježi odobrenje, a u PDV priakzu zapisa aktivira se flag ***Odobrenje za prethodne godine*** (koja u svakom slučaju identificira izmjenu koja se ne odnosi na mjesec ili tromjesečje registracije i koja zahtijeva popunjavanje odjeljka ter). Pored te zastavice moguće je unijeti referentni datum računa koji se ispravlja.
+Odeljak **ter** popunjava se takođe preko kartice **Intrastat**, kada se knjiži odobrenje i u PDV prikazu knjiženja aktivira oznaka **Odobrenje za prethodne godine**. Ova oznaka identifikuje ispravke koje se ne odnose na mesec ili tromesečje registracije i zbog toga zahtevaju popunjavanje odeljka **ter**.
 
-
-
-
-
+Pored ove oznake moguće je uneti i referentni datum računa koji se ispravlja.

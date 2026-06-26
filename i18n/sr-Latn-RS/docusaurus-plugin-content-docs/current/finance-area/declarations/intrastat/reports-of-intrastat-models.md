@@ -1,25 +1,18 @@
 ---
-title: Ispis intrastata  
+title: Štampanje Intrastat prijava
 sidebar_position: 11
 ---
 
-Moguće je ispisati, prema postavljenim parametrima, kreirane Intrastat obrasce.   
+Moguće je odštampati kreirane **Intrastat** prijave u skladu sa postavljenim parametrima.
 
-Za svako zaglavlje i za svaki odjeljak  ***bis**/**ter**/**quater**/**quinquies**/**sexies*** bit će izrađena zasebna pretpregledna verzija ispisa, koja se može odabrati iz padajućeg izbornika. 
+Za zaglavlje prijave, kao i za svaki odeljak **bis**, **ter**, **quater**, **quinquies** i **sexies**, generiše se zaseban pregled za štampu, koji se bira iz padajuće liste.
 
-Ispis nazvan ***Detalji*** omogućuje ispis svih prethodno navedenih sekcija.  
+Izveštaj **Detalji** omogućava štampanje svih navedenih odeljaka u okviru jedinstvenog izveštaja.
 
-Paralelno s odabirom ispisa prema sekcijama koje se žele ispisati, dostupni su i filteri unutar forme koji omogućuju prikaz ili skrivanje modela vezanih uz prodaju ili kupnju, kao i pojedinačnih sekcija.  
+Pored izbora odeljaka za štampanje, obrazac sadrži i filtere kojima je moguće prikazati ili sakriti prijave koje se odnose na prodaju ili nabavku, kao i pojedinačne odeljke prijave.
 
-Također su dostupni filteri prema broju i datumu. 
+Na raspolaganju su i filteri za pretragu prema broju prijave i datumu.
 
-Kombinacija svih dostupnih filtara i različitih izvještaja za ispis omogućuje obradu i izdvajanje željenih podataka. 
+Kombinovanjem dostupnih filtera i različitih izveštaja za štampanje moguće je izdvojiti i odštampati željene podatke.
 
-Ispis nema nikakav utjecaj na Intrastat prijave (ne postoje blokade povezane s ovim postupkom). 
-
-
-
-
-
-
-
+Postupak štampanja nema nikakav uticaj na Intrastat prijave i ne menja njihov status niti zaključava podatke.

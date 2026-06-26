@@ -1,11 +1,11 @@
 ---
-title: Pridruživanje artikala prodaji  
+title: Povezivanje artikala sa prodajom
 sidebar_position: 10
 ---
 
-Iz ove forme moguće je prikazati popis artikala kojima još nije dodijeljena šifra nomenklature (aktiviranjem odgovarajućeg *flaga*) ili potpuni popis artikala.
+Putem ovog obrasca moguće je prikazati spisak artikala kojima još nije dodeljena **šifra nomenklature** (aktiviranjem odgovarajuće opcije) ili kompletan spisak svih artikala.
 
-Na dnu forme moguće je dodijeliti šifru nomenklature jednostavnim pritiskom na odgovarajući gumb za upravljanje.  
+U donjem delu obrasca moguće je dodeliti šifru nomenklature odabranim artiklima klikom na odgovarajuće dugme.
 
 ![](/img/it-it/finance-area/declarations/intrastat/sales-item-association/image01.png)
 
@@ -13,22 +13,19 @@ Na dnu forme moguće je dodijeliti šifru nomenklature jednostavnim pritiskom na
 
 ![](/img/it-it/finance-area/declarations/intrastat/sales-item-association/image03.png)
 
-Za polje **Šifra nomenklature za pridružiti** postoji *widget* za pretraživanje i jednostavnim upisivanjem u polje, bit će predloženi podaci (koji počinju ili sadrže utipkane znakove ako se koristi znak % prije upisa slova ili riječi). Također je moguće dvaput kliknuti lijevom tipkom miša kako bi se otvorila pomoć za pretraživanje.  
+Polje **Šifra nomenklature za dodelu** sadrži ugrađenu pretragu. Dovoljno je uneti deo šifre ili opisa kako bi sistem predložio odgovarajuće rezultate. Ako se ispred unetog teksta koristi znak **%**, pretraga će pronaći sve vrednosti koje sadrže uneseni niz znakova. Dvostrukim klikom levim tasterom miša otvara se pomoćni prozor za pretragu.
 
 ![](/img/it-it/finance-area/declarations/intrastat/sales-item-association/image04.png)
 
-
-
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Pretraživanje artikala kojima treba dodijeliti nomenklaturu. |
-| Pridruživanje šifre nomenklature artiklima | Tipka za povezivanje nomenklature s odabranim artiklima. |
+| **Traži** | Pretražuje artikle kojima je potrebno dodeliti šifru nomenklature. |
+| **Dodeli šifru nomenklature artiklima** | Povezuje odabranu šifru nomenklature sa označenim artiklima. |
 
-PODRUČJE FILTERA: područje filtera je posvećeno prikazivanju popisa mogućih vrsta podataka putem kojih je moguće izvršiti odabir. Filteri su tipično uvijek u 'AND' uvjetu i može se specificirati više kriterija filtera istovremeno.
+### Područje filtera
 
-PRIKAZ REZULTATA: Ova tablica prikazuje popis artikala koji odgovaraju gore navedenim filterima. Nakon što korisnik specificira vrijednosti putem kojih želi izvršiti pretragu artikala te pritisne tipku [Traži] na pripadajućoj traci izbornika, u prikazu podataka će dobiti popis željenih artikala.  
+Područje filtera namenjeno je definisanju kriterijuma za pretragu. Svi filteri se primenjuju po principu **AND**, što znači da je moguće istovremeno zadati više kriterijuma pretrage.
 
+### Prikaz rezultata
 
-
-
-
+U tabeli rezultata prikazuju se svi artikli koji zadovoljavaju definisane kriterijume pretrage. Nakon što korisnik unese željene filtere i klikne na dugme **Traži**, u tabeli će biti prikazan spisak odgovarajućih artikala.

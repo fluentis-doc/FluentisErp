@@ -3,16 +3,10 @@ title: Povrat
 sidebar_position: 4
 ---
 
-Moguće je koristiti ovu karticu za otkazivanje unosa u sekcijama intra modela.
+Ova kartica koristi se za poništavanje unosa u odgovarajućim odeljcima Intrastat obrasca.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za pretragu faktura koje se brišu. |
-| Povrati Intrastat | Tipka za obnavljanje cijele Intrastat prijave. |
-| Povrati zapis | Tipka za obnavljanje samo jedne fakture prisutne u Intrastat prijavi. |
-
-
-
-
-
-
+| Traži | Dugme za pretragu faktura koje će biti vraćene. |
+| Povrati Intrastat | Dugme za poništavanje kompletne Intrastat prijave. |
+| Povrati zapis | Dugme za vraćanje samo jednog zapisa (fakture) iz Intrastat prijave. |

@@ -3,24 +3,16 @@ title: Filter računa
 sidebar_position: 2
 ---
 
-Tablica prikazuje popis računa izdanih subjektima definiranima kao Intrastat u šifarniku  (**koji su ispisani i evidentirani u razdoblju na koje se odnosi izjava**).
+Tabela prikazuje spisak računa izdatih subjektima definisanim kao Intrastat u šifarniku (**koji su odštampani i evidentirani u periodu na koji se izjava odnosi**).
 
 ![](/img/it-it/finance-area/declarations/intrastat/automatic-creation-intrastat1/invoices-filter/image01.png)
 
-Popis artikala unutar svakog dokumenta neće sadržavati retke povezane sa stopama PDV-a koje nisu definiranima za korištenje u Intrastatu (u tablici Stopa PDV-a).
+Spisak artikala u okviru svakog dokumenta neće sadržati redove povezane sa stopama PDV-a koje nisu definisane za korišćenje u Intrastatu (u tabeli **Stope PDV-a**).
 
-Odabir se potvrđuje pritiskom na tipke **Sljedeće** u traci izbornika, što će prikaz premjestiti na drugu karticu  **Parametri**.
-
-
+Izbor se potvrđuje pritiskom na dugme **Sledeće** na traci menija, čime se prikaz prebacuje na drugu karticu **Parametri**.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za pokretanje filtara pretraživanja prethodno umetnutih Intrastat1 deklaracija.  |
-| Označi sve  | Omogućuje odabir svih redaka  pregledu podataka. |
-| Odznači sve | Omogućuje uklanjanje odabira sa svih redaka u pregledu pretrage. |
-
-
-
-
-
-
+| Traži | Dugme za pokretanje pretrage prema prethodno postavljenim filterima Intrastat1 deklaracija. |
+| Označi sve | Omogućava izbor svih redova u prikazu podataka. |
+| Odznači sve | Omogućava uklanjanje izbora sa svih redova u prikazu pretrage. |

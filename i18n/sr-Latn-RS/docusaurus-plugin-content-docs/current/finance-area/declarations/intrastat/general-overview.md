@@ -3,35 +3,27 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul Intrastat služi za izradu statističkih izvještaja Intrastat: predviđeno je kako ručno upravljanje podacima tako i automatski unos podataka temeljenih na podacima prisutnim u ulaznim i izlaznim računima iz odgovarajućih područja nabave i prodaje, kao i preuzimanje podataka iz računovodstvenih evidencija. 
-Knjiženjem relevantnih faktura s odgovarajućim postavkama (konkretno aktiviranjem ***flaga*/opcije** *Intrastat* unutar **predložaka** knjiženja) moguće je upravljati automatskim stvaranjem putem računovodstvenih evidencija, kako za robu tako i za usluge.
+Modul **Intrastat** namenjen je izradi statističkih Intrastat izveštaja. Omogućava ručno vođenje podataka, kao i automatsko preuzimanje podataka iz ulaznih i izlaznih faktura u modulima nabavke i prodaje, kao i iz računovodstvenih knjiženja.
 
-Osnovne postavke vezane su uz **matične podatke** i **vrste dokumenata** u nabavi i prodaji: 
+Knjiženjem odgovarajućih faktura, uz pravilno podešavanje (konkretno, aktiviranjem **Intrastat** opcije u **šablonima knjiženja**), moguće je automatski kreirati Intrastat prijave iz računovodstvenih evidencija, kako za robu, tako i za usluge.
 
-**potrebno je, naime, da dokumenti budu pravilno podešeni i da je partner označen u šifrarniku kao subjekt Intrastata.**
+Osnovna podešavanja odnose se na **matične podatke** i **vrste dokumenata** u nabavci i prodaji.
 
-Da bi se postigla maksimalna automatizacija, potrebno je definirati u matičnim podacima artikala, šifre i nomenklature svakog od njih, kao i eventualne faktore konverzije kako bi se automatski izračunala vrijednost alternativne jedinice mjere. Potrebno je, koliko je to moguće, unutar različitih dokumenata u potpunosti definirati podatke o vrsti prijevoza i uvjetima isporuke.  
+**Neophodno je da dokumenti budu pravilno podešeni i da je poslovni partner u šifarniku označen kao Intrastat subjekt.**
 
-Korištenje modula provodi se stvaranjem nove Intrastat1 izjave (za prodaju) i Intrastat2 (za nabavu) podaci se popunjavaju preuzimanjem iz ulaznih ili izlaznih računa, iz računovodstvenih zapisa ili ručnim unosom u odgovarajuće odjeljke.  
+Radi što veće automatizacije potrebno je u matičnim podacima artikala definisati nomenklaturne šifre za svaki artikl, kao i odgovarajuće faktore konverzije kako bi se automatski izračunavale vrednosti alternativnih jedinica mere. Takođe je preporučljivo da u dokumentima budu popunjeni podaci o načinu prevoza i uslovima isporuke.
 
-Nakon popunjavanja podataka, bit će moguće nastaviti s ispisom obrasca ili elektroničkim slanjem uz stvaranje predviđene datoteke. 
+Korišćenje modula podrazumeva kreiranje nove **Intrastat1** prijave (prodaja) ili **Intrastat2** prijave (nabavka). Podaci se mogu popuniti preuzimanjem iz ulaznih ili izlaznih faktura, iz računovodstvenih knjiženja ili ručnim unosom u odgovarajuće odeljke.
 
-**Popis obaveznih tablica za korištenje modula**: 
+Nakon popunjavanja podataka moguće je odštampati obrazac ili izvršiti elektronsko slanje generisanjem odgovarajuće datoteke.
 
-[Početna stranica>Tablice>Administracija] i [Početna stranica>Tablice>Opće postavke] za identifikaciju ispravnih postavki Intra obračuna. 
+**Spisak obaveznih tabela za korišćenje modula:**
 
-[Vrsta Intrastat transakcije](/docs/configurations/tables/finance/nature-of-intrastat-transaction), 
+- **Početna stranica > Tabele > Administracija**
+- **Početna stranica > Tabele > Opšta podešavanja** (za definisanje odgovarajućih Intrastat podešavanja)
 
-[Numeriranje Intrastat](/docs/configurations/tables/fluentis-numerations), 
-
-[Šifre nomenklature](/docs/configurations/tables/finance/nomenclature-codes), 
-
-[Paritet](/docs/configurations/tables/general-settings/carriages), 
-
-[Dostave](/docs/configurations/tables/general-settings/shipments).
-
-
-
-
-
-
+- [Vrste Intrastat transakcija](/docs/configurations/tables/finance/nature-of-intrastat-transaction)
+- [Numeracija Intrastat prijava](/docs/configurations/tables/fluentis-numerations)
+- [Šifre nomenklature](/docs/configurations/tables/finance/nomenclature-codes)
+- [Pariteti isporuke](/docs/configurations/tables/general-settings/carriages)
+- [Načini isporuke](/docs/configurations/tables/general-settings/shipments)

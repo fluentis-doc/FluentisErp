@@ -3,22 +3,14 @@ title: Intrastat2
 sidebar_position: 3
 ---
 
-Obrazac za pretraživanje INTRA 2 modela i unos novog modela (ručno i automatski). 
+Obrazac **Intrastat2** služi za pretragu postojećih **INTRA 2** prijava te za ručni ili automatski unos novih prijava.
 
-Traka izbornika također sadrži naredbe za ispis predloška; potrebno je odabrati različite odjeljke za ispis, zasebno iz kombiniranog okvira, osim naslovne stranice.
-
-
+Na traci sa alatkama nalaze se i komande za štampanje obrasca. Prilikom štampanja moguće je iz padajuće liste odabrati pojedinačne odeljke obrasca za štampu, dok se naslovna strana štampa zasebno.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za pokretanje filtara pretraživanja prethodno umetnutih Intrastat1 deklaracija. Mogućnost pretraživanjapo tipu, razdoblju, godini i broju. |
-| Kreiraj | Pokretanje procedure za umetanje nove Intrastat2 deklaracije (obrasca). |
-| Izmijeni | Pokreće postupak izmjene prethodno umetnute Intrastat2 deklaracije (obrasca). |
-| Izbriši | Brisanje prethodno upisane Intrastat2 deklaracije (obrasca). |
-| Izvoz u datoteku | Tipka za kreiranje i izvoz elektroničke datoteke, uz spremanje datoteke u direktorij po izboru korisnika i u Upravljanje dokumentima Fluentisa. |
-
-
-
-
-
-
+| **Traži** | Pokreće pretragu prethodno unetih Intrastat2 prijava. Pretraga je moguća prema tipu prijave, obračunskom periodu, godini i broju. |
+| **Kreiraj** | Pokreće proceduru za unos nove Intrastat2 prijave. |
+| **Izmeni** | Otvara odabranu Intrastat2 prijavu radi izmene. |
+| **Obriši** | Briše odabranu Intrastat2 prijavu. |
+| **Izvoz u datoteku** | Generiše i izvozi elektronsku datoteku prijave, pri čemu se datoteka čuva u direktorijumu koji odabere korisnik, kao i u sistemu za upravljanje dokumentima Fluentis. |

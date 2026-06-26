@@ -3,23 +3,26 @@ title: Izvoz zapisa
 sidebar_position: 1
 ---
 
-Pritiskom na tipku **Izvoz u datoteku**, koja se nalazi unutar modela na traci izbornika kao i u obrascu za pretraživanje, generira se elektronički zapis potreban za slanje samih modela:
+Klikom na dugme **Izvoz u datoteku**, koje se nalazi na traci sa alatkama unutar Intrastat obrasca, kao i u obrascu za pretragu, generiše se elektronski zapis potreban za slanje Intrastat prijave:
 
-- carini (kanal *CIWS*), ili alternativno
-- Poreznoj upravi (kanal *e-Porezna*)
+- Carinskoj upravi (kanal *CIWS*), ili
+- Poreskoj upravi (kanal *e-Porezna*).
 
-Vrstu željenog zapisa moguće je postaviti i putem sučelja, pristupom obrascu  **Opći parametri**, a zatim otvaranjem navigacijskog stabla poslovnog sloja do područja Financije.
+Vrsta zapisa koji će biti generisan može se podesiti u obrascu **Opšti parametri**, otvaranjem stabla poslovne logike i izborom oblasti **Finansije**.
+U parametrima za Intrastat izvoz, polje **Vrednost** ima sledeće značenje:
 
-U detaljima parametra za Intrastat izvoz, flag ***Vrijednost*** ima sljedeće značenje: 0 = flag deaktiviran (*False*) = Intraweb; 1 = flag aktiviran (*True*) = Entratel.
+- **0** = oznaka nije aktivirana (*False*) = **Intraweb**
+- **1** = oznaka je aktivirana (*True*) = **Entratel**
 
 ![](/img/it-it/finance-area/declarations/intrastat/export/FI_GeneralParameters.png)
 
-Datoteka zapisa automatski se arhivira u dokumentacijski sustav i može se od tamo preuzeti kao i svi ostali izvezeni zapisi (tipka sa spajalicom).
-Paralelno je predviđen i izvoz u vanjsku mapu kojom upravlja odgovarajući Bizlink konektor (šifra *Intrastat*) te je moguće prilagoditi putanju spremanja.
+Generisana datoteka se automatski arhivira u sistem za upravljanje dokumentima, odakle se može preuzeti kao i svi ostali izvezeni zapisi (dugme sa ikonom spajalice).
+Istovremeno se zapis izvozi i u spoljašnji direktorijum kojim upravlja odgovarajući **Bizlink** konektor (šifra *Intrastat*), pri čemu je moguće prilagoditi putanju za čuvanje datoteka.
 
-:::tip Info
-Razlika između zapisa za verziju Intraweb i Entratel (Italija) odnosi se na zaglavlje zapisa, gdje se u verziji za Entratel nalazi početni kod ZENT.
-Također, naziv datoteke može biti različit, tipično scambi.cee za  intraweb.
+:::tip Informacija
 
-Moguće je postaviti i **prilagođeni kod** za zaglavlje zapisa putem polja **Identifikacijski kod ovlaštenog korisnika** koje se nalazi unutar [**Općih  parametara knjiženja**](/docs/configurations/parameters/finance/accounting-parameters), u sekciji *Intrastat*
-:::
+Razlika između zapisa za verzije **Intraweb** i **Entratel** (Italija) odnosi se na zaglavlje zapisa. Kod verzije **Entratel** zaglavlje počinje kodom **ZENT**.
+Naziv izlazne datoteke takođe može biti različit, a za **Intraweb** se najčešće koristi naziv **scambi.cee**.
+Moguće je definisati i **prilagođeni identifikacioni kod** za zaglavlje zapisa putem polja **Identifikacioni kod ovlašćenog korisnika**, koje se nalazi u [**Opštim parametrima knjiženja**](/docs/configurations/parameters/finance/accounting-parameters), u odeljku **Intrastat**.
+
+::: 

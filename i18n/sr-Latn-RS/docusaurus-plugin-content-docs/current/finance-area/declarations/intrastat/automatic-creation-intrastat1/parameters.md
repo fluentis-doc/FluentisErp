@@ -3,46 +3,36 @@ title: Parametri
 sidebar_position: 3
 ---
 
-Unutar odjeljka **Parametri**, postupak prikazuje sve stavke s detaljima artikala unesenih u odabrane dokumente, prenoseći iz svakog od njih podatke preuzete iz dokumenta. Konkretno:
+U okviru odeljka **Parametri**, procedura prikazuje sve stavke sa detaljima artikala unetih u odabrane dokumente, prenoseći iz svakog od njih podatke preuzete iz dokumenta. Konkretno:
 
 ![](/img/it-it/finance-area/declarations/intrastat/automatic-creation-intrastat1/parameters/image01.png)
 
- 
+**Status i PDV šifra**: preuzimaju se iz registra partnera;
 
-**Status i šifra PDV-a**: se preuzimaju  iz registra nositelja;
-
-**Iznos u valuti**: Prikazuje podatak o iznosu artikla (cijena* × količina − popusti) u valuti računa za nabavu (polje je prisutno samo za Intra2)
+**Iznos u valuti**: prikazuje iznos artikla (*cena × količina − popusti*) u valuti ulaznog računa (polje je dostupno samo za Intra2);
 
 **Vrsta Intrastat transakcije**: preuzima se iz vrste dokumenta;
 
-**Nomenklatura**: iz retka artikla na računu, a ako je prazno, iz šifrarnika artikala;
+**Nomenklatura**: preuzima se iz stavke artikla na računu, a ako nije popunjena, iz šifarnika artikala;
 
-**Neto masa**: izračunava se na temelju težine postavljene u šifrarniku artikla;
+**Neto masa**: izračunava se na osnovu težine definisane u šifarniku artikla;
 
-**Dodatna jed. mjere**: može se automatski izračunati ako kod nomenklature predviđa drugu mjernu jedinicu, putem konverzije između upravljačke mjerne jedinice i ove, prema faktorima konverzije definiranima za artikl;  
+**Dodatna jedinica mere**: može se automatski izračunati ako šifra nomenklature predviđa drugu jedinicu mere, primenom konverzije između osnovne jedinice mere i dodatne jedinice, prema faktorima konverzije definisanim za artikal;
 
-**Statistička vrijednost**: izračunava se na više načina, ovisno o postavkama (postotna varijacija u odnosu na šifrarnik kupca/dobavljača, ili uvećana za troškove koji su posebno uneseni u dokument);
+**Statistička vrednost**: izračunava se na više načina, u zavisnosti od podešavanja (procentualna korekcija prema šifarniku kupca/dobavljača ili uvećanje za troškove posebno unete u dokument);
 
-**Šifra prijevoza i Način transporta**: unose se na temelju šifri otpreme pridruženih dokumentu;
+**Šifra prevoza i Način transporta**: preuzimaju se iz šifre otpreme povezane sa dokumentom;
 
-**Podaci o županijama podrijetla/odredišta** i o **zemlji podrijetla/odredišta** čitaju se iz šifarnika subjekta na kojeg glasi dokument ili iz tablice poduzeća.
+**Podaci o okrugu porekla/odredišta** i **zemlji porekla/odredišta** preuzimaju se iz šifarnika partnera na kojeg glasi dokument ili iz podataka o preduzeću.
 
-Na dnu pregleda prikazuju se reference na izvorni dokument retka.  
+Na dnu pregleda prikazane su reference na izvorni dokument svake stavke.
 
-Nakon što se unesu svi potrebni podaci u model (što ovisi o oznaci "Pojednostavljeno" u zaglavlju deklaracije, kao i o vrsti razdoblja sažetka), moguće je prijeći na izradu modela. Ova radnja će prenijeti detalje u odjeljke *bis/ter/quater*, ovisno o prirodi Intrastat transakcije (tip 2 se prikazuje u odjeljku ter za ispravke, tip “S” u odjeljku quater). Moguće je, prije ovog prijenosa, provesti prvo grupiranje iznosa: ova će se operacija izvršiti po dokumentu, što će uzrokovati prvo zaokruživanje podataka na cijeli broj.  
+Nakon što se unesu svi potrebni podaci u obrazac (što zavisi od oznake **Pojednostavljeno** u zaglavlju deklaracije, kao i od vrste obračunskog perioda), moguće je pokrenuti kreiranje obrasca. Ova radnja prenosi podatke u odeljke *bis/ter/quater*, u zavisnosti od vrste Intrastat transakcije (tip **2** prenosi se u odeljak **ter** za ispravke, dok se tip **S** prenosi u odeljak **quater**). Pre ovog prenosa moguće je izvršiti prvo grupisanje iznosa. Grupisanje se vrši po dokumentu, pri čemu se vrednosti zaokružuju na cele brojeve.
 
-
-
-| Funkcija  | Značenje |
+| Funkcija | Značenje |
 | --- | --- |
-| Otkaži  | Tipka za brisanje odabranih računa. |
-| Kreiranje | Izvodi kreiranje Intrastat obrasca prenoseći podatke iz ove kartice u odgovarajuće odjeljke obrasca.|
-| Izbriši sve | Izvodi brisanje svih redaka iz tablice. |
-| Grupiraj  | Grupira retke prema primatelju računa i ostalim sličnim podacima. |
-| Spremi | Omogućuje spremanje unesenih podataka, primjerice za nastavak rada kasnije. |
-
-
-
-
-
-
+| Otkaži | Dugme za brisanje odabranih računa. |
+| Kreiranje | Pokreće kreiranje Intrastat obrasca prenosom podataka sa ove kartice u odgovarajuće odeljke obrasca. |
+| Izbriši sve | Briše sve redove iz tabele. |
+| Grupiši | Grupiše redove prema primaocu računa i ostalim zajedničkim podacima. |
+| Sačuvaj | Omogućava čuvanje unetih podataka, na primer radi nastavka rada kasnije. |
