@@ -1,16 +1,20 @@
 ---
-title: Računovodstveni predlošci za samofakturiranje
+title: Knjigovodstveni obrasci za samofakturisanje
 sidebar_position: 3
 ---
-:::note BILJEŠKA:
-Sljedeće upute odnose se na postupak za automatizirano generiranje izlaznih računa stvorenih kako bi se SDI-u, putem kruga elektroničkog fakturiranja, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro" (Italija).
+
+:::note NAPOMENA
+Sledeća uputstva odnose se na postupak automatskog generisanja izlaznih računa koji služe za prijavljivanje podataka o nabavkama putem SDI sistema elektronskog fakturisanja, a koji su se ranije prijavljivali kroz ukinutu prijavu poznatu kao **Esterometro** (Italija).
 :::
 
-Unutar predložaka glavne knjige koji evidentiraju *intrakomunitarne/reverse charge* ulazne račune potrebno je navesti koju vrstu izlaznog računa treba generirati u prodaji. Na primjer, i za račune i za odobrenja intrakomunitarnih nabava navest ćemo odgovarajuću vrstu izlaznog računa.
+U knjigovodstvenim obrascima koji se koriste za evidentiranje **intrakomunitarnih** i **reverse charge** ulaznih računa potrebno je definisati vrstu izlaznog računa koja će se automatski generisati u modulu prodaje.
+
+Na primer, za račune i odobrenja koja se odnose na intrakomunitarne nabavke potrebno je odrediti odgovarajuću vrstu izlaznog računa.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/ledger-templates1.png)
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/ledger-templates2.png)
 
+Prema uputstvima Poreske uprave Italije, za prijavljivanje svih podataka koji se odnose na odobrenja koriste se **samofakture** odgovarajućeg tipa, na primer **TD18** (ili **TD16**, u zavisnosti od konkretnog slučaja).
 
-Porezna agencija je, naime, naznačila da se uvijek koriste samofakture tipa TD18 (ili one u konkretnom slučaju TD16 itd.) i za slanje bilo kakvih podataka o odobrenju, vodeći računa da podaci u njima budu s negativnim predznakom za označiti otkazivanje.  
+Kod takvih dokumenata podaci se šalju sa **negativnim iznosima**, čime se označava storno, odnosno poništavanje prethodno prijavljenih transakcija.

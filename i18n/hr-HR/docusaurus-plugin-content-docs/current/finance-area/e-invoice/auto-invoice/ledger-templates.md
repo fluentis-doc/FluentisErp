@@ -13,4 +13,4 @@ Unutar predložaka glavne knjige koji evidentiraju *intrakomunitarne/reverse cha
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/ledger-templates2.png)
 
 
-Porezna agencija je, naime, naznačila da se uvijek koriste samofakture tipa TD18 (ili one u konkretnom slučaju TD16 itd.) i za slanje bilo kakvih podataka o odobrenju, vodeći računa da podaci u njima budu s negativnim predznakom za označiti otkazivanje.  
+Porezna agencija je, naime, naznačila da se uvijek koriste *samofakture* tipa TD18 (ili one u konkretnom slučaju TD16 itd.) i za slanje bilo kakvih podataka o odobrenju, vodeći računa da podaci u njima budu s negativnim predznakom za označiti otkazivanje.  

@@ -1,27 +1,45 @@
 ---
-title: Vrste dokumenata, numeriranje i vrste faktura
+title: Vrste dokumenata, numerisanje i vrste računa
 sidebar_position: 2
 ---
-:::note BILJEŠKA:
-Sljedeće upute odnose se na postupak za automatizirano generiranje faktura za prodaju stvorenih kako bi se SDI-u, putem kruga elektroničkog fakturiranja, priopćili podaci o kupnjama prethodno priopćenim putem ukinutog zahtjeva poznatog kao "Esterometro" (Italija).
+
+:::note NAPOMENA
+Sledeća uputstva odnose se na postupak automatskog generisanja izlaznih računa koji služe za prijavljivanje podataka o nabavkama putem SDI sistema elektronskog fakturisanja, a koji su se ranije prijavljivali kroz ukinutu prijavu poznatu kao **Esterometro** (Italija).
 :::
 
-Potrebno je provjeriti da su vrste potrebnih *samofaktura* kodirane u vrstama knjigovodstvenih dokumenata:
+Potrebno je proveriti da li su vrste potrebnih **samofaktura** definisane u tabeli **Vrste knjigovodstvenih dokumenata**.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/doc-types.png)
 
-Kreiranje takvih računa u prodaji generirat će novi prodajni dokument s vlastitim brojem. Kako bi se izbjegao utjecaj na izdavanje standardnih prodajnih dokumenata, preporučuje se kreirati posebne vrste izlaznih računa za svaku vrstu samoračuna koji se izdaje, kao i brojače usklađene s registrima izlaznog PDV-a u kojima se evidentiraju automatska prijenosna knjiženja za ove *intrakomunitarne/reverse charge* nabave.
+Generisanjem ovakvih računa u modulu prodaje nastaje novi izlazni dokument sa sopstvenim rednim brojem.
 
-Na primjer, ako je predviđen jedan zajednički registar za evidentiranje automatskih prijenosnih knjiženja i za intrakomunitarne nabave i za domaći reverse charge, tada je potrebno kreirati jedan zajednički brojač računa i dvije vrste računa koje ga koriste. Suprotno tome, ako je za svaki slučaj predviđen zaseban registar, potrebno je definirati poseban brojač za svaki od njih. U slučaju da se procedura želi koristiti tijekom tekuće godine, početni broj brojača mora odgovarati sljedećem PDV protokolu koji treba biti dodijeljen u svakom od tih registara.
+Kako bi se izbegao uticaj na numerisanje standardnih izlaznih računa, preporučuje se definisanje posebnih vrsta izlaznih računa za svaku vrstu samofakture, kao i posebnih brojača usklađenih sa registrima izlaznog PDV-a u kojima se evidentiraju automatska prenosna knjiženja za **intrakomunitarne nabavke** i **reverse charge** transakcije.
+
+Primer:
+
+- ako se koristi jedan zajednički registar za automatska prenosna knjiženja intrakomunitarnih nabavki i domaćeg reverse charge postupka, potrebno je definisati jedan zajednički brojač računa i dve vrste računa koje ga koriste;
+- ako svaki postupak koristi poseban registar, potrebno je definisati poseban brojač za svaki od njih.
+
+Ako se funkcionalnost uvodi tokom tekuće poslovne godine, početna vrednost brojača mora odgovarati sledećem slobodnom PDV protokolu koji će biti dodeljen odgovarajućem registru.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/numeration.png)
 
 :::danger PAŽNJA
-SDI ne može prepoznati razliku između TD01 i TD18 (na primjer), jedina razlika koju prepoznaje je između TD01 i TD04 (kreditna izvješća). Stoga je prikladno definirati formulu u numeraciji (brojaču) koja generira sufiks u numeriranju kako bi se razlikovale različite vrste dokumenata, izbjegavajući gubitak zbog dvostrukog numeriranja.
+SDI sistem ne razlikuje vrste dokumenata **TD01** i **TD18** (na primer), već razlikuje samo određene vrste dokumenata, kao što su **TD01** i **TD04** (odobrenja).
 
-Pogledajte stranicu brojnika Fluentis, upamtite **kao primjer** da bi formula (polje *formule broja* u zaglavlju brojnika) mogla biti Number.ToString() + "/RC" za samofakture generirane kupnjom obrnutog terećenja..
+Zbog toga se preporučuje definisanje formule za numerisanje (polje **Formula broja** u zaglavlju brojača) koja će dodavati sufiks broju dokumenta kako bi se različite vrste samofaktura međusobno razlikovale i izbegla mogućnost duplog numerisanja.
+
+Primer formule:
+
+`Number.ToString() + "/RC"`
+
+Ova formula generiše numeraciju sa sufiksom **/RC** za račune nastale iz reverse charge nabavki.
 :::
 
-Vrste računa za ove samofakture imat će pridružene brojnike, kao i računovodstveni predložak (isti kao i automatski prijenos u prodaji) i vrstu računovodstvenog dokumenta:
+Vrsti računa za pojedinačnu samofakturu potrebno je dodeliti:
+
+- odgovarajući **brojač**;
+- **knjigovodstveni obrazac** (isti onaj koji se koristi za automatski prenos u prodaji);
+- odgovarajuću **vrstu knjigovodstvenog dokumenta**.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/invoice-type.png)

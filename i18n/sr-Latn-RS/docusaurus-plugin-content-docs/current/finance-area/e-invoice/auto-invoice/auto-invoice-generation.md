@@ -1,54 +1,76 @@
 ---
-title: Automatsko generiranje faktura
+title: Automatsko generisanje računa
 sidebar_position: 4
 ---
-:::note BILJEŠKA:
-Sljedeće upute odnose se na postupak za automatizirano generiranje prodajnih faktura/računa stvorenih kako bi se putem slanja e-računa, poslali podaci o nabavi, prethodno priopćeni putem ukinutog zahtjeva poznatog kao "Esterometro" (Italija).
+
+:::note NAPOMENA
+Sledeća uputstva odnose se na postupak automatskog generisanja izlaznih računa kreiranih radi slanja podataka o nabavkama putem e-računa, koji su se ranije prijavljivali kroz ukinutu prijavu poznatu kao **Esterometro** (Italija).
 :::
 
-Prilikom spremanja računovodstvenog zapisa, Fluentis će automatski kreirati dokumente postavljene u predlošku plaćanja: dakle i administrativni(računovodstveni) prijenos za obračun PDV-a i samofakturiranje prodajnih faktura. Zatvaranje obrasca tada će vratiti dvije poruke, onu koja otvara knjiženje automatskog prijenosa i novu poruku koja prikazuje izrađeni račun.  
+Prilikom čuvanja računovodstvenog knjiženja Fluentis automatski generiše dokumente definisane u knjigovodstvenom obrascu: administrativni (knjigovodstveni) prenos za obračun PDV-a i **samofakturu** izlaznog računa.
+
+Nakon zatvaranja obrasca prikazuju se dve poruke: jedna za otvaranje automatski generisanog knjigovodstvenog prenosa, a druga za pregled automatski generisanog izlaznog računa.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation1.png)
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation2.png)
 
-U automatski generiranom obračunu: u polju izdavatelja imamo i dobavljača, u referencama broj i datum računa dobavljača.  
+U automatski generisanom obračunu u polju izdavaoca nalazi se dobavljač, dok su u referencama prikazani broj i datum dobavljačevog računa.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation3.png)
 
-Račun je već ispisan i knjižen (budući da već postoji automatsko prijenosno knjiženje koje ga evidentira).
-U stavkama se nalazi nešifrirani artikl, s opisom preuzetim iz opisa knjiženja izvorne računovodstvene registracije, za PDV osnovicu knjiženja i stopu PDV-a retka. 
+Račun je već odštampan i proknjižen jer postoji automatski knjigovodstveni prenos koji ga evidentira.
+
+U stavkama dokumenta nalazi se nešifrirani artikal sa opisom preuzetim iz opisa izvornog knjigovodstvenog knjiženja, zajedno sa PDV osnovicom i stopom PDV-a odgovarajuće stavke.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation4.png)
 
-Spremni smo već unutar dokumenta izvršiti promjenu statusa slanja samoračuna prema SDI sustavu.
-Eventualne izmjene izvorne registracije ponovno će izračunati, pod uvjetom da za izlazni račun još nije generirana SDI datoteka, i automatsko prijenosno knjiženje i automatski generirani izlazni račun. Automatsko ažuriranje neće se izvršiti ni u slučaju kada je u predlošku knjiženja postavljena oznaka „Ne preračunavaj automatsko knjiženje”.. 
+Unutar dokumenta moguće je odmah promeniti status slanja računa prema SDI sistemu.
+
+Ako se naknadno izmeni izvorno knjiženje, sistem će automatski ponovo izračunati i knjigovodstveni prenos i automatski generisani izlazni račun, pod uslovom da za izlazni račun još nije generisana SDI datoteka.
+
+Automatsko ažuriranje neće biti izvršeno ni ako je u knjigovodstvenom obrascu aktivirana opcija **Ne preračunavaj automatsko knjiženje**.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation5.png)
 
-Poništenje izvornog knjiženja (također vraćanje računovodstevne operacije koje ju je kreiralo) će eliminirati automatski generirani izlazni račun, ako to nije bilo predmet kreiranja SDI datoteke.  
+Poništavanjem izvornog knjiženja (odnosno knjigovodstvene operacije koja ga je kreirala) automatski generisani izlazni račun biće obrisan, pod uslovom da za njega nije već generisana SDI datoteka.
 
-### **POSEBNI SLUČAJEVI**
+## Posebni slučajevi
 
-A) U slučaju miješanog ulaznog računa, gdje dio podliježe domaćem *reverse charge* postupku, a dio ne, računovodstveno knjiženje imat će jedan ili više PDV redaka s oznakom „Isključi iz automatskih predložaka”, te ti redci neće biti uključeni ni u automatsko prijenosno knjiženje ni u samoračun.
+### A) Mešoviti ulazni račun
+
+Kod mešovitog ulaznog računa, gde jedan deo podleže domaćem **reverse charge** postupku, a drugi ne, knjigovodstveno knjiženje sadržaće jednu ili više PDV stavki sa aktiviranom oznakom **Isključi iz automatskih obrazaca**.
+
+Takve stavke neće biti uključene ni u automatski knjigovodstveni prenos ni u automatski generisani izlazni račun.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation6.png)
 
-B) U slučaju *intra* kupnje s djelomičnim odbitkom, moguće je u polju „PDV za automatske predloške” navesti stopu PDV-a koja će se koristiti u automatskom prijenosnom knjiženju. Ta stopa PDV-a koristit će se i u izlaznom samoračunu.  
+### B) Intra nabavka sa delimičnim odbitkom
+
+Kod **intra** nabavke sa delimičnim pravom na odbitak moguće je u polju **PDV za automatske obrasce** odrediti stopu PDV-a koja će se koristiti u automatskom knjigovodstvenom prenosu.
+
+Ista stopa PDV-a koristiće se i u automatski generisanom izlaznom računu.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation7.png)
 
-C) Nabava inozemnih usluga
-U ovom slučaju nabava će biti evidentirana pomoću predloška bez PDV-a. Tada je moguće postaviti sljedeće: u predlošku bez PDV-a kojim se evidentiraju te usluge moguće je navesti TD17 automatski račun koji će se kreirati u prodaji, bez automatskog prijenosnog knjiženja. 
+### C) Nabavka usluga iz inostranstva
+
+U ovom slučaju nabavka se evidentira pomoću obrasca bez PDV-a.
+
+U tom obrascu moguće je definisati automatsko generisanje izlaznog računa tipa **TD17**, bez kreiranja automatskog knjigovodstvenog prenosa.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation8.png)
 
-Dobavljaču će biti potrebno naznačiti stopu PDV-a koja će se koristiti u automatskom izlaznom računu, zatim u administraciji (računovodstvu) dobavljač mora imati dobavljača u zaglavlju i vrijednost fakturirane usluge u zaglavlju ukupno:  
+Kod dobavljača je potrebno definisati stopu PDV-a koja će se koristiti na automatski generisanom izlaznom računu.
+
+U knjigovodstvenom knjiženju dobavljač mora biti naveden u zaglavlju dokumenta zajedno sa ukupnim iznosom fakturisane usluge.
 
 ![](/img/it-it/finance-area/e-invoice/auto-invoice/autoinv-creation9.png)
 
-Budući da predložak dobavljača nema automatski predložak, već samo vrstu fakture koju treba izraditi, kreirani automatski izlazni račun neće imati *flag* 'Obračunato' kako bi se korisniku omogućilo da je obračuna iz prodaje.
+Pošto obrazac dobavljača ne sadrži automatski knjigovodstveni prenos, već samo vrstu računa koji treba generisati, automatski generisani izlazni račun neće imati aktiviranu oznaku **Obračunato**, kako bi korisnik mogao naknadno da izvrši obračun u modulu prodaje.
 
-### OSTALO KNJIGOVODSTVO  
-Procedure knjiženja ulaznih računa, knjiženja naknada i evidentiranja iz SDI datoteka za nabavu provjeravaju ovu novu postavku računovodstvenog predloška kako bi automatski izvršile kreiranje izlaznih dokumenata, kao što je prikazano u slučaju ručnih knjiženja.
-U slučaju knjiženja iz SDI datoteke nabave, računovodstvena registracija bit će povezana sa SDI datotekom: u tom slučaju samoračun će automatski imati popunjene ne samo reference na broj i datum računa, nego i izvorni SDI protokol.
+## Ostala knjigovodstvena knjiženja
+
+Postupci knjiženja ulaznih računa, knjiženja naknada i evidentiranja podataka iz SDI datoteka za nabavku proveravaju ovu postavku knjigovodstvenog obrasca kako bi automatski generisali izlazne dokumente, na isti način kao i kod ručnih knjiženja.
+
+Kod knjiženja iz SDI datoteke za nabavku, knjigovodstveno knjiženje biće povezano sa odgovarajućom SDI datotekom. U tom slučaju automatski generisani račun sadržaće ne samo broj i datum izvornog računa, već i izvorni SDI protokol.
