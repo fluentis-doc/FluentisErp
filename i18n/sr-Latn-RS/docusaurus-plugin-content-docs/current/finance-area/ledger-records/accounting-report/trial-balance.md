@@ -1,62 +1,61 @@
 ---
-title: Bilanca razdoblja (privremena)  
+title: Probni bilans (privremeni)
 sidebar_position: 1
 ---
 
-Ispis probnog stanja prikazuje popis podkonta s njihovim ukupnim dugovanjima/potraživanjima i saldima. 
+Izveštaj **Probni bilans** prikazuje spisak podkonta sa njihovim ukupnim dugovnim prometom, potražnim prometom i saldom.
 
-Glavni parametri filtra kojima treba upravljati prije pokretanja ispisa su:  
+Glavni parametri filtera koje je potrebno podesiti pre pokretanja izveštaja su:
 
- - raspon datuma knjiženja; prema zadanim postavkama predloženo je razdoblje od početka godine do danas. 
+- period **datuma knjiženja**. Podrazumevano je predložen period od početka godine do tekućeg datuma.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image01.png)
 
-- raspon **knjigovodstvenih** obračunskih datuma (ne miješati s konceptom ekonomskog obračunskog razdoblja).
+- period **računovodstvenih datuma obračuna** (ne treba ga mešati sa ekonomskim obračunskim periodom).
 
- ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image02.png)
+![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image02.png)
 
-Moguće je filtrirati samo neka podkonta koji se odnose na evidenciju kupaca (gornji par widgeta) i dobavljača (drugi par widgeta)  
+Moguće je filtrirati samo podkonta koja se odnose na kupce (gornji par *widgeta*) ili dobavljače (donji par *widgeta*).
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image03.png)
 
-Također je moguće isključiti određene vrste konta iz matičnih podataka kako se ne bi prikazivali detalji svakog pojedinog podkonta vezanog uz tipologiju za koju je aktivirana oznaka.
+Takođe je moguće isključiti određene vrste konta iz prikaza kako se ne bi prikazivali detalji svih podkonta koji pripadaju označenim tipovima konta.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image04.png)
 
-Ili je moguće isključiti neke vrste konta tako da se ne prikazuju detalji svakog pojedinog podkonta koji se odnose na vrstu za koju je zastavica aktivirana.
+Na isti način moguće je isključiti pojedine tipove konta kako se ne bi prikazivali detalji njihovih podkonta.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image05.png)
 
-
-Sa standardnim opisom podkonta ili korištenjem **[alternativnog opisa](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**.
+Opis podkonta može biti prikazan korišćenjem standardnog naziva ili **[alternativnog opisa](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image06.png)
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image07.png)
 
- ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image08.png)
+![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image08.png)
 
-Također je moguće uključiti privremena knjiženja (prema zadanim postavkama aktivne su samo konačna tj. definitivna).
+Moguće je uključiti i privremena knjiženja. Podrazumevano se prikazuju samo konačna (definitivna) knjiženja.
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image09.png)
 
-**OPCIJE**:
+## OPCIJE
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image10.png)
 
-**Odjel**: izbornik omogućuje da se odabere samo jedna od sekcija/odjela poduzeća prisutnih u bazi podataka kako bi se obradila bilanca samo za tu odabranu, međutim, ako nijedna nije odabrana dobit će se bilancu cjelokupnog poduzeća. Treba imati na umu da se koncept podjele odnosi na određenu poslovnu jedinicu (na koju se odnose dokumenti i knjiženja), ali se odnosi na isto poduzeće (dakle na istu pravnu osobu) koja fiskalno i pravno prikazuje financijska izvješća i računovodstvene podatke i porez.
+**Odeljenje**: omogućava izbor jednog od odeljenja poslovnog subjekta kako bi se probni bilans prikazao samo za to odeljenje. Ako nijedno odeljenje nije izabrano, izveštaj će obuhvatiti celo preduzeće.
 
-**Isključi predložak**: pomoću izbornik je moguće isključiti kretanja koja se odnose na odabrani računovodstveni predložak. Mogućnost je posebno korisna kada se želi ponovno ispisati bilancu koja se odnosi na razdoblje za koje su konta već zatvorena i stoga su stanja nula.   
+Treba imati u vidu da se pojam odeljenja odnosi na organizacionu jedinicu kojoj pripadaju dokumenti i knjiženja, ali da sva odeljenja pripadaju istom pravnom licu koje sastavlja finansijske izveštaje i poreske evidencije.
 
-**Otvaranje**: flag koji, ako je aktiviran, isključuje iz obrade bilance početna knjiženja generirana postupkom ponovnog otvaranja računa istovremeno s **[Automatsko zatvaranja konta](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
+**Isključi predložak**: omogućava isključivanje knjiženja nastalih na osnovu izabranog računovodstvenog predloška. Ova opcija je naročito korisna kada se ponovo štampa probni bilans za period u kojem su konta već zatvorena, pa bi njihovi saldi bili jednaki nuli.
 
+**Otvaranje**: kada je opcija aktivirana, iz obračuna probnog bilansa isključuju se početna knjiženja nastala postupkom ponovnog otvaranja konta u okviru procedure **[Automatsko zatvaranje konta](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Prethodni pregled | Tipka za pretpregled ispisa. |
-| Ispiši | Tipka za fizički ispis dokumenta. |
+| Pregled | Otvara pregled štampe izveštaja. |
+| Štampaj | Štampa izveštaj. |
 
-
-:::important VIDI TAKOĐER
-[**VIDEO TUTORIJALI O IZVJEŠTAJIMA RAČUNOVODSTVA**](/docs/video/finance/intro)
+:::important VIDI TAKOĐE
+[**VIDEO TUTORIJALI ZA RAČUNOVODSTVENE IZVEŠTAJE**](/docs/video/finance/intro)
 :::

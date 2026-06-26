@@ -1,42 +1,37 @@
 ---
-title: Kartica  
+title: Kartica
 sidebar_position: 2
 ---
 
-'Kartica' je privremeni ispis dnevnika knjiženja.  
+**Kartica** predstavlja privremeni izveštaj dnevnika knjiženja.
 
-Postoje različite verzije ispisa (prema različitim izgledima) koje se mogu odabrati preko izbornik u gornjem lijevom kutu.  
+Dostupno je više verzija izveštaja (sa različitim rasporedima), koje se mogu izabrati iz padajućeg menija u gornjem levom uglu.
 
-Mogućnost filtriranja prema:  
+Moguće je filtrirati podatke prema:
 
-- Datumi knjiženja (od - do);
+- Datumu knjiženja (od – do);
 
-- **Računovodstveni** obračunski datumi zapisa (od - do), ne smiju se miješati s konceptom ekonomskog obračuna;
+- **Računovodstvenom** datumu obračuna knjiženja (od – do). Ovaj datum ne treba mešati sa pojmom ekonomskog obračunskog perioda;
 
-- Broj knjiženja (od - do) i PDV-a (od - do);
+- Broju knjiženja (od – do) i PDV protokola (od – do);
 
-- Knjiga PDV-a koja sadrži kretanja koja će biti prikazana (ako nije odabrana, sva kretanja će biti prikazana)  
+- PDV registru koji sadrži knjiženja koja će biti prikazana (ako nije odabran nijedan registar, biće prikazana sva knjiženja);
 
-- Widget za odabir podkonta kako bi se prikazali zapisi koji sadrže odabrani podkonto
+- Widgetu za izbor podkonta, kako bi se prikazala samo knjiženja koja sadrže izabrani podkonto;
 
-- Vrsta dokumenta računovodstvenog zapisa
+- Vrsti dokumenta računovodstvenog knjiženja;
 
-- Operater
+- Operateru;
 
-- Predložak knjiženja na temelju kojeg su zapisi kreirani
+- Predlošku knjiženja na osnovu kojeg su knjiženja kreirana.
 
-**Moguće je odabrati više od jedne stavke iz izbornika držeći pritisnutu tipku Ctrl.**
-
+**Moguće je odabrati više stavki iz liste držanjem pritisnutog tastera Ctrl.**
 
 | Funkcija | Značenje |
 | --- | --- |
-| Prethodni pregled | Tipka za pretpregled ispisa. |
-| Ispiši | Tipka za fizički ispis dokumenta. |
+| Pregled | Otvara pregled štampe izveštaja. |
+| Štampaj | Štampa izveštaj. |
 
-
-:::important VIDI TAKOĐER  
-[**VIDEO TUTORIJALI O RAČUNOVODSTVENIM ISPISIMA**](/docs/video/finance/intro)
+:::important VIDI TAKOĐE
+[**VIDEO TUTORIJALI ZA RAČUNOVODSTVENE IZVEŠTAJE**](/docs/video/finance/intro)
 :::
-
-
-

@@ -15,7 +15,7 @@ Glavni parametri filtra kojima treba upravljati prije pokretanja ispisa su:
 
  ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image02.png)
 
-Moguće je filtrirati samo neka podkonta koji se odnose na evidenciju kupaca (gornji par widgeta) i dobavljača (drugi par widgeta)  
+Moguće je filtrirati samo neka podkonta koji se odnose na evidenciju kupaca (gornji par *widgeta*)* i dobavljača (drugi par *widgeta*)  
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/trial-balance/image03.png)
 
@@ -48,7 +48,7 @@ Također je moguće uključiti privremena knjiženja (prema zadanim postavkama a
 
 **Isključi predložak**: pomoću izbornik je moguće isključiti kretanja koja se odnose na odabrani računovodstveni predložak. Mogućnost je posebno korisna kada se želi ponovno ispisati bilancu koja se odnosi na razdoblje za koje su konta već zatvorena i stoga su stanja nula.   
 
-**Otvaranje**: flag koji, ako je aktiviran, isključuje iz obrade bilance početna knjiženja generirana postupkom ponovnog otvaranja računa istovremeno s **[Automatsko zatvaranja konta](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
+**Otvaranje**: opcija koja, ako je aktivirana, isključuje iz obrade bilance početna knjiženja generirana postupkom ponovnog otvaranja računa istovremeno s **[Automatsko zatvaranja konta](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
 
 
 | Funkcija | Značenje |

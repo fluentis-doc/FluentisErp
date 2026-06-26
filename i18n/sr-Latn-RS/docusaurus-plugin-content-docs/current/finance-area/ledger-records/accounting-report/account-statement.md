@@ -1,77 +1,76 @@
 ---
-title: Konto kartica  
+title: Konto kartica
 sidebar_position: 3
 ---
 
-Ovo je osnovno izvješće za dobivanje pojedinosti o računovodstvenim kretanjima svakog podkonta, bez obzira na vrstu (aktiva, pasiva, trošak, prihod): uz standardno izvješće za svaki podkonto bit će novi list za ispis.  
+Ovo je osnovni izveštaj za pregled detalja računovodstvenih knjiženja svakog podkonta, bez obzira na njegovu vrstu (aktiva, pasiva, rashod ili prihod). Za svaki podkonto generiše se zaseban list izveštaja.
 
-Ovaj ispis odgovara onome što se u računovodstvenoj terminologiji naziva "glavna knjiga".  
+Ovaj izveštaj odgovara onome što se u računovodstvenoj praksi naziva **glavna knjiga**.
 
-**GLAVNI FILTRI**:
+## GLAVNI FILTERI
 
-- Podaci koji se odnose na knjiženje  
+- Podaci o knjiženju
 
-   - **Konto**: Referentni podkonto (npr. za pregled kretanja i rezultirajućeg stanja određenog dobavljača za određeni raspon datuma ili za pregled prihoda koji se odnose na određeni podkonto kontnog plana);  
+  - **Konto**: referentni podkonto (npr. za pregled prometa i salda određenog dobavljača u izabranom periodu ili za pregled prihoda evidentiranih na određenom kontu kontnog plana);
+  - Datum knjiženja;
+  - Datum **obračuna**;
+  - Broj knjiženja;
+  - Vrsta / datum / broj dokumenta, ukoliko postoji. Datum i broj dokumenta mogu izostati kod naloga glavne knjige;
+  - Tip konta.
 
-   - Datum knjiženja  
+- PDV podaci
 
-   - Datum **obračuna**
+  - Registar;
+  - Protokol (otvoriti proširivi meni).
 
-   - Broj knjiženja  
+- Vrsta knjiženja (privremeno i/ili konačno).
 
-   - Vrsta / datum / broj dokumenta, ako postoji - datum i broj dokumenta možda neće biti prisutni za unose u dnevnik
+## OSTALE KARAKTERISTIKE IZVEŠTAJA
 
-   - Tip konta 
+- Filteri **Agent** i **Banka**: omogućavaju, na primer, prikaz konto kartica svih kupaca dodeljenih određenom agentu ili svih dobavljača plaćenih preko određenog bankovnog računa.
 
-- PDV podaci 
+- Filter **Projekti**: omogućava filtriranje podkonta povezanih sa određenim projektom.
 
-   - Registar
+- **Prikaži iznose u valuti**: kada je opcija uključena, prikazuju se i iznosi u originalnoj valuti (uz iznose u evrima, bez grupisanja). Ako opcija nije uključena, prikazuju se samo dugovna i potražna knjiženja u valuti preduzeća.
 
-   - Protokol (otvoriti proširivi izbornik)
+- **Prikaži povezana knjiženja**: kada je opcija uključena, prikazuju se i povezana knjiženja koja se odnose na promet izabranog podkonta (horizontalni A4 format).
 
-- Vrsta knjiženja (privremena i/ili konačna)
+- **Broj redova**: ovo polje postaje aktivno kada je uključena prethodna opcija i određuje koliko će redova protivstavki iz odeljka **[Knjiženje glavne knjige](/docs/finance-area/ledger-records/records/ledger-record)** biti prikazano na konto kartici. Na primer, ukoliko jedno knjiženje sadrži više konta prihoda, vrednost se može povećati kako bi bile prikazane sve protivstavke.
 
- 
+- **Napomena**: omogućava unos proizvoljnog teksta koji će biti prikazan samo na ovom ispisu. Polje se automatski briše zatvaranjem obrasca.
 
-**OSTALI KARAKTERISTIČNI ELEMENTI IZVJEŠĆA**:
+### Pregled knjiženja po valuti
 
-- filtri **Agent** i **Banka**: moguće je zatražiti npr. izvode računa svih kupaca označenih nekim agentom ili svih dobavljača plaćenih preko određenog bankovnog računa.  
+- **Prikaži konto karticu u valuti**: aktiviranjem ove opcije omogućava se izbor valute, automatski se isključuje opcija **Prikaži iznose u valuti**, a knjiženja se grupišu po izabranoj valuti uz prikaz ukupnih iznosa.
 
-- filter **Projekti**: moguće je filtrirati podkonta vezana uz određeni projekt
+- **Valuta**: omogućava izbor referentne valute. Prikazaće se samo knjiženja evidentirana u izabranoj valuti za odabrani podkonto.
 
-- **Prikaži iznose u valuti**: uz aktivan flag bit će prikazani i iznosi u valuti (uz iznose u eurima, bez ikakvog grupiranja) bez ove zastavice bit će prikazani samo podaci o dugovanju/potraživanju u valuti poduzeća,, 
+Knjiženja je moguće sortirati prema **datumu knjiženja** ili prema **datumu obračuna**. Ova opcija je posebno korisna kada se zatvaranje i ponovno otvaranje konta evidentiraju sa različitim datumima knjiženja, kako bi saldo bio pravilno prikazan.
 
-- **Prikaži povezana knjiženja**: aktivan flag prikazuje povezana knjiženja koji se odnose na kretanja odabranog podkonta (vodoravni A4 format)
+### Poslednji datum otvaranja konta
 
-- **Broj redova**: U ovom polju, koje postaje aktivno ako je prethodno navedena oznaka uključena, navodi se koliko redaka protustavke unesenih u odjeljak **[Zapis glavne knjige](/docs/finance-area/ledger-records/records/ledger-record)** će biti prikazano u izvatku računa. Na primjer, ako postoji više konta prihoda koji se odnose na zapis izdanog računa, vrijednost se može povećati ako knjiženje ne uključuje sva suprotna konta kako su upisana u knjiženju.  
+Za razliku od **[Pregleda konta](/docs/finance-area/ledger-records/records/view-accounts)**, gde su sva knjiženja podkonta uvek dostupna, kod štampanog izveštaja broj obrađenih zapisa ograničava se radi boljih performansi.
 
-- **Bilješke**: ovo polje omogućuje unos alfanumeričkih podataka koji će biti prikazani u ispisu. Može biti korisno za umetanje brze bilješke koja ostaje važeća samo za ispis koji se u tom trenutku obrađuje, polje se resetira zatvaranjem obrasca.  
+Zbog toga aplikacija za početno stanje koristi **poslednji datum otvaranja konta**, koji se automatski predlaže kao poslednji datum pre početka izabranog perioda.
 
-Mogućnost pregleda kretanja izraženih u određenoj valuti putem:  
+**Primer:**
 
-- **Pregledajte E/C u valuti**: flag koji također aktivira izbornik za odabir valute i deaktivira oznake ‘Prikaži iznose u valuti’
-permette inoltre di raggruppare i movimenti per ogni singola valuta e di totalizzarli
+Ako korisnik postavi period od **01.09.2017. do 31.12.2017.** (za datum knjiženja i datum obračuna), a poslednji datum otvaranja konta bude **01.01.2017.**, izveštaj će sadržati:
 
-- **Valuta**: omogućuje odabir referentne valute za filtriranje prikaza vrijednosti. Bit će prikazane samo vrijednosti denominirane u odabranoj valuti za odabrani podkonto.    
+- početno stanje obračunato za period od **01.01.2017. do 31.08.2017.**;
+- detaljna knjiženja za period **01.09.2017. – 31.12.2017.**.
 
-Zapise je moguće sortirati prema datumu knjiženja ili prema datumu obračuna. Opcija postaje posebno zanimljiva u slučaju da se zatvaranje/ponovno otvaranje konta provodi s drugim datumom knjiženja, kako bi se imao progresivni saldo;
+Ako korisnik obriše poslednji datum otvaranja konta, rezultat će biti identičan prikazu u obrascu **Pregled konta**.
 
-**Zadnji datum otvaranja konta**:Za razliku od **[prikaza računa](/docs/finance-area/ledger-records/records/view-accounts)**,  u kojem su sva kretanja svakog podkonta uvijek vidljiva, ispis izvješća je proces u kojem je važno ograničiti broj zapisa koji se prikazuju kako ne bi utjecali na zauzimanje resursa računala.  
+### Više podataka na jednoj stranici
 
-U tom smislu aplikacija će ispisivati zapise uzimajući u obzir početno stanje počevši od zadnjeg datuma otvaranja konta koji je predložen kao najviši datum prije početnih filtera izvješća.  
-
-Primjer: ako korisnik filtrira kretanja od 01.09.2017. do 31.12.2017. (i kao datum knjiženja i kao datum obračuna), postupak predlaže zadnje otvaranje računa s datumom 01.01.2017., rezultat će biti: početno stanje izračunato od 01.01.2017. do 31.08.2017., detalji kretanja povezanih s knjiženjima s datumima unutar raspona 01.09.-31.12.2017. (dakle, samo podkontakoja imaju barem jedno kretanje između zadnjeg datuma otvaranja konta i datuma konačnog filtra). Međutim, ako korisnik izbriše zadnji datum otvaranja konta, rezultat će biti identičan onom prikazanom u prikazu konta.  
-
-**Više podataka na 1 stranici**: ovo je sažetak izvješća koji predstavlja popis svih podkonta bez ikakvih skokova na stranice. Preporuča se korištenje ovog izvješća za ispis knjiga koje će se priložiti završnim ispisima obračunske godine.  
-
-
+Ova opcija generiše sažeti izveštaj u kojem se svi podkonti prikazuju uzastopno, bez preloma stranica. Preporučuje se za štampanje glavne knjige koja se prilaže završnim godišnjim izveštajima.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Prethodni pregled | Tipka za pregled ispisa konta kartice |
-| Ispiši | Tipka za fizički ispis dokumenta konta kartice |
+| Pregled | Otvara pregled štampe konto kartice. |
+| Štampaj | Štampa konto karticu. |
 
-
-:::important VIDI TAKOĐER 
-[**VIDEO TUTORIJALI O RAČUNOVODSTVENIM ISPISIMA**](/docs/video/finance/intro)
+:::important VIDI TAKOĐE
+[**VIDEO TUTORIJALI ZA RAČUNOVODSTVENE IZVEŠTAJE**](/docs/video/finance/intro)
 :::

@@ -3,25 +3,19 @@ title: Detalji računa
 sidebar_position: 6
 ---
 
-Ispis prikazuje pojedinosti kretanja različitih računovodstvenih podkonta.  
+Ovaj izveštaj prikazuje detalje knjiženja različitih računovodstvenih podkonta.
 
-Izgled je sličan ispisu **[Bankovnog izvoda](/docs/finance-area/ledger-records/accounting-report/account-statement)** što ga čini na neki način čini pojednostavljenom verzijom i na koju se upućuje operatera. 
+Izgled izveštaja sličan je **[Izvodu računa](/docs/finance-area/ledger-records/accounting-report/account-statement)**, zbog čega predstavlja njegovu pojednostavljenu verziju namenjenu svakodnevnom radu operatera.
 
+## SPECIFIČNI ELEMENTI
 
-SPECIFIČNI ELEMENTI:
-
-Prikaz opisa: aktiviranjem ove zastavice ispisuje se stupac opisa kretanja u kojem se prikazuje sadržaj retka s detaljnim opisom za taj podkonto prisutan u administraciji (računovodstvu).  
-
+**Prikaži opis**: aktiviranjem ove opcije prikazuje se kolona sa opisom knjiženja, u kojoj se ispisuje detaljan opis reda za odgovarajući podkonto evidentiran u računovodstvu.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Pregled | Tipka za pretpregled ispisa. |
-| Ispiši | Tipka za fizički ispis dokumenta. |
+| Pregled | Otvara pregled štampe izveštaja. |
+| Štampaj | Štampa izveštaj. |
 
-
-:::important VIDI TAKOĐER 
-[**VIDEO TUTORIJALI O RAČUNOVODSTVENIM ISPISIMA**](/docs/video/finance/intro)
+:::important VIDI TAKOĐE
+[**VIDEO TUTORIJALI ZA RAČUNOVODSTVENE IZVEŠTAJE**](/docs/video/finance/intro)
 :::
-
-
-

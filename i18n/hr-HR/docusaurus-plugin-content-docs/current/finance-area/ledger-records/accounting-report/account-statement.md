@@ -12,26 +12,17 @@ Ovaj ispis odgovara onome što se u računovodstvenoj terminologiji naziva "glav
 - Podaci koji se odnose na knjiženje  
 
    - **Konto**: Referentni podkonto (npr. za pregled kretanja i rezultirajućeg stanja određenog dobavljača za određeni raspon datuma ili za pregled prihoda koji se odnose na određeni podkonto kontnog plana);  
-
    - Datum knjiženja  
-
    - Datum **obračuna**
-
    - Broj knjiženja  
-
    - Vrsta / datum / broj dokumenta, ako postoji - datum i broj dokumenta možda neće biti prisutni za unose u dnevnik
-
    - Tip konta 
 
 - PDV podaci 
-
    - Registar
-
    - Protokol (otvoriti proširivi izbornik)
-
 - Vrsta knjiženja (privremena i/ili konačna)
 
- 
 
 **OSTALI KARAKTERISTIČNI ELEMENTI IZVJEŠĆA**:
 
@@ -39,9 +30,9 @@ Ovaj ispis odgovara onome što se u računovodstvenoj terminologiji naziva "glav
 
 - filter **Projekti**: moguće je filtrirati podkonta vezana uz određeni projekt
 
-- **Prikaži iznose u valuti**: uz aktivan flag bit će prikazani i iznosi u valuti (uz iznose u eurima, bez ikakvog grupiranja) bez ove zastavice bit će prikazani samo podaci o dugovanju/potraživanju u valuti poduzeća,, 
+- **Prikaži iznose u valuti**: uz aktiviranu opciju bit će prikazani i iznosi u valuti (uz iznose u eurima, bez ikakvog grupiranja) bez ove zastavice bit će prikazani samo podaci o dugovanju/potraživanju u valuti poduzeća,, 
 
-- **Prikaži povezana knjiženja**: aktivan flag prikazuje povezana knjiženja koji se odnose na kretanja odabranog podkonta (vodoravni A4 format)
+- **Prikaži povezana knjiženja**: uz aktiviranu opciju prikazuje povezana knjiženja koji se odnose na kretanja odabranog podkonta (vodoravni A4 format)
 
 - **Broj redova**: U ovom polju, koje postaje aktivno ako je prethodno navedena oznaka uključena, navodi se koliko redaka protustavke unesenih u odjeljak **[Zapis glavne knjige](/docs/finance-area/ledger-records/records/ledger-record)** će biti prikazano u izvatku računa. Na primjer, ako postoji više konta prihoda koji se odnose na zapis izdanog računa, vrijednost se može povećati ako knjiženje ne uključuje sva suprotna konta kako su upisana u knjiženju.  
 
@@ -49,8 +40,7 @@ Ovaj ispis odgovara onome što se u računovodstvenoj terminologiji naziva "glav
 
 Mogućnost pregleda kretanja izraženih u određenoj valuti putem:  
 
-- **Pregledajte E/C u valuti**: flag koji također aktivira izbornik za odabir valute i deaktivira oznake ‘Prikaži iznose u valuti’
-permette inoltre di raggruppare i movimenti per ogni singola valuta e di totalizzarli
+- **Pregledajte E/C u valuti**: opcija koja također aktivira izbornik za odabir valute i deaktivira oznake ‘Prikaži iznose u valuti’ omogućuje i grupiranje stavki po pojedinoj valuti te izračun njihovih ukupnih iznosa.
 
 - **Valuta**: omogućuje odabir referentne valute za filtriranje prikaza vrijednosti. Bit će prikazane samo vrijednosti denominirane u odabranoj valuti za odabrani podkonto.    
 
@@ -60,9 +50,9 @@ Zapise je moguće sortirati prema datumu knjiženja ili prema datumu obračuna. 
 
 U tom smislu aplikacija će ispisivati zapise uzimajući u obzir početno stanje počevši od zadnjeg datuma otvaranja konta koji je predložen kao najviši datum prije početnih filtera izvješća.  
 
-Primjer: ako korisnik filtrira kretanja od 01.09.2017. do 31.12.2017. (i kao datum knjiženja i kao datum obračuna), postupak predlaže zadnje otvaranje računa s datumom 01.01.2017., rezultat će biti: početno stanje izračunato od 01.01.2017. do 31.08.2017., detalji kretanja povezanih s knjiženjima s datumima unutar raspona 01.09.-31.12.2017. (dakle, samo podkontakoja imaju barem jedno kretanje između zadnjeg datuma otvaranja konta i datuma konačnog filtra). Međutim, ako korisnik izbriše zadnji datum otvaranja konta, rezultat će biti identičan onom prikazanom u prikazu konta.  
+Primjer: ako korisnik filtrira kretanja od 01.09.2017. do 31.12.2017. (i kao datum knjiženja i kao datum obračuna), postupak predlaže zadnje otvaranje računa s datumom 01.01.2017., rezultat će biti: početno stanje izračunano od 01.01.2017. do 31.08.2017., detalji kretanja povezanih s knjiženjima s datumima unutar raspona 01.09.-31.12.2017. (dakle, samo konta imaju barem jedno kretanje između zadnjeg datuma otvaranja konta i datuma konačnog filtra). Međutim, ako korisnik izbriše zadnji datum otvaranja konta, rezultat će biti identičan onom prikazanom u prikazu konta.  
 
-**Više podataka na 1 stranici**: ovo je sažetak izvješća koji predstavlja popis svih podkonta bez ikakvih skokova na stranice. Preporuča se korištenje ovog izvješća za ispis knjiga koje će se priložiti završnim ispisima obračunske godine.  
+**Više podataka na 1 stranici**: ovo je sažetak izvješća koji predstavlja popis svih podkonta bez ikakvih skokova na stranice. Preporučuje se korištenje ovog izvješća za ispis knjiga koje će se priložiti završnim ispisima obračunske godine.  
 
 
 

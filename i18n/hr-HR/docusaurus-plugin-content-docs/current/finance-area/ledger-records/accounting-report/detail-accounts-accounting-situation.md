@@ -5,7 +5,7 @@ sidebar_position: 5
 
 Na ispisu se ispisuje dugovno/potražno/stanje podkonta.
 
-Moguće je posebno filtrirati podračune povezane s određenim projektom (bivši Ugovor).
+Moguće je posebno filtrirati konta povezana s određenim projektom (Nalogom).
 
 **SPECIFIČNE OPCIJE IZVJEŠĆA**:
 

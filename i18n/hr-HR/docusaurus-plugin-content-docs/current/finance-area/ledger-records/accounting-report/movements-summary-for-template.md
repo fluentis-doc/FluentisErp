@@ -7,7 +7,7 @@ Ispis omogućuje pregled računovodstvenih zapisa filtriranjem prema predlošku 
 
 ![](/img/it-it/finance-area/ledger-records/accounting-report/movements-summary-for-template/image01.png)
 
-Tu su i uobičajeni filteri na glavnim podacima računovodstvenih evidencija, a posebno widget za traženje evidencija po željenom podračunu.  
+Tu su i uobičajeni filteri na glavnim podacima računovodstvenih evidencija, a posebno widget za traženje evidencija po željenom kontu.  
 
 U donjem dijelu obrasca nalaze se dva prikaza koja omogućuju upravljanje bilo kojim grupiranjem podataka unutar ispisa.  
 
