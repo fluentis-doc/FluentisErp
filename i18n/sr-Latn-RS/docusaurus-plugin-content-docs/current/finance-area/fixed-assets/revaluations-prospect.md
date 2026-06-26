@@ -1,23 +1,17 @@
 ---
-title: Tablica revalorizacije 
+title: Izveštaj o revalorizaciji
 sidebar_position: 4
 ---
 
-Obrazac za ispis izvješća o revalorizaciji omogućuje definiranje uobičajenih filtera pretraživanja za izdvajanje podataka. 
+Ovaj obrazac omogućava štampanje izveštaja o revalorizaciji uz korišćenje standardnih filtera za izdvajanje željenih podataka.
 
-Izvješće omogućuje sažetak detaljnih podataka o revalorizacijama povezanim s različitim osnovnim sredstvima, prema vrsti grupiranja postavljenoj u tablici kategorije osnovnih sredstava.   
+Izveštaj prikazuje zbirni pregled podataka o revalorizacijama evidentiranim za različita osnovna sredstva, grupisan prema načinu grupisanja definisanom u tabeli **Kategorije osnovnih sredstava**.
 
-Za više informacija o parametrima filtera obrazaca **[pogledati ovdje](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase).**
+Više informacija o parametrima za filtriranje dostupno je u dokumentu **[Godišnja nabavka osnovnih sredstava](/docs/finance-area/fixed-assets/reports-fixed-assets/yearly-fixed-assets-purchase)**.
 
-
+### Traka menija
 
 | Funkcija | Značenje |
 | --- | --- |
-| Značenje | Tipka za pretpregled ispisa. |
-| Ispiši | Tipka za fizički ispis dokumenta. |
-
-
-
-
-
-
+| Pregled | Otvara pregled izveštaja pre štampanja. |
+| Štampaj | Štampa izveštaj. |

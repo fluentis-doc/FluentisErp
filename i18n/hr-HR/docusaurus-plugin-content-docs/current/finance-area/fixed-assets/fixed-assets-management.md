@@ -23,7 +23,7 @@ Ova procedura predstavlja alternativu unosu kartice izravno iz računovodstvenog
 
 **Zaglavlje**
 
-Postavljanje relevantne **Kategorije osnovnog sredstva** moguće je iz padaćujeg izbornika (povezano s tablicom **[kategorije osnovnog sredstva](/docs/configurations/tables/finance/fixed-asset-category)**);
+Postavljanje relevantne **Kategorije osnovnog sredstva** moguće je iz padajućeg izbornika (povezano s tablicom **[kategorije osnovnog sredstva](/docs/configurations/tables/finance/fixed-asset-category)**);
 
 **Vrsta posjedovanja**: Normalno vlasništvo je predloženo prema zadanim postavkama (osnovno sredstvo u vlasništvu); postoji i osnovno sredstvo u najmu i leasingu, koja se numerira odvojeno od ostalih i ne završava u ispisu knjige amortiziranih sredstava. Ovo upravljanje omogućuje simulaciju izračuna amortizacije na kraju godine za usporedbu s naknadom za leasing plaćenom u svrhu izračuna poreza. U slučaju osnovnog sredstva koja nije u vlasništvu, bit će moguće umetnuti neke referentne bilješke.  
 

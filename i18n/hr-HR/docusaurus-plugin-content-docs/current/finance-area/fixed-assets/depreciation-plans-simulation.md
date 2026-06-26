@@ -7,7 +7,7 @@ Svaka simulacija je povezana s korisnikom koji ju je izračunao: kada se obrazac
 
 Maksimalni raspon godina koji se očekuje za simulaciju je raspon od 10 godina. Sljedeće oznake omogućuju da se definira koje vrste vlasništva (vlasništvo, leasing, najam) treba uzeti u obzir u simulaciji.
 
-Na donjem popisu bit će naznačeni različiti planovi amortizacije koje treba izračunati: za svaki od njih bit će moguće definirati koje vrste amortizacije treba simulirati. Tipka Izračunaj pokreće simulaciju s označenim redovim.
+Na donjem popisu bit će naznačeni različiti planovi amortizacije koje treba izračunati: za svaki od njih bit će moguće definirati koje vrste amortizacije treba simulirati. Tipka Izračunaj pokreće simulaciju s označenim redovima.
 
 Nakon što su postavke spremljene, izračun će se provesti pomoću odgovarajuće tipke: na kraju obrade prikazat će se zbirni obrazac ukupnih kategorija za svaku godinu/plan ili za svaki plan/godinu. 
 

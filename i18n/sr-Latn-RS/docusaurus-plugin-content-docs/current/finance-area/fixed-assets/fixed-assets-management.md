@@ -5,45 +5,52 @@ sidebar_position: 3
 
 LINK:
 
-**[Detalj](/docs/finance-area/fixed-assets/fixed-assets-management/detail)**
+**[Detalji](/docs/finance-area/fixed-assets/fixed-assets-management/detail)**
 
-**[Operacije imovine](/docs/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations)**
+**[Operacije osnovnog sredstva](/docs/finance-area/fixed-assets/fixed-assets-management/patrimonial-operations)**
 
 **[Ekonomske operacije](/docs/finance-area/fixed-assets/fixed-assets-management/economical-operations)**
 
 **[Povezana osnovna sredstva](/docs/finance-area/fixed-assets/fixed-assets-management/linked-fixed-assets)**
 
-**[Svojstva imovine](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
+**[Svojstva osnovnog sredstva](/docs/finance-area/fixed-assets/fixed-assets-management/fixed-assets-property)**
 
- 
-Iz ove forme moguće je ručno unijeti novu karticu dugotrajne imovine (ova vrsta operacije obično nije predviđena; praktičan primjer može biti unos postojeće dugotrajne imovine za koju se ne želi učitati već postojeće računovodstveno knjiženje, primjerice iz prethodnog softvera).
+Ovaj obrazac omogućava ručni unos nove kartice osnovnog sredstva. Ovakav način unosa se uglavnom koristi samo u posebnim slučajevima, na primer kada je potrebno evidentirati postojeće osnovno sredstvo bez preuzimanja već postojećih računovodstvenih knjiženja iz prethodnog informacionog sistema.
 
-Ova procedura predstavlja alternativu unosu kartice izravno iz računovodstvenog knjiženja ulaznog računa posebno konfiguriranog za upravljanje dugotrajnom imovinom (što je ujedno i preporučena procedura).
+Ova procedura predstavlja alternativu kreiranju kartice osnovnog sredstva direktno iz računovodstvenog knjiženja ulaznog računa koje je posebno podešeno za upravljanje osnovnim sredstvima, što je ujedno i preporučeni način rada.
 
+## Zaglavlje
 
-**Zaglavlje**
+**Kategorija osnovnog sredstva** može se odabrati iz padajuće liste povezane sa tabelom **[Kategorije osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-category)**.
 
-Postavljanje relevantne **Kategorije osnovnog sredstva** moguće je iz padaćujeg izbornika (povezano s tablicom **[kategorije osnovnog sredstva](/docs/configurations/tables/finance/fixed-asset-category)**);
+**Vrsta posedovanja**  
+Podrazumevano je postavljeno **Vlasništvo**. Pored toga, moguće je evidentirati osnovna sredstva u **zakupu** ili **lizingu**. Takva sredstva vode se pod zasebnom numeracijom i ne ulaze u štampu registra amortizovanih osnovnih sredstava.
+Ovakav način evidencije omogućava simulaciju obračuna amortizacije na kraju godine radi poređenja sa troškovima lizinga u poreske svrhe.
+Za osnovna sredstva koja nisu u vlasništvu moguće je uneti dodatne napomene.
 
-**Vrsta posjedovanja**: Normalno vlasništvo je predloženo prema zadanim postavkama (osnovno sredstvo u vlasništvu); postoji i osnovno sredstvo u najmu i leasingu, koja se numerira odvojeno od ostalih i ne završava u ispisu knjige amortiziranih sredstava. Ovo upravljanje omogućuje simulaciju izračuna amortizacije na kraju godine za usporedbu s naknadom za leasing plaćenom u svrhu izračuna poreza. U slučaju osnovnog sredstva koja nije u vlasništvu, bit će moguće umetnuti neke referentne bilješke.  
+**Odeljenje**  
+Podrazumevano se predlaže trenutno odeljenje, ali ga je moguće promeniti prilikom unosa novog osnovnog sredstva. Nakon kreiranja kartice, ovo polje više nije moguće menjati.
 
-**Odjel**: prema zadanim postavkama, postavljeno je na odjel koji se koristi, a može se promijeniti ako je potrebno. Polje se može postaviti tek kada se umetne novo osnovno sredstvo jer se više ne može mijenjati.  
+**Vrsta obračuna**  
+Polje koje se uglavnom ne popunjava prilikom ručnog unosa. Njegova vrednost se automatski određuje kroz računovodstveno knjiženje na osnovu podešavanja u tabeli **Vrste knjiženja osnovnih sredstava**.
 
-**Vrsta obračuna**: polje koje se obično ne popunjava prilikom ručnog unosa obrasca. Popunjava se u računovodstvenom zapisu (definirano u tablici Vrste knjiženja osnovnih sredstava). 
+**Prefiks**  
+Može biti deo numeracije osnovnih sredstava. Ako nije definisan, numeracija će biti jedinstvena za sva osnovna sredstva aktivnog preduzeća i odeljenja.
 
-**Predšifra**: može se pripisati i numeraciji sredstava; ako nije umetnuto, predloženo numeriranje bit će jedinstveno za svako osnovno sredstvo aktivnog poduzeća/odjela,. Umetanjem predšifre broj osnovnog sredstva bit će jedinstven za svaku od postojećih predšifara.  
+Ako se koristi prefiks, numeracija će biti jedinstvena u okviru svakog pojedinačnog prefiksa.
 
-**Materijalna/Nematerijalna**: odnosi se na “prirodu" osnovnog sredstva (materijalno ili nematerijalno); automatski se predlaže na temelju podataka sadržanih u kategoriji osnovnih sredstava kojoj pripada.  
+**Materijalno / Nematerijalno**  
+Označava prirodu osnovnog sredstva i automatski se preuzima iz kategorije osnovnog sredstva.
 
-**Bilješke o sredstvu**: slobodno polje za napomene.  
+**Napomene o osnovnom sredstvu**  
+Slobodno tekstualno polje namenjeno unosu dodatnih informacija.
 
-**Broj sredstva**: automatski se predlaže progresivnim redoslijedom, može se ručno unijeti kao jedinstvena oznaka (također u odnosu na prethodni kod).  
+**Broj osnovnog sredstva**  
+Automatski se predlaže kao sledeći raspoloživi broj, ali ga je moguće uneti i ručno kao jedinstvenu oznaku.
 
-**Opis**: obavezno polje, bit će prikazano i u različitim ispisima i postupcima povezanih procedura.  
+**Opis**  
+Obavezno polje koje će biti prikazano u svim izveštajima i povezanim procedurama.
 
-Ovisno o postavkama kategorija osnovnih sredstava i parametrima modula, vrsta amortizacije koja je dodijeljena osnovnom sredstvu također može biti vidljiva, s eventualnim određenim postotkom koji će se koristiti za samo to osnovno sredstvo umjesto standardnog tipa.  
+U zavisnosti od podešavanja kategorije osnovnog sredstva i parametara modula, može biti prikazan i tip amortizacije dodeljen osnovnom sredstvu, kao i poseban procenat amortizacije koji će važiti samo za to osnovno sredstvo umesto standardnog procenta definisanog kategorijom.
 
 ![](/img/it-it/finance-area/fixed-assets/fixed-assets-management/image01.png)
-
-
-

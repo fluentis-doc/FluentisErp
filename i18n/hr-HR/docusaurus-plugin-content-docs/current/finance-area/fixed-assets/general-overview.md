@@ -3,7 +3,7 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul **Osnovna sredstva** omogućuje upravljanje dugotrajnom imovinom/osnovim sredstvima koja se koriste u poduzeću.  
+Modul **Osnovna sredstva** omogućuje upravljanje dugotrajnom imovinom/osnovnim sredstvima koja se koriste u poduzeću.  
 Modul se nalazi u *Administrativnom području* i ažurira se prilikom kupnje/prodaje putem unosa u općoj knjigovodstvenoj evidenciji temeljenoj na specifičnim predlošcima koji predviđaju njeno kretanje. No, evidencije ovog modula mogu se također unositi i usklađivati ručno. Iz ovog modula provode se proračuni amortizacije prema računovodstvenim/poreznim pravilima, kao i višegodišnje simulacije i porezni ispisi.  
 Prije nego što se pristupi unosu ili izradi imovine, potrebno je osigurati da su svi podaci i parametri modula ispravno postavljeni.
 
@@ -39,7 +39,7 @@ Prije nego što se pristupi unosu ili izradi imovine, potrebno je osigurati da s
 
 [Vlasništvo dugotrajne imovine/osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-precode),  
 
-[Vrste knjiženja dugotrajne imovine/osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-property), Tipi contabilizzazione cespiti,
+[Vrste knjiženja dugotrajne imovine/osnovnih sredstava](/docs/configurations/tables/finance/fixed-asset-property),
 
 [Vrste amortizacije](/docs/configurations/tables/finance/objective-amortization-types),  
 

@@ -1,21 +1,18 @@
 ---
-title: Upravljanje podacima predmeta   
+title: Upravljanje podacima osnovnog sredstva
 sidebar_position: 9
 ---
 
-Ako kategorija osnovnog sredstva predstavlja upravljanje objektivnom amortizacijom, bit će prisutan istoimeni upravljački list: u njemu će gornji prikaz prikazati popis operacija imovine, tj. osnovnog sredstva prisutnih u osnovnom sredstvu kako se dodaju, ali koje se mogu djelomično mijenjati u ovom odjeljku (dopuštena su brisanja i novi redovi neovisni o 'službenim'). Donja mreža sadržavat će, međutim, objektivne izračune amortizacije, prema postotku osnovnog sredstva ili objektivnoj vrsti amortizacije umetnutoj u zaglavlje samog osnovnog sredstva.
+Ako kategorija osnovnog sredstva koristi **objektivnu amortizaciju**, biće dostupna istoimena kartica za upravljanje.
 
-TRAKA IZBORNIKA: predstavlja izbornik predmetnog obrasca, odnosno područje u kojem je moguće provoditi radnje vezane uz sredstvo pod upravljanjem. Popis mogućih funkcija prikazan je u nastavku:  
+U gornjem delu prikazuje se lista operacija osnovnog sredstva koje su evidentirane na kartici osnovnog sredstva. Ove operacije se automatski preuzimaju, ali ih je u ovom odeljku moguće delimično uređivati. Dozvoljeno je brisanje postojećih redova i dodavanje novih, nezavisno od „zvaničnih“ operacija osnovnog sredstva.
 
+Donji deo obrasca prikazuje obračune objektivne amortizacije koji se izračunavaju na osnovu procenta amortizacije definisanog za osnovno sredstvo ili na osnovu vrste objektivne amortizacije određene u zaglavlju kartice osnovnog sredstva.
+
+### Traka menija
 
 | Funkcija | Značenje |
 | --- | --- |
-| Nova operacija | Aktivira kursor za umetanje nove linije operacije cilja. |
-| Otkaži operaciju | Briše operaciju cilja odabranu u mreži. |
-| Obavlja objektivnu amortizaciju | Izračunajte objektivnu amortizaciju za godinu postavljenu u polju iznad amortizacijske mreže. |
-
-
-
-
-
-
+| Nova operacija | Aktivira unos novog reda operacije objektivne amortizacije. |
+| Otkaži operaciju | Briše izabranu operaciju objektivne amortizacije iz tabele. |
+| Izračunaj objektivnu amortizaciju | Pokreće obračun objektivne amortizacije za godinu definisanu u polju iznad tabele amortizacije. |
