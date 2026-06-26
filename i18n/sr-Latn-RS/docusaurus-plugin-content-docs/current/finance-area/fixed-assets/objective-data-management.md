@@ -1,5 +1,5 @@
 ---
-title: Upravljanje podacima osnovnog sredstva
+title: Upravljanje podacima (objektno)
 sidebar_position: 9
 ---
 
