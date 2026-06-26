@@ -1,40 +1,32 @@
 ---
-title: Traži
+title: Pretraga
 sidebar_position: 1
 ---
 
-Ovaj obrazac omogućuje pretraživanje zatvaranja konta koji su prethodno obrađeni i prisutni u bazi podataka. 
+Ovaj obrazac omogućava pretragu prethodno kreiranih zatvaranja konta koja se nalaze u bazi podataka.
 
-**S ove pozicije moguće je obraditi novo zatvaranje računa pomoću naredbe [Novo](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
+**Sa ove pozicije moguće je pokrenuti novo zatvaranje konta korišćenjem komande [Novo](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing).**
 
-U zaglavlju se nalaze neka polja za filtriranje, posebno **broj verzije** a to je redni broj koji identificira zatvaranje za svako poduzeće prisutno u bazi podataka. Stoga mora biti jedinstven broj.
+U zaglavlju obrasca nalaze se polja za filtriranje, od kojih je najvažnije **Broj verzije**, odnosno redni broj koji jedinstveno identifikuje zatvaranje konta za svako preduzeće u bazi podataka.
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/search/image01.png)
 
- 
-POLJA U PREGLEDU:
+### Polja u pregledu
 
-**Opis**: slobodno dodjeljiv u fazi kreiranja novog zatvaranja;
+**Opis**: opis zatvaranja unet prilikom njegovog kreiranja.
 
-**Datum**: datum obrade zatvaranja;
+**Datum**: datum izvršenja zatvaranja konta.
 
-**Verzija**: broj verzije zatvaranja (pažnja, mora biti jedinstven za svaku tvrtku i predstavlja redni broj različitih zatvaranja u bazi podataka);
+**Verzija**: broj verzije zatvaranja. Ovaj broj mora biti jedinstven za svako preduzeće i predstavlja redni broj svih zatvaranja evidentiranih u bazi podataka.
 
-**Knjiženje**: označava je li zatvaranje proknjiženo (aktivna oznaka) ili samo izračunato (neaktivna oznaka);
+**Knjiženo**: označava da li je zatvaranje konta proknjiženo (oznaka uključena) ili je samo obračunato (oznaka isključena).
 
-**Napomene**: polje koje se slobodno popunjava u fazi kreiranja zatvaranja.
-
+**Napomene**: slobodno polje koje se popunjava prilikom kreiranja zatvaranja konta.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za pretraživanje prethodnog zatvaranja konta. |
-| Novo | Tipka za kreiranje novog zatvaranja konta. |
-| Izmjeni | Tipka, koja se može aktivirati nakon što se odabere zatvaranje računa, a koja omogućuje izmjenu zapisa zatvaranja. |
-| Prikaži | Tipka, koja se može aktivirati nakon što se odabere zatvaranje konta, a koja omogućuje prikaz zapisa zatvaranja. |
-| Izbriši | Tipka, koja se može aktivirati nakon što se odabere zatvaranje konta, a koja omogućuje brisanje zapisa zatvaranja. |
-
-
-
-
-
-
+| Traži | Pokreće pretragu prethodno kreiranih zatvaranja konta. |
+| Novo | Kreira novo zatvaranje konta. |
+| Izmeni | Omogućava izmenu izabranog zatvaranja konta. |
+| Prikaži | Otvara izabrano zatvaranje konta u režimu pregleda. |
+| Obriši | Briše izabrano zatvaranje konta. |

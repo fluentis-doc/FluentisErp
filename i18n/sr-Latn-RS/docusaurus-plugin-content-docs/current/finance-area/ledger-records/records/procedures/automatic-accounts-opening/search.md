@@ -1,28 +1,18 @@
 ---
-title: Traži
+title: Pretraga
 sidebar_position: 1
 ---
 
-U ovom obrascu moguće je pretraživati otvaranja računa koja su prethodno kreirana i nastaviti s **unosom novog zatvaranja**. 
+U ovom obrascu moguće je pretraživati prethodno kreirana otvaranja konta i pokrenuti **unos novog otvaranja konta**.
 
-Za detalje o poljima zaglavlja i mogućnostima pretraživanja, pogledajte odjeljak o **[Automatskom zatvaranju računa](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/search)**. 
+Za detaljan opis polja zaglavlja i mogućnosti pretrage pogledajte odeljak **[Automatsko zatvaranje konta](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/search)**.
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-accounts-opening/search/image01.png)
 
-
-
-
-
 | Funkcija | Značenje |
 | --- | --- |
-| Traži| Tipka za pretraživanje prethodno otvorenih računa. |
-| Novo | Tipka za kreiranje novog otvaranja računa. |
-| Izmjeni | Tipka koja se može kliknuti nakon što se odabere otvaranje konta, a koji omogućuje izmjenu zapisa otvaranja. |
-| Prikaži | Tipka koja se može aktivirati nakon što se odabere otvaranje računa, a koji omogućuje prikaz zapisa otvaranja. |
-| Izbriši | Tipka koja se može kliknuti nakon što se odabere otvaranje računa, a koji omogućuje brisanje zapisa otvaranja. |
-
-
-
-
-
-
+| Traži | Dugme za pretragu prethodno kreiranih otvaranja konta. |
+| Novo | Dugme za kreiranje novog otvaranja konta. |
+| Izmeni | Dugme koje postaje dostupno nakon odabira otvaranja konta i omogućava izmenu zapisa otvaranja. |
+| Prikaži | Dugme koje postaje dostupno nakon odabira otvaranja konta i omogućava pregled zapisa otvaranja. |
+| Izbriši | Dugme koje postaje dostupno nakon odabira otvaranja konta i omogućava brisanje zapisa otvaranja. |

@@ -3,62 +3,56 @@ title: Novo
 sidebar_position: 2
 ---
 
-Postupak Automatsko otvaranje konta može se koristiti kao alternativa unosu kroz **[Generiranje zapisa glavne knjige](/docs/finance-area/ledger-records/records/ledger-record),**  **za evidentiranje početnog salda na početku razdoblja**.
+Procedura **Automatsko otvaranje konta** može se koristiti kao alternativa ručnom unosu putem **[Generisanja knjiženja glavne knjige](/docs/finance-area/ledger-records/records/ledger-record)** za evidentiranje početnih salda na početku poslovnog perioda.
 
-**Od prvog zatvaranja bilance, sljedeća otvaranja konta mogu se upravljati izravno putem postupka zatvaranja.**
+**Nakon prvog zatvaranja poslovnih knjiga, sva naredna otvaranja konta mogu se izvršavati direktno kroz proceduru zatvaranja konta.**
 
-NAPOMENA:
+:::note NAPOMENA
+Ovom procedurom evidentiraju se isključivo početna računovodstvena salda poslovnog perioda, a ne i otvorene računovodstvene stavke.
+:::
 
-Ovim postupkom bilježe se isključivo početna računovodstvena salda razdbolja, a ne otvaranje pripadajućih računovodstvenih stavki.  
+**Datum otvaranja**: predstavlja **datum obrade** i nije povezan sa datumom knjiženja koji se unosi u odgovarajuće polje na dnu obrasca.
 
- **Datum otvaranja**: to je **datum obrade** i nema nikakve veze s datumom zapisa koji će biti naveden u odgovarajućem polju na dnu prozora;
+**Broj otvaranja**: automatski generisan redni broj.
 
-**Broj otvaranja**: automatski generiran redni broj;
+**Opis**: omogućava unos opisa ili napomene vezane za otvaranje konta.
 
-**Opis**: omogućuje korisniku da detaljnjije opiše zapis, poput bilješke;
+**Konto** i **Tip konta**: filteri za pretragu konta iz kontnog plana.
 
-**Konto** i **Vrsta konta**: filteri za pretraživanje unutar liste kontnog plana;
+**Datum knjiženja** i **Datum obračuna**: obavezna polja koja će biti dodeljena knjiženju otvaranja.
 
-**Datum unosa** i **Datum obračuna**: obavezna polja koja se dodjeljuju zapisu otvaranja;  
+**Broj**: dodeljuje se automatski nakon knjiženja.
 
-**Broj**: bit će dodijeljen nakon evidentiranja;
+**Šablon otvaranja konta** i **Opis knjiženja**: koriste se za kreiranje knjiženja u glavnoj knjizi.
 
-**Predložak otvaranja računa** i **Opis kretanja**: dodjeljuju se za dnevnik glavne knjige.
+Nakon unosa obaveznih podataka moguće je sačuvati podešavanja i učitati kompletnu listu podkonta.
 
-Nakon postavljanja ovih obaveznih podataka, moguće je spremiti postavke i aktivirati na cijelu listu podkonta. Sljedeća faza je evidentiranje po podkontima za saldo dugovanja ili potraživanja pri otvaranju računa, uz eventualni iznos otvaranja u valuti.  
+Sledeći korak je unos početnih dugovnih ili potražnih salda po podkontima, kao i eventualnih početnih iznosa u stranoj valuti.
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-accounts-opening/new/image01.png)
 
- 
+*Primer (nije zasnovan na stvarnim podacima).*
 
-Primjer (nerealističan)
+Knjiženje početnog stanja moguće je izvršiti tek kada su ukupni dugovni i ukupni potražni iznosi jednaki. U suprotnom će prilikom pokretanja knjiženja biti prikazana poruka o grešci.
 
- 
+## Operativni saveti
 
-Samo kada ukupno dugovanje i ukupno potraživanje budu jednaki, bit će moguće evidentirati povrat salda u računovodstvu (u suprotnom će se, pritiskom na naredbu za knjiženje, prikazati poruka o pogrešci).
+Isto otvaranje konta može se više puta otvarati i dopunjavati, što je korisno kada postupak traje više dana.
 
- 
+Takođe je moguće kreirati više različitih otvaranja, na primer:
 
-OPERATIVNI SAVJETI:
+- jedno za aktivu;
+- jedno za pasivu;
+- posebno za kupce i dobavljače.
 
-Korisnik može više puta otvoriti istu obradu otvaranja konta kako bi dovršio postupak (operacija može biti dugotrajna i odvijati se tijekom više dana) prije nego što nastavi, ili se može kreirati više različitih otvaranja računa, primjerice jedno za aktivu, drugo za pasivu, ili za klijente/dobavljače itd.  
+Procedura ne podržava funkciju vraćanja (rollback). Po potrebi se zapis otvaranja jednostavno briše, pri čemu će aplikacija zatražiti potvrdu brisanja.
 
-U obrascu nije predviđen postupak povratka (rollback): jednostavno se može izbrisati otvaranje, a aplikacija će zatražiti potvrdu brisanja.
-
-U slučaju izmjena u detaljima otvaranja računa NAKON knjiženja, moguće je ponovno pritisnuti naredbu Kreiraj zapis otvaranja (na alatnoj traci) kako bi se ažurirala prethodna računovodstvena stavka. Pojavit će se poruka upozorenja i potvrde o ažuriranju stavke.  
-
-
+Ako se nakon knjiženja izvrše izmene u detaljima otvaranja konta, dovoljno je ponovo pokrenuti funkciju **Kreiraj knjiženje otvaranja**. Program će prikazati upozorenje i, nakon potvrde, ažurirati postojeće računovodstveno knjiženje.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Spremi | Tipka za spremanje zaglavlja otvaranja konta koji se može aktivirati nakon unosa opisa i predloška knjiženja. |
-| Traži | Tipka za pretraživanje liste konta koji se namjeravu unijeti u otvaranje, koristeći polja podkonta i vrste konta. |
-| Kreiraj zapis otvaranja | Tipka za kreiranje zapisa otvaranja konta. |
-| Otvori zapis otvaranja konta | Tipka koja otvara zapis otvaranja. |
-| Izbriši detalj | Briše sadržaj polja koja se odnose na odabrani redak. PAŽNJA: redci koji se odnose na sadržaj polja vezanih uz konto ne mogu se izbrisati; ako ostanu prazni, neće biti uključeni u stavku otvaranja. |
-
-
-
-
-
-
+| Sačuvaj | Čuva zaglavlje otvaranja konta nakon unosa opisa i šablona knjiženja. |
+| Traži | Pretražuje listu konta koja će biti uključena u otvaranje, koristeći filtere konta i tipa konta. |
+| Kreiraj knjiženje otvaranja | Kreira knjiženje otvaranja konta. |
+| Otvori knjiženje otvaranja | Otvara kreirano knjiženje otvaranja konta. |
+| Obriši detalj | Briše sadržaj polja izabranog reda. **PAŽNJA:** redovi koji predstavljaju konta ne mogu se obrisati; ukoliko ostanu prazni, neće biti uključeni u knjiženje otvaranja. |

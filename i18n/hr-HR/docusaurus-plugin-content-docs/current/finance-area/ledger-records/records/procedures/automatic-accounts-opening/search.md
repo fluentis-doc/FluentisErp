@@ -3,14 +3,11 @@ title: Traži
 sidebar_position: 1
 ---
 
-U ovom obrascu moguće je pretraživati otvaranja računa koja su prethodno kreirana i nastaviti s **unosom novog zatvaranja**. 
+U ovom obrascu moguće je pretraživati otvaranja konta koja su prethodno kreirana i nastaviti s **unosom novog zatvaranja**. 
 
 Za detalje o poljima zaglavlja i mogućnostima pretraživanja, pogledajte odjeljak o **[Automatskom zatvaranju računa](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/search)**. 
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-accounts-opening/search/image01.png)
-
-
-
 
 
 | Funkcija | Značenje |

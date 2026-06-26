@@ -14,13 +14,13 @@ U zaglavlju se nalaze neka polja za filtriranje, posebno **broj verzije** a to j
  
 POLJA U PREGLEDU:
 
-**Opis**: slobodno dodjeljiv u fazi kreiranja novog zatvaranja;
+**Opis**: opisno polje u fazi kreiranja novog zatvaranja;
 
 **Datum**: datum obrade zatvaranja;
 
 **Verzija**: broj verzije zatvaranja (pažnja, mora biti jedinstven za svaku tvrtku i predstavlja redni broj različitih zatvaranja u bazi podataka);
 
-**Knjiženje**: označava je li zatvaranje proknjiženo (aktivna oznaka) ili samo izračunato (neaktivna oznaka);
+**Knjiženje**: označava je li zatvaranje proknjiženo (aktivna oznaka) ili samo izračunano (neaktivna oznaka);
 
 **Napomene**: polje koje se slobodno popunjava u fazi kreiranja zatvaranja.
 

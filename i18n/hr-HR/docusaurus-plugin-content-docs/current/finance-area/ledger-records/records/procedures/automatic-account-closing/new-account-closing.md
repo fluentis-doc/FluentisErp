@@ -1,5 +1,5 @@
 ---
-title: Novo automatsko zatvaranja
+title: Novo automatsko zatvaranje
 sidebar_position: 2
 ---
 
@@ -19,7 +19,7 @@ Spremanje je potrebno kako bi se omogućili naredbe prisutne na alatnoj traci za
 
 U kartici 'Parametri' potrebno je unijeti:
 
-- podatke za filtriranje računovodstvenih stavki koje će biti predmet zatvaranja računa; **datumi knjiženja i datumi obračuna** određuju koje će se stavke uključiti u računovodstveni saldo. Posebno će datumi obračuna biti vezani za razdoblje financijskog izvještaja (1/1/….-31/12/….), dok bi polje 'do datuma knjiženja' moglo biti pomaknuto u sljedeću poslovnu godinu kako bi se uključile ispravke: **preporuča se jednostavno ne postavljati filter za datume knjiženja**.
+- podatke za filtriranje računovodstvenih stavki koje će biti predmet zatvaranja računa; **datumi knjiženja i datumi obračuna** određuju koje će se stavke uključiti u računovodstveni saldo. Posebno će datumi obračuna biti vezani za razdoblje financijskog izvještaja (1/1/….-31/12/….), dok bi polje 'do datuma knjiženja' moglo biti pomaknuto u sljedeću poslovnu godinu kako bi se uključile ispravke: **preporučuje se jednostavno ne postavljati filter za datume knjiženja**.
 
 - šifre podkonta, vrstu temeljnice koja će se koristiti te datum knjiženja i datum obračuna računovodstvenih zapisa zatvaranja glavne knjige; ti podaci (osim datuma knjiženja) automatski se prenose ako su uneseni unutar **[računovodstvenih parametara](/docs/configurations/parameters/finance/accounting-parameters)** (kartica ‘Računi');
 
@@ -27,16 +27,16 @@ U kartici 'Parametri' potrebno je unijeti:
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/parameters-tab/image01.png)
 
-**Godina knjiženja**: poziva odgovarajuću godinu iz **[računovodstvenih parametara](/docs/configurations/parameters/finance/accounting-parameters)**, služi za upravljanje ponovnim otvaranjem stavki prilagodbe, koje se aktivira na dnu obrasca s flagom **Žiro račun – prilagodba zapisa**: si tratta di gestire, in coda alla riapertura conti, i movimenti di riattribuzione dei risconti e dei ratei (a patto che questi siano già stati elaborati con la procedura **[Scritture di assestamento](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)**) ai costi/ricavi relativi (i risconti saranno registrati alla stessa data dell'apertura conti, i ratei invece alla data della registrazione del documento d'origine).
+**Godina knjiženja**: poziva odgovarajuću godinu iz **[računovodstvenih parametara](/docs/configurations/parameters/finance/accounting-parameters)**, služi za upravljanje ponovnim otvaranjem stavki prilagodbe, koje se aktivira na dnu obrasca s opcijom **Žiro račun – prilagodba zapisa**: radi se o upravljanju knjiženjima za ponovno priznavanje vremenskih razgraničenja (aktivnih i pasivnih) nakon ponovnog otvaranja konta, pod uvjetom da su prethodno obrađena postupkom [Knjiženja usklađenja](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)**) na odgovarajuće troškove odnosno prihode (vremenska razgraničenja (risconti) knjižit će se s istim datumom kao i ponovno otvaranje konta, dok će se obračunati prihodi i rashodi (ratei) knjižiti s datumom knjiženja izvornog dokumenta).
 
-Flag **Upravljanje saldom** (zatvaranje i ponovno otvaranje) **za knjiženje valute**: ako je aktivirana, program unosi redak za svaku valutu zapisa određenog podkonta, pri čemu jasno održava ispravan ukupni iznos u valuti tvrtke. Ova mogućnost je potrebna kako bi se osigurala točnost početnih salda u ispisu 'Izvod računa u valuti'.
+Opcija **Upravljanje saldom** (zatvaranje i ponovno otvaranje) **za knjiženje valute**: ako je aktivirana, program unosi redak za svaku valutu zapisa određenog podkonta, pri čemu jasno održava ispravan ukupni iznos u valuti tvrtke. Ova mogućnost je potrebna kako bi se osigurala točnost početnih salda u ispisu 'Izvod računa u valuti'.
  
 UPOZORENJE: Prije pokretanja izračuna, potrebno je provjeriti postavke tablice **[Vrste konta](/docs/configurations/tables/finance/account-types)**: posebno vrste računa za kupce, dobavljače, agente i banke, osim što moraju imati oznaku u odgovarajućim stupcima, moraju imati i drugu oznaku u jednom od prva dva stupca, koja se odnose na imovinu i obveze.
 
-Nakon toga je moguće započeti s **Povrati vrijednost podkonta** pomoću odgovarajuće tipke, kako bi program izračunao saldo svakog podkonta i prikazao podatke u karticama ‘Dobit i gubitak’ te ‘Imovinski’. Kada su rezultati sigurni, moguće je prijeći na posljednju fazu postupka: vraćajući se na karticu parametri, možemo kliknuti tipku Kreiraj zapis za zatvaranje konta, koji će stvoriti odgovarajuća računovodstvena knjiženja i postaviti flag na **Knjiženo**.
+Nakon toga je moguće započeti s **Povrati vrijednost podkonta** pomoću odgovarajuće tipke, kako bi program izračunao saldo svakog podkonta i prikazao podatke u karticama ‘Dobit i gubitak’ te ‘Imovinski’. Kada su rezultati sigurni, moguće je prijeći na posljednju fazu postupka: vraćajući se na karticu parametri, možemo kliknuti tipku Kreiraj zapis za zatvaranje konta, koji će stvoriti odgovarajuća računovodstvena knjiženja i postaviti opciju na **Knjiženo**.
 
 :::NAPOMENA
-Ako je flag **Žiro račun – prilagodba zapisa** aktivirana, pri pokretanju naredbe **Povrati vrijednost podkonta**, postat će vidljiva dodatna kartica **[Ponovno otvaranje stavki prilagodbe](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**.
+Ako je opcija **Žiro račun – prilagodba zapisa** aktivirana, pri pokretanju naredbe **Povrati vrijednost podkonta**, postat će vidljiva dodatna kartica **[Ponovno otvaranje stavki prilagodbe](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**.
 :::
  
 #### Specifične tipke
@@ -120,7 +120,7 @@ U ovom obrascu vidljiv je rezultat opcije automatskog prijenosa stavki usklađen
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/re-opening-adjustment-records-tab/image01.png)
 
-Dvostrukim klikom na redke moguće je prikazati detalje izvršenih knjiženja.  
+Dvostrukim klikom na retke moguće je prikazati detalje izvršenih knjiženja.  
 
 ![](/img/it-it/finance-area/ledger-records/records/automatic-account-closing/new/re-opening-adjustment-records-tab/image02.png)
 
