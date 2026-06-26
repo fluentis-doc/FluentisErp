@@ -3,19 +3,12 @@ title: Pretraga usklađenja
 sidebar_position: 1
 ---
 
-U ovom obrascu moguće je pretraživati, radi eventualnih izmjena, obrađene evidencije/zapise usklađenja koje su prethodno obrađene, ili unijeti nove.  
-
+U ovom obrascu moguće je pretraživati prethodno kreirana knjiženja usklađenja radi pregleda ili izmene, kao i kreirati nova knjiženja usklađenja.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Pretraga usklađenja | Tipka za pretragu zapisa usklađenja. |
-| Nuovo | Tipka za kreiranje zapisa usklađenja. |
-| Izmjeni | Tipka koji se može aktivirati nakon odabira zapisa usklađenja, omogućuje izmjenu. |
-| Prikaži | Tipka koji se može aktivirati nakon odabira zapisa usklađenja, omogućuje pregled. |
-| Izbriši | Tipka koji se može aktivirati nakon odabira zatvaranja konta, omogućuje brisanje. |
-
-
-
-
-
-
+| Pretraga usklađenja | Pokreće pretragu postojećih knjiženja usklađenja. |
+| Novo | Kreira novo knjiženje usklađenja. |
+| Izmeni | Omogućava izmenu izabranog knjiženja usklađenja. |
+| Prikaži | Otvara izabrano knjiženje usklađenja u režimu pregleda. |
+| Obriši | Briše izabrano knjiženje usklađenja. |

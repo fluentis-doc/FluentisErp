@@ -1,145 +1,147 @@
 ---
-title: Kreiranje usklađenja   
+title: Kreiranje usklađenja
 sidebar_position: 2
 ---
 
-Ovom procedurom moguće je izračunati i knjižiti podatke o **obračunatim i unaprijed plaćenim troškovima** vezanim za računovodstvene zapise prisutne u bazi podataka:   
+Ova procedura omogućava obračun i knjiženje **vremenskih razgraničenja** (aktivnih i pasivnih) koja se odnose na računovodstvena knjiženja evidentirana u bazi podataka.
+Tipični primeri su razgraničenja troškova i prihoda za osiguranje, zakup, lizing ili ugovore o održavanju, kada se period na koji se odnose proteže kroz dve poslovne godine. U skladu sa računovodstvenim principima, takve stavke podležu obračunu vremenskih razgraničenja.
 
-to uključuje, na primjer, ispravke/dopune (odnosno unaprijed plaćene troškove i obračunate troškove) vezane uz osiguranje, najam, leasing ili usluge podrške, koji su povezani s razdobljem koje prelazi iz jedne godine u drugu. Stoga su, prema računovodstvenim načelima, podložni ispravkama.  
+## Preduslovi za korišćenje procedure
 
-## Zahtjevi za korištenje procedure  
+1. U tabeli **[Tipovi konta](/docs/configurations/tables/finance/account-types)** potrebno je definisati ekonomske tipove konta (na primer *Za razgraničenje*) sa uključenom opcijom **Usluga**.
 
-1) Trebaju biti definirani, u tablici **[Tipovi konta](/docs/configurations/tables/finance/account-types)**, trebaju biti definirani ekonomski tipovi konta (nazvani, na primjer, ‘za ispravak’) koji imaju aktiviranu flag ‘**Usluga**'. 
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/adjustment-creation/image01.png)
 
-![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/adjustment-creation/image01.png) 
+Obračun će biti izvršen **isključivo** za podkonta kojima je u kontnom planu dodeljen ovaj tip konta.
 
-Izračun se obavlja (kao u međugodišnjim bilancama) SAMO za podkonta za koje su u kontnom planu dodijeljeni ovi specifični tipovi računa.   
+2. U **[Parametrima knjiženja](/docs/configurations/parameters/finance/accounting-parameters)** potrebno je definisati podrazumevana podkonta za aktivna i pasivna vremenska razgraničenja.
 
-2) Trebaju u **[parametrima knjiženja](/docs/configurations/parameters/finance/accounting-parameters)** biti definirana standardna podkonta za evidenciju obračunatih/unaprijed plaćenih troškova aktive/pasive.
-
-:::NAPOMENA
-Na razini kontnog plana se mogu specificirati podkonta obračunatih/unaprijed plaćenih troškova za pojedina podkonta troška/prihoda, koji će se koristiti kao prioritetni za zapis/evidenciju dopune ili ispravka.  
+:::note NAPOMENA
+Na nivou kontnog plana moguće je definisati posebna podkonta vremenskih razgraničenja za pojedina konta rashoda ili prihoda. Takva podkonta imaju prioritet prilikom kreiranja knjiženja razgraničenja.
 :::
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/adjustment-creation/image02.png)
 
-3) Treba ispravno koristiti raspon datuma u računovodstvenim zapisima. 
+3. Potrebno je pravilno koristiti period važenja u računovodstvenim knjiženjima.
 
-:::NAPOMENA
-Preporučuje se postavljanje **[Parametara umetanja](/docs/finance-area/ledger-records/records/ledger-record)** s opcijom 'Nema datuma za tip servisnog konta' kako bi se korisnika obvezalo da prilikom svakog zapisa unese raspon datuma koji su valjani za pojedini zapis.  
+:::note NAPOMENA
+Preporučuje se da se u **[Parametrima unosa](/docs/finance-area/ledger-records/records/ledger-record)** aktivira opcija **Bez datuma za servisni tip konta**, kako bi korisnik bio obavezan da za svako knjiženje unese period na koji se knjiženje odnosi.
 :::
 
-## Upravljanje  
+## Rad sa procedurom
 
-### Procedura 
+### Postupak
 
-- odrediti za koje računovodstveno razdoblje se želi izvršiti obračun i datum obračuna (zadano je predložen današnji datum); 
+- odabrati obračunski period za koji se vrši obračun i datum obračuna (podrazumevano se predlaže današnji datum);
+- definisati datum knjiženja i datum obračuna koji će biti dodeljeni novim knjiženjima;
+- izabrati šablone knjiženja koji će se koristiti za aktivna i pasivna vremenska razgraničenja.
 
-- odrediti datum knjiženja/obračuna koji će se dodijeliti računovodstvenim zapisima koje treba kreirati; 
+Opcija **Pojedinačno knjiženje** određuje da li će sva razgraničenja biti objedinjena u jedno knjiženje za aktivna i jedno za pasivna razgraničenja.
 
-- odrediti predloške knjiženja koji će se koristiti za ispravke i dopune. 
+![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image01.png)
 
-Opcija pojedinačnog knjiženja odlučit će hoće li se sve ispravke objediniti u jedno knjiženje, a sve dopune u drugo.  
+Nakon čuvanja podešavanja, pritiskom na dugme **Izračunaj** popunjava se donji pregled sa predloženim obračunima. Za svaki red prikazuju se:
+- vrsta knjiženja;
+- referenca na izvorno knjiženje;
+- broj dana razgraničenja;
+- obračunati iznos;
+- podkonto.
 
-![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image01.png) 
-
-Nakon što se ove postavke spreme, aktivirat će se tipkom **Izračunaj** koji će popuniti donji dio s popisom predloženih usklađenja: unutar njih bit će navedena vrsta knjiženja, reference na izvorno knjiženje, broj dana ispravka, te će biti moguće uređivati iznos i podkonto.
-
-Ako postavljeni predlošci knjiženja predviđaju upravljanje centrima troška/prihoda i izvorni zapis ima odgovarajuće podatke za ispravak/dopunu, u donjem dijelu bit će prisutni i detalji izračuna.  
-
- Sljedeća faza bit će potvrđivanje, redak po redak, da je izračunati iznos ispravan i potpun putem označavanja flaga **Kontrolirano**, što će omogućiti izmjenu i odgovarajućeg kontrolnog flaga za donji dio koji se odnosi na centre troška/prihoda.. 
+Po potrebi moguće je ručno izmeniti iznos i podkonto.
+Ako izabrani šabloni knjiženja podržavaju rad sa centrima troška ili profitnim centrima, a izvorno knjiženje sadrži odgovarajuće podatke, u donjem delu obrasca biće prikazani i detalji raspodele. Sledeći korak je potvrda svakog obračuna označavanjem opcije **Kontrolisano**. Tek nakon potvrde omogućene su eventualne izmene i kontrola raspodele po centrima troška ili profitnim centrima.
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image04.png)
 
-Sve stavke sa statusom *kontrolirano*  bit će predmet računovodstvenog knjiženja koje će se izvršiti pritiskom na tipku **Knjiži**. 
+Sve stavke označene kao **Kontrolisano** biće obuhvaćene računovodstvenim knjiženjem koje se izvršava pritiskom na dugme **Knjiži**.
+Korisnik može kreirati više knjiženja, ponovo pokrenuti obračun radi uključivanja novih računovodstvenih knjiženja ili generisati dodatna vremenska razgraničenja za novonastale transakcije.
+Na raspolaganju je i **[kartica za poništavanje](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)**, koja omogućava vraćanje prethodnog stanja.
 
-Korisnik može nastaviti s kreiranjem više knjiženja dok se detalji definiraju, kao i ponovo izračunati popis kako bi provjerio nisu li dodane druge transakcije (tipično dopuna novih računovodstvenih evidencija) ili stvoriti nova usklađenja za njih. Također je dostupna  **[dostupna kartica za vraćanje](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)** prethodne situacije.
-
-:::NAPOMENA
-Knjižit će se sve stavke s aktivnim flagom **Kontrolirano**.
+:::note NAPOMENA
+Biće proknjižene sve stavke kod kojih je aktivirana opcija **Kontrolisano**.
 :::
- 
-U slučaju da su izvršene promjene u računovodstvenim zapisima nakon pokretanja izračuna, može biti korisno koristiti flag **Provjeri izračun prilagodbe**:  
-Ova tipka će izvršiti ponovni izračun redak po redak, prikazujući eventualne razlike u odnosu na ono što je već predloženo u pregledu (posebice u poljima **Usklađenje dugovne/potražne strane** i **Nova usklađenje dugovne/potražne**), s tipkom za usklađivanje razlika ili njihovo ignoriranje. Također će brisati stavke ispravki/dopuna povezane s računovodstvenim zapisima koji više ne postoje (neće biti moguće knjiženje ako postoje stavke s referencama na nepostojeće zapise, u tom slučaju bit će potrebno proći kroz ovu masku i obrisati ih).  
+
+U slučaju da su računovodstvena knjiženja izmenjena nakon pokretanja obračuna, preporučuje se korišćenje opcije **Proveri obračun usklađenja**.
+Ova funkcija ponovo obračunava svaku stavku pojedinačno i prikazuje eventualne razlike u odnosu na već predložene vrednosti, naročito u poljima **Usklađenje duguje/potražuje** i **Novo usklađenje duguje/potražuje**. Korisnik zatim može prihvatiti usklađivanje razlika ili ih zanemariti.
+Funkcija će takođe ukloniti stavke razgraničenja koje se odnose na računovodstvena knjiženja koja više ne postoje. Knjiženje neće biti moguće ukoliko postoje stavke koje upućuju na nepostojeća knjiženja. U tom slučaju potrebno je otvoriti ovaj obrazac i ukloniti takve stavke.
 
 :::danger PAŽNJA
-U slučaju da su usklađenja već knjižena, ne postoji nikakva blokada za izmjenu izvorne transakcije koja je dovela do ispravke; jedina blokada je brisanje knjiženja, što nije dopušteno. Stoga se preporučuje maksimalna pažnja prilikom izmjene knjiženja koja su uključena u operacije usklađenja na kraju godine.  
+Ako su usklađenja već proknjižena, ne postoji zabrana izmene izvornog računovodstvenog knjiženja koje je dovelo do razgraničenja. Jedina zabrana odnosi se na brisanje tog knjiženja, što nije dozvoljeno.
+
+Zbog toga se preporučuje poseban oprez prilikom izmene knjiženja koja učestvuju u postupcima godišnjih usklađenja.
 :::
 
-:::note NAPOMENA vezana uz postupak **[Automatskog zatvaranja računa](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**: postoji opcija automatskog prijenosa operacija usklađenja nakon knjiženja ponovnog otvaranja računa. S ovom opcijom, aplikacija će na datum ponovnog otvaranja evidentirati poništenje ispravki, dok će izvršiti prijenos dopuna na datum izvorne evidencije usklađenja.  
+:::note NAPOMENA
+U okviru procedure **[Automatsko zatvaranje konta](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)** dostupna je opcija za automatski prenos knjiženja usklađenja nakon ponovnog otvaranja konta.
+Kada je ova opcija aktivna, aplikacija će na datum ponovnog otvaranja automatski proknjižiti storno aktivnih i pasivnih vremenskih razgraničenja, dok će knjiženja obračuna biti preneta sa datumom izvornog knjiženja usklađenja.
 :::
 
-**FLAG Pojedinačno knjiženje:** s ovim aktivnim flagom, knjiženje usklađenja odvija se u jednom knjiženju (jedinstveni broj) umjesto u više knjiženja, koliko god ispravaka treba izvršiti.   
-Tijekom ponovnog otvaranja računa, prijenos za otvaranje obračunatih i unaprijed plaćenih troškova slijedit će istu postavku.  
+**Opcija Pojedinačno knjiženje:** kada je uključena, sva knjiženja usklađenja biće objedinjena u jedno knjiženje (jedan broj knjiženja), umesto da se za svako razgraničenje kreira posebno knjiženje.
 
-### UPRAVLJANJE FAKTURAMA ZA PRIMITAK  
+Prilikom ponovnog otvaranja konta, prenos aktivnih i pasivnih vremenskih razgraničenja pratiće isto podešavanje.
 
-U ovom odjeljku objašnjeno je kako automatski upravljati specifičnom situacijom faktura za primitak, tj. rezervacijom koja se mora izvršiti na kraju godine kada će knjiženje troška ili prihoda biti priznato tek u sljedećem računovodstvenom razdoblju.  
+## UPRAVLJANJE FAKTURAMA KOJE TREBA PRIMITI
 
-U sažetku, može se vidjeti na sljedećim slikama kako prepoznavanje ove situacije automatski obavlja softver i koristi odgovarajući račun predviđen u općim parametrima računovodstva.   
+U ovom odeljku opisano je automatsko upravljanje fakturama koje treba primiti, odnosno obračunima koji se evidentiraju na kraju poslovne godine kada će rashod ili prihod biti proknjižen tek u narednoj poslovnoj godini.
+Softver automatski prepoznaje ovakve situacije i koristi odgovarajuće konto definisano u opštim računovodstvenim parametrima.
+Takođe je moguće definisati posebno konto za svakog pojedinačnog dobavljača ili kupca.
+Na isti način moguće je definisati posebno konto i za ostala aktivna ili pasivna vremenska razgraničenja, povezivanjem posebnog konta sa odgovarajućim kontom rashoda ili prihoda direktno u kontnom planu.
 
-Također je moguće prilagoditi konto koji će se koristiti za svakog pojedinog dobavljača ili kupca.  
-
-Na sličan način moguće je prilagoditi konto koji će se koristiti za druge obračunate i unaprijed plaćene troškove postavljanjem posebnog konta u odnosu na konto troška ili prihoda izravno u kontnom planu.  
-
-#### Standardna situacija BEZ SPECIFIČNIH POSTAVKI ZA DOBAVLJAČA  
+### Standardna situacija BEZ POSEBNIH PODEŠAVANJA ZA DOBAVLJAČA
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image08.png)
 
-I NITI U RAČUNU TROŠKA  
+### I BEZ POSEBNOG KONTA NA KONTU RASHODA
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image09.png)
 
-POSTAVKE SU SAMO NA RAZINI PARAMETARA RAČUNOVODSTVA  
+### PODEŠAVANJA SU DEFINISANA ISKLJUČIVO U PARAMETRIMA RAČUNOVODSTVA
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image10.png)
 
-**SLUČAJ 1: knjiženje u godini X, a obračun potpuno u godini X+1**
+**SLUČAJ 1: knjiženje u godini X, a obračun u celosti pripada godini X+1**
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image11.png)
 
-**SLUČAJ 2: knjiženje u godini Y, a obračun cijela u godini Y-1**
+**SLUČAJ 2: knjiženje u godini Y, a obračun u celosti pripada godini Y-1**
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image12.png)
 
-**SLUČAJ 3: knjiženje u godini X, a obračun prelazi iz godine X u godinu X+1**
+**SLUČAJ 3: knjiženje u godini X, a obračunsko razdoblje prelazi iz godine X u godinu X+1**
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image13.png)
 
-**SLUČAJ 4: knjiženje u godini Y s obračunom koja prelazi iz godine Y u godinu Y-1**
+**SLUČAJ 4: knjiženje u godini Y, a obračunsko razdoblje prelazi iz godine Y u godinu Y-1**
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image13.png)
 
-**REZULTATI**
+## REZULTATI
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image15.png)
 
+- **Redak 1** predstavlja vremensko razgraničenje za **slučaj 1**, u kojem je cjelokupan trošak knjižen u godini **X**, a odnosi se na obračunsko razdoblje godine **X+1**. Fluentis koristi konto **Obračunati troškovi** definiran u parametrima računovodstva.
 
-Redak 1 je ispravak za slučaj 1, gdje je cijeli trošak knjižen u godini X pripisan na obračun prethodne godine X+1: Fluentis koristi konto "Obračunati troškovi" definiran u parametrima općeg računovodstva.  
+- **Redak 2** predstavlja obračun za **slučaj 2**, u kojem je cjelokupan trošak knjižen u godini **Y**, a odnosi se na obračunsko razdoblje godine **Y-1**. Fluentis koristi konto **Računi za primitak** definiran u parametrima računovodstva.
 
-Redak 2 je dopuna za slučaj 2, gdje je cijeli trošak knjižen u godini Y pripisan na obračun prethodne godine Y-1: Fluentis koristi konto "Računi za primitak" definiran u parametrima općeg računovodstva.  
+- **Redak 3** predstavlja vremensko razgraničenje za **slučaj 3**, u kojem je trošak knjižen u godini **X**, ali se samo djelomično odnosi na obračunsko razdoblje godine **X+1**. Fluentis koristi konto **Obračunati troškovi** definiran u parametrima računovodstva.
 
-Redak 3 je ispravak za slučaj 3, gdje je trošak knjižen u godini X samo djelomično pripisan na obračun sljedeće godine X+1: Fluentis koristi konto "Obračunati troškovi" definiran u parametrima općeg računovodstva.  
+- **Redak 4** predstavlja obračun za **slučaj 4**, u kojem je trošak knjižen u godini **Y**, ali se samo djelomično odnosi na obračunsko razdoblje godine **Y-1**. Fluentis također koristi konto **Obračunati troškovi** definiran u parametrima računovodstva.
 
-Redak 4 je dopuna za slučaj 4, gdje je trošak knjižen u godini Y samo djelomično pripisan na obračun prethodne godine Y-1: Fluentis koristi konto "Obračunati troškovi" definiran u parametrima općeg računovodstva.  
-
-**S POSTAVKAMA SPECIFIČNIM ZA DOBAVLJAČA/RAČUNOVODSTVENI RAČUN**
+## S POSEBNIM POSTAVKAMA ZA DOBAVLJAČA ILI KONTO
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image16.png)
 
-
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image17.png)
 
-**REZULTAT**
+## REZULTAT
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image18.png)
 
-Umjesto zadano postavljenih podkonta koriste se prilagođena podkonta preuzeta iz računa troška ili od dobavljača.  
+Umjesto zadanih podkonta definiranih u parametrima računovodstva, koriste se posebno definirana podkonta preuzeta s konta troška ili iz podataka dobavljača.
 
-## Povrati
+## Kartica **Povrati**
 
-Postoji završna kartica ‘**Povrati**' služi za pregled izvršenih knjiženja i za njihovo poništavanje putem odgovarajuće tipke.  
+Završna kartica **Povrati** omogućuje pregled svih izvršenih knjiženja usklađenja te njihovo poništavanje pomoću odgovarajuće funkcije.
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/restore-tab/image01.png)
 
-Moguće je koristiti polja za filtriranje po kontu / podkontu i pripadajuće oznake za odabir samo knjiženja dopuna ili samo knjiženja ispravki prije nego što se postavi na vraćanje.
+Prije pokretanja postupka poništavanja moguće je koristiti filtre prema **kontu/podkontu**, kao i odgovarajuće opcije za prikaz isključivo knjiženja obračuna ili isključivo knjiženja vremenskih razgraničenja.

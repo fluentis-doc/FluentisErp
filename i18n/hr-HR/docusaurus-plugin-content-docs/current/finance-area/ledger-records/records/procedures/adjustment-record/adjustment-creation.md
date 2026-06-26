@@ -3,9 +3,7 @@ title: Kreiranje usklađenja
 sidebar_position: 2
 ---
 
-Ovom procedurom moguće je izračunati i knjižiti podatke o **obračunatim i unaprijed plaćenim troškovima** vezanim za računovodstvene zapise prisutne u bazi podataka:   
-
-to uključuje, na primjer, ispravke/dopune (odnosno unaprijed plaćene troškove i obračunate troškove) vezane uz osiguranje, najam, leasing ili usluge podrške, koji su povezani s razdobljem koje prelazi iz jedne godine u drugu. Stoga su, prema računovodstvenim načelima, podložni ispravkama.  
+Ovom procedurom moguće je izračunati i knjižiti podatke o **obračunanim i unaprijed plaćenim troškovima** vezanim za računovodstvene zapise prisutne u bazi podataka. To uključuje, na primjer, ispravke/dopune (odnosno unaprijed plaćene troškove i obračunate troškove) vezane uz osiguranje, najam, leasing ili usluge podrške, koji su povezani s razdobljem koje prelazi iz jedne godine u drugu. Stoga su, prema računovodstvenim načelima, podložni ispravkama.  
 
 ## Zahtjevi za korištenje procedure  
 
@@ -47,7 +45,7 @@ Nakon što se ove postavke spreme, aktivirat će se tipkom **Izračunaj** koji �
 
 Ako postavljeni predlošci knjiženja predviđaju upravljanje centrima troška/prihoda i izvorni zapis ima odgovarajuće podatke za ispravak/dopunu, u donjem dijelu bit će prisutni i detalji izračuna.  
 
- Sljedeća faza bit će potvrđivanje, redak po redak, da je izračunati iznos ispravan i potpun putem označavanja flaga **Kontrolirano**, što će omogućiti izmjenu i odgovarajućeg kontrolnog flaga za donji dio koji se odnosi na centre troška/prihoda.. 
+ Sljedeća faza bit će potvrđivanje, redak po redak, da je izračunati iznos ispravan i potpun putem označavanja opcije **Kontrolirano**, što će omogućiti izmjenu i odgovarajuće kontrolne opcije za donji dio koji se odnosi na centre troška/prihoda.. 
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/management-tab/image04.png)
 
@@ -56,20 +54,20 @@ Sve stavke sa statusom *kontrolirano*  bit će predmet računovodstvenog knjiže
 Korisnik može nastaviti s kreiranjem više knjiženja dok se detalji definiraju, kao i ponovo izračunati popis kako bi provjerio nisu li dodane druge transakcije (tipično dopuna novih računovodstvenih evidencija) ili stvoriti nova usklađenja za njih. Također je dostupna  **[dostupna kartica za vraćanje](/docs/finance-area/ledger-records/records/procedures/adjustment-record/adjustment-creation)** prethodne situacije.
 
 :::NAPOMENA
-Knjižit će se sve stavke s aktivnim flagom **Kontrolirano**.
+Knjižit će se sve stavke s aktivnom opcijom **Kontrolirano**.
 :::
  
 U slučaju da su izvršene promjene u računovodstvenim zapisima nakon pokretanja izračuna, može biti korisno koristiti flag **Provjeri izračun prilagodbe**:  
-Ova tipka će izvršiti ponovni izračun redak po redak, prikazujući eventualne razlike u odnosu na ono što je već predloženo u pregledu (posebice u poljima **Usklađenje dugovne/potražne strane** i **Nova usklađenje dugovne/potražne**), s tipkom za usklađivanje razlika ili njihovo ignoriranje. Također će brisati stavke ispravki/dopuna povezane s računovodstvenim zapisima koji više ne postoje (neće biti moguće knjiženje ako postoje stavke s referencama na nepostojeće zapise, u tom slučaju bit će potrebno proći kroz ovu masku i obrisati ih).  
+Ova tipka će izvršiti ponovni izračun redak po redak, prikazujući eventualne razlike u odnosu na ono što je već predloženo u pregledu (posebice u poljima **Usklađenje dugovne/potražne strane** i **Novo usklađenje dugovne/potražne**), s tipkom za usklađivanje razlika ili njihovo ignoriranje. Također će brisati stavke ispravaka/dopuna povezane s računovodstvenim zapisima koji više ne postoje (neće biti moguće knjiženje ako postoje stavke s referencama na nepostojeće zapise, u tom slučaju bit će potrebno proći kroz ovu masku i obrisati ih).  
 
 :::danger PAŽNJA
 U slučaju da su usklađenja već knjižena, ne postoji nikakva blokada za izmjenu izvorne transakcije koja je dovela do ispravke; jedina blokada je brisanje knjiženja, što nije dopušteno. Stoga se preporučuje maksimalna pažnja prilikom izmjene knjiženja koja su uključena u operacije usklađenja na kraju godine.  
 :::
 
-:::note NAPOMENA vezana uz postupak **[Automatskog zatvaranja računa](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**: postoji opcija automatskog prijenosa operacija usklađenja nakon knjiženja ponovnog otvaranja računa. S ovom opcijom, aplikacija će na datum ponovnog otvaranja evidentirati poništenje ispravki, dok će izvršiti prijenos dopuna na datum izvorne evidencije usklađenja.  
+:::note NAPOMENA vezana uz postupak **[Automatskog zatvaranja računa](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**: postoji opcija automatskog prijenosa operacija usklađenja nakon knjiženja ponovnog otvaranja računa. S ovom opcijom, aplikacija će na datum ponovnog otvaranja evidentirati poništenje ispravaka, dok će izvršiti prijenos dopuna na datum izvorne evidencije usklađenja.  
 :::
 
-**FLAG Pojedinačno knjiženje:** s ovim aktivnim flagom, knjiženje usklađenja odvija se u jednom knjiženju (jedinstveni broj) umjesto u više knjiženja, koliko god ispravaka treba izvršiti.   
+**FLAG Pojedinačno knjiženje:** s ovom aktivnom opcijom, knjiženje usklađenja odvija se u jednom knjiženju (jedinstveni broj) umjesto u više knjiženja, koliko god ispravaka treba izvršiti.   
 Tijekom ponovnog otvaranja računa, prijenos za otvaranje obračunatih i unaprijed plaćenih troškova slijedit će istu postavku.  
 
 ### UPRAVLJANJE FAKTURAMA ZA PRIMITAK  
@@ -142,4 +140,4 @@ Postoji završna kartica ‘**Povrati**' služi za pregled izvršenih knjiženja
 
 ![](/img/it-it/finance-area/ledger-records/records/adjustment-record/new/restore-tab/image01.png)
 
-Moguće je koristiti polja za filtriranje po kontu / podkontu i pripadajuće oznake za odabir samo knjiženja dopuna ili samo knjiženja ispravki prije nego što se postavi na vraćanje.
+Moguće je koristiti polja za filtriranje po kontu / podkontu i pripadajuće oznake za odabir samo knjiženja dopuna ili samo knjiženja ispravaka prije nego što se postavi na vraćanje.
