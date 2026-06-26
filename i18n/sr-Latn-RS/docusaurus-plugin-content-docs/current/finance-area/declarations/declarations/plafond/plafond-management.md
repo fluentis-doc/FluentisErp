@@ -3,67 +3,60 @@ title: Upravljanje plafonom
 sidebar_position: 5
 ---
 
-Obrazac se nalazi u izborniku **Administracija > Izjave > Plafon > Novi** i omogućuje kreiranje *novog* izračuna plafona.  
+Obrazac se nalazi u meniju **Administracija > Izjave > Plafon > Novi** i omogućava kreiranje *novog* obračuna plafona.
 
-## Kako kreirati Izračun plafona  
+## Kako kreirati obračun plafona
 
-1.  Nakon otvaranja novog obrasca (nakon što kliknete naredbu *Novi plafon*), unesite sljedeće zaglavne podatke: 
+1. Nakon otvaranja novog obrasca (nakon što kliknete na komandu *Novi plafon*), unesite sledeće podatke u zaglavlju:
 
 ![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image01.png)
 
- **Opis**: Slobodan opis izračuna koji se unosi. Preporučuje se upisati opis koji sadrži početnu godinu i vrstu izračuna.  
+**Opis**: Slobodan opis obračuna koji se unosi. Preporučuje se unos opisa koji sadrži početnu godinu i vrstu obračuna.
 
-**Godina**: Unosi se početna godina izračuna plafona koji se kreira.
+**Godina**: Unosi se početna godina obračuna plafona koji se kreira.
 
 :::tip[Napomena]
-Tijekom upravljanja različitim izračunima moguće je "zatvoriti" razdoblje, primjerice na kraju godine, te unijeti novi izračun za sljedeću godinu. Ipak, to nije obavezno. Preporučuje se (radi praktičnosti) nastaviti s istim izračunom iz godine u godinu koristeći naredbu *Predloži vrijednosti*. 
+Tokom upravljanja različitim obračunima moguće je „zatvoriti“ period, na primer na kraju godine, i uneti novi obračun za narednu godinu. Međutim, to nije obavezno. Preporučuje se (radi praktičnosti) da se nastavi sa istim obračunom iz godine u godinu korišćenjem komande *Predloži vrednosti*.
 
-Potreba za unosom novog izračuna javlja se u slučaju promjene metode izračuna, primjerice s fiksnog plafona na pomični.
-
+Potreba za unosom novog obračuna javlja se u slučaju promene metode obračuna, na primer sa fiksnog plafona na klizni.
 :::
 
-**Vrsta početka plafona**: određuje je li riječ o novom plafonu ili proširenju postojećeg pomičnog plafona; 
+**Vrsta početka plafona**: određuje da li je u pitanju novi plafon ili proširenje postojećeg kliznog plafona.
 
-**Vrsta plafona**: Odabire se je li plafon Solarni (fiksni) ili Pomični (dva porezno predviđena načina upravljanja plafonom).
+**Vrsta plafona**: bira se da li je plafon **Solarni (fiksni)** ili **Klizni** (dva zakonom predviđena načina upravljanja plafonom).
 
-Datum početka plafona: potrebno je unijeti mjesec i godinu početka plafona. Ako je riječ o proširenju, tada je potrebno unijeti i **mjesec**, **godinu** i **iznos** posljednjeg izračunatog razdoblja (u odjeljku Svojstva plafona).
+**Datum početka plafona**: potrebno je uneti mesec i godinu početka plafona. Ako je u pitanju proširenje, potrebno je uneti i **mesec**, **godinu** i **iznos** poslednjeg obračunatog perioda (u odeljku **Svojstva plafona**).
 
-**Kontrolna vrijednost**: može se postaviti granična vrijednost kako bi se korisnika upozorilo da se približava potpunom iskorištenju plafona. Na primjer, ako je plafon 100.000 eura, a postavimo prag na 10.000, sustav će nas upozoriti kada se pređe 90.000 eura jer ostaje samo zadnjih 10.000 eura za korištenje.
+**Kontrolna vrednost**: može se postaviti granična vrednost kako bi se korisnik upozorio da se približava potpunom iskorišćenju plafona. Na primer, ako je plafon 100.000 evra, a prag upozorenja postavljen na 10.000, sistem će upozoriti korisnika kada se pređe iznos od 90.000 evra, jer ostaje još samo 10.000 evra raspoloživog plafona.
 
-**Zadano**: ovaj flag označava koji je izračun "trenutni", posebno u slučaju postojanja više spremljenih izračuna..
+**Podrazumevano**: ovaj flag označava koji je obračun „trenutni“, naročito u slučaju kada postoji više sačuvanih obračuna.
 
 :::tip[Pažnja]
-Ako postoji izračun plafona s ovim flagom aktivnim, pri kreiranju elektroničkog zapisa za slanje Poreznoj upravi u vezi [**izjava o namjeri**](/docs/finance-area/declarations/declarations/intent-declaration) automatski će se popuniti odgovarajuće polje.
+Ako postoji obračun plafona sa aktivnim ovim flagom, prilikom kreiranja elektronskog zapisa za slanje Poreskoj upravi koji se odnosi na [**Izjavu o nameri**](/docs/finance-area/declarations/declarations/intent-declaration), odgovarajuće polje će biti automatski popunjeno.
 :::
 
-2. Učitavanje povijesnih podataka za korištenje: u detaljnoj mreži potrebno je unijeti podatke za prethodnih dvanaest mjeseci u odnosu na početni datum izračuna.
+2. Učitavanje istorijskih podataka za korišćenje: u detaljnoj mreži potrebno je uneti podatke za prethodnih dvanaest meseci u odnosu na početni datum obračuna.
 
 :::tip[Pažnja]
-U slučaju **pomičnog** plafona, podaci se moraju unositi **mjesec po mjesec**, jer se svakog mjeseca odbacuje 12. mjesec koji izlazi iz razdoblja i dodaju se novi podaci za aktualni mjesec; 
+U slučaju **kliznog** plafona, podaci se moraju unositi **mesec po mesec**, jer se svakog meseca iz obračuna izbacuje dvanaesti mesec koji izlazi iz perioda, a dodaju se novi podaci za tekući mesec.
 
-U slučaju **solarnog plafona**, može se unijeti 11 mjeseci s **vrijednostima nula** a iznos ukupne prodaje koja ulazi u plafon unosi se samo za mjesec **prosinac** završne godine. 
+U slučaju **solarnog plafona**, može se uneti 11 meseci sa **nultim vrednostima**, dok se ukupan iznos prometa koji ulazi u plafon unosi samo za mesec **decembar** završne godine.
 
-Program će provjeriti potpunost podataka i spremiti plafon kako bi bio spreman za korištenje.
+Program će proveriti potpunost podataka i sačuvati plafon kako bi bio spreman za korišćenje.
 :::
 
 ![](/img/it-it/finance-area/declarations/declarations/plafond/plafond-start-management/image02.png)
 
-3. Svakog mjeseca bit će potrebno ući u obrazac za upravljanje plafonom kako bi se ažurirali podaci pritiskom na tipku **Predloži vrijednosti** (nalazi se u traci izbornika). 
+3. Svakog meseca potrebno je otvoriti obrazac za upravljanje plafonom kako bi se podaci ažurirali pritiskom na dugme **Predloži vrednosti** (nalazi se na traci menija).
 
-**Za poništavanje izračuna određenog mjeseca, potrebno je obrisati razdoblja unatrag – počevši od zadnjeg (najnovijeg) mjeseca pa do željenog**. 
+**Za poništavanje obračuna određenog meseca potrebno je obrisati periode unazad – počevši od poslednjeg (najnovijeg) meseca pa do željenog.**
 
-Dostupna vrijednost na početku mjeseca prikazuje se u pripadajućem stupcu.
+Raspoloživa vrednost na početku meseca prikazuje se u odgovarajućoj koloni.
 
-### Traka Izbornika
+### Traka menija
 
 |  |  |
 | --- | --- |
-| **Novi plafon** | Postavlja kursor na novi redak za unos podataka. |
-| **Izbriši plafon** | Briše označeni redak izračuna. Nije moguće obrisati međupodatke, samo zadnji uneseni. |
-| **Predloži vrijednosti** | Izvršava izračun za novi mjesec i predlaže vrijednosti u mreži. |
-
-
-
-
-
-
+| **Novi plafon** | Postavlja kursor na novi red za unos podataka. |
+| **Obriši plafon** | Briše označeni red obračuna. Nije moguće obrisati međupodatke, već samo poslednji uneti zapis. |
+| **Predloži vrednosti** | Izvršava obračun za novi mesec i predlaže vrednosti u mreži. |

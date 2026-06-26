@@ -3,26 +3,18 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Procedura omogućuje korisniku upravljanje izračunom PDV limita za oslobođenje od PDV-a pri nabavi dobara i usluga za izvoznike, bilo prema fiksnom ili kliznom modelu obračuna. Nalazi se unutar administrativnog područja, u modulu glavne knjige, te preuzima podatke iz računovodstvenih knjiženja.
+Procedura omogućava korisniku upravljanje obračunom **PDV limita** za nabavku dobara i usluga bez obračuna PDV-a za izvoznike, bilo prema fiksnom ili kliznom modelu obračuna. Nalazi se u administrativnom području, u modulu glavne knjige, i preuzima podatke iz računovodstvenih knjiženja.
 
-Podsjećamo da:  
+Podsećamo da:
 
-Kako bi se izbjeglo financijsko opterećenje poreznih obveznika koji ostvaruju značajan udio izvoza i isporuka unutar Europske unije u odnosu na ukupni promet, te kako bi se spriječilo stvaranje prekomjernog pretporeza, zakonodavac je predvidio mogućnost nabave dobara i/ili usluga bez obračuna PDV-a.  
+Kako bi se izbeglo finansijsko opterećenje poreskih obveznika koji ostvaruju značajan udeo izvoza i isporuka unutar Evropske unije u odnosu na ukupan promet, kao i stvaranje prekomernog pretporeza, zakonodavac je predvideo mogućnost nabavke dobara i/ili usluga bez obračuna PDV-a.
 
-**Plafon/PDV limit** predstavlja iznos do kojeg izvoznici i porezni obveznici koji u referentnom razdoblju (prethodna kalendarska godina ili posljednjih 12 mjeseci) ostvaruju izvoze, isporuke unutar EU i druge neoporezive transakcije u značajnom udjelu ukupnog prometa, mogu obavljati nabavu bez obračuna PDV-a.
+**Plafon/PDV limit** predstavlja iznos do kojeg izvoznici i poreski obveznici koji u referentnom periodu (prethodna kalendarska godina ili poslednjih 12 meseci) ostvaruju izvoz, isporuke unutar EU i druge neoporezive transakcije u značajnom udelu ukupnog prometa, mogu vršiti nabavku bez obračuna PDV-a.
 
-Porezni obveznik može odrediti raspoloživi PDV limit koristeći **dvije različite metode**: sustav **fiksnog plafona/limita** ili sustav **pomičnog plafona/limita**.
+Poreski obveznik može odrediti raspoloživi PDV limit korišćenjem **dve različite metode**: sistema **fiksnog plafona/limita** ili sistema **kliznog plafona/limita**.
 
-Metoda **fiksnog limita** koristi kao **osnovu za izračun** iznos neoporezivih transakcija vezanih za izvoz i slične operacije **registrirane u prethodnoj kalendarskoj godini**. 1. siječnja svake godine, raspoloživi limit sastoji se od neoporezivih transakcija zabilježenih u prethodnoj godini, a tijekom godine potrebno je pratiti da nabave izvršene bez obračuna PDV-a ne premaše raspoloživi limit.
+Metoda **fiksnog limita** koristi kao **osnovicu za obračun** iznos neoporezivih transakcija povezanih sa izvozom i sličnim operacijama **evidentiranim u prethodnoj kalendarskoj godini**. Dana 1. januara svake godine raspoloživi limit sastoji se od neoporezivih transakcija evidentiranih u prethodnoj godini, a tokom godine potrebno je pratiti da nabavke izvršene bez obračuna PDV-a ne premaše raspoloživi limit.
 
-**Pomični limit** izračunava se uzimajući u obzir **transakcije evidentiranih u prethodnih dvanaest mjeseci**. 
+**Klizni limit** obračunava se uzimajući u obzir **transakcije evidentirane u prethodnih dvanaest meseci**.
 
-Kod metode pomičnog plafona, **raspoloživi limit** jednak je **razlici između neoporezivih transakcija ostvarenih u prethodnih 12 mjeseci**  i već iskorištenog iznosa oslobođenja. U mjesecu u kojem nastaju prve nabave bez obračuna PDV-a, **iskorišteni dio limita određuje se razlikom između nabava bez PDV-a izvršenih u tom mjesecu i neoporezivih transakcija iz istog mjeseca prethodne godine**.
-
- 
-
-
-
-
-
-
+Kod metode kliznog plafona, **raspoloživi limit** jednak je **razlici između neoporezivih transakcija ostvarenih u prethodnih 12 meseci** i već iskorišćenog iznosa oslobođenja. U mesecu u kojem nastanu prve nabavke bez obračuna PDV-a, **iskorišćeni deo limita** određuje se razlikom između nabavki bez PDV-a izvršenih u tom mesecu i neoporezivih transakcija iz istog meseca prethodne godine.

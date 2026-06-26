@@ -15,10 +15,10 @@ Putem ovog obrasca moguće je ručno unijeti i novi izračun plafona putem tipke
 
 ## Tipke u traci izbornika
 
-> - **Pretraga:** Tipka za pretraživanje izračuna plafona prema filtrima postavljenima u zaglavlju obrasca.
-> - **Nova:** Otvara obrazac za unos novog izračuna.
-> - **Uredi:** Omogućuje izmjenu prethodno unesenog izračuna.  
-> - **Prikaz:** Omogućuje pregled prethodno unesenog izračuna.  
+> - **Traži:** Tipka za pretraživanje izračuna plafona prema filtrima postavljenima u zaglavlju obrasca.
+> - **Novo:** Otvara obrazac za unos novog izračuna.
+> - **Izmijeni:** Omogućuje izmjenu prethodno unesenog izračuna.  
+> - **Prikaži:** Omogućuje pregled prethodno unesenog izračuna.  
 > - **Izbriši:** Briše prethodno uneseni izračun.  
 
 

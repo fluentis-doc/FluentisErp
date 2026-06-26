@@ -3,33 +3,29 @@ title: Pretraga plafona
 sidebar_position: 3
 ---
 
-Obrazac za pretragu plafona: 
+Obrazac za pretragu plafona:
 
-- nalazi se u izborniku Administracija > Izjave > Plafon
+- nalazi se u meniju **Administracija > Izjave > Plafon**
+- omogućava korisniku pretragu prethodno kreiranih obračuna plafona radi njihovog pregleda, izmene ili brisanja.
 
-- omogućuje korisniku pretraživanje prethodno kreiranih izračuna plafona s ciljem njihovog pregleda, uređivanja ili brisanja.
+Putem ovog obrasca moguće je ručno uneti i novi obračun plafona pomoću dugmeta [**Novi plafon**](/docs/finance-area/declarations/declarations/plafond/plafond-management).
 
-Putem ovog obrasca moguće je ručno unijeti i novi izračun plafona putem tipke [**Novi plafon**](/docs/finance-area/declarations/declarations/plafond/plafond-management).
+## Dugmad na traci menija
 
+> - **Traži:** Dugme za pretragu obračuna plafona prema filterima postavljenim u zaglavlju obrasca.
+> - **Novo:** Otvara obrazac za unos novog obračuna.
+> - **Izmeni:** Omogućava izmenu prethodno unetog obračuna.
+> - **Prikaži:** Omogućava pregled prethodno unetog obračuna.
+> - **Obriši:** Briše prethodno uneti obračun.
 
+## Tabele i početni parametri za upravljanje plafonom
 
-## Tipke u traci izbornika
+Postavke obračuna plafona zasnivaju se isključivo na tabeli [**Stope načina obračuna PDV-a**](/docs/configurations/tables/finance/vat-rates):
 
-> - **Pretraga:** Tipka za pretraživanje izračuna plafona prema filtrima postavljenima u zaglavlju obrasca.
-> - **Nova:** Otvara obrazac za unos novog izračuna.
-> - **Uredi:** Omogućuje izmjenu prethodno unesenog izračuna.  
-> - **Prikaz:** Omogućuje pregled prethodno unesenog izračuna.  
-> - **Izbriši:** Briše prethodno uneseni izračun.  
+Polja u tabeli koja su relevantna:
 
+**Plafon**: flag definiše koje su PDV stope povezane sa izjavama o nameri. Ova oznaka određuje stopu koja **"troši"** ukupni raspoloživi plafon iz meseca u mesec za redovnog izvoznika.
 
-## Tablice i početni parametri za upravljanje plafonom  
+**Inostrana prodaja za plafon**: flag označava PDV stope koje se pojavljuju u prodajnim knjiženjima za godinu yyyy, a koje **povećavaju** raspoloživi plafon za godinu yyyy+1 za redovnog izvoznika.
 
-Postavke izračuna plafona temelje se isključivo na tablici [**Stope načina obračuna PDV-a**](/docs/configurations/tables/finance/vat-rates): 
-
-Polja u tablici koja su relevantna:
-
-**Plafon**: flag definira koje PDV stope su povezane s izjavama o namjeri: ova oznaka označava stopu koja "**troši**" opći raspoloživi plafon iz mjeseca u mjesec u svojstvu redovitog izvoznika.  
-
-**Inozemna prodaja za plafon**: flag označava PDV stope koje se pojavljuju u prodajnim knjiženjima za godinu yyyy, a koje **povećavaju** raspoloživi plafon za godinu yyyy+1 u svojstvu redovitog izvoznika.  
-
-Vrsta računovodstvene stavke i podaci o partneru (naziv ili šifra kupca) nisu relevantni za izračun. Kreditne note (odobrenja) umanjuju iznose iz knjiženih stavki.  
+Vrsta računovodstvene stavke i podaci o partneru (naziv ili šifra kupca) nisu relevantni za obračun. Kreditne note (odobrenja) umanjuju iznose knjiženih stavki.
