@@ -49,6 +49,8 @@ Vedi: [Parametri di produzione](/docs/configurations/parameters/production/produ
 
 - **Stato**: indica lo stato dell'ordine di produzione: *Lanciato* è lo stato iniziale dell'ordine di produzione appena generato dalla procedura di rilascio ordini pianificati, mentre *Esecutivo* è lo stato da assegnare all'ordine per poi poter procedere con le segnalazioni di produzione.     
 - **Tassativo**: abilitando questo flag, si rende l’ordine di produzione tassativo, quindi, la [Schedulazione a capacità finita](/docs/planning/ms-master-scheduling/finite-capacityscheduling) non lo andrà a riposizionare nel tempo e lo manterrà fisso in quelle date. Inoltre, questo verrà preso anche in considerazione dalla procedura [M.R.P.](/docs/planning/ms-master-scheduling/mrp) quando è attivo il flag *Differenzia domanda di produzione confermata*.
+**Magazzino**: indica il magazzino nel quale verrà versato l'articolo prodotto; l'informazione non è abilitata in quanto copia del Magazzino indicato nell’ultima fase di lavorazione produttiva e movimentabile;       
+**Causale**: indica la causale di magazzino utilizzata per il versamento dell'articolo prodotto; l'informazione non è abilitata in quanto copia della Causale di versamento indicata nell’ultima fase di lavorazione produttiva e movimentabile;    
 
 ## Materiali
 
