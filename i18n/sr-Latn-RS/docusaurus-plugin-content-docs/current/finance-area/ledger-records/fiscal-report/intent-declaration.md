@@ -1,34 +1,27 @@
 ---
-title: Izjava o namjeri (IT)
+title: Izjava o nameri (IT)
 sidebar_position: 2
 ---
 
-Pri otvaranju prozora prikazuje se trenutno računovodstveno razdoblje.
+Prilikom otvaranja obrasca prikazuje se tekuća računovodstvena godina.
 
-Moguće je ispisati sve izjave o namjeri ili filtrirati ispis prema:
+Moguće je štampati sve izjave o nameri ili ograničiti prikaz korišćenjem sledećih filtera:
 
-**Tip deklaracije**: Kupac ili Dobavljač;
+- **Tip izjave**: Kupac ili Dobavljač;
 
-**Pretraživanje pomoćnog računa u šifrarniku kupaca ili dobavljača**: ovisno o prethodno odabranoj opciji;
+- **Pretraga analitičkog konta** u registru kupaca ili dobavljača, u zavisnosti od prethodno izabranog tipa izjave;
 
-**Broj našeg protokola od / do**.
+- **Broj našeg protokola od / do**.
 
-Među stavkama za ispis moguće je izmijeniti opis polja Porezni ured iz – te polje Opis operacije.  
+Pre štampanja moguće je izmeniti sadržaj polja **Poreska uprava** i **Opis operacije**.
 
-Datum ispisa koji se predlaže je današnji datum prema sustavu.  
+Podrazumevano se predlaže današnji datum sistema kao datum štampe.
 
-PAŽNJA:
-
-Dostupni su različiti ispisi koji se mogu odabrati iz padajućeg izbornika u gornjem lijevom kutu, koje je moguće kombinirati kako bi se dobili različiti dijelovi službenog obrasca (npr. naslovnica, detalji, plafon).
-
+:::warning PAŽNJA
+Dostupno je više različitih obrazaca za štampu, koji se mogu izabrati iz padajućeg menija u gornjem levom uglu. Njihovim kombinovanjem moguće je odštampati različite delove zvaničnog obrasca (na primer: naslovnu stranu, detalje ili plafon).
+:::
 
 | Funkcija | Značenje |
 | --- | --- |
-| Pregled ispisa | Tipka za pregled ispisa izjava o namjeri prije stvarnog ispisa. |
-| Ispis | Tipka za fizički ispis izjava o namjeri. |
-
-
-
-
-
-
+| Pregled | Otvara pregled izjave o nameri pre štampe. |
+| Štampaj | Štampa izjavu o nameri. |

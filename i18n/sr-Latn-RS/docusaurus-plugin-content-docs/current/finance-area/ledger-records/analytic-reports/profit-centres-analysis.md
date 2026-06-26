@@ -1,20 +1,13 @@
 ---
-title: Analiza profitnih centara  
+title: Analiza profitnih centara
 sidebar_position: 2
 ---
 
-Izvješće analize profitnog centra omogućuje ispis pojedinosti računovodstvenih kretanja/zapisa koja su valorizirala svaki pojedinačni profitni centar, zbrajajući iznose na samom profitnom centru.  
+Izveštaj **Analiza profitnih centara** omogućava prikaz detalja računovodstvenih knjiženja koja su evidentirana po pojedinačnim profitnim centrima, uz zbirne iznose za svaki profitni centar.
 
-Pogledati **[Analizu mjesta troška](/docs/finance-area/ledger-records/analytic-reports/cost-centres-analysis)**
-
+Za više informacija pogledati **[Analizu centara troškova](/docs/finance-area/ledger-records/analytic-reports/cost-centres-analysis)**.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Prethodni pregled | Tipka za pokretanje pregleda ispisa analize profitnog centra. |
-| Stampa | Tipka za izvođenje fizičkog ispisa analize profitnog centra. |
-
-
-
-
-
-
+| Pregled | Otvara pregled štampe analize profitnih centara. |
+| Štampaj | Štampa izveštaj analize profitnih centara. |

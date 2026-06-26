@@ -1,19 +1,15 @@
 ---
-title: Kontrola neravnoteže centra troška/profitnog centra/radnog naloga 
+title: Kontrola neravnoteže centra troškova / profitnog centra / radnog naloga
 sidebar_position: 4
 ---
 
-Ovim kontrolnim izvješćem izdvajaju se računovodstvena kretanja/zapisi koja nisu zadovoljila uravnoteženost valorizacije između računovodstvenih kretanja/zapisa i kretanja/zapisa u mjestu troška, odnosno prihoda ili prodajnog naloga: za tvrtke koje imaju aktiviran kontroling menadžment, moći će se analizirati uravnoteženost svake dimenzije centara/odjela poduzeća.  
+Ovaj kontrolni izveštaj omogućava izdvajanje računovodstvenih knjiženja kod kojih nije postignuta usklađenost između vrednosti evidentiranih u računovodstvu i vrednosti raspoređenih na centar troškova, profitni centar ili radni nalog.
 
-Moguće je unutar postavki **[parametara knjiženja ](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, vezati korisnike prilikom spremanja računovodstvenih zapisa kako bi se zajamčila jednakost podataka.  
+U preduzećima koja koriste modul kontrolinga moguće je proveriti usklađenost svake pojedinačne dimenzije centara i organizacionih jedinica.
+
+Radi obezbeđivanja potpune usklađenosti podataka, u **[parametrima predložaka knjiženja](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** moguće je podesiti kontrolu koja prilikom čuvanja računovodstvenih knjiženja proverava ravnotežu između računovodstvenih i analitičkih podataka.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Prethodni pregled | Tipka za izvođenje pregleda ispisa kontrole neravnoteže centra troška/profitnog centa/radnog naloga. |
-| Ispiši | Tipka za fizički ispis kontrole neravnoteže centra troška/profitnog centa/radnog naloga. |
-
-
-
-
-
-
+| Pregled | Otvara pregled štampe izveštaja o kontroli neravnoteže centra troškova, profitnog centra i radnog naloga. |
+| Štampaj | Štampa izveštaj o kontroli neravnoteže centra troškova, profitnog centra i radnog naloga. |

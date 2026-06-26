@@ -1,27 +1,21 @@
 ---
-title: Likvidacija PDV-a 74 ter (IT)
+title: Obračun PDV-a po posebnom postupku 74-ter (IT)
 sidebar_position: 6
 ---
 
-Ovim postupkom ispisa vrši se izračun PDV-a u pretplatu/potraživanja za referentno razdoblje, kako za redovni PDV režim, tako i za režim 74 ter.
+Ovim postupkom ispisa izračunava se obveza ili pretporez PDV-a za odabrano obračunsko razdoblje, kako za redovni sustav PDV-a tako i za poseban postupak oporezivanja prema članku **74-ter**.
 
-Nakon što se postave razdoblje i godina na koje se odnosi likvidacija (pri čemu razdoblje može biti mjesečno ili tromjesečno, ovisno o periodičnosti likvidacije PDV-a postavljenoj u parametrima kontabiliteta), moguće je definirati na koji će se registar likvidacija ispisivati: uobičajeno se postupak provodi na kraju registra izlaznih računa (prodaje) ili na posebnom zbirnom registru (preporučena opcija).
+Nakon odabira obračunskog razdoblja i godine (pri čemu razdoblje može biti mjesečno ili tromjesečno, ovisno o periodičnosti obračuna PDV-a definiranoj u parametrima računovodstva), potrebno je odrediti PDV registar u koji će se obračun ispisati. Obračun se u pravilu ispisuje na kraju knjige izlaznih računa ili u zasebnom zbirnom registru namijenjenom obračunu PDV-a (preporučena opcija).
 
-**Konačni ispis**: promijenit će referentno razdoblje tako da odgovara razdoblju nakon posljednjeg konačno ispisanog, a broj primjeraka za ispis bit će onemogućen;
+**Konačni ispis**: nakon izvršenja pomiče obračunsko razdoblje na prvo sljedeće razdoblje nakon posljednjeg konačno ispisanog obračuna te onemogućuje odabir broja primjeraka za ispis.
 
-**Izvršavanje pregleda ispisa kao konačan ispis**: razdoblje se neće blokirati, niti će se ažurirati brojači;
+**Pregled ispisa kao konačni ispis**: omogućuje pregled konačnog ispisa bez zaključavanja obračunskog razdoblja i bez ažuriranja brojača.
 
-**Izvršavanje fizičkog ispisa**: dovodi do blokade razdoblja u kontabilitetu i ažuriranja brojača stranica u tablici PDV registara (nije važno je li ispis uspješno dovršen ili ne — može biti i ispis u datoteku). 
+**Izvršavanje ispisa**: fizički ispis zaključava obračunsko razdoblje u računovodstvu i ažurira brojač stranica u tablici **PDV registri**. Zaključavanje razdoblja izvršava se neovisno o tome je li ispis uspješno dovršen, uključujući slučajeve kada se ispisuje u datoteku.
 
-TRAKA IZBORNIKA: predstavlja izbornik dotičnog obrasca, odnosno područje unutar kojeg se mogu izvršavati određene radnje. Popis dostupnih funkcionalnosti u trenutno aktivnoj kartici prikazan je u nastavku:
+**TRAKA IZBORNIKA**: predstavlja izbornik ove forme, odnosno područje u kojem je moguće izvršavati radnje povezane s postupkom. Dostupne funkcionalnosti prikazane su u nastavku:
 
 | Funkcija | Značenje |
 | --- | --- |
-| Pregled | Tipka za prikaz pregleda ispisa likvidacije PDV-a 74 ter. |
-| Ispis | Tipka za fizički ispis likvidacije PDV-a 74 ter. |
-
-
-
-
-
-
+| Pregled | Prikazuje pregled ispisa obračuna PDV-a po posebnom postupku 74-ter. |
+| Ispis | Pokreće fizički ispis obračuna PDV-a po posebnom postupku 74-ter. |

@@ -1,34 +1,37 @@
 ---
-title: Pregled po tipu PDV-a  
+title: Pregled po tipu PDV-a
 sidebar_position: 10
 ---
 
-Ispis omogućuje izdvajanje i grupiranje kretanja PDV-a pomoću različitih opcija filtriranja i kriterija grupiranja.  
+Ovaj izveštaj omogućava izdvajanje i grupisanje PDV knjiženja korišćenjem različitih filtera i kriterijuma grupisanja.
 
-Obrazac je podijeljen na dva područja: područje filtra za pretraživanje podataka i područje za odabir kriterija grupiranja.  
+Obrazac je podeljen na dva dela:
+
+- područje za definisanje filtera pretrage;
+- područje za izbor kriterijuma grupisanja.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/vat-code-summary/image01.png)
 
-Među glavnim filtrima, koji se odnose na glavnu svrhu ispisa, izdvaja se Šifra PDV-a, Od / Do datuma obračuna, knjiga računa i datumi knjiženja.  
+Među najvažnijim filterima izdvajaju se:
 
-Za korištenje jednog ili više (kaskadnih) kriterija grupiranja, potrebno je napraviti drag’n’drop kriterija s desne tablice na lijevu. 
+- **Šifra PDV-a**;
+- **Datum obračuna od / do**;
+- **PDV registar**;
+- **Datum knjiženja od / do**.
 
-Ispis će tada prikazati podatke grupirane prema aktivnom kriteriju ili kriterijima.  
+Za korišćenje jednog ili više kriterijuma grupisanja potrebno je prevući (drag & drop) željeni kriterijum iz desne tabele u levu.
 
-Kriteriji grupiranja mogu se zatim ukloniti ili preurediti po položaju (prioritet je od vrha prema dolje) pomoću naredbi na traci izbornika.  
+Nakon toga izveštaj će prikazati podatke grupisane prema izabranom kriterijumu ili kombinaciji kriterijuma.
 
-- Otkaži: uklanja kriterij grupiranja  
-- Ukloni grupiranje: uklanja sve grupiranje  
-- Premjesti gore: ako postoji više kriterija, pomiče odabrani kriterij prema gore kako bi mu se dao veći prioritet  
-- Premjesti dolje: ako postoji više kriterija, pomiče odabrani prema dolje kako bi mu se dao niži prioritet  
+Kriterijume grupisanja moguće je ukloniti ili promeniti njihov redosled (prioritet se određuje od vrha ka dnu) pomoću komandi na traci sa alatkama:
 
-Za više informacija o grupiranju pogledati **[Pregled knjiženja po shemi knjiženja](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template).**
+- **Otkaži**: uklanja izabrani kriterijum grupisanja;
+- **Ukloni grupisanje**: uklanja sve aktivne kriterijume grupisanja;
+- **Pomeri nagore**: povećava prioritet izabranog kriterijuma;
+- **Pomeri nadole**: smanjuje prioritet izabranog kriterijuma.
 
+Za više informacija o načinu grupisanja pogledajte **[Pregled knjiženja po šablonu knjiženja](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template).**
 
-
-:::important VIDI TAKOĐER  
-[**VIDEO TUTORIJALI O TISKU POREZA**](/docs/video/finance/intro)
+:::important VIDI TAKOĐE
+[**VIDEO TUTORIJALI O PORESKIM IZVEŠTAJIMA**](/docs/video/finance/intro)
 :::
-
-
-

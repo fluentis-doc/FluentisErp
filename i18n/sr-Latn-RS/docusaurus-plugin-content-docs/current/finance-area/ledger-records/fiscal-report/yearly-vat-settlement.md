@@ -1,24 +1,22 @@
 ---
-title: Godišnji obračun PDV-a 
+title: Godišnji obračun PDV-a
 sidebar_position: 4
 ---
 
-Ispis ima izgled sličan **[periodičnom obračunu PDV-a](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement)**, zapravo predstavlja zbroj različitih mjeseci ili tromjesečja u godini kako bi se podržala izrada godišnjeg povrata PDV-a (trenutačno ne upravlja Fluentis).  
+Ovaj izveštaj ima izgled sličan **[Periodičnom obračunu PDV-a](/docs/finance-area/ledger-records/fiscal-report/period-vat-settlement)**. Predstavlja zbir svih mesečnih ili tromesečnih obračuna tokom poslovne godine i služi kao pomoć pri izradi godišnje PDV prijave (koja se trenutno ne obrađuje u Fluentis ERP-u).
 
-**Računovodstvena godina / Od datuma registracije / do datuma registracije**: ovi filteri koji se odnose na razdoblje obrade predloženi su prema zadanim postavkama s tekućom godinom i s datumima registracije od 1.1. do 31.12.;
+**Računovodstvena godina / Datum knjiženja od / do**: ovi filteri određuju period obrade. Podrazumevano su postavljeni na tekuću poslovnu godinu, sa datumima knjiženja od **01.01.** do **31.12.**.
 
-**Od datuma obračuna do /  datuma obračuna**: ovaj je filtar prema zadanim postavkama predložen kao prazan i preporučljivo je ne filtrirati registracije koje se ispisuju prema (računovodstvenom) datumu kompetencije, ograničavajući se na rad prema, da tako kažem, "formalno" datum registracije;  
+**Datum obračuna od / do**: ovaj filter je podrazumevano prazan. Preporučuje se da se knjiženja ne filtriraju prema računovodstvenom datumu obračuna, već da se koristi isključivo formalni datum knjiženja.
 
-**Godišnji obračun PDV-a**: zastavica postavljena prema zadanim postavkama;
+**Godišnji obračun PDV-a**: opcija je podrazumevano uključena.
 
-**Godišnja prijava PDV-a**: nije upravljana;
+**Godišnja PDV prijava**: trenutno nije podržana.
 
-U ispisu NEMA oznake za konačnu verziju, budući da će plaćanja za različite mjesece ili tromjesečja biti formalno i pravno ispisana, a ovaj ispis ostaje kao potpora pri izradi godišnje prijave PDV-a na ministarskom obrascu: postoji međutim zastavica za pohranjivanje broja posljednje stranice za one koji je žele ispisati na kraju godišnjih plaćanja.
+U ovom izveštaju **ne postoji opcija konačne štampe**, budući da su mesečni ili tromesečni obračuni već formalno i zakonski zaključeni kroz svoje konačne štampe. Ovaj izveštaj služi isključivo kao pomoć pri izradi godišnje PDV prijave na zvaničnom obrascu.
 
+Ipak, dostupna je opcija za čuvanje broja poslednje odštampane stranice za korisnike koji žele da ovaj izveštaj odštampaju na kraju obračunske godine.
 
-:::important VIDI TAKOĐER
-[**VIDEO TUTORIJALI O TISKU POREZA**](/docs/video/finance/intro)
+:::important VIDI TAKOĐE
+[**VIDEO TUTORIJALI O PORESKIM IZVEŠTAJIMA**](/docs/video/finance/intro)
 :::
-
-
-

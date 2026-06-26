@@ -1,25 +1,19 @@
 ---
-title: Analiza centara troška  
+title: Analiza centara troškova
 sidebar_position: 1
 ---
 
-Izvješće o analizi mjesta troška omogućuje ispis pojedinosti računovodstvenih kretanja/zapisa koja su valorizirala svako pojedinačno mjesto troška, zbrajajući iznose na samom mjestu troška.  
+Izveštaj **Analiza centara troškova** omogućava prikaz detalja računovodstvenih knjiženja koja su evidentirana po pojedinačnim centrima troškova, uz zbirne iznose za svaki centar troškova.
 
-U obrascu postoji područje filtera s raznim poljima, a glavna su odjel poduzeća i konto.  
+Obrazac sadrži deo za definisanje filtera sa različitim parametrima, pri čemu su najvažniji **Odeljenje** i **Konto**.
 
-U donjem dijelu nalaze se kriteriji grupiranja. 
+U donjem delu obrasca nalaze se kriterijumi za grupisanje podataka.
 
-Tipičan koristan kriterij grupiranja je centar troška za promatranje kretanja različitih konta koji se razlikuju za svaki centar.  
+Jedan od najčešće korišćenih kriterijuma grupisanja jeste **Centar troškova**, koji omogućava pregled knjiženja različitih konta po svakom pojedinačnom centru troškova.
 
-U vezi s korištenjem kriterija grupiranja, pogledati **[Pregled knjiženja po shemi knjiženja](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template)**.
+Za više informacija o korišćenju kriterijuma grupisanja pogledati **[Pregled knjiženja po šemi knjiženja](/docs/finance-area/ledger-records/accounting-report/movements-summary-for-template)**.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Prethodni pregled | Tipka za pretpregled ispisa analize centra toška. |
-| Ispiši | Tipka za izvođenje fizičkog ispisa analize mjesta troška. |
-
-
-
-
-
-
+| Pregled | Otvara pregled štampe analize centara troškova. |
+| Štampaj | Štampa izveštaj analize centara troškova. |

@@ -1,40 +1,40 @@
 ---
-title: Bilanca razdoblja  
+title: Bilans perioda
 sidebar_position: 1
 ---
 
-Ovo izvješće ima funkciju predstavljanja osnovnog izvješća o bilanci poduzeća, dijeleći prema zadanim postavkama četiri tipična odjeljka aktiva/pasiva/troškovi/prihodi. Naglašava se da izvješće radi samo za obračunski datum upisan u zaglavlju knjiženja, dakle bez obzira na datum evidentiranja istog u dnevniku.
+Ovaj izveštaj predstavlja osnovni prikaz bilansa preduzeća, pri čemu su podrazumevano prikazane četiri osnovne grupe: **Aktiva**, **Pasiva**, **Rashodi** i **Prihodi**.
 
-Nadalje, treba imati na umu da su datumi obračuna razdvojeni za konta bilance u usporedbi s ekonomskim obračunom.  
+Izveštaj uzima u obzir isključivo **računovodstveni datum obračuna** definisan u zaglavlju knjiženja, nezavisno od datuma evidentiranja knjiženja u dnevniku.
+
+Treba imati u vidu da se datumi obračuna za bilansna konta vode odvojeno od ekonomskog obračunskog perioda.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/period-balance-sheet/image01.png)
 
-Na ovaj način je moguće i preporučljivo održavati raspon ekonomskih datuma unutar tekuće godine (primjer 01.01.2018. - 31.12.2018.) i dovesti početni datum obračuna financijskog računovodstva do posljednjeg otvaranja računa (primjer 01.01.2017.) ako prethodna godina (2017.) još nije zatvorena. Ovo je neophodno u ovoj situaciji kako bi se dobio ispravan saldo tekućeg računa u nedostatku početnih vrijednosti za tekuću godinu koje bi inače bile izostavljene normalnim filtriranjem.  
+Na ovaj način moguće je, i preporučuje se, da ekonomski period obuhvata tekuću poslovnu godinu (na primer **01.01.2018. – 31.12.2018.**), dok se početni datum obračuna za finansijsko računovodstvo postavi na datum poslednjeg otvaranja konta (na primer **01.01.2017.**) ukoliko prethodna poslovna godina još nije zatvorena.
 
-Mogući su različiti izgledi, uključujući prikaz sa suprotnim dijelovima i jedan s grupiranjem kako bi se dobili ukupni iznosi po kontu i po razini strukture kontnog plana. Željeni ispis može se odabrati iz padajućeg izbornika u gornjem lijevom kutu.  
+Ovakvo podešavanje omogućava dobijanje ispravnih salda tekuće godine, jer bi u suprotnom početna stanja bila izostavljena standardnim filtriranjem.
 
-**Prikaži iznose s negativnim predznakom**: ako je postavljeno, aplikacija će svaki podkonto ubaciti u rubriku kojoj pripada (prema vrsti konta) s eventualnim negativnim predznakom kada je stanje u suprotnoj rubrici. Ako zastavica nije aktivna, kao prema zadanim postavkama, svaki podkonto bit će prikazan u odjeljku koji se odnosi na njegovo stanje;  
+Dostupno je više različitih izgleda izveštaja, uključujući prikaz sa suprotnim stranama (duguje/potražuje) i prikaz sa grupisanjem po kontima i nivoima kontnog plana. Željeni izgled bira se iz padajućeg menija u gornjem levom uglu.
 
-**Detalji nomenklature**: prema zadanim postavkama aplikacija isključuje sve pojedinosti o podkontima povezanim s kupcima/dobavljačima i agentima. Samo s relevantnom oznakom bit će prikazani detalji ovih podračuna matičnih podataka;  
+**Prikaži iznose sa negativnim predznakom**: kada je opcija uključena, svaki podkonto prikazuje se u okviru svoje vrste konta (prema klasifikaciji konta), pri čemu će saldo biti prikazan sa negativnim predznakom ukoliko pripada suprotnoj strani. Ako opcija nije uključena (podrazumevano stanje), podkonto će biti prikazan u delu izveštaja koji odgovara njegovom saldu.
 
-**Isključi privremena konta**: privremena konta prikazana su na dnu odjeljaka aktive i pasive. S ovom zastavom/oznakom takva konta neće biti prikazana u izvješću. Treba imati na umu da ovakva konta nikada ne podliježu zatvaranju/otvaranju konta u automatskom postupku aplikacije;  
+**Detalji matičnih podataka**: podrazumevano se ne prikazuju detalji podkonta kupaca, dobavljača i agenata. Aktiviranjem ove opcije prikazaće se detaljni podaci za te podkonte.
 
-**Usporedba s prethodnom godinom**: s ovom opcijom prikazat će se stupac za tekuću godinu i jedan za stanje istog razdoblja, ali godine koja prethodi onoj postavljenoj kao filter;  
+**Isključi privremena konta**: privremena konta se standardno prikazuju na kraju odeljaka Aktiva i Pasiva. Aktiviranjem ove opcije ona neće biti prikazana u izveštaju. Treba imati u vidu da privremena konta nikada ne učestvuju u automatskom zatvaranju i ponovnom otvaranju konta.
 
-**Isključi predložak**: ako su prikazani unosi zatvaranja konta, za dobivanje bilanci bit će potrebno isključiti kretanja na temelju samog predloška zatvaranja. Pokretanje izvješća bez isključivanja ove opcije će dati izvješće sa svim saldima na nuli (osim za privremena konta kao što je gore navedeno): ovo se može koristiti kao provjera za provjeru stvarnog uspjeha provedenih operacija zatvaranja računa;  
+**Poređenje sa prethodnom godinom**: prikazuje dodatnu kolonu sa stanjem za isti period prethodne poslovne godine.
 
-Također je moguće uključiti u ispis I kretanja koja proizlaze iz privremenih knjiženja.  
+**Isključi predložak**: ukoliko izveštaj obuhvata knjiženja zatvaranja konta, potrebno je isključiti odgovarajući predložak knjiženja kako bi se dobio stvarni bilans. Ako se ova opcija ne koristi, rezultat će biti bilans sa nuliranim saldima (osim privremenih konta), što može poslužiti kao kontrola uspešno izvršenog postupka zatvaranja konta.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+U izveštaj je moguće uključiti i knjiženja nastala iz privremenih knjiženja.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E_lIBlV2OXI" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
 ---
 
-### Reklasifikacija bilance za izradu financijskog izvještaja prema talijanskom civilnom zakonu (CEE shema)  
+### Reklasifikacija bilansa za izradu finansijskih izveštaja prema italijanskom Građanskom zakoniku (CEE šema)
 
-:::important Pogledaj također  
-[**VIDEO TUTORIJALI O FISKALNIM ISPISIMA**](/docs/video/finance/intro)
+:::important VIDI TAKOĐE
+[**VIDEO TUTORIJALI ZA FISKALNE IZVEŠTAJE**](/docs/video/finance/intro)
 :::
-
-
-
-

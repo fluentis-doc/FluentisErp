@@ -3,36 +3,40 @@ title: Dnevnik knjiženja
 sidebar_position: 3
 ---
 
-Kada se prozor otvori, predložena je tekuća obračunska godina, a filtar za zapise postavljen je prema zadanim postavkama da pokriva odgovarajuću obračunsku godinu (datum obračuna nije popunjen prema zadanim postavkama pod pretpostavkom da se želi raditi prema "formalnom" datumu);
+Prilikom otvaranja obrasca podrazumevano se prikazuje tekuća obračunska godina, a filter za knjiženja automatski je postavljen na odgovarajući obračunski period. Polje za datum obračuna nije unapred popunjeno, pod pretpostavkom da se pretraga vrši prema formalnom datumu knjiženja.
 
-Prijavljuju se početni podaci o broju stranice, saldu retka dugovne i potražne strane: program predlaže filtar snimaka također uzimajući u obzir datum posljednjeg definitivnog ispisa.
+Prikazuju se početni podaci o broju stranice, dugovnom i potražnom saldu reda. Program automatski predlaže filter knjiženja uzimajući u obzir datum poslednje definitivne štampe.
 
 ![](/img/it-it/finance-area/ledger-records/fiscal-report/journal/image01.png)
 
+## OPCIJE
 
-MOGUĆE OPCIJE: 
+**Prikaži zaglavlje**: koristi se za štampanje na unapred odštampanim obrascima.
 
-**Prikaži zaglavlje**: za upravljanje bilo kojim obrascima koji su već ispisani;  
+**Definitivno**: aktivira režim konačne štampe. Nakon izvršene konačne štampe, izmene računovodstvenih knjiženja za obuhvaćeni period više nisu dozvoljene.
 
-**Definitivno**: aktivira način konačnog ispisa koji, nakon što se izvrši, blokira naknadne promjene u računovodstvenim evidencijama razdoblja;  
+**Ponovna štampa**: omogućava **ponovno štampanje već definitivno odštampanog dnevnika**. Aktiviranjem ove opcije postaju dostupna za izmenu polja koja sadrže poslednji dugovni i potražni saldo, poslednji broj stranice i poslednji broj reda. Na taj način moguće je izvršiti ponovnu štampu dnevnika bez poništavanja prethodne definitivne štampe i bez izmene podataka u obrascu **Parametri glavne knjige**, čime se zadržavaju isti završni iznosi kao i pri originalnoj štampi.
 
-**Ponovno ispisivanje**: flag je osmišljena kako bi omogućila **ponovni ispis već konačno ispisanog dnevnika**. Aktiviranjem ove opcije, polja vezana uz posljednje stanje potraživanja/dugovanja, posljednju stranicu i posljednji red, koja su popunjena i pohranjena tijekom konačnog ispisa, postat će dostupna za uređivanje s ciljem upravljanja ponovnim ispisom knjige dnevnika,bez potrebe za poništavanjem prethodnog konačnog ispisa, niti izmjenom i spremanjem prethodnih vrijednosti unutar maske *parametara glavne knjige* (kako bi se zadržali isti završni iznosi nakon ponovnog ispisa). 
+Prilikom izvršavanja konačne štampe program proverava da li postoje starija knjiženja koja još nisu odštampana, kao i da li postoje datumi koji su već obuhvaćeni prethodnom konačnom štampom.
 
-Tijekom izvršavanja konačnog ispisa, program provodi provjeru o postojanju ranijih, još neispisanih knjiženja te o postojanju datuma koji su već obuhvaćeni prethodnim ispisom. Nakon što se pokrene proces ispisa (sama pretpregled ne izvodi nikakve operacije, već je potrebno izvršiti fizički ispis, čak i u datoteku, neovisno o ishodu procesa), relevantne će se evidencije zaključati u svom fiskalnom dijelu, dok će se brojači ažurirati u tablici **[Parametri knjigovodstva](/docs/configurations/parameters/finance/accounting-parameters)**, unutar ove tablice nalazi se i gumb za brisanje konačnih ispisa (mogućnost dostupna korisnicima sa specifičnim pravima): nakon pritiska potrebno je unijeti raspon datuma koji se želi otključati, potvrditi operaciju i ručno ažurirati sve relevantne brojače.
+Samo fizička štampa (uključujući štampanje u datoteku) pokreće postupak zaključavanja. Sam pregled ne izvršava nikakve promene.
 
-**Podjela**: omogućuje izvođenje ispisa za jednu od podjela prisutnih u bazi podataka;  
+Nakon uspešno izvršene konačne štampe:
 
-**Od br. knjiženja / Do br. knjiženja**: omogućuje filtriranje ispisa po broju knjiženja (manje značajno u slučaju konačnog ispisa).  
+- odgovarajuća knjiženja biće zaključana u fiskalnom delu;
+- brojači će biti ažurirani u **[Parametrima računovodstva](/docs/configurations/parameters/finance/accounting-parameters)**.
 
+U okviru ovog obrasca dostupan je i taster za poništavanje konačne štampe (dostupan korisnicima sa odgovarajućim ovlašćenjima). Nakon izbora perioda koji treba otključati potrebno je potvrditi operaciju i ručno ažurirati odgovarajuće brojače.
+
+**Odeljenje**: omogućava štampanje dnevnika samo za izabrano odeljenje preduzeća.
+
+**Od broja knjiženja / Do broja knjiženja**: omogućava filtriranje po broju knjiženja (manje značajno prilikom konačne štampe).
 
 | Funkcija | Značenje |
 | --- | --- |
-| Pretpregled | Tipka za prikaz pretpregleda ispisa knjige dnevnika. |
-| Ispis | Tipka za izvršenje fizičkog ispisa knjige dnevnika. |
+| Pregled | Otvara pregled štampe dnevnika knjiženja. |
+| Štampaj | Štampa dnevnik knjiženja. |
 
-
-
-:::important Pogledaj također  
-[**VIDEO TUTORIJALI O FISKALNIM ISPISIMA**](/docs/video/finance/intro)
+:::important VIDI TAKOĐE
+[**VIDEO TUTORIJALI ZA FISKALNE IZVEŠTAJE**](/docs/video/finance/intro)
 :::
-

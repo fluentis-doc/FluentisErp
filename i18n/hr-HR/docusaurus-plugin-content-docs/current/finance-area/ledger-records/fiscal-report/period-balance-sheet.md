@@ -15,7 +15,7 @@ Mogući su različiti izgledi, uključujući prikaz sa suprotnim dijelovima i je
 
 **Prikaži iznose s negativnim predznakom**: ako je postavljeno, aplikacija će svaki podkonto ubaciti u rubriku kojoj pripada (prema vrsti konta) s eventualnim negativnim predznakom kada je stanje u suprotnoj rubrici. Ako zastavica nije aktivna, kao prema zadanim postavkama, svaki podkonto bit će prikazan u odjeljku koji se odnosi na njegovo stanje;  
 
-**Detalji nomenklature**: prema zadanim postavkama aplikacija isključuje sve pojedinosti o podkontima povezanim s kupcima/dobavljačima i agentima. Samo s relevantnom oznakom bit će prikazani detalji ovih podračuna matičnih podataka;  
+**Detalji nomenklature**: prema zadanim postavkama aplikacija isključuje sve pojedinosti o podkontima povezanim s kupcima/dobavljačima i agentima. Samo s relevantnom oznakom bit će prikazani detalji ovih podkonta matičnih podataka;  
 
 **Isključi privremena konta**: privremena konta prikazana su na dnu odjeljaka aktive i pasive. S ovom zastavom/oznakom takva konta neće biti prikazana u izvješću. Treba imati na umu da ovakva konta nikada ne podliježu zatvaranju/otvaranju konta u automatskom postupku aplikacije;  
 

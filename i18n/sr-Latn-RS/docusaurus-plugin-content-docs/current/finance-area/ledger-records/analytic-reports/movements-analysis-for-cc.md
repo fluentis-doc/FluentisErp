@@ -1,19 +1,13 @@
 ---
-title: Analiza knjiženja za centar troška  
+title: Analiza knjiženja po centru troškova
 sidebar_position: 3
 ---
 
-Izvješće o analizi kretanja prema mjestu troška omogućuje ispis pojedinosti mjesta troška povezanih s različitim računovodstvenim kretanjima/zapisima, zbrajajući iznose na samom cjelokupnom kretanju/zapisu.  
+Izveštaj **Analiza knjiženja po centru troškova** omogućava prikaz detalja centara troškova povezanih sa različitim računovodstvenim knjiženjima, uz zbirne iznose po svakom pojedinačnom knjiženju.
 
-TRAKA IZBORNIKA: predstavlja izbornik otvorenog obrasca, odnosno područje u kojem je moguće provoditi radnje. Popis mogućih funkcija prikazan je u nastavku:
+**TRAKA SA ALATKAMA** predstavlja meni otvorenog obrasca, odnosno područje u kojem je moguće izvršavati dostupne funkcije.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Prethodni pregled | Tipka za pregled ispisa analize knjiženja po mjestu troška. |
-| Ispiši | Tipka za fizički ispis analize knjiženja po mjestu troška. |
-
-
-
-
-
-
+| Pregled | Otvara pregled štampe analize knjiženja po centru troškova. |
+| Štampaj | Štampa izveštaj analize knjiženja po centru troškova. |

@@ -11,7 +11,7 @@ Ispis knjiga PDV-a mora se provoditi pojedinačno za svaku knjigu računa: nije 
 
 **Knjiga računa**: odabir knjige računa za ispis;
 
-**Odjel**: obično se ne koristi, posebice više ako poduzeće nema raznih oragnizacijskih podjela;
+**Odjel**: obično se ne koristi, posebice više ako poduzeće nema raznih organizacijskih podjela;
 
 **Sažetak zapisa**: zastavica omogućuje ispis sažetka knjiga i pripadajućih PDV zapisa u odabranom mjesecu ili tromjesečju 
 
@@ -26,16 +26,16 @@ Flag **Prikaži tip dokumenta** bit će dodano, u referencama dokumenata, i vrs
 
 Naslov registra preuzet će se iz imena registra PDV-a i bit će prikazan na ispisu s opcijom 'Prikaži zaglavlje'.
 
-**Mjesečno / Kvartalno**: flagovi odražavaju postavku periodičnosti PDV-a definiranu u računovodstvenim parametrima, ali se ta postavka ne može mijenjati na ovom mjestu.
+**Mjesečno / Kvartalno**: opcije odražavaju postavku periodičnosti PDV-a definiranu u računovodstvenim parametrima, ali se ta postavka ne može mijenjati na ovom mjestu.
 
  
 
-Aktiviranjem flaga **Definitivno** procedura će zaključati ispis zapisa, blokirajući odabrano razdoblje za daljnje izmjene: filter po odjelu također će biti onemogućen. Pokretanje pretpregleda ispisa u konačnici neće blokirati razdoblje i ažurirati brojeve. Pokretanje fizičkog procesa ispisa blokirat će razdoblje/registar u računovodstvu i ažurirati brojač stranice u tablici zapisa PDV-a (i nije bitno je li proces ispisa uspješan ili ne, to također može biti ispis u datoteku). Izvršavanjem ispisa ili pretpregleda aplikacija će provjeriti postoje li rupe u protokolu i je li poštivan kronološki redoslijed, blokirajući konačni ispis osim ako je kontrolna zastavica u tablici PDV-a onemogućena. Konačni ispis NIJE potreban za ispis obračuna PDV-a. 
+Aktiviranjem opcije **Definitivno** procedura će zaključati ispis zapisa, blokirajući odabrano razdoblje za daljnje izmjene: filter po odjelu također će biti onemogućen. Pokretanje pretpregleda ispisa u konačnici neće blokirati razdoblje i ažurirati brojeve. Pokretanje fizičkog procesa ispisa blokirat će razdoblje/registar u računovodstvu i ažurirati brojač stranice u tablici zapisa PDV-a (i nije bitno je li proces ispisa uspješan ili ne, to također može biti ispis u datoteku). Izvršavanjem ispisa ili pretpregleda aplikacija će provjeriti postoje li rupe u protokolu i je li poštivan kronološki redoslijed, blokirajući konačni ispis osim ako je kontrolna zastavica u tablici PDV-a onemogućena. Konačni ispis NIJE potreban za ispis obračuna PDV-a. 
 
 
 | Funkcija | Značenje |
 | --- | --- |
-| Prethodni pregled | Tipka za pregled ispisa kniga PDV-a. |
+| Prethodni pregled | Tipka za pregled ispisa knjiga PDV-a. |
 | Ispiši | Tipka za fizički ispis knjiga PDV-a. |
 
 

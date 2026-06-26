@@ -3,45 +3,43 @@ title: Knjige PDV-a
 sidebar_position: 9
 ---
 
-Ispis knjiga PDV-a mora se provoditi pojedinačno za svaku knjigu računa: nije dopušten ukupni ispis svih knjiga za razdoblje.  
+Štampanje PDV registara vrši se pojedinačno za svaki PDV registar. Nije moguće izvršiti jedinstvenu štampu svih registara za izabrani obračunski period.
 
-**Period ispisa**: odabir mjeseca za koji se želi pregledati ispis;
+**Period štampe**: izbor meseca za koji se želi izvršiti pregled ili štampa registra.
 
-**Referentna godina**: prema zadanim postavkama predložena je tekuća godina;
+**Referentna godina**: podrazumevano se predlaže tekuća godina.
 
-**Knjiga računa**: odabir knjige računa za ispis;
+**PDV registar**: izbor registra koji se štampa.
 
-**Odjel**: obično se ne koristi, posebice više ako poduzeće nema raznih oragnizacijskih podjela;
+**Odeljenje**: najčešće se ne koristi, osim kod preduzeća koja imaju više organizacionih jedinica.
 
-**Sažetak zapisa**: zastavica omogućuje ispis sažetka knjiga i pripadajućih PDV zapisa u odabranom mjesecu ili tromjesečju 
+**Sažetak knjiženja**: aktiviranjem ove opcije štampa se zbirni pregled PDV registra i pripadajućih PDV knjiženja za izabrani mesec ili tromesečje.
 
+Polja u nastavku prikazuju broj poslednje odštampane stranice za izabrani PDV registar. Ova informacija preuzima se iz tabele **PDV registri**.
 
-Polja koja slijede prikazuju koji je posljednji broj ispisane stranice za postavljeni registar: ova informacija se preuzima iz tablice Knjige PDV-a.
+Opcija **Prikaži zaglavlje** podrazumevano je uključena i omogućava prikaz naziva PDV registra, naziva preduzeća i numeracije stranica.
 
-Flag **Prikaži zaglavlje** već je postavljena prema zadanim postavkama. Ova zastavica prikazuje naziv PDV registra, tvrtku i broj/godinu stranica.
+Opcija **Prikaži tip dokumenta** dodaje vrstu dokumenta uz podatke o dokumentu. Ovo može biti korisno kada postoji više numeracija prodajnih faktura koje pripadaju istom PDV registru.
 
-Flag **Prikaži tip dokumenta** bit će dodano, u referencama dokumenata, i vrsta dokumenta: može biti korisno u slučaju kada fakture prodaje imaju više numeracija koje se odnose na isti PDV registar.
+**Naziv knjige**: kada opcija **Sažetak knjiženja** nije aktivna, moguće je uneti prilagođeni naslov izveštaja umesto podrazumevanog naziva PDV registra.
 
-**Naziv knjige**: kada flag Sažetak nije aktivan, moguće je nametnuti naslov ispisa koji se razlikuje od naziva PDV registra koji se prikazuje prema zadanim postavkama.
+Ako je uključena opcija **Prikaži zaglavlje**, naziv registra preuzima se iz naziva definisanog u PDV registru i prikazuje na štampi.
 
-Naslov registra preuzet će se iz imena registra PDV-a i bit će prikazan na ispisu s opcijom 'Prikaži zaglavlje'.
+**Mesečno / Tromesečno**: ove opcije odražavaju periodičnost obračuna PDV-a definisanu u računovodstvenim parametrima i nije ih moguće menjati u ovom obrascu.
 
-**Mjesečno / Kvartalno**: flagovi odražavaju postavku periodičnosti PDV-a definiranu u računovodstvenim parametrima, ali se ta postavka ne može mijenjati na ovom mjestu.
+Aktiviranjem opcije **Konačno** zaključava se štampani obračunski period i onemogućavaju se dalje izmene u izabranom periodu. U tom slučaju filter po odeljenju takođe postaje nedostupan.
 
- 
+Pregled štampe **ne zaključava** period niti ažurira brojače stranica. Tek fizička štampa (uključujući štampanje u datoteku) zaključava period odnosno PDV registar u računovodstvu i ažurira brojač stranica u tabeli **PDV registri**, bez obzira na uspešnost samog procesa štampanja.
 
-Aktiviranjem flaga **Definitivno** procedura će zaključati ispis zapisa, blokirajući odabrano razdoblje za daljnje izmjene: filter po odjelu također će biti onemogućen. Pokretanje pretpregleda ispisa u konačnici neće blokirati razdoblje i ažurirati brojeve. Pokretanje fizičkog procesa ispisa blokirat će razdoblje/registar u računovodstvu i ažurirati brojač stranice u tablici zapisa PDV-a (i nije bitno je li proces ispisa uspješan ili ne, to također može biti ispis u datoteku). Izvršavanjem ispisa ili pretpregleda aplikacija će provjeriti postoje li rupe u protokolu i je li poštivan kronološki redoslijed, blokirajući konačni ispis osim ako je kontrolna zastavica u tablici PDV-a onemogućena. Konačni ispis NIJE potreban za ispis obračuna PDV-a. 
+Prilikom pregleda ili štampe aplikacija proverava da li postoje prekidi u numeraciji protokola i da li je poštovan hronološki redosled knjiženja. Ako kontrola nije uspešna (osim ukoliko nije isključena u podešavanjima PDV registra), konačna štampa neće biti dozvoljena.
 
+Konačna štampa PDV registara **nije obavezna** za izvršavanje obračuna PDV-a.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Prethodni pregled | Tipka za pregled ispisa kniga PDV-a. |
-| Ispiši | Tipka za fizički ispis knjiga PDV-a. |
+| Pregled | Prikazuje pregled štampe PDV registra. |
+| Štampaj | Pokreće fizičku štampu PDV registra. |
 
-
-:::important Vidi također 
-[**VIDEO UPUTE O FISKALNIM ISPISIMA**](/docs/video/finance/intro)
+:::important VIDI TAKOĐE
+[**VIDEO TUTORIJALI O FISKALNIM IZVEŠTAJIMA**](/docs/video/finance/intro)
 :::
-
-
-

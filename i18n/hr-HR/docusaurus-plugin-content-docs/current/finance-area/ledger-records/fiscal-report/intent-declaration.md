@@ -9,7 +9,7 @@ Moguće je ispisati sve izjave o namjeri ili filtrirati ispis prema:
 
 **Tip deklaracije**: Kupac ili Dobavljač;
 
-**Pretraživanje pomoćnog računa u šifrarniku kupaca ili dobavljača**: ovisno o prethodno odabranoj opciji;
+**Pretraživanje pomoćnog računa u šifarniku kupaca ili dobavljača**: ovisno o prethodno odabranoj opciji;
 
 **Broj našeg protokola od / do**.
 

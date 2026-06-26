@@ -1,27 +1,25 @@
 ---
-title: Likvidacija PDV-a 74 ter (IT)
+title: Obračun PDV-a po posebnom postupku 74-ter (IT)
 sidebar_position: 6
 ---
 
-Ovim postupkom ispisa vrši se izračun PDV-a u pretplatu/potraživanja za referentno razdoblje, kako za redovni PDV režim, tako i za režim 74 ter.
+Ova procedura služi za obračun obaveze ili pretporeza PDV-a za izabrani obračunski period, kako za redovan sistem PDV-a, tako i za poseban postupak oporezivanja prema članu **74-ter**.
 
-Nakon što se postave razdoblje i godina na koje se odnosi likvidacija (pri čemu razdoblje može biti mjesečno ili tromjesečno, ovisno o periodičnosti likvidacije PDV-a postavljenoj u parametrima kontabiliteta), moguće je definirati na koji će se registar likvidacija ispisivati: uobičajeno se postupak provodi na kraju registra izlaznih računa (prodaje) ili na posebnom zbirnom registru (preporučena opcija).
+Nakon izbora obračunskog perioda i godine (pri čemu period može biti mesečni ili tromesečni, u skladu sa periodičnošću obračuna PDV-a definisanom u parametrima računovodstva), potrebno je odabrati **PDV registar** u koji će obračun biti odštampan.
 
-**Konačni ispis**: promijenit će referentno razdoblje tako da odgovara razdoblju nakon posljednjeg konačno ispisanog, a broj primjeraka za ispis bit će onemogućen;
+Obračun se po pravilu štampa na kraju knjige izlaznih računa ili u posebnom zbirnom registru namenjenom obračunu PDV-a, što je ujedno i preporučeni način rada.
 
-**Izvršavanje pregleda ispisa kao konačan ispis**: razdoblje se neće blokirati, niti će se ažurirati brojači;
+**Konačna štampa**: nakon izvršenja automatski postavlja obračunski period na prvi naredni period posle poslednjeg konačno obrađenog obračuna i onemogućava izbor broja primeraka za štampu.
 
-**Izvršavanje fizičkog ispisa**: dovodi do blokade razdoblja u kontabilitetu i ažuriranja brojača stranica u tablici PDV registara (nije važno je li ispis uspješno dovršen ili ne — može biti i ispis u datoteku). 
+**Pregled konačne štampe**: omogućava pregled konačne verzije izveštaja bez zaključavanja obračunskog perioda i bez ažuriranja brojača.
 
-TRAKA IZBORNIKA: predstavlja izbornik dotičnog obrasca, odnosno područje unutar kojeg se mogu izvršavati određene radnje. Popis dostupnih funkcionalnosti u trenutno aktivnoj kartici prikazan je u nastavku:
+**Izvršavanje štampe**: fizička štampa zaključava obračunski period u računovodstvu i ažurira brojač stranica u tabeli **PDV registri**. Zaključavanje perioda izvršava se bez obzira na uspešnost procesa štampanja, uključujući i slučajeve kada se štampa u datoteku.
+
+## TRAKA SA ALATKAMA
+
+Predstavlja meni ovog obrasca, odnosno područje iz kojeg se pokreću radnje vezane za proceduru.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Pregled | Tipka za prikaz pregleda ispisa likvidacije PDV-a 74 ter. |
-| Ispis | Tipka za fizički ispis likvidacije PDV-a 74 ter. |
-
-
-
-
-
-
+| Pregled | Prikazuje pregled obračuna PDV-a po posebnom postupku 74-ter. |
+| Štampaj | Pokreće fizičku štampu obračuna PDV-a po posebnom postupku 74-ter. |

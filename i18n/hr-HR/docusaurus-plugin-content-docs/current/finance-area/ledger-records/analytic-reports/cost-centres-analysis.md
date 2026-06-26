@@ -15,7 +15,7 @@ U vezi s korištenjem kriterija grupiranja, pogledati **[Pregled knjiženja po s
 
 | Funkcija | Značenje |
 | --- | --- |
-| Prethodni pregled | Tipka za pretpregled ispisa analize centra toška. |
+| Prethodni pregled | Tipka za pretpregled ispisa analize centra troška. |
 | Ispiši | Tipka za izvođenje fizičkog ispisa analize mjesta troška. |
 
 

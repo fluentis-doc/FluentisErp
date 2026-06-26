@@ -1,21 +1,16 @@
 ---
-title: Ispis za ovjeru (IT) 
+title: Štampa za overu (IT)
 sidebar_position: 7
 ---
 
-Ovo izvješće vam omogućuje ispis DDTti obrazaca dodavanjem zaglavlja tvrtke i brojeva stranica za godinu.  
+Ovaj izveštaj omogućava štampanje obrazaca za overu dodavanjem zaglavlja preduzeća i numeracije stranica za tekuću godinu.
 
-Napominjemo da je ispis na DDTti obrascima ukinut za nekoliko poreznih registara. Preporučljivo je povremeno provjeriti zakonodavstvo.  
+Napomena: obaveza štampanja na overenim obrascima ukinuta je za više poreskih registara. Preporučuje se da povremeno proverite važeće zakonske propise.
 
-**Početna stranica**: broj se prikazuje prilikom ispisa i odnosi se na prvu stranicu koja se ispisuje.  
+**Početna stranica**: određuje broj prve stranice koja će biti odštampana.
 
-**Broj stranica za ispis**: pokazuje koliko se stranica mora ispisati.  
+**Broj stranica za štampu**: određuje ukupan broj stranica koje će biti odštampane.
 
-**Godina**: prema zadanim postavkama predložena je tekuća godina. Godina će biti dodana u br. stranica izrada niza 1/2018; 2/2018 itd....  
+**Godina**: podrazumevano se predlaže tekuća godina. Godina će biti uključena u numeraciju stranica, na primer: **1/2026**, **2/2026** itd.
 
-**Naslov**: slobodni niz koji će se ispisati izravno na mjestu naslova. Može se koristiti za titriranje ispisa u odnosu na opciju koja deaktivira zaglavlje prisutno na raznim izvješćima koja se mogu ispisati pomoću DDTti.  
-
-
-
-
-
+**Naslov**: slobodan tekst koji će biti odštampan u zaglavlju izveštaja. Može se koristiti zajedno sa opcijom za isključivanje standardnog zaglavlja kako bi se prilagodio izgled različitih izveštaja koji se štampaju na overenim obrascima.
