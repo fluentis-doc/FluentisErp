@@ -1,17 +1,12 @@
 ---
-title: Knjiženje razgraničenja za maksimalne naknade 
+title: Knjiženje razgraničenja maksimalne naknade
 sidebar_position: 3
 ---
 
-Putem ovog obrasca moguće je izvršiti knjiženje razgraničenja maksimalnih leasing naknada (maxicanoni) koje su prethodno izračunate u posebnom obrascu **[Razgraničenje maksimalne naknade](/docs/finance-area/leasing/procedures/maxifee-accrual-calculation)**.
+Ovaj obrazac omogućava knjiženje razgraničenja maksimalnih leasing naknada (*maxicanoni*) koje su prethodno obračunate u obrascu **[Obračun razgraničenja maksimalne naknade](/docs/finance-area/leasing/procedures/maxifee-accrual-calculation)**.
 
-Bit će prikazane samo one stavke za koje je u obrascu za izračun razgraničenja aktiviran flag Kontrolirano.
+Prikazuju se samo one stavke za koje je u obrascu za obračun razgraničenja aktivirana opcija **Kontrolisano**.
 
-Odaberite stavke koje želite proknjižiti te pritisnite tipku Knjiženje razgraničenja maksimalne naknade u traci izbornika.
+Potrebno je označiti stavke koje se žele proknjižiti, a zatim na traci menija izabrati komandu **Knjiženje razgraničenja maksimalne naknade**.
 
-Dostupna je i standardna kartica za poništavanje knjiženja.
-
-
-
-
-
+Dostupna je i standardna kartica **Povrat**, koja omogućava poništavanje izvršenih knjiženja.

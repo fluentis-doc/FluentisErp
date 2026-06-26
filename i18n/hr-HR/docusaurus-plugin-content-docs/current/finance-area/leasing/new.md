@@ -41,13 +41,13 @@ Ovaj datum, čak i ako ga unese korisnik, normalno bi se trebao podudarati s kon
 
 **Početna postavka**: Obično u ugovorima o leasingu postoji početna maksimalna naknada.
 
-**Spese istruttoria e pratica**: Accessorie rispetto al maxicanone ed eventualmente previste una tantum all'inizio del contratto.
+**Troškovi obrade i administrativni troškovi**: dodatni troškovi koji se obračunavaju uz učešće (maxicanone) te se, ako su ugovoreni, naplaćuju jednokratno na početku ugovora.
 
 
 
 ## POLJA KOJA SE NE MOGU UREĐIVATI (izračunata):
 
-**Preostalo zaduženje**: Vrijednost dobra umanjena za zbroj glavnice plaćenih rata (uzimajući u obzir samo rate za koje je označen flag "Knjigovodstveno evidentirano" u vezi s ratom).  
+**Preostalo zaduženje**: Vrijednost dobra umanjena za zbroj glavnice plaćenih rata (uzimajući u obzir samo rate za koje je označena opcija "Knjigovodstveno evidentirano" u vezi s ratom).  
 
 **Ukupna vrijednost ugovora**: Početna maksimalna naknada + troškovi preliminarne istrage i obrade + zbroj naknada (dio glavnice + dio kamata + troškovi naplate / troškovi rate)  
 
@@ -70,7 +70,7 @@ U ovom dijelu moguće je ručno unijeti amortizacijski plan leasing naknada (isk
 
 **Ukupan iznos**: ne može se uređivati, izračunava zbroj komponenti rate; 
 
-**Knjiženo**: flag se aktivira kada se provodi obračun naknade i utječe kako na izračun preostalog duga tako i na izračun odgode maksi-naknade;
+**Knjiženo**: opcija se aktivira kada se provodi obračun naknade i utječe kako na izračun preostalog duga tako i na izračun odgode maksi-naknade;
 
 **Broj/datum unosa**: navode se reference knjiženja generirane postupkom obračuna naknada.
 
@@ -102,10 +102,10 @@ ne uzima u obzir maksimalnu naknadu koja se mora smatrati dodatnim početnom pre
 
 Otvara se obrazac u koji se upisuje (ponovno ako se razlikuje od onog koji je već umetnut u zaglavlju) **datum prve rate**, broj **mjeseci odstupanja** između jedne rate i druge (što određuje periodičnost rate, npr. 1 = mjesečno, 2 = dvomjesečno, 3 = tromjesečno itd...).   
 
-**Trošak rate**: ad esempio spese di incasso ecc... che vengono aggiunte per ogni rata nell'apposita colonna del dettaglio. 
+**Trošak rate**: na primjer, troškovi naplate i slični troškovi, koji se dodaju svakoj rati u odgovarajućem stupcu s detaljima. 
 
 Ova se tipka također može koristiti za ponovni izračun i ažuriranje amortizacijskog plana, pod uvjetom da naknade još nisu obračunate.  
 
 **Promjena datuma vrednovanja**: koristi se za promjenu samo datuma naknada i/ili relativne periodičnosti bez ponovnog izračunavanja cijelog plana (gdje su se također mogle izvršiti ručne promjene vrijednosti). Traži se samo datum i periodičnost prvog najma.  
 
-**Ažuriraj troškove rate**: koristi se za promjenu provizije (primjer troškova naplate rate) na svim linijama bez ponovnog izračuna cijelog plana ili potrebe za ručnim ažuriranjem svih linija (uvijek je moguće). U dijalogu se traži samo nova vrijednost obročne provizije (Instalment cost).  
+**Ažuriraj troškove rate**: koristi se za promjenu provizije (primjer troškova naplate rate) na svim linijama bez ponovnog izračuna cijelog plana ili potrebe za ručnim ažuriranjem svih linija (uvijek je moguće). U dijalogu se traži samo nova vrijednost obročne provizije (*Instalment cost*).  

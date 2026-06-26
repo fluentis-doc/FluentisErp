@@ -1,62 +1,60 @@
 ---
-title: Upravljanje leasingom  
+title: Upravljanje leasingom
 sidebar_position: 2
 ---
 
-S ove pozicije moguće je pretraživati leasing ugovore prisutne u bazi podataka i nastaviti s izmjenom detalja ili umetnuti novi 
-ugovor pomoću tipke **Novo**.
+Sa ovog mesta moguće je pretraživati leasing ugovore koji se nalaze u bazi podataka, menjati njihove detalje ili uneti novi ugovor pomoću dugmeta **Novo**.
 
-Filtri za pretraživanje, osim broja, opisa i datuma, mogući su i po banci koja plaća naknadu i po tvrtki koja daje (leasing).
+Pored filtera za broj, opis i datum, pretraga je moguća i prema banci preko koje se vrši plaćanje rata, kao i prema leasing društvu (davaocu leasinga).
 
-Još jedno ključno polje filtera je **Vrsta leasinga**.
+Još jedno važno polje za filtriranje je **Vrsta leasinga**.
 
-Ovo polje odnosi se na **specifičnu tablicu** (dostupnu i desnim klikom miša > Otvori obrazac) koju je **potrebno ispuniti prije prvog unosa novog leasinga**.
+Ovo polje povezano je sa **posebnom tabelom** (dostupnom i preko desnog klika > Otvori obrazac), koju je **potrebno popuniti pre prvog unosa novog leasing ugovora**.
 
 ![](/img/it-it/finance-area/leasing/search/image01.png)
 
-Ostali podaci prijavljeni u tablici rezultata su **Datum ugovora** (tj. sklapanja, datum od kojeg počinje obračun relevantnih dana),  
+Ostali podaci prikazani u tabeli rezultata su:
 
-**Datum isteka roka trajanja** (datum do kojeg treba izračunati ukupne dane u svrhu izračuna relevantnih dana),  
+**Datum ugovora** (datum zaključenja ugovora, od kojeg počinje obračun relevantnih dana),
 
-**Broj** ugovora,  
+**Datum isteka ugovora** (datum do kojeg se računa ukupan broj dana za potrebe obračuna),
 
-**Opis** predmeta leasinga,  
+**Broj** ugovora,
 
-**Konto/podkonto** banke za plaćanje i davatelja sredstava,  
+**Opis** predmeta leasinga,
 
-**Početna postavka** (ako je predviđena i uključena u podatke o ugovoru)
+**Konto/podkonto** banke za plaćanje i davaoca leasinga,
 
-**Troškovi obrade** (troškovi upravljanja ugovorom ako su predviđeni i uključeni)  
+**Početna maksimalna naknada** (ukoliko je definisana u ugovoru),
 
-**Preostalo zaduženje**: polje izračunato kao zbroj kapitalnih dijelova očekivanih najamnina umanjenih za one koje su već obračunate kao plaćene.  
+**Troškovi obrade** (ukoliko su ugovoreni),
 
-**TABLICA VRSTA LIZINGA**:
+**Preostalo zaduženje**: polje koje se automatski izračunava kao zbir glavničkih delova svih planiranih rata umanjen za glavničke delove rata koje su već knjižene kao plaćene.
 
-Tablica koja definira sve obvezne atribute vrste leasinga, vrste koje se moraju pozvati prilikom sklapanja novog ugovora o leasingu. ![](/img/it-it/finance-area/leasing/search/image02.png)
+## TABELA VRSTA LEASINGA
 
-**Šifra / opis**: slobodno se dodjeljuju, identificiraju vrstu leasinga koju šifriramo.  
+Ova tabela definiše sve obavezne karakteristike vrste leasinga koje se koriste prilikom kreiranja novog leasing ugovora.
 
-**Vrsta leasinga**: polje trenutno samo informativno, ne određuje nikakvu automatizaciju, definira da li je Financijski leasing ili Operativni najam.  
+![](/img/it-it/finance-area/leasing/search/image02.png)
 
-**Računovodstvena metoda**: PAŽNJA - trenutno je implementirana samo **Kapitalna** metoda koja omogućava pravilno funkcioniranje računovodstvenih procedura.  
+**Šifra / Opis**: slobodno se definišu i služe za identifikaciju vrste leasinga.
 
-Patrimonijalna metoda odgovara talijanskim računovodstvenim standardima OIC (koji predviđaju evidentiranje najmova prema pravnoj formi ugovora, kao običan najam bez prijenosa vlasništva, s posljedičnim knjiženjem imovine u bilanci i početkom amortizacije tek na kraju ugovora kada se predmet najma otkupi).
+**Vrsta leasinga**: trenutno ima samo informativnu funkciju i ne utiče na automatizaciju. Njome se određuje da li se radi o finansijskom leasingu ili operativnom leasingu.
 
-Financijska metoda odgovara međunarodnim računovodstvenim standardima IAS/IFRS (koji predviđaju uzimanje u obzir ekonomske suštine transakcije, a ne samo pravne forme, te se stoga predmet najma odmah knjiži kao imovina u bilanci i započinje se s amortizacijom).
+**Računovodstveni metod**: **PAŽNJA** – trenutno je implementiran samo **Kapitalni metod**, koji omogućava pravilno funkcionisanje računovodstvenih procedura.
 
-**Tip tijeka novca**: padajući izbornik koji omogućuje da iz tablice Tip tijeka novca modula Novčanog tijeka pozove vrsta (koja ima oznaku Extraaccounting) tijeka novca s kojom se predstavljaju financijski tijekovi zahtjeva za različite predviđene naknade unutar ugovora.  
+Patrimonijalni metod odgovara italijanskim računovodstvenim standardima **OIC**, prema kojima se leasing evidentira prema pravnoj formi ugovora kao običan zakup, bez priznavanja sredstva u bilansu sve do njegovog otkupa, kada započinje amortizacija.
 
-**Predložak knjiženja**: causale contabile che sarà utilizzata nelle registrazioni contabili relative ai canoni leasing fatturati dalla società concedente e da contabilizzare.
+Finansijski metod odgovara međunarodnim računovodstvenim standardima **IAS/IFRS**, koji uzimaju u obzir ekonomsku suštinu transakcije, pa se predmet leasinga odmah evidentira kao imovina u bilansu i odmah započinje njegova amortizacija.
 
-**Kamate konto/podkonto**: u ovim poljima označava se konto na koji će se obračunavati kamatni dio očekivanih naknada. Ova postavka bit će predložena u novim ugovorima umetnutima uz ovu tipologiju.
+**Tip novčanog toka**: padajuća lista koja omogućava izbor vrste novčanog toka iz tabele **Tip novčanog toka** modula Novčani tok, pri čemu se koristi tip sa aktiviranom opcijom **Extraaccounting** za evidentiranje finansijskih tokova leasing ugovora.
 
-**Konto /podkonto naknade**: u ovom polju označava se kontokoji će se koristiti za glavni dio najamnina koji će se obračunavati. Konto će biti ponuđen u novim ugovorima o najmu umetnutim s ovom tipologijom.  
+**Predložak knjiženja**: računovodstveni predložak koji će se koristiti za knjiženje leasing rata koje fakturiše leasing društvo.
 
-**Konto /podkonto troškova**: označava se račun koji će se koristiti za dio troškova prikupljanja pojedinačnih naknada (ako je primjenjivo).  
+**Konto/podkonto kamata**: određuje konto na koji će se knjižiti kamatni deo leasing rata. Ova vrednost automatski se predlaže prilikom kreiranja novih ugovora ove vrste.
 
-**PDV**: budući da je ovo knjiženje fakture naknada, potrebno je navesti stopu koja će se automatski predložiti u računovodstvenim evidencijama naknada.  
+**Konto/podkonto glavnice**: određuje konto na koji će se knjižiti glavni deo leasing rata. Ovaj konto automatski se predlaže u novim leasing ugovorima.
 
+**Konto/podkonto troškova**: određuje konto koji će se koristiti za knjiženje troškova pojedinačnih leasing rata (ukoliko postoje).
 
-
-
-
+**PDV**: pošto se radi o knjiženju računa za leasing rate, potrebno je odrediti stopu PDV-a koja će se automatski predlagati u računovodstvenim knjiženjima leasing rata.

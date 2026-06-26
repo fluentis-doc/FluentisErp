@@ -3,12 +3,6 @@ title: Knjiženje naknada
 sidebar_position: 1
 ---
 
-S ovog mjesta moguće je izvršiti knjiženje svih rata za sve leasing ugovore koji se nalaze u bazi podataka, uključujući i masovno knjiženje.  
+Ovaj obrazac omogućava knjiženje svih rata za sve leasing ugovore evidentirane u bazi podataka, uključujući i mogućnost masovnog knjiženja.
 
-Postupak je identičan onome koji je dostupan unutar **[detalja pojedinačnih leasing ugovora](/docs/finance-area/leasing/new).**
-
-
-
-
-
-
+Postupak knjiženja identičan je postupku koji je dostupan u okviru **[detalja pojedinačnog leasing ugovora](/docs/finance-area/leasing/new)**.

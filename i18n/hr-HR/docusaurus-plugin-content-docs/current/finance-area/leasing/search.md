@@ -3,8 +3,7 @@ title: Upravljanje leasingom
 sidebar_position: 2
 ---
 
-S ove pozicije moguće je pretraživati leasing ugovore prisutne u bazi podataka i nastaviti s izmjenom detalja ili umetnuti novi 
-ugovor pomoću tipke **Novo**.
+S ove pozicije moguće je pretraživati leasing ugovore prisutne u bazi podataka i nastaviti s izmjenom detalja ili umetnuti novi ugovor pomoću tipke **Novo**.
 
 Filtri za pretraživanje, osim broja, opisa i datuma, mogući su i po banci koja plaća naknadu i po tvrtki koja daje (leasing).
 
@@ -28,9 +27,9 @@ Ostali podaci prijavljeni u tablici rezultata su **Datum ugovora** (tj. sklapanj
 
 **Troškovi obrade** (troškovi upravljanja ugovorom ako su predviđeni i uključeni)  
 
-**Preostalo zaduženje**: polje izračunato kao zbroj kapitalnih dijelova očekivanih najamnina umanjenih za one koje su već obračunate kao plaćene.  
+**Preostalo zaduženje**: polje izračunano kao zbroj kapitalnih dijelova očekivanih najamnina umanjenih za one koje su već obračunate kao plaćene.  
 
-**TABLICA VRSTA LIZINGA**:
+**TABLICA VRSTA LEASINGA**:
 
 Tablica koja definira sve obvezne atribute vrste leasinga, vrste koje se moraju pozvati prilikom sklapanja novog ugovora o leasingu. ![](/img/it-it/finance-area/leasing/search/image02.png)
 
@@ -46,11 +45,11 @@ Financijska metoda odgovara međunarodnim računovodstvenim standardima IAS/IFRS
 
 **Tip tijeka novca**: padajući izbornik koji omogućuje da iz tablice Tip tijeka novca modula Novčanog tijeka pozove vrsta (koja ima oznaku Extraaccounting) tijeka novca s kojom se predstavljaju financijski tijekovi zahtjeva za različite predviđene naknade unutar ugovora.  
 
-**Predložak knjiženja**: causale contabile che sarà utilizzata nelle registrazioni contabili relative ai canoni leasing fatturati dalla società concedente e da contabilizzare.
+**Predložak knjiženja**: Računovodstveni predložak koji će se koristiti za računovodstvena knjiženja leasing rata koje je fakturirao davatelj leasinga i koje je potrebno proknjižiti.
 
 **Kamate konto/podkonto**: u ovim poljima označava se konto na koji će se obračunavati kamatni dio očekivanih naknada. Ova postavka bit će predložena u novim ugovorima umetnutima uz ovu tipologiju.
 
-**Konto /podkonto naknade**: u ovom polju označava se kontokoji će se koristiti za glavni dio najamnina koji će se obračunavati. Konto će biti ponuđen u novim ugovorima o najmu umetnutim s ovom tipologijom.  
+**Konto /podkonto naknade**: u ovom polju označava se konto koji će se koristiti za glavni dio najamnina koji će se obračunavati. Konto će biti ponuđen u novim ugovorima o najmu umetnutim s ovom tipologijom.  
 
 **Konto /podkonto troškova**: označava se račun koji će se koristiti za dio troškova prikupljanja pojedinačnih naknada (ako je primjenjivo).  
 

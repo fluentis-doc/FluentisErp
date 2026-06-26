@@ -3,7 +3,7 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul Leasing posebno je dizajniran za upravljanje ugovorima o leasingu sklopljenim za nabavu proizvodnih resursa i poslovne imovine poduzeća.   
+Modul **Leasing** posebno je dizajniran za upravljanje ugovorima o leasingu sklopljenim za nabavu proizvodnih resursa i poslovne imovine poduzeća.   
 
 Omogućuje izračun amortizacijskog plana leasinga jednostavnim unosom osnovnih podataka ugovora.  
 

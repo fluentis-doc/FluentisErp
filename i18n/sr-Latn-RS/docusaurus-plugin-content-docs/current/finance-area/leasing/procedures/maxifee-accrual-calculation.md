@@ -1,67 +1,106 @@
 ---
-title: Izračun razgraničenja za maksimalnu naknadu  
+title: Izračun razgraničenja maksimalne naknade
 sidebar_position: 1
 ---
 
-Putem ovog obrasca moguće je pretražiti već izračunata razgraničenja te izvršiti novi godišnji izračun razgraničenja za maksimalne leasing naknade (maxicanone).  
+Ovaj obrazac omogućava pregled prethodno izračunatih razgraničenja te izračun novih godišnjih razgraničenja za maksimalne leasing naknade (*maxicanone*).
+Postupak se, jednako kao i knjiženje obračuna razgraničenja u modulu računovodstva, sastoji od dvije faze:
+1. izračun razgraničenja,
+2. knjiženje izračunatih vrijednosti putem odgovarajuće računovodstvene procedure.
 
-ostupak je, slično kao i kod knjiženja obračuna razgraničenja u modulu Glavno knjigovodstvo, podijeljen u dvije faze: **najprije** se s ove pozicije izvršava **izračun** azgraničenja, a **zatim** se nastavlja s njegovim **knjiženjem** putem odgovarajuće računovodstvene procedure unutar modula.  
-
-Pritiskom na tipku Novo inicijalizira se obrazac za unos parametara za izračun.  
+Odabirom funkcije **Novo** otvara se obrazac za unos parametara potrebnih za izračun.
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image01.png)
 
-Potrebno je definirati sljedeće: **Računovodstvenu godinu**, **Vrstu naloga** koja će se koristiti za knjiženje korektivne stavke, **Datum** knjiženja i datum obračunskog razdoblja, koji će biti korišteni u knjiženju.  
+Potrebno je definirati:
+- **Računovodstvenu godinu**
+- **Vrstu naloga** koja će se koristiti za knjiženje korektivne stavke
+- **Datum knjiženja**
+- **Datum obračunskog razdoblja**
 
-Iako se unosi vrsta naloga, struktura knjiženja automatski se određuje logikom postupka.
-
-Nakon spremanja moguće je pritisnuti gumb Izračunaj kako bi se dobio prijedlog vrijednosti koje se mogu potvrditi putem kvačice (opcija Označi sve za potvrdu obračuna vezanih uz sve prisutne leasinge), a zatim se može pristupiti knjiženju tih vrijednosti.
-
-Prijedložene vrijednosti iz izračuna su podesive i mogu se ručno korigirati u slučaju da je potrebno napraviti manje prilagodbe, primjerice u broju dana obračuna ili u izračunatim iznosima. 
+Iako se odabire vrsta naloga, samu strukturu knjiženja određuje logika postupka.
+Nakon spremanja postavki moguće je pokrenuti funkciju **Izračunaj**, kojom se generira prijedlog obračuna. Predložene stavke moguće je potvrditi pojedinačno ili masovno aktiviranjem opcije **Označi sve za potvrdu obračuna**. Nakon potvrde može se nastaviti s knjiženjem obračuna.
+Predložene vrijednosti mogu se ručno izmijeniti, primjerice radi korekcije broja dana obračuna ili izračunatih iznosa.
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image02.png)
 
-Preuzimaju se sljedeći podaci: **Vrsta leasinga**, **Datum sklapanja**, **Broj leasinga**, **Opis** i **Datum isteka ugovora**.
+Za svaki leasing preuzimaju se sljedeći podaci:
+- **Vrsta leasinga**
+- **Datum sklapanja**
+- **Broj leasinga**
+- **Opis**
+- **Datum isteka ugovora**
 
-**Izračun polja**: = razlika u danima između **datuma sklapanja** i **datuma isteka** leasing ugovora.
+## Objašnjenje izračunatih polja
 
-**Dnevni trošak**: = Ukupna vrijednost ugovora / Ukupno dana
-(gdje je Ukupna vrijednost ugovora = Maksikanon + Troškovi obrade i administracije + Zbroj (Glavnica + Kamate + Troškovi za svaku pojedinu ratu)).  
+**Ukupno dana**
 
-**Dani obračuna**: = broj dana između (najnovijeg od datuma sklapanja i početka poslovne godine) i datuma knjiženja koji je postavljen za obračun maksikanona.  
+Broj dana između **datuma sklapanja** i **datuma isteka** leasing ugovora.
 
-**Trošak obračuna**: = Dnevni trošak * Dani obračuna  
+**Dnevni trošak**
 
-**Plaćeno knjiženo**: izračun koliko je plaćeno unutar poslovne godine s računovodstvenog aspekta (knjižene rate + knjiženi maksikanon)
+Izračunava se prema formuli:
+> Ukupna vrijednost ugovora / Ukupno dana
+Ukupna vrijednost ugovora obuhvaća:
+- maksimalnu naknadu (*maxicanone*)
+- troškove obrade i administracije
+- zbroj glavnice, kamata i ostalih troškova svih leasing rata.
 
-= Zbroj knjiženog maksikanona i rata (glavnica + kamata + troškovi) koje imaju označenu opciju Knjiženo i čiji je planirani datum dospijeća manji od datuma knjiženja maksikanona.  
+**Dani obračuna**
 
-Također se provjerava da godina sadržana u datumima rata i u zaglavlju leasing ugovora (datum ugovaranja) bude usklađena s godinom knjiženja obračuna, odnosno da postoji kontni parametar za dotičnu godinu.  
+Broj dana između kasnijeg od sljedeća dva datuma:
+- datuma sklapanja ugovora ili
+- početka poslovne godine,
 
-**Obračun prethodne godine**: u ovom se polju prikazuje vrijednost iz polja Vrijednost obračuna iz prethodne godine. Stoga će za prvu godinu u kojoj se ugovor o leasingu unosi u sustav, ovo polje imati vrijednost nula.  
+i datuma knjiženja obračuna maksimalne naknade.
 
-**Vrijednost obračuna**: u ovom se polju izračunava iznos obračuna koji se treba primijeniti:  
+**Trošak obračunskog razdoblja**
 
-= Plaćeno (knjiženo) + Obračun prethodne godine - Trošak obračunskog razdoblja  
+Izračunava se prema formuli:
+> Dnevni trošak × Dani obračuna
 
-**Kontrolirano**: potrebno je postaviti flag u retku kako bi se omogućilo knjiženje obračuna, bilo da je izračun automatski prihvaćen ili nakon ručnog uređivanja vrijednosti.
+**Plaćeno (knjiženo)**
 
-Također je moguće koristiti flag "Označi sve" (iznad tablice) za masovno potvrđivanje svih predloženih obračuna.
+Predstavlja ukupni iznos evidentiran tijekom poslovne godine:
+- knjižene maksimalne naknade (*maxicanone*)
+- knjiženih leasing rata (glavnica, kamata i troškovi)
+u kojima je aktivirana oznaka **Knjiženo**, a planirani datum dospijeća manji je od datuma knjiženja obračuna maksimalne naknade.
+Istodobno se provjerava:
+- podudarnost poslovne godine leasing ugovora i godine obračuna
+- postojanje računovodstvenih parametara za tu godinu.
 
-**Knjiženo**: ovaj flag se automatski aktivira nakon što je obračun potvrđen i knjižen. U tom trenutku se upisuju i referentni podaci o kreiranoj knjiženoj stavci.
+**Obračun prethodne godine**
 
-Postupak knjiženja može se pokrenuti iz trenutnog obrasca putem tipki na traci izbornika ili, jednako tako, korištenjem procedure dostupne u izborniku računovodstvenih postupaka unutar modula.
+Prikazuje vrijednost obračuna prenesenu iz prethodne poslovne godine.
+Kod prve godine evidentiranja leasing ugovora vrijednost ovog polja iznosi **0**.
 
-S iste lokacije moguće je također izvršiti i poništavanje (vraćanje) postupka knjiženja.
+**Vrijednost obračuna**
 
-Obračun Maxikanona, koji je prethodno izračunat i knjižen, može se automatski obraditi i tijekom faze automatskog otvaranja konta (koja se može aktivirati putem **[Automatsko zatvaranja konta](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**) uključivanjem flag Žiro račun - prilagodba zapisa.
+Izračunava se prema formuli:
+> Plaćeno (knjiženo) + Obračun prethodne godine − Trošak obračunskog razdoblja
 
-U ovom slučaju bit će automatski izvršene uobičajene knjiženja ponovnog otvaranja predujma za maxicanone, pridružujući ih ostalim automatskim knjiženjima otvaranja salda i prebacivanja drugih aktivnih i pasivnih troškova i predujma.
+**Kontrolirano**
+
+Potrebno je aktivirati ovu oznaku kako bi obračun mogao biti proknjižen, bez obzira na to prihvaća li se automatski izračun ili su vrijednosti prethodno ručno korigirane.
+Za masovno potvrđivanje svih predloženih obračuna dostupna je opcija **Označi sve** iznad tablice.
+
+**Knjiženo**
+
+Oznaka se automatski aktivira nakon uspješnog knjiženja obračuna. Istodobno se upisuju i podaci o kreiranom računovodstvenom knjiženju.
+Knjiženje obračuna moguće je pokrenuti iz ovog obrasca putem naredbi na traci izbornika ili korištenjem odgovarajuće procedure u modulu računovodstva.
+
+| Funkcija | Značenje |
+| --- | --- |
+| Traži | Prikazuje prethodno izračunate obračune razgraničenja maksimalnih naknada. |
+| Novo | Otvara novi obračun razgraničenja maksimalne naknade. |
+| Spremi | Sprema zaglavlje i postavke obračuna. |
+| Izračunaj | Izračunava vrijednosti razgraničenja za odabrane leasing ugovore. |
+| Knjiženje razgraničenja maksimalne naknade | Pokreće knjiženje potvrđenih obračuna razgraničenja. |
+
+S istog obrasca moguće je izvršiti i poništavanje (vraćanje) prethodno izvršenog knjiženja.
+
+Prethodno izračunat i proknjižen obračun *maxicanone* može se automatski obraditi i tijekom postupka automatskog otvaranja konta, koji se pokreće putem procedure **[Automatsko zatvaranje konta](/docs/finance-area/ledger-records/records/procedures/automatic-account-closing/new-account-closing)**, aktiviranjem opcije **Žiro račun - prilagodba zapisa**.
+
+U tom slučaju Fluentis će automatski izvršiti standardna knjiženja ponovnog otvaranja razgraničenja maksimalne leasing naknade (*maxicanone*), zajedno s ostalim automatskim knjiženjima otvaranja početnih stanja te prijenosa aktivnih i pasivnih vremenskih razgraničenja.
 
 ![](/img/it-it/finance-area/leasing/procedures/maxifee-accrual-calculation/image03.png)
-
-
-
-
-
-

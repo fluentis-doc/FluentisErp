@@ -1,16 +1,14 @@
 ---
-title: Uvod  
+title: Uvod
 sidebar_position: 1
 ---
 
-Modul Leasing posebno je dizajniran za upravljanje ugovorima o leasingu sklopljenim za nabavu proizvodnih resursa i poslovne imovine poduzeća.   
+Modul **Leasing** namenjen je upravljanju ugovorima o leasingu za nabavku proizvodnih sredstava i poslovne imovine preduzeća.
+Omogućava automatski obračun plana otplate leasinga jednostavnim unosom osnovnih podataka iz ugovora.
+Na osnovu tih podataka moguće je automatski knjižiti leasing rate, kao i početnu jednokratnu naknadu (*maxicanone*), ukoliko postoji.
+Na kraju poslovne godine, u skladu sa računovodstvenim načelom vremenskog razgraničenja, potrebno je izvršiti razgraničenje maksimalne leasing naknade kako bi se neutralisao njen uticaj na rezultat poslovanja.
+Za tu svrhu dostupan je poseban postupak koji automatski izračunava iznos razgraničenja na osnovu tačnog broja dana obračunskog perioda i pripadajućih troškova, nakon čega se razgraničenje može automatski proknjižiti.
 
-Omogućuje izračun amortizacijskog plana leasinga jednostavnim unosom osnovnih podataka ugovora.  
+## Potrebne tabele
 
-Tako će biti moguće izvršiti automatsko knjiženje leasing rata i eventualnog početnog jednokratnog predujma (maxi rate). 
-
-Na kraju financijske godine, obično je potrebno dodijeliti odgodu kako bi se neutralizirao iskrivljujući učinak maksimalne naknade na dobit tvrtke, postupajući prema ispravnim ekonomskim kriterijima obračuna.
-
-Postoji posebna procedura za ovu operaciju koja izračunava vrijednost avansa koja se potom automatski obračunava, na temelju točnih dana obračuna i povezanih troškova. 
-
-**Potrebne tablice za korištenje obrasca**: Vrste leasinga
+Za korišćenje modula potrebno je definisati sledeće tabele: **Vrste leasinga**

@@ -1,11 +1,11 @@
 ---
-title: Novi Leasing  
+title: Novi Leasing
 sidebar_position: 3
 ---
 
-Prilikom sklapanja novog ugovora o leasingu potrebno je, osim polja označenih crvenim križićem, prethodno definirati i **Vrstu leasinga**. Ovo polje odnosi se na tablicu **[Vrste leasinga](/docs/finance-area/leasing/search)** (pogledati detalje u dokumentaciji obrasca za pretraživanje) u kojoj jedna ili više vrsta mora biti prethodno definirana.
+Prilikom unosa novog ugovora o leasingu, pored polja označenih crvenom zvezdicom, potrebno je prethodno definisati i **Vrstu leasinga**. Ovo polje odnosi se na tabelu **[Vrste leasinga](/docs/finance-area/leasing/search)** (pogledati detalje u dokumentaciji obrasca za pretragu), u kojoj prethodno mora biti definisana jedna ili više vrsta leasinga.
 
-Pozivanjem vrste leasinga predlažu se relevantni podaci u poljima za stopu PDV-a i konta koji će se koristiti za obračun naknada (dio glavnice), kamate (kamatni dio naknada) i troškova (primjer troškova naplate pojedinačnih naknada).  
+Odabirom vrste leasinga automatski se popunjavaju odgovarajući podaci u poljima za stopu PDV-a i konta koja će se koristiti za knjiženje rata (deo glavnice), kamate (kamatni deo rata) i troškova (na primer, troškovi naplate pojedinačnih rata).
 
 ![](/img/it-it/finance-area/leasing/new/image01.png)
 
@@ -13,99 +13,89 @@ Pozivanjem vrste leasinga predlažu se relevantni podaci u poljima za stopu PDV-
 
 ## ZAGLAVLJE:
 
-Polja koja se odnose na:  
+Polja koja se odnose na:
 
-**Bankovni konto/podkonto**: odnosi se na banku koja će se koristiti u evidenciji plaćanja naknada;  
+**Bankovni konto/podkonto**: odnosi se na banku koja će se koristiti za evidentiranje plaćanja rata;
 
-**Konto/podkonto davatelja koncesije**: odnosi se na konto dobavljača (leasing društva davatelja) koji će se koristiti u evidenciji u vezi s plaćenim naknadama;  
+**Konto/podkonto davaoca leasinga**: odnosi se na konto dobavljača (leasing društva) koji će se koristiti u knjiženjima vezanim za plaćene rate;
 
-**Datum ugovora**: zadani prijedlog je današnji datum (promjenjiv) predstavlja datum od kojeg će se računati dani leasinga;  
+**Datum ugovora**: podrazumevano se predlaže današnji datum (može se promeniti) i predstavlja datum od kojeg se računa trajanje leasinga;
 
-**Broj**: interni broj ugovora o leasingu;
+**Broj**: interni broj leasing ugovora;
 
-**Opis**: opis ugovora;  
+**Opis**: opis ugovora;
 
-**Datum isteka roka trajanja**: unese se očekivani datum raskida kako bi se omogućio automatski izračun ukupnih dana ugovora, a time i relevantnih dana za obračun.  
+**Datum isteka ugovora**: unosi se očekivani datum isteka ugovora kako bi se omogućio automatski obračun ukupnog broja dana trajanja ugovora, a samim tim i dana koji se koriste za obračun razgraničenja.
 
-:::danger PAŽNJA  
-Ovaj datum, čak i ako ga unese korisnik, normalno bi se trebao podudarati s konačnim datumom amortizacijskog plana, stoga je postavljena kvačica s porukom upozorenja kada se koristi postupak automatskog izračuna amortizacijskog plana. Neusklađenost ovih datuma mogla bi dovesti do netočnog izračuna godišnje odgode naknade (i dijela koji se na nju ne odnosi).  
+:::danger PAŽNJA
+Ovaj datum, iako ga unosi korisnik, uobičajeno bi trebalo da odgovara krajnjem datumu amortizacionog plana, zbog čega se prilikom korišćenja procedure automatskog obračuna amortizacionog plana prikazuje upozorenje ukoliko datumi nisu usklađeni. Neusklađenost ovih datuma može dovesti do netačnog obračuna godišnjeg razgraničenja maksimalne naknade (i dela koji se na nju odnosi).
 :::
 
-**Interna diskontna stopa**: omogućuje korištenje navedene stope za automatski izračun amortizacijskog plana leasinga (amortizacija u stalnim ratama). Unese se godišnju stopa koja će automatski izračunati određivanje periodične stope na temelju periodičnosti obroka i trajanja leasinga.
+**Interna diskontna stopa**: omogućava korišćenje navedene stope za automatski obračun amortizacionog plana leasinga (amortizacija u jednakim ratama). Unosi se godišnja stopa, a sistem automatski izračunava periodičnu stopu na osnovu učestalosti rata i trajanja leasinga.
 
-**Vrijednost imovine**: Vrijednost iznajmljene imovine.  
+**Vrednost imovine**: vrednost sredstva koje je predmet leasinga.
 
-**Vrijednost otkupa**: obično na kraju leasinga postoji plaćanje za stjecanje konačnog vlasništva nad imovinom.  
+**Vrednost otkupa**: na kraju leasinga obično se plaća iznos za sticanje konačnog vlasništva nad sredstvom.
 
-**Otkup troškova**: Svi dodatni troškovi za otkup.  
+**Troškovi otkupa**: svi dodatni troškovi povezani sa otkupom.
 
-**Početna postavka**: Obično u ugovorima o leasingu postoji početna maksimalna naknada.
+**Početna uplata**: u leasing ugovorima obično postoji početna maksimalna naknada (*maxicanone*).
 
-**Spese istruttoria e pratica**: Accessorie rispetto al maxicanone ed eventualmente previste una tantum all'inizio del contratto.
-
-
+**Troškovi obrade i administrativni troškovi**: dodatni troškovi koji se obračunavaju uz početnu uplatu (*maxicanone*) i, ukoliko su ugovoreni, naplaćuju se jednokratno na početku ugovora.
 
 ## POLJA KOJA SE NE MOGU UREĐIVATI (izračunata):
 
-**Preostalo zaduženje**: Vrijednost dobra umanjena za zbroj glavnice plaćenih rata (uzimajući u obzir samo rate za koje je označen flag "Knjigovodstveno evidentirano" u vezi s ratom).  
+**Preostalo zaduženje**: vrednost sredstva umanjena za zbir glavnice knjiženih rata (uzimaju se u obzir samo rate kod kojih je aktivirana opcija **Knjigovodstveno evidentirano**).
 
-**Ukupna vrijednost ugovora**: Početna maksimalna naknada + troškovi preliminarne istrage i obrade + zbroj naknada (dio glavnice + dio kamata + troškovi naplate / troškovi rate)  
+**Ukupna vrednost ugovora**: početna maksimalna naknada + troškovi obrade i administracije + zbir svih rata (glavnica + kamata + troškovi naplate / troškovi rate).
 
-**Financirani iznos**: Neto vrijednost imovine (minus) početna maksimalna naknada.  
-
+**Finansirani iznos**: neto vrednost sredstva umanjena za početnu maksimalnu naknadu.
 
 ## GLAVNI PREGLED:
 
-U ovom dijelu moguće je ručno unijeti amortizacijski plan leasing naknada (isključujući početnu maxi-naknadu već naznačenu u podacima u zaglavlju). Alternativno, poseban postupak za automatski izračun amortizacijskog plana počevši od osnovnih podataka o leasingu koji su već uneseni u zaglavlju dostupan je na traci vrpce.  
+U ovom delu moguće je ručno uneti amortizacioni plan leasing rata (bez početne maksimalne naknade koja je već definisana u zaglavlju). Kao alternativa, na traci menija dostupna je procedura za automatski obračun amortizacionog plana na osnovu podataka unetih u zaglavlje leasing ugovora.
 
 ![](/img/it-it/finance-area/leasing/new/image03.png)
 
-**Datum**: datum koji se upisuje je onaj predviđen za istek naknade, koristit će se za predlaganje u administraciji (računovodstvu) u kojoj se bilježi primitak računa za naknadu od tvrtke davatelja;  
+**Datum**: unosi se datum dospeća rate, koji će biti predložen u računovodstvu prilikom evidentiranja ulaznog računa leasing društva;
 
-**Glavnica**: predstavlja glavnicu rate i bit će obračunata na kontu definiranom u tablici Vrste leasinga; 
+**Glavnica**: predstavlja deo rate koji se odnosi na glavnicu i knjiži se na konto definisan u tabeli **Vrste leasinga**;
 
-**Kamatna stopa**: predstavlja komponentu kamate koja se odnosi na ratu i obračunat će se na posebnom kontu definiranom u tablici Vrste leasinga;  
+**Kamata**: predstavlja kamatni deo rate i knjiži se na odgovarajući konto definisan u tabeli **Vrste leasinga**;
 
-**Trošak rate**: na primjer, predstavlja iznos koji se naplaćuje kao troškovi naplate i također će se obračunati na posebnom kontu definiranom u tablici Vrste leasinga;  
+**Trošak rate**: predstavlja, na primer, troškove naplate rate i knjiži se na poseban konto definisan u tabeli **Vrste leasinga**;
 
-**Ukupan iznos**: ne može se uređivati, izračunava zbroj komponenti rate; 
+**Ukupan iznos**: polje nije moguće uređivati i predstavlja zbir svih komponenti rate;
 
-**Knjiženo**: flag se aktivira kada se provodi obračun naknade i utječe kako na izračun preostalog duga tako i na izračun odgode maksi-naknade;
+**Knjiženo**: opcija se automatski aktivira nakon knjiženja rate i utiče na obračun preostalog duga, kao i na obračun razgraničenja maksimalne naknade (*maxicanone*);
 
-**Broj/datum unosa**: navode se reference knjiženja generirane postupkom obračuna naknada.
+**Broj/datum knjiženja**: prikazuju se podaci o knjiženju koje je generisano postupkom knjiženja leasing rata.
 
+## POSTUPCI KOJI SE MOGU POKRENUTI SA TRAKE MENIJA:
 
+### Knjigovodstveni postupci
 
-## POSTUPCI KOJI SE MOGU AKTIVIRATI IZ TRAKE IZBORNIKA:
+Postupci koji se mogu pokrenuti iz obrasca leasinga identični su postupcima dostupnim u modulu Leasing u okviru računovodstvenih procedura.
+Razlika je u tome što se iz ovog obrasca može raditi isključivo sa trenutno otvorenim leasing ugovorom, dok je u računovodstvenim procedurama moguće pretraživati i obrađivati sve neproknjižene leasing rate svih leasing ugovora evidentiranih u bazi podataka.
+Knjiženje *maxicanone* vrši se samo jednom, nezavisno od knjiženja pojedinačnih leasing rata.
+Prilikom knjiženja rata moguće je odabrati ratu koja se knjiži, nakon čega sistem traži unos broja i datuma dokumenta primljenog računa za dospelu leasing ratu.
+Predložak knjiženja određuje se u tabeli **Vrste leasinga**, dok je sama struktura knjiženja definisana logikom procedure.
+Oba postupka moguće je poništiti korišćenjem standardne procedure za poništavanje knjiženja.
 
-### Knjigovodstveni postupci 
+### Izračunaj amortizacioni plan
 
-koji se mogu aktivirati iz obrasca leasinga isti su kao oni dostupni s popisa postupaka administracije (računovodstva) koji se odnose na modul Leasing.  
+Aktiviranjem ove funkcije sistem automatski izračunava amortizacioni plan metodom jednakih rata, na osnovu podataka unetih u zaglavlju ugovora, kao što su datum početka, broj rata, vrednost sredstva i kamatna stopa.
 
-Razlika se sastoji u činjenici da se s ove pozicije može raditi samo na konkretnom leasingu koji, dok u slučaju računovodstvenih postupaka modula, u odgovarajućem obrascu, sve najamnine koje još treba platiti bit će moguće pretraživati i odabrati leasing prisutan u bazi podataka. 
-
-Knjiženje *maxicanona* vrši se samo jednom (također nakon i neovisno o knjiženju kanona).
-
-Za obračun naknada moguće je odabrati ratu koja se obračunava i, nakon potvrde za nastavak, tražit će se ispunjenje u dijaloškom okviru s brojem dokumenta i datumom dokumenta u koji ćete unijeti reference na primljeni račun za dospjele naknade.  
-
-Predložak knjiženja koji će se koristiti definiran je u tablici Vrste leasinga, ali je shema knjiženja fiksna i vođena logikom postupka. 
-
-Oba postupka također se mogu povratiti s ove pozicije uobičajenom logikom vraćanja knjiženja.  
-
-### Izračunajte plan amortizacije 
-
-Pritiskom na ovu tipku postupak će na temelju glavnih polja zaglavlja, tj. datuma uvjeta, broja obroka/rata, vrijednosti imovine, kamatne stope izračunati amortizacijski plan metodom stalnih obroka/rata.
-
-:::tip PAŽNJA:
-ne uzima u obzir maksimalnu naknadu koja se mora smatrati dodatnim početnom predujmom (često jednaka jednoj ili dvije naknade u smislu vrijednosti).  
+:::tip PAŽNJA
+Prilikom obračuna ne uzima se u obzir početna maksimalna naknada (*maxicanone*), jer se ona smatra posebnim početnim avansnim plaćanjem (najčešće u visini jedne ili dve leasing rate).
 :::
 
-Otvara se obrazac u koji se upisuje (ponovno ako se razlikuje od onog koji je već umetnut u zaglavlju) **datum prve rate**, broj **mjeseci odstupanja** između jedne rate i druge (što određuje periodičnost rate, npr. 1 = mjesečno, 2 = dvomjesečno, 3 = tromjesečno itd...).   
+Otvara se obrazac u koji se unose (ponovo, ukoliko se razlikuju od vrednosti unetih u zaglavlju) **datum prve rate** i broj **meseci između rata**, čime se određuje periodičnost otplate (na primer: 1 = mesečno, 2 = dvomesečno, 3 = tromesečno itd.).
 
-**Trošak rate**: ad esempio spese di incasso ecc... che vengono aggiunte per ogni rata nell'apposita colonna del dettaglio. 
+**Trošak rate**: predstavlja, na primer, troškove naplate i druge slične troškove koji će biti dodati svakoj rati u odgovarajućoj koloni detalja.
 
-Ova se tipka također može koristiti za ponovni izračun i ažuriranje amortizacijskog plana, pod uvjetom da naknade još nisu obračunate.  
+Ova funkcija može se koristiti i za ponovni obračun i ažuriranje amortizacionog plana, pod uslovom da rate još nisu proknjižene.
 
-**Promjena datuma vrednovanja**: koristi se za promjenu samo datuma naknada i/ili relativne periodičnosti bez ponovnog izračunavanja cijelog plana (gdje su se također mogle izvršiti ručne promjene vrijednosti). Traži se samo datum i periodičnost prvog najma.  
+**Promena datuma obračuna**: koristi se za promenu samo datuma dospeća rata i/ili njihove periodičnosti, bez ponovnog obračuna celokupnog plana (na kojem su eventualno izvršene ručne izmene vrednosti). Potrebno je uneti samo datum prve rate i željenu periodičnost.
 
-**Ažuriraj troškove rate**: koristi se za promjenu provizije (primjer troškova naplate rate) na svim linijama bez ponovnog izračuna cijelog plana ili potrebe za ručnim ažuriranjem svih linija (uvijek je moguće). U dijalogu se traži samo nova vrijednost obročne provizije (Instalment cost).  
+**Ažuriraj troškove rate**: koristi se za izmenu troška rate (na primer, troškova naplate) na svim stavkama plana, bez ponovnog obračuna kompletnog plana i bez potrebe za ručnim izmenama svake pojedinačne stavke. U dijalogu je potrebno uneti samo novu vrednost troška rate (*Instalment cost*).
