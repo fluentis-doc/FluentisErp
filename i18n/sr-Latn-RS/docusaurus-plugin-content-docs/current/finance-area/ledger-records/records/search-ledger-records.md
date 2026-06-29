@@ -3,56 +3,69 @@ title: Pretraga računovodstvenih zapisa
 sidebar_position: 7
 ---
 
-Ovaj obrazac omogućuje pretraživanje prethodno unesenih računovodstvenih zapisa, a po potrebi i njihovo uređivanje (ili pregledavanje) odabirom odgovarajućeg retka i dvostrukim klikom.
+Ovaj obrazac omogućava pretragu prethodno unetih računovodstvenih zapisa, kao i njihovu izmenu ili pregled po potrebi. Za otvaranje željenog zapisa dovoljno je odabrati odgovarajući red i dvoklikom ga otvoriti.
 
-
+## Funkcije na traci sa alatkama
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za pokretanje pretraživanja unesenih računovodstvenih zapisa prema postavljenim filtrima. |
-| Novo | Tipka za unos novog računovodstvenog zapisa. |
-| Izmjeni | Tipka za uređivanje prethodno unesenog računovodstvenog zapisa. |
-| Prikaži | Tipka za pregled prethodno unesenog računovodstvenog zapisa. |
-| Otkaži | Tipka za brisanje prethodno unesenog računovodstvenog zapisa. |
-| Izvorni dokument	 | Tipka za pozivanje izvornog dokumenta iz kojeg je nastao računovodstveni zapis. |
-| Dupliciraj | Tipka koji omogućuje stvaranje dupliciranog računovodstvenog zapisa kako bi se stvorio sličan zapis, uz izmjenu odgovarajućih elemenata, bez potrebe za unosom ispočetka. |
+| **Traži** | Pokreće pretragu računovodstvenih zapisa prema postavljenim kriterijumima filtriranja. |
+| **Novi** | Otvara obrazac za unos novog računovodstvenog zapisa. |
+| **Izmeni** | Otvara izabrani računovodstveni zapis u režimu izmene. |
+| **Prikaži** | Otvara izabrani računovodstveni zapis samo za pregled. |
+| **Otkaži** | Briše izabrani računovodstveni zapis. |
+| **Izvorni dokument** | Otvara izvorni dokument iz kojeg je nastao računovodstveni zapis. |
+| **Dupliraj** | Kreira kopiju postojećeg računovodstvenog zapisa radi bržeg unosa sličnog knjiženja. |
 
-Glavna polja za filtriranje pri pretraživanju računovodstvenih zapisa su:  
+## Filteri za pretragu
 
-**Tip temeljnice**: padajući izbornik, kao što je uobičajeno u Fluentisu, omogućuje odabir više od jedne stavke istovremenim pritiskom na tipku Ctrl.
+Najvažniji kriterijumi za pretragu računovodstvenih zapisa su:
 
-**Od / Do datuma knjiženja i Od / Do datuma obračuna**: To su referentni datumi računovodstvenih zapisa; napomena: filteri rade s AND uvjetom, stoga se sužavanje pretrage “zbraja”. U slučaju nenamjernog nepodudaranja datuma registracije i datuma kompetencije (računovodstvene), kako bi se pronašao željeni zapis, preporučuje se uklanjanje filtera za datum obračuna ili filtera za datum knjiženja.
+**Tip temeljnice**: padajuća lista omogućava izbor jedne ili više vrsta temeljnica. Višestruki izbor moguć je držanjem tastera **Ctrl**.
 
-**Konto**: Riječ je o podkontu unesenom u zaglavlje zapisa (Kupac ili dobavljač).
+**Od / Do datuma knjiženja** i **Od / Do datuma obračuna**: predstavljaju referentne datume računovodstvenog zapisa.
 
-**Vrsta konta**: omogućuje odabir jedne ili više vrsta konta (troškovi / prihodi / imovina / obveze ili konta iz šifarnika kao što su kupci, dobavljači, banke i agenti), držeći pritisnutu tipku Ctrl. Također, otvaranjem dodatnih opcija moguće je isključiti tipove konta iz šifarnika.
+:::important Napomena
+Filteri se primenjuju logikom **AND**, što znači da svi zadati uslovi moraju biti istovremeno ispunjeni.
+
+Ako datum knjiženja i datum obračuna nisu isti, a zapis nije pronađen, preporučuje se privremeno uklanjanje jednog od ova dva filtera.
+:::
+
+**Konto**: podkonto kupca ili dobavljača unet u zaglavlju računovodstvenog zapisa.
+
+**Vrsta konta**: omogućava filtriranje prema jednoj ili više vrsta konta (troškovi, prihodi, imovina, obaveze, kupci, dobavljači, banke, agenti i dr.). Višestruki izbor moguć je držanjem tastera **Ctrl**. U dodatnim opcijama moguće je isključiti konta koja pripadaju šifarnicima.
 
 ![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image01.png)
 
-U sekciji filtara nalazi se expander koji se odnosi na moguće informacije povezane s državom elektroničkog računa, a koji se odnosi na dokumente koji imaju interakciju sa Sustavom razmjene:
+## Filteri za elektronske račune
+
+U delu filtera nalazi se dodatni proširivi odeljak (**expander**) namenjen filtriranju dokumenata prema statusima elektronskog računa, odnosno dokumenata koji komuniciraju sa Sistemom razmene.
 
 ![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image02.png)
 
-U traci izbornika, u sekciji posvećenoj elektroničkom izdavanju računa, pomoću tipke **Registar dokumenata Sdi** moguće je pregledati radnje izvršene na odabranom dokumentu. Funkcija **Ispiši** omogućuje ispis XML dokumenta, dok funkcije **Preuzmi privitak** ili **Preuzmi sadržaj registra** omogućuju preuzimanje XML datoteke.
+Na traci sa alatkama, u delu namenjenom elektronskom izdavanju računa, dostupne su sledeće funkcije:
 
-Pregled rezultata prikazuje nekoliko stupaca u kojima se navodi stanje i ishod dokumenata u odnosu na njihovu predaju Centralnoj platformi:
+- **Registar dokumenata SDI** – prikazuje sve aktivnosti izvršene nad izabranim dokumentom.
+- **Štampaj** – štampa XML dokument.
+- **Preuzmi prilog** – preuzima XML datoteku.
+- **Preuzmi sadržaj registra** – preuzima sadržaj registra u XML formatu.
+
+## Pregled rezultata
+
+Pregled rezultata prikazuje informacije o računovodstvenim zapisima, kao i za elektronske račune status njihove razmene sa Centralnom platformom.
 
 ![](/img/it-it/finance-area/ledger-records/records/search-ledger-records/image06.png)
 
--      **Stanje računa**: sadrži opis stanja dokumenta, navodeći kako interno stanje u Fluentisu, tako i stanje prikazano od Fluentis Business Hub-a i direktno preuzeto od Centralne platforme
+Najvažnije kolone su:
 
--      **Naziv datoteke**: ime datoteke koja se stvara kada dokument dosegne stanje GENERIRANA; u originalnom formatu ili nakon digitalnog potpisa, predstavlja fakturirani dokument koji treba poslati Centralnoj platformi.
+- **Status računa** – prikazuje trenutno stanje dokumenta, uključujući interno stanje u Fluentisu, stanje u Fluentis Business Hub-u i status koji vraća Centralna platforma.
 
--      **Id**: jedinstveni identifikator koji se dodjeljuje dokumentu u trenutku prijema.
+- **Naziv datoteke** – naziv XML datoteke generisane kada dokument pređe u status **Generisana**. Ta datoteka, u izvornom ili digitalno potpisanom obliku, predstavlja dokument koji se šalje Centralnoj platformi.
 
--      **Datum primanja dokumenta**: datum kada je sustav razmjene primio dokument. Ova informacija se dobiva iz obavijesti o prijemu koju Centralna platforma izdaje nakon prijema pošiljke i prije nego što nastavi s formalnim provjerama datoteke.
+- **ID** – jedinstveni identifikator dokumenta koji se dodeljuje prilikom njegovog prijema.
 
--      **Datum zatvaranja**: datum zatvaranja tok računa (npr. dokument Dostavljen).
+- **Datum prijema dokumenta** – datum kada je Sistem razmene primio dokument. Ovaj podatak preuzima se iz potvrde o prijemu koju izdaje Centralna platforma pre sprovođenja formalnih provera XML datoteke.
 
--      **Datum posljednjeg događaja**: datum posljednje promjene stanja na datoteci, bilo ručno ili kao rezultat napredovanja.
+- **Datum zatvaranja** – datum završetka životnog ciklusa elektronskog računa (na primer status **Dostavljen**).
 
-
-
-
-
-
+- **Datum poslednjeg događaja** – datum poslednje promene statusa dokumenta, bilo ručne ili automatske.
