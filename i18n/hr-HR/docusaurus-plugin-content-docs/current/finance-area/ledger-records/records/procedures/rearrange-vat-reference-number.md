@@ -7,7 +7,7 @@ Funkcionalnost kojom se upravlja putem ovog obrasca omogućuje se masovna izmjen
 
 U prvom redu, pretraživanje podataka koje je moguće pomoću ovog obrasca također može biti korisno kao provjera, na primjer, za nedostajuće brojeve protokola ili odstupanja (na primjer u vezi s izlaznim fakturama) između broja protokola i broja dokumenta koji oni predstavljaju evidentne nepravilnosti s fiskalnog gledišta.
 
-Prilikom otvaranja obrasca potrebno je odabrati registar obveznika PDV-a za provjeru i/ili izmjenu te raspon datuma od interesa (za generalnu provjeru preporuča se od početka godine). Ovaj odabir se vrši na vrhu obrasca.
+Prilikom otvaranja obrasca potrebno je odabrati registar obveznika PDV-a za provjeru i/ili izmjenu te raspon datuma od interesa (za generalnu provjeru preporučuje se od početka godine). Ovaj odabir se vrši na vrhu obrasca.
 
 U ovom trenutku može se započeti pretraživanje pomoću naredbe **Traži** na traci izbornika.
 
@@ -15,17 +15,17 @@ Podaci se prikazuju u prvom prikazu odmah ispod područja filtra.
 
 ![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image02.png)
 
-Budući da bi za provođenje provjera moglo biti zanimljivo sortirati podatke ne samo na temelju broja protokola, već na primjer na temelju broja dokumenta, a budući da je sam broj dokumenta alfanumerički niz, pomoću aktivacije oznake/flaga opcije **Razmotrite brojeve dokumenta poput broja** moguće je doraditi kriterije sortiranja.
+Budući da bi za provođenje provjera moglo biti zanimljivo sortirati podatke ne samo na temelju broja protokola, već na primjer na temelju broja dokumenta, a budući da je sam broj dokumenta alfanumerički niz, pomoću aktivacije oznake opcije **Razmotrite brojeve dokumenta poput broja** moguće je doraditi kriterije sortiranja.
 
 Primjer:
 
-- s deaktiviranom flagom bit će (redoslijed po broju dokumenta) 1, 10, 100, 2, 20, 200 .....
+- s deaktiviranom opcijom bit će (redoslijed po broju dokumenta) 1, 10, 100, 2, 20, 200 .....
 
-- uz aktivnog flaga bit će (poredak po broju dokumenta) 1, 2, 3, ... 10 ... 20 ... 100 ... 200
+- uz aktivnu opciju bit će (poredak po broju dokumenta) 1, 2, 3, ... 10 ... 20 ... 100 ... 200
 
 Odabirom retka iz tablice rezultata (Zapisi glavne knjige) relevantni detalji u vezi s registrom PDV-a i dnevnikom bit će prikazani u dva **daljnja dva prikaza u nastavku** (ovi podaci jasno predstavljaju detalje računovodstvene evidencije koje je unio korisnik ili postupak automatskog obračuna/knjiženja).
 
-**MOGUĆE METODE PRENUMERACIJE / PROMJENE REDOSLIJEDA**:
+**MOGUĆE METODE NUMERACIJE / PROMJENE REDOSLIJEDA**:
 
 - Djelomično: kao primjer, pretpostavka je da treba "pomaknuti" sve snimke unaprijed prema broju protokola počevši od br. 3 (kako bi se napravila "rupa" u numeriranju da bi se možda umetnuo zapis koji nedostaje).
 

@@ -1,32 +1,24 @@
 ---
-title: Pregled knjiženja po mjestu troška
+title: Pregled knjiženja po mestu troška
 sidebar_position: 11
 ---
 
-Ovaj obrazac omogućuje pregled zapisa povezanih centara poduzeća za svaki odabrani podkonto.
+Ovaj obrazac omogućava pregled računovodstvenih knjiženja povezanih sa centrima troškova za svaki odabrani podkonto.
 
 ![](/img/it-it/finance-area/ledger-records/records/cost-center-movement-visualization/image01.png)
 
-U gornjem području filtera moguće je unijeti podatke koji se odnose i na računovodstvena knjiženja za mjesto troška kako bi se preciziralo pretraživanje.
+U gornjem delu obrasca nalazi se područje za filtriranje u kojem je moguće definisati kriterijume koji se odnose kako na računovodstvena knjiženja, tako i na knjiženja po centrima troškova, radi preciznijeg pretraživanja.
 
-Pregled rezultata (ispod) prikazuje, za svaki konto, relativno kretanje povezanih poslovnih centara (jednog ili više njih), kao i druge detalje o računovodstvenom unosu. Za značenje specifičnih polja upućuje se na **[Rječnik](/docs/guide/common/glossary/glossary-intro)**.
+Pregled rezultata (u donjem delu obrasca) prikazuje, za svaki konto, pripadajuća knjiženja po centrima troškova (jednom ili više njih), zajedno sa ostalim detaljima računovodstvenog knjiženja. Za značenje pojedinih polja pogledati **[Rečnik](/docs/guide/common/glossary/glossary-intro)**.
 
-Pri dnu, ispod prikaza s rezultatima, nalaze se četiri polja s ukupnim iznosima, odnosno odjeljak dugovne i potražne strane.
+Na dnu obrasca, ispod tabele sa rezultatima, nalaze se četiri polja sa ukupnim iznosima u dugovnoj i potražnoj strani.
 
-Prva dva odnose se na ukupne iznose samo za odabrane retke (jedan ili više od jednog koristeći metode prikazane u općem dijelu). Druga dva se odnose na iznose u ukupnom broju redaka prisutnih u prikazu rezultata.
+Prva dva polja prikazuju ukupne iznose samo za označene redove (jedan ili više njih, korišćenjem standardnih metoda označavanja), dok druga dva prikazuju ukupne iznose za sve redove prikazane u tabeli rezultata.
 
-**Traka izbornika**:
-
-
+## Traka sa alatkama
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Pokreće traženje rezultata prema podacima unesenim u područje filtera. |
-| Izmjeni | Otvara uređivanje računovodstvenog unosa. |
-| Prikaži | Ide izravno na pregled računovodstvenog unosa. Neće biti moguće spremiti promjene. |
-
-
-
-
-
-
+| Traži | Pokreće pretragu rezultata na osnovu kriterijuma unetih u području za filtriranje. |
+| Izmeni | Otvara odabrano računovodstveno knjiženje u režimu za izmenu. |
+| Prikaži | Otvara pregled odabranog računovodstvenog knjiženja u režimu samo za pregled, bez mogućnosti čuvanja izmena. |

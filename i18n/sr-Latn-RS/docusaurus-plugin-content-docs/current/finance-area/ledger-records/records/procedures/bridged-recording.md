@@ -3,24 +3,24 @@ title: Upravljanje nepotvrđenim knjiženjima
 sidebar_position: 1
 ---
 
-Ovim postupkom moguće je modificirati privremena knjiženja prisutne u glavnoj knjizi, dodijeliti konačni status bez potrebe za unosom svakog od njih radi ručne izmjene statusa.
+Ova procedura omogućava upravljanje privremenim knjiženjima evidentiranim u glavnoj knjizi i njihovu masovnu promenu u konačna knjiženja, bez potrebe da se svako knjiženje pojedinačno otvara radi promene statusa.
 
-## Zapisi
+## Knjiženja
 
-Klikom na Traži prema skupu podataka u poljima filtera, prikazuju se računovodstveni zapisi u Privremenom statusu.
+Klikom na dugme **Traži**, na osnovu postavljenih filtera, prikazuju se sva knjiženja koja imaju status **Privremeno**.
 
-Moguće je odabrati unose koje želimo staviti u konačno stanje i alternativno nastaviti na:
+Nakon toga moguće je odabrati knjiženja koja se žele potvrditi kao konačna te izvršiti neku od sledećih radnji:
 
-- otvaranje samog zapisa (promjene se ne mogu spremiti)    
-- uređivanje zapisa  
-- generirati konačne zapise počevši od odabranih provizornih
+- otvoriti knjiženje u režimu pregleda (izmene nije moguće sačuvati);
+- izmeniti knjiženje;
+- generisati konačna knjiženja na osnovu odabranih privremenih knjiženja.
 
-Transformacija u konačan zapis će se odvijati s datumom definiranim u donjem dijelu obrasca (moguće je uskladiti datum računovodstvene nadležnosti ili promijeniti potonji) i automatski postaviti datum jednak datumu zadnje prijave u registar obveznika PDV-a.
+Pretvaranje u konačno knjiženje izvršava se sa datumom definisanim u donjem delu obrasca. Moguće je zadržati postojeći datum obračuna ili uneti novi, pri čemu će datum knjiženja automatski biti postavljen na datum poslednje registracije u odgovarajućem PDV registru.
 
-Upravljanje PDV protokolom odvijat će se u skladu s postavkama datuma knjiženja i parametrima koji definiraju dosljednost datuma/broja protokola.
+Dodela PDV protokola izvršava se u skladu sa datumom knjiženja i parametrima koji određuju pravila za dodelu datuma i broja protokola.
 
-Broj knjiženja također će slijediti dosljednost broja na temelju datuma i parametara dohvaćanja.
+Broj knjiženja takođe će biti dodeljen prema pravilima numeracije definisanim za datum knjiženja i parametrima sistema.
 
-## Prethodni 
+## Povrati
 
-Kao i obično, moguće je vratiti pojedinačnu knjiženje koje je korisnik izvršio na određeni datum.  
+Kao i kod ostalih procedura, moguće je izvršiti poništavanje pojedinačnog knjiženja koje je korisnik generisao za određeni datum.

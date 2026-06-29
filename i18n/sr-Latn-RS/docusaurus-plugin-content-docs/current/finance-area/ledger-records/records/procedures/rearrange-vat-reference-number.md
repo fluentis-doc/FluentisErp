@@ -1,72 +1,62 @@
 ---
-title: Ispravak rednih brojeva PDV obračuna
+title: Ispravka rednih brojeva PDV protokola
 sidebar_position: 10
 ---
 
-Funkcionalnost kojom se upravlja putem ovog obrasca omogućuje se masovna izmjena protokola PDV-a koji su dodijeljeni računovodstvenim evidencijama (vrste PDV-a, na primjer za ulazne ili izlazne fakture) kako bi se ispravile sve pogreške ili promijenilo za posebne potrebe.
-
-U prvom redu, pretraživanje podataka koje je moguće pomoću ovog obrasca također može biti korisno kao provjera, na primjer, za nedostajuće brojeve protokola ili odstupanja (na primjer u vezi s izlaznim fakturama) između broja protokola i broja dokumenta koji oni predstavljaju evidentne nepravilnosti s fiskalnog gledišta.
-
-Prilikom otvaranja obrasca potrebno je odabrati registar obveznika PDV-a za provjeru i/ili izmjenu te raspon datuma od interesa (za generalnu provjeru preporuča se od početka godine). Ovaj odabir se vrši na vrhu obrasca.
-
-U ovom trenutku može se započeti pretraživanje pomoću naredbe **Traži** na traci izbornika.
-
-Podaci se prikazuju u prvom prikazu odmah ispod područja filtra.
+Ova procedura omogućava masovnu izmenu brojeva PDV protokola koji su dodeljeni računovodstvenim knjiženjima (na primer ulaznim ili izlaznim fakturama), kako bi se ispravile greške ili izvršile promene zbog posebnih potreba.
+Pored same izmene, ova funkcionalnost može poslužiti i kao alat za kontrolu, na primer za pronalaženje nedostajućih brojeva protokola ili neusaglašenosti između broja protokola i broja dokumenta, što može ukazivati na fiskalne nepravilnosti.
+Prilikom otvaranja obrasca potrebno je odabrati PDV registar koji se proverava ili menja, kao i vremenski period na koji se provera odnosi. Za kompletnu kontrolu preporučuje se odabir perioda od početka poslovne godine.
+Nakon toga pretraga se pokreće pomoću komande **Traži** koja se nalazi na traci sa alatkama.
+Rezultati će biti prikazani u prvom pregledu ispod filtera.
 
 ![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image02.png)
 
-Budući da bi za provođenje provjera moglo biti zanimljivo sortirati podatke ne samo na temelju broja protokola, već na primjer na temelju broja dokumenta, a budući da je sam broj dokumenta alfanumerički niz, pomoću aktivacije oznake/flaga opcije **Razmotrite brojeve dokumenta poput broja** moguće je doraditi kriterije sortiranja.
+Pošto je prilikom kontrole često potrebno sortirati podatke ne samo po broju protokola već i po broju dokumenta, dostupna je opcija **Posmatraj brojeve dokumenata kao numeričke vrednosti**, koja omogućava pravilno numeričko sortiranje.
 
-Primjer:
+Primer:
 
-- s deaktiviranom flagom bit će (redoslijed po broju dokumenta) 1, 10, 100, 2, 20, 200 .....
+- kada opcija nije aktivna, redosled po broju dokumenta biće: 1, 10, 100, 2, 20, 200...
+- kada je opcija aktivna, redosled će biti: 1, 2, 3... 10... 20... 100... 200.
 
-- uz aktivnog flaga bit će (poredak po broju dokumenta) 1, 2, 3, ... 10 ... 20 ... 100 ... 200
+Izborom jednog reda iz liste rezultata (**Knjiženja glavne knjige**) u donja dva pregleda prikazaće se detalji koji se odnose na PDV registar i dnevnik knjiženja. Ovi podaci predstavljaju detalje računovodstvenog knjiženja koje je uneo korisnik ili koje je generisala neka automatska procedura.
 
-Odabirom retka iz tablice rezultata (Zapisi glavne knjige) relevantni detalji u vezi s registrom PDV-a i dnevnikom bit će prikazani u dva **daljnja dva prikaza u nastavku** (ovi podaci jasno predstavljaju detalje računovodstvene evidencije koje je unio korisnik ili postupak automatskog obračuna/knjiženja).
+## Načini prenumeracije
 
-**MOGUĆE METODE PRENUMERACIJE / PROMJENE REDOSLIJEDA**:
+### Delimična prenumeracija
 
-- Djelomično: kao primjer, pretpostavka je da treba "pomaknuti" sve snimke unaprijed prema broju protokola počevši od br. 3 (kako bi se napravila "rupa" u numeriranju da bi se možda umetnuo zapis koji nedostaje).
+Primer: potrebno je pomeriti sve protokole počevši od broja **3**, kako bi se oslobodio jedan broj za naknadni unos nedostajućeg dokumenta.
 
+Postupak je sledeći:
 
- 1. Odaberu se redovi na koje utječe prenumeriranje (na primjer od knjiženja s protokolom br. 3 nadalje), može se koristiti tipka Shift na tipkovnici ili kliknuti i povući mišem;
- 2. Unese se broj startnog protokola u odgovarajuće polje **Početni broj** koje se nalazi na dnu obrasca (na primjer 4);
- 3. Pritisne se tipka za **Automatsko numeriranje** koji se nalazi na traci izbornika;
- 4. Novi protokoli bit će predloženi kao što se vidi na slici;
- 5. Pritisne se **Spremi** (na traci izbornika) za potvrdu promjene.
+1. Označiti sve redove koji će biti obuhvaćeni prenumeracijom (na primer sve od protokola broj **3** nadalje). Za višestruki izbor mogu se koristiti taster **Shift** ili prevlačenje mišem.
+2. U polje **Početni broj**, koje se nalazi u donjem delu obrasca, uneti novi početni broj (na primer **4**).
+3. Na traci sa alatkama kliknuti na **Automatska numeracija**.
+4. Program će predložiti nove brojeve protokola.
+5. Kliknuti na **Sačuvaj** kako bi se promene trajno upisale.
 
-![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image03.png)  ![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image04.png)
+![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image03.png)   ![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image04.png)
 
-Alternativno (preporučuje se samo za izmjene pojedinačnih redaka ili nekoliko redaka):
+Alternativno (preporučuje se samo za izmene pojedinačnih ili manjeg broja redova):
 
+1. Pozicionirati se na red koji se odnosi na knjiženje sa protokolom broj **3** i u polje za novi PDV protokol uneti novi broj (na primer **4**).
+2. Kliknuti na **Sačuvaj** (na traci sa alatkama) kako bi se promena potvrdila.
 
- 1. Pozicionira se na red koji se odnosi na zapis s protokolom br. 3, na novom protokolu PDV-a i unese se novi protokol (npr. 4)  
- 2. Pritisne se **Spremi** (nalazi se na traci izbornika) za potvrdu promjene.  
+### Potpuna prenumeracija
 
-- Odaberu se svi redovi rezultata dobivenog zahvaljujući filtru (primjerice svi zapisi od početka godine do danas) pomoću miša ili kombinacijom Ctrl+A; 
+1. Označiti sve redove rezultata dobijene primenom filtera (na primer sva knjiženja od početka godine do danas) pomoću miša ili kombinacijom tastera **Ctrl + A**.
+2. U polje **Početni broj**, koje se nalazi u donjem delu obrasca, uneti početni broj protokola (u ovom slučaju **1**).
+3. Na traci sa alatkama kliknuti na **Automatska numeracija**.
+4. Program će predložiti nove brojeve protokola.
+5. Kliknuti na **Sačuvaj** kako bi se promene trajno upisale.
 
-
- 1. Odabrati sve retke rezultata dobivenih pomoću filtra (na primjer, sve registracije od početka godine do danas) pomoću miša ili kombinacije Ctrl A; 
- 2. Unese se broj startnog protokola u odgovarajuće polje **Početni broj** koje se nalazi na dnu obrasca (u ovom slučaju 1);    
- 3. Pritisne se tipka za **Automatsko numeriranje** koji se nalazi na traci izbornika;  
- 4. Novi protokoli bit će predloženi kao što se vidi na slici;  
- 5. Pritisne se **Spremi** (na traci izbornika) za potvrdu promjene.  
-
-Moguće je mijenjati kriterij sortiranja koji se koristi u operaciji ponovnog numeriranja odabirom, alternativno, između onih predloženih na dnu obrasca.
+Moguće je promeniti kriterijum sortiranja koji će se koristiti prilikom prenumeracije odabirom jedne od ponuđenih opcija u donjem delu obrasca.
 
 ![](/img/it-it/finance-area/ledger-records/records/rearrange-vat-reference-number/image05.png)
 
-Datum/broj unosa: broj protokola bit će dodijeljen u odnosu na napredovanje datuma unosa, a broj zapisa je isti kao i datum.  
+**Datum/broj knjiženja**: broj protokola dodeljuje se prema redosledu datuma knjiženja, a za knjiženja sa istim datumom prema broju knjiženja.
 
-Datum/broj dokumenta: broj protokola bit će dodijeljen u odnosu na napredovanje datuma dokumenta, a broj zapisa je isti  kao i datum.  
+**Datum/broj dokumenta**: broj protokola dodeljuje se prema redosledu datuma dokumenta, a za dokumente sa istim datumom prema broju dokumenta.
 
-Vrsta dokumenta / datum / broj: broj protokola bit će dodijeljen u odnosu na vrstu dokumenta (npr. fakture, odobrenja), ako je vrsta dokumenta ista  (na temelju napredovanja datuma zapisa i ako je broj dokumenta isti).  
+**Vrsta dokumenta / datum / broj**: broj protokola dodeljuje se prema vrsti dokumenta (na primer fakture ili knjižna odobrenja), a za dokumente iste vrste prema datumu dokumenta i broju dokumenta.
 
-Flag **Ponovo napiši opise**, ako je aktivna, ažurira opis kretanja tijekom faze prenumeriranja gdje, na temelju postavki definiranih u **[obračunskom predlošku](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, omogućuje automatsko očitavanje PDV protokola. 
-
-
-
-
-
-
+Opcija **Ponovo upiši opise**, kada je aktivna, ažurira opis knjiženja tokom postupka prenumeracije. Na osnovu podešavanja definisanih u **[šablonu knjiženja](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** omogućava automatsko preuzimanje novog broja PDV protokola u opis knjiženja.

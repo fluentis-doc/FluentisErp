@@ -1,96 +1,101 @@
 ---
-title: Pregled stanja računa
+title: Pregled stanja konta
 sidebar_position: 8
 ---
 
-S ove forme moguće je dobiti prikaz podataka na ekranu koji otprilike odgovara izvještaju o bilanci, ali s mogućnošću korištenja različitih filtara, grupiranja podataka i dodatnih opcija.
+Ovaj obrazac omogućava pregled računovodstvenih podataka na ekranu u formi koja je slična bilansu stanja, uz mogućnost primene različitih filtera, grupisanja podataka i dodatnih opcija za analizu.
 
-PODRUČJE FILTRA:
+## Područje filtera
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image01.png)
 
-Omogućuje filtriranje računovodstvenih podataka za obradu unoseći raspon **datuma obračuna** raspon (podskup) konta ili podkonti, tip konta, računovodstvenu stavku (**Predložak**) specifičnu podjelu (korisno ako postoji više aktivnih) te stranu valutu (**Valuta**).
+Omogućava filtriranje računovodstvenih podataka prema:
+- rasponu **datuma obračuna**;
+- rasponu konta ili podkonta;
+- tipu konta;
+- **šablonu knjiženja**;
+- odeljenju (korisno kada kompanija koristi više organizacionih jedinica);
+- **valuti**.
 
-**Konvertiraj također druge zbrojeve u valuti**: aktiviranjem ovog flaga, uz postavljanje prethodnog filtra Valuta (koji izvlači transakcije izrađene u određenoj valuti), i ostale računovodstvene transakcije izrađene u eurima ili drugim valutama, bit će pretvorene u odabranu valutu prema tečaju na datum knjiženja.
+**Konvertuj i ostale iznose u valutu**: kada je ova opcija aktivna, a prethodno je odabrana određena **valuta**, pored knjiženja evidentiranih u toj valuti, i sva ostala knjiženja evidentirana u evrima ili drugim valutama biće preračunata u odabranu valutu prema kursu koji je važio na datum knjiženja.
 
-PARAMETRI: (otvoriti proširenja)
+## Parametri
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image02.png)
 
-Budući da prikaz s rezultatima također prikazuje polje **Razina**, koje predstavlja hijerarhijski redoslijed odgovarajućeg konta/podkontna u kontonom planu (gdje je 99 posljednja razina s najvećim detaljima, a 0 je korijenski čvor, obično koji sadrži ukupno), prisutan je i filtar za razine koje treba prikazati:
+Pošto tabela rezultata prikazuje i polje **Nivo**, koje predstavlja hijerarhijski nivo odgovarajućeg konta ili podkonta u kontnom planu (gde je **99** najniži nivo sa najvećim stepenom detalja, dok je **0** korenski nivo koji obično predstavlja ukupan zbir), moguće je filtrirati prikaz prema nivou.
 
-**Svi**: Prikazuje sve razine;
+Dostupne su sledeće opcije:
+**Sve**: prikazuje sve hijerarhijske nivoe.
 
-**Prikaži ukupni iznos za razinu X...**: unoseći željenu razinu (npr. 98) u odgovarajuće polje **Razina** rezultati će biti grupirani prema glavnim kontima (koja u planu konta predstavljaju razinu neposredno iznad 99, definiranu kao maksimalni detalj podkonti u kontnom planu za ovu obradu);
+**Prikaži ukupan iznos za nivo X...**: unosom željenog nivoa (na primer **98**) u polje **Nivo**, rezultati će biti grupisani po glavnim kontima, odnosno po nivou neposredno iznad podkonta.
 
-**Prikaži ukupni iznos za razinu X... s podzbrojevima:** U usporedbi s prethodnim načinom grupiranja, prikazat će i djelomične ukupne iznose za moguće hijerarhijski niže grupacije. 
+**Prikaži ukupan iznos za nivo X... sa međuzbirovima**: osim grupisanja po odabranom nivou, prikazuju se i međuzbirovi svih nižih hijerarhijskih grupa.
 
-**Prikaži ukupni iznos samo za podračune**: Vrijednosti će biti prikazane samo za razine koje sadrže podkonte (više hijerarhijske razine neće biti prikazane). 
+**Prikaži ukupne iznose samo za podkonta**: prikazuju se samo nivoi koji sadrže podkonta, dok se viši hijerarhijski nivoi ne prikazuju.
 
-**Isključi retke s nultim iznosom**: Konta/podkonti bez transakcija neće biti prikazani.
+**Isključi redove sa nultim iznosom**: konta i podkonta bez prometa neće biti prikazana.
 
-**Dodaj (uključeno/isključeno)**: ova opcija aktivira ili deaktivira poseban način prikazivanja koji, u slučaju promjene raspona datuma knjiženja i ažuriranja prikaza pritiskom na gumb Traži u traci izbornika, dodaje novi rezultat (dodajući ga u prikaz rezultata) prethodno prikazanom rezultatu. To omogućuje, na primjer, usporedbu vrijednosti između različitih razdoblja. Radi upravljivosti i jasnoće rezultata, preporučuje se korištenje ove opcije samo uz filtar za konta/podkonte postavljen tako da vraća ograničen set podataka.
+**Dodaj (uključeno/isključeno)**: omogućava poseban način rada u kojem se, nakon promene perioda i ponovnog pokretanja pretrage, novi rezultat dodaje postojećem prikazu umesto da ga zameni. Na taj način moguće je uporediti rezultate različitih perioda. Zbog preglednosti preporučuje se korišćenje ove opcije samo kada su filteri konta ili podkonta dovoljno suženi.
 
-GRID S REZULTATIMA:
+## Tabela rezultata
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image03.png)
 
-U ovom prikazu vide se konta/podkonta prema parametrima filtriranja i grupiranja definiranim u gornjem dijelu obrasca.
+U tabeli rezultata prikazuju se konta i podkonta u skladu sa zadatim filterima i pravilima grupisanja.
 
-Prikazuju se šifra i opis **grupe** (vidi strukturu **[kontnog plana](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**) i računa/podračuna te šifra **razine** definirana posebno za ovu obradu i opisana gore.  
+Prikazuju se:
+- šifra i naziv **grupe** (prema strukturi **[kontnog plana](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**);
+- šifra i naziv konta ili podkonta;
+- oznaka **Nivo**, koja predstavlja hijerarhijski nivo korišćen u ovom prikazu.
 
-**Konačni**: ovo polje označava (zastavicom) je li konto i/ili grupa hijerarhijski viša razina od svih ostalih u svojoj grani (strukture kontnog plana). Ovo je korisno jer, u slučaju složenije organizacije strukture kontnog plana, šifra prikazana u polju Razina možda zapravo nije hijerarhijski nadređena i stoga možda neće biti moguće ispravno filtrirati (i dobiti točne ukupne iznose).
-
-Stoga je u retku filtera mreže moguće odabrati sve račune s aktivnom zastavom Konačni, čime se osigurava izdvajanje svih viših razina.  
+**Konačni**: ovo polje označava da li je konto ili grupa najviši hijerarhijski nivo u svojoj grani kontnog plana. Ova informacija je korisna kod složenijih struktura kontnog plana, jer prikazani nivo ne mora uvek predstavljati najviši nivo određene grupe.
+Zbog toga je moguće koristiti filter nad kolonom **Konačni** i izdvojiti samo zapise kod kojih je ova oznaka aktivna, čime se dobijaju svi završni (najviši) nivoi hijerarhije.
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image04.png)
 
-NAPOMENE:
+## Napomene
 
-U stupcima koji sadrže numeričke podatke koriste se sljedeće kratice:
+U kolonama koje sadrže numeričke podatke koriste se sledeće skraćenice:
 
-VdS = Valuta tvrtke (zamišljena kao valuta tvrtke u upotrebi, zove se ona u kojoj vodimo računovodstvo, u slučaju talijanske tvrtke to je euro).  
+- **VdS** = valuta kompanije (osnovna valuta u kojoj se vodi računovodstvo; za kompanije u Italiji to je evro).
+- **VS** = valuta odabrana u početnom filteru.
+- **Euroam** = *Euro Amount*, odnosno protivvrednost iznosa u stranoj valuti izražena u evrima.
 
-VS = odabrana valuta (podijeljena) u početnom filtru.  
-
-Euroam = Euroamount: ekvivalentna vrijednost transakcije u valuti u eurima. 
-
-PAŽNJA: moguće je prikazati (ili sakriti) dodatne stupce u usporedbi sa standardnim profilom obrasca desnim klikom na zaglavlja stupaca pregleda i odabirom  **Pokaži izbornik stupaca**.
+:::tip INFO
+Dodatne kolone, koje nisu prikazane u podrazumevanom prikazu obrasca, mogu se prikazati ili sakriti desnim klikom na zaglavlje tabele i izborom opcije **Prikaži meni kolona**.
+:::
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image05.png)
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image06.png)
 
-ZNAČENJE STUPCA:
+## Značenje kolona
 
-Godina otvaranja Dugovno / potražno = vrijednost posljednjeg izračunatog otvaranja konta **(A)**
+**Početno stanje godine – Dugovno / Potražno** = vrednost poslednjeg obračunatog otvaranja konta **(A)**.
 
-Prethodni iznos (dugovno / potražno) = iznos koji se odnosi na razdoblje između posljednjeg otvaranja konta (A) i datuma početka razdoblja postavljenog u filtru datuma knjiženja **(B)**
+**Prethodni promet (Dugovno / Potražno)** = promet nastao u periodu između poslednjeg otvaranja konta **(A)** i početnog datuma definisanog u filteru datuma knjiženja **(B)**.
 
-Prethodna bilanca (dugovno/potražno) = **(A) + (B)**
+**Prethodno stanje (Dugovno / Potražno)** = **(A) + (B)**.
 
-Dugovno/potražno u razdoblju= iznos koji se odnosi na razdoblje umetnuto u filtar datuma **(C)**
+**Promet u periodu (Dugovno / Potražno)** = promet ostvaren u periodu definisanom filterom datuma **(C)**.
 
-Ukupno dugovno/potražno = **(A) + (B) + (C)**
+**Ukupno dugovno / potražno** = **(A) + (B) + (C)**.
 
-Konačno dugovno/potražno = je neto stanje ukupnih dugovnih/potražnih vrijednosti izraženih u prethodnoj točki.
+**Konačno dugovno / potražno** = neto stanje ukupnih dugovnih i potražnih vrednosti.
 
-Stupac **Filter**: to je "tehnički" podatak koji se koristi, u slučaju izvoza prikazanih podataka u Excel (ili prijenosa s kopiranjem), za ispravno upravljanje naknadnim stvaranjem tablica u Excelu.
+**Kolona Filter**: predstavlja tehnički podatak koji se koristi prilikom izvoza podataka u Excel ili kopiranja podataka, kako bi se omogućilo pravilno formiranje tabela u Excelu.
 
-UKUPNO:
+## Ukupni iznosi
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image07.png)
 
-**Ukupno za označene redove**: može se odabrati jedan ili više (držeći pritisnutu tipku Ctrl) konta/podkonta. 
+**Ukupno za označene redove**: moguće je označiti jedan ili više konta ili podkonta (držanjem tastera **Ctrl**).
 
-PAŽNJA: Ako su npr. odabrana podkonta i povezana glavna konta ili grupe na višoj hijerarhijskoj razini (koje stoga već uključuju vrijednost detaljnih podkonta), **iznos prikazan** u ovom retku bit će prikazan **u crvenom** kako bi se istaknulo da će ukupni rezultat biti iskrivljen nehomogenim i koherentnim odabirom.  
+:::danger PAŽNJA
+Ako su istovremeno odabrana podkonta i njima nadređena glavna konta ili grupe (koje već sadrže zbir tih podkonta), prikazani ukupan iznos biće označen **crvenom bojom**, kako bi se upozorilo da zbir nije ispravan zbog preklapanja vrednosti.
+:::
 
-**Ukupno za detaljna konta**: ukupni iznosi prikazani u ovom retku odnose se samo na detaljna podkonta na najnižoj hijerarhijskoj razini. 
+**Ukupno za detaljna konta**: prikazuje zbir isključivo za podkonta koja se nalaze na najnižem hijerarhijskom nivou.
 
-**Ukupno tabela**: ukupni iznosi prikazani u ovom retku odnose se na sve retke prikazane u mreži rezultata, stoga ako se vrate i detaljna podkonta i više razine ili računi (na temelju postavljenih filtara), ukupni će biti zbroj podkonta i viših razina (množenje vrijednosti s obzirom na razinu detalja i predstavlja u ovom slučaju beznačajnu brojku).
-
-
-
-
-
-
+**Ukupno tabele**: prikazuje zbir svih redova prikazanih u tabeli rezultata. Ukoliko tabela sadrži i podkonta i njihove nadređene grupe ili konta, ukupni iznos predstavlja zbir svih prikazanih redova, pa zbog višestrukog uključivanja istih vrednosti nema analitički značaj.

@@ -9,35 +9,35 @@ PODRUČJE FILTRA:
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image01.png)
 
-Omogućuje filtriranje računovodstvenih podataka za obradu unoseći raspon **datuma obračuna** raspon (podskup) konta ili podkonti, tip konta, računovodstvenu stavku (**Predložak**) specifičnu podjelu (korisno ako postoji više aktivnih) te stranu valutu (**Valuta**).
+Omogućuje filtriranje računovodstvenih podataka za obradu unoseći raspon **datuma obračuna** raspon (podskup) konta ili podkonta, tip konta, računovodstvenu stavku (**Predložak**) specifičnu podjelu (korisno ako postoji više aktivnih) te stranu valutu (**Valuta**).
 
-**Konvertiraj također druge zbrojeve u valuti**: aktiviranjem ovog flaga, uz postavljanje prethodnog filtra Valuta (koji izvlači transakcije izrađene u određenoj valuti), i ostale računovodstvene transakcije izrađene u eurima ili drugim valutama, bit će pretvorene u odabranu valutu prema tečaju na datum knjiženja.
+**Konvertiraj također druge zbrojeve u valuti**: aktiviranjem ove opcije, uz postavljanje prethodnog filtra Valuta (koji izvlači transakcije izrađene u određenoj valuti), i ostale računovodstvene transakcije izrađene u eurima ili drugim valutama, bit će pretvorene u odabranu valutu prema tečaju na datum knjiženja.
 
 PARAMETRI: (otvoriti proširenja)
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image02.png)
 
-Budući da prikaz s rezultatima također prikazuje polje **Razina**, koje predstavlja hijerarhijski redoslijed odgovarajućeg konta/podkontna u kontonom planu (gdje je 99 posljednja razina s najvećim detaljima, a 0 je korijenski čvor, obično koji sadrži ukupno), prisutan je i filtar za razine koje treba prikazati:
+Budući da prikaz s rezultatima također prikazuje polje **Razina**, koje predstavlja hijerarhijski redoslijed odgovarajućeg konta/podkonta u kontnom planu (gdje je 99 posljednja razina s najvećim detaljima, a 0 je korijenski čvor, obično koji sadrži ukupno), prisutan je i filtar za razine koje treba prikazati:
 
 **Svi**: Prikazuje sve razine;
 
-**Prikaži ukupni iznos za razinu X...**: unoseći željenu razinu (npr. 98) u odgovarajuće polje **Razina** rezultati će biti grupirani prema glavnim kontima (koja u planu konta predstavljaju razinu neposredno iznad 99, definiranu kao maksimalni detalj podkonti u kontnom planu za ovu obradu);
+**Prikaži ukupni iznos za razinu X...**: unoseći željenu razinu (npr. 98) u odgovarajuće polje **Razina** rezultati će biti grupirani prema glavnim kontima (koja u planu konta predstavljaju razinu neposredno iznad 99, definiranu kao maksimalni detalj podkonta u kontnom planu za ovu obradu);
 
 **Prikaži ukupni iznos za razinu X... s podzbrojevima:** U usporedbi s prethodnim načinom grupiranja, prikazat će i djelomične ukupne iznose za moguće hijerarhijski niže grupacije. 
 
-**Prikaži ukupni iznos samo za podračune**: Vrijednosti će biti prikazane samo za razine koje sadrže podkonte (više hijerarhijske razine neće biti prikazane). 
+**Prikaži ukupni iznos samo za podkonta**: Vrijednosti će biti prikazane samo za razine koje sadrže podkonta (više hijerarhijske razine neće biti prikazane). 
 
-**Isključi retke s nultim iznosom**: Konta/podkonti bez transakcija neće biti prikazani.
+**Isključi retke s nultim iznosom**: Konta/podkonta bez transakcija neće biti prikazani.
 
-**Dodaj (uključeno/isključeno)**: ova opcija aktivira ili deaktivira poseban način prikazivanja koji, u slučaju promjene raspona datuma knjiženja i ažuriranja prikaza pritiskom na gumb Traži u traci izbornika, dodaje novi rezultat (dodajući ga u prikaz rezultata) prethodno prikazanom rezultatu. To omogućuje, na primjer, usporedbu vrijednosti između različitih razdoblja. Radi upravljivosti i jasnoće rezultata, preporučuje se korištenje ove opcije samo uz filtar za konta/podkonte postavljen tako da vraća ograničen set podataka.
+**Dodaj (uključeno/isključeno)**: ova opcija aktivira ili deaktivira poseban način prikazivanja koji, u slučaju promjene raspona datuma knjiženja i ažuriranja prikaza pritiskom na gumb Traži u traci izbornika, dodaje novi rezultat (dodajući ga u prikaz rezultata) prethodno prikazanom rezultatu. To omogućuje, na primjer, usporedbu vrijednosti između različitih razdoblja. Radi upravljivosti i jasnoće rezultata, preporučuje se korištenje ove opcije samo uz filtar za konta/podkonta postavljen tako da vraća ograničen set podataka.
 
-GRID S REZULTATIMA:
+TABLICA S REZULTATIMA:
 
 ![](/img/it-it/finance-area/ledger-records/records/account-balance-visualization/image03.png)
 
 U ovom prikazu vide se konta/podkonta prema parametrima filtriranja i grupiranja definiranim u gornjem dijelu obrasca.
 
-Prikazuju se šifra i opis **grupe** (vidi strukturu **[kontnog plana](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**) i računa/podračuna te šifra **razine** definirana posebno za ovu obradu i opisana gore.  
+Prikazuju se šifra i opis **grupe** (vidi strukturu **[kontnog plana](/docs/erp-home/registers/accounting/analytic-chart-of-accounts)**) i konta/podkonta te šifra **razine** definirana posebno za ovu obradu i opisana gore.  
 
 **Konačni**: ovo polje označava (zastavicom) je li konto i/ili grupa hijerarhijski viša razina od svih ostalih u svojoj grani (strukture kontnog plana). Ovo je korisno jer, u slučaju složenije organizacije strukture kontnog plana, šifra prikazana u polju Razina možda zapravo nije hijerarhijski nadređena i stoga možda neće biti moguće ispravno filtrirati (i dobiti točne ukupne iznose).
 
@@ -63,7 +63,7 @@ PAŽNJA: moguće je prikazati (ili sakriti) dodatne stupce u usporedbi sa standa
 
 ZNAČENJE STUPCA:
 
-Godina otvaranja Dugovno / potražno = vrijednost posljednjeg izračunatog otvaranja konta **(A)**
+Godina otvaranja Dugovno / potražno = vrijednost posljednjeg izračunanog otvaranja konta **(A)**
 
 Prethodni iznos (dugovno / potražno) = iznos koji se odnosi na razdoblje između posljednjeg otvaranja konta (A) i datuma početka razdoblja postavljenog u filtru datuma knjiženja **(B)**
 

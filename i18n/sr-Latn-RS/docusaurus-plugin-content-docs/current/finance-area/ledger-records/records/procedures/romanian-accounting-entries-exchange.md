@@ -1,91 +1,78 @@
 ---
-title: Zatvaranje tečajnih razlika 
+title: Zatvaranje kursnih razlika
 sidebar_position: 2
 ---
 
-Maske se nalaze u Administracija > Knjigovodstveni zapisi > Procedure > Zatvaranje tečajnih razlika
+Obrazac se nalazi na putanji **Administracija > Knjiženja > Procedure > Zatvaranje kursnih razlika**.
+Ova procedura omogućava automatski obračun kursnih razlika na određeni datum za konta koja se vode u stranoj valuti.
+Moguće je obračunati kursne razlike za:
+- potraživanja i obaveze (kupci i dobavljači);
+- bankovne račune.
 
-Ova procedura omogućuje automatsko izračunavanje, na određeni datum, razlika u tečaju za račune u stranoj valuti.
+Procedura generiše otvorene stavke i računovodstvena knjiženja za evidentiranje obračunatih kursnih razlika.
 
-Moguće je upravljati:
+## Obračun i knjiženje kursnih razlika
 
-- Krediti i dugovi (klijenti i dobavljači)
-- Bankovni računi 
+Na primer, na kraju poslovne godine ili na bilo koji drugi datum potrebno je:
 
-**Generiraju se otvorene stavke i računovodstveni unosi za prilagodbu razlici tečaja.**
+- odabrati valutu za koju će se izvršiti obračun putem polja **Valuta** u zaglavlju obrasca;
+- u meniju sa desne strane odabrati vrstu obračuna:
+  - **Stanja** – obračunava kursne razlike na saldima (na primer bankovni računi);
+  - **Otvorene stavke** – obračunava kursne razlike za potraživanja i obaveze kupaca i dobavljača:
+    - **Aktiva** – kupci;
+    - **Pasiva** – dobavljači.
 
-### Kako izračunati i registrirati razlike u tečaju (na primjer na kraju godine ili na drugi datum) 
+Polja **Konto/Podkonto** i **Odeljenje** predstavljaju opcione filtere kojima se može suziti pretraga.
 
-- odabrati jednu valutu (jednu po jednu), prema kojoj će se vršiti izračun, putem kombinirane kutije **Valuta** u zaglavlju obrasca.
-- Pomoću izbornika s desne strane vrstu izračuna:
-    - Raspoloživost: uzima u obzir stanja (npr. banka) 
-    - Dospijeća plaćanja: čita dugove i potražnje prema kupcima/dobavljačima  
-        - Aktivno: kupci
-        - Pasiva: dobavljači
+U donjem delu obrasca potrebno je:
 
-Konto/podkotno i odjel su izborni filtri za sužavanje pretraživanja.  
-
-- Postavite dolje u obrascu **datum**  (na primjer 31/12/GGGG) za usklađivanje (odnosno izračun razlike u tečaju)  
-- Vrijednost odgovarajućeg **tečaja** bit će učitana na temelju rezultata tablice [**tečajevi valuta**](/docs/configurations/tables/finance/currency-exchange)
-- Pritisnite Pretraživanje  
----
-
-U središnjoj tablici koja prikazuje detalje traženih stavki ističu se:
-
-- **Konto / Podkonto** izvučen iz pretrage i koji treba upravljati;  
-
-- **Iznos u valuti** (izražen u stranom novcu), jednak zbroju dugovanja minus zbroj potraživanja u valuti svih transakcija na računu; 
-
-- **Iznos (u eurima) povijestan**, zbroj transakcija dugovanja u eurima minus zbroj potraživanja u eurima;
-
-- **Trenutni iznos**  koji odgovara iznosu u valuti preračunatom prema trenutnom tečaju (prikazanom u donjem dijelu obrasca);   
-
-- **Razlika** u tečaju, pozitivna ili negativna.  
+- uneti **datum** obračuna (na primer **31.12.GGGG**);
+- program će automatski učitati odgovarajući **kurs** iz tabele **[Kursevi valuta](/docs/configurations/tables/finance/currency-exchange)**;
+- kliknuti na **Traži**.
 
 ---
 
-U zoni ***Parametri*** definirani su računi za dobit ili gubitak od valutnih razlika s kojima će se izvršiti knjiženje usklađivanja (preuzeti iz parametara opće računovodstvene evidencije):  
-
-- Unesite željeni računovodstveni razlog za stvaranje knjiženja  
-
-- Pritisnite naredbu **Knjiženje**
+U centralnoj tabeli prikazuju se detalji pronađenih stavki, pri čemu su najvažnija sledeća polja:
+- **Konto / Podkonto** – konto pronađen pretragom za koji se obračunava kursna razlika;
+- **Iznos u valuti** – zbir dugovnih umanjen za zbir potražnih iznosa izraženih u stranoj valuti;
+- **Knjiženi iznos (EUR)** – zbir dugovnih umanjen za zbir potražnih iznosa evidentiranih u evrima;
+- **Trenutni iznos** – vrednost iznosa u valuti preračunata po trenutno važećem kursu prikazanom u donjem delu obrasca;
+- **Kursna razlika** – pozitivna ili negativna razlika između knjiženog i preračunatog iznosa.
 
 ---
+
+U odeljku **Parametri** definišu se konta dobiti i gubitka od kursnih razlika koja će biti korišćena prilikom knjiženja (preuzimaju se iz parametara opšteg računovodstva).
+
+Potrebno je:
+- odabrati odgovarajući **šablon knjiženja** koji će se koristiti za kreiranje knjiženja;
+- kliknuti na dugme **Knjiženje**.
 
 <details>
 
-  <summary>Dodatni detalji (Click to expand)</summary>
-  
-Flag **Privremeno**: omogućuje generiranje tečajne razlike kao privremeni računovodstveni unos;
+<summary>Dodatni detalji (kliknite za prikaz)</summary>
 
-**Tečaj**: broj s kojim se izračunava ažurirana vrijednost. Program ga automatski predlaže (iz tablice mjenjačnice), ali ga korisnik može promijeniti;  
+Opcija **Privremeno**: omogućava kreiranje knjiženja kursne razlike kao privremenog računovodstvenog knjiženja.
 
-**Datum** i **broj dokumenta** i **knjigovodstveni predložak** koji se odnosi na knjigovodstveno knjiženje koje treba urediti. **Uneseni datum također predstavlja datum do kojeg su odabrani računovodstveni zapisi**
+**Kurs**: vrednost kursa koja se koristi za obračun ažurirane vrednosti. Program ga automatski predlaže na osnovu tabele kurseva, ali ga korisnik može izmeniti.
 
-**Konto prihoda** i **rashoda**: koriste se za evidentiranje tečajnih razlika;  
+**Datum**, **broj dokumenta** i **šablon knjiženja** odnose se na računovodstveno knjiženje koje će biti kreirano. **Uneti datum ujedno predstavlja krajnji datum do kojeg će biti obuhvaćena računovodstvena knjiženja u obračunu.**
 
-U kartici *Poništavanje* knjiženja korekcije tečaja moguće je pregledati i vratiti rezultat obavljenih knjiženja na temelju postavljenih filtera (Od datuma/Do datuma, račun).
+**Konto prihoda** i **konto rashoda** koriste se za knjiženje kursnih razlika.
 
-**Povrati usklađenje**: Tipka za brisanje odabranih operacija regulacije u mreži rezultata. 
+Na kartici **Poništavanje** moguće je pregledati i poništiti prethodno izvršena knjiženja kursnih razlika korišćenjem filtera (**Od datuma**, **Do datuma**, **Konto**).
+
+**Poništi usklađivanje**: briše odabrana knjiženja kursnih razlika iz liste rezultata.
+
 </details>
 
-:::danger[Pažnja]
-Prema zadanim postavkama, svaki **šifarnik klijenta dobavljača**  koji se stvori aktivira **u planu konta flag  *Upravljanje valutom***. Ova opcija **ne smije biti deaktivirana**, kako ne bi došlo do blokiranja mogućnosti korištenja ove procedure i pravilnog upravljanja zatvaranjem salda u stranoj valuti.  
+:::danger PAŽNJA
 
-**U upravljanju računom u valuti**, bilo da se radi o računu klijenta, dobavljača ili bankovnom računu, preporučujemo da **račun bude vođen na ujednačen način**, definirajući valutu za transakcije, na primjer dolar, i da se račun uvijek vodi u dolarima.  
+Prilikom kreiranja svakog **šifarnika kupca ili dobavljača**, u kontnom planu se automatski aktivira opcija **Upravljanje valutom**. Ovu opciju **ne treba deaktivirati**, jer bi to onemogućilo korišćenje ove procedure i pravilno zatvaranje salda u stranoj valuti.
 
-Transakcija u valuti će, dakle, imati tečaj vezan uz određeni datum valute, a protuvrijednost u eurima koja će se unijeti u naš bilans, izražen u valuti društva, na primjer EURO.  
+Kod vođenja konta u stranoj valuti, bilo da se radi o kupcu, dobavljaču ili bankovnom računu, preporučuje se da se za svaki konto koristi **jedna referentna valuta**. Na primer, ako je konto definisan za američki dolar, sve transakcije na tom kontu treba evidentirati isključivo u dolarima.
+Svaka transakcija u stranoj valuti koristi kurs važeći na datum transakcije, dok se protivvrednost automatski evidentira u valuti kompanije (na primer u evrima).
+Iako je tehnički moguće na istom kontu evidentirati transakcije u različitim valutama (na primer delom u američkim dolarima, a delom u kineskim juanima), preporučuje se otvaranje posebnog konta za svaku valutu.
 
-Pokretanje računa, na primjer, dobavljača, istovremeno u dvije različite valute, na primjer dolar za neke transakcije i kineski juan za druge, moguće je, ali savjetujemo, ako je moguće, održavanje dva odvojena računa, svaki s jednom referentnom valutom.  
-
-**Treba se** međutim **izbjegavati**, kako bi se izbjeglo kompromitiranje pravilnog korištenja procedure koju ilustriramo, **transakcije u eurima na računu u eurima**, uključujući interne prijenose ili druge predloške, **na računu u stranoj valuti**.
+Takođe treba **izbegavati knjiženje transakcija u domaćoj valuti (EUR) na konto koji je namenjen za vođenje u stranoj valuti**, uključujući interna knjiženja ili knjiženja nastala putem drugih šablona, jer to može dovesti do nepravilnog rada procedure za obračun kursnih razlika.
 
 :::
-
-
-
-
-
-
-
-

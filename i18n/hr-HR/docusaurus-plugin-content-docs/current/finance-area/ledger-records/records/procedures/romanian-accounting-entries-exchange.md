@@ -36,7 +36,7 @@ U središnjoj tablici koja prikazuje detalje traženih stavki ističu se:
 
 - **Iznos u valuti** (izražen u stranom novcu), jednak zbroju dugovanja minus zbroj potraživanja u valuti svih transakcija na računu; 
 
-- **Iznos (u eurima) povijestan**, zbroj transakcija dugovanja u eurima minus zbroj potraživanja u eurima;
+- **Iznos (u eurima) arhiviran**, zbroj transakcija dugovanja u eurima minus zbroj potraživanja u eurima;
 
 - **Trenutni iznos**  koji odgovara iznosu u valuti preračunatom prema trenutnom tečaju (prikazanom u donjem dijelu obrasca);   
 
@@ -74,9 +74,9 @@ Prema zadanim postavkama, svaki **šifarnik klijenta dobavljača**  koji se stvo
 
 **U upravljanju računom u valuti**, bilo da se radi o računu klijenta, dobavljača ili bankovnom računu, preporučujemo da **račun bude vođen na ujednačen način**, definirajući valutu za transakcije, na primjer dolar, i da se račun uvijek vodi u dolarima.  
 
-Transakcija u valuti će, dakle, imati tečaj vezan uz određeni datum valute, a protuvrijednost u eurima koja će se unijeti u naš bilans, izražen u valuti društva, na primjer EURO.  
+Transakcija u valuti će, dakle, imati tečaj vezan uz određeni datum valute, a protuvrijednost u eurima koja će se unijeti u bilancu, izražen u valuti društva, na primjer EURO.  
 
-Pokretanje računa, na primjer, dobavljača, istovremeno u dvije različite valute, na primjer dolar za neke transakcije i kineski juan za druge, moguće je, ali savjetujemo, ako je moguće, održavanje dva odvojena računa, svaki s jednom referentnom valutom.  
+Pokretanje računa, na primjer, dobavljača, istovremeno u dvije različite valute, na primjer dolar za neke transakcije i kineski yuan za druge, moguće je, ali savjetujemo, ako je moguće, održavanje dva odvojena računa, svaki s jednom referentnom valutom.  
 
 **Treba se** međutim **izbjegavati**, kako bi se izbjeglo kompromitiranje pravilnog korištenja procedure koju ilustriramo, **transakcije u eurima na računu u eurima**, uključujući interne prijenose ili druge predloške, **na računu u stranoj valuti**.
 
