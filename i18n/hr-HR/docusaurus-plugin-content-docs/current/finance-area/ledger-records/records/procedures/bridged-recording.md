@@ -7,7 +7,7 @@ Ovim postupkom moguće je modificirati privremena knjiženja prisutne u glavnoj 
 
 ## Zapisi
 
-Klikom na Traži prema skupu podataka u poljima filtera, prikazuju se računovodstveni zapisi u Privremenom statusu.
+Klikom na 'Traži' prema skupu podataka u poljima filtera, prikazuju se računovodstveni zapisi u *Privremenom* statusu.
 
 Moguće je odabrati unose koje želimo staviti u konačno stanje i alternativno nastaviti na:
 
