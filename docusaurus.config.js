@@ -388,7 +388,7 @@ const config = {
 
         // The maximum number of search results shown to the user. This does _not_ affect performance of
         // searches, but simply does not display additional search results that have been found.
-        maxSearchResults: 15,
+        maxSearchResults: 64,
 
         // lunr.js-specific settings
         lunr: {
@@ -398,13 +398,13 @@ const config = {
           // By default, it splits the text at whitespace and dashes.
           //
           // Note: Does not work for "ja" and "th" languages, since these use a different tokenizer.
-         tokenizerSeparator: /[\s\-]+/,
+          tokenizerSeparator: /[\s\-]+/,
           // https://lunrjs.com/guides/customising.html#similarity-tuning
           //
           // This parameter controls the importance given to the length of a document and its fields. This
           // value must be between 0 and 1, and by default it has a value of 0.75. Reducing this value
           // reduces the effect of different length documents on a term’s importance to that document.
-          b: 0.5,
+          b: 0.75,
           // This controls how quickly the boost given by a common word reaches saturation. Increasing it
           // will slow down the rate of saturation and lower values result in quicker saturation. The
           // default value is 1.2. If the collection of documents being indexed have high occurrences
@@ -415,9 +415,9 @@ const config = {
           // the search term appears in just the text. This is done by "boosting" title matches with a
           // higher value than content matches. The concrete boosting behavior can be controlled by changing
           // the following settings.
-          titleBoost: 25,
+          titleBoost: 5,
           contentBoost: 1,
-          tagsBoost: 5,
+          tagsBoost: 3,
           parentCategoriesBoost: 2, // Only used when indexDocSidebarParentCategories > 0
         }
       },
