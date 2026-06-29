@@ -6,12 +6,34 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0079 - 29/06/2026
+
+> -	FI - creazione intrastat da registrazioni, revisione per visualizzazione pop up di 'Elaborazione...' in corso, ottimizzazione, esecuzione arrrotondamento all'unità della massa netta tramite pulsante di raggruppamento anche quando non c'è nulla da raggruppare (#TT02749/26, #TT02699/26)
+> -	FI - Gestione Intrastat: revisione della logica di proposta dei documenti nella procedura di creazione automatica da fatture (#TT00245/26)
+> -	FI - Gestione Intrastat: revisione proposta campo Provincia di origine nel modello. Modifications inside posting intrastat tab can have impact on profiles. (#TT02689/26)
+> -	FI - Corretta visualizzazione Stampa Analisi Centri di costo. Modifications inside Stampa Analisi Centri di costo form can have impact on profiles. (#TT02702/26)
+> -	MES - Generazione commesse di produzione: corretta anomalia che generava dei prototipi commesse di produzione diversi rispetto a quelli richiesti dal tab ordini clienti. (#TT02682/26)
+> -	MS - M.R.P. - Ora, se si attiva o disattiva il parametro “Controllo fabbisogni con generazione ordini pianificati” viene memorizzato e, alla successiva riapertura della form, il parametro rimane impostato all’esecuzione precedente. (#TT02664/26)
+> -	PR - aggiunto controllo sulla causale selezionata per le procedure di contabilizzazione insoluto e contabilizzazione insoluto su cessione, che sia stato attivato il flag Provvigioni, se è attiva la gestione delle Commissioni (nei parametri di contabilità). #TT01741/26
+> -	PR - Anomalia acquisizione effetti attivi - procedura apparentemente conclusa ma schermata in attesa (#TT02530/26)
+> -	PR - Stampa lista insoluti: Revisionati i riferimenti relativi a numero documento, data documento e agente nella stampa degli insoluti (#TT2057/26)
+> -	SCM - Duplicazione fatture di acquisto: corretta la gestione del riporto della data di competenza nella fattura duplicata (#TT2459/26).
+> -	SCM - Ottimizzazione procedure di rollback carico e scarico documenti con articoli gestiti a lotti e serial number (#TT00744/26).
+> -	SCM - Reso per riparazione: ottimizzazione gestione reso per riparazione di un articolo con Serial Number (#TT02651/26).
+> -	SCS - Rientri di conto lavoro: Modificando il costo dell’articolo di un rientro già caricato l’aggiornamento viene effettuato anche nel costo del movimento di magazzino. (#TT2182/26)
+> -	SD - Creazione Fattura da DDT: ottimizzato blocco emissione documento quando è presente data fine validità in anagrafica cliente (#TT01856/26).
+> -	SD - Offerta cliente con struttura gerarchica - nella tab materiali gestita la conversione del costo materiale in valuta dell’offerta (#TT02681/26)
+> -	SD - offerte gerarchiche tab materiali - corretta casistica di gestione valuta diversa tra offerta cliente ed ordine fornitore/fattura fornitore da cui sono presi i costi dei materiali (#TT02791/26)
+> -	SDI - Documenti di Acquisto in entrata: Quando lo stato del file SDI viene modificato in “Non assegnato” (per scollegare la fattura di acquisto): I riferimenti alla fattura di acquisto e i dati del fornitore nei documenti di acquisto in entrata vengono automaticamente ripristinati ai valori precedenti al ricevimento del file SDI. (#TT260/26)
+> -	SH - Bug fix deleting subcollections with custom extension in sales (#TT00969/26)
+> -	SH - workflow log - risolto caso per cui una attività di workflow completata tramite task utente, non mostrava più la descrizione (#TT01373/26)
+
 ### Patch 707.1-0078 - 15/06/2026
 
 > -	FI - Aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. (#TT02180/26)
 > -	FI - revisione assegnazione numero cespiti nella procedura di suddivisione cespiti dentro la registrazione contabile (#TT02419/26)
 > -	FI - revisione calcolo importi per registrazione automatica giro iva da stampa liquidazione iva definitiva (#TT02548/26)
-> -	PR - Gestione della liquidità, revisione inserimento righe disponibilità bancarie da cash flow e da ricerca registrazioni (#TT01923/26 - #TT02211/25 – #TT03176/25)
+> -	PR - Gestione della liquidità, revisione inserimento righe disponibilità bancarie da cash flow e da ricerca registrazioni (#TT01923/26 - #TT02211/25 - #TT03176/25)
 > -	SD - Fatture di vendita, risolta l'errata applicazione degli sconti finali nella procedura di creazione da DDT per gli articoli con parametro 'Nessuna condizione commerciale' attivo (#TT02260/26)
 > -	SH - Risolto un problema di blocco della riga nella griglia di inserimento che si verificava al doppio clic sui campi ComboBox relativi a oggetti referenziati, in assenza di filter widget o filter result.
 
@@ -147,7 +169,7 @@ keywords:
 > -	PM - Inserimento righe fatturazione nel tab Fatturazione di un progetto - corretta proposta dell’anno in modo che corrisponda all’anno corrente e non all’anno del progetto (#TT01300/26)
 > -	SCM - Corretta valorizzazione dei DDT di acquisto e rientro conto lavoro: è ora possibile valorizzare insieme più righe di DDT di natura diversa (#TT01216/26)
 > -	SD - Corretto il funzionamento del filtro di ricerca “confermato” e “non confermato” in Ordini Clienti (#TT01464/26)
-> -	SD - Pesi e Volume in tab trasporto: Corretta visualizzazione UM di misura dei pesi e del volume che in alcuni casi non era visbile anche se correttamente calcolata (rif. Ticket #TT01521/26 #TT01530/26)
+> -	SD - Pesi e Volume in tab trasporto: Corretta visualizzazione UM di misura dei pesi e del volume che in alcuni casi non era visbile anche se correttamente calcolata (#TT#TT01521/26 #TT01530/26)
 > -	SD/SCM - Duplica documenti di acquisto/vendita, sviluppata esclusione delle righe di analitica legate a centri di costo non validi alla data (#TT01524/26 - #TT01353/26)
 > -	SD - conversione offerta di vendita in ordine - se mancante l'articolo da usare per le righe ordine derivate da risorse offerta, la conversione viene bloccata (#TT01220/26)
 > -	WM - Picking - Revisione layout dati di dettaglio in griglia di ricerca. **Attenzione! Questa modifica può impattare sui profili** (#TT01463/26)
@@ -245,7 +267,7 @@ keywords:
 
 ### Patch 707.1-0065 - 13/02/2026
 
-> -	FI - Contabilizzazione Compensi ed Enasarco: revisione delle procedure di contabilizzazione dei compensi e dei contributi Enasarco, con revisione delle relative procedure di rollback (Rif. Ticket TT00330/26)
+> -	FI - Contabilizzazione Compensi ed Enasarco: revisione delle procedure di contabilizzazione dei compensi e dei contributi Enasarco, con revisione delle relative procedure di rollback (#TT00330/26)
 > -	FI - creazione file F24, revisione record 50.01 (#TT01973/25)
 > -	FI - PaymentImport fix - delete FSMaturityPaymentReservation (#TT00631/26)
 > -	FI/PR/CRM - WebApi evict (#TT03911/25)
@@ -292,7 +314,7 @@ keywords:
 > -	CO - Ottimizzazione elaborazione periodi (#TT00435/26)
 > -	FI - CU2026, revisione tendina di regime escluso (RF19) **Attenzione! Questa modifica può impattare sui profili** (#TT00248/26)
 > -	FI - Links changement in Purchase invoices accounting procedure. Small improvements in supplier invoice accounting (#TT00280/26 )
-> -	FI - Registrazioni Contabili, Movimenti Contabili: Revisione salvataggio dei profili (Rif. Ticket TT00052/26)
+> -	FI - Registrazioni Contabili, Movimenti Contabili: Revisione salvataggio dei profili (#TT00052/26)
 > -	FI - time out in query executed during import from DocFinance (#TT00192/26 / TT03926/25)
 > -	FI - Webapi sull’oggetto FSPosting, revisione dell’importazione per gestire gli automatismi di chiusura partite delle registrazioni di pagamento/incassso (#TT05518/25)
 > -	MES - Corretto bug nell'import Webapi delle dichiarazioni di produzione (#TT00459/26)
