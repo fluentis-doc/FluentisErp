@@ -136,7 +136,7 @@ Polje za  (broj) bit će onemogućeno u slučaju privremenog knjiženja;
 
 **Vrsta dokumenta**: predlaže se od strane postupka na temelju vrijednosti postavljene u računovodstvenim predlošcima: može se mijenjati, ali to je obično izmjena koja nije potrebna (tipično se koristi za označavanje dokumenata u PDV registracijama, primjerice FV = Fakture za prodaju ili FA = Fakture za kupovinu, dok će svi ostali poslovni događaji uvijek imati dokument tipa GEN = Generički);
 
-**Datum dokumenta**: ovo je polje obavezno ili ne, ovisno o **[postavkama računovodstvenih predložaka](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, vaj datum ne može biti kasniji od datuma registracije i mora biti unutar vremenskog okvira valjanosti koji se odnosi na  **[razdoblje za vježbu za referentnu godinu](/docs/configurations/parameters/finance/accounting-parameters)** registracije. Ako se pritisne tipka za stvaranje *Nuova registrazione* iz postojećeg unosa, moguće je postaviti **parametre unosa** tako da se ovo polje također ponudi u tom novom unosu;
+**Datum dokumenta**: ovo je polje obavezno ili ne, ovisno o **[postavkama računovodstvenih predložaka](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)**, vaj datum ne može biti kasniji od datuma registracije i mora biti unutar vremenskog okvira valjanosti koji se odnosi na  **[razdoblje za vježbu za referentnu godinu](/docs/configurations/parameters/finance/accounting-parameters)** registracije. Ako se pritisne tipka za stvaranje *novog zapisa* iz postojećeg unosa, moguće je postaviti **parametre unosa** tako da se ovo polje također ponudi u tom novom unosu;
 
 <a id="campo_progetto" style={{ textDecoration: 'none' , color: 'inherit' , fontWeight: 'bold' }}></a> 
 
@@ -158,7 +158,7 @@ Kartica Projekti je aktivna samo kada je unutar opće evidencije tvrtke (Konfigu
 Ako je opcija **Upravljanje Kontrolingom** **aktivna**, upravljanje projektom odvijat će se na drugačiji način, odnosno bit će potrebno dodijeliti projekt kroz posebni centar troška koji ima kao [**dimenziju**](/docs/configurations/tables/controlling/analytical-accounting/dimension) (pogledajte dokumentaciju za kontroling područje) onu koja je prikladna za upravljanje projektima.  
 :::
 
-**Valuta**: predložena kao prioritet na temelju nositljea (*konta*) knjiženja, alternativno iz valute tvrtke: može se ipak mijenjati od slučaja do slučaja. Nakon što je knjiženje spremljeno, polje više nije moguće mijenjati;
+**Valuta**: predložena kao prioritet na temelju nositelja (*konta*) knjiženja, alternativno iz valute tvrtke: može se ipak mijenjati od slučaja do slučaja. Nakon što je knjiženje spremljeno, polje više nije moguće mijenjati;
 
 **Datum tečaja**: to je referentni datum za tečaj, kako je uneseno u tablicu tečajeva valuta: postupak čita iz ove tablice najnoviji uneseni datum s odgovarajućim tečajem u odnosu na ovo polje.
 
@@ -234,7 +234,7 @@ Dnevno – polja Od datuma i Do datuma postavljaju se na datum knjiženja. Kraj 
 
 - *Upozori na datum tečaja*: budući da se u knjiženju automatski predlaže posljednji tečaj unesen u tablicu Tečajevi valuta, sustav provjerava odgovara li datum tog tečaja datumu knjiženja.
 
-- *Podkonto* (bez grupirnja/Zadnje umetnuto): određuje podkonto nositelja knjiženja koji se predlaže u zaglavlju knjiženja. Opcija Posljednje korišteni automatski predlaže podkonto korišten u posljednjem unosu.
+- *Podkonto* (bez grupiranja/Zadnje umetnuto): određuje podkonto nositelja knjiženja koji se predlaže u zaglavlju knjiženja. Opcija Posljednje korišteni automatski predlaže podkonto korišten u posljednjem unosu.
 
  > **Tipke za ponovno izračunavanje**: ažuriraju vrijednosti s osvježavanjem / ponovnim izračunom 
     - PDV
@@ -263,13 +263,13 @@ U slučaju **ručnog unosa** novog knjiženja, odjeljak se može ispuniti na nek
 > - **Poljoprivredna transakcija**: specifičan tip transakcije za tvrtke podložne poljoprivrednom režimu, koristi se za isključivanje iz tog režima (postavljenog u računovodstvenoj šifri) za specifičnu stavku;    
 
 
-**% ne priznati**: peruzima se iz PDV stope unesene na stavci. Ručno nametanje se ne preporučuje, ispravna radnja je promijeniti PDV stopu; određuje izračun stupca (porez) *neoporezivog*. 
+**% ne priznati**: preuzima se iz PDV stope unesene na stavci. Ručno nametanje se ne preporučuje, ispravna radnja je promijeniti PDV stopu; određuje izračun stupca (porez) *neoporezivog*. 
 
 **Porez**: može se ručno unijeti u odnosu na izračun koji provodi aplikacija: može se dogoditi da dokument pri kupnji ima zaokruživanje koje nije ispravno obrađeno, korisnik mora registrirati dokument onako kako ga je primio.  
 
 **Ukupno valuta / Ukupno**: to su izračunati, a ne pohranjeni podaci na razini baze podataka;  
 
-**Od datuma obračuna/Do datuma obračuna**: to su datumi **ekonomske obveze**, koji su ključni za automatske **izračune** **ispravki i dopuna** u bilanci. Na temelju tih podataka bit će izračunati razmjerni troškovi i prihodi.  
+**Od datuma obračuna/Do datuma obračuna**: to su datumi **ekonomske obveze**, koji su ključni za automatske **izračune** **ispravaka i dopuna** u bilanci. Na temelju tih podataka bit će izračunati razmjerni troškovi i prihodi.  
 
 <details>
 
@@ -310,7 +310,7 @@ Odgovarajuća vrsta konta dodjeljuje se predmetnom kontu izravno u kontnom planu
 **Podjela**: polje je vidljivo samo ako predložak predviđa upravljanje podjelama. U tom slučaju bit će moguće podijeliti isto PDV knjiženje na više poslovnih podjela.  
 
 #### Dodatne napomene:  
-- nije moguće spremiti **PDV stavke s osnovicom 0** osim ako predložak to dopušta (opcija *dopušti konta s vrijednošću 0*); 
+- nije moguće spremiti **PDV stavke s osnovicom 0** osim ako predložak to dopušta (opcija *dopusti konta s vrijednošću 0*); 
  
 - **Zaokruživanje PDV-a** upravlja stavku po stavku, dok propisi nalažu da se izračun treba napraviti na osnovici koja grupira sve stavke s istom PDV stopom: stoga je moguće da dođe do razlike koja je uzrokovana isključivo upravljanjem zaokruživanjima (ovo se odnosi samo na ručni unos knjiženja: automatske računovodstvene obrade iz nabave i prodaja već pravilno izračunavaju).  
  
@@ -437,7 +437,7 @@ Kartica je podijeljena u dva osnovna pregleda. Prva, gornja, služi za pretraži
 
 - Tipično, svi zapisnici tipa PDV-a imaju opciju 'otvaranje stavki' i mogu također imati opciju zatvaranja + kompenzacija stavki; 
 
-- predlošci za plaćanja i naplate uvijek predviđaju zatvaranje otvorenih stavaka, ali nikada nemaju aktiviranu oznaku kompenzacije. Po potrebi mogu imati aktiviranu oznaku otvaranja otvorenih stavaka kako bi se omogućila obrada predujmova odnosno plaćanja unaprijed. U tom slučaju, budući da ne postoji otvorena stavka koja bi se zatvorila, sustav će automatski otvoriti novu otvorenu stavku suprotnog predznaka, čime će se zadržati usklađenost s odgovarajućim računovodstvenim knjiženjem. Podešavanja u **[parametarima](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** predloška knjigovodstvenog zapisa). 
+- predlošci za plaćanja i naplate uvijek predviđaju zatvaranje otvorenih stavaka, ali nikada nemaju aktiviranu oznaku kompenzacije. Po potrebi mogu imati aktiviranu oznaku otvaranja otvorenih stavaka kako bi se omogućila obrada predujmova odnosno plaćanja unaprijed. U tom slučaju, budući da ne postoji otvorena stavka koja bi se zatvorila, sustav će automatski otvoriti novu otvorenu stavku suprotnog predznaka, čime će se zadržati usklađenost s odgovarajućim računovodstvenim knjiženjem. Podešavanja u **[parametrima](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** predloška knjigovodstvenog zapisa). 
 
 :::tip PAŽNJA
 Razlika između plaćanja stavki i kompenzacije stavki:  
@@ -562,7 +562,7 @@ Unutar iste dimenzije, transakcija može biti podijeljena (na primjer, 50%) na d
 
 </details>
 
-**Konto / Podkonto / Opis**: polja za unos knjigovodstvenog konta koji se dodjeljuje centru. Podaci će biti automatski uneseni ako postoji definirana povezanost u kontnom plamu ili u šifrarniku (pogledajte u nastavku).  
+**Konto / Podkonto / Opis**: polja za unos knjigovodstvenog konta koji se dodjeljuje centru. Podaci će biti automatski uneseni ako postoji definirana povezanost u kontnom plamu ili u šifarniku (pogledajte u nastavku).  
 
 **Projekt**: Ako je u knjigovodstvenom predlošku omogućena oznaka za projekte, ovo polje omogućava dodjeljivanje zapisa nekom projektu. *Widget* se odnosi na tablicu Projekti (Upravljanje projektima > Projekti > Projekti).
 
@@ -651,8 +651,8 @@ Polje **% ne priznati**. koje se odnosi na postotak nepriznatosti PDV-a obično 
 **Datum početka amortizacije**: automatski se predlaže na temelju datuma knjiženja. Od tog datuma provjerava se godina u kojoj osnovno sredstvo može početi biti amortizirano;     
 **Datum završetka amortizacije**: nije uneseno (ali vizualizacija u knjizi osnovnih sredstava ovisi i o ovom polju);    
 **Početak / kraj jamstva**:  informativno polje koje se odnosi na valjanost jamstva.    
-**Iskorišten**: označava osnovna sredstva koja su kupljena kao rabljena (za ta osnovna sredstva primjenjuje se 100% postotak amortizacije u prvoj godini, a unaprijed amortizacija primjenjuje se samo za jednu godinu).   
-**U upotrabi**: (preporučeno kao zadano pri spremanju) označava da je osnovno sredstvo stvarno u upotrebi. Bez ovog oznaka, osnovno sredstvo ne može biti amortizirano.     
+**Iskorišten**: označava osnovna sredstva koja su kupljena kao rabljena (za ta osnovna sredstva primjenjuje se 100% postotak amortizacije u prvoj godini, a predviđena amortizacija primjenjuje se samo za jednu godinu).   
+**U upotrebi**: (preporučeno kao zadano pri spremanju) označava da je osnovno sredstvo stvarno u upotrebi. Bez ovog oznaka, osnovno sredstvo ne može biti amortizirano.     
 **U održavanju**: označava da osnovno sredstvo treba biti uključeno u izračun održavanja.
 
 **Napomene**: polje za bilješke, koje se ne prikazuje u standardnim izvještajima (može se dodati personaliziranjem izvještaja).  
@@ -671,13 +671,13 @@ Polje **% ne priznati**. koje se odnosi na postotak nepriznatosti PDV-a obično 
 
 **Pri spremanju retka mogu se pojaviti, ovisno o slučaju, različite poruke**:
 
-- "Osnovno sredstvo ima vrijednost manju od ___. Želite li ga amortizirati 100%?": Kategorija osnovnog sredstva postavila je vrijednost u polju ‘ukupni limit amortizacije’ i unesena vrijednost za novo osnovno sredstvo je manja. Ovo je slučaj za osnovna sredstva čija je vrijednost manja od 516 €, koja prema poreznim propisima mogu biti odmah amortizirana u 100% iznosu u godini nabave. Odabirom opcije Da (Yes) izvršit će se amortizacija od 100% u prvoj godini, ažurirajući opciju u zaglavlju kartice osnovnog sredstva kako bi se specifično obradila u automatskom postupku amortizacije;  
+- „Dugotrajna imovina ima vrijednost manju od ___. Želite li obračunati 100 % amortizacije?” – kategorija dugotrajne imovine ima definiranu vrijednost u polju Granica za jednokratnu amortizaciju, a vrijednost novounesene dugotrajne imovine niža je od tog praga (primjerice, imovina vrijednosti manje od 516 €), za koju porezni propisi dopuštaju jednokratno priznavanje cijelog iznosa kao troška, odnosno 100 %-tnu amortizaciju u godini nabave. Odabirom opcije Da sustav će postaviti obračun amortizacije na 100 % u prvoj godini tako što će ažurirati odgovarajuću oznaku u zaglavlju matičnih podataka dugotrajne imovine, čime će se takva imovina posebno obrađivati u automatskom postupku obračuna amortizacije.
 
-- "Želite li povezati parcijalnu prodaju s postojećom imovinskom operacijom?": Predložak je za parcijalnu prodaju, a kategorija osnovnog sredstva nema opciju ‘inkrementalno’: U ovom slučaju, prikazat će se poruka za dodjelu iznosa prodaje na specifičnu imovinsku operaciju osnovnog sredstva. Na primjer, za osnovno sredstvo ‘neinkrementalno’ svaka pojedina operacija se upravlja na razini amortizacija s vlastitim vijekom trajanja: parcijalna prodaja (u odnosu na cijelo osnovno sredstvo) zapravo može biti tretirana kao potpuno prodana pojedinačna operacija (na primjer: imam računalo, povećavam ga skenerom, a zatim prodajem samo skener).  
+- „Želite li djelomično otuđenje povezati s postojećom imovinskom transakcijom?” – ova se poruka prikazuje kada se koristi računovodstveni predložak za djelomičnu prodaju, a kategorija dugotrajne imovine nema aktiviranu oznaku inkrementalno. U tom slučaju sustav pita želi li se iznos djelomičnog otuđenja povezati s određenom imovinskom transakcijom dugotrajne imovine. Primjerice, kod dugotrajne imovine koja nije inkrementalna (pri čemu se naknadna ulaganja vode kao zasebne komponente), svaka se pojedina imovinska transakcija amortizira zasebno, s vlastitim vijekom trajanja. Zato djelomično otuđenje ukupne dugotrajne imovine u praksi može predstavljati potpunu prodaju jedne od njezinih komponenti (npr. računalo je naknadno nadograđeno skenerom, a kasnije se prodaje samo skener).
 
-**Odabirom Da (Yes)** prikazat će se pomoć (pop up) za pretragu koje **komponente** osnovnog sredstva želite prodati, omogućujući odabir putem tipki *Pretraga* i *Odaberi*  
+**Odabirom Da (Yes)** prikazat će se pomoć (pop up) za pretragu koje **komponente** osnovnog sredstva želite prodati, omogućujući odabir putem tipki *Traži* i *Odaberi*  
 
-Posebno, napominjemo da su različite komponente lako prepoznatljive jer se odnose, unutar pomoći, na polje **Progresivni broj** (*Progrg*.) kao i unutar kartice osnovnog sredstva.  
+Posebno, napominjemo da su različite komponente lako prepoznatljive jer se odnose, unutar pomoći, na polje **Progresivni broj** (*Progresivno*.) kao i unutar kartice osnovnog sredstva.  
 
 ### Tablice (dolje)
 
@@ -685,45 +685,45 @@ Sadržaj se odnosi na odabrani gornji redak.
 
 #### IMOVINSKE OPERACIJE:   
 
-(dodaje se novi redak za svaku operaciju učitanu u gornjoj mreži).  
+(dodaje se novi redak za svaku operaciju učitanu u gornjoj tablici).  
 
 **Datum operacije**: Datum kada se zabilježi kretanje u knjizi osnovnih sredstava;  
 
-**Progr**: Progresivni broj retka operacije;  
+**Progresivan**: Progresivni broj retka operacije;  
 
-**Izvorni trošak**: Polje se popunjava samo operacijama koje koriste tip operacije "izvorni trošak" s vrijednošću nabave (odgovara osnovnoj cijeni + eventualni neoduzeti PDV);  
+**Izvorni trošak**: Polje se popunjava samo operacijama koje koriste tip operacije "izvorni trošak" s vrijednošću nabave (odgovara osnovnoj cijeni + eventualni neodbitni PDV);  
 
 **Količina**: Odnosi se na količinu robe koju treba unijeti;  
 
-**Neoduzeti porez**: Sadrži vrijednost eventualnog neoduzetog PDV-a, koji se dodaje na trošak kako bi se odredila početna knjigovodstvena vrijednost (početni trošak). Vrijednost se automatski popunjava na temelju vrijednosti unesene u polje "Iznos" u gornjoj mreži u vezi s odabranim PDV kodom u susjednom polju (ako se predviđa neoduzimanje);
+**Porez koji se NE može odbiti**: Sadrži vrijednost eventualnog neodbitnog PDV-a, koja se pribraja nabavnoj vrijednosti radi utvrđivanja početne knjigovodstvene vrijednosti (povijesnog troška) dugotrajne imovine. Vrijednost se automatski popunjava na temelju iznosa unesenog u polje Iznos u gornjoj tablici, u skladu s PDV šifrom odabranom u susjednom polju, ako ona predviđa neodbitni PDV.
 
-**Neamortizirani iznos**: Ako je u odgovarajućoj kategoriji osnovnog sredstva uneseno polje "Postotak amortiziranosti", polje će se automatski popuniti; iznos se oduzima od iznosa za izračun amortizacije, npr. Postotak amortizacije = 50%, Trošak povijesti 30.000;  
+**Iznos koji se ne može amortizirati**: Ako je u odgovarajućoj kategoriji osnovnog sredstva uneseno polje "Postotak amortiziranosti", polje će se automatski popuniti; iznos se oduzima od iznosa za izračun amortizacije, npr. Postotak amortizacije = 50%, Trošak povijesti 30.000;  
 
 Amortizacija 30.000 - 15.000 = 15.000 x 3%; Amortizacija će se izračunavati dok fond ne dosegne 15.000;
 
-**Preostali neamortizirani iznos**: ručno upravljan, s obzirom na prethodni primjer polje će prikazivati amortizaciju 30.000 * 3%, ali dok fond ne dosegne 15.000;
+**Ostatak koji se ne može amortizirati**: ručno upravljan, s obzirom na prethodni primjer polje će prikazivati amortizaciju 30.000 * 3%, ali dok fond ne dosegne 15.000;
 
-**Već amortizirano**: Vrijednost je vidljiva samo ako je izračunata amortizacija, ali još nije knjižena (nakon knjiženja, iznos će se zbrojiti u "Knjižovodstvenu vrijednost" i u fond);  
+**Već amortiziran**: Vrijednost je vidljiva samo ako je izračunata amortizacija, ali još nije knjižena (nakon knjiženja, iznos će se zbrojiti u "Knjižnu vrijednost" i u fond);  
 
-**Fond za administrativnu obradu (redovno) / Predviđeno**: polja prihvaćaju, ovisno o vrsti amortizacije (obična, anticipirana ili usporena), zbir obračunatih rata amortizacije;  
+**Zbirna linearna amortizacija**: polja prihvaćaju, ovisno o vrsti amortizacije (Obično, predviđeno, usporeno ili ostatak), zbir obračunatih rata amortizacije;  
 
-**Fond za poreznu administraciju**: popunjava se ako je aktiviran oznaka 'Fiskalni' u kategoriji osnovnog sredstva, ili može biti aktivirana na razini pojedinog retka u kartici "Amortizacija";
+**Zbirna financijska amortizacija**: popunjava se ako je aktivirana oznaka 'Fiskalni' u kategoriji osnovnog sredstva, ili može biti aktivirana na razini pojedinog retka u kartici "Amortizacija";
 
-**Poravnanje**: prihvaća prodajnu vrijednost imovine i automatski se popunjava putem polja 'Iznos' u gornjoj tablici ako je Tip Transakcije 'Poravnanje'. Na temelju ove vrijednosti i vrijednosti kapitalne dobitke ili gubitka, ažurirat će se povijesna vrijednost imovine koja se treba ispisati iz knjige imovine;;
+**Otuđenje**: prihvaća prodajnu vrijednost imovine i automatski se popunjava putem polja 'Iznos' u gornjoj tablici ako je Tip Transakcije 'Otuđenje'. Na temelju ove vrijednosti i vrijednosti kapitalne dobitke ili gubitka, ažurirat će se povijesna vrijednost imovine koja se treba ispisati iz knjige imovine;;
 
-**Parcijalno poravnanje**: prihvaća prodajnu vrijednost imovine i automatski se popunjava putem polja 'Iznos' u gornjoj tablici ako je Tip Transakcije 'Parcijalno poravnanje'. Na temelju ove vrijednosti i vrijednosti kapitalne dobitke ili gubitka, ažurirat će se povijesna vrijednost imovine koja se treba ispisati iz knjige imovine;  
+**Djelomično otuđenje**: prihvaća prodajnu vrijednost imovine i automatski se popunjava putem polja 'Iznos' u gornjoj tablici ako je Tip Transakcije 'Djelomično otuđenje'. Na temelju ove vrijednosti i vrijednosti kapitalne dobitke ili gubitka, ažurirat će se povijesna vrijednost imovine koja se treba ispisati iz knjige imovine;  
 
 **Kapitalna dobit**: prihvaća vrijednost kapitalne dobiti od prodaje imovine i sudjeluje u izračunu povijesne vrijednosti prodane imovine;
 
-**Kapitalna dobit reinvestirana**: nije aktivno;
+**Reinvestirana dobit**: nije aktivno;
 
 **Revalorizacija**: povećava povijesni trošak u skladu sa zakonom o revalorizaciji; 
 
-**Kapitalni gubitak**: prihvaća vrijednost kapitalnog gubitka od prodaje imovine i sudjeluje u izračunu povijesne vrijednosti prodane imovine.  
+**Otpis vrijednosti**: prihvaća vrijednost kapitalnog gubitka od prodaje imovine i sudjeluje u izračunu povijesne vrijednosti prodane imovine.  
 
 **Uništenje**: obično se popunjava s nulom (umjesto polja 'Poravnanje' ili 'Parcijalno poravnanje'), može se dodijeliti vrijednost za posebne slučajeve (na primjer, vrijednost otpisanog otpada);  
 
-**Izvorni trošak prodane imovine**: povijesna vrijednost koja se prodaje u okviru operacije s Tipom transakcije 'Poravnanje' ili 'Parcijalno poravnanje' izračunava se na temelju podataka unesenih u polja poravnanje, Parcijalnao poravnanje, (ili Uništenje), Kapitalna dobit i Kapitalni gubitak. Polje Knjigovodstvena vrijednost bit će, paralelno, ispravljeno negativno za iznos koji je određen na temelju izvorne vrijednosti prodane imovine umanjene za akumulirani amortizacijski fond.  
+**Otuđeni izvorni trošak**: povijesna vrijednost koja se prodaje u okviru operacije s vrstom operacije 'Otuđenje' ili 'Djelomično (parcijalno) otuđenje' izračunava se na temelju podataka unesenih u polja otuđenje, djelomično otuđenje, (ili uništenje), Kapitalna dobit i Kapitalni gubitak. Polje 'Knjigovodstvena vrijednost' bit će, paralelno, ispravljeno negativno za iznos koji je određen na temelju izvorne vrijednosti prodane imovine umanjene za linearni amortizacijski fond.  
 
 **PDV**: nije aktivno u Italiji;
 
@@ -731,17 +731,17 @@ Amortizacija 30.000 - 15.000 = 15.000 x 3%; Amortizacija će se izračunavati do
 
 **Vrijednost u eurima**: protuvrijednost u eurima ako je vrijednost izražena u drugoj valuti ili ako je valuta društva različita od eura;
 
-**Podkonto**: podračun dobavljača (kupovina) ili kupca (prodaja) na razini retka koji se odnosi na pojedini sastavni dio (mogu biti kupljeni ili prodani različitim subjektima);  
+**Podkonto**: konto dobavljača (kupovina) ili kupca (prodaja) na razini retka koji se odnosi na pojedini sastavni dio (mogu biti kupljeni ili prodani različitim subjektima);  
 
-**Datum dok./Br. dok./PDV broj**: reference na račun za kupovinu ili prodaju koji odgovara retku transakcije;  
+**Datum dok./Br. dok./PDV broj**: reference na račun za nabavu ili prodaju koji odgovara retku zapisa;  
 
 **Napomene**: slobodne napomene po retku;  
 
-**Progr. prodaje**: u slučaju parcijalne alienacije prikazuje redni broj odabrane stavke za prodaju odgovarajućeg sastavnog dijela;  
+**Napredak prodaje**: u slučaju djelomičnog otuđenja prikazuje redni broj odabrane stavke za prodaju odgovarajućeg sastavnog dijela;  
 
 **Ispisano**: aktivira se ako je konačno ispisana knjiga imovine za dotičnu stavku.  
 
-#### EKONOMSKI POSLOVI:
+#### EKONOMSKE OPERACIJE:
 
 (uglavnom se ne koristi), služi za povezivanje s karticom imovine troška koji se ne kapitalizira (jer nije dugoročni).  
 
@@ -753,13 +753,13 @@ Polja su slična onima u kartici Imovinske transakcije.
 
 Obično se ne koristi unutar računovodstvenog zapisa, jer se amortizacija lakše upravlja putem odgovarajuće automatske procedure unutar knjiženja usklađenja, ili, za pojedinu imovinu, unutar kartice imovine (u odgovarajućoj tablici koja replicira polja prisutna u komentiranoj kartici).  
 
-U slučaju da se želi, unutar zapisivanja početnog unosa, izvršiti amortizacija (što se odnosi na karticu imovine, računovodstveni dio bit će upravljan u kartici Zapis), potrebno je pozvati postojeći imovinski predmet za amortizaciju putem tipke **Odaberi postojeći imovinski predmet (sredstvo)** koji će prikazati odgovarajući redak u gornjoj tablici, osigurati da je Tip transakcije *Obično amortiziranje*, ako već nije predviđeno u postavkama predloška, unijeti u polje **Iznos**vrijednost godišnje amortizacije koju treba zabilježiti, zatim u kartici *Amortizacije* označiti godinu amortizacije (polje **Godina**) i ručno ispuniti obavezna polja u tablici:  
+U slučaju da se želi, unutar zapisivanja početnog unosa, izvršiti amortizacija (što se odnosi na karticu imovine, računovodstveni dio bit će upravljan u kartici Zapis), potrebno je pozvati postojeći imovinski predmet za amortizaciju putem tipke **Odaberi postojeće osnovno sredstvo** koji će prikazati odgovarajući redak u gornjoj tablici, osigurati da je vrsta operacije *Obično amortiziranje*, ako već nije predviđeno u postavkama predloška, unijeti u polje **Iznos** vrijednost godišnje amortizacije koju treba zabilježiti, zatim u kartici *Amortizacije* označiti godinu amortizacije (polje **Godina**) i ručno ispuniti obavezna polja u tablici:  
 
-**Progressivno**: omogućuje odabir putem kombiniranog okvira reda kartice imovine za amortizaciju (jedini redak ako nema dodatnih komponenti ili povećanja imovine);
+**Progresivan**: omogućuje odabir putem padajućeg izbornika reda kartice imovine za amortizaciju (jedini redak ako nema dodatnih komponenti ili povećanja imovine);
 
 **Godina**: Potvrditi godinu amortizacije;
 
-**Tip amortizacije**: Obično, unaprijed, ili deklarirano;  
+**Vrsta amortizacije**: Obično, predviđeno, usporeno ili ostatak  
 
 **Konto / podkonto / opis kvote amortizacije**: obično se automatski poziva prema kategoriji imovine reda učitanog u gornjoj tablici;  
 
@@ -767,97 +767,104 @@ U slučaju da se želi, unutar zapisivanja početnog unosa, izvršiti amortizaci
 
 **Osnovica**: vrijednost imovine (povijesna) na temelju koje se izračunava amortizacija primjenom **Postotka** (ili stope amortizacije);
 
-**Dani posjedovanja**: na temelju kojih se izračunava amortizacija ako su u postavkama odgovarajuće kategorije imovine odabrani dani (s odgovarajućom tipkom);  
+**Dani posjeda**: na temelju kojih se izračunava amortizacija ako su u postavkama odgovarajuće kategorije imovine odabrani dani (s odgovarajućom tipkom);  
 
 **Trošak**: rezultat izračuna osnovica * postotak * dani posjedovanja / 365 (može se ručno podesiti).  
 
-**Knjiženo**: flag "Knjiženo", dodjeljuje knjiženju status Knjiženo i sprečava njezino brisanjw; bez ove tipke kasnija amortizacija neće moći biti obrađena.
+**Knjiženo**: opcija "Knjiženo", dodjeljuje knjiženju status Knjiženo i sprečava njezino brisanje; bez ove tipke kasnija amortizacija neće moći biti obrađena.
 
-**Porezno**: flag označava amortizaciju za porezne svrhe i povećava porezni fond u odgovarajućem polju, odvojenom računovodstvenog.
+**Fiskalni**: opcija označava amortizaciju za porezne svrhe i povećava porezni fond u odgovarajućem polju, odvojenom računovodstvenog.
 
-**Amortizacija odbitna / Amortizacija neodbitna**: polja se automatski popunjavaju s odbitnim i neodbitnim iznosima amortizacije, ako je u **[kategoriji imovine](/docs/configurations/tables/finance/fixed-asset-category)** postavljeno polje Tip odbitnosti, i zauzvrat povezano s tablicom **[Vrste odbitnosti](/docs/configurations/tables/finance/deductibility-types)**  gdje se definira postotak odbitnosti. Inače se mogu ručno popuniti.
+**Amortizacija odbitna / Amortizacija neodbitna**: polja se automatski popunjavaju s odbitnim i neodbitnim iznosima amortizacije, ako je u **[kategoriji imovine](/docs/configurations/tables/finance/fixed-asset-category)** postavljeno polje 'vrsta odbitka', i zauzvrat povezano s tablicom **[Vrste odbitaka](/docs/configurations/tables/finance/deductibility-types** gdje se definira postotak odbitka. Inače se mogu ručno popuniti.
 
-U kartici Imovinske transakcije tip transakcije Obično amortiziranje već će ažurirati redak knjige imovine koji povećava fond amortizacije i smanjuje neto računovodstvenu vrijednost imovine za isti iznos.  
+U kartici Imovinske operacije vrsta operacije 'Obično' amortiziranje već će ažurirati redak knjige imovine koji povećava fond amortizacije i smanjuje neto računovodstvenu vrijednost imovine za isti iznos.  
 
-#### UPRAVLJANJE PODACIMA OBNOVLJIVIH IMOVINSKIH PREDMETA:
+#### UPRAVLJANJE PODACIMA PREDMETA:
 
 Ova kartica omogućuje upravljanje podacima korisnim za tehničku (izvanračunovodstvenu ili poreznu) amortizaciju, koji se mogu obrađivati paralelno s računovodstvenom amortizacijom.  
 
-Prvo, unutar tablice **[Kategorije imovine](/docs/configurations/tables/finance/fixed-asset-category)** mora biti aktivirana odgovarajuća tipka za prijem podataka unutar kartice imovine.  
+Prvo, unutar tablice **[Kategorije imovine](/docs/configurations/tables/finance/fixed-asset-category)** mora biti aktivirana odgovarajuća opcija za prijem podataka unutar kartice imovine.  
 
-Zatim, unoseći računovodstveni zapis koji se odnosi, na primjer, na kupnju imovine, podaci će se automatski prikazati u ovoj kartici (koji se zatim mogu neovisno mijenjati od službenih računovodstvenih podataka) korisni za tehničke amortizacije.  
+Nakon unosa računovodstvenog knjiženja, primjerice nabave dugotrajne imovine, podaci potrebni za obračun tehničke odnosno porezne amortizacije automatski se prenose u ovu karticu. Ti se podaci po potrebi mogu naknadno mijenjati, neovisno o službenim podacima koji se koriste za računovodstveno evidentiranje imovine. 
 
-Polja u ovoj kartici zapravo repliciraju ona koja se nalaze u kartici "Imovinske transakcije". Kartica "Amortizacije", s druge strane, koristi se isključivo za računovodstvene / civilne upise, tako da se upravljanje tehničkim (izvanračunovodstvenim) amortizacijama može izvršiti samo ulaskom u karticu imovine (Administracija > Imovina > Imovina > dvostruki klik za ulazak).  
+Polja u ovoj kartici zapravo repliciraju ona koja se nalaze u kartici "Imovinske operacije". Kartica "Amortizacije", s druge strane, koristi se isključivo za računovodstvene upise, tako da se upravljanje tehničkim (izvanračunovodstvenim) amortizacijama može izvršiti samo ulaskom u karticu imovine (Administracija > Osnovna sredstva > Osnovna sredstva > dvostruki klik za ulazak).  
 
 #### CENTRI TROŠKOVA - PROJEKTI  
 
-Ova kartica (**vidljiva samo kada NISU aktivirane napredne funkcije za Kontroling**) upravljane flagom *Upravljanje kontrolingom * u tablici Društvo, rezervirana je za unos centra troška / profita (danas centar poduzeća) i projekta (danas Projekt) koji se povezuju s karticom imovine koja će biti kreirana s računovodstvenim zapisom koji se unosi.  
+Ova kartica (**vidljiva samo kada NISU aktivirane napredne funkcije za Kontroling**) upravljana opcijom *Upravljanje kontrolingom* u tablici poduzeća, rezervirana je za unos centra troška / profita i projekta  koji se povezuju s karticom imovine koja će biti kreirana s računovodstvenim zapisom koji se unosi.  
 
 Konkretnije, centar koji će biti povezan s karticom imovine uz zapis (a koji se može unijeti i ručno izravno u karticu, u kartici 'Detalji' iste) predstavlja iznimku, specifičnu za tu imovinu, u odnosu na podatke unesene u kategoriju imovine kojoj pripada kartica unesena u tablici Kategorije imovine.
 
 **Uneseni centar troška bit će vrednovan u trenutku izračuna (od strane automatskog postupka) amortizacije.**
 
 :::tip NAPOMENA:
-Ako su aktivirane napredne funkcije za kontroling, upravljanje centrom poduzeća i projektom na koji će se povezati kvote amortizacije bit će definirano u posebnoj kartici **Amortizacija za controling** unutar kartice imovine. 
+Ako su aktivirane napredne funkcije za kontroling, upravljanje centrom poduzeća i projektom na koji će se povezati kvote amortizacije bit će definirano u posebnoj kartici **Amortizacija za kontroling** unutar kartice imovine. 
 :::
 
-**Cdc**: kombinirani okvir potreban za odabir centra, povezan s tablicom **[Centri poduzeća;](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)**
+**Cdc**: padajući izbornik potreban za odabir centra, povezan s tablicom **[Centri poduzeća;](/docs/configurations/tables/controlling/analytical-accounting/corporate-centers)**
 
 **Opis**: Opis odabranog centra putem prethodnog polja;
 
 **Postotak**: postotak dodijeljen centru unesenom u redak koji se koristi (na primjer, ako je cijeli trošak dodijeljen tom centru, unosi se 100%, ako se trošak za amortizacijsku kvotu dijeli na dva centra, unose se dva retka, svaki s podjelom od 50%).  
 
-**Pregled rezerviran za unos projekta** ne ažurira se i ne povezuje s poljem 'Projekt' u zaglavlju zapisa i/ili kartici 'Projekti' (koji su posvećeni upravljanju običnim operativnim troškovima, a ne dugoročnim troškovima). Naime, taj grid je posvećen, kao i za centre poduzeća, za označavanje projekta koji će biti unesen u karticu imovine i na koji će se dodijeliti kvote amortizacije.
+**Pregled rezerviran za unos projekta** ne ažurira se i ne povezuje s poljem 'Projekt' u zaglavlju zapisa i/ili kartici 'Projekti' (koji su posvećeni upravljanju običnim operativnim troškovima, a ne dugoročnim troškovima). Naime, ta tablica je posvećena, kao i za centre poduzeća, za označavanje projekta koji će biti unesen u karticu imovine i na koji će se dodijeliti kvote amortizacije.
 
-**Projekti**: widget za unos projekta (dvostruki klik otvara pomoć za pretragu, ili početak pisanja u polje aktivira brzu pretragu); polje je povezano s tablicom Projekti.  
+**Projekti**: *widget* za unos projekta (dvostruki klik otvara pomoć za pretragu, ili početak pisanja u polje aktivira brzu pretragu); polje je povezano s tablicom Projekti.  
 
 **Postotak**: postotak dodijeljen projektu unesenom u redak koji se koristi (na primjer, ako je cijeli trošak dodijeljen tom projektu, unosi se 100%, ako se trošak za amortizacijsku kvotu dijeli na dva projekta, unose se dva retka, svaki s podjelom od 50%).  
 
 ## POSTUPAK ZA PRODAJU IMOVINE
 
-- Unesite odgovarajući računovodstveni uzrok pravilno konfiguriran s funkcijom Imovina i ispravnim tipom transakcije, na primjer, potpuna prodaja.  
-- Ispunite zaglavlje zapisa kao i obično s podacima o kupcu i fakturi, uključujući ukupni iznos.  
-- U kartici Imovina koristite naredbu **odaberi postojeći imovinski predmet** kako biste pozvali karticu prodane imovine.  
-- U gornjoj tablici unesite u polje **Iznos** osnovicu od vrijednosti prodaje dogovorenu s kupcem (unesite nulu ako je imovina darovana ili uništena).  
-- U donjoj tablici vrijednost akumuliranog fonda amortizacije automatski će biti stornirana i, razlika, automatski će ispuniti polje za plusvalenciju ili minusvalenciju.
-- Ako je predložak pravilno konfiguriran (preporučuje se standardni uzrok), računovodstvena sekcija bit će ispravno popunjena podacima o PDV-u i računovodstvenim podacima, uključujući storniranje povijesnog troška, fonda amortizacije i evidentiranje plus/minusvalencije.
+- Unesite računovodstveni predložak odgovarajuće konfiguriran i ispravnu vrstu transakcije, primjerice 'potpuno otuđenje'.
+- Ispunite zaglavlje knjiženja na uobičajen način unosom kupca, podataka o računu i ukupnog iznosa.
+- Na kartici Osnovna sredstva upotrijebite naredbu 'Odaberi postojeće osnovno sredstvo' kako biste otvorili zapis sredstva koje se prodaje.
+- U gornjoj tablici u polje Iznos unesite osnovicu prodajne vrijednosti ugovorene s kupcem. Ako se imovina daruje ili uništava, unesite vrijednost 0.
+- U donjoj tablici sustav automatski stornira iznos akumulirane amortizacije, a na temelju razlike automatski izračunava i popunjava polje kapitalni dobitak ili gubitak.
+
+Ako je računovodstveni predložak ispravno konfiguriran (preporučuje se korištenje standardnog predloška), računovodstvena sekcija bit će automatski popunjena svim potrebnim PDV i računovodstvenim podacima, uključujući: otpis nabavne (povijesne) vrijednosti dugotrajne imovine, storniranje akumulirane amortizacije, evidentiranje kapitalnog dobitka ili gubitka.
 
 ## OSTALO
 
-U slučaju djelomične prodaje/rashodovanja (uvijek za „inkrementalnu” dugotrajnu imovinu ili u slučaju nepovezane djelomične prodaje za neinkrementalnu imovinu), korisnik mora dopuniti redak djelomične operacije iznosima storna fondova (dakle s negativnim predznakom) te unijeti pripadajući gubitak ili dobit od prodaje. Ti iznosi zatim moraju biti uneseni i unutar kartice „knjiženje” za glavnu knjigu. U ostalim slučajevima aplikacija će ispravno ažurirati karticu dugotrajne imovine, unijeti promjenu i u PDV sekciju knjiženja te iz nje ažurirati povezano knjiženje. Posebno u slučaju prodaje/rashodovanja, ako su konta za gubitak i dobit od prodaje definirana i u predlošku i u računovodstvenim parametrima, dodat će se i retci vezani uz prodajnu operaciju (jedan redak za storniranje ukupne vrijednosti imovine, jedan ili više redaka za storniranje fonda amortizacije te, kao razlika, dobit ili gubitak od prodaje). 
+U slučaju djelomičnog otuđenja (uvijek za inkrementalnu dugotrajnu imovinu, odnosno za djelomično otuđenje koje nije povezano s postojećom imovinskom transakcijom kod neinkrementalne dugotrajne imovine), korisnik mora dopuniti redak djelomične transakcije iznosima storniranja akumulirane amortizacije (s negativnim predznakom) te unijeti odgovarajući kapitalni dobitak ili gubitak. Iste je iznose potrebno unijeti i na kartici Knjiženje radi evidentiranja u glavnoj knjizi.
 
-Dodatne operacije dostupne u kartici dugotrajne imovine: prilikom unosa nove dugotrajne imovine moguće ju je podijeliti na N različitih kartica. Naime, moguće je da se nabava odnosi na više identičnih sredstava, primjerice 5 jednakih računala: korisnik, umjesto da ručno unosi 5 sredstava, može unijeti jedno sredstvo za ukupni iznos i zatim ga automatski podijeliti na 5 jednakih dijelova pomoću odgovarajućeg gumba. (Dodatna mogućnost bila bi kreirati jedno sredstvo koje se sastoji od 5 sredstava: to s jedne strane pojednostavljuje evidenciju dugotrajne imovine, ali s druge strane otežava upravljanje prodajom/rashodovanjem imovine jer se takve operacije tada moraju ručno voditi kao djelomična otuđenja.)
+U svim ostalim slučajevima aplikacija će automatski ažurirati karticu dugotrajne imovine, evidentirati transakciju u PDV sekciji knjiženja te na temelju tih podataka ažurirati računovodstveno knjiženje. Kod otuđenja, ako su podkonta za kapitalni dobitak i kapitalni gubitak definirana i u računovodstvenom predlošku i u parametrima računovodstva, sustav će automatski dodati i retke potrebne za evidentiranje prodaje, uključujući: storniranje ukupne nabavne vrijednosti dugotrajne imovine, jedan ili više redaka za storniranje akumulirane amortizacije, evidentiranje kapitalnog dobitka ili gubitka, ovisno o razlici.
 
-Moguće je obrisati redak dugotrajne imovine unesen u gornju mrežu: u tom slučaju prikazat će se poruka potvrde za brisanje i matičnih podataka sredstva, pri čemu je zadana opcija „Ne” (poruka se prikazuje i prilikom zatvaranja knjiženja bez spremanja). Preporučuje se obratiti posebnu pozornost na ovu poruku kako bi se izbjeglo ostavljanje „praznih” kartica dugotrajne imovine u bazi podataka.
+**Dodatne funkcionalnosti kartice dugotrajne imovine**:
+
+Prilikom unosa nove dugotrajne imovine moguće ju je automatski podijeliti na više zasebnih zapisa.
+To je korisno kada se jednom nabavom stječe više istovjetnih sredstava, primjerice pet jednakih računala. Umjesto ručnog unosa pet zasebnih zapisa, korisnik može unijeti jednu dugotrajnu imovinu za ukupnu vrijednost, a zatim je pomoću odgovarajuće naredbe automatski podijeliti na pet jednakih zapisa.
+Druga je mogućnost evidentirati cijelu nabavu kao jednu dugotrajnu imovinu koja predstavlja skup od pet sredstava. Iako takav pristup pojednostavljuje vođenje registra dugotrajne imovine, kasnije može otežati upravljanje prodajom pojedinih sredstava, jer će se svaka pojedinačna prodaja morati evidentirati kao djelomično otuđenje.
+Moguće je i obrisati redak dugotrajne imovine unesen u gornjoj mreži. U tom slučaju sustav će zatražiti potvrdu želi li korisnik obrisati i matične podatke dugotrajne imovine, pri čemu je zadana opcija Ne. Ista se poruka prikazuje i prilikom zatvaranja knjiženja bez spremanja.
+Preporučuje se posebna pažnja pri odgovoru na ovu poruku kako u bazi podataka ne bi ostali prazni zapisi dugotrajne imovine.
 
 #### Specifične tipke
-> **Odaberi postojeći imovinski predmet (sredstvo)**: omogućuje odabir već postojećeg osnovnog sredstva i unos nove transakcije u okviru njega.    
-> **Izbriši imovinski predmet (sredstvo)**: omogućuje brisanje odabranog osnovnog sredstva.  
-> **Izbriši odabrane podatke iz tablice vrste amortizacije**: omogućuje brisanje odabranog retka unutar tablice (donje) koja se nalazi u kartici Amortizacije.  
+> **Odaberi postojeće osnovno sredstvo**: omogućuje odabir već postojećeg osnovnog sredstva i unos novog zapisa u okviru njega.    
+> **Izbriši osnovno sredstvo**: omogućuje brisanje odabranog osnovnog sredstva.  
+> **Izbriši odabrane podatke iz ekranske tablice tipa amortizacije**: omogućuje brisanje odabranog retka unutar tablice (donje) koja se nalazi u kartici Amortizacije.  
 
 ## **8. Parametri**
 
 Kartica **Parametri** uvijek je prisutna u računovodstvenoj evidenciji i sadrži niz informacija i parametara koji su korisni, ali nisu nužni za unos zapisnika.  
 
-**Status zapisivanja**: *definitivno* ili *privremeno* za računovodstveni zapis u upotrebi: zapis s statusom ‘definitivno’ i dalje će biti moguće mijenjati (osim u uzroku i referentnoj valuti) sve dok ne bude definitivno ispisana obavezna fiskalna knjiga ili dok ne bude korištena u automatskom zatvaranju računa. Korištenje statusa ‘privremeno’ (koji uklanja i onemogućava porezni protokol te numerira zapis negativno počevši od -1000) može se koristiti za evidentiranje računa za plaćanje unaprijed ili drugih vrsta periodičnih transakcija s budućim manifestacijama (poput odgođenih naknada). Ulazak u zapis i ponovno postavljanje statusa definitivan automatski će ponovno dodijeliti broj zapisa i važeći porezni protokol za postavljeni datum zapisivanja (uzimajući u obzir njegovu progresivnost). Podsjećamo da postoji postupak za upravljanje privremenim zapisima koji omogućava masovno prebacivanje skupine odabranih privremenih zapisa u status definitivan.
+**Status zapisa**: *definitivno* ili *privremeno* za računovodstveni zapis u upotrebi: zapis s statusom ‘definitivno’ i dalje će biti moguće mijenjati (osim u predlošku i referentnoj valuti) sve dok ne bude definitivno ispisana obavezna fiskalna knjiga ili dok ne bude korištena u automatskom zatvaranju računa. Korištenje statusa ‘privremeno’ (koji uklanja i onemogućava porezne zapise te numerira zapis negativno počevši od -1000) može se koristiti za evidentiranje računa za plaćanje unaprijed ili drugih vrsta periodičnih transakcija s budućim manifestacijama (poput odgođenih naknada). Ulazak u zapis i ponovno postavljanje statusa definitivan automatski će ponovno dodijeliti broj zapisa i važeći porezni protokol za postavljeni datum zapisivanja (uzimajući u obzir njegovu progresivnost). Podsjećamo da postoji postupak za upravljanje privremenim zapisima koji omogućava masovno prebacivanje skupine odabranih privremenih zapisa u status definitivan.
 
-Sljedeći flagovi proizlaze iz računovodstvenog uzroka:  
+Sljedeće opcije proizlaze iz računovodstvenog predloška:  
 
-**Grupiraj zapisivanje PDV-a** (preporuča se ostaviti uvijek aktivnim) grupira ili ne u dnevniku redove IVA koji se odnose na isti kontni podračun;  
+**Grupiraj knjiga PDV-a** (preporučuje se ostaviti uvijek aktivnim) grupira/ne grupira u dnevniku redove PDV-a koji se odnose na isti konto;  
 
-**Automatsko izračunavanje centara troškova, prihoda i projekata**:  može biti od interesa za neke vrste ručnih zapisa, kod kojih je korisnik obično vezan za ručno upravljanje karticama centara troškova/projekata (cdp/cdc): ostavljanjem flag-a uključenim, aplikacija će uvijek resetirati te kartice svaki put kada se izmijeni izvorni podatak u knjizi dnevnika, što može dovesti do gubitka svih ručnih unosa koji su prethodno napravljeni. Ovaj automatizam, čak i ako flag nije uključen, i dalje će se primijeniti prilikom unosa zapisa: odnosi se na ulazak u izmjenu istog.
+**Automatsko preračunavanje centara troškova, prihoda i projekata**: može biti od interesa za neke vrste ručnih zapisa, kod kojih je korisnik obično vezan za ručno upravljanje karticama centara troškova/projekata (cdp/cdc): ostavljanjem opcije uključenom, aplikacija će uvijek resetirati te kartice svaki put kada se izmijeni izvorni podatak u knjizi dnevnika, što može dovesti do gubitka svih ručnih unosa koji su prethodno napravljeni. Ovaj automatizam, čak i ako opcija nije uključena, i dalje će se primijeniti prilikom unosa zapisa: odnosi se na ulazak u izmjenu istog.
 
 **Na crnoj listi**: (ZASTARJELO) omogućuje upravljanje posebnim slučajem nabava izvan EU (s poslovnim razlogom koji nije podliježe PDV-u) koji treba biti sažet u izjavi o transakcijama s zemljama s povlaštenim poreznim režimom, povezujući trenutni zapis s PDV-om iz carinskog dokumenta iz kojeg se preuzimaju podaci za prijavu.  
 
 **Datum / Broj povezane registracije**: Koristilo se za prijavu transakcija s dobavljačima koji su na crnoj listi, povezujući Dokument o dostavi robe s registracijom dobavljača na crnoj listi kako bi se preuzeli podaci za prijavu.
 
-**Datum / Broj povezane kreditne note**: zastarjeli podatak; u prodaji, kada se kreira kreditna nota, može se unijeti koja se faktura odnosi na dokument:    
+**Datum / Broj povezanog na odobrenje**: zastarjeli podatak; u prodaji, kada se kreira odobrenje, može se unijeti koja se faktura odnosi na dokument:    
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/parameters-tab/image02.png)
 
-Na slici: polje za unos reference računa unutar obavijesti o kreditiranju.
+Na slici: polje za unos reference računa unutar odobrenja.
 
-Kada se knjiži obavijest o kreditiranju, Fluentis pokušava identificirati registraciju povezanu s tim računom kako bi automatski ispunio ovu povezanost i na razini računovodstva (ako unosite obavijest o kreditiranju ručno, tada možete također ručno postaviti ova polja). Koristilo se za spesometar (prije 2017. godine), kada je postojao limit od 3000 eura, kako bi se ispravile obavijesti o kreditiranju iz računa i ne prijavljivale transakcije. Danas više nije u upotrebi.
+Kada se knjiži odobrenje, Fluentis pokušava identificirati knjižene povezanu s tim računom kako bi automatski ispunio ovu povezanost i na razini računovodstva (ako unosite odobrenje ručno, tada možete također ručno postaviti ova polja). Koristilo se za *spesometar* (prije 2017. godine), kada je postojao limit od 3000 eura, kako bi se ispravile obavijesti o kreditiranju iz računa i ne prijavljivale transakcije. Danas više nije u upotrebi.
 
 **AUDIT TRAIL**:
 
@@ -869,7 +876,7 @@ Sekcija posvećena sustavu za praćenje aktivnosti korisnika i provjeru izmjena 
 
 **Datum validacije / Ime**: prikazuje datum i ime korisnika koji je validirao trenutno knjiženje. Polje mora biti aktivirano promjenom stanja (koje se mora konfigurirati kada je potrebno), a koje će postaviti korisnika i datum validacije. Kada je polje ispunjeno promjenom stanja, registracija može biti označena kao nepodložna daljnjim izmjenama.
   
-**Partnerov račun**: (ZASTARJELO) polje za unos (putem widgeta za pretraživanje računa) podračuna koji je već kodificiran u bazi podataka; korisno za pohranu, na primjer, imena stranog dobavljača u dokumentu (dobavnici) za carinske postupke, koji se obično unosi s referencom na bazu podataka s generičkim podacima za subjekt "carina" (to je zbog izmjena u zakonodavstvu vezanim uz spesometar prema kojem od 2018. godine nije bilo dopušteno prosljeđivanje podataka carine koja često nema porezne reference i koristila se umjesto OIB-a generički unos XX-99999999, gdje XX označava međunarodni ISO kod države subjekta).  
+**Partnerov račun**: (ZASTARJELO) polje za unos (putem *widget*a za pretraživanje računa) konta koji je već šifriran u bazi podataka; korisno za pohranu, na primjer, imena stranog dobavljača u dokumentu (primki) za carinske postupke, koji se obično unosi s referencom na bazu podataka s generičkim podacima za subjekt "carina" (to je zbog izmjena u zakonodavstvu vezanim uz *spesometar* prema kojem od 2018. godine nije bilo dopušteno prosljeđivanje podataka carine koja često nema porezne reference i koristila se umjesto OIB-a generički unos XX-99999999, gdje XX označava međunarodni ISO kod države subjekta).  
 
 **Donja tablica** prikazuje eventualno automatsko knjiženje povezano s trenutnim: svaki put kad se prva knjiženje izmijeni, sustav će nastaviti usklađivati drugu prema logici automatskih uzoraka.  
 
@@ -885,7 +892,7 @@ Ova funkcionalnost, kada je postavljena, ne može se koristiti zajedno s uobiča
 
 **UPRAVLJANJE PREDLOŠKOM I REZULTAT U ZAPISU**:
 
-Predložak za otvaranje dospijeća plaćanja (na primjer za "Izdavanje fakture" ili "Faktura dobavljača"): aktivirati uobičajene oznake za otvaranje dospijeća plaćanja (i eventualno za zatvaranje i kompenzaciju), dodajući oznaku Kreiraj grupu.
+Predložak za otvaranje dospijeća plaćanja (na primjer za "Izdavanje fakture" ili "Faktura dobavljača"); aktivirati uobičajene opcije za otvaranje dospijeća plaćanja (i eventualno za zatvaranje i kompenzaciju), dodajući oznaku Kreiraj grupu.
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image01.png)
 
@@ -897,19 +904,19 @@ Za izvršavanje izmjena na grupi, kao što je spajanje drugih dospijeća plaćan
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image03.png)
 
-Ovdje će korisnik moći kreirati, za ova dospijeća plaćanja, jednu ili više novih grupa dospijeća plaćanja (koje će preuzeti broj i datum prema broju i datumu dokumenta dospijeća plaćanja koja ih stvara). Upravljanje ovim operacijama vrši se korištenjem kontekstualnog izbornika koji se pojavljuje desnim klikom miša na svako dospijeće plaćanja. 
+Ovdje će korisnik moći kreirati, za ova dospijeća plaćanja, jednu ili više novih grupa dospijeća plaćanja (koje će preuzeti broj i datum prema broju i datumu dokumenta dospijeća plaćanja koja ih stvara). Upravljanje ovim operacijama vrši se korištenjem izbornika koji se pojavljuje desnim klikom miša na svako dospijeće plaćanja. 
 
-mark: za selektiranje više dospijeća plaćanja/grupa
+Označi: za selektiranje više dospijeća plaćanja/grupa
 
-kreiraj novu grupu: za kreiranje novih grupa;  
+Kreiraj novu grupu: za kreiranje novih grupa;  
 
-razgrupiraj: za odvajanje dospijeća plaćanja iz grupe
+Razgrupiraj: za odvajanje dospijeća plaćanja iz grupe
 
-nadoknada:  za kreiranje nadoknada i za zatvaranje grupe,
+Nadoknada: za kreiranje nadoknada i za zatvaranje grupe,
 
-detalji: za prikazivanje detalja pojedinačnog dospijeća plaćanja;  
+Detalji: za prikazivanje detalja pojedinačnog dospijeća plaćanja;  
 
-podijeli dospijeće plaćanja: za podjelu dospijeća plaćanja unutar grupe.
+Podijeli dospijeće plaćanja: za podjelu dospijeća plaćanja unutar grupe.
 
 Vizualizacija grupa odvija se prema odabranom podkontu u gornjoj tablici.  
 
@@ -921,9 +928,9 @@ Pomoću *drag and drop* metode, dospijeća plaćanja se mogu premještati iz jed
 
 NAPOMENA:
 
-U slučaju automatskog knjiženja faktura iz modula nabave ili prodaje, u tablicama **Vrste faktura** (U **[nabavi](/docs/configurations/tables/purchase/purchase-invoices-type)** i **[prodaji](/docs/configurations/tables/sales/invoices-type)**) postoji sličan flag za automatsko knjiženje faktura.
+U slučaju automatskog knjiženja faktura iz modula nabave ili prodaje, u tablicama **Vrste faktura** (U **[nabavi](/docs/configurations/tables/purchase/purchase-invoices-type)** i **[prodaji](/docs/configurations/tables/sales/invoices-type)**) postoji slična opcija za automatsko knjiženje faktura.
 
-Predložak za zatvaranje dospijeća plaćanja: (na primjer, "Plačanje gotovinom") aktivirati flag ‘Grupiraj dospijeća plaćanja' koja prikazuje karticu **Plaćanja grupa**.
+Predložak za zatvaranje dospijeća plaćanja: (na primjer, "Plaćanje gotovinom") aktivirati opciju ‘Grupiraj dospijeća plaćanja' koja prikazuje karticu **Plaćanja grupa**.
 
 Obavezno je odabrati odgovarajući tip plaćanja u padajućem izborniku. 
 
@@ -933,7 +940,7 @@ U ovom trenutku, operativni postupak za korisnika u zapisima uplata/isplata zna�
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image08.png)
 
-Aplikacija će generirati odgovarajuće međusobne uplate za svako od tih dospijeća plaćanja, te se koristi samo izvještaji i maske za prikazivanje/ upravljanje grupama kako bi se osigurao jasan pregled duga. Kada saldo grupe postane 0, grupa će automatski preći u status 'zatvoreno'.
+Aplikacija će generirati odgovarajuće međusobne uplate za svako od tih dospijeća plaćanja, te se koristi samo izvještaji i maske za prikazivanje/upravljanje grupama kako bi se osigurao jasan pregled duga. Kada saldo grupe postane 0, grupa će automatski preći u status 'zatvoreno'.
 
 ![](/img/it-it/finance-area/ledger-records/records/create-ledger-record/mat-val-grouping-tab/image09.png)
 
@@ -943,8 +950,8 @@ Aplikacija će generirati odgovarajuće međusobne uplate za svako od tih dospij
 
 Izravno u kartici **Plaćanja grupa** korisnik može izvršiti daljnje izmjene kao što su de-grupiranje ili stvaranje novih grupa.
 
-### VIDEO TUTORIALI
+### VIDEO TUTORIJALI
 
 :::important Pogledajte također
-[**VIDEO TUTORIALI O ZAPISIMA**](/docs/video/finance/intro)
+[**VIDEO TUTORIJALI O ZAPISIMA**](/docs/video/finance/intro)
 :::
