@@ -17,7 +17,7 @@ Na kraju izrade tražene stavke su vidljive u odgovarajućem obrascu, dok se opo
 | --- | --- |
 | Spremi | Tipka za spremanje generiranja opomena. |
 | Izrada opomena | Tipka za generiranje/izradu opomena koje zadovoljavaju postavljene kriterije odabira. |
-| Traži kupce koje treba isključiti | Tipka za traženje kupaca koji trebaju biti isključeni iz automatskog generiranja/izrade opopmene. |
+| Traži kupce koje treba isključiti | Tipka za traženje kupaca koji trebaju biti isključeni iz automatskog generiranja/izrade opomene. |
 | Izbriši kupca | Tipka za brisanje kupaca s popisa kupaca izuzetih iz opomene. |
 | Traži dospijeća plaćanja koja treba zanemariti | Tipka za traženje plaćanja koja se isključuju iz izrade opomena. |
 | Izbriši dospijeća plaćanja | Tipka za brisanje prethodno odabranih dospijeća plaćanja. |

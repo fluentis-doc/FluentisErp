@@ -1,19 +1,14 @@
 ---
-title: Povrat
+title: Poništavanje
 sidebar_position: 4
 ---
 
-Kartica Povrat omogućuje da otkazivanje stvaranje opomena. U ovom konkretnom slučaju isti se rezultat dobiva ulaskom u pretraživanje traženih dospijeća i brisanjem izravno odavde.
+Kartica **Poništavanje** omogućava poništavanje prethodno kreiranih opomena.
 
+Isti rezultat moguće je postići i iz obrasca za **Pretragu dospijeća sa opomenama**, jednostavnim brisanjem opomena direktno iz tog obrasca.
 
-| Funckija | Značenje |
+| Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za traženje stvaranja opomena. |
-| Povrati sve | Tipka za brisanje svih opomena za odabrano stavku. |
-| Povrat| Tipka za brisanje samo nekih opomena iz odabrane stavke. |
-
-
-
-
-
-
+| Traži | Pretražuje prethodno kreirane opomene. |
+| Poništi sve | Briše sve opomene povezane sa izabranom stavkom. |
+| Poništi | Briše samo izabrane opomene povezane sa odabranom stavkom. |

@@ -3,114 +3,117 @@ title: Upravljanje likvidnošću
 sidebar_position: 6
 ---
 
-Korisnost ove procedure je u pružanju jednostavnog i brzog pregleda bankovne situacije kako bi se provjerila raspoloživost za svaki bankovni račun i eventualno premjestila/odgodila obveza ili promijenila banka.  
+Svrha ove procedure je da omogući jednostavan i brz pregled stanja likvidnosti po bankovnim računima, kako bi se proverila raspoloživa sredstva za svaki račun i, po potrebi, odložilo plaćanje obaveza ili promenila banka preko koje će se izvršiti plaćanje.
 
+### Način rada
 
-### Načini rada: 
+Postoje dva moguća načina rada:
 
-Postoje dvije moguće metode: sa ili bez povezivanja s novčanim tokom.
+- sa povezivanjem na **Novčani tok**,
+- bez povezivanja na **Novčani tok**.
 
-Putem novčanog tijeka također je moguće uzeti u obzir podatke preuzete iz bilance, kako bi se produžilo razdoblje analize izvan onog u računovodstvenim zapisima glavnih knjiga.
+Kada se koristi **Novčani tok**, moguće je uzeti u obzir i podatke preuzete iz bilansa, čime se period analize može proširiti izvan podataka koji postoje u računovodstvenim knjiženjima.
 
-Ako se ne koristi novčani tijek, očitavat će se samo računovodstvena stanja i poslovne knjige.
+Ako se **Novčani tok** ne koristi, prikazivaće se isključivo računovodstvena stanja i podaci iz glavne knjige.
 
 :::danger PAŽNJA
-Ono što korisnik vidi prilikom otvaranja obrasca je zadnja spremljena situacija, onakvom kakvom se upravljalo prošli put. Promjene koje se naprave u vrijednostima ili podacima, ako se potvrde novim spremanjem, arhivirat će početnu situaciju i pohraniti nove podatke, koji će se ponovno predložiti ponovnim otvaranjem obrasca kasnije. Prethodna izvršena obrada pohranjuje se u bazi podataka, ali trenutno još nije moguće pregledati prethodne verzije.
+
+Prilikom otvaranja obrasca korisniku se prikazuje poslednje sačuvano stanje, odnosno podaci onakvi kakvi su bili prilikom poslednjeg rada u proceduri.
+Sve izmene koje korisnik izvrši i sačuva postaju nova referentna situacija, dok se prethodna verzija arhivira u bazi podataka. Trenutno nije moguće pregledati prethodno sačuvane verzije.
+
 :::
 
+### Specifična logika Novčanog toka
 
-### Specifična logika novčanog toka
-Ukoliko već postoji izračunati novčani tijek i po prvi puta se otvori obrazac Upravljanja likvidnošću, korisnik može odabrati novčani tijek iz kojeg će dobiti obrađene podatke.
+Ako već postoji obračunat **Novčani tok** i obrazac **Upravljanje likvidnošću** se otvara prvi put, korisnik može odabrati simulaciju Novčanog toka iz koje će biti preuzeti obrađeni podaci.
+Nakon izbora Novčanog toka, Fluentis će preuzeti salda finansijskih konta i prikazati ih u gornjem pregledu.
 
-Nakon odabira novčanog tijek, Fluentis će uzeti salda financijskih računa kako bi ih umetnuo u gornji pregled.
-
-
-**PAŽNJA: potrebno je otvoriti proširenje *Dostupne likvidnosti* kako bi se vidio popis bankovnih računa, s vrijednostima zapisa i upotrebama u portfelju.**
+**PAŽNJA:** potrebno je otvoriti proširivi odeljak **Raspoloživa likvidnost** kako bi bio prikazan spisak bankovnih računa sa njihovim saldima i iznosima rezervisanim u portfelju.
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-1.png)
 
-Sve ostale vrijednosti bit će preuzete s bočne ploče *Novčani tijek*, a pretražuje se pomoću tipke ***Pretraga novčanog toka***, odabirom linija i njihovim dodavanjem pomoću tipke ***Stvoriti iz novčanog toka***.
+Sve ostale vrednosti preuzimaju se iz bočnog panela **Novčani tok**, pretragom pomoću komande **Pretraga novčanog toka**, izborom željenih redova i njihovim dodavanjem pomoću komande **Kreiraj iz novčanog toka**.
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-2.png)
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-3.png)
 
-Korisnik može stvoriti novi novčani tijek pomoću tikpe ***Izračunajte novčani tok***, čime se stvara nova simulacija sa spremljenim zadanim parametrima (slično onome što se događa kada se kreiraju podaci za izvoz u drugi softver za riznicu kao što je DocFinance i obrada je ista kao i za *automatsko kreiranje novčanog tijeka*). 
+Korisnik može kreirati novu simulaciju Novčanog toka pomoću komande **Izračunaj novčani tok**. Na taj način nastaje nova simulacija koristeći prethodno sačuvane podrazumevane parametre, na isti način kao kod izvoza podataka u eksterni sistem za upravljanje trezorom, kao što je *DocFinance*, odnosno kao kod procedure za automatsko kreiranje Novčanog toka.
+Po završetku obračuna Fluentis će ponuditi mogućnost ažuriranja podataka u proceduri **Upravljanje likvidnošću**.
+Alternativno, korisnik može prvo kreirati novu simulaciju u proceduri **Novčani tok**, a zatim ponovo otvoriti **Upravljanje likvidnošću**. U tom slučaju Fluentis će prilikom otvaranja procedure prikazati pitanje da li želi da ažurira podatke koristeći novu simulaciju Novčanog toka.
+U oba slučaja, ukoliko korisnik odbije ažuriranje, postojeći podaci ostaju nepromenjeni.
+Ako se potvrdi ažuriranje, Fluentis će uporediti prethodno učitane podatke sa novim rezultatima:
+- ažuriraće podatke o raspoloživoj likvidnosti,
+- proveriće da li pojedini redovi i dalje postoje u novoj simulaciji,
+- ukloniće redove koji više ne postoje,
+- ažuriraće iznose ili datume dospeća ukoliko su promenjeni.
 
-U ovom slučaju, nakon završetka obrade, Fluentis će pitati ako je potrebno ažurirati podatke ili ne u *Upravljanje likvidnošću*. 
+Ručno uneseni podaci koje je korisnik prethodno definisao (na primer **Iznos za plaćanje** ili **Očekivani datum**) neće biti prepisani tokom ažuriranja, kako bi se sačuvale korisničke izmene.
+Nakon završetka ažuriranja korisnik može pregledati nove planirane tokove u panelu **Novčani tok** i dodati ih u trenutno upravljanje likvidnošću.
 
-Alternativno, korisnik također može stvoriti novu simulaciju iz novčanog tijeka i zatim ponovno otvoriti proceduru za upravljanje likvidnošću: u ovom slučaju, kada se otvori *Upravljanje likvidnošću*, pojavit će se poruka s pitanjem treba li ažurirati podatke s onima iz novog novčani tijeka ili ne.
+### Specifična logika kada se ne koristi Novčani tok
 
-U oba slučaja, ako se podaci ne ažuriraju, ništa se neće dogoditi, ako se ažuriraju, Fluentis će provjeriti promjene u prethodnim redcima, kako bi ažurirao vrijednosti. Podaci o likvidnosti ažurirat će se s novima, a što se tiče podudaranja i drugih tokova, Fluentis provjerava postoji li taj red još uvijek, kako bi izbrisao zapis ako podudaranje više ne postoji ili će ažurirati vrijednosti (ako se promijenio ostatak ili datum isteka).
+U ovom slučaju prilikom otvaranja obrasca ne izvršava se nikakva automatska radnja.
 
-One postavke koje je korisnik prethodno napravio ručno (na primjer u polju 'iznos za koji treba platiti' ili na očekivani datum) ne prepisuju se novim podacima kako se ti podaci ne bi izgubili.
+Korisniku je dostupna komanda **Ažuriraj stavke**, koja omogućava usklađivanje stavki simulacije (donji pregled) sa trenutnim stanjem otvorenih stavki. Ako je otvorena stavka zatvorena, biće uklonjena iz upravljanja likvidnošću, a ukoliko je i dalje otvorena, ažuriraće se njen preostali iznos i/ili datum dospeća.
 
-Nakon što se to učini, korisnik će moći pročitati nove zapise predviđanja s ploče novčanog tijeka i dodati ih trenutnom upravljanju.
+### Opšta logika
 
-### Specifična logika kad nema novčanog tijeka 
-U ovom slučaju ništa se ne događa kada seotvori obrazac. 
-Korisnik ima pristup tipki ***Ažuriraj stavku*** koji omogućuje da se usklade zapisi simulacije (donji prikaz) s obzirom na trenutnu situaciju dospijeća. Ako je dospijeće zatvoreno, bit će eliminirano iz upravljanja, inače će se ažurirati s novim preostalim ili novim datumima.
+#### Gornji pregled
 
-### Opća logika
-#### Prikaz na vrhu
-Korisnik može dohvatiti željena stanja konta iz bočne ploče *Zapis* kako bi se uključila među dostupna sredstva. Ova ploča prikazuje *Prikaz računa*, s redovima pojedinosti različitih kretanja: : odabirom retka i pritiskom na tipku ***Kreiranje iz zapisa*** Fluentis će uzeti konto i umetnuti redak sa <u>stanjem do danas</u>, <u>**a ne s iznosom određenog odabranog kretanja**</u>.
-Također je moguće ručno unijeti evidenciju dostupnosti ili prebrisati valutu i/ili iznos u eurima.
+Korisnik može preuzeti željena stanja računa iz bočnog panela **Knjiženja** i uključiti ih u raspoloživa sredstva. Ovaj panel prikazuje **Pregled konta**, odnosno pojedinačna računovodstvena knjiženja.
 
-:::note OSTALA MREŽNA POLJA
+Izborom reda i korišćenjem komande **Kreiraj iz knjiženja**, Fluentis će preuzeti konto i kreirati red sa **stanjem računa na današnji dan**, **a ne sa iznosom izabranog knjiženja**.
 
-**Globalna kreditna linija**: : to je glavna postavka iz šifarnika banke
+Takođe je moguće ručno uneti novi zapis raspoložive likvidnosti ili izmeniti valutu i/ili iznos u evrima.
 
-**Kreditna linija predujma**: ovo je postavka predujma iz šifarnika banke
+:::note OSTALA POLJA U TABELI
 
-**Linija kredita SBF**: ovo je SBF postavka iz šifarnika banke
+**Ukupna kreditna linija**: osnovna kreditna linija definisana u šifarniku banke.
+**Kreditna linija za avanse**: kreditna linija za avansno finansiranje definisana u šifarniku banke.
+**SBF kreditna linija**: SBF kreditna linija definisana u šifarniku banke.
+**Saldo avansa**: predstavlja stanje avansa po fakturama, odnosno ukupan iznos prikazan u proceduri **Avansi i naplate**, za stavke čiji je datum dospeća veći od današnjeg.
+**Saldo SBF**: predstavlja stanje predatih efekata, odnosno ukupan iznos efekata prikazanih u portfelju sa datumom dospeća nakon današnjeg datuma.
+**Preostalo za avanse**: raspoloživi iznos za avansno finansiranje, odnosno razlika između kreditne linije i trenutno iskorišćenog iznosa avansa.
+**Preostalo za SBF**: raspoloživi iznos SBF kreditne linije, odnosno razlika između ukupne kreditne linije i iskorišćenog iznosa.
+**Raspoloživa likvidnost**: zbir knjigovodstvenog stanja i vrednosti predatih efekata.
+**Kumulativna likvidnost**: kumulativni zbir raspoložive likvidnosti. Vrednost poslednjeg reda prikazuje se i u zaglavlju proširivog odeljka.
 
-**Saldo predujmova**: predstavlja 'Stanje predujmova na fakturi', to je ukupni iznos predstavljen u obrascu za *predujmove i naplate* (s datumom dospijeća većim od 'danas')
-
-**Saldo SBF**: predstavlja 'Stanje predočenih računa', ukupan broj računa prikazanih u portfelju (s datumom isteka duljim od 'danas')
-
-**Ostatak za predujmove**: predstavlja 'Preostali iznos za predujmove', razliku dviju prethodnih vrijednosti koje se odnose na predujmove na fakturi
-
-**Ostatak za SBF**: predstavlja, razliku između dvije prethodne vrijednosti koje se odnose na učinke. 
-
-**Dostupna likvidnost**: zbroj iznosa knjigovodstvenog stanja + predočeni računi 
-
-**Progresivna likvidnost**: to je progresivna linija prethodne vrijednosti. Vrijednost posljednjeg retka je ono što se vidi u zaglavlju proširenja.
 :::
 
-#### Donji prikaz
-U donji prikaz mogu se ručno umetnuti novi redovi, čak i bez povezivanja računa (na primjer za otkrivanje neračunovodstvenih troškova/prihoda kao što su plaće ili PDV koji treba platiti). 
+#### Donji pregled
 
-Polja koja se mogu uređivati su ona za *očekivani datum*, *redni broj*, *novčani iznos koji treba platiti*, flag *Isključeno* i *Sakriti*. 
+U donji pregled moguće je ručno unositi nove redove, čak i kada nisu povezani sa računovodstvenim knjiženjima (na primer za evidentiranje vanračunovodstvenih troškova ili prihoda, kao što su zarade ili PDV za uplatu).
+Polja koja je moguće menjati su:
+- **Očekivani datum**
+- **Redni broj**
+- **Iznos za plaćanje**
+- oznaka **Isključeno**
+- oznaka **Sakrij**
 
-Linije postaju crvene kada polje Progresivan postane negativno.  
+Redovi će biti prikazani crvenom bojom kada vrednost u koloni **Kumulativno** postane negativna.
 
 ![](/img/it-it/finance-area/maturity-values/cash-management-4.png)
 
-**Predviđeni datum** je *očekivani datum* prisutan u dospijeću (ili je postavljen na jednak današnji dan ako je niži). Izmjena vrijednosti u ovom prikazu ovog obrasca ažurira očekivani datum unutar povezanog dospijeća (prilikom spremanja).
+**Predviđeni datum** predstavlja **očekivani datum** definisan na otvorenoj stavci (ili današnji datum ako je očekivani datum raniji). Promena ove vrednosti u obrascu automatski će ažurirati očekivani datum na povezanoj otvorenoj stavci prilikom snimanja.
+Ako red potiče iz **Novčanog toka**, koristiće se očekivani datum definisan u toj stavci Novčanog toka (ili današnji datum ako je raniji).
+**Datum dospeća** predstavlja stvarni datum dospeća otvorene stavke ili finansijskog toka.
+**Redni broj** određuje redosled izvršenja plaćanja. Može se promeniti ručnim unosom nove vrednosti ili korišćenjem komande **Promeni predviđeni datum**, koja pomera izabranu stavku iza svih postojećih stavki sa zadatim datumom i automatski prilagođava njihov redni broj.
+**Konto/Podkonto** može se uređivati samo kod ručno unetih redova, dok nije moguće menjati redove koji potiču iz otvorenih stavki ili Novčanog toka.
+**Napomena** se automatski popunjava nazivom kupca ili dobavljača, dok se kod ručno unetih redova unosi opis finansijskog toka. Iznosi se ne mogu menjati kod redova koji potiču iz otvorenih stavki ili Novčanog toka.
 
-Ako linija dolazi iz novčanog tijeka, uzet će se od očekivanog datuma u liniji novčanog tijeka (ili danas ako je ranije).
+Krajnje desno polje **Račun** predstavlja bankovni račun koji se koristi za plaćanje, a preuzima se iz otvorene stavke ili iz Novčanog toka.
 
-**Datum dospijeća** je službeni datum dospijeća (ili tijeka novca). 
+Opcija **Isključeno** isključuje red iz obračuna, ali ga ostavlja vidljivim u pregledu.
 
-**Redni broj** je onaj koji postavlja retke u nalogu za plaćanje. Može se promijeniti upisivanjem nove vrijednosti ručno ili neizravno pomoću tipke **Promjenite predviđeni datum**. Ova tipka premješta odabrano dospijeće nakon onih koje već postoje na postavljeni datum, mijenjajući njihov broj na višu vrijednost.
+Opcija **Sakrij** automatski postavlja oznaku za skriveni red. Takvi redovi se ne uključuju u obračun i mogu biti sakriveni aktiviranjem filtera **Isključi skrivene** u zaglavlju obrasca. Uklanjanjem ove oznake skriveni redovi će ponovo biti prikazani.
 
-**Konto/podkonto** se može uređivati u redovima koji su ručno uneseni, ne onima koji dolaze iz stavki/tokova.
+Krajnje desne kolone odnose se na **[Nivoe autorizacije](/docs/configurations/tables/finance/authorization-levels/)** i prikazuju sledeće informacije: **Datum autorizacije, Korisnik, Opis, Šifra, Opis nivoa autorizacije i Napomena autorizacije**.
 
-**Bilješka** se popunjava s nazivom tvrtke kupca/dobavljača, inače će se ručno upisivati opis vanračunskog tijeka. Iznosi se ne mogu mijenjati ako su vezani uz stavke koje stižu iz financijskih stavki/tokova.  
+### Ostale funkcionalnosti
 
-Krajnje desno polje ***računa*** je bankovni račun podrške (preuzeto iz dospijeća ili iz toka novca).
+- filter po **Bankovnom računu** (u zaglavlju obrasca), koji omogućava prikaz raspoložive likvidnosti samo za izabrani bankovni račun u gornjem pregledu;
+- komanda **Promeni banku**, koja omogućava masovnu promenu bankovnog računa za izabrane redove;
+- komanda **Autorizuj otvorenu stavku**, koja omogućava autorizaciju odabranih otvorenih stavki, pod uslovom da korisnik ima odgovarajuća prava u skladu sa dostignutim **[Nivoom autorizacije](/docs/configurations/tables/finance/authorization-levels/)**;
 
-Flag **Isključeno** isključuje redak iz izračuna, a ostavlja ga vidljivim.
-
-Flag **Sakriti** također automatski postavlja flag *sakrij *, služi za ne brojanje retka i za njegovo sakrivanje  (putem filter flag-a u zaglavlju **Isključi skrivene**, uklanjanjem tog flag-a retci ponovno postaju vidljivi)
-
-Krajnja desna polja povezana su s [**Razinom autorizacije**](/docs/configurations/tables/finance/authorization-levels/) (**datum autorizacije, ime, opis, šifra, opis i napomena o autorizaciji**).
-
-### Ostale mogućnosti:
-- filter prema **bankovnom računu** (u zaglavlju), pruža dostupnost pregleda te banke u gornjem prikazu;
-
-- tipka **Promijeni banku** za masovnu promjenu referentne banke odabranih redaka; 
-
-- tipka **Autorizirajte dospijeće** , za nastavak autorizacije (dostupno ako korisnik može dati autorizaciju odabranom redu, (prema njegovoj već dosegnutoj [**razini autorizacije**](/docs/configurations/tables/finance/authorization-levels/) già raggiunto));
-
-- tipka **Kreiraj plaćanje** omogućuje kreiranje liste modula *Plaćanja dobavljaču*, ako su odabrani redovi plativi.
+- komanda **Kreiraj plaćanje**, koja omogućava kreiranje naloga za plaćanje u modulu **Plaćanja dobavljačima**, ukoliko su izabrane stavke spremne za plaćanje.

@@ -1,78 +1,79 @@
 ---
-title: Napredno upravljanje dospijećima
+title: Napredno upravljanje otvorenim stavkama
 sidebar_position: 7
 ---
 
 :::note MENI
-**Administracija > Dospijeća plaćanja > Procedure > Napredno upravljanje dospijećima**
+**Administracija > Otvorene stavke > Procedure > Napredno upravljanje otvorenim stavkama**
 
-Nota:
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom funkcioniranju obrazaca, molimo se obratite sljedećoj poveznici: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Napomena:  
+Za sve funkcionalnosti koje nisu detaljno objašnjene u ovom dokumentu, a odnose se na standardni rad obrazaca, pogledajte: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).
 
 :::
 
 ---
-Ovaj postupak omogućuje kreiranje avansnih stavki koje se plaćaju ili preuzimaju kada se izda potvrda narudžbe (ili pri isporuci), a zatim se fakturiraju i obračunavaju. To su uglavnom izvanračunovodstvene stavke jer postoje prije izdavanja računa.
 
-Naredbe za upravljanje ovom funkcionalnošću nalaze se u ovom obrascu kao i u kartici ***Sažeci*** naloga. 
+Ova procedura omogućava kreiranje avansnih otvorenih stavki koje se naplaćuju ili plaćaju prilikom potvrde porudžbine (ili isporuke), a zatim se fakturišu i knjiže. U pitanju su uglavnom vanbilansne stavke, jer nastaju pre izdavanja fakture.
 
-:::note BILJEŠKA
-Primjeri na slikama odnose se na prodajnu oblast s jednim iznosom po narudžbi, ali upravljanje je isto za nabavu i konceptualno slično za iznose pri isporuci.
+Komande za upravljanje ovom funkcionalnošću dostupne su u ovom obrascu, kao i na kartici **Sažeci** porudžbine.
 
-Ne postoji standardna automatizacija za stvaranje avansnog unosa računa prilikom potvrđivanja narudžbe ili bilo kojeg događaja povezanog s njom ili s otpremnicama. 
+:::note NAPOMENA
+Primeri na slikama odnose se na prodaju sa jednim avansnim iznosom po porudžbini, ali je upravljanje identično i za nabavku, kao i konceptualno slično za avanse prilikom isporuke.
 
-Svaki rok narudžbe može se proslijediti računovodstvu tako da ima vidljivost da postoji stavka narudžbe koju treba preuzeti.
+Ne postoji standardna automatizacija za kreiranje avansnog računovodstvenog knjiženja prilikom potvrde porudžbine niti bilo kog događaja povezanog sa njom ili otpremnicama.
 
-Ovim se može upravljati putem prilagođenih radnih procesa koji se posebno konfiguriraju.
+Svaki rok plaćanja iz porudžbine može se proslediti računovodstvu kako bi postojala evidencija da postoji otvorena stavka po porudžbini koju treba naplatiti.
+
+Ovim procesom moguće je upravljati pomoću prilagođenih radnih tokova koji se posebno konfigurišu.
 
 :::
 
-### Stvaranje dospijeća narudžbe
+### Kreiranje otvorenih stavki po porudžbini
 
-U zaglavlju je potrebno postaviti dva retka s uvjetima plaćanja, jedan red će voditi akontaciju, a drugi red će imati postavku za preostali postotak.
+U zaglavlju je potrebno definisati dve stavke uslova plaćanja: jedna će predstavljati avans, dok će druga sadržati preostali procenat za naplatu.
 
-Ovo će unijeti prisutnost roka plaćanja unaprijed koji će se poslati u računovodstvo putem odgovarajuće tipke **Kreiranj dospijeća plaćanja unaprijed**
+Na taj način će biti definisan avansni rok plaćanja koji se u računovodstvo prenosi pomoću komande **Kreiranje avansnih otvorenih stavki**.
 
-Pritiskom na ovu tipku otvara se obrazac u kojem se traže dva dodatna podatka: opis koji će se prijaviti ovakvom vođenju dospijeća i vrsta dokumenta koja će se povezati s ne knjiženom stavkom koja će se kreirati.
+Klikom na ovu komandu otvara se obrazac u kojem je potrebno uneti još dva podatka: opis koji će biti evidentiran uz ovu otvorenu stavku i tip dokumenta koji će biti povezan sa vanračunovodstvenom stavkom koja se kreira.
 
-Rezultat će biti kreiranje vanbilančne stavke za iznos i istek naloga. Ova operacija bit će vidljiva u posebnom obrascu.
+Rezultat postupka je kreiranje vanbilansne otvorene stavke sa iznosom i datumom dospeća definisanim na porudžbini. Ova operacija biće vidljiva u odgovarajućem obrascu za pregled.
 
-### Upravljanje prethodnim dospijećima unutar forme
+### Upravljanje prethodno kreiranim otvorenim stavkama
 
-U ovoj formi u prvoj kartici prodajne strane moguće je kreirati avansne stavke i za druge narudžbe kupaca i neovisno o kreiranju unutar narudžbe kupca ili stavke za isporuke prisutne u drugoj kartici. 
+U ovom obrascu, na prvoj kartici **Prodaja**, moguće je kreirati avansne otvorene stavke i za druge porudžbine kupaca, nezavisno od njihovog kreiranja u samoj porudžbini ili iz stavki isporuke koje se nalaze na drugoj kartici.
 
-Na kartici ***Napredno upravljanje*** može se vratiti prethodni unos koji se upravo stvorio. 
+Na kartici **Napredno upravljanje** moguće je poništiti prethodno kreirani unos.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-form.png)
 
-U izvornom prodajnom dokumentu, ako korisnik unese izmjenu neke vrijednosti koja uzrokuje ponovni izračun rokova, pojavit će se poruka upozorenja s pitanjem treba li poništiti avansnu stavku (ako to nije unovčeno, inače to nije moguće).
+Ako korisnik u izvornom prodajnom dokumentu izmeni podatke koji zahtevaju ponovni obračun rokova plaćanja, prikazaće se upozorenje sa pitanjem da li želi da poništi avansnu otvorenu stavku (ukoliko ona još nije naplaćena; u suprotnom poništavanje nije moguće).
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-message.png)
 
+### Plaćanje avansnih otvorenih stavki
 
-### Plaćanje dospijeća unaprijed
-
-Kada se avansni unos podigne na narudžbi (ili pri isporuci) i prva se napomena računovodstvenog unosa spremi s naplatom avansnog unosa (zatvaranje unosa), pojavit će se poruka s upozorenjem da je potrebno fakturirati unaprijed.  
+Kada se avansna otvorena stavka kreira na porudžbini (ili isporuci), a zatim se evidentira računovodstveno knjiženje kojim se vrši njena naplata (zatvaranje stavke), sistem će prikazati upozorenje da je potrebno izvršiti avansno fakturisanje.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-message2.png)
 
-Potvrđujući kreiranje, otvorit će se obrazac za Upravljanje dospijećima narudžbi, gdje se može ponovno otići na karticu Napredno upravljanje kako bi se to fakturiralo. 
+Potvrdom kreiranja otvara se obrazac **Upravljanje otvorenim stavkama porudžbine**, u kojem je ponovo moguće pristupiti kartici **Napredno upravljanje** radi fakturisanja.
 
-Odabirom retka aktivira se tipka za izradu računa:
+Nakon izbora odgovarajućeg reda aktivira se dugme za kreiranje fakture.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-invoice-creation.png)
 
-Pritiskom na tipku pojavit će se novi obrazac zahtjeva za podatke o kontu:
+Klikom na dugme otvara se dodatni obrazac za unos podataka potrebnih za kreiranje fakture.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/advance-maturities/advance-maturities-invoice-creation-popup.png)
 
-Već predloženi podaci su današnji datum i opis koji će biti ispisan u retku stavke, dok će tip računa, stopu PDV-a i šifru obračuna prometa povremeno upravljati korisnik.
+Podrazumevano se predlažu tekući datum i opis koji će biti upisan u stavku fakture, dok tip fakture, PDV stopu i šifru prometa korisnik određuje prema potrebi.
 
-### Avansno fakturiranje i knjiženje
+### Avansno fakturisanje i knjiženje
 
-Nakon potvrde izrade otvara se račun: tip artikla se automatski postavlja kao tip 6, tj. predujam, tako da je isti dostupan za storniranje u računu za zatvaranje narudžbe. 
+Nakon potvrde kreiranja otvara se avansna faktura. Tip stavke automatski se postavlja na **tip 6 – Avans**, kako bi se ista stavka kasnije mogla automatski stornirati na završnoj fakturi kojom se zatvara porudžbina.
 
-:::tip **BILJEŠKA:**
+:::tip NAPOMENA
 
-Nakon što se faktura obračuna, posebnost je u tome što se time neće stvoriti nova stavka, već će to biti stavka izvanračunovodstvenog predujma koja će biti vraćena (čak i ako je već u statusu "Zatvoreno") i povezana s knjiženjima te fakture.
+Nakon knjiženja fakture neće biti kreirana nova otvorena stavka. Umesto toga, prethodno kreirana vanbilansna avansna otvorena stavka biće ponovo iskorišćena (čak i ako je već u statusu **Zatvorena**) i povezana sa računovodstvenim knjiženjima te fakture.
+
 :::

@@ -3,26 +3,41 @@ title: Izrada opomena
 sidebar_position: 1
 ---
 
-S ovom procedurom se također može postaviti određena razina podsjetnika koja će ići izvan nekog logičkog reda prioriteta. Također je moguće ručno odabrati dospijeća za traženje nakon što se filtriraju, čime se ima veća kontrola nad operacijom.
+Ova procedura omogućava i ručno određivanje nivoa opomene, nezavisno od uobičajenog redosleda prioriteta. Takođe je moguće ručno odabrati dospijeća nakon primene filtera, čime se korisniku omogućava veća kontrola nad postupkom.
 
+U donjem delu obrasca potrebno je uneti datum izrade opomena i odabrati **Vrstu opomene** (prethodno definisanu u tabeli **Vrste opomena**).
 
-U donjem dijelu obrasca dodijeli se datum izrade opomena i odabere vrsta opomene (prethodno kodiranu u tablici Vrste opomena). 
-Međutim, dodjela određene razine opomena nije obavezna kako bi se stvaranje prisililo izvan logičkog reda prioriteta. Zapravo, obično će stavke koje nikada nisu zatražene imati podsjetnik prioriteta 1, a one koje su već zatražene premjestit će se na novi podsjetnik prioriteta 2 i tako dalje za sljedeće. 
+Dodela određenog nivoa opomene nije obavezna, osim kada se želi prisilno kreirati opomena mimo standardnog redosleda prioriteta. Uobičajeno je da stavke koje do tada nisu bile predmet opomene dobiju opomenu **prioriteta 1**, dok se stavke koje su već opomenute automatski prebacuju na **prioritet 2**, zatim na **prioritet 3**, i tako dalje.
 
-Datum opomene utječe na kreiranje jer mora poštivati parametre prisutne u vrsti opomene i broju opomene kao što su dani kašnjenja i *dani* koji određuju istek svake prethodne opomene. Ako je datum opomene nevažeći s obzirom na parametre za odabranu seriju, naredba za stvaranje neće izvršiti podsjetnike.
+Datum opomene utiče na kreiranje opomena jer mora biti u skladu sa parametrima definisanim u vrsti opomene i nivou opomene, kao što su broj dana kašnjenja i broj dana koji određuje rok važenja prethodne opomene. Ukoliko datum opomene nije usklađen sa parametrima izabrane serije, postupak kreiranja neće izvršiti opomene.
 
-POLJA FILTRA:
+## POLJA FILTERA
 
-**Konto/podkonto:** odnosi se na odabir klijenta kao kupca/dobavljača
+**Konto/Podkonto**: odnosi se na izbor kupca ili dobavljača.
 
-**Predstavnik:** služi za filtriranje agenta koji je u šifrarniku kupaca
+**Predstavnik**: omogućava filtriranje prema agentu definisanom u matičnim podacima kupca.
 
-**Agent (dospijeća s opomenama):** filtrira dospijeća s agentom umetnutim u to dospijeće.
+**Agent (dospijeća sa opomenama)**: filtrira dospijeća prema agentu koji je povezan sa konkretnim dospijećem.
 
-POLJA VEZANA UZ SERIJE ZA PRETRAŽIVANJE: 
-Broj dokumenta/Status dospijeća plaćanja, Od/Do Datum dokumenta, Od/Do datum dospijeća, godina dospjele vrijednosti, broj... Vrsta dokumenta, Administrativna kategorija (u bazi podataka korisnika), Način plaćanja.  
+## POLJA ZA FILTRIRANJE DOSPIJEĆA
 
-POLJA VEZANA UZ PRETHODNO TRAŽENE REFERENCE NA DOSPIJEĆA
-Vrsta opomene, OD / DO datum opomene, Broj opomene, Referentni broj....
+- Broj dokumenta
+- Status dospijeća
+- Od/Do datum dokumenta
+- Od/Do datum dospeća
+- Godina dospijeća
+- Broj dospijeća
+- Vrsta dokumenta
+- Administrativna kategorija (ako je definisana u bazi korisnika)
+- Način plaćanja
 
-TIP DOSPJELE VRIJEDNOSTI: Flag za izdvajanje ne samo klasičnih aktivnih podudaranja kupaca, već i onih koja se odnose na primjerice dobavljače itd........
+## POLJA ZA FILTRIRANJE VEĆ KREIRANIH OPOMENA
+
+- Vrsta opomene
+- Od/Do datum opomene
+- Broj opomene
+- Referentni broj
+
+## TIP DOSPIJEĆA
+
+Ova opcija omogućava izdvajanje ne samo standardnih otvorenih potraživanja od kupaca, već i drugih vrsta otvorenih stavki, kao što su, na primer, stavke dobavljača.

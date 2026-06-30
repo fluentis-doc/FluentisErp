@@ -12,12 +12,12 @@ Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom funkcionir
 :::
 
 ---
-Ovaj postupak omogućuje kreiranje avansnih stavki koje se plaćaju ili preuzimaju kada se izda potvrda narudžbe (ili pri isporuci), a zatim se fakturiraju i obračunavaju. To su uglavnom izvanračunovodstvene stavke jer postoje prije izdavanja računa.
+Ovaj postupak omogućuje kreiranje avansnih otvorenih stavaka koje se plaćaju ili preuzimaju kada se izda potvrda narudžbe (ili pri isporuci), a zatim se fakturiraju i obračunavaju. To su uglavnom izvanračunovodstvene stavke jer postoje prije izdavanja računa.
 
 Naredbe za upravljanje ovom funkcionalnošću nalaze se u ovom obrascu kao i u kartici ***Sažeci*** naloga. 
 
 :::note BILJEŠKA
-Primjeri na slikama odnose se na prodajnu oblast s jednim iznosom po narudžbi, ali upravljanje je isto za nabavu i konceptualno slično za iznose pri isporuci.
+Primjeri na slikama odnose se na prodaju s jednim iznosom po narudžbi, ali upravljanje je isto za nabavu i konceptualno slično za iznose pri isporuci.
 
 Ne postoji standardna automatizacija za stvaranje avansnog unosa računa prilikom potvrđivanja narudžbe ili bilo kojeg događaja povezanog s njom ili s otpremnicama. 
 
@@ -31,7 +31,7 @@ Ovim se može upravljati putem prilagođenih radnih procesa koji se posebno konf
 
 U zaglavlju je potrebno postaviti dva retka s uvjetima plaćanja, jedan red će voditi akontaciju, a drugi red će imati postavku za preostali postotak.
 
-Ovo će unijeti prisutnost roka plaćanja unaprijed koji će se poslati u računovodstvo putem odgovarajuće tipke **Kreiranj dospijeća plaćanja unaprijed**
+Ovo će unijeti prisutnost roka plaćanja unaprijed koji će se poslati u računovodstvo putem odgovarajuće tipke **Kreiranje dospijeća plaćanja unaprijed**
 
 Pritiskom na ovu tipku otvara se obrazac u kojem se traže dva dodatna podatka: opis koji će se prijaviti ovakvom vođenju dospijeća i vrsta dokumenta koja će se povezati s ne knjiženom stavkom koja će se kreirati.
 

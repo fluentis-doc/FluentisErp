@@ -3,7 +3,7 @@ title: Povrati u prethodno stanje
 sidebar_position: 2
 ---
 
-Kao i obično, postoji konačna kartica 'Vrati' za pregled napravljenih snimaka ili čak za njihovo poništavanje pomoću odgovarajuće tipke.
+Kao i obično, postoji kartica 'Povrati u prethodno stanje' za pregled napravljenih zapisa ili čak za njihovo poništavanje pomoću odgovarajuće tipke.
 
 
 

@@ -15,7 +15,7 @@ POLJA FILTRA:
 
 **Konto/podkonto:** odnosi se na odabir klijenta kao kupca/dobavljača
 
-**Predstavnik:** služi za filtriranje agenta koji je u šifrarniku kupaca
+**Predstavnik:** služi za filtriranje agenta koji je u šifraniku kupaca
 
 **Agent (dospijeća s opomenama):** filtrira dospijeća s agentom umetnutim u to dospijeće.
 
@@ -25,4 +25,4 @@ Broj dokumenta/Status dospijeća plaćanja, Od/Do Datum dokumenta, Od/Do datum d
 POLJA VEZANA UZ PRETHODNO TRAŽENE REFERENCE NA DOSPIJEĆA
 Vrsta opomene, OD / DO datum opomene, Broj opomene, Referentni broj....
 
-TIP DOSPJELE VRIJEDNOSTI: Flag za izdvajanje ne samo klasičnih aktivnih podudaranja kupaca, već i onih koja se odnose na primjerice dobavljače itd........
+TIP DOSPJELE VRIJEDNOSTI: Opcija za izdvajanje ne samo klasičnih aktivnih podudaranja kupaca, već i onih koja se odnose na primjerice dobavljače itd.

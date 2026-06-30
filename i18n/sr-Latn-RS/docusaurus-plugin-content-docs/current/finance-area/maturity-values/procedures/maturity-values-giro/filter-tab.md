@@ -3,25 +3,21 @@ title: Kartica filtera
 sidebar_position: 1
 ---
 
-| Funckija | Značenje |
+| Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za traženje dospijeća koja se odnose na podkonto za prijenos na drugi podkonto.|
-| Knjiži | Tipka za knjiženje prijenosa između odabranih konta. |
+| Traži | Dugme za pretragu otvorenih stavki koje se odnose na podkonto sa kog će se izvršiti prenos na drugi podkonto. |
+| Knjiži | Dugme za knjiženje prenosa između odabranih konta. |
 
-### GENERALNA UPORABA
+### OPŠTA UPOTREBA
 
-Obrazac se sastoji od gornjeg dijela filtera unutar kojeg je obavezno naznačiti podkonto na kojem se traže stavke za prijenos, prikaz za odabir stavki i na dnu postavka predloška knjiženja. Tu su još datumi unosa/obračuna i podkonto na kojem se predmeti ponovno otvaraju. Konkretno, predložak knjiženja mora uključivati i oznaku otvaranja i zatvaranja dospijeća. Rezultat će biti otkrivanje zatvaranja stavki odabranih za ponovno otvaranje, uz zadržavanje istih izvornih referenci, ali na odredišnom podkontu.
+Obrazac se sastoji od gornjeg dela sa filterima, u kojem je obavezno navesti podkonto na kome se pretražuju otvorene stavke za prenos, pregleda za izbor stavki i donjeg dela sa podešavanjima obrasca knjiženja. Tu se takođe definišu datumi knjiženja i obračuna, kao i podkonto na kome će se stavke ponovo otvoriti. Konkretno, obrazac knjiženja mora imati aktivirane opcije za otvaranje i zatvaranje otvorenih stavki. Rezultat postupka biće zatvaranje odabranih otvorenih stavki i njihovo ponovno otvaranje na odredišnom podkontu, uz zadržavanje svih originalnih referenci.
 
+### UPOTREBA U KONTEKSTU SUSPENDOVANOG PDV-a
 
-### KORIŠTENJE U KONTEKSTU OBUSTAVE PDV-A  
-Ovaj se postupak također može koristiti u kontekstu obustave PDV-a (tzv. gotovinski PDV) koji, kao što je poznato, predviđa da, nakon godinu dana od fakturiranja, ako bi se naplata ili plaćanje izvršili kao plaćanje ili odbitak relevantnog PDV-a, potrebno je učiniti PDV oporezivim ili odbiti porez na kupnju.  
+Ovaj postupak može se koristiti i za upravljanje suspendovanim PDV-om (tzv. gotovinski PDV), kod kojeg se, po isteku jedne godine od izdavanja fakture, PDV mora obračunati odnosno priznati bez obzira na to da li je izvršena naplata ili plaćanje.
 
-Postavljanjem flaga (dolje) **Prikaži istek suspendiranog PDV-a koji nije zatvoren na datum** i odgovarajućom valorizacijom polja  **PDV-a datum je obustavljen**, samo otvorene stavke koje se odnose na operacije s obustavljenim PDV-om (identificirani kroz posebno konfigurirane predloške knjiženja) na datum postavljen u polju, bit će prikazane u glavnom prikazu.
+Aktiviranjem opcije **Prikaži dospeća suspendovanog PDV-a koja nisu zatvorena na datum** i popunjavanjem polja **Datum suspendovanog PDV-a**, u glavnom pregledu biće prikazane samo otvorene stavke koje se odnose na transakcije sa suspendovanim PDV-om (prepoznate preko posebno konfigurisanih obrazaca knjiženja) na zadati datum.
 
-U ovom trenutku, njihovim odabirom i postavljanjem željenog predloška knjiženja, pritiskom na **Knjiži**, kreira se zapis prijenosa s konta koji se koristi za suspendirani PDV na konta za dugovni ili potražni PDV, ostavljajući otvorena dospijeća.   
-Računovodstveno knjiženje naplate ili plaćanja automatski će otkriti prijenos i neće ponovno pokrenuti automatski unos za prijenos PDV-a.  
+Nakon toga, izborom željenih stavki i odgovarajućeg obrasca knjiženja, pritiskom na dugme **Knjiži** kreira se knjiženje prenosa sa konta suspendovanog PDV-a na konto izlaznog ili ulaznog PDV-a, pri čemu otvorene stavke ostaju otvorene.
 
-
-
-
-
+Računovodstveno knjiženje naplate ili plaćanja automatski će prepoznati da je prenos već izvršen i neće ponovo generisati automatsko knjiženje prenosa PDV-a.

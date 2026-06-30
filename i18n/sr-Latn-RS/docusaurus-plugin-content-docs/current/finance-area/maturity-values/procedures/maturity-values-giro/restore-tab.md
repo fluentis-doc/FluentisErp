@@ -1,19 +1,11 @@
 ---
-title: Povrati u prethodno stanje
+title: Vraćanje u prethodno stanje
 sidebar_position: 2
 ---
 
-Kao i obično, postoji konačna kartica 'Vrati' za pregled napravljenih snimaka ili čak za njihovo poništavanje pomoću odgovarajuće tipke.
-
-
+Kao i kod ostalih procedura, kartica **Vraćanje u prethodno stanje** omogućava pregled prethodno izvršenih prenosa konta, kao i njihovo poništavanje pomoću odgovarajuće komande.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za traženje prethodno kreiranih prijenosa konta. |
-| Povrat računa dospijeća plaćanja | Tipka za vraćanje kreiranih prijenosa. |
-
-
-
-
-
-
+| Traži | Pretražuje prethodno izvršene prenose konta. |
+| Vrati prenos otvorenih stavki | Poništava prethodno izvršene prenose otvorenih stavki. |

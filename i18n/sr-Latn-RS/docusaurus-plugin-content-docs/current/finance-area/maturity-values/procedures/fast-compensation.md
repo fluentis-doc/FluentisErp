@@ -3,43 +3,42 @@ title: Brza kompenzacija
 sidebar_position: 3
 ---
 
-:::note Put
-**Administracija > Dospijeća plaćanja > Procedure > Brza kompenzacija**
+:::note Putanja
+**Administracija > Otvorene stavke > Procedure > Brza kompenzacija**
 
-Napomena:
-Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom funkcioniranju obrazaca, molimo se obratite sljedećoj poveznici: [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
+Napomena:  
+Za sve funkcionalnosti koje nisu detaljno objašnjene u ovom dokumentu, a odnose se na standardni rad obrazaca, pogledajte: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).
 
 :::
 
 ---
 
-Ova forma omogućuje, na nešto pojednostavljeni način u odnosu na sličan *Obračun stavki*, upravljanje obračunom između otvorenih stavki (dugovanja/potraživanja) i upisanih na isti podkonto (npr. kupca ili dobavljača).
+Ovaj obrazac omogućava jednostavnije upravljanje kompenzacijom otvorenih stavki u odnosu na proceduru **Kompenzacija stavki**. Namenjen je kompenzaciji otvorenih potraživanja i obaveza evidentiranih na istom podkontu (na primer kupca ili dobavljača).
 
-Koristi kao alternativa običnim kompenzacijama (na primjer, u slučaju primljene fakture gdje je već došlo do naplate ili predujma).
+Koristi se kao alternativa standardnoj kompenzaciji, na primer kada je za primljenu fakturu već evidentirana uplata ili avans.
 
-**Aktivna dospijeća su predstavljena u gornjem prikazu, dok su pasivna dospijeća zastupljena u donjem prikazu**
-Tipka za pokretanje pretraživanja dospijeća smješteni su kao i obično na traci izbornika i moraju se pritisnuti oba kako bi se dobile obje vrste dospijeća.
+**Aktivne otvorene stavke prikazane su u gornjem pregledu, dok su pasivne otvorene stavke prikazane u donjem pregledu.**
 
-Za upravljanje pretraživanjem pomoću uobičajenih polja filtera (na primjer za traženje samo aktivnih i pasivnih stavaka jednog dobavljača) potrebno je vidjeti polja filtera (skrivena) iz  **odgovarajućih kartica s desne strane** (postaju vidljiva prolaskom mišem preko kartica i eventualno se može zaključati da bude stalno vidljivo). 
+Komande za pretragu otvorenih stavki nalaze se na traci sa alatkama. Potrebno je pokrenuti obe pretrage kako bi bile prikazane i aktivne i pasivne otvorene stavke.
 
-Dospijeća koja je potrebno međusobno povezati moraju biti odabrana u gornjem i donjem prikazu.
+Za upravljanje pretragom koriste se standardni filteri (na primer za prikaz samo aktivnih i pasivnih stavki određenog kupca ili dobavljača). Polja za filtriranje nalaze se na **odgovarajućim karticama sa desne strane**, koje su podrazumevano sakrivene. Kartice postaju vidljive prelaskom miša preko njih, a po potrebi se mogu zakačiti kako bi ostale stalno otvorene.
 
+Otvorene stavke koje treba međusobno kompenzovati potrebno je označiti i u gornjem i u donjem pregledu.
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation.png)
 
-Pritiskom na gumb tipku ***Kompenzacija dospjelih plaćanja***, odabrana podudaranja međusobno se kompenziraju.
+Klikom na dugme **Kompenzacija otvorenih stavki** izabrane stavke biće međusobno kompenzovane.
 
-U slučaju nepoklapanja iznosa, manji iznos se zatvara, dok veći ostaje otvoren kao ostatak vrijednosti. Također je moguće odrediti djelomičnu vrijednost prema kojoj će se izvršiti kompenzacija.
+Ako iznosi nisu jednaki, manji iznos će biti potpuno zatvoren, dok će veći ostati otvoren u iznosu preostalog salda. Takođe je moguće definisati delimičan iznos za kompenzaciju.
 
-U tom slučaju se proširi odjeljak Knjiženje (kvačica) i upotrijebi polje **Vrijednost** (pogledajte posljednju sliku u nastavku).
-
+U tom slučaju potrebno je proširiti odeljak **Knjiženje** (aktiviranjem odgovarajuće opcije) i koristiti polje **Vrednost** (pogledati poslednju sliku ispod).
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation2.png)
 
 ---
 
-Prijeboj vrijednosti također može automatski dovesti do računovodstvenog unosa (na primjer kada se stavke koje pripadaju istim partnerima kompenziraju, ali imaju različita podkonta budući da su i kupci i dobavljači i stoga se računovodstvena stanja također moraju kompenzirati).
+Kompenzacija može automatski generisati i računovodstveno knjiženje, na primer kada se kompenzuju otvorene stavke istog poslovnog partnera koje pripadaju različitim podkontima, zato što je isti partner evidentiran i kao kupac i kao dobavljač, pa je potrebno izvršiti i računovodstvenu kompenzaciju salda.
 
-Dakle, postavljanje zastavice s prikazanim dodatnim odjeljkom, omogućuje postavljanje još nekih parametara (poput predloška knjiženja).
+Aktiviranjem odgovarajuće opcije prikazuje se dodatni odeljak u kojem je moguće definisati dodatne parametre, kao što je obrazac knjiženja.
 
 ![](/img/it-it/finance-area/maturity-values/fast-compensation3.png)

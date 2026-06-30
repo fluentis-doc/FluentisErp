@@ -1,31 +1,26 @@
 ---
-title: Parametri za izračun zateznih kamata
+title: Parametri za obračun zatezne kamate
 sidebar_position: 3
 ---
 
-U obrascu se nalazi lista zastavica/flagova za odabir tipova stavki za koje će se nastaviti s obračunom kamata, te filter polje za šifre konta/podkonta. Ispod toga se mora postaviti vrsta zadane stope koja će se primijeniti i oznake koje vode logiku izračuna:
+Ovaj obrazac sadrži skup opcija za izbor vrste otvorenih stavki za koje će se izvršiti obračun zatezne kamate, kao i polje za filtriranje po kontu ili podkontu.
 
-**Izračunaj zatvorene dospjele vrijednosti za period**: postupak će provjeriti stavke koje su postale zatvorene unutar zadanog datumskog raspona i samo za njih će izračunati vrijednost kamata, dakle za djelomična plaćanja, kamata se neće računati;
+U nastavku je potrebno izabrati vrstu kamatne stope koja će se primenjivati i podesiti opcije koje određuju način obračuna.
 
-**Izračunaj plaćanja perioda**: postupak će identificirati plaćanja zabilježena unutar datumskog raspona i na tim će iznosima izračunati vrijednost relativnih kamata: ova je postavka preporučena.
+**Obračunaj za stavke zatvorene u periodu**: postupak će pronaći stavke koje su zatvorene u okviru zadatog perioda i samo za njih izračunati zateznu kamatu. U slučaju delimičnih plaćanja kamata se neće obračunavati.
 
-Ako nije unesena oznaka, izračun će procijeniti kamatu koja se odnosi na dane kašnjenja prisutne u rasponu postavljenih datuma.
+**Obračunaj plaćanja u periodu**: postupak će pronaći sva plaćanja evidentirana u okviru zadatog perioda i obračunati zateznu kamatu na plaćene iznose. Ovo je preporučena opcija.
 
-**Tip dokumenta** i **način plaćanja**: ovo su daljnji filtri za prepoznavanje stavki na kojima treba izvršiti obračun kamata.
+Ako nijedna od navedenih opcija nije označena, postupak će obračunati kamatu za dane kašnjenja koji pripadaju izabranom vremenskom periodu.
 
-Omogućeno je i definiranje vrste stope koja se koristi u izračunu kamata:
+**Tip dokumenta** i **Način plaćanja**: dodatni su filteri za izbor otvorenih stavki na kojima će se izvršiti obračun kamata.
 
-- Izračunavanje samo za kupce s ugovorom;
+Moguće je izabrati i način određivanja kamatne stope:
 
-- Izračunavanje za kupce s ugovorima, a za ostale prema stopi zadanoj u ovom obrascu;
+- Obračun samo za kupce sa ugovorenom kamatnom stopom.
+- Obračun za kupce sa ugovorenom kamatnom stopom, a za sve ostale prema stopi definisanoj u ovom obrascu.
+- Obračun za sve kupce prema stopi definisanoj u ovom obrascu.
 
-- Izračun za sve prema prema stopi zadanoj u ovom obrascu. 
+Opcija **Isključi izdate račune**, koja je podrazumevano uključena, omogućava izuzimanje stavki koje su zatvorene izdavanjem instrumenata naplate (npr. Ri.Ba.). Ovo podešavanje je posebno korisno kada se koristi obračun kamata uz odobreni popust, jer se otvorena stavka kupca u pravilu zatvara već prilikom izdavanja bankarske potvrde ili zadužnice.
 
-Flag **Isključi izdane račune**, već postavljena prema zadanim postavkama, omogućuje izuzimanje iz kamata stavke plaćenih računa: ova je postavka korisna, posebno za vrste stopa na koje je također postavljen izračun s popustom, budući da se zatvaranje računa kupca obično radi izravno kada se izda bankovna potvrda/zadužnica.  
-
-Postupak izračuna započinje tipkom  **Izračun kamata** na traci izbornika. 
-
-
-
-
-
+Postupak obračuna pokreće se naredbom **Obračun kamata** na traci sa alatkama.

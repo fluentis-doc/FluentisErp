@@ -3,18 +3,10 @@ title: Rezultati
 sidebar_position: 4
 ---
 
-U kartici 'Rezultati' moguć je pregled i brisanje rezultata provedenih izračuna, uz mogućnost filtriranja upita po kontu/podkontu i vrsti plaćanja.
-
-
+Na kartici **Rezultati** moguće je pregledati i obrisati rezultate izvršenih obračuna, uz mogućnost filtriranja po kontu/podkontu i načinu plaćanja.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Pretraga rezultata | Tipka traži izvršene rezultate izračuna. |
-| Otkaži | Tipka briše izvršene rezultate izračuna. |
-| Izbriši detalj | Tipka briše samo odabrane detalje danog izračuna. |
-
-
-
-
-
-
+| Pretraga rezultata | Pretražuje rezultate prethodno izvršenih obračuna. |
+| Poništi | Briše rezultate izvršenog obračuna. |
+| Obriši detalj | Briše samo odabrani detalj obračuna. |
