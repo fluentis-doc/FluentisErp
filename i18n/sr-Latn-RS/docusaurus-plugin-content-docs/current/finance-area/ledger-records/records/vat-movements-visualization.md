@@ -1,67 +1,68 @@
 ---
-title: Pregled stavaka PDV-a
+title: Pregled PDV stavki
 sidebar_position: 5
 ---
+
 :::tip[Čemu služi]
-Obrazac omogućuje **prikazivanje kretanja** izvršenih na **PDV zapisima** zajedno s računovodstvenim zapisima (na primjer za primitak ili izdavanje faktura). 
 
-Korisno za **kontrole** ili **izvlačenje podataka** vezanih uz PDV.
+Obrazac omogućava **prikaz zapisa (prometa)** izvršenih nad **PDV evidencijama**, zajedno sa odgovarajućim računovodstvenim zapisima (na primer, prijemne ili izlazne fakture).
 
-Prikaz na ekranu je posebno fleksibilan, omogućujući brzo izvođenje podataka ili brzo ulazak u izmjenu svakog pokreta dvostrukim klikom.
+Koristan je za **kontrolu** ili **pregled podataka** povezanih sa PDV-om.
+
+Prikaz na ekranu je veoma fleksibilan i omogućava brzo filtriranje, izvoz podataka ili direktan ulazak u izmenu pojedinačnog zapisa dvostrukim klikom.
 :::
 
+## Zaglavlje
 
-## Zaglavlje:
-U gornjem dijelu nalaze se **filtri**:
+U gornjem delu obrasca nalaze se **filteri**:
 
-**Knjige PDV-a:** za izvlačenje kretanja vezanih uz jedan ili više (selekcija putem padajućeg izbornika uz držanje tipke Ctrl) PDV odjeljaka.
+**PDV knjige:** omogućavaju izdvajanje zapisa koji pripadaju jednoj ili više PDV knjiga (višestruki izbor moguć je preko padajuće liste uz držanje tastera **Ctrl**).
 
-**Šifra PDV-a:**  za filtriranje kretanja izvršenih s određenom stopom ili PDV kodom (izuzeće, isključenje itd.)
+**PDV šifra:** filtrira zapise prema određenoj stopi ili PDV šifri (oslobođenje, izuzeće i sl.).
 
-**Od datuma obračuna PDV-a / Do datuma obračuna PDV-a:** za pretragu kretanja na temelju datuma obračuna PDV-a, tj. datum kada će kretanje imati učinak na obračun PDV-a.
+**Od datuma obračuna PDV-a / Do datuma obračuna PDV-a:** pretražuje zapise prema datumu obračuna PDV-a, odnosno datumu kada će promet biti uključen u obračun PDV-a.
 
 :::tip[Napomena]
-**Glavni filtar** odnosi se na razdoblje u kojem kretanje ima učinak na obračun PDV-a, a ne na datum kada je izvršeno računovodstveno knjiženje (kako je poznato, PDV obveza može biti promijenjena, obično retroaktivno).
+**Glavni filter** odnosi se na obračunski period PDV-a, a ne na datum računovodstvenog knjiženja. Kao što je poznato, datum obračuna PDV-a može biti različit od datuma knjiženja i može se naknadno promeniti.
 
-Ako želite pretraživati i prema određenom datumu računovodstvenog zapisnika, uvijek možete intervenirati u filtru stupca u rezultatnoj tablici.
+Ako je potrebno pretraživanje prema datumu knjiženja, može se koristiti filter odgovarajuće kolone u tabeli rezultata.
 :::
 
-**Operacije:** filtrira prema tri kategorije (aktivne, pasivne i reverse charge) koje se razmatraju za povezivanje PDV kodova i redaka ispisa za Godišnju PDV prijavu. Pogledajte tablicu [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates)
+**Operacije:** filtrira podatke prema tri kategorije transakcija (izlazne, ulazne i prenos poreske obaveze), koje služe za povezivanje PDV šifri sa odgovarajućim redovima godišnje PDV prijave. Pogledajte tablicu [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates).
 
-**Redak porezne prijave:** filtar koji treba povezati s prethodnim. Nakon što se odabere vrsta operacija, moguće je detaljno filtrirati koji PDV kodovi se odnose na određeni redak u ispisu za Godišnju PDV prijavu. Pogledajte tablicu [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates)
+**Red poreske prijave:** filter koji se koristi zajedno sa prethodnim. Nakon izbora vrste operacije moguće je dodatno filtrirati PDV šifre koje pripadaju određenom redu godišnje PDV prijave. Pogledajte tablicu [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates).
 
-**Vrsta PDV-a:** filtar koji se odnosi na vrstu PDV operacije. Podaci se mogu povezati s PDV kretanjima prilikom izrade računovodstvenih zapisa, u odjeljku *podaci PDV-a za kretanje*, putem istoimenog polja. 
+**Vrsta PDV-a:** filtrira podatke prema vrsti PDV transakcije. Ovaj podatak se dodeljuje prilikom kreiranja računovodstvenog zapisa, u odeljku *PDV podaci* putem istoimenog polja.
 
-**Konto / Podkonto:** omogućuje filtriranje prema računu protivpartije koji je korišten u zapisniku koji je generirao PDV kretanja, na primjer, u slučaju kupovine ili prodaje, obično se može filtrirati prema računu troška ili prihoda.
+**Konto / Podkonto:** omogućava filtriranje prema kontu koji je korišćen u računovodstvenom zapisu iz kojeg je nastala PDV stavka. Kod nabavke ili prodaje to je najčešće konto troška ili prihoda.
 
-**Konto zaglavlja:** omogućuje filtriranje prema podračunu unesenom u zaglavlje zapisnika koji je generirao PDV kretanja, na primjer, u slučaju kupovine ili prodaje, obično se može filtrirati prema dobavljaču ili kupcu.
+**Konto zaglavlja:** omogućava filtriranje prema kontu unetom u zaglavlje računovodstvenog zapisa koji je generisao PDV stavku. Kod nabavke ili prodaje to je najčešće konto dobavljača ili kupca.
 
+## Tabela podataka
 
-## Tablica podataka:
+Tabela sadrži fiksne kolone sa osnovnim vrednostima svakog prometa, kao što su osnovica, porez, nepriznati iznos i ukupni iznosi.
 
-Predstavlja fiksne kolone koje sadrže vrijednosti svakog pokreta, kao što su osnovica, porez, neodbitni iznos i ukupni iznosi.
+Pored njih, dostupne su i sledeće kolone:
 
-Ostale kolone se pomiču i prikazuju sljedeće podatke:
+- **Datum i broj knjiženja** koje je generisalo PDV zapis
+- **Broj dokumenta**, na primer broj izlazne ili ulazne fakture
+- **GLK šablon** (šifra i opis) korišćen za računovodstveni zapis koji je generisao PDV zapis
+- **PDV knjiga** (šifra i opis) u kojoj je evidentiran zapis
+- **PDV protokol** zapisa
+- **Konto korišćen u zaglavlju** zapisa (na primer kupac ili dobavljač)
+- **Protukonto** korišćen u računovodstvenom zapisu (na primer konto troška ili prihoda) koji je generisao PDV zapis
+- **PDV šifra** (stopa, oslobođenje, izuzeće i dr.) korišćena u zapisu
+- **Procenat (nepriznato)** koji se nalazi na PDV stavci računovodstvenog zapisa. Vrednost se može ručno promeniti, ali se najčešće automatski preuzima iz odgovarajuće [**PDV stope/metode**](/docs/configurations/tables/finance/vat-rates).
+- **Od / Do datuma obračuna**, odnosi se na obračunski period troška ili prihoda i nije direktno povezan sa PDV zapisom, iako je definisan u PDV delu računovodstvenog zapisa.
+- **Obračun u gornjoj/donjoj vrednosti**, podatak definisan u PDV delu računovodstvenog zapisa koji se koristi za obračun [**Plafona/limita**](/docs/finance-area/declarations/declarations/plafond/general-overview).
+- **Datum obračuna PDV-a**, podatak koji se koristi i u filterima zaglavlja obrasca, a ovde je prikazan za svaki pojedinačni zapis.
+- **Detaljan opis**, istoimeno polje iz PDV dela računovodstvenog zapisa.
+- **Datum obračuna**, odnosi se na datum obračuna iz zaglavlja računovodstvenog zapisa koji je generisao PDV zapis.
+- **Datum dokumenta**, datum fakture iz zaglavlja računovodstvenog zapisa koji je generisao PDV zapis.
+- **Tip šifre**, odnosi se na polje **Tip dokumenta** iz zaglavlja računovodstvenog zapisa koji je generisao PDV zapis.
+- **Tip fiskalne operacije** (šifra/opis), polje iz PDV dela računovodstvenog zapisa koje služi za povezivanje sa vrstom nabavke potrebnom za statističke podatke u godišnjoj PDV prijavi. Polje je vidljivo samo ako je omogućeno u parametrima računovodstvenih šablona.
 
-- **Datum i broj zapisa** knjiženje koje je generiralo zapis PDV-a 
-- **Broj dokumenta** na primjer broj izlaznog ili ulaznog računa
-- **Računovodstveni predložak** (šifra i opis) korišten za računovodstveni zapis koji je generirao PDV kretanje
-- **PDV odjeljak**  (kod i opis) koji je pomaknut
-- **PDV protokol** kretanja
-- **Konto korišten u zaglavlju** zapisnika (na primjer, kupac ili dobavljač)
-- **Konto suprotne strane** korišten (na primjer, trošak ili prihod) u računovodstvenom zapisu koji je generirao PDV kretanje  
-- **PDV šifra** (stopa, izuzeće, isključenje itd.) korišten za kretanje
-- **Postotak (ne priznati)** prisutan na PDV retku kretanja u računovodstvenom zapisu, vrijednost može biti ručno postavljena, ali obično je unaprijed postavljena za korišteni PDV kod izravno u tablici [**Stope/Metode PDV-a**](/docs/configurations/tables/finance/vat-rates)
-- **Od / Do datuma obračuna**, odnosi se na obračun troška / prihoda i nije izravno povezan s PDV kretanjem, iako je prisutan i definiran u PDV odjeljku računovodstvenog zapisa  
-- **Obračun u gornjoj/donjoj vrijednosti**, podatak definiran u PDV odjeljku računovodstvenog zapisa i odnosi se na kompetenciju kretanja za potrebe izračuna [**Plafon/limit za redovite izvoznike**](/docs/finance-area/declarations/declarations/plafond/general-overview)
-- **Obračun PDV-a**, podatak koji je već prisutan u filtriranim poljima zaglavlja obrasca i ovdje prikazan za svako kretanje  
-- **Detaljan opis**, istoimeni podatak prisutan u PDV odjeljku računovodstvenog zapisa  
-- **Datum obračuna**, odnosi se na računovodstvenu kompetenciju prisutnu u zaglavlju računovodstvenog zapisa koji je generirao PDV kretanje  
-- **Datum dokumenta**, odnosi se na datum fakture prisutan u zaglavlju računovodstvenog zapisa koji je generirao PDV kretanje  
-- **Tip šifre**, odnosi se na polje Tip dokumenta prisutno u zaglavlju računovodstvenog zapisa koji je generirao PDV kretanje  
-- **Tip porezne operacije** (kod / opis) polje prisutno u PDV odjeljku računovodstvenog zapisa, korisno za povezivanje s tipom kupovine koja je potrebna za statističke informacije koje se dostavljaju u godišnjoj PDV prijavi. Polje je vidljivo u zapisnicima nakon aktivacije u parametrima računovodstvenih uzoraka.
+## Ukupni iznosi u donjem delu obrasca
 
-## Ukupni iznosi u donjem dijelu obrasca:
-
-- Osnovica / Porez / Ukupno **Odabrano**: odnosi se na selekciju aktiviranu klikom miša (jedan ili više redaka istovremeno ako se drži tipka Ctrl)  
-- Osnovica / Porez / Ukupno: neovisno o selekciji mišem prikazuje podatke koji se odnose na sve redke vidljive u tablici rezultata (primjenjujući filtre iz zaglavlja i / ili one u zaglavlju stupaca tablice).  
+- **Osnovica / Porez / Ukupno – Izabrano**: prikazuje zbir za trenutno označene redove (moguće je označiti više redova držanjem tastera **Ctrl**).
+- **Osnovica / Porez / Ukupno**: prikazuje zbir svih redova prikazanih u tabeli rezultata, uz primenu filtera iz zaglavlja obrasca i eventualnih filtera postavljenih na kolonama tabele.

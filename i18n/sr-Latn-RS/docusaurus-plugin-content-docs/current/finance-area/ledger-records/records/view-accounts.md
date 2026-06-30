@@ -1,85 +1,83 @@
 ---
-title: Prikaži konta
+title: Prikaz konta
 sidebar_position: 2
 ---
 
-Ova forma omogućuje pregled računovodstvenih zapisa bilo kojeg konta ili podkonta, bez obzira na vrstu (aktiva, pasiva, troškovi, prihodi ili analitički konto). Pregled svih kretanja za sve računovodstvene godine uvijek je dostupan. Ovisno o zatvaranju razdoblja nakon obveznih poreznih izvještaja ili zbog operacija zatvaranja konta, zapisi se mogu i mijenjati.
+Ovaj obrazac omogućava pregled računovodstvenih zapisa za bilo koje konto ili podkonto, bez obzira na njegovu vrstu (aktiva, pasiva, troškovi, prihodi ili analitički konto). Dostupan je pregled svih knjiženja za sve računovodstvene godine. U zavisnosti od zatvaranja obračunskog perioda nakon obaveznih poreskih izveštaja ili izvršenog zatvaranja konta, zapise je moguće i menjati.
 
-## Testata:
+## Zaglavlje
 
-U gornjem dijelu obavezno je unijeti šifru konta ili izravno podkonto, ostala polja filtra su opcionalna.
+U gornjem delu obrasca obavezno je uneti šifru konta ili direktno podkonta, dok su ostali filteri opcionog karaktera.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image01.png)
 
+## Prikaz podataka
 
-## Prikaz podataka: 
+Podrazumevano se podaci prikazuju sortirani opadajuće prema datumu knjiženja (redosled sortiranja može se promeniti) i prikazuju promet u skladu sa postavljenim filterima.
 
-Prema zadanim postavkama, popis je poredan po datumu knjiženja silazno (kriterij poretka može se promijeniti) i prikazuje kretanje prema postavljenim filtrima.
+Sa podrazumevanim podešavanjima podaci se obrađuju na sledeći način:
 
-S ovim postavkama podaci se čitaju uzimajući u obzir sljedeće:
+- ako je postavljen filter **Od datuma knjiženja** na 01/01/yyyy, u poljima **Prethodno stanje** biće prikazan zbir dugovne i potražne strane za sva knjiženja pre tog datuma;
 
--  ako filtriramo prema 'od datuma knjiženja' 01/01/yyyy, u poljima (gore) **Saldo prethodnog stanja** prikazat će se ukupna dugovna i potražna strana za knjiženja prije 01/01/yyyy,
+- u tabeli prometa knjiženja će biti prikazana od najnovijih ka najstarijima;
 
-- U prikazu kretanja podaci će biti prikazani od najnovijih prema najstarijima (kronološki), 
-
-- Polje **Progresivan** će u posljednjem retku prikazati iznos iz polja **Saldo prethodnog stanja** ažuriran vrijednošću iz istog retka, a zatim će se ažurirati redak po redak od dolje prema gore.
+- polje **Progresivno** će u poslednjem redu prikazati iznos iz polja **Prethodno stanje**, uvećan ili umanjen za vrednost tog reda, a zatim će se vrednost ažurirati red po red, odozdo nagore.
 
 :::note[NAPOMENA]
-Polje **Progresivan** je vidljivo samo ako je zadržan zadani redoslijed prikaza u formi; u suprotnom slučaju, polje nestaje i da bi se ponovno prikazalo, potrebno je zatvoriti i ponovno otvoriti formu te ponovno izvršiti pretragu.
+Polje **Progresivno** vidljivo je samo ako je zadržan podrazumevani redosled prikaza u obrascu. Ako se promeni način sortiranja, polje se više neće prikazivati. Da bi se ponovo pojavilo, potrebno je zatvoriti i ponovo otvoriti obrazac, a zatim ponoviti pretragu.
 :::
 
+## Ukupni iznosi na dnu obrasca
 
-## Ukupni iznosi na dnu forme:
+**Saldo selekcije**: zbir dugovnih i potražnih iznosa označenih redova u tabeli. Ako označite sve redove (Ctrl+A), ova vrednost odgovaraće polju **Tekuće stanje**.
 
-**Odabrano stanje**: zbroj dugovnih/potražnih iznosa,  koji su odabrani u tablici mišem; ako odaberete sve retke u tablici (pomoću ctrl+a), ovo polje će prikazati isti rezultat kao i polje *Trenutni saldo*. 
+**Tekuće stanje**: zbir dugovnih i potražnih iznosa svih prikazanih redova, bez obzira na trenutnu selekciju.
 
-**Tekuće stanje**: zbroj dugovnih/potražnih iznosa za sve prikazane redove (uvijek sve, neovisno o selekciji napravljenoj mišem);  
+**Ukupno**: zbir prethodnog stanja i tekućeg stanja.
 
-**Ukupno**: zbroj dugovnih/potražnih iznosa prethodnog salda i trenutnog salda;  
+**Saldo**: konačno dugovno ili potražno stanje, koje uvek odgovara progresivnom saldu prikazanom u prvom redu tabele.
 
-**Saldo**: konačni saldo, bilo dugovni ili potražni (koji će uvijek odgovarati progresivnom saldu prikazanom u prvom retku).
+:::tip[Kako tumačiti ukupne iznose]
 
+Prethodno dugovno/potražno stanje (za period pre primenjenog filtera, počev od poslednjeg ponovnog otvaranja konta) + Tekuće stanje = Ukupno, pri čemu su u sva tri bloka (**Prethodno stanje**, **Tekuće stanje** i **Ukupno**) uvek prikazane obe kolone: **Duguje** i **Potražuje**.
 
-:::tip[Kako čitati i interpretirati ukupne iznose]
-**Dugovanje/Potraživanje prethodno** (prema filtriranom rasponu i posljednjem otvaranju računa) **+ Trenutni saldo = Ukupno** (obe kolone dugovanje/potraživanje uvijek su popunjene u ova 3 bloka).
+Prethodno stanje + Tekuće stanje (izraženi kao razlika između dugovne i potražne strane) = **Saldo** (trenutno stanje).
 
-**Prethodni saldo + Trenutni saldo** (kao razlika dugovanje - potraživanje) **= Saldo** (trenutni)
-
-*Trenutni saldo* prikazan je u oba odjeljka kako bi se analitički prikazao izračun *Ukupnog* (jer se za njegov izračun na Trenutni saldo dodaju dvije odvojene sekcije *Dugovanje / Potraživanje prethodno*)
+Tekuće stanje prikazuje se u obe kolone (**Duguje** i **Potražuje**) kako bi se jasno prikazao način izračunavanja polja **Ukupno**, koje nastaje sabiranjem odgovarajućih iznosa iz kolona **Prethodno dugovno stanje** i **Prethodno potražno stanje** sa pripadajućim iznosima **Tekućeg stanja**.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image04.png)
 
 :::
 
+U tabeli su prikazana dva podkonta:
 
+- **Podkonto zaglavlja**, koji se preuzima iz podkonta nosioca računovodstvenog knjiženja iz kojeg potiče pojedinačno knjiženje.
+- **Podkonto detalja**, koji predstavlja podkonto za koji se stvarno pretražuju knjiženja.
 
-U mreži su vidljive dvije vrste prikazanih podkonta: zaglavno podkonto (koje se preuzima iz podkonta nositelja knjiženja iz kojeg je preuzet sam promet) i detaljno podkonto koje je stvarno podkonto za koje se pretražuju knjiženja. Na primjer, ako se prikazuju knjiženja generičkog troškovnog konta, u zaglavnom podkontu bit će prikazane šifre dobavljača koji su poslali račune knjižene na to troškovno konto, dok će u detaljnom podkontu biti prikazana pojedinačna specifična troškovna podkonta koja su evidentirana.
+Na primer, ako se pregledaju knjiženja opšteg konta troškova, u koloni **Podkonto zaglavlja** biće prikazane šifre dobavljača čije su fakture knjižene na taj konto troška, dok će u koloni **Podkonto detalja** biti prikazana pojedinačna podkonta troškova na koja su ti iznosi evidentirani.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image02.png)
 
- 
-Također je moguće "proširiti" redak pomoću klika na + s lijeve strane kako bi se prikazalo cijelo računovodstveno knjiženje.
+Takođe je moguće proširiti red klikom na znak **+** sa leve strane kako bi se prikazalo kompletno računovodstveno knjiženje.
 
 ![](/img/it-it/finance-area/ledger-records/records/view-accounts/image03.png)
 
+## Dodatne operacije u prikazu podataka
 
-Dodatne operacije koje se mogu izvršiti u pregledu podataka:
+- **Dvoklik na prikazani red**: ako korisnik ima odgovarajuća prava, otvara se obrazac za izmenu pripadajućeg računovodstvenog zapisa.
 
-- Dvostruki klik na pojedini prikazani redak: U ovom slučaju, ako korisnik ima odgovarajuća prava, otvorit će se obrazac za uređivanje pripadajućih zapisa kretanja;
+- **Dugme Izmeni** na traci sa alatkama: ima isti efekat kao dvoklik na izabrani red.
 
-- Pritiskom na tipku **Izmijeni** smješten u traci izbornika: ima isti učinak kao i dvostruki klik na opisani redak;
+- **Dugme Izvorni dokument**, kada je aktivno: otvara pregled ulazne ili izlazne fakture iz koje je nastao izabrani računovodstveni zapis, pod uslovom da korisnik ima odgovarajuća prava.
 
-- Pritiskom na tipku  **Dokument porijekla**, kada je aktivan: Otvorit će se pregled (ako korisnik ima odgovarajuća prava) ulaznih ili izlaznih računa koji su kreirali odabrani računovodstveni zapis prilikom knjiženja;
+## Područje filtera
 
-PODRUČJE FILTRA: Područje filtra je namijenjeno za prikaz popisa mogućih uvjeta pomoću kojih je moguće izvršiti selekciju. Filtri su tipično uvijek u uvjetu 'AND', i moguće je specificirati više kriterija filtra istovremeno.
+Područje filtera namenjeno je definisanju uslova za pretragu računovodstvenih zapisa. Filteri se primenjuju logikom **AND**, što znači da svi zadati kriterijumi moraju biti istovremeno ispunjeni. Moguće je kombinovati više filtera radi preciznijeg izdvajanja podataka.
 
-PRIKAZ REZULTATA: Prikaz rezultata predstavlja popis računovodstvenih zapisa koji odgovaraju gore specificiranim uvjetima filtra. Korisnik, nakon što specificira vrijednosti pomoću kojih želi pretražiti zapise, pritiskom na tipku [Traži] u meniju, dobit će u prikazu rezultata popis željenih zapsia.
+## Prikaz rezultata
 
-:::important Pogledaj također
+Prikaz rezultata sadrži listu računovodstvenih zapisa koji zadovoljavaju zadate kriterijume pretrage. Nakon definisanja filtera, potrebno je kliknuti na dugme **Traži** na traci sa alatkama kako bi se prikazali odgovarajući rezultati.
+
+:::important Pogledajte takođe
 [**VIDEO TUTORIJALI O RAČUNOVODSTVENIM ZAPISIMA**](/docs/video/finance/intro)
 :::
-
-
-
-
-
