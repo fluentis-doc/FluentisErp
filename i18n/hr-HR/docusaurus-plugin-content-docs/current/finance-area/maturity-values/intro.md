@@ -24,7 +24,7 @@ Modul otvorenih stavki u Fluentis ERP upravlja dugovanjima i potraživanjima, ol
 **Glavne procedure**
 
     Kompenzacija otvorenih stavaka: *Izravnavanje* otvorenih stavaka između kupaca i dobavljača, sa zatvaranjem otvorenih pozicija. 
-    Izračun zakašnjenih Kamata: Automatsko upravljanje kamatama za kašnjenja u plaćanjima.
+    Izračun zakašnjelih Kamata: Automatsko upravljanje kamatama za kašnjenja u plaćanjima.
     Automatsko izdavanje opomena: Masovno generiranje podsjetnika za neplaćene otvorene stavke.
     Povezivanje računovodstvenih zapisa: Povezivanje otvorenih stavaka s računovodstvenim zapisima za potpunu kontrolu.
     Upravljanje povezanim plaćanjima: Kreiranje novih otvorenih stavaka na temelju već postojećih plaćanja.

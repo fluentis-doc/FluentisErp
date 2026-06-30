@@ -1,20 +1,13 @@
 ---
-title: Opomene za zakašnjelo plaćanje
+title: Opomene za kašnjenje u plaćanju
 sidebar_position: 6
 ---
 
-U ovoj proceduri je moguće ispisivati podsjetnike za plaćanje
+Ova procedura omogućava štampanje opomena za kašnjenje u plaćanju.
 
-Prije ispisa moguće je, umjesto ispisa svih generiranih opomena, filtrirati po broju opomene, datumu, vrsti i kupcu.
-
+Pre pokretanja štampe moguće je filtrirati generisane opomene prema broju opomene, datumu, vrsti opomene i kupcu, umesto štampanja svih dostupnih opomena.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Pregled | Pregled podsjetnika/opomena za plaćanje, s mogućnošću odabira samo transakcija s najvećim prioritetom ili svih transakcija. |
-| Ispiši | Ispisuje pisma podsjetnika/opomena, uz mogućnost odabira samo transakcija s najvećim prioritetom ili svih transakcija. |
-
-
-
-
-
-
+| Pregled | Prikazuje pregled opomena za kašnjenje u plaćanju, uz mogućnost prikaza samo opomena sa najvišim prioritetom ili svih opomena. |
+| Štampaj | Štampa opomene za kašnjenje u plaćanju, uz mogućnost izbora samo opomena sa najvišim prioritetom ili svih opomena. |

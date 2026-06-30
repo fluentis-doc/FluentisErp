@@ -1,25 +1,24 @@
 ---
-title: Razlika između dospijeća plaćanja i glavne knjige
+title: Razlika između otvorenih stavki i glavne knjige
 sidebar_position: 5
 ---
 
-Ispis koji se može pokrenuti iz ovog obrasca odgovara sadržaju prikaza na ekranu koji se može dobiti pomoću obrasca **[Razlika između otvorenih stavaka i glavne knjige.](/docs/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance)**
+Iz ovog obrasca moguće je pokrenuti izveštaj koji odgovara sadržaju prikaza dostupnog u formi **[Razlika između otvorenih stavki i glavne knjige](/docs/finance-area/maturity-values/maturity-values/difference-between-maturity-value-and-ledger-balance)**.
 
-Ovaj ispis služi za traženje stavaka (razlika) između stanja otvorenih stavaka i stanja glavne knjige za svakog kupca i dobavljača, s ciljem kako bi se takve stavke ispravile. Ove razlike mogu nastati od pogrešaka u vođenju glavne knjige ili računovodstvenih zapisa (nedostatak usklađenosti između računovodstvenog kretanja i otvaranja stavki ili naplate/plaćanja i zatvaranja stavke).
+Svrha ovog izveštaja je pronalaženje razlika između stanja otvorenih stavki i stanja glavne knjige za svakog kupca i dobavljača, kako bi se te razlike mogle ispraviti. Razlike mogu nastati usled grešaka u vođenju glavne knjige ili računovodstvenih knjiženja (neusklađenost između računovodstvenog knjiženja i otvaranja otvorene stavke, odnosno između naplate/plaćanja i zatvaranja otvorene stavke).
 
-:::danger BILJEŠKA:
-U slučaju **primatelja naknade**, ako se primijeni kriterij izlaganja otvorenih stavaka umanjenih za porez na dohodak (u parametrima [tipa poreza na dohodak](/docs/configurations/tables/finance/withholding-tax-types)), razlike koje će biti prikazane trebaju se ignorirati (i ne smatrati greškama), uzimajući u obzir da će biti apsorbirane prilikom plaćanja naknade i zatvaranja odgovarajuće partije.
+:::danger NAPOMENA
+U slučaju **primaoca naknade**, ako je primenjen kriterijum prikaza otvorenih stavki umanjenih za porez po odbitku (u parametrima **[vrste poreza po odbitku](/docs/configurations/tables/finance/withholding-tax-types)**), prikazane razlike treba zanemariti (ne smatraju se greškama), jer će biti automatski eliminisane prilikom isplate naknade i zatvaranja odgovarajuće otvorene stavke.
 :::
 
+**Konto:** glavni filter za izbor podkonta kupca ili dobavljača. Ako nije postavljen nijedan filter, biće prikazana sva podkonta kupaca i dobavljača kod kojih postoje razlike.
 
-**Račun**: Glavni filtar za pregled podkonta kupca ili dobavljača. Bez filtriranja, bit će prikazana podkonta svih kupaca i dobavljača s razlikama.
+**Od/Do datuma knjiženja:** filtriranje prema datumu računovodstvenog knjiženja.
 
-**Od/do Datum zapisivanja**: filtriranje datuma računovodstvenog knjiženja
+**Isključi zatvorene otvorene stavke:** aktiviranjem ove opcije zanemaruju se otvorene stavke sa statusom **Zatvorena**.
 
-**Isključi zatvorene dospjele vrijednosti**: aktiviranje zastavice zanemarit će dospijeća u stanju ‘Zatvoreno’. 
+**Detalji:** aktiviranjem ove opcije rezultati se prikazuju detaljno, tako da se eventualna razlika prikazuje za svako pojedinačno računovodstveno knjiženje u poređenju sa povezanom otvorenom stavkom (ili sa povezanim plaćanjem u slučaju knjiženja naplate ili isplate).
 
-**Detalji**: aktiviranjem ove oznake rezultati će biti raščlanjeni ističući moguću razliku za svako pojedinačno računovodstveno kretanje u usporedbi s povezanom stavkom (ili s povezanim plaćanjem u slučaju obračunskog kretanja naplate/plaćanja);
+**Prikaži samo detaljna konta/zapise sa razlikom različitom od nule:** (preporučena opcija) kada je aktivna, prikazuju se samo podkonta kod kojih postoje razlike koje je potrebno ispraviti, dok se podkonta bez razlika ne prikazuju.
 
-**Prikaži samo detaljna konta/ zapise s razlikom različitom od nule**: (preporučen) aktivan flag omogućuje da se označe samo podkonta koji imaju razlike koje treba ispraviti. One koji nemaju razlike se ne prikazuju.
-
-**Grupiraj po valuti tvrtke**: aktivan flag određuje prikaz valutnih kretanja prema valuti poduzeća. 
+**Grupiši po valuti preduzeća:** aktivna opcija omogućava prikaz valutnih knjiženja u valuti preduzeća.

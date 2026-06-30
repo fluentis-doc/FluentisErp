@@ -1,17 +1,12 @@
 ---
-title: Pregled dospijeća plaćanja
+title: Pregled otvorenih stavki
 sidebar_position: 3
 ---
 
-Iz ove forme moguće je ispisati popis otvorenih stavaka (ili dospijeća u nekom od drugih mogućih stanja) prema postavljenim parametrima filtera.
+Iz ovog obrasca moguće je odštampati pregled otvorenih stavki (ili otvorenih stavki u nekom drugom statusu), u skladu sa postavljenim parametrima filtera.
 
-Funkcioniranje obrasca je isto kao i za ** [ostale ispise obrasca iz ovog područja](/docs/finance-area/maturity-values/reports/customer-vendor-due-register).**
+Rad obrasca identičan je radu **[ostalih izveštaja za otvorene stavke u ovom modulu](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**.
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

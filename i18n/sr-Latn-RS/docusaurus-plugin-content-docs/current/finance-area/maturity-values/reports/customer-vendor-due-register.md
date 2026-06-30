@@ -1,75 +1,70 @@
 ---
-title: Pregled otvorenih stavaka kupaca i dobavljača
+title: Pregled otvorenih stavki kupaca i dobavljača
 sidebar_position: 1
 ---
 
-Iz ove forme moguće je definirati sve potrebne parametre za pokretanje ispisa otvorenih stavaka kupaca/dobavljača.
+Iz ovog obrasca moguće je definisati sve potrebne parametre za pokretanje izveštaja otvorenih stavki kupaca i dobavljača.
 
-Obrazac je isti kao i onaj za pokretanje drugih ispisa temeljenih na obradi otvorenih stavaka, međutim neka polja možda neće biti korištena ili relevantna za ovaj ispis.
+Obrazac je isti kao i za pokretanje drugih izveštaja zasnovanih na obradi otvorenih stavki, s tim da neka polja možda neće biti korišćena ili neće biti relevantna za ovaj izveštaj.
 
-Na vrhu obrasca nalaze se različiti filteri s osnovnim podacima:  
+Na vrhu obrasca nalaze se različiti filteri sa osnovnim podacima:
 
 **![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image01.png)**
 
-**Konto:** glavni filter za podkonta kupaca/dobavljača. Ako nema unesenih podataka, ispis će se obraditi nad svim kontima kupaca i dobavljača. Moguće je unijeti samo glavni konto (bez podkonta) za dobivanje samo kupaca ili samo dobavljača.  
+**Konto:** glavni filter za podkonta kupaca i dobavljača. Ako nije unet nijedan podatak, izveštaj će biti obrađen za sva konta kupaca i dobavljača. Moguće je uneti samo glavno konto (bez podkonta) kako bi se dobio pregled samo kupaca ili samo dobavljača.
 
-**Od/do datuma dospijeća**: filtar po datumu dospijeća koji je pohranjen unutar otvorene stavke (obrađuje se prilikom generiranja otvorene stavke prema uvjetima plaćanja, osim ako se ručno ne mijenja).  
+**Od/Do datuma dospeća:** filter prema datumu dospeća koji je sačuvan u otvorenoj stavci (generiše se prilikom kreiranja otvorene stavke prema uslovima plaćanja, osim ako nije ručno izmenjen).
 
-**Status**: filtar je prema zadanim postavkama postavljen u status Otvorena stavka (postoji i Zatvorena stavka i Djelomično otvoreno), može se mijenjati ili ostaviti prazno za pregled svih stavaka.  
+**Status:** filter je podrazumevano postavljen na status **Otvorena stavka** (dostupni su i statusi **Zatvorena stavka** i **Delimično otvorena**), može se promeniti ili ostaviti praznim radi prikaza svih stavki.
 
-**Pozicija**: padajući izbornik s dodatnom kodificiranim statusima otvorenih stavaka. Uglavnom se ne koristi.
+**Pozicija:** padajuća lista sa dodatno definisanim statusima otvorenih stavki. U praksi se uglavnom ne koristi.
 
-**Plaćanje**: filtar prema vrsti plaćanja pohranjenoj unutar otvorene stavke (generira se tijekom stavaranja otvorene stavke prema uvjetima plaćanja osim, ako se ručno ne mijenja).
+**Plaćanje:** filter prema načinu plaćanja sačuvanom u otvorenoj stavci (generiše se prilikom kreiranja otvorene stavke prema uslovima plaćanja, osim ako nije ručno izmenjen).
 
-**Šifra dokumenta**: filtriranje prema šifri vrste dokumenta povezanim s otvorenom stavkom (npr. faktura ili odobrenje).  
+**Šifra dokumenta:** filtriranje prema šifri vrste dokumenta povezane sa otvorenom stavkom (na primer faktura ili knjižno odobrenje).
 
-**Valuta**: filtrirajte prema valuti u kojoj su dospijeća denominirana (ekvivalentne vrijednosti u eurima također će biti prikazane u ispisu).  
+**Valuta:** filtriranje prema valuti u kojoj su otvorene stavke evidentirane (u izveštaju će biti prikazane i protivvrednosti u evrima).
 
-**Predstavnik**: filtrirajte agenta povezanog sa stavkama (samo na strani klijenta).
+**Predstavnik:** filtriranje prema agentu povezanom sa stavkama (samo za kupce).
 
-**Banka**: filter po banci vezanoj uz otvorenu stavku.   
+**Banka:** filter prema banci povezanoj sa otvorenom stavkom.
 
-**Projekt**: filter po projektu povezanom s otvorenom stavkom.
+**Projekat:** filter prema projektu povezanom sa otvorenom stavkom.
 
-**Od/Do godine dospjele vrijednosti; Od/Do broja dospjele vrijednosti**:  filtriranje prema godini i broju otvorene stavke.  
+**Od/Do godine otvorene stavke; Od/Do broja otvorene stavke:** filtriranje prema godini i broju otvorene stavke.
 
-**Odjel**: filter po odjelu poduzeća (operativno ako postoji više odjela u bazi podataka). 
+**Odeljenje:** filter prema organizacionoj jedinici preduzeća (koristi se u bazama sa više odeljenja).
 
-Parametri prikaza
+### Parametri prikaza
 
 ![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image02.png)
 
-**Stavke otvorene za**: ovo polje, predloženo prema zadanim postavkama kada se obrazac otvori, može se modificirati kako bi se dobila jasnija situacija vezana uz stanje otvorenih stavaka. 
+**Otvorene stavke na datum:** ovo polje je podrazumevano popunjeno prilikom otvaranja obrasca, ali se može izmeniti radi dobijanja pregleda stanja otvorenih stavki na određeni datum.
 
-Primjer: ako je plativa faktura s datumom 1. lipnja otvorila stavku koja istječe 1. srpnja, a plaćanje za tu stavku je zabilježeno 28. lipnja, pregled otvorenih stavaka dobavljača s datumom nakon 28. (na primjer, 30. lipnja), dospijeće neće biti vidljivo jer je zatvoreno, ako se gledaju stavke npr. 20. srpnja, dospijeće će biti vidljivo jer je još uvijek otvoreno tog datuma.
+Primer: ako faktura sa datumom 1. juna otvori stavku koja dospeva 1. jula, a njeno plaćanje bude evidentirano 28. juna, pregled otvorenih stavki sa datumom nakon 28. juna (na primer 30. juna) neće prikazati tu stavku jer je već zatvorena. Ako se, međutim, pregled radi za datum pre 28. juna (na primer 20. juna), stavka će biti prikazana jer je tog datuma još uvek bila otvorena.
 
-**Vrijednosti dospjelosti i plaćanja na datume**: s aktivnom zastavicom, bit će prikazane otvorene stavke samo s datumom otvaranja dospijeća i datumom plaćanja; s deaktiviranom zastavicom, bit će prikazane sve stavke. 
+**Dospeća i plaćanja po datumima:** kada je opcija uključena, prikazuju se samo otvorene stavke sa datumom otvaranja i datumom plaćanja. Kada je isključena, prikazuju se sve stavke.
 
-**Sintetski**: ako je zastavica aktivna, skriva daljnje stupce koji se odnose na podatke o plaćanju, ako je deaktivirana, omogućuje prikaz svih pojedinosti.  
+**Sintetički prikaz:** kada je opcija uključena, sakrivaju se dodatne kolone koje se odnose na podatke o plaćanju. Kada je isključena, prikazuju se svi detalji.
 
-**S računima koji dospijevaju**: budući da nakon obračuna izdavanja mjenica (mjenica, potvrda banke i sl.) dolazi do storniranja odobrenja prema kupcu i istovremenog zatvaranja otvorene stavke, aktiviranjem ove zastavice, datum dospijeća je "ispravljen" kako bi se također uzeli u obzir i stavke koje će biti zatvorene.  
+**Sa računima koji dospevaju:** pošto se nakon knjiženja instrumenata naplate (menice, bankarske doznake i sl.) vrši storno potraživanja od kupca i istovremeno zatvaranje otvorene stavke, aktiviranjem ove opcije datum dospeća se koriguje kako bi bile obuhvaćene i takve stavke koje su formalno zatvorene.
 
-**Pretvorba valuta**: odabirom valute iz padajućeg izbornika stavke će se pretvoriti u odabranu valutu po referentnom tečaju toga dana.  
+**Preračun valuta:** izborom valute iz padajuće liste sve stavke će biti preračunate u izabranu valutu prema važećem kursu na dan obrade.
 
-MOGUĆI KRITERIJI GRUPIRANJA KOJI SE MOGU AKTIVIRATI
+### MOGUĆI KRITERIJUMI GRUPISANJA KOJI SE MOGU AKTIVIRATI
 
 ![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image03.png)
 
-Napomena: Naziv tvrtke = grupiranje na temelju podataka o kupcu ili dobavljaču.  
+**Napomena:**
 
-Banka = grupiranje po banci plaćanja. 
+- **Naziv preduzeća** = grupisanje na osnovu podataka o kupcu ili dobavljaču.
+- **Banka** = grupisanje prema banci plaćanja.
+- **Datum dospeća** = grupisanje prema datumu dospeća plaćanja, pri čemu se sve otvorene stavke prikazuju hronološkim redosledom.
 
-Datum krajnjeg roka = grupiranje će se odvijati po isteku datuma plaćanja, predstavljajući sve otvorene stavke kronološkim redoslijedom. 
-
-PODRUČJE **Dani**: koristi se samo za ispis Izvješća o isteku i nije relevantno za ovaj ispis.
+Područje **Dani** koristi se isključivo za izveštaj **Izveštaj o dospeću** i nije relevantno za ovaj izveštaj.
 
 ![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image04.png)
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

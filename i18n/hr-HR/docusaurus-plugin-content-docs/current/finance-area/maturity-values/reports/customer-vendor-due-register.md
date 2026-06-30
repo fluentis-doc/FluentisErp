@@ -19,7 +19,7 @@ Na vrhu obrasca nalaze se različiti filteri s osnovnim podacima:
 
 **Pozicija**: padajući izbornik s dodatnom kodificiranim statusima otvorenih stavaka. Uglavnom se ne koristi.
 
-**Plaćanje**: filtar prema vrsti plaćanja pohranjenoj unutar otvorene stavke (generira se tijekom stavaranja otvorene stavke prema uvjetima plaćanja osim, ako se ručno ne mijenja).
+**Plaćanje**: filtar prema vrsti plaćanja pohranjenoj unutar otvorene stavke (generira se tijekom stvaranja otvorene stavke prema uvjetima plaćanja osim, ako se ručno ne mijenja).
 
 **Šifra dokumenta**: filtriranje prema šifri vrste dokumenta povezanim s otvorenom stavkom (npr. faktura ili odobrenje).  
 
