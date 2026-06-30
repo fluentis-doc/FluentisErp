@@ -11,15 +11,15 @@ Standardno se predlažu otvorene stavke (polje **Status** filtra popunjava se st
 
 Provođenjem pretrage (naredba **Traži** na traci izbornika) dospijeće će biti prikazano sa svim relevantnim informacijama.
 
-**Za detaljna prikazana polja pogledajte [Glosar](/docs/guide/common/glossary/glossary-intro).**
+**Za detaljna prikazana polja pogledajte [Pojmovnik](/docs/guide/common/glossary/glossary-intro).**
 
 **SPECIFIČNA POLJA ZAGLAVLJA:**
 
-**Stavke otvorene na**: predstavlja referentni datum na koji bi se stavka trebala smatrati otvorenom (na primjer, danas može biti zatvorena, ali predstavljajući je od jučer, može se predstavljati kao otvorena jer još nije plaćena). Za korištenje ovog polja uklonite status Otvoreno iz glavnog filtra **Stanje (pozicija)**.
+**Otvorene stavke na dan**: predstavlja referentni datum na koji bi se stavka trebala smatrati otvorenom (na primjer, danas može biti zatvorena, ali predstavljajući je od jučer, može se predstavljati kao otvorena jer još nije plaćena). Za korištenje ovog polja uklonite status Otvoreno iz glavnog filtra **Stanje (pozicija)**.
 
-**S računima koji dospijevaju**: na sličan način kao ispisi modula omogućuje uključivanje i onih otvorenih stavki koje bi bile zatvorene, ali su pretvorene u aktivne efekte (npr. RiBa), te su stoga još uvijek relevantne jer još nisu konačno naplaćene. Za korištenje ovog polja uklonite status Otvorena iz glavnog filtra **Stanje (pozicija)**.
+**S računima koji dospijevaju**: slično kao i u izvještajima modula, omogućuje uključivanje i onih otvorenih stavaka koje su formalno zatvorene, ali su pretvorene u aktivne naplatne instrumente (npr. Ri.Ba.) te su i dalje relevantne jer naplata još nije konačno izvršena. Za korištenje ove opcije potrebno je u glavnom filtru 'Status' ukloniti oznaku 'Otvorena'.
 
-**Pokaži jamčevine**: polje koje omogućuje prikaz jamčevina/depozita naplaćenih od kupaca. Ove posebne naplate predstavljene su otvorenim stavkama koje unutar forme za upravljanje otvorenim stavkama imaju popunjeno polje **Konto depozita**. Kada se zatvore računovodstvenim knjiženjem naplate, u sekciji dnevnika knjiženja umjesto standardnog knjiženja konta kupca knjiži se Konto depozita definiran unutar otvorene stavke koja se naplaćuje.
+**Pokaži jamčevine**: polje koje omogućuje prikaz jamčevina/depozita naplaćenih od kupaca. Ove posebne naplate predstavljene su otvorenim stavkama koje unutar forme za upravljanje otvorenim stavkama imaju popunjeno polje **Konto depozita**. Kada se zatvore računovodstvenim knjiženjem naplate, u sekciji dnevnika knjiženja umjesto standardnog knjiženja konta kupca, knjiži se Konto depozita definiran unutar otvorene stavke koja se naplaćuje.
 
 Konkretno, za svaki redak koji odgovara dospijeću postoji naredba (+) koja vam omogućuje pregled dodatnih i prvobitno skrivenih informacija: to su sva plaćanja povezana sa zatvorenom ili djelomično otvorenom igrom.
 
@@ -53,7 +53,7 @@ Konkretno, za svaki redak koji odgovara dospijeću postoji naredba (+) koja vam 
 
 
 :::tip[NAPOMENA: Ažurirajte stanje stavki]
-Od verzija Fluentis2021 i novijih više nisu prisutni triggeri i stored procedure koji izvršavaju postupke izračuna ili ponovnog izračuna. Jedna od procedura koja se ranije izvršavala na razini baze podataka bila je automatski ponovni izračun statusa otvorenih stavki, posebno statusa **Dospjela** umjesto generičkog statusa Otvorena.
+Od verzija Fluentis2021 i novijih više nisu prisutni *triggeri* i *stored procedure*koji izvršavaju postupke izračuna ili ponovnog izračuna. Jedna od procedura koja se ranije izvršavala na razini baze podataka bila je automatski ponovni izračun statusa otvorenih stavki, posebno statusa **Dospjela** umjesto generičkog statusa Otvorena.
 
 Podsjećamo da, ako želite ignorirati stanje *Isteklo* u svrhu filtriranja, možete koristiti filtre u zaglavlju obrasca prema datumu isteka kako biste postigli isti rezultat.
 

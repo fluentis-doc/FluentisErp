@@ -3,62 +3,58 @@ title: Pretraga dospijeća plaćanja
 sidebar_position: 2
 ---
 
-Ova forma omogućuje pretraživanje dospijeća pomoću polja u zaglavlju, koje predstavlja područje filtera za podatke koji će biti predloženi, te uređivanje svakog pojedinačnog dospijeća s dvostrukim klikom miša.
+Ovaj obrazac omogućava pretragu dospijeća korišćenjem polja u zaglavlju, koja predstavljaju oblast filtera za podatke koji će biti prikazani, kao i uređivanje pojedinačnog dospijeća dvostrukim klikom miša.
 
-Daljnja korisna polja za filtar pretraživanja dostupna su otvaranjem **proširenja** prisutnih u zaglavlju finance-area/maturity-values/maturity-values/image03.png
+Dodatna polja za filtriranje dostupna su otvaranjem **proširenja** u zaglavlju obrasca.
 
-Standardno se predlažu otvorene stavke (polje **Status** filtra popunjava se stavkom Otvorena stavka prilikom otvaranja obrasca). Moguće je pregledati sva podudaranja jednostavnim brisanjem unosa iz polja filtra kako se ne bi filtrirala određena vrsta.
+Podrazumevano se prikazuju otvorene stavke (polje **Status** u filteru je pri otvaranju obrasca automatski postavljeno na **Otvorena stavka**). Moguće je prikazati sve stavke jednostavnim brisanjem vrednosti iz ovog filtera, kako se ne bi ograničila pretraga na određeni status.
 
-Provođenjem pretrage (naredba **Traži** na traci izbornika) dospijeće će biti prikazano sa svim relevantnim informacijama.
+Pokretanjem pretrage (komanda **Traži** na traci sa alatkama), dospijeća će biti prikazana sa svim relevantnim informacijama.
 
-**Za detaljna prikazana polja pogledajte [Glosar](/docs/guide/common/glossary/glossary-intro).**
+**Za detaljan opis prikazanih polja pogledajte [Pojmovnik](/docs/guide/common/glossary/glossary-intro).**
 
-**SPECIFIČNA POLJA ZAGLAVLJA:**
+## SPECIFIČNA POLJA ZAGLAVLJA
 
-**Stavke otvorene na**: predstavlja referentni datum na koji bi se stavka trebala smatrati otvorenom (na primjer, danas može biti zatvorena, ali predstavljajući je od jučer, može se predstavljati kao otvorena jer još nije plaćena). Za korištenje ovog polja uklonite status Otvoreno iz glavnog filtra **Stanje (pozicija)**.
+**Otvorene stavke na datum**: predstavlja referentni datum na koji se stavka smatra otvorenom. Na primer, stavka danas može biti zatvorena, ali ako se pregled vrši za jučerašnji datum, prikazaće se kao otvorena jer tada još nije bila plaćena. Da biste koristili ovo polje, uklonite status **Otvorena** iz glavnog filtera **Status (stavke)**.
 
-**S računima koji dospijevaju**: na sličan način kao ispisi modula omogućuje uključivanje i onih otvorenih stavki koje bi bile zatvorene, ali su pretvorene u aktivne efekte (npr. RiBa), te su stoga još uvijek relevantne jer još nisu konačno naplaćene. Za korištenje ovog polja uklonite status Otvorena iz glavnog filtra **Stanje (pozicija)**.
+**Sa dospijećima u naplati**: slično izveštajima modula, omogućava uključivanje i onih otvorenih stavki koje su formalno zatvorene, ali su pretvorene u aktivne instrumente naplate (npr. Ri.Ba.), pa su i dalje relevantne zato što naplata još nije konačno izvršena. Da biste koristili ovu opciju, potrebno je u glavnom filteru **Status** ukloniti oznaku **Otvorena**.
 
-**Pokaži jamčevine**: polje koje omogućuje prikaz jamčevina/depozita naplaćenih od kupaca. Ove posebne naplate predstavljene su otvorenim stavkama koje unutar forme za upravljanje otvorenim stavkama imaju popunjeno polje **Konto depozita**. Kada se zatvore računovodstvenim knjiženjem naplate, u sekciji dnevnika knjiženja umjesto standardnog knjiženja konta kupca knjiži se Konto depozita definiran unutar otvorene stavke koja se naplaćuje.
+**Prikaži depozite**: omogućava prikaz depozita/jamčevina naplaćenih od kupaca. Ove posebne naplate predstavljene su otvorenim stavkama koje u obrascu za upravljanje otvorenim stavkama imaju popunjeno polje **Konto depozita**. Kada se zatvore računovodstvenim knjiženjem naplate, u sekciji dnevnika knjiženja umesto standardnog knjiženja konta kupca knjiži se konto depozita definisan u otvorenoj stavci koja se naplaćuje.
 
-Konkretno, za svaki redak koji odgovara dospijeću postoji naredba (+) koja vam omogućuje pregled dodatnih i prvobitno skrivenih informacija: to su sva plaćanja povezana sa zatvorenom ili djelomično otvorenom igrom.
+Za svaki red koji predstavlja dospijeće dostupna je komanda **(+)**, kojom se mogu prikazati dodatne, inicijalno skrivene informacije, odnosno sva plaćanja povezana sa zatvorenom ili delimično otvorenom stavkom.
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image01.png)
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image02.png)
 
-**SPECIFIČNA POLJA ZA DOPUNSKI OBRAZAC**:
+## SPECIFIČNA POLJA DODATNOG OBRASCA
 
-**U plaćanju:**: označava da je stavka već umetnuta u uplatnicu dobavljača, ali uplatnica još nije obračunata i stoga stavka još nije zatvorena.
+**U plaćanju**: označava da je stavka već uključena u nalog za plaćanje dobavljača, ali nalog još nije proknjižen, pa stavka još nije zatvorena.
 
-**Knjiženo**: označava da je stavka povezana s knjigovodstvenim unosom.
+**Proknjiženo**: označava da je stavka povezana sa računovodstvenim knjiženjem.
 
-**Nije plativo**: označava da je korisnik blokirao dospijeće tako da se ne plaća. Blokada se može postaviti izravno u trenutku kreiranja ili kasnije i to iz **[kartice Stavke](/docs/finance-area/ledger-records/records/ledger-record)** računovodstvenog zapisa koji generira stavku ili uređivanjem same stavke iz obrasca u komentaru.
+**Nije plativo**: označava da je korisnik blokirao dospijeće kako ne bi bilo plaćeno. Blokada se može postaviti prilikom kreiranja stavke ili naknadno, iz **[kartice Stavke](/docs/finance-area/ledger-records/records/ledger-record)** računovodstvenog zapisa koji je generisao stavku ili uređivanjem same stavke iz ovog obrasca.
 
-**Traka Izbornika**:
-
-
+## Traka sa alatkama
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Pokreće traženje podudaranja prema podacima unesenim u filtar |
-| Nova dospijeća plaćanja | Omogućuje ručno umetanje novog dospijeća |
-| Izmijeni dospijeća plaćanja | Unesite obrazac za uređivanje 'Upravljanje dospijećem’ za odabrano dospijeće (kao alternativa dvostrukom kliku mišem na liniju koju želite promijeniti) |
-| Prikaži | Unesite obrazac 'Upravljanje dospijećima’ u načinu samo za prikaz, neće biti moguće spremiti promjene |
-| Izbriši označena dospijeća plaćanja | Izbriši odabrani red |
-| Promijeni poziciju dospijeća plaćanja | Prikazuje obrazac za traženje pozicije dospijeća koji vam omogućuje dodjeljivanje odabranog statusa dospijeća bez potrebe za ulaskom u obrazac za uređivanje 'Upravljanje dospijećima’ |
-| Ažuriraj status dospijeća plaćanja | Izvodi osvježavanje statusa dospijeća za ispravan prikaz. |
-| Podijeli dospijeća plaćanja | Otvara skočni obrazac koji omogućuje da se odabranu stavku podijeli u više serija željene količine i roka trajanja. **Jasno je da se zbroj dobivenih stavaka mora podudarati s količinom početne serije**. Iznos početne stavke automatski se predlaže u polju **Podijeli**, nakon čega je potrebno u retke mreže unijeti iznose i datume dospijeća novih stavki (primjerice kada se jedna stavka želi podijeliti na dvije ili tri), a program će automatski izvršiti operaciju.
-| Izmijeni zapis | Omogućuje izravno uređivanje računovodstvenog zapisa povezanog s odabranom stavkom. Ako odabrana stavka nije povezana s knjigovodstvenim unosom, tipka će biti onemogućen.|
+| Traži | Pokreće pretragu prema podacima unetim u filter. |
+| Novo dospijeće | Omogućava ručni unos novog dospijeća. |
+| Izmeni dospijeće | Otvara obrazac **Upravljanje dospijećem** za uređivanje izabranog dospijeća (alternativno dvostrukom kliku na željeni red). |
+| Prikaži | Otvara obrazac **Upravljanje dospijećem** u režimu samo za pregled, bez mogućnosti čuvanja izmena. |
+| Obriši označena dospijeća | Briše izabrani red. |
+| Promeni status dospijeća | Otvara obrazac za izbor statusa dospijeća i omogućava dodelu izabranog statusa bez ulaska u obrazac **Upravljanje dospijećem**. |
+| Ažuriraj status dospijeća | Osvežava status dospijeća radi ispravnog prikaza. |
+| Podeli dospijeće | Otvara iskačući obrazac koji omogućava podelu izabrane stavke na više rata željenog iznosa i roka dospeća. **Zbir svih novonastalih stavki mora odgovarati iznosu početne stavke.** Iznos početne stavke automatski se predlaže u polju **Podeli**, nakon čega je potrebno uneti iznose i datume dospeća novih stavki u redove tabele (na primer kada se jedna stavka deli na dve ili tri), a program će automatski izvršiti podelu. |
+| Izmeni zapis | Omogućava direktno uređivanje računovodstvenog zapisa povezanog sa izabranom stavkom. Ako izabrana stavka nije povezana sa računovodstvenim zapisom, dugme će biti onemogućeno. |
 
+:::tip[NAPOMENA: Ažuriranje statusa stavki]
 
-:::tip[NAPOMENA: Ažurirajte stanje stavki]
-Od verzija Fluentis2021 i novijih više nisu prisutni triggeri i stored procedure koji izvršavaju postupke izračuna ili ponovnog izračuna. Jedna od procedura koja se ranije izvršavala na razini baze podataka bila je automatski ponovni izračun statusa otvorenih stavki, posebno statusa **Dospjela** umjesto generičkog statusa Otvorena.
+Od verzije **Fluentis2021** i novijih više nisu prisutni *triggeri* i *stored procedure* koji su izvršavali postupke izračuna ili ponovnog izračuna. Jedna od procedura koja se ranije izvršavala na nivou baze podataka bila je automatski ponovni obračun statusa otvorenih stavki, naročito promenu statusa iz **Otvorena** u **Dospela**.
 
-Podsjećamo da, ako želite ignorirati stanje *Isteklo* u svrhu filtriranja, možete koristiti filtre u zaglavlju obrasca prema datumu isteka kako biste postigli isti rezultat.
+Podsećamo da, ukoliko želite da zanemarite status **Dospela** prilikom filtriranja, isti rezultat možete postići korišćenjem filtera po datumu dospeća u zaglavlju obrasca.
 
-Za korisnike koji imaju alat ***Supervisor***, moguće je omogućiti zadatak s kodom FI_MaturitiesOverdueStatusFix koji postavlja stanje *Isteklo* na stavke s preostalim iznosom != 0 e datumom isteka < danas.
+Korisnici koji imaju alat **Supervisor** mogu omogućiti zadatak sa šifrom **FI_MaturitiesOverdueStatusFix**, koji automatski postavlja status **Dospela** svim stavkama koje imaju preostali iznos različit od 0 i datum dospeća manji od današnjeg datuma.
+
 :::
-
-
-

@@ -16,7 +16,7 @@ Iz ove pozicije moguće je:
 
 - mijenjati podatke već postojećeg dospijeća. 
 
-Konkretno, obično se s ove pozicije plaćanje može dodati ili ukloniti korištenjem odgovarajućeg flaga:
+Konkretno, obično se s ove pozicije plaćanje može dodati ili ukloniti korištenjem odgovarajuće opcije:
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image01.png) 
 
@@ -26,13 +26,13 @@ ili uklanjanjem za otključavanje (u tom trenutku će se pojaviti i korisnik koj
 
 ![](/img/it-it/finance-area/maturity-values/maturity-values/maturity-values-management/image02.png)
 
-**Podkonto plaćanja**: ovaj podkonto je povezan s kreiranim stavkama kako bi se moglo provjeriti plaćanje/naplate u ispisima i u simulacijama novčanog toka; stoga se može ispuniti unosom bankovnog računa tvrtke na koju se stavka odnosti. Polje će se popuniti automatski, za stavke kreirane iz knjigovodstvene evidencije, ako je u **[šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)** popunjeno odgovarajuće polje.
+**Podkonto plaćanja**: ovaj podkonto je povezan s kreiranim stavkama kako bi se moglo provjeriti plaćanje/naplate u ispisima i u simulacijama novčanog toka; stoga se može ispuniti unosom bankovnog računa tvrtke na koju se stavka odnosi. Polje će se popuniti automatski, za stavke kreirane iz knjigovodstvene evidencije, ako je u **[šifarniku dobavljača](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/finance)** popunjeno odgovarajuće polje.
 
 **Predstavnik/Agent**: polje se popunjava automatski za zapise generirane automatskim obračunom prodajnih računa uz naznaku agenta vezanog uz sam račun. Informacije su korisne za detaljnije filtriranje.
 
 **Očekivani datum**: ovo polje se može ispuniti kao pomoć pri obradi **[Novčanog tijeka](/docs/treasury/cash-flow/cash-flow/cash-flow-management)** (funkcionalnost prisutna u području riznice). Stoga se može naznačiti očekivani datum preuzimanja ili plaćanja koji se razlikuje od datuma isteka stavke i koji će biti prijavljen u izračunima novčanog toka (na koje se referencira). Treba imati na umu da će se u nedostatku određene naznake definirane u dotičnom polju, očekivani datum valorizirati u obradi novčanog toka počevši od datuma isteka, dodajući podatke (ako postoje) sadržane u polje **Prosječno kašnjenje dana plaćanja** prisutno u detaljima kupca ili dobavljača.
 
-Za ostala polja pogledati **[Pojmovnik](/docs/guide/common/glossary/glossary-intro)** i pogledati upute koje se odnose na  **[Karticu stavki u računovodstvenom zapisu](/docs/finance-area/ledger-records/records/ledger-record)**.
+Za ostala polja pogledati **[Pojmovnik](/docs/guide/common/glossary/glossary-intro)** i pogledati upute koje se odnose na **[Karticu otvorenih stavaka u računovodstvenom zapisu](/docs/finance-area/ledger-records/records/ledger-record)**.
 
 **BILJEŠKA:**
 
@@ -42,7 +42,7 @@ Ako se, primjerice, u isto vrijeme unese računovodstveni unos koji otvara stanj
 
 ## Grupirane dospjele vrijednosti 
 
-Moguće je spojiti druga dospijeća u dospijeće koje se trenutno uređuje. Naredba se nalazi u traci izbornika.  **Dodaj dospijeća plaćanja za grupiranje.**.
+Moguće je spojiti druga dospijeća u dospijeće koje se trenutno uređuje. Naredba se nalazi u traci izbornika. **Dodaj dospijeća plaćanja za grupiranje.**.
 
 Rezultat će biti sljedeći:
 
@@ -60,7 +60,7 @@ Rezultat će biti sljedeći:
 > **Dodaj dospijeća plaćanja za grupiranje**: omogućuje odabir drugih dospijeća koje će se spojiti s dospijećem koje se uređuje;    
 > **Izbriši dospijeća plaćanja za grupiranje**: briše odabrano dospijeće iz prikaza ' Grupiranje dospijeća, vraćajući joj autonomiju u odnosu na dospijeće koja se uređuje (koja je jedina vidljiva u usporedbi s onima koje su spojene s njom);        
 > **Kreiraj iz dospijeća plaćanja/plaćanja**: omogućuje stvaranje dospijeća iz plaćanja. Korisno za usklađivanje razlika ili operacije kompenzacije. Naredba otvara obrazac za traženje plaćanja iz kojeg možete kreirati dospijeće. Obično se izvodi odmah nakon ručnog kreiranja novog dospijeća iz obrasca za pretraživanje dospijeća;      
-> **Poveznica zapisivanja**: omogućuje povezivanje dospijeća koje se uređuje s računovodstvenim zapisom (korisno ako je dospijeće kreirano ručno).  
+> **Izmijeni zapis**: omogućuje povezivanje dospijeća koje se uređuje s računovodstvenim zapisom (korisno ako je dospijeće kreirano ručno).  
 
 ## Povezano plaćanje  
 
