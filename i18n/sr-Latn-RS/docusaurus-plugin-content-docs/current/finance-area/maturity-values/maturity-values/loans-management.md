@@ -3,53 +3,118 @@ title: Upravljanje kreditima
 sidebar_position: 2
 ---
 
-### Uvod
+## Uvod
 
-Iz ove forme moguće je pretraživati i unositi nove pasivne kredite (hipoteke).
+Iz ovog obrasca moguće je pretraživati i unositi nove pasivne kredite (hipotekarne kredite).
+Funkcionalnost omogućava detaljan unos svih relevantnih podataka, naročito plana otplate, kako bi se kasnije omogućio automatski obračun i knjiženje rata u predviđenim rokovima.
+Glavna polja prikazana u pregledu dostupna su i u detaljima kredita.
 
-Upravljanje omogućuje detaljan unos svih relevantnih podataka, posebice plana otplate, kako bi se naknadno pristupilo automatskom obračunu plaćanja obroka u predviđenim rokovima.
+Za unos novog kredita kliknite na **Novo**.
 
-Glavna polja prikazana u formi također su prisutna u detaljima.
+Prvi obavezni podatak koji je potrebno uneti jeste **Vrsta kredita**, putem padajuće liste povezane sa tabelom **Vrste kredita** (kojoj se može pristupiti i desnim klikom ili komandom **Otvori obrazac**).
 
-Za unos nove hipoteke/kredita pritisnite **Novo**.
+## Tabela Vrste kredita
 
-Prvi obvezni podatak koji se upisuje je vrsta kredita, preko kombiniranog okvira koji upućuje na konkretnu tablicu Vrste kredite (dostupnoj i desnom tipkom i naredbom Otvori obrazac).
+:::note POLJA U TABELI VRSTA KREDITA
 
-### Tablica vrsta kredita
+**Vrsta kredita**: šifra vrste kredita.
 
-:::note POLJA U TABLICI VRSTA HIPOTEKE
-**Vrsta kredita**: šifra za opoziv podataka;
+**Opis vrste kredita**: detaljan opis vrste kredita.
 
-**Vrsta opisa bankovnog zajma**: prošireni opis podataka;
+**Vrsta finansijskog toka / Opis**: polje za izbor vrste finansijskog toka (iz tabele **Vrste finansijskog toka**) koja će biti povezana sa ratama kredita u obradi **Cash Flow**, kako bi se rate automatski prikazivale u projekciji novčanog toka.
 
-**Vrsta tijeka / opis**: polje za odabir (u tablici **Vrste financijskog toka**) vrste financijskog toka koji će biti povezan s ratama kredita u obradi Cash Flow-a, kako bi se one mogle automatski prikazivati u obradi novčanog toka.
+**Predložak**: računovodstveni predložak koji će se koristiti za automatsko knjiženje rata.
 
-**Predložak**: računovodstveni predložak kombiniran kako bi se omogućilo automatsko obračunavanje rata.
 :::
 
-### Novi detalji o kreditu
+## Detalji novog kredita
 
-Ostala obavezna polja su opis ugovora i glavni računi za kasnije računovodstvene operacije
+Pored ---
+title: Upravljanje kreditima
+sidebar_position: 2
+---
 
-- Banka: za unos bankovnog računa na koji će se uplate rate;
-- Dug: za unos ugnog računa s kojeg će biti otkazana **otplata glavnice** (npr. "Hipotekarne obveze");
-- Kamate: za unos računa na koji će se obračunavati kamata svake rate;
-- Troškovi: za unos računa na koji će se obračunavati provizija ili drugi troškovi svake rate;
+## Uvod
 
-Druga važna polja su plaćeni iznos, valuta (osobito ako se razlikuje od eura, aktivira relevantni tečaj)
+Iz ovog obrasca moguće je pretraživati i unositi nove pasivne kredite (hipotekarne kredite).
+Funkcionalnost omogućava detaljan unos svih relevantnih podataka, naročito plana otplate, kako bi se kasnije omogućio automatski obračun i knjiženje rata u predviđenim rokovima.
+Glavna polja prikazana u pregledu dostupna su i u detaljima kredita.
+Za unos novog kredita kliknite na **Novo**.
+Prvi obavezni podatak koji je potrebno uneti jeste **Vrsta kredita**, putem padajuće liste povezane sa tabelom **Vrste kredita** (kojoj se može pristupiti i desnim klikom ili komandom **Otvori obrazac**).
 
-**APR:** kamatna stopa koja se obračunava na hipoteku, podaci se koriste u postupku automatskog izračuna otplatnog plana.
+## Tabela Vrste kredita
 
-Polje Verzija povezano je s tipkom  **Nova verzija** koji se nalazi u obrascu za pretraživanje koji omogućuje, čak i nakon umetanja amortizacijskog plana i obračuna nekih rata, izmjene u planu arhiviranjem prethodne situacije.  
+:::note POLJA U TABELI VRSTA KREDITA
 
-U pregled detalja upisuje se amortizacijski plan koji se sastoji od svih očekivanih obroka, popunjavanja datuma (koji će biti uključeni u računovodstveni postupak), dijela kapitala i dijela kamata te pripadajućih provizija (u stupcu **Trošak**)
+**Vrsta kredita**: šifra vrste kredita.
 
-Sljedećim stupcima, označenim plavom bojom, upravlja Fluentis kako bi se istaknuo ukupni iznos rate, knjiženje provedeno korištenjem odgovarajuće procedure i referenca na generirani računovodstveni zapis.
+**Opis vrste kredita**: detaljan opis vrste kredita.
 
-### Postupci dostupni na traci izbornika
+**Vrsta finansijskog toka / Opis**: polje za izbor vrste finansijskog toka (iz tabele **Vrste finansijskog toka**) koja će biti povezana sa ratama kredita u obradi **Cash Flow**, kako bi se rate automatski prikazivale u projekciji novčanog toka.
 
-Dostupni postupci, tj. izračun amortizacijskog plana, promjena datuma rate i ažuriranje troškova rate, isti su kao i oni dostupni za upravljanje leasingom, stoga pogledajte [**odgovarajuću stranicu**](/docs/finance-area/leasing/new).
+**Predložak**: računovodstveni predložak koji će se koristiti za automatsko knjiženje rata.
 
-### Knjiženje rata kredita
+:::
 
-To se radi pomoću naredbi koje se nalaze na traci izbornika **Knjiženje** ( i **Vrati knjiženje** za poništavanje operacije)
+## Detalji novog kredita
+
+Pored vrste kredita, obavezno je uneti opis ugovora i glavna konta koja će se koristiti prilikom računovodstvenih knjiženja:
+- **Banka**: konto banke sa kojeg će se vršiti plaćanje rata.
+- **Dug**: konto sa kojeg će se evidentirati **otplata glavnice** (na primer *Hipotekarne obaveze*).
+- **Kamata**: konto na koji će se knjižiti kamata za svaku ratu.
+- **Troškovi**: konto na koji će se knjižiti provizije ili drugi troškovi vezani za pojedinačnu ratu.
+
+Ostala važna polja su iznos kredita i valuta (posebno kada nije u pitanju evro, jer se tada aktivira obračun po odgovarajućem kursu).
+
+**APR**: godišnja efektivna kamatna stopa kredita. Ovaj podatak koristi se pri automatskom izračunavanju plana otplate.
+
+Polje **Verzija** povezano je sa dugmetom **Nova verzija**, koje se nalazi u obrascu za pretragu. Ono omogućava da se, čak i nakon unosa plana otplate i knjiženja pojedinih rata, izvrše izmene plana uz arhiviranje prethodne verzije.
+
+U tabeli sa detaljima unosi se **plan otplate**, koji sadrži sve planirane rate, uključujući:
+- datum dospeća (koji će se koristiti u računovodstvenim postupcima),
+- deo glavnice,
+- deo kamate,
+- pripadajuće provizije (kolona **Trošak**).
+
+Kolonama označenim plavom bojom upravlja Fluentis i u njima se prikazuju:
+
+- ukupan iznos rate,
+- informacija o izvršenom knjiženju,
+- referenca na generisani računovodstveni zapis.
+
+## Procedure dostupne na traci sa alatkama
+
+Dostupne procedure, odnosno izračun plana otplate, promena datuma rate i ažuriranje troškova rate, iste su kao i kod upravljanja **leasingom**, pa pogledajte [**odgovarajuću stranicu**](/docs/finance-area/leasing/new).
+
+## Knjiženje rata kredita
+
+Knjiženje rata vrši se pomoću komandi na traci sa alatkama **Knjiženje**, odnosno **Poništi knjiženje** za storniranje prethodno izvršenog knjiženja.rste kredita, obavezno je uneti opis ugovora i glavna konta koja će se koristiti prilikom računovodstvenih knjiženja:
+- **Banka**: konto banke sa kojeg će se vršiti plaćanje rata.
+- **Dug**: konto sa kojeg će se evidentirati **otplata glavnice** (na primer *Hipotekarne obaveze*).
+- **Kamata**: konto na koji će se knjižiti kamata za svaku ratu.
+- **Troškovi**: konto na koji će se knjižiti provizije ili drugi troškovi vezani za pojedinačnu ratu.
+
+Ostala važna polja su iznos kredita i valuta (posebno kada nije u pitanju evro, jer se tada aktivira obračun po odgovarajućem kursu).
+
+**APR**: godišnja efektivna kamatna stopa kredita. Ovaj podatak koristi se pri automatskom izračunavanju plana otplate.
+
+Polje **Verzija** povezano je sa dugmetom **Nova verzija**, koje se nalazi u obrascu za pretragu. Ono omogućava da se, čak i nakon unosa plana otplate i knjiženja pojedinih rata, izvrše izmene plana uz arhiviranje prethodne verzije.
+
+U tabeli sa detaljima unosi se **plan otplate**, koji sadrži sve planirane rate, uključujući:
+- datum dospeća (koji će se koristiti u računovodstvenim postupcima),
+- deo glavnice,
+- deo kamate,
+- pripadajuće provizije (kolona **Trošak**).
+
+Kolonama označenim plavom bojom upravlja Fluentis i u njima se prikazuju:
+- ukupan iznos rate,
+- informacija o izvršenom knjiženju,
+- referenca na generisani računovodstveni zapis.
+
+## Procedure dostupne na traci sa alatkama
+
+Dostupne procedure, odnosno izračun plana otplate, promena datuma rate i ažuriranje troškova rate, iste su kao i kod upravljanja **leasingom**, pa pogledajte [**odgovarajuću stranicu**](/docs/finance-area/leasing/new).
+
+## Knjiženje rata kredita
+
+Knjiženje rata vrši se pomoću komandi na traci sa alatkama **Knjiženje**, odnosno **Poništi knjiženje** za storniranje prethodno izvršenog knjiženja.

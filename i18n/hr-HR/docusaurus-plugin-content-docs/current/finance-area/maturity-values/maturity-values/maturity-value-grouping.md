@@ -13,9 +13,9 @@ Ispis koji odgovara ovoj funkciji pretraživanja također se naziva **[Grupiranj
 
  
 
-**Podkonto:** glavni filter za odabir podračuna koji se odnosi na kupca ili dobavljača.
+**Podkonto:** glavni filter za odabir konta koji se odnosi na kupca ili dobavljača.
 
-**Broj dokumenta:** filter za unos broja dokumenta (račun, porezna potvrda i sl.) koji se odnosi na skupinu paketa ili pakete detalja (aktivacija flaga **Traži ref. unutar grupe**).
+**Broj dokumenta:** filter za unos broja dokumenta (račun, porezna potvrda i sl.) koji se odnosi na skupinu zapisa (aktivacija opcije **Traži refrence na gurpama**).
 
 **Tip grupe**: Otvoreno / Zatvoreno = Iako se pojedinačna dospijeća u grupi mogu otvoriti ili zatvoriti uplatama suprotnih predznaka, cijela se grupa smatra zatvorenom kada su sva dospijeća zatvorena i kada su ukupni dugovi i krediti grupe jednaki. Stoga možete odabrati ovaj uvjet u filtru.
 

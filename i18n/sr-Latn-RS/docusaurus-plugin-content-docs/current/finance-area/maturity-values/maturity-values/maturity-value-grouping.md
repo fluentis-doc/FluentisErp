@@ -1,26 +1,18 @@
 ---
-title: Grupiranje dospijeća plaćanja
+title: Grupisanje dospijeća
 sidebar_position: 3
 ---
 
-Pretraživanje izvršeno ovom formom treba koristiti umjesto funkcionalnosti pretraživanja otvorenih stavki kada postoje grupiranja otvorenih stavki.
+Pretragu putem ovog obrasca treba koristiti umesto standardne pretrage otvorenih stavki kada se koristi funkcionalnost grupisanja otvorenih stavki.
 
-Upravljanje dospijećima kroz grupiranje predstavlja alternativnu i posebnu metodologiju u odnosu na klasičnu, te zahtijeva specifičnu vizualizaciju kako bi se dobila jasna situacija.
+Upravljanje dospijećima putem grupisanja predstavlja alternativni i specifičan način rada u odnosu na klasično upravljanje otvorenim stavkama, pa je za pravilan pregled stanja predviđen poseban prikaz.
 
-Za daljnje **[detalje o grupiranju dospijeća pogledajte ovdje](/docs/finance-area/ledger-records/records/ledger-record)**
+Za više informacija pogledajte **[detalje o grupisanju dospijeća ovde](/docs/finance-area/ledger-records/records/ledger-record)**.
 
-Ispis koji odgovara ovoj funkciji pretraživanja također se naziva **[Grupiranje dospijeća](/docs/finance-area/maturity-values/reports/maturity-value-grouping)**.
+Izveštaj koji odgovara ovoj funkcionalnosti pretrage nosi naziv **[Grupisanje dospijeća](/docs/finance-area/maturity-values/reports/maturity-value-grouping)**.
 
- 
+**Podkonto**: osnovni filter za izbor konta kupca ili dobavljača.
 
-**Podkonto:** glavni filter za odabir podračuna koji se odnosi na kupca ili dobavljača.
+**Broj dokumenta**: filter za unos broja dokumenta (faktura, poreska potvrda i sl.) koji se odnosi na grupu stavki (uz aktiviranu opciju **Traži reference na grupama**).
 
-**Broj dokumenta:** filter za unos broja dokumenta (račun, porezna potvrda i sl.) koji se odnosi na skupinu paketa ili pakete detalja (aktivacija flaga **Traži ref. unutar grupe**).
-
-**Tip grupe**: Otvoreno / Zatvoreno = Iako se pojedinačna dospijeća u grupi mogu otvoriti ili zatvoriti uplatama suprotnih predznaka, cijela se grupa smatra zatvorenom kada su sva dospijeća zatvorena i kada su ukupni dugovi i krediti grupe jednaki. Stoga možete odabrati ovaj uvjet u filtru.
-
-
-
-
-
-
+**Tip grupe**: **Otvorena / Zatvorena** – iako pojedinačna dospijeća unutar grupe mogu biti otvorena ili zatvorena plaćanjima suprotnog predznaka, cela grupa se smatra zatvorenom tek kada su sva dospijeća zatvorena i kada su ukupna dugovanja i potraživanja unutar grupe međusobno izjednačena. Ovaj uslov moguće je koristiti kao kriterijum za filtriranje.

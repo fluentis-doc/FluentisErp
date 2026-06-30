@@ -18,7 +18,7 @@ Daljnji elementi filtera su četiri zastavice koje omogućuju traženje provizij
 
 **Dodatna bilješka**: Prikaz *OTVORENE* *ZATVORENE PROVIZIJE* odnosi se na činjenicu da još ima ostataka za prikupljanje ili da je sve prikupljeno.
 
-U tabeli detalja redovi odgovaraju provizijama obračunatim na fakturi unesenoj prilikom knjiženja fakture.
+U tabeli detalja redovi odgovaraju provizijama obračunanim na fakturi unesenoj prilikom knjiženja fakture.
 
 Ovisno o kriteriju razgraničenja definiranom u bazi podataka agenta (na primjer nakon izvršenog plaćanja) kreirat će se "stornirane" linije (na primjer u slučaju djelomičnog plaćanja ili jedne od raznih otvorenih stavki, kreirat će se linija koja odgovara vrijednost plaćanja). Da bi se to vidjelo, trebate proširiti detalje glavnog retka pomoću odgovarajuće tipke + lijevo od retka.
 

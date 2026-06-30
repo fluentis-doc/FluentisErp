@@ -3,7 +3,7 @@ title: Dospijeća plaćanja za koje su izdane opomene
 sidebar_position: 2
 ---
 
-Pretraživanje opomenutih otvorenih stavki
+Pretraživanje *opomenutih* otvorenih stavki
 
  
 

@@ -1,44 +1,29 @@
 ---
-title: Dospijeća plaćanja za koje su izdane opomene
+title: Dospijeća plaćanja za koje su izdate opomene
 sidebar_position: 2
 ---
 
-Pretraživanje opomenutih otvorenih stavki
+Pretraga otvorenih stavki za koje su izdate opomene.
 
- 
-
-Procedura pretraživanja traženih stavaka omogućuje korisniku pretragu prethodno unesenih podsjetnika s ciljem pregledavanja, izmjene i eventualnog brisanja istih.
-
-
+Procedura pretrage omogućava korisniku pronalaženje prethodno kreiranih opomena radi njihovog pregleda, izmene ili eventualnog brisanja.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za primjenu filtara pretraživanja na cijelu bazu podataka unesenih podsjetnika. |
-| Novo | Poziva postupak za umetanje novog podsjetnika. Obično se podsjetnik stvara automatskim postupkom izrade, stoga je ručni unos vrlo rijedak i manje učinkovit.|
-| Izmjeni | Poziva postupak za izmjenu prethodno unesenog podsjetnika. |
-| Prikaži | Poziva postupak za pregled prethodno unesenog podsjetnika. |
-| Ukloni | Izvodi postupak za brisanje prethodno unesenog podsjetnika.|
+| Traži | Pokreće pretragu primenom definisanih filtera na celu bazu kreiranih opomena. |
+| Novo | Pokreće postupak za ručni unos nove opomene. U praksi se opomene najčešće kreiraju automatski odgovarajućom procedurom, pa je ručni unos retko potreban i manje efikasan. |
+| Izmeni | Otvara postupak za izmenu prethodno kreirane opomene. |
+| Prikaži | Otvara postupak za pregled prethodno kreirane opomene. |
+| Obriši | Briše prethodno kreiranu opomenu. |
 
-**Za informacije koje se odnose na ispise i postupke koji slijede, pogledajte odgovarajuće stavke izbornika**
-
-
+**Za informacije o izveštajima i povezanim procedurama pogledajte odgovarajuće stavke menija.**
 
 | Funkcija | Značenje |
 | --- | --- |
-| Ispis kamata | Poziva proceduru za ispis kamata na zakašnjela plaćanja. |
-| Ispis podsjetnika | Poziva proceduru za ispis podsjetnika. |
-
-
+| Ispis kamata | Pokreće proceduru za štampu kamata na zakašnjela plaćanja. |
+| Ispis opomena | Pokreće proceduru za štampu opomena. |
 
 | Funkcija | Značenje |
 | --- | --- |
-|  [Obračun kamata](/docs/finance-area/maturity-values/procedures/interest-calculation/parameters-interests-in-arrears-calculation)  | Poziva proceduru za vođenje obračuna kamata na zakašnjela plaćanja. |
-|  [Automatsko kreiranje podsjetnika](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue)  | Poziva postupak za automatsko kreiranje podsjetnika. |
-|  [Generiranje podsjetnika](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro)  | Poziva postupak za ručno kreiranje podsjetnika. |
-
-
-
-
-
-
-
+| [Obračun kamata](/docs/finance-area/maturity-values/procedures/interest-calculation/parameters-interests-in-arrears-calculation) | Pokreće proceduru za obračun kamata na zakašnjela plaćanja. |
+| [Automatsko kreiranje opomena](/docs/finance-area/maturity-values/procedures/dunning-letters-automatic-issue) | Pokreće proceduru za automatsko kreiranje opomena. |
+| [Generisanje opomena](/docs/finance-area/maturity-values/procedures/generation-of-dunning-letters/generation-of-dunning-letters-intro) | Pokreće proceduru za ručno kreiranje opomena. |

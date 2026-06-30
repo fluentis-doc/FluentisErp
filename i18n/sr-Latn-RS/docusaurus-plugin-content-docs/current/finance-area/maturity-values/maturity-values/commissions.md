@@ -3,31 +3,33 @@ title: Provizije
 sidebar_position: 7
 ---
 
-Ovaj obrazac omogućuje pregled obračunatih i plaćenih provizija (agentskih provizija).
+Ovaj obrazac omogućava pregled obračunatih i isplaćenih provizija (provizija agenata).
 
-Odnosi se na upravljanje agentskim provizijama koje provodi administrativni modul.
+Odnosi se na upravljanje provizijama agenata koje se obavlja u okviru administrativnog modula.
 
-U odjeljku zaglavlja nalaze se filtri za Agenta/Predstavnika i za neke računovodstvene elemente, budući da su linije koje se odnose na provizije već umetnute kada se prodajni račun koji ih utvrđuje obračunava.
+U zaglavlju obrasca nalaze se filteri za **Agenta/Predstavnika** i pojedine računovodstvene elemente, s obzirom na to da se stavke provizija automatski kreiraju prilikom knjiženja izlaznog računa na osnovu kojeg se provizija obračunava.
 
-:::note BILJEŠKA
-**Unutar predloška knjiženja s kojim se knjiži faktura, zastavica za upravljanje provizijama mora biti aktivna, što će osigurati da se podaci unesu u posebnu karticu posvećenu provizijama prikazanim unutar računovodstvenog zapisa.**
+:::note NAPOMENA
+**U računovodstvenom predlošku koji se koristi za knjiženje fakture mora biti aktivirana opcija za upravljanje provizijama. Na taj način će podaci biti upisani u posebnu karticu namenjenu provizijama koja je dostupna u okviru računovodstvenog zapisa.**
 :::
 
+Dodatni elementi za filtriranje predstavljaju četiri opcije koje omogućavaju pretragu:
 
-Daljnji elementi filtera su četiri zastavice koje omogućuju traženje provizija koje treba platiti, ili provizija koje se plaćaju ili oboje, te provizije koje nisu ili jesu akumulirane.
+- provizija koje treba isplatiti,
+- provizija koje su već isplaćene,
+- ili oba tipa zajedno,
+- kao i provizija koje nisu ili jesu obračunate.
 
-**Dodatna bilješka**: Prikaz *OTVORENE* *ZATVORENE PROVIZIJE* odnosi se na činjenicu da još ima ostataka za prikupljanje ili da je sve prikupljeno.
+**Dodatna napomena:** Prikaz **OTVORENIH** i **ZATVORENIH PROVIZIJA** odnosi se na to da li još uvek postoji iznos koji treba naplatiti ili je celokupan iznos već naplaćen.
 
-U tabeli detalja redovi odgovaraju provizijama obračunatim na fakturi unesenoj prilikom knjiženja fakture.
+U tabeli sa detaljima svaki red predstavlja proviziju obračunatu na fakturi koja je proknjižena.
 
-Ovisno o kriteriju razgraničenja definiranom u bazi podataka agenta (na primjer nakon izvršenog plaćanja) kreirat će se "stornirane" linije (na primjer u slučaju djelomičnog plaćanja ili jedne od raznih otvorenih stavki, kreirat će se linija koja odgovara vrijednost plaćanja). Da bi se to vidjelo, trebate proširiti detalje glavnog retka pomoću odgovarajuće tipke + lijevo od retka.
+U zavisnosti od kriterijuma obračuna definisanog u matičnim podacima agenta (na primer nakon izvršene naplate), kreiraju se odgovarajući redovi za **storno**. Na primer, kod delimične naplate ili kada postoji više otvorenih stavki, kreiraće se red koji odgovara vrednosti izvršene naplate. Da biste prikazali ove informacije, potrebno je proširiti glavni red klikom na dugme **+** sa njegove leve strane.
 
-U detaljima (kasnije objavljenim na glavnoj liniji) postoji i zastavica koja se postavlja kada se provizija plaća agentu.
+U detaljima (koji se zatim objedinjeno prikazuju u glavnom redu) nalazi se i oznaka koja pokazuje da li je provizija isplaćena agentu.
 
 ![](/img/it-it/finance-area/maturity-values/commissions.png)
 
 :::tip LINK
-Za postupak podmirenja provizije specifične za menadžment iz administrativnog modula, pogledajte [**ovdje**](/docs/finance-area/professional-men/procedures/calculate-commissions)
+Za postupak obračuna i isplate provizija u administrativnom modulu pogledajte [**ovde**](/docs/finance-area/professional-men/procedures/calculate-commissions).
 :::
-
-

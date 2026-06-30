@@ -60,7 +60,7 @@ Nakon grupisanja:
 > **Dodaj dospijeća za grupisanje**: omogućava izbor drugih dospijeća koja će biti pridružena dospijeću koje se trenutno uređuje.
 > **Obriši dospijeća iz grupisanja**: uklanja izabrano dospijeće iz grupe, vraćajući mu samostalni status u odnosu na dospijeće koje se uređuje (koje ostaje jedino vidljivo u glavnom pregledu).
 > **Kreiraj dospijeće iz plaćanja**: omogućava kreiranje novog dospijeća na osnovu postojećeg plaćanja. Korisno je za usklađivanje razlika ili sprovođenje kompenzacija. Komanda otvara obrazac za pretragu plaćanja iz kojeg se može kreirati novo dospijeće. Najčešće se koristi odmah nakon ručnog kreiranja novog dospijeća iz obrasca za pretragu dospijeća.
-> **Izmeni zapis**: omogućava povezivanje dospijeća koje se uređuje sa odgovarajućim računovodstvenim zapisom (korisno kada je dospijeće kreirano ručno).
+> **Poveznica zapisivanja**: omogućava povezivanje dospijeća koje se uređuje sa odgovarajućim računovodstvenim zapisom (korisno kada je dospijeće kreirano ručno).
 
 ## Povezano plaćanje
 

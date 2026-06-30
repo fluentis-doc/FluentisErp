@@ -22,7 +22,7 @@ Prvi obvezni podatak koji se upisuje je vrsta kredita, preko kombiniranog okvira
 
 **Vrsta opisa bankovnog zajma**: prošireni opis podataka;
 
-**Vrsta tijeka / opis**: polje za odabir (u tablici **Vrste financijskog toka**) vrste financijskog toka koji će biti povezan s ratama kredita u obradi Cash Flow-a, kako bi se one mogle automatski prikazivati u obradi novčanog toka.
+**Vrsta tijeka / opis**: polje za odabir (u tablici **Vrste financijskog toka**) vrste financijskog toka koji će biti povezan s ratama kredita u obradi *Cash Flow-a*, kako bi se one mogle automatski prikazivati u obradi novčanog toka.
 
 **Predložak**: računovodstveni predložak kombiniran kako bi se omogućilo automatsko obračunavanje rata.
 :::
@@ -31,10 +31,10 @@ Prvi obvezni podatak koji se upisuje je vrsta kredita, preko kombiniranog okvira
 
 Ostala obavezna polja su opis ugovora i glavni računi za kasnije računovodstvene operacije
 
-- Banka: za unos bankovnog računa na koji će se uplate rate;
-- Dug: za unos ugnog računa s kojeg će biti otkazana **otplata glavnice** (npr. "Hipotekarne obveze");
-- Kamate: za unos računa na koji će se obračunavati kamata svake rate;
-- Troškovi: za unos računa na koji će se obračunavati provizija ili drugi troškovi svake rate;
+- Banka: za unos bankovnog konta na koji će se uplate rate;
+- Dug: za unos konta s kojeg će biti otplaćena **otplata glavnice** (npr. "Hipotekarne obveze");
+- Kamate: za unos konta na koji će se obračunavati kamata svake rate;
+- Troškovi: za unos konta na koji će se obračunavati provizija ili drugi troškovi svake rate;
 
 Druga važna polja su plaćeni iznos, valuta (osobito ako se razlikuje od eura, aktivira relevantni tečaj)
 
@@ -48,7 +48,7 @@ Sljedećim stupcima, označenim plavom bojom, upravlja Fluentis kako bi se istak
 
 ### Postupci dostupni na traci izbornika
 
-Dostupni postupci, tj. izračun amortizacijskog plana, promjena datuma rate i ažuriranje troškova rate, isti su kao i oni dostupni za upravljanje leasingom, stoga pogledajte [**odgovarajuću stranicu**](/docs/finance-area/leasing/new).
+Dostupni postupci, tj. izračun amortizacijskog plana, promjena datuma rate i ažuriranje troškova rate, isti su kao i oni dostupni za upravljanje *leasingom*, stoga pogledajte [**odgovarajuću stranicu**](/docs/finance-area/leasing/new).
 
 ### Knjiženje rata kredita
 

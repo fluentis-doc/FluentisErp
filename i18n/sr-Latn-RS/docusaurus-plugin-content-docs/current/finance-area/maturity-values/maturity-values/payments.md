@@ -3,12 +3,12 @@ title: Plaćanja
 sidebar_position: 3
 ---
 
-Ovaj obrazac omogućuje traženje ili ručni unos plaćanja.
+Ovaj obrazac omogućava pretragu i ručni unos plaćanja.
 
-Fluentisov sustav glavne knjige omogućuje da je plaćanje bude otvoreno ili zatvoreno, ako NIJE povezano sa stavkom u glavnoj knjizi.
+Fluentis omogućava da plaćanje bude u statusu **otvoreno** ili **zatvoreno**, čak i kada **nije povezano sa otvorenom stavkom** u glavnoj knjizi.
 
-U području filtera, oznaka **Plaćanja koja nisu vezana za dospjele vrijednosti** je vrlo korisna na dijagnostičkoj razini za prepoznavanje plaćanja relevantne stavke.
+U oblasti filtera posebno je korisna opcija **Plaćanja koja nisu povezana sa otvorenim stavkama**, koja služi kao dijagnostički alat za pronalaženje plaćanja koja nisu povezana sa odgovarajućom otvorenom stavkom.
 
-Ako se plaćanje ručno upisuje naredbom **Novo** (poseban i općenito netipičan slučaj, npr. za zatvaranje stavke koja je otvorena izvan računovodstva) nakon otvaranja obrasca za unos novog plaćanja, naredba **Kreiraj iz dospijeća plaćanja/plaćanja** omogućuje traženje stavke za zatvaranje automatskim stvaranjem povezanog plaćanja.
+Ako se plaćanje unosi ručno pomoću komande **Novo** (specifičan i uglavnom neuobičajen slučaj, na primer radi zatvaranja stavke koja je otvorena van računovodstva), nakon otvaranja obrasca za unos novog plaćanja moguće je koristiti komandu **Kreiraj iz dospijeća/plaćanja**, koja omogućava pronalaženje otvorene stavke za zatvaranje uz automatsko kreiranje odgovarajućeg povezanog plaćanja.
 
-Naredba **Poveznica zapisivanja** također je korisna za rekonstrukciju (nedostajuće) veze između plaćanja i povezanog računovodstvenog unosa ako je potrebno.
+Komanda **Poveži sa knjiženjem** korisna je za ponovno uspostavljanje (nedostajuće) veze između plaćanja i odgovarajućeg računovodstvenog zapisa kada je to potrebno.

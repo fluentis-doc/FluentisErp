@@ -60,7 +60,7 @@ Rezultat će biti sljedeći:
 > **Dodaj dospijeća plaćanja za grupiranje**: omogućuje odabir drugih dospijeća koje će se spojiti s dospijećem koje se uređuje;    
 > **Izbriši dospijeća plaćanja za grupiranje**: briše odabrano dospijeće iz prikaza ' Grupiranje dospijeća, vraćajući joj autonomiju u odnosu na dospijeće koja se uređuje (koja je jedina vidljiva u usporedbi s onima koje su spojene s njom);        
 > **Kreiraj iz dospijeća plaćanja/plaćanja**: omogućuje stvaranje dospijeća iz plaćanja. Korisno za usklađivanje razlika ili operacije kompenzacije. Naredba otvara obrazac za traženje plaćanja iz kojeg možete kreirati dospijeće. Obično se izvodi odmah nakon ručnog kreiranja novog dospijeća iz obrasca za pretraživanje dospijeća;      
-> **Izmijeni zapis**: omogućuje povezivanje dospijeća koje se uređuje s računovodstvenim zapisom (korisno ako je dospijeće kreirano ručno).  
+> **Poveznica zapisivanja**: omogućuje povezivanje dospijeća koje se uređuje s računovodstvenim zapisom (korisno ako je dospijeće kreirano ručno).  
 
 ## Povezano plaćanje  
 
