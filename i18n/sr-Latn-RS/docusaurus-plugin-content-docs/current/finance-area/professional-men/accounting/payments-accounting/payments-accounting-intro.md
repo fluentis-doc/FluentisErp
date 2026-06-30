@@ -3,28 +3,20 @@ title: Knjiženje plaćanja
 sidebar_position: 1
 ---
 
-LINK:
+LINKOVI:
 
 **[Filter](/docs/finance-area/professional-men/accounting/payments-accounting/filter)**
 
 **[Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)**
 
-**[Povrat](/docs/finance-area/professional-men/accounting/payments-accounting/previous)**
+**[Povratak](/docs/finance-area/professional-men/accounting/payments-accounting/previous)**
 
- 
+Ovim postupkom moguće je proknjižiti isplate naknada primaocima naknada evidentiranim u sistemu.
 
-Ovim postupkom moguće je izvršiti obračun isplata unesenih u sustav primatelja naknada.
+Knjiženje isplate može se izvršiti i na osnovu predračuna naknade (bez broja i datuma konačnog dokumenta) i na osnovu konačnog računa.
 
-Plaćanje se može evidentirati ili na obavijesti o naknadi (bez konačnog broja dokumenta i datuma) ili na konačnom računu.
+Redosled izvršavanja ovog postupka u odnosu na postupak **[Knjiženje naknade](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting)** zavisi od toga da li primalac naknade izdaje direktno konačni račun ili najpre predračun naknade.
 
-Stoga će redoslijed kojim se ovaj postupak može provesti u odnosu na  **[Knjiženje naknade](/docs/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting)** ovisiti o tome je li fakturu ili obavijest izravno izdao primatelj. Ova mogućnost također je povezana s činjenicom da rok za plaćanje poreza po odbitku počinje teći od trenutka uplate, a ne od izdavanja računa.
+Ovakav način rada moguć je i zbog toga što obaveza uplate poreza po odbitku nastaje u trenutku isplate, a ne u trenutku izdavanja računa.
 
-**Za ispravno upravljanje porezom po odbitku od strane Fluentisa, preporuča se upravljanje uplatama primatelja isključivo kroz ovaj postupak, izbjegavajući ručne unose u prvoj bilješci ili rad iz modula Riznica.**
-
- 
-
-
-
-
-
-
+> **Radi ispravnog obračuna i evidentiranja poreza po odbitku u Fluentis-u, preporučuje se da se isplate primaocima naknada uvek obrađuju putem ovog postupka, bez ručnog knjiženja u Glavnoj knjizi ili sprovođenja isplata putem modula Riznice.**

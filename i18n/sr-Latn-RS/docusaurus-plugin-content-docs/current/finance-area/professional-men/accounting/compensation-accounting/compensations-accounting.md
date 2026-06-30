@@ -3,26 +3,18 @@ title: Knjiženje naknada
 sidebar_position: 1
 ---
 
-LINK:
+LINKOVI:
 
 **[Filter](/docs/finance-area/professional-men/accounting/compensation-accounting/filter)**
 
 **[Povratak](/docs/finance-area/professional-men/accounting/compensation-accounting/rollback)**
 
- 
+&nbsp;
 
- 
+Ovim postupkom naknade koje su postale konačne knjiže se u glavnu knjigu i PDV knjige.
 
-Ovim postupkom isplate koje su postale konačne evidentiraju se u glavnom knjigovodstvu iu registru PDV-a.
+Da bi se postupak mogao izvršiti, obavezno je da naknada ima dodeljen broj i datum konačnog dokumenta (čak i ako je obrazac knjiženja povezan sa vrstom poreza po odbitku obrazac bez PDV-a), kao i da ima definisano najmanje jedno dospeće koje treba evidentirati.
 
-Za nastavak operacije obvezno je da  **naknada ima konačan broj dokumenta i datum** naknada ima konačan broj dokumenta i datum  **najmanje jedan rok** koji treba zabilježiti.
+Ako nedostaju konačne reference, moguće je otvoriti naknadu za izmenu direktno iz ove forme korišćenjem odgovarajućeg dugmeta.
 
-Ako nedostaju konačne reference, moguće je otvoriti kompenzaciju za izmjene izravno iz ovog obrasca, koristeći odgovarajuću tipku ![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting/image01.png).
-
-
-
-
-
-
-
-
+![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/compensations-accounting/image01.png)

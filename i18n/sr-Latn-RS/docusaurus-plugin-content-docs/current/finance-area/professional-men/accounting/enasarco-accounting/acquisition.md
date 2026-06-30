@@ -1,30 +1,21 @@
 ---
-title: Nabava
+title: Nabavka
 sidebar_position: 2
 ---
 
-Prikaz ima uobičajeno područje filtera u gornjem dijelu koje upravlja traženjem naknade koja se odabire za Enasarco knjiženja.
+Forma sadrži standardnu oblast za filtere u gornjem delu, koja služi za pretragu naknada koje će biti obuhvaćene Enasarco knjiženjem.
 
 ![](/img/it-it/finance-area/professional-men/accounting/enasarco-accounting/acquisition/image01.png)
 
-Filtrirani podaci prikazani su u središnjem prikazu rezultata 
+Filtrirani podaci prikazuju se u centralnom pregledu rezultata.
 
 ![](/img/it-it/finance-area/professional-men/accounting/enasarco-accounting/acquisition/image02.png)
 
- 
-Nakon što postavite datume knjiženja u osnovi obrasca, računovodstveni predložak koji će se koristiti i moguće upravljanje u jednom knjiženju (bez provođenja bilo kakvog grupiranja u slučaju identičnih podkonta), bit će dovoljno pritisnuti gumb za knjiženje: ako sve bude u redu, odabrani redovi će nestati s mreže, a na kartici Povrat bit će moguće pregledati rezultat.
+Nakon što se u donjem delu forme definišu datumi knjiženja, obrazac knjiženja koji će se koristiti i eventualno objedinjavanje u jedno knjiženje (bez grupisanja po istim podkontima), dovoljno je pritisnuti dugme za knjiženje. Ako je postupak uspešno izvršen, izabrani redovi će nestati iz pregleda, a rezultat će biti dostupan na kartici **Povratak**.
 
 ![](/img/it-it/finance-area/professional-men/accounting/enasarco-accounting/acquisition/image03.png)
 
-
-
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Potražite popis naknada za koje se obračunavaju Enasarco porezi. |
-| Knjiženje | Obavlja knjiženje odabranih Enasarco poreza. |
-
-
-
-
-
-
+| Traži | Pretražuje listu naknada za koje treba izvršiti Enasarco knjiženje. |
+| Knjiženje | Izvršava knjiženje Enasarco obaveza za izabrane redove. |

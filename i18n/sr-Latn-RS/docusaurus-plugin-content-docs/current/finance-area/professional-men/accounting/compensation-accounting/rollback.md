@@ -1,22 +1,16 @@
 ---
-title: Povrat
+title: Povratak
 sidebar_position: 3
 ---
 
-Iz prethodne kartice moguće je nastaviti s otkazivanjem provedenog obračuna
+Na ovoj kartici moguće je izvršiti poništavanje već sprovedenog knjiženja.
 
-Otkaz će biti moguć samo ako se razdoblje još može mijenjati (ispisana dnevnik, neispisan registar PDV-a, nije ispisan periodični obračun, nije izvršeno zatvaranje računa). Dupli klik u odjeljku evidencije omogućit će vam pregled relevantnog računovodstvenog zapisa.  
+Postupak je moguć samo ako je obračunski period i dalje otvoren za izmene (dnevnik nije odštampan, PDV knjiga nije odštampana, periodični obračun nije odštampan i nije izvršeno zatvaranje računa).
 
-
+Dvostrukim klikom na zapis u delu za evidenciju moguće je otvoriti i pregledati odgovarajući računovodstveni zapis.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Pretražite popis stvorenih kreacija. |
-| Poništi knjiženje | Ovom tipkom brišu se sva provedena knjiženja (odabrana iz mreže 'Računovodstvo'), sa svim pripadajućim naknadama.|
-| Povrati zapise | Tipka vraća samo knjiženi unos odabran iz mreže 'Knjiženi unos'. |
-
-
-
-
-
-
+| Traži | Pretražuje listu kreiranih knjiženja. |
+| Poništi knjiženje | Briše sva izvršena knjiženja (izabrana iz tabele **Računovodstvo**) zajedno sa svim pripadajućim naknadama. |
+| Povrati zapise | Vraća samo izabrani knjiženi zapis iz tabele **Knjiženi zapis**. |

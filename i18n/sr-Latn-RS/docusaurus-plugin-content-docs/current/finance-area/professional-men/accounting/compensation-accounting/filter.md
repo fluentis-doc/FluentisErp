@@ -3,20 +3,12 @@ title: Filter
 sidebar_position: 2
 ---
 
-Gornji dio obrasca namijenjen je postavljanju filtera pretraživanja. Nakon što su datumi knjiženja obračuna i bilo kojeg knjiženja s privremenim statusom postavljeni u podnožju obrasca, jednostavno pritisnite gumb za knjiženje: ako sve bude u redu, odabrani redovi će nestati s pregleda i bit će ih moguće pregledati u kartici Povrat.
+Gornji deo forme namenjen je postavljanju filtera za pretragu. Nakon što se u donjem delu forme postave datumi knjiženja obračuna i eventualnog knjiženja sa privremenim statusom, dovoljno je pritisnuti dugme za knjiženje. Ako je sve ispravno, izabrani redovi će nestati iz pregleda i biće dostupni za pregled na kartici **Povratak**.
 
 ![](/img/it-it/finance-area/professional-men/accounting/compensation-accounting/filter/image01.png)
 
-
-
 | Funkcija | Značenje |
 | --- | --- |
-| Pretraga knjiženja| Potražite popis naknada koje treba obračunati. |
-| Knjiženje naknada | Izvodi kompenzacijsko računovodstvo za odabrane linije. |
-| Promjena naknade | Otvara odabranu kompenzaciju za uređivanje. |
-
-
-
-
-
-
+| Pretraga knjiženja | Pretražuje listu naknada koje treba proknjižiti. |
+| Knjiženje naknada | Izvršava knjiženje naknada za izabrane redove. |
+| Izmena naknade | Otvara izabranu naknadu radi izmene. |

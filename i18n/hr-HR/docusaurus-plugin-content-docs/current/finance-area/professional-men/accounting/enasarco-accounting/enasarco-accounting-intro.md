@@ -7,11 +7,12 @@ LINK:
 
 **[Nabava](/docs/finance-area/professional-men/accounting/enasarco-accounting/acquisition)**
 
-**[Rollback](/docs/finance-area/professional-men/accounting/enasarco-accounting/previous)**
+**[Povrat](/docs/finance-area/professional-men/accounting/enasarco-accounting/previous)**
 
  
 
-Procedura će bilježiti Enasarco doprinose za odabrane naknade, ako povezani tip poreza predviđa upravljanje "Enasarco na teret tvrtke" (inače će biti zabilježen samo doprinos na teret agenta izravno unutar procedure računovodstvene obrade plaćanja modula, što se ne preporučuje). 
+Postupak će evidentirati Enasarco doprinose za odabrane naknade ako vrsta poreza po odbitku predviđa način obračuna „Enasarco na teret poduzeća”.
+U suprotnom će se evidentirati samo Enasarco doprinos na teret zastupnika, i to izravno u postupku knjiženja plaćanja unutar modula, što se ne preporučuje kao način rada.
 
 
 

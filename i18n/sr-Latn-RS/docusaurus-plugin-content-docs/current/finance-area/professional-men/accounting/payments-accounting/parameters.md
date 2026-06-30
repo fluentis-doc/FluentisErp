@@ -3,42 +3,41 @@ title: Parametri
 sidebar_position: 3
 ---
 
-Glavni računovodstveni parametri postupka upravljaju se na ovoj stranici: 
+Na ovoj kartici definišu se glavni računovodstveni parametri postupka:
 
-**Datum knjiženja i obračuna**, **predložak** plaćanja koji će se koristiti, **bankovni podkonti** koji će se teretiti i onaj za **evidentiranje duga poreza po odbitku (nije obavezno)**, ako ne postoji, koristit će se podračun upisan u vrstu poreza po odbitku.
+- datum knjiženja i datum obračunskog perioda,
+- obrazac knjiženja za plaćanje koji će se koristiti,
+- podkonto banke koji će biti zadužen,
+- podkonto za evidentiranje obaveze poreza po odbitku (nije obavezan; ukoliko nije definisan, koristiće se podkonto određen u vrsti poreza po odbitku).
 
-Flag zatvaranja dospijeća, predložena prema zadanim postavkama, nikada se ne smije ukloniti (kako bi se upravljalo zatvaranjem dospijeća).
+Opcija **Zatvaranje otvorenih stavki**, koja je podrazumevano uključena, ne treba da se isključuje jer je neophodna za pravilno zatvaranje otvorenih stavki.
 
- 
+Predviđene su sledeće mogućnosti grupisanja:
 
-Dostupne opcije grupiranja su:  
+- **Jedno knjiženje** (podrazumevana opcija, bez uključene opcije **Grupiši konta**): sistem će kreirati jedno računovodstveno knjiženje sa jednom stavkom banke (radi lakšeg usklađivanja sa bankovnim izvodom), dok će ostali podkonti biti prikazani zasebno za svaku naknadu, što omogućava detaljniju kontrolu knjiženja na kontu poreza po odbitku. Ako je uključena i opcija **Grupiši konta**, grupisaće se i knjiženja ostalih podkonta sa istim vrednostima.
+- **Bez grupisanja**: za svaku naknadu kreira se zasebno računovodstveno knjiženje.
+- **Grupiši po podkontu**: knjiženja će biti grupisana po primaocu naknade.
 
-Zadano **Pojedinačno zapisivanje** (bez flaga **Konta grupiranja**): u ovom slučaju jedinstveno knjiženje bit će kreirano s jednim bankovnim kretanjem (kako bi se olakšalo usklađivanje kretanja s bankovnim izvodom), dok će ostali podkonti biti detaljni po kompenzacijama (do veće kontrole kretanja na računu poreza po odbitku). Ako je također postavljena zastavica grupiranja konta, podaci drugih identičnih podkonta koji su premješteni također će biti grupirani zajedno;  
-
-**Nema grupiranja**: u ovom će slučaju svaka naknada imati zasebno knjiženje.  
-
-**Grupiraj po detaljnom kontu**: u ovom slučaju grupiranje će se izvršiti prema primatelju;  
-
- 
+&nbsp;
 
 ![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/parameters/image01.png)
 
- 
+&nbsp;
 
-Sljedeći odjeljak, aktivira flag **Automatsko generiranje plaćanja dobavljača**, omogućuje vam da kreirate uplatnicu u modulu  **[Plaćanja dobavljača](/docs/treasury/vendors-payments/create-vendor-payments)**, kako biste je ispisali i elektronički poslali datoteku za plaćanje. Polja koja se postavljaju su: vrsta uplate, polje tekućeg računa (predlaže ga šifarnik povezan s gore umetnutim bankovnim podkonto), datum izdavanja uplate i mogući datum valute primatelja (ovisno o aktiviranju odgovarajuće zastavice) i moguću završnu bilješku koju treba prijaviti računovodstvu koja odgovara bankovnoj liniji.  
+Sledeća sekcija, koja se aktivira opcijom **Automatsko kreiranje plaćanja dobavljačima**, omogućava kreiranje naloga za plaćanje u modulu **[Plaćanja dobavljačima](/docs/treasury/vendors-payments/create-vendor-payments)**, radi njegovog štampanja i elektronskog slanja naloga za bankarske transfere putem elektronskog bankarstva.
+
+Potrebno je definisati sledeće podatke:
+
+- vrstu plaćanja naloga,
+- broj bankovnog računa (automatski se predlaže iz matičnih podataka povezanih sa podkontom banke izabranim u gornjem delu forme),
+- datum izdavanja naloga za plaćanje,
+- po potrebi datum valute za primaoca (ukoliko je aktivirana odgovarajuća opcija),
+- završnu napomenu koja će biti evidentirana u računovodstvu uz stavku banke.
 
 ![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/parameters/image02.png)
 
- 
-
-
+&nbsp;
 
 | Funkcija | Značenje |
 | --- | --- |
-| Knjiženje plaćanja | Obavlja knjiženje odabranih plaćanja. |
-
-
-
-
-
-
+| Knjiženje plaćanja | Izvršava knjiženje izabranih plaćanja. |

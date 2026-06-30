@@ -3,21 +3,20 @@ title: Parametri
 sidebar_position: 3
 ---
 
-Glavni računovodstveni parametri postupka upravljaju se na ovoj stranici: 
+Na ovoj kartici definiraju se glavni računovodstveni parametri postupka:
 
-**Datum knjiženja i obračuna**, **predložak** plaćanja koji će se koristiti, **bankovni podkonti** koji će se teretiti i onaj za **evidentiranje duga poreza po odbitku (nije obavezno)**, ako ne postoji, koristit će se podračun upisan u vrstu poreza po odbitku.
+- datum knjiženja i datum obračunskog razdoblja,
+- računovodstveni predložak za plaćanje koji će se koristiti,
+- podkonto banke koji će se teretiti,
+- podkonto za evidentiranje obveze poreza po odbitku (nije obvezan; ako nije definiran, koristit će se podkonto određen u vrsti poreza po odbitku).
 
-Flag zatvaranja dospijeća, predložena prema zadanim postavkama, nikada se ne smije ukloniti (kako bi se upravljalo zatvaranjem dospijeća).
+Oznaka Zatvaranje otvorenih stavaka, koja je prema zadanim postavkama uključena, ne smije se isključivati, jer je potrebna za pravilno zatvaranje otvorenih stavaka.
 
- 
+Predviđene su sljedeće mogućnosti grupiranja:
 
-Dostupne opcije grupiranja su:  
-
-Zadano **Pojedinačno zapisivanje** (bez flaga **Konta grupiranja**): u ovom slučaju jedinstveno knjiženje bit će kreirano s jednim bankovnim kretanjem (kako bi se olakšalo usklađivanje kretanja s bankovnim izvodom), dok će ostali podkonti biti detaljni po kompenzacijama (do veće kontrole kretanja na računu poreza po odbitku). Ako je također postavljena zastavica grupiranja konta, podaci drugih identičnih podkonta koji su premješteni također će biti grupirani zajedno;  
-
-**Nema grupiranja**: u ovom će slučaju svaka naknada imati zasebno knjiženje.  
-
-**Grupiraj po detaljnom kontu**: u ovom slučaju grupiranje će se izvršiti prema primatelju;  
+- **Jedno knjiženje** (zadana opcija, bez oznake Grupiraj konta): sustav će kreirati jedno računovodstveno knjiženje s jednom stavkom banke (radi lakšeg usklađivanja s bankovnim izvodom), dok će ostala podkonta biti iskazana zasebno za svaku naknadu, što omogućuje detaljniju kontrolu knjiženja na kontu poreza po odbitku. Ako je aktivirana i oznaka Grupiraj konta, grupirat će se i knjiženja ostalih podkonta s istim vrijednostima.
+- **Bez grupiranja**: za svaku naknadu kreira se zasebno računovodstveno knjiženje.
+- **Grupiraj po podkontu**: knjiženja će biti grupirana po primatelju naknade.
 
  
 
@@ -25,7 +24,16 @@ Zadano **Pojedinačno zapisivanje** (bez flaga **Konta grupiranja**): u ovom slu
 
  
 
-Sljedeći odjeljak, aktivira flag **Automatsko generiranje plaćanja dobavljača**, omogućuje vam da kreirate uplatnicu u modulu  **[Plaćanja dobavljača](/docs/treasury/vendors-payments/create-vendor-payments)**, kako biste je ispisali i elektronički poslali datoteku za plaćanje. Polja koja se postavljaju su: vrsta uplate, polje tekućeg računa (predlaže ga šifarnik povezan s gore umetnutim bankovnim podkonto), datum izdavanja uplate i mogući datum valute primatelja (ovisno o aktiviranju odgovarajuće zastavice) i moguću završnu bilješku koju treba prijaviti računovodstvu koja odgovara bankovnoj liniji.  
+Sljedeća sekcija, koja se aktivira oznakom Automatsko kreiranje plaćanja dobavljačima, omogućuje kreiranje naloga za plaćanje u modulu **[Plaćanja dobavljača](/docs/treasury/vendors-payments/create-vendor-payments)**, radi njegova ispisa i elektroničkog slanja naloga za bankovne transfere putem internetskog bankarstva.
+
+Potrebno je definirati sljedeće podatke:
+- vrstu plaćanja naloga,
+- broj bankovnog računa (automatski se predlaže iz matičnih podataka povezanih s podkontom banke odabranim u gornjem dijelu obrasca),
+- datum izdavanja naloga za plaćanje,
+- po potrebi, datum valute za primatelja (ako je aktivirana odgovarajuća oznaka),
+- završnu napomenu koja će se evidentirati u računovodstvu uz stavku banke.
+
+
 
 ![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/parameters/image02.png)
 

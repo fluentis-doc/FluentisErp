@@ -3,13 +3,13 @@ title: Filter
 sidebar_position: 2
 ---
 
-U prvoj kartici tražite i odabirete rokove za isplatu naknade: dopuštena je ručna izmjena iznosa za isplatu, što će uzrokovati ponovni izračun relativnog iznosa poreza po odbitku.  
+Na prvoj kartici pretražuju se i odabiru dospijeća naknada koja je potrebno isplatiti.
 
-U prvoj kartici tražite i odabirete rokove za isplatu naknade: dopuštena je ručna izmjena iznosa za isplatu, što će uzrokovati ponovni izračun relativnog iznosa poreza po odbitku.
+Moguće je ručno izmijeniti iznose za isplatu, pri čemu će sustav automatski ponovno izračunati odgovarajući iznos poreza po odbitku.
 
- 
+Prilikom sljedećeg otvaranja obrasca, u tom će slučaju biti prikazan preostali iznos za isplatu.
 
-PAŽNJA: prije izvršavanja naredbe knjiženja provjerite parametre u kartici  **[Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters).**
+Pažnja: prije pokretanja postupka knjiženja provjerite postavke na kartici **[Parametri](/docs/finance-area/professional-men/accounting/payments-accounting/parameters).**
 
 ![](/img/it-it/finance-area/professional-men/accounting/payments-accounting/filter/image01.png)
 
