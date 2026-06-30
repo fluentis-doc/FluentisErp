@@ -67,9 +67,9 @@ La procedura popola automaticamente le tabelle principali, riducendo errori e te
 
 2. Seleziona la società da inizializzare.  
 
-3. Premi il pulsante **Impostazioni Generali** presente nella *ribbon bar*.  
+3. Premi il pulsante **Impostazioni Generali** presente nella *ribbon bar* per avviare la procedura di **Fast Start** (compilazione automatica di tutte le tabelle interessate descritte nella corrispondente sezione di questa pagina).  
 
-4. Avvia la procedura di **Fast Start** e conferma le impostazioni. 
+4.  Al termine dell'esecuzione (qualche minuto) comparirà un messaggio di conferma. 
 
 Dopo l’esecuzione, verifica i parametri generati e personalizzali se necessario per adeguarli alle specifiche esigenze aziendali.
 
