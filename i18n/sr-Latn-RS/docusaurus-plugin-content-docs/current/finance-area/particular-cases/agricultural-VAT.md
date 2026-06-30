@@ -3,48 +3,57 @@ sidebar_position: 1
 title: Poseban režim PDV-a za poljoprivredu
 ---
 
-Poljoprivredni PDV režim predviđa nemogućnost odbitka PDV-a za nabave koje podliježu ovom režimu te primjenu kompenzacijske stope na prodaje unutar istog režima: umjesto odbitka pretporeza kao u standardnom režimu, PDV na nabavi uvijek je nepriznat, dok se PDV obračunan na prodaji plaća samo djelomično prema fiksnom obračunu, bez ikakve povezanosti s nabavama u tom razdoblju, primjenom kompenzacijskih stopa koje variraju ovisno o vrsti prodanog dobra.
+Poseban režim PDV-a za poljoprivredu podrazumeva da **PDV na nabavke koje podležu ovom režimu nije odbitak**, dok se na prodaji primenjuje **kompenzaciona stopa**.
 
-### Preliminarna obrada tablica
+Za razliku od standardnog PDV režima, u kojem se pretporez odbija od obračunatog PDV-a, u poljoprivrednom režimu PDV na nabavke uvek predstavlja nepriznati trošak. Istovremeno, PDV obračunat na prodaji plaća se samo delimično, primenom unapred definisanih kompenzacionih stopa koje zavise od vrste prodate robe, bez ikakve veze sa nabavkama ostvarenim u istom poreskom periodu.
 
-Za upravljanje kompenzacijskim postotkom prvo ćemo definirati potrebne PDV stope za prodaju, u kojima ćemo iskoristiti ‘postotak nemogućnosti odbitka’ za izračun:
+## Prethodna konfiguracija tabela
+
+Za upravljanje kompenzacionim procentima potrebno je najpre definisati odgovarajuće PDV stope za prodaju, pri čemu će se za obračun koristiti polje **procenat neodbitnog PDV-a**.
 
 ![](/img/it-it/finance-area/other/agr1.png)
 
-U osnovi, ako PDV X ima kompenzacijski postotak Y, Y će biti označen u stupcu ‘% IVA agr. detr.’ (kao informativni podatak prikazan u ispisu za PDV obračun), dok će biti valoriziran s rezultatom Y*100/X kao postotak koji će biti označen u stupcu ‘postotak nemogućnostii odbitka’.
+U praksi, ako PDV stopa **X** ima kompenzacioni procenat **Y**, tada će:
 
-Definirat ćemo specifičan račun na kojem ćemo valorizirati dio kompenziranog PDV-a primjenom postotka nemogućnosti odbitka, na primjer:
+- vrednost **Y** biti upisana u kolonu **% IVA agr. detr.** (informativni podatak koji se prikazuje u obračunu PDV-a),
+- u kolonu **Procenat neodbitnog PDV-a** biti upisana vrednost **Y × 100 / X**.
+
+Potrebno je definisati posebno konto na kojem će se knjižiti kompenzovani deo PDV-a obračunat primenom procenta neodbitnog PDV-a, na primer:
 
 ![](/img/it-it/finance-area/other/agr2.png)
 
-Definirat ćemo specifične predloške za razdvajanje dva PDV-a u knjiženjima prodaje u poljoprivrednom režimu, gdje ćemo posebno imati:
+Zatim je potrebno definisati posebne obrasce knjiženja za razdvajanje dva PDV iznosa kod prodaje u poljoprivrednom režimu, pri čemu je potrebno podesiti:
 
--	Tip kretanja ‘prodaja poljoprivredni režim’
--	Specifičan PDV račun za evidentiranje kompenziranog dijela PDV-a
+- tip prometa **Prodaja – poljoprivredni režim**,
+- posebno PDV konto za knjiženje kompenzovanog dela PDV-a.
 
-Nema potrebe za definiranjem posebnog PDV registra za evidenciju ovih operacija.
+Za ove transakcije **nije potrebno** definisati poseban PDV registar.
 
 ![](/img/it-it/finance-area/other/agr3.png)
 
-Nabave provedene u poljoprivrednom režimu također će morati biti upravljane s odgovarajućim računovodstvenim predloškon, koji ima jedinstvenu osobitost – vezan je za poljoprivredni PDV režim.
+Nabavke u poljoprivrednom režimu takođe treba evidentirati pomoću posebnog obrasca knjiženja, čija je osnovna karakteristika da je povezan sa poljoprivrednim PDV režimom.
 
 ![](/img/it-it/finance-area/other/agr4.png)
 
-Budući da će PDV na nabave biti evidentiran s ovim predloškom uvijek imati postotak nemogućnosti odbitka od 100% (ili PDV od 0, ako je transakcija izuzeta/oslobodena), preporuča se valorizirati karticu ‘Kontrola PDV stopa’ kako bi se izbjegle pogrešne valorizacije.  
+Pošto će PDV na nabavkama knjižen ovim obrascem uvek imati **100% neodbitni PDV** (ili 0% ukoliko je transakcija oslobođena ili izuzeta od PDV-a), preporučuje se popunjavanje kartice **Kontrola PDV stopa**, kako bi se sprečile pogrešne kombinacije PDV stopa.
 
 ![](/img/it-it/finance-area/other/agr5.png)
 
-U slučaju da se obavljaju i *intrakomunitarne* nabave podložne poljoprivrednom režimu, umjesto uobičajenih predloška s tipom kretanja za intrakomunitarnu nabavu i odgovarajući prijenos PDV-a, predviđena su dva specifična tipa kretanja: PDV na intrakomunitarnu nabavu u poljoprivrednom režimu s odgovarajućim prijenosom PDV-a za poljoprivredu. Nabava će ponovno imati PDV koji nije odbitni od 100%, dok će u prodaji biti primijenjen PDV koji treba platiti: ta promjena stope bit će upravljiva putem postavke automatske PDV stope u PDV mreži, kao u slučajevima mješovitog *reverse charge-a*.
+Ako postoje i **intrakomunitarne nabavke** koje podležu poljoprivrednom režimu, umesto standardnih obrazaca za intrakomunitarne nabavke i pripadajućeg prenosa PDV-a koriste se dva posebna tipa prometa:
 
+- **PDV za intrakomunitarnu nabavku u poljoprivrednom režimu**,
+- odgovarajući **prenos PDV-a za poljoprivredni režim**.
 
-### Rezultati za obračun PDV-a po razdoblju
+I u ovom slučaju nabavka će imati **100% neodbitni PDV**, dok će se na prodajnoj strani obračunavati PDV za uplatu. Promena PDV stope upravlja se pomoću automatske zamene PDV stope u PDV mreži, na isti način kao kod mešovitog *reverse charge* postupka.
 
-Obračun PDV-a prikazat će pregled kretanja u poljoprivrednom režimu na sljedeći način:
+## Rezultat u periodičnom obračunu PDV-a
+
+Obračun PDV-a prikazaće promet u poljoprivrednom režimu na sledeći način:
 
 ![](/img/it-it/finance-area/other/agr6.png)
 
 ![](/img/it-it/finance-area/other/agr7.png)
 
-:::danger Pažnja 
-Zatvaranje računa ‘PDV na poljoprivrednu prodaju’, (koristi se za evidentiranje kompenziranog dijela PDV-a na prodaju) mora biti upravljano **ručno** od strane korisnika uz specifičnu računovodstvenu evidenciju.
+:::danger PAŽNJA
+Zatvaranje konta **PDV na prodaju u poljoprivrednom režimu**, koje služi za evidentiranje kompenzovanog dela PDV-a na prodaji, korisnik mora izvršiti **ručno**, odgovarajućim računovodstvenim knjiženjem.
 :::

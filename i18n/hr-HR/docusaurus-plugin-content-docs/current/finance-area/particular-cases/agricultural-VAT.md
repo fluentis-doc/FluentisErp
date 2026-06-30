@@ -1,50 +1,57 @@
 ---
 sidebar_position: 1
-title: Poseban režim PDV-a za poljoprivredu
+title: Poseban postupak PDV-a za poljoprivredu
 ---
 
-Poljoprivredni PDV režim predviđa nemogućnost odbitka PDV-a za nabave koje podliježu ovom režimu te primjenu kompenzacijske stope na prodaje unutar istog režima: umjesto odbitka pretporeza kao u standardnom režimu, PDV na nabavi uvijek je nepriznat, dok se PDV obračunan na prodaji plaća samo djelomično prema fiksnom obračunu, bez ikakve povezanosti s nabavama u tom razdoblju, primjenom kompenzacijskih stopa koje variraju ovisno o vrsti prodanog dobra.
+Poseban postupak PDV-a za poljoprivredu predviđa da se pretporez na nabave ne može odbiti, dok se za isporuke primjenjuje kompenzacijska stopa. Za razliku od redovnog sustava PDV-a, u kojem se pretporez odbija od obveze PDV-a, u ovom postupku PDV na nabavama uvijek je nepriznat, dok se PDV obračunan na prodajama plaća samo djelomično primjenom unaprijed propisanih kompenzacijskih stopa, koje ovise o vrsti prodanog dobra.
 
-### Preliminarna obrada tablica
+### Prethodna konfiguracija
 
-Za upravljanje kompenzacijskim postotkom prvo ćemo definirati potrebne PDV stope za prodaju, u kojima ćemo iskoristiti ‘postotak nemogućnosti odbitka’ za izračun:
+Za ispravno obračunavanje kompenzacijske stope potrebno je najprije definirati odgovarajuće izlazne PDV stope, pri čemu će se za izračun koristiti polje **Postotak nedopuštenog odbitka**.
 
 ![](/img/it-it/finance-area/other/agr1.png)
 
-U osnovi, ako PDV X ima kompenzacijski postotak Y, Y će biti označen u stupcu ‘% IVA agr. detr.’ (kao informativni podatak prikazan u ispisu za PDV obračun), dok će biti valoriziran s rezultatom Y*100/X kao postotak koji će biti označen u stupcu ‘postotak nemogućnostii odbitka’.
+Ako PDV stopa **X** ima kompenzacijsku stopu **Y**, tada je potrebno:
 
-Definirat ćemo specifičan račun na kojem ćemo valorizirati dio kompenziranog PDV-a primjenom postotka nemogućnosti odbitka, na primjer:
+- u polje **% poljoprivrednog odbitka PDV-a** upisati vrijednost **Y** (informativni podatak koji se prikazuje na ispisu obračuna PDV-a),
+- u polje **Postotak nedopuštenog odbitka** upisati vrijednost izračunanu prema formuli **Y × 100 / X**.
+
+Potrebno je definirati i poseban konto na kojem će se evidentirati kompenzirani dio PDV-a dobiven primjenom postotka nedopuštenog odbitka.
 
 ![](/img/it-it/finance-area/other/agr2.png)
 
-Definirat ćemo specifične predloške za razdvajanje dva PDV-a u knjiženjima prodaje u poljoprivrednom režimu, gdje ćemo posebno imati:
+Nakon toga potrebno je definirati posebne knjižne sheme za evidentiranje prodaja u posebnom postupku PDV-a za poljoprivredu. One moraju sadržavati:
 
--	Tip kretanja ‘prodaja poljoprivredni režim’
--	Specifičan PDV račun za evidentiranje kompenziranog dijela PDV-a
+- vrstu prometa **Prodaja – poljoprivredni postupak**,
+- poseban konto PDV-a za evidentiranje kompenziranog dijela PDV-a.
 
-Nema potrebe za definiranjem posebnog PDV registra za evidenciju ovih operacija.
+Za ove transakcije nije potrebno definirati zaseban PDV registar.
 
 ![](/img/it-it/finance-area/other/agr3.png)
 
-Nabave provedene u poljoprivrednom režimu također će morati biti upravljane s odgovarajućim računovodstvenim predloškon, koji ima jedinstvenu osobitost – vezan je za poljoprivredni PDV režim.
+I nabave u posebnom postupku PDV-a za poljoprivredu moraju se evidentirati posebnom knjižnom shemom koja je povezana s ovim poreznim postupkom.
 
 ![](/img/it-it/finance-area/other/agr4.png)
 
-Budući da će PDV na nabave biti evidentiran s ovim predloškom uvijek imati postotak nemogućnosti odbitka od 100% (ili PDV od 0, ako je transakcija izuzeta/oslobodena), preporuča se valorizirati karticu ‘Kontrola PDV stopa’ kako bi se izbjegle pogrešne valorizacije.  
+Budući da PDV evidentiran ovom knjižnom shemom uvijek mora imati **100 % nedopuštenog odbitka** (ili **0 % PDV-a** kod neoporezivih, oslobođenih ili izuzetih transakcija), preporučuje se konfigurirati karticu **Kontrola PDV stopa** kako bi se spriječio unos pogrešnih vrijednosti.
 
 ![](/img/it-it/finance-area/other/agr5.png)
 
-U slučaju da se obavljaju i *intrakomunitarne* nabave podložne poljoprivrednom režimu, umjesto uobičajenih predloška s tipom kretanja za intrakomunitarnu nabavu i odgovarajući prijenos PDV-a, predviđena su dva specifična tipa kretanja: PDV na intrakomunitarnu nabavu u poljoprivrednom režimu s odgovarajućim prijenosom PDV-a za poljoprivredu. Nabava će ponovno imati PDV koji nije odbitni od 100%, dok će u prodaji biti primijenjen PDV koji treba platiti: ta promjena stope bit će upravljiva putem postavke automatske PDV stope u PDV mreži, kao u slučajevima mješovitog *reverse charge-a*.
+Ako se evidentiraju i unutarzajedničke nabave koje podliježu posebnom postupku PDV-a za poljoprivredu, umjesto standardnih knjižnih shema za unutarzajedničke nabave s pripadajućim prijenosom PDV-a potrebno je koristiti posebne vrste prometa:
 
+- **Poljoprivredna unutarzajednička nabava**,
+- odgovarajući prijenos PDV-a za poljoprivredni postupak.
 
-### Rezultati za obračun PDV-a po razdoblju
+Kod takvih nabava pretporez ostaje **100 % nepriznat**, dok se na izlaznoj strani obračunava PDV koji se mora platiti. Promjena PDV stope može se automatski primijeniti konfiguriranjem **automatske PDV stope** u PDV mreži, na isti način kao kod mješovitog reverse charge postupka.
 
-Obračun PDV-a prikazat će pregled kretanja u poljoprivrednom režimu na sljedeći način:
+### Rezultat u obračunu PDV-a
+
+Periodični obračun PDV-a prikazuje sažetak transakcija evidentiranih u posebnom postupku PDV-a za poljoprivredu na sljedeći način:
 
 ![](/img/it-it/finance-area/other/agr6.png)
 
 ![](/img/it-it/finance-area/other/agr7.png)
 
-:::danger Pažnja 
-Zatvaranje računa ‘PDV na poljoprivrednu prodaju’, (koristi se za evidentiranje kompenziranog dijela PDV-a na prodaju) mora biti upravljano **ručno** od strane korisnika uz specifičnu računovodstvenu evidenciju.
+:::danger Pažnja
+Zatvaranje konta **PDV prodaje – poljoprivreda**, koji se koristi za evidentiranje kompenziranog dijela izlaznog PDV-a, korisnik mora provesti **ručno**, odgovarajućim knjiženjem.
 :::

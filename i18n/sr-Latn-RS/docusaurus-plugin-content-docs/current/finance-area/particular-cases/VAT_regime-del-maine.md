@@ -1,70 +1,119 @@
 ---
 sidebar_position: 4
-title: Sustav PDV-a na maržu
+title: Režim oporezivanja marže
 ---
 
-### KONFIGURACIJE
+## Konfiguracija
 
-Potrebno je kodirati (barem) dvije **specifične PDV šifre** u koje će se unositi nabave povezane sa sustavom PDV-a na maržu i prodaje istog sustava, povezujući ih u polju **tip registra**:
+Za korišćenje režima oporezivanja marže potrebno je konfigurisati posebne PDV knjige, PDV stope i obrasce knjiženja.
 
-- Nabave sustava PDV-a na maržu
-- Prodaje sustava PDV-a na maržu
+### Konfiguracija PDV-a
 
-Drugi korak bit će kreiranje [**PDV stopa**](/docs/configurations/tables/finance/vat-rates) koje će se koristiti na ovim specifičnim PDV šiframa, identificirajući ih s **flagom** ***PDV na maržu***:
+Potrebno je definisati najmanje dve posebne **PDV knjige** koje će se koristiti za evidentiranje nabavke i prodaje u režimu oporezivanja marže.
+
+U polju **Vrsta registra** potrebno je odabrati odgovarajuće vrednosti:
+
+- **Nabavka – režim oporezivanja marže**
+- **Prodaja – režim oporezivanja marže**
+
+### Konfiguracija PDV stopa
+
+Potrebno je kreirati odgovarajuće **[PDV stope](/docs/configurations/tables/finance/vat-rates)** koje će se koristiti u navedenim PDV knjigama i označiti ih aktiviranjem opcije **PDV na maržu**.
 
 ![](/img/it-it/finance-area/other/VATMargine.png)
 
-Stope koje se koriste u nabavi sadržavat će oznaku PDV stope pripadajuće marže, kako bi se moglo odrediti kojoj PDV stopi proporcionalno dodijeliti vrijednost same marže.
+Kod PDV stopa koje se koriste za nabavku potrebno je definisati referentnu stopu PDV-a na maržu kako bi sistem mogao proporcionalno raspodeliti ostvareni iznos marže na odgovarajuću PDV stopu.
 
-Zatim je potrebno definirati računovodstvene predloške koji predviđaju evidentiranje na tim specifičnim šiframa: posebno će predložak prodaje biti povezan s određenom vrstom izlaznog računa, što će omogućiti izdavanje dokumenta u prodaji i njegovo slanje prema SDI sustavu. Kako bi se izbjegla pogrešna upotreba PDV stopa koje nisu predviđene za upravljanje maržom, može biti korisno u tim predlošcima aktivirati sekciju ograničenja dopuštenih PDV stopa (*Provjera stope PDV-a*).
+### Konfiguracija obrazaca knjiženja
 
-Predložak prodaje evidentirat će obvezu PDV-a na maržu, s vrstom knjiženja prodaje u standardnom režimu i standardnim registrom prodaje.
+Potrebno je definisati obrasce knjiženja koji koriste prethodno konfigurisane PDV knjige.
+
+Obrazac knjiženja za prodaju mora biti povezan sa odgovarajućom vrstom izlaznog računa kako bi bilo moguće izdavanje računa i njegovo slanje putem sistema za elektronsku razmenu računa.
+
+Radi sprečavanja korišćenja neodgovarajućih PDV stopa preporučuje se aktiviranje sekcije **Kontrola PDV stopa** unutar obrasca knjiženja i ograničavanje dozvoljenih stopa.
+
+Obrazac knjiženja za prodaju evidentira obavezu PDV-a na maržu koristeći:
+
+- vrstu PDV transakcije **Prodaja – redovni režim**
+- standardni zapis izlaznih računa.
 
 ![](/img/it-it/finance-area/other/VATMargine2.png)
 
-Takvo knjiženje računovodstveno predviđa konto obveze PDV-a i konto storna prihoda od prodaje za maržu, koji se postavlja u parametrima glavne knjige u ovoj sekciji:
+### Parametri glavne knjige
+
+Prilikom knjiženja sistem koristi konto obaveze za PDV na maržu, kao i konto za storno prihoda od prodaje ostvarenog po osnovu marže.
+
+Ovi podaci definišu se u parametrima glavne knjige u sledećoj sekciji:
 
 ![](/img/it-it/finance-area/other/VATMargine3.png)
 
-Navedeni će biti prihod od prodaje i osnovni predložak. Datum posljednje obrade i negativna vrijednost marže, s druge strane, dva su vrijednosti koja Fluentis automatski ažurira prilikom završnog ispisa obrade marže za razdoblje.
+Potrebno je definisati:
 
-### OBRADA
+- konto prihoda od prodaje,
+- podrazumevani obrazac knjiženja.
 
-Unutar izbornika *Izjave* modula *Administracija* odabrati **Obrada PDV-a na maržu**:
+Polja **Datum poslednje obrade** i **Negativna vrednost marže** ne unose se ručno. Fluentis ih automatski ažurira nakon konačnog izvršavanja obračuna marže za obračunski period.
 
-Generiranjem novog izračuna imat ćemo:
+## Obrada
+
+U meniju **Administracija > Izveštaji** izaberite **Obrada PDV-a na maržu**.
+
+Prilikom pokretanja novog obračuna prikazuje se sledeća forma:
 
 ![](/img/it-it/finance-area/other/VATMargine4.png)
 
-Godina računovodstvenih parametara, registar koji će se koristiti za evidentiranje eventualnog duga na pozitivnoj marži, razlog evidentiranja, klijent koji će biti dodeljen za evidenciju duga i desno opseg datuma koji je predmet obrade.
-Nakon što postavimo ove podatke, imat ćemo mogućnost izvršiti izračun putem gumba na traci s alatima, koji će popuniti podatke na dvije kartice:
+Potrebno je definisati:
 
-U prvoj će se prikazivati ukupni iznosi PDV stopa evidentiranih u registrima marže nabave i prodaje, gdje će za nabavu biti prikazan i pripadajući postotak raspodjele:
+- godinu iz parametara računovodstva
+- PDV registar koji će se koristiti za knjiženje obaveze PDV-a na pozitivnu maržu
+- obrazac knjiženja
+- kupca koji će biti dodeljen knjiženju obaveze za PDV
+- period obrade (od – do).
+
+Nakon unosa podataka obračun se pokreće pomoću dugmeta na traci sa alatkama. Sistem zatim popunjava podatke u dve kartice.
+
+### Kartica PDV stope
+
+Prva kartica prikazuje zbirne iznose svih PDV stopa evidentiranih u registrima nabavke i prodaje za režim oporezivanja marže.
+
+Kod nabavke se dodatno prikazuju procenti raspodele koji će se koristiti u obračunu marže.
 
 ![](/img/it-it/finance-area/other/VATMargine5.png)
 
-Na drugoj kartici, s druge strane, imat ćemo obradu izračuna marže primjenjujući postotke na PDV stope povezane s PDV stopama na kupnju:
+### Kartica Obračun marže
+
+Druga kartica prikazuje obračun marže primenom odgovarajućih procenata na PDV stope povezane sa nabavkom.
 
 ![](/img/it-it/finance-area/other/VATMargine6.png)
 
-Ova druga kartica bit će popunjena samo ako marža za razdoblje, uzimajući u obzir eventualne prethodne negativne marže, dovede do pozitivnog salda same marže.
-Zatim ćemo imati nekoliko drugih gumba za upravljanje: ispis izvršene obrade, koji, ako se izvrši izravno, tražit će postavljanje oznake 'definitivno', čime će se izračun učiniti nepovratnim:
+Ova kartica se popunjava samo ako obračun za izabrani period, uzimajući u obzir eventualne negativne marže iz prethodnih perioda, rezultira **pozitivnom maržom**.
+
+## Završna obrada
+
+Nakon završetka obračuna moguće je odštampati rezultate.
+
+Prilikom pokretanja štampe sistem nudi mogućnost označavanja štampe kao **konačne**, čime se obračun zaključava i više ga nije moguće menjati.
 
 ![](/img/it-it/finance-area/other/VATMargine7.png)
 
-Ova operacija ažurirat će, u računovodstvenim parametrima, datum posljednje obrade i iznos pohranjen u negativnom saldu marže.
+Konačna štampa automatski ažurira u parametrima računovodstva:
 
-Jednom kada se postavi flag 'definitivo', omogućit će se mogućnost računovodstvenog evidentiranja PDV duga.
+- datum poslednje obrade
+- vrednost negativne marže prenete u naredni obračunski period.
+
+Nakon potvrde konačnog obračuna omogućava se knjiženje obaveze za PDV.
 
 ![](/img/it-it/finance-area/other/VATMargine8.png)
 
 ![](/img/it-it/finance-area/other/VATMargine9.png)
 
-:::tip Posebnosti
-U odjeljku PDV imat ćemo samo iznos PDV-a duga, **bez osnovice**.
+:::tip Napomena
+U PDV delu knjiženja evidentira se isključivo **iznos obaveze za PDV**, bez pripadajuće poreske osnovice.
 :::
 
-Postupak završavaju tipke za izvršenje povrata računovodstvene obrade i poništavanje definitivnog ispisa.
+Na raspolaganju su i dodatne funkcije za:
 
+- poništavanje knjiženja obaveze za PDV
+- poništavanje konačnog obračuna.
 
 ![](/img/it-it/finance-area/other/VATMargine10.png)

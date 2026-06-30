@@ -1,38 +1,47 @@
 ---
 sidebar_position: 2
-title: Mješoviti prijenos porezne obveze
+title: Mešoviti reverse charge
 ---
 
-U sustavu postoji posebna funkcionalnost za automatsko upravljanje situacijama takozvanog mješovitog reverse charge-a (Prijenosa porezne obveze), tj. kada je u istoj fakturi za kupovinu jedan dio fakturiran prema reverse charge-u, a drugi prema običnom režimu.
+Fluentis ERP omogućava automatsko upravljanje situacijama tzv. **mešovitog reverse charge** postupka, odnosno slučajevima kada se na istoj ulaznoj fakturi jedan deo stavki obračunava prema postupku prenosa poreske obaveze (*reverse charge*), dok se drugi deo obračunava prema redovnom PDV režimu.
 
-Ovaj skup postavki **nadograđuje**  one koje su već bile prisutne i s kojima se prije pokušavalo (ne potpuno) upravljati mješovitom situacijom, posebno flag  *Izuzmi iz automatskih predložaka* u tablici PDV stope i načini obračuna PDV-a.   
-Sadašnje postavke mogu se koristiti umjesto tog flaga za potpunije i funkcionalnije upravljanje.
+Ova funkcionalnost **dopunjuje** postojeće postavke koje su se ranije koristile za delimično rešavanje ovakvih situacija, naročito opciju **Isključi iz automatskih knjiženja** u tabeli **PDV stope i načini obračuna**. Nove postavke mogu se koristiti umesto te opcije kako bi se omogućilo potpunije i efikasnije upravljanje mešovitim *reverse charge* transakcijama.
 
+Funkcionalnost se zasniva na sledećim elementima:
 
-Specifične implementacije za ovu funkcionalnost uključuju:
+- opciji **Reverse Charge** u tabeli **PDV stope i načini obračuna**
+- posebnoj **Vrsti iznosa** u obrascu knjiženja
 
-- **Flag** u tablici **Stope i načini obračuna PDV-a**
-- Specifičan **Tip iznosa** u računovodstvenom predlošku
+## Tabela PDV stopa i načina obračuna
 
-### Tablica stopa i načina obračuna PDV-a
+Za PDV stopu koja se primenjuje na deo fakture obuhvaćen postupkom prenosa poreske obaveze potrebno je uključiti opciju **Reverse Charge**.
 
-Za kod PDV-a koji će biti dodijeljen dijelu fakturiranoj u reverse charge-u, omogućit će se **flag** **Reverse Charge**  koji označava stopu koja se koristi za reverse charge. To znači da PDV ove stavke neće biti uključeno u ukupnu registraciju niti će biti obračunato za stavke (pretpostavka je da dobavljač ima logiku obračuna stavki prema *osnovici + PDV*).
+Na taj način sistem prepoznaje da PDV obračunat za tu stavku neće biti uključen u ukupan iznos knjiženja niti u otvorenu stavku prema dobavljaču. Pretpostavlja se da dobavljač formira otvorene stavke prema principu **osnovica + PDV**.
 
-:::tip Napomena 
-Logika "novih postavki" za mješovitu situaciju je obrnuta u odnosu na prošlost; umjesto da se identificira dio koji se ne knjiži jer je isključen iz reverse charge-a, sada se označava dio koji je u reverse charge-u. PDV u reverse charge-u neće se dodavati u ukupnu registraciju kao prije, niti će biti plaćen dobavljaču (što se već događalo, ali bez potrebe za postavljanjem metode obračuna stavke na samo osnovicu, jer i ostavljajući osnovnu postavku na osnovicu + PDV, dio u reverse charge-u neće biti dodan u otvorenu stavku). 
+:::tip Napomena
+Logika novih postavki razlikuje se od prethodnog načina rada. Umesto označavanja dela koji se isključuje iz *reverse charge* postupka, sada se označava deo koji **podleže** *reverse charge* režimu.
+
+PDV obračunat po *reverse charge* postupku neće biti uključen u ukupan iznos knjiženja niti će biti plaćen dobavljaču. Zbog toga više nije potrebno menjati način obračuna otvorene stavke na **Samo osnovica** – čak i kada je izabran način obračuna **Osnovica + PDV**, sistem automatski isključuje *reverse charge* PDV iz otvorene stavke.
 :::
 
-### Računovodstveni predlošci: Tip iznosa
+## Obrasci knjiženja – Vrsta iznosa
 
-U računovodstvenom predlošku koji će se koristiti za knjiženje reverse charge-a, tip iznosa *Ukupno dokument/registracijae* bit će valoriziran s osnovicom + običnim PDV-om - PDV-om u reverse charge-u (jer se PDV u reverse charge-u oduzima putem gore navedenog flaga i u ovoj logici ne smije se dodavati u ukupnu vrijednost jer ne dolazi iz fakture od dobavljača, dakle nije za plaćanje).
+U obrascu knjiženja koji se koristi za evidentiranje *reverse charge* transakcija, vrsta iznosa **Ukupan iznos dokumenta/knjiženja** izračunava se na sledeći način:
 
-Predviđen je novi tip iznosa *Reverse charge* koji valorizira s PDV-om u reverse charge-u i koristi se za privremenu stavku PDV-a i za dvije PDV stavke automatske registracije.
+> **Osnovica + redovni PDV − reverse charge PDV**
 
-:::note Napomena 
-Tip iznosa *Reverse charge* ne uzima u obzir neodbitni PDV (također zbog usklađivanja s iznosom koji imam kod dobavljača). Neodbitni dio završava kao trošak u prvoj registraciji, a zatim ide u PDV na dugovanje kroz prijenos, kao PDV za plaćanje. 
+Pošto *reverse charge* PDV nije iskazan na fakturi dobavljača i ne predstavlja obavezu prema dobavljaču, njegov iznos se oduzima od ukupne vrednosti dokumenta.
+
+Uvedena je nova vrsta iznosa **Reverse charge**, koja sadrži iznos PDV-a obračunatog po postupku prenosa poreske obaveze. Koristi se za:
+
+- privremeno knjiženje PDV-a,
+- dve PDV stavke koje sistem automatski generiše tokom knjiženja.
+
+:::note Napomena
+Vrsta iznosa **Reverse charge** ne uključuje neodbitni deo PDV-a, kako bi se zadržala usklađenost sa iznosom evidentiranim kod dobavljača. Neodbitni deo PDV-a knjiži se kao trošak u prvom knjiženju, a zatim se kroz prenos evidentira kao izlazni PDV, odnosno PDV za uplatu.
 :::
 
-Računovodstveni predlošci za reverse charge postaju sljedeći:
+Obrasci knjiženja za *reverse charge* imaju sledeću strukturu:
 
 ![](/img/it-it/finance-area/other/mixrev1.png)
 

@@ -1,40 +1,43 @@
 ---
 sidebar_position: 3
-title: Sustav PDV-a prema naplati
+title: PDV prema naplaćenim naknadama
 ---
 
-:::important **Fluentis Academy** 
-'PDV prema naplati' definira se kao PDV koji postaje obvezan ne pri isporuci robe, već pri plaćanju računa. 
-Porezni obveznik koji primjenjuje ovaj sustav obračunava PDV za sve transakcije, kako aktivne tako i pasivne, prema kriteriju naplate.
-Porezni trenutak PDV-a podudara se s trenutkom plaćanja ili naplate naknada. Na taj način odstupa se od principa prema kojem je PDV obveza vezana uz dokument koji je registriran u računovodstvu.
+:::important Fluentis Academy
+**PDV prema naplaćenim naknadama** (tzv. **PDV po naplati**) predstavlja poseban način obračuna PDV-a kod kojeg porezna obveza ne nastaje prilikom isporuke dobra ili usluge, već u trenutku naplate odnosno plaćanja računa.
 
-U praksi, sustav PDV-a prema naplati omogućuje plaćanje PDV-a na iznos duga za prodaju ili pružanje usluga tek u trenutku kada kupac plati račun.
-Istovremeno, omogućuje odbitak PDV-a na kupnje tek kada porezni obveznik plati račun dobavljaču. 
+Porezni obveznik koji primjenjuje ovaj postupak obračunava PDV za sve izlazne i ulazne transakcije prema načelu novčanog tijeka. Drugim riječima, obveza PDV-a nastaje tek kada kupac plati račun, dok se pravo na odbitak pretporeza ostvaruje tek nakon što porezni obveznik podmiri račun dobavljača.
 
-U svakom slučaju, obračun PDV-a mora se izvršiti unutar godine dana od prodaje ili pružanja usluge, osim u slučajevima stečaja ili uključenosti davatelja ili naručitelja u stečajni postupak.
+Na taj se način odstupa od uobičajenog načela prema kojem PDV postaje obvezan već u trenutku evidentiranja računa u poslovnim knjigama.
+
+U praksi to znači da se PDV na izlaznim računima plaća tek nakon naplate od kupca, dok se pretporez po ulaznim računima može odbiti tek nakon plaćanja dobavljaču.
+
+Bez obzira na trenutak naplate ili plaćanja, PDV mora biti obračunan najkasnije u roku od jedne godine od datuma isporuke robe ili usluge, osim u slučajevima stečaja ili drugih zakonom propisanih postupaka insolventnosti kupca ili naručitelja.
 :::
 
-### POSTAVKE I KONFIGURACIJA RAČUNOVODSTVENIH PREDLOŽAKA 
+### Konfiguracija računovodstvenih predložaka
 
-Glavne postavke za upravljanje ovim sustavom provode se jednostavno kroz ispravnu konfiguraciju računovodstvenih predložaka.
+Glavne postavke za upravljanje ovim poreznim postupkom definiraju se pravilnom konfiguracijom računovodstvenih predložaka.
 
-Posebno je važno ispravno odabrati, unutar uključenih predložaka, u polju **Tip kretanja** (koje se odnosi na PDV), točnu vrstu.
+Ključno je pravilno odabrati odgovarajuću **Vrstu prometa PDV-a** u računovodstvenim predlošcima.
 
-U detalje:
+Konkretno:
 
-- Predložak za knjiženje računa dobavljača imat će tip *PDV kupnje u suspenziji*
-- Predložak za knjiženje računa kupca imat će tip *Prodaja s PDV-om u suspenziji*
-- Predlošci za naplatu ili plaćanje neće imati poseban tip, već će kao i obično imati tip *Nema PDV-a* (bit će povezani s predlošcima koji se automatski izvršavaju za knjiženje PDV-a koji postaje dospjelo kroz polje *Automatski predložak*)
-- Predložak za knjiženje PDV-a od nabave imat će tip Knjiženje PDV-a na kupnje u suspenziji
-- Predložak za knjiženje PDV-a na prodaje imat će tip Knjiženje PDV-a u suspenziji
+- računovodstveni predložak za knjiženje ulaznih računa mora imati vrstu prometa **PDV ulaza**
+- računovodstveni predložak za knjiženje izlaznih računa mora imati vrstu prometa **Prodaja s PDV-om**
+- računovodstveni predlošci za naplatu i plaćanje koriste standardnu vrstu prometa **Bez PDV-a**, dok se automatsko knjiženje prijenosa PDV-a izvršava putem polja **Automatski predložak**
+- računovodstveni predložak za prijenos ulaznog PDV-a mora imati vrstu prometa **Prijenos ulaznog PDV-a**
+- računovodstveni predložak za prijenos izlaznog PDV-a mora imati vrstu prometa **Prijenos izlaznog PDV-a**
 
-Sadržaj (predložak) predložaka koji se koriste za izlazne i ulazne račune tipično se razlikuje od standardnih predložaka po tome što se PDV knjiži na posebno konto za odgođeni PDV, različito od uobičajenih konta pretporeza i obveze PDV-a, koja se zatim prenose na konto obveze prema državi za PDV tijekom periodičnog obračuna PDV-a. Što se tiče PDV registra koji se koristi, može ostati standardni postojeći registar bez potrebe za definiranjem posebnog registra. Posebna vrsta PDV knjiženja definirana u predlošku omogućuje da se porez ne smatra potraživanjem niti obvezom sve dok se ne izvrši prijenosno knjiženje, iako će i dalje biti vidljiv u PDV evidencijama razdoblja.
+Računovodstveni predlošci za knjiženje ulaznih i izlaznih računa razlikuju se od standardnih predložaka po tome što se PDV knjiži na posebne kontne račune namijenjene PDV-u u prema naplaćenoj naknadi, a ne izravno na standardne račune pretporeza ili obveze PDV-a koji se koriste u redovnom obračunu.
 
-Sadržaj predložaka za naplatu i plaćanje ostaje uobičajen.
+PDV registar može ostati isti kao i kod standardnog postupka te nije potrebno definirati poseban registar. Vrsta prometa PDV-a određena u računovodstvenom predlošku osigurava da se obračunani PDV ne uzima u obzir kao pretporez ili porezna obveza sve dok se ne izvrši automatski prijenos, iako će transakcije biti vidljive u evidenciji PDV-a za odgovarajuće razdoblje.
 
-Sadržaj predložaka (izvršenih automatski) za knjiženje odgođenog PDV-a, poništava specifične račune odgođenog PDV-a i knjiži na račune običnog PDV-a jer je od tog trenutka PDV postao dospjelo ili odbitno, ovisno o slučaju.
+Računovodstveni predlošci za naplatu i plaćanje ostaju nepromijenjeni u odnosu na standardni postupak.
 
-U nastavku su prikazane neke slike detalja postavki.
+Automatski računovodstveni predlošci za prijenos PDV-a u prema naplaćenoj naknadi zatvaraju posebna konta PDV-a prema naplaćenoj naknadi te iznose prenose na standardna konta izlaznog odnosno ulaznog PDV-a. Od tog trenutka PDV postaje dospio za plaćanje ili ostvaruje pravo na odbitak pretporeza.
+
+U nastavku su prikazani primjeri konfiguracije.
 
 ![](/img/it-it/finance-area/other/suspvat1.png)
 
@@ -46,22 +49,30 @@ U nastavku su prikazane neke slike detalja postavki.
 
 ![](/img/it-it/finance-area/other/suspvat5.png)
 
-### UPRAVLJANJE PDV-OM NAKON GODINU DANA OD TRANSAKCIJE AKO NIJE PLAĆENO ILI NEPLAĆENO 
+### Obračun PDV-a nakon proteka jedne godine od transakcije
 
-Upravljanje omogućuje identifikaciju otvorenih stavki starijih od godinu dana i automatsko knjiženje prijenosa PDV-a kako bi se učinio dospjelo ili odbitno, ovisno o slučaju.
+Sustav omogućuje automatsko pronalaženje otvorenih stavaka koje su ostale nenaplaćene ili neplaćene dulje od jedne godine te automatsko knjiženje prijenosa PDV-a kako bi on postao dospio za plaćanje odnosno priznat kao pretporez, sukladno važećim propisima.
 
-Za to je moguće koristiti (s posebnim postavkama) obrazac [**Prijenos stavki**](/docs/finance-area/maturity-values/procedures/maturity-values-giro/filter-tab)
+Za tu svrhu može se koristiti forma **[Prijenos otvorenih stavaka](/docs/finance-area/maturity-values/procedures/maturity-values-giro/filter-tab)** uz odgovarajuću konfiguraciju.
 
-### POSTAVKE U SLUČAJU BANKOVNIH MJENICA I NENAPLAĆENIH POTRAŽIVANJA 
+### Konfiguracija u slučaju korištenja bankovnih mjenica (Ri.Ba.) i nenaplaćenih potraživanja
 
-Ako je u okviru prodajnog ciklusa predviđeno izdavanje bankovnih mjenica te njihovo slanje banci na naplatu ili uz klauzulu „uz dobru naplatu”, konfiguracija predložaka bit će sljedeća:
+Ako se u prodajnom procesu koriste **Ri.Ba. (Ricevute Bancarie)** te se one predaju banci na naplatu ili na naplatu uz klauzulu *salvo buon fine*, računovodstveni predlošci konfiguriraju se na sljedeći način:
 
-1. Izdavanje računa: knjiži se s predloškom konfiguriranim kao gore opisano;
+1. **Knjiženje izlaznog računa**: koristi se računovodstveni predložak konfiguriran prema prethodno opisanim pravilima.
 
-2. Izdavanje efekta/mjenice: normalno knjićenje s uobičajenim predloškom, zatvara se otvorena stavka s računa, ali se ne izvršava nikakvo knjiženje PDV-a; 
+2. **Generiranje Ri.Ba.**: koristi se standardni računovodstveni predložak. Otvorena stavka nastala izlaznim računom zatvara se, ali se još ne provodi prijenos PDV-a.
 
-3. Knjiženje **zbirnog naloga** za prezentaciju Ri.Ba: **Predložak korišten za ovo povezava je s automatskim prijenosom PDV-a**, prijenos PDV-a se knjiži na datum dospijeća efekata/mjenica; 
+3. **Knjiženje predaje Ri.Ba. banci**: računovodstveni predložak mora biti povezan s automatskim predloškom za prijenos PDV-a. Prijenos PDV-a knjiži se na datum dospijeća bankovne mjenice.
 
-4. Knjiženje priljeva: normalno, kao i obično.
+4. **Knjiženje uplate**: provodi se na uobičajeni način.
 
-**U slučaju knjiženja nenaplaćenih potraživanja**: računovodstveni predložak koji se koristi ne zahtijeva posebna podešavanja, postupak prepoznaje stavku zatvorenu putem Ri.Ba. povezanu s PDV-om prema naplati i briše registraciju prijenosa, a umjesto ponovnog otvaranja stavke, izvršava plaćanje s iznosom na teret kako bi poništio plaćanje koje je izvršeno izdavanjem Ri.Ba., čime se ponovno otvara izvorna stavka (povezana s suspendiranim PDV-om).
+#### Knjiženje nenaplaćenih Ri.Ba.
+
+Kod knjiženja nenaplaćenih bankovnih mjenica nije potrebna posebna konfiguracija računovodstvenog predloška.
+
+Sustav automatski prepoznaje otvorenu stavku zatvorenu putem Ri.Ba. koja je povezana s PDV-om prema naplaćenim naknadama te:
+
+- poništava prethodno knjiženje prijenosa PDV-a,
+- umjesto ponovnog otvaranja izvorne otvorene stavke evidentira storno plaćanja kako bi poništio zatvaranje nastalo izdavanjem Ri.Ba.,
+- ponovno otvara izvornu otvorenu stavku povezanu s PDV-om prema naplaćenim naknadama.
