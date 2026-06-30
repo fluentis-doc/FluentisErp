@@ -10,7 +10,7 @@ Ispis ima legendu na vrhu kako bi se lakše razumjeli ukupni iznosi koji su iste
 
 Grupe za podjele dospijeća korisnik može slobodno postaviti u smislu broja dana.
 
-Rubrika Dani je zapravo specifičan element obrasca za ovaj ispis, a omogućuje unos broja dana, s predznakom minus (obavezno) za stavke kojima je istekao rok plaćanja i plus predznak za stavke kojima ističe rok plaćanja, kako bi se odredio opseg izuzeća za grupiranje.
+Rubrika *Dani* je zapravo specifičan element obrasca za ovaj ispis, a omogućuje unos broja dana, s predznakom minus (obavezno) za stavke kojima je istekao rok plaćanja i plus predznak za stavke kojima ističe rok plaćanja, kako bi se odredio opseg izuzeća za grupiranje.
 
 ![](/img/it-it/finance-area/maturity-values/reports/aging-report-customer-vendor/image01.png)
 

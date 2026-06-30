@@ -5,7 +5,7 @@ sidebar_position: 4
 
 Iz ovog obrasca moguće je pokrenuti izvadak konta koji predstavlja stanje otvorenih stavki za svakog kupca ili dobavljača, za što se ispisuje poseban list. 
 
-Funkcioniranje obrasca je isto kao i za  **[ostale ispise obrasca iz ovog područja](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**.
+Funkcionisanje obrasca je isto kao i za **[ostale ispise obrasca iz ovog područja](/docs/finance-area/maturity-values/reports/customer-vendor-due-register)**.
 
 ---
 
