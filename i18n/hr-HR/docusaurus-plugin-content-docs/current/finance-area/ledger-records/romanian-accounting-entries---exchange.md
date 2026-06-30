@@ -12,7 +12,7 @@ Ovaj obrazac omogućuje da se automatski izračuna, na određeni datum, tečajna
     - Aktivno: kupci
     - Pasiva: dobavljači 
 
-Konto/podkotno i odjel su izborni filtri za sužavanje pretraživanja.  
+Konto/podkonto i odjel su izborni filtri za sužavanje pretraživanja.  
 
 ---
 

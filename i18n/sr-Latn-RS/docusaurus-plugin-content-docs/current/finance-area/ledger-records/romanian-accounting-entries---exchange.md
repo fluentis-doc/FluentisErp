@@ -1,49 +1,41 @@
 ---
-title: Zatvaranje tečajnih razlika 
+title: Zatvaranje kursnih razlika
 sidebar_position: 2
 ---
 
-Ovaj obrazac omogućuje da se automatski izračuna, na određeni datum, tečajna razlike za valutne račune (na primjer kredite i zaduženja ili bankovne račune) i da se generiraju odgovarajući računovodstveni unose.  
+Ovaj obrazac omogućava automatski obračun kursnih razlika na određeni datum za konta u stranoj valuti (na primer potraživanja, obaveze ili bankovne račune) i generisanje odgovarajućih računovodstvenih knjiženja.
 
-**Prije svega, potrebno je odabrati valutu** (jednu po jednu) prema kojoj će se vršiti izračun, kao i (pomoću izbornika s desne strane) vrstu izračuna:
+**Najpre je potrebno odabrati valutu** (jednu po jednu) za koju će se vršiti obračun, kao i (pomoću menija sa desne strane) vrstu obračuna:
 
 - Raspoloživost: uzima u obzir stanja (npr. banka)
-- Dospijeća plaćanja: čita dugove i potražnje prema kupcima/dobavljačima
+- Dospeća plaćanja: obrađuje dugovanja i potraživanja kupaca i dobavljača
     - Aktivno: kupci
-    - Pasiva: dobavljači 
+    - Pasiva: dobavljači
 
-Konto/podkotno i odjel su izborni filtri za sužavanje pretraživanja.  
-
----
-
-U središnjem pregledu prikazuju se pojedinosti pretraživanih pozicija, iznos izražen u stranoj valuti, povijesna vrijednost u eurima - izračunata kao algebarski zbroj svih kretanja, trenutna vrijednost preračunata prema tečaju prikazanom niže te pozitivna ili negativna tečajna razlika.  
+Konto/podkonto i odeljenje predstavljaju opcione filtere za sužavanje pretrage.
 
 ---
 
-U području *Parametri* definiran je niz parametara s kojima će se provoditi knjiženja:
-
-**Privremeno**: omogućuje generiranje tečajne razlike kao privremeni računovodstveni unos;
-
-**Tečaj**: broj s kojim se izračunava ažurirana vrijednost. Program ga automatski predlaže (iz tablice mjenjačnice), ali ga korisnik može promijeniti;
-
-**Datum** i **Broj** **dokumenta** i **Knjigovodstveni predložak** koji se odnosi na knjigovodstveno knjiženje koje treba urediti. **Uneseni datum također predstavlja datum do kojeg su odabrani računovodstveni zapisi**;
-
-**Konto prihoda** i **rashoda**: koriste se za evidentiranje tečajnih razlika; 
+U centralnom pregledu prikazuju se detalji pronađenih stavki, iznos izražen u stranoj valuti, istorijska vrednost u evrima – izračunata kao algebarski zbir svih prometa, trenutna vrednost preračunata prema prikazanom kursu, kao i pozitivna ili negativna kursna razlika.
 
 ---
 
-U kartici *Poništavanje knjiženja korekcije tečaja* moguće je pregledati i vratiti rezultat obavljenih knjiženja na temelju postavljenih filtera (Od datuma/Do datuma, račun).  
+U odeljku *Parametri* definišu se parametri koji će se koristiti prilikom knjiženja:
 
+**Privremeno**: omogućava generisanje kursne razlike kao privremenog računovodstvenog zapisa.
 
+**Kurs**: vrednost kursa prema kojoj se izračunava ažurirana vrednost. Program ga automatski predlaže (iz kursne liste), ali ga korisnik može promeniti.
+
+**Datum**, **Broj dokumenta** i **Računovodstveni šablon** odnose se na računovodstveno knjiženje koje će biti kreirano. **Uneti datum ujedno predstavlja krajnji datum do kojeg će biti obuhvaćena računovodstvena knjiženja.**
+
+**Konto prihoda** i **konto rashoda**: koriste se za evidentiranje kursnih razlika.
+
+---
+
+Na kartici *Poništavanje knjiženja korekcije kursnih razlika* moguće je pregledati i poništiti prethodno izvršena knjiženja na osnovu postavljenih filtera (Od datuma/Do datuma, konto).
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Tipka za traženje konta koje treba podmiriti na temelju unesenih filtara. |
-| Knjiženje | Tipka za izvođenje operacije knjiženja u području filtra i koji odgovaraju parametrima unesenim u relevantno područje. |
-| Povrati usklađenje | Tipka za brisanje knjiženja  odabranih u pregledu rezultata. |
-
-
-
-
-
-
+| Traži | Pokreće pretragu konta koja treba uskladiti na osnovu postavljenih filtera. |
+| Knjiženje | Izvršava knjiženje za zapise koji odgovaraju postavljenim filterima i parametrima. |
+| Poništi usklađenje | Briše knjiženja izabrana u pregledu rezultata. |

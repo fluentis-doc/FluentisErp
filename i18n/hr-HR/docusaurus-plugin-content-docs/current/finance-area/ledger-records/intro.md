@@ -6,7 +6,7 @@ sidebar_position: 1
 Modul uključuje funkcionalnosti za pretraživanje, unos i izmjenu računovodstvenih zapisa/knjiženja te povezanih poreznih tretmana.  
 S ovim modulom moguće je potpuno upravljanje poslovnim računovodstvom. 
 
-Zapisi/knjiženja se generiraju putem procedura za knjiženje dokumenata iz prodaje i nabave ili se unose izravno, tj. ručno.  
+Zapisi/knjiženja/kretanja se generiraju putem procedura za knjiženje dokumenata iz prodaje i nabave ili se unose izravno, tj. ručno.  
 
 Iz modula se pristupa prikazu bilance, prikazu konta, kao i pokretanju raznih **ispisa**, grupiranih u tri grupe:
 
@@ -25,7 +25,7 @@ Iz modula se pristupa prikazu bilance, prikazu konta, kao i pokretanju raznih **
 
 Prije nego što se pristupi unosu ili realizaciji knjiženja, potrebno je osigurati da su svi podaci ispravno postavljeni, kao i [**parametri**](/docs/configurations/parameters/finance/accounting-parameters) modula.
 
-Računovodstveni podaci koriste se u modulu za kontroling za obradu međugodišnjih zatvaranja i za obradu svih knjiženja troškovnih centara povezanih s njima.
+Računovodstveni podaci koriste se u modulu za kontroling za obradu međugodišnjih/privremenih zatvaranja i za obradu svih knjiženja troškovnih centara povezanih s njima.
 Modul je usko povezan s blagajnom, s kojom razmjenjuje podatke i prima računovodstvena knjiženja od automatskih procedura za knjiženje različitih računovodstvenih događaja povezanih s transakcijama blagajne (bankovni transferi, aktivni portfelj itd.).
 
 Jedna od ključnih karakteristika modula za računovodstvene zapise je njegova logika temeljena na [**računovodstvenim predlošcima**](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates-intro) koji se mogu slobodno konfigurirati za definiranje vlastitih računovodstvenih shema. 

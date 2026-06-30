@@ -3,34 +3,36 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul uključuje funkcionalnosti za pretraživanje, unos i izmjenu računovodstvenih zapisa/knjiženja te povezanih poreznih tretmana.  
-S ovim modulom moguće je potpuno upravljanje poslovnim računovodstvom. 
+Modul obuhvata funkcionalnosti za pretragu, unos i izmenu računovodstvenih zapisa/knjiženja, kao i povezanih poreskih evidencija.
 
-Zapisi/knjiženja se generiraju putem procedura za knjiženje dokumenata iz prodaje i nabave ili se unose izravno, tj. ručno.  
+Pomoću ovog modula moguće je potpuno upravljanje finansijskim računovodstvom.
 
-Iz modula se pristupa prikazu bilance, prikazu konta, kao i pokretanju raznih **ispisa**, grupiranih u tri grupe:
+Računovodstveni zapisi (knjiženja/promet) nastaju automatski kroz procedure knjiženja dokumenata iz prodaje i nabavke ili se unose direktno, odnosno ručno.
 
-- **Računovodstveni**: Bilance, Izvodi računa, računovodstveni pregledi i drugi detaljni ispisi. 
-- **Porezni**: Računovodstvene knjige, Registar PDV-a, PDV obračun
-- **Analitičko računovodstvo**:  Kretanje troškovnih centara povezano s računovodstvenim zapisima/knjiženjima.
+Iz modula je omogućen pristup pregledu bilansa, prikazu konta, kao i pokretanju različitih **izveštaja**, grupisanih u tri kategorije:
 
+- **Računovodstveni**: bilansi, izvodi konta, računovodstveni pregledi i ostali detaljni izveštaji.
+- **Poreski**: računovodstvene knjige, PDV knjige i obračun PDV-a.
+- **Analitičko računovodstvo**: pregled prometa centara troškova povezanih sa računovodstvenim zapisima.
 
-**Procedure** modula omogućuju: 
+## Procedure
 
-- Izračun i knjiženje dokumenata usklađivanja
-- Automatsko zatvaranje i ponovo otvaranje računa
-- Izračun razlika tečaja na kraju godine (valutna usklađivanja)
-- Upravljanje privremenim zapisima
-- Preuređivanje PDV protokola 
+Procedure modula omogućavaju:
 
-Prije nego što se pristupi unosu ili realizaciji knjiženja, potrebno je osigurati da su svi podaci ispravno postavljeni, kao i [**parametri**](/docs/configurations/parameters/finance/accounting-parameters) modula.
+- obračun i knjiženje dokumenata usklađivanja,
+- automatsko zatvaranje i ponovno otvaranje konta,
+- obračun kursnih razlika na kraju godine (valutno usklađivanje),
+- upravljanje privremenim zapisima,
+- ponovno numerisanje PDV protokola.
 
-Računovodstveni podaci koriste se u modulu za kontroling za obradu međugodišnjih zatvaranja i za obradu svih knjiženja troškovnih centara povezanih s njima.
-Modul je usko povezan s blagajnom, s kojom razmjenjuje podatke i prima računovodstvena knjiženja od automatskih procedura za knjiženje različitih računovodstvenih događaja povezanih s transakcijama blagajne (bankovni transferi, aktivni portfelj itd.).
+Pre nego što se započne sa unosom ili knjiženjem dokumenata, potrebno je proveriti da li su svi podaci i [**parametri**](/docs/configurations/parameters/finance/accounting-parameters) modula ispravno podešeni.
 
-Jedna od ključnih karakteristika modula za računovodstvene zapise je njegova logika temeljena na [**računovodstvenim predlošcima**](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates-intro) koji se mogu slobodno konfigurirati za definiranje vlastitih računovodstvenih shema. 
+Računovodstveni podaci koriste se i u modulu za kontroling za obradu međugodišnjih odnosno privremenih zatvaranja, kao i za obradu svih knjiženja centara troškova povezanih sa njima.
 
+Modul je тесно povezan sa blagajnom, sa kojom razmenjuje podatke i preuzima računovodstvena knjiženja generisana automatskim procedurama za evidentiranje različitih finansijskih događaja povezanih sa blagajničkim poslovanjem (bankovni transferi, aktivni portfolio i sl.).
 
-:::important Vidi također
-[**VIDEO TUTORIJALI ZA RAČUNOVODSTVENE ZAPISNIKE**](/docs/video/finance/intro)
+Jedna od najvažnijih karakteristika modula računovodstvenih zapisa jeste njegova logika zasnovana na [**računovodstvenim šablonima**](/docs/configurations/tables/finance/ledger-records-templates/ledger-records-templates-intro), koji se mogu u potpunosti prilagoditi radi definisanja sopstvenih računovodstvenih modela.
+
+:::important Pogledajte takođe
+[**VIDEO TUTORIJALI ZA RAČUNOVODSTVENE ZAPISE**](/docs/video/finance/intro)
 :::
