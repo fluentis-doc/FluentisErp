@@ -1,52 +1,73 @@
 ---
-title: Upravljanje F24
+title: Upravljanje obrascem F24
 sidebar_position: 2
 ---
 
 ## Automatsko popunjavanje
 
-Kreiranje modela F24 podrazumijeva učitavanje novog modela unutar kojeg su podaci iz zaglavlja popunjeni na temelju referenci unesenih unutar tablice [**Tvrtka**.](/docs/configurations/tables/general-settings/company). 
- 
+Prilikom kreiranja novog obrasca **F24**, podaci u zaglavlju automatski se popunjavaju na osnovu podešavanja definisanih u tabeli **[Preduzeće](/docs/configurations/tables/general-settings/company)**.
 
-Razdoblje PDV-a i razdoblje zadržavanja (koja se sastoje od dva polja mjesec / godina) predloženi su kao trenutni mjesec: mogu se promijeniti kako bi se pozvao referentni mjesec (kako za podatke o PDV-u koji se treba platiti, tako i za akontacije poreza koje treba platiti).
+Period PDV-a i period poreza po odbitku (mesec i godina) podrazumevano se popunjavaju tekućim mesecom, ali ih je moguće promeniti kako bi odgovarali obračunskom periodu za koji se podnosi obrazac.
 
-Posebice, što se tiče PDV obračuna, tražit će se razdoblje pohranjeno u obrascu **[Uplate PDV-a](/docs/finance-area/declarations/declarations/vat-payment)** prisutnom u glavnoj knjizi (gdje se automatski pohranjuju vrijednosti obračuna prilikom njegovog završnog ispisa: omogućeno je ručno unositi vrijednosti).
+Kod PDV-a sistem automatski preuzima podatke iz forme **[Uplate PDV-a](/docs/finance-area/declarations/declarations/vat-payment)** u oblasti glavne knjige, gde se čuvaju podaci konačno obračunatog PDV-a. Vrednosti je moguće uneti i ručno.
 
-Moguće je odabrati obradu samo podataka o PDV-u ili samo podataka o zadržavanju brisanjem podataka iz polja (period i godina referencije) podataka koji nisu od interesa.
+Ako je potrebno obraditi samo jedan deo obrasca, dovoljno je isprazniti polja perioda za deo koji se ne želi uključiti:
 
-Jednom kada se pohrane podaci o zaglavlju, aktivirat će se tipka **Predloži vrijednosti** koji će popuniti razne retke prve **Kartice blagajne**.
+- za obradu samo PDV-a isprazniti period poreza po odbitku
+- za obradu samo poreza po odbitku isprazniti period PDV-a.
 
-Jednom kada su **ručno** ispunjene sve **ostale sekcije** deklaracije, ovisno o potrebama, postavljen potpisnik/signatar i putanja za kreiranje datoteke, bit će moguće izvršiti kreiranje datoteke s odgovarajućom tipkom koja će stvoriti datoteku s imenom strukturiranim kao 'PDV broj tvrtke' + '_' + 'Broj deklaracije' + '_' + 'Datum deklaracije' s ekstenzijom F24. U slučaju nedostajućih obaveznih podataka bit će prikazana poruka o grešci koja objašnjava problem, a datoteka neće biti kreirana.
+Nakon čuvanja podataka zaglavlja aktivira se dugme **Predloži vrednosti**, koje automatski popunjava redove prve kartice **Državni budžet (Erario)**.
 
-Moguće je otkazati stvaranje datoteke putem odgovarajuće tipke za upravljanje.
+Preostale sekcije obrasca po potrebi se popunjavaju ručno.
 
-Putem tipke **Kreiraj datoteku** moguće je kreirati datoteku koja će biti poslana Poreznoj upravi putem odgovarajućih kanala (npr. Entratel).
-Datoteka se automatski arhivira u Dokumentima i može se pregledati i preuzeti lokalno putem gumba i padajuće liste **Dokumenti**, koja se nalazi na traci s alatima.
+Nakon izbora obveznika, potpisnika i lokacije za čuvanje datoteke moguće je pokrenuti kreiranje elektronske datoteke.
 
-:::note[Napomena]
-Za kreiranje datoteke potrebna je prisutnost (može biti vraćena poruka upozorenja) dva Bizlink konektora nazvana F24 (Upravlja usluga s autentifikacijom) i F24Errors, tipa Folder Output i s povezivanjem na partnera AgeEnt, Tok AgeEnt, Operacija toka i dokument toka F24 (F24Errors za drugi).
+Naziv datoteke generiše se u sledećem formatu:
+
+`PIB preduzeća_Broj obrasca_Datum obrasca.F24`
+
+Ako nedostaju obavezni podaci, sistem prikazuje odgovarajuću poruku i datoteka neće biti kreirana.
+
+Kreiranje datoteke moguće je poništiti odgovarajućom funkcijom.
+
+Pritiskom na dugme **Kreiraj elektronsku datoteku** generiše se datoteka koja se šalje Poreskoj upravi putem odgovarajućih elektronskih kanala (npr. Entratel).
+
+Generisana datoteka se automatski arhivira u dokumentnom sistemu i dostupna je za pregled i preuzimanje putem dugmeta **Dokumenti** na traci sa alatkama.
+
+:::note Napomena
+Za kreiranje elektronske datoteke moraju biti konfigurisana dva BizLink konektora:
+
+- **F24** (servis sa autentifikacijom)
+- **F24Errors**
+
+Oba konektora moraju biti povezana sa partnerom **AgeEnt**, odgovarajućim tokom (**Flow**) i dokumentom **F24** (odnosno **F24Errors** za drugi konektor).
 :::
 
 ## Knjiženje
 
-U zaglavlju modela moguće je ispuniti polja za eventualne **Bankovni troškovi** i za račun **Banke za plaćanje**.
-U ovom trenutku je moguće pritisnuti gumb **Knjiženje** za automatsko generiranje knjiženja koje bilježi izlaz iz banke i povrat računa (automatski napunjenih) gdje je učitana dugovanja za zadržane poreze za uplatu i za PDV za uplatu (primjer računa koji se obično nazivaju Državni proračun c/porezi na zadržane iznose i Državni proračun C/PDV).
+U zaglavlju obrasca moguće je uneti:
 
-:::tip[Napomena]
-Računi koji se automatski koriste za učitavanje dugovanja za PDV i dugovanja za akontacije poreza na dohodak postavljeni su, respektivno, u [**parametrima računovodstva**](/docs/configurations/parameters/finance/accounting-parameters) što se tiče PDV-a, te u tablici [**Tipovi odbitka poreza**](/docs/configurations/tables/finance/withholding-tax-types) za akontacije poreza na dohodak, zadani račun koji je mogao biti zamijenjen tijekom faze [**knjigovodstvene obrade isplate naknada**](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)
+- **Bankarske naknade**
+- **Bankovni račun za plaćanje**.
+
+Nakon toga moguće je pokrenuti funkciju **Knjiženje**, koja automatski generiše knjiženje:
+
+- isplate sa bankovnog računa
+- zatvaranja obaveze za PDV
+- zatvaranja obaveze za porez po odbitku.
+
+:::tip Napomena
+Konta koja se koriste za automatsko knjiženje određuju se:
+
+- za PDV u **[Parametrima računovodstva](/docs/configurations/parameters/finance/accounting-parameters)**
+- za porez po odbitku u tabeli **[Tipovi poreza po odbitku](/docs/configurations/tables/finance/withholding-tax-types)**.
+
+Konto za porez po odbitku može se promeniti tokom postupka **[Knjiženja isplata naknada](/docs/finance-area/professional-men/accounting/payments-accounting/parameters)**.
 :::
 
-
-
-| Funkcija | Značenje |
+| Funkcija | Opis |
 | --- | --- |
-| Spremi | Spremi model u upotrebi. |
-| Predloži vrijednosti | Izvršava preuzimanje podataka iz uplate PDV-a i od poreza na isplaćene naknade. |
-| Novi detalj | Postavlja kursor u mreži za unos detalja. |
-| Obriši detalj | Briše odabrani redak detalja. |
-
-
-
-
-
-
+| Sačuvaj | Čuva trenutno otvoreni obrazac F24. |
+| Predloži vrednosti | Preuzima podatke iz obračuna PDV-a i evidentiranih poreza po odbitku. |
+| Nova stavka | Postavlja kursor na novi red za unos stavke. |
+| Obriši stavku | Briše izabranu stavku iz obrasca. |

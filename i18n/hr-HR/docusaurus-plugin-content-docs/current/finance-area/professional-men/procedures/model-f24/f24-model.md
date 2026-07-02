@@ -1,26 +1,18 @@
 ---
-title: Model F24
+title: Obrazac F24
 sidebar_position: 1
 ---
 
-Postupak je namijenjen za kreiranje obrasca F24. Ovaj obrazac je namijenjen za plaćanje raznih poreza koji se plaćaju mjesečno od strane tvrtke.
+Ova procedura služi za izradu i upravljanje obrascima **F24**, koji se koriste za plaćanje poreza, doprinosa i drugih javnih davanja.
 
-Za unos novog obrasca F24 pritisnite tipku **Novi** na traci izbornika.
+Za izradu novog obrasca F24 kliknite **Novo** na alatnoj traci.
 
-Za detalje u novom modelu tijekom unosa pogledajte [**Upravljanje modelom F24**].(/docs/finance-area/professional-men/procedures/model-f24/f24-management)
+Detaljne informacije o unosu i obradi obrasca dostupne su u dokumentaciji **[Upravljanje obrascem F24](/docs/finance-area/professional-men/procedures/model-f24/f24-management)**.
 
-
-
-| Funkcija | Značenje |
+| Funkcija | Opis |
 | --- | --- |
-| Pretraživanje | Tipka za primjenu filtara pretraživanja na cijelu bazu podataka unesenih modela. |
-| Novi | Poziva proceduru za unos novog modela. |
-| Izmjena | Poziva proceduru za izmjenu prethodno unesenog modela. |
-| Prikaz  | Poziva proceduru za prikaz prethodno unesenog modela. |
-| Brisanje | Izvodi postupak za brisanje prethodno unesenog modela. |
-
-
-
-
-
-
+| Traži | Primjenjuje zadane kriterije pretraživanja na bazu obrazaca F24. |
+| Novo | Otvara postupak za unos novog obrasca F24. |
+| Uredi | Otvara odabrani obrazac F24 radi izmjene. |
+| Prikaži | Otvara odabrani obrazac F24 u načinu samo za pregled. |
+| Obriši | Briše odabrani obrazac F24. |

@@ -11,6 +11,6 @@ Dvostrukim klikom na zapis u delu za evidenciju moguće je otvoriti i pregledati
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Pretražuje listu kreiranih knjiženja. |
+| Pretraga knjiženja | Pretražuje listu kreiranih knjiženja. |
 | Poništi knjiženje | Briše sva izvršena knjiženja (izabrana iz tabele **Računovodstvo**) zajedno sa svim pripadajućim naknadama. |
-| Povrati zapise | Vraća samo izabrani knjiženi zapis iz tabele **Knjiženi zapis**. |
+| Povrat zapisa | Vraća samo izabrani knjiženi zapis iz tabele **Knjiženi zapis**. |

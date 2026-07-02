@@ -19,7 +19,7 @@ Pažnja: prije pokretanja postupka knjiženja provjerite postavke na kartici **[
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži plaćanja | Potražite popis plaćanja koja treba izvršiti. |
+| Pretraga plaćanja | Potražite popis plaćanja koja treba izvršiti. |
 | Knjiženje plaćanja | Obavlja knjiženje odabranih plaćanja. |
 
 

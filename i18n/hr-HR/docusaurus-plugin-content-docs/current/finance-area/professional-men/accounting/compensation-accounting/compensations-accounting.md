@@ -1,5 +1,5 @@
 ---
-title: Knjiženje naknada
+title: Knjiženje kompenzacija/naknada
 sidebar_position: 1
 ---
 

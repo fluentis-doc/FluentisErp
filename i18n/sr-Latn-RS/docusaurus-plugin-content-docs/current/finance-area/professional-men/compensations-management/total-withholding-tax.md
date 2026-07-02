@@ -1,27 +1,19 @@
 ---
-title: Ukupni iznosi po odbitku
+title: Ukupni obračun poreza po odbitku
 sidebar_position: 2
 ---
 
-Sažeci PDV-a i detaljni podaci o obračunu poreza po odbitku, Enasarco i INPS doprinosa.
+Prikazuje zbirne podatke o obračunu PDV-a, poreza po odbitku, doprinosa **Enasarco** i **INPS**.
 
- ![](/img/it-it/finance-area/professional-men/compensations-management/total-withholding-tax/image01.png)
+![](/img/it-it/finance-area/professional-men/compensations-management/total-withholding-tax/image01.png)
 
-**FLAG u podnožju obrasca**: moguće je postaviti **ručni izračun**: moguće je postaviti ručni izračun: u ovom slučaju bit će moguće ručno forsirati polja za izračun poreza po odbitku, polja Enasarco i izračun PDV-a u kartici **[PDV Sažeci](/docs/finance-area/professional-men/compensations-management/vat-summaries)**. 
+**Opcija u dnu forme** omogućava aktiviranje **ručnog obračuna**. Kada je ova opcija uključena, moguće je ručno uneti podatke za obračun poreza po odbitku, Enasarco doprinosa, kao i podatke za obračun PDV-a u kartici **[PDV Sažeci](/docs/finance-area/professional-men/compensations-management/vat-summaries)**.
 
-Imajte na umu da ako je postavljen ručni izračun, aplikacija više neće uskladiti datum dospijeća za plaćanje u sljedećem tabu.
+Treba imati u vidu da, kada je aktiviran ručni obračun, aplikacija više neće automatski usklađivati datum dospeća plaćanja u sledećoj kartici.
 
-Na kraju, imajte na umu da u (dalekom) slučaju primanja knjižnog odobrenja, vrijednosti u mreži s detaljima moraju biti unesene s negativnim predznakom.
-
-
+Takođe, u slučaju knjižnog odobrenja, vrednosti u tabeli sa detaljima moraju biti unete sa negativnim predznakom.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Izračunaj vrijednosti | Vrši preračun podataka o naknadama (odbitci, PDV, rokovi). |
-| Pregled ispisa | Obavlja pretpregled ispisa kompenzacije.|
-
-
-
-
-
-
+| Izračunaj vrednosti | Ponovo izračunava podatke o naknadi (porez po odbitku, PDV i rokove plaćanja). |
+| Pregled štampe | Prikazuje pregled štampe naknade. |

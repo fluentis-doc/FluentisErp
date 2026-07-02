@@ -1,5 +1,5 @@
 ---
-title: Prethodni
+title: Prethodni/Povrat
 sidebar_position: 4
 ---
 
@@ -12,8 +12,8 @@ Iz ove kartice moguće je odraditi s otkazivanje/povrat provedenog obračuna. Ot
 | Funkcija | Značenje |
 | --- | --- |
 | Traži | Pretražite popis stvorenih kreacija. |
-| Poništi knjiženje | Ovom tipkom brišu se svi provedeni obračuni, sa svim pripadajućim naknadama. |
-| Poništi zapise | Tipka vraća odabrane zapise. |
+| Povrat knjiženja | Ovom tipkom brišu se svi provedeni obračuni, sa svim pripadajućim naknadama. |
+| Povrat zapisa | Tipka vraća odabrane zapise. |
 
 
 

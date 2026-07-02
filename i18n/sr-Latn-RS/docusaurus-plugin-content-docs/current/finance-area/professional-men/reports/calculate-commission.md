@@ -1,14 +1,17 @@
 ---
-title: Izračun provizija
+title: Obračun provizija
 sidebar_position: 3
 ---
 
-Ispis koji se nalazi na ovoj poziciji (odnosi se na administrativno područje) kreiran je da podrži **[Izračun provizije](/docs/finance-area/professional-men/procedures/calculate-commissions)** prisutan u administrativnim postupcima (koji se oslanja na podatke o proviziji agenta unesene izravno iz računovodstvenih zapisa nakon odgovarajuće konfiguracije računovodstvenih predložaka uključeni).
+Ovaj izveštaj, koji pripada oblasti **Administracija**, služi kao podrška postupku **[Obračun provizija](/docs/finance-area/professional-men/procedures/calculate-commissions)**.
 
-Korištenjem ovog ispisa stoga je moguće obraditi popis obračunatih provizija, moguće filtriranje prema pojedinačnom agentu, prema klijentu, prema datumu i umetanje referentnog datuma kako bi se provizija smatrala obračunatom.
+Izveštaj prikazuje pregled svih dospelih provizija izračunatih na osnovu podataka evidentiranih u računovodstvenim knjiženjima, uz prethodno odgovarajuće konfigurisane računovodstvene šablone.
 
+Podatke je moguće filtrirati prema:
 
+- zastupniku
+- kupcu
+- periodu
+- datumu koji određuje kada se provizija smatra dospelom.
 
-
-
-
+Na osnovu izabranih kriterijuma generiše se pregled provizija koje ispunjavaju zadate uslove.

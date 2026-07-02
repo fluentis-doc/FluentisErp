@@ -1,5 +1,5 @@
 ---
-title: Knjiženje naknada
+title: Knjiženje kompenzacija/naknada
 sidebar_position: 1
 ---
 
@@ -9,7 +9,6 @@ LINKOVI:
 
 **[Povratak](/docs/finance-area/professional-men/accounting/compensation-accounting/rollback)**
 
-&nbsp;
 
 Ovim postupkom naknade koje su postale konačne knjiže se u glavnu knjigu i PDV knjige.
 

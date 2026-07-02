@@ -9,9 +9,9 @@ sidebar_position: 3
 
 
 
-**Donji prikaz**: predstavlja popis datuma dospijeća za plaćanje izračunat na temelju uvjeta gornje rešetke.
+**Donji prikaz**: predstavlja popis datuma dospijeća za plaćanje izračunat na temelju uvjeta gornje tablice.
 
-Stavka koja će se otvoriti za spremanje naknade (također u obliku obavijesti o naknadi) može se blokirati za plaćanje aktiviranjem flag **ne plativo** i može se dodati povezana bilješka.
+Stavka koja će se otvoriti za spremanje naknade (također u obliku obavijesti o naknadi) može se blokirati za plaćanje aktiviranjem opcije  **nije plativo** i može se dodati povezana bilješka.
 
 Radnja je potpuno slična formi prisutnoj u **[unosu zapisa](/docs/finance-area/ledger-records/records/ledger-record)** na koje se upućuje.
 

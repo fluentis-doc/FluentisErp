@@ -1,45 +1,69 @@
 ---
-title: Izračun provizija
+title: Obračun provizija
 sidebar_position: 2
 ---
 
-Ova procedura koja se odnosi na administrativno područje stvorena je za obradu podataka o provizijama agenata koji su uneseni izravno iz računovodstvenih evidencija nakon odgovarajuće konfiguracije računovodstvenih razloga uključenih.
+Ova procedura, koja pripada oblasti **Administracija**, služi za obračun provizija zastupnika/agenta na osnovu podataka evidentiranih u računovodstvenim knjiženjima, uz prethodno odgovarajuće konfigurisane računovodstvene šablone.
 
-U posebnosti, razlog koji se koriste za registraciju prodajnih faktura trebaju imati oznaku **Provizije** aktiviranu.
+Da bi se provizije pravilno obračunavale, računovodstveni šablon (ili više njih) koji se koristi za knjiženje izlaznih računa mora imati aktiviranu opciju **Provizije**.
 
-**NAPOMENA**: potrebno je aktivirati oznaku Upravljanje provizijama i unutar Konfiguracije > Alati > Administracija > Parametri računovodstva za željenu godinu.
+:::note Napomena
+Potrebno je aktivirati i opciju **Upravljanje provizijama** u meniju **Konfiguracija > Uslužni programi > Administracija > Parametri računovodstva** za odgovarajuću poslovnu godinu.
+:::
 
-Pri otvaranju obrasca izvršavanjem naredbe **Pretraživanje**, koja se nalazi na traci s izbornicima, učitava se popis aktivnih agenata (putem odgovarajuće oznake mogu se učitati i oni čiji je datum isteka mandata istekao).
+Nakon otvaranja forme i pokretanja funkcije **Traži** na traci sa alatkama, učitava se lista svih aktivnih zastupnika/agenta. Po potrebi je moguće uključiti i zastupnike kojima je istekao datum važenja ugovora o zastupanju.
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image01.png)
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image02.png)
 
-Na desnoj strani obrasca prisutni su i elementi za filtriranje podataka s kojih se obračunavaju provizije, kao i elementi koje treba naznačiti kako bi se ispravno obračunali troškovi na temelju likvidacije koja se generira.
+Na desnoj strani forme nalaze se kriterijumi za filtriranje podataka koji će biti uključeni u obračun provizija, kao i podaci potrebni za pravilnu izradu obračuna naknada.
 
-**PAŽNJA:**
+:::warning Važno
+Za razliku od istoimene procedure u oblasti **Prodaja**, ovde se **ne izrađuju obračuni provizija** koji se naknadno pretvaraju u naknade.
 
-Za razliku od sličnog obračuna prisutnog u prodajnom području, na kraju ove procedure ne obrađuju se Likvidacije (koje se mogu pretraživati i konzultirati te zatim pretvoriti u troškove), već će se izravno generirati troškovi agenata koji se mogu pretraživati i dodatno obrađivati u području Primatelja.
+Po završetku postupka sistem **direktno generiše naknade zastupnika**, koje su odmah dostupne u oblasti **Primaoci naknada** za dalju obradu.
+:::
 
-**Filtriranje Valute**: omogućuje odabir i filtriranje stavki koje se uzimaju u obzir za obračun provizija, izraženih u određenoj valuti.
+## Filter valute
 
-**Filtriranje stavki**: filtriranje ove grupe omogućuje postavljanje referentnog datuma za stjecanje provizije (postavljenog po zadanim postavkama na trenutni datum prilikom otvaranja obrasca) i dodatno filtriranje prema vrsti i datumu dokumenta. Također je prisutna oznaka koja aktivira konverziju stavki u valutu koristeći tečaj datuma dokumenta, nadmašujući eventualni drugačiji tečaj otvaranja stavki.
+Omogućava filtriranje otvorenih stavki koje će biti uključene u obračun provizije prema izabranoj valuti.
+
+## Filter otvorenih stavki
+
+Ova grupa filtera omogućava određivanje:
+
+- datuma prema kojem se utvrđuje pravo na proviziju (podrazumevano se predlaže tekući datum)
+- vrste dokumenta
+- datuma dokumenta.
+
+Dostupna je i opcija kojom se otvorene stavke u stranoj valuti preračunavaju prema kursu na datum dokumenta, nezavisno od kursa korišćenog prilikom otvaranja stavke.
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image03.png)
 
-**PAŽNJA**: U slučaju da agent ima metodu obračuna provizija na **Ukupna plaćanja** i faktura prodaje ima kao tip plaćanja **Bankovni prijenos**, obračun provizije će se u svakom slučaju dogoditi na datum dospijeća bankovne primitke, neovisno o zatvaranju predmeta u vezi s izdavanjem RiBe i predajom na Saldo nakon dobrobiti i/ili kreditiranja iznosa.
+:::warning Važno
+Ako zastupnik/agent koristi način obračuna provizije **Po potpunoj naplati**, a izlazni račun ima način plaćanja **Bankarska menica (Ri.Ba.)**, pravo na proviziju nastaje na datum dospeća bankarske menice, bez obzira na zatvaranje otvorene stavke prilikom izdavanja ili predaje menice na naplatu.
 
-Osim toga, bit će dodani dodatni dani koje je moguće postaviti u **Parametri > Blagajna > Parametri Rizik kupca** > **Broj dana nakon isteka za efekte predane na saldo nakon dobrobiti / nakon naplate**.
+Na taj datum dodatno se dodaje broj dana definisan u:
 
-**Podaci za izradu likvidacije**: Polja iz ove grupe trebaju se obraditi prije pokretanja izračuna kako bi se unio datum likvidacije (predložen kao trenutni datum), opis likvidacije te mjesec/godina obračuna ENASARCO (ako se ovaj posljednji podatak izostavi, naknada će biti kreirana s istim praznim poljima i bit će potrebno ručno dopuniti unutar svake generirane naknade).
+**Parametri > Riznica > Parametri kreditnog rizika kupca > Broj dana nakon dospeća za menice predate na naplatu / nakon naplate**.
+:::
+
+## Podaci za izradu obračuna
+
+Pre pokretanja obračuna potrebno je definisati:
+
+- datum obračuna (podrazumevano tekući datum)
+- opis obračuna
+- mesec i godinu obračuna doprinosa ENASARCO.
+
+Ako mesec i godina ENASARCO nisu uneti, naknade će biti izrađene bez tih podataka i biće potrebno da se oni naknadno ručno dopune u svakom generisanom dokumentu.
 
 ![](/img/it-it/finance-area/professional-men/procedures/calculate-commissions/image04.png)
 
-Nakon postavljanja filtara kao što je opisano iznad, unesite podatke za izradu likvidacije, odaberite iz popisa agente subjekte za likvidaciju i pritisnite gumb **Izračunaj** koji se nalazi na traci izbornika.
+Nakon definisanja svih kriterijuma:
 
-U ovom trenutku je moguće zatvoriti obrazac u komentaru jer su naknade agenata već izračunate i automatski prisutne u području Primatelji.
+1. izaberite zastupnike za koje želite da izvršite obračun
+2. kliknite **Izračunaj** na traci sa alatkama.
 
-
-
-
-
+Po završetku postupka naknade zastupnika/agenta automatski se izrađuju i odmah su dostupne u oblasti **Primaoci naknada**, gde ih je moguće pregledati i nastaviti njihovu obradu.

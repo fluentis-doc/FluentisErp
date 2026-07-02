@@ -1,23 +1,11 @@
 ---
-title: Centri troška/profita 
+title: Centri troškova/profitni centri
 sidebar_position: 6
 ---
 
-Kartice troškovnih/profitnih centara omogućuju vam da poboljšate praćenje troškovnog centra (i/ili dobit - ne koristi se ako je aktivno upravljanje naprednim kontrolingom) s unesenim troškovima.
-
-
-
-
-
-
+Kartica **Centri troškova/profitni centri** omogućava raspodelu troškova naknade po mestima troška i profitnim centrima. Ova funkcionalnost služi za detaljniju analitičku raspodelu troškova, a koristi se kada nije aktivno napredno upravljanje kontrolingom.
 
 | Funkcija | Značenje |
 | --- | --- |
-| Novi CDC | Umeće kursor prilikom umetanja novog retka u odjeljku Centri troškova. |
-| Obriši CDC | Briše odabrane transakcije u rešetki mjesta troška. |
-
-
-
-
-
-
+| Novi centar troška | Postavlja kursor na novi red za unos raspodele po mestu troška. |
+| Obriši centar troška | Briše izabrane raspodele iz tabele mesta troška. |

@@ -1,5 +1,5 @@
 ---
-title: Povrat
+title: Povrat/Prethodni
 sidebar_position: 3
 ---
 
@@ -11,9 +11,9 @@ Postupak će biti moguć samo ako se razdoblje još može mijenjati (ispisan dne
 
 | Funkcija | Značenje |
 | --- | --- |
-| Traži | Pretražite popis stvorenih kreacija. |
-| Poništi knjiženje | Ovom tipkom brišu se sva provedena knjiženja (odabrana iz tablice 'Računovodstvo'), sa svim pripadajućim naknadama.|
-| Povrati zapise | Tipka vraća samo knjiženi unos odabran iz tablice 'Knjiženi unos'. |
+| Pretraga knjiženja | Pretražite popis stvorenih kreacija. |
+| Povrat knjiženja | Ovom tipkom brišu se sva provedena knjiženja (odabrana iz tablice 'Računovodstvo'), sa svim pripadajućim naknadama.|
+| Povrat zapisa | Tipka vraća samo knjiženi unos odabran iz tablice 'Knjiženi unos'. |
 
 
 

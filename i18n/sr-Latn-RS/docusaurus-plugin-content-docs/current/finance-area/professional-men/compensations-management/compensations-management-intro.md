@@ -1,115 +1,148 @@
 ---
-title: Upravljanje naknadama
+title: Evidencija kompenzacija/naknada
 sidebar_position: 1
 ---
 
-### **POVEZNICA NA KARTICE NA DNU OBRASCA**:
+### Povezani sadržaj
 
-**[Ukupni porez po odbitku](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**
+- **[Ukupan obračun poreza po odbitku](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**
+- **[Lista plaćanja](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**
+- **[Uplate poreza po odbitku](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in)**
+- **[PDV pregledi](/docs/finance-area/professional-men/compensations-management/vat-summaries)**
+- **[Mesta troška / profitni centri](/docs/finance-area/professional-men/compensations-management/cost-profit-centres)**
+- **[Doprinosi (INPS)](/docs/finance-area/professional-men/compensations-management/national-insurance)**
 
-**[Lista plaćanja](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**
+Ova forma služi za unos i izmenu dokumenata primljenih od trgovačkih predstavnika ili agenata, bilo da se radi o **privremenom obračunu** ili **konačnom računu**.
 
-**[Plaćanja po odbitku](/docs/finance-area/professional-men/compensations-management/withholding-tax-paying-in)**
-
-**[Sažeci PDV-a](/docs/finance-area/professional-men/compensations-management/vat-summaries)**
-
-**[Centri troškova/profita](/docs/finance-area/professional-men/compensations-management/cost-profit-centres)**
-
-**[INPS](/docs/finance-area/professional-men/compensations-management/national-insurance)**
-
- 
-
- 
-
-Iz ovog obrasca nastavljate s učitavanjem/izmjenom dokumenta primljenog od vanjskog predstavnika ili agenta, **u slučaju privremenog obračuna i konačne fakture: razlika između toga dvoje, zapravo, odnosit će se samo na trenutno ili naknadno umetanje (dakle ulazak u izmjene već zabilježenog privremenog dokumenta) polja koja se odnose na broj i datum konačnog dokumenta.**
+Razlika između ova dva dokumenta sastoji se isključivo u tome što se kod konačnog računa naknadno popunjavaju podaci o broju i datumu konačnog dokumenta.
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image01.png)
 
- 
+## Zaglavlje dokumenta
 
-### **POLJA ZAGLAVLJA**:
+**Spoljni saradnik**: bira se konto primaoca naknade. U ovom polju moguće je odabrati isključivo:
 
-**Primatelj**: odnosi se na unos nositelja podkonta naknade: u ovo polje mogu se unijeti samo konta s vrstom konta agenta ili dobavljača koji imaju oznaku poreza po odbitku postavljenu u šifarniku.
+- konto agenta
+- konto dobavljača kod kojeg je u matičnim podacima aktivirana opcija **Porez po odbitku**.
 
-Sljedeći statusni flagovi (otvoriti expander) su: 
+### Statusi dokumenta
 
-**Uračunato**: njime automatski upravlja aplikacija u trenutku obračuna naknade. Nakon što je ova zastavica postavljena, naknada se više ne može mijenjati. **Plaćeno zadržavanje**: primijenit će se na naknadu ručno ili kroz postupak  **[Plaćanja po odbitku](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)** koji se može izvesti iz maske za pretraživanje naknade. 
+Statusi su dostupni otvaranjem dodatne sekcije.
 
-**Certifikat**: automatski ga postavlja program kada se zadržani certifikati definitivno ispisuju.
+- **Proknjiženo**: status se automatski postavlja tokom postupka knjiženja naknade. Nakon knjiženja dokument više nije moguće menjati.
+- **Porez po odbitku uplaćen**: može se postaviti ručno ili automatski putem postupka **[Uplate poreza po odbitku](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)** koji je dostupan iz forme za pretragu naknada.
+- **Potvrđeno**: status se automatski postavlja nakon konačne štampe potvrda o obračunatom porezu po odbitku.
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image02.png)
 
- 
+Ako je za izabranog agenta ili dobavljača u matičnim podacima definisan **tip poreza po odbitku**, sistem će ga automatski predložiti prilikom unosa naknade.
 
-Povezano s podkonto agenta ili dobavljača, može se unaprijed definirati **vrsta poreza** po odbitku koji će se predložiti prilikom učitavanja naknade (veza se definira u registru agenta ili dobavljača).
+**Napomena**: omogućava unos slobodnog teksta koji će biti prenet u napomene svih računovodstvenih knjiženja povezanih sa ovom naknadom.
 
-Sljedeće polje za **bilješke** omogućuje vam da zapišete referentni tekst naknade: to je bilješka koja će se zatim prijaviti u detaljnim bilješkama svih računovodstvenih kretanja povezanih s ovom kompenzacijom. 
+**Opis knjiženja**: koristi se kao opis računovodstvenog knjiženja prilikom izvršavanja postupka knjiženja naknade.
 
-**Opis kretanja**: koristit će se u obračunu kompenzacije za istoimeno polje u računovodstvenom unosu.
+### Desni deo forme
 
- 
+**Šifra vrste isplate**: ovo polje se automatski popunjava na osnovu izabranog tipa poreza po odbitku, ukoliko je odgovarajuće polje definisano u formi **[Vrste poreza po odbitku](/docs/configurations/tables/finance/withholding-tax-types)**. Šifra predstavlja oznaku vrste isplate koja se iskazuje u obrascu **JOPPD**, odnosno odgovarajućoj poreskoj prijavi za primanja.
 
-Na desnoj strani: 
+Primeri:
 
-**Šifra plaćanja**: ovo polje, predloženo automatski (podsjećajući na primjenjivu vrstu poreza po odbitku za naknadu) ako je polje istog naziva ispunjeno u obrascu za [Upravljanje vrstom poreza](/docs/configurations/tables/finance/withholding-tax-types) po odbitku, odnosi se na šifru koja se odnosi na predložak plaćanja koji treba navesti u jedinstvenoj ovjeri primatelja (vidi upute ministarstva).
+- **A** – primanja od samostalne delatnosti
+- **Q** – provizije agenta sa isključivim zastupanjem
+- **R** – provizije agenta sa višestrukim zastupanjem
+- **U** – provizije posrednika
 
-Primjer: šifra A = samozaposleni rad koji se obavlja uobičajeno; Q = provizije plaćene agentu ili prodajnom predstavniku jedne tvrtke; R = provizije plaćene agentu za više tvrtki ili prodajnom predstavniku; U = provizije plaćene poslovnom agentu......
+**Broj i godina naknade**: jedinstvena interna oznaka koju sistem automatski dodeljuje za svaku naknadu unutar preduzeća.
 
- 
+**Datum dokumenta**: podrazumevano se predlaže trenutni datum, ali ga je moguće promeniti u datum prijema privremene notule.
 
-**Referentni broj i godina naknade**: ovo je automatska interna numeracija programa koja mora biti jedinstvena za tvrtku.
+**Datum i broj konačnog dokumenta**: predstavljaju podatke konačnog računa. Oba polja su obavezna za knjiženje naknade, čak i kada se koristi računovodstveni obrazac koji nije povezan sa PDV-om. Nakon knjiženja plaćanja moguće je menjati samo ova dva podatka.
 
-**Datum dokumenta**: predložen je kao trenutni datum, ali se može postaviti kao datum primljene privremene obavijesti.
+**Datum prijema**: služi za evidentiranje datuma prijema konačnog računa. Ovo polje nije obavezno za knjiženje.
 
-**Datum i broj završnog dokumenta**: oni se odnose na reference na konačni račun: ovo su obavezna polja za nastavak obračuna naknade, čak i ako referentni predložak nije predložak PDV-a. Ova dva polja će biti jedina koja se mogu mijenjati ako je plaćanje već evidentirano u računovodstvu.
+**Projekat**: omogućava povezivanje naknade sa projektom. Na primer, može se koristiti za evidentiranje troškova stručnog veštačenja na projektu. Ako računovodstveni obrazac korišćen za knjiženje ima aktiviranu opciju **Projekti**, svi troškovi evidentirani ovom naknadom biće raspoređeni na izabrani projekat.
 
-**Datum primitka**: polje za bilježenje datuma primitka završnog računa (nije obavezno za računovodstvo).
+**Kurs / Datum kursa / Valuta**: polja su povezana sa upravljanjem stranim valutama. Podaci o kursu preuzimaju se iz tabele kurseva, dok se valuta predlaže iz matičnih podataka agenta ili dobavljača.
 
- 
+## Stavke dokumenta
 
-**Projekt** (bivši radni nalog): služi za povezivanje naknade s projektom (prodajni radni nalog): to može biti slučaj procjene na gradilištu kojim se upravlja na temelju radnog naloga. Ako **[računovodstveni predložak](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates)** koji se koristi u računovodstvu za naknadu ima aktivnu oznaku projekti (ex narudžbe), tada će troškovi uneseni u ovu kompenzaciju biti dodijeljeni projektu (narudžbi) umetnutom u ovo polje.
+**Vrsta reda**: određuje način obračuna poreza po odbitku i predstavlja jedan od najvažnijih podataka dokumenta. Omogućava automatsku primenu poreza po odbitku na naknadu za uslugu, kao i njegovo isključenje za iznose doprinosa, odnosno penzionog fonda primaoca.
 
-**Mjenjačnica / Datum valute / Valuta**: povezano s upravljanjem valutom i pripadajućim podacima o mjenjaču preuzetim iz mjenjačke tablice (valuta se postavlja iz registra agenta/dobavljača).
+Dostupne su sledeće vrste redova:
 
- 
+### Trošak usluge
 
-### LINIJE DETALJA
+Koristi se za unos iznosa koji podleže porezu po odbitku.
 
- 
+Sistem automatski predlaže:
 
-**Vrsta retka**: temeljni podaci koji vam omogućuju automatsko upravljanje primjenom poreza po odbitku na dio troška usluge i njegovu neprimjenu na dio koji se odnosi na fond socijalnog osiguranja primatelja. Može biti tri vrste:
+- procenat poreske osnovice
+- stopu poreza po odbitku
+- konto troška iz matičnih podataka agenta ili dobavljača
+- iznos u valuti i domaćoj valuti
+- odgovarajuću PDV stopu
+- procenat doprinosa, odnosno penzionog fonda prema tipu poreza po odbitku
+- period na koji se trošak odnosi.
 
+Periodi se određuju prema korisničkim parametrima unosa. Nakon unosa prvog reda, svaki sledeći red automatski predlaže period koji se nastavlja na prethodno uneti.
 
+### Doprinos / Penzioni fond
 
-**Trošak usluge**: za unos dijela koji podliježe zadržavanju za koji će Fluentis predložiti postotak oporezivog iznosa i stopu poreza po odbitku koja se očitava iz vrste poreza po odbitku, troškovni podračun će biti iskazan prema protivnom trošku agenta/ dobavljač, trošak u valuti i eurima, stopa PDV-a koja će se primijeniti (također predložena na temelju osobnih podataka), postotak mirovinskog fonda koji će se izračunati na retku (predloženo vrstom poreza po odbitku) i relevantni ekonomski datumi obračuna. Njima se upravlja, za povezanog korisnika, u skladu s parametrima umetanja (koji se mogu postaviti gumbom na traci izbornika): reci koji slijede prvi automatski će predložiti raspon postavljen u prethodnom retku.  
+Kod ove vrste reda sistem automatski postavlja:
 
-**Fond zdravstvenog osiguranja**: Fluentis će predložiti porez po odbitku od 0% i oporezivu vrijednost PDV-a automatski izračunatu na temelju postotka prisutnog u prethodno učitanoj liniji troškova usluge.  
+- **0 %** poreske osnovice za porez po odbitku
+- osnovicu za PDV izračunatu prema procentu definisanom na redu **Trošak usluge**.
 
-**Ostalo**: njime se upravlja kao iznosom koji podliježe zadržavanju (ali korisnik može prisiliti ovu postavku): to su obično naknade troškova na dnu popisa uključene u naknadu, koje mogu, ali ne moraju biti predmetom zadržavanja i obično su ne podliježe PDV-u.  
+### Ostalo
 
-Prilikom spremanja naknade, kontrolne poruke će se izvršiti u slučaju da vrijednost stavke ne odgovara ukupnom iznosu za plaćanje, kao i neuspjeh u balansiranju podataka u troškovno-profitnom centru. 
+Koristi se za ostale iznose, na primer refundacije troškova.
 
-Nakon što se izvrši obračun naknade, više neće biti moguće mijenjati podatke o naknadi: u slučaju da je obračun proveden. Plaćanja ili Enasarco, međutim, reference na konačni broj/datum dokumenta, opis kretanja i podračun umetnut u mrežu s detaljima moći će se mijenjati.
+Podrazumevano, iznos podleže porezu po odbitku, ali korisnik to može promeniti. Ovakvi iznosi su najčešće oslobođeni PDV-a ili nisu predmet oporezivanja.
 
-Ako je naknada spremljena i ima definitivan datum i broj dokumenta, moći će se nastaviti s obračunom preko tipke  **Knjiži i zatvori** na traci izbornika: otvorit će se obrazac u kojem će predloženi datumi biti zadnji važeći za PDV registar povezan s predloškom koji je povezan s korištenom vrstom poreza po odbitku.
+Prilikom čuvanja dokumenta sistem proverava:
 
-Dostupni su neki ispisi koji se mogu izvesti pomoću naredbi koje se nalaze na traci izbornika. 
+- da li iznos otvorene stavke odgovara ukupnom iznosu za plaćanje
+- da li su troškovi pravilno raspoređeni po mestima troška i profitnim centrima.
+
+Nakon knjiženja naknade podaci više nisu izmenjivi.
+
+Ako su već izvršena knjiženja plaćanja ili obračun doprinosa, moguće je menjati samo:
+
+- broj konačnog dokumenta
+- datum konačnog dokumenta
+- opis knjiženja
+- konto naveden u redu stavke.
+
+Ako je dokument sačuvan i sadrži broj i datum konačnog dokumenta, knjiženje se može izvršiti pomoću dugmeta **Knjiži i zatvori** na traci sa alatkama.
+
+Tom prilikom otvara se forma u kojoj sistem automatski predlaže poslednje raspoložive datume za PDV registar povezan sa računovodstvenim obrascem izabranog tipa poreza po odbitku.
+
+Na traci sa alatkama dostupno je i nekoliko izveštaja povezanih sa ovom procedurom.
 
 ![](/img/it-it/finance-area/professional-men/compensations-management/compensations-management/image03.png)
 
+### Posebne funkcije
 
-*Specifični tipke*:  
-> **Parametri umetanja**: u korisničkim parametrima moguće je definirati mora li nova naknada ponovno predložiti isti podračun kao trenutni, istu vrstu poreza po odbitku, kako upravljati novim datumom dokumenta i na kraju kako upravljati raspon ekonomskih obračunskih datuma (kraj financijske godine - tj. konačni datum bit će jednak kraju financijske godine, dnevni - tj. konačni datum jednak početnom datumu, bez datuma za vrstu računa usluga - tj. obvezno će zahtijevati umetanje oba datuma ako je vrsta unesenog podračuna postavljena kao 'Usluga');   
-> **Knjiži i zatvori**: aktivno kada su uneseni konačni datum i broj dokumenta, omogućuje vam da izvršite obračun naknade;   
-> **Novi detalj**: aktivira kursor pri unosu novog retka detalja naknade;
-> **Izbriši detalj**: briše linije detalja odabrane u kompenzaciji;   
-> **Izračunaj vrijednosti**: vrši ponovni izračun vrijednosti poreza po odbitku na temelju podataka unesenih u retke detalja.  
+> **Parametri unosa**: u korisničkim podešavanjima moguće je definisati da li će se prilikom unosa nove naknade automatski predlagati isti konto primaoca, isti tip poreza po odbitku, način određivanja datuma dokumenta i način postavljanja perioda ekonomske pripadnosti. Dostupne su sledeće opcije:
+>
+> - **Kraj poslovne godine** – završni datum se automatski postavlja na kraj poslovne godine.
+> - **Dnevno** – završni datum jednak je početnom datumu.
+> - **Bez datuma za uslužna konta** – za konta tipa **Usluga** obavezan je ručni unos početnog i završnog datuma.
+>
+> **Knjiži i zatvori**: aktivno je nakon unosa broja i datuma konačnog dokumenta i pokreće knjiženje naknade.
+>
+> **Nova stavka**: postavlja pokazivač na novi red za unos stavke naknade.
+>
+> **Obriši stavku**: briše izabrane stavke naknade.
+>
+> **Izračunaj vrednosti**: ponovo izračunava porez po odbitku i ostale iznose na osnovu podataka unetih u stavke dokumenta.
 
 ---
-### **VIDEO TUTORIALS**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+## Video uputstva
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8sdFGMDVIFc" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k7abmzqf6Bk" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DVXhUdwqBS4" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8sdFGMDVIFc" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DVXhUdwqBS4" title="YouTube video player" frameborder="0" allowfullscreen="true"></iframe>

@@ -14,8 +14,8 @@ Opcija **Zatvaranje otvorenih stavki**, koja je podrazumevano uključena, ne tre
 
 Predviđene su sledeće mogućnosti grupisanja:
 
-- **Jedno knjiženje** (podrazumevana opcija, bez uključene opcije **Grupiši konta**): sistem će kreirati jedno računovodstveno knjiženje sa jednom stavkom banke (radi lakšeg usklađivanja sa bankovnim izvodom), dok će ostali podkonti biti prikazani zasebno za svaku naknadu, što omogućava detaljniju kontrolu knjiženja na kontu poreza po odbitku. Ako je uključena i opcija **Grupiši konta**, grupisaće se i knjiženja ostalih podkonta sa istim vrednostima.
-- **Bez grupisanja**: za svaku naknadu kreira se zasebno računovodstveno knjiženje.
+- **Pojedinačno zapisivanje** (podrazumevana opcija, bez uključene opcije **Grupiši konta**): sistem će kreirati jedno računovodstveno knjiženje sa jednom stavkom banke (radi lakšeg usklađivanja sa bankovnim izvodom), dok će ostali podkonti biti prikazani zasebno za svaku naknadu, što omogućava detaljniju kontrolu knjiženja na kontu poreza po odbitku. Ako je uključena i opcija **Grupiši konta**, grupisaće se i knjiženja ostalih podkonta sa istim vrednostima.
+- **Nema grupisanja**: za svaku naknadu kreira se zasebno računovodstveno knjiženje.
 - **Grupiši po podkontu**: knjiženja će biti grupisana po primaocu naknade.
 
 &nbsp;

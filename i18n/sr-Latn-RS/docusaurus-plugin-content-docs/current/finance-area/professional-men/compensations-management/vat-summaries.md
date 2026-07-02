@@ -1,18 +1,10 @@
 ---
-title: Sažetak PDV-a 
+title: PDV Sažeci
 sidebar_position: 5
 ---
 
-Odjeljak Sažeci PDV-a predstavlja detaljan sažetak podataka o PDV-u po stopama.
+Kartica **PDV Sažeci** prikazuje detaljan pregled podataka o PDV-u, razvrstanih po pojedinačnim PDV stopama.
 
-Podaci se mogu upisivati ručno, na primjer za ručno upravljanje zaokruživanjem poreza.
+Podatke je moguće unositi i ručno, na primer radi ručnog usklađivanja zaokruživanja iznosa PDV-a.
 
-Kako biste omogućili ručnu izmjenu, aktivirajte flag **Ručni izračun** na kartici **[Ukupni porez po odbitku](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**.
-
-
-
-
-
-
-
-
+Da bi ručna izmena bila omogućena, potrebno je aktivirati opciju **Ručni obračun** u kartici **[Ukupni obračun poreza po odbitku](/docs/finance-area/professional-men/compensations-management/total-withholding-tax)**.

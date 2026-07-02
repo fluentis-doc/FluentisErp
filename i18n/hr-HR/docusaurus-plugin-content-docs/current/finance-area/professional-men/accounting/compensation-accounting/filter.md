@@ -12,8 +12,8 @@ Gornji dio obrasca namijenjen je postavljanju filtera pretraživanja. Nakon što
 | Funkcija | Značenje |
 | --- | --- |
 | Pretraga knjiženja| Potražite popis naknada koje treba obračunati. |
-| Knjiženje naknada | Izvodi kompenzacijsko računovodstvo za odabrane linije. |
-| Promjena naknade | Otvara odabranu kompenzaciju za uređivanje. |
+| Knjiženje kompenzacija/naknada | Izvodi kompenzacijsko računovodstvo za odabrane linije. |
+| Izmijeni naknadu | Otvara odabranu kompenzaciju za uređivanje. |
 
 
 

@@ -1,65 +1,51 @@
 ---
-title: Ispiši stanje poreza po odbitku
+title: Ispis stanja poreza po odbitku
 sidebar_position: 2
 ---
 
-Pomoću ovog ispisa moguće je izdvojiti podatke o izvršenim isplatama naknada, kako bi se dobio sažetak podataka koji se odnose na izvršene poreze po odbitku kako bi se upravljalo isplatom s obrascem F24 ili radi provjera u kontekstu jedinstvenu certifikaciju primatelja i naknadni model 770.
+Pomoću ovog izveštaja moguće je izdvojiti podatke o izvršenim isplatama naknada kako bi se dobio pregled podataka koji se odnose na obračunati porez po odbitku, radi pripreme uplate putem obrasca **F24** ili provera u postupku izdavanja Jedinstvene potvrde (**Certificazione Unica**) i naknadne prijave **Model 770**.
 
-Postoje dva različita izgleda ispisa koja se mogu odabrati putem *combo boxa* u gornjem lijevom kutu: prvi "Potvrda o porezu po odbitku" slijedi komunikaciju u slobodnom obliku koja je bila poslana primateljima do nedavnog uvođenja jedinstvene potvrde, dok drugi "Situacija s porezom po odbitku" " predstavlja kao kontrolni popis.
+Dostupna su dva različita izgleda izveštaja, koja se biraju putem padajuće liste u gornjem levom uglu:
+
+- **Potvrda o porezu po odbitku** – prati format obaveštenja koja su se ranije dostavljala primaocima naknade pre uvođenja Jedinstvene potvrde.
+- **Pregled poreza po odbitku** – prikazuje podatke u obliku kontrolne liste.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image01.png)
 
-GLAVNI ELEMENTI FILTRA:
+## Glavni elementi filtera
 
-Podaci o obavijesti o naknadama.
+### Podaci o naknadama
 
-- Filtar registra primatelja
-
-- Obavijest o rasponu datuma
-
-- Obavijest o rasponu brojeva
-
-- Porezni broj
-
+- Filter primaoca naknade
+- Raspon datuma naknade
+- Raspon brojeva naknade
+- Poreski broj
 - Vrsta poreza po odbitku
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image02.png)
 
- 
+### Podaci konačnog računa
 
-Podaci koji se odnose na konačni račun (koristiti ako je obavijest već integrirana s podacima računa)
+Koriste se kada je naknada već dopunjena podacima konačnog računa.
 
-- Datumski raspon računa
-
-- Broj
+- Raspon datuma računa
+- Broj računa
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image03.png)
 
-Ostali podaci:
+### Ostali podaci
 
-- Flag filtera koje potvrđuju glavne uvjete dokumenta (obračunato, ovjereno, plaćeno po odbitku, plaćeno)
+- Filteri statusa dokumenta (**proknjiženo**, **potvrđeno**, **plaćen porez po odbitku**, **plaćeno**)
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image04.png)
 
-- Godina: filtrira samo naknadu za unesenu godinu
-
-- Završni flag: ispisuje se definitivno i ne dopušta daljnju promjenu podataka koji se odnose na isplatu poreza po odbitku.
-
-- Flag isključi već tiskane u definitivnom: isključuje plaćanja koja su već ispisana u konačnom ispisu.
+- **Godina** – filtrira naknade za izabranu godinu.
+- **Konačni** – označava izveštaj kao konačan i onemogućava dalje izmene podataka koji se odnose na uplatu poreza po odbitku.
+- **Isključi već konačno odštampane** – isključuje isplate koje su već uključene u konačan izveštaj.
 
 ![](/img/it-it/finance-area/professional-men/reports/withholding-tax-situation/image05.png)
 
- 
-
-
-
 | Funkcija | Značenje |
 | --- | --- |
-| Pregled | Tipka za pretpregled ispisa. |
-| Ispiši | Tipka za fizički ispis dokumenta. |
-
-
-
-
-
-
+| Pregled | Dugme za pregled izveštaja pre štampanja. |
+| Štampaj | Dugme za štampanje dokumenta. |

@@ -3,10 +3,4 @@ title: INPS
 sidebar_position: 7
 ---
 
-Ovisno o postavkama tablice tipova zadržavanja, može biti prisutna kartica 'INPS': u slučaju ručnog izračuna bit će moguće prisiliti i podatke prisutne u ovoj sekciji.
-
-
-
-
-
-
+U zavisnosti od podešavanja u tabeli **Tipovi poreza po odbitku**, može biti dostupna kartica **INPS**. Ako je za izračun doprinosa podešen ručni obračun, u ovoj kartici moguće je ručno uneti sve potrebne podatke za obračun INPS doprinosa.

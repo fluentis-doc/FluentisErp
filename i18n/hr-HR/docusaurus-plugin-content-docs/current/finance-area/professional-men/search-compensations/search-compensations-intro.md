@@ -11,7 +11,7 @@ sidebar_position: 1
 | Novo | Poziva proceduru za unos nove naknade. |
 | Izmjeni | Poziva proceduru izmjene prethodno upisane naknade. |
 | Vizualizacija | Pozovite proceduru za pregled prethodno unesene naknade. |
-| Izbriši | Izvodi proceduru brisanja prethodno unesene kompenzacije. |
+| Izbriši | Izvodi proceduru brisanja prethodno unesene naknade. |
 |  [Plaćanja po odbitku](/docs/finance-area/professional-men/search-compensations/withholding-tax-paying-in)  | Otvara upravljanje podacima o izvršenim uplatama. |
 
 
