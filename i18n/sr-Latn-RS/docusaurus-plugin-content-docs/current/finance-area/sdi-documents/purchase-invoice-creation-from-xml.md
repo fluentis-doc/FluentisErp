@@ -1,19 +1,19 @@
 ---
-title: Izrada ulaznog računa iz XML-a
+title: Kreiranje ulaznog računa iz XML-a
 sidebar_position: 4
 ---
 
-**Izrada ulaznog računa** dostupno je na alatnoj traci unutar menija SDI (ES), kojem se može pristupiti putem Alati > BizLink > ES Dokumenti > Dokumenti za dolaznu kupnju.  
+**Kreiranje ulaznog računa** dostupno je na traci sa alatkama unutar menija SDI (ES), kojem se može pristupiti putem Alati > BizLink > ES Dokumenti > Ulazni e-dokumenti.  
 
 :::note Napomena
-Za aktivaciju tipke potrebno je u SQL tablici fluentis.SDI_CompanyConfiguration postaviti flag SDICFC_PurchaseInvoiceCreation.
+Za aktiviranje dugmeta potrebno je u SQL tabeli fluentis.SDI_CompanyConfiguration postaviti flag SDICFC_PurchaseInvoiceCreation.
 :::
 
-Nakon odabira retka, omogućeno je kreiranje ulaznih računa primitkom XML formata dookumenta. 
-Nakon toga moguće je povezati račun s izvršenjem skladišnog dokumenta ili narudžbi na koje se odnosi.  
+Nakon odabira reda, omogućeno je kreiranje ulaznih računa prijemom XML formata dokumenta. 
+Nakon toga moguće je povezati račun sa izvršenjem skladišnog dokumenta ili narudžbina na koje se odnosi.  
 
-Klikom na tipku Izrada računa za kupnju otvara se prozor u kojem je potrebno odabrati račun dobavljača.   
-Ako račun ne postoji, moguće ga je kreirati. Nakon potvrde računa otvara se dodatni u kojem su potrebni sljedeći podaci:
+Klikom na dugme Kreiranje ulaznog računa otvara se prozor u kojem je potrebno odabrati račun dobavljača.   
+Ako račun ne postoji, moguće ga je kreirati. Nakon potvrde računa otvara se dodatni prozor u kojem su potrebni sledeći podaci:
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img1.png)
 
@@ -21,22 +21,22 @@ Ako račun ne postoji, moguće ga je kreirati. Nakon potvrde računa otvara se d
 
 **Artikli:** navesti artikle koji će biti uključeni u ulazni račun;
 
-**PDV:** odrediti stopu PDV-a za primjenu;
+**PDV:** odrediti stopu PDV-a za primenu;
 
-**Tip plaćanja:** navesti vrstu plaćanja za dobavljača.
+**Vrsta plaćanja:** navesti vrstu plaćanja za dobavljača.
 
-Svi ovi podaci mogu se postaviti kao zadane postavke za buduće korištenje označavanjem opcije **Spremi postavke**, koja je dostupna uz svaki podatak.  
+Svi ovi podaci mogu se postaviti kao podrazumevane postavke za buduće korišćenje označavanjem opcije **Sačuvaj postavke**, koja je dostupna uz svaki podatak.  
 
-Nakon unosa svih podataka i potvrde pritiskom na OK, kreirani ulazni račun će se otvoriti. Račun će sadržavati odabrani tip, artikle i PDV. Ako šifra artikla nije prepoznata, bit će unesen bez šifre. Ostali podaci automatski se preuzimaju iz evidencije dobavljača, ali račun se može ručno uređivati i spremiti.  
+Nakon unosa svih podataka i potvrde pritiskom na OK, kreirani ulazni račun će se otvoriti. Račun će sadržati odabrani tip, artikle i PDV. Ako šifra artikla nije prepoznata, biće unet bez šifre. Ostali podaci automatski se preuzimaju iz evidencije dobavljača, ali račun se može ručno uređivati i sačuvati.  
 
 ---
 
-Kreiranje računa sa **ŠIFRIRANIM ARTIKLIMA** (automatsko prepoznavanje artikala u Fluentis sustavu) zahtijeva određene korake kako bi se osiguralo prepoznavanje. U protivnom će se kreirati račun s nešifriranim stavkama tipa 2.  
+Kreiranje računa sa **ŠIFRIRANIM ARTIKLIMA** (automatsko prepoznavanje artikala u Fluentis sistemu) zahteva određene korake kako bi se obezbedilo prepoznavanje. U suprotnom će se kreirati račun sa nešifriranim stavkama tipa 2.  
 
 Šifarnik artikala može imati internu kodifikaciju koja se razlikuje od one koju koristi dobavljač.
 
-Primjer: Kod - MATCH1  Opis  - PT 2,5 BU
-Potrebno je postaviti sekciju *Preferirani dobavljač* s podacima o dobavljaču i pripadajućem šifriranju koje dobavljač koristi za taj artikl.
+Primer: Kod - MATCH1  Opis  - PT 2,5 BU
+Potrebno je postaviti sekciju *Preferirani dobavljač* sa podacima o dobavljaču i pripadajućim šifriranjem koje dobavljač koristi za taj artikal.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img5.png)
 
@@ -44,33 +44,32 @@ Dobavljač može koristiti jedan ili više tipova šifriranja, kao što je prika
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img3.png)
 
-Na primjer, EAN šifra ili neki drugi tip šifriranja.
+Na primer, EAN šifru ili neki drugi tip šifriranja.
 
 :::danger Napomena
-U XML dokumentu čita se prva dostupna šifra, dok se ostale (npr. EAN) ignoriraju. 
+U XML dokumentu čita se prva dostupna šifra, dok se ostale (npr. EAN) ignorišu. 
 :::
 
-Važno je upravljati ovim početnim referentnim kodom u šifarniku dobavljača (kartica *Porezne informacije*)
+Važno je upravljati ovim početnim referentnim kodom u šifarniku dobavljača (kartica *Poreske informacije*).
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img6.png)
 
-Ako su konfiguracije pravilno postavljene, rezultat kreiranja računa prikazivat će i nešifriranu stavku za transportne troškove koji nisu bili unaprijed definirani.
+Ako su konfiguracije pravilno postavljene, rezultat kreiranja računa prikazivaće i nešifriranu stavku za transportne troškove koji nisu bili unapred definisani.
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img4.png)
 
 ---
 
-Na traci izbornika zaglavlja dostupna je tipka **SDI – Zatvaranje dokumenata** koji omogućuje povezivanje dokumenta nabave s kreiranim ulaznim računom.   
+Na traci menija zaglavlja dostupno je dugme **SDI – Zatvaranje dokumenata** koje omogućava povezivanje dokumenta nabavke sa kreiranim ulaznim računom.   
 
-Klikom na tipku, otvara se prozor s filtrima za preciznije pretraživanje dokumenta nabave za povezivanje. Moguće je unijeti tip dokumenta, broj, dobavljača i druge parametre. 
+Klikom na dugme otvara se prozor sa filterima za preciznije pretraživanje dokumenta nabavke za povezivanje. Moguće je uneti tip dokumenta, broj, dobavljača i druge parametre. 
 
-Pritiskom na Pretraži, u pregledima lijevo će se pojaviti dokumenti nabave, a desno ulazni računi, koji se mogu povezati. 
+Pritiskom na **Pretraži**, u pregledima levo pojaviće se dokumenti nabavke, a desno ulazni računi, koji se mogu povezati. 
 
-Odabirom dokumenata ili pojedinačnih redaka u pregledima i pritiskom na tipku **Poveži** u traci izbornika, veza između dokumenata će biti uspostavljena. 
+Odabirom dokumenata ili pojedinačnih redova u pregledima i pritiskom na dugme **Poveži** na traci menija, veza između dokumenata biće uspostavljena. 
 
-Pojavit će se prozor s obavijesti da je operacija dovršena, kao i dodatni prozor sa sažetkom zatvaranja dokumenata i detaljima veze. 
-
+Pojaviće se prozor sa obaveštenjem da je operacija završena, kao i dodatni prozor sa sažetkom zatvaranja dokumenata i detaljima veze. 
 
 ![](/img/it-it/finance-area/e-invoice/purchase-invoice-creation/img2.png)
 
-Od tog trenutka, document nabave i ulazni račun su povezani. Poveznicu je moguće provjeriti unutar ulaznog računa u kartici Artikli, gdje je naveden dokument na koji se odnosi. 
+Od tog trenutka dokument nabavke i ulazni račun su povezani. Vezu je moguće proveriti unutar ulaznog računa na kartici Artikli, gde je naveden dokument na koji se odnosi.

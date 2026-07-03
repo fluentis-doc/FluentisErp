@@ -3,13 +3,13 @@ title: Izrada ulaznog računa iz XML-a
 sidebar_position: 4
 ---
 
-**Izrada ulaznog računa** dostupno je na alatnoj traci unutar menija SDI (ES), kojem se može pristupiti putem Alati > BizLink > ES Dokumenti > Dokumenti za dolaznu kupnju.  
+**Izrada ulaznog računa** dostupna je na alatnoj traci unutar menija SDI (ES), kojem se može pristupiti putem Alati > BizLink > ES Dokumenti > Ulazni e-dokumenti.  
 
 :::note Napomena
 Za aktivaciju tipke potrebno je u SQL tablici fluentis.SDI_CompanyConfiguration postaviti flag SDICFC_PurchaseInvoiceCreation.
 :::
 
-Nakon odabira retka, omogućeno je kreiranje ulaznih računa primitkom XML formata dookumenta. 
+Nakon odabira retka, omogućeno je kreiranje ulaznih računa primitkom XML formata dokumenta. 
 Nakon toga moguće je povezati račun s izvršenjem skladišnog dokumenta ili narudžbi na koje se odnosi.  
 
 Klikom na tipku Izrada računa za kupnju otvara se prozor u kojem je potrebno odabrati račun dobavljača.   
@@ -23,7 +23,7 @@ Ako račun ne postoji, moguće ga je kreirati. Nakon potvrde računa otvara se d
 
 **PDV:** odrediti stopu PDV-a za primjenu;
 
-**Tip plaćanja:** navesti vrstu plaćanja za dobavljača.
+**Vrsta plaćanja:** navesti vrstu plaćanja za dobavljača.
 
 Svi ovi podaci mogu se postaviti kao zadane postavke za buduće korištenje označavanjem opcije **Spremi postavke**, koja je dostupna uz svaki podatak.  
 

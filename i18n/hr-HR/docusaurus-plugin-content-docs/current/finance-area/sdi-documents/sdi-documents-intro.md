@@ -1,29 +1,29 @@
 ---
-title: Dokumenti SDI - Video upute
+title: SDI dokumenti - Video uputstva
 sidebar_position: 1
 ---
 
-Fluentis omogućuje upravljanje elektroničkim fakturiranjem integriranim s ES. Naime, moguće je upravljati cijelim procesom slanja u ES, zaprimanja računa od dobavljača, zamjenskog skladištenja itd.
+Fluentis omogućava upravljanje elektronskim fakturisanjem. Naime, moguće je upravljati celokupnim procesom slanja u sistemu, prijemom računa od dobavljača, skladištenjem itd.
 
 SDI dokumenti se mogu pronaći:
 
 
- - FLUENTIS > Administracija > ES dokumenti
+- FLUENTIS > Administracija > ES dokumenti
 
 Ili
 
 
- - FLUENTIS > Alati > BizLink > ES Dokumenti  
+- FLUENTIS > Alati > BizLink > ES Dokumenti  
 
- Za detalje pogledati:   
+Za detalje pogledati:   
 
 **[Izlazni e-dokumenti](/docs/finance-area/sdi-documents/outgoing-sales-documents)**
 
 **[Ulazni e-dokumenti](/docs/finance-area/sdi-documents/incoming-purchase-documents)**
 
-Odlazna PDV komunikacija  
+Izlazna PDV komunikacija  
 
-**[Izlazni inozemni e-dokumenti](/docs/finance-area/sdi-documents/outgoing-foreign-purchase-documents)**
+**[Izlazni inostrani e-dokumenti](/docs/finance-area/sdi-documents/outgoing-foreign-purchase-documents)**
 
 ---
 

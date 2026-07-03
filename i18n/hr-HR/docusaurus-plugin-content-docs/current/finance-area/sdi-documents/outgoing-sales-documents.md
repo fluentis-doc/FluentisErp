@@ -3,47 +3,48 @@ title: Izlazni e-dokumenti
 sidebar_position: 2
 ---
 
-Obrazac “**Izlazni e-dokumenti**“ podijeljen je u dva dijela, zaglavlje koje sadrži polja za filtriranje koja se mogu koristiti za filtriranje dokumenata i prikaza rezultata provedenog pretraživanja:  
+Forma **Izlazni e-dokumenti** podijeljena je na dva dijela: zaglavlje koje sadrži polja filtra za filtriranje dokumenata i mrežu rezultata izvršene pretrage.
 
-## Tipke na traci izbornika:
+## Gumbi na traci izbornika
 
-- **Pretraga**: pokreće pretragu u mreži rezultata prema podacima prisutnim u filtrima zaglavlja.  
-- **Prikaz**: otvara ugrađeni preglednik za pregled xml datoteke prema unaprijed učitanom stilu unutar Fluentis-a kako bi omogućio "čisti" pregled  
-- **Otvori dokument**: otvara dokument fakture vezan uz dotičnu xml datoteku  
-- **Preuzmi privitak:**  datoteka xml se preuzima lokalno na računalo kako bi se mogla obraditi, na primjer, s uslugama za slanje trećih strana.  
-- **Ponovno učitaj datoteku:** aktivno je kada je redak u stanju *Generirano*  i omogućuje ponovno učitavanje datoteke iz vanjskog direktorija (lokalnog ili mrežnog); korisno za ponovno učitavanje xml datoteke u kojoj je bilo potrebno ručno intervenirati kako bi se postavio neki specifičan ili neodgovarajući tag (bez potrebe za prolaskom kroz korak *potpisano* kao u prošlosti).  
-Fluentis provjerava ima li datoteka isto ime i je li xml sintaktički ispravan, ali ne provodi test na Sdi strukturu (stoga pogrešan tag ili tag s netočnim vrijednostima neće generirati nikakvu poruku i neće doći do slanja Sdi). U logu vezanom uz datoteku (na primjer, pritiskom na Prikaz) u polju **Informacije** bit će prikazana napomena da je datoteka ručno prepisana, zajedno s datumom.  
+- **Traži**: pokreće pretragu i prikazuje rezultate u mreži prema kriterijima unesenima u filtre zaglavlja.
+- **Prikaži**: otvara integrirani preglednik za prikaz XML datoteke pomoću stilskog predloška koji je unaprijed učitan u Fluentis, kako bi se sadržaj mogao prikazati u čitljivom obliku.
 
+:::note[Opcije prikaza]
+Na traci izbornika, u odjeljku *Prikaži*, nalazi se poseban gumb **Promijeni prikaz**, kojim je moguće prebacivati se između dvaju alternativnih stilova prikaza računa.
+:::
 
-## Vrijednosti prikazane u mreži su:  
+- **Otvori dokument**: otvara dokument računa na koji se odnosi predmetna XML datoteka.
+- **Preuzmi privitke**: preuzima kopiju XML datoteke na lokalno računalo radi daljnje obrade, primjerice putem usluga slanja trećih strana.
+- **Ponovno učitaj datoteku**: aktivan je kada je redak u statusu *Generirano* i omogućuje ponovno učitavanje datoteke iz vanjske mape (lokalne ili mrežne). Ova je funkcija korisna kada je potrebno ponovno učitati XML datoteku koja je ručno izmijenjena radi postavljanja određenih oznaka ili podataka kojima sustav ne upravlja, bez potrebe za prolaskom kroz korak *Potpisano*, kao što je to bilo potrebno ranije.
 
--      **Status e-dokumenta**: status dokumenta koji se odnosi na njegovo slanje u putem Fluentis Business Huba  
+  Fluentis provjerava ima li datoteka isti naziv i je li XML sintaktički ispravan, ali ne provjerava strukturu prema pravilima SdI-ja. Stoga se za pogrešnu oznaku ili neispravnu vrijednost neće prikazati nikakva poruka, a slanje u SdI neće biti izvršeno. U zapisniku datoteke, kojem se može pristupiti, primjerice, gumbom **Prikaži**, u polju **Informacije** navodi se da je datoteka ručno prebrisana, zajedno s datumom izmjene.
 
--      **Tip**: šifra vrste prodajnog dokumenta
+- **Ispis / Pregled ispisa**: omogućuje ispis ili generiranje pregleda ispisa XML dokumenta.
 
--      **Datum**,**Broj, Kupac:** datum, broj dokumenta i kupac na kojeg se odnosi dokument
+:::note[Opcije prikaza]
+Na traci izbornika, u odjeljku *Prikaži*, nalazi se poseban padajući izbornik u kojem je moguće odabrati jedan od dvaju alternativnih načina ispisa.
+:::
 
--      **Datum primanja kupca**: naziv datoteke i naziv XML datoteke koja se stvara kada se dokument prebacu u stanje GENERIRANO; u izvornom formatu ili nakon digitalnog potpisa, predstavlja datoteku računa koja se šalje ES-u. 
+- **Ispis / Pregled ispisa privitka**: omogućuje ispis ili generiranje pregleda ispisa PDF privitka XML dokumenta, ako je uključen u datoteku.
 
--      **Naziv datoteke ES:** naziv datoteke i naziv XML datoteke koja se stvara kada se dokument prebacu u stanje GENERIRANO; u izvornom formatu ili nakon digitalnog potpisa, predstavlja datoteku računa koja se šalje ES-u.
+## Vrijednosti prikazane u tablici
 
--      **Datum zadnjeg događaja**: odnosi se na zadnju radnju koju je izvršio operater ili posljednju obavijest primljenu od ES-a tijekom procesa upravljanja dokumentima
+- **Status SdI-ja**: status dokumenta povezan sa slanjem u SdI putem Fluentis Business Huba.
+- **Tip**: referentna oznaka vrste prodajnog dokumenta.
+- **Datum**, **Broj**, **Kupac**: datum i broj dokumenta te kupac na kojeg dokument glasi.
+- **Datum primanja kupca**: datum dostave dokumenta kupcu ili datum kada je dokument stavljen na raspolaganje u zaštićenom području kupca. Potonji se slučaj odnosi na slanja kod kojih SdI ne može ispravno identificirati kupca/primatelja.
+- **Naziv datoteke ES**: naziv XML datoteke koja se stvara kada dokument prijeđe u status **GENERIRANO**. U izvornom obliku ili nakon primjene digitalnog potpisa predstavlja datoteku računa koja se šalje u SdI.
+- **Datum zadnjeg događaja**: odnosi se na posljednju radnju koju je izvršio operater ili na posljednju obavijest primljenu od SdI-ja tijekom postupka upravljanja dokumentom.
 
-Klikom na proširenje pregleda računa (tipka + krajnje lijevo) otvara se detalj koji se odnosi na stanje dokumenta te se prikazuju pojedinačni prijelazi koji su se dogodili u vođenju dokumenta s pripadajućim datumom izvršenja i naziv fakture bilo koje datoteke generirane promjenom stanja:
+Klikom na proširenje računa (gumb **+** na krajnjoj lijevoj strani) otvara se detaljni prikaz prijelaza između statusa dokumenta. Prikazuju se pojedinačni prijelazi izvršeni tijekom upravljanja dokumentom, s pripadajućim datumom izvršenja i nazivom eventualne datoteke generirane promjenom statusa:
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image02.png)
 
-Dokumenti predstavljeni u prikazu dokumenata ES-a su svi oni koji su kreirani aktivnim tokom upravljanja dokumentima fakture, bez obzira na status; dvostruki klik na redak fakture otvara panel u kojem je moguće pregledati dokumente nastale tijekom upravljanja datotekom i povijest prijelaza.
+U tablici **Registar SdI dokumenata** prikazuju se svi dokumenti stvoreni u izlaznom procesu upravljanja računima, neovisno o njihovu statusu. Dvostrukim klikom na redak računa otvara se ploča u kojoj je moguće pregledati dokumente stvorene tijekom obrade datoteke računa i povijest prijelaza između statusa.
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image03.png)
 
-U prikazu dokumenata ES-a, odabirom dokumenta ili više njih u istom statusu, moguće je upravljati statusom obrade dokumenta pomoću padajućeg izbornika Status na traci izbornika i odabirom novog statusa dokumenta:
+U tablici **Registar SdI dokumenata**, nakon odabira jednog dokumenta računa ili više dokumenata računa koji se nalaze u istom statusu, moguće je upravljati statusom obrade dokumenta putem padajućeg izbornika **Status** na traci izbornika i odabrati novi status dokumenta:
 
 ![](/img/it-it/finance-area/sdi-documents/outgoing-sales-documents/image04.png)
-
-
-
-
-
-
-
