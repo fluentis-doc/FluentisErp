@@ -4,6 +4,33 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0029 - 03/07/2026
+
+> -	FI- Corretta visualizzazione Stampa Analisi Centri di costo. Modifications inside Stampa Analisi Centri di costo form can have impact on profiles. (#TT02702/26)
+> -	FI- per la stampa ‘Estratto conto’ quando i report e eseguito filtrando un unico sottoconto allora è possibile procedere all’invio per email con testo preconfigurato tramite transformation definita sull’oggetto FSLedgerAccount (customizzabili). (#TT02757/26). Aggiunto supporto a società nei pagamenti elettronici e modificata gestione codici dei PSP. Aggiunto supporto a sandbox di test.
+> -	MES - Dichiarazioni di produzione: corretta anomalia su mancata indicazione di magazzino, causale e ubicazione di consumo nelle dichiarazioni di fasi successive alla prima. (#TT02455/26)
+> -	MES - Generazione commesse di produzione: corretta anomalia che generava dei prototipi commesse di produzione diversi rispetto a quelli richiesti dal tab ordini clienti. (#TT02682/26)
+> -	MES - Ora vengono proposte correttamente i magazzini e le causali di consumo dei semi lavorati. (#TT02743/26)
+> -	MS - AFCS. Risolto un bug relativo ad una indicazione errata del codice di magazzino nella scheda dei fabbisogni dipendenti.(#TT02834/26)
+> -	MS - Capacità Centri di lavoro: risolta anomalia relativa ai tempi di lavorazione indicati nella fase di lavorazione, rispetto a quelli visualizzati graficamente nell’istogramma delle capacità, quando il numero delle macchine e/o degli operai è maggiore di uno. (#TT02624/26)
+> -	MS - M.R.P. - Ora, se si attiva o disattiva il parametro “Controllo fabbisogni con generazione ordini pianificati” viene memorizzato e, alla successiva riapertura della form, il parametro rimane impostato all’esecuzione precedente. (#TT02664/26)
+> -	MS - Pianificazione Generale: risolto bug che causava un errore nell’utilizzo del filtro in griglia nella colonna “Codice Articolo” (#TT02876/26)
+> -	PR - rilascio parser di gestione riferimento creditore in file bonifici Sepa (#TT02844/26)
+> -	SCM - Parametri DDT di Acquisto: ottimizzazione creazione DDT di acquisto da form Evasione ricevimento merci e da form Ordine fornitore (#TT02716/26).
+> -	SCM - Risolta anomalia in fase di apertura tramite il RibbonReportDesigner nel report PurchaseOrderHoldingValue (#TT00634/26)
+> -	SCS - Rientri di conto lavoro: Modificando il costo dell’articolo di un rientro già caricato l’aggiornamento viene effettuato anche nel costo del movimento di magazzino.  (#2182/26)
+> -	SD - Creazione Fattura da DDT: ottimizzato blocco emissione documento quando è presente data fine validità in anagrafica cliente (#TT01856/26).
+> -	SD - Creazione fattura di acquisto da XML: ottimizzati controlli su unità di misura.
+> -	SD - File sdi XML: corretta formattazione dell'indirizzo nel file xml da inviare allo sdi (#TT01857/26)
+> -	SD - L'invio delle Offerte per email prende l'Indirizzo alternativo inserito in Anagrafica cliente relativo alle offerte (#TT02862/26)
+> -	SD - Ordine cliente: ottimizzazione gestione ExtraData nelle righe articoli (#TT02750/26)
+> -	SD - Ottimizzazione ricerca articoli in offerte di vendita. Modifications inside SalesOffer form can have impact on profiles. (#TT02714/26)
+> -	SD - Update PackagesNumber at SalesInvoiceType change and consider null value for NumberPackagesForItem. (#TT01041/26)
+> -	SD - offerte gerarchiche tab materiali - corretta casistica di gestione valuta diversa tra offerta cliente ed ordine fornitore/fattura fornitore da cui sono presi i costi dei materiali (#TT02791/26)
+> -	SH - Migliorata l’esperienza utente durante l'aggiornamento a una versione successiv
+> -	SH - Nella griglia di ricerca - tab workflow, verranno mostrati solo i documenti per cui c’è un workflow attivo, gli altri documenti saranno esclusi e rimarranno visibili nella griglia principale di ricerca (#TT01839/26)
+> -	SH - workflow con condizioni di accettazione impostate - nel caso di avanzamento di stato massivo per più documenti in contemporanea, la procedura è stata modificata affinchè vengano bloccati con messaggio di errore solo i documenti non validi, mentre gli altri verranno avanzati di stato regolarmente (#TT02593/26)
+
 ### Patch 803.0028 - 24/06/2026
 
 > -	FI - Gestione Intrastat: revisione della logica di proposta dei documenti nella procedura di creazione automatica da fatture (#TT00245/26)
