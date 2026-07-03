@@ -56,7 +56,7 @@ import Link from '@docusaurus/Link';
         <p><Link to="/docs/finance-area/declarations/intrastat/general-overview" className="bold-link">Intrastat popisi</Link></p>
     </div>
     <div className="card">
-###   <Link to="/docs/finance-area/professional-men/general-overview">Primatelji prihoda/naknada</Link>
+###   <Link to="/docs/finance-area/professional-men/general-overview">Primatelji prihoda/naknada - Vanjski suradnici</Link>
         <p>modul specifično posvećen upravljanju profesionalnim dobavljačima koji izdaju račune i podliježu odbicima (uključujući trgovačke agente)</p>
         <p><Link to="/docs/finance-area/professional-men/procedures/model-f24/f24-management" className="bold-link">Model F24</Link></p>
         <p>Za automatizirano upravljanje PDV-om i odbicima.</p>
@@ -109,7 +109,7 @@ Aktiviranjem Fast Starta bit će potrebno upravljati samo minimalnim skupom poda
 :::important[**Fast Start**]
 Glavna karakteristika administrativnog područja je njegova *Usklađenost* s računovodstvenim i poreznim normama te mogućnost inicijalizacije [**okruženja *FastStart* potpuno spremnog za korištenje**](/docs/guide/fast-start) konfiguriranog za poštivanje propisa te omogućujući trenutačnu upotrebu.
 
-Korisnik može u svakom trenutku konfigurisati prema vlastitim željama računovodstvene sheme, porezne šifre, registre itd...
+Korisnik može u svakom trenutku konfigurirati prema vlastitim željama računovodstvene sheme, porezne šifre, registre itd...
 :::
 
 
