@@ -3,50 +3,51 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul **Vanjski suradnik** u Fluentis ERP-u upravlja aktivnostima vezanim uz naknade isplaćene vanjskim stručnjacima i agentima, garantirajući kontrolu nad odbiticama i poerznim obvezama. Ovaj modul omogućuje knjiženje plaćanja, knjiženje uplata i generiranje poreznih potvrda. Modul može primati podatke od agenata iz istoimenog modula u području **Prodaje**.  
-Iz ovog modula vrši se evidentiranje dugova za razne poreze koji se trebaju platiti (odbitak, Enasarco, INPS).
+Modul **Spoljni saradnik** u Fluentis ERP-u upravlja aktivnostima vezanim za naknade isplaćene spoljnim stručnjacima i agentima, garantujući kontrolu nad porezima po odbitku i poreskim obavezama. Ovaj modul omogućava knjiženje plaćanja, knjiženje uplata i generisanje poreskih potvrda. Modul može primati podatke od agenata iz istoimenog modula u oblasti **Prodaja**.  
+Iz ovog modula vrši se evidentiranje obaveza za različite poreze koji treba da se plate (porez po odbitku, Enasarco, INPS).
 
 **Glavne funkcionalnosti**
 
-- Pretraživanje i upravljanje naknadama: Omogućuje unos, izmjenu i pregled naknada, s mogućnošću brisanja pogrešnih i upravljanja isplatama akontacija na masovni način, izbjegavajući ručne izmjene pojedinih naknada​.
+- Pretraga i upravljanje naknadama/kompenzacijama: Omogućava unos, izmenu i pregled naknada, sa mogućnošću brisanja pogrešnih i grupnog upravljanja uplatama akontacija, izbegavajući ručne izmene pojedinačnih naknada.
 
-- Knjiženje naknada: Naknade se mogu knjižiti izravno, kako za porezni dio (zadržavanja, INPS, ENASARCO), tako i za upravljanje centrima troška i profita tvrtke. Konačne naknade se zatim unose u računovodstvo​.
+- Knjiženje naknada: Naknade se mogu knjižiti direktno, kako za poreski deo (porez po odbitku, INPS, ENASARCO), tako i za upravljanje centrima troška i profita preduzeća. Konačne naknade se zatim knjiže u računovodstvu.
 
-- Model F24 (Modello F24): Modul upravlja izračunom i popunjavanjem modela F24 za uplatu zadržavanja i drugih poreza, s mogućnošću automatskog predlaganja potrebnih podataka zahvaljujući informacijama unesenim u naknade​.
+- Obrazac F24 (Modello F24): Modul upravlja obračunom i popunjavanjem obrasca F24 za uplatu poreza po odbitku i drugih poreza, sa mogućnošću automatskog predlaganja potrebnih podataka zahvaljujući informacijama unetim u naknade.
 
-**Dostupni ispisi**
+**Dostupni izveštaji**
 
-- Ispis poreznih obustava: Generira potvrdu o periodičnim poreznim obustavama po odbitku.
+- Ispis poreza po odbitku: Generiše potvrdu o periodičnom porezu po odbitku.
 
-- Pregled poreznih obustava: Pruža pregled uplaćenih ili neuplaćenih poreznih obustava, koristan za internu kontrolu i pripremu poreznih potvrda.
+- Pregled poreza po odbitku: Pruža pregled uplaćenog ili neuplaćenog poreza po odbitku, koristan za internu kontrolu i pripremu poreskih potvrda.
 
-- Ispis provizija: Podržava upravljanje provizijama koje su stekli agenti, s filtrima prema datumu i agentu, omogućujući obradu cjelovitih lista​.
+- Ispis provizija: Podržava upravljanje provizijama koje su ostvarili agenti, sa filterima prema datumu i agentu, omogućavajući obradu kompletnih lista.
 
 **Glavne procedure**
 
-- Upravljanje naknadama i isplatama zadržavanja: Omogućuje učitavanje, izmjenu i povezivanje poreznih dokumenata vezanih uz naknade, te upravljanje podacima o isplatama ručno ili masovno​.
+- Upravljanje naknadama/kompenzacijama i uplatama poreza po odbitku: Omogućava unos, izmenu i povezivanje poreskih dokumenata vezanih za naknade, kao i ručno ili grupno upravljanje podacima o uplatama.
 
-- Izračun provizija: Automatizira izračun provizija za agente, s mogućnošću povezivanja naknada sa specifičnim projektima ili poslovima​.
+- Obračun provizija: Automatizuje obračun provizija za agente, sa mogućnošću povezivanja naknada sa specifičnim projektima ili poslovima.
 
-**Prednosti korištenja modula**: Ovaj modul komunicira i s modulom **Prodaje** za čitanje izračunatih provizija agenata i pretvaranje u konto agenata, osiguravajući izračun kako zadržavanja, tako i doprinosa za osiguranje, te s modulom porezne prijave omogućujući samostalno upravljanje svim porezima. Obrada CU obrasca također omogućuje izvoz evidencije za slanje Poreznoj upravi. Posebna pažnja je posvećena logici upravljanja naknadama i stvarnosti u Italiji, s mogućnošću unosa obavijesti o računu (u suštini proforma faktura) i nastavku plaćanja, s nastankom duga za porezne uplate, prije nego što se faktura primi u računovodstvo.
+**Prednosti korišćenja modula**: ovaj modul povezan je sa modulom Prodaja, iz kojeg preuzima obračunate provizije zastupnika/saradnika/agenata i pretvara ih u obračun naknada/kompenzacija, uz obračun poreza po odbitku i penzijskih doprinosa Enasarco. Takođe je povezan sa poreskim prijavama, što omogućava samostalno upravljanje svim poreskim obavezama, sve do izrade CU-a (jedinstvene potvrde o porezu po odbitku), bez neophodne potrebe za angažovanjem spoljnih savetnika. Obrada CU-a omogućava i izvoz elektronske datoteke za slanje italijanskoj Poreskoj upravi (Agenzia delle Entrate).
+Posebna pažnja posvećena je logici upravljanja naknadama i specifičnostima italijanskog sistema, uz mogućnost unosa predračuna naknade (koji je zapravo predračun odnosno proforma račun) i izvršavanja plaćanja, pri čemu obaveza za uplatu poreza nastaje pre knjiženja primljenog konačnog računa.
 
-**Tabele i parametri potrebni za korištenje modula**
+**Tabele i parametri potrebni za korišćenje modula**
 
-Za korištenje modula **Vanjski suradnik** u Fluentis ERP-u, potrebno je upravljati nekim ključnim tablicama kako bi se osigurao ispravan rad sustava i usklađivanje računovodstvenih i poreznih operacija. Među glavnim tablicama koje treba konfigurirati su:
+Za korišćenje modula **Spoljni saradnik** u Fluentis ERP-u potrebno je upravljati nekim ključnim tabelama kako bi se obezbedio pravilan rad sistema i usklađivanje računovodstvenih i poreskih operacija. Među glavnim tabelama koje treba konfigurisati su:
 
-- Tipovi računa i **Tipovi odbitka poreza**: Osnovni za definiranje vrste zadržavanja koje se primjenjuju na različite percipijente.
-- **Kategorije agenata**: Temeljna tablica za agente gdje se definiraju doprinosi za penzijsko osiguranje i drugi doprinosi na koje su podložni.
-- Šifra poreza: Potreban za upravljanje zadržavanjima i porezima povezanim s naknadama.
-- Načini isplate: Za definiranje načina plaćanja poreza.
-- Kontni plan: Potreban za povezivanje računovodstvenih unosa s ispravnim računima.
-- Stope PDV-a: Za pravilnu primjenu poreza na naknade.
-- Predlošci knjiženja i doprinosa: Koriste se za ispravnu klasifikaciju računovodstvenih knjiženja vezanih uz naknade suradnika.
-- Centri troška/prihoda/odgovornosti: Za dodjelu troškova i prihoda različitim poslovnim centrima.
-- Fiksni tečajevi eura i tečajevi valuta: Važni za upravljanje transakcijama u različitim valutama.
+- Tipovi računa i **Vrste poreza po odbitku**: Osnovni su za definisanje vrste poreza po odbitku koji se primenjuje na različite saradnike.
+- **Kategorije agenata**: Osnovna tabela za agente u kojoj se definišu doprinosi za penzijsko osiguranje i drugi doprinosi kojima podležu.
+- Šifra poreza: Potrebna je za upravljanje porezima po odbitku i porezima povezanim sa naknadama.
+- Načini plaćanja: Za definisanje načina plaćanja poreza.
+- Kontni plan: Potreban je za povezivanje računovodstvenih knjiženja sa odgovarajućim kontima.
+- Stope PDV-a: Za pravilnu primenu poreza na naknade.
+- Računovodstveni šabloni i doprinosi: Koriste se za pravilnu klasifikaciju računovodstvenih knjiženja povezanih sa naknadama saradnika.
+- Centri troška/prihoda/odgovornosti: Za dodelu troškova i prihoda različitim poslovnim centrima.
+- Fiksni kursevi evra i kursevi valuta: Važni su za upravljanje transakcijama u različitim valutama.
 
 **Zaključci**
 
-Modul **Vanjski suradnik** u Fluentis ERP-u je napredni alat za upravljanje naknadama profesionalcima i agentima, osiguravajući točnost poreznih uplata i olakšavajući obradu službenih dokumenata.
+Modul **Spoljni saradnik** u Fluentis ERP-u predstavlja napredan alat za upravljanje naknadama profesionalcima i agentima, obezbeđujući tačnost poreskih uplata i olakšavajući obradu zvaničnih dokumenata.
 
 
 
