@@ -6,6 +6,17 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0080 - 03/07/2026
+
+> -	FI - Export DocFinance: Allineamento della procedura di esportazione, rispetto alla patch 707.078, nel caso in cui il flag di creazione automatica chas flow sia attivo. (#TT2911/26)
+> -	MS - Pianificazione Generale: risolto bug che causava un errore nell’utilizzo del filtro in griglia nella colonna “Codice Articolo” (#TT02876/26)
+> -	SCM - Risolta anomalia in fase di apertura tramite il RibbonReportDesigner nel report PurchaseOrderHoldingValue (#TT00634/26)
+> -	SD - Creazione fattura di acquisto da XML: ottimizzati controlli su unità di misura. (#TT03224/25)
+> -	SD - File sdi XML: corretta formattazione dell'indirizzo nel file xml da inviare allo sdi (#TT01857/26)
+> -	SD - Rilasciata lettura automatica della dichiarazione di intento con riporto del riferimento identificativo nella sezione delle spese finali dei documenti di vendita. (#TT01229/26)
+> -	SH - modificato nome file acquisito da scanner. Aggiunto timestamp al nome per poterlo rendere univoco. (#TT01922/26)
+> -	SH - workflow con condizioni di accettazione impostate - nel caso di avanzamento di stato massivo per più documenti in contemporanea, la procedura è stata modificata affinchè vengano bloccati con messaggio di errore solo i documenti non validi, mentre gli altri verranno avanzati di stato regolarmente (#TT02593/26)
+
 ### Patch 707.1-0079 - 29/06/2026
 
 > -	FI - creazione intrastat da registrazioni, revisione per visualizzazione pop up di 'Elaborazione...' in corso, ottimizzazione, esecuzione arrrotondamento all'unità della massa netta tramite pulsante di raggruppamento anche quando non c'è nulla da raggruppare (#TT02749/26, #TT02699/26)
@@ -14,7 +25,7 @@ keywords:
 > -	FI - Corretta visualizzazione Stampa Analisi Centri di costo. Modifications inside Stampa Analisi Centri di costo form can have impact on profiles. (#TT02702/26)
 > -	MES - Generazione commesse di produzione: corretta anomalia che generava dei prototipi commesse di produzione diversi rispetto a quelli richiesti dal tab ordini clienti. (#TT02682/26)
 > -	MS - M.R.P. - Ora, se si attiva o disattiva il parametro “Controllo fabbisogni con generazione ordini pianificati” viene memorizzato e, alla successiva riapertura della form, il parametro rimane impostato all’esecuzione precedente. (#TT02664/26)
-> -	PR - aggiunto controllo sulla causale selezionata per le procedure di contabilizzazione insoluto e contabilizzazione insoluto su cessione, che sia stato attivato il flag Provvigioni, se è attiva la gestione delle Commissioni (nei parametri di contabilità). #TT01741/26
+> -	PR - aggiunto controllo sulla causale selezionata per le procedure di contabilizzazione insoluto e contabilizzazione insoluto su cessione, che sia stato attivato il flag Provvigioni, se è attiva la gestione delle Commissioni (nei parametri di contabilità). (#TT01741/26)
 > -	PR - Anomalia acquisizione effetti attivi - procedura apparentemente conclusa ma schermata in attesa (#TT02530/26)
 > -	PR - Stampa lista insoluti: Revisionati i riferimenti relativi a numero documento, data documento e agente nella stampa degli insoluti (#TT2057/26)
 > -	SCM - Duplicazione fatture di acquisto: corretta la gestione del riporto della data di competenza nella fattura duplicata (#TT2459/26).
