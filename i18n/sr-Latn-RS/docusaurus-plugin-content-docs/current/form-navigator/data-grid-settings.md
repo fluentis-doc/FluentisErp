@@ -1,34 +1,36 @@
 ---
-title: (Form navigator) Navigator obrasca - Postavke podataka tablica
+title: (Form navigator) Navigator obrasca - Podešavanja podataka tabela
 sidebar_position: 3
 ---
 
-Kako bi se definiralo da tablica treba biti postavljena s opcijom **potpunog učitavanja podataka**, postupiti na sljedeći način:
+Kako bi se definisalo da tabela treba da bude podešena sa opcijom **potpunog učitavanja podataka**, postupiti na sledeći način:
 
-**1.** otvoriti lijevo *Navigator obrasca* (Form navigator), otvoriti *Widgete rezultata* (Results Widgets), zatim definiciju tablice i odaberati objekt *Tablica* (Grid): dolje će se pojaviti *Kontrola tablice* (Grid Control) gdje se može označiti *Učitaj sve podatke* (Load all data) s maksimalnim brojem redaka koje treba uzeti u obzir - *Ograniči broj redaka* (Limit rows number). 
+**1.** otvoriti levo *Navigator obrasca* (Form navigator), otvoriti *Vidžete rezultata* (Results Widgets), zatim definiciju tabele i izabrati objekat *Tabela* (Grid): dole će se pojaviti *Kontrola tabele* (Grid Control), gde se može označiti *Učitaj sve podatke* (Load all data) sa maksimalnim brojem redova koje treba uzeti u obzir - *Ograniči broj redova* (Limit rows number).
 
-**2.** ponovno izvršiti pretraživanje u tablici kako bi se učitali svi podatci. 
- 
-**3.** ovu opciju treba spremiti u profil, koji se po potrebi može memorirati i pozvati: naime, treba uzeti u obzir da će učitavanje svih podataka usporiti vrijeme učitavanja podataka:
- 
-![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image01.png)  
+**2.** ponovo izvršiti pretragu u tabeli kako bi se učitali svi podaci.
 
-Nakon što se definira ovaj način upravljanja podacima, predstavljaju se neke opcije **zbrajanja/upravljanja podacima**: 
+**3.** ovu opciju treba sačuvati u profilu, koji se po potrebi može memorisati i pozvati: naime, treba uzeti u obzir da će učitavanje svih podataka usporiti vreme učitavanja podataka:
 
-Desnim klikom na zaglavlje tablice otvara se izbornik gdje se odabire opcija *Panel ukupnog sažetka*, a zatim desnim klikom izvan tablice, ali u visini stupca koji treba zbrojiti, odabere se želi li se prikazati: Suma, Min, Maks, Broj, Prosjek:
+![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image01.png)
+
+Nakon što se definiše ovaj način upravljanja podacima, dostupne su neke opcije **sabiranja/upravljanja podacima**:
+
+Desnim klikom na zaglavlje tabele otvara se meni u kojem se bira opcija *Panel ukupnog sažetka*, a zatim se desnim klikom izvan tabele, ali u visini kolone koju treba sabrati, bira da li se želi prikazati: Suma, Min, Maks, Broj, Prosek:
 
 ![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image02.png)
 
-Ovo zbrajanje se može postaviti i na razini grupe, uvijek birajući iz izbornika opciju *Grupiraj po ovoj koloni*  
-![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image03.png)  
+Ovo sabiranje može se postaviti i na nivou grupe, takođe izborom opcije *Grupiši po ovoj koloni* iz menija.
 
-Ako se grupira po polju datuma u tablici s potpunim učitavanjem, desnim pritiskom na oznaku grupiranja bit će dostupna opcija *Grupiraj interval* sa sljedećim opcijama: Nijedno (tako će svaki datum biti drugačija grupa), 'Dan', 'Mjesec', 'Godina', 'Pametno' gdje će potonje prikazati prošle dane, prethodni tjedan, a zatim unatrag mjesece:
+![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image03.png)
 
-![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image04.png)  
+Ako se grupiše po polju datuma u tabeli sa potpunim učitavanjem, desnim klikom na oznaku grupisanja biće dostupna opcija *Grupiši interval* sa sledećim opcijama: Nijedno (tako će svaki datum biti drugačija grupa), *Dan*, *Mesec*, *Godina*, *Pametno*, pri čemu će poslednja opcija prikazati prethodne dane, prethodnu nedelju, a zatim unazad mesece:
 
-Druga opcija dostupna s ovim grupama u tablici s potpunim učitavanjem je sortiranje po postavljenom zbroju, uzlazno ili silazno.  
+![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image04.png)
 
-![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image05.png)  
+Druga opcija dostupna sa ovim grupama u tabeli sa potpunim učitavanjem jeste sortiranje po postavljenom zbiru, rastuće ili opadajuće.
 
-Tako se dobije rezultat poput ovog:  
-![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image06.png) 
+![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image05.png)
+
+Tako se dobija rezultat poput ovog:
+
+![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image06.png)

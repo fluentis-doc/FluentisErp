@@ -3,12 +3,12 @@ title: Form Navigator - Form Editor
 sidebar_position: 2
 ---
 
-Korisnicima je omogućeno mijenjanje informacija u svakom obrascu pomoću **Form Editora**.
+Korisnicima je omogućeno menjanje informacija u svakom obrascu pomoću **Form Editora**.
 
-Primjer:
+Primer:
 
-1. otvori se obrazac **Šifarnik kontakata** i klikne se na lijevom panelu na **Form Navigator**.
+1. otvori se obrazac **Šifarnik kontakata** i klikne se na levom panelu na **Form Navigator**.
 
-2. desnim klikom na naziv obrasca otvore se **Detalji** koji će otvoriti obrazac **Form Editora**.
+2. desnim klikom na naziv obrasca otvore se **Detalji**, koji će otvoriti obrazac **Form Editora**.
 
-U ovom prozoru moguće je izvršiti niz promjena, kao što su: promjena općih podataka (naziv, ikona, vrsta, itd.), promjena ili brisanje naredbi, trake i ispisa. 
+U ovom prozoru moguće je izvršiti niz promena, kao što su: promena opštih podataka (naziv, ikona, vrsta itd.), promena ili brisanje naredbi, trake i ispisa.
