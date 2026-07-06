@@ -13,8 +13,8 @@ Na taj način ćete dobiti pristup prikazu povezanom s pristupnim podacima za pr
 
 **Povezivanje na bazu podataka**
 
-Povezivanje na **Fluentis** uključuje unos podataka: *Korisnik*, *Lozinka*, naziv *Servera* i *Database*.
+Povezivanje na **Fluentis** uključuje unos podataka: *Korisnik*, *Lozinka*, naziv *Servera* i *Baze podataka*.
 
 Ako je odabrana opcija za *predefiniranog Korisnika*, ime korisnika i lozinka više neće biti potrebni jer će se podaci automatski preuzeti prilikom pokretanja aplikacije.   
 
-Potvrdite pritiskom na tipku Enter ili pritiskom na gumb **Connect**.
+Potvrdite pritiskom na tipku Enter ili pritiskom na tipku **Connect**.

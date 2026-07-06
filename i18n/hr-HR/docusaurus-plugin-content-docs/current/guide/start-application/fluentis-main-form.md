@@ -65,7 +65,7 @@ U donjem dijelu aplikacije, traka izbornika sadrži niz informacija koje objašn
 **Aktivnosti**: omogućuje brzu poveznicu s upravljanjem aktivnostima na čekanju (koje proizlaze iz konfiguriranih WorkFlow procedura);
 
 **Kalendar**: omogućuje upravljanje kalendarom, koji se može povezati s Exchangeom ili Outlookom.
-:::note SINHRONIZIRANJE *OUTLOOK KALENDARA* s *KALENDAROM FLUENTIS-A*. 
+:::note SINKRONIZIRANJE *OUTLOOK KALENDARA* s *KALENDAROM FLUENTIS-A*. 
 
 1. Konfigurirati korisnika u **ARM-u** i definirati na kartici **Ostale karakteristike** e-mail: 
 
@@ -86,7 +86,7 @@ Vidi također [Planiranje resursa u kalendaru](/docs/project-management/transver
 :::
 
 
-**Dashboards**: omogućuju brzi pregled ključnih informacija upravljanja pomoću vrlo moćnog i lako prilagodljivog statističkog sučelja;  
+**Upravljače/kontrolne ploče**: omogućuju brzi pregled ključnih informacija upravljanja pomoću vrlo moćnog i lako prilagodljivog statističkog sučelja;  
 
 **Pretraži**: omogućuje prikaz svih naredbi aplikacije. Koristi se zajedno s poljem za pretraživanje koje se nalazi gore, u glavnom izborniku, kako bismo pronašli specifičnu naredbu ili grupirane naredbe;
 

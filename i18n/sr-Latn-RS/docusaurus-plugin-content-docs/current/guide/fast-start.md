@@ -1,26 +1,26 @@
 ---
-title: Fluentis Fast Start - roadmap startup novo operativno okruženje
+title: Fluentis Fast Start - mapa pokretanja okruženja
 sidebar_position: 2
 ---
 
-**Fast Start** je postupak osmišljen za pojednostavljenje i ubrzanje inicijalizacije poslovnog softvera, omogućujući automatsko popunjavanje sustava s osnovnim parametrima i tablicama. Ova funkcionalnost značajno smanjuje vrijeme i trud potreban za početnu konfiguraciju, izbjegavajući ručni unos svake pojedinačne postavke.
+**Fast Start** je postupak osmišljen za pojednostavljenje i ubrzavanje inicijalizacije poslovnog softvera, omogućavajući automatsko popunjavanje sistema osnovnim parametrima i tabelama. Ova funkcionalnost značajno smanjuje vreme i trud potreban za početnu konfiguraciju, izbegavajući ručni unos svakog pojedinačnog podešavanja.
 
 ---
 <details>
 
   <summary>Fast Start (Click to expand)</summary>
   
-  Za pokretanje postupka, pristupite tablici Društva i pritisnite gumb *Opće postavke*.
+  Za pokretanje postupka, pristupite tabeli Kompanije i pritisnite dugme *Opšta podešavanja*.
 
-  PAŽNJA: plan konta ne smije biti unaprijed popunjen (ni u jednom dijelu), kao ni druge tablice koje su uključene u postupak. Preporučuje se da odmah donesete odluku i provedete ovaj postupak kao prvu radnju nakon instalacije.  
+  PAŽNJA: kontni plan ne sme biti unapred popunjen (ni u jednom delu), kao ni druge tabele koje su uključene u postupak. Preporučuje se da odmah donesete odluku i sprovedete ovaj postupak kao prvu radnju nakon instalacije.  
 
-Tablice uključene u postupak (Stored Procedure Fluentis.SH_CreateNewYear_IT):
+Tabele uključene u postupak (Stored Procedure Fluentis.SH_CreateNewYear_IT):
     
  - > Tipovi konta
  - > Kontni plan
  - > Parametri glavne knjige
  - > Parametri osnovnih sredstava
- - > Parametri portfelja (aktivno - mjenice)
+ - > Parametri portfelja (aktivno - menice)
  - > Parametri neplaćeno
  - > Parametri MPS
  - > Predlošci konta
@@ -28,73 +28,73 @@ Tablice uključene u postupak (Stored Procedure Fluentis.SH_CreateNewYear_IT):
  - > Knjige PDV-a
  - > Tipovi dokumenta
  - > Načini plaćanja
- - > Rješenja plaćanja
+ - > Rešenja plaćanja
  - > Kategorije trgovačkih predstavnika
- - > Tipovi zadržavanja (predujma)
+ - > Tipovi zadržavanja (avansa)
  - > Kategorija osnovnih sredstava 
  - > Tipovi novčanog toka
  - > Tipovi avansa
  - > Stanja nepodmirenja
- - > Statusi vrijednosnih papira
+ - > Statusi hartija od vrednosti
  - > Tipovi odvojenog prikaza (efekti)
- - > Tipovi vrijednosnih papira
- - > Poveznica između tablice Tipovi plaćanja i tipova efekata
- - > Brojčane oznake računovodstvenih evidencija (konačne i privremene)
- - > Numeracija dospijeća plaćanja
- - > Brojčana oznaka kompenzacija (stanja)
+ - > Tipovi hartija od vrednosti
+ - > Veza između tabele Tipovi plaćanja i tipova efekata
+ - > Numeracije računovodstvenih evidencija (konačne i privremene)
+ - > Numeracija dospeća plaćanja
+ - > Numeracija kompenzacija (stanja)
  - > Numeracija plaćanja dobavljačima
- - > Numeriranje Intrastat
+ - > Numeracija Intrastat
  - > Numeracija likvidacije agenata
- - > Brojčana oznaka odvojenog prikaza efekata
- - > Numeriranje vrijednosnih papira
- - > [Brojčana oznaka prodajnih dokumenata](/docs/configurations/tables/fluentis-numerations)
- - > [Brojčana oznaka dokumenata o nabavi](/docs/configurations/tables/fluentis-numerations)
- - > Tipovi računa ([nabava](/docs/configurations/tables/purchase/purchase-invoices-type) i [prodaja](/docs/configurations/tables/sales/invoices-type)) s povezivanjem na računovodstvene predloške
- - > Tipovi otpremnica ([nabava](/docs/configurations/tables/purchase/purchase-delivery-notes-type) i [prodaja](/docs/configurations/tables/sales/delivery-notes-type)) s povezivanjem na tipove računa
- - > Tipovi narudžbi ([nabava](/docs/configurations/tables/purchase/purchase-orders-type) i [prodaja](/docs/configurations/tables/sales/sales-order-types)) s povezivanjem na tipove otpremnica  
+ - > Numeracija odvojenog prikaza efekata
+ - > Numeracija hartija od vrednosti
+  - > [Numeracija prodajnih dokumenata](/docs/configurations/tables/fluentis-numerations)
+ - > [Numeracija dokumenata nabavke](/docs/configurations/tables/fluentis-numerations)
+ - > Tipovi računa ([nabavka](/docs/configurations/tables/purchase/purchase-invoices-type) i [prodaja](/docs/configurations/tables/sales/invoices-type)) sa povezivanjem sa računovodstvenim predlošcima
+ - > Tipovi otpremnica ([nabavka](/docs/configurations/tables/purchase/purchase-delivery-notes-type) i [prodaja](/docs/configurations/tables/sales/delivery-notes-type)) sa povezivanjem sa tipovima računa
+ - > Tipovi narudžbina ([nabavka](/docs/configurations/tables/purchase/purchase-orders-type) i [prodaja](/docs/configurations/tables/sales/sales-order-types)) sa povezivanjem sa tipovima otpremnica  
  - > [Tipovi ponuda](/docs/configurations/tables/sales/sales-offer-type)
  - > [Parametri računa](/docs/configurations/parameters/sales/sales-invoices-parameters) i pripadajuće [grupacije](/docs/configurations/parameters/sales/invoice-grouping) 
  - > [Parametri otpremnica](/docs/configurations/parameters/sales/dn-parameters) i pripadajuće [grupacije](/docs/configurations/parameters/sales/dn-grouping) 
- - > [Parametri narudžbi](/docs/configurations/parameters/sales/sales-orders-parameters) i pripadajuće [grupacije](/docs/configurations/parameters/sales/orders-grouping)
+ - > [Parametri narudžbina](/docs/configurations/parameters/sales/sales-orders-parameters) i pripadajuće [grupacije](/docs/configurations/parameters/sales/orders-grouping)
  - > [Parametri ponuda](/docs/configurations/parameters/sales/offer-parameters)
  - > Tipovi projekata (sales job order)
  - > Tipovi intervencija
  - > Numeracija projekata
  - > Numeracija intervencija 
- - > Tipovi zahtjeva za intervenciju (i njihova numeracija)
+ - > Tipovi zahteva za intervenciju (i njihova numeracija)
  - > Tipovi planiranih intervencija (i numeracija)
  - > Tipovi povrata podizvođača (i numeracija)
- - > Tipovi narudžbi za podizvođače (i numeracija)
+ - > Tipovi narudžbina za podizvođače (i numeracija)
  - > Tipovi radnih naloga za proizvodnju (i numeracija)
- - > Tipovi planiranih narudžbi za nabavu (i numeracija)
- - > Tipovi planiranih narudžbi za proizvodnju (i numeracija)
- - > Tipovi planiranih narudžbi za podizvođače (i numeracija)
- - > Tipovi narudžbi za proizvodnju (i numeracija)
- - > Tipovi narudžbi za podizvođače (i numeracija)
- - > Tipovi Zahtjeva za nabavom (i numeracija)
- - > (Tipovi) fakturiranja prodaje
- - > (Tipovi) fakturiranja nabave
- - > Tipovi cjenika
+ - > Tipovi planiranih narudžbina za nabavku (i numeracija)
+ - > Tipovi planiranih narudžbina za proizvodnju (i numeracija)
+ - > Tipovi planiranih narudžbina za podizvođače (i numeracija)
+ - > Tipovi narudžbina za proizvodnju (i numeracija)
+ - > Tipovi narudžbina za podizvođače (i numeracija)
+ - > Tipovi zahteva za nabavku (i numeracija)
+ - > (Tipovi) fakturisanja prodaje
+ - > (Tipovi) fakturisanja nabavke
+ - > Tipovi cenovnika
  - > Tipovi adresa
  - > Tipovi rabata
  - > Jezici
  - > Države
  - > Države Black list
  - > Valute
- - > Mjerne jedinice
- - > Paritet (Incoterms - uvjeti isporuke)
+ - > Merne jedinice
+ - > Paritet (Incoterms - uslovi isporuke)
  - > Pošiljke (tipovi)
  - > Modeli reklasifikacije (kontroling)
- - > Povezivanje modela reklasifikacije za CEE bilancu s detaljima plana računa  
- - > Radno vrijeme (upravljanje zaposlenicima)
- - > Ozbiljnost (CRM tiket)
- - > SLA (CRM tiket)
- - > Tipovi CRM tiketa (i numeracija)
+ - > Povezivanje modela reklasifikacije za CEE bilans sa detaljima kontnog plana 
+ - > Radno vreme (upravljanje zaposlenima)
+ - > Ozbiljnost (CRM *tiket*)
+ - > SLA (CRM *tiket*)
+ - > Tipovi CRM *tiketa* (i numeracija)
  - > Verzije osnovne liste
  - > Klase artikala
  - > Skladišta
  - > Predlošci za skladište
- - > Zadani podaci za CRM (Tipovi kontakata, Izvještaj o posjetima, Prilike, Kvaliteta kontakta, Postotci uspjeha itd.)
+ - > Podrazumevani podaci za CRM (Tipovi kontakata, Izveštaj o posetama, Prilike, Kvalitet kontakta, Procenti uspeha itd.)
 
 
 
@@ -104,20 +104,20 @@ Tablice uključene u postupak (Stored Procedure Fluentis.SH_CreateNewYear_IT):
 
 **CUSTOM OKRUŽENJE BEZ FAST STARTA**
 
-U slučaju da se Fast Start ne pokrene, potrebno je ručno popuniti sljedeće tablice.    
+U slučaju da se Fast Start ne pokrene, potrebno je ručno popuniti sledeće tabele.    
 
-## OSNOVNE TABLICE
+## OSNOVNE TABELE
 
 <details>
 
-  <summary>DRZAVE Click to expand!</summary>
+  <summary>DRŽAVE Click to expand!</summary>
  
- ## Tablica potrebna za sve dokumente i unos šifarnika o klijentima i dobavljačima
+ ## Tabela potrebna za sve dokumente i unos šifarnika klijenata i dobavljača
 
-  1. Ispuniti kod (može biti i interni, ali se preporučuje međunarodni) i opis. 
-  2. Posebno provjeriti polje COD ISO EU, jer ako nedostaje, neće se spremiti predkod porezne brojke, paziti na posebne slučajeve: 
+  1. Popuniti kod (može biti i interni, ali se preporučuje međunarodni) i opis. 
+  2. Posebno proveriti polje COD ISO EU, jer ako nedostaje, neće se sačuvati šifra poreskog broja. Obratiti pažnju na posebne slučajeve: 
      * Grčka GR -> ISO = 'EL'
-     * Osim u posebnim slučajevima, može se izvršiti ažuriranje za popunjavanje ISO EU = COD ISO (stari bazu podataka prije brzog početka).
+     * Osim u posebnim slučajevima, može se izvršiti ažuriranje za popunjavanje ISO EU = COD ISO (stare baze podataka pre Fast Starta).
 
 </details>
 
@@ -125,35 +125,35 @@ U slučaju da se Fast Start ne pokrene, potrebno je ručno popuniti sljedeće ta
 
   <summary>VALUTE Click to expand!</summary>
  
- ## Tablica potrebna za upravljanje tečajevima valuta i knjigovodstvenim evidencijama
+ ## Tabela potrebna za upravljanje deviznim kursevima i računovodstvenim evidencijama
 
-  1. Provjeriti prisutnost barem glavnih valuta, osobito eura.
-  2. Oznaka za *preuzimanje promjene* za omogućavanje unosa stope za valutu.
-  3. Ostala polja
-     * Decimale, savjetuju se posešavanje na 2
-     * Euro - označiti samo za EUR
+  1. Proveriti prisustvo barem glavnih valuta, posebno evra.
+  2. Oznaka za *preuzimanje kursa* omogućava unos kursa za valutu.
+  3. Ostala polja:
+     * Decimale, preporučuje se podešavanje na 2 mesta
+     * Evro - označiti samo za EUR
 
-    4. Opcionalna donja mreža, ali korisna za automatizaciju evidentiranja razlika u tečaju postavljanjem odgovarajućih knjigovodstvenih računa. 
+  4. Donja tabela je opciona, ali korisna za automatizaciju evidentiranja kursnih razlika postavljanjem odgovarajućih računovodstvenih konta. 
 
 
 </details>
 
 <details>
 
-  <summary>TVRTKA Click to expand!</summary>
+  <summary>KOMPANIJA Click to expand!</summary>
  
- ## Tablica potrebna za elektroničko fakturiranje i podatke o tvrtki u dokumentima i ispisima
+ ## Tabela potrebna za elektronsko fakturisanje i podatke o kompaniji u dokumentima i izveštajima
 
-  1. Popunite sve porezne podatke
-  2. Podaci potrebni za elektroničko fakturiranje:
-         * PDV broj i porezni broj
-         * Telefon i fax nisu obavezni, pazite da ne unosite / ili posebne znakove za razdvajanje prefiksa
-        * REA (dvoslovna oznaka provincije i broj)
-        * Jedinični / višestruki partneri
-        * Likvidacija DA / NE
-        * Upisan / uplaćen kapital - PAŽNJA: nemojte koristiti točku za tisuću i razdvojiti decimalne znamenke točkom, a NE zarezom
-        * Pravna priroda
-        * Porezni režim
+  1. Popunite sve poreske podatke.
+  2. Podaci potrebni za elektronsko fakturisanje:
+     * PDV broj i poreski broj
+     * Telefon i faks nisu obavezni. Pazite da ne unosite / ili posebne znakove za razdvajanje prefiksa.
+     * REA (dvoslovna oznaka provincije i broj)
+     * Jednočlano / višečlano društvo
+     * Likvidacija DA / NE
+     * Upisani / uplaćeni kapital - PAŽNJA: nemojte koristiti tačku za hiljade i odvojite decimalna mesta tačkom, a NE zarezom
+     * Pravna priroda
+     * Poreski režim
 
 </details>
 
@@ -161,10 +161,10 @@ U slučaju da se Fast Start ne pokrene, potrebno je ručno popuniti sljedeće ta
 
   <summary>TIPOVI DOKUMENATA Click to expand!</summary>
  
- ## Tablica općeg grupe 'Tipovi dokumenata' koju ne treba zamijeniti s istoimenom tablicom iz administrativne grupe
+ ## Tabela opšte grupe „Tipovi dokumenata“ koju ne treba mešati sa istoimenom tabelom iz administrativne grupe
 
-  1. Provjeriti minimalno potrebne tipove s brzim početkom.
-  2. **Za elektroničko fakturiranje unesite tipologiju s kodom i opisom FattPubb**
+  1. Proveriti minimalno potrebne tipove za Fast Start.
+  2. **Za elektronsko fakturisanje unesite tip sa kodom i opisom FattPubb.**
    
 </details>
 
@@ -172,57 +172,55 @@ U slučaju da se Fast Start ne pokrene, potrebno je ručno popuniti sljedeće ta
 
   <summary>TIPOVI PLAĆANJA Click to expand!</summary>
  
- ## Potrebno za šifarnike i dokumenata (dospijeća) te knjigovodstvenih zapisa
+ ## Potrebno za šifarnike i dokumente (dospeća), kao i za računovodstvene zapise
 
+Proveriti prisustvo podataka u polju **Kod javne uprave** za izradu elektronskog računa.
 
-Provjeriti prisutnost podataka u polju **Kod Javna uprave** za izradu elektroničkog računa.
-
-Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pronaći zapise prilikom izrade efekata.
+Obratiti pažnju na povezivanje sa tipovima efekata (donja desna tabela), u suprotnom zapisi neće biti pronađeni prilikom izrade efekata.
 
 </details>
 
 <details>
 
-  <summary>RJEŠENJA ZA PLAĆANJE Click to expand!</summary>
+  <summary>REŠENJA ZA PLAĆANJE Click to expand!</summary>
  
- ## Potrebno za dokumente (dospijeća) i knjigovodstvo 
+ ## Potrebno za dokumente (dospeća) i računovodstvo
 
 </details>
 
-## TABLICE ADMINISTRACIJE 
+## TABELE ADMINISTRACIJE
 
-### Osnovna knjigovodstvena evidencija
+### Osnovna računovodstvena evidencija
 
 <details>
 
   <summary>STOPE PDV-A Click to expand!</summary>
  
- ## Potrebno za knjigovodstvo, dokumente, elektroničko fakturiranje
+ ## Potrebno za računovodstvo, dokumente i elektronsko fakturisanje
 
-  1. Paziti na popunjavanje polja Kod Javne uprave za izuzeće / isključenje / neoporezivost kod elektroničkih računa.
-  2. Provjeriti polje Uključeno u Poreznu prijavu potrebno za tromjesečno izvješćivanje o obračunu PDV-a.
-  3. Provjeriti gdje je potrebno polje PDV 0 u LG koje omogućava stavke s PDV-om nula.
-  4. Provjeriti gdje je potrebno polje PDV za automatske kalkulacije (slučajevi obrnute naplate s neodbitnošću na kupnju).
-  5. Provjeriti polje Izuzmi iz automatskih kalkulacija (slučajevi miješane obrnute naplate - dio nije u obrnutom).
+  1. Obratiti pažnju na popunjavanje polja Kod javne uprave za oslobođenje / isključenje / neoporezivost kod elektronskih računa.
+  2. Proveriti polje Uključeno u poresku prijavu, potrebno za tromesečno izveštavanje o obračunu PDV-a.
+  3. Proveriti gde je potrebno polje PDV 0 u LG, koje omogućava stavke sa PDV-om nula.
+  4. Proveriti gde je potrebno polje PDV za automatske obračune (slučajevi obrnute naplate bez odbitka pri nabavci).
+  5. Proveriti polje Izuzmi iz automatskih obračuna (slučajevi mešovite obrnute naplate - deo nije u režimu obrnute naplate).
     
 
 </details>
 
 <details>
 
-  <summary>Registri PDV-a Click to expand!</summary>
+  <summary>REGISTRI PDV-A Click to expand!</summary>
  
  ## Potrebno za računovodstvo i obračun PDV-a
 
-  1. Predvidjeti raspodjelu između Italije, EU i izvan EU, preporučuje se razlikovanje između dobara i usluga unutar EU u dokumentima kodova TD17 - TD18 za vlastite fakture koje se šalju SDI-u (preporučuje se raspodjela i za izvan EU).
-  2. Za registre kupovine u reverse charge (Hrvatska i EU) predvidjeti odgovarajuće registre na strani prodaje za prijenos, ne dijeliti registar prijenosa s prodajom unutar EU (na primjer).
-  3. Preporučljivo je predvidjeti poseban registar za obračun PDV-a (radi lakšeg konačnog ispisa i ponovnog ispisa u slučaju odblokiranja samo ovog dijela).
-  4. Planirati (i potom provjeriti) ispravnu povezanost između vrste fakture, numeracije vrste fakture, računovodstvene uzročnosti i PDV registra kako bi se izbjeglo stvaranje rupa u protokolima ili sukoba. Uzročnosti na strani prodaje obično imaju opciju nametanja protokola jednakog broju fakture.
-  5. Provjeriti je li unesena tekuća godina i eventualne prethodne godine ako je potrebno, potom će se godina automatski kreirati pomoću alata za generiranje brojača za novu godinu.
+  1. Predvideti podelu između Italije, EU i van EU. Preporučuje se razlikovanje između dobara i usluga unutar EU u dokumentima kodova TD17 - TD18 za sopstvene fakture koje se šalju SDI-u (preporučuje se podela i za transakcije van EU).
+  2. Za nabavku u režimu *reverse charge* (Hrvatska i EU) predvideti odgovarajuće registre na strani prodaje za prenos. Ne koristiti isti registar prenosa za prodaju unutar EU (na primer).
+  3. Preporučljivo je predvideti poseban registar za obračun PDV-a (radi lakšeg konačnog štampanja i ponovnog štampanja u slučaju uklanjanja blokade samo ovog dela).
+  4. Planirati (i zatim proveriti) ispravno povezivanje između vrste fakture, numeracije vrste fakture, predložaka knjiženja i PDV registra kako bi se izbeglo stvaranje praznina u protokolima ili sukoba. Predlošci knjiženja na strani prodaje obično imaju opciju nametanja protokola jednakog broju fakture.
+  5. Proveriti da li je uneta tekuća godina i eventualne prethodne godine ako je potrebno. Nakon toga će se godina automatski kreirati pomoću alata za generisanje brojača za novu godinu.
     
 
 </details>
-
 
 <details>
 
@@ -230,9 +228,9 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  
  ## Potrebno za računovodstvo
 
-  1. Predvidjeti barem jednu numeraciju za konačne zapise (preporuča se korištenje koda 1, opis: General ledger posting numeration).
-  2. Planirati i postaviti politiku numeratora (Dnevno ili Godišnje) i ostale parametre numeratora prema općim uputama o numeratorima.
-  3. Preporučuje se predvidjeti i numerator za privremene zapise (kod 2, opis: General ledger posting provisory numeration).
+  1. Predvideti barem jednu numeraciju za zapise (preporučuje se korišćenje koda 1, opis: *General ledger posting numeration*).
+  2. Planirati i postaviti politiku numeratora (Dnevno ili Godišnje) i ostale parametre numeratora prema opštim uputstvima o numeratorima.
+  3. Preporučuje se predvideti i numerator za privremene zapise (kod 2, opis: *General ledger posting provisory numeration*).
     
 
 </details>
@@ -241,14 +239,14 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
   <summary>TIPOVI KONTA Click to expand!</summary>
  
- ## Potrebno za kontni plan, računovodstvo i ispis bilance
+ ## Potrebno za kontni plan, računovodstvo i štampanje bilansa
 
-  1. Predvidjeti barem 4 tipologije: Aktivu, Pasivu, Troškove i Prihode za bilancu i početnu bilancu.
-  2. Planirati i postaviti tipove računa za Kupce i Dobavljače (preporuča se podjela na Hrvatsku, EU i izvan EU), paziti da se označi i Aktiva/Pasiva, i Kupac/Dobavljač.
-  3. Preporučuje se predvidjeti i tip za Banke za korištenje putem osnovnih podataka, inače nije moguće upravljati nekim funkcijama kao što je portfelj itd. Ne preporučuje se vršiti bankovne zapise s računom koji nije tip osnovnih podataka banke.
-  4. Preporučuje se predvidjeti tip računa za troškove i prihode koji se ispravljaju s odgođenim prihodima i rashodima, te postaviti zastavicu za uslugu uz trošak/prihod.
-  5. Potrebno je stvoriti tip za Agente ako se želi aktivirati upravljanje provizijama (zastavica na pasivi i Agent).
-  6. Neobavezno je stvoriti tip Konti izvanbilančnih stavki (s zastavicom za izvanbilančne stavke) za upravljanje zapisima izvan bilance.
+  1. Predvideti barem 4 tipa: Aktivu, Pasivu, Troškove i Prihode za bilans i početni bilans.
+  2. Planirati i postaviti tipove konta za Kupce i Dobavljače (preporučuje se podela na Hrvatsku, EU i van EU), vodeći računa da se označe i Aktiva/Pasiva i Kupac/Dobavljač.
+  3. Preporučuje se predvideti i tip za Banke za korišćenje putem osnovnih podataka, u suprotnom nije moguće upravljati nekim funkcijama kao što je portfelj itd. Ne preporučuje se vršiti bankovna knjiženja sa kontom koji nije tip osnovnih podataka banke.
+  4. Preporučuje se predvideti tip konta za troškove i prihode koji se ispravljaju odloženim prihodima i rashodima, kao i postaviti oznaku za uslugu uz trošak/prihod.
+  5. Potrebno je kreirati tip za Agente ako se želi aktivirati upravljanje provizijama (oznaka na pasivi i Agent).
+  6. Opciono je kreirati tip konta za vanbilansne stavke (sa oznakom za vanbilansne stavke) za upravljanje zapisima van bilansa.
     
 
 </details>
@@ -258,50 +256,49 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
   <summary>KONTNI PLAN Click to expand!</summary>
  
- ## Potrebno za računovodstvo i ispis bilance
+ ## Potrebno za računovodstvo i štampanje bilansa
 
-  1. Osigurati u mreži grupa barem 4 vrste Aktiva, Pasiva, Troškova i Prihoda.
-  2. Planirati podgrupe (broj podrazina nije ograničen) i ispuniti polje Priroda grupe.
-  3. Definirati u donjoj mreži, za svaku grupu posljednje razine detalja, račune / podračune detalja. PAŽNJA: Za svaku grupu mora postojati barem jedan račun gdje će se zatim unijeti njezini podračuni.
-  4. NE unosi račune šifarnika (Kupci, Dobavljači, Agenti i BANKE) ovdje, već samo putem KONTAKATA.
-  5. Osigurati sve potrebne račune (Bilanca stanja na kraju i početku godine, Račun dobiti i gubitka na kraju godine, Dobitak i gubitak prethodne godine, Rokovi i akontacije - s posebnim vrstama računa).
-  6. Po želji, stvoriti grupu Konti d'ordine za upravljanje izvanbilančnim zapisa
+  1. Obezbediti u tabeli grupa barem 4 vrste: Aktiva, Pasiva, Troškovi i Prihodi.
+  2. Planirati podgrupe (broj podnivoa nije ograničen) i popuniti polje Priroda grupe.
+  3. Definisati u donjoj tabeli, za svaku grupu poslednjeg nivoa detalja, konta/podkonta. PAŽNJA: Za svaku grupu mora postojati barem jedan konto u koji će se zatim unositi njena podkonta.
+  4. NE unositi konta šifarnika (Kupci, Dobavljači, Agenti i BANKE) ovde, već samo putem KONTAKATA.
+  5. Obezbediti sva potrebna konta (Bilans stanja na kraju i početku godine, Bilans uspeha na kraju godine, Dobitak i gubitak prethodne godine, Rokovi i akontacije - sa posebnim vrstama konta).
+  6. Po želji, kreirati grupu konta za upravljanje vanbilansnim zapisima.
     
 
 </details>
 
-
 <details>
 
-  <summary>PARAMETRI OPĆEG RAČUNOVODSTVA Click to expand!</summary>
+  <summary>PARAMETRI OPŠTEG RAČUNOVODSTVA Click to expand!</summary>
  
  ## Potrebno za računovodstvo
 
-  1. Unesite trenutnu godinu i, ako je potrebno, prethodne godine. Nakon toga, godina će automatski biti stvorena od strane alata za generiranje brojača za novu godinu.
+  1. Unesite tekuću godinu i, ako je potrebno, prethodne godine. Nakon toga, godina će automatski biti kreirana pomoću alata za generisanje brojača za novu godinu.
   2. Popunite tri raspona datuma za upravljanje poslovanjem.
-  3. Popunite, ako su dostupni, i razloge za zatvaranje i otvaranje računa, ili ih unesite kasnije.
+  3. Popunite, ako su dostupni, i razloge za zatvaranje i otvaranje konta ili ih unesite kasnije.
   4. Popunite periodičnost PDV-a.
-  5. Unesite povezanost između glava knjige vezane uz klijente i dobavljače, banke i agente te njihove odgovarajuće vrste računa.
-  6. Definirajte račune za automatske postupke u drugoj kartici.
+  5. Unesite vezu između konta glavne knjige povezanih sa klijentima i dobavljačima, bankama i agentima i njihovih odgovarajućih tipova konta.
+  6. Definišite konta za automatske postupke na drugoj kartici.
  
 
 </details>
 
 <details>
 
-  <summary>GENERALNI RAČUNOVODSTVENI PREDLOŠCI Click to expand!</summary>
+  <summary>OPŠTI RAČUNOVODSTVENI PREDLOŠCI Click to expand!</summary>
  
  ## Potrebno za računovodstvo
 
-  1. Predvidjeti predloške povezane s glavnim vrstama kupoprodajnih računa i povezati ih s odgovarajućim PDV evidencijama (potreban je predložak s općim računima za kupca/dobavljača i troškove/prihode, posebni konto za PDV na dug i potraživanje). Obavezno obratiti pažnju na vrstu iznosa u redovima.
-  2. Predvidjeti i predloške prijenosa za obrnuti teret i EU.
-  3. Predvidjeti predloške za plaćanja i uplate s zatvaranjem stavki (potrebno i za pojedinačne uplate itd.). Obratiti pažnju na predložak i vrstu poreza u redovima.
-  4. Predvidjeti predloške za faze aktivnog portfelja (izdavanje efekata, prezentacija i akreditacija). Za prezentaciju i akreditaciju nije potreban predložak, dok je za izdavanje potreban predložak Efekti u portfelju kupca.
-  5. Predvidjeti predloške za dobropise s invertiranim predloškom znakova. Za obrnuti teret, invertirati prvu i podijeliti prijenos s opcijom automatskog obrta znakova.
-  6. Predvidjeti predloške za primatelje (s predloškom) i za plaćanje primatelja (bez predloška).
-  7. Predvidjeti predloške za otvaranje i zatvaranje, rate i raspite, amortizacije (bez predloška).
-  8. Preporučuje se predvidjeti dodatne predloške knjiženja i opći predložak knjiženja bez predloška.
-  9. Predvidjeti postavke za slanje automatskih računa SDI i predložak za kupnju usluga izvan EU bez PDV-a s povezivanjem na automatski konto.
+  1. Predvideti predloške povezane sa glavnim tipovima konta i povezati ih sa odgovarajućim PDV evidencijama (potreban je predložak sa opštim kontima za kupca/dobavljača i troškove/prihode, kao i poseban konto za ulazni i izlazni PDV). Obavezno obratiti pažnju na tip iznosa u redovima.
+  2. Predvideti i predloške prenosa za obrnuto terećenje i EU.
+  3. Predvideti predloške za plaćanja i naplate sa zatvaranjem stavki (potrebno i za pojedinačne uplate itd.). Obratiti pažnju na predložak i tip poreza u redovima.
+  4. Predvideti predloške za faze aktivnog portfelja (izdavanje efekata, prezentacija i akreditacija). Za prezentaciju i akreditaciju nije potreban predložak, dok je za izdavanje potreban predložak Efekti u portfelju kupca.
+  5. Predvideti predloške za odobrenja sa obrnutim predznacima. Za obrnuto terećenje, obrnuti prvi predložak i podeliti prenos sa opcijom automatskog obrtanja predznaka.
+  6. Predvideti predloške za primaoce (sa predloškom) i za plaćanje primalaca (bez predloška).
+  7. Predvideti predloške za otvaranje i zatvaranje, rate i obračune, amortizacije (bez predloška).
+  8. Preporučuje se predvideti dodatne predloške knjiženja i opšti predložak knjiženja bez predloška.
+  9. Predvideti podešavanja za slanje automatskih računa SDI-u i predložak za nabavku usluga van EU bez PDV-a sa povezivanjem na automatski konto.
  
     
 </details>
@@ -310,113 +307,113 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
 <details>
 
-  <summary>PARAMETRI DUGOTRAJNE IMOVINE Click to expand!</summary>
+  <summary>PARAMETRI OSNOVNIH SREDSTAVA Click to expand!</summary>
  
  ## Potrebno za osnovna sredstva  
 
-  1. Planiranje politike upravljanja numeracijom, bilo jednostranom ili s predznakom  
+  1. Planirati politiku upravljanja numeracijom, bilo jednostranom ili sa predznakom.
     
 </details>
 
 <details>
 
-  <summary>Tablica OSNOVNA SREDSTVA Click to expand!</summary>
+  <summary>Tabela OSNOVNA SREDSTVA Click to expand!</summary>
  
- ## Potrebno za računovodstvo i upravljanje osnovnih sredstava
+ ## Potrebno za računovodstvo i upravljanje osnovnim sredstvima
 
-  1. Definirati kategorije i stopu amortizacije prema vrsti obavljene aktivnosti.
-  2. U kategorije unijeti godišnju granicu amortizacije (obično 516 eura).
-  3. Uvesti oznaku Prva godina amortizacije za smanjenje stope u prvoj godini.
-  4. Planirati politiku amortizacije inkrementalnih komponenti (preporučuje se izbjegavati promjene tijekom rada).
+  1. Definisati kategorije i stopu amortizacije prema vrsti delatnosti koja se obavlja.
+  2. U kategorije uneti godišnju granicu amortizacije (obično 516 evra).
+  3. Postaviti oznaku Prva godina amortizacije za smanjenje stope u prvoj godini.
+  4. Planirati politiku amortizacije inkrementalnih komponenti (preporučuje se izbegavanje promena tokom rada).
    
 </details>
 
 <details>
 
-  <summary>Tablica PREDKOD OSNOVNIH SREDSTAVA Click to expand!</summary>
+  <summary>Tabela ŠIFRE OSNOVNIH SREDSTAVA Click to expand!</summary>
  
- ## Opcionalno
+ ## Opciono
 
-  1. Planirati politiku upravljanja numeracijom, jednostavnu ili s predkodom.
+  1. Planirati politiku upravljanja numeracijom, jednostavnu ili sa *predšifrom*.
  
     
 
 </details>
 
-### Upravljanje primateljima 
+### Upravljanje primaocima
 
 <details>
 
-  <summary>Tablica ŠIFRA POREZA Click to expand!</summary>
+  <summary>Tabela ŠIFRA POREZA Click to expand!</summary>
  
  ## Potrebno za upravljanje F24
 
-  1. Provjeriti postojanje podataka i dodati po potrebi kodove za PDV (6001, 6002.... 6099) i za zadržavanje (1040, 1038....)
+  1. Proveriti postojanje podataka i po potrebi dodati kodove za PDV (6001, 6002.... 6099) i za zadržavanje (1040, 1038....).
 
    
 </details>
 
 <details>
 
-  <summary>Tablica VRSTE ZADRŽAVANJA  Click to expand!</summary>
+  <summary>Tabela VRSTE ZADRŽAVANJA Click to expand!</summary>
  
- ## Potrebno za upravljanje primateljima  
+ ## Potrebno za upravljanje primaocima
 
-  1. Definirati potrebne vrste za primatelje (1040) s 20% zadržavanja, za agente i za paušalne obveznike (0% na 100%).
-  2. Povezati uzroke za knjiženje naknade.
-  3. Povezati kategoriju agenta u vrstu rezerviranu za agente.
+  1. Definisati potrebne vrste za primaoce (1040) sa 20% zadržavanja, za agente i za paušalne obveznike (0% na 100%).
+  2. Povezati predloške za knjiženje naknade.
+  3. Povezati kategoriju agenta sa vrstom rezervisanom za agente.
    
 </details>
 
 ---
 
-## TABLICE RIZNICA 
+## TABELE RIZNICE
 
-### Aktivni portfelj   
+### Aktivni portfelj
 
 <details>
 
-  <summary>Tablica STANJA EFEKATA Click to expand!</summary>
+  <summary>Tabela STATUSI EFEKATA Click to expand!</summary>
  
- ## Potrebno za upravljanje portfeljem  
+ ## Potrebno za upravljanje portfeljem
 
-  1. Potrebno je barem definirati osnovne vrste: Izdano, Predstavljeno SBF, Rit. Accr (Akreditirano) i Rit. Ins (nepodmireno), povezane s odgovarajućom oznakom. 
+  1. Potrebno je definisati barem osnovne vrste: Izdato, Prezentovano SBF, Rit. Accr (Akreditovano) i Rit. Ins (neizmireno), povezane sa odgovarajućom oznakom.
    
 </details>
 
 <details>
 
-  <summary>Tablica NEPLAĆENI STATUSI Click to expand!</summary>
+  <summary>Tabela STATUSI NEPLAĆENIH Click to expand!</summary>
  
- ## Potrebno za upravljanje neplaćenim vezano uz portfelj  
+ ## Potrebno za upravljanje neplaćenim stavkama povezanim sa portfeljem
 
-  1. Potrebno je barem definirati vrstu "Nepodmireno" povezanu s odgovarajućom oznakom.
-  2. Preporučuje se kodiranje svih vrsta simetrično s prisutnim oznakama. 
+  1. Potrebno je definisati barem vrstu „Neizmireno“ povezanu sa odgovarajućom oznakom.
+  2. Preporučuje se kodiranje svih vrsta simetrično sa postojećim oznakama.
   
    
 </details>
 
 <details>
 
-  <summary>Tablica TIPOVI EFEKATA Click to expand!</summary>
+  <summary>Tabela TIPOVI EFEKATA Click to expand!</summary>
  
- ##  Potrebno za upravljanje portfeljem  
+ ## Potrebno za upravljanje portfeljem
 
-  1. Definirati barem vrstu "Bankovna uplata"
-  2. Povezati numeriranje kao u sljedećoj točki
-  3. Povezati račun s plana računa (npr. Aktivni portfelj efekekata) za knjiženje izdavanja.
+  1. Definisati barem vrstu „Bankovna uplata“.
+  2. Povezati numeraciju kao u sledećoj tački.
+  3. Povezati sa kontnim planom (npr. Aktivni portfelj efekata) za knjiženje izdavanja.
 
    
 </details>
 
 <details>
 
-  <summary> NUMERACIJA EFEKATA  Click to expand!</summary>
+  <summary>NUMERACIJA EFEKATA Click to expand!</summary>
  
- ## Potrebno za upravljanje portfeljem  
+ ## Potrebno za upravljanje portfeljem
 
-  1. Prevedere la tipologia "Bills numeration"
-  2. Konfigurirati detalje kao kod drugih standardnih numeracija.
+  1. Konfigurisati „Numeraciju računa“.
+  2. Konfigurisati detalje kao kod drugih standardnih numeracija.
   3. Preporučuje se godišnja učestalost.
 
    
@@ -424,52 +421,51 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
 <details>
 
-  <summary> NUMERIRANJE RAZLIČITIH PREZENTACIJA Click to expand!</summary>
+  <summary>NUMERACIJA RAZLIČITIH PREZENTACIJA Click to expand!</summary>
  
  ## Potrebno za upravljanje portfeljem
 
-  1. Navedite tipologiju "Numeracija računa"
-  2. Konfigurirajte detalj kao i ostale standardne numeratore 
-  3. Preporučeno godišnje 
+  1. Konfigurisati „Numeraciju računa“.
+  2. Konfigurisati detalje kao kod ostalih standardnih numeracija.
+  3. Preporučuje se godišnja učestalost.
 
    
 </details>
 
 <details>
 
-  <summary> Tablica VRSTE PREZENTACIJE POPIS EFEKATA Click to expand!</summary>
+  <summary>Tabela TIPOVI PREZENTACIJE POPISA EFEKATA Click to expand!</summary>
  
  ## Potrebno za upravljanje portfeljem
 
-  1. Definirati barem jednu tipologiju zadane numeracije.
-  2. Preporučuje se predvidjeti različite vrste ovisno o banci prezentacije povezivanjem podržanih računa za prezentaciju i posebnih tekućih računa za specifične uplate.
-  
+  1. Definisati barem jednu vrstu podrazumevane numeracije.
+  2. Preporučuje se predvideti različite vrste u zavisnosti od banke prezentacije, povezivanjem odgovarajućih konta za prezentaciju i posebnih tekućih računa za određene uplate.
 
    
 </details>
 
-### Upravljanje dobavljačkim doznakama
+### Upravljanje doznakama dobavljačima
 
 <details>
 
-  <summary> NUMERIRANJE PLAĆANJA DOBAVLJAČIMA Click to expand!</summary>
+  <summary>NUMERACIJA PLAĆANJA DOBAVLJAČIMA Click to expand!</summary>
  
  ## Potrebno za upravljanje odvojenim uplatama
 
-  1. Predvidjeti tipologiju "Numeracija računa za plaćanje"
-  2. Konfigurirati detalje kao i ostale standardne numeratore
-  3. Preporučuje se godišnja frekvencija
+  1. Konfigurisati „Numeraciju računa za plaćanje“.
+  2. Konfigurisati detalje kao kod ostalih standardnih numeracija.
+  3. Preporučuje se godišnja učestalost.
 
    
 </details>
 
 <details>
 
-  <summary> Tablica TIPOVI PLAĆANJA  Click to expand!</summary>
+  <summary>Tabela TIPOVI PLAĆANJA Click to expand!</summary>
  
- ## Provjera: već upravljano u općim tablicama
+ ## Provera: već se upravlja u opštim tabelama
 
-  1. Provjeriti postoji li odgovarajući tip (npr. "Uplata") koji će se pozvati
+  1. Proveriti da li postoji odgovarajući tip (npr. „Uplata“) koji će se koristiti.
 
    
 </details>
@@ -478,25 +474,25 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
 <details>
 
-  <summary> Tablica TIPOVI AVANSA  Click to expand!</summary>
+  <summary>Tabela TIPOVI AVANSA Click to expand!</summary>
  
  ## Potrebno za upravljanje avansima
 
-  1. Predvidjeti tipologiju za svaku povezanu banku
-  2. Povezati numeraciju iz sljedeće točke
+  1. Konfigurisati za svaku povezanu banku.
+  2. Povezati numeraciju iz sledeće tačke.
   
   
 </details>
 
 <details>
 
-  <summary> NUMERACIJA ODVOJENIH AVANSA ZA FAKTURE Click to expand!</summary>
+  <summary>NUMERACIJA ODVOJENIH AVANSA ZA FAKTURE Click to expand!</summary>
  
  ## Potrebno za upravljanje odvojenim avansima
 
-  1. Predvidjeti tipologiju "Zadano"
-  2. Konfigurirati detalje kao i ostale standardne numeratore
-  3. Preporučuje se godišnja frekvencija
+  1. Konfigurisati „Podrazumevano“.
+  2. Konfigurisati detalje kao kod ostalih standardnih numeracija.
+  3. Preporučuje se godišnja učestalost.
 
    
 </details>
@@ -505,72 +501,72 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
 <details>
 
-  <summary> Tablica TIPOVI NOVČANOG TOKA  Click to expand!</summary>
+  <summary>Tabela TIPOVI NOVČANOG TOKA Click to expand!</summary>
  
  ## Potrebno za upravljanje novčanim tokom
 
-  1. Predvidjeti tipologiju za svaki tip novčanog toka s odgovarajućom oznakom
-  2. Preporučuje se omogućiti sve, jer se prilikom pokretanja izračuna odabiru samo oni od interesa, a izbor se pamti.
+  1. Konfigurisati svaki tip novčanog toka sa odgovarajućom oznakom.
+  2. Preporučuje se omogućiti sve, jer se prilikom pokretanja obračuna biraju samo oni koji su od interesa, a izbor se pamti.
   
   
 </details>
 
 <details>
 
-  <summary> Tablica TIPOVI FINANCIJSKIH RAČUNA Click to expand!</summary>
+  <summary>Tabela TIPOVI FINANSIJSKIH RAČUNA Click to expand!</summary>
  
  ## Potrebno za upravljanje novčanim tokom
 
-  1. Unesite redovite tekuće račune.
-  2. Nije potrebno unijeti potporne račune za SBF ako se omogući parametar čitanja prilikom pokretanja izračuna.
+  1. Uneti redovne tekuće račune.
+  2. Nije potrebno unositi dodatne račune za SBF ako se omogući parametar čitanja prilikom pokretanja obračuna.
   
   
 </details>
 
 <details>
 
-  <summary> Tablica VRSTE DOSPIJEĆA  Click to expand!</summary>
+  <summary> Tabela VRSTE DOSPEĆA Click to expand!</summary>
  
- ## Opcionala za upravljanje izvanbilančnih dospijeća u novčanom toku
+ ## Opcije za upravljanje vanbilansnim dospećima u novčanom toku
 
-  1. Unesite željene vrste (npr. Plaće).
+  1. Unesite željene vrste (npr. Plate).
   
   
 </details>
 
-Provjerite u različitim tablicama dokumenata (Narudžbenice, otpremnice, itd.) koje vrste želite uključiti u izračun novčanog toka.
+Proverite u različitim tabelama dokumenata (Narudžbenice, otpremnice itd.) koje vrste želite uključiti u obračun novčanog toka.
 
-## TABLICE PRODAJE
+## TABELE PRODAJE
 
 ### Ponude
 
 <details>
 
-  <summary> PARAMETRI  Click to expand!</summary>
+  <summary> PARAMETRI Click to expand!</summary>
 
-  Definirati opće [parametre](/docs/configurations/parameters/sales/offer-parameters) koje će se koristiti u ponudama.
+  Definisati opšte [parametre](/docs/configurations/parameters/sales/offer-parameters) koji će se koristiti u ponudama.
 
 </details>
 
-### Narudžbe
+### Narudžbine
 
 <details>
 
-  <summary> Tablica VRSTE NARUDŽBI  Click to expand!</summary>
+  <summary> Tabela VRSTE NARUDŽBINA Click to expand!</summary>
 
-  Unesite [vrste narudžbi](/docs/configurations/tables/sales/sales-order-types) koje se koriste; obvezni podaci su: *Vrsta*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
-  Kriteriji za kreiranje različitih vrsta mogu biti različiti, na primjer:        
-  - kreiranje vrste NARUDŽBA KUPCA HRVATSKA, NARUDŽBA KUPCA EU, NARUDŽBA KUPCA IZVAN EU.       
+  Unesite [vrste narudžbina](/docs/configurations/tables/sales/sales-order-types) koje se koriste; obavezni podaci su: *Vrsta*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
+  Kriterijumi za kreiranje različitih vrsta mogu biti različiti, na primer:        
+  - kreiranje vrste NARUDŽBINA KUPCA SRBIJA, NARUDŽBINA KUPCA EU, NARUDŽBINA KUPCA VAN EU.       
   - kreiranje vrste prema [Vrsti otpremnice](/docs/configurations/tables/sales/delivery-notes-type) ili [Vrsti fakture](/docs/configurations/tables/sales/invoices-type) koja se kreira.     
-  - kreiranje vrste prema skladištu koje se premješta.
+  - kreiranje vrste prema skladištu koje se premešta.
 
 </details>
 
 <details>
 
-  <summary> PARAMETRI  Click to expand!</summary>
+  <summary> PARAMETRI Click to expand!</summary>
 
-  Definirati opće [parametre](/docs/configurations/parameters/sales/sales-orders-parameters) koje ćeš koristiti u narudžbama kupca. 
+  Definisati opšte [parametre](/docs/configurations/parameters/sales/sales-orders-parameters) koji će se koristiti u narudžbinama kupca. 
 
 </details>
 
@@ -578,114 +574,110 @@ Provjerite u različitim tablicama dokumenata (Narudžbenice, otpremnice, itd.) 
 
 <details>
 
-  <summary> Tablica VRSTE OTPREMNICA Click to expand!</summary>
+  <summary> Tabela VRSTE OTPREMNICA Click to expand!</summary>
 
-  Unesite [vrste otpremnica](/docs/configurations/tables/sales/delivery-notes-type) koje se koriste; obvezni podaci su: *Vrsta*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
-  Kriteriji za kreiranje različitih vrsta mogu biti različiti, na primjer:      
-  - kreiranje vrste otpremnice KUPCI HRVATSKA, KUPCI EU, KUPCI IZVAN EU.       
-  - kreiranje vrste na temelju [Vrste fakture](/docs/configurations/tables/sales/invoices-type) koju treba kreirati.    
-  - kreiranje vrste na temelju skladišta kojim treba upravljati.
+  Unesite [vrste otpremnica](/docs/configurations/tables/sales/delivery-notes-type) koje se koriste; obavezni podaci su: *Vrsta*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
+  Kriterijumi za kreiranje različitih vrsta mogu biti različiti, na primer:      
+  - kreiranje vrste otpremnice KUPCI SRBIJA, KUPCI EU, KUPCI VAN EU.       
+  - kreiranje vrste na osnovu [Vrste fakture](/docs/configurations/tables/sales/invoices-type) koju treba kreirati.    
+  - kreiranje vrste na osnovu skladišta kojim treba upravljati.
   
 </details>
 
 <details>
 
-  <summary> PARAMETRI  Click to expand!</summary>
+  <summary> PARAMETRI Click to expand!</summary>
 
-  Definirati opće [parametri](/docs/configurations/parameters/sales/dn-parameters) općeniti za upotrebu u otpremnicama.
+  Definisati opšte [parametre](/docs/configurations/parameters/sales/dn-parameters) za korišćenje u otpremnicama.
   
 </details>
 
-### iZLAZNI RAČUNI
+### IZLAZNE FAKTURE
 
 <details>
 
-  <summary> Tablica VRSTE IZLAZNIH RAČUNA Click to expand!</summary>
+  <summary> Tabela VRSTE IZLAZNIH FAKTURA Click to expand!</summary>
 
-  Unijeti [vrste faktura](/docs/configurations/tables/sales/invoices-type) koje se koriste; obavezni podaci su: *Vrsta*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
-  Kriteriji za kreiranje različitih vrsta mogu biti različiti, na primjer:      
-  - kreiranje vrste FAKTURA KUPCI HRVATSKA, FAKTURA KUPCI EU, FAKTURA KUPCI IZVAN EU.     
-  - kreiranje vrste na temelju Prirode fakture (faktura, kreditna nota itd.)  
-  - kreiranje vrste na temelju Skladišta kojim treba upravljati.  
-  
-</details>
-
-<details>
-
-  <summary> PARAMETRI  Click to expand!</summary>
-
-  Definirati opće [parametre](/docs/configurations/parameters/sales/sales-invoices-parameters) za korištenje u izlaznim računima.
-
-</details>
-  
-
-## TABLICE NABAVE 
-
-### Narudžbe
-
-<details>
-
-  <summary> Tablica TIPOVI NARUDŽBE Click to expand!</summary>
-
-  Unesi [vrste narudžbi](/docs/configurations/tables/purchase/purchase-orders-type) koje se koriste; obavezni podaci su: *Tip*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
-  Kriteriji za kreiranje različitih vrsta mogu biti različiti, na primjer:      
-  - izrada tipologije NARUDŽBA DOBAVLJAČA HRVATSKA, NARUDŽBA DOBAVLJAČA EU, NARUDŽBA DOBAVLJAČA IZVAN EU.       
-  - izrada tipologije na temelju [Tip primke](/docs/configurations/tables/purchase/purchase-delivery-notes-type) ili [Tip fakture](/docs/configurations/tables/purchase/purchase-invoices-type) koja se treba izraditi.    
-  - izrada tipologije na temelju Skladišta koje se treba premjestiti.
-
-</details>
-
-<details>
-
-  <summary> PARAMETRI  Click to expand!</summary>
-
-  Definirati opće [parametre](/docs/configurations/parameters/purchase/purchase-orders-parameters) koji će se koristiti u narudžbama dobavljača.  
-
-</details>
-
-### Primka
-
-<details>
-
-  <summary> Tablica TIPOVI PRIMKI  Click to expand!</summary>
-
-  Unesi [vrste primki](/docs/configurations/tables/purchase/purchase-delivery-notes-type) koje se koriste; obavezni podaci su: *Tip*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
-  Kriteriji za kreiranje različitih vrsta mogu biti različiti, na primjer:      
-  - izrada tipologije OTPREMNICA DOBAVLJAČA HRVATSKA, OTPREMNICA DOBAVLJAČA EU, OTPREMNICA DOBAVLJAČA IZVAN EU.       
-  - izrada tipologije na temelju [Tip fakture](/docs/configurations/tables/purchase/purchase-invoices-type) koja se treba izraditi.      
-  - izrada tipologije na temelju Skladišta koje se treba premjestiti.
+  Uneti [vrste faktura](/docs/configurations/tables/sales/invoices-type) koje se koriste; obavezni podaci su: *Vrsta*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
+  Kriterijumi za kreiranje različitih vrsta mogu biti različiti, na primer:      
+  - kreiranje vrste FAKTURA KUPCI SRBIJA, FAKTURA KUPCI EU, FAKTURA KUPCI VAN EU.     
+  - kreiranje vrste na osnovu prirode fakture (faktura, kreditna nota itd.).  
+  - kreiranje vrste na osnovu skladišta kojim treba upravljati.  
   
 </details>
 
 <details>
 
-  <summary> PARAMETRI  Click to expand!</summary>
+  <summary> PARAMETRI Click to expand!</summary>
 
-  Definirati opće [parametre](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) koji će se koristiti u primkama.  
-  
+  Definisati opšte [parametre](/docs/configurations/parameters/sales/sales-invoices-parameters) za korišćenje u izlaznim fakturama.
+
 </details>
 
-### Ulazni računi  
+## TABELE NABAVKE
+
+### Narudžbine
 
 <details>
 
-  <summary> Tablica TIPOVI ULAZNIH RAČUNA  Click to expand!</summary>
+  <summary> Tabela TIPOVI NARUDŽBINE Click to expand!</summary>
 
-  Unesi [vrste faktura](/docs/configurations/tables/purchase/purchase-invoices-type) koje se koriste; obavezni podaci su: *Tip*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
-  Kriteriji za kreiranje različitih vrsta mogu biti različiti, na primjer:      
-  - izrada tipologije FAKTURA DOBAVLJAČA HRVATSKA, FAKTURA DOBAVLJAČA EU, FAKTURA DOBAVLJAČA IZVAN EU.     
-  - izrada tipologije na temelju Prirode fakture (faktura, nota zaduženja itd.) 
-  - izrada tipologije na temelju Skladišta koje se treba premjestiti.
+  Unesite [vrste narudžbina](/docs/configurations/tables/purchase/purchase-orders-type) koje se koriste; obavezni podaci su: *Tip*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
+  Kriterijumi za kreiranje različitih vrsta mogu biti različiti, na primer:      
+  - kreiranje tipologije NARUDŽBINA DOBAVLJAČA SRBIJA, NARUDŽBINA DOBAVLJAČA EU, NARUDŽBINA DOBAVLJAČA VAN EU.       
+  - kreiranje tipologije na osnovu [Tipa prijemnice](/docs/configurations/tables/purchase/purchase-delivery-notes-type) ili [Tipa fakture](/docs/configurations/tables/purchase/purchase-invoices-type) koja treba da se kreira.    
+  - kreiranje tipologije na osnovu skladišta koje treba da se premesti.
+
+</details>
+
+<details>
+
+  <summary> PARAMETRI Click to expand!</summary>
+
+  Definisati opšte [parametre](/docs/configurations/parameters/purchase/purchase-orders-parameters) koji će se koristiti u narudžbinama dobavljača.  
+
+</details>
+
+### Prijemnica
+
+<details>
+
+  <summary> Tabela TIPOVI PRIJEMNICA Click to expand!</summary>
+
+  Unesite [vrste prijemnica](/docs/configurations/tables/purchase/purchase-delivery-notes-type) koje se koriste; obavezni podaci su: *Tip*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
+  Kriterijumi za kreiranje različitih vrsta mogu biti različiti, na primer:      
+  - kreiranje tipologije OTPREMNICA DOBAVLJAČA SRBIJA, OTPREMNICA DOBAVLJAČA EU, OTPREMNICA DOBAVLJAČA VAN EU.       
+  - kreiranje tipologije na osnovu [Tipa fakture](/docs/configurations/tables/purchase/purchase-invoices-type) koja treba da se kreira.      
+  - kreiranje tipologije na osnovu skladišta koje treba da se premesti.
   
 </details>
 
 <details>
 
-  <summary> PARAMETRI  Click to expand!</summary>
+  <summary> PARAMETRI Click to expand!</summary>
 
-  Definirati opće [parametre](/docs/configurations/parameters/purchase/purchase-invoices-parameters) koji će se koristiti u ulaznim računima. 
+  Definisati opšte [parametre](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) koji će se koristiti u prijemnicama.  
+  
+</details>
+
+### Ulazne fakture
+
+<details>
+
+  <summary> Tabela TIPOVI ULAZNIH FAKTURA Click to expand!</summary>
+
+  Unesite [vrste faktura](/docs/configurations/tables/purchase/purchase-invoices-type) koje se koriste; obavezni podaci su: *Tip*, *Opis* i *[Numeracija](/docs/configurations/tables/fluentis-numerations)*.     
+  Kriterijumi za kreiranje različitih vrsta mogu biti različiti, na primer:      
+  - kreiranje tipologije FAKTURA DOBAVLJAČA SRBIJA, FAKTURA DOBAVLJAČA EU, FAKTURA DOBAVLJAČA VAN EU.     
+  - kreiranje tipologije na osnovu prirode fakture (faktura, nota zaduženja itd.). 
+  - kreiranje tipologije na osnovu skladišta koje treba da se premesti.
+  
+</details>
+
+<details>
+
+  <summary> PARAMETRI Click to expand!</summary>
+
+  Definisati opšte [parametre](/docs/configurations/parameters/purchase/purchase-invoices-parameters) koji će se koristiti u ulaznim fakturama. 
 
 </details>
-  
-
-

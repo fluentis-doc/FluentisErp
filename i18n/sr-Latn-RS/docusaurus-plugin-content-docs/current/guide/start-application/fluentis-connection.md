@@ -5,16 +5,16 @@ sidebar_position: 1
 
 Za pristup **Fluentisu** možete koristiti:
 
-- Ikonicu na radnoj površini koja predstavlja prečac za pristup aplikaciji  
+- Ikonicu na radnoj površini koja predstavlja prečicu za pristup aplikaciji  
     ili  
-- Izbornik Windows programa s dvostrukim klikom na: **Fluentis.Portal.Wpf**.  
+- Meni Windows programa, dvostrukim klikom na: **Fluentis.Portal.Wpf**.  
 
-Na taj način ćete dobiti pristup prikazu povezanom s pristupnim podacima za pristup bazi podataka.  
+Na taj način ćete dobiti pristup prikazu povezanom sa pristupnim podacima za povezivanje sa bazom podataka.  
 
-**Povezivanje na bazu podataka**
+**Povezivanje sa bazom podataka**
 
-Povezivanje na **Fluentis** uključuje unos podataka: *Korisnik*, *Lozinka*, naziv *Servera* i *Database*.
+Povezivanje sa **Fluentisom** uključuje unos podataka: *Korisnik*, *Lozinka*, naziv *Servera* i *Baze podataka*.
 
-Ako je odabrana opcija za *predefiniranog Korisnika*, ime korisnika i lozinka više neće biti potrebni jer će se podaci automatski preuzeti prilikom pokretanja aplikacije.   
+Ako je odabrana opcija za *podrazumevanog Korisnika*, korisničko ime i lozinka više neće biti potrebni jer će se podaci automatski preuzeti prilikom pokretanja aplikacije.   
 
-Potvrdite pritiskom na tipku Enter ili pritiskom na gumb **Connect**.
+Potvrdite pritiskom na taster Enter ili pritiskom na dugme **Connect**.

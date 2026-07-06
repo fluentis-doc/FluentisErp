@@ -1,5 +1,5 @@
 ---
-title: Fluentis Fast Start - roadmap startup novo operativno okruženje
+title: Fluentis Fast Start - mapa pokretanja okruženja
 sidebar_position: 2
 ---
 
@@ -85,11 +85,11 @@ Tablice uključene u postupak (Stored Procedure Fluentis.SH_CreateNewYear_IT):
  - > Paritet (Incoterms - uvjeti isporuke)
  - > Pošiljke (tipovi)
  - > Modeli reklasifikacije (kontroling)
- - > Povezivanje modela reklasifikacije za CEE bilancu s detaljima plana računa  
+ - > Povezivanje modela reklasifikacije za CEE bilancu s detaljima kontnog plana 
  - > Radno vrijeme (upravljanje zaposlenicima)
- - > Ozbiljnost (CRM tiket)
- - > SLA (CRM tiket)
- - > Tipovi CRM tiketa (i numeracija)
+ - > Ozbiljnost (CRM *tiket*)
+ - > SLA (CRM *tiket*)
+ - > Tipovi CRM *tiketa* (i numeracija)
  - > Verzije osnovne liste
  - > Klase artikala
  - > Skladišta
@@ -115,7 +115,7 @@ U slučaju da se Fast Start ne pokrene, potrebno je ručno popuniti sljedeće ta
  ## Tablica potrebna za sve dokumente i unos šifarnika o klijentima i dobavljačima
 
   1. Ispuniti kod (može biti i interni, ali se preporučuje međunarodni) i opis. 
-  2. Posebno provjeriti polje COD ISO EU, jer ako nedostaje, neće se spremiti predkod porezne brojke, paziti na posebne slučajeve: 
+  2. Posebno provjeriti polje COD ISO EU, jer ako nedostaje, neće se spremiti šifra porezne brojke, paziti na posebne slučajeve: 
      * Grčka GR -> ISO = 'EL'
      * Osim u posebnim slučajevima, može se izvršiti ažuriranje za popunjavanje ISO EU = COD ISO (stari bazu podataka prije brzog početka).
 
@@ -130,10 +130,10 @@ U slučaju da se Fast Start ne pokrene, potrebno je ručno popuniti sljedeće ta
   1. Provjeriti prisutnost barem glavnih valuta, osobito eura.
   2. Oznaka za *preuzimanje promjene* za omogućavanje unosa stope za valutu.
   3. Ostala polja
-     * Decimale, savjetuju se posešavanje na 2
+     * Decimale, savjetuje se podešavanje na 2 mjesta
      * Euro - označiti samo za EUR
 
-    4. Opcionalna donja mreža, ali korisna za automatizaciju evidentiranja razlika u tečaju postavljanjem odgovarajućih knjigovodstvenih računa. 
+    4. Opcionalna donja mreža, ali korisna za automatizaciju evidentiranja razlika u tečaju postavljanjem odgovarajućih knjigovodstvenih konta. 
 
 
 </details>
@@ -202,7 +202,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
   1. Paziti na popunjavanje polja Kod Javne uprave za izuzeće / isključenje / neoporezivost kod elektroničkih računa.
   2. Provjeriti polje Uključeno u Poreznu prijavu potrebno za tromjesečno izvješćivanje o obračunu PDV-a.
   3. Provjeriti gdje je potrebno polje PDV 0 u LG koje omogućava stavke s PDV-om nula.
-  4. Provjeriti gdje je potrebno polje PDV za automatske kalkulacije (slučajevi obrnute naplate s neodbitnošću na kupnju).
+  4. Provjeriti gdje je potrebno polje PDV za automatske kalkulacije (slučajevi obrnute naplate bez odbitka na nabavu).
   5. Provjeriti polje Izuzmi iz automatskih kalkulacija (slučajevi miješane obrnute naplate - dio nije u obrnutom).
     
 
@@ -215,9 +215,9 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  ## Potrebno za računovodstvo i obračun PDV-a
 
   1. Predvidjeti raspodjelu između Italije, EU i izvan EU, preporučuje se razlikovanje između dobara i usluga unutar EU u dokumentima kodova TD17 - TD18 za vlastite fakture koje se šalju SDI-u (preporučuje se raspodjela i za izvan EU).
-  2. Za registre kupovine u reverse charge (Hrvatska i EU) predvidjeti odgovarajuće registre na strani prodaje za prijenos, ne dijeliti registar prijenosa s prodajom unutar EU (na primjer).
-  3. Preporučljivo je predvidjeti poseban registar za obračun PDV-a (radi lakšeg konačnog ispisa i ponovnog ispisa u slučaju odblokiranja samo ovog dijela).
-  4. Planirati (i potom provjeriti) ispravnu povezanost između vrste fakture, numeracije vrste fakture, računovodstvene uzročnosti i PDV registra kako bi se izbjeglo stvaranje rupa u protokolima ili sukoba. Uzročnosti na strani prodaje obično imaju opciju nametanja protokola jednakog broju fakture.
+  2. Za nabavu u režimu *reverse charge* (Hrvatska i EU) predvidjeti odgovarajuće registre na strani prodaje za prijenos, ne dijeliti registar prijenosa s prodajom unutar EU (na primjer).
+  3. Preporučljivo je predvidjeti poseban registar za obračun PDV-a (radi lakšeg konačnog ispisa i ponovnog ispisa u slučaju uklanjanja blokiranja samo ovog dijela).
+  4. Planirati (i potom provjeriti) ispravnu povezanost između vrste fakture, numeracije vrste fakture, predložaka knjiženja i PDV registra kako bi se izbjeglo stvaranje rupa u protokolima ili sukoba. Predlošci knjiženja na strani prodaje obično imaju opciju nametanja protokola jednakog broju fakture.
   5. Provjeriti je li unesena tekuća godina i eventualne prethodne godine ako je potrebno, potom će se godina automatski kreirati pomoću alata za generiranje brojača za novu godinu.
     
 
@@ -230,9 +230,9 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  
  ## Potrebno za računovodstvo
 
-  1. Predvidjeti barem jednu numeraciju za konačne zapise (preporuča se korištenje koda 1, opis: General ledger posting numeration).
+  1. Predvidjeti barem jednu numeraciju za zapise (preporučuje se korištenje koda 1, opis: *General ledger posting numeration*).
   2. Planirati i postaviti politiku numeratora (Dnevno ili Godišnje) i ostale parametre numeratora prema općim uputama o numeratorima.
-  3. Preporučuje se predvidjeti i numerator za privremene zapise (kod 2, opis: General ledger posting provisory numeration).
+  3. Preporučuje se predvidjeti i numerator za privremene zapise (kod 2, opis: *General ledger posting provisory numeration*).
     
 
 </details>
@@ -244,11 +244,11 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  ## Potrebno za kontni plan, računovodstvo i ispis bilance
 
   1. Predvidjeti barem 4 tipologije: Aktivu, Pasivu, Troškove i Prihode za bilancu i početnu bilancu.
-  2. Planirati i postaviti tipove računa za Kupce i Dobavljače (preporuča se podjela na Hrvatsku, EU i izvan EU), paziti da se označi i Aktiva/Pasiva, i Kupac/Dobavljač.
-  3. Preporučuje se predvidjeti i tip za Banke za korištenje putem osnovnih podataka, inače nije moguće upravljati nekim funkcijama kao što je portfelj itd. Ne preporučuje se vršiti bankovne zapise s računom koji nije tip osnovnih podataka banke.
-  4. Preporučuje se predvidjeti tip računa za troškove i prihode koji se ispravljaju s odgođenim prihodima i rashodima, te postaviti zastavicu za uslugu uz trošak/prihod.
+  2. Planirati i postaviti tipove konta za Kupce i Dobavljače (preporučuje se podjela na Hrvatsku, EU i izvan EU), paziti da se označi i Aktiva/Pasiva, i Kupac/Dobavljač.
+  3. Preporučuje se predvidjeti i tip za Banke za korištenje putem osnovnih podataka, inače nije moguće upravljati nekim funkcijama kao što je portfelj itd. Ne preporučuje se vršiti bankovne zapise s kontom koji nije tip osnovnih podataka banke.
+  4. Preporučuje se predvidjeti tip konta za troškove i prihode koji se ispravljaju s odgođenim prihodima i rashodima, te postaviti zastavicu za uslugu uz trošak/prihod.
   5. Potrebno je stvoriti tip za Agente ako se želi aktivirati upravljanje provizijama (zastavica na pasivi i Agent).
-  6. Neobavezno je stvoriti tip Konti izvanbilančnih stavki (s zastavicom za izvanbilančne stavke) za upravljanje zapisima izvan bilance.
+  6. Neobavezno je stvoriti tip konta za izvanbilančne stavke (s zastavicom za izvanbilančne stavke) za upravljanje zapisima izvan bilance.
     
 
 </details>
@@ -262,10 +262,10 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
   1. Osigurati u mreži grupa barem 4 vrste Aktiva, Pasiva, Troškova i Prihoda.
   2. Planirati podgrupe (broj podrazina nije ograničen) i ispuniti polje Priroda grupe.
-  3. Definirati u donjoj mreži, za svaku grupu posljednje razine detalja, račune / podračune detalja. PAŽNJA: Za svaku grupu mora postojati barem jedan račun gdje će se zatim unijeti njezini podračuni.
-  4. NE unosi račune šifarnika (Kupci, Dobavljači, Agenti i BANKE) ovdje, već samo putem KONTAKATA.
-  5. Osigurati sve potrebne račune (Bilanca stanja na kraju i početku godine, Račun dobiti i gubitka na kraju godine, Dobitak i gubitak prethodne godine, Rokovi i akontacije - s posebnim vrstama računa).
-  6. Po želji, stvoriti grupu Konti d'ordine za upravljanje izvanbilančnim zapisa
+  3. Definirati u donjoj mreži, za svaku grupu posljednje razine detalja, konta / podkonta. PAŽNJA: Za svaku grupu mora postojati barem jedan konto gdje će se zatim unijeti njezina podkonta.
+  4. NE unosi konta šifarnika (Kupci, Dobavljači, Agenti i BANKE) ovdje, već samo putem KONTAKATA.
+  5. Osigurati sva potrebna konta (Bilanca stanja na kraju i početku godine, Račun dobiti i gubitka na kraju godine, Dobitak i gubitak prethodne godine, Rokovi i akontacije - s posebnim vrstama konta).
+  6. Po želji, stvoriti grupu konta za upravljanje izvanbilančnim zapisa
     
 
 </details>
@@ -279,10 +279,10 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
   1. Unesite trenutnu godinu i, ako je potrebno, prethodne godine. Nakon toga, godina će automatski biti stvorena od strane alata za generiranje brojača za novu godinu.
   2. Popunite tri raspona datuma za upravljanje poslovanjem.
-  3. Popunite, ako su dostupni, i razloge za zatvaranje i otvaranje računa, ili ih unesite kasnije.
+  3. Popunite, ako su dostupni, i razloge za zatvaranje i otvaranje konta, ili ih unesite kasnije.
   4. Popunite periodičnost PDV-a.
-  5. Unesite povezanost između glava knjige vezane uz klijente i dobavljače, banke i agente te njihove odgovarajuće vrste računa.
-  6. Definirajte račune za automatske postupke u drugoj kartici.
+  5. Unesite povezanost između glava knjige vezane uz klijente i dobavljače, banke i agente te njihove odgovarajuće vrste konta.
+  6. Definirajte konta za automatske postupke u drugoj kartici.
  
 
 </details>
@@ -293,11 +293,11 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  
  ## Potrebno za računovodstvo
 
-  1. Predvidjeti predloške povezane s glavnim vrstama kupoprodajnih računa i povezati ih s odgovarajućim PDV evidencijama (potreban je predložak s općim računima za kupca/dobavljača i troškove/prihode, posebni konto za PDV na dug i potraživanje). Obavezno obratiti pažnju na vrstu iznosa u redovima.
+  1. Predvidjeti predloške povezane s glavnim vrstama konta i povezati ih s odgovarajućim PDV evidencijama (potreban je predložak s općim kontima za kupca/dobavljača i troškove/prihode, posebni konto za PDV na dug i potraživanje). Obavezno obratiti pažnju na vrstu iznosa u redovima.
   2. Predvidjeti i predloške prijenosa za obrnuti teret i EU.
   3. Predvidjeti predloške za plaćanja i uplate s zatvaranjem stavki (potrebno i za pojedinačne uplate itd.). Obratiti pažnju na predložak i vrstu poreza u redovima.
   4. Predvidjeti predloške za faze aktivnog portfelja (izdavanje efekata, prezentacija i akreditacija). Za prezentaciju i akreditaciju nije potreban predložak, dok je za izdavanje potreban predložak Efekti u portfelju kupca.
-  5. Predvidjeti predloške za dobropise s invertiranim predloškom znakova. Za obrnuti teret, invertirati prvu i podijeliti prijenos s opcijom automatskog obrta znakova.
+  5. Predvidjeti predloške za odobrenja s invertiranim predloškom znakova. Za obrnuto terećenje, invertirati prvu i podijeliti prijenos s opcijom automatskog obrta znakova.
   6. Predvidjeti predloške za primatelje (s predloškom) i za plaćanje primatelja (bez predloška).
   7. Predvidjeti predloške za otvaranje i zatvaranje, rate i raspite, amortizacije (bez predloška).
   8. Preporučuje se predvidjeti dodatne predloške knjiženja i opći predložak knjiženja bez predloška.
@@ -333,11 +333,11 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
 <details>
 
-  <summary>Tablica PREDKOD OSNOVNIH SREDSTAVA Click to expand!</summary>
+  <summary>Tablica ŠIFRE OSNOVNIH SREDSTAVA Click to expand!</summary>
  
  ## Opcionalno
 
-  1. Planirati politiku upravljanja numeracijom, jednostavnu ili s predkodom.
+  1. Planirati politiku upravljanja numeracijom, jednostavnu ili s *predšifrom*.
  
     
 
@@ -363,7 +363,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  ## Potrebno za upravljanje primateljima  
 
   1. Definirati potrebne vrste za primatelje (1040) s 20% zadržavanja, za agente i za paušalne obveznike (0% na 100%).
-  2. Povezati uzroke za knjiženje naknade.
+  2. Povezati predloške za knjiženje naknade.
   3. Povezati kategoriju agenta u vrstu rezerviranu za agente.
    
 </details>
@@ -404,7 +404,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
   1. Definirati barem vrstu "Bankovna uplata"
   2. Povezati numeriranje kao u sljedećoj točki
-  3. Povezati račun s plana računa (npr. Aktivni portfelj efekekata) za knjiženje izdavanja.
+  3. Povezati s kontnim planom (npr. Aktivni portfelj efekata) za knjiženje izdavanja.
 
    
 </details>
@@ -415,7 +415,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  
  ## Potrebno za upravljanje portfeljem  
 
-  1. Prevedere la tipologia "Bills numeration"
+  1. Konfigurirati „Numeriranje računa”.
   2. Konfigurirati detalje kao kod drugih standardnih numeracija.
   3. Preporučuje se godišnja učestalost.
 
@@ -428,7 +428,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  
  ## Potrebno za upravljanje portfeljem
 
-  1. Navedite tipologiju "Numeracija računa"
+  1. Konfigurirati "Numeracija računa"
   2. Konfigurirajte detalj kao i ostale standardne numeratore 
   3. Preporučeno godišnje 
 
@@ -442,7 +442,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  ## Potrebno za upravljanje portfeljem
 
   1. Definirati barem jednu tipologiju zadane numeracije.
-  2. Preporučuje se predvidjeti različite vrste ovisno o banci prezentacije povezivanjem podržanih računa za prezentaciju i posebnih tekućih računa za specifične uplate.
+  2. Preporučuje se predvidjeti različite vrste ovisno o banci prezentacije povezivanjem podržanih konta za prezentaciju i posebnih tekućih računa za specifične uplate.
   
 
    
@@ -456,7 +456,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  
  ## Potrebno za upravljanje odvojenim uplatama
 
-  1. Predvidjeti tipologiju "Numeracija računa za plaćanje"
+  1. Konfigurirati "Numeracija računa za plaćanje"
   2. Konfigurirati detalje kao i ostale standardne numeratore
   3. Preporučuje se godišnja frekvencija
 
@@ -482,7 +482,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  
  ## Potrebno za upravljanje avansima
 
-  1. Predvidjeti tipologiju za svaku povezanu banku
+  1. Konfigurirati za svaku povezanu banku
   2. Povezati numeraciju iz sljedeće točke
   
   
@@ -494,7 +494,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  
  ## Potrebno za upravljanje odvojenim avansima
 
-  1. Predvidjeti tipologiju "Zadano"
+  1. Konfigurirati "Zadano"
   2. Konfigurirati detalje kao i ostale standardne numeratore
   3. Preporučuje se godišnja frekvencija
 
@@ -509,7 +509,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  
  ## Potrebno za upravljanje novčanim tokom
 
-  1. Predvidjeti tipologiju za svaki tip novčanog toka s odgovarajućom oznakom
+  1. Konfigurirati za svaki tip novčanog toka s odgovarajućom oznakom
   2. Preporučuje se omogućiti sve, jer se prilikom pokretanja izračuna odabiru samo oni od interesa, a izbor se pamti.
   
   
@@ -522,7 +522,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
  ## Potrebno za upravljanje novčanim tokom
 
   1. Unesite redovite tekuće račune.
-  2. Nije potrebno unijeti potporne račune za SBF ako se omogući parametar čitanja prilikom pokretanja izračuna.
+  2. Nije potrebno unijeti dodatne račune za SBF ako se omogući parametar čitanja prilikom pokretanja izračuna.
   
   
 </details>
@@ -531,7 +531,7 @@ Paziti na povezivanje s tipovima efekata (donja desna mreža), inače neće pron
 
   <summary> Tablica VRSTE DOSPIJEĆA  Click to expand!</summary>
  
- ## Opcionala za upravljanje izvanbilančnih dospijeća u novčanom toku
+ ## Opcije za upravljanje izvanbilančnih dospijeća u novčanom tijeku
 
   1. Unesite željene vrste (npr. Plaće).
   
@@ -596,7 +596,7 @@ Provjerite u različitim tablicama dokumenata (Narudžbenice, otpremnice, itd.) 
   
 </details>
 
-### iZLAZNI RAČUNI
+### IZLAZNI RAČUNI
 
 <details>
 
