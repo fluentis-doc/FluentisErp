@@ -1,32 +1,33 @@
 ---
-title: Navigacija i prečaci 
+title: Navigacija i prečice
 sidebar_position: 8
 ---
 
-### Navigiranje kroz obrasce
+### Navigacija kroz obrasce
 
-- pomaknite se na sljedeće polje pomoću tipke **TAB**, i u obrascima i u mrežama; na isti način se pomaknite unatrag pomoću Shift+TAB;
+- pređite na sledeće polje pomoću tastera **TAB**, kako u obrascima tako i u tabelama; na isti način se vratite unazad pomoću Shift+TAB;
 
-- u mrežama se također možete kretati prema naprijed pomoću tipke **Slanje**, u poljima obrazaca, međutim, slanje se interpretira kao povratak u novi redak unutar istog polja, ako je to dopušteno;
+- u tabelama se takođe možete kretati unapred pomoću tastera **Enter**, dok se u poljima obrazaca to, međutim, tumači kao prelazak u novi red unutar istog polja, ako je to dozvoljeno;
 
-- na završetku retka, ovaj se zapis sprema i kursor se pozicionira na novi zapis; bez dovršetka unosa do kraja, dopušteno je spremiti unos prelazeći na sljedeći/prethodni redak s *strelicama* ![](/img/neutral/common/updown.png);
+- na kraju reda, ovaj zapis se čuva i kursor se pozicionira na novi zapis; bez dovršavanja unosa do kraja, dozvoljeno je sačuvati unos prelaskom na sledeći/prethodni red pomoću *strelica* ![](/img/neutral/common/updown.png);
 
-- u poljima za datum, tipka **F4** tvara panel *kalendara* unutar kojeg je moguće kretati se *strelicama* i odabrati sa *slanjem*. *Skrolanje* mišem pomiče dan, mjesec ili godinu, ovisno o odabranom polju;
+- u poljima za datum, taster **F4** otvara panel *kalendara* unutar kojeg je moguće kretati se pomoću *strelica* i odabrati pomoću tastera *Enter*. *Scroll* mišem pomera dan, mesec ili godinu, u zavisnosti od odabranog polja;
 
-- također *strelicama* ![](/img/neutral/common/updown.png) na tipkovnici možete se kretati unutar liste (na primjer, u combo-boxu);
+- takođe se pomoću *strelica* ![](/img/neutral/common/updown.png) na tastaturi možete kretati unutar liste (na primer, u padajućem meniju);
 
-- u poljima za označavanje, označavanje se postavlja/uklanja **razmaknicom**;
+- u poljima za označavanje, oznaka se postavlja/uklanja pomoću **razmaknice**;
 
-- plava polja obično označavaju prisutnost pretraživačkog filtera  (**Pomoćno polje**) ili poveznicu na referentnu tablicu;
+- plava polja obično označavaju prisustvo filtera za pretragu (**Pomoćno polje**) ili vezu sa referentnom tabelom;
 
-- i *padajući izbornici*, ako su povezani s tablicama koje imaju korisničko sučelje, uvijek predviđaju mogućnost otvaranja pretraživačkog filtera ili prečaca na samu tablicu. Padajući izbornici se otvaraju tipkom **F4**: unosom znakova automatski se otvara izbornik primjenjujući filter na zapise prema unesenim slovima. U padajućem izborniku prvi red, identificiran ikonom lijevka u zaglavlju retka, omogućuje filtriranje zapisa prikazanih u samom izborniku, polje po polje. Također će biti moguće kliknuti na zaglavlje pojedine kolone kako bi se promijenio redoslijed zapisa u listi. U padajućim izbornicima prisutnim u formama za pretragu ili ispis, obično je dopušten višestruki odabir (držeći pritisnutu tipku **Ctrl** ili **Shift**).
+- i *padajući meniji*, ako su povezani sa tabelama koje imaju korisnički interfejs, uvek omogućavaju otvaranje filtera za pretragu ili prečice do same tabele. Padajući meniji se otvaraju tasterom **F4**: unosom znakova automatski se otvara meni primenjujući filter na zapise prema unetim slovima. U padajućem meniju prvi red, označen ikonom levka u zaglavlju reda, omogućava filtriranje zapisa prikazanih u samom meniju, polje po polje. Takođe je moguće kliknuti na zaglavlje pojedinačne kolone kako bi se promenio redosled zapisa na listi. U padajućim menijima prisutnim u obrascima za pretragu ili štampanje, obično je dozvoljen višestruki odabir (držanjem pritisnutog tastera **Ctrl** ili **Shift**).
 
 
-Primjeri dostupnih tipki u izbornicima, ovisno o tipu polja u kojem se nalazite:  
-- **Pomoć** s F9 (ili dvostruki klik): otvara se prozor Pomoć;
-- **Otvori obrazac** s Ctrl+F9: pristupa se referentnoj tablici u modu za uređivanje;   
-- **Otvori** s Alt+Strelica dolje: otvara padajući izbornik;    
-- **Ažuriraj** sa Shift+F9: se ažurira popis zapisa kada ste u padajućem izborniku. Različite druge poveznice na srodne obrasce, kao u primjeru na slici ispod.   
+Primeri dostupnih tastera u menijima, u zavisnosti od tipa polja u kojem se nalazite:  
+
+- **Pomoć** pomoću F9 (ili dvostrukim klikom): otvara se prozor Pomoć;
+- **Otvori obrazac** pomoću Ctrl+F9: pristupa se referentnoj tabeli u režimu za uređivanje;
+- **Otvori** pomoću Alt+Strelica dole: otvara padajući meni;
+- **Ažuriraj** pomoću Shift+F9: ažurira se lista zapisa kada se nalazite u padajućem meniju. Različite druge veze sa povezanim obrascima, kao u primeru na slici ispod.
 
 <p align="center">
 
@@ -34,19 +35,19 @@ Primjeri dostupnih tipki u izbornicima, ovisno o tipu polja u kojem se nalazite:
 
 </p>
 
-### Navigacija između više obrasca  
+### Navigacija između više obrazaca
 
-Svaki obrazac se otvara preko cijelog ekrana, s oznakom koja omogućuje prelazak s jedne na drugu.   
+Svaki obrazac se otvara preko celog ekrana, sa oznakom koja omogućava prelazak sa jednog na drugi.
 
-1. *Držanjem CTRL + +Tab* otvorit će se panel gdje možete odabrati na koju masku prebaciti fokus.   
+1. *Držanjem CTRL + Tab* otvoriće se panel gde možete odabrati na koji obrazac želite da prebacite fokus.
 
 <p align="center">
 
 ![](/img/it-it/guide/operations-with-data/navigation-and-accelerators/image04.png)
 
 </p>
- 
-2. Klikom desne tipke miša na *oznaku obrasca* otvorit će se *kontekstualni izbornik* u kojem je moguće: odvojiti obrazac  (*Float*), zatvoriti ga (*Hide*), zatvoriti sve ostale (*Close all but this*), ili postaviti otvorene forme horizontalno ili vertikalno (*New horizontal tab group* ili *New vertical tab group*).  
+
+2. Klikom desnim tasterom miša na *oznaku obrasca* otvoriće se *kontekstualni meni* u kojem je moguće: odvojiti obrazac (*Float*), zatvoriti ga (*Hide*), zatvoriti sve ostale (*Close all but this*) ili postaviti otvorene obrasce horizontalno ili vertikalno (*New horizontal tab group* ili *New vertical tab group*).  
 
 <p align="center">
 
@@ -54,7 +55,7 @@ Svaki obrazac se otvara preko cijelog ekrana, s oznakom koja omogućuje prelazak
 
 </p>
 
-3. Moguće je odabrati oznaku obrasca lijevom tipkom miša i, držeći pritisnutu tipku, premjestiti je u željeni dio koristeći dostupne ikone za pozicioniranje.  
+3. Moguće je odabrati oznaku obrasca levim tasterom miša i, držeći taster pritisnutim, premestiti je u željeni deo pomoću dostupnih ikona za pozicioniranje.  
 
 <p align="center">
 
@@ -62,26 +63,26 @@ Svaki obrazac se otvara preko cijelog ekrana, s oznakom koja omogućuje prelazak
 
 </p>
 
-Ova dva panela mogu se zatvoriti pomoću **x** koja se nalazi s lijeve strane forme (ispod vertikalne oznake *Filtriraj*), ili s desne strane naziva mreže. Gumb pored ove 'x' za zatvaranje (trokut okrenut prema dolje) omogućuje, u slučaju da je jedan od tih panela zatvoren, prikaz zatvorenih panela u gornjem dijelu (*Closed panels*) što će između vrpce i oznake forme prikazati sekciju s popisom zatvorenih panela, iz koje se mogu odabrati i ponovno aktivirati.
+Ova dva panela mogu se zatvoriti pomoću **x** koje se nalazi sa leve strane obrasca (ispod vertikalne oznake *Filtriraj*) ili sa desne strane naziva tabele. Dugme pored ovog znaka 'x' za zatvaranje (trougao okrenut nadole) omogućava, u slučaju da je jedan od tih panela zatvoren, prikaz zatvorenih panela u gornjem delu (*Closed panels*), čime će se između trake i oznake obrasca prikazati sekcija sa listom zatvorenih panela, iz koje se oni mogu odabrati i ponovo aktivirati.
 
-Paneli se također mogu *odvojiti/povezati* s/obrascem, desnim klikom na odgovarajuću oznaku i odabirom *Float* ili *Dock*.
-Mogu se stvoriti i grupe panela (*Move to next tab group*, opet desnim klikom na oznaku panela). Na taj će način paneli biti vidljivi kao vertikalne oznake s lijeve strane forme.  
+Paneli se takođe mogu *odvojiti/povezati* sa obrascem, desnim klikom na odgovarajuću oznaku i odabirom opcije *Float* ili *Dock*.  
+Mogu se kreirati i grupe panela (*Move to next tab group*, ponovo desnim klikom na oznaku panela). Na taj način paneli će biti vidljivi kao vertikalne oznake sa leve strane obrasca.  
 
 
-### Prečaci
+### Prečice
 
 <p align="center">
 
-| Funkcija  | Značenje |
+| Funkcija | Značenje |
 | --- | --- |
-| Pretraga | Ctrl+R |
-| Otvori | Ctrl+O |
-| Prikaz | Ctrl+U |
-| Obriši | Ctrl+D |
-| Novi | Ctrl+N |
-| Pregled | Ctrl+T |
-| Ispis | Ctrl+P |
-| Spremi | Ctrl+S |
+| Traži | Ctrl+R |
+| Izmeni/Otvori | Ctrl+O |
+| Prikaži | Ctrl+U |
+| Obriši/Ukloni | Ctrl+D |
+| Novo | Ctrl+N |
+| Prethodni pregled | Ctrl+T |
+| Štampaj | Ctrl+P |
+| Sačuvaj | Ctrl+S |
 | Poništi | Ctrl+I |
 | Izvrši | Ctrl+E |
 

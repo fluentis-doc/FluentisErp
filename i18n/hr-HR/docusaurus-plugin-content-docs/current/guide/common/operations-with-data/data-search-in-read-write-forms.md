@@ -1,5 +1,5 @@
 ---
-title: Pretraživanje podataka u obrazcima za čitanje/pisanje
+title: Pretraživanje podataka u obrascima za čitanje/pisanje
 sidebar_position: 3
 ---
 
@@ -27,7 +27,7 @@ U prozoru koji se otvori ponovno odaberite objekt i klikom desnom tipkom miša o
 
 ### 2. Područje filtra 
 
-Filtri su obično u uvjetu 'AND', a moguće je specificirati više kriterija filtra istovremeno za prikazivanje: jednog zapisa (filtar prema broju dokumenta), više zapisa (filtar prema datumu), zapisa unesene u određenoj godini (filtar prema godini), zapisa unesene za određeni subjekt (filtar prema računu/podračunu), itd.   
+Filtri su obično u uvjetu 'AND', a moguće je specificirati više kriterija filtra istovremeno za prikazivanje: jednog zapisa (filtar prema broju dokumenta), više zapisa (filtar prema datumu), zapisa unesene u određenoj godini (filtar prema godini), zapisa unesene za određeni subjekt (filtar prema kontu), itd.   
 
 Kliknite na strelice ![](/img/neutral/common/arrow.png) za otvaranje [expandera](/docs/guide/common/glossary/glossary-intro#expander) i filtriranje prema podacima sadržanim u njima.   
 
@@ -40,7 +40,7 @@ Područje filtra može biti prikazano već otvoreno prilikom otvaranja obrasca a
 
 ![](/img/neutral/common/pin.png)
 
-### 3. Mreža rezultata
+### 3. Tablica rezultata
 
 Predstavlja popis podataka koji odgovaraju filtrima unesene u područje filtra.  
 
@@ -48,8 +48,8 @@ Predstavlja popis podataka koji odgovaraju filtrima unesene u područje filtra.
 
 Obrazac za čitanje/pisanje omogućuju također unos novih zapisa.  
 
-Za to se pozicionirajte na posljednji redak prve mreže ili upotrijebite gumb **Novi**. Spremanje se vrši klikom na drugi redak.  
+Za to se pozicionirajte na posljednji redak prve tablice ili upotrijebite gumb **Novo**. Spremanje se vrši klikom na drugi redak.  
 
 :::note KARAKTERISTIKE
-Neki obrasci imaju više povezanih mreža. Za redak u gornjoj mreži mogu se unositi novi detalji u donjoj mreži.  
+Neki obrasci imaju više povezanih tablica. Za redak u gornjoj tablici mogu se unositi novi detalji u donjoj tablici.  
 :::

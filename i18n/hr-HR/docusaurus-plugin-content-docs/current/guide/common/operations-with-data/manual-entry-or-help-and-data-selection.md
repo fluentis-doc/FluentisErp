@@ -12,7 +12,7 @@ Podaci koji se unose mogu biti:
 - **obavezni**: u tom slučaju, ako korisnik nije unio obavezne podatke, isti se prije spremanja ističu ikonom ![](/img/it-it/guide/operations-with-data/manual-entry-or-help-and-data-selection/image01.png) ili crvenim pravokutnikom. 
 
 
-### Ručni umetak 
+### Ručni unos 
 
 - odabirom jedne ili više opcija lijevim klikom miša  
 
@@ -50,7 +50,7 @@ Podaci koji se unose mogu biti:
 
 - u svim poljima s plavom pozadinom, pritiskom na F9 ili dvostrukim klikom otvara se *pomoćno polje* gdje se mogu unijeti filteri za pretraživanje željenih podataka (pogledajte također [Pretraživanje podataka](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) ).  
 
-- unesite podatak, čak i djelomično, i odaberite željeni podatak s popisa koji će se pojaviti. Aplikacija će automatski popuniti sva ostala polja u pomoći. Na primjeru pored, za Dobavljača prvo polje je račun, drugo je podračun, a treće je opis dobavljača. Unosom znakova 'am' pojavljuje se popis s alternativama s kojega možete odabrati zapis.   
+- unesite podatak, čak i djelomično, i odaberite željeni podatak s popisa koji će se pojaviti. Aplikacija će automatski popuniti sva ostala polja u pomoći. Na primjeru pored, za Dobavljača prvo polje je konto, drugo je podkonto, a treće je opis dobavljača. Unosom znakova 'am' pojavljuje se popis s alternativama s kojega možete odabrati zapis.   
 
 <p align="center">
 

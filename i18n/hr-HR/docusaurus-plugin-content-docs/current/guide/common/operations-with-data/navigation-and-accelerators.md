@@ -5,15 +5,15 @@ sidebar_position: 8
 
 ### Navigiranje kroz obrasce
 
-- pomaknite se na sljedeće polje pomoću tipke **TAB**, i u obrascima i u mrežama; na isti način se pomaknite unatrag pomoću Shift+TAB;
+- pomaknite se na sljedeće polje pomoću tipke **TAB**, i u obrascima i u tablicama; na isti način se pomaknite unatrag pomoću Shift+TAB;
 
-- u mrežama se također možete kretati prema naprijed pomoću tipke **Slanje**, u poljima obrazaca, međutim, slanje se interpretira kao povratak u novi redak unutar istog polja, ako je to dopušteno;
+- u tablicama se također možete kretati prema naprijed pomoću tipke **Enter**, u poljima obrazaca, međutim, to se interpretira kao povratak u novi redak unutar istog polja, ako je to dopušteno;
 
 - na završetku retka, ovaj se zapis sprema i kursor se pozicionira na novi zapis; bez dovršetka unosa do kraja, dopušteno je spremiti unos prelazeći na sljedeći/prethodni redak s *strelicama* ![](/img/neutral/common/updown.png);
 
-- u poljima za datum, tipka **F4** tvara panel *kalendara* unutar kojeg je moguće kretati se *strelicama* i odabrati sa *slanjem*. *Skrolanje* mišem pomiče dan, mjesec ili godinu, ovisno o odabranom polju;
+- u poljima za datum, tipka **F4** otvara panel *kalendara* unutar kojeg je moguće kretati se *strelicama* i odabrati sa *slanjem*. *Scroll* mišem pomiče dan, mjesec ili godinu, ovisno o odabranom polju;
 
-- također *strelicama* ![](/img/neutral/common/updown.png) na tipkovnici možete se kretati unutar liste (na primjer, u combo-boxu);
+- također *strelicama* ![](/img/neutral/common/updown.png) na tipkovnici možete se kretati unutar liste (na primjer, u padajućem izborniku);
 
 - u poljima za označavanje, označavanje se postavlja/uklanja **razmaknicom**;
 
@@ -62,9 +62,9 @@ Svaki obrazac se otvara preko cijelog ekrana, s oznakom koja omogućuje prelazak
 
 </p>
 
-Ova dva panela mogu se zatvoriti pomoću **x** koja se nalazi s lijeve strane forme (ispod vertikalne oznake *Filtriraj*), ili s desne strane naziva mreže. Gumb pored ove 'x' za zatvaranje (trokut okrenut prema dolje) omogućuje, u slučaju da je jedan od tih panela zatvoren, prikaz zatvorenih panela u gornjem dijelu (*Closed panels*) što će između vrpce i oznake forme prikazati sekciju s popisom zatvorenih panela, iz koje se mogu odabrati i ponovno aktivirati.
+Ova dva panela mogu se zatvoriti pomoću **x** koja se nalazi s lijeve strane forme (ispod vertikalne oznake *Filtriraj*), ili s desne strane naziva tablice. Gumb pored ove 'x' za zatvaranje (trokut okrenut prema dolje) omogućuje, u slučaju da je jedan od tih panela zatvoren, prikaz zatvorenih panela u gornjem dijelu (*Closed panels*) što će između vrpce i oznake forme prikazati sekciju s popisom zatvorenih panela, iz koje se mogu odabrati i ponovno aktivirati.
 
-Paneli se također mogu *odvojiti/povezati* s/obrascem, desnim klikom na odgovarajuću oznaku i odabirom *Float* ili *Dock*.
+Paneli se također mogu *odvojiti/povezati* s obrascem, desnim klikom na odgovarajuću oznaku i odabirom *Float* ili *Dock*.
 Mogu se stvoriti i grupe panela (*Move to next tab group*, opet desnim klikom na oznaku panela). Na taj će način paneli biti vidljivi kao vertikalne oznake s lijeve strane forme.  
 
 
@@ -74,13 +74,13 @@ Mogu se stvoriti i grupe panela (*Move to next tab group*, opet desnim klikom na
 
 | Funkcija  | Značenje |
 | --- | --- |
-| Pretraga | Ctrl+R |
-| Otvori | Ctrl+O |
-| Prikaz | Ctrl+U |
-| Obriši | Ctrl+D |
-| Novi | Ctrl+N |
-| Pregled | Ctrl+T |
-| Ispis | Ctrl+P |
+| Traži | Ctrl+R |
+| Izmijeni/Otvori | Ctrl+O |
+| Prikaži | Ctrl+U |
+| Obriši/Ukloni | Ctrl+D |
+| Novo | Ctrl+N |
+| Prethodni pregled | Ctrl+T |
+| Ispiši | Ctrl+P |
 | Spremi | Ctrl+S |
 | Poništi | Ctrl+I |
 | Izvrši | Ctrl+E |

@@ -17,7 +17,7 @@ Možete to učiniti pomoću gumba ![](/img/neutral/common/save.png) ili kombinac
 
 **Brisanje podataka**
 
-Odaberite podatke koje želite izbrisati i pritisnite gumb ili koristite tipku ![](/img/neutral/common/delete.png) 'Del' na tipkovnici. Aplikacija će prikazati poruku za potvrdu operacije. Ako odaberete Da, odabrani podaci će biti izbrisani.
+Odaberite podatke koje želite izbrisati i pritisnite gumb ili koristite tipku ![](/img/neutral/common/delete.png) 'Delete' na tipkovnici. Aplikacija će prikazati poruku za potvrdu operacije. Ako odaberete Da, odabrani podaci će biti izbrisani.
 
 :::note NAPOMENA
 Postoje zapisi koji se ne mogu izbrisati prije nego što se uklone njihove poveznice s drugim zapisima.  

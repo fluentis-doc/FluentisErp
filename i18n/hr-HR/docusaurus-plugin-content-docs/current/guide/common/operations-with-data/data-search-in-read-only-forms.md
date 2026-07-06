@@ -1,13 +1,13 @@
 ---
-title: Pretraživanje podataka u obrazcima samo za čitanje
+title: Pretraživanje podataka u obrascima samo za čitanje
 sidebar_position: 2
 ---
 
-Pretraživanje u obrazcima samo za čitanje omogućuje pronalaženje prethodno unesenih zapisa kako bi ih se moglo *pregledati*, *izmijeniti* , *izbrisati*, itd. ako korisnik ima **potrebna prava** za te operacije. 
+Pretraživanje u obrascima samo za čitanje omogućuje pronalaženje prethodno unesenih zapisa kako bi ih se mogli *pregledati*, *izmijeniti* , *izbrisati*, itd. ako korisnik ima **potrebna prava** za te operacije. 
 
-Neki obrazci ovog tipa sadrže gumb za unos ![](/img/neutral/common/new.png) koji, nakon što se pritisne, otvara formu za unos novih zapisa.  
+Neki obrasci ovog tipa sadrže gumb za unos ![](/img/neutral/common/new.png) koji, nakon što se pritisne, otvara formu za unos novih zapisa.  
 
-U obrazcima za pretraživanje moguće je prikazati: jedan zapis (filter prema broju dokumenta), više zapisa (filter prema datumu), zapise unesene u određenoj godini (filter prema godini), zapise unesene za određeni subjekt (filter prema računu/podračunu), itd.  
+U obrascima za pretraživanje moguće je prikazati: jedan zapis (filter prema broju dokumenta), više zapisa (filter prema datumu), zapise unesene u određenoj godini (filter prema godini), zapise unesene za određeni subjekt (filter prema kontu), itd.  
 
 
 **Pretraživanje u obrascima samo za čitanje** dijeli se na tri dijela:  
@@ -33,7 +33,7 @@ U prozoru koji se otvori ponovno odaberite objekt i klikom desnom tipkom miša o
 
 Filtri su obično u uvjetu 'AND', što znači da je moguće unijeti više filtara istovremeno.   
 
-Kliknite na strelice ![](/img/neutral/common/arrow.png) za otvaranje  [expandera](/docs/guide/common/glossary/glossary-intro#expander) i filtriranje prema podacima sadržanim u njima.   
+Kliknite na strelice ![](/img/neutral/common/arrow.png) za otvaranje [proširenja](/docs/guide/common/glossary/glossary-intro#expander) i filtriranje prema podacima sadržanim u njima.   
 
 Nakon unosa željenih filtara, pritisnite gumb **Traži** da biste dobili popis podataka.  
 
@@ -44,16 +44,16 @@ Područje filtra može biti prikazano već otvoreno prilikom otvaranja obrasca a
 
 ![](/img/neutral/common/pin.png)
 
-### 3. Mreža rezultata
+### 3. Tablica rezultata
 
 Predstavlja popis podataka koji odgovaraju filtrima unesene u područje filtra.
 
 U mreži rezultata možete odabrati jedan ili više redaka.  
 
-*Karakteristike mreže* 
+*Karakteristike tablice* 
 
-Prvi redak mreže je filtar (ikona na zaglavlju retka ima sliku lijevka ![](/img/neutral/common/filter.png)): kada otvorite obrazac, dovoljno je izvršiti pretraživanje da biste vidjeli zapise prisutne u njemu i aktivirali unos (ako je predviđen) ili upravljanje mrežom.
+Prvi redak tablice je filtar (ikona na zaglavlju retka ima sliku lijevka ![](/img/neutral/common/filter.png)): kada otvorite obrazac, dovoljno je izvršiti pretraživanje da biste vidjeli zapise prisutne u njemu i aktivirali unos (ako je predviđen) ili upravljanje mrežom.
 
-Filtar u tekstualnim poljima ne razlikuje velika i mala slova. Kada počnete filtrirati zapise preko zaglavlja stupaca, na dnu obrasca pojavit će se ploča koja pokazuje kako će se filtar primijeniti: na ekstremnom desnom dijelu ove sekcije pojavit će se i gumb za zatvaranje/poništavanje filtra, kao i korisni gumb ![](/img/neutral/common/pencil.png) za uređivanje filtra, gdje možete dodati složenije filtre na vođeni način.  
+Filtar u tekstualnim poljima ne razlikuje velika i mala slova. Kada počnete filtrirati zapise preko zaglavlja stupaca, na dnu obrasca pojavit će se ploča koja pokazuje kako će se filtar primijeniti: na desnom dijelu ove sekcije pojavit će se i gumb za zatvaranje/poništavanje filtra, kao i gumb ![](/img/neutral/common/pencil.png) za uređivanje filtra, gdje možete dodati složenije filtre.  
 
-*Detalji*: [Filtriranje i razvrstavanje zapisa u mrežama](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids).
+*Detalji*: [Filtriranje i razvrstavanje zapisa u tablicama](/docs/guide/common/operations-with-data/filter-sort-and-other-operations-with-records-in-grids).

@@ -1,8 +1,8 @@
 ---
-title: Fiksne tablice
+title: Fiksne tabele
 sidebar_position: 10
 ---
 
-Fiksne tablice uključuju unaprijed postavljene podatke koje korisnik nema mogućnost mijenjati. 
+Fiksne tabele sadrže unapred definisane podatke koje korisnik nema mogućnost da menja. 
 
-Na primjer, kodovi [Vrsta iznosa](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates#amount-type) u računovodstvenim zapisima, koji su ključni za automatsko popunjavanje dnevnika na temelju podataka o PDV-u i knjigovodstvenih evidencija unesenih u zapisima.  
+Na primer, kodovi za [Vrstu iznosa](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates#amount-type) u računovodstvenim zapisima, koji su ključni za automatsko popunjavanje dnevnika na osnovu podataka o PDV-u i knjigovodstvenih evidencija unetih u zapisima.  

@@ -1,30 +1,30 @@
 ---
-title: Pregled i ispis
+title: Pregled i štampa
 sidebar_position: 6
 ---
 
-Ova procedura omogućuje pregled i ispis dokumenata prema definiranim kriterijima filtriranja (tip, opis, broj, datum, članak, itd.).   
+Ova procedura omogućava pregled i štampanje dokumenata prema definisanim kriterijumima filtriranja (tip, opis, broj, datum, artikal itd.).   
 
-Ispisi koji sadrže popise dokumenata mogu se sortirati prema specifičnim poljima: tip, broj, datum unosa ili prema članku.
+Izveštaji koji sadrže liste dokumenata mogu se sortirati prema specifičnim poljima: tipu, broju, datumu unosa ili prema artiklu.
 
 | **Funkcija** | Značenje |
 | --- | --- |
-| **Izlazni račun**| Omogućuje odabir izvještaja za ispis. |
-| ![](/img/neutral/common/preview.png) **Pregled**| Gumb za pregled ispisa dokumenata. Otvorit će se novi obrazac s gumbima koje ćemo objasniti u nastavku. |
-| ![](/img/neutral/common/print.png) **Ispis** | Gumb za izvršavanje ispisa prema postavljenim filtrima i postavkama pisača. |
-|**Ispis**| Gumb za postavljanje stranice i za ispis dokumenta. |
-|**Brzi ispis**| Gumb za ispis dokumenta s unaprijed postavljenim postavkama koristeći zadani pisač sustava. |
-|**Postavke stranice**| Gumb za postavljanje stranice putem obrasca koji se otvara pritiskom na ovaj gumb. |
-|**Postavke pisača**| Gumb za postavljanje pisača. |
-|**Dizajn**| Gumb za otvaranje u izmjeni ispisa. |
-|**Prva stranica**| Gumb koji vodi korisnika na prvu stranicu dokumenta/ta za ispis. |
-|**Prethodna stranica**| Gumb koji vodi korisnika na prethodnu stranicu od trenutne dokumenta/ta za ispis. |
-|**Sljedeća stranica**| Gumb koji vodi korisnika na sljedeću stranicu od trenutne dokumenta/ta za ispis. |
-|**Zadnja stranica**| Gumb koji vodi korisnika na zadnju stranicu dokumenta/ta za ispis. |
-|**Smanji**| Gumb za prikaz više informacija u manjem omjeru. |
-|**Zoom**| Gumb za promjenu trenutnog omjera prikaza pregleda dokumenta. |
-|**Povećaj**| Gumb za detaljan prikaz dokumenta. |
-|**Izvoz**| Gumb za izvoz dokumenta u jedan od dostupnih formata i spremanje na disk. |
-|**Slanje**| Gumb za slanje dokumenta u jedan od dostupnih formata i spremanje na disk. |
-|**Parametri**| Gumb za prikaz ili skrivanje panela s parametrima gdje korisnik može prilagoditi vrijednosti parametara ispisa. |
-|**Vodeni žig**| Gumb koji otvara novi obrazac za umetanje teksta i/ili slike u prozirnosti iza sadržaja stranice. |
+| ![](/img/neutral/common/combo.png) | Omogućava odabir izveštaja za štampanje. |
+| ![](/img/neutral/common/preview.png) **Pregled** | Dugme za pregled štampe dokumenata. Otvoriće se novi obrazac sa dugmadima koje ćemo objasniti u nastavku. |
+| ![](/img/neutral/common/print.png) **Štampa** | Dugme za izvršavanje štampe prema postavljenim filterima i podešavanjima štampača. |
+| **Štampa** | Dugme za podešavanje stranice i štampanje dokumenta. |
+| **Brza štampa** | Dugme za štampanje dokumenta sa unapred postavljenim podešavanjima pomoću podrazumevanog sistemskog štampača. |
+| **Podešavanja stranice** | Dugme za podešavanje stranice putem obrasca koji se otvara pritiskom na ovo dugme. |
+| **Podešavanja štampača** | Dugme za podešavanje štampača. |
+| **Dizajn** | Dugme za otvaranje štampe u režimu izmene. |
+| **Prva stranica** | Dugme koje vodi korisnika na prvu stranicu dokumenta za štampanje. |
+| **Prethodna stranica** | Dugme koje vodi korisnika na prethodnu stranicu dokumenta za štampanje u odnosu na trenutnu. |
+| **Sledeća stranica** | Dugme koje vodi korisnika na sledeću stranicu dokumenta za štampanje u odnosu na trenutnu. |
+| **Poslednja stranica** | Dugme koje vodi korisnika na poslednju stranicu dokumenta za štampanje. |
+| **Smanji** | Dugme za prikaz više informacija u manjoj razmeri. |
+| **Zumiranje** | Dugme za promenu trenutne razmere prikaza pregleda dokumenta. |
+| **Povećaj** | Dugme za detaljan prikaz dokumenta. |
+| **Izvoz** | Dugme za izvoz dokumenta u jedan od dostupnih formata i čuvanje na disku. |
+| **Slanje** | Dugme za slanje dokumenta u jednom od dostupnih formata i čuvanje na disku. |
+| **Parametri** | Dugme za prikaz ili skrivanje panela sa parametrima, gde korisnik može prilagoditi vrednosti parametara štampe. |
+| **Vodeni žig** | Dugme koje otvara novi obrazac za umetanje teksta i/ili slike sa transparentnošću iza sadržaja stranice. |

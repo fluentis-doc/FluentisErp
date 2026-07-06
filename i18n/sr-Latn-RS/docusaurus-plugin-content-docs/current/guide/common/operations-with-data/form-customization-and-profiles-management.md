@@ -5,15 +5,13 @@ sidebar_position: 9
 
 ### Personalizacija obrasca 
 
+Personalizacije obrasca (dimenzija/pozicioniranje/nova polja) moraju se sačuvati sa korisničkim profilom kako bi mogle da se postave kao podrazumevane za korisnika, više korisnika ili za korisničke uloge (putem dugmeta **Prava profila**). Ako nisu sačuvane, ta podešavanja se gube prilikom zatvaranja obrasca.
 
-Personalizacije obrasca (dimenzija/pozicioniranje/novi polja) moraju se spremiti s korisničkim profilom kako bi ih mogli postaviti kao zadane za korisnika, više korisnika ili za uloge korisnika (kroz gumb  **Prava profila**). Ako nisu spremljene, te se postavke gube prilikom zatvaranja obrasca.
-
-Ove postavke također spremaju pozicioniranje kolona, njihovu dimenziju, a također je dopuštena i promjena izgleda formi, uključujući brisanje, dodavanje ili premještanje dostupnih polja unutar forme ili u **Object Navigator**.
-
+Ova podešavanja takođe čuvaju pozicioniranje kolona i njihove dimenzije, a dozvoljena je i promena izgleda obrazaca, uključujući brisanje, dodavanje ili premeštanje dostupnih polja unutar obrasca ili u **Object Navigatoru**.
 
 **Procedura**
 
-**1.** Otvorite **[Form navigator](/docs/form-navigator/form-navigator-intro)** s lijeve strane odabranog obrasca: 
+**1.** Otvorite **[Form navigator](/docs/form-navigator/form-navigator-intro)** sa leve strane odabranog obrasca: 
 
 <p align="center">
 
@@ -21,7 +19,7 @@ Ove postavke također spremaju pozicioniranje kolona, njihovu dimenziju, a tako�
 
 </p>
 
-- ako se nalazite u formi za filtriranje, otvorite **Filter widget** i odaberite  **Filter** kako biste vidjeli i na dnu odabrali opciju  **Customization mode**  
+- ako se nalazite u obrascu za filtriranje, otvorite **Filter widget** i odaberite **Filter** kako biste videli i na dnu odabrali opciju **Customization mode**  
  
 <p align="center"> 
 
@@ -29,7 +27,7 @@ Ove postavke također spremaju pozicioniranje kolona, njihovu dimenziju, a tako�
 
 </p>
 
-- ako se nalazite u obrascu dokumenta, odaberite istu kako biste omogućili i na dnu odabrali opciju **Customization mode**  
+- ako se nalazite u obrascu dokumenta, odaberite ga kako biste omogućili i na dnu odabrali opciju **Customization mode**  
 
 <p align="center">
 
@@ -37,7 +35,7 @@ Ove postavke također spremaju pozicioniranje kolona, njihovu dimenziju, a tako�
 
 </p>
 
-**2.** U tom trenutku, filtriranje ili obrazac će biti obrubljeni crvenom bojom i moći ćete odabrati polja kako biste ih premjestili, izbrisali ili dodali nova, preuzimajući ih iz **[Object navigator](/docs/object-navigator/object-navigator-intro)** koji se nalazi desno.  
+**2.** U tom trenutku, filter ili obrazac biće obrubljeni crvenom bojom i moći ćete da odaberete polja kako biste ih premestili, izbrisali ili dodali nova, preuzimajući ih iz **[Object navigatora](/docs/object-navigator/object-navigator-intro)** koji se nalazi desno.  
 
 <p align="center">
 
@@ -45,7 +43,7 @@ Ove postavke također spremaju pozicioniranje kolona, njihovu dimenziju, a tako�
 
 </p>
 
-**3.** Kada postavite masku, spremite profil kako biste ga učinili dostupnim kasnije ili ga postavite drugim korisnicima putem upravljanja profilima.   
+**3.** Kada podesite masku, sačuvajte profil kako biste ga učinili dostupnim kasnije ili ga dodelite drugim korisnicima putem upravljanja profilima.   
 
 <p align="center">
 
@@ -57,7 +55,7 @@ Ove postavke također spremaju pozicioniranje kolona, njihovu dimenziju, a tako�
 
 **Procedura**
 
-Novi profil može se spremiti pomoću gumba **Spremi kao**  
+Novi profil može se sačuvati pomoću dugmeta **Sačuvaj kao**.  
 
 <p align="center">
 
@@ -65,7 +63,7 @@ Novi profil može se spremiti pomoću gumba **Spremi kao**
 
 </p>
 
-Gumb će otvoriti novu masku u koju možete unijeti **Naziv** novog profila koji želite spremiti.  
+Dugme će otvoriti novu masku u koju možete uneti **Naziv** novog profila koji želite da sačuvate.  
 
 <p align="center">
 
@@ -73,7 +71,7 @@ Gumb će otvoriti novu masku u koju možete unijeti **Naziv** novog profila koj
 
 </p>
 
-Novi profil može se kasnije izmijeniti i spremiti pomoću gumba **Spremi obrazac profila** ili se može izbrisati pomoću gumba **Izbriši obrazac profila** također, može se učiniti dostupnim/postaviti drugim korisnicima koristeći gumb **Prava profila** koji će otvoriti masku **Upravljanje profilom** iz koje se mogu odabrati različite opcije koje se dalje mogu spremiti pomoću gumba **Spremi obrazac profila**   
+Novi profil se kasnije može izmeniti i sačuvati pomoću dugmeta **Sačuvaj obrazac profila** ili se može izbrisati pomoću dugmeta **Izbriši obrazac profila**. Takođe, može se učiniti dostupnim ili dodeliti drugim korisnicima pomoću dugmeta **Prava profila**, koje će otvoriti masku **Upravljanje profilom**, iz koje se mogu odabrati različite opcije koje se zatim mogu sačuvati pomoću dugmeta **Sačuvaj obrazac profila**.   
 
 <p align="center">
 
