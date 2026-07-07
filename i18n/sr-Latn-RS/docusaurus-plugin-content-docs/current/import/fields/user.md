@@ -1,1 +1,1 @@
-**Operater**: omogućuje unos korisnika koji stvara dokument. Zaposlenici su prethodno uneseni u tablicu *Zaposlenici* koja se nalazi u *Početna stranica > Zaposlenik*. Podatak postaje **Obavezan** ako je opcija postavljena u paramatrima dokumenta.
+**Operater**: omogućava unos korisnika koji kreira dokument. Zaposleni su prethodno uneti u tabelu *Zaposleni* koja se nalazi u *Početna stranica > Zaposleni*. Podatak postaje **Obavezan** ako je opcija postavljena u parametrima dokumenta.

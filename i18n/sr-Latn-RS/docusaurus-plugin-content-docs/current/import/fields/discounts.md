@@ -1,1 +1,1 @@
-**Popusti**: prikazuju se popusti povezani s artiklom, svaki s vlastitom osnovom za izračun i dodjelom.
+**Popusti**: prikazuju se popusti povezani sa artiklom, svaki sa sopstvenom osnovom za obračun i dodelom.

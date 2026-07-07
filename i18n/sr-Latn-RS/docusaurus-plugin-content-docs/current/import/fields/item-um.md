@@ -1,1 +1,1 @@
-**Jedinica mjere**: predlaže se glavna mjerna jedinica artikla, ali korisnik ima mogućnost odabrati drugu mjernu jedinicu.
+**Jedinica mere**: predlaže se glavna merna jedinica artikla, ali korisnik ima mogućnost da odabere drugu mernu jedinicu.

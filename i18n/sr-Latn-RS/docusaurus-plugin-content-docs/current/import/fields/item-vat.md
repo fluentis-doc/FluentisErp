@@ -1,1 +1,1 @@
-**PDV**: *prioritetan* je podatak unesen u polje Šifra PDV-a u *Šifarniku kontakta*. Ako ne postoji, predlaže se vrijednost koja je se nalazi u'*Šifarniku artikla*, no korisnik ima mogućnost unijeti i neki drugi podatak. Ovo polje je obavezno.
+**PDV**: *prioritetan* je podatak unet u polje Šifra PDV-a u *Šifarniku kontakta*. Ako ne postoji, predlaže se vrednost koja se nalazi u *Šifarniku artikla*, ali korisnik ima mogućnost da unese i neki drugi podatak. Ovo polje je obavezno.

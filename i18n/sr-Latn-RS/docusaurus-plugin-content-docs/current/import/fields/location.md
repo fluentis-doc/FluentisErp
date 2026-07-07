@@ -1,1 +1,1 @@
-**Lokacija**: automatski se predlaže samo ako je za odabrani artikl odabrano i skladište.
+**Lokacija**: automatski se predlaže samo ako je za odabrani artikal odabrano i skladište.

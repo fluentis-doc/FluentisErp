@@ -1,3 +1,3 @@
-**Tip prometa nabave**: automatski se predlaže podatak unesen u *Šifarnik artikla > kartica Općenito*. Ukoliko taj podatak  nije unesen, može se odabrati iz pripadajućeg padajućeg izbornika.
+**Vrsta prometa nabave**: automatski se predlaže podatak unesen u *Šifarnik artikla > kartica Općenito*. Ukoliko taj podatak nije unesen, može se odabrati iz pripadajućeg padajućeg izbornika.
 
 Nedostatak ovog podatka mogao bi uzrokovati greške u knjiženju računa koji će biti generiran iz primke ako procedura ne pronađe vrijednost niti u polju *Detaljni konto predefiniranog troška/prihoda* u šifarniku kontakta.

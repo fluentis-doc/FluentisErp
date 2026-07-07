@@ -1,1 +1,1 @@
-**Cjenik**: predlaže se cjenik iz kojeg je artikal preuzet, s datumom početka/kraja valjanosti, s posebnim uvjetima (npr. razred popusta) dodijeljenim artiklu u cjeniku.
+**Cenovnik**: predlaže se cenovnik iz kojeg je artikal preuzet, sa datumom početka/kraja važenja, sa posebnim uslovima (npr. razred popusta) dodeljenim artiklu u cenovniku.

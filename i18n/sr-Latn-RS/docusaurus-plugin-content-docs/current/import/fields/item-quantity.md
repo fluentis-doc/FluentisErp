@@ -1,1 +1,1 @@
-**Količina**: predstavlja količinu glavne mjerne jedinice i kao zadanu vrijednost ima 1; može se unijeti ručno ili se može preuzeti iz dokumenta koji se razmatra za izuzimanje (na primjer iz narudžbe dobavljača)..
+**Količina**: predstavlja količinu glavne merne jedinice i kao podrazumevanu vrednost ima 1; može se uneti ručno ili se može preuzeti iz dokumenta koji se razmatra za izvršenje (na primer iz narudžbine dobavljaču).
