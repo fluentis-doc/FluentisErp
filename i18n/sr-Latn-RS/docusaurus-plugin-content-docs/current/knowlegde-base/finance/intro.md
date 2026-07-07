@@ -1,197 +1,257 @@
 ---
-title: FAQ Administracija 
+title: FAQ Administracija
 sidebar_position: 1
 ---
 
-
 <details>
 
-  <summary>1. Koje se elektroničke fakture spremaju u folder postavljen u tablici <b>Konfiguracija elektroničkih dokumenata?</b>?</summary>
+  <summary>1. Koji se e-računi čuvaju u fascikli postavljenoj u tabeli <b>Konfiguracija elektronskih dokumenata</b>?</summary>
   
-Postoje dva uvjeta u kartici klijenta.   
+U matičnim podacima kupca moraju biti ispunjena dva uslova.
 
-Prvi uvjet je flag <b>Potpis dokumenta</b>, koji mora biti aktivan.                 
-Drugi uvjet je flag <b>Elektroničko fakturiranje s potpisom</b>, koji je 3-state flag:   
+Prvi je aktivirana oznaka <b>Potpis dokumenta</b>.                 
+Drugi je oznaka <b>Potpisani e-račun</b>, koja može imati tri stanja:
 
-- Kada je postavljen na 1, za klijenta se predviđa potpis, bez obzira na druge konfiguracijske opcije, pa se datoteka uvijek izvozi u mapu definiranu u konfiguraciji elektroničkih dokumenata radi potpisivanja;             
+- Kada je za kupca postavljena na 1, predviđeno je potpisivanje nezavisno od drugih opcija konfiguracije. Stoga se datoteka uvek izvozi u fasciklu definisanu u konfiguraciji elektronskih dokumenata kako bi se potpisala;
 
-- Kada je postavljen na 0, za klijenta se ne predviđa potpis, bez obzira na druge konfiguracijske opcije, pa se datoteka ne izvozi u mapu konfiguracije elektroničkih dokumenata, čak i ako je mapa definirana;      
+- Kada je za kupca postavljena na 0, potpisivanje nije predviđeno nezavisno od drugih opcija konfiguracije. Stoga se datoteka ne izvozi u fasciklu definisanu u konfiguraciji elektronskih dokumenata, čak ni ako je fascikla postavljena;
 
-- Kada je Null (kao u ovom slučaju, što je zadana postavka), vrijedi postavka u ‘konfiguraciji elektroničkih dokumenata’, tj. ako postoji putanja za kreiranje datoteke, datoteka se uvijek kreira, inače se ne kreira.
+- Kada ima vrednost Null, kao u prethodno navedenom primeru (što je podrazumevana postavka), primenjuje se postavka iz *Konfiguracije elektronskih dokumenata*. Ako je definisana putanja za kreiranje datoteke, datoteka se uvek kreira, a u suprotnom se ne kreira.
 
 </details>
 
 
 <details>
 
-  <summary>2. Za težine, tijekom kreiranja elektroničke fakture, Fluentis mi kaže da ne smiju biti veće od 9.999. Kako mogu ukloniti ovu blokadu? </summary>
+  <summary>2. Pri kreiranju e-računa Fluentis javlja da vrednosti težine ne mogu biti veće od 9.999. Kako se može ukloniti ovo ograničenje?</summary>
   
-Ova blokada je vezana uz pravila Elektroničkog fakturiranja, koje ne prihvaća TEŽINE veće od 9.999.
-Da biste zaobišli ovaj problem, potrebno je skalirati jedinicu mjere (UM) ako se premaši granica od 9.999, tako da se koristi odgovarajuća jedinica mjere i dobiju željene vrijednosti.  
+Ovo je ograničenje povezano sa pravilima e-računa, prema kojima vrednosti **težine** veće od 9.999 nisu dozvoljene.
+
+Kako bi se izbegao ovaj problem, ako se prekorači prag od 9.999, potrebno je promeniti mernu jedinicu i koristiti odgovarajuću veću mernu jedinicu kako bi se dobile željene vrednosti.
 
 </details>
 
 
 <details>
 
-  <summary>3. Kako je moguće unijeti flag <b>Grupa PDV-a</b> u već kreiranu <b>Izjavu o namjeri</b>? </summary>
+  <summary>3. Kako je moguće aktivirati oznaku <b>PDV grupa</b> u već kreiranoj <b>Izjavi o nameri</b>?</summary>
   
-Potrebno je izvršiti sljedeći SQL update, unoseći ID predmetne izjave o namjeri:  
+Potrebno je izvršiti sledeću naredbu `UPDATE` i uneti ID izjave o nameri:
 
+```sql
 update CA_DichIntMain set CADM_IsVatGroup = 1 
-where CADM_Id = '[id della dichiarazione di intento]'
-
-</details>
-
-
-<details>
-
-  <summary> 4. Kako je moguće izvršiti ispis mastrina filtriranjem pokreta na temelju ekonomske kompetencije?
-Naime, primjerice, prilikom postavljanja traženog perioda, u ispisa pomoćnih konta, u poljima "od datuma kompetencije" i "do datuma kompetencije", ne uzima se u obzir ekonomska kompetencija, već se čini da se čita datum kompetencije koji je u računovodstvenim knjiženjima smješten pored datuma knjiženja.</summary>
-
-Potvrđujem da se u filtrima, kada piše "od datuma kompetencije" do "datuma kompetencije", misli na kompetenciju (tzv. "računovodstvenu") zaglavlja.
-Uobičajeno se ti datumi poklapaju, ali se mogu koristiti (iako to u praksi rijetko tko radi) za knjiženje ispravki, primjerice na datum odobrenja bilance koje se odnose na 31.12., gdje je taj datum možda već blokiran za konačni ispis dnevnika i stoga ne bi prihvatio datum knjiženja.
-Što se tiče datuma ekonomske kompetencije, ispis mastrina – i šire gledano, cijeli sustav – nije predviđen za rad na taj način.
-Najispravnija procedura je izračunati zatvaranje računa za razdoblje (intra-godišnja zatvaranja) i pokrenuti odgovarajuća knjiženja ispravki i integracija.
-Alternativno, mogu preporučiti korištenje forme za pregled konta, gdje se preko object navigatora mogu dodati svojstva From AccrualDate i To AccrualDate, što su zapravo datumi ekonomske kompetencije ("od" – "do"), te koristiti filter na prvom redu detaljne mreže (grida).
-Još jedna alternativa je prilagodba izvještaja i forme za pokretanje dodavanjem filtera i polja itd...
-
+where CADM_Id = '[ID izjave o nameri]'
+```
 </details>
 
 <details>
 
-  <summary>5. Zašto, uspoređujući zatvaranje računa unutar godine obračunato od 1.1. do 31.12. s rezultatima iz modula administracije, u zatvaranju u controlling modu nalazim razgraničenja koja u administraciji nisu izračunata?</summary>
+  <summary>4. Kako je moguće odštampati karticu konta filtriranjem knjiženja prema periodu nastanka troška ili prihoda? Na primer, kada se u štampi podkonta postavi željeni period u poljima "od datuma perioda" i "do datuma perioda", ne uzima se u obzir period nastanka troška ili prihoda, već se čini da se čita datum perioda koji se u računovodstvenim knjiženjima nalazi pored datuma knjiženja.</summary>
 
-Modul controlling u nekim situacijama radi na fleksibilniji način u usporedbi s modulom administracije.
-Naime, sposoban je ispraviti bilo koji trošak ili prihod (s kompatibilnim tipom konta) čak i za udjele ekonomske nadležnosti iz prošlosti. Na primjer, ako je trošak evidentiran u godini X, a nadležnost je djelomično (ili potpuno) u godini X-1, prilikom obrade zatvaranja godine X svejedno će doći do ispravke (npr. aktivno razgraničenje).
-Potrebno je obratiti posebnu pažnju na **upravljanje dispravkama izvršenima u modulu administracije.**
-**Preporučuje se izvršiti izračun i knjiženje ispravki te zatvaranje i ponovno otvaranje konta s ponovnim otvaranjem ispravki putem automatskih procedura, izbjegavajući ručna knjiženja**.
-Automatska procedura nameće, naime, da stavke ponovnog otvaranja ispravki imaju datum jednak originalnoj stavci na koju se ispravka odnosi te da ekonomska nadležnost te stavke bude godina X-1. Na taj način se izbjegava da prilikom obrade zatvaranja razdoblja za godinu X softver izračunava dodatne ispravke, jer su one već uključene u saldo godine X (ili unutar-godišnjeg razdoblja godine X) zahvaljujući pravilnom ponovnom otvaranju prethodne ispravke.  
+Potvrđujem da se u filterima, kada se navodi *od datuma perioda* i *do datuma perioda*, misli na datum perioda iz zaglavlja, odnosno na takozvani "računovodstveni" period. Ti datumi se po pravilu podudaraju, ali se ovaj datum može koristiti, iako se u praksi retko koristi, na primer za knjiženje korektivnih knjiženja na datum odobrenja finansijskih izveštaja koja se odnose na 31.12., kada je taj period možda već zaključan zbog konačne štampe dnevnika pa sistem više ne bi prihvatio taj datum knjiženja.
+
+Što se tiče perioda nastanka troška ili prihoda, štampa kartice konta i uopšteno sistem nisu predviđeni za rad na taj način. Ispravniji postupak je izračunati zaključivanje konta za određeni period (**privremeno zaključavanje**) i izvršiti pripadajuća korektivna i dopunska knjiženja.
+
+Alternativno se može koristiti forma **Pregled konta**, u kojoj je putem *Object Navigatora* moguće dodati svojstva `FromAccrualDate` i `ToAccrualDate`, koja predstavljaju početni i završni datum perioda nastanka troška ili prihoda, i upotrebiti filter u prvom redu mreže detalja.
+
+Druga mogućnost je prilagoditi izveštaj i formu za njegovo pokretanje dodavanjem potrebnih filtera, polja i ostalih elemenata.
 
 </details>
 
 <details>
 
-  <summary> 6. Zašto u maski za upravljanje ispravkama (obračun razgraničenja i vremenskih razgraničenja), iako sam siguran da sam unio odgovarajuće računovodstvene promjene, ne dolazi ni do kakvog izračuna?</summary>
+  <summary>5. Zašto pri poređenju privremenog zaključavanja konta izračunatog za period od 1.1. do 31.12. sa rezultatima modula Administracija u zaključivanju kontrolinga postoje vremenska razgraničenja koja nisu izračunata u Administraciji?</summary>
 
-Nakon što ste se uvjerili da ste zaista unijeli računovodstvene promjene s datumima ekonomske nadležnosti koji prelaze granicu poslovne godine, i da ste koristili konta troška tipa "za ispravku" (db Fast Start) ili koji u tablici tipi conto imaju označen flag Servizio, ako još uvijek ne vidite predložene obračune (ratei ili risconti), moguće je da ste nenamjerno aktivirali flag *Mjesečno zatvaranje* u općim parametrima kontabiliteta. Taj flag zapravo aktivira logiku za strane (ne-talijanske) lokalizacije.
+Modul **Kontroling** u određenim situacijama primenjuje fleksibilniju logiku od modula **Administracija**.
 
-</details>
+Može korigovati bilo koji trošak ili prihod, pod uslovom da je vrsta konta kompatibilna, čak i za delove koji pripadaju prethodnom periodu nastanka troška ili prihoda. Na primer, ako trošak knjižen u godini X delimično ili u celosti pripada godini X-1, pri obradi zaključivanja godine X svejedno će se izračunati korekcija, na primer aktivno vremensko razgraničenje.
 
-<details>
+Posebnu pažnju potrebno je obratiti na **upravljanje usklađenjima izvršenim u modulu Administracija**.
 
-  <summary> 7. Povezao sam vrstu poreza na dohodak s klijentom kako bih generirao elektronički račun s potrebnim oznakama, sada želim knjižiti račun, ali vidim da knjiženje nije ispravno i ne prikazuje porez na dohodak, zašto?</summary>
+**Preporučuje se izračunati i proknjižiti usklađenja i izvršiti zaključivanje i ponovno otvaranje konta sa ponovnim otvaranjem usklađenja putem automatskih postupaka, izbegavajući ručna knjiženja.**
 
-Unutar tablice *Tipovi odbitka poreza*, otvorite vrstu povezanu s dotičnim klijentom i provjerite je li polje *Tipovi dospjele vrijednosti* postavljeno na *Neto dospjele vrijednosti*.
-
-</details>
-
-<details>
-
-  <summary> 8. Fluentis mi u novom knjiženju uvijek predlaže zadnju valutu korištenu s odabranim razlogom, zanemarujući zadanu valutu klijenta ili dobavljača, zašto? </summary>
-
-Provjerite postavku općeg parametra u tablici PARAM_Parameter kod CA-RegCont-General_PurposeCurrencyByTemplate. Ako je parametar postavljen na 1, bit će predložena valuta zadnje korištena s razlogom, ako je postavljen na 0, neće biti predložena nijedna valuta, slijedeći osnovnu logiku valute društva, a zatim čitanje valute klijenta ili dobavljača.  
+Automatski postupak knjiženjima ponovnog otvaranja usklađenja dodeljuje datum jednak datumu izvornog knjiženja koje je bilo predmet korekcije, dok se kao period nastanka troška ili prihoda tog knjiženja postavlja godina X-1. Na taj način se izbegava da softver pri obradi zaključivanja perioda godine X izračuna dodatne korekcije jer saldo godine X, odnosno međuperioda godine X, već sadrži ispravan rezultat pripadajućeg perioda zahvaljujući pravilnom ponovnom otvaranju prethodnog usklađenja.
 
 </details>
 
 <details>
 
-  <summary> 9. Trebam kreirati više numeracija za prodajne račune. Nije jasno trebam li kreirati onoliko prodajnih PDV registara koliko imam numeracija ili jedan prodajni registar može imati više numeracija </summary>
+  <summary>6. Zašto se u formi za upravljanje usklađenjima (obračunatim prihodima i troškovima i vremenskim razgraničenjima) ništa ne izračunava iako sam siguran da sam uneo odgovarajuća računovodstvena knjiženja?</summary>
 
-Veza u procesu knjiženja prodaje je Vrsta računa > Numeracija > Povezana knjižbena osnova > PDV registar povezan s osnovom. U standardnom okruženju može postojati više vrsta, ali ako su povezane s istom osnovom, koja ima isti PDV odjeljak, numeracija je ista (zajednička, tako da će račun br. 1 za vrstu A, a zatim za vrstu B biti br. 2). U slučaju različitih vrsta računa s različitim konkurentnim numeracijama preporučljivo je razlikovati PDV odjeljke i povezati im različite osnove, inače će doći do sukoba u PDV protokoliranju. To je zato što je u osnovama obično aktivirana opcija koja predlaže PDV protokol jednako kao i broj dokumenta (kako se ne bi moralo paziti na knjiženje računa po redoslijedu brojeva). Inače je potrebno deaktivirati tu opciju
+Nakon što se proveri da li su zaista uneta računovodstvena knjiženja sa datumima perioda nastanka troška ili prihoda koji prelaze granicu poslovne godine i da li su korišćena konta troškova vrste *Za ispravku* (baza Fast Start) ili konta čija vrsta ima aktiviranu oznaku **Usluga** u tabeli *Vrste konta*, ako sistem i dalje ne predlaže obračunate prihode i troškove ni vremenska razgraničenja, moguće je da je u opštim parametrima računovodstva nenamerno aktivirana oznaka **Mesečno zaključivanje**.
 
-</details>
-
-<details>
-
-  <summary> 10. Come posso gestire una nota di accredito semplificata di sola iva TD08 per il recupero, ad esempio, dell'iva di un cliente fallito? </summary>
-
-1. U tablici Administracija > **Vrste dokumenata** provjerite postoji li (i po potrebi dodajte) odgovarajuća vrsta dokumenta. Polje Šifra / Opis može se slobodno imenovati, na primjer *Pojednostavljeni dobropis za povrat PDV-a*, ili *Dobropis samo za PDV* itd...; flag **Odobrenje** mora biti **aktivan** a polje **Kod za elektronski oblik dokumenta** mora sadržavati *TD08*
-2. U tablici Prodaja > **Vrste računa** provjerite postoji li (i po potrebi dodajte) odgovarajuća vrsta računa. Polje Šifra / Opis može se slobodno imenovati, na primjer *Pojednostavljeni dobropis za povrat PDV-a*, ili *Dobropis samo za PDV* itd... ; u polju **Vrsta računa** MORA biti odabrana opcija ***Dobropis samo za PDV***; polje **Vrsta dokumenta** treba sadržavati vrstu definiranu u točki 1., a polje **Predložak** (knjigovodstven) treba sadržavati odgovarajuću osnovu (koju je potrebno kreirati ili odabrati u tablici Administracija > Knjigovodstvene osnove), tako da knjiženje odgovara situaciji (na primjer, osnova koja upravlja dobropisima s odgovarajućim kontnim šemama).  
-3. Kreirajte novi dokument u modulu Prodaja > Prodajni računi koristeći vrstu računa definiranu u točki 2.   
-    - Posebna vrsta postavljena u polju Vrsta računa iz točke 2. omogućava unos u tablicu Artikala dokumenta samo redaka tipa *Napomena* gdje možete unijeti kratki opis izvršene ispravke, na primjer: "Dokument izdan prema članku 26, stavak 3 bis, D.P.R. br. 633/1972, isključivo za povrat PDV-a".  
-    - Proširivanjem sekcije *Vrsta reference* u *Zaglavlju* dokumenta moguće je, osim polja Vrsta reference, unijeti i detalje prethodnog računa koji se ispravlja.  
-    - U ovoj posebnoj vrsti dobropisa upravljanje vrijednostima ograničeno je isključivo na sekciju **Sažetak** točnije u tablicu *Sažetak PDV-a* gdje se direktno obrađuje polje **Porezi** (u negativnom iznosu) uz polje (šifra) PDV-a (npr. 22%), dok je osnovica nula (radi se o dobropisu samo za PDV).  
-4. Generirajte XML datoteku i pošaljite elektronički račun kao i obično (prema uputama u online vodiču).  
-5. Knjigovodstveno evidentirajte dobropis kao i obično. Povezujući odgovarajuću knjigovodstvenu osnovu tipičnu za dobropise u Italiji (npr. onu iz Fast Start okruženja), knjiženje će se izvršiti ispravno, obrađujući u PDV sekciji samo porez, a ne osnovicu, te u kontnom dijelu knjižeći iznos PDV-a koji se odbija s računa PDV prodaje (dužna strana) protiv potraživanja prema kupcu (potražna strana).  
-</details>
-
-<details>
-
-  <summary> 11. Kako mogu upravljati "Obavijesti" TD29 za prijavu izostavljene ili nepravilne fakturacije od strane dobavljača? </summary>
-
-1. U tablici Administracija > **Vrste Računa** provjerite postoji li (i po potrebi dodajte) odgovarajuću vrstu dokumenta. Polje Šifra / Opis može biti slobodno imenovano, na primjer *Obavijest o nepravilnoj fakturaciji*, flag **Samoobračun** mora biti **aktivan**, a polje **Kod za elektronski oblik dokumenta** mora sadržavati vrijednost *TD29*  
-2. U tablici Prodaja > **Tipovi računa** provjerite postoji li (i po potrebi dodajte) odgovarajuća tipologija. Polje Šifra / Opis može biti slobodno imenovano, na primjer *Obavijest o nepravilnoj fakturaciji*; u polju **Priroda računa** mora biti odabrana opcija ***Račun***; polje **Vrsta dokumenta** sadržavat će tip iz točke 1.; u polju **Predložak** (knjigovodstveni) nije nužno povezivati vrijednost, budući da se ovdje radi samo o obavijesti o propuštenoj fakturaciji od strane dobavljača, bez značaja za PDV.  
-3. Kreirati novi dokument u modulu Prodaja > Računi prodaje koristeći tipologiju računa kreiranu u točki 2.  
-   - Proširivanjem sekcije *Vrsta reference* u *Zaglavlju* dokumenta moguće je, ako je potrebno, osim polja Vrsta reference, popuniti i detalje prethodnog računa koji se ispravlja.  
-   - U polje Izdavatelj, u zaglavlju dokumenta, unijeti podatke Dobavljača, dok u polje Klijent unijeti šifru naše tvrtke posebno kreirane za samoobračune.  
-   - U sekciji Artikli dokumenta unijeti jedan red s opisom robe koja nije fakturirana i pripadajućim iznosima, ili ako se radi o ispravku nepravilnog ili pogrešnog računa, iznos ispravka.
-4. Kreirati XML datoteku i poslati je prema uobičajenim procedurama.  
-</details>
-
-<details>
-  <summary> 12. Kako mogu otključati periodičnu PDV likvidaciju koja je ispisana kao konačna? </summary>
-
-1. U tablici Administracija > IZJAVE > **Uplate PDV-a**, gdje su prikazani svi periodi za koje postoji konačna likvidacija, odabrati period (ili više njih) koji želite otključati i pritisnuti tipku ***Izbriši PDV likvidacije***.
-2. Ako je prilikom zaključavanja likvidacije bila aktivirana opcija za automatske knjiženja prijenosa (giroconto), prikazat će se poruka koja potvrđuje automatsko brisanje tih prijenosa. Također će se prikazati poruka koja podsjeća da je potrebno ručno izbrisati zapis (za odgovarajući period) iz forme **Periodična PDV prijava** koji je bio automatski kreiran prilikom pokretanja zaključavanja likvidacije.  
-3. Kao što je navedeno u prethodnoj točki, ručno obrišite zapis u formi **Periodična prijava PDV-a** za razdoblje koje je otključano. Podsjećamo da se u ovoj tablici pohranjuju podaci za upravljanje ručnim poljima u obračunu PDV-a (prijenos pretporeza, kompenzacije itd.)  
-4. Vratiti brojač stranica i datum zadnjeg ispisa za PDV sekcional na kojem se ispisuju periodične likvidacije (obično kod RIE u bazi podataka FastStart). Pristupiti tablici Registri PDV-a, locirati sekcional koji treba vratiti na prethodno stanje (npr. *RIE*) i ručno ispraviti, za tekuću godinu u donjoj detaljnoj mreži, polja: **Broj posljednje ispisane stranice**, **Zadnji datum ispisa**.
-5. Ako se periodične likvidacije ispisuju zajedno s običnim PDV sekcionalima (npr. za prodaju ili nabavu), te u svim slučajevima kada je potrebno mijenjati PDV knjiženja za koja su, osim konačne likvidacije, već ispisani i sekcionali u konačnom obliku, u tablici **Knjige PDV-a** pritisnuti tipku **Otkaži zaključni izvještaj** u traci izbornika. Pojavit će se popup u kojem je potrebno odabrati i potvrditi razdoblje koje se želi otključati te PDV sekcional koji se želi otključati. U slučaju otključavanja više razdoblja za određeni sekcional, preporučuje se postupati uzastopno, otključavajući sva eventualna međurazdoblja, i to počevši od najnovijeg prema najstarijem. Nakon toga ručno vratiti podatke o *zadnjoj ispisanoj stranici, datumu zadnjeg ispisa i zadnjem PDV protokolu*.
+Ova oznaka aktivira logike namenjene inostranim lokalizacijama koje nisu italijanske.
 
 </details>
 
 <details>
 
-  <summary> 13. Kako postupiti za otključavanje konačnog ispisa Dnevnik knjiženja? </summary>
+  <summary>7. Povezao sam vrstu poreza po odbitku sa kupcem kako bih generisao e-račun sa svim potrebnim oznakama. Sada želim da proknjižim račun, ali računovodstveno knjiženje nije ispravno i ne sadrži porez po odbitku. Zašto?</summary>
 
-1. Kada je izrađen konačni ispis Knjige dnevnika, u formi za ispis **Dnevnik knjiženja**  bila je pokrenuta funkcija ispisa s uključenim oznakom *Definitivno*. U tom trenutku, podsjećamo, izvršavala se i kontrola s odgovarajućom porukom upozorenja, ukoliko su postojali knjiženi dokumenti s datumom prije odabranih datuma u filtru ispisa, a koji još nisu bili ispisani kao konačni. Upozorenje se ipak moglo zanemariti. Period ispisan kao konačan postajao je zaključan za bilo kakve izmjene u knjiženjima.  
-2. **Za otključavanje** razdoblja koje je već definitivno otisnuto, potrebno je pristupiti formi Konfiguracija > Parametri > Administracija > **Računovodstveni parametri**  za tekuću godinu ili godinu koju želite otključati, te koristiti tipku **Otkaži zaključni izvještaj**. Pojavit će se skočni prozor u kojem treba navesti razdoblje (od datuma do datuma) za koje želite izvršiti otključavanje. Otključavanje tehnički znači postavljanje svih relevantnih knjiženja unutar odabranog razdoblja u status nije definitivno (polje je vidljivo samo u bazi podataka, ili ako se svojstvo IsPrintedInJournal - Otisnuto u glavnoj knjizi doda u formu koja referira na objekt FSPosting poput forme *Računovodstvene evidencije* dostupne putem izbornika Administracija > Evidencije > Evidencije), Stoga se preporučuje postupati uredno i kronološki, kako bi se izbjegla situacija u kojoj ostaju razdoblja koja nisu u definitivnom stanju, takva razdoblja će i dalje biti prijavljena kroz upozorenje opisano u prethodnoj točki.  
-3. Nakon otključavanja, potrebno je ručno vratiti podatke koji su prethodno bili pohranjeni u formi Računovodstveni parametri tijekom procesa konačnog ispisa:  
-    - Datum posljednjeg ispisa glavne knjige: postaviti na posljednji datum knjiženja koji nije bio otključan  
-    - Zadnja stranica / redak: vratiti na posljednju vrijednost koja nije bila obuhvaćena otključavanjem  
-    - Saldo Dugovna / Potražna strana: izbrisati postojeće vrijednosti, budući da će se one automatski ponovno izračunati prilikom nove konačne ispise  
-</details>
-
-<details>
-
-  <summary> 14. Kako mogu prisilno zatvoriti otvorenu partiju? </summary>
-
-Stanje jedne partije (otvorena, zatvorena, djelomično otvorena) izračunava sustav i ne može se prisiliti izravnim djelovanjem na polje Stanje partije; odmah bi se ponovno izračunalo.  
-Partija je *zatvorena* (i ovo stanje se bilježi) samo ako postoji uplata za tu partiju (vezana uz nju i s istim brojem).
-
-Stoga, ispravan način za zatvaranje stavke koja je stvorena izvan knjigovodstva, ili koja je ostala otvorena jer knjiženje plaćanja nije generiralo i plaćanje na razini stavki, sastoji se u korištenju sljedeće procedure.
-
-1. Otvorite formu Administracija > Partije > **Plaćanja**
-2. Kreirajte novo plaćanje klikom na tipku **Novo** 
-3. Odmah nakon otvaranja forme s podacima novog plaćanja, umjesto da ih unosite ručno, kliknite na naredbu **Kreiraj iz partija / Plaćanja** koji prikazuje iskačući prozor za pretraživanje i odabir otvorene stavke koju želite zatvoriti. U iskačućem prozoru nalaze se uobičajena polja za pretraživanje stavki, dovoljno je odabrati mišem stavku koju želite zatvoriti i pritisnuti gumb **Odaberi**. Automatski će se stvoriti ispravne veze između stavke i plaćanja. Status stavke bit će automatski preračunat kao *Zatvorena*.
+U tabeli *Vrste poreza po odbitku* potrebno je otvoriti vrstu povezanu sa predmetnim kupcem i proveriti da li je polje *Vrste dospeća* postavljeno na *Neto dospeća*.
 
 </details>
 
 <details>
 
-  <summary> 15. Kako mogu poništiti (vratiti natrag) bankovnu mjenicu koja je već prezentirana ili odobrena? </summary>
+  <summary>8. Zašto mi Fluentis u novom računovodstvenom knjiženju uvek predlaže poslednju valutu korišćenu sa odabranim šablonom, zanemarujući podrazumevanu valutu kupca ili dobavljača?</summary>
 
-Postupak izdavanja bankovne potvrde i njezine kasnije knjiženja i prezentacije na račun dobar završetak (salvo buon fine) uključuje niz uzastopnih koraka. Stoga, u slučaju da se pokuša izvršiti vraćanje (rollback), na primjer, stvaranja bankovne potvrde koja je već predstavljena banci ili akreditirana, softver će onemogućiti ovu operaciju vraćajući poruku upozorenja.
+Potrebno je proveriti postavku opšteg parametra sa oznakom `CA-RegCont-General_PurposeCurrencyByTemplate` u tabeli `PARAM_Parameter`.
 
-Sve faze kreiranja i prezentacije s naknadnim knjiženjem, kao i operacije knjiženja, mogu se obnoviti, ali je potrebno djelovati u ispravnom logičkom redoslijedu, počevši od kasnijih operacija do prvih faza.
+Ako je parametar postavljen na `1`, predlaže se poslednja valuta korišćena sa odabranim šablonom.
 
-Dakle, redoslijed operacija izvršenih za kreiranje je sljedeći:
+Ako je parametar postavljen na `0`, ne predlaže se nijedna valuta, već se primenjuje osnovna logika prema kojoj se najpre uzima valuta preduzeća, a zatim valuta definisana za kupca ili dobavljača.
 
-- Knjiženje izlazne fakture s otvaranjem partije
-- Automatsko kreiranje bankovne mjenice iz otvorenih partija
-- Knjiženje izdavanja bankovne mjenice (često se obavlja zajedno s prethodnim korakom putem čarobnjaka – wizard)
-- Kreiranje prezentacijske liste i umetanje efekata (bankovnih mjenica) u listu  
-- Knjiženje prezentacije liste  
-- Knjiženje odobrenja (accredito) bankovnih mjenica  
+</details>
 
-Redoslijed za poništavanje (rollback)  
+<details>
 
-- Poništavanje knjiženja odobrenja  
-- Poništavanje knjiženja prezentacijske liste  
-- Uklanjanje efekta (bankovne mjenice) iz prezentacijske liste (koja možda neće biti moguće izbrisati ako sadrži i druge efekte), odabirom unutar liste i pritiskom na tipku DELETE
-- Poništavanje knjiženja efekata (PRIJE sljedećeg koraka)  
-- Poništavanje automatskog kreiranja efekata iz partija  
- 
-Podsjećamo da su procedure poništavanja dostupne unutar istih formi u kojima je izvršeno početno kreiranje, u odgovarajućoj kartici koja se nalazi odmah uz glavnu, i koja je uvijek prisutna.
+  <summary>9. Potrebno je kreirati više numeracija za izlazne račune. Nije jasno da li je potrebno kreirati onoliko registara izlaznog PDV-a koliko ima numeracija ili se za jedan registar izlaznog PDV-a može koristiti više numeracija.</summary>
+
+Odnos koji postoji u ciklusu knjiženja prodaje je sledeći:
+
+**Vrsta računa > Numeracija > Povezani šabloni knjiženja > Knjiga PDV-a povezana sa šablonom**
+
+U standardnom okruženju može se primetiti da može postojati više vrsta računa, ali ako su povezane sa istim šablonom, koji stoga koristi isti PDV registar (knjigu), numeracija je ista, odnosno zajednička. Na primer, nakon računa broj 1 za vrstu A, za vrstu B kreiraće se račun broj 2.
+
+Ako postoje različite vrste računa sa različitim paralelnim numeracijama, preporučuje se razlikovati PDV registre i stoga ih povezati i sa različitim šablonima. U suprotnom može doći do sukoba pri dodeli PDV protokola.
+
+Razlog je taj što je u šablonima obično aktivirana opcija koja predlaže broj PDV protokola jednak broju dokumenta, kako ne bi bilo potrebno voditi računa o redosledu knjiženja računa prema njihovom broju. Ako se ne koriste različiti PDV registri, potrebno je deaktivirati tu opciju.
+
+</details>
+
+<details>
+
+  <summary>10. Kako je moguće upravljati pojednostavljenim knjižnim odobrenjem samo za PDV, vrste TD08, na primer za povrat PDV-a od kupca u stečaju?</summary>
+
+1. U tabeli **Administracija > Vrste dokumenata** potrebno je proveriti da li postoji odgovarajuća vrsta dokumenta i, ako je potrebno, dodati je. Polja **Kod** i **Opis** mogu se proizvoljno definisati, na primer *Pojednostavljeno knjižno odobrenje za povrat PDV-a* ili *Knjižno odobrenje samo za PDV*. Oznaka **Knjižno odobrenje** mora biti **aktivirana**, a u polju **Kod za e-račune** mora biti navedeno `TD08`.
+
+2. U tabeli **Prodaja > Vrste računa** potrebno je proveriti da li postoji odgovarajuća vrsta i, ako je potrebno, dodati je. Polja **Kod** i **Opis** mogu se proizvoljno definisati, na primer *Pojednostavljeno knjižno odobrenje za povrat PDV-a* ili *Knjižno odobrenje samo za PDV*. U polju **Priroda računa** OBAVEZNO je odabrati stavku ***Knjižno odobrenje samo za PDV***. U polju **Vrsta dokumenta** potrebno je odabrati vrstu definisanu u tački 1., dok se u polju **Šablon** odabira odgovarajući računovodstveni šablon, koji je potrebno kreirati ili odabrati u tabeli **Administracija > Šabloni glavne knjige**, kako bi računovodstveno knjiženje odgovaralo predmetnoj situaciji. Na primer, može se koristiti šablon namenjen knjižnim odobrenjima sa odgovarajućom šemom knjiženja.
+
+3. Kreirati novi dokument u modulu **Prodaja > Izlazni računi** koristeći vrstu računa kreiranu u tački 2.
+   - Posebna vrsta postavljena u polju **Priroda računa** iz tačke 2. omogućava unos isključivo redova vrste *Napomena* u mreži **Artikli** dokumenta. U njih je moguće uneti kratak opis izvršene korekcije, na primer: „Dokument izdat u skladu sa čl. 26., st. 3-bis, D.P.R. br. 633/1972, isključivo radi povrata PDV-a.”
+   - Proširivanjem odeljka *Vrsta reference* u *Zaglavlju* dokumenta moguće je, osim polja **Vrsta reference**, uneti i detalje prethodnog računa koji se ispravlja.
+   - Kod ove posebne vrste knjižnog odobrenja vrednostima se može upravljati isključivo u odeljku **Sažetak**, odnosno u mreži *Sažetak PDV-a*, gde se direktno unosi vrednost u polje **PDV** sa negativnim predznakom i odgovarajući kod PDV-a, na primer 22 %, dok osnovica ostaje 0 jer je reč o knjižnom odobrenju samo za PDV.
+
+4. Generisati XML datoteku i poslati e-račun na uobičajeni način, prema uputstvima iz dokumentacije.
+
+5. Proknjižiti knjižno odobrenje na uobičajeni način. Ako se poveže tipičan šablon za knjižna odobrenja u Italiji, na primer ona dostupna u okruženjima Fast Start, računovodstveno knjiženje izvršiće se na odgovarajući način. U odeljku PDV-a knjižiće se samo iznos PDV-a, bez osnovice, dok će se u računovodstvenom delu potraživanje od kupca umanjiti na potražnoj strani za iznos PDV-a koji se odbija sa konta izlaznog PDV-a na dugovnoj strani, u skladu sa izvršenim povratom.
+
+</details>
+
+<details>
+
+  <summary>11. Kako je moguće upravljati „Obaveštenjem” TD29 za prijavu neizdatog ili neispravnog računa dobavljača?</summary>
+
+1. U tabeli **Administracija > Vrste dokumenata** potrebno je proveriti da li postoji odgovarajuća vrsta dokumenta i, ako je potrebno, dodati je. Polja **Kod** i **Opis** mogu se proizvoljno definisati, na primer *Obaveštenje o neispravnom fakturisanju dobavljača*. Oznaka **Samofaktura** mora biti **aktivirana**, a u polju **Kod za e-račune** mora biti navedeno `TD29`.
+
+2. U tabeli **Prodaja > Vrste računa** potrebno je proveriti da li postoji odgovarajuća vrsta i, ako je potrebno, dodati je. Polja **Kod** i **Opis** mogu se proizvoljno definisati, na primer *Obaveštenje o neispravnom fakturisanju*. U polju **Priroda računa** potrebno je odabrati stavku ***Račun***, a u polju **Vrsta dokumenta** vrstu definisanu u tački 1. U polju **Šablon** nije neophodno povezati vrednost jer je reč samo o obaveštenju o neizdavanju računa od strane dobavljača, bez uticaja na PDV.
+
+3. Kreirati novi dokument u modulu **Prodaja > Izlazni računi** koristeći vrstu računa kreiranu u tački 2.
+   - Proširivanjem odeljka *Vrsta reference* u *Zaglavlju* dokumenta moguće je, ako je potrebno, osim polja **Vrsta reference**, uneti i detalje prethodnog računa koji se ispravlja.
+   - U polje **Isporučilac** u zaglavlju dokumenta potrebno je uneti podatke dobavljača, dok se u polje **Kupac** unose matični podaci sopstvenog preduzeća posebno kreirani za samofakture.
+   - U odeljku **Artikli** dokumenta potrebno je uneti red sa, na primer, opisom nefakturisane robe i pripadajućim iznosima. Ako je reč o ispravci nepravilnog ili pogrešnog računa, potrebno je uneti vrednost ispravke.
+
+4. Kreirati XML datoteku i poslati je uobičajenim postupkom.
+
+</details>
+
+<details>
+
+  <summary>12. Kako je moguće otključati periodični obračun PDV-a koji je konačno odštampan?</summary>
+
+1. U formi **Administracija > DEKLARACIJE > Plaćanja PDV-a**, u kojoj su prikazani svi periodi za koje postoji konačni obračun, potrebno je odabrati period koji se želi otključati, odnosno više perioda, i kliknuti na dugme ***Izbriši obračune PDV-a***.
+
+2. Ako je pri konačnom obračunu bila aktivirana opcija automatskog knjiženja prenosa, po pravilu će se prikazati poruka kojom se potvrđuje automatsko brisanje tih knjiženja. Prikazaće se i upozorenje da je potrebno ručno izbrisati zapis za odgovarajući period iz forme **Periodična prijava PDV-a**, koji je automatski kreiran prilikom pokretanja konačnog obračuna.
+
+3. Kao što je navedeno u prethodnoj tački, potrebno je ručno izbrisati zapis iz forme **Periodična prijava PDV-a** za period koji je otključan. U toj tabeli se čuvaju podaci za upravljanje ručnim poljima obračuna, kao što su prenos PDV kredita, kompenzacija i slično.
+
+4. Potrebno je vratiti brojač stranica i datum poslednje štampe za PDV registar na kojem se štampaju periodični obračuni, koji u bazi Fast Start obično ima kod `RIE`. U tabeli **PDV registri** potrebno je pronaći registar koji se vraća u prethodno stanje, na primer *RIE*, i za tekuću godinu u donjoj mreži detalja ručno ispraviti polja **Poslednja odštampana stranica** i **Datum poslednje štampe**.
+
+5. Ako se periodični obračuni štampaju kao nastavak redovnog PDV registra, na primer registra izlaznih ili ulaznih računa, kao i u svim slučajevima kada je potrebno izmeniti PDV knjiženja za koja su, osim konačnog obračuna, konačno odštampani i PDV registri, u tabeli **PDV registri** potrebno je na traci menija kliknuti na dugme **Poništi konačne štampe**. Prikazaće se iskačući prozor u kojem je potrebno odabrati i potvrditi period i PDV registar koji se želi otključati.
+
+   Ako se za određeni PDV registar otključava više perioda, preporučuje se postupati uzastopno i otključati sve eventualne međuperiode, počevši od najnovijeg prema najstarijem. Nakon toga potrebno je ručno vratiti vrednosti polja *Poslednja odštampana stranica*, *Datum poslednje štampe* i *Poslednji PDV protokol*.
+
+</details>
+
+<details>
+
+  <summary>13. Kako poništiti konačnu štampu Dnevnika knjiženja?</summary>
+
+1. Prilikom kreiranja konačne štampe u formi **Dnevnik knjiženja**, štampa je pokrenuta sa aktiviranom oznakom *Konačna štampa*. U tom trenutku izvršavala se i kontrola i prikazivala odgovarajuća poruka upozorenja ako su postojala knjiženja sa datumom koji prethodi datumima odabranim u filteru štampe, a koja još nisu bila konačno odštampana. Upozorenje je ipak bilo moguće zanemariti. Period koji je konačno odštampan bio je zaključan kako bi se onemogućile naknadne izmene računovodstvenih knjiženja.
+
+2. **Za otključavanje** konačno odštampanog perioda potrebno je otvoriti formu **Konfiguracija > Parametri > Administracija > Parametri računovodstva** za tekuću godinu ili godinu koju je potrebno otključati i upotrebiti dugme **Poništi konačne štampe**. Prikazaće se iskačući prozor u kojem je potrebno odrediti period, odnosno datum od i datum do, koji se želi otključati.
+
+   Tehnički gledano, otključavanje se sastoji od postavljanja knjiženja obuhvaćenih odabranim periodom u status koji nije konačan. Taj podatak je vidljiv samo u bazi podataka ili dodavanjem svojstva `IsPrintedInJournal` – *Odštampano u dnevniku knjiženja* – u formu koja se zasniva na objektu `FSPosting`, na primer u formu *Knjiženja* dostupnu putem menija **Administracija > Knjiženja > Knjiženja**.
+
+   Stoga se preporučuje otključavanje sprovoditi uredno i uzastopno, izbegavajući ostavljanje međuperioda koji nisu konačno odštampani. Takvi periodi će u svakom slučaju biti prijavljeni upozorenjem navedenim u prethodnoj tački.
+
+3. Nakon otključavanja potrebno je ručno vratiti podatke koji su prilikom konačne štampe sačuvani u formi **Parametri računovodstva**:
+   - **Datum poslednje štampe dnevnika knjiženja**: vratiti na datum poslednjeg knjiženja koje nije otključano;
+   - **Poslednja stranica / red**: vratiti na poslednju stranicu i red koji nisu otključani;
+   - **Dugovni / potražni saldo**: izbrisati vrednosti koje će se automatski ponovo kreirati prilikom nove konačne štampe.
+
+</details>
+
+<details>
+
+  <summary>14. Kako prinudno zatvoriti otvorenu stavku?</summary>
+
+Status otvorene stavke (*otvorena*, *zatvorena* ili *delimično otvorena*) izračunava sistem i nije ga moguće prinudno promeniti direktnom izmenom polja **Status otvorene stavke**, jer bi sistem odmah ponovo izračunao njegovu vrednost.
+
+Otvorena stavka ima status *Zatvorena* samo ako za nju postoji povezano plaćanje sa istim brojem.
+
+Stoga se za pravilno zatvaranje otvorene stavke kreirane izvan računovodstva ili stavke koja je ostala otvorena jer računovodstveno knjiženje plaćanja nije kreiralo odgovarajuće plaćanje na nivou otvorenih stavki koristi sledeći postupak:
+
+1. Otvoriti formu **Administracija > Otvorene stavke > Plaćanja**.
+
+2. Kreirati novo plaćanje klikom na dugme **Novo**.
+
+3. Odmah nakon otvaranja forme sa podacima novog plaćanja, umesto ručnog unosa podataka, upotrebiti naredbu **Kreiraj iz otvorenih stavki / plaćanja**. Otvoriće se iskačući prozor za pretraživanje i odabir otvorene stavke koju je potrebno zatvoriti.
+
+   U iskačućem prozoru dostupna su uobičajena polja za pretraživanje otvorenih stavki. Dovoljno je mišem odabrati stavku koju je potrebno zatvoriti i kliknuti na dugme **Odaberi**.
+
+   Sistem će automatski ispravno kreirati veze između otvorene stavke i plaćanja, a status otvorene stavke automatski će se ponovo izračunati kao *Zatvorena*.
+
+</details>
+
+<details>
+
+  <summary>15. Kako vratiti bankovnu doznaku koja je već poslata banci ili odobrena?</summary>
+
+Postupak izdavanja bankovne doznake i njenog naknadnog knjiženja i slanja banci uz uslov naplate sastoji se od niza međusobno povezanih uzastopnih koraka. Stoga, ako se pokuša izvršiti povrat (*rollback*), na primer kreiranja bankovne doznake koja je već poslata banci ili odobrena, program će sprečiti tu radnju i prikazati poruku upozorenja.
+
+Sve faze kreiranja, slanja i naknadnog odobrenja, kao i pripadajuća računovodstvena knjiženja, moguće je vratiti. Međutim, postupak je potrebno sprovesti obrnutim logičkim redosledom, počevši od poslednje izvršene radnje i postepeno se vraćajući prema početnim fazama.
+
+Ako je redosled izvršenih radnji bio sledeći:
+
+- knjiženje izlaznog računa uz kreiranje otvorene stavke;
+- automatsko kreiranje bankovne doznake iz otvorenih stavki;
+- knjiženje izdavanja bankovne doznake, koje se često izvršava istovremeno sa prethodnim korakom putem čarobnjaka;
+- kreiranje zbirnog naloga za slanje banci i dodavanje instrumenata plaćanja, odnosno bankovnih doznaka, u zbirni nalog;
+- knjiženje slanja zbirnog naloga banci;
+- knjiženje odobrenja bankovnih doznaka.
+
+</details>
+
+Poništavanje je potrebno izvršiti sledećim redosledom:
+
+- **Poništavanje knjiženja odobrenja**
+- **Poništavanje knjiženja zbirnog naloga**
+- **Uklanjanje instrumenta plaćanja (bankovne doznake) iz zbirnog naloga** (koji možda nije moguće izbrisati jer sadrži i druge instrumente plaćanja) tako što se odabere unutar zbirnog naloga i pritisne dugme **DEL**
+- **Poništavanje knjiženja instrumenata plaćanja** (**PRE SLEDEĆEG KORAKA**)
+- **Poništavanje automatskog kreiranja instrumenata plaćanja iz otvorenih stavki**
+
+Podsećamo da su postupci poništavanja dostupni u istim formama u kojima je izvršeno kreiranje, na odgovarajućoj sledećoj kartici koja je uvek dostupna.
+
+</details>
+
+<details>
+
+  <summary>16. Zašto u naknadi agenta udeo doprinosa Enasarco na teret preduzeća ne odgovara procentu postavljenom za vrstu agenta (na primer 8,5 %)?</summary>
+
+U određenim situacijama, na primer pri unosu prve naknade za primaoca naknade vrste **Agent**, kada mesec nadležnosti za Enasarco nije postavljen u prvom tromesečju, može biti predložen iznos doprinosa na teret preduzeća koji je veći od iznosa dobijenog jednostavnom primenom procenta koji tereti preduzeće nalogodavca.
+
+Razlog je taj što se u detaljnim postavkama kategorije agenta nalazi i parametar **minimalnog doprinosa**. Ako sistem ne pronađe prethodne naknade kojima je taj minimalni iznos već pokriven, Fluentis će predložiti njegovu nadoknadu kroz prvu dostupnu naknadu.
 
 </details>
