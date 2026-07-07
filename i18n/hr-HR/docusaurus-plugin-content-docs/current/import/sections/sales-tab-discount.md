@@ -2,6 +2,6 @@
 
 **Cjenik**: prikazuje se cjenik iz kojeg je artikl preuzet, s datumom početka/kraja valjanosti, s posebnim uvjetima prodaje (npr. razred popusta) dodijeljenim artiklu u cjeniku.
 
-*Puosebna tipka*
+*Posebna tipka*
 
-> **Izbriši rabate**: omogućuje brisanje popusta povezanog s odabranim artiklom u gornjoj mreži.
+> **Izbriši rabate**: omogućuje brisanje popusta povezanog s odabranim artiklom u gornjoj tablici.

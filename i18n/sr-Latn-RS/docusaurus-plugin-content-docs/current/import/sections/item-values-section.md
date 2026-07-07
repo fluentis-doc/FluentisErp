@@ -1,12 +1,12 @@
-Donji desni dio prikazuje sažetak troškova koji formiraju konačnu cijenu odabranog artikla u mreži artikala.
+Donji desni deo prikazuje sažetak troškova koji formiraju konačnu cenu odabranog artikla u mreži artikala.
 
-**Jedinična cijena**: vrijednost polja Cijena;
+**Jedinična cena**: vrednost polja Cena;
 
-**Količina**: vrijednost polja Količina;
+**Količina**: vrednost polja Količina;
 
-**Iznos u retku**: Cijena artikla * Količina artikla
+**Iznos u redu**: Cena artikla * Količina artikla
 
-**Ukupno rabat**: zbroj popusta na artikl, uključujući i konačne popuste;
+**Ukupan rabat**: zbir popusta na artikal, uključujući i konačne popuste;
 
 **Osnovica**: Bruto osnovica - Popusti;
 

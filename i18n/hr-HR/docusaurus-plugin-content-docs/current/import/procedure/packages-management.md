@@ -1,3 +1,3 @@
 **Upravljanje pakiranjem**: Omogućuje otvaranje upravljanja povratnom ambalažom korištenom u dokumentu nabave.<br />
 Tipka postaje aktivna ako je dokument spremljen, ali nije utovaren.<br />
-Klikom na ovu tipku otvara se odgovarajući obrazac gdje se: unese količina, odabere redak i izvrši prijenos odabrane ambalaže u retke artikala klikom na tipku **Izvrši**. U ovom obrascu prikazani su artikli koji su uneseni s vrstom Pakiranje i koji su u tablici. [Povratna ambalaža](/docs/configurations/tables/logistics/package-to-be-returned). 
+Klikom na ovu tipku otvara se odgovarajući obrazac gdje se: unese količina, odabere redak i izvrši prijenos odabrane ambalaže u retke artikala klikom na tipku **Izvrši**. U ovom obrascu prikazani su artikli koji su uneseni s vrstom pakiranja i koji su u tablici. [Povratna ambalaža](/docs/configurations/tables/logistics/package-to-be-returned). 

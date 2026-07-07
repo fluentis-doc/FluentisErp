@@ -1,23 +1,23 @@
-Jednom kada su postavljeni svi željeni *Filtri*, klikom na gumb *Traži* prikazat će se u mreži redak za svaku narudžbu koja je ispisana, potvrđena i nije izvršena ili je djelomično izvršena.
+Jednom kada su postavljeni svi željeni *Filteri*, klikom na dugme *Traži* u tabeli će se prikazati red za svaku narudžbinu koja je odštampana, potvrđena i nije izvršena ili je delimično izvršena.
 
 :::Napomene Upozorenje
-Procedura preuzima sve podatke prisutne u narudžbi i kao posljedica toga primijenit će se uvjeti kupnje prisutni u narudžbi, čak i ako su se ti uvjeti trenutno promijenili.
+Procedura preuzima sve podatke prisutne u narudžbini i kao posledica toga primeniće se uslovi kupovine prisutni u narudžbini, čak i ako su se ti uslovi u međuvremenu promenili.
 :::
 
-U mreži rezultata, korisnik ima mogućnost:
+U tabeli rezultata, korisnik ima mogućnost:
 
- 1. odabrati *narudžbu u cijelosti*. Za to će biti dovoljno odabrati oznaku koja se nalazi na početku retka narudžbe.
- 2. odabrati samo *neke* od predloženih *artikala*. Za to će biti dovoljno odabrati oznaku koja se nalazi na početku retka artikla.
- 3. odabrati samo *neke artikle* i to samo za *određenu količinu*. U tom slučaju potrebno je promijeniti količinu koja za izuzeti.
+ 1. da odabere *narudžbinu u celosti*. Za to će biti dovoljno odabrati oznaku koja se nalazi na početku reda narudžbine.
+ 2. da odabere samo *neke* od predloženih *artikala*. Za to će biti dovoljno odabrati oznaku koja se nalazi na početku reda artikla.
+ 3. da odabere samo *neke artikle* i to samo za *određenu količinu*. U tom slučaju potrebno je promeniti količinu koja se izuzima.
 
-Za dovršetak postupka potrebno je zatim kliknuti na tipku *Izuzimanje*, koji će preuzeti sve podatke prisutne u narudžbi i prenijeti ih u dokument.
+Za dovršetak postupka potrebno je zatim kliknuti na dugme *Izuzimanje*, koje će preuzeti sve podatke prisutne u narudžbini i preneti ih u dokument.
 
-*Posebne tipke*:  
-> **Traži** : tipka za pretraživanje narudžbi dobavljača;  
-> **Izuzimanje**: tipka za prijenos podataka odabrane narudžbe unutar novog dokumenta;  
-> **Prisilno izvršenje narudžbe**: tipka za prisilno izvršenje narudžbe;  
-> **Izvršenje narudžbi**: tipka za izvršenje narudžbe;  
-> **Proširi**: tipka za proširenje cijelog stabla narudžbi u donjoj mreži, kako bi se prikazali artikli koji se u njima nalaze;  
-> **Sažmi**: tipka za smanjenje prikaza redaka artikla, i za prikazivanje samo redaka narudžbe; 
-> **Označi sve**: tipka za odabir svih artikala s popisa;  
-> **Odznači sve**: tipka za odznačavanje svih artikala s popisa.  
+*Posebna dugmad*:  
+> **Traži** : dugme za pretraživanje narudžbina dobavljaču;  
+> **Izuzimanje**: dugme za prenos podataka odabrane narudžbine unutar novog dokumenta;  
+> **Prisilno izvršenje narudžbine**: dugme za prisilno izvršenje narudžbine;  
+> **Izvršenje narudžbina**: dugme za izvršenje narudžbine;  
+> **Proširi**: dugme za proširenje celog stabla narudžbina u donjoj tabeli, kako bi se prikazali artikli koji se u njima nalaze;  
+> **Sažmi**: dugme za smanjenje prikaza redova artikala i za prikazivanje samo redova narudžbine; 
+> **Označi sve**: dugme za odabir svih artikala sa liste;  
+> **Odznači sve**: dugme za uklanjanje oznake sa svih artikala sa liste.  

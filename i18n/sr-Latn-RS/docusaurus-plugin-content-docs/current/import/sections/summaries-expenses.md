@@ -1,7 +1,7 @@
-Ovdje su troškovi uneseni u šifarniku kontakta, na kartici *Troškovi/Popusti*.
+Ovde su troškovi uneti u šifarniku kontakta, na kartici *Troškovi/Popusti*.
 
-Također postoji mogućnost unosa troškova koji se odnose samo na korišteni dokument.
+Takođe postoji mogućnost unosa troškova koji se odnose samo na korišćeni dokument.
 
-**Tip/Opis**: omogućuje odabir tipa troškova (predefiniranih u *Tipovima troška*), dodjeljujući tipu postotak troška koji se treba primijeniti. 
-**Postotak/Vrijednost**: polje koje identificira hoće li se troškovi izračunati s postotkom ili s unaprijed definiranim novčanim iznosom.  
-**Postotak**: numerička vrijednost postotka troškova. 
+**Tip/Opis**: omogućava odabir tipa troškova (unapred definisanih u *Tipovima troška*), dodeljujući tipu procenat troška koji treba primeniti. 
+**Procenat/Vrednost**: polje koje određuje da li će se troškovi izračunati procentualno ili pomoću unapred definisanog novčanog iznosa.  
+**Procenat**: numerička vrednost procenta troškova.  

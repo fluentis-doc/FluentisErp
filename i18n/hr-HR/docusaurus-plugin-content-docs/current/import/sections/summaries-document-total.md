@@ -1,6 +1,6 @@
 **Iznos stavki bez popusta**: predstavlja zbroj vrijednosti svih artikala;
 
-**Predujam**: predstavlja vrijednost eventualnog primljenog predujma;
+**Zaduženje (predujam)**: predstavlja vrijednost eventualnog primljenog predujma;
 
 **Poklonjeni iznos**: predstavlja iznos artikala tipa poklon unesenih u karticu *Artikli*.
 
@@ -8,7 +8,7 @@
 
 **Neto iznos artikala**: *Iznos stavki bez popusta* – *Ukupni primijenjeni popusti*; 
 
-**Ukupni konačni rabati**: predstavlja vrijednost konačnih popusta izraženih u postotku na bruto iznos artikala; 
+**Ukupno konačnih rabata**: predstavlja vrijednost konačnih popusta izraženih u postotku na bruto iznos artikala; 
 
 **Iznos umanjen za ukupni popust**: *Neto iznos artikala* - *Ukupni primijenjeni rabati*;
 
@@ -20,7 +20,7 @@
 
 **Ukupno troškovi/popusti/doplate**: predstavlja vrijednost troškova unesenih u tablicu
 
-**Osnovica**: *Neto iznos artikala* – *Ukupni konačni rabati* + *Ukupno za stavke troškova* + *Ukupno troškovi/popusti/doplate*;
+**Osnovica**: *Neto iznos artikala* – *Ukupno konačnih rabata* + *Ukupno za stavke troškova* + *Ukupno troškovi/popusti/doplate*;
 
 **Porez**: predstavlja zbroj vrijednosti sadržanih u sažecima PDV-a;
 

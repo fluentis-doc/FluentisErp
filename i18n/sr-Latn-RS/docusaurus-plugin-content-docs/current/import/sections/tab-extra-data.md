@@ -1,1 +1,1 @@
-Ovdje se nudi informacija unesena u *Kartica subjekta > kartica Dodatni podaci*, samo ako postoje zadani podaci.
+Ovde se prikazuju informacije unete u *Kartica subjekta > kartica Dodatni podaci*, samo ako postoje podrazumevani podaci.

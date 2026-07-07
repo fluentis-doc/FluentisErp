@@ -1,1 +1,1 @@
-**Skladište/Opis/Predložak**: Ovi podaci su potrebni za registracije utovara u skladište. Uzimaju se, na temelju dokumenta o nabavi, iz tablice *Tipovi narudžbi/primki/ulaznih računa* ili se unose ručno.
+**Skladište/Opis/Predložak**: Ovi podaci su potrebni za knjiženje utovara u skladište. Uzimaju se, na temelju dokumenta o nabavi, iz tablice *Tipovi narudžbi/primki/ulaznih računa* ili se unose ručno.

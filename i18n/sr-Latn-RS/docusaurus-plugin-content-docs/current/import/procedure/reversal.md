@@ -1,6 +1,6 @@
-**Storno**: Tipka omogućuje djelomično ili potpuno storniranje dokumenta. Ovom funkcijom moguće je stvoriti dokument za storniranje koji će istovariti (u nabavci) / utovariti (u prodaji) skladište.  
+**Storno**: Dugme omogućava delimično ili potpuno storniranje dokumenta. Ovom funkcijom moguće je kreirati dokument za storniranje koji će razdužiti (u nabavci) / zadužiti (u prodaji) skladište.  
 
 *Procedura*:  
-- odabrati dokument koji treba stornirati i kliknuti na gumb **Storno**. Aplikacija će otvoriti pop-up prozor sa svim retcima artikala iz izvornog dokumenta;  
-- unijeti u ovaj obrazac: tip storna dokumenta koji želite stvoriti i, za svaki artikal, naznačiti količinu koja se vraća, predložak storna i postaviti oznaku **Poništiti**;  
-- kliknite **OK** za potvrdu operacije.
+- odabrati dokument koji treba stornirati i kliknuti na dugme **Storno**. Aplikacija će otvoriti iskačući prozor sa svim redovima artikala iz izvornog dokumenta;  
+- uneti u ovaj obrazac: tip storna dokumenta koji želite da kreirate i, za svaki artikal, naznačiti količinu koja se vraća, šablon storna i postaviti oznaku **Poništiti**;  
+- kliknite na **OK** za potvrdu operacije.

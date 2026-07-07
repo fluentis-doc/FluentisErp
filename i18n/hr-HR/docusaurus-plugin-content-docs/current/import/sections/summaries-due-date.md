@@ -1,37 +1,22 @@
-Predstavlja sažetak dospijeća dokumenta, za svaki *način* i *uvjete* plaćanja. 
-**Broj**: Progresivni broj retka.
+Predstavlja sažetak dospijeća dokumenta za svaku *vrstu* i *način* plaćanja.  
 
-**Plaćanje**: Predstavlja alfanumerički kod *Tipa plaćanja* preuzet iz *Zaglavlje > kartica Plaćanja*.  
-
-**Iznos**: Izračunati iznos dospijeća, može se ručno urediti, pri čemu se automatski aktivira oznaka *Ručno uređivanje* (automatski se pokreću provjere i obavijesti o usklađenosti između vrijednosti roka dospijeća i ukupnog iznosa računa).
-
-**Datum dospijeća**: Izračunati datum dospijeća, može se ručno urediti, pri čemu se automatski aktivira oznaka *Ručno uređivanje*.
-
-**Troškovi naplate**: Polje u kojem se navode izračunati troškove naplate.
-
-**PDV**: Primijena na troškove naplate (može se postaviti i ručno).
-
-**Predložak plaćanja**: Moguće je izravno unijeti u fakturu računovodstveni predložak kojim će se automatski knjižiti naplate/plaćanja. Napomena: obratite pažnju na predložak jer će koristiti konta prisutna čak i bez podkonta, zbog čega je i prisutno sljedeće polje.
-
-**Konto kupca / dobavljača**: Konto koje se koristi za naplatu/plaćanje (npr. blagajna ili banka) dospijeća, zamjenjujući konto prisutan u računovodstvenom predlošku plaćanja (ili naplate)
-
-**Br. potvrde**: Eventualni broj potvrde za primljena sredstva.
-	
-**Jed.**: Aktivira knjiženje zatvaranja dospjelog plaćanja u automatskom knjiženju.
-
-**Tip popusta**: Tip popusta.
-
-**Vrijednost popusta**: Vrijednost popusta na iznos po naplati.
-
-**Detalji izjava o namjeri**: Radi se o upućivanju na izjavu o namjeri. Na troškove naplate može se primijeniti PDV oslobođen temeljem izjave o namjeri (tzv. korištenje prava na oslobođenje od PDV-a prema izvozniku), stoga je potrebno omogućiti da se i ovdje poveže odgovarajuća izjava o namjeri (kao i kod stavaka artikala i stavaka troškova).
+- **Broj**: redni broj retka.  
+- **Plaćanje**: predstavlja alfanumeričku oznaku *Vrste plaćanja* preuzetu iz *Zaglavlja dokumenta > kartica Plaćanja*.  
+- **Iznos**: izračunani iznos dospijeća. Može se ručno promijeniti, pri čemu se automatski aktivira sljedeća oznaka *Ručna izmjena*. (Automatski se izvršavaju kontrole i prikazuju upozorenja o usklađenosti iznosa dospijeća s ukupnim iznosom računa.)
+- **Datum dospijeća**: izračunani datum dospijeća. Može se ručno promijeniti, pri čemu se automatski aktivira sljedeća oznaka *Ručna izmjena*.
+- **Troškovi naplate**: polje u kojem se prikazuju izračunani troškovi naplate.
+- **PDV**: PDV koji se primjenjuje na troškove naplate (može se postaviti i ručno).
+- **Predložak plaćanja**: omogućuje izravan unos predloška u račun, čime se automatski generira knjiženje naplate/plaćanja. Napomena: potrebno je obratiti pozornost na taj predložak jer će se koristiti unesena konta čak i bez podkonta, zbog čega je dostupno sljedeće polje.
+- **Konto/podkonto kupca/dobavljača**: konto koji se koristi za naplatu/plaćanje dospijeća (primjerice blagajna ili banka), pri čemu se njime briše konto postavljen u predlošku plaćanja (ili naplate).
+- **Br. potvrde**: eventualni broj potvrde za primljeni novac.
+- **Pojedinačno**: aktivira knjiženje zatvaranja dospijeća u automatski generiranom knjiženju.
+- **Vrsta popusta**: vrsta financijskog popusta.
+- **Vrijednost popusta**: vrijednost financijskog popusta pri naplati.
+- **Detalj izjava**: predstavlja referencu na izjavu o namjeri. Na troškove naplate uvijek se može primjenjivati PDV u okviru poreznog plafona, stoga je i ovdje potrebno omogućiti unos povezane izjave o namjeri (kao i za retke artikala i retke troškova).
 
 **ULAZNI RAČUNI:**
 
-**Znak**: samo se dospijeća koja imaju ovu oznaku obrađuju u plaćanju s posrapredloškom i postavljenim kontom (solo le scadenze che hanno questo flag vengono poi gestite in pagamento con causale e conto impostato).
-	
-**Modeli poziva na broj plaćanja**: Model za kreiranje poziva na broj plaćanja. U nekim državama svaka dospjelost na računu ima kod koji dodjeljuje izdavatelj računa; taj je kod strukturiran prema određenim modelima (tablica MB_PaymentReferenceModels), kako bi se mogao generirati pomoću algoritma.
-
-**Šifre modela plaćanja**: Ovo je šifra (strukturirana prema prethodno navedenom modelu) koja se prenosi u otvorenu stavku, a zatim i u naloge za plaćanje koji se šalju banci, kako bi banka mogla obavijestiti primatelja koja je dospjelost podmirena (čime se omogućuje automatizirani uvoz bankovnih izvoda i zatvaranje otvorenih stavaka). Odatle se šifra prenosi u otvorenu stavku i u SEPA datoteku.
-
-**Datum za primjenu popusta pri plaćanju predujma** Ovo je polje predviđeno u strukturi računa za SDI, a odnosi se na krajnji datum do kojeg se može primijeniti financijski popust.
-
+- **Predznak**: samo dospijeća koja imaju aktiviranu ovu oznaku naknadno se obrađuju pri plaćanju pomoću postavljenog predloška i konta.
+- **Modeli reference plaćanja**: model za generiranje oznake plaćanja. U nekim inozemnim lokalizacijama svako dospijeće na računu ima oznaku koju dodjeljuje izdavatelj računa. Ta je oznaka strukturirana prema određenim modelima (tablica `MB_PaymentReferenceModels`) kako bi se mogla generirati primjenom algoritma.
+- **Oznake modela plaćanja**: oznaka strukturirana prema prethodno odabranom modelu, koja se prenosi u dospijeće, a zatim i u naloge za plaćanje koji se šalju banci. Na taj način banka primatelju plaćanja može prenijeti informaciju o tome koje je dospijeće plaćeno, čime se omogućuje automatizirani uvoz bankovnih transakcija i zatvaranje dospijeća. Ova se oznaka prenosi u dospijeće i u SEPA datoteku.
+- **Krajnji datum za prijevremeno plaćanje**: polje predviđeno u formatu SdI računa koje određuje krajnji datum do kojeg se može primijeniti financijski popust.

@@ -1,4 +1,4 @@
-Donose se varijante odabranog artikla, kodificirane u kartici [Varijante](/docs/erp-home/registers/items/create-new-item) iz šifarnika artikla ili se mogu unijeti ručno.
-Nudi mogućnost upravljanja varijantama artikla na način koji se razlikuje od onoga što je predloženo u retku artikla.
-Na primjer, u svakoj liniji artikla moguće je unijeti ukupnu količinu; zatim, u istoj kartici, mogu se definirati različite količine za više varijanti odabranog artikla, kao i za varijantu i atribut, odnosno upravljanje veličinom/bojom.  
-Ova operacija je moguća samo ako sve varijante artikla imaju cijenu koja je jednaka cijeni artikla u standardnoj konfiguraciji.
+Unose se varijante odabranog artikla, šifrovane u kartici [Varijante](/docs/erp-home/registers/items/create-new-item) iz šifarnika artikla ili se mogu uneti ručno.
+Omogućava upravljanje varijantama artikla na način koji se razlikuje od onoga što je predloženo u redu artikla.
+Na primer, u svakom redu artikla moguće je uneti ukupnu količinu; zatim, u istoj kartici, mogu se definisati različite količine za više varijanti odabranog artikla, kao i za varijantu i atribut, odnosno upravljanje veličinom/bojom.  
+Ova operacija je moguća samo ako sve varijante artikla imaju cenu koja je jednaka ceni artikla u standardnoj konfiguraciji.

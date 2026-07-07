@@ -1,7 +1,7 @@
-Predloženi popusti u zaglavlju dokumenta prenose se na svaki novi redak artikla unesen u dokument.
+Predloženi popusti u zaglavlju dokumenta prenose se na svaki novi red artikla unet u dokument.
 
-Ako nakon unosa redaka artikla bude unesen novi popust u zaglavlju, taj popust se neće replicirati u već unesenim redovima artikla.
+Ako se nakon unosa redova artikala unese novi popust u zaglavlju, taj popust se neće preneti na već unete redove artikala.
 
-*Posebna tipka*
+*Posebno dugme*
 
-> **Izbriši rabate**: koristi se za brisanje odabranih redaka popusta.
+> **Izbriši rabate**: koristi se za brisanje odabranih redova popusta.

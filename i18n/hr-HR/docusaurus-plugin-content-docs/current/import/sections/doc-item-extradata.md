@@ -1,1 +1,1 @@
-Donosi se popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću unosa novih dodatnih podataka koji su korisni samo za predmetni dokument, uz mogućnost putem odgovarajuće oznake odabrati koje dodatne podatke ispisati.
+Prikazuje se popis **Dodatnih podataka** povezanih s artiklom, uz mogućnost dodavanja novih dodatnih podataka koji vrijede samo za predmetni dokument. Oznaka **Za ispis** omogućuje odabir dodatnih podataka koji će se ispisati.

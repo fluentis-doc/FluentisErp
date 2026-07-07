@@ -1,27 +1,27 @@
-**Bruto iznos artikala**: predstavlja zbroj vrijednosti svih artikala;
+**Iznos stavki bez popusta**: predstavlja zbir vrednosti svih artikala;
 
-**Predujam**: predstavlja vrijednost eventualnog primljenog predujma;
+**Zaduženje (avans)**: predstavlja vrednost eventualno primljenog avansa;
 
-**Iznos poklona**: predstavlja iznos artikala tipa poklon unesenih u karticu *Articoli*.
+**Poklonjeni iznos**: predstavlja iznos artikala tipa poklon unetih u karticu *Artikli*.
 
-**Ukupni primjenjeni rabati**: predstavlja ukupnu vrijednost popusta primijenjenih na artikle, ali bez konačnih popusta. 
+**Ukupni primenjeni rabati**: predstavlja ukupnu vrednost popusta primenjenih na artikle, ali bez konačnih popusta. 
 
-**Neto iznos artikala**: *Bruto iznos artikala* – *Ukupni primijenjeni popusti*; 
+**Neto iznos artikala**: *Iznos stavki bez popusta* – *Ukupni primenjeni popusti*; 
 
-**Ukupni konačni rabati**: predstavlja vrijednost konačnih popusta izraženih u postotku na bruto iznos artikala; 
+**Ukupno konačnih rabata**: predstavlja vrednost konačnih popusta izraženih u procentu na bruto iznos artikala; 
 
-**Ukupno s neto finalnim rabatima**: *Neto iznos artikala* - *Ukupni konačni rabati*;
+**Iznos umanjen za ukupni popust**: *Neto iznos artikala* - *Ukupni primenjeni rabati*;
 
-**Nedokumentirani troškovi**: predstavlja vrijednost troškova unesenih u prethodnoj kartici kao artikle *Tip trošak*; 
+**Ukupno za stavke troškova**: predstavlja vrednost troškova unetih u prethodnoj kartici kao artikle *Tip troška*; 
 
-**Troškovi naplate**: predstavlja zbroj troškova naplate unesenih u mreži *Naknade*; 
+**Troškovi naplate**: predstavlja zbir troškova naplate unetih u tabelu
 
-**Troškovi ovjere**: predstavlja zbroj troškova ovjere unesenih u mreži *Naknade*;
+**Trošak overe**: predstavlja zbir troškova overe unetih u tabelu
 
-**Dokumentirani troškovi**: predstavlja vrijednost troškova unesenih u mreži *Naknade*; 
+**Ukupno troškovi/popusti/doplate**: predstavlja vrednost troškova unetih u tabelu
 
-**Osnovica**: *Neto iznos artikala* – *Konačni rabati* + *Ukupno nedokumentirani troškovi* + *Ukupno dokumentirani troškovi*;
+**Osnovica**: *Neto iznos artikala* – *Ukupno konačnih rabata* + *Ukupno za stavke troškova* + *Ukupno troškovi/popusti/doplate*;
 
-**Porez**: predstavlja zbroj vrijednosti sadržanih u sažecima PDV-a;
+**Porez**: predstavlja zbir vrednosti sadržanih u sažecima PDV-a;
 
 **Ukupno**: *Osnovica* + *PDV*.

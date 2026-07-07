@@ -1,10 +1,10 @@
-**Tip linije** nudi mogućnost odabira, iz padajućeg  izbornika, artikala s različitim karakteristikama.
+**Tip reda** nudi mogućnost odabira, iz padajućeg menija, artikala sa različitim karakteristikama.
 
 :::napomene Napomena
-Ako se izravno započne s unosom artikla, njegova *klasa*, *šifra* i *tip retka - Šifrirani artikl* se automatski unesu.
+Ako se direktno započne sa unosom artikla, njegova *klasa*, *šifra* i *vrsta reda - Šifrovani artikal* se automatski unose.
 :::
 
-> **Artikl sa klasom**: to su artikli iz šifarnika i mogu se knjižiti u analitičko računovodstvo te registrirati u skladištu. <br />
-> **Artikl bez klase**: to su opisni artikli i ne mogu se knjižiti u analitičko računovodstvo niti registrirati u skladištu. <br />
-> **Trošak**: Ovo su ili artikli iz šifarnikai ili opisni artikli i tretiraju se na različite načine u sažecima dokumenata, ako je artikal troška šifriran i od fiskalnog interesa, bit će registriran u skladištu; ako je opisni ili nije od fiskalnog interesa, neće biti registriran u skladištu. <br />
-> **Artikl bilješke**: to su opisne napomene navedene u ispisu dokumenta; ne utječe na računovodstvo i skladište.
+> **Artikal sa klasom**: to su artikli iz šifarnika i mogu se knjižiti u analitičko računovodstvo i u skladištu. <br />
+> **Artikal bez klase**: to su opisni artikli i ne mogu se knjižiti u analitičko računovodstvo niti u skladištu. <br />
+> **Trošak**: Ovo su ili artikli iz šifarnika ili opisni artikli i tretiraju se na različite načine u sažecima dokumenata, ako je artikal troška šifrovan i od fiskalnog interesa, biće knjižen u skladištu; ako je opisni ili nije od fiskalnog interesa, neće biti knjižen u skladištu. <br />
+> **Artikal napomene**: to su opisne napomene navedene u štampi dokumenta; ne utiče na računovodstvo i skladište.

@@ -1,3 +1,3 @@
-**Klasa/Šifra/Opis artikla**: se ogu unijeti  [ručno ](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz upotrebu  [helpa u polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koji će prikazati sve unesene podatke u *Šifarniku artikla*.
+**Klasa/Šifra/Opis artikla**: mogu se uneti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz korišćenje [pomoći pri unosu/u polju](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koja će prikazati sve unete podatke u *Šifarniku artikla*.
 
-Nakon unosa artikla, njegov *Opis* bit će automatski preuzet iz šifarnika. Ako artikl ima *Varijante*, bit će potrebno odabrati željenu varijantu iz padajućeg izbornika *Varijante*.
+Nakon unosa artikla, *Opis* će biti automatski preuzet iz šifarnika. Ako artikal ima *Varijante*, biće potrebno odabrati željenu varijantu iz padajućeg menija *Varijante*.

@@ -1,5 +1,4 @@
-**Trgovački predstavnik**: trgovački predstavnik povezan s odgovarajućom provizijom za odabrani artikal; podatak odgovara onome što je prisutno u *Zaglavlje> kartica Trgovački predstavnik*. Postotak se može promijeniti.
+**Trgovački predstavnik**: trgovački predstavnik (agent) povezan sa odgovarajućom provizijom za odabrani artikal; podatak odgovara onome što je prisutno u *Zaglavlje > kartica Trgovački predstavnik*. Procenat se može promeniti.
 
-*Posebna tipka*
-
-> **Izbriši Trgovačkog predstavnika**: omogućuje brisanje trgovačkog predstavnika povezanog s artiklom.
+*Posebno dugme*
+> **Otkaži trgovačkog predstavnika**: omogućava brisanje trgovačkog predstavnika povezanog sa artiklom.

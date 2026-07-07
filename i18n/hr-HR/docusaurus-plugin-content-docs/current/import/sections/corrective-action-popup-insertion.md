@@ -37,4 +37,4 @@ Sve informacije navedene u izvornim dokumentima mogu se uređivati.
 
 Zatim se pritisne gumb **U redu** ili gumb **Otkaži** ako se želi nastaviti s aktivnošću stvaranja ili ne.   
 
-Nakon što je obrada dovršena, prikazuje se novokreirana *Korektivna radnja* kako bi se mogla dovršiti potrebnim informacijama, a referenca (vrsta, godina i broj) ažurira se u retku izvornog dokumenta.  
+Nakon što je obrada dovršena, prikazuje se novo kreirana *Korektivna radnja* kako bi se mogla dovršiti potrebnim informacijama, a referenca (vrsta, godina i broj) ažurira se u retku izvornog dokumenta.  
