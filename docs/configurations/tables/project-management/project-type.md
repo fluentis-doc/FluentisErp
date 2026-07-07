@@ -23,9 +23,13 @@ Sempre all'interno di questa form è possibile aggiungere nuove tipologie di pro
 
 **Descrizione Tipo Ordine**: è la descrizione del tipo ordine associato; utilizzato nel caso di creazione progetti da ordine.
 
-**Tipo Fattura**: è possibile indicare un tipo fattura associato, necessario per la fatturazione dei progetti;
+**Tipo Fattura**: è possibile indicare un tipo fattura, utilizzato nella fatturazione delle rate impostate in riga progetto, tab "Fatturazione"; oppure utilizzato nella fatturazione dalla tab "Fatture di anticipo" se la riga ha tipo "a saldo". Nel caso di tipo "in conto", questo tipo fattura viene utilizzato in assenza di tipologia fattura di anticipo specifica. 
 
-**Descrizione Tipo Fattura**: è la descrizione della fattura associata;
+**Descrizione Tipo Fattura**: è la descrizione del tipo fattura associato nella colonna precedente;
+
+**Tipo Fattura anticipo**: è possibile indicare un tipo fattura, utilizzato nella fatturazione dalla tab "Fatture di anticipo" se la riga ha tipo "in conto"; se il "tipo fattura anticipo" non è impostato, viene utilizzata la tipologia impostata in "Tipo Fattura", che quindi diventa valida per entrambe le casistiche, in conto ed a saldo. 
+
+**Descrizione Tipo Fattura anticipo**: è la descrizione del tipo fattura anticipo associato nella colonna precedente;
 
 **Template**: questo flag indica che il tipo progetto è un template, quindi non potrà essere richiamato in altri documenti, ma utilizzato solamente come modello per la generazione di nuovi progetti.  
 
