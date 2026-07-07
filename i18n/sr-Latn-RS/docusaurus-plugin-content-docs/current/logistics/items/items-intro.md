@@ -1,8 +1,24 @@
 ---
-title: Artikli
-sidebar_position: 1
+title: "Artikli"
+sidebar_position: "1"
+description: "Detalji o upravljanju i kreiranju artikala u ERP sistemu."
+schema: "TechArticle"
+keywords: ["artikli", "upravljanje artiklima", "kreiranje artikala", "pretraživanje artikala"]
 ---
 
-Obrazac se nalazi na putanji **Logistika > Artikli > Artikli**, ali i na putanji **Početna stranica > Artikli > Artikli**.
+# Artikli
 
-Za detaljno objašnjenje funkcioniranja ovog obrasca upućujemo na slijedeće članke: [Pretraživanje artikala](/docs/erp-home/registers/items/search-items) i [Stvaranje novih artikala](/docs/erp-home/registers/items/create-new-item).
+## Putanja za pristup
+
+Forma za upravljanje artiklima dostupna je putem sledećih putanja:
+
+- **Logistika > Artikli > Artikli**  
+ili
+- **Početna > Artikli > Artikli**
+
+## Dodatni resursi
+
+Za više detalja o radu forme pogledajte sledeće članke:
+
+- [Pretraživanje artikala](/docs/erp-home/registers/items/search-items)
+- [Kreiranje novih artikala](/docs/erp-home/registers/items/create-new-item)

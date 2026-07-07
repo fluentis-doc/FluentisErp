@@ -67,3 +67,9 @@ Na kartici **Detalji** moguće je masovno poništiti zalihe skladišta. Obično 
 - na kartici **Detalji** zaliha artikla odaberite sve artikle koje želite poništiti
 - pritisnite gumb *Generiranje zapisa*, koji će otvoriti formu *Knjiženja* iz koje možete odabrati uzrok i, bez navođenja količine, pritisnite gumb OK.  
 - na taj način primijetit ćete poništenje zaliha za odabrane artikle.
+
+## Sažetak i dodatne informacije
+
+U ovom dokumentu opisana je funkcionalnost prikaza zaliha u Fluentisu, uz naglasak na važnost učinkovitog upravljanja skladišnim resursima. Opisani su različiti načini grupiranja podataka te postupci za kreiranje skladišnih knjiženja i svođenje zaliha na nulu.
+
+Za dodatne informacije pogledajte odjeljke koji se odnose na [Kartu lokacija po artiklu](/docs/logistics/warehouse/location/item-location-map) i upravljanje skladišnim knjiženjima.
