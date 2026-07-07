@@ -1,1 +1,1 @@
-**Izbriši profitne centre**: omogućuje brisanje odabranog retka profitnog centra.
+**Izbriši profitne centre**: omogućuje brisanje odabranog reda profitnog centra.

@@ -1,1 +1,1 @@
-**Izbriši lot**: Omogućuje brisanje odabranog retka lota.
+**Izbriši lot**: Omogućuje brisanje odabranog reda lota.

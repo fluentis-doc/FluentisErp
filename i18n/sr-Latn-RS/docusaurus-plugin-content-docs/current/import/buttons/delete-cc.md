@@ -1,1 +1,1 @@
-**Izbriši centre troška**: omogućuje brisanje odabranog retka centra troška
+**Izbriši centre troška**: omogućuje brisanje odabranog reda centra troška

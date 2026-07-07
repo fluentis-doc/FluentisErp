@@ -1,1 +1,1 @@
-**Ažuriraj Lokaciju**: koristi se za ažuriranje lokacije na temelju predloška skladišta i vraća je u redak. Gumb postaje aktivan ako se odaberu najmanje dva artikla i otvari Help za lokacije gdje se može odabrati nova lokacija za sve odabrane artikle.
+**Ažuriraj Lokaciju**: koristi se za ažuriranje lokacije na temelju skladišnog predloška te njezino upisivanje u redak. Tipka postaje aktivna kada su odabrana najmanje dva artikla i otvara pomoćnik za odabir lokacija, u kojem je moguće odabrati novu lokaciju za sve artikle odabrane u ovom postupku.

@@ -1,3 +1,3 @@
 
-**Ažuriranje cjenika**: omogućuje ažuriranje cijene artikla na temelju novog cjenika (u slučaju da je unesen ažurirani cjenik).<br />
-Klikom na padajući izbornik pored gumba ![](/img/neutral/common/down-arrow.png), biti će moguće kreirati novi cjenik ukoliko još nije stvoren?.
+**Ažuriranje cjenika**: omogućava ažuriranje cene artikla na osnovu novog cenovnika (u slučaju da je unet ažurirani cenovnik).<br />
+Klikom na padajući meni pored dugmeta ![](/img/neutral/common/down-arrow.png), biće moguće kreirati novi cenovnik ukoliko još nije kreiran.

@@ -13,9 +13,9 @@ import Link from '@docusaurus/Link';
 
 ## Kako je organizirana dokumentacija
 
-Svaki odjeljak odgovara jednom funkcionalnom području sustava, čime se olakšava pretraživanje vodiča, konfiguracija i tutoriala.
+Svaki odjeljak odgovara jednom funkcionalnom području sustava, čime se olakšava pretraživanje vodiča, konfiguracija i pomoći.
 
-> Koristite [**Fast Start**](/docs/guide/fast-start) za početne postavke (configurazioni)  
+> Koristite [**Fast Start**](/docs/guide/fast-start) za početne postavke
 > Slijedite [**Pokretanje ERP**](/docs/guide/start-application/fluentis-connection) za povezivanje baze podataka i korisnika.  
 > Proširite znanje o funkcionalnostima glavnih modula putem priloženih linkova.  
 > Pogledajte [**FAQ**](/docs/knowlegde-base/intro) i brze savjete za optimizaciju svakodnevnog korištenja softvera.  
@@ -74,7 +74,7 @@ Svaki odjeljak odgovara jednom funkcionalnom području sustava, čime se olakša
 
   <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
     <h4>🤝 <strong><Link to="/docs/crm/crm-intro">CRM</Link></strong></h4>
-    <p>Potpuno upravljanje CRM kontaktima, marketinškim kampanjama, newsletterima, prodajnim prilikama, prognozama prodaje i korisničkom podrškom putem integriranog helpdeska.</p>
+    <p>Potpuno upravljanje CRM kontaktima, marketinškim kampanjama, 'newsletterima', prodajnim prilikama, prognozama prodaje i korisničkom podrškom putem integriranog 'helpdeska'.</p>
   </div>
 
   <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
@@ -99,12 +99,12 @@ Svaki odjeljak odgovara jednom funkcionalnom području sustava, čime se olakša
 
   <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
     <h4>📦 <strong><Link to="/docs/ddmrp/ddmrp-intro">DDMRP</Link></strong></h4>
-    <p>Napredno upravljanje potražnjom i bufferima proizvodnje prema DDMRP metodologiji. Optimizacija zaliha i tokova materijala u stvarnom vremenu.</p>
+    <p>Napredno upravljanje potražnjom i proizvodnjom prema DDMRP metodologiji. Optimizacija zaliha i tokova materijala u stvarnom vremenu.</p>
   </div>
 
   <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
     <h4>🚚 <strong><Link to="/docs/logistics/logistics-intro">Logistika</Link></strong></h4>
-    <p>Upravljanje skladištem, artiklima, serijama, pickingom, fizičkim inventurama, Utovarna jedinica, planovima utovara i otpremom, integrirano s proizvodnjom i prodajom za optimizirane tokove.</p>
+    <p>Upravljanje skladištem, artiklima, serijama, preuzimanjem ('pickingom'), fizičkim inventurama, utovarna jedinica, planovima utovara i otpremom, integrirano s proizvodnjom i prodajom za optimizirane tokove.</p>
   </div>
 
   <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '16px', border: '1px solid #e5e7eb', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>

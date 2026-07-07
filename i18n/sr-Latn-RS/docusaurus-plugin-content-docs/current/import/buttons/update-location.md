@@ -1,1 +1,1 @@
-**Ažuriraj Lokaciju**: koristi se za ažuriranje lokacije na temelju predloška skladišta i vraća je u redak. Gumb postaje aktivan ako se odaberu najmanje dva artikla i otvari Help za lokacije gdje se može odabrati nova lokacija za sve odabrane artikle.
+**Ažuriraj Lokaciju**: koristi se za ažuriranje lokacije na osnovu skladišnog predloška i njeno upisivanje u red. Dugme postaje aktivno kada su izabrana najmanje dva artikla i otvara pomoć za izbor lokacija, u kojoj je moguće izabrati novu lokaciju za sve artikle izabrane u ovom postupku.
