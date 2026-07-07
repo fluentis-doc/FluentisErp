@@ -1,5 +1,5 @@
 ---
-title: Kvaliteta KB
+title: Kvaliteta FAQ
 sidebar_position: 1
 ---
 

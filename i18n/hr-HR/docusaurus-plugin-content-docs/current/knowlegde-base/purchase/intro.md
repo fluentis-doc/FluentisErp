@@ -1,5 +1,5 @@
 ---
-title: Nabava KB
+title: Nabava FAQ
 sidebar_position: 1
 ---
 
@@ -14,9 +14,9 @@ Kupcu je važno znati svoj šifru artikla, dok opis nije presudan jer se u ispis
 
 <details>
 
-  <summary>2. Čemu služi <b>Tip platnog razreda</b> u stavkama cjenika?</summary>
+  <summary>2. Čemu služi <b>Vrsta platnog razreda</b> u stavkama cjenika?</summary>
   
-Tip platnog razreda unijeta u stavku cjenika automatski se predlaže u dokumentima. U suprotnom, korisnik mora ručno odabrati koju vrstu razreda želi primijeniti. Za isti artikl moguće je definirati više razreda popusta.
+Vrsta platnog razreda unijeta u stavku cjenika automatski se predlaže u dokumentima. U suprotnom, korisnik mora ručno odabrati koju vrstu razreda želi primijeniti. Za isti artikl moguće je definirati više razreda popusta.
 
 
 </details>

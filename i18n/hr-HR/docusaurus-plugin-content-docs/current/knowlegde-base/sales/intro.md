@@ -1,22 +1,22 @@
 ---
-title: Prodaja KB
+title: Prodaja FAQ
 sidebar_position: 1
 ---
 
 
 <details>
 
-  <summary>1. Kako osigurati da se cijene iz cjenika za komponente iz strukture artikla prenesu u narudžbu nakon korištenja opcije <b>Raspakiraj prvu razinu strukture</b>?</summary>
+  <summary>1. Kako osigurati da se cijene iz cjenika za komponente iz strukture artikla prenesu u narudžbu nakon korištenja opcije <b>Raširi prvu razinu strukture</b>?</summary>
   
-Potrebno je uključiti opciju „Predloži komercijalne podatke za ručno raspakiranu osnovnu strukturu“, koja se nalazi u parametrima narudžbi kupaca. Time će se komercijalni podaci (uključujući i cijene iz cjenika) prenijeti na stavke.  
+Potrebno je uključiti opciju „Predloži komercijalne podatke za ručno raširenu osnovnu strukturu“, koja se nalazi u parametrima narudžbi kupaca. Time će se komercijalni podaci (uključujući i cijene iz cjenika) prenijeti na stavke.  
 
 </details>
 
 <details>
 
-  <summary>2. Kako funkcionira <b>datum valjanosti</b> u kartici Cjenici unutar šifrarnika kupca?</summary>
+  <summary>2. Kako funkcionira <b>datum valjanosti</b> u kartici Cjenici unutar šifarnika kupca?</summary>
   
-Datum valjanosti uneseno u mreži taba Cjenici (Listini) u kartonu kupca služi za označavanje koje vrste cjenika su valjane od tog datuma za tog kupca. Preuzimanje cijena u dokumentima mora znati u kojim cjenicima tražiti artikal.    
+Datum valjanosti uneseno u mreži taba Cjenici (Listini) u kartonu kupca služi za označavanje koje vrste cjenika su valjane od tog datuma za tog kupca. Preuzimanje cijena u dokumentima mora znati u kojim cjenicima tražiti artikl.    
 Kao prvi uvjet, cjenik koji se treba unijeti u dokumente mora biti valjan na ovaj datum.    
 Kao drugi uvjet za odabir vrste cjenika koji će se unijeti u dokumente, odabrani cjenik mora imati datum početka valjanosti strogo manji od datuma dokumenta.    
 Na taj način moguće je kreirati sve cjenike koje želimo i primijeniti ih na kupca samo od određenog datuma.
@@ -74,7 +74,7 @@ Ako nije zadana, korisnik mora ručno odabrati vrstu razreda koju želi primijen
   
 Da, moguće je kreirati poseban parser za izvoz podataka u formatu koji zahtijeva drugi poslovni sustav.
 Alternativno, moguće je koristiti XML datoteku elektroničke fakture, ako drugi program podržava njezin uvoz.
-Fluentis podržava kreiranje faktura putem uvoza XML-a iz elektroničke fakturacije 
+Fluentis podržava kreiranje faktura putem uvoza XML-a iz elektroničke fakture. 
 
 </details>
 
@@ -136,7 +136,7 @@ Ako je faktura nastala iz otpremnice koja je već knjižena, tada je aktivan op�
 
 <details>
 
-  <summary>13. Kako mogu prikazati Težinene u sažecima fakture? </summary>
+  <summary>13. Kako mogu prikazati 'težine' u sažecima fakture? </summary>
   
 Da bi se u sažecima fakture prikazivale težine, potrebno je: u Parametrima dokumenta uključiti opciju **Preračunaj prijevoz** u sažecima odabrati ispravnu jedinicu mjere, kako bi se vrijednost pravilno prikazala.        
 

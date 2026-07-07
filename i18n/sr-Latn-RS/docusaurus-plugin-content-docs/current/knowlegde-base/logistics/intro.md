@@ -1,15 +1,15 @@
 ---
-title: Logistika KB
+title: Logistika FAQ
 sidebar_position: 1
 ---
 
 
 <details>
 
-  <summary>1. Kako se u <b>Vizualizaciji zaliha</b> koriste filtri za alternativnu mjernu jedinicu?</summary>
+  <summary>1. Kako se u <b>Vizualizaciji zaliha</b> koriste filteri za alternativnu mernu jedinicu?</summary>
   
-Ovaj filter se koristi kada kupac redovito mijenja faktor pretvorbe artikala iz različitih razloga.  
-Filter <b>zbroj kretanja</b> tretira alternativnu mjernu jedinicu kao zbroj ulaznih i izlaznih kretanja te uzima vrijednosti iz skladišnih zapisa.  
-Filter <b>Faktor pretvorbe</b> vrši ponovno preračunavanje za sva kretanja tako da koristi faktor pretvorbe koji je aktivan u trenutku pretraživanja, ignorirajući vrijednosti u skladišnim zapisima i primjenjujući novu pretvorbu prema novom faktoru.  
+Ovaj filter se koristi kada kupac redovno menja faktor konverzije artikala iz različitih razloga.  
+Filter <b>zbir kretanja</b> tretira alternativnu mernu jedinicu kao zbir ulaznih i izlaznih kretanja i uzima vrednosti iz skladišnih zapisa.  
+Filter <b>Faktor konverzije</b> vrši ponovno preračunavanje za sva kretanja tako što koristi faktor konverzije koji je aktivan u trenutku pretraživanja, ignorišući vrednosti u skladišnim zapisima i primenjujući novu konverziju prema novom faktoru.  
 
 </details>

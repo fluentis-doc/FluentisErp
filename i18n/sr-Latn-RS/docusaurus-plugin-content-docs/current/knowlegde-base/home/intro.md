@@ -1,39 +1,36 @@
 ---
-title: Početna stranica KB
+title: FAQ Početna stranica
 sidebar_position: 2
 ---
 
 
 <details>
 
-  <summary> 1. Unosom PDV broja u novi kontakt i klikom na Predloži podatke u traci s alatima, popunjavaju se opća polja. Postoji li izravna veza s trgovačkim komorama ili sličnom uslugom? </summary>
+  <summary>1. Kada se unese PIB u novi šifarnik kontakta i klikne na Predloži podatke na traci menija, popunjavaju se opšta polja. Da li postoji direktna veza sa privrednim komorama ili drugim sličnim servisom? </summary>
   
-Fluentis je povezan s VIES arhivima, koje je osigurala europska zajednica, tako da su dostupne informacije o mnogim talijanskim i europskim tvrtkama. Pri unosu broja PDV-a bit će ponuđeni poznati podaci.
+Fluentis je povezan sa VIES bazama podataka, koje je stavila na raspolaganje Evropska unija, pa su dostupne informacije o mnogim italijanskim i evropskim preduzećima. Stoga će se nakon unosa PIB-a predložiti poznati podaci.
 
 </details>
 
 <details>
 
-  <summary>2. Je li moguće po želji obojati ćelije u mrežama za pretraživanje ako sadrže određenu vrijednost? </summary>
+  <summary>2. Da li je moguće proizvoljno obojiti ćelije u mrežama za pretraživanje ako sadrže određenu vrednost? </summary>
 
-Da, ta je funkcionalnost moguća korištenjem **Uvjetnog oblikovanja**. Da biste odabrali boju koju će ćelija dobiti ako sadrži određenu vrijednost, postavite se na zaglavlje stupca, zatim kliknite desnim klikom > Conditional Formatting > Manage rules. U otvorenom prozoru odaberite *New Rule**, da biste otvorili prozor za stvaranje novog pravila (New Formatting Rule).  
-Ovdje odaberite vrstu pravila koje želite iz popisa. U dijelu **Edit the rule description**, kliknite na **[...]** u otvorenom prozoru unesite prvu vrijednost koju stupac može imati i spremite.  
-Zatim kliknite na **Format** u otvorenom prozoru na kartici **Fill**, odaberite boju koju želite da ćelija dobije ako je vrijednost jednaka onoj koju ste upravo unijeli. Potvrdite odabir.  
-Za svaku vrijednost koju stupac može imati, kreirajte novo pravilo. Spremite i osvježite formu da biste vidjeli rezultat.  
+Da, ova funkcionalnost je moguća korišćenjem opcije **Conditional formatting**. Da biste izabrali boju koja će se dodeliti ćeliji koja sadrži određenu vrednost, postavite se na zaglavlje kolone, zatim kliknite desnim tasterom miša > Conditional Formatting > Manage rules. U prozoru koji se otvori odaberite **New Rule**, kako bi se otvorio prozor New Formatting Rule.
+Ovde kao tip odaberite željeni tip pravila sa liste. U odeljku **Edit the rule description**, odaberite **[...]** i u prozoru koji se otvori unesite prvu vrednost koju kolona može imati; sačuvajte.
+Zatim kliknite na **Format** i u prozoru koji se otvori, na kartici **Fill**, odaberite boju koju kolona treba da dobije ako vrednost odgovara upravo unetoj vrednosti. Potvrdite. 
+Kreirajte novo pravilo za svaku vrednost koju kolona može imati. Sačuvajte i osvežite formu kako biste prikazali rezultat.
 
 </details>
 
 
 <details>
 
-  <summary>3. Je li moguće sakriti određenoj korisniku određenu vrstu računa? </summary>
+  <summary>3. Da li je moguće sakriti određenu vrstu računa od korisnika? </summary>
   
-Da, pomoću <b>restrikcija</b>. One sprječavaju korisnike u kreiranju, pregledavanju ili izmjeni određenih tipova dokumenata.
-Primjerice, da biste spriječili korisnika da koristi vrstu računa s kodom FVITDIF, potrebno je dodati odgovarajuću restrikciju i u korisnički ARM profil, u predviđenu tablicu.            
+Da, pomoću <b>Ograničenja</b>. Ona sprečavaju korisnike da kreiraju, prikazuju ili menjaju određene vrste dokumenata. U nastavku je prikazan primer kako sprečiti korisnika da koristi Vrstu računa sa kodom FVITDIF. Podsećamo da je potrebno dodati Ograničenje i u Arm profil korisnika, u odgovarajućoj mreži.            
 
 
 ![](/img/it-it/sales/sales-invoices/search-sales-invoices/restriction.png)
 
-
 </details>
-

@@ -1,5 +1,5 @@
 ---
-title: Logistika KB
+title: Logistika FAQ
 sidebar_position: 1
 ---
 

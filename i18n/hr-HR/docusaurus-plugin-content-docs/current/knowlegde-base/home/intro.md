@@ -1,39 +1,39 @@
 ---
-title: Početna stranica KB
+title: FAQ Početna
 sidebar_position: 2
 ---
 
 
 <details>
 
-  <summary> 1. Unosom PDV broja u novi kontakt i klikom na Predloži podatke u traci s alatima, popunjavaju se opća polja. Postoji li izravna veza s trgovačkim komorama ili sličnom uslugom? </summary>
+  <summary>1. Kada se u nove matične podatke kontakta unese PDV identifikacijski broj i na traci izbornika klikne Predloži podatke, popunjavaju se opća polja. Postoji li izravna veza s gospodarskim komorama ili nekom sličnom uslugom?</summary>
   
-Fluentis je povezan s VIES arhivima, koje je osigurala europska zajednica, tako da su dostupne informacije o mnogim talijanskim i europskim tvrtkama. Pri unosu broja PDV-a bit će ponuđeni poznati podaci.
+Fluentis je povezan s bazama sustava VIES, koje je omogućila Europska unija, pa su dostupni podaci o mnogim talijanskim i europskim poduzećima. Stoga će se nakon unosa PDV identifikacijskog broja predložiti dostupni podaci.
 
 </details>
 
 <details>
 
-  <summary>2. Je li moguće po želji obojati ćelije u mrežama za pretraživanje ako sadrže određenu vrijednost? </summary>
+  <summary>2. Je li moguće proizvoljno obojiti ćelije u mrežama za pretraživanje ako sadrže određenu vrijednost?</summary>
 
-Da, ta je funkcionalnost moguća korištenjem **Uvjetnog oblikovanja**. Da biste odabrali boju koju će ćelija dobiti ako sadrži određenu vrijednost, postavite se na zaglavlje stupca, zatim kliknite desnim klikom > Conditional Formatting > Manage rules. U otvorenom prozoru odaberite *New Rule**, da biste otvorili prozor za stvaranje novog pravila (New Formatting Rule).  
-Ovdje odaberite vrstu pravila koje želite iz popisa. U dijelu **Edit the rule description**, kliknite na **[...]** u otvorenom prozoru unesite prvu vrijednost koju stupac može imati i spremite.  
-Zatim kliknite na **Format** u otvorenom prozoru na kartici **Fill**, odaberite boju koju želite da ćelija dobije ako je vrijednost jednaka onoj koju ste upravo unijeli. Potvrdite odabir.  
-Za svaku vrijednost koju stupac može imati, kreirajte novo pravilo. Spremite i osvježite formu da biste vidjeli rezultat.  
+Da, ova je funkcionalnost dostupna putem opcije **Conditional Formatting**. Za odabir boje koja će se dodijeliti ćeliji koja sadrži određenu vrijednost, potrebno je postaviti pokazivač na zaglavlje stupca, a zatim kliknuti desnom tipkom miša i odabrati **Conditional Formatting > Manage Rules**. U prikazanoj formi potrebno je odabrati **New Rule**, čime se otvara forma **New Formatting Rule**.
+
+Ovdje je s popisa potrebno odabrati željenu vrstu pravila. U odjeljku **Edit the Rule Description** potrebno je odabrati **[...]** te u prikazanoj formi unijeti prvu vrijednost koju stupac može sadržavati i spremiti promjene.
+
+Zatim je potrebno kliknuti **Format** te u prikazanoj formi, na kartici **Fill**, odabrati boju koju stupac treba poprimiti ako vrijednost odgovara prethodno unesenoj vrijednosti. Potrebno je potvrditi odabir.
+
+Za svaku vrijednost koju stupac može sadržavati potrebno je kreirati novo pravilo. Nakon spremanja potrebno je osvježiti formu kako bi se prikazao rezultat.
 
 </details>
 
 
 <details>
 
-  <summary>3. Je li moguće sakriti određenoj korisniku određenu vrstu računa? </summary>
+  <summary>3. Je li moguće korisniku sakriti određenu vrstu računa?</summary>
   
-Da, pomoću <b>restrikcija</b>. One sprječavaju korisnike u kreiranju, pregledavanju ili izmjeni određenih tipova dokumenata.
-Primjerice, da biste spriječili korisnika da koristi vrstu računa s kodom FVITDIF, potrebno je dodati odgovarajuću restrikciju i u korisnički ARM profil, u predviđenu tablicu.            
+Da, pomoću <b>Ograničenja</b>. Ona sprječavaju korisnike u kreiranju, prikazivanju ili izmjeni određenih vrsta dokumenata. U nastavku je prikazan primjer kako korisniku onemogućiti korištenje vrste računa s kodom `FVITDIF`. Podsjećamo da je Ograničenje potrebno dodati i u korisnikov profil Arm, u odgovarajućoj mreži.            
 
 
 ![](/img/it-it/sales/sales-invoices/search-sales-invoices/restriction.png)
 
-
 </details>
-
