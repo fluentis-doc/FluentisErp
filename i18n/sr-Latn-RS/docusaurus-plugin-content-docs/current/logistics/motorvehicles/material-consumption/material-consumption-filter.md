@@ -1,32 +1,61 @@
 ---
 title: Potrošnja materijala (Filter)
+description: Upravljanje i pretraživanje knjiženja potrošnje materijala povezanih sa vozilima u oblasti Logistika.
+keywords:
+  - potrošnja materijala
+  - vozila
+  - logistika
+  - skladište
+  - Fluentis ERP
 sidebar_position: 1
+schema: HowTo
+sidebar_label: Potrošnja materijala (Filter)
+tags:
+  - logistika
+  - vozila
+  - skladište
+last_update:
+  author: Fluentis Documentation Team
+  date: 10-11-2025
 ---
 
-Obrazac se otvara putem putanje **Logistika > Vozila > Potrošnja materijala**.
+# Potrošnja materijala (Filter)
 
-Ovaj obrazac omogućuje upravljanje kretanjem stvarnog potrošnje materijala povezanog s vozilima kreiranim u tablici [Upravljanje vozilom](/docs/logistics/motorvehicles/motorvehicle-management).
+Ova sekcija opisuje način upotrebe forme **Potrošnja materijala (Filter)** za pretraživanje, pregled i upravljanje knjiženjima potrošnje materijala povezanim sa vozilima definisanim u tabeli [Upravljanje vozilima](/docs/logistics/motorvehicles/motorvehicle-management).
 
-**Pretraživanje Upravljanja vozilom**
+Forma se otvara putem menija **Logistika > Motorna vozila > Potrošnja materijala**.
 
-Obrazac se sastoji od područja filtra i područja rezultata. Nakon što su postavljeni svi željeni filtri, dovoljno je kliknuti na gumb **Traži** kako biste prikazali rezultate unutar mreže rezultata.
+## Pretraga upravljanja vozilima
 
-*Posebni gumbi*: 
+Forma se sastoji od oblasti **filtera** i oblasti **rezultata**.  
+Nakon postavljanja željenih filtera kliknite na dugme **Traži** za prikaz rezultata u mreži rezultata.
 
-> **Broj materijala**: označava datum dokumenta potrošnje materijala;            
-> **Datum materijala**: označava datum dokumenta potrošnje materijala;        
-> **Korisnik**: označava korisnika koji je kreirao dokument potrošnje materijala;        
-> **Šifra motornog vozila**: označava šifru vozila prisutnu u dokumentu potrošnje materijala;               
-> **Opis motornog vozila**: označava opis vozila prisutan u dokumentu potrošnje materijala.              
+### Posebna polja
 
-**Umetni Upravljanje vozilom**
+- **Broj materijala**: označava broj dokumenta potrošnje materijala.  
+- **Datum materijala**: označava datum dokumenta potrošnje materijala.  
+- **Korisnik**: označava korisnika koji je kreirao dokument.  
+- **Šifra motornog vozila**: označava kod vozila navedenog u dokumentu potrošnje materijala.  
+- **Opis motornog vozila**: prikazuje opis vozila navedenog u dokumentu potrošnje materijala.  
 
-Za unos novih *kretanja potrošnje materijala* potrebno je pritisnuti gumb **Novo**.    
-Za novi zapis pogledajte dokumentaciju o [Novoj potrošnji materijala](/docs/logistics/motorvehicles/material-consumption/new-material-consumption).
+Upotreba filtera omogućava brzo pronalaženje dokumenata potrošnje materijala i efikasno praćenje knjiženja povezanih sa svakim vozilom.
 
-*Pulsanti specifici*: 
+## Unos upravljanja vozilima
 
-> **Izradi zapis**: omogućuje registraciju potrošnje materijala stvaranjem odgovarajućeg kretanja u skladištu;         
-> **Povati u predhodno stanje**: omogućuje poništavanje potrošnje materijala poništavanjem odgovarajućeg kretanja u skladištu.  
+Za unos novih **knjiženja potrošnje materijala** kliknite na dugme **Novo**.  
+Kreiranje novog zapisa prati postupak opisan u namenskoj dokumentaciji:  
+[Nova potrošnja materijala](/docs/logistics/motorvehicles/material-consumption/new-material-consumption).
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkim funkcijama obrazaca obratite se na sljedeću vezu [Funkcionalnosti, specifični gumbi i polja](/docs/guide/common).
+### Posebna dugmad
+
+- **Unos zapisa**: omogućava knjiženje potrošnje materijala kreiranjem pripadajućeg skladišnog kretanja.  
+- **Vrati u prethodno stanje**: omogućava poništavanje potrošnje materijala i vraćanje pripadajućeg skladišnog kretanja.  
+
+## Sažetak i dodatne informacije
+
+Forma **Potrošnja materijala (Filter)** omogućava pretraživanje i upravljanje dokumentima potrošnje materijala povezanim sa vozilima te pruža alate za kreiranje, pregled i poništavanje knjiženja.
+
+**Dodatne informacije:**
+- [Upravljanje vozilima](/docs/logistics/motorvehicles/motorvehicle-management)
+- [Nova potrošnja materijala](/docs/logistics/motorvehicles/material-consumption/new-material-consumption)
+- [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)

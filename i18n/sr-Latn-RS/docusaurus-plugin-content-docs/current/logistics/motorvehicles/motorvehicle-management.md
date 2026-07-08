@@ -1,28 +1,57 @@
 ---
-title: Upravljanje prijevozom
-sidebar_position: 2
+title: Upravljanje vozilima
+description: Upravljanje i definisanje vozila u modulu Logistika sistema Fluentis ERP.
+keywords:
+  - vozilo
+  - upravljanje vozilima
+  - logistika
+  - vrste vozila
+  - Fluentis ERP
+sidebar_position: 1
+schema: TechArticle
+tags:
+  - logistika
+  - vozila
+  - konfiguracija
+last_update:
+  author: Fluentis Documentation Team
+  date: 12-11-2025
 ---
 
-Tablica se nalazi u izborniku **Logistika > Motorna vozila > Upravljanje prijevozom**.
+# Upravljanje vozilima
 
-Podaci prisutni u ovoj tablici koriste se za označavanje vrste vozila koje su kreirane.  
+Ovaj odeljak opisuje postupak upravljanja i definisanja **vozila** u modulu **Logistika**, sa uputstvima za pretraživanje, unos i posebna polja.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje već postojećih zapisa radi pregleda, uređivanja ili brisanja.
+Tabela se nalazi na putanji **Logistika > Motorna vozila > Motorna vozila**.
 
-**Pretraga Upravljanja prijevozom**
+Podaci u ovoj tabeli koriste se za definisanje i klasifikaciju različitih vrsta vozila kreiranih u sistemu.  
+Moguće je uneti nove zapise ili pretražiti postojeće radi pregleda, izmene ili brisanja.
 
-Obrazac se sastoji od područja filtriranja i područja rezultata. Nakon što su svi željeni filteri postavljeni, dovoljno je kliknuti na gumb  **Traži** kako bi se rezultati prikazali unutar mreže rezultata.
+## Pretraživanje vozila
 
-**Unos Upravljanja vozilom**
+Forma se sastoji od oblasti *filtera* i oblasti *rezultata*.  
+Nakon postavljanja željenih filtera kliknite na dugme **Pretraži** kako bi se rezultati prikazali u tabeli rezultata.
 
-Za unos novih *Vozila* potrebno je kliknuti na prazan redak u mreži ili pritisnuti gumb  **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koje program traži: **Šifra** i **Opis**.
+## Unos vozila
 
-*Specifična polja*: 
+Za unos novog **vozila** kliknite na prvi prazan red u tabeli ili pritisnite dugme **Novo**.  
 
-> **Tip motornog vozila**: označava vrstu vozila, koja može biti kodirana u tablici [Vrsta vozila](/docs/configurations/tables/logistics/motorvehicle-types/);            
-> **Šifra**: označava šifru vozila;               
-> **Opis**: označava opis vozila;        
-> **Klasa/Šifra/Opis**: omogućuje povezivanje vozila s artiklom prisutnim u anagrafici unoseći klasu, šifru i opis.  
+Obavezna polja koja je potrebno popuniti su:
+- **Šifra**
+- **Opis**
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkim funkcijama obrazaca obratite se na sljedeću vezu [Funkcionalnosti, specifični gumbi i polja](/docs/guide/common).
+### Posebna polja
+
+> **Tip motornog vozila**: definiše vrstu vozila i može se definisati u tabeli [Vrste vozila](/docs/configurations/tables/logistics/motorvehicle-types/).  
+> **Šifra**: jedinstvena identifikaciona šifra vozila.  
+> **Opis/Tabele**: tekstualni opis vozila.  
+> **Klasa / Šifra / Opis**: omogućava povezivanje vozila sa artiklom iz šifarnika artikala unosom klase, šifre i opisa.
+
+## Sažetak i dodatne informacije
+
+Ovaj vodič objašnjava kako konfigurisati i upravljati **vozilima** u sistemu Fluentis ERP, uz navođenje obaveznih polja i povezanosti sa tabelama vrsta vozila i artikala.
+
+Za više informacija:
+- [Vrste vozila](/docs/configurations/tables/logistics/motorvehicle-types/)
+- [Potrošnja materijala](/docs/logistics/motorvehicles/material-consumption/material-consumption-filter/)
+- [Zajedničke funkcije, dugmad i polja](/docs/guide/common)
