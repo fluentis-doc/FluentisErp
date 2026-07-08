@@ -1,153 +1,144 @@
 ---
-title: Šifarnik lotova i Sljedivost
+title: "Šifarnik lotova i sledljivost"
 sidebar_position: 3
+sidebar_label: "Šifarnik lotova i sledljivost"
+description: "Vodič za upotrebu šifarnika lotova i modula sledljivosti u sistemu Fluentis za efikasno upravljanje proizvodima."
+schema: "TechArticle"
+tags: ["Šifarnik lotova", "sledljivost", "Fluentis", "upravljanje proizvodima"]
+keywords: ["Šifarnik lotova", "sledljivost proizvoda", "Fluentis"]
 ---
 
-### Šifarnik lotova
+# Šifarnik lotova i sledljivost
 
-Obrazac prikazuje detalje o lotu i sastoji se od 4 različite sekcije:
+:::important Čemu služi
+Šifarnik lotova u sistemu Fluentis neophodan je alat za precizno i detaljno upravljanje lotovima unutar sistema sledljivosti proizvoda. Ova funkcionalnost omogućava korisnicima pretraživanje i pregled pojedinosti svakog lota jednostavnim dvostrukim klikom, čime se olakšava praćenje i upravljanje zalihama.
 
-## Zaglavlje lota
+Na kartici pojedinog lota korisnici mogu menjati različite važne podatke, kao što su dobavljač, šifra lota dobavljača, posebne napomene i stanje lota. Stanje lota, koje se može jednostavno ažurirati, ima ključnu ulogu u određivanju mogućnosti upotrebe lota u prodajnim dokumentima i skladišnim knjiženjima. Sistem takođe omogućava upravljanje različitim stanjima lota koja direktno utiču na njegovu operativnu raspoloživost.
 
-U ovoj sekciji se prikazuju, s mogućnošću izmjene, glavni podaci o lotu, posebno:
-**Artikl**: u 3 povezana polja prikazuju se klasa, kod i opis artikla na koji se odnosi lot. To svakako uključuje artikl s aktiviranim zastavicom *Upravljanje lotovima u podacima artikla > kartici Loti/SB*, inače ne bi bilo moguće izvršiti učitavanje lota za taj artikl;
+Posebna karakteristika šifarnika lotova jeste sekcija koja omogućava istorijski pregled dokumenata ulaza i izlaza u kojima je lot učestvovao, čime se obezbeđuje precizna sledljivost tokom vremena. Takođe je moguće pregledati trenutnu zalihu po pojedinim skladištima. Zahvaljujući ovim funkcionalnostima, šifarnik lotova u sistemu Fluentis pojednostavljuje operativno upravljanje i doprinosi obezbeđivanju usklađenosti sa propisima u sektorima u kojima je sledljivost ključna, kao što su prehrambena i farmaceutska industrija.
+:::
 
-**Varijanta**: u 2 povezana polja prikazuju se kod i opis varijante artikla na koji se odnosi lot, ako postoji;
+## Šifarnik lotova
 
-**Lot**: u ovom polju prikazuje se šifra lota. To je polje koje korisnik može urediti, iako se tijekom operacija učitavanja može generirati automatski na temelju određenih pravila postavljenih u *Tipu šifre lota* povezanom s artiklom. Prvo se unosi šifra i opis *tipa šifre lota*, spremi se redak, a zatim se odlučuje koje se parametre želi koristiti za sastavljanje upravo stvorenog tipa šifre lota. Za svaki korišteni parametar možete odlučiti koliko će se znakova koristiti i, po potrebi, koji se punjeni znak koristi. Na primjer, s parametrom Broj uzastopnih postavljanjem punila "0" i postavljanjem Duge "5" stvaraju se lotovi s prvom brojkom kao 00000, zatim 00001, zatim 00002 i tako dalje. Tip šifre lota tada se mora povezati s podacima artikla u odgovarajućem polju koje se nalazi na kartici Lotovi/SerialNumber, tako da u postupcima koji automatski stvaraju kod lote za određeni artikl lot bude generiran prema pravilima postavljenim u tipu šifre lota povezanom s artiklom. Polje je alfanumeričko i može dosegnuti maksimalnu duljinu od 50 znakova.To nije identifikator lota, jer je moguće izvršiti više učitavanja u različitim trenucima istog lota; u tom slučaju pojavilo bi se više redaka s istom *šifrom lota* unutar mreže *Pretrage lotova*;
+Forma prikazuje pojedinosti lota i sastoji se od 4 zasebne sekcije:
 
-**Dobavljač**: u ovom polju navodi se račun/podračun/opis dobavljača;
+### Zaglavlje lota
 
-**Proizvođač**: u ovom polju navodi se nadimak/naziv tvrtke proizvođača;
+U ovoj se sekciji prikazuju glavni podaci o lotu, pri čemu je neke od njih moguće menjati:
 
-**Šifra dobavljača**: u ovom polju prikazuje se kod dobavljača loteva, obično naziv koji dobavljač dodjeljuje lotu. To je polje koje korisnik može urediti, a ne generira se automatski tijekom operacija učitavanja. Također može doseći maksimalnu duljinu od 50 znakova i može biti identičan čak i za različite lotove različitih artikala;
+- **Artikal**: klasa, šifra i opis artikla na koji se lot odnosi. Reč je o artiklu sa aktiviranom oznakom *Upravljanje lotovima* u *šifarniku artikla* > kartica *Lotovi/SN*. U suprotnom ne bi bilo moguće izvršiti ulaz lota za taj artikal.
+- **Varijanta**: šifra i opis varijante artikla na koji se lot odnosi, ako postoji.
+- **Lot**: u ovom se polju prikazuje šifra lota. Polje korisnik može uređivati, iako se tokom postupaka ulaza može automatski generisati na osnovu pravila definisanih u *Tipu šifre lota* povezanom sa artiklom. Najpre se unose šifra i opis *tipa šifre lota*, red se čuva, a zatim se određuju parametri koji će se koristiti za sastavljanje upravo kreiranog *tipa šifre lota*. Za svaki korišćeni parametar moguće je odrediti broj znakova od kojih se sastoji i, prema potrebi, znak za popunjavanje. Na primer, ako se za parametar *Redni broj* kao znak za popunjavanje postavi `0`, a dužina na `5`, kreiraće se lotovi sa brojevima 00000, zatim 00001, 00002 i tako dalje. *Tip šifre lota* zatim je potrebno povezati sa šifarnikom artikla u odgovarajućem polju na kartici *Lotovi/Serijski brojevi*. Na taj način će se u postupcima koji automatski kreiraju šifru lota za predmetni artikal lot generisati prema pravilima definisanim u *tipu šifre lota* povezanom sa artiklom. Polje je alfanumeričko i može sadržati najviše 50 znakova. Ne predstavlja identifikator lota jer je isti lot moguće primiti više puta u različitim trenucima. U tom će se slučaju u mreži forme *Pretraživanje lotova* prikazati više redova sa istom *Šifrom lota*.
+- **Dobavljač**: konto/podkonto/opis dobavljača.
+- **Proizvođač**: skraćeni naziv/naziv preduzeća proizvođača.
+- **Šifra dobavljača**: šifra *Lota dobavljača*, odnosno najčešće naziv koji dobavljač dodeljuje lotu. Polje korisnik može uređivati i ne može se automatski generisati tokom postupaka ulaza. Može sadržati najviše 50 znakova i može biti jednako i za različite lotove različitih artikala.
+- **Tip izveštaja etikete**: tip etikete koja će se štampati za ovaj lot.
+- **Datum početka**: datum ulaza lota koji korisnik može uređivati. Ako je lot primljen skladišnim knjiženjem, predlaže se datum kreiranja knjiženja. Ako je lot primljen putem ulaza prijemnice ili knjiženja povrata iz spoljne obrade, postavlja se datum prijemnice odnosno dokumenta spoljne obrade, osim ako ga korisnik nije ručno izmenio u dokumentu. Ako je lot primljen putem knjiženja dokumenata iz proizvodnje, predlaže se datum tih dokumenata.
+- **Datum isteka**: datum isteka lota koji se izračunava prilikom njegovog kreiranja, odnosno prilikom evidentiranja odgovarajućeg skladišnog ulaza, tako što se datumu početka dodaje broj dana važenja lota unet na kartici *Lotovi/Serijski brojevi* u šifarniku artikla.
+- **Početna količina**: početna količina primljena za lot putem prvog dokumenta kojim je lot primljen.
+- **Broj pakovanja**: broj pakovanja primljenog lota.
+- **Napomene**: napomene unete u skladišnom knjiženju prilikom ulaza lota. Polje korisnik može uređivati, a prikazuje se i u formi *Pretraživanje lotova*, kao što je prethodno navedeno.
+- **Stanje lota**: stanje lota koje je moguće menjati, a preuzima se iz odgovarajuće tabele *Stanja lotova*.
+- **Ocena lota**: neobavezan podatak koji se odnosi na ocenu lota. Stanje lota određuje da li se lot može koristiti u prodajnim i proizvodnim dokumentima i u knjiženjima skladišnog izlaza. Međutim, ova funkcionalnost nije obavezna pa korisnik ne mora koristiti upravljanje putem tabele *Stanja lotova*.
+- **Lot raspoloživ za izdavanje**: ako je oznaka aktivirana, označava da je lot dostupan za izdavanje u prodajnim i proizvodnim dokumentima ili skladišnim knjiženjima. Korisniku omogućava da odredi da li se određeni lot može izdavati ili ne, kao jednostavnija alternativa složenijem i detaljnijem upravljanju stanjima lotova.
+- **Zatvoreno**: ako je oznaka aktivirana, količina tog lota ne uzima se u obzir prilikom izračunavanja zalihe i raspoloživosti. Ova se oznaka može aktivirati samo ručno.
 
-**Vrsta izvještaja naljepnica**: u ovom polju unosi se vrsta naljepnice koja će se ispisati za ovaj lot;
+### Ulaz
 
-**Datum početka**: u ovom polju obično se prikazuje datum kada je lot učitan, koji korisnik može urediti. Ako je lot učitan putem zapisivanja u skladištu, ovaj se datum predlaže identičan datumu kada je zapis napravljen; ako je lot učitan putem upisivanja dostavnice kupnje ili registracije povratka posla, ovaj datum postavlja se kao jednak datumu dostavnice kupnje ili poslovnog povratka (osim ako korisnik nije ručno promijenio unutar dostavnice); ako je lot učitan putem registracije proizvodnog signala, ovaj datum predlaže se kao identičan datumu proizvodnog signala;
+U ovoj se sekciji prikazuju osnovni podaci o dokumentima na osnovu kojih je izvršen ulaz lota. Po pravilu se uvek prikazuju pojedinosti *Skladišnog knjiženja* kojim je lot primljen. Ako je skladišno knjiženje kreirano na osnovu ulaza dokumenta (otpremnice, povrata itd.), prikazuje se i red sa pojedinostima tog dokumenta.
 
-**Datum dospijeća**: u ovom polju prikazuje se datum isteka roka valjanosti lota, koji korisnik može urediti, a koji se izračunava pri stvaranju lota i stoga pri učitavanju odgovarajuće trgovine, počevši od datuma početka i dodavši broj dana valjanosti lota unesen u kartici Lotovi/SerialNumber u podacima artikla;
+*Dvostrukim klikom na red dokumenta moguće je, u zavisnosti od prava korisnika, otvoriti povezani dokument samo za pregled.*
 
-**Početna količina**: u ovom polju prikazuje se početna količina učitana za lot putem prvog dokumenta koji je učitao lot;
+- **Količina**: prikazuje količinu lota koja je obuhvaćena dokumentom.
+- **Merna jedinica**: merna jedinica korišćena u dokumentu.
+- **Broj pakovanja**: broj pakovanja.
+- **Datum unosa**: datum unosa.
+- **Stanje lota**: stanje lota.
+- **Prisilno zatvoreno**: oznaka koja označava prisilno zatvaranje lota.
+- **Referentni dokument**: tip dokumenta kojim je generisan ulaz.
+- **Broj**: broj dokumenta.
+- **Datum unosa**: datum dokumenta.
+- **Skladište**: šifra i opis skladišta u koje je lot primljen.
+- **Lokacija**: šifra i opis lokacije.
+- **Predložak**: šifra i opis predloška korišćenog za kreiranje ulaznog skladišnog kretanja.
+- **Kupac/Dobavljač**: konto, podkonto i opis kupca ili dobavljača.
+- **Projekat**: prodajni projekat povezan sa lotom; podatak je moguće uređivati.
 
-**Broj paketa**: pokazuje broj paketa učitanih u lot;
+### Ostali ulazni dokumenti
 
-**Napomene**: u ovom polju prikazuju se bilješke unesene u registraciju skladišta prilikom učitavanja lota. Polje može urediti korisnik i može se vidjeti i u Pretrazi lotova, kao što je gore navedeno;
+U ovoj se sekciji prikazuju osnovni podaci o ostalim dokumentima u kojima je lot eventualno korišćen, povezano sa dokumentom odabranim u gornjoj mreži.  
+Redovi se prikazuju kada je kretanje lota nasleđeno iz drugog dokumenta, odnosno kada se više dokumenata odnosi na iste redove kretanja lota.  
+Na primer, kretanja lota iz prijemnica mogu se naslediti u ulaznim računima.  
+U prvoj se mreži prikazuju glavni (izvorni) redovi kretanja lota koji potiču iz dokumenata, dok se u drugoj mreži prikazuju redovi kretanja lota iz dokumenata koji proizlaze iz reda odabranog u gornjoj mreži, odnosno nasleđeni redovi.
 
-**Status lota**: okvir prikazuje stanje lota. On je promjenjiv od strane korisnika i poziva podatke iz odgovarajuće tablice *Stanje lota*. Stanje lota određuje mogućnost korištenja ili nekorištenja lota u prodajnim dokumentima, proizvodnji i zapisima o izlazu iz skladišta. Međutim, ovo je neobvezujuće upravljanje, pa korisnik nije obvezan koristiti funkcionalnost tablice *Stanje lota*;
+### Izlaz
 
-**Procjena lotova**: Padajući izbornik prikazuje podatke o evaluaciji lota. Može ga mijenjati korisnik i povlači podatke iz odgovarajuće tablice *Ocjena lota*. Ovi podaci imaju isključivo deskriptivne funkcije, pa nemaju poseban utjecaj na procedure i prozore Ideal, stoga su i oni opcionalni;
+U ovoj se sekciji hronološkim redosledom prikazuju osnovni podaci o svim dokumentima u kojima je lot korišćen:
 
-**Lot prodao**: ako je ova oznaka aktivirana, označava da je lot dostupan za preuzimanje u prodajnim dokumentima, proizvodnji ili evidencijama iz skladišta. Ovo je praktično mogućnost koju korisnik ima kako bi odredio može li se lot preuzeti ili ne, kao alternativu kompleksnijem i detaljnijem upravljanju stanjem lota;
+- **Količina**: količina lota obuhvaćena dokumentom.
+- **Merna jedinica**: merna jedinica korišćena u dokumentu.
+- **Dokument**: prikazuje tip dokumenta u kojem je lot prvi put korišćen. To može biti proizvodni nalog, narudžbina kupca, izlazna otpremnica, izlazni račun, lista za izdavanje, otpremnica za spoljnu obradu ili povrat iz spoljne obrade.
+- **Broj**: broj dokumenta.
+- **Datum**: datum dokumenta.
 
-**Zatvoreno**: ako je ova oznaka aktivirana, označava da je lot potpuno ispražnjen iz skladišta. Napomena da nakon zatvaranja skladišta, svi preostali lotovi za tu godinu automatski se označavaju kao *Zatvoreni*, jer se na početnu zalihu nove godine ponovno učitavaju "blizanci" lotova s količinama ostataka s kraja prethodne godine prije zatvaranja.
+*Dvostrukim klikom na red dokumenta moguće je, u zavisnosti od prava korisnika, otvoriti povezani dokument samo za pregled.*
 
-## Utovar
+- **Skladište**: šifra i opis skladišta.
+- **Lokacija**: šifra i opis lokacije.
+- **Predložak**: šifra i opis predloška.
+- **Kupac/Dobavljač**: konto, podkonto i opis kupca ili dobavljača.
+- **Projekat**: prodajni projekat povezan sa lotom koji korisnik može uređivati. Po pravilu je reč o prodajnom projektu povezanom sa redom artikla kojim je izvršen ulaz samog lota.
 
-U ovoj sekciji prikazuju se osnovni podaci dokumenata koji su doprinijeli učitavanju lota. Općenito, uvijek se prikazuje detalj registracije u skladištu koji je učitao lot; ako je ova generirana putem učitavanja dokumenata (kao što su otpremnice, povrati, itd.), tada se prikazuje i redak s detaljima tog dokumenta.
+### Ostali izlazni dokumenti
 
-*Klikom na dvostruki klik na redak dokumenta, korisnik, prema svojim pravima, može otvoriti dokument u samo za čitanje.*
+U ovoj se sekciji prikazuju osnovni podaci o ostalim dokumentima u kojima je lot eventualno korišćen, povezano sa dokumentom odabranim u gornjoj mreži.  
+Redovi se prikazuju kada je kretanje lota nasleđeno iz drugog dokumenta, odnosno kada se više dokumenata odnosi na iste redove kretanja lota.  
+Na primer, kretanja lotova materijala iz proizvodnog naloga mogu se naslediti u materijalima prijavljenih artikala, dok se kretanja lotova iz narudžbine kupca mogu naslediti u planu utovara, izlaznim otpremnicama ili izlaznim računima.  
+U prvoj se mreži prikazuju glavni (izvorni) redovi kretanja lota koji potiču iz dokumenata, dok se u drugoj mreži prikazuju redovi kretanja lota iz dokumenata koji proizlaze iz reda odabranog u gornjoj mreži, odnosno nasleđeni redovi.
 
-**Količina**: ovdje se prikazuje količina lota koja je bila angažirana u dokumentu;
+**Tip dokumenta**: tip dokumenta u kojem se lot nalazi, povezano sa dokumentom odabranim u gornjoj mreži. To može biti izlazna otpremnica, izlazni račun, lista za izdavanje, otpremnica za spoljnu obradu ili povrat iz spoljne obrade.
 
-**Jedinica mjere**: označava jedinicu mjere korištenu u dokumentu;
+*Dvostrukim klikom na red dokumenta moguće je, u zavisnosti od prava korisnika, otvoriti povezani dokument samo za pregled.*
 
-**Broj paketa**: pokazuje broj paketa;
+### Pregled zaliha
 
-**Datum unosa**: označava datum unosa;
+Na ovoj je kartici moguće pregledati zalihu lota po pojedinačnim skladištima:
 
-**Status lota**: označava status lota;
+- **Šifra**: šifra skladišta.
+- **Opis**: opis skladišta.
+- **Ukupna ulazna količina**: ukupna količina tog artikla primljena za taj lot.
+- **Količina na zalihi**: trenutna zaliha tog artikla za taj lot.
+- **Raspoloživa količina**: raspoloživa zaliha tog artikla za taj lot.
 
-**Prisilno zatvoreno**: ako je aktivno, označava da je lot prisilno zatvoren;
+## Sledljivost lota
 
-**Referentni dokument**: ovdje se prikazuje vrsta dokumenta koja je generirala učitavanje lota;
+:::important Čemu služi
+Sledljivost lota u sistemu Fluentis modul je namenjen efikasnom i preciznom praćenju lotova proizvoda unutar proizvodnog i logističkog procesa. Ova funkcionalnost omogućava korisnicima praćenje i evidentiranje kretanja svakog lota od trenutka proizvodnje ili nabavke do njegove konačne upotrebe, čime doprinosi transparentnom i sigurnom upravljanju materijalima.
 
-**Broj**: ovdje se prikazuje broj dokumenta;
+U sekciji namenjenoj sledljivosti korisnici mogu generisati detaljne izveštaje za odabrane lotove, ne samo radi pregleda podataka o samom lotu već i radi analize artikala u kojima je lot upotrebljen i sirovina koje su korišćene za njegovu proizvodnju. Postupak je olakšan nizom prilagodljivih filtera koji omogućavaju prilagođavanje pretrage specifičnim potrebama preduzeća.
 
-**Datum unosa**: ovdje se prikazuje datum dokumenta;
+Dva glavna alata za sledljivost su:
 
-**Skladište**: ovdje se prikazuju kod i opis skladišta na kojem je učitan lot;
+- **Sledljivost upotrebe**: prikazuje artikle u kojima je odabrani lot upotrebljen, čime omogućava detaljno praćenje sledljivosti prema napred.
+- **Sledljivost sastava**: prikazuje artikle kojima se upravlja po lotovima, a koji su korišćeni za proizvodnju odabranog lota, čime omogućava jasan pregled sledljivosti prema nazad.
 
-**Lokacija**: ovdje se prikazuju kod i opis lokacije;
+Ovom funkcionalnošću Fluentis pruža pouzdano rešenje za preduzeća, posebno u sektorima kao što su prehrambena i farmaceutska industrija, u kojima je sledljivost ključna za sigurnost i usklađenost sa važećim propisima.
+:::
 
-**Uzrok**: ovdje se prikazuju kod i opis uzroka korištenog za stvaranje tog pokreta opterećenja;
+Ova forma omogućava štampanje izveštaja sa detaljnim podacima o sledljivosti odabranog lota.  
+Nakon postavljanja željenih filtera kliknite na dugme **Traži** za prikaz rezultata.
 
-**Kupac/Dobavljač**: ovdje se prikazuju račun, podračun i opis povezani s kupcem ili dobavljačem;
+### Dostupni filteri
 
-**Projekt**: ovdje se prikazuje prodajni projekt, koji korisnik može urediti, povezan s lotom. Obično je to prodajni projekt povezan s linijom proizvoda koja je učitana i koja je učitala taj lot.
+- **Sledljivost upotrebe**: ako je aktivirano, omogućava prikaz artikala u kojima je upotrebljen lot posmatranog artikla, odnosno omogućava praćenje sledljivosti prema napred.
+- **Sledljivost sastava**: ako je aktivirano, omogućava prikaz artikala kojima se upravlja po lotovima, a koji su upotrebljeni za proizvodnju lota posmatranog artikla, odnosno omogućava praćenje sledljivosti prema nazad.
 
+Obe oznake su podrazumevano aktivirane, ali ih korisnik može uključiti ili isključiti u zavisnosti od potreba.
 
-## Drugi dokumenti utovara
+Nakon odabira željenog lota dovoljno je kliknuti na **Štampanje** ili **Pregled štampe** za prikaz izveštaja sa rezultatima pretrage.
 
-U ovoj sekciji prikazuju se osnovni podaci drugih eventualnih dokumenata u kojima je lot bio angažiran, u odnosu na dokument odabran u gornjoj mreži.
+## Sažetak i dodatne informacije
 
-## Istovar
+Šifarnik lotova i sledljivost u sistemu Fluentis ključni su alati za upravljanje lotovima proizvoda i njihov nadzor. Omogućavaju praćenje svakog koraka lota, od njegovog nastanka do konačne upotrebe. Zahvaljujući namenskim funkcionalnostima, preduzeća mogu osigurati usklađenost sa propisima i efikasno upravljanje materijalima.
 
-U ovoj sekciji prikazuju se osnovni podaci prvog dokumenta, kronološki, koji je angažirao lot. Ako je lot bio izravno ispražnjen putem registracije u skladištu, tada u ovoj mreži ništa neće biti prikazano.
-
-**Količina**: Ovdje se prikazuje količina lota koja je bila angažirana u dokumentu;
-
-**Jedinica mjere**: označava jedinicu mjere korištenu u dokumentu;
-
-**Datum unosa**: označava datum unosa;
-
-**Status lota**: označava status lota;
-
-**Datum**: ovdje se prikazuje datum dokumenta;
-
-*Dvostrukim klikom na liniju dokumenta moguće je, u skladu s pravima korisnika, otvoriti samo relevantni dokument u pregledu.*
-
-**Skladište**: ovdje se prikazuju kod i opis skladišta na kojem je učitan lot;
-
-**Lokacija**: ovdje se prikazuju kod i opis lokacije;
-
-**Uzrok**: ovdje se prikazuju kod i opis uzroka korištenog za stvaranje tog pokreta opterećenja;
-
-**Kupac/Dobavljač**: ovdje se prikazuju račun, podračun i opis povezani s kupcem ili dobavljačem;
-
-**Projekt**: ovdje se prikazuje prodajni projekt, koji korisnik može urediti, povezan s lotom. Obično je to prodajni projekt povezan s linijom proizvoda koja je učitana i koja je učitala taj lot.
-
-
-## Drugi dokumenti istovaraca
-
-U ovoj sekciji prikazuju se osnovni podaci drugih eventualnih dokumenata u kojima je lot bio angažiran, u odnosu na dokument odabran u gornjem izborniku.
-
-**Vrsta dokumenta**: ovdje se prikazuje vrsta dokumenta unutar kojeg se nalazi lot, u odnosu na odabrani dokument u gornjoj mreži. To može biti otpremnica, račun, lista preuzimanja, otpremnica za radni nalog, povrat za radni nalog;
-
-**Broj**: ovdje se prikazuje broj dokumenta;
-
-**Datum**: ovdje se prikazuje datum dokumenta.
-
-*Dvostrukim klikom na redak dokumenta korisnik, sukladno svojim ovlastima, može otvoriti dokument samo za pregled*.
-
-## Pregled Zaliha
-
-Ova kartica omogućuje pregled stanja zaliha loteva po skladištima.
-Izbornik je sastavljen od sljedećih polja:
-
-**Šifra**: označava kod skladišta;
-
-**Opis**: označava opis skladišta;
-
-**Jedinica mjere**: označava jedinicu mjere;
-
-**Ukupna količina**: pokazuje ukupnu količinu tog artikla za taj lot;
-
-**Količina na stanju**: pokazuje trenutačno stanje zaliha tog artikla za taj lot;
-
-**Dostupna količina**: pokazuje dostupnu količinu tog artikla za taj lot.
-
-## Sljedivost lota
-
-Ovaj obrazac omogućuje ispis izvješća koje detaljno prikazuje tragljivost odabranog lota.
-Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na gumb **Traži** u *alatnoj traci* kako bi se prikazali rezultati unutar prikaza rezultata.  
-
-*Napomena*: unutar odjeljka posvećenog filterima nalaze se sljedeće oznake:
-
-> - sljedivost korištenja: ako je aktivirano, omogućuje pregled u kojim artiklima je korišten lot odabranog artikla, tj. provjerava tragljivost prema gore;  
-> - sljedivost sastav: ako je aktivirano, omogućuje pregled kojim artiklima (koji se upravljaju lotovima) su korišteni za proizvodnju lota odabranog artikla, tj. provjerava tragljivost prema dolje.
-
-Ove dvije oznake su zadane, ali korisnik ih može aktivirati ili deaktivirati prema potrebi.
-Nakon odabira željenog lota, dovoljno je kliknuti na gumb Ispiši ili Pregled prije ispisivanja kako biste pregledali izvješće s traženim rezultatima.
-
-Za detalje o zajedničkom funkcioniranju obrazaca, molimo pogledajte link  [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Za dodatne informacije pogledajte povezane sekcije dokumentacije.

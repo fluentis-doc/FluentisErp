@@ -16,7 +16,7 @@ U formi **Pretraživanje planova utovara** moguće je pregledavati prethodno une
 
 Posebni gumbi za kreiranje su:
 
-- **Kreiranje popisa tranportnih jedinica**: kreira popis jedinica tereta iz odabranog plana utovara.
+- **Kreiranje popisa transportnih jedinica**: kreira popis jedinica tereta iz odabranog plana utovara.
 - **Kreiranje uzimanje sa zaliha**: kreira pripremu robe/utovara iz odabranog plana utovara.
 - **Kreiranje računa**: kreira račun za jedinice tereta iz odabranog plana utovara.
 - **Kreiranje otpremnice/primke**: kreira otpremnicu iz odabranog plana utovara.

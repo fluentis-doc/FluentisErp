@@ -1,63 +1,92 @@
 ---
-title: Kreiranje lota iz lota i kreiranje lota iz lota uz promjenu artikla.
+title: "Kreiranje lota iz lota i kreiranje lota iz lota sa zamjenom artikla"
 sidebar_position: 5
+sidebar_label: "Kreiranje lota"
+description: "Vodič za kreiranje lotova u sustavu Fluentis iz postojećeg lota ili sa zamjenom artikla."
+schema: "TechArticle"
+tags: ["ERP", "Fluentis", "skladište", "lotovi"]
+keywords: ["kreiranje lota", "upravljanje zalihama", "Fluentis", "zamjena artikla"]
 ---
 
-### Stvaranje lota iz postojećeg lota
+# Kreiranje lota iz lota i kreiranje lota iz lota sa zamjenom artikla
 
-Ovaj obrazac omogućuje stvaranje novog lota, istog artikla, iz postojećeg lota.
+## Kreiranje lota iz lota
 
-Obrazac se sastoji od 3 sekcije:
+:::important Čemu služi
+Postupak kreiranja lota iz lota u sustavu Fluentis važna je funkcionalnost koja omogućuje kreiranje novog lota iz postojećeg lota istog artikla. Ovaj je postupak važan za učinkovito upravljanje skladištem i pravodobno odgovaranje na potrebe proizvodnje i logistike.
 
-- filtriranje: ovdje možete filtrirati željene podatke i klikom na gumb *Traži* u *traci Ribbon* možete prikazati podatke u donjoj rešetci;      
-- rezultati rešetke: sadrži sve informacije o traženom lotu;          
-- podaci o novom lotu: u ovoj sekciji, ispod rešetke rezultata, nalaze se podaci o novom lotu.  
-
-Evo podataka o novom lotu koji se treba stvoriti:  
-
-> **Početna količina odredišne partije**: označava početnu količinu koju će imati lot odredišta;           
-> **Broj paketa odredišne partije**: označava broj paketa koje će imati lot odredišta;              
-> **Iskrcaj predložak izvirnog dijela**: označava uzrok isporuke izvornog lota;        
-> **Učitaj predložak odredišne partije**: označava uzrok punjenja lota odredišta;        
-> **Lokacija odredišnog lota**: označava lokaciju na koju će se staviti lot odredišta.  
-
-:::note **VAŽNO** 
-Uzrok skladišta koji se može koristiti u ovom postupku je samo taj koji ima zastavicu *Stvori lot iz lota* aktiviranu u tablici [Uzrok skladišta](/docs/configurations/tables/logistics/warehouse-templates/).
+Primjena ovog postupka ne samo da pojednostavljuje kretanje lotova već pomaže i u održavanju precizne sljedivosti unutar sustava, osiguravajući ispunjavanje zahtjeva kvalitete i usklađenosti s propisima.
 :::
 
-Nakon postavljanja svih željenih filtara, jednostavno kliknite na gumb **Traži** u alatnoj traci kako biste prikazali rezultate u prikazu rezultata.   
+Ova forma omogućuje kreiranje novog lota istog artikla iz postojećeg lota.  
+Forma se sastoji od 3 zasebne sekcije:
 
-Zatim odaberite željeni lot i unesite podatke o novom lotu u donjem dijelu obrasca. Konačno, pritisnite gumb **Stvaranje lota** kako biste stvorili novi lot za isti artikl.
+- **Filtriranje**: omogućuje filtriranje željenih podataka, a klikom na gumb **Traži** na *traci izbornika* podaci se prikazuju u donjoj mreži.
+- **Mreža rezultata**: sadrži sve informacije o traženom lotu.
+- **Podaci o novom lotu**: u ovoj se sekciji, ispod mreže rezultata, nalaze podaci o novom lotu.
 
-Za detalje o zajedničkom funkcioniranju obrazaca, obratite se linku  [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+### Podaci o novom lotu koji se kreira
 
+- **Početna količina odredišnog lota**: označava početnu količinu odredišnog lota.
+- **Broj pakiranja odredišnog lota**: označava broj pakiranja odredišnog lota.
+- **Predložak izlaza izvornog lota**: označava predložak izlaza kojim će se izvršiti izlaz izvornog lota.
+- **Predložak ulaza odredišnog lota**: označava predložak ulaza kojim će se izvršiti ulaz odredišnog lota.
+- **Lokacija odredišnog lota**: označava lokaciju na koju će se zaprimiti odredišni lot.
 
-### Stvaranje lota iz postojećeg lota s promjenom artikla
-
-Ovaj obrazac omogućuje stvaranje novog lota s novim artiklom iz postojećeg lota s drugim artiklom.
-
-Obrazac se sastoji od 3 sekcije:  
-
-- filtriranje: ovdje možete filtrirati željene podatke i klikom na gumb  **Traži** u *gornjem izborniku* možete prikazati podatke u donjoj rešetci;       
-- rezultati rešetke: sadrži sve informacije o traženom lotu;            
-- podaci o novom lotu: u ovoj sekciji, ispod rešetke rezultata, nalaze se podaci o novom lotu.  
-
-Evo podataka o novom lotu koji se treba stvoriti:
-
-> **Artikl odredišnog lota**: omogućuje unos klase, šifre i opisa artikla odredišta;              
-> **Varijanta artikla**: omogućuje unos varijante artikla odredišta;                
-> **Početna količina odredišne partije**: označava početnu količinu koju će imati lot odredišta;           
-> **Broj paketa odredišne partije**: označava broj paketa koje će imati lot odredišta;                
-> **Iskrcaj predložak izvirnog dijela**: označava uzrok ispražnjenja izvornog lota;        
-> **Učitaj predložak odredišne partije**: označava uzrok punjenja lota odredišta;      
-> **Lokacija lota odredišta**: označava lokaciju na koju će se staviti lot odredišta.  
-
-:::note **VAŽNO** 
-Predlošci zapisa skladišta koje se mogu koristiti u ovom postupku su samo one koje imaju zastavicu **Stvorite lot iz lota** aktiviranu u tablici [Uzrok skladišta](/docs/configurations/tables/logistics/warehouse-templates/).
+:::note Pažnja
+Skladišni predlošci koji se mogu koristiti u ovom postupku samo su oni koji imaju aktiviranu oznaku **Kreiraj lot iz lota** u tablici [Skladišni predlošci](/docs/configurations/tables/logistics/warehouse-templates/). Za aktiviranje ove oznake potrebno je kreirati predložak **Izlaza** s aktiviranim oznakama **Upravljanje lotovima** i **Dopuni početnu količinu**, deaktiviranom oznakom **Sastavnica** te mora imati **protustavku** tipa **Ulaz**.
 :::
 
-Nakon postavljanja svih željenih filtara, jednostavno kliknite na gumb **Traži** u *gornjem izborniku* kako biste prikazali rezultate u prikazu rezultata. 
+### Koraci za kreiranje novog lota
 
-Zatim odaberite željeni lot i unesite podatke o novom lotu u donjem dijelu obrasca. Konačno, pritisnite gumb **Napravite lot** kako biste stvorili novi lot za isti artikl.
+1. Postavite sve željene filtre.
+2. Kliknite gumb **Traži** na *traci izbornika* kako biste prikazali rezultate u mreži.
+3. Odaberite željeni lot.
+4. Unesite podatke o novom lotu u donjem dijelu forme.
+5. Pritisnite gumb **Kreiranje lota** kako biste kreirali novi lot za isti artikl.
 
-Za detalje o zajedničkom funkcioniranju obrazaca, obratite se linku [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+## Kreiranje lota iz lota sa zamjenom artikla
+
+:::important Čemu služi
+Kreiranje lota iz lota sa zamjenom artikla napredni je postupak u sustavu Fluentis koji omogućuje kreiranje novog lota za drugi artikl, polazeći od izvornog lota. Ova je funkcionalnost posebno korisna u upravljanju zalihama kada je potrebno prenijeti količinu s jednog artikla na drugi, uz zadržavanje detaljne evidencije lotova.  
+Ovim postupkom poduzeća mogu optimizirati skladišne tokove i povećati operativnu učinkovitost, osiguravajući pritom sljedivost i ispravno evidentiranje svih kretanja u sustavu.
+:::
+
+Ova forma omogućuje kreiranje novog lota s novim artiklom iz postojećeg lota s drugim artiklom.  
+Forma se sastoji od 3 zasebne sekcije:
+
+- **Filtriranje**: omogućuje filtriranje željenih podataka, a klikom na gumb **Traži** na *traci izbornika* podaci se prikazuju u donjoj mreži.
+- **Mreža rezultata**: sadrži sve informacije o traženom lotu.
+- **Podaci o novom lotu**: u ovoj se sekciji, ispod mreže rezultata, nalaze podaci o novom lotu.
+
+### Podaci o novom lotu koji se kreira
+
+- **Artikl odredišnog lota**: omogućuje unos klase, šifre i opisa odredišnog artikla.
+- **Varijanta artikla**: omogućuje unos varijante odredišnog artikla.
+- **Početna količina odredišnog lota**: označava početnu količinu odredišnog lota.
+- **Broj pakiranja odredišnog lota**: označava broj pakiranja odredišnog lota.
+- **Predložak izlaza izvornog lota**: označava predložak izlaza kojim će se izvršiti izlaz izvornog lota.
+- **Predložak ulaza odredišnog lota**: označava predložak ulaza kojim će se izvršiti ulaz odredišnog lota.
+- **Lokacija odredišnog lota**: označava lokaciju na koju će se zaprimiti odredišni lot.
+
+:::note Pažnja
+Skladišni predlošci koji se mogu koristiti u ovom postupku samo su oni koji imaju aktiviranu oznaku **Kreiraj lot iz lota** u tablici [Skladišni predlošci](/docs/configurations/tables/logistics/warehouse-templates/).  
+Za aktiviranje ove oznake potrebno je kreirati predložak **Izlaza** s aktiviranim oznakama **Upravljanje lotovima** i **Dopuni početnu količinu**, deaktiviranom oznakom **Sastavnica** te mora imati **protustavku** tipa **Ulaz**.
+:::
+
+### Koraci za kreiranje novog lota sa zamjenom artikla
+
+1. Postavite sve željene filtre.
+2. Kliknite gumb **Traži** na *traci izbornika* kako biste prikazali rezultate u mreži.
+3. Odaberite željeni lot.
+4. Unesite podatke o novom lotu u donjem dijelu forme.
+5. Pritisnite gumb **Kreiranje lota** kako biste kreirali novi lot za novi artikl.
+
+## Sažetak i dodatne informacije
+
+U ovom su dokumentu opisani postupci *Kreiranje lota iz lota* i *Kreiranje lota iz lota sa zamjenom artikla* u sustavu Fluentis ERP.
+
+Za dodatne informacije pogledajte sljedeće vodiče:
+
+- [Skladišni predlošci](/docs/configurations/tables/logistics/warehouse-templates/)
+- [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common)
