@@ -1,95 +1,92 @@
 ---
-title: Šifarnik serijskih brojeva
-sidebar_position: 5
+title: "Šifarnik serijskih brojeva"
+sidebar_position: 8
+sidebar_label: "Šifarnik serijskih brojeva"
+description: "Vodič za upravljanje šifarnikom serijskih brojeva, ključnom funkcionalnošću sistema Fluentis za sledljivost artikala."
+schema: "TechArticle"
+tags: ["Serijski brojevi", "Upravljanje skladištem", "Fluentis"]
+keywords: ["Serijski brojevi", "Upravljanje artiklima", "Sledljivost", "Fluentis"]
 ---
 
-Ovaj prozor prikazuje detalje o lotu i sastoji se od 4 različite sekcije:
+# Šifarnik serijskih brojeva
+
+:::important
+Šifarnik serijskih brojeva u sistemu Fluentis ključan je modul za detaljno upravljanje serijskim brojevima koji preduzećima omogućava praćenje pojedinačnih artikala putem jedinstvenog identifikacionog koda. Ova funkcionalnost zadovoljava posebne zahteve u pogledu sledljivosti i sigurnosti, što je posebno važno za kritične artikle ili artikle visoke vrednosti, kod kojih je neophodno pratiti svaki pojedinačni komad, a ne samo ukupnu količinu.
+
+Korisnik može pretražiti određeni serijski broj i jednostavnim dvostrukim klikom pregledati njegove detalje. U ovoj je sekciji moguće izmeniti ključne podatke, kao što su kod kupca, kod dobavljača i status serijskog broja, koji može biti poništen, prisilno zatvoren ili rezervisan. Šifarnik takođe pruža detaljne podatke o dokumentima ulaza i izlaza povezanim sa serijskim brojem, čime se omogućava potpuna analiza njegove upotrebe tokom vremena.
+
+Sistematski pristup upravljanju serijskim brojevima ne samo da optimizuje interne procese već osigurava i usklađenost sa važećim propisima, čime ovaj šifarnik postaje neizostavan alat za savremena preduzeća koja žele maksimalno povećati operativnu efikasnost i kvalitet usluge.
+:::
+
+## Detalji lota
+
+Ovaj prozor prikazuje detalje lota i sastoji se od četiri različite sekcije:
 
 ### Zaglavlje serijskog broja
 
-U ovoj sekciji prikazuju se, s mogućnošću izmjene, osnovni podaci o seriji, posebno:
+U ovoj se sekciji prikazuju glavni podaci povezani sa lotom, od kojih je neke moguće izmeniti, a posebno:
 
-**Artikl**: u 3 polja prikazuju se klasa, šifra i opis artikla na koji se odnosi serijski broj. Ovo je artikl definitivno označen za upravljanje *serijskim brojevima* u *Šifarnik artikla* > kartica *Loti/SB*, inače ne bi bilo moguće izvršiti punjenje serije za taj artikl;
+- **Artikl**: u tri pripadajuća polja prikazuju se klasa, kod i opis artikla na koji se odnosi serijski broj. Reč je o artiklu za koji je aktivirana oznaka *Upravljanje serijskim brojevima* u *Šifarniku artikala* > kartica *Lotovi/SN*, jer u suprotnom ne bi bilo moguće izvršiti ulaz lota za taj artikl;
 
-**Varijanta**: u 2 polja prikazuju se šifra i opis varijante artikla na koji se odnosi serijski broj, ako postoji;
+- **Varijanta**: u dva pripadajuća polja prikazuju se kod i opis varijante artikla na koji se odnosi serijski broj, ako postoji;
 
-**Šifra lota**: u ovom polju prikazuje se šifra Lota kojem pripada serijski broj. Artikl na koji se odnosi serijski broj također može biti upravljan serijama; u tom slučaju jedan lot od 100 komada, na primjer, može se sastojati od 100 različitih serijskih brojeva. Isti serijski broj također može pripadati različitim lotovima istog artikla ili lotovima različitih artikala;
+- **Šifra lota**: u ovom se polju prikazuje kod lota kojem pripada serijski broj. Artiklom na koji se odnosi serijski broj može se istovremeno upravljati i po lotovima; stoga, na primer, lot od 100 komada može sadržati 100 različitih serijskih brojeva. Isti serijski broj može takođe pripadati različitim lotovima istog artikla ili lotovima različitih artikala;
 
-**Vrsta lota**: označava vrstu lota koja je korištena;
+- **Vrsta lota**: označava upotrebljeni tip lota;
 
-**Vrsta šifre lota**: označava vrstu šifre lota s kojom je lot generiran;
+- **Vrsta šifre lota**: označava tip koda lota prema kojem je lot generisan;
 
-**Šifra serijskog broja**: u ovom polju prikazuje se šifra serijskog broja. Ovo je polje koje korisnik može uređivati, iako se tijekom operacija punjenja može automatski generirati prema određenim pravilima postavljenim u Tipu Serijskog Broja povezanom s artiklom. Prvo se unosi šifra i opis tipa šifre serijskog broja, zatim se sprema redak, a zatim se odlučuje koje parametre želite koristiti za sastavljanje upravo stvorenog tipa šifre lota. Za svaki korišteni parametar možete odabrati koliko znakova treba biti formirano i eventualno i znak za punjenje koji treba koristiti. Na primjer, s parametrom 'Progresivni broj' postavljanjem znaka za punjenje na '0' i postavljanjem duljine na '5' bit će stvoreni serijski brojevi s prvom brojkom kao 00000, zatim 00001, zatim 00002 i tako dalje. Tip šifre Serijskog Broja tada treba biti povezan s Anagrafikom artikla u odgovarajućem polju smještenom na kartici Lotovi/SerialNumber, tako da u postupcima koji automatski stvaraju šifru serijskog broja za određeni artikl, serijski broj stvarno bude generiran prema pravilima postavljenim u tipu šifre serijskog broja povezanom s artiklom. Polje je alfanumeričko i može sadržavati najviše 50 znakova;
+- **Kod serijskog broja**: u ovom se polju prikazuje kod serijskog broja. Korisnik može uređivati ovo polje, iako se tokom ulaznih operacija kod može automatski generisati na osnovu pravila postavljenih u *Tipu serijskog broja* povezanom sa artiklom. Najpre se unose kod i opis *tipa koda serijskog broja*, red se čuva, a zatim se određuju parametri koji će se upotrebljavati za sastavljanje novog tipa koda serijskog broja. Za svaki upotrebljeni parametar moguće je odrediti broj znakova od kojih se sastoji i, prema potrebi, znak za popunjavanje. Na primer, ako se za parametar *Progresivni broj* kao znak za popunjavanje postavi „0”, a dužina na „5”, kreiraće se serijski brojevi počevši od 00000, zatim 00001, 00002 i tako dalje. *Tip koda serijskog broja* zatim je potrebno povezati sa Šifarnikom artikala u odgovarajućem polju na kartici *Lotovi/Serijski brojevi* kako bi se u postupcima koji automatski generišu kod serijskog broja za predmetni artikal serijski broj kreirao prema pravilima postavljenim u *tipu koda serijskog broja* povezanom sa artiklom. Polje je alfanumeričko i može sadržati najviše 50 znakova;
 
-**Vrsta serijskog broja**: označava vrstu šifre serijskog broja s kojom je serijski broj generiran;
+- **Vrsta serijskog broja**: označava tip koda serijskog broja prema kojem je serijski broj generisan;
 
-**Datum Početka**: u ovom polju prikazuje se datum kada je serijski broj punjen, koji korisnik može uređivati. Ako je serijski broj popunjen putem unosa u skladište, taj se datum predlaže identičnim datumom kao i datum stvaranja unosa; ako je serijski broj popunjen putem unosa na dostavnicu kupnje ili unosa povrata kontnog posla, taj se datum postavlja istim kao i datum dostavnice kupnje ili kontnog posla (osim ako ga korisnik nije ručno promijenio unutar dostavnice); ako je serijski broj popunjen putem unosa proizvodne signalizacije, taj se datum predlaže kao identičan datumu proizvodne signalizacije;
+- **Datum početka**: u ovom se polju po pravilu prikazuje datum ulaza serijskog broja, koji korisnik može izmeniti. Ako je serijski broj unet putem skladišnog knjiženja, predlaže se datum na koji je knjiženje kreirano; ako je serijski broj unet putem ulaza prijemnice dobavljača ili knjiženja povrata iz kooperacije, postavlja se datum prijemnice dobavljača ili dokumenta povrata iz kooperacije, osim ako ga korisnik nije ručno izmenio unutar dokumenta; ako je serijski broj unet putem knjiženja prijave proizvodnje, predlaže se datum prijave proizvodnje;
 
-**Datum isteka**: u ovom polju prikazuje se datum isteka serijskog broja, koji korisnik može uređivati, a izračunava se prilikom stvaranja
-lota i kasnijeg punjenja pokretnog skladišta, počevši od datuma početka i dodavanjem dana valjanosti serijskog broja unesenih u kartici Loti/SB u anagrafici artikla;
+- **Datum isteka**: u ovom se polju prikazuje datum isteka serijskog broja, koji korisnik može izmeniti. Izračunava se prilikom kreiranja lota, odnosno ulaza pripadajućeg skladišnog kretanja, tako što se datumu početka dodaje broj dana važenja serijskog broja unet na kartici *Lotovi/SN* u Šifarniku artikala;
 
-**Šifra kupca**: u ovom polju prikazuje se šifra *kupca Lota*, obično naziv koji kupac dodjeljuje lotu. Ovo je polje koje korisnik može urediti, a nije generirano automatski tijekom operacija punjenja. Također može sadržavati najviše 50 znakova i može biti isti za različite lote različitih artikala;
+- **Šifra kupca**: u ovom se polju prikazuje kod *lota kupca*, odnosno po pravilu naziv koji kupac dodeljuje lotu. Korisnik može uređivati ovo polje, ali se ono ne može automatski generisati tokom ulaznih operacija. Polje može sadržati najviše 50 znakova, a isti kod može se upotrebljavati i za različite lotove različitih artikala;
 
-**Šifra dobavljača**: u ovom polju prikazuje se šifra dobavljača Lota, obično naziv koji dobavljač dodjeljuje lotu. Ovo je polje koje korisnik može urediti, a nije generirano automatski tijekom operacija punjenja. Također može sadržavati najviše 50 znakova i može biti isti za različite lote različitih artikala;
+- **Šifra dobavljača**: u ovom se polju prikazuje kod *lota dobavljača*, odnosno po pravilu naziv koji dobavljač dodeljuje lotu. Korisnik može uređivati ovo polje, ali se ono ne može automatski generisati tokom ulaznih operacija. Polje može sadržati najviše 50 znakova, a isti kod može se upotrebljavati i za različite lotove različitih artikala;
 
-**Dobavljač**: u ovom polju upisuje se račun/podračun/opis dobavljača;
+- **Dobavljač**: u ovom se polju navode konto i opis dobavljača;
 
-**Opozvano**: ako je aktivno, označava da je serijski broj poništen;
+- **Poništen**: ako je oznaka aktivirana, označava da je serijski broj poništen;
 
-**Prislino zatvoreno**: ako je aktivno, označava da je serijski broj zatvoren silom;
+- **Prisilno zatvoren**: ako je oznaka aktivirana, označava da je serijski broj prisilno zatvoren;
 
-**Rezervirano**: ako je aktivno, označava da je serijski broj rezerviran.
+- **Rezervisan**: ako je oznaka aktivirana, označava da je serijski broj rezervisan.
 
+### Ulaz
 
-### Učitavanje
+U ovoj se sekciji prikazuju osnovni podaci o dokumentima koji su učestvovali u ulazu serijskog broja:
 
-Ova sekcija prikazuje osnovne podatke o dokumentima koji su doprinijeli učitavanju serijskog broja. Obično se uvijek prikazuje detalj o *podacima skladišta* koja je učitala serijski broj; ako je ovo generirano putem učitavanja dokumenta (primopredaja, povrat, itd.), tada će se pojaviti i redak koji prikazuje detalje tog dokumenta.
+- **Količina**: količina lota rezervisana u dokumentu.
+- **Merna jedinica**: merna jedinica upotrebljena u dokumentu.
+- **Broj pakovanja**: broj pakovanja.
+- **Datum unosa**: datum unosa.
+- **Prisilno zatvoren**: ako je oznaka aktivirana, označava da je serijski broj prisilno zatvoren.
+- **Referentni dokument**: tip dokumenta koji je generisao ulaz serijskog broja. To može biti skladišno knjiženje, prijemnica dobavljača ili povrat iz kooperacije.
+- **Knjiženje**: u ovim se poljima prikazuju broj i datum dokumenta.
+- **Skladište**: u ovim se poljima prikazuju kod i opis skladišta u koje je serijski broj primljen.
+- **Lokacija**: u ovim se poljima prikazuju kod i opis lokacije.
+- **Predložak**: u ovim se poljima prikazuju kod i opis predloška upotrebljenog za kreiranje tog ulaznog skladišnog kretanja.
+- **Kupac/Dobavljač**: konto i opis kupca ili dobavljača.
 
-*Dvostrukim klikom na redak dokumenta moguće je, sukladno korisničkim pravima, otvoriti dokument samo za pregled.*.
+### Izlaz
 
-**Količina**: prikazuje količinu lota koja je korištena u dokumentu;
+U ovoj se sekciji prikazuju osnovni podaci o prvom dokumentu, hronološkim redosledom, koji je rezervisao serijski broj. Podaci se prikazuju u mreži sa sledećim kolonama:
 
-**Jedinica mjere**: označava jedinicu mjere korištenu u dokumentu;
+- **Količina**: količina lota rezervisana u dokumentu.
+- **Merna jedinica**: merna jedinica upotrebljena u dokumentu.
+- **Referentni dokument**: tip dokumenta koji je prvi rezervisao serijski broj. To može biti proizvodni nalog, nalog kupca, izlazna otpremnica, izlazni račun, lista za preuzimanje, otpremnica za isporuku u kooperaciju ili povrat iz kooperacije.
+- **Knjiženje**: broj i datum dokumenta.
+- **Skladište**: kod i opis skladišta.
+- **Lokacija**: kod i opis lokacije.
+- **Predložak**: kod i opis upotrebljenog predloška.
+- **Kupac/Dobavljač**: konto i opis kupca ili dobavljača.
 
-**Broj paketa**: pokazuje broj paketa;
+## Sažetak i dodatne informacije
 
-**Datum unosa**: označava datum unosa;
+Šifarnik serijskih brojeva u sistemu Fluentis ERP moćan je alat za upravljanje sledljivošću i sigurnošću artikala. Glavne sekcije obuhvataju **Zaglavlje serijskog broja**, **Ulaz** i **Izlaz**, od kojih svaka sadrži ključne podatke potrebne za podršku poslovnim procesima.
 
-**Prisilino zatvoreno**: ako je aktivno, označava da je serijski broj zatvoren silom;
-
-**Referentni dokument**: prikazuje vrstu dokumenta koji je generirao punjenje serijskog broja. Može biti registracija skladišta, dobavnica kupnje ili povrat računa;
-
-**Registracija**: prikazuje broj i datum dokumenta;
-
-**Skladište**: prikazuje kod i opis skladišta na kojem je napunjen serijski broj;
-
-**Lokacija**: prikazuje kod i opis lokacije;
-
-**Uzrok**: prikazuje kod i opis uzroka korištenog za stvaranje tog pokreta punjenja;
-
-**Kupac/Dobavljač**: prikazuje račun, podračun i opis povezane s kupcem ili dobavljačem.
-
-
-### Iskorišćen
-
-Ova sekcija prikazuje osnovne podatke o prvom dokumentu, kronološki, koji je iskoristio serijski broj. Ako je serijski broj izravno iskorišten putem registracije skladišta, tada u ovom prikazu neće biti ničega, budući da se registracija skladišta za iskorištavanje serijskog broja uvijek prikazuje u sekciji 4. Ovi podaci prikazuju se u tablici u kojoj se pojavljuju sljedeće kolone:
-
-**Količina**: prikazuje količinu lota koja je korištena u dokumentu;
-
-**Jedinica mjere**: označava jedinicu mjere korištenu u dokumentu;
-
-**Datum unosa**: označava datum unosa;
-
-**Referentni dokument**: prikazuje vrstu dokumenta koja je prvi put iskoristila serijski broj. Može biti proizvodni nalog, narudžbenica kupca, dobavnica prodaje, prodajna faktura, lista izdavanja, dobavnica isporuke kontnog posla, povrat računa;
-
-**Registracija**: prikazuje broj i datum dokumenta;
-
-**Skladište**: prikazuje kod i opis skladišta na kojem je ispražnjen serijski broj;
-
-**Lokacija**: prikazuje kod i opis lokacije;
-
-**Uzrok**: prikazuje kod i opis uzroka korištenog za stvaranje tog pokreta punjenja;
-
-**Kupac/Dobavljač**: prikazuje račun, podračun i opis povezane s kupcem ili dobavljačem.
-
-*Dvostrukim klikom na redak dokumenta moguće je, sukladno korisničkim pravima, otvoriti dokument samo za pregled*.
+Za dodatne informacije pogledajte [Šifarnik artikala](/docs/erp-home/registers/items/create-new-item) i [Skladište](/docs/logistics/warehouse/warehouse-intro).

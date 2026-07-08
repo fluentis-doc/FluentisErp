@@ -1,15 +1,46 @@
 ---
 title: Serijski brojevi
-sidebar_position: 4
+description: Vodič za upravljanje i izmjenu serijskih brojeva u području Logistika sustava Fluentis ERP.
+keywords:
+  - serijski brojevi
+  - Fluentis ERP
+  - logistika
+  - serijski brojevi
+sidebar_position: 7
+schema: HowTo
+sidebar_label: Serijski brojevi
+tags:
+  - ERP
+  - Logistika
+  - Serijski brojevi
+last_update:
+  author: Fluentis Documentation Team
+  date: 2025-11-07
 ---
 
-Obrazac se otvara putem  **Logistika > Šifarnik lotova > Šifarnik serijskih brojeva**, i prikazuje popis svih brojeva serije prisutnih u bazi podataka, omogućujući njihovo uređivanje i pregled detalja.
+# Serijski brojevi
 
-Nakon što su postavljeni svi željeni filtri, dovoljno je kliknuti na gumb **Traži** koji se nalazi na *gornjem izborniku* kako biste prikazali rezultate unutar prikaza rezultata.
-Za otvaranje detalja dokumenta, dovoljno je odabrati ga i dvostruko kliknuti mišem ili kliknuti na gumb **Izmijeni**.
+Forma se otvara putem izbornika **Logistika > Šifarnik lotova > Šifarnik/Registar serijskih brojeva** i prikazuje cjelovit popis serijskih brojeva prisutnih u bazi podataka te omogućuje njihov pregled i izmjenu.
 
-*Posebni gumbi*:
+## Kako izvršiti pretragu
 
-> **Izmijeni**: gumb omogućuje [uređivanje unesenog serijskog broja](/docs/logistics/lots-serial-numbers/serial-numbers).
+1. Postavite željene filtre u formi za pretraživanje.  
+2. Kliknite gumb **Traži** na *traci izbornika* za prikaz rezultata u mreži.  
+3. Za otvaranje detalja serijskog broja odaberite željeni serijski broj i dvaput kliknite mišem ili kliknite gumb **Izmijeni**.
 
-Za detalje o zajedničkom funkcioniranju obrazaca, molimo pogledajte link  [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+:::important
+Moguće je izmijeniti samo postojeće serijske brojeve koji nisu referencirani u drugim dokumentima.
+:::
+
+**Posebni gumbi**
+
+- **Izmijeni**: omogućuje [izmjenu unesenog serijskog broja](/docs/logistics/lots-serial-numbers/serial-numbers).  
+
+## Sažetak i dodatne informacije
+
+Funkcija **Serijski brojevi** omogućuje pregled, pretraživanje i izmjenu serijskih brojeva povezanih s artiklima kojima se upravlja u ERP sustavu.  
+Pomoću filtara za pretraživanje moguće je brzo pronaći željene serijske brojeve i pristupiti njihovim detaljima radi eventualnih izmjena ili provjera.
+
+*Dodatne informacije*:
+- [Upravljanje lotovima i serijskim brojevima](/docs/logistics/lots-serial-numbers/lots-register)  
+- [Zajedničke funkcionalnosti formi](/docs/guide/common)

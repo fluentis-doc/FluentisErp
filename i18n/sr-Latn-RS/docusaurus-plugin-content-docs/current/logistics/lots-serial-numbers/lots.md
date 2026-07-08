@@ -1,36 +1,55 @@
 ---
 title: Pretraga lotova
 sidebar_position: 2
+description: Vodič za pretragu lotova i upravljanje njima unutar oblasti Logistika u sistemu Fluentis ERP.
+schema: HowTo
+tags: [Fluentis ERP, Logistika, Lotovi, Upravljanje skladištem]
+last_update:
+  author: Fluentis Documentation Team
+  date: 2025-11-07
+keywords: [pretraga lotova, Logistika, Lotovi, Upravljanje skladištem]
 ---
 
-Obrazac se otvara putem  **Logistika > Šifarnik lotova** i omogućuje pretraživanje svih lotova radi pregleda i uređivanja.
+# Pretraga lotova
 
-Nakon što su postavljeni svi željeni filtri, dovoljno je kliknuti na gumb **Traži** koji se nalazi na *gornjem izborniku* kako biste vidjeli rezultate unutar mreže rezultata.  
+Forma se otvara putem menija **Logistika > Šifarnik lotova** i omogućava pretragu, pregled i izmenu lotova prisutnih u sistemu.
 
-Za otvaranje pojedinosti o dokumentu, dovoljno je odabrati ga i dvostruko kliknuti mišem ili kliknuti na gumb **Izmijeni**.
+## Kako izvršiti pretragu
 
-*Posebni gumbi*:
+1. Postavite željene filtere u formi za pretragu.  
+2. Kliknite na dugme **Traži** na *traci menija* za prikaz rezultata u mreži.  
+3. Za otvaranje detalja lota odaberite željeni lot i dvaput kliknite mišem ili kliknite na dugme **Izmeni**.
 
-> **Izmijeni**: gumb omogućuje [Uređivanje unesenog lota](/docs/logistics/lots-serial-numbers/lots-register).
+:::important
+Moguće je izmeniti ili izbrisati samo lotove koji nisu referencirani u drugim dokumentima.
+:::
 
-*Specifični filtri*:
+## Posebna dugmad
 
-**Svi** **: **aktiviranjem ovog oznake korisnik može filtrirati sve lotove prisutne u bazi podataka;
+> **Izmeni**: omogućava [izmenu unetog lota](/docs/logistics/lots-serial-numbers/lots-register);    
+> **Otkaži**: omogućava brisanje lota ako nije referenciran ni u jednom dokumentu.
 
-**Ne Zatvoreno**: aktiviranjem ove oznake korisnik može filtrirati samo otvorene lotove, odnosno samo lotove za koje još postoji zaliha u skladištu;
+## Posebni filteri
 
-**Zatvoreno**: aktiviranjem ove oznake korisnik može filtrirati samo zatvorene lotove, odnosno samo lotove čija je zaliha jednaka nuli.  
+- **Svi**: aktiviranjem ove oznake korisnik može filtrirati sve lotove prisutne u bazi podataka;  
+- **Nezatvoreni**: aktiviranjem ove oznake korisnik može filtrirati samo otvorene lotove, odnosno samo lotove za koje još postoji zaliha u skladištu;  
+- **Zatvoreni**: aktiviranjem ove oznake korisnik može filtrirati samo zatvorene lotove, odnosno samo lotove čija je zaliha jednaka nuli.
 
-*Specifični stupci* u mreži rezultata (kliknite na znak **+** za otvaranje pojedinosti reda) 
+## Posebna polja
 
-**Zatvoreno**: oznaka, ako je aktivna, označava da je zaliha jednaka nuli;
+> *Napomena*: kliknite na znak **+** za otvaranje detalja reda.
 
-**Količina**: stupac prikazuje početnu količinu lota za svako skladište;  
+- **Zatvoren**: ako je oznaka aktivirana, označava da je zaliha jednaka nuli;  
+- **Količina**: prikazuje početnu količinu lota za svako skladište;  
+- **Raspoloživa količina**: prikazuje raspoloživu količinu lota za svako skladište, odnosno količinu na zalihi umanjenu za količinu rezervisanu u različitim dokumentima. Raspoloživa količina može biti prikazana i kao nula ako se lot nalazi u statusu **Nije raspoloživ za automatsko preuzimanje**;  
+- **Status lota**: prikazuje status lota. Ovim podatkom nije obavezno upravljati;  
+- **Skladište**: prikazuje kod skladišta u kojem se lot nalazi.
 
-**Raspoloživa količina**: stupac prikazuje dostupnu količinu za svako skladište lota, odnosno količinu u zalihama minus količinu angažiranu u različitim dokumentima. Dostupna količina također može biti prikazana kao jednaka nuli u slučaju kada se lot nalazi u stanju "nije dostupan za automatsko preuzimanje";
+## Sažetak i dodatne informacije
 
-**Status lota**: stupac prikazuje stanje lota. Radi se o podatku koji možda nije ni obrađen;
+Funkcija **Pretraga lotova** omogućava brzo pronalaženje evidentiranih lotova i njihovo filtriranje prema statusu i raspoloživosti.  
+Moguće je pristupiti detaljima svakog lota, izmeniti njegove podatke ili ga izbrisati, uz poštovanje uslova povezanosti sa drugim dokumentima.
 
-**Skladište**: stupac prikazuje kod skladišta na kojem se lot nalazi.
-
-Za pojedinosti o uobičajenom radu s obrascima, obratite se linku [Značajke, gumbe i zajednička polja](/docs/guide/common).
+**Dodatne informacije:**
+- [Evidentiranje i izmena lotova](/docs/logistics/lots-serial-numbers/lots-register)  
+- [Zajedničke funkcionalnosti formi](/docs/guide/common)
