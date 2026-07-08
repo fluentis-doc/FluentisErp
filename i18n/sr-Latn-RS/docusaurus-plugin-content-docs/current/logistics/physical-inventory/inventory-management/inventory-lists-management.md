@@ -1,10 +1,44 @@
 ---
-title: Uredi inventar artikala
+title: Izmena inventure artikala
+description: Upravljanje i popunjavanje inventurnih lista za fizičke inventure u sistemu Fluentis ERP.
+keywords:
+  - inventura artikala
+  - inventurne liste
+  - fizička inventura
+  - zalihe
+  - ERP logistika
 sidebar_position: 5
+schema: TechArticle
+tags:
+  - skladište
+  - inventure
+  - logistika
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Ovaj prozor omogućuje operateru da dovrši inventarne liste nakon što su unesene u prozoru [Unos inventara fizičkih zaliha](/docs/logistics/physical-inventory/inventory-management/insert-physical-inventory). 
+# Izmena inventure artikala
 
-Potrebno je unijeti artikle za koje je odrađena inventura. Unosom artikala, automatski se popunjavaju polja za *Mjernu jedinicu*, *Datum unosa* i *Stanje* na datum unosa inventarne liste.
+## Uvod
 
-Nakon što su sve inventarne liste dovršene, moguće je nastaviti s postupkom  [Razlike u inventurnim listama](/docs/logistics/physical-inventory/stock-difference).
+Ovaj prozor omogućava operateru popunjavanje inventurnih lista nakon njihovog kreiranja u formi [Unos fizičkih inventura](/docs/logistics/physical-inventory/inventory-management/insert-physical-inventory).
+
+## Popunjavanje inventurnih lista
+
+U listu je potrebno uneti popisane artikle.  
+Tokom unosa sistem automatski popunjava sledeća polja:  
+
+- **Merna jedinica**  
+- **Datum unosa**  
+- **Zaliha** na datum unosa inventurne liste  
+
+Nakon popunjavanja svih inventurnih lista koje čine fizičku inventuru moguće je preći na sledeću fazu, odnosno na postupak [Inventurne razlike](/docs/logistics/physical-inventory/stock-difference).
+
+## Sažetak i dodatne informacije
+
+Prozor *Izmena inventure artikala* omogućava evidentiranje i popunjavanje inventurnih lista, kao i pripremu podataka potrebnih za obračun inventurnih razlika.  
+Za više informacija o povezanim postupcima:
+
+- [Unos fizičkih inventura](/docs/logistics/physical-inventory/inventory-management/insert-physical-inventory)  
+- [Inventurne razlike](/docs/logistics/physical-inventory/stock-difference)  
+- [Zajedničke funkcije, dugmad i polja](/docs/guide/common)

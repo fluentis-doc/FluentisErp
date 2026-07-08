@@ -1,15 +1,47 @@
 ---
 title: Unos fizičkih zaliha
+description: Postupak kreiranja i popunjavanja fizičkih zaliha u sustavu Fluentis ERP, uključujući inventurne liste i upravljanje zatvaranjem.
+keywords:
+  - fizičke inventure
+  - inventurne liste
+  - skladište
+  - usklađivanje zaliha
+  - Fluentis ERP
 sidebar_position: 4
+schema: HowTo
+sidebar_label: Unos fizičkih zaliha
+tags:
+  - skladište
+  - zaliha
+  - logistika
+  - ERP
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Obrazac se otvara putem putanje  **Logistika > Fizička zaliha**, klikom na gumb **Novo**.
+# Unos fizičkih zaliha
 
-*Postupak*
+## Uvod
 
-Unesite broj, datum, opis, eventualne napomene i operatera. Oznaka **Zatvoreno** omogućuje, nakon izvršenih inventurnih razlika, zatvaranje inventara koji se više neće uzeti u obzir za postupak usklađivanja zaliha.
+Forma se otvara putem putanje **Logistika > Fizička zaliha** odabirom gumba **Novo**.  
+Ovdje je moguće kreirati novu fizičku inventuru (zalihu) i upravljati pripadajućim inventurnim listama.
 
-Nakon što ste unijeli inventar, potrebno je popuniti mrežu inventarnih lista koje čine inventar, specificirajući **Vrsta** liste, **Operater** i povezano  **Skladište**, kako bi se lista prestala uzimati u obzir za izračun inventurnih razlika.
-Nakon što su inventarne liste unesene, potrebno ih je popuniti. Da biste to učinili, odaberite željenu inventarnu listu u mreži i dvaput kliknite na nju da biste pristupili prozoru [Uredi inventarne artikle](/docs/logistics/physical-inventory/inventory-management/inventory-lists-management). 
+## Postupak
 
-Za sve što nije detaljno navedeno u ovom dokumentu o uobičajenom radu formi, molimo pogledajte sljedeću poveznicu: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+1. Unesite **Broj**, **Datum**, **Opis**, eventualne **Napomene** i **Zaposlenika**.  
+2. Nakon evidentiranja inventurnih razlika aktivirajte oznaku **Zatvoreno** kako biste zatvorili inventuru, nakon čega se ona više neće uzimati u obzir u postupku usklađivanja zaliha.  
+3. Popunite tablicu **Popisi** unosom sljedećih podataka:
+   - **Vrsta** liste  
+   - **Zaposlenik**  
+   - Referentno **Skladište**  
+4. Po želji je moguće postaviti **Datum zatvaranja** kako bi se lista isključila iz izračuna inventurnih razlika.  
+5. Nakon unosa inventurnih lista potrebno ih je popuniti. U tu svrhu odaberite inventurnu listu i dvaput kliknite na nju kako biste otvorili prozor za izmjenu [Izmjena inventure artikala](/docs/logistics/physical-inventory/inventory-management/inventory-lists-management).
+
+## Sažetak i dodatne informacije
+
+Postupak unosa fizičkih inventura omogućuje kreiranje inventure, definiranje pripadajućih lista i upravljanje njihovim popunjavanjem sve do eventualnog zatvaranja. Inventurne liste predstavljaju osnovu za upravljanje razlikama i ažuriranje zaliha.
+
+Za više informacija:
+
+- [Izmjena inventure artikala](/docs/logistics/physical-inventory/inventory-management/inventory-lists-management)  
+- [Zajedničke funkcije, gumbi i polja](/docs/guide/common)
