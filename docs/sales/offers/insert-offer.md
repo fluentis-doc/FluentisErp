@@ -157,7 +157,7 @@ I valori di ordine fornitore e fattura di acquisto vengono ricercati in funzione
 
 
 Nel caso l'offerta sia in valuta diversa dalla valuta società, in fase di assegnazione costo materiale, il valore verrà convertito nella valuta dell'offerta. 
-
+ 
 - **Percentuale/Valore**: in questi campi è possibile inserire un eventuale ricarico da applicare al Costo totale, in percentuale o valore.     
 - **Ricavo**: in questa colonna verrà calcolato automaticamente il Costo totale ricaricato.        
 - **Descrizione fornitore**: viene proposto il Fornitore preferenziale inserito in anagrafica articolo, ma è possibile modificarlo; se nella colonna *Tipo origine costo* è stato selezionato il listino fornitore, il listino considerato sarà quello valido per questo fornitore; inoltre, questo fornitore sarà l'intestatario della **Richiesta di offerta** generata dalla riga materiale.           
