@@ -1,75 +1,82 @@
 ---
-title: Stvaranje slaganja
+title: Kreiranje pickinga (slaganja robe)
 sidebar_position: 3
 ---
 
-Ovaj obrazac se otvara putem:
- - **Logistika > Slaganje > Stvori Slaganje** 
+:::important Čemu služi
+Upravljanje **pickingom* u sustavu Fluentis osmišljeno je za optimizaciju postupka preuzimanja artikala iz skladišta. Ova funkcionalnost omogućuje korisnicima učinkovito kreiranje lista za preuzimanje na temelju različitih vrsta *pickinga* (slaganja robe) koje je moguće konfigurirati u sustavu. Kreiranjem *pickinga* operateri mogu odabrati artikle koje je potrebno realizirati te definirati važne podatke kao što su količina i lokacija preuzimanja.
+
+Postupak upravljanja *pickingom* sastoji se od različitih sučelja koja omogućuju prikaz i filtriranje narudžbi kupaca, čime se olakšava potpuna ili djelomična realizacija narudžbi putem automatiziranog upravljanja podacima o artiklima. Osim toga, sustav automatski određuje identifikacijski broj *pickinga* na temelju prethodno konfiguriranih parametara, čime se osiguravaju sljedivost i urednost operacija.
+
+Zahvaljujući funkcionalnostima kao što su praćenje statusa realizacije redaka, evidentiranje šarži i serijskih brojeva te povezivanje s dokumentima kao što su otpremnice i izlazni računi, upravljanje *pickingom* u sustavu Fluentis pruža cjelovito i fleksibilno radno okruženje. Time se poduzećima omogućuje povećanje logističke učinkovitosti, smanjenje pogrešaka tijekom preuzimanja i osiguravanje većeg zadovoljstva kupaca.
+:::
+
+Obrazac se otvara putem:  
+ - putanje **Logistika > Picking (Slaganje robe) > Slaganje robe** 
 
 ili putem 
 
- - gumba **Novo** koji se nalazi u formi [Pretraga odabira](/docs/logistics/picking/search-picking).
+ - gumba **Novo** koji se nalazi u obrascu [Liste za slaganje](/docs/logistics/picking/search-picking).
 
-*Posebni gumbi*:
+## 1. Obvezni podaci
 
-> **Izvršenje iz narudžbe**: omogućuje unos artikala u odabir evadiranjem narudžbe kupca. Pritiskom na gumb otvorit će se prozor gdje je moguće filtrirati narudžbe kupca povezane s odabranim kupcem. Stoga je moguće potpuno ili djelomično izvršiti cijelu narudžbu ili redak.
+**Vrsta pickinga**: prethodno je definirana u *Konfiguracija > Tablice > Logistika > Vrste slaganja robe*. Ovo polje određuje raspon numeriranja dokumenta koji se unosi i automatski predlaže broj pickinga na temelju datuma unosa i posljednjeg unesenog broja;  
 
-*Specifična polja*:
+**Konto**: predstavlja referentnog kupca/dobavljača (nije obvezno);  
 
-**Vrsta uzimanja sa zaliha**: prethodno postavljena u *Konfiguracija > Tablice > Logistika > Vrste komisioniranja*. Ovo polje određuje raspon numeriranja dokumenta koji se unosi i automatski predlaže broj odabira na temelju datuma unosa i posljednjeg unesenog broja;  
+**Broj**: automatski se predlaže na temelju vrste, ali ga je moguće ručno izmijeniti uz poštovanje pravila slijeda između datuma i broja;  
 
-**Konto**: predstavlja kupca/dobavljača (nije obavezno); 
+**Datum/Sat**: automatski se predlažu trenutačni datum i vrijeme, ali ih je moguće ručno izmijeniti uz poštovanje pravila slijeda između datuma i broja.
 
-**Broj**: automatski se predlaže na temelju vrste, ali se može ručno promijeniti uvijek poštujući pravilo napretka između datuma i broja;  
+**Status**: predstavlja status dokumenta (koji može biti *Završeno*, *Za provjeru* ili *Obustavljeno*).
 
-**Datum/Vrijeme**: automatski se predlažu trenutni datum i vrijeme, ali se mogu ručno promijeniti uvijek poštujući pravilo napretka između datuma i broja.
+**Status izvršenja**: može imati sljedeće vrijednosti: *Nije izvršeno*, *Izvršeno*, *Djelomično izvršeno* ili *Prisilno izvršeno*. Ovaj se status odnosi na status realizacije pojedinačnih redaka. Primjerice, ako se putem upravljanja potvrdom realizira samo jedan redak, **Status izvršenja** promijenit će se iz *Nije izvršeno* u *Djelomično izvršeno*.    
 
-**Status**: predstavlja status dokumenta (koji može biti *Završen*, *Za provjeru* ili *Pauziran*).
-
-**Status izvršenja**: može imati sljedeće vrijednosti: *Nije izvršeno*, *Izvršeno*, *Djelomično izvršeno* ili *Prisilno izvršeno*; ovaj se status odnosi na status izvršenja pojedinih redaka, stoga, na primjer, ako se putem upravljanja oznakama izvrši i jedan redak, **Status izvršenja** će preći s *Nije izvršeno* na *Djelomično izvršeno*.
-
-
-:::note Napomena 
-Primijetite da se stupac *Dokument* u formi [Pretraga slaganja](/docs/logistics/picking/search-picking), donosi na status odabira, a ne na status redaka, pa će preći u status Izvršeno tek kada je Dostavnica ili faktura stvorena.
+:::note Napomena
+Važno je napomenuti da se stupac *Dokument* u obrascu [Pretraga pickinga](/docs/logistics/picking/search-picking) odnosi na status pickinga, a ne na status redaka. Stoga će prijeći u status realizirano tek nakon kreiranja otpremnice ili izlaznog računa.
 :::
 
+#### Posebni gumb
 
-U tablici unosa unose se artikli specificirajući  **Klasu**, **Šifru artikla** i **Količinu preuzimanja**.   
-Također je moguće unijeti **Alternativnu mjernu jedinicu** s odgovarajućom količinom.   
-U polju **Skladište** definira se skladište za pokretanje, a u polju **Uzrok** odgovarajući uzrok.   
-Također je moguće specificirati **Lokaciju** s koje se preuzima uneseni artikl.        
-**Ukupna neto** i **težina artikala** prikazani su, izračunati koristeći težine prisutne u kartici [Težine i dimenzije](/docs/erp-home/registers/items/create-new-item) *Šifarnika artikla* pomnožene s količinom retka.
+> **Izuzimanje (Realizacija-9 iz narudžbe**: omogućuje unos artikala u picking realizacijom narudžbe kupca. Klikom na gumb otvara se obrazac u kojem je moguće filtrirati narudžbe kupaca koje se odnose na predmetnog kupca. Moguće je potpuno ili djelomično realizirati cijelu narudžbu ili pojedini redak.
 
-Potrebni podaci za pokretanje skladišta:    
-**Datum izuzimanja**: predstavlja datum kada treba izvršiti zapis o skladištu;    
-**Korisnik**: predstavlja referentni korisnički kod za trenutno komisioniranje.   
-Što se tiče odabira prijenosa, potrebno je navesti **Skladište polaska i odredišta**: korisna informacija za odabir prijenosa;    
-**Ubicazione**: predstavlja lokaciju na koju treba prenijeti artikle;  
-**Kupac/dobavljač**: predstavlja račun za koji se obavlja pokret skladišta.
+## 2. Zaglavlje
 
-### Lotovi
+#### Podaci potrebni za skladišno kretanje  
 
-Ova kartica, koja je aktivna samo ako je odabrani artikl u mreži upravljan preko serija, omogućuje unos serijskog broja i pripadajuće količine.
+**Datum izuzimanja (preuzimanja iz skladišta)**: predstavlja datum na koji je potrebno izvršiti skladišno knjiženje;  
+**Korisnik**: predstavlja šifru korisnika za trenutačni picking. Kod pickinga za prijenos potrebno je navesti **Odlazno i odredišno skladište**: podatak potreban za pickinge za prijenos;  
+**Lokacija**: predstavlja lokaciju na koju se artikli zaprimaju;  
+**Kupac/dobavljač za istovar**: predstavlja konto za koji se izvršava skladišno kretanje.
 
-Ova sekcija, aktivna samo ako je odabrani artikl u mreži upravljan preko serijskih brojeva, omogućuje unos serijskog broja koji se dodjeljuje odabranom artiklu.
+## 3. Artikli
 
-**Dodatni podaci Artikla**
+U mrežu za unos unose se artikli uz navođenje **Klase**, **Šifre artikla** i **Količine za preuzimanje**. Moguće je unijeti i **Alternativnu mjernu jedinicu** s pripadajućom količinom. U polju **Skladište** definira se skladište za kretanje, a u polju **Predložak** pripadajući skladišni predložak. Moguće je navesti i **Lokaciju** s koje se uneseni artikl preuzima.
 
-Omogućuje unos i pregled *Dodatnih podataka* koji se odnose na pojedinačnu stavku.
-Za detaljan opis dodatnih podataka, molimo pogledajte članak o [Dodatnim podacima](/docs/configurations/utility/extra-data/extradata/new-extradata).
+### Lotovi/Serijski brojevi
 
+Kartica, koja je aktivna samo ako se odabranim artiklom u mreži upravlja po lotovima, omogućuje unos broja lotovima i pripadajuće količine.
 
-### Povezani proizvodni nalog
+Sekcija **Serijski brojevi**, koja je aktivna samo ako se odabranim artiklom u mreži upravlja po serijskim brojevima, omogućuje unos serijskog broja koji se dodjeljuje predmetnom artiklu.
 
-Ako je artikl povezan s proizvodnim nalogom, ova kartica omogućuje pregled svih informacija vezanih uz nalog.
+### Dodatni podaci artikla
 
-**Dokumenti u privitku**
+Omogućuje unos i prikaz *dodatnih podataka* za pojedini redak.           
+Detaljan opis dodatnih podataka dostupan je u članku [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata).
 
-Omogućuje prilaganje i pregled dokumenata koji se odnose na pojedinačne artikle.
+### Povezani proizvodni nalozi
 
-**Kontrola**
+Ako je artikl povezan s proizvodnim nalogom, ova kartica omogućuje prikaz svih podataka koji se odnose na taj nalog.
 
-Ova kartica omogućuje pregled stavki koje su označene pomoću [Kontrole zaliha](/docs/logistics/wms/sales/check-row-management) u sustavu upravljanja skladištem (WMS).      
-Ako se **WMS** ne koristi, i dalje je moguće ručno unijeti nove stavke označenih artikala.
+### Priloženi dokumenti
 
-Za detalje o zajedničkom funkcioniranju formi, molimo pogledajte članak o [Funkcionalnostima, gumbima i zajedničkim poljima](/docs/guide/common).
+Omogućuje prilaganje i prikaz dokumenata povezanih s pojedinim artiklima.  
+
+### Oznaka
+
+Ova kartica omogućuje prikaz redaka potvrđenih putem funkcionalnosti [Upravljanje oznakom (potvrdom)](/docs/logistics/wms/sales/check-row-management) modula WMS.    
+Ako se **WMS** ne koristi, moguće je ručno unijeti nove retke potvrđenih artikala.
+Funkcionalnost **Upravljanje oznakom** služi za potvrđivanje redaka pickinga koje je operater stvarno preuzeo u skladištu. Stoga, ako se u ovoj tablici nalazi barem jedan potvrđeni redak, postupci kreiranja otpremnice i izlaznog računa uzet će u obzir samo te retke.         
+Ako se u tablici **Upravljanje oznakom** ne nalazi nijedan redak, postupci kreiranja otpremnice i izlaznog računa uzet će u obzir sve retke prisutne u pickingu.
+
+Za detalje o zajedničkim funkcionalnostima obrazaca pogledajte poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

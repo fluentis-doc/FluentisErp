@@ -3,30 +3,37 @@ title: Razduženje naloga za slaganje
 sidebar_position: 4
 ---
 
-Odabirom jednog ili više izbora i pritiskom na gumb **Istovar** otvara se prozor koji omogućuje obavljanje kretanja robe izborima.
+:::important Čemu služi
+Postupak *Razduženje slaganja robe* u sistemu Fluentis namenjen je upravljanju skladišnim kretanjima artikala preuzetih iz skladišta tokom postupka slaganja robe. Ova funkcionalnost omogućava korisnicima odabir jednog ili više prethodno kreiranih dokumenata slaganja robe i kreiranje skladišnih knjiženja potrebnih za pravilno razduženje artikala.
 
-### Filter
+Unutar postupka korisnici mogu primeniti filtere za odabir željenih dokumenata slaganja robe i odrediti datum skladišnog knjiženja. Nakon odabira dokumenata moguće je pokrenuti postupak razduženja, čime se osigurava pravilno evidentiranje skladišnih kretanja u sistemu.
 
-Na ovoj je kartici moguće pretraživati željene izbore na temelju unesenih filtera. Također je moguće specificirati **Datum registracije u skladištu**.
+Postupak takođe nudi funkcionalnosti za upravljanje nepravilnostima, kao što su artikli bez definisanog skladišta i predloška, i za prikaz artikala koji nisu razduženi, čime se poboljšavaju operativna efikasnost i sledljivost zaliha.
+:::
 
-*Poseban gumb*:  
-> **Istovar**: stvara zapise o skladištu za odabrane izbore.
+Odabirom jednog ili više dokumenata slaganja robe i pritiskom na dugme **Istovar** otvara se prozor koji omogućava kreiranje skladišnih kretanja za odabrane dokumente.
 
-### Parametri
+**Filter**
 
-Na ovoj kartici moguće je specificirati parametre potrebne za stvaranje pokreta u skladištu. Posebice, za redove izbora koji nemaju skladište i uzrok moguće je odabrati da se: ne obavlja isporuka za cijeli dokument, preskoči artikl bez skladišta i uzroka, prikažu artikli koji nisu isporučeni, koriste zadani skladište i uzrok.
+Na ovoj kartici moguće je pretraživati željene dokumente slaganja robe prema unetim filterima. Takođe je moguće odrediti **Datum registracije u skladištu**.
 
-### Sažetak
+*Posebno dugme*:  
+> **Istovar**: kreira skladišna knjiženja za odabrane dokumente slaganja robe.  
 
-Kartica sažetka omogućuje prikazane provedenih operacija i, po potrebi, provedbu povratka operacija.
+**Parametri**
 
-Mogu se unijeti filtri kako bi se prikazale samo željene operacije. Odabirom retka u mreži rezultata moguće je vidjeti pojedinosti (tj. izbore i pripadajuće zapise) na karticama u donjem dijelu prozora.
+Na ovoj kartici moguće je odrediti parametre potrebne za kreiranje skladišnih kretanja. Konkretno, za stavke slaganja robe bez definisanog skladišta i predloška moguće je odabrati da se ne sprovede istovar celog dokumenta, da se ignoriše artikl bez skladišta i predloška, da se prikažu artikli koji nisu istovareni ili da se prihvate podrazumevano postavljeni skladište i predložak.
 
-Odabirom jednog ili više redaka u mreži pretraživanja i pritiskom na gumb *Izbriši odabrana izvršenja* bit će obrisani odabrani zapisi o skladištu.
+**Sažetak**
 
+Kartica **Sažetak** omogućava pregled sprovedenih operacija i, prema potrebi, njihovo poništavanje.
 
-*Posebni gumbi*:
-> **Izbriši označena razduženja**:  briše zapise izabranih linija u prikazu rezultata.    
-> **Povrati listu za slaganje**: briše snimke ograničene na odabrane redove slaganja.    
+Moguće je uneti filtere kako bi se prikazale samo željene operacije. Odabirom reda u mreži rezultata moguće je pregledati detalje, odnosno povezane dokumente slaganja robe i pripadajuća knjiženja, na karticama u donjem delu prozora.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju obrazaca, molimo pogledajte sljedeću poveznicu [Funzionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Odabirom jednog ili više redova u mreži rezultata i pritiskom na dugme *Izbriši označena razduženja* izbrisaće se kreirana skladišna knjiženja.
+
+*Posebna dugmad*:
+> **Izbriši označena razduženja**: briše knjiženja nastala iz redova odabranih u mreži rezultata.  
+> **Povrati listu za slaganje**: briše knjiženja samo za odabrane stavke slaganja robe.  
+
+Za sve što u ovom dokumentu nije detaljno opisano u vezi sa zajedničkim funkcijama formi pogledajte [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

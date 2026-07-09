@@ -1,35 +1,43 @@
 ---
-title: Istovar zaliha
+title: Razduženje prema označenim stavkama
 sidebar_position: 5
 ---
 
-:::note NAPOMENA
-Za razliku od postupka [Razduženje naloga za slaganje](/docs/logistics/picking/unload-picking), ovaj postupak omogućuje izvođenje istih funkcija, ali samo za označene retke.
+:::important Čemu služi
+Postupak *Razduženje prema označenim stavkama* u sistemu Fluentis specijalizovana je funkcionalnost koja omogućava sprovođenje razduženja samo za stavke koje su stvarno označene tokom postupka slaganja robe. Ova funkcionalnost osigurava veću efikasnost i preciznost jer omogućava odabir i knjiženje samo onih artikala za koje je potvrđeno da su preuzeti iz skladišta.
+
+Korisnici mogu pomoću prilagodljivih filtera pretraživati željene dokumente slaganja robe kako bi brzo pronašli odgovarajuće dokumente. Nakon njihovog odabira moguće je kreirati skladišna knjiženja za označene stavke, dok detaljan pregled sprovedenih operacija omogućava prikaz detalja i eventualno poništavanje operacija.
+
+Postupak *Razduženje prema označenim stavkama* ne samo da smanjuje rizik od grešaka nego i povećava produktivnost, osiguravajući dosledno i pouzdano sprovođenje operacija razduženja.
 :::
 
-Odabirom jednog ili više izbora i pritiskom na gumb **Istovar** otvara se prozor koji omogućuje obavljanje kretanja robe za označene retke izbora.
+:::note Napomena
+Za razliku od postupka [Razduženje slaganja robe](/docs/logistics/picking/unload-picking), ovaj postupak omogućava sprovođenje istih funkcija, ali samo za označene stavke.
+:::
+
+Odabirom jednog ili više dokumenata slaganja robe i pritiskom na dugme **Istovar** otvara se prozor koji omogućava kreiranje skladišnih kretanja za označene stavke odabranih dokumenata.
 
 **Filter**
 
-Na ovom je kartici moguće pretraživati željene izbore na temelju unesenih filtara. Također je moguće specificirati **Datum registracije u skladištu**.
+Na ovoj kartici moguće je pretraživati željene dokumente slaganja robe prema unetim filterima. Takođe je moguće odrediti **Datum skladišnog knjiženja**.
 
-*Posebni gumbi*:  
-> **Istovar**: stvara zapise o skladištu za odabrane izbore.
+*Posebno dugme*:  
+> **Istovar**: kreira skladišna knjiženja za odabrane dokumente slaganja robe.  
 
 **Parametri**
 
-Na ovoj kartici moguće je specificirati parametre potrebne za stvaranje pokreta u skladištu. Posebno, za redove izbora koji nemaju skladište i uzrok moguće je odabrati da se ne obavlja isporuka za cijeli dokument, preskoči članak bez skladišta i uzroka, prikažu članci koji nisu isporučeni te da se koriste zadano skladište i uzrok.
+Na ovoj kartici moguće je odrediti parametre potrebne za kreiranje skladišnih kretanja. Konkretno, za stavke slaganja robe bez definisanog skladišta i predloška moguće je odabrati da se ne vrši istovar celog dokumenta, da se ignoriše artikl bez skladišta i predloška, da se prikažu artikli koji nisu istovareni ili da se prihvate podrazumevano postavljeni skladište i predložak.
 
 **Sažetak**
 
-Kartica sažetka omogućuje prikazane provedenih operacija i, po potrebi, provedbu povratka operacija.
+Kartica **Sažetak** omogućava pregled sprovedenih operacija i, prema potrebi, njihovo poništavanje.
 
-Mogu se unijeti filtri kako bi se prikazale samo željene operacije. Odabirom retka u mreži rezultata moguće je vidjeti pojedinosti (tj. izbore i pripadajuće zapise) na karticama u donjem dijelu prozora.
+Moguće je uneti filtere kako bi se prikazale samo željene operacije. Odabirom reda u mreži rezultata moguće je pregledati detalje, odnosno povezane dokumente slaganja robe i pripadajuća knjiženja, na karticama u donjem delu prozora.
 
-Odabirom jednog ili više redaka u mreži pretraživanja i pritiskom na gumb *Izbriši označena razduženja* bit će obrisani odabrani zapisi o skladištu.
+Odabirom jednog ili više redova u mreži rezultata i pritiskom na dugme *Izbriši označena razduženja* izbrisaće se kreirana skladišna knjiženja.
 
-*Posebni gumbi*:
-> **Izbriši odabrana izvršenja**: briše zapise izabranih linija u mreži rezultata.    
-> **Povrati listu za slaganje**: briše zapise samo za odabrane linije izbora.   
+*Posebna dugmad*:
+> **Izbriši označena razduženja**: briše knjiženja nastala iz redova odabranih u mreži rezultata.  
+> **Povrati listu za slaganje**: briše knjiženja samo za odabrane stavke slaganja robe.  
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju obrazaca, molimo pogledajte sljedeću poveznicu [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve što u ovom dokumentu nije detaljno opisano u vezi sa zajedničkim funkcijama formi pogledajte [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
