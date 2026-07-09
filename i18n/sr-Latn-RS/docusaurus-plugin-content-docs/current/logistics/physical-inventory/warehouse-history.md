@@ -1,12 +1,46 @@
 ---
 title: Arhiva skladišta
+description: Pregled i analiza sačuvanih istorijskih podataka o vrednovanju skladišta u sistemu Fluentis ERP.
+keywords:
+  - Arhiva skladišta
+  - vrednovanje inventara
+  - zalihe
+  - poslednji trošak
+  - prosečni trošak
 sidebar_position: 5
+schema: TechArticle
+sidebar_label: Arhiva skladišta
+tags:
+  - skladište
+  - inventura
+  - vrednovanje
+  - logistika
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Ova forma omogućuje pregled povijesnih podataka o valoriziranim zalihama u skladištu (upravljačko područje, poreska klasifikacija, posljednja cijena, prosječna cijena, ...) provedenim putem postupka [Valorizacija količine skladišta](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity)
+# Arhiva skladišta
 
-:::note **UPOZORENJE**
-Da bi podaci bili spremljeni u **Arhiva skladišta**, potrebno je da, prilikom pokretanja postupka **Procjenjena vrijednost inventara**, bude aktivirana opcija **Arhiviranje inventara**.
+## Uvod
+
+:::important
+**Arhiva skladišta** u sistemu Fluentis omogućava pristup sačuvanim istorijskim podacima o skladišnim operacijama. Ova funkcionalnost omogućava pregled arhive zatvaranja i vrednovanja sprovedenih tokom vremena, sa informacijama kao što su poslednji trošak, prosečni trošak i zalihe povezane sa svakim zatvaranjem.
+
+Putem namenske forme operateri mogu pregledati podatke o vrednosnim inventarima i drugim logističkim operacijama, čime se osigurava potpuna i neposredna sledljivost. Za pravilno čuvanje podataka potrebno je tokom postupaka vrednovanja aktivirati oznaku **Čuvanje stanja inventara**.
+
+Upravljanje istorijom skladišta podržava sledljivost i omogućava analizu uspešnosti preduzeća tokom vremena i doprinosi strateškom planiranju resursa i povezanih troškova.
 :::
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem funkcioniranju obrazaca, možete se obratiti sljedećoj poveznici [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Ova forma omogućava pregled sačuvanih istorijskih podataka o vrednosnim inventarima skladišta (upravljačko područje, poreska kategorija, poslednji trošak, prosečni trošak...) generisanih postupkom [Vrednosni inventar količina](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity).
+
+:::important Napomena
+Kako bi se podaci sačuvali u **Arhivi skladišta**, tokom sprovođenja postupka **Vrednosni inventar količina** mora biti aktivirana oznaka **Čuvanje stanja inventara**.
+:::
+
+## Sažetak i dodatne informacije
+
+Arhiva skladišta omogućava preciznu analizu sačuvanih istorijskih podataka o vrednovanju inventara i podržava kontrolu, sledljivost i upravljačke analize.  
+Za dodatne informacije o povezanim funkcionalnostima pogledajte sledeće veze:
+
+- [Vrednosni inventar količina](/docs/logistics/physical-inventory/inventory-reports/valorized-inventory-with-quantity)
+- [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common)
