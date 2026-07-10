@@ -244,8 +244,6 @@ Poništavanje je potrebno izvršiti sledećim redosledom:
 
 Podsećamo da su postupci poništavanja dostupni u istim formama u kojima je izvršeno kreiranje, na odgovarajućoj sledećoj kartici koja je uvek dostupna.
 
-</details>
-
 <details>
 
   <summary>16. Zašto u naknadi agenta udeo doprinosa Enasarco na teret preduzeća ne odgovara procentu postavljenom za vrstu agenta (na primer 8,5 %)?</summary>
