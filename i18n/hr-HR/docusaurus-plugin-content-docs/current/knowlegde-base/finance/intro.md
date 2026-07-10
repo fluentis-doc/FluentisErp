@@ -245,7 +245,7 @@ Poništavanje je potrebno izvršiti sljedećim redoslijedom:
 
 Podsjećamo da su postupci poništavanja dostupni u istim formama u kojima je izvršeno kreiranje, na odgovarajućoj sljedećoj kartici koja je uvijek dostupna.
 
-</details>
+
 
 <details>
 
