@@ -49,7 +49,19 @@ il **codice** della Società (che deve corrispondere al codice definito nel port
 
 **Descrizione**: ovvero la ragione sociale ufficiale della società
 
-**Partita IVA**: normalmente viene inserita senza il precodice nazione ad esempio IT per l’Italia)
+**Partita IVA**: normalmente viene inserita senza il precodice nazione ad esempio IT per l’Italia.
+
+<details>
+
+  <summary>Dettaglio gestione della **Licenza Fluentis** co lettura del numero di partita iva (Click to expand)</summary>
+  
+ 1.	In fase di **prima installazione** il sistema chiede una società, una divisione ed una valuta da inserire nella base dati. La società viene inserita **senza partita** iva e quindi non viene collegata alla licenza e può essere utilizzata senza problemi. Pertanto è possibile inserire tutte le società e divisioni che si desidera **se non hanno una PIVA** perché il sistema di gestione della licenza non le rileva. Non sarà possibile, comunque, gestire fatture e altri elementi fiscali, fondamentali in un ambiente operativo.
+2.	Nel momento in cui si decide di configurare una società reale ci sono due scenari:
+a.	Utente finale: viene inserita società e PIVA comunicate al supporto commerciale e per le quali è stata attivata la licenza inserita in fase di installazione. Da questo momento ogni modifica a nome/descrizione della società e alla sua PIVA deve essere concordata con il supporto commerciale, compresa l’aggiunta di altre società, altrimenti verrà riconosciuta un’attività fraudolenta e la licenza verrà bloccata. Sarà invece possibile creare più copie dello stesso ambiente (database) anche su server diversi (ad esempio per ambienti di sviluppo o test) mantenendo invariata società e P.iva senza problemi. Il numero di utenti che si potranno connettere in parallelo sarà da conteggiarsi su tutti gli ambienti.
+b.	Un partner: al partner viene assegnata una licenza NFR con un set di utenze prestabilito (5 standard – 50 VIP). Il partner potrà usare la licenza sia per il proprio uso interno di Fluentis, sia per creare diversi ambienti di sviluppo/test oppure ambienti Demo, ma la licenza dovrà sempre essere associata a delle società senza P.iva, oppure alla società e P.iva fornita al supporto commerciale. L’inserimento di una società e/o P.iva diverse da quelle abilitate da Fluentis porterà al blocco della licenza. Il numero totale di utenti connessi sarà da conteggiare su tutti gli ambienti creati con la stessa licenza. Una volta acquisito un cliente dovrà essere richiesta una licenza ufficiale per il cliente finale da configurare sui suoi ambienti.
+
+
+</details>
 
 **Codice fiscale della società**: che può corrispondere alla partita iva
 
