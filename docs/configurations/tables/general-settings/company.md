@@ -53,7 +53,7 @@ il **codice** della Società (che deve corrispondere al codice definito nel port
 
 <details>
 
-  <summary>Dettaglio gestione della **Licenza Fluentis** co lettura del numero di partita iva (Click to expand)</summary>
+  <summary>Dettaglio gestione della **Licenza Fluentis** con lettura del numero di partita iva (Click to expand)</summary>
   
  1.	In fase di **prima installazione** il sistema chiede una società, una divisione ed una valuta da inserire nella base dati. La società viene inserita **senza partita** iva e quindi non viene collegata alla licenza e può essere utilizzata senza problemi. Pertanto è possibile inserire tutte le società e divisioni che si desidera **se non hanno una PIVA** perché il sistema di gestione della licenza non le rileva. Non sarà possibile, comunque, gestire fatture e altri elementi fiscali, fondamentali in un ambiente operativo.
 2.	Nel momento in cui si decide di configurare una società reale ci sono due scenari:
