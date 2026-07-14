@@ -3,15 +3,36 @@ title: Unos nove utovarne jedinice
 sidebar_position: 3
 ---
 
-Za stvaranje nove utovarne jedinice, dovoljno je unijeti novi redak u glavnu mrežu, navodeći godinu, grupu, broj i tip. Ta polja definiraju jedinstveni ključ za svaku utovarnu jedinicu.
-Automatski će se popuniti polja šifranika koja se odnose na dimenzije i težine, ali ih je moguće promijeniti.
-Obavezno je unijeti operatera i odabrati skladište i lokaciju u koju će se utovariti jedinica za utovar.
+## Unos nove utovarne jedinice
 
-Nakon što je utovarna jedinica stvorena u kartici *Zaglavlje*, prelaskom na karticu *Detalji utovarne jedinice* moguće je unijeti članak ili članke koji je čine.
-Unos uključuje obvezno navođenje klase, koda (varijante ako je članak upravljan varijantama) i količine. Članku je također moguće dodijeliti liniju narudžbe kupca, odabirom *Tipa* i broja *Narudžbe kupca* u odgovarajućem stupcu.
+Za kreiranje nove **utovarne jedinice** dovoljno je uneti novi red u glavnu tabelu i navesti **godinu**, **grupu**, **broj** i **tip**. Ova polja zajedno čine jedinstveni identifikator svake utovarne jedinice.
 
+Polja koja se odnose na dimenzije i masu automatski se popunjavaju prema vrednostima definisanim u tabeli **Tipovi utovarnih jedinica**, ali ih je po potrebi moguće ručno izmeniti.
 
+Takođe je potrebno odabrati **skladište** i **lokaciju**, nakon čega se može otvoriti kartica **Detalji**, u kojoj se unose artikli koji čine utovarnu jedinicu.
 
+Artikli se mogu dodati:
+- pritiskom na dugme **Novi artikal** ili
+- direktnim unosom u prvi slobodan red.
 
+U oba slučaja obavezno je navesti:
+- **Klasu artikla**
+- **Šifru artikla**
+- **Varijantu** (ako se artikal vodi po varijantama)
+- **Količinu**
 
+Uz artikal je moguće povezati i red **naloga kupca**, odabirom **Tipa** i **Broja naloga kupca** u odgovarajućim kolonama.
 
+Podaci o skladištu automatski će se ažurirati nakon knjiženja utovarne jedinice.
+
+### Oznake
+
+- **Odštampana**: automatski se postavlja nakon štampanja utovarne jedinice.
+- **Proknjižena**: automatski se postavlja nakon knjiženja utovarne jedinice.
+- **Rasknjižena**: automatski se postavlja nakon storniranja knjiženja utovarne jedinice.
+- **Iz utovarne jedinice**: automatski se postavlja kada utovarna jedinica ima nadređenu utovarnu jedinicu.
+
+### Specifična dugmad
+
+- **Novi artikal**: omogućava dodavanje novog artikla u utovarnu jedinicu.
+- **Obriši artikal**: omogućava uklanjanje odabranog artikla iz utovarne jedinice.

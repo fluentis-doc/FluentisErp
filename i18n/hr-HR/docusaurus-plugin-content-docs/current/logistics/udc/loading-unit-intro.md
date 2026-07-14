@@ -23,7 +23,7 @@ import Link from '@docusaurus/Link';
 <p>Omogućuje preuzimanje utovarnih jedinica kao cjeline, za razliku od standardnog pickinga koji se temelji na pojedinačnim artiklima. Posebno je korisna prilikom pripreme robe za otpremu kupcu jer omogućuje grupiranje artikala unutar unaprijed definiranih utovarnih jedinica.</p>
 
 <p><Link to="/docs/logistics/udc/loading-unit-packing-lists/transfer-unit" className="bold-link">Lista za prijenos UJ</Link></p>
-<p>Omogućuje upravljanje premještanjem utovarnih jedinica unutar vlastitih skladišta. Za razliku od Liste za preuzimanje UJ, koja služi za otpremu robe kupcima, Lista za prijenos UJ namijenjena je optimizaciji internih skladišnih premještanja između različitih skladišta i skladišnih lokacija.</p>
+<p>Omogućuje upravljanje premještanjem utovarnih jedinica unutar vlastitih skladišta. Za razliku od Liste za preuzimanje UJ, koja služi za otpremu robe kupcima, Lista za prijenos utovarnih jedinica namijenjena je optimizaciji internih skladišnih premještanja između različitih skladišta i skladišnih lokacija.</p>
 
     </div>
 </div>

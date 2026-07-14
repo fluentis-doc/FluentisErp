@@ -3,48 +3,63 @@ title: Pretraga utovarnih jedinica i Vizualizacija prebacivanja utovarnih jedini
 sidebar_position: 2
 ---
 
-### Pretraga utovarnih jedinica
+:::important Čemu služi
 
-Formular se otvara putem navigacije **Logistika > Upravljanje utovarnom jedinicom**.
+Upravljanje **utovarnim jedinicama** u Fluentisu omogućava upravljanje kompletnim životnim ciklusom jedinica tereta – od njihovog kreiranja i skladišnih kretanja pa sve do prodaje. UJT se mogu kreirati ručno ili putem aplikacije **WMS Mobile**, što sistem čini prilagodljivim različitim operativnim potrebama.
 
-Omogućava pretraživanje svih dokumenata radi pregleda, izmjene ili brisanja, ili dodavanja novog dokumenta; prozor se sastoji od područja filtra i prikaza rezultata.
+Postupak upravljanja uključuje naprednu pretragu svih kreiranih jedinica tereta i omogućava praćenje njihovog statusa knjiženja i rasknjiženja. Svaka UJT identifikovana je jedinstvenim ključem koji se sastoji od **godine**, **grupe** i **broja**, dok se podaci o dimenzijama i masi mogu prilagoditi prema potrebi.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** u *gornjem izborniku* kako bi se rezultati prikazali u prikazu rezultata.
+Modul takođe omogućava upravljanje artiklima unutar svake jedinice tereta, povezivanje sa nalozima kupaca i evidentiranje skladišnih knjiženja. Operacije poput knjiženja, rasknjiženja i premeštanja jedinica tereta između lokacija izvršavaju se jednostavno i fleksibilno, uz obezbeđivanje ažurnih i tačnih podataka.
 
-Za otvaranje pojedinosti o dokumentu, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gumb Izmijeni (omogućuje pristup detaljima i uređivanje) ili na gumb Pregled (omogućuje pristup detaljima bez mogućnosti uređivanja).
+Zahvaljujući ovim funkcionalnostima, upravljanje jedinicama tereta u Fluentisu povećava efikasnost skladišnih procesa i obezbeđuje potpunu sledljivost zaliha.
 
-*Vidi također*:   
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)            
-Dodavanje novih polja u obrasce pretraživanja    
-
-:::note NAPOMENA
-Prilikom otvaranja obrasca, zastavice *Ukrcaj* i *Istovar*, prisutne u filtru, nisu označene, pa će se prikazati samo utovarne jedinice koje još nisu učitane. 
-Aktiviranjem zastavice *Ukrcaj* prikazat će se samo učitane utovarne jedinice, a aktiviranjem i zastavice *Istovar* prikazat će se samo utovarne jedinice koje su već istovarene.
 :::
 
-U slučaju da je *jedinica utovara* dodana u *dostavnu* ili *transfernu* listu, u rezultirajućoj mreži bit će prikazani broj i datum liste.
+### Pretraga utovarnih jedinica
 
-Također, važno je napomenuti da je moguće pretraživati utovarne jedinice po narudžbi kupca s kojima su povezane.
+Forma se otvara putem navigacije **Logistika > Upravljanje utovarnom jedinicom**.
 
-Iz ovog obrasca moguće je izvršiti ukrcaj odabranih utovarnih jedinica pritiskom na gumb *Utovari utovarnu jedinicu*, kao i istovar (samo ako su već učitani i prisutni u listi) putem gumba *Razduži utovarnu jedinicu*.
+Omogućava pretragu svih dokumenata radi pregleda, izmene ili brisanja, kao i dodavanja novog dokumenta. Prozor se sastoji od oblasti za filtriranje i prikaza rezultata.
 
+Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** u *gornjem meniju* kako bi se rezultati prikazali u tabeli rezultata.
 
-*Posebni gumbi*:
+Za otvaranje detalja dokumenta dovoljno je odabrati dokument i dvaput kliknuti mišem ili kliknuti na dugme **Izmeni** (omogućava pristup detaljima i uređivanje) ili **Pregled** (omogućava pregled detalja bez mogućnosti uređivanja).
 
-> **Novo**: omogućuje [Stvaranje nove utovarne jedinice](/docs/logistics/udc/loading-unit-management/insert-new-pallet);  
-> **Povrat od kupaca**: omogućuje stvaranje nove *Jedinice za utovar i istovar*, koristeći utovarnu jedinicu s oznakom za povrat kao tip utovarne jedinice. Sva ostala svojstva se kopiraju iz *originalne utovarne jedinice*. Ovaj gumb je dostupan samo za redove koji su utovareni i isporučeni;   
-> **Umetni narudžbe u utovarnim jedinicama**: omogućuje unošenje stavki narudžbe klijenta u *jedinicu za utovar i istovar*. Ovaj postupak stvara vezu između utovarne jedinice i narudžbe klijenta;    
-> **Utovari utovarnu jedinicu**: izvršava postupak stvaranja *zapisa/transfera za utovar utovarne jedinice*;          
-> **Razduži utovarnu jedinicu**: izvršava postupak stvaranja zapisa/ transfera za *istovar utovarne jedinice*. Ovaj je gumb dostupan samo ako je utovarna jedinica prisutna u popisu preuzimanja utovarnih jedinica;              
-> **Prikaži temeljnicu o utovaru**: otvara zapis o utovaru utovarne jedinice u skladu s skladišnom evidencijom;    
-> **Prikaži temeljnicu o istovaru**: otvara zapis o istovaru utovarne jedinice u skladu s skladišnom evidencijom;    
-> **Povrat transakcije zaduženja utovarne jedinice**: poništava zapis o utovaru utovarne jedinice ako je utovarne jedinica utovarena;    
-> **Povrat transakcije razduženja utovarne jedinice**: poništava zapis o istovaru utovarne jedinice ako je utovarna jedinica utovarena i istovarena;    
-> **Dodaj/ukloni artikle**: omogućuje korisniku dodavanje ili uklanjanje artikla iz odabrane *jedinice za utovar i istovar*. Ovaj je gumb dostupan za utovarene, neisporučene retke koji nisu povezani s prikupljanjem ili listama za prijenos i koji nisu povezani s *proizvodnim izjavama*; 
-> **Premjesti utovarnu jedinicu**: omogućuje premještanje utovarne jedinice s jednog mjesta na drugo;    
-> **Povrat izvještaja na prethodno stanje**: postavlja zastavicu ispisa na "Ne". Ovaj gumb je dostupan samo za retke koji nisu utovareni i koji nisu povezani s proizvodnim izjavama.      
+*Vidi takođe:*  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u obrasce za pretragu
+
+:::note NAPOMENA
+Prilikom otvaranja forme, oznake **Zaduženje** i **Istovar**, koje se nalaze u filteru, nisu aktivirane, pa će biti prikazane samo utovarne jedinice koje još nisu utovarene.
+
+Aktiviranjem oznake **Zaduženje** prikazaće se samo utovarene utovarne jedinice, dok će aktiviranjem i oznake **Istovar** biti prikazane samo utovarne jedinice koje su već istovarene.
+:::
+
+U slučaju da je *utovarna jedinica* dodata u *dostavnu* ili *transfernu* listu, u tabeli rezultata biće prikazani broj i datum liste.
+
+Takođe, važno je napomenuti da je moguće pretraživati utovarne jedinice prema nalogu kupca sa kojim su povezane.
+
+Iz ove forme moguće je izvršiti utovar odabranih utovarnih jedinica pritiskom na dugme **Utovari jedinicu**, kao i istovar (samo ako su već utovarene i nalaze se u listi) putem dugmeta **Razduži jedinicu**.
+
+### Specifična dugmad
+
+> **Novo**: omogućava [Kreiranje nove utovarne jedinice](/docs/logistics/udc/loading-unit-management/insert-new-pallet);  
+> **Povrat od kupaca**: omogućava kreiranje nove *utovarne jedinice* korišćenjem tipa utovarne jedinice predviđenog za povrat. Sva ostala svojstva kopiraju se sa *originalne utovarne jedinice*. Ovo dugme je dostupno samo za redove koji su utovareni i isporučeni;  
+> **Ubaci naloge u utovarne jedinice**: omogućava unos stavki naloga kupca u *utovarnu jedinicu*. Ovim postupkom kreira se veza između utovarne jedinice i naloga kupca;  
+> **Utovari jedinicu**: izvršava postupak kreiranja *skladišnog knjiženja/prenosa za utovar utovarne jedinice*;  
+> **Razduži jedinicu**: izvršava postupak kreiranja *skladišnog knjiženja/prenosa za istovar utovarne jedinice*. Ovo dugme je dostupno samo ako se utovarna jedinica nalazi na listi preuzimanja utovarnih jedinica;  
+> **Prikaži knjiženja utovara**: otvara knjiženje utovara utovarne jedinice u skladu sa skladišnom evidencijom;  
+> **Prikaži knjiženja istovara**: otvara knjiženje istovara utovarne jedinice u skladu sa skladišnom evidencijom;  
+> **Poništi transakciju zaduženja jedinice**: poništava knjiženje utovara utovarne jedinice ako je jedinica utovarena;  
+> **Poništi transakciju razduženja jedinice**: poništava knjiženje istovara utovarne jedinice ako je jedinica utovarena i istovarena;  
+> **Dodaj/ukloni artikle**: omogućava korisniku dodavanje ili uklanjanje artikla iz odabrane *utovarne jedinice*. Ovo dugme je dostupno za utovarene, neisporučene redove koji nisu povezani sa listama preuzimanja ili transfernim listama i koji nisu povezani sa *proizvodnim prijavama*;  
+> **Premesti utovarnu jedinicu**: omogućava premeštanje utovarne jedinice sa jedne lokacije na drugu;  
+> **Vrati status štampe**: postavlja oznaku štampe na vrednost **Ne**. Ovo dugme je dostupno samo za redove koji nisu utovareni i nisu povezani sa proizvodnim prijavama.
 
 ### Vizualizacija prebacivanja utovarnih jedinica
 
-Ova procedura je dizajnirana kako bi korisnicima omogućila jednostavno ispitivanje utovarne jedinice skladišta s ciljem praćenja zaliha i pružanja svih informacija o utovarnim jedinicama prisutnim u skladištu i koje su prenesene ili nisu prenesene između skladišta.
+:::note Napomena
+Ova forma u potpunosti odgovara formi **Pretraga utovarnih jedinica**, opisanoj u prethodnom poglavlju. Za sve funkcionalnosti koje nisu posebno obrađene u ovom odeljku pogledajte navedenu dokumentaciju.
+:::
 
+Ova procedura omogućava korisnicima jednostavan pregled utovarnih jedinica u skladištu radi praćenja zaliha i prikaza svih informacija o utovarnim jedinicama koje se nalaze u skladištu, kao i onima koje jesu ili nisu premeštene između skladišta.
