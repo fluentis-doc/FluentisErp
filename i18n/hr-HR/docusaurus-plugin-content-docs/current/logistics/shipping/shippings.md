@@ -152,7 +152,7 @@ Artikle je također moguće preuzeti izravno iz narudžbi kupaca pomoću funkcij
 
 Pritiskom na gumb **Prebaci artikle** otvara se forma **Povezivanje narudžbi kupaca**, u kojoj se prema zadanim postavkama u filtru **Kupac** automatski predlaže kupac odabrane otpreme.
 
-Nakon pritiska na gumb **Pretraži**, u desnoj tablici prikazuju se svi artikli iz **neizvršenih** i **djelomično izvršenih** narudžbi tog kupca.
+Nakon pritiska na gumb **Traži**, u desnoj tablici prikazuju se svi artikli iz **neizvršenih** i **djelomično izvršenih** narudžbi tog kupca.
 
 Na lijevoj strani forme prikazane su tablice:
 

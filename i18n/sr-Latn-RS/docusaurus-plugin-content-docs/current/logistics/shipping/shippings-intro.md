@@ -1,43 +1,59 @@
 ---
-title: Introduzione
+title: Uvod
 sidebar_position: 1
 ---
 
-Questo nuovo strumento è stato sviluppato per ottimizzare e semplificare il processo di spedizione, consentendo un controllo più efficace e integrato di tutte le attività logistiche.
-La **gestione spedizioni** di Fluentis include la funzione di **groupage**, che permette di consolidare diverse spedizioni di merci provenienti da vari mittenti ma dirette verso la stessa area geografica in un unico carico o container.       
-Ciò consente di utilizzare in modo più efficiente lo spazio disponibile sui mezzi di trasporto, come camion, container marittimi o aerei, e di offrire un servizio più economico rispetto alla spedizione di singole merci.         
-In aggiunta, è stato implementato un **avanzato strumento di pianificazione** che consente di visualizzare le spedizioni per mezzo, autista, vettore e cliente. Grazie a una semplice funzionalità di drag & drop, gli operatori possono facilmente organizzare le spedizioni, anticipandole o posticipandole, e modificare il mezzo o l'autista incaricato, garantendo una gestione più flessibile e reattiva.
+# Uvod
 
-## Moduli dell'area 
+Novi alat razvijen je kako bi optimizovao i pojednostavio proces otpreme i omogućio efikasniju i integrisaniju kontrolu svih logističkih aktivnosti.
+
+Modul **Upravljanje otpremama/dostavama** u sistemu Fluentis uključuje funkcionalnost **grupisanja**, koja omogućava objedinjavanje više pošiljki različitih pošiljalaca namenjenih istom geografskom području u jedan utovar ili kontejner.
+
+Na taj način efikasnije se koristi raspoloživi prostor u prevoznim sredstvima, kao što su kamioni, brodski kontejneri ili avioni, uz istovremeno smanjenje troškova prevoza u odnosu na pojedinačne pošiljke.
+
+Pored toga implementiran je i **napredni alat za planiranje**, koji omogućava pregled otprema prema vozilu, vozaču, prevozniku i kupcu. Zahvaljujući jednostavnoj funkciji *drag & drop*, korisnici mogu lako reorganizovati otpreme, pomeriti ih na raniji ili kasniji termin i promeniti dodeljeno vozilo ili vozača, čime se obezbeđuje fleksibilnije i efikasnije upravljanje logističkim procesima.
+
+## Moduli oblasti
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/logistics/shipping/shippings-intro">Spedizioni</Link>
-        <p><Link to="/docs/logistics/shipping/shippings" className="bold-link">Spedizioni</Link></p>
-        <p>Tramite la gestione groupage, è possibile raggruppare le spedizioni di diversi clienti o fornitori in un'unica unità di trasporto.</p>
-        <p><Link to="/docs/logistics/shipping/calendar" className="bold-link">Calendario</Link></p>
-        <p>Consente di pianificare e gestire in modo efficiente le attività operative e logistiche, ottimizzando le risorse e migliorando il coordinamento delle spedizioni.</p>
+
+### <Link to="/docs/logistics/shipping/shippings-intro">Otpreme/Dostave</Link>
+
+<p><Link to="/docs/logistics/shipping/shippings" className="bold-link">Otpreme/Dostave</Link></p>
+<p>Zahvaljujući funkcionalnosti <i>groupage</i>, moguće je objediniti pošiljke različitih kupaca ili dobavljača u jednu transportnu jedinicu.</p>
+
+<p><Link to="/docs/logistics/shipping/calendar" className="bold-link">Kalendar</Link></p>
+<p>Omogućava efikasno planiranje i upravljanje operativnim i logističkim aktivnostima, optimizujući resurse i poboljšavajući koordinaciju otprema.</p>
+
     </div>
 </div>
 
-## Per iniziare ad utilizzare   
+## Za početak rada sa modulom **Otpreme/Dostave**
 
-le **Spedizioni**:
-- creare degli articoli nell'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) 
-- definire un [*Tipi di spedizione*](/docs/configurations/tables/logistics/shipping-type)        
-- definire un [*Stati di spedizione*](/docs/configurations/tables/logistics/shipping-states)     
-- definire gli [*Automezzi*](/docs/logistics/motorvehicles/motorvehicle)   
-- definire gli [*Autisti automezzo*](/docs/logistics/motorvehicles/motorvehicle-drivers)      
-- definire i [*Motivi di fermo autoveicolo*](/docs/configurations/tables/logistics/motorvehicle-off-time-reasons)     
-- definire i [*Motivi di assenza del conducente*](/docs/configurations/tables/logistics/driver-off-time-reasons) 
-- definire le [*Patenti di guida automezzi*](/docs/configurations/tables/logistics/motorvehicle-driving-licences)     
-- definire il tipo [*Proprietà automezzi*](/docs/configurations/tables/logistics/motorvehicle-ownership)   
-- definire i [*Marchi automezzi*](/docs/configurations/tables/logistics/motorvehicle-brands)   
-- definire i [*Tipo carburante automezzo*](/docs/configurations/tables/logistics/motorvehicle-gas-type)  
-- definire i *Tipi automezzi*  
+Pre korišćenja modula **Otpreme/Dostave** potrebno je:
 
-## Collegamenti con altri moduli
-Questi sono strettamente collegati all'[*Anagrafica articoli*](/docs/erp-home/registers/items/create-new-item) e agli [*Ordini clienti*](/docs/sales/sales-orders/settings) dato che è possibile aggiungere gli articoli direttamente da un ordine.           
-Inoltre da una spedizione è possibile creare direttamente [*DDT*](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn), [*Fatture*](/docs/sales/sales-invoices/general-overview) di vendita ed anche [Picking](/docs/logistics/picking/picking-intro). 
+- kreirati artikle u [*Šifarniku artikala*](/docs/erp-home/registers/items/create-new-item)
+- definisati [*Vrste otpreme*](/docs/configurations/tables/logistics/shipping-type)
+- definisati [*Statuse otpreme*](/docs/configurations/tables/logistics/shipping-states)
+- definisati [*Vozila*](/docs/logistics/motorvehicles/motorvehicle)
+- definisati [*Vozače vozila*](/docs/logistics/motorvehicles/motorvehicle-drivers)
+- definisati [*Razloge zastoja vozila*](/docs/configurations/tables/logistics/motorvehicle-off-time-reasons)
+- definisati [*Razloge odsustva vozača*](/docs/configurations/tables/logistics/driver-off-time-reasons)
+- definisati [*Vozačke dozvole*](/docs/configurations/tables/logistics/motorvehicle-driving-licences)
+- definisati [*Vrste vlasništva vozila*](/docs/configurations/tables/logistics/motorvehicle-ownership)
+- definisati [*Marke vozila*](/docs/configurations/tables/logistics/motorvehicle-brands)
+- definisati [*Vrste goriva vozila*](/docs/configurations/tables/logistics/motorvehicle-gas-type)
+- definisati [*Vrste vozila*]
+
+## Povezanost sa ostalim modulima
+
+Modul **Otpreme/Dostave** usko je povezan sa [*Šifarnikom artikala*](/docs/erp-home/registers/items/create-new-item) i [*Narudžbinama kupaca*](/docs/sales/sales-orders/settings), budući da je artikle moguće dodavati direktno iz narudžbine kupca.
+
+Iz otpreme je takođe moguće direktno kreirati:
+
+- [*Otpremnice (DDT)*](/docs/sales/sales-delivery-notes/insert-delivery-notes/search-sales-dn)
+- [*Izlazne račune*](/docs/sales/sales-invoices/general-overview)
+- [*Picking*](/docs/logistics/picking/picking-intro)

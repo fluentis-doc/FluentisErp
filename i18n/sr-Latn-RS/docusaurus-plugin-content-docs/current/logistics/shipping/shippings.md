@@ -1,181 +1,221 @@
 ---
-title: Spedizioni
+title: Otpreme/dostave
 sidebar_position: 3
 ---
 
-:::important A cosa serve
-La gestione delle **Spedizioni** in Fluentis rappresenta un significativo avanzamento nella gestione logistica e operativa per le aziende che utilizzano questa piattaforma ERP. Questa è stata progettata per ottimizzare e semplificare il processo di spedizione, offrendo un controllo più efficiente e integrato di tutte le attività logistiche.
-Il sistema di gestione delle spedizioni in Fluentis introduce anche la possibilità di creare groupage, un processo logistico attraverso cui le spedizioni di diversi clienti o fornitori vengono raggruppate in un'unica unità di trasporto. 
+:::important Čemu služi
+Modul **Otpreme/dostave** u sistemu Fluentis predstavlja značajan napredak u upravljanju logistikom i operativnim procesima. Razvijen je kako bi optimizovao i pojednostavio postupak otpreme i omogućio efikasniju i integrisaniju kontrolu svih logističkih aktivnosti.
 
-Questo metodo di consolidamento offre vari benefici:
+Sistem upravljanja otpremama omogućava i korišćenje funkcionalnosti **grupisanja**, odnosno objedinjavanje pošiljki različitih kupaca ili dobavljača u jednu transportnu jedinicu.
 
-- **Riduzione dei Costi**: La creazione di groupage permette di ottimizzare l'uso degli spazi di carico e di ridurre i costi di trasporto per unità di merce spedita. È particolarmente vantaggioso per le aziende che spediscono merci in quantità inferiori al carico completo.
-- **Efficienza Operativa**: Consolidare più spedizioni in un unico carico semplifica la gestione delle operazioni e riduce i tempi di transito, migliorando l'efficienza complessiva del processo logistico.
-- **Flessibilità e Scalabilità**: Le aziende possono facilmente adattare la loro strategia di spedizione in base alla domanda e alle variazioni del mercato, sfruttando la flessibilità offerta dai groupage per gestire picchi di spedizione o avere più controllo sui tempi di consegna.
+Takav način konsolidacije donosi brojne prednosti:
 
-In sintesi, questa funzionalità per la gestione delle spedizioni di Fluentis offre alle aziende un potente strumento per ottimizzare la logistica, migliorare l'efficienza e ridurre i costi, mantenendo al contempo un alto livello di servizio e soddisfazione del cliente.
+- **Smanjenje troškova**: objedinjavanjem pošiljki bolje se koristi raspoloživi prostor za utovar i smanjuju se troškovi prevoza po jedinici robe. Ova funkcionalnost je posebno korisna za kompanije koje otpremaju manje količine robe.
+- **Operativna efikasnost**: objedinjavanje više pošiljki u jedan transport pojednostavljuje logističke procese, skraćuje vreme prevoza i povećava ukupnu efikasnost.
+- **Fleksibilnost i skalabilnost**: kompanije mogu lako prilagoditi strategiju otpreme promenama potražnje i tržišnim uslovima, kao i efikasnije upravljati vršnim opterećenjima i rokovima isporuke.
+
+Na kraju, modul **Otpreme/dostave** omogućava optimizaciju logističkih procesa, povećava efikasnost poslovanja i smanjuje troškove, uz istovremeno održavanje visokog nivoa usluge i zadovoljstva kupaca.
 :::
 
-La form **Nuova Spedizione** si apre:  
-- tramite il percorso **Logistica > Spedizioni > Nuova Spedizione**  
-oppure  
-- tramite il pulsante **Nuovo** che si trova nella form [Ricerca Spedizioni](/docs/logistics/shipping/search-shippings).
+Forma **Nova otprema** otvara se:
 
-Nella form di inserimento vengono proposti automaticamente la **Data** e **Anno** corrente, ma possono essere modificati.
+- putem menija **Logistika > Dostave > Nova otprema**
+- ili pritiskom na dugme **Novo** u formi [Pretraga otprema](/docs/logistics/shipping/search-shippings).
 
-## **1. Dati obbligatori**
+Prilikom otvaranja forme automatski se predlažu **Datum** i **Godina**, ali ih korisnik po potrebi može promeniti.
 
-- **Tipo di spedizione**: indica il tipo di spedizione e automaticamente viene inserito anche il *numero* della spedizione. Questo è predefinito in *Configurazione > Tabelle > Logistica > [Tipi di spedizione](/docs/configurations/tables/logistics/shipping-type)*.       
-- **Stato di spedizione**: predefinito in *Configurazione > Tabelle > Logistica > [Stati di spedizione](/docs/configurations/tables/logistics/shipping-states)*.        
-- **Trasporto tramite**: l'utente può scegliere tra le seguenti voci: *Mittente*, *Destinatario* e *Vettore*.
-- **Numero**: ad ogni documento viene assegnato un numero secondo la numerazione specificata dall'utente e al tipo di spedizione che contiene la numerazione.       
-- **Vettore**: permette di indicare il vettore che effettuerà la spedizione.
-- **Cliente**: permette di indicare il cliente della spedizione.
+## 1. Obavezni podaci
 
-## **2. Testata**
+- **Vrsta dostave**: određuje vrstu otpreme i automatski dodeljuje **broj otpreme**. Podešava se u **Konfiguracija > Tabele > Logistika > [Vrste otpreme](/docs/configurations/tables/logistics/shipping-type)**.
+- **Status dostave**: početni status definisan u **Konfiguracija > Tabele > Logistika > [Statusi otpreme](/docs/configurations/tables/logistics/shipping-states)**.
+- **Prevoz putem**: korisnik može odabrati jednu od opcija: **Pošiljalac**, **Primalac** ili **Prevoznik**.
+- **Broj**: svakom dokumentu dodeljuje se broj prema numeraciji definisanoj za odabranu vrstu otpreme.
+- **Prevoznik**: određuje prevoznika koji će izvršiti otpremu.
+- **Kupac**: određuje kupca kome je otprema namenjena.
 
-Dopo aver selezionato i dati obbligatori nella sezione superiore, l'utente può continuare l'inserimento dei seguenti dati:
-- **Data inizio**: permette di indicare la data di inizio della spedizione;      
-- **Data fine**: permette di indicare la data di fine della spedizione;    
-- **Ore pianificate**: indica il totale delle ore necessarie per la spedizione. Viene calcolato automaticamente sulla base della data inizio e fine;
+## 2. Zaglavlje
 
-Le informazioni relative al mezzo e all'autista:
-- **Automezzo**: permette di selezionare il mezzo con il quale verrà effettuata la spedizione tra quelli indicati nella tabella [Automezzi](/docs/logistics/motorvehicles/motorvehicle);
-- **Autista assegnato**: permette di selezionare l'autista che effettuerà la spedizione tra quelli indicati nella tabella [Autisti](//docs/logistics/motorvehicles/motorvehicle-drivers);       
-- **Volume**: permette di indicare il volume della spedizione e la relativa unità di misura;
-- **Peso netto**: permette di indicare il peso netto della spedizione e la relativa unità di misura;
-- **Peso lordo**: permette di indicare il peso lordo della spedizione e la relativa unità di misura;
+Nakon odabira obaveznih podataka u gornjem delu forme, korisnik može nastaviti sa unosom sledećih podataka.
 
-Le informazioni relative ai beni:
-- **Aspetto esteriore dei beni**: permette di selezionare l'aspetto esteriore della merce spedita tra quelli indicati nella tabella [Aspetto esteriore beni](/docs/configurations/tables/logistics/type-of-packaging/);
-- **Numero tracking**: permette di indicare il numero di tracking della spedizione. Questo verrà proposto di default per tutte le spedizioni inserite nel tab **gruopage**;
-- **Numero totale di colli**: permette di indicare il numero di colli della spedizione.
+### Podaci o rasporedu
 
-Le informazioni relative alla valuta:
-- **Divisa**: sezione contenente i dati relativi alla [Divisa](/docs/guide/common/glossary/glossary-intro#currency)
-- **Data valuta**: indica la [Data valuta](/docs/guide/common/glossary/glossary-intro#currency-date)
+- **Datum početka**: određuje datum početka otpreme.
+- **Datum završetka**: određuje datum završetka otpreme.
+- **Planirani sati**: prikazuje ukupan broj sati potrebnih za izvršenje otpreme. Vrednost se automatski izračunava na osnovu datuma početka i završetka.
 
-Le informazioni relative a destinatario e destinazione:
-- **Sito produttivo**: permette di scegliere il sito produttivo da cui verrà effettuata la spedizione e riporta in automatico l'indirizzo associato al *Contatto* (inserito nel *Sito di Produzione*) nel l'Indirizzo del luogo di carico della spedizione;
-- **Indirizzo del luogo di carico**: all'apertura della form, questo campo viene valorizzato di default con l'indirizzo della società, dal quale normalmente dovrebbero partire le merci. È anche possibile modificarlo manualmente; 
-- **Indirizzo del luogo di destinazione**: permette di indicare il luogo di destinazione della spedizione.
+### Podaci o vozilu i vozaču
 
-Le informazioni relative alla spedizione:
-- **Spedizione**: permette di indicare i dati relativi alla [Spedizione](/docs/guide/common/glossary/glossary-intro#shipment);
-- **Porto**: permette di indicare i dati relativi al [Porto](/docs/guide/common/glossary/glossary-intro#carriage);
-- **Imballo**: permette di indicare i dati relativi all'[Imballo](/docs/guide/common/glossary/glossary-intro#packing).
+- **Vozilo**: omogućava odabir vozila kojim će se izvršiti otprema iz tabele [Vozila](/docs/logistics/motorvehicles/motorvehicle).
+- **Dodeljeni vozač**: omogućava odabir vozača iz tabele [Vozači vozila](/docs/logistics/motorvehicles/motorvehicle-drivers).
+- **Volumen**: određuje volumen pošiljke i pripadajuću mernu jedinicu.
+- **Neto težina**: određuje neto težinu pošiljke i pripadajuću mernu jedinicu.
+- **Bruto težina**: određuje bruto težinu pošiljke i pripadajuću mernu jedinicu.
 
-Eventuali note:
-- **Nota**: permette di inserire una nota libera;         
-- **Nota iniziale**: permette di inserire un'ulteriore nota libera.     
+### Podaci o robi
 
-Informazioni relative allo stato di evasione della spedizione:
-- **Stato evasione**: quando la spedizione è evasa tramite i documenti DDT o fatture, il suo stato evasione cambia automaticamente da *Non evaso* a *Parzialmente evaso* o *Evaso*; l'utente può forzare l'evasione di un ordine non totalmente evaso indicando lo stato *Evaso forzatamente*;
-- **Data chiusura**: indica la data di evasione del documento.
+- **Spoljašnji izgled robe**: omogućava odabir izgleda robe iz tabele [Spoljašnji izgled robe](/docs/configurations/tables/logistics/type-of-packaging/).
+- **Broj za praćenje (Tracking)**: određuje broj za praćenje otpreme. Ova vrednost se automatski predlaže za sve otpreme dodate na kartici **Grupisanje**.
+- **Ukupan broj paketa**: određuje ukupan broj paketa u pošiljci.
 
-## **3. Groupage**
+### Podaci o valuti
 
-In questo tab vengono inserite tutte le informazioni relative al **gruopage**.      
-Questo consiste nel raggruppare diverse spedizioni di merci provenienti da mittenti differenti, ma destinate alla stessa area geografica, in un unico carico o container. In questo modo, è possibile sfruttare al meglio lo spazio disponibile nei mezzi di trasporto (come camion, container marittimi o aerei) e offrire un servizio più economico rispetto alla spedizione di singole partite di merci.
+- **Valuta**: sadrži podatke o [valuti](/docs/guide/common/glossary/glossary-intro#currency).
+- **Datum valute**: određuje [datum valute](/docs/guide/common/glossary/glossary-intro#currency-date).
 
-### Spedizioni groupage
+### Podaci o primaocu i odredištu
 
-In questa griglia vengono inserite le informazioni relative alle spedizioni contenute in questo **groupage**, quindi per inserire una nuova spedizione nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar. 
+- **Proizvodno mesto**: omogućava odabir proizvodne lokacije sa koje će se izvršiti otprema. Nakon odabira automatski se preuzima adresa kontakta povezanog sa proizvodnom lokacijom i upisuje u polje **Adresa primaoca**.
+- **Adresa primaoca**: prilikom otvaranja forme automatski se popunjava adresom kompanije, odnosno uobičajenim mestom otpreme robe. Po potrebi ju je moguće ručno izmeniti.
+- **Adresa odredišta**: određuje adresu na koju se roba isporučuje.
 
-Le colonne disponibili sono le seguenti e raggruppate per:
+### Podaci o pošiljci
 
-Spedizione 
-- **Numero riga**: indica il numero delle riga della spedizione e viene inserito automaticamente;
-- **Data inizio**: indica la data / ora di inizio della spedizione;
-- **Data fine**: indica la data / ora di fine della spedizione;
-- **Ore pianificate**: indica la durata in ore della spedizione e viene calcolato automaticamente in base alla data inizio e fine;
-- **Numero di tracking**: indica il numero di tracking della singola spedizione; se indicato nel tab testata, il numero di tracking viene proposto in tutte le spedizioni create, ovviamente può sempre essere modificato manualmente dall'utente.
+- **Otprema**: omogućava unos podataka o [otpremi](/docs/guide/common/glossary/glossary-intro#shipment).
+- **Paritet isporuke**: omogućava unos podataka o [paritetu isporuke](/docs/guide/common/glossary/glossary-intro#carriage).
+- **Pakovanje**: omogućava unos podataka o [ambalaži](/docs/guide/common/glossary/glossary-intro#packing).
 
-Indirizzo del luogo di carico
-- **Provenienza**: indica la ragione sociale / nome del luogo di carico;         
-- **CAP**: indica il CAP del luogo di carico;
-- **Città**: indica la città del luogo di carico;
-- **Provincia**: indica la provincia del luogo di carico;
-- **Indirizzo del luogo di carico**: indica l'indirizzo del luogo di carico. Questo viene valorizzato di default con l'indirizzo della società, dal quale normalmente dovrebbero partire le merci, indicato anche nella testata del documento.
+### Napomena
 
-Indirizzo del luogo di destinazione
-- **Destinazione**: indica la ragione sociale / nome del luogo di destinazione;            
-- **CAP**: indica il CAP del luogo di destinazione;
-- **Città**: indica la città del luogo di destinazione;
-- **Provincia**: indica la provincia del luogo di destinazione;
-- **Indirizzo del luogo di destinazione**: indica l'indirizzo del luogo di destinazione. Questo viene valorizzato in automatico prendendolo dall'anagrafica del cliente, ma può comunque essere modificato manualmente dall'utente.
+- **Napomena**: omogućava unos slobodne napomene.
+- **Početna napomena**: omogućava unos dodatne slobodne napomene.
 
-Automezzo
-- **Automezzo**: indica l'automezzo con il quale verrà effettuata la spedizione;
-- **Autista assegnato**: indica l'autista che effettuerà la spedizione.
+### Status izvršenja otpreme
 
-Inoltre, per ciascuna riga del groupage, è possibile aprire espandere il relativo dettaglio di riga cliccando sul **+**, in modo da poter gestire anche i seguenti campi relativamente al luogo di carico:
-- **Telefono**: permette di inserire il numero di telefono relativo al luogo di carico;
-- **E-mail**: permette di inserire l'indirizzo e-mail relativo al luogo di carico;
-- **Note**: permette di inserire una nota libera relativa al luogo di carico;
-e alla destinazione:
-- **Telefono**: permette di inserire il numero di telefono relativo alla destinazione;
-- **E-mail**: permette di inserire l'indirizzo e-mail relativo alla destinazione;
-- **Note**: permette di inserire una nota libera relativa alla destinazione.
+- **Status izvršenja**: kada se otprema izvrši putem otpremnice (DDT) ili izlaznog računa, status se automatski menja iz **Neizvršeno** u **Delimično izvršeno** ili **Izvršeno**. Korisnik može ručno postaviti status **Prisilno izvršeno** ukoliko želi označiti otpremu kao izvršenu iako nije u potpunosti realizovana.
+- **Datum zatvaranja**: određuje datum izvršenja dokumenta.
 
-### Articoli di spedizione
+## 3. Groupage (grupisanje)
 
-In questa sezione vengono visualizzati tutti gli articoli contenuti all'interno della spedizione selezionata nel gruopage.         
-Per inserire un **Nuovo articolo** nella griglia basterà posizionarsi sulla riga per compilare i vari dati oppure utilizzare il pulsante **Nuovo** presente nella ribbon bar.            
-In alternativa, è anche possibile aggiungere gli articoli prendendoli direttamente dagli ordini clienti tramite la procedura **Trasferimento articoli**.           
-Premendo il pulsante **Trasferimento articoli**, si apre la form denominata **Collegamento degli ordini di vendita**, nella quale di default viene già proposto il cliente della spedizione nel relativo filtro. Quindi premendo il pulsante **Ricerca** verranno visualizzati sulla griglia di destra tutti gli articoli degli ordini non evasi e parzialmente evasi di quel cliente.        
-Sulla parte sinistra della form, sono visualizzate le griglie relative alle *spedizioni goupage* e agli *articoli di spedizione* con i dati inseriti nel form principale del gruopage.         
-A questo punto, l'utente può, con il drag & drop, trascinare gli articoli dalla griglia di destra direttamente sulla singola spedizione ed in automatico verranno inseriti nella griglia *articoli di spedizione* relativa a quella spedizione.
-Inoltre, è anche possibile aggiungere articoli proveniente da ordini di altri clienti, semplicemente andando a variare il valore del filtro *Cliente* e premendo nuovamente **Ricerca**.
-Una volta terminato di aggiungere tutti gli articoli, l'utente premendo il pulsante **Acquisizione** confermerà tutte le modifiche.       
+Na ovoj kartici unose se svi podaci vezani za **groupage (grupisanje)**.
 
-#### Campi specifici     
-- **Numero riga**: indica il numero riga dell'articolo inserito nel gruopage; 
-- **Classe**: indica la classe dell'articolo; 
-- **Articolo**: indica il codice dell'articolo; 
-- **Variante articolo**: indica la variante dell'articolo; 
-- **Descrizione variante**: indica la descrizione variante dell'articolo; 
-- **Unità di misura**: indica l'unità di misura dell'articolo;
-- **Marca**: visualizza il valore della marca inserita nell'anagrafica articoli;
-- **Quantità**: indica la quantità dell'articolo;
-- **Unità di misura alternativa**: indica l'unità di misura alternativa dell'articolo;           
-- **Quantità alternativa**: indica la quantità dell'articolo;            
-- **Volume**: indica il volume dell'articolo;             
-- **Peso netto**: indica il peso netto dell'articolo;
-- **Peso lordo**: indica il peso lordo dell'articolo;
-- **Conto ordine cliente**: visualizza il conto dell'ordine cliente a cui appartiene l'articolo;
-- **Tipo ordine cliente**: visualizza il tipo dell'ordine cliente a cui appartiene l'articolo;
-- **Data ordine cliente**: visualizza la data dell'ordine cliente a cui appartiene l'articolo;
-- **Fattura o DDT**: visualizza il riferimento della fattura / DDT rispettivamente creati premendo i pulsanti **Fattura** o **DDT**; il valore viene visualizzato nel formato tipo documento / data documento / numero documento;
-- **Riferimento picking**: visualizza il riferimento del picking creato premendo il pulsante **Picking**; il valore viene visualizzato nel formato tipo documento / data documento / numero documento.
+**Grupisanje** predstavlja objedinjavanje više pošiljki različitih pošiljalaca, namenjenih istom geografskom području, u jedan utovar ili kontejner. Na taj način optimalno se koristi raspoloživi prostor u prevoznim sredstvima (kamionima, brodskim kontejnerima ili avionima), čime se omogućava ekonomičniji prevoz u odnosu na pojedinačnu otpremu svake pošiljke.
 
-#### Pulsanti specifici  
-> - **Nuova groupage**: permette di inserire una nuova spedizione nel gruopage; 
-> - **Elimina groupage**: permette di eliminare la spedizione selezionata dal gruopage; 
-> - **Trasferimento articoli**: permette di aggiungere gli articoli alla spedizione prendendoli direttamente dagli ordini clienti;
-> - **DDT**: permette di creare automaticamente i [DDT](/docs/sales/sales-delivery-notes/general-overview) per le spedizioni selezionare nel gruopage;
-> - **Fattura**: permette di creare automaticamente le [Fatture](/docs/sales/sales-invoices/general-overview) per le spedizioni selezionare nel gruopage;
-> - **Picking**: permette di creare automaticamente i [Picking](/docs/logistics/picking/picking-intro) per le spedizioni selezionare nel gruopage.  
+### Grupisanje pošiljke
 
-## **4. Riepiloghi**
+U ovu tabelu unose se podaci o svim pošiljkama koje pripadaju ovom **grupisanju**. Novu pošiljku moguće je dodati unosom podataka u novi red ili pritiskom na dugme **Novo** na alatnoj traci.
 
-Nei Riepiloghi sono presentate le informazioni relative ai costi dell'intero documento.
+Dostupne kolone grupisane su prema sledećim kategorijama.
 
-### Spese
+### Podaci o otpremi
 
-In questa griglia è possibile inserire eventuali spese che devono essere inserite in positivo, eventuali sconti in negativo.
+- **Broj reda**: redni broj stavke otpreme. Dodeljuje se automatski.
+- **Datum početka**: datum i vreme početka otpreme.
+- **Datum završetka**: datum i vreme završetka otpreme.
+- **Planirani sati**: trajanje otpreme u satima. Vrednost se automatski izračunava na osnovu datuma početka i završetka.
+- **Broj praćenja (Tracking)**: broj za praćenje pojedinačne otpreme. Ako je definisan u zaglavlju dokumenta, automatski se predlaže za sve novokreirane pošiljke, ali ga korisnik može ručno promeniti.
 
-Questi elementi vengono applicati alla totalità del documento e non sono distribuiti tra le righe degli articoli. Possono includere costi aggiuntivi, sconti globali, o maggiorazioni applicate all'intero documento. 
+### Adresa mesta utovara
 
-Per inserire una nuova spesa è necessario compilare i seguenti dati:
+- **Polazište**: naziv ili kompanija mesta utovara.
+- **Poštanski broj**: poštanski broj mesta utovara.
+- **Grad**: grad mesta utovara.
+- **Okrug**: okrug mesta utovara.
+- **Adresa mesta utovara**: adresa mesta utovara. Prema podrazumevanim podešavanjima preuzima se adresa kompanije definisana u zaglavlju dokumenta, ali ju je moguće ručno izmeniti.
 
-- **Numero riga**: indica il numero riga della spesa inserita, viene compilato automaticamente;
-- **Tipo spesa / Descrizione**: permette di scegliere le tipologie di spesa predefiniti nella tabella [Tipi spese](/docs/configurations/tables/general-settings/expenses-types/);
-- **Importo spesa**: indica il valore della spesa espresso nella divisa del documento;
-- **Descrizione spesa**: Dettaglio dichiarazioni: viene inserita l'eventuale dichiarazione d'intento valida per il cliente;
-- **Imposta**: premette di scegliete dell'aliquota IVA, predefinite nella tabella [Aliquote/Modalità IVA](/docs/configurations/tables/finance/vat-rates/).
+### Adresa odredišta
 
-Sulla destra della form sono presenti i seguenti campi:
+- **Odredište**: naziv ili kompanija odredišta.
+- **Poštanski broj**: poštanski broj odredišta.
+- **Grad**: grad odredišta.
+- **Okrug**: okrug odredišta.
+- **Adresa odredišta**: adresa odredišta. Automatski se preuzima iz šifarnika kupaca, ali ju korisnik po potrebi može ručno izmeniti.
 
-- **Note**: permette di inserire una nota libera;
-- **Importo totale**: permette di visualizzare l'importo totale della spedizione dato dalla somma dei valori inseriti nella tabella *Spese*.
+### Motorno vozilo
+
+- **Vozilo**: određuje vozilo kojim će se izvršiti otprema.
+- **Dodeljeni vozač**: određuje vozača koji će izvršiti otpremu.
+
+Za svaki red **grupisanja** moguće je proširiti detalje pritiskom na znak **+** i upravljati dodatnim podacima.
+
+#### Podaci o mestu utovara
+
+- **Telefon**: telefonski broj mesta utovara.
+- **E-mail**: adresa elektronske pošte mesta utovara.
+- **Napomena**: slobodna napomena vezana za mesto utovara.
+
+#### Podaci o odredištu
+
+- **Telefon**: telefonski broj odredišta.
+- **E-mail**: adresa elektronske pošte odredišta.
+- **Napomena**: slobodna napomena vezana za odredište.
+
+### Artikli otpreme
+
+U ovoj sekciji prikazuju se svi artikli koji pripadaju otpremi odabranoj u **grupisanju**.
+
+Novi artikl moguće je dodati:
+
+- unosom podataka u novi red tabele
+- pritiskom na dugme **Novo** na alatnoj traci.
+
+Artikle je takođe moguće preuzeti direktno iz narudžbina kupaca pomoću funkcije **Prenos artikala**.
+
+Pritiskom na dugme **Prebaci artikle** otvara se forma **Povezivanje narudžbina kupaca**, u kojoj se prema podrazumevanim podešavanjima u filteru **Kupac** automatski predlaže kupac odabrane otpreme.
+
+Nakon pritiska na dugme **Traži**, u desnoj tabeli prikazuju se svi artikli iz **neizvršenih** i **delimično izvršenih** narudžbina tog kupca.
+
+Na levoj strani forme prikazane su tabele:
+
+- **Grupisanje dostave**
+- **Artikli za otpremu**
+
+sa podacima preuzetim iz glavne forme grupisanja.
+
+Korisnik zatim može metodom **drag & drop** prevući artikle iz desne tabele direktno na željenu otpremu. Sistem će ih automatski dodati u tabelu **Artikli otpreme** odgovarajuće pošiljke.
+
+Po potrebi je moguće dodavati i artikle iz narudžbina drugih kupaca promenom vrednosti u filteru **Kupac** i ponovnim pritiskom na dugme **Traži**.
+
+Nakon završetka dodavanja svih artikala potrebno je pritisnuti dugme **Preuzmi** kako bi se potvrdile sve izmene.
+
+#### Specifična polja
+
+- **Broj reda**: označava broj reda artikla unetog u **grupisanje**.
+- **Klasa**: označava klasu artikla.
+- **Artikl**: označava šifru artikla.
+- **Varijanta artikla**: označava varijantu artikla.
+- **Opis varijante**: prikazuje opis odabrane varijante artikla.
+- **Merna jedinica**: označava mernu jedinicu artikla.
+- **Marka**: prikazuje marku definisanu u *Šifarniku artikala*.
+- **Količina**: označava količinu artikla.
+- **Alternativna merna jedinica**: označava alternativnu mernu jedinicu artikla.
+- **Alternativna količina**: označava količinu izraženu u alternativnoj mernoj jedinici.
+- **Volumen**: označava volumen artikla.
+- **Neto masa**: označava neto masu artikla.
+- **Bruto masa**: označava bruto masu artikla.
+- **Konto narudžbine kupca**: prikazuje konto narudžbine kupca kojoj artikl pripada.
+- **Tip narudžbine kupca**: prikazuje tip narudžbine kupca kojoj artikl pripada.
+- **Datum narudžbine kupca**: prikazuje datum narudžbine kupca kojoj artikl pripada.
+- **Račun ili otpremnica**: prikazuje referencu računa ili otpremnice kreirane pritiskom na dugmad **Račun** ili **Otpremnica/Primka**. Vrednost se prikazuje u obliku: *vrsta dokumenta / datum dokumenta / broj dokumenta*.
+- **Referenca pickinga**: prikazuje referencu picking dokumenta kreiranog pritiskom na dugme **Picking**. Vrednost se prikazuje u obliku: *vrsta dokumenta / datum dokumenta / broj dokumenta*.
+
+#### Specifična dugmad
+
+- **Nova otprema**: omogućava dodavanje nove otpreme u **grupisanje**.
+- **Obriši otpremu**: uklanja odabranu otpremu iz **grupisanja**.
+- **Prebaci artikle**: omogućava dodavanje artikala u otpremu direktno iz narudžbina kupaca.
+- **Otpremnica/Primka**: automatski kreira [Otpremnice](/docs/sales/sales-delivery-notes/general-overview) za odabrane otpreme u **grupisanju**.
+- **Račun**: automatski kreira [Izlazne račune](/docs/sales/sales-invoices/general-overview) za odabrane otpreme u **grupisanju**.
+- **Picking (slaganje robe)**: automatski kreira [Picking](/docs/logistics/picking/picking-intro) za odabrane otpreme u **grupisanju**.
+
+## **4. Sažeci**
+
+Na kartici **Sažeci** prikazane su informacije o troškovima celog dokumenta.
+
+### Troškovi
+
+U ovoj tabeli moguće je uneti dodatne troškove (pozitivne vrednosti) ili popuste (negativne vrednosti).
+
+Unete stavke primenjuju se na ceo dokument i ne raspoređuju se na pojedinačne redove artikala. Mogu predstavljati dodatne troškove, ukupne popuste ili druga uvećanja koja se odnose na celu otpremu.
+
+Za unos nove stavke potrebno je popuniti sledeća polja:
+
+- **Broj reda**: označava redni broj stavke troška i automatski se dodeljuje.
+- **Vrsta troška / Opis**: omogućava odabir vrste troška definisane u tabeli [Vrste troškova](/docs/configurations/tables/general-settings/expenses-types/).
+- **Iznos troška**: označava vrednost troška izraženu u valuti dokumenta.
+- **Opis troška**: omogućava unos dodatnog opisa ili detalja o trošku.
+- **Porez**: omogućava odabir odgovarajuće stope PDV-a definisane u tabeli [PDV stope / Načini obračuna PDV-a](/docs/configurations/tables/finance/vat-rates/).
+
+Sa desne strane forme nalaze se sledeća polja:
+
+- **Završne napomene**: omogućava unos slobodne napomene.
+- **Ukupan iznos**: prikazuje ukupan iznos otpreme, izračunat kao zbir svih stavki unetih u tabelu **Troškovi**.

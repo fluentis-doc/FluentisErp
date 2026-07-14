@@ -1,64 +1,71 @@
 ---
-title: Calendario
+title: Kalendar
 sidebar_position: 4
 ---
 
-:::important A cosa serve
-Il **planning** delle spedizioni è uno strumento fondamentale per ottimizzare la gestione logistica all'interno di un'azienda. Esso consente di pianificare, monitorare e coordinare tutte le attività legate alla spedizione delle merci, garantendo una distribuzione efficiente delle risorse e un'ottimizzazione dei tempi.      
-Grazie alla visualizzazione di dati cruciali come orari, vettori, automezzi e clienti, il **planning** facilita la programmazione delle attività quotidiane, riducendo i ritardi e migliorando la puntualità delle consegne. Inoltre, integrando funzionalità come la gestione dei periodi di inattività e l'aggiornamento dello stato delle spedizioni, offre un quadro completo e aggiornato delle operazioni logistiche, favorendo una migliore capacità decisionale e una maggiore efficienza operativa.
+:::important Čemu služi
+**Planer otprema** predstavlja ključni alat za optimizaciju upravljanja logistikom unutar preduzeća. Omogućava planiranje, praćenje i koordinaciju svih aktivnosti povezanih sa otpremom robe, obezbeđujući efikasnu raspodelu resursa i optimizaciju vremena.
+
+Prikazom važnih podataka, kao što su raspored, prevoznici, vozila i kupci, **planer** olakšava organizaciju svakodnevnih aktivnosti, smanjuje kašnjenja i povećava tačnost isporuka. Integracijom funkcionalnosti kao što su upravljanje periodima nedostupnosti i ažuriranje statusa otprema pruža potpun i ažuran pregled logističkih operacija, omogućavajući bolje donošenje odluka i veću operativnu efikasnost.
 :::
 
-Il calendario delle spedizioni si trova in: Logistica > Spedizioni > Calendario
+Kalendar otprema nalazi se na putanji:
 
-Il **calendario delle spedizioni** mostra tutte le spedizioni inserite a sistema, raggruppate in vista timeline in base a autista/vettore/automezzo/cliente/nessun raggruppamento.              
-All'apertura l'intervallo visualizzato sarà data odierna + 7 giorni se sono presenti spedizioni in tal periodo, altrimenti verrà mostrato il primo intervallo successivo in cui sono presenti spedizioni. 
+**Logistika > Dostave > Kalendar**
 
-Oltre alle spedizioni, nel caledario sono mostrati i periodi di inattività degli automezzi e dei vettori. 
+**Kalendar otprema** prikazuje sve otpreme unesene u sistem, grupisane u prikazu vremenske linije (timeline) prema **vozaču / prevozniku / vozilu / kupcu / bez grupisanja**.
 
-Nella colonna a sinistra sono presenti i dati relativi a **autista/vettore/automezzo/cliente in base al raggruppamento scelto**, e nella griglia del calendario sono posizionate le varie spedizioni.            
-Anche se la durata della spedizione è anche solo di un'ora, nel calendario questa verrà mostrata come giornaliera, per facilitarne la visualizzazione. Nel caso si volesse invece avere una vista più puntuale, dalla ribbon bar cliccare su **Vista timeline oraria**.                    
-In questo modo la spedizione verrà mostrata con la dimensione effettivamente corrispondente alla sua durata. Questa opzione può essere utile nel caso si utilizzi lo zoom in/zoom out (ctrl + scroll del mouse) per andare nel massimo dettaglio orario della giornata.               
-Per tornare alla visualizzazione delle spedizioni in modalità giornaliera, cliccare sul bottone **Vista timeline giornaliera** nella ribbon bar.
+Prilikom otvaranja prikazuje se period od **današnjeg datuma + 7 dana**, ukoliko u tom periodu postoje otpreme. U suprotnom će biti prikazan prvi naredni period u kojem postoje planirane otpreme.
 
-Nella ribbon sono inoltre presenti i seguenti pulsanti: 
+Pored otprema, u kalendaru se prikazuju i periodi nedostupnosti vozila i prevoznika.
 
-- Ricerca: effettua un refresh della visualizzazione
+U levom stupcu prikazuju se podaci o **vozaču, prevozniku (transporteru), vozilu ili kupcu**, u zavisnosti od odabranog načina grupisanja, dok su u kalendaru raspoređene pojedinačne otpreme.
 
-- Visualizza per vettore: nella colonna a sinistra verranno mostrati prima tutti i vettori e le relative spedizioni; se nelle righe di groupage non è presente il vettore, verrà considerato il vettore presente nella testata della spedizione. 
->> Se il vettore non è indicato da alcuna parte, in coda alla lista dei vettori mostrati, verranno elencati i relativi autisti; se non presenti gli autisti nelle righe di groupage, verrà considerato l'autista presenti nella testata della spedizione. 
->> Se l'autista non è indicato da alcuna parte, in coda alla lista dei vettori mostrati, verranno elencati i clienti.
+Čak i ako otprema traje samo jedan sat, u kalendaru će se prema podrazumevanim podešavanjima prikazivati kao celodnevni događaj radi lakšeg pregleda. Za detaljniji prikaz, na alatnoj traci odaberite **Prikaz vremenske linije po satima**.
 
-- Visualizza per autista: nella colonna a sinistra verranno mostrati prima tutti gli autisti e le relative spedizioni; se nelle righe di groupage non è presente l'autista verrà considerato il l'autista presente nella testata della spedizione. 
->> Se l'autista non è indicato da alcuna parte, in coda alla lista degli autisti mostrati, verranno elencati i relativi vettori; se non presenti i vettori nelle righe di groupage, verrà considerato il vettore presente nella testata della spedizione. 
->> Se il vettore non è indicato da alcuna parte, in coda alla lista degli autisti mostrati, verranno elencati i clienti.
+U tom slučaju otprema će biti prikazana u svom stvarnom trajanju. Ova opcija je posebno korisna pri korišćenju funkcije uvećavanja i umanjivanja prikaza (**Ctrl + točkić miša**) za detaljan satni pregled dana.
 
-- Visualizza per cliente: nella colonna a sinistra verranno mostrati tutti i clienti; se non presenti, ci sarà una voce di tipo "altro" che raggrupperà tutte le spedizioni senza cliente assegnato. 
+Za povratak na dnevni prikaz odaberite **Prikaz vremenske linije po danima** na alatnoj traci.
 
-- Visualizza per automezzo: nella colonna a sinistra verranno mostrati tutti gli automezzi; se nelle righe di groupage non è presente l'automezzo, verrà considerato l'automezzo presente nella testata della spedizione. 
->> se non presente, ci sarà una voce di tipo "altro" che raggrupperà tutte le spedizioni senza automezzo assegnato. 
+Na alatnoj traci dostupna su i sledeća dugmad:
 
-- Nessun raggruppamento: verrà mostrato un calendario per tipo spedizione.
+- **Traži**: osvežava prikaz.
 
-Con il tasto destro è possibile inserire una nuova spedizione, oppure un periodo di inattività per autista o automezzo. 
+- **Prikaz po transporteru**: u levom stupcu najpre se prikazuju svi prevoznici i njihove otpreme. Ako na stavkama grupne otpreme nije naveden prevoznik, koristi se prevoznik definisan u zaglavlju otpreme.
+  - Ako prevoznik nije naveden, na kraju spiska prevoznika prikazuju se odgovarajući vozači. Ako ni na stavkama grupne otpreme nije naveden vozač, koristi se vozač definisan u zaglavlju otpreme.
+  - Ako nije naveden ni vozač, na kraju spiska prikazuju se kupci.
 
-A sinistra sono presenti i filtri per: 
-- tipo trasporto: mittente, destinatario, vettore
-- automezzo
-- targa
-- numero di tracking
-- cliente
-- vettore
-- autista
-- Riferimento ordini cliente
-- Sito produttivo
+- **Prikaz po vozaču**: u levom stupcu najpre se prikazuju svi vozači i njihove otpreme. Ako na stavkama grupne otpreme nije naveden vozač, koristi se vozač definisan u zaglavlju otpreme.
+  - Ako vozač nije naveden, na kraju spiska vozača prikazuju se odgovarajući prevoznici. Ako ni na stavkama grupne otpreme nije naveden prevoznik, koristi se prevoznik definisan u zaglavlju otpreme.
+  - Ako nije naveden ni prevoznik, na kraju spiska prikazuju se kupci.
 
-I colori delle spedizioni rappresentano lo [Stato della spedizione](/docs/configurations/tables/logistics/shipping-states).       
-Con tasto destro sulla spedizione, è possibile avanzare lo stato. 
+- **Prikaz po kupcu**: u levom stupcu prikazuju se svi kupci. Ako kupac nije dodeljen, prikazuje se stavka **Ostalo**, koja grupiše sve otpreme bez dodeljenog kupca.
 
-I colori assegnati all'elenco di autisti/automezzi/vettori/clienti sono casuali e vengono assegnati all'apertura del calendario, fino al prossimo cambio vista.
+- **Prikaz po vozilu**: u levom stupcu prikazuju se sva vozila. Ako na stavkama grupne otpreme nije navedeno vozilo, koristi se vozilo definisano u zaglavlju otpreme.
+  - Ako vozilo nije navedeno, prikazuje se stavka **Ostalo**, koja grupiše sve otpreme bez dodeljenog vozila.
 
+- **Bez grupisanja**: prikazuje se zaseban kalendar za svaku vrstu otpreme.
 
+Desnim klikom miša moguće je:
 
+- kreirati novu otpremu
+- uneti period nedostupnosti za vozača
+- uneti period nedostupnosti za vozilo
 
+Na levoj strani dostupni su sledeći filteri:
 
+- **Vrsta prevoza**: pošiljalac, primalac ili prevoznik
+- **Vozilo**
+- **Broj tablice**
+- **Broj praćenja (Tracking)**
+- **Kupac**
+- **Prevoznik**
+- **Vozač**
+- **Veza na izlazni račun**
+- **Proizvodno mesto**
 
+Boje otprema predstavljaju [**Status otpreme**](/docs/configurations/tables/logistics/shipping-states).
+
+Desnim klikom na otpremu moguće je promeniti status otpreme na sledeću fazu.
+
+Boje dodeljene spisku vozača, vozila, prevoznika i kupaca dodeljuju se nasumično prilikom otvaranja kalendara i ostaju nepromenjene do promene prikaza.

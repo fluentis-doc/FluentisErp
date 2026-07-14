@@ -1,19 +1,20 @@
 ---
-title: Ricerca spedizioni
+title: Pretraga dostave/otpreme
 sidebar_position: 2
 ---
 
-Il filtro si trova sul percorso Logistica > Spedizioni > Spedizioni.
+# Pretraga dostave/otpreme
 
-La gestione delle **Spedizioni** in Fluentis permette di gestire e organizzare in modo efficace le spedizioni dei clienti, consolidandole in un unico processo per massimizzare l'efficienza. Attraverso il raggruppamento delle spedizioni, il sistema ottimizza le operazioni logistiche, riducendo i costi e migliorando i tempi di consegna.
+Forma se nalazi na putanji:
 
-Il modulo **Spedizioni** consente di gestire le spedizioni create.
+**Logistika > Dostave > Dostave**
+
+Modul **Dostave** u sistemu Fluentis omogućava efikasno upravljanje i organizaciju otprema kupaca njihovim objedinjavanjem u jedinstven logistički proces. Grupisanjem otprema optimizuju se logističke aktivnosti, smanjuju troškovi prevoza i poboljšavaju rokovi isporuke.
+
+Kroz formu **Pretraga dostave** moguće je pretraživati, pregledati i upravljati prethodno kreiranim otpremama.
 
 import SearchForm from './../../import/sections/search-form.md'
 
 <SearchForm />
 
-Per poter inserire una nuova [Spedizione](/docs/logistics/shipping/shippings) è necessario premere il pulsante **Nuovo**.
-
-
-
+Za unos nove [**Dostave**](/docs/logistics/shipping/shippings) potrebno je pritisnuti dugme **Novo**.
