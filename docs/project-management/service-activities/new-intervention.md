@@ -44,6 +44,7 @@ Questa si suddivide in tre ulteriori sottogruppi:
 **Spese intervento sostenute** : indica le spese sostenute dalla risorsa, che di norma vengono proposte dall'anagrafica risorsa se presenti. Verranno inserite nella dichiarazione attività-tab Oneri di viaggio generata dall'intervento e potranno eventualmente essere marcate anche come da fatturare. 
 
 Ogni riga potrà avere un suo allegato, ad es. un giustificativo di spesa, visibile nella sezione **Documenti allegati**.
+
 **Dettaglio spesa cumulata** evidenza se la spesa è stata sostenuta per più risorse, ed indica i rispettivi nominativi e quote. 
 
 **Spese intervento da fatturare**: indica le spese da fatturare al cliente, che di norma vengono proposte dall'anagrafica cliente se presenti. Possono anche derivare da spese sostenute marcate da fatturare. Verranno incluse nel piano di fatturazione.
@@ -82,15 +83,61 @@ Per questa specifica casistica, nel campo Importo Spesa sarà quindi visibile l'
  **Altre spese**: altre spese generiche da includere nel Piano di fatturazione. 
 
 Bottone **Spese da Fatturare**: presente nella tab "Spese intervento sostenute", selezionando una spesa e cliccando sul bottone, questa verrà portata in automatico nella tab "Spese Intervento da Fatturare". Il valore Importo Spesa verrà riportato sia nel campo Importo Spesa che nel campo Importo spesa fatturabile della tab Spese intervento da fatturare (vedasi indicazioni sulla gestione di questo campo nel paragrafo precedente). Se il tipo spesa è già presente nelle spese da fatturare oppure il cliente ha configurato un forfait, verrà chiesto all'utente la converma per procedere con il ricalcolo. 
+Nella tab Spese intervento da fatturare, il costo Km oppure il costo orario potrebbero variare rispetto a quelli indicati nelle Spese intervento sostenute. Questo si verifica nel caso in cui le stesse spese siano indicate in anagrafica cliente, con indicato il costo km oppure il costo orario, ma senza il numero di km o le ore. 
+In tal caso la tariffa stabilita con il cliente prevale sulla tariffa della risorsa indicata nelle spese sostenute. 
 
-Bottone **Ricalcola spese**: da utilizzare solo all'occorrenza, la stessa procedura viene già eseguita al cambio stato intervento da "inserito" in "da approvare". 
+Bottone **Ricalcola spese**: 
+
+da utilizzare solo all'occorrenza, la stessa procedura viene già eseguita al cambio stato intervento da "inserito" in "da approvare". 
+
 La procedura effettua: 
 
-1. Calcolo **spese vive** da fatturare al cliente: se in anagrafica cliente sono state configurate spese con abilitato il flag "spesa viva" e la stessa spesa è stata dichiarata dalla risorsa nelle spese sostenute, questa verrà portata in automatico come da fatturare;
-> Nel caso di spese con tipo diverso da distanza/ore viaggio, verrà preso l'importo spesa dichiarato dalla risorsa e portato nelle spese da fatturare;
+**1. Calcolo spese vive** da fatturare al cliente: se in anagrafica cliente sono state configurate spese con abilitato il flag "spesa viva" e la stessa spesa è stata dichiarata dalla risorsa nelle spese sostenute, questa verrà portata in automatico come da fatturare;
+> Nel caso di spese con tipo diverso da distanza/ore viaggio (es. pranzo, autostrada, etc), verrà preso l'importo spesa dichiarato dalla risorsa e portato nelle spese da fatturare;
 
-> Nel caso di spese con tipo distanza / ore viaggio, è possibile indicare in anagrafica cliente il costo km/ costo orario, e con il ricalcolo verrà fatto un merge dei km / ore dichiarati dalla risorsa ed i costi configurati in anagrafica cliente, ottenendo una spesa completa di tutti i dati e del totale;
-2. Calcolo **spese forfait**: se in anagrafica cliente sono state configurate spese di tipo forfait con condizioni per risorsa/per giorno, queste verranno ricalcolate in automatico 
+> Nel caso di spese con tipo distanza / ore viaggio (rimborso km e rimborso ore viaggio), è possibile indicare in anagrafica cliente il costo km/ costo orario, e con il ricalcolo verrà fatto un merge dei km / ore dichiarati dalla risorsa ed i costi configurati in anagrafica cliente, ottenendo una spesa completa di tutti i dati e del totale;
+
+:::note[Esempio 1] 
+Nell'intervento tab Spese sostenute è presente una voce di "Rimborso km" 100 km x 1 € costo al km. 
+
+La spesa viene processata da fatturare con il bottone nella ribbon bar "Spesa da fatturare".
+
+Non essendoci ulteriori impostazioni, nella tab Spese intervento da fatturare ci saranno 100 km x 1 € costo al km, totale fatturabile 100€.
+:::
+:::note[Esempio 2] 
+Nell'intervento tab Spese sostenute è presente una voce di "Rimborso km" 100 km x 1 € costo al km. 
+
+In anagrafica cliente - tab interventi, è presente la voce di spesa "Rimborso km" senza flag "Spesa viva", con indicato solo il costo al km 2€, senza il numero di km.
+
+Utilizzando il bottone “Spesa da fatturare”, l’importo indicato in anagrafica cliente, prevarrà sui costo al km indicato nella tab Spese sostenute. 
+
+Nella tab Spese intervento da fatturare ci saranno 100 km x 2 € costo al km stabiliti in anagrafica, totale fatturabile 200€.
+Nel caso non si utilizzi il bottone "Spesa da fatturare", la spesa sostenuta di "Rimborso km" non verrà portata in fatturazione, NON avendo attivo il flag spesa viva (neanche al cambio stato intervento inserito-da approvare)
+:::
+:::note[Esempio 3] 
+Nell'intervento tab Spese sostenute è presente una voce di "Rimborso km"  100 km x 1 € costo al km. 
+
+In anagrafica cliente - tab interventi, è presente la voce di spesa "Rimborso km" CON flag attivo "Spesa viva", con indicato solo il costo al km 2€, senza il numero di km.
+
+Al cambio stato intervento, da “inserito” in “da approvare” verranno lanciati tutti i ricalcoli di spese e piano di fatturazione.
+In automatico la spesa sostenuta verrà inserita nelle Spese intervento da fatturare, l’importo indicato in anagrafica, prevarrà sui costo al km indicato nella tab Spese sostenute. 
+
+Nella tab Spese intervento da fatturare ci saranno 100 km x 2 € costo al km stabiliti in anagrafica, totale fatturabile 200€.
+IN questo caso la spesa "Rimborso km" è stata considerata da fatturare anche senza utilizzare l'apposito bottone in ribbon bar, in quanto rilevata in anagrafica cliente come "spesa viva".
+:::
+:::note[Esempio 4] 
+Nell'intervento tab Spese sostenute è presente una voce di "Rimborso km"  100 km x 1 € costo al km. 
+
+In anagrafica cliente - tab interventi, è presente la voce di spesa "Rimborso km" senza flag  "Spesa viva", con indicato il costo al km 2€ ed il numero km 150. 
+
+In fase di inserimento intervento, tra le Spese da fatturare, verrà proposta la spesa "rimborso km" dall'anagrafica cliente. 
+Nella tab Spese intervento da fatturare ci saranno 150 km x 2 € costo al km stabiliti in anagrafica, totale fatturabile 300€.
+:::
+Le spese sostenute ed il relativo valore, indicano il “rimborso” che spetta alla risorsa (che verrà poi riportato anche nei cedolini paga se gestiti) e potrebbe quindi differire dall’importo fatturato al cliente, motivo della possibilità di definire le tariffe in anagrafica cliente. 
+
+
+
+**2. Calcolo spese forfait**: se in anagrafica cliente sono state configurate spese di tipo forfait con condizioni per risorsa/per giorno, queste verranno ricalcolate in automatico 
 :::note[Esempio]
 Nell'intervento della durata di una giornata sono presenti 3 risorse, quindi sono dichiarate 3 righe di servizio. 
 La spesa forfait è configurata come segue: 
@@ -101,8 +148,12 @@ Pranzo: 50 - per persona per giorno
 La spesa forfait da fatturare risulterà in totale 250 (100 autostrada fissi, 50 pranzo per ogni risorsa). Il calcolo verrà effettuato al cambio stato intervento da "Inserito" in "Da approvare" oppure utilizzando il bottone Ricalcola Spese. 
 :::
 
-3. Calcolo **Spese intervento da fatturare**: se modificate dall'utente, chiederà conferma prima di procedere, ed in caso affermativo ripristinerà le spese da fatturare previste per il cliente.
-4. Calcolo dell'**indennità** di trasferta per la risorsa;
+
+
+**3. Calcolo Spese intervento da fatturare**: se modificate dall'utente, chiederà conferma prima di procedere, ed in caso affermativo ripristinerà le spese da fatturare previste per il cliente.
+
+
+**4. Calcolo dell'indennità** di trasferta per la risorsa;
 
 :::note[Esempio] 
  In anagrafica risorsa si imposta come limite "2" ore di viaggio
