@@ -15,10 +15,10 @@ sidebar_position: 1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_uEq-tBLn9M" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### IZVJEŠTAJI UPRAVLJANJA
+### IZVEŠTAJI UPRAVLJANJA
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5Y3haMHOa_A" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
 
-### IZVJEŠTAJI RAČUNOVODSTVA
+### IZVEŠTAJI RAČUNOVODSTVA
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KbtJc-II1tQ" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
