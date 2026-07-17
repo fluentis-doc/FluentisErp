@@ -6,6 +6,34 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0081 - 16/07/2026
+
+> -	CO - aggiunto messaggio di conferma esecuzione scritture per cost driver. Esecuzione da procedura Elaborazione periodi, Elaborazione Chiusura infrannuale. (#TT02740/26)
+> -	CO - creazione nuova chiusura infrannuale, revisione gestione dei sottoconti non utilizzati in controlling. (#TT03146/26)
+> -	FI - Comunicazione liquidazioni periodiche IVA: adeguamento della procedura di elaborazione del calcolo trimestre (TT03137/26, TT03120/26)
+> -	FI - fix giroconto partite - null reference - aliniamento con SP fluentis2015 (#TT03018/26)
+> -	FI - il salvataggio delle registrazioni di contabilità generale verificano ora che tutti i conti inseriti siano della società della registrazione contabile (#TT03012/26)
+> -	FI - Libro Inventari: revisione della procedura di inserimento dei dati di testata (#TT02929/26)
+> -	FI - modificata contabilizzazione automatica fatture di acquisto . Allineamento dei campi totale in valuta, iva indetraibile nel caso in cui l’iva venga modificata manualmente dal riepilogo della fattura di acquisto. (#TT03027/26)
+> -	FI - Partial unaccounting invoice due to Maturity Reservation (#TT02798/26)
+> -	FI - Registrazioni Contabili: revisione proposta del menù rapido nella ricerca registrazioni con gestione della riga di dettaglio espansa (#TT02813/26)
+> -	FI - revisione contabilizzazione fatture di vendita con ritenute al lordo, per righe registrazione (#TT03097/26)
+> -	FI - revisione stampa liquidazione agenti, revisione campo della provvigione maturata (#TT02338/25)
+> -	FI - ulteriore revisione/ottimizzazione della procedura di ‘Acquisizione da registrazioni’ nell’intrastat. (#TT02699/26)
+> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione inerente al serial number del materiale impiegato. (#TT02465/26)
+> -	MES - Manufacturing Execution System: risolta anomalia che non allineava il calcolo costi con il movimento di produzione quando il centro di costo di riferimento aveva un’unità di misura indicata ma senza fattore di conversione. (#TT02837/26)
+> -	MES - Ordini di produzione - Verticalizzazione Pharma - E’ stata corretta l’anomalia che non permetteva la memorizzazione di un profilo. (#TT00943/26)
+> -	MES - Produzione: corretta anomalia nel filtro della Stampa del Foglio di Lavoro, dove il filtro per Macchina non veniva applicato correttamente. (#TT02936/26)
+> -	PR - acquisizione effetti dalle fatture, gestione progress bar e ottimizzazione (#TT02852/26)
+> -	PR - acquisizione effetti dalle partite, revisione assegnazione divisione attiva (#TT02530/26)
+> -	PR - contabilizzazione accrediti del modulo portafoglio effetti, impostazione decimali in griglia per campi monetari (#TT02990/26)
+> -	SD - Fatture di vendita: aggiornamento logica calcolo colli, che viene calcolato sulla base dei dati presenti in anagrafica articolo (confezionamento, tipo UDC, articoli per collo / colli per articolo) e viene sempre arrotondato per eccesso all'unità intera superiore. Il valore viene invece azzerato se il tipo di fatturazione non è immediata (#TT01041/26, #TT02987/26)
+> -	SD - Ottimizzazione procedura importazione offerte Excel tramite BizLink per sconti di riga e sconti finali (#TT02577/26).
+> -	WM - Calendario Spedizioni: Corretta destinazione in riquadro rimuovendo informazioni duplicate e provincia errata. (#TT02254/26)
+> -	WM - Picking: Rivisti e corretti i controlli in cancellazione Spunta. (#TT02742/26)
+> -	WM - Prototipi - Corretto il calcolo del Totale costo ricaricato. L’applicazione del “Ricarico”, in “Percentuale”, ora viene applicato o sul “Costo industriale” oppure sul “Costo industriale + costi diretti” sulla base di quanto indicato nei “Parametri prototipi” alla voce “Calcolo Totale costo ricaricato con ricarico su”. (#TT02850/26)
+
+
 ### Patch 707.1-0080 - 03/07/2026
 
 > -	FI - Export DocFinance: Allineamento della procedura di esportazione, rispetto alla patch 707.078, nel caso in cui il flag di creazione automatica chas flow sia attivo. (#TT2911/26)
