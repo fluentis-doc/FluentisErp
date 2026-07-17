@@ -1,24 +1,36 @@
 ---
-title: Indeks rotacije
+title: Indeks obrta
 sidebar_position: 3
 ---
 
-Izvješće se nalazi na putanji **Logistika > Skladište > Izvještaji upravljanja > Indeks rotacije** i omogućuje korisniku upit bazi podataka kako bi izvukao sažetak artikala i njihovog indeksa rotacije.
+Izveštaj se nalazi na putanji **Logistika > Skladište > Izveštaji upravljanja > Indeks obrta** i omogućava korisniku upit nad bazom podataka radi dobijanja pregleda artikala i njihovog indeksa obrta.
 
-Indeks rotacije skladišta, ili stopa rotacije skladišta, predstavlja omjer između prosječne količine robe u skladištu (poznate kao prosječna zaliha) tijekom određenog vremenskog razdoblja i količine prodane u istom razdoblju. 
+**Indeks obrta zaliha** ili **stopa obrta zaliha** predstavlja odnos između **prosečne količine zaliha na skladištu** (tzv. *prosečna zaliha*) u određenom vremenskom periodu i **količine izdate sa skladišta** tokom istog perioda.
 
-INDEKS ROTACIJE SKLADIŠTA = PROSJEČNA ZALIHA / IZDATNICA SKLADIŠTA
+## Formula obračuna
 
-Ovaj indeks izražava broj puta koliko se zalihe robe potpuno obnavljaju u odabranom vremenskom razdoblju.
+Ovaj pokazatelj izražava **broj puta koliko se zalihe u potpunosti obnove** tokom posmatranog perioda.
 
-Vremenski period može biti godina, ali može biti i kraći period (mjesec, tromjesečje, polugodište, itd.)
+Period analize može biti:
 
-Izračun indeksa rotacije skladišta važan je kako bi se shvatilo koliko je vremena potrebno da se financijska sredstva uložena u robu povrate.
+- godina
+- polugodište
+- tromesečje
+- mesec
+- bilo koji drugi period koji definiše korisnik
 
-:::note NAPOMENA
-Za pregled rezultata indeksa rotacije potrebno je postaviti oznaku **Indeks rotacije** u *knjiženju skladišta* povezanoj s kretanjem artikala, istovremeno isključujući oznaku *Zalihe*.     
+Obračun indeksa obrta zaliha važan je za procenu vremena potrebnog da se finansijska sredstva uložena u robu ponovo pretvore u raspoloživa sredstva kroz prodaju ili potrošnju zaliha.
+
+:::note Napomena
+Da bi se prikazali rezultati vezani za **indeks obrta zaliha**, potrebno je aktivirati oznaku **Indeks obrta** u odgovarajućim *Skladišnim predlošcima* povezanim sa kretanjima artikala.
+
+Istovremeno oznaka **Zalihe** mora biti isključena.
 :::
 
-Nakon unosa željenih parametara moguće je ispisati standardno izvješće ili prilagođeno izvješće (prethodno mapirano u upravljanju ispisima). Ako želite ispisati prilagođeno izvješće, potrebno je odabrati isto u kartici izvještajnih parametara.
+Nakon podešavanja željenih parametara moguće je odštampati standardni ili prilagođeni izveštaj (uz prethodno mapiranje u upravljanju štampama).
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem funkcioniranju obrazaca za ispis, pogledajte sljedeći link [Pregled i ispis](/docs/guide/common/operations-with-data/reports).
+Ako se koristi prilagođeni izveštaj, potrebno ga je odabrati u listi izveštaja unutar parametara štampe.
+
+Za sve funkcionalnosti koje nisu posebno opisane u ovom dokumentu pogledajte dokumentaciju:
+
+[Pregled i štampa](/docs/guide/common/operations-with-data/reports).

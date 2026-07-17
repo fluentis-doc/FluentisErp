@@ -1,70 +1,82 @@
 ---
-title: Knjiženje promjena
+title: Knjiženje promena
 sidebar_position: 4
 ---
 
-:::note NAPOMENA
-Obrazac za  **Kretanje knjiženja** koristi se u lokalizacijama Rumunjske i Hrvatske.
+:::note Napomena
+Forma **Knjiženje promena** koristi se u lokalizacijama za Rumuniju i Hrvatsku.
 :::
- 
-Procedura se otvara putem izbornika **Logistika > Zapisi > Naslov: Knjiženje promjena**.       
-Ovaj obrazac omogućuje knjiženje registara skladišta u glavnu knjigu. Prozor se sastoji od dva taba, Knjiženje u glavnu knjigu i Knjiženje računa, oba s filtrirajućim područjem i rezultatima u rešetki.
 
-## **Kretanje knjiženja**
+Postupak se pokreće putem menija **Logistika > Evidencije > Knjiženje promena**.
 
-Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na gumb Traži kako biste prikazali rezultate, odnosno popis registara skladišta unutar rešetke rezultata. Za knjiženje registra dovoljno je odabrati ga i kliknuti na gumb Stvori knjiženje, i moguće je knjižiti jedan ili više registara ovisno o potrebama i preferencijama korisnika. Polje Knjiženje datuma i zastava Knjiženje datuma omogućuju odabir željenog datuma knjiženja.
+Ova forma omogućava knjiženje skladišnih evidencija u glavnu knjigu. Prozor se sastoji od dve kartice: **Knjiženje glavne knjige** i **Evidencija glavne knjige**, pri čemu obe sadrže deo za filtriranje i tabelu rezultata.
 
-Prikaz rezultata sastoji se od sljedećih polja:      
-**Skladište**: polje prikazuje kod skladišta u kojem je generiran registar;        
-**Predložak**: polje prikazuje šifru predloška knjiženja koji je korišten za knjiženje;        
-**Datum**: polje prikazuje datum unosa skladišne evidencije;   
-**Broj**: polje prikazuje progresivni broj zapisa skladišta;        
-**Referentni dokument**: polje prikazuje što je prisutno u polju *Referentni dokument* u zaglavlju zapisa;       
-**Datum dokumenta**: polje prikazuje datum povezanog dokumenta prisutnog u zaglavlju zapisa;       
-**Utovari/Istovari**: polje prikazuje posebnu vrstu šifarnika, koji može biti samo ukrcaj ili iskrcaj;        
-**Odredišno skladište**: polje prikazuje kod odredišnog skladišta, ako je prisutno;      
-**Model odredišnog skladišta**: polje prikazuje šifru odredišnog skladišta, ako je prisutno;       
-**Broj odredišnog skladišta**: polje prikazuje progresivni broj šifre odredišnog skladišta, ako je prisutno;       
-**Dokument odredišnog skladišta**: polje prikazuje što je prisutno u polju *Dokument odredišnog skladišta* u zaglavlju zapisa odredišnog skladišta, ako je prisutno;        
-**Opis konta**: polje prikazuje opis računa kontakta, ovisno o tome je li debitiran ili kreditiran.      
+## Računovodstvena knjiženja
 
-## **Knjiženje**
+Nakon podešavanja željenih filtera dovoljno je kliknuti na dugme **Traži** kako bi se prikazali rezultati, odnosno lista skladišnih evidencija u tabeli rezultata.
 
-Kao druga kartica, postoji kartica **Zapis glavne knjige** i može se koristiti za filtriranje, pregled i poništavanje operacija.
-Podaci u donjim tablicama, **Dokumenti i Računovostveni zapis / Greške**, odgovaraju odabranom knjiženju u gornjoj tablici **Knjiženje** (nakon filtriranja podataka).        
-Također, u ovim posljednjim dvijema tablicama, postoji mogućnost pregleda odgovarajućeg skladišnog zapisa ili glavnog zapisa dvostrukim klikom na željeni redak u odgovarajućoj tablici. Kartica Greške prikazuje eventualne pogreške koje su se dogodile prilikom knjiženja zapisa.     
+Za knjiženje skladišne evidencije potrebno ju je označiti i kliknuti na dugme **Unos evidencije**. Moguće je knjižiti jednu ili više evidencija, u zavisnosti od potreba korisnika.
 
-*Posebni gumbi*:
-> **Traži**: omogućuje pretraživanje knjiženih zapisa skladišta;     
-> **Povrat knjiženja**: omogućuje poništavanje cijele operacije, tj. u slučaju stvaranja više knjiženja odjednom, briše sva knjiženja;      
-> **Povrat zapisa zaliha na prethodno stanje**: omogućuje poništavanje odabranog skladišnog pokreta unutar kartice Dokumenti.    
+Polja **Datum knjiženja** i oznaka **Datum knjiženja jednak datumu unosa zaliha** omogućavaju izbor željenog datuma knjiženja.
 
-Prikaz rezultata u kartici **Dokumenti** sadrži sljedeće glavne stupce:      
-**Skladište**: prikazuje šifru skladišta u kojem je generiran zapis;    
-**Predložak skladišta**: prikazuje šifru predloška skladišta korištenog za knjiženje;      
-**Datum knjiženja**: prikazuje datum knjiženja zapisa skladišta;      
-**Broj kretanja**: prikazuje progresivni broj zapisa skladišta;      
-**Dokument**: prikazuje sadržaj polja *Dokument referenca* u zaglavlju zapisa;     
-**Datum dokumenta**: prikazuje datum Dokumenta referenca prisutan u zaglavlju zapisa;     
-**Utovari/Istovari**: prikazuje vrstu pokreta, može biti samo utovar ili istovar;      
-**Broj dokumenta**: prikazuje broj dokumenta;     
-**Račun**: prikazuje konto partnera;      
-**Detaljni konto**: prikazuje podkonto;      
-**Opis konta / Podkonta**: prikazuje detaljan opis konta / ime partnera.      
+Tabela rezultata sastoji se od sledećih polja:
 
-Prikazi rezultata u kartici **Zapis glavne knjige** sadrži sljedeće glavne stupce:       
-**Datum zapisa**: stupac prikazuje datum unosa u glavni zapis;       
-**Broj zapisa**: stupac prikazuje broj knjiženja u glavnom zapisu;      
-**Predložak**: stupac prikazuje skraćeni naziv predloška za knjiženje;      
-**Opis vrsta temeljnice**: stupac prikazuje puni naziv predloška za knjiženje;      
-**Broj dokumenta**: stupac prikazuje broj dokumenta;      
-**Konto**: stupac prikazuje konto u glavnom zapisu;      
-**Podkonto**: stupac prikazuje podkonto u glavnom zapisu;      
-**Opis**: stupac prikazuje ime konta u glavnom zapisu;      
-**Detalji konta**: stupac prikazuje detalje zapisa;      
-**Opis promjene**: stupac prikazuje opis promjene;      
-**Korisnik**: stupac prikazuje korisnika koji je stvorio knjiženje;     
-**Iznos u valuti**: stupac prikazuje iznos u valuti;       
-**Saldo-Duguje**: stupac prikazuje debitni saldo;      
-**Saldo-Potražuje**: stupac prikazuje kreditni saldo.      
+- **Skladište**: prikazuje šifru skladišta u kojem je nastala skladišna evidencija
+- **Predložak**: prikazuje šifru skladišnog predloška korišćenog za kretanje i upisanog u zaglavlju evidencije
+- **Datum**: prikazuje datum unosa skladišne evidencije
+- **Broj**: prikazuje redni broj skladišne evidencije
+- **Referentni dokument**: prikazuje vrednost polja *Referentni dokument* iz zaglavlja skladišne evidencije
+- **Datum dokumenta**: prikazuje datum povezanog dokumenta iz zaglavlja skladišne evidencije
+- **Utovari/Istovari**: prikazuje vrstu skladišne evidencije, odnosno ulaz ili izlaz
+- **Odredišno skladište**: prikazuje šifru odredišnog skladišta, ukoliko postoji
+- **Predložak odredišnog skladišta**: prikazuje šifru predloška odredišnog skladišta, ukoliko postoji
+- **Broj odredišnog skladišta**: prikazuje redni broj skladišne evidencije odredišnog skladišta, ukoliko postoji
+- **Referentni dokument odredišnog skladišta**: prikazuje vrednost polja *Referentni dokument* iz zaglavlja evidencije odredišnog skladišta, ukoliko postoji
+- **Konto**: prikazuje opis konta partnera, u zavisnosti od toga da li se radi o dugu ili potraživanju
 
+## Evidencija
+
+Druga kartica je **Evidencija** i služi za filtriranje, pregled i poništavanje knjiženja.
+
+Podaci u donjim tabelama **Dokumenti i temeljnica / Greške** odnose se na knjiženje odabrano u gornjoj tabeli **Knjiženje** nakon filtriranja podataka.
+
+U obe donje tabele moguće je otvoriti povezanu skladišnu evidenciju ili temeljnicu dvostrukim klikom na željeni red.
+
+Kartica **Greške** prikazuje eventualne greške nastale tokom knjiženja skladišnih evidencija.
+
+### Specifična dugmad
+
+> **Traži**: omogućava pretragu proknjiženih skladišnih evidencija  
+> **Povrat knjiženja**: omogućava poništavanje celokupnog postupka knjiženja; ukoliko je istovremeno kreirano više temeljnica, sve će biti obrisane  
+> **Povrat evidencije zaliha na prethodno stanje**: omogućava poništavanje odabranog skladišnog kretanja unutar kartice **Dokumenti**
+
+Tabela rezultata kartice **Dokumenti** sadrži sledeća glavna polja:
+
+- **Skladište**: prikazuje šifru skladišta u kojem je nastala skladišna evidencija
+- **Predložak skladišta**: prikazuje šifru skladišnog predloška korišćenog za kretanje i upisanog u zaglavlju evidencije
+- **Datum knjiženja**: prikazuje datum knjiženja skladišne evidencije
+- **Broj kretanja**: prikazuje redni broj skladišne evidencije
+- **Dokument**: prikazuje vrednost polja *Referentni dokument* iz zaglavlja skladišne evidencije
+- **Datum dokumenta**: prikazuje datum *Referentnog dokumenta* iz zaglavlja skladišne evidencije
+- **Utovari/Istovari**: prikazuje vrstu kretanja, odnosno ulaz ili izlaz
+- **Konačni broj dokumenta**: prikazuje broj dokumenta
+- **Konto**: prikazuje konto partnera
+- **Podkonto**: prikazuje podkonto partnera
+- **Opis konta/podkonta**: prikazuje detaljan opis konta, odnosno naziv partnera
+
+Tabela rezultata kartice **Evidencija glavne knjige** sadrži sledeća glavna polja:
+
+- **Datum evidencije**: prikazuje datum unosa u glavnu knjigu
+- **Broj evidencije**: prikazuje broj temeljnice u glavnoj knjizi
+- **Predložak**: prikazuje skraćeni naziv predloška knjiženja
+- **Opis predloška**: prikazuje puni naziv predloška knjiženja
+- **Broj dokumenta**: prikazuje broj dokumenta
+- **Konto**: prikazuje konto u glavnoj knjizi
+- **Podkonto**: prikazuje podkonto u glavnoj knjizi
+- **Opis**: prikazuje naziv konta u glavnoj knjizi
+- **Detalji konta**: prikazuje detalje knjiženja
+- **Opis promene**: prikazuje opis knjiženja
+- **Korisnik**: prikazuje korisnika koji je kreirao knjiženje
+- **Iznos u valuti**: prikazuje iznos u valuti dokumenta
+- **Saldo duguje**: prikazuje dugovni iznos
+- **Saldo potražuje**: prikazuje potražni iznos

@@ -3,8 +3,8 @@ title: Odabir knjiženja
 sidebar_position: 1
 ---
 
-Izvješće se nalazi na putanji **Logistika > Skladište > Izvještaji računovodstva > Odabir knjiženja** i prikazuje popis knjiženja dobara iz skladišta.
+Izveštaj se nalazi na putanji **Logistika > Skladište > Izveštaji računovodstva > Odabir knjiženja** i prikazuje spisak knjiženja robe iz skladišta.
 
-Nakon što se unesu željeni filtri, moguće je ispisati standardno izvješće ili prilagođeno izvješće (prethodno mapirano u upravljanju ispisima). Ako želite ispisati prilagođeno izvješće, odaberite isto u kartici parametara ispisa.
+Nakon što unesete željene filtere, moguće je odštampati standardni izveštaj ili prilagođeni izveštaj (prethodno mapiran u upravljanju izveštajima). Ako želite da odštampate prilagođeni izveštaj, odaberite ga na kartici **Parametri ispisa**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem funkcioniranju obrazaca za ispis, pogledajte sljedeći link [Pregled i ispis](/docs/guide/common/operations-with-data/reports).
+Za sve što nije detaljno opisano u ovom dokumentu u vezi sa opštim funkcionisanjem formi za ispis, pogledajte sledeći link: [Pregled i ispis](/docs/guide/common/operations-with-data/reports).

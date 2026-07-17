@@ -3,8 +3,8 @@ title: Knjiga ulaza i izlaza robe (Kartica skladišta)
 sidebar_position: 2
 ---
 
-Ispis se nalazi na putanji **Logistika > Skladište > Izvještaji računovodstva > Kartica skladišta** te predstavlja kronološki zapis koji bilježi pokrete robe ulaskom i izlaskom iz skladišta.  
+Izveštaj se nalazi na putanji **Logistika > Skladište > Izveštaji računovodstva > Kartica skladišta** i predstavlja hronološki zapis koji beleži kretanja robe kroz ulaze i izlaze iz skladišta.
 
-Nakon što se unesu željeni filtri, moguće je ispisati standardne ili prilagođene izvještaje (uz prethodnu mapiranju u upravljanju ispisa). U slučaju želje za ispisom prilagođenog izvještaja, potrebno je isti odabrati u kartici parametara ispisa.
+Nakon unosa željenih filtera moguće je odštampati standardne ili prilagođene izveštaje (nakon prethodnog mapiranja u upravljanju izveštajima). Ukoliko želite da odštampate prilagođeni izveštaj, potrebno je da ga odaberete na kartici **Parametri ispisa**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem radu sa obrascima ispisa, molimo pogledajte sljedeću vezu za [Pregled i ispis](/docs/guide/common/operations-with-data/reports).
+Za sve što nije detaljno opisano u ovom dokumentu u vezi sa opštim radom formi za ispis, pogledajte sledeću vezu: [Pregled i ispis](/docs/guide/common/operations-with-data/reports).

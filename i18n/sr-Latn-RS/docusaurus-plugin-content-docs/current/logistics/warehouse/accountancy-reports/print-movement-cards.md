@@ -1,12 +1,12 @@
 ---
-title: Izvještaj o pregledu prometa
+title: Izveštaj o pregledu prometa
 sidebar_position: 2
 ---
 
-Izvještaj se nalazi na putanji  **Logistika > Skladište > Izvještaji računovodstva > Pregled prometa** i omogućuje korisniku izvlačenje izvješća s informacijama o promjenama u skladištu. Postoji niz filtara i parametara za dobivanje željenog ispisa.
+Izveštaj se nalazi na putanji **Logistika > Skladište > Izveštaji računovodstva > Pregled prometa** i omogućava korisniku generisanje izveštaja sa informacijama o promenama u skladištu. Na raspolaganju je više filtera i parametara za dobijanje željenog ispisa.
 
-U ovom obrascu moguće je filtrirati prema skladištu, uzroku, artiklu, eventualnoj varijanti, itd. Zadano, izvještaj ne izvlači promjene koje nisu od fiskalnog interesa. Međutim, mogu se izdvojiti aktiviranjem pripadajuće oznake.
+U ovoj formi moguće je filtrirati prema skladištu, uzroku, artiklu, eventualnoj varijanti i drugim kriterijumima. Podrazumevano, izveštaj ne prikazuje promene koje nisu od fiskalnog značaja. Međutim, moguće ih je uključiti aktiviranjem odgovarajuće oznake.
 
-Nakon što se unesu željeni filtri, moguće je ispisati standardne ili prilagođene izvještaje (uz prethodnu mapiranje u upravljanju ispisa). U slučaju želje za ispisom prilagođenog izvještaja, potrebno je isti odabrati u kartici parametara ispisa.
+Nakon unosa željenih filtera moguće je odštampati standardne ili prilagođene izveštaje (nakon prethodnog mapiranja u upravljanju izveštajima). Ukoliko želite da odštampate prilagođeni izveštaj, potrebno je da ga odaberete na kartici **Parametri ispisa**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem radu sa obrascima ispisa, molimo pogledajte sljedeću vezu za [Pregled i ispis](/docs/guide/common/operations-with-data/reports).
+Za sve što nije detaljno opisano u ovom dokumentu u vezi sa opštim radom formi za ispis, pogledajte sledeću vezu: [Pregled i ispis](/docs/guide/common/operations-with-data/reports).

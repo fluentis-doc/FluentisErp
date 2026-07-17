@@ -3,8 +3,8 @@ title: Dnevnik skladišta
 sidebar_position: 2
 ---
 
-Izvješće se nalazi na putanji  **Logistika > Skladište > Izvještaji računovodstva > Dnevnik skladišta** i predstavlja kronološki zapis koji bilježi dnevne pokrete robe ulaska i izlaska iz skladišta.
+Izveštaj se nalazi na putanji **Logistika > Skladište > Izveštaji računovodstva > Dnevnik skladišta** i predstavlja hronološki zapis koji beleži dnevna kretanja robe, odnosno ulaze i izlaze iz skladišta.
 
-Nakon što unesete željene filtre, možete ispisati standardno izvješće ili prilagođeno izvješće (prethodno mapirano u upravljanju ispisima). Ako želite ispisati prilagođeno izvješće, odaberite isto u kartici parametara ispisa.
+Nakon što unesete željene filtere, možete odštampati standardni izveštaj ili prilagođeni izveštaj (prethodno mapiran u upravljanju izveštajima). Ako želite da odštampate prilagođeni izveštaj, odaberite ga na kartici **Parametri ispisa**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem funkcioniranju obrazaca za ispis, pogledajte sljedeći link [Pregled i ispis](/docs/guide/common/operations-with-data/reports).
+Za sve što nije detaljno opisano u ovom dokumentu u vezi sa opštim funkcionisanjem formi za ispis, pogledajte sledeći link: [Pregled i ispis](/docs/guide/common/operations-with-data/reports).

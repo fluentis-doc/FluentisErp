@@ -1,40 +1,40 @@
 ---
-title: Pretraga zapisa
+title: Zapisi
 sidebar_position: 2
 ---
 
-Ova opcija omogućuje pretraživanje svih evidentiranih zapisa u bazi podataka sa svrhom pregleda, uređivanja, mogućeg brisanja ili dodavanja novog zapisa; prozor se sastoji od područja filtara i prikaza rezultata.
+Ova opcija omogućava pretragu svih evidentiranih zapisa u bazi podataka u svrhu pregleda, izmene, eventualnog brisanja ili dodavanja novog zapisa; prozor se sastoji od dela za filtriranje i prikaza rezultata.
 
-Nakon što su postavljeni svi željeni filtri, jednostavno kliknite na gumb **Traži** kako biste prikazali rezultate unutar prikaza rezultata.
+Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli rezultata.
 
-Za otvaranje detalja zapisa, jednostavno ga odaberite i dvaput kliknite mišem ili kliknite na gumb **Izmijeni** (omogućuje ulazak u detalje i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u detalje i pregled, ali bez mogućnosti uređivanja).
+Za otvaranje detalja zapisa dovoljno je odabrati željeni zapis i dvaput kliknuti mišem ili kliknuti na dugme **Izmeni** (omogućava ulazak u detalje i uređivanje) ili na dugme **Prikaži** (omogućava ulazak u detalje i pregled bez mogućnosti uređivanja).
 
-Iz ovog obrasca također možete dodati novi zapis skladišta koristeći gumb **Novo**.
+Iz ovog obrasca moguće je dodati i novi skladišni zapis korišćenjem dugmeta **Novo**.
 
-*Prikaz rezultata sastoji se od sljedećih polja*:
+*Prikaz rezultata sastoji se od sledećih polja*:
 
-**Skladište**: stupac prikazuje šifru skladišta na kojem je generiran zapis;   
+**Skladište**: kolona prikazuje šifru skladišta na kojem je generisan zapis;
 
-**Predložak**: stupac prikazuje šifru uzroka skladišta koji je izvršio pokret i stoga je unesen u zaglavlje zapisa;  
+**Predložak**: kolona prikazuje šifru skladišnog predloška koji je izvršio kretanje i koji je upisan u zaglavlje zapisa;
 
-**Datum**: stupac prikazuje datum unosa zapisa skladišta;   
+**Datum**: kolona prikazuje datum unosa skladišnog zapisa;
 
-**Broj**: stupac prikazuje progresivni broj zapisa skladišta;   
+**Broj**: kolona prikazuje redni broj skladišnog zapisa;
 
-**Referentni dokument**: stupac prikazuje što je navedeno u polju "Referentni dokument" u zaglavlju zapisa;   
+**Referentni dokument**: kolona prikazuje sadržaj polja „Referentni dokument“ iz zaglavlja zapisa;
 
-**Datum dokumenta**: stupac prikazuje datum referentnog dokumenta navedenog u zaglavlju zapisa;   
+**Datum dokumenta**: kolona prikazuje datum referentnog dokumenta navedenog u zaglavlju zapisa;
 
-**Utovar/Istovar**: stupac prikazuje vrstu zapisa. Može biti samo isporuka ili primanje;   
+**Utovari/Istovari**: kolona prikazuje vrstu zapisa. Može biti samo izdavanje (izlaz) ili prijem (ulaz);
 
-**Skladište protustavke**: stupac prikazuje kod skladišta registracije protustrane, ako je dostupno;   
+**Odredišno skladište**: kolona prikazuje šifru skladišta protustavke, ukoliko postoji;
 
-**Uzrok protustavke**: stupac prikazuje kod skladišta protustrane za registraciju, ako je dostupno;   
+**Predložak odredišnog skladišta**: kolona prikazuje šifru skladišnog predloška protustavke, ukoliko postoji;
 
-**Broj protustavke**: stupac prikazuje progresivni broj registracije protustrane, ako je dostupan;   
+**Broj protustavke (zapisa)**: kolona prikazuje redni broj zapisa protustavke, ukoliko postoji;
 
-**Referentni dokument protustavke**: stupac prikazuje sadržaj polja 'Referentni dokument' u zaglavlju registracije protustrane, ako je dostupno;   
+**Referentni dokument odredišnog skladišta**: kolona prikazuje sadržaj polja **Referentni dokument** iz zaglavlja knjiženja protustavke, ukoliko postoji;
 
-**Konto / Podkonto/ Opis konta**: stupac prikazuje račun, podračun i poslovno ime kupca ili dobavljača unesenog u zaglavlje zapisa skladišta..
+**Konto / Podkonto / Opis konta**: kolona prikazuje konto, podkonto i naziv kupca ili dobavljača unetog u zaglavlje skladišnog zapisa.
 
-Za sve ostale informacije o zajedničkom radu ovih obrazaca upućujemo vas na sljedeću poveznicu:  [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostale informacije o zajedničkom radu ovih obrazaca pogledajte sledeću dokumentaciju: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).
