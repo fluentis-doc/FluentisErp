@@ -1,28 +1,64 @@
 ---
-title: Zalihe artikla
+title: Zaliha artikla
 sidebar_position: 5
 ---
 
-Ova procedura koristi se za prikazivanje stanja zaliha određenog artikla. Obrazac prikazuje mrežu koja mijenja svoje stupce na temelju unesenih filtera za pretraživanje
+:::important Čemu služi
+Funkcija **Zaliha artikla** omogućuje operaterima brz pregled zaliha skladišta za svaki evidentirani artikl. Putem interaktivne mreže moguće je dobiti detaljne informacije o knjigovodstvenoj zalihi, mjernim jedinicama i lotovima.
 
-Stupci koji se odnose na stanje zaliha su tri:  
-- *Stanje zaliha (Upr.)* - (upravljačko)
-- *Stanje zaliha*  
-- *Stanje zaliha (FK)* - (FK = Faktor konverzije)
+Osim toga, funkcija omogućuje analizu zaliha grupiranih po artiklu, skladišnoj lokaciji ili projektu, pružajući cjelovit pregled raspoloživosti materijala. Ova procedura olakšava praćenje zaliha i omogućuje preciznije te informiranije upravljanje skladišnim operacijama, čime doprinosi optimizaciji ukupne logističke učinkovitosti.
+:::
 
-U slučaju korištenja **UM Def. WMS** (prisutno u kartici  [Alternativne mjernih jedinica u šifarniku artikla](/docs/erp-home/registers/items/create-new-item)), prvi stupac bit će ispunjen glavnom jedinicom mjere artikla, drugi će biti popunjen sa stanjem zaliha izraženim u alternativnoj jedinici mjere artikla i dobivenim zbrajanjem svih pokreta, dok će treći biti izračunat iz stanja zaliha izraženog u alternativnoj jedinici mjere, ali s faktorom konverzije.   
-Ako nije omogućena opcija **UM Def. WMS** stupci *Stanje zaliha* i *Stanje zaliha (FK)* neće biti popunjeni.
+Ova procedura koristi se za prikaz zalihe artikla.
 
-**Parametri utovara/istovara** trebaju se unijeti u tablicu [Parametri punjenja/pražnjenja po korisniku](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+Obrazac sadrži mrežu čiji se stupci mijenjaju ovisno o filtrima postavljenima za pretragu.
+
+Primjerice, ako se očita samo šifra skladišne lokacije, pritiskom na gumb **Pretraži** u mreži rezultata bit će prikazani sljedeći stupci:
+
+> **Artikl**: prikazuje šifru artikla;     
+> **Zaliha (osn. JM)**: prikazuje zalihu u osnovnoj (glavnoj) mjernoj jedinici;      
+> **Mjerna jedinica**: prikazuje mjernu jedinicu artikla;          
+> **Zaliha**: prikazuje se samo ako je oznaka **Zadano WMS** aktivna na kartici [Alternativne mjerne jedinice šifarnika artikla](/docs/erp-home/registers/items/create-new-item). Ova vrijednost prikazuje zalihu izraženu u alternativnoj mjernoj jedinici, izračunatu na temelju skladišnih kretanja;         
+> **Zaliha (FC)**: prikazuje se samo ako je oznaka **Zadano WMS** aktivna na kartici [Alternativne mjerne jedinice šifarnika artikla](/docs/erp-home/registers/items/create-new-item). Ova vrijednost prikazuje zalihu izraženu u alternativnoj mjernoj jedinici, izračunatu pomoću faktora pretvorbe;               
+> **Lot**: prikazuje lot artikla;       
+> **Opis artikla**: prikazuje opis artikla;      
+> **Varijanta**: prikazuje šifru varijante artikla;    
+> **Opis varijante**: prikazuje opis varijante artikla.     
+
+Dok će se, očitavanjem artikla za koji se želi prikazati zaliha te pritiskom na gumb **Pretraži**, u mreži rezultata prikazati sljedeći stupci:
+
+> **Skladišna lokacija**: prikazuje skladišnu lokaciju artikla;        
+> **Artikl**: prikazuje šifru artikla;     
+> **Zaliha (osn. JM)**: prikazuje zalihu u osnovnoj (glavnoj) mjernoj jedinici;      
+> **Mjerna jedinica**: prikazuje mjernu jedinicu artikla;          
+> **Zaliha**: prikazuje se samo ako je oznaka **Zadano WMS** aktivna na kartici [Alternativne mjerne jedinice šifarnika artikla](/docs/erp-home/registers/items/create-new-item). Ova vrijednost prikazuje zalihu izraženu u alternativnoj mjernoj jedinici, izračunatu na temelju skladišnih kretanja;         
+> **Zaliha (FC)**: prikazuje se samo ako je oznaka **Zadano WMS** aktivna na kartici [Alternativne mjerne jedinice šifarnika artikla](/docs/erp-home/registers/items/create-new-item). Ova vrijednost prikazuje zalihu izraženu u alternativnoj mjernoj jedinici, izračunatu pomoću faktora pretvorbe;               
+> **Lot**: prikazuje lot artikla;       
+> **Varijanta**: prikazuje šifru varijante artikla;    
+> **Opis varijante**: prikazuje opis varijante artikla.     
+
+:::note Napomena
+Stupci koji se odnose na zalihu su:
+
+- *Zaliha (osn. JM)* – zaliha u osnovnoj (glavnoj) mjernoj jedinici
+- *Zaliha*
+- *Zaliha (FC)* – (FC = faktor pretvorbe)
+
+Ako se koristi oznaka **Zadano WMS** na kartici [Alternativne mjerne jedinice šifarnika artikla](/docs/erp-home/registers/items/create-new-item), prvi stupac prikazuje zalihu u osnovnoj mjernoj jedinici artikla, drugi stupac prikazuje zalihu izraženu u alternativnoj mjernoj jedinici dobivenu zbrojem skladišnih kretanja, dok treći stupac prikazuje zalihu izraženu u alternativnoj mjernoj jedinici izračunatu pomoću faktora pretvorbe.
+
+Ako oznaka **Zadano WMS** nije aktivna, stupci *Zaliha* i *Zaliha (FC)* neće biti popunjeni.
+:::
+
+**Parametri za ulaz/izlaz robe** koje je potrebno definirati u tablici [Parametri ulaza/izlaza robe po korisniku](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Područje | Modul | Obrazac |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | ItemStocks |
 
-Ovaj parametar treba unijeti samo ako želite filtrirati zalihe za specifično skladište (polje može ostati prazno), inače, ako se ne unese, bit će prikazane zalihe svih skladišta.
+Ovaj parametar potrebno je definirati samo ako se želi filtrirati zaliha za određeno skladište (predložak skladišta može ostati prazan). U suprotnom, ako parametar nije definiran, prikazat će se zalihe svih skladišta.
 
 :::note Napomena
-Ako je u [Parametri utovara/istovara po korisniku](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) za tog korisnika povezan samo jedno skladište, ono će se predložiti kao zadano. U suprotnom, ako ih je povezano više, nijedno neće biti predloženo kao zadano, a korisnik će moći birati samo među onima koji su uneseni.
+Ako je u [Parametrima ulaza/izlaza robe po korisniku](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) za korisnika povezano samo jedno skladište, ono će biti automatski predloženo. Ako je povezano više skladišta, nijedno neće biti predloženo te će korisnik moći odabrati samo jedno od definiranih skladišta.
 :::
 
-Za sve informacije o tome kako kodirati barkodove za čitanje u polju **kod Barkoda** pogledajte stranicu o [Barkod tokenizator](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Za sve informacije o načinu kodiranja barkodova koji se očitavaju u polju **Barkod**, pogledajte dokumentaciju za [Tokenizer barkodova](/docs/configurations/tables/general-settings/barcode-tokenizer).

@@ -3,22 +3,29 @@ title: Utovar artikla
 sidebar_position: 1
 ---
 
-Ova procedura koristi se za stvaranje pokreta punjenja za određeni artikal na određenoj lokaciji.  
-U polju **Barkod** moguće je pročitati artikal i odredišnu lokaciju.         
-Također, moguće je ispisati naljepnicu s kodom artikla pomoću gumba *Ispis*.
-
-:::note Nota
-*Šifra artikla* i *Lota* moraju biti prisutni u Fluentisu.
+:::important Čemu služi
+Funkcija **Utovar artikla** omogućuje precizno evidentiranje ulaza artikala u skladište. Ovim postupkom operateri mogu skenirati barkod artikla i skladišne lokacije, unijeti količinu za zaprimanje te, u slučaju artikala koji se vode po lotovima, navesti i odgovarajući lot. Nakon potvrde operacije automatski se kreira skladišno knjiženje, čime se osigurava učinkovito upravljanje zalihama i potpuna sljedivost.
 :::
 
-**Parametri utovara/istovara** trebaju se unijeti u tablicu [Parametri punjenja/pražnjenja po korisniku](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
+Ova se procedura koristi za kreiranje skladišnog knjiženja zaprimanja artikla na određenu skladišnu lokaciju.        
+U polju **Barkod** operater treba očitati barkod artikla, a zatim barkod skladišne lokacije na koju želi zaprimiti artikl.           
+Nakon toga potrebno je unijeti količinu za knjiženje, a nakon potvrde automatski će se kreirati odgovarajuće skladišno knjiženje.       
+Ako se artikl vodi po lotovima, prikazat će se dodatno polje za unos lota koji se zaprimlja.        
+Također je moguće ispisati etiketu artikla pomoću gumba **Ispis** ili prikazati pregled ispisa izravno na terminalu pomoću gumba **Pregled**.          
+Gumb **Očisti sve** omogućuje brisanje svih unesenih podataka iz obrasca.
+
+:::note Napomena
+*Šifra artikla* i *Lot* moraju postojati u šifarnicima sustava Fluentis.
+:::
+
+**Parametri ulaza/izlaza robe** koje je potrebno definirati u tablici [Parametri ulaza/izlaza robe po korisniku](/docs/configurations/parameters/general-parameters/deliverynotes-grouping).
 
 | Područje | Modul | Obrazac |
 | :-- | :-- | :-- |
 | WM | Fluentis.FluentisErp.Mvvm.WM.Views | LoadItem |
 
 :::note Napomena
-Ako je u [Parametri utovara/istovara po korisniku](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) za tog korisnika povezan samo jedno skladište, ono će se predložiti kao zadano. U suprotnom, ako ih je povezano više, nijedno neće biti predloženo kao zadano, a korisnik će moći birati samo među onima koji su uneseni.
+Ako je u [Parametrima ulaza/izlaza robe po korisniku](/docs/configurations/parameters/general-parameters/deliverynotes-grouping) za korisnika povezano samo jedno skladište, ono će biti automatski predloženo. Ako je povezano više skladišta, nijedno neće biti predloženo te će korisnik moći odabrati samo jedno od definiranih skladišta.
 :::
 
-Za sve informacije o tome kako kodirati barkodove za čitanje u polju **šifra Barkoda** pogledajte stranicu o [Barkod tokenizator](/docs/configurations/tables/general-settings/barcode-tokenizer).
+Za sve informacije o načinu kodiranja barkodova koji se očitavaju u polju **Barkod**, pogledajte dokumentaciju za [Tokenizer barkodova](/docs/configurations/tables/general-settings/barcode-tokenizer).
