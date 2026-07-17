@@ -1,5 +1,5 @@
 ---
-title: Pretraga zapisa
+title: Zapisi
 sidebar_position: 2
 ---
 
@@ -25,16 +25,16 @@ Iz ovog obrasca također možete dodati novi zapis skladišta koristeći gumb **
 
 **Datum dokumenta**: stupac prikazuje datum referentnog dokumenta navedenog u zaglavlju zapisa;   
 
-**Utovar/Istovar**: stupac prikazuje vrstu zapisa. Može biti samo isporuka ili primanje;   
+**Utovari/Istovari**: stupac prikazuje vrstu zapisa. Može biti samo isporuka (izlaz) ili primanje (ulaz);   
 
-**Skladište protustavke**: stupac prikazuje kod skladišta registracije protustrane, ako je dostupno;   
+**Skladište odredišnog skladišta**: stupac prikazuje šifru skladišta protustavke, ako je dostupno;   
 
-**Uzrok protustavke**: stupac prikazuje kod skladišta protustrane za registraciju, ako je dostupno;   
+**Predložak odredišnog skladišta**: stupac prikazuje šifru predloška skladišta protustavke, ako je dostupno;   
 
-**Broj protustavke**: stupac prikazuje progresivni broj registracije protustrane, ako je dostupan;   
+**Broj protustavke (zapisa)**: stupac prikazuje progresivni broj zapisa protustavke, ako je dostupan;   
 
-**Referentni dokument protustavke**: stupac prikazuje sadržaj polja 'Referentni dokument' u zaglavlju registracije protustrane, ako je dostupno;   
+**Referentni dokument odredišnog skladišta**: stupac prikazuje sadržaj polja 'Referentni dokument' u zaglavlju knjiženja protustavke, ako je dostupno;   
 
-**Konto / Podkonto/ Opis konta**: stupac prikazuje račun, podračun i poslovno ime kupca ili dobavljača unesenog u zaglavlje zapisa skladišta..
+**Konto / Podkonto/ Opis konta**: stupac prikazuje konto, podkonto i naziv kupca ili dobavljača unesenog u zaglavlje zapisa skladišta..
 
-Za sve ostale informacije o zajedničkom radu ovih obrazaca upućujemo vas na sljedeću poveznicu:  [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Za sve ostale informacije o zajedničkom radu ovih obrazaca upućujemo vas na sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).
