@@ -5,20 +5,32 @@ sidebar_position: 3
 
 Izvješće se nalazi na putanji **Logistika > Skladište > Izvještaji upravljanja > Indeks rotacije** i omogućuje korisniku upit bazi podataka kako bi izvukao sažetak artikala i njihovog indeksa rotacije.
 
-Indeks rotacije skladišta, ili stopa rotacije skladišta, predstavlja omjer između prosječne količine robe u skladištu (poznate kao prosječna zaliha) tijekom određenog vremenskog razdoblja i količine prodane u istom razdoblju. 
+**Indeks rotacije zaliha** ili **stopa obrtaja zaliha** predstavlja omjer između **prosječne količine zaliha na skladištu** (tzv. *prosječna zaliha*) u određenom vremenskom razdoblju i **količine izdane sa skladišta** tijekom istog razdoblja.
 
-INDEKS ROTACIJE SKLADIŠTA = PROSJEČNA ZALIHA / IZDATNICA SKLADIŠTA
+## Formula izračuna
 
-Ovaj indeks izražava broj puta koliko se zalihe robe potpuno obnavljaju u odabranom vremenskom razdoblju.
+Ovaj pokazatelj izražava **broj puta koliko se zalihe u potpunosti obnove** tijekom promatranog razdoblja.
 
-Vremenski period može biti godina, ali može biti i kraći period (mjesec, tromjesečje, polugodište, itd.)
+Razdoblje analize može biti:
 
-Izračun indeksa rotacije skladišta važan je kako bi se shvatilo koliko je vremena potrebno da se financijska sredstva uložena u robu povrate.
+- godina
+- polugodište
+- tromjesečje
+- mjesec
+- bilo koje drugo razdoblje koje odredi korisnik
 
-:::note NAPOMENA
-Za pregled rezultata indeksa rotacije potrebno je postaviti oznaku **Indeks rotacije** u *knjiženju skladišta* povezanoj s kretanjem artikala, istovremeno isključujući oznaku *Zalihe*.     
+Izračun indeksa rotacije zaliha važan je za procjenu vremena potrebnog da se financijska sredstva uložena u robu ponovno pretvore u raspoloživa sredstva kroz prodaju ili potrošnju zaliha.
+
+:::note Napomena
+Za prikaz rezultata vezanih uz **indeks rotacije zaliha**, potrebno je aktivirati oznaku **Indeks rotacije** u odgovarajućim *Predlošcima skladišta* povezanim s kretanjima artikala.
+
+Istovremeno oznaka **Zalihe** mora biti isključena.
 :::
 
-Nakon unosa željenih parametara moguće je ispisati standardno izvješće ili prilagođeno izvješće (prethodno mapirano u upravljanju ispisima). Ako želite ispisati prilagođeno izvješće, potrebno je odabrati isto u kartici izvještajnih parametara.
+Nakon postavljanja željenih parametara moguće je ispisati standardni ili prilagođeni izvještaj (uz prethodno mapiranje u upravljanju ispisima).
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem funkcioniranju obrazaca za ispis, pogledajte sljedeći link [Pregled i ispis](/docs/guide/common/operations-with-data/reports).
+Ako se koristi prilagođeni izvještaj, potrebno ga je odabrati u popisu izvještaja unutar parametara ispisa.
+
+Za sve funkcionalnosti koje nisu posebno opisane u ovom dokumentu pogledajte dokumentaciju:
+
+[Pregled i ispis](/docs/guide/common/operations-with-data/reports).

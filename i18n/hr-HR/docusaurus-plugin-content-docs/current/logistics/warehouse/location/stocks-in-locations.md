@@ -3,11 +3,21 @@ title: Zalihe na lokacijama
 sidebar_position: 2
 ---
 
-Ova forma omogućuje operateru da pregleda sve lokacije u kojima je odabrani artikl prisutan s pripadajućim stanjem zaliha.
+:::important Čemu služi
 
-Forma se sastoji od dvije sekcije:
+Funkcionalnost **Zalihe na lokacijama** u Fluentis ERP-u predstavlja važan alat za učinkovito upravljanje skladištem jer omogućuje pregled rasporeda artikala po pojedinim skladišnim lokacijama.
 
-- lijeve, gdje je moguće pretraživati artikle od interesa;  
-- desne, posvećene prikazu lokacija, uključujući zalihe, povezane s odabranim artiklom.
+Putem jednostavnog i preglednog sučelja operateri mogu u stvarnom vremenu pratiti raspoložive količine pojedinog artikla te brzo utvrditi na kojim se skladišnim lokacijama on nalazi.
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem radu s obrascima, molimo pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+:::
+
+Ova forma omogućuje pregled svih skladišnih lokacija na kojima se nalazi odabrani artikl, zajedno s pripadajućim količinama na zalihi.
+
+Forma se sastoji od dva dijela:
+
+- **lijevi dio** – omogućuje pretraživanje željenog artikla
+- **desni dio** – prikazuje sve skladišne lokacije na kojima se odabrani artikl nalazi, zajedno s količinama na zalihi za svaku lokaciju
+
+Za sve funkcionalnosti koje nisu posebno opisane u ovom dokumentu pogledajte dokumentaciju:
+
+[Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

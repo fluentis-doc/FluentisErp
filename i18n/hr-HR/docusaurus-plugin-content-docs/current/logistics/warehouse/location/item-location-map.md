@@ -1,24 +1,44 @@
 ---
-title: Mapiranje lokacija po artiklima
+title: Popis lokacija za artikl
 sidebar_position: 3
 ---
 
-Ovaj obrazac omogućuje povezivanje zadane lokacije s određenim artiklom.
+:::important Čemu služi
 
-Sastoji se od obrasca za filtriranje gdje je moguće pregledati popis svih artikala kojima je dodijeljena zadan lokacija.   
-Pritiskom na gumb *Novo*, operater može dodati artikl u glavni dio obrasca, a zatim unutar tablice *Mapiranje lokacija po artiklima* odabrati skladište i zadano lokaciju.  
+Funkcionalnost **Popis lokacija za artikl** u Fluentis ERP-u omogućuje optimalno upravljanje zalihama pružajući jasan pregled skladišnih lokacija dodijeljenih pojedinom artiklu.
 
-Za svaki artikl mogu se navesti sljedeći parametri:  
-- **Skladište**: označava skladište zadane lokacije;     
-- **Opis skladišta**: prikazuje opis skladišta zadane lokacije;    
-- **Prioritet**: označava prioritet zadane lokacije; 
+Pomoću ove funkcionalnosti korisnici mogu jednostavno povezati artikle s njihovim zadanim skladišnim lokacijama, čime se olakšavaju procesi skladištenja i preuzimanja robe.
 
-:::note **PAŽNJA**  
-Procedure će uzeti u obzir samo lokaciju s najnižim prioritetom. Odabrana lokacija također će imati prioritet nad lokacijom navedenom u [Skladišni razlozi](/docs/configurations/tables/logistics/warehouse-templates).
+Kroz intuitivno sučelje moguće je definirati ključne parametre poput pripadajućeg skladišta, prioriteta skladištenja te minimalnih i maksimalnih zaliha. Sustav također omogućuje određivanje zadane skladišne lokacije za svaki artikl, čime se optimizira upravljanje zalihama i povećava operativna učinkovitost.
+
+Ova je funkcionalnost posebno korisna za poduzeća koja žele zadržati potpunu kontrolu nad fizičkim rasporedom robe u skladištu te osigurati visoku razinu organizacije i sljedivosti artikala.
+
 :::
 
-- **Minimalna zaliha**: označava minimalnu zalihu zadane lokacije;    
-- **Maksimalna zaliha**: označava maksimalnu zalihu zadane lokacije;    
-- **Lokacija**: označava kod zadane lokacije.
+Ova forma omogućuje dodjelu **zadane skladišne lokacije** pojedinom artiklu.
 
-Za sve što nije detaljno opisano u ovom dokumentu o općem radu s obrascima, molimo pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Sastoji se od forme za pretraživanje u kojoj je moguće pregledati sve artikle kojima je već dodijeljena zadana skladišna lokacija.
+
+Pritiskom na gumb **Novo** korisnik može odabrati artikl u zaglavlju dokumenta, a zatim u tablici **Mapa skladišnih lokacija artikala** definirati skladište i zadanu skladišnu lokaciju.
+
+Za svaki artikl moguće je definirati sljedeće parametre:
+
+- **Skladište**: skladište kojem pripada zadana skladišna lokacija
+- **Opis skladišta**: opis skladišta kojem pripada zadana skladišna lokacija
+- **Prioritet**: prioritet zadane skladišne lokacije
+
+:::note PAŽNJA
+
+Sustav će u obzir uzeti isključivo skladišnu lokaciju s najnižim prioritetom.
+
+Definirana skladišna lokacija ima prednost i nad skladišnom lokacijom postavljenom u [Predlošcima skladišta](/docs/configurations/tables/logistics/warehouse-templates).
+
+:::
+
+- **Minimalna zaliha**: minimalna količina zalihe za zadanu skladišnu lokaciju
+- **Maksimalna zaliha**: maksimalna količina zalihe za zadanu skladišnu lokaciju
+- **Lokacija (skladišna)**: šifra zadane skladišne lokacije
+
+Za sve funkcionalnosti koje nisu posebno opisane u ovom dokumentu pogledajte dokumentaciju:
+
+[Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common)
