@@ -4,6 +4,38 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0030 - 16/07/2026
+
+> -	CO - aggiunto messaggio di conferma esecuzione scritture per cost driver. Esecuzione da procedura Elaborazione periodi, Elaborazione Chiusura infrannuale. (#TT02740/26)
+> -	CO - creazione nuova chiusura infrannuale, revisione gestione dei sottoconti non utilizzati in controlling. (#TT03146/26)
+> -	FI - Comunicazione liquidazioni periodiche IVA: adeguamento della procedura di elaborazione del calcolo trimestre (TT03137/26, TT03120/26)
+> -	FI - fix giroconto partite - null reference - aliniamento con SP fluentis2015 (#TT03018/26)
+> -	FI - la contabilizzazione enasarco e pagamento dei percipienti non verifica più il parametro “FS-FI-Posting-BlockPostingBeforeReceiveDate” (#TT02720/26)
+> -	FI - Libro Inventari: revisione della procedura di inserimento dei dati di testata (#TT02929/26)
+> -	FI - modificata contabilizzazione automatica fatture di acquisto . Allineamento dei campi totale in valuta, iva indetraibile nel caso in cui l’iva venga modificata manualmente dal riepilogo della fattura di acquisto. (#TT03027/26)
+> -	FI - Registrazioni Contabili: revisione proposta del menù rapido nella ricerca registrazioni con gestione della riga di dettaglio espansa (#TT02813/26)
+> -	FI - revisione salvataggio registrazione, test del valore del pagamento che sia inferiore al residuo da pagare (#TT02029/26)
+> -	FI - ulteriore revisione/ottimizzazione della procedura di ‘Acquisizione da registrazioni’ nell’intrastat. (#TT02699/26)
+> -	Framework- Corretta la gestione della riga filtro durante l’inserimento di un’aggiunta di calcolo della somma nel totale imponibile (#TT02143/26)
+> -	MES - Manufacturing Execution System: risolta anomalia che non allineava il calcolo costi con il movimento di produzione quando il centro di costo di riferimento aveva un’unità di misura indicata ma senza fattore di conversione. (#TT02837/26)
+> -	MES - Ordini di produzione - Verticalizzazione Pharma - E’ stata corretta l’anomalia che non permetteva la memorizzazione di un profilo. (#TT00943/26)
+> -	MES - Produzione: corretta anomalia nel filtro della Stampa del Foglio di Lavoro, dove il filtro per Macchina non veniva applicato correttamente. (#TT02936/26)
+> -	MS - AFCS. Corretto un bug per cui per alcuni ordini cliente non veniva indicata la data di consegna schedulata (#TT02957/26)
+> -	PM - servizi intervento - corretto caso in cui se l'orario inizio servizio e l'orario di inizio della fascia oraria coincidevano, veniva rilevato un fuori orario nel piano di fatturazione non corretto (#TT02997/26)
+> -	QY - Controllo articoli: corretta l’anomalia che non permetteva la memorizzazione di un profilo successivamente alla modifica della form di Filtro Controlli articolo. (#TT03077/26)
+> -	QY - Taratura strumenti: parametrizzazione delle Incertezze (-) e (+) espresse in Valore o Percentuale. Nei “Parametri Taratura strumenti” è stata aggiunta una nuova informazione “Tipo tolleranza espressa in” per dare la possibilità di scegliere se le Incertezze vengano espresse in Valore o Percentuale. Il dato parametrizzato si applica al calcolo dell’Esito nei “Valori rilevati” durante la Taratura interna di uno strumento.(#TT03111/26)
+> -	WEBAPI - Importazione DDT/Fatture Acquisto con Serial Number: Corretta l’importazione dei Serial Number con codice predefinito. (#TT2589/26)
+> -	revisione stampa liquidazione agenti, revisione campo della provvigione maturata (#TT02338/25)
+> -	SCM - Documenti di acquisto in entrata: revisione della gestione delle fatture elettroniche con allegati in formato .7zip (#TT878/26)
+> -	SCS - Rientri di conto lavoro: Modificando il costo dell’articolo di un rientro già caricato l’aggiornamento viene effettuato anche nel costo del movimento di magazzino. (#TT2182/26)
+> -	SD - Fatture di vendita: aggiornamento logica calcolo colli, che viene calcolato sulla base dei dati presenti in anagrafica articolo (confezionamento, tipo UDC, articoli per collo / colli per articolo) e viene sempre arrotondato per eccesso all'unità intera superiore. Il valore viene invece azzerato se il tipo di fatturazione non è immediata (#TT01041/26, #TT02987/26)
+> -	SH - Destinazioni/destinatari in anagrafica: impossibilità di salvare nuova destinazione senza avvalorare Ragione Sociale. (#TT02766/26)
+> -	WM - Analisi disponibilità: Corretto filtro Codice Articolo in griglia, che non funzionava correttamente se abilitato il flag “Dettaglio distinta base”. (#TT02928/26)
+> -	WM - Picking: Rivisti e corretti i controlli in cancellazione Spunta. (#TT02742/26)
+> -	WM - Prototipi - Corretto il calcolo del Totale costo ricaricato. L’applicazione del “Ricarico”, in “Percentuale”, ora viene applicato o sul “Costo industriale” oppure sul “Costo industriale + costi diretti” sulla base di quanto indicato nei “Parametri prototipi” alla voce “Calcolo Totale costo ricaricato con ricarico su”. (#TT02850/26)
+> -	WMS - Ricevimento Merce: Ripristinato focus sul numero in apertura form di ricerca. (#TT02946/26)
+> -	SD - Categoria commerciale: ottimizzata possibilità di inserimento campo da object navigator (TT02925/26)
+
 ### Patch 803.0029 - 03/07/2026
 
 > -	FI- Corretta visualizzazione Stampa Analisi Centri di costo. Modifications inside Stampa Analisi Centri di costo form can have impact on profiles. (#TT02702/26)
