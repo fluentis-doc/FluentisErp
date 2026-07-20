@@ -1,20 +1,20 @@
 ---
-title: Izrada izvješća 
+title: Kreiranje izveštaja
 sidebar_position: 3
 ---
 
-XtraReport je alat za izvještavanje, integriran u Fluentis, za generiranje izvješća namijenjenih krajnjem korisniku.
+XtraReport je alat za izveštavanje, integrisan u Fluentis, namenjen generisanju izveštaja za krajnjeg korisnika.
 
-• Izrada izvješća 
+- Kreiranje izveštaja
 
-• Grafički elementi izvješća (Label, Table, Line, Picture, ecc.)
+- Grafički elementi izveštaja (*Label, Table, Line, Picture* itd.)
 
-• Logički elementi izvješća (Izračunata polja, Formatting rules, Collections, Navigacija podacima, ecc.)
+- Logički elementi izveštaja (*Izračunata polja, Formatting rules, Collections, Navigacija kroz podatke* itd.)
 
-• Odjeljci izvješća (Page Header, Report Footer, Band, Sub Band, ecc.)
+- Odeljci izveštaja (*Page Header, Report Footer, Band, Sub Band* itd.)
 
-• Parametri
+- Parametri
 
-• Subreport
+- Podizveštaj (*Subreport*)
 
-Za detalje pročitajte članak *Izrada izvješća u ARM-u*.
+Za više informacija pročitajte članak *Kreiranje izveštaja u ARM-u*.

@@ -8,7 +8,7 @@ sidebar_position: 2
 ### Kako prikazati dodatna polja u obrascima
 
 
-Da biste dodali svojstva koja nisu prisutna u obrascima, morate potvrditi da su svojstva prisutna u LoadRequestu objekta. 
+Da biste dodali svojstva koja nisu prisutna u obrascima, morate potvrditi da su svojstva prisutna u Load Requestu objekta. 
 
 
 
@@ -16,23 +16,23 @@ Da biste dodali svojstva koja nisu prisutna u obrascima, morate potvrditi da su 
 
 **Primjeri**:
  - dodajte *PDV* i *porezni broj* u proširenje kupca, u **Zaglavlje** narudžbe kupca.
- - dodajte *SWIFT* u **mrežu** Plaćanja narudžbe korisnika.  
+ - dodajte *SWIFT* u **tablicu** Plaćanja narudžbe.  
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image01.png)
 
 1. popraviti ploču  **Object Navigatora** ako da uvijek može biti vidljiva dok se ne definiraju dodatna polja, tj. do trenutka prije kreiranja prilagođenog profila. 
 
-2. u **Object Navigatoru**, desnom tipkom miša kliknite naziv objekta, unesite **Detalji** i idite na odjeljak **Zahtjev za učitavanje objekta** i desnim klikom odaberite  **Novi zahtjev za učitavanje objekta**.
+2. u **Object Navigatoru**, desnom tipkom miša kliknite naziv objekta, unesite **Detalji** i idite na odjeljak **Load Request** i desnim klikom odaberite  **Novi zahtjev za učitavanje predmeta**.
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image02.png)
 
-3. otvorite *Nuovo Load Request* gdje unesete isti kod kao *Load Request Standard* i zatim spremite tako da se učitaju sva svojstva objekta.  
+3. otvorite *Novi zahtjev za učitavanje predmeta* gdje unesete istu šifru kao *Load Request Standard* i zatim spremite tako da se učitaju sva svojstva objekta.  
 
 4. pretražite stablo objekata za pogođena svojstva.
 
 U ovom slučaju otišli smo pod reference *Kupca* i u referencu *Šifarnika* kako bismo pronašli *OIB* i *PDV broj*, te smo ih odabrali. 
 
-5. uvijek u istom obrascu, u rešetki **Based On**, aktivirajte LoadRequest **Šifru** tako da se sva svojstva prisutna u ovom *Personaliziranom Load Request*.
+5. uvijek u istom obrascu, u tablici **Based On**, aktivirajte LoadRequest **Šifru** tako da su sva svojstva prisutna u *Personaliziranom Load Request*.
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image03.png)
 
@@ -71,12 +71,12 @@ Na ovom mjestu obrazac je označen crvenom bojom:
 ### Dodajte svojstva rešetki obrasca 
 
 
-Da biste dodali svojstva mrežama, ne morate ulaziti u Customization mode.
+Da biste dodali svojstva tablicama, ne morate ulaziti u Customization mode.
 
 
 7.1 u *Object Navigatoru* potražite svojstva za dodavanje. 
 
-7.2 odaberite stavku i povucite je u mrežu. Obrazac je označen crvenom bojom.
+7.2 odaberite stavku i povucite je u tablicu. Obrazac je označen crvenom bojom.
 
 ![](/img/it-it/guide/panels/object-navigator/load-request-object/image09.png)
 
