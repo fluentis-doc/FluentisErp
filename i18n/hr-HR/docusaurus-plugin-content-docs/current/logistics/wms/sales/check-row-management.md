@@ -1,14 +1,20 @@
 ---
-title: Provjerite upravljanje redovima i Potvrda pakiranja
+title: Upravljanje označenim retcima i Dostava iz slaganja robe
 sidebar_position: 2
 ---
 
-## Provjerite upravljanje redovima
+## Upravljanje označenim retcima
+
+:::important Čemu služi
+Funkcija upravljanja potvrdom preuzimanja u Fluentis WMS-u namijenjena je potvrđivanju stavki picking liste koje je operater stvarno preuzeo u skladištu. Ako je označena barem jedna stavka, postupci kreiranja otpremnice (DDT) i računa uzimaju u obzir samo označene stavke; u suprotnom se obrađuju sve stavke picking liste.
+
+Ovakav način rada pojednostavljuje i ubrzava izradu otpremnica i računa te omogućuje i ručni unos novih stavki artikala. Osim toga, tijekom potvrđivanja stavki moguće je kreirati utovarne jedinice (UJ), grupirajući potvrđene artikle unutar jedne ili više utovarnih jedinica. Nakon odabira stavke i unosa potrebnih podataka moguće je kreirati i upravljati novim utovarnim jedinicama koje sadrže potvrđene artikle.
+:::
 
 Iz postojećeg Picking-a, imate mogućnost čitanja prisutnih artikala i grupiranja ih u UDC (Jedinice za upravljanje skladištem). Iz WPF-a je zatim moguće nastaviti s izradom Dostavnica ili fakture.
 
 :::note NAPOMENA
-U obrascu za **Provjerite upravljanje redovima** prikazat će se samo Picking-i stvoreni s  *vrstom Picking-a* s omogućenom *obveznom jedinicom za upravljanje skladištem* u tablici [Vrste Picking-a](/docs/configurations/tables/logistics/picking-type/).
+U obrascu za **Upravljanje označenim retcima** prikazat će se samo Picking-i stvoreni s *vrstom Picking-a* s omogućenom *obveznom jedinicom za upravljanje skladištem* u tablici [Vrste Picking-a](/docs/configurations/tables/logistics/picking-type/).
 :::
 
 Obrazac se otvara na filtru Picking-a, gdje možete pregledati sve Picking-e u stanju *Neobrađeno* i *Djelomično obrađeno*.     
@@ -41,8 +47,8 @@ omogućuje pregled sastava stvorenih *Jedinica za upravljanje skladištem* za tr
 
 - **Označeni Artikli**  
 kartica **Označeni Artikli** popunjava se tek nakon odabira artikla u kartici **Artikli** u Picking-u.
-Dakle, iz liste artikala Picking-a odabire se jedan artikl, a u kartici **Označeni Artikli** compaiono tutte le letture fatte dell’articolo selezionato.
-Quando una riga *Picking* viene evasa completamente va in coda nel tab **Articoli** epojavit će se svi pročitani podaci za odabrani artikl. Kada se redak Picking-a potpuno potvrdi, prelazi u redak u kartici **Artikli** i označava se crvenom bojom. Odabirom tog retka i pritiskom na gumb *Detalji oznake* otvara se kartica **Označeni Artikli** gdje se mogu vidjeti potvrđeni retci, koji se također mogu obrisati pomoću odgovarajućeg gumba *Obriši*. 
+Dakle, iz liste artikala Picking-a odabire se jedan artikl, a u kartici **Označeni Artikli** prikazuju se sva očitanja odabranog artikla.
+Kada je stavka *Pickinga* u cijelosti izvršena, automatski se premješta na kraj popisa u kartici **Artikli** i pojavit će se svi pročitani podaci za odabrani artikl. Kada se redak Picking-a potpuno potvrdi, prelazi u redak u kartici **Artikli** i označava se crvenom bojom. Odabirom tog retka i pritiskom na gumb *Detalji oznake* otvara se kartica **Označeni Artikli** gdje se mogu vidjeti potvrđeni retci, koji se također mogu obrisati pomoću odgovarajućeg gumba *Obriši*. 
 S ove kartice moguće je odabrati potvrđeni artikl i izbrisati ga.  
 
 **Posebni gumbi**
@@ -60,7 +66,13 @@ Parametri su ponovljeni jer se moraju povezati dvije različite vrste promjena, 
 Za sve informacije o tome kako kodirati barkodove za čitanje u polju **kod Barkoda** pogledajte stranicu o [Barkod tokenizator](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
 
-## Potvrdite odabir
+## Dostava iz slaganja robe
+
+:::important Čemu služi
+Na temelju postojeće picking liste, ali bez korištenja utovarnih jedinica, koje se kreiraju putem forme [Upravljanje potvrdom preuzimanja](/docs/logistics/wms/sales/check-row-management), forma **Potvrda pickinga** omogućuje potvrđivanje pojedinačnih stavki picking liste radi premještanja artikala između skladišta ili skladišnih lokacija, uz izravno kreiranje skladišnih knjiženja prijenosa.
+
+Nakon toga je u WPF aplikaciji moguće nastaviti s kreiranjem otpremnice (DDT) ili računa.
+:::
 
 Obrazac za **Potvrdu odabira** koristi se za potvrdu pojedinačnih linija odabira bez korištenja jedinica za upravljanje skladištem, koje se umjesto toga koriste u formi za [Provjerite upravljanje redovima](/docs/logistics/wms/sales/check-row-management).
 
@@ -107,6 +119,10 @@ S ove kartice moguće je odabrati spuntani artikl i obrisati ga.
 
 :::note NAPOMENA
 Za ovaj obrazac potrebno je postaviti ispravnu vrstu prijenosa s odgovarajućim protivnim računom.
+:::
+
+:::note Napomena
+Važno je napomenuti da predložak skladišnog knjiženja koji se koristi mora biti predložak izlaza robe s povezanim predloškom ulaza robe kao protustavkom.
 :::
 
 Za svaki Picking bit će stvorena samo jedna evidencija ispusta s jednim protivnim računom koji sadrži sve pokrete potvrđenih artikala. 
