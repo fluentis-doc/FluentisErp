@@ -7,21 +7,78 @@ Le righe del progetto possono essere inserite in una struttura monolivello, oppu
 
 I dati relativi alle righe di progetto sono suddivisi in diverse tab, anche queste abilitate in funzione alla configurazione presente nel Tipo Progetto. 
 
-Le righe di progetto possono essere aggiunte e gestite tramite appositi pulsanti nella ribbon bar.
-**Nuovo Articolo** permette di inserire una nuova riga articolo, in coda alle altre righe se presenti; 
-**Cancella Articoli** permette di cancellare la riga selezionata. 
+## Pulsanti ribbon bar 
+Le righe di progetto possono essere aggiunte e gestite tramite appositi pulsanti nella ribbon bar:
+
+**Nuovo Articolo**: permette di inserire una nuova riga articolo, in coda alle altre righe se presenti;
+
+**Cancella Articoli**: permette di cancellare la riga selezionata;
+
 Nel caso la struttura del progetto sia gerarchica-ad albero, sono disponibili i pulsanti specifici:
+
 **Nuovo figlio**: permette di inserire una nuova riga progetto figlia della riga selezionata; 
-Se la riga selezionata è di tipo Note, la riga figlia potrà avere come Tipo Riga qualsiasi tipologia (Codificata, Non codificata, Note, Spese);
+Se la riga selezionata è di tipo Note, la riga figlia potrà avere come Tipo Riga qualsiasi tipologia (Codificata, Non codificata, Note, Spese).
 Se la riga selezionata è di tipo Codificato/Non Codificato, la riga figlia potrà avere come Tipo Riga soltanto Note;    
-**Nuovo fratello**: permette di inserire una nuova riga progetto nello stesso livello della riga selezionata; come indicato per il pulsante Nuovo Figlio, la nuova riga inserita come "Fratello" di quella già esistente, potrà avere il Tipo Riga in funzione del Tipo Riga del livello superiore (se presente). 
+**Nuovo fratello**: permette di inserire una nuova riga progetto nello stesso livello della riga selezionata. Come indicato per il pulsante Nuovo Figlio, la nuova riga inserita come "Fratello" di quella già esistente, potrà avere il Tipo Riga in funzione del Tipo Riga del livello superiore (se presente);
+
 **Sostituisci il numero WBS**: effettua una rinumerazione di tutte le righe presenti, ponendo il numero progetto come radice e per ogni livello successivo aggiungendo un progressivo. Es. se il numero progetto è 5, il primo livello sarà 5.1, il sottolivello sarà 5.1.1 e così a seguire;
 Per espandere tutta la struttura ad albero oppure per compattarla, sono disponibili i pulsanti:
+
 **Implodi**: mostra solo le righe di primo livello del progetto;
+
 **Esplodi**: mostra tutte le righe di tutti i livelli del progetto.
 
+Selezionando una riga e utilizzando il bottone **Sposta WBS**, è possibile selezionare una riga e spostarla in un'altra posizione. Si aprirà un popup, con le opzioni "Inserisci come Nodo Fratello" o "Inserisci come Nodo Figlio" e la possibilità di selezionare la riga progetto di destinazione. 
+La scelta ovviamente dovrà essere coerente con le regole sopra indicate sul Tipo Nodo.
+
+Nella **griglia delle righe articolo**, verranno mostrare le righe in modo sequenziale monolivello, oppure multilivello, in funzione se abilitato o no il flag "struttura gerarchica" all'interno del Tipo Progetto. 
+
+Nel caso di struttura **multilivello / gerarchica** , sono imposti i seguenti vincoli: 
+- le righe con Tipo Riga Articolo codificato, Articolo Non codificato, Articolo Spese potranno essere posizionate soltanto come **ultimo livello**
+- oppure, come **livello intermedio** nel caso in cui **tutte** le righe sottostanti "figlie" sono di Tipo riga "Note".
+
+Ovvero: 
+- le righe in posizione di **ultimo livello** potranno essere di qualsiasi tipologia (Articolo codificato, Articolo Non codificato, Articolo Note, Articolo Spese)
+- le righe in posizione **intermedia** potranno essere <u>solo</u> di Tipo riga "Note", ad eccezione del caso in cui i livelli sottostanti "figli" siano **tutti** di Tipo riga "Note. 
+
+## Righe progetto
+
+**Numero riga**: numero della riga articolo. Nel caso di struttura multilivello, ha solo funzionalità identificativa e non di ordinamento, che dipende dal numero wbs e dal posizionamento effettivo della riga nella struttura ad albero;
+
+**Numero WBS**: numero utilizzato per identificare il livello a cui si trova la riga; ad esempio il numero wbs 41.1.1.2 , evidenzia che la riga ".2" è al 4 livello, ed ha come livello padre il 41.1.1. ;
+
+**Descrizione articolo**: descrizione inserita nella riga del progetto; 
+
+**Importo imponibile della riga**: se la riga è di ultimo livello, corrisponde al valore "Imponibile" della riga; se la riga è di livello intermedio, corrisponde alla somma dei valori "Imponibile" delle righe sottostanti di livello inferiore;
+
+Sono poi presenti il **Costo risorse, Costo materiale, Costo totale** ottenuti dalla somma dei costi inseriti nelle apposite tab risorse e materiali. Nel caso la riga in questione abbia dei livelli sottostanti, i totali mostrati saranno i totali intermedi dati dalla somma delle righe sottostanti;
+
+Data inizio: se la riga è di ultimo livello, corrisponde alla Data inizio inserita nella tab "Pianificazione Servizio"; se la riga è di livello intermedio, corrisponde alla data <u>passata</u> più "lontana" presente in una delle righe sottostanti;
+
+Data fine: se la riga è di ultimo livello, corrisponde alla Data fine inserita nella tab "Pianificazione Servizio"; se la riga è di livello intermedio, corrisponde alla data <u>futura</u> più "lontana" presente in una delle righe sottostanti;
+
+**Giorni assegnati**: corrisponde al campo "quantità" della riga progetto, nel caso la riga abbia unità di misura "temporale" (giorni, ore). Nel caso abbia unità di misura diversa, non viene inclusa nei conteggi;
+
+**Giorni previsti**: corrisponde alla somma del campo "quantità" della tab "Risorse" assegnate alla riga progetto;  
+
+**Giorni pianificati**: corrisponde al campo "Tempo effettivo" visibile nell'intervento pianificato, in seguito all'indicazione di data/ora pianificati;
+
+**Giorni eseguiti**: corrisponde alla somma di
+    -  campo "Tempo effettivo" delle righe di servizi presenti negli interventi;
+    -  campo "Totale tempo" della dichiarazione attività che NON ha alcun collegamento con servizi/interventi.
+
+Nel caso si tratti di ore, la **conversione a giorni** viene effettuata con la seguente logica:
+ore rilevate nei documenti / ore della giornata lavorativa tipica aziendale (es. 8 )
 
 
+Cliccando su una riga **tasto destro - Copia Elemento** è possibile copiare i dati di una riga di progetto con tutto il suo contenuto. 
+Cliccando su un'altra riga in un'altra posizione **tasto destro - Incolla Elemento** è possibile incollare la riga copiata e tutto il suo contenuto. Verrà richiesto se incollare allo stesso livello, oppure come sottolivello. 
+Per spostare una riga di posizione, utilizzare il pulsante **Sposta wbs** presente in ribbon bar. 
+
+
+## Tab di dettaglio per ogni riga progetto 
+
+### Tab attività
 La tab principale è la **tab Attività** che contiene le informazioni principali sulla riga, come il tipo riga, eventuale articolo, articolo, quantità, UM e prezzo, visibilità, etc. 
 Nel dettaglio la **tab Attività** contiene: 
 
@@ -31,10 +88,11 @@ Nel dettaglio la **tab Attività** contiene:
 **Articolo**: riporta Classe, Codice e Descrizione dell’articolo se selezionato;        
 **Descrizione**: contiene la descrizione dell’articolo se selezionato, ma può essere liberamente modificata (con doppio click si apre un popup esteso che permette di inserire più comodamente del testo lungo);           
 **Tipo Lavoro**: identifica nell’ambito organizzativo un livello di progetto non ancora quotato (visibile nelle offerte, per separarlo dalle attività facenti parte del contratto), quindi indica un nuovo lavoro che ancora non è stato gestito dal project manager ma che proviene dalle varie operazioni del progetto;
-**Articolo preventivo**: se la riga progetto è stata generata da offerta, mostra il riferimento descrittivo all'offerta. 
+**Articolo preventivo**: se la riga progetto è stata generata da offerta, mostra il riferimento descrittivo all'offerta; 
 **Quantità/UM**: indica la quantità di riga e l'unità di misura dell’articolo selezionato;        
 Nell'expander è presente **Quantità alternativa/UM alternativa**: contiene  dati sull'unità di misura alternativa e la relativa quantità alternativa dell’articolo selezionato;
 **Prezzo**: indica il prezzo di riga; se è selezionato un codice articolo, il valore può essere proposto con le logiche business standard; 
+
 Nell'expander del Prezzo sono presenti: 
 **Prezzo Unità di misura alternativa**: flag che indica se il prezzo è riferito alla Unità di misura alternativa;
 **Prezzo manuale**: in caso di modifica manuale del prezzo, si abilita in automatico questo flag; 
@@ -46,9 +104,10 @@ Nell'expander del Prezzo sono presenti:
 **IVA**: indica l’IVA da applicare;             
 **Tipo fatturato vendite**: indica il fatturato vendite dell’articolo;            
 **Livello non visibile**: con questo flag il livello non viene più mostrato nella struttura gerarchica. Per visualizzare tutti i livelli nascosti, utilizzare il pulsante nella Ribbon Bar "Mostra/Nascondi"; si utilizza generalmente per non rendere più visibile e quindi associabile ad altri documenti uno specifico ramo del progetto;
-**Categoria di attività**: indica l’eventuale categoria di attività che verrà proposta nei documenti dell'area progetti collegati alla riga di progetto. Le categorie attività sono impostabili da [Categoria](/docs/configurations/tables/project-management/task-category)
+**Categoria di attività**: indica l’eventuale categoria di attività che verrà proposta nei documenti dell'area progetti collegati alla riga di progetto. Le categorie attività sono impostabili da [Categoria](/docs/configurations/tables/project-management/task-category).
 
 
+### Tab Pianificazione servizio
 
 **Tab Pianificazione servizio** contiene le seguenti informazioni: 
 
@@ -76,6 +135,7 @@ Lla data verrà utilizzata anche per la costruzione del Gannt di progetto.
 **Connetti WBS**: permette di collegare una riga di progetto ad un'altra dello stesso progetto, in modo da gestire l'inizio delle attività relative alla riga di progetto, con delle regole precise stabilite nel campo successivo; 
 **Tipi di connessione WBS**: fine-inizio / inizio-inizio / fine-fine / inizio-fine . A seconda della scelta, sarà possibile collegare documenti ad una riga di progetto, solo se la precedente rispetta la condizione stabilita: es. se la riga 1.1 e 1.2 sono collegate tra loro con fine-inizio, per poter collegare documenti alla riga 1.2 sarà necessario che la riga 1.1 abbia la Percentuale di Lavoro completato = 100% , altrimenti si verrà bloccati da un messaggio. 
 
+### Tab risorse
 Nella **tab Risorse** è possibile allocare le risorse per la riga articolo selezionata:
 
 **Data inserimento**: viene copilata con la data di inserimento della risorsa nel progetto;           
@@ -127,6 +187,7 @@ Da questa schermata è possibile creare per i Materiali direttamente una Richies
 
  Se il progetto è generato da un template, tutti i dati presenti verranno ereditati dal template. 
 
+### Tab dati
 Nel **Tab Dati** sono presenti: 
 **Origine Calcolo Costo o Ricavo**: nella griglia verranno proposti dal Tipo Progetto i codici di Costo o Ricavo da utilizzare per il calcolo Stato Avanzamento Lavori; è possibile impostare i valori manualmente. 
 **Data Prevista consegna**: data di prevista consegna, attualmente valorizzata se la riga è stata generata da offerta/ordini cliente.
@@ -140,8 +201,10 @@ Nel **Tab Dati** sono presenti:
 **Escludi WBS dal calcolo SAL**: se abilitato, la riga di progetto e TUTTI i documenti collegati a questa riga di progetto , verranno esclusi dalla procedura di calcolo Stato Avanzamento Lavori del progetto, indipendentemente dai codici di Costo o Ricavo configurati. 
 **Centro Aziendale**: è possibile collegare la riga progetto ad un centro aziendale, che verrà propagato dove previsto nei documenti a cui la riga di progetto è collegata. 
 
+### Tab agenti
 Nel **Tab Agenti** è possibile indicare l'Agente Principale e gli Agenti collegati alla riga di progetto;
 
+### Tab fatturazione
 Nel **Tab Fatturazione** è possibile inserire le rate da fatturare relative al progetto, tramite la procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md). 
 Se compilata la Data "Chiuso Forzatamente" nella tab Pianificazione Servizio, le rate non verranno visualizzate nella procedura di creazione fatture. 
 **Priorità**: viene assegnata la sequenza delle rate;
@@ -154,13 +217,9 @@ Si può compilare un solo campo tra Percentuale e Valore, mai insieme. Inoltre n
 Il valore e la percentuale riguardano solo il campo prezzo, non il campo quantità. 
 Per cui la quantità verrà sempre manutenuta uguale a quella impostata nella riga di progetto
 
+### Tab extradata
 Nel **Tab Extradata** è possibile inserire gli extradata per la riga di progetto. 
 
+### Tab documenti allegati
 Nel **Tab Documenti Allegati** è possibile inserire allegati per la riga di progetto. 
 
-
-Cliccando su una riga **tasto destro - Copia Elemento** è possibile copiare i dati di una riga di progetto con tutto il suo contenuto. 
-Cliccando su un'altra riga in un'altra posizione **tasto destro - Incolla Elemento** è possibile incollare la riga copiata e tutto il suo contenuto. Verrà richiesto se incollare allo stesso livello, oppure come sottolivello. 
-
-Selezionando una riga e utilizzando il bottone **Sposta WBS**, è possibile selezionare una riga e spostarla in un'altra posizione. Si aprirà un popup, con le opzioni "Inserisci come Nodo Fratello" o "Inserisci come Nodo Figlio" e la possibilità di selezionare la riga progetto di destinazione. 
-La scelta ovviamente dovrà essere coerente con le regole sopra indicate sul Tipo Nodo.

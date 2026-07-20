@@ -9,4 +9,8 @@ import SearchForm from './../../import/sections/search-form.md'
 
 <SearchForm />
 
-Un pulsante specifico di questa maschera è il **Nuovo progetto da modello**: esso permette di creare un nuovo progetto partendo da un modello preesistente. È necessario indicare il **Tipo progetto**, il nuovo **Cliente** a cui è destinato e la **Data creazione**.   
+Sono presenti alcuni pulsanti specifici: 
+
+**Nuovo progetto da modello**: permette di creare un nuovo progetto partendo da un modello preesistente (configurato nella tabella Tipi Progetto come "Template"). È necessario indicare il **Tipo progetto**, il nuovo **Cliente** a cui è intestato e la **Data creazione**.   
+
+**Ricalcolo valori progetto**: permette di ricalcolare gli importi dei totali del progetto e tutte le colonne inerenti ai giorni: giorni assegnati, giorni previti, giorni pianificati, giorni eseguiti. 
