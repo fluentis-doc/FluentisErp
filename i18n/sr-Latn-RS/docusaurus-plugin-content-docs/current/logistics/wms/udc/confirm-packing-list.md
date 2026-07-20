@@ -1,6 +1,6 @@
 ---
-title: Potvrdi preuzimanje utovarne jedinice
+title: Potvrda preuzimanja utovarne jedinice
 sidebar_position: 7
 ---
 
-Molimo pogledajte dokumentaciju na sljedećoj vezi [Lista preuzimanja / Pakirna Lista (verzija WMS)](/docs/logistics/udc/loading-unit-packing-lists/loading-unit)
+Molimo pogledajte dokumentaciju na sledećoj vezi: [Lista preuzimanja / Packing lista (WMS verzija)](/docs/logistics/udc/loading-unit-packing-lists/loading-unit)
