@@ -84,14 +84,10 @@ gdje je ```@ID``` parametar koji se naknadno definira na razini DataSource.
 
 U tabu ***Visible property*** povucimo svojstva koja nas zanimaju, poput: **Id**, **Description**, **Code**, **TotalAmount**, **TotalDepreciation**, **NetAmount**.  
 
-1. Definiramo parametar u datasourceu putem taba **parameters**.
+3. Definiramo parametar u datasourceu putem taba **parameters**.
 
-)
+4. U Fluentisu kreiramo Kontrolnu ploču; za sve detalje vezane uz dashboardove pogledajte pripadajuću dokumentaciju. 
 
-1. U Fluentisu kreiramo Kontrolnu ploču; za sve detalje vezane uz dashboardove pogledajte pripadajuću dokumentaciju. 
+5. Iz Arm-a kreiramo parametrizaciju za **context panel**.  
 
-2. Iz Arm-a kreiramo parametrizaciju za **context panel**.  
-
-
-
-3. Odaberemo zapis u formi osnovnih sredstava; zatim će u kontekstualnom panelu biti prikazan postotak amortizacije za to sredstvo.  
+6. Odaberemo zapis u formi osnovnih sredstava; zatim će u kontekstualnom panelu biti prikazan postotak amortizacije za to sredstvo.  

@@ -3,6 +3,6 @@ title: Fluentis Chat
 sidebar_position: 6
 ---
 
-**Fluentis Chat** omogućuje interakciju s korisnicima koji su ovlašteni za tu komunikacijsku uslugu, kako unutar poslovnog okruženja tako i izvan njega radi pristupa podršci Fluentis.  
+**Fluentis Chat** omogućava komunikaciju sa korisnicima koji imaju ovlašćenje za korišćenje ove komunikacione usluge, kako unutar poslovnog okruženja, tako i sa spoljnim korisnicima radi pristupa Fluentis podršci.
 
-Chat je vrlo koristan alat za brzo dijeljenje informacija s drugim operatorima, dijeljenje digitalnih dokumenata ili čak aktivnih dokumenata u sustavu za upravljanje. 
+Chat predstavlja veoma koristan alat za brzo deljenje informacija sa drugim operaterima, razmenu digitalnih dokumenata, kao i deljenje aktivnih dokumenata unutar sistema upravljanja.
