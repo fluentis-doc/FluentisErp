@@ -10,9 +10,8 @@ I dati relativi alle righe di progetto sono suddivisi in diverse tab, anche ques
 ## Pulsanti ribbon bar 
 Le righe di progetto possono essere aggiunte e gestite tramite appositi pulsanti nella ribbon bar:
 
-**Nuovo Articolo**: permette di inserire una nuova riga articolo, in coda alle altre righe se presenti;
-
-**Cancella Articoli**: permette di cancellare la riga selezionata;
+**Nuovo Articolo**: permette di inserire una nuova riga articolo, in coda alle altre righe se presenti;  
+**Cancella Articoli**: permette di cancellare la riga selezionata;  
 
 Nel caso la struttura del progetto sia gerarchica-ad albero, sono disponibili i pulsanti specifici:
 
@@ -43,32 +42,25 @@ Ovvero:
 
 ## Righe progetto
 
-**Numero riga**: numero della riga articolo. Nel caso di struttura multilivello, ha solo funzionalità identificativa e non di ordinamento, che dipende dal numero wbs e dal posizionamento effettivo della riga nella struttura ad albero;
-
-**Numero WBS**: numero utilizzato per identificare il livello a cui si trova la riga; ad esempio il numero wbs 41.1.1.2 , evidenzia che la riga ".2" è al 4 livello, ed ha come livello padre il 41.1.1. ;
-
-**Descrizione articolo**: descrizione inserita nella riga del progetto; 
-
-**Importo imponibile della riga**: se la riga è di ultimo livello, corrisponde al valore "Imponibile" della riga; se la riga è di livello intermedio, corrisponde alla somma dei valori "Imponibile" delle righe sottostanti di livello inferiore;
-
+**Numero riga**: numero della riga articolo. Nel caso di struttura multilivello, ha solo funzionalità identificativa e non di ordinamento, che dipende dal numero wbs e dal posizionamento effettivo della riga nella struttura ad albero;  
+**Numero WBS**: numero utilizzato per identificare il livello a cui si trova la riga; ad esempio il numero wbs 41.1.1.2 , evidenzia che la riga ".2" è al 4 livello, ed ha come livello padre il 41.1.1. ;  
+**Descrizione articolo**: descrizione inserita nella riga del progetto;  
+**Importo imponibile della riga**: se la riga è di ultimo livello, corrisponde al valore "Imponibile" della riga; se la riga è di livello intermedio, corrisponde alla somma dei valori "Imponibile" delle righe sottostanti di livello inferiore;  
 Sono poi presenti il **Costo risorse, Costo materiale, Costo totale** ottenuti dalla somma dei costi inseriti nelle apposite tab risorse e materiali. Nel caso la riga in questione abbia dei livelli sottostanti, i totali mostrati saranno i totali intermedi dati dalla somma delle righe sottostanti;
+**Data inizio**: se la riga è di ultimo livello, corrisponde alla Data inizio inserita nella tab "Pianificazione Servizio"; se la riga è di livello intermedio, corrisponde alla data <u>passata</u> più "lontana" presente in una delle righe sottostanti;  
+**Data fine**: se la riga è di ultimo livello, corrisponde alla Data fine inserita nella tab "Pianificazione Servizio"; se la riga è di livello intermedio, corrisponde alla data <u>futura</u> più "lontana" presente in una delle righe sottostanti;
 
-Data inizio: se la riga è di ultimo livello, corrisponde alla Data inizio inserita nella tab "Pianificazione Servizio"; se la riga è di livello intermedio, corrisponde alla data <u>passata</u> più "lontana" presente in una delle righe sottostanti;
-
-Data fine: se la riga è di ultimo livello, corrisponde alla Data fine inserita nella tab "Pianificazione Servizio"; se la riga è di livello intermedio, corrisponde alla data <u>futura</u> più "lontana" presente in una delle righe sottostanti;
-
-**Giorni assegnati**: corrisponde al campo "quantità" della riga progetto, nel caso la riga abbia unità di misura "temporale" (giorni, ore). Nel caso abbia unità di misura diversa, non viene inclusa nei conteggi;
-
+**Giorni assegnati**: corrisponde al campo "quantità" della riga progetto, nel caso la riga abbia unità di misura "temporale" (giorni, ore). Nel caso abbia unità di misura diversa, non viene inclusa nei conteggi;  
 **Giorni previsti**: corrisponde alla somma del campo "quantità" della tab "Risorse" assegnate alla riga progetto;  
-
-**Giorni pianificati**: corrisponde al campo "Tempo effettivo" visibile nell'intervento pianificato, in seguito all'indicazione di data/ora pianificati;
-
+**Giorni pianificati**: corrisponde al campo "Tempo effettivo" visibile nell'intervento pianificato, in seguito all'indicazione di data/ora pianificati;  
 **Giorni eseguiti**: corrisponde alla somma di
     -  campo "Tempo effettivo" delle righe di servizi presenti negli interventi;
     -  campo "Totale tempo" della dichiarazione attività che NON ha alcun collegamento con servizi/interventi.
 
 Nel caso si tratti di ore, la **conversione a giorni** viene effettuata con la seguente logica:
 ore rilevate nei documenti / ore della giornata lavorativa tipica aziendale (es. 8 )
+
+I documenti evasi sono comunque considerati nei contatori di giorni, per dare evidenza di ciò che è stato pianificato rispetto a ciò che è stato eseguito. 
 
 
 Cliccando su una riga **tasto destro - Copia Elemento** è possibile copiare i dati di una riga di progetto con tutto il suo contenuto. 
@@ -82,36 +74,37 @@ Per spostare una riga di posizione, utilizzare il pulsante **Sposta wbs** presen
 La tab principale è la **tab Attività** che contiene le informazioni principali sulla riga, come il tipo riga, eventuale articolo, articolo, quantità, UM e prezzo, visibilità, etc. 
 Nel dettaglio la **tab Attività** contiene: 
 
-**Numero riga/Numero WBS**: indica i numeri della riga e della WBS e viene impostato automaticamente, anche se è liberamente modificabile;       
+**Numero riga/Numero WBS**: indica i numeri della riga e della WBS e viene impostato automaticamente, anche se è liberamente modificabile;   
 **Tipo Nodo**: indica se la riga è un **Root Node**(nodo principale), un **Activity Node**(relativo alle attività) o un **Work Package Node**(nodo finale di progetto);       
 **Tipo riga**: indica la tipologia di articolo tra Codificato, Non codificato, Spese o Note;      
 **Articolo**: riporta Classe, Codice e Descrizione dell’articolo se selezionato;        
 **Descrizione**: contiene la descrizione dell’articolo se selezionato, ma può essere liberamente modificata (con doppio click si apre un popup esteso che permette di inserire più comodamente del testo lungo);           
-**Tipo Lavoro**: identifica nell’ambito organizzativo un livello di progetto non ancora quotato (visibile nelle offerte, per separarlo dalle attività facenti parte del contratto), quindi indica un nuovo lavoro che ancora non è stato gestito dal project manager ma che proviene dalle varie operazioni del progetto;
-**Articolo preventivo**: se la riga progetto è stata generata da offerta, mostra il riferimento descrittivo all'offerta; 
+**Tipo Lavoro**: identifica nell’ambito organizzativo un livello di progetto non ancora quotato (visibile nelle offerte, per separarlo dalle attività facenti parte del contratto), quindi indica un nuovo lavoro che ancora non è stato gestito dal project manager ma che proviene dalle varie operazioni del progetto;  
+**Articolo preventivo**: se la riga progetto è stata generata da offerta, mostra il riferimento descrittivo all'offerta;  
 **Quantità/UM**: indica la quantità di riga e l'unità di misura dell’articolo selezionato;        
-Nell'expander è presente **Quantità alternativa/UM alternativa**: contiene  dati sull'unità di misura alternativa e la relativa quantità alternativa dell’articolo selezionato;
-**Prezzo**: indica il prezzo di riga; se è selezionato un codice articolo, il valore può essere proposto con le logiche business standard; 
+Nell'expander sono presenti:  
+**Quantità alternativa/UM alternativa**: contiene  dati sull'unità di misura alternativa e la relativa quantità alternativa dell’articolo selezionato;
+**Prezzo**: indica il prezzo di riga; se è selezionato un codice articolo, il valore può essere proposto con le logiche business standard;  
 
 Nell'expander del Prezzo sono presenti: 
-**Prezzo Unità di misura alternativa**: flag che indica se il prezzo è riferito alla Unità di misura alternativa;
-**Prezzo manuale**: in caso di modifica manuale del prezzo, si abilita in automatico questo flag; 
-**Listino**: listino di riferimento proposto secondo le logiche business standard; 
-**Tipo Scaglione**: nel caso di scontistiche, indica lo scaglione utilizzato;
-**Griglia sconti**: permette di configurare la griglia relativa agli sconti; 
-**Costo materiale/Costo totale**: campi calcolati in automatico in funzione dei dati inseriti all'interno della tab Materiali, se abilitata; Il campo Costo totale riporta invece la somma dei costi indicati nei campi Costo Materiale e Costo risorse. I valori proposti sono liberamente modificabili dall'utente. 
+**Prezzo Unità di misura alternativa**: flag che indica se il prezzo è riferito alla Unità di misura alternativa;  
+**Prezzo manuale**: in caso di modifica manuale del prezzo, si abilita in automatico questo flag;   
+**Listino**: listino di riferimento proposto secondo le logiche business standard;   
+**Tipo Scaglione**: nel caso di scontistiche, indica lo scaglione utilizzato;  
+**Griglia sconti**: permette di configurare la griglia relativa agli sconti;   
+**Costo materiale/Costo totale**: campi calcolati in automatico in funzione dei dati inseriti all'interno della tab Materiali, se abilitata; Il campo Costo totale riporta invece la somma dei costi indicati nei campi Costo Materiale e Costo risorse. I valori proposti sono liberamente modificabili dall'utente.  
 **Costo risorse**: campo calcolato in automatico in funzione dei dati inseriti all'interno della tab Risorse se abilitata; il valore proposto è modificabile liberamente;             
 **IVA**: indica l’IVA da applicare;             
 **Tipo fatturato vendite**: indica il fatturato vendite dell’articolo;            
-**Livello non visibile**: con questo flag il livello non viene più mostrato nella struttura gerarchica. Per visualizzare tutti i livelli nascosti, utilizzare il pulsante nella Ribbon Bar "Mostra/Nascondi"; si utilizza generalmente per non rendere più visibile e quindi associabile ad altri documenti uno specifico ramo del progetto;
-**Categoria di attività**: indica l’eventuale categoria di attività che verrà proposta nei documenti dell'area progetti collegati alla riga di progetto. Le categorie attività sono impostabili da [Categoria](/docs/configurations/tables/project-management/task-category).
+**Livello non visibile**: con questo flag il livello non viene più mostrato nella struttura gerarchica. Per visualizzare tutti i livelli nascosti, utilizzare il pulsante nella Ribbon Bar "Mostra/Nascondi"; si utilizza generalmente per non rendere più visibile e quindi associabile ad altri documenti uno specifico ramo del progetto;  
+**Categoria di attività**: indica l’eventuale categoria di attività che verrà proposta nei documenti dell'area progetti collegati alla riga di progetto. Le categorie attività sono impostabili da [Categoria](/docs/configurations/tables/project-management/task-category).  
 
 
 ### Tab Pianificazione servizio
 
 **Tab Pianificazione servizio** contiene le seguenti informazioni: 
 
-**Data inizio/Data fine**: indicano le date pianificate per l’attività;
+**Data inizio/Data fine**: indicano le date pianificate per l’attività;  
 Se la riga in questione è una root oppure un nodo intermedio, la data non sarà modificabile, ma verrà valorizzata in funzione della data minima e della data massima delle righe sottolivello. 
 Lla data verrà utilizzata anche per la costruzione del Gannt di progetto. 
 >Le date verranno aggiornate in automatico a condizione di:
@@ -131,9 +124,9 @@ Lla data verrà utilizzata anche per la costruzione del Gannt di progetto.
 - Tutte le attività 
 - Attività contrattuali: verranno considerate fatturabili solo la Quantità di attività prevista nel tab Attività, mentre le attività necessarie eccedenti non verranno fatturate;               
 **Attività fatturabile**: flag che indica se l’attività è fatturabile; viene proposto dalla Categoria di attività se inserita nella tab Attività; può essere impostato manualmente. Il flag viene propagato poi nei documenti dell'area progetti che lo prevedono.     
-**Attività a valore aggiunto**: flag che indica se l’attività è a valore aggiunto. Il flag viene propagato poi nei documenti dell'area progetti che lo prevedono (come Interventi e dichiarazioni Attività) ed è utilizzato a scopo statistico.
-**Connetti WBS**: permette di collegare una riga di progetto ad un'altra dello stesso progetto, in modo da gestire l'inizio delle attività relative alla riga di progetto, con delle regole precise stabilite nel campo successivo; 
-**Tipi di connessione WBS**: fine-inizio / inizio-inizio / fine-fine / inizio-fine . A seconda della scelta, sarà possibile collegare documenti ad una riga di progetto, solo se la precedente rispetta la condizione stabilita: es. se la riga 1.1 e 1.2 sono collegate tra loro con fine-inizio, per poter collegare documenti alla riga 1.2 sarà necessario che la riga 1.1 abbia la Percentuale di Lavoro completato = 100% , altrimenti si verrà bloccati da un messaggio. 
+**Attività a valore aggiunto**: flag che indica se l’attività è a valore aggiunto. Il flag viene propagato poi nei documenti dell'area progetti che lo prevedono (come Interventi e dichiarazioni Attività) ed è utilizzato a scopo statistico.  
+**Connetti WBS**: permette di collegare una riga di progetto ad un'altra dello stesso progetto, in modo da gestire l'inizio delle attività relative alla riga di progetto, con delle regole precise stabilite nel campo successivo;   
+**Tipi di connessione WBS**: fine-inizio / inizio-inizio / fine-fine / inizio-fine . A seconda della scelta, sarà possibile collegare documenti ad una riga di progetto, solo se la precedente rispetta la condizione stabilita: es. se la riga 1.1 e 1.2 sono collegate tra loro con fine-inizio, per poter collegare documenti alla riga 1.2 sarà necessario che la riga 1.1 abbia la Percentuale di Lavoro completato = 100% , altrimenti si verrà bloccati da un messaggio.   
 
 ### Tab risorse
 Nella **tab Risorse** è possibile allocare le risorse per la riga articolo selezionata:
@@ -166,60 +159,60 @@ Se la risorsa prevede un costo differenziato per le giornate di straordinario/fe
 >>se il turno alternativo è marcato come “notturno”, viene chiesto di aggiornare con il costo notturno; nel caso non fosse notturno, viene considerato il costo di testata risorsa;
 :::
 
-La data viene proposta in funzione alla Data Inizio se inserita nella tab "Pianificazione Servizio"; se già presente una riga Risorse con quella data, viene proposta la data subito successiva. Gli orari invece sono proposti in base al Turno principale impostato in anagrafica risorsa.
+La data viene proposta in funzione alla Data Inizio se inserita nella tab "Pianificazione Servizio"; se già presente una riga Risorse con quella data, viene proposta la data subito successiva. Gli orari invece sono proposti in base al Turno principale impostato in anagrafica risorsa.  
 **Data inizio**: contiene la data nella quale verrà allocata la risorsa, con l’orario di inizio lavorativo;                 
 **Ora inizio pausa**: contiene l’eventuali data e ora di inizio della pausa;             
 **Ora fine pausa**: contiene l’eventuali data e ora di fine della pausa;                 
 **Data fine**: contiene la data nella quale verrà allocata la risorsa, con l’orario di termine lavorativo;                               
-**Tempo effettivo**: è un campo calcolato in base agli orari delle colonne precedenti;
+**Tempo effettivo**: è un campo calcolato in base agli orari delle colonne precedenti;  
 **Note**: è possibile inserire eventuali note;             
 **Tipo Richiesta intervento**: è possibile inserire un’eventuale [richiesta d’intervento] collegata, con le sue caratteristiche, come la Descrizione e il Numero.         
 
 Ogni riga di questa griglia entrerà nel conteggio dei "Giorni Previsti" della riga del progetto, visibili nella griglia delle righe progetto. 
 
 Il pulsante specifico della ribbon bar ![](/img/it-it/project-management/projects/resources-navigator.png)
- Navigatore risorse permette di andare a verificare la disponibilità delle varie risorse e prenotare le giornate. Si aprirà una finestra; le eventuali date che si prenotano vengono riportate nella tab Risorse e vanno a incidere sui costi del progetto. 
+ Navigatore risorse permette di andare a verificare la disponibilità delle varie risorse e prenotare le giornate. Si aprirà una finestra; le eventuali date che si prenotano vengono riportate nella tab Risorse e vanno a incidere sui costi del progetto.  
 
-Con il pulsante ![](/img/neutral/common/new-visit-report.png) Creazione Richiesta di intervento è possibile, selezionando una Risorsa, creare direttamente la Richiesta di intervento collegata al progetto o effettuarne il rollback con il pulsante   Rollback Richiesta di intervento.
+Con il pulsante ![](/img/neutral/common/new-visit-report.png) Creazione Richiesta di intervento è possibile, selezionando una Risorsa, creare direttamente la Richiesta di intervento collegata al progetto o effettuarne il rollback con il pulsante   Rollback Richiesta di intervento.  
 
-Nel **tab Materiali** vengono indicati i materiali necessari per l’avanzamento del progetto, con le relative caratteristiche degli articoli codificati. Il costo di questi materiali inciderà nella riga articolo Costo materiali. Il costo è proposto in base all'impostazione prevista nel campo "Tipo costo", il cui valore predefinito è impostabile nei parametri per progetto. Nel caso di "costo ultimo" o "costo medio" la data di riferimento è la data progetto. 
-Da questa schermata è possibile creare per i Materiali direttamente una Richiesta di acquisto, tramite il pulsante nella ribbon bar **Creazione RDA**.
+Nel **tab Materiali** vengono indicati i materiali necessari per l’avanzamento del progetto, con le relative caratteristiche degli articoli codificati. Il costo di questi materiali inciderà nella riga articolo Costo materiali. Il costo è proposto in base all'impostazione prevista nel campo "Tipo costo", il cui valore predefinito è impostabile nei parametri per progetto. Nel caso di "costo ultimo" o "costo medio" la data di riferimento è la data progetto.   
+Da questa schermata è possibile creare per i Materiali direttamente una Richiesta di acquisto, tramite il pulsante nella ribbon bar **Creazione RDA**.  
 
- Se il progetto è generato da un template, tutti i dati presenti verranno ereditati dal template. 
+ Se il progetto è generato da un template, tutti i dati presenti verranno ereditati dal template.   
 
 ### Tab dati
 Nel **Tab Dati** sono presenti: 
-**Origine Calcolo Costo o Ricavo**: nella griglia verranno proposti dal Tipo Progetto i codici di Costo o Ricavo da utilizzare per il calcolo Stato Avanzamento Lavori; è possibile impostare i valori manualmente. 
-**Data Prevista consegna**: data di prevista consegna, attualmente valorizzata se la riga è stata generata da offerta/ordini cliente.
-**Nomenclatura**: relativo alla nomenclatura dei codici intrastat, attualmente valorizzata se la riga è stata generata da offerta/ordini cliente.
-**Note**: campo note generico;
-**Marca**: è possibile associare una Marca se la gestione è prevista nella tabella [Marche](/docs/configurations/tables/logistics/brands).
-**Commessa/Anno**: è possibile collegare la riga progetto ad un'altra riga progetto.
-**Contatto CRM**: è possibile collegare la riga progetto ad un [Contatto CRM](/docs/crm/home-crm/contacts/new-contact.md).
-**Tickets**: è possibile collegare la riga progetto ad un Ticket.
-**Livello di servizio**: è possibile indicare un livello di servizio*
-**Escludi WBS dal calcolo SAL**: se abilitato, la riga di progetto e TUTTI i documenti collegati a questa riga di progetto , verranno esclusi dalla procedura di calcolo Stato Avanzamento Lavori del progetto, indipendentemente dai codici di Costo o Ricavo configurati. 
-**Centro Aziendale**: è possibile collegare la riga progetto ad un centro aziendale, che verrà propagato dove previsto nei documenti a cui la riga di progetto è collegata. 
+**Origine Calcolo Costo o Ricavo**: nella griglia verranno proposti dal Tipo Progetto i codici di Costo o Ricavo da utilizzare per il calcolo Stato Avanzamento Lavori; è possibile impostare i valori manualmente.   
+**Data Prevista consegna**: data di prevista consegna, attualmente valorizzata se la riga è stata generata da offerta/ordini cliente.  
+**Nomenclatura**: relativo alla nomenclatura dei codici intrastat, attualmente valorizzata se la riga è stata generata da offerta/ordini cliente.  
+**Note**: campo note generico;  
+**Marca**: è possibile associare una Marca se la gestione è prevista nella tabella [Marche](/docs/configurations/tables/logistics/brands).  
+**Commessa/Anno**: è possibile collegare la riga progetto ad un'altra riga progetto.  
+**Contatto CRM**: è possibile collegare la riga progetto ad un [Contatto CRM](/docs/crm/home-crm/contacts/new-contact.md).  
+**Tickets**: è possibile collegare la riga progetto ad un Ticket.  
+**Livello di servizio**: è possibile indicare un livello di servizio*  
+**Escludi WBS dal calcolo SAL**: se abilitato, la riga di progetto e TUTTI i documenti collegati a questa riga di progetto , verranno esclusi dalla procedura di calcolo Stato Avanzamento Lavori del progetto, indipendentemente dai codici di Costo o Ricavo configurati.   
+**Centro Aziendale**: è possibile collegare la riga progetto ad un centro aziendale, che verrà propagato dove previsto nei documenti a cui la riga di progetto è collegata.   
 
 ### Tab agenti
-Nel **Tab Agenti** è possibile indicare l'Agente Principale e gli Agenti collegati alla riga di progetto;
+Nel **Tab Agenti** è possibile indicare l'Agente Principale e gli Agenti collegati alla riga di progetto;  
 
 ### Tab fatturazione
-Nel **Tab Fatturazione** è possibile inserire le rate da fatturare relative al progetto, tramite la procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md). 
+Nel **Tab Fatturazione** è possibile inserire le rate da fatturare relative al progetto, tramite la procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md).   
 Se compilata la Data "Chiuso Forzatamente" nella tab Pianificazione Servizio, le rate non verranno visualizzate nella procedura di creazione fatture. 
-**Priorità**: viene assegnata la sequenza delle rate;
-**Giorno**: indica il giorno a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);
-**Mese**: indica il mese a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);
-**Anno**: indica l'anno a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);
-**Percentuale**: è la percentuale utilizzata per il calcolo del prezzo da inserire in fattura. Se ad es. il prezzo della riga di progetto è 100, e percentuale è impostata a 30, in fattura troveremo il prezzo impostato a 30.
-**Valore**: in alternativa alla percentuale, è possibile indicare un valore del prezzo da inserire i fattura. Se ad es. il prezzo della riga di progetto è 100, si possono inserire 2 righe con ciascuna il valore 50. In fattura troveremo il prezzo impostato a 50.
-Si può compilare un solo campo tra Percentuale e Valore, mai insieme. Inoltre non viene effettuato nessun controllo sull'effettiva quadratura tra importo impostato in riga progetto e singole rate. 
-Il valore e la percentuale riguardano solo il campo prezzo, non il campo quantità. 
-Per cui la quantità verrà sempre manutenuta uguale a quella impostata nella riga di progetto
+**Priorità**: viene assegnata la sequenza delle rate;  
+**Giorno**: indica il giorno a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);  
+**Mese**: indica il mese a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);  
+**Anno**: indica l'anno a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);  
+**Percentuale**: è la percentuale utilizzata per il calcolo del prezzo da inserire in fattura. Se ad es. il prezzo della riga di progetto è 100, e percentuale è impostata a 30, in fattura troveremo il prezzo impostato a 30.  
+**Valore**: in alternativa alla percentuale, è possibile indicare un valore del prezzo da inserire i fattura. Se ad es. il prezzo della riga di progetto è 100, si possono inserire 2 righe con ciascuna il valore 50. In fattura troveremo il prezzo impostato a 50.  
+Si può compilare un solo campo tra Percentuale e Valore, mai insieme. Inoltre non viene effettuato nessun controllo sull'effettiva quadratura tra importo impostato in riga progetto e singole rate.   
+Il valore e la percentuale riguardano solo il campo prezzo, non il campo quantità.   
+Per cui la quantità verrà sempre manutenuta uguale a quella impostata nella riga di progetto  
 
 ### Tab extradata
-Nel **Tab Extradata** è possibile inserire gli extradata per la riga di progetto. 
+Nel **Tab Extradata** è possibile inserire gli extradata per la riga di progetto.   
 
 ### Tab documenti allegati
-Nel **Tab Documenti Allegati** è possibile inserire allegati per la riga di progetto. 
+Nel **Tab Documenti Allegati** è possibile inserire allegati per la riga di progetto.   
 
