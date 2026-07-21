@@ -1,30 +1,25 @@
 ---
-title: Proizvodni nalozi
+title: Radni nalozi proizvodnje
 sidebar_position: 2
 ---
 
-Obrazac za Pretragu dokumenata omogućuje pretraživanje svih dokumenata radi njihovog pregleda, uređivanja, brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja za filtriranje i rezultatne mreže. 
+import SearchForm from './../../../import/sections/search-form.md'
 
-Nakon što ste postavili sve željene filtre, jednostavno kliknite na gumb **Traži** u traci izbornika kako biste prikazali rezultate unutar rezultatne mreže.
+<SearchForm />
 
-Za otvaranje detalja dokumenta, dovoljno je odabrati dokument i dvaput kliknuti mišem, ili kliknuti na gumb **Izmjeni** (omogućuje ulazak u detalje i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u detalje i prikaz, ali bez mogućnosti uređivanja).
+U zavisnosti od statusa naloga (npr. planiran, izvršni i sl.), red naloga biće prikazan različitom bojom. Boje koje se mogu povezati sa statusom naloga definišu se u [MS parametrima](/docs/configurations/parameters/production/mps-parameters), u sekciji *Boje naloga*.
 
-*Vidi također*:  
-*Značajke, gumbe i zajednička polja*  
-*Dodavanje novih polja u forme za pretraživanje*  
+Iz ovog obrasca moguće je *kreirati nove naloge*, kako **monoproizvodne**, tako i **multiproizvodne**, klikom na odgovarajuću dugmad na *Ribbon traci*: [Unesi podnalog](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) i [Unesi radni nalog za više proizvoda](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
 
-Na temelju statusa narudžbe (npr. planirana, izvršna itd.), redak narudžbe će imati različitu boju. Boje koje se mogu pridružiti statusu narudžbe određuju se unutar [Parametara MPS](/docs/configurations/parameters/production/mps-parameters), u sekciji *Boje narudžbi*.  
+Dvostrukim klikom na jedan od naloga prikazanih u tabeli rezultata otvara se detaljni prikaz naloga, čiji su podaci detaljno opisani u člancima *Unos novog monoproizvodnog naloga* i *Unos novog multiproizvodnog naloga*.
 
-Također, iz ovog obrasca moguće je *kreirati nove narudžbe*, kako  **monoproizvode** tako i **multiproizvode** klikom na odgovarajuće gumbe u *traci izbornika*: [Umetni narudžbu ](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) i [Umetni višeproizvodnu narudžbu](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
+Kolona *Obračunata*, ako je oznaka aktivna, pokazuje da nalog već sadrži najmanje jedan obračun troškova.
 
-Dvostruki klik na jednu od narudžbi u rezultatnoj mreži omogućit će ulazak u detalje te narudžbe, čiji će se podaci detaljnije istražiti u člancima  *Unos nove jednoproizvodne narudžbe* i *Unos nove višeproizvodne narudžbe*.
+*Posebna dugmad*:
 
-Kolona *Pridruženi troškovi*, ako je oznaka aktivna, označava da narudžba već sadrži barem jedno pridruživanje troškova.
-
-*Posebni gumbi*:
-
-> **Dupliciraj narudžbu**: omogućuje dupliciranje odabrane narudžbe;         
-> **Promjena prioriteta**: omogućuje promjenu dodijeljenog prioriteta narudžbi;               
-> **Redoslijed sekvence**: ova funkcionalnost omogućuje pristup sekvenci narudžbi, gdje se mogu pregledati narudžbe prema dodijeljenoj sekvenci, uključujući grafikon;                   
-> **Kapacitet radnog centra**: ovaj gumb omogućuje pristup prozoru za kapacitete radnih centara; ovdje se može filtrirati po radnom centru i željenom vremenskom razdoblju kako bi se prikazala zauzetost tog centra putem grafikona i popisa planiranih proizvodnih narudžbi;                
-> **Detalji proizvodnog naloga**: omogućuje pregled detalja proizvodnog naloga.
+> **Izmeni datum naloga**: omogućava promenu *datuma spremne robe* i *planiranog datuma završetka* za odabrane naloge jednostavnim unosom datuma u iskačućem prozoru i potvrdom;  
+> **Dupliraj nalog**: omogućava dupliranje odabranog naloga;         
+> **Promena prioriteta**: omogućava promenu prioriteta dodeljenog nalogu;               
+> **Aktiviraj obavezno**: aktivira oznaku **obavezno** na svim odabranim nalozima;      
+> **Deaktiviraj obavezno**: deaktivira oznaku **obavezno** na svim odabranim nalozima;      
+> **Kapacitet radnog centra**: otvara prozor za pregled kapaciteta radnih centara; u tom prozoru moguće je, filtriranjem po radnom centru i željenom vremenskom periodu, grafički prikazati opterećenje odabranog centra i pregledati listu proizvodnih naloga planiranih za proizvodnju.
