@@ -1,40 +1,40 @@
 ---
-title: Kontrola izvršenja radnog naloga
+title: Kontrol izvršenja radnog naloga
 sidebar_position: 6
 ---
 
-Ovaj obrazac omogućuje pokretanje izvješća koje omogućuje prikaz pregleda svih dokumenata povezanih s istim nalogom. 
+Ovaj obrazac omogućuje pokretanje izvještaja koji prikazuje pregled svih dokumenata povezanih s istim nalogom.
 
-Za svaki dokument također je naznačeno stanje napretka istog, putem obojanog kvadratića sa sljedećim značenjem:
+Za svaki dokument prikazan je i njegov status napretka pomoću obojenog kvadratića sa sljedećim značenjem:
 
-- **Crno** ako je nalog u stanju  *Izvršen*;  
-- **Žuto** ako je nalog u stanju  *Izvršava se*;  
-- **Zeleno** ako je nalog u stanju *Pokrenut*;
-- **Svijetlo zeleno** ako je nalog u stanju *Vremenski raspoređeno*;
-- **Bijelo** u svim ostalim slučajevima. 
+- **Crna** ako je nalog u statusu *Izvršen*;
+- **Žuta** ako je nalog u statusu *Izvršni*;
+- **Zelena** ako je nalog u statusu *Pokrenut*;
+- **Svijetlozelena** ako je nalog u statusu *Vremenski raspoređeno*;
+- **Bijela** u svim ostalim slučajevima.
 
-**Filteri**
+## Filtri
 
-U ovom dijelu je moguće filtrirati prema: vrsti proizvodnog naloga, prioritetu nabave, datumu početka i/ili završetka naloga, itd.
+U ovom odjeljku moguće je filtrirati prema: vrsti proizvodnog naloga, prioritetu nabave, datumu početka i/ili završetka naloga itd.
 
-**Tip izvještaja**
+## Vrsta ispisa
 
-U ovom dijelu je moguće filtrirati prema tome je li nalog u kašnjenju ili istekao, te je moguće odabrati razinu detalja u izvještaju (Analitički ili Sintetski).
+U ovom odjeljku moguće je filtrirati ovisno o tome je li nalog u kašnjenju ili mu je istekao rok, te odabrati razinu detalja izvještaja (*Analitički* ili *Sintetički*).
 
-**Detalji**
+## Detalji
 
-U ovom dijelu je moguće odlučiti hoće li se prikazivati detalji vezani uz područje nabave, proizvodnje i radnih naloga, kao i hoće li se prikazivati prodajni nalozi i planirani nalozi.   
+U ovom odjeljku moguće je odabrati hoće li se prikazivati detalji vezani uz područja nabave, proizvodnje i kooperacije, kao i hoće li se prikazivati prodajni nalozi i planirani nalozi.
 
-**Tip nabave**
+## Vrsta nabave
 
-U ovom dijelu je moguće filtrirati prema vrsti nabave artikla koji je predmet naloga, a koji se nalazi u parametrima MRP-a (Nabava, Proizvodnja, Radni nalozi).
+U ovom odjeljku moguće je filtrirati prema vrsti nabave artikla koji je predmet naloga, definiranoj u MRP parametrima (*Nabava*, *Proizvodnja*, *Kooperacija*).
 
-**Status podnaloga**
+## Status naloga
 
-U ovom dijelu je moguće filtrirati prema statusu proizvodnog naloga (nepregledan, zakazan, pokrenut, u izvršenju, izvršen, zatvoren, poništen);
+U ovom odjeljku moguće je filtrirati prema statusu proizvodnog naloga (*Nije pregledan*, *Vremenski raspoređeno*, *Pokrenut*, *Izvršni*, *Izvršen*, *Zatvoren*, *Otkazan*).
 
-**Redoslijed**
+## Redoslijed
 
-U ovom dijelu moguće je postaviti redoslijed grupiranja informacija za prikaz u ispisu, birajući između redoslijeda prema nalogu, projektu, kontu, artiklu, datumu početka naloga. 
+U ovom odjeljku moguće je definirati redoslijed grupiranja podataka koji će se prikazati u izvještaju, birajući između grupiranja prema nalogu, projektu, kontu, artiklu ili datumu početka naloga.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeću poveznic [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom radu obrazaca pogledajte stranicu [Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).
