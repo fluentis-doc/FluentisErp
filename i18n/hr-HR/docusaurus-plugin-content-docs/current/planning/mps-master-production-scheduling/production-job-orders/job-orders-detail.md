@@ -1,35 +1,29 @@
 ---
-title: Proizvodni nalozi (detalj)  
+title: Radni nalozi proizvodnje (detalji)
 sidebar_position: 3
 ---
 
-Obrazac za Pretragu dokumenata omogućuje pretraživanje svih dokumenata radi njihovog pregleda, uređivanja, brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja za filtriranje i rezultatne mreže. 
+import SearchForm from './../../../import/sections/search-form.md'
 
-Nakon što ste postavili sve željene filtre, jednostavno kliknite na gumb **Traži** u traci izbornika kako biste prikazali rezultate unutar rezultatne mreže.
+<SearchForm />
 
-Za otvaranje detalja dokumenta, dovoljno je odabrati dokument i dvaput kliknuti mišem, ili kliknuti na gumb **Izmjeni** (omogućuje ulazak u detalje i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u detalje i prikaz, ali bez mogućnosti uređivanja).
+Ovisno o statusu naloga (npr. planiran, izvršni i sl.), redak naloga bit će prikazan različitom bojom. Boje koje se mogu povezati sa statusom naloga definiraju se u [MS parametrima](/docs/configurations/parameters/production/mps-parameters), u odjeljku *Boje projekata*.
 
-*Vidi također*:  
-*Značajke, gumbe i zajednička polja*  
-*Dodavanje novih polja u forme za pretraživanje*  
+Iz ovog obrasca moguće je *kreirati nove naloge*, kako **monoproizvodne**, tako i **multiproizvodne**, klikom na odgovarajuće gumbe na *Ribbon traci*: [Umetni podnalog](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) i [Unesi radni nalog za više proizvoda](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
 
+Dvostrukim klikom na jedan od projekata prikazanih u tablici rezultata otvara se detaljni prikaz naloga, čiji su podaci detaljno opisani u člancima **Unos novog monoproizvodnog naloga** i **Unos novog multiproizvodnog naloga**.
 
-Ovisno o statusu narudžbe (npr. planirana, izvršna itd.), redak narudžbe će imati različitu boju. Boje koje se mogu pridružiti statusu narudžbe određuju se unutar [Parametara MPS](/docs/configurations/parameters/production/mps-parameters), u sekciji *Boje narudžbi*.  
+Stupac *Obračunata* označava, ako je oznaka aktivna, da nalog već sadrži barem jedan obračun troškova.
 
-Na istom obrascu moguće je stvoriti *Nove narudžbe*, kako **monoproizvode** tako i **multiproizvode** klikom na odgovarajuće gumbe u *traci izbornika*: [Umetni narudžbu](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order) e [Umetni višeproizvodnu narudžbu](/docs/planning/mps-master-production-scheduling/production-job-orders/new-multiproduct-job-order).
-
-Dvostrukim klikom na jednu od narudžbi u rezultatnoj mreži otvorit će se detalji narudžbe, čiji će se podaci detaljno istražiti u člancima Unos nove jednoproizvode narudžbe i Unos nove višeproizvode narudžbe.
-
-Kolona *Pridruženi troškovi*, ako je oznaka aktivna, označava da narudžba već sadrži barem jedno pridruživanje troškova.
-
-:::note **VAŽNO**
-Razlika između obrasca **Proizvodni nalozi** i obrasca  **Proizvodni nalozi (detalji)**, e u tome što u potonjem obrascu možete vidjeti u mreži i članke koji su prisutni unutar narudžbe, dok u prvom obrascu bez detalja vidite samo podatke o zaglavlju proizvodnih narudžbi.      
+:::note **Napomena**
+Razlika između obrazaca **Radni nalozi proizvodnje** i **Radni nalozi proizvodnje (detalji)** je u tome što je u ovom drugom moguće u tablici prikazati i artikle koji se nalaze unutar naloga, dok se u obrascu bez detalja prikazuju samo podaci zaglavlja proizvodnih projekata.
 :::
 
 *Posebni gumbi*:
 
-> **Dupliciraj narudžbu**: omogućuje dupliciranje odabrane narudžbe;  
-> **Promijena prioriteta**: omogućuje promjenu prioriteta dodijeljenog narudžbi;   
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): klikom na ovaj gumb otvara se zaslon s parametrima MRP (materijalni zahtjevi za proizvodnjom) za artikl;     
-> [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona s osnovnom strukturom proizvoda za artikl;    
-> [Proizvodni ciklus](/docs/erp-home/registers/production/routes/new-route): omogućuje pregled radnog ciklusa i pripadajućih faza proizvodnje za artikl.  
+> **Izmijeni datum naloga**: omogućuje promjenu *datuma spremne robe* i *predviđenog datuma završetka* za odabrane naloge jednostavnim unosom novog datuma u skočnom prozoru i potvrdom;          
+> **Dupliciraj nalog**: omogućuje dupliciranje odabranog naloga;  
+> **Promijena prioriteta**: omogućuje promjenu prioriteta dodijeljenog nalogu;  
+> [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): putem ovog gumba moguće je otvoriti zaslon s MRP parametrima artikla;    
+> [Sastavnica](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona sastavnice artikla;  
+> [Tehnološki postupci](/docs/erp-home/registers/production/routes/new-route): omogućuje pregled tehnološkog postupka i pripadajućih proizvodnih faza artikla.

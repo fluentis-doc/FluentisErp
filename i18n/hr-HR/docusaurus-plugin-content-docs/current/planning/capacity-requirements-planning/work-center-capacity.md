@@ -3,43 +3,57 @@ title: Kapacitet radnog centra
 sidebar_position: 2
 ---
 
-Operater može dobiti trenutni prikaz opterećenja svakog aktivnog radnog centra unutar pojedinih odjela za određeno vremensko razdoblje, što mu omogućuje da odmah uoči eventualne vrhunce preopterećenja ili neefikasnosti u proizvodnji. Pomoću jednostavne funkcije *povlačenja i ispuštanja (drag & drop)*, operater može unaprijediti, odgoditi ili promijeniti radni centar za određeni radni zadatak, a dvostrukim klikom unutar pojedine trake kapaciteta može saznati detaljne informacije o tome koji radni nalozi opterećuju centar na odabrani datum.
+:::important Čemu služi
+Funkcionalnost **Kapacitet radnog centra** u Fluentisu pruža jasan i trenutačan pregled opterećenja proizvodnih centara, ističući vršna opterećenja i moguće neučinkovitosti. Putem obrasca organiziranog u četiri cjeline, korisnici mogu filtrirati i pregledavati naloge prema odjelu, datumu ili statusu (*planiran*, *lansiran*, *izvršni*) te jednostavno intervenirati korištenjem funkcije *drag & drop* za premještanje, odgađanje ili izmjenu proizvodnih operacija.     
+Grafički prikaz prikazuje maksimalni kapacitet i dnevno opterećenje radnih centara, omogućujući vizualno i interaktivno upravljanje proizvodnim fazama. Posebni gumbi omogućuju izmjenu faza, promjenu datuma i navigaciju kroz vremenske detalje opterećenja, čime se optimizira učinkovitost cjelokupnog proizvodnog procesa.
+:::
 
-Ovaj obrazac sastoji se od 4 dijela:   
+Korisnik može dobiti trenutačan pregled opterećenja svakog aktivnog radnog centra unutar pojedinih odjela za određeno vremensko razdoblje, što omogućuje brzo prepoznavanje vršnih opterećenja ili proizvodnih neučinkovitosti. 
 
-- prvi dio omogućuje filtriranje prema *Odjelu* i/ili prema *Radnom centru* te prikaz rezultata u donjoj mreži;  
+Jednostavnom funkcijom *drag & drop* korisnik može pomaknuti proizvodnu operaciju unaprijed ili unatrag ili joj promijeniti radni centar, dok se dvostrukim klikom na pojedinu traku kapaciteta mogu detaljno pregledati informacije o radnim nalozima koji opterećuju centar na odabrani datum.
 
-- u drugom dijelu moguće je filtrirati narudžbe prema *Datumu početka* i *Datumu završetka* te odlučiti hoće li se prikazati narudžbe: 
+Ako se faza premjesti na dan u kojem je radni centar već u potpunosti zauzet, prikazuje se poruka o pogrešci. U suprotnom, radni dan centra se popunjava bez prekomjerne alokacije, a preostalo vrijeme (premještene faze) raspoređuje se na sljedeće radne dane do maksimalnog kapaciteta tog radnog centra, neovisno o već postojećem opterećenju.
+
+Ovaj obrazac sastoji se od četiri cjeline:
+
+- prva omogućuje filtriranje prema *Odjelu* i/ili *Radnom centru* te prikaz rezultata u tablici ispod;
+
+- u drugoj je moguće filtrirati naloge prema *Datumu početka* i *Datumu završetka* te odabrati prikaz sljedećih vrsta naloga:
 
 > *Planirani*: prikazuje planirane proizvodne naloge;              
-> *Pokrenuto*: prikazuje proizvodne naloge u statusu pokrenuto;                
-> *Izvršni*: prikazuje proizvodne naloge u statusu izvršno.            
+> *Pokrenuti*: prikazuje proizvodne naloge u statusu lansiran;                
+> *Izvršni*: prikazuje proizvodne naloge u statusu izvršni.          
 
-Također, moguće je pregledati sve podatke koji se odnose na odabrane radne centre u prvoj sekciji. 
+Također je moguće pregledati sve podatke povezane s radnim centrima odabranima u prvoj cjelini.
 
-- u trećoj sekciji možete vidjeti redak za svaku fazu filtriranih planiranih i/ili proizvodnih naloga koji odgovaraju odabranim radnim centrima u prvoj sekciji s svim relevantnim detaljima.  
+- u trećoj cjelini prikazuje se jedan redak za svaku fazu planiranih i/ili proizvodnih naloga koji odgovaraju radnim centrima odabranima u prvoj cjelini, zajedno sa svim povezanim detaljima.
 
-- u četvrtoj sekciji nazvanoj  **Detalji Odabrane faze** moguće je grafički prikazati opterećenje rada za odabrane radne centre u prvoj sekciji.  
+- u četvrtoj cjelini, pod nazivom **Detaljni odabrane faze**, grafički se prikazuju opterećenja radnih centara odabranih u prvoj cjelini.
 
-**Detalji odabrane faze**
+## Detaljni podaci odabrane faze
 
-U grafičkom dijelu, narančasta linija predstavlja maksimalni dnevni proizvodni kapacitet radnog centra, dok plava linija prikazuje opterećenje radnog centra tijekom određenog dana. Crvena boja označava preopterećenje istog centra. Odabirom faze u trećoj sekciji, ona se prikazuje žutom bojom unutar grafičkog prikaza.
+U grafičkom prikazu narančasta linija predstavlja maksimalni dnevni proizvodni kapacitet radnog centra, dok plava boja prikazuje opterećenje centra na određeni dan. Crvenom bojom označeno je preopterećenje radnog centra.
 
-Također, pomoću funkcije povuci i ispusti (drag & drop) moguće je odabrati fazu iz mreže i povući je u grafički prikaz, gdje ju je moguće ispustiti kako bi se promijenili datum početka i, kao posljedica toga, datum završetka. Odabirom više alternativnih radnih centara omogućeno je premještanje faza s jednog centra na drugi radi optimizacije proizvodnje.  
+Odabirom faze u trećoj cjelini, ona se prikazuje žutom bojom unutar grafičkog prikaza.
 
-Klikom na redak u mreži faza dva puta, korisnik direktno ulazi u dokument (planirani nalog ili proizvodni nalog) koji sadrži fazu prikazanu u tom redu, s mogućnošću, pod uvjetom da korisnik ima odgovarajuća prava, da izmijeni dokument i nakon ažuriranja prikaza vidi ažuriranu situaciju i u grafičkom prikazu.  
-Nasuprot tome, dvostrukim klikom na element grafikona otvara se skočni prozor koji sadrži popis radnih faza koje doprinose određivanju opterećenja.  
+Također, korištenjem funkcije *drag & drop* moguće je odabrati fazu iz tablice, povući je u grafički prikaz i ispustiti na željeni datum kako bi se promijenio njezin datum početka, a samim time i datum završetka. Odabirom više alternativnih radnih centara moguće je premještati faze s jednog centra na drugi radi optimizacije proizvodnje.
 
-*Posebni gumbi*:  
+Dvostrukim klikom na redak u tablici faza korisnik izravno otvara dokument (planirani nalog ili proizvodni nalog) koji sadrži fazu prikazanu u odabranom retku, uz mogućnost izmjene dokumenta ako za to ima odgovarajuća prava. Nakon osvježavanja prikaza, promjene će biti vidljive i u grafičkom prikazu.
 
-> **Promijeni faze**: nakon što odaberete fazu, ova naredba vam omogućuje *Ažuriranje* same faze mijenjajući: fazu, stroj, radni centar, ukupno vrijeme stroja, radnika i vremena postavljanja. Također, odabirom opcije *Dodaj* moguće je dodati novu fazu ili putem opcije *Obriši* trajno je ukloniti.              
-> **Promijenite datume**: omogućuje promjenu početnog datuma odabrane faze;         
-> **Povećaj**: smanjuje vremenski detalj na grafikonu;            
-> **Zoom do prozora**: prikazuje vremenski detalj na grafikonu na temelju *Početnog i Završnog* datuma navedenih u filtarskim postavkama;                      
-> **Umanji**: povećava vremenski detalj na grafikonu;                
-> **Zoom tjedan**: prikazuje tjedni vremenski okvir na grafikonu počevši od *Početnog datuma*;              
-> **Zoom 2 tjedna**: prikazuje dvotjedni vremenski okvir na grafikonu počevši od *Početnog datuma*;     
-> **Zoom mjesec**: prikazuje mjesečni vremenski okvir na grafikonu počevši od *Početnog datuma*;     
-> **Zoom datum**: prikazuje vremenski okvir određen unosom *Početnog* i *Završnog datuma*.  
+Dvostrukim klikom na element grafikona otvara se skočni prozor koji sadrži popis radnih faza koje doprinose prikazanom opterećenju.
 
-Za detalje o uobičajenom radu obrazaca obratite se na link  [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+*Posebni gumbi*:
+
+> **Promijeni faze**: nakon odabira faze omogućuje njezino *Ažuriranje* promjenom faze, stroja, radnog centra, ukupnog vremena stroja, vremena rada i vremena pripreme. Osim toga, odabirom opcije *Unesi* moguće je dodati novu fazu, a opcijom *Obriši* trajno ukloniti postojeću;            
+> **Promjenite datume**: omogućuje promjenu datuma početka odabrane faze;        
+> **Aktiviraj obavezno**: aktivira oznaku **Obavezno** unutar svih odabranih naloga;       
+> **Deaktiviraj obavezno**: deaktivira oznaku **Obavezno** unutar svih odabranih naloga;         
+> **Povećaj zum**: omogućuje detaljniji vremenski prikaz na grafikonu;          
+> **Povećaj do prozora**: prikazuje vremenski raspon na grafikonu prema vrijednostima *Datuma početka/završetka* unesenima u filtrima;                    
+> **Umanji**: omogućuje manje detaljan vremenski prikaz na grafikonu;              
+> **Povećaj-tjedan**: prikazuje vremenski raspon od jednog tjedna na grafikonu, počevši od *Datuma početka*;              
+> **Povećaj-2 tjedna**: prikazuje vremenski raspon od dva tjedna na grafikonu, počevši od *Datuma početka*;     
+> **Povećaj-mjesec**: prikazuje vremenski raspon od jednog mjeseca na grafikonu, počevši od *Datuma početka*;     
+> **Povećaj-po datumu**: prikazuje vremenski raspon definiran poljima *Datum početka* i *Datum završetka*.
+
+Za detalje o zajedničkom funkcioniranju obrazaca pogledajte poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

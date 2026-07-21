@@ -1,59 +1,65 @@
 ---
-title: Sekvenca faze - višeslojna mreža  
+title: Sekvenca faza - višeslojna mreža
 sidebar_position: 2
 ---
 
 :::important Čemu služi
-Postupak **Sekvenca faza (Sequenza fasi)** u Fluentis-u, putem funkcionalnosti "Sekvenca fazi - TopDown grid", omogućuje optimizaciju upravljanja fazama proizvodnje sastavljanjem ručnih sekvenci ili sekvenci temeljenih na prilagođenim pravilima.      
-Nakon pažljivog odabira filtara, uključujući radni centar, razdoblje narudžbe i posao, faze koje još nisu naručene prikazane su u gornjoj mreži. Odatle se faze premještaju u donju mrežu radi dodjeljivanja sekvence.      
-Obrazac uključuje alate za promjenu podataka povezanih s fazama, izračunavanje vremena i ažuriranje datuma, osiguravajući preciznu kontrolu nad planiranjem proizvodnje. Specifične tipke olakšavaju izračun sekvenci, upravljanje zalihama i ažuriranje statusa narudžbi, osiguravajući efikasan proizvodni tok.
+Postupak **Sekvenca faza** u Fluentisu, putem funkcionalnosti **"Sekvenca faza - višeslojna mreža"**, omogućuje optimizaciju upravljanja proizvodnim fazama sastavljanjem sekvenci ručno ili na temelju prilagođenih pravila.      
+Nakon pažljivog odabira filtara, među kojima su radni centar, razdoblje naloga i proizvodni projekt, faze koje još nisu sekvencirane prikazuju se u gornjoj mreži. Odatle se faze premještaju u donju mrežu kako bi im se dodijelio redoslijed izvođenja.      
+Obrazac uključuje alate za izmjenu podataka povezanih s fazama, izračun vremena i ažuriranje datuma, čime se osigurava precizna kontrola planiranja proizvodnje. Posebni gumbi olakšavaju izračun sekvenci, upravljanje zalihama i ažuriranje statusa naloga, osiguravajući učinkovit tijek proizvodnje.
 :::
 
-Daje mogućnost sekvenciranja faza ručno ili prema pravilima koje odluči operater.  
+Omogućuje sekvenciranje faza ručno ili prema pravilima koja definira operater.
 
-Obrazac se sastoji od prvog područja filtera gdje je moguće odabrati:  
+Obrazac se sastoji od početnog područja za filtriranje u kojem je moguće odabrati:
+
 > **Radni centar**       
 > **Stroj**        
-> **Od datuma početka narudžbe**           
-> **Do datum završetka narudžbe**       
-> **Nalog proizvodnje**     
+> **Na datum početka narudžbe**         
+> **Na datum završetka narudžbe**      
+> **Proizvodni projekt**     
 
-Ekspanzija ovog područja omogućuje filtriranje, na primjer, i za *Artiklu*, *Sekvenci*, *Vrsti proizvodnog naloga*, *Grupama radne snage*, a također postoji i mogućnost izbora vrsta naloga koje želite prikazati između planiranih naloga, proizvodnih naloga u lansiranom i/ili izvršnom stanju.  
+Proširenjem ovog područja moguće je filtrirati i prema, primjerice, *Artiklu*, *Sekvenci/Redoslijedu*, *Tipu proizvodnog projekta*, *Grupama radne snage*, a također je moguće odabrati koje vrste naloga prikazati: planirane naloge, proizvodne naloge u statusu lansiran ili izvršni.
 
-Središnji dio formulara sastoji se od dvije rešetke.  
-             
-Prva prikazuje sve faze proizvodnje kojima još nije dodijeljena sekvenca. Dakle, odabirom jedne ili više faza iz prve rešetke i pritiskom na gumb  *Premjestiti Faze*, one se premještaju u drugu rešetku (ispod) gdje je zatim moguće dodijeliti sekvencu ručno ili automatski.           
+Središnji dio obrasca sastoji se od dvije mreže.           
+Prva prikazuje sve radne faze kojima još nije dodijeljena sekvenca. Odabirom jedne ili više faza iz prve mreže i pritiskom na gumb *Premjesti faze*, odabrane faze premještaju se u drugu mrežu (ispod), gdje im je moguće dodijeliti sekvencu ručno ili automatski.
 
-:::note NAPOMENA 
-Nije moguće mijenjati informacije o fazi koja je već proglašena u proizvodnji.   
+:::note Napomena
+Nije moguće mijenjati podatke faze koja je već prijavljena u proizvodnji.
 :::
 
-U donjem dijelu formulara nalaze se sljedeća polja:  
-> **Količina obveze**: prikazuje ukupnu količinu angažmana za redove koje je korisnik odabrao;           
-> **Jedinica mjere vremena**: označava jedinicu mjere vremena u kojoj se želi prikazati vrijednost u **Ukupno vrijeme**;     
-> **Ukupno vrijeme**: prikazuje ukupno vrijeme (Vrijeme stroja + Vrijeme radne snage + Vrijeme pripreme) za redove koje je korisnik odabrao. 
+U donjem dijelu obrasca nalaze se sljedeća polja:
 
-Dodatno, proširenjem ovog dijela, prikazuju se u samo za čitanje detalji vezani za:  
+> **Količina obveze**: prikazuje ukupnu količinu angažmana/obveze za retke koje je korisnik odabrao;         
+> **Jedinica mjere vremena**: označava jedinicu vremena u kojoj se želi prikazati vrijednost polja **Ukupno vrijeme**;     
+> **Ukupno vrijeme**: prikazuje ukupno vrijeme (*Vrijeme stroja + Vrijeme rada + Vrijeme pripreme*) za retke koje je korisnik odabrao.
+
+Dodatnim proširenjem ovog dijela prikazuju se sljedeći detaljni podaci samo za pregled:
+
 > **Količina**
-> **Vrijeme radne snage**
+> **Vrijeme rada**
 > **Vrijeme stroja**
-> **Vrijeme postrojenja**
+> **Vrijeme pripreme**
 
-*Posebni gumbi*:  
+*Posebni gumbi*:
 
-> **Traži**: omogućuje prikaz faza prema unesenim filterima;           
-> **Pretraživanje s stanjem zaliha**: obavlja istu funkciju kao gumb **Traži**, ali istovremeno prikazuje u crvenoj boji sve faze gdje danas nema dostupnih zaliha;                    
-> **Premjestiti Faze**: omogućuje premještanje odabranih faza iz prve rešetke u drugu rešetku gdje je moguće dodijeliti sekvenca;           
-> **Promijeni Faze**: nakon odabira faze, ovaj naredba omogućuje *Ažuriranje* same faze promjenom: faze, stroja, radnog centra, ukupnog vremena stroja, radnog vremena i vremena pripreme. Također, odabirom opcije *Umetni* moguće je dodati novu fazu ili putem opcije *Izbriši* trajno je ukloniti;              
-> **Promijeni ciklus/verziju**: omogućuje promjenu ciklusa i/ili verzije u tom proizvodnom nalogu;            
-> **Promijenite datume**: omogućuje promjenu *Početnog Datuma* za sve odabrane planirane ili proizvodne naloge s datumom navedenim u skočnom prozoru; zatim, na temelju faza i *Kalendar kapaciteta proizvodnje*, ponovno se izračunava i *Datum Završetka* naloga te datumi početka i završetka svake faze. Na temelju novih datuma također se ponovno izračunava datum upotrebe materijala. Osim ažuriranja datuma u nalogu, ažuriraju se i datumi u povezanim nalogu;          
-> **Izračunava vrijeme**: omogućuje ponovno izračunavanje vremena nakon dodjele nove sekvence ili nakon promjene nekih podataka putem funkcije **Promijeni faze**;          
-> **Izračunava slijed**: nakon ponovnog uređivanja redova u drugoj rešetki prema potrebi, ovaj gumb omogućuje davanje sekvence odabranim fazama prema redoslijedu;        
-> **Ažuriraj datum kad će roba biti spremna**: omogućuje ažuriranje *Datum kad će roba biti spremna* za povezane klijentske narudžbe s *Datum završetka narudžbe*;         
-> **Ponovno izračunaj raspoloživost**: omogućuje ponovno izračunavanje dostupnosti prikazujući dostupnost zaliha prema dodijeljenoj sekvenci;            
-> **Izdavanje planiranih naloga**: omogućava izdavanje planiranih proizvodnih naloga u proizvodne naloge za odabrane faze;                       
-> **Pusti naloge**: omogućuje promjenu statusa proizvodnih naloga s lansiranih na izvršne za odabrane faze.            
-> **Proširi ekransku tablicu**: omogućuje skrivanje područja filtera obrasca radi lakšeg rada s rešetkama;         
-> **Dupla tablica**: omogućuje skrivanje prve rešetke radi lakšeg rada s drugom.          
+> **Traži**: prikazuje faze na temelju unesenih filtara;           
+> **Pretraži i razmotri zalihe**: izvršava istu funkciju kao gumb **Traži**, ali istovremeno crvenom bojom označava sve faze za koje trenutno nema raspoloživih zaliha;                   
+> **Premjestiti faze**: premješta odabranu fazu ili faze iz prve mreže u drugu mrežu, gdje im je moguće dodijeliti sekvencu;         
+> **Promijeni faze**: nakon odabira faze omogućuje njezino *Ažuriranje* promjenom faze, stroja, radnog centra, ukupnog vremena stroja, vremena rada i vremena pripreme. Osim toga, odabirom opcije *Unesi* moguće je dodati novu fazu, a opcijom *Obriši* trajno ukloniti postojeću;            
+> **Promijeni ciklus/verziju**: omogućuje promjenu tehnološkog postupka i/ili verzije u tom proizvodnom nalogu;            
+> **Promijenite datume**: omogućuje promjenu datuma početka odabrane faze;         
+omogućuje promjenu *Datuma početka* za sve odabrane planirane ili proizvodne naloge na datum naveden u skočnom prozoru. Nakon toga, na temelju faza i *Kalendara proizvodnih kapaciteta*, ponovno se izračunavaju *Datum završetka naloga* te datumi početka i završetka svake faze. Na temelju novih datuma ponovno se izračunavaju i datumi korištenja materijala. Uz datume na nalogu ažuriraju se i datumi na povezanom proizvodnom projektu;        
+> **Izračunaj vrijeme faze na osnovi prioriteta**: omogućuje ponovni izračun vremena nakon dodjele nove sekvence ili nakon promjene podataka putem funkcije **Promijeni faze**;          
+> **Izračun i umetanje slijeda proizvodnje**: nakon što su retci u drugoj mreži posloženi prema potrebi, ovaj gumb dodjeljuje sekvencu odabranim fazama prema zadanom redoslijedu;       
+> **Preračunaj izvedivost**: postupak izračunava izvedivost za materijale i prethodnu fazu za odabrane retke te primjenjuje boju u poljima *Izvedivost materijala* i *Izvedivost faze* u donjoj mreži, prema postavkama definiranima u [Parametrima potreba za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters). Ovaj gumb je dostupan samo ako je aktivirana oznaka **Sekvenca faza** u odjeljku *Parametri izračuna izvedivosti* unutar [Parametara potreba za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters);          
+> **Detalj izvedivosti materijala**: otvara skočni prozor koji prikazuje koji su materijali dostupni, a koji nisu za odabranu fazu. Ovaj gumb je dostupan samo ako je aktivirana oznaka **Uzmi u obzir materijale** u odjeljku *Parametri izračuna izvedivosti* unutar [Parametara potreba za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters);      
+> **Detalj izvedivosti faza**: otvara skočni prozor koji prikazuje status napretka prethodne faze, uključujući eventualne prijave proizvodnje unesene do tog trenutka. Ovaj gumb je dostupan samo ako je aktivirana oznaka **Razmotri prethodne faze** u odjeljku *Parametri za izračun izvedivosti* unutar [Parametara potreba za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters);   
+otvara se skočni prozor koji prikazuje koji su materijali dostupni, a koji nisu za odabranu fazu; dok je putem gumba **Detalj izvedivosti faza** moguće provjeriti status napretka prethodne faze, uključujući eventualne prijave proizvodnje unesene do tog trenutka.
+> **Ažuriranje datuma kad će roba biti spremna**: ažurira *Datum spremne robe* na povezanim narudžbama kupaca prema *Datumu završetka naloga*; 
+> **Izdavanje planiranih narudžbi proizvodnji**: omogućuje pretvaranje planiranih proizvodnih naloga u proizvodne naloge za odabrane faze;                     
+> **Pusti naloge**: omogućuje promjenu statusa proizvodnih naloga iz *Lansiran* u *Izvršni* za odabranu fazu ili faze;         
+> **Proširi ekransku tablicu**: skriva područje filtara obrasca kako bi se lakše radilo s mrežama;         
+> **Dupla tablica**: skriva prvu mrežu kako bi se lakše radilo s drugom mrežom.          
 
-Za detalje o zajedničkom funkcioniranju obrazaca obratite se linku [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Za detalje o zajedničkom funkcioniranju obrazaca pogledajte poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

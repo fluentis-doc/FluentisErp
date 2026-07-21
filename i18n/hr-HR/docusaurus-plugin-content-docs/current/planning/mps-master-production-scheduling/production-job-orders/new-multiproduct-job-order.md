@@ -1,42 +1,46 @@
 ---
-title: Radni nalog s multiproizvoda
+title: Radni nalog mutliproizvoda
 sidebar_position: 5
 ---
 
-Obrazac se otvara putem staze  **Planiranje > Proizvodne narudžbe** klikom na gumb  **Unesi multiproizvodnu narudžbu** u obrascu **Proizvodne narudžbe**.
+Obrazac se otvara putem izbornika **Planiranje > Radni nalozi proizvodnje**, klikom na gumb **Umetni radni nalog za više proizvoda** unutar obrasca **Radni nalozi proizvodnje**.
 
-## Posebni gumbi
+## Specifični gumbi
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): putem ovog gumba možete otvoriti zaslon s parametrima MRP-a artikla;  
-> [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona s materijalnom specifikacijom artikla;  
-> [Proizvodni ciklusi](/docs/erp-home/registers/production/routes/new-route): omogućuje pregled radnog ciklusa i pripadajućih faza proizvodnje artikla.  
+> [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): putem ovog gumba moguće je otvoriti ekran s MRP parametrima artikla;  
+> [Sastavnica](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje ekrana sastavnice artikla;  
+> [Radni ciklusi](/docs/erp-home/registers/production/routes/new-route): omogućuje prikaz radnog ciklusa i pripadajućih proizvodnih faza artikla.
 
-## Upravljanje radnim nalozima s multiproizvodima
+## Upravljanje multiproizvodnim nalozima
 
-Ova kartica izgleda isto kao ona na zaslonu za [Unos narudžbi s monoproizvodom](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
+Ova kartica izgleda jednako kao kartica u obrascu za [unos monoproizvodnog naloga](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order).
 
-*Osnovna razlika* je u tome što ne postoji odjeljak u kojem se unosi artikl s njegovim relevantnim podacima kao što je to slučaj kod kreiranja narudžbe s jednim proizvodom, već je taj prostor zamijenjen mrežom koja omogućuje unos ne jednog, već više artikala budući da se radi o narudžbi s više proizvoda.   
+*Osnovna razlika* je u tome što ne postoji sekcija za unos artikla i njegovih podataka, kao kod kreiranja monoproizvodnog naloga, već je taj prostor zamijenjen tablicom koja omogućuje unos više artikala, budući da se radi o multiproizvodnom nalogu.
 
-Polja prisutna u mreži su ista kao i u narudžbi s [jednim proizvodom](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); jedina razlika je polje **Progresivno** koje je polje koje korisnik može uređivati, u kojem se predlaže progresivni redak *Narudžbe za proizvodnju s više (multi) proizvoda* te planirani datumi početka/završetka, predloženi datum i datum početka i završetka plana se specificiraju za svaki artikl prisutan u narudžbi s više proizvoda (ostaje dio Predviđeni datum i Stvarni datum koji se odnosi na ukupno stanje narudžbe s više proizvoda).
+Polja prisutna u tablici ista su kao i kod [monoproizvodnog naloga](/docs/planning/mps-master-production-scheduling/production-job-orders/new-monoproduct-job-order); jedina je razlika polje **Redni broj**, koje korisnik može uređivati. U njemu se predlaže redni broj retka *multiproizvodnog proizvodnog naloga*, dok se planirani datumi početka i završetka, predloženi datum te datumi početka i završetka prognoze definiraju za svaki artikl pojedinačno unutar multiproizvodnog naloga (i dalje ostaje sekcija *Planirani datumi* i *Stvarni datumi* koja se odnosi na ukupni status multiproizvodnog naloga).
 
-### Referencije narudžbi kupaca
+### Reference na narudžbe kupaca
 
-Kartica sadrži mrežu samo za čitanje, u kojoj se prikazuju narudžbe kupaca povezane s referentnom proizvodnom narudžbom kada je narudžba generirana iz jednog ili više redaka narudžbi kupaca.   
-**Tip/Godina/Broj**: u ovim stupcima prikazuju se *Tip/Godina/Broj* narudžbe kupca u kojoj se nalazi redak čiji su detalji prikazani;  
-**Br./Količina/JM**: u ovom stupcu prikazuje se količina retka narudžbe kupca čiji su detalji prikazani;    
-**Datum kad je roba spremna**: u ovom stupcu prikazuje se datum spremnosti robe koji je postavljen u retku narudžbe kupca čiji su detalji prikazani; Konto: u ovom stupcu prikazuju se konto i podkonto kupca na kojeg je naslovljena narudžba kupca u kojoj se nalazi redak čiji su detalji prikazani;    
-**Konto**: u ovom stupcu prikazuju se konto i podkonto kupca na kojeg je naslovljena narudžba kupca u kojoj se nalazi redak čiji su detalji prikazani.  
+Ova tablica služi samo za pregled u kojoj se prikazuju narudžbe kupaca povezane s odgovarajućim proizvodnim nalogom kada je nalog generiran iz jednog ili više redaka narudžbi kupaca.
+
+**Vrsta/Godina/Broj**: u ovim se stupcima prikazuju *Vrsta/Godina/Broj* narudžbe kupca koja sadrži redak čiji se detalji prikazuju;
+
+**Red/Količina/MJ**: u ovom se stupcu prikazuje količina s retka narudžbe kupca čiji se detalji prikazuju;
+
+**Datum spremnosti robe**: u ovom se stupcu prikazuje datum spremnosti robe definiran na retku narudžbe kupca čiji se detalji prikazuju;
+
+**Konto**: u ovom se stupcu prikazuju konto i podkonto kupca na kojeg glasi narudžba kupca koja sadrži redak čiji se detalji prikazuju.
 
 ### Dodatni podaci
 
-Ova kartica također se sastoji od mreže u kojoj će biti prikazani svi dodatni podaci povezani s artiklom prisutnim u proizvodnoj narudžbi.  
+Ova kartica također sadrži tablicu u kojoj će biti prikazani svi dodatni podaci povezani s artiklom koji se nalazi na proizvodnom nalogu.
 
-##  Obračun troškova
+## Obračun troškova
 
-Sve informacije o **Obračun troškova** možete pronaći na stranici [Obračun troškova](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+Sve informacije vezane uz **Troškovni obračun** dostupne su na stranici [Troškovni obračun](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
 
 ## Dodatni podaci
 
-Ova kartica, koji je uz kartice  *Upravljanje narudžbama više proizvoda*, sadrži sve [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) povezane s proizvodnom narudžbom.   
+Ova kartica, koja se nalazi uz karticu *Upravljanje multiproizvodnim nalozima*, sadrži sve [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) povezane s proizvodnim nalogom.
 
-Za detalje o zajedničkom radu obrazaca molimo pogledajte poveznicu [Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common).
+Za detalje o zajedničkom načinu rada obrazaca pogledajte poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

@@ -3,81 +3,91 @@ title: Radni nalog monoproizvoda
 sidebar_position: 4
 ---
 
-Obrazac se otvara putem putanje  **Planiranje > Proizvodne narudžbe** klikom na gumb  **Umetni narudžbu** unutar obrasca **Proizvodne narudžbe**.  
+Obrazac se otvara putem izbornika **Planiranje > Radni nalozi proizvodnje**, klikom na gumb **Umetni podnalog** unutar obrasca **Radni nalozi proizvodnje**.
 
-## Posebni gumbi
+## Specifični gumbi
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters):omogućuje otvaranje zaslona s parametrima MRP (materijalni zahtjevi za proizvodnju) za artikl;      
-> [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona s baznom strukturom proizvoda za artikl;   
-> [Proizvodni ciklus](/docs/erp-home/registers/production/routes/new-route): omogućuje prikaz radnog ciklusa i pripadajućih faza proizvodnje za artikl.
+> [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): putem ovog gumba moguće je otvoriti ekran s MRP parametrima artikla;      
+> [Sastavnica](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje ekrana sastavnice artikla;  
+> [Proizvodni ciklusi](/docs/erp-home/registers/production/routes/new-route): omogućuje prikaz radnog ciklusa i pripadajućih proizvodnih faza artikla.
 
-## Upravljanje narudžbama monoproizvoda
+## Upravljanje monoproizvodnim nalozima
 
-Unutar ovog obrasca se navode glavni podaci koje mora sadržavati proizvodna narudžba.
+Na ovoj kartici unose se glavni podaci koje proizvodni nalog mora sadržavati.
 
-**Tip radnog naloga**: predložen je zadani tip kao zadano;    
+**Tip dokumenta**: predlaže se zadana vrsta dokumenta sa standardnim kodom *CP* (koji označava proizvodni nalog) definiranim u tablici [Vrste dokumenata](/docs/configurations/tables/production/documents-types/);    
 
-**Broj**: označava progresivni broj narudžbe koji se automatski predlaže;     
+**Broj**: označava redni broj naloga koji se automatski predlaže;     
 
-**Godina**: automatski se predlaže trenutna godina;   
+**Godina**: automatski se predlaže tekuća godina;   
 
-**Klijent**: označava računske podatke/podsračunske podatke i opis klijenta;    
+**Kupac**: prikazuje podatke o kontu/podkontu i opis kupca;    
 
-**Datum**: automatski se predlaže trenutni datum;        
+**Datum**: automatski se predlaže tekući datum;        
 
-**Obvezna**: ako je aktivno, označava je li ova narudžba od temeljne važnosti;    
+**Obvezna**: ako je aktivno, nalog postaje obvezan (*obavezan*) te će svi planski nalozi generirani iz njega također biti označeni kao obvezni i uzimat će se u obzir u postupku [Planiranja s konačnim kapacitetom](/docs/planning/ms-master-scheduling/finite-capacityscheduling);    
 
-**Status podnaloga**: Sistem automatski predlaže *Nije ispitano*, stanje koje narudžba dobiva odmah nakon što se stvori;   
+**Status podnaloga**: sustav automatski predlaže status *Neobrađen*, koji nalog dobiva odmah nakon kreiranja;   
 
-Ostali statusi koje može preuzeti su:  
+Ostali mogući statusi su:
 
-- **Vremenski raspoređeno**: narudžba prelazi u ovaj status nakon što je prošla kroz proces Opće rasporedbe;    
-- **Pokrenuto**: narudžba prelazi u ovaj status nakon što je barem jedna od planiranih proizvodnih narudžbi koje su generirane tijekom Opće rasporedbe bila puštena (ne smiju biti pušteni drugi planirani redovi kupnje ili radnog naloga, inače narudžba prelazi u izvršni status);        
-- **Izvršno**: narudžba prelazi u ovaj status nakon što je barem jedan od generiranih proizvodnih naloga postao izvršan ili nakon što je barem jedan od planiranih redova kupnje ili radnog naloga postao izvršan;     
-- **Izvršeno**: Narudžba prelazi u ovaj status nakon što je proizvodni nalog generiran za artikl koji je predmet narudžbe prešao u status *Izvršeno*;   
-- **Povijesni**: narudžba može biti ručno postavljena u ovaj status kako se ne bi prikazivala prilikom pretraživanja *Izvršenih* narudžbi;  
-- **Otkazano**: narudžba može biti ručno postavljena u ovaj status umjesto da se potpuno obriše, kako bi označila da narudžba, koja je prvotno bila planirana, ipak nije uvedena u proizvodnju.
+- **Planiran**: nalog prelazi u ovaj status nakon provedbe procesa Općeg planiranja;  
+- **Lansiran**: nalog prelazi u ovaj status nakon što je barem jedan planski proizvodni nalog generiran iz njega tijekom [Općeg planiranja](/docs/planning/ms-master-scheduling/general-schedule) pušten u rad (ako su pušteni i planski nalozi nabave ili kooperacije, nalog prelazi u status izvršnog);      
+- **Izvršno**: nalog prelazi u ovaj status nakon što je barem jedan proizvodni nalog generiran iz njega pušten u rad i postao izvršni ili nakon što je pušten barem jedan planski nalog nabave ili kooperacije generiran iz njega;   
+- **Izvršeno**: nalog prelazi u ovaj status nakon što nalog prve razine generiran za artikl na koji se nalog odnosi prijeđe u status *Izvršen*;   
+- **Povijesni**: nalog se može ručno postaviti u ovaj status kako se više ne bi prikazivao prilikom pretrage *izvršenih* naloga;  
+- **Otkazano**: nalog se može ručno postaviti u ovaj status umjesto brisanja, kako bi se označilo da planirani nalog na kraju nije realiziran u proizvodnji.
 
-**Opis**: omogućuje unos opisa vezanog uz narudžbu;        
+**Opis**: omogućuje unos opisa vezanog uz nalog;        
 
-**Tip nabave**: obično odgovara vrsti nabave artikla unesenog u proizvodnu narudžbu. Vrsta nabave artikla označena je unutar [MRP parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) istog;     
+**Vrsta nabave**: u pravilu odgovara vrsti nabave artikla unesenog u proizvodni nalog. Vrsta nabave artikla definira se u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) tog artikla;     
 
 **Prioritet nabave**: označava prioritet nabave;           
        
-**Projekti**: označava projekt u koji je narudžba uključena;       
+**Projekti**: označava projekt kojem pripada nalog;       
 
-**Mjesto proizvodnje**: označava lokaciju proizvodnje gdje će se narudžba proizvesti.  Na ovom polju postoji kontrola koja, u slučaju da narudžba proizlazi iz narudžbe kupca, provjerava da li skladište navedeno u retku narudžbe kupca pripada istoj proizvodnoj lokaciji naznačenoj u proizvodnoj narudžbi.  
+**Mjesto proizvodnje**: označava proizvodnu lokaciju na kojoj će se nalog proizvoditi. Na ovom polju postoji kontrola koja, ako je nalog nastao iz narudžbe kupca, provjerava pripada li skladište navedeno na retku narudžbe kupca istoj proizvodnoj lokaciji koja je definirana na proizvodnom nalogu.  
 
-**Datum kad je roba spremna**: u ovoj stupcu prikazan je datum spremne robe koji je postavljen u retku klijentske narudžbe čiji se detalji prikazuju;      
+**Datum spremne robe**: u ovom se polju prikazuje datum spremnosti robe definiran na retku narudžbe kupca za koji se prikazuje detalj;      
 
-**Predloženi datum**: polje u kojem se prikazuje datum koji je sustav predložio u slučaju da je korisnik zakazao narudžbu koristeći parametar *Provjeri zakašnjele dokumente s ATP-om*postavljajući, također u parametrima *općeg rasporeda*, *Početni datum MS* (Master Scheduling). Predloženi datum je onaj koji korisnik zatim može odlučiti da postane predviđeni datum završetka narudžbe;
+**Predloženi datum**: polje u kojem se prikazuje datum koji sustav predlaže ako je korisnik planirao nalog koristeći parametar *Provjeri zakašnjele dokumente pomoću ATP-a* te ako je u parametrima *Općeg planiranja* postavljen *Datum početka MS-a* (Master Scheduling). Predloženi datum je datum koji korisnik može prihvatiti kao planirani datum završetka naloga;
 
-**Datum radova predviđen Početak/Kraj**: u ovim poljima prikazuju se predviđeni datumi početka/završetka *Proizvodne narudžbe*. Dok god proizvodna narudžba ostaje u statusu *Nije pregledana*, ovi datumi su identični i jednaki su datumu spremnosti robe iz retka Narudžbe kupca iz kojeg je narudžba generirana, ili jednaki datumu završetka Prodajnih predviđanja iz kojeg je narudžba generirana. Nakon što je proizvodna narudžba raspoređena, predviđeni datum početka narudžbe podudara se s predviđenim datumom početka prve planirane narudžbe koja je generirana rasporedom narudžbe. Konačno, napominje se da u slučaju ručnog unosa proizvodne narudžbe, korisnik mora ručno unijeti ovaj podatak, inače neće biti moguće spremiti narudžbu;
+**Predviđeni datum početka/završetka proizvodnje**: u ovim se poljima prikazuju planirani datumi početka i završetka proizvodnog naloga. Dok je proizvodni nalog u statusu *Neobrađen*, ti su datumi jednaki i odgovaraju datumu spremnosti robe s retka narudžbe kupca iz kojeg je nalog generiran ili datumu završetka prognoze prodaje iz koje je nalog nastao. Nakon planiranja proizvodnog naloga, planirani datum početka naloga odgovara planiranom datumu početka prvog planskog naloga generiranog planiranjem. Kod ručnog unosa proizvodnog naloga korisnik mora ručno unijeti ovaj podatak, u suprotnom spremanje naloga neće biti moguće;
 
-**Stvarni datum radova Početak/Kraj**: u ovim poljima pojavljuju se datumi početka/završetka stvarne obrade, odnosno, datumi prve proizvodne prijave naloga za proizvodnju generiranog iz naloga za proizvodnju i datumi zadnje proizvodne prijave koja je uzrokovala konačno zatvaranje naloga za proizvodnju čiji je artikl isti kao i nalog za proizvodnju. Naravno, datum stvarnog završetka prisutan je samo u slučaju kada je nalog u statusu *Izvršeno*;
+**Stvarni (efektivni) datum početka/završetka proizvodnje**: u ovim se poljima prikazuju stvarni datumi početka i završetka proizvodnje, odnosno datum prve prijave proizvodnje za proizvodni nalog generiran iz naloga te datum posljednje prijave proizvodnje koja je uzrokovala konačno zatvaranje proizvodnog naloga čiji je artikl isti kao i artikl proizvodnog naloga. Datum stvarnog završetka prikazuje se samo ako je nalog u statusu *Izvršen*;
 
-*Obavezna polja za generiranje proizvodne narudžbe*: **Artikl** (s pripadajućom klasom, kodom i opisom), **Verzija**, **Količina** narudžbe i pripadajuća **Jedinica mjere**.  
-Na kraju, postoji niz polja koja se preuzimaju iz [MRP Parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)  odabranog artikla, kao što su: **Ciklus**, **Ekonomski lot** s pripadajućim **Višekratnicima**, **Vrijeme isporuke**, **Postotak otpada** na količinu i **Tip nabave**.
-Polja **Početak / Kraj prognoze** označavaju početak i kraj razdoblja uzetog u obzir za prognozu prodaje koja je generirala tu narudžbu. 
+*Obvezna polja za generiranje proizvodnog naloga*: **Artikl** (s pripadajućom klasom, šifrom i opisom), **Varijanta**, **Količina** naloga i pripadajuća **Mjerna jedinica**.  
 
-### Referencije narudžbi kupaca
+Na kraju, postoji niz polja koja se automatski preuzimaju iz [MRP parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) odabranog artikla, kao što su: **Radni ciklus**, **Ekonomski lot** s pripadajućim **Višekratnicima**, **Pripremno vrijeme**, **Postotak otpada** na količini te **Vrsta nabave**.
 
-Tablica sadrži samo za čitanje mrežu u kojoj se prikazuju narudžbe kupaca povezane s referentnom proizvodnom narudžbom kada je narudžba generirana iz jednog ili više redaka narudžbi kupaca.   
-**Tip/Godina/Broj**: : u ovim stupcima prikazuju se *Tip/Godina/Broj* narudžbe kupca u kojoj je sadržan redak za koji se prikazuje detalj;  
-**Br./Količina/Jedinica mjere**: u ovom stupcu prikazuje se količina reda narudžbe kupca za koji se prikazuje detalj;  
-**Datum kad je roba spremna**: u ovom stupcu prikazuje se datum spremnosti robe koji je postavljen u redu narudžbe kupca za koji se prikazuje detalj;  
-**Konto**: u ovom stupcu prikazuju se konto i podkonto kupca na čije ime glasi narudžba kupca u kojoj je sadržan redak za koji se prikazuje detalj.  
+Polja **Početak/Kraj prognoze** označavaju početak i kraj razdoblja prognoze prodaje koje je generiralo taj nalog.
 
-### Dodatni podaci 
+Važno je imati na umu da se status zaglavlja multiproizvodnog naloga automatski određuje prema statusima pojedinih redaka. Status zaglavlja odgovarat će najnaprednijem statusu među pojedinačnim recima između: *neispitan*, *planiran*, *pokrenut* i *izvršni*.
 
-Ova kartica također sadrži mrežu u kojoj će biti prikazani svi dodatni podaci povezani s artiklom koji se nalazi u proizvodnoj narudžbi.
+Zaglavlje će prijeći u status *izvršen* tek kada svi retci budu izvršeni; isto pravilo vrijedi i za statuse *povijesni* i *otkazan*.
 
-##  Obračun troškova
+### Referenca narudžbe kupca
 
-Sve informacije vezane uz  **Obračun troškova** mogu se pronaći na stranici [Obračun troškova](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+Ova tablica služi samo za pregled u kojoj se prikazuju narudžbe kupaca povezane s odgovarajućim proizvodnim nalogom kada je nalog generiran iz jednog ili više redaka narudžbi kupaca.
 
-## Dodatni podaci 
+**Tip/Godina/Broj**: u ovim se stupcima prikazuju *Vrsta/Godina/Broj* narudžbe kupca koja sadrži redak čiji se detalji prikazuju;
 
-Ova kartica, koja se nalazi uz karticu *Upravljanje radnim nalozima s jednim proizvodom*, sadrži sve [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) povezane s proizvodnom narudžbom.  
+**Red/Količina/Mjerna jedinica**: u ovom se stupcu prikazuje količina s retka narudžbe kupca čiji se detalji prikazuju;
 
-Za detalje o zajedničkom radu obrazaca pogledajte poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+**Datum kad je roba spremna**: u ovom se stupcu prikazuje datum spremnosti robe definiran na retku narudžbe kupca čiji se detalji prikazuju;
+
+**Konto**: u ovom se stupcu prikazuju konto i podkonto kupca na kojeg glasi narudžba kupca koja sadrži redak čiji se detalji prikazuju.
+
+### Dodatni podaci
+
+Ova kartica također sadrži tablicu u kojoj će biti prikazani svi dodatni podaci povezani s artiklom koji se nalazi na proizvodnom nalogu.
+
+## Obračun troškova
+
+Sve informacije vezane uz **Troškovni obračun** dostupne su na stranici [Troškovni obračun](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization).
+
+## Dodatni podaci
+
+Ova kartica, koja se nalazi uz karticu *Upravljanje monoproizvodnim nalozima*, sadrži sve [dodatne podatke](/docs/configurations/utility/extra-data/extradata/search-extradata) povezane s proizvodnim nalogom.
+
+Za detalje o zajedničkom načinu rada obrazaca pogledajte poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).
