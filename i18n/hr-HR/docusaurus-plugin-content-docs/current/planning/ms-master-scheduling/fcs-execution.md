@@ -1,76 +1,87 @@
 ---
-title: Esecuzioni A.F.C.S.
+title: Izvršenja AFCS
 sidebar_position: 6
 ---
 
-## Esecuzioni A.F.C.S. (griglia principale)
+## Izvršenja AFCS (glavna tablica)
 
-La form si compone di una griglia principale dove premendo il tasto **Ricerca** si ottiene l'elenco delle simulazioni salvate. Selezionando una di queste, vengono caricati i relativi dati nelle varie tab del form.     
-E' possibile eliminare una simulazione selezionandola e premendo il tasto **Cancella**.
+Obrazac se sastoji od glavne tablice u kojoj se pritiskom na tipku **Traži** dobiva popis spremljenih simulacija. Odabirom simulacije učitavaju se pripadajući podaci na ostalim karticama obrasca.
 
-Tutti i dati relativa alla simulazione selezionata, sono presenti nei seguenti seguenti tab:
+Odabranu simulaciju moguće je obrisati pritiskom na tipku **Otkaži**.
+
+Svi podaci vezani uz odabranu simulaciju dostupni su na sljedećim karticama:
 
 ### Parametri
 
-Questo tab mostra i parametri che sono stati usati per la simulazione selezionata.
+Ova kartica prikazuje parametre koji su korišteni za odabranu simulaciju.
 
-### Errori d'importazione
+### Uvozne pogreške
 
-Questo tab elenca gli avvertimenti generati al momento dell'importazione della simulazione. Non sono elencati errori perché in tal caso la simulazione non sarebbe stata possibile.
+Ova kartica prikazuje upozorenja generirana tijekom uvoza simulacije. Greške se ne prikazuju jer u tom slučaju simulaciju ne bi bilo moguće izvršiti.
 
-### Errori d'esecuzione
+### Izvršne pogreške
 
-Questo tab riporta eventuali errori rilevati durante la simulazione.
+Ova kartica prikazuje eventualne greške zabilježene tijekom izvođenja simulacije.
 
-### Ordini fornitori
+### Narudžba dobavljačima
 
-Questo tab elenca le righe ordini fornitori pianificate e confermate ed inevase, con la relativa data fine schedulata. Questa è intesa come data di consegna simulata dallo schedulatore. In caso di ordini confermati, la data fine schedulata coincide con quella pianificata, eventualmente posticipata secondo il valore del parametro di schedulazione **Giorni ritardo disponibilità per acquisti**.         
-Se tale data fosse anteriore alla data inizio simulazione, verrebbe fatta coincidere con essa. Se l'ordine è pianificato, in caso la data inizio risulti anteriore alla data inizio simulazione, questa verrebbe fatta coincidere con essa e di conseguenza sarebbe spostata in avanti la data fine e la data fine schedulata è calcolata come somma della data fine e del parametro **Giorni ritardo disponibilità per acquisti**. 
+Ova kartica prikazuje planirane i potvrđene, a još neizvršene retke narudžbi dobavljačima, zajedno s pripadajućim planiranim datumom završetka.
+Planirani datum završetka predstavlja simulirani datum isporuke koji je izračunao planer. Kod potvrđenih narudžbi planirani datum završetka odgovara planiranom datumu, uz eventualno pomicanje prema parametru planiranja **Dani kašnjenja raspoloživosti za nabavu**.
+Ako bi takav datum bio raniji od datuma početka simulacije, automatski se usklađuje s datumom početka simulacije.
+Ako je narudžba planirana i njezin datum početka prethodi datumu početka simulacije, datum početka pomiče se na datum početka simulacije. Posljedično se pomiče i datum završetka, dok se planirani datum završetka izračunava kao zbroj datuma završetka i parametra **Dani kašnjenja raspoloživosti za nabavu**.
 
-### Ordini conto lavoro
+### Narudžba podizvođači
 
-Questo tab elenca le righe ordini terzisti pianificate e confermate ed inevase. La data inizio schedulata è quella in cui è stato simulato il prelievo delle merci da consegnare al terzista. Tali merci devono tutte esser disponibili a magazzino per poter essere spedite ed avviare l'ordine, non vengono simulati prelievi parziali di merci se queste non sono completamente disponibili, come invece viene simulato per gli ordini di produzione.         
-La data fine schedulata è data dalla data inizio sommata al lead time dell'ordine, ed al parametro di schedulazione "Giorni ritardo disponibilità per conto lavoro".          
-Anche per il rientro della merce lavorata non sono simulate consegne parziali, come invece avviene per gli ordini di produzione. In sintesi, per gli ordini di conto lavoro i valori dei lotti di prelievo e di versamento degli articoli nei parametri MRP sono considerati comunque nulli, cioè gli ordini di conto lavoro sono gestiti a lotti e non a flusso.
+Ova kartica prikazuje planirane i potvrđene, a još neizvršene retke naloga kooperantima.
+Planirani datum početka predstavlja datum na koji je simulirano izdavanje robe kooperantu. Sva roba mora biti raspoloživa na skladištu kako bi se mogla otpremiti i kako bi nalog mogao započeti. Djelomična izdavanja robe ne simuliraju se ako cjelokupna potrebna količina nije raspoloživa, za razliku od proizvodnih naloga kod kojih je takva simulacija moguća.
+Planirani datum završetka izračunava se kao zbroj datuma početka, vremena isporuke (*lead time*) naloga i parametra planiranja **Dani kašnjenja raspoloživosti za podizvođača**.
 
-### Ordini di produzione
+Ni kod povrata obrađene robe ne simuliraju se djelomične isporuke, za razliku od proizvodnih naloga.
+Drugim riječima, za naloge kooperacije vrijednosti serija izdavanja i zaprimanja artikala definirane u MRP parametrima smatraju se jednakima nuli, odnosno nalozi kooperacije obrađuju se po serijama, a ne kao kontinuirani tok materijala.
 
-Questo tab contiene gli ordini di produzione sia pianificati che confermati ed inevasi. Le date inizio e fine schedulate sono determinate dal risultato della schedulazione.
+### Proizvodni nalog
 
-### Operazioni
+Ova kartica prikazuje planirane i potvrđene, a još neizvršene proizvodne naloge. Planirani datumi početka i završetka određeni su rezultatima raspoređivanja.
 
-Questo tab contiene le fasi relative agli ordini di produzione visualizzati nel relativo tab. Le date inizio e fine schedulate sono determinate dal risultato della schedulazione.      
-Sul lato destro ci sono altri tab che mostrano le macchine alternative, le risorse necessarie e gli attributi di attrezzaggio.
+### Operacije
 
-### Domanda dipendente
+Ova kartica prikazuje faze povezane s proizvodnim nalozima prikazanima na odgovarajućoj kartici. Planirani datumi početka i završetka određeni su rezultatima raspoređivanja.
+Na desnoj strani nalaze se dodatne kartice koje prikazuju alternativne strojeve, potrebne resurse i atribute podešavanja.
 
-Questo tab mostra i fabbisogni di materiali di tutti gli ordini di produzione e di conto lavoro.
+### Ovisna potražnja
 
-### Ordini cliente
+Ova kartica prikazuje potrebe za materijalima svih proizvodnih naloga i naloga kooperacije.
 
-Questo tab mostra le righe ordine cliente inevase. La data fine schedulata è quella in cui lo schedulatore ha simulato la consegna. Questa non è mai anteriore alla data di consegna dell'ordine, e può essere successiva ad essa se non può essere eseguita alla data prevista per indisponibilità della merce a magazzino.
+### Narudžba kupaca
 
-### Ordini interni DDMRP
+Ova kartica prikazuje neizvršene retke narudžbi kupaca. Planirani datum završetka predstavlja datum na koji je planer simulirao isporuku.
+Taj datum nikada nije raniji od datuma isporuke navedenog na narudžbi, ali može biti kasniji ako isporuku nije moguće izvršiti na planirani datum zbog nedostupnosti robe na skladištu.
 
-In un ambiente di tipo Ddmrp, questo tab mostra le righe di ordini interni per merce da consegnare ai nodi della supply chain gestita dal Ddmrp. Ciascuno di questi ordini funziona come un ordine cliente, dove il cliente è un nodo della supply chain.
+### Interni DDMRP nalozi
 
-### Tasks
+U DDMRP okruženju ova kartica prikazuje retke internih naloga za robu koja se isporučuje čvorovima opskrbnog lanca kojim upravlja DDMRP.
+Svaki od tih naloga funkcionira poput narudžbe kupca, pri čemu je kupac zapravo čvor opskrbnog lanca.
 
-Questo tab contiene il nucleo del risultato della schedulazione. I task sono le singole attività (indivisibili ed inaccorpabili) eseguite in fabbrica.       
-La maggior parte di essi ha una corrispondenza biunivoca con le righe del tab operazioni. Alcuni di essi sono il risultato di accorpamento di più operazioni (macchine che hanno una regola di accorpamento), secondo una relazione uno a molti tra i task e le operazioni.       
-In alcuni casi è vero anche il contrario, ovvero ad una operazione possono corrispondere più task (solo per le macchine che hanno una regola di accorpamento), poichè la quantità da produrre della operazione eccede i limiti di carico della macchina, e quindi la lavorazione della operazione richiede più sessioni di lavoro della macchina. Nel caso in cui un task non risulti schedulabile, nella colonna "avvertimenti" è disponibile un messaggio che riporta una (spesso l'unica) causa della mancata schedulazione, per aiutare a comprendere come agire per rimuovere la causa del problema.
+### Zadaci
 
-### Registrazioni di magazzino
+Ova kartica sadrži jezgru rezultata raspoređivanja. Zadaci predstavljaju pojedinačne aktivnosti (nedjeljive i neobjedinjive) koje se izvršavaju u proizvodnji.
+Većina zadataka ima izravnu vezu s retcima na kartici **Operacije**. Neki od njih rezultat su objedinjavanja više operacija (na strojevima koji imaju pravilo grupiranja), pri čemu postoji odnos jedan-prema-više između zadataka i operacija.
+U pojedinim slučajevima vrijedi i obrnuto, odnosno jednoj operaciji može odgovarati više zadataka (samo na strojevima koji imaju pravilo grupiranja), kada količina za proizvodnju premašuje kapacitet stroja pa je za izvršenje operacije potrebno više radnih ciklusa stroja.
+Ako se zadatak ne može rasporediti, u stupcu **Upozorenja** prikazuje se poruka koja navodi jedan od razloga (često i jedini razlog) zbog kojeg raspoređivanje nije bilo moguće, kako bi se lakše utvrdilo što je potrebno poduzeti za uklanjanje problema.
 
-Questo tab riporta tutte le simulazioni di versamenti (quantità positiva) e prelievi merci (quantità negativa) dai magazzini, con l'indicazione dell'ordine al quale fa riferimento. Sono pertanto relative a tutti i tipi di ordini importati dallo schedulatore.      
-Solo alcune registrazioni non fanno riferimento d alcun ordine, infatti per ogni articolo ed ogni magazzino è presente una registrazione che corrisponde al valore della giacenza al momento della importazione dei dati della simulazione. Questa registrazione non riporta il valore della giacenza alla data dell'inizio della simulazione, perchè avrebbe senso solo se fosse possibile anche importare gli ordini confermati e pianificati in qualsiasi giorno del passato, il che richiederebbe il salvataggio di una mole gigantesca di dati che sarebbe in generale di poca utilità.
+### Skladišna kretanja
 
-### Attività lavoratori
+Ova kartica prikazuje sve simulacije zaprimanja robe (pozitivna količina) i izdavanja robe (negativna količina) iz skladišta, uz naznaku naloga na koji se pojedina evidencija odnosi.
+Podaci se odnose na sve vrste naloga koje je planer uvezao.
+Samo se neke evidencije ne odnose ni na jedan nalog. Za svaki artikl i svako skladište postoji jedna evidencija koja predstavlja stanje zalihe u trenutku uvoza podataka za simulaciju.
+Ta evidencija ne prikazuje stanje zalihe na datum početka simulacije jer bi to imalo smisla samo kada bi bilo moguće uvoziti potvrđene i planirane naloge za bilo koji datum u prošlosti, što bi zahtijevalo pohranu vrlo velike količine podataka koja bi u većini slučajeva imala malu praktičnu vrijednost.
 
-Questo tab elenca le attività eseguite dai lavoratori durante la simulazione,  relativamente ai task presenti nel relativo tab. Per ciascuna attività viene indicato se si riferisce ad attrezzaggio macchina o a lavorazione.
+### Aktivnost radnika
 
-### Attività risorse
+Ova kartica prikazuje aktivnosti koje su radnici izvršavali tijekom simulacije, povezane sa zadacima prikazanima na odgovarajućoj kartici.
+Za svaku aktivnost naznačeno je odnosi li se na podešavanje stroja ili na samu proizvodnu obradu.
 
-Questo tab elenca gli impieghi delle risorse generiche di produzione gestite a capacità finita, relativamente ai task presenti nel relativo tab.
+### Aktivnost resursa
 
-Per tutto quanto non dettagliato in questo documento sul funzionamento comune delle form fare riferimento al seguente link [Funzionalità, pulsanti e campi comuni](/docs/guide/common).
+Ova kartica prikazuje korištenje općih proizvodnih resursa kojima se upravlja metodom planiranja s konačnim kapacitetima, a koji su povezani sa zadacima prikazanima na odgovarajućoj kartici.
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom načinu rada obrazaca, pogledajte poveznicu [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

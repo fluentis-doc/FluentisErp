@@ -1,151 +1,190 @@
 ---
 title: Generalno planiranje
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-Predstavlja algoritam Master Schedulinga, odnosno planer proizvodnje koji se bavi odabranim radnim nalozima i analizira njihovu *proizvodnu izvedivost* u funkciji njihove strukturne kompozicije.   
-Ova vrsta planiranja, koja se može izvršiti s logikama analize *što prije* ili *što kasnije*, omogućuje provjeru potrebe za dodatnim proizvodnim kapacitetom, ističući prekomjernu alokaciju kritičnih radnih centara, dopuštajući operateru da odluči hoće li povećati unutarnji kapacitet, kupiti vanjski kapacitet ili premjestiti opterećenja u vremenu, eventualno prihvaćajući kašnjenja u isporuci.  
+:::important Čemu služi
+Generalno planiranje u Fluentisu proces je koji radi pod pretpostavkom beskonačnog kapaciteta, što znači da planiranje ne uzima u obzir fizička ograničenja radnih centara ili raspoloživih resursa. Ovakav pristup omogućuje planiranje proizvodnih aktivnosti uz određenu fleksibilnost.
 
-Iz jednog ili više odabranih radnih naloga, na temelju parametara planiranja postavljenih u odgovarajućoj kartici, postupak stvara planirane narudžbe za tri predviđene vrste: proizvodnju, nabavu i vanjsku obradu.   
-
-Nakon što su stvoreni, planirane narudžbe će biti vidljive u kartici [Pretraživanje planiranih narudžbi](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
-
-## Radni nalozi
-
-*Posebni gumbi*:
-
-> **Generalno planiranje**: omogućuje sustavu da rasporedi odabrane narudžbe;  
-> **Otvori pretragu planiranih narudžbi**: ovim gumbom otvarate ekran za [Pretraživanje planiranih narudžbi](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders); ako ste prije pritiska na ovaj gumb odabrali redak narudžbe, forma planiranih narudžbi će se otvoriti već filtrirana za tu narudžbu;                 
-> **Promijeni procijenjeni datum završetka s predloženim datumom**: ovim gumbom možete promijeniti preporučeni datum, o kojem je bilo riječi u ovom artiklu;    
-> **Redoslijed sekvence**: ovom funkcionalnošću možete pristupiti sekvenci narudžbi, unutar koje možete pregledati narudžbe prema njihovom dodijeljenom redoslijedu, uključujući i grafikon.  
-
-
-*Specifični filtri*:
-
-**Tip radnog naloga**: putem ovog izbornika možete odabrati vrstu narudžbe koju želite prikazati - jednoproizvodne narudžbe, višeproizvodne narudžbe ili obje;  
-
-**Mjesto proizvodnje**: možete pregledati narudžbe prema lokaciji proizvodnje gdje se proizvode, odabirom putem odgovarajućeg izbornika;  
-
-**Kasne/Prošle/Pokrenute/Izvršne**: ove ovi oznake omogućuju odabir želite li prikazati narudžbe koje kasne u odnosu na datum, istekle narudžbe te samo ako je u [Parametri opće planiranja](/docs/planning/ms-master-scheduling/general-schedule) postavljena zastavica za *planiranje pokrenutih ili izvršnih narudžbi*. Inače, ova dva polja neće biti aktivna; kako je objašnjeno u članku o planovima, na kartici narudžbi bit će vidljive samo u stanju nepregledane ili planirane, ali ove prelaze u stanje pokrenute i/ili izvršne ako zastavica nije postavljena, neće se moći vidjeti narudžbe unutar ove kartice.
-
-*Specifična polja u tablici Rezultata*
-
-**Predloženi datum**: kao što je objašnjeno u članku o općim parametrima planiranja, aktiviranjem određene zastavice nazvane [Provjeri zakašnjele dokumente s ATP](/docs/planning/ms-master-scheduling/general-schedule) planer će provesti razmatranje prema kojem, ako je barem jedna od planiranih i generiranih narudžbi kasni u odnosu na predviđeni datum, sustav će obrisati sve stvorene narudžbe i ponovno započeti s općim datumom MS, definiranim uvijek u parametrima i koji se aktivira samo postavljanjem zastavice za provjeru zakašnjelih dokumenata s ATP te će predložiti novi datum za narudžbe upravo u polju *Predloženi datum* koje se nalazi u tablici rezultata.
-
-### Procedura Generalnog planiranja
-
-Nakon što se odaberu narudžbe koje želite rasporediti, aktivirat će se gumb **Generalno planiranje** koji se nalazi na traci s alatkama forme. Klikom na taj gumb, sustav će započeti planiranje odabranih narudžbi.  
-
-Za pregled svih izvršenih rasporeda i pripadajućih proizvodnih naloga za svaku narudžbu, jednostavno se prebacite na karticu **Arhiva**.
-
-:::danger NAPOMENA     
-Ručno kreirane narudžbe uvijek se proizvode neovisno o dostupnosti proizvodnog artikla.   
-:::   
-
-## Parametri Općeg planiranja  
-
-:::note NAPOMENA
-Prije nego što započnete s planiranjem, važno je postaviti parametre unutar ove kartice kako bi se planiranje moglo provesti.   
-::: 
-
-**Vremensko planiranje do**: označava datum do kojeg sustav uzima u obzir unesene dokumente; moguće je unijeti zadanu vrijednost u mjesecima u polje **Maksimalni broj mjeseci za planiranje** koje se nalazi u [MS Parametrima](/docs/configurations/parameters/production/mps-parameters);       
-
-**Materijali/Resursi**: putem ovih oznaka odlučuje se hoće li se planirati i materijali i resursi, odnosno struktura proizvoda i radni ciklus. Aktiviranjem oznake *Resursi* u planiranju će se također uzeti u obzir radni centri;  
-
-**Planirane narudžbe na**: putem tri zastavice označava se želi li se sustav generirati sve tri vrste predviđenih naloga, odnosno proizvodnju, nabavu i radni nalog; na taj način ove vrste naloga imat će izravnu vezu s narudžbom; (na primjer, ako nije označena zastavica za Nabavu, ali je zadržana zastavica za Izvršavanje MRP-a, sustav će ipak stvoriti naloge za nabavu, ali ti će biti odvojeni od narudžbe);  
-
-**Generira samo planirane naloge po razinama**: u ovom slučaju označava se razine (1-2...) za koje želite da se generiraju planirani nalozi;  
-
-**Narudžbe dobavljača ili Zahtjevi za nabavom i Narudžbe kupca**:  u ovom slučaju, ako postoje dokumenti u sustavu bez datuma obveze i dostupnosti, možete sustavu reći da uzme u obzir datum koji možete navesti u odgovarajućem polju ili da ne uzima u obzir ovu vrstu dokumenata;  
-
-**Grupiranje planiranih naloga po**: u slučaju rada po narudžbi, u ovom polju treba odabrati opciju *Nema grupiranja*; inače, možete odabrati vrstu grupiranja putem odgovarajuće kombinacije, ali u tom slučaju veza između planiranih naloga i narudžbe bila bi izgubljena;   
-
-**Grupiranje najkasnije ili najranije**: u ovom slučaju možete odabrati hoćete li grupirati naloge prema najkasnijem datumu (što znači prema posljednjem datumu) ili najranijem datumu (što se obično preporučuje), a zatim u sljedećem polju nazvanom **Za period, u danima** navesti broj dana unutar kojih se želi izvršiti grupiranje;  
-
-**Razmatraj količine prema ekonomskom lotu/Razmatraj višestruke ekonomskog lota**: postavljanjem prvog parametra označava se da se prilikom planiranja želi uzeti u obzir ekonomski lot artikla, što aktivira opciju za odlučivanje hoće li se također uzeti u obzir višestruki ekonomski lotovi (obe ove postavke se podešavaju unutar [MRP Parametara](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) artikla);
-
-**Kompaktiraj/odvoji narudžbe**: u ovom slučaju birate želite li da postoji ili ne dan razmaka između završetka proizvodnje narudžbe na 1. razini i narudžbe na sljedećoj razini;  
-
-**Izvršenje MRP-a nakon planiranja i Artikli na zalihama**: ovdje se označava da se želi da sustav analizira sve kodove artikala koji se upravljaju potrebama za ovaj gotovi proizvod. MRP se izvršava na sve artikle u baznoj strukturi ovog artikla koji imaju različite politike upravljanja od onih vezanih uz narudžbu, jer se može željeti provjeriti pokrivenost ili generirati planirane narudžbe bez veze s narudžbom. U ovom slučaju, MRP uzima u obzir parametre navedene u kartici *Opći parametri planiranja*;        
-
-**Planiranje po zoni isporuke**: postavljanjem ove zastavice, sustav će provjeravati kada narudžba treba biti isporučena prema svojoj zoni isporuke i rasporedit će narudžbu tako da bude gotova prije dana isporuke;  
-
-**Provjerite s ATP zakašnjele dokumente**: ako omogućite ovu zastavicu, istovremeno ćete omogućiti i sljedeće polje nazvano **Početak MS-a**, a sustav će izvršiti sljedeći postupak: ako u planiranju generiranih naloga postoji barem jedan koji ima datum početka raniji od današnjeg, odnosno ako kasni u odnosu na proizvodnju ove narudžbe, omogućavanjem ove zastavice sustav će obrisati sve planirane naloge koje je generirao i ponovno započeti od datuma koji operater postavlja u polju **Početak MS-a**, raspoređujući ih što je prije moguće od tog datuma;  
-
-**Automatsko puštanje planiranih naloga**: ako se odlučite omogućiti ovaj parametar, sustav za planiranje će, osim što generira naloge prema planu, automatski ih puštati u realizaciju. Time će planirani proizvodni nalazi postati stvarni proizvodni nalozi, nalozi za nabavu će postati RDA (zahtjevi za nabavom), a nalozi za rad će postati radni nalozi;  
-
-**Planiranje najkasnije ili najranije**: ovim zastavicama se određuje da li će se planiranje izvršavati na temelju najkasnijeg datuma proizvodnje naručenih naloga, što znači da će se planirati na temelju posljednjeg naloga koji se mora rasporediti, ili najranije, što znači da će se planiranje temeljiti na prvom nalogu koji se mora rasporediti;  
-
-**Planiranje pokrenutih ili izvršnih naloga**: po zadanim postavkama, kada se narudžba planira, i dalje se može vidjeti u kartici *Narudžbe*, gdje se može ponovno odabrati i ponovno planirati koliko god puta je potrebno. Međutim, kada se počnu puštati planirani nalozi, narudžbe mijenjaju status s planiranih na pokrenute ili izvršne i više ih nije moguće vidjeti u kartici *Narudžbe*. Da bi se i dalje mogle vidjeti u kartici *Narudžbe* nakon što postanu pokrenute ili izvršne, dovoljno je omogućiti ovu zastavicu, čime se omogućuje njihovo daljnje prikazivanje i mogućnost ponovnog planiranja baš kao i narudžbi u statusu planiranih;  
-
-**Verzija**: planer će rasporediti u verziju koja je postavljena u ovom polju, ako u proizvodnoj narudžbi nije definirana verzija;  
-
-**Razmotri raspoloživost**: ako aktivirate ovu opciju, naznačujete planeru da pri procesu planiranja mora uzeti u obzir dostupnost robe iz skladišta navedenih u donjoj tablici, koja su prethodno definirana u [MS Parametrima](/docs/configurations/parameters/production/mps-parameters);  
-
-**Skladišta**: mreža skladišta se aktivira samo ako je postavljena zastavica **Razmotri dostupnost**, u mreži se prikazuju skladišta koja su unesena u prozor [Izračun raspoloživosti](/docs/erp-home/registers/items/calculate-availability);         
-
-**Uzmite u obzir dostupnost na datum potrebe ili minimalnu u razdoblju**: ove opcije se aktiviraju samo ako je aktivirana opcija **Razmotri raspoloživost**; na datum potrebe znači da će planer morati uzeti u obzir dostupnost u trenutku kada treba proizvesti narudžbu, dok minimalna u razdoblju znači da će planer uzeti u obzir minimalnu dostupnost u razdoblju do datuma postavljenog u parametru Planirati do;
-
-**Razmotrite lotove s stanjem nije raspoloživo**: ova opcija se također aktivira samo ako je aktivirana opcija **Razmotri raspoloživost**. Ako je aktivirana, planer će morati uzeti u obzir serije u nedostupnom stanju na određeni datum;      
-
-**Razmotrite raspoloživost i za prvu razinu**: ova opcija se također aktivira samo ako je aktivirana opcija **Razmotri raspoloživost**; ako je aktivirana, planer će morati uzeti u obzir dostupnost i za prvu razinu (odnosno za artikl prisutan u proizvodnom nalogu);
-
-**Razmotrite negativnu raspoloživost**: ako je aktivirano, planer će morati uzeti u obzir i negativnu dostupnost pri planiranju za artikl prve razine. Ovu opciju je moguće omogućiti samo ako je aktivirana opcija **Razmotrite raspoloživost i za prvu razinu**;      
-
-**Uzmite u obzir dostupnost iz**: ove opcije postaju dostupne samo ako je aktivirana opcija  **Razmotri raspoloživost** i omogućuju vam da naznačite želite li da planer uzme u obzir dostupnost iz nabave, prodaje, skladišta, uslužne proizvodnje i proizvodnje;  
-
-**Obnavljanje minimalne zalihe artikla i obnavljanje točke ponovnog naručivanja artikla**: prva opcija se aktivira samo ako je postavljena druga opcija. Ove dvije opcije ukazuju na to da planer mora predvidjeti obnavljanje točke ponovnog naručivanja određene za taj artikl, a također, ako želite, i obnavljanje minimalne zalihe artikla. Oba podatka unose se prilikom kreiranja artikla u kartici [Nabava](/docs/erp-home/registers/items/create-new-item);
-
-**Razmotrite indeks pokrivanja**: ako je opcija aktivirana, planer će morati uzeti u obzir indeks pokrivenosti koji se postavlja u kartici *Nabava* artikla;  
-
-**Razmotrite alternative materijala**: ako je aktivno, prilikom planiranja proizvodnog naloga, planer će također morati razmotriti alternative materijala ako nema dovoljno dostupnosti za materijal naveden u strukturi. Ova opcija se može omogućiti samo ako je aktivirana opcija **Razmotri raspoloživost**;            
-
-**Razmotrite samo alternativne materijale**: ova opcija se aktivira samo kada je aktiviran flag **Uzmite u obzir i alternative materijala**; ako je ova opcija aktivna, prvo će se provjeriti dostupnost alternativnih komponenti prema njihovom prioritetu. Ako ti materijali nisu dovoljni, onda će se provjeriti dostupnost glavne komponente. Ova opcija se može omogućiti samo ako je aktivirana opcija **Razmotri raspoloživost**;    
-
-:::note NAPOMENA 
-Alternativni materijali se unose u karticu **Alternative**, koja se odnosi na glavni materijal, prisutnu u [Sastavnici materijala](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
+Planiranje se može izvršavati prema dvije različite logike: **što ranije** i **što kasnije**. Logika **što ranije** nastoji započeti aktivnosti čim je to moguće, dok logika **što kasnije** planira aktivnosti što kasnije, bez ugrožavanja rokova. Ovi pristupi omogućuju optimiziranu analizu proizvodnih potreba te upravljanje vremenima izrade u skladu s poslovnim prioritetima i operativnim zahtjevima.
 :::
 
-**Razmotri alternativne faze**: ako je ovaj flag aktivan, to znači da će planer pri planiranju morati uzeti u obzir i alternativne radne faze. Aktiviranjem ovog flaga aktivira se i sljedeće editabilno polje nazvano **Tolerancija za zauzeće radnog centra %**, gdje se može navesti tolerancija zauzeća radnog centra u postotcima. Ako zauzeće premaši tu toleranciju, planer će morati razmotriti alternativne faze umjesto zadane faze.  
+Forma se sastoji od četiri kartice: **Radni nalog**, **Opći parametri**, **Praćenje** i **Povijest**.
+
+## Radni nalog
+
+Kartica **Radni nalog** sastoji se od područja za filtriranje koje omogućuje odabir naloga koji će potom biti prikazani u tablici rezultata.
+
+Uz filtre za artikl, godinu te broj proizvodnog naloga, dostupan je i filtar za **Vrstu naloga**, kojim se mogu prikazati monoproizvodni, multiproizvodni ili svi proizvodni nalozi.
+
+Dostupan je i filtar za **Mjesto proizvodnje**, kako bi se moglo planirati samo naloge određenog proizvodnog pogona, kao i skup oznaka: **U odgodi**, **Isteklo**, **Pokrenuto** i **Izvršni**, koje omogućuju odabir prikaza naloga koji kasne u odnosu na planirani datum ili su istekli. Oznake **Pokrenuti** i **Izvršni** postaju dostupne samo ako je u **Općim parametrima planiranja** aktivirana opcija **Planiranje pokrenutih ili izvršnih naloga**; u suprotnom ostaju neaktivne.
+
+Ako opcija **Planiranje pokrenutih ili izvršnih naloga** nije aktivna, u tablici će biti prikazani samo nalozi u statusu **Neobrađen** ili **Planiran**.
+
+Odabirom jednog ili više naloga, ovisno o parametrima planiranja postavljenima na odgovarajućoj kartici, putem gumba **Opće planiranje** pokreće se postupak generiranja planiranih naloga triju vrsta: proizvodnje, nabave i kooperacije. Pri tome se koriste podaci iz proizvodnih naloga te odgovarajućih sastavnica i tehnoloških postupaka.
+
+Nakon generiranja, planirani nalozi mogu se pregledati u formi [Pretraga planiranih naloga](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), koja se može otvoriti i putem gumba **Otvori pretragu planiranih naloga**.
+
+Ako je prije otvaranja pretrage odabran određeni proizvodni nalog u tablici rezultata, forma za planirane naloge otvorit će se već filtrirana za taj nalog.
+
+### Specifični gumbi
+
+> **Generalno planiranje**: omogućuje sustavu planiranje odabranih proizvodnih naloga;
+
+> **Otvori pretragu planiranih narudžbi (naloga)**: otvara ekran [Pretraga planiranih naloga](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders). Ako je prije pritiska gumba odabran redak proizvodnog naloga, pretraga će se otvoriti već filtrirana za taj nalog;
+
+> **Promijeni procijenjeni datum završetka predloženim datumom**: ažurira *planirani datum završetka* pomoću *predloženog datuma* izračunatog tijekom planiranja kada je aktivirana opcija **Provjeri dokumente u kašnjenju pomoću ATP-a**;
+
+> **Redoslijed naloga**: omogućuje pristup redoslijedu proizvodnih naloga, gdje ih je moguće pregledavati prema dodijeljenom redoslijedu, uključujući i grafički prikaz.
+
+### Specifični filtri
+
+**Tip dokumenta**: omogućuje prikaz monoproizvodnih, multiproizvodnih ili svih proizvodnih naloga;
+
+**Mjesto proizvodnje**: omogućuje prikaz naloga prema proizvodnom pogonu kojem pripadaju;
+
+**U odgodi / Istekli / Pokrenuti / Izvršni**: ove oznake omogućuju prikaz naloga koji kasne ili su istekli. Oznake **Pokrenuti** i **Izvršni** dostupne su samo ako je u [Općim parametrima planiranja](/docs/planning/ms-master-scheduling/general-schedule) aktivirana opcija **Planiranje pokrenutih ili izvršnih naloga**. U suprotnom, na kartici **Nalozi** mogu se prikazivati samo nalozi u statusu **Neobrađen** ili **Planiran**. Budući da nalozi mogu prijeći u status **Pokrenut** i/ili **Izvršan**, ako navedena opcija nije aktivirana, takvi nalozi neće biti prikazani na ovoj kartici.
+
+### Specifična polja u tablici rezultata
+
+**Predloženi datum**: kao što je objašnjeno u članku o općim parametrima planiranja, aktivacijom oznake [Provjeri dokumente u kašnjenju pomoću ATP-a](/docs/planning/ms-master-scheduling/general-schedule), postupak planiranja izvršava dodatnu provjeru. Ako se pokaže da je barem jedan od generiranih i planiranih naloga u kašnjenju u odnosu na planirani datum, sustav će obrisati sve prethodno generirane naloge te ponovno pokrenuti izračun počevši od **MS početnog datuma** (koji se definira u parametrima i koristi se samo kada je aktivirana opcija **Provjera dokumenata u kašnjenju pomoću ATP-a**) koristeći logiku *što ranije*. Novi predloženi datum za proizvodne naloge prikazat će se u polju **Predloženi datum** u tablici rezultata.
+
+### Postupak općeg planiranja
+
+Nakon odabira proizvodnih naloga koje je potrebno planirati, aktivira se gumb **Generalno planiranje** u alatnoj traci forme. Klikom na taj gumb sustav pokreće planiranje odabranih proizvodnih naloga.
+
+Za pregled svih izvršenih planiranja i pripadajućih generiranih proizvodnih naloga za pojedini proizvodni nalog potrebno je otvoriti karticu **Arhiva**.
+
+:::danger Napomena
+Ručno kreirani proizvodni nalozi uvijek se planiraju bez obzira na raspoloživost artikla koji se proizvodi.
+:::
+
+## Opći planiranja
+
+:::note Napomena
+Prije pokretanja planiranja potrebno je na ovoj kartici postaviti parametre koji će se koristiti tijekom planiranja.
+:::
+
+**Planiranje do**: određuje datum do kojeg će sustav uzimati u obzir unesene dokumente. Taj datum sustav izračunava kao današnji datum uvećan za broj mjeseci definiran u polju **Maksimalni broj mjeseci za planiranje** unutar [MS parametara](/docs/configurations/parameters/production/mps-parameters).
+
+**Materijali / Resursi**: aktiviranjem oznake **Materijali** u generirane planirane naloge prenose se materijali koji će se trošiti. Aktiviranjem oznake **Resursi** u planirane naloge prenose se i proizvodne operacije. Ako jedna ili obje oznake nisu aktivne, planirani nalozi će se svejedno generirati, ali bez materijala odnosno bez proizvodnih operacija.
+
+**Planirane narudžbe na**: pomoću tri oznake određuje se treba li sustav generirati sve tri vrste planiranih naloga: proizvodnju, nabavu i podizvođača. Na taj način navedeni nalozi ostaju povezani s proizvodnim nalogom. Primjerice, ako oznaka **Nabava** nije aktivna, ali je aktivna opcija **MRP obrada**, sustav će ipak generirati nabavne naloge, ali oni neće biti povezani s proizvodnim nalogom.
+
+**Generiraj samo naloge planirane za razinu**: omogućuje definiranje razina sastavnice (1, 2, ...) za koje će se generirati planirani nalozi.
+
+**Narudžbe dobavljača ili zahtjevi za nabavom i narudžbe kupaca**: ako u sustavu postoje dokumenti bez datuma potrebe ili raspoloživosti, moguće je odrediti da sustav koristi datum naveden u odgovarajućem polju ili da takve dokumente uopće ne uzima u obzir.
+
+**Grupiranje planiranih naloga prema**: ako se radi po proizvodnim nalozima, potrebno je odabrati opciju **Bez grupiranja**. U suprotnom se može odabrati način grupiranja, ali će se tada izgubiti veza između planiranih naloga i proizvodnog naloga.
+
+**Grupiranje na: posljednji/najranije**: omogućuje odabir grupiranja prema logici *što kasnije* ili *što ranije* (preporučena opcija). U sljedećem polju **Za razdoblje od dana** definira se broj dana unutar kojeg je dopušteno grupiranje.
+
+**Razmotri količine prema ekonomskom lotu / Razmotri višekratnike ekonomskih lotova**: aktivacijom prve opcije tijekom planiranja uzima se u obzir ekonomična serija artikla. Time se aktivira i druga opcija kojom se određuje treba li uzimati u obzir i višekratnike ekonomične serije.
+
+Za obrađivani artikl vrijednosti ekonomične serije i njezini višekratnici uzimaju se u obzir samo ako su odgovarajuće oznake aktivirane u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) artikla.
+
+Ako je riječ o artiklu s vrstom opskrbe **Proizvodnja**, vrijednosti ekonomične serije i višekratnika preuzimaju se s kartice **Proizvodnja** u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters). Ako je riječ o artiklu s vrstom opskrbe **Nabava**, podaci se preuzimaju od zadanog dobavljača na kartici [Preferirani dobavljači](/docs/erp-home/registers/items/create-new-item) u šifarniku artikla.
+
+**Kompaktni / razdvoji naloge**: određuje treba li između završetka proizvodnje naloga jedne razine i početka naloga sljedeće razine ostaviti jedan slobodan dan ili ne.
+
+**Izvršenje MRP nakon planiranja i stavke na zalihi**: ovom se opcijom određuje da sustav nakon prvog planiranja dodatno pokrene MRP obradu za sve šifre artikala iz sastavnice proizvoda koje imaju politiku upravljanja različitu od upravljanja po proizvodnom nalogu, kako bi provjerio njihovu pokrivenost te po potrebi generirao planirane naloge bez veze s proizvodnim nalogom. Aktivacijom opcije **Stavke kojih ima na zalihi** MRP obrada uzet će u obzir i sve artikle koji u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) imaju postavljenu politiku upravljanja zalihama;
+
+**Planiranje po zoni isporuke**: aktivacijom ove opcije sustav uzima u obzir zonu isporuke narudžbe te planira izvršenje prije planiranog dana isporuke;
+
+**Provjeri dokumente u kašnjenju pomoću ATP-a**: aktivacijom ove opcije omogućuje se i polje **MS početni datum**. Sustav tada provjerava planirane naloge te, ako se pokaže da je barem jedan od njih u kašnjenju u odnosu na planirani datum, briše sve generirane naloge i ponovno ih izračunava od **MS početnog datuma** koristeći logiku *što ranije*. Novi predloženi datum proizvodnog naloga prikazuje se u polju **Predloženi datum** u tablici rezultata. Nakon toga moguće je koristiti gumb **Promijeni procijenjeni datum završetka predloženim datumom** (na kartici **Nalozi** unutar *Općeg planiranja*) kako bi se planirani datum završetka zamijenio novim predloženim datumom te ponovno pokrenulo planiranje s ispravnim parametrima;
+
+**Automatsko puštanje planiranih naloga**: ako je ova opcija aktivna, sustav nakon generiranja planiranih naloga automatski izvršava njihovo oslobađanje. Time planirani proizvodni nalozi postaju proizvodni nalozi, planirani nalozi nabave postaju zahtjevi za nabavu (RDA), a planirani nalozi kooperacije postaju nalozi kooperacije;
+
+**Planiranje na najranije ili posljednje**: korisnik može odabrati logiku prema kojoj će se izvršiti opće planiranje. Logika **što ranije** nastoji započeti aktivnosti čim je moguće, polazeći od današnjeg datuma. Logika **što kasnije** planira aktivnosti što kasnije, bez ugrožavanja rokova, polazeći od datuma isporuke i računajući unatrag;
+
+**Planiranje pokrenutih ili izvršnih naloga**: omogućuje aktiviranje oznaka **Pokrenuti** i **Izvršni** na kartici **Nalozi**. Time je moguće prikazati i odabrati proizvodne naloge u tim statusima te ih ponovno planirati. Važno je napomenuti da će se za pokrenute ili izvršne naloge ponovno planirati samo oni planirani nalozi koji još nisu oslobođeni;
+
+**Verzija**: planiranje će koristiti verziju navedenu u ovom polju ako u proizvodnom nalogu nije definirana verzija. Verzija definirana na samom proizvodnom nalogu ima prednost pred verzijom zadanom u parametrima *Općeg planiranja*. Ovo je obavezno polje i bez njegove vrijednosti nije moguće pokrenuti planiranje;
+
+**Razmotri raspoloživost**: ako je opcija aktivna, postupak planiranja uzima u obzir raspoloživost iz skladišta navedenih u donjoj tablici, odnosno skladišta definiranih u formi [Izračun raspoloživosti](/docs/erp-home/registers/items/calculate-availability/);
+
+**Razmotri raspoloživost na datum potrebe ili minimalnu raspoloživost u razdoblju**: ove opcije dostupne su samo ako je aktivna opcija **Razmotri raspoloživost**.
+- **Na datum potrebe**: sustav uzima u obzir raspoloživost u trenutku kada je potrebno proizvesti nalog.
+- **Minimalna u razdoblju**: sustav uzima u obzir najnižu raspoloživost unutar razdoblja do datuma definiranog u parametru **Planirati do**.
+
+**Razmotri lotove sa stanjem 'nije raspoloživo'**: dostupno samo ako je aktivna opcija **Razmotri raspoloživost**. Ako je aktivno, planiranje uzima u obzir i serije koje imaju status nedostupnosti;
+
+**Razmotri raspoloživost i za prvu razinu**: također dostupno samo ako je aktivna opcija **Razmotri raspoloživost**. Ako je aktivno, raspoloživost se provjerava i za artikl prve razine, odnosno za artikl koji se nalazi na proizvodnom nalogu;
+
+**Razmotri i negativnu raspoloživost**: ako je aktivno, tijekom planiranja uzima se u obzir i negativna raspoloživost artikla prve razine. Ova opcija može se aktivirati samo ako je aktivna opcija **Razmotri raspoloživost i za prvu razinu**;
+
+**Razmotri raspoloživost iz**: ove opcije postaju dostupne tek nakon aktiviranja opcije **Razmotri raspoloživost** te omogućuju određivanje hoće li se u obzir uzimati raspoloživost iz nabave, prodaje, skladišta, podizvođača i proizvodnje;
+
+**Nadopuna minimalne zalihe stavki i nadopuna točke naručivanja artikla**: prva opcija dostupna je samo ako je aktivirana druga. Ovim se određuje da postupak planiranja mora predvidjeti nadopunu točke naručivanja artikla te, po potrebi, i minimalne zalihe. Oba podatka definiraju se na kartici [Opskrba](/docs/erp-home/registers/items/create-new-item) šifarnika artikla;
+
+**Razmotri indeks pokrivanja**: ako je aktivno, planiranje uzima u obzir indeks pokrivenosti definiran na kartici **Opskrba** artikla;
+
+**Razmotri alternative materijala**: ako je aktivno, tijekom planiranja proizvodnog naloga sustav uzima u obzir i alternativne materijale definirane na kartici **Alternative** u [Sastavnici](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management), kada nema dovoljno raspoloživosti za osnovni materijal. Dopušteno je kombinirati više alternativnih materijala za pokrivanje potrebe. Ako ni alternativni materijali nisu raspoloživi, planiranje predlaže nalog za nadopunu osnovnog materijala. Ova opcija koristi se samo ako je aktivna opcija **Razmotri raspoloživost**;
+
+**Razmotri samo alternativne materijale**: ako je aktivno, sustav uzima u obzir samo alternativni materijal koji samostalno može pokriti cjelokupnu potrebnu količinu. Nije dopušteno kombiniranje više alternativnih materijala. Ako nijedan alternativni materijal nije raspoloživ u potrebnoj količini, planiranje predlaže nalog za nadopunu osnovnog materijala. Ova opcija koristi se samo ako je aktivna opcija **Razmotri raspoloživost**.
+
+:::note Napomena
+Alternativni materijali definiraju se na kartici **Alternative**, koja pripada osnovnom materijalu unutar [Sastavnice](/docs/erp-home/registers/production/bill-of-materials/assemblies/structure-management).
+:::
+
+**Razmotri alternativne faze**: ako je ova opcija aktivna, tijekom planiranja uzimaju se u obzir i alternativne proizvodne operacije. Aktivacijom ove opcije omogućuje se uređivanje sljedećeg polja **Tolerancija opterećenja radnog centra %**, u kojem se definira postotak opterećenja radnog centra iznad kojeg će sustav početi razmatrati alternativne operacije umjesto zadanih.
 
 ## Praćenje
 
-Na ovoj kartici, aktiviranjem ili deaktiviranjem dostupnih opcija, korisnik ima mogućnost odabira prikaza rezultata planiranja u tablici **Arhiva**.
+Na ovoj kartici korisnik pomoću dostupnih oznaka može odabrati koje će se informacije prikazivati u kartici **Arhiva** kao rezultat planiranja.
 
-Može se odlučiti želi li se prikazati koje su **Kalendari** uzeti u obzir (*Proizvodni kalendar* i *kalendar Kapaciteta proizvodnje*); također se može odabrati da se označi ukoliko je u planiranju prisutno više **Artikala bez** *MRP Parametara*, bez *Osnovne strukture* ili *Radnog ciklusa*, bez *preferiranog Dobavljača* (u slučaju narudžbi za nabavu), bez *preferiranog Izvođača* (za narudžbe radnih naloga) i bez naznake minimalne zalihe za sve one artikle koji su upravljani zalihama. Za svaki **Radni nalog** može se odlučiti da se u povijesti prikaže *Broj zakazanih redova* i pojedinosti tih redova, kašnjenje narudžbi i istekli nalozi.
+Moguće je odabrati prikaz korištenih **Kalendara** (*Tvornički kalendar* i kalendar *Proizvodnih kapaciteta*). Također se može uključiti upozorenje ako su tijekom planiranja pronađeni **Artikli bez**:
+- *MRP parametara*,
+- *Sastavnice*,
+- *Proizvodni ciklus*,
+- *Preferiranog dobavljača* (za nabavne naloge),
+- *Preferiranog podizvođača* (za naloge kooperacije),
+- definirane *minimalne zalihe* za artikle koji se vode po zalihama.
 
-Što se tiče **Planiranih Narudžbi**, možete odabrati hoćete li prikazati u povijesti *Broj Generiranih Narudžbi* i njihove *Detalje*, *kašnjenja* i *istekle* narudžbe, *Alternativne materijale*. Također možete odabrati da vas se obavijesti ako su **Planirane narudžbe bez** *Materijala*, *Radnih faza*, *Dobavljača* (za nabavu) ili *Podizvođača* (za radne naloge).
+Za svaki **Radni nalog proizvodnje** moguće je odabrati prikaz:
+- *Broja planiranih redaka*,
+- detalja tih redaka,
+- naloga u odgodi,
+- isteklih naloga.
 
-**Legenda**: aktiviranje zastavica omogućuje primanje obavijesti i detalja o odabranim stavkama.  
+Za **Planirane naloge/narudžbe** moguće je prikazati:
+- *Broj generiranih naloga/narudžbi*,
+- njihov *Detalj*,
+- naloge *U odgodi*,
+- *Istekle* naloge,
+- *Alternativne materijale*.
+
+Također je moguće uključiti upozorenja za slučajeve kada postoje **Planirani nalozi bez**:
+- materijala,
+- proizvodnih faza,
+- dobavljača (kod nabave),
+- podizvođača (kod kooperacije).
+
+**Legenda**: aktivne oznake omogućuju prikaz upozorenja i detalja za odabrane stavke.
 
 ## Povijest
 
-Na mreži ove kartice prikazuju se sve sažete informacije o planiranju naloga.  
+U tablici ove kartice prikazuju se sve sažete informacije vezane uz izvršeno planiranje proizvodnog naloga.
 
-**Redni broj planiranja**: prikazuje jednostavan redni broj operacije planiranja pokrenute od strane korisnika;  
-
+**Program rasporeda**: prikazuje redni broj pokrenutog postupka planiranja;
 **Operater**: prikazuje korisnika koji je pokrenuo planiranje;
-
-**Broj pogrešaka**: prikazuje broj pogrešaka zabilježenih tijekom postupka planiran;
-
+**Broj grešaka**: prikazuje broj grešaka evidentiranih tijekom postupka planiranja;
 **Datum početka**: prikazuje datum i vrijeme početka procesa planiranja;
-
 **Datum završetka**: prikazuje datum i vrijeme završetka procesa planiranja;
+**Planirani podaci koji dolaze iz**: prikazuje izvor planiranih podataka;
+**Predviđanje**: prikazuje dolaze li podaci iz *Prognoze prodaje* ili iz *Glavnog plana proizvodnje*;
+**Period**: prikazuje vrstu prognoze, tjednu ili mjesečnu;
+**Dan**: prikazuje dan u tjednu određen kao dan završetka proizvodnog naloga generiranog kroz Definiciju MPS-a.
 
-**Planirani podaci dolaze iz**: prikazuje točan izvor planiranih podataka;
+Sve ostale kolone prikazuju postavke korištene na kartici **Parametri** unutar *Općeg planiranja* za odabrani redak.
 
-**Predviđanje**: prikazuje jesu li podaci iz predviđanja prodaje ili iz glavnog plana proizvodnje;
+### Rezultat planiranja
 
-**Razdoblje**: prikazuje vrstu predviđanja, tj. tjedni ili mjesečni;
+Ovisno o odabranom retku u tablici, u ovoj sekciji prikazuju se detalji koje je korisnik odabrao na kartici **Praćenje**.
 
-**Dan**: prikazuje dan u tjednu koji je određen kao dan kada bi trebao biti završen planirani proizvodni nalog izravno iz Definicije MPS-a.
+U rezultatu planiranja moguće je vidjeti:
+- broj upravo planiranog proizvodnog naloga,
+- broj planiranih naloga generiranih iz tog proizvodnog naloga,
+- detaljan pregled svih generiranih planiranih naloga.
 
-Sve ostale stupce u mreži prikazuju postavke koje su korištene u kartici **Opći parametri** *Planiranja* za odabranu liniju.  
-
-**Rezultat planiranja**
-
-Na temelju odabrane stavke u mreži, u ovoj sekciji će se prikazati detalji koje je korisnik zatražio u kartici **Praćenje**.
-
-U rezultatima planiranja možete vidjeti broj proizvodnog naloga koji je zakazan, broj planiranih narudžbi koje su generirane iz tog naloga i detalje generiranih narudžbi. 
-
-Za detalje o općem radu obrasca, pogledajte link [Značajke, gumbe i zajednička polja](/docs/guide/common).
+Za detalje o zajedničkim funkcionalnostima svih formi pogledajte dokument [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).

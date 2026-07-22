@@ -1,64 +1,109 @@
 ---
 title: MRP
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-**Manufacturing Resourse Planning**
+:::important Čemu služi
+Funkcionalnost **MRP** (*Manufacturing Resource Planning*) u Fluentisu omogućuje analizu raspoloživosti materijala i proizvodnih resursa u skladu s planom proizvodnje. Putem ovog postupka korisnik dobiva prijedloge za optimizaciju upravljanja materijalima, uključujući preporuke za raniju nabavu, nadopunu potrebnih količina ili otkazivanje suvišnih narudžbi.
+Fluentis MRP uzima u obzir proizvodna ograničenja, sirovine te poluproizvode koji su raspoloživi ili naručeni, omogućujući učinkovitu kontrolu svakog aktivnog proizvodnog naloga. Cilj sustava je optimizacija zaliha, smanjenje stanja skladišta i povećanje operativne učinkovitosti.
+:::
 
-Ovaj postupak omogućuje korisniku analizu pravilne dostupnosti materijala i proizvodnih resursa u skladu s planiranjem proizvodnje. Kroz ovu obradu, operater može dobiti niz preporuka o ranijem nabavu određenih materijala, integraciji potrebnih količina ili otkazivanju nepotrebnih narudžbi kako bi se olakšalo praćenje i upravljanje operacijama. MRP provodi planiranje proizvodnje uzimajući u obzir različite proizvodne ograničenja, dostupne sirovine i poluproizvode te naručene materijale.   
-Zahvaljujući ovom postupku, operater može analizirati proizvodnu pokrivenost svake aktivne narudžbe, upravljajući i koordinirajući sve procese uključene u nabavu, proizvodnju i dostavu gotovog proizvoda. Osnovni princip MRP sustava je optimizacija zaliha prema poslovnim potrebama, što rezultira smanjenjem razine zaliha i povećanjem učinkovitosti. Ukratko, putem algoritama ove funkcije, Fluentis MRP je sposoban pratiti raspoloživost svakog materijala u skladištu i njegovu dostupnost na odabranom datumu.
+Ova procedura omogućuje korisniku analizu stvarne raspoloživosti materijala i proizvodnih resursa u odnosu na plan proizvodnje.
+Kroz ovu obradu operater može dobiti niz prijedloga vezanih uz:
+- raniju isporuku pojedinih materijala,
+- nadopunu potrebnih količina,
+- otkazivanje nepotrebnih narudžbi artikala,
+s ciljem što jednostavnije kontrole i upravljanja proizvodnim procesima.
 
-### M.R.P.
+MRP provodi planiranje proizvodnje uzimajući u obzir različita proizvodna ograničenja, raspoložive sirovine i poluproizvode te one koji su već naručeni.
+Zahvaljujući ovoj proceduri korisnik može analizirati pokrivenost potreba svakog aktivnog proizvodnog naloga te upravljati i koordinirati svim procesima vezanima uz nabavu, proizvodnju i isporuku gotovog proizvoda.
+Temeljno načelo sustava planiranja potreba za materijalima jest optimizacija zaliha prema stvarnim potrebama poduzeća, što rezultira smanjenjem razine zaliha i povećanjem učinkovitosti.
+Korištenjem algoritama ove funkcionalnosti Fluentis MRP u svakom trenutku može utvrditi zauzetost pojedinog materijala na skladištu te njegovu raspoloživost na željeni datum.
 
-Na ovoj kartici prikazuju se rezultati prethodno pokrenute MRP obrade.  
+### MRP
 
-### Radni nalog  
+Na ovoj kartici moguće je pregledavati rezultate odabirom obrade iz povijesti izvršenja.
+Treba imati na umu da se obrade čuvaju u povijesti onoliko dana koliko je definirano u polju **Broj dana čuvanja MRP povijesti**, dostupnom u [Parametrima potreba za materijalima](/docs/configurations/parameters/production/resource-requirements-parameters).
+Forma se sastoji od područja za filtriranje u kojem je moguće filtrirati prema:
+- artiklu,
+- vrsti opskrbe,
+- vrsti prijedloga koji je generirala procedura.
 
-Na ovoj kartici možete filtrirati i odabrati proizvodne naloge koje želite obraditi, kako biste djelovali djelomično na odabrane proizvodne naloge ili globalno na sve proizvodne naloge prisutne u proizvodnji.  
+Na desnoj strani nalazi se popis svih artikala koje je procedura obradila te pripadajućih predloženih aktivnosti.
+Odabirom pojedinog retka u središnjoj tablici prikazuju se sve informacije o predloženim aktivnostima. Za svaku aktivnost prikazani su:
+- raspoloživost,
+- potreba,
+- potvrđena potreba,
+ako je procedura pokrenuta s aktiviranom opcijom **Razlika potvrđene proizvodne potražnje**.
+
+U donjoj tablici prikazane su informacije o svim dokumentima povezanim s artiklom, zajedno s prikazom:
+- potražnje,
+- ponude,
+- raspoloživosti na odabrani datum.
+
+Odabirom planiranog naloga koji je generirao MRP moguće ga je osloboditi putem gumba **Oslobađanje planiranih naloga**.
+
+### Radni nalog
+
+Na ovoj kartici moguće je filtrirati i odabrati proizvodne naloge koje je potrebno obraditi, kako bi se MRP mogao pokrenuti:
+- djelomično, samo za odabrane proizvodne naloge,
+- ili globalno, za sve proizvodne naloge u proizvodnji.
 
 ### Parametri
 
-Putem ove kartice podešavaju se svi opći parametri koji se odnose na postupak MRP. Neke postavke prisutne na ovoj kartici preuzimaju se iz prozora [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) i odnose se na određeni artikl.   
+Na ovoj kartici definiraju se svi opći parametri vezani uz MRP proceduru.
+Dio postavki preuzima se iz forme [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) te se odnosi na pojedini artikl.
 
-**Raspored**:   
-> **Vremensko planiranje do**: označava datum završetka rasporeda;      
-> **Zastava Materijali**: ako je omogućeno, materijali se uzimaju u obzir pri planiranju;      
-> **Zastava Resursi**: ako je omogućeno, resursi se uzimaju u obzir pri planiranju;      
-> **Zastava Planiranih narudžbi za nabavu**: ako je omogućeno, planirane narudžbe za nabavu uzimaju se u obzir pri planiranju;      
-> **Zastava Planiranih proizvodnih narudžbi**:  ako je omogućeno, planirane proizvodne narudžbe uzimaju se u obzir pri planiranju;      
-> **Zastava Planiranih narudžbi za radne naloge**: ako je omogućeno, planirane narudžbe za radne naloge uzimaju se u obzir pri planiranju;     
+### Planiranje
 
-**Za dokumente bez potrebnih datuma:**    
-> **Narudžbe dobavljača i zahtjevi za kupovinu**: možete odlučiti ne uzimati u obzir članke bez predviđenog datuma primitka, ili koristiti ručno uneseni datum kao predviđeni datum isporuke u ovoj sekciji;     
-> **Narudžba kupaca**: možete odlučiti ne uzimati u obzir članke bez predviđenog datuma primitka, ili koristiti ručno uneseni datum kao predviđeni datum isporuke u ovoj sekciji;    
+> **Planiraj do**: određuje datum do kojeg će sustav uzimati u obzir unesene dokumente. Kao zadani datum predlaže se posljednji dan tekuće godine ako je trenutni datum prije 30. lipnja, odnosno posljednji dan sljedeće godine ako je trenutni datum nakon 1. srpnja.
+> **Oznaka Materijali**: ako je aktivna, u generirane planirane naloge uključuju se materijali predviđeni za potrošnju. Ako nije aktivna, planirani nalozi će se svejedno generirati, ali bez materijala.
+> **Oznaka Resursi**: ako je aktivna, u generirane planirane naloge uključuju se i proizvodne operacije. Ako nije aktivna, planirani nalozi će se generirati bez proizvodnih operacija.
+> **Oznaka Planirane narudžbe nalozi nabave**: ako je aktivna, planirani nalozi nabave uzimaju se u obzir tijekom planiranja.
+> **Oznaka Planirane narudžbe proizvodnje**: ako je aktivna, planirani nalozi proizvodnje uzimaju se u obzir tijekom planiranja.
+> **Oznaka Planirane narudžbe podizvođača**: ako je aktivna, planirani nalozi kooperacije uzimaju se u obzir tijekom planiranja.
 
-**Razmatra dostupnosti koje dolaze iz**:      
-> **Acquisti**: ako je aktiviran, omogućuje da dokumenti iz područja *Nabave* moraju biti uzeti u obzir tijekom obrade MRP postupka;     
-> **Prodaja**: ako je aktiviran, omogućuje da dokumenti iz područja *Prodaje* moraju biti uzeti u obzir tijekom obrade MRP postupka;      
-> **Skladište**: ako je aktiviran, omogućuje da dokumenti iz područja *Skladišta* moraju biti uzeti u obzir tijekom obrade MRP postupka;     
-> **Podizvođač**: ako je aktiviran, omogućuje da dokumenti iz područja *Podizvođač* moraju biti uzeti u obzir tijekom obrade MRP postupka;     
-> **Planiranje**: ako je aktiviran, omogućuje da dokumenti iz područja *Planiranja* (tj. Proizvodne naloge, Planirane narudžbe za Nabavu, Radne naloge i/ili Proizvodnju) moraju biti uzeti u obzir tijekom obrade MRP postupka;
-> **Proizvodnja**: ako je aktivirana, omogućuje da dokumenti iz područja izdane *Proizvodnje* (tj. proizvodni nalozi) moraju biti uzeti u obzir tijekom obrade MRP postupka;      
- 
-**Razmotrite alternative materijala**: *U RAZVOJU*    
-**Razmotrite i alternativne faze**: *U RAZVOJU* 
+### Za dokumente bez potrebnog datuma
 
-**Čitaj popise/rute**:   
-> **Verzija**: označava zadani broj verzije koji se uzima u obzir za strukturu / ciklus;    
+> **Narudžbe dobavljačima i zahtjevi za nabavu**: moguće je odabrati da se artikli bez planiranog datuma primitka ignoriraju ili da se kao planirani datum primitka koristi datum ručno definiran u ovoj sekciji.
+> **Narudžbe kupaca**: moguće je odabrati da se artikli bez planiranog datuma primitka ignoriraju ili da se kao planirani datum isporuke koristi datum ručno definiran u ovoj sekciji.
 
-**Razmotrite količine prema ekonomskom lotu**: ako je aktivirano, omogućuje da se za artikl uzme u obzir ekonomska serija (minimalna količina) za proizvodnju ili kupovinu;     
-**Razmotri višekratnike ekonomskih lotova**: ako je aktivirano, omogućuje da se za artikl uzme u obzir višekratnik ekonomske serije za proizvodnju ili kupovinu;     
-**Ponovno uspostavljanje minimalne zalihe za artikl**: ako je aktivirano, omogućuje da se za artikl ponovno uspostavi minimalna zalihama postavljena u njegovom matičnom kartici, u tablici *Nabava*;     
-**Obnova točke ponovnog naručivanja za artikl**: ako je aktivirano, omogućuje da se za artikl ponovno uspostavi točka ponovnog naručivanja postavljena u njegovom matičnom kartici, u tablici *Nabava*; *U RAZVOJU*        
-**Razmotriti indeks pokrivenosti**: ako je aktivirano, omogućuje da se za artikl uzme u obzir indeks pokrivenosti postavljen u njegovom šifarniku, u kartici *Nabava*; indeks pokrivenosti se izražava u tjednima i kada je naveden, znači da se sustavu nalaže pokriti potrebe za navedeni broj tjedana u ovom polju;     
-**Nema prijedloga**: ako je aktivno, MRP neće predlagati radnje povećanja, smanjenja, brisanja, prethodnog ili naknadnog pomaka na već stvorenim planiranim narudžbama;     
-**Razmotri prošlost**: ako je aktivno, za dokumente s datumom predviđene isporuke u prošlosti u odnosu na trenutni datum (danas), uzima u obzir dostupnost i u prošlosti; ako nije aktivno, svi dokumenti s datumom predviđene isporuke u prošlosti (u odnosu na danas) bit će razmatrani s datumom predviđene isporuke danas;         
-**Razlikuj potvrđeni zahtijev za proizvodnju**: ako je aktivno, MRP se izvršava dvaput. Prvo izvršavanje uzima u obzir samo potrebe proizašle iz izvršnih dokumenata (područja: SCM - Nabava, SCS - Kontrola rada i MES - Proizvodnja), generirajući planirane narudžbe po potrebi i valorizirajući polje "potvrđena količina" (prisutno u upravo stvorenoj planiranoj narudžbi). Ovo prvo izvršavanje generira dokumente koji su strogo potrebni za zadovoljenje potražnje iz najhitnijih izvršnih dokumenata. Drugo izvršavanje uzima u obzir potrebe proizašle iz svih dokumenata uključujući i proizvodne naloga; ovo drugo izvršavanje generira nedostajuće dokumente bez optimizacije s onima generiranim u prvom izvršavanju kako bi se omogućila zasebna potvrda/izdavanje istih;         
-**Razmotri stavke bez podnaloga**: ako je aktivno, tokom obrade MRP procedure razmatraju se svi članci sa politikom upravljanja prognozama i potrebama (osim arhiviranih i/ili fiktivnih) i s politikom upravljanja narudžbama samo ako je aktiviran flag *Nalog proizvodnje* u MRP parametrima članka, čak i ako nemaju određenu narudžbu;       
-**Kontrola zahtjeva s generiranjem planiranih naloga**: omogućuje odabir generiranja planiranih narudžbi ili ne. Ako nije aktivno, MRP će samo predložiti stvaranje planiranih narudžbi. Napomena da planirane narudžbe koje stvara MRP nemaju reference na narudžbe;      
-**Stavke kojih ima na zalihi**: obuhvaćaju sve artikle koji imaju politiku upravljanja "Na zalihi" u MRP parametrima članka. Također, u MRP parametrima barem jedan od parametara minimalne zalihe i točke naručivanja mora biti postavljen;      
-**Tolerancija za zauzeće Radnog centra**: koristi se u generiranju zauzeća za faze planiranih narudžbi proizvodnje kako bi se definiralo kada MRP treba koristiti alternativnu radnu fazu.     
+### Uvažavaj raspoloživosti iz
 
-### Arhiva
+> **Nabava**: ako je aktivno, dokumenti iz područja **Nabava** uzimaju se u obzir tijekom MRP obrade.
+> **Prodaja**: ako je aktivno, dokumenti iz područja **Prodaja** uzimaju se u obzir tijekom MRP obrade.
+> **Skladište**: ako je aktivno, dokumenti iz područja **Skladište** uzimaju se u obzir tijekom MRP obrade.
+> **Podizvođač**: ako je aktivno, dokumenti iz područja **Podizvođač** uzimaju se u obzir tijekom MRP obrade.
+> **Planiranje**: ako je aktivno, dokumenti iz područja **Planiranje** (proizvodni nalozi, planirani nalozi nabave, kooperacije i/ili proizvodnje) uzimaju se u obzir tijekom MRP obrade.
+> **Proizvodnja**: ako je aktivno, dokumenti iz područja **Pokrenute proizvodnje** (odnosno proizvodni nalozi) uzimaju se u obzir tijekom MRP obrade.
 
-Na ovoj kartici možete filtrirati i pregledati popis pokrenutih MRP procedura, s naznakom korisnika i vremena kada su izvršene.    
+### Razmotri alternative materijale
+
+*U RAZVOJU*
+
+### Razmotri alternativne faze
+
+*U RAZVOJU*
+
+### Čitanje sastavnica / tehnoloških postupaka
+
+> **Verzija**: određuje zadanu verziju sastavnice i/ili tehnološkog postupka koja će se uzeti u obzir.
+**Razmotri količine prema ekonomskom lotu**: ako je aktivno, za artikl će se uzeti u obzir ekonomična serija (minimalna količina) proizvodnje ili nabave.
+**Razmotri višekratnike ekonomskih lotova**: ako je aktivno, za artikl će se uzeti u obzir višekratnici ekonomične serije proizvodnje ili nabave.
+**Obnovi minimalnu zalihu stavki**: ako je aktivno, za artikl će se nadopuniti minimalna zaliha definirana u njegovom šifarniku, na kartici *Opskrba*.
+**Razmotri indeks pokrivanja**: ako je aktivno, za artikl će se uzeti u obzir indeks pokrivenosti definiran u njegovom šifarniku, na kartici *Opskrba*. Indeks pokrivenosti izražava se u tjednima i označava broj tjedana za koje sustav treba osigurati pokrivenost potreba.
+**Nema prijedloga**: ako je aktivno, MRP neće predlagati radnje povećanja, smanjenja, brisanja, pomicanja unaprijed ili odgode već generiranih planiranih naloga.
+**Razmotri prošlost**: ako je aktivno, za dokumente čiji je planirani datum isporuke prije trenutnog datuma (danas), raspoloživost će se računati i za prošlo razdoblje. Ako nije aktivno, svim dokumentima iz prošlosti dodijelit će se današnji datum kao planirani datum isporuke.
+**Razlikuj zahtjev za potvrđenu proizvodnju**: ako je aktivno, MRP se izvršava dva puta.
+
+Prvo izvršavanje uzima u obzir samo potrebe koje proizlaze iz izvršnih dokumenata (područja: SCM – Nabava, SCS – Kooperacija i MES – Proizvodnja) te prema potrebi generira planirane naloge, pri čemu se popunjava i polje **Potvrđena količina** (na novostvorenom planiranom nalogu). Ova faza generira dokumente nužne za pokrivanje najhitnijih potreba, odnosno potreba koje proizlaze iz izvršnih dokumenata.
+
+Drugo izvršavanje uzima u obzir potrebe iz svih dokumenata, uključujući i proizvodne naloge. U ovoj fazi generiraju se preostali potrebni dokumenti, ali bez optimizacije s dokumentima nastalima u prvom izvršavanju, kako bi ih bilo moguće zasebno potvrditi ili pustiti u izvršenje.
+**Razmotri stavke bez naloga**: ako je aktivno, tijekom MRP obrade uzimaju se u obzir svi artikli s politikom upravljanja prema prognozi i potrebama (osim arhiviranih i fiktivnih artikala) te artikli s politikom upravljanja po proizvodnom nalogu (samo ako je u njihovim **MRP parametrima** aktivna oznaka *Uvažavaj artikl u MRP izračunu*), čak i ako nisu povezani s proizvodnim nalogom.
+**Kontrola zahtjeva s generiranjem planiranih naloga**: omogućuje odabir hoće li se planirani nalozi stvarno generirati. Ako nije aktivno, prikazivat će se samo prijedlozi za njihovo kreiranje. Planirani nalozi koje generira MRP nemaju vezu s proizvodnim nalozima.
+**Stavke na zalihi**: uzimaju se svi artikli koji u MRP parametrima imaju politiku upravljanja **Na zalihi**. Osim toga, u MRP parametrima mora biti definiran barem jedan od parametara: *Minimalna zaliha* ili *Točka ponovne narudžbe*.
+**Tolerancija zauzetosti radnih centara**: koristi se pri generiranju opterećenja za operacije planiranih proizvodnih naloga kako bi se odredilo kada MRP treba koristiti alternativnu radnu operaciju.
+
+## Povijest
+
+Na ovoj kartici moguće je filtrirati i pregledavati popis pokrenutih MRP obrada, uz prikaz korisnika koji ih je pokrenuo te datuma i vremena izvršenja.
