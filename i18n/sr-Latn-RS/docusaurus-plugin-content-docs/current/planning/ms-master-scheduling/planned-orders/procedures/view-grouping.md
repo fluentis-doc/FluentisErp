@@ -1,16 +1,16 @@
 ---
-title: Prikaži grupiranje
+title: Pregled grupisanja
 sidebar_position: 1
 ---
 
-Obrazac omogućuje pretraživanje svih grupacija s ciljem njihovog prikaza ili brisanja. 
+Ovaj obrazac omogućava pretragu svih grupisanja sa ciljem njihovog pregleda ili brisanja.
 
-U području filtra moguće je primijeniti filtar po artiklu, varijanti, proizvodnom nalogu, proizvodnoj narudžbi, itd. Putem odgovarajuće opcije moguće je odabrati želite li prikazati i grupacije koje sadrže *Naloge za održavanje*.
+U području za filtriranje moguće je primeniti filtere prema artiklu, varijanti, proizvodnom nalogu, proizvodnom nalogu za izvršenje i slično. Putem odgovarajuće oznake moguće je odabrati prikaz i grupisanja koja sadrže *naloge održavanja*.
 
-Nakon što postavite sve željene filtre, dovoljno je kliknuti na gumb **Traži** u  *traci izbornika* kako biste prikazali rezultate unutar rezultatske mreže.   
+Nakon postavljanja željenih filtera dovoljno je kliknuti na dugme **Traži** u *Ribbon Baru* kako bi se rezultati prikazali u tabeli rezultata.
 
-Za *otvaranje* detalja grupacije, dovoljno je odabrati ju i dvaput kliknuti mišem ili kliknuti na gumb **Prikaži**.
+Za *otvaranje* detalja grupisanja potrebno ga je odabrati i dvaput kliknuti mišem ili kliknuti na dugme **Prikaži**.
 
-Ulaskom u prikaz odabrane grupacije otvara se novi obrazac, koji se sastoji od prvog dijela s poljima koja sažimaju glavne podatke o *Grupaciji* i rezultatske mreže gdje se mogu prikazati svi *Nalozi u grupaciji*.
+Prilikom otvaranja odabranog grupisanja prikazuje se novi obrazac koji se sastoji od gornjeg dela sa poljima koja sažeto prikazuju glavne podatke o *grupisanju* te tabele rezultata u kojoj se mogu pregledati svi *nalozi grupisanja*.
 
-Za detalje o uobičajenom funkcioniranju formi pogledajte poveznicu [Funkcionalnosti, gumbi i uobičajena polja](/docs/guide/common).
+Za detalje o zajedničkim funkcionalnostima obrazaca pogledajte stranicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

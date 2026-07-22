@@ -1,5 +1,5 @@
 ---
-title: Izdvaanje planiranih naloga
+title: Izdavanje planiranih naloga
 sidebar_position: 1
 ---
 

@@ -1,37 +1,38 @@
 ---
-title: Pretraga Proizvodnih naloga 
+title: Pretraga planiranih naloga
 sidebar_position: 2
 ---
 
-Obrazac za pretraživanje dokumenata omogućuje pretraživanje svih dokumenata s ciljem njihovog prikazivanja, izmjene i eventualnog brisanja ili unosa novog dokumenta; prozor se sastoji od područja filtra i rezultata u tablici. 
+Obrazac za pretragu dokumenata omogućava pretragu svih dokumenata radi njihovog pregleda, izmene i eventualnog brisanja ili unosa novog dokumenta; prozor se sastoji od oblasti za filtriranje i tabele sa rezultatima.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** na *traci izbornika* kako bi se rezultati prikazali u tablici. 
+Nakon podešavanja svih željenih filtera, dovoljno je kliknuti na dugme **Traži** na *Ribbon traci* kako bi se rezultati prikazali u tabeli.
 
-Za otvaranje detalja dokumenta, dovoljno je odabrati ga i dvaput kliknuti mišem, ili kliknuti na gumb **Izmjena** (omogućuje ulazak u detalje i njihovu izmjenu) ili na gumb **Prikaži** (omogućuje ulazak u detalje i njihov prikaz, ali bez mogućnosti izmjene).
+Za otvaranje detalja dokumenta dovoljno je da ga odaberete i dvaput kliknete mišem ili kliknete na dugme **Izmena** (omogućava ulazak u detalje i njihovu izmenu) ili na dugme **Prikaži** (omogućava ulazak u detalje i njihov pregled bez mogućnosti izmene).
 
-*Vidi također*: 
+*Vidi takođe*:
 
-*Funkcionalnosti, gumbi i zajednička polja*   
-*Dodavanje novih polja u obrasce za pretraživanje*   
+*Funkcionalnosti, dugmad i zajednička polja*  
+*Dodavanje novih polja u obrasce za pretragu*
 
+### Specifična dugmad
 
-*Specifični gumbi*:
+> [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): ovim dugmetom možete otvoriti ekran sa MRP parametrima artikla;
 
-> [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters): ovim gumbom možete otvoriti zaslon za MRP parametre artikla;               
-> [Sastavnica materijala](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućuje otvaranje zaslona za popis materijala artikla;    
-> [Proizvodni ciklusi](/docs/erp-home/registers/production/routes/new-route): omogućuje pregled radnog ciklusa i povezanih proizvodnih faza artikla.  
+> [Sastavnica](/docs/erp-home/registers/production/bill-of-materials/search-and-insert-assemblies): omogućava otvaranje ekrana sa sastavnicom artikla;
 
-*Specifična polja*:
+> [Proizvodni ciklusi](/docs/erp-home/registers/production/routes/new-route): omogućava pregled radnog ciklusa i povezanih proizvodnih faza artikla.
 
-**Datum početka**: za planirane narudžbe kupnje ili radnih naloga, označava datum kada treba poslati narudžbu dobavljaču koja će biti generirana prilikom izdavanja same narudžbe. Za planirane narudžbe proizvodnje, ovo označava predviđeni datum početka prve faze proizvodnje;    
-**Datum FOB-a**(free on Board): predstavlja datum koji se izračunava zbrajanjem *Predviđenog datuma početka* i *Vremena nabave* unesenog u karticu [Preferirani dobavljači](/docs/erp-home/registers/items/create-new-item) artikla koji je predmet Planirane narudžbe za nabavu. Ovo se obrađuje samo za artikle s tipom nabave *Kupnja*;    
-**Datum očekivanog vremena dolaska**(Estimated Time of Arrival): označava datum koji se izračunava dodavanjem *Datum FOB-a* na *Lead Time Otpreme* koje je uneseno također u kartici  *Preferirani dobavljači* artikla koji je predmet planirane narudžbe za nabavu. Ovo se obrađuje samo za artikle s tipom nabave *Kupnja*;      
-**Datum završetka**: za planirane narudžbe kupnje ili radnih naloga, označava datum kada treba primiti isporuku, što će se podudarati s predviđenim datumom primitka linije narudžbe dobavljača koja će biti generirana prilikom izdavanja same narudžbe. Za planirane narudžbe proizvodnje, ovo označava predviđeni datum završetka posljednje faze proizvodnje;    
-**Od minimalne dostupnosti**: ova značajka je aktivna samo ako je planirana narudžba generirana korištenjem procedure *Općeg raspoređivanja* i ako je u [Parametrima raspoređivanja](/docs/planning/ms-master-scheduling/general-schedule), omogućena opcija za *Razmatranje minimalne dostupnosti* u razdoblju. Ova značajka će biti aktivirana ako je *Datum minimalne dostupnosti* u razdoblju rasporeda nakon datuma potrebe; inače će biti onemogućena;              
-**Potvrđena količina**: različita je od nule samo ako je narudžba generirana obradom MRP-a;    
-**Korištena količina**: količina koja je obvezana na trenutni datum za artikl;    
-**Obvezna**: ako je aktivno, zastava će naznačiti da planirana proizvodna narudžba nije pomična u odnosu na unutarnji datum početka.  
+### Specifična polja
 
-U tablici će narudžbe biti prikazane u različitim bojama ovisno o *Vrsti planirane narudžbe* (ako je kupnja, proizvodnja ili radni nalog). Ovo se podešava unutar [Parametara potrebe materijala](/docs/configurations/parameters/production/resource-requirements-parameters), u pripadnoj tablici gdje možete odabrati pozadinu reda ili tekst različitih narudžbi.  
+**Datum početka**: za planirane naloge nabavke ili kooperacije označava datum kada treba poslati narudžbinu dobavljaču koja će biti generisana prilikom izdavanja samog naloga. Za planirane proizvodne naloge označava planirani datum početka prve proizvodne faze;
+**FOB datum** (*Free On Board*): predstavlja datum koji se izračunava sabiranjem *Planiranog datuma početka* i *Vremena nabavke* unetog na kartici [Preferirani dobavljači](/docs/erp-home/registers/items/create-new-item) artikla koji je predmet planiranog naloga za nabavku. Ovo se obrađuje samo za artikle čiji je tip nabavke *Kupovina*;
+**ETA datum** (*Estimated Time of Arrival*): označava datum koji se izračunava dodavanjem *FOB datuma* i *Lead Time otpreme* unetog na kartici *Preferirani dobavljači* artikla koji je predmet planiranog naloga za nabavku. Ovo se obrađuje samo za artikle čiji je tip nabavke *Kupovina*;
+**Datum završetka**: za planirane naloge nabavke ili kooperacije označava datum kada isporuka treba da bude primljena i poklapaće se sa planiranim datumom prijema na stavci narudžbine dobavljaču koja će biti generisana prilikom izdavanja naloga. Za planirane proizvodne naloge označava planirani datum završetka poslednje proizvodne faze;
+**Od minimalne raspoloživosti**: ova funkcionalnost je aktivna samo ako je planirani nalog generisan procedurom *Opšteg planiranja* i ako je u [Parametrima planiranja](/docs/planning/ms-master-scheduling/general-schedule) aktivirana opcija *Uzimaj u obzir minimalnu raspoloživost* u periodu. Oznaka će biti aktivna ako je *Datum minimalne raspoloživosti* u periodu planiranja nakon datuma potrebe; u suprotnom će biti neaktivna;
+**Potvrđena količina**: različita je od nule samo ako je nalog generisan MRP obradom;
+**Korišćena količina**: količina koja je rezervisana za dati artikl na tekući datum;
+**Obavezan**: ako je oznaka aktivna, planirani proizvodni nalog nije moguće pomeriti nakon njegovog internog datuma početka.
 
-Iz ovog obrasca također možete unijeti novu narudžbu klikom na gumb [Umetni nalog](/docs/planning/ms-master-scheduling/planned-orders/new-planned-order).
+U tabeli će nalozi biti prikazani različitim bojama u zavisnosti od *Vrste planiranog naloga* (nabavni, proizvodni ili kooperantski). Ovo se podešava u [Parametrima potreba materijala](/docs/configurations/parameters/production/resource-requirements-parameters), u odgovarajućoj tabeli gde je moguće definisati različite boje pozadine ili teksta za pojedine vrste naloga.
+
+Iz ovog obrasca moguće je uneti i novi nalog klikom na dugme [Unesi nalog](/docs/planning/ms-master-scheduling/planned-orders/new-planned-order).

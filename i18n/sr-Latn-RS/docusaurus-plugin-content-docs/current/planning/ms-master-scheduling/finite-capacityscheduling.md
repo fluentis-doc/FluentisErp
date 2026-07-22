@@ -1,124 +1,152 @@
 ---
-title: Planiranje s ograničenjem kapaciteta
-sidebar_position: 3
+title: Planiranje ograničenog kapaciteta
+sidebar_position: 4
 ---
 
-Vremensko planiranje proizvodnje s ograničenjem kapaciteta omogućuje razumijevanje koliko rada može biti izraženo u određenom vremenskom razdoblju, uzimajući u obzir ograničenja određenih resursa. Konačni cilj je osigurati najveću učinkovitost proizvodnih tokova kroz interni pogon, optimizirajući vrijeme i smanjujući troškove radnih centara.   
-Ovom vrstom planiranja moguće je stvoriti optimalne radne sekvence za svaki pojedinačni radni centar postižući njihovu maksimalnu iskorištenost.
+:::important Čemu služi
+Funkcija **Planiranja ograničenog kapaciteta** u Fluentisu predstavlja napredan alat namenjen optimizaciji upravljanja proizvodnim resursima u proizvodnim preduzećima. Ovaj modul je integrisan u Fluentis ERP sistem i omogućava planiranje i upravljanje proizvodnim aktivnostima uzimajući u obzir stvarne kapacitete raspoloživih resursa, kao što su radna snaga, mašine i materijali. Zahvaljujući ovoj funkcionalnosti, preduzeća mogu smanjiti zastoje, povećati operativnu efikasnost i fleksibilnije odgovoriti na promene u potražnji.
 
+Raspoređivanje sa konačnim kapacitetima uzima u obzir fizička ograničenja resursa, omogućavajući izradu realnih i izvodljivih proizvodnih planova. Pored toga, nudi analitičke alate za predviđanje mogućih uskih grla i omogućava optimizaciju raspodele zadataka, integrišući se sa ostalim ERP funkcionalnostima radi potpunog pregleda poslovnih procesa. Ovaj sistem pomaže preduzećima da efikasno usklade zahteve kupaca sa proizvodnim kapacitetima, čime se povećavaju profitabilnost i zadovoljstvo kupaca.
+:::
 
-## Radni nalozi  
+Raspoređivanje proizvodnje sa konačnim kapacitetima omogućava procenu količine posla koja se može izvršiti u određenom vremenskom periodu, uzimajući u obzir ograničenja pojedinačnih resursa. Krajnji cilj je obezbediti najveću moguću efikasnost proizvodnih procesa kroz ceo proizvodni lanac, optimizujući vreme rada i smanjujući troškove radnih centara.
 
-Tablica radnih naloga prikazuje samo radne naloge koji se nalaze u stanju neplanirano.
+Ovim načinom planiranja moguće je kreirati optimalne redoslede izvođenja operacija za svaki pojedinačni radni centar i postići njihovu maksimalnu iskorišćenost.
 
-*Specifični gumbi*:
+## Radni nalog
 
-> **Zakazivanje F.C.S.**: omogućuje sustavu da planira faze obrade dokumenata s ograničenjem kapaciteta;    
-> **Izmjeni datum radnog naloga**: omogućuje promjenu datuma komitenta;    
-> **Promjena prioriteta**: omogućuje promjenu prioriteta odabranih komitenta;      
-> **Parametri MRP**: omogućuje otvaranje parametara MRP za odabrane komitente;    
-> **Sastavnica materijala**: omogućuje otvaranje struktura materijala za odabrane komitente;    
-> **Proizvodni ciklus**: omogućuje otvaranje radnih ciklusa za odabrane komitente.         
+Kartica **Radni nalog** prikazuje samo naloge koji se nalaze u statusu **Neobrađen**.
 
-*Specifični filteri*:
+### Specifična dugmad
 
-**Tip radnog naloga**: pomoću ovog izbornika moguće je odabrati vrstu radnog naloga koju želite prikazati, bilo da se radi o radnim nalozima za jedan proizvod, radnim nalozima za više proizvoda ili oba;  
+> **F.C.S. raspoređivanje**: omogućava sistemu raspoređivanje radnih faza predviđenih dokumenata prema metodi konačnih kapaciteta;  
+> **Izmeni datum naloga**: omogućava promenu datuma naloga;  
+> **Promena prioriteta**: omogućava promenu prioriteta odabranih naloga;  
+> **MRP parametri**: otvara MRP parametre odabranih naloga;  
+> **Sastavnica materijala**: otvara sastavnice odabranih naloga;  
+> **Proizvodni ciklus**: otvara radne cikluse odabranih naloga.
 
-**Mjesto proizvodnje**: možete pregledati narudžbe prema proizvodnom mjestu na kojem se proizvode, odabirom putem odgovarajućeg izbornika;  
+### Specifični filteri
 
-*Specifična polja u mreži Rezultata*
+**Tip naloga**: putem ove kombinacije moguće je odabrati prikaz monoproizvodnih naloga, multiproizvodnih naloga ili obe vrste naloga;  
+**Mesto proizvodnje**: omogućava prikaz naloga prema proizvodnoj lokaciji na kojoj će se proizvoditi, izborom odgovarajuće vrednosti.
 
-**Predloženi datum**: je pojasnjen u članku o općim parametrima rasporeda, gdje aktiviranje posebnog flaga nazvanog [Provjeri zakašnjele dokumente s ATP](/docs/planning/ms-master-scheduling/general-schedule) upravljač rasporeda će provesti razmatranje. Ako je bilo koji od generiranih i raspoređenih naloga u kašnjenju u odnosu na planirani datum, sustav će obrisati sve stvorene naloge i ponovno početi s generiranjem od datuma MS, što se definira u parametrima i aktivira samo postavljanjem zastave *Provjeri dokumente u kašnjenju s ATP*. Nova datum će biti predložen za narudžbe u polju *Predloženi datum* koje se nalazi u mreži rezultata.  
+### Specifična polja u tabeli rezultata
 
-### Postupak Vremenskog planiranja F.C.S.  
+**Predviđeni datum**: kao što je objašnjeno u članku o opštim parametrima raspoređivanja, aktiviranjem oznake [Proveri zakašnjele dokumente pomoću ATP-a](/docs/planning/ms-master-scheduling/general-schedule) planer primenjuje logiku prema kojoj, ukoliko je makar jedan od generisanih i raspoređenih naloga u kašnjenju u odnosu na planirani datum, sistem briše sve kreirane naloge i ponovo pokreće obradu od MS datuma definisanog u parametrima. Ta funkcionalnost dostupna je samo kada je aktivirana navedena oznaka. Novi predloženi datum za naloge prikazuje se upravo u polju **Predviđeni datum** u tabeli rezultata.
 
-Iz kartice **Radni nalog** mogu se odabrati neplanirane komisije koje se žele uzeti u obzir.   
-Pritiskom na gumb **Vremensko planiranje F.C.S.** postupak će izvršiti prvo raspoređivanje bez ograničenja kapaciteta na odabrane, neplanirane komisije, koristeći parametre koji su navedeni u kartici **Opći parametri**. Nakon toga, provest će se raspoređivanje s ograničenjem kapaciteta na sve dokumente navedene u **Parametri planiranja konačnih kapaciteta**.
+### Postupak F.C.S. raspoređivanja
 
-Kao i u slučaju općeg raspoređivanja, planirane narudžbe moći će se pregledati u obrascu [Pretraga planirane narudžbe](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+Na kartici **Nalozi** moguće je odabrati neraspoređene naloge koji će biti uključeni u obradu.
+Klikom na dugme **F.C.S. raspoređivanje**, postupak će najpre izvršiti raspoređivanje sa beskonačnim kapacitetima za upravo odabrane neraspoređene naloge, koristeći parametre definisane na kartici **Opšti parametri**.
+Nakon toga izvršiće se raspoređivanje sa konačnim kapacitetima za sve dokumente definisane u **Parametrima planiranja konačnih kapaciteta**.
+Kao i kod opšteg planiranja, planirani nalozi mogu se pregledati u formi [Pretraga planiranih naloga](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders).
+Za pregled svih izvršenih raspoređivanja, kao i pripadajućih grešaka i upozorenja za pojedinačni nalog, potrebno je otvoriti karticu **Arhiva**.
 
-Da biste vidjeli sve izvršene rasporedne zadatke i povezane greške/upozorenja za svaku narudžbu, jednostavno se premjestite na karticu **Arhiva**.    
+## Opšti parametri
 
-## Parametri generičkog vremenskog planiranja  
+Svi parametri povezani sa fazom **Opšteg planiranja** mogu se pronaći u članku [Opšte planiranje](/docs/planning/ms-master-scheduling/general-schedule), u odeljku **Parametri opšteg planiranja**.
 
-Svi parametri vezani za fazu općeg raspoređivanja mogu se pregledati izravno u artiklu vezanom za [Opći vremenski raspored](/docs/planning/ms-master-scheduling/general-schedule) u odjeljku **Parametri općeg raspoređivanja**.        
+## Parametri planiranja konačnih kapaciteta
 
-## Parametri planiranja konačnih kapaciteta   
+:::note Napomena
+Pre pokretanja F.C.S. raspoređivanja potrebno je na ovoj kartici definisati parametre koji će se koristiti tokom raspoređivanja sa konačnim kapacitetima.
+:::
 
-:::note NAPOMENA 
-Prije nego što nastavite s planiranjem F.C.S.-a, važno je postaviti parametre unutar ovog taba kako biste izvršili planiranje s ograničenjem kapaciteta.  
-::: 
+**Vremensko planiranje na: najranije ili poslednje**: ove opcije su onemogućene i uvek je aktivna samo opcija **najranije**, budući da raspoređivanje sa konačnim kapacitetima nastoji što pre maksimalno opteretiti radne centre;
+**Od datuma**: omogućava definisanje datuma od kojeg će započeti raspoređivanje sa konačnim kapacitetima. Podrazumevano se predlaže trenutni datum, ali se može povećati za broj dana definisan u [MS parametrima](/docs/configurations/parameters/production/mps-parameters) kroz polje **Dani do sledećeg raspoređivanja**;
+**Rad nad planiranim nalozima – Preračun vremena**: oznaka je uvek aktivna i omogućava ponovni obračun vremena na planiranim nalozima;
+**Preračunaj proizvodne naloge/narudžbe**: omogućava izbor koji će proizvodni nalozi, među statusima **Pokrenut** i/ili **Izvršni**, biti uzeti u obzir tokom F.C.S. raspoređivanja;
+**Preračunaj faze**: omogućava izbor koje će proizvodne faze, **Nezapočete** i/ili **Već započete**, F.C.S. raspoređivanje uzeti u obzir;
+**Način preračuna već započetih faza**: omogućava izbor načina na koji će F.C.S. raspoređivanje izračunati preostali deo već započetih faza. Može se dati prednost utrošenom vremenu izborom opcije **Prvo utrošeno vreme pa proizvedena količina**, ili proizvedenoj količini izborom opcije **Prvo proizvedena količina pa utrošeno vreme**;
+**Blokiraj obavezne naloge**: omogućava izbor vrsta naloga (**Planirani**, **Pokrenuti** i **Izvršni**) koji se neće menjati tokom F.C.S. raspoređivanja ukoliko imaju uključenu oznaku **Obavezan**;
+**Započni rad prema dostupnosti materijala**: ukoliko je aktivno, F.C.S. raspoređivanje proveravaće dostupnost materijala do datuma definisanog u polju **Provera dostupnosti do**, dok će se nakon tog datuma raspoređivanje nastaviti bez provere dostupnosti materijala.
+Aktiviranjem oznake **Provera dostupnosti samo za kritične materijale**, postupak će proveravati dostupnost samo za materijale koji u sastavnici imaju uključenu oznaku **Kritično**;
+**Uzmi raspoloživost materijala**: omogućava izbor načina provere dostupnosti materijala između opcija **Opšti** (nezavisno od proizvodnog naloga koji ga koristi) i **Za radni nalog proizvodnje**.
 
-**Planiranje što je prije moguće ili što je kasnije moguće**: te se zastavice ne koriste, a uvijek je aktivna samo zastavica *Najranije*, budući da se planiranje kapaciteta na temelju ograničenih resursa trudi maksimizirati iskorištenje radnih centara što je prije moguće;          
+Trenutno je podržano samo pravilo **Opšti**.
 
-**Od datuma**: omogućava definiranje datuma od kojeg počinje planiranje s ograničenjem kapaciteta; preporučuje se kao *Današnji datum*, ali se može povećati za broj dana koji se može unijeti iz *Parametara MPS* u polju *Sljedeći dani planiranja*.  
+Važno je napomenuti da će se za materijale povezane sa određenom fazom dostupnost proveravati na početku te faze, dok će se za materijale koji nisu povezani ni sa jednom fazom dostupnost proveravati na početku prve faze proizvodnog ciklusa.
 
-**Operacija na planiranim nalozima Ponovno izračunavanje vremena**: zastava je uvijek aktivna i omogućuje ponovno izračunavanje vremena u planiranim nalozima;      
+U donjem delu forme moguće je definisati kriterijume prema kojima će raspoređivanje sa konačnim kapacitetima obrađivati dokumente iste vrste.
 
-**Preračun proizvodnih nalog**: omogućuje odabir koje proizvodne naloge, među *Pokrenutim* i/ili *Izvršnim*, treba uzeti u obzir prilikom planiranja F.C.S.;    
+:::note Napomena
+U skladu sa prethodno odabranim parametrima, F.C.S. raspoređivanje obrađivaće dokumente sledećim redosledom: već započete faze, nezapočete faze, proizvodni nalozi u statusu **Izvršni**, zatim **Pokrenut**, a na kraju **Planirani nalozi**.
+:::
 
-**Preračun faza**: omogućuje odabir koje proizvodne faze, *Nisu započete* i/ili *Već započete*, treba uzeti u obzir prilikom planiranja F.C.S.;      
+Iz tabele **Odabir prioriteta raspoređivanja** moguće je metodom *drag & drop* prevući pojedine stavke u tabelu **Prioritet rasporeda**, gde je zatim moguće menjati njihov redosled prioriteta.
 
-**Faze načina ponovnog izračuna već su započete**: omogućuje odabir načina na koji procedura schedulacije F.C.S. treba ponovno izračunati preostali dio već započetih faza. Može se odabrati da se prioritet da radnom vremenu označavanjem opcije *Radno vrijeme već radilo, a zatim Količina već proizvedena*, ili dati prednost proizvedenoj količini s opcijom *Količina već proizvedena, a zatim Radno vrijeme već radilo*;       
+Ako se odaberu stavke **Kritični kupci** ili **Kritični radni centri**, aktiviraće se i tabela **Detaljan raspored prioriteta**, u koju je moguće uneti kupce odnosno radne centre i dodeliti im željeni prioritet.
 
-**Blokiraj obvezne naloge**: omogućuje vam odabir vrsta narudžbi između *Planiranih*, *Pokrenutih* i *Izvršnih*, koje, ako imaju omogućenu zastavicu *Obavezno*, neće biti promijenjene postupkom raspoređivanja F.C.S.;    
+:::note Pažnja
+Prioriteti **Redosled faza** i **Kritični radni centri** ne koriste se u standardnoj verziji sistema, već su dodati isključivo za potrebe prilagođenih (*custom*) procedura raspoređivanja.
+:::
 
-**Početak radova na raspoloživost materijala**: ako je omogućeno, raspoređivanje F.C.S. će također provjeravati raspoloživost materijala do datuma navedenog u polju **Provjerite dostupnost do**, nakon čega će raspoređivanje nastaviti bez uzimanja u obzir raspoloživosti materijala. Aktiviranjem zastavice **Provjerite dostupnost samo kritičnih materijala**, postupak će provjeravati raspoloživost samo za materijale koji imaju aktiviranu zastavicu *Kritično* u odvojenoj bazi;   
+Ako nije definisan nijedan prioritet raspoređivanja, sortiranje će se izvršavati prema sledećem redosledu:
 
-**Razmotri dostupnost materijala**: omogućit će odabir načina na koji se razmatra dostupnost materijala između *Opće* (nezavisno od proizvodnog naloga koji ga angažira) i *Po Proizvodnom Nalogu*; trenutno je dostupno samo *Opće* pravilo.   
+*Nivo opadajuće > Datum početka rastuće > Datum završetka rastuće > ID rastuće*
 
-U donjem dijelu obrasca moguće je naznačiti kriterije prema kojima raspoređivanje s ograničenom kapacitetom treba djelovati za dokument.  
+### Specifična dugmad
 
-:::note NAPOMENA  
-Sukladno prethodno aktiviranim zastavicama, raspoređivanje F.C.S. će rasporediti različite dokumente prema sljedećem redoslijedu: Faze koje su već započete, Faze koje još nisu započete, Narudžbe za proizvodnju u izvršnom stanju, zatim pokrenute narudžbe, i na kraju planirane narudžbe.  
-::: 
-
-U tablici **Zakaži prioritete izbora** moguće je pomicati pojedinačne stavke metodom povlačenja i ispuštanja unutar tablice **Prioriteti izbora**, gdje se također mogu promijeniti prioriteti. Ako se odaberu opcije *Kritični klijenti* ili *Kritični centri za obradu*, aktivirat će se tablica **Detaljni raspored prioriteta**, gdje će se moći unijeti kritični klijenti ili centri za obradu, te će se također moći promijeniti njihovi prioriteti.    
-
-*Posebni gumbi*:
-
-> **Poništi prioritet**: omogućuje vraćanje zadanih prioriteta unutar tablice *Prioriteti rasporeda*.    
+> **Poništi prioritet**: vraća podrazumevane prioritete u tabeli **Prioriteti raspoređivanja**.
 
 ## Praćenje
 
-Na ovoj kartici, aktiviranjem ili deaktiviranjem dostupnih oznaka, korisnik može odabrati prikaz rezultata raspoređivanja u kartici **Arhiva**.  
+Na ovoj kartici korisnik može, aktiviranjem ili deaktiviranjem pojedinačnih oznaka, odabrati koje će se informacije prikazivati na kartici **Arhiva** kao rezultat raspoređivanja.
 
-Možete odlučiti hoćete li prikazati uzete **Kalendare** (*Proizvodni kalendar* i *Kalendar kapaciteta*), te možete odabrati da se prikaže upozorenje ako raspoređivanje sadrži **Stavke bez** *MRP parametara*, bez *Popisa materijala* ili *Radnog ciklusa*, bez *Preferiranog dobavljača* (za narudžbe za kupnju), bez *Preferiranog podizvođača* (za narudžbe za rad na račun), i bez naznačene minimalne razine zaliha za sve artikle koji se upravljaju na osnovu zaliha. Za svaki **Radni nalog** možete odabrati prikaz u povijesti *Broja raspoređenih linija* i detalje tih linija, kašnjenja i isteka narudžbi.  
+Moguće je odabrati prikaz korišćenih **Kalendara** (*Fabrički kalendar* i kalendar *Proizvodnih kapaciteta*).
 
-Što se tiče **Planiranih narudžbi**, možete odabrati prikaz u povijesti *Broja generiranih narudžbi* i njihovih *Detalja*, *Kasnih* *Isteklih* narudžbi, te *Alternativnih Materijala*. Također možete odabrati da budete obaviješteni ako postoje **Planirane narudžbe bez** *Materijala*, *Radnih faza*, *Dobavljača* (za kupovinu) i *Podizvođača* (za rad na račun).  
+Takođe je moguće uključiti upozorenja za slučajeve kada su tokom raspoređivanja pronađeni **artikli bez**:
 
-**Legenda**: aktiviranje zastavica omogućuje primanje obavijesti i detalja o odabranim stavkama.  
+- *MRP parametara*,
+- *sastavnice*,
+- *proizvodnog ciklusa*,
+- *preferiranog dobavljača* (za nabavne naloge),
+- *preferiranog podizvođača* (za naloge kooperacije),
+- definisane *minimalne zalihe* za artikle koji se vode po zalihama.
+
+Za svaki **radni nalog proizvodnje** moguće je odabrati prikaz:
+
+- *broja planiranih linija*,
+- detalja tih linija,
+- naloga u kašnjenju (odloženih),
+- naloga kojima je istekao planirani rok.
+
+Za **planirane naloge/narudžbe** moguće je odabrati prikaz:
+
+- *broja generisanih narudžbi*,
+- njihovih detalja,
+- naloga u kašnjenju (odloženih),
+- naloga kojima je istekao planirani rok,
+- *alternativnih materijala*.
+
+Takođe je moguće uključiti upozorenja za slučajeve kada postoje **planirani nalozi bez**:
+
+- *materijala*,
+- *radnih faza*,
+- *dobavljača* (za nabavku),
+- *podizvođača* (za kooperaciju).
+
+**Legenda**: aktivne oznake omogućavaju prikaz upozorenja i detalja vezanih za odabrane stavke.
 
 ## Arhiva
 
-U mreži ovog obrasca prikazuju se sve sažete informacije o raspoređivanju narudžbi.  
+U tabeli ove kartice prikazuju se svi sažeti podaci vezani za izvršeno raspoređivanje naloga.
 
-**Redni broj planiranja**: prikazuje jednostavan redni broj operacije raspoređivanja koju je pokrenuo korisnik;  
-
+**Program raspoređivanja**: prikazuje redni broj postupka raspoređivanja koji je pokrenuo korisnik;  
 **Operater**: prikazuje korisnika koji je pokrenuo raspoređivanje;  
+**Broj grešaka**: prikazuje broj grešaka zabeleženih tokom postupka raspoređivanja;  
+**Datum početka**: prikazuje datum i vreme početka procesa raspoređivanja;  
+**Datum završetka**: prikazuje datum i vreme završetka procesa raspoređivanja;  
+**Vremenski raspoređeni podaci od**: prikazuje tačan izvor raspoređenih podataka;  
+**Predviđanje**: prikazuje da li podaci potiču iz *Prognoza prodaje* ili iz *Glavnog plana proizvodnje*;  
+**Period**: prikazuje vrstu prognoze, nedeljnu ili mesečnu;  
+**Dan**: prikazuje dan u nedelji definisan kao dan na koji treba da padne datum završetka proizvodnog naloga generisanog direktno kroz *Definiciju MPS-a*.
 
-**Br. grešaka**: prikazuje broj evidentiranih grešaka tijekom postupka raspoređivanja;  
+Sve ostale kolone tabele prikazuju postavke korišćene na kartici **Parametri** za raspoređivanje povezano sa odabranim redom.
 
-**Datum početka**: prikazuje datum i vrijeme početka postupka raspoređivanja;  
+### Rezultat vremenskog planiranja
 
-**Datum završetka**: prikazuje datum i vrijeme završetka postupka raspoređivanja;  
+U zavisnosti od reda odabranog u tabeli, u ovom odeljku prikazivaće se eventualne greške i/ili upozorenja zajedno sa detaljima koje je korisnik odabrao na kartici **Praćenje**.
 
-**Podaci raspoređeni iz**:  prikazuje točan izvor raspoređenih podataka;  
-
-**Predviđanje**: označava jesu li podaci iz Prognoze prodaje ili Glavnog plana proizvodnje;  
-
-**Razdoblje**: prikazuje vrstu prognoze, tjedno ili mjesečno;  
-
-**Dan**: prikazuje dan u tjednu koji je određen kao datum završetka planirane proizvodne narudžbe prema Definiciji MPS.    
-
-Sve ostale stupce u mreži prikazuju postavke koje su korištene u kartici **Parametri** raspoređivanja za odabranu liniju.   
-
-**Rezultat vremenskog planiranja**
-
-Na temelju odabrane linije u mreži, u ovoj sekciji će se prikazati eventualne greške i/ili upozorenja s detaljima koje je korisnik zatražio u kartici **Praćenje**.
-
-Za detalje o općim funkcijama obrasca, pogledajte link [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
-
-
-
-
+Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom načinu rada obrazaca, pogledajte poveznicu [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

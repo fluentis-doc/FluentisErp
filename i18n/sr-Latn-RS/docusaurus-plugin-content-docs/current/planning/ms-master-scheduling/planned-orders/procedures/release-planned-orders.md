@@ -3,91 +3,160 @@ title: Izdavanje planiranih naloga
 sidebar_position: 1
 ---
 
-Obrazac omogućuje kreiranje:
+:::important Čemu služi
+Funkcija **Izdavanje planiranih naloga** u sistemu Fluentis omogućava prelazak planiranih naloga u njihove operativne statuse. Nakon generisanja planiranih naloga moguće ih je osloboditi korišćenjem odgovarajućih dugmadi na alatnoj traci.
 
-- *zahtjeva za nabavu*, eventualno već odobrenih putem odgovarajućeg parametra, u slučaju planiranih narudžbi za nabavu;    
-- *radnih naloga* u slučaju planiranih radnih naloga ili ako u listi faza planirane proizvodnje postoji vanjska faza;    
-- *proizvodnih naloga*, *lansiranih* ili *izvršnih* ovisno o aktiviranju odgovarajućeg parametra, u slučaju planiranih proizvodnih naloga.  
+Postupak zavisi od vrste naloga:
 
-Objavljivanje naloga rezultira time da oni više nisu vidljivi među [Planirane narudžbe](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders) te stoga nije moguće generirati novi [Raspored](/docs/planning/ms-master-scheduling/general-schedule) proizvodnog naloga iz kojeg su planirani nalozi eventualno bili generirani putem općeg rasporeda. Planirani nalozi prisutni u mreži koji su generirani ručno ili putem MRP obrade nemaju nikakvu vezu s proizvodnim nalozima.  
+- planirani proizvodni nalozi postaju operativni proizvodni nalozi;
+- planirani nalozi nabavke generišu zahteve za nabavku;
+- planirani nalozi kooperacije pretvaraju se u operativne naloge kooperacije.
+:::
 
-## Filter 
+Obrazac omogućava kreiranje:
 
-Na ovom obrascu možete pregledati popis planiranih naloga koji još nisu izdani i možete ih filtrirati pomoću različitih kriterija odabira.   
+- *zahteva za nabavku*, koji po potrebi mogu biti automatski odobreni putem odgovarajućeg parametra, u slučaju planiranih naloga nabavke;
+- *naloga kooperacije* u slučaju planiranih naloga kooperacije ili kada se u listi faza planiranog proizvodnog naloga nalazi spoljna faza;
+- *radnih naloga proizvodnje* u statusu *Lansiran* ili *Izvršni*, u zavisnosti od aktivacije odgovarajućeg parametra, u slučaju planiranih proizvodnih naloga.
 
-Nakon što postavite sve željene filtre, jednostavno kliknite na gumb **Traži** u *traci izbornika* kako biste prikazali rezultate unutar rezultantne mreže.  
+Oslobađanjem naloga oni više nisu vidljivi među [Planiranim nalozima](/docs/planning/ms-master-scheduling/planned-orders/search-planned-orders), pa zbog toga nije moguće ponovo pokrenuti [Planiranje](/docs/planning/ms-master-scheduling/general-schedule) proizvodnog naloga iz kojeg su planirani nalozi eventualno generisani kroz opšte planiranje.
 
-*Posebni gumbi*: 
+Planirani nalozi generisani ručno ili putem MRP obrade prikazani u tabeli nemaju nikakvu povezanost sa proizvodnim nalozima.
 
-> **Izdavanje planiranih narudžbi proizvodnji**: ovaj gumb se aktivira samo ako je u filterima postavljen tip narudžbe proizvodnje u polju *Izdavanje planiranih narudžbi za* i ako je u rezultatnoj mreži odabrano barem jedan redak proizvodnog naloga za izdavanje. Klikom na ovu funkciju sustav će izvršiti izdavanje generiranjem lansiranih ili izvršnih proizvodnih naloga, ovisno o postavljenim parametrima unutar [Parametri potrebe za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters);  
-> **Izdavanje planiranih narudžbi dobavljačima**: ovaj gumb se aktivira samo ako je u filterima postavljen tip narudžbe nabave u polju *Izdavanje planiranih narudžbi za*, i ako je u rezultatnoj mreži odabrano barem jedan redak narudžbe za nabavu za izdavanje. Klikom na ovu funkciju sustav će izvršiti izdavanje generiranjem zahtjeva za nabavu, koji mogu biti odobreni ili neodobreni, ovisno o postavljenim parametrima unutar [Parametri potrebe za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters);  
-> **Izdavanje planiranih narudžbi podizvođačima**: ovaj gumb se aktivira samo ako je u filterima postavljen tip narudžbe za radne naloge u polju *Izdavanje planiranih narudžbi za* i ako je u rezultatnoj mreži odabrano barem jedan redak radnog naloga za izdavanje. Klikom na ovu funkciju sustav će izvršiti izdavanje generiranjem radnih naloga;   
-> **Otvori Pretraživanje narudžbe**: ovaj gumb omogućava otvaranje filtrirane pretrage Proizvodnih Naloga s istim kriterijima koji su korišteni u odjeljku za filtriranje ovog prozora. Na primjer, ako su planirani nalozi filtrirani u ovoj tablici prema broju narudžbe 3 iz 2018. godine, prozor za pretragu proizvodnih naloga bit će otvoren već filtriran za narudžbu 3 iz 2018. godine.  
+Funkcionalnost je dostupna u tabelama **Planiranih naloga** i **Naloga kooperacije**, gde se prikazuje dodatna kolona.
 
-*Specifična polja*:
+Nova kolona vizuelno prikazuje (bojama) da li je nalog izvodljiv na osnovu raspoloživosti materijala.
 
-**Godina**: označava godinu planiranog naloga;       
-**Nalog**: označava broj planiranog naloga;             
-**Razina**: označava razinu artikla u osnovnoj strukturi;    
-**Godina/Broj/Kod/Opis proizvodnog naloga**: polja će biti prazna ako je planirani nalog generiran ručno ili putem MRP-a;    
-**Predviđeni datum početka**: za planirane nabavne ili radne naloge, ovo označava datum kada treba poslati narudžbu dobavljaču koja će se kasnije generirati s izdavanjem samog naloga; za planirane proizvodne naloge, ovo označava predviđeni datum početka prve faze proizvodnje;    
-**Procijenjeni krajnji datum**: za planirane nabavne ili radne naloge, ovo označava datum kada se očekuje isporuka i stoga će se poklapati s predviđenim datumom primitka stavke narudžbe od dobavljača koja će se kasnije generirati s izdavanjem naloga; za planirane proizvodne naloge, ovo označava predviđeni datum završetka posljednje faze proizvodnje;    
-**Potvrđena količina**: bit će različita od nule samo ako je obrađeno putem MRP-a;   
-**Klijent račun, podračun i opis**: označava povezanog klijenta u slučaju proizvodnih naloga;    
-**Dobavljač račun, podračun i opis**: označava povezanog dobavljača u slučaju narudžbi nabave i radnih naloga;    
-**Godina/Broj/Vrsta barudžbe prodaje**: predstavlja klijentski nalog iz kojeg je generiran radni nalog iz kojeg je bio raspoređen planirani nalog u pitanju.   
+Za prikaz rezultata potrebno je u tabeli odabrati željene naloge i pritisnuti dugme **Preračunaj izvodljivost**.
 
-Nakon odabira naloge koje želite izdati, za izvršenje **Izdavanje** treba koristiti jedan od gumba u *traci izbornika*, ovisno o vrsti naloga koji se treba izdati: **Izdavanje planiranih narudžbi proizvodnji**, **Izdavanje planiranih narudžbi dobavljačima** ili **Izdavanje planiranih narudžbi podizvođačima**. Ovi gumbi će se aktivirati prema onome što je uneseno u polju **Pusti naloge planirane za**.
+Pomoću dugmeta **Detalji izvodljivosti** moguće je dobiti detaljnu analizu svakog pojedinačnog potrebnog materijala.
 
-Moguće je također **Pregledati detalje planiranog naloga** u mreži jednostavnim dvostrukim klikom miša na redak planiranog naloga koji želite pregledati, prije nego što nastavite s izdavanjem.   
+Boje prikaza i aktivacija funkcionalnosti definišu se u **Parametrima potreba za materijalom**.
 
-## Parametri 
+## Filter
 
-Na ovom obrascu možete postaviti i spremiti parametre potrebne za izdavanje planiranih naloga.  
+Na ovoj kartici moguće je pregledati listu planiranih naloga koji još nisu oslobođeni i filtrirati ih prema različitim kriterijumima izbora.
 
-### Proizvodni nalozi  
+Nakon postavljanja željenih filtera dovoljno je kliknuti dugme **Traži** na alatnoj traci kako bi se rezultati prikazali u tabeli rezultata.
 
-U ovoj sekciji možete, aktiviranjem opcije **Generiranje naloga podizvođača iz eksternih operacija**, odlučiti da se, ako u listi faza planiranog proizvodnog naloga koji se izdaje postoji vanjska faza, automatski generira radni nalog za vanjsku fazu. Obično se ova opcija ostavlja aktiviranom.  
+### Posebne tipke
 
-### Zahtjevi za nabavu   
+> **Puštanje**: ovo dugme postaje aktivno tek kada je u tabeli rezultata odabran barem jedan red za oslobađanje. Pokretanjem ove funkcije sistem izvršava:
+>
+> - oslobađanje *planiranih radnih naloga proizvodnje* u *lansirane* ili *izvršne proizvodne naloge*, u zavisnosti od postavki definisanih u [Parametrima potreba za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters);
+> - oslobađanje *planiranih naloga nabavke* u *zahteve za nabavku*, koji mogu biti *odobreni* ili *neodobreni*, u zavisnosti od postavki definisanih u [Parametrima potreba za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters);
+> - oslobađanje *planiranih naloga kooperacije* u *naloge kooperacije*.
 
-U ovoj sekciji možete:
+> **Preračunaj izvodljivost**: omogućava prikaz (putem boja) izvodljivosti odabranih planiranih radnih naloga proizvodnje i naloga kooperacije. Boje prikaza i aktivacija funkcionalnosti definišu se u [Parametrima potreba za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters).
 
-- postaviti, putem odgovarajućeg padajućeg izbornika, **Vrstu zahtjeva za nabavu** koji će se generirati prilikom izdavanja planiranih narudžbi za nabavu. U ovom padajućem izborniku automatski se predlaže vrsta zahtjeva za nabavu već postavljena u [Parametri potreba za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters) u sekciji Parametri za izdavanje planiranih narudžbi;      
-- aktiviranjem opcije **Karakteristike opskrbe iz MRP parametara artikla**postupak će stvarati *zahtjeve za nabavu* s prioritetom navedenim u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) pojedinog članka; ako nije aktiviran, *zahtjevi za nabavu* će se stvarati s prioritetom postavljenim u narudžbi s kojom su povezani;        
-- omogućavanjem opcije **Zaokruži zahtjev za kupnju**, postupak izdavanja planiranih narudžbi za nabavu zaokruživat će količinu u gornji cijeli broj zahtjeva za kupnju koji se generira, ako postoje količine s decimalama;   
-- odlučivanje o metodi grupiranja: aktiviranjem opcije **Grupiranje najranije**, postupak izdavanja će grupirati planirane narudžbe za kupnju koje su generirane za isti artikal. U polju **Za period u danima** postavlja se broj dana u rasponu unutar kojeg se može izvršiti grupiranje, uzimajući u obzir predviđene datume primitka artikala, odnosno datume završetka planirane narudžbe za kupnju;    
-- odlučivanje što učiniti ako dobavljač nije naveden u planiranoj narudžbi za nabavu:  **Prihvatiti narudžbe bez dobavljača**, **Preskočiti narudžbe bez dobavljača** ili **Prihvatiti određenog dobavljača** navedenog u odgovarajućim poljima.
+> **Detalji izvodljivosti**: omogućava detaljnu analizu svakog potrebnog materijala za odabrani planirani proizvodni nalog ili nalog kooperacije.
 
-### Nalozi podizvođača  
+> **Otvori pretragu radnih naloga proizvodnje**: otvara pretragu radnih naloga proizvodnje koristeći iste kriterijume filtriranja koji su definisani u ovom obrascu. Na primer, ako su planirani nalozi filtrirani prema proizvodnom nalogu broj 3 iz 2018. godine, pretraga radnih naloga proizvodnje otvoriće se sa istim filterom.
 
-U ovoj sekciji možete:
+### Posebna polja
 
-- postaviti, putem padajućeg izbornika **Vrste narudžbe** i polja **Godina**, da li radni nalog koji se treba generirati treba biti *Zatvoren* ili *Otvoren* i koji godine mora biti;  
-- odlučiti o načinu grupiranja: aktiviranjem zastave **Grupiraj naloge istog podizvođača**, procedura izdavanja će grupirati planirane radne naloge, unoseći u isti radni nalog predmete koji moraju biti obrađeni istim podugovarateljem;     
-- odlučiti, u slučaju da podugovaratelj nije naveden u planiranom radnom nalogu **Prihvati naloge bez dobavljača**, **Ostavi naloge bez podizvođača** ili **Prihvati kao podizvođač ovaj račun** naveden u odgovarajućim poljima.
+**Izvodljivost materijala**: sadrži vizuelni prikaz (putem boja) izvodljivosti naloga na osnovu raspoloživosti materijala. Za prikaz rezultata potrebno je odabrati željene naloge u tabeli i pritisnuti dugme **Preračunaj izvodljivost**. Pomoću dugmeta **Detalji izvodljivosti** moguće je dobiti detaljnu analizu svakog potrebnog materijala. Boje prikaza i aktivacija funkcionalnosti definišu se u [Parametrima potreba za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters).
+**Godina**: označava godinu planiranog naloga.
+**Nalog**: označava broj planiranog naloga.
+**Nivo**: označava nivo artikla obuhvaćenog nalogom unutar sastavnice.
+**Godina/Broj/Šifra/Opis naloga**: ova polja ostaju prazna ako je planirani nalog generisan ručno ili putem MRP-a.
+**Planirani datum početka**:
+- kod planiranih naloga nabavke i naloga kooperacije predstavlja datum kada dobavljaču mora biti poslata narudžbina koja će biti generisana oslobađanjem naloga;
+- kod planiranih radnih naloga proizvodnje predstavlja planirani datum početka prve radne faze u tehnološkom postupku artikla.
+**Planirani datum završetka**:
+- kod planiranih naloga nabavke i naloga kooperacije predstavlja datum kada isporuka mora biti zaprimljena i podudara se sa planiranim datumom prijema na stavci narudžbine dobavljača koja će biti generisana oslobađanjem naloga;
+- kod planiranih radnih naloga proizvodnje predstavlja planirani datum završetka poslednje radne faze u tehnološkom postupku artikla.
+**Potvrđena količina**: različita je od nule samo ako je obrada izvršena putem MRP-a.
+**Kupac – konto, podkonto i naziv**: prikazuje povezanog kupca u slučaju radnih naloga proizvodnje.
+**Dobavljač – konto, podkonto i naziv**: prikazuje povezanog dobavljača u slučaju naloga nabavke i naloga kooperacije.
+**Godina/Broj/Vrsta narudžbe kupca**: predstavlja narudžbu kupca iz koje je generisan proizvodni nalog na osnovu kojeg je planiran predmetni nalog.
 
-*Gumb specifičan*:  
-> **Spremi promjene**: omogućuje vam spremanje parametara onako kako su postavljeni.  
+Nakon što su identifikovani nalozi koje je potrebno osloboditi, postupak **Puštanja** pokreće se korišćenjem odgovarajućeg dugmeta na alatnoj traci, u zavisnosti od vrste naloga:
 
-### Povrat
+- **Oslobađanje planiranih radnih naloga proizvodnje**
+- **Oslobađanje planiranih naloga nabavke**
+- **Oslobađanje planiranih naloga podizvođača**
 
-Na ovom obrascu možete izvršiti postupak povrata planiranog naloga koji omogućava poništenje prethodno izdanog naloga, vraćajući situaciju na stanje prije izdavanja.  
+Navedena dugmad postaju aktivna u zavisnosti od vrednosti odabrane u polju **Pusti naloge planirane za**.
 
-Na ovom obrascu prikazuju se planirani nalozi iste specifikacije kao što je navedeno u polju **Izdavanje planiranih naloga** za kartice **Filter**.
+Takođe je moguće otvoriti **Prikaz detalja planiranog naloga** dvostrukim klikom na red željenog planiranog naloga u tabeli pre samog oslobađanja.
 
-Nakon što postavite sve željene filtere, jednostavno kliknite gumb  **Traži** u *traci izbornika* da biste prikazali rezultate unutar rezultirajuće mreže.    
+## Parametri
 
-Kada je odabrani redak u rezultirajućoj mreži, prikazat će se u jednoj od tri donje kartice: **Proizvodni nalog**, **Zahtjevi za nabavu** ili **Radni nalozi**, dokument generiran iz izdanja odabranog planiranog naloga.  
+Na ovoj kartici moguće je definisati i sačuvati parametre koji se koriste za oslobađanje planiranih naloga.
 
-Za pokretanje povratka, odaberite jedan ili više naloga i kliknite gumb **Povrati naloge**. 
+### Proizvodni nalozi
 
-*Uvjeti za postupak povratka*:
+U ovom odeljku moguće je:
 
-**Za planirani proizvodni nalog**: samo ako je generirani nalog u statusu *Lansiran*; ko je nalog u statusu *Izvršno* potrebno je izvršiti povratak izdavanja proizvodnog naloga, dok se nalog koji je već *Izvršen* više ne može povratiti, osim ako se ne krene unazad od prijave proizvodne evidencije;    
-**Za kupnju planiranog naloga**: samo ako je generirani redak zahtjeva za nabavu u statusu *Ne izvršeno*; ako je redak zahtjeva za nabavu već izvršen stvaranjem narudžbe dobavljača, potrebno je krenuti unazad od dokumenta nabavke do kojeg se već stiglo;     
-**Za podugovarani planirani nalog**: samo ako generirani redak radnog naloga nije još izvršen ili ako nije generiran otpremni dokument za materijal koji se odnosi na taj redak radnog naloga.  
+- aktiviranjem oznake **Generisanje naloga podizvođača iz eksternih operacija** odrediti da se, ako se u listi faza planiranog proizvodnog naloga koji se oslobađa nalazi eksterna faza, automatski generiše odgovarajući nalog kooperacije za tu eksternu fazu. Ova oznaka se u pravilu ostavlja aktivnom;
 
-Izvršavanjem ovog postupka, povratni nalozi bit će ponovno vidljivi u kartici **Filter** gdje je moguće ponovno izvršiti izdanje.
+- aktivirati opciju **Izdavanje izvršnih radnih naloga proizvodnje**. Ako je aktivna, *proizvodni nalozi* generisani oslobađanjem *planiranih proizvodnih naloga* kreiraju se direktno u statusu *Izvršni* te nije potrebno sprovoditi dodatni postupak oslobađanja.
 
-Za detalje o uobičajenom funkcioniranju obrazaca obratite se na poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+### Zahtevi za nabavku
+
+U ovom odeljku moguće je:
+
+- putem odgovarajuće padajuće liste definisati **Vrstu zahteva za nabavku** koja će biti generisana oslobađanjem planiranih naloga nabavke. U ovom polju automatski se predlaže vrsta zahteva za nabavku definisana u [Parametrima potreba za materijalom](/docs/configurations/parameters/production/resource-requirements-parameters), u odeljku za oslobađanje planiranih naloga;
+
+- aktiviranjem oznake **Prioritet nabavke iz MRP parametara artikla** omogućiti da se *zahtevi za nabavku* kreiraju sa prioritetom definisanim u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) pojedinačnog artikla. Ako oznaka nije aktivna, zahtevi za nabavku kreiraju se sa prioritetom definisanim na proizvodnom nalogu sa kojim su povezani;
+
+- aktivirati opciju **Izdavanje odobrenih zahteva za nabavku**. Ako je aktivna, zahtevi za nabavku generisani oslobađanjem planiranih naloga nabavke automatski se kreiraju sa aktiviranom oznakom *Odobreno*. U suprotnom, korisnik koji generiše narudžbine dobavljačima iz zahteva za nabavku mora prethodno odobriti sve redove zahteva. Moguće je odobriti samo pojedinačne redove zahteva i generisati narudžbine dobavljačima samo za odobrene redove;
+
+- aktiviranjem oznake **Zaokruži zahteve za nabavku** omogućiti da postupak oslobađanja planiranog naloga nabavke zaokruži količinu u redu generisanog zahteva za nabavku na prvi veći ceo broj, ukoliko količina sadrži decimalna mesta;
+
+- definisati način grupisanja. Aktiviranjem oznake **Grupisanje najranije** postupak oslobađanja grupiše planirane naloge nabavke za isti artikl. U polju **Za dana** definiše se broj dana unutar kojeg je grupisanje dozvoljeno, uzimajući u obzir planirane datume prijema artikala, odnosno planirane datume završetka planiranih naloga nabavke;
+
+- odrediti postupanje kada planirani nalog nabavke nema definisanog dobavljača:
+  - **Prihvati naloge bez dobavljača**
+  - **Ostavi naloge bez dobavljača**
+  - **Koristi sledeći konto kao dobavljača**, definisan u odgovarajućim poljima.
+
+  ### Nalozi podizvođača
+
+U ovom odeljku moguće je:
+
+- pomoću polja **Tip naloga** i **Godina** definisati da li generisani nalog kooperacije/podizvođača treba da bude tipa *Zatvoreni* ili *Otvoreni* i kojoj godini pripada;
+
+- definisati način grupisanja. Aktiviranjem oznake **Grupiši naloge istog podizvođača** postupak oslobađanja grupiše planirane naloge kooperacije/podizvođača i u isti nalog kooperacije uključuje artikle koje treba obraditi isti kooperant;
+
+- aktivirati oznaku **Uzimaj u obzir fiksnu količinu iz sastavnice**. Ako artikl koji se proizvodi u sastavnici ima definisanu fiksnu količinu, tokom oslobađanja kreiraće se nalog kooperacije sa onoliko redova koliko zahteva fiksna količina, isto kao kod proizvodnih naloga. Ako oznaka nije aktivna, generisaće se jedan red sa ukupnom količinom;
+
+- odrediti postupanje kada planirani nalog kooperacije nema definisanog kooperanta:
+  - **Ostavi naloge bez kooperanta**
+  - **Koristi sledeći konto kao podizvođača**, definisan u odgovarajućim poljima.
+
+### Posebno dugme
+
+> **Sačuvaj izvršene izmene**: omogućava čuvanje trenutno definisanih parametara.
+
+### Vrati u prethodno stanje
+
+Na ovoj kartici moguće je pokrenuti postupak vraćanja planiranog naloga, kojim se poništava prethodno izvršeno oslobađanje i stanje vraća na ono koje je postojalo pre samog oslobađanja.
+
+Prikazuju se planirani nalozi iste vrste koja je definisana u polju **Pusti naloge planirane za** na kartici **Filter**.
+
+Nakon definisanja željenih kriterijuma filtriranja dovoljno je kliknuti na dugme **Traži** u *Ribbon Baru* kako bi se rezultati prikazali u tabeli rezultata.
+
+Odabirom jednog reda u tabeli rezultata, na jednoj od tri donje kartice — **Radni nalozi proizvodnje**, **Zahtevi za nabavku** ili **Nalozi podizvođača** — prikazuje se dokument koji je nastao oslobađanjem odabranog planiranog naloga.
+
+Za pokretanje postupka vraćanja potrebno je odabrati jedan ili više naloga i kliknuti na dugme **Vrati naloge**.
+
+### Uslovi za postupak vraćanja
+
+Za **planirani radni nalog proizvodnje**:
+- samo ako se generisani proizvodni nalog nalazi u statusu *Pokrenut*;
+- ako je proizvodni nalog u statusu *Izvršni*, potrebno je prvo izvršiti vraćanje oslobađanja proizvodnog naloga;
+- ako je nalog već u statusu *Izvršen*, više nije moguće vratiti planirani nalog, osim ako se postupak ne vrati unazad počevši od poništavanja evidentiranja proizvodne prijave.
+
+Za **planirani nalog nabavke**:
+- samo ako se generisani red zahteva za nabavku nalazi u statusu *Neizvršen*;
+- ako je red zahteva za nabavku već izvršen kreiranjem narudžbine dobavljaču, potrebno je postupak vraćanja sprovesti unazad, počevši od dokumenta nabavke koji je već generisan.
+
+Za **planirani nalog podizvođača**:
+- samo ako red generisanog naloga podizvođača još nije izvršen;
+- odnosno ako za materijal povezan sa tim redom naloga kooperacije još nije generisan otpremni dokument.
+
+Nakon izvršavanja ovog postupka vraćeni nalozi ponovo će biti vidljivi na kartici **Filter**, gde će biti moguće ponovo sprovesti njihovo oslobađanje.
+
+Za detalje o zajedničkim funkcionalnostima obrazaca pogledajte stranicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

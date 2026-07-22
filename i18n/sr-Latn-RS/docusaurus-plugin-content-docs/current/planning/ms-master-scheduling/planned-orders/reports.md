@@ -1,30 +1,30 @@
 ---
-title: Ispis Proizvodnih naloga
+title: Štampa proizvodnih naloga
 sidebar_position: 5
 ---
 
-Ovaj obrazac omogućuje ispis popisa proizvodnih naloga, uz mogućnost detaljnog prikaza.
+Ovaj obrazac omogućava štampu liste proizvodnih naloga, uz mogućnost detaljnog prikaza.
 
-**Filtri**
+**Filteri**
 
-Osim uobičajenih filtara, možete odabrati putem odgovarajuće opcije želite li prikazati i *Naloge za održavanje*.  
+Pored uobičajenih filtera, možete odabrati putem odgovarajuće opcije da li želite prikazati i *Naloge za održavanje*.
 
-**Radovi**
+**Nalozi**
 
-U ovom odjeljku možete označiti želite li prikazati sve proizvodne naloge bez razlike ili samo one koji su istekli ili kasne.  
+U ovom odeljku možete označiti da li želite prikazati sve proizvodne naloge bez razlike ili samo one kojima je istekao rok ili kasne.
 
 **Sortiranje**
 
-U ovom odjeljku možete odabrati prema čemu će se podaci unutar ispisa sortirati. Možete odabrati sortiranje prema broju naloga, artiklu ili njegovom opisu, datumu početka/završetka ili prema narudžbi;  
+U ovom odeljku možete odabrati prema čemu će podaci unutar štampe biti sortirani. Možete odabrati sortiranje prema broju naloga, artiklu ili njegovom opisu, datumu početka/završetka ili prema narudžbini.
 
 **Detalji**
 
-U ovom odjeljku možete odlučiti želite li prikazati popis materijala sadržanih u nalogu i predviđenih faza. Također je moguće prikazati uključeno osoblje i povezane prijave. Ovi su detalji predviđeni samo za planirane proizvodne naloge i naloge po narudžbi.  
+U ovom odeljku možete odlučiti da li želite prikazati listu materijala sadržanih u nalogu i planiranih faza. Takođe je moguće prikazati uključeno osoblje i povezane prijave. Ovi detalji predviđeni su samo za planirane proizvodne naloge i naloge po narudžbini.
 
 **Status naloga**
 
-U ovom odjeljku možete odabrati želite li prikazati sve naloge bez obzira na njihov status ili samo one s određenim statusima kao što su Pokrenuto, U tijeku, Završeno i Arhivirano.  
+U ovom odeljku možete odabrati da li želite prikazati sve naloge bez obzira na njihov status ili samo one sa određenim statusima kao što su Pokrenut, U toku, Završen i Arhiviran.
 
-Nakon što postavite različite parametre filtra i prikaza, potrebno je odabrati u alatnoj traci vrstu ispisa koju želite pokrenuti (samo ako je predviđeno više vrsta) putem odgovarajuće opcije, te zatim pokrenuti pregled ispisa ili direktno ispis dokumenta.  
+Nakon što podesite različite parametre filtera i prikaza, potrebno je da na alatnoj traci odaberete vrstu štampe koju želite pokrenuti (samo ako je predviđeno više vrsta) putem odgovarajuće opcije, a zatim pokrenete pregled štampe ili direktno štampanje dokumenta.
 
-Za detalje o uobičajenom funkcioniranju formi pogledajte poveznicu [Funkcionalnosti, gumbi i uobičajena polja](/docs/guide/common).  
+Za detalje o uobičajenom funkcionisanju formi pogledajte poveznicu [Funkcionalnosti, dugmad i uobičajena polja](/docs/guide/common).
