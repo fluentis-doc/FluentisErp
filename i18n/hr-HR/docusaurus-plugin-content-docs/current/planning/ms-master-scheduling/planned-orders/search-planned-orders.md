@@ -1,5 +1,5 @@
 ---
-title: Pretraga Proizvodnih naloga 
+title: Pretraga planiranih narudžbi
 sidebar_position: 2
 ---
 
@@ -27,7 +27,7 @@ Za otvaranje detalja dokumenta, dovoljno je odabrati ga i dvaput kliknuti mišem
 **Datum FOB-a**(free on Board): predstavlja datum koji se izračunava zbrajanjem *Predviđenog datuma početka* i *Vremena nabave* unesenog u karticu [Preferirani dobavljači](/docs/erp-home/registers/items/create-new-item) artikla koji je predmet Planirane narudžbe za nabavu. Ovo se obrađuje samo za artikle s tipom nabave *Kupnja*;    
 **Datum očekivanog vremena dolaska**(Estimated Time of Arrival): označava datum koji se izračunava dodavanjem *Datum FOB-a* na *Lead Time Otpreme* koje je uneseno također u kartici  *Preferirani dobavljači* artikla koji je predmet planirane narudžbe za nabavu. Ovo se obrađuje samo za artikle s tipom nabave *Kupnja*;      
 **Datum završetka**: za planirane narudžbe kupnje ili radnih naloga, označava datum kada treba primiti isporuku, što će se podudarati s predviđenim datumom primitka linije narudžbe dobavljača koja će biti generirana prilikom izdavanja same narudžbe. Za planirane narudžbe proizvodnje, ovo označava predviđeni datum završetka posljednje faze proizvodnje;    
-**Od minimalne dostupnosti**: ova značajka je aktivna samo ako je planirana narudžba generirana korištenjem procedure *Općeg raspoređivanja* i ako je u [Parametrima raspoređivanja](/docs/planning/ms-master-scheduling/general-schedule), omogućena opcija za *Razmatranje minimalne dostupnosti* u razdoblju. Ova značajka će biti aktivirana ako je *Datum minimalne dostupnosti* u razdoblju rasporeda nakon datuma potrebe; inače će biti onemogućena;              
+**Od minimalne raspoloživosti**: ova značajka je aktivna samo ako je planirana narudžba generirana korištenjem procedure *Općeg raspoređivanja* i ako je u [Parametrima raspoređivanja](/docs/planning/ms-master-scheduling/general-schedule), omogućena opcija za *Razmatranje minimalne dostupnosti* u razdoblju. Ova značajka će biti aktivirana ako je *Datum minimalne dostupnosti* u razdoblju rasporeda nakon datuma potrebe; inače će biti onemogućena;              
 **Potvrđena količina**: različita je od nule samo ako je narudžba generirana obradom MRP-a;    
 **Korištena količina**: količina koja je obvezana na trenutni datum za artikl;    
 **Obvezna**: ako je aktivno, zastava će naznačiti da planirana proizvodna narudžba nije pomična u odnosu na unutarnji datum početka.  
