@@ -9,9 +9,9 @@ Modul za **Deklaracije signala** u Fluentisu je ključni alat za učinkovito upr
 
 Modul **Signali** omogućuje upravljanje proizvodnim deklaracijama.   
 
-Obrazac za Pretraživanje dokumenata omogućuje pretraživanje svih dokumenata radi pregleda, izmjene, eventualnog brisanja ili unosa novog dokumenta; prozor se sastoji od područja za filtriranje i rezultatne mreže. 
+Obrazac za pretraživanje dokumenata omogućuje pretraživanje svih dokumenata radi pregleda, izmjene, eventualnog brisanja ili unosa novog dokumenta; prozor se sastoji od područja za filtriranje i tablice. 
 
-Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na gumb **Traži** u *traci izbornika* kako biste prikazali rezultate unutar rezultatne mreže. 
+Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na gumb **Traži** u *traci izbornika* kako biste prikazali rezultate unutar tablice. 
 
 Za otvaranje detalja dokumenta dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u detalje i uređivanje) ili gumb **Prikaži** (omogućuje ulazak u detalje i pregled, ali bez mogućnosti uređivanja). 
 
