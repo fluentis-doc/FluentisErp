@@ -175,6 +175,7 @@ Il pulsante specifico della ribbon bar ![](/img/it-it/project-management/project
 
 Con il pulsante ![](/img/neutral/common/new-visit-report.png) Creazione Richiesta di intervento è possibile, selezionando una Risorsa, creare direttamente la Richiesta di intervento collegata al progetto o effettuarne il rollback con il pulsante   Rollback Richiesta di intervento.  
 
+### Tab Materiali
 Nel **tab Materiali** vengono indicati i materiali necessari per l’avanzamento del progetto, con le relative caratteristiche degli articoli codificati. Il costo di questi materiali inciderà nella riga articolo Costo materiali. Il costo è proposto in base all'impostazione prevista nel campo "Tipo costo", il cui valore predefinito è impostabile nei parametri per progetto. Nel caso di "costo ultimo" o "costo medio" la data di riferimento è la data progetto.   
 Da questa schermata è possibile creare per i Materiali direttamente una Richiesta di acquisto, tramite il pulsante nella ribbon bar **Creazione RDA**.  
 
@@ -193,6 +194,25 @@ Nel **Tab Dati** sono presenti:
 **Livello di servizio**: è possibile indicare un livello di servizio*  
 **Escludi WBS dal calcolo SAL**: se abilitato, la riga di progetto e TUTTI i documenti collegati a questa riga di progetto , verranno esclusi dalla procedura di calcolo Stato Avanzamento Lavori del progetto, indipendentemente dai codici di Costo o Ricavo configurati.   
 **Centro Aziendale**: è possibile collegare la riga progetto ad un centro aziendale, che verrà propagato dove previsto nei documenti a cui la riga di progetto è collegata.   
+
+### Tab Avanzamento
+Nella tab **avanzamento** sono presenti le righe dei tempi effettivi rilevati dalla produzione oppure dagli interventi.   
+I valori sono rilevati dall'elaborazione eseguita con il pulsante "Avanzamento creazione progetto".  
+
+L'elaborazione dell'avanzamento calcola le righe della tab "Avanzamento" eseguendo le seguenti operazioni:  
+
+- Elimina tutte le registrazioni di tempo effettivo del progetto che non sono state modificate manualmente.  
+- Ricerca gli i segnali dalla produzione che:  
+- hanno una fase di ordine di produzione associata al progetto corrente;   
+- sono collegati ad una riga di progetto.  
+
+Per ogni riga trovato che non è già associato ad una riga di Avanzamento-tempo, crea una nuova riga in Avanzamento.
+Per le registrazioni modificate manualmente, non elimina la riga, ma aggiorna il valore del campo tempo.
+Esegue la stessa elaborazione anche per le righe di servizi negli interventi e per le dichiarazioni attività.  
+Infine aggiorna il campo Percentuale lavoro completato nella tab Pianificazione servizio, nelle righe progetto che:
+
+- hanno un tipo Nodo uguale a 2 "Work package node";  
+- hanno una somma dei tempi delle righe Avanzamento pari a 0.  
 
 ### Tab agenti
 Nel **Tab Agenti** è possibile indicare l'Agente Principale e gli Agenti collegati alla riga di progetto;  
