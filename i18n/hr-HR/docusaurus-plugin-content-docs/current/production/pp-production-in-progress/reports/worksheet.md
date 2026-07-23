@@ -1,10 +1,33 @@
 ---
 title: Radni list
+description: Izvještaj za ispis radnog lista za proizvodne naloge i proizvodne faze, uz upravljanje oznakama ispisa.
+keywords:
+  - radni list
+  - proizvodni nalozi
+  - proizvodne faze
+  - ispis izvještaja
 sidebar_position: 1
+schema: TechArticle
+tags:
+  - proizvodnja
+  - izvještavanje
+  - ispisi
+  - procedure
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Ovaj obrazac omogućuje ispis izvještaja *Radnog lista* proizvodnih narudžbi ili izravno faza (ako se razmatra radno središte); stoga omogućuje ispis po proizvodnoj narudžbi ili po pojedinoj fazi.   
+# Radni list
 
-Nakon pokretanja ispisa, aktivira se zastavica **Već ispisano** za svaku ispisanu fazu ili proizvodnu narudžbu.   
+Ova forma omogućuje ispis izvještaja **Radni list** za proizvodne naloge ili izravno za pojedine faze (ako se uzima u obzir radni centar).  
+Korisnik može odabrati želi li generirati ispis za *cijeli proizvodni nalog* ili za *pojedinu fazu naloga*.
 
-Osim toga, zastavica **Potvrđeno** prisutna u *Filteru već ispisanih listova*, ako je aktivirana, postavlja zastavicu *Def. isp.* na redak faze proizvodne narudžbe, označavajući da je izvršen konačni ispis izvještaja radnog lista.  
+## Način rada ispisa
+
+Prilikom pokretanja ispisa sustav automatski postavlja oznaku **Već ispisano** za svaku ispisanu fazu ili proizvodni nalog.
+
+## Konačni ispis
+
+Unutar sekcije **Filter već ispisanih radnih listova** nalazi se oznaka **Definitivno**. Ako je aktivirana, sustav postavlja oznaku **Def. korak** na retku faze proizvodnog naloga.
+
+Time se označava da je radni list ispisan u **konačnom načinu rada**, čime se razlikuje od probnih ili kontrolnih ispisa.
