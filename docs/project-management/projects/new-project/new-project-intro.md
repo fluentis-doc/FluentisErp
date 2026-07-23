@@ -19,6 +19,8 @@ Questo tipo di configurazione viene adottata nel caso il progetto venga generato
 
 **Titolo del progetto**: viene assegnata la descrizione del cliente, ma il campo è liberamente modificabile. Nel caso il progetto venga generato dalle offerte, sarà possibile attribuire un titolo strutturato, in base alle configurazioni nei Parametri > Vendita > Parametri offerte di vendita. 
 
+Nella ribbon bar è presente il bottone **Aggiorna**, che effettua il ricalcolo dei giorni assegnati, giorni previsti, giorni pianificati, giorni eseguiti nelle righe progetto.
+La stessa funzionalità è presente nella videata di ricerca progetti, utilizzando il bottone **Ricalcolo valori progetto** .
 
 
 

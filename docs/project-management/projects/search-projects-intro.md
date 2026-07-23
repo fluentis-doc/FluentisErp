@@ -13,4 +13,4 @@ Sono presenti alcuni pulsanti specifici:
 
 **Nuovo progetto da modello**: permette di creare un nuovo progetto partendo da un modello preesistente (configurato nella tabella Tipi Progetto come "Template"). È necessario indicare il **Tipo progetto**, il nuovo **Cliente** a cui è intestato e la **Data creazione**.   
 
-**Ricalcolo valori progetto**: permette di ricalcolare gli importi dei totali del progetto e tutte le colonne inerenti ai giorni: giorni assegnati, giorni previti, giorni pianificati, giorni eseguiti. 
+**Ricalcolo valori progetto**: permette di ricalcolare gli importi dei totali del progetto e tutte le colonne nelle righe progetto inerenti ai giorni: giorni assegnati, giorni previsti, giorni pianificati, giorni eseguiti. 
