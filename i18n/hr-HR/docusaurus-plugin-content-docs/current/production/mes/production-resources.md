@@ -1,167 +1,235 @@
 ---
-title: Proizvodni resursi 
-sidebar_position: 3
+title: Proizvodni resursi
+description: Konfiguracija i upravljanje proizvodnim resursima u Fluentis MES modulu, uključujući opće postavke, izgled, kontrolu kvalitete i obustave rada.
+keywords:
+  - Fluentis MES
+  - Proizvodni resursi
+  - Konfiguracija MES-a
+  - Radni centar
+  - Uvoz resursa
+  - Proizvodne prijave
+  - Kontrola kvalitete MES
+sidebar_position: 4
+schema: TechArticle
+tags:
+  - MES
+  - Proizvodnja
+  - Konfiguracija
+  - Fluentis
+last_update:
+  author: Fluentis Documentation Team
 ---
 
+# Proizvodni resursi
+
 :::important Čemu služi
-Proizvodni resursi u MES sustavu Fluentis omogućuju upravljanje svim parametrima potrebnim za planiranje i optimizaciju proizvodnih operacija. Kroz intuitivno sučelje, korisnici mogu uvesti različite vrste resursa, uključujući artikle, strojeve, zaposlenike, radne centre i mjerila.  
-
-Osim toga, moguće je prilagoditi izgled i ponašanje radnog centra, prilagođavajući sustav specifičnim potrebama poduzeća, na jednostavan, brz i potpuno autonoman način.
-
-Ova funkcionalnost ne samo da pojednostavljuje upravljanje proizvodnim resursima, već omogućuje i jednostavno kopiranje unaprijed definiranih postavki s postojećih resursa, osiguravajući da podaci budu uvijek ažurirani i dosljedni.  
+Proizvodni resursi u Fluentis MES sustavu omogućuju upravljanje svim parametrima potrebnima za planiranje i optimizaciju proizvodnih aktivnosti. Putem intuitivnog sučelja korisnici mogu uvoziti različite vrste resursa, uključujući artikle, strojeve, zaposlenike, radne centre i mjerne instrumente.
+Osim toga, moguće je prilagoditi izgled i ponašanje radnog centra te tako sustav jednostavno, brzo i potpuno samostalno prilagoditi specifičnim potrebama poduzeća.
+Ova funkcionalnost ne samo da pojednostavljuje upravljanje proizvodnim resursima, već omogućuje i jednostavno kopiranje postojećih postavki s drugih resursa, čime se osigurava dosljednost i ažurnost podataka.
 :::
 
-Kroz ovaj prozor se podešavaju svi parametri koji se odnose na upravljanje proizvodnim resursima unutar MES-a.   
+U ovom se prozoru upravlja svim parametrima vezanima uz proizvodne resurse koji se koriste unutar MES sustava.
 
-*Poseban gumb*:  
+#### Specifični gumb
 
-> **Uvoz**: omogućuje uvoz sljedećih vrsta resursa u tablicu **Proizvodni resursi**: *Artikl*, *Stroj*, *Zaposlenik*, *Radni centar* i *Mjerni instrument*; moguće je uvesti više resursa odjednom jednostavno odabirom putem skočnog prozora za *Uvoz*.
-Ako u tablici već postoje zapisi i operater odabere jedan s određenom vrstom resursa, pritiskom na dugme Uvoz postupak će već filtrirati prema istoj vrsti resursa. Također će kopirati sve postavke unesene za odabrani resurs (tj. onaj već prisutan u mreži resursa) u nove zapise resursa unesene putem postupka uvoza.  
+- **Uvezi**: omogućuje uvoz sljedećih vrsta resursa u tablicu **Proizvodni resursi**: *Artikl*, *Stroj*, *Zaposlenik*, *Radni centar* i *Mjerni instrument*. Također je moguće odjednom uvesti više resursa jednostavnim odabirom u skočnom prozoru *Uvezi*.  
+Ako u tablici već postoje zapisi te operater odabere zapis određene vrste resursa, prilikom klika na gumb **Uvezi** procedura će automatski filtrirati resurse prema istoj vrsti. Osim toga, sve postavke definirane na odabranom resursu (onom koji je već prisutan u tablici) bit će kopirane na nove resurse dodane postupkom uvoza.
 
-### Proizvodni resursi 
+### Proizvodni resursi
 
-Obrazac se sastoji od prvog mrežnog prikaza koji sadrži podatke o unesenim resursima, uključujući:        
-**Kod**: označava kod proizvodnog resursa;        
-**Opis**: opisuje kod proizvodnog resursa;        
-**Vrsta resursa**: označava vrstu resursa među: *Zaposlenik*, *Artikl*, *Stroj*, *Mjerni instrument* i *Radni centar*;         
-**Stroj**: označava kod stroja povezanog s resursom; omogućeno je samo ako je *Vrsta resursa* *Stroj*;       
-**Opis stroja**: opisuje stroj povezan s resursom; omogućeno je samo ako je *Vrsta resursa* *Stroj*;     
-**Radni centar**: označava kod radnog centra povezanog s resursom; omogućeno je samo ako je *Vrsta resursa* *Radni centar*;      
-**Opis radnog centra**: opisuje radni centar povezan s resursom; omogućeno je samo ako je *Vrsta resursa* *Radni centar*;     
-**Zaposlenik**: označava kod zaposlenika povezanog s resursom; omogućeno je samo ako je *Vrsta resursa* *Zaposlenik*;     
-**Prezime**: označava prezime zaposlenika povezanog s resursom; omogućeno je samo ako je *Vrsta resursa* *Zaposlenik*;     
-**Ime**: označava ime zaposlenika povezanog s resursom; omogućeno je samo ako je *Vrsta resursa* *Zaposlenik*;     
-**Klasa**: označava klasu artikla povezanog s resursom; omogućeno je samo ako je *Vrsta resursa* *Mjerni instrument*;       
-**Kod artikla**: označava kod artikla povezanog s resursom; omogućeno je samo ako je *Vrsta resursa* *Mjerni instrument*;       
-**Opis artikla**: opisuje artikl povezan s resursom; omogućeno je samo ako je *Vrsta resursa*  *Mjerni instrument*;       
-**Alat za mjerenje**: označava kod artikla alata povezanog s resursom; omogućeno je samo ako je *Vrsta resursa* *Mjerni instrument*;        
-**Sekunde osvježavanja**: označava broj sekundi osvježavanja MES formi, npr. za osvježavanje podataka u kartici *Analiza* ili automatsko osvježavanje vremena rada.    
+Forma se sastoji od glavne tablice koja sadrži podatke o unesenim resursima, među kojima su:
 
-Svaki resurs unesen u gornju mrežu povezan je sa svim informacijama prisutnim u donjim karticama.   
+- **Šifra**: označava šifru proizvodnog resursa;
+- **Opis**: označava opis proizvodnog resursa;
+- **Vrsta resursa**: određuje vrstu resursa između: *Zaposlenik*, *Artikl*, *Stroj*, *Mjerni instrument* i *Radni centar*;
+- **Stroj**: označava šifru stroja povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Stroj*;
+- **Opis stroja**: označava opis stroja povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Stroj*;
+- **Radni centar**: označava šifru radnog centra povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Radni centar*;
+- **Opis radnog centra**: označava opis radnog centra povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Radni centar*;
+- **Zaposlenik**: označava šifru zaposlenika povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Zaposlenik*;
+- **Prezime**: označava prezime zaposlenika povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Zaposlenik*;
+- **Ime**: označava ime zaposlenika povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Zaposlenik*;
+- **Klasa**: označava klasu artikla povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Mjerni instrument*;
+- **Šifra artikla**: označava šifru artikla povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Mjerni instrument*;
+- **Opis artikla**: označava opis artikla povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Mjerni instrument*;
+- **Mjerni instrument**: označava šifru artikla-opreme povezanog s resursom; dostupno samo ako je *Vrsta resursa* = *Mjerni instrument*;
+- **Sekunde osvježavanja**: označava broj sekundi između automatskih osvježavanja MES formi, primjerice za osvježavanje podataka na kartici *Analiza* ili za automatsko ažuriranje vremena rada.
+
+Svakom resursu unesenom u gornju tablicu pridružene su sve informacije dostupne na karticama prikazanim ispod.
 
 ## Općenito
 
-Na ovoj kartici se nalazi niz informacija koje utječu na ponašanje pojedinog proizvodnog resursa tijekom Izjava o proizvodnji. 
+Na ovoj kartici nalaze se informacije koje utječu na ponašanje pojedinog proizvodnog resursa tijekom *Prijava proizvodnje*.
 
-**Obavezan operator**: ako je aktiviran, prisiljava operatera da unese resurs tipa zaposlenik u polje *Resurs* u glavnom obrascu izjava o proizvodnji prije nego što može nastaviti s ostalim aktivnostima. Ovo će biti zaposlenik koji će biti naveden kao operater koji daje izjavu;         
-**Obavezna lozinka**: ako je aktiviran, prisiljava operatera da unese lozinku kako bi mogao nastaviti; tražene lozinke su sljedeće: lozinka prisutna u obrascu [Zaposlenika](/docs/project-management/registers/employee/new-employee/) a ako nije prisutna, traži se lozinka sustava. Ako nisu obje prisutne, traži se da unesete jednu.  
-:::note NAPOMENA  
-Obavezni operator: ako su oba polja, **Obavezni operator** i **Obavezna lozinka**, aktivirana, operater će prvo morati unijeti zaposlenika, a zatim, na zahtjev postupka, lozinku.  
+- **Operater obavezan**: ako je aktivno, operater mora u polje *Resurs* na glavnoj formi *Prijava proizvodnje* unijeti resurs tipa *Zaposlenik* prije nego što može nastaviti s ostalim aktivnostima. Taj zaposlenik bit će evidentiran kao operater koji izvršava prijavu;
+- **Lozinka obavezna**: ako je aktivno, operater mora unijeti lozinku prije nastavka rada. Lozinke se provjeravaju sljedećim redoslijedom: najprije lozinka definirana na formi [Zaposlenik](/docs/project-management/registers/employee/new-employee/), a ako ona nije definirana, traži se sistemska lozinka. Ako nijedna od njih nije postavljena, korisnik će biti zatražen da unese lozinku.
+
+:::note Napomena
+Ako su aktivne obje oznake **Operater obavezan** i **Lozinka obavezna**, operater najprije mora odabrati zaposlenika, a zatim, na zahtjev procedure, unijeti lozinku.
 :::
-**Obavezni tim**: ako je aktiviran, omogućava kontrolu koja prisiljava operatera da unese barem jednog člana tima prije nastavka s aktivnostima izjava;       
-**Dozvoli preklapanje faza**: ako je aktivirano, omogućava deklaraciju faza narudžbe proizvodnje bez pridržavanja predviđenog redoslijeda navedenog u ciklusu. Ako nije aktivirano, nije dopušteno preklapanje faza ili deklaracija faza bez pridržavanja ciklusa;      
-**Omogući višefazno upravljanje**: ako je aktivirano, omogućava mogućnost deklariranja više faza istovremeno;      
-**Maksimalni broj faza**: omogućuje da se navede maksimalan broj faza koje je moguće istovremeno deklarirati;      
-**Ručni unos vremena**: ako je aktivirano, omogućuje operateru ručni unos radnog vremena;       
-**Predloženo vrijeme**: ako je aktivirano, omogućuje automatski prijedlog radnog vremena;        
-**Metoda raspodjele vremena**: označava način na koji se vrijeme raspoređuje ako se istovremeno deklarira više radnih faza. Aktivne metode su: *Sekvencijalno* - vrijeme se raspoređuje prema planiranom ili redoslijedu unosa, *Proporcionalno* - vrijeme se raspoređuje proporcionalno prema količini proizvedenoj u deklaraciji i količinama koje treba proizvesti za pojedine faze;        
-**Metoda raspodjele količine**: označava način na koji se količina raspoređuje ako se istovremeno deklarira više radnih faza. Aktivne metode su: *Sekvencijalno* - količina se raspoređuje prema planiranom ili redoslijedu unosa, *Proporcionalno* - količina se raspoređuje proporcionalno prema količini proizvedenoj u deklaraciji i količinama koje treba proizvesti za pojedine faze; *Ručno* - omogućuje ručno unijeti količine proizvedene za svaku pojedinu fazu;           
-**Obavezna je ručna deklaracija materijala**: ako je aktivirano zajedno s **Obaveza ručnog unosa materijala** u [Parametrima MRP-a](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) za artikl, omogućava da se artikl predloži s nultom količinom u kartici *Materijali* u izjavama o proizvodnji i korisnik je obvezan ručno unijeti vrijednost prije nastavka;      
-**Obvezni radni list**: ako je aktiviran, omogućava kontrolu koja sprječava operatera da doda fazu koja još nema označenu "Definitivni ispis". Ova značajka "Definitivni ispis" može se omogućiti putem postupka ispisa [Radnog Lista](/docs/production/pp-production-in-progress/reports/worksheet);    
-**Obavezno ispisivanje naljepnica**: ako je aktivirano, omogućava kontrolu koja prisiljava operatera da ispise sve naljepnice prije nastavka s aktivnostima izjava;      
-**Obavezna greška ako je navedena količina odbijena**: ako je aktivirano, omogućava kontrolu koja prisiljava operatera da unese vrstu greške ako unese količinu odbačenu;    
-**Automatsko snimanje**: ako je aktiviran, omogućava automatsko stvaranje zapisa u skladištu nakon potvrde izjava. 
 
-### *Upravljanje dokumentima*     
-**Vrsta izvora dokumenta za isključenje**: ova tablica je povezana s karticom *Dokumenti i Radni nalozi* u Fluentis MES-u i omogućava definiranje koje vrste dokumenata treba isključiti. Na taj način, datoteke povezane s tim vrstama dokumenata neće biti prikazane na kartici *Dokumenti i Radni nalozi*.     
-Vrste dokumenata koje se mogu isključiti su:   
-> *Nijedna*: nijedna vrsta dokumenata nije isključena;     
-> *Artikl*: svi dokumenti (datoteke, slike, ...) povezani s artiklom neće biti prikazani na kartici *Dokumenti i Radni nalozi*;      
-> *Narudžba klijenta*: svi dokumenti (datoteke, slike, ...) povezani s narudžbom klijenta neće biti prikazani na kartici  *Dokumenti i Radni nalozi*;      
-> *Narudžba proizvodnje*: svi dokumenti (datoteke, slike, ...) povezani s narudžbom proizvodnje neće biti prikazani na kartici *Dokumenti i Radni nalozi*;   
-> *Ordine di produzione*: tutti i documenti (file, immagini,...) legati all'ordine di produzione non saranno visualizzati nel tab *Documenti e Istruzioni operative*;
-> *Faza narudžbe proizvodnje*: svi dokumenti (datoteke, slike, ...) povezani s pojedinom fazom narudžbe proizvodnje (unutar kartice *Povezani dokumenti* za fazu) neće biti prikazani na kartici *Dokumenti i Radni nalozi*.          
+- **Tim obavezan**: ako je aktivno, omogućuje kontrolu koja zahtijeva da operater prije nastavka rada u prijavi doda barem jednog člana tima;
+- **Dopusti preklopljene prijave**: ako je aktivno, moguće je prijavljivati faze proizvodnog naloga bez poštivanja predviđenog redoslijeda definiranog u tehnološkom postupku. Ako nije aktivno, nije dopušteno preklapanje faza niti prijavljivanje faza izvan redoslijeda definiranog u ciklusu rada;
+- **Omogući više faza**: ako je aktivno, omogućuje istovremenu prijavu više faza.
 
-### *Kontrole kvalitete*
-Ova kartica sadrži niz kontrola povezanih s karticom *Kontrola kvalitete* u Fluentis MES-u.      
-**Vrsta kontrole za razmatranje**: ovo je vrsta dokumenta za kontrolu artikala u kojem će se pohraniti prikupljeni podaci;        
-**Detalj artikla za razmatranje**: ovo je maksimalni detalj artikla koji se razmatra za izvođenje testova (Nijedan, Lot, S.B., Transportna jedinica).;     
-**Faza se može zaključati**: ako je prva neusaglašenost ili prosječna neusaglašenost u prikupljenim vrijednostima, sama faza i sljedeće faze bit će blokirane dok ih ne odblokira ovlašteni operater. U tom slučaju, koristi se **Predložak zastoja bloka faze** naznačena u odjeljku posvećenom predlošcima suspendiranja.          
+  U tom slučaju vrijeme se raspodjeljuje između faza na sljedeći način:
+  Ako je prijavljena količina (proizvedena ili škartirana), vrijeme za svaku fazu računa se prema formuli:
 
-### *Predložak prekida*       
-**Predlošci zastoja koje treba isključiti**: u ovoj tablici možete navesti sve predloške obustave koje želite isključiti unutar Fluentis MES-a.  
-**Predložak sugeriranog zastoja**: označava zadani predložak obustave koji će se koristiti u slučaju da operater stvori obustavu bez navođenja razloga obustave u odgovarajućem polju u kartici *Proizvodnja* u Fluentis MES-u. 
+  **(Prijavljeno vrijeme / ukupna količina (proizvedena + škartirana)) × prijavljena količina (proizvedena + škartirana) pojedine faze = Vrijeme faze**
 
-**Automatski prekid**: ako je omogućeno, dopušta aktiviranje automatskih prekida izjava prema rasporedima naznačenim u radnom centru;          
-**Predložak prekida noćne stanke**: označava predložak obustave koji se koristi za stvaranje obustave tijekom noćne pauze;        
-**Predložak prekida stanke za ručak**: označava predložak obustave koji se koristi za stvaranje obustave tijekom pauze za ručak;        
-**Predložak zastoja bloka faze**: označava razlog obustave koji se koristi za blokiranje faza u slučaju nesukladnosti u kontrolama kvalitete.        
+  Ako nije prijavljena količina, već samo vrijeme, tada se koristi formula:
 
-## Layout
+  **Prijavljeno vrijeme / broj faza = Vrijeme faze**
 
-*Specifični gumbi*:  
+- **Maksimalan broj faza**: određuje najveći broj faza koje je moguće prijaviti istovremeno;
+- **Ručni unos vremena**: ako je aktivno, omogućuje operateru ručni unos radnog vremena;
+- **Predloženo vrijeme**: ako je aktivno, radno vrijeme se automatski predlaže;
+- **Metoda raspodjele količine**: određuje način raspodjele količine kod istovremene prijave više faza rada. Dostupne metode su:
+  - **Sekvenca**: količina se raspodjeljuje među fazama prema planiranom redoslijedu ili redoslijedu unosa;
+  - **Proporcionalno**: količina se raspodjeljuje proporcionalno prema prijavljenoj proizvedenoj količini i planiranim količinama pojedinih faza;
+  - **Ručno**: omogućuje ručni unos proizvedene količine za svaku pojedinu fazu;
 
-> **Kompletan layout**: omogućuje aktiviranje kompletnog rasporeda sučelja MES jednim klikom;             
-> **Minimalni layout**: omogućuje aktiviranje minimalnog rasporeda sučelja MES jednim klikom;                 
+- **Sekunde osvježavanja**: određuju interval automatskog osvježavanja forme. Ako vrijednost nije definirana, forma će se osvježavati isključivo ručno od strane operatera;
+- **Obavezna prijava količine materijala**: ako je aktivno, zajedno s oznakom **Obavezna ručna prijava materijala** definiranoj u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) artikla, uzrokuje da se na kartici *Materijali* u *Prijavama proizvodnje* artikl predlaže s količinom nula. Korisnik tada mora ručno unijeti količinu prije nego što može nastaviti;
+- **Obavezan radni list**: ako je aktivno, omogućuje kontrolu koja sprječava operatera da doda fazu za koju nije aktivirana oznaka *Konačni ispis*. Oznaka *Konačni ispis* može se aktivirati kroz proceduru ispisa [Radnog lista](/docs/production/pp-production-in-progress/reports/worksheet);
+- **Obavezan ispis etiketa**: ako je aktivno, omogućuje kontrolu koja prisiljava operatera da ispiše sve etikete prije nastavka prijave;
+- **Obavezan unos greške kod škarta**: ako je aktivno, omogućuje kontrolu koja zahtijeva unos vrste greške kada se prijavljuje škartirana količina;
+- **Automatsko knjiženje**: ako je aktivno, automatski kreira skladišno knjiženje nakon potvrde prijave;
+- **Uvezi sve faze zadatka (task)**: ako je aktivno, istoimena oznaka u *pregledu faza* na kartici *Proizvodnja* unutar MES-a bit će uključena prema zadanim postavkama. Na taj način, kada korisnik odabere i doda jednu fazu koja pripada određenom *tasku*, automatski se dodaju i sve ostale faze tog *taska*;
+- **Radni centar s više resursa**: ako je aktivno, fazu rada koju prijavi resurs tipa *Zaposlenik* može završiti isključivo isti taj zaposlenik. Ako je potrebno promijeniti zaposlenika, fazu je potrebno *Suspendirati* koristeći razlog s oznakom [Blokada prijedloga faze u M.E.S.-u](/docs/configurations/tables/production/interruption-reasons), zatim je ponovno odabrati putem gumba **Odaberi nove faze** i izvršiti prijavu nastavka rada s drugim zaposlenikom.
 
-U ovoj kartici nalaze se razne informacije koje utječu na raspored resursa proizvodnje tijekom Izjava o proizvodnji.     
+### Upravljanje dokumentima
 
-**Redoslijed tabulatora**       
-Ovaj dio omogućuje definiranje vidljivosti kartica, kao i promjenu njihovog redoslijeda;    
+- **Vrsta izvora dokumenta za isključenje**: ova tablica povezana je s karticom *Dokumenti i radne upute* u Fluentis MES-u te omogućuje definiranje vrsta dokumenata koje treba isključiti iz prikaza. Dokumenti povezani s odabranim vrstama neće biti prikazani na kartici *Dokumenti i radne upute*.
 
-**Ne prikazuj**        
-Ovaj dio omogućuje skrivanje raznih nepotrebnih informacija unutar Fluentis MES-a.
+Vrste dokumenata koje je moguće isključiti:
 
-### **Općenito**
-> *Grupa*: ako je aktivno, skriva informacije vezane uz grupu;       
-> *Redoslijed*: ako je aktivno, skriva informacije vezane uz redoslijed;     
-> *Podfaza*: ako je aktivno, skriva informacije vezane uz podfazu;     
-> *Radni centar*: ako je aktivno, skriva informacije vezane uz radni centar;     
-> *Stroj*: ako je aktivno, skriva informacije vezane uz stroj;       
-> *Radna grupa*: ako je aktivno, skriva informacije vezane radnu grupu;       
-> *Očekivani datumi*: ako je aktivno, skriva informacije vezane uz predviđene datume;      
-> *Varijante*: ako je aktivno, skriva informacije vezane uz varijantu;     
-> *Proizvodni nalog*: ako je aktivno, skriva informacije vezane uz proizvodni nalog;    
-> *Podnalog*: ako je aktivno, skriva informacije vezane uz podnalog;     
-> *Projekt*: ako je aktivno, skriva informacije vezane uz projekt;      
-> *Lotovi*: ako je aktivno, skriva informacije vezane uz upravljanje serijama;      
-> *Serijski broj*: ako je aktivno, skriva informacije vezane uz upravljanje serijskim brojevima;      
-> *Transportna jedinica*: ako je aktivno, skriva informacije vezane uz upravljanje Transportne jedinice.   
-  
-### **Proizvedeni artikli**
-> *Skladište za odlaganje*: ako je aktivno, skriva informacije vezane uz skladište za prijenos proizvedenih artikala u kartici *Proizvodnja*;      
-> *Predložak odlaganja*: ako je aktivno, skriva informacije vezane uz predložak prijenosa proizvedenih artikala u kartici  *Proizvodnja*;    
-> *Lokacija plaćanja*: ako je aktivno, skriva informacije vezane uz lokaciju prijenosa proizvedenih artikala u kartici  *Proizvodnja*;    
-> *Skladište za odlaganje otpada*: ako je aktivno, skriva informacije vezane uz skladište za prijenos otpada proizvedenih artikala u kartici *Proizvodnja*;     
-> *Predložak odlaganja otpada*: ako je aktivno, skriva informacije vezane uz prdložak prijenosa otpada proizvedenih artikala u kartici *Proizvodnja*;     
-> *Lokacija plaćanja otpada*: ako je aktivno, skriva informacije vezane uz lokaciju prijenosa otpada proizvedenih artikala u kartici *Proizvodnja*;     
-> *Alternativna količina*: ko je aktivno, skriva informacije vezane uz upravljanje alternativnom količinom.  
+- **Nijedna**: nijedna vrsta dokumenta nije isključena;
+- **Artikl**: svi dokumenti (datoteke, slike i sl.) povezani s artiklom neće biti prikazani na kartici *Dokumenti i radne upute*;
+- **Narudžba kupca**: svi dokumenti povezani s narudžbom kupca neće biti prikazani;
+- **Proizvodni nalog (komesa)**: svi dokumenti povezani s proizvodnim nalogom neće biti prikazani;
+- **Proizvodni nalog**: svi dokumenti povezani s proizvodnim nalogom neće biti prikazani;
+- **Faza proizvodnog naloga**: svi dokumenti povezani s pojedinom fazom proizvodnog naloga (na kartici *Priloženi dokumenti* faze) neće biti prikazani na kartici *Dokumenti i radne upute*.
 
-### **Materijali**
-> *Skladište za izuzimanje*: ako je aktivno, skriva informacije vezane uz skladište za preuzimanje materijala u kartici *Materijali*;    
-> *Predložak za picking*: ako je aktivno, skriva informacije vezane uz prdložak preuzimanja materijala u kartici *Materijali*;    
-> *Skladište za odlaganje otpada*: ako je aktivno, skriva informacije vezane uz skladište za preuzimanje otpada materijala u kartici  *Materijali*;    
-> *Predložak odlaganja otpada*: ako je aktivno, skriva informacije vezane uz prdložak preuzimanja otpada materijala u kartici *Materijali*;    
+### Kontrola kvalitete
 
-### **Kontrola kvalitete**
+Sadrži skup postavki povezanih s karticom *Kontrola kvalitete* u Fluentis MES-u.
+- **Vrsta kontrole koja se koristi**: definira vrstu dokumenta kontrole artikala u koju će se spremati izmjerene vrijednosti;
+- **Razina detalja artikla za kontrolu**: određuje najveću razinu detalja artikla koja se uzima u obzir tijekom ispitivanja (*Nema*, *Lot*, *Serijski broj*, *Jedinica pakiranja (UDC)*);
+- **Fazu je moguće blokirati**: kod prve nesukladne vrijednosti ili nesukladnog prosjeka izmjerenih vrijednosti, trenutna faza i sve sljedeće faze bit će blokirane sve dok ih ovlašteni operater ne odblokira. U tom slučaju koristi se **Razlog suspenzije zbog blokade faze** definiran u odgovarajućoj sekciji razloga suspenzije.
 
-> **Redoslijed**: ako je aktivno, skriva informacije vezane uz sekvencu u kartici *Kontrola kvalitete*;     
-> **Vrsta testa**: ako je aktivno, skriva informacije vezane uz vrstu ispitivanja u kartici *Kontrola kvalitete*;     
-> **Mjerni instrumenti**: ako je aktivno, skriva informacije vezane uz Kategoriju mjerila i Mjerila u kartici *Kontrola kvalitete*;      
-> **Granice tolerancije**: ako je aktivno, skriva informacije vezane uz Granice tolerancije (L.min.(tol-), L.min.(tol+), L.max.(tol-) i L.max.(tol+)) u kartici  *Kontrola kvalitete*;     
-> **Vrsta kontrole i Učestalost**: ako je aktivno, skriva informacije vezane uz Vrstu kontrole ispitivanja i Učestalost u kartici *Kontrola kvalitete*;        
-> **Skladište**: ako je aktivno, skriva informacije vezane uz skladište u kartici *Kontrola kvalitete*;         
-> **Predložak**: ako je aktivno, skriva informacije vezane uz razlog skladištenja za neispravne artikle u kartici *Kontrola kvalitete*.        
+### Razlozi suspenzije
 
-### **Ostalo**
+- **Razlozi suspenzije za isključenje**: u ovoj tablici moguće je definirati sve razloge suspenzije koji se neće prikazivati unutar Fluentis MES-a;
+- **Predloženi razlog suspenzije**: određuje razlog suspenzije koji će se koristiti prema zadanim postavkama kada operater kreira suspenziju bez odabira razloga u odgovarajućem polju na kartici *Proizvodnja* u Fluentis MES-u;
+- **Automatski prekid**: ako je aktivirano, omogućuje automatsko kreiranje prekida prijava prema radnom vremenu definiranom za radni centar;
+- **Razlog suspenzije za noćnu pauzu**: određuje razlog suspenzije koji se koristi za automatsko kreiranje suspenzije tijekom noćne stanke;
+- **Razlog suspenzije za pauzu za ručak**: određuje razlog suspenzije koji se koristi za automatsko kreiranje suspenzije tijekom pauze za ručak;
+- **Razlog suspenzije za blokadu faze**: određuje razlog suspenzije koji se koristi za blokiranje faza u slučaju nesukladnosti tijekom kontrola kvalitete.
 
-*Proizvodnja*
-> *Tijek rada stroja*: ako je aktivno, skriva informacije vezane uz stroj u kartici *Proizvodnja*;    
-> *Nedostatak*: ako je aktivno, skriva informacije vezane uz nedostatak u kartici  *Proizvodnja*;    
-> *Predložak prekida*: ako je aktivno, skriva informacije vezane uz razlog obustave u kartici  *Proizvodnja*;       
+:::note Napomena
+Ako se aktivnost suspendira korištenjem [Razloga suspenzije](/docs/production/mes/production-resources/) koji ima uključenu oznaku *Blokiraj prijedlog faze u M.E.S.-u*, prilikom sljedećeg automatskog predlaganja faza za radni centar suspendirana faza neće biti prikazana. Za nastavak rada na toj fazi potrebno ju je ponovno odabrati putem gumba **Odaberi nove faze** te izvršiti prijavu nastavka rada.
+:::
 
-*Tim*
-> *Operateri koji više nisu aktivni*: ako je aktivno, skriva mrežu vezanu uz *Popis operatera koji više nisu aktivni* u kartici  *Tim*;    
+---
 
-*Bilješke*
-> *Popis bilješki*: ako je aktivno, skriva mrežu vezanu uz *Dokumente priložene uz izvještaj odabrane faze* u kartici  *Dokumenti i Operativne upute* u kartici *Bilješke*;    
+## Izgled
 
-*Analiza*      
-> *OEE*: ako je aktivno, skriva OEE grafikone u kartici *Analiza*;    
-> *Grafike*: ako je aktivno, skriva stupčaste grafike  (*Analiza količine*, *Analiza vremena*) u kartici *Analiza*;    
-> *Tablice*: ako je aktivno, skriva tablice (*Vrijednosti količine*, *Vrijednosti vremena*) u kartici *Analiza*.      
+#### Specifični gumbi
+- **Potpuni izgled**: jednim klikom aktivira potpuni prikaz MES sučelja;
+- **Minimalni izgled**: jednim klikom aktivira minimalni prikaz MES sučelja.
 
-*Dodatni podaci*
-> *Popis dodatnih podataka*: ako je aktivno, skriva mrežu vezanu uz *Popis dodatnih podataka  (odaberite fazu)* u kartici  *Dodatni podaci*;     
+Na ovoj kartici nalaze se postavke koje utječu na izgled proizvodnog resursa tijekom *Prijava proizvodnje*.
+- **Redoslijed kartica**  
+  Ova sekcija omogućuje definiranje vidljivosti pojedinih kartica te promjenu njihovog redoslijeda.
+- **Ne prikazuj**  
+  Ova sekcija omogućuje skrivanje različitih informacija koje nisu potrebne unutar Fluentis MES-a.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju obrazaca, pogledajte sljedeći link  [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+### Općenito
+
+- **Task/Grupa**: ako je aktivno, skrivaju se informacije vezane uz task/grupu;
+- **Sekvenca**: ako je aktivno, skrivaju se informacije vezane uz sekvencu;
+- **Podfaza**: ako je aktivno, skrivaju se informacije vezane uz podfazu;
+- **Radni centar**: ako je aktivno, skrivaju se informacije vezane uz radni centar;
+- **Stroj**: ako je aktivno, skrivaju se informacije vezane uz stroj;
+- **Grupa radne snage**: ako je aktivno, skrivaju se informacije vezane uz grupu radne snage;
+- **Planirani datumi**: ako je aktivno, skrivaju se informacije vezane uz planirane datume;
+- **Varijanta**: ako je aktivno, skrivaju se informacije vezane uz varijantu;
+- **Proizvodni nalog**: ako je aktivno, skrivaju se informacije vezane uz proizvodni nalog;
+- **Proizvodni nalog (komesa)**: ako je aktivno, skrivaju se informacije vezane uz proizvodni nalog;
+- **Projekt**: ako je aktivno, skrivaju se informacije vezane uz projekt;
+- **Lotovi**: ako je aktivno, skrivaju se informacije vezane uz upravljanje lotovima;
+- **Serijski brojevi**: ako je aktivno, skrivaju se informacije vezane uz upravljanje serijskim brojevima;
+- **Jedinice pakiranja (UDC)**: ako je aktivno, skrivaju se informacije vezane uz upravljanje jedinicama pakiranja.
+
+### Proizvedeni artikli
+
+- **Skladište zaprimanja**: ako je aktivno, skrivaju se informacije vezane uz skladište zaprimanja proizvedenih artikala na kartici *Proizvodnja*;
+- **Predložak zaprimanja**: ako je aktivno, skrivaju se informacije vezane uz predložak zaprimanja proizvedenih artikala na kartici *Proizvodnja*;
+- **Lokacija zaprimanja**: ako je aktivno, skrivaju se informacije vezane uz lokaciju zaprimanja proizvedenih artikala na kartici *Proizvodnja*;
+- **Skladište zaprimanja škarta**: ako je aktivno, skrivaju se informacije vezane uz skladište zaprimanja škartiranih proizvedenih artikala na kartici *Proizvodnja*;
+- **Predložak zaprimanja škarta**: ako je aktivno, skrivaju se informacije vezane uz predložak zaprimanja škartiranih proizvedenih artikala na kartici *Proizvodnja*;
+- **Lokacija zaprimanja škarta**: ako je aktivno, skrivaju se informacije vezane uz lokaciju zaprimanja škartiranih proizvedenih artikala na kartici *Proizvodnja*;
+- **Alternativna količina**: ako je aktivno, skrivaju se informacije vezane uz upravljanje alternativnom količinom.
+
+### Materijali
+
+- **Skladište izdavanja**: ako je aktivno, skrivaju se informacije vezane uz skladište izdavanja materijala na kartici *Materijali*;
+- **Predložak izdavanja**: ako je aktivno, skrivaju se informacije vezane uz predložak izdavanja materijala na kartici *Materijali*;
+- **Skladište škarta**: ako je aktivno, skrivaju se informacije vezane uz skladište škarta materijala na kartici *Materijali*;
+- **Predložak škarta**: ako je aktivno, skrivaju se informacije vezane uz predložak škarta materijala na kartici *Materijali*.
+
+### Kontrola kvalitete
+
+- **Sekvenca**: ako je aktivno, skrivaju se informacije vezane uz sekvencu na kartici *Kontrola kvalitete*;
+- **Vrsta ispitivanja**: ako je aktivno, skrivaju se informacije vezane uz vrstu ispitivanja na kartici *Kontrola kvalitete*;
+- **Mjerni instrumenti**: ako je aktivno, skrivaju se informacije vezane uz kategoriju mjernog instrumenta i mjerne instrumente na kartici *Kontrola kvalitete*;
+- **Granice tolerancije**: ako je aktivno, skrivaju se informacije vezane uz granice tolerancije (*Min. granica (tol-)*, *Min. granica (tol+)*, *Max. granica (tol-)* i *Max. granica (tol+)*) na kartici *Kontrola kvalitete*;
+- **Vrsta kontrole i učestalost**: ako je aktivno, skrivaju se informacije vezane uz vrstu kontrole ispitivanja i učestalost na kartici *Kontrola kvalitete*;
+- **Skladište**: ako je aktivno, skrivaju se informacije vezane uz skladište na kartici *Kontrola kvalitete*;
+- **Predložak**: ako je aktivno, skrivaju se informacije vezane uz skladišni predložak za nesukladne artikle na kartici *Kontrola kvalitete*.
+
+### Ostalo
+
+#### Proizvodnja
+
+- **Widget stroj**: ako je aktivno, skrivaju se informacije vezane uz stroj na kartici *Proizvodnja*;
+- **Greška**: ako je aktivno, skrivaju se informacije vezane uz grešku na kartici *Proizvodnja*;
+- **Razlog suspenzije**: ako je aktivno, skrivaju se informacije vezane uz razlog suspenzije na kartici *Proizvodnja*.
+
+#### Tim
+
+- **Neaktivni operateri**: ako je aktivno, skriva se tablica *Popis neaktivnih operatera* na kartici *Tim*.
+
+#### Bilješke
+
+- **Popis bilješki**: ako je aktivno, skriva se tablica *Dokumenti priloženi prijavi odabrane faze* na kartici *Dokumenti i radne upute*, odnosno na kartici *Bilješke*.
+
+#### Analiza
+
+- **OEE**: ako je aktivno, skrivaju se OEE grafovi na kartici *Analiza*;
+- **Grafovi**: ako je aktivno, skrivaju se stupčasti grafovi (*Analiza količina* i *Analiza vremena*) na kartici *Analiza*;
+- **Tablice**: ako je aktivno, skrivaju se tablice (*Vrijednosti količina* i *Vrijednosti vremena*) na kartici *Analiza*.
+
+#### Extra Data
+
+- **Popis dodatnih podataka**: ako je aktivno, skriva se tablica *Popis dodatnih podataka (odaberite fazu)* na kartici *Dodatni podaci*.
+
+# Sažetak i dodatne informacije
+
+Ova stranica opisuje potpunu konfiguraciju *Proizvodnih resursa* u Fluentis MES-u, uključujući:
+
+- uvoz resursa;
+- opće parametre i rad s više faza;
+- upravljanje dokumentima;
+- kontrolu kvalitete;
+- razloge suspenzije;
+- prilagodljiv izgled korisničkog sučelja.
+
+Za dodatne informacije pogledajte:
+
+- [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common)
+- [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
+- [Zaposlenik](/docs/project-management/registers/employee/new-employee/)
+- [Radni list](/docs/production/pp-production-in-progress/reports/worksheet)
+

@@ -1,255 +1,403 @@
 ---
-title: MES
-sidebar_position: 4
+title: MES - Manufacturing Execution System
+description: Detaljan vodič za Fluentis MES obrazac za evidentiranje proizvodnih aktivnosti i praćenje OEE pokazatelja.
+keywords:
+  - MES
+  - Manufacturing Execution System
+  - Evidentiranje proizvodnje
+  - OEE
+  - Kontrola kvalitete
+  - Serijski brojevi i lotovi
+sidebar_position: 5
+schema: TechArticle
+tags:
+  - Proizvodnja
+  - MES
+  - Kontrola kvalitete
+  - OEE
+  - Skladište
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-:::important ČEMU SLUŽI
-Glavni oblik Modula za izvršenje proizvodnje (MES) u Fluentisu osmišljen je za optimizaciju i pojednostavljenje procesa prijave proizvodnih aktivnosti. Ovo sučelje omogućuje operaterima da u realnom vremenu prate i upravljaju proizvodnim resursima, olakšavajući unos podataka vezanih za faze obrade i proizvedene količine.  
+# MES - Manufacturing Execution System
 
-Operateri mogu lako upravljati unosom i izmjenom podataka zahvaljujući funkcionalnostima poput skenera barkoda i omogućavanja specifičnih kontrola kako bi se osigurala točnost evidencija. Osim toga, sustav podržava različite metode raspodjele vremena i količina, omogućujući detaljnu analizu proizvodnih performansi i osiguravajući učinkovito upravljanje korištenim resursima.
+:::important Čemu služi
+Glavni obrazac modula za izvršenje proizvodnje (MES) u Fluentisu osmišljen je za optimizaciju i pojednostavljenje procesa evidentiranja proizvodnih aktivnosti.
 
-Ovaj integrirani pristup ne samo da poboljšava vidljivost operacija, već također doprinosi optimizaciji tijeka rada i ukupnoj produktivnosti poduzeća.  
+Operaterima omogućuje:
+
+- praćenje proizvodnih resursa u stvarnom vremenu;
+- unos i izmjenu podataka vezanih uz proizvodne faze i proizvedene količine;
+- korištenje **Barcode Tokenizera** za brži unos podataka;
+- primjenu specifičnih kontrola radi osiguravanja ispravnosti evidentiranja;
+- raspodjelu vremena i količina prema različitim metodama analize.
+
+Integrirani pristup poboljšava preglednost proizvodnih operacija, optimizira radne procese i povećava produktivnost poduzeća.
 :::
 
-## *Specifični gumbi*:  
-
-**Navigabilnost**
-> *Prethodno*: omogućuje prelazak na prethodnu karticu;     
-> *Sljedeći*: omogućuje prelazak na sljedeću karticu;     
-> *Ažuriraj*: omogućuje osvježavanje svih podataka u obrascu, za korištenje u slučaju promjena na korištenom resursu;        
-> *Poništi odabir*: omogućuje poništavanje odabira faza prisutnih u glavnoj mreži.     
-
-**Potvrda izvještaja**
-> *Započni*: omogućuje stvaranje početnog izvještaja o proizvodnji;    
-> *Napreduj*: omogućuje stvaranje izvještaja o napretku proizvodnje;      
-> *Obustavi*: omogućuje stvaranje izvještaja o obustavi proizvodnje;    
-> *Nastavi*: omogućuje stvaranje izvještaja o nastavku proizvodnje;    
-> *Zatvori*: omogućuje stvaranje završnog izvještaja o proizvodnji;    
-> *Otkaži*: omogućuje brisanje svih unesenih podataka u Fluentis MES-u.                   
-
-## Glavni obrazac 
-
-Glavni obrazac se sastoji od sekcije sa sljedećim poljima i mrežom koja sadrži faze u radu:   
-
-- **Šifra barkoda**      
-Većina operacija koje se mogu izvesti u Fluentis MES-u može se olakšati i ubrzati zahvaljujući korištenju polja *Barcode kod*. Ako je pravilno konfigurirano, ovo polje inteligentno obrađuje podatke dobivene skeniranjem bar koda i automatski unosi vrijednosti u odgovarajuća polja.    
-Bar kodovi se mogu konfigurirati unutar obrasca Barcode tokenizer, koji se nalazi u: Tablice > Opće postavke > Barkod tokenizator.                 
-Dakle, ovo polje *Barcode kod* u MES-u može se koristiti od strane operatera za dodavanje pojedinačnih faza ili grupa faza, ili na primjer, faza cijelog proizvodnog naloga, kao i za učitavanje serija i/ili serijskih brojeva materijala za preuzimanje, sve jednostavnim skeniranjem raznih bar kodova.  
-
-Za sve informacije o tome kako kodirati bar kodove za čitanje u polju **Codice barcode** konzultirajte stranicu posvećenu [Barkod tokenizator-u](/docs/configurations/tables/general-settings/barcode-tokenizer).
-
-- **Workstation**      
-Postupak može prepoznati radnu stanicu na kojoj operater radi. Ako je radnoj stanici dodijeljen radni centar, automatski će učitati sve faze koje su bile u radu na tom radnom centru. Tada operater može odabrati hoće li nastaviti s izvještavanjem o tim fazama ili dodati nove. Sve dodatne informacije možete pronaći u odjeljku posvećenom [Workstation](/docs/production/mes/workstation).     
-
-- **Resurs**      
-Polje *Resursa* koristi se za unos bilo koje vrste proizvodnog resursa.   
-Ako se unese resursa tipa *Radni centar*, automatski će se ažurirati i odgovarajuće polje*. *Radni centar*, što će rezultirati učitavanjem faza povezanih s novim centrom.
-Ako se unese resursa tipa *Djelatni*, koristit će se kao korisnik izvještavanja. Unos resursa tipa *Djelatnik obavezan* je u slučaju aktiviranja oznake Obavezni operater u kartici *Općenito* [Proizvodnih resursa](/docs/production/mes/production-resources).        
-
-- **Radni centar**
-označava radni centar na kojem operater obavlja izvještavanje; mogu se prikazati samo Radni centri povezani s *Radnom stanicom*. Ako *Radna stanica* nije unesena ili joj nije dodijeljen *Radni centar*, bit će moguće prikazati sve *Proizvodne resurse* tipa *Radni centar*.   
-
-- **Faze u radu**
-faze se mogu dodati unutar mreže koristeći polje *Šifra barkoda* ili korištenjem posebnog gumba *Odaberi nove faze* u desnom izborniku. Mreža sadrži različite informacije o narudžbi, proizvodnom nalogu, projektu, varijanti, itd. Sve te informacije mogu se prikazati ili sakriti putem upravljanja u kartici *Layout* [Proizvodnih resursa](/docs/production/mes/production-resources).   
-Za odabrani redak u mreži, na desnoj strani, moguće je vidjeti zadano sliku iz  [Šifarnik artikla](/docs/erp-home/registers/items/create-new-item); također, dvostrukim klikom na sliku možete je prikazati u cijelom zaslonu.     
-                
-### Kartica Proizvodnja     
-
-*Posebni gumbi*:
-
-> *Obriši resursu*: omogućuje uklanjanje unosa u polju *Resursa*;    
-> *Odaberi nove faze*: otvara pomoć za odabir novih faza koje će se dodati u glavnu mrežu;        
-> *Obriši fazu*: omogućuje uklanjanje odabrane faze ili faza iz glavne mreže.     
-
-Kartica **Proizvodnja** je posvećena unosu informacija o vremenima proizvodnje / postavljanja i količinama proizvedenih / odbačenih. Ovo je jedina kartica koja ne može biti skrivena i sastoji se od sljedećih polja:  
-> **Stroj**: ovdje je pretpostavljena zadani *Stroj* koja je navedena u *Radnom centru* ako faza još nije započela, dok ako su već unesene izjave, nudi onu iz prethodne izjave. Također je moguće ručno je promijeniti, ali samo na jednu od alternativnih mašina navedenih u evidenciji glavne mašine;       
-> **Radno vrijeme**: omogućuje ručni prikaz / izmjenu radnog vremena; ponašanje se može promijeniti putem zastavica *Ručni unos vremena* i *Predloženo vrijeme* prisutnih u  [Resursima proizvodnje](/docs/production/mes/production-resources). Vrijeme se automatski izračunava kao razlika između vremena trenutne i prethodne izjave;                   
-> **Vrijeme postavljanja**: omogućuje ručni unos / izmjenu vremena postavljanja;           
-> **Proizvedena količina**: omogućuje unos količine proizvedene s tom izjavom;           
-> **Alternativna količina**: omogućuje unos alternativne količine proizvedene s tom izjavom;        
-> **Skladište za odlaganje**: pokazuje skladište za učitavanje proizvoda proizvedenih s izjavom;       
-> **Predložak odlaganja**: označava prdložak učitavanja proizvoda proizvedenih s izjavom;         
-> **Lokacija plaćanja**: pokazuje lokaciju učitavanja proizvoda proizvedenih s izjavom;         
-> **Skladište za odlaganje otpada**: pokazuje skladište za ispraznjenje odbačenih proizvoda proizvedenih s izjavom;       
-> **Predložak odlaganja otpada**: označava predložak ispraznjenja odbačenih proizvoda proizvedenih s izjavom;       
-> **Lokacija plaćanja otpada**: pokazuje lokaciju ispraznjenja odbačenih proizvoda proizvedenih s izjavom;         
-> **Nedostatak**: označava odbačeni nedostatak proizvoda proizvedenih s izjavom; moguće je aktivirati posebnu kontrolu putem zastavice *Obavezni nedostatak ako je izjavljeno odbačeno* prisutne u [Resursima proizvodnje](/docs/production/mes/production-resources);           
-> **Predložak zastoja**: označava predložak suspenzije koji se koristi u izjavi; u slučaju da operater stvori suspenziju bez navođenja uzroka suspenzije, koristi se zadani predložak naveden u polju *Predloženi uzrok suspenzije* u kartici [Resursa proizvodnje](/docs/production/mes/production-resources).       
-
-Moguće je promijeniti funkcioniranje i layout obrasca putem upravljanja [Resursima proizvodnje](/docs/production/mes/production-resources).      
-
-### Kartica Kontrole kvalitete
-
-*Posebni gumbi*:
-
-> *Odaberite stavke*: omogućuje odabir koje artikle uključiti u tablicu kontrole kvalitete između proizvedenih ili odbačenih;         
-> *Uvezi sve*: omogućuje unos svih proizvedenih ili odbačenih artikala u tablicu kontrole kvalitete;       
-> *Izbriši kontrolu*: omogućuje brisanje odabrane kontrole;           
-> *Dupliciraj test*: omogućuje dupliciranje odabranog testa;       
-> *Izbriši test*: omogućuje brisanje odabranog testa.   
-
-Ova kartica omogućuje upravljanje Kontrolama kvalitete za proizvedene i/ili odbačene artikle.  
-
-Redovi se mogu dodavati u tablicu *Kontrole kvalitete* pomoću dva specifična gumba.           
-U ovoj tablici prikazani su sljedeći podaci:  
-> *Klasa*: označava klasu artikla;          
-> *Šifra artikla*: označava šifru artikla;            
-> *Varijanta*: označava varijantu artikla;      
-> *Detalj artikla za razmatranje*: označava maksimalni detalj artikla koji se razmatra za provođenje testova (Nijedan, Lot, S.B., Transportna jedinica). Ovo se odabire u tablici *Kontrole kvalitete* u upravljanju [Resursima proizvodnje](/docs/production/mes/production-resources);             
-> *Ref. detalj*: označava vrijednost *Detalja artikla za razmatranje*, npr. broj serije;           
-> *J.M.*: označava jedinicu mjere artikla;      
-> *Količina*: označava količinu artikla;    
-> *Otpad*: ako je aktivno, označava da je količina odbačena; ako nije aktivno, označava da je količina proizvedena, a ne odbačena;               
-> *Opis artikla*: označava opis artikla;          
-> *Opis varijante*: označava opis varijante.      
-
-Ako je faza u proizvodnom nalogu podložna kontroli kvalitete i već je pridružen plan kontrole (koji se nasljeđuje iz faze standardnog radnog ciklusa, ali se naravno može ručno promijeniti i u planiranom i u proizvodnom nalogu), testovi povezani s naznačenim planom kontrole automatski će se prikazati u tablici *Testovi*.      
-
-Tablica *Testovi* sastoji se od sljedećih polja:           
-> *Redoslijed*: označava redoslijed testova za provođenje;             
-> *Način testiranja*: označava šifru testa koji se mora provesti;           
-> *Opis način testiranja*: označava opis testa koji se mora provesti;             
-> *Alat za kategorije*: označava kategoriju korištenog instrumenta;           
-> *Vrsta iznosa*: označava je li vrijednost Tekstualna, *Da/Ne* ili *Numerička*;       
-> *Vrsta granice*: omogućuje označavanje *Vrste granice*; omogućuje se samo ako je *Vrsta vrijednosti* *Numerička*;       
-> *Vrijednost jedinice mjere*: označava jedinicu mjere vrijednosti;             
-> *Nominalna vrijednost*: označava numeričku vrijednost koju test treba imati;        
-> *Minimalna granica* / *Maksimalna granica*: označavaju minimalnu i maksimalnu granicu pogreške koju ispitivanje može imati, u postotku ili apsolutnoj vrijednosti, ovisno o zastavici *%*; *Minimalna granica* se oduzima od *Nominalne vrijednosti*, dok se *Maksimalna granica* zbraja;         
-> *L. min (toll-/+)* / *L. Max (toll-/+)*: označava tolerancije na minimalne i maksimalne granice koje se dodaju prethodnim tolerancijama; može, na primjer, uključivati nesigurnost u jedinici mjere; to je postotna vrijednost;                  
-> *%*: označava jesu li vrijednosti izražene u postotcima ili su apsolutne;                 
-> *Vrsta kontrolnog testa*: označava vrstu kontrolnog testa;          
-> *Frekvencija*: označava učestalost testiranja;         
-> *Alat za mjerenje*: označava korišteni instrument, ako postoje vrijednosti koje treba izmjeriti; sastoji se od Koda / Kategorije;        
-> *Otkrivena vrijednost*: označava izmjerenu vrijednost (koristi se ako imam jednu vrijednost);       
-> *Prosjek zabilježenih vrijednosti*: označava prosječnu vrijednost izmjerene vrijednosti (vrijednost se postavlja na temelju unesenih vrijednosti u tablici **Višestruko mjerenje**);      
-> *Rezultat*: označava rezultat testa i automatski se određuje na temelju unesenih parametara;         
-> *Količina neusklađenih*: označava količinu koja je utvrđena kao neusklađena;          
-> *Skladište*: označava skladište u kojem se nalaze neusklađeni artikli; ova se vrijednost automatski prikazuje na temelju onoga što je naznačeno u *Vrsti kontrole artikla*;                      
-> *Predložak skladištenja za neusklađene artikle*: označava uzrok koji će se koristiti za ispis neusklađenih artikala; ova se vrijednost automatski prikazuje na temelju onoga što je naznačeno u *Vrsti kontrole artikla*. Ova promjena događa se prilikom prijave proizvodne izjave;                      
-> *Napomena*: omogućuje unos slobodne napomene.        
+### Specifične funkcije
 
-Tablica **Detekcija višestrukih vrijednosti** koristi se u slučaju kada se mjeri više vrijednosti i one će doprinijeti određivanju *Prosjek izmjerenih vrijednosti*.
-Sastoji se od sljedećih stupaca:  
-> *Redoslijed*: označava redoslijed izmjerenih vrijednosti;      
-> *Pozicija*: opisno polje koje omogućuje da se navede na kojem se mjestu mjerenje obavilo;        
-> *Alat za mjerenje*: označava instrument korišten za to mjerenje;                
-> *Otkrivena vrijednost*: označava izmjerenu vrijednost;              
-> *Napomena*:  omogućuje unos slobodne napomene.  
+#### Navigacija
 
-Moguće je promijeniti funkcioniranje i izgled obrasca putem upravljanja [Resursima proizvodnje](/docs/production/mes/production-resources). 
+- **Prethodno**: prelazi na prethodnu karticu.
+- **Sljedeće**: prelazi na sljedeću karticu.
+- **Osvježi**: osvježava sve podatke obrasca (korisno nakon izmjena na resursu).
+- **Poništi odabir**: uklanja odabir faza u glavnoj tablici.
 
-Više detalja o području upravljanja kvalitetom dostupno je u [Kvaliteti](/docs/quality/quality-intro).          
+#### Potvrda prijave
 
-### Kartica Lotova i S/B 
+- **Pokreni**: kreira prijavu početka rada.
+- **Napredak**: kreira prijavu napretka rada.
+- **Obustavi**: kreira prijavu obustave rada.
+- **Nastavi**: kreira prijavu nastavka rada.
+- **Završi**: kreira prijavu završetka rada.
+- **Poništi**: briše unesene podatke u MES-u.
 
-*Posebni gumbi*:
+## Glavni obrazac
 
-> *Generirati*: omogućuje generiranje lotova i serijalnih brojeva;          
-> *Izbriši*: omogućuje brisanje odabranog lota / serijalnog broja.       
+Glavni obrazac sastoji se od dijela s osnovnim podacima i tablice koja prikazuje faze u radu.
 
-Na ovoj kartici moguće je pregledati sve artikle koji su proizvedeni s prikazom pripadajućih količina proizvedenih i odbačenih; također, kroz odgovarajuće tablice moguće je unijeti / izmijeniti informacije o *Lotovima* i *Serijalnim Brojevima*.        
+### Kod barkoda
 
-Moguće je promijeniti funkcioniranje i izgled obrasca putem upravljanja [Resursima proizvodnje](/docs/production/mes/production-resources).     
+Velik broj operacija koje se mogu izvršavati u Fluentis MES-u može se pojednostaviti i ubrzati korištenjem polja **Kod barkoda**. Ako je pravilno konfigurirano, sustav inteligentno obrađuje podatke očitane putem barkoda te automatski popunjava odgovarajuća polja.
+To operateru donosi značajne prednosti u pogledu brzine unosa i učinkovitosti jer sve podatke može očitavati u isto polje **Kod barkoda**, bez potrebe za promjenom fokusa na druga polja.
+Konfiguracija se obavlja u odjeljku:
 
-### Kartica Etiketa
+`Tablice > Opće postavke > Barcode tokenizer`
+Polje **Kod barkoda** u MES-u može se koristiti za:
 
-*Posebni gumbi*:
+- dodavanje pojedinačnih faza ili grupa faza;
+- dodavanje faza cijelog proizvodnog naloga;
+- učitavanje lotova i/ili serijskih brojeva materijala za razduženje;
+sve jednostavnim očitavanjem odgovarajućih barkodova.
 
-> *Nova*: omogućuje stvaranje retka za unos nove etikete;          
-> *Izbriši*: omogućuje brisanje odabranog retka etikete;         
-> *Nova Transportne jedinica*: omogućuje ponovno generiranje koda odabrane Transportne jedinice;        
-> *Ispis odabira*: omogućuje ispis samo odabranih etiketa;         
-> *Ispis svega*: omogućuje ispis svih etiketa.            
+Za informacije o načinu definiranja barkodova koji se koriste u polju **Kod barkoda**, pogledajte stranicu: [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer).
 
-Na kartici **Etiketa** automatski se stvaraju etikete za proizvedene artikle.   
-Količina artikala za svaku etiketu određena je informacijama unesenima u osnovne podatke o artiklu kako slijedi:  
-1. Kartica *Pakiranje*: uzima u obzir Transportnu jedinicu i količinu unesenu u retku s aktivnim oznakom "Obavezna jedinica utovara";       
-2. Kartica *Težina/Dimenzije*: uzima u obzir Transportnu jedinicu i količinu unesenu u poljima *Vrsta jedinice utovara* i *Broj artikala po jedinici utovara*;    
-3. Kartica *Težina/Dimenzije* > *Broj paketa*: uzima u obzir količinu unesenu u Poljima prisutnih *Artikala u paketu*; u ovom slučaju transportnu jedinicu neće biti ponuđen.
+### Radna stanica
 
-Također, operater može ručno unijeti ili putem polja *Barkod kod*, *Serijski broj* ako je potrebno.      
-Polje **Stanje ispisa** može imati vrijednosti *Nije ispisano*, *Ispisano* ili *Ponovno ispisano* ovisno o broju puta koliko je etiketa bila ispisana.
+Sustav automatski prepoznaje radnu stanicu na kojoj se izvršava te, ako je s njom povezan radni centar, automatski učitava sve faze koje su bile aktivne na tom radnom centru. Operater zatim može nastaviti s prijavom tih faza ili dodati nove.
+Dodatne informacije: [Radna stanica](/docs/production/mes/workstation)
 
-Možete promijeniti rad i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).     
+### Resurs
 
-### Kartica Materijali
+Polje **Resurs** koristi se za unos bilo koje vrste proizvodnog resursa.
+Ako se unese resurs tipa **Radni centar**, on će se automatski postaviti i u odgovarajuće polje **Radni centar**, nakon čega će se učitati faze povezane s novoodabranim radnim centrom.
+Ako se unese resurs tipa **Zaposlenik**, on će se koristiti kao operater koji evidentira proizvodnu aktivnost. Unos resursa tipa zaposlenik obavezan je ako je aktivirana oznaka **Operater obavezan** na kartici *Općenito* u [Proizvodnim resursima](/docs/production/mes/production-resources).
 
-Na kartici **Materijali** automatski se prikazuju materijali koji su potrošeni na osnovu količine glavnog artikla koji se treba proizvesti i njegove osnovne strukture; samo ako je aktivna opcija **Obavezna je ručna deklaracija materijala** u *Općim podacima* upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources), materijal će biti ponuđen s označenom žutom bojom i količinom nula, te će operater biti prisiljen da ga ručno unese.     
-Također, moguće je navesti količine odbačenog svakog pojedinog materijala uz informacije o skladištu i predlošku odbačaja; putem odgovarajućih tablica mogu se unijeti / promijeniti informacije o *Lotove* i *Serijskim brojevima* za odabrani pojedinačni materijal.             
+### Radni centar
 
-Moguće je mijenjati rad i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).     
+Označava radni centar na kojem operater evidentira proizvodne aktivnosti. Moguće je prikazati samo radne centre povezane s odabranom **Radnom stanicom**.
+Ako radna stanica nije definirana ili s njom nije povezan nijedan radni centar, bit će moguće prikazati sve **Proizvodne resurse** tipa **Radni centar**.
 
-### Kartica Tim 
+### Faze u radu
 
-*Posebni gumbi*:
+Faze se mogu dodati u tablicu putem polja **Kod barkoda** ili korištenjem funkcije **Odaberi nove faze** koja se nalazi u desnom izborniku.
 
-> *Pridružite se timu*: omogućuje unos jednog ili više operatera u radnu ekipu;          
-> *Izađite iz tima*: omogućuje izlazak jednog ili više operatera iz radne ekipe;        
-> *Zamijeni operatera*: omogućuje zamjenu aktivnog operatera s drugim, zadržavajući datume/sate ulaska i izlaska iz ekipe;          
-> *Ukloni iz tima*: omogućuje uklanjanje retka vezanog za odabranog operatera.         
+Tablica sadrži različite informacije vezane uz proizvodni nalog, proizvodnu komisiju, projekt, varijantu artikla i druge podatke.
 
-Kartica **Tim** se sastoji od dva dijela:  
-> Popis aktivnih operatera: omogućuje unos i pregled aktivnih operatera u proizvodnoj deklaraciji; prvi uneseni operater dobiva oznaku *Vođe tima* (koju je moguće ručno promijeniti);              
-> Popis neaktivnih operatera: omogućuje pregled neaktivnih operatera (koji su radili na ovoj ili ovim fazama u prethodnim deklaracijama).  
+Vidljivost pojedinih stupaca može se uključivati ili isključivati putem kartice **Izgled** u [Proizvodnim resursima](/docs/production/mes/production-resources).
 
-Moguće je mijenjati funkcionalnost i izgled forme putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
+Za odabrani redak moguće je, s desne strane tablice, prikazati zadanu sliku definiranu u [Šifarniku artikala](/docs/erp-home/registers/items/create-new-item). Dvostrukim klikom slika se otvara preko cijelog zaslona.
 
-### Kartica Analiza 
+## Proizvodnja
 
-Kartica **Analiza** namijenjena je pregledu i konzultaciji podataka o performansama proizvodnje. Sastoji se od tri dijela:  
-- OEE dijagrami 
-- Stupčasti dijagrami: **Analiza količina** i **Analiza vremena**
-- Tablice: **Vrijednosti količina** i **Vrijednosti vremena** 
+### Specifične funkcije
 
-**OEE**, **Overall Equipment Effectiveness** (Ukupna učinkovitost opreme), je ključni pokazatelj performansi (KPI) koji mjeri proizvodne kapacitete tvrtke.  
+- **Očisti resurs**: uklanja vrijednost unesenu u polje **Resurs**.
+- **Odaberi nove faze**: otvara pomoćni prozor za odabir dodatnih faza koje se mogu dodati postojećim fazama u glavnoj tablici.
 
-Vrijednost **OEE** sastoji se od sljedećih triju faktora:  
-- **Operativna dostupnost (Availability)**: postotak radnog vremena (B) u odnosu na raspoloživo vrijeme (A). Koristi se omjer između planiranog radnog vremena postrojenja (A) i stvarnog vremena tijekom kojeg je postrojenje proizvodilo (B).  
-- **Kvaliteta proizvoda (Performance) - Učinkovitost**: efikasnost je postotak stvarno obrađenih artikala (D) u odnosu na teoretski moguće obrađene artikle (C). U planiranju se računaju artikli koji bi se mogli obraditi pri optimalnom kapacitetu (C), a smanjenje ovih performansi može ukazivati na pad u proizvodnji (D).  
-- **Kvaliteta proizvoda (Quality)**: to je postotak ispravnih artikala (F) u odnosu na ukupno proizvedene artikle (E). Ovo jasno pokazuje pad u proizvodnji zbog odbačenih proizvoda ili potrebe za radnim zahvatima koji utječu na opću učinkovitost.  
-- **Ukupna učinkovitost resursa (OEE)**: ovaj se izračun dobiva iz prethodno navedenih analiza i definira se kao:   
+Kod radnog centra s više faza, ako već postoje aktivne faze, nove faze moguće je dodati samo ako se postojeće nalaze u statusu **Pokrenuta** ili **Obustavljena**. U suprotnom je potrebno prvo obustaviti postojeće faze.
 
-OEE = Availability x Performance x Quality x 100 = B/A x D/C x F/E x 100
+Ako je, primjerice, jedna faza u statusu **Obustavljena**, a korisnik doda fazu koja još nije započela, sustav će automatski kreirati prijavu početka i prijavu obustave za novu fazu s istim datumom i vremenom. Nakon toga korisnik može nastaviti rad na svim fazama korištenjem funkcije **Nastavi**.
 
-**Ukupna učinkovitost** resursa može se izračunati s ili bez uključenog vremena za pripremu opreme.  
+Ako se dodaju faze koje su već u nekom drugom statusu, njihov će status biti usklađen na **Obustavljena**. Prilikom nastavka rada novododane faze preuzet će podatke o radnom centru i stroju koji su korišteni za izvorne faze.
 
-U odjeljku sa stupčastim dijagramima nalaze se dijagrami za **Analizu količina** i **Analizu vremena** gdje možete vidjeti podatke o planiranim i stvarnim količinama i vremenima do tog trenutka.        
+- **Ukloni fazu**: uklanja odabranu fazu ili više odabranih faza iz glavne tablice.
 
-U tablicama u posljednjem dijelu možete također pregledati planirane i stvarne količine i vremena do tog trenutka, ali u obliku tabularnih podataka.  
+Kartica **Proizvodnja** namijenjena je unosu podataka o vremenu rada i pripreme te proizvedenim i škartiranim količinama. To je jedina kartica koja se ne može sakriti.
 
-Podaci prikazani u svim sekcijama kartice **Analize** odnose se na odabrane faze. Ako nisu odabrane nikakve faze, prikazani podaci će predstavljati ukupnost svih faza navedenih u mreži *Faze u radu*.  
+### Glavna polja
 
-Moguće je prilagoditi funkcionalnost i izgled obrasca putem Upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
+**Stroj**  
+Vrijednost se predlaže prema sljedećim pravilima:
+- ako je uz fazu povezan stroj i taj stroj je u tablici [Strojevi](/docs/configurations/tables/production/machines/) povezan s istim radnim centrom koji je odabran u MES-u, stroj će biti automatski predložen;
+- korisnik može promijeniti stroj, ali samo odabirom strojeva koji su povezani s odabranim radnim centrom;
+- ako stroj definiran na fazi nije povezan s tim radnim centrom, polje će ostati prazno.
+U tom slučaju, prilikom pokušaja kreiranja prijave, sustav će zahtijevati unos stroja prije nastavka rada.
+Ako uz fazu nije definiran nijedan stroj, njegov unos neće biti obavezan.
+Kod istovremenog odabira više faza, stroj se preuzima s prve odabrane faze (ili faze s najvišim prioritetom ako je definiran redoslijed) među fazama koje pripadaju istom radnom centru odabranom u MES-u.
 
-### Kartica Dokumenti i Operativne upute 
+**Vrijeme pripreme**  
+Omogućuje ručni unos ili izmjenu vremena pripreme.
 
-Ovaj kartica sastoji se od sekcija **Dokumenti** i **Operativne upute**.
+**Aktivnost pripreme**  
+U proizvodnim prijavama i MES prijavama dodan je pokazatelj aktivnosti pripreme.
+Oznaka je dostupna samo ako faza (ili prva faza u grupi faza) koristi stroj.
+Ako je oznaka uključena, vrijeme će se evidentirati kao **Vrijeme pripreme**. U suprotnom će se evidentirati kao **Vrijeme rada**.
 
-Sekcija **Dokumenti** dalje se dijeli na:
-> **Dokumenti priloženi odabranoj fazi**: omogućuje pregled svih dokumenata povezanih s  *Šifarnikom proizvoda*, *Narudžbom Kupca*, *Proizvodnom narudžbom* i *Narudžbom za proizvodnju*, sukladno uputama u *Upravljanju Dokumentacijom* dostupnim u [Resursima za proizvodnju](/docs/production/mes/production-resources);       
-> **Dokumenti povezani s prijavom odabrane faze**: omogućuje pregled ili pričvršćivanje novih dokumenata izravno na izjavu, uključujući metodu povlačenja i ispuštanja;         
-> **Operativne upute**: omogućuje pregled svih dokumenata povezanih s fazom proizvodnog ciklusa.           
+**Vrijeme rada**  
+Omogućuje pregled i ručnu izmjenu vremena rada.
+Ponašanje polja moguće je prilagoditi putem postavki **Ručni unos vremena** i **Predloženo vrijeme** u [Proizvodnim resursima](/docs/production/mes/production-resources).
+Vrijeme se automatski izračunava kao razlika između trenutne i prethodne prijave.
 
-Moguće je prilagoditi funkcioniranje i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
+**Proizvedena količina**  
+Količina proizvedena ovom prijavom.
 
-### Kartica napomene  
+**Alternativna količina**  
+Alternativna mjerna količina proizvedena ovom prijavom.
 
-Ova kartica sastoji se od dvije sekcije:             
-> **Popis bilješki (odaberite fazu)**: omogućuje pregled i prikaz bilješki koje se odnose na odabranu fazu; bilješke koje se prikazuju u ovoj tablici direktno su preuzete iz faza radnog ciklusa, konkretno iz kartice *Napomene*;                  
-> **Popis napomena o prijavi**: omogućuje unos i pregled bilješki koje se odnose na trenutnu izjavu.     
+**Skladište zaprimanja**  
+Skladište u koje se knjiže proizvedeni artikli.
 
-Moguće je prilagoditi funkcioniranje i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
+**Predložak zaprimanja**  
+Predložak knjiženja proizvedenih artikala.
 
-### Kartica Prethodne obavijesti
+**Lokacija zaprimanja**  
+Lokacija skladištenja proizvedenih artikala.
 
-Ova kartica omogućava pregled svih prethodnih obavijesti koje se odnose na odabranu fazu. 
+**Skladište škarta**  
+Skladište u koje se knjiže škartirani proizvodi.
 
-Moguće je prilagoditi funkcioniranje i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
+**Predložak škarta**  
+Predložak knjiženja škartiranih proizvoda.
 
-### Kartica Dodatni podaci  
+**Lokacija škarta**  
+Lokacija knjiženja škartiranih proizvoda.
 
-Ova kartica sastoji se od dvije rešetke:  
-> *Popis dodatnih podataka (odaberite fazu)*: omogućuje upravljanje dodatnim podacima koji se odnose na odabranu fazu;         
-> *Popis dodatnih podataka o prijavi*: omogućuje upravljanje dodatnim podacima koji se odnose na trenutnu izjavu.     
+**Defekt**  
+Označava razlog škarta proizvedenih artikala.
+Moguće je uključiti kontrolu putem oznake **Defekt obavezan kod prijave škarta** u [Proizvodnim resursima](/docs/production/mes/production-resources).
 
-Moguće je prilagoditi funkcioniranje i izgled obrasca putem upravljanja [Proizvodnim resursima](/docs/production/mes/production-resources).  
+**Razlog obustave**  
+Razlog koji se koristi kod prijave obustave rada.
+
+Ako operater kreira obustavu bez odabira razloga, sustav će automatski koristiti zadani razlog definiran u polju **Predloženi razlog obustave** unutar [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+Izgled i ponašanje obrasca moguće je dodatno prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+### Kontrole kvalitete
+
+Omogućuje upravljanje kontrolama kvalitete nad proizvedenim ili škartiranim artiklima.
+
+#### Specifične funkcije
+
+- **Odaberi artikle**: omogućuje odabir artikala koje je potrebno uključiti u tablicu kontrola kvalitete među proizvedenim ili škartiranim artiklima.
+- **Uvezi sve**: automatski dodaje u tablicu kontrola kvalitete sve proizvedene i škartirane artikle.
+- **Obriši kontrolu**: uklanja odabranu kontrolu kvalitete.
+- **Dupliciraj ispitivanje**: stvara kopiju odabranog ispitivanja.
+- **Obriši ispitivanje**: uklanja odabrano ispitivanje.
+
+Redci se u tablicu **Kontrole kvalitete** mogu dodavati pomoću navedenih funkcija.
+
+U tablici se prikazuju sljedeći podaci:
+
+- **Klasa**: označava klasu artikla.
+- **Šifra artikla**: označava šifru artikla.
+- **Varijanta**: označava varijantu artikla.
+- **Detalj artikla za kontrolu**: određuje najvišu razinu detalja artikla koja se uzima u obzir pri provođenju kontrola (Ništa, Lot, Serijski broj ili U.D.C.). Ova postavka definira se u kartici **Kontrole kvalitete** unutar [Proizvodnih resursa](/docs/production/mes/production-resources).
+- **Referenca detalja**: prikazuje vrijednost odabranog detalja artikla, primjerice broj lota.
+- **JM**: mjerna jedinica artikla.
+- **Količina**: količina artikla koja je predmet kontrole.
+- **Škart**: ako je oznaka aktivna, navedena količina odnosi se na škartirane proizvode; ako nije aktivna, odnosi se na proizvedene artikle koji nisu škartirani.
+- **Opis artikla**: opis artikla.
+- **Opis varijante**: opis odabrane varijante.
+
+Ako je u proizvodnom nalogu povezanom s fazom definirano da faza podliježe kontroli kvalitete te joj je pridružen plan kontrole (koji se standardno nasljeđuje iz faze tehnološkog postupka, ali ga je moguće ručno izmijeniti i na planskom i na proizvodnom nalogu), sva ispitivanja povezana s odabranim planom kontrole automatski će biti prenesena u tablicu **Ispitivanja**.
+
+### Ispitivanja
+
+Tablica sadrži sljedeća polja:
+
+- **Sekvenca**: određuje redoslijed izvođenja ispitivanja.
+- **Vrsta ispitivanja**: šifra ispitivanja koje je potrebno provesti.
+- **Opis vrste ispitivanja**: opis ispitivanja koje je potrebno provesti.
+- **Obavezno ispitivanje**: označava je li ispitivanje obavezno za nastavak prijave proizvodnje.
+- **Kategorija instrumenta**: kategorija mjernog instrumenta koji se koristi.
+- **Vrsta vrijednosti**: određuje je li rezultat tipa *Tekst*, *Da/Ne* ili *Numerička vrijednost*.
+- **Vrsta granice**: omogućuje definiranje vrste granice; dostupno je samo ako je **Vrsta vrijednosti** postavljena na *Numerička vrijednost*.
+- **Mjerna jedinica vrijednosti**: mjerna jedinica rezultata ispitivanja.
+- **Nominalna vrijednost**: očekivana numerička vrijednost ispitivanja.
+- **Donja granica** / **Gornja granica**: određuju minimalno i maksimalno dopušteno odstupanje od nominalne vrijednosti, izraženo kao postotak ili apsolutna vrijednost, ovisno o oznaci **%**. Donja granica oduzima se od nominalne vrijednosti, a gornja joj se dodaje.
+- **Min. granica (tol-/+)** / **Maks. granica (tol-/+)**: dodatne tolerancije na minimalnu i maksimalnu granicu koje se primjenjuju uz prethodno definirane granice. Primjerice, mogu predstavljati nesigurnost mjerenja. Vrijednost je izražena u postotku.
+- **%**: označava jesu li vrijednosti izražene u postocima ili kao apsolutne vrijednosti.
+- **Vrsta kontrole ispitivanja**: definira način kontrole ispitivanja.
+- **Učestalost**: određuje učestalost provođenja kontrole.
+- **Mjerni instrument**: instrument korišten za mjerenje, ako je potrebno evidentirati izmjerene vrijednosti. Sastoji se od šifre i kategorije.
+- **Izmjerena vrijednost**: evidentirana vrijednost mjerenja (koristi se kod pojedinačnog mjerenja).
+- **Prosjek izmjerenih vrijednosti**: prosječna vrijednost svih mjerenja unesenih u tablicu **Evidencija višestrukih mjerenja**.
+- **Rezultat**: ishod ispitivanja koji se automatski određuje na temelju definiranih parametara.
+- **Nesukladna količina**: količina artikala za koju je utvrđena nesukladnost.
+- **Skladište**: skladište u kojem se nalaze nesukladni artikli. Vrijednost se automatski preuzima iz postavke **Vrsta kontrole artikla**.
+- **Skladišni predložak za nesukladne artikle**: predložak kojim će se knjižiti nesukladni artikli. Vrijednost se automatski preuzima iz postavke **Vrsta kontrole artikla**. Knjiženje se izvršava prilikom registracije prijave proizvodnje.
+- **Napomene**: slobodno polje za unos napomena.
+
+### Evidencija višestrukih mjerenja
+
+Ova tablica koristi se kada je potrebno evidentirati više mjerenja koja zajedno određuju vrijednost polja **Prosjek izmjerenih vrijednosti**.
+Sadrži sljedeće stupce:
+
+- **Sekvenca**: redni broj mjerenja.
+- **Pozicija**: opisno polje koje označava mjesto ili poziciju na kojoj je mjerenje izvršeno.
+- **Mjerni instrument**: instrument korišten za pojedino mjerenje.
+- **Izmjerena vrijednost**: evidentirana vrijednost mjerenja.
+- **Napomene**: slobodno polje za unos napomena.
+
+Ponašanje i izgled obrasca moguće je prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+Dodatne informacije o upravljanju kvalitetom dostupne su u modulu [Kvaliteta](/docs/quality/quality-intro).
+
+### Lotovi i serijski brojevi
+
+#### Specifične funkcije
+
+- **Generiraj**: omogućuje generiranje lotova i serijskih brojeva.
+- **Obriši**: uklanja odabrani lot ili serijski broj.
+
+U ovoj kartici moguće je pregledati sve proizvedene artikle zajedno s pripadajućim proizvedenim i škartiranim količinama.
+Putem pripadajućih tablica moguće je unositi i mijenjati podatke vezane uz **lotove** i **serijske brojeve**.
+Ponašanje i izgled obrasca moguće je prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+### Etikete
+
+U kartici **Etikete** automatski se generiraju etikete za proizvedene artikle.
+
+#### Specifične funkcije
+
+- **Nova**: dodaje novi redak za unos etikete.
+- **Obriši**: uklanja odabrani redak etikete.
+- **Novi UDC**: ponovno generira šifru odabrane UDC jedinice.
+- **Ispis odabranog**: ispisuje samo odabrane etikete.
+- **Ispis svega**: ispisuje sve etikete.
+
+Količina artikala po pojedinoj etiketi određuje se prema podacima definiranim u šifarniku artikla:
+
+1. Kartica **Pakiranje** – koristi UDC i količinu definiranu u retku s uključenom oznakom **Obavezna jedinica utovara**.
+2. Kartica **Težina/Dimenzije** – koristi UDC i količinu definiranu u poljima **Vrsta jedinice utovara** i **Broj artikala po jedinici utovara**.
+3. Kartica **Težina/Dimenzije** – polje **Broj paketa** – koristi količinu definiranu u polju **Broj artikala u paketu**. U tom slučaju UDC se neće automatski predložiti.
+
+Operater može ručno ili putem polja **Kod barkoda** unijeti potrebne **lotove** i **serijske brojeve**.
+Polje **Status ispisa** može imati sljedeće vrijednosti:
+
+- **Nije ispisano**
+- **Ispisano**
+- **Ponovno ispisano**
+
+ovisno o broju izvršenih ispisa etikete.
+Ponašanje i izgled obrasca moguće je prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+### Materijali
+
+U ovoj kartici automatski se prikazuju materijali utrošeni za proizvodnju na temelju količine nadređenog artikla i njegove sastavnice.
+Ako je u kartici **Općenito** unutar [Proizvodnih resursa](/docs/production/mes/production-resources) aktivirana oznaka **Obavezna prijava količine materijala**, materijal će biti prikazan žutom bojom s količinom **0**, a operater će količinu morati unijeti ručno.
+Također je moguće evidentirati škartirane količine za svaki pojedini materijal, zajedno sa skladištem i predloškom knjiženja škarta.
+Putem pripadajućih tablica moguće je unositi i mijenjati podatke o **lotovima** i **serijskim brojevima** za odabrani materijal.
+Ponašanje i izgled obrasca moguće je prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+### Tim
+
+#### Specifične funkcije
+
+- **Pridruži timu**: omogućuje dodavanje jednog ili više operatera u radni tim.
+- **Napusti tim**: omogućuje uklanjanje jednog ili više operatera iz radnog tima.
+- **Zamijeni operatera**: omogućuje zamjenu aktivnog operatera drugim operaterom uz zadržavanje vremena ulaska i izlaska iz tima.
+- **Ukloni iz tima**: uklanja redak koji se odnosi na odabranog operatera.
+
+Kartica **Tim** sastoji se od dvije sekcije:
+
+- **Popis aktivnih operatera**: omogućuje unos i pregled operatera koji aktivno sudjeluju u prijavi proizvodnje. Prvi uneseni operater automatski dobiva oznaku **Voditelj tima**, koju je moguće naknadno promijeniti.
+- **Popis neaktivnih operatera**: prikazuje operatere koji više nisu aktivni, ali su prethodno radili na ovoj fazi ili skupini faza u ranijim prijavama.
+
+Ponašanje i izgled obrasca moguće je prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+### Analiza
+
+Kartica je namijenjena prikazu i analizi podataka vezanih uz učinkovitost proizvodnih aktivnosti.
+Sastoji se od sljedećih sekcija:
+- **OEE dijagrami**
+- **Stupčasti dijagrami**:
+  - Analiza količina
+  - Analiza vremena
+- **Tablice**:
+  - Vrijednosti količina
+  - Vrijednosti vremena
+
+**OEE (Overall Equipment Effectiveness)** odnosno **ukupna učinkovitost proizvodnog resursa** predstavlja ključni pokazatelj uspješnosti (KPI) kojim se mjeri učinkovitost proizvodnog procesa.
+
+Vrijednost **OEE** sastoji se od tri osnovna čimbenika:
+
+- **Operativna raspoloživost (Availability)**: postotak stvarnog vremena rada (B) u odnosu na raspoloživo vrijeme (A).
+  Izračunava se kao odnos između ukupno raspoloživog vremena rada postrojenja (A) i stvarnog vremena tijekom kojeg je postrojenje proizvodilo (B).
+
+- **Učinkovitost rada (Performance)**: postotak stvarno proizvedenih artikala (D) u odnosu na teorijski mogući broj artikala (C).
+  Tijekom planiranja izračunava se maksimalan broj artikala koji se mogu proizvesti pri optimalnim uvjetima rada (C). Svako odstupanje od te vrijednosti ukazuje na smanjenje produktivnosti (D).
+
+- **Kvaliteta proizvoda (Quality)**: postotni odnos između količine ispravnih artikala (F) i ukupno proizvedenih artikala (E).
+  Na taj se način identificiraju gubici uzrokovani škartom ili dodatnim doradama koje smanjuju ukupnu učinkovitost procesa.
+
+- **Ukupna učinkovitost (OEE)**: izračunava se na temelju prethodna tri pokazatelja prema formuli:
+
+  OEE = Availability × Performance × Quality × 100
+      = B/A × D/C × F/E × 100
+
+Pokazatelj **ukupne učinkovitosti (OEE)** može se izračunavati s uključenim ili bez uključenog vremena pripreme.
+
+U sekciji stupčastih dijagrama nalaze se dijagrami **Analiza količina** i **Analiza vremena**, koji omogućuju prikaz planiranih količina i vremena te stvarno prijavljenih vrijednosti evidentiranih do trenutka pregleda.
+U tablicama koje se nalaze u posljednjoj sekciji također je moguće pregledavati planirane količine i vremena te stvarno prijavljene vrijednosti, ali u obliku tabličnog prikaza.
+Podaci prikazani u svim sekcijama kartice **Analiza** odnose se na trenutno odabrane faze. Ako nijedna faza nije odabrana, prikazani podaci predstavljaju zbirne vrijednosti svih faza prikazanih u tablici **Faze u radu**.
+
+Ponašanje i izgled obrasca moguće je prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+### Dokumenti i radne upute
+
+Ova kartica sastoji se od sekcija **Dokumenti** i **Radne upute**.
+
+Sekcija **Dokumenti** dodatno je podijeljena na:
+
+- **Dokumenti pridruženi odabranoj fazi**: omogućuje pregled svih dokumenata povezanih sa *Šifarnikom artikala*, *Narudžbom kupca*, *Proizvodnom komisijom* i *Proizvodnim nalogom*, u skladu s postavkama definiranim u kartici **Upravljanje dokumentima** unutar [Proizvodnih resursa](/docs/production/mes/production-resources).
+- **Dokumenti pridruženi prijavi odabrane faze**: omogućuje pregled postojećih dokumenata te dodavanje novih dokumenata izravno uz prijavu, uključujući i metodom *drag & drop*.
+- **Radne upute**: omogućuje pregled svih dokumenata povezanih s odabranom fazom tehnološkog postupka proizvodnje.
+
+Ponašanje i izgled obrasca moguće je prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+### Napomene
+
+Kartica se sastoji od dvije sekcije:
+
+- **Popis napomena (odaberite fazu)**: omogućuje pregled i prikaz napomena vezanih uz odabranu fazu. Napomene prikazane u ovoj tablici preuzimaju se iz faza tehnološkog postupka, odnosno iz kartice **Napomene**.
+- **Popis napomena prijave**: omogućuje unos i pregled napomena vezanih uz trenutnu prijavu proizvodnje.
+
+Ponašanje i izgled obrasca moguće je prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+### Prethodne prijave
+
+Ova kartica omogućuje pregled svih prethodno evidentiranih prijava povezanih s odabranom fazom.
+
+Ponašanje i izgled obrasca moguće je prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+### ExtraData
+
+Ova kartica sastoji se od dvije tablice:
+
+- **Popis extra data (odaberite fazu)**: omogućuje upravljanje extra data poljima vezanima uz odabranu fazu.
+- **Popis extra data prijave**: omogućuje upravljanje extra data poljima vezanima uz proizvodnu prijavu koja se trenutno evidentira.
+
+Ponašanje i izgled obrasca moguće je prilagoditi kroz postavke [Proizvodnih resursa](/docs/production/mes/production-resources).
+
+## Sažetak i dodatne informacije
+
+**Fluentis MES** omogućuje cjelovito upravljanje proizvodnim prijavama, uključujući:
+
+- Evidentiranje vremena i količina.
+- Upravljanje lotovima i serijskim brojevima.
+- Kontrolu kvalitete.
+- Analizu KPI pokazatelja putem OEE-a.
+- Upravljanje timovima i proizvodnom dokumentacijom.
+
+Napredna konfiguracija ponašanja obrasca centralizirana je u sljedećim modulima:
+
+- [Proizvodni resursi](/docs/production/mes/production-resources)
+- [Workstation](/docs/production/mes/workstation)
+- [Barcode tokenizer](/docs/configurations/tables/general-settings/barcode-tokenizer)
+- [Kvaliteta](/docs/quality/quality-intro)
+
+Ovakva integracija osigurava sljedivost, kontrolu performansi i optimizaciju proizvodnih procesa unutar ERP sustava.
