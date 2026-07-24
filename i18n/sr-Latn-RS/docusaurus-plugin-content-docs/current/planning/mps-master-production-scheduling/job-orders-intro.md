@@ -48,4 +48,4 @@ import Link from '@docusaurus/Link';
 
 ## Povezanost sa drugim modulima
 
-Ovi moduli su usko povezani sa [*Šifarnikom artikala*](/docs/erp-home/registers/items/create-new-item), [*Narudžbinama kupaca*](/docs/sales/sales-orders/settings) i [*Prognozama prodaje*](/docs/planning/sales-forecasting).
+Ovi moduli su usko povezani sa [*Šifarnikom artikala*](/docs/erp-home/registers/items/create-new-item), [*Narudžbinama kupaca*](/docs/sales/sales-orders/settings) i *Prognozama prodaje*.
