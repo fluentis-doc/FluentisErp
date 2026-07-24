@@ -1,34 +1,68 @@
 ---
-title: Zapis signala
+title: Knjiženje deklaracija o proizvodnji (Zapis signala)
+description: Vodič za knjiženje i vraćanje deklaracija o proizvodnji u Fluentisu, uključujući filtere, funkcionalnosti i dostupne komande.
+keywords:
+  - deklaracija o proizvodnji (zapis signala)
+  - knjiženje proizvodnje
+  - vraćanje prijava
+  - skladišne transakcije
 sidebar_position: 1
+schema: TechArticle
+tags:
+  - Proizvodnja
+  - Prijave
+  - Knjiženje
+  - Skladište
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-:::important Čemu služi 
-Postupak registracije proizvodnih prijava u Fluentisu omogućuje istodobnu registraciju više prijava.  
+# Knjiženje deklaracija o proizvodnji (Zapis signala)
+
+:::important
+Ovaj postupak omogućava istovremeno knjiženje više deklaracija o proizvodnji, kao i vraćanje prethodno izvršenih knjiženja.
 :::
 
 ## Filter
 
-U ovoj kartici moguće je pregledati popis proizvodnih prijava koje još nisu registrirane te ih je moguće filtrirati kroz niz kriterija odabira.   
+U ovoj sekciji moguće je prikazati listu deklaracija o proizvodnji koje još nisu knjižene i filtrirati ih pomoću različitih kriterijuma odabira.
 
-Nakon postavljanja željenih filtera, dovoljno je kliknuti na gumb **Traži** na *traci izbornika* kako bi se rezultati prikazali unutar mreže rezultata.  
+#### Kako koristiti filter
 
-*Posebni gumbi*: 
+1. Postavite željene kriterijume filtriranja.
+2. Kliknite na dugme **Traži** u *ribbon traci*.
+3. Pregledajte rezultate u tabeli ispod.
 
-> **Zapis signala**: ovaj gumb omogućuje registraciju svih izjava koje je korisnik odabrao u donjoj mreži.  
+#### Specifična dugmad
 
+- **Zapis signala**: omogućava knjiženje svih deklaracija o proizvodnji odabranih u tabeli rezultata.
 
 ## Sažetak
 
-U ovoj kartici moguće je vratiti već izvršene registracije te ih filtrirati kroz niz kriterija odabira.   
+Sekcija *Sažetak* omogućava pregled i vraćanje već izvršenih knjiženja, uz primenu kriterijuma pretrage jednakih onima u prethodnoj sekciji.
 
-Nakon postavljanja željenih filtera, dovoljno je kliknuti na gumb **Traži** na *traci izbornika* kako bi se rezultati prikazali unutar mreže rezultata.   
+#### Pregled podataka
 
-Odabirom registracije u donjem tabu **Izjave** moguće je pregledati povezane registrirane izjave, a za svaku od njih, u kartici **Registracija skladišta**, povezane skladišne pomake.  
+1. Postavite željene filtere.
+2. Kliknite na **Traži**.
+3. Odaberite knjiženje kako biste prikazali:
+   - Na kartici **Signali**: povezane knjižene prijave.
+   - Na kartici **Zapis zalihe**: pripadajuće skladišne transakcije.
 
-*Posebni gumbi*: 
+#### Specifična dugmad
 
-> **Brisanje zapisa signalizacije**: ovaj gumb omogućuje vraćanje svih izjava registriranih u toj registraciji;  
-> **Vraćanje izjave**: ovaj gumb omogućuje vraćanje pojedinačne registracije koju je korisnik odabrao u donjoj mreži, ostavljajući druge registrirane izjave nepromijenjenima.  
+- **Brisanje zapisa signalizacije**: vraća sve prijave obuhvaćene odabranim knjiženjem.
+- **Povrati signalizaciju**: vraća samo prijavu koju je korisnik odabrao u mreži ispod, bez uticaja na ostale prijave.
 
-Za detalje o zajedničkom funkcioniranju obrazaca pogledajte link [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+## Sažetak i dodatne informacije
+
+Ovaj postupak omogućava:
+
+- filtriranje i pregled neknjiženih deklaracija/prijava/signala;
+- istovremeno knjiženje više deklaracija/prijava/signala;
+- pregled deklaracija/prijava/signala i pripadajućih skladišnih transakcija;
+- vraćanje jedne ili više već knjiženih deklaracija/prijava/signala.
+
+Za dodatne informacije pogledajte:
+
+- [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)

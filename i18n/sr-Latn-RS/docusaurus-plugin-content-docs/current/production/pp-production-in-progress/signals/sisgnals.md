@@ -4,20 +4,21 @@ sidebar_position: 1
 ---
 
 :::important Čemu služi
-Modul za **Deklaracije signala** u Fluentisu je ključni alat za učinkovito upravljanje i praćenje proizvodnog ciklusa. Svaka izjava započinje otvaranjem, a slijede moguće prijave napretka, prekida, nastavka i zatvaranja procesa. Operateri mogu jednostavno unijeti ključne podatke kao što su proizvedene količine, odbačene količine, upotrijebljeni materijali, uključeno osoblje te navesti serije i serijske brojeve, osiguravajući potpunu sljedivost proizvodnih operacija; unutar njih je također integrirana kontrola kvalitete. Ovaj strukturirani pristup optimizira učinkovitost, poboljšava kontrolu aktivnosti i upravljanje resursima.  
+Modul za **Deklaracije signala** u Fluentisu predstavlja ključni alat za efikasno upravljanje i praćenje proizvodnog ciklusa. Svaka deklaracija započinje otvaranjem, nakon čega mogu uslijediti prijave napretka, prekida, nastavka i zatvaranja procesa. Operateri mogu jednostavno unositi ključne podatke kao što su proizvedene količine, otpisane količine, utrošeni materijali, uključeno osoblje te navoditi lotove i serijske brojeve, čime se osigurava potpuna sljedivost proizvodnih operacija; unutar deklaracija integrisana je i kontrola kvaliteta. Ovakav strukturiran pristup optimizuje efikasnost, poboljšava kontrolu aktivnosti i upravljanje resursima.
 :::
 
-Modul **Signali** omogućuje upravljanje proizvodnim deklaracijama.   
+Modul **Signali** omogućava upravljanje proizvodnim deklaracijama.
 
-Obrazac za Pretraživanje dokumenata omogućuje pretraživanje svih dokumenata radi pregleda, izmjene, eventualnog brisanja ili unosa novog dokumenta; prozor se sastoji od područja za filtriranje i rezultatne mreže. 
+Obrazac za pretragu dokumenata omogućava pretraživanje svih dokumenata radi pregleda, izmjene, eventualnog brisanja ili unosa novog dokumenta; prozor se sastoji od područja za filtriranje i tabele.
 
-Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na gumb **Traži** u *traci izbornika* kako biste prikazali rezultate unutar rezultatne mreže. 
+Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na dugme **Traži** u *traci menija* kako bi se rezultati prikazali unutar tabele.
 
-Za otvaranje detalja dokumenta dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u detalje i uređivanje) ili gumb **Prikaži** (omogućuje ulazak u detalje i pregled, ali bez mogućnosti uređivanja). 
+Za otvaranje detalja dokumenta dovoljno ga je odabrati i dvaput kliknuti mišem ili kliknuti na dugme **Izmijeni** (omogućava ulazak u detalje i uređivanje) ili dugme **Prikaži** (omogućava ulazak u detalje i pregled, ali bez mogućnosti uređivanja).
 
-*Vidi također*: 
-*Zajedničke funkcionalnosti, gumbe i polja*   *Dodavanje novih polja u obrasce za pretraživanje* 
+*Vidi također*:  
+*Zajedničke funkcionalnosti, dugmad i polja*  
+*Dodavanje novih polja u obrasce za pretragu*
 
-:::note NAPOMENA 
-Ako želite prikazati i već registrirane Deklaracije signala, potrebno je omogućiti opciju *Registrirano* u filteru obrasca.  
+:::note NAPOMENA
+Ako želite prikazati i već registrovane Deklaracije signala, potrebno je omogućiti opciju *Registrovano* u filteru obrasca.
 :::

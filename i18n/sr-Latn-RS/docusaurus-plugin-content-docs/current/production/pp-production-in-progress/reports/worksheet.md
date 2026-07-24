@@ -1,10 +1,33 @@
 ---
 title: Radni list
+description: Izveštaj za štampanje radnog lista za proizvodne naloge i proizvodne faze, uz upravljanje oznakama štampe.
+keywords:
+  - radni list
+  - proizvodni nalozi
+  - proizvodne faze
+  - štampanje izveštaja
 sidebar_position: 1
+schema: TechArticle
+tags:
+  - proizvodnja
+  - izveštavanje
+  - štampa
+  - procedure
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-Ovaj obrazac omogućuje ispis izvještaja *Radnog lista* proizvodnih narudžbi ili izravno faza (ako se razmatra radno središte); stoga omogućuje ispis po proizvodnoj narudžbi ili po pojedinoj fazi.   
+# Radni list
 
-Nakon pokretanja ispisa, aktivira se zastavica **Već ispisano** za svaku ispisanu fazu ili proizvodnu narudžbu.   
+Ova forma omogućava štampanje izveštaja **Radni list** za proizvodne naloge ili direktno za pojedine faze (ako se uzima u obzir radni centar).  
+Korisnik može odabrati da li želi da generiše štampu za *ceo proizvodni nalog* ili za *pojedinu fazu naloga*.
 
-Osim toga, zastavica **Potvrđeno** prisutna u *Filteru već ispisanih listova*, ako je aktivirana, postavlja zastavicu *Def. isp.* na redak faze proizvodne narudžbe, označavajući da je izvršen konačni ispis izvještaja radnog lista.  
+## Način rada štampe
+
+Prilikom pokretanja štampe sistem automatski postavlja oznaku **Već štampano** za svaku odštampanu fazu ili proizvodni nalog.
+
+## Konačna štampa
+
+Unutar sekcije **Filter već štampanih radnih listova** nalazi se oznaka **Definitivno**. Ako je aktivirana, sistem postavlja oznaku **Def. korak** na redu faze proizvodnog naloga.
+
+Time se označava da je radni list odštampan u **konačnom režimu rada**, čime se razlikuje od probnih ili kontrolnih štampi.

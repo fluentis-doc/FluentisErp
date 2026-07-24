@@ -1,34 +1,92 @@
 ---
-title: Radna stanica
-sidebar_position: 2
+title: Radne stanice
+description: Upravljanje i konfiguracija radnih stanica u Fluentis MES-u, uključujući povezivanje sa proizvodnim resursima.
+keywords:
+  - Fluentis MES
+  - Radne stanice
+  - Proizvodni resursi
+  - Konfiguracija MES-a
+  - Radni centri
+sidebar_position: 3
+schema: TechArticle
+tags:
+  - MES
+  - Proizvodnja
+  - Radne stanice
+  - Fluentis
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-:::important Čemu služi
-Uvod u radne stanice MES sustava Fluentis ključan je za razumijevanje učinkovitog upravljanja resursima i proizvodnim operacijama unutar radnog okruženja. MES sustav nudi posebnu tablicu za kodiranje radnih stanica, koja omogućuje unos, izmjenu ili brisanje zapisa. Kroz intuitivno sučelje, korisnici mogu pretraživati radne stanice putem filtra, a prilikom unosa novih kodova potrebno je unijeti kod i opis radne stanice.
+# Radne stanice
 
-Svaka radna stanica može biti povezana s različitim resursima, ovisno o operativnim potrebama. Na primjer, ako je predviđena povezanost s više resursa, prilikom pokretanja MES sustava, korisnik će morati ručno odabrati željeni resurs. Nasuprot tome, u slučaju povezanosti s jednim resursom, sustav automatski učitava sve započete operativne faze tog resursa, pojednostavljujući tijek rada i poboljšavajući učinkovitost.  
+:::important
+Uvod u radne stanice unutar **Fluentis MES-a** ključan je za efikasno upravljanje resursima i proizvodnim operacijama.  
+Namenska tabela omogućava definisanje radnih stanica, njihovu pretragu, uređivanje i povezivanje sa operativnim resursima.
 :::
 
-Tablica omogućuje upravljanje kodiranjem različitih vrsta  *Radnih Stanica*.
+Sistem omogućava strukturirano upravljanje radnim stanicama i korisnicima omogućava:
 
-Omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi se prikazali, izmijenili ili izbrisali.  
+- unos novih šifara radnih stanica;
+- pretragu postojećih radnih stanica putem namenskih filtera;
+- povezivanje jednog ili više resursa;
+- uticaj na način inicijalnog učitavanja MES-a, u zavisnosti od povezanih resursa.
 
-**Pretraživanje radnih stanica**
+## Upravljanje radnim stanicama
 
-Obrazac se sastoji od područja za filtriranje i rezultate. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na gumb  **Taži** kako bi se rezultati prikazali unutar mreže rezultata.  
+Tabela omogućava upravljanje šiframa različitih vrsta *radnih stanica*.
+Moguće je unositi nove zapise ili pretraživati postojeće radi pregleda, izmene ili brisanja.
 
-**Unos radne stanice**
+## Pretraga radnih stanica
 
-Za unos novih kodova potrebno je kliknuti na prazan red u glavnoj mreži ili pritisnuti gumb **Novo** i unijeti sljedeće podatke:        
-- **Kod**: označava naziv računala koje će služiti kao radna stanica;   
+Forma za pretragu sastoji se od:
 
-:::note NAPOMENA
-Naziv računala možete dobiti pokretanjem naredbe *hostname* iz naredbenog retka.  
-:::         
-- **Opis**: označava opis naziva računala koje će služiti kao radna stanica.     
+- **Područja filtera**: omogućava postavljanje kriterijuma pretrage.
+- **Tabela rezultata**: prikazuje listu pronađenih radnih stanica.
 
-U sekundarnoj mreži (ispod glavne), možete dodijeliti *resurse* koji mogu raditi na svakoj radnoj stanici.  
-- U slučaju da je radnoj stanici dodijeljen samo jedan resurs (npr. radni centar), MES će automatski učitati taj resurs i sve već započete faze koje su s njim povezane. Primjer radne stanice posvećene radnom centru.        
-- U slučaju da su radnoj stanici dodijeljeni više resursa (npr. radni centri), MES neće automatski učitati nijedan od njih pri pokretanju, a korisnik će moći odabrati samo jedan od dodijeljenih resursa. Primjer radne stanice posvećene odjelu gdje će se izjavljivati sve faze svih radnih centara tog odjela.     
-- U slučaju da radnoj stanici nije dodijeljen nijedan resurs, MES neće automatski učitati nijedan resurs pri pokretanju, a korisnik će moći odabrati bilo koji resurs koji je unesen u tablicu [Proizvodnih resursa](/docs/production/mes/production-resources).       
-Primjer radne stanice posvećene tehničaru koji će izjavljivati svoje aktivnosti za sve radne centre.      
+### Postupak pretrage
+
+1. Postaviti željene filtere.
+2. Kliknuti na dugme **Pretraži**.
+3. Pregledati rezultate u tabeli.
+
+## Unos radne stanice
+
+Za kreiranje nove šifre:
+
+1. Kliknuti na prvi prazan red u tabeli ili pritisnuti **Novo**.
+2. Popuniti sledeća polja:
+   - **Šifra**: naziv računara koji će služiti kao radna stanica.
+     :::note
+     Naziv računara moguće je dobiti izvršavanjem komande `hostname` u komandnoj liniji.
+     :::
+   - **Opis**: opis računara koji će služiti kao radna stanica.
+
+3. U pomoćnoj tabeli povezati **resurse**.
+
+## Povezivanje resursa
+
+U ovoj tabeli moguće je povezati *resurse* koji će moći raditi na pojedinoj radnoj stanici.
+
+- Ako je uz radnu stanicu povezan samo jedan resurs (npr. tipa *radni centar*), prilikom pokretanja MES-a taj resurs će se automatski učitati zajedno sa svim fazama koje su već započete i povezane sa njim.  
+  Primer radne stanice namenjene jednom radnom centru.
+
+- Ako je uz radnu stanicu povezano više resursa (npr. više *radnih centara*), prilikom pokretanja MES-a nijedan od njih neće se automatski učitati, već će korisnik moći odabrati samo jedan od povezanih resursa.  
+  Primer radne stanice namenjene odeljenju u kojem se evidentiraju aktivnosti svih radnih centara tog odeljenja.
+
+- Ako uz radnu stanicu nije povezan nijedan resurs, prilikom pokretanja MES-a nijedan resurs neće biti automatski učitan, a korisnik će moći odabrati bilo koji resurs definisan u tabeli [Proizvodni resursi](/docs/production/mes/production-resources).  
+  Primer radne stanice namenjene alatničaru koji evidentira svoje aktivnosti za sve radne centre.
+
+## Sažetak i dodatne informacije
+
+Radne stanice u Fluentis MES-u omogućavaju:
+
+- Definisanje operativnih mesta koja se koriste u proizvodnom procesu.
+- Povezivanje jednog ili više resursa sa direktnim uticajem na ponašanje sistema.
+- Automatizovano ili prilagodljivo učitavanje proizvodnih faza.
+- Upravljanje matičnim podacima putem strukturirane forme za pretragu, unos i izmenu podataka.
+
+Za dodatne informacije pogledajte:
+
+- [Proizvodni resursi](/docs/production/mes/production-resources)
+- [Zajedničke funkcionalnosti](/docs/guide/common)

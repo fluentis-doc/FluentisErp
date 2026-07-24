@@ -1,34 +1,89 @@
 ---
 title: Izdavanje proizvodnih naloga
+description: Postupak izdavanja i vraćanja proizvodnih naloga u Fluentisu, uz upravljanje automatski generisanim skladišnim transakcijama.
+keywords:
+  - proizvodni nalozi
+  - izdavanje naloga
+  - vraćanje naloga
+  - Fluentis ERP
+  - proizvodnja
 sidebar_position: 2
+schema: HowTo
+tags:
+  - proizvodnja
+  - proizvodni nalozi
+  - skladište
+  - procedure
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-:::important Čemu služi   
-Postupak **Izdavanja proizvodnih naloga** u Fluentisu omogućuje učinkovito upravljanje prijelazom naloga iz stanja *Pokrenuto* u *Aktivno*. Kroz intuitivno sučelje moguće je filtrirati i odabrati naloge koje treba izdati, pri čemu se automatski generiraju odgovarajući skladišni pokreti za automatsko preuzimanje materijala. Osim toga, ovaj postupak omogućuje vraćanje već izdanih naloga, čime se jamči značajna operativna fleksibilnost u proizvodnom procesu.  
+# Izdavanje proizvodnih naloga
+
+:::important
+Postupak **Izdavanja proizvodnih naloga** u Fluentisu omogućava prelazak naloga iz statusa *Lansiran* u status *Izvršni*.  
+Putem intuitivnog interfejsa moguće je filtrirati i odabrati naloge za izdavanje, pri čemu se istovremeno generišu odgovarajuće skladišne transakcije za automatsko izdavanje materijala.  
+Isti postupak omogućava i **vraćanje** već puštenih naloga, čime se obnavlja prethodno stanje naloga.
 :::
 
-Ovaj obrazac omogućuje promjenu statusa proizvodnih narudžbi i istovremeno kreiranje odgovarajućih skladišnih pomaka za sve artikle koji u  [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) artikla imaju *Tip uzimanja* postavljen na vrijednost **Automatski**.
+Ova forma omogućava:
+
+- promenu statusa proizvodnih naloga;
+- generisanje skladišnih izlaza za sve artikle koji u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) imaju postavljen **Tip izdavanja** na vrednost **Automatski**;
+- vraćanje već puštenih naloga uz brisanje generisanih transakcija.
 
 ## Filter
 
-U ovoj kartici moguće je pregledati popis planiranih narudžbi koje još nisu izdane te ih je moguće filtrirati kroz niz kriterija odabira.    
+Kartica **Filter** omogućava prikaz svih proizvodnih naloga u statusu *Lansiran* koji još nisu pušteni u izvršenje.  
+Dostupni su različiti kriterijumi odabira za sužavanje rezultata pretrage.
 
-Nakon postavljanja željenih filtera, dovoljno je kliknuti na gumb  **Traži** na *traci izbornika* kako bi se rezultati prikazali unutar mreže rezultata.   
+### Postupak pretrage i izdavanja
 
-Nakon što su odabrane narudžbe koje se žele izdati, potrebno je koristiti gumb **Izdavanje naloga** na traci izbornika*. Ovaj postupak omogućuje promjenu statusa narudžbi iz *Lansirano* u *Izvršno*i istovremeno kreira skladišne pomake za sve materijale koji imaju *Vrsta uzimanja* postavljen na Vrijednost **Automatski** [MRP Parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) artikla.
+1. Na kartici **Filter** postavite željene kriterijume odabira.
+2. Kliknite na **Traži** u *ribbon traci* kako biste prikazali naloge u tabeli rezultata.
+3. Odaberite jedan ili više naloga koje želite pustiti u izvršenje.
+4. Kliknite na **Pusti naloge** kako biste:
+   - promenili status naloga iz *Pokrenut* u *Izvršni*;
+   - automatski generisali skladišne izlaze za sve materijale koji u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) artikla imaju postavljen **Tip izdavanja** na vrednost **Automatski**.
 
-## Povrat
+## Povrat transakcije proizvodnih naloga
 
-U ovoj kartici moguće je izvršiti postupak vraćanja koji omogućuje poništavanje izdavanja proizvodne narudžbe, vraćajući situaciju na stanje prije samog izdavanja, vraćajući status proizvodne narudžbe na *Lansirano* i uklanjajući odgovarajuće skladišne pomake. 
+Kartica **Povrat transakcije proizvodnih naloga** omogućava poništavanje već izvršenog izdavanja naloga, vraćanje naloga u prethodno stanje i brisanje povezanih skladišnih transakcija.
 
-Nakon postavljanja željenih filtera, dovoljno je kliknuti na gumb **Traži** na *traci izbornika* kako bi se rezultati prikazali unutar mreže rezultata. 
+### Funkcionisanje kartice Povrat transakcije proizvodnih naloga
 
-Odabirom jedne od redaka u mreži rezultata, prikazat će se odgovarajući skladišni pomaci u donjoj mreži.   
+- Nakon postavljanja filtera kliknite na **Traži**.
+- Pušteni nalozi koje je moguće vratiti prikazuju se u tabeli rezultata.
+- Odabirom reda u donjoj tabeli prikazuju se povezane skladišne transakcije generisane tokom izdavanja naloga.
 
-Za pokretanje vraćanja, odaberite jednu ili više narudžbi i kliknite gumb  **Povrat**. 
+### Postupak vraćanja
 
-Vraćanje proizvodne narudžbe moguće je samo ako se generirana narudžba nalazi u statusu *Izvršno* i još nisu započete odgovarajuće proizvodne izjave; ako je narudžba već *Izvršena* vraćanje nije moguće, osim ako se ne započne postupak unatrag počevši od povratka registracije proizvodnih izjava. 
+1. Postavite filtere i pokrenite pretragu.
+2. Odaberite jedan ili više naloga u statusu *Izvršni*.
+3. Kliknite na **Povrat na prethodno stanje** kako biste:
+   - promenili status naloga iz *Izvršni* u *Pokrenut*;
+   - obrisali skladišne transakcije generisane tokom izdavanja naloga.
 
-Nakon izvršenja ove procedure, vraćene narudžbe ponovno će biti vidljive u kartici  **Filter** gdje će biti moguće ponovno izdavanje.  
+### Uslovi za vraćanje
 
-Za detalje o zajedničkom funkcioniranju obrazaca pogledajte link [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Vraćanje je moguće samo ako:
+
+- se nalog nalazi u statusu **Izvršni**;
+- **nisu** evidentirane proizvodne prijave.
+
+Vraćanje **nije moguće** ako se nalog nalazi u statusu *Izvršen*, osim ako se postupak ne vrati unazad počevši od poništavanja knjiženja proizvodne prijave.
+
+Vraćeni nalozi automatski će ponovo biti vidljivi na kartici **Filter**, odakle ih je moguće ponovo pustiti u izvršenje.
+
+## Sažetak i dodatne informacije
+
+Postupak **Izdavanja proizvodnih naloga** u Fluentisu omogućava:
+
+- upravljanje prelaskom proizvodnih naloga iz statusa *Pokrenut* u status *Izvršni*;
+- automatsko generisanje skladišnih transakcija za izdavanje materijala;
+- vraćanje puštenih naloga kada za njih još nisu evidentirane proizvodne prijave.
+
+Za dodatne informacije o povezanim funkcionalnostima pogledajte:
+
+- [MRP parametri artikala](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
+- [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)
