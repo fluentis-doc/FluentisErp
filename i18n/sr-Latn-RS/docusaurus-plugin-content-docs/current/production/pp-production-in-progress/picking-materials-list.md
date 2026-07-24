@@ -1,35 +1,95 @@
 ---
-title: Popis za podizanje materijala
+title: Lista za preuzimanje materijala (Picking)
+description: Upravljanje listama za preuzimanje materijala za proizvodne naloge u Fluentisu, uz kreiranje skladišnih knjiženja i dokumenata za picking (komisioniranje robe).
+keywords:
+  - lista za preuzimanje
+  - materijali proizvodnje
+  - picking (komisioniranje robe)
+  - Fluentis
+  - proizvodni nalozi
 sidebar_position: 4
+schema: TechArticle
+tags:
+  - proizvodnja
+  - logistika
+  - materijali
+  - picking (komisioniranje robe)
+last_update:
+  author: Fluentis Documentation Team
 ---
 
+# Lista za preuzimanje materijala
+
 :::important Čemu služi
-**Popis za podizanje materijala** u Fluentisu je ključni alat za učinkovito upravljanje materijalima namijenjenim proizvodnim nalozima. Omogućuje kreiranje i upravljanje detaljnim popisima materijala za preuzimanje, direktno povezujući operaciju sa specifičnim proizvodnim potrebama. Ova funkcija se često koristi za kreiranje dokumenta za preuzimanje (picking) kako bi se učinkovito upravljalo prijenosom materijala (npr. u WIP-u), pojednostavljujući logistički proces i osiguravajući točnu sljedivost.  
+**Lista za preuzimanje (Picking) materijala** u Fluentisu predstavlja ključni alat za efikasno upravljanje materijalima namijenjenim proizvodnim nalozima. Omogućava kreiranje i upravljanje detaljnim listama materijala koje je potrebno preuzeti, uz direktno povezivanje operacije sa specifičnim potrebama proizvodnje.
+
+Često se koristi za generisanje dokumenata za picking i upravljanje transferom materijala, na primjer prema WIP skladištu, čime se pojednostavljuje logistički proces i osigurava potpuna sljedivost.
 :::
 
-Popis za podizanje materijala omogućuje stvaranje i upravljanje popisima zahtjeva za materijale za proizvodne narudžbe koje zahtijevaju njihovu upotrebu.  
+Ova procedura omogućava kreiranje i upravljanje *listama za preuzimanje materijala* za *proizvodne naloge* koji koriste takav način snabdijevanja.
 
-Moguće je pretraživati proizvodne narudžbe u statusu pokrenuto i u izvršenju kako biste pronašli onu koja vas zanima, a zatim izvršiti dvije različite operacije.  
+Moguće je pretraživati *radne naloge proizvodnje* u statusu *Pokrenuto* i *Izvršni* te nad njima izvršiti dvije različite operacije:
 
-Prva operacija, putem gumba **Prva operacija, putem gumba**, omogućuje ispražnjavanje svih materijala koji se nalaze u proizvodnoj narudžbi i imaju **Tip izuzimanja Sa Listom**, u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) članka. Ti se materijali troše kada se pritisne gumb Kreiraj knjiženja, što u ovom slučaju stvara zapise o ispražnjenju iz skladišta.            
+- **Traži materijale**: omogućava izdavanje materijala koji su u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) artikla definisani sa *Tip preuzimanja: Sa listom*. Stvarna potrošnja izvršava se putem dugmeta **Kreiraj knjiženja**, čime se generiše **skladišni izlaz**.
 
-Druga operacija omogućuje premještanje materijala iz skladišta u kojem su pohranjeni, na primjer, u skladište WIP. To se postiže korištenjem gumba **Traži materijale za prikupljanje**; koji omogućuje stvaranje dokumenata za premještanje materijala. Ovi dokumenti ne predstavljaju stvarne zapise, već dokumente za premještanje materijala koji se mogu vidjeti u prozoru Picking u logističkom području.                  
-Kada se koristi gumb **Kreiraj knjiženja** u ovom slučaju, generira se dokument o premještanju (picking), u kojem se za materijale s *Tipom izuzimanja Sa Listom* koriste predložak i skladište koji već postoje u liniji materijala proizvodne narudžbe za konačno ispražnjenje. Za materijale s *Ručnim Tipom Preuzimanja*, koriste se predložak i skladište postavljeni u *Tip pickinga* koji se koristi. Materijali premješteni u skladište WIP bit će kasnije ispražnjeni u proizvodnim izjavama.
+- **Traži materijale za picking (listu)**: omogućava premještanje materijala iz skladišta u kojem su uskladišteni (na primjer u WIP skladište) te kreiranje **dokumenata za picking**, odnosno dokumenata kretanja robe koji još nisu knjiženi, a mogu se pregledavati u prozoru [Picking](/docs/logistics/picking/search-picking).
 
-Registracija će se obaviti kasnije putem postupka posvećenog pražnjenju odabira.
-       
+Dugme **Kreiraj knjiženja** generiše dokument za picking te automatski postavlja:
 
-## Filter 
+- za materijale sa *Tip preuzimanja = Sa listom*: predložak i skladište koji su već definisani na redu materijala proizvodnog naloga kako bi se mogao izvršiti konačni skladišni izlaz;
+- za materijale sa *Tip preuzimanja = Ručno*: predložak i skladište definisane u odabranoj *Vrsti pickinga*.
 
-Na ovoj kartici možete pretraživati željene pickinge na temelju primijenjenih filtara. 
+Materijali preneseni u WIP skladište naknadno će biti izdani kroz **prijave proizvodnje**.
 
-*Posebni gumbi*:
+Knjiženje će biti izvršeno naknadno putem posebne procedure za **izlaz pickinga**.
 
-> **Traži materijale**: pretraživanjem materijala putem ovog gumba omogućit će se izrada zapisa u skladištu. Od svih podataka navedenih u nastavku o detaljima svakog materijala, važno je istaknuti značajku Mov. koja ukazuje na aktivnost odabira vrste preuzimanja liste u MRP parametrima predmeta. Ako zastavica nije aktivirana, to znači da je za taj materijal odabrana vrsta ručnog preuzimanja. Za više detalja o značenju ovih vrsta preuzimanja upućuje se na članak o  [Parametri MRP](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) predmeta.     
-> **Traži materijale za preuzimanje (picking)**: pretraživanjem materijala putem ovog gumba omogućit će se izrada dokumenata za preuzimanje, a ne stvarni zapisi, već dokumenti za premještanje materijala koji će se moći vidjeti u prozoru za [Preuzimanje](/docs/logistics/picking/search-picking) u logističkom području. U ovom slučaju, zapis će se izvršiti kasnije, nakon drugog provjere.  
-> **Kreiraj knjiženja**: omogućuje stvaranje zapisa u skladištu (iskrcavanje) ili dokumenta za preuzimanje nakon odabira materijala prema vrsti provedene pretrage. 
-Ako je stvoren dokument za preuzimanje, za materijale s vrstom *Tipom izuzimanja Sa Listom* bit će postavljeni predložak i skladište koji već postoje u redu materijala narudžbenice; dok će se za materijale s *Ručnim Tipom Preuzimanja* postaviti predložak i skladište koje je postavljeno u *Vrsti uzimanja sa zaliha* korištene u *Vrsti uzimanja sa zaliha*.
+## Filtar
+
+Na kartici **Filtar** moguće je pretraživati željene *Proizvodne naloge* primjenom dostupnih kriterijuma filtriranja.
+
+### Specifična dugmad
+
+- **Traži materijale**: nakon pretrage materijala ovim dugmetom moguće je direktno kreirati skladišna knjiženja. Među prikazanim podacima za svaki materijal posebno je važna oznaka **Mov.**, koja kada je aktivna označava da je za taj materijal u MRP parametrima artikla odabran tip preuzimanja *Putem liste*. Ako oznaka nije aktivna, za taj materijal je odabran tip preuzimanja *Ručno*. (Za više informacija o tipovima preuzimanja pogledajte članak o [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) artikla.)
+
+- **Traži materijale za picking**: nakon pretrage materijala ovim dugmetom moguće je kreirati dokumente za picking, odnosno dokumente za premještanje materijala, a ne stvarna knjiženja. Takvi dokumenti mogu se pregledavati u prozoru [Picking](/docs/logistics/picking/search-picking) unutar logističke oblasti. U tom slučaju knjiženje će biti izvršeno naknadno, nakon dodatne provjere.
+
+- **Omogući kretanja (knjiženja)** i **Onemogući kretanja (knjiženja)**: masovno aktiviraju ili deaktiviraju oznaku mogućnosti knjiženja **Kretanje** na odabranim redovima materijala.
+
+- **Kreiraj knjiženja**: nakon odabira materijala, u zavisnosti od vrste pretrage, omogućava kreiranje skladišnih knjiženja (izlaza) ili dokumenta za picking.
+
+U slučaju kreiranja dokumenta za picking, za materijale sa:
+
+  - *Tip preuzimanja = Sa listom*: postavljaju se predložak i skladište koji su već definisani na redu materijala proizvodnog naloga;
+  - *Tip preuzimanja = Ručno*: postavljaju se predložak i skladište definisani u korišćenoj **Vrsti pickinga**.
 
 ## Povrati zapis
 
-U ovoj je kartici moguće obnoviti bilo kakve kreirane promjene iz prethodne kartice. 
+Na ovoj kartici moguće je **vratiti** prethodno kreirana knjiženja.
+
+Odabirom reda prikazuju se:
+
+- na kartici **Generisani zapisi podizanja** → kreirana knjiženja;
+- na kartici **Picking (lista) generisana iz podizanja** → generisani dokumenti za picking.
+
+### Specifična dugmad
+
+- **Obriši listu podizanja (pickinga)**: istovremeno vraća i knjiženja i generisane dokumente za picking.
+
+- **Obriši zapise (knjiženja)**: vraća isključivo odabrano skladišno knjiženje.
+
+- **Obriši picking (listu)**: vraća odabrani dokument za picking na kartici **Picking (lista) generisana iz podizanja**.
+
+## Sažetak i dodatne informacije
+
+Lista za preuzimanje materijala omogućava:
+
+- upravljanje materijalima namijenjenim proizvodnim nalozima;
+- kreiranje skladišnih izlaza ili dokumenata za picking;
+- upravljanje transferima prema *međuskladištima* (npr. WIP);
+- jednostavno praćenje i vraćanje knjiženja i pickinga.
+
+Za dodatne informacije pogledajte:
+
+- [MRP parametri](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)
+- [Picking (komisioniranje robe) – logistička oblast](/docs/logistics/picking/search-picking)
+- [Zajedničke funkcionalnosti i polja](/docs/guide/common)
