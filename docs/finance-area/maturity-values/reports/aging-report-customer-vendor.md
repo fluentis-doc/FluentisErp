@@ -6,7 +6,7 @@ Da questa form è possibile lanciare la stampa del Report di aging.
 
 Questa particolare stampa è pensata per fornire, a colpo d'occhio, una situazione, sia per i fornitori sia per i clienti, sulla composizione delle partite scadute ed a scadere per categorie temporali.
 
-Esempio: è possibile selezionare innanzitutto una categoria alla volta, concentrandosi ad esempio sui clienti (ed eventualmente selezionando solo i clienti italiani) ed ottenere una visione dello scaduto suddiviso in scaglioni da 0 a 30 giorni, da 30 a 60 giorni ed oltre 60 giorni. Lo stesso dicasi per le partite a scadere, ottendo una suddivisione su tre scaglioni per valutare le quote a più breve scadenza rispetto a quelle più lontane nel tempo.
+Esempio: è possibile selezionare innanzitutto una categoria alla volta, concentrandosi ad esempio sui clienti (ed eventualmente selezionando solo i clienti italiani) ed ottenere una visione dello scaduto suddiviso in scaglioni da 0 a 30 giorni, da 30 a 60 giorni ed oltre 60 giorni. Lo stesso dicasi per le partite a scadere, ottenendo una suddivisione su tre scaglioni per valutare le quote a più breve scadenza rispetto a quelle più lontane nel tempo.
 
 La stampa presenta una legenda in alto per la comprensione dei totali scaduto ed a scadere (TOT = A + B + C...)
 

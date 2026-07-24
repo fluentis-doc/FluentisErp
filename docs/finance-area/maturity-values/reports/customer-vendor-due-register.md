@@ -43,7 +43,9 @@ Parametri di visualizzazione
 
 Esempio: se una fattura passiva datata 01 giugno aveva aperto una partita con scadenza 01 luglio ed il giorno 28 giugno è stato registrato il pagamento di quella partita, se elaboriamo lo scadenziario fornitore con data Partite aperte al dopo il 28 (esempio chiediamo lo scadenziario al 30 giugno) la partita non sarà visibile inquanto chiusa, se chiediamo lo scadenziario con data 20 luglio, ad esempio, la partita risulterà visibile inquanto ancora aperta a tale data. 
 
-**Partite e pagamenti alle date**: con il flag attivo il precedente campo Partite aperte al avrà effetto con riferimento sia alla data di apertura delle partite sia alla data di pagamento; con il flag disattivato la data di cui sopra avrà effetto solamente con riferimento alla data d apertura delle partite e verranno considerati tutti i pagamenti.
+**Partite e pagamenti alle date**: con il flag attivo il precedente campo *Partite aperte al* avrà effetto con riferimento sia alla data di apertura delle partite sia alla data di pagamento; con il flag disattivato la data di cui sopra avrà effetto solamente con riferimento alla data d apertura delle partite e verranno considerati tutti i pagamenti.
+
+**Documenti e pagamenti alle date**: con il flag attivo (alternativo al precedente flag) il campo *Partite aperte al* avrà effetto con riferimento sia alla data Documento (esempio data fattura) associata alle partite aperte, sia alla data di pagamento.
 
 **Sintetica**: il flag, se attivo, nasconde dalla stampa le ulteriori colonne relative ai dettagli del pagamento, se disattivato permette di mostrare tutti i dettagli.
 

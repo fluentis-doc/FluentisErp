@@ -78,3 +78,19 @@ In particolare dovrà essere modificata la riga, ad esempio quella relativa alla
 
 **Se questo non viene fatto la procedura inserirà due volte la riga banca e la scrittura non quadrerà automaticamente**.
 :::
+
+### Ulteriori comandi e utility
+
+**Assegna partita:** consente di lanciare, sulle righe selezionate, una verifica a livello di partitario per cercare di individuare se la riga può essere una chiusura di una partita aperta presente a sistema. È possibile, infatti, che la riga non sia già presente in contabilità e che quindi si debba integrare le registrazioni con nuove operazioni, che potrebbero essere appunto pagamenti/incassi non gestiti direttamente da flussi di tesoreria gestiti da Fluentis.
+
+La logica utilizzata in questa ricerca è la seguente:
+-	in primo luogo si verifica se la riga del movimento bancario importato ha il campo *Riferimento creditore rimessa* compilato (visibile espandendo il dettaglio con il pulsantino +), e si cerca quindi se esiste una partita con questo *Numero riferimento*;
+-	se non si trova una partita, allora si cerca (vedi punto precedente) il campo *Creditore conto IBAN* e si cerca se esiste un’anagrafica che ha questo IBAN nella griglia delle banche d’appoggio. Se viene trovato un cliente/fornitore, allora si va a ricercare per questo soggetto se esiste una partita dello stesso importo della riga (in caso di più partite con lo stesso importo si assegnerà la prima in ordine di data scadenza)
+-	se non viene trovata nessuna partita, si aprirà una maschera di assegnazione partite
+La maschera presenta nella parte superiore la lista delle righe da riconciliare selezionate e in basso ha la griglia delle partite aperte:
+Tramite i riferimenti testuali presenti nella riga riconciliata sarà possibile individuare la partita da assegnare, tramite il pulsante **Assegna partita** presente nella ribbon (Il pulsante **Resetta legami partita** esegue l'azione inversa, ad esempio in caso di errore per poterne attribuire una differente).
+
+**Assegna conto:** È possibile che il movimento bancario non riconciliato sia semplicemente l’addebito di una spesa o di un importo che non è gestito a partite. In questo caso, con questo pulsante è possibile assegnare solo un legame al conto di contropartita da utilizzare per registrare l’operazione.
+
+**Resetta conto:** Il pulsante consente di togliere l’assegnazione di un sottoconto di contropartita alla riga.
+
