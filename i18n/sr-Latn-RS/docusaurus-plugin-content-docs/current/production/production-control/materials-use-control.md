@@ -3,11 +3,11 @@ title: Kontrola korištenja materijala
 sidebar_position: 5
 ---
 
-Ovaj obrazac omogućuje ispis izvješća **Kontrola korištenja materijala** koje omogućuje prikaz upotrebe svih materijala grupiranih prema:  
+Ovaj obrazac omogućava ispis izvještaja **Kontrola korištenja materijala**, koji omogućava prikaz upotrebe svih materijala grupisanih prema:
 
-- Proizvodnim narudžbama
-- Narudžbi
+- Proizvodnim nalozima
+- Nalozima
 - Artiklu
 - Datumu upotrebe
 
-s naznakom odgovarajućih količina preuzetih, potrošenih i odbačenih za svaki od njih.
+uz prikaz odgovarajućih količina preuzetih, utrošenih i otpisanih za svaki od njih.

@@ -1,9 +1,9 @@
 ---
-title: Provjera napretka proizvodnje
+title: Kontrola napretka proizvodnje
 sidebar_position: 1
 ---
 
-Ovaj obrazac omogućuje ispis izvješća o  **Provjeri napretka proizvodnje** koje za svaku proizvodnu narudžbu prikazuje stanje napretka pojedinih faza putem *trake napretka*, na temelju vremena ili proizvedene količine.  
+Ovaj obrazac omogućuje ispis izvješća o  **Kontrola napretka proizvodnje** koje za svaku proizvodnu narudžbu prikazuje stanje napretka pojedinih faza putem *trake napretka*, na temelju vremena ili proizvedene količine.  
 
 U izvješću je prisutno polje *Stanje* koje označava status faze putem kvadratića u boji sa sljedećim značenjem:  
 

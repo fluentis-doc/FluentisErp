@@ -1,47 +1,94 @@
 ---
-title: Uvod 
+title: Uvod u oblast Proizvodnja
+description: Pregled modula Proizvodnja u Fluentis ERP-u – MRP, MES, proizvodni nalozi, radni nalozi proizvodnje, planiranje i kontrola troškova.
+keywords:
+  - Fluentis ERP
+  - Proizvodnja
+  - MRP
+  - MES
+  - Radni nalozi proizvodnje
+  - Planiranje proizvodnje
+  - Industrija 4.0
 sidebar_position: 1
+schema: TechArticle
+tags:
+  - Proizvodnja
+  - Planiranje
+  - MES
+  - MRP
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-**Fluentis ERP** omogućuje upravljanje proizvodnjom i svim njezinim operativnim aspektima u tvrtkama iz sektora proizvodnje i industrije koje se suočavaju s često kompleksnim scenarijima vezanim uz procjenu troškova, upravljanje materijalima i aktivnostima. Algoritmi **Fluentis-a** omogućuju upravljanje svim internim i vanjskim poslovnim procesima tijekom cijelog životnog ciklusa proizvoda, počevši od procjene i dizajna, preko nabave materijala i resursa za proizvodnju, do raspoređivanja unutarnje proizvodnje ili proizvodnje na narudžbu, te prikupljanja podataka o proizvodnji i kontrole troškova. Također je podržana integracija proizvodnih postrojenja i automatiziranih skladišta u skladu s konceptom Industrije 4.0.
+# Uvod u oblast Proizvodnja
 
-U Fluentis ERP-u, primjena modela MES implementirana je uz široku paletu parametara za integrirano upravljanje podacima iz proizvodnih procesa koji značajno utječu na profitabilnost tvrtke. U MES softveru Fluentis-a, dokumenti koji se odnose na proizvodne narudžbe koje su stvarno pokrenute, ali ne nužno i izvršne, definiraju redoslijed izvođenja u svakom odjelu, a detaljnije u svakom radnom centru, pružajući sve potrebne informacije za izvršenje proizvodnih aktivnosti. Materijali, faze, podfaze, alati i općenito sva dokumentacija podrške usmjerena su na automatizaciju, organizaciju i fluidnost izvođenja aktivnosti.  
-Glavni algoritam specijaliziranog ERP-a za proizvodnju definiran je prema MRP-u, sustavu planiranja koji osigurava pravilnu alokaciju materijala i resursa potrebnih za realizaciju proizvodnih aktivnosti. Algoritam MRP-a konfiguriran je prema nizu parametara kako bi se najbolje prilagodio specifičnim potrebama proizvodne realnosti tvrtke.  
+**Fluentis ERP** omogućava upravljanje proizvodnjom i svim njenim operativnim aspektima u proizvodnim i industrijskim preduzećima, uključujući organizacije sa složenim procesima kalkulacije, obračuna troškova, upravljanja materijalima i proizvodnim aktivnostima.
 
-## Moduli područja
+Algoritmi sistema **Fluentis** omogućavaju upravljanje svim internim i eksternim poslovnim procesima tokom celokupnog životnog ciklusa proizvoda – od kalkulacije i projektovanja, preko nabavke materijala i proizvodnih resursa, planiranja interne proizvodnje i/ili kooperantske proizvodnje, do prikupljanja podataka o proizvodnji i kontrole troškova. Pri tome nije zanemarena ni povezanost proizvodnih postrojenja i automatizovanih skladišta u skladu sa konceptom Industrije 4.0.
 
-import Link from '@docusaurus/Link';
+U **Fluentis ERP-u** implementacija **MES modela** (*Manufacturing Execution System*) osmišljena je kroz veliki broj parametara za integrisano upravljanje podacima iz proizvodnih procesa koji značajno utiču na profitabilnost preduzeća. U MES sistemu Fluentisa može se videti kako dokumenti povezani sa proizvodnim nalozima, koji su pokrenuti, ali ne nužno i izvršni, definišu sled aktivnosti prema kojem su za svako odeljenje, a još detaljnije za svaki radni centar, dostupne sve informacije potrebne za izvršavanje proizvodnih aktivnosti. Materijali, faze i podfaze, pripreme, kao i sva prateća dokumentacija imaju za cilj da izvođenje aktivnosti učine što automatizovanijim, organizovanijim i efikasnijim.
 
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/planning/ms-master-scheduling/mrp">MRP - Material Requirement Planning</Link>
-        <p><Link to="/docs/planning/ms-master-scheduling/mrp" className="bold-link">M.R.P.</Link></p>
-        <p>Procedura MRP (Material Requirements Planning) je integrirani sustav planiranja resursa koji pomaže poduzećima u optimizaciji upravljanja zalihama i proizvodnjom, sinkronizirajući dostupnost materijala s potrebama proizvodnje kako bi se poboljšala operativna učinkovitost i smanjili troškovi.</p>
-    </div>
-</div>
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/production/production-intro">MES - Manufacturing Execution System</Link>
-        <p><Link to="/docs/production/pp-production-in-progress/production-orders/search-production-orders" className="bold-link">Proizvodni nalozi</Link></p>
-        <p>Modul je osmišljen za optimizaciju i pojednostavljenje planiranja proizvodnih procesa. Omogućuje upravljanje narudžbama u stanju Pokrenuto i Izvršno, omogućujući jasnu razliku između narudžbi spremnih za pokretanje i onih koje su već u fazi izvršenja.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/picking-materials-list" className="bold-link">Popis za podizanja matrijala</Link></p>
-        <p>Omogućuje učinkovito upravljanje i kretanje materijala namijenjenih proizvodnji.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/signals/sisgnals" className="bold-link">Deklaracije o proizvodnji</Link></p>
-        <p>Ovaj modul omogućuje korisnicima generiranje izjava o proizvodnji prateći napredak svake faze, čime se osigurava potpuna vidljivost i kontrola nad proizvodnim procesom.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/procedures/signals-record" className="bold-link">Zapis signala</Link></p>
-        <p>Ova procedura omogućuje istovremeno registriranje više izjava o proizvodnji.</p>
-        <p><Link to="/docs/production/pp-production-in-progress/procedures/production-orders-release" className="bold-link">Izdavanje  proizvodnih naloga</Link></p>
-        <p>Postupak puštanja proizvodnih naloga u Fluentisu omogućuje promjenu stanja narudžbi s Pokrenuto na Izvršno, pri čemu se istovremeno generiraju potrebni skladišni pokreti.</p>
-    </div>
-</div>
-<div className="cardContainer">
-    <div className="card">
-###     <Link to="/docs/production/mes/mes-intro">Fluentis MES</Link>
-        <p><Link to="/docs/production/mes/workstation" className="bold-link">Radna stanica</Link></p>
-        <p>Omogućuju učinkovito upravljanje proizvodnim operacijama, omogućavajući kodiranje, filtriranje i povezivanje resursa. Zahvaljujući svom intuitivnom sučelju, korisnici mogu optimizirati tijek rada i poboljšati operativnu učinkovitost.</p>
-        <p><Link to="/docs/production/mes/production-resources" className="bold-link">Proizvodni resursi</Link></p>
-        <p>Omogućuje jednostavno i brzo prilagođavanje izgleda i ponašanja pojedinog radnog centra, prilagođavajući sustav specifičnim poslovnim potrebama.</p>
-        <p><Link to="/docs/production/mes/mes-main-form" className="bold-link">MES</Link></p>
-        <p>Osmišljena je za optimizaciju i pojednostavljenje procesa prijave proizvodnih aktivnosti. Ovo sučelje omogućuje operaterima da u realnom vremenu prate i upravljaju proizvodnim resursima, olakšavajući unos podataka vezanih za faze obrade i proizvedene količine.</p>
-    </div>
-</div>
+Glavni algoritam ERP sistema specijalizovanog za proizvodnju je **MRP (Material Requirements Planning)**, sistem planiranja koji proverava ispravnu alokaciju materijala i resursa potrebnih za izvršenje proizvodnih aktivnosti. MRP algoritam se konfiguriše pomoću velikog broja parametara kako bi se što bolje prilagodio specifičnostima proizvodnog okruženja pojedinačnog preduzeća.
+
+## Dostupni moduli u oblasti Proizvodnja
+
+Oblast Proizvodnja u Fluentis ERP-u sastoji se od više integrisanih modula koji pokrivaju planiranje, izvršenje i kontrolu proizvodnih procesa.
+
+### [MRP - Planiranje potreba za materijalima](../planning/ms-master-scheduling/mrp)
+
+MRP procedura predstavlja integrisani sistem planiranja resursa koji pomaže preduzećima da optimizuju upravljanje zalihama i proizvodnjom, usklađujući raspoloživost materijala sa proizvodnim potrebama radi povećanja operativne efikasnosti i smanjenja troškova.
+
+### MES - Manufacturing Execution System
+
+Glavne funkcionalnosti:
+
+#### [Radni nalozi proizvodnje](/docs/production/pp-production-in-progress/production-orders/search-production-orders)
+
+Modul je osmišljen za optimizaciju i pojednostavljenje planiranja proizvodnih procesa. Omogućava upravljanje nalozima u statusima **Pokrenuto** i **Izvršni**, uz jasno razlikovanje naloga spremnih za pokretanje od onih koji su već u fazi izvršenja.
+
+#### [Zadaci](/docs/production/pp-production-in-progress/task/manual-task)
+
+Funkcionalnost ručnog kreiranja zadataka omogućava ručno kreiranje i upravljanje proizvodnim zadacima grupisanjem faza obrade (koje još nisu prijavljene) iz proizvodnih naloga u statusu **Pokrenuto** i/ili **Izvršni**, polazeći od planiranog materijala koji će se koristiti.
+
+#### [Lista za preuzimanje materijala (Picking)](/docs/production/pp-production-in-progress/picking-materials-list)
+
+Omogućava upravljanje preuzimanjem materijala, pravilno kretanje komponenti namenjenih proizvodnji i obezbeđuje usklađenost između planiranja i stvarne potrošnje.
+
+#### [Deklaracije/prijave/signali proizvodnje](/docs/production/pp-production-in-progress/signals/sisgnals)
+
+Ovaj modul omogućava korisnicima kreiranje prijava proizvodnje uz praćenje statusa napretka svake faze, čime se obezbeđuje potpuna preglednost i kontrola proizvodnog procesa.
+
+#### [Knjiženje](/docs/production/pp-production-in-progress/procedures/signals-record)
+
+Omogućava istovremeno knjiženje više prijava i ubrzava postupke obračuna i evidentiranja proizvodnje.
+
+#### [Izdavanje proizvodnih naloga](/docs/production/pp-production-in-progress/procedures/production-orders-release)
+
+Procedura puštanja proizvodnih naloga u Fluentisu omogućava promenu statusa naloga iz **Pokrenuto** u **Izvršni**, uz istovremeno generisanje potrebnih skladišnih knjiženja.
+
+### [Fluentis MES](/docs/production/mes/mes-intro)
+
+#### [Radne stanice](/docs/production/mes/workstation)
+
+Omogućavaju efikasno upravljanje proizvodnim operacijama kroz šifriranje, filtriranje i povezivanje resursa. Zahvaljujući intuitivnom interfejsu korisnici mogu optimizovati tok rada i povećati operativnu efikasnost.
+
+#### [Proizvodni resursi](/docs/production/mes/production-resources)
+
+Omogućavaju jednostavno i brzo prilagođavanje izgleda i ponašanja pojedinog radnog centra, prilagođavajući sistem specifičnim potrebama preduzeća.
+
+#### [MES](/docs/production/mes/mes-main-form)
+
+Osmišljen je za optimizaciju i pojednostavljenje procesa prijave proizvodnih aktivnosti. Ovaj interfejs omogućava operaterima praćenje i upravljanje proizvodnim resursima u realnom vremenu i olakšava unos podataka o fazama obrade i proizvedenim količinama.
+
+## Sažetak
+
+Oblast Proizvodnja u **Fluentis ERP-u** objedinjuje planiranje, izvršenje i kontrolu unutar jedinstvenog digitalnog ekosistema.
+
+Temeljni stubovi sistema su:
+
+- **MRP** za planiranje materijala i resursa;
+- **MES** za izvršenje i praćenje proizvodnje u realnom vremenu;
+- **Radni nalozi proizvodnje** za operativno upravljanje proizvodnjom;
+- **Deklaracije/prijave/signali proizvodnje i obračun** za kontrolu troškova.
+
+Ovakva modularna struktura omogućava integrisano upravljanje celokupnim proizvodnim ciklusom, uz povećanje efikasnosti, sledljivosti i profitabilnosti poslovanja.

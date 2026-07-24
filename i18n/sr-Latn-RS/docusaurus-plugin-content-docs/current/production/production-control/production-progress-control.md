@@ -1,15 +1,16 @@
 ---
-title: Provjera napretka proizvodnje
+title: Kontrola napretka proizvodnje
 sidebar_position: 1
 ---
 
-Ovaj obrazac omogućuje ispis izvješća o  **Provjeri napretka proizvodnje** koje za svaku proizvodnu narudžbu prikazuje stanje napretka pojedinih faza putem *trake napretka*, na temelju vremena ili proizvedene količine.  
+Ovaj obrazac omogućava ispis izvještaja **Kontrola napretka proizvodnje**, koji za svaki proizvodni nalog prikazuje stanje napretka pojedinačnih faza putem *trake napretka*, na osnovu vremena ili proizvedene količine.
 
-U izvješću je prisutno polje *Stanje* koje označava status faze putem kvadratića u boji sa sljedećim značenjem:  
+U izvještaju se nalazi polje *Stanje* koje označava status faze pomoću kvadratića u boji sa sljedećim značenjem:
 
-- **Zeleno**: označava da faza nije u kašnjenju;         
-- **Crveno**: označava da faza kasni;            
+- **Zeleno**: označava da faza nije u kašnjenju;
+- **Crveno**: označava da faza kasni;
 - **Sivo**: označava da je faza završena.
 
-**Postotak napretka** faze u grafikonu izračunava se na temelju zbroja proizvedenih i odbačenih količina u prijavama proizvodnje, ili na temelju veće vrijednosti između zbroja vremena stroja i zbroja vremena radne snage. Korisnik može odabrati kriterij za izračunavanje **Postotka napretka** putem odgovarajućih zastavica prisutnih u okviru *Predviđanje završetka radova* u filteru izvješća.          
-U slučaju da **Postotak napretka** premaši 100%, pored grafikona će se prikazati *Crveni trokut* koji označava prekoračenje predviđene vrijednosti.  
+**Procenat napretka** faze na grafikonu izračunava se na osnovu zbira proizvedenih i otpisanih količina u proizvodnim prijavama ili na osnovu veće vrijednosti između zbira vremena mašine i zbira vremena radne snage. Korisnik može odabrati kriterijum za izračunavanje **Procenta napretka** putem odgovarajućih oznaka koje se nalaze u okviru *Predviđanje završetka radova* u filteru izvještaja.
+
+U slučaju da **Procenat napretka** premaši 100%, pored grafikona će se prikazati *crveni trougao* koji označava prekoračenje predviđene vrijednosti.
