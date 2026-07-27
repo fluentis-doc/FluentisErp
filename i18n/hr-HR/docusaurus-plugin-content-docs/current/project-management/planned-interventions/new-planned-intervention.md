@@ -41,7 +41,7 @@ Na ovoj kartici moguće je unijeti **Resurs** koji će izvršiti planiranu inter
 **Do planiranog datuma**: sadrži datum i vrijeme završetka intervencije,
 **Efektivno vrijeme**: sadrži stvarno potrebno vrijeme, izračunato prema prethodnim poljima;
 **Opis**: obavezno polje u kojem se opisuje intervencija i eventualne napomene za resursu.
-Zatim postoje neki flagovi koji reguliraju obveznost **Tehničara**, **Datuma** i označavaju li se aktivnosti naplativim ili ne.
+Zatim postoje neke opcije koje reguliraju obveznost **Tehničara**, **Datuma** i označavaju li se aktivnosti naplativim ili ne.
 
 ![](/img/hr-HR/project-management/planned-intervention/resource.png)
 
@@ -56,6 +56,22 @@ Na ovoj kartici moguće je unijeti procjenu planirane intervencije putem sljede�
 **Neto jedinična cijena**: sadrži jediničnu cijenu prema MJ; 
 **Ukupni iznos**: to je polje izračunato prema prethodno unesenim podacima; 
 **Valuta**: označava valutu koju treba koristiti. 
+
+Prilikom odabira projekta automatski se predlažu sljedeće vrijednosti:
+
+- Prodajni cjenik
+- Tiket
+- Opis
+- Kategorija aktivnosti
+- Naplativo
+- Aktivnost s dodanom vrijednošću
+- Artikl (ako već nije unesen)
+- Mjerna jedinica (ako već nije unesena)
+- Jedinična neto cijena
+
+Jedinična neto cijena ažurira se vrijednošću definiranom na projektu ako je artikl već prisutan na planiranoj intervenciji i podudara se s artiklom definiranim na projektu.
+
+Ako artikl nije prisutan na planiranoj intervenciji te se preuzme s projekta, jedinična neto cijena također će se ažurirati vrijednošću definiranom na projektu.
 
 ![](/img/it-it/project-management/planned-intervention/stima.png)
 

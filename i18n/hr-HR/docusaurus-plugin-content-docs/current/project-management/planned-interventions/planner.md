@@ -3,29 +3,64 @@ title: Planer
 sidebar_position: 2
 ---
 
-**Planer** omogućuje pregled rasporeda za svaki resurs s potvrđenim zahtjevima za intervencijom i stvaranje sastanaka. 
-Na lijevoj strani prozora potrebno je odabrati razdoblje koje želite pregledati.
+## Planer
 
-![](/img/it-it/project-management/planned-intervention/calendar.png)
+Planner je dostupan uz licencu **Fluentis Universal**, a može se otvoriti putem izbornika **Upravljanje projektima > Planer**. Omogućuje prikaz kalendara resursa, projekata i kupaca.
 
-Također na lijevoj strani možete odabrati resurs čiji raspored želite vidjeti i u donjem dijelu odabrati koje zahtjeve želite prikazati u tablici pored, između: Prikaz Zahtjeva za Intervencijom, Izvršeni u Planiranima, Prikaz Planirane Intervencije, Izvršeni u Intervencijama. Pritiskom na gumb Pretraga dokumenta u gornjem meniju, zahtjevi će se prikazati u tablici. Ove zahtjeve možete ispuniti u rasporedu resursa. 
-Raspored resursa prikazivat će već potvrđene intervencije, ali možete stvoriti nove događaje i iz redaka u tablici, odabirom i korištenjem određenih gumba iz menija:
+# Filtri
 
-![](/img/neutral/common/new-appointment.png) Novi sastanak: prikazat će zaslon **Sastanak**, u kojem možete unijeti karakteristike aktivnosti koje će se pojaviti u Rasporedu; možete unijeti Predmet, Lokaciju intervencije, početak i završetak, opis aktivnosti. Nakon spremanja, intervencija će se pojaviti u rasporedu resursa.
+Prilikom otvaranja prikazuje se kalendar resursa trenutno prijavljenog korisnika, no moguće je istovremeno prikazati više kalendara.
 
-![](/img/neutral/common/appointment.png) Novi ponovni sastanak: prikazat će zaslon **Sastanak**, sličan prethodnom, s mogućnošću klikanja na **Ponavljanje** kako biste ga postavili. Nakon spremanja, redoviti događaji pojavit će se u rasporedu.
+Otvorite karticu **Filtri** s lijeve strane, zatim karticu **Resursi**, kliknite na pretraživanje kako biste prikazali sve dostupne resurse te povucite željene resurse u okvir s desne strane.
+Na isti način rade i filtri **Kupac** i **Projekt**, koji će se primijeniti na prikazane kalendare.
+Na kartici **Dokumenti** moguće je odabrati koje će se vrste dokumenata prikazivati u kalendarima.
+Za svaki od tih dokumenata moguće je dodatno primijeniti specifične filtre, jednake onima dostupnima u odgovarajućim područjima sustava.
+U odjeljku **Opći filtri** dostupne su sljedeće mogućnosti:
 
-![](/img/it-it/project-management/planned-intervention/appointment.png)
+- prikaz preklapajućih termina
+- prikaz nepotvrđenih termina
+- označavanje dana u kojima nije raspoređeno cijelo radno vrijeme resursa. Dani s raspoloživim terminima bit će označeni tirkiznom bojom.
 
-![](/img/neutral/common/automatic-propose.png) Automatski prijedlog: ovaj gumb automatski će predložiti intervencije u rasporedu prema unesenim datumima i vremenima.
+Za uklanjanje pojedinog prethodno odabranog filtra označite ga i pritisnite tipku **Delete** na tipkovnici. Za uklanjanje svih filtara upotrijebite gumb **Obriši filtre**.
 
-Ostali specifični gumbi uključuju:
+**Razdoblje**: omogućuje odabir razdoblja koje će biti prikazano u kalendaru.
 
-![](/img/neutral/common/day.png) Prijelaz na dnevni prikaz: prikazuje raspored u dnevnim vremenskim intervalima.   
-![](/img/neutral/common/week.png) Prijelaz na tjedni prikaz: prikazuje raspored u tjednim vremenskim intervalima.     
-![](/img/neutral/common/month.png) Prijelaz na mjesečni prikaz: prikazuje raspored u mjesečnim vremenskim intervalima.     
-![](/img/neutral/common/timeline.png) Prijelaz na prikaz vremenske crte: prikazuje vremensku crtu.
+# Kalendar
 
-Dvostrukim klikom možete otvoriti, pregledati i izmijeniti intervencije izravno iz rasporeda.
+Svaka vrsta dokumenta u kalendaru može biti prikazana drugom bojom radi lakšeg razlikovanja. Konfiguracija boja postavlja se u odgovarajućim šifarnicima vrsta dokumenata.
+Jedino termini resursa raspoređenih na projektu nemaju mogućnost odabira boje, već će njihova boja odgovarati boji kalendara resursa (boji zaglavlja u kojem je prikazano ime resursa). Takvi termini mogu se prepoznati po oznaci **PR** (*Project Resource*), koja je prikazana iza vremena.
+Ako postoje zahtjevi za godišnji odmor ili odsutnost, pozadina će biti obojena narančastom bojom. Ako je s tim zahtjevom povezana generirana aktivnost, prikazivat će se ovisno o opciji **Godišnji odmori** u filtrima **Dokumenti**.
+Ako u istom danu postoji više termina nego što ih je moguće prikazati, u donjem desnom kutu prikazat će se strelica koja otvara detaljan prikaz tog dana.
+Svaki termin prikazuje tri osnovne informacije:
 
-Također, postavljanjem miša na aktivnost u rasporedu i desnim klikom, resurs može izravno stvoriti intervenciju pomoću postupka **Kreiraj intervenciju**. Zatim će još dodatno pitati želite li otvoriti stvorenu [Intervenciju](/docs/project-management/service-activities/search-intervention/) ili ne.
+- vrijeme početka i završetka te opis vrste dokumenta
+- kupca
+- WBS projekta
+
+Postavljanjem pokazivača miša iznad termina prikazat će se alatni opis (*tooltip*) s dodatnim informacijama.
+Za svaku vrstu dokumenta desnim klikom moguće je generirati sljedeći dokument predviđen tijekom procesa upravljanja projektom.
+Primjerice, iz termina resursa na projektu moguće je generirati **Planiranu intervenciju** ili **Zahtjev za intervenciju**. Koristit će se vrste dokumenata definirane u općim parametrima područja **Projekti**.
+Kalendar će se odmah ažurirati te će promijeniti boju ovisno o novoj vrsti dokumenta.
+Dvostrukim klikom moguće je otvoriti odgovarajući dokument.
+Postupak konverzije moguće je primijeniti i na višestruki odabir dokumenata.
+Također, desnim klikom moguće je obrisati upravo kreirani dokument, pri čemu će se vratiti prethodno stanje (u našem primjeru ponovno će biti prikazan termin resursa na projektu).
+
+Dostupne su sljedeće konverzije:
+
+- termin resursa na projektu → zahtjev za intervenciju
+- zahtjev za intervenciju → planirana intervencija
+- zahtjev za intervenciju → intervencija
+- termin resursa na projektu → planirana intervencija
+- planirana intervencija → intervencija
+
+Kalendar podržava i funkcionalnost **drag & drop**, pa će se povlačenjem termina s jednog dana na drugi ili iz kalendara jednog resursa u kalendar drugog resursa automatski ažurirati podaci u odgovarajućim dokumentima.
+
+Ova operacija **nije dopuštena** za intervencije čiji je status <u>različit od Uneseno</u> te za <u>fakturirane aktivnosti</u>.
+
+# Alatna traka
+
+Na alatnoj traci dostupni su sljedeći gumbi:
+
+- **Povećaj / Umanji**: omogućuje povećavanje ili smanjivanje prikaza odabranog razdoblja, sve do najdetaljnijeg prikaza po satima.
+- **Pregled**: omogućuje mjesečni, tjedni, dnevni ili **vremenski** (*Timeline*) prikaz. Potonji je posebno prikladan za uočavanje slobodnih dana ili nepopunjenih vremenskih intervala, primjerice tijekom razdoblja godišnjih odmora.
+- **Grupiraj prema**: omogućuje promjenu načina prikaza kalendara prema resursu, projektu, kupcu ili datumu

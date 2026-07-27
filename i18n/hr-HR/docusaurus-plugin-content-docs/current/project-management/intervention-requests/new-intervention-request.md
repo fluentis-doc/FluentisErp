@@ -31,9 +31,9 @@ U ovoj formi mogu se unijeti podaci o **Zahtjevu za Intervencijom**:
 
 **Datum zatvaranja**: sadrži eventualni datum zatvaranja zahtjeva.
 
-In questa form poi sono presenti delle tab specifiche.
+Na ovom obrascu dostupne su i posebne kartice.
 
-**Kartic Resursa**
+**Kartica Resursa**
 
 Ova tablica sadrži resurse za koji se izvodi zahtjev za intervencijom. Također su prisutne neke kartice koje označavaju obavezno ili neobavezno prisustvo Tehničara i Datuma, te zastava koja označava je li Aktivnost naplativa. Ostali podaci su:
 
@@ -73,6 +73,21 @@ U ovoj tablici nalazi se procjena povezana s povezanim Projektom Zahtjeva za Int
 
 **Ukupan iznos**: označava ukupni iznos.
 
+Prilikom odabira projekta automatski se predlažu sljedeće vrijednosti:
+
+- Prodajni cjenik
+- Tiket
+- Opis
+- Kategorija aktivnosti
+- Naplativo
+- Aktivnost s dodanom vrijednošću
+- Artikl (ako već nije unesen)
+- Mjerna jedinica (ako već nije unesena)
+- Jedinična neto cijena
+
+Jedinična neto cijena ažurira se vrijednošću definiranom na projektu ako je artikl već prisutan na zahtjevu za intervenciju i podudara se s artiklom definiranim na projektu.
+
+Ako artikl nije prisutan na zahtjevu za intervenciju te se preuzme s projekta, jedinična neto cijena također će se ažurirati vrijednošću definiranom na projektu.
 
 
 
