@@ -1,21 +1,22 @@
 ---
-title: Stvaranje zahtjeva ili planiranih intervencija projekta
+title: Kreiranje zahteva ili planiranih intervencija projekta
 sidebar_position: 2
 ---
 
-Ovaj postupak omogućuje stvaranje zahtjeva za intervencijom ili planiranih intervencija iz projekta.
+Ovaj postupak omogućava kreiranje zahteva za intervenciju ili planiranih intervencija iz projekta.
 
-U području filtra moguće je naznačiti:
+U oblasti filtera moguće je navesti:
 
 **Od datuma početka**: označava datum početka od kojeg treba uzeti u obzir projekte;
 
 **Do datuma početka**: označava datum početka do kojeg treba uzeti u obzir projekte;
 
-**Resurs**: odrediti resurs zadužen za projekte;
+**Resurs**: određuje resurs zadužen za projekte;
 
-**Klijent/Kupac**: moguće je naznačiti klijenta za koji filtrirati projekte;
+**Klijent/Kupac**: moguće je navesti klijenta za kojeg će se filtrirati projekti;
 
-**Projekt**: moguće je naznačiti granu projekta za filtriranje resursa.
+**Projekat**: moguće je navesti granu projekta za filtriranje resursa.
 
-Nakon postavljanja filtera, dovoljno je kliknuti na gumb **Traži** na vrpci alatki kako bi se rezultati prikazali u donjoj rešetki. Redovi rezultata prikazuju rezervacije resursa, s pripadajućim značajkama aktivnosti i projekta. Na dnu zaslona nalazi se oznaka **Postavi kao potvrđeno** ako se dokument mora stvoriti već potvrđen, odnosno stvarno planirati. 
-Nakon odabira retka, možete koristiti specifične gumbe na vrpci alatki za izvođenje postupka i stvaranje **Zahtjeva za Intervencijom** ili **Planiranih Intervencija**.
+Nakon podešavanja filtera, dovoljno je kliknuti na dugme **Traži** na alatnoj traci kako bi se rezultati prikazali u donjoj tabeli. Redovi rezultata prikazuju rezervacije resursa, sa pripadajućim karakteristikama aktivnosti i projekta. Na dnu ekrana nalazi se oznaka **Postavi kao potvrđeno** ako dokument treba kreirati već potvrđen, odnosno stvarno planiran.
+
+Nakon izbora reda, možete koristiti odgovarajuću dugmad na alatnoj traci za izvršavanje postupka i kreiranje **Zahteva za intervenciju** ili **Planiranih intervencija**.

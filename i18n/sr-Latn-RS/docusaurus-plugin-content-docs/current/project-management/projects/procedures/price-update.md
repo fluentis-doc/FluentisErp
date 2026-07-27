@@ -1,49 +1,48 @@
 ---
-title: Ažuriranje cijene
+title: Ažuriranje cene projekta
 sidebar_position: 3
 ---
 
-Procedura **Ažuriranja cijena ažurira cijenu, referentni cjenik i PDV** u redovima projekta, zahtjevima za intervencijom, planiranim intervencijama i intervencijama prema postavljenim parametrima u donjem dijelu obrasca.
+Procedura **Ažuriranja cene projekta** u redovima projekta, zahtevima za intervenciju, planiranim intervencijama i intervencijama prema podešenim parametrima u donjem delu obrasca.
 
-Za više detalja o zajedničkim dijelovima obrazaca, pogledajte link [Funkcionalnosti, gumbe i zajednička polja](/docs/guide/common).
+Za više detalja o zajedničkim delovima obrazaca pogledajte link [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).
 
-## Procedura  
+## Procedura
 
-1. Postavite željene **filtre** u odjeljku filtara i pritisnite gumb **Traži** u glavnom izborniku;  
-2. Odaberite redove za ažuriranje u rezultatima tablice;  
-Odabir se može napraviti ručno u tablici rezultata ili korištenjem gumba **Označi sve** ili **Odznači sve** u izborniku trake;  
-3. Postavite **ažurirane cijene, referentni cjenik** i **PDV** u odjeljku **Cijena/PDV** u donjem dijelu prozora;  
-4. Pritisnite **Procesuiraj cijene** kako biste pregledali promjene koje će se pojaviti u stupcu **Nova cijena** i **PDV-u**. Ako se koristi cjenik za ažuriranje cijene, informacije o cjeniku bit će vidljive u stupcima **Cjenik prodaje** i **Datum cjenika**..
+1. Podesite željene **filtere** u odeljku filtera i pritisnite dugme **Traži** u glavnom meniju;
+2. Izaberite redove za ažuriranje u rezultatima tabele;  
+Izbor se može izvršiti ručno u tabeli rezultata ili korišćenjem dugmadi **Označi sve** ili **Poništi izbor svih** na alatnoj traci;
+3. Podesite **ažuriraj cenu i cenovnik** i **PDV** u odeljku **Cena/PDV** u donjem delu prozora;
+4. Pritisnite **Obradi cene** kako biste pregledali promene koje će biti prikazane u kolonama **Nova cena** i **PDV**. Ako se za ažuriranje cene koristi cenovnik, informacije o cenovniku biće vidljive u kolonama **Cenovnik prodaje** i **Datum cenovnika**.
 
 :::note Napomena
-Promjene u ovoj fazi primjenjuju se samo na pregled, još nisu stvarne u dokumentima.
+Promene u ovoj fazi primenjuju se samo na pregled i još nisu stvarno primenjene u dokumentima.
 :::
 
-5. Definirajte u odjeljku parametara **dokumente** na koje želite primijeniti promjene i **opcije** povezane s WBS-ovima koje treba ažurirati;  
-6. Pritisnite **Ažuriraj** kako biste stvarno primijenili promjene u dokumentima.
+5. Definišite u odeljku parametara **dokumente** na koje želite da primenite promene i **opcije** povezane sa WBS-ovima koje treba ažurirati;
+6. Pritisnite **Ažuriraj** kako biste stvarno primenili promene u dokumentima.
 
-## Cijena/PDV
+## Cena/PDV
 
-**Forsiraj cijenu**: koristi se ova opcija ako želite ručno navesti novu cijenu;
+**Forsiraj cenu**: koristi se ova opcija ako želite ručno da navedete novu cenu;
 
-**Ažuriraj cijenu i cjenik s posljednjim cjenikom**: ako je označeno, koristit će se posljednji valjani cjenik za određivanje nove cijene;
+**Ažuriraj cenovnik i cenu prema poslednjem važećem cenovniku**: ako je označeno, koristiće se poslednji važeći cenovnik za određivanje nove cene;
 
-**Ažuriraj cijenu i cjenik s cjenikom**: ako je označeno, koristit će se cjenik unesen naknadno kako bi se odredila nova cijena;
+**Ažuriraj cenu i cenovnik iz cenovnika**: ako je označeno, koristiće se naknadno uneti cenovnik za određivanje nove cene;
 
-**Forsiraj PDV**: ručno navesti kôd PDV-a koji će se koristiti za odabrane retke, koji će se zatim upisati u stupac PDV tablice rezultata;
+**Forsiraj PDV**: ručno navedite PDV šifru koja će se koristiti za izabrane redove, a koja će zatim biti upisana u kolonu PDV u tabeli rezultata;
 
-**Ažuriraj PDV iz podataka o klijentu u evidenciji**: PDV kod određuje se vrijednošću unesenom u evidenciji klijenta.
+**Ažuriraj PDV iz šifarnika kupaca**: PDV šifra određuje se vrednošću unetom u šifarnik kupca.
 
 ## Opcije
 
-**Dupliciraj redak WBS-a koji treba ažurirati**: ako je označeno, redci WBS-a koji se ažuriraju dupliciraju u projektu;
+**Dupliraj red WBS-a za ažuriranje**: ako je označeno, redovi WBS-a koji se ažuriraju dupliraju se u projektu;
 
-**Poništi dodeljene dane u dupliciranom WBS-u**: ako je označeno, dani dodeljeni dupliciranom WBS-u bit će poništeni iz prethodnog WBS-a.
-  
+**Storno dana dodeljenih u dupliranom WBS-u**: ako je označeno, dani dodeljeni dupliranom WBS-u biće poništeni iz prethodnog WBS-a.
+
 ## Dokumenti
 
-**Ažuriranje cijene još neispunjenih zahtjeva za intervenciju i planiranih intervencija vezanih uz WBS**
-: kada se redovi projekta ažuriraju, dokumenti zahtjeva i planiranih intervencija koji još nisu izvršeni automatski se ažuriraju;
+**Ažuriranje cene projekata, zahteva za intervenciju i planiranih intervencija povezanih sa WBS-om koji još nisu završeni**
+: kada se redovi projekta ažuriraju, dokumenti zahteva i planiranih intervencija koji još nisu izvršeni automatski se ažuriraju;
 
-**Ažuriranje još nefakturiranih intervencija povezanih s WBS-om**: u ovom slučaju bit će ažurirani podaci o redu usluge i podaci povezane stavke u kartici Planiranje fakturiranja.
-
+**Ažuriranje povezanih aktivnosti na WBS-u za koje nije izdat račun**: u ovom slučaju biće ažurirani podaci o redu usluge i podaci povezane stavke na kartici Planiranje fakturisanja.

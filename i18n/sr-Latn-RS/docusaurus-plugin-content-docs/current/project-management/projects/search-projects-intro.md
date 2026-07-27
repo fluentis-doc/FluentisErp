@@ -1,18 +1,18 @@
 ---
-title: Pretraživanje Projekta
+title: Pretraga projekta
 sidebar_position: 1
 ---
 
-Mogućnost pretraživanja **Projekata** omogućuje traženje već unesenih projekata.
+Mogućnost pretrage **Projekata** omogućava pretragu već unetih projekata.
 
-Omogućuje pretraživanje svih dokumenata kako bi ih pregledali, mijenjali, po potrebi brisali ili dodali novi dokument; prozor se sastoji od područja filtra i prikaz rezultata.
+Omogućava pretragu svih dokumenata radi njihovog pregleda, izmene, po potrebi brisanja ili dodavanja novog dokumenta; prozor se sastoji od oblasti filtera i prikaza rezultata.
 
-Nakon postavljanja svih željenih filtara, jednostavno kliknite na gumb **Traži** koji se nalazi u vrpci kako biste vidjeli rezultate unutar prikaz rezultata.
+Nakon podešavanja svih željenih filtera, jednostavno kliknite na dugme **Traži** koje se nalazi na alatnoj traci kako biste videli rezultate u prikazu rezultata.
 
-Da biste otvorili pojedinosti o dokumentu, jednostavno ga odaberite i dvaput kliknite mišem, ili kliknite na gumb **Izmijeni** (omogućuje ulazak u pojedinosti i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
+Da biste otvorili detalje dokumenta, jednostavno ga izaberite i dvaput kliknite mišem ili kliknite na dugme **Izmeni** (omogućava ulazak u detalje i uređivanje) ili na dugme **Prikaži** (omogućava ulazak u detalje i pregled, ali bez mogućnosti uređivanja).
 
 Pogledajte i:  
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)  
-Dodavanje novih polja u obrasce pretraživanja
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u obrasce za pretragu
 
-Specifičan gumb ove maske je ![](/img/neutral/common/duplicate.png) Novi projekt iz predloška: omogućuje stvaranje novog projekta na temelju prethodno postojećeg obrasca. Potrebno je navesti **Vrstu projekta**, novog **Klijenta/Kupca** kojem je namijenjen i **Datum stvaranja**.
+Specifično dugme ove maske je ![](/img/neutral/common/duplicate.png) **Novi projekat iz predloška**: omogućava kreiranje novog projekta na osnovu prethodno postojećeg predloška. Potrebno je navesti **Vrstu projekta**, novog **Klijenta/Kupca** kojem je namenjen i **Datum kreiranja**.

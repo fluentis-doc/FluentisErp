@@ -3,23 +3,24 @@ title: Unos računa
 sidebar_position: 1
 ---
 
-U području filtra moguće je postaviti niz filtera kako biste ciljano pretraživali projekte.
+U oblasti filtera moguće je postaviti niz filtera kako biste ciljano pretraživali projekte.
 
-Nakon postavljanja filtera, pritiskom na gumb **Traži** u traci s alatkama, rezultati će se pojaviti u prikaz podataka. U donjem dijelu možete odrediti parametre koje želite koristiti za izvođenje postupka:
+Nakon podešavanja filtera, pritiskom na dugme **Traži** na alatnoj traci, rezultati će se pojaviti u prikazu podataka. U donjem delu možete odrediti parametre koje želite da koristite za izvršavanje postupka:
 
-**Vrsta računa**: sadrži vrstu računa koju želite stvoriti, ako nije postavljena u tablici  [Tipovi projekata](/docs/configurations/tables/project-management/project-type/);
+**Vrsta računa**: sadrži vrstu računa koju želite da kreirate, ako nije podešena u tabeli [Vrste projekata](/docs/configurations/tables/project-management/project-type/);
 
-**Datum stvaranja**: sadrži datum kada će račun biti stvoren;
+**Datum kreiranja**: sadrži datum kada će račun biti kreiran;
 
-**Grupiraj predmete na računu**: ovom oznakom na računu će se artikli grupirati;
+**Grupiši stavke na računu**: ovom oznakom na računu će se artikli grupisati;
 
-**Dodaj referencu o objektima**: ova oznaka dodaje izvorni projekt na račun;
+**Dodaj referencu na objekte**: ova oznaka dodaje izvorni projekat na račun;
 
-**Izrada fakture računa**: ovom oznakom omogućuje se generiranje eventualnog predujma.
+**Kreiranje fakture avansa**: ovom oznakom omogućava se generisanje eventualnog avansa.
 
-Također je moguće odabrati hoće li se valuta pretvoriti pomoću oznake **Pretvorba valute**, što omogućuje popunjavanje polja **Valuta**, **Zaokruživanje** i **Tečaj**.
+Takođe je moguće izabrati da li će se valuta konvertovati pomoću oznake **Konverzija valute**, što omogućava popunjavanje polja **Valuta**, **Zaokruživanje** i **Kurs**.
 
-Da biste izvršili postupak, nakon postavljanja parametara, jednostavno odaberite redak projekta u rešetki i pritisnite gumb **Premještaj** u traci s alatkama.
+Da biste izvršili postupak, nakon podešavanja parametara, jednostavno izaberite red projekta u tabeli i pritisnite dugme **Premesti** na alatnoj traci.
 
-Rezultati postupka vidljivi su na kartici **Povrati u prethodno stanje**. Na njoj, pritiskom na gumb **Traži** u traci s alatkama, prikazuju se izvršene operacije. Odabirom reda korisnika koji je izvršio postupak, donji prikazi **Računi** i **Artikli** prikazuju pojedinosti operacije. 
-Ako želite **Poništiti** postupak, odaberite odabrani redak i pritisnite **Povrati u prethodno stanje** u traci s alatkama.
+Rezultati postupka vidljivi su na kartici **Vrati u prethodno stanje**. Na njoj, pritiskom na dugme **Traži** na alatnoj traci, prikazuju se izvršene operacije. Izborom reda korisnika koji je izvršio postupak, donji prikazi **Računi** i **Artikli** prikazuju detalje operacije.
+
+Ako želite da **Poništite** postupak, izaberite odgovarajući red i pritisnite **Vrati u prethodno stanje** na alatnoj traci.

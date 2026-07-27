@@ -1,78 +1,90 @@
 ---
-title: Novi Zahtjev za intervencijom
+title: Novi zahtev za intervenciju
 sidebar_position: 2
 ---
 
-U ovoj formi mogu se unijeti podaci o **Zahtjevu za Intervencijom**:
+U ovoj formi mogu se uneti podaci o **Zahtevu za intervenciju**:
 
-**Vrsta Intervencije**: sadrži [tip zahtjeva](/docs/configurations/tables/project-management/request-intervention-type/);
+**Vrsta intervencije**: sadrži [tip zahteva](/docs/configurations/tables/project-management/request-intervention-type/);
 
-**Broj/Datum**: sadrži broj i datum zahtjeva;
+**Broj/Datum**: sadrži broj i datum zahteva;
 
-**Kupac**: sadrži klijenta kojem je zahtjev namijenjen;
+**Kupac**: sadrži klijenta kojem je zahtev namenjen;
 
-**Kontakt**: sadrži eventualni *Kontakt* kojem je zahtjev namijenjen, a koji možda još nije klijent;
+**Kontakt**: sadrži eventualni *Kontakt* kojem je zahtev namenjen, a koji možda još nije klijent;
 
-**Kategorija aktivnosti**: označava eventualnu povezanu kategoriju aktivnosti s zahtjevom;
+**Kategorija aktivnosti**: označava eventualnu povezanu kategoriju aktivnosti sa zahtevom;
 
-**Glavna imovina**: moguće je povezati postrojenje s zahtjevom;
+**Glavna imovina**: moguće je povezati postrojenje sa zahtevom;
 
-**Artikl**: moguće je stavku povezati sa artiklom;
+**Artikal**: moguće je stavku povezati sa artiklom;
 
-**Projekt**: sadrži povezani [Projekt](/docs/project-management/projects/search-projects-intro/);
+**Projekat**: sadrži povezani [Projekat](/docs/project-management/projects/search-projects-intro/);
 
-**Tiket(zahtjev za podrškom)**: sadrži tiket zahtjeva za intervencijom, s pripadajućim stupnjem ozbiljnosti;
+**Tiket (zahtev za podrškom)**: sadrži tiket zahteva za intervenciju, sa pripadajućim stepenom ozbiljnosti;
 
-**SLA**: sadrži razinu Ugovora o Razini Usluge, potrebnu za proučavanje prioriteta;
+**SLA**: sadrži nivo Ugovora o nivou usluge, potreban za proučavanje prioriteta;
 
-**Status zahtjeva za intervencijom**: označava trenutni status zahtjeva, između Otvoreno, Planirano, Izdan ili Zatvoreno;
+**Status zahteva za intervenciju**: označava trenutni status zahteva, između Otvoreno, Planirano, Izdato ili Zatvoreno;
 
-**Potvrdi datum**: sadrži datum kada je zahtjev potvrđen;
+**Potvrdi datum**: sadrži datum kada je zahtev potvrđen;
 
-**Datum zatvaranja**: sadrži eventualni datum zatvaranja zahtjeva.
+**Datum zatvaranja**: sadrži eventualni datum zatvaranja zahteva.
 
-In questa form poi sono presenti delle tab specifiche.
+Na ovom obrascu dostupne su i posebne kartice.
 
-**Kartic Resursa**
+**Kartica Resursi**
 
-Ova tablica sadrži resurse za koji se izvodi zahtjev za intervencijom. Također su prisutne neke kartice koje označavaju obavezno ili neobavezno prisustvo Tehničara i Datuma, te zastava koja označava je li Aktivnost naplativa. Ostali podaci su:
+Ova tabela sadrži resurse za koje se izvršava zahtev za intervenciju. Takođe su prisutne neke oznake koje označavaju obavezno ili neobavezno prisustvo Tehničara i Datuma, kao i oznaka koja pokazuje da li je Aktivnost naplativa. Ostali podaci su:
 
-**Resurs**: sadrži resurs kodiran u Upravljanju Projektima > Upravljanje Resursima;
+**Resurs**: sadrži resurs kodiran u Upravljanje projektima > Upravljanje resursima;
 
-**Zaposlenik**: sadrži konto Zaposlenika, obično podudaran s resursom;
+**Zaposleni**: sadrži konto Zaposlenog, obično podudaran sa resursom;
 
-**Od traženog zahtjeva**: sadrži datum i vrijeme početka aktivnosti;
+**Od traženog datuma**: sadrži datum i vreme početka aktivnosti;
 
-**Vrijeme početka pauze**: sadrži datum i vrijeme početka pauze;
+**Vreme početka pauze**: sadrži datum i vreme početka pauze;
 
-**Vrijeme završetka pauze**: sadrži datum i vrijeme završetka pauze;
+**Vreme završetka pauze**: sadrži datum i vreme završetka pauze;
 
-**Do traženog datuma**: sadrži datum i vrijeme završetka aktivnosti;
+**Do traženog datuma**: sadrži datum i vreme završetka aktivnosti;
 
-**Efektivno vrijeme**: sadrži stvarno vrijeme trajanja, izračunato iz prethodnih podataka;
+**Efektivno vreme**: sadrži stvarno vreme trajanja, obračunato iz prethodnih podataka;
 
-**Opis**: sadrži slobodan opis zahtjeva.
+**Opis**: sadrži slobodan opis zahteva.
 
-Moguće je povezati dodatne resurse u povezanoj tablici **Povezani resursi**.
+Moguće je povezati dodatne resurse u povezanoj tabeli **Povezani resursi**.
 
-**Kartica Rješenja**
+**Kartica Rešenja**
 
-U ovoj kartici moguće je slobodno opisati zahtjev za intervencijom u poljima **Prijedlog rješenja** i **Bilješka**. 
+Na ovoj kartici moguće je slobodno opisati zahtev za intervenciju u poljima **Predlog rešenja** i **Beleška**.
 
-**Kartica Procjene**
+**Kartica Procene**
 
-U ovoj tablici nalazi se procjena povezana s povezanim Projektom Zahtjeva za Intervencijom. Ako nema povezanosti, ova polja i dalje možete slobodno mijenjati:
+U ovoj tabeli nalazi se procena povezana sa povezanim Projektom zahteva za intervenciju. Ako ne postoji povezanost, ova polja i dalje možete slobodno menjati:
 
-**Jedinica mjere**: označava jedinicu mjere koja se treba uzeti u obzir za kvantifikaciju;
+**Jedinica mere**: označava jedinicu mere koja se uzima u obzir za kvantifikaciju;
 
-**Prodajni cjenik**: sadrži eventualni [Cjenik](/docs/sales/sales-price-list/sales-price-list/insert-sales-price-list/) koji treba uzeti u obzir;
+**Prodajni cenovnik**: sadrži eventualni [Cenovnik](/docs/sales/sales-price-list/sales-price-list/insert-sales-price-list/) koji treba uzeti u obzir;
 
-**Količina**: označava količinu potrebnu jedinica;
+**Količina**: označava potrebnu količinu jedinica;
 
-**Neto jedinična cijena**: označava neto jediničnu cijenu;
+**Neto jedinična cena**: označava neto jediničnu cenu;
 
-**Ukupan iznos**: označava ukupni iznos.
+**Ukupan iznos**: označava ukupan iznos.
 
+Prilikom izbora projekta automatski se predlažu sledeće vrednosti:
 
+- Prodajni cenovnik
+- Tiket
+- Opis
+- Kategorija aktivnosti
+- Naplativo
+- Aktivnost sa dodatom vrednošću
+- Artikal (ako već nije unet)
+- Jedinica mere (ako već nije uneta)
+- Jedinična neto cena
 
+Jedinična neto cena ažurira se vrednošću definisanom na projektu ako je artikal već prisutan na zahtevu za intervenciju i podudara se sa artiklom definisanim na projektu.
 
+Ako artikal nije prisutan na zahtevu za intervenciju i preuzme se sa projekta, jedinična neto cena takođe će se ažurirati vrednošću definisanom na projektu.

@@ -27,7 +27,6 @@ Podaci koji se trebaju unijeti su:
 
 **Potvrdi datum**: sadrži datum potvrde intervencije.
 
- 
 
 Zatim postoje različite kartice u koje možete unijeti dodatne informacije o planiranoj intervenciji.
 
