@@ -1,195 +1,184 @@
 ---
-title: Nota spese risorse
+title: Obračuni troškova resursa
 sidebar_position: 2
 ---
 
-La nota spese è lo strumento che gestisce l’inserimento e l’approvazione delle spese presenti nei documenti “Interventi” e “Dichiarazioni attività” delle risorse.
+Obračun troškova služi za unos i odobravanje troškova evidentiranih u dokumentima **Intervencije** i **Prijave aktivnosti** resursa.
 
-Sono considerati 2 tipi di approcci: 
+Podržana su dva načina rada:
 
-1 - Le note spesa sono generate massivamente per tutte le risorse, tramite specifica procedura. 
-E’ presente una procedura dove sono visibili tutte le spese di tutte le risorse. Le spese evidenziano eventuali discordanze rispetto al plafond autorizzato, e sarà il soggetto responsabile a gestire la validazione delle spese. Al termine della validazione, verrà creato un riepilogo per ciascuna risorsa. 
+1 - Obračuni troškova generiraju se skupno za sve resurse putem posebne procedure.
 
-2 - Le note spesa sono gestite singolarmente, creando direttamente la singola nota spese inerente alla risorsa.
-La Nota spese viene generata come un nuovo documento, dove indicando il periodo interessato e la risorsa, verrà caricata tutta la lista di spese corrispondente ai criteri indicati. 
-La risorsa potrà visionarle, eliminarle, aggiungere allegati, aggiungere altre spese.
+Dostupna je procedura u kojoj su prikazani svi troškovi svih resursa. Troškovi ističu eventualna odstupanja u odnosu na odobrene limite, a odgovorna osoba provodi njihovu provjeru i odobravanje. Po završetku provjere kreira se sažetak za svaki pojedini resurs.
 
-## Testata 
+2 - Obračuni troškova obrađuju se pojedinačno, izravnim kreiranjem obračuna troškova za odabrani resurs.
 
-Per garantire il corretto funzionamento sono obbligatori i seguenti dati in testata: 
+Obračun troškova generira se kao novi dokument. Nakon odabira željenog razdoblja i resursa automatski će se učitati svi troškovi koji odgovaraju zadanim kriterijima.
 
-**Tipo nota spese**: tipologia del documento di nota spese da utilizzare 
+Resurs može pregledavati troškove, brisati ih, dodavati privitke i unositi nove troškove.
 
-**Periodo competenza**: indica il periodo di competenza delle spese, che solitamente si identitifica come il mese del cedolino paga in cui verranno gestite le spese.
+## Zaglavlje
 
-**Da data / A data**: indica il range di date utilizzate per ricercare ed includere le spese in base alla data spesa, presenti nei vari documenti. Possono essere anche diverse dal periodo di competenza 
+Za ispravan rad obvezno je popuniti sljedeće podatke u zaglavlju:
 
-**Risorsa**: risorsa intestataria della nota spese. 
+**Vrsta obračuna troškova**: vrsta dokumenta obračuna troškova koja će se koristiti.
 
-**Stato spese**: stato generale di testata della nota spese. Viene assegnato in automatico in funzione dello stato delle singole righe (ovvero se tutte le righe sono approvate, anche la testata lo sarà di conseguenza. Se invece alcune righe non sono approvate altre invece sì, lo stato di testata sarà autorizzato parzialmente)
+**Period obračuna**: označava razdoblje kojem troškovi pripadaju, a koje se u pravilu podudara s mjesecom obračunske liste plaće u kojoj će troškovi biti obrađeni.
 
-**Anno**: anno della nota spese
+**Od datuma / Do datuma**: određuje raspon datuma koji se koristi za pretraživanje i uključivanje troškova prema datumu nastanka u različitim dokumentima. Ovaj raspon može biti različit od obračunskog razdoblja.
 
-**Data**: data della nota spese
+**Resurs**: resurs na kojeg glasi obračun troškova.
 
-**Numero**: numero della nota spese 
+**Status troška**: opći status zaglavlja obračuna troškova. Automatski se određuje prema statusima pojedinih redaka (primjerice, ako su svi redci odobreni, odobreno će biti i zaglavlje. Ako su neki redci odobreni, a neki nisu, status zaglavlja bit će **Djelomično odobreno**).
 
+**Godina**: godina obračuna troškova.
 
-La descrizione è invece un campo facoltativo. 
+**Datum**: datum obračuna troškova.
 
-**Descrizione**: eventuale descrizione aggiuntiva
+**Broj**: broj obračuna troškova.
 
-I campi Tipo nota spese e risorsa saranno proposti automaticamente se configurati nei Parametri per progetti - Parametri per operatore.
+Opis je neobavezno polje.
 
-### Stato testata nota spese 
+**Opis**: dodatni opis po potrebi.
 
-In base agli stati presenti nelle righe, verrà settato in automatico lo stato in testata.
-Al salvataggio: 
-se TUTTE le righe spese hanno stato:
--	**Inserito**: 
-allora anche lo stato in testata sarà =  Inserito
--	**Autorizzata**: 
-allora anche lo stato in testata sarà = Autorizzata
--	**Non Autorizzata**
-allora anche lo stato in testata sarà = Non Autorizzata
--	**Parzialmente Autorizzata**
-allora anche lo stato in testata sarà = Parzialmente Autorizzata
--	**Forzatamente Autorizzata**
-allora anche lo stato in testata sarà = Forzatamente Autorizzata
+Polja **Vrsta obračuna troškova** i **Resurs (audit)** automatski će biti predložena ako su konfigurirana u **Parametrima za projekte > Parametri operatera**.
 
-Se è presente anche solo 1 riga spesa con “Inserito”, lo stato della testata sarà Inserito
+### Status zaglavlja obračuna troškova
 
-Se le righe spese hanno stato “Autorizzata” oppure “Autorizzata Forzatamente” e nessun altro stato, lo stato della testata sarà Autorizzata Forzatamente.
+Na temelju statusa pojedinih redaka automatski će se postaviti status zaglavlja.
+Prilikom spremanja:
 
-Se le righe spese hanno una situazione mista di stati, la testata avrà stato “Parzialmente Autorizzata”
+ako **SVI** redci troškova imaju status:
+- **Uneseno**:  
+  tada će i status zaglavlja biti = **Uneseno**
+- **Odobreno**:  
+  tada će i status zaglavlja biti = **Odobreno**
+- **Nije autorizirano**:  
+  tada će i status zaglavlja biti = **Nije odobreno**
+- **Djelomično odobreno**:  
+  tada će i status zaglavlja biti = **Djelomično odobreno**
+- **Prisilno odobreno**:  
+  tada će i status zaglavlja biti = **Prisilno odobreno**
 
+Ako postoji samo jedan redak troška sa statusom **Uneseno**, status zaglavlja bit će **Uneseno**.
+Ako svi redci troškova imaju status **Odobreno** ili **Prisilno odobreno**, bez prisutnosti bilo kojeg drugog statusa, status zaglavlja bit će **Prisilno odobreno**.
+Ako redci troškova imaju kombinaciju različitih statusa, zaglavlje će imati status **Djelomično odobreno**.
 
-## Tab Spese
-In questa tab è visualizzato l'elenco dettagliato delle spese che sono state inserite nei singoli documenti, oppure sono state inserite direttamente nella nota spese. 
+## Kartica Troškovi
 
-**Tipo spesa**: tipologia della spesa sostenuta
+Na ovoj kartici prikazan je detaljan popis troškova koji su uneseni u pojedinim dokumentima ili izravno u obračun troškova.
 
-**Data spesa**: data in cui la spesa è stata sostenuta
+**Vrsta troška**: vrsta nastalog troška.
 
-**Importo**: importo della spesa sostenuta
+**Datum troška**: datum kada je trošak nastao.
 
-**Plafond**: importo massimo giornaliero definito in anagrafica risorsa per tipologia di spesa. Se 	plafond = 0 significa che non ci sono limiti di plafond
+**Iznos**: iznos nastalog troška.
 
-**Quota Plafond già usata**: nel caso ci siano altre Note spesa per la stessa risorsa / stessa tipologia spesa / stessa 	data, la quota di plafond va considerata parzialmente erosa spesa (es. 2 interventi 	nello stesso giorno della stessa risorsa dello stesso Tipo Spesa)
+**Limit (Plafond)**: maksimalni dnevni iznos definiran u šifarniku resursa za određenu vrstu troška. Ako je **limit = 0**, znači da ograničenje ne postoji.
 
-**Eccedenza**: quota che supera il plafond. Ottenuta con il seguente calcolo: 
-	Eccedenza = Plafond – Importo spesa – quota Plafond già usata
-	Vengono considerati solo valori negativi, che quindi superano il plafond
+**Plafond potrošena kvota**: ako postoje drugi obračuni troškova za isti resurs, istu vrstu troška i isti datum, raspoloživi limit smatra se djelomično iskorištenim (npr. dvije intervencije istoga dana za isti resurs i istu vrstu troška).
 
-**Stato spesa**: indica se la spesa è stata autorizzata/non autorizzata/autorizzata parzialmente/Autorizzata forzatamente
+**Prekoračeni iznos**: dio iznosa koji premašuje limit. Izračunava se prema sljedećoj formuli:  
+	Prekoračenje = Limit – Iznos troška – Već iskorišteni dio limita  
+	U obzir se uzimaju samo negativne vrijednosti, odnosno one koje premašuju limit.
 
-**Data Verifica**: data quando la spesa è stata confermata
+**Status troška**: označava je li trošak odobren / nije odobren / djelomično odobren / prisilno odobren.
 
-**Allegati**: indica se sono presenti allegati per la spesa
+**Datum provjere**: datum kada je trošak potvrđen.
 
-**Tipo Pagamento**: tipologia di pagamento utilizzata per la spesa
+**Prilozi**: označava postoje li privici za trošak.
 
-**Rimborsabile**: indica se la spesa dovrà essere rimborsata nel cedolino paga. Ad es. se la risorsa 	dispone di carta di credito aziendale, questa voce sarà disabilitata
+**Način plaćanja**: način plaćanja korišten za nastali trošak.
 
-**Cumulativa**: indica se la spesa è una quota di una spesa cumulativa (quindi la risorsa potrebbe 	essere diversa rispetto a quella a cui andrà il rimborso)
+**Povrat iznosa**: označava treba li trošak biti refundiran kroz obračunsku listu plaće. Primjerice, ako resurs koristi službenu kreditnu karticu, ova će opcija biti isključena.
 
-**Risorsa**: risorsa per cui è stata sostenuta la spesa
+**Kumulativni trošak**: označava da je trošak dio zbirnog troška (stoga resurs može biti različit od onoga kojem će refundacija biti isplaćena).
 
-**Note**: note inserite per la spesa in questione
+**Resurs**: resurs za kojeg je trošak nastao.
 
-**Documento**: indica il documento di riferimento da cui proviene la spesa 
+**Bilješke**: napomene unesene za predmetni trošak.
 
-**Modificato manualmente**: nel caso di cambio stato forzato rispetto a quanto proposto, o modifiche dell’importo 	di eccedenza, il flag si abilita in automatico
+**Dokument**: označava izvorni dokument iz kojeg trošak potječe.
 
-Nella griglia sarà possibile trovare righe intestate a risorse diverse dalla risorsa principale indicata nella nota spese. 
+**Ručno izmijenjeno**: ako je status prisilno promijenjen u odnosu na predloženi ili je izmijenjen iznos prekoračenja, oznaka se automatski uključuje.
 
-Questo si verifica nel caso di righe di dettaglio delle spese cumulative, dove nel dettaglio ci sono diverse risorse.
-Tutte le righe di dettaglio verranno inserite nella Nota spese inerente alla risorsa che ha effettivamente sostenuto la spesa. Questo al fine di garantire un corretto rimborso nel cedolino paga. L'indicazione invece delle singole risorse, sarà necessaria per il controllo dei specifici plafond.  
+U tablici se mogu nalaziti redci koji se odnose na resurse različite od glavnog resursa navedenog na obračunu troškova.
+To se događa kod detaljnih redaka zbirnih troškova, gdje su u detaljima navedeni različiti resursi.
+Svi detaljni redci bit će uključeni u obračuna troškova resursa koji je stvarno podmirio trošak. Time se osigurava ispravna refundacija kroz obračunsku listu plaće. Podaci o pojedinim resursima i dalje su potrebni radi provjere njihovih pojedinačnih limita.
 
+### Status retka troška
 
-### Stato riga spesa
+Svaki redak troška nalazi se u određenom **statusu**, a dopuštene vrijednosti su:
 
-Ogni riga spesa si trova in uno specifico “Stato”, i valori ammessi sono i seguenti: 
--	**Inserito**
+- **Uneseno**
 
--	**Autorizzata**: stato attribuito se la spesa è configurata in anagrafica risorsa e non supera il plafond
+- **Odobreno**: status se dodjeljuje ako je trošak konfiguriran u šifarniku resursa i ne premašuje odobreni limit.
 
--	**Non Autorizzata**: stato attribuito se la spesa NON è configurata in anagrafica risorsa oppure se la spesa eccede per intero il plafond. Il campo Eccedenza avrà il valore uguale alla spesa
+- **Nije autorizirano**: status se dodjeljuje ako trošak **nije** konfiguriran u šifarniku resursa ili ako u cijelosti premašuje odobreni limit. Polje **Prekoračeni iznos** imat će vrijednost jednaku iznosu troška.
 
--	**Parzialmente Autorizzata**: stato attribuito se la spesa è configurata in anagrafica risorsa ed eccede solo parzialmente il plafond. Il campo Eccedenza sarà modificabile
+- **Djelomično odobreno**: status se dodjeljuje ako je trošak konfiguriran u šifarniku resursa, ali samo djelomično premašuje odobreni limit. Polje **Prekoračeni iznos** može se uređivati.
 
--	**Autorizzata Forzatamente**: nel caso la spesa superi il plafond oppure non sia prevista in anagrafica risorsa, ma si decide l’approvazione forzata. Il campo Eccedenza sarà forzato a 0
+- **Prisilno odobreno**: koristi se kada trošak premašuje limit ili nije predviđen u šifarniku resursa, ali se ipak odluči prisilno odobriti. Polje **Prekoračeni iznos** bit će postavljeno na **0**.
 
-Nel caso di Spesa Parzialmente autorizzata, il campo “Eccedenza” sarà modificabile.
-Questo per permettere di variare la redistribuzione del plafond da utilizzare (ad es. nel caso di più spese dello stesso tipo / stessa risorsa / stesso giorno oppure per aumentare per il plafond per il caso specifico)
-Nel caso di Spesa Autorizzata Forzatamente, il campo “Eccedenza” impostato = 0. 
+U slučaju **Djelomično odobrenog troška**, polje **Prekoračeni iznos** može se uređivati.
+Time je omogućena prilagodba raspodjele raspoloživog limita (primjerice kada postoji više troškova iste vrste za isti resurs i isti dan ili kada je potrebno povećati limit za konkretan slučaj).
+U slučaju **Prisilno odobrenog troška**, polje **Prekoračeni iznos** uvijek će biti postavljeno na **0**.
 
-## Tab Allegati
-La tab è divisa in 3 aree: 
+## Kartica Prilozi
 
-a sinistra è presente l’elenco spese (come nella prima tab) ma con i soli dati essenziali
+Kartica je podijeljena na tri područja:
+- s lijeve strane nalazi se popis troškova (kao na prvoj kartici), ali samo s osnovnim podacima;
+- u sredini se nalazi popis privitaka koji pripadaju odabranom trošku;
+- s desne strane prikazuje se pregled odabranog privitka.
 
-al centro è presente l’elenco degli allegati inerenti alla spesa selezionata
+Na vrhu se nalazi oznaka za filtriranje:
 
-a destra è presente l’anteprima dell’allegato selezionato
+**Prikaži troškove s potrebnim dokazom – bez privitka**
 
-in alto è presente un flag per filtrare: 
-**Visualizza spese con giustificativo Richiesto – senza allegato**
-Verranno mostrate tutte le spese a cui manca l’allegato e la cui configurazione richiede l’allegato obbligatoriamente.
+Prikazat će se svi troškovi kojima nedostaje privitak, a čija konfiguracija zahtijeva obvezno prilaganje dokumentacije.
+Na ovom zaslonu korisnik može dodati nedostajući privitak, koji će biti spremljen te će nakon toga biti vidljiv i u odgovarajućim dokumentima (**Aktivnosti**/**Intervencije**). Način dodavanja jednak je kao i u ostalim područjima sustava – metodom **drag & drop** ili pomoću gumba na alatnoj traci.
+Brisanje obračuna troškova **neće** obrisati privitke; oni će ostati spremljeni u sustavu i povezani s izvornim dokumentom.
 
-Da questa videata l’utente avrà la possibilità di aggiungere l’allegato mancante, che verrà salvato e poi reso visibile anche nei rispettivi documenti (attività/interventi). Le modalità di inserimento sono le stesse come per altre aree, drag&drop oppure bottone da ribbon bar. L'eventuale cancellazione della nota spese, NON comporta la cancellazione degli allegati, che rimarranno a sistema legati al documento specifico. 
+## Kartica Sažeci
 
-## Tab Riepiloghi 
-Nella tab riepiloghi, sono presenti i totali delle spese inserite, con dettagliati gli importi che verranno rimborsati, oppure gli importi che non verranno rimborsati. 
+Na kartici **Sažeci** prikazani su ukupni iznosi unesenih troškova, uz detaljan pregled iznosa koji će biti refundirani te iznosa koji neće biti refundirani.
+Ako je trošak plaćen službenom kreditnom karticom (te je izvorno označen kao **za povrat**), iznos prekoračenja smatrat će se iznosom koji će biti terećen na obračunskoj listi plaće.
+Ako je trošak plaćen vlastitim sredstvima (te je izvorno označen kao **za povrat**), na obračunskoj listi plaće bit će priznat samo iznos do maksimalnog limita.
+Detaljni iznosi dostupni su na kartici **Ukupni iznosi** obračuna troškova resursa generiranog ovom procedurom.
+Na ovoj kartici prikazani su sažeci ukupnih iznosa.
+Ukupni iznosi izračunavaju se na sljedeći način:
 
-Se la spesa è stata pagata con carta di credito aziendale (quindi originariamente marcata come da NON rimborsare), l’importo eccedente verrà considerato da addebitare in busta paga.
-Se la spesa è stata pagata con mezzi propri (quindi originariamente marcata come da rimborsare), l’importo verrà riconosciuto in busta paga solo per il massimale previsto dal plafond.
+- **Ukupan iznos troškova**: ukupni zbroj vrijednosti polja **Iznos** za svaki redak troška.
+- **Ukupan prekoračeni iznos**: ukupni zbroj vrijednosti polja **Prekoračeni iznos** za svaki redak troška.
+- **Ukupno zaduženo na platnoj listi**: iznos terećen na obračunskoj listi plaće = zbroj vrijednosti polja **Prekoračeni iznos** za retke troškova koji imaju:
+    - status **Nije autorizirano** ili **Djelomično odobreno**
+    - **nemaju** uključenu oznaku **Za povrat**
 
-Gli importi in dettaglio saranno visibili nella tab totali della Nota spese risorsa generata dalla procedura. 
-In questa tab sono mostrati i riepiloghi dei totali.
+- **Ukupno nepriznato na obračunu plaće**: iznos koji neće biti priznat na obračunskoj listi plaće = zbroj vrijednosti polja **Prekoračeni iznos** za retke troškova koji imaju:
+    - status **Nije odobreno** ili **Djelomično odobreno**
+    - imaju uključenu oznaku **Za povrat**
 
-I totali sono calcolati come segue: 
--	**Totale spese**: somma totale dei valori del campo “Importo” di ogni riga spesa.  
--	**Totale eccedenze**: somma totale dei valori del campo “Eccedenza” di ogni riga spesa
--	**Totale addebitato in cedolino paga**: importo addebitato in busta paga = somma dei valori presenti in “Eccedenza” delle righe spese che hanno:
-    -   stato “Non autorizzato” oppure “Parzialmente Autorizzato”
-    -   NON hanno attivo il flag “Rimborsabile”
+- **Ukupno iznos za isplatu u obračunu plaće**: iznos koji će biti isplaćen na obračunskoj listi plaće = zbroj vrijednosti polja **Iznos**, umanjen za vrijednost polja **Prekoračeni iznos**, za retke troškova koji imaju:
+    - status **Odobreno** ili **Djelomično odobreno**
+    - imaju uključenu oznaku **Za povrat**
 
+- **Ukupno nepotvrđeni troškovi**:
+  zbroj vrijednosti polja **Iznos** za retke koji imaju status **Uneseno**.
 
--	**Totale non rimborsabile in cedolino paga**: importo non riconosciuto in busta paga = somma dei valori presenti in “Eccedenza” delle righe spese che hanno:
-    -   stato “Non autorizzato” oppure “Parzialmente Autorizzato”
-    -   hanno attivo il flag “Rimborsabile”
+  ## Funkcionalnosti alatne trake
 
--	**Totale rimborsabile in cedolino paga**: importo accreditato in busta paga = somma dei valori presenti in “Importo” al netto dell’importo “Eccedenza” delle righe spese che hanno 
-    -   stato “Autorizzato” oppure “Parzialmente Autorizzato”
-    -   hanno attivo il flag “Rimborsabile”
+Na alatnoj traci dostupni su sljedeći gumbi:
 
--	**Totale spese non validate**: 
-somma dei valori presenti in “Importo” che hanno Stato “Inserito”
+**Učitaj troškove**: pretražuje i učitava troškove u obračun troškova.
 
+**Novi obračun troškova**: stvara novi zapis troška u obračunu troškova.
 
-## Funzionalità nella ribbon bar
+**Obriši redak**: briše odabrane retke troškova koji više nisu potrebni.
 
-Nel ribbon bar ci saranno i bottoni per: 
+**Promijeni status**: omogućuje skupnu promjenu statusa odabranih redaka (dostupno samo korisnicima s odgovarajućim ovlastima).
 
-**Carica spese**: ovvero effettuare la ricerca ed inserimento delle spese nella nota spese
+**Obrada troškova**: otvara prozor za odabir, sličan proceduri **Provjeri obračuna troškova resursa**, koji omogućuje pretraživanje dodatnih troškova i njihovo dodavanje u obračun troškova na kojem se trenutno radi.
 
-**Nuova Spesa**: crea una nuova nota spese 
+**Otvori intervenciju**: ako je dostupno, otvara dokument iz kojeg potječe trošak, odnosno **Intervenciju**.
 
-**Cancella Riga**:  per eliminare le righe di spesa non d’interesse;
-
-**Cambia stato**: per cambiare lo stato massivamente alle righe selezionate (possibile solo per utenti con determinati diritti)
-
-**Evasione spese**: con questo bottone si aprirà un selettore – simile alla procedura di “verifica note spese” che permetterà di ricercare ulteriori spese, ed aggiungerle nella nota spese su cui si sta lavorando;
-
-**Apri intervento**: se presente, permette di aprire il documento da cui proviene la spesa, in questo caso intervento. 
-
-**Apri attività**: se presente, permette di aprire il documento da cui proviene la spesa, in questo caso dichiarazione attività. 
-
-
-
-
-
-
-
- 
+**Otvori aktivnost**: ako je dostupno, otvara dokument iz kojeg potječe trošak, odnosno **Prijavu aktivnosti**.
