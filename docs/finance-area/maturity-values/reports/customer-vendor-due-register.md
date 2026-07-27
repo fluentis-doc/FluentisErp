@@ -67,6 +67,62 @@ AREA **Giorni**: utilizzato solo per la stampa Report di Aging ed irrilevante pe
 
 ![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image04.png)
 
+
+### Possibilità di invio anteprima di stampa per email
+
+E' stata estesa la possibilità di inviare email predefinite (come già avveniva per le anteprima di stampa riguardanti i documenti, ad esempio DDT e Fatture tramite transformation), anche per stampe che prevedono una lista di dati, come un estratto conto o uno scadenziario.
+
+La configurazione che illustriamo di seguito è già stata eseguita standard per la presente stampa  le altre del modulo Partite aperte.
+
+Dato che l’obiettivo dei report citati è quella di essere inviati alla controparte e questa viene identificata dal sottoconto del cliente/fornitore, l’oggetto di riferimento all’interno del quale creare le transformation necessarie è chiaramente il FSLedgerAccount: saranno necessarie due transformation, che di default si dovranno chiamare “ReportEmailTemplate” per gestire l’email e “ReportAttachFileName” per l’attribuzione di un nome specifico al file allegato all’email. Vedremo nel punto successivo che si possono comunque creare transformation anche di nome differente, da chiamare specificandone il codice. 
+
+ReportEmailTemplate: L’utente che esegue la stampa deve avere l’indirizzo email memorizzato in Arm, nelle sue impostazioni utente.
+
+![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image05.png)
+
+ReportAttachFileName:
+
+![](/img/it-it/finance-area/maturity-values/reports/customer-vendor-due-register/image06.png)
+
+<details>
+<summary>
+È stato inserito uno scripting <code>AfterPrint</code> del <code>MainReport</code> di questo tipo (clic per espandere):
+</summary>
+
+```csharp
+private void MainReport_AfterPrint(object sender, System.EventArgs e)
+{
+    Int32 filterAccountId = Convert.ToInt32(GetReport().Parameters["FilterAccountId"].Value);
+
+    if (filterAccountId > 0)
+    {
+        GetReport().SetExportInformation(new ReportExportInformation()
+        {
+            TransformationBusinessObjectName = "Fluentis.FluentisErp.Core.FSLedgerAccount",
+            TransformationBusinessObjectId = filterAccountId
+            // AttachmentFileNameTransformation = "ReportAttachFileName",
+            // MailTransformation = "ReportEmailTemplate"
+        });
+    }
+}
+```
+
+</details>
+
+
+La parte che gestisce l’operazione si chiama ‘SetExportInformation’ che prevede i seguenti parametri:
+
+TransformationBusinessObjectName: obbligatorio, è l’oggetto dal quale leggere le informazioni
+
+TransformationBusinessObjectId: obbligatorio, è l’id specifico dell’oggetto. 
+
+Nel caso del codice evidenziato sopra viene utilizzato il valore del parametro filterAccountId, che Fluentis ora passa (ai report basati sugli oggetti FSMaturityOnDate e FSOffsetAccountingStatement) quando nella form di stampa si imposta uno specifico sottoconto come filtro. Può comunque essere valorizzato con una qualsiasi logica alternativa non standard, anche per report che non ricevono già questo parametro filterAccountId.
+
+AttachmentFileNameTransformation: opzionale, è il nome della transformation che gestirà il nome file (come detto sopra, di default si usa “ReportAttachFileName”)
+
+MailTransformation: opzionale, è il nome della transformation che gestirà l’email (come detto sopra, di default si usa “ReportEmailTemplate”)
+
+
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WhWmjPGfF0Y" title="YouTube video player" frameborder="0" allowfullscreen= "true"></iframe>
