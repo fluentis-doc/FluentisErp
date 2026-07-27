@@ -1,5 +1,5 @@
 ---
-title: Stvaranje zahtjeva ili planiranih intervencija projekta
+title: Kreiranje zahtjeva ili planirane intervencije iz projekta
 sidebar_position: 2
 ---
 
@@ -19,3 +19,11 @@ U području filtra moguće je naznačiti:
 
 Nakon postavljanja filtera, dovoljno je kliknuti na gumb **Traži** na vrpci alatki kako bi se rezultati prikazali u donjoj rešetki. Redovi rezultata prikazuju rezervacije resursa, s pripadajućim značajkama aktivnosti i projekta. Na dnu zaslona nalazi se oznaka **Postavi kao potvrđeno** ako se dokument mora stvoriti već potvrđen, odnosno stvarno planirati. 
 Nakon odabira retka, možete koristiti specifične gumbe na vrpci alatki za izvođenje postupka i stvaranje **Zahtjeva za Intervencijom** ili **Planiranih Intervencija**.
+
+Prioritet prema kojem se određuje **Vrsta zahtjeva za intervenciju** ili **Vrsta planirane intervencije** je sljedeći:
+
+1. Ako je **Vrsta zahtjeva za intervenciju** ili **Vrsta planirane intervencije** definirana u prozoru postupka, ta će se vrijednost koristiti za kreiranje novih dokumenata.
+2. Ako u prozoru postupka nije definirana odgovarajuća vrijednost, koristit će se **Vrsta zahtjeva za intervenciju** ili **Vrsta planirane intervencije** definirana na retku projekta.
+3. Ako vrijednost nije definirana ni na projektu, koristit će se **Vrsta zahtjeva za intervenciju** ili **Vrsta planirane intervencije** definirana u općim parametrima projekta.
+
+Nakon odabira retka moguće je koristiti odgovarajuće gumbe na alatnoj traci za pokretanje postupka i kreiranje **Zahtjeva za intervenciju** ili **Planirane intervencije**.
