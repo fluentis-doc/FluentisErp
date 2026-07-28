@@ -15,11 +15,11 @@ U formi **Zaposlenik**, polje **Korisnik** mora biti popunjeno povezujući ga s 
 
 ![](/img/it-it/project-management/transverse-procedures/image02.png)
 
-Iz modula **Upravljanje Projektima**, *Menadžment Kalendara*, vidimo da je kalendar resursa odgovarajuće unesen:
+Iz modula **Upravljanje Projektima**, *Upravljanje Kalendara*, vidimo da je kalendar resursa odgovarajuće unesen:
 
 ![](/img/it-it/project-management/transverse-procedures/image03.png)
 
-Sljedeći korak je stvaranje resursa u **Upravljanju Projektima**: dodavanjem polja Korisnik, preuzima se povezanost s kreiranim kalendarom koji se nalazi u **Menadžmentu Kalendara**. Na ovoj maski moguće je za svakog zaposlenika odrediti tko su operatori s pravom na kalendar za izmjenu intervencija, kreiranje ili brisanje:
+Sljedeći korak je stvaranje resursa u **Upravljanju Projektima**: dodavanjem polja Korisnik, preuzima se povezanost s kreiranim kalendarom koji se nalazi u **Upravljanju kalendarom**. Na ovoj maski moguće je za svakog zaposlenika odrediti tko su operatori s pravom na kalendar za izmjenu intervencija, kreiranje ili brisanje:
 
 ![](/img/it-it/project-management/transverse-procedures/image04.png)
 
