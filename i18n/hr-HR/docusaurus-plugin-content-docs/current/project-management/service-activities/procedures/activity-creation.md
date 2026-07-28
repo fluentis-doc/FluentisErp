@@ -1,15 +1,20 @@
 ---
-title: Stvaranje Aktivnosti iz Intervencija
+title: Kreiranje aktivnosti iz intervencija
 sidebar_position: 3
 ---
 
-Nakon postavljanja filtara, jednostavno pritisnite **Traži** na vrpci kako biste prikazali intervencije u prikazu.
-U donjem dijelu možete unijeti parametre koji će se koristiti u postupku
+Nakon postavljanja filtara dovoljno je kliknuti **Traži** na alatnoj traci kako bi se intervencije prikazale u tablici.
 
-**Vrsta aktivnosti**: označava vrstu aktivnosti koju treba stvoriti;
+U donjem dijelu moguće je unijeti parametre koje će postupak koristiti ako prethodno nisu definirani u **Parametrima operatera**, **Vrsti intervencija** ili **Parametrima projekta**:
 
-**Resurs**: sadrži resurs za koji treba stvoriti aktivnost;
+**Vrsta aktivnosti**: određuje vrstu aktivnosti koja će se kreirati.
 
-Da biste izvršili postupak, nakon što su parametri postavljeni, jednostavno odaberite redak intervencije u rešetki i kliknuti gumb Kreiranje u vrpci sa alatima. 
-Rezultati postupka su vidljivi na kartici **Poništi**. Na njoj, pritiskom na gumb **Traži** u vrpci sa alatima, prikazuju se izvršene operacije. Odabirom reda korisnika koji je izvršio postupak, donjeg prikaza **Aktivnosti resursa** i **Intervencija** prikazuju detalje operacije. 
-Ako želite izvršiti povrat postupka, odaberite odabrani redak i kliknite **Poništi** na vrpci sa alatima.
+**Resurs**: sadrži resurs za koji će se kreirati aktivnost.
+
+**Forsiraj vrstu aktivnosti**: kada je uključeno, vrijednosti definirane iznad imaju prioritet. Vrijednosti postavljene u šifarnicima i parametrima neće se uzimati u obzir.
+
+Za pokretanje postupka, nakon postavljanja parametara dovoljno je odabrati redak intervencije u tablici i kliknuti gumb **Kreiranje** na alatnoj traci.
+
+Rezultati postupka dostupni su na kartici **Povrat**. Klikom na gumb **Traži** na alatnoj traci prikazuju se izvršene operacije. Odabirom retka korisnika koji je pokrenuo postupak, u donjim tablicama **Aktivnosti resursa** i **Intervencija** prikazuju se detalji izvršene operacije.
+
+Ako želite izvršiti **Povrat** postupka, odaberite željeni redak i kliknite **Povrat** na alatnoj traci.

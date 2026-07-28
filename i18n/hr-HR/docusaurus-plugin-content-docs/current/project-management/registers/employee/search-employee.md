@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Ovaj obrazac omogućuje pretraživanje Zaposlenika prisutnih u bazi podataka.
 
-Omogućuje pretraživanje svih dokumenata s ciljem pregleda, uređivanja i eventualnog brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja filtra i rezultatne mreže.
+Omogućuje pretraživanje svih dokumenata s ciljem pregleda, uređivanja i eventualnog brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja filtra i tablice rezultata.
 
 Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** u traci vrpce kako biste vidjeli rezultate unutar prikaza podataka.
 

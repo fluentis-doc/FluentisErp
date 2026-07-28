@@ -1,57 +1,58 @@
 ---
-title: Stvaranje Intervencija iz Aktivnosti
+title: Kreiranje intervencija iz prijavljenih aktivnosti
 sidebar_position: 4
 ---
 
-Prva kartica, **Intervencije iz prijavljenih aktivnosti** predstavlja područje filtra gdje možete postaviti niz filtara kako biste preciznije pretražili aktivnosti u bazi podataka.
+Prva kartica, **Kreiranje intervencija iz prijavljenih aktivnosti**, predstavlja područje za filtriranje u kojem je moguće postaviti različite filtre kako bi se preciznije pretražile aktivnosti pohranjene u bazi podataka.
 
-Nakon postavljanja filtara, klikom na **Traži** na traci s alatima prikazat će se rezultati u donjem prikazu.
+Nakon postavljanja filtara kliknite **Traži** na alatnoj traci kako bi se rezultati prikazali u tablici.
 
-Specifični gumbi za ovu karticu uključuju:
+Na ovoj kartici dostupni su sljedeći gumbi:
 
-![](/img/neutral/common/select-all.png) Postavi sve kao neisplativa Aktivnost, deaktiviraj zastavicu **Naplativa aktivnost** u svim odabranim redovima aktivnosti u mreži;
+![](/img/neutral/common/select-all.png) **Postavi sve kao naplativu aktivnost**: uključuje oznaku **naplativa aktivnost** na svim odabranim redcima aktivnosti u tablici.
 
-![](/img/neutral/common/select-all.png) Postavi sve kao Prisilno fakturirane Aktivnosti: aktiviraj zastavicu **Naplativa aktivnost** u svim odabranim redovima;
+![](/img/neutral/common/select-all.png) **Postavi sve aktivnosti kao prisilno naplative**: uključuje oznaku **Forsiraj naplativu aktivnost** na svim odabranim redcima.
 
-![](/img/neutral/common/select-all.png) Postavi sve kao Provjereno: postavi polje **Status aktivnosti** na **Provjereno** u svim odabranim redovima;
+![](/img/neutral/common/select-all.png) **Postavi sve u status 'Provjereno (kontrolirano)'**: postavlja polje **Status aktivnosti** na vrijednost **Kontrolirano** za sve odabrane retke.
 
-![](/img/neutral/common/select-all.png) Postavi sve kao Uneseno: postavi polje **Status aktivnosti** na **Umetnuto** u svim odabranim redovima.
+![](/img/neutral/common/select-all.png) **Postavi sve u status 'Umetnuto'**: postavlja polje **Status aktivnosti** na vrijednost **Umetnuto** za sve odabrane retke.
 
-U drugoj kartici, **Parametri**, moguće je unijeti parametre koji će se koristiti u postupku:
+Na drugoj kartici, **Parametri**, moguće je definirati parametre koji će se koristiti tijekom postupka:
 
-**Vrsta intervencije**: sadrži vrstu intervencije koju treba stvoriti;
+**Vrsta intervencije**: određuje vrstu intervencije koja će se kreirati.
 
-**Datum intervencije**: sadrži datum intervencije koju treba stvoriti;
+**Datum intervencije**: određuje datum intervencije koja će se kreirati.
 
-**Vrijeme za plaćanje**:
+**Vrijeme za naplatu**:
 
-U padajućem izborniku **Uredi** moguće je odabrati način zaokruživanja Vremena za plaćanje između:
+U padajućem izborniku **Zaokruživanje** moguće je odabrati način zaokruživanja **Vremena za naplatu**:
 
-**Zaokruži na više 0 minuta, kada je vrijeme manje od 0 minuta**:
+**Zaokruži na više ako je vrijednost veća od 0 minuta**:
 
-**Zaokruži na niže 0 minuta, kada je vrijeme manje od 0 minuta**:
+**Zaokruži na niže ako je vrijednost manja od 0 minuta**:
 
-**Ne zaokruži** (ako je odabrana ova opcija, nije moguće popuniti polje Vrijeme za plaćanje):
+**Bez zaokruživanja** (ako je odabrana ova opcija, polje **Vrijeme za naplatu** neće biti moguće ispuniti):
 
-Padajući izbornik **Grupiraj po** omogućava grupiranje određenih svojstava prema vlastitim zahtjevima: takvo grupiranje bit će vidljivo u stvorenoj intervenciji. Konkretno, moguće je odabrati grupiranje prema Artiklu, Stavki projekta, Računu, Datumu, Zaposleniku i/ili Projektu. 
-Moguće je dodati svojstva za grupiranje pomoću opcije povuci i pusti. 
-Na traci s alatkama postoje neki gumbi koji omogućavaju promjenu pregleda Regrupiraj:
+Padajući izbornik **Grupiraj** omogućuje grupiranje određenih svojstava prema želji korisnika. Ta će grupiranja biti vidljiva na kreiranoj intervenciji. Moguće je grupirati prema **Artiklu**, **Artiklu projekta**, **Kontu**, **Datumu**, **Zaposleniku** i/ili **Projektu**.
 
-![](/img/neutral/common/clear.png) Clear: briše sve grupiranja;
+Svojstva za grupiranje moguće je dodati metodom **drag and drop**.
 
-![](/img/neutral/common/delete.png) Otkaži: briše odabrano grupiranje;
+Na alatnoj traci dostupni su sljedeći gumbi za upravljanje tablicom **Grupiraj**:
 
-![](/img/neutral/common/move-down.png) Premjesti dolje: spušta odabrano grupiranje za jedno mjesto
+![](/img/neutral/common/clear.png) **Izbriši sve**: uklanja sva grupiranja.
 
-![](/img/neutral/common/move-up.png) Premjesti gore: podiže odabrano grupiranje za jedno mjesto.
+![](/img/neutral/common/delete.png) **Otkaži**: uklanja odabrano grupiranje.
 
-Ostali specifični gumbi trake s alatkama uključuju:
+![](/img/neutral/common/move-down.png) **Premjesti dolje**: pomiče odabrano grupiranje za jedno mjesto niže.
 
-![](/img/neutral/common/recalculated.png) Preračunajte vrijeme plaćanja: ponovno izračunava Vrijeme za plaćanje prema postavljenim parametrima;
+![](/img/neutral/common/move-up.png) **Premjesti gore**: pomiče odabrano grupiranje za jedno mjesto više.
 
-![](/img/neutral/common/create.png) Kreiraj intervenciju: stvara intervenciju na temelju odabrane aktivnosti u kartici filtra; ovaj gumb također postoji u prvoj kartici.
+Na alatnoj traci dostupni su i sljedeći gumbi:
 
-U trećoj kartici, **Poništi**, moguće je poništiti izvršene operacije. Pritiskom na **Traži** prikazuju se operacije i korisnici koji su ih izvršili; odabirom reda, u donjim prikazima **Konfiguracija radnog vremena** i povezane intervencije bit će prikazani detalji. 
-Za poništavanje operacije, dovoljno je odabrati odabrani red i pritisnuti **Poništi** na traci s alatkama.
+![](/img/neutral/common/recalculated.png) **Ponovno izračunaj vrijeme za naplatu**: ponovno izračunava **Vrijeme za naplatu** prema definiranim parametrima.
 
+![](/img/neutral/common/create.png) **Kreiraj intervenciju**: kreira intervenciju na temelju aktivnosti odabrane na kartici za filtriranje. Ovaj je gumb dostupan i na prvoj kartici.
 
+Na trećoj kartici, **Povrat**, moguće je poništiti izvršene operacije. Klikom na **Traži** prikazuju se izvršene operacije i korisnici koji su ih pokrenuli. Odabirom retka u donjim tablicama **Aktivnosti po projektu** i **Povezana intervencija** prikazuju se detalji odabrane operacije.
+
+Za poništavanje operacije dovoljno je odabrati željeni redak i kliknuti **Povrat** na alatnoj traci.

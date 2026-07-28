@@ -24,7 +24,7 @@ Da biste stvorili novi kalendar, potrebno je unijeti sljedeće podatke:
 
 **Datum početka/Datum završetka**: sadrži datume početka i završetka odnosa;
 
-U dnjem pregledu moguće je unijeti Operatore i njihova prava pregleda, uređivanja i brisanja kalendara; posebno:
+U donjem pregledu moguće je unijeti Operatore i njihova prava pregleda, uređivanja i brisanja kalendara; posebno:
 
 **Čitanje**: omogućuje odabir između Ništa, Potpuni Detalji (odabrani operater vidi potpune detalje ovog kalendara), Slobodno/Zauzeto (odabrani operater vidi je li korisnik slobodan ili zauzet);
 
