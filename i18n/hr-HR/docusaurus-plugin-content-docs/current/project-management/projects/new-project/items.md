@@ -183,7 +183,7 @@ Na kartici **Resursi** moguće je dodijeliti resurse odabranom retku projekta:
 
 **Datum unosa**: automatski se popunjava datumom dodavanja resursa na projekt.
 
-**Resurs**: sadrži resurs prethodno definiran u odgovarajućem području [Resursi](/docs/project-management/registers/resources-management/new-resource.md).
+**Resurs**: sadrži resurs prethodno definiran u odgovarajućem području [Resursi](/docs/project-management/registers/resources-management/new-resource).
 
 **Centar troška**: automatski se preuzima poslovni centar povezan s resursom, ali ga je moguće promijeniti.
 
