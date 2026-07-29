@@ -132,7 +132,7 @@ Lla data verrà utilizzata anche per la costruzione del Gannt di progetto.
 Nella **tab Risorse** è possibile allocare le risorse per la riga articolo selezionata:
 
 **Data inserimento**: viene copilata con la data di inserimento della risorsa nel progetto;           
-**Risorsa**: contiene la risorsa, precedentemente codificata nell'apposita area [Risorse](/docs/project-management/registers/resources-management/new-resource.md).  ;              
+**Risorsa**: contiene la risorsa, precedentemente codificata nell'apposita area [Risorse](/docs/project-management/registers/resources-management/new-resource).  ;              
 **Centro aziendale**: viene assegnato il centro aziendale collegato alla risorsa, ma è possibile modificarlo;               
 **Unità di misura**: contiene l’unità di misura per la quantificazione del tempo giornaliero della risorsa;                
 **Quantità**: indica le ore giornaliere;             
@@ -218,12 +218,12 @@ Infine aggiorna il campo Percentuale lavoro completato nella tab Pianificazione 
 Nel **Tab Agenti** è possibile indicare l'Agente Principale e gli Agenti collegati alla riga di progetto;  
 
 ### Tab fatturazione
-Nel **Tab Fatturazione** è possibile inserire le rate da fatturare relative al progetto, tramite la procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md).   
+Nel **Tab Fatturazione** è possibile inserire le rate da fatturare relative al progetto, tramite la procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation).   
 Se compilata la Data "Chiuso Forzatamente" nella tab Pianificazione Servizio, le rate non verranno visualizzate nella procedura di creazione fatture. 
 **Priorità**: viene assegnata la sequenza delle rate;  
-**Giorno**: indica il giorno a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);  
-**Mese**: indica il mese a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);  
-**Anno**: indica l'anno a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation.md);  
+**Giorno**: indica il giorno a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation);  
+**Mese**: indica il mese a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation);  
+**Anno**: indica l'anno a cui si riferisce la rata e che verrà utilizzato per i filtri di ricerca nella procedura [Creazione Fatture di vendita](/docs/project-management/projects/procedures/invoice-creation);  
 **Percentuale**: è la percentuale utilizzata per il calcolo del prezzo da inserire in fattura. Se ad es. il prezzo della riga di progetto è 100, e percentuale è impostata a 30, in fattura troveremo il prezzo impostato a 30.  
 **Valore**: in alternativa alla percentuale, è possibile indicare un valore del prezzo da inserire i fattura. Se ad es. il prezzo della riga di progetto è 100, si possono inserire 2 righe con ciascuna il valore 50. In fattura troveremo il prezzo impostato a 50.  
 Si può compilare un solo campo tra Percentuale e Valore, mai insieme. Inoltre non viene effettuato nessun controllo sull'effettiva quadratura tra importo impostato in riga progetto e singole rate.   

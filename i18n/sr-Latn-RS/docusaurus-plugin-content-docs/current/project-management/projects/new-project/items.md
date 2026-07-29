@@ -183,7 +183,7 @@ Na kartici **Resursi** moguće je dodeliti resurse izabranom redu projekta:
 
 **Datum unosa**: automatski se popunjava datumom dodavanja resursa na projekat.
 
-**Resurs**: sadrži resurs prethodno definisan u odgovarajućoj oblasti [Resursi](/docs/project-management/registers/resources-management/new-resource.md).
+**Resurs**: sadrži resurs prethodno definisan u odgovarajućoj oblasti [Resursi](/docs/project-management/registers/resources-management/new-resource).
 
 **Centar troška**: automatski se preuzima poslovni centar povezan sa resursom, ali ga je moguće promeniti.
 
@@ -307,13 +307,13 @@ Na kartici **Agenti (trgovački predstavnici)** moguće je odrediti **Glavnog ag
 
 ### Kartica Fakturisanje
 
-Na kartici **Fakturisanje** moguće je definisati rate za fakturisanje projekta koje će se koristiti u postupku [Kreiranje izlaznih računa](/docs/project-management/projects/procedures/invoice-creation.md).
+Na kartici **Fakturisanje** moguće je definisati rate za fakturisanje projekta koje će se koristiti u postupku [Kreiranje izlaznih računa](/docs/project-management/projects/procedures/invoice-creation).
 Ako je na kartici **Planiranje usluge** popunjeno polje **Prinudno zatvoreno**, rate se neće prikazivati u postupku kreiranja izlaznih računa.
 
 **Prioritet**: određuje redosled rata.
-**Dan**: označava dan na koji se rata odnosi i koristi se kao kriterijum pretrage u postupku [Kreiranje izlaznih računa](/docs/project-management/projects/procedures/invoice-creation.md).
-**Mesec**: označava mesec na koji se rata odnosi i koristi se kao kriterijum pretrage u postupku [Kreiranje izlaznih računa](/docs/project-management/projects/procedures/invoice-creation.md).
-**Godina**: označava godinu na koju se rata odnosi i koristi se kao kriterijum pretrage u postupku [Kreiranje izlaznih računa](/docs/project-management/projects/procedures/invoice-creation.md).
+**Dan**: označava dan na koji se rata odnosi i koristi se kao kriterijum pretrage u postupku [Kreiranje izlaznih računa](/docs/project-management/projects/procedures/invoice-creation).
+**Mesec**: označava mesec na koji se rata odnosi i koristi se kao kriterijum pretrage u postupku [Kreiranje izlaznih računa](/docs/project-management/projects/procedures/invoice-creation).
+**Godina**: označava godinu na koju se rata odnosi i koristi se kao kriterijum pretrage u postupku [Kreiranje izlaznih računa](/docs/project-management/projects/procedures/invoice-creation).
 **Procenat**: procenat koji se koristi za obračun cene koja će biti preneta na račun. Na primer, ako je cena reda projekta **100**, a procenat podešen na **30**, na računu će biti prikazana cena **30**.
 
 **Vrednost**: umesto procenta moguće je uneti direktnu vrednost cene koja će biti preneta na račun. Na primer, ako je cena reda projekta **100**, moguće je uneti dva reda sa vrednošću **50**. Na računu će tada biti prikazana cena **50**.

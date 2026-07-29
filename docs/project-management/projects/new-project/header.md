@@ -5,7 +5,7 @@ sidebar_position: 2
 
 In questa tab possono essere definiti dei dati generali del progetto, come la **Divisa**, le modalità di **Spedizione**, un’eventuale **Data di chiusura**, la **Nazione**. Lo **Stato evasione** diventa necessario per indicare il progetto evaso in altri documenti, mentre le **Annotazioni cliente** riportano alcuni riferimenti per il cliente, come un eventuale progetto collegato o delle note iniziali.
 
-**PM Manager**: Indica la [Risorsa](/docs/project-management/registers/resources-management/new-resource.md) responsabile del progetto in qualità di Project Manager. Viene proposta in automatico dall'anagrafica Cliente (tab Dati Contabili - tab Amministrazione - Responsabile)
+**PM Manager**: Indica la [Risorsa](/docs/project-management/registers/resources-management/new-resource) responsabile del progetto in qualità di Project Manager. Viene proposta in automatico dall'anagrafica Cliente (tab Dati Contabili - tab Amministrazione - Responsabile)
 **Filiale di Riferimento**: Indica la Filiale di Riferimento del cliente proposta in automatico dall'anagrafica Cliente (tab Dati Contabili - tab Amministrazione - Filiale di Riferimento)
 **Budget di Riferimento**: Se nell'area Budget è stato definito un budget specifico per il progetto, è possibile indicarlo. 
 **Centro aziendale**: indica il centro aziendale di riferimento, utilizzato poi nei calcoli di contabilità industriale e nel calcolo costi indiretti nel sal di progetto. 

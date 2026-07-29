@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Na ovoj kartici mogu se definirati opći podaci projekta, kao što su **Valuta**, način **Otpreme**, eventualni **Datum zatvaranja** te **Država**. **Status izvršenja** koristi se za označavanje da je projekt izvršen u drugim dokumentima, dok **Napomene za kupca** sadrže informacije namijenjene kupcu, poput povezanog projekta ili početnih napomena.
 
-**PM menadžer**: označava [Resurs](/docs/project-management/registers/resources-management/new-resource.md) odgovoran za projekt u ulozi voditelja projekta (*Project Manager*). Vrijednost se automatski preuzima iz šifarnika kupaca (kartica **Računovodstveni podaci** → kartica **Administracija** → **Odgovorna osoba**).
+**PM menadžer**: označava [Resurs](/docs/project-management/registers/resources-management/new-resource) odgovoran za projekt u ulozi voditelja projekta (*Project Manager*). Vrijednost se automatski preuzima iz šifarnika kupaca (kartica **Računovodstveni podaci** → kartica **Administracija** → **Odgovorna osoba**).
 
 **Referentna podružnica**: označava referentnu podružnicu kupca koja se automatski preuzima iz šifarnika kupaca (kartica **Računovodstveni podaci** → kartica **Administracija** → **Referentna podružnica**).
 
