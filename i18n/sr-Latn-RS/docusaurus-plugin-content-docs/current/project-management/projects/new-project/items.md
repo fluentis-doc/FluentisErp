@@ -267,7 +267,7 @@ Na kartici **Podaci** dostupna su sledeća polja:
 
 **Projekat / Godina**: omogućava povezivanje reda projekta sa drugim redom projekta.
 
-**CRM kontakt**: omogućava povezivanje reda projekta sa [CRM kontaktom](/docs/crm/home-crm/contacts/new-contact.md).
+**CRM kontakt**: omogućava povezivanje reda projekta sa [CRM kontaktom](/docs/crm/home-crm/contacts/new-contact).
 
 **Tiket**: omogućava povezivanje reda projekta sa Tiketom.
 

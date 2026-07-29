@@ -189,7 +189,7 @@ Nel **Tab Dati** sono presenti:
 **Note**: campo note generico;  
 **Marca**: è possibile associare una Marca se la gestione è prevista nella tabella [Marche](/docs/configurations/tables/logistics/brands).  
 **Commessa/Anno**: è possibile collegare la riga progetto ad un'altra riga progetto.  
-**Contatto CRM**: è possibile collegare la riga progetto ad un [Contatto CRM](/docs/crm/home-crm/contacts/new-contact.md).  
+**Contatto CRM**: è possibile collegare la riga progetto ad un [Contatto CRM](/docs/crm/home-crm/contacts/new-contact).  
 **Tickets**: è possibile collegare la riga progetto ad un Ticket.  
 **Livello di servizio**: è possibile indicare un livello di servizio*  
 **Escludi WBS dal calcolo SAL**: se abilitato, la riga di progetto e TUTTI i documenti collegati a questa riga di progetto , verranno esclusi dalla procedura di calcolo Stato Avanzamento Lavori del progetto, indipendentemente dai codici di Costo o Ricavo configurati.   
