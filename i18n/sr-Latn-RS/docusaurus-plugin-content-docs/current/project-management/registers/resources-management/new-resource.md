@@ -1,37 +1,54 @@
 ---
-title: Novi Resurs
+title: Novi resurs
 sidebar_position: 2
 ---
 
-Na ovom obrascu unose se sve informacije o novom **Resursu**.
+U ovom obrascu unose se svi podaci o novom **resursu**.
 
-**Šifra/Opis**: označava kod resursa s pripadajućim opisom;
+**Šifra/Opis**: označava šifru resursa i pripadajući opis.
 
-**Vrsta resursa**: označava vrstu resursa, obično Ljudski ili Materijalni;
+**Vrsta resursa**: označava vrstu resursa, najčešće **Ljudski** ili **Materijalni**.
 
-**Zaposlenik**: moguće je povezati konto zaposlenika;
+**Zaposleni**: omogućava povezivanje resursa sa zaposlenim.
 
-**Trošak po jedinici/Dostupni mjesečni sati**: označava jediničnu cijenu rada zaposlenika i pripadajuću mjesečnu dostupnost;
+**Jedinični trošak / Dostupni mesečni sati**: prikazuje trošak po jedinici rada zaposlenog i njegovu mesečnu raspoloživost.
 
-**Operater**: moguće je povezati operatora;
+**Operater**: omogućava povezivanje operatera.
 
-**Konto**: moguće je povezati resurs s vanjskim suradnikom;
+**Konto**: omogućava povezivanje resursa sa spoljnim saradnikom.
 
-**Artikl**: moguće je povezati resurs sa šifrom artikla iz šifarnika;
+**Artikal**: omogućava povezivanje resursa sa materijalnim artiklom.
 
-**Katergorija osnovnog sredstva**: moguće je povezati resurs s imovinom;
+**Prethodna šifra osnovnog sredstva**: omogućava povezivanje resursa sa osnovnim sredstvom.
 
-**Tvrtka**: moguće je povezati tvrtku;
+**Kompanija**: omogućava povezivanje kompanije.
 
-**Datum zatvaranja**: moguće je specificirati datum zatvaranja odnosa;
+**Datum isteka važenja**: omogućava definisanje datuma završetka saradnje.
 
-**Napomene**: sadrži eventualne slobodno unesene napomene.
+**Beleške**: sadrži proizvoljno unete beleške.
 
-Postoje specifične kartice:
+Obrazac sadrži i posebne kartice:
 
-**Kartica Kalendara**
+### Kartica Kalendar
 
-Ovdje je moguće povezati specifični [Kalendar](/docs/project-management/registers/calendars-management/calendars/) s resursom.
+Na ovoj kartici moguće je povezati određeni [Kalendar](/docs/project-management/registers/calendars-management/calendars/) sa resursom.
 
-Klikom na traku s karticama ![](/img/neutral/common/detail-propose.png) Predloži detalje, it će moguće upravljati **Radnim danima**. Konkretno, u prikazanom skočnom prozoru mogu se isključiti određeni radni dani i označiti slobodni dani; rezultati će se prikazati u mreži **Radni dani** i uzeti u obzir prethodno unesene radne smjene za resurs.
+Klikom na dugme ![](/img/neutral/common/detail-propose.png) **Predloži detalje** na alatnoj traci moguće je upravljati **Radnim danima**. U prozoru koji se otvori moguće je isključiti određene radne dane ili označiti slobodan dan. Rezultati će biti prikazani u tabeli **Radni dani**, pri čemu će se uzeti u obzir prethodno definisane radne smene za resurs.
 
+U Fluentisu je moguće definisati trošak resursa koji će se koristiti za obračun troškova na redu projekta i prilikom obrade **Stanja napretka projekta (SAL)**.
+
+Trošak se može podesiti direktno u šifarniku resursa kao jedinstvena vrednost koja važi u svim slučajevima ili se može razlikovati prema sledećim kategorijama:
+
+- **Praznici**: koristi se za dane definisane u kalendaru praznika.
+- **Prekovremeni rad**: koristi se za radne dane u kojima je prekoračen dnevni fond sati.
+- **Noćni rad**: koristi se za radne dane čija je smena označena kao **noćna**.
+- **Noćni prekovremeni rad**: koristi se za radne dane čija je smena označena kao **noćna** i u kojima je prekoračeno radno vreme ili dnevni fond sati.
+- **Alternativna smena**: koristi se kada resurs radi u dve različite smene, a jedna od njih treba da se obračunava po drugačijoj tarifi.
+
+Za jednu od ovih stavki moguće je uključiti oznaku **Podrazumevani trošak za neradni dan**. Ova oznaka koristi se u svim slučajevima kada dan aktivnosti ne odgovara nijednom danu iz kalendara praznika niti kalendara radnih dana resursa.
+
+:::note[Primer]
+Subota koja nije definisana ni kao praznik ni kao radni dan u kalendaru resursa može se podesiti ili kao praznik ili kao prekovremeni rad.
+
+Prilikom obračuna troška primeniće se trošak označen kao **podrazumevani**.
+:::

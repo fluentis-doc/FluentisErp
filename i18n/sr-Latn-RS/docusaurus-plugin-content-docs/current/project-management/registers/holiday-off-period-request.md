@@ -1,33 +1,66 @@
 ---
-title: Zahtjev za Godišnji Odmor/Dopust
+title: Zahtev za godišnji odmor / odsustvo
 sidebar_position: 4
 ---
 
-Zahtjev za Godišnji Odmor/Dopust omogućuje korisniku da izravno putem Fluentisa zatraži dane ili sate godišnjeg odmora, dopusta ili bolovanja. Informacije koje su korisnicima potrebne i koje trebaju unijeti su:
+Zahtev za **godišnji odmor / odsustvo** omogućava korisniku da direktno iz Fluentisa zatraži dane ili sate godišnjeg odmora, odsustva ili bolovanja.
 
-**Od datuma/Do datuma**: unosi se vremensko razdoblje u danima i satima za koje se želi zatražiti odmor;
+Podaci koje korisnik treba da unese su:
 
-**Resurs**: predlaže se resurs korisnika koji pristupa Fluentisu; 
+**Od datuma / Do datuma**: određuje period za koji se podnosi zahtev, u danima i satima. Ako je vreme početka i završetka ostavljeno na **00:00**, prilikom generisanja prijave aktivnosti koristiće se vreme početka i završetka definisano u smeni resursa.
 
-**Razlog**: sadrži razlog zahtjeva između Godišnji odmor (Holidays), Bolest (Illness) i Slobodan dan (Day Off);
+**Resurs**: automatski se predlaže resurs prijavljenog korisnika Fluentisa.
 
-**Datum kreiranja:**: datum stvaranja događaja;
+**Razlog**: sadrži listu razloga odsustva definisanih za kompaniju.
 
-**Stvaranje korisnika**: sadrži korisnika koji je kreirao događaj, a predložen je trenutačni korisnik koji pristupa sustavu;
+**Obrađeno**: oznaka koja pokazuje da li je zahtev već obrađen. Može se uključiti ručno ili automatski po završetku postupka pokrenutog dugmetom **Potvrdi period**.
 
-**Menađer**: nije obavezno;
+**Datum kreiranja**: datum kreiranja zahteva.
 
-**Voditelj tima**: obavezno polje, odnosi se na odgovornu osobu za zatraženi resurs;
+**Kreirao**: sadrži korisnika koji je kreirao zahtev; automatski se predlaže prijavljeni korisnik.
 
-**E-mail**: predložena je e-adresa korisnika koji podnosi zahtjev;
+**Menadžer**: lista korisnika iz koje je moguće odabrati rukovodioca resursa; podatak nije obavezan.
 
-**E-mail CC**: adresa e-pošte koja će se dodati u CC u automatskoj e-pošti odobrenja zahtjeva;
+**Rukovodilac**: lista korisnika iz koje je moguće odabrati rukovodioca tima resursa; podatak nije obavezan.
 
-**Predmet**: unosi se opis vrste zahtjeva koji se želi podnijeti (Slobodan dan, Godišnji Odmor ili Bolest);
+**E-mail**: automatski se predlaže e-mail adresa korisnika koji podnosi zahtev.
 
-**Bilješka**: moguće je dodatno opisati zahtjev.
+**E-mail CC**: e-mail adresa koja će biti dodata u CC automatske poruke za odobrenje zahteva. Ako su izabrani rukovodilac tima i/ili menadžer, njihove e-mail adrese takođe će biti dodate u CC.
 
-Zahtjevi se upravljaju putem radnog tijeka: prilikom unosa zahtjev je u statusu **Umetni**; nakon toga, kako bi se zahtjev poslao na odobrenje, podnositelj zahtjeva mora promijeniti status zahtjeva u **Za odobriti**. Na taj način šalje se e-mail: ako je razlog Odmor, e-mail će stići na Voditelja tima naznačenog od strane korisnika kao primatelja, a Aktivnosti će automatski biti u cc-u (bez potrebe za naznačavanjem i Manađera); ako je razlog Slobodan dan ili Bolest, e-mail automatski stiže na Aktivnosti kao primatelja, a Voditelj tima će biti u cc-u (ako je naznačen). Ako je zahtjev odobren, manađer ili voditelj tima mijenjaju status na **Odobreno**.
-Osoba koja potvrdi zahtjev također će automatski stvoriti razdoblje godišnjeg odmora/ dopusta/ bolesti u izvješću o aktivnostima, koristeći funkciju **Razdoblje odobrenja**. Potrebno je navesti WBS projekta i pripadajuću Kategoriju aktivnosti za korištenje.
+**Predmet**: opis zahteva.
 
+**Beleška**: omogućava unos dodatnih detalja zahteva.
 
+**Rezultati**: prikazuje rezultate obrade zahteva putem *workflowa* (npr. potvrđen, otkazan, razlog otkazivanja i sl.).
+
+Na alatnoj traci dostupna su sledeća dugmad:
+
+**Period odobrenja**: klikom na ovo dugme otvara se prozor u kojem je potrebno odabrati referentni projekat, kategoriju aktivnosti i označiti opciju za kreiranje perioda godišnjeg odmora u prijavi aktivnosti na osnovu upravo unetih podataka.
+
+Resursu je moguće poslati obaveštenje putem e-maila.
+
+Po završetku postupka automatski će biti uključena oznaka **Obrađeno**.
+
+Ako su u šifarniku [Razlozi odsustva](/docs/configurations/tables/project-management/missing-reason) definisani **Kategorija aktivnosti** i **WBS projekta**, oni će se automatski predložiti kao podrazumevane vrednosti.
+
+**Povrat perioda**: omogućava brisanje aktivnosti generisanih potvrdom perioda i vraćanje oznake **Obrađeno** u početno stanje.
+
+**Otvori kalendar resursa**: otvara prikaz kalendara u kojem je moguće odabrati više resursa i pregledati postojeće raspoređene aktivnosti.
+
+Mogući scenariji prilikom korišćenja opcije **Period odobrenja** u slučaju preklapanja:
+
+- Zahtev za godišnji odmor već ima uključenu oznaku **Obrađeno**: prikazaće se poruka **"Zahtev je već obrađen. Želite li da nastavite ponovo?"**
+
+  Ako izaberete **Ne**, ceo postupak će biti prekinut.
+
+  Ako izaberete **Da**, ponovo će se kreirati prijave aktivnosti za godišnji odmor i biće prepisane one koje su prethodno generisane ovim zahtevom (ako postoje).
+
+- Zahtev za godišnji odmor nema uključenu oznaku **Obrađeno**, ali u istom periodu već postoje druge prijave aktivnosti:
+
+  **"Aktivnosti se preklapaju: *detalji aktivnosti* - *godišnji odmor*. Želite li da nastavite?"**
+
+  Ako izaberete **Da**, generisaće se sve prijave aktivnosti za traženi period godišnjeg odmora.
+
+  Ako izaberete **Ne**, generisaće se samo prijave aktivnosti za dane u kojima ne postoje druge prijave aktivnosti.
+
+Ako za određeni dan postoji čak i jedna prijava aktivnosti za deo radnog vremena, taj dan će biti preskočen i za njega neće biti evidentiran godišnji odmor.

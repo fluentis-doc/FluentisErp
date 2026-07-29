@@ -3,29 +3,28 @@ title: Novo stanje napretka radova
 sidebar_position: 1
 ---
 
-U ovoj formi moguće je ručno unijeti podatke o novom **Stanju napretka radova** ili bolje reći konzultirati rezultate koji proizlaze iz postupka stvaranja SAL. Ovaj dokument agregira dobit i troškove koji proizlaze iz projekata. Podaci su:
+U ovom obrascu moguće je ručno uneti podatke o novom **Stanju napretka radova** ili, bolje rečeno, pregledati rezultate koji proizlaze iz postupka kreiranja SAL-a. Ovaj dokument objedinjuje dobit i troškove koji proizlaze iz projekata. Podaci su:
 
-**Tip**: sadrži tip napretka; upućuje na tablicu **Vrsta napretka u radu** koja ih identificira sa Šifrom, Opisom i Numeracijom;
+**Tip**: sadrži tip napretka; upućuje na tabelu **Vrsta napretka u radu** koja ih identifikuje pomoću Šifre, Opisa i Numeracije;
 
-**Projekt**: sadrži povezani [Projekt](/docs/project-management/projects/search-projects-intro/) collegato;
+**Projekat**: sadrži povezani [Projekat](/docs/project-management/projects/search-projects-intro/);
 
-**Usporedivo**: označava hoće li se dokument moći uspoređivati u budućnosti;
+**Uporedivo**: označava da li će dokument ubuduće biti moguće upoređivati;
 
 **Prikaz analize**: čini dokument vidljivim u analizama;
 
-**Bilješka**: sadrži eventualne napomene;
+**Beleška**: sadrži eventualne napomene;
 
 **Broj/Datum**: sadrži broj i datum dokumenta;
 
-**Datum potvrde**: sadrži datum potvrde stanja napretka radova;
+**Datum potvrđivanja**: sadrži datum potvrde stanja napretka radova;
 
-**Trošak izvorne količine/Trošak izvorne mjerne jedinice**: označava izvornu količinu i mjerne jedinice troškova projekta;
+**Izvorna količina troškova/Trošak izvorne jedinice mere**: označava izvornu količinu i jedinicu mere troškova projekta;
 
-**Izračunati troškovi količine/Izračunati troškovi mjerna jedinica**: označava izračunatu količinu i mjerne jedinice troškova projekta;
+**Obračunata količina troškova/JM obračuna troškova**: označava obračunatu količinu i jedinicu mere troškova projekta;
 
-**Izvorna količina dobiti/Dobit izvorne mjerne jedinice**: označava izvornu količinu i mjerne jedinice dobiti projekta;
+**Izvorna količina dobiti/Izvorna jedinica mere dobiti**: označava izvornu količinu i jedinicu mere dobiti projekta;
 
-**Izračunata količina dobiti/Izračunata dobit mjerne jedinice**: označava izračunatu količinu i mjerne jedinice dobiti projekta.
+**Obračunata količina dobiti/JM obračuna dobiti**: označava obračunatu količinu i jedinicu mere dobiti projekta.
 
-Zatim postoje još dva pregleda, **Sažeci** i **Detalji**, koje sadrže informacije o pojedinostima projektnih intervencija.
-
+Zatim postoje još dva pregleda, **Sažeci** i **Detalji**, koji sadrže informacije o pojedinostima projektnih intervencija.

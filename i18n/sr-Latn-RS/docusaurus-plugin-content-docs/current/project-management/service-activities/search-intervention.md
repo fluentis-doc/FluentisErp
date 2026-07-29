@@ -1,29 +1,29 @@
 ---
-title: Pretraga Intervencija
+title: Pretraga intervencija
 sidebar_position: 1
 ---
 
-Intervencije se mogu stvarati na različite načine, posebno:
--	ručno;
--	putem Planera;
--	pomoću postupka Stvaranje Intervencija iz Zahtjeva ili Planiranih Intervencija;
--	putem Mobilne Aplikacije.
+Intervencije se mogu kreirati na različite načine, i to:
 
-Omogućuje pretraživanje svih dokumenata radi pregleda, izmjene, brisanja ili unosa novog dokumenta; prozor se sastoji od područja filtra i prikaz podataka.
+- ručno;
+- putem Planera;
+- pomoću postupka Kreiranje intervencija iz Zahteva za intervenciju ili Planiranih intervencija;
+- putem Mobilne aplikacije.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** koji se nalazi na *Ribbon traci* kako biste vidjeli rezultate unutar rezultatne mreže.
+Omogućava pretragu svih dokumenata radi pregleda, izmene, brisanja ili unosa novog dokumenta; prozor se sastoji od oblasti filtera i prikaza podataka.
 
-Za otvaranje pojedinosti o dokumentu, dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u pojedinosti i izmjene) ili na gumb **Prikaži** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti izmjene).
+Nakon podešavanja svih željenih filtera, dovoljno je kliknuti na dugme **Traži** koje se nalazi na *alatnoj traci* kako biste videli rezultate u tabeli rezultata.
 
-Pogledajte također:  
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)  
-Dodavanje novih polja u obrasce za pretraživanje
+Za otvaranje detalja dokumenta, dovoljno je izabrati ga i dvaput kliknuti mišem ili kliknuti na dugme **Izmeni** (omogućava ulazak u detalje i izmene) ili na dugme **Prikaži** (omogućava ulazak u detalje i pregled, ali bez mogućnosti izmene).
 
-Specifični gumbi ove maske su:
+Pogledajte takođe:  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u obrasce za pretragu
 
-![](/img/neutral/common/open.png) Otvori povezanu fakturu: Ako je intervencija fakturirana, otvara povezanu fakturu;
+Specifična dugmad ove maske su:
 
-![](/img/neutral/common/edit.png) Promijeni status: Omogućuje promjenu statusa odabrane intervencije:
+![](/img/neutral/common/open.png) **Otvori povezani račun**: Ako je intervencija fakturisana, otvara povezanu fakturu;
+
+![](/img/neutral/common/edit.png) **Promeni status**: Omogućava promenu statusa izabrane intervencije:
 
 ![](/img/it-it/project-management/intervention/change.png)
-

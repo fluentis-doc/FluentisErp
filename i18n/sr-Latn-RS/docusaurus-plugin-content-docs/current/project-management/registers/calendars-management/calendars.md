@@ -1,22 +1,23 @@
 ---
-title: Upravljanje Kalendarima
+title: Upravljanje kalendarima
 sidebar_position: 1
 ---
 
-**Upravljanje kalendarima** omogućava upravljanje kalendarima resursa. 
+**Upravljanje kalendarima** omogućava upravljanje kalendarima resursa.
 
-Omogućava pretraživanje svih dokumenata radi pregleda, uređivanja, brisanja ili unosa novog dokumenta. Prozor se sastoji od područja filtra i rezultirajuće mreže.
+Omogućava pretragu svih dokumenata radi pregleda, uređivanja, brisanja ili unosa novog dokumenta. Prozor se sastoji od oblasti filtera i tabele rezultata.
 
-Nakon što se postave svi željeni filtri, dovoljno je kliknuti gumb **Traži** u traci s karticama kako biste prikazali rezultate unutar rezultirajuće mreže.
+Nakon što podesite sve željene filtere, dovoljno je kliknuti dugme **Traži** na alatnoj traci kako biste prikazali rezultate u tabeli rezultata.
 
-Za otvaranje pojedinosti o dokumentu dovoljno ga je odabrati i dvaput kliknuti mišem ili pritisnuti gumb **Izmijeni** (omogućuje ulazak u pojedinosti i uređivanje) ili gumb **Prikaži** (omogućuje ulazak u pojedinosti i pregled, ali ne i uređivanje).
+Za otvaranje detalja dokumenta dovoljno je da ga izaberete i dvaput kliknete mišem ili pritisnete dugme **Izmeni** (omogućava ulazak u detalje i uređivanje) ili dugme **Prikaži** (omogućava ulazak u detalje i pregled, ali ne i uređivanje).
 
-Vidi također:  
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)    
-Dodavanje novih polja u obrasce pretraživanja
+Pogledajte i:  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u obrasce za pretragu
 
-U području filtra moguće je postaviti niz filtera kako bi se pretraživali kalendarima na precizniji način. 
-Da biste stvorili novi kalendar, potrebno je unijeti sljedeće podatke:
+U oblasti filtera moguće je postaviti niz filtera kako bi se kalendari pretraživali na precizniji način.
+
+Da biste kreirali novi kalendar, potrebno je uneti sledeće podatke:
 
 **Ime**: sadrži ime resursa;
 
@@ -24,10 +25,10 @@ Da biste stvorili novi kalendar, potrebno je unijeti sljedeće podatke:
 
 **Datum početka/Datum završetka**: sadrži datume početka i završetka odnosa;
 
-U dnjem pregledu moguće je unijeti Operatore i njihova prava pregleda, uređivanja i brisanja kalendara; posebno:
+U donjem prikazu moguće je uneti Operatere i njihova prava pregleda, uređivanja i brisanja kalendara; konkretno:
 
-**Čitanje**: omogućuje odabir između Ništa, Potpuni Detalji (odabrani operater vidi potpune detalje ovog kalendara), Slobodno/Zauzeto (odabrani operater vidi je li korisnik slobodan ili zauzet);
+**Čitanje**: omogućava izbor između Ništa, Potpuni detalji (izabrani operater vidi potpune detalje ovog kalendara), Slobodno/Zauzeto (izabrani operater vidi da li je korisnik slobodan ili zauzet);
 
-**Izmijeni**: omogućuje odabir između Ništa, Stvaranje/Izmjena sve, Stvaranje/Izmjena vlastitih prava uređivanja kalendara;
+**Izmeni**: omogućava izbor između Ništa, Kreiranje/Izmena svih, Kreiranje/Izmena sopstvenih prava za uređivanje kalendara;
 
-**Brisanje/Otkaži:**: omogućuje odabir između Ništa, Opoziv sve, Brisanje vlastitih.
+**Brisanje/Otkaži**: omogućava izbor između Ništa, Opoziv svih, Brisanje sopstvenih.

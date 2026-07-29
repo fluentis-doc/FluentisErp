@@ -1,16 +1,16 @@
 ---
-title: Pretraga Zaposlenika
+title: Pretraga zaposlenih
 sidebar_position: 1
 ---
 
-Ovaj obrazac omogućuje pretraživanje Zaposlenika prisutnih u bazi podataka.
+Ovaj obrazac omogućava pretragu **Zaposlenih** prisutnih u bazi podataka.
 
-Omogućuje pretraživanje svih dokumenata s ciljem pregleda, uređivanja i eventualnog brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja filtra i rezultatne mreže.
+Omogućava pretragu svih dokumenata radi pregleda, uređivanja, eventualnog brisanja ili dodavanja novog dokumenta; prozor se sastoji od oblasti filtera i tabele rezultata.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** u traci vrpce kako biste vidjeli rezultate unutar prikaza podataka.
+Nakon podešavanja svih željenih filtera, dovoljno je kliknuti na dugme **Traži** na alatnoj traci kako biste videli rezultate u prikazu podataka.
 
-Za otvaranje pojedinosti o zaposleniku dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje pristup pojedinostima i uređivanje) ili gumb **Prikaži** (omogućuje pristup pojedinostima i pregled, ali bez mogućnosti uređivanja).
+Za otvaranje detalja zaposlenog dovoljno je da ga izaberete i dvaput kliknete mišem ili kliknete na dugme **Izmeni** (omogućava pristup detaljima i uređivanje) ili na dugme **Prikaži** (omogućava pristup detaljima i pregled, ali bez mogućnosti uređivanja).
 
-Vidi također:  
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)  
-Dodavanje novih polja u obrasce pretraživanja
+Pogledajte i:  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u obrasce za pretragu

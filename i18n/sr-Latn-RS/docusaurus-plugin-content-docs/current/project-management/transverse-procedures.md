@@ -3,28 +3,28 @@ title: Planiranje resursa po kalendaru
 sidebar_position: 9
 ---
 
-Pogledajte i *Konfiguracija Kalendara*.
+Pogledajte i *Konfiguracija kalendara*.
 
-Nakon konfiguracije kalendara, možete nastaviti sa sinkronizacijom kalendara za upotrebu **Upravljanja Projektima** i **Planiranja resursa prema kalendaru**.
+Nakon konfiguracije kalendara možete nastaviti sa sinhronizacijom kalendara za korišćenje **Upravljanja projektima** i **Planiranja resursa po kalendaru**.
 
 ![](/img/it-it/project-management/transverse-procedures/image01.png)
 
 :::note Napomena
-U formi **Zaposlenik**, polje **Korisnik** mora biti popunjeno povezujući ga s korisnikom unesenim u **ARM**:
+U obrascu **Zaposleni**, polje **Korisnik** mora biti popunjeno povezivanjem sa korisnikom unetim u **ARM**:
 :::
 
 ![](/img/it-it/project-management/transverse-procedures/image02.png)
 
-Iz modula **Upravljanje Projektima**, *Menadžment Kalendara*, vidimo da je kalendar resursa odgovarajuće unesen:
+U modulu **Upravljanje projektima**, **Upravljanje kalendarom**, može se videti da je kalendar resursa ispravno unet:
 
 ![](/img/it-it/project-management/transverse-procedures/image03.png)
 
-Sljedeći korak je stvaranje resursa u **Upravljanju Projektima**: dodavanjem polja Korisnik, preuzima se povezanost s kreiranim kalendarom koji se nalazi u **Menadžmentu Kalendara**. Na ovoj maski moguće je za svakog zaposlenika odrediti tko su operatori s pravom na kalendar za izmjenu intervencija, kreiranje ili brisanje:
+Sledeći korak je kreiranje resursa u **Upravljanju projektima**: dodavanjem polja **Korisnik** preuzima se veza sa kreiranim kalendarom koji se nalazi u **Upravljanju kalendarom**. Na ovom obrascu moguće je za svakog zaposlenog odrediti koji operatori imaju pravo pristupa kalendaru radi izmene intervencija, kreiranja ili brisanja:
 
 ![](/img/it-it/project-management/transverse-procedures/image04.png)
 
-Resurs koji ima pravo na kalendare zaposlenika može izravno pristupiti pregledu kalendara putem **Planera**, prikazujući intervencije:
+Resurs koji ima pravo pristupa kalendarima zaposlenih može direktno pristupiti pregledu kalendara putem **Planera**, uz prikaz intervencija:
 
 ![](/img/it-it/project-management/transverse-procedures/image05.png)
 
-Nakon što se planirane intervencije oslobode u **Intervencijama**, resurs će se pronaći u Fluentis i Outlook kalendaru.
+Nakon što se planirane intervencije oslobode u **Intervencijama**, resurs će biti dostupan u Fluentis i Outlook kalendaru.

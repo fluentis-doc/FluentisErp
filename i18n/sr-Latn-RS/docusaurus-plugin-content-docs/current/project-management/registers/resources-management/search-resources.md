@@ -1,18 +1,18 @@
 ---
-title: Pretraživanje Resursa
+title: Pretraga resursa
 sidebar_position: 1
 ---
 
-Pretraživanje **Resursa** omogućuje pretraživanje već unesenih resursa. 
-Ribbon traka ovog obrasca predstavlja izbornik obrasca u pitanju, odnosno područje na kojem možete izvršiti određene radnje. Popis mogućih funkcija prikazan je u nastavku:
+Pretraga **Resursa** omogućava pretragu već unetih resursa.
 
-Ova opcija omogućuje pretraživanje svih dokumenata kako biste ih mogli pregledati, mijenjati ili, po potrebi, izbrisati ili dodati novi dokument. Prozor se sastoji od područja za filtriranje i prikaz podataka.
+Alatna traka ovog obrasca predstavlja meni obrasca, odnosno oblast u kojoj možete izvršavati određene radnje. Lista dostupnih funkcija prikazana je u nastavku:
 
-Nakon što postavite sve željene filtre, dovoljno je kliknuti na gumb **Traži** prisutan na Ribbon traci kako biste vidjeli rezultate unutar prikaza podataka.
+Ova opcija omogućava pretragu svih dokumenata kako biste ih mogli pregledati, menjati ili, po potrebi, obrisati ili dodati novi dokument. Prozor se sastoji od oblasti za filtriranje i prikaza podataka.
 
-Za otvaranje pojedinosti dokumenta, dovoljno ga je odabrati i dvaput kliknuti mišem ili pritisnuti gumb **Izmijeni** (omogućuje ulazak u pojedinosti i uređivanje) ili gumb **Prikaži** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
+Nakon što podesite sve željene filtere, dovoljno je kliknuti na dugme **Traži** na alatnoj traci kako biste videli rezultate u prikazu podataka.
 
-Vidi također:  
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)  
-Dodavanje novih polja u obrasce za pretraživanje
+Za otvaranje detalja dokumenta dovoljno je da ga izaberete i dvaput kliknete mišem ili pritisnete dugme **Izmeni** (omogućava ulazak u detalje i uređivanje) ili dugme **Prikaži** (omogućava ulazak u detalje i pregled, ali bez mogućnosti uređivanja).
 
+Pogledajte i:  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u obrasce za pretragu

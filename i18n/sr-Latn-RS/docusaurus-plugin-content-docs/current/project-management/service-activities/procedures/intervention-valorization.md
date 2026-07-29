@@ -1,19 +1,28 @@
 ---
-title: Procedura Vrednovanja Intervencija
+title: Valorizacija (vrednovanje) intervencija
 sidebar_position: 1
 ---
 
-Ova procedura omogućuje fakturiranje intervencija koje su u statusu **Provjereno**. U području **Filtra** moguće je postaviti različite filtre kako biste preciznije pretražili prisutne intervencije u sustavu.
+Ovaj postupak omogućava fakturisanje intervencija koje imaju status **Kontrolisano**. U oblasti **Filter** moguće je podesiti različite filtere kako bi se preciznije pretražile intervencije u sistemu.
 
-Nakon postavljanja filtara, jednostavno kliknite na Traži u vrpci kako biste prikazali rezultate u donjem prikazu podataka. Da biste valorizirali Intervenciju, jednostavno je odaberite i kliknite na Valoriziraj u vrpci.
-Na odgovarajućoj kartici mogu se postaviti **Parametri** za valorizaciju, uključujući odabir fakture za intervencije različitih godina, tipova ili tečajeva. (Napomena: Osnovni podaci moraju imati zastavicu **Grupiraj po projektu** kako bi se intervencije i računi razdvojili prema projektu.); također možete odabrati hoćete li zadržati plaćanja intervencija ili ih vratiti na osnovne podatke, te da li ćete grupirati rokove dospijeća i unijeti dodatne reference itd.  
-Treba napomenuti da u tablici [Vrsta Intervencija](/docs/configurations/tables/project-management/intervention-type/) morate odabrati odgovarajući Tip računa kako bi postupak uspio.
+Nakon podešavanja filtera dovoljno je kliknuti **Traži** na alatnoj traci kako bi se rezultati prikazali u donjoj tabeli. Za valorizaciju intervencije dovoljno je izabrati je i kliknuti **Valorizuj** na alatnoj traci.
 
-U kartici **Sažeci** možete pregledati rezultate valorizacije pritiskom na **Pretraga valorizacije** u vrpci. Odabirom reda rezultata, moći ćete pregledati **Intervenciju** i generirani **Prodajni račun**.
-Specifični gumbi vrpce uključuju:
+Na kartici **Parametri** moguće je definisati podešavanja valorizacije. Moguće je odabrati unos računa za intervencije različitih godina, vrsta i/ili valuta (podsećamo da šifarnik mora imati uključenu oznaku **Grupiši po projektu** kako bi se intervencije i računi razdvajali prema projektu). Takođe je moguće odabrati da li će se zadržati načini plaćanja definisani na intervencijama ili će se vratiti oni iz šifarnika, grupisati dospeća plaćanja, uneti reference i drugo.
 
-![](/img/neutral/common/preview.png) Pregled rezultata: omogućuje pregled predviđene fakture;
+Napominjemo da je u šifarniku [Vrste intervencija](/docs/configurations/tables/project-management/intervention-type/) potrebno definisati odgovarajuću **Vrstu prometa** kako bi se postupak mogao uspešno izvršiti.
 
-![](/img/neutral/common/execute-restore.png) Povrati valorizaciju: izvršava poništavanje valorizacije;
+Uslovi da bi se intervencija prikazala su sledeći:
 
-![](/img/neutral/common/rollback.png) Povrati račun: izvršava poništavanje pojedinačne odabrane fakture.
+- u vrsti intervencije mora biti definisana **Vrsta prometa**
+- status intervencije mora biti **Kontrolisano** ili **Delimično fakturisano**
+- na svim redovima plana fakturisanja intervencije mora biti naveden **PDV kod**
+
+Na kartici **Sažeci** moguće je pregledati rezultate valorizacije klikom na **Traži** na alatnoj traci. Izborom reda rezultata moguće je pregledati pripadajuću **Intervenciju** i generisani **Izlazni račun**.
+
+Na alatnoj traci dostupna su sledeća dugmad:
+
+![](/img/neutral/common/preview.png) **Pregled rezultata**: prikazuje pregled generisanog računa.
+
+![](/img/neutral/common/execute-restore.png) **Vrati valorizaciju**: izvršava rollback postupka valorizacije.
+
+![](/img/neutral/common/rollback.png) **Vrati račun**: izvršava rollback izabranog računa.

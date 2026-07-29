@@ -1,17 +1,16 @@
 ---
-title: Stvaranje Intervencija iz Zahtjeva ili Planiranih Intervencija
+title: Intervencije iz zahteva za intervenciju ili planiranih intervencija
 sidebar_position: 2
 ---
 
-Ovaj postupak omogućuje stvaranje Intervencija iz Zahtjeva ili Planiranih Intervencija.
+Ovaj postupak omogućava kreiranje **Intervencija** iz **Zahteva za intervenciju** ili **Planiranih intervencija**.
 
-Posebni gumbi na vrpci su:
+Posebna dugmad na alatnoj traci su:
 
-![](/img/neutral/common/select-all.png) Označi sve: odabire sve retke u prikazanim podacima;
+![](/img/neutral/common/select-all.png) **Označi sve**: označava sve redove u prikazanim podacima;
 
-![](/img/neutral/common/deselect.png) Odznači sve: poništava odabir svih redaka u prikazu;
+![](/img/neutral/common/deselect.png) **Poništi izbor svih**: poništava izbor svih redova u prikazu;
 
-![](/img/neutral/common/intervention-search.png) Pretraga intervencija za fakturirati: otvara prozor za Pretraživanje intervencija kako biste provjerili intervencije vezane uz daljnje fakturiranje.
+![](/img/neutral/common/intervention-search.png) **Pretraga intervencija**: otvara prozor za **Pretragu intervencija** radi provere intervencija povezanih sa daljim fakturisanjem.
 
-Nakon što odaberete zahtjeve ili planirane intervencije za valorizaciju, jednostavno pritisnite **Kreiranje** na vrpci kako biste stvorili **Intervenciju**.
-
+Nakon što izaberete zahteve ili planirane intervencije za valorizaciju, dovoljno je da pritisnete **Kreiranje** na alatnoj traci kako biste kreirali **Intervenciju**.

@@ -1,26 +1,26 @@
 ---
-title: WPS Analiza Projekta
+title: WPS/SAL analiza projekta
 sidebar_position: 2
 ---
 
-Ovaj postupak omogućuje analizu stanja napretka radova (WPS). U području filtra moguće je navesti niz filtera kako bi se ciljano pretražili projekti. Nakon što su filteri uneseni, dovoljno je kliknuti na gumb **Traži** u traci s alatkama kako bi se rezultati prikazali u donjoj mreži. Za izvođenje postupka, odaberite redak u mreži i kliknite gumb **WPS Analiza Projekta** u traci s alatkama. Ovo će otvoriti prozor u kojem možete pregledati informacije o napretku radova odabranog projekta.
+Ovaj postupak omogućava analizu stanja napretka radova (WPS). U oblasti filtera moguće je navesti niz filtera kako bi se ciljano pretražili projekti. Nakon što su filteri uneti, dovoljno je kliknuti na dugme **Traži** na alatnoj traci kako bi se rezultati prikazali u donjoj tabeli. Za izvršavanje postupka izaberite red u tabeli i kliknite na dugme **WPS/SAL analiza projekta** na alatnoj traci. Time će se otvoriti prozor u kojem možete pregledati informacije o stanju napretka radova izabranog projekta.
 
-U **kartici Status napretka radova** prikazani su izvršeni WPS-ovi za projekt.Svaki redak sadržavat će jedno [Stanje napretka radova](/docs/project-management/work-project-status/new-work-project-status/), s odgovarajućim Brojem, Datumom, itd. 
-Ako postoji mnogo WPS-ova, moguće ih je grupirati pomoću gumba **Grupe** u traci s alatkama, koji će zatražiti unos Naslova kako bi grupirao odabrane WPS-ove u jednu **grupu**.
+Na **kartici Status napretka radova** prikazuju se izvršeni WPS-ovi za projekat. Svaki red sadržaće jedno [Stanje napretka radova](/docs/project-management/work-project-status/new-work-project-status/), sa odgovarajućim Brojem, Datumom itd.
 
-Na **kartici Sažeci**, koristeći gumbe Proširi i Sažmi u traci s alatkama, moguće je prikazati različite razine projekta s pripadajućim podacima.
+Ako postoji veliki broj WPS-ova, moguće ih je grupisati pomoću dugmeta **Grupe** na alatnoj traci, koje će zatražiti unos Naslova kako bi grupisalo izabrane WPS-ove u jednu **grupu**.
+
+Na **kartici Sažeci**, korišćenjem dugmadi **Proširi** i **Sažmi** na alatnoj traci, moguće je prikazati različite nivoe projekta sa pripadajućim podacima.
 
 ![](/img/it-it/project-management/transverse-procedures/riepilogues.png)
 
-**Proračun projekta**: prikazuje troškove i prihode utvrđene na razini projekta,
+**Proračun projekta**: prikazuje troškove i prihode utvrđene na nivou projekta,
 
-**Vrsta Stanje napretka radova**: prikazuje izvršeni WPS i posebno prikazuje vrstu, broj i datum; postojat će onoliko stupaca ovog tipa koliko je izvršeno WPS-a;
+**Vrsta stanja napretka radova**: prikazuje izvršeni WPS i posebno prikazuje vrstu, broj i datum; postojaće onoliko kolona ovog tipa koliko je izvršeno WPS-ova;
 
-**Trenutni Status Projekta**: sumarno prikazuje sve izvršene WPS-ove;
+**Trenutni status projekta**: zbirno prikazuje sve izvršene WPS-ove;
 
-**Razlika od proračuna**: pokazuje trenutni saldo troškova i prihoda.
+**Razlika od proračuna**: prikazuje trenutno stanje troškova i prihoda.
 
-WPS se može izvesti u Excel pomoću tipke **Izvoz Excela**.
+WPS je moguće izvesti u Excel pomoću dugmeta **Izvoz u Excel**.
 
 ![](/img/it-it/project-management/transverse-procedures/export.png)
-
