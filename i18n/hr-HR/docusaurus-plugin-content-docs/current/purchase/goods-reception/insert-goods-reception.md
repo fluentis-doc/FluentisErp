@@ -1,95 +1,116 @@
 ---
-title: Unos primanja Robe
+title: Novi prijem robe
 sidebar_position: 3
 ---
 
-Putanje za stvaranje novog **Primanja Robe**:
+Obrazac se otvara putem izbornika **Nabava > Prijem robe > Izradite prijem robe** ili iz obrasca za pretraživanje **Prijema robe** klikom na gumb **Novo**.
 
-- idite na **Nabava > Prijem robe > Izradite prijem robe**  
+## *Kako kreirati prijem robe*
 
-- ili putem gumba **Novo** koji se nalazi u obrascu
+<details>
 
+<summary>Kliknite za prikaz osnovnih koraka</summary>
 
-## **1. Obavezni podaci**
+1. **Unesite obvezne podatke**: **Tip** i **Dobavljač**. Polja **Godina**, **Broj** i **Datum unosa** automatski će se popuniti.
 
-**Dobavljač**, koristeći [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unošenje podataka.
+2. **Unesite artikle**: dvostrukim klikom u polje **Šifra artikla** otvara se pomoćni prozor za odabir artikla, koji omogućuje pretraživanje i odabir postojećeg artikla. Svi ostali podaci retka, kao što su **mjerna jedinica**, **količina** i **cijena**, automatski se popunjavaju, ali ih je moguće izmijeniti.
 
-**Tip dokumenta**: predefiniran u *Konfiguracija > Tablice > Nabava > Vrste primanja robe*. Ovo polje određuje raspon numeracije dokumenta koji se unosi i automatski predlaže **Broj** temeljem datuma unosa i posljednjeg unesenog broja;   
-**Broj**: automatski se predlaže prema vrsti, ali se može ručno izmijeniti uvijek poštujući pravilo napretka između datuma i broja;   
-**Datum prijema**: automatski se predlaže trenutni datum, ali se može ručno izmijeniti uvijek poštujući pravilo napretka između datuma i broja.
+   Kao alternativu moguće je odabrati **Vrstu retka** **Artikl bez klase** te ručno unijeti ostale podatke.
 
-## **1. Artikli**
+3. **Po potrebi unesite dodatne informacije** na karticama **Lotovi i serijski brojevi** te **Podaci artikla**.
 
-**Tip linije** pruža mogućnost odabira različitih artikala iz padajućeg izbornika.
+</details>
 
-:::note NAPOMENA 
-Ako se krene izravno s unosom artikla, njegova *klasa*, *kod* i *vrsta reda* - *Kodirani artikl* automatski će biti uneseni.
+## **1. Obvezni podaci**
+
+Za kreiranje zaprimanja robe potrebno je unijeti sljedeće podatke:
+
+- **Dobavljač**: može se odabrati pomoću [pomoći pri unosu](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili unijeti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection).
+- **Tip dokumenta**: unaprijed je definirana u tablici [Vrste zaprimanja robe](/docs/configurations/tables/purchase/goods-receipt-types). Ovo polje određuje raspon numeracije dokumenta te automatski predlaže **Broj** na temelju datuma unosa i posljednjeg dodijeljenog broja.
+- **Broj prijema**: automatski se predlaže prema odabranoj vrsti dokumenta, ali ga je moguće ručno izmijeniti uz poštivanje pravila slijeda između datuma i broja.
+- **Datum prijema**: automatski se predlaže trenutni datum, ali ga je moguće ručno izmijeniti uz poštivanje pravila slijeda između datuma i broja.
+- **Projekt**: nalazi se ispod tablice artikala i predstavlja projekt koji će biti povezan s dokumentom. Odabire se putem pomoći za odabir projekta.
+
+## **2. Artikli**
+
+- **Vrsta retka** omogućuje odabir različitih vrsta artikala iz padajućeg izbornika:
+> - **Kodificirani artikl**: artikli definirani u šifarniku koji se mogu knjižiti u analitičkom računovodstvu i evidentirati u skladištu. <br />
+> - **Besplatni artikl**: obrađuje se kao kodificirani ili nekodificirani artikl u poreznom i skladišnom smislu, ali se zbog toga što je riječ o besplatnom artiklu iskazuje zasebno u sažecima dokumenta. Ovisno o oznaci **Teret PDV-a**, izračunava se hoće li trošak PDV-a besplatnog artikla snositi obveznik ili ne.
+
+:::note Napomena
+Ako se unos započne izravno unosom artikla, njegova **klasa**, **šifra** i **Tip linije** (**Artikl s klasom**) popunit će se automatski.
 :::
-> **Artikl s klasom**: artikli kodirani u općem registru koji se mogu evidentirati u analitičkom računovodstvu i evidentirati u skladištu.   
-> **Artikl bez klase**: opisni artikli koji se mogu evidentirati u analitičkom računovodstvu, ali se ne mogu kretati u skladištu.   
-> **Trošak**: kodirani ili nekodirani artikli koji se razlikuju u sažecima dokumenata; ako je kodirani artikl trošak i ima poreznu relevantnost, bit će zabilježen u skladištu, ako nije kodiran ili nema poreznu relevantnost, neće se zabilježiti u skladištu.   
-> **Opis**: opisne napomene navedene u ispisi dokumenta; ne utječe na računovodstvo i skladište.
 
-**Kod**: odnosi se na *Barkodni kod artikla* unesen u *Artikli > Kartica Barkodni kod*.  
+- **Šifra**: odnosi se na barkod artikla definiran u *Šifarnik artikala > kartica Barkod*.
 
-**Klasa/Kod/Opis artikla**: mogu se unijeti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) ili uz pomoć [pomoćno polje](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) koje će predložiti sve relevantne podatke unesene u Šifarniku artikala.
+- **Klasa / Šifra / Opis artikla**: mogu se unijeti ručno ili pomoću pomoći pri unosu, koja će ponuditi sve podatke definirane u šifarniku artikala. Nakon odabira artikla njegov će se **Opis** automatski preuzeti iz šifarnika. Ako artikl ima definirane **Varijante**, željena se varijanta može odabrati na kartici **Podaci o artiklu**.
 
-Nakon unosa artikla, njegov će *Opis* automatski biti preuzet iz šifarnika. Ako artikl ima *Varijacije*, trebat će odabrati željenu varijantu iz padajućeg izbornika *Varijante*.
+- **Šifra / Varijanta stavke dobavljača**: odnosi se na šifru koju dobavljač koristi za identifikaciju artikla i njegove eventualne varijante. Ovaj se podatak automatski predlaže ako je u šifarniku artikla, na kartici [Preferirani dobavljači](/docs/erp-home/registers/items/create-new-item/), povezan odgovarajući artikl dobavljača.
 
-**Varijante**: ako odabrani artikl ima varijacije, potrebno je odabrati željenu varijantu iz ovog padajućeg izbornika. Odabir varijante koristan je za artikle s ovom posebnom konfiguracijom koji mogu imati različitu cijenu od postavljene standardne cijene. Prema tome, cijena artikla s varijacijama može biti različita od cijene artikla bez varijacija. To eventualno može zahtijevati upravljanje varijacijama artikla u referentnom cjeniku.
+- **Jedinica mjere**: automatski se predlaže osnovna mjerna jedinica artikla, ali ako su u šifarniku definirane alternativne mjerne jedinice, korisnik može odabrati neku od njih.
 
-**Šifra stavke dobavljača**: odnosi se na tablicu *Dobavljačkih artikala*;     
-**Varijanta dobavljačkog artikla**: odnosi se na tablicu *Varijanti dobavljačkih artikala*;      
-**Mjerna jedinica**: predlaže se glavna Mjerna jedinica artikla, ali korisnik ima mogućnost odabrati drugu mjernu jedinicu.   
-**Količina dokumenta**: predstavlja količinu glavne mjern jedinice;   unosi se količina odnosi se na izvršenu narudžbu dobavljača, nije obavezan podatak;     
-**Primljena količina**: predstavlja stvarno primljenu količinu;     
-**Alternativna mjerna jedinica**: predlaže se alternativna mjerna jedinica prisutna u kartici Alternativne mjere Općeg registra artikala s postavljenom zastavicom Default;   
-**Alternativna količina**: predlaže se vrijednost povezana s alternativnom mjernom jedinicom, izračunata množeći ili dijeleći upravnu količinu (u odnosu na glavnu mjerne jedinice) s faktorom konverzije postavljenim u Šifarnik artikala > kartica Alternativne mjere;   
-**Cijena**: predstavlja cijenu prisutnu u narudžbi dobavljača, ako je red primanja isporučio red narudžbe dobavljača, ili zadnji trošak općeg registra artikala;   
-**Opcija**: obvezni podatak koji odgovara tablici Opcija osnovne specifikacije;   
-**Skladište**: skladište za primanje robe, preuzima se iz narudžbe dobavljača ako red primanja isporučuje red narudžbe dobavljača ili ga može [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unijeti korisnik;   
-**Predložak**: uzrok primanja robe, preuzima se iz narudžbe dobavljača ako red primanja isporučuje red narudžbe dobavljača ili ga može [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unijeti korisnik;   
-**Referenca narudžbe**: ako je red stvoren isporukom reda narudžbe dobavljača, naveden je broj isporučene narudžbe;     
-**Lokacija**: ako uzrok ima zadanu lokaciju, predložena je ta lokacija, inače se može [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) unijeti ako se skladište upravlja lokacijama.
+- **Količina dokumenta**: predstavlja količinu u osnovnoj mjernoj jedinici. Upisuje se količina iz izvršene narudžbe dobavljaču, ali unos nije obvezan.
 
-#### Posebni gumbi 
+- **Primljena količina**: predstavlja stvarno zaprimljenu količinu.
 
-> **Izvršavanje iz narudžbe**: omogućuje stvaranje primanja robe izvršavanjem redova iz narudžbe dobavljača pomoću postupka [Izvršavanje iz narudžbi dobavljača](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note).
+- **Cijena**: predstavlja **cijenu** iz narudžbe dobavljaču, ako je redak zaprimanja nastao izvršenjem retka narudžbe, odnosno **posljednji trošak** iz šifarnika artikala.
 
-> **Upravljanje pakiranjem**: omogućuje otvaranje upravljanja pakiranjem koje će se koristiti u kupovinskom dokumentu. Gumb postaje aktivan ako je dokument spremljen, ali ne i učitan. Klikom na ovaj gumb otvara se odgovarajući obrazac gdje se može unijeti količina, odabrati redak i izvršiti prijenos odabranog pakiranja u redove artikala pritiskom na gumb **Izvrši**. Na ovom obrascu prikazani su artikli koji su uneseni kao Vrsta: Pakiranje i koji se nalaze u tablici **Pakiranja za napraviti**.
+- **Referenca naloga**: ako je redak nastao izvršenjem retka narudžbe dobavljaču, prikazuje se broj izvršene narudžbe.
 
-### 2.1 Lotovi
-
-Prikazani su lotovi koji se moraju uvesti u skladište i koji su povezani s artiklom u Šifarnik artikala > kartica [Lotovi i serijski brojevi](/docs/erp-home/registers/items/create-new-item) ili se mogu ručno unijeti.
-
-#### Poseban gumb 
-
-> **Izbriši lot**: omogućuje brisanje odabranog reda lota.
-
-### 2.2 Podaci artikla
-
-Unutar ove kartice prikazuju se/unose dodatne informacije vezane uz artikl.
-
-- **Artikl**: prikazuje artikl odabran u gornjem pregledu.   
-
-- **Varijanta**: u ovom polju moguće je odabrati varijantu artikla među onima koje su prethodno definirane u kartici [Varijante](/docs/erp-home/registers/items/create-new-item) u matičnim podacima artikla. Ako su u cjeniku definirane različite cijene i/ili popusti za pojedine varijante, oni će se automatski ažurirati prilikom odabira druge varijante artikla.  
-
-- **Skladište i predložak**: omogućuje unos skladišta i pripadajućeg predloška koji će se koristiti za knjiženje zaprimanja povezanih artikala na skladište. Ako je redak artikla preuzet iz narudžbe dobavljaču, automatski će se predložiti skladište i predložak uneseni u narudžbi; u suprotnom se mogu ručno unijeti za svaki redak artikla. Ako polja nisu popunjena, prilikom knjiženja prijema robe koristit će se vrijednosti definirane u parametrima narudžbi dobavljača, u kartici [Zaprimanje].(/docs/configurations/parameters/purchase/purchase-orders-parameters). 
-
-- **Projekt**: predstavlja projekt koji se povezuje s dokumentom. Ako je projekt unesen u zaglavlju dokumenta, automatski će se prenijeti na sve retke artikala; alternativno, može se odabrati putem odgovarajuće pomoći za odabir projekata.
-
-- **Alternativna mjerna jedinica / alternativna količina**: ako je u [matičnim podacima artikla] (/docs/erp-home/registers/items/create-new-item) definirana alternativna mjerna jedinica s oznakom *Zadano* te je u parametrima narudžbi dobavljača aktivirana oznaka *Automatski prijedlog alternativne mjerne jedinice*, te će se vrijednosti automatski predložiti prilikom unosa artikla.
-
-### 2.3 Analitika
-
-**Izbriši profitne centre**: omogućuje brisanje odabranog reda centra dobiti.
+- **Lokacija**: ako je za predložak definirana zadana lokacija, ona će se automatski predložiti. U suprotnom se može unijeti [ručno](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection), ako skladište podržava upravljanje lokacijama.
 
 #### Posebni gumbi
 
-> **Izbriši centar troška**: omogućuje brisanje odabranog reda centra troškova;   
-> **Izbriši profitne centre**: omogućuje brisanje odabranog reda centra profita.
+> **Izuzimanje iz narudžbe**: omogućuje kreiranje zaprimanja robe izvršenjem redaka narudžbe dobavljaču putem postupka [Izvršenje narudžbi dobavljačima](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note).
+>
+> **Upravljanje ambalažom**: otvara upravljanje povratnom ambalažom korištenom u dokumentu nabave. Gumb postaje aktivan nakon spremanja dokumenta, ali prije njegova knjiženja.
+> Klikom na ovaj gumb otvara se odgovarajući obrazac u kojem je moguće unijeti količinu, odabrati redak te klikom na gumb **Izvrši** prenijeti odabranu ambalažu u retke artikala. U ovom se obrascu prikazuju artikli definirani s vrstom **Ambalaža** koji se nalaze u tablici [Povratna ambalaža](/docs/configurations/tables/logistics/package-to-be-returned).
 
+### 2.1 Lotovi
 
-### 2.4 Dodatni podaci
+U dvije tablice moguće je unijeti lotove i serijske brojeve koji će biti zaprimljeni u skladište.
 
-Prikazuje popis **Dodatnih podataka** povezanih s artiklom, s mogućnošću dodavanja novih dodatnih podataka koji su korisni samo za taj dokument, uz mogućnost odabira, putem odgovarajuće oznake, koji dodatni podaci će se ispisati.
+Ako za artikl nije uključeno upravljanje [Lotovima i serijskim brojevima](/docs/erp-home/registers/items/create-new-item), ova će kartica biti onemogućena.
+
+#### Posebni gumb
+
+> **Izbriši lotove**: briše odabrani redak lota.
+
+### 2.2 Podaci artikla
+
+Na ovoj kartici prikazuju se i unose dodatni podaci o artiklu.
+
+- **Artikl**: prikazuje artikl odabran u gornjoj tablici.
+
+- **Varijanta**: u ovom je polju moguće odabrati jednu od varijanti artikla definiranih na kartici [Varijante](/docs/erp-home/registers/items/create-new-item) u šifarniku artikla. Ako su u cjeniku definirane različite cijene i/ili popusti za pojedine varijante, oni će se automatski ažurirati nakon odabira druge varijante.
+
+- **Skladište i predložak**: omogućuje odabir skladišta i predloška koji će se koristiti za skladišno knjiženje artikla. Ako je redak artikla preuzet iz narudžbe dobavljaču, automatski će se predložiti skladište i predložak definirani u narudžbi. U suprotnom ih je moguće ručno odrediti za svaki pojedini redak artikla.
+
+:::tip Zapamtite
+
+Ako polja **Skladište** i **Predložak** nisu popunjena, prilikom knjiženja zaprimanja robe koristit će se vrijednosti definirane u **Parametri narudžbi dobavljačima** > kartica [Knjiženje](/docs/configurations/parameters/purchase/purchase-orders-parameters).
+
+:::
+
+- **Projekt**: predstavlja projekt koji će biti povezan s dokumentom. Ako je projekt odabran u zaglavlju dokumenta, automatski će se prenijeti na sve retke artikala. U suprotnom se može odabrati putem pomoći za odabir projekta.
+
+- **Alternativna mjerna jedinica / Alternativna količina**: ako je u [šifarniku artikla](/docs/erp-home/registers/items/create-new-item) definirana alternativna mjerna jedinica s oznakom **Zadano** te je u **Parametri narudžbi dobavljačima** uključena oznaka **Automatski prijedlog alternativne mjerne jedinice**, ove će se vrijednosti automatski predložiti prilikom unosa artikla.
+
+### 2.3 Analitika
+
+Može sadržavati podatke o centrima troška i profitnim centrima na koje se raspoređuju vrijednosti artikala.
+Ti se podaci mogu unijeti ručno ili automatski (ako su centri troška odnosno profitni centri prethodno definirani u **šifarniku kontakata**, **šifarniku artikala** ili **kontnom planu**).
+
+#### Posebni gumbi
+
+import DeleteCostCenter from './../../import/buttons/delete-cc.md'
+import DeleteProfitCenter from './../../import/buttons/delete-pc.md'
+
+> <DeleteCostCenter />
+> <DeleteProfitCenter />
+
+### 2.4 Extra Data
+
+import DocItemExtraData from './../../import/sections/doc-item-extradata.md'
+
+<DocItemExtraData />
