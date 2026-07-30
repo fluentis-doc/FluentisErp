@@ -672,11 +672,11 @@
     "description": "The label for category Tables in sidebar production"
   },
   "sidebar.purchase.category.DDT di acquisto": {
-    "message": "Otpremnica dobavljača",
+    "message": "Primka",
     "description": "The label for category DDT di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Inserimento DDT di Acquisto": {
-    "message": "Unos otpremnica dobavljača",
+    "message": "Unos primke",
     "description": "The label for category Inserimento DDT di Acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Procedure testata": {
@@ -696,7 +696,7 @@
     "description": "The label for category Registrazione DDT di acquisto in Magazzino in sidebar purchase"
   },
   "sidebar.purchase.category.Purchase Delivery Notes Accounting": {
-    "message": "Knjiženje otpremnica dobavljača",
+    "message": "Knjiženje primke",
     "description": "The label for category Purchase Delivery Notes Accounting in sidebar purchase"
   },
   "sidebar.purchase.category.Fatture di acquisto": {
@@ -1604,7 +1604,7 @@
     "description": "The label for category Helpdesk in sidebar crm"
   },
   "sidebar.purchase.category.Richiesta di offerta": {
-    "message": "Zahtjev za ponudu",
+    "message": "Upit za ponudu",
     "description": "The label for category Richiesta di offerta in sidebar purchase"
   },
   "sidebar.purchase.category.Listini fornitori": {
