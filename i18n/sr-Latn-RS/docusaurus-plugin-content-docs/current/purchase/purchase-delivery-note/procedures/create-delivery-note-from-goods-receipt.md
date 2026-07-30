@@ -1,30 +1,35 @@
 ---
-title: Izrada primke iz prijema robe
+title: Kreiranje primke iz prijema robe
 sidebar_position: 2
 keywords:
-- DDT
+- Primka
 - Prijem robe
 ---
 
-Gore navedeni je postupak koji se otvara preko puta **Nabava > Primka > Procedure > Kreiraj primku iz prijema robe**.
+Postupak se pokreće putem menija **Nabavka > Primka > Procedure > Kreiranje primke iz prijema robe**.
 
-### Filtriranje 
+### Filteri
 
-Nudi mogućnost postavljanja filtera kako bi se pronašla zaprimanja, a zatim ih odabrala za kasniju izradu primke.
+Omogućavaju unos kriterijuma za pretragu prijema robe, njihov izbor i kreiranje primke.
 
-**Otpremnica/Primka br. / Datum**: obavezna polja koja omogućuju specificiranje broja i datuma dokumenta koji će se generirati postupkom.
+> **Broj / Datum dokumenta**: omogućavaju određivanje broja i datuma primke koja će biti kreirana ovim postupkom.
 
-### Parametri 
+### Parametar
 
-Na ovoj kartici je korisniku omogućeno konfiguriranje parametara za izradu dokumenta.
+*Obavezni podaci*:
 
-Obavezna polja uključuju: Tip primke, [Stopa PDV-a](/docs/configurations/tables/finance/vat-rates) i Vrsta prometa nabave.
+- **Tip primke**: određuje tip dokumenta koji će biti korišćen za kreiranje primke.
+- **PDV**: određuje [Stopu PDV-a](/docs/configurations/tables/finance/vat-rates) koja će biti upisana na redove artikala u primci.
+- **Tip prometa nabavke**: određuje se za redove artikala u primci.
 
+*Neobavezni podaci*:
 
-### Povrat 
+> **Preračunaj centre troška/profita**: određuje da li će se prilikom kreiranja primke ponovo obračunati centri troška i profita.
 
-Nudi mogućnost pretraživanja, pregleda i poništavanja provedenih operacija.
+### Povrat
 
-:::note SPECIFIČNOSTI 
-Svaka linija u gornjem gridu (koji sadrži broj, datum i korisnika koji je stvorio otpremnicu) odgovara jednoj ili više linija u donjim pregledima *Otpremnica broj* i *Prijem robe*. U ovim dvama pregledima, dvostrukim klikom na odgovarajući redak, korisnik može pregledati upravo stvorenu primku ili zaprimanje.
-:::
+Omogućava pretragu, pregled i poništavanje izvršenih operacija.
+
+Za poništavanje operacije dovoljno je u gornjoj tabeli izabrati red koji odgovara primci koju želite obrisati i kliknuti dugme **Povrat** na alatnoj traci.
+
+Svakom redu u gornjoj tabeli (koja prikazuje broj, datum i korisnika koji je kreirao primku) odgovara jedan ili više redova u donjim tabelama **Otpremnica/Primka** i **Prijem robe**. Dvostrukim klikom na željeni red u tim tabelama korisnik može otvoriti upravo kreiranu primku ili prijem robe iz kojeg je primka generisana.

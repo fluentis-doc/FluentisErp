@@ -1,22 +1,27 @@
 ---
-title: Formula ažuriranja politike cijene/popusta
+title: Formule za ažuriranje politika cena/popusta
 sidebar_position: 2
 ---
 
-Na ovoj formi moguće je povezati pravila između dokumenata kupovine i prodaje kako bi se automatski mijenjala cijena artikala kada dobavljač pošalje novi katalog. 
-U prvom pregledu nalaze se **Šifra** i **Opis** formule.      
-U drugom pregledu su navedeni dokumenti porijekla, dokumenti odredišta i formule. Moguće je primijeniti do 5 operacija za isti redak. Razmatraju se samo stupci s sadržajem, prazni stupci neće biti ažurirani niti uzeti u obzir kao izvor promjene. Korisnik stoga treba ispuniti samo stupce koji ga zanimaju za porijeklo, odredište, operaciju i vrijednost operacije. Pogledajmo stupce druge mreže.    
-**Vrsta odredišta prodajnog cjenika**: sadrži Tip cjenika prodaje primatelja promjene, kada će se primijeniti formula prisutna u ovom retku;       
-**Konto/Podkonto /opis odredišta prodajnih cjenika**: sadrži prilagođen cjenik prodaje primatelja promjene;            
-**Vrsta odredišta kupovnog cjenika**: sadrži Tip cjenika dobavljača primatelja promjene;         
-**Konto/Podkonto/opis odredišta kupovnog cjenika**: sadrži prilagođen cjenik nabave primatelja promjene;            
-**Vrsta prodajnog cjenika**: sadrži Tip cjenika prodaje podrijetla na koju će se primijeniti operacija;       
-**Konto/Podkonto/opis izvora kupca**: sadrži prilagođen cjenik  klijenta koja se smatra porijeklom;        
-**Vrsta cjenika dobavljača**: sadrži Tip cjenika dobavljača porijekla;  
-**Konto/Podkonto /opis dobavljača**: sadrži prilagođen cjenik dobavljača koja se smatra porijeklom;          
-**Izvor troškova skladišta**: ovaj se podatak mora popuniti ako se želi smatrati porijeklom prosječna, zadnja ili standardna cijena artikla;        
-**Operand N**: na dokument koji se smatra porijeklom primijenit će se odabrana operacija u ovom padajućem izborniku među  +, -, *, / o %;          
-**Vrijednost N**: u ovom se polju može unijeti ručna vrijednost koja će se primijeniti prema odabranom operativnom postupku;           
-**Vrijednost svojstva N**: u ovom polju moguće je unijeti polje koje treba zbrojiti/oduzeti itd. prema odabranom operativnom postupku; ovo polje isključuje prethodno: zbroj/oduzimanje/dijeljenje itd. može biti ručna vrijednost ili vrijednost drugog polja; dvostruki klik u ovom polju otvara navigator objekta iz kojeg se može odabrati svojstvo koje će se smatrati faktorom operacije; zadnje dvije linije navigatora objekta su oznake **Dodana Vrijednost** i **Dodani Postotak**, koje služe za prenošenje tih vrijednosti iz dobavljačke liste;             
-**Prenjeti popust**: ova oznaka prenosi popuste iz odabrane liste na odredišni dokument;       
-**Prenjeti popust od preferiranog dobavljača**: ova oznaka prenosi popust s liste preferiranih dobavljača prema zadanim postavkama.
+U ovom obrascu moguće je definisati pravila povezivanja između dokumenata nabavke i prodaje kako bi se cene artikala u cenovnicima automatski ažurirale kada dobavljač dostavi novi katalog.
+
+U prvoj tabeli prikazane su **Šifra** i **Opis** formula.
+
+U drugoj tabeli potrebno je definisati izvorne dokumente, odredišne dokumente i formule. Za svaki red moguće je primeniti do pet operacija. U obzir se uzimaju samo kolone koje sadrže vrednosti, dok će prazne kolone biti zanemarene i neće se koristiti kao izvor podataka za ažuriranje. Korisnik zato treba da popuni samo kolone koje su mu potrebne za definisanje izvora, odredišta, operanda i vrednosti operanda.
+
+Objašnjenje kolona druge tabele:
+
+- **Vrsta odredišta prodajnog cenovnika**: sadrži vrstu prodajnog cenovnika na koju će biti primenjena formula definisana u ovom redu.
+- **Opis odredišta prodajnog cenovnika**: sadrži šifarnik kupca kojem će biti dodeljen prilagođeni cenovnik koji će biti ažuriran.
+- **Vrsta odredišta cenovnika dobavljača**: sadrži vrstu dobavljačkog cenovnika koji će biti ažuriran.
+- **Opis odredišta cenovnika dobavljača**: sadrži šifarnik dobavljača kojem će biti dodeljen cenovnik koji će biti ažuriran.
+- **Vrsta prodajnog cenovnika**: sadrži vrstu izvornog prodajnog cenovnika na koji će biti primenjen izabrani **Operand**.
+- **Opis izvora kupca**: sadrži prilagođeni cenovnik koji će se koristiti kao izvor.
+- **Vrsta cenovnika dobavljača**: sadrži vrstu izvornog dobavljačkog cenovnika.
+- **Opis dobavljača**: sadrži prilagođeni dobavljački cenovnik koji će se koristiti kao izvor.
+- **Izvorni trošak skladišta**: ovo polje popunjava se ako se kao izvor želi koristiti **prosečni**, **poslednji** ili **standardni trošak** artikla.
+- **Operand N**: na dokument izabran kao **Izvor** biće primenjena operacija izabrana u ovom padajućem meniju (**+**, **-**, **\***, **/** ili **%**).
+- **Vrednost N**: omogućava unos ručne vrednosti koja će biti primenjena prema izabranom operandu.
+- **Vrednost svojstva N**: omogućava izbor polja na koje će biti primenjen izabrani operand. Ovo polje isključuje prethodno jer se operacija (sabiranje, oduzimanje, deljenje itd.) može izvršiti ili sa ručno unetom vrednošću ili sa vrednošću drugog polja. Dvostrukim klikom otvara se **Navigator objekata**, u kojem je moguće izabrati svojstvo koje će se koristiti kao vrednost operacije. Prve dve stavke u Navigatoru objekata su oznake **AddedValue** i **AddedPercentage**, koje služe za preuzimanje tih vrednosti iz dobavljačkog cenovnika.
+- **Prenošenje popusta**: ako je ova oznaka uključena, u odredišni dokument prenose se popusti iz izabranog cenovnika. Prilikom kreiranja novog prodajnog cenovnika postupkom **Napredno kreiranje cenovnika** primeniće se i popusti definisani u **Definiciji politika popusta** izvornog dokumenta.
+- **Prenošenje popusta od preferiranog dobavljača**: ako je ova oznaka uključena, preuzima se popust iz cenovnika podrazumevanog preferiranog dobavljača.

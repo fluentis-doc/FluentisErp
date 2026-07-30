@@ -1,12 +1,21 @@
 ---
-title: Pretraživanje upita za ponudu
+title: Pretraga upita za ponudu
 sidebar_position: 2
 ---
 
-Obrazac se nalazi na putanji  **Nabava > Pretraživanje upita za ponudu**.
+Obrazac se nalazi u meniju **Nabavka > Upit za ponudu**. Za objašnjenje funkcionalnosti zajedničkih svim dokumentima nabavke pogledajte odeljak [Nabavka](/docs/purchase/purchases-intro).
 
-Omogućuje pretraživanje svih dokumenata s ciljem pregleda, uređivanja, i eventualnog brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja za filtriranje i mreže rezultata.
+U oblasti filtera moguće je izabrati prikaz *otvorenih* i/ili *zatvorenih* zahteva za ponudom, kao i prikaz *svih verzija* ili samo poslednje verzije svakog zahteva za ponudom.
 
-Nakon postavljanja svih željenih filtara, jednostavno kliknite na gumb Pretraži u *Ribbon* traci kako biste prikazali rezultate unutar mreže rezultata.
+Iznad tabele sa rezultatima i polja filtera nalaze se *ploče (oznake)* koje omogućavaju brzo filtriranje sledećih vrsta upita za ponudu:
 
-Za otvaranje pojedinosti o dokumentu, dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb Uredi (omogućuje ulazak u pojedinosti i uređivanje) ili na gumb Prikaz (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
+> **Uspešno potvrđeno**: potvrđeni upiti za ponudu koji još nisu zatvoreni.  
+> **U toku**: potvrđeni upiti za ponudu pretvoreni u narudžbinu koja još nije izvršena ili povezani sa Zahtevom za nabavku koji je već pretvoren u narudžbinu.  
+> **Uspešno zatvoreno**: potvrđeni, zatvoreni upiti za ponudu pretvoreni u već izvršenu narudžbinu (ili povezani sa Zahtevom za nabavku koji je već pretvoren u narudžbinu).  
+> **Čeka potvrdu**: upiti za ponudu koji još nisu potvrđeni, nisu zatvoreni i nisu povezani sa Zahtevom za nabavku koji je već pretvoren u narudžbinu.  
+> **Nepotvrđeno**: upiti za ponudu koji nisu potvrđeni i nisu povezani sa Zahtevom za nabavku koji je već pretvoren u narudžbinu.  
+> **Isteklo**: upiti za ponudu kojima je istekao period važenja i koji nisu povezani sa Zahtevom za nabavku koji je već pretvoren u narudžbinu.
+
+#### Specifično dugme
+
+> **Nova verzija**: omogućava kreiranje nove verzije izabranog zahteva za ponudom. Ova funkcionalnost omogućava čuvanje istorije prethodnih verzija ponude.

@@ -6,46 +6,64 @@ keywords:
 - Skladište
 ---
 
-Omogućuje izvođenje/ponovno izvođenje automatskog knjiženja artikala prisutnih na primci u skladište.
+Postupak se pokreće putem menija **Nabavka > Primke > Procedure > Zaduženje skladišta primkom** i omogućava izvršavanje ili poništavanje knjiženja artikala iz primke u skladište.
 
-Postupak se pokreće putem puta **Nabava > Primke > Procedure > Zaduženje skladišta Primkom**. 
+:::
+Primku je moguće proknjižiti u skladište i pomoću dugmeta [**Automatsko zaduženje skladišta**](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders) unutar samog dokumenta.
+:::
 
-### Filteri
+:::
+Ako dokument sadrži **fiktivne artikle**, postupak će uzeti u obzir **tip nabavke** definisan u MRP parametrima artikla:
 
-Omogućuje unos filtara za pretraživanje primki, njihovo odabiranje i zatim knjiženje u skladištu.
+- artikli tipa **Nabavka** neće biti uključeni u skladišno knjiženje;
+- artikli tipa **Proizvodnja** ili **Podizvođač** biće proknjiženi u skladište zajedno sa prvim nivoom sastavnice.
+:::
 
-**Datum zapisa zalihe**: omogućuje specificiranje datuma koji se odnosi na knjiženje u skladištu, ako taj datum već nije postavljen u Parametri *[Parametri otpremnice](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters) > kartica Utovar* (točnije, zastavica aktivna na *Stvori knjiženje s datumom dokumenta*).
+### Filter
 
-*Posebni gumbi*:
+Omogućava unos kriterijuma za pretragu primki, njihov izbor i knjiženje u skladište.
 
-> **Traži**: omogućuje pretraživanje otpremnice za registraciju u skladištu.   
-> **Zapis**: omogućuje izvođenje knjiženja odabranih primki u skladištu, na temelju algoritama utovara i parametara unesenih u sljedećoj kartici *Parametri*.
+- **Datum zapisa zalihe**: omogućava određivanje datuma skladišnog knjiženja.
 
+:::
+Ako je u [Parametrima nabavne primke](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters), na kartici **Utovar**, uključena oznaka **Kreiraj zapis sa datumom dokumenta**, skladišno knjiženje će uvek biti izvršeno sa datumom dokumenta, bez obzira na vrednost polja **Datum skladišnog knjiženja** unetu u ovom obrascu.
+
+Ako navedena oznaka nije uključena, koristiće se **Datum zapisa** ručno unet u zaglavlju primke.
+
+Ako **Datum zapisa** nije popunjen, skladišno knjiženje biće kreirano sa datumom unetim u polje **Datum skladišnog knjiženja** u ovom obrascu.
+:::
+
+*Specifična dugmad*:
+
+> **Traži**: pretražuje primke koje je potrebno proknjižiti u skladište.  
+> **Zapis**: izvršava skladišno knjiženje izabranih primki iz gornje tabele.
 
 ### Parametri
 
-Ako retci primka nemaju skladište i predložak za utovar, putem ovog prozora korisnik može specificirati način postupanja s iznimkama za redove artikala.
+Ako neki redovi artikala u primci nemaju definisano skladište i predložak za knjiženje, u ovom obrascu korisnik može izabrati način obrade tih izuzetaka.
 
-Dostupne opcije su:
+Dostupne su sledeće mogućnosti:
 
-- **Nemoj knjižiti primku u cijelosti**: ne dopušta djelomično utovarivanje dokumenta; 
+- **Nemoj knjižiti primku u celosti**: ne dozvoljava delimično knjiženje dokumenta;
+- **Ignoriši stavke bez skladišta i predloška**: omogućava delimično knjiženje dokumenta;
+- **Prihvati kao skladište i predložak sledeće podatke**: omogućava potpuno knjiženje dokumenta. Za sve artikle u izabranim primkama koji nemaju definisano skladište i predložak primeniće se vrednosti unete u polja **Skladište** i **Predložak**.
 
-- **Ignoriraj stavke bez skladišta i predloška**: dopušta djelomično utovarivanje dokumenta; 
+:::
+Ako je u [Parametrima nabavne primke](/docs/configurations/parameters/purchase/purchase-delivery-note-parameters), na kartici **Utovar**, uključena oznaka **Prioritet predloška skladišta i istovara**, uvek će se koristiti **Skladište** i **Predložak** definisani u parametrima, zanemarujući vrednosti unete za pojedine redove artikala u primci.
+:::
 
-- **Prihvati kao skladište i predložak slijedeće podatke**: osigurava potpuno utovarivanje dokumenta. Za sve artikle pronađene bez skladišta i uzroka u odabranim primljenicama, postavlja odmah nakon toga unesene podatke u polja *Skladište* i *Uzrok*.
+*Specifično dugme*
 
-*Poseban gumb*
+> **Sačuvaj parametre**: čuva postavljene parametre knjiženja.
 
-> **Spremi parametre**: omogućuje spremanje postavljenih parametara za registraciju.
+### Sažetak
 
-### Sažetak 
+Na ovoj kartici korisnik može pretraživati, pregledati i poništavati izvršena skladišna knjiženja, kako ona sprovedena ovim postupkom, tako i ona izvršena direktno iz dokumenta pomoću dugmeta **Automatsko zaduženje**.
 
-Na ovoj kartici korisnik ima mogućnost pretraživanja, prikazivanja i poništavanja izvedenih knjiženja koje zadovoljavaju određene uvjete brisanja skladišnih registracija.
+Podaci u donjim tabelama, **Otpremnica/Primka** i **Zapis**, odnose se na skladišno knjiženje izabrano u gornjoj tabeli (nakon primene filtera). U obe tabele moguće je dvostrukim klikom na red otvoriti primku ili pripadajuće skladišno knjiženje.
 
+*Specifična dugmad*:
 
-Podaci u donjim pregledima, **Primki** i **Knjiženja**, odnose se na odabrano knjiženje utovara u gornjem pregledu (nakon filtriranja podataka). Osim toga, u tim posljednjim dvjema pregledima moguće je prikazati primljenu robu i njezino knjiženje u skladištu (dvostruki klik na redak).
-
-*Posebni gumbi*:
-> **Pretraga**: za pretraživanje utovarenih primki. Rezultat ovog postupka prikazuje se u pregledima (tablicama niže).    
-> **Izbriši zapise**: za brisanje cijelog odabranog knjiženja utovara s svim njezinim pojedinostima prikazanim u dvjema donjim pregledima.    
-> **Izbriši otpremnicu**: za poništavanje utovara odabranog dokumenta u knjiženju. Ova će operacija također poništiti skladišno knjiženje ako odgovara samo jednoj primki ili ažurirati njene podatke ako odgovara više primki.
+> **Traži**: pretražuje proknjižene primke. Rezultati pretrage prikazuju se u tabelama rezultata.  
+> **Obriši zapise**: poništava celo izabrano skladišno knjiženje.  
+> **Obriši otpremnicu/primku**: uklanja skladišno knjiženje izabrane primke iz izabranog knjiženja. Ako se skladišno knjiženje odnosi samo na jednu primku, biće u potpunosti poništeno. Ako se odnosi na više primki, njegovi podaci će biti odgovarajuće ažurirani.
