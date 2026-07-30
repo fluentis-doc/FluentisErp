@@ -1,34 +1,32 @@
 ---
-title: Izrada primke iz narudžbe
+title: Izuzimanje iz narudžbe
 sidebar_position: 3
 keywords:
 - Primka
-- Narudžba
+- Narudžbe
 ---
 
-Obrada dostavnica za kupnju iz narudžbi omogućuje obradu artikala iz narudžbi s automatskim generiranjem otpremnica za kupnju grupiranih po dobavljaču te njihovim knjiženjem u skladištu.
-
-Procedura se otvara putem putanje **Nabava > Primke > Procedure > Izuzimanje iz narudžbe**
+Postupak se pokreće putem izbornika **Nabava > Primke > Procedure > Izuzimanje iz narudžbe**, tj. kreiranje primki iz narudžbi, te omogućuje izvršenje artikala iz narudžbi uz automatsko kreiranje primki grupiranih po dobavljaču.
 
 *Posebni gumbi*
 
-> **Traži**: omogućuje pretraživanje artikala prema unesenim filterima;  
-> **Premještaj**: omogućuje prijenos odabranih artikala;  
-> **Označi sve**: omogućuje označavanje svih artikala u rezultatima;   
-> **Odznači sve**: omogućuje poništavanje označavanja svih artikala u rezultatima.   
+> **Traži**: pretražuje artikle prema filtrima unesenima u gornjem dijelu obrasca.  
+> **Premještaj**: prenosi odabrane artikle.  
+> **Označi sve**: označava sve artikle u tablici rezultata.  
+> **Odznači sve**: uklanja oznaku sa svih artikala u tablici rezultata.
 
-*Postupak* za izradu otpremnice i knjiženje u skladištu:  
-- unesite željene filtre u odjeljku *Filter* i kliknite na gumb **Traži**. U rezultatima će se prikazati jedan redak za svaki isprintani, potvrđeni i neobrađeni ili djelomično obrađeni artikl-narudžba;  
-- odaberite željeni artikl stavljanjem oznake u stupcu **Označi**;  
-- unesite količinu za obradu u stupcu **Količina za izvršenje** za odabrani artikl. Ako se količina ne unese, aplikacija će ponuditi vrijednost unesenu u stupcu **Količina**;  
-- obavite obradu pomoću gumba **Premještaj**;  
-- potvrdite ili odbijte promjene u otpremnici u poruci koju pokreće aplikacija: 
-   - ako odaberete **Ne**, postupak automatski izvršava knjiženje u skladištu i stvara otpremnicu, preuzimajući sve podatke prisutne za artikl i, kao rezultat, uvjeti kupnje za artikl bit će primijenjeni na dostavnicu;
-   - ako odaberete **Da**, postupak otvara odjeljak artikala u dostavnici za kupnju kako biste:
+*Postupak*:
 
-    > 1. izmijenili podatke;  
-    > 2. potvrdili promjene pomoću gumba **Potvrdi**;  
-    > 3. promijenili i sljedeći artikl u otpremnici (ako je odabrano više artikala za izmjenu);  
-    > 4. zatvorili obrazac. Postupak stvara otpremnicu i automatski izvršava knjiženje u skladištu s upravo izmijenjenim podacima.
+- u odjeljku **Filtri** unesite željene kriterije i kliknite gumb **Traži**. U tablici rezultata prikazat će se po jedan redak za svaki artikl iz ispisanih, potvrđenih i neizvršenih ili djelomično izvršenih narudžbi;
+- odaberite željene retke artikala uključivanjem oznake u stupcu **Označi**;
+- za odabrani artikl unesite **Količinu za izvršenje** u istoimenom stupcu. Ako količina nije unesena, aplikacija će automatski predložiti vrijednost iz stupca **Preostala količina**;
+- izvršite prijenos klikom na gumb **Premještaj**;
+- u poruci aplikacije odaberite želite li izmijeniti kreirane primke:
+  - odabirom **Ne** postupak će kreirati primku preuzimajući sve podatke i uvjete nabave iz narudžbe za izvršene artikle;
+  - odabirom **Da** otvorit će se upravo kreirana primka kako bi se po potrebi mogla izmijeniti.
 
-Obje operacije mogu se poništiti pomoću postupka [Zaduženje skladišta Primkom](/docs/purchase/purchase-delivery-note/procedures/load-delivery-notes-on-warehouse). 
+:::note Zapamtite
+
+Izvršenje narudžbi dobavljaču unutar primke moguće je izvršiti i pomoću gumba [**Izuzimanje iz narudžbe**](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) izravno unutar primke.
+
+:::
