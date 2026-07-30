@@ -4,13 +4,13 @@ sidebar_position: 2
 description: Primka
 ---
 
-Obrazac se otvara putem putanje **Nabava > Primke > Pretraga primki**.
+Obrazac se otvara putem putanje **Nabava > Primke > Primka**.
 
 Omogućuje pretraživanje svih dokumenata kako bi ih se moglo pregledati, urediti, eventualno izbrisati ili dodati novi dokument. Prozor se sastoji od područja za filtriranje i mreže rezultata.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Pretraga** prisutan u *ribbon traci* kako biste vidjeli rezultate unutar mreže rezultata.
+Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** prisutan u *ribbon traci* kako biste vidjeli rezultate unutar mreže rezultata.
 
-Za otvaranje pojedinosti dokumenta, dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **Uredi** (omogućuje ulazak u pojedinosti i uređivanje) ili na gumb **Pregled** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
+Za otvaranje pojedinosti dokumenta, dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u pojedinosti i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
 
 *Vidi također*:    
 [Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)          
@@ -32,8 +32,8 @@ Dodavanje novih polja u obrasce pretraživanja
 
 
 *Postupak*:
-> 1. Odaberite dokument za poništavanje i kliknite na gumb **Storno**. Aplikacija će otvoriti pop-up prozor sa svim redovima artikla iz izvornog dokumenta.   
-> 2. Unesite u ovaj obrazac: **Tip storno dokumenta** koji želite stvoriti i, za svaki artikl, navedite **Količinu za stornirati**, **Predložak storniranja** i aktivirajte opciju **Storno**.
+> 1. Odaberite dokument za poništavanje i kliknite na gumb **Storno**. Aplikacija će otvoriti *pop-up* prozor sa svim redovima artikla iz izvornog dokumenta.   
+> 2. Unesite u ovaj obrazac: **Tip storno dokumenta** koji želite stvoriti i, za svaki artikl, navedite **Količinu za storniranje**, **Predložak storniranja** i aktivirajte opciju **Poništiti**.
 > 3. Kliknite **OK** za potvrdu operacije.  
 
 Povezanost između storno dokumenta i izvornog dokumenta mora se ručno unijeti u **Zaglavlje** novog dokumenta.
