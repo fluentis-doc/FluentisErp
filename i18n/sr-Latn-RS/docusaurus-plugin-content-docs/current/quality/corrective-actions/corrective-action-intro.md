@@ -3,32 +3,30 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Korektivne mjere su mjere koje se poduzimaju za rješavanje problema ili odstupanja u procesima i sprječavanje njihovog ponavljanja. Provode se nakon identificiranja problema, analize uzroka i implementacije promjena za poboljšanje budućih performansi. Bitne su za održavanje i poboljšanje kvalitete i učinkovitosti poslovnih procesa.   
+Korektivne mere predstavljaju aktivnosti koje se preduzimaju radi rešavanja problema ili odstupanja u procesima i sprečavanja njihovog ponavljanja. Sprovode se nakon identifikacije problema, analize uzroka i implementacije promena radi unapređenja budućih performansi. Važne su za održavanje i unapređenje kvaliteta i efikasnosti poslovnih procesa.
 
-
-## Upravljani dokumenti
+## Dokumenti kojima se upravlja
 
 import Link from '@docusaurus/Link';
 
 <div className="cardContainer">
     <div className="card">
-###     <Link to="/docs/quality/corrective-actions/corrective-action-management">Korektivne radnje</Link>
-        <p>Upravljane informacije su: Vrsta radnje, Godina, Broj i datum, Sektor i područje koje je uključeno, Osoba ili funkcija tvrtke odgovorna za dokument, opis Nesukladnosti ili neusklađene situacije (čak i potencijalne), predložena radnja, Informacije o odobrenju radnje: datum i tko ju je odobrio, Informacije o blokiranju radnje: datum i tko ju je blokirao, Uzroci koji su doveli do nesukladnosti, Procjena potrebe za poduzimanjem radnje kako bi se izbjeglo ponavljanje nesukladnosti, očekivani datum zatvaranja, Informacije o zatvaranju upravljanja radnjom: datum i tko ju je zatvorio, podaci koji se odnose na revizijski trag, Ukupni, očekivani i stvarni troškovi radnje.</p>
-        <p>U odjeljcima u nastavku može se upravljati: Provjerama koje će se provesti u sljedećoj reviziji kako bi se procijenila učinkovitost poduzetih radnji s elementima koje treba provjeriti i ukupnim ishodom; Referencama na dokumente koji su mogli pokrenuti radnju.</p>
-        <p>Ako se očekuje da će radnja trajati dulje vrijeme, ako je posebno složena ili uključuje više vještina, može se podijeliti u više radnih programa. To su stvarne korektivne radnje koje mogu uključivati: predloženu radnju, elemente koji će se procijeniti, očekivane i stvarne datume i troškove, osobu ili funkciju tvrtke odgovornu za program, ciljeve koje treba postići, informacije o tome kako provjeriti učinkovitost, informacije o zatvaranju upravljanja programom: datum i tko ga je zatvorio, informacije o provjeri učinkovitosti programa: datum i tko ga je provjerio te ishod.</p>
-        <p>Za svaki radni program moguće je kreirati dodatnu Korektivnu Radnju.</p>
-        <p>Izvještavanje je standardno dostupno za: *Lista korektivnih radnji*.</p>
+###     <Link to="/docs/quality/corrective-actions/corrective-action-management">Korektivne mere</Link>
+        <p>Podaci kojima se upravlja obuhvataju: Tip mere, Godinu, Broj i datum, Sektor i oblast na koje se mera odnosi, Osobu ili funkciju preduzeća odgovornu za dokument, opis Neusklađenosti ili neusklađene situacije (čak i potencijalne), predloženu meru, podatke o odobrenju mere: datum i ko ju je odobrio, podatke o blokiranju mere: datum i ko ju je blokirao, uzroke koji su doveli do neusklađenosti, procenu potrebe za sprovođenjem mere kako bi se sprečilo ponavljanje neusklađenosti, očekivani datum zatvaranja, podatke o zatvaranju upravljanja merom: datum i ko ju je zatvorio, podatke revizijskog traga, kao i ukupne, planirane i stvarne troškove mere.</p>
+        <p>U narednim odeljcima moguće je upravljati: proverama koje će biti sprovedene tokom sledeće revizije radi procene efikasnosti sprovedenih mera, sa elementima koje treba proveriti i ukupnim ishodom; kao i referencama na dokumente koji su mogli pokrenuti meru.</p>
+        <p>Ako se očekuje da će mera trajati duže vreme, ako je naročito složena ili zahteva više različitih kompetencija, može se podeliti na više radnih programa. To su stvarne korektivne mere koje mogu obuhvatati: predloženu meru, elemente koji će se procenjivati, planirane i stvarne datume i troškove, osobu ili funkciju preduzeća odgovornu za program, ciljeve koje treba ostvariti, informacije o načinu provere efikasnosti, podatke o zatvaranju upravljanja programom: datum i ko ga je zatvorio, kao i podatke o proveri efikasnosti programa: datum, ko je izvršio proveru i rezultat.</p>
+        <p>Za svaki radni program moguće je kreirati dodatnu Korektivnu meru.</p>
+        <p>Standardno je dostupan izveštaj: <i>Lista korektivnih mera</i>.</p>
     </div>
 </div>
 
+## Za početak korišćenja
 
-## Za početak korištenja 
+**Korektivne mere**:
+- potrebno je definisati [*Tipove korektivnih mera*](/docs/configurations/tables/quality/corrective-actions/corrective-action-type) i povezanu *Numeraciju*
+- radi lakšeg upravljanja *Korektivnim merama* potrebno je podesiti [*Parametre korektivnih mera*](/docs/configurations/parameters/quality/corrective-actions)
+- potrebno je uneti novu [*Korektivnu meru*](/docs/quality/corrective-actions/corrective-action-management)
 
-**Korektivne radnje**:
-- mora se definirati [*Vrste korektivne radnje*](/docs/configurations/tables/quality/corrective-actions/corrective-action-type) i povezana *Numeracija*   
-- kako bi se olakšalo upravljanje *korektivnim radnjama*, postaviti [*Parametre korektivnih radnji*](/docs/configurations/parameters/quality/corrective-actions)   
-- morate se unijeti nova [*Korektivna radnja*](/docs/quality/corrective-actions/corrective-action-management)   
+## Veze sa drugim modulima
 
-
-## Veze s drugim modulima
-Iz modula [*Reklamacije i Nesukladnosti*](/docs/quality/claims-and-non-compliance/claim-and-non-compliance-intro), a posebno iz upravljanja: [*Reklamacijama*](/docs/quality/claims-and-non-compliance/claims/claim) i [*Nesukladnostima*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance) je moguće generirati *Korektivne radnje*.   
+Iz modula [*Reklamacije i Neusklađenosti*](/docs/quality/claims-and-non-compliance/claim-and-non-compliance-intro), odnosno iz upravljanja [*Reklamacijama*](/docs/quality/claims-and-non-compliance/claims/claim) i [*Neusklađenostima*](/docs/quality/claims-and-non-compliance/non-compliances/non-compliance), moguće je generisati *Korektivne mere*.

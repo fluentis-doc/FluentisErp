@@ -1,158 +1,158 @@
 ---
-title: Dokumenti vanjskog podrijetla
+title: Dokumenti spoljnog porekla
 sidebar_position: 2
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Dokumenti vanjskog podrijetla > Novi dokument vanjskog podrijetla** ili se može pokrenuti iz **Pretraživanja vanjskih izvornih dokumenata**.  
-
+Upravljanje se nalazi na putanji **Kvalitet > Dokumenti spoljnog porekla > Novi dokument spoljnog porekla** ili se može pokrenuti iz **Pretrage dokumenata spoljnog porekla**.
 
 :::important Čemu služi
-Upravljanje dokumentima vanjskog podrijetla (iz vanjskih izvora) omogućuje katalogizaciju, upravljanje izdanjima/revizijama i njihovu distribuciju (i u papirnatom i u elektroničkom obliku) odjelima tvrtke zainteresiranima za pregled takvih dokumenata.  
+Upravljanje dokumentima spoljnog porekla (iz spoljnih izvora) omogućava katalogizaciju, upravljanje izdanjima/revizijama i njihovu distribuciju (u papirnom i elektronskom obliku) organizacionim jedinicama preduzeća koje imaju potrebu za pregledom takvih dokumenata.
 
+Primeri dokumenata spoljnog porekla koji se mogu katalogizovati:
 
-Evo nekoliko primjera dokumenata vanjskog podrijetla koji se mogu katalogizirati:
-> *Priručnici za uporabu i održavanje strojeva i opreme*
+> *Priručnici za upotrebu i održavanje mašina i opreme*
 > *Propisi*
 > *Zakoni*
-> *Časopis sa specifikacijama*
+> *Časopisi sa specifikacijama*
 
-Informacije o tome gdje su pohranjeni originali i mogućnost prilaganja elektroničkih kopija omogućuju njihovu trenutnu sljedivost i konzultaciju jednostavnim klikom miša.
+Informacije o mestu čuvanja originala i mogućnost prilaganja elektronskih kopija omogućavaju njihovu trenutnu sledljivost i pregled jednim klikom miša.
 
-Sljedeća izvješća dostupna su standardno:
-> **Dokumenti u privitku**: Pregled priloženog dokumenta u kartici *Prilozi*.
-> **Dokumenti priloženi dokumentu**: Pregled dokumenata priloženih sustavu *Upravljanje dokumentima*.  
+Standardno su dostupni sledeći izveštaji:
+
+> **Priloženi dokumenti**: pregled priloženih dokumenata na kartici *Prilozi*.
+> **Dokumenti priloženi dokumentu**: pregled dokumenata priloženih sistemu *Upravljanje dokumentima*.
 :::
 
+## Kontrolna dugmad
 
-## Kontrolne tipke
+### ![](/img/neutral/common/save.png) Sačuvaj
 
-
-### ![](/img/neutral/common/save.png) Spremi
-
-Pritiskom na ovu tipku spremaju se sve promijenjene informacije prikazanog *dokumenta vanjskog podrijetla*.   
-
+Pritiskom na ovo dugme biće sačuvane sve izmenjene informacije prikazanog *Dokumenta spoljnog porekla*.
 
 ### ![](/img/neutral/common/duplicate.png) Dupliciraj
 
-Prikazani *Dokument* može se duplicirati u novi *Dokument*. Jednostavno se pritisne tipka **Dupliciraj**.  
-Pojavit će se upit:
-> **Kategorija**: ovo je *Vanjska kategorija dokumenta* novog *Dokumenta* (obavezno).
-> **Šifra**: ovo je šifra novog *Dokumenta* (obavezno).
-> **Izdanje/Revizija**: ovo je Izdanje i revizija novog *Dokumenta*.
-> **Naslov**: ovo je *Naslov* *Dokumenta* (obavezno).   
+Prikazani *Dokument* može se duplicirati u novi *Dokument*. Dovoljno je pritisnuti dugme **Dupliciraj**.
 
-Nakon toga se pritisne tipka **OK** ili tipka **Poništi** ako se želi nastaviti ili odustati od aktivnosti dupliciranja.  
-Po završetku obrade novi *Dokument vanjskog podrijetla* se prikaže.  
+Prikazaće se zahtev za unos sledećih podataka:
 
+> **Kategorija**: *Kategorija spoljnog dokumenta* novog *Dokumenta* (obavezan podatak).
+> **Šifra**: šifra novog *Dokumenta* (obavezan podatak).
+> **Izdanje/Revizija**: izdanje i revizija novog *Dokumenta*.
+> **Naslov**: *Naslov* *Dokumenta* (obavezan podatak).
+
+Nakon toga potrebno je pritisnuti dugme **OK** za nastavak ili **Odustani** za prekid postupka dupliciranja.
+
+Po završetku obrade prikazaće se novi *Dokument spoljnog porekla*.
 
 ### ![](/img/neutral/common/bill.png) Distribucija
 
-Tipka pokreće postupak *Distribucije* *Dokumenta*.  
-Pojavi se zahtjev za filtriranje onih koji će, među primateljima navedenima na *Listi distribucije*, primiti kopiju *Dokumenta*:     
-> **Tip:**   
->> **Tiskani**: distribucija onima koji traže tiskanu kopiju;   
->> **Elektronički**: distribucija onima koji traže email;      
+Dugme pokreće postupak *Distribucije* *Dokumenta*.
+
+Prikazaće se zahtev za filtriranje primalaca koji će, među onima navedenim na *Listi distribucije*, primiti kopiju *Dokumenta*:
+
+> **Tip:**
+>> **Štampani**: distribucija onima koji zahtevaju štampanu kopiju;
+>> **Elektronski**: distribucija onima koji zahtevaju prijem putem e-pošte;
 >
-> **Status:**   
->> **Već isporučeni**: distribucija onima koji su već primili dokument;   
->> **Još za isporučiti**: distribucija onima koji još nisu primili dokument;   
+> **Status:**
+>> **Već isporučeni**: distribucija onima koji su već primili dokument;
+>> **Još nije isporučeno**: distribucija onima koji još nisu primili dokument;
 >
-> **Primatelj:**  
->> **Interni**: distribucija samo internom osoblju (*Poslovne funkcije* i/ili *Zaposlenici*);  
->> **Kupci/Dobavljači**: distribucija *Kupcima/Dobavljačima*.  
+> **Primalac:**
+>> **Interni**: distribucija samo internom osoblju (*Funkcije preduzeća* i/ili *Zaposleni*);
+>> **Kupci/Dobavljači**: distribucija *Kupcima/Dobavljačima*.
 
-Nakon toga se pritisne tipka **OK** ili tipka **Poništi** ako se želi nastaviti ili odustati od aktivnosti distribucije.  
+Nakon toga potrebno je pritisnuti dugme **OK** za nastavak ili **Odustani** za prekid postupka distribucije.
 
-
-## Upravljanje podacima  
-
+## Upravljanje podacima
 
 ### Podaci zaglavlja
 
-Informacije kojima se može upravljati su:   
-> **Kategorija**: *Kategorija dokumenta vanjskog podrijetla* *Dokumenta* (obavezni podatak).   
-> Unošenjem kategorije, *Lista distribucije* i podaci o *Pristupu dopuštenom funkcijama* nasljeđuju se u *Dokumentu*.    
->
-> **Šifra**: *Šifra* *Dokumenta* (obavezni podatak).  
->
-> **Izdanje/Revizija**: Izdanje i Revizija *Dokumenta*; informacije su slobodne jer treba unijeti eventualne podatke navedene u dokumentima koji nisu generirani od strane poduzeća.    
->
-> **Naslov**: *Naslov* *Dokumenta* (obavezni podatak).    
->
-> **Podrijetlo**: slobodne napomene o bilješke o temi.   
-> **Datum primitka**: datum primitka *Dokumenta*; pri unosu novog *Dokumenta* predlaže se današnji datum.   
-> **Važi od/do**: sadrži eventualni datum početka i završetka valjanosti *Dokumenta*.   
-> **Provjera valjanosti**: označava da je *Dokument* provjeren.   
-> **Datum provjere**: označava datum kada je *Dokument* provjeren.    
->
-> **Arhiva**: *Skladište* ili fizičko mjesto gdje se *Dokument* obično arhivira (primjer: Tehnički ured, Uprava, ...).   
-> Podatak se nasljeđuje iz *Kategorije dokumenta vanjskog podrijetla* i može se izmijeniti.    
->
-> **Lokacija**: fizičko mjesto gdje se *Dokument* obično arhivira (primjer: Ormar, Polica, Ladica, ...).   
-> Podatak se nasljeđuje iz *Kategorije dokumenta vanjskog podrijetla* i može se izmijeniti.     
->
-> **Opisna lokacija**: fizičko mjesto u slučaju da *Arhiva* i/ili *Lokacija* nisu kodirani.   
-> Podatak se nasljeđuje iz *Kategorije dokumenta vanjskog podrijetla* i može se izmijeniti.     
->
-> **Odgovorna funkcija**: *Poslovna funkcija* odgovorna za *Dokument*.  
-> Podatak se nasljeđuje iz *Kategorije dokumenta vanjskog podrijetla* i može se izmijeniti.     
->
-> **Kategorije interesa**: slobodne napomene o bilješke o temi.   
-> **Napomene**: slobodne napomene.  
+Podaci kojima se upravlja su:
 
+> **Kategorija**: *Kategorija Dokumenta spoljnog porekla* *Dokumenta* (obavezan podatak).
+> Unošenjem kategorije u *Dokument* se preuzimaju *Lista distribucije* i podaci o *Dozvoljenom pristupu funkcijama*.
+>
+> **Šifra**: *Šifra* *Dokumenta* (obavezan podatak).
+>
+> **Izdanje/Revizija**: izdanje i revizija *Dokumenta*; podatak je slobodan za unos kako bi se evidentirali podaci navedeni na dokumentima koje nije generisalo preduzeće.
+>
+> **Naslov**: *Naslov* *Dokumenta* (obavezan podatak).
+>
+> **Poreklo**: slobodne beleške o temi.
+> **Datum prijema**: datum prijema *Dokumenta*; prilikom unosa novog *Dokumenta* predlaže se tekući datum.
+> **Važi od/do**: sadrži eventualni datum početka i završetka važenja *Dokumenta*.
+> **Provera važenja**: označava da je *Dokument* proveren.
+> **Datum provere**: datum kada je *Dokument* proveren.
+>
+> **Arhiva**: *Skladište* ili fizička lokacija na kojoj se *Dokument* uobičajeno arhivira (na primer: Tehnička služba, Uprava...).
+> Podatak se preuzima iz *Kategorije Dokumenta spoljnog porekla* i može se izmeniti.
+>
+> **Lokacija**: fizička lokacija na kojoj se *Dokument* uobičajeno arhivira (na primer: Ormar, Polica, Fioka...).
+> Podatak se preuzima iz *Kategorije Dokumenta spoljnog porekla* i može se izmeniti.
+>
+> **Opis lokacije**: fizička lokacija kada *Arhiva* i/ili *Lokacija* nisu šifrirani.
+> Podatak se preuzima iz *Kategorije Dokumenta spoljnog porekla* i može se izmeniti.
+>
+> **Odgovorna funkcija**: *Funkcija preduzeća* odgovorna za *Dokument*.
+> Podatak se preuzima iz *Kategorije Dokumenta spoljnog porekla* i može se izmeniti.
+>
+> **Kategorije interesa**: slobodne beleške o temi.
+> **Beleške**: slobodne beleške.
 
-### Distribucijska lista
+### Lista distribucije
 
-U ovom popisu moguće je povezati: *Poslovne funkcije*, *Zaposlenike*, *Kupce/Dobavljače* i *Kontakte* koji obično primaju kopiju *Dokumenta* te navesti uobičajene metode primanja dokumenta.   
-Prilikom stvaranja *Dokumenta*, *Distribucijska lista* se nasljeđuje iz *Kategorije dokumenta vanjskog podrijetla* i informacije se mogu izmijeniti.  
-Popis se sastoji od sljedećih informacija:    
-> **Poslovna funkcija**   
->> **Šifra**: šifra *Poslovne funkcije* primatelja.   
->> **Opis**: opis *Poslovne funkcije* primatelja.    
->
-> **Zaposlenik**   
->> **Šifra**: šifra *Zaposlenika* primatelja.   
->> **Prezime**: prezime *Zaposlenika* primatelja.   
->> **Ime**: ime *Zaposlenika* primatelja.     
->
-> **Kupac/Dobavljač**   
->> **Opis**: naziv *Kupca/Dobavljača* primatelja.   
->
-> **Kontakt**   
->> **Šifra**: šifra *Kontakta* primatelja.   
->> **Opis**: opis *Kontakta* primatelja.     
->
-> **Drugi primatelj**   
->> **Opis**: slobodan opis primatelja koji nije kodiran.  
->
-> **Podaci za dostavu**   
->> **Na papiru**: označava da primatelj želi primiti *Tiskanu* kopiju dokumenta ili u privitku putem *E-maila*.   
->> **Vrsta obavijesti**: označava uobičajenu metodu dostave *Dokumenta*.   
->> **Email**: označava email adresu primatelja, ako nije kodirana u registru primatelja.   
->> **Dostava**: označava da je dostava izvršena; postavlja se automatski prilikom distribucije dokumenta i naknadno se može mijenjati.   
->> **Datum isporuke**: prikazuje datum dostave dokumenta; automatski se ažurira prilikom distribucije dokumenta i naknadno se može mijenjati.   
->> **Broj kopija**: označava broj tiskana kopija koje primatelj želi primiti.   
->> **Napomene**: slobodne napomene.    
+U ovoj listi moguće je povezati: *Funkcije preduzeća*, *Zaposlene*, *Kupce/Dobavljače* i *Kontakte* koji uobičajeno primaju kopiju *Dokumenta*, kao i definisati uobičajeni način prijema dokumenta.
 
+Prilikom kreiranja *Dokumenta*, *Lista distribucije* se preuzima iz *Kategorije Dokumenta spoljnog porekla*, a podaci se mogu izmeniti.
+
+Lista sadrži sledeće podatke:
+
+> **Funkcija preduzeća**
+>> **Šifra**: šifra *Funkcije preduzeća* primaoca.
+>> **Opis**: opis *Funkcije preduzeća* primaoca.
+>
+> **Zaposleni**
+>> **Šifra**: šifra *Zaposlenog* primaoca.
+>> **Prezime**: prezime *Zaposlenog* primaoca.
+>> **Ime**: ime *Zaposlenog* primaoca.
+>
+> **Kupac/Dobavljač**
+>> **Opis**: naziv *Kupca/Dobavljača* primaoca.
+>
+> **Kontakt**
+>> **Šifra**: šifra *Kontakta* primaoca.
+>> **Opis**: opis *Kontakta* primaoca.
+>
+> **Drugi primalac**
+>> **Opis**: slobodan opis primaoca koji nije šifriran.
+>
+> **Podaci za isporuku**
+>> **Na papiru**: označava da primalac želi da primi *štampanu* kopiju dokumenta ili kopiju u prilogu putem *e-pošte*.
+>> **Tip obaveštenja**: označava uobičajeni način isporuke *Dokumenta*.
+>> **E-mail**: adresa e-pošte primaoca ako nije definisana u njegovom šifarniku.
+>> **Isporučeno**: označava da je isporuka izvršena; postavlja se automatski prilikom distribucije dokumenta, a kasnije se može izmeniti.
+>> **Datum isporuke**: prikazuje datum isporuke dokumenta; automatski se ažurira prilikom distribucije dokumenta, a kasnije se može izmeniti.
+>> **Broj kopija**: označava broj štampanih kopija koje primalac želi da primi.
+>> **Beleške**: slobodne beleške.
 
 ### Prilozi
-U ovom popisu moguće je unijeti i pregledavati eventualne privitke, moguće je pregledati prethodni prikaz i izvršavati operacije nad slikom.  
-Ti privitci su odvojeni od Fluentis dokumentacije, koja je uvijek dostupna i upotrebljiva.   
 
+U ovoj listi moguće je uneti i pregledati priloge, pregledati njihov sadržaj i izvršavati operacije nad slikama.
+Ovi prilozi su odvojeni od Fluentis dokumentacije, koja je uvek dostupna i može se koristiti.
 
 ### Pristup funkcijama
 
-U ovom popisu moguće je unijeti *Poslovne funkcije* kojima se dodjeljuju prava pristupa *Dokumentu*.  
-Ako se ne unesu redovi u ovu tablicu, pristup je dopušten svima.  
-Prilikom stvaranja *Dokumenta*, popis *Poslovnih funkcija* se nasljeđuje iz *Kategorije dokumenta vanjskog podrijetla* i informacije se mogu mijenjati.  
-Popis se sastoji od sljedećih informacija:     
-> **Funkcija**: šifra *Poslovne funkcije*.   
-> **Opis funkcije**: opis *Poslovne funkcije*.   
-> **Napomene**: slobodne napomene.  
+U ovoj listi moguće je uneti *Funkcije preduzeća* kojima se dodeljuju prava pristupa *Dokumentu*.
+Ako u ovoj tabeli nema unetih redova, pristup je dozvoljen svima.
+Prilikom kreiranja *Dokumenta*, lista *Funkcija preduzeća* se preuzima iz *Kategorije Dokumenta spoljnog porekla*, a podaci se mogu menjati.
+Lista sadrži sledeće podatke:
 
+> **Funkcija**: šifra *Funkcije preduzeća*.
+> **Opis funkcije**: opis *Funkcije preduzeća*.
+> **Beleške**: slobodne beleške.
 
 ### Dodatni podaci
-Moguće je umetnuti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *dokument vanjskog podrijetla*.   
 
-
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Moguće je uneti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *Dokument spoljnog porekla*.
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcionisanju obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i polja](/docs/guide/common).

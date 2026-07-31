@@ -1,23 +1,23 @@
 ---
-title: Pretraga korektivnih radnji
+title: Pretraga Korektivnih mera
 sidebar_position: 2
 ---
 
-Filter se nalazi na putanji **Kvaliteta > Korektivne radnje > Korektivne radnje**.  
+Filter se nalazi na putanji **Kvalitet > Korektivne mere > Korektivne mere**.
 
-Filtar podataka omogućuje unos novih *Korektivnih radnji* ili pretraživanje postojećih kako bi se pregledale, uredile ili izbrisale.
-Različite boje redaka mogu se postaviti u **Parametrima korektivnih radnji**.  
+Filter podataka omogućava unos novih *Korektivnih mera* ili pretragu postojećih radi pregleda, izmene ili brisanja.
+Različite boje redova mogu se podesiti u **Parametrima korektivnih mera**.
 
-### ![](/img/neutral/common/search.png) Pretraga Korektivnih radnji
+### ![](/img/neutral/common/search.png) Pretraga Korektivnih mera
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se klikne tipka **Traži** da bi se vidjeli rezultati u prikazu.
+Obrazac se sastoji od dela za filtriranje i dela sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u delu sa rezultatima.
 
-### ![](/img/neutral/common/new.png) Unos Korektivnih radnji
+### ![](/img/neutral/common/new.png) Unos Korektivnih mera
 
-Za umetanje novih *Korektivnih radnji* potrebno je pritisnuti tipku **Novo**.   
+Za unos novih *Korektivnih mera* potrebno je pritisnuti dugme **Novo**.
 
-### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) prikaz Korektivnih radnji
+### ![](/img/neutral/common/edit.png) Izmena ili ![](/img/neutral/common/view.png) Prikaz Korektivnih mera
 
-Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na redak koji se želi pregledati, odabirom jednog ili više redaka, pritisne se tipka **Uredi** ili **Prikaži**. 
+Za otvaranje upravljanja izabranim rezultatom potrebno je dvaput kliknuti na red koji se želi otvoriti ili, nakon označavanja jednog ili više redova, pritisnuti dugme **Uredi** ili **Prikaži**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcionisanju obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i polja](/docs/guide/common).

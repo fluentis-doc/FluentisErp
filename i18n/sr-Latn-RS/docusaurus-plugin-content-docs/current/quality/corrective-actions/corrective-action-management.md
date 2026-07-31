@@ -1,365 +1,362 @@
 ---
-title: Korektivne radnje
+title: Korektivne mere
 sidebar_position: 3
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Korektivne radnje > Nova korektivna radnja** ili se može pokrenuti iz **Pretraživanja korektivnih radnji**.
-
+Upravljanje se nalazi na putanji **Kvalitet > Korektivne mere > Nova korektivna mera** ili se može pokrenuti iz **Pretrage Korektivnih mera**.
 
 :::important Čemu služi
-Korektivne radnje su radnje koje se poduzimaju za rješavanje problema ili odstupanja u procesima i sprječavanje njihovog ponavljanja. Provode se nakon identificiranja problema, analize uzroka i implementacije promjena za poboljšanje budućih performansi. Bitne su za održavanje i poboljšanje kvalitete i učinkovitosti poslovnih procesa.  
-*Korektivne radnje* moraju:  
-- biti primjerene učincima utvrđenih nesukladnosti;
-- osigurati da se nesukladnosti ne ponavljaju;
-- pregledati učinkovitost provedenih korektivnih radnji.
+Korektivne mere predstavljaju aktivnosti koje se preduzimaju radi rešavanja problema ili odstupanja u procesima i sprečavanja njihovog ponavljanja. Sprovode se nakon identifikacije problema, analize uzroka i implementacije promena radi unapređenja budućih performansi. Važne su za održavanje i unapređenje kvaliteta i efikasnosti poslovnih procesa.
 
-Izvještavanje je standardno dostupno za:  
-> **Lista korektivnih radnji**: Lista *korektivnih radnji*.  
+*Korektivne mere* moraju:
+- biti primerene posledicama utvrđenih neusklađenosti;
+- obezbediti da se neusklađenosti ne ponavljaju;
+- omogućiti proveru efikasnosti sprovedenih korektivnih mera.
+
+Standardno je dostupan sledeći izveštaj:
+> **Lista korektivnih mera**: lista *Korektivnih mera*.
 :::
 
+## Dugmad za korišćenje
 
-## Tipke za korištenje
+### ![](/img/neutral/common/save.png) Sačuvaj
 
+Pritiskom na ovo dugme biće sačuvane sve izmenjene informacije prikazane *Korektivne mere*.
 
-### ![](/img/neutral/common/save.png) Spremi
+### ![](/img/neutral/common/save.png) Sačuvaj i novo
 
-Pritiskom na ovu tipku spremit će se sve promijenjene informacije za prikazanu *Korektivnu radnju*.   
+Pritiskom na ovo dugme biće sačuvani svi izmenjeni podaci prikazane *Korektivne mere*, nakon čega će se otvoriti novi obrazac za kreiranje nove *Korektivne mere*.
 
-
-### ![](/img/neutral/common/save.png) Spremi i novo
-
-Pritiskom na ovu tipku spremaju se svi promijenjeni podaci prikazane *Korektivne radnje* i otvara se novi obrazac za izradu nove *Korektivne radnje*.   
-
-
-## Upravljani podaci
-
+## Podaci kojima se upravlja
 
 ## Podaci zaglavlja dokumenta
 
-Informacije kojima se upravlja su:   
-> **Vrsta radnje**: je *Vrsta radnje* (obavezni podatak). 
-> Prilikom umetanja nove *Korektivne radnje*, predlaže se *Vrsta radnje* naznačena u *Parametrima korektivne radnje*.   
->
-> **Godina/Broj/Datum**: su *Godina*, *Broj* i *Datum* *Korektivne radnje* (obavezni podaci).   
-> Prilikom unosa nove *korektivne radnje*:   
-> - *Datum* se predlaže kao današnji datum;
-> - *Godina* i *Broj* se predlažu na temelju *Datuma* i *Numeriranja* povezanih s *Vrstom radnje*.  
->
-> **Sektor**: je šifra *Sektora*. 
-> Prilikom umetanja nove *Korektivne radnje*, predlaže se *Sektor* naznačen u *Parametrima korektivne radnje*.  
->
-> **Područje**: ovo je šifra obuhvaćenog *Područja* (obavezni podatak).   
-> Prilikom umetanja nove *Korektivne radnje*, predlaže se *Područje* naznačeno u *Parametrima korektivne radnje*.  
+Podaci kojima se upravlja su:
 
+> **Tip mere**: *Tip mere* (obavezan podatak).
+> Prilikom unosa nove *Korektivne mere* predlaže se *Tip mere* naveden u *Parametrima korektivnih mera*.
+>
+> **Godina/Broj/Datum**: *Godina*, *Broj* i *Datum* *Korektivne mere* (obavezni podaci).
+> Prilikom unosa nove *Korektivne mere*:
+> - *Datum* se predlaže kao tekući datum;
+> - *Godina* i *Broj* predlažu se na osnovu *Datuma* i *Numeracije* povezane sa *Tipom mere*.
+>
+> **Sektor**: šifra *Sektora*.
+> Prilikom unosa nove *Korektivne mere* predlaže se *Sektor* naveden u *Parametrima korektivnih mera*.
+>
+> **Oblast**: šifra obuhvaćene *Oblasti* (obavezan podatak).
+> Prilikom unosa nove *Korektivne mere* predlaže se *Oblast* navedena u *Parametrima korektivnih mera*.
 
 ## Zaglavlje
 
-Informacije kojima se upravlja su:  
-> **Odgovorna osoba**: Ovo je *zaposlenik* odgovoran za *korektivnu radnju*.  
-> Prilikom unosa nove *Korektivne radnje*, predlaže se *Odgovorna osoba* navedena u *Parametrima korektivne radnje*.  
->
-> **Odgovorna funkcija**: Ovo je *Funkcija tvrtke* odgovorna za *Korektivnu radnju*.
-> Prilikom unosa nove *Korektivne radnje*, predlaže se *Odgovorna funkcija* naznačena u *Parametrima korektivne radnje*. 
->
-> **Opis nesukladnosti**: (obavezne) napomene u slobodnom obliku o nesukladnostima ili neusklađenim situacijama (uključujući i potencijalne).
-> **Referenca dokumenta**: napomene u slobodnom obliku o referencama na dokumente koji su doveli do *Korektivne radnje*.
-> **Predložena radnja**: napomene u slobodnom obliku. 
->
-> **Odobreno/Datum odobrenja**: proširenje u koje se može unijeti:
->
->> **Odobreno**: označava da je *Korektivna radnja* *Odobrena*.  
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može odobriti *Korektivnu radnju*.
->> Nakon odobrenja, automatski se predlažu sljedeći elementi: *Datum odobrenja* predložen na današnji datum i može se mijenjati, *Odobrio korisnik* i *Odobrila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom*  
->>
->> **Datum odobrenja**: ovo je datum na koji je *Korektivna radnja* *Odobrena*.
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može promijeniti ovaj datum.
->> Prilikom unosa datuma, *Odobrio korisnik* i *Odobrila osoba* automatski se predlažu povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* te se postavlja oznaka *Odobreno*.
->>
->> **Odobreno od korisnika**: ovo je *A.R.M. korisnik* koji je odobrio *Korektivnu radnju*. Ove su informacije samo za čitanje.
->> **Odobreno od osobe**: ovo je *zaposlenik* koji je odobrio *Korektivnu radnju*. Ove su informacije samo za čitanje.
->> **Odobreno od funkcije**: ovo je *funkcija tvrtke* koja je odobrila *Korektivnu radnju*.
->> Omogućeno samo ako je *Korektivna radnja* *Odobrena*.  
->
-> **Blokirano/Datum blokiranja**: proširenje u koje se može unijeti:
->
->> **Blokirano**: označava da je *Korektivna radnja* *Blokirana*.   
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu blokirati *Korektivnu radnju*.
->> Nakon blokiranja, automatski se predlažu sljedeće: *Datum blokiranja* predložen na današnji datum i može se promijeniti, *Blokirao korisnik* i *Blokirala osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom*  
->>
->> **Datum blokiranja**: ovo je datum na koji je *Korektivna radnja* *Blokirana*.
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može promijeniti ovaj datum.
->> Prilikom unosa datuma, automatski se predlažu sljedeće opcije: *Blokirao korisnik* i *Blokirala osoba* za povezanog *A.R.M. korisnika* i *Zaposlenika* povezanog s *A.R.M. korisnikom* te je postavljena zastavica *Blokirano*.   
->>
->> **Blokirano od korisnika**: ovo je *A.R.M. korisnik* koji je blokirao *Korektivnu radnju*. Ove su informacije samo za čitanje.
->> **Blokirano od osobe**: ovo je *zaposlenik* koji je blokirao *Korektivnu radnju*. Ove su informacije samo za čitanje.
->> **Blokirano od funkcije**: ovo je *funkcija tvrtke* koja je blokirala *Korektivnu radnju*.
->> Omogućeno samo ako je *Korektivna radnja* *Zaključana*.  
->
-> **Uzroci**: slobodne bilješke o uzrocima koji su doveli do nesukladnosti, dokumentacija o provedenoj istrazi.
-> **Procjena poduzetih radnji**: slobodne bilješke o procjeni potrebe za poduzimanjem radnji kako bi se spriječilo ponavljanje nesukladnosti.
-> **Opis privitka**: slobodne bilješke o sadržaju svih dokumenata priloženih dokumentu.
-> **Očekivani datum zatvaranja**: ovo je očekivani datum za dovršetak *Korektivne radnje*.
-> **Napomene**: slobodne bilješke. 
->
-> **Datum zatvaranja/zatvaranja**: proširenje u koje se može unijeti:  
->
->> **Zatvoreno**: označava da je *Korektivna radnja* *Zatvorena*.
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može zatvoriti *Korektivnu radnju*.
->> Nakon zatvaranja, automatski se predlažu sljedeći: *Datum zatvaranja* predložen na današnji datum i može se promijeniti, *Zatvorio korisnik* i *Zatvorila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom*
->>
->> **Datum zatvaranja**: ovo je datum na koji je *Korektivna radnja* *Zatvorena*.
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu promijeniti ovaj datum.
->> Prilikom unosa datuma, automatski se predlažu sljedeće opcije: *Zatvorio korisnik* i *Zatvorila osoba*, predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom*, a postavljena je zastavica *Zatvoreno*. 
->>
->> **Zatvoreno od korisnika**: ovo je *A.R.M. korisnik* koji je zatvorio *Korektivnu radnju*. Ova je informacija samo za čitanje.
->> **Zatvoreno od osobe**: ovo je *Zaposlenik* koji je zatvorio *Korektivnu radnju*. Ova je informacija samo za čitanje.
->> **Zatvoreno od funkcije**: ovo je *Funkcija tvrtke* koja je zatvorila *Korektivnu radnju*.
->> Omogućeno samo ako je *Korektivna radnja* *Zatvorena*. 
->
-> **Audit**: proširenje samo za čitanje gdje su vidljive sljedeće informacije: 
->
->> **Datum kreiranja/Ime**: ovo je datum i *A.R.M. korisnik* koji je unio *Korektivnu radnju*.
->> **Datum zadnje izmjene/Ime**: ovo je datum i *A.R.M. korisnik* koji je zadnji put izmijenio *Korektivnu radnju*.   
->
-> **Procijenjeni ukupni trošak**: ovo je procijenjeni trošak upravljanja *Korektivnom radnjom*.
-> **Stvarni ukupni trošak**: ovo je ukupni trošak nastao upravljanjem *Korektivnom radnjom*.   
+Podaci kojima se upravlja su:
 
-
-### Provjere za sljedeću reviziju
-
-Kartica sadrži informacije o provjerama koje treba provesti tijekom sljedeće revizije kako bi se procijenilo je li *korektivna radnja* bila učinkovita.
-Upravljane informacije su:   
-> **Za procjenu u sljedećoj reviziji**: proširenje gdje je moguće umetnuti:  
+> **Odgovorna osoba**: *Zaposleni* odgovoran za *Korektivnu meru*.
+> Prilikom unosa nove *Korektivne mere* predlaže se *Odgovorna osoba* navedena u *Parametrima korektivnih mera*.
 >
->> **Procijenit će se u sljedećoj reviziji**: označava jesu li potrebne aktivnosti provjere u sljedećoj reviziji za *dotično područje*.  
->> **Elementi koje treba provjeriti**: bilješke u slobodnom obliku o stavkama koje treba provjeriti u sljedećoj reviziji.  
->> Omogućeno samo ako je *Korektivna radnja* *Za procjenu u sljedećoj reviziji*.   
+> **Odgovorna funkcija**: *Funkcija preduzeća* odgovorna za *Korektivnu meru*.
+> Prilikom unosa nove *Korektivne mere* predlaže se *Odgovorna funkcija* navedena u *Parametrima korektivnih mera*.
 >
-> **Potvrđeno/Datum provjere**: proširenje u koji možete unijeti:.   
+> **Opis neusklađenosti**: (obavezne) slobodne beleške o neusklađenostima ili neusklađenim situacijama (uključujući i potencijalne).
+> **Referenca dokumenta**: slobodne beleške o referencama na dokumente koji su doveli do *Korektivne mere*.
+> **Predložena mera**: slobodne beleške.
 >
->> **Potvrđeno**: označava da je *Korektivna radnja* *Potvrđena*.
->>> Nakon provjere, automatski se predlažu sljedeći datumi: *Datum provjere* predložen kao današnji datum i može se promijeniti, *Potvrđeno od strane korisnika* i *Potvrđeno od strane osobe* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* 
+> **Odobreno/Datum odobrenja**: proširenje u koje se mogu uneti sledeći podaci:
+>
+>> **Odobreno**: označava da je *Korektivna mera* *Odobrena*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu odobriti *Korektivnu meru*.
+>> Nakon odobrenja automatski se predlažu sledeći podaci: *Datum odobrenja*, postavljen na tekući datum uz mogućnost izmene, kao i *Odobrio korisnik* i *Odobrila osoba*, preuzeti iz povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*.
 >>
->> **Datum pregleda**: ovo je datum na koji je *korektivna radnja* *pregledana*. 
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može promijeniti ovaj datum.   
->> Prilikom unosa datuma, automatski se predlažu sljedeći elementi: *Potvrdio korisnik* i *Potvrdila osoba* predloženi povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* te je postavljena zastavica *Potvrđeno*.  
+>> **Datum odobrenja**: datum kada je *Korektivna mera* *Odobrena*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu izmeniti ovaj datum.
+>> Unošenjem datuma automatski se popunjavaju *Odobrio korisnik* i *Odobrila osoba* na osnovu povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*, a postavlja se i oznaka *Odobreno*.
 >>
->> **Ukupni rezultat**: ovo je *Rezultat* pripisan provjeri *Korektivne radnje*.
->> **Provjera učinkovitosti**: slobodne bilješke u vezi s ishodom provjere ili učinkovitosti *Korektivne radnje*.
->> **Potvrdio korisnik**: ovo je *A.R.M. korisnik* koji je potvrdio *Korektivnu radnju*. Ove su informacije samo za čitanje.
->> **Potvrdila osoba**: ovo je *zaposlenik* koji je potvrdio *Korektivnu radnju*. Ove su informacije samo za čitanje.
->> **Potvrdila funkcija**: ovo je *funkcija tvrtke* koja je potvrdila *Korektivnu radnju*.
->> Omogućeno samo ako je *Korektivna radnja* *Potvrđena*.
-
-
-### *Međukontrolne* akcije
-
-Kartica sadrži informacije o međukontrolama provedenim na *Korektivnoj radnji*.
-Upravljane informacije su:  
-> **Podaci za provjeru**   
->> **Datum**: ovo je datum kada je provedena međukontrola.
->> **Provjereni elementi**: slobodne bilješke o elementima koji su razmatrani tijekom revizije.
->> **Provjera učinkovitosti**: slobodne bilješke o poduzetim radnjama za provjeru učinkovitosti.
->> **Ishod**: ovo je *Ishod* pripisan međukontroli *Korektivne radnje*.
->> **Opis ishoda**: ovo je opis *Ishoda* pripisanog reviziji *Korektivne radnje*.   
+>> **Odobrio korisnik**: *A.R.M. korisnik* koji je odobrio *Korektivnu meru*. Ovaj podatak je samo za čitanje.
+>> **Odobrila osoba**: *Zaposleni* koji je odobrio *Korektivnu meru*. Ovaj podatak je samo za čitanje.
+>> **Odobrila funkcija**: *Funkcija preduzeća* koja je odobrila *Korektivnu meru*.
+>> Dostupno samo kada je *Korektivna mera* *Odobrena*.
 >
-> **Provjereno od strane korisnika**
->> **Korisnik**: ovo je *A.R.M. korisnik* koji je izvršio međukontrolu.*   
+> **Blokirano/Datum blokiranja**: proširenje u koje se mogu uneti sledeći podaci:
 >
-> **Potvrđeno od osobe**   
->> **Operater**: ovo je šifra *Zaposlenika* koji je izvršio međukontrolu.
->> **Prezime**: ovo je prezime *Zaposlenika* koji je izvršio međukontrolu.
->> **Ime**: ovo je ime *Zaposlenika* koji je izvršio međukontrolu. 
+>> **Blokirano**: označava da je *Korektivna mera* *Blokirana*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu blokirati *Korektivnu meru*.
+>> Nakon blokiranja automatski se predlažu sledeći podaci: *Datum blokiranja*, postavljen na tekući datum uz mogućnost izmene, kao i *Blokirao korisnik* i *Blokirala osoba*, preuzeti iz povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*.
+>>
+>> **Datum blokiranja**: datum kada je *Korektivna mera* *Blokirana*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu izmeniti ovaj datum.
+>> Unošenjem datuma automatski se popunjavaju *Blokirao korisnik* i *Blokirala osoba* na osnovu povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*, a postavlja se i oznaka *Blokirano*.
+>>
+>> **Blokirao korisnik**: *A.R.M. korisnik* koji je blokirao *Korektivnu meru*. Ovaj podatak je samo za čitanje.
+>> **Blokirala osoba**: *Zaposleni* koji je blokirao *Korektivnu meru*. Ovaj podatak je samo za čitanje.
+>> **Blokirala funkcija**: *Funkcija preduzeća* koja je blokirala *Korektivnu meru*.
+>> Dostupno samo kada je *Korektivna mera* *Blokirana*.
 >
-> **Provjereno od strane funkcije** 
->> **Šifra**: ovo je šifra *Funkcije tvrtke* koja je izvršila međukontrolu.   
->> **Opis**: ovo je opis *Funkcije tvrtke* koja je izvršila međukontrolu.   
+> **Uzroci**: slobodne beleške o uzrocima koji su doveli do neusklađenosti i dokumentacija o sprovedenoj istrazi.
+> **Procena preduzetih mera**: slobodne beleške o proceni potrebe za sprovođenjem mera kako bi se sprečilo ponavljanje neusklađenosti.
+> **Opis priloga**: slobodne beleške o sadržaju svih dokumenata priloženih dokumentu.
+> **Očekivani datum zatvaranja**: očekivani datum završetka *Korektivne mere*.
+> **Beleške**: slobodne beleške.
 >
-> **Napomena**: slobodne bilješke.   
+> **Zatvoreno/Datum zatvaranja**: proširenje u koje se mogu uneti sledeći podaci:
+>
+>> **Zatvoreno**: označava da je *Korektivna mera* *Zatvorena*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu zatvoriti *Korektivnu meru*.
+>> Nakon zatvaranja automatski se predlažu sledeći podaci: *Datum zatvaranja*, postavljen na tekući datum uz mogućnost izmene, kao i *Zatvorio korisnik* i *Zatvorila osoba*, preuzeti iz povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*.
+>>
+>> **Datum zatvaranja**: datum kada je *Korektivna mera* *Zatvorena*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu izmeniti ovaj datum.
+>> Unošenjem datuma automatski se popunjavaju *Zatvorio korisnik* i *Zatvorila osoba* na osnovu povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*, a postavlja se i oznaka *Zatvoreno*.
+>>
+>> **Zatvorio korisnik**: *A.R.M. korisnik* koji je zatvorio *Korektivnu meru*. Ovaj podatak je samo za čitanje.
+>> **Zatvorila osoba**: *Zaposleni* koji je zatvorio *Korektivnu meru*. Ovaj podatak je samo za čitanje.
+>> **Zatvorila funkcija**: *Funkcija preduzeća* koja je zatvorila *Korektivnu meru*.
+>> Dostupno samo kada je *Korektivna mera* *Zatvorena*.
+>
+> **Audit**: proširenje samo za čitanje u kojem su prikazani sledeći podaci:
+>
+>> **Datum kreiranja/Ime**: datum i *A.R.M. korisnik* koji je uneo *Korektivnu meru*.
+>> **Datum poslednje izmene/Ime**: datum i *A.R.M. korisnik* koji je poslednji izmenio *Korektivnu meru*.
+>
+> **Procenjeni ukupni trošak**: procenjeni trošak upravljanja *Korektivnom merom*.
+> **Stvarni ukupni trošak**: ukupan trošak nastao upravljanjem *Korektivnom merom*.
 
+### Provere za sledeću reviziju
+
+Kartica sadrži informacije o proverama koje treba sprovesti tokom sledeće revizije kako bi se procenilo da li je *Korektivna mera* bila efikasna.
+Podaci kojima se upravlja su:
+
+> **Za procenu u sledećoj reviziji**: proširenje u koje je moguće uneti:
+>
+>> **Proceniće se u sledećoj reviziji**: označava da li su potrebne aktivnosti provere u sledećoj reviziji za *odgovarajuću oblast*.
+>> **Elementi koje treba proveriti**: slobodne beleške o elementima koje treba proveriti u sledećoj reviziji.
+>> Dostupno samo ako je *Korektivna mera* označena kao *Za procenu u sledećoj reviziji*.
+>
+> **Potvrđeno/Datum provere**: proširenje u koje se mogu uneti sledeći podaci:
+>
+>> **Potvrđeno**: označava da je *Korektivna mera* *Potvrđena*.
+>>> Nakon potvrde automatski se predlažu sledeći podaci: *Datum provere*, postavljen na tekući datum uz mogućnost izmene, kao i *Potvrdio korisnik* i *Potvrdila osoba*, preuzeti iz povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*.
+>>
+>> **Datum provere**: datum kada je *Korektivna mera* *proverena*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu izmeniti ovaj datum.
+>> Unošenjem datuma automatski se popunjavaju *Potvrdio korisnik* i *Potvrdila osoba*, preuzeti iz povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*, a postavlja se i oznaka *Potvrđeno*.
+>>
+>> **Ukupan rezultat**: *Rezultat* dodeljen proveri *Korektivne mere*.
+>> **Provera efikasnosti**: slobodne beleške o rezultatu provere ili efikasnosti *Korektivne mere*.
+>> **Potvrdio korisnik**: *A.R.M. korisnik* koji je potvrdio *Korektivnu meru*. Ovaj podatak je samo za čitanje.
+>> **Potvrdila osoba**: *Zaposleni* koji je potvrdio *Korektivnu meru*. Ovaj podatak je samo za čitanje.
+>> **Potvrdila funkcija**: *Funkcija preduzeća* koja je potvrdila *Korektivnu meru*.
+>> Dostupno samo kada je *Korektivna mera* *Potvrđena*.
+
+### *Međukontrolne* aktivnosti
+
+Kartica sadrži informacije o međukontrolama sprovedenim na *Korektivnoj meri*.
+Podaci kojima se upravlja su:
+
+> **Podaci o proveri**
+>> **Datum**: datum kada je sprovedena međukontrola.
+>> **Provereni elementi**: slobodne beleške o elementima razmatranim tokom revizije.
+>> **Provera efikasnosti**: slobodne beleške o preduzetim merama radi provere efikasnosti.
+>> **Rezultat**: *Rezultat* dodeljen međukontroli *Korektivne mere*.
+>> **Opis rezultata**: opis *Rezultata* dodeljenog reviziji *Korektivne mere*.
+>
+> **Proverio korisnik**
+>> **Korisnik**: *A.R.M. korisnik* koji je izvršio međukontrolu.
+>
+> **Potvrdila osoba**
+>> **Operater**: šifra *Zaposlenog* koji je izvršio međukontrolu.
+>> **Prezime**: prezime *Zaposlenog* koji je izvršio međukontrolu.
+>> **Ime**: ime *Zaposlenog* koji je izvršio međukontrolu.
+>
+> **Proverila funkcija**
+>> **Šifra**: šifra *Funkcije preduzeća* koja je izvršila međukontrolu.
+>> **Opis**: opis *Funkcije preduzeća* koja je izvršila međukontrolu.
+>
+> **Beleška**: slobodne beleške.
 
 ### Uključeni subjekti
 
-Tablica sadrži informacije o *Funkcijama tvrtke* i/ili *Zaposlenicima* koji će sudjelovati u upravljanju *Korektivnim radnjama*, razlozima njihovog sudjelovanja te očekivanim datumima provedbe i završetka.  
-Popis se sastoji od sljedećih informacija:   
-> **Funkcija tvrtke**
->> **Šifra**: ovo je šifra uključene *Funkcije tvrtke*.
->> **Opis**: ovo je opis uključene *Funkcije tvrtke*.  
->   
-> **Zaposlenik**
->> **Šifra**: ovo je šifra uključenog *zaposlenika*.
->> **Opis**: ovo je prezime i ime uključenog *zaposlenika*. 
->   
-> **Upravljanje uključenošću**  
->> **Opis predmeta**: bilješke u slobodnom obliku ako uključena osoba nije *Funkcija tvrtke* ili *Zaposlenik*.
->> **Razlog umiješanosti**: bilješke u slobodnom obliku.
->> **Datum dospijeća**: ovo je datum do kojeg uključena osoba mora dovršiti zadatke povezane s razlogom svog sudjelovanja.
->> **Odgovor**: bilješke u slobodnom obliku o temi. 
->> **Zatvoren**: označava da je uključenost subjekta završena.
->> Samo *Funkcija ili osoba odgovorna* za *Korektivnu radnju* ili *Poslovna funkcija* ili *Zaposlenik* koji je uključen može zatvoriti uključenost.
->> Nakon zatvaranja, automatski se predlaže *Datum zatvaranja* koji je postavljen na današnji datum i može se promijeniti. 
->> **Datum zatvaranja**: ovo je datum kada je uključenost subjekta završena.
->> Samo *Funkcija ili osoba odgovorna* za *Korektivnu radnju* ili *Funkcija tvrtke* ili *Zaposlenik* koji je uključen može unijeti ili promijeniti ovaj datum.
->> Kada se unese datum, automatski se postavlja oznaka *Zatvoreno*.  
->
-> **Napomena**: slobodne bilješke.   
+Tabela sadrži informacije o *Funkcijama preduzeća* i/ili *Zaposlenima* koji učestvuju u upravljanju *Korektivnim merama*, razlozima njihovog učešća, kao i planiranim datumima izvršenja i završetka.
 
-### Referentni dokumenti izvora
+Lista sadrži sledeće podatke:
 
-Kartica sadrži reference na dokumente koji su doveli do upravljanja *korektivnom radnjom*.
-Uključene informacije su: 
-> **Reklamacija**: proširenje gdje se može vidjeti:  
+> **Funkcija preduzeća**
+>> **Šifra**: šifra uključene *Funkcije preduzeća*.
+>> **Opis**: opis uključene *Funkcije preduzeća*.
 >
->> **Reklamacija**: ovo je referenca na izvornu *Reklamaciju*.
->> **Upravljanje nedostacima**: ovo je referenca na redak *Upravljanje nedostacima* izvorne *Reklamacije*.
->> **Mjera suzbijanja**: ovo je referenca na izvorni redak *Mjera suzbijanja* modela *Reklamacije* *8D - Rješavanje problema*.
->> **Trajna radnja**: ovo je referenca na izvorni redak *Trajna radnja* modela *Reklamacije* *8D - Rješavanje problema*.
->> **Faza**: ovo je referenca na izvorni redak *Faza provedbe* izvornog modela *Reklamacije* *8D - Rješavanje problema*. 
+> **Zaposleni**
+>> **Šifra**: šifra uključenog *Zaposlenog*.
+>> **Opis**: prezime i ime uključenog *Zaposlenog*.
 >
-> **Nesukladnost**: proširenje gdje se može vidjeti:  
+> **Upravljanje angažovanjem**
+>> **Opis subjekta**: slobodne beleške ako uključeni subjekt nije *Funkcija preduzeća* ili *Zaposleni*.
+>> **Razlog učešća**: slobodne beleške.
+>> **Datum dospeća**: datum do kojeg uključeni subjekt treba da završi aktivnosti povezane sa razlogom svog učešća.
+>> **Odgovor**: slobodne beleške o temi.
+>> **Zatvoreno**: označava da je angažovanje subjekta završeno.
+>> Samo *Odgovorna funkcija* ili *Odgovorna osoba* za *Korektivnu meru*, odnosno uključena *Funkcija preduzeća* ili *Zaposleni*, mogu zatvoriti angažovanje.
+>> Nakon zatvaranja automatski se predlaže *Datum zatvaranja*, postavljen na tekući datum uz mogućnost izmene.
+>> **Datum zatvaranja**: datum kada je angažovanje subjekta završeno.
+>> Samo *Odgovorna funkcija* ili *Odgovorna osoba* za *Korektivnu meru*, odnosno uključena *Funkcija preduzeća* ili *Zaposleni*, mogu uneti ili izmeniti ovaj datum.
+>> Unošenjem datuma automatski se postavlja oznaka *Zatvoreno*.
 >
->> **Nesukladnost**: ovo je referenca na izvornu *Nesukladnost*.
->> **Upravljanje nedostacima**: ovo je referenca na redak *Upravljanje nedostacima* izvorne *Nesukladnosti*.  
->
-> **Korektivna radnja izvora**: proširenje gdje se može vidjeti: 
->
->> **Izvorna korektivna radnja**: ovo je referenca na izvornu *Korektivnu radnju*.
->> **Program**: ovo je referenca na redak *Program* izvorne *Korektivne radnje*.  
->
-> **Ostali referentni dokumenti**: popis u koji možete unijeti bilo koje druge dokumente koji su generirali *Korektivnu radnju*.
-> Popis uključuje sljedeće podatke:  
->
->> **Datum**: ovo je datum referentnog dokumenta.
->> **Referenca dokumenta**: slobodna napomena referentnog dokumenta.
->> **Broj**: ovo je broj referentnog dokumenta.
->> **Napomene**: slobodna napomena.  
+> **Beleška**: slobodne beleške.
 
+### Referentni izvorni dokumenti
+
+Kartica sadrži reference na dokumente koji su doveli do upravljanja *Korektivnom merom*.
+
+Podaci kojima se upravlja su:
+
+> **Reklamacija**: proširenje u kojem se mogu videti:
+>
+>> **Reklamacija**: referenca na izvornu *Reklamaciju*.
+>> **Upravljanje nedostacima**: referenca na red *Upravljanje nedostacima* iz izvorne *Reklamacije*.
+>> **Mere suzbijanja**: referenca na izvorni red *Mere suzbijanja* modela *Reklamacije* *8D - Rešavanje problema*.
+>> **Trajne mere**: referenca na izvorni red *Trajne mere* modela *Reklamacije* *8D - Rešavanje problema*.
+>> **Faza**: referenca na izvorni red *Faze* modela *Reklamacije* *8D - Rešavanje problema*.
+>
+> **Neusklađenost**: proširenje u kojem se mogu videti:
+>
+>> **Neusklađenost**: referenca na izvornu *Neusklađenost*.
+>> **Upravljanje nedostacima**: referenca na red *Upravljanje nedostacima* iz izvorne *Neusklađenosti*.
+>
+> **Izvorna Korektivna mera**: proširenje u kojem se mogu videti:
+>> **Izvorna Korektivna mera**: referenca na izvornu *Korektivnu meru*.
+>> **Program**: referenca na red *Programa* izvorne *Korektivne mere*.
+>
+> **Ostali referentni dokumenti**: lista u koju je moguće uneti sve ostale dokumente koji su doveli do kreiranja *Korektivne mere*.
+> Lista sadrži sledeće podatke:
+>
+>> **Datum**: datum referentnog dokumenta.
+>> **Referenca dokumenta**: slobodna beleška o referentnom dokumentu.
+>> **Broj**: broj referentnog dokumenta.
+>> **Beleške**: slobodna beleška.
 
 ### Dodatni podaci
 
-Moguće je umetnuti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za *korektivne radnje*.   
+Moguće je uneti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za *Korektivne mere*.
 
+## Programi Korektivnih mera
 
-## Programi korektivnih radnji
+Ako je *Korektivna mera* dugoročna, može se podeliti na više *Programa mera*.
 
-Ako je *Korektivna radnja* dugoročna, može se podijeliti u više *Programa radnji*.
-Popis se sastoji od sljedećih informacija:
-> **Broj**: je progresivni broj (obavezno).
-> **Predložena radnja**: bilješke u slobodnom obliku o temi (obavezno).
-> **Elementi koji će se evaluirati**: bilješke u slobodnom obliku o temi.
-> **Procijenjeni trošak**: je procijenjeni trošak upravljanja *Programom korektivnih radnji*.
-> **Očekivani datum zatvaranja**: je datum na koji se očekuje dovršetak *Programa korektivnih radnji*.
-> **Zatvoreno**: označava da je *Program korektivnih radnji* *Zatvoren*.
-> **Stvarni trošak**: je ukupni trošak nastao za upravljanje *Programom korektivnih radnji*.
-> **Potvrđeno**: označava da je *Program korektivnih radnji* *Potvrđen*.
-> **Ishod**: ovo je *Ishod* pripisan provjeri *Plana korektivnih radnji*.
-> **Opis ishoda**: ovo je opis *Ishoda*. 
+Lista sadrži sledeće podatke:
 
+> **Broj**: redni broj (obavezno).
+> **Predložena mera**: slobodne beleške o temi (obavezno).
+> **Elementi koji će se procenjivati**: slobodne beleške o temi.
+> **Procenjeni trošak**: procenjeni trošak upravljanja *Programom Korektivnih mera*.
+> **Očekivani datum zatvaranja**: datum kada se očekuje završetak *Programa Korektivnih mera*.
+> **Zatvoreno**: označava da je *Program Korektivnih mera* *Zatvoren*.
+> **Stvarni trošak**: ukupan trošak nastao upravljanjem *Programom Korektivnih mera*.
+> **Potvrđeno**: označava da je *Program Korektivnih mera* *Potvrđen*.
+> **Rezultat**: *Rezultat* dodeljen proveri *Programa Korektivnih mera*.
+> **Opis rezultata**: opis *Rezultata*.
 
 ### Detaljni podaci
 
-Upravljane informacije su:
-> **Odgovorna osoba**: ovo je *Zaposlenik* odgovoran za *Plan korektivnih radnji*.
-> **Odgovorna funkcija**: ovo je *Funkcija tvrtke* odgovorna za *Plan korektivnih radnji*.
-> **Ciljevi koje treba postići**: bilješke u slobodnom obliku o temi.
-> **Opis privitka**: bilješke u slobodnom obliku o sadržaju bilo kojeg priloženog dokumenta. 
->
-> **Datum zatvaranja/zatvaranja**: proširenje u koji se može unijeti:  
->
->> **Zatvoreno**: označava da je *Plan korektivnih radnji* *Zatvoren*.
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može zatvoriti *Plan korektivnih radnji*.
->> Nakon zatvaranja, automatski se predlažu sljedeći: *Datum zatvaranja* predložen na današnji datum i može se mijenjati, *Zatvorio korisnik* i *Zatvorila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* 
->>
->> **Datum zatvaranja**: ovo je datum na koji je *Plan korektivnih radnji* *Zatvoren*.
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu promijeniti ovaj datum.
->> Prilikom unosa datuma, automatski se predlažu sljedeće opcije: *Zatvorio korisnik* i *Zatvorila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* i postavljena je oznaka *Zatvoreno*.  
->>
->> **Zatvoreno od korisnika**: ovo je *A.R.M. korisnik* koji je zatvorio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
->> **Zatvoreno od osobe**: ovo je *zaposlenik* koji je zatvorio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
->> **Zatvorila funkcija**: ovo je *funkcija tvrtke* koja je zatvorila *Plan korektivnih radnji*.
->> Omogućeno samo ako je *Plan korektivnih radnji* *Zatvoren*.  
->
-> **Napomene**: bilješke u slobodnom obliku.
-> **Referenca korektivne radnje**: ovo je referenca na *korektivnu radnju* koja bi se mogla stvoriti *Planom korektivnih radnji*.
-> **Provjera učinkovitosti**: bilješke u slobodnom obliku u vezi s ishodom provjere učinkovitosti *Plana korektivnih radnji*. 
->
-> **Potvrđeno/Potvrđeni datum**: proširenje u koji se može unijeti:  
->
->> **Potvrđeno**: označava da je *Plan korektivnih radnji* *Potvrđen*.
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može provjeriti *Plan korektivnih radnji*.
->> Nakon provjere, automatski se predlažu sljedeći podaci: *Datum provjere* predložen je kao današnji datum i može se promijeniti, *Potvrđeno od strane korisnika* i *Potvrđeno od strane osobe* predloženo je povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* 
->>
->> **Datum provjere**: ovo je datum kada je *Plan korektivnih radnji* *Provjeren*.
->> Samo **Odgovorna osoba** ili **Odgovorna funkcija** može promijeniti ovaj datum.
->> Prilikom unosa datuma, automatski se predlažu sljedeće opcije: *Provjerio korisnik* i *Provjerila osoba* predloženo povezanom *A.R.M. korisniku* i *Zaposleniku* povezanom s *A.R.M. korisnikom* i postavljena je oznaka *Provjereno*. 
->>
->> **Potvrđeno od korisnika**: ovo je *A.R.M. korisnik* koji je potvrdio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
->> **Potvrđeno od osobe**: ovo je *zaposlenik* koji je potvrdio *Plan korektivnih radnji*. Ove su informacije samo za čitanje.
->> **Potvrđeno od funkcije**: ovo je *funkcija tvrtke* koja je potvrdila *Plan korektivnih radnji*.
->> Omogućeno samo ako je *Plan korektivnih radnji* *Potvrđen*.  
+Podaci kojima se upravlja su:
 
+> **Odgovorna osoba**: *Zaposleni* odgovoran za *Program Korektivnih mera*.
+> **Odgovorna funkcija**: *Funkcija preduzeća* odgovorna za *Program Korektivnih mera*.
+> **Ciljevi koje treba ostvariti**: slobodne beleške o temi.
+> **Opis priloga**: slobodne beleške o sadržaju svih priloženih dokumenata.
+>
+> **Zatvoreno/Datum zatvaranja**: proširenje u koje se mogu uneti sledeći podaci:
+>
+>> **Zatvoreno**: označava da je *Program Korektivnih mera* *Zatvoren*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu zatvoriti *Program Korektivnih mera*.
+>> Nakon zatvaranja automatski se predlažu sledeći podaci: *Datum zatvaranja*, postavljen na tekući datum uz mogućnost izmene, kao i *Zatvorio korisnik* i *Zatvorila osoba*, preuzeti iz povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*.
+>>
+>> **Datum zatvaranja**: datum kada je *Program Korektivnih mera* *Zatvoren*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu izmeniti ovaj datum.
+>> Unošenjem datuma automatski se popunjavaju *Zatvorio korisnik* i *Zatvorila osoba*, preuzeti iz povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*, a postavlja se i oznaka *Zatvoreno*.
+>>
+>> **Zatvorio korisnik**: *A.R.M. korisnik* koji je zatvorio *Program Korektivnih mera*. Ovaj podatak je samo za čitanje.
+>> **Zatvorila osoba**: *Zaposleni* koji je zatvorio *Program Korektivnih mera*. Ovaj podatak je samo za čitanje.
+>> **Zatvorila funkcija**: *Funkcija preduzeća* koja je zatvorila *Program Korektivnih mera*.
+>> Dostupno samo kada je *Program Korektivnih mera* *Zatvoren*.
+>
+> **Beleške**: slobodne beleške.
+> **Referenca Korektivne mere**: referenca na *Korektivnu meru* koja se može kreirati iz *Programa Korektivnih mera*.
+> **Provera efikasnosti**: slobodne beleške o rezultatu provere efikasnosti *Programa Korektivnih mera*.
+>
+> **Potvrđeno/Datum potvrde**: proširenje u koje se mogu uneti sledeći podaci:
+>
+>> **Potvrđeno**: označava da je *Program Korektivnih mera* *Potvrđen*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu potvrditi *Program Korektivnih mera*.
+>> Nakon potvrde automatski se predlažu sledeći podaci: *Datum provere*, postavljen na tekući datum uz mogućnost izmene, kao i *Potvrdio korisnik* i *Potvrdila osoba*, preuzeti iz povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*.
+>>
+>> **Datum provere**: datum kada je *Program Korektivnih mera* *Proveren*.
+>> Samo **Odgovorna osoba** ili **Odgovorna funkcija** mogu izmeniti ovaj datum.
+>> Unošenjem datuma automatski se popunjavaju *Potvrdio korisnik* i *Potvrdila osoba*, preuzeti iz povezanog *A.R.M. korisnika* i *Zaposlenog* povezanog sa *A.R.M. korisnikom*, a postavlja se i oznaka *Potvrđeno*.
+>>
+>> **Potvrdio korisnik**: *A.R.M. korisnik* koji je potvrdio *Program Korektivnih mera*. Ovaj podatak je samo za čitanje.
+>> **Potvrdila osoba**: *Zaposleni* koji je potvrdio *Program Korektivnih mera*. Ovaj podatak je samo za čitanje.
+>> **Potvrdila funkcija**: *Funkcija preduzeća* koja je potvrdila *Program Korektivnih mera*.
+>> Dostupno samo kada je *Program Korektivnih mera* *Potvrđen*.
+### Međukontrolne aktivnosti
 
-### Međukontrolne akcije
+Kartica sadrži informacije o međukontrolama sprovedenim na *Programu Korektivnih mera*.
 
-Kartica sadrži informacije o međukontrolama provedenim na *Planu korektivnih radnji*.
-Upravljane informacije su: 
-> **Podaci kontrole**
->> **Datum**: ovo je datum kada je provedena međukontrola.
->> **Provjereni elementi**: slobodne bilješke o elementima koji su razmatrani tijekom kontrole.
->> **Provjera učinkovitosti**: slobodne bilješke o poduzetim radnjama za provjeru učinkovitosti.
->> **Ishod**: ovo je *Ishod* pripisan međukontroli *Plana korektivnih radnji*.
->> **Opis ishoda**: ovo je opis *Ishoda* pripisanog kontroli *Plana korektivnih radnji*. 
->
-> **Potvrđeno od korisnika**
->> **Korisnik**: ovo je *Korisnik* koji je izvršio međuprovjeru.  
->
-> **Potvrđeno od osobe**
->> **Operator**: ovo je kod *Zaposlenika* koji je izvršio međukontrolu.
->> **Prezime**: ovo je prezime *Zaposlenika* koji je izvršio međukontrolu.
->> **Ime**: ovo je ime *Zaposlenika* koji je izvršio međukontrolu.   
->
-> **Potvrđeno od funkcije**
->> **Šifra**: ovo je Šifra *Funkcije tvrtke* koja je izvršila privremenu provjeru.
->> **Opis**: ovo je opis *Funkcije tvrtke* koja je izvršila privremenu provjeru.
->
-> **Napomene**: slobodna napomena.    
+Podaci kojima se upravlja su:
 
+> **Podaci o kontroli**
+>> **Datum**: datum kada je sprovedena međukontrola.
+>> **Provereni elementi**: slobodne beleške o elementima razmatranim tokom kontrole.
+>> **Provera efikasnosti**: slobodne beleške o preduzetim merama radi provere efikasnosti.
+>> **Rezultat**: *Rezultat* dodeljen međukontroli *Programa Korektivnih mera*.
+>> **Opis rezultata**: opis *Rezultata* dodeljenog kontroli *Programa Korektivnih mera*.
+>
+> **Potvrdio korisnik**
+>> **Korisnik**: *Korisnik* koji je izvršio međukontrolu.
+>
+> **Potvrdila osoba**
+>> **Operater**: šifra *Zaposlenog* koji je izvršio međukontrolu.
+>> **Prezime**: prezime *Zaposlenog* koji je izvršio međukontrolu.
+>> **Ime**: ime *Zaposlenog* koji je izvršio međukontrolu.
+>
+> **Potvrdila funkcija**
+>> **Šifra**: šifra *Funkcije preduzeća* koja je izvršila međukontrolu.
+>> **Opis**: opis *Funkcije preduzeća* koja je izvršila međukontrolu.
+>
+> **Beleške**: slobodna beleška.
 
 ### Uključeni subjekti
 
-Tablica sadrži informacije o *Funkcijama tvrtke* i/ili *Zaposlenicima* koji će biti uključeni u upravljanje *Programom korektivnih radnji*, razlozima njihovog uključivanja te očekivanim datumima provedbe i završetka.
-Popis se sastoji od sljedećih informacija:   
-> **Funkcija tvrtke**
->> **Šifra**: ovo je šifra uključene *Funkcije tvrtke*.
->> **Opis**: ovo je opis uključene *Funkcije tvrtke*.   
->   
-> **Zaposlenik**   
->> **Šifra**: šifra uključenog *Zaposlenika*.   
->> **Opis**: prezime i ime uključenog *Zaposlenika*.     
->   
-> **Upravljanje uključenošću**   
->> **Opis subjekta**: slobodna napomena u slučaju kada uključeni subjekt nije *Poslovna funkcija* ili *Zaposlenik*.   
->> **Razlog uključivanja**: slobodne napomene o temi.   
->> **Datum isteka**: datum do kojeg uključeni subjekt mora završiti aktivnosti povezane s razlogom svog uključivanja.   
->> **Odgovor**: slobodne napomene o temi.   
->> **Zatvoreno**: označava da je uključivanje subjekta završeno.     
->> Samo *Funkcija ili osoba odgovorna* za *Program korektivne radnje* ili *Poslovna funkcija* ili uključeni *Zaposlenik* mogu zatvoriti uključivanje.   
->> Prilikom zatvaranja automatski se predlaže *Datum zatvaranja*, koji je predložen kao današnji datum i može se izmijeniti.   
->> **Datum zatvaranja**: datum kada je uključivanje subjekta završeno.   
->> Samo *Funkcija ili osoba odgovorna* za *Program korektivne radnje* ili *Poslovna funkcija* ili uključeni *Zaposlenik* mogu unijeti ili izmijeniti ovaj datum.     
->> Prilikom unosa datuma automatski se postavlja oznaka *Zatvoreno*.  
->
-> **Napomene**: slobodna napomena.    
+Tabela sadrži informacije o *Funkcijama preduzeća* i/ili *Zaposlenima* koji učestvuju u upravljanju *Programom Korektivnih mera*, razlozima njihovog učešća, kao i planiranim datumima izvršenja i završetka.
 
+Lista sadrži sledeće podatke:
+
+> **Funkcija preduzeća**
+>> **Šifra**: šifra uključene *Funkcije preduzeća*.
+>> **Opis**: opis uključene *Funkcije preduzeća*.
+>
+> **Zaposleni**
+>> **Šifra**: šifra uključenog *Zaposlenog*.
+>> **Opis**: prezime i ime uključenog *Zaposlenog*.
+>
+> **Upravljanje angažovanjem**
+>> **Opis subjekta**: slobodna beleška kada uključeni subjekt nije *Funkcija preduzeća* ili *Zaposleni*.
+>> **Razlog učešća**: slobodne beleške o temi.
+>> **Datum dospeća**: datum do kojeg uključeni subjekt mora završiti aktivnosti povezane sa razlogom svog učešća.
+>> **Odgovor**: slobodne beleške o temi.
+>> **Zatvoreno**: označava da je angažovanje subjekta završeno.
+>> Samo *Odgovorna funkcija* ili *Odgovorna osoba* za *Program Korektivnih mera*, odnosno uključena *Funkcija preduzeća* ili *Zaposleni*, mogu zatvoriti angažovanje.
+>> Nakon zatvaranja automatski se predlaže *Datum zatvaranja*, postavljen na tekući datum uz mogućnost izmene.
+>> **Datum zatvaranja**: datum kada je angažovanje subjekta završeno.
+>> Samo *Odgovorna funkcija* ili *Odgovorna osoba* za *Program Korektivnih mera*, odnosno uključena *Funkcija preduzeća* ili *Zaposleni*, mogu uneti ili izmeniti ovaj datum.
+>> Unošenjem datuma automatski se postavlja oznaka *Zatvoreno*.
+>
+> **Beleške**: slobodna beleška.
 
 ### Dodatni podaci
 
-Moguće je umetnuti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za *Program korektivnih radnji*.   
-
+Moguće je uneti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za *Program Korektivnih mera*.
 
 ### Povezani dokumenti
 
-Na ovom popisu mogu se umetnuti i pregledati svi prilozi.
-Umetanje se vrši funkcijom povlačenja i ispuštanja. Povlačenjem slike ili dokumenta na područje popisa, bit će označen crvenim okvirom. Kada se otpusti tipka miša, za sliku ili dokument bit će upitani podaci za katalogizaciju (ako ih sustav već nije automatski prepoznao): *Naziv*, *Vrsta dokumenta* i *Vrsta datoteke*. 
+Na ovoj listi moguće je uneti i pregledati sve priloge.
+Unos se vrši funkcijom prevlačenja i ispuštanja (*drag and drop*). Prevlačenjem slike ili dokumenta u područje liste, ono će biti označeno crvenim okvirom. Nakon otpuštanja tastera miša, za sliku ili dokument biće zatraženi podaci za katalogizaciju (ukoliko ih sistem već nije automatski prepoznao): *Naziv*, *Tip dokumenta* i *Tip datoteke*.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcionisanju obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i polja](/docs/guide/common).

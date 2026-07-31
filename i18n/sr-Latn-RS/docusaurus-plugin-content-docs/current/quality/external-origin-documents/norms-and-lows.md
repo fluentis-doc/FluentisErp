@@ -3,38 +3,35 @@ title: Norme i Zakoni
 sidebar_position: 3
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Dokumenti vanjskog podrijetla**.
-
+Upravljanje se nalazi na putanji **Kvalitet > Dokumenti spoljnog porekla**.
 
 :::important Čemu služi
-U ovom upravljanju moguće je katalogizirati propise i zakone od interesa za tvrtku.  
-Primjer korištenja *Propisa i zakona* nalazi se u upravljanju **Tehničkim uputstvima** u kartici *Propisi i zakoni*.  
+U ovom upravljanju moguće je katalogizovati propise i zakone od interesa za preduzeće.
+
+Primer upotrebe *Propisa i zakona* nalazi se u upravljanju **Tehničkim uputstvima**, na kartici *Propisi i zakoni*.
 :::
 
-Upravljanje omogućuje unos novih zapisa ili pretraživanje postojećih radi njihovog pregledavanja, izmjene ili brisanja.
+Upravljanje omogućava unos novih zapisa ili pretragu postojećih radi njihovog pregleda, izmene ili brisanja.
 
-
-## Tipke za upravljanje
-
+## Dugmad za upravljanje
 
 ### ![](/img/neutral/common/search.png) Pretraga Normi i Zakona
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali unutar mreže rezultata.
+Obrazac se sastoji od dela za filtriranje i dela sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u delu sa rezultatima.
 
 ### ![](/img/neutral/common/new.png) Unos Normi i Zakona
 
-Da bi se unijele nove *Norme i zakoni*, potrebno je kliknuti na prvu praznu stavku u mreži ili pritisnuti tipku **Novo**.  
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+Za unos novih *Normi i Zakona* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
 
+Za novi zapis potrebno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
 ## Upravljanje podacima
 
+Podaci kojima se upravlja su:
 
-Upravljačke informacije su:  
-> **Tip**: to je "Tip normi i zakona" za *Norme i zakoni*.  
-> **Šifra**: to je kod *Norme i zakona*.  
-> **Opis**: to je opis *Norme i zakona*.  
-> **Bilješke**: slobodne napomene.  
+> **Tip**: *Tip Norme i Zakona* za *Norme i Zakone*.
+> **Šifra**: šifra *Norme i Zakona*.
+> **Opis**: opis *Norme i Zakona*.
+> **Beleške**: slobodne beleške.
 
-
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcionisanju obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i polja](/docs/guide/common).

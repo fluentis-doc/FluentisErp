@@ -1,22 +1,22 @@
 ---
-title: Pretraga Nesukladnosti
+title: Pretraga Neusklađenosti
 sidebar_position: 1
 ---
 
-Filter se nalazi na putanji **Kvaliteta > Reklamacije i Nesukladnosti > Nesukladnosti**.  
+Filter se nalazi na putanji **Kvalitet > Reklamacije i Neusklađenosti > Neusklađenosti**.
 
-Filtar podataka omogućuje unos novih *Nesukladnosti* ili pretraživanje postojećih kako bi se dokumenti pregledali, izmijenili ili izbrisali.   
+Filter podataka omogućava unos novih *Neusklađenosti* ili pretragu postojećih radi pregleda, izmene ili brisanja dokumenata.
 
-### ![](/img/neutral/common/search.png) Pretraga Nesukladnosti
+### ![](/img/neutral/common/search.png) Pretraga Neusklađenosti
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se klikne gumb **Traži** da bi se vidjeli rezultati u području rezultata.   
+Obrazac se sastoji od dela za filtriranje i dela sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u delu sa rezultatima.
 
-### ![](/img/neutral/common/new.png) Unos Nesukladnosti
+### ![](/img/neutral/common/new.png) Unos Neusklađenosti
 
-Za unos novih *Nesukladnosti* potrebno je pritisnuti gumb **Novo**.   
+Za unos nove *Neusklađenosti* potrebno je pritisnuti dugme **Novo**.
 
-### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) Prikaz Nesukladnosti
+### ![](/img/neutral/common/edit.png) Izmena ili ![](/img/neutral/common/view.png) Prikaz Neusklađenosti
 
-Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na redak koji se želi otvoriti, a za odabir jednog ili više redaka, nakon označavanja, pritisnuti tipku **Uredi** ili **Prikaži**.  
+Za otvaranje upravljanja izabranim rezultatom potrebno je dvaput kliknuti na red koji se želi otvoriti ili, nakon označavanja jednog ili više redova, pritisnuti dugme **Uredi** ili **Prikaži**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledati sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcionisanju obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i polja](/docs/guide/common).

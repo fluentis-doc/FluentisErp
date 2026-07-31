@@ -1,67 +1,69 @@
 ---
-title: Pretraga dokumenata unutarnjeg podrijetla
+title: Pretraga Dokumenata internog porekla
 sidebar_position: 1
 ---
 
-Filtar se nalazi na putanji **Kvaliteta > Dokumenti unutarnjeg podrijetla > Dokumenti unutarnjeg podrijetla**. 
+Filter se nalazi na putanji **Kvalitet > Dokumenti internog porekla > Dokumenti internog porekla**.
+Filter podataka omogućava unos novih *Dokumenata internog porekla* ili pretragu postojećih radi njihovog pregleda, izmene ili brisanja.
 
-Filtar podataka omogućuje umetanje novih *dokumenata unutarnjeg podrijetla* ili pretraživanje postojećih kako bi se pregledali, uredili ili izbrisali.   
+### ![](/img/neutral/common/search.png) Pretraga Dokumenata internog porekla
 
-### ![](/img/neutral/common/search.png) Pretraga dokumenata unutarnjeg podrijetla
+Obrazac se sastoji od dela za filtriranje i dela sa rezultatima. Nakon što postavite sve željene filtere, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u delu sa rezultatima.
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što postavite sve željene filtere, jednostavno se klikne tipka **Traži** da bi se vidjeli rezultati u prikazu.   
+### ![](/img/neutral/common/new.png) Unos Dokumenata internog porekla
 
-### ![](/img/neutral/common/new.png) Unos dokumenata unutarnjeg podrijetla
+Za unos novih *Dokumenata internog porekla* potrebno je pritisnuti dugme **Novo**.
 
-Za umetanje novih *dokumenata unutarnjeg podrijetla* potrebno je pritisnuti tipku **Novo**.  
+### ![](/img/neutral/common/edit.png) Izmeni ili ![](/img/neutral/common/view.png) Pregledaj Dokumente internog porekla
 
-### ![](/img/neutral/common/edit.png) Izmijeni ili ![](/img/neutral/common/view.png) Pregledaj dokumente unutarnjeg podrijetla
+Za otvaranje obrasca za upravljanje potrebno je dvaput kliknuti na željeni red ili, nakon odabira jednog ili više redova, pritisnuti dugme **Uredi** ili **Prikaži**.
 
-Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na redak od interesa, odabirom jednog ili više redaka, pritisnuti tipke **Uredi** ili **Prikaži**.   
+*Specifična dugmad*:
 
-*Specifične tipke*: 
-    
-### ![](/img/neutral/common/duplicate.png) Dupliciraj dokumente unutarnjeg podrijetla
+### ![](/img/neutral/common/duplicate.png) Dupliciraj Dokumente internog porekla
 
-Tipka je omogućena samo za članove *Poslovnih funkcija* zaduženih za *provjeru/odobravanje* i *izradu/izdavanje*.  
-Kako bi se duplicirao postojeći *Dokument unutarnjeg podrijetla* u novi *Dokument*, potrebno je u prikazu rezultata kliknuti na *Dokument* koji se želi duplicirati i pritisnuti tipku **Dupliciraj**. Moguće je duplicirati samo jedan *Dokument* istovremeno. Prikazat će se zahtjev za unos:   
-> **Kategorija**: *Šifra kategorije dokumenta unutarnjeg podrijetla* novog *Dokumenta* (obavezni podatak).  
-> **Šifra**: *Šifra* novog *Dokumenta* (obavezni podatak).  
-> **Naslov**: *Naslov* novog *Dokumenta* (obavezni podatak).    
+Dugme je dostupno samo članovima *Funkcija preduzeća* zaduženim za *proveru/odobravanje* i *izradu/izdavanje*.
+Da biste duplirali postojeći *Dokument internog porekla* u novi *Dokument*, potrebno je u delu sa rezultatima izabrati *Dokument* koji želite da duplirate i pritisnuti dugme **Dupliciraj**. Moguće je duplirati samo jedan *Dokument* istovremeno. Prikazaće se zahtev za unos:
+> **Kategorija**: *Šifra Kategorije Dokumenta internog porekla* novog *Dokumenta* (obavezan podatak).
+> **Šifra**: *Šifra* novog *Dokumenta* (obavezan podatak).
+> **Naslov**: *Naslov* novog *Dokumenta* (obavezan podatak).
 
-*Kategorija* i *Naslov* predlažu se iz izvornog dokumenta; *Šifra* se predlaže ako je uz *Kategoriju* povezana *Automatska kodifikacija*.  
-Nakon toga se pritisne tipka **OK** ili tipku **Otkaži** ako se želi nastaviti ili odustati od aktivnosti dupliciranja.  
-Novi kreirani *Dokument unutarnjeg podrijetla* imat će *Izdanje* i *Reviziju* postavljene na *Nula* te status *U izradi*.  
-Po završetku obrade novi *Dokument unutarnjeg podrijetla* se prikazuje.  
-    
-### Kreiraj novu reviziju *Dokumenta unutarnjeg podrijetla*
+*Kategorija* i *Naslov* preuzimaju se iz izvornog dokumenta, dok se *Šifra* predlaže ako je uz *Kategoriju* povezana *Automatska kodifikacija*.
+Nakon toga potrebno je pritisnuti dugme **OK** za nastavak ili **Otkaži** za odustajanje od postupka dupliranja.
+Novi *Dokument internog porekla* imaće *Izdanje* i *Reviziju* postavljene na *Nulu* i status *U izradi*.
+Po završetku postupka prikazaće se novi *Dokument internog porekla*.
 
-Za kreiranje nove *Revizije* postojećeg *Dokumenta unutarnjeg podrijetla*, potrebno je u prikazu rezultata kliknuti na *Dokument* sa statusom *Izdano* koji se želi duplicirati i pritisnuti tipku **Kreiraj novu reviziju**. Moguće je kreirati novu *Reviziju* za samo jedan *Dokument* istovremeno. Prikazat će se zahtjev za unos:    
-> **Razlog revizije**: kratak opis razloga koji je doveo do revizije (obavezni podatak).  
-> **Promjena u odlomcima**: opisna bilješka koja se odnosi na broj izmijenjenih odlomaka.  
-> **Promjena na stranicama**: opisna bilješka koja se odnosi na broj izmijenjenih stranica.    
+### Kreiraj novu reviziju *Dokumenta internog porekla*
 
-Nakon toga se pritisne tipka **OK** ili tipka **Otkaži** ako se želi nastaviti ili odustati od aktivnosti kreiranja.  
-Stvara se novi *Dokument unutarnjeg podrijetla*, sa svim informacijama iz izvornog *Dokumenta*, ali s povećanim indeksom *Revizije* i statusom *U reviziji*. Izvorni *Dokument* ostaje na snazi sa statusom *Izdano*.  
-Po završetku obrade novi *Dokument unutarnjeg podrijetla* se prikazuje.  
-    
-### Kreiraj novo *Izdanje* *Dokumenta unutarnjeg podrijetla*
+Za kreiranje nove *Revizije* postojećeg *Dokumenta internog porekla* potrebno je u delu sa rezultatima izabrati *Dokument* sa statusom *Izdato* koji želite da revidirate i pritisnuti dugme **Kreiraj novu reviziju**. Moguće je kreirati novu *Reviziju* samo za jedan *Dokument* istovremeno. Prikazaće se zahtev za unos:
 
-Za kreiranje novog *Izdanja* postojećeg *Dokumenta unutarnjeg podrijetla*, potrebno je u prikazu rezultata kliknuti na *Dokument* sa statusom *Izdano* koji se želi duplicirati i pritisnuti tipku **Kreiraj novo izdanje**. Moguće je kreirati novo *Izdanje* za samo jedan *Dokument* istovremeno. Prikazat će se zahtjev za unos:  
-> **Razlog revizije**: kratak opis razloga koji je doveo do revizije (obavezni podatak).  
-> **Promjena u odlomcima**: opisna bilješka koja se odnosi na broj izmijenjenih odlomaka.  
-> **Promjena na stranicama**: opisna bilješka koja se odnosi na broj izmijenjenih stranica.    
+> **Razlog revizije**: kratak opis razloga koji je doveo do revizije (obavezan podatak).
+> **Promene u odeljcima**: opisna beleška koja se odnosi na broj izmenjenih odeljaka.
+> **Promene na stranicama**: opisna beleška koja se odnosi na broj izmenjenih stranica.
 
-Nakon toga se pritisne tipka **OK** ili tipka **Otkaži** ako se želi nastaviti ili odustati od aktivnosti kreiranja.  
-Stvara se novi *Dokument unutarnjeg podrijetla*, sa svim informacijama iz izvornog *Dokumenta*, ali s povećanim indeksom *Izdanja* i statusom *U reviziji*. Izvorni *Dokument* ostaje na snazi sa statusom *Izdano*.  
-Po završetku obrade novi *Dokument unutarnjeg podrijetla* se prikazuje.  
-    
-### Poništi *Dokument unutarnjeg podrijetla*  
-Za poništavanje postojećeg *Dokumenta unutarnjeg podrijetla*, potrebno je u prikazu rezultata kliknuti na *Dokument* koji se želi ukloniti i pritisnuti tipku **Poništi dokument**. Moguće je poništiti samo jedan *Dokument* istovremeno.  
-Nakon toga se pritisne tipka **Da** ili tipka **Ne** ako se želi nastaviti ili odustati od aktivnosti poništavanja.   
-    
-### Vrati poništavanje *Dokumenta unutarnjeg podrijetla*  
-Za vraćanje prethodno *Poništenog* *Dokumenta unutarnjeg podrijetla*, potrebno je u prikazu rezultata kliknuti na *Dokument* sa statusom *Poništeno* koji se želi vratiti i pritisnuti tipku **Vrati poništavanje**. Moguće je vratiti samo jedan *Dokument* istovremeno.  
-Nakon toga pritisnite tipku **Da** ili tipku **Ne** ako se želi nastaviti ili odustati od aktivnosti vraćanja.   
+Nakon toga potrebno je pritisnuti dugme **OK** za nastavak ili **Otkaži** za odustajanje od postupka.
+Kreira se novi *Dokument internog porekla*, sa svim podacima izvornog *Dokumenta*, ali sa uvećanim indeksom *Revizije* i statusom *U reviziji*. Izvorni *Dokument* ostaje važeći sa statusom *Izdato*.
+Po završetku postupka prikazaće se novi *Dokument internog porekla*.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+### Kreiraj novo *Izdanje* *Dokumenta internog porekla*
+
+Za kreiranje novog *Izdanja* postojećeg *Dokumenta internog porekla* potrebno je u delu sa rezultatima izabrati *Dokument* sa statusom *Izdato* za koji želite da kreirate novo izdanje i pritisnuti dugme **Kreiraj novo izdanje**. Moguće je kreirati novo *Izdanje* samo za jedan *Dokument* istovremeno. Prikazaće se zahtev za unos:
+
+> **Razlog revizije**: kratak opis razloga koji je doveo do revizije (obavezan podatak).
+> **Promene u odeljcima**: opisna beleška koja se odnosi na broj izmenjenih odeljaka.
+> **Promene na stranicama**: opisna beleška koja se odnosi na broj izmenjenih stranica.
+
+Nakon toga potrebno je pritisnuti dugme **OK** za nastavak ili **Otkaži** za odustajanje od postupka.
+Kreira se novi *Dokument internog porekla*, sa svim podacima izvornog *Dokumenta*, ali sa uvećanim indeksom *Izdanja* i statusom *U reviziji*. Izvorni *Dokument* ostaje važeći sa statusom *Izdato*.
+Po završetku postupka prikazaće se novi *Dokument internog porekla*.
+
+### Poništi *Dokument internog porekla*
+
+Za poništavanje postojećeg *Dokumenta internog porekla* potrebno je u delu sa rezultatima izabrati *Dokument* koji želite da poništite i pritisnuti dugme **Poništi dokument**. Moguće je poništiti samo jedan *Dokument* istovremeno.
+Nakon toga potrebno je pritisnuti dugme **Da** za nastavak ili **Ne** za odustajanje od postupka poništavanja.
+
+### Vrati poništavanje *Dokumenta internog porekla*
+
+Za vraćanje prethodno *Poništenog* *Dokumenta internog porekla* potrebno je u delu sa rezultatima izabrati *Dokument* sa statusom *Poništeno* koji želite da vratite i pritisnuti dugme **Vrati poništavanje**. Moguće je vratiti samo jedan *Dokument* istovremeno.
+Nakon toga potrebno je pritisnuti dugme **Da** za nastavak ili **Ne** za odustajanje od postupka vraćanja.
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcionisanju obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i polja](/docs/guide/common).

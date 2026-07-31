@@ -1,35 +1,37 @@
 ---
-title: Pretraga dokumenata vanjskog podrijetla
+title: Pretraga dokumenata spoljnog porekla
 sidebar_position: 1
 ---
 
-Filter se nalazi na putanji **Kvaliteta > Dokumenti vanjskog podrijetla > Dokumenti vanjskog podrijetla**.  
+Filter se nalazi na putanji **Kvalitet > Dokumenti spoljnog porekla > Dokumenti spoljnog porekla**.
 
-Filtar podataka omogućuje unos novih *Dokumenata vanjskog podrijetla* ili pretraživanje već postojećih radi pregleda, izmjene ili brisanja. 
+Filter podataka omogućava unos novih *Dokumenata spoljnog porekla* ili pretragu postojećih radi pregleda, izmene ili brisanja.
 
-### ![](/img/neutral/common/search.png) Pretraga dokumenata vanjskog podrijetla
+### ![](/img/neutral/common/search.png) Pretraga dokumenata spoljnog porekla
 
-Forma se sastoji od područja filtra i područja rezultata. Nakon što su postavljeni svi željeni filteri, dovoljno je kliknuti na gumb **Pretraži** kako bi se rezultati prikazali unutar rezultirajuće mreže.
+Obrazac se sastoji od dela za filtriranje i dela sa rezultatima. Nakon što se postave svi željeni filteri, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u delu sa rezultatima.
 
-### ![](/img/neutral/common/new.png) Unos dokumenata vanjskog podrijetla  
+### ![](/img/neutral/common/new.png) Unos dokumenata spoljnog porekla
 
-Za unos novih *Dokumenata vanjskog podrijetla* potrebno je pritisnuti tipku **Novi**.  
+Za unos novih *Dokumenata spoljnog porekla* potrebno je pritisnuti dugme **Novo**.
 
-### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) Vizualizacija dokumenata vanjskog podrijetla
+### ![](/img/neutral/common/edit.png) Izmena ili ![](/img/neutral/common/view.png) Prikaz dokumenata spoljnog porekla
 
-Za otvaranje upravljanja unutar prikaza rezultata potrebno je dvaput kliknuti na redak od interesa ili, nakon odabira jednog ili više redaka, pritisnuti tipke **Izmijeni** ili **Prikaži**.    
+Za otvaranje upravljanja izabranim rezultatom potrebno je dvaput kliknuti na željeni red ili, nakon označavanja jednog ili više redova, pritisnuti dugme **Uredi** ili **Prikaži**.
 
-*Specifične tipke*:
-    
-### ![](/img/neutral/common/duplicate.png) Dupliciraj Dokument vanjskog podrijetla
+*Specifična dugmad*:
 
-Za dupliciranje postojećeg *Dokumenta vanjskog podrijetla* u novi *Dokument* potrebno je kliknuti u prikazu rezultata na *Dokument* koji se želi duplicirati i pritisnuti tipku **Dupliciraj**. Može se duplicirati samo jedan *Dokument* odjednom. Pojavit će se zahtjev za unos:   
-> **Kategorija**: *Šifra kategorije dokumenta vanjskog podrijetla* novog *Dokumenta* (obavezni podatak).   
-> **Šifra**: *Šifra* novog *Dokumenta* (obavezni podatak).   
-> **Izdanje/Revizija**: *Izdanje/Revizija* novog *Dokumenta*.   
-> **Naslov**: *Naslov* novog *Dokumenta* (obavezni podatak).    
+### ![](/img/neutral/common/duplicate.png) Dupliciraj Dokument spoljnog porekla
 
-Nakon toga pritisne se tipka **OK** ili tipka **Odustani** ako se želi nastaviti ili odustati od aktivnosti dupliciranja.  
-Po završetku obrade novi *Dokument vanjskog podrijetla* se prikaže.  
+Za dupliciranje postojećeg *Dokumenta spoljnog porekla* u novi *Dokument* potrebno je u prikazu rezultata označiti *Dokument* koji se želi duplicirati i pritisnuti dugme **Dupliciraj**. Moguće je duplicirati samo jedan *Dokument* istovremeno. Prikazaće se zahtev za unos sledećih podataka:
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+> **Kategorija**: *Šifra kategorije Dokumenta spoljnog porekla* novog *Dokumenta* (obavezan podatak).
+> **Šifra**: *Šifra* novog *Dokumenta* (obavezan podatak).
+> **Izdanje/Revizija**: *Izdanje/Revizija* novog *Dokumenta*.
+> **Naslov**: *Naslov* novog *Dokumenta* (obavezan podatak).
+
+Nakon toga potrebno je pritisnuti dugme **OK** za nastavak ili **Odustani** za prekid postupka dupliciranja.
+
+Po završetku obrade prikazaće se novi *Dokument spoljnog porekla*.
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcionisanju obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i polja](/docs/guide/common).
