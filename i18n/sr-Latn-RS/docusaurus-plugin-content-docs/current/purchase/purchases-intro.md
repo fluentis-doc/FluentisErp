@@ -1,70 +1,84 @@
 ---
-title: NABAVA
+title: NABAVKA
 sidebar_position: 1
 ---
 
-# Nabava
+Modul **Nabavka** u Fluentis ERP-u osmišljen je kako bi korisnicima omogućio brzo i efikasno upravljanje kompletnom dokumentacijom vezanom za upravljanje lancem snabdevanja.
 
-Modul **Nabava** u sustavu Fluentis ERP namijenjen je upravljanju cjelokupnim procesom nabave, od inicijalnog zahtjeva za nabavu do zaprimanja robe i evidentiranja ulaznih računa.
+Kreiranjem narudžbina dobavljača, ručno ili automatski, moguće je sprovesti nabavku robe potrebne za proizvodnju ili skladište i kreirati sve dokumente potrebne za proces nabavke, uključujući **prijem robe**, **ulazne račune**, **zahteve za nabavku** i **zahteve za ponudu**.
 
-Kroz ručno ili automatsko kreiranje narudžbi dobavljačima moguće je učinkovito upravljati nabavom robe i usluga potrebnih za poslovanje. Proces nabave obuhvaća izradu zahtjeva za nabavu, zahtjeva za ponudom, narudžbi dobavljačima, zaprimanja robe, ulaznih računa i ostale povezane dokumentacije.
+Povezanost sa modulom **Logistika** omogućava ažuriranje stanja zaliha i automatsko generisanje zahteva za obnovu zaliha, dok integracija sa modulom **Administracija** olakšava finansijsko upravljanje nabavkom, obezbeđujući efikasan tok procesa i tačno evidentiranje svih transakcija.
 
-Modul je integriran s ostalim područjima sustava:
+Modul **Nabavka** takođe je povezan sa modulom **Planiranje**, kroz automatsko generisanje zahteva za nabavku na osnovu potreba proizvodnje za materijalom, kao i sa modulom **Prodaja**, zahvaljujući mogućnosti kreiranja narudžbina dobavljača iz narudžbina kupaca.
 
-- **Logistika** – omogućuje automatsko generiranje zahtjeva za nabavu na temelju nedostatka zaliha te ažuriranje stanja skladišta nakon zaprimanja robe.
-- **Administracija - Računovodstvo i financije** – osigurava praćenje financijskih obveza i evidentiranje svih nabavnih transakcija.
-- **Planiranje i proizvodnja** – omogućuje kreiranje zahtjeva za nabavu na temelju potreba proizvodnje i planiranih naloga.
-- **Prodaja** – omogućuje generiranje narudžbi dobavljačima na temelju narudžbi kupaca.
+## Moduli
 
-## Moduli područja Nabave
+import Link from '@docusaurus/Link';
 
-:::info Zahtjevi za nabavu
-Kreiranje i upravljanje zahtjevima za nabavu materijala, robe i usluga na temelju potreba poslovanja, zahtjeva odjela ili nedostatka zaliha.
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-requests/general-overview">Zahtevi za nabavku</Link>
+        <p>Obrada zahteva za nabavku materijala na osnovu zahteva drugih odeljenja ili prijavljenog manjka zaliha.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/offer-request/settings">Zahtevi za ponudu</Link>
+        <p>Upoređivanje ponuda dobavljača radi izbora najpovoljnije ponude i njenog pretvaranja u narudžbinu dobavljača.</p>
+    </div>
+</div>
+
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Narudžbine dobavljača</Link>
+        <p>Upravljanje i organizacija procesa nabavke robe i usluga od dobavljača.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Prijem robe</Link>
+        <p>Evidentiranje prijema robe pre kreiranja otpremnice nabavke ili ulaznog računa.</p>
+    </div>
+</div>
+
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">Prijem robe</Link>
+        <p>Praćenje i dokumentovanje ulaza robe i evidentiranje skladišnih prijema.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-invoices/general-overview">Ulazni računi</Link>
+        <p>Evidentiranje iznosa koji preduzeće duguje dobavljaču za isporučenu robu ili pružene usluge, uključujući troškove, PDV i uslove plaćanja.</p>
+    </div>
+</div>
+
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-price-lists/general-overview">Cenovnici dobavljača</Link>
+        <p>Upravljanje i ažuriranje cena ugovorenih sa dobavljačima uz automatsku primenu cena, popusta i posebnih uslova.</p>
+    </div>
+    <div className="card">
+###     Nalog za nabavku
+        <p>Upravljanje nalozima nabavke na osnovu prethodno ugovorenih uslova sa dobavljačem.</p>
+    </div>
+</div>
+
+<div className="cardContainer">
+    <div className="card">
+###     Matrica konfiguracije popusta
+        <p><Link to="/docs/purchase/price-control/definition" className="bold-link">Politike popusta</Link></p>
+        <p>Primena popusta povezanih sa dobavljačem, klasom artikla i/ili kategorijama popusta.</p>
+        <p><Link to="/docs/purchase/price-control/formulas" className="bold-link">Formule za ažuriranje politike cena/popusta</Link></p>
+        <p>Definisanje pravila za ažuriranje cena u nabavnim i prodajnim cenovnicima.</p>
+        <p><Link to="/docs/purchase/price-control/correspondence" className="bold-link">Povezivanje kategorija popusta nabavke i prodaje</Link></p>
+        <p>Povezivanje opšte kategorije popusta sa uslovima popusta koji se primenjuju na kupce i dobavljače.</p>
+    </div>
+</div>
+
+## Brzi početak (Fast Start)
+
+:::important PAŽNJA
+Pre korišćenja dostupnih funkcionalnosti potrebno je konfigurisati tabele i parametre modula.
+
+Alternativno, možete koristiti postupak **Brzi početak**, opisan u nastavku.
 :::
 
-:::info Upit za ponudom
-Prikupljanje i usporedba ponuda dobavljača radi odabira najpovoljnije ponude i njezina pretvaranja u narudžbu dobavljaču.
-:::
+**Brzi početak** je postupak osmišljen za pojednostavljenje i ubrzavanje početne konfiguracije ERP sistema, omogućavajući automatsko popunjavanje osnovnih tabela i parametara. Ova funkcionalnost značajno smanjuje vreme i trud potreban za početnu konfiguraciju jer nije potrebno ručno unositi svako pojedinačno podešavanje.
 
-:::info Narudžbe dobavljačima
-Upravljanje procesom naručivanja robe i usluga od dobavljača te praćenje realizacije narudžbi.
-:::
-
-:::info Prijem robe
-Evidentiranje dolaska robe na skladište prije kreiranja primke ili ulaznog računa.
-:::
-
-:::info Primke nabave (DDT)
-Praćenje i evidentiranje ulaza robe u skladište te povezivanje sa zaprimanjem robe i narudžbama dobavljača.
-:::
-
-:::info Ulazni računi
-Evidentiranje računa dobavljača za isporučenu robu i usluge, uključujući obračun troškova, PDV-a i uvjeta plaćanja.
-:::
-
-:::info Cjenici dobavljača
-Upravljanje nabavnim cijenama, popustima i posebnim uvjetima ugovorenim s dobavljačima.
-:::
-
-:::info Nalog za nabavom
-Upravljanje nabavama temeljenim na unaprijed definiranim ugovorima, projektima ili komercijalnim sporazumima s dobavljačima.
-:::
-
-:::info Matrica konfiguracije popusta
-Omogućuje definiranje i održavanje pravila za cijene i popuste:
-
-- Politike popusta
-- Formule za automatsko ažuriranje cijena i popusta
-- Mapiranje kategorija nabavnih i prodajnih popusta
-- Povezivanje generičkih kategorija popusta s uvjetima primjenjivim na kupce i dobavljače
-:::
-
-# Brzi početak (Fast Start)
-
-:::warning Pažnja
-Prije korištenja funkcionalnosti modula Nabava potrebno je konfigurirati sve potrebne šifarnike, numeracije i parametre modula.
-:::
-
-Funkcionalnost **Fast Start** namijenjena je ubrzanju početne implementacije sustava. Omogućuje automatsko popunjavanje osnovnih postavki i šifarnika potrebnih za rad modula, čime se značajno smanjuje vrijeme potrebno za inicijalnu konfiguraciju.
-
-Preporučuje se proučiti dokumentaciju za Fast Start prije početka rada s modulom Nabava.
+Preporučujemo da pre početka rada sa ovim modulom pročitate odgovarajući [članak](/docs/guide/fast-start).

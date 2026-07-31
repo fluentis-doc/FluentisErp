@@ -1,19 +1,18 @@
 ---
-title: Pretraživanje zahtjeva za nabavu
+title: Pretraživanje zahteva za nabavku
 sidebar_position: 2
 ---
 
-Obrazac se nalazi u putanji **Nabava > Zahtjev za nabavom > Zahtjev za nabavom**.
+Forma se nalazi na putanji **Nabavka > Zahtev za nabavku > Zahtev za nabavku**.
 
-Omogućuje pretraživanje svih dokumenata s ciljem pregleda, uređivanja i eventualnog brisanja ili dodavanja novog dokumenta; prozor se sastoji od područja za filtriranje i rezultatske mreže.
+Omogućava pretraživanje svih dokumenata radi pregleda, uređivanja i eventualnog brisanja ili dodavanja novog dokumenta; prozor se sastoji od oblasti za filtriranje i Grid-a sa rezultatima.
 
-Nakon postavljanja svih željenih filtara, jednostavno kliknite na gumb **Traži** u *Ribbon traci* kako bi se prikazali rezultati unutar pregleda.
+Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na dugme **Traži** na *alatnoj traci* kako bi se rezultati prikazali u pregledu.
 
-Za otvaranje pojedinosti o dokumentu, dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u pojedinosti i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
+Za otvaranje detalja dokumenta dovoljno je izabrati dokument i dvaput kliknuti mišem ili kliknuti na dugme **Izmeni** (omogućava ulazak u detalje i uređivanje) ili na dugme **Prikaži** (omogućava ulazak u detalje i pregled, ali bez mogućnosti uređivanja).
 
-*Vidi također*:  
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)      
-Dodavanje novih polja u obrasce pretraživanja
+*Vidi takođe*:  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)      
+Dodavanje novih polja u obrasce za pretragu
 
-
-Specifičan za obrazac je gumb  **Novo** koji omogućuje [Stvaranje novog RDA](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request)).
+Specifično za ovu formu je dugme **Novo** koje omogućava [Kreiranje novog RDA](/docs/purchase/purchase-requests/purchase-request/insert-purchase-request)).

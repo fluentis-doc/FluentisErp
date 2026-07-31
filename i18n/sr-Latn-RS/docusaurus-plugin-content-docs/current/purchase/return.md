@@ -3,16 +3,20 @@ title: Odobrenja
 sidebar_position: 9
 --- 
 
-Nužno je napomenuti da su od verzije 607, odobrenja dobila artikle s negativnom količinom; u slučaju unosa pozitivne količine, pojavit će se skočni prozor za promjenu znaka količine. 
-Povratni računi od dobavljača razlikuju se od drugih vrsta računa jer je **Tip računa** (prikazani u tablici [Tipovi nabavnih računa](/docs/configurations/tables/purchase/purchase-invoices-type)) i **Odobrenja dobavljača** (slično će povratna dostavnica imati  **Povratni** tip). 
+Potrebno je napomenuti da od verzije 607 odobrenja podržavaju artikle sa negativnom količinom; u slučaju unosa pozitivne količine pojaviće se iskačući prozor za promenu znaka količine.
 
-Izrada povrata dobavljača može se izvršiti ručno ili postupkom.
+Povratni računi dobavljača razlikuju se od drugih tipova računa po tome što je **Tip računa** (prikazan u tabeli [Tipovi nabavnih računa](/docs/configurations/tables/purchase/purchase-invoices-type)) postavljen na **Odobrenje dobavljača** (na isti način i povratnica ima tip **Povratni**).
 
-Ručno stvaranje dobavljačkog Povrata uključuje stvaranje nove prodajne fakture. Tip računa mora imati tip odobrenja dobavljača, a dobavljač mora biti onaj kojem se vrši povrat. Iz podataka o dobavljaču prenose se zadani podaci u dokument, poput Valute, Plaćanja, Cjenika, itd.      
-Ostali podaci, poput artikala koji se vraćaju, mogu se slobodno popuniti. Dokument se može spremiti i pregledati.    
+Kreiranje povrata dobavljaču može se izvršiti ručno ili korišćenjem procedure.
 
-Povrat od dobavljača može se također stvoriti putem postupka.   
-U ribbon baru [Pretrage nabavnog računa](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) nalazi se gumb **Storno računa** (slično tome, u pretrazi otpremnice nalazi se gumb **Storno**). Ovaj gumb omogućuje stvaranje povrata povezanog s odabranim računom za kupnju. Nakon odabira računa koji treba stornirati i pritiska na gumb, otvara se prozor za **Storniranje dokumenata**, u kojem je potrebno označiti artikle koji se vraćaju i naznačiti [vrstu](/docs/configurations/tables/purchase/purchase-invoices-type) dokumenta koji treba stvoriti (predloženi su samo dokumenti s tip odobrenja dobavljača). Nakon potvrde postupka, stvorit će se račun za storno, vidljiv u Pretrazi računa. Račun se kreira s današnjim datumom i imat će ukupan iznos artikala koje treba stornirati, preuzet iz početnog računa.
+Ručno kreiranje povrata dobavljaču podrazumeva kreiranje novog ulaznog računa. Tip računa mora biti postavljen na **Odobrenje dobavljača**, a dobavljač mora biti onaj kome se vrši povrat. Iz podataka o dobavljaču automatski se preuzimaju podrazumevani podaci u dokument, kao što su valuta, plaćanje, cenovnik itd.
 
-Povrat od dobavljača može se koristiti kao i drugi dokumenti, pa se mogu tiskati, knjižiti itd.  
-Za povrate je također moguće koristiti različite **Ispise** predviđene modulom, samo ih treba filtrirati prema odabranoj vrsti dokumenta. 
+Ostali podaci, poput artikala koji se vraćaju, mogu se slobodno popuniti. Dokument se zatim može sačuvati i pregledati.
+
+Povrat dobavljaču može se kreirati i korišćenjem procedure.
+
+Na alatnoj traci u [Pretrazi nabavnih računa](/docs/purchase/purchase-invoices/insert-purchase-invoice/search-purchase-invoices) nalazi se dugme **Storno računa** (na isti način, u pretrazi otpremnica nalazi se dugme **Storno**). Ovo dugme omogućava kreiranje povrata povezanog sa izabranim nabavnim računom. Nakon izbora računa koji treba stornirati i klika na dugme, otvara se prozor **Storniranje dokumenata**, u kojem je potrebno označiti artikle koji se vraćaju i navesti [tip](/docs/configurations/tables/purchase/purchase-invoices-type) dokumenta koji treba kreirati (predlažu se samo dokumenti sa tipom **Odobrenje dobavljača**). Nakon potvrde procedure kreiraće se storno račun, vidljiv u pretrazi računa. Račun se kreira sa današnjim datumom i sadržaće ukupan iznos artikala koji se storniraju, preuzet sa originalnog računa.
+
+Povrat dobavljaču može se koristiti kao i ostali dokumenti, pa ga je moguće štampati, knjižiti itd.
+
+Za povrate je takođe moguće koristiti različite **Štampe** predviđene modulom, uz filtriranje prema izabranom tipu dokumenta.

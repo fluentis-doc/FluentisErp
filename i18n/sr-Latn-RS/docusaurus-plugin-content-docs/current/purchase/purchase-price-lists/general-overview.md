@@ -3,42 +3,42 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul se nalazi u odjeljku **Nabava > Cjenici dobavljača** i omogućuje operateru stvaranje i ažuriranje cjenika po kodu dobavljača.
+Modul se nalazi u odeljku **Nabavka > Cenovnici dobavljača** i omogućava operateru kreiranje i ažuriranje cenovnika prema šifri dobavljača.
 
 # Uvod
 
-Modul se nalazi u izborniku **Nabava > Cjenici dobavljača**.
+Modul se nalazi u meniju **Nabavka > Cenovnici dobavljača**.
 
-Putem ovog modula moguće je centralizirano kreirati, održavati i upravljati nabavnim cjenicima dobavljača, čime se osigurava pravilna primjena ugovorenih nabavnih cijena tijekom procesa nabave. Modul omogućuje upravljanje višestrukim cjenicima, definiranje popusta i posebnih uvjeta nabave te praćenje promjena cijena kroz vrijeme.
+Putem ovog modula moguće je centralizovano kreirati, održavati i upravljati nabavnim cenovnicima dobavljača, čime se obezbeđuje pravilna primena ugovorenih nabavnih cena tokom procesa nabavke. Modul omogućava upravljanje višestrukim cenovnicima, definisanje popusta i posebnih uslova nabavke, kao i praćenje promena cena tokom vremena.
 
 ## Glavne funkcionalnosti
 
-- **Upravljanje cijenama** – omogućuje brzo dodavanje i ažuriranje cijena artikala, uz osiguravanje točnih i ažurnih podataka.
+- **Upravljanje cenama** – omogućava brzo dodavanje i ažuriranje cena artikala, uz obezbeđivanje tačnih i ažurnih podataka.
 
-- **Uvoz cijena iz vanjskih izvora** – cjenici se mogu uvoziti iz datoteka (npr. Excel), čime se smanjuje potreba za ručnim unosom i mogućnost pogrešaka.
+- **Uvoz cena iz spoljnih izvora** – cenovnici se mogu uvoziti iz datoteka (npr. Excel), čime se smanjuje potreba za ručnim unosom i mogućnost grešaka.
 
-- **Vremenska valjanost cijena** – moguće je definirati razdoblje važenja pojedine cijene, što olakšava upravljanje promotivnim cijenama, sezonskim promjenama i periodičnim korekcijama cijena.
+- **Vremensko važenje cena** – moguće je definisati period važenja pojedinačne cene, što olakšava upravljanje promotivnim cenama, sezonskim promenama i periodičnim korekcijama cena.
 
-- **Upravljanje popustima** – podržano je definiranje automatskih ili ručnih popusta prema postotku ili količini te određivanje posebnih uvjeta za pojedine artikle.
+- **Upravljanje popustima** – podržano je definisanje automatskih ili ručnih popusta prema procentu ili količini, kao i određivanje posebnih uslova za pojedine artikle.
 
-- **Posebni uvjeti nabave za dobavljače** – moguće je povezati dobavljača s određenom kategorijom nabavnog popusta i definirati individualne uvjete nabave prema postojećim poslovnim dogovorima.
+- **Posebni uslovi nabavke za dobavljače** – moguće je povezati dobavljača sa određenom kategorijom nabavnog popusta i definisati individualne uslove nabavke prema postojećim poslovnim dogovorima.
 
-- **Više valuta** – modul podržava vođenje cjenika u različitim valutama, uz automatsku primjenu tečaja i preračun cijena.
+- **Više valuta** – modul podržava vođenje cenovnika u različitim valutama, uz automatsku primenu kursa i preračun cena.
 
-- **Masovno ažuriranje cjenika** – omogućuje istovremenu izmjenu većeg broja cijena, razdoblja važenja i uvjeta nabave.
+- **Masovno ažuriranje cenovnika** – omogućava istovremenu izmenu većeg broja cena, perioda važenja i uslova nabavke.
 
-- **Izvještavanje i analitika** – dostupni su izvještaji i pregledi za analizu cijena, praćenje promjena i donošenje odluka u procesu nabave.
+- **Izveštavanje i analitika** – dostupni su izveštaji i pregledi za analizu cena, praćenje promena i donošenje odluka u procesu nabavke.
 
-- **Povijest promjena cijena** – sustav vodi evidenciju svih promjena cijena kako bi se mogle pratiti korekcije i analizirati trendovi tijekom vremena.
+- **Istorija promena cena** – sistem vodi evidenciju svih promena cena kako bi se mogle pratiti korekcije i analizirati trendovi tokom vremena.
 
 ## Integracija
 
-Upravljanje cjenicima dobavljača potpuno je integrirano s modulima nabave i ulaznih računa. Time se osigurava da se tijekom cijelog procesa nabave koriste aktualne i ugovorene nabavne cijene te da su troškovi usklađeni s definiranim uvjetima suradnje s dobavljačima.
+Upravljanje cenovnicima dobavljača potpuno je integrisano sa modulima nabavke i ulaznih računa. Time se obezbeđuje da se tokom celog procesa nabavke koriste aktuelne i ugovorene nabavne cene i da su troškovi usklađeni sa definisanim uslovima saradnje sa dobavljačima.
 
-Integracija omogućuje pouzdanu kontrolu nabavnih troškova, smanjuje mogućnost pogrešaka i doprinosi učinkovitijem upravljanju nabavnim procesima.
+Integracija omogućava pouzdanu kontrolu nabavnih troškova, smanjuje mogućnost grešaka i doprinosi efikasnijem upravljanju procesima nabavke.
 
-## Početne postavke
+## Početna podešavanja
 
-Prije početka rada s modulom potrebno je definirati pripadajuće šifrarnike i postavke potrebne za upravljanje cjenicima dobavljača.
+Pre početka rada sa modulom potrebno je definisati odgovarajuće šifarnike i podešavanja potrebna za upravljanje cenovnicima dobavljača.
 
-Prije nego što nastavite s generiranjem dokumenta, trebate popuniti obrazac, trebate popuniti obrazac [Vrste cjenika dobavljača](/docs/configurations/tables/purchase/purchase-price-list-type) u odjeljku *Tablice*.
+Pre nego što nastavite sa generisanjem dokumenta, potrebno je popuniti obrazac [Tipovi cenovnika dobavljača](/docs/configurations/tables/purchase/purchase-price-list-type) u odeljku *Tabele*.

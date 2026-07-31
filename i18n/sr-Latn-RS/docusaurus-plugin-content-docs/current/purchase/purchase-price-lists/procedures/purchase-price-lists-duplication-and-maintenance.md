@@ -1,47 +1,49 @@
 ---
-title: Kopiranje i održavanje nabavnih cjenika
+title: Kopiranje i održavanje nabavnih cenovnika
 sidebar_position: 3
 ---
 
-Ova procedura omogućuje ažuriranje cjenika dobavljača.    
+Ova procedura omogućava ažuriranje cenovnika dobavljača.
 
-### Dostupni filtri
+### Dostupni filteri
 
-Rezultate je moguće filtrirati prema: *Datumu početka/kraja valjanosti*, *Valuti*, *Artiklu*, *Barkodu* artikla ili samo prema artiklima koji su *prometovani*, odnosno povezani s dokumentima od određenog datuma nadalje.  
+Rezultate je moguće filtrirati prema: *Datumu početka/kraja važenja*, *Valuti*, *Artiklu*, *Barkodu* artikla ili samo prema artiklima koji su *prometovani*, odnosno povezani sa dokumentima od određenog datuma nadalje.
 
-Ako je zadan filter *Datum početka valjanosti*, aplikacija prikazuje samo artikle iz cjenika koji su važeći na uneseni datum. U suprotnom, prikazat će se svi artikli, uključujući i one iz cjenika koji više nisu važeći.      
+Ako je zadat filter *Datum početka važenja*, aplikacija prikazuje samo artikle iz cenovnika koji važe na uneti datum. U suprotnom, prikazaće se svi artikli, uključujući i one iz cenovnika koji više nisu važeći.
 
-### Tablica artikala
+### Tabela artikala
 
-Nakon što se odaberu željeni filteri, klikom na *Traži* tablica će se ispuniti svim artiklima koji zadovoljavaju zadane kriterije. Stupci tablice su:       
-- **Konto/Podkonto/Opis**: prikazuje nositelja cjenika ako je personaliziran.        
-- **Klasa/Šifra/Opis artikla**: identifikacijski podaci artikla iz cjenika.      
-- **Valuta**: valuta cjenika.    
-- **Jedinica mjere**: preuzeta iz cjenika.        
-- **Cijena**: cijena artikla navedena u cjeniku.       
-- **Popust**: eventualni popust naveden u cjeniku (samo fiksni popust).  
-- **Neto cijena**: u ovoj koloni se navodi *Cijena* bez *Popusta*.  
-- **Od datuma valjanosti**: datum od kojeg je cjenik važeći.    
-- **Do datuma valjanosti**: eventualni datum isteka valjanosti.      
-- **Datum zadnjeg dokumenta**: datum najnovije otpremnice koja sadrži taj artikl i cjenik.      
-- **Količina**: količina na koju se odnosi cijena.    
-- **Varijanta/Opis varijante**: prikazuje šifru i opis varijante, ako postoji.  
-- **Kretanje**: aktivna oznaka znači da su za taj artikl i cjenik zabilježeni skladišni prometi.  
+Nakon izbora željenih filtera, klikom na *Traži* tabela će biti popunjena svim artiklima koji ispunjavaju zadate kriterijume. Kolone tabele su:
+
+- **Konto/Podkonto/Opis**: prikazuje nosioca cenovnika ako je personalizovan.
+- **Klasa/Šifra/Opis artikla**: identifikacioni podaci artikla iz cenovnika.
+- **Valuta**: valuta cenovnika.
+- **Jedinica mere**: preuzeta iz cenovnika.
+- **Cena**: cena artikla navedena u cenovniku.
+- **Popust**: eventualni popust naveden u cenovniku (samo fiksni popust).
+- **Neto cena**: u ovoj koloni prikazuje se *Cena* bez *Popusta*.
+- **Od datuma važenja**: datum od kojeg cenovnik važi.
+- **Do datuma važenja**: eventualni datum isteka važenja.
+- **Datum poslednjeg dokumenta**: datum najnovije otpremnice koja sadrži taj artikal i cenovnik.
+- **Količina**: količina na koju se odnosi cena.
+- **Varijanta/Opis varijante**: prikazuje šifru i opis varijante, ako postoji.
+- **Kretanje**: aktivna oznaka znači da su za taj artikal i cenovnik evidentirani skladišni prometi.
 
 ### Alatna traka
 
-Dostupne tipke u traci izbornika su:     
-- **Ažuriraj**: otvara pop-up prozor za nastavak ažuriranja cijene artikla u cjeniku; potrebno je navesti:
-1. **Datum početka valjanosti** redova cjenika koji se ažuriraju (po želji se može unijeti i **Datum kraja valjanosti**, nije obavezno)
-2. **Zaokruživanja** koje sadrži pravila za promjenu cijena i popusta u cjeniku, ili  
-3. **Povećanje postotka**, uklanjanjem šifre zaokruživanja i ručnim unosom postotka (ili vrijednosti).  
-4. **OK** za izvršenje ažuriranja.  
+Dostupna dugmad na alatnoj traci su:
+
+- **Ažuriraj**: otvara iskačući prozor za nastavak ažuriranja cene artikla u cenovniku; potrebno je navesti:
+1. **Datum početka važenja** redova cenovnika koji se ažuriraju (po želji se može uneti i **Datum kraja važenja**, nije obavezno)
+2. **Zaokruživanje** koje sadrži pravila za promenu cena i popusta u cenovniku, ili
+3. **Procenat povećanja**, uklanjanjem šifre zaokruživanja i ručnim unosom procenta (ili vrednosti).
+4. **OK** za izvršavanje ažuriranja.
 
 :::important Zapamti
-Ako se ne specificira *Datum početka valjanosti*, ažuriranje ne daje nikakve rezultate i ne izvršava se.
-:::  
+Ako nije naveden *Datum početka važenja*, ažuriranje neće dati rezultate i neće biti izvršeno.
+:::
 
-- **Zatvori**: otvara skočni prozor u kojem se unosi *Datum kraja valjanosti* za odabrane stavke cjenika; *Datum kraja valjanosti* mora biti veći od najkasnijeg datuma posljednjeg dokumenta koji se odnosi na stavke cjenika koje treba zatvoriti (isteći).       
-- **Kopiraj cjenike**: otvara skočni prozor i, za odabrane stavke cjenika, stvara ili dodaje nove stavke u novi cjenik ili u već postojeći cjenik; moguće je, za odabrane stavke, stvoriti novi cjenik specificirajući *Dobavljača*, koji može biti različit od onog u početnom cjeniku, *Datum valjanosti od* i *Valutu*; s flagom *Zadrži iste datume kao u izvornom cjeniku* stvara se cjenik na ime drugog dobavljača, ali s istim datumima valjanosti.    
-- **Popusti**: otvara skočni prozor za dodjeljivanje odabranim redovima *Popusta* po redu, dodajući ih postojećima ili ih zamjenjujući korištenjem prekidača *Izbriši prethodne rabate*.    
-- **Ponovno otvaranje cjenika**: se se koristi, u slučaju redaka cjenika s *Datumom kraja valjanosti*, ti redovi se prikazuju u cjeniku *bez* datuma isteka valjanosti.  
+- **Zatvori**: otvara iskačući prozor u kojem se unosi *Datum kraja važenja* za izabrane stavke cenovnika; *Datum kraja važenja* mora biti kasniji od najnovijeg datuma poslednjeg dokumenta koji se odnosi na stavke cenovnika koje treba zatvoriti (isteći).
+- **Kopiraj cenovnike**: otvara iskačući prozor i za izabrane stavke cenovnika kreira ili dodaje nove stavke u novi ili postojeći cenovnik; moguće je za izabrane stavke kreirati novi cenovnik definisanjem *Dobavljača*, koji može biti različit od onog u izvornom cenovniku, *Datuma važenja od* i *Valute*; aktiviranjem oznake *Zadrži iste datume kao u izvornom cenovniku* kreira se cenovnik za drugog dobavljača, ali sa istim datumima važenja.
+- **Popusti**: otvara iskačući prozor za dodelu *Popusta* izabranim redovima, njihovim dodavanjem postojećima ili zamenom korišćenjem opcije *Obriši prethodne rabate*.
+- **Ponovno otvaranje cenovnika**: koristi se kako bi se redovi cenovnika sa *Datumom kraja važenja* ponovo prikazali u cenovniku *bez* datuma isteka važenja.

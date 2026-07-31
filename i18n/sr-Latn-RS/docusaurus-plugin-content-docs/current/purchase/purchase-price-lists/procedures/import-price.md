@@ -1,101 +1,100 @@
 ---
-title: Uvoz cijena dobavljača
+title: Uvoz cena dobavljača
 sidebar_position: 3
 ---
 
-# Uvoz iz cjenika dobavljača
+# Uvoz iz cenovnika dobavljača
 
-Funkcija se pokreće putem izbornika **Nabava > Cjenici dobavljača > Procedure > Uvoz cijena dobavljača**.
+Funkcija se pokreće putem menija **Nabavka > Cenovnici dobavljača > Procedure > Uvoz cena dobavljača**.
 
-Omogućuje uvoz artikala koji su prethodno učitani postupkom uvoza cjenika dobavljača ili artikala dostupnih za uvoz iz vanjskih izvora (npr. BizLink). Postupkom je moguće kreirati nove artikle, ažurirati postojeće kartice artikala te generirati novi cjenik dobavljača s ažuriranim cijenama.
+Omogućava uvoz artikala koji su prethodno učitani postupkom uvoza cenovnika dobavljača ili artikala dostupnih za uvoz iz spoljnih izvora (npr. BizLink). Postupkom je moguće kreirati nove artikle, ažurirati postojeće kartice artikala i generisati novi cenovnik dobavljača sa ažuriranim cenama.
 
 :::note Napomena
-Prije pokretanja uvoza potrebno je definirati mapiranje između kategorija popusta koje koristi dobavljač i kategorija popusta definiranih u sustavu. Mapiranje se definira u proceduri **Mapiranje kategorija nabavnih i prodajnih popusta**.
+Pre pokretanja uvoza potrebno je definisati mapiranje između kategorija popusta koje koristi dobavljač i kategorija popusta definisanih u sistemu. Mapiranje se definiše u proceduri **Mapiranje kategorija nabavnih i prodajnih popusta**.
 :::
 
 # Filter
 
-U glavnoj tablici prikazuju se artikli pronađeni prema zadanim kriterijima pretraživanja.
+U glavnoj tabeli prikazuju se artikli pronađeni prema zadatim kriterijumima pretrage.
 
-Artikle je moguće označiti za uvoz uključivanjem oznake na pojedinom retku. Artikli koji već postoje u sustavu prikazuju se različitom bojom radi lakšeg razlikovanja.
+Artikle je moguće označiti za uvoz uključivanjem oznake na pojedinačnom redu. Artikli koji već postoje u sistemu prikazuju se različitom bojom radi lakšeg razlikovanja.
 
-U donjoj tablici prikazuju se svi artikli označeni za uvoz.
+U donjoj tabeli prikazuju se svi artikli označeni za uvoz.
 
 ## Dostupne funkcije
 
-- **Uvoz** – pokreće uvoz označenih artikala prema parametrima definiranim u kartici *Parametri*.
+- **Uvoz** – pokreće uvoz označenih artikala prema parametrima definisanim na kartici *Parametri*.
 
-- **Provjeri odabir** – označava sve retke trenutno odabrane u tablici.
+- **Proveri izbor** – označava sve redove trenutno izabrane u tabeli.
 
-- **Poništi odabir** – uklanja oznaku sa svih odabranih redaka.
+- **Poništi izbor** – uklanja oznaku sa svih izabranih redova.
 
 # Parametri
 
-U ovoj kartici određuje se koje će se informacije prenijeti na karticu artikla te na koji će se način kreirati novi cjenik dobavljača.
+Na ovoj kartici određuje se koje će informacije biti prenete na karticu artikla i na koji način će biti kreiran novi cenovnik dobavljača.
 
 ## Kreiranje artikala
 
-- **Kreiraj artikle** – omogućuje automatsko kreiranje novih artikala za sve odabrane zapise koji još ne postoje u sustavu.
+- **Kreiraj artikle** – omogućava automatsko kreiranje novih artikala za sve izabrane zapise koji još ne postoje u sistemu.
 
 ## Ažuriranje podataka artikla
 
-- **Ažuriraj podatke artikla** – omogućuje odabir podataka koji će se ažurirati na postojećim artiklima.
+- **Ažuriraj podatke artikla** – omogućava izbor podataka koji će biti ažurirani na postojećim artiklima.
 
-Moguće je ažurirati sljedeće podatke:
+Moguće je ažurirati sledeće podatke:
 
 - Opis artikla
 - Komercijalni naziv
 - Barkod
-- Pakiranje
+- Pakovanje
 - Težinu
 - Nomenklaturu
 - Kategoriju nabavnog popusta
 - Kategoriju prodajnog popusta
-- Povratna ambalaža
+- Povratnu ambalažu
 
-## Unos cjenika dobavljača
+## Unos cenovnika dobavljača
 
-- **Unos cjenik dobavljača** – kreira novi cjenik za sve odabrane artikle.
+- **Unos cenovnika dobavljača** – kreira novi cenovnik za sve izabrane artikle.
 
-Obavezni podaci za kreiranje cjenika su:
+Obavezni podaci za kreiranje cenovnika su:
 
-- Datum početka valjanosti
+- Datum početka važenja
 - Valuta
 
 ## Dobavljač / Konto
 
-- Definira dobavljača za kojeg se kreira cjenik.
-- Podatak se može automatski prenijeti i na karticu artikla kao zadani dobavljač.
+- Definiše dobavljača za kojeg se kreira cenovnik.
+- Podatak se može automatski preneti i na karticu artikla kao podrazumevani dobavljač.
 
 ## Dodatni parametri za nove artikle
 
-Sljedeće postavke koriste se samo prilikom kreiranja novih artikala:
+Sledeća podešavanja koriste se samo prilikom kreiranja novih artikala:
 
-- **Klasa artikla** – koristi se ako klasa artikla nije definirana u uvezenim podacima.
+- **Klasa artikla** – koristi se ako klasa artikla nije definisana u uvezenim podacima.
 
-- **PDV stopa** – zadana stopa PDV-a koja će biti dodijeljena novom artiklu.
+- **Stopa PDV-a** – podrazumevana stopa PDV-a koja će biti dodeljena novom artiklu.
 
-- **Jedinica mjere artikla** – definira glavnu jedinicu mjere artikla.
+- **Jedinica mere artikla** – definiše glavnu jedinicu mere artikla.
 
-- **Promet nabave/prodaje** – određuje način fakturiranja za novi artikl.
+- **Promet nabavke/prodaje** – određuje način fakturisanja za novi artikal.
 
-- **Cijena jedinica mjere** – definira jedinicu mjere na koju se odnosi cijena iz cjenika dobavljača.
+- **Cena jedinice mere** – definiše jedinicu mere na koju se odnosi cena iz cenovnika dobavljača.
 
-- **Jedinica mjere težine** – definira jedinicu mjere koja će se koristiti za težinu artikla.
+- **Jedinica mere težine** – definiše jedinicu mere koja će se koristiti za težinu artikla.
 
-- **Formula** – određuje formulu za automatsko ažuriranje cijena.
+- **Formula** – određuje formulu za automatsko ažuriranje cena.
 
-- **Vrsta popusta** – definira zadanu vrstu popusta za novokreirani artikl.
+- **Tip popusta** – definiše podrazumevani tip popusta za novokreirani artikal.
 
 - **Barkod** – određuje način obrade barkoda prilikom kreiranja artikla.
 
 # Greške
 
-Kartica **Greška** prikazuje sve zapise koji nisu uspješno obrađeni tijekom uvoza.
+Kartica **Greška** prikazuje sve zapise koji nisu uspešno obrađeni tokom uvoza.
 
-U gornjoj tablici prikazuju se artikli za koje je došlo do pogreške, dok se u donjoj tablici prikazuje pripadajući kod ili opis greške.
+U gornjoj tabeli prikazuju se artikli za koje je došlo do greške, dok se u donjoj tabeli prikazuje odgovarajući kod ili opis greške.
 
 # Rezultati
 
-Kartica **Rezultati** prikazuje sve artikle koji su uspješno uvezeni ili ažurirani tijekom postupka.
-
+Kartica **Rezultati** prikazuje sve artikle koji su uspešno uvezeni ili ažurirani tokom postupka.

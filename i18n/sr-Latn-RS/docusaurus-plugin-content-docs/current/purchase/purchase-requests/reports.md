@@ -1,16 +1,22 @@
 ---
-title: Ispisi zahtjeva za nabavu
+title: Štampa zahteva za nabavku
 sidebar_position: 4
 ---
 
-Pristup raznim ispisima računa ostvaruje se iz izbornika  **Nabava > Izvještaji > Zahtjev za nabavom**.
+Pristup različitim štampama zahteva ostvaruje se iz menija **Nabavka > Izveštaji > Zahtev za nabavku**.
 
-Funkcija **Ispisa zahtjeva za nabavu** koristi se za masovno ispisivanje već unesenih zahtjeva u sustavu, prema filterima specificiranim u početnom obrascu. 
-Prvi filteri koji se prikazuju odnose se na informacije o zaglavlju dokumenata, poput vrste, broja dokumenta i dobavljača. 
-U grupi “Napredno pretraživanje” mogu se označiti statusi zahtjeva koji će se koristiti za filtriranje. 
-Također je moguće filtrirati po Artiklu ili Proizvodnom nalogu prisutnom u zahtjevima za kupnju. 
-Za pokretanje ispisa, nakon postavljanja željenih filtera, dovoljno je pritisnuti gumb “Prethodni pregled” u *Ribbon traci* kako bi se dobio pregled ispisa na ekranu. 
-Napomena - pregled ispisa neće u bilo kojem slučaju promijeniti status dokumenta. 
-Ako je potrebno izvršiti ispis na papir ili u datoteku, potrebno je pritisnuti gumb *Ispis*.
+Funkcija **Štampa zahteva za nabavku** koristi se za masovnu štampu već unetih zahteva u sistemu, prema filterima definisanim u početnoj formi.
 
-Pogledajte opći dokument za [pregled i ispis](/docs/guide/common/operations-with-data/reports) dokumenata.
+Prvi filteri koji se prikazuju odnose se na informacije iz zaglavlja dokumenata, kao što su tip, broj dokumenta i dobavljač.
+
+U grupi **Napredna pretraga** mogu se označiti statusi zahteva koji će se koristiti za filtriranje.
+
+Takođe je moguće filtrirati po artiklu ili proizvodnom nalogu prisutnom u zahtevima za nabavku.
+
+Za pokretanje štampe, nakon postavljanja željenih filtera, dovoljno je pritisnuti dugme **Pregled** na *alatnoj traci* kako bi se prikazao pregled štampe na ekranu.
+
+Napomena – pregled štampe ni u kom slučaju neće promeniti status dokumenta.
+
+Ako je potrebno izvršiti štampu na papir ili u datoteku, potrebno je pritisnuti dugme **Štampa**.
+
+Pogledajte opšti dokument za [pregled i štampu](/docs/guide/common/operations-with-data/reports) dokumenata.

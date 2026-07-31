@@ -3,16 +3,18 @@ title: Upravljanje kategorijama popusta
 sidebar_position: 4
 ---
 
-U Fluentisu moguće je dodjeljivanje specifičnih popusta po kategorijama artikala unutar dobavljačevog cjenika. 
-Za postizanje ovog cilja potrebni su određeni koraci:
+U Fluentisu je moguće dodeljivati specifične popuste po kategorijama artikala unutar cenovnika dobavljača.
 
-- U *Šifarnik artikla* > kartica *popusti na nabavu*, potrebno je unijeti kategoriju popusta s *Datumom početka valjanosti*;  
+Za postizanje ovog cilja potrebno je izvršiti sledeće korake:
 
-- U *Šifarnik dobavljača* > kartica *Cjenici* potrebno je unijeti  **Cjenik**, s aktivnim oznakama za **Upravljanje cijenama**;  
+- U *Šifarniku artikala* > kartica *Popusti na nabavku*, potrebno je uneti kategoriju popusta sa *Datumom početka važenja*;
 
-- U kartici *Matrica Konfiguracije Popusta* potrebno je unijeti  **Dobavljača**, **Kategoriju popusta za kupovinu**, **Datum valjanosti** i **Popust** (u rešetki *Detalji*);  
-- Također, mora postojati **Cjenik dobavljača** koji je važeći na datum valjanosti politike popusta i koji sadrži artikle s dodijeljenom kategorijom popusta u šifarniku, za obnovu osnovne cijene. 
+- U *Šifarniku dobavljača* > kartica *Cenovnici* potrebno je uneti **Cenovnik**, sa aktivnim oznakama za **Upravljanje cenama**;
 
-Nakon ovih koraka, prilikom izrade **dokumenta o nabavi**, kao što je narudžbenica, popusti se automatski dodjeljuju i za kategorije popusta.
+- Na kartici *Matrica konfiguracije popusta* potrebno je uneti **Dobavljača**, **Kategoriju popusta za nabavku**, **Datum važenja** i **Popust** (u Grid-u *Detalji*);
+
+- Takođe, mora postojati **Cenovnik dobavljača** koji važi na datum važenja politike popusta i koji sadrži artikle sa dodeljenom kategorijom popusta u šifarniku, radi preuzimanja osnovne cene.
+
+Nakon ovih koraka, prilikom kreiranja **dokumenta nabavke**, kao što je narudžbina, popusti se automatski dodeljuju i za kategorije popusta.
 
 ![](/img/it-it/purchase/discount-categories/purchase-order.png)

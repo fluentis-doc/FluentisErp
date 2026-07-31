@@ -1,18 +1,18 @@
 ---
-title: Pretraga cjenika dobavljača
+title: Pretraga cenovnika dobavljača
 sidebar_position: 2
 ---
 
-Obrazac se otvara putem putanje **Nabava > Cjenici dobavljača > Cjenici dobavljača**.
+Forma se otvara putem putanje **Nabavka > Cenovnici dobavljača > Cenovnici dobavljača**.
 
-Omogućuje pretraživanje svih dokumenata s ciljem pregleda, uređivanja, eventualnog brisanja ili stvaranja novog dokumenta; prozor se sastoji od područja za filtriranje i mreže rezultata.
-Nakon postavljanja svih željenih filtera, jednostavno kliknite na gumb **Traži** koji se nalazi u *Ribbon traci* kako biste prikazali rezultate unutar mreže rezultata.
+Omogućava pretragu svih dokumenata radi pregleda, uređivanja, eventualnog brisanja ili kreiranja novog dokumenta; prozor se sastoji od oblasti za filtriranje i Grid-a sa rezultatima.
 
-Za otvaranje pojedinosti o dokumentu, dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u detalje i uređivanje) ili gumb **Prikaži** (omogućuje ulazak u detalje i pregled, ali bez mogućnosti uređivanja).
+Nakon podešavanja svih željenih filtera, dovoljno je kliknuti na dugme **Traži** koje se nalazi na *alatnoj traci* kako bi se rezultati prikazali u Grid-u sa rezultatima.
 
-*Vidi također*:    
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)     
-Dodavanje novih polja u obrasce pretraživanja  
+Za otvaranje detalja dokumenta dovoljno je izabrati dokument i dvaput kliknuti mišem ili kliknuti na dugme **Izmeni** (omogućava ulazak u detalje i uređivanje) ili na dugme **Prikaži** (omogućava ulazak u detalje i pregled, bez mogućnosti uređivanja).
 
+*Pogledajte takođe*:    
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)     
+Dodavanje novih polja u forme za pretragu
 
-Iz ove forme također je moguće [Stvoriti novi cjenik], klikom na gumb **Novo**.
+Iz ove forme takođe je moguće [Kreirati novi cenovnik], klikom na dugme **Novo**.
