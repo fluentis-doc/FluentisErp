@@ -122,7 +122,7 @@ Ovdje se predlaže informacija unesena u *Šifarnik subjekta > kartica Dodatni p
 
 ## Procedure:
 
-### Automatski utovar (zaduživanje) skladištda
+### Automatski utovar (zaduživanje) skladišta
 
 Ovaj postupak pokreće se pomoću gumba **Automatsko zaduživanje skladišta** koji se nalazi u zaglavlju dokumenta i poštuje niz prethodno postavljenih parametara na računu. Za detalje pogledajte identičan postupak: [Učitavanje računa o kupnji u skladište](/docs/purchase/purchase-invoices/procedures/purchase-invoices-load-on-warehouse).
 
@@ -345,7 +345,7 @@ Moguće je da nedostatak te informacije uzrokuje pogreške u knjiženju računa 
 
 **Alternativna količina**: predložena je vrijednost koja se odnosi na alternativnu mjeru, a izračunava se množenjem ili dijeljenjem *upraviteljske količine* (koja se odnosi na glavnu jedinicu mjere) s *faktorom pretvorbe* postavljenim u kartici *Alternativne mjernih jedinica u šifarnik artikla*.
 
-**Skadište/Opis/Predložak**: Ovi podaci su potrebni za evidentiranje ulaza u skladištu. Preuzimaju se na osnovu dokumenta nabave iz tablice *Vrste narudžbi/Otpremnice/Primke* ili se unose ručno.
+**Skladište/Opis/Predložak**: Ovi podaci su potrebni za evidentiranje ulaza u skladištu. Preuzimaju se na osnovu dokumenta nabave iz tablice *Vrste narudžbi/Otpremnice/Primke* ili se unose ručno.
 
 **Težine**: Navode se ukupne neto i bruto Težine stavki artikla. Navode se težine artikala iz šifarnika pomnožene s količinom stavke.
 
@@ -369,7 +369,7 @@ Prilikom kreiranja ili ažuriranja cjenika putem ove procedure, u cjenik se pren
 **Popusti**: nudi se svi popusti povezani s artiklom, svaki s vlastitom osnovom izračuna i dodjelom.
 
 #### Poseban gumb
-> **Izbriši rabate**: omogućuje brisanje odabranog popusta iz odgovarajuće mreže.
+> **Izbriši rabate**: omogućuje brisanje odabranog popusta iz odgovarajuće tablice.
 
 :::important Zapamti
 Za upravljanje popustima na poreznu osnovicu potrebno je u bazi podataka aktivirati opći parametar GEN-GlobalSettings_CalculateDiscountOnAmount za odgovarajuće poduzeće. Ako navedeni parametar nije aktivan, popusti na poreznu osnovicu automatski će se pretvoriti u kaskadne popuste.
@@ -377,7 +377,7 @@ Za upravljanje popustima na poreznu osnovicu potrebno je u bazi podataka aktivir
 
 ### 3.4 Podaci artikla
 
-**Artikl**: prikazuje klasu, šifru i opis artikla odabranog u tabličnom prikazu (gridu).
+**Artikl**: prikazuje klasu, šifru i opis artikla odabranog u tabličnom prikazu.
 
 **Varijante**: U ovom polju moguće je odabrati varijantu artikla među onima koje su prethodno definirane na kartici „Varijante” u matičnim podacima artikla. Ako su u cjeniku za pojedine varijante definirane različite cijene i/ili popusti, oni će se automatski ažurirati prilikom odabira druge varijante artikla.
 
@@ -393,7 +393,7 @@ Za upravljanje popustima na poreznu osnovicu potrebno je u bazi podataka aktivir
 
 **Projekt**: predstavlja projekt koji se povezuje s dokumentom. Ako je projekt unesen u zaglavlju dokumenta, automatski će biti prenesen na sve retke artikala. U suprotnom, projekt se može odabrati putem odgovarajućeg pomoćnog izbornika za odabir projekata.
 
-**Od/Do datuma obračuna**: omogućuju definiranje datuma obračunskog razdoblja za dokument. Ako je u tablici 'Poduzeće' aktivirana opcija *Controlling*, prilikom kreiranja računa iz otpremnice/primke ili iz povrata kooperantske proizvodnje (Conto Lavoro) kao datumi obračunskog razdoblja preuzimaju se datumi iz dokumenta skladišnog zaprimanja. Kod dokumenata koji nisu knjiženi na skladište ili kod artikala koji su ručno uneseni na račun, datumi obračunskog razdoblja podudaraju se s datumom računa.
+**Od/Do datuma obračuna**: omogućuju definiranje datuma obračunskog razdoblja za dokument. Ako je u tablici 'Poduzeće' aktivirana opcija *Controlling*, prilikom kreiranja računa iz otpremnice/primke ili iz povrata kooperantske proizvodnje (podizvođač) kao datumi obračunskog razdoblja preuzimaju se datumi iz dokumenta skladišnog zaprimanja. Kod dokumenata koji nisu knjiženi na skladište ili kod artikala koji su ručno uneseni na račun, datumi obračunskog razdoblja podudaraju se s datumom računa.
 
 **Povrat PDV-a**: ako je postavljeno, PDV poklona uzima se u obzir za ukupni iznos računa.
 
@@ -446,7 +446,7 @@ Kartice Troškovi za obračun i Troškovi (Spese) nisu podržane niti se koriste
 
 ### 3.11 Odjeljak s vrijednostima
 
-Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene odabranog artikla u mreži artikla.
+Odjeljak prikazuje sažetak troškova koji doprinose formiranju konačne cijene odabranog artikla u tablici artikla.
 
 **Jedinična cijena**: vrijednost polja Cijena;
 
@@ -491,10 +491,10 @@ Ovi se elementi primjenjuju na cijeli dokument i ne raspoređuju se na pojedine 
 
 :::note Napomena
 
-Ako odabrana vrsta troška ima aktiviranu oznaku „Raspodijeljeno”, prilikom knjiženja računa na skladište trošak će se raspodijeliti na sve artikle proporcionalno ukupnim iznosima pojedinih stavki artikala. Rezultat raspodjele troška vidljiv je u skladišnoj knjižbi.
+Ako odabrana vrsta troška ima aktiviranu oznaku „Raspodijeljeno”, prilikom knjiženja računa na skladište trošak će se raspodijeliti na sve artikle proporcionalno ukupnim iznosima pojedinih stavki artikala. Rezultat raspodjele troška vidljiv je u skladišnom knjiženju.
 
-> 1. Ako artikli imaju definiranu cijenu: ukupni trošak raspodjeljuje se proporcionalno neto iznosima pojedinih artikala. Dobiveni iznos dodaje se početnoj cijeni artikla u polju Ukupni iznos skladišne knjižbe. Ako pojedine stavke imaju iznos 0, za potrebe raspodjele tretirat će se kao da imaju vrijednost 1, kako bi se trošak raspodijelio na sve artikle.
-> 2. Ako svi artikli imaju cijenu 0: trošak se ravnomjerno raspodjeljuje na sve stavke artikala. Na temelju tako raspodijeljenog troška izračunava se iznos skladišnog kretanja / upravljački iznos u skladišnoj knjižbi, uzimajući u obzir količine pojedinih artikala.
+> 1. Ako artikli imaju definiranu cijenu: ukupni trošak raspodjeljuje se proporcionalno neto iznosima pojedinih artikala. Dobiveni iznos dodaje se početnoj cijeni artikla u polju Ukupni iznos skladišnog knjiženja. Ako pojedine stavke imaju iznos 0, za potrebe raspodjele tretirat će se kao da imaju vrijednost 1, kako bi se trošak raspodijelio na sve artikle.
+> 2. Ako svi artikli imaju cijenu 0: trošak se ravnomjerno raspodjeljuje na sve stavke artikala. Na temelju tako raspodijeljenog troška izračunava se iznos skladišnog kretanja / upravljački iznos u skladišnom knjiženju, uzimajući u obzir količine pojedinih artikala.
 :::
 
 ### 4.3 Sažetak PDV-a
@@ -540,7 +540,7 @@ Napomena: potrebno je obratiti pozornost na predložak odabranog konta jer će s
 
 ### 4.5 Ostala polja
 
-**Završne napomene**: to je slobodno polje koje korisnik može ispuniti, uključujući *Pomoć kod kodiranih napomena*.
+**Završne napomene**: to je slobodno polje koje korisnik može ispuniti, uključujući *Pomoć šifriranim bilješkama*.
 
 
 ### 4.6 Ukupno - dokument
@@ -551,21 +551,21 @@ Napomena: potrebno je obratiti pozornost na predložak odabranog konta jer će s
 
 **Poklonjeni iznos**: predstavlja iznos stavki tipa poklon unesenih u karticu *Stavke*;    
 
-**Ukupni primjenjeni rabati**: predstavlja ukupnu vrijednost primijenjenih popusta na stavkama, ali bez konačnih popusta. 
+**Ukupni primijenjeni rabati**: predstavlja ukupnu vrijednost primijenjenih popusta na stavkama, ali bez konačnih popusta. 
 
-**Neto iznos artikala**: *Iznos stavki bez popusta - Ukupni primjenjeni rabati*;  
+**Neto iznos artikala**: *Iznos stavki bez popusta - Ukupni primijenjeni rabati*;  
 
 **Konačni popusti artikala**: predstavlja vrijednost konačnih popusta izraženih u postocima na bruto iznos stavki; 
 
-**Iznos umanjen za ukuoni popust**: *Neto iznos stavki - Ukupno konačnih rabata*;  
+**Iznos umanjen za ukupni popust**: *Neto iznos stavki - Ukupno konačnih rabata*;  
 
 **Ukupno za stavke troškova**: predstavlja vrijednost troškova unesenih u prethodnu karticu kao stavke *Vrste troškova*;  
 
-**Troškovi naplate**: predstavlja zbroj unesenih troškova naplate u mrežu *Troškovi*;  
+**Troškovi naplate**: predstavlja zbroj unesenih troškova naplate u tablicu *Troškovi*;  
 
-**Trošak ovjere**: predstavlja zbroj unesenih troškova marke u mrežu *Troškovi*;  
+**Trošak ovjere**: predstavlja zbroj unesenih troškova marke u tablicu *Troškovi*;  
 
-**Ukupno troškovi/popusti/doplate**: predstavlja vrijednost unesenih troškova u mrežu *Troškovi*;  
+**Ukupno troškovi/popusti/doplate**: predstavlja vrijednost unesenih troškova u tablicu *Troškovi*;  
 
 **Osnovica**: *Neto iznos artikala - Konačni popusti + Ukupno za stavke troškova + Ukupno troškovi/popusti/doplate*;
 

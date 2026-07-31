@@ -3,48 +3,51 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul se nalazi u području **Nabava > Ulazni računi**. Ulazni računi su porezni dokumenti koje izdaju dobavljači kao potvrdu isporuke robe ili pružanja usluga poduzeću. Oni predstavljaju osnovu za računovodstveno evidentiranje poslovnog događaja te za obračun i plaćanje obveza prema dobavljačima.
-
-Ova aplikacija omogućuje: praćenje dokumenata o robama koje su isporučene/naplative od dobavljača; automatsko stvaranje računa iz primitka robe; automatsko stvaranje iz narudžbenica dobavljača; automatsko knjiženje robe na skladište; vrednovanje robe prisutne na skladištu; povezivanje postojećih varijanti s dodatnim atributima na razini artikla; provjeru usklađenosti uvjeta dobivene fakture s uvjetima narudžbe dobavljača; rezervaciju utovara serija izravno iz ulazne fakture; automatsko knjiženje ulazne fakture.
+Modul se nalazi u izborniku **Nabava > Ulazni računi**. Ulazni računi su porezni dokumenti koje izdaju dobavljači za isporučenu robu ili pružene usluge te predstavljaju osnovu za računovodstveno knjiženje i plaćanje dobavljačima.
 
 ## Konfiguracija modula
 
-Prije korištenja modula potrebno je konfigurirati sljedeće tablice i parametre:
+Prije korištenja modula potrebno je definirati sljedeće tablice i parametre:
 
-> **Tablice**: obrasce čine Tablica prodaje i [Tipovi ulaznih računa](/docs/configurations/tables/purchase/purchase-invoices-type).
->
-> **Parametri**: obrazac je [Parametri ulaznih računa](/docs/configurations/parameters/purchase/purchase-invoices-parameters).
+- [**Numeracije**](/docs/configurations/tables/fluentis-numerations): definiranje numeracija koje će se koristiti za ulazne račune.
+- [**Promet nabave**](/docs/configurations/tables/purchase/purchase-turnover/): definiranje vrsta prometa nabave koje će se koristiti u dokumentima.
+- [**Vrste ulaznih računa**](/docs/configurations/tables/purchase/purchase-invoices-type): stvaranje i definiranje vrsta ulaznih računa koje će se koristiti.
+- [**Parametri ulaznih računa**](/docs/configurations/parameters/purchase/purchase-invoices-parameters): specifične postavke za upravljanje ulaznim računima.
+- [**Parametri grupiranja ulaznih računa**](/docs/configurations/parameters/purchase/invoice-grouping/): definiranje uvjeta za grupiranje otpremnica u račun.
 
-Konkretnije:
+## **Povezani moduli**
 
-- Numeracije: definiranje numeracija koje će se koristiti za ulazne račune.
-- Promet nabave: definiranje vrsta prometa nabave koje će se koristiti u dokumentima.
-- Vrste ulaznih računa: kreiranje i definiranje vrsta računa koje će se koristiti u sustavu.
-- Parametri ulaznih računa: postavljanje specifičnih parametara za upravljanje ulaznim računima.
-- Parametri grupiranja ulaznih računa: definiranje kriterija za grupiranje DDT dokumenata prilikom kreiranja zbirnih računa.
+import Link from '@docusaurus/Link';
 
-## Povezanost s ostalim modulima
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-orders/general-overview">Narudžbe dobavljača</Link>
+        <p>Ulazni račun može se kreirati obradom jedne ili više narudžbi dobavljača iz samog računa pomoću gumba <strong>Izuzimanje iz narudžbe</strong>.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-delivery-note/general-overview">Primka</Link>
+        <p>Ulazni račun može se kreirati obradom jedne ili više otpremnica, bilo iz samog računa pomoću gumba <strong>Izvršenje primke</strong>, bilo putem postupka <Link to="/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization">Valorizacija primke</Link>.</p>
+    </div>
+</div>
 
-:::info Narudžbe dobavljača
-Ulazni račun može se kreirati preuzimanjem jedne ili više narudžbi dobavljača izravno unutar računa korištenjem funkcije **Preuzimanje iz narudžbi**.
-:::
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/subcontractor/subcontractor-returns/insert-returns/search-returns">Podizvođač</Link>
+        <p>Postupak <em>Vrednovanje povratnih otpremnica</em> omogućuje stvaranje ulaznog računa obradom jednog ili više povrata od podizvođača.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure">Prijem robe</Link>
+        <p>Postupak <Link to="/docs/purchase/purchase-invoices/procedures/create-purchase-invoices-from-goods-receipt">Kreiranje ulaznih računa iz prijema robe</Link> omogućuje stvaranje ulaznog računa na temelju prethodno evidentiranog prijema robe.</p>
+    </div>
+</div>
 
-:::info Primke nabave (DDT)
-Ulazni račun može se kreirati preuzimanjem jedne ili više primki nabave (DDT), bilo izravno unutar računa korištenjem funkcije **Preuzimanje DDT-a**, bilo putem procedure **Vrednovanje primki nabave**.
-:::
-
-:::info Povrat iz kooperacije
-Procedura **Vrednovanje povrata** omogućuje generiranje ulaznog računa preuzimanjem jednog ili više povrata iz kooperacije.
-:::
-
-:::info Zaprimanje robe
-Procedura **Kreiranje ulaznog računa iz prijema robe** omogućuje izradu ulaznog računa na temelju prethodno evidentiranog zaprimanja robe.
-:::
-
-:::info Logistika
-Ulazni računi određenog tipa mogu se knjižiti na skladište kako bi se evidentirao dolazak robe i ažurirale zalihe materijala.
-:::
-
-:::info Knjiženje
-Automatsko knjiženje ulaznih računa omogućuje ažuriranje financijskih i računovodstvenih evidencija te osigurava usklađenost s poslovnim knjigama.
-:::
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/logistics/warehouse/stock-records/records">Logistika</Link>
+        <p>Ulazni računi tipa <em>odmah</em> mogu se proknjižiti u skladište kako bi se evidentirao primitak robe i ažuriralo stanje zaliha.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-invoices/accounting/purchase-invoices-accounting">Knjiženje</Link>
+        <p>Automatsko knjiženje ulaznih računa ažurira računovodstvene i financijske evidencije te osigurava usklađenost s poslovnim knjigama.</p>
+    </div>
+</div>

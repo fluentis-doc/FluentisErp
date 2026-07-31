@@ -1,5 +1,5 @@
 ---
-title: Izvršenja
+title: Izvršenja (Izuzimanja)
 sidebar_position: 5
 ---
 
@@ -59,7 +59,7 @@ Pravila grupiranja narudžbi u primke definiraju se u sljedećim parametrima: [P
 
 Nakon odabira narudžbi i postavljanja filtera, klikom na, *Premještaj* generira se primka s preuzetim podacima iz narudžbi. Ako je ispunjenje izvršeno ispravno, narudžba će automatski promijeniti stanje u *"Izvršeno"* ili *"Djelomično izvršeno"*.
 
-Ispunjenje narudžbe u primku može se dovršiti i iz zaglavlja same fakture putem tipke *Izvršenje narudžbe (Evasione da ordine)*.
+Ispunjenje narudžbe u primku može se dovršiti i iz zaglavlja same fakture putem tipke *Izvršenje (Izuzimanje) narudžbe (Evasione da ordine)*.
 
 ## Prijenos primka u račune
 

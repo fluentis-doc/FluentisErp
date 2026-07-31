@@ -66,5 +66,5 @@ Zadnja kartica služi vraćanju operacija: omogućuje filtriranje, pregled i pon
 U gornjem pregledu prikazuju se svi kreirani računi. Odabirom jednog od njih, u donjim se pregledima prikazuje **Ime operatera**, datum valorizacije, **Prima** ili **Povrat** iz kojih je račun nastao, kao i popis valoriziranih artikala. Također je moguće dvostrukim klikom otvoriti primku, povrat ili generirani račun.  
 
 *Posebne tipke*:
-> **Pretraga valorizacije**: pretražuje kreirane račune i valorizirane primke prema definiranim filtrima. Rezultati se pojavljuju u prikaznom pregledu.    
+> **Pretraga valorizacije**: pretražuje kreirane račune i valorizirane primke prema definiranim filtrima. Rezultati se pojavljuju u pregledu.    
 > **Povrati račune**: briše odabrani račun iz donjeg pregleda.  

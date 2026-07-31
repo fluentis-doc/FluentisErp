@@ -5,7 +5,7 @@ sidebar_position: 6
 
 # Izvještaji
 
-Izbornik **Izvještaji** standardno je dostupan. Za pregled ispisa potrebno je odabrati željeni izvještaj, postaviti filtre te kliknuti na gumb **Pregled ispisa** na alatnoj traci. Ova radnja otvara pregled ispisa bez promjene statusa dokumenta. Ako je potrebno ispisati dokument na pisač ili ga spremiti u datoteku, potrebno je koristiti funkciju **Ispis**.
+Izbornik **Izvještaji** standardno je dostupan. Za pregled ispisa potrebno je odabrati željeni izvještaj, postaviti filtre te kliknuti na gumb **pregled** na alatnoj traci. Ova radnja otvara pregled ispisa bez promjene statusa dokumenta. Ako je potrebno ispisati dokument na pisač ili ga spremiti u datoteku, potrebno je koristiti funkciju **Ispiši**.
 
 ## Ispis ulaznih računa
 

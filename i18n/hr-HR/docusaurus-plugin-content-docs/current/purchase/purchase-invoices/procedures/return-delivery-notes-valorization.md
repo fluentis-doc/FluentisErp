@@ -37,11 +37,11 @@ Na ovoj kartici, korisnik ima mogućnost unosa filtera za pretraživanje dokumen
 Za zbirno fakturiranje potrebno je u Parametrima grupiranja računa definirati kriterije grupiranja koji će se koristiti prilikom kreiranja zbirnih računa.
 :::
 
-*Specifično dugme* 
+*Specifična tipka* 
 
 > **Spremi parametre vrednovanja**: omogućuje spremanje postavljenih parametara za valorizaciju.
 
-Nakon što su odabrani dokumenti (iz kartice *Valorizacija*) i postavljeni parametri, račun može biti stvoren pomoću dugmeta *Vrednovanje isporuka*.
+Nakon što su odabrani dokumenti (iz kartice *Valorizacija*) i postavljeni parametri, račun može biti stvoren pomoću tipke *Vrednovanje isporuka*.
 
 ### Prethodni 
 

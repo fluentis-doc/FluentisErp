@@ -17,15 +17,15 @@ Računi mogu generirati skladišna kretanja samo ako su vrste Neposredni (Immedi
 :::tip NAPOMENA
 Ako dokument sadrži fiktivne artikle, postupak će uzeti u obzir vrstu nabave definiranu u MRP parametrima artikla:
 
-- artikli vrste Nabava (Acquisto) neće biti uključeni u skladišnu knjižbu;
-- artikli vrste Proizvodnja (Produzione) ili Kooperantska proizvodnja (Conto Lavoro) bit će knjiženi na skladište koristeći prvu razinu sastavnice (BOM-a).
+- artikli vrste Nabava neće biti uključeni u skladišno knjiženje;
+- artikli vrste Proizvodnja ili Podizvođač bit će knjiženi na skladište koristeći prvu razinu sastavnice (BOM-a).
 :::
 
 ### Filter
 
 Na ovoj kartici, korisnik ima mogućnost postavljanja filtera kako bi pronašao ulazne račune, odabrao ih, a zatim ih knjižio u skladištu.
 
-**Datum zapisa zalihe**: omogućuje specificiranje datuma vezanog uz knjiženje u skladištu, ako taj datum već nije postavljen u [Parametri ulaznih računa](/docs/configurations/parameters/purchase/purchase-invoices-parameters) > kartica *Utovar* (točnije, aktivirana zastava na *Kreiraj zapis s datumom dokumenta*).
+**Datum zapisa zalihe**: omogućuje specificiranje datuma vezanog uz knjiženje u skladištu, ako taj datum već nije postavljen u [Parametri ulaznih računa](/docs/configurations/parameters/purchase/purchase-invoices-parameters) > kartica *Utovar* (točnije, aktivirana opcija na *Kreiraj zapis s datumom dokumenta*).
 
 :::important ZAPAMTI
 Ako je u Parametrima ulaznih računa > kartica *Utovar* aktivirana opcija „Kreiraj zapis s datumom dokumenta”, skladišno knjiženje uvijek će biti izvršeno s datumom dokumenta, neovisno o vrijednosti unesenoj u polje *Datum zapisa zalihe* u ovom obrascu.
@@ -48,7 +48,7 @@ Dostupne opcije su:
 
 - **Ignoriraj stavke bez skladišta i predloška**: dopušta djelomično knjiženje dokumenta; 
 
-- **Prihvati kao skladište i predložak slijedeće podatke**: osigurava potpuno knjiženje dokumenta. Za sve artikle koji nemaju skladište i predložak u odabranim fakturama, postavlja odmah unesene podatke u polja: *Skladište* i *Predložak*.
+- **Prihvati kao skladište i predložak sljedeće podatke**: osigurava potpuno knjiženje dokumenta. Za sve artikle koji nemaju skladište i predložak u odabranim fakturama, postavlja odmah unesene podatke u polja: *Skladište* i *Predložak*.
 
 *Posebni gumb*
 

@@ -7,15 +7,15 @@ Postupak se otvara putem putanje **Nabava > Ulazni računi > Knjiženje > Knjiž
 
 Ovim postupkom moguće je izvršiti knjiženje ulaznih računa temeljem dokumenata o ulazu robe.
 
-### Račun za primiti od otpremnice dobavljača
+### Račun na temelju primke
 
 Knjiženje ulaznih računa uključuje, kao izvore podataka, jedan od tri elementa:
 
-- Otpremnica dobavljača,
+- Otpremnica dobavljača, tj. **primka**,
 
 - prijem robe,
 
-- povrat radnog naloga.
+- povrat radnog naloga, tj. od podizvođača.
 
 Ovisno o odabranom dokumentu, sljedeća polja će filtrirati povezane zapise.
 
