@@ -3,48 +3,47 @@ title: Knjiženje računa koji se očekuju
 sidebar_position: 2
 ---
 
-Postupak se otvara putem putanje **Nabava > Ulazni računi > Knjiženje > Knjiženje računa koji se očekuju**.
+Postupak se otvara putem putanje **Nabavka > Ulazni računi > Knjiženje > Knjiženje očekivanih računa**.
 
-Ovim postupkom moguće je izvršiti knjiženje ulaznih računa temeljem dokumenata o ulazu robe.
+Ovim postupkom moguće je izvršiti knjiženje ulaznih računa na osnovu dokumenata o prijemu robe.
 
-### Račun za primiti od otpremnice dobavljača
+### Račun na osnovu primke
 
 Knjiženje ulaznih računa uključuje, kao izvore podataka, jedan od tri elementa:
 
-- Otpremnica dobavljača,
+- Otpremnicu dobavljača, odnosno **primku**,
 
 - prijem robe,
 
-- povrat radnog naloga.
+- povrat radnog naloga, odnosno od podizvođača.
 
-Ovisno o odabranom dokumentu, sljedeća polja će filtrirati povezane zapise.
+U zavisnosti od izabranog dokumenta, sledeća polja će filtrirati povezane zapise.
 
-U suštini, **knjiženje ulaznih računa može se izvršiti na dokumentima prisutnim u sustavu koji nisu fakturirani**. Dakle, to je postupak koji treba izvršiti odmah na početku godine na otvorenim dokumentima, prije nego što se nastavi s tokom dokumentacije za njihovo zatvaranje.
+U suštini, **knjiženje ulaznih računa može se izvršiti na dokumentima prisutnim u sistemu koji nisu fakturisani**. Dakle, to je postupak koji treba izvršiti odmah na početku godine nad otvorenim dokumentima, pre nego što se nastavi tok dokumentacije radi njihovog zatvaranja.
 
-Kada se iz nekog od ovih proknjiženih dokumenata generira ulazni račun, sustav će pri knjiženju računa najprije provesti standardno knjiženje računa, a potom automatski kreirati storno-knjiženje suprotnog predznaka kojim će poništiti prethodno knjiženje nastalo temeljem primke robe.
+Kada se iz nekog od ovih proknjiženih dokumenata generiše ulazni račun, sistem će prilikom knjiženja računa najpre izvršiti standardno knjiženje računa, a zatim automatski kreirati storno-knjiženje suprotnog predznaka kojim će poništiti prethodno knjiženje nastalo na osnovu primke robe.
 
 Na osnovu forme postoje određeni parametri upravljanja knjiženjem:
 
-**Datum zapisa**: datum koji se dodjeljuje samom knjiženju, obično 31.12. godine;
+**Datum zapisa**: datum koji se dodeljuje samom knjiženju, obično 31.12. godine;
 
-**Datum obračuna**: datum koji se dodjeljuje knjiženju, obično 31.12. godine;
+**Datum obračuna**: datum koji se dodeljuje knjiženju, obično 31.12. godine;
 
-**Predložak**: računovodstveni uzrok koji treba koristiti. To je opći uzrok, ne povezan s PDV-om.
+**Predložak**: računovodstveni predložak koji treba koristiti. To je opšti predložak, nije povezan sa PDV-om.
 
-*Posebni gumb*: 
+*Specifična dugmad*:
 
-> **Knjiženje**: omogućuje izvršavanje knjiženja ulaznih računa odabranih dokumenata.
-
- 
+> **Knjiženje**: omogućava izvršavanje knjiženja ulaznih računa za izabrane dokumente.
 
 ### Prethodni
 
-Obrazac prikazuje popis izvršenih knjiženja kako bi ih pregledali i eventualno poništili putem odgovarajućih tipki. Dvostruki klik u mreži stvorenih knjiženja omogućuje pregled knjiženja.
+Obrazac prikazuje spisak izvršenih knjiženja kako bi se pregledala i po potrebi poništila putem odgovarajućih dugmadi. Dvostruki klik u tabeli kreiranih knjiženja omogućava pregled knjiženja.
 
-**Knjiženje (računa koji se očekuju)**: prikaz s detaljima izvršenih operacija. Popunjava se nakon postupka pretraživanja, a mogu se odabrati operacije na koje se primjenjuju funkcije vrpce.
+**Knjiženje (očekivanih računa)**: prikaz sa detaljima izvršenih operacija. Popunjava se nakon postupka pretrage, a mogu se izabrati operacije na koje se primenjuju funkcije alatne trake.
 
-Podaci u donjim pregledima, **Dokumenti** i **Zapis glavne knjige** odnose se na odabranu operaciju u gornjem pregledu. Dvostruki klik u odjeljku pokreta/knjiženja omogućit će pregled odgovarajućeg pokreta/knjiženja.
+Podaci u donjim pregledima, **Dokumenti** i **Zapis glavne knjige**, odnose se na izabranu operaciju u gornjem pregledu. Dvostruki klik u odeljku pokreta/knjiženja omogućiće pregled odgovarajućeg pokreta/knjiženja.
 
-*Posebne tipke*:
-> **Povrat knjiženja**: za brisanje odabrane knjiženja.   
-> **Povrat transakcije računa**: za brisanje cijele odabrane operacije u prvom pregledu, sa svim detaljima prikazanim u dva donja pregleda.  
+*Specifična dugmad*:
+
+> **Povrat knjiženja**: za brisanje izabranog knjiženja.  
+> **Povrat transakcije računa**: za brisanje cele izabrane operacije u prvom pregledu, sa svim detaljima prikazanim u dva donja pregleda.

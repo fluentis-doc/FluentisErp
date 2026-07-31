@@ -6,64 +6,64 @@ keywords:
 - Magazzino
 ---
 
-Postupak se otvara putem putanje **Nabava > Ulazni računi > Procedure > Zaduženje skladišta ulaznim računima**. 
+Postupak se otvara putem putanje **Nabavka > Ulazni računi > Procedure > Zaduženje skladišta ulaznim računima**.
 
-Ovaj postupak omogućuje izvođenje/ponovno izvođenje automatskog unosa u skladište članaka prisutnih na fakturi.
+Ovaj postupak omogućava izvršavanje/ponovno izvršavanje automatskog evidentiranja u skladištu artikala koji se nalaze na računu.
 
 :::important ZAPAMTI
-Računi mogu generirati skladišna kretanja samo ako su vrste Neposredni (Immediato).
+Računi mogu generisati skladišna kretanja samo ako su tipa **Neposredni (Immediato)**.
 :::
 
 :::tip NAPOMENA
-Ako dokument sadrži fiktivne artikle, postupak će uzeti u obzir vrstu nabave definiranu u MRP parametrima artikla:
+Ako dokument sadrži fiktivne artikle, postupak će uzeti u obzir tip nabavke definisan u MRP parametrima artikla:
 
-- artikli vrste Nabava (Acquisto) neće biti uključeni u skladišnu knjižbu;
-- artikli vrste Proizvodnja (Produzione) ili Kooperantska proizvodnja (Conto Lavoro) bit će knjiženi na skladište koristeći prvu razinu sastavnice (BOM-a).
+- artikli tipa **Nabavka** neće biti uključeni u skladišno knjiženje;
+- artikli tipa **Proizvodnja** ili **Podizvođač** biće knjiženi u skladište korišćenjem prvog nivoa sastavnice (BOM-a).
 :::
 
 ### Filter
 
-Na ovoj kartici, korisnik ima mogućnost postavljanja filtera kako bi pronašao ulazne račune, odabrao ih, a zatim ih knjižio u skladištu.
+Na ovoj kartici korisnik može podesiti filtere za pronalaženje ulaznih računa, njihov izbor i naknadno knjiženje u skladište.
 
-**Datum zapisa zalihe**: omogućuje specificiranje datuma vezanog uz knjiženje u skladištu, ako taj datum već nije postavljen u [Parametri ulaznih računa](/docs/configurations/parameters/purchase/purchase-invoices-parameters) > kartica *Utovar* (točnije, aktivirana zastava na *Kreiraj zapis s datumom dokumenta*).
+**Datum skladišnog knjiženja**: omogućava definisanje datuma koji će biti povezan sa skladišnim knjiženjem, ako taj datum već nije podešen u [Parametrima ulaznih računa](/docs/configurations/parameters/purchase/purchase-invoices-parameters) > kartica *Utovar* (tačnije, ako nije aktivirana opcija *Kreiraj zapis sa datumom dokumenta*).
 
 :::important ZAPAMTI
-Ako je u Parametrima ulaznih računa > kartica *Utovar* aktivirana opcija „Kreiraj zapis s datumom dokumenta”, skladišno knjiženje uvijek će biti izvršeno s datumom dokumenta, neovisno o vrijednosti unesenoj u polje *Datum zapisa zalihe* u ovom obrascu.
-Ako navedena opcija nije aktivirana, koristit će se Datum skladišnog knjiženja ručno unesen u zaglavlju računa.
-Ako Datum skladišnog knjiženja nije definiran, skladišno knjiženje bit će kreirano s datumom navedenim u polju Datum zapisa zalihe u ovom obrascu.
+Ako je u **Parametrima ulaznih računa > kartica Utovar** aktivirana opcija **Kreiraj zapis sa datumom dokumenta**, skladišno knjiženje će uvek biti izvršeno sa datumom dokumenta, bez obzira na vrednost unetu u polje **Datum skladišnog knjiženja** u ovom obrascu.
+Ako navedena opcija nije aktivirana, koristiće se **Datum skladišnog knjiženja** ručno unet u zaglavlju računa.
+Ako **Datum skladišnog knjiženja** nije definisan, skladišno knjiženje biće kreirano sa datumom navedenim u polju **Datum skladišnog knjiženja** u ovom obrascu.
 :::
 
-*Posebni gumbi*
+*Specifična dugmad*
 
-> **Traži**: omogućuje pretraživanje faktura za registraciju u skladištu.
-> **Zaduženje**: omogućuje izvođenje knjiženja odabranih faktura u skladište, na temelju algoritama unosa i parametara unesenih na sljedećoj kartici *Parametri*.
+> **Traži**: omogućava pretragu računa za knjiženje u skladište.  
+> **Zaduženje**: omogućava izvršavanje skladišnog knjiženja izabranih računa, prema algoritmima unosa i parametrima podešenim na sledećoj kartici *Parametri*.
 
 ### Parametri
 
-Ako stavke na fakturi nemaju skladište i predložak za unos, kroz ovaj prozor korisnik ima mogućnost specificiranja načina postupanja s iznimkama za stavke članka.
+Ako stavke na računu nemaju skladište i predložak za knjiženje, kroz ovaj prozor korisnik može definisati način postupanja sa izuzecima za stavke artikala.
 
 Dostupne opcije su:
 
-- **Ne knjiži cijeli račun**: ne dopušta djelomično knjiženje dokumenta;
+- **Ne knjiži ceo račun**: ne dozvoljava delimično knjiženje dokumenta;
 
-- **Ignoriraj stavke bez skladišta i predloška**: dopušta djelomično knjiženje dokumenta; 
+- **Ignoriši stavke bez skladišta i predloška**: dozvoljava delimično knjiženje dokumenta;
 
-- **Prihvati kao skladište i predložak slijedeće podatke**: osigurava potpuno knjiženje dokumenta. Za sve artikle koji nemaju skladište i predložak u odabranim fakturama, postavlja odmah unesene podatke u polja: *Skladište* i *Predložak*.
+- **Prihvati sledeće podatke kao skladište i predložak**: obezbeđuje potpuno knjiženje dokumenta. Za sve artikle koji nemaju skladište i predložak u izabranim računima, postavlja vrednosti unete u polja: *Skladište* i *Predložak*.
 
-*Posebni gumb*
+*Specifično dugme*
 
-> **Spremi parametre**: omogućuje spremanje postavljenih parametara za knjiženje.
+> **Sačuvaj parametre**: omogućava čuvanje podešenih parametara za knjiženje.
 
-Nakon odabira faktura (iz kartice *Filter*) i postavljanja parametara, fakture se mogu knjižiti pomoću gumba *Zaduženje*.
+Nakon izbora računa (na kartici *Filter*) i podešavanja parametara, računi se mogu knjižiti pomoću dugmeta **Zaduženje**.
 
 ### Sažetak
 
-Na ovoj kartici korisnik ima mogućnost pretraživanja, pregleda i poništavanja izvršenih knjiženja koje zadovoljavaju određene uvjete poništavanja knjiženja u skladištu.
+Na ovoj kartici korisnik može pretraživati, pregledati i poništavati izvršena skladišna knjiženja koja ispunjavaju uslove za poništavanje skladišnog knjiženja.
 
-Podaci u donjim pregledima, **Računi** i **Zapis**, odnose se na odabrano knjiženje unosa u skladište u gornjem pregledu (nakon filtriranja podataka). Osim toga, u ovim posljednjim dvama pregledima moguće je pregledati fakturu i njezin unos u skladište (dvostruki klik na redak).
+Podaci u donjim pregledima, **Računi** i **Zapis**, odnose se na izabrano skladišno knjiženje iz gornjeg pregleda (nakon filtriranja podataka). Pored toga, u ova dva pregleda moguće je dvostrukim klikom na red otvoriti i pregledati račun i odgovarajuće skladišno knjiženje.
 
-*Posebni gumbi*
+*Specifična dugmad*
 
-> **Traži**: za pretraživanje učitanih faktura. Rezultat ovog postupka prikazuje se u rezultatnim pregledima.   
-> **Izbriši zaduženje**: za poništavanje cjelokupnog knjiženja odabranog unosa u skladište, sa svim njezinim pojedinostima prikazanim u donja dva prikaza.
-> **Povrat računa**: za poništavanje unosa dokumenta odabranog knjiženja. Ova operacija također će poništiti unos u skladište ako odgovara samo jednom dokumentu ili ažurirati njegove podatke ako odgovara više faktura.
+> **Traži**: pretražuje knjižene račune. Rezultat ovog postupka prikazuje se u pregledima rezultata.  
+> **Obriši zaduženje**: poništava kompletno knjiženje izabranog skladišnog knjiženja, sa svim njegovim detaljima prikazanim u donja dva pregleda.  
+> **Vrati račun**: poništava knjiženje dokumenta izabranog skladišnog knjiženja. Ova operacija će takođe poništiti skladišno knjiženje ako odgovara samo jednom dokumentu ili ažurirati njegove podatke ako odgovara većem broju računa.

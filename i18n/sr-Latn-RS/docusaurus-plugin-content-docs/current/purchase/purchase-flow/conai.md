@@ -1,65 +1,69 @@
 ---
-title: Upravljanje CONAI-jem  
+title: Upravljanje CONAI-jem
 sidebar_position: 2
 ---
 
-Upravljanje **CONAI** (Talijanski nacionalni konzorcij za ambalažu) u Fluentisu modul je koji omogućuje automatiziranu primjenu troškova vezanih uz okolišnu naknadu CONAI na dokumente nabave i prodaje. Ovaj je alat iznimno važan za poduzeća koja upravljaju ambalažom i moraju poštovati talijanske propise o zbrinjavanju i recikliranju ambalažnog materijala. Automatska primjena troškova CONAI u Fluentisu odvija se na temelju parametara koje postavi korisnik te se odražava izravno na računovodstvene dokumente, osiguravajući precizan i usklađen izračun.  
+Upravljanje **CONAI-jem** (*Consorzio Nazionale Imballaggi*) u Fluentisu je modul koji omogućava automatsku primenu troškova povezanih sa CONAI ekološkim doprinosom na dokumentima nabavke i prodaje. Ovaj alat namenjen je kompanijama koje posluju sa ambalažom i moraju poštovati italijanske propise o zbrinjavanju i reciklaži ambalažnih materijala. Automatska primena CONAI troškova u Fluentisu zasniva se na parametrima koje definiše korisnik i direktno se odražava na knjigovodstvene dokumente, obezbeđujući tačan i usklađen obračun.
 
-## Aktivacija upravljanja CONAI-jem  
+## Aktivacija upravljanja CONAI-jem
 
-Za aktiviranje upravljanja CONAI-jem u Fluentisu potrebno je konfigurirati određena polja u tablici [Tvrtka](/docs/configurations/tables/general-settings/company), u odjeljku Ostale postavke:
+Za aktivaciju upravljanja CONAI-jem u Fluentisu potrebno je konfigurisati određena polja u tabeli [Društva](/docs/configurations/tables/general-settings/company), u odeljku **Ostala podešavanja**:
 
-- **CONAI partnerski kod**: Kod koji se dodjeljuje poduzeću prilikom učlanjenja u CONAI. Riječ je o jedinstvenom identifikatoru za praćenje prijava i okolišnih naknada koje poduzeće mora platiti na temelju ambalaže koju stavlja na tržište.  
+- **Šifra CONAI partnera**: šifra koju kompanija dobija prilikom registracije u CONAI. Predstavlja jedinstveni identifikator koji služi za praćenje prijava i ekoloških doprinosa koje kompanija duguje na osnovu ambalaže stavljene na tržište.
 
-- **Vrsta CONAI partnera**: Definira ulogu poduzeća unutar talijanskog sustava ambalaže. Dostupne su sljedeće kategorije:  
-  - **A – Autoproizvođač**: Poduzeće koje proizvodi ambalažu za vlastite potrebe i ne prodaje je trećim stranama.  
-  - **U1 – Trgovac/Distributer**: Poduzeće koje kupuje ambalažu radi njezine daljnje prodaje, bez vlastite uporabe.  
-  - **U2 – Ostali korisnici ambalaže**: Poduzeća koja kupuju ambalažu za pakiranje proizvoda namijenjenih prodaji, ali je sama ne proizvode.  
-  - **P – Proizvođač**: Poduzeće koje proizvodi ambalažu i prodaje je drugim korisnicima ili distributerima.  
+- **Tip CONAI partnera**: definiše ulogu kompanije u italijanskom lancu ambalaže. Dostupni su sledeći tipovi partnera:
+  - **A – Samostalni proizvođač**: kompanija koja proizvodi ambalažu za sopstvene potrebe, bez prodaje trećim licima. Ambalažu koristi za pakovanje sopstvenih proizvoda.
+  - **U1 – Trgovac/Distributer**: kompanija koja kupuje ambalažu radi dalje prodaje, bez sopstvene upotrebe. U ovu grupu spadaju veletrgovci i distributeri.
+  - **U2 – Ostali korisnici**: kompanije koje kupuju ambalažu za pakovanje proizvoda namenjenih prodaji, ali je same ne proizvode. Ne pripadaju kategorijama **Samostalni proizvođač** ni **Trgovac/Distributer**.
+  - **P – Proizvođač**: kompanija koja proizvodi ambalažu i prodaje je drugim korisnicima ili distributerima.
 
-- **Početni/Završni datum partnerstva**: Po želji se može definirati razdoblje važenja članstva u CONAI-ju.  
+- **Datum početka/završetka CONAI partnerstva**: omogućava definisanje perioda važenja partnerstva sa CONAI-jem, ako je primenljivo.
 
-## Tipovi materijala  
+## Tipovi materijala
 
-Upravljanje vrstama ambalažnih materijala odvija se u logističkoj tablici [Tipovi materijala](/docs/configurations/tables/logistics/material-types). U njoj se definiraju različiti materijali (čelik, aluminij, papir, drvo, plastika itd.). Za svaki materijal potrebno je postaviti:  
+Upravljanje tipovima ambalažnih materijala vrši se u logističkoj tabeli [Tipovi materijala](/docs/configurations/tables/logistics/material-types). U ovoj tabeli definišu se različiti materijali (poput čelika, aluminijuma, papira, drveta, plastike i dr.) koji se koriste za ambalažu. Za svaki tip materijala potrebno je podesiti:
 
-- **CONAI kod materijala**: Kod koji identificira vrstu materijala prema CONAI klasifikaciji.  
-- **Fiktivni šifarnik artikla**: Koristi se za kreiranje retka troška CONAI naknade u otpremnicama ili računima. Ako nije definiran, materijal se ne može koristiti u konfiguraciji CONAI-ja.  
+- **CONAI šifra materijala**: određuje tip materijala prema CONAI klasifikaciji.
+- **Šifra fiktivnog artikla**: koristi se za kreiranje reda troška CONAI doprinosa na primkama ili računima. Ako šifra artikla nije navedena, taj materijal neće moći da se koristi u CONAI konfiguraciji.
 
-Moguće je koristiti jedan isti fiktivni artikl za sve materijale ili različit za svaki, ovisno o željenoj razini detalja u fiskalnim dokumentima.
+Moguće je koristiti jednu šifru artikla za sve materijale ili definisati posebnu šifru za svaki materijal, u zavisnosti od željenog nivoa detalja na poreskim dokumentima.
 
-- **Tarife i mjerne jedinice**: U donjoj tablici definiraju se važeće tarife za pojedine materijale prema datumskom razdoblju. Mjerna jedinica (obično tona) mora biti usklađena s onom definiranom na artiklima i fiktivnim CONAI artiklima.  
+- **Tarife i jedinice mere**: donja tabela omogućava definisanje tarifa za svaki materijal prema različitim vremenskim periodima. Jedinica mere, koja je najčešće tona, mora odgovarati jedinici mere definisanoj na prodajnim artiklima i fiktivnim CONAI artiklima.
 
-## Definicije u šifrarniku artikala
+## Definicije u šifarniku artikala
 
-U kartici [Težine/Dimenzije](/docs/erp-home/registers/items/create-new-item) artikla mogu se definirati svojstva ambalaže za potrebe CONAI-ja:  
+Na kartici [Težine/Dimenzije](/docs/erp-home/registers/items/create-new-item) u šifarniku artikala moguće je definisati karakteristike ambalaže potrebne za upravljanje CONAI-jem. U ovom odeljku mogu se podesiti:
 
-- **Koristi u nabavi/prodaji**: Određuje primjenjuje li se izračun CONAI naknade na dokumente nabave ili prodaje.  
-- **Vrsta ambalaže**: Primarna, sekundarna ili tercijarna.  
-- **Prazna ili puna ambalaža**: Označava je li ambalaža prazna (neoznačeno) ili puna (označeno).  
-- **Ambalažni materijali**: Popis materijala od kojih je sastavljena ambalaža, s pripadajućom težinom.  
+- **Koristi u nabavci/prodaji**: određuje da li se CONAI doprinos primenjuje na artikal u dokumentima nabavke ili prodaje.
+- **Tip ambalaže**: određuje da li je ambalaža primarna, sekundarna ili tercijarna.
+- **Prazna ili puna**: određuje da li je ambalaža prazna (oznaka nije uključena) ili puna (oznaka je uključena).
+- **Ambalažni materijali**: spisak materijala od kojih se ambalaža sastoji, zajedno sa njihovom težinom u definisanoj jedinici mere.
 
-## Postavke u šifrarniku kupaca/dobavljača  
+## Podešavanja u šifarniku kupaca/dobavljača
 
-Kako bi se troškovi CONAI-ja ispravno primjenjivali na dokumente, potrebno je konfigurirati karticu [CONAI postavke](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/conai):
+Kako bi se CONAI troškovi ispravno primenjivali na dokumentima nabavke ili prodaje, potrebno je pravilno konfigurisati šifarnik kupca ili dobavljača na kartici [CONAI podešavanja](/docs/erp-home/registers/contacts/create-new-contact/accounting-data/customer-vendors-data/conai):
 
-- **Vrsta CONAI partnera**: za izračun u prodaji, kupac mora biti samoproizvođač (A), trgovac/distributer (U1) ili drugi korisnici (U2). Za izračun u nabavci, dobavljač mora biti proizvođač (P).
-- **Postotci izuzeća**: Mogu se definirati eventualni postotci izuzeća po vrsti materijala, uz razdoblje važenja.   
+- **Tip CONAI partnera**: za obračun u prodaji kupac mora biti **Samostalni proizvođač (A)**, **Trgovac/Distributer (U1)** ili **Ostali korisnici (U2)**. Za obračun u nabavci dobavljač mora biti **Proizvođač (P)**.
+- **Procenti oslobođenja**: u tabeli je moguće definisati procente oslobođenja za pojedine tipove materijala, zajedno sa odgovarajućim periodima važenja.
 
-## Tipovi otpremnica i tipovi računa  
+## Tipovi primki i tipovi računa
 
-U [tipovima otpremnica](/docs/configurations/tables/sales/delivery-notes-type) i nei [tipovima računa](/docs/configurations/tables/sales/invoices-type)nalazi se oznaka **Upravljanje CONAI-jem**. Aktiviranjem ove opcije omogućuje se automatski izračun CONAI naknade na tom tipu dokumenta.
+U [tipovima primki](/docs/configurations/tables/sales/delivery-notes-type) i [tipovima računa](/docs/configurations/tables/sales/invoices-type) nalazi se oznaka **Upravljanje CONAI-jem**. Uključivanjem ove oznake aktivira se automatski obračun CONAI doprinosa za izabrani tip dokumenta.
 
-## Primjer primjene u računu za prodaju
+## Primer primene na izlaznom računu
 
-Ako je CONAI upravljanje aktivno za tvrtku, u kartici *Artikli* unutar računa za prodaju prikazuje se podkartica **CONAI materijali za artikl**. Ova sekcija uključuje materijale za pakiranje koji čine artikal, s sljedećim informacijama:
+Ako je upravljanje CONAI-jem aktivirano za društvo, na kartici **Artikli** izlaznog računa biće dostupan pododeljak **CONAI materijali za artikal**. Ovaj odeljak sadrži ambalažne materijale od kojih se artikal sastoji, zajedno sa sledećim podacima:
 
-- **Jedinica mjere**: Određuje mjernu jedinicu koja se koristi za materijal.  
-- **Jedinična težina**: Težina pojedinog materijala, eventualno umanjena za postotak izuzeća definiran u šifrarniku kupca.  
-- **Ukupna težina**: Izračunava se množenjem broja prodanih artikala s jediničnom težinom.  
+- **Jedinica mere**: određuje jedinicu mere koja se koristi za materijal.
+- **Jedinična težina**: težina pojedinog materijala, umanjena za eventualni procenat oslobođenja definisan u šifarniku kupca.
+- **Ukupna težina**: obračunava se množenjem prodate količine artikala sa jediničnom težinom.
 
-Prilikom spremanja dokumenta ili pritiskom na tipku *Ponovni izračun CONAI* na  traci izbornika, Fluentis će automatski umetnuti jedan ili više redaka troška, koristeći artikl materijala s odgovarajućom količinom i cijenom prema CONAI trošku za taj materijal. U datoteci elektroničkog računa za SDI, Fluentis će automatski dodati oznake u sekciji „Ostali upravljački podaci“ kako bi se prikazali materijali i jedinične težine artikala.
+Prilikom čuvanja dokumenta ili pritiskom na dugme **Preračun CONAI-ja** na alatnoj traci, Fluentis će automatski dodati jedan ili više redova troška, koristeći odgovarajući artikal materijala sa količinom i cenom koje odgovaraju CONAI doprinosu za taj materijal.
 
-## Kontrolni i zbirni ispisi
+U XML datoteci elektronskog računa za SDI (*Sistema di Interscambio*), Fluentis će automatski dodati oznake u odeljak **Altri Dati Gestionali** kako bi prikazao ambalažne materijale i njihove jedinične težine.
 
-U modulima faktura za kupnju i prodaju dostupna su dva formata ispisa koja omogućuju izvlačenje periodičnih ukupnih iznosa za razne materijale, kako za internu kontrolu tako i za obradu podataka koji se prijavljuju CONAI-u. Za prodaje je također dostupan izvještaj koji odražava internetske stranice CONAI-a za učitavanje podataka iz izjava, filtrirajući materijale prema početnim slovima CONAI koda unesenog u tablicu materijala.
+## Kontrolni i zbirni izveštaji
+
+U modulima ulaznih i izlaznih računa dostupna su dva formata ispisa koji omogućavaju pregled periodičnih ukupnih vrednosti po tipovima materijala, kako za internu kontrolu, tako i za pripremu podataka koji se prijavljuju CONAI-ju.
+
+Za izlazne račune dostupan je i izveštaj koji odgovara obrascima dostupnim na internet stranicama CONAI-ja za učitavanje podataka prijava, pri čemu se materijali filtriraju prema početnim slovima CONAI šifre definisane u tabeli materijala.

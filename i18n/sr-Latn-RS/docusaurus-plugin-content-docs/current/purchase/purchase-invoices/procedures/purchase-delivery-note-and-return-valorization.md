@@ -1,70 +1,70 @@
 ---
-title: Valorizacija primke i povrata
+title: Valorizacija prijema robe i povrata
 sidebar_position: 5
 ---
 
-Postupak se otvara putem izbornika **Nabava > Ulazni računi > Procedure > Valorizacija primke i povrata**. 
+Postupak se otvara putem menija **Nabavka > Ulazni računi > Procedure > Valorizacija prijema robe i povrata**.
 
-Omogućuje izvršavanje i vraćanje (poništavanje) kreiranja ulaznih računa polazeći ili od primki ili od otpremnica povrata.
+Omogućava izvršavanje i vraćanje (poništavanje) kreiranja ulaznih računa na osnovu prijema robe ili otpremnica povrata.
 
-### Valorizacija primke i povrata
+### Valorizacija prijema robe i povrata
 
-U ovoj kartici korisnik može postaviti filtre za pretraživanje ulaznih i povratnih dokumenata koje treba valorizirati. Moguće je filtrirati po: dobavljaču, tipu primke, tipu povrata, broju, datumu, artiklu i projektu.
+Na ovoj kartici korisnik može podesiti filtere za pretragu ulaznih i povratnih dokumenata koje treba valorizovati. Moguće je filtrirati po: dobavljaču, tipu prijema robe, tipu povrata, broju, datumu, artiklu i projektu.
 
-Za razliku od dviju sličnih procedura [Valorizacija primki](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) i [Valorizacija (otpremnica) povrata](/docs/purchase/purchase-invoices/procedures/return-delivery-notes-valorization), u ovoj se formi prikazuje jedan redak za svaku artikl-stavku u dokumentu. Time je omogućeno valorizirati čak i samo jednu stavku.
+Za razliku od dve slične procedure [Valorizacija prijema robe](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization) i [Valorizacija (otpremnica) povrata](/docs/purchase/purchase-invoices/procedures/return-delivery-notes-valorization), u ovom obrascu prikazuje se jedan red za svaku stavku artikla u dokumentu. Time je omogućeno valorizovati čak i samo jednu stavku.
 
-- **Broj i datum računa**: omogućuju definiranje broja i datuma računa koji će biti kreiran.  
+- **Broj i datum računa**: omogućavaju definisanje broja i datuma računa koji će biti kreiran.
 
-*Posebne tipke*: 
+*Specifična dugmad*:
 
-> **Valorizacija**: valorizira odabrane primke u pregledu, prema parametrima postavljenima u sljedećoj kartici *Parametri*.   
-> **Prikaži samo dokumente**: uključuje/isključuje istoimenu opciju u filtrima te omogućuje prikaz samo zaglavlja dokumenta ili jedne stavke po artiklu.  
+> **Valorizacija**: valorizuje izabrane prijeme robe u pregledu, prema parametrima podešenim na sledećoj kartici *Parametri*.  
+> **Prikaži samo dokumente**: uključuje/isključuje istoimenu opciju u filterima i omogućava prikaz samo zaglavlja dokumenta ili jednog reda po artiklu.
 
 ### Parametri
 
-#### Parametri primki  
+#### Parametri prijema robe
 
-*Umetanje na račun*  
+*Unos na račun*
 
-- **Preračunaj centar troška/profitni centar**: koristi se u analitičkom računovodstvu za ponovni izračun centara troška ili prihoda.
-- **Poredaj dokument prema broju dokumenta dobavljača**: ako je uključeno, primke u zbirnom računu bit će poredane prema *broju dokumenta dobavljača* umjesto prema *internom broju*.  
-- **Vrsta ulaznog računa**: definira tip računa koji se kreira.  
+- **Ponovo obračunaj centar troška/profitni centar**: koristi se u analitičkom računovodstvu za ponovni obračun centara troškova ili prihoda.
+- **Poređaj dokument prema broju dokumenta dobavljača**: ako je uključeno, prijemi robe u zbirnom računu biće poređani prema *broju dokumenta dobavljača* umesto prema *internom broju*.
+- **Tip ulaznog računa**: definiše tip računa koji se kreira.
 
 *Reference otpremnice*
 
-- **Umetni reference otpremnice**: ako je uključeno, u kartici [Artikli](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) računa pojavit će se *stavka bilješke* s referencama otpremnice iz koje je račun kreiran. Tekst bilješke unosi se u polje *Opis*, prema parametrima iz oznake.
-    
-    *Primjer*: ![](/img/it-it/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization/image06.png). Ako otpremnica ima broj 5 i datum 11.09.2024., stavka bilješke u računu glasi: "Referenca otpremnice br. 5 od 11.09.2024."
+- **Unesi reference otpremnice**: ako je uključeno, na kartici [Artikli](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) računa pojaviće se *stavka beleške* sa referencama otpremnice iz koje je račun kreiran. Tekst beleške unosi se u polje *Opis*, prema parametrima definisanim ovom oznakom.
+
+    *Primer*: ![](/img/it-it/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization/image06.png). Ako otpremnica ima broj 5 i datum 11.09.2024, stavka beleške na računu glasi: "Referenca otpremnice br. 5 od 11.09.2024."
 
 #### Parametri povrata iz radnog naloga podizvođača
 
-*Vrsta računa*
+*Tip računa*
 
-- **Vrsta računa**: definira vrstu računa koji će biti kreiran.
-- **Poredaj dokument prema broju dokumenta dobavljača**: ako je uključeno, povrati u zbirnom računu bit će poredani prema *broju dokumenta*; u suprotnom, prema datumu.
+- **Tip računa**: definiše tip računa koji će biti kreiran.
+- **Poređaj dokument prema broju dokumenta dobavljača**: ako je uključeno, povrati u zbirnom računu biće poređani prema *broju dokumenta*; u suprotnom, prema datumu.
 
 *Reference povrata*
 
-- **Umetni reference povrata**: ako je uključeno, u kartici [Artikli](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) pojavit će se *stavka bilješke* s referencama povrata iz koje je račun kreiran. Tekst bilješke unosi se u *Opis*, prema navedenim parametrima. 
+- **Unesi reference povrata**: ako je uključeno, na kartici [Artikli](/docs/purchase/purchase-invoices/insert-purchase-invoice/purchase-invoice) pojaviće se *stavka beleške* sa referencama povrata iz kojeg je račun kreiran. Tekst beleške unosi se u polje *Opis*, prema navedenim parametrima.
 
-
-:::tip Zapamti 
-Za kreiranje zbirnih računa potrebno je u [Parametrima grupiranja računa](/docs/configurations/parameters/purchase/invoice-grouping/) postaviti uvjete grupiranja.  
+:::tip Zapamti
+Za kreiranje zbirnih računa potrebno je u [Parametrima grupisanja računa](/docs/configurations/parameters/purchase/invoice-grouping/) podesiti uslove grupisanja.
 :::
 
-*Posebne tipke*: 
+*Specifična dugmad*:
 
-> **Spremi parametre primki**: sprema postavljene parametre valorizacije primki.   
-> **Spremi parametre povrata**: sprema postavke valorizacije dokumenata povrata.  
+> **Sačuvaj parametre prijema robe**: čuva podešene parametre valorizacije prijema robe.  
+> **Sačuvaj parametre povrata**: čuva podešavanja valorizacije dokumenata povrata.
 
-Nakon odabira otpremnica (u kartici *Valorizacija*) i postavljanja parametara, račun se može kreirati tipkom *Valorizacija*.
+Nakon izbora otpremnica (na kartici *Valorizacija*) i podešavanja parametara, račun se može kreirati dugmetom **Valorizacija**.
 
 ### Povrat
 
-Zadnja kartica služi vraćanju operacija: omogućuje filtriranje, pregled i poništavanje izvršenih valorizacija.  
+Poslednja kartica služi za vraćanje operacija: omogućava filtriranje, pregled i poništavanje izvršenih valorizacija.
 
-U gornjem pregledu prikazuju se svi kreirani računi. Odabirom jednog od njih, u donjim se pregledima prikazuje **Ime operatera**, datum valorizacije, **Prima** ili **Povrat** iz kojih je račun nastao, kao i popis valoriziranih artikala. Također je moguće dvostrukim klikom otvoriti primku, povrat ili generirani račun.  
+U gornjem pregledu prikazuju se svi kreirani računi. Izborom jednog od njih, u donjim pregledima prikazuju se **Ime operatera**, datum valorizacije, **Prijem robe** ili **Povrat** iz kojih je račun nastao, kao i spisak valorizovanih artikala. Takođe je moguće dvostrukim klikom otvoriti prijem robe, povrat ili generisani račun.
 
-*Posebne tipke*:
-> **Pretraga valorizacije**: pretražuje kreirane račune i valorizirane primke prema definiranim filtrima. Rezultati se pojavljuju u prikaznom pregledu.    
-> **Povrati račune**: briše odabrani račun iz donjeg pregleda.  
+*Specifična dugmad*:
+
+> **Pretraga valorizacije**: pretražuje kreirane račune i valorizovane prijeme robe prema definisanim filterima. Rezultati se prikazuju u pregledu.  
+> **Vrati račune**: briše izabrani račun iz donjeg pregleda.

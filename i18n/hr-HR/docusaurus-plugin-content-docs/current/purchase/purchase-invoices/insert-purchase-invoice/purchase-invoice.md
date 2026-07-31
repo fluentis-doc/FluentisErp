@@ -118,7 +118,7 @@ Po želji je moguće unijeti i podatke o registarskoj oznaci vozila prijevoznika
 
 ### 2.7 Dodatni podaci
 
-Ovdje se predlaže informacija unesena u *Šifarnik subjekta > kartica Dodatni podaci*, samo ako postoje zadani podaci.
+Ovdje se predlaže informacija unesena u *Šifarnik dobavljača > kartica Dodatni podaci*, samo ako postoje zadani podaci.
 
 ## Procedure:
 

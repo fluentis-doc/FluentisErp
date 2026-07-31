@@ -1,81 +1,81 @@
 ---
-title: Izvršenja
+title: Izvršenja (Preuzimanja)
 sidebar_position: 5
 ---
 
-Ciklus ispunjenja u Fluentisu služi za strukturirano i integrirano upravljanje cijelim operativnim tokom nabave, od početne faze upita za nabavu do završne faze fakturiranja. Svaka faza karakterizira se specifičnim postupcima i konfiguracijama koje osiguravaju glatko i integrirano upravljanje radnim tokom.
+Ciklus izvršenja u Fluentisu služi za strukturirano i integrisano upravljanje celokupnim operativnim tokom nabavke, od početne faze zahteva za ponudom do završne faze fakturisanja. Svaku fazu karakterišu specifični postupci i konfiguracije koje obezbeđuju nesmetano i integrisano upravljanje radnim tokom.
 
-## Pretvorba ponude u narudžbu  
+## Pretvaranje ponude u narudžbinu
 
-Postupak konverzije iz ponude dobavljača u narudžbu za kupnju može se pokrenuti:
+Postupak konverzije iz ponude dobavljača u narudžbinu za nabavku može se pokrenuti:
 
-- Iz izbornika [Procedure](/docs/purchase/offer-request/procedures/order-creation): odabirom *Nabava > Upit za ponudu > Procedure > Kreiranje narudžbe dobavljača iz ponude dobavljača*.
+- Iz menija [Procedure](/docs/purchase/offer-request/procedures/order-creation): izborom *Nabavka > Zahtev za ponudom > Procedure > Kreiranje narudžbine dobavljaču iz ponude dobavljača*.
 
-Za izvođenje pretvorbe potrebno je konfigurirati željeni tip narudžbe dobavljača u tablici [Tip upita za ponudu](/docs/configurations/tables/purchase/purchase-offer-type). 
+Za izvršavanje konverzije potrebno je konfigurisati željeni tip narudžbine dobavljaču u tabeli [Tip zahteva za ponudom](/docs/configurations/tables/purchase/purchase-offer-type).
 
-Tijekom postupka pretvorbe pojavljuje se skočni prozor sa sljedećim opcijama:  
-- Upit za ponudu: omogućuje izradu jedne narudžbe za svaki upit za ponudu.  
-- Račun: omogućuje grupiranje upit za ponudu prema dobavljaču.  
-- Zatvori povezane ponude: umeće *Datum zatvaranja* za sve ZOP-ove koji se pretvaraju u narudžbe.  
+Tokom postupka konverzije pojavljuje se *pop-up* prozor sa sledećim opcijama:
 
-Nakon potvrde pretvorbe, sustav generira novu narudžbu dobavljača koristeći podatke iz upita za ponudu te korisnika obavještava putem skočnog prozora o uspjehu postupka.  
+- Zahtev za ponudom: omogućava kreiranje jedne narudžbine za svaki zahtev za ponudom.
+- Račun: omogućava grupisanje zahteva za ponudom prema dobavljaču.
+- Zatvori povezane ponude: unosi *Datum zatvaranja* za sve ZOP-ove koji se pretvaraju u narudžbine.
 
-Za više detalja pogledajte odgovarajuću stranicu dokumentacije.  
+Nakon potvrde konverzije, sistem generiše novu narudžbinu dobavljaču koristeći podatke iz zahteva za ponudom i obaveštava korisnika putem *pop-up* prozora o uspešno izvršenom postupku.
+Za više detalja pogledajte odgovarajuću stranicu dokumentacije.
 
-## Pretvorba zahtjeva za nabavu u narudžbu  
+## Pretvaranje zahteva za nabavku u narudžbinu
 
-Postupak kreiranja narudžbe dobavljača iz zahtjeva za nabavu može se pokrenuti:  
+Postupak kreiranja narudžbine dobavljaču iz zahteva za nabavku može se pokrenuti:
 
-- Iz izbornika [Procedure](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests): *Nabava > Narudžba dobavljačima > Procedure > Automatsko kreiranje narudžbi*.
+- Iz menija [Procedure](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests): *Nabavka > Narudžbina dobavljačima > Procedure > Automatsko kreiranje narudžbina*.
 
-Ovaj postupak omogućuje izradu jedne ili više narudžbi iz jednog ili više zahtjeva za nabavu i sastoji se od pet kartica:  
+Ovaj postupak omogućava kreiranje jedne ili više narudžbina iz jednog ili više zahteva za nabavku i sastoji se od pet kartica:
 
-- Filtriraj iz: omogućuje definiranje filtera za odabir dokumenata (sa statusom „Odobreno“) koji se pretvaraju u narudžbu.    
-- Izbor dobavljača: omogućuje odabir dobavljača kojem će se narudžba dodijeliti, prema kriterijima poput najbolje cijene nabave, preferiranog dobavljača, najboljih uvjeta plaćanja itd.  
-- Prototipovi narudžbe: prikazuje sažetak narudžbi koje će se kreirati te omogućuje izradu nove narudžbe ili dodavanje stavki postojećoj narudžbi.  
-- Parametri: konfigurira opcije za kreiranje narudžbe, kao što su tip narudžbe i podaci koji će se koristiti ako nisu definirani na artiklima. Također je moguće uključiti raspoloživosti iz različitih modula sustava.  
-- Operacije: omogućuje prikaz, filtriranje i poništavanje prethodnih operacija.  
+- Filtriraj iz: omogućava definisanje filtera za izbor dokumenata (sa statusom „Odobreno“) koji se pretvaraju u narudžbinu.
+- Izbor dobavljača: omogućava izbor dobavljača kome će narudžbina biti dodeljena, prema kriterijumima kao što su najbolja nabavna cena, preferirani dobavljač, najbolji uslovi plaćanja itd.
+- Prototipovi narudžbine: prikazuje sažetak narudžbina koje će biti kreirane i omogućava kreiranje nove narudžbine ili dodavanje stavki postojećoj narudžbini.
+- Parametri: konfiguriše opcije za kreiranje narudžbine, kao što su tip narudžbine i podaci koji će se koristiti ako nisu definisani na artiklima. Takođe je moguće uključiti raspoloživosti iz različitih modula sistema.
+- Operacije: omogućava prikaz, filtriranje i poništavanje prethodnih operacija.
 
-Nakon potvrde prototipa narudžbe, pritiskom na tipku *Generiraj prototipove narudžbe* sustav kreira narudžbe prema odabranim parametrima.
+Nakon potvrde prototipa narudžbine, pritiskom na dugme *Generiši prototipove narudžbine* sistem kreira narudžbine prema izabranim parametrima.
 
-Isti postupak može se koristiti i za kreiranje narudžbi dobavljača iz narudžbi kupaca. Više detalja dostupno je na ovoj [stranici](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests). 
+Isti postupak može se koristiti i za kreiranje narudžbina dobavljaču iz narudžbina kupaca. Više detalja dostupno je na ovoj [stranici](/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests).
 
-## Prijenos iz narudžbi u primke  
+## Prenos iz narudžbina u primke
 
-Postupak prijenosa narudžbi u primku (DDT) dostupan je na dva načina:  
+Postupak prenosa narudžbina u primku (DDT) dostupan je na dva načina:
 
-- Iz izbornika [Procedure](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): putanja *Nabava > Primke > Procedure > Izuzimanje iz narudžbe*.
-- Izuzimanje iz [Zaglavlja](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) narudžbe: korištenjem tipke *Premještaj* otvara se prozor za odabir potvrđenih narudžbi dobavljača koje se mogu prenijeti u otpremnicu.  
+- Iz menija [Procedure](/docs/purchase/purchase-delivery-note/procedures/create-delivery-notes-from-orders): putanja *Nabavka > Primke > Procedure > Preuzimanje iz narudžbine*.
+- Preuzimanje iz [Zaglavlja](/docs/purchase/purchase-delivery-note/insert-purchase-delivery-note/purchase-delivery-note) narudžbine: korišćenjem dugmeta *Premesti* otvara se prozor za izbor potvrđenih narudžbina dobavljača koje se mogu preneti u otpremnicu.
 
-Ovaj postupak omogućuje pretvaranje jedne ili više narudžbi u jednu ili više primki. Prije pokretanja, potrebno je konfigurirati željeni tip primke u tablici [Tipovi narudžbi dobavljača](/docs/configurations/tables/purchase/purchase-orders-type/). Automatsko kreiranje primke moguće je samo ako je narudžba ispisana i potvrđena.  
+Ovaj postupak omogućava pretvaranje jedne ili više narudžbina u jednu ili više primki. Pre pokretanja potrebno je konfigurisati željeni tip primke u tabeli [Tipovi narudžbina dobavljača](/docs/configurations/tables/purchase/purchase-orders-type/). Automatsko kreiranje primke moguće je samo ako je narudžbina odštampana i potvrđena.
 
-Uvjeti za izvršenje:   
+Uslovi za izvršenje:
 
-- Dobavljač na narudžbama mora odgovarati dobavljaču na primki.  
-- Narudžba koja se izvršava mora imati oznaku "Ispisano" i evidentiran *Datum potvrde*.
-- Ako se izvršenje pokreće iz zaglavlja primke, *Tip narudžbe* mora imati pridružen *Tip primke*.
+- Dobavljač na narudžbinama mora odgovarati dobavljaču na primci.
+- Narudžbina koja se izvršava mora imati oznaku "Odštampano" i evidentiran *Datum potvrde*.
+- Ako se izvršenje pokreće iz zaglavlja primke, *Tip narudžbine* mora imati pridružen *Tip primke*.
 
-Pravila grupiranja narudžbi u primke definiraju se u sljedećim parametrima: [Parametri grupiranja primke](/docs/configurations/parameters/purchase/dn-grouping).
+Pravila grupisanja narudžbina u primke definišu se u sledećim parametrima: [Parametri grupisanja primke](/docs/configurations/parameters/purchase/dn-grouping).
 
-Nakon odabira narudžbi i postavljanja filtera, klikom na, *Premještaj* generira se primka s preuzetim podacima iz narudžbi. Ako je ispunjenje izvršeno ispravno, narudžba će automatski promijeniti stanje u *"Izvršeno"* ili *"Djelomično izvršeno"*.
+Nakon izbora narudžbina i postavljanja filtera, klikom na *Premesti* generiše se primka sa preuzetim podacima iz narudžbina. Ako je izvršenje uspešno obavljeno, narudžbina će automatski promeniti status u *"Izvršeno"* ili *"Delimično izvršeno"*.
 
-Ispunjenje narudžbe u primku može se dovršiti i iz zaglavlja same fakture putem tipke *Izvršenje narudžbe (Evasione da ordine)*.
+Izvršenje narudžbine u primku može se završiti i iz zaglavlja samog računa putem dugmeta *Izvršenje (Preuzimanje) narudžbine (Evasione da ordine)*.
 
-## Prijenos primka u račune
+## Prenos primki u račune
 
 Postupak evidentiranja primke u račun može se pokrenuti na dva načina:
 
-- Iz izbornika [Procedure](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): klikom na *Nabava > Ulazni računi > Procedure > Valorizacija primke*. 
-- Iz [Zaglavlja] prodajnog računa: korištenjem tipke *Izvršenje otpremnice/primke* u zaglavlju računa.
+- Iz menija [Procedure](/docs/purchase/purchase-invoices/procedures/purchase-delivery-note-valorization): klikom na *Nabavka > Ulazni računi > Procedure > Valorizacija primke*.
+- Iz [Zaglavlja] prodajnog računa: korišćenjem dugmeta *Izvršenje otpremnice/primke* u zaglavlju računa.
 
-Ovaj postupak omogućuje izradu jednog ili više računa na temelju jedne ili više primki. Sastoji se od tri glavne kartice:
+Ovaj postupak omogućava kreiranje jednog ili više računa na osnovu jedne ili više primki. Sastoji se od tri glavne kartice:
 
-- Valorizacija: omogućuje unos filtera za odabir primki koje će se fakturirati (sa statusom „Kontrolirano”) te određivanje datuma kreiranja računa.  
-- Parametri: konfigurira vrstu računa koji će se izraditi, ako nije definirana u tablici [Vrste primki](/docs/configurations/tables/purchase/purchase-delivery-notes-type/) te koje će se reference otpremnice prenijeti na račun.  
-- Prethodni: omogućuje pregled, filtriranje i poništavanje ranijih postupaka fakturiranja.  
+- Valorizacija: omogućava unos filtera za izbor primki koje će biti fakturisane (sa statusom „Kontrolisano”) i određivanje datuma kreiranja računa.
+- Parametri: konfiguriše tip računa koji će biti kreiran, ako nije definisan u tabeli [Tipovi primki](/docs/configurations/tables/purchase/purchase-delivery-notes-type/), kao i koje će reference otpremnice biti prenete na račun.
+- Prethodni: omogućava pregled, filtriranje i poništavanje ranijih postupaka fakturisanja.
 
-Uvjeti grupiranja primki u račun mogu se definirati u [Parametrima grupiranja ulaznih računa](/docs/configurations/parameters/purchase/invoice-grouping/).
+Uslovi grupisanja primki u račun mogu se definisati u [Parametrima grupisanja ulaznih računa](/docs/configurations/parameters/purchase/invoice-grouping/).
 
-Nakon odabira primki i postavljanja parametara, izrada računa pokreće se klikom na *Valorizacija primke*.
+Nakon izbora primki i postavljanja parametara, kreiranje računa pokreće se klikom na *Valorizacija primke*.
 
-Prijenos primki u račun može se dovršiti i iz samog zaglavlja računa putem tipke *Izvršenje otpremnice/primke*.
+Prenos primki u račun može se završiti i iz samog zaglavlja računa putem dugmeta *Izvršenje otpremnice/primke*.

@@ -6,9 +6,9 @@ description: Primka
 
 Obrazac se otvara putem putanje **Nabava > Primke > Primka**.
 
-Omogućuje pretraživanje svih dokumenata kako bi ih se moglo pregledati, urediti, eventualno izbrisati ili dodati novi dokument. Prozor se sastoji od područja za filtriranje i mreže rezultata.
+Omogućuje pretraživanje svih dokumenata kako bi ih se moglo pregledati, urediti, eventualno izbrisati ili dodati novi dokument. Prozor se sastoji od područja za filtriranje i tablice rezultata.
 
-Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** prisutan u *ribbon traci* kako biste vidjeli rezultate unutar mreže rezultata.
+Nakon postavljanja svih željenih filtara, dovoljno je kliknuti na gumb **Traži** prisutan u *ribbon traci* kako biste vidjeli rezultate unutar tablice rezultata.
 
 Za otvaranje pojedinosti dokumenta, dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **Izmijeni** (omogućuje ulazak u pojedinosti i uređivanje) ili na gumb **Prikaži** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
 

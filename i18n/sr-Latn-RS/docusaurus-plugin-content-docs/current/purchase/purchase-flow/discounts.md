@@ -1,47 +1,49 @@
 ---
-title: Preuzimanje cijena i popusta
+title: Primena cena i popusta
 sidebar_position: 1
 ---
 
-Proces **preuzimanja cijena i popusta** automatizira usklađivanje dokumenata nabave s ažuriranim cjenicima dobavljača. Kada se artikl umeće u dokument, sustav provjerava dostupne cjenike — uzimajući u obzir dobavljača, valutu i razdoblje valjanosti — te primjenjuje odgovarajuće cijene i popuste.
-  
-Svaki **cjenik dobavljača** definiran je trima ključnim elementima:
+Primena **cena i popusta** je automatizovani postupak koji obezbeđuje usklađenost dokumenata nabavke sa ažuriranim cenovnicima dobavljača. Kada se artikal doda u dokument, sistem proverava dostupne cenovnike uzimajući u obzir dobavljača, valutu i period važenja i primenjuje odgovarajuće cene i popuste.
+
+## Cenovnici dobavljača
+
+Svaki **cenovnik dobavljača** definisan je pomoću tri ključna elementa:
 
 - **Dobavljač**
 - **Valuta**
-- **Datumi valjanosti** (od/do)
+- **Period važenja** (od/do)
 
-Unutar svakog cjenika, cijene artikala mogu biti navedene za osnovnu upravljačku mjernu jedinicu (obavezna i definirana u šifrarniku artikla) ili za neku od alternativnih mjernih jedinica.
-Cijene se mogu definirati i po količinskim razredima (kartica Cijena prema količini) ili po destinacijama isporuke (kartica Destinacije).
+Unutar svakog cenovnika cene artikala mogu se definisati za osnovnu jedinicu mere (obaveznu i definisanu u šifarniku artikala) ili za neku od alternativnih jedinica mere. Cene se takođe mogu vezati za količinske razrede (kartica **Cena po količini**) ili za određena odredišta isporuke robe (kartica **Odredišta**).
 
 ## Upravljanje popustima
 
-**Popusti** se mogu konfigurirati na više načina:  
+**Popusti** se mogu definisati na više načina:
 
-- **Šifrarnik dobavljača**: Popusti definirani u kartici "Troškovi/Popusti" automatski se primjenjuju na dokument nabave kada se odabere dobavljač. Moguće je dodijeliti više popusta.  
-- **Vrsta plaćanja**: Popusti vezani uz vrstu plaćanja automatski se preuzimaju kada se u dokumentu odabere ta vrsta plaćanja.  
-- **Cjenik**: Popusti se mogu povezati s pojedinim redovima cjenika u šifrarniku dobavljača.  
-- **Cjenik artikala**: Popusti mogu biti definirani za svaki red artikla u cjeniku, uključujući količinske razrede (popusti po količini ili iznosu).  
-- **Definicija politika popusta**: Popusti se mogu konfigurirati prema dobavljačima, klasama artikala, kategorijama popusta i detaljima kategorija popusta.  
+- **Šifarnik dobavljača**: popusti definisani na kartici **Troškovi/Popusti** automatski se primenjuju na dokument nabavke nakon izbora dobavljača. Moguće je povezati više popusta.
+- **Način plaćanja**: popusti povezani sa načinom plaćanja automatski se preuzimaju kada se u dokumentu izabere ili predloži način plaćanja.
+- **Cenovnik**: popusti se mogu definisati za svaki red u tabeli cenovnika unutar šifarnika dobavljača.
+- **Cenovnik artikala**: popusti se mogu definisati za svaki red artikla u cenovniku, uključujući količinske razrede (količinski ili vrednosni popusti).
+- **Definicija pravila popusta**: popusti se mogu konfigurisati prema dobavljačima, klasama artikala, kategorijama popusta i detaljima kategorija popusta.
 
-:::important Zapamti
-Za upravljanje **popustima na osnovicu** potrebno je aktivirati u bazi podataka parametar GEN-GlobalSettings_CalculateDiscountOnAmount za odabranu tvrtku.  
-Ako parametar nije aktivan, popusti na osnovicu bit će pretvoreni u sukcesivne popuste.  
+:::important Zapamtite
+Za korišćenje **popusta na poresku osnovicu** potrebno je u bazi podataka aktivirati opšti parametar **GEN-GlobalSettings_CalculateDiscountOnAmount** za odgovarajuće društvo.
+
+Ako taj parametar nije aktivan, popusti na poresku osnovicu automatski će biti pretvoreni u kaskadne popuste.
 :::
 
-## Postupak preuzimanja cijena i popusta  
+## Postupak primene cena i popusta
 
-Kada se artikl unese u dokument nabave, automatski se pokreće procedura **preuzimanja cijena i popusta**. Sustav traži valjani cjenik među onima povezanima s dobavljačem, počevši od cjenika označenog kao „zadani” ili prema zadanim prioritetima pretraživanja.  
+Kada se artikal doda u dokument nabavke, automatski se pokreće postupak **primene cena i popusta**. Sistem traži važeći cenovnik među cenovnicima povezanim sa dobavljačem, počevši od tipa označenog kao **podrazumevani** ili prema definisanom redosledu prioriteta pretrage.
 
-Valjani cjenik mora zadovoljiti sljedeće kriterije:  
+Pretraga važećeg cenovnika zasniva se na sledećim kriterijumima:
 
-- Cjenik mora sadržavati artikl u istoj valuti kao i dobavljač.  
-- Datum valjanosti cjenika mora pokrivati datum dokumenta, unutar razdoblja definiranog u kartici Cjenici.  
+- cenovnik mora sadržati artikal u istoj valuti kao i dobavljač;
+- datum važenja cenovnika mora biti unutar perioda između datuma početka važenja reda na kartici **Cenovnici** i datuma dokumenta.
 
-Ako se ne pronađe valjani cjenik, a aktivirana je opcija [Pretraga u svim zadanim cjenicima](/docs/configurations/parameters/purchase/purchase-orders-parameters/) sustav nastavlja pretragu među ostalim cjenicima dobavljača prema prioritetu.
-Ako ta opcija nije aktivna, ali je uključena opcija „Cijena nula u nedostatku cjenika”, artikl se unosi s cijenom nula. U protivnom, sustav koristi *zadnju nabavnu cijenu* iz šifrarnika artikala.  
-  
-Pretraga artikla unutar cjenika uzima u obzir ne samo šifru artikla, već i varijantu te mjernu jedinicu. Ako je cijena definirana za alternativnu mjernu jedinicu, sustav je preuzima u dokument, aktivira oznaku „Cijena alternativne mjerne jedinice” i izračunava ukupne vrijednosti prema alternativnoj količini.
+Ako nije pronađen važeći cenovnik, a uključena je oznaka [**Traži cenu stavke u svim podrazumevanim cenovnicima**](/docs/configurations/parameters/purchase/purchase-orders-parameters/), pretraga se nastavlja kroz ostale cenovnike definisane u šifarniku dobavljača, prema redosledu prioriteta.
 
-Nakon određivanja cijene, sustav pronalazi i popuste te cijene po količinskim razredima. Ako je u kartici Cjenici dobavljača označeno „Upravljanje cijenama”, sustav također traži dodatne popuste u postavkama Politika popusta.
-Svi pronađeni popusti prikazuju se u zbirci popusta, s jasnom naznakom njihova izvora.  
+Ako prethodna oznaka nije uključena, ali je aktivna oznaka **Trošak nula ako nedostaje cenovnik**, artikal će biti dodat sa cenom **0**. U suprotnom će sistem koristiti **poslednju nabavnu cenu** iz šifarnika artikala.
+
+Prilikom pretrage artikla u cenovniku sistem uzima u obzir ne samo šifru artikla, već i varijantu i jedinicu mere. Ako je cena definisana za alternativnu jedinicu mere, sistem će je primeniti u dokumentu, uključiti oznaku **Cena alternativne jedinice mere** i obračunati ukupne vrednosti na osnovu alternativne količine.
+
+Nakon određivanja cene sistem pretražuje i popuste i količinske razrede cena. Ako je na kartici **Cenovnici** u šifarniku dobavljača uključena oznaka **Upravljanje cenama**, sistem dodatno pretražuje konfiguraciju **Definicija pravila popusta** kako bi pronašao eventualne dodatne popuste. Svi pronađeni popusti prenose se u kolekciju popusta uz naznaku njihovog izvora.

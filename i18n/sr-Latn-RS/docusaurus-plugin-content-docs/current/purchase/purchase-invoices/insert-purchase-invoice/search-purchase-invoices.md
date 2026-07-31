@@ -3,39 +3,35 @@ title: Pretraga ulaznih računa
 sidebar_position: 2
 ---
 
-Ovaj se obrazac otvara putem navigacije *Nabava > Ulazni računi > Ulazni računi*.
+Ovaj obrazac se otvara putem navigacije *Nabavka > Ulazni računi > Ulazni računi*.
 
-Omogućuje pretraživanje svih dokumenata kako bi ih se moglo pregledati, mijenjati, a po potrebi i brisati ili unijeti novi dokument. Prozor se sastoji od područja za filtriranje i prikaz rezultata.
+Omogućava pretragu svih dokumenata kako bi se mogli pregledati, menjati, po potrebi obrisati ili uneti novi dokument. Prozor se sastoji od dela za filtriranje i prikaz rezultata.
 
-Nakon što se postave svi željeni filtri, dovoljno je kliknuti na gumb **Traži** prisutan u *gornjem meniju* kako bi se rezultati prikazali unutar donjeg (glavnog) pregleda podataka.
+Nakon što se podese svi željeni filteri, dovoljno je kliknuti na dugme **Traži** koje se nalazi u *gornjem meniju* kako bi se rezultati prikazali u donjem (glavnom) pregledu podataka.
 
-Za otvaranje pojedinosti o dokumentu, dovoljno ga je odabrati i dvaput kliknuti mišem, ili kliknuti na gumb **IZmijenu** (omogućuje ulazak u pojedinosti i uređivanje) ili gumb **Prikaži** (omogućuje ulazak u pojedinosti i pregled, ali bez mogućnosti uređivanja).
+Za otvaranje detalja dokumenta dovoljno je izabrati dokument i dvaput kliknuti mišem ili kliknuti na dugme **Izmeni** (omogućava ulazak u detalje i uređivanje) ili dugme **Prikaži** (omogućava ulazak u detalje i pregled bez mogućnosti uređivanja).
 
-*Vidi također*:  
-[Zajedničke funkcionalnosti, gumbe i polja](/docs/guide/common)        
-Dodavanje novih polja u obrasce pretraživanja  
+*Vidi takođe*:  
+[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)  
+Dodavanje novih polja u obrasce za pretragu
 
+> *Specifična dugmad*:
 
-> *Posebni gumbi*:
-
-**Novo**: gumb omogućuje [Stvaranje novog računa].  
-**Dupliciraj račun**: gumb omogućuje stvaranje kopije dokumenta, prenoseći sve uvjete izvornog dokumenta, ali s trenutačnim podacima.
-Koristi se za česte otpreme sličnih roba od istog subjekta dokumenta.
-
+**Novo**: dugme omogućava [Kreiranje novog računa].  
+**Dupliciraj račun**: dugme omogućava kreiranje kopije dokumenta, prenoseći sve uslove izvornog dokumenta, ali sa trenutnim podacima. Koristi se za česte isporuke slične robe od istog subjekta dokumenta.
 
 > *Postupak*
 
-1.	odabrati dokument koji želite duplicirati i kliknuti na gumb **Dupliciraj račun**;  
-2.	aplikacija će započeti stvaranje dokumenta i otvoriti će se skočni prozor **Sažetak dupliciranje** gdje će se završiti unos podataka;  
-3.	kliknuti na **OK** za potvrdu operacije.
+1. izabrati dokument koji želite da duplicirate i kliknuti na dugme **Dupliciraj račun**;  
+2. aplikacija će započeti kreiranje dokumenta i otvoriće se pop-up **Sažetak dupliranja**, u kojem će se završiti unos podataka;  
+3. kliknuti na **OK** za potvrdu operacije.
 
-**Storno prometa**: gumb omogućuje djelomično ili potpuno storniranje dokumenta. Ovom funkcijom može se stvoriti storno dokument koji će *izraditi otpremu* (u nabavi) / *utovariti* (u prodaji) skladište.
-
+**Storno prometa**: dugme omogućava delimično ili potpuno storniranje dokumenta. Ovom funkcijom može se kreirati storno dokument koji će *izvršiti otpremu* (u nabavci) / *utovariti* (u prodaji) skladište.
 
 > *Postupak*
 
-1.	odabrati dokument koji se želi stornirati i kliknuti na gumb **Storno prometa**. Aplikacija će otvoriti skočni prozor sa svim artiklima izvornog dokumenta;  
-2.	unijeti u ovaj obrazac: **Tip storno dokumenta** koji se želi stvoriti i, za svaki artikl, navesti **Količinu za storno**, **Predložak storniranja** i aktivirati opciju (flag) Poništiti;  
-3.	kliknuti na **OK** za potvrdu operacije.
+1. izabrati dokument koji želite da stornirate i kliknuti na dugme **Storno prometa**. Aplikacija će otvoriti pop-up sa svim artiklima izvornog dokumenta;  
+2. u ovom obrascu uneti: **Tip storno dokumenta** koji želite da kreirate i, za svaki artikal, navesti **Količinu za storno**, **Predložak storniranja** i aktivirati oznaku (*flag*) **Poništi**;  
+3. kliknuti na **OK** za potvrdu operacije.
 
-Veza između storno računa i izvornog računa mora se ručno unijeti u novi dokument u *Zaglavlje > odjeljak Država*, u poljima **referenca**.
+Vezu između storno računa i izvornog računa potrebno je ručno uneti u novom dokumentu u *Zaglavlje > odeljak Država*, u poljima **Referenca**.

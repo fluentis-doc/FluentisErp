@@ -3,67 +3,64 @@ title: Knjiženje ulaznih računa
 sidebar_position: 1
 ---
 
-Postupak se otvara putem **Nabava > Ulazni računi > Procedure > Knjiženje ulaznih računa**.
+Procedura se otvara putem **Nabavka > Ulazni računi > Procedure > Knjiženje ulaznih računa**.
 
-### Knjiženje
+### 1. Knjiženje
 
-Ovaj obrazac sadrži gornji dio s filtrom za pretraživanje radi pronalaženja popisa ulaznih računa u sustavu.
+U gornjem delu obrasca nalaze se filteri za pretragu spiska ulaznih računa koji se nalaze u sistemu i čekaju knjiženje.
 
-Na dnu obrasca nalaze se određeni parametri za upravljanje knjiženjem:
+U donjem delu obrasca nalaze se parametri za upravljanje knjiženjem:
 
-**Datum zapisa**: Datum koji će se dodijeliti knjiženju ako nije postavljena zastava *Datum unosa jednak je zadnjem datumu knjige PDV-a*;
+- **Datum knjiženja**: datum knjiženja koji će biti dodeljen knjiženju ako nije aktivirana oznaka *Datum knjiženja jednak poslednjem datumu PDV registra*;
+- **Datum obračuna**: datum obračunskog perioda koji će biti dodeljen knjiženju;
+- **Datum unosa jednak poslednjem datumu PDV knjige**: aktiviranjem ove oznake sistem će za svaki račun pronaći poslednji datum knjiženja korišćen za PDV registar povezan sa predloškom tipa računa i koristiće taj datum za knjiženje izabranih dokumenata. Ako oznaka nije aktivirana, omogućiće se polje **Datum knjiženja** za ručni unos datuma;
+- **Datum obračuna jednak datumu zapisa**: ovom oznakom određuje se da datum obračunskog perioda bude jednak datumu knjiženja. Ako se oznaka isključi, omogućiće se polje za ručni unos datuma obračunskog perioda;
+- **Koristi kurs iz kursne liste**: ovom oznakom određuje se da sistem proveri kursnu listu i koristi kurs važeći na datum knjiženja odnosno datum računa (ili poslednji prethodno uneti kurs). Ako oznaka nije aktivirana, koristiće se kurs koji je već upisan u zaglavlju računa;
+- **Ažuriraj izmene na dokumentu**: polje je dostupno samo ako je prethodna oznaka aktivirana. Omogućava ažuriranje kursa u zaglavlju računa, pri čemu se postojeći kurs zamenjuje novim.
 
-**Datum kompetencija**: datum koji će se dodijeliti knjiženju;
+#### Specifično dugme
 
-**Datum unosa jednak zadnjem datumu knjige PDV-a**: aktivacijom ove zastavice sustav će za svaki račun odabrati posljednji datum knjiženja koji se koristi za odgovarajuću PDV evidenciju, i koristit će ovaj datum za knjiženje odabranih dokumenata. Ako opcija nije postavljena, omogućit će se polje *Datum zapisa* kako bi se datum knjiženja mogao ručno postaviti;
+> **Knjiženje računa**: omogućava knjiženje računa izabranih u tabeli, prema zadatim parametrima.
 
-**Datum obračuna jednak datumu zapisa**: postavljanjem ove zastavice nametnut će se knjiženje s datumom obračuna jednakim datumu knjiženja. Ako je opcija onemogućena, aktivirat će se polje za datum obračuna kako bi se taj datum mogao ručno postaviti;
+### 2. Besplatne stavke
 
-**Koristi tečaj iz tečajne tablice**: postavljanjem ove zastavice sustav će provjeriti tablicu tečajeva kako bi koristio tečaj koji je bio na snazi na datumu knjiženja/računa (ili posljednji uneseni ranije). Ako opcija nije postavljena, koristit će se tečaj već unesen u zaglavlju računa;
+Korisnik može odrediti koje će se besplatne stavke knjižiti. U tu svrhu potrebno je definisati predložak za knjiženje besplatnih stavki i konto za storno PDV-a.
 
-**Ažuriraj izmjene na dokumentu**: polje će biti aktivno samo ako je prethodna zastavica postavljena. Ovo polje označava ažuriranje tečaja unesenog u zaglavlju računa, zamjenjujući prethodni.
+- **Knjiženje promotivnih poklona**: aktiviranjem ove oznake uključuje se knjiženje besplatnih stavki i omogućavaju se odgovarajuća polja.
 
-*Posebni gumb*: 
+Ako račun koji se knjiži sadrži besplatnu stavku:
 
-> **Knjiženje računa**: omogućuje knjiženje odabranih računa u mreži prema postavljenim parametrima.
+1. **Parametar upravljanja nije podešen**: sistem će korisniku prikazati upozorenje da parametar nije definisan. U tom slučaju račun će biti proknjižen na uobičajen način, bez posebne obrade reda besplatne stavke, koju će zatim biti potrebno ručno evidentirati u računovodstvu.
 
+2. **Parametar za upravljanje besplatnim (promotivnim/gratis) stavkama je podešen**:
+   - **2.1** Ako u sledećim poljima nije definisan podkonto, sistem će na kraj uobičajenih knjiženja dodati potrebne redove za storno troškova koristeći isti podkonto koji je definisan za artikal.
+   - **2.2** Ako je aktivirana oznaka **Zameni do konta stavke**, omogućiće se polje za unos podkonta za storno besplatnih stavki, koji će se u tim dodatnim redovima koristiti umesto podkonta artikla.
 
-### Gratis
+- **Konto za storno promotivnih poklona**: koristi se kada artikal koji je iskazan kao besplatna stavka na računu nema aktiviranu oznaku **Povrat PDV-a**. Taj iznos će biti proknjižen i storniran samo ako je definisan **Konto za storno PDV-a**. U suprotnom će knjiženje morati ručno da se izvrši u računovodstvu, a sistem će upozoriti korisnika da parametar nije podešen.
 
-Korisnik može odrediti koji će se pokloni (besplatni artikli) uključiti u računovodstveno knjiženje. Za to je potrebno postaviti odgovarajuću kontaciju za knjiženje poklona i konto za storno PDV-a.
+#### Poseban gumb
 
-**Knjiženje promotivnih poklona**: aktiviranjem ove opcije omogućuje se upravljanje knjiženjem poklona, čime se aktiviraju povezana polja.
+> **Spremi**: omogućuje spremanje zadanih parametara za knjiženje besplatnih stavki.
 
-Ako račun koji se knjiži sadrži poklon i:
+Nakon odabira računa (na kartici **Knjiženje**) i postavljanja parametara, računi se mogu knjižiti pomoću gumba **Knjiženje računa**.
 
-1. parametar upravljanja nije postavljen, sustav će zatražiti potvrdu korisnika s upozorenjem o nespecificiranoj konfiguraciji. U ovom će se slučaju račun knjižiti normalno bez upravljanja linijom poklona, koju će korisnik morati ručno rukovati u računovodstvu.
+### 3. Prethodni
 
-2. postavljen je parametar upravljanja poklonima:
+Obrazac prikazuje popis izvršenih postupaka knjiženja kako bi ih bilo moguće pregledati i, prema potrebi, poništiti pomoću odgovarajućih gumba.
 
-    2.1 nisu uneseni podkonti u povezanim poljima, sustav će dodati na kraj redovnog knjiženja potrebne linije za storno troškova koristeći isti podkonto postavljen za artikl.
+Poništavanje je moguće samo ako je obračunsko razdoblje još uvijek otvoreno za izmjene (dnevnik nije ispisan, PDV registar nije ispisan, periodični obračun PDV-a nije ispisan, zatvaranje konta nije izvršeno te računovodstvena dospijeća plaćanja nisu zatvorena naplatom ili naplatnim instrumentom).
 
-    2.2. postavljena je zastavica **Zamjeni do konta stavke** omogućit će polje za postavljanje podkonta za storno poklona, koji će se koristiti umjesto podkonta unesenog za artikl u tim dodatnim redovima.
+- **Knjiženje**: tablica s detaljima izvršenih knjiženja. Popunjava se nakon pretraživanja, a moguće je odabrati knjiženja na kojima će se primijeniti funkcije dostupne na alatnoj traci.
 
-**Konto za storno PDV-a**: koristi se u slučaju kada artikl poklona nema opciju **Pravo naplate PDV-a**, što označava da je PDV primijenjen na artikl poklona u trošku (s zastavicom) ili nije (bez zastavice) u trošku dobavljača. Taj će se iznos zabilježiti i stornirati samo ako je unesen *Račun za storno PDV-a*, u protivnom će operacija morati biti ručno obrađena u računovodstvu. Također, u ovom polju postoji poruka za potvrdu/upozorenje korisnika o neispunjenoj postavci.
+Podaci u donjim tablicama **Dokumenti** i **Zapis glavne knjige** odnose se na operaciju odabranu u gornjoj tablici. Dvostrukim klikom u odjeljku računa odnosno knjiženja moguće je otvoriti pripadajući račun ili računovodstveno knjiženje.
 
-*Posebni gumb*: 
+#### Posebni gumbi
 
-> **Spremi**: omogućuje spremanje postavljenih parametara za knjiženje poklona (i ostalih opcija).
+> **Traži**: pretražuje popis izvršenih knjiženja.  
+> **Ekranski pregled knjiženja**: prikazuje pretpregled ispisa knjiženja.  
+> **Povrati knjiženje**: briše odabrano knjiženje.  
+> **Povrati zapis**: briše cijelu odabranu operaciju zajedno sa svim njezinim detaljima prikazanima u dvjema donjim tablicama.
 
-Nakon odabira računa (iz kartice *Knjiženje*) i postavljanja parametara, računi se mogu knjižiti pomoću tipke *Knjiženje računa*.
+### 4. Poruke o pogreškama
 
-### Prethodni
-
-Ovaj obrazac sadrži popis provedenih knjiženja radi pregleda i, prema potrebi, poništavanja pomoću odgovarajućih tipki.
-
-Poništenje će biti moguće samo ako je razdoblje još uvijek izmjenjivo (izvještaj o dnevniku knjiženja, neispisan PDV obrazac, neispisana periodična izvješća, računovodstveni izvještaji koji nisu zatvoreni u gotovini ili mjenicama). 
-
-**Knjiženje računa**:  prikaz s detaljima provedenih operacija. Popunjava se nakon postupka pretraživanja i mogu se odabrati operacije na koje će se primijeniti funkcije iz trake s alatkama.
-
-Podaci u donjim pregledima, **Ulazni računi** i **Knjiženje** odnose se na odabrani knjiženi zapis u gornjem pregledu (nakon filtriranja podataka). Osim toga, u tim posljednjim dvama pregledima može se pregledati račun i odgovarajuće knjiženje dvostrukim klikom na određeni redak.
-
-*Posebni gumbi*:
-> **Traži**: traži popis provedenih knjiženja.      
-> **Ekranski pregled knjiženja**: omogućuje pregled isječka knjiženja.   
-> **Povrati knjiženje**: omogućuje poništavanje odabranog knjiženog zapisa.   
-> **Povrati zapis**: omogućuje poništavanje cijelog odabranog postupka s svim detaljima prikazanim u donjim pregledima.  
+Pogledajte stranicu o [**knjiženju izlaznih računa**](/docs/sales/sales-invoices/accounting/sales-invoices-accounting).

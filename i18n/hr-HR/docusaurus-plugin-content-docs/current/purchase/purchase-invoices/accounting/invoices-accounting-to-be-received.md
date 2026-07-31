@@ -39,7 +39,7 @@ Na osnovu forme postoje određeni parametri upravljanja knjiženjem:
 
 ### Prethodni
 
-Obrazac prikazuje popis izvršenih knjiženja kako bi ih pregledali i eventualno poništili putem odgovarajućih tipki. Dvostruki klik u mreži stvorenih knjiženja omogućuje pregled knjiženja.
+Obrazac prikazuje popis izvršenih knjiženja kako bi ih pregledali i eventualno poništili putem odgovarajućih tipki. Dvostruki klik u tablici stvorenih knjiženja omogućuje pregled knjiženja.
 
 **Knjiženje (računa koji se očekuju)**: prikaz s detaljima izvršenih operacija. Popunjava se nakon postupka pretraživanja, a mogu se odabrati operacije na koje se primjenjuju funkcije vrpce.
 
