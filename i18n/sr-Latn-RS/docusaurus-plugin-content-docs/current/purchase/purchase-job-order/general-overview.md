@@ -3,17 +3,18 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul se nalazi u izborniku **Nabava > Nalog za nabavom**. Korištenjem nabavnih naloga poduzeća mogu sklapati ugovore s dobavljačima za nabavu određenih količina proizvoda unutar unaprijed dogovorenog vremenskog razdoblja. Takvi ugovori ne samo da omogućuju povoljnije ekonomske uvjete, već osiguravaju i raspoloživost potrebne robe, u zamjenu za obvezu kupca da poštuje ugovorene količine u zadanim rokovima.  
+Modul se nalazi u meniju **Nabavka > Nalog za nabavku**. Korišćenjem naloga za nabavku preduzeća mogu zaključivati ugovore sa dobavljačima za nabavku određenih količina proizvoda u okviru unapred dogovorenog vremenskog perioda. Takvi ugovori ne samo da omogućavaju povoljnije ekonomske uslove, već obezbeđuju i raspoloživost potrebne robe, u zamenu za obavezu kupca da poštuje ugovorene količine u definisanim rokovima.
 
 ## **Prethodna konfiguracija modula**
 
-Prije korištenja modula potrebno je ispuniti sljedeće tablice i parametre:      
-- [**Numeracije**](/docs/configurations/tables/fluentis-numerations): unos numeracija koje će se koristiti pri kreiranju nabavnih komesa.      
-- [**Vrsta naloga (narudžbe)**](/docs/configurations/tables/purchase/purchase-job-order-types)
-- [**Parametri naloga nabave**](/docs/configurations/parameters/purchase/purchase-job-orders-parameters)
+Pre korišćenja modula potrebno je popuniti sledeće tabele i parametre:
 
-## **Povezanost s ostalim modulima**
+- [**Numeracije**](/docs/configurations/tables/fluentis-numerations): unos numeracija koje će se koristiti prilikom kreiranja naloga za nabavku.
+- [**Tip naloga (narudžbine)**](/docs/configurations/tables/purchase/purchase-job-order-types)
+- [**Parametri naloga za nabavku**](/docs/configurations/parameters/purchase/purchase-job-orders-parameters)
 
-Nakon što su ugovori s dobavljačima dogovoreni i kreiran je nabavni nalog, dokument se može razdužiti unutar **Narudžbi dobavljaču** putem tipke *Razduženje iz projekta*.       
+## **Povezanost sa ostalim modulima**
 
-Upotrebom odgovarajućih [parametara](/docs/configurations/parameters/purchase/purchase-job-orders-parameters/) moguće je učiniti razduženje iz komese obveznim pri kreiranju nove narudžbe te blokirati količinu komese, kako bi se spriječilo razduženje većih količina od onih predviđenih ugovorom.  
+Nakon što su ugovori sa dobavljačima dogovoreni i kreiran nalog za nabavku, dokument se može razdužiti u okviru **Narudžbina dobavljaču** putem dugmeta *Razduženje iz projekta*.
+
+Korišćenjem odgovarajućih [parametara](/docs/configurations/parameters/purchase/purchase-job-orders-parameters/) moguće je učiniti razduženje iz naloga obaveznim prilikom kreiranja nove narudžbine i blokirati količinu naloga, kako bi se sprečilo razduženje većih količina od onih predviđenih ugovorom.

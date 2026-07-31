@@ -3,45 +3,44 @@ title: Uvod
 sidebar_position: 1
 ---
 
-# Uvod
+Modul se nalazi u meniju **Nabavka > Narudžbine dobavljača** i predstavlja jednu od međufaza procesa nabavke. Narudžbine dobavljača su formalni dokumenti koje izdaje odeljenje **Nabavka** radi naručivanja robe ili usluga od dobavljača prema unapred definisanim uslovima. Sadrže podatke o proizvodima ili uslugama koje se nabavljaju, uključujući količine, cene, rokove isporuke, uslove plaćanja i ostale ugovorne odredbe.
 
-Modul se nalazi u izborniku **Nabava > Narudžba dobavljačima** i predstavlja jedan od međukoraka nabavnog procesa. Narudžbe dobavljača formalni su dokumenti koje izdaje odjel nabave radi naručivanja robe ili usluga od dobavljača prema unaprijed definiranim uvjetima. Sadrže podatke o artiklima ili uslugama koje se nabavljaju, uključujući količine, cijene, rokove isporuke, uvjete plaćanja i ostale ugovorne odredbe.
+## Konfiguracija modula
 
-# Početna konfiguracija modula
+Pre korišćenja modula potrebno je definisati sledeće tabele i parametre:
 
-Preporučuje se **konfiguracija** niza tablica i ispravno postavljanje osnovnih algoritama prije nego što se pristupi generiranju Otpremnice.
+- [**Numeracije**](/docs/configurations/tables/fluentis-numerations): definisanje numeracija koje će se koristiti za narudžbine.
+- [**Tipovi narudžbina dobavljača**](/docs/configurations/tables/purchase/purchase-orders-type): kreiranje i definisanje tipova narudžbina koje će se koristiti.
+- [**Parametri narudžbina dobavljača**](/docs/configurations/parameters/purchase/purchase-orders-parameters): specifična podešavanja za upravljanje narudžbinama dobavljača.
 
-> **Tablice**: ovdje su obuhvaćene tablice Fakturiranja kupovine, Numeracije narudžbi dobavljača, [Vrste narudžbi dobavljača](/docs/configurations/tables/purchase/purchase-orders-type) i [Vrste zaprimanja robe](/docs/configurations/tables/purchase/goods-receipt-types).
+## Povezani moduli
 
-> **Parametri**: ovaj obrazac se odnosi na [Parametre narudžbi dobavljača](/docs/configurations/parameters/purchase/purchase-orders-parameters).
+Narudžbine dobavljača mogu se unositi ručno ili automatski kreirati na osnovu postojećih dokumenata. Automatsko kreiranje moguće je na sledeće načine:
 
-Konkretnije:
+import Link from '@docusaurus/Link';
 
-- **Numeracije** – definiranje numeracija koje će se koristiti za narudžbe.
-- **Tipovi narudžbi dobavljača** – kreiranje i definiranje vrsta narudžbi koje će se koristiti.
-- **Parametri narudžbi dobavljača** – postavke specifične za upravljanje narudžbama dobavljača.
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-requests/general-overview">Zahtevi za nabavku</Link>
+        <p>Postupak <Link to="/docs/purchase/purchase-orders/procedures/create-purchase-orders-from-purchase-requests">Automatsko kreiranje narudžbina</Link> omogućava kreiranje narudžbina dobavljača na osnovu odobrenih zahteva za nabavku.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/offer-request/settings">Zahtev za ponudu</Link>
+        <p>Narudžbine dobavljača mogu se kreirati iz zahteva za ponudu pomoću postupka <Link to="/docs/purchase/offer-request/procedures/order-creation">Kreiranje narudžbine dobavljača iz zahteva za ponudu</Link>.</p>
+    </div>
+</div>
 
-# Povezanost s ostalim modulima
+<div className="cardContainer">
+    <div className="card">
+###     <Link to="/docs/sales/sales-orders/settings">Narudžbine kupaca</Link>
+        <p>Postupak <em>Automatsko kreiranje narudžbina</em> omogućava i kreiranje <em>narudžbine dobavljača</em> na osnovu <em>narudžbine kupca</em>. Alternativno, narudžbina dobavljača može se kreirati iz filtera <Link to="/docs/sales/sales-orders/create-new-sales-orders/search-sales-orders">Pretraga narudžbina kupaca</Link> pomoću dugmeta <strong>Kreiranje narudžbina dobavljača</strong>.</p>
+    </div>
+    <div className="card">
+###     <Link to="/docs/purchase/purchase-job-order/general-overview">Nalog za nabavku</Link>
+        <p>Narudžbine dobavljača mogu se kreirati i potpunom ili delimičnom realizacijom naloga za nabavku, na osnovu unapred definisanih i sa dobavljačem ugovorenih uslova.</p>
+    </div>
+</div>
 
-Narudžbe dobavljača mogu se unositi ručno ili automatski generirati na temelju postojećih dokumenata. Podržani načini automatskog kreiranja uključuju:
+Nakon potvrde, narudžbina dobavljača može se realizovati putem **prijema robe** ili **ulaznog računa**. Time se omogućava evidentiranje robe u skladištu i naknadno knjiženje ulaznog računa u sistemu, uz obezbeđivanje tačnog praćenja zaliha i finansijskih tokova.
 
-:::info Zahtjevi za nabavom
-Procedura **Automatsko kreiranje narudžbi** omogućuje izradu narudžbi dobavljača na temelju odobrenih zahtjeva za nabavu.
-:::
-
-:::info Upit za ponudu
-Narudžbe dobavljača mogu se generirati iz upita za ponudu korištenjem procedure **Izrada narudžbe dobavljača iz zahtjeva za ponudu**.
-:::
-
-:::info Narudžba kupaca
-Procedura **Automatsko kreiranje narudžbi** omogućuje i izradu narudžbe dobavljača na temelju narudžbe kupca. Alternativno, narudžbu je moguće generirati iz pregleda narudžbi kupaca korištenjem funkcije **Kreiranje narudžbi dobavljača**.
-:::
-
-:::info Nalog za nabavom
-Narudžbe dobavljača mogu se generirati i preuzimanjem cijele ili dijela nabavne komese, na temelju unaprijed definiranih i ugovorenih uvjeta s dobavljačem.
-:::
-
-Nakon potvrde, narudžba dobavljača može se realizirati putem primke (DDT-a) ili ulaznog računa. Time se omogućuje evidentiranje robe na skladištu i naknadno knjiženje računa unutar sustava, uz potpunu kontrolu zaliha i financijskih tokova.
-
-Modul također omogućuje kreiranje **zaprimanja robe**, pri čemu korisnik može realizirati narudžbu dobavljača, evidentirati dolazak robe, rasporediti artikle na skladišne lokacije te izvršiti službeni skladišni prijem robe.
-
+Modul takođe omogućava kreiranje [**prijema robe**](/docs/purchase/goods-reception/receipt-goods-form-settings-and-structure), čime korisnik može realizovati narudžbinu dobavljača, evidentirati prijem robe, smestiti je u skladište ili na unapred definisane skladišne lokacije, a zatim izvršiti zvanični prijem u skladište.

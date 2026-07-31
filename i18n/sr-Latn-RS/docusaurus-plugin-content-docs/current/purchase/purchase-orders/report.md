@@ -1,132 +1,135 @@
 ---
-title: Izvještaji
+title: Izveštaji
 sidebar_position: 5
 ---
 
-# Izvještaji
+# Izveštaji
 
-Izbornik **Ispisi** standardno je dostupan. Za pregled ispisa potrebno je odabrati željeni izvještaj, postaviti filtre te kliknuti na gumb **Pregled ispisa** na alatnoj traci. Ova radnja prikazuje dokument bez promjene njegova statusa. Ako je potrebno dokument ispisati ili spremiti u datoteku, potrebno je koristiti funkciju **Ispis**.
+Meni **Štampanje** standardno je dostupan. Za pregled izveštaja potrebno je izabrati željeni izveštaj, podesiti filtere i kliknuti na dugme **Pregled izveštaja** na alatnoj traci. Ova radnja prikazuje dokument bez promene njegovog statusa. Ako je potrebno dokument odštampati ili sačuvati u datoteku, potrebno je koristiti funkciju **Štampaj**.
 
-## Potvrda narudžbe dobavljaču
+## Potvrda narudžbine dobavljaču
 
-Ovaj izvještaj služi za ispis potvrđenih narudžbi dobavljača koje se šalju dobavljačima.
+Ovaj izveštaj služi za štampanje potvrđenih narudžbina dobavljača koje se šalju dobavljačima.
 
-Prilikom pokretanja ispisa moguće je odabrati:
-- Privremeni ispis bez službenog numeriranja
-- Definitivni ispis
-- Papirnati ili digitalni oblik ispisa
+Prilikom pokretanja štampanja moguće je izabrati:
 
-Filtri u zaglavlju omogućuju odabir narudžbi prema podacima iz zaglavlja dokumenta, kao što su:
-- Vrsta narudžbe
+- Privremenu štampu bez zvanične numeracije
+- Konačnu štampu
+- Papirni ili digitalni oblik štampe
+
+Filteri u zaglavlju omogućavaju izbor narudžbina prema podacima iz zaglavlja dokumenta, kao što su:
+- Tip narudžbine
 - Broj dokumenta
 - Dobavljač
-- Projekt
+- Projekat
 
-U grupi **Dodatni filtri** moguće je dodatno ograničiti odabir prema podacima sa stavki dokumenta, primjerice:
+U grupi **Dodatni filteri** moguće je dodatno ograničiti izbor prema podacima sa stavki dokumenta, na primer:
 - Šifra artikla
 - Barkod
 - Opis artikla
 
-Svaka narudžba ispisuje se na zasebnoj stranici te sadrži:
+Svaka narudžbina štampa se na zasebnoj stranici i sadrži:
+- Zaglavlje sa logotipom i podacima o kompaniji
+- Podatke o narudžbini (tip, broj, datum i sl.)
+- Podatke o dobavljaču (PIB, uslovi plaćanja, banka i sl.)
+- Stavke narudžbine (artikal, količina, cena i sl.)
+- Rekapitulaciju narudžbine (ukupan iznos, troškovi, porezi i sl.)
 
-- Zaglavlje s logotipom i podacima o tvrtki
-- Podatke o narudžbi (vrsta, broj, datum i sl.)
-- Podatke o dobavljaču (OIB, uvjeti plaćanja, banka i sl.)
-- Stavke narudžbe (artikl, količina, cijena i sl.)
-- Rekapitulaciju narudžbe (ukupan iznos, troškovi, porezi i sl.)
+## Kreiranje etiketa iz narudžbine dobavljača
 
-## Izrada naljepnica iz narudžbe dobavljača (etikete)
-
-Ova funkcija služi za ispis etiketa koje olakšavaju identifikaciju i upravljanje artiklima obuhvaćenim narudžbom.
-
-Uz standardne filtre moguće je dodatno odabrati dokumente za masovni ispis etiketa, primjerice ispis svih potvrđenih narudžbi koje još nisu zaprimljene ili nisu u potpunosti realizirane.
+Ova funkcija služi za štampanje etiketa koje olakšavaju identifikaciju i upravljanje artiklima obuhvaćenim narudžbinom.
+Pored standardnih filtera moguće je dodatno izabrati dokumente za masovno štampanje etiketa, na primer štampanje svih potvrđenih narudžbina koje još nisu primljene ili nisu u potpunosti realizovane.
 
 Etikete sadrže:
-
 - Internu šifru i opis artikla
 - Barkod artikla
-- Jedinicu mjere, minimalnu količinu i opis artikla
-- Podatke o dobavljaču i narudžbi kojoj artikl pripada
+- Jedinicu mere, minimalnu količinu i opis artikla
+- Podatke o dobavljaču i narudžbini kojoj artikal pripada
 
-## Popis narudžbi dobavljačima
+## Lista narudžbina dobavljača
 
-Ovaj izvještaj omogućuje ispis detaljnog pregleda svih narudžbi dobavljača evidentiranih u sustavu.
+Ovaj izveštaj omogućava štampanje detaljnog pregleda svih narudžbina dobavljača evidentiranih u sistemu.
 
-Uz standardne filtre moguće je:
+Pored standardnih filtera moguće je:
 - Odrediti način sortiranja podataka
-- Odabrati kriterije pretraživanja
-- Grupirati rezultate prema različitim kriterijima
+- Izabrati kriterijume pretrage
+- Grupisati rezultate prema različitim kriterijumima
 
 Podaci se mogu sortirati prema:
 - Dobavljaču
-- Broju narudžbe
-- Vrsti narudžbe
+- Broju narudžbine
+- Tipu narudžbine
 
-Rezultati se mogu grupirati prema:
+Rezultati se mogu grupisati prema:
 - Dobavljaču
 - Uvozu
 - Artiklu
-- Ostalim dostupnim kriterijima
+- Ostalim dostupnim kriterijumima
 
-Za svaku stavku prikazuje se artikl naručen unutar pojedine narudžbe.
+Za svaku stavku prikazuje se artikal naručen u okviru pojedinačne narudžbine.
 
-## Pregled narudžbi po količini
+## Pregled narudžbina po količini
 
-Ovaj izvještaj pruža detaljan pregled aktivnih i još uvijek otvorenih narudžbi.
+Ovaj izveštaj pruža detaljan pregled aktivnih i još uvek otvorenih narudžbina.
 
-Prikazuju se podaci o narudžbama uz naglasak na:
+Prikazuju se podaci o narudžbinama sa naglaskom na:
+
 - Naručene količine
-- Zaprimljene količine
+- Primljene količine
 - Preostale količine za isporuku
 
-Izvještaj omogućuje praćenje statusa izvršenja narudžbi te služi kao alat za kontrolu otvorenih obveza prema dobavljačima.
+Izveštaj omogućava praćenje statusa realizacije narudžbina i služi kao alat za kontrolu otvorenih obaveza prema dobavljačima.
 
-Uz standardne filtre moguće je dodatno:
-- Definirati način sortiranja
-- Grupirati rezultate
+Pored standardnih filtera moguće je dodatno:
+
+- Definisati način sortiranja
+- Grupisati rezultate
 - Filtrirati prema statusu dokumenta
 
-Za svaku stavku prikazuju se naručene, zaprimljene i preostale količine.
+Za svaku stavku prikazuju se naručene, primljene i preostale količine.
 
-## Pregled narudžbi po vrijednosti
+## Pregled narudžbina po vrednosti
 
-Ovaj izvještaj prikazuje otvorene narudžbe koje još nisu u potpunosti realizirane, izražene kroz njihovu financijsku vrijednost.
+Ovaj izveštaj prikazuje otvorene narudžbine koje još nisu u potpunosti realizovane, izražene kroz njihovu finansijsku vrednost.
 
 Posebno je koristan za:
-- Analizu budućih troškova nabave
-- Planiranje novčanog toka
-- Praćenje ugovorenih, a još neisporučenih vrijednosti
 
-Uz standardne filtre moguće je dodatno definirati:
+- Analizu budućih troškova nabavke
+- Planiranje novčanog toka
+- Praćenje ugovorenih, a još neisporučenih vrednosti
+
+Pored standardnih filtera moguće je dodatno definisati:
+
 - Sortiranje prema dobavljaču
-- Sortiranje prema broju narudžbe
+- Sortiranje prema broju narudžbine
 - Sortiranje prema datumu
-- Sortiranje prema ukupnoj vrijednosti
+- Sortiranje prema ukupnoj vrednosti
 
 Za svaku stavku prikazuju se:
-- Vrijednost narudžbe
-- Vrijednost zaprimljene robe
-- Preostala otvorena vrijednost
 
-## Pregled dospijeća rokova narudžbi
+- Vrednost narudžbine
+- Vrednost primljene robe
+- Preostala otvorena vrednost
 
-Ovaj izvještaj omogućuje analizu narudžbi prema planiranim datumima isporuke.
+## Pregled rokova dospeća narudžbina
 
-Uz standardne filtre moguće je:
-- Filtrirati dokumente prema različitim kriterijima
-- Odabrati način sortiranja
-- Grupirati podatke prema dobavljaču ili datumu
+Ovaj izveštaj omogućava analizu narudžbina prema planiranim datumima isporuke.
+Pored standardnih filtera moguće je:
+
+- Filtrirati dokumente prema različitim kriterijumima
+- Izabrati način sortiranja
+- Grupisati podatke prema dobavljaču ili datumu
 
 Prikaz uključuje:
 
-- Broj narudžbe
+- Broj narudžbine
 - Datum unosa
 - Planirani datum isporuke
-- Status narudžbe
+- Status narudžbine
 - Naručene količine
 
-Izvještaj je posebno koristan za praćenje rokova isporuke i planiranje zaprimanja robe.
+Izveštaj je posebno koristan za praćenje rokova isporuke i planiranje prijema robe.
 
-Za dodatne informacije pogledajte članak **Pregled ispisa i ispis dokumenata**.
+Za dodatne informacije pogledajte članak **Pregled izveštaja i štampanje dokumenata**.
 
-Više detalja o ovoj temi potražite u artiklima: [Pretraživanje podataka u formama samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i ispis](/docs/guide/common/operations-with-data/reports) 
+Više detalja o ovoj temi potražite u člancima: [Pretraga podataka u formama samo za čitanje](/docs/guide/common/operations-with-data/data-search-in-read-only-forms) i [Pregled i štampanje](/docs/guide/common/operations-with-data/reports)
