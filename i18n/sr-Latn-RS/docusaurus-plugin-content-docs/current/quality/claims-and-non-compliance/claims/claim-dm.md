@@ -3,184 +3,180 @@ title: Reklamacije - Upravljanje nedostacima
 sidebar_position: 4
 ---
 
-
 ## Upravljanje nedostacima
 
-Ovo je popis nedostataka koje je pronašao pošiljatelj dokumenta i sastoji se od sljedećih informacija:  
-> **Slijed**: ovo je *Slijed* za prikaz nedostataka; predlaže se progresivni slijed s mogućnošću promjene.   
->  
-> **Pronađen nedostatak**
->> **Šifra**: ovo je šifra *Pronađenog nedostatka*; moguće je unijeti samo *Nedostatke* koji su aktivni i predviđeni vrstom *Reklamacije* dokumenta.   
->> **Opis**: informacije samo za čitanje koje opisuju *Pronađeni nedostatak*.
->> **Napomene**: slobodno napisani komentari o *Pronađenom nedostatku*.  
->  
+Ovo je popis nedostataka koje je prijavio pošiljalac dokumenta i sastoji se od sledećih informacija:
+
+> **Sekvenca**: *sekvenca* prikaza nedostataka; predlaže se automatski rastuća sekvenca koju je moguće izmeniti.
+>
+> **Pronađeni nedostatak**
+>> **Šifra**: šifra *Pronađenog nedostatka*; moguće je uneti samo *Nedostatke* koji su aktivni i predviđeni tipom *Reklamacije* dokumenta.
+>> **Opis**: podatak samo za čitanje koji opisuje *Pronađeni nedostatak*.
+>> **Beleške**: slobodne beleške o *Pronađenom nedostatku*.
+>
 > **Pretpostavljeni uzrok**
->> **Šifra**: ovo je šifra *Pretpostavljenog uzroka* koji je generirao nedostatak; moguće je unijeti samo *Uzroke*, pretpostavljene, aktivne i predviđene vrstom *Reklamacije* dokumenta; *Pretpostavljeni uzrok*, nakon analize *Neispravnih predmeta*, može se potvrditi ili ne u *Stvarnom uzroku*.  
->> **Opis**: informacije samo za čitanje koje opisuju *Pretpostavljeni uzrok*.
-> **Napomene**: napomene u slobodnom obliku o *Pretpostavljenom uzroku*.  
->  
+>> **Šifra**: šifra *Pretpostavljenog uzroka* koji je izazvao nedostatak; moguće je uneti samo *Uzroke* koji su pretpostavljeni, aktivni i predviđeni tipom *Reklamacije* dokumenta. *Pretpostavljeni uzrok* može biti potvrđen ili odbačen kao *Stvarni uzrok* nakon analize *Reklamiranih predmeta*.
+>> **Opis**: podatak samo za čitanje koji opisuje *Pretpostavljeni uzrok*.
+>> **Beleške**: slobodne beleške o *Pretpostavljenom uzroku*.
+>
 > **Faza detekcije**
->> **Šifra**: je šifra *Faze detekcije* procesa u kojem je pronađen kvar; moguće je unijeti samo aktivne *Faze detekcije*.
->> **Opis**: informacije samo za čitanje koje opisuju *Fazu otkrivanja*.
->> **Napomene**: napomene u slobodnom obliku o *Fazi otkrivanja*.  
->  
+>> **Šifra**: šifra *Faze detekcije* procesa u kojem je otkriven kvar; moguće je uneti samo aktivne *Faze detekcije*.
+>> **Opis**: podatak samo za čitanje koji opisuje *Fazu detekcije*.
+>> **Beleške**: slobodne beleške o *Fazi detekcije*.
+>
 > **Količina**
-> Sažetak informacija koristi se isključivo ako se ne žele detaljno navesti *Količine* u odjeljku *Reklamiranim predmetima*. Ove *Količine* se ne uzimaju u obzir ni u kakvim izračunima**.   
->> **Prodano**: ovo je količina *artikala* prodanih pošiljatelju *reklamacije*.   
->> **Osporeno**: količina *artikala* koje je pošiljatelj *reklamacije* osporio.  
->> **Povrat**: predstavlja količinu *artikala* koje je vratio pošiljatelj *reklamacije*.  
->   
-> **Referenca na korektivne radnje**  
->> **Vrsta**, **Godina** i **Broj**: ovo su reference samo za čitanje na *Korektivnu radnju* povezanu s retkom '*Nedostatak*' i generiranu pomoću gumba **Stvori korektivnu radnju**. 
->   
-> **Pod jamstvom**: ručna naznaka je li *Pronađeni nedostatak* pokriven jamstvom. Ova se informacija ne uzima u obzir u izračunima.  
-> **Zatvoreno**: označava da je upravljanje *Kvarom* završeno; operater ovo mora ručno naznačiti.   
-> Prilikom zatvaranja, automatski se predlažu sljedeći podaci: *Datum zatvaranja*, predložen kao današnji datum s mogućnošću promjene, *Ime* i *Osoba* predloženi kao *A.R.M. korisnik* povezani i *Zaposlenik* povezan s *A.R.M. korisnikom* (*Datum zatvaranja*, *Ime* i *Osoba* su informacije prisutne na kartici *Zadani podaci*).  
-> Zatvaranje svih *Nedostataka* ne zatvara automatski *Zahtjev*.  
-> **Napomena**: slobodne bilješke.   
+> Ovaj sažetak podataka koristi se isključivo kada nije potrebno detaljno navoditi *Količine* u odeljku *Reklamirani predmeti*. Ove *Količine* se ne uzimaju u obzir ni u jednom obračunu.
+>> **Prodato**: količina *artikala* prodatih pošiljaocu *Reklamacije*.
+>> **Osporeno**: količina *artikala* koje je pošiljalac *Reklamacije* osporio.
+>> **Vraćeno**: količina *artikala* koje je vratio pošiljalac *Reklamacije*.
+>
+> **Referenca korektivne mere**
+>> **Tip**, **Godina** i **Broj**: reference samo za pregled *Korektivne mere* povezane sa redom *Nedostatak* i kreirane pomoću dugmeta **Kreiraj korektivnu meru**.
+>
+> **Pod garancijom**: ručna oznaka da li je *Pronađeni nedostatak* pokriven garancijom. Ovaj podatak se ne uzima u obzir u obračunima.
+> **Zatvoreno**: označava da je upravljanje *Kvarom* završeno; operater ovu oznaku postavlja ručno.
+> Prilikom zatvaranja automatski se predlažu sledeći podaci: *Datum zatvaranja*, predložen kao današnji datum uz mogućnost izmene, *Ime* i *Osoba* predloženi na osnovu povezanog *A.R.M. korisnika* i *Zaposleni* povezan sa *A.R.M. korisnikom* (*Datum zatvaranja*, *Ime* i *Osoba* nalaze se na kartici *Podrazumevani podaci*).
+> Zatvaranje svih *Nedostataka* ne zatvara automatski *Reklamaciju*.
+> **Beleška**: slobodne beleške.
 
+### Podaci o nedostatku
 
-### Podaci o nedostacima
+Ovo su dodatne informacije za izabrani red *Nedostatak*. Podaci kojima se upravlja su:
 
-Ovo su dodatne informacije za odabrani redak *Nedostatak*. Upravljane informacije su:   
-> **Stupanj ozbiljnosti** je *Stupanj ozbiljnosti* pripisan kvaru; mogu se unijeti samo aktivni *Stupnji ozbiljnosti*.   
-> **Stvarni uzrok**: ovo je stvarni uzrok koji je generirao nedostatak; moguće je unijeti samo *Uzroke*, učinkovite, aktivne i predviđene vrstom *Reklamacije* dokumenta.  
-> **Bilješke o stvarnom uzroku**: slobodne bilješke o *stvarnom uzroku*.   
-> **Predloženo rješenje**: ovo je predloženo tehničko/komercijalno/administrativno rješenje koje treba usvojiti; mogu se unijeti samo aktivna *Rješenja*.   
-> **Bilješke o predloženom rješenju**: bilješke o *Predloženom rješenju*.   
-> **Donesena odluka**: Ovo je tehnička/komercijalna/administrativna odluka donesena za rješavanje nedostatka; mogu se unijeti samo aktivne *Odluke*.   
-> **Bilješke o donesenoj odluci**: bilješke o *Donesenoj odluci*.   
-> **Komercijalna odluka**: Ovo je komercijalna/administrativna odluka donesena za rješavanje nedostatka; mogu se unijeti samo aktivne *Odluke*.   
-> **Bilješke o komercijalnom rješenju**: bilješke o *Komercijalnom rješenju*.   
-> **Datum zatvaranja**: ovo je datum na koji je dovršeno upravljanje određenim *Nedostatkom*.   
-> Prilikom unosa datuma, automatski se postavlja oznaka *Zatvoreno* u odabranom retku *Nedostatak*.  
-> **Ime**: Ovo je *A.R.M. korisnik* koji je zatvorio *Nedostatak*. Ove informacije su samo za čitanje.   
-> **Osoba**: Ovo je *Zaposlenik* koji je zatvorio *Nedostatak*. Ove informacije su samo za čitanje.   
-> **Funkcija**: je *Funkcija tvrtke* koja je zatvorila *Nedostatak*.   
-
+> **Stepen ozbiljnosti**: *Stepen ozbiljnosti* dodeljen kvaru; mogu se uneti samo aktivni *Stepeni ozbiljnosti*.
+> **Stvarni uzrok**: stvarni uzrok koji je izazvao nedostatak; mogu se uneti samo *Uzroci* koji su potvrđeni, aktivni i predviđeni tipom *Reklamacije* dokumenta.
+> **Beleške o stvarnom uzroku**: slobodne beleške o *stvarnom uzroku*.
+> **Predloženo rešenje**: predloženo tehničko/komercijalno/administrativno rešenje koje treba primeniti; mogu se uneti samo aktivna *Rešenja*.
+> **Beleške o predloženom rešenju**: beleške o *Predloženom rešenju*.
+> **Doneta odluka**: tehnička/komercijalna/administrativna odluka doneta radi rešavanja nedostatka; mogu se uneti samo aktivne *Odluke*.
+> **Beleške o donetoj odluci**: beleške o *Donetoj odluci*.
+> **Komercijalna odluka**: komercijalna/administrativna odluka doneta radi rešavanja nedostatka; mogu se uneti samo aktivne *Odluke*.
+> **Beleške o komercijalnom rešenju**: beleške o *Komercijalnom rešenju*.
+> **Datum zatvaranja**: datum završetka upravljanja određenim *Nedostatkom*.
+> Unošenjem datuma automatski se postavlja oznaka *Zatvoreno* u izabranom redu *Nedostatak*.
+> **Ime**: *A.R.M. korisnik* koji je zatvorio *Nedostatak*. Ovaj podatak je samo za čitanje.
+> **Osoba**: *Zaposleni* koji je zatvorio *Nedostatak*. Ovaj podatak je samo za čitanje.
+> **Funkcija**: *Funkcija preduzeća* koja je zatvorila *Nedostatak*.
 
 ### Predmeti reklamacije
 
-To je popis *Reklamiranih artikala/predmeta* koji se mogu povezati s odabranim *Pronađenim nedostatkom* i sastoji se od sljedećih informacija:  
-> **Predmet**   
->> **Bar kod**: može se koristiti za dodavanje ili zamjenu artikla, serije, serijskog broja i jedinice utovara.   
->> Za sve informacije o kodiranju barkodova pogledati stranicu [Barkod numeracija](/docs/configurations/tables/general-settings/barcode-tokenizer).   
->> **Klasa**: ovo je *Klasa artikla* za koju se traži reklamacija.   
->> **Šifra artikla**: ovo je šifra *artikla* za koji se traži reklamacija.  
->> **Opis artikla**: ovo je opis *artikla* za koji se traži reklamacija.   
->> **Varijanta**: ovo je šifra varijante *artikla* za koji se traži reklamacija.   
->> **Lot**: je interna šifra *Lota* zatraženog *Artikla*. 
->> **Utovarna jedinica**: Ovo je originalna *Utovarna jedinica* koja je sadržavala zatraženi *artikl*.   
->> Umetanjem *utovarne jedinice* automatski se umeću svi redovi s detaljima *artikla* koji se u njoj nalaze.   
->> Ako je u *Parametrima pritužbi i neusklađenosti*, za datum dokumenta po godini, u odjelu *Reklamacije*, zatraženo *UDC grupiranje podataka*, redovi s jednakim *Artiklima* bit će prikazani u jednom retku s dodanim količinama.   
->> **Serijski broj**: Ovo je *serijski broj* *artikla* za koji se traži reklamacija.   
->  
-> **Količina**   
->> **Mjerna jedinica**: to je *Mjerna jedinica* zatraženog *artikla*, informacije samo za čitanje.  
->> **Prodano**: ovo je količina *Artikla* prodanog pošiljatelju *Reklamacije*; ovu vrijednost potrebno je unijeti ručno. 
->> **Osporeno**: ovo je količina *Artikla* koju je pošiljatelj *Reklamacije* osporio; vrijednost se mora unijeti ručno.  
->> **Povrat**: ovo je količina *Artikla* koju je vratio pošiljatelj *Reklamacije*; vrijednost se mora unijeti ručno.   
->> **Prerađeno**: ovo je količina *Artikla* koju je preradio podnositelj *Reklamacije*; ovu vrijednost potrebno je unijeti ručno.  
->> **Prihvaćeno**: ovo je količina prihvaćenog *Artikla*; ovu vrijednost potrebno je unijeti ručno.  
->
-> **Vrijednost**
->> **Reklamirano**: ovo je vrijednost koju je zatražio pošiljatelj *Reklamacije*; ovu vrijednost treba unijeti ručno.
->> **Prihvaćeno**: ovo je prihvaćena vrijednost; ovu vrijednost treba unijeti ručno.
->
-> **Podaci o povratu**   
->> **Ovlaštenje za povrat**: označava da se odobrava povrat vraćenog *Artikla* za *Prihvaćenu količinu*.
->> **Očekivani datum povrata**: ovo je očekivani datum povrata vraćenog *Artikla*.   
->> **Lot**: je povratni *lot* vraćenog *Artikla*.   
->> **Serijski broj**: ovo je *serijski broj* vraćenog *Artikla*.   
->> **Utovarna jedinica**: je *Utovarna jedinica* vraćenog *Artikla*.   
+Ovo je popis *Reklamiranih artikala/predmeta* koji se mogu povezati sa izabranim *Pronađenim nedostatkom* i sastoji se od sledećih informacija:
 
+> **Predmet**
+>> **Barkod**: može se koristiti za dodavanje ili zamenu artikla, lota, serijskog broja i jedinice utovara.
+>> Za sve informacije o kodiranju barkodova pogledajte stranicu [Numeracija barkodova](/docs/configurations/tables/general-settings/barcode-tokenizer).
+>> **Klasa**: *Klasa artikla* za koju se podnosi reklamacija.
+>> **Šifra artikla**: šifra *artikla* za koji se podnosi reklamacija.
+>> **Opis artikla**: opis *artikla* za koji se podnosi reklamacija.
+>> **Varijanta**: šifra varijante *artikla* za koji se podnosi reklamacija.
+>> **Lot**: interna šifra *Lota* reklamiranog *Artikla*.
+>> **Jedinica utovara**: originalna *Jedinica utovara* koja je sadržala reklamirani *artikal*.
+>> Unošenjem *jedinice utovara* automatski se dodaju svi redovi sa detaljima *artikla* koji se u njoj nalaze.
+>> Ako je u *Parametrima reklamacija i neusklađenosti*, za godinu datuma dokumenta, u odeljku *Reklamacije*, uključeno *grupisanje podataka jedinice utovara*, redovi sa istim *Artiklima* biće prikazani u jednom redu sa zbirnim količinama.
+>> **Serijski broj**: *serijski broj* *artikla* za koji se podnosi reklamacija.
+>
+> **Količina**
+>> **Jedinica mere**: *jedinica mere* reklamiranog *artikla*; podatak samo za čitanje.
+>> **Prodato**: količina *Artikla* prodata pošiljaocu *Reklamacije*; ovu vrednost potrebno je uneti ručno.
+>> **Osporeno**: količina *Artikla* koju je pošiljalac *Reklamacije* osporio; vrednost se unosi ručno.
+>> **Vraćeno**: količina *Artikla* koju je vratio pošiljalac *Reklamacije*; vrednost se unosi ručno.
+>> **Prerađeno**: količina *Artikla* koju je preradio podnosilac *Reklamacije*; ovu vrednost potrebno je uneti ručno.
+>> **Prihvaćeno**: prihvaćena količina *Artikla*; ovu vrednost potrebno je uneti ručno.
+>
+> **Vrednost**
+>> **Reklamirano**: vrednost koju je zahtevao pošiljalac *Reklamacije*; ovu vrednost potrebno je uneti ručno.
+>> **Prihvaćeno**: prihvaćena vrednost; ovu vrednost potrebno je uneti ručno.
+>
+> **Podaci o povratu**
+>> **Odobrenje za povrat**: označava da je odobren povrat vraćenog *Artikla* za *Prihvaćenu količinu*.
+>> **Očekivani datum povrata**: očekivani datum povrata vraćenog *Artikla*.
+>> **Lot**: povratni *lot* vraćenog *Artikla*.
+>> **Serijski broj**: *serijski broj* vraćenog *Artikla*.
+>> **Jedinica utovara**: *Jedinica utovara* vraćenog *Artikla*.
 
 #### Podaci o predmetu
 
-Ovo su dodatne informacije za odabrani redak *Reklamiranog artikla/predmeta*. Upravljane informacije su:   
-> **Projekt**: ovo je referenca na *projekt* određenog *nedostatka*.   
-> **Napomene o artiklu**: napomene o *artiklu* određenog *nedostatka*.   
-> **Napomene o lotu**: napomene o *lotu* određenog *nedostatka*.
-> **Napomene o utovarnoj jedinici**: napomene za *Utovarna jedinica* određenog *nedostatka*.
-> **Napomene**: napomene u slobodnom obliku na retku određenog *nedostatka*.  
+Ovo su dodatne informacije za izabrani red *Reklamiranog artikla/predmeta*. Podaci kojima se upravlja su:
 
-> **Otpremnica kupcu**: je referenca na *prodajni dokument* (*Vrsta*, *Godina* i *Broj*), kojim se pretpostavlja da je sporna roba ili usluga prodana. 
-> **Prodajni račun**: je referenca na *Prodajni račun* (*Vrsta*, *Godina* i *Broj*) za koji se pretpostavlja da je sporna roba ili usluga fakturirana.   
-> **Potvrda o primitku robe**: je referenca na *Potvrdu o primitku robe* (*Vrsta*, *Godina* i *Broj*), s kojom pošiljatelj vraća spornu robu.   
-> **Dokument nabave**: je referenca na *prodajni dokument* (*Vrsta*, *Godina* i *Broj*), kojim se pretpostavlja da je sporna roba ili usluga prodana.   
+> **Projekat**: referenca na *projekat* određenog *nedostatka*.
+> **Beleške o artiklu**: beleške o *artiklu* određenog *nedostatka*.
+> **Beleške o lotu**: beleške o *lotu* određenog *nedostatka*.
+> **Beleške o jedinici utovara**: beleške za *Jedinicu utovara* određenog *nedostatka*.
+> **Beleške**: slobodne beleške na redu određenog *nedostatka*.
 
+> **Otpremnica kupcu**: referenca na *prodajni dokument* (*Tip*, *Godina* i *Broj*), kojim se pretpostavlja da je sporna roba ili usluga prodata.
+> **Prodajni račun**: referenca na *Prodajni račun* (*Tip*, *Godina* i *Broj*) za koji se pretpostavlja da je sporna roba ili usluga fakturisana.
+> **Potvrda o prijemu robe**: referenca na *Potvrdu o prijemu robe* (*Tip*, *Godina* i *Broj*), kojom pošiljalac vraća spornu robu.
+> **Dokument nabavke**: referenca na *prodajni dokument* (*Tip*, *Godina* i *Broj*), kojim se pretpostavlja da je sporna roba ili usluga prodata.
 
 #### Dodatni podaci
 
-Mogu se unijeti [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata) za odabrani *Reklamirani artikl/predmet*.  
-
+Mogu se uneti [Dodatni podaci](/docs/configurations/utility/extra-data/extradata/new-extradata) za izabrani *Reklamirani artikal/predmet*.
 
 ### Povezani dokumenti
 
-U ovom pregledu mogu se umetnuti i pregledati svi dokumenti priloženi odabranom *Reklamiranom artiklu*.   
+U ovom pregledu mogu se dodavati i pregledati svi dokumenti priloženi izabranom *Reklamiranom artiklu*.
 
+### Korišćeni materijali
 
-### Korišteni materijali
+Na ovom popisu mogu se navesti materijali korišćeni za otklanjanje izabranog *Nedostatka*.
 
-Na ovom popisu možete navesti materijale korištene za otklanjanje odabranog *Nedostatka*.
-Popis uključuje sljedeće informacije:   
->   
-> **Artikl**   
->> **Klasa**: to je *klasa artikla*.   
->> **Šifra**: to je šifra *artikla*.   
->> **Opis**: opis *artikla*.   
->> **Varijanta**: varijanta *artikla*.   
->> **Lot**: to je interni lot artikla.   
->> **Serijski broj**: korišteni serijski broj.   
->   
-> **Količina**   
->> **Mjerna jedinica**: *Mjerna jedinica* *artikla*, samo za čitanje  
->> **Potrošena količina**: ovo je količina *artikla* korištena za otklanjanje odabranog *nedostatka*.
->   
-> **Vrijednost**
->> **Jedinična cijena**: ovo je jedinična cijena *artikla*; vrijednost se mora unijeti ručno.
->> **Ukupna cijena**: ovo je omjer između *Potrošene količine* i *Jedinične cijene*; cijena se može mijenjati.  
+Popis sadrži sledeće informacije:
+
 >
-> **Napomena**: slobodne bilješke.   
-
+> **Artikal**
+>> **Klasa**: *klasa artikla*.
+>> **Šifra**: šifra *artikla*.
+>> **Opis**: opis *artikla*.
+>> **Varijanta**: varijanta *artikla*.
+>> **Lot**: interni *lot* artikla.
+>> **Serijski broj**: korišćeni serijski broj.
+>
+> **Količina**
+>> **Jedinica mere**: *jedinica mere* *artikla*; podatak samo za čitanje.
+>> **Potrošena količina**: količina *artikla* upotrebljena za otklanjanje izabranog *nedostatka*.
+>
+> **Vrednost**
+>> **Jedinična cena**: jedinična cena *artikla*; vrednost se unosi ručno.
+>> **Ukupna cena**: proizvod *Potrošene količine* i *Jedinične cene*; vrednost se može menjati.
+>
+> **Beleška**: slobodne beleške.
 
 ### Uključeni subjekti
 
-Kartica sadrži informacije o *Funkcijama tvrtke* i/ili *Zaposlenicima* koji će biti uključeni u upravljanje odabranim *Nedostatkom*.
-Popis se sastoji od sljedećih informacija:  
-> **Slijed**: je *Slijed* prikaza "Uključenih subjekata*; predlaže se progresivni broj s mogućnošću promjene.  
->
-> **Funkcija tvrtke**
->> **šifra**: ovo je šifra uključene *Funkcije tvrtke*.
->> **Opis**: ovo je opis uključene *Funkcije tvrtke*.   
->   
-> **Zaposlenik**
->> **Šifra**: ovo je šifra uključenog *zaposlenika*.
->> **Opis**: ovo je prezime i ime uključenog *zaposlenika*. 
->   
-> **Upravljanje angažmanom**   
->> **Opis predmeta**: napomena u slučaju da tema/predmet nije *Funkcija tvrtke* ili *Zaposlenik*.
->> **Razlog sudjelovanja**: slobodne bilješke o temi/predmetu.  
->> **Datum isteka**: ovo je datum do kojeg uključena osoba mora dovršiti aktivnosti povezane s razlogom svog sudjelovanja.  
->> **Odgovor**: slobodne bilješke o temi/predmetu.   
->> **Zatvoreno**: označava da je angažman ispitanika završen.   
->> Samo *Funkcija ili osoba odgovorna* za *Reklamaciju* ili *Funkcija tvrtke* ili uključeni *Zaposlenik* može zaključiti angažman.  
->> Prilikom zatvaranja, *Datum zatvaranja* se automatski predlaže, predlaže se kao današnji datum i može se promijeniti.   
->> **Datum zatvaranja**: ovo je datum kada je sudjelovanje ispitanika završeno.  
->> Samo *Funkcija ili odgovorna osoba* za *Reklamaciju* ili *Funkcija tvrtke* ili uključeni *Zaposlenik* može umetnuti ili promijeniti ovaj datum.
->> Kada unesete datum, automatski se postavlja oznaka *Zatvoreno*.   
->
-> **Napomena**: slobodne bilješke.     
+Kartica sadrži informacije o *Funkcijama preduzeća* i/ili *Zaposlenima* koji će biti uključeni u upravljanje izabranim *Nedostatkom*.
 
+Popis se sastoji od sledećih informacija:
+
+> **Sekvenca**: *sekvenca* prikaza *Uključenih subjekata*; predlaže se automatski rastući broj koji je moguće izmeniti.
+>
+> **Funkcija preduzeća**
+>> **Šifra**: šifra uključene *Funkcije preduzeća*.
+>> **Opis**: opis uključene *Funkcije preduzeća*.
+>
+> **Zaposleni**
+>> **Šifra**: šifra uključenog *zaposlenog*.
+>> **Opis**: prezime i ime uključenog *zaposlenog*.
+>
+> **Upravljanje angažovanjem**
+>> **Opis subjekta**: beleška u slučaju da subjekt nije *Funkcija preduzeća* niti *Zaposleni*.
+>> **Razlog učešća**: slobodne beleške o subjektu.
+>> **Datum isteka**: datum do kojeg uključena osoba mora završiti aktivnosti povezane sa razlogom svog učešća.
+>> **Odgovor**: slobodne beleške o subjektu.
+>> **Zatvoreno**: označava da je angažovanje učesnika završeno.
+>> Samo *Funkcija ili odgovorna osoba* za *Reklamaciju*, odnosno uključena *Funkcija preduzeća* ili *Zaposleni*, može zatvoriti angažovanje.
+>> Prilikom zatvaranja automatski se predlaže *Datum zatvaranja*, postavljen na tekući datum, uz mogućnost izmene.
+>> **Datum zatvaranja**: datum završetka učešća učesnika.
+>> Samo *Funkcija ili odgovorna osoba* za *Reklamaciju*, odnosno uključena *Funkcija preduzeća* ili *Zaposleni*, može uneti ili izmeniti ovaj datum.
+>> Unošenjem datuma automatski se postavlja oznaka *Zatvoreno*.
+> **Beleška**: slobodne beleške.
 
 ### Dodatni podaci
 
-Moguće je umetnuti neke [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za odabrano *Nedostatak*.   
-
+Moguće je uneti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za izabrani *Nedostatak*.
 
 ### Povezani dokumenti
 
-U ovom popisu mogu se umetnuti i pregledati svi dokumenti priloženi odabranom *Nedostatku*.   
+U ovom popisu mogu se dodavati i pregledati svi dokumenti priloženi izabranom *Nedostatku*.
 
-
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).   
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcionisanju formi, pogledajte sledeći link [Funkcionalnosti, dugmad i polja](/docs/guide/common).

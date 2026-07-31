@@ -1,35 +1,37 @@
 ---
-title: Valoriziranje reklamacije
+title: Valorizacija reklamacije
 sidebar_position: 1
 ---
 
-Postupak valorizacije reklamacija omogućuje istovremeno kreiranje jedne ili više računa/odobrenja pošiljateljima željenih *Reklamacija*.   
+Postupak valorizacije reklamacija omogućava istovremeno kreiranje jednog ili više računa/kreditnih nota za pošiljaoce izabranih *Reklamacija*.
 
 ## Valorizacija
-Na ovoj kartici moguće je odabrati *reklamacije* za valorizaciju.  
-Rezultate je moguće filtrirati pomoću dostupnih filtara kako bi se izvršila preciznija pretraga.   
-Reklamacije se mogu pretraživati ako su *odobrene*, s *priznatom vrijednošću* i koje još nisu *valorizirane*.   
-*Računi* će biti kreirani s **Datumom kreiranja** navedenim u nastavku.   
-Odabirom jedne ili više *Reklamacija*, procjena se može izvršiti pritiskom na gumb **Izrada računa po reklamacijama**.   
 
-## Parametri 
-U kartici je moguće unijeti parametre koji će se koristiti u postupku i tijekom upravljanja valorizacijom [Reklamacija].(/docs/quality/claims-and-non-compliance/claims/claim).   
-Informacije kojima se upravlja su:   
-> **Umetanje na račun**: proširenje gdje su prisutni sljedeći podaci:    
->> **Reklamacije s različitim promjenama**: ako je označeno, omogućuje u istu *kreditnu notu* umetanje *reklamacije* s različitim tečajevima.   
->> **Vrati našu i vašu referencu**: označava treba li prijaviti relevantne reference unesene u *Neusklađenosti* u *Računima*.  
->> **Detalj reklamiranog predmeta**
->   
-> **Referenca reklamacija**: proširenje gdje su prisutni sljedeći podaci:   
->> **Umetnite reference pritužbe**: Ako je navedeno, omogućuje unos reference *Reklamacije* u redak *Stavka napomene*, koji se stavlja prije retka koji prikazuje iznos koji treba uplatiti. Referenca koja se prijavljuje može se konfigurirati u polju *Opis* ispod. 
->> **Opis**: parametrizacija reference *Reklamacija* u retku *Stavka napomene*, koja se stavlja prije retka koji prikazuje iznos koji treba naplatiti.   
->> Moguće informacije s kojima se može stvoriti referentni niz (umetanjem odgovarajućeg broja u okrugle zagrade) navedene su u legendi ispod.   
+Na ovoj kartici moguće je odabrati *reklamacije* za valorizaciju. Rezultate je moguće filtrirati pomoću dostupnih filtera radi preciznije pretrage.
+Moguće je pretraživati *reklamacije* koje su *odobrene*, imaju *priznatu vrednost* i još nisu *valorizovane*.
+*Računi* će biti kreirani sa **Datumom kreiranja** navedenim u nastavku. Izborom jedne ili više *Reklamacija*, valorizacija se može izvršiti pritiskom na dugme **Kreiranje računa po reklamacijama**.
+
+## Parametri
+
+Na ovoj kartici moguće je uneti parametre koji će se koristiti u postupku i tokom upravljanja valorizacijom [Reklamacija](/docs/quality/claims-and-non-compliance/claims/claim).
+
+Podaci kojima se upravlja su:
+
+> **Unos u račun**: proširenje koje sadrži sledeće podatke:
+>> **Reklamacije sa različitim kursnim listama**: ako je označeno, omogućava unos *reklamacija* sa različitim kursevima u istu *kreditnu notu*.
+>> **Prenesi našu i vašu referencu**: označava da li treba preneti odgovarajuće reference unete u *Neusklađenosti* u *Račune*.
+>> **Detalj reklamiranog artikla**
+>
+> **Referenca reklamacije**: proširenje koje sadrži sledeće podatke:
+>> **Unesi referencu reklamacije**: ako je označeno, omogućava unos reference *Reklamacije* u red *Stavka napomene*, koji se umeće pre reda sa iznosom za naplatu. Referenca koja se prikazuje može se konfigurisati u polju *Opis* ispod.
+>> **Opis**: podešavanje reference *Reklamacije* u redu *Stavka napomene*, koji se umeće pre reda sa iznosom za naplatu.
+>> Moguće informacije koje se mogu koristiti za kreiranje referentnog niza (unošenjem odgovarajućeg broja u okrugle zagrade) navedene su u legendi ispod.
 >>
-Nakon što su parametri izmijenjeni, da bi se mogli koristiti, promjene se moraju spremiti pritiskom na gumb **Spremi**.
+Nakon izmene parametara, da bi se oni koristili, promene je potrebno sačuvati pritiskom na dugme **Sačuvaj**.
 
-## Povrati valorizaciju
-U ovom pregledu moguće je pretraživati *račune* prethodno kreirane postupkom valorizacije.   
-Mogu se pretraživati *računi* u svrhu vraćanja pomoću dostupnih filtera.   
-Prva tablica sadrži izvršene operacije, dok druga tablica sadrži **Račune** i **Reklamacije** za svaku operaciju.   
-Za otkazivanje operacija, mora se odabrati operacije koje se želi otkazati i pritisnuti gumb **Povrati stvaranje**.   
-Za poništavanje pojedinačnih faktura iz više faktura kreiranih u istoj operaciji, moraju se u donjoj tablici odabrati fakture koje se žele izbrisati i pritisnuti gumb **Povrati račun**.   
+## Poništi valorizaciju
+
+U ovom pregledu moguće je pretraživati *račune* prethodno kreirane postupkom valorizacije. *Račune* za poništavanje moguće je pretraživati pomoću dostupnih filtera.
+Prva tabela sadrži izvršene operacije, dok druga tabela sadrži **Račune** i **Reklamacije** za svaku operaciju.
+Za poništavanje operacija potrebno je izabrati operacije koje se žele poništiti i pritisnuti dugme **Poništi kreiranje**.
+Za poništavanje pojedinačnih računa iz grupe računa kreiranih u istoj operaciji potrebno je u donjoj tabeli izabrati račune koje treba obrisati i pritisnuti dugme **Poništi račun**.

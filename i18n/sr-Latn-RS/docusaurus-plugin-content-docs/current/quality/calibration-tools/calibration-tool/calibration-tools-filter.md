@@ -1,16 +1,16 @@
 ---
-title: Pretraživanje kalibracije uređaja 
+title: Pretraga kalibracije uređaja
 sidebar_position: 1
 ---
 
-Filter podataka omogućuje unos novih *kalibracija uređaja* ili pretraživanje postojećih radi prikaza, izmjene ili brisanja.    
+Filter podataka omogućava unos novih *kalibracija uređaja* ili pretragu postojećih radi prikaza, izmene ili brisanja.
 
-Obrazac se sastoji od područja filtra i rezultatskog područja. Nakon što postave svi željeni filteri, dovoljno je kliknuti na tipku **Traži** da bi se vidjeli rezultati unutar pregleda. 
+Forma se sastoji od oblasti za filtriranje i oblasti sa rezultatima. Nakon postavljanja svih željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u pregledu.
 
-Za unos novih *Kalibracija uređaja* potrebno je pritisnuti tipku **Novo**.    
+Za unos novih *Kalibracija uređaja* potrebno je pritisnuti dugme **Novo**.
 
-### Izmjena ili prikaz kalibracije uređaja
+### Izmena ili prikaz kalibracije uređaja
 
-Za otvaranje upravljanja u prikazu, potrebno je dvostruko kliknuti na željeni redak ili, odabirom jednog ili više redaka, pritisnuti tipke **Izmijeni** ili **Prikaži**.  
+Za otvaranje upravljanja u prikazu potrebno je dvaput kliknuti na željeni red ili, nakon izbora jednog ili više redova, pritisnuti dugme **Izmeni** ili **Prikaži**.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju obrazaca, upućujemo vas na sljedeći link [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcionisanju formi, pogledajte sledeći link [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

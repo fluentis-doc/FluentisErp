@@ -3,11 +3,12 @@ title: Popis kalibracija uređaja
 sidebar_position: 1
 ---
 
-Filter za izvršenje izvještaja nalazi se na putanji **Kvaliteta > Kalibracija uređaja > Kalibracija uređaja > Izvještaji > Popis Kalibracije uređaja**.   
+Filter za izvršavanje izveštaja nalazi se na putanji **Kvalitet > Kalibracija uređaja > Kalibracija uređaja > Izveštaji > Popis kalibracija uređaja**.
 
-Filter za izvršenje izvještaja omogućava pretraživanje *Kalibracije uređaja* kako bi se mogli ispisati.   
+Filter za izvršavanje izveštaja omogućava pretragu *Kalibracija uređaja* kako bi se mogle štampati.
 
-Dostupan je standardni izvještaj o:   
-> **Registar Kalibracija uređaja**: popis *Kalibracija uređaja* koji se može grupirati po: *Izvještaju*, *Instrumentu* i tko je *Izvršio*.   
+Dostupan je standardni izveštaj:
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Registar kalibracija uređaja**: popis *Kalibracija uređaja* koji se može grupisati prema: *Izveštaju*, *Instrumentu* i korisniku koji je *Izvršio* kalibraciju.
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom radu sa formama, pogledajte sledeći link [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

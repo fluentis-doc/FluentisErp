@@ -1,184 +1,185 @@
 ---
-title: Mjerni instrument
+title: Merni instrument
 sidebar_position: 2
 ---
 
-Upravljanje se nalazi na putanji **Kvaliteta > Kalibracija uređaja >  Mjerni instrumenti > Novi mjerni instrument** ili se može izvršiti putem **Pretrage mjernih instrumenata**.   
-
+Upravljanje se nalazi na putanji **Kvalitet > Kalibracija uređaja > Merni instrumenti > Novi merni instrument** ili se može izvršiti putem **Pretrage mernih instrumenata**.
 
 :::important ČEMU SLUŽI
-U ovom šifarniku pohranjuju se mjerni instrumenti koji se koriste za osiguranje prikladnosti proizvoda i pružanje ponuđenih usluga.   
-Uz mjerni instrument moguće je povezati informacije o kupnji, odgovornosti, tehničkim/mehaničkim svojstvima, lokaciji i kalibraciji.   
-Ako je instrument podložan kalibraciji i kalibracija se provodi interno, moguće je definirati koje aktivnosti treba provesti i koje vrijednosti zabilježiti kako bi kalibracija bila uspješna.   
-Ako je instrument podložan kalibraciji, a kalibracija se provodi eksterno, moguće je definirati koja će treća strana obaviti kalibraciju.   
-Ako je definirana vremenska periodičnost kalibracije, tipka "Planiraj nove kalibracije" omogućuje automatsko stvaranje planiranih kalibracija za željeno razdoblje.   
-Standardno su dostupna sljedeća izvješća: Registar instrumenata grupiranih prema: Instrument, Kategorija, Dobavljač (nabave), Lokacija, Korisnik, Jamstvo datuma i Istek kalibracije, Registar instrumenata koji nisu podložni kalibraciji i Kartica mjernog instrumenta.   
+U ovom šifarniku čuvaju se merni instrumenti koji se koriste za obezbeđivanje usklađenosti proizvoda i pružanje ponuđenih usluga.
+Uz merni instrument moguće je povezati informacije o nabavci, odgovornosti, tehničkim/mehaničkim svojstvima, lokaciji i kalibraciji.
+Ako instrument podleže kalibraciji i kalibracija se obavlja interno, moguće je definisati koje aktivnosti treba sprovesti i koje vrednosti evidentirati kako bi kalibracija bila uspešna.
+Ako instrument podleže kalibraciji, a kalibracija se obavlja eksterno, moguće je definisati koja će treća strana izvršiti kalibraciju.
+Ako je definisana vremenska periodičnost kalibracije, dugme **Planiranje novih kalibracija** omogućava automatsko kreiranje planiranih kalibracija za željeni period.
+Standardno su dostupni sledeći izveštaji: Registar instrumenata grupisan prema: Instrumentu, Kategoriji, Dobavljaču (nabavke), Lokaciji, Korisniku, Datumu garancije i Isteku kalibracije, Registar instrumenata koji ne podležu kalibraciji i Kartica mernog instrumenta.
 
-Standardno su dostupna sljedeća izvješća:   
-> **Registar mjernih instrumenata**: popis *mjernih instrumenata* koji se može grupirati po: *Instrument*, *Kategorija*, *Dobavljač* (nabave), *Lokacija*, *Korisnik*, *Jamstvo datuma* i *Istek kalibracije*.   
-> **Registar Instrumenata koji ne podliježu umjeravanju**: popis *mjernih instrumenata* gdje nije predviđena *Kalibracija*; filter nema utjecaja na ispis ovog izvješća *Status - Nisu podložni kalibraciji: Svi, Podložno kalibraciji, Nisu podložni kalibraciji*.   
-> **Kartica Alati za mjerenje**: kartica za *mjerne instrumente*.   
+Standardno su dostupni sledeći izveštaji:
+
+> **Registar mernih instrumenata**: popis *mernih instrumenata* koji se može grupisati prema: *Instrumentu*, *Kategoriji*, *Dobavljaču* (nabavke), *Lokaciji*, *Korisniku*, *Datumu garancije* i *Isteku kalibracije*.
+>
+> **Registar instrumenata koji ne podležu kalibraciji**: popis *mernih instrumenata* za koje nije predviđena *Kalibracija*; filter *Status - Ne podleže kalibraciji: Svi, Podleže kalibraciji, Ne podleže kalibraciji* nema uticaja na štampu ovog izveštaja.
+>
+> **Kartica mernih instrumenata**: kartica za *merne instrumente*.
 :::
 
+## Komandna dugmad
 
-## Upravljačke tipke
+### ![](/img/neutral/common/save.png) Sačuvaj
 
+Pritiskom na ovo dugme čuvaju se sve izmenjene informacije o prikazanom *mernom instrumentu*.
 
-### ![](/img/neutral/common/save.png) Spremi
+### ![](/img/neutral/common/duplicate.png) Dupliraj instrument
 
-Pritiskom na ovu tipku pohranjuju se sve izmijenjene informacije o prikazanom *mjernom instrumentu*.   
+Za dupliranje prikazanog *mernog instrumenta* u novi *merni instrument* dovoljno je pritisnuti dugme **Dupliraj**.
+Informacije koje se ne dupliraju sa izvornog instrumenta su: *Šifra*, *Serijski broj*, *Datum nabavke*, *Datum isteka garancije*, *Lokacija dobavljača*, *Kupac vlasnik*, *Slika* i podaci o poslednjoj izvršenoj kalibraciji: *Datum poslednje kalibracije* i *Rezultat*.
+Po završetku obrade prikazuje se novi *merni instrument*.
 
+### Planiranje novih kalibracija
 
-### ![](/img/neutral/common/duplicate.png) Dupliciraj instrument
+Dugme je omogućeno samo ako je *merni instrument* *Aktivan*, *podleže kalibraciji* i ima definisan vremenski *period kalibracije* (*jedinica mere*: *Dani* ili *Meseci*). Prikazuje se zahtev za unos:
 
-Za dupliciranje prikazanog *mjernog instrumenta* u novi *mjerni instrument* dovoljno je pritisnuti tipku **Dupliciraj**.   
-Informacije koje se ne dupliciraju s izvornog instrumenta su: *Šifra*,  *Serijski broj*, *Datum kupnje*, *Datum isteka jamstva*, *Lokacija dobavljača*, *Kupac vlasnik*, *Slika* te podaci o posljednjoj obavljenoj kalibraciji: *Datum posljednje kalibracije* i *Rezultat*.   
-Nakon završetka obrade prikazuje se novi *mjerni instrument*.
+> **Planirati do**: datum završetka planiranja novih zakazanih kalibracija.
 
+*Metoda koja se koristi za planiranje*:
 
-### Planiranje novih kalibracija  
+Kao prvi korak brišu se sve prethodno planirane, a još neizvršene *kalibracije* za *instrument*.
 
-Tipka je omogućena samo ako je *mjerni instrument* *Aktivan*, *podložan kalibraciji*, i postoji vremenski *period kalibracije* (*mjerna jedinica*: *Dani* ili *Mjeseci*). Prikazuje se zahtjev za:   
-> **Planirati do**: ovo je datum završetka planiranja novih zakazanih kalibracija.   
+Zatim se, počevši od datuma poslednje *kalibracije*, kreira onoliko *kalibracija* koliko ih je moguće kreirati u zadatom vremenskom intervalu, počevši od današnjeg datuma, uz učestalost definisanu *periodom kalibracije*. Ako predloženi datum pada na neradni dan definisan u *Kalendaru fabrike*, predloženi datum će biti pomeren na prvi naredni radni dan.
 
-*Metoda korištena za planiranje*:   
-Kao prvi korak, uklanjaju se sve prethodno planirane, a još neizvršene *kalibracije* za *instrument*.  
-Zatim, počevši od datuma posljednje *kalibracije*, kreira se onoliko *kalibracija* koliko ih je moguće kreirati u zadanom vremenskom intervalu počevši od današnjeg datuma, frekvencijom definiranom *razdobljem kalibracije*. Ako predloženi datum pada na neradni dan naveden u *Kalendaru tvornice* predloženi datum će biti pomaknut na prvi sljedeći radni dan.   
-Ako za instrument nikada nije bila planirana ili izvršena *kalibracija* ili ako posljednji datum *kalibracije* pada prije
-*razdoblja Kalibracije* koje se računa unatrag od današnjeg datuma, prva *kalibracija* će biti predložena za današnji datum, a sve ostale će biti planirane nakon toga.
-
+Ako za instrument nikada nije bila planirana ili izvršena *kalibracija* ili ako poslednji datum *kalibracije* pada pre *perioda kalibracije* računatog unazad od današnjeg datuma, prva *kalibracija* biće predložena za današnji datum, a sve naredne biće planirane nakon toga.
 
 ### Nova kalibracija
 
-Tipka je omogućena samo ako se iz pregleda rezultata odabere jedan *mjerni instrument* koji je *aktivan* i *podložan kalibraciji*.
-Kako bi se kreirala nova *neplanirana kalibracija* za prikazani *mjerni instrument*, potrebno je pritisnuti tipku *Nova kalibracija*. 
-Nakon potvrde zahtjeva kreira se nova *kalibracija*; predlaže se *vrsta kalibracije* (interna ili eksterna), navedena u *Parametrima umjeravanja instrumenata*, zajedno s referencama na *mjerni instrument* i njegova svojstva.   
-Po završetku obrade prikazuje se *nova kalibracija*.    
+Dugme je omogućeno samo ako je iz pregleda rezultata izabran jedan *merni instrument* koji je *aktivan* i *podleže kalibraciji*.
+Da bi se kreirala nova *neplanirana kalibracija* za prikazani *merni instrument*, potrebno je pritisnuti dugme **Nova kalibracija**.
+Nakon potvrde zahteva kreira se nova *kalibracija*; predlaže se *tip kalibracije* (interna ili eksterna), definisan u *Parametrima kalibracije instrumenata*, zajedno sa referencama na *merni instrument* i njegova svojstva.
 
+Po završetku obrade prikazuje se *nova kalibracija*.
 
 ## Upravljanje podacima
 
-
 ### Podaci zaglavlja
 
-Upravljane informacije uključuju:   
-> **Kategorija**: Kategorija *mjernog instrumenta* (obvezan podatak).   
-> **Šifra**: šifra *mjernog instrumenta* (obvezan podatak).   
-> **Serijski broj**: serijski broj *mjernog instrumenta*; slobodna opisna informacija.   
-> **Model**: model *mjernog instrumenta*; slobodna opisna informacija.   
->
-> **Podaci o kupnji**: proširivi odjeljak u kojem je moguće unijeti:   
->
->> **Dobavljač**: naziv *dobavljača* pri kupnji.    
->> **Proizvođač**: Kontakt *proizvođača* instrumenta.   
->> **Datum kupnje**: datum kupnje/nabave.   
->> **Datum isteka jamstva**: datum isteka jamstva pri kupnji.   
->> **Dobavljač održavanja/servisa**: naziv uobičajenog *dobavljača* za održavanje/servis.   
->
-> **Odgovorna funkcija**: proširivi odjeljak u kojem je moguće unijeti:   
->
->> **Funkcija**: *poslovna funkcija* u poduuzeću odgovorna za instrument.   
->> **Zaposlenik**: odgovorni *zaposlenik*.   
->
-> **Svojstva kalibracije**: proširivi odjeljak u kojem je moguće unijeti:   
->
->> **Nije podložno kalibraciji**: označava da *mjerni instrument* nije podložan kalibraciji.   
->> U tom slučaju sve ostale informacije u ovom odjeljku su onemogućene.   
->> **Interna kalibracija**: označava da *mjerni instrument* kalibrira osoba unutar tvrtke.   
->> **Period kalibracije**: razdoblje (izraženo u povezanoj *mjernoj jedinici*) kalibracije mjernog instrumenta.    
->> **Mjerna jedinica**: *mjerna jedinica* za razdoblje kalibracije.   
->> **Posljednja kalibracija**: datum posljednje provedene *kalibracije*; vrijednost se automatski postavlja prilikom dodjeljivanja *rezultata* posljednje *provedene kalibracije*, ali može se unijeti i ručno.   
->> **Rezultat**: *rezultat* posljednje provedene *kalibracije*; vrijednost se automatski postavlja prilikom dodjeljivanja *rezultata* posljednje *kalibracije*, ali može se unijeti i ručno.   
->> **Datum sljedeće kalibracije**: datum sljedeće *kalibracije*; vrijednost se automatski postavlja prilikom dodjeljivanja *rezultata* posljednje *kalibracije*, ali može se unijeti i ručno.    
->> **Dobavljač kalibracije**: naziv *dobavljača* koji provodi vanjsku kalibraciju.   
->
-> **Klasifikacija**: *klasifikacija*; primjeri: Mehanički, Električni, Elektronički, itd.    
-> **Artikl**: *artikl* povezan s *mjernim instrumentom*; *artikl*, kako bi bio odabran, mora biti tipa *Oprema* ili *Alat*.    
->
-> **Svojstva instrumenta**: proširivi odjeljak u kojem je moguće unijeti:   
->
->> **Mjerna jedinica**: *mjerna jedinica* vrijednosti koje *mjerni instrument* bilježi.   
->> **Raspon mjerenja**: Raspon koji *mjerni instrument* može mjeriti.   
->> **Preciznost**: *minimalna preciznost* mjerenja.   
->> **Granice**: *granice prihvatljivosti* *mjernog instrumenta* za njegovu upotrebu; primjeri: eventualna ograničenja preciznosti, okruženja u kojima se ne smije koristiti, itd. 
->> **Lokacija dobavljača**: naziv *dobavljača* gdje se nalazi *mjerni instrument*.   
->> **Ovo je primarni instrument**: označava da se *mjerni instrument* koristi kao *referentni instrument* za određenu klasifikaciju instrumenta.    
->> **Primarni instrument**: ovo je *mjerni instrument* koji se koristi za kalibraciju prikazanog instrumenta.   
->
-> **Funkcija upotrebe**: proširivi odjeljak u kojem je moguće unijeti:  
->
->> **Funkcija**: *poslovna funkcija* koja redovito koristi *mjerni instrument*.    
->> **Zaposlenik**: *zaposlenik* koji redovito koristi *mjerni instrument*.    
->
-> **Kategorija instrumenta**: *kategorija instrumenta*; obično se koristi za definiranje različitih razina degradacije *mjernog instrumenta*.    
-> **Skladište/Lokacija**: *skladište/Lokacija* gdje se nalazi *mjerni instrument*.    
-> **Vlasnik kupac**: naziv *vlasnika kupca*.    
-> **Aktivan**: označava da je *mjerni instrument* još uvijek *aktivan*.    
-> **Neaktivan od**: označava datum od kojeg *mjerni instrument* više nije *aktivan*.    
-> **Bilješke**: slobodne bilješke.   
+Podaci kojima se upravlja uključuju:
 
+> **Kategorija**: kategorija *mernog instrumenta* (obavezan podatak).
+> **Šifra**: šifra *mernog instrumenta* (obavezan podatak).
+> **Serijski broj**: serijski broj *mernog instrumenta*; slobodan opisni podatak.
+> **Model**: model *mernog instrumenta*; slobodan opisni podatak.
+>
+> **Podaci o nabavci**: proširenje u kojem je moguće uneti:
+>
+>> **Dobavljač**: naziv *dobavljača* prilikom nabavke.
+>> **Proizvođač**: kontakt *proizvođača* instrumenta.
+>> **Datum nabavke**: datum kupovine/nabavke.
+>> **Datum isteka garancije**: datum isteka garancije prilikom nabavke.
+>> **Dobavljač održavanja/servisa**: naziv uobičajenog *dobavljača* za održavanje/servis.
+>
+> **Odgovorna funkcija**: proširenje u kojem je moguće uneti:
+>
+>> **Funkcija**: *poslovna funkcija* u preduzeću odgovorna za instrument.
+>> **Zaposleni**: odgovorni *zaposleni*.
+>
+> **Svojstva kalibracije**: proširenje u kojem je moguće uneti:
+>
+>> **Ne podleže kalibraciji**: označava da *merni instrument* ne podleže kalibraciji.
+>> U tom slučaju sve ostale informacije u ovom odeljku su onemogućene.
+>> **Interna kalibracija**: označava da *merni instrument* kalibriše osoba unutar preduzeća.
+>> **Period kalibracije**: period (izražen u povezanoj *jedinici mere*) kalibracije mernog instrumenta.
+>> **Jedinica mere**: *jedinica mere* za period kalibracije.
+>> **Poslednja kalibracija**: datum poslednje izvršene *kalibracije*; vrednost se automatski postavlja prilikom dodeljivanja *rezultata* poslednje izvršene *kalibracije*, ali se može uneti i ručno.
+>> **Rezultat**: *rezultat* poslednje izvršene *kalibracije*; vrednost se automatski postavlja prilikom dodeljivanja *rezultata* poslednje *kalibracije*, ali se može uneti i ručno.
+>> **Datum sledeće kalibracije**: datum sledeće *kalibracije*; vrednost se automatski postavlja prilikom dodeljivanja *rezultata* poslednje *kalibracije*, ali se može uneti i ručno.
+>> **Dobavljač kalibracije**: naziv *dobavljača* koji vrši spoljnu kalibraciju.
+>
+> **Klasifikacija**: *klasifikacija*; primeri: Mehanički, Električni, Elektronski itd.
+> **Artikal**: *artikal* povezan sa *mernim instrumentom*; *artikal* mora biti tipa *Oprema* ili *Alat* da bi mogao biti izabran.
+>
+> **Svojstva instrumenta**: proširenje u kojem je moguće uneti:
+>
+>> **Jedinica mere**: *jedinica mere* vrednosti koje *merni instrument* beleži.
+>> **Opseg merenja**: opseg koji *merni instrument* može da meri.
+>> **Preciznost**: *minimalna preciznost* merenja.
+>> **Granice**: *granice prihvatljivosti* *mernog instrumenta* za njegovu upotrebu; primeri: eventualna ograničenja preciznosti, okruženja u kojima se ne sme koristiti itd.
+>> **Lokacija dobavljača**: naziv *dobavljača* kod kojeg se nalazi *merni instrument*.
+>> **Ovo je primarni instrument**: označava da se *merni instrument* koristi kao *referentni instrument* za određenu klasifikaciju instrumenta.
+>> **Primarni instrument**: *merni instrument* koji se koristi za kalibraciju prikazanog instrumenta.
+>
+> **Funkcija upotrebe**: proširenje u kojem je moguće uneti:
+>
+>> **Funkcija**: *poslovna funkcija* koja redovno koristi *merni instrument*.
+>> **Zaposleni**: *zaposleni* koji redovno koristi *merni instrument*.
+>
+> **Kategorija instrumenta**: *kategorija instrumenta*; obično se koristi za definisanje različitih nivoa degradacije *mernog instrumenta*.
+> **Skladište/Lokacija**: *skladište/Lokacija* gde se nalazi *merni instrument*.
+> **Kupac vlasnik**: naziv *kupca vlasnika*.
+> **Aktivan**: označava da je *merni instrument* i dalje *aktivan*.
+> **Neaktivan od**: označava datum od kojeg *merni instrument* više nije *aktivan*.
+> **Beleške**: slobodne beleške.
 
-### Vrijednosti za bilježenje
-Na ovom popisu moguće je definirati vrste mjerenja i vrijednosti koje treba zabilježiti tijekom aktivnosti *interne kalibracije*.    
-Ako je *mjerni instrument* označen kao *aktivan*, *podložan kalibraciji* i ako je *kalibracija interna*, ove vrijednosti bit će navedene u *internim kalibracijama*.   
-Popis se sastoji od sljedećih informacija:   
-> **Sekvenca**: sekvenca mjerenja.   
-> **Pozicija**: slobodne bilješke o temi.   
-> **Interval čitanja**: slobodne bilješke o temi.   
-> **Tražena vrijednost**: nominalna vrijednost koja se traži.   
-> **Nesigurnost (-)**: vrijednost negativne neizvjesnosti (izražena u postocima) koja će se primijeniti na *traženu vrijednost*.   
-> **Nesigurnost (+)**: vrijednost pozitivne neizvjesnosti (izražena u postocima) koja će se primijeniti na *traženu vrijednost*.    
-> **Napomena**: slobodne bilješke.   
+### Vrednosti za evidentiranje
 
+Na ovom popisu moguće je definisati tipove merenja i vrednosti koje treba evidentirati tokom aktivnosti *interne kalibracije*.
+Ako je *merni instrument* označen kao *aktivan*, *podleže kalibraciji* i ako je *kalibracija interna*, ove vrednosti će biti navedene u *internim kalibracijama*.
+Popis se sastoji od sledećih informacija:
+
+> **Sekvenca**: sekvenca merenja.
+> **Pozicija**: slobodne beleške o temi.
+> **Interval očitavanja**: slobodne beleške o temi.
+> **Tražena vrednost**: nominalna vrednost koja se zahteva.
+> **Nesigurnost (-)**: vrednost negativne nesigurnosti (izražena u procentima) koja će se primeniti na *traženu vrednost*.
+> **Nesigurnost (+)**: vrednost pozitivne nesigurnosti (izražena u procentima) koja će se primeniti na *traženu vrednost*.
+> **Beleška**: slobodne beleške.
 
 ### Povezani artikli
-Na ovom popisu moguće je povezati *artikle* koji se mogu mjeriti s *mjernim instrumentom*.   
-S trenutnom verzijom Fluentisa ne postoje standardne provjere koje potvrđuju upotrebu instrumenta za mjerenje vrijednosti s *artikala* navedenih na ovom popisu.    
-Popis se sastoji od sljedećih informacija:   
-> **Klasa**: to je *klasa artikla*.   
-> **Šifra**: to je šifra *artikla*.   
-> **Opis artikla**: opis *artikla*.   
-> **Bilješke**: slobodne bilješke.   
 
+Na ovom popisu moguće je povezati *artikle* koji se mogu meriti pomoću *mernog instrumenta*.
+U trenutnoj verziji Fluentisa ne postoje standardne provere koje potvrđuju upotrebu instrumenta za merenje vrednosti *artikala* navedenih na ovom popisu.
+Popis se sastoji od sledećih informacija:
 
-### Povijest izvještaja i certifikata kalibracije
-Na ovom popisu moguće je pregledati *povijest K+kalibracija* i *certifikata kalibracije* planiranih i provedenih za *mjerni instrument*.    
-Pomoću dvostrukog klika miša na željeni redak moguće je upravljati odabranom *kalibracijom*.    
-Popis se sastoji od sljedećih informacija:   
-> **Vrsta kalibracije**: šifra *vrste kalibracije*.   
-> **Opis vrste kalibracije**: opis *vrste kalibracije*.   
-> **Godina**: *godina* dokumenta.   
-> **Broj**: *broj dokumenta*.   
-> **Interna kalibracija**: označava je li izdana *interna kalibracija*.   
-> **Planirano**: označava je li dokument planiran (raspoređen).   
-> **Planirani datum**: datum planirane kalibracije.   
-> **Datum kalibracije**: datum stvarne kalibracije.   
-> **Rezultat**: šifra *rezultata* kalibracije.   
-> **Opis rezultata**: opis *rezultata* kalibracije.   
-> **Kategorija**: šifra *kategorije instrumenta*.   
-> **Opis kategorije**: opis *kategorije instrumenta*.   
-> **Šifra**: šifra *mjernog instrumenta*.   
-> **Serijski broj**: serijski broj *mjernog instrumenta*.   
-> **Model**: model *mjernog instrumenta*.   
-> **Vanjski laboratorij**: naziv *dobavljača* koji provodi vanjsku kalibraciju.
-> **Funkcija**: šifra *poslovne funkcije* koja provodi internu kalibraciju.   
-> **Opis funkcije**: opis *poslovne funkcije* koja provodi internu kalibraciju.   
-> **Šifra**: šifra *zaposlenika* koji provodi internu kalibraciju.  
-> **Prezime**: prezime *zaposlenika* koji provodi internu kalibraciju.   
-> **Ime**: ime *zaposlenika* koji provodi internu kalibraciju.   
+> **Klasa**: *klasa artikla*.
+> **Šifra**: šifra *artikla*.
+> **Opis artikla**: opis *artikla*.
+> **Beleške**: slobodne beleške.
 
+### Istorija izveštaja i sertifikata kalibracije
+
+Na ovom popisu moguće je pregledati *istoriju kalibracija* i *sertifikata kalibracije* planiranih i izvršenih za *merni instrument*.
+Dvostrukim klikom na željeni red moguće je otvoriti upravljanje izabranom *kalibracijom*.
+Popis se sastoji od sledećih informacija:
+
+> **Tip kalibracije**: šifra *tipa kalibracije*.
+> **Opis tipa kalibracije**: opis *tipa kalibracije*.
+> **Godina**: *godina* dokumenta.
+> **Broj**: *broj dokumenta*.
+> **Interna kalibracija**: označava da li je izvršena *interna kalibracija*.
+> **Planirano**: označava da li je dokument planiran.
+> **Planirani datum**: datum planirane kalibracije.
+> **Datum kalibracije**: datum stvarne kalibracije.
+> **Rezultat**: šifra *rezultata* kalibracije.
+> **Opis rezultata**: opis *rezultata* kalibracije.
+> **Kategorija**: šifra *kategorije instrumenta*.
+> **Opis kategorije**: opis *kategorije instrumenta*.
+> **Šifra**: šifra *mernog instrumenta*.
+> **Serijski broj**: serijski broj *mernog instrumenta*.
+> **Model**: model *mernog instrumenta*.
+> **Spoljna laboratorija**: naziv *dobavljača* koji vrši spoljnu kalibraciju.
+> **Funkcija**: šifra *poslovne funkcije* koja vrši internu kalibraciju.
+> **Opis funkcije**: opis *poslovne funkcije* koja vrši internu kalibraciju.
+> **Šifra**: šifra *zaposlenog* koji vrši internu kalibraciju.
+> **Prezime**: prezime *zaposlenog* koji vrši internu kalibraciju.
+> **Ime**: ime *zaposlenog* koji vrši internu kalibraciju.
 
 ### Dodatni podaci
-Moguće je unijeti [Dodatne Podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *mjerni instrument*. 
 
+Moguće je uneti [Dodatne podatke](/docs/configurations/utility/extra-data/extradata/new-extradata) za svaki *merni instrument*.
 
-### Povezani dokumenti
-Na ovom popisu moguće je unijeti i pregledati eventualne privitke; moguće je vidjeti pretpregled.   
+### Priloženi dokumenti
 
+Na ovom popisu moguće je uneti i pregledati eventualne priloge; dostupan je pregled.
 
 ### Slika
-Moguće je priložiti sliku *mjernog instrumenta* koristeći drag and drop; vidljiv je pretpregled. 
-Ovaj privitak nije uključen u dokumentaciju Fluentis-a.    
 
-
-Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju obrazaca, postoji sljedeći link: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Moguće je priložiti sliku *mernog instrumenta* korišćenjem opcije drag and drop; dostupan je pregled.
+Ovaj prilog nije uključen u dokumentaciju Fluentisa.
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcionisanju formi, pogledajte sledeći link: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

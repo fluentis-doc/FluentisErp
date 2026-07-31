@@ -1,22 +1,22 @@
 ---
-title: Pretraživanje reklamacija
+title: Pretraga reklamacija
 sidebar_position: 1
 ---
 
-Filter se nalazi na putanji **Kvaliteta > Reklamacije i nesukladnosti > Reklamacije**.  
+Filter se nalazi na putanji **Kvalitet > Reklamacije i neusklađenosti > Reklamacije**.
 
-Filter podataka omogućuje unos novih *Reklamacija* ili pretraživanje postojećih kako bi se pregledale, izmijenile ili izbrisale.  
+Filter podataka omogućava unos novih *Reklamacija* ili pretragu postojećih radi pregleda, izmene ili brisanja.
 
-### ![](/img/neutral/common/search.png) Pretraživanje reklamacija
+### ![](/img/neutral/common/search.png) Pretraga reklamacija
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Nakon što se postave svi željeni filteri, jednostavno se klikni tipka **Traži** da bi se vidjeli rezultate u prikazu rezultata.   
+Forma se sastoji od dela za filtriranje i dela sa rezultatima. Nakon podešavanja željenih filtera potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u listi.
 
 ### ![](/img/neutral/common/new.png) Unos reklamacija
 
-Za unos novih *Reklamacija* potrebno je pritisnuti gumb **Novo**.   
+Za unos nove *Reklamacije* potrebno je kliknuti na dugme **Novo**.
 
-### ![](/img/neutral/common/edit.png) Izmjena ili ![](/img/neutral/common/view.png) prikaz reklamacija
+### ![](/img/neutral/common/edit.png) Izmena ili ![](/img/neutral/common/view.png) pregled reklamacija
 
-Za otvaranje upravljanja prikazom rezultata potrebno je dvaput kliknuti na željeni redak, odabirom jednog ili više redaka, treba pritisnuti tipku **Izmijeni** ili **Prikaži**.  
+Za otvaranje forme za upravljanje iz liste rezultata potrebno je dvaput kliknuti na željeni red ili, nakon izbora jednog ili više redova, kliknuti na dugme **Izmeni** ili **Prikaži**.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i polja](/docs/guide/common).
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcionisanju formi, pogledajte sledeći link [Funkcionalnosti, dugmad i polja](/docs/guide/common).
