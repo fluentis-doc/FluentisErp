@@ -8,6 +8,8 @@ keywords:
 
 ### Patch 707.1-0083 - 31/07/2026
 
+> -	Bizlink – Documenti di acquisto in entrata da SDI:  aggiunto un nuovo comando che consente di visualizzare l'anteprima di stampa di più documenti in un unico file. Per utilizzare il comando è necessario configurare un menu Ribbon personalizzato (PrintPreviewAttachmentCommand from SdiDocumentFilterViewModel from Fluentis.FluentisErp.Mvvm.SH.ViewModels).
+Migliorata la leggibilità delle stampe dirette tramite l'aggiornamento delle dimensioni dei caratteri. (#TT3283/26) 
 > -	Add Class Context to configuration category manager for script editor
 > -	Add configuration for Office365 two factor autentication
 > -	CO - nella procedura Valorizzazione acquisti e vendite dentro le Chiusure infrannuali, modifica della gestione analitica per la dimensione progetti (#TT03218/26)
