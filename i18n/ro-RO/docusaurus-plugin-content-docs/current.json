@@ -1370,5 +1370,53 @@
   "sidebar.applications.category.Database": {
     "message": "Database",
     "description": "The label for category Database in sidebar applications"
+  },
+  "sidebar.planning.category.Gannts e istogrammi A.F.C.S.": {
+    "message": "Gannts e istogrammi A.F.C.S.",
+    "description": "The label for category Gannts e istogrammi A.F.C.S. in sidebar planning"
+  },
+  "sidebar.production.category.Tasks": {
+    "message": "Tasks",
+    "description": "The label for category Tasks in sidebar production"
+  },
+  "sidebar.configurations.category.Tabelle A.F.C.S.": {
+    "message": "Tabelle A.F.C.S.",
+    "description": "The label for category Tabelle A.F.C.S. in sidebar configurations"
+  },
+  "sidebar.applications.category.Application Resource Manager": {
+    "message": "Application Resource Manager",
+    "description": "The label for category Application Resource Manager in sidebar applications"
+  },
+  "sidebar.applications.category.BizLink Older": {
+    "message": "BizLink Older",
+    "description": "The label for category BizLink Older in sidebar applications"
+  },
+  "sidebar.applications.category.Gestione Documentale": {
+    "message": "Gestione Documentale",
+    "description": "The label for category Gestione Documentale in sidebar applications"
+  },
+  "sidebar.applications.category.Contratti": {
+    "message": "Contratti",
+    "description": "The label for category Contratti in sidebar applications"
+  },
+  "sidebar.applications.category.Editors": {
+    "message": "Editors",
+    "description": "The label for category Editors in sidebar applications"
+  },
+  "sidebar.releaseNotes.category.Fluentis2025": {
+    "message": "Fluentis2025",
+    "description": "The label for category Fluentis2025 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Fluentis2023": {
+    "message": "Fluentis2023",
+    "description": "The label for category Fluentis2023 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Fluentis2021": {
+    "message": "Fluentis2021",
+    "description": "The label for category Fluentis2021 in sidebar releaseNotes"
+  },
+  "sidebar.releaseNotes.category.Fluentis2015": {
+    "message": "Fluentis2015",
+    "description": "The label for category Fluentis2015 in sidebar releaseNotes"
   }
 }
