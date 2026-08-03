@@ -44,7 +44,9 @@ Unoseći **Dobavljača** automatski se *predlažu* svi specifični podaci iz kar
 > **Otkazano**: aktivna zastavica omogućuje poništenje računa.
 
 :::NAPOMENA
+
 Oznake se mogu ukloniti postupkom vraćanja operacije.  
+
 :::
 
 **Bilješke dobavljača**: predlaže se informacija unesena u šifarnik dobavljača, dok se u slučaju automatskog stvaranja iz drugog dokumenta preuzimaju isti podaci koji se nalaze u odgovarajućem polju izvornog dokumenta.

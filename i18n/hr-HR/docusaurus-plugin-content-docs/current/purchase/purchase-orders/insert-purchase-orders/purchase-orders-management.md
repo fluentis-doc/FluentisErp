@@ -75,8 +75,10 @@ Unosom **Dobavljača** automatski se *predlažu* svi specifični podaci s kartic
 > **Povijesno**: kada korisnik pohrani dokument;  
 > **Poništen**: kada korisnik želi otkazati dokument umjesto brisanja, automatski se postavlja status evidentirano na svim njegovim redovima.
 
-:::NAPOMENE
+:::NAPOMENA
+
 Zastave se mogu ukloniti postupkom poništenja operacije.
+
 :::
 
 #### Posebni gumbi
