@@ -6,7 +6,7 @@ keywords:
   - Civico
 ---
 
-### Patch 707.1-0082 - 22/07/2026
+### Patch 707.1-0083 - 31/07/2026
 
 > -	Add Class Context to configuration category manager for script editor
 > -	Add configuration for Office365 two factor autentication

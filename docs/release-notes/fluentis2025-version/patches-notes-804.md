@@ -1,6 +1,6 @@
 ---
 title: 🔧 Patch Notes v804
-sidebar_position: 1
+sidebar_position: 1.1
 ---
 
 ### Patch 804.0010 - 30/07/2026
