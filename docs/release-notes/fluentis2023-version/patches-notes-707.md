@@ -8,6 +8,45 @@ keywords:
 
 ### Patch 707.1-0082 - 22/07/2026
 
+> -	Add Class Context to configuration category manager for script editor
+> -	Add configuration for Office365 two factor autentication
+> -	CO - nella procedura Valorizzazione acquisti e vendite dentro le Chiusure infrannuali, modifica della gestione analitica per la dimensione progetti (#TT03218/26)
+> -	FI - Amministrazione Ricerca Conto per descrizione (#TT03281/26)
+> -	FI - Compensi: revisione della gestione del campo "Descrizione Movimento" all'interno dei compensi (#TT03004/26).
+> -	FI - corretto bug nella stampa Verifica dichiarazione i intento con dettagli relativamente ai compensi percipienti: Non venivano valorizzate correttamente le colonne Fatturato e Registrato, sommando i valori. (#TT02312/26)
+> -	FI - correzione ai codici riferiti al campo Riga dichiarazione fiscale, nella sezione Specifiche per Dichiarazione, della tabella Aliquote e modalità iva. In precedenza i codici erano errati e non permettevano la corretta esecuzione della stampa di riferimento. (#TT02906/26)
+> -	FI - nelle righe di dettaglio dei compensi la modifica delle date competenza ora va ad aggiornare la riga collegata dell’analitica (#TT03150/26)
+> -	FI - Registrazioni contabili: revisione della logica di proposta automatica del campo "Materiale/Immateriale" durante la contabilizzazione automatica delle fatture di acquisto cespiti. Modifications inside posting fixed asset tab can have impact on profiles. (#TT03017/26).
+> -	FI - Risolto bug nei campi di filtro Da Data Pagamento A Data pagamento, nella form del report Ritenuta d'acconto, i quali non filtravano correttamente i dati. (#TT02731/26)
+> -	FI - Tabella 'Fornitori di servizi di pagamento', modifica codici standard di Stripe
+> -	FI - webapi su oggetto FSPosting, tolto vincolo di compilazione della proprietà FSPosting.Account. (#TT02929/26)
+> -	MES - All’interno dei tab lotti dei materiali dell’ordine di produzione, nel caso venga inserito un primo lotto e si indichi una quantità parziale, nel momento in cui si inserisce il secondo lotto viene proposta la quantità residua e non più quella totale. Inoltre, se in fase di dichiarazione di produzione viene dichiarato un parziale, è possibile nell’ordine di produzione ridurre la quantità del lotto del materiale fino a pareggiare la quantità consumata in dichiarazione. (#TT03016/26)
+> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione inerente al serial number del materiale impiegato. (#TT02465/26)
+> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione nel caso venissero importate più dichiarazioni contemporaneamente. (#TT03263/26)
+> -	MES - Tramite il pulsante generazione lotti degli ordini di produzione, è possibile creare nuovi lotti modificando la quantità del lotto di origine anche nel caso in cui per questo OP siano già state create delle dichiarazioni di produzione, a patto però che la quantità del lotto di origine non diventi inferiore alla quantità già prodotta. (#TT03092/26)
+> -	MS - AFCS. Quando dei materiali erano assegnati ad una fase di lavoro chiusa, i relativi fabbisogni erano importati ugualmente, il che poteva portare ad avere nella importazione un segnale di warning di articolo non bilanciato. (#TT03236/26)
+> -	MS - Corretto il calcolo del Ricavo previsto in costificazione, nel caso in cui venisse aggiunta una nuova riga all’ordine cliente e alla commessa stessa. (#TT03044/26)
+> -	MS - Master Schedule: Risolta anomalia di mancato messaggio di generazione commesse da nuova riga ordine cliente. (#TT03321/26)
+> -	MS - Ordini pianificati: risoluzione anomalia di disallineamento tra sottofasi presenti nei materiali e nelle fasi durante l’inserimento dell’ordine; i valori presenti erano Null per i materiali e 0 per le fasi. (#TT02011/26)
+> -	OP - Ordini di produzione: eliminando un ordine di produzione vengono eliminati anche i riferimenti ai dati storici del degli ordini pianificati creati durante il loro rilascio. (#TT03257/26)
+> -	PM - risolto caso per cui nei parametri progetti non venivano salvate le impostazioni del campo "Costo predefinito materiali progetto" (#TT03292/26)
+> -	PR - revisione creazione file Riba e bonifici, sostituzione “left or right quotation mark” con ' (quotation mark) e - (En dash) con - (minus). (#TT02815/26)
+> -	QY - Controllo articoli - Importa articoli da controllare: per i tipi documento Dichiarazioni di produzione e Fasi ordine di produzione, nella griglia dei risultati sono state aggiunte le colonne di Macchina e Gruppo manodopera. (#TT03195/26)
+> -	Risolto bug per generare un namaspace valido per gli script
+> -	SCS - Ordini conto Lavoro: La ripresa dei prezzi dai listini di conto lavoro avviene considerando i prezzi in unità di misura alternativa e la priorità di ricerca standard di prezzi e sconti (#TT1847/26)
+> -	SD - Fix Create AgentSettlement-special case for CreditNote. (#TT02018/26)
+> -	SD - Griglia pagamenti dentro liquidazione agenti, in caso di pagamento avvenuto o scadenza maturata, la griglia non è più editabile nei valori e mostra correttamente la quota parte maturata nella liquidazione in us.Modifications inside Agent settlemente form can have impact on profiles. (#TT04671/24)
+> -	SD - Listini di Vendita: Corretta configurazione campo SDSPLIED_ExtraDataValue in ExtraData presenti su articolo (#TT03220/26)
+> -	SD - Modificato il comportamento della stampa Provvigioni maturate che non gestiva correttamente alcune casistiche di scadenze derivanti da fatture e note di accredito raggruppate negli effetti attivi e modifica della logica per la maturazione della provvigione sulle partite pagate; se inserite in un effetto attivo la maturazione segue la data scadenza effetto. (#TT02018/26)
+> -	SD: Offerte con struttura gerarchica - corretto calcolo totali nei livelli intermedi nel caso di applicazione di sconti nel riepilogo (#TT03244/26)
+> -	SD: Proporre la data di trasporto con la data odierna durante la creazione della Nota di Credito di Vendita tramite il pulsante Nota di Credito TT03251/26
+> -	SH - Corretta anomalia nel salvataggio del flag "Fatturazione elettronica" in anagrafica contatti (#TT03344/26)
+> -	WM - Analisi disponibilità: corretto errore di timeout in caricamento dettagli per articoli aventi distinte con numerosi componenti fittizi. (#TT03051/26)
+> -	WM - Correzione della logica di filtraggio per codice articolo nel report Inventario Quantita Valorizzato in presenza del check Lotti (#TT03401/26)
+> -	WMS - Spunta Picking: Disabilitata doppia pressione su tasto conferma. (#TT02234/26)
+
+### Patch 707.1-0082 - 22/07/2026
+
 > -	Bizlink - Import Excel Movimenti Contabili: corretto il tracciato di import Excel per il riporto delle date di competenza economica (#TT03076/26).  
 > - Add configuration for Office365 two factor autentication 
 > -	MES - All’interno dei tab lotti dei materiali dell’ordine di produzione, nel caso venga inserito un primo lotto e si indichi una quantità parziale, nel momento in cui si inserisce il secondo lotto viene proposta la quantità residua e non più quella totale. Inoltre, se in fase di dichiarazione di produzione viene dichiarato un parziale, è possibile nell’ordine di produzione ridurre la quantità del lotto del materiale fino a pareggiare la quantità consumata in dichiarazione. (#TT03016/26)
@@ -26,7 +65,7 @@ keywords:
 
 > -	CO - aggiunto messaggio di conferma esecuzione scritture per cost driver. Esecuzione da procedura Elaborazione periodi, Elaborazione Chiusura infrannuale. (#TT02740/26)
 > -	CO - creazione nuova chiusura infrannuale, revisione gestione dei sottoconti non utilizzati in controlling. (#TT03146/26)
-> -	FI - Comunicazione liquidazioni periodiche IVA: adeguamento della procedura di elaborazione del calcolo trimestre (TT03137/26, TT03120/26)
+> -	FI - Comunicazione liquidazioni periodiche IVA: adeguamento della procedura di elaborazione del calcolo trimestre (#TT03137/26, TT03120/26)
 > -	FI - fix giroconto partite - null reference - aliniamento con SP fluentis2015 (#TT03018/26)
 > -	FI - il salvataggio delle registrazioni di contabilità generale verificano ora che tutti i conti inseriti siano della società della registrazione contabile (#TT03012/26)
 > -	FI - Libro Inventari: revisione della procedura di inserimento dei dati di testata (#TT02929/26)
