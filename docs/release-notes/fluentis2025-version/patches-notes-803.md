@@ -32,6 +32,7 @@ sidebar_position: 1.2
 > -	QY - Controllo articoli - Importa articoli da controllare: per i tipi documento Dichiarazioni di produzione e Fasi ordine di produzione, nella griglia dei risultati sono state aggiunte le colonne di Macchina e Gruppo manodopera. (#TT03195/26)
 > -	Risolto bug per generare un namaspace valido per gli script
 > -	SCS - Ordini conto Lavoro: La ripresa dei prezzi dai listini di conto lavoro avviene considerando i prezzi in unità di misura alternativa e la priorità di ricerca standard di prezzi e sconti (#TT1847/26)
+> -	SCS- Corretta importazione web api per la creazione di nuovi lotti e serial number (#TT03379/26)
 > -	SD - Fix Create AgentSettlement-special case for CreditNote. (#TT02018/26)
 > -	SD - Griglia pagamenti dentro liquidazione agenti, in caso di pagamento avvenuto o scadenza maturata, la griglia non è più editabile nei valori e mostra correttamente la quota parte maturata nella liquidazione in us.Modifications inside Agent settlemente form can have impact on profiles. (#TT04671/24)
 > -	SD - Listini di Vendita: Corretta configurazione campo SDSPLIED_ExtraDataValue in ExtraData presenti su articolo (#TT03220/26)
