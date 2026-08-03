@@ -1,6 +1,7 @@
 ---
 title: Funzionalità di verifica della crisi di impresa
-sidebar_position: 1
+sidebar_label: Crisi di impresa
+sidebar_position: 10
 ---
 
 :::important[Introduzione]

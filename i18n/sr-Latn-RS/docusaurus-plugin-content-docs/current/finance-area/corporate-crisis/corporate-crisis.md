@@ -1,6 +1,7 @@
 ---
 title: Funkcionalnosti provere krize preduzeća
-sidebar_position: 1
+sidebar_label: Kriza poduzeća
+sidebar_position: 10
 ---
 
 :::important[Uvod]

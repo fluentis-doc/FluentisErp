@@ -1,5 +1,6 @@
 ---
-title: Business Crisis Verification Functionality
+title: Business crisis verification functionality
+sidebar_label: Business crisis
 sidebar_position: 1
 ---
 
