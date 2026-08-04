@@ -1,32 +1,82 @@
 ---
-title: Picking Materials List
+title: Material picking list
+description: Management of material picking lists for production orders in Fluentis, with creation of movements and picking documents.
+keywords:
+  - picking list
+  - production materials
+  - picking
+  - Fluentis
+  - production orders
 sidebar_position: 4
+schema: TechArticle
+tags:
+  - production
+  - logistics
+  - materials
+  - picking
+last_update:
+  author: Fluentis Documentation Team
 ---
 
-:::important What it is for
-The **Picking Materials List** of Fluentis is a fundamental tool for the effective management of materials intended for production orders. It allows the creation and management of detailed lists of materials to be picked, directly linking the operation to the specific production needs. This function is widely used to create a picking document to effectively manage the transfer of materials (for instance, in WIP), simplifying the logistical process and ensuring accurate traceability.
+# Material picking list<!-- Lista prelievo materiali -->
+
+:::important What is it for<!-- A cosa serve -->
+The **material picking list<!-- lista prelievo materiali -->** in Fluentis is a fundamental tool for the effective management of materials intended for production orders<!-- ordini di produzione -->. It allows you to create and manage detailed lists of materials to be picked, directly linking the operation to specific production needs.  
+It is widely used to generate picking documents and manage the transfer of materials, for example to the WIP warehouse<!-- magazzino WIP -->, simplifying the logistics flow and ensuring accurate traceability.
 :::
 
-The material picking list allows the creation and management of picking lists for materials for production orders that require their use.
+This procedure allows you to create and manage *material picking lists<!-- liste di prelievo dei materiali -->* for *production orders<!-- ordini di produzione -->* that require their use.
 
-It is possible to search among production orders, in launched and executive states, for the one of interest and then perform two different operations.
+You can search among *production orders<!-- ordini di produzione -->* in *launched* and *executive* status, select the one of interest, and then perform two distinct operations:
 
-The first, through the button **Search materials**, allows for the unloading of all materials contained in the production order that have as **Pickup type**, in the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) of the item, the value **With List**. These materials are consumed when the create movements button is pressed, which in this case creates the warehouse unloading movement.
+- **Search materials<!-- Cerca materiali -->**: allows the issue of materials that, in the [MRP Parameters<!-- Parametri MRP -->](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) of the item, are configured with *Picking type: With list<!-- Tipo prelievo: Con lista -->*. The actual consumption takes place via the **Create movements<!-- Crea movimenti -->** button, generating the **warehouse issue<!-- scarico di magazzino -->**.  
+- **Search picking materials<!-- Cerca materiali picking -->**: allows you to move materials from the warehouse<!-- magazzino --> where they are stored (to the WIP warehouse<!-- magazzino WIP -->, for example) and to create **picking documents<!-- documenti di picking -->**, i.e., movement documents not yet registered, viewable in the [Picking](/docs/logistics/picking/search-picking) window.
 
-The second operation allows you to move materials from the warehouse where they are stored to the WIP warehouse, for example. This is done using the button **Search picking materials**; which allows you to create picking documents, so not actual records, but documents for the movement of materials that can then be viewed in the Picking window present in the logistics area.                
-In this case, the button **Create Movements** generates the picking document, in which for the materials that are of *Pick type with list*, the reason and the warehouse will be set as already present in the materials line of the production order to be definitively unloaded; while for materials with *Manual pick type*, the reason and the warehouse set in the "Picking type" used will be established. The materials moved to the WIP warehouse will then be unloaded within the production declarations.            
-The registration will be made later through the procedure dedicated to unloading the picking.        
+The **Create movements<!-- Crea movimenti -->** button generates the picking document, automatically setting:
+  - for materials with *Picking type With list<!-- Tipo prelievo Con lista -->*: the transaction type<!-- causale --> and warehouse<!-- magazzino --> already present in the material line of the production order<!-- ordine di produzione --> so they can be definitively issued;
+  - for materials with *Picking type Manual<!-- Tipo prelievo Manuale -->*: the transaction type<!-- causale --> and warehouse<!-- magazzino --> set in the selected *Picking type<!-- Tipo picking -->*.
 
-## Filter
+Materials transferred to the WIP warehouse<!-- magazzino WIP --> will then be issued within the **production declarations<!-- dichiarazioni di produzione -->**.  
+Registration will be done later through the dedicated **picking issue<!-- scarico del picking -->** procedure.
 
-In this tab, it is possible to search for the desired pickings based on the filters entered.
+## Filter<!-- Filtro -->
 
-*Specific buttons*:
+In the **Filter<!-- Filtro -->** tab, you can search for the desired *Production Orders<!-- Ordini di produzione -->* by applying the available filters.
 
-> **Search materials**: by searching for materials using this button, it will then be possible to directly create the warehouse records. Among all the data listed below regarding the details of each material, the importance of the Mov. flag should be emphasized, which when active indicates that the pick type with list has been chosen for that material in the MRP Parameters of the item, while if the flag is not active it means that for that material the manual pick type has been opted for. (for more details on the meaning of this type of pickings, please refer to the article related to the [MRP Parameters](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters) of the item).  
-> **Search picking materials**: by searching for materials using this button, it will then be possible to create picking documents, thus not actual records, but documents for the movement of materials that can be viewed in the [Picking](/docs/logistics/picking/search-picking) window present in the logistics area. In this case, the registration will be made later, after a second check. 
-> **Create Movements**: allows, after selecting the materials based on the type of search performed, to create the warehouse movements (the unloading) or the picking document. In the case where the picking is created, for the materials that are of *Pick type With list*, the reason and the warehouse that are already present in the materials line of the production order will be set; while for materials with *Manual pick type*, the reason and the warehouse set in the *Picking type* will be established.
+### Specific buttons<!-- Pulsanti specifici -->
 
-## Restore Record
+- **Search materials<!-- Cerca materiali -->**: by searching for materials with this button, you can then directly create warehouse records<!-- registrazioni di magazzino -->. Among all the data shown below regarding the details of each material, it is important to highlight the Mov. flag, which, when active, indicates that for that material the picking type with list<!-- tipo di prelievo con lista --> was chosen in the item's MRP Parameters<!-- Parametri MRP -->, while if the flag is not active it means that for that material the manual picking type<!-- tipo di prelievo manuale --> was chosen. (For more details on the meaning of these picking types, refer to the article on the item's [MRP Parameters<!-- Parametri MRP -->](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)).  
+- **Search picking materials<!-- Cerca materiali picking -->**: by searching for materials with this button, you can then create picking documents<!-- documenti di picking -->, which are not actual records, but material transfer documents that can be viewed in the [Picking](/docs/logistics/picking/search-picking) window in the logistics area<!-- area logistica -->. In this case, registration will be done later, after a second check.   
+- **Activate movable<!-- Attiva movimentabile -->** and **Deactivate movable<!-- Disattiva movimentabile -->**: activate or deactivate, in bulk, based on the selected material lines, the movable flag *Mov.*.   
+- **Create movements<!-- Crea movimenti -->**: after selecting the materials based on the type of search performed, allows you to create warehouse movements<!-- movimenti di magazzino --> (the issue<!-- scarico -->) or the picking document<!-- documento di picking -->.  
+If picking is created, for materials that are:
+> - *Picking type With list<!-- Tipo prelievo Con lista -->*: the transaction type<!-- causale --> and warehouse<!-- magazzino --> already present in the material line of the production order<!-- ordine di produzione --> will be set.  
+> - *Picking type Manual<!-- Tipo prelievo Manuale -->*: the transaction type<!-- causale --> and warehouse<!-- magazzino --> set in the **Picking type<!-- Tipo picking -->** used will be set.  
 
-In this tab, it is possible to restore any movements created in the previous tab.
+## Restore registration<!-- Ripristino registrazione -->
+
+In this tab, you can **restore** previously created movements.  
+By selecting a row, the following are displayed:  
+- in the **Generated picking records<!-- Registrazioni di prelievo generate -->** tab → the records created;
+- in the **Picking generated from picking list<!-- Picking generati da prelievo -->** tab → the pickings generated.
+
+### Specific buttons<!-- Pulsanti specifici -->
+
+- **Delete picking list<!-- Cancella lista prelievo -->**: restores both the records and the pickings generated at the same time.  
+- **Delete records<!-- Cancella registrazioni -->**: restores only the selected warehouse record<!-- registrazione di magazzino -->.   
+- **Delete picking<!-- Cancella picking -->**: restores the picking document<!-- documento di picking --> selected in the **Picking generated from picking list<!-- Picking generati da prelievo -->** tab.
+
+## Summary and further information<!-- Riepilogo e approfondimenti -->
+
+The material picking list<!-- lista prelievo materiali --> allows you to:
+
+- manage materials intended for production orders<!-- ordini di produzione -->;
+- create issue movements<!-- movimenti di scarico --> or picking documents<!-- documenti di picking -->;
+- manage transfers to intermediate warehouses<!-- magazzini intermedi --> (e.g., WIP);
+- easily track and restore records and pickings.
+
+For more information:
+
+- [MRP Parameters<!-- Parametri MRP -->](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters)
+- [Picking – Logistics Area<!-- Picking – Area Logistica -->](/docs/logistics/picking/search-picking)
+- [Common features and fields<!-- Funzionalità e campi comuni -->](/docs/guide/common)
