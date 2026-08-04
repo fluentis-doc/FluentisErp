@@ -1,65 +1,92 @@
 ---
-title: New Visit Report 
+title: New Visit Report
+description: Step-by-step guide to creating a new Visit Report in Fluentis ERP, with all form fields explained.
+keywords: [Fluentis ERP, Visit Report, CRM, guide, procedure]
 sidebar_position: 2
+schema_type: HowTo
 ---
+
+# Creating a new Visit Report<!-- Creazione di un nuovo Visit Report -->
 
 The procedure for creating a new **Visit Report** allows you to define the characteristics of the visit made by the contact.
 
-The form is divided into two parts.
-In the upper part, the following fields are present:
+## Form structure<!-- Struttura della form -->
 
-**Visit report type**: allows you to indicate the type of Visit Report you are entering and refers to the corresponding table, composed of *Code* and *Description*.      
-**Number**: this is the number of the Visit Report, automatically assigned by Fluentis.           
-**Date**: this is the date related to the visit and is set to today's date.          
-**Object**: this field should indicate the reason for the visit to the customer.          
-**Note**: free field for entering additional notes related to the visit.           
-**Contact/Customer**: this field should indicate the CRM contact or the customer to which the Visit Report refers. The label of the field and the subject of reference for the field itself change depending on whether the flag is placed on the *Crm Contact* or on the *Fluentis Account*.     
-**Participants**: in this freely filled field, the individuals who participated in the meeting should be indicated.     
-**Agent**: in this field, which refers to the agents' registry of Fluentis, the agent who attended the meeting should be indicated, if present.     
+The form is divided into two parts: upper and lower.
 
-The lower part of the form, on the other hand, presents two tabs.
+### Upper part<!-- Parte superiore -->
 
-## Doc.
+The main fields are:
 
-In this tab, the actual report created during the visit is generally filled out. This document can contain various information, based on the type of visit made. For this reason, in the grid, it is possible to select a [Template](/docs/crm/budget-marketing-automation/template/template-search) to use as the basis for the report and to complete it with the customer's information. It is therefore necessary to create the various templates in advance to have them available during the visit and to be able to use them. 
-On the right side, the selected Template will be displayed, and it will be possible to fill it out. It is also possible to enter the necessary data for sending the document via email.            
-For the management of the template, the following sections are available:     
+1. **Visit Report Type<!-- Tipo Visit Report -->**: allows you to indicate the type of Visit Report you are entering; it refers to the table of the same name (*Code<!-- Codice -->* and *Description<!-- Descrizione -->*).  
+2. **Number<!-- Numero -->**: number automatically assigned by Fluentis.  
+3. **Date<!-- Data -->**: date of the visit, set to today's date.  
+4. **Subject<!-- Oggetto -->**: reason for the visit to the customer.  
+5. **Note<!-- Nota -->**: free field for additional notes.  
+6. **Contact/Customer<!-- Contatto/Cliente -->**: indicates the CRM contact or the customer; the field changes label and object depending on the flag (*CRM Contact<!-- Contatto CRM -->* or *Fluentis Account<!-- Conto Fluentis -->*).  
+7. **Participants<!-- Partecipanti -->**: indicate the people who participated in the meeting.  
+8. **Agent<!-- Agente -->**: reference to the agent master data; indicate the agent present at the meeting, if available.  
+9. **Visit report status<!-- Stato Visit report -->**: indicates the status of the visit report, for descriptive purposes.
+The items in the list can be configured in the dedicated Visit report status<!-- Stati Visit report --> table.
+
+### Lower part<!-- Parte inferiore -->
+
+The lower part of the form has two tabs.
+
+#### Document<!-- Documento -->
+
+In this tab, the actual report created during the visit is generally filled out. This document can contain various information, depending on the type of visit carried out. For this reason, in the grid you can select a [Template](/docs/crm/budget-marketing-automation/template/template-search) to use as the basis of the report and fill it in with the customer's information. Therefore, it is necessary to create the various templates in advance to have them available during the visit and be able to use them. 
+On the right side, the selected Template will be displayed and can be filled in. It is also possible to enter the necessary data for sending the document by email, in the Recipient information section.            
+For template management, the following sections are available:     
 - **Email**: this tab contains:     
-> - *Print Report*: allows printing the worksheet;
-> - *Print Preview*: allows for a print preview of the worksheet;
-> - *Save*: allows saving a copy of the document;    
-> - *Cancel*: cancels the last modification to the template;
-> - *Restore*: restores the last modification deleted from the template.
+> - *Print<!-- Stampa -->*: allows you to print the worksheet;
+> - *Print preview<!-- Anteprima di stampa -->*: allows you to preview the worksheet on screen;
+> - *Save<!-- Salva -->*: allows you to save a copy of the document;   
+> - *Send<!-- Invia -->*: sends the email; 
+> - *Undo*: deletes the last change to the template;
+> - *Redo*: restores the last deleted change to the template.
 
-- **Home**: this Tab contains buttons for basic editing functionalities of the Template text, such as font size, lists, text alignment, etc.
+- **Home**: this tab contains buttons for basic text editing functions of the Template, such as font size, lists, text alignment, etc.
 It recalls the basic functions of the most common text editors, such as Microsoft Word.
 
-- **Insert**: this Tab contains buttons for inserting various elements into the Template:
-> - *Insert Table*: allows you to insert a table into the worksheet;
-> - *Align Image*: allows you to insert an image into the body of the document;
-> - *Picture*: allows you to insert an image into the body of the document;
+- **Insert**: this tab contains buttons to insert certain elements into the Template:
+> - *Insert table<!-- Inserisci tabella -->*: allows you to insert a table into the worksheet;
+> - *Align Image<!-- Allinea Immagine -->*: allows you to insert an image into the body of the document;
+> - *Image<!-- Immagine -->*: allows you to insert an image into the body of the document;
 > - *Bookmark*: allows you to insert a bookmark within the template;
-> - *Hyperlink*: allows you to insert a link to a webpage or to a bookmark in the template;
-> - *Heading*: allows you to insert the header of the template;
-> - *Footer*: allows you to insert the footer of the template;
-> - *Page Number*: serves to indicate the page number in the header or footer of the Template;
-> - *Page Count*: serves to indicate the total number of pages of the template in the header or footer;
-> - *Text Box*: allows you to insert a text box into the Template;
-> - *Symbol*: serves to insert a special symbol within the Template.
+> - *Hyperlink*: allows you to insert a link to a web page or a bookmark in the template;
+> - *Header*: allows you to insert the template header;
+> - *Footer*: allows you to insert the template footer;
+> - *Page Number*: used to indicate the page number in the header or footer of the Template;
+> - *Page Count*: used to indicate the total number of pages in the template in the header or footer;
+> - *Text Box*: allows you to insert a text box in the Template;
+> - *Symbol*: used to insert a special symbol within the Template.
 
-- **Merge data**: in this tab, the buttons necessary for managing and inserting merge data are present.
-> - *Insert Merge Field*: This button allows you to insert the merge data by selecting them from a list based on the Data Source referenced by the Template;
-> - *View Merged Data*: this button allows you to hide/view the merged data inserted in the template;
-> - *Show All Field Codes*: the button serves to show the codes of the fields used as merge data;
-> - *Show All Field Results*: the button serves to show the results of the extraction of the fields used as merge data;
-> - *First Record*: allows you to position yourself on the first record extracted from the merge data;
-> - *Previous Record*: allows you to position yourself on the previous record relative to the current one extracted from the merge data;
-> - *Next Record*: allows you to position yourself on the next record relative to the current one extracted from the merge data;
-> - *Last Record*: allows you to position yourself on the last record extracted from the merge data.
+- **Merge data**: in this tab you will find the buttons needed to manage and insert merge data, i.e., dynamic fields taken from the datasource set in the template, possibly filtered by parameters.
+> - *Insert Merge Field*: This button allows you to insert merge data by selecting them from a list based on the Data Source referenced by the Template;
+> - *View Merged Data*: this button allows you to hide/show the merge data inserted in the template;
+> - *Show All Field Codes*: this button is used to show the codes of the fields used as merge data;
+> - *Show All Field Results*: this button is used to show the result of extracting the fields used as merge data;
+> - *First Record*: allows you to move to the first record extracted from the merge data;
+> - *Previous record*: allows you to move to the previous record compared to the current one extracted from the merge data;
+> - *Next record*: allows you to move to the next record compared to the current one extracted from the merge data;
+> - *Last Record*: allows you to move to the last record extracted from the merge data.
 
-## Attached Documents
+#### Extra Data
 
-In this tab, you can consult the attached documents. To attach documents, you can proceed in two ways:
+In this tab you can manage the Extra Data.
 
-- using the button from the Document tools bar, you can choose to attach an already coded document in Fluentis or to create a new Document to attach.
-- by directly using the right mouse button in the grid and selecting Attach file, you enter the creation of a new Document to attach.
+#### Attached documents<!-- Documenti allegati -->
+
+In this tab you can view the attached documents. To attach documents, you can proceed in two ways:
+
+- by using the Documents toolbar button, you can choose whether to attach a document already coded in Fluentis or to create a new Document to attach.
+- by right-clicking directly in the grid and selecting Attach file, you create a new Document to attach.
+
+
+In the ribbon bar there is the **Insert appointment in calendar<!-- Inserisci appuntamento in calendario -->** button.
+
+
+By using this feature, an appointment linked to this visit report will be inserted into the Fluentis calendar of the currently logged-in user. 
+A window will open allowing you to change the calendar resource, as well as specify date-time and additional data and notes. 
+If an appointment already exists, confirmation will be requested to generate a new calendar appointment.
