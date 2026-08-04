@@ -1,7 +1,7 @@
 ---
 title: Business crisis verification functionality
 sidebar_label: Business crisis
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::important[Introduction]
