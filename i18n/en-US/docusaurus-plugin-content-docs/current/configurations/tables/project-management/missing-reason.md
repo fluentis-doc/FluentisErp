@@ -1,12 +1,17 @@
 ---
-title: Missing Reasons 
+title: Missing Reasons
 sidebar_position: 2
 ---
 
-This table is accessible from **Tables > Project Management > Missing Reasons** and contains the reasons for absence associated with the company. To search for them, press ![](/img/neutral/common/search.png) Search in the ribbon bar after entering the filters. The data to be entered are:
+This table is accessible from **Tables > Project Management > Missing Reasons<!-- Tabelle > Gestione Progetti > Causali di assenza -->** and contains the missing reasons<!-- motivazioni di assenza --> associated with the company, which can be used in the vacation and leave request screen of the projects area.  
+The configurable data are:
 
-**Code**: contains the code of the reason;
+**Code<!-- Codice -->**: contains the code of the reason<!-- causale -->;
 
-**Reason**: contains the description of the reason;
+**Reason<!-- Motivo -->**: contains the description of the reason<!-- motivo -->;
 
-**Company**: contains the company in which to validate the reason, with the related **Description**.
+**Company<!-- Società -->**: contains the company in which to validate the reason<!-- causale -->, with the related **Description<!-- Descrizione -->**.
+
+**Activity category<!-- Categoria di attività -->**: contains the activity category to be proposed by default when confirming vacations and leaves.
+
+**Project<!-- Progetto -->**: contains the project wbs to be proposed by default when confirming vacations and leaves.

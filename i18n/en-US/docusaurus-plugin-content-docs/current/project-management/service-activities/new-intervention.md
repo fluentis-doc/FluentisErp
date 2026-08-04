@@ -5,7 +5,7 @@ sidebar_position: 2
 
 The data to be entered are:
 
-**Intervention type**: contains the [type of Intervention](/docs/configurations/tables/project-management/intervention-type/);
+**Intervention type**: contains the [type of Intervention](/docs/configurations/tables/project-management/intervention-type);
 
 **Client**: contains the client recipient of the intervention;
 
