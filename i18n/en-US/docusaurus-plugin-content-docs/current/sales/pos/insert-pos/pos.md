@@ -6,7 +6,6 @@ sidebar_position: 2
 The **Create POS** form opens via the path **Sales > POS > Create POS** or through the **New** button found in the *POS* search form.
 
 ## **1. Required Data**
-
 In the data entry form, the **Date** and **Year** are automatically proposed as the current values but can be modified.
 
 To continue creating the sales invoice, the user must enter the required fields:
@@ -18,10 +17,12 @@ To continue creating the sales invoice, the user must enter the required fields:
 - **Account**: using the [field help](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) or typing [directly](/docs/guide/common/operations-with-data/manual-entry-or-help-and-data-selection) the data.
 
 :::danger[Attention]
-This field is not relevant for managing [**POS accounting**](/docs/sales/pos/pos-accounting). The accounting reason associated with POS accounting must define a **FIXED** customer account detailed with a **sub-account** code (for example, a "Customer revenues" account). The amount type on the reason line for the customer sub-account will be set as *Total Document / registration*.
+This field is not relevant for managing [**POS accounting**](/docs/sales/pos/pos-accounting). The accounting reason associated with POS accounting must define a **FIXED** customer account detailed with a **detail account** code (for example, a "Customer revenues" account). The amount type on the reason line for the customer detail account will be set as *Total Document / registration*.
 :::
 
-- **Register**: this is an alternative field to the previous *Account* that can be used to enter a *Contact* that is not matched to any sub-account.
+- **Register**: this is an alternative field to the previous *Account* that can be used to enter a *Contact* that is not matched to any detail account.
+
+- **Barcode**: allows for easier entry of items<!-- articoli -->. In fact, by entering the item's<!-- articolo --> Barcode in this field, a new item<!-- articolo --> row with quantity 1 will be created in the relevant tab.
 
 ### 1.1 Document Totals 
 
@@ -217,5 +218,5 @@ Represents the summary of deadlines of the document, for each *type* and *Paymen
 - **Expiry date**: calculated due date. It can be manually forced, in which case the subsequent flag *Manually edit* is automatically activated.
 - **Collection charges**: Field in which the calculated collection expenses are reported.
 - **VAT**: to be applied to collection expenses (can also be set manually).
-- **Payment Template**: it is possible to directly enter a accounting reason in the invoice that gives rise to an automatic entry of collection/payment. NB pay attention to the reason template because it will use the accounts present even without sub-accounts, which is why the following field is present.
-- **Customer Account/Sub-account**: account used to collect/pay (cash or bank, for example) the deadline, overwriting the account present in the accounting payment (or collection) reason.
+- **Payment Template**: it is possible to directly enter a accounting reason in the invoice that gives rise to an automatic entry of collection/payment. NB pay attention to the reason template because it will use the accounts present even without detail accounts, which is why the following field is present.
+- **Customer Account/detail account**: account used to collect/pay (cash or bank, for example) the deadline, overwriting the account present in the accounting payment (or collection) reason.
