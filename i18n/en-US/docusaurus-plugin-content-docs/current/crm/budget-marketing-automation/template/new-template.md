@@ -3,7 +3,8 @@ title: New Template
 sidebar_position: 2
 ---
 
-The procedure for creating a **new Template** allows you to define the characteristics of the Template that will then be used in the newsletter sending procedure, including images, text, hyperlinks, and merge data. The form consists of two sections.
+The procedure for creating a **new Template** allows you to define the characteristics of the email text that will then be used in the newsletter sending procedure, including images, text, hyperlinks, and merge data. 
+The form consists of two sections.
 
 The upper section allows you to define the following information:
 
@@ -19,8 +20,6 @@ The upper section allows you to define the following information:
 
 The lower part of the form includes a series of tabs with different functions to construct the template and the workspace where you will actually build the Template and visually display the result:
 
-![](/img/it-it/applications/crm/budget-marketing-automation/template-file.png)
-
 Below are the tabs present in the form.
 
 **File**
@@ -34,14 +33,10 @@ This tab allows basic operations of the Template, such as opening a new workshee
 **Undo**: cancels the last modification to the template;  
 **Redo**: restores the last modification canceled to the template.  
 
-![](/img/it-it/applications/crm/budget-marketing-automation/file.png)
-
 **Home**
 
 This Tab contains buttons for basic text editing functionalities of the Template, such as font sizes, lists, text alignment, etc.  
 It invokes the basic functions of the most common text editors, such as Microsoft Word.  
-
-![](/img/it-it/applications/crm/budget-marketing-automation/home.png)
 
 **Insert**
 
@@ -58,8 +53,6 @@ This Tab contains buttons to insert some elements into the Template, such as tab
 **Text Box**: allows you to insert a text box in the Template;  
 **Symbol**: is used to insert a special symbol within the Template.  
 
-![](/img/it-it/applications/crm/budget-marketing-automation/insert.png)
-
 **Merge data**
 
 This tab contains the buttons necessary for managing and inserting merge data.  
@@ -72,4 +65,3 @@ This tab contains the buttons necessary for managing and inserting merge data.
 **Next Record**: allows you to position yourself on the next record compared to the current one extracted from the merge data;  
 **Last Record**: allows you to position yourself on the last record extracted from the merge data.  
 
-![](/img/it-it/applications/crm/budget-marketing-automation/merge-data.png)

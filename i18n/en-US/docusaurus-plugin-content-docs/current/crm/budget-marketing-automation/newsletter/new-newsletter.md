@@ -29,18 +29,13 @@ In the upper part, the following fields are present:
 
 **Sent**: this flag indicates that the Newsletter has been sent.
 
-![](/img/it-it/applications/crm/newsletter/new-newsletter.png)
-
 In the lower part of the form, the distribution lists containing the subjects and their respective email addresses to which the newsletter should be sent must be selected.
 
-![](/img/it-it/applications/crm/newsletter/distribution-list.png)
 
-By pressing the button ![](/img/neutral/common/plus.png) to the left of the individual list, it will be possible to view the contacts belonging to that list:
+By clicking the + button to the left of each individual list, you can expand the distribution list<!-- lista di distribuzione --> to view the contacts belonging to that list.<!-- Premendo sul pulsante + alla sinistra della singola lista sarà possibile espandere la lista di distribuzione, per visualizzare i contatti appartenenti a tale lista. -->
 
-![](/img/it-it/applications/crm/newsletter/contacts.png)
-
-To send the Newsletter, once the parameters shown previously are indicated, it is necessary to press the Send button ![](/img/neutral/common/send.png) present on the Ribbon bar. This will open the actual sending form of the Newsletter, which presents the tabs **Home**, **Insert**, and **Merge Data**, already present in the Document Template section (for more information, refer to the [Template](/docs/crm/budget-marketing-automation/template/new-template) section), along with the **Email** tab that presents the following functions:
-
+To send the Newsletter, once the parameters shown previously are indicated, it is necessary to press the Send button present on the Ribbon bar. 
+This will open the actual sending form of the Newsletter, which presents the tabs **Home**, **Insert**, and **Merge Data**, already present in the Document Template section (for more information, refer to the [Template](/docs/crm/budget-marketing-automation/template/new-template) section), along with the **Email** tab that presents the following functions:
 **Print Report**: Button to perform the physical printing of the newsletter;  
 **Print Preview**: Button to perform the print preview of the newsletter;  
 **Save**: Button to save changes to the Newsletter;  
@@ -48,11 +43,9 @@ To send the Newsletter, once the parameters shown previously are indicated, it i
 **Undo**: Button to cancel the last modification to the newsletter;  
 **Redo**: Button to restore the last modification to the newsletter  
 
-![](/img/it-it/applications/crm/newsletter/email.png)
+In the section above Recipient information, there are some fields to complete the email:
 
-In the section below, some fields are present, some of which are carried over from the previous form:
-
-**Recipients**: this field allows you to specify the email recipients by selecting them from the CRM contacts or from the users of Fluentis;
+**Additional recipient<!-- Destinatario aggiuntivo -->**: this field allows you to specify additional recipients for emails in cc., selecting them from CRM contact references or from Fluentis users;
 
 **Subject**: corresponds to what is usually called the Subject of the email;
 
@@ -64,4 +57,5 @@ In the section below, some fields are present, some of which are carried over fr
 
 **Embedded image**: checking this flag will mean that any images included in the template will not be inserted as attachments to the created email but as actual elements of the email;
 
-**Attachments**: the files that will be attached to the Newsletter are displayed.
+At the bottom, the following buttons are available:  
+**Send email<!-- Invia email -->**: opens a summary of the addresses to which the newsletter will be sent. By confirming, the email will be sent. 
