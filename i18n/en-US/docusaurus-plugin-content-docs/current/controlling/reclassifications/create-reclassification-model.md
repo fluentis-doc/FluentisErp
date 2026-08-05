@@ -41,7 +41,7 @@ Each level of the structure, in turn, will be defined through a code (alphanumer
 ### UTILITIES IN THE RIBBON BAR
 
 
-1. The **Search Missing Detail Accounts** form allows searching and printing the sub-accounts not inserted at any point in the reclassification model: in the search filter, the flags *View expired accounts - with end date validity*, the flag *View account not used in cost centers grid*, and the flag *View account not used in account grid* are available, the latter two allowing you to define whether to search in nodes of type *Cost Centers* or *Detail accounts*.
+1. The **Search Missing Detail Accounts** form allows searching and printing the detail accounts not inserted at any point in the reclassification model: in the search filter, the flags *View expired accounts - with end date validity*, the flag *View account not used in cost centers grid*, and the flag *View account not used in account grid* are available, the latter two allowing you to define whether to search in nodes of type *Cost Centers* or *Detail accounts*.
    In particular, if the generic account has been entered, its detail accounts will not be displayed even if they are not specifically inserted in the model itself.
 2. The **Search Double Detail Accounts** form allows searching and printing the list of detail accounts that have been entered in multiple points of the model, considering only the account nodes or cost center nodes through the two flags *View account doubled in cost centers grid* and *View account doubled in account grid* present in the filter. In particular, if the generic account and a detail account of it have been entered, it will be displayed as it is considered both in total and as detail.
 
@@ -98,7 +98,9 @@ The **balance type** of the single line of account or detail account includes th
 
 **Increment** (for the detail account or account, the value will be calculated as the difference between the half-yearly closure of the reclassification and another reference closure: this type is useful in the case of flow analysis).
 
-The last flag present in the grid is called **Col. rev.**: it means that, on the selected sub-account, the balance sign will be inverted.
+**Column inversion<!-- Inversione colonne -->**: on the selected detail account<!-- sottoconto -->, the sign (Debit Credit, represented in the model with + and - since the model is scalar) of the balance will be inverted.
+
+**Save only the positive value<!-- Salva solo il valore positivo -->**: this field is useful exclusively in non-Italian localizations (e.g., Romania) where account<!-- conti --> values always remain in the native section using + and - signs (a credit never goes to the credit side). By enabling this flag, therefore, the row is valued only if the sign is positive (+).
 
 :::tip Note 
 This can be useful, for example, to deduct from the balance of an account the value of one of its detail accounts: for example, to remove an intercompany customer that has been coded within the standard customer master to manage it in a separate node without duplicating values.

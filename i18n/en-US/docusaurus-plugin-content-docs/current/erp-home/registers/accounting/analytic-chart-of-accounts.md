@@ -29,7 +29,9 @@ If you intend to configure manually, please refer to the checklist on the linked
 | Delete Profit Center | Deletes the selected profit center. |
 | New Automatic detail account | Sets the cursor to insert a new automatic detail account for the selected detail account. |
 | Delete Automatic detail account | Deletes the selected automatic detail account. |
+| **Check model assignment<!-- Controllare l'assegnazione del modello -->** | Active when only one detail account<!-- sottoconto --> is selected; it opens a window where you can view the list of **reclassification models<!-- modelli di riclassificazione -->**, including those where the selected account<!-- conto --> may already be included, with a button to assign it to the model itself (**Assign to model<!-- Assegna al modello -->**): in this case, by selecting the desired model, a popup will open to select in more detail the node of the model in which to insert the account<!-- conto --> in question. Upon confirmation, a further detail popup appears, necessary to specify the Balance type (Debit, Credit, General, Increase, etc.), Column inversion, etc., *present in the reclassification model<!-- presenti nel modello di riclassificazione -->*. After confirmation, in the initial window, the association of the selected account<!-- conto --> (shown at the bottom of the form) with the specific node of the model represented in the first four columns is updated.
 
+ |
 :::
 
 ---

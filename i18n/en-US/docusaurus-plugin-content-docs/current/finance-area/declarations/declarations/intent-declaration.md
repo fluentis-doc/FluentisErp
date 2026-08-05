@@ -7,6 +7,13 @@ From this form, it is possible to enter the records for the statements of intent
 
 Press the **New** button in the ribbon bar to enter a new record, or, after pressing the **Search** button, double-click on the desired record (or press the **Modify** button in the ribbon bar) to enter new statements of intent within the selected record.
 
+
+:::tip[Declaration of Exemption Control Button<!-- Pulsante Controllo Dichiarazioni di intento -->]
+By pressing this button, located in the Ribbon Bar, a form opens displaying the list of declarations of exemption; by expanding the related detail with the + button (far left on the grid), the documents linked to the declaration of exemption (which commit its value) are shown.
+
+By selecting a detail document in the grid (e.g., an Invoice), the **Open document<!-- Apertura documento -->** button will allow you to open the original data for a precise check.
+:::
+
 ### Record Header 
 The upper area of the form corresponding to the record displays the data of the record itself, while the lower area accommodates the details of each statement of intent related to the record.
 

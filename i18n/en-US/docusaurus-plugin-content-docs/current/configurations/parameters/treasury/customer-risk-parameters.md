@@ -13,6 +13,7 @@ The flag to be applied for the reading of the various document types is the flag
 
 There is also the flag **Exclude Block**: even if the document generates credit, it will be excluded from the block. (even if it occupies credit, it is never blocked but simply flagged).
 
+
 ### GENERAL LOGIC 
 
 Orders are considered if they are printed and confirmed + a flag in the type (not fulfilled or forcibly fulfilled). 
@@ -20,6 +21,7 @@ Forcibly fulfilled = the remainder will not be delivered, and the order is consi
 
 Delivery notes must be printed and not invoiced. 
 Invoices, whether printed or not, depend on the parameter and must not be accounted (otherwise it is an open item).
+
 
 In the **parameters** of the Customer Risk module, default items can be preset to be proposed in the procedures of the module.
 
@@ -34,6 +36,8 @@ In the **parameters** of the Customer Risk module, default items can be preset t
 #### Calculation Base to calculate the Customer Risk     
 > **Ledger balance**: with this setting, the credit calculation will be based on the customer's accounting balance.  
 > **Open maturity values**: with this setting, the credit calculation will be based on the customer's open items.  
-> **Consider maturity values from temporary recordings**: if the previous flag is active, the calculation also considers any movements resulting from provisional registrations.  
 > **Block physics report**: if the customer credit involves document blocking, this flag blocks the ability to physically print the blocked document. If not set, the document can be printed, but the ‘printed’ flag will not be assigned to the document.  
 > **Consider invoices to be printed**: this considers, in the credit calculation, the invoices that have been created but not printed. If not activated, the default logic considers invoices only if printed (with the printed flag active).
+> **Consider provisional maturity values<!-- Considera partite da registrazioni provvisorie -->**: includes, in the credit limit calculation, the open items<!-- partite --> originating from accounting entries<!-- registrazioni contabili --> set to provisional status using the **Registration Status<!-- Stato Registrazione -->** field located in the **Parameters<!-- Parametri -->** tab within the entries<!-- registrazioni --> themselves.
+
+**Detailed<!-- Dettagliata -->**: by enabling this flag, the same flag will be active within the *Customer risk calculation<!-- Calcolo rischio cliente -->* screen. Activating this option makes an additional tab visible in the *Customer risk calculation<!-- Calcolo rischio cliente -->* screen, which displays the details of all documents considered in the calculation (Open items<!-- Partite -->, Delivery notes<!-- DDT -->, Invoices<!-- FAtture -->, Bills<!-- Effetti -->, Unpaid items<!-- Insoluti -->).
