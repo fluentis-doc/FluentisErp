@@ -21,7 +21,7 @@ Ogni fase potrà avere un flag abilitato, tra Contatto, Prospect, Lead, Opportun
 in funzione del flag abiliato, verranno gestiti i contatori delle Tiles ed le funzionalità abilitate, come ad es. conversione a Cliente. 
 I vantaggi dell'uso della pipeline sono: 
 - facilità di ricerca dei contatti che si trovano in una specifica fase; 
-- Il tipo contatto assegnato può rimanere "fisso", e l'evoluzione del contatto come "lead/prospect/opportunity/customer/supplier/partner" può avvenire tramite la pipeline. 
+- Il tipo contatto assegnato può rimanere "fisso", e l'evoluzione del contatto come "lead/prospect/opportunity/customer/supplier/partner" è tracciato tramite la pipeline. 
 
 ## Tipo di contatto Ruolo
 

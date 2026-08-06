@@ -56,7 +56,9 @@ Aprendo l'expander sono visibili oltre all'indirizzo, anche ulteriori campi di c
 
 **Esigenza del contatto**: campo di testo libero, che permette di descrivere la principale richiesta ricevuta dal contatto CRM.
 
-**Pipeline contatto**: indica la fase in cui si trova il contatto, in base ad un specifico percorso strutturato. Il percorso è differenziato per ogni Tipo contatto, ed è configurabile nella tabella [Tipo contatto](/docs/configurations/tables/crm/contacts/contact-type). Se la prima fase configurata corrisponde a "Contatto" / "Contact", allora verrà proposto in automatico questo valore nella pipeline di un nuovo contatto. L'avanzamento agli stati successivi, può essere fatto manualmente, oppure tramite appositi script negli stati del workflow associato. 
+**Pipeline contatto**: indica la fase in cui si trova il contatto, in base ad un specifico percorso strutturato. 
+Il percorso è differenziato per ogni Tipo contatto, ed è configurabile nella tabella [Tipo contatto](/docs/configurations/tables/crm/contacts/contact-type). 
+Se la prima fase configurata corrisponde a "Contatto" oppure "Contact" (la descrizione dev'essere esattamente corrispondente a "Contatto" o "Contact", senza ulteriori aggiunte), allora verrà proposto in automatico questo valore nella pipeline di un nuovo contatto. L'avanzamento agli stati successivi, può essere fatto manualmente, oppure tramite appositi script negli stati del workflow associato. 
 I vantaggi dell'uso della pipeline sono: 
 - facilità di ricerca dei contatti che si trovano in una specifica fase; 
 - Il tipo contatto assegnato può rimanere "fisso", e l'evoluzione del contatto come "lead/prospect/opportunity/customer/supplier/partner" può avvenire tramite la pipeline. 
