@@ -6,9 +6,22 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0084 - 06/08/2026
+
+> -	ARM - Handle null SQL query parameters (#TT03191/26)
+> -	Cambiamento sito download per cambio RO
+> -	MS – M.R.P.: corretta la logica di calcolo che non considerava l’impiego dei materiali in una fase di lavoro specifica creando un doppio impegno di tali materiali se tale fase aveva una data inizio diversa da quella dell’ordine pianificato. (#TT03502/26)
+> -	PM - parametri progetto - alla prima apertura avviene il setting automaticamente dei valori. Corretto il caso per cui in tabella venivano inseriti alcuni record duplicati (#TT03297/26)
+> -	SCM - Correzione della scadenza della fattura nella procedura di valorizzazione delle bolle di consegna acquisti.(#TT03445/26)
+> -	SCM\SD: PriceManagementPurchaseDiscountCategory and PriceManagementSalesDiscountCategory -increase Code dimension. Modifications inside forms Discount category association and Policies Discount Definition can have impact on profiles. (#TT01270/26)
+> -	SD - Scarico mazzino: Implementata scarico DDT di lotti e serial number a posteriori rispetto all'emissione Fattura di vendita (#TT03462/26).
+> -	SD - evasione progetti nelle offerte, corretto ordinamento righe progetto nell’help di evasione in modo che rispetti l’ordine delle wbs. (#TT03318/26)
+> -	SH - Automatic refresh of dashboards/pivots (TT04763/24)
+> -	WM - Analisi disponibilità: Corretta visualizzazione “Data fine prevista” per ordini di produzione in scheda dettaglio. (#TT00627/26)
+
 ### Patch 707.1-0083 - 31/07/2026
 
-> -	Bizlink – Documenti di acquisto in entrata da SDI:  aggiunto un nuovo comando che consente di visualizzare l'anteprima di stampa di più documenti in un unico file. Per utilizzare il comando è necessario configurare un menu Ribbon personalizzato (PrintPreviewAttachmentCommand from SdiDocumentFilterViewModel from Fluentis.FluentisErp.Mvvm.SH.ViewModels).
+> -	Bizlink - Documenti di acquisto in entrata da SDI:  aggiunto un nuovo comando che consente di visualizzare l'anteprima di stampa di più documenti in un unico file. Per utilizzare il comando è necessario configurare un menu Ribbon personalizzato (PrintPreviewAttachmentCommand from SdiDocumentFilterViewModel from Fluentis.FluentisErp.Mvvm.SH.ViewModels).
 Migliorata la leggibilità delle stampe dirette tramite l'aggiornamento delle dimensioni dei caratteri. (#TT3283/26) 
 > -	Add Class Context to configuration category manager for script editor
 > -	Add configuration for Office365 two factor autentication
