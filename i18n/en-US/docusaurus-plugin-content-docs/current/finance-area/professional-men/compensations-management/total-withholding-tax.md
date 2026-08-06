@@ -19,3 +19,7 @@ Finally, it is recalled that in the (remote) case of a credit note for the benef
 | --- | --- |
 | Calculate values | Recalculates the compensation data (withholdings, VAT, deadlines). |
 | Print preview | Executes the print preview of the compensation. |
+
+:::tip[Enasarco contribution share borne by the company<!-- Contributo Enasarco quota a carico ditta -->]
+In certain situations, such as when entering the first compensation for the Agent recipient with the Enasarco reference month set NOT in the first quarter, a value for the company-borne contribution may be proposed that is higher than the simple application of the percentage due by the principal company. This is because, in the detailed Enasarco calculation settings, there is also a minimum threshold parameter. Therefore, if there are no previous compensations that have already covered this minimum value, Fluentis proposes it to be covered with the first applicable compensation.
+:::
