@@ -4,6 +4,21 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0032 - 06/08/2026
+
+> -	CRM - inserimento appuntamento a calendario da Visit report, risolto caso specifico in cui si verificava un’eccezione in presenza di un calendario senza nome e date inizio-fine (#TT03484/26)
+> -	MS - M.R.P.: corretta la logica di calcolo che non considerava l’impiego dei materiali in una fase di lavoro specifica creando un doppio impegno di tali materiali se tale fase aveva una data inizio diversa da quella dell’ordine pianificato. (#TT03502/26)
+> -	SCM - Correzione della scadenza della fattura nella procedura di valorizzazione delle bolle di consegna acquisti.(#TT03445/26)
+> -	SCM\SD: PriceManagementPurchaseDiscountCategory and PriceManagementSalesDiscountCategory -increase Code dimension. Modifications inside forms Discount category association and Policies Discount Definition can have impact on profiles. (#TT01270/26)
+> -	SD - FE SM modification for Vat registration code logic(#TT03493/26).
+> -	SD - Ordini clienti: ottimizzata esplosione Distinta Base su riga articoli (#TT02610/26)
+> -	SD - Scarico mazzino: Implementata scarico DDT di lotti e serial number a posteriori rispetto all'emissione Fattura di vendita (#TT03462/26).
+> -	SD - Storno DDT e relativa valorizzazione: modificata logica di storno DDT con quantità negative considerando anche disponibilità di lotti e serial number (#TT03298/26)
+> -	SD - evasione progetti nelle offerte, corretto ordinamento righe progetto nell’help di evasione in modo che rispetti l’ordine delle wbs. (#TT03318/26)
+> -	WM - LoadPlan Corretta anomalia che riportava unità di misura del volume incoerente in preparazione piano di carico. (#TT03386/26)
+> -	WM - LoadPlan: Risolta anomalia su filtro Zona Consegna in tab “Ricerca Ordini Clienti” in form Piani di carico. Modifications inside LoadPlan object form can have impact on profiles. (#TT03387/26)
+> -	WM - LoadPlan: Risolta anomalia che, una volta modificata la quantità articoli in un piano di carico tab ordini clienti, non riportava la modifica nel tab preparazione piano di carico. (#TT03384/26)
+
 ### Patch 803.0031 - 31/07/2026
 
 > -	Add Class Context to configuration category manager for script editor
