@@ -46,8 +46,8 @@ Dal progetto potranno quindi essere creati degli interventi pianificati, monitor
 
 Riassumento i principali flussi nell'area progetti: 
 
-un progetto può nascere da:
-1. inserimento manuale
+un progetto può essere generato :
+1. da inserimento manuale
 2. da template di progetto
 3. da offerta di vendita (diverse opzioni presenti: da offerta, da offerta e template, accodando l'offerta ad un progetto già esistente)
 

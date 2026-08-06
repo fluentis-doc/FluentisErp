@@ -196,19 +196,18 @@ Nel **Tab Dati** sono presenti:
 **Centro Aziendale**: è possibile collegare la riga progetto ad un centro aziendale, che verrà propagato dove previsto nei documenti a cui la riga di progetto è collegata.   
 
 ### Tab Avanzamento
-Nella tab **avanzamento** sono presenti le righe dei tempi effettivi rilevati dalla produzione oppure dagli interventi.   
+Nella tab **avanzamento** sono presenti le righe dei tempi effettivi rilevati dalle fasi degli ordini di produzione, dai servizi negli interventi e dalle dichiarazioni attività.   
 I valori sono rilevati dall'elaborazione eseguita con il pulsante "Avanzamento creazione progetto".  
 
 L'elaborazione dell'avanzamento calcola le righe della tab "Avanzamento" eseguendo le seguenti operazioni:  
 
 - Elimina tutte le registrazioni di tempo effettivo del progetto che non sono state modificate manualmente.  
-- Ricerca gli i segnali dalla produzione che:  
-- hanno una fase di ordine di produzione associata al progetto corrente;   
-- sono collegati ad una riga di progetto.  
+- Ricerca le fasi degl ordini di produzione (Signal Item) collegate al progetto corrente:  
+- se non è già presente un record corrispondente, viene inserito.  
+- se il record è stato modificato manualmente, vengono aggiornati i munuti effettivi, mantenendo i dati manuali.  
 
-Per ogni riga trovato che non è già associato ad una riga di Avanzamento-tempo, crea una nuova riga in Avanzamento.
-Per le registrazioni modificate manualmente, non elimina la riga, ma aggiorna il valore del campo tempo.
-Esegue la stessa elaborazione anche per le righe di servizi negli interventi e per le dichiarazioni attività.  
+- Esegue la stessa elaborazione sopra menzionata, anche per il tempo effettivo rilevato nei servizi degli interventi, ed il tempo effettivo delle dichiarazioni attività per progetto;   
+
 Infine aggiorna il campo Percentuale lavoro completato nella tab Pianificazione servizio, nelle righe progetto che:
 
 - hanno un tipo Nodo uguale a 2 "Work package node";  
