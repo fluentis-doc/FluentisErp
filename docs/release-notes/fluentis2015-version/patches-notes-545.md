@@ -3,6 +3,12 @@ title: 🔧 Patch Notes v545
 sidebar_position: 1
 ---
 
+### Patch 545.1-0129 - 06/08/2026
+
+> - FI - revisione gestione pulsante creazione file Intrastat da ricerca intra1 (#TT02355/26)  
+> - FI - Gestione registrazioni provvisorie - F2015 (#TT02618/26, TT02931/25)  
+> - PR - Extend the pf_tipFisier column PFTF_Extensie to 4 chars (#TT02586/26)  
+
 ### Patch 545.1-0128 - 04/05/2026
 
 > - BZ - importazione Bizlink, è possibile importare listino con prezzo per quantità nei listini cliente (#00175/26)
