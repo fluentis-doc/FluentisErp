@@ -87,5 +87,5 @@ For this type, the following buttons are available: (The first two and the last 
 
 For this type, the only active button is **Create model values<!-- Crea valori del modello -->**, which opens a popup to select the *sub-budgets<!-- sotto-budget -->* to be used as data sources (the combo box allows multiple selection with Ctrl or Shift keys):
 
-- *Sub-budgets<!-- sotto-budget -->* for *detail accounts<!-- sottoconti -->* will be used to allocate the nodes (rows) of the reclassification model [**set with *detail accounts* type<!-- impostate con tipologia *sottoconti***](/docs/controlling/reclassifications/create-reclassification-model)**
-- *Sub-budgets<!-- sotto-budget -->* for *cost centers<!-- centri di costo -->* will be used to allocate the nodes (rows) of the reclassification model [**set with *cost centers* type<!-- impostate con tipologia *centri di costo***](/docs/controlling/reclassifications/create-reclassification-model)**
+- *Sub-budgets<!-- sotto-budget -->* for *detail accounts<!-- sottoconti -->* will be used to allocate the nodes (rows) of the reclassification model [**set with *detail accounts* type**](/docs/controlling/reclassifications/create-reclassification-model)**
+- *Sub-budgets<!-- sotto-budget -->* for *cost centers<!-- centri di costo -->* will be used to allocate the nodes (rows) of the reclassification model [**set with *cost centers* type**](/docs/controlling/reclassifications/create-reclassification-model)**
