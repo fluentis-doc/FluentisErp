@@ -64,7 +64,7 @@
     "description": "The label for category Chiusura automatica conti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Nuova": {
-    "message": "Nova",
+    "message": "Novo",
     "description": "The label for category Nuova in sidebar financeArea"
   },
   "sidebar.financeArea.category.Scritture di assestamento": {
@@ -76,11 +76,11 @@
     "description": "The label for category Creazione in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gestione registrazioni provvisorie": {
-    "message": "Gestione registrazioni provvisorie",
+    "message": "Upravljanje privremenim knjiženjima",
     "description": "The label for category Gestione registrazioni provvisorie in sidebar financeArea"
   },
   "sidebar.financeArea.category.Gestione clienti/fornitori ": {
-    "message": "Gestione clienti/fornitori ",
+    "message": "Upravljanje kupcima/dobavljačima",
     "description": "The label for category Gestione clienti/fornitori  in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe fiscali": {
@@ -112,7 +112,7 @@
     "description": "The label for category Generazione solleciti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Compensazione partite": {
-    "message": "Compensazione partite",
+    "message": "Kompenzacija dospijeća",
     "description": "The label for category Compensazione partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Giroconto partite": {
@@ -176,7 +176,7 @@
     "description": "The label for category Stampe cespiti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Obsoleto e non supportato": {
-    "message": "Outdated and not supported",
+    "message": "Isteklo i nepodržano",
     "description": "The label for category Obsoleto e non supportato in sidebar financeArea"
   },
   "sidebar.financeArea.category.Elenchi clienti/fornitori": {
@@ -236,7 +236,7 @@
     "description": "The label for category Documenti SDI in sidebar financeArea"
   },
   "sidebar.erpHome.category.Anagrafici": {
-    "message": "Registri",
+    "message": "Registri/Šifarnici",
     "description": "The label for category Anagrafici in sidebar erpHome"
   },
   "sidebar.erpHome.category.Contatti": {
@@ -256,11 +256,11 @@
     "description": "The label for category Dati clienti/fornitori in sidebar erpHome"
   },
   "sidebar.erpHome.category.Anagrafiche banche": {
-    "message": "Registri Banka",
+    "message": "Šifarnici Banka",
     "description": "The label for category Anagrafiche banche in sidebar erpHome"
   },
   "sidebar.erpHome.category.Anagrafica agenti": {
-    "message": "Registar predstavnika",
+    "message": "Šifarnik predstavnika",
     "description": "The label for category Anagrafica agenti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Reports": {
@@ -284,7 +284,7 @@
     "description": "The label for category Crea nuovo articolo  in sidebar erpHome"
   },
   "sidebar.erpHome.category.Duplica articolo": {
-    "message": "Duplica articolo",
+    "message": "Dupliciraj artikl",
     "description": "The label for category Duplica articolo in sidebar erpHome"
   },
   "sidebar.erpHome.category.Produzione": {
@@ -296,15 +296,15 @@
     "description": "The label for category Distinta base in sidebar erpHome"
   },
   "sidebar.erpHome.category.Assiemi": {
-    "message": "Assiemi",
+    "message": "Sklopovi",
     "description": "The label for category Assiemi in sidebar erpHome"
   },
   "sidebar.erpHome.category.Opzioni": {
-    "message": "Opzioni",
+    "message": "Opcije",
     "description": "The label for category Opzioni in sidebar erpHome"
   },
   "sidebar.erpHome.category.Cicli": {
-    "message": "Cicli",
+    "message": "Ciklusi",
     "description": "The label for category Cicli in sidebar erpHome"
   },
   "sidebar.erpHome.category.Prototipazione": {
@@ -316,7 +316,7 @@
     "description": "The label for category Dipendente in sidebar erpHome"
   },
   "sidebar.erpHome.category.Gestione ore produzione": {
-    "message": "Gestione ore produzione",
+    "message": "Upravljanje satima proizvodnje",
     "description": "The label for category Gestione ore produzione in sidebar erpHome"
   },
   "sidebar.erpHome.category.Utilità": {
@@ -356,11 +356,11 @@
     "description": "The label for category Parameteri MRP in sidebar erpHome"
   },
   "sidebar.erpHome.category.Acquisti": {
-    "message": "Purchase",
+    "message": "Nabava",
     "description": "The label for category Acquisti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Vendite": {
-    "message": "Sales",
+    "message": "Prodaja",
     "description": "The label for category Vendite in sidebar erpHome"
   },
   "sidebar.erpHome.category.Logistica": {
@@ -432,11 +432,11 @@
     "description": "The label for category Contabilità industriale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Causali di contabilità industriale": {
-    "message": "Causali di contabilità industriale",
+    "message": "Predlošci industrijskog računovodstva",
     "description": "The label for category Causali di contabilità industriale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Inserimento causali contabilità industriale": {
-    "message": "Inserimento causali contabilità industriale",
+    "message": "Unos predložaka industrijskog računovodstva",
     "description": "The label for category Inserimento causali contabilità industriale in sidebar erpHome"
   },
   "sidebar.erpHome.category.Business Process": {
@@ -456,23 +456,23 @@
     "description": "The label for category Caratteristiche articolo in sidebar erpHome"
   },
   "sidebar.erpHome.category.Stagionalità": {
-    "message": "Seasonality",
+    "message": "Sezonalnost",
     "description": "The label for category Stagionalità in sidebar erpHome"
   },
   "sidebar.erpHome.category.Stagioni": {
-    "message": "Season",
+    "message": "Sezona",
     "description": "The label for category Stagioni in sidebar erpHome"
   },
   "sidebar.erpHome.category.Factory Calendar for Vendor": {
-    "message": "Factory Calendar for Vendor",
+    "message": "Proizvodni kalendar dobavljača",
     "description": "The label for category Factory Calendar for Vendor in sidebar erpHome"
   },
   "sidebar.erpHome.category.Calendario capacità produttive": {
-    "message": "Production Capacity calendar",
+    "message": "Kalendar proizvodnih kapaciteta",
     "description": "The label for category Calendario capacità produttive in sidebar erpHome"
   },
   "sidebar.erpHome.category.Numerazione Documenti": {
-    "message": "Numerazione Documenti",
+    "message": "Numeracija dokumenata",
     "description": "The label for category Numerazione Documenti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Impostazioni generali": {
@@ -480,7 +480,7 @@
     "description": "The label for category Impostazioni generali in sidebar erpHome"
   },
   "sidebar.erpHome.category.Discount Type": {
-    "message": "Discount Type",
+    "message": "Tip popusta",
     "description": "The label for category Discount Type in sidebar erpHome"
   },
   "sidebar.erpHome.category.Employee": {
@@ -488,7 +488,7 @@
     "description": "The label for category Employee in sidebar erpHome"
   },
   "sidebar.erpHome.category.Gestione progetti": {
-    "message": "Project management",
+    "message": "Upravljanje projektima",
     "description": "The label for category Gestione progetti in sidebar erpHome"
   },
   "sidebar.erpHome.category.Generale": {
@@ -504,7 +504,7 @@
     "description": "The label for category Reclami e non conformità in sidebar erpHome"
   },
   "sidebar.erpHome.category.Certificati": {
-    "message": "Certificati",
+    "message": "Certifikati",
     "description": "The label for category Certificati in sidebar erpHome"
   },
   "sidebar.erpHome.category.CRM": {
@@ -524,7 +524,7 @@
     "description": "The label for category MPS - Master production scheduling in sidebar planning"
   },
   "sidebar.planning.category.Definizione MPS": {
-    "message": "Definizione MPS",
+    "message": "Definicija MPS",
     "description": "The label for category Definizione MPS in sidebar planning"
   },
   "sidebar.planning.category.Commesse di produzione": {
@@ -544,7 +544,7 @@
     "description": "The label for category MS - Master scheduling in sidebar planning"
   },
   "sidebar.planning.category.Schedulazione generale": {
-    "message": "General schedule",
+    "message": "Generalni raspored",
     "description": "The label for category Schedulazione generale in sidebar planning"
   },
   "sidebar.planning.category.Ordini pianificati": {
@@ -564,11 +564,11 @@
     "description": "The label for category Gantt in sidebar planning"
   },
   "sidebar.planning.category.Gantt di produzione": {
-    "message": "Production outlook",
+    "message": "Pregled proizvodnje",
     "description": "The label for category Gantt di produzione in sidebar planning"
   },
   "sidebar.planning.category.Production outlook": {
-    "message": "Production outlook",
+    "message": "Pregled proizvodnje",
     "description": "The label for category Production outlook in sidebar planning"
   },
   "sidebar.planning.category.Sequenza fasi": {
@@ -608,11 +608,11 @@
     "description": "The label for category Articoli rientrati in sidebar production"
   },
   "sidebar.production.category.Registrazione rientri": {
-    "message": "Zapis isporuke robe na skladište",
+    "message": "Knjiženje povrata",
     "description": "The label for category Registrazione rientri in sidebar production"
   },
   "sidebar.production.category.Capacity Requirements": {
-    "message": "Capacity Requirements",
+    "message": "Zahtjevi kapaciteta",
     "description": "The label for category Capacity Requirements in sidebar production"
   },
   "sidebar.production.category.Istogramma utilizzo risorse": {
@@ -632,43 +632,43 @@
     "description": "The label for category PP - Production in progress in sidebar production"
   },
   "sidebar.production.category.Ordini di produzione": {
-    "message": "Production order",
+    "message": "Proizvodni nalog",
     "description": "The label for category Ordini di produzione in sidebar production"
   },
   "sidebar.production.category.Gestione ordini di produzione": {
-    "message": "Production orders management",
+    "message": "Upravljanje proizvodnim nalozima",
     "description": "The label for category Gestione ordini di produzione in sidebar production"
   },
   "sidebar.production.category.consuntivazione ordini di produzione": {
-    "message": "Production times flushing",
+    "message": "Automatsko knjiženje vremena proizvodnje",
     "description": "The label for category consuntivazione ordini di produzione in sidebar production"
   },
   "sidebar.production.category.Cruscotto Produzione semplificata": {
-    "message": "Panel - simplified production",
+    "message": "Panel pojednostavljena proizvodnja",
     "description": "The label for category Cruscotto Produzione semplificata in sidebar production"
   },
   "sidebar.production.category.Segnalazioni": {
-    "message": "Signals",
+    "message": "Signali",
     "description": "The label for category Segnalazioni in sidebar production"
   },
   "sidebar.production.category.Registrazione segnalazioni": {
-    "message": "Signal records",
+    "message": "Zapisi signala",
     "description": "The label for category Registrazione segnalazioni in sidebar production"
   },
   "sidebar.production.category.Rilascio ordini di produzione": {
-    "message": "Production orders release",
+    "message": "Izdavanje proizvodnih naloga",
     "description": "The label for category Rilascio ordini di produzione in sidebar production"
   },
   "sidebar.production.category.Gestione ore di produzione": {
-    "message": "Production hours management",
+    "message": "Upravljanje satima proizvodnje",
     "description": "The label for category Gestione ore di produzione in sidebar production"
   },
   "sidebar.production.category.Log modifiche": {
-    "message": "Log modifiche",
+    "message": "Dnevnik izmjena",
     "description": "The label for category Log modifiche in sidebar production"
   },
   "sidebar.production.category.Tables": {
-    "message": "Tables",
+    "message": "Tablice",
     "description": "The label for category Tables in sidebar production"
   },
   "sidebar.purchase.category.DDT di acquisto": {
@@ -692,7 +692,7 @@
     "description": "The label for category Creazione DDT da Ricevimento merci in sidebar purchase"
   },
   "sidebar.purchase.category.Registrazione DDT di acquisto in Magazzino": {
-    "message": "Warehouse purchase delivery note record",
+    "message": "Skladišno knjiženje primke",
     "description": "The label for category Registrazione DDT di acquisto in Magazzino in sidebar purchase"
   },
   "sidebar.purchase.category.Purchase Delivery Notes Accounting": {
@@ -704,7 +704,7 @@
     "description": "The label for category Fatture di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Inserimento fattura di acquisto": {
-    "message": "Unos ulazni računa",
+    "message": "Unos ulaznih računa",
     "description": "The label for category Inserimento fattura di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Contabilizzazione": {
@@ -724,11 +724,11 @@
     "description": "The label for category Inserimento ordini fornitori in sidebar purchase"
   },
   "sidebar.purchase.category.Purchase order items": {
-    "message": "Purchase order items",
+    "message": "Artikli narudžbe dobavljačima",
     "description": "The label for category Purchase order items in sidebar purchase"
   },
   "sidebar.purchase.category.Listini di acquisto": {
-    "message": "Cjenci nabave",
+    "message": "Cjenici nabave",
     "description": "The label for category Listini di acquisto in sidebar purchase"
   },
   "sidebar.purchase.category.Richieste di acquisto": {
@@ -740,7 +740,7 @@
     "description": "The label for category Ricevimento merci in sidebar purchase"
   },
   "sidebar.purchase.category.Definizione politica sconti": {
-    "message": "Policies discount definition",
+    "message": "Definiranje pravila popusta",
     "description": "The label for category Definizione politica sconti in sidebar purchase"
   },
   "sidebar.sales.category.Fatture di vendita": {
@@ -752,7 +752,7 @@
     "description": "The label for category Fatturazione in sidebar sales"
   },
   "sidebar.sales.category.Testata": {
-    "message": "Header",
+    "message": "Zaglavlje",
     "description": "The label for category Testata in sidebar sales"
   },
   "sidebar.sales.category.Articoli": {
@@ -760,7 +760,7 @@
     "description": "The label for category Articoli in sidebar sales"
   },
   "sidebar.sales.category.Riepiloghi": {
-    "message": "Sažeci ",
+    "message": "Sažeci",
     "description": "The label for category Riepiloghi in sidebar sales"
   },
   "sidebar.sales.category.Procedure testata": {
@@ -796,7 +796,7 @@
     "description": "The label for category Inserimento POS in sidebar sales"
   },
   "sidebar.sales.category.Scarico POS": {
-    "message": "Izčitaj prodajno mjesto",
+    "message": "Razduženje prodajnog mjesta",
     "description": "The label for category Scarico POS in sidebar sales"
   },
   "sidebar.sales.category.DDT/Bolle di vendita": {
@@ -820,7 +820,7 @@
     "description": "The label for category Contabilizzazione DDT/Bolle in sidebar sales"
   },
   "sidebar.sales.category.Commesse di vendita": {
-    "message": "Prodajni podnalozi ",
+    "message": "Prodajni podnalozi",
     "description": "The label for category Commesse di vendita in sidebar sales"
   },
   "sidebar.sales.category.Gestione commessa": {
@@ -856,7 +856,7 @@
     "description": "The label for category Crea compenso percipiente in sidebar sales"
   },
   "sidebar.sales.category.Listini di Vendita": {
-    "message": "Sales Price List",
+    "message": "Prodajni cjenici",
     "description": "The label for category Listini di Vendita in sidebar sales"
   },
   "sidebar.sales.category.Offerte": {
@@ -868,15 +868,15 @@
     "description": "The label for category Ordini cliente in sidebar sales"
   },
   "sidebar.sales.category.Inserimento nuovo ordine cliente": {
-    "message": "Create new sales orders",
+    "message": "Kreiranje narudžbe kupaca",
     "description": "The label for category Inserimento nuovo ordine cliente in sidebar sales"
   },
   "sidebar.sales.category.Definizione politiche sconti": {
-    "message": "Policies discount definition",
+    "message": "Definiranje pravila popusta",
     "description": "The label for category Definizione politiche sconti in sidebar sales"
   },
   "sidebar.sales.category.Packing list": {
-    "message": "Packing list",
+    "message": "Packing lista",
     "description": "The label for category Packing list in sidebar sales"
   },
   "sidebar.treasury.category.DocFinance": {
@@ -976,7 +976,7 @@
     "description": "The label for category Creazione e Gestione effetti in sidebar treasury"
   },
   "sidebar.treasury.category.Obsoleto e non supportato": {
-    "message": "Outdated and not supported",
+    "message": "Isteklo i nepodržano",
     "description": "The label for category Obsoleto e non supportato in sidebar treasury"
   },
   "sidebar.treasury.category.Conti correnti": {
@@ -1000,7 +1000,7 @@
     "description": "The label for category U.D.C. in sidebar logistics"
   },
   "sidebar.logistics.category.Dettaglio ordini in lista": {
-    "message": "Dettaglio ordini in lista",
+    "message": "Detalji narudžbi",
     "description": "The label for category Dettaglio ordini in lista in sidebar logistics"
   },
   "sidebar.logistics.category.Gestione UDC": {
@@ -1008,15 +1008,15 @@
     "description": "The label for category Gestione UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Lsiete di prelievo UDC": {
-    "message": "Loading unit picking lists",
+    "message": "Picking lista utovarnih jedinica",
     "description": "The label for category Lsiete di prelievo UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Liste prelievo UDC": {
-    "message": "Liste prelievo UDC",
+    "message": "Picking lista utovarnih jedinica",
     "description": "The label for category Liste prelievo UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Visualizzazione trasferimenti UDC": {
-    "message": "Loading unit transfer visualization",
+    "message": "Pregled prijenosa utovarnih jedinica",
     "description": "The label for category Visualizzazione trasferimenti UDC in sidebar logistics"
   },
   "sidebar.logistics.category.Magazzino": {
@@ -1032,15 +1032,15 @@
     "description": "The label for category Stampe Gestionali in sidebar logistics"
   },
   "sidebar.logistics.category.Articoli non movimentati": {
-    "message": "Articoli non movimentati",
+    "message": "Artikli bez prometa",
     "description": "The label for category Articoli non movimentati in sidebar logistics"
   },
   "sidebar.logistics.category.Etichette": {
-    "message": "Etichette",
+    "message": "Etikete",
     "description": "The label for category Etichette in sidebar logistics"
   },
   "sidebar.logistics.category.Sottoscorta": {
-    "message": "Sottoscorta",
+    "message": "Sigurnosna zaliha",
     "description": "The label for category Sottoscorta in sidebar logistics"
   },
   "sidebar.logistics.category.Stampe contabili": {
@@ -1048,15 +1048,15 @@
     "description": "The label for category Stampe contabili in sidebar logistics"
   },
   "sidebar.logistics.category.Giornale di magazzino": {
-    "message": "Giornale di magazzino",
+    "message": "Zapisi skladišta",
     "description": "The label for category Giornale di magazzino in sidebar logistics"
   },
   "sidebar.logistics.category.Schede di movimentazione": {
-    "message": "Schede di movimentazione",
+    "message": "Pregled prometa",
     "description": "The label for category Schede di movimentazione in sidebar logistics"
   },
   "sidebar.logistics.category.Brogliaccio di magazzino": {
-    "message": "Brogliaccio di magazzino",
+    "message": "Kartica skladišta",
     "description": "The label for category Brogliaccio di magazzino in sidebar logistics"
   },
   "sidebar.logistics.category.Ubicazioni": {
@@ -1068,11 +1068,11 @@
     "description": "The label for category Procedure in sidebar logistics"
   },
   "sidebar.logistics.category.Gestione inventario": {
-    "message": "Gestione inventario",
+    "message": "Upravljanje inventurom",
     "description": "The label for category Gestione inventario in sidebar logistics"
   },
   "sidebar.logistics.category.Picking": {
-    "message": "Uzimanje sa zaliha ",
+    "message": "Uzimanje sa zaliha",
     "description": "The label for category Picking in sidebar logistics"
   },
   "sidebar.logistics.category.Gestione Picking ": {
@@ -1080,7 +1080,7 @@
     "description": "The label for category Gestione Picking  in sidebar logistics"
   },
   "sidebar.logistics.category.Procedure testata": {
-    "message": "Procedure testata",
+    "message": "Procedure zaglavlja",
     "description": "The label for category Procedure testata in sidebar logistics"
   },
   "sidebar.logistics.category.Stampe": {
@@ -1088,7 +1088,7 @@
     "description": "The label for category Stampe in sidebar logistics"
   },
   "sidebar.logistics.category.Scarico picking": {
-    "message": "Scarico picking",
+    "message": "Razduženje pickinga",
     "description": "The label for category Scarico picking in sidebar logistics"
   },
   "sidebar.logistics.category.Articoli": {
@@ -1096,11 +1096,11 @@
     "description": "The label for category Articoli in sidebar logistics"
   },
   "sidebar.logistics.category.Visualizzazione giacenze": {
-    "message": "Visualizzazione giacenze",
+    "message": "Pregled zaliha",
     "description": "The label for category Visualizzazione giacenze in sidebar logistics"
   },
   "sidebar.logistics.category.Ricerca giacenze": {
-    "message": "Ricerca giacenze",
+    "message": "Pretraga zaliha",
     "description": "The label for category Ricerca giacenze in sidebar logistics"
   },
   "sidebar.logistics.category.Piani di carico ": {
@@ -1108,15 +1108,15 @@
     "description": "The label for category Piani di carico  in sidebar logistics"
   },
   "sidebar.logistics.category.creazione piani di carico ": {
-    "message": "creazione piani di carico ",
+    "message": "Kreiranje planova utovara",
     "description": "The label for category creazione piani di carico  in sidebar logistics"
   },
   "sidebar.logistics.category.Modello giro consegne": {
-    "message": "Modello giro consegne",
+    "message": "Predložak rute dostave",
     "description": "The label for category Modello giro consegne in sidebar logistics"
   },
   "sidebar.logistics.category.Attività giornaliere": {
-    "message": "Attività giornaliere",
+    "message": "Dnevne aktivnosti",
     "description": "The label for category Attività giornaliere in sidebar logistics"
   },
   "sidebar.subcontractor.category.Ordini di conto lavoro": {
@@ -1140,11 +1140,11 @@
     "description": "The label for category Reports in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Bolle di consegna": {
-    "message": "Delivery notes",
+    "message": "Otpremnice/primke podizvođača",
     "description": "The label for category Bolle di consegna in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Nuova bolla di consegna": {
-    "message": "New delivery notes",
+    "message": "New otpremnica podizvođača",
     "description": "The label for category Nuova bolla di consegna in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Stampe": {
@@ -1156,7 +1156,7 @@
     "description": "The label for category Rientri in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Nuovo rientro": {
-    "message": "new return",
+    "message": "Novi povrat",
     "description": "The label for category Nuovo rientro in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.stampe": {
@@ -1164,15 +1164,15 @@
     "description": "The label for category stampe in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Listini conto lavoro": {
-    "message": "Subcontractor price lists",
+    "message": "Cjenici podizvođača",
     "description": "The label for category Listini conto lavoro in sidebar subcontractor"
   },
   "sidebar.projectManagement.category.Gestione progetti": {
-    "message": "Project management",
+    "message": "Upravljanje projektima",
     "description": "The label for category Gestione progetti in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Nuovi progetti": {
-    "message": "new Project",
+    "message": "Novi projekt",
     "description": "The label for category Nuovi progetti in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Stampe": {
@@ -1192,11 +1192,11 @@
     "description": "The label for category Gestione calendari in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Richieste interventi": {
-    "message": "Intervention requests",
+    "message": "Zahtjevi za intervenciju",
     "description": "The label for category Richieste interventi in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Interventi pianificati": {
-    "message": "Planned intervention",
+    "message": "Planirane intervencije",
     "description": "The label for category Interventi pianificati in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Interventi": {
@@ -1204,7 +1204,7 @@
     "description": "The label for category Interventi in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Nuovo intervento": {
-    "message": "New intervention",
+    "message": "Nova intervencija",
     "description": "The label for category Nuovo intervento in sidebar projectManagement"
   },
   "sidebar.projectManagement.category.Procedure": {
@@ -1244,7 +1244,7 @@
     "description": "The label for category Certificati in sidebar quality"
   },
   "sidebar.quality.category.Certificati personale": {
-    "message": "Employee Certificates",
+    "message": "Certifikati zaposlenika",
     "description": "The label for category Certificati personale in sidebar quality"
   },
   "sidebar.quality.category.Reclami e non conformità": {
@@ -1340,7 +1340,7 @@
     "description": "The label for category Registrazioni extracontabili di chiusura in sidebar controlling"
   },
   "sidebar.controlling.category.procedure": {
-    "message": "procedure",
+    "message": "Procedure",
     "description": "The label for category procedure in sidebar controlling"
   },
   "sidebar.controlling.category.contabilità gestionale": {
@@ -1348,7 +1348,7 @@
     "description": "The label for category contabilità gestionale in sidebar controlling"
   },
   "sidebar.controlling.category.Registrazioni": {
-    "message": "Registrazioni",
+    "message": "Zapisi",
     "description": "The label for category Registrazioni in sidebar controlling"
   },
   "sidebar.controlling.category.prima nota": {
@@ -1356,11 +1356,11 @@
     "description": "The label for category prima nota in sidebar controlling"
   },
   "sidebar.controlling.category.storico": {
-    "message": "storico",
+    "message": "Arhiva",
     "description": "The label for category storico in sidebar controlling"
   },
   "sidebar.controlling.category.visualizzazione": {
-    "message": "visualizzazione",
+    "message": "Pregled",
     "description": "The label for category visualizzazione in sidebar controlling"
   },
   "sidebar.controlling.category.Budgeting": {
@@ -1368,15 +1368,15 @@
     "description": "The label for category Budgeting in sidebar controlling"
   },
   "sidebar.controlling.category.registrazioni extra contabili di budget": {
-    "message": "registrazioni extra contabili di budget",
+    "message": "Izvanračunovodstvena knjiženja budžeta",
     "description": "The label for category registrazioni extra contabili di budget in sidebar controlling"
   },
   "sidebar.controlling.category.registrazioni di budget": {
-    "message": "registrazioni di budget",
+    "message": "Knjiženja budžeta",
     "description": "The label for category registrazioni di budget in sidebar controlling"
   },
   "sidebar.controlling.category.Reporting": {
-    "message": "Reporting",
+    "message": "Izvještavanje",
     "description": "The label for category Reporting in sidebar controlling"
   },
   "sidebar.controlling.category.Riclassificazioni": {
@@ -1384,11 +1384,11 @@
     "description": "The label for category Riclassificazioni in sidebar controlling"
   },
   "sidebar.controlling.category.modelli di riclassificazione": {
-    "message": "modelli di riclassificazione",
+    "message": "Modeli reklasifikacije",
     "description": "The label for category modelli di riclassificazione in sidebar controlling"
   },
   "sidebar.controlling.category.Comparazione riclassificazioni": {
-    "message": "Comparazione riclassificazioni",
+    "message": "Usporedba reklasifikacije",
     "description": "The label for category Comparazione riclassificazioni in sidebar controlling"
   },
   "sidebar.controlling.category.Previsioni di vendita": {
@@ -1404,23 +1404,23 @@
     "description": "The label for category previsioni di vendita in sidebar controlling"
   },
   "sidebar.controlling.category.Famiglie prodotti": {
-    "message": "Famiglie prodotti",
+    "message": "Obitelji proizvoda",
     "description": "The label for category Famiglie prodotti in sidebar controlling"
   },
   "sidebar.controlling.category.Costo prodotto": {
-    "message": "Costo prodotto",
+    "message": "Trošak proizvoda",
     "description": "The label for category Costo prodotto in sidebar controlling"
   },
   "sidebar.guide.category.Avviamento applicazione": {
-    "message": "Start application",
+    "message": "Pokreni aplikaciju",
     "description": "The label for category Avviamento applicazione in sidebar guide"
   },
   "sidebar.guide.category.Operare con i dati": {
-    "message": "Operare con i dati",
+    "message": "Rad s podacima",
     "description": "The label for category Operare con i dati in sidebar guide"
   },
   "sidebar.guide.category.Glossario": {
-    "message": "Glossary",
+    "message": "Rječnik/pojmovnik",
     "description": "The label for category Glossario in sidebar guide"
   },
   "sidebar.guide.category.Pannelli laterali": {
@@ -1440,7 +1440,7 @@
     "description": "The label for category Status Bar in sidebar guide"
   },
   "sidebar.guide.category.Applications": {
-    "message": "Applications",
+    "message": "Aplikacije",
     "description": "The label for category Applications in sidebar guide"
   },
   "sidebar.guide.category.ARM": {
@@ -1452,7 +1452,7 @@
     "description": "The label for category Business Layer in sidebar guide"
   },
   "sidebar.guide.category.Data Sources": {
-    "message": "Data Sources",
+    "message": "Izvori podataka",
     "description": "The label for category Data Sources in sidebar guide"
   },
   "sidebar.guide.category.Datasource Object Form": {
@@ -1716,7 +1716,7 @@
     "description": "The label for category Inserimento rientri in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Registrazione rientri": {
-    "message": "Zapis isporuke robe na skladište",
+    "message": "Knjiženje povrata",
     "description": "The label for category Registrazione rientri in sidebar subcontractor"
   },
   "sidebar.subcontractor.category.Listini di conto lavoro": {
@@ -1800,7 +1800,7 @@
     "description": "The label for category Tipi solleciti in sidebar configurations"
   },
   "sidebar.configurations.category.Controlling": {
-    "message": "Controlling",
+    "message": "Kontroling",
     "description": "The label for category Controlling in sidebar configurations"
   },
   "sidebar.configurations.category.Contabilità analitica": {
@@ -1956,7 +1956,7 @@
     "description": "The label for category Visualizzazione in sidebar controlling"
   },
   "sidebar.controlling.category.Parametri controlling": {
-    "message": "Parametri controlling",
+    "message": "Parametri kontrolinga",
     "description": "The label for category Parametri controlling in sidebar controlling"
   },
   "sidebar.controlling.category.Panoramica Generale Controlling": {
@@ -1964,11 +1964,11 @@
     "description": "The label for category Panoramica Generale Controlling in sidebar controlling"
   },
   "sidebar.controlling.category.Buget": {
-    "message": "Buget",
+    "message": "Budžet",
     "description": "The label for category Buget in sidebar controlling"
   },
   "sidebar.controlling.category.Modelli di riclassificazione": {
-    "message": "Modelli di riclassificazione",
+    "message": "Modeli reklasifikacije",
     "description": "The label for category Modelli di riclassificazione in sidebar controlling"
   },
   "sidebar.controlling.category.Calcolo costo": {
@@ -1984,7 +1984,7 @@
     "description": "The label for category Campi comuni in sidebar guide"
   },
   "sidebar.guide.category.Barra di stato": {
-    "message": "Barra di stato",
+    "message": "Statusna traka",
     "description": "The label for category Barra di stato in sidebar guide"
   },
   "sidebar.applications.category.BizLink": {
@@ -2016,7 +2016,7 @@
     "description": "The label for category Liste di Distribuzione in sidebar applications"
   },
   "sidebar.knowlegdeBase.category.Amministrativa": {
-    "message": "Amministrativa",
+    "message": "Administracija",
     "description": "The label for category Amministrativa in sidebar knowlegdeBase"
   },
   "sidebar.knowlegdeBase.category.Home": {
@@ -2044,7 +2044,7 @@
     "description": "The label for category Qualità in sidebar knowlegdeBase"
   },
   "sidebar.video.category.Amministrativa": {
-    "message": "Amministrativa",
+    "message": "Administracija",
     "description": "The label for category Amministrativa in sidebar video"
   },
   "sidebar.video.category.Home": {
@@ -2136,7 +2136,7 @@
     "description": "The label for category Parametri reclami e non conformità in sidebar configurations"
   },
   "sidebar.configurations.category.D.P.I.": {
-    "message": "D.P.I.",
+    "message": "Osnovna zaštitna oprema.",
     "description": "The label for category D.P.I. in sidebar configurations"
   },
   "sidebar.configurations.category.Mansioni": {
@@ -2192,15 +2192,15 @@
     "description": "The label for category Versione 704 in sidebar releaseNotes"
   },
   "sidebar.purchase.category.Nuovo Ordine": {
-    "message": "Nuovo Ordine",
+    "message": "Nova narudžba",
     "description": "The label for category Nuovo Ordine in sidebar purchase"
   },
   "sidebar.purchase.category.Nuovo DDT": {
-    "message": "Nuovo DDT",
+    "message": "Nova primka/otpremnica",
     "description": "The label for category Nuovo DDT in sidebar purchase"
   },
   "sidebar.purchase.category.Nuova Fattura": {
-    "message": "Nuova Fattura",
+    "message": "Nova faktura",
     "description": "The label for category Nuova Fattura in sidebar purchase"
   },
   "sidebar.purchase.category.Procedure comuni": {
@@ -2212,7 +2212,7 @@
     "description": "The label for category Procedure comuni in sidebar sales"
   },
   "sidebar.treasury.category.Creazione e Gestione insoluti": {
-    "message": "Creazione e Gestione insoluti",
+    "message": "Kreiranje i upravljanje nenaplaćenim potraživanjima",
     "description": "The label for category Creazione e Gestione insoluti in sidebar treasury"
   },
   "sidebar.configurations.category.Parametri Generali": {
@@ -2224,7 +2224,7 @@
     "description": "The label for category CPQ in sidebar configurations"
   },
   "sidebar.projectManagement.category.Riepiloghi per cedolini": {
-    "message": "Riepiloghi per cedolini",
+    "message": "Sažeci po obračunskim (platnim) listama",
     "description": "The label for category Riepiloghi per cedolini in sidebar projectManagement"
   },
   "sidebar.controlling.category.Tabelle e Parametri controlling": {
@@ -2256,7 +2256,7 @@
     "description": "The label for category Avviamento Fluentis ERP in sidebar guide"
   },
   "sidebar.guide.category.Campi, funzionalità e pulsanti comuni": {
-    "message": "Campi, funzionalità e pulsanti comuni",
+    "message": "Polja, funkcionalnosti i uobičajeni gumbi",
     "description": "The label for category Campi, funzionalità e pulsanti comuni in sidebar guide"
   },
   "sidebar.releaseNotes.category.Versione 545": {
@@ -2272,7 +2272,7 @@
     "description": "The label for category Versione 706 in sidebar releaseNotes"
   },
   "sidebar.planning.category.Gannts e istogrammi F.C.S.": {
-    "message": "Gannts e istogrammi F.C.S.",
+    "message": "Ganttovi dijagrami i histogrami F.C.S.",
     "description": "The label for category Gannts e istogrammi F.C.S. in sidebar planning"
   },
   "sidebar.purchase.category.Richieste di offerta": {
