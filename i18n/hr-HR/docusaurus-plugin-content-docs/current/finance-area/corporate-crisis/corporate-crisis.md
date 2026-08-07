@@ -1,6 +1,6 @@
 ---
 title: Funkcionalnosti provjere krize poduzeća
-sidebar_label: Kriza preduzeća
+sidebar_label: Kriza poduzeća
 sidebar_position: 10
 ---
 
