@@ -4,6 +4,38 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.0011 - 06/08/2026
+
+> -	ARM - Fix JSON schema generation for one-to-one import/export node(TT03295/26)
+> -	ARM - Handle null SQL query parameters (TT03191/26)
+> -	CRM - campagne marketing, rese visibili colonne relative a Data promemoria, Note promemoria, data creazione lead, marketer referente, prossimo utente. (#TT03250/26)
+> -	Crm - fix sending additional information to api
+> -	CRM - inserimento appuntamento a calendario da Visit report, risolto caso specifico in cui si verificava un’eccezione in presenza di un calendario senza nome e date inizio-fine (#TT03484/26)
+> -	FI - Tabella 'Fornitori di servizi di pagamento', modifica codici standard di Stripe
+> -	MS - AFCS - i DDT aperti non venivano importati. Nel tab ordini fornitori è stata aggiunta una colonna che indica il tipo documento (Rda, Ddt, ordine effettivo, ordine pianificato) (#TT02985/26)
+> -	MS - Eccezioni di calendario: è stato disabilitato il filtro sulla Categoria presente nella riga filtro dell’elenco, in quanto la funzionalità non è supportata per il relativo tipo di dato (enum) e il suo utilizzo generava un errore. Il filtro sulla Categoria è stato pertanto spostato e reso disponibile nel filtro dati. (#TT03422/26)
+> -	MS - M.R.P.: corretta la logica di calcolo che non considerava l’impiego dei materiali in una fase di lavoro specifica creando un doppio impegno di tali materiali se tale fase aveva una data inizio diversa da quella dell’ordine pianificato. (#TT03502/26)
+> -	MS e MES - Ordini pianificati e di produzione: ora, il pulsante [Completamento dati ordine] riporta i materiali anche se la quantità da produrre è zero. I materiali inseriti avranno la quantità totale da impiegare pari a zero. (#TT03412/26)
+> -	MS e MES - Pianificazione, Rilascio Ordini pianificati e Completamento dati ordine: corretta l’errata proposta del magazzino e della causale di versamento se specificato il Sito produttivo associato alla Macchina utilizzata nell’ultima fase movimentabile o associato alla Commessa di produzione. (#TT03350/26)
+> -	PM - progetti - corrette alcune casistiche che incidevano sul conteggio giorni assegnati, previsti, pianificati, eseguiti nella testata progetto (#TT03192/26)
+> -	QY - Non conformità: nell’elenco del filtro di ricerca ora è possibile aggiungere anche il riferimento alla macchina utilizzata nella lavorazione di produzione dove è stata riscontrata la non conformità. (#TT03429/26)
+> -	SCM- Correzione della scadenza della fattura nella procedura di valorizzazione delle bolle di consegna acquisti.(#TT03445/26)
+> -	SCM\SD: PriceManagementPurchaseDiscountCategory and PriceManagementSalesDiscountCategory -increase Code dimension. Modifications inside forms Discount category association and Policies Discount Definition can have impact on profiles. (#TT01270/26)
+> -	SD - FE SM modification for Vat registration code logic(#TT03493/26).
+> -	SD - Ordini clienti: ottimizzata esplosione Distinta Base su riga articoli (#TT02610/26)
+> -	SD - Scarichi di magazzino, revisione valorizzazione tabella della struttura costi (TT02058/26)
+> -	SD - Scarico mazzino: Implementata scarico DDT di lotti e serial number a posteriori rispetto all'emissione Fattura di vendita (#TT03462/26)
+> -	SD - Storno DDT e relativa valorizzazione: modificata logica di storno DDT con quantità negative considerando anche disponibilità di lotti e serial number (#TT03298/26)
+> -	SD - evasione progetti nelle offerte, corretto ordinamento righe progetto nell’help di evasione in modo che rispetti l’ordine delle wbs. (#TT03318/26)
+> -	SH - Automatic refresh of dashboards/pivots (TT04763/24)
+> -	WM - Correzione della logica di filtraggio per codice articolo nel report Inventario Fisico Valutato in presenza del check Lotti (TT03401/26).
+> -	WM - LoadPlan Corretta anomalia che riportava unità di misura del volume incoerente in preparazione piano di carico. (#TT03386/26)
+> -	WM - LoadPlan: Risolta anomalia su filtro Zona Consegna in tab “Ricerca Ordini Clienti” in form Piani di carico. Modifications inside LoadPlan object form can have impact on profiles. (#TT03387/26)
+> -	WM - Scarico Serial Numbers: Corretto messaggio di Serial Number scaricato anziché non disponibile. (#TT03410/26)
+> -	WM - Stampa Inventario Valorizzato: Corretta impossibilità a stampare periodi antecedenti all’ultima valorizzazione. (#TT02525/26)
+> -	WM - LoadPlan: Risolta anomalia che, una volta modificata la quantità articoli in un piano di carico tab ordini clienti, non riportava la modifica nel tab preparazione piano di carico. (#TT03384/26)
+> -	WMS Maui - Aggiunto widget per FSProductionOrderPhase. (#TT03373/26)
+
 ### Patch 804.0010 - 30/07/2026
 
 > -	ARM - gestione BPMN, revisione cancellazione script e salvataggio modifica (#TT03241/26)
