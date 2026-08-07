@@ -96,7 +96,7 @@
     "description": "The label for category Stampe analitica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Partite": {
-    "message": "Otvorene stavke",
+    "message": "Dospijeća plaćanja",
     "description": "The label for category Partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Procedure": {
@@ -124,7 +124,7 @@
     "description": "The label for category Stampe in sidebar financeArea"
   },
   "sidebar.financeArea.category.Percipienti": {
-    "message": "Vanjski suradnici",
+    "message": "Vanjski suradnik",
     "description": "The label for category Percipienti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Cerca compensi": {

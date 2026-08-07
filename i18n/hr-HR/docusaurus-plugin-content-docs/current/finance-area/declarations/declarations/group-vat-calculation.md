@@ -1,5 +1,5 @@
 ---
-title: Namirenje PDV-a grupe
+title: Obračun PDV grupe
 sidebar_position: 4
 ---
 

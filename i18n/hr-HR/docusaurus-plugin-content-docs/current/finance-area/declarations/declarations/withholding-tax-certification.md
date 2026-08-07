@@ -1,5 +1,5 @@
 ---
-title: Elektronička potvrda o obustavljenom porezu
+title: Elektronička potvrda o obračunanom porezu po odbitku
 sidebar_position: 2
 ---
 
