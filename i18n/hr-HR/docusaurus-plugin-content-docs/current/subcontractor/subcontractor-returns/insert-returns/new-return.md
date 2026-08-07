@@ -12,7 +12,7 @@ Obrazac se otvara putem puta  **Podizvođač > Povrati >  Novi povrat** ili pute
 Aplikacija zahtijeva unos  **Dobavljača** (Podizvođača) na čije ime je narudžba, koristeći odgovarajuću pomoć za račune, te  **Tip**, **Broj** i **Datum** stvarnog povrata (koji obično odgovara trenutnom datumu). 
 
 **Kontrolirano**: oznaku ručno aktivira korisnik;    
-**Valorizirano i Utovareno**: oznake se automatski aktiviraju u trenutku kada se redom izvrše vrijednovanje i knjiženje dokumenta u skladište.  
+**Valorizirano i Utovareno**: oznake se automatski aktiviraju u trenutku kada se redom izvrše vrednovanje (valorizaciju) i knjiženje dokumenta u skladište.  
 
 > **Predviđene isporuke na skladište**: gumb se aktivira nakon spremanja obaveznih podataka i otvara obrazac *Izuzimanje iz narudžbe*, unutar kojeg korisnik vidi sve narudžbe kontnog rada koje još uvijek imaju djelomično ili potpuno neizvršene stavke i iz kojih je moguće generirati povrate;     
 > **Zapis isporuke robe na skladište**:

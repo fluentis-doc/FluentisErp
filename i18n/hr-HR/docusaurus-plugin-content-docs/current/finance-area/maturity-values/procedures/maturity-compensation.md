@@ -1,10 +1,10 @@
 ---
-title: Kompenzacija dospjelih plaćanja
+title: Kompenzacija otvorenih stavki
 sidebar_position: 2
 ---
 
 :::note Put
-**Administracija > Dospijeća plaćanja>Procedure > Kompenzacija dospjelih plaćanja**
+**Administracija > Dospijeća plaćanja>Procedure > Kompenzacija otvorenih stavki**
 
 Napomena:
 Za sve što nije detaljno objašnjeno u ovom dokumentu o uobičajenom funkcioniranju obrazaca, molimo se obratite sljedećoj poveznici:[Zajedničke funkcionalnosti, tipke i polja](/docs/guide/common).

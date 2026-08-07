@@ -92,7 +92,7 @@
     "description": "The label for category Stampe contabile in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe analitica": {
-    "message": "Izvještaji analitike",
+    "message": "Analitički izvještaji",
     "description": "The label for category Stampe analitica in sidebar financeArea"
   },
   "sidebar.financeArea.category.Partite": {
@@ -108,7 +108,7 @@
     "description": "The label for category Calcolo interessi in sidebar financeArea"
   },
   "sidebar.financeArea.category.Generazione solleciti": {
-    "message": "Generazione solleciti",
+    "message": "Izrada opomena",
     "description": "The label for category Generazione solleciti in sidebar financeArea"
   },
   "sidebar.financeArea.category.Compensazione partite": {
@@ -116,7 +116,7 @@
     "description": "The label for category Compensazione partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Giroconto partite": {
-    "message": "Prenos stavki",
+    "message": "Promet dospijeća plaćanja po žiro računu",
     "description": "The label for category Giroconto partite in sidebar financeArea"
   },
   "sidebar.financeArea.category.Stampe": {
@@ -2276,7 +2276,7 @@
     "description": "The label for category Gannts e istogrammi F.C.S. in sidebar planning"
   },
   "sidebar.purchase.category.Richieste di offerta": {
-    "message": "Zahtjevi za ponudu",
+    "message": "Upit za ponudu",
     "description": "The label for category Richieste di offerta in sidebar purchase"
   },
   "sidebar.purchase.category.Commesse di acquisto": {

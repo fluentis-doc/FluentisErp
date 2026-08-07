@@ -3,9 +3,9 @@ title: Ispiši otpremnicu
 sidebar_position: 2
 ---
 
-# Ispis otpremnice za isporuku
+# Ispis otpremnice/primke
 
-Ovaj prozor omogućuje ispis otpremnica za isporuku namijenjenih kooperantu (podizvođaču), a nalazi se na putanji **Podizvođač > Otpremnice > Izvještaji > Ispiši otpremnicu**.
+Ovaj prozor omogućuje ispis otpremnica za isporuku namijenjenih kooperantu (podizvođaču), a nalazi se na putanji **Podizvođač > Otpremnica > Izvještaji > Izvješće**.
 
 Sastoji se od dvije cjeline:
 

@@ -1,9 +1,9 @@
 ---
-title: Razduženje robe po otpremnici
+title: Razduženje Otpremnica/Primki
 sidebar_position: 1
 ---
 
-Postupak se otvara putem **Podizvođač > Otpremnice > Procedure > Razduženje robe po otpremnici** te omogućuje knjiženje skladišnog izlaza za otpremnice kooperantske proizvodnje koje su već ispisane, a još nisu knjižene kao izlaz sa skladišta.
+Postupak se otvara putem **Podizvođač > Otpremnice > Procedure > Razduženje Otpremnica/Primki** te omogućuje knjiženje skladišnog izlaza za otpremnice kooperantske proizvodnje koje su već ispisane, a još nisu knjižene kao izlaz sa skladišta.
 
 ## Filtar
 

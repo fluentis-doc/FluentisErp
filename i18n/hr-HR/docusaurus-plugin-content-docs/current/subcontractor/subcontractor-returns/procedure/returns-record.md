@@ -1,9 +1,9 @@
 ---
-title: Zapisi isporuke robe na skladište
+title: Knjiženje povrata
 sidebar_position: 1
 ---
 
-Obrazac se otvara putem puta  **Podizvođač > Povrati > Procedure > Zapis isporuke robe na skladište** i omogućuje knjiženje povrata u skladište koji su već provjereni i još nisu knjiženi.
+Obrazac se otvara putem puta  **Podizvođač > Povrati > Procedure > Knjiženje povrata** i omogućuje knjiženje povrata u skladište koji su već provjereni i još nisu knjiženi.
 
 ## Filter 
 
@@ -17,7 +17,7 @@ Na ovoj kartici korisnik ima mogućnost pretraživanja i prijenosa povrataka u s
 *Specifična polja*:
 
 **Broj dokumenta**: u ovom stupcu prikazuje se broj povrata;  
-**Zadani  datum dokumenta**: u ovom stupcu prikazuje se datum povrata;  
+**Zadani datum dokumenta**: u ovom stupcu prikazuje se datum povrata;  
 **Datum zapisa zalihe**: nalazi se u donjem dijelu forme i prema zadanim postavkama postavljen je na trenutni datum, ali se može promijeniti.
 
 Nakon što se odaberu povrati podizvođača, koristite gumb *Razduženje* za izvršavanje skladišnih operacija: istovremeno s ovom operacijom, aplikacija vrši unos proizvedenih artikala izvan tvrtke na skladište, izdavanje materijala koji su korišteni iz skladišta izvan tvrtke te eventualni unos povrata na odgovarajuće skladište za povrate.
