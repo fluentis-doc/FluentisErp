@@ -4,6 +4,11 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.0012 - 07/08/2026
+
+> -	Framework- corretta anomalia stato di transizione workflow (#TT03512/26)  
+> -	WMS- Fix Maui WMS Confirm Picking focus (#TT1258/21)
+
 ### Patch 804.0011 - 06/08/2026
 
 > -	ARM - Fix JSON schema generation for one-to-one import/export node(TT03295/26)
