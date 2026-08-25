@@ -4,6 +4,45 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.0013 - 25/08/2026
+
+> -	CO - Risolto un bug nella stampa "Bilancio infrannuale a sezioni contrapposte" che non visualizzava correttamente i saldi dei conti con il flag "Mostra anagrafiche" disattivato. (#TT03308/26)
+> -	CO - Valorizzazione acquisti e vendite, soluzione errore su collection partite/pagamenti e flag iva sospesa (#TT03007/26)
+> -	FI - Ammortamento cespiti: revisione della logica di proposta dei dati nel filtro “Materiale/Immateriale” della form di ammortamento cespiti. Modifications inside form Ammortamento cespiti can have impact on profiles (#TT03341/26).
+> -	FI - Correggi nella procedura di Scritture assestamento (#TT03632/26)
+> -	FI - Corretto bug nella contabilizzazione fatture di vendita, che generava un falso avviso di squadratura tra partite e saldo contabile, quando contenevano partite di anticipo già incassate (fattura di acconto con partite da mantenere chiuse) e nella fattura era contenuta più di una partita di anticipo. (#TT03396/26)
+> -	FI - Creazione automatica Intrastat: revisione della procedura di creazione Intrastat da fatture (#TT03355/26)
+> -	FI - Load 0 value SCM Invoice in Intrastat, rewrite logic from SP (#TT05318/24)
+> -	FI - ottimizzazione ammortamento cespiti e procedura di rollback (#TT03362/26)
+> -	FI - per la dichiarazione iva della localizzazione spagnola, modifiche alla cancellazione del modello (#TT03385/26)
+> -	FI - Risolto un bug nella fatture di acquisto che non riportava nel riepilogo scadenze la "Posizione partita" impostata sulla relativa scadenza di partita. (#TT03411/26)
+> -	FI - Risolto un bug nella procedura "generazione solleciti" che assegnava lo stesso numero ai solleciti. (#TT03519/26)
+> -	FI - Corretta anomalia anteprima stampa Lettere di sollecito (#TT03432/26)
+> -	Framework-Corretta anomalia profili (#TT03499/26)
+> -	Impostato filtro automatico su form Implosione component se aperta tramite context panel. Filtra per l’articolo selezionato (#TT03435/26)
+> -	MS - M.R.P.: corretta la logica di calcolo della proposta di creazione dell’Ordine pianificato di copertura del fabbisogno, che non considerava correttamente la giacenza e la domanda dei documenti. (#TT03574/26)
+> -	MS - AFCS. Eliminato warning per centri di lavoro da schedulare a capacità infinita se ci sono macchine ad essi associate. (#TT03416/26)
+> -	MS - AFCS. In caso di tempi attrezzaggio su fasi in centri di lavoro senza macchine, sebbene siano impropri, non generano blocchi di schedulazione. (#TT03415/26)
+> -	PM - interventi - resa disponibile stampa rapportino che può essere firmata da applicazione mobile ed inviata via email, utilizzando un testo predefinito.
+> -	PM - duplica interventi da planner e da pianifica risorse - collegati al nuovo diritto utente che gestisce la duplica anche dalla griglia di ricerca interventi (#TT03516/26)
+> -	PM - Interventi - Piano di fatturazione. Con l'opzione "Includi ore di viaggio nei servizi" attiva, corretto il criterio di ricerca dell'articolo fuori orario per le ore di viaggio. L'articolo viene ora individuato a partire dall'articolo di servizio che include le ore di viaggio, anziché dall'articolo spesa "Ore viaggio". (#TT03498/26)
+> -	PM - interventi - risolto caso per cui le spese sostenute marcate come spese da fatturare, riportavano i valori corretti ma non veniva calcolata la colonna Totale fatturabile ( #TT03114/26)
+> -	PR - generazione automatica Cash flow, revisione attivazione pulsante di creazione (#TT03370/26)
+> -	QY - Piani di controllo: risolto il problema di timeout che si verificava in presenza di un elevato numero di righe di articoli associate alla visualizzazione del relativo tabulatore. (#TT03551/26)
+> -	SCM - Duplica Manutenzione Listini: Ottimizzata la procedura di ricerca e anche l'applicazione degli arrotondamenti nelle procedure di aggiornamento dei prezzi (#TT03431/26)
+> -	SCM - Valorizzazione DDT di Acquisto/Rientro: Aggiunto messaggio di blocco in multi-selezione se uno dei documenti è aperto da un altro utente. (#TT03028/26)
+> -	SCM - Corretta visualizzazione stampa registro SDI (#TT02657/26)
+> -	SCM - Corretta anomalia nella selezione documenti nella form di ricerca Documenti Acquisto In Entrata (#TT03497/26)
+> -	SCS - Duplica Manutenzione Listini: Ottimizzata la procedura di ricerca e anche l'applicazione degli arrotondamenti nelle procedure di aggiornamento dei prezzi (#TT03431/26)
+> -	SD - Duplica Manutenzione Listini: Ottimizzata la procedura di ricerca e anche l'applicazione degli arrotondamenti nelle procedure di aggiornamento dei prezzi (#TT03431/26)
+> -	SD - Fix WebApi Sales documents-AreComputedFieldsUpToDate problem. (#TT1258/21)
+> -	WM - Gestione Spunta: Implementata la spunta dell'UDC intera su una nuova registrazione di carico. (#TT03438/26)
+> -	WM - Web API GetItemsStock: Ripristinato funzionamento del filtro per descrizione. (#TT03056/26)
+> -	WMS - Giacenza UDC: Corretto numero UDC e filtro ubicazione in dettaglio. (#TT03407/26)
+> -	WMS - Nelle form di Gestione spunta e Conferma picking, introdotto il campo Ubicazione di carico, nel quale viene proposta automaticamente la location indicata nella causale di carico presente nei parametri di carico/scarico di magazzino, ma l’utente potrà modificarla tramite: inserimento manuale direttamente nel campo; selezione tramite help del campo o lettura tramite Tokenizer. Nel caso di lettura tramite Tokenizer la prima ubicazione letta viene interpretata come ubicazione di prelievo, mentre dalla seconda lettura in poi il valore viene inserito nel campo Ubicazione di carico. (#TT03580/26)
+> -	WMS - Rettifica UDC: Aggiunta nota giustificativa da riportare sul movimento di magazzino. (#TT03405/26)
+> -	WMS - Ricevimento merce: Corretto calcolo del numero UDC su ordini di anni precedenti. (#TT00077/26)
+
 ### Patch 804.0012 - 07/08/2026
 
 > -	Framework- corretta anomalia stato di transizione workflow (#TT03512/26)  
