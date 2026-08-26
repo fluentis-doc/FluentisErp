@@ -4,6 +4,11 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.0014 - 25/08/2026
+
+> -	WM - Gestione Spunta: Implementata la spunta dell'UDC intera su una nuova registrazione di carico. (#TT03438/26)  
+> -	WM - Giacenze UDC: Aprendo l'UDC al ritorno la form non risponde più. (#TT03646/26)
+
 ### Patch 804.0013 - 25/08/2026
 
 > -	CO - Risolto un bug nella stampa "Bilancio infrannuale a sezioni contrapposte" che non visualizzava correttamente i saldi dei conti con il flag "Mostra anagrafiche" disattivato. (#TT03308/26)
