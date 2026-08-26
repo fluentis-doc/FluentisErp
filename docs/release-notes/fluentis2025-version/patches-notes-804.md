@@ -6,8 +6,7 @@ sidebar_position: 1.1
 
 ### Patch 804.0016 - 26/08/2026
 
-> -	WM - Giacenza UDC: impossibilità di scorrere i risultati. (#TT03650/26)
-
+> -	WM - Giacenza UDC: impossibilità di scorrere i risultati. (#TT03650/26)  
 > -	WM - Gestione Spunta: Implementato lo spostamento dell'UDC quando spuntata interamente. (#TT03438/26)
 
 ### Patch 804.0015 - 25/08/2026
