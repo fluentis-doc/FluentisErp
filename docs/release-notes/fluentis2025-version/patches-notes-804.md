@@ -6,6 +6,14 @@ sidebar_position: 1.1
 
 ### Patch 804.0016 - 26/08/2026
 
+> -	Fixes for Maui in some rare scenarios  
+> -	PM - progetti - corrette alcune casistiche che incidevano sul conteggio giorni assegnati, previsti, pianificati, eseguiti nella testata progetto (#TT03192/26)  
+> -	SCM - Corretta visualizzazione delle righe di chiusura tabelle in Documenti Acquisto in entrata (#TT02657/26)  
+> -	SCM - Corretta anomalia chiamata Web Api ImportPurchaseDeliveryNotes (#TT02653/26)  
+> -	SCS - Corretta anomalia importazione Web Api ImportSubcontractorReturns ( #TT03441/26)
+
+### Patch 804.0016 - 26/08/2026
+
 > -	WM - Giacenza UDC: impossibilità di scorrere i risultati. (#TT03650/26)  
 > -	WM - Gestione Spunta: Implementato lo spostamento dell'UDC quando spuntata interamente. (#TT03438/26)
 
