@@ -10,9 +10,9 @@ sidebar_position: 1.2
 > -	CO - Valorizzazione acquisti e vendite, soluzione errore su collection partite/pagamenti e flag iva sospesa ( TT03007/26)
 > -	Fatturazione elettronica San Marino - Documenti di acquisto in entrata: Implementato un controllo sul codice COE ricevuto tramite HUB o provider esterni per garantirne il formato a 5 caratteri utilizzato nella generazione del file XML. (#TT03676/26)  
 Regole applicate:  
->> -	5 caratteri: nessuna modifica.
->> -	Meno di 5 caratteri: aggiunta di zeri a sinistra.
->> -	Più di 5 caratteri: utilizzo degli ultimi 5 caratteri a destra.
+>> -	**5 caratteri**: nessuna modifica.
+>> -	**Meno di 5 caratteri**: aggiunta di zeri a sinistra.
+>> -	**Più di 5 caratteri**: utilizzo degli ultimi 5 caratteri a destra.
 >> -	L'intervento garantisce una gestione uniforme dei codici COE ricevuti con formattazioni non conformi o privi degli zeri iniziali.
 > -	FI - Ammortamento cespiti: revisione della logica di proposta dei dati nel filtro “Materiale/Immateriale” della form di ammortamento cespiti. Modifications inside form Ammortamento cespiti can have impact on profiles ( TT03341/26).
 > -	FI - Creazione automatica Intrastat: revisione della procedura di creazione Intrastat da fatture ( TT03355/26)

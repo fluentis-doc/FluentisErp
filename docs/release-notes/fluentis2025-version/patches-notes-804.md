@@ -4,6 +4,17 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.0018 - 28/08/2026
+
+> -	Fatturazione elettronica San Marino - Documenti di acquisto in entrata: Implementato un controllo sul codice COE ricevuto tramite HUB o provider esterni per garantirne il formato a 5 caratteri utilizzato nella generazione del file XML. (#TT03676/26)  
+Regole applicate:  
+>> -	**5 caratteri**: nessuna modifica.
+>> -	**Meno di 5 caratteri**: aggiunta di zeri a sinistra.
+>> -	**Più di 5 caratteri**: utilizzo degli ultimi 5 caratteri a destra.
+>> -	L'intervento garantisce una gestione uniforme dei codici COE ricevuti con formattazioni non conformi o privi degli zeri iniziali.  
+· WMS - Gestione Spunta: abilitata la selezione di ubicazioni di prelievo con giacenza negativa. (#TT03674/26)  
+· WM - Liste di Traferimento: la finestra di terzisti proposti taglia il primo elemento. (#TT03677/26)
+
 ### Patch 804.0017 - 27/08/2026
 
 > -	PM - progetti - corrette alcune casistiche che incidevano sul conteggio giorni assegnati, previsti, pianificati, eseguiti nella testata progetto (#TT03192/26)  
