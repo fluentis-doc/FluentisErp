@@ -6,25 +6,25 @@ sidebar_position: 1.1
 
 ### Patch 804.0017 - 27/08/2026
 
-> -	Fixes for Maui in some rare scenarios  
 > -	PM - progetti - corrette alcune casistiche che incidevano sul conteggio giorni assegnati, previsti, pianificati, eseguiti nella testata progetto (#TT03192/26)  
 > -	SCM - Corretta visualizzazione delle righe di chiusura tabelle in Documenti Acquisto in entrata (#TT02657/26)  
 > -	SCM - Corretta anomalia chiamata Web Api ImportPurchaseDeliveryNotes (#TT02653/26)  
 > -	SCS - Corretta anomalia importazione Web Api ImportSubcontractorReturns ( #TT03441/26)
+> -	WMS maui - Corretto visualizzazione contatti proposti durante la digitazione che tagliava il primo elemento in alcune circostanze. (#TT03677/26) 
 
 ### Patch 804.0016 - 26/08/2026
 
-> -	WM - Giacenza UDC: impossibilità di scorrere i risultati. (#TT03650/26)  
-> -	WM - Gestione Spunta: Implementato lo spostamento dell'UDC quando spuntata interamente. (#TT03438/26)
+> -	WMS - Giacenza UDC: impossibilità di scorrere i risultati nel dettaglio UDC. (#TT03650/26)  
+> -	WMS - Gestione Spunta: Implementato lo spostamento dell'UDC quando spuntata interamente. (#TT03438/26)
 
 ### Patch 804.0015 - 25/08/2026
 
-> -	WMS - Fix WMS Confirm Picking focus(#TT3438/26)
+> -	WMS - Fix WMS Confirm Picking focus. (#TT3438/26)
 
 ### Patch 804.0014 - 25/08/2026
 
-> -	WM - Gestione Spunta: Implementata la spunta dell'UDC intera su una nuova registrazione di carico. (#TT03438/26)  
-> -	WM - Giacenze UDC: Aprendo l'UDC al ritorno la form non risponde più. (#TT03646/26)
+> -	WMS - Gestione Spunta: Implementata la spunta dell'UDC intera su una nuova registrazione di carico. (#TT03438/26)  
+> -	WMS - Giacenze UDC: Aprendo il dettaglio UDC al ritorno la form non risponde più. (#TT03646/26)
 
 ### Patch 804.0013 - 25/08/2026
 
@@ -58,10 +58,10 @@ sidebar_position: 1.1
 > -	SCS - Duplica Manutenzione Listini: Ottimizzata la procedura di ricerca e anche l'applicazione degli arrotondamenti nelle procedure di aggiornamento dei prezzi (#TT03431/26)
 > -	SD - Duplica Manutenzione Listini: Ottimizzata la procedura di ricerca e anche l'applicazione degli arrotondamenti nelle procedure di aggiornamento dei prezzi (#TT03431/26)
 > -	SD - Fix WebApi Sales documents-AreComputedFieldsUpToDate problem. (#TT1258/21)
-> -	WM - Gestione Spunta: Implementata la spunta dell'UDC intera su una nuova registrazione di carico. (#TT03438/26)
 > -	WM - Web API GetItemsStock: Ripristinato funzionamento del filtro per descrizione. (#TT03056/26)
+> -	WMS - Gestione Spunta: Implementata la spunta dell'UDC intera su una nuova registrazione di carico. (#TT03438/26)
 > -	WMS - Giacenza UDC: Corretto numero UDC e filtro ubicazione in dettaglio. (#TT03407/26)
-> -	WMS - Nelle form di Gestione spunta e Conferma picking, introdotto il campo Ubicazione di carico, nel quale viene proposta automaticamente la location indicata nella causale di carico presente nei parametri di carico/scarico di magazzino, ma l’utente potrà modificarla tramite: inserimento manuale direttamente nel campo; selezione tramite help del campo o lettura tramite Tokenizer. Nel caso di lettura tramite Tokenizer la prima ubicazione letta viene interpretata come ubicazione di prelievo, mentre dalla seconda lettura in poi il valore viene inserito nel campo Ubicazione di carico. (#TT03580/26)
+> -	WMS - Spunta Picking: Aggiunta in form e al barcode l'Ubicazione di carico della spunta, viene proposta quella della causale di carico. (#TT03580/26)
 > -	WMS - Rettifica UDC: Aggiunta nota giustificativa da riportare sul movimento di magazzino. (#TT03405/26)
 > -	WMS - Ricevimento merce: Corretto calcolo del numero UDC su ordini di anni precedenti. (#TT00077/26)
 
@@ -95,11 +95,11 @@ sidebar_position: 1.1
 > -	SD - evasione progetti nelle offerte, corretto ordinamento righe progetto nell’help di evasione in modo che rispetti l’ordine delle wbs. (#TT03318/26)
 > -	SH - Automatic refresh of dashboards/pivots (TT04763/24)
 > -	WM - Correzione della logica di filtraggio per codice articolo nel report Inventario Fisico Valutato in presenza del check Lotti (TT03401/26).
-> -	WM - LoadPlan Corretta anomalia che riportava unità di misura del volume incoerente in preparazione piano di carico. (#TT03386/26)
-> -	WM - LoadPlan: Risolta anomalia su filtro Zona Consegna in tab “Ricerca Ordini Clienti” in form Piani di carico. Modifications inside LoadPlan object form can have impact on profiles. (#TT03387/26)
-> -	WM - Scarico Serial Numbers: Corretto messaggio di Serial Number scaricato anziché non disponibile. (#TT03410/26)
+> -	WM - Piani di Carico: Corretta unità di misura del volume incoerente in preparazione piano di carico. (#TT03386/26)
+> -	WM - Piani di Carico: Corretto filtro Zona Consegna nel tab Ordini Clienti. Modifications inside LoadPlan object form can have impact on profiles. (#TT03387/26)
+> -	WM - Piani di Carico: modificando la quantità articoli nella scheda ordini clienti ora riporta la modifica nella scheda Preparazione. (#TT03384/26)
+> -	WM - Registrazioni di Magazzino: Corretto messaggio di Serial Number scaricato anziché non disponibile. (#TT03410/26)
 > -	WM - Stampa Inventario Valorizzato: Corretta impossibilità a stampare periodi antecedenti all’ultima valorizzazione. (#TT02525/26)
-> -	WM - LoadPlan: Risolta anomalia che, una volta modificata la quantità articoli in un piano di carico tab ordini clienti, non riportava la modifica nel tab preparazione piano di carico. (#TT03384/26)
 > -	WMS Maui - Aggiunto widget per FSProductionOrderPhase. (#TT03373/26)
 
 ### Patch 804.0010 - 30/07/2026
@@ -124,7 +124,7 @@ sidebar_position: 1.1
 > -	SH - Corretta anomalia nel salvataggio del flag "Fatturazione elettronica" in anagrafica contatti (#TT03344/26). Modificato metodo di verifica firma dei pagamenti STRIPE
 > -	SH - Fix DepartmentId type for account widget (#TT03414/26)
 > -	WM - Analisi disponibilità: corretto errore di timeout in caricamento dettagli per articoli aventi distinte con numerosi componenti fittizi. (#TT03051/26)
-> -	WM - Nel filtro della form delle differenze inventariali è possibile aggiungere anche le colonne relative ai costi dell’articolo semplicemente attivando il relativo flag. (#TT01224/26)
+> -	WM - Differenze inventariali: Aggiunti flag nella sezione filtro per l'attivazione in griglia delle colonne con i costi dell’articolo. (#TT01224/26)
 > -	WM e MS - Pianificazione generale e Analisi disponibilità: gestione dell’analisi disponibilità per considerare domande e offerte le Attrezzature e loro considerazione nella Pianificazione generale.(#TT01328/26)
 > -	WMS - Ricevimento Merce: Allineate label in griglia UDC su Maui e WPF. (#TT02777/26)
 
@@ -162,7 +162,7 @@ sidebar_position: 1.1
 > -	WM - Consider also simple and group by datasources for Extradata item class generator (#TT03152/26)
 > -	WM - Dettaglio movimento: corretto filtro classe articolo non funzionante con valori multipli. (#TT02212/26)
 > -	WM - Dettaglio UDC: Corretto errore in customizzazione della form. (#TT03287/26)
-> -	WM - Nel filtro picking sono state cambiate le label da: “Evaso” a “Spedito” e da “Non evaso” a “Non spedito”, dato che quel filtro va a verificare se per il picking è stato creato o meno il DDT o la fattura. Modifications inside Filter Picking form can have impact on profiles. (#TT03127/26)
+> -	WM - Picking: Nel filtro sono state cambiate le label da: “Evaso” a “Spedito” e da “Non evaso” a “Non spedito”, dato che quel filtro va a verificare se per il picking è stato creato o meno il DDT o la fattura. Modifications inside Filter Picking form can have impact on profiles. (#TT03127/26)
 > -	WMS - Carico/Sposta UDC Multiplo: Corretta visualizzazione ubicazione parziale. (#TT02947/26)
 > -	WMS - Liste Trasferimento UDC: Aggiunta gestione del flag “Da unità di carico ad Articoli” presente nel Tipo picking, aggiunta l’ubicazione di partenza in testata con relativa gestione e valorizzazione del conto nel movimento di carico con il terzista indicato in lista. (#TT00857/26)
 > -	WMS - Ricevimento Merce: Richiesta di aggiornamento della quantità di riga se diversa da quella delle UDC inserite. (#TT05147/25)
