@@ -4,6 +4,36 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0033 - 27/08/2026
+
+> -	CO - Risolto un bug nella stampa "Bilancio infrannuale a sezioni contrapposte" che non visualizzava correttamente i saldi dei conti con il flag "Mostra anagrafiche" disattivato.( TT03308/26)
+> -	CO - Valorizzazione acquisti e vendite, soluzione errore su collection partite/pagamenti e flag iva sospesa ( TT03007/26)
+> -	Fatturazione elettronica San Marino - Documenti di acquisto in entrata: Implementato un controllo sul codice COE ricevuto tramite HUB o provider esterni per garantirne il formato a 5 caratteri utilizzato nella generazione del file XML. (#TT03676/26)  
+Regole applicate:  
+>> -	5 caratteri: nessuna modifica.
+>> -	Meno di 5 caratteri: aggiunta di zeri a sinistra.
+>> -	Più di 5 caratteri: utilizzo degli ultimi 5 caratteri a destra.
+>> -	L'intervento garantisce una gestione uniforme dei codici COE ricevuti con formattazioni non conformi o privi degli zeri iniziali.
+> -	FI - Ammortamento cespiti: revisione della logica di proposta dei dati nel filtro “Materiale/Immateriale” della form di ammortamento cespiti. Modifications inside form Ammortamento cespiti can have impact on profiles ( TT03341/26).
+> -	FI - Creazione automatica Intrastat: revisione della procedura di creazione Intrastat da fatture ( TT03355/26)
+> -	FI - ottimizzazione ammortamento cespiti e procedura di rollback (#TT03362/26)
+> -	FI - Risolto un bug nella fatture di acquisto che non riportava nel riepilogo scadenze la "Posizione partita" impostata sulla relativa scadenza di partita. Rif. #TT03411/26
+> -	FI - Risolto un bug nella procedura "generazione solleciti" che assegnava lo stesso numero ai solleciti.( TT03519/26)
+> -	Framework- corretta anomalia stato di transizione workflow (#TT03512/26)
+> -	Framework-Corretta anomalia profili (#TT03499/26)
+> -	MS - M.R.P.: corretta la logica di calcolo della proposta di creazione dell’Ordine pianificato di copertura del fabbisogno, che non considerava correttamente la giacenza e la domanda dei documenti. (#TT03574/26)
+> -	MS - Ordini pianificati: corretta l’anomalia per cui, durante la selezione di una fase di lavoro, l’indicatore del Tipo di fase rimaneva sempre posizionato su Interna, anche quando la fase era Esterna.. (#TT03556/26)
+> -	PM - Interventi - Piano di fatturazione. Con l'opzione "Includi ore di viaggio nei servizi" attiva, corretto il criterio di ricerca dell'articolo fuori orario per le ore di viaggio. L'articolo viene ora individuato a partire dall'articolo di servizio che include le ore di viaggio, anziché dall'articolo spesa "Ore viaggio". (#TT03498/26)
+> -	PM - interventi - risolto caso per cui le spese sostenute marcate come spese da fatturare, riportavano i valori corretti ma non veniva calcolata la colonna Totale fatturabile ( #TT03114/26)
+> -	PM - progetti - corrette alcune casistiche che incidevano sul conteggio giorni assegnati, previsti, pianificati, eseguiti nella testata progetto (#TT03192/26)
+> -	QY - Piani di controllo: risolto il problema di timeout che si verificava in presenza di un elevato numero di righe di articoli associate alla visualizzazione del relativo tabulatore. (#TT03551/26)
+> -	SCM - Corretta anomalia chiamata Web Api ImportPurchaseDeliveryNotes (#TT02653/26)
+> -	SCM - Corretta visualizzazione delle righe di chiusura tabelle in Documenti Acquisto in entrata (#TT02657/26)
+> -	SCM - Corretta visualizzazione stampa registro SDI (#TT02657/26)
+> -	SCM - Corretta anomalia nella selezione documenti nella form di ricerca Documenti Acquisto In Entrata (#TT03497/26)
+> -	SCS - Corretta anomalia importazione Web Api ImportSubcontractorReturns ( #TT03441/26)
+> -	SD - Fix WebApi Sales documents-AreComputedFieldsUpToDate problem. (ticket 1258/21)
+
 ### Patch 803.0032 - 06/08/2026
 
 > -	CRM - inserimento appuntamento a calendario da Visit report, risolto caso specifico in cui si verificava un’eccezione in presenza di un calendario senza nome e date inizio-fine (#TT03484/26)
