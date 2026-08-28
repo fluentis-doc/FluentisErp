@@ -4,7 +4,7 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
-### Patch 804.0016 - 26/08/2026
+### Patch 804.0017 - 27/08/2026
 
 > -	Fixes for Maui in some rare scenarios  
 > -	PM - progetti - corrette alcune casistiche che incidevano sul conteggio giorni assegnati, previsti, pianificati, eseguiti nella testata progetto (#TT03192/26)  
