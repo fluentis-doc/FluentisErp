@@ -25,6 +25,10 @@ La form principale si compone dei seguenti tab:
 - **Articoli**
 In questo tab sono visualizzate tutte le righe articoli presenti nel picking.
 
+:::note Nota
+Nel tab **Articoli** le righe vengono proposte in ordine di priorità dell'ubicazione indicata nel picking o impostata nella mappa ubicazioni per articolo, poi per codice ubicazione ed infine per numero riga nel picking. Impostando opportunamente la priorità o o il codice ubicazione il magazziniere può essere indirizzato a seguire il giusto ordine di prelievo.
+:::
+
 **Pulsanti specifici**
 > **Dettaglio**: permette di posizionarsi sul tab **Articoli spuntati**;        
 > **Conferma**: dopo aver selezionato una riga nel tab **Articoli**, apre il tab **Conferma** proponendo l’articolo selezionato.
