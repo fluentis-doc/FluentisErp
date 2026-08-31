@@ -8,28 +8,28 @@ keywords:
 
 ### Patch 707.1-0085 - 31/08/2026
 
-> -	FI – Ammortamento cespiti: revisione della logica di proposta dei dati nel filtro “Materiale/Immateriale” della form di ammortamento cespiti. Modifications inside form Ammortamento cespiti can have impact on profiles (#TT03341/26).
+> -	FI - Ammortamento cespiti: revisione della logica di proposta dei dati nel filtro “Materiale/Immateriale” della form di ammortamento cespiti. Modifications inside form Ammortamento cespiti can have impact on profiles (#TT03341/26).
 > -	FI - Corretta anomalia che si verificava durante il rollback della contabilizzazione di un insoluto precedentemente sollecitato: la registrazione veniva rimossa dalla form, ma risultava ancora presente in Registrazioni, così come il sollecito associato (#TT03444/26)
 > -	FI - Corretto bug nella contabilizzazione fatture di vendita, che generava un falso avviso di squadratura tra partite e saldo contabile, quando contenevano partite di anticipo già incassate (fattura di acconto con partite da mantenere chiuse) e nella fattura era contenuta più di una partita di anticipo. (#TT03396/26)
-> -	FI – Creazione automatica Intrastat: revisione della procedura di creazione Intrastat da fatture (#TT03355/26)
+> -	FI - Creazione automatica Intrastat: revisione della procedura di creazione Intrastat da fatture (#TT03355/26)
 > -	FI - Gestione partite d’anticipo, sono stati aggiunti command e l’algoritmo per l’esecuzione del rollback della creazione fattura. La ribbon della form ‘AdvanceMaturityManagementSalesAdvanceTab’ va customizzata per aggiungere il pulsante relativo (#TT02916/26)
 > -	FI - Load 0 value SCM Invoice in Intrastat, rewrite logic from SP (#TT05318/24)
 > -	FI - ottimizzazione ammortamento cespiti e procedura di rollback (#TT03362/26)
 > -	FI - Risolto un bug nella procedura "generazione solleciti" che assegnava lo stesso numero ai solleciti. (#TT03519/26)
 > -	FI - Risolto un bug nelle fatture di acquisto che non riportava nel riepilogo scadenze la "Posizione partita" impostata sulla relativa scadenza di partita. (#TT03411/26)
-> -	FI- Corretta anomalia anteprima stampa Lettere di sollecito (#TT03432/26)
-> -	MS – M.R.P.: corretta la logica di calcolo della proposta di creazione dell’Ordine pianificato di copertura del fabbisogno, che non considerava correttamente la giacenza e la domanda dei documenti. (#TT03574/26)
-> -	SCM- Corretta visualizzazione delle righe di chiusura tabelle in Documenti Acquisto in entrata (#TT02657/26)
-> -	SCS- Corretta anomalia importazione Web Api ImportSubcontractorReturns ( #TT03441/26)
+> -	FI - Corretta anomalia anteprima stampa Lettere di sollecito (#TT03432/26)
+> -	MS - M.R.P.: corretta la logica di calcolo della proposta di creazione dell’Ordine pianificato di copertura del fabbisogno, che non considerava correttamente la giacenza e la domanda dei documenti. (#TT03574/26)
+> -	SCM - Corretta visualizzazione delle righe di chiusura tabelle in Documenti Acquisto in entrata (#TT02657/26)
+> -	SCS - Corretta anomalia importazione Web Api ImportSubcontractorReturns ( #TT03441/26)
 > -	WM - Impostato filtro automatico su form Implosione component se aperta tramite context panel. Filtra per l’articolo selezionato (#TT03435/26)
-> -	WM – Web API GetItemsStock: Ripristinato funzionamento del filtro per descrizione. (#TT03056/26)
+> -	WM - Web API GetItemsStock: Ripristinato funzionamento del filtro per descrizione. (#TT03056/26)
 
 
 ### Patch 707.1-0084 - 06/08/2026
 
 > -	ARM - Handle null SQL query parameters (#TT03191/26)
 > -	Cambiamento sito download per cambio RO
-> -	MS – M.R.P.: corretta la logica di calcolo che non considerava l’impiego dei materiali in una fase di lavoro specifica creando un doppio impegno di tali materiali se tale fase aveva una data inizio diversa da quella dell’ordine pianificato. (#TT03502/26)
+> -	MS - M.R.P.: corretta la logica di calcolo che non considerava l’impiego dei materiali in una fase di lavoro specifica creando un doppio impegno di tali materiali se tale fase aveva una data inizio diversa da quella dell’ordine pianificato. (#TT03502/26)
 > -	PM - parametri progetto - alla prima apertura avviene il setting automaticamente dei valori. Corretto il caso per cui in tabella venivano inseriti alcuni record duplicati (#TT03297/26)
 > -	SCM - Correzione della scadenza della fattura nella procedura di valorizzazione delle bolle di consegna acquisti.(#TT03445/26)
 > -	SCM\SD: PriceManagementPurchaseDiscountCategory and PriceManagementSalesDiscountCategory -increase Code dimension. Modifications inside forms Discount category association and Policies Discount Definition can have impact on profiles. (#TT01270/26)
