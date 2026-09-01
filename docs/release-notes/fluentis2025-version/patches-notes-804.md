@@ -4,6 +4,22 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.0019 - 31/08/2026
+
+> -	ARM - Cambio Stato Workflow da Task Supervisor: Nessuna transazione trovata. (#TT03549/26)
+> -	PR - le contabilizzazioni del modulo Pagamenti fornitori ora prevedono l’opzione di contabilizzazione provvisoria. Modifications inside forms vendor payment accounting tab and vendor payment automatic parameter can have impact on profiles. (#TT03577/26)
+> -	SCM - Purchase Orders: risolta anomalia che non riportava il conto logistico nel DDT Acquisto generato a partire dal ricevimento merci. (#TT03570/26)
+> -	SD - Ottimizzata l’apertura degli ordini clienti per garantirne un corretto funzionamento. (#TT03696/26)
+> -	SD - Revisione della procedura di acquisizione delle scadenze fatture (#TT03548/26).
+> -	SD - Tassi di cambio: nella creazione documentale tramite procedura, il sistema erediterà il tasso di cambio disponibile più recente rispetto alla data del documento (#TT03520/26)
+> -	WM - Analisi disponibilità: corretta visualizzazione in alcuni casi di componenti scaduti. (#TT03047/26)
+> -	WM - Gestione UDC: Inibito carico e rollback del carico se UDC generata da spunta picking. (#TT01628/26)
+> -	WM - Liste di Trasferimento UDC: Corretto controllo UDC già presente quando inserita prima della riapertura della form. (#TT03680/26)
+> -	WM - Liste Trasferimento UDC: Codici terzista proposti filtrati per tipo fornitore. (#TT03675/26)
+> -	WM - LoadPlan: Risolta anomalia in form Piani di Carico che invertiva i valori di volume e portata massima ricavati dall’automezzo utilizzato. (#TT03621/26)
+> -	WMS - Giacenza UDC: impossibilità di scorrere i risultati. (#TT03650/26)
+> -	WMS Maui - Rettifica UDC: Reso editabile il campo quantità. (#TT03656/26)
+
 ### Patch 804.0018 - 28/08/2026
 
 > -	Fatturazione elettronica San Marino - Documenti di acquisto in entrata: Implementato un controllo sul codice COE ricevuto tramite HUB o provider esterni per garantirne il formato a 5 caratteri utilizzato nella generazione del file XML. (#TT03676/26)  
