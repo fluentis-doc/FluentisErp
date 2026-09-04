@@ -4,21 +4,35 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0034 - 04/09/2026
+
+> -	ARM - Cambio Stato Workflow da Task Supervisor: Nessuna transazione trovata. (#TT03549/26)
+> -	FI - Registazioni contabili in divisa (#TT03508/26, TT02029/26)
+> -	Modifica apportata: Aggiornamento massivo della "Data di fine validità" per clienti con lo stesso agente. (#TT03724/26)
+> -	PM - Descrizione data storno fattura di acconto: aggiornata la descrizione della riga di storno, con data nel formato GG/MM/AAAA (#TT03667/26)
+> -	PR - corretto il calcolo delle scadenze nel cashflow per purchase demand, purchase order, sales order, subcontractor order, subcontractor return quando le condizioni di pagamento prevedono più righe con percentuale.(#TT03739/26)
+> -	SCM - Object navigator: estesa proprietà a standard per visualizzare anno e numero di commessa per gli articoli in conto lavoro (#TT03702/26).
+> -	SD - Revisione della procedura di acquisizione delle scadenze fatture (#TT3548/26).
+> -	SD - Tassi di cambio: nella creazione documentale tramite procedura, il sistema erediterà il tasso di cambio disponibile più recente rispetto alla data del documento (#TT03520/26)
+> -	WM - Analisi disponibilità: corretta visualizzazione in alcuni casi di componenti scaduti. (#TT03047/26)
+> -	WM - LoadPlan: Risolta anomalia in form Piani di Carico che invertiva i valori di volume e portata massima ricavati dall’automezzo utilizzato. (#TT03621/26)
+> -	WM - Valorizzazione distinta base: modifica del riferimento dell’articolo; in precedenza veniva riportato esclusivamente il codice articolo; ora il riferimento comprende sia la classe sia il codice articolo. (#TT03722/26)
+
 ### Patch 803.0033 - 27/08/2026
 
-> -	CO - Risolto un bug nella stampa "Bilancio infrannuale a sezioni contrapposte" che non visualizzava correttamente i saldi dei conti con il flag "Mostra anagrafiche" disattivato.( TT03308/26)
-> -	CO - Valorizzazione acquisti e vendite, soluzione errore su collection partite/pagamenti e flag iva sospesa ( TT03007/26)
+> -	CO - Risolto un bug nella stampa "Bilancio infrannuale a sezioni contrapposte" che non visualizzava correttamente i saldi dei conti con il flag "Mostra anagrafiche" disattivato.(#TT03308/26)
+> -	CO - Valorizzazione acquisti e vendite, soluzione errore su collection partite/pagamenti e flag iva sospesa (#TT03007/26)
 > -	Fatturazione elettronica San Marino - Documenti di acquisto in entrata: Implementato un controllo sul codice COE ricevuto tramite HUB o provider esterni per garantirne il formato a 5 caratteri utilizzato nella generazione del file XML. (#TT03676/26)  
 Regole applicate:  
 >> -	**5 caratteri**: nessuna modifica.
 >> -	**Meno di 5 caratteri**: aggiunta di zeri a sinistra.
 >> -	**Più di 5 caratteri**: utilizzo degli ultimi 5 caratteri a destra.
 >> -	L'intervento garantisce una gestione uniforme dei codici COE ricevuti con formattazioni non conformi o privi degli zeri iniziali.
-> -	FI - Ammortamento cespiti: revisione della logica di proposta dei dati nel filtro “Materiale/Immateriale” della form di ammortamento cespiti. Modifications inside form Ammortamento cespiti can have impact on profiles ( TT03341/26).
-> -	FI - Creazione automatica Intrastat: revisione della procedura di creazione Intrastat da fatture ( TT03355/26)
+> -	FI - Ammortamento cespiti: revisione della logica di proposta dei dati nel filtro “Materiale/Immateriale” della form di ammortamento cespiti. Modifications inside form Ammortamento cespiti can have impact on profiles (#TT03341/26).
+> -	FI - Creazione automatica Intrastat: revisione della procedura di creazione Intrastat da fatture (#TT03355/26)
 > -	FI - ottimizzazione ammortamento cespiti e procedura di rollback (#TT03362/26)
 > -	FI - Risolto un bug nella fatture di acquisto che non riportava nel riepilogo scadenze la "Posizione partita" impostata sulla relativa scadenza di partita. Rif. #TT03411/26
-> -	FI - Risolto un bug nella procedura "generazione solleciti" che assegnava lo stesso numero ai solleciti.( TT03519/26)
+> -	FI - Risolto un bug nella procedura "generazione solleciti" che assegnava lo stesso numero ai solleciti.(#TT03519/26)
 > -	Framework- corretta anomalia stato di transizione workflow (#TT03512/26)
 > -	Framework-Corretta anomalia profili (#TT03499/26)
 > -	MS - M.R.P.: corretta la logica di calcolo della proposta di creazione dell’Ordine pianificato di copertura del fabbisogno, che non considerava correttamente la giacenza e la domanda dei documenti. (#TT03574/26)
