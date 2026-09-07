@@ -4,6 +4,30 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.0020 - 07/09/2026
+
+> -	ARM - Ensure user form is read-only for non-admins
+> -	CPM - per la solution CPM, modifiche agli elementi di margine per aggiungere la ‘item nature’ e i link a query, datasource e script. Revisione della procedura di calcolo e della form di visualizzazione dei risultati dei margini (nuovi filtri, nuove colonne, griglia con i dettagli). (#TT03252/26)
+> -	CPQ - Importazioni Di.Ba. Nelle configurazioni principali. Aperura Di-Ba. Al termine di una configurazione.
+> -	FI - causali di contabilità, aggiunto flag di esclusione della Lipe (campo imponibile VP2). Il flag è attivo solo per causali con tipo movimento vendita (codici 11, 12, 13, 15, 18, 21, 29). Modifications inside form posting template can have impact on profiles.(#TT03515/26)
+> -	FI - nuove api di contabilizzazione fatture di acquisto e vendita. (#TT01389/26)
+> -	MES - Rilascio Ordini di produzione: sono state create le API operations per eseguire le procedure di Rilascio Ordini di produzione (ReleaseProductionOrders) e relativo Ripristino (RollbackProductionOrder). (#TT03613/26)
+> -	Modifica apportata: Aggiornamento massivo della "Data di fine validità" per clienti con lo stesso agente. (#TT03724/26)
+> -	MS - M.R.P.: risolta l’eccezione che si verificava durante l’elaborazione di specifici articoli gestiti per Sito di produzione, in presenza di Siti produttivi non gestiti. (#TT03673/26)
+> -	PM - Descrizione data storno fattura di acconto: aggiornata la descrizione della riga di storno, con data nel formato GG/MM/AAAA (#TT03667/26)
+> -	Possibilità di modificare un documento di BizLink (#TT05240/25)
+> -	PR - corretto il calcolo delle scadenze nel cashflow per purchase demand, purchase order, sales order, subcontractor order, subcontractor return quando le condizioni di pagamento prevedono più righe con percentuale.(#TT03739/26)
+> -	Risolto problema di lettura della configurazione per HubSanMarino
+> -	SCM - Object navigator: estesa proprietà a standard per visualizzare anno e numero di commessa per gli articoli in conto lavoro (#TT03702/26).
+> -	SD - Ordini clienti: ottimizzata procedura creazione nuovo ordine cliente da ribbon menù. (#TT03758/26)
+> -	SD - Corretta valorizzazione del campo colli nei DDT e Fatture di Vendita. (#TT03759/26)
+> -	SH - Consider verticalizations for context menu object forms (TT00931/26)
+> -	WM - Gestione UDC - Rollback carico: Corretto controllo su segnalazione di produzione. (#TT03503/26)
+> -	WM - Picking - Generazione DDT/Fattura: Rivisti controlli e relativi messaggi di errore pre-esecuzione. (#TT03620/26)
+> -	WM - Valorizzazione distinta base: modifica del riferimento dell’articolo; in precedenza veniva riportato esclusivamente il codice articolo; ora il riferimento comprende sia la classe sia il codice articolo. (#TT03722/26)
+> -	WMS - In conferma picking e gestione spunta, quando viene cancellata una riga spuntata, ora viene aggiornato correttamente lo stato della riga all’interno del picking. (#TT03749/26)
+> -	WMS - UDC: Nuova funzione “Aggiungi/Togli articoli” su UDC. (#TT03655/26)
+
 ### Patch 804.0019 - 31/08/2026
 
 > -	ARM - Cambio Stato Workflow da Task Supervisor: Nessuna transazione trovata. (#TT03549/26)
