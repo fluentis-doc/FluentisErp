@@ -4,6 +4,33 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.0021 - 11/09/2026
+
+> -	ARM - Ensure Role Rights cleanup before Role deletion
+> -	Corretto il recupero del file XML da inviare a Bizlink nei casi di rigenerazione del tracciato.
+> -	MES - Manufacturing Execution System: corretta anomalia in dichiarazione di produzione che, inserito un Serial Number nel tab materiali, non riportava in automatico il Lotto associato. (#TT03616/26)
+> -	MS - AFCS. Il prelievo parziale di un componente è inibito se non c'è almeno un ordine di produzione attivo per lo stesso. (TT03865/26)
+> -	MS - AFCS. Il tab degli errori e warnings in importazione ha ora delle colonne che permettono di filtrare in base al tipo di messaggio (#TT03473/26)
+> -	MS - AFCS. Ora sono possibili i prelievi parziali anche da magazzini alternativi. (#TT03786/26)
+> -	MS - Parametri MRP articolo: corretta la visualizzazione di alcune informazioni nell’elenco presente nel tabulatore Parametri di Acquisto/Conto lavoro. (#TT03755/26).
+> -	PM - WEB - planner, risolto caso per cui veniva mostrato nel calendario delle risorse anche la root per l'intera durata configurata nella tab Pianificazione servizio (#TT03735/26)
+> -	PM - webapi importazione/update interventi - risolto caso per cui impostando una riga di progetto in testata intervento, veniva importato solo il progetto ma non la riga di progetto. In update intervento, risolto caso per cui dava messaggio di riga ID servizio non trovato nel caso di riga servizi con sconti. (#TT03351/26)
+> -	Quando, per lo stesso documento (fattura di vendita o integrazione fattura di acquisto), viene generato più volte il file XML destinato a Bizlink, il sistema ora utilizza il file presente nella DocumentAttachment anziché quello registrato nel log, garantendo l'invio della versione più aggiornata del documento. (#TT03858/26)
+> -	QY - Reclami e Non conformità: sono stati creati i reports per elencare i soggetti coinvolti nei rispettivi documenti.
+> -	Risolto problema per Fiscalizzazione Croata per certificato non valido e estrazione info da FormattedNumber
+> -	SCS - Gestione conto logistico: Estesa possibilità di inserire le proprietà legate al Conto (Account) da object navigator su form “evasione da ordini” (#TT03752/26).
+> -	SD - Modifica della logica di esportazione fatture elettroniche xml Localizzazione San Marino. Non viene più letto, nella tabella Aliquote e modalità IVA, il flag Repubblica di S. Marino (obsoleto). Per la gestione dell’IVA monofase verrà letto unicamente l’ISO code della nazione connessa ai codici iva (SM) e nel caso di IVA monofase a valore fisso il campo Valore fisso.(#TT03814/26)
+> -	SD - In sales invoice for croatian localization, removed POS register field requirement when using Fiscalization button. Now data is taken from the formatted number, that must be structured like invoiceN/N/N or invoiceN-N-N (TT03751/26)
+> -	SH - MAUI - calendario generale, reso maggiormente evidente il mese su cui si sta lavorando, in modalità schermo verticale ed orizzontale (#TT03600/26)
+> -	WM - Duplicazione Articoli: Ottimizzata procedura su tab Pesi/dimensioni - sezione Volume (#TT03768/26).
+> -	WM - Lista Prelievo/Trasferimento UDC: Disabilitato controllo su UDC scaricate in Spunta ed escluse le righe UDC con quantità zero. (#TT03898/26)
+> -	WM - Se un picking è parzialmente evaso e tutte le righe spuntate sono già state interamente inserite in un DDT, mentre le righe rimanenti non sono ancora state spuntate, il tentativo di creare un nuovo DDT deve mostrare il seguente messaggio: “Nessuna quantità da spedire: le righe del picking non sono state spuntate oppure risultano già interamente spedite.” Per creare un nuovo DDT, l’utente dovrà quindi spuntare le righe del picking con quantità ancora da spedire. (#TT03862/26)
+> -	WM - Struttura Costi Movimenti: considerato anche il caso di passaggio per il picking nell'attribuzione dei costi acquisto nello scarico dei documenti di vendita. (#TT02058/26)
+> -	WMS - Conferma Trasferimento UDC: Abilitata conferma trasferimento di Liste già in DDT. (#TT03490/26)
+> -	WMS - In conferma picking e gestione spunta, selezionando una riga dal tab articoli e premendo il pulsante Dettaglio vengono visualizzate correttamente le relative righe di spunta. (#TT03836/26)
+> -	WMS - Rettifica UDC: Corretto errore in presenza di extension sull’oggetto dettaglio UDC. (#TT03806/26)
+> -	WMS - Ricevimento Merce: corretta valorizzazione costi per articoli senza listino. (#TT03725/26)
+
 ### Patch 804.0020 - 07/09/2026
 
 > -	ARM - Ensure user form is read-only for non-admins
