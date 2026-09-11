@@ -24,10 +24,10 @@ sidebar_position: 1.1
 > -	SH - MAUI - calendario generale, reso maggiormente evidente il mese su cui si sta lavorando, in modalità schermo verticale ed orizzontale (#TT03600/26)
 > -	WM - Duplicazione Articoli: Ottimizzata procedura su tab Pesi/dimensioni - sezione Volume (#TT03768/26).
 > -	WM - Lista Prelievo/Trasferimento UDC: Disabilitato controllo su UDC scaricate in Spunta ed escluse le righe UDC con quantità zero. (#TT03898/26)
-> -	WM - Se un picking è parzialmente evaso e tutte le righe spuntate sono già state interamente inserite in un DDT, mentre le righe rimanenti non sono ancora state spuntate, il tentativo di creare un nuovo DDT deve mostrare il seguente messaggio: “Nessuna quantità da spedire: le righe del picking non sono state spuntate oppure risultano già interamente spedite.” Per creare un nuovo DDT, l’utente dovrà quindi spuntare le righe del picking con quantità ancora da spedire. (#TT03862/26)
+> -	WM - Picking - Generazione DDT/Fattura: Inibita creazione DDT/Fattura nel caso in cui tutte le righe spuntate siano già state spedite mentre le rimanenti non sono state ancora state spuntate. (#TT03862/26)
 > -	WM - Struttura Costi Movimenti: considerato anche il caso di passaggio per il picking nell'attribuzione dei costi acquisto nello scarico dei documenti di vendita. (#TT02058/26)
 > -	WMS - Conferma Trasferimento UDC: Abilitata conferma trasferimento di Liste già in DDT. (#TT03490/26)
-> -	WMS - In conferma picking e gestione spunta, selezionando una riga dal tab articoli e premendo il pulsante Dettaglio vengono visualizzate correttamente le relative righe di spunta. (#TT03836/26)
+> -	WMS - Spunta Picking: Corretta visualizzazione delle righe di spunta nel comando Dettaglio della scheda Articoli. (#TT03836/26)
 > -	WMS - Rettifica UDC: Corretto errore in presenza di extension sull’oggetto dettaglio UDC. (#TT03806/26)
 > -	WMS - Ricevimento Merce: corretta valorizzazione costi per articoli senza listino. (#TT03725/26)
 
@@ -67,7 +67,7 @@ sidebar_position: 1.1
 > -	WM - Gestione UDC: Inibito carico e rollback del carico se UDC generata da spunta picking. (#TT01628/26)
 > -	WM - Liste di Trasferimento UDC: Corretto controllo UDC già presente quando inserita prima della riapertura della form. (#TT03680/26)
 > -	WM - Liste Trasferimento UDC: Codici terzista proposti filtrati per tipo fornitore. (#TT03675/26)
-> -	WM - LoadPlan: Risolta anomalia in form Piani di Carico che invertiva i valori di volume e portata massima ricavati dall’automezzo utilizzato. (#TT03621/26)
+> -	WM - Piani di Carico: Risolta anomalia in form Piani di Carico che invertiva i valori di volume e portata massima ricavati dall’automezzo utilizzato. (#TT03621/26)
 > -	WMS - Giacenza UDC: impossibilità di scorrere i risultati. (#TT03650/26)
 > -	WMS Maui - Rettifica UDC: Reso editabile il campo quantità. (#TT03656/26)
 
@@ -79,8 +79,8 @@ Regole applicate:
 >> -	**Meno di 5 caratteri**: aggiunta di zeri a sinistra.
 >> -	**Più di 5 caratteri**: utilizzo degli ultimi 5 caratteri a destra.
 >> -	L'intervento garantisce una gestione uniforme dei codici COE ricevuti con formattazioni non conformi o privi degli zeri iniziali.  
-· WMS - Gestione Spunta: abilitata la selezione di ubicazioni di prelievo con giacenza negativa. (#TT03674/26)  
-· WM - Liste di Traferimento: la finestra di terzisti proposti taglia il primo elemento. (#TT03677/26)
+> - WMS - Gestione Spunta: abilitata la selezione di ubicazioni di prelievo con giacenza negativa. (#TT03674/26)  
+> - WMS - Liste di Traferimento: la finestra di terzisti proposti taglia il primo elemento. (#TT03677/26)
 
 ### Patch 804.0017 - 27/08/2026
 
