@@ -6,7 +6,11 @@ sidebar_position: 1.2
 
 ### Patch 803.0035 - 11/09/2026
 
-
+> -	Corretto il recupero del file XML da inviare a Bizlink nei casi di rigenerazione del tracciato. Quando, per lo stesso documento (fattura di vendita o integrazione fattura di acquisto), viene generato più volte il file XML destinato a Bizlink, il sistema ora utilizza il file presente nella DocumentAttachment anziché quello registrato nel log, garantendo l'invio della versione più aggiornata del documento. (#TT03858/26)
+> -	MES - Manufacturing Execution System: corretta anomalia in dichiarazione di produzione che, inserito un Serial Number nel tab materiali, non riportava in automatico il Lotto associato. (#TT03616/26)
+> -	PM - webapi importazione/update interventi - risolto caso per cui impostando una riga di progetto in testata intervento, veniva importato solo il progetto ma non la riga di progetto. In update intervento, risolto caso per cui dava messaggio di riga ID servizio non trovato nel caso di riga servizi con sconti. (#TT03351/26)
+> -	SD - Modifica della logica di esportazione fatture elettroniche xml Localizzazione San Marino. Non viene più letto, nella tabella Aliquote e modalità IVA, il flag Repubblica di S. Marino (obsoleto). Per la gestione dell’IVA monofase verrà letto unicamente l’ISO code della nazione connessa ai codici iva (SM) e nel caso di IVA monofase a valore fisso il campo Valore fisso. (#TT03814/26)
+> -	WM - Duplicazione Articoli: Ottimizzata procedura su tab Pesi/dimensioni - sezione Volume (#TT03768/26).
 
 ### Patch 803.0034 - 04/09/2026
 
