@@ -4,6 +4,10 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0035 - 11/09/2026
+
+
+
 ### Patch 803.0034 - 04/09/2026
 
 > -	ARM - Cambio Stato Workflow da Task Supervisor: Nessuna transazione trovata. (#TT03549/26)
