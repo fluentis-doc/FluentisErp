@@ -6,12 +6,12 @@ sidebar_position: 1
 
 ### Patch 608.1-0093 - 11/09/2026
 
-FI - Corretto bug nella contabilizzazione fatture di vendita, che generava un falso avviso di squadratura tra partite e saldo contabile, quando contenevano partite di anticipo già incassate (fattura di acconto con partite da mantenere chiuse) e nella fattura era contenuta più di una partita di anticipo. (TT03396/26)
-FI - il salvataggio delle registrazioni di contabilità generale verificano ora che tutti i conti inseriti siano della società della registrazione contabile (TT03012/26)
-PR - corretto il calcolo delle scadenze nel cashflow per purchase demand, purchase order, sales order, subcontractor order, subcontractor return quando le condizioni di pagamento prevedono più righe con percentuale. (TT03739/26)
-SD - Listini di Vendita: Corretta configurazione campo SDSPLIED_ExtraDataValue in ExtraData presenti su articolo (#TT03220/26)
-SD - Scarico mazzino: Implementata scarico DDT di lotti e serial number a posteriori rispetto all'emissione Fattura di vendita (#TT03462/26).
-SD - corretta anomalia cancellazione massiva di righe fattura (#TT02299/26)
+> -	FI - Corretto bug nella contabilizzazione fatture di vendita, che generava un falso avviso di squadratura tra partite e saldo contabile, quando contenevano partite di anticipo già incassate (fattura di acconto con partite da mantenere chiuse) e nella fattura era contenuta più di una partita di anticipo. (TT03396/26)
+> -	FI - il salvataggio delle registrazioni di contabilità generale verificano ora che tutti i conti inseriti siano della società della registrazione contabile (TT03012/26)
+> -	PR - corretto il calcolo delle scadenze nel cashflow per purchase demand, purchase order, sales order, subcontractor order, subcontractor return quando le condizioni di pagamento prevedono più righe con percentuale. (TT03739/26)
+> -	SD - Listini di Vendita: Corretta configurazione campo SDSPLIED_ExtraDataValue in ExtraData presenti su articolo (#TT03220/26)
+> -	SD - Scarico mazzino: Implementata scarico DDT di lotti e serial number a posteriori rispetto all'emissione Fattura di vendita (#TT03462/26).
+> -	SD - corretta anomalia cancellazione massiva di righe fattura (#TT02299/26)
 
 ### Patch 608.1-0092 - 15/06/2026
 
