@@ -35,8 +35,19 @@ La parte inferiore della form presenta due tab.
 
 #### Documento
 
-In questa tab generalmente viene compilato il vero e proprio report creato durante la visita. Questo documento può contenere svariate informazioni, in base alla tipologia di visita effettuata. Per questo motivo, nella griglia è possibile selezionare un [Template](/docs/crm/budget-marketing-automation/template/template-search) da utilizzare come base del report e da compilare con le informazioni del cliente. E' necessario quindi creare a priori i vari template per averli disponibili in fase di visita e poterli utilizzare. 
-Nella parte destra sarà visualizzato il Template selezionato e sarà possibile compilarlo. E' inoltre possibile inserire i dati necessari per l'invio tramite email del documento, nella sezione Informazioni destinatario.            
+In questa tab generalmente viene compilato il vero e proprio report creato durante la visita. Questo documento può contenere svariate informazioni, in base alla tipologia di visita effettuata. Per questo motivo, nella griglia sono presenti: 
+- **[Template](/docs/crm/budget-marketing-automation/template/template-search)** da utilizzare come base del report e da compilare con le informazioni del cliente. E' necessario quindi creare a priori i vari template per averli disponibili in fase di visita e poterli utilizzare. I template proposti nel menu a tendina saranno quelli che fanno riferimento all'oggetto CrmContact, FsLedgerAccount, CrmVisitReport.  
+Nella parte destra sarà visualizzato il Template selezionato e sarà possibile compilarlo;
+- **Nome**: verrà proposta la ragione Sociale dell'azienda;
+- **Oggetto**: oggetto della email da inviare; 
+- **Destinatario**: verranno proposte le email del Contatto CRM (email generale ed email presenti nella tab Riferimenti) o del Contatto ERP (email inserite nella tab Riferimenti);
+- **CC**: eventuali indirizzi aggiuntivi da mettere in copia nella email;    
+- **BCC**: eventuali indirizzi aggiuntivi da mettere in copia nascosta nella email; 
+- **Utente**: utente che ha creato la email nel visit report; 
+- **Data creazione**: data inserimento della email nel visit report;
+- **Data Invio**: data invio della email;  
+
+E' inoltre possibile inserire i dati necessari per l'invio tramite email del documento, nella sezione Informazioni destinatario.            
 Per la gestione del template sono disponibili le seguenti sezioni:     
 - **Email**: questa tab contiene:     
 > - *Stampa*: permette di stampare il foglio di lavoro;
@@ -87,6 +98,8 @@ In questa tab è possibile consultare i documenti allegati. Per allegare i docum
 Nella ribbon bar è presente il bottone **Inserisci appuntamento in calendario**
 
 
-Utilizzando questa funzionalità, verrà inserito all'interno del calendario di Fluentis dell'utente attualmente in uso, un appuntamento collegato a questo visit report. 
+Utilizzando questa funzionalità, verrà inserito un appuntamento collegato a questo visit report, all'interno del calendario di Fluentis dell'utente attualmente in uso (oppure nel calendario di un altro utente selezionabile dall'elenco dei calendari a cui si è abilitati).     
 Si aprirà una videata con la possibilità di cambiare risorsa del calendario, oltre a specificare data-ora ed ulteriori dati e note. 
 Nel caso sia già presente un appuntamento, verrà chiesta conferma se generare un nuovo appuntamento a calendario.
+
+Dal calendario di Fluentis è possibile generare un nuovo visit report con tasto destro --> Crea nuovo visit report.
