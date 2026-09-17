@@ -12,7 +12,7 @@ keywords:
 > - PR - corretto il calcolo delle scadenze nel cashflow per purchase demand, purchase order, sales order, subcontractor order, subcontractor return quando le condizioni di pagamento prevedono più righe con percentuale. (TT03739/26)
 > - PR - Corretto problema in fase di creazione automatica cashflow per gli purchase demand, purchase order, sales order, subcontractor order, subcontractor return se l'ordine non conteneva alcuna condizione di pagamento (TT03738/26)
 > - SD - Dettaglio righe ordini clienti: aggiunta possibilità di estrarre colonne riguardanti “Fatturato vendite” da Object navigator.
-> - SD - Revisione performance in contabilizzazione fatture di vendita (nuovo parametro “FS-FI-UseAsyncAccounting” da attivare nella form dei Parametri general, Business area FI). (#TT02507/26)
+> - SD - Revisione performance in contabilizzazione fatture di vendita. (#TT02507/26)  
 > - SD - Tassi di cambio: nella creazione documentale tramite procedura, il sistema erediterà il tasso di cambio disponibile più recente rispetto alla data del documento (#TT03520/26)
 > - SH - Consider verticalizations for context menu object forms (TT00931/26)
 > - SD - Revisione della procedura di acquisizione delle scadenze fatture (3548/26).
