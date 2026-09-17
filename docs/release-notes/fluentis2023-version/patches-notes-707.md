@@ -14,8 +14,9 @@ keywords:
 > - SD - Dettaglio righe ordini clienti: aggiunta possibilità di estrarre colonne riguardanti “Fatturato vendite” da Object navigator.
 > - SD - Revisione performance in contabilizzazione fatture di vendita (#TT02507/26)  
 > - SD - Tassi di cambio: nella creazione documentale tramite procedura, il sistema erediterà il tasso di cambio disponibile più recente rispetto alla data del documento (#TT03520/26)
-> - SD - Revisione della procedura di acquisizione delle scadenze fatture (3548/26)  
+> - SD - Revisione della procedura di acquisizione delle scadenze fatture (#TT03548/26)  
 > - SH - Consider verticalizations for context menu object forms (TT00931/26)
+
 ### Patch 707.1-0085 - 31/08/2026
 
 > -	FI - Ammortamento cespiti: revisione della logica di proposta dei dati nel filtro “Materiale/Immateriale” della form di ammortamento cespiti. Modifications inside form Ammortamento cespiti can have impact on profiles (#TT03341/26).
