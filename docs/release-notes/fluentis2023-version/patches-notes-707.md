@@ -6,7 +6,7 @@ keywords:
   - Civico
 ---
 
-### Patch 707.1-0086 - 11/09/2026
+### Patch 707.1-0086 - 18/09/2026
 
 > - PR - Anticipi e Incassi: revisione della gestione dello stato degli anticipi nelle distinte (TT03560/26, TT04590/25)
 > - PR - corretto il calcolo delle scadenze nel cashflow per purchase demand, purchase order, sales order, subcontractor order, subcontractor return quando le condizioni di pagamento prevedono più righe con percentuale (TT03739/26)
