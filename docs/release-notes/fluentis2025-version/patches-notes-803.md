@@ -4,6 +4,15 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0036 - 21/09/2026
+
+> -	ARM - Corretta visualizzazione degli stati di workflow se soggetti a personalizzazioni (#TT03985/26)
+> -	FI - corretto bug nel calcolo utilizzo fidi che non rappresentava correttamente le partite nate da registrazioni contabili provvisorie successivamente convertite in registrazioni definitive.(#TT03522/26)
+> -	FI - creazione registrazioni da file Sdi, revisione gestione segni per note di credito che nel file Sdi sono negative (#TT03678/26)
+> -	FI - Risolto un errore nella gestione F24 che impediva la contabilizzazione quando il tipo di ritenuta non aveva associato il corretto conto Erario e andava a reperirlo da un'altra società. (#TT03955/26)
+> -	FI - Risolto un problema nella creazione automatica del riepilogo Intrastat Vendite che causava un errore dopo la selezione di una fattura di vendita. (#TT04004/26)
+> -	SCS - Valorizzazione rientro c/lavoro: ottimizzata procedura di creazione fattura da rientro con lotti e serial number (#TT03926/26)
+
 ### Patch 803.0035 - 11/09/2026
 
 > -	Corretto il recupero del file XML da inviare a Bizlink nei casi di rigenerazione del tracciato. Quando, per lo stesso documento (fattura di vendita o integrazione fattura di acquisto), viene generato più volte il file XML destinato a Bizlink, il sistema ora utilizza il file presente nella DocumentAttachment anziché quello registrato nel log, garantendo l'invio della versione più aggiornata del documento. (#TT03858/26)
