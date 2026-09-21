@@ -4,6 +4,34 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.002 - 21/09/2026
+
+> -	ARM - Corretta visualizzazione degli stati di workflow se soggetti a personalizzazioni (#TT03985/26)
+> -	Bizlink- Ottimizzazione del salvataggio degli schemi di importazione Excel customizzati (#TT03944/26 / #TT03784/26)
+> -	CO - revisione calcolo comparazione riclassificazioni su dati del controlling con modelli che hanno nodi di tipo ‘somma dei figli’ con formula null (#TT03629/26)
+> -	CPM - conto in marginalità di vendita prodotto (#TT03252/26)
+> -	CPQ - Corretto problema di duplicazione distinte nella configurazione anche quando non richiesto. Corretto problema di duplicazione di alcuni tipi di Extra Data. Risolto problema di generazione Ri. Ba. per prototipi figli in configurazione.
+> -	FI - corretto bug nel calcolo utilizzo fidi che non rappresentava correttamente le partite nate da registrazioni contabili provvisorie successivamente convertite in registrazioni definitive. ( Fluentis.FluentisErp.Core.PM.Projects.ReadWrite.Algorithms TT03522/26)
+> -	FI - creazione registrazioni da file Sdi, revisione gestione segni per note di credito che nel file Sdi sono negatiFluentis.FluentisErp.Core.PM.Projects. ReadWrite.AlgorithmsTTporto della data nella procedura “Calcola piano di ammortamento” (#TT03990/26)
+> -	FI - Giroconto partite: Revisionata la procedura di giroconto partite per gestire correttamente i casi in cui viene inserita direttamente la data di scadenza nella partita, anziché la soluzione di pagamento. (#TT03729/26)
+> -	FI - Registrazioni Contabili: revisione della procedura di compensazione delle partite all’interno della registrazione contabile (#TT03839/26).
+> -	FI - Risolto un errore nella gestione F24 che impediva la contabilizzazione quando il tipo di ritenuta non aveva associato il corretto conto Erario e andava a reperirlo da un'altra società. (#TT03955/26)
+> -	FI - Risolto un problema nella creazione automatica del riepilogo Intrastat Vendite che causava un errore dopo la selezione di una fattura di vendita. (#TT04004/26)
+> -	PM - calcolo SAL di progetto - codici PRCC006/ PRCC008/ SLSP006/ SLSP007 relativi alle spese o sconti finali nelle fatture di acquisto e vendita. Corretto caso per cui i valori venivano moltiplicati per ogni riga fattura invece di essere ripartiti in base al valore economico della riga fattura/wbs (#TT03943/26)
+> -	PM - progetti - corretto caso in cui nella tab riepiloghi i campi Totale imponibile attivo, totale IVA attivo, Totale attivo non si aggiornavano (#TT03589/26)
+> -	SCM - Storno DDT e relativa valorizzazione: modificata logica di storno DDT con quantità negative considerando anche disponibilità di lotti e serial number (#TT03277/26).
+> -	SCS - Valorizzazione rientro c/lavoro: ottimizzata procedura di creazione fattura da rientro con lotti e serial number (#TT03926/26)
+> -	SD - Pesi e volumi: ottimizzato allineamento dati tra tab Articoli e tab Trasorto per i campi pesi e volumi in DDT, fatture di vendita ed ordini clienti. Modifications inside object forms SalesDeliveryNote, SalesInvoice and SalesOrder can have impact on profiles. (#TT03961/26).
+> -	SD - Stampa bilancino di fatturazione: revisione del report con visualizzazione delle spese di incasso associate alle scadenze delle fatture. ((#TT03671/26)
+> -	SD - Implementati serial number nelle chiamate WebApi DDT e SalesInvoice (#TT03919/26)
+> -	SD - Implementato lo scarico automatico da WebApi per DDT e Fatture di Vendita (#TT03821/26)
+> -	SH - rilascio prima versione fast start per localizzazione FR. Allineamento tecnico fast start IT, SM, CH, US, ES (#TT03941/26)
+> -	WM - Spedizioni: Valorizzazione destinatario e destinazione da Ordini Cliente. (#TT04186/25)
+> -	WMS - Ricevimento Merce: Aggiunto nuovo algoritmo customizzabile AfterPrintFormIsClosed. (#TT03721/26)
+> -	WMS - Ricevimento Merce: Ricalcolo totali nel caso di aggiornamento riga DDT da quantità cumulativa UDC. (#TT03725/26)
+> -	WMS Maui - Spunta Picking: Migliorata gestione del layout in form di ricerca. (#TT03762/26)
+
+
 ### Patch 804.0021 - 11/09/2026
 
 > -	ARM - Ensure Role Rights cleanup before Role deletion
@@ -87,7 +115,7 @@ Regole applicate:
 > -	PM - progetti - corrette alcune casistiche che incidevano sul conteggio giorni assegnati, previsti, pianificati, eseguiti nella testata progetto (#TT03192/26)  
 > -	SCM - Corretta visualizzazione delle righe di chiusura tabelle in Documenti Acquisto in entrata (#TT02657/26)  
 > -	SCM - Corretta anomalia chiamata Web Api ImportPurchaseDeliveryNotes (#TT02653/26)  
-> -	SCS - Corretta anomalia importazione Web Api ImportSubcontractorReturns ( #TT03441/26)
+> -	SCS - Corretta anomalia importazione Web Api ImportSubcontractorReturns (#TT03441/26)
 > -	WMS maui - Corretto visualizzazione contatti proposti durante la digitazione che tagliava il primo elemento in alcune circostanze. (#TT03677/26) 
 
 ### Patch 804.0016 - 26/08/2026
@@ -126,7 +154,7 @@ Regole applicate:
 > -	PM - interventi - resa disponibile stampa rapportino che può essere firmata da applicazione mobile ed inviata via email, utilizzando un testo predefinito.
 > -	PM - duplica interventi da planner e da pianifica risorse - collegati al nuovo diritto utente che gestisce la duplica anche dalla griglia di ricerca interventi (#TT03516/26)
 > -	PM - Interventi - Piano di fatturazione. Con l'opzione "Includi ore di viaggio nei servizi" attiva, corretto il criterio di ricerca dell'articolo fuori orario per le ore di viaggio. L'articolo viene ora individuato a partire dall'articolo di servizio che include le ore di viaggio, anziché dall'articolo spesa "Ore viaggio". (#TT03498/26)
-> -	PM - interventi - risolto caso per cui le spese sostenute marcate come spese da fatturare, riportavano i valori corretti ma non veniva calcolata la colonna Totale fatturabile ( #TT03114/26)
+> -	PM - interventi - risolto caso per cui le spese sostenute marcate come spese da fatturare, riportavano i valori corretti ma non veniva calcolata la colonna Totale fatturabile (#TT03114/26)
 > -	PR - generazione automatica Cash flow, revisione attivazione pulsante di creazione (#TT03370/26)
 > -	QY - Piani di controllo: risolto il problema di timeout che si verificava in presenza di un elevato numero di righe di articoli associate alla visualizzazione del relativo tabulatore. (#TT03551/26)
 > -	SCM - Duplica Manutenzione Listini: Ottimizzata la procedura di ricerca e anche l'applicazione degli arrotondamenti nelle procedure di aggiornamento dei prezzi (#TT03431/26)
