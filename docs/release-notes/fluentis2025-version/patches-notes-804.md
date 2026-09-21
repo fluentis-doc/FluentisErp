@@ -4,7 +4,7 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
-### Patch 804.002 - 21/09/2026
+### Patch 804.022 - 21/09/2026
 
 > -	ARM - Corretta visualizzazione degli stati di workflow se soggetti a personalizzazioni (#TT03985/26)
 > -	Bizlink- Ottimizzazione del salvataggio degli schemi di importazione Excel customizzati (#TT03944/26 / #TT03784/26)
@@ -30,7 +30,6 @@ sidebar_position: 1.1
 > -	WMS - Ricevimento Merce: Aggiunto nuovo algoritmo customizzabile AfterPrintFormIsClosed. (#TT03721/26)
 > -	WMS - Ricevimento Merce: Ricalcolo totali nel caso di aggiornamento riga DDT da quantità cumulativa UDC. (#TT03725/26)
 > -	WMS Maui - Spunta Picking: Migliorata gestione del layout in form di ricerca. (#TT03762/26)
-
 
 ### Patch 804.0021 - 11/09/2026
 
