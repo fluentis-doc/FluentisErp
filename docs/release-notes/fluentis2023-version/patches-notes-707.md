@@ -6,6 +6,28 @@ keywords:
   - Civico
 ---
 
+### Patch 707.1-0087 - 29/09/2026
+
+> -	CO - revisione calcolo comparazione riclassificazioni su dati del controlling con modelli che hanno nodi di tipo ‘somma dei figli’ con formula null (#TT03629/26)
+> -	FI - Comunicazione liquidazione periodica IVA: revisione della proposta trimestre in caso di IVA trimestrale (#TT04188/26).
+> -	FI - corretto bug che generava un errore caricando un cespite completamente ammortizzato. Rimossa obbligatorietà del tipo deducibilità. (#TT04019/26)
+> -	FI - corretto bug nel calcolo utilizzo fidi che non rappresentava correttamente le partite nate da registrazioni contabili provvisorie successivamente convertite in registrazioni definitive. (#TT03522/26)
+> -	FI - creazione registrazioni da file Sdi, revisione gestione segni per note di credito che nel file Sdi sono negative (#TT03678/26)
+> -	FI - Gestione Mutui: correzione del riporto della data nella procedura “Calcola piano di ammortamento” ( #TT03990/26)
+> -	FI - Giroconto partite: Revisionata la procedura di giroconto partite per gestire correttamente i casi in cui viene inserita direttamente la data di scadenza nella partita, anziché la soluzione di pagamento. (#TT03729/26)
+> -	FI - Registrazioni Contabili: revisione della procedura di compensazione delle partite all’interno della registrazione contabile ( #TT03839/26).
+> -	FI - Risolto un errore nella gestione F24 che impediva la contabilizzazione quando il tipo di ritenuta non aveva associato il corretto conto Erario e andava a reperirlo da un'altra società. (#TT03955/26)
+> -	FI - Risolto un problema nella creazione automatica del riepilogo Intrastat Vendite che causava un errore dopo la selezione di una fattura di vendita. (#TT04004/26)
+> -	FI - Stampa lettere di sollecito - Risolta l’anomalia di arrotondamento sui valori monetari (#TT00361/25)
+> -	MS - Generazione commesse di produzione: è possibile generare nuove Commesse di produzione di Articoli archiviati, inseriti forzatamente o antecedentemente all’archiviazione, in Ordini cliente. (#TT03792/26)
+> -	MS - M.R.P.: corretta anomalia che generava ordini pianificati non necessari sulla base di disponibilità sufficienti a coprirne il fabbisogno. (#TT03908/26)
+> -	MS - WebAPI importo ordini pianificati - corretto bug che non importava correttamente il tipo approvvigionamento dell’ordine (#TT04128/26)
+> -	PM - calcolo SAL di progetto - codici PRCC006/ PRCC008/ SLSP006/ SLSP007 relativi alle spese o sconti finali nelle fatture di acquisto e vendita. Corretto caso per cui i valori venivano moltiplicati per ogni riga fattura invece di essere ripartiti in base al valore economico della riga fattura/wbs (#TT03943/26)
+> -	SD - Stampa bilancino di fatturazione: revisione del report con visualizzazione delle spese di incasso associate alle scadenze delle fatture. (3671/26)
+> -	WF - in caso di attività obbligatorie nello stato del workflow, l’avanzamento di stato viene bloccato se non sono completate tutte le attività previste (#TT03615/26)
+> -	WM - Spedizioni: Valorizzazione destinatario e destinazione da Ordini Cliente. (#TT04186/25)
+> -	WMS - Ricevimento Merce: Gestita l’unità alternativa in creazione bolla. (#TT01926/26)
+
 ### Patch 707.1-0086 - 18/09/2026
 
 > - PR - Anticipi e Incassi: revisione della gestione dello stato degli anticipi nelle distinte (TT03560/26, TT04590/25)
