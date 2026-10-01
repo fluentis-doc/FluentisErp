@@ -78,8 +78,8 @@ sidebar_position: 1.1
 > -	SH - Consider verticalizations for context menu object forms (TT00931/26)
 > -	WM - Gestione UDC - Rollback carico: Corretto controllo su segnalazione di produzione. (#TT03503/26)
 > -	WM - Picking - Generazione DDT/Fattura: Rivisti controlli e relativi messaggi di errore pre-esecuzione. (#TT03620/26)
-> -	WM - Valorizzazione distinta base: modifica del riferimento dell’articolo; in precedenza veniva riportato esclusivamente il codice articolo; ora il riferimento comprende sia la classe sia il codice articolo. (#TT03722/26)
-> -	WMS - In conferma picking e gestione spunta, quando viene cancellata una riga spuntata, ora viene aggiornato correttamente lo stato della riga all’interno del picking. (#TT03749/26)
+> -	WM - Valorizzazione distinta base: modificato riferimento dell’articolo includendo la classe. (#TT03722/26)
+> -	WMS - Spunta Picking: Corretto aggiornamento stato in cancellazione di una riga spunta. (#TT03749/26)
 > -	WMS - UDC: Nuova funzione “Aggiungi/Togli articoli” su UDC. (#TT03655/26)
 
 ### Patch 804.0019 - 31/08/2026
