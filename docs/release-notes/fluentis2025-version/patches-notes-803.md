@@ -4,6 +4,33 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0037 - 01/10/2026
+
+> - Aggiornata la configurazione di default del connettore IMAP
+> - CO - comparazione riclassificazioni con dati del controlling, revisione calcolo formule quando si visualizzano i dettagli dei periodi (#TT04180/26)
+> - FI - Comunicazione liquidazione periodica IVA: revisione della proposta trimestre in caso di IVA trimestrale (#TT04188/26).
+> - FI - corretto bug che generava un errore caricando un cespite completamente ammortizzato. Rimossa obbligatorietà del tipo deducibilità ( #TT04019/26)
+> - MES - Manufacturing Execution System: corretta anomalia che, in una commessa multiprodotto, non permetteva la modifica di una commessa non esaminata se nella stessa commessa multiprodotto fosse presente una commessa esecutiva (#TT03664/26)
+> - MES - Manufacturing Execution System: in form commessa di produzione-tab costificazione-dettaglio costi modificato il nome della colonna “Quantità” in “Quantità prevista” e aggiunta nuova colonna “Quantità effettiva” (#TT03663/26)
+> - MS - Dichiarazioni di produzione: corretta l’anomalia che non permetteva il consumo di materiali gestiti a Numeri seriali a fronte di Giacenza disponibile (#TT03997/26)
+> - MS - Generazione commesse di produzione: è possibile generare nuove Commesse di produzione di Articoli archiviati, inseriti forzatamente o antecedentemente all’archiviazione, in Ordini cliente (#TT03792/26)
+> - MS - M.R.P.: corretta anomalia che generava ordini pianificati non necessari sulla base di disponibilità sufficienti a coprirne il fabbisogno (#TT03908/26)
+> - MS - Master Schedule: Corretta anomalia che considerava errate, negli ordini pianificati di produzione, le quantità impiego di materiali alternativi presenti in distinta base (#TT03631/26)
+> -	MS - Costificazione Commesse di Produzione:
+>> - corretto il valore del costo unitario preventivo di ogni singolo livello calcolato come divisione tra il costo totale preventivo e quantità prevista;
+>> - non viene più visualizzato il costo unitario consuntivo:
+>>> - degli ordini di produzione fintanto che non viene dichiarata una quantità di semilavorato o prodotto finito da ultima fase movimentabile;
+>>> - dell’articolo della commessa di produzione fintanto che non viene dichiarata una quantità del documento di primo livello;
+>>> - della Commessa di produzione;
+>> - apportate le suddette modifiche anche nel report “Costificazione commessa” (#TT03662/26)
+> - SCS - Cambio fornitore ordine conto lavoro: ottimizzata procedura di cambio fornitore se eseguita in riga articoli (#TT04127/26).
+> - SD - Flag prezzo manuale: ottimizzata procedura che riporta flag di prezzo manuale da ordine cliente - picking - DDT (#TT04001/26)
+> - SH - Chart of Accounts fix when FSLedgerAccount object is extended (#TT03465/26)
+> - SH - Proponi dati: ottimizzato il caricamento automatico dei dati anagrafici all’inserimento della Partita IVA (#TT03935/26).
+> - Solved problem with Supervisor widgets
+> - WM - Ottimizzata chiamata WebApi di ImportWarehousePosting (#TT03888/26)
+> - WMS - Spunta Picking: Inibito cambio riga se lettura barcode restituisce un valore non valido (#TT02639/26)
+
 ### Patch 803.0036 - 21/09/2026
 
 > -	ARM - Corretta visualizzazione degli stati di workflow se soggetti a personalizzazioni (#TT03985/26)
