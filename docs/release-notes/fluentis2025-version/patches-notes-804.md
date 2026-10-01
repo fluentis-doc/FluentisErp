@@ -4,6 +4,55 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.023 - 01/10/2026
+
+> -	Aggiornata la configurazione di default del connettore IMAP
+> -	ARM - Use Google translate if no translation agent configured (#TT03424/26)
+> -	CO - comparazione riclassificazioni con dati del controlling, revisione calcolo formule quando si visualizzano i dettagli dei periodi (#TT04180/26)
+> -	FI - Comunicazione liquidazione periodica IVA: revisione della proposta trimestre in caso di IVA trimestrale (#TT04188/26).
+> -	FI - contabilizzazione chiusura automatica conti, revisione gestione centri di costo in riapertura assestamenti (#TT04227/26)
+> -	FI - corretto bug che generava un errore caricando un cespite completamente ammortizzato. Rimossa obbligatorietà del tipo deducibilità. ( #TT04019/26)
+> -	FI - Nella form di ricerca Partite è stato aggiunto il pulsante di gestione dei ‘Livelli autorizzativi’, inoltre è stato aggiunto il filtro di ricerca per il livello autorizzativo. Modifications inside form Partite can have impact on profiles (#TT03822/26)
+> -	FI - Stampa lettere di sollecito - Risolta l’anomalia di arrotondamento sui valori monetari (#TT00361/25)
+> -	Maui - risolto caso per cui all’apertura dell’applicazione mobile si verificava un’eccezione di tipo Company ID mismatch, dovuto a delle start up forms impostate per l’utente (#TT04080/26)
+> -	MAUI: Exception on Company ID mismatch (#TT04080/26)
+> -	MES - Manufacturing Execution System: corretta anomalia che, in una commessa multiprodotto, non permetteva la modifica di una commessa non esaminata se nella stessa commessa multiprodotto fosse presente una commessa esecutiva (#TT03664/26)
+> -	MES Solution - Risorse di produzione di tipo Centro di lavoro: è stato implementato un nuovo flag “Gestione UDC”: se attivato propone automaticamente, nel tabulatore Etichette, le Unità di Carico necessarie per contenere gli articoli prodotti sulla base dei parametri inseriti nell’anagrafica dell’articolo prodotto tabulatore Approvvigionamento o nel tabulatore Pesi/Dimensioni sezione Tipo UDC (#TT03783/26)
+> -	MS - AFCS. Eliminato messaggio errore per segnalazioni in setup su centri semi automatici (#TT04207/26)
+> -	MS - Costificazione commesse - dettaglio costi modificato il nome della colonna “Quantità” in “Quantità prevista” e aggiunta nuova colonna “Quantità effettiva” (#TT03663/26)
+> -	MS - Dichiarazioni di produzione: corretta l’anomalia che non permetteva il consumo di materiali gestiti a Numeri seriali a fronte di Giacenza disponibile (#TT03997/26)
+> -	MS - Generazione commesse di produzione: è possibile generare nuove Commesse di produzione di Articoli archiviati, inseriti forzatamente o antecedentemente all’archiviazione, in Ordini cliente (#TT03792/26)
+> -	MS - M.R.P.: corretta anomalia che generava ordini pianificati non necessari sulla base di disponibilità sufficienti a coprirne il fabbisogno (#TT03908/26)
+> -	MS - M.R.P.: la proposta del Reintegro scorta ora viene considerato solamente se l’articolo, nei propri Parametri MRP, ha una Politica di gestione a Scorta e il flag di Reintegro scorta minima è indicato (#TT03942/26)
+> -	MS - Pianificazione generale - Corretta anomalia che considerava errate, negli ordini pianificati di produzione, le quantità impiego di materiali alternativi presenti in distinta base (#TT03631/26)
+> -	MS - WebAPI importo ordini pianificati - corretto bug che non importava correttamente il tipo approvvigionamento del ordine (#TT04128/26)
+> -	MS - Costificazione Commesse di Produzione:
+>> - corretto il valore del costo unitario preventivo di ogni singolo livello calcolato come divisione tra il costo totale preventivo e quantità prevista;
+>> - non viene più visualizzato il costo unitario consuntivo:
+>>> - degli ordini di produzione fintanto che non viene dichiarata una quantità di semilavorato o prodotto finito da ultima fase movimentabile;
+>>> - dell’articolo della commessa di produzione fintanto che non viene dichiarata una quantità del documento di primo livello;
+>>> - della Commessa di produzione;
+>> - apportate le suddette modifiche anche nel report “Costificazione commessa” (#TT03662/26)
+> -	PM - MAUI - widget progetti - ricerca progetti, corretta casistica per cui non sempre era visibile tutta la struttura gerarchica del progetto (#TT03789/26)
+> -	PM - WEB - dichiarazione attività, risolto caso per cui il flag Fatturabile nelle Spese sostenute, una volta abilitato, non si riusciva a disabilitare (#TT03853/26)
+> -	SCS - Cambio fornitore ordine conto lavoro: ottimizzata procedura di cambio fornitore se eseguita in riga articoli (#TT04127/26).
+> -	SCS - Valorizzazione Rientro di conto lavoro: ottimizzata procedura di valorizzazione con flag attivo "movimenti per fasi standard" nei parametri iniziali di magazzino (#TT03941/26).
+> -	SD - Flag prezzo manuale: ottimizzata procedura che riporta flag di prezzo manuale da ordine cliente - picking - DDT (#TT04001/26)
+> -	SD - Pagamenti in fattura: a seguito della valorizzazione del DDT di vendita, ottimizzate modifica e inserimento di righe in tab pagamenti. Modifications inside form SalesInvoice can have impact on profiles (#TT04046/26)
+> -	SD/SCM - Valore colli: ottimizzato calcolo colli nel ciclo attivo e passivo (#TT03987/26)
+> -	SH - Chart of Accounts fix when FSLedgerAccount object is extended (#TT03465/26, #TT03996/26)
+> -	SH - Proponi dati: ottimizzato il caricamento automatico dei dati anagrafici all’inserimento della Partita IVA (#TT03935/26).
+> -	SH - MAUI - corretta possibilità di filtrare per cliente nelle varie form di ricerca (#TT03983/26)
+> -	Solved problem to refactor script for private functions
+> -	WF - in caso di attività obbligatorie nello stato del workflow, l’avanzamento di stato viene bloccato se non sono completate tutte le attività previste (#TT03615/26)
+> -	WM - Inventario quantità valorizzato - aggiunta possibilità di storicizzare a costo medio/ultimo da anagrafica articoli (#TT04014/26)
+> -	WM - Liste di trasferimento UDC: Corretta mancata movimentazione in ubicazione di partenza per UDC aggiunte successivamente (#TT04161/26)
+> -	WM - Ottimizzata chiamata WebApi di ImportWarehousePosting (#TT03888/26)
+> -	WMS - Aggiornata la visualizzazione delle giacenze disponibili in conferma picking e gestione spunta per gestire il caso in cui l’articolo selezionato non presenti alcuna giacenza (#TT03995/26)
+> -	WMS - Gestione Spunta: Corretto prelievo incrementale in UDC con articolo presente su più righe (#TT04099/26)
+> -	WMS - Spunta Picking: Inibito cambio riga se lettura barcode restituisce un valore non valido (#TT02639/26)
+> -	WMS: Conferma picking e gestione spunta: aggiunto un controllo che impedisce di utilizzare l’ubicazione di prelievo anche come ubicazione di carico qualora venga letta una seconda volta (#TT04105/26)
+
 ### Patch 804.022 - 21/09/2026
 
 > -	ARM - Corretta visualizzazione degli stati di workflow se soggetti a personalizzazioni (#TT03985/26)
@@ -36,7 +85,7 @@ sidebar_position: 1.1
 > -	ARM - Ensure Role Rights cleanup before Role deletion
 > -	Corretto il recupero del file XML da inviare a Bizlink nei casi di rigenerazione del tracciato.
 > -	MES - Manufacturing Execution System: corretta anomalia in dichiarazione di produzione che, inserito un Serial Number nel tab materiali, non riportava in automatico il Lotto associato. (#TT03616/26)
-> -	MS - AFCS. Il prelievo parziale di un componente è inibito se non c'è almeno un ordine di produzione attivo per lo stesso. (TT03865/26)
+> -	MS - AFCS. Il prelievo parziale di un componente è inibito se non c'è almeno un ordine di produzione attivo per lo stesso. (#TT03865/26)
 > -	MS - AFCS. Il tab degli errori e warnings in importazione ha ora delle colonne che permettono di filtrare in base al tipo di messaggio (#TT03473/26)
 > -	MS - AFCS. Ora sono possibili i prelievi parziali anche da magazzini alternativi. (#TT03786/26)
 > -	MS - Parametri MRP articolo: corretta la visualizzazione di alcune informazioni nell’elenco presente nel tabulatore Parametri di Acquisto/Conto lavoro. (#TT03755/26).
@@ -47,7 +96,7 @@ sidebar_position: 1.1
 > -	Risolto problema per Fiscalizzazione Croata per certificato non valido e estrazione info da FormattedNumber
 > -	SCS - Gestione conto logistico: Estesa possibilità di inserire le proprietà legate al Conto (Account) da object navigator su form “evasione da ordini” (#TT03752/26).
 > -	SD - Modifica della logica di esportazione fatture elettroniche xml Localizzazione San Marino. Non viene più letto, nella tabella Aliquote e modalità IVA, il flag Repubblica di S. Marino (obsoleto). Per la gestione dell’IVA monofase verrà letto unicamente l’ISO code della nazione connessa ai codici iva (SM) e nel caso di IVA monofase a valore fisso il campo Valore fisso.(#TT03814/26)
-> -	SD - In sales invoice for croatian localization, removed POS register field requirement when using Fiscalization button. Now data is taken from the formatted number, that must be structured like invoiceN/N/N or invoiceN-N-N (TT03751/26)
+> -	SD - In sales invoice for croatian localization, removed POS register field requirement when using Fiscalization button. Now data is taken from the formatted number, that must be structured like invoiceN/N/N or invoiceN-N-N (#TT03751/26)
 > -	SH - MAUI - calendario generale, reso maggiormente evidente il mese su cui si sta lavorando, in modalità schermo verticale ed orizzontale (#TT03600/26)
 > -	WM - Duplicazione Articoli: Ottimizzata procedura su tab Pesi/dimensioni - sezione Volume (#TT03768/26).
 > -	WM - Lista Prelievo/Trasferimento UDC: Disabilitato controllo su UDC scaricate in Spunta ed escluse le righe UDC con quantità zero. (#TT03898/26)
@@ -75,7 +124,7 @@ sidebar_position: 1.1
 > -	SCM - Object navigator: estesa proprietà a standard per visualizzare anno e numero di commessa per gli articoli in conto lavoro (#TT03702/26).
 > -	SD - Ordini clienti: ottimizzata procedura creazione nuovo ordine cliente da ribbon menù. (#TT03758/26)
 > -	SD - Corretta valorizzazione del campo colli nei DDT e Fatture di Vendita. (#TT03759/26)
-> -	SH - Consider verticalizations for context menu object forms (TT00931/26)
+> -	SH - Consider verticalizations for context menu object forms (#TT00931/26)
 > -	WM - Gestione UDC - Rollback carico: Corretto controllo su segnalazione di produzione. (#TT03503/26)
 > -	WM - Picking - Generazione DDT/Fattura: Rivisti controlli e relativi messaggi di errore pre-esecuzione. (#TT03620/26)
 > -	WM - Valorizzazione distinta base: modificato riferimento dell’articolo includendo la classe. (#TT03722/26)
@@ -177,8 +226,8 @@ Regole applicate:
 
 ### Patch 804.0011 - 06/08/2026
 
-> -	ARM - Fix JSON schema generation for one-to-one import/export node(TT03295/26)
-> -	ARM - Handle null SQL query parameters (TT03191/26)
+> -	ARM - Fix JSON schema generation for one-to-one import/export node(#TT03295/26)
+> -	ARM - Handle null SQL query parameters (#TT03191/26)
 > -	CRM - campagne marketing, rese visibili colonne relative a Data promemoria, Note promemoria, data creazione lead, marketer referente, prossimo utente. (#TT03250/26)
 > -	Crm - fix sending additional information to api
 > -	CRM - inserimento appuntamento a calendario da Visit report, risolto caso specifico in cui si verificava un’eccezione in presenza di un calendario senza nome e date inizio-fine (#TT03484/26)
@@ -194,12 +243,12 @@ Regole applicate:
 > -	SCM\SD: PriceManagementPurchaseDiscountCategory and PriceManagementSalesDiscountCategory -increase Code dimension. Modifications inside forms Discount category association and Policies Discount Definition can have impact on profiles. (#TT01270/26)
 > -	SD - FE SM modification for Vat registration code logic(#TT03493/26).
 > -	SD - Ordini clienti: ottimizzata esplosione Distinta Base su riga articoli (#TT02610/26)
-> -	SD - Scarichi di magazzino, revisione valorizzazione tabella della struttura costi (TT02058/26)
+> -	SD - Scarichi di magazzino, revisione valorizzazione tabella della struttura costi (#TT02058/26)
 > -	SD - Scarico mazzino: Implementata scarico DDT di lotti e serial number a posteriori rispetto all'emissione Fattura di vendita (#TT03462/26)
 > -	SD - Storno DDT e relativa valorizzazione: modificata logica di storno DDT con quantità negative considerando anche disponibilità di lotti e serial number (#TT03298/26)
 > -	SD - evasione progetti nelle offerte, corretto ordinamento righe progetto nell’help di evasione in modo che rispetti l’ordine delle wbs. (#TT03318/26)
-> -	SH - Automatic refresh of dashboards/pivots (TT04763/24)
-> -	WM - Correzione della logica di filtraggio per codice articolo nel report Inventario Fisico Valutato in presenza del check Lotti (TT03401/26).
+> -	SH - Automatic refresh of dashboards/pivots (#TT04763/24)
+> -	WM - Correzione della logica di filtraggio per codice articolo nel report Inventario Fisico Valutato in presenza del check Lotti (#TT03401/26).
 > -	WM - Piani di Carico: Corretta unità di misura del volume incoerente in preparazione piano di carico. (#TT03386/26)
 > -	WM - Piani di Carico: Corretto filtro Zona Consegna nel tab Ordini Clienti. Modifications inside LoadPlan object form can have impact on profiles. (#TT03387/26)
 > -	WM - Piani di Carico: modificando la quantità articoli nella scheda ordini clienti ora riporta la modifica nella scheda Preparazione. (#TT03384/26)
