@@ -4,6 +4,24 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.024 - 05/10/2026
+
+> -	ARM - Gestione Cicli: Errore chiave duplicata in workflow con script (#TT04246/26)
+> -	CO - creazione budget per centri di costo, (#TT040760/26)
+> -	CO - nella procedura di Contabilizzazione rimanenze all’interno delle chiusure infrannuali sono stati aggiunti i parametri di ripresa da anagrafica articolo, storicizzazione inventario, da Storicizzazione. Modifications inside form accounting for inventories can have impact on profiles (#TT04214/26)
+> -	FI - Corretti i parametri di contabilizzazione relativi ai pagamenti dei compensi (#TT04081/26)
+> -	MES - Dichiarazioni di produzione: corretta l’anomalia che non permetteva la forzatura manuale di fine attività di un dipendente (#TT04201/26)
+> -	MS - AFCS: le qualifiche indicate sulle macchine prevalgono su quelle dei rispettivi centri di lavoro (#TT04203/26)
+> -	MS - Sequenza fasi: risolta l’anomalia relativa ai filtri avanzati delle griglie che non riportavano tutti i valori presenti (#TT03816/26)
+> -	SCM - Progetto in DDT di acquisto: esclusa compilazione manuale del riferimento al progetto se questo risulta chiuso alla data del documento (#TT04091/26).
+> -	SCS - DDT di Consegna: corretta l’anomalia che proponeva, nei materiali da consegnare, la fase standard prevista per il rientro e non quella per la consegna (#TT03434/25)
+> -	SH - Calcolo numero colli: ottimizzata procedura di calcolo su numero articoli per unità di carico, numero colli (articoli presenti in un collo/colli per formare l’articolo), tipo UDC in Confezionamento (#TT04239/26).
+> -	Solved bug to load script for some forms (#TT04146/26)
+> -	Solved problem with enum list in bizlink excel import
+> -	Solved problem with Supervisor widget localization
+> -	WMS - Ricevimento Merce: Corretto aggiornamento quantità alternativa in sovraccarico da UDC (#TT04132/26)
+> -	WMS - Ricevimento Merce: Visualizzazione data carico in form (#TT04249/26)
+
 ### Patch 804.023 - 01/10/2026
 
 > -	Aggiornata la configurazione di default del connettore IMAP
