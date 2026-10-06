@@ -9,22 +9,21 @@ Svaka nova obrada čuva rezultat izračuna pod jedinstvenim **Brojem**, koji sis
 
 ## Specifična polja
 
-**Tip / Opis toka**  
-Preuzima se iz tabele *Tipovi tokova*.
-**Od datuma / Do datuma**  
-Period koji se koristi za filtriranje podataka prema pravilima svakog pojedinačnog tipa toka.
-**Omogući**  
-Oznaka koja određuje da li će odgovarajući tip toka biti uključen u obračun.
-**Privremena knjiženja**  
-Određuje da li će se u obračun uključiti podaci iz računovodstvenih knjiženja sa statusom *Privremeno*.
-**Nenaplativo**  
-Određuje da li će se u obračun uključiti stavke označene kao nenaplative.
-**Koristi preostalu količinu**  
-Omogućava obračun narudžbina na osnovu preostale količine koja tek treba da bude isporučena.
-**Koristi trenutnu raspoloživost**  
-Uključuje vrednosne papire u portfelju koji nisu nenaplaćeni i čiji je rok dospeća nakon današnjeg datuma, prikazujući ih kao raspoloživa sredstva na današnji datum, iako će knjiženje biti izvršeno tek nakon naplate.
-**Koristi dospeće**  
-Omogućava uključivanje i faktura sa načinom plaćanja *po prijemu*.
+**Tip / Opis toka**  Preuzima se iz tabele *Tipovi tokova*.
+
+**Od datuma / Do datuma**  Period koji se koristi za filtriranje podataka prema pravilima svakog pojedinačnog tipa toka.
+
+**Omogući**  Oznaka koja određuje da li će odgovarajući tip toka biti uključen u obračun.
+
+**Privremena knjiženja**  Određuje da li će se u obračun uključiti podaci iz računovodstvenih knjiženja sa statusom *Privremeno*.
+
+**Nenaplativo**  Određuje da li će se u obračun uključiti stavke označene kao nenaplative.
+
+**Koristi preostalu količinu**  Omogućava obračun narudžbina na osnovu preostale količine koja tek treba da bude isporučena.
+
+**Koristi trenutnu raspoloživost**  Uključuje vrednosne papire u portfelju koji nisu nenaplaćeni i čiji je rok dospeća nakon današnjeg datuma, prikazujući ih kao raspoloživa sredstva na današnji datum, iako će knjiženje biti izvršeno tek nakon naplate.
+
+**Koristi dospeće** Omogućava uključivanje i faktura sa načinom plaćanja *po prijemu*.
 
 :::danger PAŽNJA
 
