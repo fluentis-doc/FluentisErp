@@ -7,6 +7,7 @@ sidebar_position: 1.1
 ### Patch 804.024 - 05/10/2026
 
 > -	ARM - Gestione Cicli: Errore chiave duplicata in workflow con script (#TT04246/26)
+> -	BIZ - Solved problem with enum list in excel import
 > -	CO - creazione budget per centri di costo, (#TT040760/26)
 > -	CO - nella procedura di Contabilizzazione rimanenze all’interno delle chiusure infrannuali sono stati aggiunti i parametri di ripresa da anagrafica articolo, storicizzazione inventario, da Storicizzazione. Modifications inside form accounting for inventories can have impact on profiles (#TT04214/26)
 > -	FI - Corretti i parametri di contabilizzazione relativi ai pagamenti dei compensi (#TT04081/26)
@@ -16,9 +17,8 @@ sidebar_position: 1.1
 > -	SCM - Progetto in DDT di acquisto: esclusa compilazione manuale del riferimento al progetto se questo risulta chiuso alla data del documento (#TT04091/26).
 > -	SCS - DDT di Consegna: corretta l’anomalia che proponeva, nei materiali da consegnare, la fase standard prevista per il rientro e non quella per la consegna (#TT03434/25)
 > -	SH - Calcolo numero colli: ottimizzata procedura di calcolo su numero articoli per unità di carico, numero colli (articoli presenti in un collo/colli per formare l’articolo), tipo UDC in Confezionamento (#TT04239/26).
-> -	Solved bug to load script for some forms (#TT04146/26)
-> -	Solved problem with enum list in bizlink excel import
-> -	Solved problem with Supervisor widget localization
+> -	SH - Solved bug to load script for some forms (#TT04146/26)
+> -	SUP - Solved problem with Supervisor widget localization
 > -	WMS - Ricevimento Merce: Corretto aggiornamento quantità alternativa in sovraccarico da UDC (#TT04132/26)
 > -	WMS - Ricevimento Merce: Visualizzazione data carico in form (#TT04249/26)
 
@@ -65,16 +65,16 @@ sidebar_position: 1.1
 > -	WF - in caso di attività obbligatorie nello stato del workflow, l’avanzamento di stato viene bloccato se non sono completate tutte le attività previste (#TT03615/26)
 > -	WM - Inventario quantità valorizzato - aggiunta possibilità di storicizzare a costo medio/ultimo da anagrafica articoli (#TT04014/26)
 > -	WM - Liste di trasferimento UDC: Corretta mancata movimentazione in ubicazione di partenza per UDC aggiunte successivamente (#TT04161/26)
-> -	WM - Ottimizzata chiamata WebApi di ImportWarehousePosting (#TT03888/26)
-> -	WMS - Aggiornata la visualizzazione delle giacenze disponibili in conferma picking e gestione spunta per gestire il caso in cui l’articolo selezionato non presenti alcuna giacenza (#TT03995/26)
+> -	WM - WebApi ImportWarehousePosting: Corretta importazione movimenti di scario con lotti a prelievo manuale come se fossero fifo. (#TT03888/26)
+> -	WMS - Spunta Picking: Corretta visualizzazione giacenze disponibili per articoli senza giacenza. (#TT03995/26)
 > -	WMS - Gestione Spunta: Corretto prelievo incrementale in UDC con articolo presente su più righe (#TT04099/26)
 > -	WMS - Spunta Picking: Inibito cambio riga se lettura barcode restituisce un valore non valido (#TT02639/26)
-> -	WMS: Conferma picking e gestione spunta: aggiunto un controllo che impedisce di utilizzare l’ubicazione di prelievo anche come ubicazione di carico qualora venga letta una seconda volta (#TT04105/26)
+> -	WMS - Spunta Picking: In lettura barcode dell'ubicazione non viene impostata l'ubicazione di carico se coincide con quella di scarico. (#TT04105/26)
 
 ### Patch 804.022 - 21/09/2026
 
 > -	ARM - Corretta visualizzazione degli stati di workflow se soggetti a personalizzazioni (#TT03985/26)
-> -	Bizlink- Ottimizzazione del salvataggio degli schemi di importazione Excel customizzati (#TT03944/26 / #TT03784/26)
+> -	BIZ - Ottimizzazione del salvataggio degli schemi di importazione Excel customizzati (#TT03944/26 / #TT03784/26)
 > -	CO - revisione calcolo comparazione riclassificazioni su dati del controlling con modelli che hanno nodi di tipo ‘somma dei figli’ con formula null (#TT03629/26)
 > -	CPM - conto in marginalità di vendita prodotto (#TT03252/26)
 > -	CPQ - Corretto problema di duplicazione distinte nella configurazione anche quando non richiesto. Corretto problema di duplicazione di alcuni tipi di Extra Data. Risolto problema di generazione Ri. Ba. per prototipi figli in configurazione.
@@ -101,7 +101,8 @@ sidebar_position: 1.1
 ### Patch 804.0021 - 11/09/2026
 
 > -	ARM - Ensure Role Rights cleanup before Role deletion
-> -	Corretto il recupero del file XML da inviare a Bizlink nei casi di rigenerazione del tracciato.
+> -	BIZ - Corretto il recupero del file XML da inviare a Bizlink nei casi di rigenerazione del tracciato.
+> -	BIZ - Quando, per lo stesso documento (fattura di vendita o integrazione fattura di acquisto), viene generato più volte il file XML destinato a Bizlink, il sistema ora utilizza il file presente nella DocumentAttachment anziché quello registrato nel log, garantendo l'invio della versione più aggiornata del documento. (#TT03858/26)
 > -	MES - Manufacturing Execution System: corretta anomalia in dichiarazione di produzione che, inserito un Serial Number nel tab materiali, non riportava in automatico il Lotto associato. (#TT03616/26)
 > -	MS - AFCS. Il prelievo parziale di un componente è inibito se non c'è almeno un ordine di produzione attivo per lo stesso. (#TT03865/26)
 > -	MS - AFCS. Il tab degli errori e warnings in importazione ha ora delle colonne che permettono di filtrare in base al tipo di messaggio (#TT03473/26)
@@ -109,7 +110,6 @@ sidebar_position: 1.1
 > -	MS - Parametri MRP articolo: corretta la visualizzazione di alcune informazioni nell’elenco presente nel tabulatore Parametri di Acquisto/Conto lavoro. (#TT03755/26).
 > -	PM - WEB - planner, risolto caso per cui veniva mostrato nel calendario delle risorse anche la root per l'intera durata configurata nella tab Pianificazione servizio (#TT03735/26)
 > -	PM - webapi importazione/update interventi - risolto caso per cui impostando una riga di progetto in testata intervento, veniva importato solo il progetto ma non la riga di progetto. In update intervento, risolto caso per cui dava messaggio di riga ID servizio non trovato nel caso di riga servizi con sconti. (#TT03351/26)
-> -	Quando, per lo stesso documento (fattura di vendita o integrazione fattura di acquisto), viene generato più volte il file XML destinato a Bizlink, il sistema ora utilizza il file presente nella DocumentAttachment anziché quello registrato nel log, garantendo l'invio della versione più aggiornata del documento. (#TT03858/26)
 > -	QY - Reclami e Non conformità: sono stati creati i reports per elencare i soggetti coinvolti nei rispettivi documenti.
 > -	Risolto problema per Fiscalizzazione Croata per certificato non valido e estrazione info da FormattedNumber
 > -	SCS - Gestione conto logistico: Estesa possibilità di inserire le proprietà legate al Conto (Account) da object navigator su form “evasione da ordini” (#TT03752/26).
@@ -128,15 +128,15 @@ sidebar_position: 1.1
 ### Patch 804.0020 - 07/09/2026
 
 > -	ARM - Ensure user form is read-only for non-admins
+> -	BIZ - Possibilità di modificare un documento di BizLink (#TT05240/25)
 > -	CPM - per la solution CPM, modifiche agli elementi di margine per aggiungere la ‘item nature’ e i link a query, datasource e script. Revisione della procedura di calcolo e della form di visualizzazione dei risultati dei margini (nuovi filtri, nuove colonne, griglia con i dettagli). (#TT03252/26)
 > -	CPQ - Importazioni Di.Ba. Nelle configurazioni principali. Aperura Di-Ba. Al termine di una configurazione.
 > -	FI - causali di contabilità, aggiunto flag di esclusione della Lipe (campo imponibile VP2). Il flag è attivo solo per causali con tipo movimento vendita (codici 11, 12, 13, 15, 18, 21, 29). Modifications inside form posting template can have impact on profiles.(#TT03515/26)
 > -	FI - nuove api di contabilizzazione fatture di acquisto e vendita. (#TT01389/26)
 > -	MES - Rilascio Ordini di produzione: sono state create le API operations per eseguire le procedure di Rilascio Ordini di produzione (ReleaseProductionOrders) e relativo Ripristino (RollbackProductionOrder). (#TT03613/26)
-> -	Modifica apportata: Aggiornamento massivo della "Data di fine validità" per clienti con lo stesso agente. (#TT03724/26)
+> -	SD - Assegnazione Agenti: Aggiornamento massivo della "Data di fine validità" per clienti con lo stesso agente. (#TT03724/26)
 > -	MS - M.R.P.: risolta l’eccezione che si verificava durante l’elaborazione di specifici articoli gestiti per Sito di produzione, in presenza di Siti produttivi non gestiti. (#TT03673/26)
 > -	PM - Descrizione data storno fattura di acconto: aggiornata la descrizione della riga di storno, con data nel formato GG/MM/AAAA (#TT03667/26)
-> -	Possibilità di modificare un documento di BizLink (#TT05240/25)
 > -	PR - corretto il calcolo delle scadenze nel cashflow per purchase demand, purchase order, sales order, subcontractor order, subcontractor return quando le condizioni di pagamento prevedono più righe con percentuale.(#TT03739/26)
 > -	Risolto problema di lettura della configurazione per HubSanMarino
 > -	SCM - Object navigator: estesa proprietà a standard per visualizzare anno e numero di commessa per gli articoli in conto lavoro (#TT03702/26).
