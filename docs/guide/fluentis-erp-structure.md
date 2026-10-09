@@ -66,7 +66,7 @@ Controllo di **commesse, pianificazione, avanzamento e qualità** con integrazio
 Ottimizzazione delle **risorse e capacità produttiva** per garantire consegne puntuali e riduzione costi.  
 
 - 📦 [DDMRP](../ddmrp/ddmrp-intro)  
-Gestione della** domanda e buffer di produzione** con metodologia DDMRP per ottimizzare scorte e flussi.  
+Gestione della **domanda e buffer di produzione** con metodologia DDMRP per ottimizzare scorte e flussi.  
 
 - 🚚 [Logistica](../logistics/logistics-intro)  
 Gestione integrata di **magazzino, lotti, inventari, spedizioni e picking** per efficienza operativa totale.  
