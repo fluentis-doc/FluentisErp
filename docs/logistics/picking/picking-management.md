@@ -32,10 +32,6 @@ oppure tramite
 
 **Stato evasione**: può assumere i seguenti valori: *Non evaso*, *Evaso*, *Parzialmente evaso* o *Forzatamente evaso*; questo stato si riferisce allo stato di evasione delle singole righe, quindi ad esempio, se tramite la gestione spunta viene evasa anche una singola riga lo **Stato evasione** passerà da *Non evaso* a *Parzialmente evaso*.    
 
-:::note Nota
-Da notare che la colonna *Documento* presente in [Ricerca picking](/docs/logistics/picking/search-picking), si riferisce allo stato del picking e non a quello delle righe, quindi passerà in stato evaso solo quando sarà stato creato il DDT o la fattura.
-:::
-
 #### Pulsante specifico
 
 > **Evasione da ordine**: permette di inserire gli articoli all'interno del picking evadendo un ordine cliente. Premendo il pulsante si aprirà una maschera dove è possibile filtrare gli ordini cliente relativi al cliente in questione. E' quindi possibile evadere totalmente o parzialmente un intero ordine o una riga.
