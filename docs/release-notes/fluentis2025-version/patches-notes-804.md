@@ -141,8 +141,8 @@ sidebar_position: 1.1
 > -	Risolto problema di lettura della configurazione per HubSanMarino
 > -	SCM - Object navigator: estesa proprietà a standard per visualizzare anno e numero di commessa per gli articoli in conto lavoro (#TT03702/26).
 > -	SD - Ordini clienti: ottimizzata procedura creazione nuovo ordine cliente da ribbon menù. (#TT03758/26)
-> -	SD - Corretta valorizzazione del campo colli nei DDT e Fatture di Vendita. (#TT03759/26)
-> -	SH - Consider verticalizations for context menu object forms (#TT00931/26)
+> -	SD - DDT e Fatture di Vendita: Migliorata gestione del campo colli: reimpostando il valore in riga a 0 viene ricalcolato al salvataggio mentre se messo a blank o a qualunque altro valore rimane tale. (#TT03759/26)
+> -	SH - Pannelli contestuali: apertura delle form ora considera la verticalizzazione. (#TT00931/26)
 > -	WM - Gestione UDC - Rollback carico: Corretto controllo su segnalazione di produzione. (#TT03503/26)
 > -	WM - Picking - Generazione DDT/Fattura: Rivisti controlli e relativi messaggi di errore pre-esecuzione. (#TT03620/26)
 > -	WM - Valorizzazione distinta base: modificato riferimento dell’articolo includendo la classe. (#TT03722/26)
