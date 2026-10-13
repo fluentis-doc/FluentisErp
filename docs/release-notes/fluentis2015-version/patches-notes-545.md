@@ -6,17 +6,17 @@ sidebar_position: 1
 
 ### Patch 545.1-0129 - 06/08/2026
 
-> - FI - revisione gestione pulsante creazione file Intrastat da ricerca intra1 (#TT02355/26)  
-> - FI - Gestione registrazioni provvisorie - F2015 (#TT02618/26, TT02931/25)  
-> - PR - Extend the pf_tipFisier column PFTF_Extensie to 4 chars (#TT02586/26)  
+> - FI - Revisione gestione pulsante creazione file Intrastat da ricerca intra1 (#TT02355/26)  
+> - FI - Gestione registrazioni provvisorie (#TT02618/26, TT02931/25)  
+> - PR - Estensione colonna tabella pf_tipFisier a 4 caratteri (#TT02586/26)  
 
 ### Patch 545.1-0128 - 04/05/2026
 
-> - BZ - importazione Bizlink, è possibile importare listino con prezzo per quantità nei listini cliente (#TT00175/26)
-> - CO - Errore chiusura infrannuale (#TT05542/25)
-> - CO - revisione elaborazione periodi, esclusione delle righe con date competenza nulle (#TT00971/26)
+> - BZ - Importazione Bizlink, è possibile importare listino con prezzo per quantità nei listini cliente (#TT00175/26)
+> - CO - Risoluzione errore chiusura infrannuale (#TT05542/25)
+> - CO - Revisione elaborazione periodi, esclusione delle righe con date competenza nulle (#TT00971/26)
 > - FI - Intrastat - in caso di importo 0 il raggruppamento mantiene il campo del segno impostato a 1 (#TT00417/26)
-> - PR - Change in SDD file creation (#TT05663/25)
+> - PR - Cambiamentivari nella creazione file SDD (#TT05663/25)
 > - SD - Agenti: Abilitata la gestione di provvigioni a valore e in percentuale per lo stesso agente (#TT00102/26)
 
 
@@ -829,7 +829,7 @@ sidebar_position: 1
 
 Revisione evasione ordine per ripristino iva ordinaria nel caso in cui non ci sia dichiarazione di intento valido alla data documento 
 
-> - FI - Nella creazione autofatture di vendita da registrazione contabile, valorizzazione della nota di dettaglio inserita in riga iva nella descrizione articolo riportata in fattura(ref. ticket 510/23) 
+> - FI - Nella creazione autofatture di vendita da registrazione contabile, valorizzazione della nota di dettaglio inserita in riga iva nella descrizione articolo riportata in fattura (#TT00510/23) 
 
 > - WM - Risolto problema di visualizzazione Iso Code nella Descrizione in Lingua dell'articolo (#TT00465/23) 
 
@@ -2099,7 +2099,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 ### Patch 545.1-0027- 22/10/2021 
 
-> - Sistemato errore apertura DDT creati dalle liste di trasferimento UDC (ref. Ticket #TT02777/21) 
+> - Sistemato errore apertura DDT creati dalle liste di trasferimento UDC (#TT02777/21) 
 
 > - SD - sales invoice accounting- nella gestione commissioni, revisione contabilizzazione fatture di vendita per gestione tipo calcolo provvigione dalle impostazioni del singolo documento, se non impostate dall’anagrafica agente 
 
@@ -2141,7 +2141,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 > - MPS - Nel caso di modifica della Quantità delle righe di un ordine cliente vengono modificate, nella Commessa collegata, la Quantità e la Quantità alternativa, in base al fattore di conversione o dello stesso importo se il fattore di conversione non esiste (#TT02546/21) 
 
-> - SD - nella tabella delle fatture di vendita, creazione nuovo campo alfanumerico per memorizzare i riferimenti fatture collegate, che viene ora visualizzato e utilizzato al posto del precedente campo numerico (ref. ticket #TT02709/21) 
+> - SD - nella tabella delle fatture di vendita, creazione nuovo campo alfanumerico per memorizzare i riferimenti fatture collegate, che viene ora visualizzato e utilizzato al posto del precedente campo numerico (#TT02709/21) 
 
 > - M.P.S. - F.C.S.- Gestione del blocco degli ordini tassativi (#TT02477/21) 
 
@@ -2180,7 +2180,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 > - FI - calcolo provvigioni in contabilità revisione per gestione commissioni in divisa. Se l’utente non imposta il filtro per divisa viene creato un compenso unico nella divisa della società, utilizzando il controvalore euro maturato per le provvigioni indipendentemente dalla divisa originale. Se si filtra per divisione, invece, viene creato un compenso nella divisa impostata, applicando il cambio alla data compenso oppure utilizzando il controvalore euro alla data documento (cioè il vecchio controvalore euro della commissione) se è stato anche impostato il flag ‘Conversione provvigioni usando il cambio alla data documento’ 
 
-> - SD - Disabled button of creation invoice from SalesJobOrder to prevent double click(ref. Ticket 2436/21) 
+> - SD - Disabled button of creation invoice from SalesJobOrder to prevent double click (#TT002436/21) 
 
 > - FI - Importazione file xml SDI- errato valore iva (#TT00358/21) 
 
@@ -2330,7 +2330,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 > - SH - Fast start- Revisione numerazione fatture di vendita in localizzazione croata 
 
-> - SD - Optimization SalesOrderItem(ref. Ticket #TT02213/21) 
+> - SD - Optimization SalesOrderItem (#TT02213/21) 
 
 > - Scm - Purchase delivery note- TT02119/21 
 
@@ -2376,7 +2376,7 @@ Il costo macchina è la somma dei costi macchina e dei costi di attrezzaggio mac
 
 > - SD - Proposta data creazione in Duplica e manutenzione Listini di Vendita (Riferimento Ticket- #TT02147/21) 
 
->> - Fix nella procedura di evasione progetti in ordini clienti con molti dati inseriti al livello del database(rif. TT02123/21) 
+>> - Fix nella procedura di evasione progetti in ordini clienti con molti dati inseriti al livello del database (#TT02123/21) 
 
 >> - Per i clienti con dichiarazione di intento quando viene indicato il progetto nella riga servizio di un intervento rimane il codice IVA della dichiarazione e non viene impostato quello del progetto (#TT02087/21) 
 
@@ -2472,7 +2472,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - SCM - Se nei parametri dei DDT di acquisto appongo il flag “Uso articolo fornitore”, allora avrò la colonna “Articolo fornitore” negli articoli del DDT di acquisto, come negli altri documenti (#TT01752/21)”. 
 
-> - SD - Ordini Cliente- Lentezza Evasione Progetti in Ordine Cliente- Nell'evasione Progetti in Ordine Cliente è stata migliorata la velocità di visualizzazione dei Progetti (rif. 2459/20) 
+> - SD - Ordini Cliente- Lentezza Evasione Progetti in Ordine Cliente- Nell'evasione Progetti in Ordine Cliente è stata migliorata la velocità di visualizzazione dei Progetti (#TT02459/20) 
 
 > - WM - Il Navigatore Articoli riporta correttamente la Data Merce Pronta inserita negli Ordini clienti (#TT01191/21) 
 
@@ -2480,7 +2480,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - SD - Fix SalesPriceList-change status error. 
 
-> - SD - SalesInvoice-Allow ExtraDataItem modification when accounted (ref. Ticket #TT01744/21) 
+> - SD - SalesInvoice-Allow ExtraDataItem modification when accounted (#TT01744/21) 
 
 > - CO - Comparazione riclassificazioni- Revisione gestione righe con tipo importo 'Iniziale' o 'Finale' in visualizzazione con/senza dettagli di periodo (#TT01892/21) 
 
@@ -3063,7 +3063,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - FI - Creazione file certificazione ritenute 2021, revisione ordinamento righe 
 
-> - SD - Calcolo Pesi e Colli- Il calcolo è dato dal peso e volume dell'anagrafica dell'articolo moltiplicata per la quantità espressa nella UM gestionale dell'articolo ( potrebbe essere la UM principale dei documenti o la UM alternativa o nessuna delle due); Se le UM utilizzate nel documento non sono la UM gestionale dell'articolo viene dato un messaggio che il calcolo del peso non sarà completo (ref. ticket #TT00592/21) 
+> - SD - Calcolo Pesi e Colli- Il calcolo è dato dal peso e volume dell'anagrafica dell'articolo moltiplicata per la quantità espressa nella UM gestionale dell'articolo ( potrebbe essere la UM principale dei documenti o la UM alternativa o nessuna delle due); Se le UM utilizzate nel documento non sono la UM gestionale dell'articolo viene dato un messaggio che il calcolo del peso non sarà completo (#TT00592/21) 
 
 > - ARM- fix duplicated rows in ARM.[GLB_BizLinkUserConnections] (#TT00653/21) 
 
@@ -3161,7 +3161,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - MES - fix grid materials on opening production order in read only 
 
-> - SD - Duplica e Manutenzione Listini di Vendita - Aprendo due procedure Duplica e Manutenzione Listini di Vendita, i campi del filtro di ricerca vengono correttamente visualizzati (ref. ticket 475/21) 
+> - SD - Duplica e Manutenzione Listini di Vendita - Aprendo due procedure Duplica e Manutenzione Listini di Vendita, i campi del filtro di ricerca vengono correttamente visualizzati (#TT00475/21) 
 
 > - SD - SalesInvoiceMaturity-fix Total 0 problem(ref ticket 442/21) 
 
@@ -3211,7 +3211,7 @@ Corretta creazione attività dichiarata come conferma del periodo richiesto come
 
 > - FI - stampa liquidazione iva periodica per aziende con tipi attività iva multipli, revisione totali finali 
 
-> - SD - Anagrafica agenti- dettaglio provvigioni- risolto exception all’inserimento della data inizio validità del dettaglio provvigioni (ref. Ticket 528/21) 
+> - SD - Anagrafica agenti- dettaglio provvigioni- risolto exception all’inserimento della data inizio validità del dettaglio provvigioni (#TT00528/21) 
 
 > - SH - add virtual for custom purpose in reversal window 
 

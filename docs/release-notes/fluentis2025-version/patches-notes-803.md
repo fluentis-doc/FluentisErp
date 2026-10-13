@@ -6,28 +6,28 @@ sidebar_position: 1.2
 
 ### Patch 803.0038 - 13/10/2026
 
-> -	FI - contabilizzazione assestamenti con singola registrazione impostata, revisione gestione link tra movimenti analitica e giornale. (#TT02507/26, #TT04169/26)
+> -	FI - contabilizzazione assestamenti con singola registrazione impostata, revisione gestione link tra movimenti analitica e giornale (#TT02507/26, #TT04169/26)
 > -	FI - Corretti i parametri di contabilizzazione relativi ai pagamenti dei compensi (#TT04081/26)
-> -	FI - il salvataggio compensi professionisti con flag di calcolo manuale non aggiorna più erroneamente l’importo della ritenuta appena modificata. (#TT04123/26)
+> -	FI - il salvataggio compensi professionisti con flag di calcolo manuale non aggiorna più erroneamente l’importo della ritenuta appena modificata (#TT04123/26)
 > -	FI - Importazione da DocFinance, revisione gestione riferimento al numero documento nel caso di apertura di una nuova partita (#TT04247/26)
-> -	FI - Importazione registrazioni da DocFinance, la data scadenza inserita nel pagamento importato ora corrisponde alla data scadenza della partita di riferimento. (#TT04071/26)
-> -	MES - Dichiarazioni di produzione - WEBAPI Import: correzione anomalia all'indicazione della macchina non facente parte del centro di lavoro previsto. (#TT03454/26, #TT03666/26)
-> -	MES - Manufacturing Execution System: Corretta anomalia che creava erroneamente ordini pianificati di produzione nonostante giacenza sufficiente. (#TT03659/26).
-> -	MES - Manufacturing Execution System: Corretta anomalia che non permetteva la stampa definitiva di un foglio di lavoro di una fase esterna. (#TT04040/26)
+> -	FI - Importazione registrazioni da DocFinance, la data scadenza inserita nel pagamento importato ora corrisponde alla data scadenza della partita di riferimento (#TT04071/26)
+> -	MES - Dichiarazioni di produzione - WEBAPI Import: correzione anomalia all'indicazione della macchina non facente parte del centro di lavoro previsto (#TT03454/26, #TT03666/26)
+> -	MES - Manufacturing Execution System: Corretta anomalia che creava erroneamente ordini pianificati di produzione nonostante giacenza sufficiente (#TT03659/26)
+> -	MES - Manufacturing Execution System: Corretta anomalia che non permetteva la stampa definitiva di un foglio di lavoro di una fase esterna (#TT04040/26)
 > -	MS - Costificazione Commesse di Produzione:
 >> - gestito il costo dei materiali non previsti;
 >> - considerazione del costo effettivo della lavorazione esterna nel totale costo effettivo di lavorazione del documento.
 > -	Risolto problema concorrenza esecuzione eventi da schedulatore e da UI #TT04184/26
-> -	SCM - Calcolo CONAI: ottimizzato calcolo nella procedura di valorizzazione DDT di Acquisto (#TT04208/26).
-> -	SCS - Rientro Conto Lavoro: È ora possibile rimuovere il flag “Caricato” esclusivamente quando questo è stato impostato manualmente dall’utente. La rimozione non è consentita nel caso in cui il carico sia supportato da una registrazione di magazzino, al fine di garantire la coerenza e l’integrità dei dati di movimentazione. (#TT04119/26)
-> -	WM - LoadPlan: Risolta anomalia che, nei piani di carico, tab preparazione piani di carico, non permetteva di salvare correttamente modifiche sulla quantità nella colonna articoli. (#TT04102/26)
+> -	SCM - Calcolo CONAI: ottimizzato calcolo nella procedura di valorizzazione DDT di Acquisto (#TT04208/26)
+> -	SCS - Rientro Conto Lavoro: È ora possibile rimuovere il flag “Caricato” esclusivamente quando questo è stato impostato manualmente dall’utente. La rimozione non è consentita nel caso in cui il carico sia supportato da una registrazione di magazzino, al fine di garantire la coerenza e l’integrità dei dati di movimentazione (#TT04119/26)
+> -	WM - LoadPlan: Risolta anomalia che, nei piani di carico, tab preparazione piani di carico, non permetteva di salvare correttamente modifiche sulla quantità nella colonna articoli (#TT04102/26)
 > -	WM - Ottimizzata anteprima stampa di Inventario Quantità Valorizzato (#TT04234/26)
 
 ### Patch 803.0037 - 01/10/2026
 
 > - Aggiornata la configurazione di default del connettore IMAP
 > - CO - comparazione riclassificazioni con dati del controlling, revisione calcolo formule quando si visualizzano i dettagli dei periodi (#TT04180/26)
-> - FI - Comunicazione liquidazione periodica IVA: revisione della proposta trimestre in caso di IVA trimestrale (#TT04188/26).
+> - FI - Comunicazione liquidazione periodica IVA: revisione della proposta trimestre in caso di IVA trimestrale (#TT04188/26)
 > - FI - corretto bug che generava un errore caricando un cespite completamente ammortizzato. Rimossa obbligatorietà del tipo deducibilità ( #TT04019/26)
 > - MES - Manufacturing Execution System: corretta anomalia che, in una commessa multiprodotto, non permetteva la modifica di una commessa non esaminata se nella stessa commessa multiprodotto fosse presente una commessa esecutiva (#TT03664/26)
 > - MES - Manufacturing Execution System: in form commessa di produzione-tab costificazione-dettaglio costi modificato il nome della colonna “Quantità” in “Quantità prevista” e aggiunta nuova colonna “Quantità effettiva” (#TT03663/26)
@@ -42,10 +42,10 @@ sidebar_position: 1.2
 >>> - dell’articolo della commessa di produzione fintanto che non viene dichiarata una quantità del documento di primo livello;
 >>> - della Commessa di produzione;
 >> - apportate le suddette modifiche anche nel report “Costificazione commessa” (#TT03662/26)
-> - SCS - Cambio fornitore ordine conto lavoro: ottimizzata procedura di cambio fornitore se eseguita in riga articoli (#TT04127/26).
+> - SCS - Cambio fornitore ordine conto lavoro: ottimizzata procedura di cambio fornitore se eseguita in riga articoli (#TT04127/26)
 > - SD - Flag prezzo manuale: ottimizzata procedura che riporta flag di prezzo manuale da ordine cliente - picking - DDT (#TT04001/26)
 > - SH - Chart of Accounts fix when FSLedgerAccount object is extended (#TT03465/26)
-> - SH - Proponi dati: ottimizzato il caricamento automatico dei dati anagrafici all’inserimento della Partita IVA (#TT03935/26).
+> - SH - Proponi dati: ottimizzato il caricamento automatico dei dati anagrafici all’inserimento della Partita IVA (#TT03935/26)
 > - Solved problem with Supervisor widgets
 > - WM - Ottimizzata chiamata WebApi di ImportWarehousePosting (#TT03888/26)
 > - WMS - Spunta Picking: Inibito cambio riga se lettura barcode restituisce un valore non valido (#TT02639/26)
@@ -55,76 +55,76 @@ sidebar_position: 1.2
 > -	ARM - Corretta visualizzazione degli stati di workflow se soggetti a personalizzazioni (#TT03985/26)
 > -	FI - corretto bug nel calcolo utilizzo fidi che non rappresentava correttamente le partite nate da registrazioni contabili provvisorie successivamente convertite in registrazioni definitive.(#TT03522/26)
 > -	FI - creazione registrazioni da file Sdi, revisione gestione segni per note di credito che nel file Sdi sono negative (#TT03678/26)
-> -	FI - Risolto un errore nella gestione F24 che impediva la contabilizzazione quando il tipo di ritenuta non aveva associato il corretto conto Erario e andava a reperirlo da un'altra società. (#TT03955/26)
-> -	FI - Risolto un problema nella creazione automatica del riepilogo Intrastat Vendite che causava un errore dopo la selezione di una fattura di vendita. (#TT04004/26)
+> -	FI - Risolto un errore nella gestione F24 che impediva la contabilizzazione quando il tipo di ritenuta non aveva associato il corretto conto Erario e andava a reperirlo da un'altra società (#TT03955/26)
+> -	FI - Risolto un problema nella creazione automatica del riepilogo Intrastat Vendite che causava un errore dopo la selezione di una fattura di vendita (#TT04004/26)
 > -	SCS - Valorizzazione rientro c/lavoro: ottimizzata procedura di creazione fattura da rientro con lotti e serial number (#TT03926/26)
 
 ### Patch 803.0035 - 11/09/2026
 
-> -	Corretto il recupero del file XML da inviare a Bizlink nei casi di rigenerazione del tracciato. Quando, per lo stesso documento (fattura di vendita o integrazione fattura di acquisto), viene generato più volte il file XML destinato a Bizlink, il sistema ora utilizza il file presente nella DocumentAttachment anziché quello registrato nel log, garantendo l'invio della versione più aggiornata del documento. (#TT03858/26)
-> -	MES - Manufacturing Execution System: corretta anomalia in dichiarazione di produzione che, inserito un Serial Number nel tab materiali, non riportava in automatico il Lotto associato. (#TT03616/26)
-> -	PM - webapi importazione/update interventi - risolto caso per cui impostando una riga di progetto in testata intervento, veniva importato solo il progetto ma non la riga di progetto. In update intervento, risolto caso per cui dava messaggio di riga ID servizio non trovato nel caso di riga servizi con sconti. (#TT03351/26)
-> -	SD - Modifica della logica di esportazione fatture elettroniche xml Localizzazione San Marino. Non viene più letto, nella tabella Aliquote e modalità IVA, il flag Repubblica di S. Marino (obsoleto). Per la gestione dell’IVA monofase verrà letto unicamente l’ISO code della nazione connessa ai codici iva (SM) e nel caso di IVA monofase a valore fisso il campo Valore fisso. (#TT03814/26)
-> -	WM - Duplicazione Articoli: Ottimizzata procedura su tab Pesi/dimensioni - sezione Volume (#TT03768/26).
+> -	Corretto il recupero del file XML da inviare a Bizlink nei casi di rigenerazione del tracciato. Quando, per lo stesso documento (fattura di vendita o integrazione fattura di acquisto), viene generato più volte il file XML destinato a Bizlink, il sistema ora utilizza il file presente nella DocumentAttachment anziché quello registrato nel log, garantendo l'invio della versione più aggiornata del documento (#TT03858/26)
+> -	MES - Manufacturing Execution System: corretta anomalia in dichiarazione di produzione che, inserito un Serial Number nel tab materiali, non riportava in automatico il Lotto associato (#TT03616/26)
+> -	PM - webapi importazione/update interventi - risolto caso per cui impostando una riga di progetto in testata intervento, veniva importato solo il progetto ma non la riga di progetto. In update intervento, risolto caso per cui dava messaggio di riga ID servizio non trovato nel caso di riga servizi con sconti (#TT03351/26)
+> -	SD - Modifica della logica di esportazione fatture elettroniche xml Localizzazione San Marino. Non viene più letto, nella tabella Aliquote e modalità IVA, il flag Repubblica di S. Marino (obsoleto) Per la gestione dell’IVA monofase verrà letto unicamente l’ISO code della nazione connessa ai codici iva (SM) e nel caso di IVA monofase a valore fisso il campo Valore fisso (#TT03814/26)
+> -	WM - Duplicazione Articoli: Ottimizzata procedura su tab Pesi/dimensioni - sezione Volume (#TT03768/26)
 
 ### Patch 803.0034 - 04/09/2026
 
-> -	ARM - Cambio Stato Workflow da Task Supervisor: Nessuna transazione trovata. (#TT03549/26)
+> -	ARM - Cambio Stato Workflow da Task Supervisor: Nessuna transazione trovata (#TT03549/26)
 > -	FI - Registazioni contabili in divisa (#TT03508/26, TT02029/26)
-> -	Modifica apportata: Aggiornamento massivo della "Data di fine validità" per clienti con lo stesso agente. (#TT03724/26)
+> -	Modifica apportata: Aggiornamento massivo della "Data di fine validità" per clienti con lo stesso agente (#TT03724/26)
 > -	PM - Descrizione data storno fattura di acconto: aggiornata la descrizione della riga di storno, con data nel formato GG/MM/AAAA (#TT03667/26)
 > -	PR - corretto il calcolo delle scadenze nel cashflow per purchase demand, purchase order, sales order, subcontractor order, subcontractor return quando le condizioni di pagamento prevedono più righe con percentuale.(#TT03739/26)
-> -	SCM - Object navigator: estesa proprietà a standard per visualizzare anno e numero di commessa per gli articoli in conto lavoro (#TT03702/26).
-> -	SD - Revisione della procedura di acquisizione delle scadenze fatture (#TT3548/26).
+> -	SCM - Object navigator: estesa proprietà a standard per visualizzare anno e numero di commessa per gli articoli in conto lavoro (#TT03702/26)
+> -	SD - Revisione della procedura di acquisizione delle scadenze fatture (#TT3548/26)
 > -	SD - Tassi di cambio: nella creazione documentale tramite procedura, il sistema erediterà il tasso di cambio disponibile più recente rispetto alla data del documento (#TT03520/26)
-> -	WM - Analisi disponibilità: corretta visualizzazione in alcuni casi di componenti scaduti. (#TT03047/26)
-> -	WM - LoadPlan: Risolta anomalia in form Piani di Carico che invertiva i valori di volume e portata massima ricavati dall’automezzo utilizzato. (#TT03621/26)
-> -	WM - Valorizzazione distinta base: modifica del riferimento dell’articolo; in precedenza veniva riportato esclusivamente il codice articolo; ora il riferimento comprende sia la classe sia il codice articolo. (#TT03722/26)
+> -	WM - Analisi disponibilità: corretta visualizzazione in alcuni casi di componenti scaduti (#TT03047/26)
+> -	WM - LoadPlan: Risolta anomalia in form Piani di Carico che invertiva i valori di volume e portata massima ricavati dall’automezzo utilizzato (#TT03621/26)
+> -	WM - Valorizzazione distinta base: modifica del riferimento dell’articolo; in precedenza veniva riportato esclusivamente il codice articolo; ora il riferimento comprende sia la classe sia il codice articolo (#TT03722/26)
 
 ### Patch 803.0033 - 27/08/2026
 
-> -	CO - Risolto un bug nella stampa "Bilancio infrannuale a sezioni contrapposte" che non visualizzava correttamente i saldi dei conti con il flag "Mostra anagrafiche" disattivato.(#TT03308/26)
+> -	CO - Risolto un bug nella stampa "Bilancio infrannuale a sezioni contrapposte" che non visualizzava correttamente i saldi dei conti con il flag "Mostra anagrafiche" disattivato (#TT03308/26)
 > -	CO - Valorizzazione acquisti e vendite, soluzione errore su collection partite/pagamenti e flag iva sospesa (#TT03007/26)
-> -	Fatturazione elettronica San Marino - Documenti di acquisto in entrata: Implementato un controllo sul codice COE ricevuto tramite HUB o provider esterni per garantirne il formato a 5 caratteri utilizzato nella generazione del file XML. (#TT03676/26)  
+> -	Fatturazione elettronica San Marino - Documenti di acquisto in entrata: Implementato un controllo sul codice COE ricevuto tramite HUB o provider esterni per garantirne il formato a 5 caratteri utilizzato nella generazione del file XML (#TT03676/26)  
 Regole applicate:  
 >> -	**5 caratteri**: nessuna modifica.
 >> -	**Meno di 5 caratteri**: aggiunta di zeri a sinistra.
 >> -	**Più di 5 caratteri**: utilizzo degli ultimi 5 caratteri a destra.
 >> -	L'intervento garantisce una gestione uniforme dei codici COE ricevuti con formattazioni non conformi o privi degli zeri iniziali.
-> -	FI - Ammortamento cespiti: revisione della logica di proposta dei dati nel filtro “Materiale/Immateriale” della form di ammortamento cespiti. Modifications inside form Ammortamento cespiti can have impact on profiles (#TT03341/26).
+> -	FI - Ammortamento cespiti: revisione della logica di proposta dei dati nel filtro “Materiale/Immateriale” della form di ammortamento cespiti. **Attenzione! Questa modifica può impattare sui profili** (#TT03341/26)
 > -	FI - Creazione automatica Intrastat: revisione della procedura di creazione Intrastat da fatture (#TT03355/26)
 > -	FI - ottimizzazione ammortamento cespiti e procedura di rollback (#TT03362/26)
-> -	FI - Risolto un bug nella fatture di acquisto che non riportava nel riepilogo scadenze la "Posizione partita" impostata sulla relativa scadenza di partita. Rif. #TT03411/26
-> -	FI - Risolto un bug nella procedura "generazione solleciti" che assegnava lo stesso numero ai solleciti.(#TT03519/26)
+> -	FI - Risolto un bug nella fatture di acquisto che non riportava nel riepilogo scadenze la "Posizione partita" impostata sulla relativa scadenza di partita (#TT03411/26)
+> -	FI - Risolto un bug nella procedura "generazione solleciti" che assegnava lo stesso numero ai solleciti (#TT03519/26)
 > -	Framework- corretta anomalia stato di transizione workflow (#TT03512/26)
 > -	Framework-Corretta anomalia profili (#TT03499/26)
-> -	MS - M.R.P.: corretta la logica di calcolo della proposta di creazione dell’Ordine pianificato di copertura del fabbisogno, che non considerava correttamente la giacenza e la domanda dei documenti. (#TT03574/26)
-> -	MS - Ordini pianificati: corretta l’anomalia per cui, durante la selezione di una fase di lavoro, l’indicatore del Tipo di fase rimaneva sempre posizionato su Interna, anche quando la fase era Esterna.. (#TT03556/26)
-> -	PM - Interventi - Piano di fatturazione. Con l'opzione "Includi ore di viaggio nei servizi" attiva, corretto il criterio di ricerca dell'articolo fuori orario per le ore di viaggio. L'articolo viene ora individuato a partire dall'articolo di servizio che include le ore di viaggio, anziché dall'articolo spesa "Ore viaggio". (#TT03498/26)
-> -	PM - interventi - risolto caso per cui le spese sostenute marcate come spese da fatturare, riportavano i valori corretti ma non veniva calcolata la colonna Totale fatturabile ( #TT03114/26)
+> -	MS - M.R.P.: corretta la logica di calcolo della proposta di creazione dell’Ordine pianificato di copertura del fabbisogno, che non considerava correttamente la giacenza e la domanda dei documenti (#TT03574/26)
+> -	MS - Ordini pianificati: corretta l’anomalia per cui, durante la selezione di una fase di lavoro, l’indicatore del Tipo di fase rimaneva sempre posizionato su Interna, anche quando la fase era Esterna (#TT03556/26)
+> -	PM - Interventi - Piano di fatturazione. Con l'opzione "Includi ore di viaggio nei servizi" attiva, corretto il criterio di ricerca dell'articolo fuori orario per le ore di viaggio. L'articolo viene ora individuato a partire dall'articolo di servizio che include le ore di viaggio, anziché dall'articolo spesa "Ore viaggio" (#TT03498/26)
+> -	PM - interventi - risolto caso per cui le spese sostenute marcate come spese da fatturare, riportavano i valori corretti ma non veniva calcolata la colonna Totale fatturabile (#TT03114/26)
 > -	PM - progetti - corrette alcune casistiche che incidevano sul conteggio giorni assegnati, previsti, pianificati, eseguiti nella testata progetto (#TT03192/26)
-> -	QY - Piani di controllo: risolto il problema di timeout che si verificava in presenza di un elevato numero di righe di articoli associate alla visualizzazione del relativo tabulatore. (#TT03551/26)
+> -	QY - Piani di controllo: risolto il problema di timeout che si verificava in presenza di un elevato numero di righe di articoli associate alla visualizzazione del relativo tabulatore (#TT03551/26)
 > -	SCM - Corretta anomalia chiamata Web Api ImportPurchaseDeliveryNotes (#TT02653/26)
 > -	SCM - Corretta visualizzazione delle righe di chiusura tabelle in Documenti Acquisto in entrata (#TT02657/26)
 > -	SCM - Corretta visualizzazione stampa registro SDI (#TT02657/26)
 > -	SCM - Corretta anomalia nella selezione documenti nella form di ricerca Documenti Acquisto In Entrata (#TT03497/26)
 > -	SCS - Corretta anomalia importazione Web Api ImportSubcontractorReturns ( #TT03441/26)
-> -	SD - Fix WebApi Sales documents-AreComputedFieldsUpToDate problem. (ticket 1258/21)
+> -	SD - Fix WebApi Sales documents-AreComputedFieldsUpToDate problem (#TT01258/21)
 
 ### Patch 803.0032 - 06/08/2026
 
 > -	CRM - inserimento appuntamento a calendario da Visit report, risolto caso specifico in cui si verificava un’eccezione in presenza di un calendario senza nome e date inizio-fine (#TT03484/26)
-> -	MS - M.R.P.: corretta la logica di calcolo che non considerava l’impiego dei materiali in una fase di lavoro specifica creando un doppio impegno di tali materiali se tale fase aveva una data inizio diversa da quella dell’ordine pianificato. (#TT03502/26)
-> -	SCM - Correzione della scadenza della fattura nella procedura di valorizzazione delle bolle di consegna acquisti.(#TT03445/26)
-> -	SCM\SD: PriceManagementPurchaseDiscountCategory and PriceManagementSalesDiscountCategory -increase Code dimension. Modifications inside forms Discount category association and Policies Discount Definition can have impact on profiles. (#TT01270/26)
-> -	SD - FE SM modification for Vat registration code logic(#TT03493/26).
+> -	MS - M.R.P.: corretta la logica di calcolo che non considerava l’impiego dei materiali in una fase di lavoro specifica creando un doppio impegno di tali materiali se tale fase aveva una data inizio diversa da quella dell’ordine pianificato (#TT03502/26)
+> -	SCM - Correzione della scadenza della fattura nella procedura di valorizzazione delle bolle di consegna acquisti (#TT03445/26)
+> -	SCM\SD: PriceManagementPurchaseDiscountCategory and PriceManagementSalesDiscountCategory -increase Code dimension. **Attenzione! Questa modifica può impattare sui profili** (#TT01270/26)
+> -	SD - FE SM modification for Vat registration code logic (#TT03493/26)
 > -	SD - Ordini clienti: ottimizzata esplosione Distinta Base su riga articoli (#TT02610/26)
-> -	SD - Scarico mazzino: Implementata scarico DDT di lotti e serial number a posteriori rispetto all'emissione Fattura di vendita (#TT03462/26).
+> -	SD - Scarico mazzino: Implementata scarico DDT di lotti e serial number a posteriori rispetto all'emissione Fattura di vendita (#TT03462/26)
 > -	SD - Storno DDT e relativa valorizzazione: modificata logica di storno DDT con quantità negative considerando anche disponibilità di lotti e serial number (#TT03298/26)
-> -	SD - evasione progetti nelle offerte, corretto ordinamento righe progetto nell’help di evasione in modo che rispetti l’ordine delle wbs. (#TT03318/26)
-> -	WM - LoadPlan Corretta anomalia che riportava unità di misura del volume incoerente in preparazione piano di carico. (#TT03386/26)
-> -	WM - LoadPlan: Risolta anomalia su filtro Zona Consegna in tab “Ricerca Ordini Clienti” in form Piani di carico. Modifications inside LoadPlan object form can have impact on profiles. (#TT03387/26)
-> -	WM - LoadPlan: Risolta anomalia che, una volta modificata la quantità articoli in un piano di carico tab ordini clienti, non riportava la modifica nel tab preparazione piano di carico. (#TT03384/26)
+> -	SD - evasione progetti nelle offerte, corretto ordinamento righe progetto nell’help di evasione in modo che rispetti l’ordine delle wbs (#TT03318/26)
+> -	WM - LoadPlan Corretta anomalia che riportava unità di misura del volume incoerente in preparazione piano di carico (#TT03386/26)
+> -	WM - LoadPlan: Risolta anomalia su filtro Zona Consegna in tab “Ricerca Ordini Clienti” in form Piani di carico. **Attenzione! Questa modifica può impattare sui profili** (#TT03387/26)
+> -	WM - LoadPlan: Risolta anomalia che, una volta modificata la quantità articoli in un piano di carico tab ordini clienti, non riportava la modifica nel tab preparazione piano di carico (#TT03384/26)
 
 ### Patch 803.0031 - 31/07/2026
 
@@ -132,94 +132,94 @@ Regole applicate:
 > -	Add configuration for Office365 two factor autentication
 > -	CO - nella procedura Valorizzazione acquisti e vendite dentro le Chiusure infrannuali, modifica della gestione analitica per la dimensione progetti (#TT03218/26)
 > -	FI - Amministrazione Ricerca Conto per descrizione (#TT03281/26)
-> -	FI - Compensi: revisione della gestione del campo "Descrizione Movimento" all'interno dei compensi (#TT03004/26).
-> -	FI - corretto bug nella stampa Verifica dichiarazione i intento con dettagli relativamente ai compensi percipienti: Non venivano valorizzate correttamente le colonne Fatturato e Registrato, sommando i valori. (#TT02312/26)
-> -	FI - correzione ai codici riferiti al campo Riga dichiarazione fiscale, nella sezione Specifiche per Dichiarazione, della tabella Aliquote e modalità iva. In precedenza i codici erano errati e non permettevano la corretta esecuzione della stampa di riferimento. (#TT02906/26)
+> -	FI - Compensi: revisione della gestione del campo "Descrizione Movimento" all'interno dei compensi (#TT03004/26)
+> -	FI - corretto bug nella stampa Verifica dichiarazione i intento con dettagli relativamente ai compensi percipienti: Non venivano valorizzate correttamente le colonne Fatturato e Registrato, sommando i valori (#TT02312/26)
+> -	FI - correzione ai codici riferiti al campo Riga dichiarazione fiscale, nella sezione Specifiche per Dichiarazione, della tabella Aliquote e modalità iva. In precedenza i codici erano errati e non permettevano la corretta esecuzione della stampa di riferimento (#TT02906/26)
 > -	FI - nelle righe di dettaglio dei compensi la modifica delle date competenza ora va ad aggiornare la riga collegata dell’analitica (#TT03150/26)
-> -	FI - Registrazioni contabili: revisione della logica di proposta automatica del campo "Materiale/Immateriale" durante la contabilizzazione automatica delle fatture di acquisto cespiti. Modifications inside posting fixed asset tab can have impact on profiles. (#TT03017/26).
-> -	FI - Risolto bug nei campi di filtro Da Data Pagamento A Data pagamento, nella form del report Ritenuta d'acconto, i quali non filtravano correttamente i dati. (#TT02731/26)
+> -	FI - Registrazioni contabili: revisione della logica di proposta automatica del campo "Materiale/Immateriale" durante la contabilizzazione automatica delle fatture di acquisto cespiti. **Attenzione! Questa modifica può impattare sui profili** (#TT03017/26)
+> -	FI - Risolto bug nei campi di filtro Da Data Pagamento A Data pagamento, nella form del report Ritenuta d'acconto, i quali non filtravano correttamente i dati (#TT02731/26)
 > -	FI - Tabella 'Fornitori di servizi di pagamento', modifica codici standard di Stripe
-> -	FI - webapi su oggetto FSPosting, tolto vincolo di compilazione della proprietà FSPosting.Account. (#TT02929/26)
-> -	MES - All’interno dei tab lotti dei materiali dell’ordine di produzione, nel caso venga inserito un primo lotto e si indichi una quantità parziale, nel momento in cui si inserisce il secondo lotto viene proposta la quantità residua e non più quella totale. Inoltre, se in fase di dichiarazione di produzione viene dichiarato un parziale, è possibile nell’ordine di produzione ridurre la quantità del lotto del materiale fino a pareggiare la quantità consumata in dichiarazione. (#TT03016/26)
-> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione inerente al serial number del materiale impiegato. (#TT02465/26)
-> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione nel caso venissero importate più dichiarazioni contemporaneamente. (#TT03263/26)
-> -	MES - Tramite il pulsante generazione lotti degli ordini di produzione, è possibile creare nuovi lotti modificando la quantità del lotto di origine anche nel caso in cui per questo OP siano già state create delle dichiarazioni di produzione, a patto però che la quantità del lotto di origine non diventi inferiore alla quantità già prodotta. (#TT03092/26)
-> -	MS - AFCS. Quando dei materiali erano assegnati ad una fase di lavoro chiusa, i relativi fabbisogni erano importati ugualmente, il che poteva portare ad avere nella importazione un segnale di warning di articolo non bilanciato. (#TT03236/26)
-> -	MS - Corretto il calcolo del Ricavo previsto in costificazione, nel caso in cui venisse aggiunta una nuova riga all’ordine cliente e alla commessa stessa. (#TT03044/26)
-> -	MS - Master Schedule: Risolta anomalia di mancato messaggio di generazione commesse da nuova riga ordine cliente. (#TT03321/26)
-> -	MS - Ordini pianificati: risoluzione anomalia di disallineamento tra sottofasi presenti nei materiali e nelle fasi durante l’inserimento dell’ordine; i valori presenti erano Null per i materiali e 0 per le fasi. (#TT02011/26)
-> -	OP - Ordini di produzione: eliminando un ordine di produzione vengono eliminati anche i riferimenti ai dati storici del degli ordini pianificati creati durante il loro rilascio. (#TT03257/26)
+> -	FI - webapi su oggetto FSPosting, tolto vincolo di compilazione della proprietà FSPosting.Account (#TT02929/26)
+> -	MES - All’interno dei tab lotti dei materiali dell’ordine di produzione, nel caso venga inserito un primo lotto e si indichi una quantità parziale, nel momento in cui si inserisce il secondo lotto viene proposta la quantità residua e non più quella totale. Inoltre, se in fase di dichiarazione di produzione viene dichiarato un parziale, è possibile nell’ordine di produzione ridurre la quantità del lotto del materiale fino a pareggiare la quantità consumata in dichiarazione (#TT03016/26)
+> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione inerente al serial number del materiale impiegato (#TT02465/26)
+> -	MES - Corretto bug nell’import webapi delle dichiarazioni di produzione nel caso venissero importate più dichiarazioni contemporaneamente (#TT03263/26)
+> -	MES - Tramite il pulsante generazione lotti degli ordini di produzione, è possibile creare nuovi lotti modificando la quantità del lotto di origine anche nel caso in cui per questo OP siano già state create delle dichiarazioni di produzione, a patto però che la quantità del lotto di origine non diventi inferiore alla quantità già prodotta (#TT03092/26)
+> -	MS - AFCS. Quando dei materiali erano assegnati ad una fase di lavoro chiusa, i relativi fabbisogni erano importati ugualmente, il che poteva portare ad avere nella importazione un segnale di warning di articolo non bilanciato (#TT03236/26)
+> -	MS - Corretto il calcolo del Ricavo previsto in costificazione, nel caso in cui venisse aggiunta una nuova riga all’ordine cliente e alla commessa stessa (#TT03044/26)
+> -	MS - Master Schedule: Risolta anomalia di mancato messaggio di generazione commesse da nuova riga ordine cliente (#TT03321/26)
+> -	MS - Ordini pianificati: risoluzione anomalia di disallineamento tra sottofasi presenti nei materiali e nelle fasi durante l’inserimento dell’ordine; i valori presenti erano Null per i materiali e 0 per le fasi (#TT02011/26)
+> -	OP - Ordini di produzione: eliminando un ordine di produzione vengono eliminati anche i riferimenti ai dati storici del degli ordini pianificati creati durante il loro rilascio (#TT03257/26)
 > -	PM - risolto caso per cui nei parametri progetti non venivano salvate le impostazioni del campo "Costo predefinito materiali progetto" (#TT03292/26)
-> -	PR - revisione creazione file Riba e bonifici, sostituzione “left or right quotation mark” con ' (quotation mark) e - (En dash) con - (minus). (#TT02815/26)
-> -	QY - Controllo articoli - Importa articoli da controllare: per i tipi documento Dichiarazioni di produzione e Fasi ordine di produzione, nella griglia dei risultati sono state aggiunte le colonne di Macchina e Gruppo manodopera. (#TT03195/26)
+> -	PR - revisione creazione file Riba e bonifici, sostituzione “left or right quotation mark” con ' (quotation mark) e - (En dash) con - (minus) (#TT02815/26)
+> -	QY - Controllo articoli - Importa articoli da controllare: per i tipi documento Dichiarazioni di produzione e Fasi ordine di produzione, nella griglia dei risultati sono state aggiunte le colonne di Macchina e Gruppo manodopera (#TT03195/26)
 > -	Risolto bug per generare un namaspace valido per gli script
 > -	SCS - Ordini conto Lavoro: La ripresa dei prezzi dai listini di conto lavoro avviene considerando i prezzi in unità di misura alternativa e la priorità di ricerca standard di prezzi e sconti (#TT1847/26)
 > -	SCS- Corretta importazione web api per la creazione di nuovi lotti e serial number (#TT03379/26)
-> -	SD - Fix Create AgentSettlement-special case for CreditNote. (#TT02018/26)
-> -	SD - Griglia pagamenti dentro liquidazione agenti, in caso di pagamento avvenuto o scadenza maturata, la griglia non è più editabile nei valori e mostra correttamente la quota parte maturata nella liquidazione in us.Modifications inside Agent settlemente form can have impact on profiles. (#TT04671/24)
+> -	SD - Fix Create AgentSettlement-special case for CreditNote (#TT02018/26)
+> -	SD - Griglia pagamenti dentro liquidazione agenti, in caso di pagamento avvenuto o scadenza maturata, la griglia non è più editabile nei valori e mostra correttamente la quota parte maturata nella liquidazione in us. **Attenzione! Questa modifica può impattare sui profili** (#TT04671/24)
 > -	SD - Listini di Vendita: Corretta configurazione campo SDSPLIED_ExtraDataValue in ExtraData presenti su articolo (#TT03220/26)
-> -	SD - Modificato il comportamento della stampa Provvigioni maturate che non gestiva correttamente alcune casistiche di scadenze derivanti da fatture e note di accredito raggruppate negli effetti attivi e modifica della logica per la maturazione della provvigione sulle partite pagate; se inserite in un effetto attivo la maturazione segue la data scadenza effetto. (#TT02018/26)
+> -	SD - Modificato il comportamento della stampa Provvigioni maturate che non gestiva correttamente alcune casistiche di scadenze derivanti da fatture e note di accredito raggruppate negli effetti attivi e modifica della logica per la maturazione della provvigione sulle partite pagate; se inserite in un effetto attivo la maturazione segue la data scadenza effetto (#TT02018/26)
 > -	SD - Offerte con struttura gerarchica - corretto calcolo totali nei livelli intermedi nel caso di applicazione di sconti nel riepilogo (#TT03244/26)
 > -	SD - Proporre la data di trasporto con la data odierna durante la creazione della Nota di Credito di Vendita tramite il pulsante Nota di Credito (#TT03251/26)
 > -	SH - Corretta anomalia nel salvataggio del flag "Fatturazione elettronica" in anagrafica contatti (#TT03344/26)
-> -	WM - Analisi disponibilità: corretto errore di timeout in caricamento dettagli per articoli aventi distinte con numerosi componenti fittizi. (#TT03051/26)
+> -	WM - Analisi disponibilità: corretto errore di timeout in caricamento dettagli per articoli aventi distinte con numerosi componenti fittizi (#TT03051/26)
 > -	WM - Correzione della logica di filtraggio per codice articolo nel report Inventario Quantita Valorizzato in presenza del check Lotti (#TT03401/26)
-> -	WMS - Spunta Picking: Disabilitata doppia pressione su tasto conferma. (#TT02234/26)
+> -	WMS - Spunta Picking: Disabilitata doppia pressione su tasto conferma (#TT02234/26)
 
 ### Patch 803.0030 - 16/07/2026
 
-> -	CO - aggiunto messaggio di conferma esecuzione scritture per cost driver. Esecuzione da procedura Elaborazione periodi, Elaborazione Chiusura infrannuale. (#TT02740/26)
-> -	CO - creazione nuova chiusura infrannuale, revisione gestione dei sottoconti non utilizzati in controlling. (#TT03146/26)
+> -	CO - aggiunto messaggio di conferma esecuzione scritture per cost driver. Esecuzione da procedura Elaborazione periodi, Elaborazione Chiusura infrannuale (#TT02740/26)
+> -	CO - creazione nuova chiusura infrannuale, revisione gestione dei sottoconti non utilizzati in controlling (#TT03146/26)
 > -	FI - Comunicazione liquidazioni periodiche IVA: adeguamento della procedura di elaborazione del calcolo trimestre (#TT03137/26, TT03120/26)
 > -	FI - fix giroconto partite - null reference - aliniamento con SP fluentis2015 (#TT03018/26)
 > -	FI - la contabilizzazione enasarco e pagamento dei percipienti non verifica più il parametro “FS-FI-Posting-BlockPostingBeforeReceiveDate” (#TT02720/26)
 > -	FI - Libro Inventari: revisione della procedura di inserimento dei dati di testata (#TT02929/26)
-> -	FI - modificata contabilizzazione automatica fatture di acquisto . Allineamento dei campi totale in valuta, iva indetraibile nel caso in cui l’iva venga modificata manualmente dal riepilogo della fattura di acquisto. (#TT03027/26)
+> -	FI - modificata contabilizzazione automatica fatture di acquisto . Allineamento dei campi totale in valuta, iva indetraibile nel caso in cui l’iva venga modificata manualmente dal riepilogo della fattura di acquisto (#TT03027/26)
 > -	FI - Registrazioni Contabili: revisione proposta del menù rapido nella ricerca registrazioni con gestione della riga di dettaglio espansa (#TT02813/26)
 > -	FI - revisione salvataggio registrazione, test del valore del pagamento che sia inferiore al residuo da pagare (#TT02029/26)
-> -	FI - ulteriore revisione/ottimizzazione della procedura di ‘Acquisizione da registrazioni’ nell’intrastat. (#TT02699/26)
+> -	FI - ulteriore revisione/ottimizzazione della procedura di ‘Acquisizione da registrazioni’ nell’intrastat (#TT02699/26)
 > -	Framework- Corretta la gestione della riga filtro durante l’inserimento di un’aggiunta di calcolo della somma nel totale imponibile (#TT02143/26)
-> -	MES - Manufacturing Execution System: risolta anomalia che non allineava il calcolo costi con il movimento di produzione quando il centro di costo di riferimento aveva un’unità di misura indicata ma senza fattore di conversione. (#TT02837/26)
-> -	MES - Ordini di produzione - Verticalizzazione Pharma - E’ stata corretta l’anomalia che non permetteva la memorizzazione di un profilo. (#TT00943/26)
-> -	MES - Produzione: corretta anomalia nel filtro della Stampa del Foglio di Lavoro, dove il filtro per Macchina non veniva applicato correttamente. (#TT02936/26)
+> -	MES - Manufacturing Execution System: risolta anomalia che non allineava il calcolo costi con il movimento di produzione quando il centro di costo di riferimento aveva un’unità di misura indicata ma senza fattore di conversione (#TT02837/26)
+> -	MES - Ordini di produzione - Verticalizzazione Pharma - E’ stata corretta l’anomalia che non permetteva la memorizzazione di un profilo (#TT00943/26)
+> -	MES - Produzione: corretta anomalia nel filtro della Stampa del Foglio di Lavoro, dove il filtro per Macchina non veniva applicato correttamente (#TT02936/26)
 > -	MS - AFCS. Corretto un bug per cui per alcuni ordini cliente non veniva indicata la data di consegna schedulata (#TT02957/26)
 > -	PM - servizi intervento - corretto caso in cui se l'orario inizio servizio e l'orario di inizio della fascia oraria coincidevano, veniva rilevato un fuori orario nel piano di fatturazione non corretto (#TT02997/26)
-> -	QY - Controllo articoli: corretta l’anomalia che non permetteva la memorizzazione di un profilo successivamente alla modifica della form di Filtro Controlli articolo. (#TT03077/26)
+> -	QY - Controllo articoli: corretta l’anomalia che non permetteva la memorizzazione di un profilo successivamente alla modifica della form di Filtro Controlli articolo (#TT03077/26)
 > -	QY - Taratura strumenti: parametrizzazione delle Incertezze (-) e (+) espresse in Valore o Percentuale. Nei “Parametri Taratura strumenti” è stata aggiunta una nuova informazione “Tipo tolleranza espressa in” per dare la possibilità di scegliere se le Incertezze vengano espresse in Valore o Percentuale. Il dato parametrizzato si applica al calcolo dell’Esito nei “Valori rilevati” durante la Taratura interna di uno strumento.(#TT03111/26)
-> -	WEBAPI - Importazione DDT/Fatture Acquisto con Serial Number: Corretta l’importazione dei Serial Number con codice predefinito. (#TT2589/26)
+> -	WEBAPI - Importazione DDT/Fatture Acquisto con Serial Number: Corretta l’importazione dei Serial Number con codice predefinito (#TT2589/26)
 > -	revisione stampa liquidazione agenti, revisione campo della provvigione maturata (#TT02338/25)
 > -	SCM - Documenti di acquisto in entrata: revisione della gestione delle fatture elettroniche con allegati in formato .7zip (#TT878/26)
-> -	SCS - Rientri di conto lavoro: Modificando il costo dell’articolo di un rientro già caricato l’aggiornamento viene effettuato anche nel costo del movimento di magazzino. (#TT2182/26)
+> -	SCS - Rientri di conto lavoro: Modificando il costo dell’articolo di un rientro già caricato l’aggiornamento viene effettuato anche nel costo del movimento di magazzino (#TT2182/26)
 > -	SD - Fatture di vendita: aggiornamento logica calcolo colli, che viene calcolato sulla base dei dati presenti in anagrafica articolo (confezionamento, tipo UDC, articoli per collo / colli per articolo) e viene sempre arrotondato per eccesso all'unità intera superiore. Il valore viene invece azzerato se il tipo di fatturazione non è immediata (#TT01041/26, #TT02987/26)
-> -	SH - Destinazioni/destinatari in anagrafica: impossibilità di salvare nuova destinazione senza avvalorare Ragione Sociale. (#TT02766/26)
-> -	WM - Analisi disponibilità: Corretto filtro Codice Articolo in griglia, che non funzionava correttamente se abilitato il flag “Dettaglio distinta base”. (#TT02928/26)
-> -	WM - Picking: Rivisti e corretti i controlli in cancellazione Spunta. (#TT02742/26)
-> -	WM - Prototipi - Corretto il calcolo del Totale costo ricaricato. L’applicazione del “Ricarico”, in “Percentuale”, ora viene applicato o sul “Costo industriale” oppure sul “Costo industriale + costi diretti” sulla base di quanto indicato nei “Parametri prototipi” alla voce “Calcolo Totale costo ricaricato con ricarico su”. (#TT02850/26)
-> -	WMS - Ricevimento Merce: Ripristinato focus sul numero in apertura form di ricerca. (#TT02946/26)
+> -	SH - Destinazioni/destinatari in anagrafica: impossibilità di salvare nuova destinazione senza avvalorare Ragione Sociale (#TT02766/26)
+> -	WM - Analisi disponibilità: Corretto filtro Codice Articolo in griglia, che non funzionava correttamente se abilitato il flag “Dettaglio distinta base” (#TT02928/26)
+> -	WM - Picking: Rivisti e corretti i controlli in cancellazione Spunta (#TT02742/26)
+> -	WM - Prototipi - Corretto il calcolo del Totale costo ricaricato. L’applicazione del “Ricarico”, in “Percentuale”, ora viene applicato o sul “Costo industriale” oppure sul “Costo industriale + costi diretti” sulla base di quanto indicato nei “Parametri prototipi” alla voce “Calcolo Totale costo ricaricato con ricarico su” (#TT02850/26)
+> -	WMS - Ricevimento Merce: Ripristinato focus sul numero in apertura form di ricerca (#TT02946/26)
 > -	SD - Categoria commerciale: ottimizzata possibilità di inserimento campo da object navigator (#TT02925/26)
 
 ### Patch 803.0029 - 03/07/2026
 
-> -	FI- Corretta visualizzazione Stampa Analisi Centri di costo. Modifications inside Stampa Analisi Centri di costo form can have impact on profiles. (#TT02702/26)
-> -	FI- per la stampa ‘Estratto conto’ quando i report e eseguito filtrando un unico sottoconto allora è possibile procedere all’invio per email con testo preconfigurato tramite transformation definita sull’oggetto FSLedgerAccount (customizzabili). (#TT02757/26). Aggiunto supporto a società nei pagamenti elettronici e modificata gestione codici dei PSP. Aggiunto supporto a sandbox di test.
-> -	MES - Dichiarazioni di produzione: corretta anomalia su mancata indicazione di magazzino, causale e ubicazione di consumo nelle dichiarazioni di fasi successive alla prima. (#TT02455/26)
-> -	MES - Generazione commesse di produzione: corretta anomalia che generava dei prototipi commesse di produzione diversi rispetto a quelli richiesti dal tab ordini clienti. (#TT02682/26)
-> -	MES - Ora vengono proposte correttamente i magazzini e le causali di consumo dei semi lavorati. (#TT02743/26)
+> -	FI- Corretta visualizzazione Stampa Analisi Centri di costo. **Attenzione! Questa modifica può impattare sui profili** (#TT02702/26)
+> -	FI- per la stampa ‘Estratto conto’ quando i report e eseguito filtrando un unico sottoconto allora è possibile procedere all’invio per email con testo preconfigurato tramite transformation definita sull’oggetto FSLedgerAccount (customizzabili) (#TT02757/26) Aggiunto supporto a società nei pagamenti elettronici e modificata gestione codici dei PSP. Aggiunto supporto a sandbox di test.
+> -	MES - Dichiarazioni di produzione: corretta anomalia su mancata indicazione di magazzino, causale e ubicazione di consumo nelle dichiarazioni di fasi successive alla prima (#TT02455/26)
+> -	MES - Generazione commesse di produzione: corretta anomalia che generava dei prototipi commesse di produzione diversi rispetto a quelli richiesti dal tab ordini clienti (#TT02682/26)
+> -	MES - Ora vengono proposte correttamente i magazzini e le causali di consumo dei semi lavorati (#TT02743/26)
 > -	MS - AFCS. Risolto un bug relativo ad una indicazione errata del codice di magazzino nella scheda dei fabbisogni dipendenti.(#TT02834/26)
-> -	MS - Capacità Centri di lavoro: risolta anomalia relativa ai tempi di lavorazione indicati nella fase di lavorazione, rispetto a quelli visualizzati graficamente nell’istogramma delle capacità, quando il numero delle macchine e/o degli operai è maggiore di uno. (#TT02624/26)
-> -	MS - M.R.P. - Ora, se si attiva o disattiva il parametro “Controllo fabbisogni con generazione ordini pianificati” viene memorizzato e, alla successiva riapertura della form, il parametro rimane impostato all’esecuzione precedente. (#TT02664/26)
+> -	MS - Capacità Centri di lavoro: risolta anomalia relativa ai tempi di lavorazione indicati nella fase di lavorazione, rispetto a quelli visualizzati graficamente nell’istogramma delle capacità, quando il numero delle macchine e/o degli operai è maggiore di uno (#TT02624/26)
+> -	MS - M.R.P. - Ora, se si attiva o disattiva il parametro “Controllo fabbisogni con generazione ordini pianificati” viene memorizzato e, alla successiva riapertura della form, il parametro rimane impostato all’esecuzione precedente (#TT02664/26)
 > -	MS - Pianificazione Generale: risolto bug che causava un errore nell’utilizzo del filtro in griglia nella colonna “Codice Articolo” (#TT02876/26)
 > -	PR - rilascio parser di gestione riferimento creditore in file bonifici Sepa (#TT02844/26)
-> -	SCM - Parametri DDT di Acquisto: ottimizzazione creazione DDT di acquisto da form Evasione ricevimento merci e da form Ordine fornitore (#TT02716/26).
+> -	SCM - Parametri DDT di Acquisto: ottimizzazione creazione DDT di acquisto da form Evasione ricevimento merci e da form Ordine fornitore (#TT02716/26)
 > -	SCM - Risolta anomalia in fase di apertura tramite il RibbonReportDesigner nel report PurchaseOrderHoldingValue (#TT00634/26)
 > -	SCS - Rientri di conto lavoro: Modificando il costo dell’articolo di un rientro già caricato l’aggiornamento viene effettuato anche nel costo del movimento di magazzino.  (#2182/26)
-> -	SD - Creazione Fattura da DDT: ottimizzato blocco emissione documento quando è presente data fine validità in anagrafica cliente (#TT01856/26).
+> -	SD - Creazione Fattura da DDT: ottimizzato blocco emissione documento quando è presente data fine validità in anagrafica cliente (#TT01856/26)
 > -	SD - Creazione fattura di acquisto da XML: ottimizzati controlli su unità di misura.
 > -	SD - File sdi XML: corretta formattazione dell'indirizzo nel file xml da inviare allo sdi (#TT01857/26)
 > -	SD - L'invio delle Offerte per email prende l'Indirizzo alternativo inserito in Anagrafica cliente relativo alle offerte (#TT02862/26)
 > -	SD - Ordine cliente: ottimizzazione gestione ExtraData nelle righe articoli (#TT02750/26)
-> -	SD - Ottimizzazione ricerca articoli in offerte di vendita. Modifications inside SalesOffer form can have impact on profiles. (#TT02714/26)
-> -	SD - Update PackagesNumber at SalesInvoiceType change and consider null value for NumberPackagesForItem. (#TT01041/26)
+> -	SD - Ottimizzazione ricerca articoli in offerte di vendita. **Attenzione! Questa modifica può impattare sui profili** (#TT02714/26)
+> -	SD - Update PackagesNumber at SalesInvoiceType change and consider null value for NumberPackagesForItem (#TT01041/26)
 > -	SD - offerte gerarchiche tab materiali - corretta casistica di gestione valuta diversa tra offerta cliente ed ordine fornitore/fattura fornitore da cui sono presi i costi dei materiali (#TT02791/26)
 > -	SH - Migliorata l’esperienza utente durante l'aggiornamento a una versione successiv
 > -	SH - Nella griglia di ricerca - tab workflow, verranno mostrati solo i documenti per cui c’è un workflow attivo, gli altri documenti saranno esclusi e rimarranno visibili nella griglia principale di ricerca (#TT01839/26)
@@ -228,16 +228,16 @@ Regole applicate:
 ### Patch 803.0028 - 24/06/2026
 
 > -	FI - Gestione Intrastat: revisione della logica di proposta dei documenti nella procedura di creazione automatica da fatture (#TT00245/26)
-> -	FI - Subreport della Liquidazione iva periodica: revisione filter string sui detail report (filtro di esclusione degli split payment). (#TT02718/26)
-> -	Framework - per le stampe ‘Estratto conto’, ‘Estratto conto a partite aperte’, ‘Lista partite’, ‘Scadenziario clienti/fornitori’, quando i report sono eseguiti filtrando un unico sottoconto allora è possibile procedere all’invio per email con testo preconfigurato tramite transformation definita sull’oggetto FSLedgerAccount (customizzabili). (#TT02757/26)
-> -	MS - Pianificazione generale: corretto calcolo impegno su componente utilizzato più volte in una distinta base, a volte impostato come livello fittizio, altre no. (#TT02367/26)
-> -	PR - aggiunto controllo sulla causale selezionata per le procedure di contabilizzazione insoluto e contabilizzazione insoluto su cessione, che sia stato attivato il flag Provvigioni, se è attiva la gestione delle Commissioni (nei parametri di contabilità). (#TTTT01741/26)
+> -	FI - Subreport della Liquidazione iva periodica: revisione filter string sui detail report (filtro di esclusione degli split payment) (#TT02718/26)
+> -	Framework - per le stampe ‘Estratto conto’, ‘Estratto conto a partite aperte’, ‘Lista partite’, ‘Scadenziario clienti/fornitori’, quando i report sono eseguiti filtrando un unico sottoconto allora è possibile procedere all’invio per email con testo preconfigurato tramite transformation definita sull’oggetto FSLedgerAccount (customizzabili) (#TT02757/26)
+> -	MS - Pianificazione generale: corretto calcolo impegno su componente utilizzato più volte in una distinta base, a volte impostato come livello fittizio, altre no (#TT02367/26)
+> -	PR - aggiunto controllo sulla causale selezionata per le procedure di contabilizzazione insoluto e contabilizzazione insoluto su cessione, che sia stato attivato il flag Provvigioni, se è attiva la gestione delle Commissioni (nei parametri di contabilità) (#TTTT01741/26)
 > -	PR - Stampa lista insoluti: Revisionati i riferimenti relativi a numero documento, data documento e agente nella stampa degli insoluti (#TT2057/26)
-> -	SCM - Reso per riparazione: ottimizzazione gestione reso per riparazione di un articolo con Serial Number (#TT02651/26).
-> -	SDI - Documenti di Acquisto in entrata: Quando lo stato del file SDI viene modificato in “Non assegnato” (per scollegare la fattura di acquisto): I riferimenti alla fattura di acquisto e i dati del fornitore nei documenti di acquisto in entrata vengono automaticamente ripristinati ai valori precedenti al ricevimento del file SDI. (#TT260/26)
-> -	WM - Analisi disponibilità: Corretta visualizzazione “Data fine prevista” per ordini di produzione in scheda dettaglio. (#TT00627/26)
-> -	WM - Corretto impegno per quantità consumata in segnalazioni di produzione. (#TT02206/26)
-> -	WM - WebAPI Import WarehousePosting con Serial Number: Corretto errore per chiave “IsAvailable” non trovata. (#TT01788/26)
+> -	SCM - Reso per riparazione: ottimizzazione gestione reso per riparazione di un articolo con Serial Number (#TT02651/26)
+> -	SDI - Documenti di Acquisto in entrata: Quando lo stato del file SDI viene modificato in “Non assegnato” (per scollegare la fattura di acquisto): I riferimenti alla fattura di acquisto e i dati del fornitore nei documenti di acquisto in entrata vengono automaticamente ripristinati ai valori precedenti al ricevimento del file SDI (#TT260/26)
+> -	WM - Analisi disponibilità: Corretta visualizzazione “Data fine prevista” per ordini di produzione in scheda dettaglio (#TT00627/26)
+> -	WM - Corretto impegno per quantità consumata in segnalazioni di produzione (#TT02206/26)
+> -	WM - WebAPI Import WarehousePosting con Serial Number: Corretto errore per chiave “IsAvailable” non trovata (#TT01788/26)
 > -	SD - Offerta cliente con struttura gerarchica - nella tab materiali gestita la conversione del costo materiale in valuta dell’offerta (#TT02681/26)
 
 ### Patch 803.0027 - 22/06/2026
@@ -252,10 +252,10 @@ Regole applicate:
 > -	CO - salvataggio modelli di riclassificazione, ottimizzazione (#TT02665/26)
 > -	CRM - Ticket - ripristinata possibilità di modifica extradata in seguito a salvataggio ticket (#TT02613/26)
 > -	Fi - Valorizzazione area acquisti/vendite (#TT02678/26)
-> -	SCM - Creazione automatica ordini fornitori da RDA: ottimizzazione gestione data richiesta consegna e data consegna in prototipi ordine (#TT02154/26).
-> -	SCM - Duplicazione fatture di acquisto: corretta la gestione del riporto della data di competenza nella fattura duplicata (#2459/26).
-> -	SCM - Ottimizzazione procedure di rollback carico e scarico documenti con articoli gestiti a lotti e serial number (#TT00744/26).
-> -	SCS - Extradata Conto Lavoro: Implementata propagazione degli extra-data dagli ordini conto lavoro ai DDT di consegna. (#2617/26)
+> -	SCM - Creazione automatica ordini fornitori da RDA: ottimizzazione gestione data richiesta consegna e data consegna in prototipi ordine (#TT02154/26)
+> -	SCM - Duplicazione fatture di acquisto: corretta la gestione del riporto della data di competenza nella fattura duplicata (#2459/26)
+> -	SCM - Ottimizzazione procedure di rollback carico e scarico documenti con articoli gestiti a lotti e serial number (#TT00744/26)
+> -	SCS - Extradata Conto Lavoro: Implementata propagazione degli extra-data dagli ordini conto lavoro ai DDT di consegna (#2617/26)
 > -	SH - Ripristinata funzionalità per cui nelle corpo delle email inviate da workflow, sono inclusi i link agli stati alternativi, che permettono l'avanzamento del workflow da email (#TT02687/26)
 > -	SH - workflow log - risolto caso per cui una attività di workflow completata tramite task utente, non mostrava più la descrizione (#TT01373/26)
 > -	Solved bug to Add more than one object to Excel Imports
@@ -267,7 +267,7 @@ Regole applicate:
 > -	FI - Calcolo Provvigioni: aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. Rif #TT02180/26
 > -	FI - ricerca compensi, revisione applicazione filtro
 > -	PR - Gestione della liquidità: revisione inserimento righe disponibilità bancarie da cash flow e da ricerca registrazioni (#TT01923/26 - #TT02211/25 - #TT03176/25)
-> -	SCM - Bolle di Acquisto Rollback Carico Lotti e Serial Number: risolto il rollback dei movimenti di carico da bolla di acquisto, l’indisponibilità era causata dal fatto che i movimenti dei ddt valorizzati in fattura non venivano conteggiati correttamente. (#TT744/26)
+> -	SCM - Bolle di Acquisto Rollback Carico Lotti e Serial Number: risolto il rollback dei movimenti di carico da bolla di acquisto, l’indisponibilità era causata dal fatto che i movimenti dei ddt valorizzati in fattura non venivano conteggiati correttamente (#TT744/26)
 > -	SD - Blocco eliminazione righe su Riepiloghi Iva/scadenze su elenco Fatture Vendita post consegna allo SDI (#TT02532/26)
 > -	SD - Fatture di vendita: risolta l'errata applicazione degli sconti finali nella procedura di creazione da DDT per gli articoli con parametro 'Nessuna condizione commerciale' attivo (#TT02260/26)
 > -	SH - Risolto un problema di blocco della riga nella griglia di inserimento che si verificava al doppio clic sui campi ComboBox relativi a oggetti referenziati, in assenza di filter widget o filter result.
@@ -275,20 +275,20 @@ Regole applicate:
 ### Patch 803.0024 - 12/06/2026
 
 > -	Arm - fix merge (#TT02594/26)
-> -	FI - aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. Modifications inside the form calculate commission report can have impact on profiles. (#TT02180/26)
+> -	FI - aggiunta visibilità dei parametri di filtro nella stampa Amministrazione > Percipienti > Calcolo Provvigioni. **Attenzione! Questa modifica può impattare sui profili** (#TT02180/26)
 > -	FI - Import bank account (#TT02271/26)
 > -	FI - revisione contabilizzazione nota di credito acquisti con segni misti e date competenza differenti (#TT02545/26)
-> -	MES - Costificazione Ordini di produzione: corretta anomalia che non considerava le variazioni di Macchina e/o Gruppo manodopera nelle Dichiarazioni di produzione rispetto a quelli predefiniti nella Fase di lavoro. (#TT02400/26).
-> -	MS - Pianificazione generale: corretta un'anomalia nel controllo della disponibilità degli articoli richiesti dagli Ordini cliente quando il magazzino di vendita non era compreso tra quelli considerati dal calcolo della disponibilità. (#TT02573/26)
+> -	MES - Costificazione Ordini di produzione: corretta anomalia che non considerava le variazioni di Macchina e/o Gruppo manodopera nelle Dichiarazioni di produzione rispetto a quelli predefiniti nella Fase di lavoro (#TT02400/26)
+> -	MS - Pianificazione generale: corretta un'anomalia nel controllo della disponibilità degli articoli richiesti dagli Ordini cliente quando il magazzino di vendita non era compreso tra quelli considerati dal calcolo della disponibilità (#TT02573/26)
 > -	PR - Extend the PR_FileTypes column PRFTY_Extension to 4 chars (#TT02586/26)
 > -	SD - Corretta visualizzazione categoria merceologia in procedura “Duplica e manutenzione listini di vendita” (#TT02219/26)
-> -	SD - Corretta visualizzazione sconti di riga e riepiloghi su DDT creato con “Evasione DDT” da elenco ordini clienti (#TT02585/26).
-> -	SD - Corretta visualizzazione stato evasione ordine cliente da proprietà. Modifications inside the SalesOrder property form can have impact on profiles. (#TT02468/26).
+> -	SD - Corretta visualizzazione sconti di riga e riepiloghi su DDT creato con “Evasione DDT” da elenco ordini clienti (#TT02585/26)
+> -	SD - Corretta visualizzazione stato evasione ordine cliente da proprietà. **Attenzione! Questa modifica può impattare sui profili** (#TT02468/26)
 > -	SD - Corretto ricalcolo colli-pesi su righe ordine cliente al variare della quantità alternativa (#TT00803/26)
-> -	SD - Evasione Ordini Cliente: È stata introdotta la gestione degli ordini cliente con totale negativo, tipicamente utilizzati per rappresentare un rientro merce anziché una vendita. Nei casi di ordine con totale negativo le quantità e/o i prezzi vengono automaticamente gestiti con segno negativo (-). Tali ordini possono essere evasi esclusivamente tramite fatture con natura Nota di accredito. L’evasione di questi ordini è consentita solo all’interno di una nuova fattura con Tipo impostato come Nota di accredito. Non è possibile evadere questi ordini direttamente dal filtro Ordini. (#TT1868/26)
+> -	SD - Evasione Ordini Cliente: È stata introdotta la gestione degli ordini cliente con totale negativo, tipicamente utilizzati per rappresentare un rientro merce anziché una vendita. Nei casi di ordine con totale negativo le quantità e/o i prezzi vengono automaticamente gestiti con segno negativo (-) Tali ordini possono essere evasi esclusivamente tramite fatture con natura Nota di accredito. L’evasione di questi ordini è consentita solo all’interno di una nuova fattura con Tipo impostato come Nota di accredito. Non è possibile evadere questi ordini direttamente dal filtro Ordini (#TT1868/26)
 > -	SD - offerta già convertita in ordine, risolto caso per cui convertendo nuovamente veniva dato messaggio con esito positivo ma l’ordine non veniva creato effettivamente (#TT02496/26)
 > -	SH - Corretto anomalia del pulsante refresh all'interno del ribbon dashboard (#TT02321/26)
-> -	WMS - Spunta Picking: Aggiunto ordinamento in prelievo righe picking per Ubicazione e Priorità ubicazione. Modifications inside the form can have impact on profiles. (#TT02126/26)
+> -	WMS - Spunta Picking: Aggiunto ordinamento in prelievo righe picking per Ubicazione e Priorità ubicazione. **Attenzione! Questa modifica può impattare sui profili** (#TT02126/26)
 
 
 ### Patch 803.0023 - 05/06/2026
