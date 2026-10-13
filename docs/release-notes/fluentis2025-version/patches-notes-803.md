@@ -4,6 +4,25 @@ sidebar_label: 🔧 Patch Notes v803
 sidebar_position: 1.2
 ---
 
+### Patch 803.0038 - 13/10/2026
+
+> -	FI - contabilizzazione assestamenti con singola registrazione impostata, revisione gestione link tra movimenti analitica e giornale. (#TT02507/26, #TT04169/26)
+> -	FI - Corretti i parametri di contabilizzazione relativi ai pagamenti dei compensi (#TT04081/26)
+> -	FI - il salvataggio compensi professionisti con flag di calcolo manuale non aggiorna più erroneamente l’importo della ritenuta appena modificata. (#TT04123/26)
+> -	FI - Importazione da DocFinance, revisione gestione riferimento al numero documento nel caso di apertura di una nuova partita (#TT04247/26)
+> -	FI - Importazione registrazioni da DocFinance, la data scadenza inserita nel pagamento importato ora corrisponde alla data scadenza della partita di riferimento. (#TT04071/26)
+> -	MES - Dichiarazioni di produzione - WEBAPI Import: correzione anomalia all'indicazione della macchina non facente parte del centro di lavoro previsto. (#TT03454/26, #TT03666/26)
+> -	MES - Manufacturing Execution System: Corretta anomalia che creava erroneamente ordini pianificati di produzione nonostante giacenza sufficiente. (#TT03659/26).
+> -	MES - Manufacturing Execution System: Corretta anomalia che non permetteva la stampa definitiva di un foglio di lavoro di una fase esterna. (#TT04040/26)
+> -	MS - Costificazione Commesse di Produzione:
+>> - gestito il costo dei materiali non previsti;
+>> - considerazione del costo effettivo della lavorazione esterna nel totale costo effettivo di lavorazione del documento.
+> -	Risolto problema concorrenza esecuzione eventi da schedulatore e da UI #TT04184/26
+> -	SCM - Calcolo CONAI: ottimizzato calcolo nella procedura di valorizzazione DDT di Acquisto (#TT04208/26).
+> -	SCS - Rientro Conto Lavoro: È ora possibile rimuovere il flag “Caricato” esclusivamente quando questo è stato impostato manualmente dall’utente. La rimozione non è consentita nel caso in cui il carico sia supportato da una registrazione di magazzino, al fine di garantire la coerenza e l’integrità dei dati di movimentazione. (#TT04119/26)
+> -	WM - LoadPlan: Risolta anomalia che, nei piani di carico, tab preparazione piani di carico, non permetteva di salvare correttamente modifiche sulla quantità nella colonna articoli. (#TT04102/26)
+> -	WM - Ottimizzata anteprima stampa di Inventario Quantità Valorizzato (#TT04234/26)
+
 ### Patch 803.0037 - 01/10/2026
 
 > - Aggiornata la configurazione di default del connettore IMAP
