@@ -4,6 +4,42 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.025 - 13/10/2026
+
+> -	ARM - Gestione Cicli: Errore chiave duplicata in workflow con script (#TT04246/26)
+> -	ARM - modifiche Workflow (#TT04103/26)
+> -	BizLink - SD: configurata nuova importazione da Excel per i DDT di vendita - SalesDeliveryNote (#TT04950/26).
+> -	Fast start IT: soluzione errori di fk su causali e tipi fatture di vendita in società successive alla prima
+> -	FI - contabilizzazione assestamenti con singola registrazione impostata, revisione gestione link tra movimenti analitica e giornale. (#TT02507/26, #TT04169/26 )
+> -	FI - il salvataggio compensi professionisti con flag di calcolo manuale non aggiorna più erroneamente l’importo della ritenuta appena modificata. (#TT04123/26)
+> -	FI - Importazione da DocFinance, revisione gestione riferimento al numero documento nel caso di apertura di una nuova partita (#TT04247/26)
+> -	FI - Importazione registrazioni da DocFinance, la data scadenza inserita nel pagamento importato ora corrisponde alla data scadenza della partita di riferimento. (#TT04071/26)
+> -	FI - modello 123 per la localizzazione spagnola, revisione (#TT03706/26).
+> -	FI - modello iva 303 per localizzazione spagnola, revisione gestione importi negativi e riferimenti bancari vuoti (#TT03688/26)
+> -	FI - nella LIPE, quando si imposta il codice fiscale intermediario ora Fluentis avvisa se si è dimenticato di impostare la data impegno. (#TT04153/26)
+> -	MES - Dichiarazioni di produzione - WEBAPI Import: correzione anomalia all'indicazione della macchina non facente parte del centro di lavoro previsto. (#TT03454/26, #TT03666/26)
+> -	MES - Manufacturing Execution System: Corretta anomalia che creava erroneamente ordini pianificati di produzione nonostante giacenza sufficiente. (#TT03659/26).
+> -	MES - Manufacturing Execution System: Corretta anomalia che non permetteva la stampa definitiva di un foglio di lavoro di una fase esterna. (#TT04040/26)
+> -	MS - AFCS. Se nei parametri MRP il flag "Escludi da pianificazione" è attivo, per l'articolo non vengono importati ne ordini ne fabbisogni pur se esistenti. (#TT03480/26)
+> -	MS - Costificazione Commesse di Produzione:
+>> - gestito il costo dei materiali non previsti;
+>> - considerazione del costo effettivo della lavorazione esterna nel totale costo effettivo di lavorazione del documento.
+> -	MS - AFCS: nel tab dei tasks è stata aggiunta la colonna "ore inattive" (#TT03918/26)
+> -	MS - Gestione Cicli e Fasi di lavoro: sono state aggiunte le nuove colonne di Macchina, Gruppo manodopera e Piano di controllo per agevolare la manutenzione delle informazioni di fase. (#TT04251/26)
+> -	MS - Gestione Cicli e Fasi di lavoro: sono stati aggiunti i nuovi filtri di ricerca per Macchina, Gruppo manodopera e Visualizza anche articoli archiviati per agevolare la ricerca delle fasi da manutenere. (#TT04252/26)
+> -	PM - MAUI - introdotto blocco che impedisce di aggiungere allegati a righe non salvate di spese e servizi negli interventi (#TT03601/26)
+> -	PM - MAUI - ricerca attività, risolto caso per cui la colonna totale riportava tutti valori a 0 (#TT04243/26)
+> -	Risolto problema concorrenza esecuzione eventi da schedulatore e da UI (#TT04184/26)
+> -	SCM - Fatture di Acquisto - Articoli - Aggiornamento listini: nelle fatture di acquisto generate da righe provenienti da DDT di acquisto e da Rientri conto lavoro, il pulsante Aggiornamento listini viene ora correttamente abilitato sia per l'aggiornamento dei listini di acquisto sia dei listini di conto lavoro. (#TT04082/26)
+> -	SCM -  Calcolo CONAI: ottimizzato calcolo nella procedura di valorizzazione DDT di Acquisto (#TT04208/26).
+> -	SCM - Ottimizzata chiamata WebApi di importazione DDT di acquisto nella sezione MaturityDate all’interno dei Lotti (#TT04294/26)
+> -	SCS - Rientro Conto Lavoro: È ora possibile rimuovere il flag “Caricato” esclusivamente quando questo è stato impostato manualmente dall’utente. La rimozione non è consentita nel caso in cui il carico sia supportato da una registrazione di magazzino, al fine di garantire la coerenza e l’integrità dei dati di movimentazione. (#TT04119/26)
+> -	SD - Stampa situazione acconti: revisione della proposta dei totali in presenza di valori negativi. (Rif. Ticket 4253)
+> -	SH - Tax Engine, revisione gestione arrotondamenti quando il tipo tassa ha l’impostazione ‘Is rounded by item’ = 0 (#TT04277/26)
+> -	WM - Ottimizzata anteprima stampa di Inventario Quantità Valorizzato (#TT04234/26)
+> -	WMS - Carico, Scarico, Sposta and Rettifica articolo: modificata lettura del tokenizer per evitare lo sbiancamento del lotto. (#TT04112/26)
+> -	WMS - Ricevimento merci: Corretto riposizionamento in inserimento dopo cancellazione di una UDC di carico. (#TT03487/26)
+
 ### Patch 804.024 - 05/10/2026
 
 > -	ARM - Gestione Cicli: Errore chiave duplicata in workflow con script (#TT04246/26)
