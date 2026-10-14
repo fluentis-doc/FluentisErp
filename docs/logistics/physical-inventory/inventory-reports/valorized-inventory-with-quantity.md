@@ -17,9 +17,9 @@ La form si compone di una parte superiore contenente una serie di filtri (magazz
 Inoltre, tramite una serie di box dedicati è possibile:
 
 - raggruppare i dati per articolo o magazzino;      
-- ordinarli per articolo, caratteristica, descrizione e categoria merceologica;     
-- avere un dettaglio per variante, ubicazione, commessa, lotto o cliente/fornitore;       
-- visualizzare gli articoli con giacenza positiva, nulla o negativa.
+- ordinarli per articolo, caratteristica, descrizione o categoria merceologica;     
+- avere un dettaglio per variante, ubicazione, commessa, lotto e cliente/fornitore;       
+- visualizzare gli articoli con giacenza positiva, nulla e negativa.
 
 Attivando il box **Con valorizzazione al**, verrà inserito all'interno del report dell'inventario anche il valore del singolo articolo sulla base dei seguenti flags:
 
@@ -33,6 +33,8 @@ Attivando il box **Con valorizzazione al**, verrà inserito all'interno del repo
 - **Storicizzazione inventario**: se attivo, i dati dell'elaborazione verranno salvati nello [Storico magazzino](/docs/logistics/physical-inventory/warehouse-history);      
 - **Da storicizzazione**: se attivo, gli articoli vengono valorizzati con i valori presenti nella [Storico magazzino](/docs/logistics/physical-inventory/warehouse-history) con data pari a quella indicata nel campo **Data costo storico**;      
 - **Data costo storico**: si abilita solo se il flag **Da storicizzazione** è attivo, permette di inserire la data del costo storico da utilizzare per la valorizzazione.
+- **Considera anche movimenti non di interesse fiscale**: se attivo, per la valorizzazione vengono inclusi anche i movimenti con causale non di interesse fiscale che normalmente sono esclusi.
+
 
 Dopo l'inserimento dei parametri desiderati è possibile stampare dei report standard oppure personalizzati (previa mappatura nella gestione stampe). Nel caso si volesse stampare un report personalizzato è necessario scegliere lo stesso dal tabulato nei parametri di stampa.
 

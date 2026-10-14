@@ -54,7 +54,7 @@ Il prezzo di vendita in anagrafica dell'articolo viene aggiornato con l'importo 
 
 **Aggiorna costo articolo**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag **Aggiorna Costo Articolo** attivato, vengono aggiornati rispettivamente il costo medio, il costo ultimo e/o il prezzo di vendita in anagrafica dell'articolo con l'importo del movimento in base a quali dei seguenti flag sono attivi: *Aggiorna costo medio*, *Aggiorna costo ultimo* e *Aggiorna prezzo di vendita*.      
 
-**Interesse fiscale**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag **Interesse Fiscale** attivato, il movimento stesso viene considerato nel giornale di magazzino e nel calcolo del costo ultimo, medio e dell'inventario quantità valorizzato, sempre che l'articolo movimentato abbia anch'esso il flag *Interesse Fiscale* attivato sul tab *Generalità*;
+**Interesse fiscale**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag **Interesse Fiscale** attivato, il movimento stesso viene considerato nel giornale di magazzino e nel calcolo del costo ultimo, medio e dell'inventario quantità valorizzato, sempre che l'articolo movimentato abbia anch'esso il flag *Interesse Fiscale* attivato sul tab *Generalità*; Questo flag non ha impatto nel calcolo della giacenza in nessun report fiscale.
 
 **Punto di riordino**: quando si inserisce un movimento di magazzino utilizzando nella testata della registrazione la causale che ha il flag **Punto di Riordino** attivato, il movimento viene considerato dalla procedura che esegue il calcolo del punto di riordino;     
 
