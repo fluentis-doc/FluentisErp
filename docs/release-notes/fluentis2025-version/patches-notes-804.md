@@ -4,9 +4,9 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
-### Patch 804.026 - 13/10/2026
+### Patch 804.026 - 16/10/2026
 
-> -	ARM - fix unexpected shutdown when creating dictionary entries(TT04157/26)
+> -	ARM - fix unexpected shutdown when creating dictionary entries (TT04157/26)
 > -	Bizlink - METEL Parser: Sono stati adeguati i parser di bizlink per la versione METEL 020 (file a 178 caratteri) e 021 (file a 234 caratteri) per importare la famiglia di sconto a 18 caratteri interamente nella categoria di sconto fornitore-acquisto-vendita (#TT1270/26)
 > -	CO - Scritture di integrazione, revisione gestione FSPostingProfitCenter per valori int/smallint (#TT04455/26)
 > -	CPQ - Configuratore: Aggiunto il filtro per le risposte, aggiunto il supporto alla quantità ed ottimizzata la gestione dei valori consentiti.
