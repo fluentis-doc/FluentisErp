@@ -4,6 +4,37 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.026 - 13/10/2026
+
+> -	ARM - fix unexpected shutdown when creating dictionary entries(TT04157/26)
+> -	Bizlink - METEL Parser: Sono stati adeguati i parser di bizlink per la versione METEL 020 (file a 178 caratteri) e 021 (file a 234 caratteri) per importare la famiglia di sconto a 18 caratteri interamente nella categoria di sconto fornitore-acquisto-vendita (#TT1270/26)
+> -	CO - Scritture di integrazione, revisione gestione FSPostingProfitCenter per valori int/smallint (#TT04455/26)
+> -	CPQ - Configuratore: Aggiunto il filtro per le risposte, aggiunto il supporto alla quantità ed ottimizzata la gestione dei valori consentiti.
+> -	FI - Automatic closing - show erros on creating registrations (#TT04397/26, TT00585/26)
+> -	FI - contabilizzazione accrediti, revisione rollback con pulsante ‘rollback registrazione’ (#TT04068/26)
+> -	FI - Ottimizzata la gestione e migliorata la fluidità delle mappe nell’anagrafica contatti (#TT04293/26)
+> -	FI - Ricerca compensi: corretta la gestione del filtro “Data pagamento” nella ricerca dei compensi. Modifications inside professional filter form can have impact on profiles (#TT03733/26).
+> -	FI - Stampa schede cespiti: corretta la stampa in presenza del filtro “Ubicazione” (#TT04471/26).
+> -	MS & MES - Controlli coerenza Centro di lavoro / Macchina: sono stati implementati i controlli di coerenza della Macchina selezionata rispetto al Centro di Lavoro indicato.  
+Tali controlli, non bloccanti, vengono effettuati nelle gestioni: Centro di Lavoro, Fasi standard, Fasi Ciclo di lavoro, Fasi ordini pianificati, Sequenza fasi, Capacità Centri di lavoro, Generazione manuale tasks, Fasi ordini di produzione, in tutte le Dichiarazioni di produzione; nelle elaborazioni: Completamento dati ordine degli ordini pianificati e in quelli di produzione (#TT03486/26)  
+> -	PR - creazione file Sepa, revisione gestione del tag <SvcLvl> (service level) (#TT04464/26)
+> -	PR - pagamenti fornitori nella localizzazione USA, nascoste le colonne Cin-Abi-Iban. Modifications inside form vendor payment detail can have impact on profiles (#TT04401/26)
+> -	Risolto bug Form Designer per localizzazione colonne ComboBox
+> -	SCM - Modifica cambio, divisa, importo in fattura di acquisto: ottimizzata procedura che consente allineamento documentale su DDT e registrazione di magazzino (#TT04414/26).
+> -	SCM - Valorizzazione DDT di acquisto: ottimizzato calcolo del totale valorizzazione sulla base delle righe documento selezionate (#TT03788/26).
+> -	SCM - SD - Categorie di sconto: Ampliato il codice categoria di sconto a 20 caratteri e adeguate tutte le procedure che utilizzano il codice categoria di sconto (prezzi fornitore e importazione prezzi fornitore, abbinamento categorie sconto di acquisto e vendita con categoria di sconto fornitore) (#TT1270/26)
+> -	SD - Stampa ordine cliente: ottimizzato calcolo calcolato Totale merce (#TT04449/26)
+> -	SH - gestione contatti, aggiunto campo “email pec” nell’anagrafica principale, indirizzi alternativi e dati storici. Modifications inside form contact can have impact on profiles (#TT03973/26)
+> -	SH - Profili - Corretto bug di visualizzazione nei profili sulle grigle di ricerca (#TT02827/26)
+> -	Solved bug to add missing usings on script editor
+> -	Solved problem to show invalid methods name on Blockly widgets
+> -	Updated logic for updating the 'release' field; fixed bug regarding source updates from Blockly.
+> -	WM - Distinta Base: Apertura da Menu contestuale con versione di default della distinta Pharma (#TT00931/26)
+> -	WM - LoadPlan: Risolta anomalia che, nei piani di carico, tab preparazione piani di carico, non permetteva di salvare correttamente modifiche sulla quantità nella colonna articoli (#TT04102/26)
+> -	WMS - Ricevimento merce: Cancellazione del DDT da oggetti bloccati in annullamento salvataggio (#TT04475/26)
+> -	WMS - Ricevimento Merce: Corretta gestione non coerente dei campi quantità alternativa (#TT04434/26)
+> -	Workflow: activation conditions on extended (Custom) objects (TT04324/26)
+
 ### Patch 804.025 - 13/10/2026
 
 > -	ARM - Gestione Cicli: Errore chiave duplicata in workflow con script (#TT04246/26)
