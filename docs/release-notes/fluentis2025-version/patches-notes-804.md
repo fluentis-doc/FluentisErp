@@ -17,7 +17,7 @@ sidebar_position: 1.1
 > -	FI - Stampa schede cespiti: corretta la stampa in presenza del filtro “Ubicazione” (#TT04471/26).
 > -	MS & MES - Controlli coerenza Centro di lavoro / Macchina: sono stati implementati i controlli di coerenza della Macchina selezionata rispetto al Centro di Lavoro indicato.  
 Tali controlli, non bloccanti, vengono effettuati nelle gestioni: Centro di Lavoro, Fasi standard, Fasi Ciclo di lavoro, Fasi ordini pianificati, Sequenza fasi, Capacità Centri di lavoro, Generazione manuale tasks, Fasi ordini di produzione, in tutte le Dichiarazioni di produzione; nelle elaborazioni: Completamento dati ordine degli ordini pianificati e in quelli di produzione (#TT03486/26)  
-> -	PR - creazione file Sepa, revisione gestione del tag <SvcLvl> (service level) (#TT04464/26)
+> -	PR - creazione file Sepa, revisione gestione del tag `<SvcLvl>` (service level) (#TT04464/26)
 > -	PR - pagamenti fornitori nella localizzazione USA, nascoste le colonne Cin-Abi-Iban. Modifications inside form vendor payment detail can have impact on profiles (#TT04401/26)
 > -	Risolto bug Form Designer per localizzazione colonne ComboBox
 > -	SCM - Modifica cambio, divisa, importo in fattura di acquisto: ottimizzata procedura che consente allineamento documentale su DDT e registrazione di magazzino (#TT04414/26).
