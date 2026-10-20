@@ -4,6 +4,37 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.027 - 20/10/2026
+
+> -	BIZLINK - Parser METEL: Rilasciato il supporto al nuovo tracciato METEL versione 022 per l'importazione dei listini. Questa versione mantiene la stessa struttura informativa già disponibile nel tracciato della versione 021, inclusa la gestione della famiglia sconti a 18 caratteri e non a 30 come da nuove specifiche della versione 022.  
+Sono ora disponibili tre parser distinti per l'importazione dei file listino METEL, in funzione della versione del tracciato e dei file con nomenclatura LSP e LSG. L'importazione può essere effettuata utilizzando la stessa cartella di input per tutte le versioni dei listini. Il parser corretto viene selezionato automaticamente in base al nome del file, tramite il riconoscimento della versione riportata prima dell'estensione .txt (ad esempio tramite il pattern (?i).*LS.*022\.txt$). È possibile personalizzare il nome del file, purché venga mantenuta l'indicazione della versione immediatamente prima dell'estensione. Ad esempio:
+>> - NomeFile021.txt → utilizza il parser METEL versione 021
+>> - NomeFile022.txt → utilizza il parser METEL versione 022
+Per garantire una corretta elaborazione del listino, il suffisso della versione (021, 022, ecc.) deve essere sempre presente prima dell'estensione .txt. (#TT01271/26)  
+> -	CO - Corretta la visualizzazione dei DDT di acquisto forzatamente valorizzati nella procedura “Valorizzazione area acquisti e vendite” (#TT03933/26)
+> -	CO - Errore cancellazione centri aziendali: Sistemato errore che bloccava il programma quando veniva cancellato un centro aziendale utilizzato. Aggiunto messaggio di errore per avvertire l’utente che il centro aziendale è stato utilizzato. (#TT04134/26)
+> -	CO - Risolto un problema durante la creazione del bilancio infrannuale che causava la visualizzazione del messaggio di errore "L'operazione è stata annullata dall'utente". (#TT04479/26)
+> -	FI - Corretta un’anomalia nel filtro Anno Report della stampa Schede Cespiti. La stampa riporta ora esclusivamente le operazioni patrimoniali relative all’anno selezionato e agli anni precedenti (#TT04427/26)
+> -	Gestione degli allegati per le fatture elettroniche per le nazioni HR e RO”(#TT04410/26)
+> -	MS - Centri di lavoro - Orari Macchina/operai: è stata data la possibilità di inserire le 24:00 ore. (#TT04404/26)
+> -	MS - M.R.P.: analizzati anche gli articoli gestiti a scorta che non hanno documenti per la loro domanda o offerta. (#TT04500/26)
+> -	PM - MAUI - conferma ferie e permessi, proposta wbs corrispondente alla causale inserita nella richiesta (#TT04384/26)
+> -	PM - MAUI - risolti diversi casi relativi all'inserimento, conferma e rollback richieste ferie e permessi (#TT03604/26)
+> -	PM - nelle attività generate da intervento, le spese sostenute nella attività sono proposte uguali alle spese sostenute nell'intervento (#TT04382/26)
+> -	Portal - funzionalità chat non funzionanti (#TT04291/26)
+> -	PR - importazione movimenti conto corrente da xml Sepa, gestione del tag ValDt mancante. (#TT04491/26)
+> -	PR - nel file riba gli effetti ora vengono inseriti in ordine di debitore, data scadenza, anno e numero effetto (#TT04435/26)
+> -	SCM - Stato evasione ordine fornitore: ottimizzata gestione di un ordine forzatamente evaso che viene annullato (#TT04415/26).
+> -	SCM - Valorizzazione DDT di acquisto e di rientro: Ottimizzata gestione colonna “Tipo fattura” non valorizzata nei Tipi DDT di acquisto (#TT04400/26).
+> -	SCS - Scarico Automatico: implementato il parametro di carico scarico automatico che esegue lo scarico automatico per i DDT di consegna (#TT0610/26)
+> -	SD - Fatture di vendita: Nel diagramma di evasione viene riportato anche il riferimento all’oggetto Intervento se la fattura nasce da una valorizzazione interventi. (#TT02524/25)
+> -	SD - Duplica offerta - resa possibile variazione intestazione prima del salvataggio, i campi cliente e contatto crm saranno abilitati fino al salvataggio. (#TT03140/26)
+> -	SD - WEB - inserimenti righe non codificate nelle offerte, risolto caso per cui nella modalità popup form non sempre si abilitava il campo UM (#TT04232/26)
+> -	SH - incrementato a 100 caratteri il campo Descrizione nella tabella Aliquote/ Modalità IVA. (#TT04528/26)
+> -	WM - Registrazioni di magazzino: Corretta cancellazione extension movimenti in cancellazione righe. (#TT04337/26)
+> -	WMS - Gestione Spunta: Corretto movimenti per lotti doppi su carico UDC in determinati contesti. (#TT04523/26)
+> -	WMS - Widget ubicazioni: Corretta lista ubicazioni che non veniva caricata e widget che coprivano i messaggi di errore del barcode. (#TT04496/26)
+
 ### Patch 804.026 - 16/10/2026
 
 > -	ARM - fix unexpected shutdown when creating dictionary entries (TT04157/26)
