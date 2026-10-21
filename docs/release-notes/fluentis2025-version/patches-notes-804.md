@@ -21,7 +21,6 @@ Per garantire una corretta elaborazione del listino, il suffisso della versione 
 > -	PM - MAUI - conferma ferie e permessi, proposta wbs corrispondente alla causale inserita nella richiesta (#TT04384/26)
 > -	PM - MAUI - risolti diversi casi relativi all'inserimento, conferma e rollback richieste ferie e permessi (#TT03604/26)
 > -	PM - nelle attività generate da intervento, le spese sostenute nella attività sono proposte uguali alle spese sostenute nell'intervento (#TT04382/26)
-> -	Portal - funzionalità chat non funzionanti (#TT04291/26)
 > -	PR - importazione movimenti conto corrente da xml Sepa, gestione del tag ValDt mancante. (#TT04491/26)
 > -	PR - nel file riba gli effetti ora vengono inseriti in ordine di debitore, data scadenza, anno e numero effetto (#TT04435/26)
 > -	SCM - Stato evasione ordine fornitore: ottimizzata gestione di un ordine forzatamente evaso che viene annullato (#TT04415/26).
