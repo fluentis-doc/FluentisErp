@@ -54,7 +54,7 @@ Na kartici **Detalji** zaliha artikla moguće je koristiti gumb **Generiranje za
 - pritisnite gumb *Generiranje zapisa*, koji će otvoriti formu *Pomicanja* gdje je potrebno unijeti vrijednosti Uzroka, Količine, Datum evidentiranja i po potrebi Lokaciju. Uzroci skladišta prisutni u padajućem izborniku su tipa Knjiženja ako je označena opcija prikaza Negativnih zaliha i Ispravljanja ako je označena opcija prikaza *Pozitivnih* zaliha.
 - nakon što završite unos polja u formu *Knjiženja*, pritisnite gumb *OK* kako biste se vratili na prikaz zaliha koji će biti ažuriran prema unesenom zapisu.
 
-Kada se u obrascu *Kretanje* unese razlog s protukontom, on će biti predložen u polju **Predložak prijeboja** sa svojom **Lokacijom**, ako je kodificiran u tablici razloga.  
+Kada se u obrascu *Kretanje* unese predložak s protukontom, on će biti predložen u polju **Predložak prijeboja** sa svojom **Lokacijom**, ako je kodificiran u tablici razloga.  
 Ako se **Lokacija** izbriše, u zapis će biti unesen ona kodificirana u [Mapi lokacija za artikle](/docs/logistics/warehouse/location/item-location-map), ako postoji, inače će polje ostati prazno.
 
 ### Nuliranje zaliha
