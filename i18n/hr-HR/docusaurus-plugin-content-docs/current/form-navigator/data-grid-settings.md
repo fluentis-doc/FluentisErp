@@ -15,7 +15,7 @@ Kako bi se definiralo da tablica treba biti postavljena s opcijom **potpunog uč
 
 Nakon što se definira ovaj način upravljanja podacima, predstavljaju se neke opcije **zbrajanja/upravljanja podacima**: 
 
-Desnim klikom na zaglavlje tablice otvara se izbornik gdje se odabire opcija *Panel ukupnog sažetka*, a zatim desnim klikom izvan tablice, ali u visini stupca koji treba zbrojiti, odabere se želi li se prikazati: Suma, Min, Maks, Broj, Prosjek:
+Desnim klikom na zaglavlje tablice otvara se izbornik gdje se odabire opcija *Panel ukupnog sažetka*, a zatim desnim klikom izvan tablice, ali u visini stupca koji treba zbrojiti, odabere se želi li se prikazati: Zbroj, Min, Maks, Broj, Prosjek:
 
 ![](/img/it-it/guide/panels/form-navigator/data-grid-settings/image02.png)
 
