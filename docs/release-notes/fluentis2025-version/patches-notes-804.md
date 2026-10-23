@@ -4,6 +4,20 @@ sidebar_label: 🔧 Patch Notes v804
 sidebar_position: 1.1
 ---
 
+### Patch 804.028 - 23/10/2026
+
+> - MES - Dichiarazioni di produzione - API operation “Crea UDC”: è stata implementata la API operation CreateLoadingUnits che simula la pressione del pulsante “Crea UDC” presente nelle Dichiarazioni di produzione. (#TT04338/26)
+> - MES - Dichiarazioni di produzione - tabulatore Scarti: attivata la gestione della dichiarazione multipla di Scarti con diverso magazzino e causale di destinazione. (#TT03897/26)
+> - MES - Manufacturing Execution System: Corretta anomalia che non permetteva, in dichiarazione di produzione, la selezione multipla di lotti e serial number all’interno del tab materiali. (#TT03999/26)
+> - MS - Eliminazione degli ordini pianificati: correzione di un bug tecnico relativo alla conversione tra oggetti standard e custom. (#TT4505/26, #TT4506/26, #TT4509/26)
+> - MS - Pianificazione generale: se si settavano i giorni di anticipo per i materiali nei parametri di pianificazione, sui pianificati di livello superiore al primo la data fine era errata. (#TT04541/26)
+> - PM - MAUI - nota spese, corrette diverse casistiche relative al layout form (#TT03599/26)
+> - SDI Documenti di acquisto in entrata - Creazione fattura di acquisto: Per le righe di spesa, sconto e abbuono (tipologie AC, AB e SC) presenti nel file XML, il sistema crea automaticamente delle righe di tipo 3 - Spese. Tali righe vengono generate utilizzando gli stessi parametri previsti per le righe articolo; in particolare, viene adottato il comportamento delle righe di tipo 2 oppure delle righe di tipo 1 qualora l'articolo risulti codificato e correttamente riconosciuto.. (#TT04047/26)
+> - WM - Registrazioni di magazzino: Corretta anomalia che permetteva erroneamente di modificare una variante di un articolo dopo aver effettuato la registrazione di magazzino. (#TT04425/26)
+> - WMS - Gestione Spunta: Corretta sovrapposizione lista lotti a messaggio errore del barcode. (#TT04556/26)
+> - Fixed a bug affecting the opening of Flows and Flow Operations, as well as the updating of Flows.
+
+
 ### Patch 804.027 - 20/10/2026
 
 > -	BIZLINK - Parser METEL: Rilasciato il supporto al nuovo tracciato METEL versione 022 per l'importazione dei listini. Questa versione mantiene la stessa struttura informativa già disponibile nel tracciato della versione 021, inclusa la gestione della famiglia sconti a 18 caratteri e non a 30 come da nuove specifiche della versione 022.  
