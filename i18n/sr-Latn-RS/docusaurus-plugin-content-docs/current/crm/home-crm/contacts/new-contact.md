@@ -34,8 +34,9 @@ Ekran CRM kontakta sastoji se od tri dela:
 
 **Geografska širina/dužina**: omogućava upravljanje lokacijom kontakata pomoću geografske širine i dužine umesto adrese; ovi podaci koriste se za pozicioniranje na mapi dostupnoj u [Pretrazi CRM kontakata](/docs/crm/home-crm/contacts/search-contacts), u slučaju da adresa nije uneta.
 
-***Pipeline* kontakta**: ako je kontaktu dodeljen workflow i njegovo stanje odgovara jednom od stanja definisanih u „Pipeline kontakta“ za određeni tip kontakta, tada će polje „Pipeline kontakta“ na kartici kontakta biti automatski ažurirano.  
-Dakle, pri svakoj promeni stanja workflow-a, ukoliko postoji podudaranje, polje „Pipeline kontakta“ biće automatski osveženo. Na taj način workflow i polje Pipeline na kartici kontakta uvek će biti usklađeni.
+**Pipeline kontakt**: Označava fazu u kojoj se kontakt nalazi unutar određenog strukturiranog toka.
+Tok je definisan zasebno za svaku vrstu kontakta i može se konfigurisati u tabeli [Vrste kontakata](/docs/configurations/tables/crm/contacts/contact-type).
+Ako prva konfigurisana faza odgovara vrednosti „Contatto” ili „Kontakt” (opis mora biti tačno „Contatto” ili „Kontakt”, bez dodatnih reči), ta vrednost će automatski biti predložena u prodajnom *pipelineu* novog kontakta.
 
 **Poreklo kontakta**: moguće je navesti na koji način je kontakt ostvaren i njegov [Izvor](/docs/configurations/tables/crm/contacts/contact-origin).
 

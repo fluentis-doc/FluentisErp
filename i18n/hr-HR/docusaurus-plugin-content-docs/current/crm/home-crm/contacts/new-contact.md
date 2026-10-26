@@ -34,8 +34,11 @@ Zaslon za CRM Kontakt sastoji se od tri dijela:
 
 **Zemljopisna širina/duljina**: omogućuje se upravljanje lokacijom kontakata pomoću zemljopisne širine i duljine umjesto adrese; ti se podaci koriste za lociranje unutar karte dostupne u [Pretraživanju CRM kontakata](/docs/crm/home-crm/contacts/search-contacts), u slučaju da adresa nije unesena.   
 
-***Pipeline* kontakt**: Ako je kontaktu dodijeljen workflow i njegovo stanje odgovara jednom od stanja definiranih u "Pipeline kontakta" za određeni tip kontakta, tada će se polje "Pipeline kontakta" u kartici kontakta automatski ažurirati.
-Dakle, pri svakoj promjeni stanja workflowa, ako postoji podudaranje, polje "Pipeline kontakta" bit će automatski osvježeno. Na taj način workflow i polje Pipeline u kontaktnoj kartici uvijek će biti usklađeni. 
+***Pipeline* kontakt**: Označava fazu u kojoj se kontakt nalazi unutar određenog strukturiranog tijeka.
+Tijek je definiran zasebno za svaku vrstu kontakta i može se konfigurirati u tablici [Vrste kontakata](/docs/configurations/tables/crm/contacts/contact-type).
+Ako prva konfigurirana faza odgovara vrijednosti „Contatto” ili "Kontakt" (opis mora biti točno „Contatto” ili „Kontakt”, bez dodatnih riječi), ta će se vrijednost automatski predložiti u prodajnom *pipelineu* novog kontakta.
+
+Prelazak na sljedeće statuse može se izvršiti ručno ili pomoću odgovarajućih skripti u statusima povezanog tijeka rada.
 
 **Podrijetlo kontakta**: moguće je navesti na koji je način kontakt ostvaren te njegov [Izvor](/docs/configurations/tables/crm/contacts/contact-origin).    
 
