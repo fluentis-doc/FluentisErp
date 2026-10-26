@@ -5,7 +5,9 @@ sidebar_position: 2
 
 Izveštaj se nalazi na putanji **Logistika > Skladište > Izveštaji računovodstva > Pregled prometa** i omogućava korisniku generisanje izveštaja sa informacijama o promenama u skladištu. Na raspolaganju je više filtera i parametara za dobijanje željenog ispisa.
 
-U ovoj formi moguće je filtrirati prema skladištu, uzroku, artiklu, eventualnoj varijanti i drugim kriterijumima. Podrazumevano, izveštaj ne prikazuje promene koje nisu od fiskalnog značaja. Međutim, moguće ih je uključiti aktiviranjem odgovarajuće oznake.
+U ovom obrascu moguće je filtrirati prema skladištu, predlošku, artiklu, eventualnoj varijanti itd.
+Ispis po podrazumevanim podešavanjima ne uključuje skladišna kretanja sa predloškom koji nije od fiskalnog interesa. Ipak, moguće ih je uključiti aktiviranjem odgovarajuće opcije.
+Artikli koji nisu od fiskalnog interesa uvek se uključuju, nezavisno od toga da li je ova opcija aktivirana.
 
 Nakon unosa željenih filtera moguće je odštampati standardne ili prilagođene izveštaje (nakon prethodnog mapiranja u upravljanju izveštajima). Ukoliko želite da odštampate prilagođeni izveštaj, potrebno je da ga odaberete na kartici **Parametri ispisa**.
 
