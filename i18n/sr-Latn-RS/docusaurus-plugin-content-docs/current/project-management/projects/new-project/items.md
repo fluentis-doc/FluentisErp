@@ -279,22 +279,17 @@ Na kartici **Podaci** dostupna su sledeća polja:
 
 ### Kartica Napredak
 
-Na kartici **Napredak** prikazani su redovi stvarno utrošenog vremena evidentiranog u proizvodnji ili na intervencijama.
+Na kartici **Napredak** nalaze se redovi sa stvarno evidentiranim vremenima preuzetim iz faza proizvodnih naloga, usluga u servisnim intervencijama i evidencija aktivnosti.
 
-Vrednosti se preuzimaju obradom koja se pokreće pomoću dugmeta **Izrada napretka projekta**.
+Vrednosti se preuzimaju obradom koja se pokreće dugmetom **Kreiranje napretka projekta**.
 
-Obrada napretka obračunava redove na kartici **Napredak** izvršavanjem sledećih koraka:
+Obrada napretka izračunava redove na kartici **Napredak** izvršavanjem sledećih operacija:
 
-- briše sve zapise stvarno utrošenog vremena projekta koji nisu ručno izmenjeni
-- pretražuje prijave iz proizvodnje koje:
-  - imaju fazu proizvodnog naloga povezanu sa trenutnim projektom
-  - povezane su sa redom projekta
-
-Za svaki pronađeni red koji još nije povezan sa redom **Napretka**, kreira se novi red na kartici **Napredak**.
-
-Za ručno izmenjene zapise red se ne briše, već se ažurira vrednost polja vremena.
-
-Ista obrada izvršava se i za redove usluga na intervencijama, kao i za prijave aktivnosti.
+- Brišu se svi zapisi stvarnog vremena projekta koji nisu ručno izmenjeni.
+- Pretražuju se faze proizvodnih naloga (*Signal Item*) povezane sa trenutnim projektom:
+  - Ako odgovarajući zapis već ne postoji, umeće se novi zapis.
+  - Ako je zapis ručno izmenjen, ažuriraju se stvarno utrošeni minuti, uz očuvanje ručno unetih podataka.
+- Ista obrada sprovodi se i za stvarno vreme evidentirano u uslugama servisnih intervencija, kao i za stvarno vreme iz evidencija aktivnosti povezanih sa projektom.
 
 Na kraju se ažurira polje **Procenat dovršenosti rada** na kartici **Planiranje usluge** za redove projekta koji:
 
