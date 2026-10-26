@@ -11,3 +11,7 @@ Ova tablica dostupna je putem **Tablice > Upravljanje projektima > Predlošci od
 **Razlog**: sadrži opis razloga; 
 
 **Tvrtka**: sadrži tvrtku u kojoj se predložak validira, s pripadajućim **Opisom**.
+
+**Kategorija aktivnosti**: sadrži kategoriju aktivnosti koja će biti predložena kao podrazumevana prilikom potvrđivanja godišnjih odmora i odsustava.
+
+**Projekat**: sadrži WBS element projekta koji će biti predložen kao podrazumevani prilikom potvrđivanja godišnjih odmora i odsustava.
