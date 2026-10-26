@@ -51,9 +51,10 @@ Posljednji trošak u kartici artikla ažurira se samo ako su aktivni i *Ažurira
 
 **Ažuriraj prodajnu cijenu**: ne može se mijenjati nakon prvog korištenja. Koristi se uglavnom za otpremu. Prodajna cijena u kartici artikla ažurira se samo ako je aktivan označivač *Ažuriraj trošak artikla*;     
 
-**Ažuriraj trošak artikla**: kada se unosi pokret skladišta koristeći u zaglavlju registracije predložak koji ima aktiviran flag **Ažuriraj trošak artikla**ažuriraju se prosječni trošak, posljednji trošak i/ili prodajna cijena u kartici artikla, ovisno o tome koji su od sljedećih flagova aktivirani: *Aggiorna costo medio*, *Aggiorna costo ultimo* e *Aggiorna prezzo di vendita*.      
+**Ažuriraj trošak artikla**: prilikom unosa skladišnog kretanja pomoću šablona koji u zaglavlju knjiženja ima aktiviranu opciju **Ažuriraj trošak artikla**, ažuriraju se prosečni trošak, poslednji trošak i/ili prodajna cena na kartici artikla, u zavisnosti od toga koje su od sledećih opcija aktivirane: *Ažuriraj prosečni trošak*, *Ažuriraj poslednji trošak* i *Ažuriraj prodajnu cenu*.   
 
-**Porezni interes**: kada se unosi skladišni pokret koristeći u zaglavlju registracije predložak koji ima aktiviran flag **Porezni interes** sam pokret se uključuje u skladišni dnevnik te u izračun posljednjeg i prosječnog troška, kao i u valorizirani inventar po količini – pod uvjetom da i artikl koji se koristi ima aktiviran flag *Porezni interes* u kartici *Općenito*;
+**Fiskalni interes**: prilikom unosa skladišnog kretanja pomoću šablona koji u zaglavlju knjiženja ima aktiviranu opciju **Fiskalni interes**, to kretanje se uzima u obzir u skladišnoj evidenciji, kao i pri izračunavanju poslednje i prosečne cene i količinske zalihe sa iskazanom vrednošću, pod uslovom da je i na artiklu, na kartici **Opšti podaci**, aktivirana opcija *Fiskalni interes*.
+Ova opcija ne utiče na izračunavanje stanja zaliha ni u jednom poreskom izveštaju.
 
 **Točka narudžbe**: kada se unosi skladišni pokret koristeći u zaglavlju registracije predložak koji ima aktiviran flag **Točka narudžbe** taj pokret se uzima u obzir prilikom obrade u postupku izračuna točke narudžbe;       
 
