@@ -6,6 +6,12 @@ sidebar_position: 5
 Putem ovog obrasca moguće je unijeti registre za primljene ili izdane izjave o namjeri za referentnu godinu, kao i pretraživati te uređivati već unesene zapise.
 
 Za unos novog registra kliknite tipku **Novi** u traci izbornika a za izmjene već postojećih najprije kliknite **Pretraga**,  pa dvostrukim klikom na željeni zapis (ili pomoću tipke **Uredi**) otvorite registar i unesite nove izjave o namjeri.
+
+:::tip[Dugme Provera izjava o nameri]
+Klikom na ovo dugme, koje se nalazi na traci sa alatkama, otvara se obrazac sa listom izjava o nameri. Proširivanjem pojedinačne izjave klikom na dugme + (sasvim levo u tabeli) prikazuju se povezani dokumenti koji umanjuju raspoloživu vrednost izjave o nameri.
+
+Izborom dokumenta u detaljnom prikazu tabele (npr. računa), dugme **Otvori dokument** omogućava otvaranje izvornog dokumenta radi detaljne provere.
+:::
  
 ### Zaglavlje registra 
 

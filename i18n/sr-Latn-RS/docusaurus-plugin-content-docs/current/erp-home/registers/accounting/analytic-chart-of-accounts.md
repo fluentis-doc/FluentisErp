@@ -24,6 +24,7 @@ sidebar_position: 1
 | Obriši profitni centar | Briše označeni profitni centar. |
 | Novi automatski konto | Unos novog automatskog podkonta za izabrani podkonto. |
 | Ukloni automatski konto | Briše izabrani automatski podkonto. |
+| **Provera dodele modela** | Dostupno kada je izabran samo jedan analitički konto. Otvara se obrazac sa listom **modela reklasifikacije**, uključujući i one u koje je izabrani konto već eventualno uključen. Dostupno je dugme **Dodeli modelu**, pomoću kojeg se konto može dodeliti izabranom modelu. Nakon izbora željenog modela otvara se iskačući prozor za detaljniji izbor čvora modela u koji će biti umetnut odgovarajući konto. Potvrdom izbora otvara se dodatni iskačući prozor u kojem je potrebno definisati vrstu salda (duguje, potražuje, ukupno, povećanje itd.), obrnute kolone i ostala podešavanja dostupna u **modelu reklasifikacije**. Nakon potvrde, u početnom obrascu ažurira se povezivanje izabranog konta, prikazanog pri dnu obrasca, sa konkretnim čvorom modela, prikazanim u prva četiri stupca. |
 
 :::
 

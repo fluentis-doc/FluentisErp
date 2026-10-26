@@ -3,6 +3,8 @@ title: Korištenje kredita
 sidebar_position: 3
 ---
 
+## Glavna kartica
+
 Obrazac **Korištenje kredita** omogućuje kreiranje i spremanje izračuna korištenja kredita za svakog klijenta te pregled povijesnog prikaza. U listi izračuna prikazanoj u formi, redovi s odstupanjem bit će prikazani crvenom bojom. 
 
 Za izradu novog izračuna pritisne se tipka **Novo**.
@@ -47,4 +49,13 @@ Promet 12M / 365 * Množitelj * Prosječni broj dana kašnjenja, gdje su posljed
 
 **Dospjelo** = iznos dospjelih otvorenih stavki 
 
+## Detalji izračuna
+
+U zaglavlju obrasca moguće je aktivirati oznaku **Detaljan prikaz** (koja može biti unaprijed aktivirana i postavkom istoimenog polja u parametrima rizika kupca). Time se prikazuje dodatna kartica s detaljima svih dokumenata uzetih u obzir pri izračunu (otvorene stavke, otpremnice, računi, mjenice i nenaplaćene mjenice).
+
+U tablici se u prva dva stupca prikazuje vrijednost (duguje ili potražuje) promatrane stavke, dok se u sljedećim stupcima prikazuju odgovarajući podaci, ovisno o vrsti dokumenta. Primjerice, za otvorenu stavku prikazuju se broj i godina u odgovarajućim stupcima, dok se za račun ili otpremnicu prikazuju vrsta, broj i datum.
+
+:::tip[Napomena]
+Ako se dokument koji je prvotno uzet u obzir izbriše (primjerice, izvrši se *rollback* vrednovanja otpremnice ili isporuke narudžbe), redak ostaje prikazan, ali se vrijednosti u stupcima (duguje, potražuje i reference) gube. Ostaje samo tekstualna napomena u krajnjem desnom stupcu, koja bilježi što je bilo uzeto u obzir u tom trenutku.
+:::
 

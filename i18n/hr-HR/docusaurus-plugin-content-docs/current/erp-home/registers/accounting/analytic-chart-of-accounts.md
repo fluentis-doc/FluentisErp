@@ -22,8 +22,9 @@ sidebar_position: 1
 | Izbriši centar troška | Izbriši označenog troškovnog centra. |
 | Nova mjesto za troškove | Odabir za unos novog profitnog centra za odabrani podkonto. |
 | Izbriši profitni centar | Izbriši označenog profitnog centra. |
-| Novi automatski račun | Unos novog automatskog podkonta za odabrani podkonto |
-| Otkaži automatski račun | Izbriši odabrani automatski podkonto |
+| Novi automatski konto | Unos novog automatskog podkonta za odabrani podkonto |
+| Otkaži automatski konto | Izbriši odabrani automatski podkonto |
+| **Provjeriti dodjelu modela** | Dostupno kada je odabran samo jedan analitički konto. Otvara se obrazac s popisom **modela reklasifikacije**, uključujući i one u koje je odabrani konto već eventualno uključen. Dostupan je gumb **Dodijeli modelu**, kojim se konto može dodijeliti odabranom modelu. Nakon odabira željenog modela otvara se skočni prozor za detaljniji odabir čvora modela u koji će se umetnuti odgovarajući konto. Potvrdom odabira otvara se dodatni skočni prozor u kojem je potrebno definirati vrstu salda (duguje, potražuje, ukupno, povećanje itd.), obrnute stupce i ostale postavke dostupne u **modelu reklasifikacije**. Nakon potvrde, u početnom obrascu ažurira se povezivanje odabranog konta, prikazanog pri dnu obrasca, s konkretnim čvorom modela, prikazanim u prva četiri stupca. |
 
 :::
 
@@ -51,7 +52,7 @@ Putem gumba za unos klasifikacija/klasa moguće je umetnuti nove prve razine ili
 
 **Alternativni opis**: omogućuje da se dodijelit dodatni opis koji se može koristiti, na primjer, u ispisu bilance (prilagođavajući ga posebnim alatima). Na primjer, može se unijeti prijevod opisa konta.
 
-**Vrsta grupe**: prihvaća tip računa grupe. *Combo box* povezan je s tablicom Vrsta računa. Preporučuje se ispunjavanje tipa računa i za grupe i za grupiranje, kao što je opisano u fazi unosa podkonta u nastavku.
+**Vrsta grupe**: prihvaća tip konto grupe. *Combo box* povezan je s tablicom Vrsta konta. Preporučuje se ispunjavanje tipa konta i za grupe i za grupiranje, kao što je opisano u fazi unosa podkonta u nastavku.
 
 
 ### Unos detalja kontnog plana
@@ -64,7 +65,7 @@ Ova **donja tablica popunjava se direktnim unosom podataka** u redove. Uvijek je
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image04.png)
 
-**UPOZORENJE: Struktura plana konta zahtijeva da se za svaku najnižu razinu grupe u koju se unose detalji, unese barem jedan račun ("glavni") bez podkonta koji služi kao posljednje grupiranje operativnih podkonta. Napominjemo da se samo konta s podkontima mogu koristiti u knjigovodstvenim zapisima.**
+**UPOZORENJE: Struktura plana konta zahtijeva da se za svaku najnižu razinu grupe u koju se unose detalji, unese barem jedan konto ("glavni") bez podkonta koji služi kao posljednje grupiranje operativnih podkonta. Napominjemo da se samo konta s podkontima mogu koristiti u knjigovodstvenim zapisima.**
 
 Preporučuje se pratiti progresivni numerički kriterij s uniformnošću znakova (npr. sva konta s 4 znaka, sva podkonta s 3).
 
@@ -78,21 +79,22 @@ Postupiti redoslijedom dodavanja **vrste konta**, zatim **konta** (bez podkonta 
 
 **Datum zadnje promjene**: to je datum posljednje izmjene koda konta/podkonta, automatski ažuriran od strane sustava;
 
-**Stvori otvorene stavke**: opcija koja označava, za račune povezane s evidencijom kupaca i dobavljača, da li se za taj račun upravlja otvaranjem partija. Oznaka se preuzima, i treba je upravljati, unutar evidencije. Moguće je aktivirati oznaku ovdje za račune koji NISU iz evidencije (troškovi, prihodi itd.) kako bi se otvorile partije istovremeno s knjiženjem (rijetko). U tom slučaju, knjigovodstveni uzrok korišten zahtijevat će aktivni parametar za otvaranje partija. U ovom slučaju, aktivna oznaka na računu omogućuje, posebno, provjeru ravnoteže između knjiženja i otvorene stavke. U svakom slučaju, otvaranje partija na računima koji nisu u evidenciji mora se obaviti ručno i ne može se automatski izvršiti.
+**Kreiranje otvorenih stavki**: oznaka koja za konta povezana sa šifarnicima kupaca i dobavljača određuje vodi li se za to konto evidencija otvorenih stavki. Oznaka se preuzima iz šifarnika i njome je potrebno upravljati unutar samog šifarnika. Oznaku je moguće aktivirati i ovdje za konta koja nisu povezana sa šifarnicima, primjerice konta troškova, prihoda i sl., kako bi se otvorene stavke mogle formirati prilikom računovodstvenog knjiženja, iako je takva situacija rijetka. U tom slučaju korišteni računovodstveni predložak mora imati aktiviran parametar za otvaranje otvorenih stavki. Aktivirana oznaka na kontu posebno omogućuje provjeru usklađenosti između računovodstvenog prometa i otvorene stavke.
+U svakom slučaju, otvaranje otvorenih stavki za konta koja nisu povezana sa šifarnicima mora se obaviti ručno i ne može se izvršiti automatski.
 
-**Omogući korporativne centre**: Aktiviranjem ove opcije bit će moguće upravljati centrima troškova čak i na bilančnim računima (rijetko); primjerice, povećanja za unutarnje radove u okviru ekonomije, itd.
+**Omogući korporativne centre**: Aktiviranjem ove opcije bit će moguće upravljati centrima troškova čak i na bilančnim kontima (rijetko); primjerice, povećanja za unutarnje radove u okviru ekonomije, itd.
 
 **Datum kraja valjanosti**: služi za **blokiranje korištenja konta u novim knjiženjima** (počevši od unesenog datuma), zadržavajući vidljivost prethodno unesenih prometa;
 
 **Drugi opis**: pogledajte Alternativni opis gore;
 
-**Ispravke/Ispravci - aktivni / pasivni - Konto / Podkonto / Opis**: Polja koja omogućuju unos, redom za aktivne i pasivne i prelazne račune, specifičnog konta na koji će se knjižiti, s prednošću u odnosu na opća konta za aktivne i pasivne i prelazne račune uključene u [parametri knjiženja](/docs/configurations/parameters/finance/accounting-parameters), ispravke i integracije vezane uz konto troška ili prihoda koji se popunjava. Napomena - za automatsko upravljanje aktivnim i pasivnim obračunatim prihodima i rashodima te razgraničenim troškovima i prihodima, račun troška ili prihoda na koji se odnose ispravke mora imati poseban tip konta (npr. "za ispravke") s aktivnom oznakom usluge u tablici [Tip konta](/docs/configurations/tables/finance/account-types).
+**Ispravke/Ispravci - aktivni / pasivni - Konto / Podkonto / Opis**: Polja koja omogućuju unos, redom za aktivna i pasivna i prijelazna konta, specifičnog konta na koji će se knjižiti, s prednošću u odnosu na opća konta za aktivna i pasivna i prijelazna konta uključena u [parametri knjiženja](/docs/configurations/parameters/finance/accounting-parameters), ispravke i integracije vezane uz konto troška ili prihoda koji se popunjava. Napomena - za automatsko upravljanje aktivnim i pasivnim obračunatim prihodima i rashodima te razgraničenim troškovima i prihodima, konto troška ili prihoda na koji se odnose ispravke mora imati poseban tip konta (npr. "za ispravke") s aktivnom oznakom usluge u tablici [Tip konta](/docs/configurations/tables/finance/account-types).
 
 
-**Konto / Podkonto / Odgode**: Uglavnom upravljano za lokacije izvan Italije gdje postoji potreba knjiženja neprihvatljivog dijela PDV-a na zaseban račun.
+**Konto / Podkonto / Odgode**: Uglavnom upravljano za lokacije izvan Italije gdje postoji potreba knjiženja neprihvatljivog dijela PDV-a na zaseban konto.
 
 
-**Postotak koji se ne odbija**: Uglavnom upravljano za lokacije izvan Italije gdje postoji potreba knjiženja neprihvatljivog dijela PDV-a na zaseban račun. Povezano polje s prethodnim. Omogućuje definiranje postotka neprihvatljivosti PDV-a izravno na računu umjesto na upotrijebljenom PDV kodu.
+**Postotak koji se ne odbija**: Uglavnom upravljano za lokacije izvan Italije gdje postoji potreba knjiženja neprihvatljivog dijela PDV-a na zaseban konto. Povezano polje s prethodnim. Omogućuje definiranje postotka neprihvatljivosti PDV-a izravno na kontu umjesto na upotrijebljenom PDV kodu.
 
 
 **Unos troškova / Opis**: padajući izbornik povezan s tablicom [Elementi potrošnje](/docs/configurations/tables/finance/charge-item); omogućuje povezivanje s određenim statističkim podacima korisnim u upravljanju kontrolom.
@@ -101,11 +103,11 @@ Postupiti redoslijedom dodavanja **vrste konta**, zatim **konta** (bez podkonta 
 
 BILJEŠKA: Ne treba ih zamijeniti s poljem Postotak (prisutnim u tablici Atribucija Cdc) koje služi za označavanje postotka knjigovodstvenog pokreta koji treba dodati tom centru (primjerice, trošak podijeljen između dva centra podjednako ili 50% ili 70% i 30%).
 
-Polje **Varijabilnost** prisutno u glavnoj tablici u komentaru ima prioritet u odnosu na ono prisutno u grid *Variabilnost Cdc*. Iz tog razloga, ako je samo popunjeno polje u glavnoj tablici, podatak će se koristiti za oba (ili sva) povezana centra s odabranim računom. 
+Polje **Varijabilnost** prisutno u glavnoj tablici u komentaru ima prioritet u odnosu na ono prisutno u grid *Variabilnost Cdc*. Iz tog razloga, ako je samo popunjeno polje u glavnoj tablici, podatak će se koristiti za oba (ili sva) povezana centra s odabranim kontom. 
 
 ![](/img/it-it/erp-home/registers/accounting/analytic-chart-of-accounts/image05.png)
 
-**Ne koristi se u kontrolingu**: opcija korisna samo ako su aktivne napredne funkcije za kontroling u tabeli poduzeća, omogućuje isključivanje (ako je omogućeno) knjigovodstvenih prometa prisutnih za odabrani račun iz posebnih obrada kontrolinga (kao što su npr. obrade na temelju nositelja troškova, formule i tehničke amortizacije specifične za kontroling). Na taj način bit će moguće ručno upravljati putem specifičnih funkcija kontrolinga.
+**Ne koristi se u kontrolingu**: opcija korisna samo ako su aktivne napredne funkcije za kontroling u tabeli poduzeća, omogućuje isključivanje (ako je omogućeno) knjigovodstvenih prometa prisutnih za odabrani konto iz posebnih obrada kontrolinga (kao što su npr. obrade na temelju nositelja troškova, formule i tehničke amortizacije specifične za kontroling). Na taj način bit će moguće ručno upravljati putem specifičnih funkcija kontrolinga.
 
 Primjer: ako se žele koristiti specifične amortizacije definirane unutar funkcija samog kontrolinga umjesto polaska od knjigovodstvenih podataka. Drugi primjer: želi se ručno evidentirati trošak nadzornog odbora, dodjeljujući ga ručno funkcijama kontrolinga kako biste upravljali proračunima i izvješćima, umjesto čekanja na evidentiranje pripadajućeg troška u računovodstvu (tipično retroaktivno i stoga ne pravodobno).
 
@@ -123,7 +125,7 @@ Sljedeća dva polja služe za ovu radnju:
 
 **Distribucija razdoblja / Opis**: padajući izbornik, povezan s tablicom [Distribucija razdoblja](/docs/configurations/tables/controlling/managerial-accounting/periods-distribution), omogućuje dodjelu, svakom kontu, specifične logike raspodjele knjigovodstvenog prometa na pojedinačna razdoblja tijekom obrade polugodišnjih zatvaranja.
 
-**Grupe ravnoteža / Opis**: padajući izbornik je povezan s tablicom [Grupe izravnavanja](/docs/configurations/tables/controlling/analytical-accounting/adjustments-groups), unutar koje je moguće kodirati grupiranja računa korisna za upravljanje specifičnim izvještajima za kontroling. Polje nema drugu operativnu vrijednost i ne generira dodatne automatizme.
+**Grupe ravnoteža / Opis**: padajući izbornik je povezan s tablicom [Grupe izravnavanja](/docs/configurations/tables/controlling/analytical-accounting/adjustments-groups), unutar koje je moguće kodirati grupiranja konta korisna za upravljanje specifičnim izvještajima za kontroling. Polje nema drugu operativnu vrijednost i ne generira dodatne automatizme.
 
 **Vanjski opis 1 / 2 / 3**: dodatna polja za prihvat alternativnih opisa (na primjer, na drugom jeziku). Mogu se, na primjer, naknadno unijeti tijekom prilagodbe ispisa bilance.
 
@@ -153,7 +155,7 @@ Također treba imati na umu da postoje dodatna mjesta na kojima se definiraju ce
 
 **Dimenzija / Opis**: padajući izbornik potreban je za dodjelu odgovarajuće analitičke dimenzije poslovnom centru koji se unosi (ovaj koncept je uveden i dostupan samo aktiviranjem naprednih funkcija kontrolinga iz tablice poduzeća).
 
-**Kategorija troška / Opis**: padajući izbornik, povezan s tablicom **Kategorije centara tvrtke** omogućava povezivanje svake **Dimenzije** analize kontrolinga s kategorijom koja je zauzvrat povezana s različitim poslovnim centrima (budući da je kategorija obavezno polje u kodiranju svakog poslovnog centra). Na ovaj način, prilikom unosa knjigovodstvenog prometa, operateru se omogućuje odabir niza predefiniranih poslovnih centara. Ovo se može učiniti kao alternativa strogoj definiciji centra povezanog s računom (moguće je aktiviranjem parametra "Ograničenje računa/centra" unutar šifarnika dimenzije).
+**Kategorija troška / Opis**: padajući izbornik, povezan s tablicom **Kategorije centara tvrtke** omogućava povezivanje svake **Dimenzije** analize kontrolinga s kategorijom koja je zauzvrat povezana s različitim poslovnim centrima (budući da je kategorija obavezno polje u kodiranju svakog poslovnog centra). Na ovaj način, prilikom unosa knjigovodstvenog prometa, operateru se omogućuje odabir niza predefiniranih poslovnih centara. Ovo se može učiniti kao alternativa strogoj definiciji centra povezanog s kontom (moguće je aktiviranjem parametra "Ograničenje konta/centra" unutar šifarnika dimenzije).
 
 ### Tablica Automatskih podkonta (tab Ostali)
 

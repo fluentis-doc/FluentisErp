@@ -109,7 +109,9 @@ Pregled **konta** omogućuje definiranje popisa konta i/ili podkonta koji će va
 
 - **Povećanje**, pri čemu se za konto ili podkonto izračunava razlika između privremenog zatvaranja korištenog u reklasifikaciji i drugog referentnog zatvaranja. Ova opcija posebno je korisna za analize temeljene na promjenama odnosno tokovima.
 
-Posljednja opcija u pregledu je **Inverzija kolona**, koja omogućuje obrtanje predznaka salda za odabrano konto ili podkonto.
+**Obrnuti stupci**: za izabrani analitički konto menja se predznak salda (duguje/potražuje), koji je u modelu prikazan znacima + i − jer je model skalaran.
+
+**Sačuvaj samo pozitivnu vrednost**: polje namenjeno isključivo lokalizacijama izvan Italije (npr. Rumunija), gde vrednosti konta uvek ostaju na svojoj izvornoj strani, uz korišćenje predznaka + i − (potražno stanje nikada se ne prikazuje na potražnoj strani). Aktiviranjem ove opcije red se popunjava samo ako je vrednost pozitivna (+).
 
 :::tip NAPOMENA
 Ova opcija može biti korisna kada je potrebno iz ukupnog salda određenog konta isključiti vrijednost pojedinog podkonta. Primjerice, intercompany kupac može se izdvojiti iz glavnog konta kupaca kako bi se prikazao u zasebnom čvoru bez dvostrukog uključivanja iste vrijednosti.

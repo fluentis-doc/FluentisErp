@@ -38,4 +38,7 @@ U **parametrima** modula Rizičnost klijenata mogu se unaprijed postaviti zadane
 > **Otvorene stavke**: s ovom postavkom izračun kredita temelji se na otvorenim stavkama klijenta.    
 > **Razmotrite dospjele vrijednosti iz privremenih zapisa**: ako je prethodno polje aktivno, izračun uzima u obzir i eventualne promjene nastale iz privremenih knjiženja.  
 > **Blokiraj fizički izvještaj**: ako kredit klijenta predviđa blokadu dokumenta, ova opcija sprječava fizički ispis blokiranog dokumenta. Ako nije uključeno, dokument se može ispisati, ali polje ‘otisnuto’ neće biti dodijeljeno dokumentu.    
-> **Razmotri račune za ispis**: uzima u obzir, pri izračunu kredita, fakture koje su kreirane, ali još nisu otisnute. Ako nije uključeno, zadana logika računa fakture samo ako su otisnute (s aktivnim poljem ‘otisnuto’).    
+> **Razmotri račune za ispis**: uzima u obzir, pri izračunu kredita, fakture koje su kreirane, ali još nisu otisnute. Ako nije uključeno, zadana logika računa fakture samo ako su otisnute (s aktivnim poljem ‘otisnuto’). 
+> **Uzimanje u obzir stavki iz privremenih knjiženja**: pri izračunavanju kreditnog limita uzimaju se u obzir otvorene stavke koje potiču iz računovodstvenih knjiženja postavljenih u status *Privremeno* putem polja **Status knjiženja**, koje se nalazi na kartici **Parametri** u samim knjiženjima.
+
+**Detaljan prikaz**: aktiviranjem ove opcije ista opcija će po podrazumevanim podešavanjima biti aktivirana i u obrascu *Izračunavanje rizika kupca*. Aktiviranjem ove opcije u obrascu *Izračunavanje rizika kupca* postaje vidljiva dodatna kartica sa detaljnim prikazom svih dokumenata uzetih u obzir pri izračunavanju (otvorene stavke, otpremnice, računi, menice i nenaplaćene menice).
