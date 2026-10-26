@@ -33,8 +33,9 @@ Pritiskom na gumb **U redu** ili **Odustani** određuje se nastavak procesa dupl
 
 ### ![](/img/neutral/common/update.png) Ažuriraj zaposlenike
 
-Tipka je omogućena samo ako postoje *uključene funkcije*.   
-Nakon što se unese *Zadatak* u popis prisutnih *Zanimanja*, na kartici *Zanimanja*, kako biste unijeli *Zaposlenike* koji obavljaju novi *Zadatak*, pritisnite gumb **Ažuriraj zaposlenike**. *Zaposlenici* koji već postoje u popisu *Zanimanja* neće biti promijenjeni.
+Gumb u popis **Uključeni zaposlenici** dodaje sve **zaposlenike** koji na datum održavanja tečaja obavljaju **radna mjesta** navedena u popisu **Uključena radna mjesta**.
+**Zaposlenici** koji se već nalaze na popisu **Uključeni zaposlenici** neće se mijenjati.
+Gumb je omogućen samo ako su u popis **Uključena radna mjesta** unesena radna mjesta, tečaj je spremljen i nije dovršen.
 
 
 ## Upravljanje podacima

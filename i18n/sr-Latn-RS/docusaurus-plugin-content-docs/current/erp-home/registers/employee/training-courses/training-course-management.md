@@ -29,11 +29,9 @@ Pritiskom na dugme **U redu** ili **Odustani** određuje se da li će se nastavi
 
 ### ![](/img/neutral/common/update.png) Ažuriraj zaposlene
 
-Dugme je omogućeno samo ako postoje *uključena radna mesta*.
-
-Nakon što se u listu *radnih mesta* doda novo *radno mesto*, na kartici *Radna mesta*, za unos *zaposlenih* koji obavljaju to radno mesto potrebno je pritisnuti dugme **Ažuriraj zaposlene**.
-
-*Zaposleni* koji se već nalaze na listi neće biti izmenjeni.
+Dugme u listu **Uključeni zaposleni** dodaje sve **zaposlene** koji na datum održavanja obuke obavljaju **radna mesta** navedena u listi **Uključena radna mesta**.
+**Zaposleni** koji se već nalaze na listi **Uključeni zaposleni** neće biti izmenjeni.
+Dugme je omogućeno samo ako su u listu **Uključena radna mesta** uneta radna mesta, obuka je sačuvana i nije završena.
 
 ## Upravljanje podacima
 
