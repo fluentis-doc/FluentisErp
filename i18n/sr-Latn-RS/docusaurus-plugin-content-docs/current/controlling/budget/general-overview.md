@@ -3,11 +3,12 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul Budžetiranje omogućava upravljanje budžetom po centrima troškova i integrisan je sa modulom kontrolinga u okviru **Fluentis ERP-a**, kako bi se vrednovalo određeno analitičko područje budžeta.
+Od verzije Fluentis ERP 2025 moguće su dve različite metode upravljanja budžetom.
 
-To područje može biti povezano sa specifičnim nosiocima troškova, a zatim se upoređuje sa stvarnim podacima kroz analize i poređenja u okviru reklasifikovanih izveštaja.
+1. Budžet po mestima troškova, koji se integriše sa kontrolingom radi vrednovanja određene oblasti analize budžeta i može se vrednovati pomoću specifičnih pokretača troškova (nosilaca troškova). Nakon toga se poredi sa stvarnim podacima u okviru funkcionalnosti Poređenje modela reklasifikacije.
+Modul omogućava učitavanje detaljnih podataka uvozom iz Excela, odnosno uvozom planiranih budžetskih podataka.
 
-Modul je sastavni deo kontrolinga i omogućava učitavanje detaljnih budžetskih podataka putem Excel uvoza, koristeći unapred pripremljene planirane vrednosti.
+2. Upravljanje budžetom i bez potpune primene modula kontrolinga. Obrada je moguća prema analitičkim kontima glavne knjige, mestima troškova, profitnim centrima i modelu reklasifikacije.
 
 ## Početna konfiguracija modula
 
@@ -16,6 +17,7 @@ Za korišćenje modula potrebno je prethodno definisati:
 - tabelu [**Tip područja**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas), pri čemu mora postojati poseban tip namenjen budžetskim područjima;
 - tabelu [**Područje**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas), gde mora postojati najmanje jedno budžetsko područje povezano sa odgovarajućim tipom područja;
 - strukturu [**Centara troškova**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) u okviru organizacije.
+- Za korisnike koji ne koriste kompletan modul kontrolinga (upravljanje budžetom bez korišćenja vanbilansnih knjiženja) moguće je konfigurisati tabelu **Vrste budžeta** (jednostavna tabela za definisanje kategorija i dodeljivanje numeracije) i tabelu **Vrste perioda**(/docs/configurations/tables/controlling/forecast/period-types).
 
 ## Dokumenti i funkcionalnosti
 

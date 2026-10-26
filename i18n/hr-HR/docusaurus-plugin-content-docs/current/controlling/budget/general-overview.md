@@ -3,14 +3,20 @@ title: Uvod
 sidebar_position: 1
 ---
 
-Modul **Izrada proračuna** omogućuje upravljanje budžetom po centru troška, pri čemu se integrira s kontrolingom unutar ***Fluentis Erp*** kako bi se valoriziralo određeno analitičko područje budžeta. Ovo područje može biti valorizirano specifičnim nositeljima troškova te se uspoređuje s konačnim podacima unutar usporedbe *reklasifikacija*. Modul je dio kontrolinga i omogućuje učitavanje detaljnih podataka putem uvoza iz Excela s planiranim podacima budžeta. 
+Od verzije Fluentis ERP 2025 moguće su dvije različite metode upravljanja proračunom.
+
+1. Proračun po troškovnim mjestima, koji se integrira s kontrolingom radi vrednovanja određenog područja analize proračuna te se može vrednovati pomoću specifičnih pokretača troškova (nositelja troškova). Nakon toga uspoređuje se sa stvarnim podacima u sklopu funkcionalnosti Usporedba modela reklasifikacije.
+Modul omogućuje učitavanje detaljnih podataka uvozom iz Excela, odnosno uvozom planiranih proračunskih podataka.
+
+2. Upravljanje proračunom i bez potpune primjene modula kontrolinga. Obrada je moguća prema analitičkim kontima glavne knjige, troškovnim mjestima, profitnim centrima i modelu reklasifikacije.
 
 ## Početna konfiguracija modula 
 
 Za korištenje modula potrebne su sljedeće tablice: 
 - Tablica [**Tip područja**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) potreban je specifičan tip koji će se povezati s područjima budžeta  
 - Tablica  [**Područje**](/docs/controlling/controlling-parametrization/controlling-specific-settings/area-types-areas) mora postojati barem jedno područje budžeta povezano s tipom područja budžeta  
-- Konfiguracija strukture [**Centara troškova**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) poduzeća 
+- Konfiguracija strukture [**Centara troškova**](/docs/controlling/controlling-parametrization/controlling-specific-settings/cost-centers) poduzeća
+- Za korisnike koji ne koriste cjeloviti modul kontrolinga (upravljanje proračunom bez korištenja izvanbilančnih knjiženja) moguće je konfigurirati tablicu **Vrste proračuna** (jednostavna tablica za definiranje kategorija i dodjeljivanje numeracije) i tablicu **Vrste razdoblja**(/docs/configurations/tables/controlling/forecast/period-types).
 
 ## Upravljani dokumenti
 import Link from '@docusaurus/Link';
