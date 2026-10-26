@@ -5,18 +5,30 @@ sidebar_position: 2
 
 Ova forma se otvara putem **Logistika > Slaganje robe**.
 
-Omogućava pretraživanje svih dokumenata radi pregleda, uređivanja i eventualnog brisanja ili unosa novog dokumenta; prozor se sastoji od područja za filtriranje i tabele rezultata.
+import SearchForm from './../../import/sections/search-form.md'
 
-Nakon što su postavljeni svi željeni filteri, jednostavno kliknite na dugme **Traži** u gornjem meniju kako biste prikazali rezultate unutar prikaza rezultata.
-Za otvaranje detalja dokumenta, jednostavno ga odaberite i dvaput kliknite mišem ili kliknite na dugme **Izmeni** (omogućava ulazak u detalje i uređivanje) ili na dugme **Prikaži** (omogućava ulazak u detalje i pregled, ali bez mogućnosti uređivanja).
+<SearchForm />
 
-*Vidi takođe*:   
-[Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common)            
-Dodavanje novih polja u obrasce pretrage    
+**Napredno pretraživanje**
+
+U odeljku **Napredno pretraživanje** moguće je primeniti filtere prema statusu pickinga.
+
+**Sve**: aktiviranjem ove opcije isključuju se sve ostale opcije i ne primenjuje se nijedan filter iz ovog odeljka.
+
+**(Ne)štampani**: aktiviranjem jedne od ovih opcija prikazuju se samo štampani ili neštampani dokumenti za picking.
+
+**(Ne)preuzeti**: aktiviranjem jedne od ovih opcija prikazuju se samo preuzeti ili nepreuzeti dokumenti za picking.
+
+**(Ne)isporučeni**: aktiviranjem jedne od ovih opcija prikazuju se samo dokumenti za picking iz kojih su generisani otpremni dokumenti (otpremnice/računi) ili oni iz kojih takvi dokumenti nisu generisani.
+
+:::note[Napomena]
+Za razliku od postupka [Pražnjenje pickinga](/docs/logistics/picking/unload-picking), ovaj postupak omogućava izvršavanje istih funkcija, ali samo za označene redove.
+:::
 
 *Posebna dugmad*  
-**Otpremnica/Prijemnica**: pokreće postupak kreiranja otpremnice na osnovu pickinga.  
-**Račun**: pokreće postupak kreiranja izlaznog računa na osnovu pickinga. 
+**Otpremnica**: otvara postupak kreiranja **prodajnih otpremnica** na osnovu izabranih dokumenata za picking.
+**Račun**: otvara postupak kreiranja **izlaznih računa** na osnovu izabranih dokumenata za picking.
+**Lista za preuzimanje**: otvara postupak kreiranja **liste za preuzimanje** na osnovu izabranih dokumenata za picking.
 
 Prilikom kreiranja *otpremnice* i *izlaznog računa* iz pickinga dodate su nove oznake: **Koristi skladište i predložak iz vrste otpremnice** i **Koristi skladište i predložak iz vrste izlaznog računa**.       
 Ako je oznaka aktivna, postupak će za redove otpremnice / izlaznog računa koristiti skladište i skladišni predložak definisane u vrsti otpremnice / izlaznog računa.         

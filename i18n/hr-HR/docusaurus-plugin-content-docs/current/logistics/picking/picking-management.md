@@ -32,10 +32,6 @@ ili putem
 
 **Status izvršenja**: može imati sljedeće vrijednosti: *Nije izvršeno*, *Izvršeno*, *Djelomično izvršeno* ili *Prisilno izvršeno*. Ovaj se status odnosi na status realizacije pojedinačnih redaka. Primjerice, ako se putem upravljanja potvrdom realizira samo jedan redak, **Status izvršenja** promijenit će se iz *Nije izvršeno* u *Djelomično izvršeno*.    
 
-:::note Napomena
-Važno je napomenuti da se stupac *Dokument* u obrascu [Pretraga pickinga](/docs/logistics/picking/search-picking) odnosi na status pickinga, a ne na status redaka. Stoga će prijeći u status realizirano tek nakon kreiranja otpremnice ili izlaznog računa.
-:::
-
 #### Posebni gumb
 
 > **Izuzimanje (Realizacija-9 iz narudžbe**: omogućuje unos artikala u picking realizacijom narudžbe kupca. Klikom na gumb otvara se obrazac u kojem je moguće filtrirati narudžbe kupaca koje se odnose na predmetnog kupca. Moguće je potpuno ili djelomično realizirati cijelu narudžbu ili pojedini redak.
