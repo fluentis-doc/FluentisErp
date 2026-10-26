@@ -26,6 +26,11 @@ Glavni obrazac sastoji se od sljedećih kartica:
 - **Artikli**
 Ovdje su prikazane sve stavke artikala prisutne u Picking-u.
 
+:::note[Napomena]
+Na kartici **Artikli** retci se prikazuju prema sljedećem redoslijedu prioriteta: prvo prema prioritetu lokacije navedene u dokumentu za picking ili definirane u karti lokacija za artikl, zatim prema šifri lokacije i na kraju prema broju retka u dokumentu za picking.
+Pravilnim postavljanjem prioriteta ili šifre lokacije skladištar se može usmjeriti na odgovarajući redoslijed preuzimanja artikala.
+:::
+
 **Posebni gumbi**
 > **Detalji**: omogućuje vam pozicioniranje na karticu  **Potvrđeni artikli**;        
 > **Potvrda**: nakon odabira stavke u kartici **Artikli**, otvara karticu **Potvrda** i predlaže odabrani artikl.

@@ -23,6 +23,9 @@ Glavni obrazac sastoji se od sledećih kartica:
 - **Artikli**
 Ovde su prikazane sve stavke artikala prisutne u Pickingu.
 
+:::note Napomena
+Na kartici **Artikli** redovi se predlažu prema prioritetu lokacije navedene u pickingu ili podešene u mapi lokacija za artikl, zatim prema šifri lokacije i na kraju prema broju reda u pickingu. Odgovarajućim podešavanjem prioriteta ili šifre lokacije skladištar se može usmeriti da prati pravilan redosled preuzimanja robe.
+
 **Posebna dugmad**
 > **Detalji**: omogućava pozicioniranje na karticu **Potvrđeni artikli**;  
 > **Potvrda**: nakon odabira stavke na kartici **Artikli**, otvara karticu **Potvrda** i predlaže odabrani artikl.
