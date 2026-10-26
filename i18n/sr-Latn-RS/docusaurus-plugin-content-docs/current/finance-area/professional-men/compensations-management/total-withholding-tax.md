@@ -17,3 +17,9 @@ Takođe, u slučaju knjižnog odobrenja, vrednosti u tabeli sa detaljima moraju 
 | --- | --- |
 | Izračunaj vrednosti | Ponovo izračunava podatke o naknadi (porez po odbitku, PDV i rokove plaćanja). |
 | Pregled štampe | Prikazuje pregled štampe naknade. |
+
+:::tip[Doprinos Enasarco na teret preduzeća]
+U određenim situacijama, na primer prilikom unosa prve naknade za primaoca koji je agent, ako je mesec obračuna doprinosa Enasarco postavljen izvan prvog tromesečja, može se predložiti iznos doprinosa na teret preduzeća koji je veći od iznosa dobijenog jednostavnom primenom procenta koji snosi preduzeće nalogodavac.
+
+Razlog za to je što je u detaljnim podešavanjima obračuna Enasarco definisan i parametar minimalnog iznosa. Pošto sistem ne pronalazi prethodne naknade kojima je taj minimalni iznos već pokriven, Fluentis predlaže njegovu nadoknadu putem prve raspoložive naknade.
+:::
