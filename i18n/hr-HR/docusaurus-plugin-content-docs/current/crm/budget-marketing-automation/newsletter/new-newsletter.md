@@ -19,17 +19,11 @@ U gornjem dijelu nalaze se sljedeća polja:
 **Zakazano**: ova opcija označava da je slanje *newslettera* zakazano (isključivo informativno polje);
 **Poslano**: ovaj opcija označava da je *newsletter* poslan.
 
-![](/img/it-it/applications/crm/newsletter/new-newsletter.png)
-
 U donjem dijelu obrasca trebaju se odabrati liste distribucije koje sadrže primatelje i njihove e-mail adrese kojima će *newsletter* biti poslan.
 
-![](/img/it-it/applications/crm/newsletter/distribution-list.png)
+Klikom na tipku s lijeve strane + pojedinačne liste, moći ćete vidjeti kontakte koji pripadaju toj listi:
 
-Klikom na tipku s lijeve strane ![](/img/neutral/common/plus.png) pojedinačne liste, moći ćete vidjeti kontakte koji pripadaju toj listi:
-
-![](/img/it-it/applications/crm/newsletter/contacts.png)
-
-Za slanje *newslettera*, nakon što su navedeni parametri prikazani ranije, potrebno je pritisnuti gumb Pošalji ![](/img/neutral/common/send.png) na Ribbon traci.   
+Za slanje *newslettera*, nakon što su navedeni parametri prikazani ranije, potrebno je pritisnuti gumb Pošalji na Ribbon traci.   
 Na taj način otvorit će se stvarna forma za slanje *mewslettera*, koja sadrži kartice  **Početna stranica**, **Umetni** i **Spoji podatke**, već prisutne u odjeljku Predložak Dokumenta (za više informacija, pogledati odjeljak [Predložak](/docs/crm/budget-marketing-automation/template/new-template)), osim kartice **E-pošta** koja sadrži sljedeće funkcije:
 
 **Ispis** tipka za fizički ispis *newslettera*;    
@@ -39,8 +33,6 @@ Na taj način otvorit će se stvarna forma za slanje *mewslettera*, koja sadrži
 **Poništi** Tipka za poništavanje posljednje izmjene na *newsletteru*;    
 **Ponovno napravi** Tipka za vraćanje posljednje izmjene na *newsletteru*. 
 
-![](/img/it-it/applications/crm/newsletter/email.png)
-
 U donjem dijelu prikazana su neka polja, neka od njih preuzeta iz prethodnog obrasca:
 
 **Primatelji**: polje omogućava označavanje primatelja e-pošte odabirom između referenci CRM kontakata ili između Fluentis korisnika;
@@ -49,4 +41,7 @@ U donjem dijelu prikazana su neka polja, neka od njih preuzeta iz prethodnog obr
 **Cc**: služi za označavanje e-pošte koja će primiti kopiju;
 **Bcc**: služi za označavanje e-pošte koja će primiti skrivenu kopiju. Fluentis automatski popunjava ovo polje s adresama CRM kontakata tako da svaki primatelj *newslettera* ne vidi adrese drugih primatelja;
 **Ugrađena slika**: označavanjem ovog okvira slike u predlošku neće se dodavati kao privici stvorene pošte, već kao stvarni elementi pošte;
-**Privici**: prikazane su datoteke koje će biti priložene *newsletteru*.
+
+Na dnu se nalaze gumbi:
+
+**Pošalji e-poštu**: otvara pregled adresa na koje će se poslati *newsletter*. Nakon potvrde šalje se e-pošta.

@@ -3,7 +3,7 @@ title: Nova distribuciona lista
 sidebar_position: 3
 ---
 
-Postupak kreiranja nove **distribucione liste** omogućava definisanje karakteristika liste koja će se koristiti u postupku slanja [*Newsletter-a*](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), kao i definisanje **CRM kontakata** koji će biti deo te liste. Za kreiranje nove liste potrebno je kliknuti na dugme Novo ![](/img/neutral/common/new.png) na formi za pretragu distribucionih lista.
+Postupak kreiranja nove **distribucione liste** omogućava definisanje karakteristika liste koja će se koristiti u postupku slanja [*Newsletter-a*](/docs/crm/budget-marketing-automation/newsletter/search-newsletter/), kao i definisanje **CRM kontakata** ili kontakta koji će biti deo te liste. Za kreiranje nove liste potrebno je kliknuti na dugme Novo ![](/img/neutral/common/new.png) na formi za pretragu distribucionih lista.
 
 Forma se sastoji od dve sekcije.
 
@@ -13,6 +13,18 @@ Gornja sekcija omogućava definisanje sledećih informacija:
 **Datum kreiranja**: datum kada je lista kreirana;  
 **Beleška**: alfanumeričko polje koje omogućava unos slobodnih beleški;  
 **Autor**: prikazuje korisnika koji je kreirao listu;  
+**Predmet poslovanja**: označava vrstu dokumenta ili šifarnika na koji se odnosi slanje. Dozvoljene su sledeće vrednosti:
+- CRM kontakti
+- marketinška kampanja
+- poslovna prilika
+- zahtev za nabavku
+- upit za ponudu
+- prodajna ponuda
+- prodajna narudžbina
+- prodajna otpremnica
+- izlazni račun
+- servisna intervencija u modulu Projekti
+
 **Vrsta**: omogućava definisanje vrste distribucione liste između **Statičke** ili **Dinamičke**.
 
 Donja forma razlikuje se u zavisnosti od toga da li je lista statička ili dinamička.
@@ -25,13 +37,9 @@ Sekcija je podeljena na 2 kartice.
 
 Na kartici Dodeljeno prikazani su subjekti koji su već dodeljeni distribucionoj listi.
 
-![](/img/it-it/applications/crm/distribution-list/assigned.png)
-
 **Kartica Nije dodeljeno**
 
 Na kartici Nije dodeljeno prikazani su kontakti koji još nisu dodeljeni određenoj listi. Kartica je podeljena na 2 sekcije. Prva sekcija je Filtriranje, gde možete postaviti niz filtera koji se odnose na kontakte koje želite da izdvojite.
-
-![](/img/it-it/applications/crm/distribution-list/not-assigned.png)
 
 Druga sekcija, odnosno rezultujuća mreža, prikazuje subjekte izdvojene na osnovu prethodno postavljenih filtera nakon što pritisnete dugme Traži ![](/img/neutral/common/search.png).  
 Dugme Dodeli ![](/img/neutral/common/assign-row.png) premešta kontakt sa kartice **Nije dodeljeno** na karticu **Dodeljeno**, čime se kontakt dodaje u distribucionu listu.
@@ -52,10 +60,6 @@ Na početku je potrebno navesti sledeća 3 podatka:
 
 U donjoj mreži prikazuju se svojstva i način njihovog mapiranja.
 
-![](/img/it-it/applications/crm/distribution-list/configuration.png)
-
 **Kartica Mapiranje**
 
 Na ovoj kartici u realnom vremenu prikazani su kontakti obrađeni i dodati na distribucionu listu prema SQL upitu navedenom na kartici Konfiguracija.
-
-![](/img/it-it/applications/crm/distribution-list/mapping.png)

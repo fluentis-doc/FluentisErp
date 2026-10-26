@@ -3,7 +3,7 @@ title: Novi šablon
 sidebar_position: 2
 ---
 
-Procedura kreiranja **Novog šablona** omogućava definisanje karakteristika šablona koji će se kasnije koristiti u postupku slanja *newsletter-a*, uključujući slike, tekst, hiperlinkove i spajanje podataka. Forma se sastoji od dve sekcije.
+Postupak kreiranja novog šablona omogućava definisanje karakteristika sadržaja e-pošte koji će se zatim koristiti u postupku slanja *newslettera*, kao što su slike, tekst, hiperveze i podaci za spajanje (*merge data*). Forma se sastoji od dve sekcije.
 
 Gornji deo forme omogućava definisanje sledećih detalja:
 
@@ -14,8 +14,6 @@ Gornji deo forme omogućava definisanje sledećih detalja:
 **Izvor podataka**: predstavlja izvor podataka koji će se koristiti za popunjavanje *Merge Data* u šablonu.
 
 Donji deo forme sadrži različite kartice sa funkcijama za izradu šablona i radni list na kojem je moguće kreirati šablon i grafički ga pregledati:
-
-![](/img/it-it/applications/crm/budget-marketing-automation/template-file.png)
 
 Ovo su kartice dostupne u formi.
 
@@ -31,14 +29,10 @@ Ova kartica omogućava osnovne operacije sa šablonom, kao što su otvaranje nov
 **Poništi (*undo*)**: poništava poslednju izmenu na šablonu;  
 **Ponovi (*redo*)**: vraća poslednju poništenu izmenu na šablonu.
 
-![](/img/it-it/applications/crm/budget-marketing-automation/file.png)
-
 **Početna**
 
 Ova kartica sadrži dugmad za osnovne funkcije uređivanja teksta u šablonu, kao što su veličina fonta, liste, poravnanje teksta i slično.  
 Poziva osnovne funkcije popularnih uređivača teksta kao što je Microsoft Word.
-
-![](/img/it-it/applications/crm/budget-marketing-automation/home.png)
 
 **Umetni**
 
@@ -56,8 +50,6 @@ Ova kartica sadrži dugmad za umetanje određenih elemenata u šablon, kao što 
 **Text Box**: omogućava umetanje okvira za tekst unutar šablona;  
 **Symbol**: služi za umetanje specijalnog simbola unutar šablona.
 
-![](/img/it-it/applications/crm/budget-marketing-automation/insert.png)
-
 **Merge Data**
 
 Na ovoj kartici nalaze se dugmad potrebna za upravljanje i umetanje podataka za spajanje.
@@ -70,5 +62,3 @@ Na ovoj kartici nalaze se dugmad potrebna za upravljanje i umetanje podataka za 
 **Previous Record**: omogućava pozicioniranje na prethodni zapis u odnosu na trenutno prikazani zapis iz podataka za spajanje;  
 **Next Record**: omogućava pozicioniranje na sledeći zapis u odnosu na trenutno prikazani zapis iz podataka za spajanje;  
 **Last Record**: omogućava pozicioniranje na poslednji zapis preuzet iz podataka za spajanje.
-
-![](/img/it-it/applications/crm/budget-marketing-automation/merge-data.png)

@@ -3,7 +3,7 @@ title: Novi Predložak
 sidebar_position: 2
 ---
 
-Procedura stvaranja **Novog Predloška** omogućuje definiranje značajki predloška koje će se kasnije koristiti u postupku slanja *newslettera*, uključujući slike, tekst, hiperlinkove i spajanje podataka. Obrazac se sastoji od dvije sekcije. 
+Postupak izrade **novog predloška** omogućuje definiranje karakteristika teksta e-pošte koji će se zatim koristiti u postupku slanja *newslettera*, kao što su slike, tekst, hiperveze i podaci za spajanje (*merge data)*. Obrazac se sastoji od dvije sekcije. 
 
 I gornji dio obrasca omogućava definiranje sljedećih pojedinosti:
 
@@ -14,8 +14,6 @@ I gornji dio obrasca omogućava definiranje sljedećih pojedinosti:
 **Izvor podataka**: predstavlja izvor podataka koji će se koristiti za popunjavanje *Merge Data* u Predlošku.
 
 Donji dio obrasca uključuje različite kartice s funkcijama za izradu predloška i radnu knjigu na kojoj je moguće kreirati predložak te ga grafički pregledati:
-
-![](/img/it-it/applications/crm/budget-marketing-automation/template-file.png)
 
 Ovo su tablice dostupne u obrascu.
 
@@ -31,14 +29,10 @@ Ova kartica omogućuje osnovne operacije s Predloškom, kao što su otvaranje no
 **Poništi(*undo*)**: poništava posljednju promjenu na predlošku;  
 **Ponovi(*redo*)**: obnavlja posljednju poništenu promjenu na predlošku.  
 
-![](/img/it-it/applications/crm/budget-marketing-automation/file.png)
-
 **Početna stranica**
 
 Ova kartica sadrži tipke za osnovne funkcije uređivanja teksta u Predlošku, kao što su veličina fonta, popisi, poravnanje teksta itd.
 Poziva osnovne funkcije popularnih uređivača teksta poput Microsoft Word-a. 
-
-![](/img/it-it/applications/crm/budget-marketing-automation/home.png)
 
 **Umetni**
 
@@ -55,8 +49,6 @@ Ova kartica sadrži tipke za umetanje određenih elemenata u predložak, poput t
 **Text Box**: omogućuje umetanje okvira za tekst unutar Predloška;  
 **Symbol**: služi za umetanje posebnog simbola unutar Predloška.  
 
-![](/img/it-it/applications/crm/budget-marketing-automation/insert.png)
-
 **Merge data**
 
 Na ovoj kartici nalaze se tipke potrebne za upravljanje i umetanje podataka za spajanje.   
@@ -68,6 +60,4 @@ Na ovoj kartici nalaze se tipke potrebne za upravljanje i umetanje podataka za s
 **Previous record**: omogućuje postavljanje na prethodni zapis u odnosu na trenutni izvučeni iz podataka za spajanje;  
 **Next record**: omogućuje postavljanje na sljedeći zapis u odnosu na trenutni izvučeni iz podataka za spajanje;  
 **Last Record**: omogućuje postavljanje na posljednji zapis izvučen iz podataka za spajanje.
-
-![](/img/it-it/applications/crm/budget-marketing-automation/merge-data.png)
 

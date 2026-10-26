@@ -20,15 +20,9 @@ U gornjem delu nalaze se sledeća polja:
 **Zakazano**: ova opcija označava da je slanje *newslettera* zakazano (isključivo informativno polje);  
 **Poslato**: ova opcija označava da je *newsletter* poslat.
 
-![](/img/it-it/applications/crm/newsletter/new-newsletter.png)
-
 U donjem delu forme potrebno je odabrati distribucione liste koje sadrže primaoce i njihove e-mail adrese kojima će *newsletter* biti poslat.
 
-![](/img/it-it/applications/crm/newsletter/distribution-list.png)
-
-Klikom na dugme sa leve strane ![](/img/neutral/common/plus.png) pojedinačne liste, biće moguće videti kontakte koji pripadaju toj listi:
-
-![](/img/it-it/applications/crm/newsletter/contacts.png)
+Klikom na dugme sa leve strane + pojedinačne liste, biće moguće videti kontakte koji pripadaju toj listi:
 
 Za slanje *newslettera*, nakon što su navedeni prethodno opisani parametri, potrebno je pritisnuti dugme Pošalji ![](/img/neutral/common/send.png) na Ribbon traci.
 
@@ -41,8 +35,6 @@ Na taj način otvoriće se stvarna forma za slanje *newslettera*, koja sadrži k
 **Poništi**: dugme za poništavanje poslednje izmene na *newsletteru*;  
 **Vrati**: dugme za vraćanje poslednje poništene izmene na *newsletteru*.
 
-![](/img/it-it/applications/crm/newsletter/email.png)
-
 U donjem delu prikazana su neka polja, od kojih su neka preuzeta iz prethodne forme:
 
 **Primaoci**: polje omogućava označavanje primalaca e-pošte izborom između referenci CRM kontakata ili Fluentis korisnika;  
@@ -51,4 +43,7 @@ U donjem delu prikazana su neka polja, od kojih su neka preuzeta iz prethodne fo
 **Cc**: služi za navođenje e-mail adrese koja će primiti kopiju;  
 **Bcc**: služi za navođenje e-mail adrese koja će primiti skrivenu kopiju. Fluentis automatski popunjava ovo polje adresama CRM kontakata kako svaki primalac *newslettera* ne bi video adrese drugih primalaca;  
 **Ugrađena slika**: označavanjem ove opcije slike iz šablona neće biti dodate kao prilozi kreirane poruke, već kao sastavni elementi same poruke;  
-**Prilozi**: prikazane su datoteke koje će biti priložene *newsletteru*.
+
+Na dnu se nalaze dugmad:
+
+**Pošalji e-poštu**: otvara pregled adresa na koje će biti poslat *newsletter*. Nakon potvrde šalje se e-pošta.
