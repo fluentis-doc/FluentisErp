@@ -1,47 +1,47 @@
 ---
-title: Parametri osnovnih sredstava 
+title: Parametri osnovnih sredstava
 sidebar_position: 4
 ---
 
-:::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+:::tip[Brzi početak]
+Tabela je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako konfiguraciju želite da izvršite ručno, potrebno je da pratite kontrolnu listu na povezanoj stranici.
 :::
 
-Parametri modula Osnovna sredstva nalaze se u **Parametri > Administracija**.
+Parametri modula Osnovna sredstva nalaze se na putanji **Parametri > Administracija**.
 
-## Podaci obrasca  
+## Podaci obrasca
 
-#### Specifične tipke
+#### Specifična dugmad
 
-> **Spremi parametre**: omogućuje vam spremanje postavljenih parametara.   
-> **Poništi postavke**: omogućuje poništavanje postavki.
+> **Sačuvaj parametre**: omogućava čuvanje podešenih parametara.
+> **Poništi podešavanja**: omogućava poništavanje podešavanja.
 
-#### Specifična polja 
+**#### Specifična polja**
 
-- **Verificiraj predšifru**: ako je flag postavljena, predkod mora biti unaprijed definiran u tablici i ne može se slobodno postavljati prilikom izrade sredstva.
+- **Proveri prefiks šifre**: ako je ova oznaka aktivirana, prefiks šifre mora biti unapred definisan u tabeli i ne može se slobodno unositi prilikom kreiranja osnovnog sredstva.
 
-- **Pred-kodiranje za tvrtke**: uz ovu kvačicu aktivira se čitanje iz tablice **Kategorija osnovnog sredstva** i provjera predkodova bit će relativna za jednu tvrtku, a ne odnosi se na sve predkodove svih kompanija prisutnih u bazi podatak 
- 
-- **Prikaz količine**: ako je flag postavljen, prikazat će se količina.  
+- **Prefiks šifre po preduzeću**: aktiviranjem ove opcije omogućava se preuzimanje podataka iz tabele **Kategorije osnovnih sredstava**, a provera prefiksa šifre vrši se za pojedinačno preduzeće, umesto za sve prefikse šifara svih preduzeća prisutnih u bazi podataka.
 
-- **Zadani UM**: definira zadani UM ako je prethodni flag postavljen. 
+- **Prikaz količine**: ako je ova oznaka aktivirana, prikazuje se količina.
 
-- **Postotak pojedinačne imovine**: s postavljenim flagom aktivirat će se polje u zaglavlju imovine u kojem je moguće postaviti postotak amortizacije koji će imati prioritet nad postotkom postavljenim u kategoriji kojoj imovina pripada.  
+- **Podrazumevana merna jedinica**: definiše podrazumevanu mernu jedinicu ako je prethodna opcija aktivirana.
 
-- **Podjela menadžment**: ako je flag postavljena, bit će moguće dodijeliti željenu podjelu u registru imovine, u protivnom će polje za podjelu biti predloženo prema zadanim postavkama.   
+- **Procenat za pojedinačno sredstvo**: aktiviranjem ove opcije omogućava se prikaz polja u zaglavlju osnovnog sredstva, u koje se može uneti procenat amortizacije koji ima prednost u odnosu na procenat definisan za kategoriju kojoj sredstvo pripada.
 
-- **Obrazac obračuna amortizacije**: polje za unos zadanog razloga koji će se predložiti u obrascu obračuna amortizacije.
+- **Podela upravljanja**: ako je ova oznaka aktivirana, moguće je dodeliti željenu podelu u registru osnovnih sredstava. U suprotnom se u polju za podelu predlaže podrazumevana vrednost.
 
-- **Koristi nedopušteni konto**: ovaj flag omogućuje unaprijed postavljanje vrijednosti istog parametra unutar obrazaca za knjiženje amortizacije ili oporavka amortizacije kod međugodišnjih zatvaranja. Ako je aktiviran, isti flag će biti predložen kao aktivan unutar navedenih obrazaca, a nedopušteni dio amortizacije s poreznog gledišta automatski će se knjižiti na određeni konto definiran u tablici [**kategorije dugotrajne imovine**](/docs/configurations/tables/finance/fixed-asset-category).
+- **Šablon obračuna amortizacije**: polje za unos podrazumevanog računovodstvenog razloga koji će biti predložen u obrascu za obračun amortizacije.
 
-- **Pojedinačni unos u računovodstvu amortizacije**: s ovim potvrdnim okvirom svaka kartica imovine će dovesti do jednog računovodstvenog unosa amortizacije.
+- **Koristi nedozvoljeni račun**: ova oznaka omogućava unapred definisanje vrednosti istog parametra u obrascima za knjiženje amortizacije ili povraćaj amortizacije tokom međugodišnjeg zatvaranja. Ako je aktivirana, ista oznaka biće podrazumevano aktivna i u navedenim obrascima, a deo amortizacije koji nije poreski priznat automatski će se knjižiti na odgovarajući račun definisan u tabeli [**Kategorije osnovnih sredstava**](/docs/configurations/tables/finance/fixed-asset-category).
 
-**Omogućen računovodstveni centar**: ovaj flag omogućuje čitanje mjesta troška umetnutog u karticu **Detalji** kartice imovine koja se odnosi na kvotu amortizacije izračunatu računovodstvenom logikom, kao alternativu korištenju objektivne amortizacije kojom se upravlja u posebnoj kartici (Amortizacija za kontroliranje). 
+- **Pojedinačno knjiženje amortizacije**: ako je ovo polje za potvrdu aktivirano, za svaku karticu osnovnog sredstva kreiraće se zasebno računovodstveno knjiženje amortizacije.
 
-## 2. Video tutorijali o parametrima dugotrajne imovine  
+- **Omogućen računovodstveni centar**: ova oznaka omogućava preuzimanje mesta troška unetog na kartici **Detalji** kartice osnovnog sredstva, koje se odnosi na iznos amortizacije izračunat prema računovodstvenoj logici. Ovo predstavlja alternativu korišćenju analitičke amortizacije, kojom se upravlja na posebnoj kartici (*Amortizacija za kontroling*).
 
-:::important Vidi također
-[**VIDEO TUTORIJALI O PARAMETRIMA DUGOTRAJNE IMOVINE**](/docs/video/finance/intro)
+## 2. Video-tutorijali o parametrima osnovnih sredstava
+
+:::important Pogledajte i
+[**VIDEO-TUTORIJALI O PARAMETRIMA OSNOVNIH SREDSTAVA**](/docs/video/finance/intro)
 :::

@@ -4,9 +4,9 @@ sidebar_position: 4
 ---
 
 :::tip[FAst Start]
-La tabella è interessata dalla procedura di [**Fast Start**](/docs/guide/fast-start)
+Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start).
 
-Nel caso in cui si intenda configurare manualmente fare riferimento alla check list della pagina linkata
+Ako se konfiguracija namjerava provesti ručno, potrebno je slijediti kontrolni popis na povezanoj stranici.
 :::
 
 Parametri modula Osnovna sredstva nalaze se u **Parametri > Administracija**.

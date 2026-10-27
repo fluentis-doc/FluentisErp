@@ -1,26 +1,26 @@
 ---
-title: Administrativna 
+title: Administracija
 sidebar_position: 1
 ---
 
-Parametri područja **Administrativna** odnose se na module za: 
+Parametri oblasti **Administracija** odnose se na sledeće module:
 
-[**Knjigovodstvo**](/docs/configurations/parameters/finance/accounting-parameters): **neophodni** za korištenje bilo koje računovodstvene funkcionalnosti, sadrže definiciju osnovnih podataka kao što su trajanje poslovne godine, računi korišteni za automatizirane računovodstvene operacije te povezivanje između matičnih podataka i plana konta, stoga utječu i na proces kreiranja novih matičnih podataka kupaca i dobavljača.  
+[**Računovodstvo**](/docs/configurations/parameters/finance/accounting-parameters): **neophodni** su za korišćenje svih računovodstvenih funkcionalnosti. Sadrže definicije osnovnih podataka, kao što su trajanje poslovne godine, računi koji se koriste za automatizovane računovodstvene operacije i povezivanje matičnih podataka sa kontnim planom. Zbog toga utiču i na postupak kreiranja novih matičnih podataka kupaca i dobavljača.
 
-**Vanjski suradnik**: parametri **koji nisu nužni** i prisutni su zbog unatrag kompatibilnosti.  
+**Eksterni saradnik**: parametri **koji nisu neophodni** i koji su zadržani zbog kompatibilnosti sa starijim verzijama.
 
-[**Osnovna sredstva**](/docs/configurations/parameters/finance/fixed-assets-parameters): parametri koji sadrže specifične opcije relevantne isključivo za modul dugotrajne imovine/kontroling.
+[**Osnovna sredstva**](/docs/configurations/parameters/finance/fixed-assets-parameters): parametri koji sadrže specifične opcije relevantne isključivo za modul osnovnih sredstava i kontroling.
 
-[**Uvoz plaće za kontrolu**](/docs/configurations/parameters/finance/payroll-import-parameters) specifični parametri za uvoz knjiženja vezanih uz plaće zaposlenika iz drugih upravljačkih sustava putem Bizlink uvoznog toka.
+[**Uvoz zarada za kontroling**](/docs/configurations/parameters/finance/payroll-import-parameters): specifični parametri za uvoz knjiženja zarada zaposlenih iz drugih sistema za upravljanje, putem BizLink toka za uvoz.
 
 :::danger[Pažnja]
-Neodgovarajuće upravljanje ovim osnovnim podacima može onemogućiti korištenje pripadajućih funkcionalnosti.  
+Nepravilno upravljanje ovim osnovnim podacima može onemogućiti korišćenje odgovarajućih funkcionalnosti.
 :::
 
 :::tip[Napomena]
-Zbog uske povezanosti s područjem Riznice, osobito za različite procedure automatskog knjiženja u modulima Aktivni portfelj i Plaćanja dobavljačima, preporučuje se provjera i upravljanje i [**parametrima**](/docs/configurations/parameters/treasury/general-overview) područja riznice.  
+Zbog bliske povezanosti sa oblašću Trezora, naročito u vezi sa različitim postupcima automatskog knjiženja u modulima Potraživanja i Plaćanja dobavljačima, preporučuje se provera i podešavanje [**parametara**](/docs/configurations/parameters/treasury/general-overview) oblasti Trezora.
 :::
 
-:::important[**Fast Start**]
-Parametri administrativnog područja mogu se konfigurirati putem inicijalizacije [***FastStart* okruženja**](/docs/guide/fast-start) koje je dizajnirano za brzu konfiguraciju i trenutno korištenje sustava.  
+:::important[**Brzi početak**]
+Parametri oblasti Administracija mogu se konfigurisati tokom inicijalizacije okruženja [**_FastStart_**](/docs/guide/fast-start), koje je osmišljeno za brzo podešavanje i neposredno korišćenje sistema.
 :::

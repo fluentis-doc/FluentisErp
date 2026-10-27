@@ -1,29 +1,29 @@
 ---
-title: Parametri upravljanja osobljem
+title: Parametri upravljanja kadrovima
 sidebar_position: 1
 ---
 
-Parametri se nalaze na putu **Parametri > Zaposlenici > Parametri upravljanja osobljem**.
+Parametri se nalaze na putanji **Parametri > Zaposleni > Parametri upravljanja kadrovima**.
 
-Podaci prisutni u ovom upravljanju koriste se za predlaganje informacija u upravljanju:    
-> **Osnovni tečajevi** - u *naslovnim podacima*;   
-> **Tečajevi osposobljavanja** - u *naslovnim podacima*;   
-> **Isporuke/povrati D.P.I.** - u *ispisima dostavnice D.P.I.* i *obrazac za povrat D.P.I.*.
+Podaci definisani u ovom obrascu koriste se za predlaganje informacija u sledećim modulima:
+> **Osnovni kursevi** - u odeljku *Podaci zaglavlja*;
+> **Kursevi obuke** - u odeljku *Podaci zaglavlja*;
+> **Dodela/povrat O.Z.O.** - u obrascima za štampanje otpremnice O.Z.O. i obrascu za povrat O.Z.O.
 
-**Spremanje parametara upravljanja osobljem**
+**Čuvanje parametara upravljanja kadrovima**
 
-Kako biste mogli pohraniti izmijenjene podatke morate pritisnuti gumb **Spremi**.  
+Da biste sačuvali izmenjene podatke, potrebno je da kliknete na dugme **Sačuvaj**.
 
-#### Specifična polja
-    
-> expander Tečajevi obuke
->> **Vrsta osnovnog tečaja**: *Vrsta osnovnog tečaja* koju treba predložiti prilikom umetanja *Osnovnog tečaja*.   
->> **Vrsta tečaja obuke**: *Vrsta tečaja obuke* koju treba predložiti prilikom umetanja *Tečaja obuke*.   
+**#### Specifična polja**
 
-> expander **D.P.I. management**
->> **Napomena na tijelu dostavnice**:  besplatne napomene o predmetu predlažu se u ispisu *dostavnice OZO*.   
->> **Napomena u podnožju za dostavu**: besplatne bilješke o predmetu ponuđene su u ispisu *dostavnice OZO*.   
->> **Napomena na tijelu povratnice**:  besplatne bilješke o predmetu predložene su u ispisu *povratnice OZO*.   
->> **Fusnota obrasca za povrat**: besplatne bilješke o toj temi ponuđene su u ispisu *povratnice OZO*.   
+> Proširivi odeljak Kursevi obuke
+>> **Tip osnovnog kursa**: *tip osnovnog kursa* koji treba predložiti prilikom unosa *osnovnog kursa*.
+>> **Tip kursa obuke**: *tip kursa obuke* koji treba predložiti prilikom unosa *kursa obuke*.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, gumbi i polja](/docs/guide/common).
+> Proširivi odeljak **Upravljanje O.Z.O.**
+>> **Napomena u telu otpremnice**: slobodne napomene koje se predlažu u štampi *otpremnice O.Z.O.*
+>> **Napomena u podnožju otpremnice**: slobodne napomene koje se predlažu u štampi *otpremnice O.Z.O.*
+>> **Napomena u telu povratnice**: slobodne napomene koje se predlažu u štampi *povratnice O.Z.O.*
+>> **Fusnota obrasca za povrat**: slobodne napomene koje se predlažu u štampi *povratnice O.Z.O.*
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcionisanju obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

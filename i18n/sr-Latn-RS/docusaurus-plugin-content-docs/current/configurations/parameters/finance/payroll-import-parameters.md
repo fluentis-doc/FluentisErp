@@ -1,79 +1,80 @@
 ---
-title: Parametri za uvoz plaća 
+title: Parametri za uvoz zarada
 sidebar_position: 3
 ---
 
-### Polja tablice 
+**### Polja tabele**
 
-Ovi parametri su nužni za upravljanje funkcionalnošću uvoza računovodstvenih zapisa koji se odnose na platne liste zaposlenika kroz .csv datoteke (Zucchetti format) dobivene putem bizlink usluge.
+Ovi parametri su neophodni za upravljanje funkcionalnošću uvoza računovodstvenih knjiženja koja se odnose na platne liste zaposlenih putem .csv datoteka (Zucchetti format), dobijenih preko BizLink servisa.
 
-Ovdje postavljate za svaku tvrtku **dan**, računovodstveni **predložak** i **korisnika** koji će se koristiti za izradu zapisa. 
+Ovde se za svako preduzeće podešavaju **dan**, računovodstveni **šablon** i **korisnik** koji će se koristiti za kreiranje knjiženja.
 
-**Dopusti pretraživanje tablice**: (uvijek postavljeno) traži preslikavanja računa (transkodiranje) u odgovarajućoj tablici transkodiranja u nastavku;
- 
-**Grupiraj prema mjestu troška / Grupiraj prema zaposleniku**: govori Fluentisu koju vrstu datoteke može očekivati ​​(od Zucchettija možete stvoriti datoteku grupiranu prema cdc-u ili prema zaposleniku (razlikuju se u broju i položaju stupaca za čitanje)).
+**Dozvoli pretraživanje tabele**: (uvek aktivirano) omogućava pretraživanje mapiranja računa (transkodiranja) u odgovarajućoj tabeli za transkodiranje navedenoj u nastavku.
 
-Napomena: Zadnja dva polja nisu povezana s ovim uvozom obračuna plaća, već s uvozom za kontroling koji se trenutno izvodi preko uvoza iz Excel tabele i stoga se zapravo ne koriste.  
+**Grupiši prema mestu troška / Grupiši prema zaposlenom**: određuje koju vrstu datoteke Fluentis očekuje. U programu Zucchetti moguće je kreirati datoteku grupisanu prema mestu troška (CDC) ili prema zaposlenom. Ove datoteke se razlikuju po broju i položaju kolona koje treba pročitati.
 
-### Opći Bizlink uvoz plaća 
+Napomena: Poslednja dva polja nisu povezana sa ovim uvozom zarada, već sa uvozom za kontroling, koji se trenutno obavlja uvozom iz Excel tabele, pa se zapravo ne koriste.
 
-Funkcionalnost uključuje stvaranje mape koju nadzire usluga Bizlink u kojoj se pohranjuju datoteke za uvoz, dobivanje automatske obrade i uvoza. 
+**### Opšti BizLink uvoz zarada**
 
-Unatoč činjenici da je moguće kreirati mapu koju nadzire bizlink konektor za uvoz izravno na poslužitelju, iz sigurnosnih razloga poželjno je izbjegavati da korisnici pristupaju poslužitelju i postaviti mapu za uvoz na klijentsko računalo. 
+Ova funkcionalnost obuhvata kreiranje fascikle koju nadgleda BizLink servis, u koju se smeštaju datoteke za uvoz, nakon čega se automatski obrađuju i uvoze.
 
-### Konfiguriranje lokalne usluge Bizlink i ostalih potrebnih parametara 
+Iako je moguće kreirati fasciklu koju nadgleda BizLink konektor za direktan uvoz na serveru, iz bezbednosnih razloga preporučuje se da se izbegne pristup korisnika serveru i da se fascikla za uvoz postavi na klijentski računar.
 
-1. Kreirajte bizLink korisnika u Armu (obrazac Bizlink Users) oji će se koristiti na relevantnom računalu za uvoz. 
-Primjer: Nome: PC-Payroll  Password: xxxxx Connections Grid: 
-Označite *Aktivno je* na proizvodnoj vezi koja se stvarno koristi
+**### Konfigurisanje lokalnog BizLink servisa i ostalih potrebnih parametara**
 
-2. Instalirajte bizLink na računalo ručno
-    Putem naredbe pokreni iz cmd kao administrator
+1. Kreirajte BizLink korisnika u Armu (obrazac BizLink Users) koji će se koristiti na odgovarajućem računaru za uvoz.
 
-net_dir>\InstallUtil "< fluentis_dir>\Tools\Service \Fluentis.BizLink.Tools.Service.exe"'
+   Primer: Name: PC-Payroll, Password: xxxxx, Connections Grid:
 
-Gdje je net_dir instalacijska mapa .net framework a i nalazi se u%WINDIR%\Microsoft.NET\Framework64\ramework verzija, dok je  fluentis_dir instalacijska mapa Fluentisa. 
+   Označite opciju *Aktivno je* na produkcionoj vezi koja se zaista koristi.
 
-![](/img/it-it/configurations/parameters/finance/payroll1.png)
+2. Ručno instalirajte BizLink na računaru.
 
-3.  Kopirajte datoteku mape bizLink bin s poslužitelja na klijent  (morat će se izvršiti ažuriranje svake verzije) osim datoteke dnevnika (označeno na slici ispod)
+   Pokrenite sledeću komandu iz komandne linije (CMD) kao administrator:
 
-![](/img/it-it/configurations/parameters/finance/payroll2.png)
+   `net_dir>\InstallUtil "<fluentis_dir>\Tools\Service\Fluentis.BizLink.Tools.Service.exe"`
 
-Standardna staza je ova: C:\Program Files (x86)\Fluentis\Fluentis\Bin\Tools\Service
+   Gde je `net_dir` instalaciona fascikla .NET Framework-a, koja se nalazi u `%WINDIR%\Microsoft.NET\Framework64\` u fascikli odgovarajuće verzije framework-a, dok je `fluentis_dir` instalaciona fascikla Fluentis-a.
 
-4. Uredite konektor pod nazivom: Zucchetti_PaymentData a ovaj način (posebno dodavanjem novostvorenog bizlink korisnika - PC-Payroll - u polje Identifier)
+   ![](/img/it-it/configurations/parameters/finance/payroll1.png)
 
-![](/img/it-it/configurations/parameters/finance/payroll5.png)
+3. Kopirajte fasciklu BizLink `bin` sa servera na klijentski računar. Ovo ažuriranje moraće da se ponovi za svaku novu verziju, osim za datoteku evidencije (log), koja je označena na slici ispod.
 
-Putanje datoteke (primjer C:\Temp\Bizlink\Incoming ; C:\Temp\Bizlink\Processed ; C:\Temp\Bizlink\Failed) moraju biti prisutne na korisničkom računalu i skup Fluentis mora moći čitati iz toga mapa. Ako to ne uspije, pokušajte svima dati potpunu kontrolu. Također postavite identifikator koji će se kasnije prijaviti u bizLink konfiguracijskoj datoteci. 
+   ![](/img/it-it/configurations/parameters/finance/payroll2.png)
 
+   Standardna putanja je:
 
+   `C:\Program Files (x86)\Fluentis\Fluentis\Bin\Tools\Service`
 
-5. Postavite bizLink konfiguracijsku datoteku s userom, pwd, server i identifier. Datoteka se zove Fluentis.BizLink.Tools.Service.exe.config. 
-Modificarlo come da immagine sotto.
+4. Izmenite konektor pod nazivom `Zucchetti_PaymentData` na sledeći način, posebno tako što ćete u polje `Identifier` dodati novokreiranog BizLink korisnika (`PC-Payroll`).
 
-![](/img/it-it/configurations/parameters/finance/payroll4.png)
- 
-Na taj će način bizLink servis instaliran na računalu raditi samo s tim konektorom. 
+   ![](/img/it-it/configurations/parameters/finance/payroll5.png)
 
-6. Pokrenite bizLink
+   Putanje fascikli (na primer `C:\Temp\Bizlink\Incoming`, `C:\Temp\Bizlink\Processed` i `C:\Temp\Bizlink\Failed`) moraju postojati na korisničkom računaru, a Fluentis nalog mora imati dozvolu za čitanje iz tih fascikli. Ako to ne uspe, pokušajte da svima dodelite potpunu kontrolu. Takođe podesite identifikator koji će kasnije biti naveden u BizLink konfiguracionoj datoteci.
 
+5. Podesite BizLink konfiguracionu datoteku sa korisničkim imenom, lozinkom, serverom i identifikatorom. Datoteka se zove `Fluentis.BizLink.Tools.Service.exe.config`.
 
-### Upravljanje datotekom za uvoz 
+   Izmenite je prema slici u nastavku.
 
+   ![](/img/it-it/configurations/parameters/finance/payroll4.png)
 
+   Na ovaj način, BizLink servis instaliran na računaru radiće samo sa ovim konektorom.
+
+6. Pokrenite BizLink.
+
+**### Upravljanje datotekom za uvoz**
 
 ![](/img/it-it/configurations/parameters/finance/payroll7.png)
 
-Obratite pozornost na činjenicu da je trenutno u Fluentisu potrebno formatirati mjesec/godinu dok se obično datoteka eksportira iz Zucchettija kao cijeli datum, mora se mijenjati u Excelu dok se ne pregleda. 
+Imajte na umu da je u Fluentis-u trenutno potrebno formatirati mesec/godinu, dok se datoteka iz programa Zucchetti obično izvozi sa kompletnim datumom. Zato je potrebno izmeniti format u Excel-u pre nego što se datoteka pregleda.
 
 ![](/img/it-it/configurations/parameters/finance/payroll8.png)
 
-Zatim je potrebno voditi transkodiranje poduzeća i kontnog plana. 
+Zatim je potrebno podesiti mapiranje preduzeća i kontnog plana.
 
 ![](/img/it-it/configurations/parameters/finance/payroll9.png)
 
-I eventualno mjesta troškova. 
+Po potrebi je potrebno podesiti i mesta troškova.
 
-Na kraju, potrebno je upravljati PARAMETRIMA UVOZA PLAĆA kako je gore navedeno.
+Na kraju, potrebno je podesiti **PARAMETRE ZA UVOZ ZARADA** na prethodno opisani način.

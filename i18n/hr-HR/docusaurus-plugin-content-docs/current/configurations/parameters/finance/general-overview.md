@@ -1,9 +1,9 @@
 ---
-title: Administrativna 
+title: Administracija
 sidebar_position: 1
 ---
 
-Parametri područja **Administrativna** odnose se na module za: 
+Parametri područja **Administracije** odnose se na module za: 
 
 [**Knjigovodstvo**](/docs/configurations/parameters/finance/accounting-parameters): **neophodni** za korištenje bilo koje računovodstvene funkcionalnosti, sadrže definiciju osnovnih podataka kao što su trajanje poslovne godine, računi korišteni za automatizirane računovodstvene operacije te povezivanje između matičnih podataka i plana konta, stoga utječu i na proces kreiranja novih matičnih podataka kupaca i dobavljača.  
 

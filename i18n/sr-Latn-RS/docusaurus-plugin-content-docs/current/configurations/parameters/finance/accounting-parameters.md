@@ -3,175 +3,179 @@ title: Računovodstveni parametri
 sidebar_position: 2
 ---
 
-:::tip[FAst Start]
-Tablica je obuhvaćena postupkom [**Fast Start**](/docs/guide/fast-start)
+:::tip[Brzi početak]
+Tabela je obuhvaćena postupkom [**Brzi početak**](/docs/guide/fast-start).
 
-U slučaju da se konfiguracija želi izvršiti ručno, potrebno je slijediti kontrolnu listu dostupnu na poveznici.  
+Ako želite da konfiguraciju izvršite ručno, potrebno je da pratite kontrolnu listu dostupnu na poveznici.
 :::
 
-
-Obrazac Računovodstvenih parametara omogućuje definiranje različitih parametara upravljanja **za svaku odabranu računovodstvenu godinu**. 
-
+Obrazac Računovodstveni parametri omogućava definisanje različitih parametara upravljanja **za svaku odabranu računovodstvenu godinu**.
 
 :::tip VAŽNO
-Mora postojati zapis koji sadrži različite detaljne parametre za **svaku obračunsku godinu**. Stoga se **svaka nova godina** mora inicijalizirati stvaranjem novog zapisa parametra svaku obračunsku godinu pomoću gumba **Novo**.
+Mora postojati zapis koji sadrži različite detaljne parametre za **svaku obračunsku godinu**. Zbog toga se **svaka nova godina** mora inicijalizovati kreiranjem novog zapisa parametara za tu obračunsku godinu pomoću dugmeta **Novo**.
 
-Kada kreirate novi zapis parametra, program vas pita želite li kreirati i [**druge brojače nove godine**](/docs/configurations/utility/new-year-counter-generation).
+Prilikom kreiranja novog zapisa parametara, program vas pita da li želite da kreirate i [**druge brojače za novu godinu**](/docs/configurations/utility/new-year-counter-generation).
 :::
 
 ---
 
-### Specifične tipke
+**### Specifična dugmad**
 
+> **Sačuvaj:** čuva podešavanja godine.
 
-> **Spremi:** spremi postavke godine
+> **Unos računa:** prilikom unosa liste računa kupaca/dobavljača u tabelu, omogućava automatsku zamenu generičkog računa u referenci računom vlasnika podračuna poreskog dokumenta, kao i blokiranje ili prijavljivanje nekompatibilnih računa.
 
-> **Unos računa:** za umetanje popisa računa Kupca/Dobavljača u mrežu dopušta automatsku zamjenu generičkog računa u referenci s vlasnikom podračuna poreznog dokumenta, kao i blokiranje ili prijavu nekompatibilnih računa.
+> **Izbriši račun:** briše prethodno unete račune.
 
-> **Izbriši račun:** za brisanje prethodno unesenih računa.
+> **Otkaži konačni izveštaj:** omogućava otkazivanje konačnih ispisa dnevnika. Nakon otkazivanja konačnog ispisa, korisnik mora da resetuje odgovarajući brojač koji odgovara polju **_Datum poslednjeg ispisa dnevnika_** u odeljku **_Podaci o godini_**. Ovo polje se sastoji od tri okvira koji sadrže datum, poslednji red i poslednju stranicu konačnog ispisa.
 
-> **Otkaži zaključni izvještaj:** za nastavak otkazivanja konačnih ispisa dnevnika. Nakon što je konačni ispis poništen, korisnik mora resetirati odgovarajući brojač koji odgovara polju ***Datum zadnjeg ispisa dnevnika***, u odjeljku ***Podaci o godini***, sastavljenom od tri okvira koji sadrže datum, zadnji redak i posljednju stranicu definitivnog ispisa.
+> **Izbriši knjigu amortizacije:** omogućava otkazivanje konačnih ispisa knjige osnovnih sredstava. Nakon otkazivanja konačnog ispisa, korisnik mora da resetuje odgovarajući brojač stranica koji odgovara polju **_Poslednja stranica odštampana iz dnevnika osnovnih sredstava_** u odeljku **_Podaci o godini_**.
 
-> **Izbriši knjigu amortizacije:** za poništavanje konačnih ispisa knjige sredstava. Nakon što je konačni ispis otkazan, korisnik mora resetirati odgovarajući brojač stranica koji odgovara polju ***Zadnja stranica ispisana iz temeljnice osnovnih sredstava*** u odjeljku  ***Podaci o godini***.
+> **Premesti nagore:** pomera odabrani red nagore u okviru tabele „Predlog mesta troška/profita“, čime mu se dodeljuje viši prioritet.
 
-> **Premjesti gore:** za pomicanje odabranog retka prema gore unutar rešetke "Prijedlog troškovno-profitnog centra", dajući mu viši prioritet.
+> **Premesti nadole:** pomera odabrani red nadole u okviru tabele „Predlog mesta troška/profita“, čime mu se dodeljuje niži prioritet.
+::: 
 
-> **Premjesti dolje:** za pomicanje odabranog retka prema dolje unutar rešetke "Prijedlog centra troška/profita", dajući mu niži prioritet.
+**## 1. Opšte**
+
+**### 1.1 Podaci za godinu**
+
+- **(Početak/Kraj) Poslovna godina:** Definiše raspon datuma za odabranu poslovnu godinu. Svako računovodstveno knjiženje, nakon provere prethodno navedenih polja, unosi se u finansijsku godinu kojoj pripada na osnovu ovih datuma, koji se ne smeju preklapati između različitih finansijskih godina.
+
+- **(Početak/Kraj) Obračunski period:** Preporučena, opciona polja koja definišu raspon datuma obračunskih perioda kojima se može upravljati u okviru zapisa odabrane poslovne godine.
+
+- **(Početak/Kraj) Tekući period:** Obavezna polja koja definišu raspon datuma dokumenata kojima se može upravljati u okviru zapisa odabrane finansijske godine.
+
+- **Zatvaranje prethodnog perioda knjiženja:** Definiše datum zatvaranja prethodne finansijske godine.
+
+- **Poslednji datum štampanja dnevnika:** Čuva datum poslednjeg konačnog štampanja dnevnika za tekuću finansijsku godinu. Prilikom otvaranja nove poslovne godine, ovaj datum mora odgovarati datumu završetka prethodne poslovne godine.
+
+- **Saldo duguje/potražuje:** Čuva poslednje konačno odštampano dugovno/potražno stanje dnevnika odabrane finansijske godine. Prilikom otvaranja nove poslovne godine, ova polja moraju biti postavljena na nulu.
+
+- **Datum/poslednji red/poslednja stranica štampanja dnevnika:** Čuva podatke o poslednjem konačnom štampanju dnevnika odabrane finansijske godine. Prilikom otvaranja nove poslovne godine, ova polja moraju biti postavljena na nulu.
+
+- **Poslednja stranica odštampana iz dnevnika osnovnih sredstava:** Čuva broj poslednje konačno odštampane stranice knjige osnovnih sredstava za odabranu finansijsku godinu. Prilikom otvaranja nove poslovne godine, ovo polje mora biti postavljeno na nulu.
+
+- **Šablon za otvaranje i zatvaranje računa:** Dva opciona polja koja omogućavaju unapred definisanje predložaka koji će se koristiti u postupcima zatvaranja i otvaranja računa.
+
+- **Procenat za nepotpuni period:** Omogućava podešavanje procentualne vrednosti pro-rata obračuna koja važi za odabranu finansijsku godinu. Ako ova opcija nije potrebna, polje ostavite praznim ili unesite 100%.
+
+:::tip[Informacije]
+Upravljanje pro-rata obračunom može se, kao alternativa ovom jedinstvenom polju za sve knjige PDV-a, podesiti i zasebno za svaku knjigu PDV-a. Na taj način omogućava se podrška za vođenje više delatnosti sa različitim procentima pro-rata obračuna PDV-a. Pogledajte [**Knjige PDV-a**](/docs/configurations/tables/finance/vat-books) i [**Tip aktivnosti PDV-a**](/docs/configurations/tables/finance/vat-activity-type).
 :::
 
+**Tip knjiženja PDV-a:** Omogućava definisanje podrazumevanog tipa obračuna stopa PDV-a na različitim analitičkim računima kontnog plana.
 
-## **1. Općenito**
+**Mesečno zatvaranje:** Ako je aktivno, menja način rada postupka *Automatsko zatvaranje računa* kako bi se zatvaranje moglo obavljati mesečno, prema potrebama određenih stranih tržišta, naročito u istočnoj Evropi. **Ovo podešavanje se ne preporučuje za Italiju.**
 
-### 1.1 Podaci za godinu
-
-- **(Početak/Kraj) Vježba:** Definira raspon datuma snimanja odabrane vježbe. Svaki računovodstveni unos, za provjere prethodnih polja, unosi se u financijsku godinu kojoj pripada s obzirom na ove datume, koji se ne smiju preklapati između različitih financijskih godina.  
-
-- **(Početak/Kraj) Obračunski period:** Preporučena izborna polja definiraju raspon datuma kompetencija kojima se može upravljati unutar snimki odabrane vježbe.
-
-- **(Početak/Kraj) Tekuće razdoblje:** Obavezna polja, ona definiraju raspon datuma dokumenata kojima se može upravljati unutar zapisa odabrane financijske godine.
-
-- **Zatvaranje prethodnog perioda knjiženja:** Definira datum zatvaranja prethodne financijske godine.  
-
-- **Zadnji datum ispisa temeljnice:** Pohranjuje posljednji konačni ispisani datum za tekuću financijsku godinu. Prilikom otvaranja nove poslovne godine, ovaj datum mora odgovarati datumu završetka prethodne poslovne godine.  
-
-- **Duguje/potražuje saldo:** Pohranjuje posljednje dugovno/kreditno stanje dnevnika odabrane financijske godine, konačno ispisano. Prilikom izrade nove vježbe ova polja moraju biti postavljena na nulu.  
-
-- **Datum/posljednji redak/ Zadnji datum ispisa temeljnice:** Pohranjuje posljednju konačno ispisanu stranicu knjige sredstava odabrane financijske godine. Prilikom izrade nove vježbe ovo polje mora biti postavljeno na nulu.  
-
-- **Zadnja stranica ispisana iz temeljnice osnovnih sredstava:** Pohranjuje posljednju konačno ispisanu stranicu knjige sredstava odabrane financijske godine. Prilikom izrade nove vježbe ovo polje mora biti postavljeno na nulu.  
-
-- **Predložak otvaranja i zatvaranja računa:** Dva polja, koja nisu obavezna, omogućuju vam da unaprijed postavite razloge koji će se koristiti u postupcima zatvaranja/otvaranja računa.  
-
-- **Postotak za nepotpuno razdoblje:** Polje vam omogućuje da postavite postotnu vrijednost pro-rata važećeg za odabranu financijsku godinu. Ako ovo nije opcija, koristite polje ostavite praznim ili postavite na 100%.  
-
-
-:::tip[Info]
-Upravljanje pro-rata može se, kao alternativa ovom jedinstvenom polju za sve PDV registre, provoditi i posebno za svaki pojedini PDV registar, čime se omogućuje podrška za vođenje više djelatnosti u smislu PDV-a s različitim postocima pro-rate. Vidi [**Knjige PDV-a**](/docs/configurations/tables/finance/vat-books) i [**Vrsta aktivnosti PDV-a**](/docs/configurations/tables/finance/vat-activity-type)
+:::danger[PAŽNJA]
+Ova oznaka mora biti deaktivirana za uobičajeno računovodstvo u Italiji. Ako je aktivirana, na primer slučajno, osim uočljivih razlika u obrascu za sprovođenje zatvaranja računa, neće biti moguće izračunavati i upravljati obračunatim prihodima i rashodima u obrascu *Zapisi usklađivanja*.
 :::
 
-**Tip knjiženja PDV-a:** Polje omogućuje definiranje zadane vrste obračuna stopa PDV-a na različitim podračunima kontnog plana.  
+- **Upravljanje provizijama:** Aktivira funkcije za upravljanje obračunom provizija agenata iz modula Administracija.
 
-**Mjesečno zatvaranje:** Ako je aktivno, mijenja funkcioniranje postupka *Automatskog zatvaranja računa* kako bi se moglo izvršiti mjesečno prema potrebi u nekim inozemnim lokacijama (osobito u istočnoj Europi). **Postavka se ne preporučuje za Italiju**.
+- **Koeficijent ažuriranja:** Označava godišnje povećanje vrednosti imovine za potrebe obračuna amortizacije, koja se zasebno izračunava u modulu Kontroling. Dodatnim parametrima upravlja se na kartici *Amortizacija za kontroling*, dostupnoj u podešavanjima liste imovine [*Obrazac kategorija imovine za kontroling*](/docs/configurations/tables/controlling/analytical-accounting/controlling-asset-categories).
 
-:::danger[PAŽNJA]  
-Ova oznaka mora biti postavljena na neaktivno za uobičajeno talijansko računovodstvo. Ako je aktivirana (npr. slučajno), osim što će se primijetiti neke razlike u obrascu za provođenje zatvaranja računa, uočit će se nemogućnost izračuna i upravljanja obračunatim prihodima i rashodima u obrascu *Zapisi usklađenja*.
-:::
+  **PRIMER:** Unosom vrednosti 1,1 vrednost imovine koja se amortizuje povećavaće se za 10% svake godine. Tako će imovina početne vrednosti 1000 imati vrednost 1100 u godini x+1, a u godini x+2 vrednost će se dodatno povećati prema istoj logici.
 
-- **Upravljanje komisijom:** Aktivirajte funkcije za upravljanje obračunom agentskih provizija iz modula Administracija. 
+- **Poreski režim:** Opšti podaci koje je potrebno popuniti radi upravljanja automatizovanim postupcima i referencama na ove podatke u vezi sa poreskim obavezama i elektronskim fakturisanjem.
 
-- **Postotak aktualizacije:** Označava povećanje vrijednosti imovine iz godine u godinu za potrebe amortizacije koja se posebno izračunava unutar modula Kontroling i kojom se upravlja u raznim drugim detaljima unutar kartice  *Amortizacija za kontroling* koja je prisutna u postavci lista imovine [*Obrazac kategorija imovine za kontroling*](/docs/configurations/tables/controlling/analytical-accounting/controlling-asset-categories).    
-**PRIMJER:** Unosom vrijednosti 1,1 svake godine ćete imati povećanje amortizirajuće vrijednosti imovine od 10%, stoga će imovina početne vrijednosti 1000 imati vrijednost 1100 u godini x+1 i u godine x+2 dodat će se daljnji porast prema istoj logici.  
+- **Obim poslovanja**: koristi se za izračunavanje određenih pokazatelja povezanih sa funkcionalnošću finansijskih izveštaja usmerenih na prevenciju poslovne krize.
 
-- **Porezni režim**: opći podaci koje je potrebno ispuniti kako bi se upravljalo bilo kojim automatizmom i referencama na ove podatke u vezi s fiskalnim i elektroničkim fakturiranjem.
+- **Obračun PDV-a:** Podešava učestalost periodičnih obračuna PDV-a. Ove oznake se međusobno isključuju, a dve glavne odnose se na mesečnu ili tromesečnu učestalost na osnovu prometa (pogledajte propise o PDV-u), dok se treća odnosi na subjekte koji obračunavaju PDV tromesečno po prirodi, prema posebnom režimu iz člana 74. DPR 633/72.
 
-- **Volumen poslova**: je korišten za izračun nekih pokazatelja vezanih uz funkcionalnost informacija o bilanci usmjerenih na prevenciju krize poduzeća.
+- **Minimalni dug za uplatu PDV-a**: predstavlja iznos (koji može biti izmenjen u skladu sa važećim propisima o PDV-u) ispod kojeg nije potrebno platiti dug koji eventualno proizlazi iz periodične prijave PDV-a. Ovo polje utiče na štampanje periodične prijave PDV-a i na obradu tromesečne prijave (Li.Pe.).
 
-- **Obračun PDV-a:** Postavite učestalost periodičnih obračuna PDV-a. Flagovi su međusobno alternativni, a dva glavna odnose se na mjesečnu ili tromjesečnu učestalost na temelju prometa (pogledajte propise o PDV-u), dok se treći odnosi na subjekte tromjesečne "po prirodi" prema posebnom režimu članka 74 DPR 633/72.
+- **Knjige PDV-a:** Omogućava podešavanje zaokruživanja PDV-a naviše, izborom opcije „Lire“ ili primenom logike za evro.
 
-- **Minimalni dug za uplatu PDV-a**: predstavlja iznos (podložan mogućim promjenama prema važećim propisima o PDV-u) ispod kojeg dug koji eventualno proizlazi iz periodične PDV prijave nije potrebno uplatiti. Ovo polje utječe na ispis periodične prijave PDV-a i na obradu tromjesečne prijave (Li.Pe.).  
+- **Knjige PDV-a:** Definiše da li se knjige PDV-a štampaju prema datumu knjiženja ili prema datumu obračuna PDV-a unutar odabranog perioda. Za korisnike koji ne koriste mogućnost odloženog fakturisanja do 15. dana narednog meseca, rezultat se ne menja.
 
-- **Knjige PDV-a:** Postavi zaokruživanje PDV-a uvijek na više s odabirom 'Lire' ili prema logici Euro.
+- **Datum primene plafona jednak:** Određuje da li datum primene plafona koji se dodeljuje PDV transakcijama sa stopom povezanom sa plafonom treba da bude postavljen prema datumu knjiženja ili datumu dokumenta.
 
-- **Knjige PDV-a:** Definira se ispisati registri PDV prema datumu registracije ili prema datumu obračuna PDV unutar odabranog razdoblja. Za one koji ne koriste mogućnost odgođenog fakturiranja do 15. u sljedećem mjesecu, rezultat se ne mijenja.
+**Numeracija:** Omogućava povezivanje svake odabrane godine sa brojačem za konačna računovodstvena knjiženja i ona sa statusom „privremeno“. Ovo je korisno u slučaju povremenih promena pravila numerisanja, umesto fiksnog definisanja brojača u tabeli [Numeracija računovodstvenih knjiženja](/docs/configurations/tables/fluentis-numerations). Ako numeracija nije podešena u ovom obrascu, podrazumevano će se koristiti numeracija definisana u tabeli *Numeracija računovodstvenih knjiženja*. Podešavanje šifarnika za konačna i privremena knjiženja dostupno je i u okviru svakog pojedinačnog računovodstvenog razloga, kako bi se omogućilo razlikovanje brojeva za različite vrste dokumenata, što zahtevaju određene lokalizacije, najčešće francuska. Ovo podešavanje nalazi se u [*zaglavlju šablona*](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates). Ako numeracija nije podešena u računovodstvenom razlogu, podrazumevano će se koristiti ona definisana u ovom obrascu opštih parametara. Ako ni ovde nije definisana, koristiće se numeracija iz opšte tabele, kao što je prethodno navedeno.
 
-- **Datum primjene plafona jednak:** određuje se treba li datum primjene plafona koji se dodjeljuje PDV transakcijama s stopom povezanim s plafonom biti postavljen prema datumu knjiženja ili prema datumu dokumenta.  
+**Samofaktura:** Ovaj odeljak sadrži parametre za kreiranje samofakture iz računovodstvenog knjiženja radi slanja podataka o kupovini u SDI. Pogledajte [**specifične parametre**](/docs/finance-area/e-invoice/auto-invoice/parameters).
 
-**Numeracija:** Omogućuje vam da svaku odabranu godinu povežete s brojnikom za konačne računovodstvene evidencije i one u "privremenom" statusu. Korisno u slučaju povremenih promjena u politici numeriranja umjesto fiksne definicije brojnika u tablici [Numeriranje računovodstvenog zapisa](/docs/configurations/tables/fluentis-numerations). SAko numeriranje nije postavljeno u ovom obrascu, prema zadanim postavkama i dalje će se tražiti u tablici *Numeriranje računovodstvenog zapisa*. Postavka šifranika za konačne i privremene registracije također je prisutna unutar svakog pojedinačnog računovodstvenog razloga (kako bi se razlikovali brojevi za svaku vrstu pisma, kako zahtijevaju neke strane lokalizacije, obično francuska) [*u zaglavlju predložak* ](/docs/configurations/tables/finance/ledger-records-templates/insert-ledger-records-templates) i ako nije postavljen u razlogu, prema zadanim postavkama čitat će se onaj postavljen u ovom obrascu općih parametara. Ako ni ovdje nije definiran brojnik, čitat će se onaj koji je prisutan u općoj tablici, kao što je gore navedeno.
+**Intrastat:** Ovaj odeljak sadrži nekoliko polja povezanih sa obradom i izvozom Intrastat obrazaca.
 
-**Autofaktura:** Odjeljak sadrži parametre za izradu samofakture iz knjigovodstvene evidencije za priopćavanje podataka o kupnji u SDI. Vidi [**specifične parametre** ](/docs/finance-area/e-invoice/auto-invoice/parameters) 
+- **Prikaži detalje prirode transakcije:** Nedavnom izmenom propisa uvedeno je detaljnije polje za prirodu transakcije, koje se može prikazati aktiviranjem ove oznake. Napominjemo da ovo detaljno polje popunjavaju oni koji tokom godine premaše prag od 20 miliona evra za isporuke u obrascu Intra 1 bis ili za nabavke u obrascu Intra 2 bis. Za detalje o kodiranju nove kolone B koja se odnosi na detalje prirode transakcije pogledajte uputstva ministarstva.
 
-**Intrastat:** Ovaj odjeljak sadrži nekoliko polja vezanih za obradu i izvoz Intrastat obrazaca.
+- **Identifikacioni kod ovlašćenog korisnika:** U ovom polju moguće je definisati kod koji se koristi u nazivu izvezene datoteke sa listama, a koji se navodi i u zaglavlju zapisa, za slanje datoteka putem kanala Entratel.
 
-- Prikaži detalje prirode transakcije: S nedavnom izmjenom propisa uveden je detalj vezan za polje prirode transakcije, koji se može učiniti vidljivim aktiviranjem zastavice. (Podsjećamo da ovo detaljno polje popunjavaju oni koji prelaze prag od 20 milijuna eura za isporuke prema obrascu intra 1 bis ili za nabave prema obrascu intra 2 bis tijekom godine.) Za pojedinosti o kodiranju novog stupca B vezanog uz detalje prirode transakcije pogledajte uputstva ministarstva.
+- **Periodičnost Intrastat nabavki/prodaje:** Padajuće liste omogućavaju podešavanje mesečne ili tromesečne periodičnosti za nabavke i prodaju. U skladu sa propisima, od izabrane periodičnosti zavisi nivo detalja koji je potrebno navesti prilikom popunjavanja podataka. Napomena: tromesečna periodičnost za nabavke trenutno je ukinuta.
 
-- Identifikacijski kod ovlaštenog korisnika: U ovom polju moguće je specificirati kodiranje za naziv izvezenog datoteke koja sadrži popise (također zabilježeno u zaglavlju zapisa) za slanje datoteka putem kanala Entratel.
-
-- Periodičnost Intrastat Nabava / Prodaja: Padajući izbornici omogućuju postavljanje mjesečne ili tromjesečne periodičnosti, za nabave i prodaje, prema kojima će biti zahtijevana, u skladu s propisima, veća ili manja razina detalja u popunjavanju podataka. N.B. trenutno je tromjesečna periodičnost za nabave ukinuta.
-
-**PDV na Maržu:** U ovom se odjeljku unose specifični parametri za upravljanje funkcionalnostima vezanim uz režim PDV-a na maržu. Za pojedinosti pogledajte [**ovdje**](/docs/finance-area/particular-cases/VAT_regime-del-maine)
+**PDV na maržu:** U ovom odeljku unose se specifični parametri za upravljanje funkcionalnostima povezanim sa posebnim režimom PDV-a na maržu. Za detalje pogledajte [**ovde**](/docs/finance-area/particular-cases/VAT_regime-del-maine).
 
 ---
 
-### 1.2 Popis računa Kupaca/Dobavljača
+**### 1.2 Lista računa kupaca/dobavljača**
 
-**Dodjela** vrsta računa kupca, dobavljača, banke i agenta s odgovarajućim računima (glavne knjige bez šifre podračuna) koje treba provesti u ovoj mreži, iako nije obavezno, <u>**snažno se preporučuje**</u> kako bi se omogućili različiti automatizmi unutar upravljanja sustava.  
-Posebno ističemo dva slučaja:    
-1. Nakon stvaranja zapisa kontakta, kada dodijelite vrstu računa i naknadno dobijete pojedinosti zapisa, parametar vam omogućuje stvaranje novog računovodstvenog podračuna namijenjenog dotičnom kupcu ili dobavljaču ili agentu ili banci, stavljajući ga pod ispravan glavni račun . Bez ovog uparivanja ovaj bi se zadatak morao unijeti ručno.    
-2. Unutar računovodstvenih predložaka, posebno onih za registraciju faktura, registracijska shema koja izvješćuje o određenom glavnom računu omogućuje, kroz dotičnu kombinaciju, provjeru da li se ispravan glavni račun koristi u registraciji (na primjer, račun dobavljača u registraciji kupnje umjesto računa istog naziva, ali tipa kupca, moguće blokiranje umetanja ovisno o postavci odgovarajućeg sigurnosnog parametra u predlošku).    
-**PAŽNJA:** Postavka dopušta automatsku zamjenu generičkog računa u razlogu plaćanja s podračunom koji drži porezni dokument, stoga nedostatak postavke neće učiniti da automatski razlozi za razloge rade ispravno, učinkovito sprječavajući fakture od automatski se obračunavaju. Prijedlog centra troška/profita od:
-U odjeljku je definiran logičan redoslijed računovodstvenog vrednovanja troškovno-profitnih centara.  
+**Dodela** odgovarajućih glavnih računa (bez šifre analitičkog računa) tipovima računa kupaca, dobavljača, banaka i agenata u ovoj tabeli nije obavezna, ali se <u>**snažno preporučuje**</u> kako bi se omogućilo pravilno funkcionisanje različitih automatizovanih procesa u sistemu.
 
-### 1.3 Predloži troškovni/profitni centar iz: {#center-proposal}
+Posebno izdvajamo dva slučaja:
 
-U odjeljku je definiran logičan redoslijed računovodstvenog vrednovanja troškovno-profitnih centara.  
+1. Nakon kreiranja zapisa kontakta, kada se dodeli tip računa i zatim unesu detalji zapisa, ovaj parametar omogućava kreiranje novog analitičkog računa namenjenog odgovarajućem kupcu, dobavljaču, agentu ili banci, uz njegovo povezivanje sa odgovarajućim glavnim računom. Bez ovog povezivanja, zadatak bi morao da se obavi ručno.
 
-Mogu se pomicati pomoću gumba *Premjesti gore/Premjesti  dolje*, koji se nalaze na traci vrpce, kako bi se upravljalo prioritetom čitanja koji se uvijek pojavljuje odozgo prema dolje, stoga će prvi na popisu biti prvi čitaj, ako se cdc ne nađe idemo na drugi itd...  
+2. U okviru računovodstvenih šablona, naročito onih za knjiženje faktura, šema knjiženja koja sadrži određeni glavni račun omogućava da se, putem odgovarajuće kombinacije, proveri da li se u knjiženju koristi ispravan glavni račun. Na primer, može se proveriti da li se u knjiženju ulazne fakture koristi račun dobavljača, a ne račun istog naziva koji pripada tipu kupca. U zavisnosti od podešavanja odgovarajućeg bezbednosnog parametra u šablonu, unos može biti blokiran.
 
-**<u>NAPOMENA:</u>** trenutno se kriterij *Industrijskog troška* mora smatrati zastarjelim i stoga će se očitavanje zapravo primarno odvijati iz kontnog plana ili iz matičnih podataka kupca.
+**PAŽNJA:** Ovo podešavanje omogućava automatsku zamenu generičkog računa u računovodstvenom razlogu analitičkim računom koji pripada poreskom dokumentu. Ako podešavanje nedostaje, automatizovani računovodstveni razlozi neće pravilno funkcionisati, što može onemogućiti automatsko knjiženje faktura.
 
----
-## 2. Računi
+**Predlog mesta troška/profita:**
 
-U ovoj kartici detaljno postavljate konta kontnog plana koji će se koristiti u različitim automatskim računovodstvenim postupcima koje provodi sustav upravljanja.
+U ovom odeljku definiše se logički redosled računovodstvenog određivanja mesta troška i profita.
 
-- **Detaljni konto-ulazni PDV**: omogućuje vam da postavite podračun koji će se predložiti u automatskom otkrivanju povrata PDV-a kada se periodično plaćanje PDV-a definitivno ispisuje.  
-- **Detaljni konto-izlazni PDV**: omogućuje vam da postavite podračun koji će se predložiti u automatskom otkrivanju povrata PDV-a kada se periodično plaćanje PDV-a definitivno ispisuje.   
-- **Početno financijsko stanje**: omogućuje vam da postavite podračun koji će se predložiti za operacije automatskog otvaranja računa.  
-- **Tekuća dobit prije oporezivanja**: omogućuje vam da postavite podračun koji će se predložiti za operacije automatskog zatvaranja/otvaranja računa.  
-- **Gubitak tekućeg računovodstvenog razdoblja**: omogućuje vam da postavite podračun koji će se predložiti za operacije automatskog zatvaranja/otvaranja računa.  
-- **Prethodna dobit prije oporezivanja**: omogućuje vam da postavite podračun koji će se predložiti za operacije automatskog zatvaranja/otvaranja računa.  
-- **Predhodni gubitak prije oporezivanja**: omogućuje vam da postavite podračun koji će se predložiti za operacije automatskog zatvaranja/otvaranja računa.   
-- **Račun dobiti i gubitka**: omogućuje vam da postavite podračun koji će se predložiti za operacije automatskog zatvaranja računa.    
-- **Kapitalni gubitak**: omogućuje vam postavljanje podračuna koji će se koristiti za priznavanje negativnih ekonomskih razlika od prodaje imovine.   
-- **Kapitalni dobitak**: omogućuje vam da postavite podračun koji će se koristiti za priznavanje pozitivnih ekonomskih razlika od prodaje imovine.  
-- **Nepredviđena dobit**: omogućuje vam postavljanje podračuna koji će se koristiti za otkrivanje nepredviđene imovine.  
-- **Nepredviđeni gubitak**: omogućuje vam da postavite podračun koji će se koristiti za evidentiranje potencijalnih obveza.  
-- **Nepredviđena imovina**: omogućuje vam postavljanje podračuna koji će se koristiti za otkrivanje aktivnog nepostojanja.  
-- **Potencijalne obveze**: omogućuje vam da postavite podračun koji će se koristiti za otkrivanje pasivnih nedostataka.  
-- **Obveza za obračunati porez**: omogućuje vam da postavite podračun koji će se predložiti u automatskom otkrivanju prijave PDV-a kada se periodično plaćanje PDV-a definitivno ispisuje.  
-- **Pretporez**: omogućuje vam da postavite kreditni podračun prema riznici koji će se predložiti u automatskom otkrivanju povrata PDV-a kada se periodično plaćanje PDV-a konačno ispiše.  
-- **Konto razmatranja**: omogućuje vam da postavite podračun fiktivnog kupca za priznavanje imovine za naknade.  
-- **Prijeboj konto odštete**: aktivno ako je prethodni račun razmatranja aktiviran, omogućuje vam da postavite podračun ekonomskog kompenzacije naknada koje treba provjeriti.  
-**Stopa PDV-a na primitke**: aktivna ako je aktiviran račun za prethodna plaćanja, omogućuje postavljanje stope PDV-a za evidentiranje isplata koje treba objaviti.  
-**Nezaprimljeni računi**: omogućuje postavljanje generičkog konta koji će se koristiti u postupku 'Knjiženje primljenih računa' unutar modula 'Ulazni računi', ili prilikom knjiženja ulaznih računa određenog [tipa](/docs/configurations/tables/purchase/purchase-invoices-type) koji predviđa upravljanje razgraničenjem troška (kompetencijom).   
-**Računi koji će biti izdani**: omogućuje postavljanje generičkog konta koji će se koristiti prilikom knjiženja izlaznih računa određenog [tipa](/docs/configurations/tables/sales/invoices-type) koji predviđa upravljanje razgraničenjem troškova (kompetencijom).  
-**Odobrenja za primiti**: omogućuje postavljanje generičkog konta koji će se koristiti prilikom knjiženja odobrenja prema kupcima određenog [tipa](/docs/configurations/tables/purchase/purchase-invoices-type) koji predviđa upravljanje kompetencijom.  
-**Odobrenja za izdati**: omogućuje postavljanje generičkog konta koji će se koristiti pri knjiženju odobrenja kupcima određenog [tipa](/docs/configurations/tables/sales/invoices-type) koji uključuje upravljanje razgraničenjem (kompetencijom).    
-**Odgođene naknade**: omogućuje postavljanje generičkog konta koji će se koristiti u postupku automatskih ispravaka unutar modula 'Međugodišnje zatvaranje'.    
-**Nastali prihod**: omogućuje postavljanje generičkog konta koji će se koristiti u postupku automatskih ispravaka unutar modula 'Međugodišnje zatvaranje'.    
-**Odgođeni dohodak**: omogućuje postavljanje generičkog konta koji će se koristiti u postupku automatskih ispravaka unutar modula 'Međugodišnje zatvaranje'.    
-**Nastali trošak**: omogućuje postavljanje generičkog konta koji će se koristiti u postupku automatskih ispravaka u modulu 'Međugodišnje zatvaranje'.  
-**F24 Model računa**: omogućuje postavljanje generičkog konta koji će se koristiti u postupku knjiženja obrasca F24.  
-**Konto INPS / Mirovinsko osiguranje**: omogućuje postavljanje generičkog konta koji se koristi u postupku knjiženja obrasca F24.  
-**Ostali porezni račun**: omogućuje postavljanje generičkog konta koji će se koristiti u postupku knjiženja obrasca F24.    
-**Podkonto samofakture**: omogućuje postavljanje konta za kreiranje samoizdanog računa (autofakture) iz računovodstvenih zapisa radi slanja podataka o kupnjama prema SDI-u.    
-[**Specifični parametri**](/docs/finance-area/e-invoice/auto-invoice/parameters).     
-**Drugi protuvrijednosni likvidacijski PDV kamata:**  omogućuje automatizaciju knjiženja zateznih kamata koje proizlaze iz tromjesečne PDV likvidacije, unosom željenog konta protustavke (troška).  
+**### 1.3 Predlog mesta troška/profita iz: {#center-proposal}**
+
+U ovom odeljku definiše se logički redosled određivanja mesta troška i profita u računovodstvu.
+
+Redosled se može menjati pomoću dugmadi *Premesti nagore/Premesti nadole*, koja se nalaze na traci sa alatkama. Na taj način upravlja se prioritetom pretrage, koja se uvek odvija odozgo nadole. Prvo se proverava prvi element na listi, a ako se mesto troška/profita (CDC) ne pronađe, prelazi se na sledeći element i tako redom.
+
+**<u>NAPOMENA:</u>** Kriterijum *Industrijski trošak* trenutno se smatra zastarelim, pa će se podaci prvenstveno preuzimati iz kontnog plana ili matičnih podataka kupca.
 
 ---
 
-### 3. Video tutorijali o Parametrima
+**## 2. Računi**
 
-:::important Vidi također
-[**VIDEO TUTORIALI O PARAMETRIMA**](/docs/video/finance/intro)
+Na ovoj kartici detaljno se podešavaju računi kontnog plana koji će se koristiti u različitim automatizovanim računovodstvenim postupcima koje izvršava sistem.
+
+- **Analitički račun ulaznog PDV-a**: omogućava podešavanje analitičkog računa koji će biti predložen prilikom automatskog knjiženja poravnanja PDV-a, kada se periodični obračun PDV-a konačno odštampa.
+- **Analitički račun izlaznog PDV-a**: omogućava podešavanje analitičkog računa koji će biti predložen prilikom automatskog knjiženja poravnanja PDV-a, kada se periodični obračun PDV-a konačno odštampa.
+- **Početno finansijsko stanje**: omogućava podešavanje analitičkog računa koji će biti predložen za automatsko otvaranje računa.
+- **Dobit tekuće godine pre oporezivanja**: omogućava podešavanje analitičkog računa koji će biti predložen za automatsko zatvaranje i otvaranje računa.
+- **Gubitak tekuće obračunske godine**: omogućava podešavanje analitičkog računa koji će biti predložen za automatsko zatvaranje i otvaranje računa.
+- **Dobit prethodne godine pre oporezivanja**: omogućava podešavanje analitičkog računa koji će biti predložen za automatsko zatvaranje i otvaranje računa.
+- **Gubitak prethodne godine pre oporezivanja**: omogućava podešavanje analitičkog računa koji će biti predložen za automatsko zatvaranje i otvaranje računa.
+- **Račun dobiti i gubitka**: omogućava podešavanje analitičkog računa koji će biti predložen za automatsko zatvaranje računa.
+- **Kapitalni gubitak**: omogućava podešavanje analitičkog računa koji će se koristiti za evidentiranje negativnih ekonomskih razlika nastalih prodajom imovine.
+- **Kapitalni dobitak**: omogućava podešavanje analitičkog računa koji će se koristiti za evidentiranje pozitivnih ekonomskih razlika nastalih prodajom imovine.
+- **Vanredni prihod**: omogućava podešavanje analitičkog računa koji će se koristiti za evidentiranje potencijalne imovine.
+- **Vanredni rashod**: omogućava podešavanje analitičkog računa koji će se koristiti za evidentiranje potencijalnih obaveza.
+- **Potencijalna imovina**: omogućava podešavanje analitičkog računa koji će se koristiti za evidentiranje potencijalnih aktivnih stavki.
+- **Potencijalne obaveze**: omogućava podešavanje analitičkog računa koji će se koristiti za evidentiranje potencijalnih pasivnih stavki.
+- **Obaveza za obračunati porez**: omogućava podešavanje analitičkog računa koji će biti predložen prilikom automatskog knjiženja prijave PDV-a, kada se periodični obračun PDV-a konačno odštampa.
+- **Pretporez**: omogućava podešavanje potražnog analitičkog računa prema trezoru koji će biti predložen prilikom automatskog knjiženja poravnanja PDV-a, kada se periodični obračun PDV-a konačno odštampa.
+- **Račun naknada**: omogućava podešavanje analitičkog računa fiktivnog kupca za evidentiranje potraživanja po osnovu naknada.
+- **Protivkonto naknada**: ako je prethodni račun naknada aktiviran, omogućava podešavanje analitičkog računa za evidentiranje ekonomskog poravnanja naknada koje treba proveriti.
+- **Stopa PDV-a na primljene avanse**: ako je aktiviran račun za prethodne uplate, omogućava podešavanje stope PDV-a za evidentiranje uplata koje treba prijaviti.
+- **Neprimljene fakture**: omogućava podešavanje generičkog računa koji će se koristiti u postupku „Knjiženje primljenih faktura“ u modulu „Ulazne fakture“ ili prilikom knjiženja ulaznih faktura određenog [tipa](/docs/configurations/tables/purchase/purchase-invoices-type) koji podržava razgraničenje troškova po obračunskom periodu.
+- **Fakture koje treba izdati**: omogućava podešavanje generičkog računa koji će se koristiti prilikom knjiženja izlaznih faktura određenog [tipa](/docs/configurations/tables/sales/invoices-type) koji podržava razgraničenje troškova po obračunskom periodu.
+- **Odobrenja za prijem**: omogućava podešavanje generičkog računa koji će se koristiti prilikom knjiženja odobrenja dobavljača određenog [tipa](/docs/configurations/tables/purchase/purchase-invoices-type) koji podržava obračun po periodima.
+- **Odobrenja za izdavanje**: omogućava podešavanje generičkog računa koji će se koristiti prilikom knjiženja odobrenja kupcima određenog [tipa](/docs/configurations/tables/sales/invoices-type) koji podržava razgraničenje po obračunskim periodima.
+- **Odloženi troškovi**: omogućava podešavanje generičkog računa koji će se koristiti u postupku automatskih korekcija u modulu „Međugodišnje zatvaranje“.
+- **Obračunati prihod**: omogućava podešavanje generičkog računa koji će se koristiti u postupku automatskih korekcija u modulu „Međugodišnje zatvaranje“.
+- **Odloženi prihod**: omogućava podešavanje generičkog računa koji će se koristiti u postupku automatskih korekcija u modulu „Međugodišnje zatvaranje“.
+- **Obračunati trošak**: omogućava podešavanje generičkog računa koji će se koristiti u postupku automatskih korekcija u modulu „Međugodišnje zatvaranje“.
+- **Račun za obrazac F24**: omogućava podešavanje generičkog računa koji će se koristiti prilikom knjiženja obrasca F24.
+- **Račun INPS / penzijsko osiguranje**: omogućava podešavanje generičkog računa koji se koristi prilikom knjiženja obrasca F24.
+- **Ostali poreski račun**: omogućava podešavanje generičkog računa koji će se koristiti prilikom knjiženja obrasca F24.
+- **Analitički račun samofakture**: omogućava podešavanje računa za kreiranje samofakture iz računovodstvenih knjiženja radi slanja podataka o nabavkama u SDI.
+  [**Specifični parametri**](/docs/finance-area/e-invoice/auto-invoice/parameters).
+- **Protivkonto za kamate na poravnanje PDV-a:** omogućava automatizaciju knjiženja zateznih kamata koje proizlaze iz tromesečnog poravnanja PDV-a, unosom željenog protivkonta troška.
+
+---
+
+**### 3. Video-tutorijali o parametrima**
+
+:::important Pogledajte i
+[**VIDEO-TUTORIJALI O PARAMETRIMA**](/docs/video/finance/intro)
 :::

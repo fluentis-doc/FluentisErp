@@ -9,7 +9,7 @@ Ovi parametri su nužni za upravljanje funkcionalnošću uvoza računovodstvenih
 
 Ovdje postavljate za svaku tvrtku **dan**, računovodstveni **predložak** i **korisnika** koji će se koristiti za izradu zapisa. 
 
-**Dopusti pretraživanje tablice**: (uvijek postavljeno) traži preslikavanja računa (transkodiranje) u odgovarajućoj tablici transkodiranja u nastavku;
+**Dopusti pretraživanje tablice**: (uvijek postavljeno) traži preslikavanja konta (transkodiranje) u odgovarajućoj tablici transkodiranja u nastavku;
  
 **Grupiraj prema mjestu troška / Grupiraj prema zaposleniku**: govori Fluentisu koju vrstu datoteke može očekivati ​​(od Zucchettija možete stvoriti datoteku grupiranu prema cdc-u ili prema zaposleniku (razlikuju se u broju i položaju stupaca za čitanje)).
 
@@ -32,7 +32,7 @@ Označite *Aktivno je* na proizvodnoj vezi koja se stvarno koristi
 
 net_dir>\InstallUtil "< fluentis_dir>\Tools\Service \Fluentis.BizLink.Tools.Service.exe"'
 
-Gdje je net_dir instalacijska mapa .net framework a i nalazi se u%WINDIR%\Microsoft.NET\Framework64\ramework verzija, dok je  fluentis_dir instalacijska mapa Fluentisa. 
+Gdje je net_dir instalacijska mapa .net framework a i nalazi se u%WINDIR%\Microsoft.NET\Framework64\framework verzija, dok je  fluentis_dir instalacijska mapa Fluentisa. 
 
 ![](/img/it-it/configurations/parameters/finance/payroll1.png)
 
@@ -49,9 +49,8 @@ Standardna staza je ova: C:\Program Files (x86)\Fluentis\Fluentis\Bin\Tools\Serv
 Putanje datoteke (primjer C:\Temp\Bizlink\Incoming ; C:\Temp\Bizlink\Processed ; C:\Temp\Bizlink\Failed) moraju biti prisutne na korisničkom računalu i skup Fluentis mora moći čitati iz toga mapa. Ako to ne uspije, pokušajte svima dati potpunu kontrolu. Također postavite identifikator koji će se kasnije prijaviti u bizLink konfiguracijskoj datoteci. 
 
 
-
 5. Postavite bizLink konfiguracijsku datoteku s userom, pwd, server i identifier. Datoteka se zove Fluentis.BizLink.Tools.Service.exe.config. 
-Modificarlo come da immagine sotto.
+Izmijenite ga prema slici u nastavku.
 
 ![](/img/it-it/configurations/parameters/finance/payroll4.png)
  
@@ -62,15 +61,13 @@ Na taj će način bizLink servis instaliran na računalu raditi samo s tim konek
 
 ### Upravljanje datotekom za uvoz 
 
-
-
 ![](/img/it-it/configurations/parameters/finance/payroll7.png)
 
 Obratite pozornost na činjenicu da je trenutno u Fluentisu potrebno formatirati mjesec/godinu dok se obično datoteka eksportira iz Zucchettija kao cijeli datum, mora se mijenjati u Excelu dok se ne pregleda. 
 
 ![](/img/it-it/configurations/parameters/finance/payroll8.png)
 
-Zatim je potrebno voditi transkodiranje poduzeća i kontnog plana. 
+Zatim je potrebno napraviti kodiranje poduzeća i kontnog plana. 
 
 ![](/img/it-it/configurations/parameters/finance/payroll9.png)
 
