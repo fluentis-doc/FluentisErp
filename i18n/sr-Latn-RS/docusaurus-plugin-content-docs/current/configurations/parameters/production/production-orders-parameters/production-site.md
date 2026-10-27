@@ -1,40 +1,42 @@
 ---
-title: Mjesto proizvodnje 
+title: Mesto proizvodnje
 sidebar_position: 3
 ---
 
-Tablica vam omogućuje upravljanje kodiranjem različitih *Vrsta proizvodnih mjesta*. 
+Tabela omogućava upravljanje šiframa različitih vrsta *mesta proizvodnje*.
 
-Omogućuje umetanje novih zapisa ili traženje postojećih kako biste ih pregledali, izmijenili ili izbrisali. 
+Omogućava unos novih zapisa ili pretragu postojećih radi pregleda, izmene ili brisanja.
 
-## Pretraga mjesta proizvodnje 
+## Pretraga mesta proizvodnje
 
-Obrazac se sastoji od područja filtra i područja rezultata. Nakon što ste postavili sve željene filtre, jednostavno kliknite na tipku **Traži** kako biste vidjeli rezultate unutar mreže rezultata.  
+Obrazac se sastoji od područja za filtriranje i područja sa rezultatima. Nakon podešavanja željenih filtera, dovoljno je kliknuti na dugme **Pretraga** kako bi se rezultati prikazali u mreži sa rezultatima.
 
-##  Umetnite nova proizvodna mjesta 
+## Unos novih mesta proizvodnje
 
-Da biste umetnuli novu proizvodnu lokaciju, koristite tipku **Nuovo** u obrascu za pretraživanje.
+Za unos novog mesta proizvodnje potrebno je u obrascu za pretragu kliknuti na dugme **Novo**.
 
-U obrascu za unos proizvodno mjesto definirano je u gornjem dijelu pomoću polja **Šifra** i **Opis**. 
+U gornjem delu obrasca za unos mesto proizvodnje definiše se pomoću polja **Šifra** i **Opis**.
 
-##  Promjena mjesta proizvodnje
+## Izmena mesta proizvodnje
 
-Za izmjenu proizvodnih mjesta odaberite mjesto u obrascu za pretraživanje i dvaput kliknite na red ili upotrijebite tipku **Uredi**.
+Za izmenu mesta proizvodnje potrebno je u obrascu za pretragu izabrati željeno mesto i dvaput kliknuti na njegov red ili kliknuti na dugme **Izmena**.
 
-Ulaskom u način uređivanja moguće je pregledati i modificirati parametre relevantnih skladišta za tu *Proizvodnu lokaciju*.       
-To su isti oni koji su prisutni u [Parametrima proizvodnog naloga](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro),  ali imaju prioritet nad općim, jer, ako je mjesto proizvodnje umetnuto, koriste ih procedure umjesto općih.   
-Za više detalja o logikama i prioritetima skladišta i uzroka koji se koriste, preporučuje se pregledavanje dokumentacije vezane uz [Parametri proizvodnih naloga](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).  
+U režimu izmene moguće je pregledati i menjati parametre pripadajućih skladišta za to *mesto proizvodnje*.
 
-Polje **Kontakt** u **Proizvodnom mjestu** koristi se u [Otpremama](/docs/logistics/shipping/shippings), za automatsko prijedlog adrese mjesta utovara kada se odabere odgovarajuće proizvodno mjesto.   
+To su isti parametri koji se nalaze u [Parametrima naloga za proizvodnju](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro), ali imaju prednost u odnosu na opšte parametre, jer ih postupci koriste umesto opštih parametara kada je navedeno mesto proizvodnje.
 
-## Konfiguracija i rad proizvodnog mjesta  
+Za detaljnije informacije o načinu primene i prioritetima skladišta i šablona skladišnih kretanja preporučuje se pregled dokumentacije o [Parametrima naloga za proizvodnju](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
 
-Si riportano di seguito i passaggi necessari per una corretta configurazione ed utilizzo dei **Proizvodnih mjesta**:
- 
-1. Kreirati proizvodno mjesto unošenjem šifre i opisa.  
-2. Povezati kreirano proizvodno mjesto s pojedinačnim skladištima koja će mu pripadati, upisivanjem u polje *Proizvodno mjesto* u tablici [Skladišta](/docs/configurations/parameters/production/production-orders-parameters/production-site). Proizvodno mjesto može se povezati i s korištenom strojem unošenjem u polje *Proizvodno mjesto* u tablici [Strojevi](/docs/configurations/tables/production/machines/).  
-3. Dovršiti kreiranje proizvodnog mjesta unosom skladišta (birajući samo ona povezana s tim specifičnim mjestom) i pripadajućih predložaka za ulaz i izlaz, kako je detaljno opisano u članku posvećenom [Parametrima proizvodnih naloga](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
-4. U [Proizvodnoj narudžbi](/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders) potrebno je specificirati proizvodno mjesto u odgovarajućem polju zaglavlja.  
-5. Planerske procedure za proizvodnju tog artikla uzimat će u obzir dostupnost tog i svih njegovih komponenti analizirajući samo skladišta povezana s tim proizvodnim mjestom, zanemarujući dostupnosti u svim ostalim skladištima.  
+Polje **Kontakt** u zapisu **Mesto proizvodnje** koristi se u postupku [Otpreme](/docs/logistics/shipping/shippings) za predlaganje adrese mesta utovara prilikom izbora odgovarajućeg mesta proizvodnje.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, tipke i polja](/docs/guide/common).
+## Konfiguracija i funkcionisanje mesta proizvodnje
+
+U nastavku su navedeni koraci potrebni za pravilnu konfiguraciju i upotrebu **mesta proizvodnje**:
+
+1. Kreirajte mesto proizvodnje unosom šifre i opisa.
+2. Povežite kreirano mesto proizvodnje sa pojedinačnim skladištima koja mu pripadaju tako što ćete ga uneti u polje *Mesto proizvodnje* u tabeli [Skladišta](/docs/configurations/parameters/production/production-orders-parameters/production-site). Mesto proizvodnje moguće je povezati i sa mašinom koja se koristi, unosom u polje *Mesto proizvodnje* u tabeli [Mašine](/docs/configurations/tables/production/machines/).
+3. Dovršite konfiguraciju mesta proizvodnje unosom skladišta — birajući samo ona koja su povezana sa tim mestom — i pripadajućih ulaznih i izlaznih šablona, kao što je opisano u dokumentaciji o [Parametrima naloga za proizvodnju](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
+4. U [Radnom nalogu za proizvodnju](/docs/planning/mps-master-production-scheduling/production-job-orders/job-orders) potrebno je navesti mesto proizvodnje u odgovarajućem polju zaglavlja.
+5. Postupci planiranja proizvodnje za taj artikal uzeće u obzir njegovu raspoloživost i raspoloživost svih njegovih komponenti, analizirajući samo skladišta povezana sa tim mestom proizvodnje i zanemarujući raspoloživost na svim ostalim skladištima.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću stranicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

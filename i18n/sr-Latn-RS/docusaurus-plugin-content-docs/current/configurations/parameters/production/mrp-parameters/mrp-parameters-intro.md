@@ -1,134 +1,214 @@
 ---
-title: Parametri MRP  
+title: MRP parametri
 sidebar_position: 2
 ---
 
-Za uređivanje MRP parametara:   
-1. otvorite obrazac koji se nalazi na putu **Parametri > Proizvodnja > MRP parametri**. 
-2. odaberite članak i dvaput kliknite na red ili upotrijebite gumb **Izmjeni parametre**.
+Za izmenu MRP parametara:
 
-I parametri MRP vengono creati in automatico dal sistema al salvataggio di un nuovo articolo inserito in anagrafica, con dei valori di default che possono essere variati manualmente dall’operatore singolarmente o in maniera massiva tramite il pulsante **Sostituzione parametri** presente nella form di filtro.
+1. Otvorite obrazac putem menija **Parametri > Proizvodnja > MRP parametri**.
+2. Izaberite artikal i dvaput kliknite na red ili upotrebite dugme **Izmeni parametre**.
 
-## 1. Opći podaci 
+MRP parametre sistem automatski kreira prilikom čuvanja novog artikla unetog u šifarnik, pri čemu se dodeljuju podrazumevane vrednosti koje operater može ručno da menja pojedinačno ili grupno pomoću dugmeta **Zamena parametara**, koje se nalazi u obrascu za filtriranje.
 
-Parametri koji se mogu definirati unutar ove kartice su sljedeći:   
+## 1. Opšti podaci
 
-**Politika upravljanja**: ovaj kombinirani okvir omogućuje korisniku da odabere hoće li upravljati stavkom na:    
-> **Prognoza**:  u ovom slučaju stavkom će se upravljati generiranjem predviđanja prodaje ili umetanjem glavnog plana proizvodnje. Ova se politika upravljanja uzima u obzir i u [Generiranje proizvodnih narudžbi](/docs/planning/mps-master-production-scheduling/job-order-creation) i u [MRP-u](/docs/planning/ms-master-scheduling/mrp).   
-> **Zaliha**: u ovom slučaju artiklom će se upravljati na temelju informacija koje se odnose na ponovnu narudžbu i minimalne bodove zaliha unesene u karticu  [Nabava](/docs/erp-home/registers/items/create-new-item) matičnih podataka artikla. To je zato što su to artikli za koje potražnja stiže prekasno u usporedbi s mojom potrebom za nabavom i/ili proizvodnjom i stoga se javlja potreba za upravljanjem tim artiklima na zalihama na takav način da se nastavi s nabavom ili proizvodnjom prije nego što stignu pravo pitanje. Također u ovom slučaju, generiranje naloga za proizvodnju artikla bit će dobiveno upotrebom postupka [Generiranje proizvodnih narudžbi](/docs/planning/mps-master-production-scheduling/job-order-creation) i [MRP-a](/docs/planning/ms-master-scheduling/mrp).   
-> **Radni nalog**: koristi se za artikle koji se proizvode po narudžbi, s ciljem zadržavanja sljedivosti tijekom različitih faza njihove proizvodnje. U ovom slučaju, ova vrsta politike upravljanja primjenjuje se tijekom [Generiranja proizvodnih naloga](/docs/planning/mps-master-production-scheduling/job-order-creation), korištenjem kartice Kupčevi nalozi. Upravo kroz ovakav način upravljanja generiraju se proizvodni nalozi. Moguće ju je voditi i putem [MRP-a](/docs/planning/ms-master-scheduling/mrp) ali samo ako se to izričito specificira putem flag **Uzmi u obzir artikal u obračunu MRP** koji se nalazi na kartici Parametri unutar ovog obrasca.  
-Na primjer: generiran je kupčev nalog za 6 komada artikla koji se vodi po principu proizvodnje po narudžbi, a zatim i drugi kupčev nalog za 8 komada istog artikla. Kako bi se osigurala sljedivost proizvodnje i veza između kupčevih naloga i proizvodnih naloga, kreirat će se dvije odvojene proizvodne komese, svaka povezana s odgovarajućim kupčevim nalogom.   
-> **Zahtijevi**: u ovom slučaju, radi se o artiklima za koje nije nužno zadržavati sljedivost, pa se različiti zahtjevi iz više izvora mogu grupirati zajedno (pri čemu se gubi veza s komesom). U tom slučaju, artikl se može uzeti u obzir prilikom korištenja postupka [MRP](/docs/planning/ms-master-scheduling/mrp) umjesto postupka **Generalno planiranje**. 
-Na primjer: u situaciji sličnoj prethodnoj, s jednim kupčevim nalogom za 6 komada i drugim za 8 komada istog artikla, može se generirati zajednički proizvodni nalog za ukupno 14 komada, pri čemu se gubi veza između naloga i komese, a time i sljedivost.  
+Parametri koje je moguće definisati na ovoj kartici su sledeći:
 
-:::note NAPOMENA
-Sljedeće opcije za buffere i toleranciju vremena isporuke kupcu dostupne su samo uz DDMRP.  
+**Politika upravljanja**: ovaj padajući meni omogućava korisniku da izabere način upravljanja artiklom:
+
+> **Prognoziranje**: u ovom slučaju artiklom se upravlja generisanjem prognoza prodaje ili unosom glavnog plana proizvodnje. Ova politika upravljanja uzima se u obzir i u postupku [Generisanje proizvodnih naloga](/docs/planning/mps-master-production-scheduling/job-order-creation) i u postupku [MRP](/docs/planning/ms-master-scheduling/mrp).
+
+> **Zaliha**: u ovom slučaju artiklom se upravlja na osnovu podataka o tački ponovnog naručivanja i minimalnoj zalihi, unetih na kartici [Nabavka](/docs/erp-home/registers/items/create-new-item) u šifarniku artikala. Ova opcija namenjena je artiklima kod kojih potražnja stiže prekasno u odnosu na vreme potrebno za nabavku ili proizvodnju, zbog čega je njima potrebno upravljati na osnovu zaliha. Na taj način omogućava se nabavka pre pojave stvarne potražnje. I u ovom slučaju proizvodni nalog za artikal generiše se putem postupka [Generisanje proizvodnih naloga](/docs/planning/mps-master-production-scheduling/job-order-creation) ili postupka [MRP](/docs/planning/ms-master-scheduling/mrp).
+
+> **Nalog**: koristi se za artikle koji se proizvode po nalogu kako bi se obezbedila sledljivost tokom svih faza proizvodnje. Ova politika upravljanja primenjuje se tokom postupka [Generisanje proizvodnih naloga](/docs/planning/mps-master-production-scheduling/job-order-creation), korišćenjem kartice Narudžbine kupaca, putem koje se generišu proizvodni nalozi. Artiklom se može upravljati i putem postupka [MRP](/docs/planning/ms-master-scheduling/mrp), ali samo ako je to izričito određeno aktiviranjem zastavice **Uključi artikal u obračun MRP-a**, koja se nalazi na kartici Parametri ovog obrasca.
+
+> Primer: generisana je narudžbina kupca za 6 komada artikla kojim se upravlja prema nalogu, a zatim još jedna narudžbina za 8 komada istog artikla. Da bi se pratila proizvodnja i veza između narudžbina kupaca i proizvodnih naloga, kreiraće se dva zasebna proizvodna naloga, svaki povezan sa odgovarajućom narudžbinom kupca.
+
+> **Potreba**: u ovom slučaju reč je o artiklima kod kojih možda nije potrebno obezbediti sledljivost. Zato je moguće objediniti više potreba iz različitih izvora, pri čemu se gubi veza sa pojedinačnim nalogom. Takav artikal može se uzeti u obzir prilikom korišćenja postupka [MRP](/docs/planning/ms-master-scheduling/mrp), umesto postupka **Opšte planiranje**.
+
+> Primer: u situaciji sličnoj prethodnoj, sa jednom narudžbinom kupca za 6 komada i drugom za 8 komada istog artikla, moguće je generisati jedan zbirni proizvodni nalog za 14 komada. Pritom se gubi veza između pojedinačnih narudžbina i proizvodnih naloga, a time i sledljivost. Alternativno, artiklom se može upravljati bez objedinjavanja potreba.
+
+:::note[NAPOMENA]
+Sledeće opcije za DDMRP bafere i toleranciju vremena kupca dostupne su samo uz DDMRP.
 :::
 
-> **DDMRP dinamički bufferi**: predviđaju promjene u vremenu za tri karakteristične zone (zelena, žuta, crvena), a time i promjene prosječne zalihe.        
-> **DDMRP fiksni bufferi**: koriste fiksne vrijednosti za zone, pa je i prosječna razina zaliha fiksna (koriste se u slučaju ograničenja prostora, ulaganja, sigurnosnih granica itd.).          
-> **Buffer min-max DDMRP**: koriste samo crvenu i zelenu zonu.         
->> **Tolerancija vremena isporuke kupcu**: vrijeme isporuke izraženo u danima koje kupci općenito smatraju prihvatljivim. (Opcija se omogućuje tek nakon odabira tipa DDMRP buffera.)        
+> **Dinamički DDMRP baferi**: omogućavaju promenu tri karakteristične zone (zelene, žute i crvene) tokom vremena, a time i promenu prosečnog nivoa zaliha.
 
-**Vrsta nabave**: padajući izbornik služi za razlikovanje vrste planiranih naloga koji se generiraju te omogućuje korisniku da odabere treba li način nabave artikla biti:    
-> **Nabava**: u ovom slučaju, eksplozija potražnje stvara planirani nalog za kupnju za dotični artikl;    
-> **Proizvodnja**: u ovom slučaju, eksplozija potražnje stvara planirani nalog za proizvodnju za dotični artikl;    
-> **Podizvođač**: u ovom slučaju, eksplozija potražnje stvara planirani nalog za kooperaciju (podugovaranje) za dotični artikl.  
+> **Fiksni DDMRP baferi**: koriste fiksne vrednosti zona, a time i fiksni prosečni nivo zaliha. Primenjuju se u slučajevima ograničenog prostora, investicionih ograničenja, bezbednosnih ograničenja i slično.
 
-**Tip izuzimanja**: padajući izbornik omogućuje korisniku da odabere način izdavanja artikla, odnosno kako se želi da materijal bude otpisan (izdan) u proizvodnom području. Moguće je odabrati između:      
-> **Automatski**: s ovom postavkom, artikl će biti preuzet tijekom puštanja proizvodnog naloga, odnosno kada nalog prelazi iz statusa Lansiran u Izvršan;    
-> **Sa Listom**: s ovom postavkom, artikl će biti preuzet putem generiranja liste za preuzimanje, koja se ručno kreira pomoću procedure unutar područja Proizvodnja > Proizvodni nalozi > Ispisi. U tom slučaju, korisnik ručno odlučuje kada će se materijal otpisati.  
-![](/img/it-it/configurations/parameters/production/mrp-parameters/image05.png)  
-> **Priručnik**: S ovom postavkom, artikl će biti preuzet samo tijekom prijave proizvodnje razine strukture sastavnice koja je neposredno iznad njega. Preuzimanje će se dogoditi istovremeno s prijavom faze proizvodnje na koju je materijal bio vezan, ili, u nedostatku povezane faze, istovremeno s prijavom posljednje interne faze proizvodnje. Dakle, drugim riječima, kada idem prijaviti "roditelja" iz sastavnice, bit će mi predložene sve količine "djece" koje sam trebao koristiti za proizvodnju tog roditelja i potvrdom tih količina dolazi i do njihovog otpisa. Važno je napomenuti da u slučaju korištenja WIP skladišta, tip preuzimanja Ručni podrazumijeva premještanje dotičnog materijala iz skladišta sirovina u WIP skladište tijekom puštanja proizvodnog naloga, a zatim njegov otpis iz WIP-a tijekom prijave proizvodnje (za objašnjenje WIP skladišta pogledati članak posvećen kartici *Parametri MRP* nazvanoj *Skladišta*).
+> **Min-max DDMRP baferi**: koriste samo crvenu i zelenu zonu.
 
-Osim toga, prisutni su sljedeći obrasci:
+>> **Tolerancija vremena kupca**: vreme isporuke izraženo u danima koje kupci generalno smatraju prihvatljivim. Ova opcija aktivira se tek nakon izbora vrste DDMRP bafera.
 
-**Prioritet nabave**: ovo uređivo polje omogućuje korisniku da postavi vrstu prioriteta koja će se dodijeliti artiklu. Taj prioritet će se koristiti pri kreiranju *zahtjeva za kupnju* tijekom faze [Puštanja planiranih naloga](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders/) ukoliko je aktiviran flag **Svojstva nabave iz Parametara MRP artikla**;   
+**Vrsta nabavke**: ovaj padajući meni služi za određivanje vrste planiranih naloga koji se kreiraju. Korisnik može da izabere jedan od sledećih načina nabavke artikla:
 
-**Generiranje proizvodnih narudžbi**: ako je aktivirano, označava da redovi kupčevih naloga koji sadrže ovaj artikl moraju biti prikazani u filteru kartice *Narudžba kupaca* u okviru *Generiranje proizvodnih narudžbi*; također, artikl će se uzeti u obzir i ako je aktivirana opcija *Automatsko generiranje tijeka proizvodnje* koja se nalazi u [Parametrima MS](/docs/configurations/parameters/production/mps-parameters/). Ako je flag deaktiviran, artikl se neće uzimati u obzir ni u jednoj od ove dvije procedure.;
+> **Nabavka**: u ovom slučaju eksplozija potreba kreira planirani nabavni nalog za predmetni artikal.
 
-**Isključiti iz planiranja**: ako je aktivirano, 
+> **Proizvodnja**: u ovom slučaju eksplozija potreba kreira planirani proizvodni nalog za predmetni artikal.
 
-**Postotak otpada**: omogućuje korisniku da postavi fiksni postotak otpada za artikl. Taj se postotak uvijek primjenjuje kada se artikl unosi u sastavnicu (BOM).  
-*Primjer*: ako je navedeno da pri proizvodnji tog materijala uobičajeno dolazi do otpada od 10%, tada će planer ili MRP, prilikom kreiranja planiranog naloga, umjesto za 100 komada generirati nalog za 100 komada plus 10% otpada.  
+> **Kooperacija**: u ovom slučaju eksplozija potreba kreira planirani nalog za kooperaciju za predmetni artikal.
 
-**Razmotrite podizvođača**: ako je aktivirano, omogućuje korisniku da artikl bude uključen u automatsko popunjavanje kartice *Materijali za isporuku* i kartice *Materijali koji će se koristiti* unutar *Narudžbe podizvođača*;
+**Vrsta izdavanja**: ovaj padajući meni omogućava korisniku da izabere način izdavanja materijala za artikal, odnosno način na koji se materijal izdaje u proizvodnom pogonu. Dostupne su sledeće mogućnosti:
 
-Postoje i razni flagovi koji se koriste u obradi MRP procedure i to su:
+> **Automatski**: artikal se izdaje prilikom puštanja proizvodnog naloga u izvršenje, odnosno pri promeni statusa naloga iz „Pokrenut” u „U izvršenju”.
 
-**Razmotrite količine prema ekonomskom lotu**: Ako je aktiviran, flag omogućuje da se za artikl uzme u obzir ekonomska serija (odnosno minimalna količina proizvodnje/nabave), za proizvodnju (postavljena u odjeljku Parametri proizvodnje unutar ovog obrasca, a koji će biti detaljno objašnjen kasnije), ili za nabavu (postavljena u odjeljku Parametri nabave, također unutar ovog obrasca i bit će objašnjena kasnije);  
+> **Sa listom**: artikal se izdaje putem liste za preuzimanje materijala, koja se ručno kreira u odeljku Proizvodnja > Lista za preuzimanje materijala. U tom slučaju trenutak izdavanja materijala određuje se ručno.
 
-**Razmotri višekratnike ekonomskih lotova**: ako je aktiviran, flag omogućuje da se za artikl uzme u obzir multiplikator ekonomske serije proizvodnje ili nabave, postavljen u odgovarajućim sekcijama forme koje će biti detaljno objašnjene kasnije;  
+> **Ručno**: artikal se izdaje tek prilikom evidentiranja proizvodnje neposredno nadređenog nivoa sastavnice. Izdavanje se obavlja istovremeno sa evidentiranjem proizvodne faze sa kojom je materijal povezan ili, ako nije povezan ni sa jednom fazom, prilikom evidentiranja poslednje proizvodne faze koja omogućava skladišno kretanje.
 
-**Obnovi minimalnu zalihu stavki**: ako je aktiviran, flag omogućuje da se za artikl nadopuni minimalna zaliha postavljena u njegovoj matičnoj kartici, kartica *Nabava*;
+> Drugim rečima, kada se evidentira proizvodnja nadređenog artikla, predlažu se sve količine podređenih artikala koje je trebalo utrošiti za njegovu proizvodnju. Potvrdom tih količina istovremeno se obavlja i njihovo izdavanje iz skladišta.
 
-**Nadopuni ROL stavku**: ako je aktiviran, flag omogućuje da se za artikl nadopuni točka ponovnog naručivanja postavljena u njegovoj matičnoj kartici, kartica *Nabava*;
+> Važno je napomenuti da u slučaju korišćenja WIP skladišta ručno izdavanje podrazumeva prenos predmetnog materijala iz skladišta sirovina u WIP skladište tokom puštanja proizvodnog naloga u izvršenje, a zatim njegovo izdavanje iz WIP skladišta prilikom evidentiranja proizvodnje. Objašnjenje WIP skladišta nalazi se u zasebnom članku o kartici *Parametri MRP-a*, u odeljku *Skladišta*.
 
-**Uvažava indeks pokrivenosti**: ako je aktiviran, flag omogućuje da se za artikl uzme u obzir indeks pokrivenosti postavljen u njegovoj matičnoj kartici, kartica *Nabava*; indeks pokrivenosti izražava se u tjednima i kada je naveden, znači da se sustavu zadaje da pokrije potrebe za broj tjedana naveden u ovom polju;  
+Osim toga, dostupna su sledeća polja:
 
-**Razmotrite alternative materijala**: ako je aktiviran, flag omogućuje da se za artikl uzmu u obzir i njegove alternative postavljene u sastavnici, kartica *Alternative* u slučaju da artikl nije dostupan;  
+**Prioritet nabavke:** ovo polje omogućava korisniku da postavi prioritet koji će biti dodeljen artiklu. Taj prioritet koristiće se prilikom kreiranja *zahteva za nabavku* tokom postupka [Puštanje planiranih naloga u izvršenje](/docs/planning/ms-master-scheduling/planned-orders/procedures/release-planned-orders/), ako je aktivirana zastavica **Svojstva nabavke iz MRP parametara artikla**.
 
-**Razmotri alternativne faze**: ako je aktiviran, flag omogućuje da se za artikl uzmu u obzir, ako je artikl proizvodnog tipa, i alternativne faze postavljene u njegovom radnom ciklusu. U polju *Tolerancija za zauzeće radnog centra (CDL)* moguće je postaviti postotak koji određuje kada se smatra da je moj radni centar zauzet. (Primjer: ako unesem 90%, kada radni centar dosegne 90% zauzeća, program će početi uzimati u obzir alternativne faze postavljene za taj centar). U polju *Tolerancija proizvodnje* moguće je, također u postocima, definirati koliko se više može proizvesti od planirane količine naloga za proizvodnju za taj artikl. Isto vrijedi i za nabavu u polju *Tolerancija nabave*.  
+**Generisanje proizvodnih naloga**: ako je aktivirano, označava da redovi narudžbina kupaca koji sadrže ovaj artikal moraju biti prikazani u filteru na kartici *Narudžbine kupaca* u postupku *Generisanje proizvodnih naloga*. Ova opcija se uzima u obzir i ako je aktivirana opcija *Automatsko generisanje proizvodnog toka*, koja se nalazi u [MS parametrima](/docs/configurations/parameters/production/mps-parameters/). Ako zastavica nije aktivirana, artikal se neće uzimati u obzir ni u jednom od ova dva postupka.
 
-**Zaključaj za proizvodnju**: ako je aktivno, flag osigurava da ako se narudžba proizvodnje ovog artikla obrađuje putem Općeg planiranja, pojavi se poruka "Nemoguće planirati, artikal XXXX je blokiran za proizvodnju". U tom slučaju, planiranje se zaustavlja i korisnik mora ponovno pokrenuti proces isključujući narudžbu vezanu za ovaj artikal.  
+**Isključi iz planiranja**: ako je aktivirano,
 
-**Kontrola zahtjeva s generiranjem planiranih naloga**: Ako je aktivan, ovaj flag omogućuje da MRP kreira planirane naloge (naravno, pod uvjetom da je aktiviran i istoimeni flag u kartici Parametri unutar [MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)); dok, ako nije aktivan, MRP će kreirati samo prijedlog planiranih naloga (ali ih neće stvarno kreirati).    
+**Procenat otpada**: omogućava korisniku da postavi fiksni procenat otpada za artikal. Taj procenat se uvek primenjuje kada se artikal uključuje u sastavnicu.
 
-**Referentna sastavnica materijala**: sekcija u kojoj se postavlja, ako je različit od šifre artikla u zaglavlju MRP parametara, artikl/varijanta čija se sastavnica treba uzeti kao referenca za planiranje eventualne proizvodne komese za artikl/varijantu na koji se odnose MRP parametri na kojima se radi. Može se unijeti artikl (uključujući **Klasa**, **Šifra** i **Opis**) i eventualna **varijanta**, dok će se **jedinica mjere** automatski popuniti.  
+*Primer*: ako je uobičajeni otpad pri proizvodnji određenog materijala 10 %, a planirana proizvodna količina iznosi 100 komada, planer ili MRP prilikom kreiranja planiranog naloga neće predložiti 100 komada, već 100 komada uvećanih za 10 %.
 
-**Parametri proizvodnje** sekcija je aktivna ako je politika upravljanja artiklom Proizvodnja. U njoj se mogu postaviti sljedeća polja:  
-> **Lead Time**: u ovom polju korisnik koji ne koristi proizvodne cikluse može postaviti proizvodni lead time za dotični artikl, vrijeme izraženo u radnim danima, računato prema tvorničkom kalendaru i koje se ne mijenja ovisno o količini za proizvodnju;  
-> **Fiksno pripremno vrijeme**: u ovom polju korisnik može odlučiti da želi uzeti u obzir fiksnu vrijednost lead timea, a ne onu koja se računa na temelju proizvodnih ciklusa (dakle, sustav neće uzeti u obzir lead time postavljen u proizvodnom ciklusu, već će uzeti ovu vrijednost), unosom vrijednosti u radnim danima i aktiviranjem ove opcije putem flag-a.
-Ako je flag aktivan, izračunato vrijeme bit će suma vrijednosti **Fiksnog Lead Timea** (unesene pored flag-a) plus vrijednost **Lead time analize** koja se nalazi u kartici [Kvaliteta](/docs/erp-home/registers/items/create-new-item) u *Registar stavki*, te u tom slučaju vrijeme za faze se ne uzima u obzir, a datum početka se ponovno računa na temelju *Tvornički kalendar*. Ako flag nije aktivan, datum početka se računa uzimajući u obzir faze, alternativne faze i *Kalendar radnih centara*;     
-> **Ekonomski lot**: u ovom polju korisnik može postaviti ekonomsku seriju proizvodnje artikla, koja će se uzimati u obzir u postupcima Definicije MPS-a i Općeg rasporeda (samo ako je aktivan flag 'Uzimaj količine prema ekonomskoj seriji' objašnjen ranije);    
-> **Limitni dani planiranja**: u rasporedu/planiranju će se uzeti u obzir samo narudžbe, obaveze i potrebe unutar ovog razdoblja, sve što prelazi to razdoblje neće se uzeti u obzir;  
-> **Višestruko**: u ovom polju korisnik može postaviti višestruke ekonomske serije proizvodnje artikla, koji će se uzimati u obzir u postupcima [Generiranje proizvodnih narudžbi](/docs/planning/mps-master-production-scheduling/job-order-creation) i Općeg planiranja (samo ako je aktivan flag 'Uzimaj količine prema višestruke ekonomske serije' objašnjen ranije);     
-> **Dani grupiranja**: u ovom polju korisnik određuje vremenski period tijekom kojeg procedura grupira eventualne planirane naloge. Ako je npr. ovaj parametar postavljen na 5 za određeni artikl, bit će grupirani svi planirani nalozi čiji je datum unutar intervala od 5 radnih dana (prema fabričkom kalendaru);  
-> **Dani tolerancije ranijeg/kašnijeg izvršenja**: to su dani koje MRP tolerira kao raniji ili kasniji pomak dokumenta bez da predloži stvarni pomak, iskorištavajući eventualni višak bez novih prijedloga. Zbog toga, ako npr. artikl ima vrijednosti Dani tolerancije ranijeg izvršenja = 2 i Dani tolerancije kašnjenja = 5, znači da ako MRP detektira potrebu za ranijim ili kasnijim pomakom dokumenta za taj artikl, to neće biti prijavljeno korisniku kao zahtjev za pomak ako je pomak unutar 2 dana prije (za raniji pomak) ili unutar 5 dana poslije (za kasniji pomak). Korisniku će samo biti prijavljeno da je potreba zadovoljena odgovarajućim dokumentom. U suštini, za *Dane tolerancije predujmova* MRP provjerava unaprijed (za zadani broj dana) postoje li zalihe koje pokrivaju potrebe ranijih datuma, dok za *Dane tolerancije zaostataka* MRP provjerava unazad (za zadani broj dana) postoje li zalihe koje pokrivaju potrebe kasnijih datuma;      
-> **Tolerancija u danima/postotku od lead timea**: određuje vremenski period u kojem se može izvršiti raniji ili kasniji pomak (izvan tog ograničenja MRP predlaže uklanjanje dokumenta) i do kada se može komunicirati eventualni višak artikla. Može se izraziti u danima ili postotku od lead timea. Primjerice, ako je za artikl definirana tolerancija od 90 dana, dokumenti vezani za taj artikl mogu se pomaknuti najviše za 90 dana unaprijed ili unazad; ako se potreba premaši, MRP će predložiti uklanjanje dokumenta i stvaranje novog na datumu kada je potreba detektirana. Također, višak dostupnosti za taj artikl može biti dostupan najviše 90 dana.  
-Ako je ovaj parametar aktivan, MRP će izmijeniti datume sljedećih vrsta dokumenata: planirani nalozi (ako nisu fiksni), proizvodni nalozi (samo oni bez izvještaja), zahtjevi za nabavu, nalozi za posao na ugovoru (ako flag 'Već ispisano' nije aktivan), narudžbe dobavljaču (ako nisu potvrđene), pomičući ih unaprijed ili unazad za maksimalni zadani broj dana;     
-> **Obavezno ručno unošenje materijala**: koristi se u Fluentis MES-u. Ako je aktivan, zajedno s flag-om **Obavezno unošenje količine materijala** prisutnim u tablici [Resursi proizvodnje](/docs/production/mes/production-resources) MES-a, osigurava da se u kartici *Materijali* Fluentis MES-a artikl prikaže s količinom nula i da korisnik mora ručno unijeti vrijednost prije nastavka rada;       
- 
-**Čitaj popise/rute**: u ovom dijelu korisnik može postaviti **verziju** strukture i proizvodnog ciklusa koju MRP procedura treba koristiti za dotični artikl; kao i **broj ciklusa** definiran kao zadani za artikl;  
+**Uzmi u obzir u kooperaciji**: ako je aktivirano, omogućava automatsko uključivanje artikla prilikom popunjavanja kartica *Materijali za isporuku* i *Materijali za utrošak* u *Nalogu za kooperaciju*.
 
-**Uzimanje u obzir dostupnosti iz**: ovdje korisnik može odabrati koja se poslovna područja i njihovi dokumenti trebaju uzeti u obzir tijekom izvođenja MRP procedure. Područja su Nabava, Prodaja, Skladište (i ovdje se može odlučiti hoće li se uzimati u obzir zalihe lotova u statusu nedostupnosti aktiviranjem odgovarajućeg flag-a), Posao na ugovoru, Planiranje (dakle Proizvodni nalozi, Planirani nalozi nabave, Posao na ugovoru i/ili Proizvodnja), Proizvodnja u tijeku (dakle Proizvodni nalozi);  
+Slede niz zastavica koje se koriste tokom obrade postupka MRP:
 
-**Razmotrite lotove s stanjem *nije raspoloživo**: kao što je objašnjeno u kartici [Lotovi i serijski brojevi](/docs/erp-home/registers/items/create-new-item) u kartici artikla, lotovi imaju status (dostupno, nedostupno, u karanteni itd.). Ako se aktivira ovaj flag (koji postaje editabilan samo ako se odluči uzimati dostupnost iz Skladišta), sustav će također uzimati u obzir lotove s statusom nedostupnosti;  
+**Uzmi u obzir količine prema ekonomičnoj količini narudžbine**: ako je aktivirano, za artikal se uzima u obzir ekonomična količina, odnosno minimalna količina proizvodnje ili nabavke. Ekonomična količina proizvodnje podešava se u odeljku Parametri proizvodnje unutar ovog obrasca, a ekonomična količina nabavke u odeljku Parametri nabavke, koji će biti detaljnije opisani u nastavku.
 
-**Uključi artikl u MRP izračun**: ovaj flag postaje editabilan samo ako je politika upravljanja 'po nalogu'. Aktiviranjem ovog flag-a, artikli s politikom upravljanja po nalogu, koji se inače analiziraju samo u [Generiranje proizvodnih narudžbi](/docs/planning/mps-master-production-scheduling/job-order-creation), moći će se analizirati i kroz MRP.
+**Uzmi u obzir višekratnike ekonomične količine narudžbine**: ako je aktivirano, za artikal se uzimaju u obzir višekratnici ekonomične količine proizvodnje ili nabavke podešeni u odgovarajućim odeljcima ovog obrasca.
 
-**Isključi negativne zalihe**: ako je ovaj flag aktivan, omogućuje da se ne uzimaju u obzir artikli s negativnim zalihama;
+**Dopuna minimalne zalihe artikla**: ako je aktivirano, za artikal se dopunjava minimalna zaliha definisana u njegovom šifarniku, na kartici *Nabavka*.
+
+**Dopuna tačke ponovnog naručivanja artikla**: ako je aktivirano, za artikal se dopunjava tačka ponovnog naručivanja definisana u njegovom šifarniku, na kartici *Nabavka*.
+
+**Uzmi u obzir indeks pokrivenosti**: ako je aktivirano, za artikal se uzima u obzir indeks pokrivenosti definisan u njegovom šifarniku, na kartici *Nabavka*. Indeks pokrivenosti izražava se u nedeljama. Njegovim podešavanjem određuje se da sistem mora da pokrije potrebe za broj nedelja naveden u ovom polju.
+
+**Uzmi u obzir i alternativne materijale**: ako je aktivirano, u slučaju nedostupnosti artikla uzimaju se u obzir i njegove alternative definisane u sastavnici, na kartici *Alternative*.
+
+**Uzmi u obzir alternativne faze**: ako je aktivirano, za artikle koji se proizvode uzimaju se u obzir alternativne faze definisane u tehnološkom postupku artikla.
+
+U polju *Tolerancija opterećenja radnog centra* moguće je postaviti procenat koji određuje kada se radni centar smatra popunjenim. Na primer, ako je podešeno 90 %, program će uzeti u obzir definisane alternative za taj radni centar kada njegovo opterećenje dostigne 90 %.
+
+U polju *Tolerancija proizvodnje* moguće je procentualno odrediti koliko više artikala sme da se proizvede u odnosu na količinu predviđenu proizvodnim nalogom. Isto se može podesiti i za nabavku u polju *Tolerancija nabavke*.
+
+**Blokada proizvodnje**: ako je aktivirano, prilikom obrade proizvodnog naloga za ovaj artikal u postupku Opšte planiranje prikazaće se poruka: „Nije moguće kreirati raspored, artikal XXXX blokiran je za proizvodnju”. U tom slučaju planiranje se zaustavlja, a korisnik mora ponovo da ga pokrene, isključujući proizvodni nalog koji se odnosi na taj artikal.
+
+**Provera potreba uz generisanje planiranih naloga**: ako je aktivirano, MRP kreira planirane naloge, pod uslovom da je aktivirana i istoimena zastavica na kartici Parametri u postupku [MRP](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro). Ako zastavica nije aktivirana, MRP će samo predložiti planirane naloge, ali ih neće kreirati.
+
+**Referentna sastavnica**: u ovom odeljku podešava se artikal, odnosno varijanta čija će se sastavnica koristiti kao referenca za planiranje eventualnog proizvodnog naloga za artikal, odnosno varijantu na koju se odnose MRP parametri koji se trenutno uređuju. Ako se referentna sastavnica razlikuje od šifre artikla navedene u zaglavlju MRP parametara, ovde je moguće uneti odgovarajući artikal, uključujući **klasu**, **šifru** i **opis**, kao i eventualnu **varijantu**. **Jedinica mere** popunjava se automatski.
+
+**Parametri proizvodnje**: ovaj odeljak je aktivan ako je politika upravljanja artiklom postavljena na *Proizvodnja*. U njemu je moguće podesiti sledeća polja:
+
+> **Lead Time**: korisnici koji ne koriste tehnološke postupke u ovom polju mogu podesiti vreme proizvodnje predmetnog artikla. Vreme se izražava u radnim danima, izračunava se prema fabričkom kalendaru i ne menja se u zavisnosti od količine koju treba proizvesti.
+
+> **Fiksni Lead Time**: ovo polje omogućava korišćenje fiksnog vremena isporuke umesto vremena izračunatog na osnovu tehnoloških postupaka artikla. U tom slučaju sistem neće uzimati u obzir Lead Time definisan u tehnološkom postupku, već vrednost unetu u ovo polje, izraženu u radnim danima. Ovaj način rada aktivira se označavanjem odgovarajuće zastavice.
+
+> Ako je zastavica aktivirana, izračunato vreme dobija se sabiranjem vrednosti **Fiksni Lead Time** (unete pored zastavice) i vrednosti **Lead Time analize** na kartici [Kvalitet](/docs/erp-home/registers/items/create-new-item) u *šifarniku artikala*. U tom slučaju vremena proizvodnih faza ne uzimaju se u obzir, a datum početka ponovo se izračunava prema *fabričkom kalendaru*.
+
+> Ako zastavica nije aktivirana, datum početka ponovo se izračunava uzimajući u obzir proizvodne faze, alternativne faze i *kalendar radnih centara*.
+
+> **Ekonomična količina narudžbine**: u ovom polju korisnik može podesiti ekonomičnu količinu proizvodnje artikla, koju će uzimati u obzir postupci [Generisanje proizvodnih naloga](/docs/planning/mps-master-production-scheduling/job-order-creation) i Opšte planiranje, ali samo ako je aktivirana prethodno opisana zastavica „Uzmi u obzir količine prema ekonomičnoj količini narudžbine”.
+
+> **Granični broj dana planiranja**: tokom izrade rasporeda/planiranja uzimaju se u obzir samo nalozi, rezervacije i potrebe unutar zadatog perioda. Sve što prelazi taj period neće se uzimati u obzir.
+
+> **Višekratnici**: u ovom polju korisnik može podesiti višekratnike ekonomične količine proizvodnje artikla, koje će uzimati u obzir postupci [Generisanje proizvodnih naloga](/docs/planning/mps-master-production-scheduling/job-order-creation) i Opšte planiranje, ali samo ako je aktivirana prethodno opisana zastavica „Uzmi u obzir višekratnike ekonomične količine narudžbine”.
+
+> **Dani grupisanja**: u ovom polju korisnik određuje period unutar kojeg postupak grupiše eventualne planirane naloge. Na primer, ako je za određeni artikal podešena vrednost 5, grupisaće se svi planirani nalozi čiji se datumi nalaze unutar perioda od 5 radnih dana, prema fabričkom kalendaru.
+
+> **Dani tolerancije za ranije rokove**, **Dani tolerancije za kasnije rokove**: predstavljaju broj dana za koje MRP toleriše pomeranje datuma dokumenta unapred ili unazad, bez predlaganja stvarnog pomeranja. Umesto toga, koristi eventualni višak raspoloživosti bez kreiranja dodatnih predloga.
+
+> Na primer, ako su za određeni artikal podešene vrednosti Dani tolerancije za ranije rokove = 2 i Dani tolerancije za kasnije rokove = 5, a MRP algoritam utvrdi potrebu za ranijim ili kasnijim datumom dokumenta, korisniku se neće predložiti pomeranje ako se odgovarajući ulaz nalazi unutar tolerancije od 2 dana pre traženog datuma ili 5 dana nakon njega. Korisnik će biti obavešten samo da je potreba zadovoljena odgovarajućim dokumentom.
+
+> Drugim rečima, kod parametra *Dani tolerancije za ranije rokove* MRP proverava budući period, u trajanju navedenog broja dana, kako bi utvrdio da li postoje ulazi koji mogu pokriti ranije potrebe. Kod parametra *Dani tolerancije za kasnije rokove* MRP proverava prethodni period, u trajanju navedenog broja dana, kako bi utvrdio da li postoje ulazi koji mogu pokriti kasnije potrebe.
+
+> **Tolerancija u danima/procentu vremena isporuke (Lead Time)**: određuje period unutar kojeg je dozvoljeno pomeranje datuma unapred ili unazad. Ako se taj period prekorači, MRP predlaže brisanje dokumenta. Ovaj parametar takođe određuje koliko dugo se može uzimati u obzir eventualni višak artikla. Može se izraziti u danima ili kao procenat vremena isporuke (Lead Time).
+
+> Na primer, ako je za neki artikal definisana tolerancija od 90 dana, datumi dokumenata povezanih sa tim artiklom mogu se pomeriti najviše 90 dana unapred ili unazad. Ako potrebna promena prelazi tu granicu, MRP će predložiti brisanje postojećeg dokumenta i kreiranje novog na datum za koji je utvrđena potreba. Osim toga, eventualna raspoloživost viška tog artikla može se uzeti u obzir najviše tokom 90 dana.
+
+> Ako je ovaj parametar aktivan, MRP menja datume sledećih vrsta dokumenata:
+> - planirani nalozi, ako nisu fiksni;
+> - proizvodni nalozi, ali samo oni za koje još nisu evidentirane proizvodne aktivnosti;
+> - zahtevi za nabavku;
+> - nalozi za kooperaciju, samo ako još nije aktivirana zastavica „Već ispisano”;
+> - narudžbine dobavljačima, ako još nisu potvrđene.
+>
+> Datumi se mogu pomeriti unapred ili unazad za najviše navedenu vrednost.
+
+> **Obavezno ručno evidentiranje materijala**: koristi se u sistemu Fluentis MES. Ako je ova zastavica aktivirana zajedno sa zastavicom **Obavezno evidentiranje količine materijala**, koja se nalazi u tabeli [Proizvodni resursi](/docs/production/mes/production-resources) sistema MES, artikal će se na kartici *Materijali* u sistemu Fluentis MES predlagati sa količinom nula. Korisnik će zato morati ručno da unese vrednost pre nastavka rada.
+
+**Čitanje sastavnica/tehnoloških postupaka**: u ovom odeljku korisnik može da podesi **verziju** sastavnice i tehnološkog postupka koju MRP treba da uzme u obzir za predmetni artikal, kao i **Broj ciklusa**, definisan kao podrazumevani ciklus za artikal.
+
+**Uzmi u obzir raspoloživost iz sledećih izvora**: u ovom odeljku korisnik određuje iz kojih će poslovnih oblasti dokumenti biti uzeti u obzir tokom obrade MRP-a. Dostupne oblasti su:
+- **Nabavka**
+- **Prodaja**
+- **Skladište** – moguće je odrediti da li će se uzimati u obzir zalihe lotova čiji status nije raspoloživ, aktiviranjem odgovarajuće zastavice;
+- **Kooperacija**
+- **Planiranje** – proizvodni nalozi, planirani nabavni nalozi, nalozi za kooperaciju i planirani proizvodni nalozi;
+- **Pokrenuta proizvodnja** – proizvodni nalozi.
+
+**Uzmi u obzir lotove sa statusom neraspoloživ**: kao što je objašnjeno na kartici [Lotovi i serijski brojevi](/docs/erp-home/registers/items/create-new-item) u šifarniku artikala, lotovi imaju status (raspoloživ, neraspoloživ, u karantinu itd.). Ako je ova zastavica aktivirana, sistem će uzimati u obzir i lotove sa statusom neraspoloživ. Zastavica se može uređivati samo ako je izabrano uzimanje u obzir raspoloživosti iz skladišta.
+
+**Uključi artikal u obračun MRP-a**: ova zastavica može se uređivati samo ako je politika upravljanja postavljena na „Nalog”. Aktiviranjem ove zastavice omogućava se da MRP analizira i artikle kojima se upravlja prema nalogu, a koje podrazumevano obrađuje postupak [Generisanje proizvodnih naloga](/docs/planning/mps-master-production-scheduling/job-order-creation).
+
+**Isključi negativne zalihe**: ako je aktivirana, ova zastavica omogućava isključivanje artikala sa negativnim zalihama iz obračuna.
 
 <details>
-<summary> Sljedeća polja koriste se samo u proceduri [F.C.S raspoređivanja](/docs/planning/ms-master-scheduling/fcs-scheduling) </summary>
+<summary>Sledeća polja koriste se isključivo u postupku [F.C.S. raspoređivanje](/docs/planning/ms-master-scheduling/fcs-scheduling)</summary>
 
-**Odabrana količina**: Preuzimanja iz skladišta izvršavaju se samo kada je dostupna količina barem jednaka ovoj vrijednosti (osim ako je količina za preuzimanje manja od definirane serije preuzimanja). Na primjer, ako je vrijednost postavljena na 50, preuzimanja će se izvršiti samo ako je u skladištu dostupno barem 50 komada ili ako je količina za preuzimanje manja od 50. Ako je vrijednost 0, ne dolazi do preklapanja između narudžbe koja isporučuje artikl i narudžbe koja ga traži (preuzimanje se vrši tek kada je cijela tražena količina dostupna u skladištu). U praksi se vrijednost 0 koristi kada se želi zabraniti preklapanje (što može produžiti rokove isporuke, ali smanjuje rizik od propuštenih termina između narudžbi, pa je plan proizvodnje stabilniji i s većom vjerojatnošću da će se izvršiti bez izmjena). Vrijednost 1 koristi se za maksimalno preklapanje (što omogućuje najbolje moguće rokove isporuke, ali smanjuje vjerojatnost da će se plan izvršiti točno kako je simuliran i povećava mogućnost manje učinkovitog korištenja proizvodnih kapaciteta).
+**Količina za izdavanje**: izdavanje iz skladišta obavlja se tek kada je raspoloživa količina najmanje jednaka ovoj vrednosti, osim ako je količina koju treba izdati manja od zadate količine za izdavanje.
 
-**Količina zalihe**: Prenos u skladište vrši se samo kada je dostupna količina veća ili jednaka ovoj vrijednosti (osim ako preostala količina za skladištenje nije manja). Ako je vrijednost ovog polja 0, narudžba koja isporučuje ovaj artikal prenijet će svoju količinu u skladište u jednom trenutku; parcijalni prijenosi nisu dopušteni. Za narudžbe kupovine i podugovaranja, ova se vrijednost smatra kao da je 0, bez obzira na svoju stvarnu vrijednost.  
-Na primjer, razmotrite narudžbu za proizvodnju od 100 komada.  
-Ako je serija prijenosa jednaka 0, izvršit će se jedan prijenos od 100 komada u skladište, kada narudžba dostigne 100% napretka, tako da će tih 100 komada biti dostupno tek nakon završetka narudžbe (nema preklapanja narudžbi proizvodnje).  
-Na primjer, ako je serija inventara jednaka 25, neće se izvršiti prijenos u skladište dok proizvedena i neprenijeta količina ne dostigne 25. Ako bi količina narudžbe bila 60, imali bismo dva prijenosa po 25 i jedan prijenos za 10 (preklapanje parcijalnih narudžbi). Ako je serija prijenosa jednaka 1, doći će do maksimalnog mogućeg preklapanja, budući da će svaki pojedinačni proizvedeni dio odmah biti prenesen u skladište i bit će dostupan za narudžbe koje zahtijevaju ovaj artikal (to ima smisla ako je količina za proizvodnju mala, inače bismo imali mnogo prijenosa u skladište).
+Na primer, ako je vrednost 50, izdavanje se obavlja samo ako je u skladištu raspoloživo najmanje 50 komada ili ako je količina koju treba izdati manja od 50.
+
+Ako je vrednost 0, nema preklapanja između naloga koji obezbeđuje artikal i naloga koji ga zahteva. Izdavanje se obavlja tek kada je cela potrebna količina raspoloživa u skladištu.
+
+Vrednost 0 koristi se kada se želi zabraniti preklapanje. Vreme isporuke se tada produžava, ali se smanjuje verovatnoća neusklađenosti rokova naloga koji zahteva artikal i naloga koji ga obezbeđuje. Na taj način dobija se plan proizvodnje koji je verovatnije moguće izvršiti bez izmena.
+
+Vrednost 1 koristi se za maksimalno preklapanje. Time se postižu što kraći rokovi isporuke, ali se smanjuje verovatnoća da će plan biti izvršen tačno onako kako je simuliran i povećava verovatnoća slabijeg iskorišćenja proizvodnih resursa.
+
+**Količina za prenos u skladište**: prenos u skladište obavlja se tek kada je raspoloživa količina veća ili jednaka ovoj vrednosti, osim ako je preostala količina koju treba uskladištiti manja od zadate vrednosti.
+
+Ako je vrednost ovog polja 0, nalog koji obezbeđuje artikal preneće celu količinu u skladište odjednom. Delimični prenosi nisu dozvoljeni. Za nabavne naloge i naloge za kooperaciju ova vrednost uzima se kao 0, bez obzira na stvarno podešenu vrednost.
+
+Na primer, razmotrimo proizvodni nalog za 100 komada.
+
+Ako je količina za prenos u skladište 0, svih 100 komada biće preneto u skladište odjednom, kada nalog dostigne 100 % dovršenosti. Svih 100 komada biće raspoloživo tek nakon završetka naloga, bez preklapanja proizvodnih naloga.
+
+Ako je količina za prenos u skladište 25, prenos se neće obaviti dok proizvedena, a još neuskladištena količina ne dostigne 25 komada. Ako je ukupna količina naloga 60 komada, obaviće se dva prenosa po 25 komada i jedan prenos od 10 komada. Time se omogućava delimično preklapanje proizvodnih naloga.
+
+Ako je količina za prenos u skladište 1, ostvaruje se najveće moguće preklapanje jer se svaki proizvedeni komad odmah prenosi u skladište i postaje raspoloživ za naloge koji ga zahtevaju. To je pogodno kada je količina koju treba proizvesti mala. U suprotnom bi se obavljao veliki broj skladišnih prenosa.
 
 </details>
 
-**Upravljanje prognozom**: padajući izbornik omogućava odabir načina na koji će se generirati proizvodni nalogi iz [Generiranje proizvodnih narudžbi](/docs/planning/mps-master-production-scheduling/job-order-creation) u slučaju generiranja na temelju prognoze. Mogućnosti su sljedeće: Veći od narudžbi kupaca i prodajnih prognoza; Uvijek prodajna prognoza; Manji od narudžbi kupaca i prodajnih prognoza; Uvijek narudžbe kupaca; Zbroj narudžbi kupaca i prodajnih prognoza. Preporučuje se korištenje opcije 'veći od narudžbi i prognoza' jer, ako smo prema prognozi planirali proizvesti 100 komada materijala, a do datuma početka proizvodnje primimo narudžbe za 200 komada, ovaj način upravljanja prognozom će generirati nalog za 200 komada, a ne nalog za 100 komada prema prognozi plus 200 komada prema narudžbama. To je zato što su u tih 200 komada uključene i početne prognoze koje su u stvarnosti premašene.
+**Upravljanje prognozama**: padajući meni omogućava određivanje načina generisanja proizvodnih naloga putem postupka [Generisanje proizvodnih naloga](/docs/planning/mps-master-production-scheduling/job-order-creation) kada se nalozi generišu na osnovu prognoza. Dostupne su sledeće mogućnosti:
+- Veća vrednost između narudžbina kupaca i prognoza prodaje
+- Uvek prognoza prodaje
+- Manja vrednost između narudžbina kupaca i prognoza prodaje
+- Uvek narudžbine kupaca
+- Zbir narudžbina kupaca i prognoza prodaje
 
-**Parametri nabave/podizvođača**: ovaj odjeljak je aktivan ako je politika upravljanja artiklom postavljena na 'Nabava' ili 'Podizvođač'. Ovdje se mogu pregledavati i eventualno mijenjati podaci uneseni u kartici *Preferencijalni dobavljači* unutar *Registar stavki* (vrijeme isporuke, vrijeme nabave, ukupno vrijeme nabave, minimalna količina za kupnju, višestruki iznosi minimalne količine).
+Preporučuje se izabrati opciju „Veća vrednost između narudžbina kupaca i prognoza prodaje”. Na primer, ako je na osnovu prognoze planirana proizvodnja 100 komada određenog materijala, a do datuma početka proizvodnje primljene su narudžbine kupaca za 200 komada, sistem će kreirati nalog za 200 komada, a ne zaseban nalog za 100 komada na osnovu prognoze i nalog za 200 komada na osnovu narudžbina. Razlog je taj što je početna prognoza već obuhvaćena stvarnim narudžbinama, koje su je premašile.
+
+**Parametri nabavke/kooperacije**: ovaj odeljak je aktivan ako je politika upravljanja artiklom postavljena na „Nabavka” ili „Kooperacija”. Ovde je moguće pregledati i, po potrebi, izmeniti podatke unete na kartici *Preferirani dobavljači* u *šifarniku artikala*: vreme otpreme, vreme nabavke, ukupno vreme nabavke, minimalnu količinu za nabavku i višekratnike minimalne količine.
 
 ## 2. Skladišta
 
-U ovoj kartici korisnik ima mogućnost odlučiti da za određeni artikal kretanje artikala putem procedura povezanih s područjem proizvodnje ne smije biti izvršeno prema postavkama *Parametara narudžbi proizvodnje*, već prema prilagođenim postavkama samog artikla.
- 
-*Primjer*: ako se u padajućem izborniku *Skladište* i padajućem izborniku *Predložak* u odjeljku **Sirovi materijal** postavi skladište i povod različiti od onih postavljenih u istom odjeljku [Parametara naloga za proizvodnju](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro),znači da kada se taj artikal uzima za proizvodnju putem liste za preuzimanje, izdavanja narudžbi za proizvodnju ili registracije izvještaja o proizvodnji, trebat će ga uzeti iz skladišta ovdje postavljenog i koristeći uzrok ovdje postavljen, umjesto putem vrijednosti postavljenih u *Parametrima narudžbi za proizvodnju*, koji imaju opću važnost za sve artikle, osim za one za koje je korisnik postavio različite vrijednosti u ovom tabu *Skladišta* u *Parametrima MRP*.
+Na ovoj kartici korisnik može da odredi da se prilikom skladišnih kretanja artikla putem postupaka povezanih sa proizvodnjom ne primenjuju podešavanja iz *Parametara proizvodnih naloga*, već posebna podešavanja definisana za sam artikal.
 
-U ovoj kartici stoga će se moći postaviti skladišta vezana uz *Sirovine*, *Poluproizvode*, *Gotove proizvode* i eventualne *Otpade* s pripadajućim uzrocima punjenja i pražnjenja.
+*Primer*: ako su u padajućim menijima *Skladište* i *Šablon* u odeljku **Sirovine** podešeni skladište i šablon koji se razlikuju od onih definisanih u istom odeljku u [Parametrima proizvodnih naloga](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro), to znači da se materijal prilikom izdavanja za proizvodnju putem liste za preuzimanje, puštanja proizvodnih naloga ili evidentiranja proizvodnje mora izdavati iz ovde definisanog skladišta i prema ovde podešenom šablonu.
 
-Da biste postavili jedno od ovih skladišta, dovoljno je odabrati putem odgovarajućih kombiniranih okvira skladište i uzroke (precodificirani u odgovarajućim tablicama *Skladišta* i *Predlošci*).
+U tom slučaju ne primenjuju se vrednosti iz *Parametara proizvodnih naloga*, koje važe uopšteno za sve artikle, osim za one za koje je korisnik na ovoj kartici *Skladišta* u *Parametrima MRP-a* podesio drugačije vrednosti.
 
-Također postoje skladišta *W.I.P.* koja se aktiviraju odabirom opcije *W.I.P* i nastavkom odabira unutar kombiniranih okvira za skladišta i uzroke, kao i za opća skladišta.
+Na ovoj kartici moguće je podesiti skladišta za **Sirovine**, **Poluproizvode**, **Gotove proizvode** i eventualni **Otpad**, zajedno sa odgovarajućim šablonima ulaza i izlaza.
 
-:::note VAŽNO
-Ista skladišta se nalaze prikazana, u potpuno identičnom sučelju, i unutar [Parametara naloga za proizvodnju](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro) gdje su detaljno objašnjene sve logike korištenja.  
+Da biste podesili pojedinačno skladište, potrebno je u odgovarajućim padajućim menijima izabrati skladište i šablone, prethodno definisane u odgovarajućim tabelama *Skladišta* i *Šabloni*.
+
+Dostupna su i **W.I.P. skladišta**. Ona se aktiviraju izborom opcije *W.I.P.*, nakon čega se u odgovarajućim padajućim menijima biraju skladišta i šabloni, na isti način kao i za opšta skladišta.
+
+:::note[VAŽNO]
+Ista skladišta prikazana su na jednak način i u [Parametrima proizvodnih naloga](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro), gde su detaljno objašnjeni svi načini njihove primene.
 :::
 
-Za sve ostalo što nije detaljno opisano u ovom dokumentu vezano uz općenito funkcioniranje formi, pogledajte sljedeći link[Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).  
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću stranicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

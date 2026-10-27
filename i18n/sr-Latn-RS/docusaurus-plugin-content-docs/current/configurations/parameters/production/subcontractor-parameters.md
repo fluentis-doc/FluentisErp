@@ -1,111 +1,141 @@
 ---
-title: Parametri podugovaranja
+title: Parametri podizvođača
 sidebar_position: 2
-tags: [Radni Račun]
+tags: [Podizvođači]
 ---
 
-Kroz ovaj prozor postavljaju se svi parametri koji se odnose na upravljanje podugovaranjem i, točnije, način na koji se moraju provoditi kretanja skladišta izazvana procedurama samog modula.
+U ovom prozoru podešavaju se svi parametri koji se odnose na upravljanje podizvođačima, a posebno na način izvršavanja skladišnih kretanja koja pokreću postupci ovog modula.
 
-## Općenito
+## Opšte
 
-#### Podaci navedeni u narudžbama  
+#### Podaci koji se predlažu u nalozima
 
+> **Ponovno generisanje materijala pri ažuriranju artikla**: ako je opcija aktivirana, svaki put kada se izmeni red artikla na kartici *Artikli za proizvodnju* u nalogu podizvođača, postupak ponovo generiše podatke o materijalima koje je potrebno isporučiti i upotrebiti. Ti podaci unose se na poslednju karticu istog naloga.
 
-> **Regenerirati materijale na ažuriranju stavke**: Ako je flag aktiviran, svaki put kada se izvrši izmjena na retku artikla prisutnom na tabu *Artikli za proizvesti* narudžbe radnog naloga, procedura regenerira informacije vezane uz materijale koji se trebaju isporučiti i upotrijebiti, koje se unose u posljednjem tabu same narudžbe.  
->   
-> **Podaci za predložene materijale**: prikazuje 4 različite mogućnosti koje korisnik ima da bi postupak automatski predložio materijale na kartici Materijali za isporuku narudžbe podugovarača.   
-> Mogućnosti su sljedeće:  
-> 1. *Od zadnje isporuke obavljene istom kooperantu*: posljednja kooperantska narudžba generirana za istog kooperanta i u kojoj se nalazi ista stavka koja se proizvodi.     
-> 2. *Proširenje razine iz strukture sastavnice*:  provjeravate sastavnicu artikla umetnutog u karticu Stavke za proizvodnju;       
-> 3. *Isporuka iste stavke koja se proizvodi*: umetnite istu stavku umetnutu u karticu Predmeti za proizvodnju u karticu Materijali za isporuku.     
-> 4. *Nema materijala*: aterijal nije predložen na kartici Materijali za isporuku.    
-> 5. *Iz proizvodnog naloga*: koristi se za narudžbe vanjske obrade generirane putem puštanja planirane narudžbe vanjske obrade ili iz narudžbe proizvodnje s vanjskom fazom.  
+> **Predloženi podaci o materijalima**: prikazuje pet mogućnosti za automatsko predlaganje materijala na kartici *Materijali za isporuku* u nalogu podizvođača.
 >
-> **Verzije**: omogućuju odabir verzije popisa materijala.
+> Dostupne su sledeće mogućnosti:
+>
+> 1. *Prema poslednjoj isporuci istom podizvođaču*: proverava se poslednji kreirani nalog podizvođača za istog podizvođača u kojem se nalazi isti artikal za proizvodnju.
+> 2. *Razrada jednog nivoa strukture sastavnice*: proverava se sastavnica artikla unetog na kartici *Artikli za proizvodnju*.
+> 3. *Isporuka istog artikla za proizvodnju*: na kartici *Materijali za isporuku* predlaže se isti artikal koji je unet na kartici *Artikli za proizvodnju*.
+> 4. *Bez materijala*: na kartici *Materijali za isporuku* ne predlaže se nijedan materijal.
+> 5. *Iz naloga za proizvodnju*: koristi se za naloge podizvođača generisane puštanjem planiranog naloga za podizvođača ili iz naloga za proizvodnju koji sadrži spoljnu fazu.
 
- #### Razmotrite raspoloživosti iz     
+> **Verzija**: omogućava izbor verzije sastavnice.
 
-> Ovaj odjeljak omogućuje korisniku da odluči hoće li uzeti u obzir dostupnost materijala iz **Podizvođač** / **Proizvodnja** / **Nabava** / **Skladište** / **Prodaja**; svaki od ovih flagova označava namjeru korisnika da postupak kreiranja narudžbe za kooperaciju uzme u obzir dostupnost materijala na temelju informacija koje dolaze iz pojedinih funkcionalnih područja ERP-a.
-Na primjer, ako korisnik odluči aktivirati flag samo za Nabavu, a ne za Prodaju, to znači da će se uzimati u obzir dostupnosti koje dolaze iz narudžbi dobavljačima, otpremnica, ulaznih računa i zahtjeva za nabavom, dok se one koje dolaze iz narudžbi kupaca, otpremnica i izlaznih računa neće uzimati u obzir.
+#### Uzimanje u obzir raspoloživosti iz
+
+> U ovom odeljku određuje se da li će se uzimati u obzir raspoloživost iz područja **Podizvođači**, **Proizvodnja**, **Nabavka**, **Skladište** i **Prodaja**. Svaki potvrdni okvir označava da li korisnik želi da postupak kreiranja naloga podizvođača uzima u obzir raspoloživost materijala na osnovu podataka iz odgovarajućeg područja ERP sistema.
+>
+> Na primer, ako korisnik aktivira samo opciju **Nabavka**, a ne i **Prodaja**, uzimaće se u obzir raspoloživost na osnovu narudžbina dobavljačima, otpremnica i ulaznih faktura, kao i zahteva za nabavku, dok se raspoloživost na osnovu narudžbina kupaca, otpremnica i izlaznih faktura neće uzimati u obzir.
 
 #### Gotovi proizvodi
 
-**Predložena je zadnja cijena rada**: o je aktiviran, omogućuje vam da u nalogu za podugovaranje, u okviru s jediničnom cijenom obrade na kartici *Stavke za proizvodnju*, predložite cijenu zadnje narudžbe za podugovaranje izdane za tu stavku za istog izvođača.
->   
-> **Razmotrite količine prema ekonomskom lotu** i **Razmotri višekratnike ekonomskih lotova**: omogućuje odabir, prilikom unosa artikla u tab *Artikli za proizvodnju* narudžbe vanjske obrade, hoće li se uzeti u obzir količine samih artikala na temelju ekonomskog lota, i/ili eventualno uzeti u obzir i višekratnici lota.
+> **Predlaganje poslednje cene izvršene obrade**: ako je opcija aktivirana, u nalogu podizvođača, u polju jedinične cene obrade na kartici *Artikli za proizvodnju*, predlaže se cena iz poslednjeg naloga podizvođača izdatog istom podizvođaču za taj artikal.
 
-**Tip otpremnice**: u ovoj sekciji se postavlja [Tip otpremnice](/docs/configurations/tables/sales/delivery-notes-type) koji se treba predložiti kao zadani prilikom korištenja procedure za kreiranje otpremnice za isporuku materijala kod podizvođača. Ova vrsta otpremnice automatski će koristiti skladište i šifru knjiženja postavljene u odgovarajućim padajućim izbornicima pod stavkom "Isporuke materijala podizvođačima" koja se nalazi u prozoru parametara za podizvođače.
+> **Uzimanje u obzir količina prema ekonomičnoj količini serije** i **Uzimanje u obzir višekratnika ekonomične količine serije**: omogućava određivanje da li će se prilikom unosa artikla na karticu *Artikli za proizvodnju* u nalogu podizvođača količine artikla određivati prema ekonomičnoj količini serije i da li će se uzimati u obzir i njeni višekratnici.
 
-**Zadana mjerna jedinica za volumen**: permette di indicare l'unità di misura da utilizzare di default per i volumi.   
+**Vrsta otpremnice**: u ovom odeljku podešava se [vrsta prodajne otpremnice](/docs/configurations/tables/sales/delivery-notes-type) koja će se predlagati kao podrazumevana pri korišćenju postupka kreiranja otpremnice za isporuku podizvođaču. Ta vrsta otpremnice automatski će koristiti skladište i šablon definisane u odgovarajućim padajućim menijima u odeljku „Isporuka materijala podizvođačima” u parametrima podizvođača.
 
-**Zadana mjerna jedinica za težinu**: permette di indicare l'unità di misura da utilizzare di default per i pesi.   
+**Podrazumevana merna jedinica zapremine**: omogućava određivanje podrazumevane merne jedinice koja će se koristiti za zapremine.
 
-**Valorizacija radnog materijala naspram troška:**: Omogućuje definiranje treba li se vrednovanje obrade materijala vršiti po zadnjoj ili po prosječnoj cijeni. Radi se, dakle, o metodi kojom se određuje hoće li se materijali koje koriste kooperanti pripisivati obradi koristeći zadnju cijenu ili prosječnu cijenu unesenu u šifarniku artikla. Osim toga, moguće je, odabirom flagova **Lotovi** i/ili **Nalog proizvodnje**, predložiti da se kao cijena materijala koristi zadnja/prosječna cijena za odgovarajući lot i/ili proizvodni nalog, ovisno o tome koji su flagovi aktivirani.  
+**Podrazumevana merna jedinica mase**: omogućava određivanje podrazumevane merne jedinice koja će se koristiti za mase.
 
-#### Izuzimanje  
+**Vrednovanje obrade materijala prema trošku**: omogućava određivanje da li će se obrada materijala vrednovati prema poslednjem ili prosečnom trošku. Time se određuje da li će se materijali koje koriste podizvođači obračunavati prema poslednjem ili prosečnom trošku navedenom u šifarniku artikala. Osim toga, aktiviranjem opcija **Lotovi** i/ili **Nalog za proizvodnju** moguće je predlagati poslednji ili prosečni trošak za odgovarajući lot i/ili nalog za proizvodnju, u zavisnosti od aktiviranih opcija.
 
-> **Prikaz mreže za isporuku**: ako je flag aktivan, u procedurama ispunjenja narudžbi kroz DDT isporuke ili povrat, bit će prikazana mreža za isporuku.
-> 
-> **Prikaz stabla izvršenja**: ako je flag aktivan, u procedurama ispunjenja narudžbi kroz DDT isporuke ili povrat, bit će prikazana hijerarhijska struktura. Ova dva flaga mogu biti aktivirana istovremeno.   
+#### Razduženje
 
-**Obvezna šifra korisnika**: Ako je flag aktivan, određuje treba li pri unosu DDT isporuke za kooperaciju obavezno unijeti šifru operatera.  
+> **Prikaz mreže razduženja**: ako je opcija aktivirana, u postupcima razduženja naloga putem otpremnice za isporuku ili povrata prikazivaće se mreža razduženja.
 
-**Automatski prijedlog serijskog broja za vraćeni artikl ako je također zabilježen kao potrošeni materijal**: u povratima iz kooperacije, ako je flag aktivan, sustav automatski predlaže serijski broj za artikl.  
+> **Prikaz hijerarhijske strukture razduženja**: ako je opcija aktivirana, u postupcima razduženja naloga putem otpremnice za isporuku ili povrata prikazivaće se hijerarhijska struktura. Obe opcije mogu biti aktivirane istovremeno.
 
-**Provjera dostupnosti**: ako je flag aktivan, omogućuje odlučiti hoće li procedura provjeravati dostupnost na temelju flagova postavljenih u odjeljku *Uzimanje u obzir dostupnosti iz*.  
+**Obavezna šifra operatera**: ako je opcija aktivirana, određuje se da li je obavezan unos šifre operatera prilikom unosa otpremnice za isporuku podizvođaču.
 
-**Obvezna raspoloživost**: ako je flag aktivan, sprječava unos materijala u naloge za kooperaciju ako nema dostupnosti na datum moguće isporuke kooperantu.  
+**Automatsko predlaganje serijskog broja za vraćeni artikal ako postoji i kao utrošeni materijal**: prilikom povrata od podizvođača, ako je ova opcija aktivirana, sistem automatski predlaže serijski broj za artikal.
 
-**Nema materijala u dostavi**: ako je aktivno, osigurava da u tabu *Materijali za isporuku* nije unesen nijedan artikal za nijedan artikal koji treba proizvesti.
+**Provera raspoloživosti**: ako je opcija aktivirana, određuje se da li će postupak proveravati raspoloživost na osnovu opcija izabranih u odeljku *Uzimanje u obzir raspoloživosti iz*.
 
-**Automatski utovar/istovar**: ako je aktivno, omogućuje korisniku da automatski izvrši izlazne skladišne pokrete čim se otisne DDT za isporuku. To omogućuje preskočiti korak otpreme DDT-a za isporuku vanjske obrade.
+**Obavezna raspoloživost**: ako je opcija aktivirana, onemogućava se unos materijala u naloge podizvođača ako materijal nije raspoloživ na datum eventualne isporuke podizvođaču.
 
-**Registracija zaliha s datumom dokumenta**: 
-Za registraciju **Otpremnica**, ako je ovaj flag aktivan, koristi se *Datum transporta* (prisutan u kartici *Sažeci* > *Primatelj*), ako je postavljen, inače se uzima u obzir datum kreiranja dokumenta prisutan u zaglavlju. Ako flag nije aktivan, otprema unutar dokumenta uvijek se vrši s trenutnim datumom.  
-Za registraciju **Povrata vanjske obrade**: ako je flag aktivan, uvijek se koristi *Datum povrata* prisutan u zaglavlju; ako nije aktivan, registracija unutar dokumenta vrši se s *Datumom dokumenta* prisutnim u zaglavlju.
+**Bez materijala za isporuku**: ako je opcija aktivirana, na kartici *Materijali za isporuku* neće se predlagati nijedan artikal, bez obzira na artikle koje je potrebno proizvesti.
 
-**Blokiraj umetanje dokumenata na državni praznik**: ako je aktivno, sprječava unos narudžbe, DDT-a i povrata vanjske obrade na praznične datume.
+**Automatski ulaz/izlaz**: ako je opcija aktivirana, skladišni izlaz izvršava se automatski čim se odštampa otpremnica za isporuku. Time se preskače korak zasebnog izvršavanja izlaza za otpremnice za isporuku podizvođaču.
 
-**Provjeri referentnog podizvođača za stavke**: ako je aktivno, omogućuje korisniku da postavi proceduru za kreiranje narudžbi vanjske obrade da provjeri ima li artikal koji se unosi u karticu *Artikala za proizvodnju*, kao preferiranog dobavljača, vanjskog izvođača unesenog u zaglavlje same narudžbe.
+**Knjiženje skladišta sa datumom dokumenta**:
 
-**Lotti e numeri serali obbligatori**: ako je aktivno, obvezuje korisnika da unese u sve dokumente seriju artikla unesenog u samom dokumentu, pod uvjetom da se artikal upravlja po serijama ili serijskim brojevima.
+Za knjiženje **otpremnica za isporuku**, ako je ova opcija aktivirana, koristi se *Datum prevoza* (na kartici *Sažeci > Primalac*), ako je unet. U suprotnom se koristi datum kreiranja dokumenta naveden u zaglavlju. Ako opcija nije aktivirana, izlaz iz dokumenta uvek se izvršava sa tekućim datumom.
 
-**Preračunaj prijevoz**: ovaj flag osigurava da se na tabu **Prenos** DDT prikazuju ukupne težine, volumeni i paketi redaka dokumenta; bez ovog flag-a, polja neće biti popunjena.
+Za knjiženje **povrata od podizvođača**, ako je opcija aktivirana, uvek se koristi *Datum povrata* iz zaglavlja. Ako opcija nije aktivirana, knjiženje iz dokumenta izvršava se pomoću polja *Podrazumevani datum dokumenta* iz zaglavlja.
 
-**Provjeri zalihe artikala**: ako je flag aktivan, sustav provjerava dostupnost artikala u redovima narudžbe i upozorava ako je artikl pri isteku zaliha, to jest, ako je u [šifarniku artikla](/docs/erp-home/registers/items/create-new-item) aktiviran flag  *Pri isteku*.  
+**Blokiranje unosa dokumenta neradnim danima**: ako je opcija aktivirana, onemogućava unos naloga, otpremnice i povrata od podizvođača neradnim danima.
 
-**Aktiviraj kontrolu kvalitete**: u pripremi.  
+**Provera referentnog podizvođača za artikle**: ako je opcija aktivirana, prilikom kreiranja naloga podizvođača proverava se da li je podizvođač naveden u zaglavlju naloga ujedno i preferirani dobavljač artikla unetog na kartici *Artikli za proizvodnju*.
 
-**Upravljanje dvostrukom jedinicom mjere**: samo ako je flag aktivan, sustav može upravljati alternativnom jedinicom mjere u dokumentima za kooperaciju.  
+**Obavezni lotovi i serijski brojevi**: ako je opcija aktivirana, korisnik mora da unese lot artikla u svim dokumentima, pod uslovom da se artikal vodi po lotovima ili serijskim brojevima.
 
-**Automatski prijedlog alternativne jedinice mjere**: ako je flag aktivan, sustav automatski predlaže količinu prema alternativnoj jedinici mjere, pod uvjetom da je u šifarniku artikla postavljena kao zadana. Ovaj flag moguće je aktivirati samo ako je prethodni flag također aktivan.  
+**Ponovni izračun prevoza**: ovom opcijom omogućava se prenos ukupne mase, zapremine i broja paketa iz redova dokumenta na karticu *Prevoz* otpremnice. Ako opcija nije aktivirana, ova polja neće se popunjavati.
 
-**Uzimanje u obzir skladišta prema tipu DDT povrata**: omogućuje odabir hoće li se skladišta uzimati u obzir prema tipu DDT povrata ili prema tipu DDT isporuke, umjesto da se koriste postavke iz izbornika *Isporuke materijala kooperantima* i *Povrat proizvoda*.
+**Provera artikala pri kraju zaliha**: ako je opcija aktivirana, sistem proverava raspoloživost artikala u redovima naloga i upozorava ako je artikal označen kao artikal pri kraju zaliha, odnosno ako je u [šifarniku artikala](/docs/erp-home/registers/items/create-new-item) aktivirana opcija *Pri kraju zaliha*.
 
-### Skladišta
+**Aktiviranje kontrole kvaliteta**: funkcionalnost je u izradi.
 
-**Isporuke materijala za W.I.P. podizvođača**   
-U ovom se odjeljku postavlja skladište i povezani razlog koji se mora uzeti u obzir za istovar materijala namijenjenih podizvođačima u slučaju da se koristi upravljanje skladištem W.I.P., što se može aktivirati u [Parametrima proizvodnog naloga](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro). U ovom slučaju, sve podugovaračke narudžbe kreirane putem *Planiranog izdavanja narudžbe* ili izravno iz proizvodnog naloga koristit će ovo skladište i nasumično za istovar materijala unesenih u kartici [Materijali za isporuku](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders) podugovaračke narudžbe.    
+**Upravljanje dvema mernim jedinicama**: samo ako je ova opcija aktivirana, sistem može da upravlja alternativnom mernom jedinicom u dokumentima podizvođača.
 
-**Dostave materijala podizvođaču**   
-U ovom odjeljku postavlja se skladište i povezani razlog koji se mora uzeti u obzir za istovar materijala namijenjenih podizvođačima. Stoga je skladišni skup skladište iz kojeg će se preuzeti materijali umetnuti u karticu [Materijali za isporuku](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders) podugovaračkog naloga. Oni će se koristiti samo u ručno kreiranim podizvođačkim narudžbama ako je aktivan W.I.P. nije aktivan će se uzeti u obzir u svim slučajevima.     
+**Automatski predlog alternativne merne jedinice**: ako je opcija aktivirana, predlaže se količina izražena u alternativnoj mernoj jedinici, pod uslovom da je u šifarniku artikala definisana podrazumevana alternativna merna jedinica. Ova opcija može se aktivirati samo ako je prethodno aktivirana opcija **Upravljanje dvema mernim jedinicama**.
 
-**Potrošnja  korištenih materijala**  
-U ovom odjeljku postavljeno je skladište i povezani razlozi koji se moraju uzeti u obzir za istovar materijala koje su podizvođači upotrijebili. Stoga je skladišni skup skladište iz kojeg će se preuzeti materijali umetnuti u karticu Materijali naloga za povrat podugovaratelja. Molimo poveznicu kada artikl bude kreiran.
+**Uzimanje u obzir skladišta prema vrsti povratne otpremnice**: omogućava izbor da li će se skladišta određivati prema vrsti povratne otpremnice ili prema vrsti otpremnice za isporuku, umesto prema podešavanjima unetim u odgovarajuće padajuće menije u odeljcima *Isporuka materijala podizvođačima* i *Povrat proizvoda*.
 
-**Utovar materijala za podizvođača**  
-U ovom odjeljku postavlja se skladište i povezani razlog koji se mora uzeti u obzir za utovar materijala namijenjenih podizvođačima. Stoga je skup skladišta skladište u koje će se utovariti materijali umetnuti u karticu Materijali za isporuku podugovorne narudžbe. Ovi podaci su preuzeti iz drugog razloga umetnutog u tablicu razloga koji odgovara razlogu koji istovaruje materijale namijenjene podizvođačima (tj. razlog postavljen u posebnom kombiniranom okviru odjeljka *Isporuke materijala podizvođačima*).
+## 2. Skladišta
 
-**Dostave materijala između podizvođača**   
-U ovom se odjeljku postavlja skladište i povezani razlog koji se mora uzeti u obzir za premještanje materijala od jednog izvođača do drugog.   
+#### Isporuka materijala podizvođačima – W.I.P.
 
-**Povratak W.I.P artikla**  
-U ovom se odjeljku postavlja skladište i povezani razlog koji se mora uzeti u obzir za utovar poluproizvoda koje su izradili podizvođači; to će se koristiti u slučaju svih vanjskih faza koje nisu zadnja faza posla ciklus. Stoga je skup skladišta skladište u koje će se utovariti artikli umetnuti u karticu Stavke Naloga za povrat podugovarača.  
+U ovom odeljku podešavaju se skladište i pripadajući šablon koji se koriste za izlaz materijala namenjenih podizvođačima kada je aktivirano upravljanje W.I.P. skladištem, koje se može uključiti u [Parametrima naloga za proizvodnju](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
 
-**Povrat gotovog artikla**  
-U ovom odjeljku postavlja se skladište i povezani razlog koji se mora uzeti u obzir za utovar gotovih proizvoda/poluproizvoda koje su izradili kooperanti. Ovo će se koristiti u slučaju da je vanjska faza zadnja faza proizvodnog ciklusa. Stoga je skup skladišta skladište u koje će se utovariti artikli umetnuti u karticu Stavke Naloga za povrat podugovarača.  
+U tom slučaju svi nalozi podizvođača kreirani putem postupka *Puštanje planiranih naloga* ili direktno iz naloga za proizvodnju koristiće ovo skladište i šablon za izlaz materijala navedenih na kartici [Materijali za isporuku](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders) naloga podizvođača.
 
-**Materijal vraćen**  
-U ovom odjeljku postavlja se skladište i povezani razlog koji se mora uzeti u obzir za povrate utovara. Stoga je skladišni skup skladište u koje će se učitati artikli umetnuti u karticu Materijali zaposlenika povrata podugovarača i s kojim je povezana vraćena količina.
+#### Isporuka materijala podizvođačima
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, tipke i polja](/docs/guide/common).
+U ovom odeljku podešavaju se skladište i pripadajući šablon koji se koriste za izlaz materijala namenjenih podizvođačima.
+
+Izabrano skladište predstavlja skladište iz kojeg će se izdavati materijali navedeni na kartici [Materijali za isporuku](/docs/subcontractor/subcontractor-orders/insert-subcontractor-orders/new-subcontractor-orders) naloga podizvođača.
+
+Ova podešavanja koriste se samo za ručno kreirane naloge podizvođača ako je aktivirano upravljanje W.I.P. skladištem. Ako upravljanje W.I.P. skladištem nije aktivirano, primenjuju se u svim slučajevima.
+
+#### Potrošnja utrošenih materijala
+
+U ovom odeljku podešavaju se skladište i pripadajući šablon koji se koriste za izlaz materijala koje su podizvođači utrošili.
+
+Izabrano skladište predstavlja skladište iz kojeg će se izdavati materijali navedeni na kartici *Materijali* dokumenta povrata od podizvođača.
+
+#### Ulaz materijala kod podizvođača
+
+U ovom odeljku podešavaju se skladište i pripadajući šablon koji se koriste za ulaz materijala namenjenih podizvođačima.
+
+Izabrano skladište predstavlja skladište na koje će se zaprimiti materijali navedeni na kartici *Materijali za isporuku* naloga podizvođača.
+
+Ovi podaci preuzimaju se iz protivstavke šablona definisane u tabeli šablona skladišnih kretanja, za šablon kojim se izvršava izlaz materijala namenjenih podizvođačima, odnosno za šablon izabran u odgovarajućem padajućem meniju odeljka *Isporuka materijala podizvođačima*.
+
+#### Isporuka materijala između podizvođača
+
+U ovom odeljku podešavaju se skladište i pripadajući šablon koji se koriste za premeštanje materijala od jednog podizvođača drugom.
+
+#### Povrat W.I.P. artikla
+
+U ovom odeljku podešavaju se skladište i pripadajući šablon koji se koriste za ulaz poluproizvoda koje su izradili podizvođači. Ova podešavanja koriste se za sve spoljne faze koje nisu poslednja faza tehnološkog postupka.
+
+Izabrano skladište predstavlja skladište na koje će se zaprimiti artikli navedeni na kartici *Artikli* dokumenta povrata od podizvođača.
+
+#### Povrat gotovog artikla
+
+U ovom odeljku podešavaju se skladište i pripadajući šablon koji se koriste za ulaz gotovih proizvoda ili poluproizvoda koje su izradili podizvođači. Ova podešavanja koriste se kada je spoljna faza poslednja faza tehnološkog postupka.
+
+Izabrano skladište predstavlja skladište na koje će se zaprimiti artikli navedeni na kartici *Artikli* dokumenta povrata od podizvođača.
+
+#### Vraćeni materijal
+
+U ovom odeljku podešavaju se skladište i pripadajući šablon koji se koriste za ulaz vraćenih materijala.
+
+Izabrano skladište predstavlja skladište na koje će se zaprimiti artikli navedeni na kartici *Utrošeni materijali* dokumenta povrata od podizvođača, kojima je dodeljena vraćena količina.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću poveznicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

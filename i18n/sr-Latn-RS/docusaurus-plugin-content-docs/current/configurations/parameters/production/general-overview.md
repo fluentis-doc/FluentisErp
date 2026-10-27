@@ -1,6 +1,6 @@
 ---
-title: Općenito
+title: Opšte
 sidebar_position: 1
 ---
 
-Odjeljak s parametrima proizvodnog područja može se pregledati putem **Parametri > Proizvodnja** i koriste se za postavljanje cjelokupnog upravljanja proizvodnim područjem.
+Odeljak sa parametrima proizvodnog područja može se otvoriti putem menija **Parametri > Proizvodnja** i koristi se za podešavanje celokupnog upravljanja proizvodnim područjem.

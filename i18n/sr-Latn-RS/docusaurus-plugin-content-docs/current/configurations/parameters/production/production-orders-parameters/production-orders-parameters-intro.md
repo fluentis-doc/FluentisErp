@@ -1,117 +1,160 @@
 ---
-title: Parametri proizvodnog naloga 
+title: Parametri naloga za proizvodnju
 sidebar_position: 1
 ---
 
-Obrazac se otvara preko putanje **Parametri > Proizvodnja > Parametri proizvodnog naloga**. Kroz ovaj prozor se postavljaju svi parametri koji se tiču ​​kretanja artikala kroz procedure vezane za proizvodni prostor, kao i neki parametri koji vam omogućuju da odlučite kako upravljati nekim dijelovima proizvodnog prostora.  
+Obrazac se otvara putem menija **Parametri > Proizvodnja > Parametri naloga za proizvodnju**. U ovom prozoru podešavaju se svi parametri koji se odnose na skladišna kretanja artikala putem postupaka povezanih sa proizvodnjom, kao i pojedini parametri kojima se određuje način upravljanja određenim delovima proizvodnog područja.
 
-## 1. Općenito 
+## 1. Opšte
 
-**Automatsko upravljanje lotovima i serijskim brojevima**: ako je aktivno, automatski predlaže lotove i/ili serijske brojeve materijala koji se koriste tijekom proizvodnje, izravno unutar odgovarajućih rešetki postavljenih u odnosu na rešetku materijala korištenih u proizvodnji izvješća o proizvodnji . U suprotnom, korisnik će morati ručno postaviti i serije i serijske brojeve korištenih artikala koji imaju ovu vrstu upravljanja; Podsjećamo vas da se upravljanje serijama ili SB postavlja unutar *Šifarnik artikla* na kartici [Lotovi i SB](/docs/erp-home/registers/items/create-new-item) odabirom željene vrste upravljanja.
+**Automatsko upravljanje lotovima i serijskim brojevima**: ako je opcija aktivirana, sistem automatski predlaže lotove i/ili serijske brojeve materijala koji se koriste tokom proizvodnje, direktno u odgovarajućim mrežama povezanim sa mrežom korišćenih materijala u prijavi proizvodnje. U suprotnom, korisnik mora ručno da odredi lotove i serijske brojeve korišćenih artikala koji se vode na taj način. Podsećamo da se upravljanje lotovima ili serijskim brojevima podešava na kartici artikla, na kartici [Lotovi i serijski brojevi](/docs/erp-home/registers/items/create-new-item), izborom željene vrste upravljanja.
 
-**Upravljanje duplom mjernom jedinicom**: ako je aktivno, omogućuje korisniku upravljanje dvostrukom mjernom jedinicom unutar izvješća o proizvodnji, dakle i za proizvedene artikle i za korištene materijale;  
+**Upravljanje dvema mernim jedinicama**: ako je opcija aktivirana, korisniku omogućava upravljanje dvema mernim jedinicama u prijavama proizvodnje, kako za proizvedene artikle tako i za korišćene materijale.
 
-**Podijeli nalog ako lot materijala nije dostatan**: ako je aktivna, omogućuje korisniku da odluči da je serija utovarena u skladište otpada identična proizvedenoj seriji (u slučaju otpada gotovog proizvoda, dakle u slučaju prva od 2 zastavice) ili na šaržu koja je korištena (u slučaju materijalnog otpada, dakle u slučaju druge od 2 zastavice); 
+**Isti lot za otpadne artikle**: ako je opcija aktivirana, korisnik može da odredi da se nastali otpad prima na skladište pod istim lotom pod kojim se primaju i proizvodi. Ako opcija nije aktivirana, proizvodi i otpad primaće se pod različitim lotovima.
 
-**Podijeli nalog ako lot materijala nije dostatan**: ako je aktivna, omogućuje korisniku da osigura da postupak *Puštanja proizvodnog naloga* provjerava jesu li količine materijala za istovar automatski (dakle, samo u slučaju automatskog ili ručnog komisioniranja, ali s WIP upravljanjem ) su dovoljne u skladištu iz kojeg se moraju preuzeti; ako nisu, postupak dijeli proizvodni nalog na 2 različite narudžbe koje će imati isti broj/godinu, ali različitu seriju (prva će imati seriju 0, druga seriju 1; prva će biti ona za koju su prisutni materijali ima dovoljno na zalihama);
+**Podela naloga ako lotovi materijala nisu dovoljni**: ako je opcija aktivirana, postupak *Puštanje naloga za proizvodnju* proverava da li su količine materijala koje treba automatski izdati dovoljne na skladištu sa kojeg ih je potrebno preuzeti. Ovo se odnosi samo na automatsko preuzimanje ili na ručno preuzimanje uz upravljanje WIP-om. Ako količine nisu dovoljne, postupak deli nalog za proizvodnju na dva zasebna naloga sa istim brojem i godinom, ali različitim lotovima. Prvi nalog imaće lot 0, a drugi lot 1. Prvi nalog odnosi se na materijale kojih ima dovoljno na skladištu.
 
-**Promijeni podnalog kod promjene datuma proizvodnog naloga**: ako je aktivan, omogućuje korisniku da osigura da se, kada se promijeni datum završetka narudžbe za proizvodnju, automatski promijeni i datum završetka narudžbe, pod uvjetom da je artikl obuhvaćen proizvodnjom nalog je isti objekt kao proizvodni nalog; stoga proizvodni nalog mora biti razine 0; 
+**Promena datuma radnog naloga pri promeni datuma naloga za proizvodnju**: ako je opcija aktivirana, promenom završnog datuma naloga za proizvodnju automatski se menja i završni datum radnog naloga, pod uslovom da je artikal na nalogu za proizvodnju isti kao artikal na radnom nalogu. To znači da nalog za proizvodnju mora biti prvog nivoa.
 
-**Ispis radnih listova za pokrenute narudžbe**: omogućuje da se flag *Pokrenuto* postavi kao aktivan prema zadanim postavkama u odgovarajućem obrascu za pokretanje ispisa [Radni list](/docs/production/pp-production-in-progress/reports/worksheet).
+**Štampanje radnih listova za pokrenute naloge**: omogućava da opcija *Pokrenuti* bude podrazumevano aktivirana u odgovarajućem obrascu za pokretanje štampanja [Radnog lista](/docs/production/pp-production-in-progress/reports/worksheet).
 
-**Automatsko određivanje vremena u izvješćima**: ako je aktivno, automatski izračunava vrijeme stroja i vrijeme radnika na temelju vremena izvješća. U suprotnom, korisnik će morati ručno postaviti ta vremena na proizvodnoj liniji za izvješćivanje; 
+**Automatsko određivanje vremena u prijavama**: ako je opcija aktivirana, sistem automatski izračunava mašinsko vreme i vreme rada radnika na osnovu vremena navedenih u prijavama. U suprotnom, korisnik mora ručno da unese navedena vremena u red prijave proizvodnje.
 
-**Automatski prijedlog alternativne J.M.**: ako je aktivna, automatski predlaže alternativnu mjernu jedinicu postavljenu za stavku u izvješću o proizvodnji. Obično, ako je aktivirana zastavica **Upravljanje duplom mjernim jedinicama**, ova je zastavica radi praktičnosti također aktivirana i može se uređivati ​​samo ako je aktivirana zastavica **Upravljanje duplom mjernim jedinicama**; 
+**Automatski predlog alternativne merne jedinice**: ako je opcija aktivirana, sistem automatski predlaže alternativnu mernu jedinicu definisanu za artikal u prijavi proizvodnje. Ako je aktivirana opcija **Upravljanje dvema mernim jedinicama**, preporučuje se aktiviranje i ove opcije radi jednostavnijeg rada. Ova opcija može da se menja samo ako je aktivirana opcija **Upravljanje dvema mernim jedinicama**.
 
-**Isti lot za materijalni otpad**: ako je omogućeno, odbijeni materijali zadržavaju istu seriju kao i potrošeni materijali; 
+**Isti lot za otpadne materijale**: ako je opcija aktivirana, otpadni materijali zadržavaju isti lot kao i utrošeni materijali.
 
-**Automatsko snimanje izvješća**: ako je aktivna, ova zastavica označava da se automatski bilježi čim uđem u izvješće; 
+**Automatsko knjiženje prijava**: ova opcija se koristi u obrascu prijava proizvodnje u sistemu WMS. Ako je aktivirana, prijava se automatski knjiži odmah nakon unosa.
 
-**Poveži partiju s otpremnom listom**: ako je aktivna, ova zastavica označava da kada je otpremna lista stvorena korištenjem odgovarajućeg postupka, za materijale kojima se upravlja u serijama, sustav odabire materijale koji će se odkupiti za proizvodne naloge koje sam odabrao; ako nije aktiviran to znači da će korisnik morati ručno deklarirati koje su serije prikupljene; 
+**Dodela lota za listu za preuzimanje**: ako je opcija aktivirana, prilikom izrade liste za preuzimanje odgovarajućim postupkom sistem za materijale koji se vode po lotovima bira lotove koje je potrebno preuzeti za izabrane naloge za proizvodnju. Ako opcija nije aktivirana, korisnik mora ručno da navede u postupku **Picking** koji su lotovi preuzeti.
 
-**Ažuriranje materijala korištenih u proizvodnom nalogu**: ako je aktivno, kada se količina navedena u proizvodnoj deklaraciji promijeni, prikazat će se poruka s pitanjem treba li ili ne ponovno izračunati količine korištenih materijala; ako nije aktivan, ponovni izračun materijala događa se automatski;
+**Ažuriranje korišćenih materijala u nalogu za proizvodnju**: ako je opcija aktivirana, pri promeni prijavljene količine u prijavi proizvodnje prikazuje se poruka sa pitanjem da li korisnik želi ponovo da izračuna količine korišćenih materijala. Ako opcija nije aktivirana, preračunavanje materijala obavlja se automatski.
 
-**Omogući kontrolu u MES-u**: **Abilita controllo presenze nel MES**: ako je aktivirano, omogućuje se kontrola prisutnosti unutar [Fluentis MES](/docs/production/mes/mes-intro), kontrola se temelji na tablici *Fluentis.HR_BadgeRecords*.       
-U ovoj tablici obavezna polja za kontrolu su: *HRBR_Resource_HRR_Id*, *HRBR_RecordDateTime*, *HRBR_BadgeRecordType_HRBRTY_Id*, koje može imati vrijednosti U = Ulazak ili I = Izlazak.
-Za svaki red moguće je zabilježiti samo vrijeme ulaska ili vrijeme izlaska, stoga će za svaki korisnik postojati 4 reda dnevno, na primjer:      
-- 2024-01-02 08:30:00.000 - tipo U 
-- 2024-01-02 12:30:00.000 - Tipo I 
-- 2024-01-02 14:00:00.000 - Tipo U 
-- 2024-01-02 18:00:00.000 - Tipo I      
+**Omogući kontrolu prisustva u sistemu MES**: ako je opcija aktivirana, omogućava kontrolu prisustva unutar sistema [Fluentis MES](/docs/production/mes/mes-intro). Kontrola se zasniva na tabeli *Fluentis.HR_BadgeRecords*.
 
-Podaci se moraju uvesti u ovu tablicu polazeći od podataka zabilježenih putem korištenog uređaja za evidentiranje radnog vremena.      
-Ti će se podaci potom usporediti s vrijednostima početka i završetka rada svakog operatera unesenog u karticu *Tim* koja se nalazi u [Fluentis MES](/docs/production/mes/mes-intro).
+Obavezna polja za kontrolu u toj tabeli su:
+- *HRBR_Resource_HRR_Id*
+- *HRBR_RecordDateTime*
+- *HRBR_BadgeRecordType_HRBRTY_Id* — može imati vrednost E = ulazak ili U = izlazak.
 
-**Prikaži verziju komponente unutar troška materijala**: ako je aktivirano, omogućuje se prikaz polja verzije unutar kartice komponente u strukturi proizvoda.  
+Svaki red može da sadrži samo vreme ulaska ili vreme izlaska. Zato će za svaki dan postojati četiri reda za svakog korisnika, na primer:
 
-**Omogući automatsko spremanje na proizvodnim izvještajima**: ako je aktivirano, omogućuje se automatsko spremanje unutar izjava o proizvodnji.  
+- 2024-01-02 08:30:00.000 — vrsta E
+- 2024-01-02 12:30:00.000 — vrsta U
+- 2024-01-02 14:00:00.000 — vrsta E
+- 2024-01-02 18:00:00.000 — vrsta U
 
-Konačno, postoje još četiri odjeljka: **Lista posla upravljana za, Period analize, Vrednovanje materijala po cijeni, Sekvenca faze prijedloga**. 
+Podaci se moraju uvesti u ovu tabelu na osnovu podataka sa korišćenog uređaja za evidenciju radnog vremena.
 
-**Lista posla upravljana za**: odjeljak omogućuje, aktiviranjem jednog od radio gumba, odabir vrste grupiranja za ispis radnog lista (koji sadrži parametre koji pokazuju kako taj materijal mora biti proizveden). Međutim, to je prijedlog, koji se zatim može modificirati unutar ispisne maske samog radnog lista; 
+Nakon toga upoređuju se sa vremenima početka i završetka rada svakog operatera unetog na kartici *Tim* u sistemu [Fluentis MES](/docs/production/mes/mes-intro).
 
-**Period analize**: odjeljak omogućuje, aktiviranjem jednog od radio gumba, odabir razdoblja filtriranja proizvodnih naloga koji moraju biti prikazani u prozoru za ispis radnog lista (tjedno, dnevno ili svakih X dana); 
+**Prikaz verzije komponente u sastavnici**: ako je opcija aktivirana, omogućava prikaz polja verzije na kartici komponente sastavnice.
 
-**Valorizacija materijala po cijeni**: Ovaj odjeljak omogućuje definiranje parametara koji će se koristiti za izračun troškova vezanih uz evidentirane izjave o proizvodnji. (Ovi parametri se ne uzimaju u obzir kod [Obračun troškova](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), budući da ona preuzima vrijednosti izravno iz zapisa izjava o proizvodnji.)  
+**Omogući automatsko čuvanje prijava proizvodnje**: ako je opcija aktivirana, omogućava automatsko čuvanje prijava proizvodnje.
 
-> **Zadnji**: omogućuje vrednovanje materijala po *Zadnjoj* cijeni;      
-> **Srednji**: omogućuje vrednovanje materijala po *Prosječnoj* cijeni;                
-> **Standard**: omogućuje vrednovanje materijala po *Standardnoj* cijeni;          
-> **Iz područja upravljanja**: omogućuje vrednovanje materijala na temelju troška povezanog s odabranim *Upravljačkim područjem* u odgovarajućem padajućem izborniku;       
-> **Trošak lota**: aktiviranjem ove opcije, procedura će vrednovati trošak materijala prema odabranoj vrsti troška, uzimajući u obzir isključivo vrijednosti tog konkretnog lota;       
-> **Trošak narudžbe proizvodnje**: aktiviranjem ove opcije, procedura će vrednovati trošak materijala prema odabranoj vrsti troška, uzimajući u obzir isključivo vrijednosti te konkretne proizvodne narudžbe.      
+**Format vremena**: ovim parametrom određuje se format prikaza vremena navedenih u prijavama, kao i vremena početka i završetka rada. Dostupni su formati sati, minuta i sekundi ili sati i minuta (podrazumevani format). Podešavanje se primenjuje na faze planiranih naloga i naloga za proizvodnju, prijave proizvodnje, prijave u rešenju M.E.S., kao i na funkcionalnosti redosleda faza i kapaciteta radnih centara.
 
-:::note Napomena 
-Ako su **Trošak lota** i **Trošak narudžbe proizvodnje** istovremeno aktivirani, procedura će vrednovati trošak materijala prema odabranoj vrsti troška, uzimajući u obzir isključivo vrijednosti te konkretne proizvodne narudžbe i tog konkretnog lota — naravno, među prometima evidentiranim uz ulazne uzroke koji imaju aktivirane oznake ažuriranja zadnjeg ili prosječnog troška (ovisno o vrijednosti u polju **Vrsta troška**) i fiskalnog značaja; ako se ne pronađe nijedan promet s tim karakteristikama, sustav traži među prometima koji su unijeli taj lot. Ako ni tu nema rezultata, traži među svim prometima tog artikla. Ako nema nijednog ulaznog prometa za taj artikl, tada sustav uzima vrijednosti iz pripadajućih polja za zadnji, prosječni i standardni trošak u šifrarniku artikla.
+**Vrsta zadatka koja se predlaže u MES-u**: vrsta zadatka koja će se koristiti za generisanje zadataka za faze ili grupe faza za koje će se evidentirati prijave.
+
+Postoje i sledeći odeljci: **Upravljani radni listovi za**, **Period analize**, **Vrednovanje materijala prema trošku**, **Pojednostavljene prijave** i **Predlog redosleda faza**.
+
+Odeljak **Upravljani radni listovi za**
+
+> Odeljak omogućava izbor vrste grupisanja koja će se koristiti prilikom štampanja radnog lista (koji sadrži parametre koji određuju kako određeni materijal treba da se proizvede), aktiviranjem jednog od radio-dugmadi. Izabrana vrednost predstavlja samo predlog koji se naknadno može promeniti u obrascu za štampanje samog radnog lista.
+
+Odeljak **Period analize**
+
+> Odeljak omogućava izbor perioda filtriranja naloga za proizvodnju koji će se prikazivati u prozoru za štampanje radnog lista, aktiviranjem jednog od radio-dugmadi. Dostupne su sledeće mogućnosti: nedeljno, dnevno ili svakih X dana.
+
+Odeljak **Vrednovanje materijala prema trošku**
+
+> Odeljak omogućava definisanje parametara koji će se koristiti za izračunavanje troškova evidentiranih prijava proizvodnje. Ovi parametri se ne uzimaju u obzir u postupku [Kalkulacije troškova](/docs/planning/mps-master-production-scheduling/production-job-orders/valorization), jer se u tom postupku vrednosti preuzimaju direktno iz knjiženja prijava proizvodnje.
+
+- **Poslednji**: omogućava vrednovanje materijala prema poslednjem trošku.
+- **Prosečni**: omogućava vrednovanje materijala prema prosečnom trošku.
+- **Standardni**: omogućava vrednovanje materijala prema standardnom trošku.
+- **Prema upravljačkom području**: omogućava vrednovanje materijala prema trošku povezanom sa izabranim **upravljačkim područjem** u odgovarajućem padajućem meniju.
+- **Trošak lota**: aktiviranjem ove opcije postupak vrednuje materijal prema izabranoj vrsti troška, uzimajući u obzir samo vrednosti koje se odnose na određeni lot.
+- **Trošak radnog naloga**: aktiviranjem ove opcije postupak vrednuje materijal prema izabranoj vrsti troška, uzimajući u obzir samo vrednosti koje se odnose na određeni radni nalog.
+
+:::note[Napomena]
+Ako su istovremeno aktivirane opcije **Trošak lota** i **Trošak radnog naloga**, postupak vrednuje materijal prema izabranoj vrsti troška, uzimajući u obzir samo vrednosti koje se odnose na određeni radni nalog i određeni lot.
+
+Pritom se uzimaju u obzir knjiženja izvršena pomoću ulaznih šablona koji imaju aktiviranu opciju ažuriranja poslednjeg ili prosečnog troška (u zavisnosti od vrednosti izabrane u polju **Vrsta troška**) i aktiviranu opciju poreske relevantnosti.
+
+Ako ne pronađe nijedno knjiženje koje ispunjava ove uslove, postupak traži knjiženja kojima je taj lot primljen. Ako ni takva knjiženja ne postoje, pretražuju se sva knjiženja za taj artikal. Ako za artikal ne postoji nijedno ulazno knjiženje, postupak proverava odgovarajuća polja poslednjeg, prosečnog i standardnog troška u šifarniku artikala.
 :::
 
-**Sekvenca faze prijedloga**: odjeljak vam omogućuje da odaberete, tijekom stvaranja radnog ciklusa, redni broj predložene faze, koji se može uzeti iz rednog broja standardne faze ili kao progresivni broj naloga za umetanje , označavajući i vrijednost koraka.
+Odeljak **Pojednostavljene prijave**
 
-## 2. Skladišta 
+> Ovaj odeljak odnosi se isključivo na upravljanje **Pojednostavljenim prijavama** u rešenju M.E.S. i omogućava podešavanje njihovog načina rada.
 
-Obrazac je posvećen umetanju skladišta i povezanih razloga koji reguliraju kretanje artikala kroz proizvodne postupke; isti ekran ponovno se prikazuje u *MRP parametrima* artikla u kartici [Skladišta](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), s razlikom da se skladišta postavljena u *Parametrima proizvodnje* smatraju općim podacima koji prema zadanim postavkama vrijede za artikle; ako su različita skladišta postavljena za određenu stavku u *MRP parametrima* stavke, sustav će dati <u>prioritet parametrima</u> koje nađe postavljenima u ovom zadnjem prozoru za utovar i istovar materijala povezanih s proizvodnjom ove stavke.  
-Također, moguće je postaviti iste parametre i za specifičnu Proizvodnu lokaciju.  
+Dostupni parametri su:
 
-Dakle, prioritet za **Zaduženje** bit će određen sljedećim redoslijedom:  
+- **Zahtev za izborom operatera**: ako je opcija aktivirana, od operatera će se zahtevati da unese zaposlenog (putem čitača bar-kodova) koji će učestvovati u timu zaduženom za izvršavanje operacije.
+- **Zahtev za unosom više operatera**: opcija je dostupna samo ako je aktivirana opcija **Zahtev za izborom operatera**. Ako je aktivirana, od operatera će se zahtevati da unese dodatnog zaposlenog (putem čitača bar-kodova) koji će se pridružiti timu zaduženom za izvršavanje operacije.
+- **Zahtev za potvrdom radnog centra**: ako je opcija aktivirana, od operatera će se zahtevati da potvrdi predloženi radni centar ili će mu biti omogućeno da ga zameni unosom drugog radnog centra putem čitača bar-kodova.
+- **Zahtev za potvrdom mašine**: ako je opcija aktivirana i za izabranu radnu fazu postoji definisana mašina, od operatera će se zahtevati da potvrdi predloženu mašinu ili će mu biti omogućeno da izabere alternativnu mašinu putem čitača bar-kodova. Alternativna mašina mora biti važeća za izabrani radni centar.
+- **Zahtev za vremenom pripreme**: ako je opcija aktivirana i za radnu fazu postoji definisano vreme pripreme, od operatera će se zahtevati da navede da li je uz prijavu početka povezana aktivnost pripreme. Ta aktivnost će se završiti pri sledećoj prijavi obustave aktivnosti.
+- **Automatsko zatvaranje po dostizanju ili prekoračenju planirane količine**: ako je opcija aktivirana, kada prijavljena proizvedena količina dostigne ili premaši planiranu količinu, automatski će se evidentirati zatvaranje faze. U suprotnom će se i dalje nuditi prijave obustave i nastavka aktivnosti.
+- **Prikaz kartice Radna uputstva**: ako je opcija aktivirana i ako je radni centar tako konfigurisan, prikazaće se kartica **Radna uputstva**.
+- **Zahtev za potvrdom pregleda radnih uputstava**: opcija je dostupna samo ako je aktivirana opcija **Prikaz kartice Radna uputstva**. Ako je opcija aktivirana, a radni centar podržava ovu funkcionalnost, od operatera će se zahtevati da potvrdi da je pregledao radna uputstva, ako ona postoje.
+- **Prikaz kartice Napomene**: ako je opcija aktivirana i ako je radni centar tako konfigurisan, prikazaće se kartica **Napomene**.
+- **Prikaz kartice Dokumenti**: ako je opcija aktivirana i ako je radni centar tako konfigurisan, prikazaće se kartica **Dokumenti**.
+- **Vreme potvrde automatskog prelaska na sledeću aktivnost (5–60 sekundi)**: dozvoljene su vrednosti 0 i svi celi brojevi od 5 do 60. Parametar određuje broj sekundi čekanja pre automatskog prelaska na sledeći korak prijave, ako je ta funkcionalnost predviđena. Ako je vrednost 0, operater mora ručno da potvrdi prelazak na sledeću aktivnost.
 
-- Skladište i predložak ako su navedeni u zaglavlju proizvodne narudžbe 
-- [Parametri proizvodnog mjesta](/docs/configurations/parameters/production/production-orders-parameters/production-site) navedeni u radnom nalogu povezanoj s proizvodnom narudžbom  
-- [MRP parametri artikla](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
-- Proizvodno mjesto povezano sa strojem koji je naveden u izjavi o proizvodnji; ako stroj nije naveden u izjavi, parametri se preuzimaju iz proizvodnog mjesta povezanog sa strojem koji je naveden u fazi proizvodne narudžbe  
-- [Parametri proizvodnih narudžbi](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro)
+Odeljak **Predlog redosleda faza**
 
-Prioritet za **Istovar** bit će određen sljedećim redoslijedom:  
+> Odeljak omogućava izbor broja redosleda faze koji će se predlagati prilikom izrade tehnološkog postupka. Broj se može preuzeti iz redosleda standardne faze ili se može dodeljivati uzastopno, prema redosledu unosa. Takođe je moguće odrediti vrednost koraka.
 
-- [Parametri proizvodnog mjesta](/docs/configurations/parameters/production/production-orders-parameters/production-site) navedeni u radnom nalogu povezanoj s proizvodnom narudžbom  
-- [MRP parametri artikla](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro)
-- Proizvodno mjesto povezano sa strojem koji je naveden u izjavi o proizvodnji; ako stroj nije naveden u izjavi, parametri se preuzimaju iz proizvodnog mjesta povezanog sa strojem navedenim u fazi proizvodne narudžbe  
-- [Parametri proizvodnih narudžbi](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro)
-  
-Stoga u ovoj kartici možete postaviti skladišta koja se odnose na *Sirovine*,*Poluproizvode*, *Gotove proizvode* i bilo koji *Otpad* s pripadajućim razlozima za utovar i istovar.
+## 2. Skladišta
 
-Za postavljanje jednog od ovih skladišta bit će dovoljno odabrati putem pripadajućih padajućih izbornika skladište i predloške, koji su unaprijed definirani u odgovarajućim tablicama [Skladišta](/docs/configurations/tables/logistics/warehouses) i [Predlošci](/docs/configurations/tables/logistics/warehouse-templates) koje želite postaviti.  
+Obrazac služi za unos skladišta i pripadajućih šablona koji upravljaju skladišnim kretanjima artikala putem postupaka povezanih sa proizvodnjom. Isti obrazac nalazi se i u *MRP parametrima* artikla, na kartici [Skladišta](/docs/configurations/parameters/production/mrp-parameters/search-mrp-parameters), s tom razlikom što se skladišta definisana u *Parametrima naloga za proizvodnju* smatraju opštim podrazumevanim podešavanjima koja važe za sve artikle. Ako se za određeni artikal u njegovim *MRP parametrima* podese druga skladišta, sistem će pri ulazu i izlazu materijala povezanih sa proizvodnjom tog artikla **dati prednost parametrima** podešenim u tom obrascu.
 
-Pored ovih glavnih skladišta, postoje i W.I.P. skladišta (upravljanje se ne koristi često), koja se aktiviraju odabirom stavke W.I.P. te daljnjim odabirom unutar kombiniranog okvira skladišta i predloška, kao što je to učinjeno za ostala skladišta.
+Osim toga, iste parametre moguće je podesiti i za određenu lokaciju proizvodnje.
 
-Pod *W.I.P.* (Work in Progress) skladištima podrazumijevaju se prijelazna skladišta u koja roba ulazi u trenutku kada se proizvodna narudžba za gotov proizvod ili poluproizvod pusti u rad. Kada se ova skladišta postave, vrsta izdavanja materijala mora biti postavljena na *Ručno*, u suprotnom, ako je izdavanje postavljeno na *Automatski* način, materijal bi se automatski skinuo sa skladišta već u trenutku puštanja proizvodne narudžbe. U slučaju W.I.P. skladišta, materijal se u trenutku puštanja narudžbe prebacuje u ta skladišta (putem [Liste za izdavanje materijala](/docs/production/pp-production-in-progress/picking-materials-list)) i zatim se skida (iz skladišta) tijekom izrade izjave o proizvodnji za završnu fazu obrade (koja je proizvodna i omogućuje promet) artikla iz te narudžbe, ili tijekom faze obrade s kojom je taj materijal povezan.
+Prioritet za **ulaz** određuje se sledećim redosledom:
 
-U suprotnom, ako je vrsta izdavanja materijala postavljena na *Sa Listom*, tada se premještanje materijala u W.I.P. skladište odvija na isti način kao kod ručnog izdavanja, dok se skidanje sa W.I.P. skladišta vrši putem procedure [Liste za izdavanje materijala](/docs/production/pp-production-in-progress/picking-materials-list).     
+- Skladište i šablon ako su navedeni u zaglavlju naloga za proizvodnju.
+- [Parametri lokacije proizvodnje](/docs/configurations/parameters/production/production-orders-parameters/production-site) navedeni u radnom nalogu povezanom sa nalogom za proizvodnju.
+- [MRP parametri artikla](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro).
+- Parametri lokacije proizvodnje povezane sa mašinom navedenom u prijavi proizvodnje. Ako mašina nije navedena u prijavi, parametri se preuzimaju sa lokacije proizvodnje povezane sa mašinom navedenom u fazi naloga za proizvodnju.
+- [Parametri naloga za proizvodnju](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
 
-### Funkcioniranje skladišta i predložaka
+Prioritet za **izlaz** određuje se sledećim redosledom:
 
-Što se tiče **knjiženja** izlaza materijala: 
+- [Parametri lokacije proizvodnje](/docs/configurations/parameters/production/production-orders-parameters/production-site) navedeni u radnom nalogu povezanom sa nalogom za proizvodnju.
+- [MRP parametri artikla](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro).
+- Parametri lokacije proizvodnje povezane sa mašinom navedenom u prijavi proizvodnje. Ako mašina nije navedena u prijavi, parametri se preuzimaju sa lokacije proizvodnje povezane sa mašinom navedenom u fazi naloga za proizvodnju.
+- [Parametri naloga za proizvodnju](/docs/configurations/parameters/production/production-orders-parameters/production-orders-parameters-intro).
 
-- Ako se smatra **posljednjom proizvodnom i pokretnom fazom** ciklusa, koriste se skladišta i uzroci iz odjeljka **Gotovi proizvodi**, ako je narudžba proizvodnje **razine 1** (dakle, povezana s gotovim proizvodom), dok se koriste oni iz odjeljka **Poluproizvodi**, ako narudžba proizvodnje **nije razine 1** (dakle, radi se o poluproizvodu). Ako odjeljak **Poluproizvodi** nije popunjen, koriste se oni iz odjeljka **Gotovi proizvodi**.    
-- U slučaju da **nije posljednja proizvodna i pokretna faza** ciklusa i **upravljanje WIP-om** **nije aktivirano**, koriste se skladišta i uzroci iz odjeljka **WIP Poluproizvodi**. Međutim, ako je **aktivirano** **upravljanje WIP-om**, koriste se oni iz **odjeljka WIP**, a oni iz odjeljka **WIP Poluproizvodi** više se ne uzimaju u obzir.
+Na ovoj kartici moguće je podesiti skladišta za **Sirovine**, **Poluproizvode**, **Gotove proizvode** i eventualni **Otpad**, zajedno sa pripadajućim ulaznim i izlaznim šablonima.
 
-Za **otpremu** materijala umjesto:
+Za podešavanje pojedinačnog skladišta potrebno je u odgovarajućim padajućim menijima izabrati skladište i šablone koji su prethodno definisani u tabelama [Skladišta](/docs/configurations/tables/logistics/warehouses) i [Šabloni skladišnih kretanja](/docs/configurations/tables/logistics/warehouse-templates).
 
-- Ako **upravljanje WIP-om nije aktivirano**, koriste se skladišta i predlošci iz odjeljka **Sirovi materijal** ako artikl u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) ima **vrstu nabave: Kupnja**, ako artikl ima **vrstu nabave: Proizvodnja ili Podizvođač**, za knjiženje izlaza koriste se skladišta i predlošci iz odjeljka **Nezavršeni proizvodi**.       
-- S druge strane, ako je **upravljanje WIP-om aktivirano**, koriste se skladišta i predlošci iz **odjeljka WIP** (ako nisu definirani, tada se koriste oni iz odjeljka Sirovi materijal). Dakle, ako artikl ima **vrstu nabave: Kupnja**, koristi se predložak **Potrošnja materijala**. Ako artikl ima **vrstu nabave: Proizvodnja ili Podizvođač**, koristi se predložak **Nezavršeni proizvodi**.
+Pored ovih glavnih skladišta, postoje i **W.I.P. skladišta**, koja se aktiviraju izborom opcije W.I.P. Nakon toga potrebno je u odgovarajućim padajućim menijima izabrati skladišta i šablone, na isti način kao i za ostala skladišta.
 
-:::note Nota
-Kada se aktivira flag  *W.I.P.* u *Parametrima proizvodnih naloga*,prilikom kreiranja naloga za kooperaciju (bilo putem *Izdavanje planiranih naloga* o izravno iz narudžbe proizvodnje), vode se u obzir za materijale koji se šalju trećoj strani skladište i uzrok prisutni u [Parametri za podizvođača](/docs/configurations/parameters/production/subcontractor-parameters) u odjeljku *Isporuke materijala podizvođačima W.I.P.*; dakle, u tom slučaju materijali koji se šalju podizvođačima bit će preuzeti izravno iz *W.I.P.* skladišta.      
-:::    
+**W.I.P. skladišta** (*Work in Progress*) predstavljaju prelazna skladišta kroz koja roba prolazi prilikom puštanja naloga za proizvodnju gotovog proizvoda ili poluproizvoda. Kada su ova skladišta podešena, vrsta preuzimanja materijala mora biti *Ručno*. U suprotnom, ako je izabrana vrsta preuzimanja *Automatski*, izlaz materijala izvršiće se automatski prilikom puštanja naloga za proizvodnju.
 
-Za sve što nije detaljno opisano u ovom dokumentu o zajedničkom funkcioniranju obrazaca, molimo se obratite na sljedeću poveznicu [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+U slučaju W.I.P. skladišta, materijal se prilikom puštanja naloga premešta u ta skladišta putem [Liste za preuzimanje materijala](/docs/production/pp-production-in-progress/picking-materials-list). Izlaz materijala evidentira se tokom prijave proizvodnje poslednje proizvodne faze koja omogućava skladišna kretanja za artikal iz naloga za proizvodnju ili tokom faze kojoj je materijal pridružen.
 
+Ako je, umesto toga, za materijal izabrana vrsta preuzimanja *Sa listom*, premeštanje materijala u W.I.P. skladište odvija se na isti način kao i kod ručnog preuzimanja, dok se izlaz iz W.I.P. skladišta izvršava putem postupka [Liste za preuzimanje materijala](/docs/production/pp-production-in-progress/picking-materials-list).
+
+### Funkcionisanje skladišta i šablona
+
+Što se tiče **ulaza gotovih proizvoda i poluproizvoda**:
+
+- Ako je u pitanju **poslednja proizvodna faza koja omogućava skladišna kretanja** u tehnološkom postupku, koriste se skladišta i šabloni iz odeljka **Gotovi proizvodi** ako je nalog za proizvodnju **prvog nivoa**, odnosno ako se odnosi na gotov proizvod. Ako nalog za proizvodnju **nije prvog nivoa**, odnosno odnosi se na poluproizvod, koriste se skladišta i šabloni iz odeljka **Poluproizvodi**. Ako u odeljku **Poluproizvodi** nisu definisane vrednosti, koriste se one iz odeljka **Gotovi proizvodi**.
+- Ako **nije u pitanju poslednja proizvodna faza koja omogućava skladišna kretanja** i **upravljanje W.I.P. skladištima nije aktivirano**, koriste se skladišta i šabloni iz odeljka **W.I.P. poluproizvodi**. Ako je **upravljanje W.I.P. skladištima aktivirano**, koriste se skladišta i šabloni iz odeljka **W.I.P.**, a vrednosti iz odeljka **W.I.P. poluproizvodi** više se ne uzimaju u obzir.
+
+Što se tiče **izlaza materijala**:
+
+- Ako **upravljanje W.I.P. skladištima nije aktivirano**, koriste se skladišta i šabloni iz odeljka **Sirovine** ako je za artikal u [MRP parametrima](/docs/configurations/parameters/production/mrp-parameters/mrp-parameters-intro) podešena **vrsta nabavke Nabavka**. Ako je podešena **vrsta nabavke Proizvodnja ili Kooperacija**, za izlaz se koriste skladišta i šabloni iz odeljka **Poluproizvodi**.
+- Ako je **upravljanje W.I.P. skladištima aktivirano**, koriste se skladišta i šabloni iz odeljka **W.I.P.** Ako u tom odeljku nisu definisane vrednosti, koriste se one iz odeljka **Sirovine**. Prema tome, ako je za artikal podešena **vrsta nabavke Nabavka**, koristi se šablon **Potrošnja materijala**. Ako je podešena **vrsta nabavke Proizvodnja ili Kooperacija**, koristi se šablon **Potrošnja poluproizvoda**.
+
+:::note[Napomena]
+Kada se u *Parametrima naloga za proizvodnju* aktivira opcija *W.I.P.*, prilikom izrade naloga za kooperaciju (putem postupka *Puštanje planiranih naloga* ili direktno iz naloga za proizvodnju) za materijale koji se šalju kooperantu uzimaju se u obzir skladište i šablon definisani u [Parametrima kooperacije](/docs/configurations/parameters/production/subcontractor-parameters), u odeljku *Isporuka materijala kooperantima – W.I.P.*. U tom slučaju materijali koji se šalju kooperantima preuzimaju se direktno iz **W.I.P. skladišta**.
+:::
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sledeću stranicu: [Zajedničke funkcionalnosti, dugmad i polja](/docs/guide/common).

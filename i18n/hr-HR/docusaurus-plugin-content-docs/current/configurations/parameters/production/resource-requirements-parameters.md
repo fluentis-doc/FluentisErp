@@ -1,74 +1,84 @@
 ---
 title: Parametri potreba za materijalom
 sidebar_position: 7
-tags: [Zahtjevi za materijal]
+tags: [Planiranje potreba za materijalom]
 ---
 
-Kroz ovaj prozor se postavljaju parametri koji se tiču nekih od osnovnih postavki proizvodnog područja.  
+U ovom se prozoru postavljaju parametri koji se odnose na neke od osnovnih postavki područja Proizvodnja.
 
-**Prvi dan u tjednu za izračun proizvodnih kapaciteta**: moguće je odlučiti koji dan treba smatrati prvim u tjednu u [Kalendaru proizvodnih kapaciteta](/docs/configurations/tables/production/factory-calendar), a time i u kalendaru radnog centra. Obično se postavlja u ponedjeljak.
+**Prvi dan tjedna u kalendaru proizvodnih kapaciteta**: moguće je odrediti koji će se dan smatrati prvim danom tjedna u [Kalendaru proizvodnih kapaciteta](/docs/configurations/tables/production/factory-calendar), odnosno u kalendaru radnih centara. Uobičajeno se postavlja ponedjeljak.
 
-**Zadnji planirani nalog umetnut za ovu godinu**: predstavlja zadnji progresivni broj korišten u tekućoj godini za planske naloge. 
+**Posljednji uneseni planirani nalog za tekuću godinu**: predstavlja posljednji redni broj upotrijebljen za planirane naloge u tekućoj godini.
 
-**Boje tipova dokumenatao**: omogućuje postavljanje boje pozadine i teksta za različite tipove narudžbi: narudžbe za nabavu, proizvodnju ili podizvođača, koje su u kašnjenju i/ili isteku.
+**Boje vrsta dokumenata**: omogućuje postavljanje boje pozadine i teksta za različite vrste naloga: nabavu, proizvodnju ili kooperaciju, koji kasne i/ili kojima je istekao rok.
 
-## Parametri za puštanje planiranih narudžbi 
+## Parametri za puštanje planiranih naloga
 
-U ovom odjeljku korisnik može postaviti vrstu zahtjeva za kupnju i vrstu narudžbe za vanjsku obradu (ako je zatvorena, dakle nije daljnje moguće mijenjati ili otvorena i stoga je moguće mijenjati) koje se automatski generiraju tijekom puštanja planiranih narudžbi za kupnju i vanjsku obradu.
+U ovom odjeljku korisnik može postaviti vrstu zahtjeva za nabavu i vrstu naloga za kooperaciju koji će se automatski generirati prilikom puštanja planiranih naloga za nabavu odnosno kooperaciju. Nalog za kooperaciju može biti zatvoren, što znači da se više ne može mijenjati, ili otvoren, što znači da se može naknadno mijenjati.
 
-**Obavezna provjera izvođača u vanjskim fazama**: ako je aktivno, u slučaju da nije naznačen vanjski suradnik u vanjskoj fazi, to će biti označeno pomoću opcije **Boja teksta za redak narudžbe** dolje navedeno.   
+**Obvezna kontrola kooperanta za vanjske faze**: ako je opcija aktivirana, a kooperant nije naveden za vanjsku fazu, taj će se nedostatak označiti dolje navedenom **bojom teksta retka naloga**.
 
-**Pojednostavljeno upravljanje proizvodnjom**: je zastarjelo i koristi se samo u starim verzijama.
+**Pojednostavljeno upravljanje proizvodnjom**: ova je opcija zastarjela i upotrebljava se samo u starijim verzijama.
 
-**Zadrži poveznicu između naloga i podnaloga**: ako je aktivno, omogućuje, koristeći također i flagove koji slijede odmah, odlučiti da ukoliko se ručno promijeni datum planirane narudžbe, procedura izvrši odgovarajuću promjenu i na planiranim narudžbama koje su odmah susjedne onoj koja je pretrpjela prvotnu promjenu.
+**Održavanje veze između naloga unutar radnog naloga**: ako je opcija aktivirana, uz pomoć sljedećih potvrdnih okvira moguće je odrediti da se pri ručnoj promjeni datuma planiranog naloga odgovarajuće promijene i datumi neposredno povezanih planiranih naloga.
 
-**Broj dana za izračun dostupnosti**: označava koliko unaprijed treba procjenjivati dostupnost, pri čemu se ne uzimaju u obzir narudžbe i potreba koje prelaze taj datum.  
+**Broj dana za izračun raspoloživosti**: određuje koliko daleko u budućnost treba provoditi izračun raspoloživosti. Nalozi i potrebe čiji datumi prelaze definirano razdoblje neće se uzimati u obzir.
 
-**Datum predaje materijala u fazi istovara materijala**: ako je aktivno, datum korištenja materijala naveden u planiranim narudžbama bit će jednak datumu početka koji je najveći među svim fazama, što znači da će biti jednak datumu početka posljednje faze. Dok, ako flag nije aktivan, datum korištenja materijala naveden u planiranim narudžbama bit će jednak datumu početka narudžbe, dakle datumu početka prve faze.
+**Datum rezervacije materijala u fazi izdavanja materijala**: ako je opcija aktivirana, datum korištenja materijala naveden u planiranim nalozima odgovarat će najkasnijem datumu početka među svim fazama, odnosno datumu početka posljednje faze. Ako opcija nije aktivirana, datum korištenja materijala u planiranim nalozima odgovarat će datumu početka naloga, odnosno datumu početka prve faze.
 
-**Dani unaprijed za predavanje materijala**: Vrijednost koja je navedena omogućuje da se dostupnost materijala unaprijedi za taj broj dana u odnosu na početak obrade (bilo u planiranim proizvodnim narudžbama ili u proizvodnim narudžbama), kako bi se logistici omogućilo da materijal dostavi na vrijeme u proizvodnju. Ovo se uzima u obzir u sljedećim procedurama: sve planiranja "što je prije moguće", "što je kasnije moguće", "s ograničenim kapacitetom", "MRP", "Dovršavanje podataka narudžbe" kako u planiranim narudžbama tako i u proizvodnim narudžbama, "Ponovno izračunavanje datuma početka" kako u planiranim narudžbama tako i u proizvodnim narudžbama, te sve procedure CRP ("Gantt", "Kapacitet radnih centara" i "Sekvenca faza") koje djeluju na promjenu datuma početka ili završetka faze narudžbe.
+**Broj dana za raniju rezervaciju materijala**: unesena vrijednost omogućuje da se raspoloživost materijala pomakne unaprijed za navedeni broj dana u odnosu na početak obrade, kako bi logistika mogla pravodobno dopremiti materijal u proizvodnju. Ovaj se parametar uzima u obzir u sljedećim postupcima:
 
-**M.R.P. povijesni dani za ostaviti**: omogućuje označavanje razdoblja u danima za koje će se rezultati MRP obrada čuvati unutar povijesti. Kada obrada premaši broj dana unesenih u ovo polje, ona će biti uklonjena iz povijesti prilikom sljedeće MRP obrade. Ako se polje ostavi prazno, nijedna obrada neće biti izbrisana iz povijesti.
+- Sva planiranja „što ranije”, „što kasnije” i „uz ograničeni kapacitet”.
+- MRP.
+- Dopuna podataka naloga, za planirane naloge i naloge za proizvodnju.
+- Ponovni izračun datuma početka, za planirane naloge i naloge za proizvodnju.
+- Svi postupci CRP-a (*Gantt*, *Kapacitet radnih centara* i *Redoslijed faza*) koji mijenjaju datum početka ili završetka faze naloga.
 
-## Skladišta za raspored narudžbi  
+**Broj dana povijesti MRP-a koji se zadržavaju**: omogućuje određivanje broja dana tijekom kojih će se rezultati MRP obrada čuvati u povijesti. Ako je rezultat obrade stariji od broja dana navedenog u ovom polju, bit će uklonjen iz povijesti prilikom sljedeće MRP obrade. Ako polje ostane prazno, nijedna se obrada neće brisati iz povijesti.
 
-Mreža prikazuje jednostavan pregled liste skladišta za koja se mora provjeriti dostupnost. Ta se lista postavlja u obrascu pod nazivom *Izračun dostupnosti*, koji se nalazi među alatima upravljačkog sustava.
+## Skladišta za planiranje naloga
 
-## Gantt parametri  
+Mreža prikazuje popis skladišta na kojima se mora provjeravati raspoloživost. Taj se popis postavlja u obrascu *Izračun raspoloživosti*, koji se nalazi među pomoćnim funkcijama poslovnog sustava.
 
-Omogućuje unos zadatih parametara za upravljanje obrascem Gantt (*Vrsta simulacije Gantt* i *Vrsta simulacije Snapshot*).
+## Parametri Gantta
 
-## Parametri izračuna izvedivosti   
+Omogućuje unos zadanih parametara za upravljanje obrascem Gantta (*Vrsta Gantt simulacije* i *Vrsta Snapshot simulacije*).
 
-Omogućuje unos uputa za aktivaciju i prikaz **Izvodljivost** radnih faza.   
+## Parametri izračuna izvedivosti
 
-U trenutnoj verziji proizvoda jedina dostupna aktivacija je u upravljanju *Sekvenca faza*.U budućim verzijama bit će uvedene i druge procedure.  
+Omogućuje definiranje postavki za aktivaciju i prikaz **izvedivosti** radnih faza.
 
-Moguće je aktivirati kontrolu izvedivosti: 
+U trenutačnoj verziji proizvoda ova se funkcionalnost može aktivirati samo u postupcima *Redoslijed faza*. U budućim verzijama bit će dostupna i u drugim postupcima.
 
-- **Razmotri materijale**: omogućuje tipku *Detalj procjene materijala* i polje *Procjena materijala* u mreži aktivnih procedura u okviru **Izračun izvedivosti za primjenu u**;    
-- **Razmotri prethodne faze**: omogućuje tipku *Detalj procjene faza* i polje *Procjena faza* u mreži aktivnih procedura u okviru **Izračun izvedivosti za primjenu u**.
+Moguće je aktivirati kontrolu izvedivosti:
 
-## Izračun izvedivosti za primjenu u
-Dopusti omogućavanje izvedivosti u pojedinim postupcima:
-- Sekvenca faza
-- Kapaciteti radnih centara
-- Oslobađanje planiranih narudžbi
+- **Uzmi u obzir materijale**: omogućuje gumb *Detalji izvedivosti materijala* i polje *Izvedivost materijala* u mreži aktivnih postupaka unutar okvira **Izračun izvedivosti primijeniti u**.
+- **Uzmi u obzir prethodne faze**: omogućuje gumb *Detalji izvedivosti faza* i polje *Izvedivost faza* u mreži aktivnih postupaka unutar okvira **Izračun izvedivosti primijeniti u**.
+
+## Izračun izvedivosti primijeniti u
+
+Omogućuje aktiviranje provjere izvedivosti u pojedinim postupcima:
+
+- Redoslijed faza
+- Kapacitet radnih centara
+- Puštanje planiranih naloga
 - Lista za preuzimanje materijala
-- Filtriranje proizvodnih naloga  
+- Filtar naloga za proizvodnju
 
 ## Boje izračuna izvedivosti
 
-Moguće je postaviti boje koje ističu različite informacije o dostupnosti materijala koji se koristi:    
-- *Materijal nije dostupan*: označava da nijedan materijal nije dostupan, čak ni u djelomičnoj količini;     
-- *Materijal djelomično dostupan*: označava da postoji barem djelomična količina nekog materijala, ali ne i potpuna dostupnost svih;     
-- *Materijal dostupan*: označava da su svi materijali dostupni u potrebnim količinama;     
-- *Materijal nije potreban*: označava da nije potreban nijedan materijal;     
+Moguće je postaviti boje kojima se ističu različite informacije o raspoloživosti materijala koji će se upotrebljavati:
 
-Također se prikazuje i status napretka radnih faza koje prethode analiziranoj fazi:    
-- *Prethodna faza nije započeta*: označava da prethodna faza još nije započela;     
-- *Prethodna faza započeta*: označava da je prethodna faza započela, ali nije dovršena;     
-- *Prethodna faza dovršena*: označava da je prethodna faza završena;     
-- *Faza započeta*: označava da je analizirana faza započela.    
+- *Materijal nije raspoloživ*: označava da nije raspoloživa nijedna količina materijala, čak ni djelomična.
+- *Materijal je djelomično raspoloživ*: označava da je raspoloživ barem dio količine jednog od materijala, ali nisu raspoložive ukupne potrebne količine svih materijala.
+- *Materijal je raspoloživ*: označava da su svi materijali raspoloživi u potrebnim ukupnim količinama.
+- *Materijal nije potreban*: označava da nije potreban nijedan materijal.
 
-Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom funkcioniranju obrazaca, pogledajte sljedeću poveznicu [Zajedničke funkcije, tipke i polja](/docs/guide/common).
+Boje se mogu postaviti i za status napretka prethodnih radnih faza u odnosu na fazu koja se analizira:
+
+- *Prethodna faza nije započeta*: označava da prethodna faza promatrane faze još nije započela.
+- *Prethodna faza je započeta*: označava da je prethodna faza započela, ali nije dovršena.
+- *Prethodna faza je dovršena*: označava da je prethodna faza dovršena.
+- *Faza je započeta*: označava da je promatrana faza započela.
+
+Za sve što nije detaljno opisano u ovom dokumentu, a odnosi se na zajedničke funkcionalnosti obrazaca, pogledajte sljedeću poveznicu: [Zajedničke funkcionalnosti, gumbi i polja](/docs/guide/common).

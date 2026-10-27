@@ -1,5 +1,5 @@
 ---
-title:  Parametri konfiguracije grupiranja
+title: Parametri konfiguracije grupisanja
 sidebar_position: 5
 ---
 
