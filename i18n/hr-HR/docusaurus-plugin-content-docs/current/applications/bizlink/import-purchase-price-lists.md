@@ -4,7 +4,7 @@ sidebar_position: 3
 ---
 
 
-Ovaj dokument će objasniti kako **Uvesti cjenike dobavljača** u **Fluentis** pomoću **proračunske tablice**.
+Ovaj dokument će objasniti kako **Uvesti cjenike dobavljača** u **Fluentis** pomoću **proračunske tablice** (Excela).
 
 Ovaj uvoz moguć je zahvaljujući korištenju **BizLink Parameters** jer svaki put kada se red obradi, oni će biti pozvani.
 

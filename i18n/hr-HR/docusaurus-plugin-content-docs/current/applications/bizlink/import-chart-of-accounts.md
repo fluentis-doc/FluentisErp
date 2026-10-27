@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Excel datoteka (predložak) za uvoz kontnog plana u Administrativni modul omogućuje popunjavanje detaljnog dijela kontnog plana.
 
-**Stoga, u gornjem mrežnom dijelu obrasca kontnog plana već mora biti prisutan dio strukture (grupe).**
+**Stoga, u gornjem dijelu obrasca kontnog plana već mora biti prisutan dio strukture (grupe).**
 
 **Stupci Grupa Razina (1, 2, 3, 4, 5):** u ovim stupcima navedite kodove različitih razina i podrazina (mogućih do pete razine) gdje treba smjestiti konta koje želite uvesti.
 

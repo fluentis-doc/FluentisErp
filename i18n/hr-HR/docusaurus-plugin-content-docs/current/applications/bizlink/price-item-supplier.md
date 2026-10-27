@@ -3,7 +3,7 @@ title: Uvoz cijena i artikala dobavljača
 sidebar_position: 5
 ---
 
-List za uvoz otvara se putem Applications > BizLink > Uvozi On Demand > Šifarnici > Uvoz cijena i artikala dobavljača.         
+List za uvoz otvara se putem Applications > BizLink > Uvozi na zahtjev > Šifarnici > Uvoz cijena i artikala dobavljača.         
 Na ovom listu, vrlo sličnom Excelu, nalazi se tablica u koju možete unijeti podatke koji će biti uvezeni.  
 Kolone u crvenoj boji su obavezne: stoga je potrebno unijeti **Šifru Artikla**, pripadajući **Opis**, **Cijenu** i **Količinu po Cijeni**. Ostali podaci mogu se slobodno popunjavati prema potrebama korisnika i obuhvaćaju različite karakteristike artikla: Jedinicu mjere, popuste, itd.
 Prelaskom na drugu stranicu uvoznog lista, nazvanu **BizLink Parameters**,moguće je unijeti parametre koje procedura treba koristiti. Konkretno, za ovaj uvoz potrebno je navesti **Naziv Tvrtke** i **Kratki naziv** dobavljača za kojeg se uvoze nove cijene, te **Početak Važenja**, datum od kojeg će promjene biti primijenjene. Također je moguće navesti datum za Kraj važenja, koji nije obavezan.

@@ -8,7 +8,7 @@ Excel datoteka (predložak) za uvoz imovine u Administrativnom modulu omogućuje
 
 **Šifra Kategorije:** mora već postojati u bazi podataka i bit će korišten u uvezenoj kartici imovine;
 
-**Predšifra:** neobavezno, upravljati samo ako je aktiviran prekod upisujući prekod koji treba koristiti u numeriranju;
+**Predšifra:** neobavezno, upravljati samo ako je aktiviran *predkod* upisujući *predkod* koji treba koristiti u numeriranju;
 
 **Broj sredstva:** koristite slobodan broj;
 

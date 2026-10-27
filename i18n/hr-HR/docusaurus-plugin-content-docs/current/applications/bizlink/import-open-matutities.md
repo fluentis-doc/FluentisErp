@@ -21,20 +21,20 @@ KUPAC / DOBAVLJAČ
 - Konto / podkonto: unesite konto i podkonto kupaca ili dobavljača koji su već prisutni u Fluentisu (OBAVEZNO)  
 
 REFERENCE DOKUMENTA    
-- Vrsta dokumenta: npr. FA za račun kupovine, FV za račun prodaje. Koristite već postojeću kodiranu vrijednost u Fluentisu.  
+- Vrsta dokumenta: npr. FA za ulazni račun, FV za račun prodaje. Koristite već postojeću kodiranu vrijednost u Fluentisu.  
 - Broj / Datum računa: neobavezno, u slučaju opće stavke možete ga izostaviti označavajući tip dokumenta kao GEN  
 
 PODACI O PLAĆANJU  
 - Vrsta plaćanja: već mora biti prisutna u Fluentisu (pogledajte kodove vrsta plaćanja koji su prisutni) - OBAVEZNO  
 - Datum dospijeća: datum dospijeća stavke - OBAVEZNO   
-- Račun / podračun banke. To je banka povezana s partijom (neobavezno)  
+- Konto / podkonto banke. To je banka povezana s partijom (neobavezno)  
 
 PODACI O STAVKAMA  
 - Preostalo (Duguje / Potražuje): podatak o preostalom otvorenom iznosu, ako stavka nije djelomično plaćena, odgovara protuvrijednosti.    
 PODATAK JE IZRAŽEN U VALUTI NAVEDENOJ U ODGOVARAJUĆEM STUPCU. OBAVEZNO popuniti odjeljak Duguje ili Potražuje (ovisno o znaku stavke) i uvijek unesite vrijednost 0,00 u susjedni stupac. (ako unesete Duguje npr. 100,00 stavite 0,00 u Potražuje) OBAVEZNO  
 - Protuvrijednost (Duguje / Potražuje): to je vrijednost stavke u valuti tvrtke (npr. euri). OBAVEZNO popuniti odjeljak Duguje ili Potražuje (ovisno o znaku stavke) i uvijek unesite vrijednost 0,00 u susjedni stupac. (ako unesete Duguje npr. 100,00 stavite 0,00 u Potražuje) OBAVEZNO  
 - Valuta: popunite kodom koji već postoji u Fluentisu (npr. EUR za euro, USD za američki dolar) - OBAVEZNO  
-- Blokada: oznaka koja pokazuje je li stavka blokirana i nije plaćiva (1) ili je slobodna (0). OBAVEZNO  
+- Blokada: oznaka koja pokazuje je li stavka blokirana i nije plativa (1) ili je slobodna (0). OBAVEZNO  
 - Bilješke: opcionalno polje s napomenama o stavki  
 
 PODACI O ZAPISU Datum i broj knjiženja povezanog s partijom. Odsjek je neobavezan.  

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 
 
-Ovaj dokument će objasniti kako **Uvoz cjenika dobavljača** u  **Fluentis** pomoću **proračunske tablice**.
+Ovaj dokument će objasniti kako **Uvoz cjenika dobavljača** u  **Fluentis** pomoću **proračunske tablice** (Excela).
 
 Ovaj uvoz moguć je zahvaljujući korištenju **BizLink Parameters**  jer svaki put kada se red obradi, oni će biti pozvani.
 
@@ -490,7 +490,7 @@ Ovi će se parametri koristiti za obradu redaka umetnutih u odjeljak Podaci. Kao
 
 *Primjer*: “1” odgovara registriranom uredu, “2” operativnom sjedištu u Milanu
 
--        Mapiranje tablice/stupc: select MBDP_Code from MB_Dep
+-        Mapiranje tablice/stupca: select MBDP_Code from MB_Dep
 
 5      Država:
 

@@ -5,12 +5,12 @@ sidebar_position: 1
 
 
 
-U ovom članku bit će objašnjeno kako **uvesti kontakte** (kupce ili dobavljače)  u **Fluentis** putem korištenja **proračunske tablice**.
+U ovom članku bit će objašnjeno kako **uvesti kontakte** (kupce ili dobavljače)  u **Fluentis** putem korištenja **proračunske tablice** (Excela).
 
 Ovaj uvoz je moguć zahvaljujući korištenju **BizLink Parameters** jer će svaki put kada se procesira redak, oni biti pozvani.
 
 
-### Kako otvoriti uvoz putem proračunske tablice:  
+### Kako otvoriti uvoz putem proračunske tablice (Excela):  
 
 Kliknite na **Alati** (obično se nalazi na desnoj strani Fluentisa).
 
@@ -127,7 +127,7 @@ Konto:
 
 -        Opis: račun dobavljača, glavna knjiga dobavljača
 
-*Primjer*: “1200” codgovara Kupcima iz Hrvatske
+*Primjer*: “1200” odgovara Kupcima iz Hrvatske
 
 -         Tablica/mapping stupac: select MBPC_Conto from MB_PiaCon
 
@@ -137,7 +137,7 @@ Podkonto:
 
 -        Tip: niz znakova
 
--        Opis: podračun dobavljača, malo glavne knjige dobavljača  
+-        Opis: podkonto dobavljača, malo glavne knjige dobavljača  
 
 *Primjer*: ako se prenesu konta s praznim sustavom, može se koristiti kodiranje poput 01; 02; 03 ili 001; 002; 003
 
@@ -644,7 +644,7 @@ Grupa klijenata:
 
 -        Opis: Možete vidjeti kodove iz Home **Početna > Računovodstvo > Kontni plan**, na prvoj kartici prikaza nalazi se kod grupe.
 
-*Primjer*: “1200” odgovara lupcima u Hrvatskoj
+*Primjer*: “1200” odgovara kupcima u Hrvatskoj
 
 -        Tablica/mapping stupac: select MBGR_Gruppo from MB_GRUPP
 
@@ -708,7 +708,7 @@ Ako sve prođe bez problema, neće se pojaviti nikakva poruka o pogrešci. Za do
 
 **Preporučena Excel formatiranja**:
 
--        Za ispravan uvoz, preporučuje se formatiranje stupaca prema tipu navedenom pod "Formatiranje Excel" za svako polje. Na primjer, ako je tip polja decimalan i u tom polju treba unijeti valutu, formatirajte polje kao valutu. To je zato što će, primjerice, ako se ćelija ne formatira, Excel ukloniti nevažne znamenke. Za unos formatiranja slijedite sljedeće korake:
+-        Za ispravan uvoz, preporučuje se formatiranje stupaca prema tipu navedenom pod "Formatiranje Excel" za svako polje. Na primjer, ako je tip polja decimalni i u tom polju treba unijeti valutu, formatirajte polje kao valutu. To je zato što će, primjerice, ako se ćelija ne formatira, Excel ukloniti nevažne znamenke. Za unos formatiranja slijedite sljedeće korake:
 
 Prvo odaberite željeni stupac kao što je prikazano na slici ispod:
 
@@ -792,7 +792,7 @@ Za tumačenje greške, slijedite ove korake: U istom retku gdje je prikazan broj
 
 **Pažnja**: Ako je pronađen prazan redak, neće biti prijavljena nikakva greška, ali će se uvoz završiti tamo. Primjerice, ako je prvi redak (redak br. 4) prazan iz nekog razloga, a ispod njega (od reda br. 5) postoje popunjeni retci, ništa se neće uvesti.
 
-**Pažnja**: Ako se u šifraniku od 10 redaka dogodi greška u retku br. 7, prva 6 redaka će se ipak unijeti ako nisu uzrokovali probleme! Ponovnim pokretanjem uvoza bez mijenjanja prvih 6 redaka (i naravno, ako je greška ispravljena), neće biti problema, pa čak ni duplikata, jer se prvo provjerava prisutnost kontakta. Ako se promijeni bilo koja vrijednost u prvih 6 redaka, taj će kontakt biti smatran novim.
+**Pažnja**: Ako se u šifarniku od 10 redaka dogodi greška u retku br. 7, prva 6 redaka će se ipak unijeti ako nisu uzrokovali probleme! Ponovnim pokretanjem uvoza bez mijenjanja prvih 6 redaka (i naravno, ako je greška ispravljena), neće biti problema, pa čak ni duplikata, jer se prvo provjerava prisutnost kontakta. Ako se promijeni bilo koja vrijednost u prvih 6 redaka, taj će kontakt biti smatran novim.
 
 Na kraju, moguće je dobiti i drugu poruku greške.
 
