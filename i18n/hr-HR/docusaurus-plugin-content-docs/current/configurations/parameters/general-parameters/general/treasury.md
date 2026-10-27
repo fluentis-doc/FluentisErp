@@ -28,7 +28,7 @@ Trenutno dostupni tokovi su:
 :::tip Napomena 
 Na primjer:  
 - ako se parametar postavi na "(2) FT.N. (DF) del (4) – (6)" generirat će se tekst:  
-"Opis šifre" + FT.N. + "Opis iz DocFinance" del "datum dokumenta stavke" - "Opis podračuna stavke"    
+"Opis šifre" + FT.N. + "Opis iz DocFinance" del "datum dokumenta stavke" - "Opis podkonta stavke"    
 - ako se parametar postavi na "FT. (3) del (4)", tj. bez korištenja teksta iz DocFinance, dobit ćemo:  
     - za stavke povezane s otvorenim stavkama, napomena tipa FT. + "broj dokumenta" + del + "datum dokumenta"  
     - za stavke koje nisu povezane s otvorenim stavkama, koristit će se zadani tekst iz DocFinance datoteke.  

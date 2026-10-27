@@ -1,21 +1,23 @@
 ---
-title: Parametri skladišta utovar/istovar po korisniku
+title: Parametri skladišta za utovar/istovar po korisniku
 sidebar_position: 2
 ---
 
-**Parametri skladišta utovar/istovar po korisniku** omogućuju uvođenje ograničenja za korisnike.  
-U nedostatku ovih parametara, korisnik može izvršiti operacije kretanja na bilo kojem skladištu, ali to podrazumijeva ručno odabiranje skladišta unutar pojedinačnih obrazaca s relevantnim predloškom. 
-Očito ova operacija nije ispravna i operater njome ne može upravljati, ali s ovim parametrima moguće je naznačiti za svaki obrazac i svakog operatera zadano *skladište* i *predložak* koji će biti unaprijed popunjen kada se obrazac otvori.
+**Parametri skladišta za utovar/istovar po korisniku** omogućavaju uvođenje ograničenja za korisnike.
 
-Tablica se sastoji od sljedećih polja:
+Ako ovi parametri nisu definisani, korisnik može da izvršava operacije kretanja na bilo kom skladištu, ali to podrazumeva ručni izbor skladišta u pojedinačnim obrascima sa odgovarajućim šablonom.
 
-> **Područje**: označava područje kojem obrazac pripada;       
-> **Modul**: označava modul kojem obrazac pripada;        
-> **Obrazac**: označava naziv obrasca;   
-> **Korisnik**: označava naziv operatera;       
-> **Skladište**: označava šifru skladišta koja se prema zadanim postavkama navodi u obrascu;        
-> **Opis skladišta**: označava opis skladišta koji se standardno navodi u obrascu;         
-> **Predlošci zapisa skladišta**: označava šifru razloga koja se prema zadanim postavkama navodi u obrascu;       
-> **Opis razloga**: označava opis razloga koji se prema zadanim postavkama navodi u obrascu.
+Ovakav način rada očigledno nije ispravan i operater ne može njime efikasno da upravlja. Međutim, pomoću ovih parametara moguće je za svaki obrazac i svakog operatera definisati podrazumevano *skladište* i *šablon* koji će biti unapred popunjeni prilikom otvaranja obrasca.
 
-U paragrafima posvećenim [WMS](/docs/logistics/wms/wms-intro), obrascima navedeni su  **Parametri skladišta utovara/istovara po korisniku** koje treba unijeti za svakog od njih.  
+Tabela se sastoji od sledećih polja:
+
+> **Područje**: označava područje kojem obrazac pripada;
+> **Modul**: označava modul kojem obrazac pripada;
+> **Obrazac**: označava naziv obrasca;
+> **Korisnik**: označava naziv operatera;
+> **Skladište**: označava šifru skladišta koja se podrazumevano navodi u obrascu;
+> **Opis skladišta**: označava opis skladišta koji se podrazumevano navodi u obrascu;
+> **Šabloni skladišnih knjiženja**: označava šifru razloga koja se podrazumevano navodi u obrascu;
+> **Opis šablona**: označava opis razloga koji se podrazumevano navodi u obrascu.
+
+U odeljcima posvećenim obrascima [WMS](/docs/logistics/wms/wms-intro) navedeni su **parametri skladišta za utovar/istovar po korisniku** koje je potrebno uneti za svaki od njih.

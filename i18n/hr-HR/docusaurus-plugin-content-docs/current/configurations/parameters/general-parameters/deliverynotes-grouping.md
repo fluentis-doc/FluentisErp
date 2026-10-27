@@ -16,6 +16,6 @@ Tablica se sastoji od sljedećih polja:
 > **Skladište**: označava šifru skladišta koja se prema zadanim postavkama navodi u obrascu;        
 > **Opis skladišta**: označava opis skladišta koji se standardno navodi u obrascu;         
 > **Predlošci zapisa skladišta**: označava šifru razloga koja se prema zadanim postavkama navodi u obrascu;       
-> **Opis razloga**: označava opis razloga koji se prema zadanim postavkama navodi u obrascu.
+> **Opis predloška**: označava opis razloga koji se prema zadanim postavkama navodi u obrascu.
 
 U paragrafima posvećenim [WMS](/docs/logistics/wms/wms-intro), obrascima navedeni su  **Parametri skladišta utovara/istovara po korisniku** koje treba unijeti za svakog od njih.  

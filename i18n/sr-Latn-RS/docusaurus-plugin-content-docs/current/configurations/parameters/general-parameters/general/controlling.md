@@ -2,4 +2,4 @@
 title: Business Areas - Kontroling
 sidebar_position: 3
 ---
-**Upravljanje troškovnim centrima po odjelu** (kod FS-CO-CostCenterByDepartment): s ovom postavkom moći ćemo dodijeliti, troškovnom centru *Odjela* X, i kretanja koja se odnose na *Odjel* Y. Naime, ***FluentisERP*** obično omogućuje korištenje *Troškovnih centara* povezanih s istim Odjelom kretanja, a ne s različitim odjelima.
+**Upravljanje mestima troška po odeljenju** (kod FS-CO-CostCenterByDepartment): ovom postavkom omogućava se dodeljivanje kretanja koja se odnose na *odeljenje* Y mestu troška povezanom sa *odeljenjem* X. Naime, **_FluentisERP_** standardno omogućava korišćenje *mesta troška* povezanih sa istim odeljenjem kojem pripada kretanje, a ne sa drugim odeljenjima.

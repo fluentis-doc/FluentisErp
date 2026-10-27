@@ -1,8 +1,8 @@
 ---
-title: Business Areas - Postavke obrasca za filtriranje 
+title: Business Areas - Podešavanja obrasca za filtriranje
 sidebar_position: 5
 ---
 
-**FIlter Form Advanced Search** (kod FS-UIS-WPF-FF-AdvSearch): ovim parametrom omogućuje se ili onemogućuje odjeljak 'Advanced search' s pločicama 'Tiles' u svim obrascima za pretraživanje.
+**Filter Form Advanced Search** (kod FS-UIS-WPF-FF-AdvSearch): ovim parametrom omogućava se ili onemogućava odeljak „Advanced search“ sa pločicama „Tiles“ u svim obrascima za pretraživanje.
 
-**Sakrij informacije o tvrtki u obrascima** (kod FS-UIS-WPF-IsHideCompanyInformation): ovim parametrom moguće je sakriti prikaz informacija o društvu unutar obrazaca.
+**Sakrij informacije o preduzeću u obrascima** (kod FS-UIS-WPF-IsHideCompanyInformation): ovim parametrom omogućava se skrivanje prikaza informacija o preduzeću unutar obrazaca.

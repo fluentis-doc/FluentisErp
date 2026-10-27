@@ -3,24 +3,24 @@ title: Business Areas - Administracija
 sidebar_position: 1
 ---
 
-**Stvaranje Intraweb ili Entratel datoteke**: Ovaj parametar, koji je prethodno bio vidljiv samo u bazi podataka, omogućuje postavljanje vrste izvoznog zapisa za Intrastat modele izravno putem sučelja, kako bi bio kompatibilan s aplikacijom Intraweb carinske uprave ili Entratel aplikacijom porezne uprave (dva moguća alternativna kanala za slanje modela). Tehnička razlika se prvenstveno odnosi na zaglavlje datoteke zahtijevano za slanje putem Entratela. Parametar je obično već postavljen i može se jednostavno upravljati u stupcu VRIJEDNOST, gdje, kao što je navedeno u bilješci, zastavica u stanju FALSE (0 - deaktivirano) = Intraweb, dok TRUE (1 - aktivno) = Entratel. U slučaju ručnog kreiranja (tehnički problemi ili unazadna kompatibilnost), postavite stupac Tip na Booleov, datum početka valjanosti i polje vrijednost. Polje Kod u glavnoj mreži je FS-FI-Intrastat-ItalianFileType.  
+**Kreiranje Intraweb ili Entratel datoteke**: Ovaj parametar, koji je ranije bio vidljiv samo u bazi podataka, omogućava podešavanje tipa izvozne datoteke za Intrastat obrasce direktno putem korisničkog interfejsa, radi kompatibilnosti sa aplikacijom Intraweb carinske uprave ili aplikacijom Entratel poreske uprave (dva alternativna kanala za slanje obrazaca). Tehnička razlika prvenstveno se odnosi na zaglavlje datoteke koje je potrebno za slanje putem Entratela. Parametar je obično već podešen i njime se jednostavno upravlja u koloni VREDNOST. Kao što je navedeno u napomeni, vrednost FALSE (0 – deaktivirano) znači Intraweb, dok TRUE (1 – aktivirano) znači Entratel. Ako je potrebno ručno kreiranje parametra (zbog tehničkih problema ili kompatibilnosti sa starijim verzijama), podesite kolonu Tip na Boolean, datum početka važenja i polje Vrednost. Kod u glavnoj tabeli je `FS-FI-Intrastat-ItalianFileType`.
 
-**Korištenje težine dokumenta u Intrastat nabavama/Prodajama**: Omogućavanjem (u polju Vrijednost) zastavice (parametar tipa boolean) za svaki od dva parametra, automatski postupak kreiranja Intrastat izvještaja iz faktura preuzima težine artikala iz polja 'NetWeight' redaka dokumenta nabave/prodaje, umjesto teorijskih težina iz šifranika artikla, što je zadano. Knjiženje prodajne fakture, ako računovodstvena stavka predviđa Intrastat upravljanje, unosi u računovodstvo težine dokumenta: na taj način i postupak preuzimanja iz računovodstvenih zapisa uključuje težinu dokumenta.  
+**Korišćenje težine dokumenta u Intrastat nabavkama/prodajama**: Aktiviranjem ove opcije u polju Vrednost (parametar tipa Boolean) za svaki od ova dva parametra, automatski postupak kreiranja Intrastat izveštaja iz faktura preuzima težine artikala iz polja `NetWeight` u redovima nabavnih/prodajnih dokumenata, umesto podrazumevanih teorijskih težina iz šifarnika artikala. Prilikom knjiženja izlazne fakture, ako računovodstveni razlog predviđa Intrastat obradu, težine iz dokumenta unose se u računovodstvo. Na taj način i postupak preuzimanja podataka iz računovodstvenih knjiženja uključuje težinu dokumenta.
 
-Ovi parametri mogu se kombinirati s dodatnim parametrom (**vidljivim samo u bazi podataka**) kojim Fluentis prenosi u odjeljak Bis/Ter vrijednosti težina onako kako su unesene prilikom automatskog kreiranja, bez zaokruživanja redaka. Zaokruživanja će se obraditi u sljedećoj fazi pomoću gumba za grupiranje koji se nalazi u odjeljku Bis/Ter.
+Ovi parametri mogu se kombinovati sa dodatnim parametrom (**vidljivim samo u bazi podataka**) koji omogućava Fluentis-u da u odeljak Bis/Ter prenese vrednosti težina onako kako su unete tokom automatskog kreiranja, bez zaokruživanja na nivou redova. Zaokruživanje se obavlja u sledećoj fazi pomoću dugmeta za grupisanje u odeljku Bis/Ter.
 
-Query koji se mora izvršiti:
+Upit koji treba izvršiti:
 
-        update fluentis.SH_CompanyParameters set shcp_value = cast(0 as smallint)
-        
-        --update fluentis.SH_CompanyParameters set shcp_value = cast(1 as smallint)
-        	
-        from fluentis.SH_CompanyParameters
-        		
-        join fluentis.SH_LocalizationParameters on SHLP_Id = SHCP_Parameter_SHLP_Id
-        	
-        where SHLP_Code like 'IN-IntrastatRoundByOperation'
+    update fluentis.SH_CompanyParameters set shcp_value = cast(0 as smallint)
 
-**Blokiraj knjiženje kada je datum knjiženja raniji od datuma primitka** (kod FS-FI-Posting-BlockPostingBeforeReceiveDate): ako je ovaj parametar omogućen, knjiženje ulaznih računa iz SDI datoteke neće biti dopušteno s datumom ranijim od datuma primitka SDI-a.  
+    --update fluentis.SH_CompanyParameters set shcp_value = cast(1 as smallint)
 
-**Dozvoli kreiranje opomena za zatvorene stavke** (kod FS-FI-DunningLetters-AllowClosedMaturities): s ovim parametrom omogućuje se generiranje opomena i za one stavke za koje je plaćanje već izvršeno, tj. kreiranje pisama o izvršenoj uplati.  
+    from fluentis.SH_CompanyParameters
+
+    join fluentis.SH_LocalizationParameters on SHLP_Id = SHCP_Parameter_SHLP_Id
+
+    where SHLP_Code like 'IN-IntrastatRoundByOperation'
+
+**Blokiraj knjiženje ako je datum knjiženja raniji od datuma prijema** (kod `FS-FI-Posting-BlockPostingBeforeReceiveDate`): ako je ovaj parametar aktiviran, knjiženje ulaznih faktura iz SDI datoteke neće biti dozvoljeno sa datumom koji prethodi datumu prijema SDI-ja.
+
+**Dozvoli kreiranje opomena za zatvorene stavke** (kod `FS-FI-DunningLetters-AllowClosedMaturities`): ovaj parametar omogućava generisanje opomena i za stavke koje su već plaćene, odnosno kreiranje pisama o izvršenoj uplati.

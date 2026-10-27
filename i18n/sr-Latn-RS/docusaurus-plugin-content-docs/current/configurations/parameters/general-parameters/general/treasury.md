@@ -3,13 +3,13 @@ title: Business Areas - Riznica
 sidebar_position: 2
 ---
 
-**Kreiraj datoteku Sepa** (kod FS-PR-SEPA-PaymentRequest): Ovaj parametar omogućuje povezivanje određenog Bizlink 'SEPA' toka za izvoz SEPA naloga za plaćanje u eurima. Svaka zemljopisna lokalizacija ima zadani format generiranja (trenutno je za Italiju verzija 4.01), ali u slučaju promjene formata može biti korisno promijeniti tip datoteke koja će se generirati, počevši od određenog datuma.  
+**Kreiranje SEPA datoteke** (kod FS-PR-SEPA-PaymentRequest): Ovaj parametar omogućava povezivanje određenog BizLink toka „SEPA“ za izvoz SEPA naloga za plaćanje u evrima. Svaka geografska lokalizacija ima podrazumevani format generisanja (trenutno je za Italiju dostupna verzija 4.01), ali u slučaju promene formata može biti korisno promeniti tip datoteke koja će se generisati, počevši od određenog datuma.
 
-**SDD (SEPA izravno terećenje)** (kod FS-PR-SEPA-SDD): kao i prethodni parametar, ali za SDD datoteke koje se mogu generirati iz Izvadaka efekata (trenutno za Italiju verzija 1.01).  
+**SDD (SEPA direktno zaduženje)** (kod FS-PR-SEPA-SDD): kao i prethodni parametar, ali za SDD datoteke koje se mogu generisati iz izvoda efekata (trenutno je za Italiju dostupna verzija 1.01).
 
-**Kreiranje SEPA datoteka za inozemstvo** (codice FS-PR-SEPA-ForeignPaymentRequest): kao prvi parametar, ali za datoteke naloga za plaćanje u valuti (inozemne uplate).  
+**Kreiranje SEPA datoteka za inostranstvo** (kod FS-PR-SEPA-ForeignPaymentRequest): kao i prvi parametar, ali za datoteke naloga za plaćanje u stranoj valuti (inostrana plaćanja).
 
-Trenutno dostupni tokovi su:  
+Trenutno dostupni tokovi su:
 
 - *EsteroSEPA_XML_Payment*
 - *ExportSDDWorkflow*
@@ -22,14 +22,16 @@ Trenutno dostupni tokovi su:
 - *SEPA_XML_Payments_Export_RS*
 - *SEPA_XML_Payments_Export_SI*
 
+**Detalji prometa** (kod FS-PR-DocFinanceNote): za preduzeća koja primaju stavke bankovnog prometa iz sistema DocFinance, ovim parametrom može se definisati način na koji će **_FluentisERP_** popunjavati opise uvezenih stavki. Logika kodiranja teksta prati postojeću logiku koja se koristi kod računovodstvenih šifara, uz dodatak oznake (DF), koja označava opis preuzet direktno iz DocFinance datoteke.
 
-**Detalji prometa** (kod FS-PR-DocFinanceNote): za poduzeća koja primaju bankovne prometne stavke iz DocFinance sustava, ovim parametrom se može definirati kako će ***FluentisERP*** popunjavati opise uvezenih stavki. Logika kodiranja teksta slijedi postojeću logiku korištenu kod računovodstvenih šifri, s dodatkom oznake (DF) koja označava opis preuzet direktno iz DocFinance datoteke.  
+:::tip[Napomena]
+Na primer:
 
-:::tip Napomena 
-Na primjer:  
-- ako se parametar postavi na "(2) FT.N. (DF) del (4) – (6)" generirat će se tekst:  
-"Opis šifre" + FT.N. + "Opis iz DocFinance" del "datum dokumenta stavke" - "Opis podračuna stavke"    
-- ako se parametar postavi na "FT. (3) del (4)", tj. bez korištenja teksta iz DocFinance, dobit ćemo:  
-    - za stavke povezane s otvorenim stavkama, napomena tipa FT. + "broj dokumenta" + del + "datum dokumenta"  
-    - za stavke koje nisu povezane s otvorenim stavkama, koristit će se zadani tekst iz DocFinance datoteke.  
-:::
+- Ako se parametar postavi na „(2) FT.N. (DF) del (4) – (6)“, generisaće se tekst:
+
+  „Opis šifre“ + FT.N. + „Opis iz DocFinance“ del „datum dokumenta stavke“ - „Opis podkonta stavke“
+
+- Ako se parametar postavi na „FT. (3) del (4)“, odnosno bez korišćenja teksta iz DocFinance, dobićemo:
+  - za stavke povezane sa otvorenim stavkama, napomenu u obliku FT. + „broj dokumenta“ + del + „datum dokumenta“
+  - za stavke koje nisu povezane sa otvorenim stavkama, koristiće se podrazumevani tekst iz DocFinance datoteke.
+::: 
