@@ -12,11 +12,11 @@ Neki primjeri korištenja *Tipovi obuke* nalaze se u sljedećim modulima:
 
 Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi ih se prikazalo, izmijenilo ili obrisalo.
 
-### Pretraživanje Tipovi obuke**
+### Pretraživanje Tipovi obuke
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u mreži rezultata.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u tablici rezultata.
 
-### Unos Tipovi obuke**
+### Unos Tipovi obuke
 
 Za unos novih *Tipovi obuke* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku *Novo**.   
 Za novi zapis obavezno je unijeti barem polja koja su obavezna prema zahtjevima programa: **Šifra** i **Opis**.

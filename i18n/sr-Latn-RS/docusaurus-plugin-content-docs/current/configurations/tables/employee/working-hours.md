@@ -1,13 +1,13 @@
 ---
-title: Radno vrijeme  
+title: Radno vreme
 sidebar_position: 7
 ---
 
-U ovoj tablici definiraju se različiti modeli radnog vremena koji se mogu primjenjivati na razini tvrtke, poput punog radnog vremena, rada na pola radnog vremena, 60% radnog vremena i slično.
-Unesene vrijednosti koriste se kako u evidenciji resursa i zaposlenika, tako i u općim postavkama projekata.  
+U ovoj tabeli definišu se različiti modeli radnog vremena koji se mogu primenjivati na nivou preduzeća, kao što su puno radno vreme, rad sa polovinom radnog vremena, 60% radnog vremena i slično.
+Unete vrednosti koriste se kako u evidenciji resursa i zaposlenih, tako i u opštim podešavanjima projekata.
 
-**Šifra**: šifra retka.  
+**Šifra**: šifra reda.
 
-**Opis**: opis retka.  
+**Opis**: opis reda.
 
-**Ukupni broj sati**: predviđeni broj sati za taj redak.  
+**Ukupan broj sati**: predviđeni broj sati za taj red.

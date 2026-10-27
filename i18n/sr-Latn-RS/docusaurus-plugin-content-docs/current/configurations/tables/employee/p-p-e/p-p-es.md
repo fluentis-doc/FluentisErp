@@ -1,55 +1,56 @@
 ---
-title: Oprema zaštite na radu
+title: Oprema za zaštitu na radu
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putu **Tabele > Zaposlenici > Oprema zaštite na radu > Oprema zaštite na radu**.
+Tabela se nalazi na putanji **Tabele > Zaposleni > Oprema za zaštitu na radu > Oprema za zaštitu na radu**.
 
-U ovoj tablici moguće je kodirati Oprema zaštite na radu, skraćeno O.Z.R., koju operateri trebaju posjedovati za obavljanje određenih zadataka.  
-Neki primjeri korištenja *O.Z.R.* nalazimo u upravljanjima:
-> **Zadaci** - u kartici *O.Z.R. za dodijeliti*;
-> **Dodjela/Povrat O.Z.R.**;   
-> **Povijest dodjele/povrata O.Z.R.**.
+U ovoj tabeli moguće je evidentirati opremu za zaštitu na radu, skraćeno O.Z.R., koju zaposleni moraju posedovati za obavljanje određenih zadataka.  
+Neki primeri korišćenja *O.Z.R.* nalaze se u sledećim funkcionalnostima:
+> **Zadaci** – na kartici *O.Z.R. za dodelu*;
+> **Dodela/Povrat O.Z.R.**;
+> **Istorija dodele/povrata O.Z.R.**.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-#### Pretraživanje O.Z.R.
+**#### Pretraživanje O.Z.R.**
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na gumb **Traži** kako bi se prikazali rezultati unutar mreže rezultata.
+Obrazac se sastoji od oblasti za filtriranje i oblasti sa rezultatima. Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-#### Unos O.Z.R.
+**#### Unos O.Z.R.**
 
-Za unos novih O.Z.R. potrebno je kliknuti u mreži na prvi prazan redak ili pritisnuti gumb **Novo**.   
-Za novi zapis moraju se unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+Za unos nove O.Z.R. potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.  
+Za novi zapis potrebno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
-## Oprema zaštite na radu
+**## Oprema za zaštitu na radu**
 
-Ovo je popis u koji se unose osnovne informacije o *O.Z.R.*.   
-Popis se sastoji od sljedećih informacija:   
-> **Šifra**: šifra Kategorije *O.Z.R.*   
-> **Opis**: opis Kategorije *O.Z.R.*   
-> **Šifra kategorije**: šifra *Kategorije O.Z.R.*  
-> **Opis kategorije**: opis *Kategorije O.Z.R.*   
-> **Šifra kategorije rizika**: šifra *Kategorije rizika O.Z.R.*  
-> **Opis kategorije rizika**: opis *Kategorije rizika O.Z.R.*   
-> **Mjeseci valjanosti**: broj mjeseci valjanosti *O.Z.R.* u normalnim uvjetima korištenja   
-> **CE**: označava je li *O.Z.R.* označen CE znakom (Certifikacija Europske unije)   
-> **Aktivno**: označava je li *O.Z.R.* još uvijek valjan i upotrebljiv   
-> **Uporaba**: slobodne napomene o korištenju   
-> **Preporuke ili upute za uporabu**: slobodne napomene   
+Ovo je lista u koju se unose osnovne informacije o *O.Z.R.*.  
+Lista se sastoji od sledećih informacija:
+> **Šifra**: šifra kategorije *O.Z.R.*  
+> **Opis**: opis kategorije *O.Z.R.*  
+> **Šifra kategorije**: šifra *kategorije O.Z.R.*  
+> **Opis kategorije**: opis *kategorije O.Z.R.*  
+> **Šifra kategorije rizika**: šifra *kategorije rizika O.Z.R.*  
+> **Opis kategorije rizika**: opis *kategorije rizika O.Z.R.*  
+> **Meseci važenja**: broj meseci važenja *O.Z.R.* u normalnim uslovima korišćenja  
+> **CE**: označava da li je *O.Z.R.* označena CE oznakom (sertifikacija Evropske unije)  
+> **Aktivno**: označava da li je *O.Z.R.* i dalje važeća i upotrebljiva  
+> **Upotreba**: slobodne napomene o korišćenju  
+> **Preporuke ili uputstva za upotrebu**: slobodne napomene  
 > **Dostupna dokumentacija**: slobodne napomene  
-> **Bilješka**: slobodne napomene
+> **Beleška**: slobodne napomene
 
-### Oprema zaštite na radu korištena u Zadacima
+**### Oprema za zaštitu na radu koja se koristi u zadacima**
 
-Ovo je popis samo za pregled, u kojem se prikazuju svi *Zadaci* koji koriste odabrani *O.Z.R.*.
-Informacije se unose i upravljaju u upravljanju *Zadacima*.
-Popis se sastoji od sljedećih informacija:  
-> **Šifra zadatka**: šifra *Zadatka*.   
-> **Opis zadatka**:  opis *Zadatka*.   
-> **Uporaba**: napomene unesene za specifičnu *Uporabu* O.Z.R. u okviru odabranog *Zadatka*.   
-> **Preporuke ili upute za uporabu**: napomene unesene za *Preporuke* ili upute za uporabu *O.Z.R.* specifične za taj *Zadatak*.  
-> **Bilješke**: slobodne napomene.
+Ovo je lista namenjena samo za pregled, u kojoj se prikazuju svi *zadaci* u kojima se koristi izabrana *O.Z.R.*.
 
+Informacije se unose i njima se upravlja u funkcionalnosti *Zadaci*.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcioniranju formi, pogledajte sljedeću poveznicu [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+Lista se sastoji od sledećih informacija:
+> **Šifra zadatka**: šifra *zadatka*.  
+> **Opis zadatka**: opis *zadatka*.  
+> **Upotreba**: napomene unete za specifičnu *upotrebu* O.Z.R. u okviru izabranog *zadatka*.  
+> **Preporuke ili uputstva za upotrebu**: napomene unete za *preporuke* ili uputstva za upotrebu *O.Z.R.* specifične za taj *zadatak*.  
+> **Beleške**: slobodne napomene.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu o zajedničkom funkcionisanju obrazaca, pogledajte sledeću poveznicu [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

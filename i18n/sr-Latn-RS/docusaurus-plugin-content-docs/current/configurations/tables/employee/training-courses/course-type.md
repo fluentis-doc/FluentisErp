@@ -3,30 +3,30 @@ title: Tipovi obuke
 sidebar_position: 4
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Tečajevi osposobljavanja > Tipovi obuke**.
+Tabela se nalazi na putanji **Tabele > Zaposleni > Kursevi obuke > Tipovi obuke**.
 
-U ovoj tablici moguće je definirati *Tipovi obuke*.   
-Neki primjeri korištenja *Tipovi obuke* nalaze se u sljedećim modulima:
-> **Tečajevi osposobljavanja** - u *Podaci o zaglavlju*;   
-> **Parametri upravljanja osobljem** - u *Podaci o zaglavlju*.
+U ovoj tabeli moguće je definisati *tipove obuke*.
+Neki primeri korišćenja *tipova obuke* nalaze se u sledećim modulima:
+> **Kursevi obuke** - u odeljku *Podaci zaglavlja*;
+> **Parametri upravljanja kadrovima** - u odeljku *Podaci zaglavlja*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih kako bi ih se prikazalo, izmijenilo ili obrisalo.
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-### Pretraživanje Tipovi obuke**
+### Pretraživanje tipova obuke
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, potrebno je kliknuti na dugme **Pretraži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-### Unos Tipovi obuke**
+### Unos tipova obuke
 
-Za unos novih *Tipovi obuke* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku *Novo**.   
-Za novi zapis obavezno je unijeti barem polja koja su obavezna prema zahtjevima programa: **Šifra** i **Opis**.
+Za unos novih *tipova obuke* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+Za novi zapis obavezno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
 #### Specifična polja
-    
-> **Vrsta**: šifra *Tip obuke*.   
-> **Opis tipa**: opis *Tip obuke*.   
-> **Numeracija**: šifra povezane *Numeracije*.   
-> **Opis numeracije**: opis povezane *Numeracije*.   
-> **Napomene**: slobodno polje za bilješke
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Vrsta**: šifra *tipa obuke*.
+> **Opis tipa**: opis *tipa obuke*.
+> **Numeracija**: šifra povezane *numeracije*.
+> **Opis numeracije**: opis povezane *numeracije*.
+> **Napomene**: slobodno polje za beleške.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

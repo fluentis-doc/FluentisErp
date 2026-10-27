@@ -1,29 +1,29 @@
 ---
-title: Kategorija zadatka
+title: Kategorija radnog mesta
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putanji: **Tablice > Zaposlenici > Radna mjesta > Kategorije radnih mjesta**.
+Tabela se nalazi na putanji: **Tabele > Zaposleni > Radna mesta > Kategorije radnih mesta**.
 
 :::important Čemu služi
-U ovoj tablici moguće je kodirati *Kategorije radnih mjesta*, koje se koriste za kategorizaciju *Radnih mjesta*.
-Primjer primjene vidljiv je u upravljanju **Radnim mjestima**.
+U ovoj tabeli moguće je evidentirati *kategorije radnih mesta*, koje se koriste za kategorizaciju *radnih mesta*.
+Primer primene vidljiv je u funkcionalnosti **Radna mesta**.
 :::
 
-Tablica omogućuje unos novih *Kategorija radnih mjesta* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.
+Tabela omogućava unos novih *kategorija radnih mesta* ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-#### Pretraživanje kategorija radnih mjesta
+**#### Pretraživanje kategorija radnih mesta**
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-#### Unos kategorija radnih mjesta 
+**#### Unos kategorija radnih mesta**
 
-Za unos novih *Kategorija radnih mjesta* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+Za unos novih *kategorija radnih mesta* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.  
+Za novi zapis potrebno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
-#### Specifična polja 
-    
-> **Šifra**: šifra *Kategorije radnih mjesta*.   
-> **Opis**: opis *Kategorije radnih mjesta*.   
+**#### Specifična polja**
 
-Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link:[Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+> **Šifra**: šifra *kategorije radnih mesta*.  
+> **Opis**: opis *kategorije radnih mesta*.
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

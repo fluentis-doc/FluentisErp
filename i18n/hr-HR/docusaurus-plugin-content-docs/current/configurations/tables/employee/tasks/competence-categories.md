@@ -12,7 +12,7 @@ Tablica omogućuje unos novih *Kategorija kompetencija* ili pretraživanje posto
 
 #### Pretraživanje kategorija kompetencija
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
 #### Unos kategorija kompetencija
 

@@ -1,33 +1,33 @@
 ---
-title: Tipovi osnovnih tečaja
+title: Tipovi osnovnih kurseva
 sidebar_position: 3
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Edukacijski tečajevi > Osnovne vrste tečajeva**.
+Tabela se nalazi na putanji **Tabele > Zaposleni > Kursevi obuke > Tipovi osnovnih kurseva**.
 
-U ovoj tablici moguće je kodificirati *Tipovi osnovnih tečaja*.   
-Neki primjeri korištenja *Tipovi osnovnih tečaja* nalazimo u modulima:
-> **Osnovni tečajevi** - u *Podaci o zaglavlju*;   
-> **Edukacijski tečajevi** - u *Podaci o zaglavlju*;   
-> **Parametri upravljanja osobljem** - u *Podaci o zaglavlju*.
+U ovoj tabeli moguće je evidentirati *tipove osnovnih kurseva*.
+Neki primeri korišćenja *tipova osnovnih kurseva* nalaze se u sledećim modulima:
+> **Osnovni kursevi** - u odeljku *Podaci zaglavlja*;
+> **Kursevi obuke** - u odeljku *Podaci zaglavlja*;
+> **Parametri upravljanja kadrovima** - u odeljku *Podaci zaglavlja*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregledavanja, izmjene ili brisanja.  
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-### Pretraživanje Osnovnih vrsta tečajeva**
+### Pretraživanje tipova osnovnih kurseva
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave željeni filtri, potrebno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, potrebno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-### Unos Osnovnih vrsta tečajeva**
+### Unos tipova osnovnih kurseva
 
-Za unos novih *Osnovnih vrsta tečajeva* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.   
-Za novi zapis obavezno je unijeti minimalno polja tražena od strane programa: **Šifra** i **Opis**.
+Za unos novih *tipova osnovnih kurseva* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+Za novi zapis obavezno je uneti najmanje polja koja zahteva program: **Šifra** i **Opis**.
 
-#### Specifična polja  
-    
-> **Vrsta**: šifra *Tip osnovnog tečaja*.   
-> **Opis tipa**: opis *Tip osnovnog tečaja*.   
-> **Tip obuke**: šifra *Tip obuke* koja se predlaže pri kreiranju novog *Tečaj obuke* iz ove *Osnovne vrste tečaja*.   
-> **Opis vrste obuke**: opis *Vrste edukacijskog tečaja*.   
-> **Napomene**: slobodne bilješke.
+#### Specifična polja
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Vrsta**: šifra *tipa osnovnog kursa*.
+> **Opis tipa**: opis *tipa osnovnog kursa*.
+> **Tip obuke**: šifra *tipa obuke* koja se predlaže prilikom kreiranja novog *kursa obuke* iz ovog *tipa osnovnog kursa*.
+> **Opis tipa obuke**: opis *tipa kursa obuke*.
+> **Napomene**: slobodne beleške.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

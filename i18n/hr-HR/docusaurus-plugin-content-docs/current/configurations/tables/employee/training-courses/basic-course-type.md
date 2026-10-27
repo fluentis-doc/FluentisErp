@@ -3,7 +3,7 @@ title: Tipovi osnovnih tečaja
 sidebar_position: 3
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Edukacijski tečajevi > Osnovne vrste tečajeva**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Tečajevi osposobljavanja > Osnovne vrste tečajeva**.
 
 U ovoj tablici moguće je kodificirati *Tipovi osnovnih tečaja*.   
 Neki primjeri korištenja *Tipovi osnovnih tečaja* nalazimo u modulima:
@@ -13,11 +13,11 @@ Neki primjeri korištenja *Tipovi osnovnih tečaja* nalazimo u modulima:
 
 Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregledavanja, izmjene ili brisanja.  
 
-### Pretraživanje Osnovnih vrsta tečajeva**
+### Pretraživanje Osnovnih vrsta tečajeva
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave željeni filtri, potrebno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u mreži rezultata.  
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave željeni filtri, potrebno je kliknuti na tipku **Traži** kako bi se rezultati prikazali u tablici rezultata.  
 
-### Unos Osnovnih vrsta tečajeva**
+### Unos Osnovnih vrsta tečajeva
 
 Za unos novih *Osnovnih vrsta tečajeva* potrebno je kliknuti na prvu praznu red u mreži ili pritisnuti tipku **Novo**.   
 Za novi zapis obavezno je unijeti minimalno polja tražena od strane programa: **Šifra** i **Opis**.

@@ -1,32 +1,32 @@
 ---
-title: Razine ocjena kompetencije
+title: Nivoi ocenjivanja kompetencija
 sidebar_position: 5
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Radna mjesta > Razine ocjene kompetencija**.
+Tabela se nalazi na putanji **Tabele > Zaposleni > Radna mesta > Nivoi ocenjivanja kompetencija**.
 
 :::important Čemu služi
-U ovoj tablici moguće je kodirati *Razine ocjene kompetencija*, koje se koriste za procjenu *Kompetencija po radnom mjestu*.   
-Primjer primjene vidljiv je u upravljanju **Kompetencijama**.
+U ovoj tabeli moguće je evidentirati *nivoe ocenjivanja kompetencija*, koji se koriste za procenu *kompetencija prema radnom mestu*.  
+Primer primene vidljiv je u funkcionalnosti **Kompetencije**.
 :::
 
-Tablica omogućuje unos novih *Razine ocjene kompetencija* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.
+Tabela omogućava unos novih *nivoa ocenjivanja kompetencija* ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-#### Pretraživanje razina ocjene kompetencija
+**#### Pretraživanje nivoa ocenjivanja kompetencija**
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-#### Unos razina ocjene kompetencija 
+**#### Unos nivoa ocenjivanja kompetencija**
 
-Za unos novih *Razine ocjene kompetencija* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+Za unos novih *nivoa ocenjivanja kompetencija* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.  
+Za novi zapis potrebno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
-#### Specifična polja 
-    
-> **Šifra**: šifra *Razine ocjene kompetencija*.   
-> **Opis**: opis *Razine ocjene kompetencija*.   
-> **Razina**: bodovna vrijednost dodijeljena razini ocjene kompetencije.   
-> **Sekvenca**: redoslijed prikaza u popisima *Razine ocjene kompetencija*.   
-> **Napomene**: slobodne bilješke.
+**#### Specifična polja**
 
-Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+> **Šifra**: šifra *nivoa ocenjivanja kompetencija*.  
+> **Opis**: opis *nivoa ocenjivanja kompetencija*.  
+> **Nivo**: bodovna vrednost dodeljena nivou ocenjivanja kompetencije.  
+> **Redosled**: redosled prikaza u listama *nivoa ocenjivanja kompetencija*.  
+> **Napomene**: slobodne beleške.
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

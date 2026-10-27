@@ -15,7 +15,7 @@ Tablica omogućuje unos novih zapisa ili pretraživanje postojećih radi pregled
 
 #### Pretraživanje O.Z.R.
 
-Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na gumb **Traži** kako bi se prikazali rezultati unutar mreže rezultata.
+Forma se sastoji od područja za filtriranje i područja s rezultatima. Nakon što se postave svi željeni filtri, dovoljno je kliknuti na gumb **Traži** kako bi se prikazali rezultati unutar tablice rezultata.
 
 #### Unos O.Z.R.
 

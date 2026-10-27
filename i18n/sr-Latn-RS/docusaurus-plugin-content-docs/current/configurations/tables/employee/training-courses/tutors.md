@@ -3,43 +3,43 @@ title: Predavači
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Edukacijski tečajevi > Predavači**.
+Tabela se nalazi na putanji **Tabele > Zaposleni > Kursevi obuke > Predavači**.
 
-U ovoj tablici moguće je unijeti i evidentirati *Predavače*.   
-Neki primjeri upotrebe *Predavača* nalazimo u sljedećim modulima:    
-> **Osnovni tečajevi** - u *zaglavlju podataka*;   
-> **Corsi di formazione** - u *zaglavlju podataka*.
+U ovoj tabeli moguće je unositi i evidentirati *predavače*.
+Neki primeri upotrebe *predavača* nalaze se u sledećim modulima:
+> **Osnovni kursevi** - u odeljku *Podaci zaglavlja*;
+> **Kursevi obuke** - u odeljku *Podaci zaglavlja*.
 
-Tablica omogućava unos novih zapisa, kao i pretraživanje postojećih radi pregleda, izmjene ili brisanja.
+Tabela omogućava unos novih zapisa, kao i pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
 **Pretraživanje predavača**
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što postavite željene filtere, kliknite na tipki **Traži** kako biste vidjeli rezultate u tablici ispod.
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, kliknite na dugme **Traži** kako biste prikazali rezultate u tabeli ispod.
 
 **Unos predavača**
 
-Za unos novog *Predavača* potrebno je kliknuti na prvu praznu liniju u tablici ili pritisnuti tipku **Novo**.   
-Za novi zapis obavezno je unijeti minimalno sljedeća polja: **Šifra** i **Naziv konta**.
+Za unos novog *predavača* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+Za novi zapis obavezno je uneti najmanje sledeća polja: **Šifra** i **Naziv konta**.
 
-#### Specifična polja
-    
-> **Predavač**   
->> **Šifra**: jedinstvena oznaka *Predavača*.   
->> **Opis**: naziv ili ime *Predavača*.   
+**#### Specifična polja**
+
+> **Predavač**
+>> **Šifra**: jedinstvena oznaka *predavača*.
+>> **Opis**: naziv ili ime *predavača*.
 >
 > **Interni predavač**
->> **Šifra**: šifra *Zaposlenika* koji obnaša ulogu *Predavača*.   
->> **Prezime**: prezime *Zaposlenika* koji je *Predavač*.   
->> **Ime**: ime *Zaposlenika* koji je *Predavač*.   
+>> **Šifra**: šifra *zaposlenog* koji obavlja ulogu *predavača*.
+>> **Prezime**: prezime *zaposlenog* koji je *predavač*.
+>> **Ime**: ime *zaposlenog* koji je *predavač*.
 >
 > **Eksterni predavač**
->> **Opis**: naziv tvrtke ili *Dobavljača* koji obavlja ulogu *Predavača*.   
+>> **Opis**: naziv preduzeća ili *dobavljača* koji obavlja ulogu *predavača*.
 >
-> **Aktivan**: označava je li *Predavač** trenutno aktivan.    
-> **Početak valjanosti**: datum od kojeg *Predavač** počinje s radom.   
-> **Kraj valjanosti**: datum do kojeg *Predavač** obavlja svoj posao.     
-> **Nastavni plan**: slobodne bilješke vezane uz obrazovanje i iskustvo predavača.     
-> **Troškovi po satu**: cijena rada po satu.  
-> **Napomene**: dodatne bilješke. 
+> **Aktivan**: označava da li je *predavač* trenutno aktivan.
+> **Početak važenja**: datum od kojeg *predavač* počinje sa radom.
+> **Kraj važenja**: datum do kojeg *predavač* obavlja svoj posao.
+> **Nastavni plan**: slobodne beleške u vezi sa obrazovanjem i iskustvom predavača.
+> **Troškovi po satu**: cena rada po satu.
+> **Napomene**: dodatne beleške.
 
-Za sve ostale detalje vezane uz opće funkcioniranje formi pogledajte sljedeći link: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

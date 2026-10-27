@@ -1,30 +1,30 @@
 ---
-title: Kategorije tečaja
+title: Kategorije kurseva
 sidebar_position: 2
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Edukacijski tečajevi > Kategorije tečajeva**.
+Tabela se nalazi na putanji **Tabele > Zaposleni > Kursevi obuke > Kategorije kurseva**.
 
-U ovoj tablici moguće je kodirati *Kategorije tečaja* koje se koriste za kategorizaciju *Osnovnih i edukacijskih tečajeva*.   
-Neki primjeri korištenja *Kategorija tečajeva* nalaze se u sljedećim modulima:
-> **Osnovni tečajevi** - u *zaglavnim podacima*;   
-> **Tečajevi osposobljavanja** - u *zaglavnim podacima*.
+U ovoj tabeli moguće je evidentirati *kategorije kurseva* koje se koriste za kategorizaciju *osnovnih kurseva i kurseva obuke*.
+Neki primeri korišćenja *kategorija kurseva* nalaze se u sledećim modulima:
+> **Osnovni kursevi** - u odeljku *Podaci zaglavlja*;
+> **Kursevi obuke** - u odeljku *Podaci zaglavlja*.
 
-Tablica omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi ih se prikazalo, izmijenilo ili izbrisalo.
+Tabela omogućava unos novih zapisa ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-### Pretraživanje kategorija tečajeva
+### Pretraživanje kategorija kurseva
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraživanje** da biste prikazali rezultate unutar mreže rezultata.
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, potrebno je kliknuti na dugme **Pretraživanje** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-### Unos kategorija tečajeva
+### Unos kategorija kurseva
 
-Za unos novih *Kategorija tečajeva* potrebno je kliknuti na prvi prazan red u mreži ili pritisnuti tipku **Novo**.   
-Za novi zapis obavezno je unijeti barem obavezna polja koja program zahtijeva: **Šifra** i **Opis**.
+Za unos novih *kategorija kurseva* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.
+Za novi zapis obavezno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
 #### Specifična polja
-    
-> **Kategorija tečaja**: šifra *Kategorije tečaja*.   
-> **Opis kategorije tečaja**: opis *Kategorije tečaja*.   
-> **Napomene**: slobodne bilješke.
 
-Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcioniranje formi, pogledajte sljedeću poveznicu: [Funkcionalnosti, tipke i zajednička polja](/docs/guide/common).
+> **Kategorija kursa**: šifra *kategorije kursa*.
+> **Opis kategorije kursa**: opis *kategorije kursa*.
+> **Napomene**: slobodne beleške.
+
+Za sve što nije detaljno objašnjeno u ovom dokumentu, a odnosi se na zajedničko funkcionisanje obrazaca, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

@@ -14,7 +14,7 @@ Tablica omogućuje unos novih *Razine ocjene kompetencija* ili pretraživanje po
 
 #### Pretraživanje razina ocjene kompetencija
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u tablici rezultata.
 
 #### Unos razina ocjene kompetencija 
 

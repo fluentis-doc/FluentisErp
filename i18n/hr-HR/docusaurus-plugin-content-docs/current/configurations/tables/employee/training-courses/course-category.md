@@ -3,7 +3,7 @@ title: Kategorije tečaja
 sidebar_position: 2
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Edukacijski tečajevi > Kategorije tečajeva**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Tečajevi osposobljavanja > Kategorije tečajeva**.
 
 U ovoj tablici moguće je kodirati *Kategorije tečaja* koje se koriste za kategorizaciju *Osnovnih i edukacijskih tečajeva*.   
 Neki primjeri korištenja *Kategorija tečajeva* nalaze se u sljedećim modulima:
@@ -14,7 +14,7 @@ Tablica omogućuje unos novih zapisa ili pretraživanje već postojećih kako bi
 
 ### Pretraživanje kategorija tečajeva
 
-Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraživanje** da biste prikazali rezultate unutar mreže rezultata.
+Obrazac se sastoji od područja za filtriranje i područja za rezultate. Kada su svi željeni filtri postavljeni, dovoljno je kliknuti na tipku **Pretraživanje** da biste prikazali rezultate unutar tablice rezultata.
 
 ### Unos kategorija tečajeva
 

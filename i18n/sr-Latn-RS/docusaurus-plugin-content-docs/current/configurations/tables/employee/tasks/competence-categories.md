@@ -3,26 +3,26 @@ title: Kategorije kompetencija
 sidebar_position: 3
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Radna mjesta > Kategorije kompetencija**.
+Tabela se nalazi na putanji **Tabele > Zaposleni > Radna mesta > Kategorije kompetencija**.
 
-U ovoj tablici moguće je kodirati *Kategorije kompetencija*, koje se koriste za kategorizaciju *Radnih mjesta*.
-Primjer primjene vidljiv je u upravljanju **Kompetencijama**.
+U ovoj tabeli moguće je evidentirati *kategorije kompetencija*, koje se koriste za kategorizaciju *radnih mesta*.
+Primer primene vidljiv je u funkcionalnosti **Kompetencije**.
 
-Tablica omogućuje unos novih *Kategorija kompetencija* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.
+Tabela omogućava unos novih *kategorija kompetencija* ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-#### Pretraživanje kategorija kompetencija
+**#### Pretraživanje kategorija kompetencija**
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u mreži rezultata.
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-#### Unos kategorija kompetencija
+**#### Unos kategorija kompetencija**
 
-Za unos novih Kategorija kompetencija potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.   
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: **Šifra** i **Opis**.
+Za unos novih kategorija kompetencija potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.  
+Za novi zapis potrebno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
-#### Specifična polja
-    
-> **Šifra**: šifra *Kategorije kompetencija*.   
-> **Opis**: opis *Kategorije kompetencija*.   
-> **Napomene**: slobodne bilješke
+**#### Specifična polja**
 
-Za sve ostalo što nije detaljno opisano u ovom dokumentu o uobičajenom radu s formama, pogledajte sljedeći link: [Funkcionalnosti, gumbi i zajednička polja](/docs/guide/common).
+> **Šifra**: šifra *kategorije kompetencija*.  
+> **Opis**: opis *kategorije kompetencija*.  
+> **Napomene**: slobodne beleške
+
+Za sve što nije detaljno opisano u ovom dokumentu o uobičajenom radu sa obrascima, pogledajte sledeću poveznicu: [Funkcionalnosti, dugmad i zajednička polja](/docs/guide/common).

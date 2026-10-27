@@ -3,57 +3,62 @@ title: Zadaci
 sidebar_position: 2
 ---
 
-Tablica se nalazi na putanji: **Tablice > Zaposlenici > Zadaci > Zadaci**.   
+Tabela se nalazi na putanji: **Tabele > Zaposleni > Zadaci > Zadaci**.
 
-U ovoj tablici moguće je kodirati *Zadaci* u tvrtki.   
-Primjeri korištenja *Zadaci* vidljivi su u sljedećim modulima:   
-> **Zaposlenici** - u kartici *Radna mjesta*;   
-> **Osnovni tečajevi** - u kartici *Pogođena radna mjesta*;   
-> **Tečajevi osposobljavanja** - u kartici *Uključena radna mjesta*;   
-> **D.P.I.** - u popisu *Zaštićena oprema korištena na radnim mjestima*;   
-> **Kompetencije** - u popisu *Kompetencije povezane s radnim mjestima*.   
+U ovoj tabeli moguće je evidentirati *zadatke* u preduzeću.  
+Primeri korišćenja *zadataka* vidljivi su u sledećim modulima:  
+> **Zaposleni** – na kartici *Radna mesta*;  
+> **Osnovni kursevi** – na kartici *Obuhvaćena radna mesta*;  
+> **Kursevi obuke** – na kartici *Uključena radna mesta*;  
+> **O.Z.O.** – u listi *Oprema za zaštitu na radu koja se koristi na radnim mestima*;  
+> **Kompetencije** – u listi *Kompetencije povezane sa radnim mestima*.
 
-Tablica omogućuje unos novih *Radnih mjesta* ili pretraživanje postojećih kako bi se mogli pregledati, izmijeniti ili obrisati.   
+Tabela omogućava unos novih *radnih mesta* ili pretraživanje postojećih radi pregleda, izmene ili brisanja.
 
-## Pretraživanje radnih mjesta  
+**## Pretraživanje radnih mesta**
 
-Forma se sastoji od područja za filtriranje i područja za prikaz rezultata. Nakon što se postave svi željeni filteri, dovoljno je kliknuti **Traži** kako bi se rezultati prikazali u mreži rezultata.   
+Obrazac se sastoji od oblasti za filtriranje i oblasti za prikaz rezultata. Nakon postavljanja željenih filtera, dovoljno je kliknuti na dugme **Traži** kako bi se rezultati prikazali u tabeli sa rezultatima.
 
-## Unos radnih mjesta 
+**## Unos radnih mesta**
 
-Za unos novih *Radnih mjesta* potrebno je kliknuti na prvu praznu liniju u mreži ili pritisnuti gumb **Novo**.
-Za novi zapis potrebno je unijeti barem obavezna polja koja zahtijeva program: ***Šifra*** i **Opis**.      
+Za unos novih *radnih mesta* potrebno je kliknuti na prvi prazan red u tabeli ili pritisnuti dugme **Novo**.  
+Za novi zapis potrebno je uneti najmanje obavezna polja koja zahteva program: **Šifra** i **Opis**.
 
-### Radna mjesta  
+**### Radna mesta**
 
-To je popis u koji se unose osnovne informacije o *Radnom mjestu*.
-Popis se sastoji od sljedećih podataka:   
-> **Šifra**: šifra *Radnog mjesta*.   
-> **Opis**: opis *Radnog mjesta*.   
-> **Poslovni centar**: šifra *Poslovnog centra*.   
-> **Stavka troška**: šifra *Stavke troška*.   
-> **Opis stavke troška**: opis *Stavke troška*.   
+Ovo je lista u koju se unose osnovne informacije o *radnom mestu*.
 
-### Zaštitna oprema za dodjelu
+Lista se sastoji od sledećih podataka:  
+> **Šifra**: šifra *radnog mesta*.  
+> **Opis**: opis *radnog mesta*.  
+> **Poslovni centar**: šifra *poslovnog centra*.  
+> **Stavka troška**: šifra *stavke troška*.  
+> **Opis stavke troška**: opis *stavke troška*.
 
-To je popis u koji se unosi *Zaštitna oprema (D.P.I.)* potrebna za odabrano *Radno mjesto*.
-Ove informacije koriste se u upravljanju *Isporučenom/Vraćenom zaštitnom opremom*.   
-Popis se sastoji od sljedećih podataka:   
-> **Šifra D.P.I**.: šifra *Zaštitne opreme*  
-> **Opis D.P.I.**: opis *Zaštitne opreme*   
-> **Mjeseci valjanosti**: razdoblje valjanosti Zaštitne opreme za odabrano *Radno mjesto* (u mjesecima).   
-> **Upotreba**:slobodne bilješke o upotrebi   
-> **Upute ili preporuke za uporabu**: slobodne bilješke s preporukama ili uputama.   
-> **Napomene**: slobodne bilješke
+**### Zaštitna oprema za dodelu**
 
-### Kompetencije   
+Ovo je lista u koju se unosi *oprema za zaštitu na radu (O.Z.O.)* potrebna za izabrano *radno mesto*.
 
-To je popis u koji se unose *Kompetencije* potrebne za obavljanje odabranog *Radnog mjesta*.
-Ove informacije koriste se u upravljanju *Procjenama kompetencija*.  
-Popis se sastoji od sljedećih podataka:   
-> **Šifra kompetencije**: šifra *Kompetencije*.   
-> **Opis kompetencije**: opis *Kompetencije*.   
-> **Šifra razine**: šifra *Razine procjene kompetencije* potrebne za odabrano *Radno mjesto*.   
-> **Opis razine**: opis *Razine procjene kompetencije*.   
-> **Kriteriji procjene**: bilješke za definiranje *Kriterija procjene* koji se koriste pri procjeni kompetencije za određeno *Radno mjesto*.   
-> **Napomene**: slobodne bilješke.   
+Ove informacije koriste se u funkcionalnosti *Dodela/Povrat opreme za zaštitu na radu*.
+
+Lista se sastoji od sledećih podataka:  
+> **Šifra O.Z.O.**: šifra *opreme za zaštitu na radu*.  
+> **Opis O.Z.O.**: opis *opreme za zaštitu na radu*.  
+> **Meseci važenja**: period važenja opreme za zaštitu na radu za izabrano *radno mesto* (u mesecima).  
+> **Upotreba**: slobodne beleške o upotrebi.  
+> **Uputstva ili preporuke za upotrebu**: slobodne beleške sa preporukama ili uputstvima.  
+> **Napomene**: slobodne beleške.
+
+**### Kompetencije**
+
+Ovo je lista u koju se unose *kompetencije* potrebne za obavljanje izabranog *radnog mesta*.
+
+Ove informacije koriste se u funkcionalnosti *Procena kompetencija*.
+
+Lista se sastoji od sledećih podataka:  
+> **Šifra kompetencije**: šifra *kompetencije*.  
+> **Opis kompetencije**: opis *kompetencije*.  
+> **Šifra nivoa**: šifra *nivoa ocenjivanja kompetencije* potrebnog za izabrano *radno mesto*.  
+> **Opis nivoa**: opis *nivoa ocenjivanja kompetencije*.  
+> **Kriterijumi procene**: beleške za definisanje *kriterijuma procene* koji se koriste pri proceni kompetencije za određeno *radno mesto*.  
+> **Napomene**: slobodne beleške.

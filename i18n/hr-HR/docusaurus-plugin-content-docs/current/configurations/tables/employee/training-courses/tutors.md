@@ -3,12 +3,12 @@ title: Predavači
 sidebar_position: 1
 ---
 
-Tablica se nalazi na putanji **Tablice > Zaposlenici > Edukacijski tečajevi > Predavači**.
+Tablica se nalazi na putanji **Tablice > Zaposlenici > Tečajevi osposobljavanja > Predavači**.
 
 U ovoj tablici moguće je unijeti i evidentirati *Predavače*.   
 Neki primjeri upotrebe *Predavača* nalazimo u sljedećim modulima:    
 > **Osnovni tečajevi** - u *zaglavlju podataka*;   
-> **Corsi di formazione** - u *zaglavlju podataka*.
+> **Tečajevi osposobljavanja** - u *zaglavlju podataka*.
 
 Tablica omogućava unos novih zapisa, kao i pretraživanje postojećih radi pregleda, izmjene ili brisanja.
 
