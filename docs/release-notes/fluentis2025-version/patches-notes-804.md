@@ -7,7 +7,6 @@ sidebar_position: 1.1
 ### Patch 804.029 - 26/10/2026
 
 > -	CRM - Offerte: Nell’help articoli abilitati i tab listini e documenti. Modifications inside SalesOffer object form and Item help can have impact on profiles(#TT03623/26)
-> -	Fixed a bug affecting the opening of Flows and Flow Operations, as well as the updating of Flows.
 > -	PM - Nota spese: corretto caso per cui attività ed interventi non erano apribili da pulsanti in ribbon bar se la nota spese era appena stata generate (#TT04560/26)
 > -	Risolto problema ovveride functions async
 > -	SCM - Fattura di acquisto da Valorizzazione DDT di acquisto: la modifica del prezzo sulla fattura aggiorna correttamente i documenti collegati e la struttura costi dei movimenti di magazzino generate. (#TT03828/26)
